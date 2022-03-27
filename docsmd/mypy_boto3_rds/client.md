@@ -1,175 +1,18 @@
-<a id="rdsclient-for-boto3-rds-module"></a>
-
-# RDSClient for boto3 RDS module
+# RDSClient
 
 > [Index](../README.md) > [RDS](./README.md) > RDSClient
 
-Auto-generated documentation for
-[RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
-type annotations stubs module
-[mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
+!!! note ""
 
-- [RDSClient for boto3 RDS module](#rdsclient-for-boto3-rds-module)
-  - [RDSClient](#rdsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_role_to_db_cluster](#add_role_to_db_cluster)
-    - [add_role_to_db_instance](#add_role_to_db_instance)
-    - [add_source_identifier_to_subscription](#add_source_identifier_to_subscription)
-    - [add_tags_to_resource](#add_tags_to_resource)
-    - [apply_pending_maintenance_action](#apply_pending_maintenance_action)
-    - [authorize_db_security_group_ingress](#authorize_db_security_group_ingress)
-    - [backtrack_db_cluster](#backtrack_db_cluster)
-    - [can_paginate](#can_paginate)
-    - [cancel_export_task](#cancel_export_task)
-    - [copy_db_cluster_parameter_group](#copy_db_cluster_parameter_group)
-    - [copy_db_cluster_snapshot](#copy_db_cluster_snapshot)
-    - [copy_db_parameter_group](#copy_db_parameter_group)
-    - [copy_db_snapshot](#copy_db_snapshot)
-    - [copy_option_group](#copy_option_group)
-    - [create_custom_availability_zone](#create_custom_availability_zone)
-    - [create_custom_db_engine_version](#create_custom_db_engine_version)
-    - [create_db_cluster](#create_db_cluster)
-    - [create_db_cluster_endpoint](#create_db_cluster_endpoint)
-    - [create_db_cluster_parameter_group](#create_db_cluster_parameter_group)
-    - [create_db_cluster_snapshot](#create_db_cluster_snapshot)
-    - [create_db_instance](#create_db_instance)
-    - [create_db_instance_read_replica](#create_db_instance_read_replica)
-    - [create_db_parameter_group](#create_db_parameter_group)
-    - [create_db_proxy](#create_db_proxy)
-    - [create_db_proxy_endpoint](#create_db_proxy_endpoint)
-    - [create_db_security_group](#create_db_security_group)
-    - [create_db_snapshot](#create_db_snapshot)
-    - [create_db_subnet_group](#create_db_subnet_group)
-    - [create_event_subscription](#create_event_subscription)
-    - [create_global_cluster](#create_global_cluster)
-    - [create_option_group](#create_option_group)
-    - [delete_custom_availability_zone](#delete_custom_availability_zone)
-    - [delete_custom_db_engine_version](#delete_custom_db_engine_version)
-    - [delete_db_cluster](#delete_db_cluster)
-    - [delete_db_cluster_endpoint](#delete_db_cluster_endpoint)
-    - [delete_db_cluster_parameter_group](#delete_db_cluster_parameter_group)
-    - [delete_db_cluster_snapshot](#delete_db_cluster_snapshot)
-    - [delete_db_instance](#delete_db_instance)
-    - [delete_db_instance_automated_backup](#delete_db_instance_automated_backup)
-    - [delete_db_parameter_group](#delete_db_parameter_group)
-    - [delete_db_proxy](#delete_db_proxy)
-    - [delete_db_proxy_endpoint](#delete_db_proxy_endpoint)
-    - [delete_db_security_group](#delete_db_security_group)
-    - [delete_db_snapshot](#delete_db_snapshot)
-    - [delete_db_subnet_group](#delete_db_subnet_group)
-    - [delete_event_subscription](#delete_event_subscription)
-    - [delete_global_cluster](#delete_global_cluster)
-    - [delete_installation_media](#delete_installation_media)
-    - [delete_option_group](#delete_option_group)
-    - [deregister_db_proxy_targets](#deregister_db_proxy_targets)
-    - [describe_account_attributes](#describe_account_attributes)
-    - [describe_certificates](#describe_certificates)
-    - [describe_custom_availability_zones](#describe_custom_availability_zones)
-    - [describe_db_cluster_backtracks](#describe_db_cluster_backtracks)
-    - [describe_db_cluster_endpoints](#describe_db_cluster_endpoints)
-    - [describe_db_cluster_parameter_groups](#describe_db_cluster_parameter_groups)
-    - [describe_db_cluster_parameters](#describe_db_cluster_parameters)
-    - [describe_db_cluster_snapshot_attributes](#describe_db_cluster_snapshot_attributes)
-    - [describe_db_cluster_snapshots](#describe_db_cluster_snapshots)
-    - [describe_db_clusters](#describe_db_clusters)
-    - [describe_db_engine_versions](#describe_db_engine_versions)
-    - [describe_db_instance_automated_backups](#describe_db_instance_automated_backups)
-    - [describe_db_instances](#describe_db_instances)
-    - [describe_db_log_files](#describe_db_log_files)
-    - [describe_db_parameter_groups](#describe_db_parameter_groups)
-    - [describe_db_parameters](#describe_db_parameters)
-    - [describe_db_proxies](#describe_db_proxies)
-    - [describe_db_proxy_endpoints](#describe_db_proxy_endpoints)
-    - [describe_db_proxy_target_groups](#describe_db_proxy_target_groups)
-    - [describe_db_proxy_targets](#describe_db_proxy_targets)
-    - [describe_db_security_groups](#describe_db_security_groups)
-    - [describe_db_snapshot_attributes](#describe_db_snapshot_attributes)
-    - [describe_db_snapshots](#describe_db_snapshots)
-    - [describe_db_subnet_groups](#describe_db_subnet_groups)
-    - [describe_engine_default_cluster_parameters](#describe_engine_default_cluster_parameters)
-    - [describe_engine_default_parameters](#describe_engine_default_parameters)
-    - [describe_event_categories](#describe_event_categories)
-    - [describe_event_subscriptions](#describe_event_subscriptions)
-    - [describe_events](#describe_events)
-    - [describe_export_tasks](#describe_export_tasks)
-    - [describe_global_clusters](#describe_global_clusters)
-    - [describe_installation_media](#describe_installation_media)
-    - [describe_option_group_options](#describe_option_group_options)
-    - [describe_option_groups](#describe_option_groups)
-    - [describe_orderable_db_instance_options](#describe_orderable_db_instance_options)
-    - [describe_pending_maintenance_actions](#describe_pending_maintenance_actions)
-    - [describe_reserved_db_instances](#describe_reserved_db_instances)
-    - [describe_reserved_db_instances_offerings](#describe_reserved_db_instances_offerings)
-    - [describe_source_regions](#describe_source_regions)
-    - [describe_valid_db_instance_modifications](#describe_valid_db_instance_modifications)
-    - [download_db_log_file_portion](#download_db_log_file_portion)
-    - [failover_db_cluster](#failover_db_cluster)
-    - [failover_global_cluster](#failover_global_cluster)
-    - [generate_db_auth_token](#generate_db_auth_token)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [import_installation_media](#import_installation_media)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [modify_certificates](#modify_certificates)
-    - [modify_current_db_cluster_capacity](#modify_current_db_cluster_capacity)
-    - [modify_custom_db_engine_version](#modify_custom_db_engine_version)
-    - [modify_db_cluster](#modify_db_cluster)
-    - [modify_db_cluster_endpoint](#modify_db_cluster_endpoint)
-    - [modify_db_cluster_parameter_group](#modify_db_cluster_parameter_group)
-    - [modify_db_cluster_snapshot_attribute](#modify_db_cluster_snapshot_attribute)
-    - [modify_db_instance](#modify_db_instance)
-    - [modify_db_parameter_group](#modify_db_parameter_group)
-    - [modify_db_proxy](#modify_db_proxy)
-    - [modify_db_proxy_endpoint](#modify_db_proxy_endpoint)
-    - [modify_db_proxy_target_group](#modify_db_proxy_target_group)
-    - [modify_db_snapshot](#modify_db_snapshot)
-    - [modify_db_snapshot_attribute](#modify_db_snapshot_attribute)
-    - [modify_db_subnet_group](#modify_db_subnet_group)
-    - [modify_event_subscription](#modify_event_subscription)
-    - [modify_global_cluster](#modify_global_cluster)
-    - [modify_option_group](#modify_option_group)
-    - [promote_read_replica](#promote_read_replica)
-    - [promote_read_replica_db_cluster](#promote_read_replica_db_cluster)
-    - [purchase_reserved_db_instances_offering](#purchase_reserved_db_instances_offering)
-    - [reboot_db_cluster](#reboot_db_cluster)
-    - [reboot_db_instance](#reboot_db_instance)
-    - [register_db_proxy_targets](#register_db_proxy_targets)
-    - [remove_from_global_cluster](#remove_from_global_cluster)
-    - [remove_role_from_db_cluster](#remove_role_from_db_cluster)
-    - [remove_role_from_db_instance](#remove_role_from_db_instance)
-    - [remove_source_identifier_from_subscription](#remove_source_identifier_from_subscription)
-    - [remove_tags_from_resource](#remove_tags_from_resource)
-    - [reset_db_cluster_parameter_group](#reset_db_cluster_parameter_group)
-    - [reset_db_parameter_group](#reset_db_parameter_group)
-    - [restore_db_cluster_from_s3](#restore_db_cluster_from_s3)
-    - [restore_db_cluster_from_snapshot](#restore_db_cluster_from_snapshot)
-    - [restore_db_cluster_to_point_in_time](#restore_db_cluster_to_point_in_time)
-    - [restore_db_instance_from_db_snapshot](#restore_db_instance_from_db_snapshot)
-    - [restore_db_instance_from_s3](#restore_db_instance_from_s3)
-    - [restore_db_instance_to_point_in_time](#restore_db_instance_to_point_in_time)
-    - [revoke_db_security_group_ingress](#revoke_db_security_group_ingress)
-    - [start_activity_stream](#start_activity_stream)
-    - [start_db_cluster](#start_db_cluster)
-    - [start_db_instance](#start_db_instance)
-    - [start_db_instance_automated_backups_replication](#start_db_instance_automated_backups_replication)
-    - [start_export_task](#start_export_task)
-    - [stop_activity_stream](#stop_activity_stream)
-    - [stop_db_cluster](#stop_db_cluster)
-    - [stop_db_instance](#stop_db_instance)
-    - [stop_db_instance_automated_backups_replication](#stop_db_instance_automated_backups_replication)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="rdsclient"></a>
+    Auto-generated documentation for [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
+    type annotations stubs module [mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
 ## RDSClient
 
-Type annotations for `boto3.client("rds")`
+Type annotations and code completion for `#!python boto3.client("rds")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_rds.client import RDSClient
 
@@ -177,4102 +20,5317 @@ def get_rds_client() -> RDSClient:
     return Session().client("rds")
 ```
 
-Boto3 documentation:
-[RDS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("rds").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("rds")
+
+try:
+    do_something(client)
+except (
+    client.AuthorizationAlreadyExistsFault,
+    client.AuthorizationNotFoundFault,
+    client.AuthorizationQuotaExceededFault,
+    client.BackupPolicyNotFoundFault,
+    client.CertificateNotFoundFault,
+    client.ClientError,
+    client.CustomAvailabilityZoneAlreadyExistsFault,
+    client.CustomAvailabilityZoneNotFoundFault,
+    client.CustomAvailabilityZoneQuotaExceededFault,
+    client.CustomDBEngineVersionAlreadyExistsFault,
+    client.CustomDBEngineVersionNotFoundFault,
+    client.CustomDBEngineVersionQuotaExceededFault,
+    client.DBClusterAlreadyExistsFault,
+    client.DBClusterBacktrackNotFoundFault,
+    client.DBClusterEndpointAlreadyExistsFault,
+    client.DBClusterEndpointNotFoundFault,
+    client.DBClusterEndpointQuotaExceededFault,
+    client.DBClusterNotFoundFault,
+    client.DBClusterParameterGroupNotFoundFault,
+    client.DBClusterQuotaExceededFault,
+    client.DBClusterRoleAlreadyExistsFault,
+    client.DBClusterRoleNotFoundFault,
+    client.DBClusterRoleQuotaExceededFault,
+    client.DBClusterSnapshotAlreadyExistsFault,
+    client.DBClusterSnapshotNotFoundFault,
+    client.DBInstanceAlreadyExistsFault,
+    client.DBInstanceAutomatedBackupNotFoundFault,
+    client.DBInstanceAutomatedBackupQuotaExceededFault,
+    client.DBInstanceNotFoundFault,
+    client.DBInstanceRoleAlreadyExistsFault,
+    client.DBInstanceRoleNotFoundFault,
+    client.DBInstanceRoleQuotaExceededFault,
+    client.DBLogFileNotFoundFault,
+    client.DBParameterGroupAlreadyExistsFault,
+    client.DBParameterGroupNotFoundFault,
+    client.DBParameterGroupQuotaExceededFault,
+    client.DBProxyAlreadyExistsFault,
+    client.DBProxyEndpointAlreadyExistsFault,
+    client.DBProxyEndpointNotFoundFault,
+    client.DBProxyEndpointQuotaExceededFault,
+    client.DBProxyNotFoundFault,
+    client.DBProxyQuotaExceededFault,
+    client.DBProxyTargetAlreadyRegisteredFault,
+    client.DBProxyTargetGroupNotFoundFault,
+    client.DBProxyTargetNotFoundFault,
+    client.DBSecurityGroupAlreadyExistsFault,
+    client.DBSecurityGroupNotFoundFault,
+    client.DBSecurityGroupNotSupportedFault,
+    client.DBSecurityGroupQuotaExceededFault,
+    client.DBSnapshotAlreadyExistsFault,
+    client.DBSnapshotNotFoundFault,
+    client.DBSubnetGroupAlreadyExistsFault,
+    client.DBSubnetGroupDoesNotCoverEnoughAZs,
+    client.DBSubnetGroupNotAllowedFault,
+    client.DBSubnetGroupNotFoundFault,
+    client.DBSubnetGroupQuotaExceededFault,
+    client.DBSubnetQuotaExceededFault,
+    client.DBUpgradeDependencyFailureFault,
+    client.DomainNotFoundFault,
+    client.EventSubscriptionQuotaExceededFault,
+    client.ExportTaskAlreadyExistsFault,
+    client.ExportTaskNotFoundFault,
+    client.GlobalClusterAlreadyExistsFault,
+    client.GlobalClusterNotFoundFault,
+    client.GlobalClusterQuotaExceededFault,
+    client.IamRoleMissingPermissionsFault,
+    client.IamRoleNotFoundFault,
+    client.InstallationMediaAlreadyExistsFault,
+    client.InstallationMediaNotFoundFault,
+    client.InstanceQuotaExceededFault,
+    client.InsufficientAvailableIPsInSubnetFault,
+    client.InsufficientDBClusterCapacityFault,
+    client.InsufficientDBInstanceCapacityFault,
+    client.InsufficientStorageClusterCapacityFault,
+    client.InvalidCustomDBEngineVersionStateFault,
+    client.InvalidDBClusterCapacityFault,
+    client.InvalidDBClusterEndpointStateFault,
+    client.InvalidDBClusterSnapshotStateFault,
+    client.InvalidDBClusterStateFault,
+    client.InvalidDBInstanceAutomatedBackupStateFault,
+    client.InvalidDBInstanceStateFault,
+    client.InvalidDBParameterGroupStateFault,
+    client.InvalidDBProxyEndpointStateFault,
+    client.InvalidDBProxyStateFault,
+    client.InvalidDBSecurityGroupStateFault,
+    client.InvalidDBSnapshotStateFault,
+    client.InvalidDBSubnetGroupFault,
+    client.InvalidDBSubnetGroupStateFault,
+    client.InvalidDBSubnetStateFault,
+    client.InvalidEventSubscriptionStateFault,
+    client.InvalidExportOnlyFault,
+    client.InvalidExportSourceStateFault,
+    client.InvalidExportTaskStateFault,
+    client.InvalidGlobalClusterStateFault,
+    client.InvalidOptionGroupStateFault,
+    client.InvalidRestoreFault,
+    client.InvalidS3BucketFault,
+    client.InvalidSubnet,
+    client.InvalidVPCNetworkStateFault,
+    client.KMSKeyNotAccessibleFault,
+    client.OptionGroupAlreadyExistsFault,
+    client.OptionGroupNotFoundFault,
+    client.OptionGroupQuotaExceededFault,
+    client.PointInTimeRestoreNotEnabledFault,
+    client.ProvisionedIopsNotAvailableInAZFault,
+    client.ReservedDBInstanceAlreadyExistsFault,
+    client.ReservedDBInstanceNotFoundFault,
+    client.ReservedDBInstanceQuotaExceededFault,
+    client.ReservedDBInstancesOfferingNotFoundFault,
+    client.ResourceNotFoundFault,
+    client.SNSInvalidTopicFault,
+    client.SNSNoAuthorizationFault,
+    client.SNSTopicArnNotFoundFault,
+    client.SharedSnapshotQuotaExceededFault,
+    client.SnapshotQuotaExceededFault,
+    client.SourceNotFoundFault,
+    client.StorageQuotaExceededFault,
+    client.StorageTypeNotSupportedFault,
+    client.SubnetAlreadyInUse,
+    client.SubscriptionAlreadyExistFault,
+    client.SubscriptionCategoryNotFoundFault,
+    client.SubscriptionNotFoundFault,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_rds.client import Exceptions
 
 def handle_error(exc: Exceptions.AuthorizationAlreadyExistsFault) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AuthorizationAlreadyExistsFault`
-- `Exceptions.AuthorizationNotFoundFault`
-- `Exceptions.AuthorizationQuotaExceededFault`
-- `Exceptions.BackupPolicyNotFoundFault`
-- `Exceptions.CertificateNotFoundFault`
-- `Exceptions.ClientError`
-- `Exceptions.CustomAvailabilityZoneAlreadyExistsFault`
-- `Exceptions.CustomAvailabilityZoneNotFoundFault`
-- `Exceptions.CustomAvailabilityZoneQuotaExceededFault`
-- `Exceptions.CustomDBEngineVersionAlreadyExistsFault`
-- `Exceptions.CustomDBEngineVersionNotFoundFault`
-- `Exceptions.CustomDBEngineVersionQuotaExceededFault`
-- `Exceptions.DBClusterAlreadyExistsFault`
-- `Exceptions.DBClusterBacktrackNotFoundFault`
-- `Exceptions.DBClusterEndpointAlreadyExistsFault`
-- `Exceptions.DBClusterEndpointNotFoundFault`
-- `Exceptions.DBClusterEndpointQuotaExceededFault`
-- `Exceptions.DBClusterNotFoundFault`
-- `Exceptions.DBClusterParameterGroupNotFoundFault`
-- `Exceptions.DBClusterQuotaExceededFault`
-- `Exceptions.DBClusterRoleAlreadyExistsFault`
-- `Exceptions.DBClusterRoleNotFoundFault`
-- `Exceptions.DBClusterRoleQuotaExceededFault`
-- `Exceptions.DBClusterSnapshotAlreadyExistsFault`
-- `Exceptions.DBClusterSnapshotNotFoundFault`
-- `Exceptions.DBInstanceAlreadyExistsFault`
-- `Exceptions.DBInstanceAutomatedBackupNotFoundFault`
-- `Exceptions.DBInstanceAutomatedBackupQuotaExceededFault`
-- `Exceptions.DBInstanceNotFoundFault`
-- `Exceptions.DBInstanceRoleAlreadyExistsFault`
-- `Exceptions.DBInstanceRoleNotFoundFault`
-- `Exceptions.DBInstanceRoleQuotaExceededFault`
-- `Exceptions.DBLogFileNotFoundFault`
-- `Exceptions.DBParameterGroupAlreadyExistsFault`
-- `Exceptions.DBParameterGroupNotFoundFault`
-- `Exceptions.DBParameterGroupQuotaExceededFault`
-- `Exceptions.DBProxyAlreadyExistsFault`
-- `Exceptions.DBProxyEndpointAlreadyExistsFault`
-- `Exceptions.DBProxyEndpointNotFoundFault`
-- `Exceptions.DBProxyEndpointQuotaExceededFault`
-- `Exceptions.DBProxyNotFoundFault`
-- `Exceptions.DBProxyQuotaExceededFault`
-- `Exceptions.DBProxyTargetAlreadyRegisteredFault`
-- `Exceptions.DBProxyTargetGroupNotFoundFault`
-- `Exceptions.DBProxyTargetNotFoundFault`
-- `Exceptions.DBSecurityGroupAlreadyExistsFault`
-- `Exceptions.DBSecurityGroupNotFoundFault`
-- `Exceptions.DBSecurityGroupNotSupportedFault`
-- `Exceptions.DBSecurityGroupQuotaExceededFault`
-- `Exceptions.DBSnapshotAlreadyExistsFault`
-- `Exceptions.DBSnapshotNotFoundFault`
-- `Exceptions.DBSubnetGroupAlreadyExistsFault`
-- `Exceptions.DBSubnetGroupDoesNotCoverEnoughAZs`
-- `Exceptions.DBSubnetGroupNotAllowedFault`
-- `Exceptions.DBSubnetGroupNotFoundFault`
-- `Exceptions.DBSubnetGroupQuotaExceededFault`
-- `Exceptions.DBSubnetQuotaExceededFault`
-- `Exceptions.DBUpgradeDependencyFailureFault`
-- `Exceptions.DomainNotFoundFault`
-- `Exceptions.EventSubscriptionQuotaExceededFault`
-- `Exceptions.ExportTaskAlreadyExistsFault`
-- `Exceptions.ExportTaskNotFoundFault`
-- `Exceptions.GlobalClusterAlreadyExistsFault`
-- `Exceptions.GlobalClusterNotFoundFault`
-- `Exceptions.GlobalClusterQuotaExceededFault`
-- `Exceptions.IamRoleMissingPermissionsFault`
-- `Exceptions.IamRoleNotFoundFault`
-- `Exceptions.InstallationMediaAlreadyExistsFault`
-- `Exceptions.InstallationMediaNotFoundFault`
-- `Exceptions.InstanceQuotaExceededFault`
-- `Exceptions.InsufficientAvailableIPsInSubnetFault`
-- `Exceptions.InsufficientDBClusterCapacityFault`
-- `Exceptions.InsufficientDBInstanceCapacityFault`
-- `Exceptions.InsufficientStorageClusterCapacityFault`
-- `Exceptions.InvalidCustomDBEngineVersionStateFault`
-- `Exceptions.InvalidDBClusterCapacityFault`
-- `Exceptions.InvalidDBClusterEndpointStateFault`
-- `Exceptions.InvalidDBClusterSnapshotStateFault`
-- `Exceptions.InvalidDBClusterStateFault`
-- `Exceptions.InvalidDBInstanceAutomatedBackupStateFault`
-- `Exceptions.InvalidDBInstanceStateFault`
-- `Exceptions.InvalidDBParameterGroupStateFault`
-- `Exceptions.InvalidDBProxyEndpointStateFault`
-- `Exceptions.InvalidDBProxyStateFault`
-- `Exceptions.InvalidDBSecurityGroupStateFault`
-- `Exceptions.InvalidDBSnapshotStateFault`
-- `Exceptions.InvalidDBSubnetGroupFault`
-- `Exceptions.InvalidDBSubnetGroupStateFault`
-- `Exceptions.InvalidDBSubnetStateFault`
-- `Exceptions.InvalidEventSubscriptionStateFault`
-- `Exceptions.InvalidExportOnlyFault`
-- `Exceptions.InvalidExportSourceStateFault`
-- `Exceptions.InvalidExportTaskStateFault`
-- `Exceptions.InvalidGlobalClusterStateFault`
-- `Exceptions.InvalidOptionGroupStateFault`
-- `Exceptions.InvalidRestoreFault`
-- `Exceptions.InvalidS3BucketFault`
-- `Exceptions.InvalidSubnet`
-- `Exceptions.InvalidVPCNetworkStateFault`
-- `Exceptions.KMSKeyNotAccessibleFault`
-- `Exceptions.OptionGroupAlreadyExistsFault`
-- `Exceptions.OptionGroupNotFoundFault`
-- `Exceptions.OptionGroupQuotaExceededFault`
-- `Exceptions.PointInTimeRestoreNotEnabledFault`
-- `Exceptions.ProvisionedIopsNotAvailableInAZFault`
-- `Exceptions.ReservedDBInstanceAlreadyExistsFault`
-- `Exceptions.ReservedDBInstanceNotFoundFault`
-- `Exceptions.ReservedDBInstanceQuotaExceededFault`
-- `Exceptions.ReservedDBInstancesOfferingNotFoundFault`
-- `Exceptions.ResourceNotFoundFault`
-- `Exceptions.SNSInvalidTopicFault`
-- `Exceptions.SNSNoAuthorizationFault`
-- `Exceptions.SNSTopicArnNotFoundFault`
-- `Exceptions.SharedSnapshotQuotaExceededFault`
-- `Exceptions.SnapshotQuotaExceededFault`
-- `Exceptions.SourceNotFoundFault`
-- `Exceptions.StorageQuotaExceededFault`
-- `Exceptions.StorageTypeNotSupportedFault`
-- `Exceptions.SubnetAlreadyInUse`
-- `Exceptions.SubscriptionAlreadyExistFault`
-- `Exceptions.SubscriptionCategoryNotFoundFault`
-- `Exceptions.SubscriptionNotFoundFault`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-RDSClient exceptions.
-
-Type annotations for `boto3.client("rds").exceptions` method.
-
-Boto3 documentation:
-[RDS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_role\_to\_db\_cluster"></a>
-
-### add_role_to_db_cluster
+### add\_role\_to\_db\_cluster
 
 Associates an Identity and Access Management (IAM) role with a DB cluster.
 
-Type annotations for `boto3.client("rds").add_role_to_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").add_role_to_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.add_role_to_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_cluster)
+```python title="Method definition"
+def add_role_to_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    RoleArn: str,
+    FeatureName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddRoleToDBClusterMessageRequestTypeDef](./type_defs.md#addroletodbclustermessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `FeatureName`: `str`
+```python title="Usage example with kwargs"
+kwargs: AddRoleToDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+    "RoleArn": ...,
+}
 
-<a id="add\_role\_to\_db\_instance"></a>
+parent.add_role_to_db_cluster(**kwargs)
+```
 
-### add_role_to_db_instance
+1. See [:material-code-braces: AddRoleToDBClusterMessageRequestTypeDef](./type_defs.md#addroletodbclustermessagerequesttypedef) 
 
-Associates an Amazon Web Services Identity and Access Management (IAM) role
-with a DB instance.
+### add\_role\_to\_db\_instance
 
-Type annotations for `boto3.client("rds").add_role_to_db_instance` method.
+Associates an Amazon Web Services Identity and Access Management (IAM) role with
+a DB instance.
 
-Boto3 documentation:
-[RDS.Client.add_role_to_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_instance)
+Type annotations and code completion for `#!python boto3.client("rds").add_role_to_db_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_role_to_db_instance)
 
-Arguments mapping described in
-[AddRoleToDBInstanceMessageRequestTypeDef](./type_defs.md#addroletodbinstancemessagerequesttypedef).
+```python title="Method definition"
+def add_role_to_db_instance(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    RoleArn: str,
+    FeatureName: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `FeatureName`: `str` *(required)*
 
-<a id="add\_source\_identifier\_to\_subscription"></a>
+```python title="Usage example with kwargs"
+kwargs: AddRoleToDBInstanceMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+    "RoleArn": ...,
+    "FeatureName": ...,
+}
 
-### add_source_identifier_to_subscription
+parent.add_role_to_db_instance(**kwargs)
+```
+
+1. See [:material-code-braces: AddRoleToDBInstanceMessageRequestTypeDef](./type_defs.md#addroletodbinstancemessagerequesttypedef) 
+
+### add\_source\_identifier\_to\_subscription
 
 Adds a source identifier to an existing RDS event notification subscription.
 
-Type annotations for
-`boto3.client("rds").add_source_identifier_to_subscription` method.
+Type annotations and code completion for `#!python boto3.client("rds").add_source_identifier_to_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_source_identifier_to_subscription)
 
-Boto3 documentation:
-[RDS.Client.add_source_identifier_to_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_source_identifier_to_subscription)
+```python title="Method definition"
+def add_source_identifier_to_subscription(
+    self,
+    *,
+    SubscriptionName: str,
+    SourceIdentifier: str,
+) -> AddSourceIdentifierToSubscriptionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AddSourceIdentifierToSubscriptionMessageRequestTypeDef](./type_defs.md#addsourceidentifiertosubscriptionmessagerequesttypedef).
+1. See [:material-code-braces: AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str` *(required)*
-- `SourceIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddSourceIdentifierToSubscriptionMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+    "SourceIdentifier": ...,
+}
 
-Returns
-[AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef).
+parent.add_source_identifier_to_subscription(**kwargs)
+```
 
-<a id="add\_tags\_to\_resource"></a>
+1. See [:material-code-braces: AddSourceIdentifierToSubscriptionMessageRequestTypeDef](./type_defs.md#addsourceidentifiertosubscriptionmessagerequesttypedef) 
 
-### add_tags_to_resource
+### add\_tags\_to\_resource
 
 Adds metadata tags to an Amazon RDS resource.
 
-Type annotations for `boto3.client("rds").add_tags_to_resource` method.
+Type annotations and code completion for `#!python boto3.client("rds").add_tags_to_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_tags_to_resource)
 
-Boto3 documentation:
-[RDS.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.add_tags_to_resource)
+```python title="Method definition"
+def add_tags_to_resource(
+    self,
+    *,
+    ResourceName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsToResourceMessageRequestTypeDef](./type_defs.md#addtagstoresourcemessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceName`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsToResourceMessageRequestTypeDef = {  # (1)
+    "ResourceName": ...,
+    "Tags": ...,
+}
 
-<a id="apply\_pending\_maintenance\_action"></a>
+parent.add_tags_to_resource(**kwargs)
+```
 
-### apply_pending_maintenance_action
+1. See [:material-code-braces: AddTagsToResourceMessageRequestTypeDef](./type_defs.md#addtagstoresourcemessagerequesttypedef) 
+
+### apply\_pending\_maintenance\_action
 
 Applies a pending maintenance action to a resource (for example, to a DB
 instance).
 
-Type annotations for `boto3.client("rds").apply_pending_maintenance_action`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").apply_pending_maintenance_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.apply_pending_maintenance_action)
 
-Boto3 documentation:
-[RDS.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.apply_pending_maintenance_action)
+```python title="Method definition"
+def apply_pending_maintenance_action(
+    self,
+    *,
+    ResourceIdentifier: str,
+    ApplyAction: str,
+    OptInType: str,
+) -> ApplyPendingMaintenanceActionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ApplyPendingMaintenanceActionMessageRequestTypeDef](./type_defs.md#applypendingmaintenanceactionmessagerequesttypedef).
+1. See [:material-code-braces: ApplyPendingMaintenanceActionResultTypeDef](./type_defs.md#applypendingmaintenanceactionresulttypedef) 
 
-Keyword-only arguments:
 
-- `ResourceIdentifier`: `str` *(required)*
-- `ApplyAction`: `str` *(required)*
-- `OptInType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ApplyPendingMaintenanceActionMessageRequestTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+    "ApplyAction": ...,
+    "OptInType": ...,
+}
 
-Returns
-[ApplyPendingMaintenanceActionResultTypeDef](./type_defs.md#applypendingmaintenanceactionresulttypedef).
+parent.apply_pending_maintenance_action(**kwargs)
+```
 
-<a id="authorize\_db\_security\_group\_ingress"></a>
+1. See [:material-code-braces: ApplyPendingMaintenanceActionMessageRequestTypeDef](./type_defs.md#applypendingmaintenanceactionmessagerequesttypedef) 
 
-### authorize_db_security_group_ingress
+### authorize\_db\_security\_group\_ingress
 
 Enables ingress to a DBSecurityGroup using one of two forms of authorization.
 
-Type annotations for `boto3.client("rds").authorize_db_security_group_ingress`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").authorize_db_security_group_ingress` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.authorize_db_security_group_ingress)
 
-Boto3 documentation:
-[RDS.Client.authorize_db_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.authorize_db_security_group_ingress)
+```python title="Method definition"
+def authorize_db_security_group_ingress(
+    self,
+    *,
+    DBSecurityGroupName: str,
+    CIDRIP: str = ...,
+    EC2SecurityGroupName: str = ...,
+    EC2SecurityGroupId: str = ...,
+    EC2SecurityGroupOwnerId: str = ...,
+) -> AuthorizeDBSecurityGroupIngressResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AuthorizeDBSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#authorizedbsecuritygroupingressmessagerequesttypedef).
+1. See [:material-code-braces: AuthorizeDBSecurityGroupIngressResultTypeDef](./type_defs.md#authorizedbsecuritygroupingressresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSecurityGroupName`: `str` *(required)*
-- `CIDRIP`: `str`
-- `EC2SecurityGroupName`: `str`
-- `EC2SecurityGroupId`: `str`
-- `EC2SecurityGroupOwnerId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AuthorizeDBSecurityGroupIngressMessageRequestTypeDef = {  # (1)
+    "DBSecurityGroupName": ...,
+}
 
-Returns
-[AuthorizeDBSecurityGroupIngressResultTypeDef](./type_defs.md#authorizedbsecuritygroupingressresulttypedef).
+parent.authorize_db_security_group_ingress(**kwargs)
+```
 
-<a id="backtrack\_db\_cluster"></a>
+1. See [:material-code-braces: AuthorizeDBSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#authorizedbsecuritygroupingressmessagerequesttypedef) 
 
-### backtrack_db_cluster
+### backtrack\_db\_cluster
 
 Backtracks a DB cluster to a specific time, without creating a new DB cluster.
 
-Type annotations for `boto3.client("rds").backtrack_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").backtrack_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.backtrack_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.backtrack_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.backtrack_db_cluster)
+```python title="Method definition"
+def backtrack_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    BacktrackTo: Union[datetime, str],
+    Force: bool = ...,
+    UseEarliestTimeOnPointInTimeUnavailable: bool = ...,
+) -> DBClusterBacktrackResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BacktrackDBClusterMessageRequestTypeDef](./type_defs.md#backtrackdbclustermessagerequesttypedef).
+1. See [:material-code-braces: DBClusterBacktrackResponseMetadataTypeDef](./type_defs.md#dbclusterbacktrackresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `BacktrackTo`: `Union`\[`datetime`, `str`\] *(required)*
-- `Force`: `bool`
-- `UseEarliestTimeOnPointInTimeUnavailable`: `bool`
+```python title="Usage example with kwargs"
+kwargs: BacktrackDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+    "BacktrackTo": ...,
+}
 
-Returns
-[DBClusterBacktrackResponseMetadataTypeDef](./type_defs.md#dbclusterbacktrackresponsemetadatatypedef).
+parent.backtrack_db_cluster(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BacktrackDBClusterMessageRequestTypeDef](./type_defs.md#backtrackdbclustermessagerequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("rds").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("rds").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.can_paginate)
 
-Boto3 documentation:
-[RDS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_export\_task"></a>
-
-### cancel_export_task
+### cancel\_export\_task
 
 Cancels an export task in progress that is exporting a snapshot to Amazon S3.
 
-Type annotations for `boto3.client("rds").cancel_export_task` method.
+Type annotations and code completion for `#!python boto3.client("rds").cancel_export_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.cancel_export_task)
 
-Boto3 documentation:
-[RDS.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.cancel_export_task)
+```python title="Method definition"
+def cancel_export_task(
+    self,
+    *,
+    ExportTaskIdentifier: str,
+) -> ExportTaskResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelExportTaskMessageRequestTypeDef](./type_defs.md#cancelexporttaskmessagerequesttypedef).
+1. See [:material-code-braces: ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ExportTaskIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelExportTaskMessageRequestTypeDef = {  # (1)
+    "ExportTaskIdentifier": ...,
+}
 
-Returns
-[ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef).
+parent.cancel_export_task(**kwargs)
+```
 
-<a id="copy\_db\_cluster\_parameter\_group"></a>
+1. See [:material-code-braces: CancelExportTaskMessageRequestTypeDef](./type_defs.md#cancelexporttaskmessagerequesttypedef) 
 
-### copy_db_cluster_parameter_group
+### copy\_db\_cluster\_parameter\_group
 
 Copies the specified DB cluster parameter group.
 
-Type annotations for `boto3.client("rds").copy_db_cluster_parameter_group`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").copy_db_cluster_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.copy_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_parameter_group)
+```python title="Method definition"
+def copy_db_cluster_parameter_group(
+    self,
+    *,
+    SourceDBClusterParameterGroupIdentifier: str,
+    TargetDBClusterParameterGroupIdentifier: str,
+    TargetDBClusterParameterGroupDescription: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CopyDBClusterParameterGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CopyDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#copydbclusterparametergroupmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `SourceDBClusterParameterGroupIdentifier`: `str` *(required)*
-- `TargetDBClusterParameterGroupIdentifier`: `str` *(required)*
-- `TargetDBClusterParameterGroupDescription`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CopyDBClusterParameterGroupMessageRequestTypeDef = {  # (1)
+    "SourceDBClusterParameterGroupIdentifier": ...,
+    "TargetDBClusterParameterGroupIdentifier": ...,
+    "TargetDBClusterParameterGroupDescription": ...,
+}
 
-Returns
-[CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef).
+parent.copy_db_cluster_parameter_group(**kwargs)
+```
 
-<a id="copy\_db\_cluster\_snapshot"></a>
+1. See [:material-code-braces: CopyDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#copydbclusterparametergroupmessagerequesttypedef) 
 
-### copy_db_cluster_snapshot
+### copy\_db\_cluster\_snapshot
 
 Copies a snapshot of a DB cluster.
 
-Type annotations for `boto3.client("rds").copy_db_cluster_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("rds").copy_db_cluster_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_snapshot)
 
-Boto3 documentation:
-[RDS.Client.copy_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_cluster_snapshot)
+```python title="Method definition"
+def copy_db_cluster_snapshot(
+    self,
+    *,
+    SourceDBClusterSnapshotIdentifier: str,
+    TargetDBClusterSnapshotIdentifier: str,
+    KmsKeyId: str = ...,
+    PreSignedUrl: str = ...,
+    CopyTags: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    SourceRegion: str = ...,
+) -> CopyDBClusterSnapshotResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CopyDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#copydbclustersnapshotmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CopyDBClusterSnapshotResultTypeDef](./type_defs.md#copydbclustersnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `SourceDBClusterSnapshotIdentifier`: `str` *(required)*
-- `TargetDBClusterSnapshotIdentifier`: `str` *(required)*
-- `KmsKeyId`: `str`
-- `PreSignedUrl`: `str`
-- `CopyTags`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SourceRegion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CopyDBClusterSnapshotMessageRequestTypeDef = {  # (1)
+    "SourceDBClusterSnapshotIdentifier": ...,
+    "TargetDBClusterSnapshotIdentifier": ...,
+}
 
-Returns
-[CopyDBClusterSnapshotResultTypeDef](./type_defs.md#copydbclustersnapshotresulttypedef).
+parent.copy_db_cluster_snapshot(**kwargs)
+```
 
-<a id="copy\_db\_parameter\_group"></a>
+1. See [:material-code-braces: CopyDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#copydbclustersnapshotmessagerequesttypedef) 
 
-### copy_db_parameter_group
+### copy\_db\_parameter\_group
 
 Copies the specified DB parameter group.
 
-Type annotations for `boto3.client("rds").copy_db_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").copy_db_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.copy_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_parameter_group)
+```python title="Method definition"
+def copy_db_parameter_group(
+    self,
+    *,
+    SourceDBParameterGroupIdentifier: str,
+    TargetDBParameterGroupIdentifier: str,
+    TargetDBParameterGroupDescription: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CopyDBParameterGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CopyDBParameterGroupMessageRequestTypeDef](./type_defs.md#copydbparametergroupmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CopyDBParameterGroupResultTypeDef](./type_defs.md#copydbparametergroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `SourceDBParameterGroupIdentifier`: `str` *(required)*
-- `TargetDBParameterGroupIdentifier`: `str` *(required)*
-- `TargetDBParameterGroupDescription`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CopyDBParameterGroupMessageRequestTypeDef = {  # (1)
+    "SourceDBParameterGroupIdentifier": ...,
+    "TargetDBParameterGroupIdentifier": ...,
+    "TargetDBParameterGroupDescription": ...,
+}
 
-Returns
-[CopyDBParameterGroupResultTypeDef](./type_defs.md#copydbparametergroupresulttypedef).
+parent.copy_db_parameter_group(**kwargs)
+```
 
-<a id="copy\_db\_snapshot"></a>
+1. See [:material-code-braces: CopyDBParameterGroupMessageRequestTypeDef](./type_defs.md#copydbparametergroupmessagerequesttypedef) 
 
-### copy_db_snapshot
+### copy\_db\_snapshot
 
 Copies the specified DB snapshot.
 
-Type annotations for `boto3.client("rds").copy_db_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("rds").copy_db_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_snapshot)
 
-Boto3 documentation:
-[RDS.Client.copy_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_db_snapshot)
+```python title="Method definition"
+def copy_db_snapshot(
+    self,
+    *,
+    SourceDBSnapshotIdentifier: str,
+    TargetDBSnapshotIdentifier: str,
+    KmsKeyId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    CopyTags: bool = ...,
+    PreSignedUrl: str = ...,
+    OptionGroupName: str = ...,
+    TargetCustomAvailabilityZone: str = ...,
+    SourceRegion: str = ...,
+) -> CopyDBSnapshotResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CopyDBSnapshotMessageRequestTypeDef](./type_defs.md#copydbsnapshotmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CopyDBSnapshotResultTypeDef](./type_defs.md#copydbsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `SourceDBSnapshotIdentifier`: `str` *(required)*
-- `TargetDBSnapshotIdentifier`: `str` *(required)*
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CopyTags`: `bool`
-- `PreSignedUrl`: `str`
-- `OptionGroupName`: `str`
-- `TargetCustomAvailabilityZone`: `str`
-- `SourceRegion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CopyDBSnapshotMessageRequestTypeDef = {  # (1)
+    "SourceDBSnapshotIdentifier": ...,
+    "TargetDBSnapshotIdentifier": ...,
+}
 
-Returns
-[CopyDBSnapshotResultTypeDef](./type_defs.md#copydbsnapshotresulttypedef).
+parent.copy_db_snapshot(**kwargs)
+```
 
-<a id="copy\_option\_group"></a>
+1. See [:material-code-braces: CopyDBSnapshotMessageRequestTypeDef](./type_defs.md#copydbsnapshotmessagerequesttypedef) 
 
-### copy_option_group
+### copy\_option\_group
 
 Copies the specified option group.
 
-Type annotations for `boto3.client("rds").copy_option_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").copy_option_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_option_group)
 
-Boto3 documentation:
-[RDS.Client.copy_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.copy_option_group)
+```python title="Method definition"
+def copy_option_group(
+    self,
+    *,
+    SourceOptionGroupIdentifier: str,
+    TargetOptionGroupIdentifier: str,
+    TargetOptionGroupDescription: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CopyOptionGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CopyOptionGroupMessageRequestTypeDef](./type_defs.md#copyoptiongroupmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CopyOptionGroupResultTypeDef](./type_defs.md#copyoptiongroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `SourceOptionGroupIdentifier`: `str` *(required)*
-- `TargetOptionGroupIdentifier`: `str` *(required)*
-- `TargetOptionGroupDescription`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CopyOptionGroupMessageRequestTypeDef = {  # (1)
+    "SourceOptionGroupIdentifier": ...,
+    "TargetOptionGroupIdentifier": ...,
+    "TargetOptionGroupDescription": ...,
+}
 
-Returns
-[CopyOptionGroupResultTypeDef](./type_defs.md#copyoptiongroupresulttypedef).
+parent.copy_option_group(**kwargs)
+```
 
-<a id="create\_custom\_availability\_zone"></a>
+1. See [:material-code-braces: CopyOptionGroupMessageRequestTypeDef](./type_defs.md#copyoptiongroupmessagerequesttypedef) 
 
-### create_custom_availability_zone
+### create\_custom\_availability\_zone
 
 Creates a custom Availability Zone (AZ).
 
-Type annotations for `boto3.client("rds").create_custom_availability_zone`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").create_custom_availability_zone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_availability_zone)
 
-Boto3 documentation:
-[RDS.Client.create_custom_availability_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_availability_zone)
+```python title="Method definition"
+def create_custom_availability_zone(
+    self,
+    *,
+    CustomAvailabilityZoneName: str,
+    ExistingVpnId: str = ...,
+    NewVpnTunnelName: str = ...,
+    VpnTunnelOriginatorIP: str = ...,
+) -> CreateCustomAvailabilityZoneResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#createcustomavailabilityzonemessagerequesttypedef).
+1. See [:material-code-braces: CreateCustomAvailabilityZoneResultTypeDef](./type_defs.md#createcustomavailabilityzoneresulttypedef) 
 
-Keyword-only arguments:
 
-- `CustomAvailabilityZoneName`: `str` *(required)*
-- `ExistingVpnId`: `str`
-- `NewVpnTunnelName`: `str`
-- `VpnTunnelOriginatorIP`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateCustomAvailabilityZoneMessageRequestTypeDef = {  # (1)
+    "CustomAvailabilityZoneName": ...,
+}
 
-Returns
-[CreateCustomAvailabilityZoneResultTypeDef](./type_defs.md#createcustomavailabilityzoneresulttypedef).
+parent.create_custom_availability_zone(**kwargs)
+```
 
-<a id="create\_custom\_db\_engine\_version"></a>
+1. See [:material-code-braces: CreateCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#createcustomavailabilityzonemessagerequesttypedef) 
 
-### create_custom_db_engine_version
+### create\_custom\_db\_engine\_version
 
 Creates a custom DB engine version (CEV).
 
-Type annotations for `boto3.client("rds").create_custom_db_engine_version`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").create_custom_db_engine_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_db_engine_version)
 
-Boto3 documentation:
-[RDS.Client.create_custom_db_engine_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_custom_db_engine_version)
+```python title="Method definition"
+def create_custom_db_engine_version(
+    self,
+    *,
+    Engine: str,
+    EngineVersion: str,
+    DatabaseInstallationFilesS3BucketName: str,
+    KMSKeyId: str,
+    Manifest: str,
+    DatabaseInstallationFilesS3Prefix: str = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> DBEngineVersionResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#createcustomdbengineversionmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `Engine`: `str` *(required)*
-- `EngineVersion`: `str` *(required)*
-- `DatabaseInstallationFilesS3BucketName`: `str` *(required)*
-- `KMSKeyId`: `str` *(required)*
-- `Manifest`: `str` *(required)*
-- `DatabaseInstallationFilesS3Prefix`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateCustomDBEngineVersionMessageRequestTypeDef = {  # (1)
+    "Engine": ...,
+    "EngineVersion": ...,
+    "DatabaseInstallationFilesS3BucketName": ...,
+    "KMSKeyId": ...,
+    "Manifest": ...,
+}
 
-Returns
-[DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef).
+parent.create_custom_db_engine_version(**kwargs)
+```
 
-<a id="create\_db\_cluster"></a>
+1. See [:material-code-braces: CreateCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#createcustomdbengineversionmessagerequesttypedef) 
 
-### create_db_cluster
+### create\_db\_cluster
 
 Creates a new Amazon Aurora DB cluster or Multi-AZ DB cluster.
 
-Type annotations for `boto3.client("rds").create_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.create_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster)
+```python title="Method definition"
+def create_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    Engine: str,
+    AvailabilityZones: Sequence[str] = ...,
+    BackupRetentionPeriod: int = ...,
+    CharacterSetName: str = ...,
+    DatabaseName: str = ...,
+    DBClusterParameterGroupName: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    DBSubnetGroupName: str = ...,
+    EngineVersion: str = ...,
+    Port: int = ...,
+    MasterUsername: str = ...,
+    MasterUserPassword: str = ...,
+    OptionGroupName: str = ...,
+    PreferredBackupWindow: str = ...,
+    PreferredMaintenanceWindow: str = ...,
+    ReplicationSourceIdentifier: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    StorageEncrypted: bool = ...,
+    KmsKeyId: str = ...,
+    PreSignedUrl: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    BacktrackWindow: int = ...,
+    EnableCloudwatchLogsExports: Sequence[str] = ...,
+    EngineMode: str = ...,
+    ScalingConfiguration: ScalingConfigurationTypeDef = ...,  # (2)
+    DeletionProtection: bool = ...,
+    GlobalClusterIdentifier: str = ...,
+    EnableHttpEndpoint: bool = ...,
+    CopyTagsToSnapshot: bool = ...,
+    Domain: str = ...,
+    DomainIAMRoleName: str = ...,
+    EnableGlobalWriteForwarding: bool = ...,
+    DBClusterInstanceClass: str = ...,
+    AllocatedStorage: int = ...,
+    StorageType: str = ...,
+    Iops: int = ...,
+    PubliclyAccessible: bool = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    MonitoringInterval: int = ...,
+    MonitoringRoleArn: str = ...,
+    EnablePerformanceInsights: bool = ...,
+    PerformanceInsightsKMSKeyId: str = ...,
+    PerformanceInsightsRetentionPeriod: int = ...,
+    SourceRegion: str = ...,
+) -> CreateDBClusterResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBClusterMessageRequestTypeDef](./type_defs.md#createdbclustermessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
+3. See [:material-code-braces: CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `Engine`: `str` *(required)*
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `BackupRetentionPeriod`: `int`
-- `CharacterSetName`: `str`
-- `DatabaseName`: `str`
-- `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `DBSubnetGroupName`: `str`
-- `EngineVersion`: `str`
-- `Port`: `int`
-- `MasterUsername`: `str`
-- `MasterUserPassword`: `str`
-- `OptionGroupName`: `str`
-- `PreferredBackupWindow`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `ReplicationSourceIdentifier`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `StorageEncrypted`: `bool`
-- `KmsKeyId`: `str`
-- `PreSignedUrl`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `BacktrackWindow`: `int`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `EngineMode`: `str`
-- `ScalingConfiguration`:
-  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
-- `DeletionProtection`: `bool`
-- `GlobalClusterIdentifier`: `str`
-- `EnableHttpEndpoint`: `bool`
-- `CopyTagsToSnapshot`: `bool`
-- `Domain`: `str`
-- `DomainIAMRoleName`: `str`
-- `EnableGlobalWriteForwarding`: `bool`
-- `DBClusterInstanceClass`: `str`
-- `AllocatedStorage`: `int`
-- `StorageType`: `str`
-- `Iops`: `int`
-- `PubliclyAccessible`: `bool`
-- `AutoMinorVersionUpgrade`: `bool`
-- `MonitoringInterval`: `int`
-- `MonitoringRoleArn`: `str`
-- `EnablePerformanceInsights`: `bool`
-- `PerformanceInsightsKMSKeyId`: `str`
-- `PerformanceInsightsRetentionPeriod`: `int`
-- `SourceRegion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+    "Engine": ...,
+}
 
-Returns
-[CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef).
+parent.create_db_cluster(**kwargs)
+```
 
-<a id="create\_db\_cluster\_endpoint"></a>
+1. See [:material-code-braces: CreateDBClusterMessageRequestTypeDef](./type_defs.md#createdbclustermessagerequesttypedef) 
 
-### create_db_cluster_endpoint
+### create\_db\_cluster\_endpoint
 
 Creates a new custom endpoint and associates it with an Amazon Aurora DB
 cluster.
 
-Type annotations for `boto3.client("rds").create_db_cluster_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_cluster_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_endpoint)
 
-Boto3 documentation:
-[RDS.Client.create_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_endpoint)
+```python title="Method definition"
+def create_db_cluster_endpoint(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    DBClusterEndpointIdentifier: str,
+    EndpointType: str,
+    StaticMembers: Sequence[str] = ...,
+    ExcludedMembers: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> DBClusterEndpointResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBClusterEndpointMessageRequestTypeDef](./type_defs.md#createdbclusterendpointmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `DBClusterEndpointIdentifier`: `str` *(required)*
-- `EndpointType`: `str` *(required)*
-- `StaticMembers`: `Sequence`\[`str`\]
-- `ExcludedMembers`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDBClusterEndpointMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+    "DBClusterEndpointIdentifier": ...,
+    "EndpointType": ...,
+}
 
-Returns
-[DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef).
+parent.create_db_cluster_endpoint(**kwargs)
+```
 
-<a id="create\_db\_cluster\_parameter\_group"></a>
+1. See [:material-code-braces: CreateDBClusterEndpointMessageRequestTypeDef](./type_defs.md#createdbclusterendpointmessagerequesttypedef) 
 
-### create_db_cluster_parameter_group
+### create\_db\_cluster\_parameter\_group
 
 Creates a new DB cluster parameter group.
 
-Type annotations for `boto3.client("rds").create_db_cluster_parameter_group`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_cluster_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.create_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_parameter_group)
+```python title="Method definition"
+def create_db_cluster_parameter_group(
+    self,
+    *,
+    DBClusterParameterGroupName: str,
+    DBParameterGroupFamily: str,
+    Description: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateDBClusterParameterGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#createdbclusterparametergroupmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterParameterGroupName`: `str` *(required)*
-- `DBParameterGroupFamily`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDBClusterParameterGroupMessageRequestTypeDef = {  # (1)
+    "DBClusterParameterGroupName": ...,
+    "DBParameterGroupFamily": ...,
+    "Description": ...,
+}
 
-Returns
-[CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef).
+parent.create_db_cluster_parameter_group(**kwargs)
+```
 
-<a id="create\_db\_cluster\_snapshot"></a>
+1. See [:material-code-braces: CreateDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#createdbclusterparametergroupmessagerequesttypedef) 
 
-### create_db_cluster_snapshot
+### create\_db\_cluster\_snapshot
 
 Creates a snapshot of a DB cluster.
 
-Type annotations for `boto3.client("rds").create_db_cluster_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_cluster_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_snapshot)
 
-Boto3 documentation:
-[RDS.Client.create_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_cluster_snapshot)
+```python title="Method definition"
+def create_db_cluster_snapshot(
+    self,
+    *,
+    DBClusterSnapshotIdentifier: str,
+    DBClusterIdentifier: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateDBClusterSnapshotResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#createdbclustersnapshotmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterSnapshotIdentifier`: `str` *(required)*
-- `DBClusterIdentifier`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDBClusterSnapshotMessageRequestTypeDef = {  # (1)
+    "DBClusterSnapshotIdentifier": ...,
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef).
+parent.create_db_cluster_snapshot(**kwargs)
+```
 
-<a id="create\_db\_instance"></a>
+1. See [:material-code-braces: CreateDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#createdbclustersnapshotmessagerequesttypedef) 
 
-### create_db_instance
+### create\_db\_instance
 
 Creates a new DB instance.
 
-Type annotations for `boto3.client("rds").create_db_instance` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance)
 
-Boto3 documentation:
-[RDS.Client.create_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance)
+```python title="Method definition"
+def create_db_instance(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    DBInstanceClass: str,
+    Engine: str,
+    DBName: str = ...,
+    AllocatedStorage: int = ...,
+    MasterUsername: str = ...,
+    MasterUserPassword: str = ...,
+    DBSecurityGroups: Sequence[str] = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    AvailabilityZone: str = ...,
+    DBSubnetGroupName: str = ...,
+    PreferredMaintenanceWindow: str = ...,
+    DBParameterGroupName: str = ...,
+    BackupRetentionPeriod: int = ...,
+    PreferredBackupWindow: str = ...,
+    Port: int = ...,
+    MultiAZ: bool = ...,
+    EngineVersion: str = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    LicenseModel: str = ...,
+    Iops: int = ...,
+    OptionGroupName: str = ...,
+    CharacterSetName: str = ...,
+    NcharCharacterSetName: str = ...,
+    PubliclyAccessible: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    DBClusterIdentifier: str = ...,
+    StorageType: str = ...,
+    TdeCredentialArn: str = ...,
+    TdeCredentialPassword: str = ...,
+    StorageEncrypted: bool = ...,
+    KmsKeyId: str = ...,
+    Domain: str = ...,
+    CopyTagsToSnapshot: bool = ...,
+    MonitoringInterval: int = ...,
+    MonitoringRoleArn: str = ...,
+    DomainIAMRoleName: str = ...,
+    PromotionTier: int = ...,
+    Timezone: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    EnablePerformanceInsights: bool = ...,
+    PerformanceInsightsKMSKeyId: str = ...,
+    PerformanceInsightsRetentionPeriod: int = ...,
+    EnableCloudwatchLogsExports: Sequence[str] = ...,
+    ProcessorFeatures: Sequence[ProcessorFeatureTypeDef] = ...,  # (2)
+    DeletionProtection: bool = ...,
+    MaxAllocatedStorage: int = ...,
+    EnableCustomerOwnedIp: bool = ...,
+    CustomIamInstanceProfile: str = ...,
+    BackupTarget: str = ...,
+) -> CreateDBInstanceResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBInstanceMessageRequestTypeDef](./type_defs.md#createdbinstancemessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef) 
+3. See [:material-code-braces: CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `DBInstanceClass`: `str` *(required)*
-- `Engine`: `str` *(required)*
-- `DBName`: `str`
-- `AllocatedStorage`: `int`
-- `MasterUsername`: `str`
-- `MasterUserPassword`: `str`
-- `DBSecurityGroups`: `Sequence`\[`str`\]
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `AvailabilityZone`: `str`
-- `DBSubnetGroupName`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `DBParameterGroupName`: `str`
-- `BackupRetentionPeriod`: `int`
-- `PreferredBackupWindow`: `str`
-- `Port`: `int`
-- `MultiAZ`: `bool`
-- `EngineVersion`: `str`
-- `AutoMinorVersionUpgrade`: `bool`
-- `LicenseModel`: `str`
-- `Iops`: `int`
-- `OptionGroupName`: `str`
-- `CharacterSetName`: `str`
-- `NcharCharacterSetName`: `str`
-- `PubliclyAccessible`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DBClusterIdentifier`: `str`
-- `StorageType`: `str`
-- `TdeCredentialArn`: `str`
-- `TdeCredentialPassword`: `str`
-- `StorageEncrypted`: `bool`
-- `KmsKeyId`: `str`
-- `Domain`: `str`
-- `CopyTagsToSnapshot`: `bool`
-- `MonitoringInterval`: `int`
-- `MonitoringRoleArn`: `str`
-- `DomainIAMRoleName`: `str`
-- `PromotionTier`: `int`
-- `Timezone`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `EnablePerformanceInsights`: `bool`
-- `PerformanceInsightsKMSKeyId`: `str`
-- `PerformanceInsightsRetentionPeriod`: `int`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `ProcessorFeatures`:
-  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
-- `DeletionProtection`: `bool`
-- `MaxAllocatedStorage`: `int`
-- `EnableCustomerOwnedIp`: `bool`
-- `CustomIamInstanceProfile`: `str`
-- `BackupTarget`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDBInstanceMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+    "DBInstanceClass": ...,
+    "Engine": ...,
+}
 
-Returns
-[CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
+parent.create_db_instance(**kwargs)
+```
 
-<a id="create\_db\_instance\_read\_replica"></a>
+1. See [:material-code-braces: CreateDBInstanceMessageRequestTypeDef](./type_defs.md#createdbinstancemessagerequesttypedef) 
 
-### create_db_instance_read_replica
+### create\_db\_instance\_read\_replica
 
 Creates a new DB instance that acts as a read replica for an existing source DB
 instance.
 
-Type annotations for `boto3.client("rds").create_db_instance_read_replica`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_instance_read_replica` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance_read_replica)
 
-Boto3 documentation:
-[RDS.Client.create_db_instance_read_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_instance_read_replica)
+```python title="Method definition"
+def create_db_instance_read_replica(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    SourceDBInstanceIdentifier: str,
+    DBInstanceClass: str = ...,
+    AvailabilityZone: str = ...,
+    Port: int = ...,
+    MultiAZ: bool = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    Iops: int = ...,
+    OptionGroupName: str = ...,
+    DBParameterGroupName: str = ...,
+    PubliclyAccessible: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    DBSubnetGroupName: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    StorageType: str = ...,
+    CopyTagsToSnapshot: bool = ...,
+    MonitoringInterval: int = ...,
+    MonitoringRoleArn: str = ...,
+    KmsKeyId: str = ...,
+    PreSignedUrl: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    EnablePerformanceInsights: bool = ...,
+    PerformanceInsightsKMSKeyId: str = ...,
+    PerformanceInsightsRetentionPeriod: int = ...,
+    EnableCloudwatchLogsExports: Sequence[str] = ...,
+    ProcessorFeatures: Sequence[ProcessorFeatureTypeDef] = ...,  # (2)
+    UseDefaultProcessorFeatures: bool = ...,
+    DeletionProtection: bool = ...,
+    Domain: str = ...,
+    DomainIAMRoleName: str = ...,
+    ReplicaMode: ReplicaModeType = ...,  # (3)
+    MaxAllocatedStorage: int = ...,
+    CustomIamInstanceProfile: str = ...,
+    SourceRegion: str = ...,
+) -> CreateDBInstanceReadReplicaResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBInstanceReadReplicaMessageRequestTypeDef](./type_defs.md#createdbinstancereadreplicamessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef) 
+3. See [:material-code-brackets: ReplicaModeType](./literals.md#replicamodetype) 
+4. See [:material-code-braces: CreateDBInstanceReadReplicaResultTypeDef](./type_defs.md#createdbinstancereadreplicaresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `SourceDBInstanceIdentifier`: `str` *(required)*
-- `DBInstanceClass`: `str`
-- `AvailabilityZone`: `str`
-- `Port`: `int`
-- `MultiAZ`: `bool`
-- `AutoMinorVersionUpgrade`: `bool`
-- `Iops`: `int`
-- `OptionGroupName`: `str`
-- `DBParameterGroupName`: `str`
-- `PubliclyAccessible`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DBSubnetGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `StorageType`: `str`
-- `CopyTagsToSnapshot`: `bool`
-- `MonitoringInterval`: `int`
-- `MonitoringRoleArn`: `str`
-- `KmsKeyId`: `str`
-- `PreSignedUrl`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `EnablePerformanceInsights`: `bool`
-- `PerformanceInsightsKMSKeyId`: `str`
-- `PerformanceInsightsRetentionPeriod`: `int`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `ProcessorFeatures`:
-  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
-- `UseDefaultProcessorFeatures`: `bool`
-- `DeletionProtection`: `bool`
-- `Domain`: `str`
-- `DomainIAMRoleName`: `str`
-- `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
-- `MaxAllocatedStorage`: `int`
-- `CustomIamInstanceProfile`: `str`
-- `SourceRegion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDBInstanceReadReplicaMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+    "SourceDBInstanceIdentifier": ...,
+}
 
-Returns
-[CreateDBInstanceReadReplicaResultTypeDef](./type_defs.md#createdbinstancereadreplicaresulttypedef).
+parent.create_db_instance_read_replica(**kwargs)
+```
 
-<a id="create\_db\_parameter\_group"></a>
+1. See [:material-code-braces: CreateDBInstanceReadReplicaMessageRequestTypeDef](./type_defs.md#createdbinstancereadreplicamessagerequesttypedef) 
 
-### create_db_parameter_group
+### create\_db\_parameter\_group
 
 Creates a new DB parameter group.
 
-Type annotations for `boto3.client("rds").create_db_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.create_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_parameter_group)
+```python title="Method definition"
+def create_db_parameter_group(
+    self,
+    *,
+    DBParameterGroupName: str,
+    DBParameterGroupFamily: str,
+    Description: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateDBParameterGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBParameterGroupMessageRequestTypeDef](./type_defs.md#createdbparametergroupmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateDBParameterGroupResultTypeDef](./type_defs.md#createdbparametergroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBParameterGroupName`: `str` *(required)*
-- `DBParameterGroupFamily`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDBParameterGroupMessageRequestTypeDef = {  # (1)
+    "DBParameterGroupName": ...,
+    "DBParameterGroupFamily": ...,
+    "Description": ...,
+}
 
-Returns
-[CreateDBParameterGroupResultTypeDef](./type_defs.md#createdbparametergroupresulttypedef).
+parent.create_db_parameter_group(**kwargs)
+```
 
-<a id="create\_db\_proxy"></a>
+1. See [:material-code-braces: CreateDBParameterGroupMessageRequestTypeDef](./type_defs.md#createdbparametergroupmessagerequesttypedef) 
 
-### create_db_proxy
+### create\_db\_proxy
 
 Creates a new DB proxy.
 
-Type annotations for `boto3.client("rds").create_db_proxy` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_proxy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy)
 
-Boto3 documentation:
-[RDS.Client.create_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy)
+```python title="Method definition"
+def create_db_proxy(
+    self,
+    *,
+    DBProxyName: str,
+    EngineFamily: EngineFamilyType,  # (1)
+    Auth: Sequence[UserAuthConfigTypeDef],  # (2)
+    RoleArn: str,
+    VpcSubnetIds: Sequence[str],
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    RequireTLS: bool = ...,
+    IdleClientTimeout: int = ...,
+    DebugLogging: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateDBProxyResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBProxyRequestRequestTypeDef](./type_defs.md#createdbproxyrequestrequesttypedef).
+1. See [:material-code-brackets: EngineFamilyType](./literals.md#enginefamilytype) 
+2. See [:material-code-braces: UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateDBProxyResponseTypeDef](./type_defs.md#createdbproxyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str` *(required)*
-- `EngineFamily`: [EngineFamilyType](./literals.md#enginefamilytype)
-  *(required)*
-- `Auth`:
-  `Sequence`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
-  *(required)*
-- `RoleArn`: `str` *(required)*
-- `VpcSubnetIds`: `Sequence`\[`str`\] *(required)*
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `RequireTLS`: `bool`
-- `IdleClientTimeout`: `int`
-- `DebugLogging`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDBProxyRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+    "EngineFamily": ...,
+    "Auth": ...,
+    "RoleArn": ...,
+    "VpcSubnetIds": ...,
+}
 
-Returns
-[CreateDBProxyResponseTypeDef](./type_defs.md#createdbproxyresponsetypedef).
+parent.create_db_proxy(**kwargs)
+```
 
-<a id="create\_db\_proxy\_endpoint"></a>
+1. See [:material-code-braces: CreateDBProxyRequestRequestTypeDef](./type_defs.md#createdbproxyrequestrequesttypedef) 
 
-### create_db_proxy_endpoint
+### create\_db\_proxy\_endpoint
 
 Creates a `DBProxyEndpoint`.
 
-Type annotations for `boto3.client("rds").create_db_proxy_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_proxy_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy_endpoint)
 
-Boto3 documentation:
-[RDS.Client.create_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_proxy_endpoint)
+```python title="Method definition"
+def create_db_proxy_endpoint(
+    self,
+    *,
+    DBProxyName: str,
+    DBProxyEndpointName: str,
+    VpcSubnetIds: Sequence[str],
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    TargetRole: DBProxyEndpointTargetRoleType = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDBProxyEndpointResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBProxyEndpointRequestRequestTypeDef](./type_defs.md#createdbproxyendpointrequestrequesttypedef).
+1. See [:material-code-brackets: DBProxyEndpointTargetRoleType](./literals.md#dbproxyendpointtargetroletype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDBProxyEndpointResponseTypeDef](./type_defs.md#createdbproxyendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str` *(required)*
-- `DBProxyEndpointName`: `str` *(required)*
-- `VpcSubnetIds`: `Sequence`\[`str`\] *(required)*
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `TargetRole`:
-  [DBProxyEndpointTargetRoleType](./literals.md#dbproxyendpointtargetroletype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDBProxyEndpointRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+    "DBProxyEndpointName": ...,
+    "VpcSubnetIds": ...,
+}
 
-Returns
-[CreateDBProxyEndpointResponseTypeDef](./type_defs.md#createdbproxyendpointresponsetypedef).
+parent.create_db_proxy_endpoint(**kwargs)
+```
 
-<a id="create\_db\_security\_group"></a>
+1. See [:material-code-braces: CreateDBProxyEndpointRequestRequestTypeDef](./type_defs.md#createdbproxyendpointrequestrequesttypedef) 
 
-### create_db_security_group
+### create\_db\_security\_group
 
 Creates a new DB security group.
 
-Type annotations for `boto3.client("rds").create_db_security_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_security_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_security_group)
 
-Boto3 documentation:
-[RDS.Client.create_db_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_security_group)
+```python title="Method definition"
+def create_db_security_group(
+    self,
+    *,
+    DBSecurityGroupName: str,
+    DBSecurityGroupDescription: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateDBSecurityGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBSecurityGroupMessageRequestTypeDef](./type_defs.md#createdbsecuritygroupmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateDBSecurityGroupResultTypeDef](./type_defs.md#createdbsecuritygroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSecurityGroupName`: `str` *(required)*
-- `DBSecurityGroupDescription`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDBSecurityGroupMessageRequestTypeDef = {  # (1)
+    "DBSecurityGroupName": ...,
+    "DBSecurityGroupDescription": ...,
+}
 
-Returns
-[CreateDBSecurityGroupResultTypeDef](./type_defs.md#createdbsecuritygroupresulttypedef).
+parent.create_db_security_group(**kwargs)
+```
 
-<a id="create\_db\_snapshot"></a>
+1. See [:material-code-braces: CreateDBSecurityGroupMessageRequestTypeDef](./type_defs.md#createdbsecuritygroupmessagerequesttypedef) 
 
-### create_db_snapshot
+### create\_db\_snapshot
 
 Creates a snapshot of a DB instance.
 
-Type annotations for `boto3.client("rds").create_db_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_snapshot)
 
-Boto3 documentation:
-[RDS.Client.create_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_snapshot)
+```python title="Method definition"
+def create_db_snapshot(
+    self,
+    *,
+    DBSnapshotIdentifier: str,
+    DBInstanceIdentifier: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateDBSnapshotResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBSnapshotMessageRequestTypeDef](./type_defs.md#createdbsnapshotmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateDBSnapshotResultTypeDef](./type_defs.md#createdbsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSnapshotIdentifier`: `str` *(required)*
-- `DBInstanceIdentifier`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDBSnapshotMessageRequestTypeDef = {  # (1)
+    "DBSnapshotIdentifier": ...,
+    "DBInstanceIdentifier": ...,
+}
 
-Returns
-[CreateDBSnapshotResultTypeDef](./type_defs.md#createdbsnapshotresulttypedef).
+parent.create_db_snapshot(**kwargs)
+```
 
-<a id="create\_db\_subnet\_group"></a>
+1. See [:material-code-braces: CreateDBSnapshotMessageRequestTypeDef](./type_defs.md#createdbsnapshotmessagerequesttypedef) 
 
-### create_db_subnet_group
+### create\_db\_subnet\_group
 
 Creates a new DB subnet group.
 
-Type annotations for `boto3.client("rds").create_db_subnet_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_db_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_subnet_group)
 
-Boto3 documentation:
-[RDS.Client.create_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_db_subnet_group)
+```python title="Method definition"
+def create_db_subnet_group(
+    self,
+    *,
+    DBSubnetGroupName: str,
+    DBSubnetGroupDescription: str,
+    SubnetIds: Sequence[str],
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateDBSubnetGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDBSubnetGroupMessageRequestTypeDef](./type_defs.md#createdbsubnetgroupmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSubnetGroupName`: `str` *(required)*
-- `DBSubnetGroupDescription`: `str` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDBSubnetGroupMessageRequestTypeDef = {  # (1)
+    "DBSubnetGroupName": ...,
+    "DBSubnetGroupDescription": ...,
+    "SubnetIds": ...,
+}
 
-Returns
-[CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef).
+parent.create_db_subnet_group(**kwargs)
+```
 
-<a id="create\_event\_subscription"></a>
+1. See [:material-code-braces: CreateDBSubnetGroupMessageRequestTypeDef](./type_defs.md#createdbsubnetgroupmessagerequesttypedef) 
 
-### create_event_subscription
+### create\_event\_subscription
 
 .
 
-Type annotations for `boto3.client("rds").create_event_subscription` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_event_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_event_subscription)
 
-Boto3 documentation:
-[RDS.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_event_subscription)
+```python title="Method definition"
+def create_event_subscription(
+    self,
+    *,
+    SubscriptionName: str,
+    SnsTopicArn: str,
+    SourceType: str = ...,
+    EventCategories: Sequence[str] = ...,
+    SourceIds: Sequence[str] = ...,
+    Enabled: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateEventSubscriptionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEventSubscriptionMessageRequestTypeDef](./type_defs.md#createeventsubscriptionmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str` *(required)*
-- `SnsTopicArn`: `str` *(required)*
-- `SourceType`: `str`
-- `EventCategories`: `Sequence`\[`str`\]
-- `SourceIds`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateEventSubscriptionMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+    "SnsTopicArn": ...,
+}
 
-Returns
-[CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
+parent.create_event_subscription(**kwargs)
+```
 
-<a id="create\_global\_cluster"></a>
+1. See [:material-code-braces: CreateEventSubscriptionMessageRequestTypeDef](./type_defs.md#createeventsubscriptionmessagerequesttypedef) 
 
-### create_global_cluster
+### create\_global\_cluster
 
 Creates an Aurora global database spread across multiple Amazon Web Services
 Regions.
 
-Type annotations for `boto3.client("rds").create_global_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_global_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_global_cluster)
 
-Boto3 documentation:
-[RDS.Client.create_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_global_cluster)
+```python title="Method definition"
+def create_global_cluster(
+    self,
+    *,
+    GlobalClusterIdentifier: str = ...,
+    SourceDBClusterIdentifier: str = ...,
+    Engine: str = ...,
+    EngineVersion: str = ...,
+    DeletionProtection: bool = ...,
+    DatabaseName: str = ...,
+    StorageEncrypted: bool = ...,
+) -> CreateGlobalClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGlobalClusterMessageRequestTypeDef](./type_defs.md#createglobalclustermessagerequesttypedef).
+1. See [:material-code-braces: CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `GlobalClusterIdentifier`: `str`
-- `SourceDBClusterIdentifier`: `str`
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `DeletionProtection`: `bool`
-- `DatabaseName`: `str`
-- `StorageEncrypted`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateGlobalClusterMessageRequestTypeDef = {  # (1)
+    "GlobalClusterIdentifier": ...,
+}
 
-Returns
-[CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef).
+parent.create_global_cluster(**kwargs)
+```
 
-<a id="create\_option\_group"></a>
+1. See [:material-code-braces: CreateGlobalClusterMessageRequestTypeDef](./type_defs.md#createglobalclustermessagerequesttypedef) 
 
-### create_option_group
+### create\_option\_group
 
 Creates a new option group.
 
-Type annotations for `boto3.client("rds").create_option_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").create_option_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_option_group)
 
-Boto3 documentation:
-[RDS.Client.create_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.create_option_group)
+```python title="Method definition"
+def create_option_group(
+    self,
+    *,
+    OptionGroupName: str,
+    EngineName: str,
+    MajorEngineVersion: str,
+    OptionGroupDescription: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateOptionGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateOptionGroupMessageRequestTypeDef](./type_defs.md#createoptiongroupmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateOptionGroupResultTypeDef](./type_defs.md#createoptiongroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `OptionGroupName`: `str` *(required)*
-- `EngineName`: `str` *(required)*
-- `MajorEngineVersion`: `str` *(required)*
-- `OptionGroupDescription`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateOptionGroupMessageRequestTypeDef = {  # (1)
+    "OptionGroupName": ...,
+    "EngineName": ...,
+    "MajorEngineVersion": ...,
+    "OptionGroupDescription": ...,
+}
 
-Returns
-[CreateOptionGroupResultTypeDef](./type_defs.md#createoptiongroupresulttypedef).
+parent.create_option_group(**kwargs)
+```
 
-<a id="delete\_custom\_availability\_zone"></a>
+1. See [:material-code-braces: CreateOptionGroupMessageRequestTypeDef](./type_defs.md#createoptiongroupmessagerequesttypedef) 
 
-### delete_custom_availability_zone
+### delete\_custom\_availability\_zone
 
 Deletes a custom Availability Zone (AZ).
 
-Type annotations for `boto3.client("rds").delete_custom_availability_zone`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_custom_availability_zone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_availability_zone)
 
-Boto3 documentation:
-[RDS.Client.delete_custom_availability_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_availability_zone)
+```python title="Method definition"
+def delete_custom_availability_zone(
+    self,
+    *,
+    CustomAvailabilityZoneId: str,
+) -> DeleteCustomAvailabilityZoneResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#deletecustomavailabilityzonemessagerequesttypedef).
+1. See [:material-code-braces: DeleteCustomAvailabilityZoneResultTypeDef](./type_defs.md#deletecustomavailabilityzoneresulttypedef) 
 
-Keyword-only arguments:
 
-- `CustomAvailabilityZoneId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomAvailabilityZoneMessageRequestTypeDef = {  # (1)
+    "CustomAvailabilityZoneId": ...,
+}
 
-Returns
-[DeleteCustomAvailabilityZoneResultTypeDef](./type_defs.md#deletecustomavailabilityzoneresulttypedef).
+parent.delete_custom_availability_zone(**kwargs)
+```
 
-<a id="delete\_custom\_db\_engine\_version"></a>
+1. See [:material-code-braces: DeleteCustomAvailabilityZoneMessageRequestTypeDef](./type_defs.md#deletecustomavailabilityzonemessagerequesttypedef) 
 
-### delete_custom_db_engine_version
+### delete\_custom\_db\_engine\_version
 
 Deletes a custom engine version.
 
-Type annotations for `boto3.client("rds").delete_custom_db_engine_version`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_custom_db_engine_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_db_engine_version)
 
-Boto3 documentation:
-[RDS.Client.delete_custom_db_engine_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_custom_db_engine_version)
+```python title="Method definition"
+def delete_custom_db_engine_version(
+    self,
+    *,
+    Engine: str,
+    EngineVersion: str,
+) -> DBEngineVersionResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#deletecustomdbengineversionmessagerequesttypedef).
+1. See [:material-code-braces: DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `Engine`: `str` *(required)*
-- `EngineVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomDBEngineVersionMessageRequestTypeDef = {  # (1)
+    "Engine": ...,
+    "EngineVersion": ...,
+}
 
-Returns
-[DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef).
+parent.delete_custom_db_engine_version(**kwargs)
+```
 
-<a id="delete\_db\_cluster"></a>
+1. See [:material-code-braces: DeleteCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#deletecustomdbengineversionmessagerequesttypedef) 
 
-### delete_db_cluster
+### delete\_db\_cluster
 
 The DeleteDBCluster action deletes a previously provisioned DB cluster.
 
-Type annotations for `boto3.client("rds").delete_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.delete_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster)
+```python title="Method definition"
+def delete_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    SkipFinalSnapshot: bool = ...,
+    FinalDBSnapshotIdentifier: str = ...,
+) -> DeleteDBClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBClusterMessageRequestTypeDef](./type_defs.md#deletedbclustermessagerequesttypedef).
+1. See [:material-code-braces: DeleteDBClusterResultTypeDef](./type_defs.md#deletedbclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `SkipFinalSnapshot`: `bool`
-- `FinalDBSnapshotIdentifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[DeleteDBClusterResultTypeDef](./type_defs.md#deletedbclusterresulttypedef).
+parent.delete_db_cluster(**kwargs)
+```
 
-<a id="delete\_db\_cluster\_endpoint"></a>
+1. See [:material-code-braces: DeleteDBClusterMessageRequestTypeDef](./type_defs.md#deletedbclustermessagerequesttypedef) 
 
-### delete_db_cluster_endpoint
+### delete\_db\_cluster\_endpoint
 
 Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
 
-Type annotations for `boto3.client("rds").delete_db_cluster_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_cluster_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_endpoint)
 
-Boto3 documentation:
-[RDS.Client.delete_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_endpoint)
+```python title="Method definition"
+def delete_db_cluster_endpoint(
+    self,
+    *,
+    DBClusterEndpointIdentifier: str,
+) -> DBClusterEndpointResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBClusterEndpointMessageRequestTypeDef](./type_defs.md#deletedbclusterendpointmessagerequesttypedef).
+1. See [:material-code-braces: DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterEndpointIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDBClusterEndpointMessageRequestTypeDef = {  # (1)
+    "DBClusterEndpointIdentifier": ...,
+}
 
-Returns
-[DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef).
+parent.delete_db_cluster_endpoint(**kwargs)
+```
 
-<a id="delete\_db\_cluster\_parameter\_group"></a>
+1. See [:material-code-braces: DeleteDBClusterEndpointMessageRequestTypeDef](./type_defs.md#deletedbclusterendpointmessagerequesttypedef) 
 
-### delete_db_cluster_parameter_group
+### delete\_db\_cluster\_parameter\_group
 
 Deletes a specified DB cluster parameter group.
 
-Type annotations for `boto3.client("rds").delete_db_cluster_parameter_group`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_cluster_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.delete_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_parameter_group)
+```python title="Method definition"
+def delete_db_cluster_parameter_group(
+    self,
+    *,
+    DBClusterParameterGroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#deletedbclusterparametergroupmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `DBClusterParameterGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDBClusterParameterGroupMessageRequestTypeDef = {  # (1)
+    "DBClusterParameterGroupName": ...,
+}
 
-<a id="delete\_db\_cluster\_snapshot"></a>
+parent.delete_db_cluster_parameter_group(**kwargs)
+```
 
-### delete_db_cluster_snapshot
+1. See [:material-code-braces: DeleteDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#deletedbclusterparametergroupmessagerequesttypedef) 
+
+### delete\_db\_cluster\_snapshot
 
 Deletes a DB cluster snapshot.
 
-Type annotations for `boto3.client("rds").delete_db_cluster_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_cluster_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_snapshot)
 
-Boto3 documentation:
-[RDS.Client.delete_db_cluster_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_cluster_snapshot)
+```python title="Method definition"
+def delete_db_cluster_snapshot(
+    self,
+    *,
+    DBClusterSnapshotIdentifier: str,
+) -> DeleteDBClusterSnapshotResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#deletedbclustersnapshotmessagerequesttypedef).
+1. See [:material-code-braces: DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterSnapshotIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDBClusterSnapshotMessageRequestTypeDef = {  # (1)
+    "DBClusterSnapshotIdentifier": ...,
+}
 
-Returns
-[DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef).
+parent.delete_db_cluster_snapshot(**kwargs)
+```
 
-<a id="delete\_db\_instance"></a>
+1. See [:material-code-braces: DeleteDBClusterSnapshotMessageRequestTypeDef](./type_defs.md#deletedbclustersnapshotmessagerequesttypedef) 
 
-### delete_db_instance
+### delete\_db\_instance
 
 The DeleteDBInstance action deletes a previously provisioned DB instance.
 
-Type annotations for `boto3.client("rds").delete_db_instance` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance)
 
-Boto3 documentation:
-[RDS.Client.delete_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance)
+```python title="Method definition"
+def delete_db_instance(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    SkipFinalSnapshot: bool = ...,
+    FinalDBSnapshotIdentifier: str = ...,
+    DeleteAutomatedBackups: bool = ...,
+) -> DeleteDBInstanceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBInstanceMessageRequestTypeDef](./type_defs.md#deletedbinstancemessagerequesttypedef).
+1. See [:material-code-braces: DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `SkipFinalSnapshot`: `bool`
-- `FinalDBSnapshotIdentifier`: `str`
-- `DeleteAutomatedBackups`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteDBInstanceMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns
-[DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef).
+parent.delete_db_instance(**kwargs)
+```
 
-<a id="delete\_db\_instance\_automated\_backup"></a>
+1. See [:material-code-braces: DeleteDBInstanceMessageRequestTypeDef](./type_defs.md#deletedbinstancemessagerequesttypedef) 
 
-### delete_db_instance_automated_backup
+### delete\_db\_instance\_automated\_backup
 
 Deletes automated backups using the `DbiResourceId` value of the source DB
 instance or the Amazon Resource Name (ARN) of the automated backups.
 
-Type annotations for `boto3.client("rds").delete_db_instance_automated_backup`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_instance_automated_backup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance_automated_backup)
 
-Boto3 documentation:
-[RDS.Client.delete_db_instance_automated_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_instance_automated_backup)
+```python title="Method definition"
+def delete_db_instance_automated_backup(
+    self,
+    *,
+    DbiResourceId: str = ...,
+    DBInstanceAutomatedBackupsArn: str = ...,
+) -> DeleteDBInstanceAutomatedBackupResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBInstanceAutomatedBackupMessageRequestTypeDef](./type_defs.md#deletedbinstanceautomatedbackupmessagerequesttypedef).
+1. See [:material-code-braces: DeleteDBInstanceAutomatedBackupResultTypeDef](./type_defs.md#deletedbinstanceautomatedbackupresulttypedef) 
 
-Keyword-only arguments:
 
-- `DbiResourceId`: `str`
-- `DBInstanceAutomatedBackupsArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDBInstanceAutomatedBackupMessageRequestTypeDef = {  # (1)
+    "DbiResourceId": ...,
+}
 
-Returns
-[DeleteDBInstanceAutomatedBackupResultTypeDef](./type_defs.md#deletedbinstanceautomatedbackupresulttypedef).
+parent.delete_db_instance_automated_backup(**kwargs)
+```
 
-<a id="delete\_db\_parameter\_group"></a>
+1. See [:material-code-braces: DeleteDBInstanceAutomatedBackupMessageRequestTypeDef](./type_defs.md#deletedbinstanceautomatedbackupmessagerequesttypedef) 
 
-### delete_db_parameter_group
+### delete\_db\_parameter\_group
 
 Deletes a specified DB parameter group.
 
-Type annotations for `boto3.client("rds").delete_db_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.delete_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_parameter_group)
+```python title="Method definition"
+def delete_db_parameter_group(
+    self,
+    *,
+    DBParameterGroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBParameterGroupMessageRequestTypeDef](./type_defs.md#deletedbparametergroupmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `DBParameterGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDBParameterGroupMessageRequestTypeDef = {  # (1)
+    "DBParameterGroupName": ...,
+}
 
-<a id="delete\_db\_proxy"></a>
+parent.delete_db_parameter_group(**kwargs)
+```
 
-### delete_db_proxy
+1. See [:material-code-braces: DeleteDBParameterGroupMessageRequestTypeDef](./type_defs.md#deletedbparametergroupmessagerequesttypedef) 
+
+### delete\_db\_proxy
 
 Deletes an existing DB proxy.
 
-Type annotations for `boto3.client("rds").delete_db_proxy` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_proxy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy)
 
-Boto3 documentation:
-[RDS.Client.delete_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy)
+```python title="Method definition"
+def delete_db_proxy(
+    self,
+    *,
+    DBProxyName: str,
+) -> DeleteDBProxyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBProxyRequestRequestTypeDef](./type_defs.md#deletedbproxyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDBProxyResponseTypeDef](./type_defs.md#deletedbproxyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDBProxyRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+}
 
-Returns
-[DeleteDBProxyResponseTypeDef](./type_defs.md#deletedbproxyresponsetypedef).
+parent.delete_db_proxy(**kwargs)
+```
 
-<a id="delete\_db\_proxy\_endpoint"></a>
+1. See [:material-code-braces: DeleteDBProxyRequestRequestTypeDef](./type_defs.md#deletedbproxyrequestrequesttypedef) 
 
-### delete_db_proxy_endpoint
+### delete\_db\_proxy\_endpoint
 
 Deletes a `DBProxyEndpoint`.
 
-Type annotations for `boto3.client("rds").delete_db_proxy_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_proxy_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy_endpoint)
 
-Boto3 documentation:
-[RDS.Client.delete_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_proxy_endpoint)
+```python title="Method definition"
+def delete_db_proxy_endpoint(
+    self,
+    *,
+    DBProxyEndpointName: str,
+) -> DeleteDBProxyEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBProxyEndpointRequestRequestTypeDef](./type_defs.md#deletedbproxyendpointrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDBProxyEndpointResponseTypeDef](./type_defs.md#deletedbproxyendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyEndpointName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDBProxyEndpointRequestRequestTypeDef = {  # (1)
+    "DBProxyEndpointName": ...,
+}
 
-Returns
-[DeleteDBProxyEndpointResponseTypeDef](./type_defs.md#deletedbproxyendpointresponsetypedef).
+parent.delete_db_proxy_endpoint(**kwargs)
+```
 
-<a id="delete\_db\_security\_group"></a>
+1. See [:material-code-braces: DeleteDBProxyEndpointRequestRequestTypeDef](./type_defs.md#deletedbproxyendpointrequestrequesttypedef) 
 
-### delete_db_security_group
+### delete\_db\_security\_group
 
 Deletes a DB security group.
 
-Type annotations for `boto3.client("rds").delete_db_security_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_security_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_security_group)
 
-Boto3 documentation:
-[RDS.Client.delete_db_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_security_group)
+```python title="Method definition"
+def delete_db_security_group(
+    self,
+    *,
+    DBSecurityGroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBSecurityGroupMessageRequestTypeDef](./type_defs.md#deletedbsecuritygroupmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `DBSecurityGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDBSecurityGroupMessageRequestTypeDef = {  # (1)
+    "DBSecurityGroupName": ...,
+}
 
-<a id="delete\_db\_snapshot"></a>
+parent.delete_db_security_group(**kwargs)
+```
 
-### delete_db_snapshot
+1. See [:material-code-braces: DeleteDBSecurityGroupMessageRequestTypeDef](./type_defs.md#deletedbsecuritygroupmessagerequesttypedef) 
+
+### delete\_db\_snapshot
 
 Deletes a DB snapshot.
 
-Type annotations for `boto3.client("rds").delete_db_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_snapshot)
 
-Boto3 documentation:
-[RDS.Client.delete_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_snapshot)
+```python title="Method definition"
+def delete_db_snapshot(
+    self,
+    *,
+    DBSnapshotIdentifier: str,
+) -> DeleteDBSnapshotResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBSnapshotMessageRequestTypeDef](./type_defs.md#deletedbsnapshotmessagerequesttypedef).
+1. See [:material-code-braces: DeleteDBSnapshotResultTypeDef](./type_defs.md#deletedbsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSnapshotIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDBSnapshotMessageRequestTypeDef = {  # (1)
+    "DBSnapshotIdentifier": ...,
+}
 
-Returns
-[DeleteDBSnapshotResultTypeDef](./type_defs.md#deletedbsnapshotresulttypedef).
+parent.delete_db_snapshot(**kwargs)
+```
 
-<a id="delete\_db\_subnet\_group"></a>
+1. See [:material-code-braces: DeleteDBSnapshotMessageRequestTypeDef](./type_defs.md#deletedbsnapshotmessagerequesttypedef) 
 
-### delete_db_subnet_group
+### delete\_db\_subnet\_group
 
 Deletes a DB subnet group.
 
-Type annotations for `boto3.client("rds").delete_db_subnet_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_db_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_subnet_group)
 
-Boto3 documentation:
-[RDS.Client.delete_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_db_subnet_group)
+```python title="Method definition"
+def delete_db_subnet_group(
+    self,
+    *,
+    DBSubnetGroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDBSubnetGroupMessageRequestTypeDef](./type_defs.md#deletedbsubnetgroupmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `DBSubnetGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDBSubnetGroupMessageRequestTypeDef = {  # (1)
+    "DBSubnetGroupName": ...,
+}
 
-<a id="delete\_event\_subscription"></a>
+parent.delete_db_subnet_group(**kwargs)
+```
 
-### delete_event_subscription
+1. See [:material-code-braces: DeleteDBSubnetGroupMessageRequestTypeDef](./type_defs.md#deletedbsubnetgroupmessagerequesttypedef) 
+
+### delete\_event\_subscription
 
 Deletes an RDS event notification subscription.
 
-Type annotations for `boto3.client("rds").delete_event_subscription` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_event_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_event_subscription)
 
-Boto3 documentation:
-[RDS.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_event_subscription)
+```python title="Method definition"
+def delete_event_subscription(
+    self,
+    *,
+    SubscriptionName: str,
+) -> DeleteEventSubscriptionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventSubscriptionMessageRequestTypeDef](./type_defs.md#deleteeventsubscriptionmessagerequesttypedef).
+1. See [:material-code-braces: DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventSubscriptionMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+}
 
-Returns
-[DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef).
+parent.delete_event_subscription(**kwargs)
+```
 
-<a id="delete\_global\_cluster"></a>
+1. See [:material-code-braces: DeleteEventSubscriptionMessageRequestTypeDef](./type_defs.md#deleteeventsubscriptionmessagerequesttypedef) 
 
-### delete_global_cluster
+### delete\_global\_cluster
 
 Deletes a global database cluster.
 
-Type annotations for `boto3.client("rds").delete_global_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_global_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_global_cluster)
 
-Boto3 documentation:
-[RDS.Client.delete_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_global_cluster)
+```python title="Method definition"
+def delete_global_cluster(
+    self,
+    *,
+    GlobalClusterIdentifier: str,
+) -> DeleteGlobalClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGlobalClusterMessageRequestTypeDef](./type_defs.md#deleteglobalclustermessagerequesttypedef).
+1. See [:material-code-braces: DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `GlobalClusterIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGlobalClusterMessageRequestTypeDef = {  # (1)
+    "GlobalClusterIdentifier": ...,
+}
 
-Returns
-[DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef).
+parent.delete_global_cluster(**kwargs)
+```
 
-<a id="delete\_installation\_media"></a>
+1. See [:material-code-braces: DeleteGlobalClusterMessageRequestTypeDef](./type_defs.md#deleteglobalclustermessagerequesttypedef) 
 
-### delete_installation_media
+### delete\_installation\_media
 
 Deletes the installation medium for a DB engine that requires an on-premises
 customer provided license, such as Microsoft SQL Server.
 
-Type annotations for `boto3.client("rds").delete_installation_media` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_installation_media` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_installation_media)
 
-Boto3 documentation:
-[RDS.Client.delete_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_installation_media)
+```python title="Method definition"
+def delete_installation_media(
+    self,
+    *,
+    InstallationMediaId: str,
+) -> InstallationMediaResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInstallationMediaMessageRequestTypeDef](./type_defs.md#deleteinstallationmediamessagerequesttypedef).
+1. See [:material-code-braces: InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `InstallationMediaId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInstallationMediaMessageRequestTypeDef = {  # (1)
+    "InstallationMediaId": ...,
+}
 
-Returns
-[InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef).
+parent.delete_installation_media(**kwargs)
+```
 
-<a id="delete\_option\_group"></a>
+1. See [:material-code-braces: DeleteInstallationMediaMessageRequestTypeDef](./type_defs.md#deleteinstallationmediamessagerequesttypedef) 
 
-### delete_option_group
+### delete\_option\_group
 
 Deletes an existing option group.
 
-Type annotations for `boto3.client("rds").delete_option_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").delete_option_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_option_group)
 
-Boto3 documentation:
-[RDS.Client.delete_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.delete_option_group)
+```python title="Method definition"
+def delete_option_group(
+    self,
+    *,
+    OptionGroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteOptionGroupMessageRequestTypeDef](./type_defs.md#deleteoptiongroupmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `OptionGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteOptionGroupMessageRequestTypeDef = {  # (1)
+    "OptionGroupName": ...,
+}
 
-<a id="deregister\_db\_proxy\_targets"></a>
+parent.delete_option_group(**kwargs)
+```
 
-### deregister_db_proxy_targets
+1. See [:material-code-braces: DeleteOptionGroupMessageRequestTypeDef](./type_defs.md#deleteoptiongroupmessagerequesttypedef) 
 
-Remove the association between one or more `DBProxyTarget` data structures and
-a `DBProxyTargetGroup` .
+### deregister\_db\_proxy\_targets
 
-Type annotations for `boto3.client("rds").deregister_db_proxy_targets` method.
+Remove the association between one or more `DBProxyTarget` data structures and a
+`DBProxyTargetGroup` .
 
-Boto3 documentation:
-[RDS.Client.deregister_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.deregister_db_proxy_targets)
+Type annotations and code completion for `#!python boto3.client("rds").deregister_db_proxy_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.deregister_db_proxy_targets)
 
-Arguments mapping described in
-[DeregisterDBProxyTargetsRequestRequestTypeDef](./type_defs.md#deregisterdbproxytargetsrequestrequesttypedef).
+```python title="Method definition"
+def deregister_db_proxy_targets(
+    self,
+    *,
+    DBProxyName: str,
+    TargetGroupName: str = ...,
+    DBInstanceIdentifiers: Sequence[str] = ...,
+    DBClusterIdentifiers: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str` *(required)*
-- `TargetGroupName`: `str`
-- `DBInstanceIdentifiers`: `Sequence`\[`str`\]
-- `DBClusterIdentifiers`: `Sequence`\[`str`\]
 
-Returns `Dict`\[`str`, `Any`\].
+```python title="Usage example with kwargs"
+kwargs: DeregisterDBProxyTargetsRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+}
 
-<a id="describe\_account\_attributes"></a>
+parent.deregister_db_proxy_targets(**kwargs)
+```
 
-### describe_account_attributes
+1. See [:material-code-braces: DeregisterDBProxyTargetsRequestRequestTypeDef](./type_defs.md#deregisterdbproxytargetsrequestrequesttypedef) 
+
+### describe\_account\_attributes
 
 Lists all of the attributes for a customer account.
 
-Type annotations for `boto3.client("rds").describe_account_attributes` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_account_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_account_attributes)
 
-Boto3 documentation:
-[RDS.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_account_attributes)
+```python title="Method definition"
+def describe_account_attributes(
+    self,
+) -> AccountAttributesMessageTypeDef:  # (1)
+    ...
+```
 
-Returns
-[AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef).
+1. See [:material-code-braces: AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef) 
 
-<a id="describe\_certificates"></a>
-
-### describe_certificates
+### describe\_certificates
 
 Lists the set of CA certificates provided by Amazon RDS for this Amazon Web
 Services account.
 
-Type annotations for `boto3.client("rds").describe_certificates` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_certificates)
 
-Boto3 documentation:
-[RDS.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_certificates)
+```python title="Method definition"
+def describe_certificates(
+    self,
+    *,
+    CertificateIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> CertificateMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificatesMessageRequestTypeDef = {  # (1)
+    "CertificateIdentifier": ...,
+}
 
-Returns [CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef).
+parent.describe_certificates(**kwargs)
+```
 
-<a id="describe\_custom\_availability\_zones"></a>
+1. See [:material-code-braces: DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef) 
 
-### describe_custom_availability_zones
+### describe\_custom\_availability\_zones
 
 Returns information about custom Availability Zones (AZs).
 
-Type annotations for `boto3.client("rds").describe_custom_availability_zones`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_custom_availability_zones` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_custom_availability_zones)
 
-Boto3 documentation:
-[RDS.Client.describe_custom_availability_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_custom_availability_zones)
+```python title="Method definition"
+def describe_custom_availability_zones(
+    self,
+    *,
+    CustomAvailabilityZoneId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> CustomAvailabilityZoneMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCustomAvailabilityZonesMessageRequestTypeDef](./type_defs.md#describecustomavailabilityzonesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: CustomAvailabilityZoneMessageTypeDef](./type_defs.md#customavailabilityzonemessagetypedef) 
 
-Keyword-only arguments:
 
-- `CustomAvailabilityZoneId`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomAvailabilityZonesMessageRequestTypeDef = {  # (1)
+    "CustomAvailabilityZoneId": ...,
+}
 
-Returns
-[CustomAvailabilityZoneMessageTypeDef](./type_defs.md#customavailabilityzonemessagetypedef).
+parent.describe_custom_availability_zones(**kwargs)
+```
 
-<a id="describe\_db\_cluster\_backtracks"></a>
+1. See [:material-code-braces: DescribeCustomAvailabilityZonesMessageRequestTypeDef](./type_defs.md#describecustomavailabilityzonesmessagerequesttypedef) 
 
-### describe_db_cluster_backtracks
+### describe\_db\_cluster\_backtracks
 
 Returns information about backtracks for a DB cluster.
 
-Type annotations for `boto3.client("rds").describe_db_cluster_backtracks`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_cluster_backtracks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_backtracks)
 
-Boto3 documentation:
-[RDS.Client.describe_db_cluster_backtracks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_backtracks)
+```python title="Method definition"
+def describe_db_cluster_backtracks(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    BacktrackIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DBClusterBacktrackMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBClusterBacktracksMessageRequestTypeDef](./type_defs.md#describedbclusterbacktracksmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBClusterBacktrackMessageTypeDef](./type_defs.md#dbclusterbacktrackmessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `BacktrackIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterBacktracksMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[DBClusterBacktrackMessageTypeDef](./type_defs.md#dbclusterbacktrackmessagetypedef).
+parent.describe_db_cluster_backtracks(**kwargs)
+```
 
-<a id="describe\_db\_cluster\_endpoints"></a>
+1. See [:material-code-braces: DescribeDBClusterBacktracksMessageRequestTypeDef](./type_defs.md#describedbclusterbacktracksmessagerequesttypedef) 
 
-### describe_db_cluster_endpoints
+### describe\_db\_cluster\_endpoints
 
 Returns information about endpoints for an Amazon Aurora DB cluster.
 
-Type annotations for `boto3.client("rds").describe_db_cluster_endpoints`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_cluster_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_endpoints)
 
-Boto3 documentation:
-[RDS.Client.describe_db_cluster_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_endpoints)
+```python title="Method definition"
+def describe_db_cluster_endpoints(
+    self,
+    *,
+    DBClusterIdentifier: str = ...,
+    DBClusterEndpointIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DBClusterEndpointMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBClusterEndpointsMessageRequestTypeDef](./type_defs.md#describedbclusterendpointsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str`
-- `DBClusterEndpointIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterEndpointsMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef).
+parent.describe_db_cluster_endpoints(**kwargs)
+```
 
-<a id="describe\_db\_cluster\_parameter\_groups"></a>
+1. See [:material-code-braces: DescribeDBClusterEndpointsMessageRequestTypeDef](./type_defs.md#describedbclusterendpointsmessagerequesttypedef) 
 
-### describe_db_cluster_parameter_groups
+### describe\_db\_cluster\_parameter\_groups
 
 Returns a list of `DBClusterParameterGroup` descriptions.
 
-Type annotations for `boto3.client("rds").describe_db_cluster_parameter_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_cluster_parameter_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameter_groups)
 
-Boto3 documentation:
-[RDS.Client.describe_db_cluster_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameter_groups)
+```python title="Method definition"
+def describe_db_cluster_parameter_groups(
+    self,
+    *,
+    DBClusterParameterGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DBClusterParameterGroupsMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBClusterParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbclusterparametergroupsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterParameterGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterParameterGroupsMessageRequestTypeDef = {  # (1)
+    "DBClusterParameterGroupName": ...,
+}
 
-Returns
-[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef).
+parent.describe_db_cluster_parameter_groups(**kwargs)
+```
 
-<a id="describe\_db\_cluster\_parameters"></a>
+1. See [:material-code-braces: DescribeDBClusterParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbclusterparametergroupsmessagerequesttypedef) 
 
-### describe_db_cluster_parameters
+### describe\_db\_cluster\_parameters
 
-Returns the detailed parameter list for a particular DB cluster parameter
-group.
+Returns the detailed parameter list for a particular DB cluster parameter group.
 
-Type annotations for `boto3.client("rds").describe_db_cluster_parameters`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_cluster_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameters)
 
-Boto3 documentation:
-[RDS.Client.describe_db_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_parameters)
+```python title="Method definition"
+def describe_db_cluster_parameters(
+    self,
+    *,
+    DBClusterParameterGroupName: str,
+    Source: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DBClusterParameterGroupDetailsTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBClusterParametersMessageRequestTypeDef](./type_defs.md#describedbclusterparametersmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterParameterGroupName`: `str` *(required)*
-- `Source`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterParametersMessageRequestTypeDef = {  # (1)
+    "DBClusterParameterGroupName": ...,
+}
 
-Returns
-[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef).
+parent.describe_db_cluster_parameters(**kwargs)
+```
 
-<a id="describe\_db\_cluster\_snapshot\_attributes"></a>
+1. See [:material-code-braces: DescribeDBClusterParametersMessageRequestTypeDef](./type_defs.md#describedbclusterparametersmessagerequesttypedef) 
 
-### describe_db_cluster_snapshot_attributes
+### describe\_db\_cluster\_snapshot\_attributes
 
-Returns a list of DB cluster snapshot attribute names and values for a manual
-DB cluster snapshot.
+Returns a list of DB cluster snapshot attribute names and values for a manual DB
+cluster snapshot.
 
-Type annotations for
-`boto3.client("rds").describe_db_cluster_snapshot_attributes` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_cluster_snapshot_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshot_attributes)
 
-Boto3 documentation:
-[RDS.Client.describe_db_cluster_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshot_attributes)
+```python title="Method definition"
+def describe_db_cluster_snapshot_attributes(
+    self,
+    *,
+    DBClusterSnapshotIdentifier: str,
+) -> DescribeDBClusterSnapshotAttributesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBClusterSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotattributesmessagerequesttypedef).
+1. See [:material-code-braces: DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterSnapshotIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterSnapshotAttributesMessageRequestTypeDef = {  # (1)
+    "DBClusterSnapshotIdentifier": ...,
+}
 
-Returns
-[DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef).
+parent.describe_db_cluster_snapshot_attributes(**kwargs)
+```
 
-<a id="describe\_db\_cluster\_snapshots"></a>
+1. See [:material-code-braces: DescribeDBClusterSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotattributesmessagerequesttypedef) 
 
-### describe_db_cluster_snapshots
+### describe\_db\_cluster\_snapshots
 
 Returns information about DB cluster snapshots.
 
-Type annotations for `boto3.client("rds").describe_db_cluster_snapshots`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_cluster_snapshots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshots)
 
-Boto3 documentation:
-[RDS.Client.describe_db_cluster_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_cluster_snapshots)
+```python title="Method definition"
+def describe_db_cluster_snapshots(
+    self,
+    *,
+    DBClusterIdentifier: str = ...,
+    DBClusterSnapshotIdentifier: str = ...,
+    SnapshotType: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    IncludeShared: bool = ...,
+    IncludePublic: bool = ...,
+) -> DBClusterSnapshotMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBClusterSnapshotsMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str`
-- `DBClusterSnapshotIdentifier`: `str`
-- `SnapshotType`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `IncludeShared`: `bool`
-- `IncludePublic`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterSnapshotsMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef).
+parent.describe_db_cluster_snapshots(**kwargs)
+```
 
-<a id="describe\_db\_clusters"></a>
+1. See [:material-code-braces: DescribeDBClusterSnapshotsMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotsmessagerequesttypedef) 
 
-### describe_db_clusters
+### describe\_db\_clusters
 
 Returns information about Amazon Aurora DB clusters and Multi-AZ DB clusters.
 
-Type annotations for `boto3.client("rds").describe_db_clusters` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_clusters)
 
-Boto3 documentation:
-[RDS.Client.describe_db_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_clusters)
+```python title="Method definition"
+def describe_db_clusters(
+    self,
+    *,
+    DBClusterIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    IncludeShared: bool = ...,
+) -> DBClusterMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBClustersMessageRequestTypeDef](./type_defs.md#describedbclustersmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `IncludeShared`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClustersMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef).
+parent.describe_db_clusters(**kwargs)
+```
 
-<a id="describe\_db\_engine\_versions"></a>
+1. See [:material-code-braces: DescribeDBClustersMessageRequestTypeDef](./type_defs.md#describedbclustersmessagerequesttypedef) 
 
-### describe_db_engine_versions
+### describe\_db\_engine\_versions
 
 Returns a list of the available DB engines.
 
-Type annotations for `boto3.client("rds").describe_db_engine_versions` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_engine_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_engine_versions)
 
-Boto3 documentation:
-[RDS.Client.describe_db_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_engine_versions)
+```python title="Method definition"
+def describe_db_engine_versions(
+    self,
+    *,
+    Engine: str = ...,
+    EngineVersion: str = ...,
+    DBParameterGroupFamily: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    DefaultOnly: bool = ...,
+    ListSupportedCharacterSets: bool = ...,
+    ListSupportedTimezones: bool = ...,
+    IncludeAll: bool = ...,
+) -> DBEngineVersionMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBEngineVersionsMessageRequestTypeDef](./type_defs.md#describedbengineversionsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef) 
 
-Keyword-only arguments:
 
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `DBParameterGroupFamily`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `DefaultOnly`: `bool`
-- `ListSupportedCharacterSets`: `bool`
-- `ListSupportedTimezones`: `bool`
-- `IncludeAll`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBEngineVersionsMessageRequestTypeDef = {  # (1)
+    "Engine": ...,
+}
 
-Returns
-[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef).
+parent.describe_db_engine_versions(**kwargs)
+```
 
-<a id="describe\_db\_instance\_automated\_backups"></a>
+1. See [:material-code-braces: DescribeDBEngineVersionsMessageRequestTypeDef](./type_defs.md#describedbengineversionsmessagerequesttypedef) 
 
-### describe_db_instance_automated_backups
+### describe\_db\_instance\_automated\_backups
 
 Displays backups for both current and deleted instances.
 
-Type annotations for
-`boto3.client("rds").describe_db_instance_automated_backups` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_instance_automated_backups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instance_automated_backups)
 
-Boto3 documentation:
-[RDS.Client.describe_db_instance_automated_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instance_automated_backups)
+```python title="Method definition"
+def describe_db_instance_automated_backups(
+    self,
+    *,
+    DbiResourceId: str = ...,
+    DBInstanceIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    DBInstanceAutomatedBackupsArn: str = ...,
+) -> DBInstanceAutomatedBackupMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBInstanceAutomatedBackupsMessageRequestTypeDef](./type_defs.md#describedbinstanceautomatedbackupsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBInstanceAutomatedBackupMessageTypeDef](./type_defs.md#dbinstanceautomatedbackupmessagetypedef) 
 
-Keyword-only arguments:
 
-- `DbiResourceId`: `str`
-- `DBInstanceIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `DBInstanceAutomatedBackupsArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBInstanceAutomatedBackupsMessageRequestTypeDef = {  # (1)
+    "DbiResourceId": ...,
+}
 
-Returns
-[DBInstanceAutomatedBackupMessageTypeDef](./type_defs.md#dbinstanceautomatedbackupmessagetypedef).
+parent.describe_db_instance_automated_backups(**kwargs)
+```
 
-<a id="describe\_db\_instances"></a>
+1. See [:material-code-braces: DescribeDBInstanceAutomatedBackupsMessageRequestTypeDef](./type_defs.md#describedbinstanceautomatedbackupsmessagerequesttypedef) 
 
-### describe_db_instances
+### describe\_db\_instances
 
 Returns information about provisioned RDS instances.
 
-Type annotations for `boto3.client("rds").describe_db_instances` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instances)
 
-Boto3 documentation:
-[RDS.Client.describe_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_instances)
+```python title="Method definition"
+def describe_db_instances(
+    self,
+    *,
+    DBInstanceIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DBInstanceMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBInstancesMessageRequestTypeDef](./type_defs.md#describedbinstancesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBInstancesMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
+parent.describe_db_instances(**kwargs)
+```
 
-<a id="describe\_db\_log\_files"></a>
+1. See [:material-code-braces: DescribeDBInstancesMessageRequestTypeDef](./type_defs.md#describedbinstancesmessagerequesttypedef) 
 
-### describe_db_log_files
+### describe\_db\_log\_files
 
 Returns a list of DB log files for the DB instance.
 
-Type annotations for `boto3.client("rds").describe_db_log_files` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_log_files` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_log_files)
 
-Boto3 documentation:
-[RDS.Client.describe_db_log_files](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_log_files)
+```python title="Method definition"
+def describe_db_log_files(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    FilenameContains: str = ...,
+    FileLastWritten: int = ...,
+    FileSize: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeDBLogFilesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBLogFilesMessageRequestTypeDef](./type_defs.md#describedblogfilesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeDBLogFilesResponseTypeDef](./type_defs.md#describedblogfilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `FilenameContains`: `str`
-- `FileLastWritten`: `int`
-- `FileSize`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBLogFilesMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns
-[DescribeDBLogFilesResponseTypeDef](./type_defs.md#describedblogfilesresponsetypedef).
+parent.describe_db_log_files(**kwargs)
+```
 
-<a id="describe\_db\_parameter\_groups"></a>
+1. See [:material-code-braces: DescribeDBLogFilesMessageRequestTypeDef](./type_defs.md#describedblogfilesmessagerequesttypedef) 
 
-### describe_db_parameter_groups
+### describe\_db\_parameter\_groups
 
 Returns a list of `DBParameterGroup` descriptions.
 
-Type annotations for `boto3.client("rds").describe_db_parameter_groups` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_parameter_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameter_groups)
 
-Boto3 documentation:
-[RDS.Client.describe_db_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameter_groups)
+```python title="Method definition"
+def describe_db_parameter_groups(
+    self,
+    *,
+    DBParameterGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DBParameterGroupsMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbparametergroupsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBParameterGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBParameterGroupsMessageRequestTypeDef = {  # (1)
+    "DBParameterGroupName": ...,
+}
 
-Returns
-[DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef).
+parent.describe_db_parameter_groups(**kwargs)
+```
 
-<a id="describe\_db\_parameters"></a>
+1. See [:material-code-braces: DescribeDBParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbparametergroupsmessagerequesttypedef) 
 
-### describe_db_parameters
+### describe\_db\_parameters
 
 Returns the detailed parameter list for a particular DB parameter group.
 
-Type annotations for `boto3.client("rds").describe_db_parameters` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameters)
 
-Boto3 documentation:
-[RDS.Client.describe_db_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_parameters)
+```python title="Method definition"
+def describe_db_parameters(
+    self,
+    *,
+    DBParameterGroupName: str,
+    Source: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DBParameterGroupDetailsTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBParametersMessageRequestTypeDef](./type_defs.md#describedbparametersmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef) 
 
-Keyword-only arguments:
 
-- `DBParameterGroupName`: `str` *(required)*
-- `Source`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBParametersMessageRequestTypeDef = {  # (1)
+    "DBParameterGroupName": ...,
+}
 
-Returns
-[DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef).
+parent.describe_db_parameters(**kwargs)
+```
 
-<a id="describe\_db\_proxies"></a>
+1. See [:material-code-braces: DescribeDBParametersMessageRequestTypeDef](./type_defs.md#describedbparametersmessagerequesttypedef) 
 
-### describe_db_proxies
+### describe\_db\_proxies
 
 Returns information about DB proxies.
 
-Type annotations for `boto3.client("rds").describe_db_proxies` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_proxies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxies)
 
-Boto3 documentation:
-[RDS.Client.describe_db_proxies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxies)
+```python title="Method definition"
+def describe_db_proxies(
+    self,
+    *,
+    DBProxyName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    Marker: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeDBProxiesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBProxiesRequestRequestTypeDef](./type_defs.md#describedbproxiesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeDBProxiesResponseTypeDef](./type_defs.md#describedbproxiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBProxiesRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+}
 
-Returns
-[DescribeDBProxiesResponseTypeDef](./type_defs.md#describedbproxiesresponsetypedef).
+parent.describe_db_proxies(**kwargs)
+```
 
-<a id="describe\_db\_proxy\_endpoints"></a>
+1. See [:material-code-braces: DescribeDBProxiesRequestRequestTypeDef](./type_defs.md#describedbproxiesrequestrequesttypedef) 
 
-### describe_db_proxy_endpoints
+### describe\_db\_proxy\_endpoints
 
 Returns information about DB proxy endpoints.
 
-Type annotations for `boto3.client("rds").describe_db_proxy_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_proxy_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_endpoints)
 
-Boto3 documentation:
-[RDS.Client.describe_db_proxy_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_endpoints)
+```python title="Method definition"
+def describe_db_proxy_endpoints(
+    self,
+    *,
+    DBProxyName: str = ...,
+    DBProxyEndpointName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    Marker: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeDBProxyEndpointsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBProxyEndpointsRequestRequestTypeDef](./type_defs.md#describedbproxyendpointsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeDBProxyEndpointsResponseTypeDef](./type_defs.md#describedbproxyendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str`
-- `DBProxyEndpointName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBProxyEndpointsRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+}
 
-Returns
-[DescribeDBProxyEndpointsResponseTypeDef](./type_defs.md#describedbproxyendpointsresponsetypedef).
+parent.describe_db_proxy_endpoints(**kwargs)
+```
 
-<a id="describe\_db\_proxy\_target\_groups"></a>
+1. See [:material-code-braces: DescribeDBProxyEndpointsRequestRequestTypeDef](./type_defs.md#describedbproxyendpointsrequestrequesttypedef) 
 
-### describe_db_proxy_target_groups
+### describe\_db\_proxy\_target\_groups
 
 Returns information about DB proxy target groups, represented by
 `DBProxyTargetGroup` data structures.
 
-Type annotations for `boto3.client("rds").describe_db_proxy_target_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_proxy_target_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_target_groups)
 
-Boto3 documentation:
-[RDS.Client.describe_db_proxy_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_target_groups)
+```python title="Method definition"
+def describe_db_proxy_target_groups(
+    self,
+    *,
+    DBProxyName: str,
+    TargetGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    Marker: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeDBProxyTargetGroupsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBProxyTargetGroupsRequestRequestTypeDef](./type_defs.md#describedbproxytargetgroupsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeDBProxyTargetGroupsResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str` *(required)*
-- `TargetGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBProxyTargetGroupsRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+}
 
-Returns
-[DescribeDBProxyTargetGroupsResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponsetypedef).
+parent.describe_db_proxy_target_groups(**kwargs)
+```
 
-<a id="describe\_db\_proxy\_targets"></a>
+1. See [:material-code-braces: DescribeDBProxyTargetGroupsRequestRequestTypeDef](./type_defs.md#describedbproxytargetgroupsrequestrequesttypedef) 
 
-### describe_db_proxy_targets
+### describe\_db\_proxy\_targets
 
 Returns information about `DBProxyTarget` objects.
 
-Type annotations for `boto3.client("rds").describe_db_proxy_targets` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_proxy_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_targets)
 
-Boto3 documentation:
-[RDS.Client.describe_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_proxy_targets)
+```python title="Method definition"
+def describe_db_proxy_targets(
+    self,
+    *,
+    DBProxyName: str,
+    TargetGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    Marker: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeDBProxyTargetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBProxyTargetsRequestRequestTypeDef](./type_defs.md#describedbproxytargetsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeDBProxyTargetsResponseTypeDef](./type_defs.md#describedbproxytargetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str` *(required)*
-- `TargetGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBProxyTargetsRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+}
 
-Returns
-[DescribeDBProxyTargetsResponseTypeDef](./type_defs.md#describedbproxytargetsresponsetypedef).
+parent.describe_db_proxy_targets(**kwargs)
+```
 
-<a id="describe\_db\_security\_groups"></a>
+1. See [:material-code-braces: DescribeDBProxyTargetsRequestRequestTypeDef](./type_defs.md#describedbproxytargetsrequestrequesttypedef) 
 
-### describe_db_security_groups
+### describe\_db\_security\_groups
 
 Returns a list of `DBSecurityGroup` descriptions.
 
-Type annotations for `boto3.client("rds").describe_db_security_groups` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_security_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_security_groups)
 
-Boto3 documentation:
-[RDS.Client.describe_db_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_security_groups)
+```python title="Method definition"
+def describe_db_security_groups(
+    self,
+    *,
+    DBSecurityGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DBSecurityGroupMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBSecurityGroupsMessageRequestTypeDef](./type_defs.md#describedbsecuritygroupsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBSecurityGroupMessageTypeDef](./type_defs.md#dbsecuritygroupmessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBSecurityGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBSecurityGroupsMessageRequestTypeDef = {  # (1)
+    "DBSecurityGroupName": ...,
+}
 
-Returns
-[DBSecurityGroupMessageTypeDef](./type_defs.md#dbsecuritygroupmessagetypedef).
+parent.describe_db_security_groups(**kwargs)
+```
 
-<a id="describe\_db\_snapshot\_attributes"></a>
+1. See [:material-code-braces: DescribeDBSecurityGroupsMessageRequestTypeDef](./type_defs.md#describedbsecuritygroupsmessagerequesttypedef) 
 
-### describe_db_snapshot_attributes
+### describe\_db\_snapshot\_attributes
 
 Returns a list of DB snapshot attribute names and values for a manual DB
 snapshot.
 
-Type annotations for `boto3.client("rds").describe_db_snapshot_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_snapshot_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshot_attributes)
 
-Boto3 documentation:
-[RDS.Client.describe_db_snapshot_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshot_attributes)
+```python title="Method definition"
+def describe_db_snapshot_attributes(
+    self,
+    *,
+    DBSnapshotIdentifier: str,
+) -> DescribeDBSnapshotAttributesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbsnapshotattributesmessagerequesttypedef).
+1. See [:material-code-braces: DescribeDBSnapshotAttributesResultTypeDef](./type_defs.md#describedbsnapshotattributesresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSnapshotIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDBSnapshotAttributesMessageRequestTypeDef = {  # (1)
+    "DBSnapshotIdentifier": ...,
+}
 
-Returns
-[DescribeDBSnapshotAttributesResultTypeDef](./type_defs.md#describedbsnapshotattributesresulttypedef).
+parent.describe_db_snapshot_attributes(**kwargs)
+```
 
-<a id="describe\_db\_snapshots"></a>
+1. See [:material-code-braces: DescribeDBSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbsnapshotattributesmessagerequesttypedef) 
 
-### describe_db_snapshots
+### describe\_db\_snapshots
 
 .
 
-Type annotations for `boto3.client("rds").describe_db_snapshots` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_snapshots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshots)
 
-Boto3 documentation:
-[RDS.Client.describe_db_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_snapshots)
+```python title="Method definition"
+def describe_db_snapshots(
+    self,
+    *,
+    DBInstanceIdentifier: str = ...,
+    DBSnapshotIdentifier: str = ...,
+    SnapshotType: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    IncludeShared: bool = ...,
+    IncludePublic: bool = ...,
+    DbiResourceId: str = ...,
+) -> DBSnapshotMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBSnapshotsMessageRequestTypeDef](./type_defs.md#describedbsnapshotsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBSnapshotMessageTypeDef](./type_defs.md#dbsnapshotmessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str`
-- `DBSnapshotIdentifier`: `str`
-- `SnapshotType`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `IncludeShared`: `bool`
-- `IncludePublic`: `bool`
-- `DbiResourceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBSnapshotsMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns [DBSnapshotMessageTypeDef](./type_defs.md#dbsnapshotmessagetypedef).
+parent.describe_db_snapshots(**kwargs)
+```
 
-<a id="describe\_db\_subnet\_groups"></a>
+1. See [:material-code-braces: DescribeDBSnapshotsMessageRequestTypeDef](./type_defs.md#describedbsnapshotsmessagerequesttypedef) 
 
-### describe_db_subnet_groups
+### describe\_db\_subnet\_groups
 
 Returns a list of DBSubnetGroup descriptions.
 
-Type annotations for `boto3.client("rds").describe_db_subnet_groups` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_db_subnet_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_subnet_groups)
 
-Boto3 documentation:
-[RDS.Client.describe_db_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_db_subnet_groups)
+```python title="Method definition"
+def describe_db_subnet_groups(
+    self,
+    *,
+    DBSubnetGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DBSubnetGroupMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDBSubnetGroupsMessageRequestTypeDef](./type_defs.md#describedbsubnetgroupsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBSubnetGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDBSubnetGroupsMessageRequestTypeDef = {  # (1)
+    "DBSubnetGroupName": ...,
+}
 
-Returns
-[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef).
+parent.describe_db_subnet_groups(**kwargs)
+```
 
-<a id="describe\_engine\_default\_cluster\_parameters"></a>
+1. See [:material-code-braces: DescribeDBSubnetGroupsMessageRequestTypeDef](./type_defs.md#describedbsubnetgroupsmessagerequesttypedef) 
 
-### describe_engine_default_cluster_parameters
+### describe\_engine\_default\_cluster\_parameters
 
 Returns the default engine and system parameter information for the cluster
 database engine.
 
-Type annotations for
-`boto3.client("rds").describe_engine_default_cluster_parameters` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_engine_default_cluster_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_cluster_parameters)
 
-Boto3 documentation:
-[RDS.Client.describe_engine_default_cluster_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_cluster_parameters)
+```python title="Method definition"
+def describe_engine_default_cluster_parameters(
+    self,
+    *,
+    DBParameterGroupFamily: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeEngineDefaultClusterParametersResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEngineDefaultClusterParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBParameterGroupFamily`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEngineDefaultClusterParametersMessageRequestTypeDef = {  # (1)
+    "DBParameterGroupFamily": ...,
+}
 
-Returns
-[DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef).
+parent.describe_engine_default_cluster_parameters(**kwargs)
+```
 
-<a id="describe\_engine\_default\_parameters"></a>
+1. See [:material-code-braces: DescribeEngineDefaultClusterParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagerequesttypedef) 
 
-### describe_engine_default_parameters
+### describe\_engine\_default\_parameters
 
 Returns the default engine and system parameter information for the specified
 database engine.
 
-Type annotations for `boto3.client("rds").describe_engine_default_parameters`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_engine_default_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_parameters)
 
-Boto3 documentation:
-[RDS.Client.describe_engine_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_engine_default_parameters)
+```python title="Method definition"
+def describe_engine_default_parameters(
+    self,
+    *,
+    DBParameterGroupFamily: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeEngineDefaultParametersResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEngineDefaultParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultparametersmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBParameterGroupFamily`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEngineDefaultParametersMessageRequestTypeDef = {  # (1)
+    "DBParameterGroupFamily": ...,
+}
 
-Returns
-[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef).
+parent.describe_engine_default_parameters(**kwargs)
+```
 
-<a id="describe\_event\_categories"></a>
+1. See [:material-code-braces: DescribeEngineDefaultParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultparametersmessagerequesttypedef) 
 
-### describe_event_categories
+### describe\_event\_categories
 
 .
 
-Type annotations for `boto3.client("rds").describe_event_categories` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_event_categories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_categories)
 
-Boto3 documentation:
-[RDS.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_categories)
+```python title="Method definition"
+def describe_event_categories(
+    self,
+    *,
+    SourceType: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> EventCategoriesMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef) 
 
-Keyword-only arguments:
 
-- `SourceType`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeEventCategoriesMessageRequestTypeDef = {  # (1)
+    "SourceType": ...,
+}
 
-Returns
-[EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
+parent.describe_event_categories(**kwargs)
+```
 
-<a id="describe\_event\_subscriptions"></a>
+1. See [:material-code-braces: DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef) 
 
-### describe_event_subscriptions
+### describe\_event\_subscriptions
 
 Lists all the subscription descriptions for a customer account.
 
-Type annotations for `boto3.client("rds").describe_event_subscriptions` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_event_subscriptions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_subscriptions)
 
-Boto3 documentation:
-[RDS.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_event_subscriptions)
+```python title="Method definition"
+def describe_event_subscriptions(
+    self,
+    *,
+    SubscriptionName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> EventSubscriptionsMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventSubscriptionsMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+}
 
-Returns
-[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
+parent.describe_event_subscriptions(**kwargs)
+```
 
-<a id="describe\_events"></a>
+1. See [:material-code-braces: DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef) 
 
-### describe_events
+### describe\_events
 
 Returns events related to DB instances, DB clusters, DB parameter groups, DB
 security groups, DB snapshots, DB cluster snapshots, and RDS Proxies for the
 past 14 days.
 
-Type annotations for `boto3.client("rds").describe_events` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_events)
 
-Boto3 documentation:
-[RDS.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_events)
+```python title="Method definition"
+def describe_events(
+    self,
+    *,
+    SourceIdentifier: str = ...,
+    SourceType: SourceTypeType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Duration: int = ...,
+    EventCategories: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (2)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> EventsMessageTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef).
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `SourceIdentifier`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `EventCategories`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsMessageRequestTypeDef = {  # (1)
+    "SourceIdentifier": ...,
+}
 
-Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
+parent.describe_events(**kwargs)
+```
 
-<a id="describe\_export\_tasks"></a>
+1. See [:material-code-braces: DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef) 
 
-### describe_export_tasks
+### describe\_export\_tasks
 
 Returns information about a snapshot export to Amazon S3.
 
-Type annotations for `boto3.client("rds").describe_export_tasks` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_export_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_export_tasks)
 
-Boto3 documentation:
-[RDS.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_export_tasks)
+```python title="Method definition"
+def describe_export_tasks(
+    self,
+    *,
+    ExportTaskIdentifier: str = ...,
+    SourceArn: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    Marker: str = ...,
+    MaxRecords: int = ...,
+) -> ExportTasksMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExportTasksMessageRequestTypeDef](./type_defs.md#describeexporttasksmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ExportTaskIdentifier`: `str`
-- `SourceArn`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeExportTasksMessageRequestTypeDef = {  # (1)
+    "ExportTaskIdentifier": ...,
+}
 
-Returns [ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef).
+parent.describe_export_tasks(**kwargs)
+```
 
-<a id="describe\_global\_clusters"></a>
+1. See [:material-code-braces: DescribeExportTasksMessageRequestTypeDef](./type_defs.md#describeexporttasksmessagerequesttypedef) 
 
-### describe_global_clusters
+### describe\_global\_clusters
 
 Returns information about Aurora global database clusters.
 
-Type annotations for `boto3.client("rds").describe_global_clusters` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_global_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_global_clusters)
 
-Boto3 documentation:
-[RDS.Client.describe_global_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_global_clusters)
+```python title="Method definition"
+def describe_global_clusters(
+    self,
+    *,
+    GlobalClusterIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> GlobalClustersMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGlobalClustersMessageRequestTypeDef](./type_defs.md#describeglobalclustersmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalClusterIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeGlobalClustersMessageRequestTypeDef = {  # (1)
+    "GlobalClusterIdentifier": ...,
+}
 
-Returns
-[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef).
+parent.describe_global_clusters(**kwargs)
+```
 
-<a id="describe\_installation\_media"></a>
+1. See [:material-code-braces: DescribeGlobalClustersMessageRequestTypeDef](./type_defs.md#describeglobalclustersmessagerequesttypedef) 
 
-### describe_installation_media
+### describe\_installation\_media
 
 Describes the available installation media for a DB engine that requires an on-
 premises customer provided license, such as Microsoft SQL Server.
 
-Type annotations for `boto3.client("rds").describe_installation_media` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_installation_media` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_installation_media)
 
-Boto3 documentation:
-[RDS.Client.describe_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_installation_media)
+```python title="Method definition"
+def describe_installation_media(
+    self,
+    *,
+    InstallationMediaId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> InstallationMediaMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInstallationMediaMessageRequestTypeDef](./type_defs.md#describeinstallationmediamessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: InstallationMediaMessageTypeDef](./type_defs.md#installationmediamessagetypedef) 
 
-Keyword-only arguments:
 
-- `InstallationMediaId`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeInstallationMediaMessageRequestTypeDef = {  # (1)
+    "InstallationMediaId": ...,
+}
 
-Returns
-[InstallationMediaMessageTypeDef](./type_defs.md#installationmediamessagetypedef).
+parent.describe_installation_media(**kwargs)
+```
 
-<a id="describe\_option\_group\_options"></a>
+1. See [:material-code-braces: DescribeInstallationMediaMessageRequestTypeDef](./type_defs.md#describeinstallationmediamessagerequesttypedef) 
 
-### describe_option_group_options
+### describe\_option\_group\_options
 
 Describes all available options.
 
-Type annotations for `boto3.client("rds").describe_option_group_options`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_option_group_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_group_options)
 
-Boto3 documentation:
-[RDS.Client.describe_option_group_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_group_options)
+```python title="Method definition"
+def describe_option_group_options(
+    self,
+    *,
+    EngineName: str,
+    MajorEngineVersion: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> OptionGroupOptionsMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOptionGroupOptionsMessageRequestTypeDef](./type_defs.md#describeoptiongroupoptionsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: OptionGroupOptionsMessageTypeDef](./type_defs.md#optiongroupoptionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `EngineName`: `str` *(required)*
-- `MajorEngineVersion`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeOptionGroupOptionsMessageRequestTypeDef = {  # (1)
+    "EngineName": ...,
+}
 
-Returns
-[OptionGroupOptionsMessageTypeDef](./type_defs.md#optiongroupoptionsmessagetypedef).
+parent.describe_option_group_options(**kwargs)
+```
 
-<a id="describe\_option\_groups"></a>
+1. See [:material-code-braces: DescribeOptionGroupOptionsMessageRequestTypeDef](./type_defs.md#describeoptiongroupoptionsmessagerequesttypedef) 
 
-### describe_option_groups
+### describe\_option\_groups
 
 Describes the available option groups.
 
-Type annotations for `boto3.client("rds").describe_option_groups` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_option_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_groups)
 
-Boto3 documentation:
-[RDS.Client.describe_option_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_option_groups)
+```python title="Method definition"
+def describe_option_groups(
+    self,
+    *,
+    OptionGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    Marker: str = ...,
+    MaxRecords: int = ...,
+    EngineName: str = ...,
+    MajorEngineVersion: str = ...,
+) -> OptionGroupsTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOptionGroupsMessageRequestTypeDef](./type_defs.md#describeoptiongroupsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: OptionGroupsTypeDef](./type_defs.md#optiongroupstypedef) 
 
-Keyword-only arguments:
 
-- `OptionGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
-- `EngineName`: `str`
-- `MajorEngineVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeOptionGroupsMessageRequestTypeDef = {  # (1)
+    "OptionGroupName": ...,
+}
 
-Returns [OptionGroupsTypeDef](./type_defs.md#optiongroupstypedef).
+parent.describe_option_groups(**kwargs)
+```
 
-<a id="describe\_orderable\_db\_instance\_options"></a>
+1. See [:material-code-braces: DescribeOptionGroupsMessageRequestTypeDef](./type_defs.md#describeoptiongroupsmessagerequesttypedef) 
 
-### describe_orderable_db_instance_options
+### describe\_orderable\_db\_instance\_options
 
 Returns a list of orderable DB instance options for the specified DB engine, DB
 engine version, and DB instance class.
 
-Type annotations for
-`boto3.client("rds").describe_orderable_db_instance_options` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_orderable_db_instance_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_orderable_db_instance_options)
 
-Boto3 documentation:
-[RDS.Client.describe_orderable_db_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_orderable_db_instance_options)
+```python title="Method definition"
+def describe_orderable_db_instance_options(
+    self,
+    *,
+    Engine: str,
+    EngineVersion: str = ...,
+    DBInstanceClass: str = ...,
+    LicenseModel: str = ...,
+    AvailabilityZoneGroup: str = ...,
+    Vpc: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> OrderableDBInstanceOptionsMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOrderableDBInstanceOptionsMessageRequestTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `Engine`: `str` *(required)*
-- `EngineVersion`: `str`
-- `DBInstanceClass`: `str`
-- `LicenseModel`: `str`
-- `AvailabilityZoneGroup`: `str`
-- `Vpc`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeOrderableDBInstanceOptionsMessageRequestTypeDef = {  # (1)
+    "Engine": ...,
+}
 
-Returns
-[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef).
+parent.describe_orderable_db_instance_options(**kwargs)
+```
 
-<a id="describe\_pending\_maintenance\_actions"></a>
+1. See [:material-code-braces: DescribeOrderableDBInstanceOptionsMessageRequestTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagerequesttypedef) 
 
-### describe_pending_maintenance_actions
+### describe\_pending\_maintenance\_actions
 
 Returns a list of resources (for example, DB instances) that have at least one
 pending maintenance action.
 
-Type annotations for `boto3.client("rds").describe_pending_maintenance_actions`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_pending_maintenance_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_pending_maintenance_actions)
 
-Boto3 documentation:
-[RDS.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_pending_maintenance_actions)
+```python title="Method definition"
+def describe_pending_maintenance_actions(
+    self,
+    *,
+    ResourceIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    Marker: str = ...,
+    MaxRecords: int = ...,
+) -> PendingMaintenanceActionsMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribePendingMaintenanceActionsMessageRequestTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+}
 
-Returns
-[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef).
+parent.describe_pending_maintenance_actions(**kwargs)
+```
 
-<a id="describe\_reserved\_db\_instances"></a>
+1. See [:material-code-braces: DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef) 
 
-### describe_reserved_db_instances
+### describe\_reserved\_db\_instances
 
 Returns information about reserved DB instances for this account, or about a
 specified reserved DB instance.
 
-Type annotations for `boto3.client("rds").describe_reserved_db_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_reserved_db_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances)
 
-Boto3 documentation:
-[RDS.Client.describe_reserved_db_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances)
+```python title="Method definition"
+def describe_reserved_db_instances(
+    self,
+    *,
+    ReservedDBInstanceId: str = ...,
+    ReservedDBInstancesOfferingId: str = ...,
+    DBInstanceClass: str = ...,
+    Duration: str = ...,
+    ProductDescription: str = ...,
+    OfferingType: str = ...,
+    MultiAZ: bool = ...,
+    LeaseId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> ReservedDBInstanceMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReservedDBInstancesMessageRequestTypeDef](./type_defs.md#describereserveddbinstancesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ReservedDBInstanceMessageTypeDef](./type_defs.md#reserveddbinstancemessagetypedef) 
 
-Keyword-only arguments:
 
-- `ReservedDBInstanceId`: `str`
-- `ReservedDBInstancesOfferingId`: `str`
-- `DBInstanceClass`: `str`
-- `Duration`: `str`
-- `ProductDescription`: `str`
-- `OfferingType`: `str`
-- `MultiAZ`: `bool`
-- `LeaseId`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedDBInstancesMessageRequestTypeDef = {  # (1)
+    "ReservedDBInstanceId": ...,
+}
 
-Returns
-[ReservedDBInstanceMessageTypeDef](./type_defs.md#reserveddbinstancemessagetypedef).
+parent.describe_reserved_db_instances(**kwargs)
+```
 
-<a id="describe\_reserved\_db\_instances\_offerings"></a>
+1. See [:material-code-braces: DescribeReservedDBInstancesMessageRequestTypeDef](./type_defs.md#describereserveddbinstancesmessagerequesttypedef) 
 
-### describe_reserved_db_instances_offerings
+### describe\_reserved\_db\_instances\_offerings
 
 Lists available reserved DB instance offerings.
 
-Type annotations for
-`boto3.client("rds").describe_reserved_db_instances_offerings` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_reserved_db_instances_offerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances_offerings)
 
-Boto3 documentation:
-[RDS.Client.describe_reserved_db_instances_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_reserved_db_instances_offerings)
+```python title="Method definition"
+def describe_reserved_db_instances_offerings(
+    self,
+    *,
+    ReservedDBInstancesOfferingId: str = ...,
+    DBInstanceClass: str = ...,
+    Duration: str = ...,
+    ProductDescription: str = ...,
+    OfferingType: str = ...,
+    MultiAZ: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> ReservedDBInstancesOfferingMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReservedDBInstancesOfferingsMessageRequestTypeDef](./type_defs.md#describereserveddbinstancesofferingsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ReservedDBInstancesOfferingMessageTypeDef](./type_defs.md#reserveddbinstancesofferingmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ReservedDBInstancesOfferingId`: `str`
-- `DBInstanceClass`: `str`
-- `Duration`: `str`
-- `ProductDescription`: `str`
-- `OfferingType`: `str`
-- `MultiAZ`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedDBInstancesOfferingsMessageRequestTypeDef = {  # (1)
+    "ReservedDBInstancesOfferingId": ...,
+}
 
-Returns
-[ReservedDBInstancesOfferingMessageTypeDef](./type_defs.md#reserveddbinstancesofferingmessagetypedef).
+parent.describe_reserved_db_instances_offerings(**kwargs)
+```
 
-<a id="describe\_source\_regions"></a>
+1. See [:material-code-braces: DescribeReservedDBInstancesOfferingsMessageRequestTypeDef](./type_defs.md#describereserveddbinstancesofferingsmessagerequesttypedef) 
 
-### describe_source_regions
+### describe\_source\_regions
 
 Returns a list of the source Amazon Web Services Regions where the current
 Amazon Web Services Region can create a read replica, copy a DB snapshot from,
 or replicate automated backups from.
 
-Type annotations for `boto3.client("rds").describe_source_regions` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_source_regions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_source_regions)
 
-Boto3 documentation:
-[RDS.Client.describe_source_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_source_regions)
+```python title="Method definition"
+def describe_source_regions(
+    self,
+    *,
+    RegionName: str = ...,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> SourceRegionMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSourceRegionsMessageRequestTypeDef](./type_defs.md#describesourceregionsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SourceRegionMessageTypeDef](./type_defs.md#sourceregionmessagetypedef) 
 
-Keyword-only arguments:
 
-- `RegionName`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeSourceRegionsMessageRequestTypeDef = {  # (1)
+    "RegionName": ...,
+}
 
-Returns
-[SourceRegionMessageTypeDef](./type_defs.md#sourceregionmessagetypedef).
+parent.describe_source_regions(**kwargs)
+```
 
-<a id="describe\_valid\_db\_instance\_modifications"></a>
+1. See [:material-code-braces: DescribeSourceRegionsMessageRequestTypeDef](./type_defs.md#describesourceregionsmessagerequesttypedef) 
 
-### describe_valid_db_instance_modifications
+### describe\_valid\_db\_instance\_modifications
 
 You can call `DescribeValidDBInstanceModifications` to learn what modifications
 you can make to your DB instance.
 
-Type annotations for
-`boto3.client("rds").describe_valid_db_instance_modifications` method.
+Type annotations and code completion for `#!python boto3.client("rds").describe_valid_db_instance_modifications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_valid_db_instance_modifications)
 
-Boto3 documentation:
-[RDS.Client.describe_valid_db_instance_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.describe_valid_db_instance_modifications)
+```python title="Method definition"
+def describe_valid_db_instance_modifications(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+) -> DescribeValidDBInstanceModificationsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeValidDBInstanceModificationsMessageRequestTypeDef](./type_defs.md#describevaliddbinstancemodificationsmessagerequesttypedef).
+1. See [:material-code-braces: DescribeValidDBInstanceModificationsResultTypeDef](./type_defs.md#describevaliddbinstancemodificationsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeValidDBInstanceModificationsMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns
-[DescribeValidDBInstanceModificationsResultTypeDef](./type_defs.md#describevaliddbinstancemodificationsresulttypedef).
+parent.describe_valid_db_instance_modifications(**kwargs)
+```
 
-<a id="download\_db\_log\_file\_portion"></a>
+1. See [:material-code-braces: DescribeValidDBInstanceModificationsMessageRequestTypeDef](./type_defs.md#describevaliddbinstancemodificationsmessagerequesttypedef) 
 
-### download_db_log_file_portion
+### download\_db\_log\_file\_portion
 
 Downloads all or a portion of the specified log file, up to 1 MB in size.
 
-Type annotations for `boto3.client("rds").download_db_log_file_portion` method.
+Type annotations and code completion for `#!python boto3.client("rds").download_db_log_file_portion` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.download_db_log_file_portion)
 
-Boto3 documentation:
-[RDS.Client.download_db_log_file_portion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.download_db_log_file_portion)
+```python title="Method definition"
+def download_db_log_file_portion(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    LogFileName: str,
+    Marker: str = ...,
+    NumberOfLines: int = ...,
+) -> DownloadDBLogFilePortionDetailsTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DownloadDBLogFilePortionMessageRequestTypeDef](./type_defs.md#downloaddblogfileportionmessagerequesttypedef).
+1. See [:material-code-braces: DownloadDBLogFilePortionDetailsTypeDef](./type_defs.md#downloaddblogfileportiondetailstypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `LogFileName`: `str` *(required)*
-- `Marker`: `str`
-- `NumberOfLines`: `int`
+```python title="Usage example with kwargs"
+kwargs: DownloadDBLogFilePortionMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+    "LogFileName": ...,
+}
 
-Returns
-[DownloadDBLogFilePortionDetailsTypeDef](./type_defs.md#downloaddblogfileportiondetailstypedef).
+parent.download_db_log_file_portion(**kwargs)
+```
 
-<a id="failover\_db\_cluster"></a>
+1. See [:material-code-braces: DownloadDBLogFilePortionMessageRequestTypeDef](./type_defs.md#downloaddblogfileportionmessagerequesttypedef) 
 
-### failover_db_cluster
+### failover\_db\_cluster
 
 Forces a failover for a DB cluster.
 
-Type annotations for `boto3.client("rds").failover_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").failover_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.failover_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_db_cluster)
+```python title="Method definition"
+def failover_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    TargetDBInstanceIdentifier: str = ...,
+) -> FailoverDBClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[FailoverDBClusterMessageRequestTypeDef](./type_defs.md#failoverdbclustermessagerequesttypedef).
+1. See [:material-code-braces: FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `TargetDBInstanceIdentifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: FailoverDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef).
+parent.failover_db_cluster(**kwargs)
+```
 
-<a id="failover\_global\_cluster"></a>
+1. See [:material-code-braces: FailoverDBClusterMessageRequestTypeDef](./type_defs.md#failoverdbclustermessagerequesttypedef) 
 
-### failover_global_cluster
+### failover\_global\_cluster
 
 Initiates the failover process for an Aurora global database ( GlobalCluster ).
 
-Type annotations for `boto3.client("rds").failover_global_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").failover_global_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_global_cluster)
 
-Boto3 documentation:
-[RDS.Client.failover_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.failover_global_cluster)
+```python title="Method definition"
+def failover_global_cluster(
+    self,
+    *,
+    GlobalClusterIdentifier: str,
+    TargetDbClusterIdentifier: str,
+) -> FailoverGlobalClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[FailoverGlobalClusterMessageRequestTypeDef](./type_defs.md#failoverglobalclustermessagerequesttypedef).
+1. See [:material-code-braces: FailoverGlobalClusterResultTypeDef](./type_defs.md#failoverglobalclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `GlobalClusterIdentifier`: `str` *(required)*
-- `TargetDbClusterIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: FailoverGlobalClusterMessageRequestTypeDef = {  # (1)
+    "GlobalClusterIdentifier": ...,
+    "TargetDbClusterIdentifier": ...,
+}
 
-Returns
-[FailoverGlobalClusterResultTypeDef](./type_defs.md#failoverglobalclusterresulttypedef).
+parent.failover_global_cluster(**kwargs)
+```
 
-<a id="generate\_db\_auth\_token"></a>
+1. See [:material-code-braces: FailoverGlobalClusterMessageRequestTypeDef](./type_defs.md#failoverglobalclustermessagerequesttypedef) 
 
-### generate_db_auth_token
+### generate\_db\_auth\_token
 
 Generates an auth token used to connect to a db with IAM credentials.
 
-Type annotations for `boto3.client("rds").generate_db_auth_token` method.
+Type annotations and code completion for `#!python boto3.client("rds").generate_db_auth_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_db_auth_token)
 
-Boto3 documentation:
-[RDS.Client.generate_db_auth_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_db_auth_token)
+```python title="Method definition"
+def generate_db_auth_token(
+    self,
+    DBHostname: str,
+    Port: int,
+    DBUsername: str,
+    Region: str = ...,
+) -> str:
+    ...
+```
 
-Arguments mapping described in
-[ClientGenerateDbAuthTokenRequestTypeDef](./type_defs.md#clientgeneratedbauthtokenrequesttypedef).
 
-Arguments:
 
-- `DBHostname`: `str` *(required)*
-- `Port`: `int` *(required)*
-- `DBUsername`: `str` *(required)*
-- `Region`: `str`
+```python title="Usage example with kwargs"
+kwargs: ClientGenerateDbAuthTokenRequestTypeDef = {  # (1)
+    "DBHostname": ...,
+    "Port": ...,
+    "DBUsername": ...,
+}
 
-Returns `str`.
+parent.generate_db_auth_token(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ClientGenerateDbAuthTokenRequestTypeDef](./type_defs.md#clientgeneratedbauthtokenrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("rds").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("rds").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[RDS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="import\_installation\_media"></a>
-
-### import_installation_media
+### import\_installation\_media
 
 Imports the installation media for a DB engine that requires an on-premises
 customer provided license, such as SQL Server.
 
-Type annotations for `boto3.client("rds").import_installation_media` method.
+Type annotations and code completion for `#!python boto3.client("rds").import_installation_media` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.import_installation_media)
 
-Boto3 documentation:
-[RDS.Client.import_installation_media](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.import_installation_media)
+```python title="Method definition"
+def import_installation_media(
+    self,
+    *,
+    CustomAvailabilityZoneId: str,
+    Engine: str,
+    EngineVersion: str,
+    EngineInstallationMediaPath: str,
+    OSInstallationMediaPath: str,
+) -> InstallationMediaResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ImportInstallationMediaMessageRequestTypeDef](./type_defs.md#importinstallationmediamessagerequesttypedef).
+1. See [:material-code-braces: InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `CustomAvailabilityZoneId`: `str` *(required)*
-- `Engine`: `str` *(required)*
-- `EngineVersion`: `str` *(required)*
-- `EngineInstallationMediaPath`: `str` *(required)*
-- `OSInstallationMediaPath`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ImportInstallationMediaMessageRequestTypeDef = {  # (1)
+    "CustomAvailabilityZoneId": ...,
+    "Engine": ...,
+    "EngineVersion": ...,
+    "EngineInstallationMediaPath": ...,
+    "OSInstallationMediaPath": ...,
+}
 
-Returns
-[InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef).
+parent.import_installation_media(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ImportInstallationMediaMessageRequestTypeDef](./type_defs.md#importinstallationmediamessagerequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags on an Amazon RDS resource.
 
-Type annotations for `boto3.client("rds").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("rds").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[RDS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceName: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> TagListMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceName`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceMessageRequestTypeDef = {  # (1)
+    "ResourceName": ...,
+}
 
-Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="modify\_certificates"></a>
+1. See [:material-code-braces: ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef) 
 
-### modify_certificates
+### modify\_certificates
 
 Override the system-default Secure Sockets Layer/Transport Layer Security
-(SSL/TLS) certificate for Amazon RDS for new DB instances temporarily, or
-remove the override.
+(SSL/TLS) certificate for Amazon RDS for new DB instances temporarily, or remove
+the override.
 
-Type annotations for `boto3.client("rds").modify_certificates` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_certificates)
 
-Boto3 documentation:
-[RDS.Client.modify_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_certificates)
+```python title="Method definition"
+def modify_certificates(
+    self,
+    *,
+    CertificateIdentifier: str = ...,
+    RemoveCustomerOverride: bool = ...,
+) -> ModifyCertificatesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyCertificatesMessageRequestTypeDef](./type_defs.md#modifycertificatesmessagerequesttypedef).
+1. See [:material-code-braces: ModifyCertificatesResultTypeDef](./type_defs.md#modifycertificatesresulttypedef) 
 
-Keyword-only arguments:
 
-- `CertificateIdentifier`: `str`
-- `RemoveCustomerOverride`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ModifyCertificatesMessageRequestTypeDef = {  # (1)
+    "CertificateIdentifier": ...,
+}
 
-Returns
-[ModifyCertificatesResultTypeDef](./type_defs.md#modifycertificatesresulttypedef).
+parent.modify_certificates(**kwargs)
+```
 
-<a id="modify\_current\_db\_cluster\_capacity"></a>
+1. See [:material-code-braces: ModifyCertificatesMessageRequestTypeDef](./type_defs.md#modifycertificatesmessagerequesttypedef) 
 
-### modify_current_db_cluster_capacity
+### modify\_current\_db\_cluster\_capacity
 
 Set the capacity of an Aurora Serverless v1 DB cluster to a specific value.
 
-Type annotations for `boto3.client("rds").modify_current_db_cluster_capacity`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_current_db_cluster_capacity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_current_db_cluster_capacity)
 
-Boto3 documentation:
-[RDS.Client.modify_current_db_cluster_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_current_db_cluster_capacity)
+```python title="Method definition"
+def modify_current_db_cluster_capacity(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    Capacity: int = ...,
+    SecondsBeforeTimeout: int = ...,
+    TimeoutAction: str = ...,
+) -> DBClusterCapacityInfoTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyCurrentDBClusterCapacityMessageRequestTypeDef](./type_defs.md#modifycurrentdbclustercapacitymessagerequesttypedef).
+1. See [:material-code-braces: DBClusterCapacityInfoTypeDef](./type_defs.md#dbclustercapacityinfotypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `Capacity`: `int`
-- `SecondsBeforeTimeout`: `int`
-- `TimeoutAction`: `str`
+```python title="Usage example with kwargs"
+kwargs: ModifyCurrentDBClusterCapacityMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[DBClusterCapacityInfoTypeDef](./type_defs.md#dbclustercapacityinfotypedef).
+parent.modify_current_db_cluster_capacity(**kwargs)
+```
 
-<a id="modify\_custom\_db\_engine\_version"></a>
+1. See [:material-code-braces: ModifyCurrentDBClusterCapacityMessageRequestTypeDef](./type_defs.md#modifycurrentdbclustercapacitymessagerequesttypedef) 
 
-### modify_custom_db_engine_version
+### modify\_custom\_db\_engine\_version
 
 Modifies the status of a custom engine version (CEV).
 
-Type annotations for `boto3.client("rds").modify_custom_db_engine_version`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_custom_db_engine_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_custom_db_engine_version)
 
-Boto3 documentation:
-[RDS.Client.modify_custom_db_engine_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_custom_db_engine_version)
+```python title="Method definition"
+def modify_custom_db_engine_version(
+    self,
+    *,
+    Engine: str,
+    EngineVersion: str,
+    Description: str = ...,
+    Status: CustomEngineVersionStatusType = ...,  # (1)
+) -> DBEngineVersionResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ModifyCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#modifycustomdbengineversionmessagerequesttypedef).
+1. See [:material-code-brackets: CustomEngineVersionStatusType](./literals.md#customengineversionstatustype) 
+2. See [:material-code-braces: DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `Engine`: `str` *(required)*
-- `EngineVersion`: `str` *(required)*
-- `Description`: `str`
-- `Status`:
-  [CustomEngineVersionStatusType](./literals.md#customengineversionstatustype)
+```python title="Usage example with kwargs"
+kwargs: ModifyCustomDBEngineVersionMessageRequestTypeDef = {  # (1)
+    "Engine": ...,
+    "EngineVersion": ...,
+}
 
-Returns
-[DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef).
+parent.modify_custom_db_engine_version(**kwargs)
+```
 
-<a id="modify\_db\_cluster"></a>
+1. See [:material-code-braces: ModifyCustomDBEngineVersionMessageRequestTypeDef](./type_defs.md#modifycustomdbengineversionmessagerequesttypedef) 
 
-### modify_db_cluster
+### modify\_db\_cluster
 
 Modify the settings for an Amazon Aurora DB cluster or a Multi-AZ DB cluster.
 
-Type annotations for `boto3.client("rds").modify_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.modify_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster)
+```python title="Method definition"
+def modify_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    NewDBClusterIdentifier: str = ...,
+    ApplyImmediately: bool = ...,
+    BackupRetentionPeriod: int = ...,
+    DBClusterParameterGroupName: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    Port: int = ...,
+    MasterUserPassword: str = ...,
+    OptionGroupName: str = ...,
+    PreferredBackupWindow: str = ...,
+    PreferredMaintenanceWindow: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    BacktrackWindow: int = ...,
+    CloudwatchLogsExportConfiguration: CloudwatchLogsExportConfigurationTypeDef = ...,  # (1)
+    EngineVersion: str = ...,
+    AllowMajorVersionUpgrade: bool = ...,
+    DBInstanceParameterGroupName: str = ...,
+    Domain: str = ...,
+    DomainIAMRoleName: str = ...,
+    ScalingConfiguration: ScalingConfigurationTypeDef = ...,  # (2)
+    DeletionProtection: bool = ...,
+    EnableHttpEndpoint: bool = ...,
+    CopyTagsToSnapshot: bool = ...,
+    EnableGlobalWriteForwarding: bool = ...,
+    DBClusterInstanceClass: str = ...,
+    AllocatedStorage: int = ...,
+    StorageType: str = ...,
+    Iops: int = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    MonitoringInterval: int = ...,
+    MonitoringRoleArn: str = ...,
+    EnablePerformanceInsights: bool = ...,
+    PerformanceInsightsKMSKeyId: str = ...,
+    PerformanceInsightsRetentionPeriod: int = ...,
+) -> ModifyDBClusterResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBClusterMessageRequestTypeDef](./type_defs.md#modifydbclustermessagerequesttypedef).
+1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
+2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
+3. See [:material-code-braces: ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `NewDBClusterIdentifier`: `str`
-- `ApplyImmediately`: `bool`
-- `BackupRetentionPeriod`: `int`
-- `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `Port`: `int`
-- `MasterUserPassword`: `str`
-- `OptionGroupName`: `str`
-- `PreferredBackupWindow`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `BacktrackWindow`: `int`
-- `CloudwatchLogsExportConfiguration`:
-  [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
-- `EngineVersion`: `str`
-- `AllowMajorVersionUpgrade`: `bool`
-- `DBInstanceParameterGroupName`: `str`
-- `Domain`: `str`
-- `DomainIAMRoleName`: `str`
-- `ScalingConfiguration`:
-  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
-- `DeletionProtection`: `bool`
-- `EnableHttpEndpoint`: `bool`
-- `CopyTagsToSnapshot`: `bool`
-- `EnableGlobalWriteForwarding`: `bool`
-- `DBClusterInstanceClass`: `str`
-- `AllocatedStorage`: `int`
-- `StorageType`: `str`
-- `Iops`: `int`
-- `AutoMinorVersionUpgrade`: `bool`
-- `MonitoringInterval`: `int`
-- `MonitoringRoleArn`: `str`
-- `EnablePerformanceInsights`: `bool`
-- `PerformanceInsightsKMSKeyId`: `str`
-- `PerformanceInsightsRetentionPeriod`: `int`
+```python title="Usage example with kwargs"
+kwargs: ModifyDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef).
+parent.modify_db_cluster(**kwargs)
+```
 
-<a id="modify\_db\_cluster\_endpoint"></a>
+1. See [:material-code-braces: ModifyDBClusterMessageRequestTypeDef](./type_defs.md#modifydbclustermessagerequesttypedef) 
 
-### modify_db_cluster_endpoint
+### modify\_db\_cluster\_endpoint
 
 Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
 
-Type annotations for `boto3.client("rds").modify_db_cluster_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_cluster_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_endpoint)
 
-Boto3 documentation:
-[RDS.Client.modify_db_cluster_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_endpoint)
+```python title="Method definition"
+def modify_db_cluster_endpoint(
+    self,
+    *,
+    DBClusterEndpointIdentifier: str,
+    EndpointType: str = ...,
+    StaticMembers: Sequence[str] = ...,
+    ExcludedMembers: Sequence[str] = ...,
+) -> DBClusterEndpointResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBClusterEndpointMessageRequestTypeDef](./type_defs.md#modifydbclusterendpointmessagerequesttypedef).
+1. See [:material-code-braces: DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterEndpointIdentifier`: `str` *(required)*
-- `EndpointType`: `str`
-- `StaticMembers`: `Sequence`\[`str`\]
-- `ExcludedMembers`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ModifyDBClusterEndpointMessageRequestTypeDef = {  # (1)
+    "DBClusterEndpointIdentifier": ...,
+}
 
-Returns
-[DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef).
+parent.modify_db_cluster_endpoint(**kwargs)
+```
 
-<a id="modify\_db\_cluster\_parameter\_group"></a>
+1. See [:material-code-braces: ModifyDBClusterEndpointMessageRequestTypeDef](./type_defs.md#modifydbclusterendpointmessagerequesttypedef) 
 
-### modify_db_cluster_parameter_group
+### modify\_db\_cluster\_parameter\_group
 
 Modifies the parameters of a DB cluster parameter group.
 
-Type annotations for `boto3.client("rds").modify_db_cluster_parameter_group`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_cluster_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.modify_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_parameter_group)
+```python title="Method definition"
+def modify_db_cluster_parameter_group(
+    self,
+    *,
+    DBClusterParameterGroupName: str,
+    Parameters: Sequence[ParameterTypeDef],  # (1)
+) -> DBClusterParameterGroupNameMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#modifydbclusterparametergroupmessagerequesttypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterParameterGroupName`: `str` *(required)*
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyDBClusterParameterGroupMessageRequestTypeDef = {  # (1)
+    "DBClusterParameterGroupName": ...,
+    "Parameters": ...,
+}
 
-Returns
-[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
+parent.modify_db_cluster_parameter_group(**kwargs)
+```
 
-<a id="modify\_db\_cluster\_snapshot\_attribute"></a>
+1. See [:material-code-braces: ModifyDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#modifydbclusterparametergroupmessagerequesttypedef) 
 
-### modify_db_cluster_snapshot_attribute
+### modify\_db\_cluster\_snapshot\_attribute
 
 Adds an attribute and values to, or removes an attribute and values from, a
 manual DB cluster snapshot.
 
-Type annotations for `boto3.client("rds").modify_db_cluster_snapshot_attribute`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_cluster_snapshot_attribute` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_snapshot_attribute)
 
-Boto3 documentation:
-[RDS.Client.modify_db_cluster_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_cluster_snapshot_attribute)
+```python title="Method definition"
+def modify_db_cluster_snapshot_attribute(
+    self,
+    *,
+    DBClusterSnapshotIdentifier: str,
+    AttributeName: str,
+    ValuesToAdd: Sequence[str] = ...,
+    ValuesToRemove: Sequence[str] = ...,
+) -> ModifyDBClusterSnapshotAttributeResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBClusterSnapshotAttributeMessageRequestTypeDef](./type_defs.md#modifydbclustersnapshotattributemessagerequesttypedef).
+1. See [:material-code-braces: ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterSnapshotIdentifier`: `str` *(required)*
-- `AttributeName`: `str` *(required)*
-- `ValuesToAdd`: `Sequence`\[`str`\]
-- `ValuesToRemove`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ModifyDBClusterSnapshotAttributeMessageRequestTypeDef = {  # (1)
+    "DBClusterSnapshotIdentifier": ...,
+    "AttributeName": ...,
+}
 
-Returns
-[ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef).
+parent.modify_db_cluster_snapshot_attribute(**kwargs)
+```
 
-<a id="modify\_db\_instance"></a>
+1. See [:material-code-braces: ModifyDBClusterSnapshotAttributeMessageRequestTypeDef](./type_defs.md#modifydbclustersnapshotattributemessagerequesttypedef) 
 
-### modify_db_instance
+### modify\_db\_instance
 
 Modifies settings for a DB instance.
 
-Type annotations for `boto3.client("rds").modify_db_instance` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_instance)
 
-Boto3 documentation:
-[RDS.Client.modify_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_instance)
+```python title="Method definition"
+def modify_db_instance(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    AllocatedStorage: int = ...,
+    DBInstanceClass: str = ...,
+    DBSubnetGroupName: str = ...,
+    DBSecurityGroups: Sequence[str] = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    ApplyImmediately: bool = ...,
+    MasterUserPassword: str = ...,
+    DBParameterGroupName: str = ...,
+    BackupRetentionPeriod: int = ...,
+    PreferredBackupWindow: str = ...,
+    PreferredMaintenanceWindow: str = ...,
+    MultiAZ: bool = ...,
+    EngineVersion: str = ...,
+    AllowMajorVersionUpgrade: bool = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    LicenseModel: str = ...,
+    Iops: int = ...,
+    OptionGroupName: str = ...,
+    NewDBInstanceIdentifier: str = ...,
+    StorageType: str = ...,
+    TdeCredentialArn: str = ...,
+    TdeCredentialPassword: str = ...,
+    CACertificateIdentifier: str = ...,
+    Domain: str = ...,
+    CopyTagsToSnapshot: bool = ...,
+    MonitoringInterval: int = ...,
+    DBPortNumber: int = ...,
+    PubliclyAccessible: bool = ...,
+    MonitoringRoleArn: str = ...,
+    DomainIAMRoleName: str = ...,
+    PromotionTier: int = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    EnablePerformanceInsights: bool = ...,
+    PerformanceInsightsKMSKeyId: str = ...,
+    PerformanceInsightsRetentionPeriod: int = ...,
+    CloudwatchLogsExportConfiguration: CloudwatchLogsExportConfigurationTypeDef = ...,  # (1)
+    ProcessorFeatures: Sequence[ProcessorFeatureTypeDef] = ...,  # (2)
+    UseDefaultProcessorFeatures: bool = ...,
+    DeletionProtection: bool = ...,
+    MaxAllocatedStorage: int = ...,
+    CertificateRotationRestart: bool = ...,
+    ReplicaMode: ReplicaModeType = ...,  # (3)
+    EnableCustomerOwnedIp: bool = ...,
+    AwsBackupRecoveryPointArn: str = ...,
+    AutomationMode: AutomationModeType = ...,  # (4)
+    ResumeFullAutomationModeMinutes: int = ...,
+) -> ModifyDBInstanceResultTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBInstanceMessageRequestTypeDef](./type_defs.md#modifydbinstancemessagerequesttypedef).
+1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
+2. See [:material-code-braces: ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef) 
+3. See [:material-code-brackets: ReplicaModeType](./literals.md#replicamodetype) 
+4. See [:material-code-brackets: AutomationModeType](./literals.md#automationmodetype) 
+5. See [:material-code-braces: ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `AllocatedStorage`: `int`
-- `DBInstanceClass`: `str`
-- `DBSubnetGroupName`: `str`
-- `DBSecurityGroups`: `Sequence`\[`str`\]
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `ApplyImmediately`: `bool`
-- `MasterUserPassword`: `str`
-- `DBParameterGroupName`: `str`
-- `BackupRetentionPeriod`: `int`
-- `PreferredBackupWindow`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `MultiAZ`: `bool`
-- `EngineVersion`: `str`
-- `AllowMajorVersionUpgrade`: `bool`
-- `AutoMinorVersionUpgrade`: `bool`
-- `LicenseModel`: `str`
-- `Iops`: `int`
-- `OptionGroupName`: `str`
-- `NewDBInstanceIdentifier`: `str`
-- `StorageType`: `str`
-- `TdeCredentialArn`: `str`
-- `TdeCredentialPassword`: `str`
-- `CACertificateIdentifier`: `str`
-- `Domain`: `str`
-- `CopyTagsToSnapshot`: `bool`
-- `MonitoringInterval`: `int`
-- `DBPortNumber`: `int`
-- `PubliclyAccessible`: `bool`
-- `MonitoringRoleArn`: `str`
-- `DomainIAMRoleName`: `str`
-- `PromotionTier`: `int`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `EnablePerformanceInsights`: `bool`
-- `PerformanceInsightsKMSKeyId`: `str`
-- `PerformanceInsightsRetentionPeriod`: `int`
-- `CloudwatchLogsExportConfiguration`:
-  [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
-- `ProcessorFeatures`:
-  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
-- `UseDefaultProcessorFeatures`: `bool`
-- `DeletionProtection`: `bool`
-- `MaxAllocatedStorage`: `int`
-- `CertificateRotationRestart`: `bool`
-- `ReplicaMode`: [ReplicaModeType](./literals.md#replicamodetype)
-- `EnableCustomerOwnedIp`: `bool`
-- `AwsBackupRecoveryPointArn`: `str`
-- `AutomationMode`: [AutomationModeType](./literals.md#automationmodetype)
-- `ResumeFullAutomationModeMinutes`: `int`
+```python title="Usage example with kwargs"
+kwargs: ModifyDBInstanceMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns
-[ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef).
+parent.modify_db_instance(**kwargs)
+```
 
-<a id="modify\_db\_parameter\_group"></a>
+1. See [:material-code-braces: ModifyDBInstanceMessageRequestTypeDef](./type_defs.md#modifydbinstancemessagerequesttypedef) 
 
-### modify_db_parameter_group
+### modify\_db\_parameter\_group
 
 Modifies the parameters of a DB parameter group.
 
-Type annotations for `boto3.client("rds").modify_db_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.modify_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_parameter_group)
+```python title="Method definition"
+def modify_db_parameter_group(
+    self,
+    *,
+    DBParameterGroupName: str,
+    Parameters: Sequence[ParameterTypeDef],  # (1)
+) -> DBParameterGroupNameMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBParameterGroupMessageRequestTypeDef](./type_defs.md#modifydbparametergroupmessagerequesttypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBParameterGroupName`: `str` *(required)*
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyDBParameterGroupMessageRequestTypeDef = {  # (1)
+    "DBParameterGroupName": ...,
+    "Parameters": ...,
+}
 
-Returns
-[DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
+parent.modify_db_parameter_group(**kwargs)
+```
 
-<a id="modify\_db\_proxy"></a>
+1. See [:material-code-braces: ModifyDBParameterGroupMessageRequestTypeDef](./type_defs.md#modifydbparametergroupmessagerequesttypedef) 
 
-### modify_db_proxy
+### modify\_db\_proxy
 
 Changes the settings for an existing DB proxy.
 
-Type annotations for `boto3.client("rds").modify_db_proxy` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_proxy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy)
 
-Boto3 documentation:
-[RDS.Client.modify_db_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy)
+```python title="Method definition"
+def modify_db_proxy(
+    self,
+    *,
+    DBProxyName: str,
+    NewDBProxyName: str = ...,
+    Auth: Sequence[UserAuthConfigTypeDef] = ...,  # (1)
+    RequireTLS: bool = ...,
+    IdleClientTimeout: int = ...,
+    DebugLogging: bool = ...,
+    RoleArn: str = ...,
+    SecurityGroups: Sequence[str] = ...,
+) -> ModifyDBProxyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBProxyRequestRequestTypeDef](./type_defs.md#modifydbproxyrequestrequesttypedef).
+1. See [:material-code-braces: UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef) 
+2. See [:material-code-braces: ModifyDBProxyResponseTypeDef](./type_defs.md#modifydbproxyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str` *(required)*
-- `NewDBProxyName`: `str`
-- `Auth`:
-  `Sequence`\[[UserAuthConfigTypeDef](./type_defs.md#userauthconfigtypedef)\]
-- `RequireTLS`: `bool`
-- `IdleClientTimeout`: `int`
-- `DebugLogging`: `bool`
-- `RoleArn`: `str`
-- `SecurityGroups`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ModifyDBProxyRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+}
 
-Returns
-[ModifyDBProxyResponseTypeDef](./type_defs.md#modifydbproxyresponsetypedef).
+parent.modify_db_proxy(**kwargs)
+```
 
-<a id="modify\_db\_proxy\_endpoint"></a>
+1. See [:material-code-braces: ModifyDBProxyRequestRequestTypeDef](./type_defs.md#modifydbproxyrequestrequesttypedef) 
 
-### modify_db_proxy_endpoint
+### modify\_db\_proxy\_endpoint
 
 Changes the settings for an existing DB proxy endpoint.
 
-Type annotations for `boto3.client("rds").modify_db_proxy_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_proxy_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_endpoint)
 
-Boto3 documentation:
-[RDS.Client.modify_db_proxy_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_endpoint)
+```python title="Method definition"
+def modify_db_proxy_endpoint(
+    self,
+    *,
+    DBProxyEndpointName: str,
+    NewDBProxyEndpointName: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+) -> ModifyDBProxyEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBProxyEndpointRequestRequestTypeDef](./type_defs.md#modifydbproxyendpointrequestrequesttypedef).
+1. See [:material-code-braces: ModifyDBProxyEndpointResponseTypeDef](./type_defs.md#modifydbproxyendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyEndpointName`: `str` *(required)*
-- `NewDBProxyEndpointName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ModifyDBProxyEndpointRequestRequestTypeDef = {  # (1)
+    "DBProxyEndpointName": ...,
+}
 
-Returns
-[ModifyDBProxyEndpointResponseTypeDef](./type_defs.md#modifydbproxyendpointresponsetypedef).
+parent.modify_db_proxy_endpoint(**kwargs)
+```
 
-<a id="modify\_db\_proxy\_target\_group"></a>
+1. See [:material-code-braces: ModifyDBProxyEndpointRequestRequestTypeDef](./type_defs.md#modifydbproxyendpointrequestrequesttypedef) 
 
-### modify_db_proxy_target_group
+### modify\_db\_proxy\_target\_group
 
 Modifies the properties of a `DBProxyTargetGroup` .
 
-Type annotations for `boto3.client("rds").modify_db_proxy_target_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_proxy_target_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_target_group)
 
-Boto3 documentation:
-[RDS.Client.modify_db_proxy_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_proxy_target_group)
+```python title="Method definition"
+def modify_db_proxy_target_group(
+    self,
+    *,
+    TargetGroupName: str,
+    DBProxyName: str,
+    ConnectionPoolConfig: ConnectionPoolConfigurationTypeDef = ...,  # (1)
+    NewName: str = ...,
+) -> ModifyDBProxyTargetGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBProxyTargetGroupRequestRequestTypeDef](./type_defs.md#modifydbproxytargetgrouprequestrequesttypedef).
+1. See [:material-code-braces: ConnectionPoolConfigurationTypeDef](./type_defs.md#connectionpoolconfigurationtypedef) 
+2. See [:material-code-braces: ModifyDBProxyTargetGroupResponseTypeDef](./type_defs.md#modifydbproxytargetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TargetGroupName`: `str` *(required)*
-- `DBProxyName`: `str` *(required)*
-- `ConnectionPoolConfig`:
-  [ConnectionPoolConfigurationTypeDef](./type_defs.md#connectionpoolconfigurationtypedef)
-- `NewName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ModifyDBProxyTargetGroupRequestRequestTypeDef = {  # (1)
+    "TargetGroupName": ...,
+    "DBProxyName": ...,
+}
 
-Returns
-[ModifyDBProxyTargetGroupResponseTypeDef](./type_defs.md#modifydbproxytargetgroupresponsetypedef).
+parent.modify_db_proxy_target_group(**kwargs)
+```
 
-<a id="modify\_db\_snapshot"></a>
+1. See [:material-code-braces: ModifyDBProxyTargetGroupRequestRequestTypeDef](./type_defs.md#modifydbproxytargetgrouprequestrequesttypedef) 
 
-### modify_db_snapshot
+### modify\_db\_snapshot
 
 Updates a manual DB snapshot with a new engine version.
 
-Type annotations for `boto3.client("rds").modify_db_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot)
 
-Boto3 documentation:
-[RDS.Client.modify_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot)
+```python title="Method definition"
+def modify_db_snapshot(
+    self,
+    *,
+    DBSnapshotIdentifier: str,
+    EngineVersion: str = ...,
+    OptionGroupName: str = ...,
+) -> ModifyDBSnapshotResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBSnapshotMessageRequestTypeDef](./type_defs.md#modifydbsnapshotmessagerequesttypedef).
+1. See [:material-code-braces: ModifyDBSnapshotResultTypeDef](./type_defs.md#modifydbsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSnapshotIdentifier`: `str` *(required)*
-- `EngineVersion`: `str`
-- `OptionGroupName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ModifyDBSnapshotMessageRequestTypeDef = {  # (1)
+    "DBSnapshotIdentifier": ...,
+}
 
-Returns
-[ModifyDBSnapshotResultTypeDef](./type_defs.md#modifydbsnapshotresulttypedef).
+parent.modify_db_snapshot(**kwargs)
+```
 
-<a id="modify\_db\_snapshot\_attribute"></a>
+1. See [:material-code-braces: ModifyDBSnapshotMessageRequestTypeDef](./type_defs.md#modifydbsnapshotmessagerequesttypedef) 
 
-### modify_db_snapshot_attribute
+### modify\_db\_snapshot\_attribute
 
 Adds an attribute and values to, or removes an attribute and values from, a
 manual DB snapshot.
 
-Type annotations for `boto3.client("rds").modify_db_snapshot_attribute` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_snapshot_attribute` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot_attribute)
 
-Boto3 documentation:
-[RDS.Client.modify_db_snapshot_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_snapshot_attribute)
+```python title="Method definition"
+def modify_db_snapshot_attribute(
+    self,
+    *,
+    DBSnapshotIdentifier: str,
+    AttributeName: str,
+    ValuesToAdd: Sequence[str] = ...,
+    ValuesToRemove: Sequence[str] = ...,
+) -> ModifyDBSnapshotAttributeResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBSnapshotAttributeMessageRequestTypeDef](./type_defs.md#modifydbsnapshotattributemessagerequesttypedef).
+1. See [:material-code-braces: ModifyDBSnapshotAttributeResultTypeDef](./type_defs.md#modifydbsnapshotattributeresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSnapshotIdentifier`: `str` *(required)*
-- `AttributeName`: `str` *(required)*
-- `ValuesToAdd`: `Sequence`\[`str`\]
-- `ValuesToRemove`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ModifyDBSnapshotAttributeMessageRequestTypeDef = {  # (1)
+    "DBSnapshotIdentifier": ...,
+    "AttributeName": ...,
+}
 
-Returns
-[ModifyDBSnapshotAttributeResultTypeDef](./type_defs.md#modifydbsnapshotattributeresulttypedef).
+parent.modify_db_snapshot_attribute(**kwargs)
+```
 
-<a id="modify\_db\_subnet\_group"></a>
+1. See [:material-code-braces: ModifyDBSnapshotAttributeMessageRequestTypeDef](./type_defs.md#modifydbsnapshotattributemessagerequesttypedef) 
 
-### modify_db_subnet_group
+### modify\_db\_subnet\_group
 
 Modifies an existing DB subnet group.
 
-Type annotations for `boto3.client("rds").modify_db_subnet_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_db_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_subnet_group)
 
-Boto3 documentation:
-[RDS.Client.modify_db_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_db_subnet_group)
+```python title="Method definition"
+def modify_db_subnet_group(
+    self,
+    *,
+    DBSubnetGroupName: str,
+    SubnetIds: Sequence[str],
+    DBSubnetGroupDescription: str = ...,
+) -> ModifyDBSubnetGroupResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyDBSubnetGroupMessageRequestTypeDef](./type_defs.md#modifydbsubnetgroupmessagerequesttypedef).
+1. See [:material-code-braces: ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSubnetGroupName`: `str` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `DBSubnetGroupDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: ModifyDBSubnetGroupMessageRequestTypeDef = {  # (1)
+    "DBSubnetGroupName": ...,
+    "SubnetIds": ...,
+}
 
-Returns
-[ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef).
+parent.modify_db_subnet_group(**kwargs)
+```
 
-<a id="modify\_event\_subscription"></a>
+1. See [:material-code-braces: ModifyDBSubnetGroupMessageRequestTypeDef](./type_defs.md#modifydbsubnetgroupmessagerequesttypedef) 
 
-### modify_event_subscription
+### modify\_event\_subscription
 
 Modifies an existing RDS event notification subscription.
 
-Type annotations for `boto3.client("rds").modify_event_subscription` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_event_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_event_subscription)
 
-Boto3 documentation:
-[RDS.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_event_subscription)
+```python title="Method definition"
+def modify_event_subscription(
+    self,
+    *,
+    SubscriptionName: str,
+    SnsTopicArn: str = ...,
+    SourceType: str = ...,
+    EventCategories: Sequence[str] = ...,
+    Enabled: bool = ...,
+) -> ModifyEventSubscriptionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyEventSubscriptionMessageRequestTypeDef](./type_defs.md#modifyeventsubscriptionmessagerequesttypedef).
+1. See [:material-code-braces: ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str` *(required)*
-- `SnsTopicArn`: `str`
-- `SourceType`: `str`
-- `EventCategories`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ModifyEventSubscriptionMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+}
 
-Returns
-[ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
+parent.modify_event_subscription(**kwargs)
+```
 
-<a id="modify\_global\_cluster"></a>
+1. See [:material-code-braces: ModifyEventSubscriptionMessageRequestTypeDef](./type_defs.md#modifyeventsubscriptionmessagerequesttypedef) 
 
-### modify_global_cluster
+### modify\_global\_cluster
 
 Modify a setting for an Amazon Aurora global cluster.
 
-Type annotations for `boto3.client("rds").modify_global_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_global_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_global_cluster)
 
-Boto3 documentation:
-[RDS.Client.modify_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_global_cluster)
+```python title="Method definition"
+def modify_global_cluster(
+    self,
+    *,
+    GlobalClusterIdentifier: str = ...,
+    NewGlobalClusterIdentifier: str = ...,
+    DeletionProtection: bool = ...,
+    EngineVersion: str = ...,
+    AllowMajorVersionUpgrade: bool = ...,
+) -> ModifyGlobalClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyGlobalClusterMessageRequestTypeDef](./type_defs.md#modifyglobalclustermessagerequesttypedef).
+1. See [:material-code-braces: ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `GlobalClusterIdentifier`: `str`
-- `NewGlobalClusterIdentifier`: `str`
-- `DeletionProtection`: `bool`
-- `EngineVersion`: `str`
-- `AllowMajorVersionUpgrade`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ModifyGlobalClusterMessageRequestTypeDef = {  # (1)
+    "GlobalClusterIdentifier": ...,
+}
 
-Returns
-[ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef).
+parent.modify_global_cluster(**kwargs)
+```
 
-<a id="modify\_option\_group"></a>
+1. See [:material-code-braces: ModifyGlobalClusterMessageRequestTypeDef](./type_defs.md#modifyglobalclustermessagerequesttypedef) 
 
-### modify_option_group
+### modify\_option\_group
 
 Modifies an existing option group.
 
-Type annotations for `boto3.client("rds").modify_option_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").modify_option_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_option_group)
 
-Boto3 documentation:
-[RDS.Client.modify_option_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.modify_option_group)
+```python title="Method definition"
+def modify_option_group(
+    self,
+    *,
+    OptionGroupName: str,
+    OptionsToInclude: Sequence[OptionConfigurationTypeDef] = ...,  # (1)
+    OptionsToRemove: Sequence[str] = ...,
+    ApplyImmediately: bool = ...,
+) -> ModifyOptionGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ModifyOptionGroupMessageRequestTypeDef](./type_defs.md#modifyoptiongroupmessagerequesttypedef).
+1. See [:material-code-braces: OptionConfigurationTypeDef](./type_defs.md#optionconfigurationtypedef) 
+2. See [:material-code-braces: ModifyOptionGroupResultTypeDef](./type_defs.md#modifyoptiongroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `OptionGroupName`: `str` *(required)*
-- `OptionsToInclude`:
-  `Sequence`\[[OptionConfigurationTypeDef](./type_defs.md#optionconfigurationtypedef)\]
-- `OptionsToRemove`: `Sequence`\[`str`\]
-- `ApplyImmediately`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ModifyOptionGroupMessageRequestTypeDef = {  # (1)
+    "OptionGroupName": ...,
+}
 
-Returns
-[ModifyOptionGroupResultTypeDef](./type_defs.md#modifyoptiongroupresulttypedef).
+parent.modify_option_group(**kwargs)
+```
 
-<a id="promote\_read\_replica"></a>
+1. See [:material-code-braces: ModifyOptionGroupMessageRequestTypeDef](./type_defs.md#modifyoptiongroupmessagerequesttypedef) 
 
-### promote_read_replica
+### promote\_read\_replica
 
 Promotes a read replica DB instance to a standalone DB instance.
 
-Type annotations for `boto3.client("rds").promote_read_replica` method.
+Type annotations and code completion for `#!python boto3.client("rds").promote_read_replica` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica)
 
-Boto3 documentation:
-[RDS.Client.promote_read_replica](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica)
+```python title="Method definition"
+def promote_read_replica(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    BackupRetentionPeriod: int = ...,
+    PreferredBackupWindow: str = ...,
+) -> PromoteReadReplicaResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PromoteReadReplicaMessageRequestTypeDef](./type_defs.md#promotereadreplicamessagerequesttypedef).
+1. See [:material-code-braces: PromoteReadReplicaResultTypeDef](./type_defs.md#promotereadreplicaresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `BackupRetentionPeriod`: `int`
-- `PreferredBackupWindow`: `str`
+```python title="Usage example with kwargs"
+kwargs: PromoteReadReplicaMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns
-[PromoteReadReplicaResultTypeDef](./type_defs.md#promotereadreplicaresulttypedef).
+parent.promote_read_replica(**kwargs)
+```
 
-<a id="promote\_read\_replica\_db\_cluster"></a>
+1. See [:material-code-braces: PromoteReadReplicaMessageRequestTypeDef](./type_defs.md#promotereadreplicamessagerequesttypedef) 
 
-### promote_read_replica_db_cluster
+### promote\_read\_replica\_db\_cluster
 
 Promotes a read replica DB cluster to a standalone DB cluster.
 
-Type annotations for `boto3.client("rds").promote_read_replica_db_cluster`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").promote_read_replica_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.promote_read_replica_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.promote_read_replica_db_cluster)
+```python title="Method definition"
+def promote_read_replica_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+) -> PromoteReadReplicaDBClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PromoteReadReplicaDBClusterMessageRequestTypeDef](./type_defs.md#promotereadreplicadbclustermessagerequesttypedef).
+1. See [:material-code-braces: PromoteReadReplicaDBClusterResultTypeDef](./type_defs.md#promotereadreplicadbclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PromoteReadReplicaDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[PromoteReadReplicaDBClusterResultTypeDef](./type_defs.md#promotereadreplicadbclusterresulttypedef).
+parent.promote_read_replica_db_cluster(**kwargs)
+```
 
-<a id="purchase\_reserved\_db\_instances\_offering"></a>
+1. See [:material-code-braces: PromoteReadReplicaDBClusterMessageRequestTypeDef](./type_defs.md#promotereadreplicadbclustermessagerequesttypedef) 
 
-### purchase_reserved_db_instances_offering
+### purchase\_reserved\_db\_instances\_offering
 
 Purchases a reserved DB instance offering.
 
-Type annotations for
-`boto3.client("rds").purchase_reserved_db_instances_offering` method.
+Type annotations and code completion for `#!python boto3.client("rds").purchase_reserved_db_instances_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.purchase_reserved_db_instances_offering)
 
-Boto3 documentation:
-[RDS.Client.purchase_reserved_db_instances_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.purchase_reserved_db_instances_offering)
+```python title="Method definition"
+def purchase_reserved_db_instances_offering(
+    self,
+    *,
+    ReservedDBInstancesOfferingId: str,
+    ReservedDBInstanceId: str = ...,
+    DBInstanceCount: int = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> PurchaseReservedDBInstancesOfferingResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PurchaseReservedDBInstancesOfferingMessageRequestTypeDef](./type_defs.md#purchasereserveddbinstancesofferingmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PurchaseReservedDBInstancesOfferingResultTypeDef](./type_defs.md#purchasereserveddbinstancesofferingresulttypedef) 
 
-Keyword-only arguments:
 
-- `ReservedDBInstancesOfferingId`: `str` *(required)*
-- `ReservedDBInstanceId`: `str`
-- `DBInstanceCount`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PurchaseReservedDBInstancesOfferingMessageRequestTypeDef = {  # (1)
+    "ReservedDBInstancesOfferingId": ...,
+}
 
-Returns
-[PurchaseReservedDBInstancesOfferingResultTypeDef](./type_defs.md#purchasereserveddbinstancesofferingresulttypedef).
+parent.purchase_reserved_db_instances_offering(**kwargs)
+```
 
-<a id="reboot\_db\_cluster"></a>
+1. See [:material-code-braces: PurchaseReservedDBInstancesOfferingMessageRequestTypeDef](./type_defs.md#purchasereserveddbinstancesofferingmessagerequesttypedef) 
 
-### reboot_db_cluster
+### reboot\_db\_cluster
 
 You might need to reboot your DB cluster, usually for maintenance reasons.
 
-Type annotations for `boto3.client("rds").reboot_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").reboot_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.reboot_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_cluster)
+```python title="Method definition"
+def reboot_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+) -> RebootDBClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RebootDBClusterMessageRequestTypeDef](./type_defs.md#rebootdbclustermessagerequesttypedef).
+1. See [:material-code-braces: RebootDBClusterResultTypeDef](./type_defs.md#rebootdbclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RebootDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[RebootDBClusterResultTypeDef](./type_defs.md#rebootdbclusterresulttypedef).
+parent.reboot_db_cluster(**kwargs)
+```
 
-<a id="reboot\_db\_instance"></a>
+1. See [:material-code-braces: RebootDBClusterMessageRequestTypeDef](./type_defs.md#rebootdbclustermessagerequesttypedef) 
 
-### reboot_db_instance
+### reboot\_db\_instance
 
 You might need to reboot your DB instance, usually for maintenance reasons.
 
-Type annotations for `boto3.client("rds").reboot_db_instance` method.
+Type annotations and code completion for `#!python boto3.client("rds").reboot_db_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_instance)
 
-Boto3 documentation:
-[RDS.Client.reboot_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reboot_db_instance)
+```python title="Method definition"
+def reboot_db_instance(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    ForceFailover: bool = ...,
+) -> RebootDBInstanceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RebootDBInstanceMessageRequestTypeDef](./type_defs.md#rebootdbinstancemessagerequesttypedef).
+1. See [:material-code-braces: RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `ForceFailover`: `bool`
+```python title="Usage example with kwargs"
+kwargs: RebootDBInstanceMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns
-[RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef).
+parent.reboot_db_instance(**kwargs)
+```
 
-<a id="register\_db\_proxy\_targets"></a>
+1. See [:material-code-braces: RebootDBInstanceMessageRequestTypeDef](./type_defs.md#rebootdbinstancemessagerequesttypedef) 
 
-### register_db_proxy_targets
+### register\_db\_proxy\_targets
 
 Associate one or more `DBProxyTarget` data structures with a
 `DBProxyTargetGroup` .
 
-Type annotations for `boto3.client("rds").register_db_proxy_targets` method.
+Type annotations and code completion for `#!python boto3.client("rds").register_db_proxy_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.register_db_proxy_targets)
 
-Boto3 documentation:
-[RDS.Client.register_db_proxy_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.register_db_proxy_targets)
+```python title="Method definition"
+def register_db_proxy_targets(
+    self,
+    *,
+    DBProxyName: str,
+    TargetGroupName: str = ...,
+    DBInstanceIdentifiers: Sequence[str] = ...,
+    DBClusterIdentifiers: Sequence[str] = ...,
+) -> RegisterDBProxyTargetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterDBProxyTargetsRequestRequestTypeDef](./type_defs.md#registerdbproxytargetsrequestrequesttypedef).
+1. See [:material-code-braces: RegisterDBProxyTargetsResponseTypeDef](./type_defs.md#registerdbproxytargetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DBProxyName`: `str` *(required)*
-- `TargetGroupName`: `str`
-- `DBInstanceIdentifiers`: `Sequence`\[`str`\]
-- `DBClusterIdentifiers`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: RegisterDBProxyTargetsRequestRequestTypeDef = {  # (1)
+    "DBProxyName": ...,
+}
 
-Returns
-[RegisterDBProxyTargetsResponseTypeDef](./type_defs.md#registerdbproxytargetsresponsetypedef).
+parent.register_db_proxy_targets(**kwargs)
+```
 
-<a id="remove\_from\_global\_cluster"></a>
+1. See [:material-code-braces: RegisterDBProxyTargetsRequestRequestTypeDef](./type_defs.md#registerdbproxytargetsrequestrequesttypedef) 
 
-### remove_from_global_cluster
+### remove\_from\_global\_cluster
 
 Detaches an Aurora secondary cluster from an Aurora global database cluster.
 
-Type annotations for `boto3.client("rds").remove_from_global_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").remove_from_global_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_from_global_cluster)
 
-Boto3 documentation:
-[RDS.Client.remove_from_global_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_from_global_cluster)
+```python title="Method definition"
+def remove_from_global_cluster(
+    self,
+    *,
+    GlobalClusterIdentifier: str = ...,
+    DbClusterIdentifier: str = ...,
+) -> RemoveFromGlobalClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveFromGlobalClusterMessageRequestTypeDef](./type_defs.md#removefromglobalclustermessagerequesttypedef).
+1. See [:material-code-braces: RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `GlobalClusterIdentifier`: `str`
-- `DbClusterIdentifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemoveFromGlobalClusterMessageRequestTypeDef = {  # (1)
+    "GlobalClusterIdentifier": ...,
+}
 
-Returns
-[RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef).
+parent.remove_from_global_cluster(**kwargs)
+```
 
-<a id="remove\_role\_from\_db\_cluster"></a>
+1. See [:material-code-braces: RemoveFromGlobalClusterMessageRequestTypeDef](./type_defs.md#removefromglobalclustermessagerequesttypedef) 
 
-### remove_role_from_db_cluster
+### remove\_role\_from\_db\_cluster
 
 Removes the asssociation of an Amazon Web Services Identity and Access
 Management (IAM) role from a DB cluster.
 
-Type annotations for `boto3.client("rds").remove_role_from_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").remove_role_from_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.remove_role_from_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_cluster)
+```python title="Method definition"
+def remove_role_from_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    RoleArn: str,
+    FeatureName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveRoleFromDBClusterMessageRequestTypeDef](./type_defs.md#removerolefromdbclustermessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `FeatureName`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemoveRoleFromDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+    "RoleArn": ...,
+}
 
-<a id="remove\_role\_from\_db\_instance"></a>
+parent.remove_role_from_db_cluster(**kwargs)
+```
 
-### remove_role_from_db_instance
+1. See [:material-code-braces: RemoveRoleFromDBClusterMessageRequestTypeDef](./type_defs.md#removerolefromdbclustermessagerequesttypedef) 
+
+### remove\_role\_from\_db\_instance
 
 Disassociates an Amazon Web Services Identity and Access Management (IAM) role
 from a DB instance.
 
-Type annotations for `boto3.client("rds").remove_role_from_db_instance` method.
+Type annotations and code completion for `#!python boto3.client("rds").remove_role_from_db_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_instance)
 
-Boto3 documentation:
-[RDS.Client.remove_role_from_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_role_from_db_instance)
+```python title="Method definition"
+def remove_role_from_db_instance(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    RoleArn: str,
+    FeatureName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveRoleFromDBInstanceMessageRequestTypeDef](./type_defs.md#removerolefromdbinstancemessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `FeatureName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveRoleFromDBInstanceMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+    "RoleArn": ...,
+    "FeatureName": ...,
+}
 
-<a id="remove\_source\_identifier\_from\_subscription"></a>
+parent.remove_role_from_db_instance(**kwargs)
+```
 
-### remove_source_identifier_from_subscription
+1. See [:material-code-braces: RemoveRoleFromDBInstanceMessageRequestTypeDef](./type_defs.md#removerolefromdbinstancemessagerequesttypedef) 
+
+### remove\_source\_identifier\_from\_subscription
 
 Removes a source identifier from an existing RDS event notification
 subscription.
 
-Type annotations for
-`boto3.client("rds").remove_source_identifier_from_subscription` method.
+Type annotations and code completion for `#!python boto3.client("rds").remove_source_identifier_from_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_source_identifier_from_subscription)
 
-Boto3 documentation:
-[RDS.Client.remove_source_identifier_from_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_source_identifier_from_subscription)
+```python title="Method definition"
+def remove_source_identifier_from_subscription(
+    self,
+    *,
+    SubscriptionName: str,
+    SourceIdentifier: str,
+) -> RemoveSourceIdentifierFromSubscriptionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionmessagerequesttypedef).
+1. See [:material-code-braces: RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str` *(required)*
-- `SourceIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+    "SourceIdentifier": ...,
+}
 
-Returns
-[RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef).
+parent.remove_source_identifier_from_subscription(**kwargs)
+```
 
-<a id="remove\_tags\_from\_resource"></a>
+1. See [:material-code-braces: RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionmessagerequesttypedef) 
 
-### remove_tags_from_resource
+### remove\_tags\_from\_resource
 
 Removes metadata tags from an Amazon RDS resource.
 
-Type annotations for `boto3.client("rds").remove_tags_from_resource` method.
+Type annotations and code completion for `#!python boto3.client("rds").remove_tags_from_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_tags_from_resource)
 
-Boto3 documentation:
-[RDS.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.remove_tags_from_resource)
+```python title="Method definition"
+def remove_tags_from_resource(
+    self,
+    *,
+    ResourceName: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsFromResourceMessageRequestTypeDef](./type_defs.md#removetagsfromresourcemessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceName`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsFromResourceMessageRequestTypeDef = {  # (1)
+    "ResourceName": ...,
+    "TagKeys": ...,
+}
 
-<a id="reset\_db\_cluster\_parameter\_group"></a>
+parent.remove_tags_from_resource(**kwargs)
+```
 
-### reset_db_cluster_parameter_group
+1. See [:material-code-braces: RemoveTagsFromResourceMessageRequestTypeDef](./type_defs.md#removetagsfromresourcemessagerequesttypedef) 
+
+### reset\_db\_cluster\_parameter\_group
 
 Modifies the parameters of a DB cluster parameter group to the default value.
 
-Type annotations for `boto3.client("rds").reset_db_cluster_parameter_group`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").reset_db_cluster_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_cluster_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.reset_db_cluster_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_cluster_parameter_group)
+```python title="Method definition"
+def reset_db_cluster_parameter_group(
+    self,
+    *,
+    DBClusterParameterGroupName: str,
+    ResetAllParameters: bool = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+) -> DBClusterParameterGroupNameMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ResetDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#resetdbclusterparametergroupmessagerequesttypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterParameterGroupName`: `str` *(required)*
-- `ResetAllParameters`: `bool`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ResetDBClusterParameterGroupMessageRequestTypeDef = {  # (1)
+    "DBClusterParameterGroupName": ...,
+}
 
-Returns
-[DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
+parent.reset_db_cluster_parameter_group(**kwargs)
+```
 
-<a id="reset\_db\_parameter\_group"></a>
+1. See [:material-code-braces: ResetDBClusterParameterGroupMessageRequestTypeDef](./type_defs.md#resetdbclusterparametergroupmessagerequesttypedef) 
 
-### reset_db_parameter_group
+### reset\_db\_parameter\_group
 
 Modifies the parameters of a DB parameter group to the engine/system default
 value.
 
-Type annotations for `boto3.client("rds").reset_db_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("rds").reset_db_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_parameter_group)
 
-Boto3 documentation:
-[RDS.Client.reset_db_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.reset_db_parameter_group)
+```python title="Method definition"
+def reset_db_parameter_group(
+    self,
+    *,
+    DBParameterGroupName: str,
+    ResetAllParameters: bool = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+) -> DBParameterGroupNameMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ResetDBParameterGroupMessageRequestTypeDef](./type_defs.md#resetdbparametergroupmessagerequesttypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef) 
 
-Keyword-only arguments:
 
-- `DBParameterGroupName`: `str` *(required)*
-- `ResetAllParameters`: `bool`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ResetDBParameterGroupMessageRequestTypeDef = {  # (1)
+    "DBParameterGroupName": ...,
+}
 
-Returns
-[DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
+parent.reset_db_parameter_group(**kwargs)
+```
 
-<a id="restore\_db\_cluster\_from\_s3"></a>
+1. See [:material-code-braces: ResetDBParameterGroupMessageRequestTypeDef](./type_defs.md#resetdbparametergroupmessagerequesttypedef) 
 
-### restore_db_cluster_from_s3
+### restore\_db\_cluster\_from\_s3
 
 Creates an Amazon Aurora DB cluster from MySQL data stored in an Amazon S3
 bucket.
 
-Type annotations for `boto3.client("rds").restore_db_cluster_from_s3` method.
+Type annotations and code completion for `#!python boto3.client("rds").restore_db_cluster_from_s3` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_s3)
 
-Boto3 documentation:
-[RDS.Client.restore_db_cluster_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_s3)
+```python title="Method definition"
+def restore_db_cluster_from_s3(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    Engine: str,
+    MasterUsername: str,
+    MasterUserPassword: str,
+    SourceEngine: str,
+    SourceEngineVersion: str,
+    S3BucketName: str,
+    S3IngestionRoleArn: str,
+    AvailabilityZones: Sequence[str] = ...,
+    BackupRetentionPeriod: int = ...,
+    CharacterSetName: str = ...,
+    DatabaseName: str = ...,
+    DBClusterParameterGroupName: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    DBSubnetGroupName: str = ...,
+    EngineVersion: str = ...,
+    Port: int = ...,
+    OptionGroupName: str = ...,
+    PreferredBackupWindow: str = ...,
+    PreferredMaintenanceWindow: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    StorageEncrypted: bool = ...,
+    KmsKeyId: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    S3Prefix: str = ...,
+    BacktrackWindow: int = ...,
+    EnableCloudwatchLogsExports: Sequence[str] = ...,
+    DeletionProtection: bool = ...,
+    CopyTagsToSnapshot: bool = ...,
+    Domain: str = ...,
+    DomainIAMRoleName: str = ...,
+) -> RestoreDBClusterFromS3ResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RestoreDBClusterFromS3MessageRequestTypeDef](./type_defs.md#restoredbclusterfroms3messagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: RestoreDBClusterFromS3ResultTypeDef](./type_defs.md#restoredbclusterfroms3resulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `Engine`: `str` *(required)*
-- `MasterUsername`: `str` *(required)*
-- `MasterUserPassword`: `str` *(required)*
-- `SourceEngine`: `str` *(required)*
-- `SourceEngineVersion`: `str` *(required)*
-- `S3BucketName`: `str` *(required)*
-- `S3IngestionRoleArn`: `str` *(required)*
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `BackupRetentionPeriod`: `int`
-- `CharacterSetName`: `str`
-- `DatabaseName`: `str`
-- `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `DBSubnetGroupName`: `str`
-- `EngineVersion`: `str`
-- `Port`: `int`
-- `OptionGroupName`: `str`
-- `PreferredBackupWindow`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `StorageEncrypted`: `bool`
-- `KmsKeyId`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `S3Prefix`: `str`
-- `BacktrackWindow`: `int`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `DeletionProtection`: `bool`
-- `CopyTagsToSnapshot`: `bool`
-- `Domain`: `str`
-- `DomainIAMRoleName`: `str`
+```python title="Usage example with kwargs"
+kwargs: RestoreDBClusterFromS3MessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+    "Engine": ...,
+    "MasterUsername": ...,
+    "MasterUserPassword": ...,
+    "SourceEngine": ...,
+    "SourceEngineVersion": ...,
+    "S3BucketName": ...,
+    "S3IngestionRoleArn": ...,
+}
 
-Returns
-[RestoreDBClusterFromS3ResultTypeDef](./type_defs.md#restoredbclusterfroms3resulttypedef).
+parent.restore_db_cluster_from_s3(**kwargs)
+```
 
-<a id="restore\_db\_cluster\_from\_snapshot"></a>
+1. See [:material-code-braces: RestoreDBClusterFromS3MessageRequestTypeDef](./type_defs.md#restoredbclusterfroms3messagerequesttypedef) 
 
-### restore_db_cluster_from_snapshot
+### restore\_db\_cluster\_from\_snapshot
 
 Creates a new DB cluster from a DB snapshot or DB cluster snapshot.
 
-Type annotations for `boto3.client("rds").restore_db_cluster_from_snapshot`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").restore_db_cluster_from_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_snapshot)
 
-Boto3 documentation:
-[RDS.Client.restore_db_cluster_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_from_snapshot)
+```python title="Method definition"
+def restore_db_cluster_from_snapshot(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    SnapshotIdentifier: str,
+    Engine: str,
+    AvailabilityZones: Sequence[str] = ...,
+    EngineVersion: str = ...,
+    Port: int = ...,
+    DBSubnetGroupName: str = ...,
+    DatabaseName: str = ...,
+    OptionGroupName: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    KmsKeyId: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    BacktrackWindow: int = ...,
+    EnableCloudwatchLogsExports: Sequence[str] = ...,
+    EngineMode: str = ...,
+    ScalingConfiguration: ScalingConfigurationTypeDef = ...,  # (2)
+    DBClusterParameterGroupName: str = ...,
+    DeletionProtection: bool = ...,
+    CopyTagsToSnapshot: bool = ...,
+    Domain: str = ...,
+    DomainIAMRoleName: str = ...,
+    DBClusterInstanceClass: str = ...,
+    StorageType: str = ...,
+    Iops: int = ...,
+    PubliclyAccessible: bool = ...,
+) -> RestoreDBClusterFromSnapshotResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RestoreDBClusterFromSnapshotMessageRequestTypeDef](./type_defs.md#restoredbclusterfromsnapshotmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
+3. See [:material-code-braces: RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `SnapshotIdentifier`: `str` *(required)*
-- `Engine`: `str` *(required)*
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `EngineVersion`: `str`
-- `Port`: `int`
-- `DBSubnetGroupName`: `str`
-- `DatabaseName`: `str`
-- `OptionGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `BacktrackWindow`: `int`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `EngineMode`: `str`
-- `ScalingConfiguration`:
-  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
-- `DBClusterParameterGroupName`: `str`
-- `DeletionProtection`: `bool`
-- `CopyTagsToSnapshot`: `bool`
-- `Domain`: `str`
-- `DomainIAMRoleName`: `str`
-- `DBClusterInstanceClass`: `str`
-- `StorageType`: `str`
-- `Iops`: `int`
-- `PubliclyAccessible`: `bool`
+```python title="Usage example with kwargs"
+kwargs: RestoreDBClusterFromSnapshotMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+    "SnapshotIdentifier": ...,
+    "Engine": ...,
+}
 
-Returns
-[RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef).
+parent.restore_db_cluster_from_snapshot(**kwargs)
+```
 
-<a id="restore\_db\_cluster\_to\_point\_in\_time"></a>
+1. See [:material-code-braces: RestoreDBClusterFromSnapshotMessageRequestTypeDef](./type_defs.md#restoredbclusterfromsnapshotmessagerequesttypedef) 
 
-### restore_db_cluster_to_point_in_time
+### restore\_db\_cluster\_to\_point\_in\_time
 
 Restores a DB cluster to an arbitrary point in time.
 
-Type annotations for `boto3.client("rds").restore_db_cluster_to_point_in_time`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").restore_db_cluster_to_point_in_time` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_to_point_in_time)
 
-Boto3 documentation:
-[RDS.Client.restore_db_cluster_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_cluster_to_point_in_time)
+```python title="Method definition"
+def restore_db_cluster_to_point_in_time(
+    self,
+    *,
+    DBClusterIdentifier: str,
+    SourceDBClusterIdentifier: str,
+    RestoreType: str = ...,
+    RestoreToTime: Union[datetime, str] = ...,
+    UseLatestRestorableTime: bool = ...,
+    Port: int = ...,
+    DBSubnetGroupName: str = ...,
+    OptionGroupName: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    KmsKeyId: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    BacktrackWindow: int = ...,
+    EnableCloudwatchLogsExports: Sequence[str] = ...,
+    DBClusterParameterGroupName: str = ...,
+    DeletionProtection: bool = ...,
+    CopyTagsToSnapshot: bool = ...,
+    Domain: str = ...,
+    DomainIAMRoleName: str = ...,
+    ScalingConfiguration: ScalingConfigurationTypeDef = ...,  # (2)
+    EngineMode: str = ...,
+    DBClusterInstanceClass: str = ...,
+    StorageType: str = ...,
+    PubliclyAccessible: bool = ...,
+    Iops: int = ...,
+) -> RestoreDBClusterToPointInTimeResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RestoreDBClusterToPointInTimeMessageRequestTypeDef](./type_defs.md#restoredbclustertopointintimemessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef) 
+3. See [:material-code-braces: RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
-- `SourceDBClusterIdentifier`: `str` *(required)*
-- `RestoreType`: `str`
-- `RestoreToTime`: `Union`\[`datetime`, `str`\]
-- `UseLatestRestorableTime`: `bool`
-- `Port`: `int`
-- `DBSubnetGroupName`: `str`
-- `OptionGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `BacktrackWindow`: `int`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `DBClusterParameterGroupName`: `str`
-- `DeletionProtection`: `bool`
-- `CopyTagsToSnapshot`: `bool`
-- `Domain`: `str`
-- `DomainIAMRoleName`: `str`
-- `ScalingConfiguration`:
-  [ScalingConfigurationTypeDef](./type_defs.md#scalingconfigurationtypedef)
-- `EngineMode`: `str`
-- `DBClusterInstanceClass`: `str`
-- `StorageType`: `str`
-- `PubliclyAccessible`: `bool`
-- `Iops`: `int`
+```python title="Usage example with kwargs"
+kwargs: RestoreDBClusterToPointInTimeMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+    "SourceDBClusterIdentifier": ...,
+}
 
-Returns
-[RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).
+parent.restore_db_cluster_to_point_in_time(**kwargs)
+```
 
-<a id="restore\_db\_instance\_from\_db\_snapshot"></a>
+1. See [:material-code-braces: RestoreDBClusterToPointInTimeMessageRequestTypeDef](./type_defs.md#restoredbclustertopointintimemessagerequesttypedef) 
 
-### restore_db_instance_from_db_snapshot
+### restore\_db\_instance\_from\_db\_snapshot
 
 Creates a new DB instance from a DB snapshot.
 
-Type annotations for `boto3.client("rds").restore_db_instance_from_db_snapshot`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").restore_db_instance_from_db_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_db_snapshot)
 
-Boto3 documentation:
-[RDS.Client.restore_db_instance_from_db_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_db_snapshot)
+```python title="Method definition"
+def restore_db_instance_from_db_snapshot(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    DBSnapshotIdentifier: str,
+    DBInstanceClass: str = ...,
+    Port: int = ...,
+    AvailabilityZone: str = ...,
+    DBSubnetGroupName: str = ...,
+    MultiAZ: bool = ...,
+    PubliclyAccessible: bool = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    LicenseModel: str = ...,
+    DBName: str = ...,
+    Engine: str = ...,
+    Iops: int = ...,
+    OptionGroupName: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    StorageType: str = ...,
+    TdeCredentialArn: str = ...,
+    TdeCredentialPassword: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    Domain: str = ...,
+    CopyTagsToSnapshot: bool = ...,
+    DomainIAMRoleName: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    EnableCloudwatchLogsExports: Sequence[str] = ...,
+    ProcessorFeatures: Sequence[ProcessorFeatureTypeDef] = ...,  # (2)
+    UseDefaultProcessorFeatures: bool = ...,
+    DBParameterGroupName: str = ...,
+    DeletionProtection: bool = ...,
+    EnableCustomerOwnedIp: bool = ...,
+    CustomIamInstanceProfile: str = ...,
+    BackupTarget: str = ...,
+) -> RestoreDBInstanceFromDBSnapshotResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef) 
+3. See [:material-code-braces: RestoreDBInstanceFromDBSnapshotResultTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `DBSnapshotIdentifier`: `str` *(required)*
-- `DBInstanceClass`: `str`
-- `Port`: `int`
-- `AvailabilityZone`: `str`
-- `DBSubnetGroupName`: `str`
-- `MultiAZ`: `bool`
-- `PubliclyAccessible`: `bool`
-- `AutoMinorVersionUpgrade`: `bool`
-- `LicenseModel`: `str`
-- `DBName`: `str`
-- `Engine`: `str`
-- `Iops`: `int`
-- `OptionGroupName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `StorageType`: `str`
-- `TdeCredentialArn`: `str`
-- `TdeCredentialPassword`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `Domain`: `str`
-- `CopyTagsToSnapshot`: `bool`
-- `DomainIAMRoleName`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `ProcessorFeatures`:
-  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
-- `UseDefaultProcessorFeatures`: `bool`
-- `DBParameterGroupName`: `str`
-- `DeletionProtection`: `bool`
-- `EnableCustomerOwnedIp`: `bool`
-- `CustomIamInstanceProfile`: `str`
-- `BackupTarget`: `str`
+```python title="Usage example with kwargs"
+kwargs: RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+    "DBSnapshotIdentifier": ...,
+}
 
-Returns
-[RestoreDBInstanceFromDBSnapshotResultTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotresulttypedef).
+parent.restore_db_instance_from_db_snapshot(**kwargs)
+```
 
-<a id="restore\_db\_instance\_from\_s3"></a>
+1. See [:material-code-braces: RestoreDBInstanceFromDBSnapshotMessageRequestTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotmessagerequesttypedef) 
 
-### restore_db_instance_from_s3
+### restore\_db\_instance\_from\_s3
 
 Amazon Relational Database Service (Amazon RDS) supports importing MySQL
 databases by using backup files.
 
-Type annotations for `boto3.client("rds").restore_db_instance_from_s3` method.
+Type annotations and code completion for `#!python boto3.client("rds").restore_db_instance_from_s3` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_s3)
 
-Boto3 documentation:
-[RDS.Client.restore_db_instance_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_from_s3)
+```python title="Method definition"
+def restore_db_instance_from_s3(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    DBInstanceClass: str,
+    Engine: str,
+    SourceEngine: str,
+    SourceEngineVersion: str,
+    S3BucketName: str,
+    S3IngestionRoleArn: str,
+    DBName: str = ...,
+    AllocatedStorage: int = ...,
+    MasterUsername: str = ...,
+    MasterUserPassword: str = ...,
+    DBSecurityGroups: Sequence[str] = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    AvailabilityZone: str = ...,
+    DBSubnetGroupName: str = ...,
+    PreferredMaintenanceWindow: str = ...,
+    DBParameterGroupName: str = ...,
+    BackupRetentionPeriod: int = ...,
+    PreferredBackupWindow: str = ...,
+    Port: int = ...,
+    MultiAZ: bool = ...,
+    EngineVersion: str = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    LicenseModel: str = ...,
+    Iops: int = ...,
+    OptionGroupName: str = ...,
+    PubliclyAccessible: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    StorageType: str = ...,
+    StorageEncrypted: bool = ...,
+    KmsKeyId: str = ...,
+    CopyTagsToSnapshot: bool = ...,
+    MonitoringInterval: int = ...,
+    MonitoringRoleArn: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    S3Prefix: str = ...,
+    EnablePerformanceInsights: bool = ...,
+    PerformanceInsightsKMSKeyId: str = ...,
+    PerformanceInsightsRetentionPeriod: int = ...,
+    EnableCloudwatchLogsExports: Sequence[str] = ...,
+    ProcessorFeatures: Sequence[ProcessorFeatureTypeDef] = ...,  # (2)
+    UseDefaultProcessorFeatures: bool = ...,
+    DeletionProtection: bool = ...,
+    MaxAllocatedStorage: int = ...,
+) -> RestoreDBInstanceFromS3ResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RestoreDBInstanceFromS3MessageRequestTypeDef](./type_defs.md#restoredbinstancefroms3messagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef) 
+3. See [:material-code-braces: RestoreDBInstanceFromS3ResultTypeDef](./type_defs.md#restoredbinstancefroms3resulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `DBInstanceClass`: `str` *(required)*
-- `Engine`: `str` *(required)*
-- `SourceEngine`: `str` *(required)*
-- `SourceEngineVersion`: `str` *(required)*
-- `S3BucketName`: `str` *(required)*
-- `S3IngestionRoleArn`: `str` *(required)*
-- `DBName`: `str`
-- `AllocatedStorage`: `int`
-- `MasterUsername`: `str`
-- `MasterUserPassword`: `str`
-- `DBSecurityGroups`: `Sequence`\[`str`\]
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `AvailabilityZone`: `str`
-- `DBSubnetGroupName`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `DBParameterGroupName`: `str`
-- `BackupRetentionPeriod`: `int`
-- `PreferredBackupWindow`: `str`
-- `Port`: `int`
-- `MultiAZ`: `bool`
-- `EngineVersion`: `str`
-- `AutoMinorVersionUpgrade`: `bool`
-- `LicenseModel`: `str`
-- `Iops`: `int`
-- `OptionGroupName`: `str`
-- `PubliclyAccessible`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `StorageType`: `str`
-- `StorageEncrypted`: `bool`
-- `KmsKeyId`: `str`
-- `CopyTagsToSnapshot`: `bool`
-- `MonitoringInterval`: `int`
-- `MonitoringRoleArn`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `S3Prefix`: `str`
-- `EnablePerformanceInsights`: `bool`
-- `PerformanceInsightsKMSKeyId`: `str`
-- `PerformanceInsightsRetentionPeriod`: `int`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `ProcessorFeatures`:
-  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
-- `UseDefaultProcessorFeatures`: `bool`
-- `DeletionProtection`: `bool`
-- `MaxAllocatedStorage`: `int`
+```python title="Usage example with kwargs"
+kwargs: RestoreDBInstanceFromS3MessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+    "DBInstanceClass": ...,
+    "Engine": ...,
+    "SourceEngine": ...,
+    "SourceEngineVersion": ...,
+    "S3BucketName": ...,
+    "S3IngestionRoleArn": ...,
+}
 
-Returns
-[RestoreDBInstanceFromS3ResultTypeDef](./type_defs.md#restoredbinstancefroms3resulttypedef).
+parent.restore_db_instance_from_s3(**kwargs)
+```
 
-<a id="restore\_db\_instance\_to\_point\_in\_time"></a>
+1. See [:material-code-braces: RestoreDBInstanceFromS3MessageRequestTypeDef](./type_defs.md#restoredbinstancefroms3messagerequesttypedef) 
 
-### restore_db_instance_to_point_in_time
+### restore\_db\_instance\_to\_point\_in\_time
 
 Restores a DB instance to an arbitrary point in time.
 
-Type annotations for `boto3.client("rds").restore_db_instance_to_point_in_time`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").restore_db_instance_to_point_in_time` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_to_point_in_time)
 
-Boto3 documentation:
-[RDS.Client.restore_db_instance_to_point_in_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.restore_db_instance_to_point_in_time)
+```python title="Method definition"
+def restore_db_instance_to_point_in_time(
+    self,
+    *,
+    TargetDBInstanceIdentifier: str,
+    SourceDBInstanceIdentifier: str = ...,
+    RestoreTime: Union[datetime, str] = ...,
+    UseLatestRestorableTime: bool = ...,
+    DBInstanceClass: str = ...,
+    Port: int = ...,
+    AvailabilityZone: str = ...,
+    DBSubnetGroupName: str = ...,
+    MultiAZ: bool = ...,
+    PubliclyAccessible: bool = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    LicenseModel: str = ...,
+    DBName: str = ...,
+    Engine: str = ...,
+    Iops: int = ...,
+    OptionGroupName: str = ...,
+    CopyTagsToSnapshot: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    StorageType: str = ...,
+    TdeCredentialArn: str = ...,
+    TdeCredentialPassword: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    Domain: str = ...,
+    DomainIAMRoleName: str = ...,
+    EnableIAMDatabaseAuthentication: bool = ...,
+    EnableCloudwatchLogsExports: Sequence[str] = ...,
+    ProcessorFeatures: Sequence[ProcessorFeatureTypeDef] = ...,  # (2)
+    UseDefaultProcessorFeatures: bool = ...,
+    DBParameterGroupName: str = ...,
+    DeletionProtection: bool = ...,
+    SourceDbiResourceId: str = ...,
+    MaxAllocatedStorage: int = ...,
+    SourceDBInstanceAutomatedBackupsArn: str = ...,
+    EnableCustomerOwnedIp: bool = ...,
+    CustomIamInstanceProfile: str = ...,
+    BackupTarget: str = ...,
+) -> RestoreDBInstanceToPointInTimeResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RestoreDBInstanceToPointInTimeMessageRequestTypeDef](./type_defs.md#restoredbinstancetopointintimemessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef) 
+3. See [:material-code-braces: RestoreDBInstanceToPointInTimeResultTypeDef](./type_defs.md#restoredbinstancetopointintimeresulttypedef) 
 
-Keyword-only arguments:
 
-- `TargetDBInstanceIdentifier`: `str` *(required)*
-- `SourceDBInstanceIdentifier`: `str`
-- `RestoreTime`: `Union`\[`datetime`, `str`\]
-- `UseLatestRestorableTime`: `bool`
-- `DBInstanceClass`: `str`
-- `Port`: `int`
-- `AvailabilityZone`: `str`
-- `DBSubnetGroupName`: `str`
-- `MultiAZ`: `bool`
-- `PubliclyAccessible`: `bool`
-- `AutoMinorVersionUpgrade`: `bool`
-- `LicenseModel`: `str`
-- `DBName`: `str`
-- `Engine`: `str`
-- `Iops`: `int`
-- `OptionGroupName`: `str`
-- `CopyTagsToSnapshot`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `StorageType`: `str`
-- `TdeCredentialArn`: `str`
-- `TdeCredentialPassword`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `Domain`: `str`
-- `DomainIAMRoleName`: `str`
-- `EnableIAMDatabaseAuthentication`: `bool`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `ProcessorFeatures`:
-  `Sequence`\[[ProcessorFeatureTypeDef](./type_defs.md#processorfeaturetypedef)\]
-- `UseDefaultProcessorFeatures`: `bool`
-- `DBParameterGroupName`: `str`
-- `DeletionProtection`: `bool`
-- `SourceDbiResourceId`: `str`
-- `MaxAllocatedStorage`: `int`
-- `SourceDBInstanceAutomatedBackupsArn`: `str`
-- `EnableCustomerOwnedIp`: `bool`
-- `CustomIamInstanceProfile`: `str`
-- `BackupTarget`: `str`
+```python title="Usage example with kwargs"
+kwargs: RestoreDBInstanceToPointInTimeMessageRequestTypeDef = {  # (1)
+    "TargetDBInstanceIdentifier": ...,
+}
 
-Returns
-[RestoreDBInstanceToPointInTimeResultTypeDef](./type_defs.md#restoredbinstancetopointintimeresulttypedef).
+parent.restore_db_instance_to_point_in_time(**kwargs)
+```
 
-<a id="revoke\_db\_security\_group\_ingress"></a>
+1. See [:material-code-braces: RestoreDBInstanceToPointInTimeMessageRequestTypeDef](./type_defs.md#restoredbinstancetopointintimemessagerequesttypedef) 
 
-### revoke_db_security_group_ingress
+### revoke\_db\_security\_group\_ingress
 
 Revokes ingress from a DBSecurityGroup for previously authorized IP ranges or
 EC2 or VPC security groups.
 
-Type annotations for `boto3.client("rds").revoke_db_security_group_ingress`
-method.
+Type annotations and code completion for `#!python boto3.client("rds").revoke_db_security_group_ingress` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.revoke_db_security_group_ingress)
 
-Boto3 documentation:
-[RDS.Client.revoke_db_security_group_ingress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.revoke_db_security_group_ingress)
+```python title="Method definition"
+def revoke_db_security_group_ingress(
+    self,
+    *,
+    DBSecurityGroupName: str,
+    CIDRIP: str = ...,
+    EC2SecurityGroupName: str = ...,
+    EC2SecurityGroupId: str = ...,
+    EC2SecurityGroupOwnerId: str = ...,
+) -> RevokeDBSecurityGroupIngressResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RevokeDBSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#revokedbsecuritygroupingressmessagerequesttypedef).
+1. See [:material-code-braces: RevokeDBSecurityGroupIngressResultTypeDef](./type_defs.md#revokedbsecuritygroupingressresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBSecurityGroupName`: `str` *(required)*
-- `CIDRIP`: `str`
-- `EC2SecurityGroupName`: `str`
-- `EC2SecurityGroupId`: `str`
-- `EC2SecurityGroupOwnerId`: `str`
+```python title="Usage example with kwargs"
+kwargs: RevokeDBSecurityGroupIngressMessageRequestTypeDef = {  # (1)
+    "DBSecurityGroupName": ...,
+}
 
-Returns
-[RevokeDBSecurityGroupIngressResultTypeDef](./type_defs.md#revokedbsecuritygroupingressresulttypedef).
+parent.revoke_db_security_group_ingress(**kwargs)
+```
 
-<a id="start\_activity\_stream"></a>
+1. See [:material-code-braces: RevokeDBSecurityGroupIngressMessageRequestTypeDef](./type_defs.md#revokedbsecuritygroupingressmessagerequesttypedef) 
 
-### start_activity_stream
+### start\_activity\_stream
 
 Starts a database activity stream to monitor activity on the database.
 
-Type annotations for `boto3.client("rds").start_activity_stream` method.
+Type annotations and code completion for `#!python boto3.client("rds").start_activity_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_activity_stream)
 
-Boto3 documentation:
-[RDS.Client.start_activity_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_activity_stream)
+```python title="Method definition"
+def start_activity_stream(
+    self,
+    *,
+    ResourceArn: str,
+    Mode: ActivityStreamModeType,  # (1)
+    KmsKeyId: str,
+    ApplyImmediately: bool = ...,
+    EngineNativeAuditFieldsIncluded: bool = ...,
+) -> StartActivityStreamResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartActivityStreamRequestRequestTypeDef](./type_defs.md#startactivitystreamrequestrequesttypedef).
+1. See [:material-code-brackets: ActivityStreamModeType](./literals.md#activitystreammodetype) 
+2. See [:material-code-braces: StartActivityStreamResponseTypeDef](./type_defs.md#startactivitystreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Mode`: [ActivityStreamModeType](./literals.md#activitystreammodetype)
-  *(required)*
-- `KmsKeyId`: `str` *(required)*
-- `ApplyImmediately`: `bool`
-- `EngineNativeAuditFieldsIncluded`: `bool`
+```python title="Usage example with kwargs"
+kwargs: StartActivityStreamRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Mode": ...,
+    "KmsKeyId": ...,
+}
 
-Returns
-[StartActivityStreamResponseTypeDef](./type_defs.md#startactivitystreamresponsetypedef).
+parent.start_activity_stream(**kwargs)
+```
 
-<a id="start\_db\_cluster"></a>
+1. See [:material-code-braces: StartActivityStreamRequestRequestTypeDef](./type_defs.md#startactivitystreamrequestrequesttypedef) 
 
-### start_db_cluster
+### start\_db\_cluster
 
 Starts an Amazon Aurora DB cluster that was stopped using the Amazon Web
 Services console, the stop-db-cluster CLI command, or the StopDBCluster action.
 
-Type annotations for `boto3.client("rds").start_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").start_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.start_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_cluster)
+```python title="Method definition"
+def start_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+) -> StartDBClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartDBClusterMessageRequestTypeDef](./type_defs.md#startdbclustermessagerequesttypedef).
+1. See [:material-code-braces: StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef).
+parent.start_db_cluster(**kwargs)
+```
 
-<a id="start\_db\_instance"></a>
+1. See [:material-code-braces: StartDBClusterMessageRequestTypeDef](./type_defs.md#startdbclustermessagerequesttypedef) 
 
-### start_db_instance
+### start\_db\_instance
 
 Starts an Amazon RDS DB instance that was stopped using the Amazon Web Services
 console, the stop-db-instance CLI command, or the StopDBInstance action.
 
-Type annotations for `boto3.client("rds").start_db_instance` method.
+Type annotations and code completion for `#!python boto3.client("rds").start_db_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance)
 
-Boto3 documentation:
-[RDS.Client.start_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance)
+```python title="Method definition"
+def start_db_instance(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+) -> StartDBInstanceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartDBInstanceMessageRequestTypeDef](./type_defs.md#startdbinstancemessagerequesttypedef).
+1. See [:material-code-braces: StartDBInstanceResultTypeDef](./type_defs.md#startdbinstanceresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartDBInstanceMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns
-[StartDBInstanceResultTypeDef](./type_defs.md#startdbinstanceresulttypedef).
+parent.start_db_instance(**kwargs)
+```
 
-<a id="start\_db\_instance\_automated\_backups\_replication"></a>
+1. See [:material-code-braces: StartDBInstanceMessageRequestTypeDef](./type_defs.md#startdbinstancemessagerequesttypedef) 
 
-### start_db_instance_automated_backups_replication
+### start\_db\_instance\_automated\_backups\_replication
 
 Enables replication of automated backups to a different Amazon Web Services
 Region.
 
-Type annotations for
-`boto3.client("rds").start_db_instance_automated_backups_replication` method.
+Type annotations and code completion for `#!python boto3.client("rds").start_db_instance_automated_backups_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance_automated_backups_replication)
 
-Boto3 documentation:
-[RDS.Client.start_db_instance_automated_backups_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_db_instance_automated_backups_replication)
+```python title="Method definition"
+def start_db_instance_automated_backups_replication(
+    self,
+    *,
+    SourceDBInstanceArn: str,
+    BackupRetentionPeriod: int = ...,
+    KmsKeyId: str = ...,
+    PreSignedUrl: str = ...,
+    SourceRegion: str = ...,
+) -> StartDBInstanceAutomatedBackupsReplicationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationmessagerequesttypedef).
+1. See [:material-code-braces: StartDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationresulttypedef) 
 
-Keyword-only arguments:
 
-- `SourceDBInstanceArn`: `str` *(required)*
-- `BackupRetentionPeriod`: `int`
-- `KmsKeyId`: `str`
-- `PreSignedUrl`: `str`
-- `SourceRegion`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef = {  # (1)
+    "SourceDBInstanceArn": ...,
+}
 
-Returns
-[StartDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationresulttypedef).
+parent.start_db_instance_automated_backups_replication(**kwargs)
+```
 
-<a id="start\_export\_task"></a>
+1. See [:material-code-braces: StartDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationmessagerequesttypedef) 
 
-### start_export_task
+### start\_export\_task
 
 Starts an export of a snapshot to Amazon S3.
 
-Type annotations for `boto3.client("rds").start_export_task` method.
+Type annotations and code completion for `#!python boto3.client("rds").start_export_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_export_task)
 
-Boto3 documentation:
-[RDS.Client.start_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.start_export_task)
+```python title="Method definition"
+def start_export_task(
+    self,
+    *,
+    ExportTaskIdentifier: str,
+    SourceArn: str,
+    S3BucketName: str,
+    IamRoleArn: str,
+    KmsKeyId: str,
+    S3Prefix: str = ...,
+    ExportOnly: Sequence[str] = ...,
+) -> ExportTaskResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartExportTaskMessageRequestTypeDef](./type_defs.md#startexporttaskmessagerequesttypedef).
+1. See [:material-code-braces: ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ExportTaskIdentifier`: `str` *(required)*
-- `SourceArn`: `str` *(required)*
-- `S3BucketName`: `str` *(required)*
-- `IamRoleArn`: `str` *(required)*
-- `KmsKeyId`: `str` *(required)*
-- `S3Prefix`: `str`
-- `ExportOnly`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: StartExportTaskMessageRequestTypeDef = {  # (1)
+    "ExportTaskIdentifier": ...,
+    "SourceArn": ...,
+    "S3BucketName": ...,
+    "IamRoleArn": ...,
+    "KmsKeyId": ...,
+}
 
-Returns
-[ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef).
+parent.start_export_task(**kwargs)
+```
 
-<a id="stop\_activity\_stream"></a>
+1. See [:material-code-braces: StartExportTaskMessageRequestTypeDef](./type_defs.md#startexporttaskmessagerequesttypedef) 
 
-### stop_activity_stream
+### stop\_activity\_stream
 
 Stops a database activity stream that was started using the Amazon Web Services
 console, the `start-activity-stream` CLI command, or the `StartActivityStream`
 action.
 
-Type annotations for `boto3.client("rds").stop_activity_stream` method.
+Type annotations and code completion for `#!python boto3.client("rds").stop_activity_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_activity_stream)
 
-Boto3 documentation:
-[RDS.Client.stop_activity_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_activity_stream)
+```python title="Method definition"
+def stop_activity_stream(
+    self,
+    *,
+    ResourceArn: str,
+    ApplyImmediately: bool = ...,
+) -> StopActivityStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopActivityStreamRequestRequestTypeDef](./type_defs.md#stopactivitystreamrequestrequesttypedef).
+1. See [:material-code-braces: StopActivityStreamResponseTypeDef](./type_defs.md#stopactivitystreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `ApplyImmediately`: `bool`
+```python title="Usage example with kwargs"
+kwargs: StopActivityStreamRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[StopActivityStreamResponseTypeDef](./type_defs.md#stopactivitystreamresponsetypedef).
+parent.stop_activity_stream(**kwargs)
+```
 
-<a id="stop\_db\_cluster"></a>
+1. See [:material-code-braces: StopActivityStreamRequestRequestTypeDef](./type_defs.md#stopactivitystreamrequestrequesttypedef) 
 
-### stop_db_cluster
+### stop\_db\_cluster
 
 Stops an Amazon Aurora DB cluster.
 
-Type annotations for `boto3.client("rds").stop_db_cluster` method.
+Type annotations and code completion for `#!python boto3.client("rds").stop_db_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_cluster)
 
-Boto3 documentation:
-[RDS.Client.stop_db_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_cluster)
+```python title="Method definition"
+def stop_db_cluster(
+    self,
+    *,
+    DBClusterIdentifier: str,
+) -> StopDBClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopDBClusterMessageRequestTypeDef](./type_defs.md#stopdbclustermessagerequesttypedef).
+1. See [:material-code-braces: StopDBClusterResultTypeDef](./type_defs.md#stopdbclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBClusterIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopDBClusterMessageRequestTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
 
-Returns
-[StopDBClusterResultTypeDef](./type_defs.md#stopdbclusterresulttypedef).
+parent.stop_db_cluster(**kwargs)
+```
 
-<a id="stop\_db\_instance"></a>
+1. See [:material-code-braces: StopDBClusterMessageRequestTypeDef](./type_defs.md#stopdbclustermessagerequesttypedef) 
 
-### stop_db_instance
+### stop\_db\_instance
 
 Stops an Amazon RDS DB instance.
 
-Type annotations for `boto3.client("rds").stop_db_instance` method.
+Type annotations and code completion for `#!python boto3.client("rds").stop_db_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance)
 
-Boto3 documentation:
-[RDS.Client.stop_db_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance)
+```python title="Method definition"
+def stop_db_instance(
+    self,
+    *,
+    DBInstanceIdentifier: str,
+    DBSnapshotIdentifier: str = ...,
+) -> StopDBInstanceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopDBInstanceMessageRequestTypeDef](./type_defs.md#stopdbinstancemessagerequesttypedef).
+1. See [:material-code-braces: StopDBInstanceResultTypeDef](./type_defs.md#stopdbinstanceresulttypedef) 
 
-Keyword-only arguments:
 
-- `DBInstanceIdentifier`: `str` *(required)*
-- `DBSnapshotIdentifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopDBInstanceMessageRequestTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
 
-Returns
-[StopDBInstanceResultTypeDef](./type_defs.md#stopdbinstanceresulttypedef).
+parent.stop_db_instance(**kwargs)
+```
 
-<a id="stop\_db\_instance\_automated\_backups\_replication"></a>
+1. See [:material-code-braces: StopDBInstanceMessageRequestTypeDef](./type_defs.md#stopdbinstancemessagerequesttypedef) 
 
-### stop_db_instance_automated_backups_replication
+### stop\_db\_instance\_automated\_backups\_replication
 
 Stops automated backup replication for a DB instance.
 
-Type annotations for
-`boto3.client("rds").stop_db_instance_automated_backups_replication` method.
+Type annotations and code completion for `#!python boto3.client("rds").stop_db_instance_automated_backups_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance_automated_backups_replication)
 
-Boto3 documentation:
-[RDS.Client.stop_db_instance_automated_backups_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.stop_db_instance_automated_backups_replication)
+```python title="Method definition"
+def stop_db_instance_automated_backups_replication(
+    self,
+    *,
+    SourceDBInstanceArn: str,
+) -> StopDBInstanceAutomatedBackupsReplicationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationmessagerequesttypedef).
+1. See [:material-code-braces: StopDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationresulttypedef) 
 
-Keyword-only arguments:
 
-- `SourceDBInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef = {  # (1)
+    "SourceDBInstanceArn": ...,
+}
 
-Returns
-[StopDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationresulttypedef).
+parent.stop_db_instance_automated_backups_replication(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: StopDBInstanceAutomatedBackupsReplicationMessageRequestTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationmessagerequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("rds").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("rds").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_certificates")` ->
-  [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
-- `client.get_paginator("describe_custom_availability_zones")` ->
-  [DescribeCustomAvailabilityZonesPaginator](./paginators.md#describecustomavailabilityzonespaginator)
-- `client.get_paginator("describe_db_cluster_backtracks")` ->
-  [DescribeDBClusterBacktracksPaginator](./paginators.md#describedbclusterbacktrackspaginator)
-- `client.get_paginator("describe_db_cluster_endpoints")` ->
-  [DescribeDBClusterEndpointsPaginator](./paginators.md#describedbclusterendpointspaginator)
-- `client.get_paginator("describe_db_cluster_parameter_groups")` ->
-  [DescribeDBClusterParameterGroupsPaginator](./paginators.md#describedbclusterparametergroupspaginator)
-- `client.get_paginator("describe_db_cluster_parameters")` ->
-  [DescribeDBClusterParametersPaginator](./paginators.md#describedbclusterparameterspaginator)
-- `client.get_paginator("describe_db_cluster_snapshots")` ->
-  [DescribeDBClusterSnapshotsPaginator](./paginators.md#describedbclustersnapshotspaginator)
-- `client.get_paginator("describe_db_clusters")` ->
-  [DescribeDBClustersPaginator](./paginators.md#describedbclusterspaginator)
-- `client.get_paginator("describe_db_engine_versions")` ->
-  [DescribeDBEngineVersionsPaginator](./paginators.md#describedbengineversionspaginator)
-- `client.get_paginator("describe_db_instance_automated_backups")` ->
-  [DescribeDBInstanceAutomatedBackupsPaginator](./paginators.md#describedbinstanceautomatedbackupspaginator)
-- `client.get_paginator("describe_db_instances")` ->
-  [DescribeDBInstancesPaginator](./paginators.md#describedbinstancespaginator)
-- `client.get_paginator("describe_db_log_files")` ->
-  [DescribeDBLogFilesPaginator](./paginators.md#describedblogfilespaginator)
-- `client.get_paginator("describe_db_parameter_groups")` ->
-  [DescribeDBParameterGroupsPaginator](./paginators.md#describedbparametergroupspaginator)
-- `client.get_paginator("describe_db_parameters")` ->
-  [DescribeDBParametersPaginator](./paginators.md#describedbparameterspaginator)
-- `client.get_paginator("describe_db_proxies")` ->
-  [DescribeDBProxiesPaginator](./paginators.md#describedbproxiespaginator)
-- `client.get_paginator("describe_db_proxy_endpoints")` ->
-  [DescribeDBProxyEndpointsPaginator](./paginators.md#describedbproxyendpointspaginator)
-- `client.get_paginator("describe_db_proxy_target_groups")` ->
-  [DescribeDBProxyTargetGroupsPaginator](./paginators.md#describedbproxytargetgroupspaginator)
-- `client.get_paginator("describe_db_proxy_targets")` ->
-  [DescribeDBProxyTargetsPaginator](./paginators.md#describedbproxytargetspaginator)
-- `client.get_paginator("describe_db_security_groups")` ->
-  [DescribeDBSecurityGroupsPaginator](./paginators.md#describedbsecuritygroupspaginator)
-- `client.get_paginator("describe_db_snapshots")` ->
-  [DescribeDBSnapshotsPaginator](./paginators.md#describedbsnapshotspaginator)
-- `client.get_paginator("describe_db_subnet_groups")` ->
-  [DescribeDBSubnetGroupsPaginator](./paginators.md#describedbsubnetgroupspaginator)
-- `client.get_paginator("describe_engine_default_cluster_parameters")` ->
-  [DescribeEngineDefaultClusterParametersPaginator](./paginators.md#describeenginedefaultclusterparameterspaginator)
-- `client.get_paginator("describe_engine_default_parameters")` ->
-  [DescribeEngineDefaultParametersPaginator](./paginators.md#describeenginedefaultparameterspaginator)
-- `client.get_paginator("describe_event_subscriptions")` ->
-  [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
-- `client.get_paginator("describe_events")` ->
-  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("describe_export_tasks")` ->
-  [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
-- `client.get_paginator("describe_global_clusters")` ->
-  [DescribeGlobalClustersPaginator](./paginators.md#describeglobalclusterspaginator)
-- `client.get_paginator("describe_installation_media")` ->
-  [DescribeInstallationMediaPaginator](./paginators.md#describeinstallationmediapaginator)
-- `client.get_paginator("describe_option_group_options")` ->
-  [DescribeOptionGroupOptionsPaginator](./paginators.md#describeoptiongroupoptionspaginator)
-- `client.get_paginator("describe_option_groups")` ->
-  [DescribeOptionGroupsPaginator](./paginators.md#describeoptiongroupspaginator)
-- `client.get_paginator("describe_orderable_db_instance_options")` ->
-  [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
-- `client.get_paginator("describe_pending_maintenance_actions")` ->
-  [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
-- `client.get_paginator("describe_reserved_db_instances")` ->
-  [DescribeReservedDBInstancesPaginator](./paginators.md#describereserveddbinstancespaginator)
-- `client.get_paginator("describe_reserved_db_instances_offerings")` ->
-  [DescribeReservedDBInstancesOfferingsPaginator](./paginators.md#describereserveddbinstancesofferingspaginator)
-- `client.get_paginator("describe_source_regions")` ->
-  [DescribeSourceRegionsPaginator](./paginators.md#describesourceregionspaginator)
-- `client.get_paginator("download_db_log_file_portion")` ->
-  [DownloadDBLogFilePortionPaginator](./paginators.md#downloaddblogfileportionpaginator)
+- `client.get_paginator("describe_certificates")` -> [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
+- `client.get_paginator("describe_custom_availability_zones")` -> [DescribeCustomAvailabilityZonesPaginator](./paginators.md#describecustomavailabilityzonespaginator)
+- `client.get_paginator("describe_db_cluster_backtracks")` -> [DescribeDBClusterBacktracksPaginator](./paginators.md#describedbclusterbacktrackspaginator)
+- `client.get_paginator("describe_db_cluster_endpoints")` -> [DescribeDBClusterEndpointsPaginator](./paginators.md#describedbclusterendpointspaginator)
+- `client.get_paginator("describe_db_cluster_parameter_groups")` -> [DescribeDBClusterParameterGroupsPaginator](./paginators.md#describedbclusterparametergroupspaginator)
+- `client.get_paginator("describe_db_cluster_parameters")` -> [DescribeDBClusterParametersPaginator](./paginators.md#describedbclusterparameterspaginator)
+- `client.get_paginator("describe_db_cluster_snapshots")` -> [DescribeDBClusterSnapshotsPaginator](./paginators.md#describedbclustersnapshotspaginator)
+- `client.get_paginator("describe_db_clusters")` -> [DescribeDBClustersPaginator](./paginators.md#describedbclusterspaginator)
+- `client.get_paginator("describe_db_engine_versions")` -> [DescribeDBEngineVersionsPaginator](./paginators.md#describedbengineversionspaginator)
+- `client.get_paginator("describe_db_instance_automated_backups")` -> [DescribeDBInstanceAutomatedBackupsPaginator](./paginators.md#describedbinstanceautomatedbackupspaginator)
+- `client.get_paginator("describe_db_instances")` -> [DescribeDBInstancesPaginator](./paginators.md#describedbinstancespaginator)
+- `client.get_paginator("describe_db_log_files")` -> [DescribeDBLogFilesPaginator](./paginators.md#describedblogfilespaginator)
+- `client.get_paginator("describe_db_parameter_groups")` -> [DescribeDBParameterGroupsPaginator](./paginators.md#describedbparametergroupspaginator)
+- `client.get_paginator("describe_db_parameters")` -> [DescribeDBParametersPaginator](./paginators.md#describedbparameterspaginator)
+- `client.get_paginator("describe_db_proxies")` -> [DescribeDBProxiesPaginator](./paginators.md#describedbproxiespaginator)
+- `client.get_paginator("describe_db_proxy_endpoints")` -> [DescribeDBProxyEndpointsPaginator](./paginators.md#describedbproxyendpointspaginator)
+- `client.get_paginator("describe_db_proxy_target_groups")` -> [DescribeDBProxyTargetGroupsPaginator](./paginators.md#describedbproxytargetgroupspaginator)
+- `client.get_paginator("describe_db_proxy_targets")` -> [DescribeDBProxyTargetsPaginator](./paginators.md#describedbproxytargetspaginator)
+- `client.get_paginator("describe_db_security_groups")` -> [DescribeDBSecurityGroupsPaginator](./paginators.md#describedbsecuritygroupspaginator)
+- `client.get_paginator("describe_db_snapshots")` -> [DescribeDBSnapshotsPaginator](./paginators.md#describedbsnapshotspaginator)
+- `client.get_paginator("describe_db_subnet_groups")` -> [DescribeDBSubnetGroupsPaginator](./paginators.md#describedbsubnetgroupspaginator)
+- `client.get_paginator("describe_engine_default_cluster_parameters")` -> [DescribeEngineDefaultClusterParametersPaginator](./paginators.md#describeenginedefaultclusterparameterspaginator)
+- `client.get_paginator("describe_engine_default_parameters")` -> [DescribeEngineDefaultParametersPaginator](./paginators.md#describeenginedefaultparameterspaginator)
+- `client.get_paginator("describe_event_subscriptions")` -> [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
+- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_export_tasks")` -> [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
+- `client.get_paginator("describe_global_clusters")` -> [DescribeGlobalClustersPaginator](./paginators.md#describeglobalclusterspaginator)
+- `client.get_paginator("describe_installation_media")` -> [DescribeInstallationMediaPaginator](./paginators.md#describeinstallationmediapaginator)
+- `client.get_paginator("describe_option_group_options")` -> [DescribeOptionGroupOptionsPaginator](./paginators.md#describeoptiongroupoptionspaginator)
+- `client.get_paginator("describe_option_groups")` -> [DescribeOptionGroupsPaginator](./paginators.md#describeoptiongroupspaginator)
+- `client.get_paginator("describe_orderable_db_instance_options")` -> [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
+- `client.get_paginator("describe_pending_maintenance_actions")` -> [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
+- `client.get_paginator("describe_reserved_db_instances")` -> [DescribeReservedDBInstancesPaginator](./paginators.md#describereserveddbinstancespaginator)
+- `client.get_paginator("describe_reserved_db_instances_offerings")` -> [DescribeReservedDBInstancesOfferingsPaginator](./paginators.md#describereserveddbinstancesofferingspaginator)
+- `client.get_paginator("describe_source_regions")` -> [DescribeSourceRegionsPaginator](./paginators.md#describesourceregionspaginator)
+- `client.get_paginator("download_db_log_file_portion")` -> [DownloadDBLogFilePortionPaginator](./paginators.md#downloaddblogfileportionpaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("rds").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("rds").get_waiter` method with overloads.
 
-- `client.get_waiter("db_cluster_snapshot_available")` ->
-  [DBClusterSnapshotAvailableWaiter](./waiters.md#dbclustersnapshotavailablewaiter)
-- `client.get_waiter("db_cluster_snapshot_deleted")` ->
-  [DBClusterSnapshotDeletedWaiter](./waiters.md#dbclustersnapshotdeletedwaiter)
-- `client.get_waiter("db_instance_available")` ->
-  [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
-- `client.get_waiter("db_instance_deleted")` ->
-  [DBInstanceDeletedWaiter](./waiters.md#dbinstancedeletedwaiter)
-- `client.get_waiter("db_snapshot_available")` ->
-  [DBSnapshotAvailableWaiter](./waiters.md#dbsnapshotavailablewaiter)
-- `client.get_waiter("db_snapshot_completed")` ->
-  [DBSnapshotCompletedWaiter](./waiters.md#dbsnapshotcompletedwaiter)
-- `client.get_waiter("db_snapshot_deleted")` ->
-  [DBSnapshotDeletedWaiter](./waiters.md#dbsnapshotdeletedwaiter)
+- `client.get_waiter("db_cluster_snapshot_available")` -> [DBClusterSnapshotAvailableWaiter](./waiters.md#dbclustersnapshotavailablewaiter)
+- `client.get_waiter("db_cluster_snapshot_deleted")` -> [DBClusterSnapshotDeletedWaiter](./waiters.md#dbclustersnapshotdeletedwaiter)
+- `client.get_waiter("db_instance_available")` -> [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
+- `client.get_waiter("db_instance_deleted")` -> [DBInstanceDeletedWaiter](./waiters.md#dbinstancedeletedwaiter)
+- `client.get_waiter("db_snapshot_available")` -> [DBSnapshotAvailableWaiter](./waiters.md#dbsnapshotavailablewaiter)
+- `client.get_waiter("db_snapshot_completed")` -> [DBSnapshotCompletedWaiter](./waiters.md#dbsnapshotcompletedwaiter)
+- `client.get_waiter("db_snapshot_deleted")` -> [DBSnapshotDeletedWaiter](./waiters.md#dbsnapshotdeletedwaiter)
+

@@ -1,47 +1,18 @@
-<a id="fisclient-for-boto3-fis-module"></a>
-
-# FISClient for boto3 FIS module
+# FISClient
 
 > [Index](../README.md) > [FIS](./README.md) > FISClient
 
-Auto-generated documentation for
-[FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
-type annotations stubs module
-[mypy-boto3-fis](https://pypi.org/project/mypy-boto3-fis/).
+!!! note ""
 
-- [FISClient for boto3 FIS module](#fisclient-for-boto3-fis-module)
-  - [FISClient](#fisclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_experiment_template](#create_experiment_template)
-    - [delete_experiment_template](#delete_experiment_template)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_action](#get_action)
-    - [get_experiment](#get_experiment)
-    - [get_experiment_template](#get_experiment_template)
-    - [get_target_resource_type](#get_target_resource_type)
-    - [list_actions](#list_actions)
-    - [list_experiment_templates](#list_experiment_templates)
-    - [list_experiments](#list_experiments)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_target_resource_types](#list_target_resource_types)
-    - [start_experiment](#start_experiment)
-    - [stop_experiment](#stop_experiment)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_experiment_template](#update_experiment_template)
-
-<a id="fisclient"></a>
+    Auto-generated documentation for [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
+    type annotations stubs module [mypy-boto3-fis](https://pypi.org/project/mypy-boto3-fis/).
 
 ## FISClient
 
-Type annotations for `boto3.client("fis")`
+Type annotations and code completion for `#!python boto3.client("fis")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_fis.client import FISClient
 
@@ -49,445 +20,570 @@ def get_fis_client() -> FISClient:
     return Session().client("fis")
 ```
 
-Boto3 documentation:
-[FIS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("fis").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("fis")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_fis.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-FISClient exceptions.
-
-Type annotations for `boto3.client("fis").exceptions` method.
-
-Boto3 documentation:
-[FIS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("fis").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("fis").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.can_paginate)
 
-Boto3 documentation:
-[FIS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_experiment\_template"></a>
-
-### create_experiment_template
+### create\_experiment\_template
 
 Creates an experiment template.
 
-Type annotations for `boto3.client("fis").create_experiment_template` method.
+Type annotations and code completion for `#!python boto3.client("fis").create_experiment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.create_experiment_template)
 
-Boto3 documentation:
-[FIS.Client.create_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.create_experiment_template)
+```python title="Method definition"
+def create_experiment_template(
+    self,
+    *,
+    clientToken: str,
+    description: str,
+    stopConditions: Sequence[CreateExperimentTemplateStopConditionInputTypeDef],  # (1)
+    actions: Mapping[str, CreateExperimentTemplateActionInputTypeDef],  # (2)
+    roleArn: str,
+    targets: Mapping[str, CreateExperimentTemplateTargetInputTypeDef] = ...,  # (3)
+    tags: Mapping[str, str] = ...,
+    logConfiguration: CreateExperimentTemplateLogConfigurationInputTypeDef = ...,  # (4)
+) -> CreateExperimentTemplateResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateExperimentTemplateRequestRequestTypeDef](./type_defs.md#createexperimenttemplaterequestrequesttypedef).
+1. See [:material-code-braces: CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef) 
+2. See [:material-code-braces: CreateExperimentTemplateActionInputTypeDef](./type_defs.md#createexperimenttemplateactioninputtypedef) 
+3. See [:material-code-braces: CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef) 
+4. See [:material-code-braces: CreateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#createexperimenttemplatelogconfigurationinputtypedef) 
+5. See [:material-code-braces: CreateExperimentTemplateResponseTypeDef](./type_defs.md#createexperimenttemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientToken`: `str` *(required)*
-- `description`: `str` *(required)*
-- `stopConditions`:
-  `Sequence`\[[CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef)\]
-  *(required)*
-- `actions`: `Mapping`\[`str`,
-  [CreateExperimentTemplateActionInputTypeDef](./type_defs.md#createexperimenttemplateactioninputtypedef)\]
-  *(required)*
-- `roleArn`: `str` *(required)*
-- `targets`: `Mapping`\[`str`,
-  [CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `logConfiguration`:
-  [CreateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#createexperimenttemplatelogconfigurationinputtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateExperimentTemplateRequestRequestTypeDef = {  # (1)
+    "clientToken": ...,
+    "description": ...,
+    "stopConditions": ...,
+    "actions": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreateExperimentTemplateResponseTypeDef](./type_defs.md#createexperimenttemplateresponsetypedef).
+parent.create_experiment_template(**kwargs)
+```
 
-<a id="delete\_experiment\_template"></a>
+1. See [:material-code-braces: CreateExperimentTemplateRequestRequestTypeDef](./type_defs.md#createexperimenttemplaterequestrequesttypedef) 
 
-### delete_experiment_template
+### delete\_experiment\_template
 
 Deletes the specified experiment template.
 
-Type annotations for `boto3.client("fis").delete_experiment_template` method.
+Type annotations and code completion for `#!python boto3.client("fis").delete_experiment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.delete_experiment_template)
 
-Boto3 documentation:
-[FIS.Client.delete_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.delete_experiment_template)
+```python title="Method definition"
+def delete_experiment_template(
+    self,
+    *,
+    id: str,
+) -> DeleteExperimentTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteExperimentTemplateRequestRequestTypeDef](./type_defs.md#deleteexperimenttemplaterequestrequesttypedef).
+1. See [:material-code-braces: DeleteExperimentTemplateResponseTypeDef](./type_defs.md#deleteexperimenttemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteExperimentTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[DeleteExperimentTemplateResponseTypeDef](./type_defs.md#deleteexperimenttemplateresponsetypedef).
+parent.delete_experiment_template(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteExperimentTemplateRequestRequestTypeDef](./type_defs.md#deleteexperimenttemplaterequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("fis").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("fis").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[FIS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_action"></a>
-
-### get_action
+### get\_action
 
 Gets information about the specified FIS action.
 
-Type annotations for `boto3.client("fis").get_action` method.
+Type annotations and code completion for `#!python boto3.client("fis").get_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_action)
 
-Boto3 documentation:
-[FIS.Client.get_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_action)
+```python title="Method definition"
+def get_action(
+    self,
+    *,
+    id: str,
+) -> GetActionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetActionRequestRequestTypeDef](./type_defs.md#getactionrequestrequesttypedef).
+1. See [:material-code-braces: GetActionResponseTypeDef](./type_defs.md#getactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetActionRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [GetActionResponseTypeDef](./type_defs.md#getactionresponsetypedef).
+parent.get_action(**kwargs)
+```
 
-<a id="get\_experiment"></a>
+1. See [:material-code-braces: GetActionRequestRequestTypeDef](./type_defs.md#getactionrequestrequesttypedef) 
 
-### get_experiment
+### get\_experiment
 
 Gets information about the specified experiment.
 
-Type annotations for `boto3.client("fis").get_experiment` method.
+Type annotations and code completion for `#!python boto3.client("fis").get_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment)
 
-Boto3 documentation:
-[FIS.Client.get_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment)
+```python title="Method definition"
+def get_experiment(
+    self,
+    *,
+    id: str,
+) -> GetExperimentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetExperimentRequestRequestTypeDef](./type_defs.md#getexperimentrequestrequesttypedef).
+1. See [:material-code-braces: GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetExperimentRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef).
+parent.get_experiment(**kwargs)
+```
 
-<a id="get\_experiment\_template"></a>
+1. See [:material-code-braces: GetExperimentRequestRequestTypeDef](./type_defs.md#getexperimentrequestrequesttypedef) 
 
-### get_experiment_template
+### get\_experiment\_template
 
 Gets information about the specified experiment template.
 
-Type annotations for `boto3.client("fis").get_experiment_template` method.
+Type annotations and code completion for `#!python boto3.client("fis").get_experiment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment_template)
 
-Boto3 documentation:
-[FIS.Client.get_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_experiment_template)
+```python title="Method definition"
+def get_experiment_template(
+    self,
+    *,
+    id: str,
+) -> GetExperimentTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetExperimentTemplateRequestRequestTypeDef](./type_defs.md#getexperimenttemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetExperimentTemplateResponseTypeDef](./type_defs.md#getexperimenttemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetExperimentTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetExperimentTemplateResponseTypeDef](./type_defs.md#getexperimenttemplateresponsetypedef).
+parent.get_experiment_template(**kwargs)
+```
 
-<a id="get\_target\_resource\_type"></a>
+1. See [:material-code-braces: GetExperimentTemplateRequestRequestTypeDef](./type_defs.md#getexperimenttemplaterequestrequesttypedef) 
 
-### get_target_resource_type
+### get\_target\_resource\_type
 
 Gets information about the specified resource type.
 
-Type annotations for `boto3.client("fis").get_target_resource_type` method.
+Type annotations and code completion for `#!python boto3.client("fis").get_target_resource_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_target_resource_type)
 
-Boto3 documentation:
-[FIS.Client.get_target_resource_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_target_resource_type)
+```python title="Method definition"
+def get_target_resource_type(
+    self,
+    *,
+    resourceType: str,
+) -> GetTargetResourceTypeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTargetResourceTypeRequestRequestTypeDef](./type_defs.md#gettargetresourcetyperequestrequesttypedef).
+1. See [:material-code-braces: GetTargetResourceTypeResponseTypeDef](./type_defs.md#gettargetresourcetyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTargetResourceTypeRequestRequestTypeDef = {  # (1)
+    "resourceType": ...,
+}
 
-Returns
-[GetTargetResourceTypeResponseTypeDef](./type_defs.md#gettargetresourcetyperesponsetypedef).
+parent.get_target_resource_type(**kwargs)
+```
 
-<a id="list\_actions"></a>
+1. See [:material-code-braces: GetTargetResourceTypeRequestRequestTypeDef](./type_defs.md#gettargetresourcetyperequestrequesttypedef) 
 
-### list_actions
+### list\_actions
 
 Lists the available FIS actions.
 
-Type annotations for `boto3.client("fis").list_actions` method.
+Type annotations and code completion for `#!python boto3.client("fis").list_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_actions)
 
-Boto3 documentation:
-[FIS.Client.list_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_actions)
+```python title="Method definition"
+def list_actions(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListActionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListActionsRequestRequestTypeDef](./type_defs.md#listactionsrequestrequesttypedef).
+1. See [:material-code-braces: ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListActionsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef).
+parent.list_actions(**kwargs)
+```
 
-<a id="list\_experiment\_templates"></a>
+1. See [:material-code-braces: ListActionsRequestRequestTypeDef](./type_defs.md#listactionsrequestrequesttypedef) 
 
-### list_experiment_templates
+### list\_experiment\_templates
 
 Lists your experiment templates.
 
-Type annotations for `boto3.client("fis").list_experiment_templates` method.
+Type annotations and code completion for `#!python boto3.client("fis").list_experiment_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiment_templates)
 
-Boto3 documentation:
-[FIS.Client.list_experiment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiment_templates)
+```python title="Method definition"
+def list_experiment_templates(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListExperimentTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListExperimentTemplatesRequestRequestTypeDef](./type_defs.md#listexperimenttemplatesrequestrequesttypedef).
+1. See [:material-code-braces: ListExperimentTemplatesResponseTypeDef](./type_defs.md#listexperimenttemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListExperimentTemplatesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListExperimentTemplatesResponseTypeDef](./type_defs.md#listexperimenttemplatesresponsetypedef).
+parent.list_experiment_templates(**kwargs)
+```
 
-<a id="list\_experiments"></a>
+1. See [:material-code-braces: ListExperimentTemplatesRequestRequestTypeDef](./type_defs.md#listexperimenttemplatesrequestrequesttypedef) 
 
-### list_experiments
+### list\_experiments
 
 Lists your experiments.
 
-Type annotations for `boto3.client("fis").list_experiments` method.
+Type annotations and code completion for `#!python boto3.client("fis").list_experiments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiments)
 
-Boto3 documentation:
-[FIS.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_experiments)
+```python title="Method definition"
+def list_experiments(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListExperimentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListExperimentsRequestRequestTypeDef](./type_defs.md#listexperimentsrequestrequesttypedef).
+1. See [:material-code-braces: ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListExperimentsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
+parent.list_experiments(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListExperimentsRequestRequestTypeDef](./type_defs.md#listexperimentsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for the specified resource.
 
-Type annotations for `boto3.client("fis").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("fis").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[FIS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_target\_resource\_types"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_target_resource_types
+### list\_target\_resource\_types
 
 Lists the target resource types.
 
-Type annotations for `boto3.client("fis").list_target_resource_types` method.
+Type annotations and code completion for `#!python boto3.client("fis").list_target_resource_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_target_resource_types)
 
-Boto3 documentation:
-[FIS.Client.list_target_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_target_resource_types)
+```python title="Method definition"
+def list_target_resource_types(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTargetResourceTypesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTargetResourceTypesRequestRequestTypeDef](./type_defs.md#listtargetresourcetypesrequestrequesttypedef).
+1. See [:material-code-braces: ListTargetResourceTypesResponseTypeDef](./type_defs.md#listtargetresourcetypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTargetResourceTypesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListTargetResourceTypesResponseTypeDef](./type_defs.md#listtargetresourcetypesresponsetypedef).
+parent.list_target_resource_types(**kwargs)
+```
 
-<a id="start\_experiment"></a>
+1. See [:material-code-braces: ListTargetResourceTypesRequestRequestTypeDef](./type_defs.md#listtargetresourcetypesrequestrequesttypedef) 
 
-### start_experiment
+### start\_experiment
 
 Starts running an experiment from the specified experiment template.
 
-Type annotations for `boto3.client("fis").start_experiment` method.
+Type annotations and code completion for `#!python boto3.client("fis").start_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.start_experiment)
 
-Boto3 documentation:
-[FIS.Client.start_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.start_experiment)
+```python title="Method definition"
+def start_experiment(
+    self,
+    *,
+    clientToken: str,
+    experimentTemplateId: str,
+    tags: Mapping[str, str] = ...,
+) -> StartExperimentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartExperimentRequestRequestTypeDef](./type_defs.md#startexperimentrequestrequesttypedef).
+1. See [:material-code-braces: StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientToken`: `str` *(required)*
-- `experimentTemplateId`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartExperimentRequestRequestTypeDef = {  # (1)
+    "clientToken": ...,
+    "experimentTemplateId": ...,
+}
 
-Returns
-[StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef).
+parent.start_experiment(**kwargs)
+```
 
-<a id="stop\_experiment"></a>
+1. See [:material-code-braces: StartExperimentRequestRequestTypeDef](./type_defs.md#startexperimentrequestrequesttypedef) 
 
-### stop_experiment
+### stop\_experiment
 
 Stops the specified experiment.
 
-Type annotations for `boto3.client("fis").stop_experiment` method.
+Type annotations and code completion for `#!python boto3.client("fis").stop_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.stop_experiment)
 
-Boto3 documentation:
-[FIS.Client.stop_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.stop_experiment)
+```python title="Method definition"
+def stop_experiment(
+    self,
+    *,
+    id: str,
+) -> StopExperimentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopExperimentRequestRequestTypeDef](./type_defs.md#stopexperimentrequestrequesttypedef).
+1. See [:material-code-braces: StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopExperimentRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef).
+parent.stop_experiment(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopExperimentRequestRequestTypeDef](./type_defs.md#stopexperimentrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Applies the specified tags to the specified resource.
 
-Type annotations for `boto3.client("fis").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("fis").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.tag_resource)
 
-Boto3 documentation:
-[FIS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the specified tags from the specified resource.
 
-Type annotations for `boto3.client("fis").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("fis").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.untag_resource)
 
-Boto3 documentation:
-[FIS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_experiment\_template"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_experiment_template
+### update\_experiment\_template
 
 Updates the specified experiment template.
 
-Type annotations for `boto3.client("fis").update_experiment_template` method.
+Type annotations and code completion for `#!python boto3.client("fis").update_experiment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.update_experiment_template)
 
-Boto3 documentation:
-[FIS.Client.update_experiment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.update_experiment_template)
+```python title="Method definition"
+def update_experiment_template(
+    self,
+    *,
+    id: str,
+    description: str = ...,
+    stopConditions: Sequence[UpdateExperimentTemplateStopConditionInputTypeDef] = ...,  # (1)
+    targets: Mapping[str, UpdateExperimentTemplateTargetInputTypeDef] = ...,  # (2)
+    actions: Mapping[str, UpdateExperimentTemplateActionInputItemTypeDef] = ...,  # (3)
+    roleArn: str = ...,
+    logConfiguration: UpdateExperimentTemplateLogConfigurationInputTypeDef = ...,  # (4)
+) -> UpdateExperimentTemplateResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateExperimentTemplateRequestRequestTypeDef](./type_defs.md#updateexperimenttemplaterequestrequesttypedef).
+1. See [:material-code-braces: UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef) 
+2. See [:material-code-braces: UpdateExperimentTemplateTargetInputTypeDef](./type_defs.md#updateexperimenttemplatetargetinputtypedef) 
+3. See [:material-code-braces: UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef) 
+4. See [:material-code-braces: UpdateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#updateexperimenttemplatelogconfigurationinputtypedef) 
+5. See [:material-code-braces: UpdateExperimentTemplateResponseTypeDef](./type_defs.md#updateexperimenttemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `description`: `str`
-- `stopConditions`:
-  `Sequence`\[[UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef)\]
-- `targets`: `Mapping`\[`str`,
-  [UpdateExperimentTemplateTargetInputTypeDef](./type_defs.md#updateexperimenttemplatetargetinputtypedef)\]
-- `actions`: `Mapping`\[`str`,
-  [UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef)\]
-- `roleArn`: `str`
-- `logConfiguration`:
-  [UpdateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#updateexperimenttemplatelogconfigurationinputtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateExperimentTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[UpdateExperimentTemplateResponseTypeDef](./type_defs.md#updateexperimenttemplateresponsetypedef).
+parent.update_experiment_template(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateExperimentTemplateRequestRequestTypeDef](./type_defs.md#updateexperimenttemplaterequestrequesttypedef) 
+
+
+
+

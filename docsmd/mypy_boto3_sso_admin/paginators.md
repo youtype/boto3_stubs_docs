@@ -1,36 +1,18 @@
-<a id="paginators-for-boto3-ssoadmin-module"></a>
-
-# Paginators for boto3 SSOAdmin module
+# Paginators
 
 > [Index](../README.md) > [SSOAdmin](./README.md) > Paginators
 
-Auto-generated documentation for
-[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
-type annotations stubs module
-[mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+!!! note ""
 
-- [Paginators for boto3 SSOAdmin module](#paginators-for-boto3-ssoadmin-module)
-  - [ListAccountAssignmentCreationStatusPaginator](#listaccountassignmentcreationstatuspaginator)
-  - [ListAccountAssignmentDeletionStatusPaginator](#listaccountassignmentdeletionstatuspaginator)
-  - [ListAccountAssignmentsPaginator](#listaccountassignmentspaginator)
-  - [ListAccountsForProvisionedPermissionSetPaginator](#listaccountsforprovisionedpermissionsetpaginator)
-  - [ListInstancesPaginator](#listinstancespaginator)
-  - [ListManagedPoliciesInPermissionSetPaginator](#listmanagedpoliciesinpermissionsetpaginator)
-  - [ListPermissionSetProvisioningStatusPaginator](#listpermissionsetprovisioningstatuspaginator)
-  - [ListPermissionSetsPaginator](#listpermissionsetspaginator)
-  - [ListPermissionSetsProvisionedToAccountPaginator](#listpermissionsetsprovisionedtoaccountpaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-
-<a id="listaccountassignmentcreationstatuspaginator"></a>
+    Auto-generated documentation for [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+    type annotations stubs module [mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 ## ListAccountAssignmentCreationStatusPaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_account_assignment_creation_status")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_account_assignment_creation_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentCreationStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListAccountAssignmentCreationStatusPaginator
@@ -39,30 +21,42 @@ def get_list_account_assignment_creation_status_paginator() -> ListAccountAssign
     return Session().client("sso-admin").get_paginator("list_account_assignment_creation_status")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListAccountAssignmentCreationStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentCreationStatus)
 
-Arguments for `ListAccountAssignmentCreationStatusPaginator.paginate` method:
+### paginate
 
-- `InstanceArn`: `str` *(required)*
-- `Filter`:
-  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountAssignmentCreationStatusPaginator.paginate` method.
 
-`ListAccountAssignmentCreationStatusPaginator.paginate` returns
-`_PageIterator`\[[ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    Filter: OperationStatusFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAccountAssignmentCreationStatusResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listaccountassignmentdeletionstatuspaginator"></a>
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountAssignmentCreationStatusRequestListAccountAssignmentCreationStatusPaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountAssignmentCreationStatusRequestListAccountAssignmentCreationStatusPaginateTypeDef](./type_defs.md#listaccountassignmentcreationstatusrequestlistaccountassignmentcreationstatuspaginatetypedef) 
 ## ListAccountAssignmentDeletionStatusPaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_account_assignment_deletion_status")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_account_assignment_deletion_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentDeletionStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListAccountAssignmentDeletionStatusPaginator
@@ -71,30 +65,42 @@ def get_list_account_assignment_deletion_status_paginator() -> ListAccountAssign
     return Session().client("sso-admin").get_paginator("list_account_assignment_deletion_status")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListAccountAssignmentDeletionStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignmentDeletionStatus)
 
-Arguments for `ListAccountAssignmentDeletionStatusPaginator.paginate` method:
+### paginate
 
-- `InstanceArn`: `str` *(required)*
-- `Filter`:
-  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountAssignmentDeletionStatusPaginator.paginate` method.
 
-`ListAccountAssignmentDeletionStatusPaginator.paginate` returns
-`_PageIterator`\[[ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    Filter: OperationStatusFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAccountAssignmentDeletionStatusResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listaccountassignmentspaginator"></a>
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountAssignmentDeletionStatusRequestListAccountAssignmentDeletionStatusPaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountAssignmentDeletionStatusRequestListAccountAssignmentDeletionStatusPaginateTypeDef](./type_defs.md#listaccountassignmentdeletionstatusrequestlistaccountassignmentdeletionstatuspaginatetypedef) 
 ## ListAccountAssignmentsPaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_account_assignments")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_account_assignments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListAccountAssignmentsPaginator
@@ -103,30 +109,44 @@ def get_list_account_assignments_paginator() -> ListAccountAssignmentsPaginator:
     return Session().client("sso-admin").get_paginator("list_account_assignments")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListAccountAssignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountAssignments)
 
-Arguments for `ListAccountAssignmentsPaginator.paginate` method:
+### paginate
 
-- `InstanceArn`: `str` *(required)*
-- `AccountId`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountAssignmentsPaginator.paginate` method.
 
-`ListAccountAssignmentsPaginator.paginate` returns
-`_PageIterator`\[[ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    AccountId: str,
+    PermissionSetArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAccountAssignmentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listaccountsforprovisionedpermissionsetpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountAssignmentsRequestListAccountAssignmentsPaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "AccountId": ...,
+    "PermissionSetArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountAssignmentsRequestListAccountAssignmentsPaginateTypeDef](./type_defs.md#listaccountassignmentsrequestlistaccountassignmentspaginatetypedef) 
 ## ListAccountsForProvisionedPermissionSetPaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_accounts_for_provisioned_permission_set")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_accounts_for_provisioned_permission_set")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountsForProvisionedPermissionSet)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListAccountsForProvisionedPermissionSetPaginator
@@ -135,32 +155,44 @@ def get_list_accounts_for_provisioned_permission_set_paginator() -> ListAccounts
     return Session().client("sso-admin").get_paginator("list_accounts_for_provisioned_permission_set")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListAccountsForProvisionedPermissionSet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListAccountsForProvisionedPermissionSet)
 
-Arguments for `ListAccountsForProvisionedPermissionSetPaginator.paginate`
-method:
+### paginate
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `ProvisioningStatus`:
-  [ProvisioningStatusType](./literals.md#provisioningstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountsForProvisionedPermissionSetPaginator.paginate` method.
 
-`ListAccountsForProvisionedPermissionSetPaginator.paginate` returns
-`_PageIterator`\[[ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    ProvisioningStatus: ProvisioningStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAccountsForProvisionedPermissionSetResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listinstancespaginator"></a>
+1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountsForProvisionedPermissionSetRequestListAccountsForProvisionedPermissionSetPaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountsForProvisionedPermissionSetRequestListAccountsForProvisionedPermissionSetPaginateTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetrequestlistaccountsforprovisionedpermissionsetpaginatetypedef) 
 ## ListInstancesPaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_instances")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListInstancesPaginator
@@ -169,27 +201,39 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
     return Session().client("sso-admin").get_paginator("list_instances")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListInstances)
 
-Arguments for `ListInstancesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInstancesPaginator.paginate` method.
 
-`ListInstancesPaginator.paginate` returns
-`_PageIterator`\[[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInstancesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmanagedpoliciesinpermissionsetpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInstancesRequestListInstancesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInstancesRequestListInstancesPaginateTypeDef](./type_defs.md#listinstancesrequestlistinstancespaginatetypedef) 
 ## ListManagedPoliciesInPermissionSetPaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_managed_policies_in_permission_set")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_managed_policies_in_permission_set")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListManagedPoliciesInPermissionSet)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListManagedPoliciesInPermissionSetPaginator
@@ -198,29 +242,42 @@ def get_list_managed_policies_in_permission_set_paginator() -> ListManagedPolici
     return Session().client("sso-admin").get_paginator("list_managed_policies_in_permission_set")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListManagedPoliciesInPermissionSet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListManagedPoliciesInPermissionSet)
 
-Arguments for `ListManagedPoliciesInPermissionSetPaginator.paginate` method:
+### paginate
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListManagedPoliciesInPermissionSetPaginator.paginate` method.
 
-`ListManagedPoliciesInPermissionSetPaginator.paginate` returns
-`_PageIterator`\[[ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListManagedPoliciesInPermissionSetResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpermissionsetprovisioningstatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListManagedPoliciesInPermissionSetRequestListManagedPoliciesInPermissionSetPaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListManagedPoliciesInPermissionSetRequestListManagedPoliciesInPermissionSetPaginateTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetrequestlistmanagedpoliciesinpermissionsetpaginatetypedef) 
 ## ListPermissionSetProvisioningStatusPaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_permission_set_provisioning_status")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_permission_set_provisioning_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetProvisioningStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListPermissionSetProvisioningStatusPaginator
@@ -229,30 +286,42 @@ def get_list_permission_set_provisioning_status_paginator() -> ListPermissionSet
     return Session().client("sso-admin").get_paginator("list_permission_set_provisioning_status")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListPermissionSetProvisioningStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetProvisioningStatus)
 
-Arguments for `ListPermissionSetProvisioningStatusPaginator.paginate` method:
+### paginate
 
-- `InstanceArn`: `str` *(required)*
-- `Filter`:
-  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPermissionSetProvisioningStatusPaginator.paginate` method.
 
-`ListPermissionSetProvisioningStatusPaginator.paginate` returns
-`_PageIterator`\[[ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    Filter: OperationStatusFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPermissionSetProvisioningStatusResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listpermissionsetspaginator"></a>
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPermissionSetProvisioningStatusRequestListPermissionSetProvisioningStatusPaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPermissionSetProvisioningStatusRequestListPermissionSetProvisioningStatusPaginateTypeDef](./type_defs.md#listpermissionsetprovisioningstatusrequestlistpermissionsetprovisioningstatuspaginatetypedef) 
 ## ListPermissionSetsPaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_permission_sets")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_permission_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListPermissionSetsPaginator
@@ -261,28 +330,40 @@ def get_list_permission_sets_paginator() -> ListPermissionSetsPaginator:
     return Session().client("sso-admin").get_paginator("list_permission_sets")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListPermissionSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSets)
 
-Arguments for `ListPermissionSetsPaginator.paginate` method:
+### paginate
 
-- `InstanceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPermissionSetsPaginator.paginate` method.
 
-`ListPermissionSetsPaginator.paginate` returns
-`_PageIterator`\[[ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPermissionSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpermissionsetsprovisionedtoaccountpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPermissionSetsRequestListPermissionSetsPaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPermissionSetsRequestListPermissionSetsPaginateTypeDef](./type_defs.md#listpermissionsetsrequestlistpermissionsetspaginatetypedef) 
 ## ListPermissionSetsProvisionedToAccountPaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_permission_sets_provisioned_to_account")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_permission_sets_provisioned_to_account")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetsProvisionedToAccount)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListPermissionSetsProvisionedToAccountPaginator
@@ -291,32 +372,44 @@ def get_list_permission_sets_provisioned_to_account_paginator() -> ListPermissio
     return Session().client("sso-admin").get_paginator("list_permission_sets_provisioned_to_account")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListPermissionSetsProvisionedToAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListPermissionSetsProvisionedToAccount)
 
-Arguments for `ListPermissionSetsProvisionedToAccountPaginator.paginate`
-method:
+### paginate
 
-- `InstanceArn`: `str` *(required)*
-- `AccountId`: `str` *(required)*
-- `ProvisioningStatus`:
-  [ProvisioningStatusType](./literals.md#provisioningstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPermissionSetsProvisionedToAccountPaginator.paginate` method.
 
-`ListPermissionSetsProvisionedToAccountPaginator.paginate` returns
-`_PageIterator`\[[ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    AccountId: str,
+    ProvisioningStatus: ProvisioningStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPermissionSetsProvisionedToAccountResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPermissionSetsProvisionedToAccountRequestListPermissionSetsProvisionedToAccountPaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "AccountId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPermissionSetsProvisionedToAccountRequestListPermissionSetsProvisionedToAccountPaginateTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountrequestlistpermissionsetsprovisionedtoaccountpaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("sso-admin").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sso_admin.paginator import ListTagsForResourcePaginator
@@ -325,15 +418,33 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("sso-admin").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `InstanceArn`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceArn: str,
+    ResourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "ResourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 

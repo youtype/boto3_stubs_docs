@@ -1,1526 +1,1636 @@
-<a id="literals-for-boto3-cloudformation-module"></a>
-
-# Literals for boto3 CloudFormation module
+# Literals
 
 > [Index](../README.md) > [CloudFormation](./README.md) > Literals
 
-Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module
-[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+!!! note ""
 
-- [Literals for boto3 CloudFormation module](#literals-for-boto3-cloudformation-module)
-  - [AccountGateStatusType](#accountgatestatustype)
-  - [CallAsType](#callastype)
-  - [CapabilityType](#capabilitytype)
-  - [CategoryType](#categorytype)
-  - [ChangeActionType](#changeactiontype)
-  - [ChangeSetCreateCompleteWaiterName](#changesetcreatecompletewaitername)
-  - [ChangeSetHooksStatusType](#changesethooksstatustype)
-  - [ChangeSetStatusType](#changesetstatustype)
-  - [ChangeSetTypeType](#changesettypetype)
-  - [ChangeSourceType](#changesourcetype)
-  - [ChangeTypeType](#changetypetype)
-  - [DeprecatedStatusType](#deprecatedstatustype)
-  - [DescribeAccountLimitsPaginatorName](#describeaccountlimitspaginatorname)
-  - [DescribeChangeSetPaginatorName](#describechangesetpaginatorname)
-  - [DescribeStackEventsPaginatorName](#describestackeventspaginatorname)
-  - [DescribeStacksPaginatorName](#describestackspaginatorname)
-  - [DifferenceTypeType](#differencetypetype)
-  - [EvaluationTypeType](#evaluationtypetype)
-  - [ExecutionStatusType](#executionstatustype)
-  - [HandlerErrorCodeType](#handlererrorcodetype)
-  - [HookFailureModeType](#hookfailuremodetype)
-  - [HookInvocationPointType](#hookinvocationpointtype)
-  - [HookStatusType](#hookstatustype)
-  - [HookTargetTypeType](#hooktargettypetype)
-  - [IdentityProviderType](#identityprovidertype)
-  - [ListChangeSetsPaginatorName](#listchangesetspaginatorname)
-  - [ListExportsPaginatorName](#listexportspaginatorname)
-  - [ListImportsPaginatorName](#listimportspaginatorname)
-  - [ListStackInstancesPaginatorName](#liststackinstancespaginatorname)
-  - [ListStackResourcesPaginatorName](#liststackresourcespaginatorname)
-  - [ListStackSetOperationResultsPaginatorName](#liststacksetoperationresultspaginatorname)
-  - [ListStackSetOperationsPaginatorName](#liststacksetoperationspaginatorname)
-  - [ListStackSetsPaginatorName](#liststacksetspaginatorname)
-  - [ListStacksPaginatorName](#liststackspaginatorname)
-  - [ListTypesPaginatorName](#listtypespaginatorname)
-  - [OnFailureType](#onfailuretype)
-  - [OperationStatusType](#operationstatustype)
-  - [PermissionModelsType](#permissionmodelstype)
-  - [ProvisioningTypeType](#provisioningtypetype)
-  - [PublisherStatusType](#publisherstatustype)
-  - [RegionConcurrencyTypeType](#regionconcurrencytypetype)
-  - [RegistrationStatusType](#registrationstatustype)
-  - [RegistryTypeType](#registrytypetype)
-  - [ReplacementType](#replacementtype)
-  - [RequiresRecreationType](#requiresrecreationtype)
-  - [ResourceAttributeType](#resourceattributetype)
-  - [ResourceSignalStatusType](#resourcesignalstatustype)
-  - [ResourceStatusType](#resourcestatustype)
-  - [StackCreateCompleteWaiterName](#stackcreatecompletewaitername)
-  - [StackDeleteCompleteWaiterName](#stackdeletecompletewaitername)
-  - [StackDriftDetectionStatusType](#stackdriftdetectionstatustype)
-  - [StackDriftStatusType](#stackdriftstatustype)
-  - [StackExistsWaiterName](#stackexistswaitername)
-  - [StackImportCompleteWaiterName](#stackimportcompletewaitername)
-  - [StackInstanceDetailedStatusType](#stackinstancedetailedstatustype)
-  - [StackInstanceFilterNameType](#stackinstancefilternametype)
-  - [StackInstanceStatusType](#stackinstancestatustype)
-  - [StackResourceDriftStatusType](#stackresourcedriftstatustype)
-  - [StackRollbackCompleteWaiterName](#stackrollbackcompletewaitername)
-  - [StackSetDriftDetectionStatusType](#stacksetdriftdetectionstatustype)
-  - [StackSetDriftStatusType](#stacksetdriftstatustype)
-  - [StackSetOperationActionType](#stacksetoperationactiontype)
-  - [StackSetOperationResultStatusType](#stacksetoperationresultstatustype)
-  - [StackSetOperationStatusType](#stacksetoperationstatustype)
-  - [StackSetStatusType](#stacksetstatustype)
-  - [StackStatusType](#stackstatustype)
-  - [StackUpdateCompleteWaiterName](#stackupdatecompletewaitername)
-  - [TemplateStageType](#templatestagetype)
-  - [ThirdPartyTypeType](#thirdpartytypetype)
-  - [TypeRegistrationCompleteWaiterName](#typeregistrationcompletewaitername)
-  - [TypeTestsStatusType](#typetestsstatustype)
-  - [VersionBumpType](#versionbumptype)
-  - [VisibilityType](#visibilitytype)
-  - [CloudFormationServiceName](#cloudformationservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="accountgatestatustype"></a>
+    Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+    type annotations stubs module [mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 ## AccountGateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import AccountGateStatusType
+
+def get_value() -> AccountGateStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `SKIPPED`
-- `SUCCEEDED`
-
-<a id="callastype"></a>
-
+```python title="Definition"
+AccountGateStatusType = Literal[
+    "FAILED",
+    "SKIPPED",
+    "SUCCEEDED",
+]
+```
 ## CallAsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import CallAsType
+
+def get_value() -> CallAsType:
+    return "DELEGATED_ADMIN"
 ```
 
-Values:
-
-- `DELEGATED_ADMIN`
-- `SELF`
-
-<a id="capabilitytype"></a>
-
+```python title="Definition"
+CallAsType = Literal[
+    "DELEGATED_ADMIN",
+    "SELF",
+]
+```
 ## CapabilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import CapabilityType
+
+def get_value() -> CapabilityType:
+    return "CAPABILITY_AUTO_EXPAND"
 ```
 
-Values:
-
-- `CAPABILITY_AUTO_EXPAND`
-- `CAPABILITY_IAM`
-- `CAPABILITY_NAMED_IAM`
-
-<a id="categorytype"></a>
-
+```python title="Definition"
+CapabilityType = Literal[
+    "CAPABILITY_AUTO_EXPAND",
+    "CAPABILITY_IAM",
+    "CAPABILITY_NAMED_IAM",
+]
+```
 ## CategoryType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import CategoryType
+
+def get_value() -> CategoryType:
+    return "ACTIVATED"
 ```
 
-Values:
-
-- `ACTIVATED`
-- `AWS_TYPES`
-- `REGISTERED`
-- `THIRD_PARTY`
-
-<a id="changeactiontype"></a>
-
+```python title="Definition"
+CategoryType = Literal[
+    "ACTIVATED",
+    "AWS_TYPES",
+    "REGISTERED",
+    "THIRD_PARTY",
+]
+```
 ## ChangeActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ChangeActionType
+
+def get_value() -> ChangeActionType:
+    return "Add"
 ```
 
-Values:
-
-- `Add`
-- `Dynamic`
-- `Import`
-- `Modify`
-- `Remove`
-
-<a id="changesetcreatecompletewaitername"></a>
-
+```python title="Definition"
+ChangeActionType = Literal[
+    "Add",
+    "Dynamic",
+    "Import",
+    "Modify",
+    "Remove",
+]
+```
 ## ChangeSetCreateCompleteWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ChangeSetCreateCompleteWaiterName
+
+def get_value() -> ChangeSetCreateCompleteWaiterName:
+    return "change_set_create_complete"
 ```
 
-Values:
-
-- `change_set_create_complete`
-
-<a id="changesethooksstatustype"></a>
-
+```python title="Definition"
+ChangeSetCreateCompleteWaiterName = Literal[
+    "change_set_create_complete",
+]
+```
 ## ChangeSetHooksStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ChangeSetHooksStatusType
+
+def get_value() -> ChangeSetHooksStatusType:
+    return "PLANNED"
 ```
 
-Values:
-
-- `PLANNED`
-- `PLANNING`
-- `UNAVAILABLE`
-
-<a id="changesetstatustype"></a>
-
+```python title="Definition"
+ChangeSetHooksStatusType = Literal[
+    "PLANNED",
+    "PLANNING",
+    "UNAVAILABLE",
+]
+```
 ## ChangeSetStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ChangeSetStatusType
+
+def get_value() -> ChangeSetStatusType:
+    return "CREATE_COMPLETE"
 ```
 
-Values:
-
-- `CREATE_COMPLETE`
-- `CREATE_IN_PROGRESS`
-- `CREATE_PENDING`
-- `DELETE_COMPLETE`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `DELETE_PENDING`
-- `FAILED`
-
-<a id="changesettypetype"></a>
-
+```python title="Definition"
+ChangeSetStatusType = Literal[
+    "CREATE_COMPLETE",
+    "CREATE_IN_PROGRESS",
+    "CREATE_PENDING",
+    "DELETE_COMPLETE",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "DELETE_PENDING",
+    "FAILED",
+]
+```
 ## ChangeSetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ChangeSetTypeType
+
+def get_value() -> ChangeSetTypeType:
+    return "CREATE"
 ```
 
-Values:
-
-- `CREATE`
-- `IMPORT`
-- `UPDATE`
-
-<a id="changesourcetype"></a>
-
+```python title="Definition"
+ChangeSetTypeType = Literal[
+    "CREATE",
+    "IMPORT",
+    "UPDATE",
+]
+```
 ## ChangeSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ChangeSourceType
+
+def get_value() -> ChangeSourceType:
+    return "Automatic"
 ```
 
-Values:
-
-- `Automatic`
-- `DirectModification`
-- `ParameterReference`
-- `ResourceAttribute`
-- `ResourceReference`
-
-<a id="changetypetype"></a>
-
+```python title="Definition"
+ChangeSourceType = Literal[
+    "Automatic",
+    "DirectModification",
+    "ParameterReference",
+    "ResourceAttribute",
+    "ResourceReference",
+]
+```
 ## ChangeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ChangeTypeType
+
+def get_value() -> ChangeTypeType:
+    return "Resource"
 ```
 
-Values:
-
-- `Resource`
-
-<a id="deprecatedstatustype"></a>
-
+```python title="Definition"
+ChangeTypeType = Literal[
+    "Resource",
+]
+```
 ## DeprecatedStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import DeprecatedStatusType
+
+def get_value() -> DeprecatedStatusType:
+    return "DEPRECATED"
 ```
 
-Values:
-
-- `DEPRECATED`
-- `LIVE`
-
-<a id="describeaccountlimitspaginatorname"></a>
-
+```python title="Definition"
+DeprecatedStatusType = Literal[
+    "DEPRECATED",
+    "LIVE",
+]
+```
 ## DescribeAccountLimitsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import DescribeAccountLimitsPaginatorName
+
+def get_value() -> DescribeAccountLimitsPaginatorName:
+    return "describe_account_limits"
 ```
 
-Values:
-
-- `describe_account_limits`
-
-<a id="describechangesetpaginatorname"></a>
-
+```python title="Definition"
+DescribeAccountLimitsPaginatorName = Literal[
+    "describe_account_limits",
+]
+```
 ## DescribeChangeSetPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import DescribeChangeSetPaginatorName
+
+def get_value() -> DescribeChangeSetPaginatorName:
+    return "describe_change_set"
 ```
 
-Values:
-
-- `describe_change_set`
-
-<a id="describestackeventspaginatorname"></a>
-
+```python title="Definition"
+DescribeChangeSetPaginatorName = Literal[
+    "describe_change_set",
+]
+```
 ## DescribeStackEventsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import DescribeStackEventsPaginatorName
+
+def get_value() -> DescribeStackEventsPaginatorName:
+    return "describe_stack_events"
 ```
 
-Values:
-
-- `describe_stack_events`
-
-<a id="describestackspaginatorname"></a>
-
+```python title="Definition"
+DescribeStackEventsPaginatorName = Literal[
+    "describe_stack_events",
+]
+```
 ## DescribeStacksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import DescribeStacksPaginatorName
+
+def get_value() -> DescribeStacksPaginatorName:
+    return "describe_stacks"
 ```
 
-Values:
-
-- `describe_stacks`
-
-<a id="differencetypetype"></a>
-
+```python title="Definition"
+DescribeStacksPaginatorName = Literal[
+    "describe_stacks",
+]
+```
 ## DifferenceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import DifferenceTypeType
+
+def get_value() -> DifferenceTypeType:
+    return "ADD"
 ```
 
-Values:
-
-- `ADD`
-- `NOT_EQUAL`
-- `REMOVE`
-
-<a id="evaluationtypetype"></a>
-
+```python title="Definition"
+DifferenceTypeType = Literal[
+    "ADD",
+    "NOT_EQUAL",
+    "REMOVE",
+]
+```
 ## EvaluationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import EvaluationTypeType
+
+def get_value() -> EvaluationTypeType:
+    return "Dynamic"
 ```
 
-Values:
-
-- `Dynamic`
-- `Static`
-
-<a id="executionstatustype"></a>
-
+```python title="Definition"
+EvaluationTypeType = Literal[
+    "Dynamic",
+    "Static",
+]
+```
 ## ExecutionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ExecutionStatusType
+
+def get_value() -> ExecutionStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `EXECUTE_COMPLETE`
-- `EXECUTE_FAILED`
-- `EXECUTE_IN_PROGRESS`
-- `OBSOLETE`
-- `UNAVAILABLE`
-
-<a id="handlererrorcodetype"></a>
-
+```python title="Definition"
+ExecutionStatusType = Literal[
+    "AVAILABLE",
+    "EXECUTE_COMPLETE",
+    "EXECUTE_FAILED",
+    "EXECUTE_IN_PROGRESS",
+    "OBSOLETE",
+    "UNAVAILABLE",
+]
+```
 ## HandlerErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import HandlerErrorCodeType
+
+def get_value() -> HandlerErrorCodeType:
+    return "AccessDenied"
 ```
 
-Values:
-
-- `AccessDenied`
-- `AlreadyExists`
-- `GeneralServiceException`
-- `HandlerInternalFailure`
-- `InternalFailure`
-- `InvalidCredentials`
-- `InvalidRequest`
-- `InvalidTypeConfiguration`
-- `NetworkFailure`
-- `NonCompliant`
-- `NotFound`
-- `NotStabilized`
-- `NotUpdatable`
-- `ResourceConflict`
-- `ServiceInternalError`
-- `ServiceLimitExceeded`
-- `Throttling`
-- `Unknown`
-
-<a id="hookfailuremodetype"></a>
-
+```python title="Definition"
+HandlerErrorCodeType = Literal[
+    "AccessDenied",
+    "AlreadyExists",
+    "GeneralServiceException",
+    "HandlerInternalFailure",
+    "InternalFailure",
+    "InvalidCredentials",
+    "InvalidRequest",
+    "InvalidTypeConfiguration",
+    "NetworkFailure",
+    "NonCompliant",
+    "NotFound",
+    "NotStabilized",
+    "NotUpdatable",
+    "ResourceConflict",
+    "ServiceInternalError",
+    "ServiceLimitExceeded",
+    "Throttling",
+    "Unknown",
+]
+```
 ## HookFailureModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import HookFailureModeType
+
+def get_value() -> HookFailureModeType:
+    return "FAIL"
 ```
 
-Values:
-
-- `FAIL`
-- `WARN`
-
-<a id="hookinvocationpointtype"></a>
-
+```python title="Definition"
+HookFailureModeType = Literal[
+    "FAIL",
+    "WARN",
+]
+```
 ## HookInvocationPointType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import HookInvocationPointType
+
+def get_value() -> HookInvocationPointType:
+    return "PRE_PROVISION"
 ```
 
-Values:
-
-- `PRE_PROVISION`
-
-<a id="hookstatustype"></a>
-
+```python title="Definition"
+HookInvocationPointType = Literal[
+    "PRE_PROVISION",
+]
+```
 ## HookStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import HookStatusType
+
+def get_value() -> HookStatusType:
+    return "HOOK_COMPLETE_FAILED"
 ```
 
-Values:
-
-- `HOOK_COMPLETE_FAILED`
-- `HOOK_COMPLETE_SUCCEEDED`
-- `HOOK_FAILED`
-- `HOOK_IN_PROGRESS`
-
-<a id="hooktargettypetype"></a>
-
+```python title="Definition"
+HookStatusType = Literal[
+    "HOOK_COMPLETE_FAILED",
+    "HOOK_COMPLETE_SUCCEEDED",
+    "HOOK_FAILED",
+    "HOOK_IN_PROGRESS",
+]
+```
 ## HookTargetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import HookTargetTypeType
+
+def get_value() -> HookTargetTypeType:
+    return "RESOURCE"
 ```
 
-Values:
-
-- `RESOURCE`
-
-<a id="identityprovidertype"></a>
-
+```python title="Definition"
+HookTargetTypeType = Literal[
+    "RESOURCE",
+]
+```
 ## IdentityProviderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import IdentityProviderType
+
+def get_value() -> IdentityProviderType:
+    return "AWS_Marketplace"
 ```
 
-Values:
-
-- `AWS_Marketplace`
-- `Bitbucket`
-- `GitHub`
-
-<a id="listchangesetspaginatorname"></a>
-
+```python title="Definition"
+IdentityProviderType = Literal[
+    "AWS_Marketplace",
+    "Bitbucket",
+    "GitHub",
+]
+```
 ## ListChangeSetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListChangeSetsPaginatorName
+
+def get_value() -> ListChangeSetsPaginatorName:
+    return "list_change_sets"
 ```
 
-Values:
-
-- `list_change_sets`
-
-<a id="listexportspaginatorname"></a>
-
+```python title="Definition"
+ListChangeSetsPaginatorName = Literal[
+    "list_change_sets",
+]
+```
 ## ListExportsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListExportsPaginatorName
+
+def get_value() -> ListExportsPaginatorName:
+    return "list_exports"
 ```
 
-Values:
-
-- `list_exports`
-
-<a id="listimportspaginatorname"></a>
-
+```python title="Definition"
+ListExportsPaginatorName = Literal[
+    "list_exports",
+]
+```
 ## ListImportsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListImportsPaginatorName
+
+def get_value() -> ListImportsPaginatorName:
+    return "list_imports"
 ```
 
-Values:
-
-- `list_imports`
-
-<a id="liststackinstancespaginatorname"></a>
-
+```python title="Definition"
+ListImportsPaginatorName = Literal[
+    "list_imports",
+]
+```
 ## ListStackInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListStackInstancesPaginatorName
+
+def get_value() -> ListStackInstancesPaginatorName:
+    return "list_stack_instances"
 ```
 
-Values:
-
-- `list_stack_instances`
-
-<a id="liststackresourcespaginatorname"></a>
-
+```python title="Definition"
+ListStackInstancesPaginatorName = Literal[
+    "list_stack_instances",
+]
+```
 ## ListStackResourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListStackResourcesPaginatorName
+
+def get_value() -> ListStackResourcesPaginatorName:
+    return "list_stack_resources"
 ```
 
-Values:
-
-- `list_stack_resources`
-
-<a id="liststacksetoperationresultspaginatorname"></a>
-
+```python title="Definition"
+ListStackResourcesPaginatorName = Literal[
+    "list_stack_resources",
+]
+```
 ## ListStackSetOperationResultsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListStackSetOperationResultsPaginatorName
+
+def get_value() -> ListStackSetOperationResultsPaginatorName:
+    return "list_stack_set_operation_results"
 ```
 
-Values:
-
-- `list_stack_set_operation_results`
-
-<a id="liststacksetoperationspaginatorname"></a>
-
+```python title="Definition"
+ListStackSetOperationResultsPaginatorName = Literal[
+    "list_stack_set_operation_results",
+]
+```
 ## ListStackSetOperationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListStackSetOperationsPaginatorName
+
+def get_value() -> ListStackSetOperationsPaginatorName:
+    return "list_stack_set_operations"
 ```
 
-Values:
-
-- `list_stack_set_operations`
-
-<a id="liststacksetspaginatorname"></a>
-
+```python title="Definition"
+ListStackSetOperationsPaginatorName = Literal[
+    "list_stack_set_operations",
+]
+```
 ## ListStackSetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListStackSetsPaginatorName
+
+def get_value() -> ListStackSetsPaginatorName:
+    return "list_stack_sets"
 ```
 
-Values:
-
-- `list_stack_sets`
-
-<a id="liststackspaginatorname"></a>
-
+```python title="Definition"
+ListStackSetsPaginatorName = Literal[
+    "list_stack_sets",
+]
+```
 ## ListStacksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListStacksPaginatorName
+
+def get_value() -> ListStacksPaginatorName:
+    return "list_stacks"
 ```
 
-Values:
-
-- `list_stacks`
-
-<a id="listtypespaginatorname"></a>
-
+```python title="Definition"
+ListStacksPaginatorName = Literal[
+    "list_stacks",
+]
+```
 ## ListTypesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ListTypesPaginatorName
+
+def get_value() -> ListTypesPaginatorName:
+    return "list_types"
 ```
 
-Values:
-
-- `list_types`
-
-<a id="onfailuretype"></a>
-
+```python title="Definition"
+ListTypesPaginatorName = Literal[
+    "list_types",
+]
+```
 ## OnFailureType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import OnFailureType
+
+def get_value() -> OnFailureType:
+    return "DELETE"
 ```
 
-Values:
-
-- `DELETE`
-- `DO_NOTHING`
-- `ROLLBACK`
-
-<a id="operationstatustype"></a>
-
+```python title="Definition"
+OnFailureType = Literal[
+    "DELETE",
+    "DO_NOTHING",
+    "ROLLBACK",
+]
+```
 ## OperationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import OperationStatusType
+
+def get_value() -> OperationStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `PENDING`
-- `SUCCESS`
-
-<a id="permissionmodelstype"></a>
-
+```python title="Definition"
+OperationStatusType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "PENDING",
+    "SUCCESS",
+]
+```
 ## PermissionModelsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import PermissionModelsType
+
+def get_value() -> PermissionModelsType:
+    return "SELF_MANAGED"
 ```
 
-Values:
-
-- `SELF_MANAGED`
-- `SERVICE_MANAGED`
-
-<a id="provisioningtypetype"></a>
-
+```python title="Definition"
+PermissionModelsType = Literal[
+    "SELF_MANAGED",
+    "SERVICE_MANAGED",
+]
+```
 ## ProvisioningTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ProvisioningTypeType
+
+def get_value() -> ProvisioningTypeType:
+    return "FULLY_MUTABLE"
 ```
 
-Values:
-
-- `FULLY_MUTABLE`
-- `IMMUTABLE`
-- `NON_PROVISIONABLE`
-
-<a id="publisherstatustype"></a>
-
+```python title="Definition"
+ProvisioningTypeType = Literal[
+    "FULLY_MUTABLE",
+    "IMMUTABLE",
+    "NON_PROVISIONABLE",
+]
+```
 ## PublisherStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import PublisherStatusType
+
+def get_value() -> PublisherStatusType:
+    return "UNVERIFIED"
 ```
 
-Values:
-
-- `UNVERIFIED`
-- `VERIFIED`
-
-<a id="regionconcurrencytypetype"></a>
-
+```python title="Definition"
+PublisherStatusType = Literal[
+    "UNVERIFIED",
+    "VERIFIED",
+]
+```
 ## RegionConcurrencyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import RegionConcurrencyTypeType
+
+def get_value() -> RegionConcurrencyTypeType:
+    return "PARALLEL"
 ```
 
-Values:
-
-- `PARALLEL`
-- `SEQUENTIAL`
-
-<a id="registrationstatustype"></a>
-
+```python title="Definition"
+RegionConcurrencyTypeType = Literal[
+    "PARALLEL",
+    "SEQUENTIAL",
+]
+```
 ## RegistrationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import RegistrationStatusType
+
+def get_value() -> RegistrationStatusType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `FAILED`
-- `IN_PROGRESS`
-
-<a id="registrytypetype"></a>
-
+```python title="Definition"
+RegistrationStatusType = Literal[
+    "COMPLETE",
+    "FAILED",
+    "IN_PROGRESS",
+]
+```
 ## RegistryTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import RegistryTypeType
+
+def get_value() -> RegistryTypeType:
+    return "HOOK"
 ```
 
-Values:
-
-- `HOOK`
-- `MODULE`
-- `RESOURCE`
-
-<a id="replacementtype"></a>
-
+```python title="Definition"
+RegistryTypeType = Literal[
+    "HOOK",
+    "MODULE",
+    "RESOURCE",
+]
+```
 ## ReplacementType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ReplacementType
+
+def get_value() -> ReplacementType:
+    return "Conditional"
 ```
 
-Values:
-
-- `Conditional`
-- `False`
-- `True`
-
-<a id="requiresrecreationtype"></a>
-
+```python title="Definition"
+ReplacementType = Literal[
+    "Conditional",
+    "False",
+    "True",
+]
+```
 ## RequiresRecreationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import RequiresRecreationType
+
+def get_value() -> RequiresRecreationType:
+    return "Always"
 ```
 
-Values:
-
-- `Always`
-- `Conditionally`
-- `Never`
-
-<a id="resourceattributetype"></a>
-
+```python title="Definition"
+RequiresRecreationType = Literal[
+    "Always",
+    "Conditionally",
+    "Never",
+]
+```
 ## ResourceAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ResourceAttributeType
+
+def get_value() -> ResourceAttributeType:
+    return "CreationPolicy"
 ```
 
-Values:
-
-- `CreationPolicy`
-- `DeletionPolicy`
-- `Metadata`
-- `Properties`
-- `Tags`
-- `UpdatePolicy`
-
-<a id="resourcesignalstatustype"></a>
-
+```python title="Definition"
+ResourceAttributeType = Literal[
+    "CreationPolicy",
+    "DeletionPolicy",
+    "Metadata",
+    "Properties",
+    "Tags",
+    "UpdatePolicy",
+]
+```
 ## ResourceSignalStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ResourceSignalStatusType
+
+def get_value() -> ResourceSignalStatusType:
+    return "FAILURE"
 ```
 
-Values:
-
-- `FAILURE`
-- `SUCCESS`
-
-<a id="resourcestatustype"></a>
-
+```python title="Definition"
+ResourceSignalStatusType = Literal[
+    "FAILURE",
+    "SUCCESS",
+]
+```
 ## ResourceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ResourceStatusType
+
+def get_value() -> ResourceStatusType:
+    return "CREATE_COMPLETE"
 ```
 
-Values:
-
-- `CREATE_COMPLETE`
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `DELETE_COMPLETE`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `DELETE_SKIPPED`
-- `IMPORT_COMPLETE`
-- `IMPORT_FAILED`
-- `IMPORT_IN_PROGRESS`
-- `IMPORT_ROLLBACK_COMPLETE`
-- `IMPORT_ROLLBACK_FAILED`
-- `IMPORT_ROLLBACK_IN_PROGRESS`
-- `ROLLBACK_COMPLETE`
-- `ROLLBACK_FAILED`
-- `ROLLBACK_IN_PROGRESS`
-- `UPDATE_COMPLETE`
-- `UPDATE_COMPLETE_CLEANUP_IN_PROGRESS`
-- `UPDATE_FAILED`
-- `UPDATE_IN_PROGRESS`
-- `UPDATE_ROLLBACK_COMPLETE`
-- `UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS`
-- `UPDATE_ROLLBACK_FAILED`
-- `UPDATE_ROLLBACK_IN_PROGRESS`
-
-<a id="stackcreatecompletewaitername"></a>
-
+```python title="Definition"
+ResourceStatusType = Literal[
+    "CREATE_COMPLETE",
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "DELETE_COMPLETE",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "DELETE_SKIPPED",
+    "IMPORT_COMPLETE",
+    "IMPORT_FAILED",
+    "IMPORT_IN_PROGRESS",
+    "IMPORT_ROLLBACK_COMPLETE",
+    "IMPORT_ROLLBACK_FAILED",
+    "IMPORT_ROLLBACK_IN_PROGRESS",
+    "ROLLBACK_COMPLETE",
+    "ROLLBACK_FAILED",
+    "ROLLBACK_IN_PROGRESS",
+    "UPDATE_COMPLETE",
+    "UPDATE_COMPLETE_CLEANUP_IN_PROGRESS",
+    "UPDATE_FAILED",
+    "UPDATE_IN_PROGRESS",
+    "UPDATE_ROLLBACK_COMPLETE",
+    "UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS",
+    "UPDATE_ROLLBACK_FAILED",
+    "UPDATE_ROLLBACK_IN_PROGRESS",
+]
+```
 ## StackCreateCompleteWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackCreateCompleteWaiterName
+
+def get_value() -> StackCreateCompleteWaiterName:
+    return "stack_create_complete"
 ```
 
-Values:
-
-- `stack_create_complete`
-
-<a id="stackdeletecompletewaitername"></a>
-
+```python title="Definition"
+StackCreateCompleteWaiterName = Literal[
+    "stack_create_complete",
+]
+```
 ## StackDeleteCompleteWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackDeleteCompleteWaiterName
+
+def get_value() -> StackDeleteCompleteWaiterName:
+    return "stack_delete_complete"
 ```
 
-Values:
-
-- `stack_delete_complete`
-
-<a id="stackdriftdetectionstatustype"></a>
-
+```python title="Definition"
+StackDeleteCompleteWaiterName = Literal[
+    "stack_delete_complete",
+]
+```
 ## StackDriftDetectionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackDriftDetectionStatusType
+
+def get_value() -> StackDriftDetectionStatusType:
+    return "DETECTION_COMPLETE"
 ```
 
-Values:
-
-- `DETECTION_COMPLETE`
-- `DETECTION_FAILED`
-- `DETECTION_IN_PROGRESS`
-
-<a id="stackdriftstatustype"></a>
-
+```python title="Definition"
+StackDriftDetectionStatusType = Literal[
+    "DETECTION_COMPLETE",
+    "DETECTION_FAILED",
+    "DETECTION_IN_PROGRESS",
+]
+```
 ## StackDriftStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackDriftStatusType
+
+def get_value() -> StackDriftStatusType:
+    return "DRIFTED"
 ```
 
-Values:
-
-- `DRIFTED`
-- `IN_SYNC`
-- `NOT_CHECKED`
-- `UNKNOWN`
-
-<a id="stackexistswaitername"></a>
-
+```python title="Definition"
+StackDriftStatusType = Literal[
+    "DRIFTED",
+    "IN_SYNC",
+    "NOT_CHECKED",
+    "UNKNOWN",
+]
+```
 ## StackExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackExistsWaiterName
+
+def get_value() -> StackExistsWaiterName:
+    return "stack_exists"
 ```
 
-Values:
-
-- `stack_exists`
-
-<a id="stackimportcompletewaitername"></a>
-
+```python title="Definition"
+StackExistsWaiterName = Literal[
+    "stack_exists",
+]
+```
 ## StackImportCompleteWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackImportCompleteWaiterName
+
+def get_value() -> StackImportCompleteWaiterName:
+    return "stack_import_complete"
 ```
 
-Values:
-
-- `stack_import_complete`
-
-<a id="stackinstancedetailedstatustype"></a>
-
+```python title="Definition"
+StackImportCompleteWaiterName = Literal[
+    "stack_import_complete",
+]
+```
 ## StackInstanceDetailedStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackInstanceDetailedStatusType
+
+def get_value() -> StackInstanceDetailedStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `FAILED`
-- `INOPERABLE`
-- `PENDING`
-- `RUNNING`
-- `SUCCEEDED`
-
-<a id="stackinstancefilternametype"></a>
-
+```python title="Definition"
+StackInstanceDetailedStatusType = Literal[
+    "CANCELLED",
+    "FAILED",
+    "INOPERABLE",
+    "PENDING",
+    "RUNNING",
+    "SUCCEEDED",
+]
+```
 ## StackInstanceFilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackInstanceFilterNameType
+
+def get_value() -> StackInstanceFilterNameType:
+    return "DETAILED_STATUS"
 ```
 
-Values:
-
-- `DETAILED_STATUS`
-
-<a id="stackinstancestatustype"></a>
-
+```python title="Definition"
+StackInstanceFilterNameType = Literal[
+    "DETAILED_STATUS",
+]
+```
 ## StackInstanceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackInstanceStatusType
+
+def get_value() -> StackInstanceStatusType:
+    return "CURRENT"
 ```
 
-Values:
-
-- `CURRENT`
-- `INOPERABLE`
-- `OUTDATED`
-
-<a id="stackresourcedriftstatustype"></a>
-
+```python title="Definition"
+StackInstanceStatusType = Literal[
+    "CURRENT",
+    "INOPERABLE",
+    "OUTDATED",
+]
+```
 ## StackResourceDriftStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackResourceDriftStatusType
+
+def get_value() -> StackResourceDriftStatusType:
+    return "DELETED"
 ```
 
-Values:
-
-- `DELETED`
-- `IN_SYNC`
-- `MODIFIED`
-- `NOT_CHECKED`
-
-<a id="stackrollbackcompletewaitername"></a>
-
+```python title="Definition"
+StackResourceDriftStatusType = Literal[
+    "DELETED",
+    "IN_SYNC",
+    "MODIFIED",
+    "NOT_CHECKED",
+]
+```
 ## StackRollbackCompleteWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackRollbackCompleteWaiterName
+
+def get_value() -> StackRollbackCompleteWaiterName:
+    return "stack_rollback_complete"
 ```
 
-Values:
-
-- `stack_rollback_complete`
-
-<a id="stacksetdriftdetectionstatustype"></a>
-
+```python title="Definition"
+StackRollbackCompleteWaiterName = Literal[
+    "stack_rollback_complete",
+]
+```
 ## StackSetDriftDetectionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackSetDriftDetectionStatusType
+
+def get_value() -> StackSetDriftDetectionStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `IN_PROGRESS`
-- `PARTIAL_SUCCESS`
-- `STOPPED`
-
-<a id="stacksetdriftstatustype"></a>
-
+```python title="Definition"
+StackSetDriftDetectionStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "IN_PROGRESS",
+    "PARTIAL_SUCCESS",
+    "STOPPED",
+]
+```
 ## StackSetDriftStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackSetDriftStatusType
+
+def get_value() -> StackSetDriftStatusType:
+    return "DRIFTED"
 ```
 
-Values:
-
-- `DRIFTED`
-- `IN_SYNC`
-- `NOT_CHECKED`
-
-<a id="stacksetoperationactiontype"></a>
-
+```python title="Definition"
+StackSetDriftStatusType = Literal[
+    "DRIFTED",
+    "IN_SYNC",
+    "NOT_CHECKED",
+]
+```
 ## StackSetOperationActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackSetOperationActionType
+
+def get_value() -> StackSetOperationActionType:
+    return "CREATE"
 ```
 
-Values:
-
-- `CREATE`
-- `DELETE`
-- `DETECT_DRIFT`
-- `UPDATE`
-
-<a id="stacksetoperationresultstatustype"></a>
-
+```python title="Definition"
+StackSetOperationActionType = Literal[
+    "CREATE",
+    "DELETE",
+    "DETECT_DRIFT",
+    "UPDATE",
+]
+```
 ## StackSetOperationResultStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackSetOperationResultStatusType
+
+def get_value() -> StackSetOperationResultStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `FAILED`
-- `PENDING`
-- `RUNNING`
-- `SUCCEEDED`
-
-<a id="stacksetoperationstatustype"></a>
-
+```python title="Definition"
+StackSetOperationResultStatusType = Literal[
+    "CANCELLED",
+    "FAILED",
+    "PENDING",
+    "RUNNING",
+    "SUCCEEDED",
+]
+```
 ## StackSetOperationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackSetOperationStatusType
+
+def get_value() -> StackSetOperationStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `QUEUED`
-- `RUNNING`
-- `STOPPED`
-- `STOPPING`
-- `SUCCEEDED`
-
-<a id="stacksetstatustype"></a>
-
+```python title="Definition"
+StackSetOperationStatusType = Literal[
+    "FAILED",
+    "QUEUED",
+    "RUNNING",
+    "STOPPED",
+    "STOPPING",
+    "SUCCEEDED",
+]
+```
 ## StackSetStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackSetStatusType
+
+def get_value() -> StackSetStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DELETED`
-
-<a id="stackstatustype"></a>
-
+```python title="Definition"
+StackSetStatusType = Literal[
+    "ACTIVE",
+    "DELETED",
+]
+```
 ## StackStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackStatusType
+
+def get_value() -> StackStatusType:
+    return "CREATE_COMPLETE"
 ```
 
-Values:
-
-- `CREATE_COMPLETE`
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `DELETE_COMPLETE`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `IMPORT_COMPLETE`
-- `IMPORT_IN_PROGRESS`
-- `IMPORT_ROLLBACK_COMPLETE`
-- `IMPORT_ROLLBACK_FAILED`
-- `IMPORT_ROLLBACK_IN_PROGRESS`
-- `REVIEW_IN_PROGRESS`
-- `ROLLBACK_COMPLETE`
-- `ROLLBACK_FAILED`
-- `ROLLBACK_IN_PROGRESS`
-- `UPDATE_COMPLETE`
-- `UPDATE_COMPLETE_CLEANUP_IN_PROGRESS`
-- `UPDATE_FAILED`
-- `UPDATE_IN_PROGRESS`
-- `UPDATE_ROLLBACK_COMPLETE`
-- `UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS`
-- `UPDATE_ROLLBACK_FAILED`
-- `UPDATE_ROLLBACK_IN_PROGRESS`
-
-<a id="stackupdatecompletewaitername"></a>
-
+```python title="Definition"
+StackStatusType = Literal[
+    "CREATE_COMPLETE",
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "DELETE_COMPLETE",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "IMPORT_COMPLETE",
+    "IMPORT_IN_PROGRESS",
+    "IMPORT_ROLLBACK_COMPLETE",
+    "IMPORT_ROLLBACK_FAILED",
+    "IMPORT_ROLLBACK_IN_PROGRESS",
+    "REVIEW_IN_PROGRESS",
+    "ROLLBACK_COMPLETE",
+    "ROLLBACK_FAILED",
+    "ROLLBACK_IN_PROGRESS",
+    "UPDATE_COMPLETE",
+    "UPDATE_COMPLETE_CLEANUP_IN_PROGRESS",
+    "UPDATE_FAILED",
+    "UPDATE_IN_PROGRESS",
+    "UPDATE_ROLLBACK_COMPLETE",
+    "UPDATE_ROLLBACK_COMPLETE_CLEANUP_IN_PROGRESS",
+    "UPDATE_ROLLBACK_FAILED",
+    "UPDATE_ROLLBACK_IN_PROGRESS",
+]
+```
 ## StackUpdateCompleteWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import StackUpdateCompleteWaiterName
+
+def get_value() -> StackUpdateCompleteWaiterName:
+    return "stack_update_complete"
 ```
 
-Values:
-
-- `stack_update_complete`
-
-<a id="templatestagetype"></a>
-
+```python title="Definition"
+StackUpdateCompleteWaiterName = Literal[
+    "stack_update_complete",
+]
+```
 ## TemplateStageType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import TemplateStageType
+
+def get_value() -> TemplateStageType:
+    return "Original"
 ```
 
-Values:
-
-- `Original`
-- `Processed`
-
-<a id="thirdpartytypetype"></a>
-
+```python title="Definition"
+TemplateStageType = Literal[
+    "Original",
+    "Processed",
+]
+```
 ## ThirdPartyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ThirdPartyTypeType
+
+def get_value() -> ThirdPartyTypeType:
+    return "HOOK"
 ```
 
-Values:
-
-- `HOOK`
-- `MODULE`
-- `RESOURCE`
-
-<a id="typeregistrationcompletewaitername"></a>
-
+```python title="Definition"
+ThirdPartyTypeType = Literal[
+    "HOOK",
+    "MODULE",
+    "RESOURCE",
+]
+```
 ## TypeRegistrationCompleteWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import TypeRegistrationCompleteWaiterName
+
+def get_value() -> TypeRegistrationCompleteWaiterName:
+    return "type_registration_complete"
 ```
 
-Values:
-
-- `type_registration_complete`
-
-<a id="typetestsstatustype"></a>
-
+```python title="Definition"
+TypeRegistrationCompleteWaiterName = Literal[
+    "type_registration_complete",
+]
+```
 ## TypeTestsStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import TypeTestsStatusType
+
+def get_value() -> TypeTestsStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `NOT_TESTED`
-- `PASSED`
-
-<a id="versionbumptype"></a>
-
+```python title="Definition"
+TypeTestsStatusType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "NOT_TESTED",
+    "PASSED",
+]
+```
 ## VersionBumpType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import VersionBumpType
+
+def get_value() -> VersionBumpType:
+    return "MAJOR"
 ```
 
-Values:
-
-- `MAJOR`
-- `MINOR`
-
-<a id="visibilitytype"></a>
-
+```python title="Definition"
+VersionBumpType = Literal[
+    "MAJOR",
+    "MINOR",
+]
+```
 ## VisibilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import VisibilityType
+
+def get_value() -> VisibilityType:
+    return "PRIVATE"
 ```
 
-Values:
-
-- `PRIVATE`
-- `PUBLIC`
-
-<a id="cloudformationservicename"></a>
-
+```python title="Definition"
+VisibilityType = Literal[
+    "PRIVATE",
+    "PUBLIC",
+]
+```
 ## CloudFormationServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import CloudFormationServiceName
+
+def get_value() -> CloudFormationServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+CloudFormationServiceName = Literal[
+    "cloudformation",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_account_limits"
 ```
 
-Values:
-
-- `describe_account_limits`
-- `describe_change_set`
-- `describe_stack_events`
-- `describe_stacks`
-- `list_change_sets`
-- `list_exports`
-- `list_imports`
-- `list_stack_instances`
-- `list_stack_resources`
-- `list_stack_set_operation_results`
-- `list_stack_set_operations`
-- `list_stack_sets`
-- `list_stacks`
-- `list_types`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_account_limits",
+    "describe_change_set",
+    "describe_stack_events",
+    "describe_stacks",
+    "list_change_sets",
+    "list_exports",
+    "list_imports",
+    "list_stack_instances",
+    "list_stack_resources",
+    "list_stack_set_operation_results",
+    "list_stack_set_operations",
+    "list_stack_sets",
+    "list_stacks",
+    "list_types",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "change_set_create_complete"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "change_set_create_complete",
+    "stack_create_complete",
+    "stack_delete_complete",
+    "stack_exists",
+    "stack_import_complete",
+    "stack_rollback_complete",
+    "stack_update_complete",
+    "type_registration_complete",
+]
+```
+## RegionName
 
-- `change_set_create_complete`
-- `stack_create_complete`
-- `stack_delete_complete`
-- `stack_exists`
-- `stack_import_complete`
-- `stack_rollback_complete`
-- `stack_update_complete`
-- `type_registration_complete`
+```python title="Usage Example"
+from mypy_boto3_cloudformation.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

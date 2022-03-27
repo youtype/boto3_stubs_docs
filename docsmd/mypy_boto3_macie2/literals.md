@@ -1,1231 +1,1322 @@
-<a id="literals-for-boto3-macie2-module"></a>
-
-# Literals for boto3 Macie2 module
+# Literals
 
 > [Index](../README.md) > [Macie2](./README.md) > Literals
 
-Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
-type annotations stubs module
-[mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
+!!! note ""
 
-- [Literals for boto3 Macie2 module](#literals-for-boto3-macie2-module)
-  - [AdminStatusType](#adminstatustype)
-  - [AllowsUnencryptedObjectUploadsType](#allowsunencryptedobjectuploadstype)
-  - [BucketMetadataErrorCodeType](#bucketmetadataerrorcodetype)
-  - [CurrencyType](#currencytype)
-  - [DataIdentifierSeverityType](#dataidentifierseveritytype)
-  - [DayOfWeekType](#dayofweektype)
-  - [DescribeBucketsPaginatorName](#describebucketspaginatorname)
-  - [EffectivePermissionType](#effectivepermissiontype)
-  - [EncryptionTypeType](#encryptiontypetype)
-  - [ErrorCodeType](#errorcodetype)
-  - [FindingActionTypeType](#findingactiontypetype)
-  - [FindingCategoryType](#findingcategorytype)
-  - [FindingPublishingFrequencyType](#findingpublishingfrequencytype)
-  - [FindingStatisticsSortAttributeNameType](#findingstatisticssortattributenametype)
-  - [FindingTypeType](#findingtypetype)
-  - [FindingsFilterActionType](#findingsfilteractiontype)
-  - [GetUsageStatisticsPaginatorName](#getusagestatisticspaginatorname)
-  - [GroupByType](#groupbytype)
-  - [IsDefinedInJobType](#isdefinedinjobtype)
-  - [IsMonitoredByJobType](#ismonitoredbyjobtype)
-  - [JobComparatorType](#jobcomparatortype)
-  - [JobStatusType](#jobstatustype)
-  - [JobTypeType](#jobtypetype)
-  - [LastRunErrorStatusCodeType](#lastrunerrorstatuscodetype)
-  - [ListClassificationJobsPaginatorName](#listclassificationjobspaginatorname)
-  - [ListCustomDataIdentifiersPaginatorName](#listcustomdataidentifierspaginatorname)
-  - [ListFindingsFiltersPaginatorName](#listfindingsfilterspaginatorname)
-  - [ListFindingsPaginatorName](#listfindingspaginatorname)
-  - [ListInvitationsPaginatorName](#listinvitationspaginatorname)
-  - [ListJobsFilterKeyType](#listjobsfilterkeytype)
-  - [ListJobsSortAttributeNameType](#listjobssortattributenametype)
-  - [ListMembersPaginatorName](#listmemberspaginatorname)
-  - [ListOrganizationAdminAccountsPaginatorName](#listorganizationadminaccountspaginatorname)
-  - [MacieStatusType](#maciestatustype)
-  - [ManagedDataIdentifierSelectorType](#manageddataidentifierselectortype)
-  - [OrderByType](#orderbytype)
-  - [RelationshipStatusType](#relationshipstatustype)
-  - [ScopeFilterKeyType](#scopefilterkeytype)
-  - [SearchResourcesComparatorType](#searchresourcescomparatortype)
-  - [SearchResourcesPaginatorName](#searchresourcespaginatorname)
-  - [SearchResourcesSimpleCriterionKeyType](#searchresourcessimplecriterionkeytype)
-  - [SearchResourcesSortAttributeNameType](#searchresourcessortattributenametype)
-  - [SensitiveDataItemCategoryType](#sensitivedataitemcategorytype)
-  - [SeverityDescriptionType](#severitydescriptiontype)
-  - [SharedAccessType](#sharedaccesstype)
-  - [SimpleCriterionKeyForJobType](#simplecriterionkeyforjobtype)
-  - [StorageClassType](#storageclasstype)
-  - [TagTargetType](#tagtargettype)
-  - [TimeRangeType](#timerangetype)
-  - [TypeType](#typetype)
-  - [UnitType](#unittype)
-  - [UsageStatisticsFilterComparatorType](#usagestatisticsfiltercomparatortype)
-  - [UsageStatisticsFilterKeyType](#usagestatisticsfilterkeytype)
-  - [UsageStatisticsSortKeyType](#usagestatisticssortkeytype)
-  - [UsageTypeType](#usagetypetype)
-  - [UserIdentityTypeType](#useridentitytypetype)
-  - [Macie2ServiceName](#macie2servicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="adminstatustype"></a>
+    Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+    type annotations stubs module [mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 ## AdminStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import AdminStatusType
+
+def get_value() -> AdminStatusType:
+    return "DISABLING_IN_PROGRESS"
 ```
 
-Values:
-
-- `DISABLING_IN_PROGRESS`
-- `ENABLED`
-
-<a id="allowsunencryptedobjectuploadstype"></a>
-
+```python title="Definition"
+AdminStatusType = Literal[
+    "DISABLING_IN_PROGRESS",
+    "ENABLED",
+]
+```
 ## AllowsUnencryptedObjectUploadsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import AllowsUnencryptedObjectUploadsType
+
+def get_value() -> AllowsUnencryptedObjectUploadsType:
+    return "FALSE"
 ```
 
-Values:
-
-- `FALSE`
-- `TRUE`
-- `UNKNOWN`
-
-<a id="bucketmetadataerrorcodetype"></a>
-
+```python title="Definition"
+AllowsUnencryptedObjectUploadsType = Literal[
+    "FALSE",
+    "TRUE",
+    "UNKNOWN",
+]
+```
 ## BucketMetadataErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import BucketMetadataErrorCodeType
+
+def get_value() -> BucketMetadataErrorCodeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-
-<a id="currencytype"></a>
-
+```python title="Definition"
+BucketMetadataErrorCodeType = Literal[
+    "ACCESS_DENIED",
+]
+```
 ## CurrencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import CurrencyType
+
+def get_value() -> CurrencyType:
+    return "USD"
 ```
 
-Values:
-
-- `USD`
-
-<a id="dataidentifierseveritytype"></a>
-
+```python title="Definition"
+CurrencyType = Literal[
+    "USD",
+]
+```
 ## DataIdentifierSeverityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import DataIdentifierSeverityType
+
+def get_value() -> DataIdentifierSeverityType:
+    return "HIGH"
 ```
 
-Values:
-
-- `HIGH`
-- `LOW`
-- `MEDIUM`
-
-<a id="dayofweektype"></a>
-
+```python title="Definition"
+DataIdentifierSeverityType = Literal[
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+]
+```
 ## DayOfWeekType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import DayOfWeekType
+
+def get_value() -> DayOfWeekType:
+    return "FRIDAY"
 ```
 
-Values:
-
-- `FRIDAY`
-- `MONDAY`
-- `SATURDAY`
-- `SUNDAY`
-- `THURSDAY`
-- `TUESDAY`
-- `WEDNESDAY`
-
-<a id="describebucketspaginatorname"></a>
-
+```python title="Definition"
+DayOfWeekType = Literal[
+    "FRIDAY",
+    "MONDAY",
+    "SATURDAY",
+    "SUNDAY",
+    "THURSDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+]
+```
 ## DescribeBucketsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import DescribeBucketsPaginatorName
+
+def get_value() -> DescribeBucketsPaginatorName:
+    return "describe_buckets"
 ```
 
-Values:
-
-- `describe_buckets`
-
-<a id="effectivepermissiontype"></a>
-
+```python title="Definition"
+DescribeBucketsPaginatorName = Literal[
+    "describe_buckets",
+]
+```
 ## EffectivePermissionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import EffectivePermissionType
+
+def get_value() -> EffectivePermissionType:
+    return "NOT_PUBLIC"
 ```
 
-Values:
-
-- `NOT_PUBLIC`
-- `PUBLIC`
-- `UNKNOWN`
-
-<a id="encryptiontypetype"></a>
-
+```python title="Definition"
+EffectivePermissionType = Literal[
+    "NOT_PUBLIC",
+    "PUBLIC",
+    "UNKNOWN",
+]
+```
 ## EncryptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import EncryptionTypeType
+
+def get_value() -> EncryptionTypeType:
+    return "AES256"
 ```
 
-Values:
-
-- `AES256`
-- `aws:kms`
-- `NONE`
-- `UNKNOWN`
-
-<a id="errorcodetype"></a>
-
+```python title="Definition"
+EncryptionTypeType = Literal[
+    "AES256",
+    "aws:kms",
+    "NONE",
+    "UNKNOWN",
+]
+```
 ## ErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ErrorCodeType
+
+def get_value() -> ErrorCodeType:
+    return "ClientError"
 ```
 
-Values:
-
-- `ClientError`
-- `InternalError`
-
-<a id="findingactiontypetype"></a>
-
+```python title="Definition"
+ErrorCodeType = Literal[
+    "ClientError",
+    "InternalError",
+]
+```
 ## FindingActionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import FindingActionTypeType
+
+def get_value() -> FindingActionTypeType:
+    return "AWS_API_CALL"
 ```
 
-Values:
-
-- `AWS_API_CALL`
-
-<a id="findingcategorytype"></a>
-
+```python title="Definition"
+FindingActionTypeType = Literal[
+    "AWS_API_CALL",
+]
+```
 ## FindingCategoryType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import FindingCategoryType
+
+def get_value() -> FindingCategoryType:
+    return "CLASSIFICATION"
 ```
 
-Values:
-
-- `CLASSIFICATION`
-- `POLICY`
-
-<a id="findingpublishingfrequencytype"></a>
-
+```python title="Definition"
+FindingCategoryType = Literal[
+    "CLASSIFICATION",
+    "POLICY",
+]
+```
 ## FindingPublishingFrequencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import FindingPublishingFrequencyType
+
+def get_value() -> FindingPublishingFrequencyType:
+    return "FIFTEEN_MINUTES"
 ```
 
-Values:
-
-- `FIFTEEN_MINUTES`
-- `ONE_HOUR`
-- `SIX_HOURS`
-
-<a id="findingstatisticssortattributenametype"></a>
-
+```python title="Definition"
+FindingPublishingFrequencyType = Literal[
+    "FIFTEEN_MINUTES",
+    "ONE_HOUR",
+    "SIX_HOURS",
+]
+```
 ## FindingStatisticsSortAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import FindingStatisticsSortAttributeNameType
+
+def get_value() -> FindingStatisticsSortAttributeNameType:
+    return "count"
 ```
 
-Values:
-
-- `count`
-- `groupKey`
-
-<a id="findingtypetype"></a>
-
+```python title="Definition"
+FindingStatisticsSortAttributeNameType = Literal[
+    "count",
+    "groupKey",
+]
+```
 ## FindingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import FindingTypeType
+
+def get_value() -> FindingTypeType:
+    return "Policy:IAMUser/S3BlockPublicAccessDisabled"
 ```
 
-Values:
-
-- `Policy:IAMUser/S3BlockPublicAccessDisabled`
-- `Policy:IAMUser/S3BucketEncryptionDisabled`
-- `Policy:IAMUser/S3BucketPublic`
-- `Policy:IAMUser/S3BucketReplicatedExternally`
-- `Policy:IAMUser/S3BucketSharedExternally`
-- `SensitiveData:S3Object/Credentials`
-- `SensitiveData:S3Object/CustomIdentifier`
-- `SensitiveData:S3Object/Financial`
-- `SensitiveData:S3Object/Multiple`
-- `SensitiveData:S3Object/Personal`
-
-<a id="findingsfilteractiontype"></a>
-
+```python title="Definition"
+FindingTypeType = Literal[
+    "Policy:IAMUser/S3BlockPublicAccessDisabled",
+    "Policy:IAMUser/S3BucketEncryptionDisabled",
+    "Policy:IAMUser/S3BucketPublic",
+    "Policy:IAMUser/S3BucketReplicatedExternally",
+    "Policy:IAMUser/S3BucketSharedExternally",
+    "SensitiveData:S3Object/Credentials",
+    "SensitiveData:S3Object/CustomIdentifier",
+    "SensitiveData:S3Object/Financial",
+    "SensitiveData:S3Object/Multiple",
+    "SensitiveData:S3Object/Personal",
+]
+```
 ## FindingsFilterActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import FindingsFilterActionType
+
+def get_value() -> FindingsFilterActionType:
+    return "ARCHIVE"
 ```
 
-Values:
-
-- `ARCHIVE`
-- `NOOP`
-
-<a id="getusagestatisticspaginatorname"></a>
-
+```python title="Definition"
+FindingsFilterActionType = Literal[
+    "ARCHIVE",
+    "NOOP",
+]
+```
 ## GetUsageStatisticsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import GetUsageStatisticsPaginatorName
+
+def get_value() -> GetUsageStatisticsPaginatorName:
+    return "get_usage_statistics"
 ```
 
-Values:
-
-- `get_usage_statistics`
-
-<a id="groupbytype"></a>
-
+```python title="Definition"
+GetUsageStatisticsPaginatorName = Literal[
+    "get_usage_statistics",
+]
+```
 ## GroupByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import GroupByType
+
+def get_value() -> GroupByType:
+    return "classificationDetails.jobId"
 ```
 
-Values:
-
-- `classificationDetails.jobId`
-- `resourcesAffected.s3Bucket.name`
-- `severity.description`
-- `type`
-
-<a id="isdefinedinjobtype"></a>
-
+```python title="Definition"
+GroupByType = Literal[
+    "classificationDetails.jobId",
+    "resourcesAffected.s3Bucket.name",
+    "severity.description",
+    "type",
+]
+```
 ## IsDefinedInJobType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import IsDefinedInJobType
+
+def get_value() -> IsDefinedInJobType:
+    return "FALSE"
 ```
 
-Values:
-
-- `FALSE`
-- `TRUE`
-- `UNKNOWN`
-
-<a id="ismonitoredbyjobtype"></a>
-
+```python title="Definition"
+IsDefinedInJobType = Literal[
+    "FALSE",
+    "TRUE",
+    "UNKNOWN",
+]
+```
 ## IsMonitoredByJobType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import IsMonitoredByJobType
+
+def get_value() -> IsMonitoredByJobType:
+    return "FALSE"
 ```
 
-Values:
-
-- `FALSE`
-- `TRUE`
-- `UNKNOWN`
-
-<a id="jobcomparatortype"></a>
-
+```python title="Definition"
+IsMonitoredByJobType = Literal[
+    "FALSE",
+    "TRUE",
+    "UNKNOWN",
+]
+```
 ## JobComparatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import JobComparatorType
+
+def get_value() -> JobComparatorType:
+    return "CONTAINS"
 ```
 
-Values:
-
-- `CONTAINS`
-- `EQ`
-- `GT`
-- `GTE`
-- `LT`
-- `LTE`
-- `NE`
-- `STARTS_WITH`
-
-<a id="jobstatustype"></a>
-
+```python title="Definition"
+JobComparatorType = Literal[
+    "CONTAINS",
+    "EQ",
+    "GT",
+    "GTE",
+    "LT",
+    "LTE",
+    "NE",
+    "STARTS_WITH",
+]
+```
 ## JobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import JobStatusType
+
+def get_value() -> JobStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `COMPLETE`
-- `IDLE`
-- `PAUSED`
-- `RUNNING`
-- `USER_PAUSED`
-
-<a id="jobtypetype"></a>
-
+```python title="Definition"
+JobStatusType = Literal[
+    "CANCELLED",
+    "COMPLETE",
+    "IDLE",
+    "PAUSED",
+    "RUNNING",
+    "USER_PAUSED",
+]
+```
 ## JobTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import JobTypeType
+
+def get_value() -> JobTypeType:
+    return "ONE_TIME"
 ```
 
-Values:
-
-- `ONE_TIME`
-- `SCHEDULED`
-
-<a id="lastrunerrorstatuscodetype"></a>
-
+```python title="Definition"
+JobTypeType = Literal[
+    "ONE_TIME",
+    "SCHEDULED",
+]
+```
 ## LastRunErrorStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import LastRunErrorStatusCodeType
+
+def get_value() -> LastRunErrorStatusCodeType:
+    return "ERROR"
 ```
 
-Values:
-
-- `ERROR`
-- `NONE`
-
-<a id="listclassificationjobspaginatorname"></a>
-
+```python title="Definition"
+LastRunErrorStatusCodeType = Literal[
+    "ERROR",
+    "NONE",
+]
+```
 ## ListClassificationJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ListClassificationJobsPaginatorName
+
+def get_value() -> ListClassificationJobsPaginatorName:
+    return "list_classification_jobs"
 ```
 
-Values:
-
-- `list_classification_jobs`
-
-<a id="listcustomdataidentifierspaginatorname"></a>
-
+```python title="Definition"
+ListClassificationJobsPaginatorName = Literal[
+    "list_classification_jobs",
+]
+```
 ## ListCustomDataIdentifiersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ListCustomDataIdentifiersPaginatorName
+
+def get_value() -> ListCustomDataIdentifiersPaginatorName:
+    return "list_custom_data_identifiers"
 ```
 
-Values:
-
-- `list_custom_data_identifiers`
-
-<a id="listfindingsfilterspaginatorname"></a>
-
+```python title="Definition"
+ListCustomDataIdentifiersPaginatorName = Literal[
+    "list_custom_data_identifiers",
+]
+```
 ## ListFindingsFiltersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ListFindingsFiltersPaginatorName
+
+def get_value() -> ListFindingsFiltersPaginatorName:
+    return "list_findings_filters"
 ```
 
-Values:
-
-- `list_findings_filters`
-
-<a id="listfindingspaginatorname"></a>
-
+```python title="Definition"
+ListFindingsFiltersPaginatorName = Literal[
+    "list_findings_filters",
+]
+```
 ## ListFindingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ListFindingsPaginatorName
+
+def get_value() -> ListFindingsPaginatorName:
+    return "list_findings"
 ```
 
-Values:
-
-- `list_findings`
-
-<a id="listinvitationspaginatorname"></a>
-
+```python title="Definition"
+ListFindingsPaginatorName = Literal[
+    "list_findings",
+]
+```
 ## ListInvitationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ListInvitationsPaginatorName
+
+def get_value() -> ListInvitationsPaginatorName:
+    return "list_invitations"
 ```
 
-Values:
-
-- `list_invitations`
-
-<a id="listjobsfilterkeytype"></a>
-
+```python title="Definition"
+ListInvitationsPaginatorName = Literal[
+    "list_invitations",
+]
+```
 ## ListJobsFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ListJobsFilterKeyType
+
+def get_value() -> ListJobsFilterKeyType:
+    return "createdAt"
 ```
 
-Values:
-
-- `createdAt`
-- `jobStatus`
-- `jobType`
-- `name`
-
-<a id="listjobssortattributenametype"></a>
-
+```python title="Definition"
+ListJobsFilterKeyType = Literal[
+    "createdAt",
+    "jobStatus",
+    "jobType",
+    "name",
+]
+```
 ## ListJobsSortAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ListJobsSortAttributeNameType
+
+def get_value() -> ListJobsSortAttributeNameType:
+    return "createdAt"
 ```
 
-Values:
-
-- `createdAt`
-- `jobStatus`
-- `jobType`
-- `name`
-
-<a id="listmemberspaginatorname"></a>
-
+```python title="Definition"
+ListJobsSortAttributeNameType = Literal[
+    "createdAt",
+    "jobStatus",
+    "jobType",
+    "name",
+]
+```
 ## ListMembersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ListMembersPaginatorName
+
+def get_value() -> ListMembersPaginatorName:
+    return "list_members"
 ```
 
-Values:
-
-- `list_members`
-
-<a id="listorganizationadminaccountspaginatorname"></a>
-
+```python title="Definition"
+ListMembersPaginatorName = Literal[
+    "list_members",
+]
+```
 ## ListOrganizationAdminAccountsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ListOrganizationAdminAccountsPaginatorName
+
+def get_value() -> ListOrganizationAdminAccountsPaginatorName:
+    return "list_organization_admin_accounts"
 ```
 
-Values:
-
-- `list_organization_admin_accounts`
-
-<a id="maciestatustype"></a>
-
+```python title="Definition"
+ListOrganizationAdminAccountsPaginatorName = Literal[
+    "list_organization_admin_accounts",
+]
+```
 ## MacieStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import MacieStatusType
+
+def get_value() -> MacieStatusType:
+    return "ENABLED"
 ```
 
-Values:
-
-- `ENABLED`
-- `PAUSED`
-
-<a id="manageddataidentifierselectortype"></a>
-
+```python title="Definition"
+MacieStatusType = Literal[
+    "ENABLED",
+    "PAUSED",
+]
+```
 ## ManagedDataIdentifierSelectorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ManagedDataIdentifierSelectorType
+
+def get_value() -> ManagedDataIdentifierSelectorType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `EXCLUDE`
-- `INCLUDE`
-- `NONE`
-
-<a id="orderbytype"></a>
-
+```python title="Definition"
+ManagedDataIdentifierSelectorType = Literal[
+    "ALL",
+    "EXCLUDE",
+    "INCLUDE",
+    "NONE",
+]
+```
 ## OrderByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import OrderByType
+
+def get_value() -> OrderByType:
+    return "ASC"
 ```
 
-Values:
-
-- `ASC`
-- `DESC`
-
-<a id="relationshipstatustype"></a>
-
+```python title="Definition"
+OrderByType = Literal[
+    "ASC",
+    "DESC",
+]
+```
 ## RelationshipStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import RelationshipStatusType
+
+def get_value() -> RelationshipStatusType:
+    return "AccountSuspended"
 ```
 
-Values:
-
-- `AccountSuspended`
-- `Created`
-- `EmailVerificationFailed`
-- `EmailVerificationInProgress`
-- `Enabled`
-- `Invited`
-- `Paused`
-- `RegionDisabled`
-- `Removed`
-- `Resigned`
-
-<a id="scopefilterkeytype"></a>
-
+```python title="Definition"
+RelationshipStatusType = Literal[
+    "AccountSuspended",
+    "Created",
+    "EmailVerificationFailed",
+    "EmailVerificationInProgress",
+    "Enabled",
+    "Invited",
+    "Paused",
+    "RegionDisabled",
+    "Removed",
+    "Resigned",
+]
+```
 ## ScopeFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ScopeFilterKeyType
+
+def get_value() -> ScopeFilterKeyType:
+    return "OBJECT_EXTENSION"
 ```
 
-Values:
-
-- `OBJECT_EXTENSION`
-- `OBJECT_KEY`
-- `OBJECT_LAST_MODIFIED_DATE`
-- `OBJECT_SIZE`
-
-<a id="searchresourcescomparatortype"></a>
-
+```python title="Definition"
+ScopeFilterKeyType = Literal[
+    "OBJECT_EXTENSION",
+    "OBJECT_KEY",
+    "OBJECT_LAST_MODIFIED_DATE",
+    "OBJECT_SIZE",
+]
+```
 ## SearchResourcesComparatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import SearchResourcesComparatorType
+
+def get_value() -> SearchResourcesComparatorType:
+    return "EQ"
 ```
 
-Values:
-
-- `EQ`
-- `NE`
-
-<a id="searchresourcespaginatorname"></a>
-
+```python title="Definition"
+SearchResourcesComparatorType = Literal[
+    "EQ",
+    "NE",
+]
+```
 ## SearchResourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import SearchResourcesPaginatorName
+
+def get_value() -> SearchResourcesPaginatorName:
+    return "search_resources"
 ```
 
-Values:
-
-- `search_resources`
-
-<a id="searchresourcessimplecriterionkeytype"></a>
-
+```python title="Definition"
+SearchResourcesPaginatorName = Literal[
+    "search_resources",
+]
+```
 ## SearchResourcesSimpleCriterionKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import SearchResourcesSimpleCriterionKeyType
+
+def get_value() -> SearchResourcesSimpleCriterionKeyType:
+    return "ACCOUNT_ID"
 ```
 
-Values:
-
-- `ACCOUNT_ID`
-- `S3_BUCKET_EFFECTIVE_PERMISSION`
-- `S3_BUCKET_NAME`
-- `S3_BUCKET_SHARED_ACCESS`
-
-<a id="searchresourcessortattributenametype"></a>
-
+```python title="Definition"
+SearchResourcesSimpleCriterionKeyType = Literal[
+    "ACCOUNT_ID",
+    "S3_BUCKET_EFFECTIVE_PERMISSION",
+    "S3_BUCKET_NAME",
+    "S3_BUCKET_SHARED_ACCESS",
+]
+```
 ## SearchResourcesSortAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import SearchResourcesSortAttributeNameType
+
+def get_value() -> SearchResourcesSortAttributeNameType:
+    return "ACCOUNT_ID"
 ```
 
-Values:
-
-- `ACCOUNT_ID`
-- `RESOURCE_NAME`
-- `S3_CLASSIFIABLE_OBJECT_COUNT`
-- `S3_CLASSIFIABLE_SIZE_IN_BYTES`
-
-<a id="sensitivedataitemcategorytype"></a>
-
+```python title="Definition"
+SearchResourcesSortAttributeNameType = Literal[
+    "ACCOUNT_ID",
+    "RESOURCE_NAME",
+    "S3_CLASSIFIABLE_OBJECT_COUNT",
+    "S3_CLASSIFIABLE_SIZE_IN_BYTES",
+]
+```
 ## SensitiveDataItemCategoryType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import SensitiveDataItemCategoryType
+
+def get_value() -> SensitiveDataItemCategoryType:
+    return "CREDENTIALS"
 ```
 
-Values:
-
-- `CREDENTIALS`
-- `CUSTOM_IDENTIFIER`
-- `FINANCIAL_INFORMATION`
-- `PERSONAL_INFORMATION`
-
-<a id="severitydescriptiontype"></a>
-
+```python title="Definition"
+SensitiveDataItemCategoryType = Literal[
+    "CREDENTIALS",
+    "CUSTOM_IDENTIFIER",
+    "FINANCIAL_INFORMATION",
+    "PERSONAL_INFORMATION",
+]
+```
 ## SeverityDescriptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import SeverityDescriptionType
+
+def get_value() -> SeverityDescriptionType:
+    return "High"
 ```
 
-Values:
-
-- `High`
-- `Low`
-- `Medium`
-
-<a id="sharedaccesstype"></a>
-
+```python title="Definition"
+SeverityDescriptionType = Literal[
+    "High",
+    "Low",
+    "Medium",
+]
+```
 ## SharedAccessType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import SharedAccessType
+
+def get_value() -> SharedAccessType:
+    return "EXTERNAL"
 ```
 
-Values:
-
-- `EXTERNAL`
-- `INTERNAL`
-- `NOT_SHARED`
-- `UNKNOWN`
-
-<a id="simplecriterionkeyforjobtype"></a>
-
+```python title="Definition"
+SharedAccessType = Literal[
+    "EXTERNAL",
+    "INTERNAL",
+    "NOT_SHARED",
+    "UNKNOWN",
+]
+```
 ## SimpleCriterionKeyForJobType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import SimpleCriterionKeyForJobType
+
+def get_value() -> SimpleCriterionKeyForJobType:
+    return "ACCOUNT_ID"
 ```
 
-Values:
-
-- `ACCOUNT_ID`
-- `S3_BUCKET_EFFECTIVE_PERMISSION`
-- `S3_BUCKET_NAME`
-- `S3_BUCKET_SHARED_ACCESS`
-
-<a id="storageclasstype"></a>
-
+```python title="Definition"
+SimpleCriterionKeyForJobType = Literal[
+    "ACCOUNT_ID",
+    "S3_BUCKET_EFFECTIVE_PERMISSION",
+    "S3_BUCKET_NAME",
+    "S3_BUCKET_SHARED_ACCESS",
+]
+```
 ## StorageClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import StorageClassType
+
+def get_value() -> StorageClassType:
+    return "DEEP_ARCHIVE"
 ```
 
-Values:
-
-- `DEEP_ARCHIVE`
-- `GLACIER`
-- `INTELLIGENT_TIERING`
-- `ONEZONE_IA`
-- `REDUCED_REDUNDANCY`
-- `STANDARD`
-- `STANDARD_IA`
-
-<a id="tagtargettype"></a>
-
+```python title="Definition"
+StorageClassType = Literal[
+    "DEEP_ARCHIVE",
+    "GLACIER",
+    "INTELLIGENT_TIERING",
+    "ONEZONE_IA",
+    "REDUCED_REDUNDANCY",
+    "STANDARD",
+    "STANDARD_IA",
+]
+```
 ## TagTargetType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import TagTargetType
+
+def get_value() -> TagTargetType:
+    return "S3_OBJECT"
 ```
 
-Values:
-
-- `S3_OBJECT`
-
-<a id="timerangetype"></a>
-
+```python title="Definition"
+TagTargetType = Literal[
+    "S3_OBJECT",
+]
+```
 ## TimeRangeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import TimeRangeType
+
+def get_value() -> TimeRangeType:
+    return "MONTH_TO_DATE"
 ```
 
-Values:
-
-- `MONTH_TO_DATE`
-- `PAST_30_DAYS`
-
-<a id="typetype"></a>
-
+```python title="Definition"
+TimeRangeType = Literal[
+    "MONTH_TO_DATE",
+    "PAST_30_DAYS",
+]
+```
 ## TypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import TypeType
+
+def get_value() -> TypeType:
+    return "AES256"
 ```
 
-Values:
-
-- `AES256`
-- `aws:kms`
-- `NONE`
-
-<a id="unittype"></a>
-
+```python title="Definition"
+TypeType = Literal[
+    "AES256",
+    "aws:kms",
+    "NONE",
+]
+```
 ## UnitType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import UnitType
+
+def get_value() -> UnitType:
+    return "TERABYTES"
 ```
 
-Values:
-
-- `TERABYTES`
-
-<a id="usagestatisticsfiltercomparatortype"></a>
-
+```python title="Definition"
+UnitType = Literal[
+    "TERABYTES",
+]
+```
 ## UsageStatisticsFilterComparatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import UsageStatisticsFilterComparatorType
+
+def get_value() -> UsageStatisticsFilterComparatorType:
+    return "CONTAINS"
 ```
 
-Values:
-
-- `CONTAINS`
-- `EQ`
-- `GT`
-- `GTE`
-- `LT`
-- `LTE`
-- `NE`
-
-<a id="usagestatisticsfilterkeytype"></a>
-
+```python title="Definition"
+UsageStatisticsFilterComparatorType = Literal[
+    "CONTAINS",
+    "EQ",
+    "GT",
+    "GTE",
+    "LT",
+    "LTE",
+    "NE",
+]
+```
 ## UsageStatisticsFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import UsageStatisticsFilterKeyType
+
+def get_value() -> UsageStatisticsFilterKeyType:
+    return "accountId"
 ```
 
-Values:
-
-- `accountId`
-- `freeTrialStartDate`
-- `serviceLimit`
-- `total`
-
-<a id="usagestatisticssortkeytype"></a>
-
+```python title="Definition"
+UsageStatisticsFilterKeyType = Literal[
+    "accountId",
+    "freeTrialStartDate",
+    "serviceLimit",
+    "total",
+]
+```
 ## UsageStatisticsSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import UsageStatisticsSortKeyType
+
+def get_value() -> UsageStatisticsSortKeyType:
+    return "accountId"
 ```
 
-Values:
-
-- `accountId`
-- `freeTrialStartDate`
-- `serviceLimitValue`
-- `total`
-
-<a id="usagetypetype"></a>
-
+```python title="Definition"
+UsageStatisticsSortKeyType = Literal[
+    "accountId",
+    "freeTrialStartDate",
+    "serviceLimitValue",
+    "total",
+]
+```
 ## UsageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import UsageTypeType
+
+def get_value() -> UsageTypeType:
+    return "DATA_INVENTORY_EVALUATION"
 ```
 
-Values:
-
-- `DATA_INVENTORY_EVALUATION`
-- `SENSITIVE_DATA_DISCOVERY`
-
-<a id="useridentitytypetype"></a>
-
+```python title="Definition"
+UsageTypeType = Literal[
+    "DATA_INVENTORY_EVALUATION",
+    "SENSITIVE_DATA_DISCOVERY",
+]
+```
 ## UserIdentityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import UserIdentityTypeType
+
+def get_value() -> UserIdentityTypeType:
+    return "AWSAccount"
 ```
 
-Values:
-
-- `AssumedRole`
-- `AWSAccount`
-- `AWSService`
-- `FederatedUser`
-- `IAMUser`
-- `Root`
-
-<a id="macie2servicename"></a>
-
+```python title="Definition"
+UserIdentityTypeType = Literal[
+    "AssumedRole",
+    "AWSAccount",
+    "AWSService",
+    "FederatedUser",
+    "IAMUser",
+    "Root",
+]
+```
 ## Macie2ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import Macie2ServiceName
+
+def get_value() -> Macie2ServiceName:
+    return "macie2"
 ```
 
-Values:
-
-- `macie2`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+Macie2ServiceName = Literal[
+    "macie2",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_buckets"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_buckets",
+    "get_usage_statistics",
+    "list_classification_jobs",
+    "list_custom_data_identifiers",
+    "list_findings",
+    "list_findings_filters",
+    "list_invitations",
+    "list_members",
+    "list_organization_admin_accounts",
+    "search_resources",
+]
+```
+## RegionName
 
-- `describe_buckets`
-- `get_usage_statistics`
-- `list_classification_jobs`
-- `list_custom_data_identifiers`
-- `list_findings`
-- `list_findings_filters`
-- `list_invitations`
-- `list_members`
-- `list_organization_admin_accounts`
-- `search_resources`
+```python title="Usage Example"
+from mypy_boto3_macie2.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

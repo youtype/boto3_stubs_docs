@@ -1,1269 +1,1678 @@
-<a id="typed-dictionaries-for-boto3-ssmincidents-module"></a>
-
-# Typed dictionaries for boto3 SSMIncidents module
+# Typed dictionaries
 
 > [Index](../README.md) > [SSMIncidents](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
-type annotations stubs module
-[mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SSMIncidents module](#typed-dictionaries-for-boto3-ssmincidents-module)
-  - [ActionTypeDef](#actiontypedef)
-  - [AddRegionActionTypeDef](#addregionactiontypedef)
-  - [AttributeValueListTypeDef](#attributevaluelisttypedef)
-  - [AutomationExecutionTypeDef](#automationexecutiontypedef)
-  - [ChatChannelTypeDef](#chatchanneltypedef)
-  - [ConditionTypeDef](#conditiontypedef)
-  - [CreateReplicationSetInputRequestTypeDef](#createreplicationsetinputrequesttypedef)
-  - [CreateReplicationSetOutputTypeDef](#createreplicationsetoutputtypedef)
-  - [CreateResponsePlanInputRequestTypeDef](#createresponseplaninputrequesttypedef)
-  - [CreateResponsePlanOutputTypeDef](#createresponseplanoutputtypedef)
-  - [CreateTimelineEventInputRequestTypeDef](#createtimelineeventinputrequesttypedef)
-  - [CreateTimelineEventOutputTypeDef](#createtimelineeventoutputtypedef)
-  - [DeleteIncidentRecordInputRequestTypeDef](#deleteincidentrecordinputrequesttypedef)
-  - [DeleteRegionActionTypeDef](#deleteregionactiontypedef)
-  - [DeleteReplicationSetInputRequestTypeDef](#deletereplicationsetinputrequesttypedef)
-  - [DeleteResourcePolicyInputRequestTypeDef](#deleteresourcepolicyinputrequesttypedef)
-  - [DeleteResponsePlanInputRequestTypeDef](#deleteresponseplaninputrequesttypedef)
-  - [DeleteTimelineEventInputRequestTypeDef](#deletetimelineeventinputrequesttypedef)
-  - [EventSummaryTypeDef](#eventsummarytypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [GetIncidentRecordInputRequestTypeDef](#getincidentrecordinputrequesttypedef)
-  - [GetIncidentRecordOutputTypeDef](#getincidentrecordoutputtypedef)
-  - [GetReplicationSetInputRequestTypeDef](#getreplicationsetinputrequesttypedef)
-  - [GetReplicationSetOutputTypeDef](#getreplicationsetoutputtypedef)
-  - [GetResourcePoliciesInputRequestTypeDef](#getresourcepoliciesinputrequesttypedef)
-  - [GetResourcePoliciesOutputTypeDef](#getresourcepoliciesoutputtypedef)
-  - [GetResponsePlanInputRequestTypeDef](#getresponseplaninputrequesttypedef)
-  - [GetResponsePlanOutputTypeDef](#getresponseplanoutputtypedef)
-  - [GetTimelineEventInputRequestTypeDef](#gettimelineeventinputrequesttypedef)
-  - [GetTimelineEventOutputTypeDef](#gettimelineeventoutputtypedef)
-  - [IncidentRecordSourceTypeDef](#incidentrecordsourcetypedef)
-  - [IncidentRecordSummaryTypeDef](#incidentrecordsummarytypedef)
-  - [IncidentRecordTypeDef](#incidentrecordtypedef)
-  - [IncidentTemplateTypeDef](#incidenttemplatetypedef)
-  - [ItemIdentifierTypeDef](#itemidentifiertypedef)
-  - [ItemValueTypeDef](#itemvaluetypedef)
-  - [ListIncidentRecordsInputRequestTypeDef](#listincidentrecordsinputrequesttypedef)
-  - [ListIncidentRecordsOutputTypeDef](#listincidentrecordsoutputtypedef)
-  - [ListRelatedItemsInputRequestTypeDef](#listrelateditemsinputrequesttypedef)
-  - [ListRelatedItemsOutputTypeDef](#listrelateditemsoutputtypedef)
-  - [ListReplicationSetsInputRequestTypeDef](#listreplicationsetsinputrequesttypedef)
-  - [ListReplicationSetsOutputTypeDef](#listreplicationsetsoutputtypedef)
-  - [ListResponsePlansInputRequestTypeDef](#listresponseplansinputrequesttypedef)
-  - [ListResponsePlansOutputTypeDef](#listresponseplansoutputtypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTimelineEventsInputRequestTypeDef](#listtimelineeventsinputrequesttypedef)
-  - [ListTimelineEventsOutputTypeDef](#listtimelineeventsoutputtypedef)
-  - [NotificationTargetItemTypeDef](#notificationtargetitemtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutResourcePolicyInputRequestTypeDef](#putresourcepolicyinputrequesttypedef)
-  - [PutResourcePolicyOutputTypeDef](#putresourcepolicyoutputtypedef)
-  - [RegionInfoTypeDef](#regioninfotypedef)
-  - [RegionMapInputValueTypeDef](#regionmapinputvaluetypedef)
-  - [RelatedItemTypeDef](#relateditemtypedef)
-  - [RelatedItemsUpdateTypeDef](#relateditemsupdatetypedef)
-  - [ReplicationSetTypeDef](#replicationsettypedef)
-  - [ResourcePolicyTypeDef](#resourcepolicytypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResponsePlanSummaryTypeDef](#responseplansummarytypedef)
-  - [SsmAutomationTypeDef](#ssmautomationtypedef)
-  - [StartIncidentInputRequestTypeDef](#startincidentinputrequesttypedef)
-  - [StartIncidentOutputTypeDef](#startincidentoutputtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TimelineEventTypeDef](#timelineeventtypedef)
-  - [TriggerDetailsTypeDef](#triggerdetailstypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDeletionProtectionInputRequestTypeDef](#updatedeletionprotectioninputrequesttypedef)
-  - [UpdateIncidentRecordInputRequestTypeDef](#updateincidentrecordinputrequesttypedef)
-  - [UpdateRelatedItemsInputRequestTypeDef](#updaterelateditemsinputrequesttypedef)
-  - [UpdateReplicationSetActionTypeDef](#updatereplicationsetactiontypedef)
-  - [UpdateReplicationSetInputRequestTypeDef](#updatereplicationsetinputrequesttypedef)
-  - [UpdateResponsePlanInputRequestTypeDef](#updateresponseplaninputrequesttypedef)
-  - [UpdateTimelineEventInputRequestTypeDef](#updatetimelineeventinputrequesttypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="actiontypedef"></a>
+    Auto-generated documentation for [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
+    type annotations stubs module [mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
 ## ActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "ssmAutomation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    ssmAutomation: NotRequired[SsmAutomationTypeDef],  # (1)
+```
 
-- `ssmAutomation`: [SsmAutomationTypeDef](./type_defs.md#ssmautomationtypedef)
-
-<a id="addregionactiontypedef"></a>
-
+1. See [:material-code-braces: SsmAutomationTypeDef](./type_defs.md#ssmautomationtypedef) 
 ## AddRegionActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import AddRegionActionTypeDef
+
+def get_value() -> AddRegionActionTypeDef:
+    return {
+        "regionName": ...,
+    }
 ```
 
-Required fields:
-
-- `regionName`: `str`
-
-Optional fields:
-
-- `sseKmsKeyId`: `str`
-
-<a id="attributevaluelisttypedef"></a>
+```python title="Definition"
+class AddRegionActionTypeDef(TypedDict):
+    regionName: str,
+    sseKmsKeyId: NotRequired[str],
+```
 
 ## AttributeValueListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import AttributeValueListTypeDef
+
+def get_value() -> AttributeValueListTypeDef:
+    return {
+        "integerValues": ...,
+    }
 ```
 
-Optional fields:
-
-- `integerValues`: `Sequence`\[`int`\]
-- `stringValues`: `Sequence`\[`str`\]
-
-<a id="automationexecutiontypedef"></a>
+```python title="Definition"
+class AttributeValueListTypeDef(TypedDict):
+    integerValues: NotRequired[Sequence[int]],
+    stringValues: NotRequired[Sequence[str]],
+```
 
 ## AutomationExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import AutomationExecutionTypeDef
+
+def get_value() -> AutomationExecutionTypeDef:
+    return {
+        "ssmExecutionArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ssmExecutionArn`: `str`
-
-<a id="chatchanneltypedef"></a>
+```python title="Definition"
+class AutomationExecutionTypeDef(TypedDict):
+    ssmExecutionArn: NotRequired[str],
+```
 
 ## ChatChannelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ChatChannelTypeDef
+
+def get_value() -> ChatChannelTypeDef:
+    return {
+        "chatbotSns": ...,
+    }
 ```
 
-Optional fields:
-
-- `chatbotSns`: `Sequence`\[`str`\]
-- `empty`: `Mapping`\[`str`, `Any`\]
-
-<a id="conditiontypedef"></a>
+```python title="Definition"
+class ChatChannelTypeDef(TypedDict):
+    chatbotSns: NotRequired[Sequence[str]],
+    empty: NotRequired[Mapping[str, Any]],
+```
 
 ## ConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ConditionTypeDef
+
+def get_value() -> ConditionTypeDef:
+    return {
+        "after": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConditionTypeDef(TypedDict):
+    after: NotRequired[Union[datetime, str]],
+    before: NotRequired[Union[datetime, str]],
+    equals: NotRequired[AttributeValueListTypeDef],  # (1)
+```
 
-- `after`: `Union`\[`datetime`, `str`\]
-- `before`: `Union`\[`datetime`, `str`\]
-- `equals`:
-  [AttributeValueListTypeDef](./type_defs.md#attributevaluelisttypedef)
-
-<a id="createreplicationsetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeValueListTypeDef](./type_defs.md#attributevaluelisttypedef) 
 ## CreateReplicationSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import CreateReplicationSetInputRequestTypeDef
+
+def get_value() -> CreateReplicationSetInputRequestTypeDef:
+    return {
+        "regions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReplicationSetInputRequestTypeDef(TypedDict):
+    regions: Mapping[str, RegionMapInputValueTypeDef],  # (1)
+    clientToken: NotRequired[str],
+```
 
-- `regions`: `Mapping`\[`str`,
-  [RegionMapInputValueTypeDef](./type_defs.md#regionmapinputvaluetypedef)\]
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="createreplicationsetoutputtypedef"></a>
-
+1. See [:material-code-braces: RegionMapInputValueTypeDef](./type_defs.md#regionmapinputvaluetypedef) 
 ## CreateReplicationSetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import CreateReplicationSetOutputTypeDef
+
+def get_value() -> CreateReplicationSetOutputTypeDef:
+    return {
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReplicationSetOutputTypeDef(TypedDict):
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createresponseplaninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResponsePlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import CreateResponsePlanInputRequestTypeDef
+
+def get_value() -> CreateResponsePlanInputRequestTypeDef:
+    return {
+        "incidentTemplate": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResponsePlanInputRequestTypeDef(TypedDict):
+    incidentTemplate: IncidentTemplateTypeDef,  # (1)
+    name: str,
+    actions: NotRequired[Sequence[ActionTypeDef]],  # (2)
+    chatChannel: NotRequired[ChatChannelTypeDef],  # (3)
+    clientToken: NotRequired[str],
+    displayName: NotRequired[str],
+    engagements: NotRequired[Sequence[str]],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `incidentTemplate`:
-  [IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef)
-- `name`: `str`
-
-Optional fields:
-
-- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
-- `clientToken`: `str`
-- `displayName`: `str`
-- `engagements`: `Sequence`\[`str`\]
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createresponseplanoutputtypedef"></a>
-
+1. See [:material-code-braces: IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef) 
+2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+3. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
 ## CreateResponsePlanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import CreateResponsePlanOutputTypeDef
+
+def get_value() -> CreateResponsePlanOutputTypeDef:
+    return {
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResponsePlanOutputTypeDef(TypedDict):
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtimelineeventinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTimelineEventInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import CreateTimelineEventInputRequestTypeDef
+
+def get_value() -> CreateTimelineEventInputRequestTypeDef:
+    return {
+        "eventData": ...,
+        "eventTime": ...,
+        "eventType": ...,
+        "incidentRecordArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventData`: `str`
-- `eventTime`: `Union`\[`datetime`, `str`\]
-- `eventType`: `str`
-- `incidentRecordArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="createtimelineeventoutputtypedef"></a>
+```python title="Definition"
+class CreateTimelineEventInputRequestTypeDef(TypedDict):
+    eventData: str,
+    eventTime: Union[datetime, str],
+    eventType: str,
+    incidentRecordArn: str,
+    clientToken: NotRequired[str],
+```
 
 ## CreateTimelineEventOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import CreateTimelineEventOutputTypeDef
+
+def get_value() -> CreateTimelineEventOutputTypeDef:
+    return {
+        "eventId": ...,
+        "incidentRecordArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTimelineEventOutputTypeDef(TypedDict):
+    eventId: str,
+    incidentRecordArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `eventId`: `str`
-- `incidentRecordArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteincidentrecordinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteIncidentRecordInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import DeleteIncidentRecordInputRequestTypeDef
+
+def get_value() -> DeleteIncidentRecordInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deleteregionactiontypedef"></a>
+```python title="Definition"
+class DeleteIncidentRecordInputRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteRegionActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import DeleteRegionActionTypeDef
+
+def get_value() -> DeleteRegionActionTypeDef:
+    return {
+        "regionName": ...,
+    }
 ```
 
-Required fields:
-
-- `regionName`: `str`
-
-<a id="deletereplicationsetinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteRegionActionTypeDef(TypedDict):
+    regionName: str,
+```
 
 ## DeleteReplicationSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import DeleteReplicationSetInputRequestTypeDef
+
+def get_value() -> DeleteReplicationSetInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deleteresourcepolicyinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteReplicationSetInputRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteResourcePolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import DeleteResourcePolicyInputRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyInputRequestTypeDef:
+    return {
+        "policyId": ...,
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `policyId`: `str`
-- `resourceArn`: `str`
-
-<a id="deleteresponseplaninputrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourcePolicyInputRequestTypeDef(TypedDict):
+    policyId: str,
+    resourceArn: str,
+```
 
 ## DeleteResponsePlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import DeleteResponsePlanInputRequestTypeDef
+
+def get_value() -> DeleteResponsePlanInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deletetimelineeventinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteResponsePlanInputRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteTimelineEventInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import DeleteTimelineEventInputRequestTypeDef
+
+def get_value() -> DeleteTimelineEventInputRequestTypeDef:
+    return {
+        "eventId": ...,
+        "incidentRecordArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventId`: `str`
-- `incidentRecordArn`: `str`
-
-<a id="eventsummarytypedef"></a>
+```python title="Definition"
+class DeleteTimelineEventInputRequestTypeDef(TypedDict):
+    eventId: str,
+    incidentRecordArn: str,
+```
 
 ## EventSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import EventSummaryTypeDef
+
+def get_value() -> EventSummaryTypeDef:
+    return {
+        "eventId": ...,
+        "eventTime": ...,
+        "eventType": ...,
+        "eventUpdatedTime": ...,
+        "incidentRecordArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventId`: `str`
-- `eventTime`: `datetime`
-- `eventType`: `str`
-- `eventUpdatedTime`: `datetime`
-- `incidentRecordArn`: `str`
-
-<a id="filtertypedef"></a>
+```python title="Definition"
+class EventSummaryTypeDef(TypedDict):
+    eventId: str,
+    eventTime: datetime,
+    eventType: str,
+    eventUpdatedTime: datetime,
+    incidentRecordArn: str,
+```
 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "condition": ...,
+        "key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    condition: ConditionTypeDef,  # (1)
+    key: str,
+```
 
-- `condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
-- `key`: `str`
-
-<a id="getincidentrecordinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 ## GetIncidentRecordInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetIncidentRecordInputRequestTypeDef
+
+def get_value() -> GetIncidentRecordInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getincidentrecordoutputtypedef"></a>
+```python title="Definition"
+class GetIncidentRecordInputRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetIncidentRecordOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetIncidentRecordOutputTypeDef
+
+def get_value() -> GetIncidentRecordOutputTypeDef:
+    return {
+        "incidentRecord": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetIncidentRecordOutputTypeDef(TypedDict):
+    incidentRecord: IncidentRecordTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `incidentRecord`:
-  [IncidentRecordTypeDef](./type_defs.md#incidentrecordtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getreplicationsetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: IncidentRecordTypeDef](./type_defs.md#incidentrecordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetReplicationSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetReplicationSetInputRequestTypeDef
+
+def get_value() -> GetReplicationSetInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReplicationSetInputRequestTypeDef(TypedDict):
+    arn: str,
+```
 
-- `arn`: `str`
+## GetReplicationSetInputWaitForReplicationSetActiveWaitTypeDef
 
-<a id="getreplicationsetoutputtypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import GetReplicationSetInputWaitForReplicationSetActiveWaitTypeDef
 
+def get_value() -> GetReplicationSetInputWaitForReplicationSetActiveWaitTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class GetReplicationSetInputWaitForReplicationSetActiveWaitTypeDef(TypedDict):
+    arn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetReplicationSetInputWaitForReplicationSetDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import GetReplicationSetInputWaitForReplicationSetDeletedWaitTypeDef
+
+def get_value() -> GetReplicationSetInputWaitForReplicationSetDeletedWaitTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class GetReplicationSetInputWaitForReplicationSetDeletedWaitTypeDef(TypedDict):
+    arn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetReplicationSetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetReplicationSetOutputTypeDef
+
+def get_value() -> GetReplicationSetOutputTypeDef:
+    return {
+        "replicationSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReplicationSetOutputTypeDef(TypedDict):
+    replicationSet: ReplicationSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `replicationSet`:
-  [ReplicationSetTypeDef](./type_defs.md#replicationsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ReplicationSetTypeDef](./type_defs.md#replicationsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourcePoliciesInputGetResourcePoliciesPaginateTypeDef
 
-<a id="getresourcepoliciesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import GetResourcePoliciesInputGetResourcePoliciesPaginateTypeDef
 
+def get_value() -> GetResourcePoliciesInputGetResourcePoliciesPaginateTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePoliciesInputGetResourcePoliciesPaginateTypeDef(TypedDict):
+    resourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetResourcePoliciesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetResourcePoliciesInputRequestTypeDef
+
+def get_value() -> GetResourcePoliciesInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="getresourcepoliciesoutputtypedef"></a>
+```python title="Definition"
+class GetResourcePoliciesInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## GetResourcePoliciesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetResourcePoliciesOutputTypeDef
+
+def get_value() -> GetResourcePoliciesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "resourcePolicies": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourcePoliciesOutputTypeDef(TypedDict):
+    nextToken: str,
+    resourcePolicies: List[ResourcePolicyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `resourcePolicies`:
-  `List`\[[ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresponseplaninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourcePolicyTypeDef](./type_defs.md#resourcepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResponsePlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetResponsePlanInputRequestTypeDef
+
+def get_value() -> GetResponsePlanInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getresponseplanoutputtypedef"></a>
+```python title="Definition"
+class GetResponsePlanInputRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetResponsePlanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetResponsePlanOutputTypeDef
+
+def get_value() -> GetResponsePlanOutputTypeDef:
+    return {
+        "actions": ...,
+        "arn": ...,
+        "chatChannel": ...,
+        "displayName": ...,
+        "engagements": ...,
+        "incidentTemplate": ...,
+        "name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResponsePlanOutputTypeDef(TypedDict):
+    actions: List[ActionTypeDef],  # (1)
+    arn: str,
+    chatChannel: ChatChannelTypeDef,  # (2)
+    displayName: str,
+    engagements: List[str],
+    incidentTemplate: IncidentTemplateTypeDef,  # (3)
+    name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `arn`: `str`
-- `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
-- `displayName`: `str`
-- `engagements`: `List`\[`str`\]
-- `incidentTemplate`:
-  [IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef)
-- `name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettimelineeventinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
+3. See [:material-code-braces: IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTimelineEventInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetTimelineEventInputRequestTypeDef
+
+def get_value() -> GetTimelineEventInputRequestTypeDef:
+    return {
+        "eventId": ...,
+        "incidentRecordArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventId`: `str`
-- `incidentRecordArn`: `str`
-
-<a id="gettimelineeventoutputtypedef"></a>
+```python title="Definition"
+class GetTimelineEventInputRequestTypeDef(TypedDict):
+    eventId: str,
+    incidentRecordArn: str,
+```
 
 ## GetTimelineEventOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import GetTimelineEventOutputTypeDef
+
+def get_value() -> GetTimelineEventOutputTypeDef:
+    return {
+        "event": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTimelineEventOutputTypeDef(TypedDict):
+    event: TimelineEventTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `event`: [TimelineEventTypeDef](./type_defs.md#timelineeventtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="incidentrecordsourcetypedef"></a>
-
+1. See [:material-code-braces: TimelineEventTypeDef](./type_defs.md#timelineeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IncidentRecordSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import IncidentRecordSourceTypeDef
+
+def get_value() -> IncidentRecordSourceTypeDef:
+    return {
+        "createdBy": ...,
+        "source": ...,
+    }
 ```
 
-Required fields:
-
-- `createdBy`: `str`
-- `source`: `str`
-
-Optional fields:
-
-- `invokedBy`: `str`
-- `resourceArn`: `str`
-
-<a id="incidentrecordsummarytypedef"></a>
+```python title="Definition"
+class IncidentRecordSourceTypeDef(TypedDict):
+    createdBy: str,
+    source: str,
+    invokedBy: NotRequired[str],
+    resourceArn: NotRequired[str],
+```
 
 ## IncidentRecordSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import IncidentRecordSummaryTypeDef
+
+def get_value() -> IncidentRecordSummaryTypeDef:
+    return {
+        "arn": ...,
+        "creationTime": ...,
+        "impact": ...,
+        "incidentRecordSource": ...,
+        "status": ...,
+        "title": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IncidentRecordSummaryTypeDef(TypedDict):
+    arn: str,
+    creationTime: datetime,
+    impact: int,
+    incidentRecordSource: IncidentRecordSourceTypeDef,  # (1)
+    status: IncidentRecordStatusType,  # (2)
+    title: str,
+    resolvedTime: NotRequired[datetime],
+```
 
-- `arn`: `str`
-- `creationTime`: `datetime`
-- `impact`: `int`
-- `incidentRecordSource`:
-  [IncidentRecordSourceTypeDef](./type_defs.md#incidentrecordsourcetypedef)
-- `status`: [IncidentRecordStatusType](./literals.md#incidentrecordstatustype)
-- `title`: `str`
-
-Optional fields:
-
-- `resolvedTime`: `datetime`
-
-<a id="incidentrecordtypedef"></a>
-
+1. See [:material-code-braces: IncidentRecordSourceTypeDef](./type_defs.md#incidentrecordsourcetypedef) 
+2. See [:material-code-brackets: IncidentRecordStatusType](./literals.md#incidentrecordstatustype) 
 ## IncidentRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import IncidentRecordTypeDef
+
+def get_value() -> IncidentRecordTypeDef:
+    return {
+        "arn": ...,
+        "creationTime": ...,
+        "dedupeString": ...,
+        "impact": ...,
+        "incidentRecordSource": ...,
+        "lastModifiedBy": ...,
+        "lastModifiedTime": ...,
+        "status": ...,
+        "title": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IncidentRecordTypeDef(TypedDict):
+    arn: str,
+    creationTime: datetime,
+    dedupeString: str,
+    impact: int,
+    incidentRecordSource: IncidentRecordSourceTypeDef,  # (3)
+    lastModifiedBy: str,
+    lastModifiedTime: datetime,
+    status: IncidentRecordStatusType,  # (5)
+    title: str,
+    automationExecutions: NotRequired[List[AutomationExecutionTypeDef]],  # (1)
+    chatChannel: NotRequired[ChatChannelTypeDef],  # (2)
+    notificationTargets: NotRequired[List[NotificationTargetItemTypeDef]],  # (4)
+    resolvedTime: NotRequired[datetime],
+    summary: NotRequired[str],
+```
 
-- `arn`: `str`
-- `creationTime`: `datetime`
-- `dedupeString`: `str`
-- `impact`: `int`
-- `incidentRecordSource`:
-  [IncidentRecordSourceTypeDef](./type_defs.md#incidentrecordsourcetypedef)
-- `lastModifiedBy`: `str`
-- `lastModifiedTime`: `datetime`
-- `status`: [IncidentRecordStatusType](./literals.md#incidentrecordstatustype)
-- `title`: `str`
-
-Optional fields:
-
-- `automationExecutions`:
-  `List`\[[AutomationExecutionTypeDef](./type_defs.md#automationexecutiontypedef)\]
-- `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
-- `notificationTargets`:
-  `List`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
-- `resolvedTime`: `datetime`
-- `summary`: `str`
-
-<a id="incidenttemplatetypedef"></a>
-
+1. See [:material-code-braces: AutomationExecutionTypeDef](./type_defs.md#automationexecutiontypedef) 
+2. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
+3. See [:material-code-braces: IncidentRecordSourceTypeDef](./type_defs.md#incidentrecordsourcetypedef) 
+4. See [:material-code-braces: NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef) 
+5. See [:material-code-brackets: IncidentRecordStatusType](./literals.md#incidentrecordstatustype) 
 ## IncidentTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import IncidentTemplateTypeDef
+
+def get_value() -> IncidentTemplateTypeDef:
+    return {
+        "impact": ...,
+        "title": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IncidentTemplateTypeDef(TypedDict):
+    impact: int,
+    title: str,
+    dedupeString: NotRequired[str],
+    notificationTargets: NotRequired[Sequence[NotificationTargetItemTypeDef]],  # (1)
+    summary: NotRequired[str],
+```
 
-- `impact`: `int`
-- `title`: `str`
-
-Optional fields:
-
-- `dedupeString`: `str`
-- `notificationTargets`:
-  `Sequence`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
-- `summary`: `str`
-
-<a id="itemidentifiertypedef"></a>
-
+1. See [:material-code-braces: NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef) 
 ## ItemIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ItemIdentifierTypeDef
+
+def get_value() -> ItemIdentifierTypeDef:
+    return {
+        "type": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ItemIdentifierTypeDef(TypedDict):
+    type: ItemTypeType,  # (1)
+    value: ItemValueTypeDef,  # (2)
+```
 
-- `type`: [ItemTypeType](./literals.md#itemtypetype)
-- `value`: [ItemValueTypeDef](./type_defs.md#itemvaluetypedef)
-
-<a id="itemvaluetypedef"></a>
-
+1. See [:material-code-brackets: ItemTypeType](./literals.md#itemtypetype) 
+2. See [:material-code-braces: ItemValueTypeDef](./type_defs.md#itemvaluetypedef) 
 ## ItemValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ItemValueTypeDef
+
+def get_value() -> ItemValueTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ItemValueTypeDef(TypedDict):
+    arn: NotRequired[str],
+    metricDefinition: NotRequired[str],
+    url: NotRequired[str],
+```
 
-- `arn`: `str`
-- `metricDefinition`: `str`
-- `url`: `str`
+## ListIncidentRecordsInputListIncidentRecordsPaginateTypeDef
 
-<a id="listincidentrecordsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import ListIncidentRecordsInputListIncidentRecordsPaginateTypeDef
 
+def get_value() -> ListIncidentRecordsInputListIncidentRecordsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListIncidentRecordsInputListIncidentRecordsPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListIncidentRecordsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListIncidentRecordsInputRequestTypeDef
+
+def get_value() -> ListIncidentRecordsInputRequestTypeDef:
+    return {
+        "filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListIncidentRecordsInputRequestTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listincidentrecordsoutputtypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListIncidentRecordsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListIncidentRecordsOutputTypeDef
+
+def get_value() -> ListIncidentRecordsOutputTypeDef:
+    return {
+        "incidentRecordSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIncidentRecordsOutputTypeDef(TypedDict):
+    incidentRecordSummaries: List[IncidentRecordSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `incidentRecordSummaries`:
-  `List`\[[IncidentRecordSummaryTypeDef](./type_defs.md#incidentrecordsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: IncidentRecordSummaryTypeDef](./type_defs.md#incidentrecordsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRelatedItemsInputListRelatedItemsPaginateTypeDef
 
-<a id="listrelateditemsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import ListRelatedItemsInputListRelatedItemsPaginateTypeDef
 
+def get_value() -> ListRelatedItemsInputListRelatedItemsPaginateTypeDef:
+    return {
+        "incidentRecordArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListRelatedItemsInputListRelatedItemsPaginateTypeDef(TypedDict):
+    incidentRecordArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRelatedItemsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListRelatedItemsInputRequestTypeDef
+
+def get_value() -> ListRelatedItemsInputRequestTypeDef:
+    return {
+        "incidentRecordArn": ...,
+    }
 ```
 
-Required fields:
-
-- `incidentRecordArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listrelateditemsoutputtypedef"></a>
+```python title="Definition"
+class ListRelatedItemsInputRequestTypeDef(TypedDict):
+    incidentRecordArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListRelatedItemsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListRelatedItemsOutputTypeDef
+
+def get_value() -> ListRelatedItemsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "relatedItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRelatedItemsOutputTypeDef(TypedDict):
+    nextToken: str,
+    relatedItems: List[RelatedItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `relatedItems`:
-  `List`\[[RelatedItemTypeDef](./type_defs.md#relateditemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RelatedItemTypeDef](./type_defs.md#relateditemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListReplicationSetsInputListReplicationSetsPaginateTypeDef
 
-<a id="listreplicationsetsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import ListReplicationSetsInputListReplicationSetsPaginateTypeDef
 
+def get_value() -> ListReplicationSetsInputListReplicationSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListReplicationSetsInputListReplicationSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListReplicationSetsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListReplicationSetsInputRequestTypeDef
+
+def get_value() -> ListReplicationSetsInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listreplicationsetsoutputtypedef"></a>
+```python title="Definition"
+class ListReplicationSetsInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListReplicationSetsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListReplicationSetsOutputTypeDef
+
+def get_value() -> ListReplicationSetsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "replicationSetArns": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReplicationSetsOutputTypeDef(TypedDict):
+    nextToken: str,
+    replicationSetArns: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nextToken`: `str`
-- `replicationSetArns`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResponsePlansInputListResponsePlansPaginateTypeDef
 
-<a id="listresponseplansinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import ListResponsePlansInputListResponsePlansPaginateTypeDef
 
+def get_value() -> ListResponsePlansInputListResponsePlansPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListResponsePlansInputListResponsePlansPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListResponsePlansInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListResponsePlansInputRequestTypeDef
+
+def get_value() -> ListResponsePlansInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listresponseplansoutputtypedef"></a>
+```python title="Definition"
+class ListResponsePlansInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListResponsePlansOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListResponsePlansOutputTypeDef
+
+def get_value() -> ListResponsePlansOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "responsePlanSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResponsePlansOutputTypeDef(TypedDict):
+    nextToken: str,
+    responsePlanSummaries: List[ResponsePlanSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `responsePlanSummaries`:
-  `List`\[[ResponsePlanSummaryTypeDef](./type_defs.md#responseplansummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponsePlanSummaryTypeDef](./type_defs.md#responseplansummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTimelineEventsInputListTimelineEventsPaginateTypeDef
 
-<a id="listtimelineeventsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_incidents.type_defs import ListTimelineEventsInputListTimelineEventsPaginateTypeDef
 
+def get_value() -> ListTimelineEventsInputListTimelineEventsPaginateTypeDef:
+    return {
+        "incidentRecordArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTimelineEventsInputListTimelineEventsPaginateTypeDef(TypedDict):
+    incidentRecordArn: str,
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    sortBy: NotRequired[TimelineEventSortType],  # (2)
+    sortOrder: NotRequired[SortOrderType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: TimelineEventSortType](./literals.md#timelineeventsorttype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTimelineEventsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListTimelineEventsInputRequestTypeDef
+
+def get_value() -> ListTimelineEventsInputRequestTypeDef:
+    return {
+        "incidentRecordArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTimelineEventsInputRequestTypeDef(TypedDict):
+    incidentRecordArn: str,
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    sortBy: NotRequired[TimelineEventSortType],  # (2)
+    sortOrder: NotRequired[SortOrderType],  # (3)
+```
 
-- `incidentRecordArn`: `str`
-
-Optional fields:
-
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortBy`: `Literal['EVENT_TIME']` (see
-  [TimelineEventSortType](./literals.md#timelineeventsorttype))
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="listtimelineeventsoutputtypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: TimelineEventSortType](./literals.md#timelineeventsorttype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ListTimelineEventsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ListTimelineEventsOutputTypeDef
+
+def get_value() -> ListTimelineEventsOutputTypeDef:
+    return {
+        "eventSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTimelineEventsOutputTypeDef(TypedDict):
+    eventSummaries: List[EventSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `eventSummaries`:
-  `List`\[[EventSummaryTypeDef](./type_defs.md#eventsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notificationtargetitemtypedef"></a>
-
+1. See [:material-code-braces: EventSummaryTypeDef](./type_defs.md#eventsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotificationTargetItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import NotificationTargetItemTypeDef
+
+def get_value() -> NotificationTargetItemTypeDef:
+    return {
+        "snsTopicArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `snsTopicArn`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class NotificationTargetItemTypeDef(TypedDict):
+    snsTopicArn: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putresourcepolicyinputrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutResourcePolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import PutResourcePolicyInputRequestTypeDef
+
+def get_value() -> PutResourcePolicyInputRequestTypeDef:
+    return {
+        "policy": ...,
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `policy`: `str`
-- `resourceArn`: `str`
-
-<a id="putresourcepolicyoutputtypedef"></a>
+```python title="Definition"
+class PutResourcePolicyInputRequestTypeDef(TypedDict):
+    policy: str,
+    resourceArn: str,
+```
 
 ## PutResourcePolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import PutResourcePolicyOutputTypeDef
+
+def get_value() -> PutResourcePolicyOutputTypeDef:
+    return {
+        "policyId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutResourcePolicyOutputTypeDef(TypedDict):
+    policyId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `policyId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="regioninfotypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import RegionInfoTypeDef
+
+def get_value() -> RegionInfoTypeDef:
+    return {
+        "status": ...,
+        "statusUpdateDateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegionInfoTypeDef(TypedDict):
+    status: RegionStatusType,  # (1)
+    statusUpdateDateTime: datetime,
+    sseKmsKeyId: NotRequired[str],
+    statusMessage: NotRequired[str],
+```
 
-- `status`: [RegionStatusType](./literals.md#regionstatustype)
-- `statusUpdateDateTime`: `datetime`
-
-Optional fields:
-
-- `sseKmsKeyId`: `str`
-- `statusMessage`: `str`
-
-<a id="regionmapinputvaluetypedef"></a>
-
+1. See [:material-code-brackets: RegionStatusType](./literals.md#regionstatustype) 
 ## RegionMapInputValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import RegionMapInputValueTypeDef
+
+def get_value() -> RegionMapInputValueTypeDef:
+    return {
+        "sseKmsKeyId": ...,
+    }
 ```
 
-Optional fields:
-
-- `sseKmsKeyId`: `str`
-
-<a id="relateditemtypedef"></a>
+```python title="Definition"
+class RegionMapInputValueTypeDef(TypedDict):
+    sseKmsKeyId: NotRequired[str],
+```
 
 ## RelatedItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import RelatedItemTypeDef
+
+def get_value() -> RelatedItemTypeDef:
+    return {
+        "identifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RelatedItemTypeDef(TypedDict):
+    identifier: ItemIdentifierTypeDef,  # (1)
+    title: NotRequired[str],
+```
 
-- `identifier`: [ItemIdentifierTypeDef](./type_defs.md#itemidentifiertypedef)
-
-Optional fields:
-
-- `title`: `str`
-
-<a id="relateditemsupdatetypedef"></a>
-
+1. See [:material-code-braces: ItemIdentifierTypeDef](./type_defs.md#itemidentifiertypedef) 
 ## RelatedItemsUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import RelatedItemsUpdateTypeDef
+
+def get_value() -> RelatedItemsUpdateTypeDef:
+    return {
+        "itemToAdd": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RelatedItemsUpdateTypeDef(TypedDict):
+    itemToAdd: NotRequired[RelatedItemTypeDef],  # (1)
+    itemToRemove: NotRequired[ItemIdentifierTypeDef],  # (2)
+```
 
-- `itemToAdd`: [RelatedItemTypeDef](./type_defs.md#relateditemtypedef)
-- `itemToRemove`: [ItemIdentifierTypeDef](./type_defs.md#itemidentifiertypedef)
-
-<a id="replicationsettypedef"></a>
-
+1. See [:material-code-braces: RelatedItemTypeDef](./type_defs.md#relateditemtypedef) 
+2. See [:material-code-braces: ItemIdentifierTypeDef](./type_defs.md#itemidentifiertypedef) 
 ## ReplicationSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ReplicationSetTypeDef
+
+def get_value() -> ReplicationSetTypeDef:
+    return {
+        "createdBy": ...,
+        "createdTime": ...,
+        "deletionProtected": ...,
+        "lastModifiedBy": ...,
+        "lastModifiedTime": ...,
+        "regionMap": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicationSetTypeDef(TypedDict):
+    createdBy: str,
+    createdTime: datetime,
+    deletionProtected: bool,
+    lastModifiedBy: str,
+    lastModifiedTime: datetime,
+    regionMap: Dict[str, RegionInfoTypeDef],  # (1)
+    status: ReplicationSetStatusType,  # (2)
+    arn: NotRequired[str],
+```
 
-- `createdBy`: `str`
-- `createdTime`: `datetime`
-- `deletionProtected`: `bool`
-- `lastModifiedBy`: `str`
-- `lastModifiedTime`: `datetime`
-- `regionMap`: `Dict`\[`str`,
-  [RegionInfoTypeDef](./type_defs.md#regioninfotypedef)\]
-- `status`: [ReplicationSetStatusType](./literals.md#replicationsetstatustype)
-
-Optional fields:
-
-- `arn`: `str`
-
-<a id="resourcepolicytypedef"></a>
-
+1. See [:material-code-braces: RegionInfoTypeDef](./type_defs.md#regioninfotypedef) 
+2. See [:material-code-brackets: ReplicationSetStatusType](./literals.md#replicationsetstatustype) 
 ## ResourcePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ResourcePolicyTypeDef
+
+def get_value() -> ResourcePolicyTypeDef:
+    return {
+        "policyDocument": ...,
+        "policyId": ...,
+        "ramResourceShareRegion": ...,
+    }
 ```
 
-Required fields:
-
-- `policyDocument`: `str`
-- `policyId`: `str`
-- `ramResourceShareRegion`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourcePolicyTypeDef(TypedDict):
+    policyDocument: str,
+    policyId: str,
+    ramResourceShareRegion: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="responseplansummarytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResponsePlanSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import ResponsePlanSummaryTypeDef
+
+def get_value() -> ResponsePlanSummaryTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `name`: `str`
-
-Optional fields:
-
-- `displayName`: `str`
-
-<a id="ssmautomationtypedef"></a>
+```python title="Definition"
+class ResponsePlanSummaryTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    displayName: NotRequired[str],
+```
 
 ## SsmAutomationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import SsmAutomationTypeDef
+
+def get_value() -> SsmAutomationTypeDef:
+    return {
+        "documentName": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SsmAutomationTypeDef(TypedDict):
+    documentName: str,
+    roleArn: str,
+    documentVersion: NotRequired[str],
+    parameters: NotRequired[Mapping[str, Sequence[str]]],
+    targetAccount: NotRequired[SsmTargetAccountType],  # (1)
+```
 
-- `documentName`: `str`
-- `roleArn`: `str`
-
-Optional fields:
-
-- `documentVersion`: `str`
-- `parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `targetAccount`: [SsmTargetAccountType](./literals.md#ssmtargetaccounttype)
-
-<a id="startincidentinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: SsmTargetAccountType](./literals.md#ssmtargetaccounttype) 
 ## StartIncidentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import StartIncidentInputRequestTypeDef
+
+def get_value() -> StartIncidentInputRequestTypeDef:
+    return {
+        "responsePlanArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartIncidentInputRequestTypeDef(TypedDict):
+    responsePlanArn: str,
+    clientToken: NotRequired[str],
+    impact: NotRequired[int],
+    relatedItems: NotRequired[Sequence[RelatedItemTypeDef]],  # (1)
+    title: NotRequired[str],
+    triggerDetails: NotRequired[TriggerDetailsTypeDef],  # (2)
+```
 
-- `responsePlanArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `impact`: `int`
-- `relatedItems`:
-  `Sequence`\[[RelatedItemTypeDef](./type_defs.md#relateditemtypedef)\]
-- `title`: `str`
-- `triggerDetails`:
-  [TriggerDetailsTypeDef](./type_defs.md#triggerdetailstypedef)
-
-<a id="startincidentoutputtypedef"></a>
-
+1. See [:material-code-braces: RelatedItemTypeDef](./type_defs.md#relateditemtypedef) 
+2. See [:material-code-braces: TriggerDetailsTypeDef](./type_defs.md#triggerdetailstypedef) 
 ## StartIncidentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import StartIncidentOutputTypeDef
+
+def get_value() -> StartIncidentOutputTypeDef:
+    return {
+        "incidentRecordArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartIncidentOutputTypeDef(TypedDict):
+    incidentRecordArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `incidentRecordArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="timelineeventtypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TimelineEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import TimelineEventTypeDef
+
+def get_value() -> TimelineEventTypeDef:
+    return {
+        "eventData": ...,
+        "eventId": ...,
+        "eventTime": ...,
+        "eventType": ...,
+        "eventUpdatedTime": ...,
+        "incidentRecordArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventData`: `str`
-- `eventId`: `str`
-- `eventTime`: `datetime`
-- `eventType`: `str`
-- `eventUpdatedTime`: `datetime`
-- `incidentRecordArn`: `str`
-
-<a id="triggerdetailstypedef"></a>
+```python title="Definition"
+class TimelineEventTypeDef(TypedDict):
+    eventData: str,
+    eventId: str,
+    eventTime: datetime,
+    eventType: str,
+    eventUpdatedTime: datetime,
+    incidentRecordArn: str,
+```
 
 ## TriggerDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import TriggerDetailsTypeDef
+
+def get_value() -> TriggerDetailsTypeDef:
+    return {
+        "source": ...,
+        "timestamp": ...,
+    }
 ```
 
-Required fields:
-
-- `source`: `str`
-- `timestamp`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `rawData`: `str`
-- `triggerArn`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TriggerDetailsTypeDef(TypedDict):
+    source: str,
+    timestamp: Union[datetime, str],
+    rawData: NotRequired[str],
+    triggerArn: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedeletionprotectioninputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateDeletionProtectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import UpdateDeletionProtectionInputRequestTypeDef
+
+def get_value() -> UpdateDeletionProtectionInputRequestTypeDef:
+    return {
+        "arn": ...,
+        "deletionProtected": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `deletionProtected`: `bool`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="updateincidentrecordinputrequesttypedef"></a>
+```python title="Definition"
+class UpdateDeletionProtectionInputRequestTypeDef(TypedDict):
+    arn: str,
+    deletionProtected: bool,
+    clientToken: NotRequired[str],
+```
 
 ## UpdateIncidentRecordInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import UpdateIncidentRecordInputRequestTypeDef
+
+def get_value() -> UpdateIncidentRecordInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateIncidentRecordInputRequestTypeDef(TypedDict):
+    arn: str,
+    chatChannel: NotRequired[ChatChannelTypeDef],  # (1)
+    clientToken: NotRequired[str],
+    impact: NotRequired[int],
+    notificationTargets: NotRequired[Sequence[NotificationTargetItemTypeDef]],  # (2)
+    status: NotRequired[IncidentRecordStatusType],  # (3)
+    summary: NotRequired[str],
+    title: NotRequired[str],
+```
 
-- `arn`: `str`
-
-Optional fields:
-
-- `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
-- `clientToken`: `str`
-- `impact`: `int`
-- `notificationTargets`:
-  `Sequence`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
-- `status`: [IncidentRecordStatusType](./literals.md#incidentrecordstatustype)
-- `summary`: `str`
-- `title`: `str`
-
-<a id="updaterelateditemsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
+2. See [:material-code-braces: NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef) 
+3. See [:material-code-brackets: IncidentRecordStatusType](./literals.md#incidentrecordstatustype) 
 ## UpdateRelatedItemsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import UpdateRelatedItemsInputRequestTypeDef
+
+def get_value() -> UpdateRelatedItemsInputRequestTypeDef:
+    return {
+        "incidentRecordArn": ...,
+        "relatedItemsUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRelatedItemsInputRequestTypeDef(TypedDict):
+    incidentRecordArn: str,
+    relatedItemsUpdate: RelatedItemsUpdateTypeDef,  # (1)
+    clientToken: NotRequired[str],
+```
 
-- `incidentRecordArn`: `str`
-- `relatedItemsUpdate`:
-  [RelatedItemsUpdateTypeDef](./type_defs.md#relateditemsupdatetypedef)
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="updatereplicationsetactiontypedef"></a>
-
+1. See [:material-code-braces: RelatedItemsUpdateTypeDef](./type_defs.md#relateditemsupdatetypedef) 
 ## UpdateReplicationSetActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import UpdateReplicationSetActionTypeDef
+
+def get_value() -> UpdateReplicationSetActionTypeDef:
+    return {
+        "addRegionAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateReplicationSetActionTypeDef(TypedDict):
+    addRegionAction: NotRequired[AddRegionActionTypeDef],  # (1)
+    deleteRegionAction: NotRequired[DeleteRegionActionTypeDef],  # (2)
+```
 
-- `addRegionAction`:
-  [AddRegionActionTypeDef](./type_defs.md#addregionactiontypedef)
-- `deleteRegionAction`:
-  [DeleteRegionActionTypeDef](./type_defs.md#deleteregionactiontypedef)
-
-<a id="updatereplicationsetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AddRegionActionTypeDef](./type_defs.md#addregionactiontypedef) 
+2. See [:material-code-braces: DeleteRegionActionTypeDef](./type_defs.md#deleteregionactiontypedef) 
 ## UpdateReplicationSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import UpdateReplicationSetInputRequestTypeDef
+
+def get_value() -> UpdateReplicationSetInputRequestTypeDef:
+    return {
+        "actions": ...,
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateReplicationSetInputRequestTypeDef(TypedDict):
+    actions: Sequence[UpdateReplicationSetActionTypeDef],  # (1)
+    arn: str,
+    clientToken: NotRequired[str],
+```
 
-- `actions`:
-  `Sequence`\[[UpdateReplicationSetActionTypeDef](./type_defs.md#updatereplicationsetactiontypedef)\]
-- `arn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="updateresponseplaninputrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateReplicationSetActionTypeDef](./type_defs.md#updatereplicationsetactiontypedef) 
 ## UpdateResponsePlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import UpdateResponsePlanInputRequestTypeDef
+
+def get_value() -> UpdateResponsePlanInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResponsePlanInputRequestTypeDef(TypedDict):
+    arn: str,
+    actions: NotRequired[Sequence[ActionTypeDef]],  # (1)
+    chatChannel: NotRequired[ChatChannelTypeDef],  # (2)
+    clientToken: NotRequired[str],
+    displayName: NotRequired[str],
+    engagements: NotRequired[Sequence[str]],
+    incidentTemplateDedupeString: NotRequired[str],
+    incidentTemplateImpact: NotRequired[int],
+    incidentTemplateNotificationTargets: NotRequired[Sequence[NotificationTargetItemTypeDef]],  # (3)
+    incidentTemplateSummary: NotRequired[str],
+    incidentTemplateTitle: NotRequired[str],
+```
 
-- `arn`: `str`
-
-Optional fields:
-
-- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `chatChannel`: [ChatChannelTypeDef](./type_defs.md#chatchanneltypedef)
-- `clientToken`: `str`
-- `displayName`: `str`
-- `engagements`: `Sequence`\[`str`\]
-- `incidentTemplateDedupeString`: `str`
-- `incidentTemplateImpact`: `int`
-- `incidentTemplateNotificationTargets`:
-  `Sequence`\[[NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)\]
-- `incidentTemplateSummary`: `str`
-- `incidentTemplateTitle`: `str`
-
-<a id="updatetimelineeventinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ChatChannelTypeDef](./type_defs.md#chatchanneltypedef) 
+3. See [:material-code-braces: NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef) 
 ## UpdateTimelineEventInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import UpdateTimelineEventInputRequestTypeDef
+
+def get_value() -> UpdateTimelineEventInputRequestTypeDef:
+    return {
+        "eventId": ...,
+        "incidentRecordArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventId`: `str`
-- `incidentRecordArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `eventData`: `str`
-- `eventTime`: `Union`\[`datetime`, `str`\]
-- `eventType`: `str`
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class UpdateTimelineEventInputRequestTypeDef(TypedDict):
+    eventId: str,
+    incidentRecordArn: str,
+    clientToken: NotRequired[str],
+    eventData: NotRequired[str],
+    eventTime: NotRequired[Union[datetime, str]],
+    eventType: NotRequired[str],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_incidents.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

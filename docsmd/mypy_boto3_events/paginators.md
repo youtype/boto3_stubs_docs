@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-eventbridge-module"></a>
-
-# Paginators for boto3 EventBridge module
+# Paginators
 
 > [Index](../README.md) > [EventBridge](./README.md) > Paginators
 
-Auto-generated documentation for
-[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
-type annotations stubs module
-[mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
+!!! note ""
 
-- [Paginators for boto3 EventBridge module](#paginators-for-boto3-eventbridge-module)
-  - [ListRuleNamesByTargetPaginator](#listrulenamesbytargetpaginator)
-  - [ListRulesPaginator](#listrulespaginator)
-  - [ListTargetsByRulePaginator](#listtargetsbyrulepaginator)
-
-<a id="listrulenamesbytargetpaginator"></a>
+    Auto-generated documentation for [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
+    type annotations stubs module [mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
 
 ## ListRuleNamesByTargetPaginator
 
-Type annotations for
-`boto3.client("events").get_paginator("list_rule_names_by_target")`.
+Type annotations and code completion for `#!python boto3.client("events").get_paginator("list_rule_names_by_target")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRuleNamesByTarget)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_events.paginator import ListRuleNamesByTargetPaginator
@@ -32,28 +21,41 @@ def get_list_rule_names_by_target_paginator() -> ListRuleNamesByTargetPaginator:
     return Session().client("events").get_paginator("list_rule_names_by_target")
 ```
 
-Boto3 documentation:
-[EventBridge.Paginator.ListRuleNamesByTarget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRuleNamesByTarget)
 
-Arguments for `ListRuleNamesByTargetPaginator.paginate` method:
+### paginate
 
-- `TargetArn`: `str` *(required)*
-- `EventBusName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRuleNamesByTargetPaginator.paginate` method.
 
-`ListRuleNamesByTargetPaginator.paginate` returns
-`_PageIterator`\[[ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TargetArn: str,
+    EventBusName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRuleNamesByTargetResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRuleNamesByTargetRequestListRuleNamesByTargetPaginateTypeDef = {  # (1)
+    "TargetArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRuleNamesByTargetRequestListRuleNamesByTargetPaginateTypeDef](./type_defs.md#listrulenamesbytargetrequestlistrulenamesbytargetpaginatetypedef) 
 ## ListRulesPaginator
 
-Type annotations for `boto3.client("events").get_paginator("list_rules")`.
+Type annotations and code completion for `#!python boto3.client("events").get_paginator("list_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_events.paginator import ListRulesPaginator
@@ -62,29 +64,41 @@ def get_list_rules_paginator() -> ListRulesPaginator:
     return Session().client("events").get_paginator("list_rules")
 ```
 
-Boto3 documentation:
-[EventBridge.Paginator.ListRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListRules)
 
-Arguments for `ListRulesPaginator.paginate` method:
+### paginate
 
-- `NamePrefix`: `str`
-- `EventBusName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRulesPaginator.paginate` method.
 
-`ListRulesPaginator.paginate` returns
-`_PageIterator`\[[ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    NamePrefix: str = ...,
+    EventBusName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRulesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtargetsbyrulepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRulesRequestListRulesPaginateTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRulesRequestListRulesPaginateTypeDef](./type_defs.md#listrulesrequestlistrulespaginatetypedef) 
 ## ListTargetsByRulePaginator
 
-Type annotations for
-`boto3.client("events").get_paginator("list_targets_by_rule")`.
+Type annotations and code completion for `#!python boto3.client("events").get_paginator("list_targets_by_rule")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListTargetsByRule)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_events.paginator import ListTargetsByRulePaginator
@@ -93,15 +107,32 @@ def get_list_targets_by_rule_paginator() -> ListTargetsByRulePaginator:
     return Session().client("events").get_paginator("list_targets_by_rule")
 ```
 
-Boto3 documentation:
-[EventBridge.Paginator.ListTargetsByRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Paginator.ListTargetsByRule)
 
-Arguments for `ListTargetsByRulePaginator.paginate` method:
+### paginate
 
-- `Rule`: `str` *(required)*
-- `EventBusName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTargetsByRulePaginator.paginate` method.
 
-`ListTargetsByRulePaginator.paginate` returns
-`_PageIterator`\[[ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Rule: str,
+    EventBusName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTargetsByRuleResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTargetsByRuleRequestListTargetsByRulePaginateTypeDef = {  # (1)
+    "Rule": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTargetsByRuleRequestListTargetsByRulePaginateTypeDef](./type_defs.md#listtargetsbyrulerequestlisttargetsbyrulepaginatetypedef) 

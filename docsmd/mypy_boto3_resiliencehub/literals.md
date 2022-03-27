@@ -1,732 +1,756 @@
-<a id="literals-for-boto3-resiliencehub-module"></a>
-
-# Literals for boto3 ResilienceHub module
+# Literals
 
 > [Index](../README.md) > [ResilienceHub](./README.md) > Literals
 
-Auto-generated documentation for
-[ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
-type annotations stubs module
-[mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
+!!! note ""
 
-- [Literals for boto3 ResilienceHub module](#literals-for-boto3-resiliencehub-module)
-  - [AlarmTypeType](#alarmtypetype)
-  - [AppComplianceStatusTypeType](#appcompliancestatustypetype)
-  - [AppStatusTypeType](#appstatustypetype)
-  - [AssessmentInvokerType](#assessmentinvokertype)
-  - [AssessmentStatusType](#assessmentstatustype)
-  - [ComplianceStatusType](#compliancestatustype)
-  - [ConfigRecommendationOptimizationTypeType](#configrecommendationoptimizationtypetype)
-  - [CostFrequencyType](#costfrequencytype)
-  - [DataLocationConstraintType](#datalocationconstrainttype)
-  - [DisruptionTypeType](#disruptiontypetype)
-  - [EstimatedCostTierType](#estimatedcosttiertype)
-  - [HaArchitectureType](#haarchitecturetype)
-  - [PhysicalIdentifierTypeType](#physicalidentifiertypetype)
-  - [RecommendationComplianceStatusType](#recommendationcompliancestatustype)
-  - [RecommendationTemplateStatusType](#recommendationtemplatestatustype)
-  - [RenderRecommendationTypeType](#renderrecommendationtypetype)
-  - [ResiliencyPolicyTierType](#resiliencypolicytiertype)
-  - [ResourceImportStatusTypeType](#resourceimportstatustypetype)
-  - [ResourceMappingTypeType](#resourcemappingtypetype)
-  - [ResourceResolutionStatusTypeType](#resourceresolutionstatustypetype)
-  - [SopServiceTypeType](#sopservicetypetype)
-  - [TemplateFormatType](#templateformattype)
-  - [TestRiskType](#testrisktype)
-  - [TestTypeType](#testtypetype)
-  - [ResilienceHubServiceName](#resiliencehubservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-
-<a id="alarmtypetype"></a>
+    Auto-generated documentation for [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
+    type annotations stubs module [mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
 
 ## AlarmTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import AlarmTypeType
+
+def get_value() -> AlarmTypeType:
+    return "Canary"
 ```
 
-Values:
-
-- `Canary`
-- `Composite`
-- `Event`
-- `Logs`
-- `Metric`
-
-<a id="appcompliancestatustypetype"></a>
-
+```python title="Definition"
+AlarmTypeType = Literal[
+    "Canary",
+    "Composite",
+    "Event",
+    "Logs",
+    "Metric",
+]
+```
 ## AppComplianceStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import AppComplianceStatusTypeType
+
+def get_value() -> AppComplianceStatusTypeType:
+    return "ChangesDetected"
 ```
 
-Values:
-
-- `ChangesDetected`
-- `NotAssessed`
-- `PolicyBreached`
-- `PolicyMet`
-
-<a id="appstatustypetype"></a>
-
+```python title="Definition"
+AppComplianceStatusTypeType = Literal[
+    "ChangesDetected",
+    "NotAssessed",
+    "PolicyBreached",
+    "PolicyMet",
+]
+```
 ## AppStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import AppStatusTypeType
+
+def get_value() -> AppStatusTypeType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Deleting`
-
-<a id="assessmentinvokertype"></a>
-
+```python title="Definition"
+AppStatusTypeType = Literal[
+    "Active",
+    "Deleting",
+]
+```
 ## AssessmentInvokerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import AssessmentInvokerType
+
+def get_value() -> AssessmentInvokerType:
+    return "System"
 ```
 
-Values:
-
-- `System`
-- `User`
-
-<a id="assessmentstatustype"></a>
-
+```python title="Definition"
+AssessmentInvokerType = Literal[
+    "System",
+    "User",
+]
+```
 ## AssessmentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import AssessmentStatusType
+
+def get_value() -> AssessmentStatusType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Success`
-
-<a id="compliancestatustype"></a>
-
+```python title="Definition"
+AssessmentStatusType = Literal[
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Success",
+]
+```
 ## ComplianceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import ComplianceStatusType
+
+def get_value() -> ComplianceStatusType:
+    return "PolicyBreached"
 ```
 
-Values:
-
-- `PolicyBreached`
-- `PolicyMet`
-
-<a id="configrecommendationoptimizationtypetype"></a>
-
+```python title="Definition"
+ComplianceStatusType = Literal[
+    "PolicyBreached",
+    "PolicyMet",
+]
+```
 ## ConfigRecommendationOptimizationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import ConfigRecommendationOptimizationTypeType
+
+def get_value() -> ConfigRecommendationOptimizationTypeType:
+    return "BestAZRecovery"
 ```
 
-Values:
-
-- `BestAttainable`
-- `BestAZRecovery`
-- `LeastChange`
-- `LeastCost`
-- `LeastErrors`
-
-<a id="costfrequencytype"></a>
-
+```python title="Definition"
+ConfigRecommendationOptimizationTypeType = Literal[
+    "BestAttainable",
+    "BestAZRecovery",
+    "LeastChange",
+    "LeastCost",
+    "LeastErrors",
+]
+```
 ## CostFrequencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import CostFrequencyType
+
+def get_value() -> CostFrequencyType:
+    return "Daily"
 ```
 
-Values:
-
-- `Daily`
-- `Hourly`
-- `Monthly`
-- `Yearly`
-
-<a id="datalocationconstrainttype"></a>
-
+```python title="Definition"
+CostFrequencyType = Literal[
+    "Daily",
+    "Hourly",
+    "Monthly",
+    "Yearly",
+]
+```
 ## DataLocationConstraintType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import DataLocationConstraintType
+
+def get_value() -> DataLocationConstraintType:
+    return "AnyLocation"
 ```
 
-Values:
-
-- `AnyLocation`
-- `SameContinent`
-- `SameCountry`
-
-<a id="disruptiontypetype"></a>
-
+```python title="Definition"
+DataLocationConstraintType = Literal[
+    "AnyLocation",
+    "SameContinent",
+    "SameCountry",
+]
+```
 ## DisruptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import DisruptionTypeType
+
+def get_value() -> DisruptionTypeType:
+    return "AZ"
 ```
 
-Values:
-
-- `AZ`
-- `Hardware`
-- `Region`
-- `Software`
-
-<a id="estimatedcosttiertype"></a>
-
+```python title="Definition"
+DisruptionTypeType = Literal[
+    "AZ",
+    "Hardware",
+    "Region",
+    "Software",
+]
+```
 ## EstimatedCostTierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import EstimatedCostTierType
+
+def get_value() -> EstimatedCostTierType:
+    return "L1"
 ```
 
-Values:
-
-- `L1`
-- `L2`
-- `L3`
-- `L4`
-
-<a id="haarchitecturetype"></a>
-
+```python title="Definition"
+EstimatedCostTierType = Literal[
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+]
+```
 ## HaArchitectureType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import HaArchitectureType
+
+def get_value() -> HaArchitectureType:
+    return "BackupAndRestore"
 ```
 
-Values:
-
-- `BackupAndRestore`
-- `MultiSite`
-- `NoRecoveryPlan`
-- `PilotLight`
-- `WarmStandby`
-
-<a id="physicalidentifiertypetype"></a>
-
+```python title="Definition"
+HaArchitectureType = Literal[
+    "BackupAndRestore",
+    "MultiSite",
+    "NoRecoveryPlan",
+    "PilotLight",
+    "WarmStandby",
+]
+```
 ## PhysicalIdentifierTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import PhysicalIdentifierTypeType
+
+def get_value() -> PhysicalIdentifierTypeType:
+    return "Arn"
 ```
 
-Values:
-
-- `Arn`
-- `Native`
-
-<a id="recommendationcompliancestatustype"></a>
-
+```python title="Definition"
+PhysicalIdentifierTypeType = Literal[
+    "Arn",
+    "Native",
+]
+```
 ## RecommendationComplianceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import RecommendationComplianceStatusType
+
+def get_value() -> RecommendationComplianceStatusType:
+    return "BreachedCanMeet"
 ```
 
-Values:
-
-- `BreachedCanMeet`
-- `BreachedUnattainable`
-- `MetCanImprove`
-
-<a id="recommendationtemplatestatustype"></a>
-
+```python title="Definition"
+RecommendationComplianceStatusType = Literal[
+    "BreachedCanMeet",
+    "BreachedUnattainable",
+    "MetCanImprove",
+]
+```
 ## RecommendationTemplateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import RecommendationTemplateStatusType
+
+def get_value() -> RecommendationTemplateStatusType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Success`
-
-<a id="renderrecommendationtypetype"></a>
-
+```python title="Definition"
+RecommendationTemplateStatusType = Literal[
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Success",
+]
+```
 ## RenderRecommendationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import RenderRecommendationTypeType
+
+def get_value() -> RenderRecommendationTypeType:
+    return "Alarm"
 ```
 
-Values:
-
-- `Alarm`
-- `Sop`
-- `Test`
-
-<a id="resiliencypolicytiertype"></a>
-
+```python title="Definition"
+RenderRecommendationTypeType = Literal[
+    "Alarm",
+    "Sop",
+    "Test",
+]
+```
 ## ResiliencyPolicyTierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import ResiliencyPolicyTierType
+
+def get_value() -> ResiliencyPolicyTierType:
+    return "CoreServices"
 ```
 
-Values:
-
-- `CoreServices`
-- `Critical`
-- `Important`
-- `MissionCritical`
-- `NonCritical`
-
-<a id="resourceimportstatustypetype"></a>
-
+```python title="Definition"
+ResiliencyPolicyTierType = Literal[
+    "CoreServices",
+    "Critical",
+    "Important",
+    "MissionCritical",
+    "NonCritical",
+]
+```
 ## ResourceImportStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import ResourceImportStatusTypeType
+
+def get_value() -> ResourceImportStatusTypeType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Success`
-
-<a id="resourcemappingtypetype"></a>
-
+```python title="Definition"
+ResourceImportStatusTypeType = Literal[
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Success",
+]
+```
 ## ResourceMappingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import ResourceMappingTypeType
+
+def get_value() -> ResourceMappingTypeType:
+    return "AppRegistryApp"
 ```
 
-Values:
-
-- `AppRegistryApp`
-- `CfnStack`
-- `Resource`
-- `ResourceGroup`
-
-<a id="resourceresolutionstatustypetype"></a>
-
+```python title="Definition"
+ResourceMappingTypeType = Literal[
+    "AppRegistryApp",
+    "CfnStack",
+    "Resource",
+    "ResourceGroup",
+]
+```
 ## ResourceResolutionStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import ResourceResolutionStatusTypeType
+
+def get_value() -> ResourceResolutionStatusTypeType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Success`
-
-<a id="sopservicetypetype"></a>
-
+```python title="Definition"
+ResourceResolutionStatusTypeType = Literal[
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Success",
+]
+```
 ## SopServiceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import SopServiceTypeType
+
+def get_value() -> SopServiceTypeType:
+    return "SSM"
 ```
 
-Values:
-
-- `SSM`
-
-<a id="templateformattype"></a>
-
+```python title="Definition"
+SopServiceTypeType = Literal[
+    "SSM",
+]
+```
 ## TemplateFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import TemplateFormatType
+
+def get_value() -> TemplateFormatType:
+    return "CfnJson"
 ```
 
-Values:
-
-- `CfnJson`
-- `CfnYaml`
-
-<a id="testrisktype"></a>
-
+```python title="Definition"
+TemplateFormatType = Literal[
+    "CfnJson",
+    "CfnYaml",
+]
+```
 ## TestRiskType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import TestRiskType
+
+def get_value() -> TestRiskType:
+    return "High"
 ```
 
-Values:
-
-- `High`
-- `Medium`
-- `Small`
-
-<a id="testtypetype"></a>
-
+```python title="Definition"
+TestRiskType = Literal[
+    "High",
+    "Medium",
+    "Small",
+]
+```
 ## TestTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import TestTypeType
+
+def get_value() -> TestTypeType:
+    return "AZ"
 ```
 
-Values:
-
-- `AZ`
-- `Hardware`
-- `Region`
-- `Software`
-
-<a id="resiliencehubservicename"></a>
-
+```python title="Definition"
+TestTypeType = Literal[
+    "AZ",
+    "Hardware",
+    "Region",
+    "Software",
+]
+```
 ## ResilienceHubServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import ResilienceHubServiceName
+
+def get_value() -> ResilienceHubServiceName:
+    return "resiliencehub"
 ```
 
-Values:
-
-- `resiliencehub`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ResilienceHubServiceName = Literal[
+    "resiliencehub",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```

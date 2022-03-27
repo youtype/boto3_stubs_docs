@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-cloudwatch-module"></a>
-
-# Paginators for boto3 CloudWatch module
+# Paginators
 
 > [Index](../README.md) > [CloudWatch](./README.md) > Paginators
 
-Auto-generated documentation for
-[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
-type annotations stubs module
-[mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+!!! note ""
 
-- [Paginators for boto3 CloudWatch module](#paginators-for-boto3-cloudwatch-module)
-  - [DescribeAlarmHistoryPaginator](#describealarmhistorypaginator)
-  - [DescribeAlarmsPaginator](#describealarmspaginator)
-  - [GetMetricDataPaginator](#getmetricdatapaginator)
-  - [ListDashboardsPaginator](#listdashboardspaginator)
-  - [ListMetricsPaginator](#listmetricspaginator)
-
-<a id="describealarmhistorypaginator"></a>
+    Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+    type annotations stubs module [mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 ## DescribeAlarmHistoryPaginator
 
-Type annotations for
-`boto3.client("cloudwatch").get_paginator("describe_alarm_history")`.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_paginator("describe_alarm_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarmHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudwatch.paginator import DescribeAlarmHistoryPaginator
@@ -34,33 +21,48 @@ def get_describe_alarm_history_paginator() -> DescribeAlarmHistoryPaginator:
     return Session().client("cloudwatch").get_paginator("describe_alarm_history")
 ```
 
-Boto3 documentation:
-[CloudWatch.Paginator.DescribeAlarmHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarmHistory)
 
-Arguments for `DescribeAlarmHistoryPaginator.paginate` method:
+### paginate
 
-- `AlarmName`: `str`
-- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
-- `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
-- `StartDate`: `Union`\[`datetime`, `str`\]
-- `EndDate`: `Union`\[`datetime`, `str`\]
-- `ScanBy`: [ScanByType](./literals.md#scanbytype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAlarmHistoryPaginator.paginate` method.
 
-`DescribeAlarmHistoryPaginator.paginate` returns
-`_PageIterator`\[[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AlarmName: str = ...,
+    AlarmTypes: Sequence[AlarmTypeType] = ...,  # (1)
+    HistoryItemType: HistoryItemTypeType = ...,  # (2)
+    StartDate: Union[datetime, str] = ...,
+    EndDate: Union[datetime, str] = ...,
+    ScanBy: ScanByType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[DescribeAlarmHistoryOutputTypeDef]:  # (5)
+    ...
+```
 
-<a id="describealarmspaginator"></a>
+1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
+2. See [:material-code-brackets: HistoryItemTypeType](./literals.md#historyitemtypetype) 
+3. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef = {  # (1)
+    "AlarmName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef](./type_defs.md#describealarmhistoryinputdescribealarmhistorypaginatetypedef) 
 ## DescribeAlarmsPaginator
 
-Type annotations for
-`boto3.client("cloudwatch").get_paginator("describe_alarms")`.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_paginator("describe_alarms")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarms)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudwatch.paginator import DescribeAlarmsPaginator
@@ -69,34 +71,48 @@ def get_describe_alarms_paginator() -> DescribeAlarmsPaginator:
     return Session().client("cloudwatch").get_paginator("describe_alarms")
 ```
 
-Boto3 documentation:
-[CloudWatch.Paginator.DescribeAlarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.DescribeAlarms)
 
-Arguments for `DescribeAlarmsPaginator.paginate` method:
+### paginate
 
-- `AlarmNames`: `Sequence`\[`str`\]
-- `AlarmNamePrefix`: `str`
-- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
-- `ChildrenOfAlarmName`: `str`
-- `ParentsOfAlarmName`: `str`
-- `StateValue`: [StateValueType](./literals.md#statevaluetype)
-- `ActionPrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAlarmsPaginator.paginate` method.
 
-`DescribeAlarmsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AlarmNames: Sequence[str] = ...,
+    AlarmNamePrefix: str = ...,
+    AlarmTypes: Sequence[AlarmTypeType] = ...,  # (1)
+    ChildrenOfAlarmName: str = ...,
+    ParentsOfAlarmName: str = ...,
+    StateValue: StateValueType = ...,  # (2)
+    ActionPrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeAlarmsOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="getmetricdatapaginator"></a>
+1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
+2. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAlarmsInputDescribeAlarmsPaginateTypeDef = {  # (1)
+    "AlarmNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAlarmsInputDescribeAlarmsPaginateTypeDef](./type_defs.md#describealarmsinputdescribealarmspaginatetypedef) 
 ## GetMetricDataPaginator
 
-Type annotations for
-`boto3.client("cloudwatch").get_paginator("get_metric_data")`.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_paginator("get_metric_data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.GetMetricData)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudwatch.paginator import GetMetricDataPaginator
@@ -105,34 +121,49 @@ def get_get_metric_data_paginator() -> GetMetricDataPaginator:
     return Session().client("cloudwatch").get_paginator("get_metric_data")
 ```
 
-Boto3 documentation:
-[CloudWatch.Paginator.GetMetricData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.GetMetricData)
 
-Arguments for `GetMetricDataPaginator.paginate` method:
+### paginate
 
-- `MetricDataQueries`:
-  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
-  *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `ScanBy`: [ScanByType](./literals.md#scanbytype)
-- `LabelOptions`: [LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetMetricDataPaginator.paginate` method.
 
-`GetMetricDataPaginator.paginate` returns
-`_PageIterator`\[[GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    MetricDataQueries: Sequence[MetricDataQueryTypeDef],  # (1)
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    ScanBy: ScanByType = ...,  # (2)
+    LabelOptions: LabelOptionsTypeDef = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[GetMetricDataOutputTypeDef]:  # (5)
+    ...
+```
 
-<a id="listdashboardspaginator"></a>
+1. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+2. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
+3. See [:material-code-braces: LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetMetricDataInputGetMetricDataPaginateTypeDef = {  # (1)
+    "MetricDataQueries": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetMetricDataInputGetMetricDataPaginateTypeDef](./type_defs.md#getmetricdatainputgetmetricdatapaginatetypedef) 
 ## ListDashboardsPaginator
 
-Type annotations for
-`boto3.client("cloudwatch").get_paginator("list_dashboards")`.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_paginator("list_dashboards")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.ListDashboards)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudwatch.paginator import ListDashboardsPaginator
@@ -141,28 +172,40 @@ def get_list_dashboards_paginator() -> ListDashboardsPaginator:
     return Session().client("cloudwatch").get_paginator("list_dashboards")
 ```
 
-Boto3 documentation:
-[CloudWatch.Paginator.ListDashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.ListDashboards)
 
-Arguments for `ListDashboardsPaginator.paginate` method:
+### paginate
 
-- `DashboardNamePrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDashboardsPaginator.paginate` method.
 
-`ListDashboardsPaginator.paginate` returns
-`_PageIterator`\[[ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DashboardNamePrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDashboardsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmetricspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDashboardsInputListDashboardsPaginateTypeDef = {  # (1)
+    "DashboardNamePrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDashboardsInputListDashboardsPaginateTypeDef](./type_defs.md#listdashboardsinputlistdashboardspaginatetypedef) 
 ## ListMetricsPaginator
 
-Type annotations for
-`boto3.client("cloudwatch").get_paginator("list_metrics")`.
+Type annotations and code completion for `#!python boto3.client("cloudwatch").get_paginator("list_metrics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.ListMetrics)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudwatch.paginator import ListMetricsPaginator
@@ -171,19 +214,36 @@ def get_list_metrics_paginator() -> ListMetricsPaginator:
     return Session().client("cloudwatch").get_paginator("list_metrics")
 ```
 
-Boto3 documentation:
-[CloudWatch.Paginator.ListMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Paginator.ListMetrics)
 
-Arguments for `ListMetricsPaginator.paginate` method:
+### paginate
 
-- `Namespace`: `str`
-- `MetricName`: `str`
-- `Dimensions`:
-  `Sequence`\[[DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef)\]
-- `RecentlyActive`: `Literal['PT3H']` (see
-  [RecentlyActiveType](./literals.md#recentlyactivetype))
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMetricsPaginator.paginate` method.
 
-`ListMetricsPaginator.paginate` returns
-`_PageIterator`\[[ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Namespace: str = ...,
+    MetricName: str = ...,
+    Dimensions: Sequence[DimensionFilterTypeDef] = ...,  # (1)
+    RecentlyActive: RecentlyActiveType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListMetricsOutputTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: DimensionFilterTypeDef](./type_defs.md#dimensionfiltertypedef) 
+2. See [:material-code-brackets: RecentlyActiveType](./literals.md#recentlyactivetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListMetricsInputListMetricsPaginateTypeDef = {  # (1)
+    "Namespace": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMetricsInputListMetricsPaginateTypeDef](./type_defs.md#listmetricsinputlistmetricspaginatetypedef) 

@@ -1,60 +1,18 @@
-<a id="mediaconvertclient-for-boto3-mediaconvert-module"></a>
-
-# MediaConvertClient for boto3 MediaConvert module
+# MediaConvertClient
 
 > [Index](../README.md) > [MediaConvert](./README.md) > MediaConvertClient
 
-Auto-generated documentation for
-[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
-type annotations stubs module
-[mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+!!! note ""
 
-- [MediaConvertClient for boto3 MediaConvert module](#mediaconvertclient-for-boto3-mediaconvert-module)
-  - [MediaConvertClient](#mediaconvertclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_certificate](#associate_certificate)
-    - [can_paginate](#can_paginate)
-    - [cancel_job](#cancel_job)
-    - [create_job](#create_job)
-    - [create_job_template](#create_job_template)
-    - [create_preset](#create_preset)
-    - [create_queue](#create_queue)
-    - [delete_job_template](#delete_job_template)
-    - [delete_policy](#delete_policy)
-    - [delete_preset](#delete_preset)
-    - [delete_queue](#delete_queue)
-    - [describe_endpoints](#describe_endpoints)
-    - [disassociate_certificate](#disassociate_certificate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_job](#get_job)
-    - [get_job_template](#get_job_template)
-    - [get_policy](#get_policy)
-    - [get_preset](#get_preset)
-    - [get_queue](#get_queue)
-    - [list_job_templates](#list_job_templates)
-    - [list_jobs](#list_jobs)
-    - [list_presets](#list_presets)
-    - [list_queues](#list_queues)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_policy](#put_policy)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_job_template](#update_job_template)
-    - [update_preset](#update_preset)
-    - [update_queue](#update_queue)
-    - [get_paginator](#get_paginator)
-
-<a id="mediaconvertclient"></a>
+    Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+    type annotations stubs module [mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 ## MediaConvertClient
 
-Type annotations for `boto3.client("mediaconvert")`
+Type annotations and code completion for `#!python boto3.client("mediaconvert")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mediaconvert.client import MediaConvertClient
 
@@ -62,747 +20,965 @@ def get_mediaconvert_client() -> MediaConvertClient:
     return Session().client("mediaconvert")
 ```
 
-Boto3 documentation:
-[MediaConvert.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mediaconvert").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mediaconvert")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.InternalServerErrorException,
+    client.NotFoundException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mediaconvert.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.NotFoundException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MediaConvertClient exceptions.
-
-Type annotations for `boto3.client("mediaconvert").exceptions` method.
-
-Boto3 documentation:
-[MediaConvert.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_certificate"></a>
-
-### associate_certificate
+### associate\_certificate
 
 Associates an AWS Certificate Manager (ACM) Amazon Resource Name (ARN) with AWS
 Elemental MediaConvert.
 
-Type annotations for `boto3.client("mediaconvert").associate_certificate`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").associate_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate)
 
-Boto3 documentation:
-[MediaConvert.Client.associate_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.associate_certificate)
+```python title="Method definition"
+def associate_certificate(
+    self,
+    *,
+    Arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateCertificateRequestRequestTypeDef](./type_defs.md#associatecertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateCertificateRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_certificate(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateCertificateRequestRequestTypeDef](./type_defs.md#associatecertificaterequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mediaconvert").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.can_paginate)
 
-Boto3 documentation:
-[MediaConvert.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_job"></a>
-
-### cancel_job
+### cancel\_job
 
 Permanently cancel a job.
 
-Type annotations for `boto3.client("mediaconvert").cancel_job` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").cancel_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job)
 
-Boto3 documentation:
-[MediaConvert.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.cancel_job)
+```python title="Method definition"
+def cancel_job(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelJobRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_job(**kwargs)
+```
 
-<a id="create\_job"></a>
+1. See [:material-code-braces: CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef) 
 
-### create_job
+### create\_job
 
 Create a new transcoding job.
 
-Type annotations for `boto3.client("mediaconvert").create_job` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").create_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job)
 
-Boto3 documentation:
-[MediaConvert.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job)
+```python title="Method definition"
+def create_job(
+    self,
+    *,
+    Role: str,
+    Settings: JobSettingsTypeDef,  # (1)
+    AccelerationSettings: AccelerationSettingsTypeDef = ...,  # (2)
+    BillingTagsSource: BillingTagsSourceType = ...,  # (3)
+    ClientRequestToken: str = ...,
+    HopDestinations: Sequence[HopDestinationTypeDef] = ...,  # (4)
+    JobTemplate: str = ...,
+    Priority: int = ...,
+    Queue: str = ...,
+    SimulateReservedQueue: SimulateReservedQueueType = ...,  # (5)
+    StatusUpdateInterval: StatusUpdateIntervalType = ...,  # (6)
+    Tags: Mapping[str, str] = ...,
+    UserMetadata: Mapping[str, str] = ...,
+) -> CreateJobResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
+1. See [:material-code-braces: JobSettingsTypeDef](./type_defs.md#jobsettingstypedef) 
+2. See [:material-code-braces: AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef) 
+3. See [:material-code-brackets: BillingTagsSourceType](./literals.md#billingtagssourcetype) 
+4. See [:material-code-braces: HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef) 
+5. See [:material-code-brackets: SimulateReservedQueueType](./literals.md#simulatereservedqueuetype) 
+6. See [:material-code-brackets: StatusUpdateIntervalType](./literals.md#statusupdateintervaltype) 
+7. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Role`: `str` *(required)*
-- `Settings`: [JobSettingsTypeDef](./type_defs.md#jobsettingstypedef)
-  *(required)*
-- `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
-- `BillingTagsSource`:
-  [BillingTagsSourceType](./literals.md#billingtagssourcetype)
-- `ClientRequestToken`: `str`
-- `HopDestinations`:
-  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
-- `JobTemplate`: `str`
-- `Priority`: `int`
-- `Queue`: `str`
-- `SimulateReservedQueue`:
-  [SimulateReservedQueueType](./literals.md#simulatereservedqueuetype)
-- `StatusUpdateInterval`:
-  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `UserMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateJobRequestRequestTypeDef = {  # (1)
+    "Role": ...,
+    "Settings": ...,
+}
 
-Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+parent.create_job(**kwargs)
+```
 
-<a id="create\_job\_template"></a>
+1. See [:material-code-braces: CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef) 
 
-### create_job_template
+### create\_job\_template
 
 Create a new job template.
 
-Type annotations for `boto3.client("mediaconvert").create_job_template` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").create_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template)
 
-Boto3 documentation:
-[MediaConvert.Client.create_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_job_template)
+```python title="Method definition"
+def create_job_template(
+    self,
+    *,
+    Name: str,
+    Settings: JobTemplateSettingsTypeDef,  # (1)
+    AccelerationSettings: AccelerationSettingsTypeDef = ...,  # (2)
+    Category: str = ...,
+    Description: str = ...,
+    HopDestinations: Sequence[HopDestinationTypeDef] = ...,  # (3)
+    Priority: int = ...,
+    Queue: str = ...,
+    StatusUpdateInterval: StatusUpdateIntervalType = ...,  # (4)
+    Tags: Mapping[str, str] = ...,
+) -> CreateJobTemplateResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobTemplateRequestRequestTypeDef](./type_defs.md#createjobtemplaterequestrequesttypedef).
+1. See [:material-code-braces: JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef) 
+2. See [:material-code-braces: AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef) 
+3. See [:material-code-braces: HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef) 
+4. See [:material-code-brackets: StatusUpdateIntervalType](./literals.md#statusupdateintervaltype) 
+5. See [:material-code-braces: CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Settings`:
-  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
-  *(required)*
-- `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
-- `Category`: `str`
-- `Description`: `str`
-- `HopDestinations`:
-  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
-- `Priority`: `int`
-- `Queue`: `str`
-- `StatusUpdateInterval`:
-  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateJobTemplateRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Settings": ...,
+}
 
-Returns
-[CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
+parent.create_job_template(**kwargs)
+```
 
-<a id="create\_preset"></a>
+1. See [:material-code-braces: CreateJobTemplateRequestRequestTypeDef](./type_defs.md#createjobtemplaterequestrequesttypedef) 
 
-### create_preset
+### create\_preset
 
 Create a new preset.
 
-Type annotations for `boto3.client("mediaconvert").create_preset` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").create_preset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_preset)
 
-Boto3 documentation:
-[MediaConvert.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_preset)
+```python title="Method definition"
+def create_preset(
+    self,
+    *,
+    Name: str,
+    Settings: PresetSettingsTypeDef,  # (1)
+    Category: str = ...,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreatePresetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePresetRequestRequestTypeDef](./type_defs.md#createpresetrequestrequesttypedef).
+1. See [:material-code-braces: PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef) 
+2. See [:material-code-braces: CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
-  *(required)*
-- `Category`: `str`
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreatePresetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Settings": ...,
+}
 
-Returns
-[CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
+parent.create_preset(**kwargs)
+```
 
-<a id="create\_queue"></a>
+1. See [:material-code-braces: CreatePresetRequestRequestTypeDef](./type_defs.md#createpresetrequestrequesttypedef) 
 
-### create_queue
+### create\_queue
 
 Create a new transcoding queue.
 
-Type annotations for `boto3.client("mediaconvert").create_queue` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").create_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_queue)
 
-Boto3 documentation:
-[MediaConvert.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.create_queue)
+```python title="Method definition"
+def create_queue(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    PricingPlan: PricingPlanType = ...,  # (1)
+    ReservationPlanSettings: ReservationPlanSettingsTypeDef = ...,  # (2)
+    Status: QueueStatusType = ...,  # (3)
+    Tags: Mapping[str, str] = ...,
+) -> CreateQueueResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateQueueRequestRequestTypeDef](./type_defs.md#createqueuerequestrequesttypedef).
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
+2. See [:material-code-braces: ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef) 
+3. See [:material-code-brackets: QueueStatusType](./literals.md#queuestatustype) 
+4. See [:material-code-braces: CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `ReservationPlanSettings`:
-  [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
-- `Status`: [QueueStatusType](./literals.md#queuestatustype)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateQueueRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
+parent.create_queue(**kwargs)
+```
 
-<a id="delete\_job\_template"></a>
+1. See [:material-code-braces: CreateQueueRequestRequestTypeDef](./type_defs.md#createqueuerequestrequesttypedef) 
 
-### delete_job_template
+### delete\_job\_template
 
 Permanently delete a job template you have created.
 
-Type annotations for `boto3.client("mediaconvert").delete_job_template` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").delete_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template)
 
-Boto3 documentation:
-[MediaConvert.Client.delete_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_job_template)
+```python title="Method definition"
+def delete_job_template(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobTemplateRequestRequestTypeDef](./type_defs.md#deletejobtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteJobTemplateRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_job_template(**kwargs)
+```
 
-<a id="delete\_policy"></a>
+1. See [:material-code-braces: DeleteJobTemplateRequestRequestTypeDef](./type_defs.md#deletejobtemplaterequestrequesttypedef) 
 
-### delete_policy
+### delete\_policy
 
 Permanently delete a policy that you created.
 
-Type annotations for `boto3.client("mediaconvert").delete_policy` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").delete_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_policy)
 
-Boto3 documentation:
-[MediaConvert.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_policy)
+```python title="Method definition"
+def delete_policy(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete\_preset"></a>
-
-### delete_preset
+### delete\_preset
 
 Permanently delete a preset you have created.
 
-Type annotations for `boto3.client("mediaconvert").delete_preset` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").delete_preset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset)
 
-Boto3 documentation:
-[MediaConvert.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_preset)
+```python title="Method definition"
+def delete_preset(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePresetRequestRequestTypeDef](./type_defs.md#deletepresetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePresetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_preset(**kwargs)
+```
 
-<a id="delete\_queue"></a>
+1. See [:material-code-braces: DeletePresetRequestRequestTypeDef](./type_defs.md#deletepresetrequestrequesttypedef) 
 
-### delete_queue
+### delete\_queue
 
 Permanently delete a queue you have created.
 
-Type annotations for `boto3.client("mediaconvert").delete_queue` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").delete_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue)
 
-Boto3 documentation:
-[MediaConvert.Client.delete_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_queue)
+```python title="Method definition"
+def delete_queue(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteQueueRequestRequestTypeDef](./type_defs.md#deletequeuerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteQueueRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_queue(**kwargs)
+```
 
-<a id="describe\_endpoints"></a>
+1. See [:material-code-braces: DeleteQueueRequestRequestTypeDef](./type_defs.md#deletequeuerequestrequesttypedef) 
 
-### describe_endpoints
+### describe\_endpoints
 
 Send an request with an empty body to the regional API endpoint to get your
 account API endpoint.
 
-Type annotations for `boto3.client("mediaconvert").describe_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").describe_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints)
 
-Boto3 documentation:
-[MediaConvert.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.describe_endpoints)
+```python title="Method definition"
+def describe_endpoints(
+    self,
+    *,
+    MaxResults: int = ...,
+    Mode: DescribeEndpointsModeType = ...,  # (1)
+    NextToken: str = ...,
+) -> DescribeEndpointsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEndpointsRequestRequestTypeDef](./type_defs.md#describeendpointsrequestrequesttypedef).
+1. See [:material-code-brackets: DescribeEndpointsModeType](./literals.md#describeendpointsmodetype) 
+2. See [:material-code-braces: DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `Mode`: [DescribeEndpointsModeType](./literals.md#describeendpointsmodetype)
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+parent.describe_endpoints(**kwargs)
+```
 
-<a id="disassociate\_certificate"></a>
+1. See [:material-code-braces: DescribeEndpointsRequestRequestTypeDef](./type_defs.md#describeendpointsrequestrequesttypedef) 
 
-### disassociate_certificate
+### disassociate\_certificate
 
 Removes an association between the Amazon Resource Name (ARN) of an AWS
 Certificate Manager (ACM) certificate and an AWS Elemental MediaConvert
 resource.
 
-Type annotations for `boto3.client("mediaconvert").disassociate_certificate`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").disassociate_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate)
 
-Boto3 documentation:
-[MediaConvert.Client.disassociate_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.disassociate_certificate)
+```python title="Method definition"
+def disassociate_certificate(
+    self,
+    *,
+    Arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateCertificateRequestRequestTypeDef](./type_defs.md#disassociatecertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateCertificateRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_certificate(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateCertificateRequestRequestTypeDef](./type_defs.md#disassociatecertificaterequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mediaconvert").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MediaConvert.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_job"></a>
-
-### get_job
+### get\_job
 
 Retrieve the JSON for a specific completed transcoding job.
 
-Type annotations for `boto3.client("mediaconvert").get_job` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job)
 
-Boto3 documentation:
-[MediaConvert.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job)
+```python title="Method definition"
+def get_job(
+    self,
+    *,
+    Id: str,
+) -> GetJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef).
+1. See [:material-code-braces: GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
+parent.get_job(**kwargs)
+```
 
-<a id="get\_job\_template"></a>
+1. See [:material-code-braces: GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef) 
 
-### get_job_template
+### get\_job\_template
 
 Retrieve the JSON for a specific job template.
 
-Type annotations for `boto3.client("mediaconvert").get_job_template` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template)
 
-Boto3 documentation:
-[MediaConvert.Client.get_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_job_template)
+```python title="Method definition"
+def get_job_template(
+    self,
+    *,
+    Name: str,
+) -> GetJobTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobTemplateRequestRequestTypeDef](./type_defs.md#getjobtemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetJobTemplateResponseTypeDef](./type_defs.md#getjobtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobTemplateRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetJobTemplateResponseTypeDef](./type_defs.md#getjobtemplateresponsetypedef).
+parent.get_job_template(**kwargs)
+```
 
-<a id="get\_policy"></a>
+1. See [:material-code-braces: GetJobTemplateRequestRequestTypeDef](./type_defs.md#getjobtemplaterequestrequesttypedef) 
 
-### get_policy
+### get\_policy
 
 Retrieve the JSON for your policy.
 
-Type annotations for `boto3.client("mediaconvert").get_policy` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_policy)
 
-Boto3 documentation:
-[MediaConvert.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_policy)
+```python title="Method definition"
+def get_policy(
+    self,
+) -> GetPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+1. See [:material-code-braces: GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef) 
 
-<a id="get\_preset"></a>
-
-### get_preset
+### get\_preset
 
 Retrieve the JSON for a specific preset.
 
-Type annotations for `boto3.client("mediaconvert").get_preset` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_preset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_preset)
 
-Boto3 documentation:
-[MediaConvert.Client.get_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_preset)
+```python title="Method definition"
+def get_preset(
+    self,
+    *,
+    Name: str,
+) -> GetPresetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPresetRequestRequestTypeDef](./type_defs.md#getpresetrequestrequesttypedef).
+1. See [:material-code-braces: GetPresetResponseTypeDef](./type_defs.md#getpresetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPresetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [GetPresetResponseTypeDef](./type_defs.md#getpresetresponsetypedef).
+parent.get_preset(**kwargs)
+```
 
-<a id="get\_queue"></a>
+1. See [:material-code-braces: GetPresetRequestRequestTypeDef](./type_defs.md#getpresetrequestrequesttypedef) 
 
-### get_queue
+### get\_queue
 
 Retrieve the JSON for a specific queue.
 
-Type annotations for `boto3.client("mediaconvert").get_queue` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_queue)
 
-Boto3 documentation:
-[MediaConvert.Client.get_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_queue)
+```python title="Method definition"
+def get_queue(
+    self,
+    *,
+    Name: str,
+) -> GetQueueResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQueueRequestRequestTypeDef](./type_defs.md#getqueuerequestrequesttypedef).
+1. See [:material-code-braces: GetQueueResponseTypeDef](./type_defs.md#getqueueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetQueueRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [GetQueueResponseTypeDef](./type_defs.md#getqueueresponsetypedef).
+parent.get_queue(**kwargs)
+```
 
-<a id="list\_job\_templates"></a>
+1. See [:material-code-braces: GetQueueRequestRequestTypeDef](./type_defs.md#getqueuerequestrequesttypedef) 
 
-### list_job_templates
+### list\_job\_templates
 
 Retrieve a JSON array of up to twenty of your job templates.
 
-Type annotations for `boto3.client("mediaconvert").list_job_templates` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").list_job_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates)
 
-Boto3 documentation:
-[MediaConvert.Client.list_job_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_job_templates)
+```python title="Method definition"
+def list_job_templates(
+    self,
+    *,
+    Category: str = ...,
+    ListBy: JobTemplateListByType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Order: OrderType = ...,  # (2)
+) -> ListJobTemplatesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListJobTemplatesRequestRequestTypeDef](./type_defs.md#listjobtemplatesrequestrequesttypedef).
+1. See [:material-code-brackets: JobTemplateListByType](./literals.md#jobtemplatelistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+3. See [:material-code-braces: ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Category`: `str`
-- `ListBy`: [JobTemplateListByType](./literals.md#jobtemplatelistbytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Order`: [OrderType](./literals.md#ordertype)
+```python title="Usage example with kwargs"
+kwargs: ListJobTemplatesRequestRequestTypeDef = {  # (1)
+    "Category": ...,
+}
 
-Returns
-[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef).
+parent.list_job_templates(**kwargs)
+```
 
-<a id="list\_jobs"></a>
+1. See [:material-code-braces: ListJobTemplatesRequestRequestTypeDef](./type_defs.md#listjobtemplatesrequestrequesttypedef) 
 
-### list_jobs
+### list\_jobs
 
 Retrieve a JSON array of up to twenty of your most recently created jobs.
 
-Type annotations for `boto3.client("mediaconvert").list_jobs` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").list_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs)
 
-Boto3 documentation:
-[MediaConvert.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_jobs)
+```python title="Method definition"
+def list_jobs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Order: OrderType = ...,  # (1)
+    Queue: str = ...,
+    Status: JobStatusType = ...,  # (2)
+) -> ListJobsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
+1. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+3. See [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Order`: [OrderType](./literals.md#ordertype)
-- `Queue`: `str`
-- `Status`: [JobStatusType](./literals.md#jobstatustype)
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+parent.list_jobs(**kwargs)
+```
 
-<a id="list\_presets"></a>
+1. See [:material-code-braces: ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef) 
 
-### list_presets
+### list\_presets
 
 Retrieve a JSON array of up to twenty of your presets.
 
-Type annotations for `boto3.client("mediaconvert").list_presets` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").list_presets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_presets)
 
-Boto3 documentation:
-[MediaConvert.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_presets)
+```python title="Method definition"
+def list_presets(
+    self,
+    *,
+    Category: str = ...,
+    ListBy: PresetListByType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Order: OrderType = ...,  # (2)
+) -> ListPresetsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListPresetsRequestRequestTypeDef](./type_defs.md#listpresetsrequestrequesttypedef).
+1. See [:material-code-brackets: PresetListByType](./literals.md#presetlistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+3. See [:material-code-braces: ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Category`: `str`
-- `ListBy`: [PresetListByType](./literals.md#presetlistbytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Order`: [OrderType](./literals.md#ordertype)
+```python title="Usage example with kwargs"
+kwargs: ListPresetsRequestRequestTypeDef = {  # (1)
+    "Category": ...,
+}
 
-Returns
-[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef).
+parent.list_presets(**kwargs)
+```
 
-<a id="list\_queues"></a>
+1. See [:material-code-braces: ListPresetsRequestRequestTypeDef](./type_defs.md#listpresetsrequestrequesttypedef) 
 
-### list_queues
+### list\_queues
 
 Retrieve a JSON array of up to twenty of your queues.
 
-Type annotations for `boto3.client("mediaconvert").list_queues` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").list_queues` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_queues)
 
-Boto3 documentation:
-[MediaConvert.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_queues)
+```python title="Method definition"
+def list_queues(
+    self,
+    *,
+    ListBy: QueueListByType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Order: OrderType = ...,  # (2)
+) -> ListQueuesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListQueuesRequestRequestTypeDef](./type_defs.md#listqueuesrequestrequesttypedef).
+1. See [:material-code-brackets: QueueListByType](./literals.md#queuelistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+3. See [:material-code-braces: ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListBy`: [QueueListByType](./literals.md#queuelistbytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Order`: [OrderType](./literals.md#ordertype)
+```python title="Usage example with kwargs"
+kwargs: ListQueuesRequestRequestTypeDef = {  # (1)
+    "ListBy": ...,
+}
 
-Returns [ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef).
+parent.list_queues(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListQueuesRequestRequestTypeDef](./type_defs.md#listqueuesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieve the tags for a MediaConvert resource.
 
-Type annotations for `boto3.client("mediaconvert").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[MediaConvert.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    Arn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_policy"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_policy
+### put\_policy
 
 Create or change your policy.
 
-Type annotations for `boto3.client("mediaconvert").put_policy` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").put_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.put_policy)
 
-Boto3 documentation:
-[MediaConvert.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.put_policy)
+```python title="Method definition"
+def put_policy(
+    self,
+    *,
+    Policy: PolicyTypeDef,  # (1)
+) -> PutPolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutPolicyRequestRequestTypeDef](./type_defs.md#putpolicyrequestrequesttypedef).
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutPolicyRequestRequestTypeDef = {  # (1)
+    "Policy": ...,
+}
 
-Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
+parent.put_policy(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutPolicyRequestRequestTypeDef](./type_defs.md#putpolicyrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Add tags to a MediaConvert queue, preset, or job template.
 
-Type annotations for `boto3.client("mediaconvert").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource)
 
-Boto3 documentation:
-[MediaConvert.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    Arn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Remove tags from a MediaConvert queue, preset, or job template.
 
-Type annotations for `boto3.client("mediaconvert").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource)
 
-Boto3 documentation:
-[MediaConvert.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    Arn: str,
+    TagKeys: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_job\_template"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_job_template
+### update\_job\_template
 
 Modify one of your existing job templates.
 
-Type annotations for `boto3.client("mediaconvert").update_job_template` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").update_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template)
 
-Boto3 documentation:
-[MediaConvert.Client.update_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_job_template)
+```python title="Method definition"
+def update_job_template(
+    self,
+    *,
+    Name: str,
+    AccelerationSettings: AccelerationSettingsTypeDef = ...,  # (1)
+    Category: str = ...,
+    Description: str = ...,
+    HopDestinations: Sequence[HopDestinationTypeDef] = ...,  # (2)
+    Priority: int = ...,
+    Queue: str = ...,
+    Settings: JobTemplateSettingsTypeDef = ...,  # (3)
+    StatusUpdateInterval: StatusUpdateIntervalType = ...,  # (4)
+) -> UpdateJobTemplateResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateJobTemplateRequestRequestTypeDef](./type_defs.md#updatejobtemplaterequestrequesttypedef).
+1. See [:material-code-braces: AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef) 
+2. See [:material-code-braces: HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef) 
+3. See [:material-code-braces: JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef) 
+4. See [:material-code-brackets: StatusUpdateIntervalType](./literals.md#statusupdateintervaltype) 
+5. See [:material-code-braces: UpdateJobTemplateResponseTypeDef](./type_defs.md#updatejobtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
-- `Category`: `str`
-- `Description`: `str`
-- `HopDestinations`:
-  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
-- `Priority`: `int`
-- `Queue`: `str`
-- `Settings`:
-  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
-- `StatusUpdateInterval`:
-  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
+```python title="Usage example with kwargs"
+kwargs: UpdateJobTemplateRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateJobTemplateResponseTypeDef](./type_defs.md#updatejobtemplateresponsetypedef).
+parent.update_job_template(**kwargs)
+```
 
-<a id="update\_preset"></a>
+1. See [:material-code-braces: UpdateJobTemplateRequestRequestTypeDef](./type_defs.md#updatejobtemplaterequestrequesttypedef) 
 
-### update_preset
+### update\_preset
 
 Modify one of your existing presets.
 
-Type annotations for `boto3.client("mediaconvert").update_preset` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").update_preset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_preset)
 
-Boto3 documentation:
-[MediaConvert.Client.update_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_preset)
+```python title="Method definition"
+def update_preset(
+    self,
+    *,
+    Name: str,
+    Category: str = ...,
+    Description: str = ...,
+    Settings: PresetSettingsTypeDef = ...,  # (1)
+) -> UpdatePresetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePresetRequestRequestTypeDef](./type_defs.md#updatepresetrequestrequesttypedef).
+1. See [:material-code-braces: PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef) 
+2. See [:material-code-braces: UpdatePresetResponseTypeDef](./type_defs.md#updatepresetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Category`: `str`
-- `Description`: `str`
-- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdatePresetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdatePresetResponseTypeDef](./type_defs.md#updatepresetresponsetypedef).
+parent.update_preset(**kwargs)
+```
 
-<a id="update\_queue"></a>
+1. See [:material-code-braces: UpdatePresetRequestRequestTypeDef](./type_defs.md#updatepresetrequestrequesttypedef) 
 
-### update_queue
+### update\_queue
 
 Modify one of your existing queues.
 
-Type annotations for `boto3.client("mediaconvert").update_queue` method.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").update_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_queue)
 
-Boto3 documentation:
-[MediaConvert.Client.update_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.update_queue)
+```python title="Method definition"
+def update_queue(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    ReservationPlanSettings: ReservationPlanSettingsTypeDef = ...,  # (1)
+    Status: QueueStatusType = ...,  # (2)
+) -> UpdateQueueResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateQueueRequestRequestTypeDef](./type_defs.md#updatequeuerequestrequesttypedef).
+1. See [:material-code-braces: ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef) 
+2. See [:material-code-brackets: QueueStatusType](./literals.md#queuestatustype) 
+3. See [:material-code-braces: UpdateQueueResponseTypeDef](./type_defs.md#updatequeueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `ReservationPlanSettings`:
-  [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
-- `Status`: [QueueStatusType](./literals.md#queuestatustype)
+```python title="Usage example with kwargs"
+kwargs: UpdateQueueRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateQueueResponseTypeDef](./type_defs.md#updatequeueresponsetypedef).
+parent.update_queue(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateQueueRequestRequestTypeDef](./type_defs.md#updatequeuerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mediaconvert").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_endpoints")` ->
-  [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
-- `client.get_paginator("list_job_templates")` ->
-  [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
-- `client.get_paginator("list_jobs")` ->
-  [ListJobsPaginator](./paginators.md#listjobspaginator)
-- `client.get_paginator("list_presets")` ->
-  [ListPresetsPaginator](./paginators.md#listpresetspaginator)
-- `client.get_paginator("list_queues")` ->
-  [ListQueuesPaginator](./paginators.md#listqueuespaginator)
+- `client.get_paginator("describe_endpoints")` -> [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
+- `client.get_paginator("list_job_templates")` -> [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
+- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_presets")` -> [ListPresetsPaginator](./paginators.md#listpresetspaginator)
+- `client.get_paginator("list_queues")` -> [ListQueuesPaginator](./paginators.md#listqueuespaginator)
+
+
+

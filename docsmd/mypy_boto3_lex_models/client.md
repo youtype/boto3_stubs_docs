@@ -1,75 +1,18 @@
-<a id="lexmodelbuildingserviceclient-for-boto3-lexmodelbuildingservice-module"></a>
+# LexModelBuildingServiceClient
 
-# LexModelBuildingServiceClient for boto3 LexModelBuildingService module
+> [Index](../README.md) > [LexModelBuildingService](./README.md) > LexModelBuildingServiceClient
 
-> [Index](../README.md) > [LexModelBuildingService](./README.md) >
-> LexModelBuildingServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
-type annotations stubs module
-[mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
-
-- [LexModelBuildingServiceClient for boto3 LexModelBuildingService module](#lexmodelbuildingserviceclient-for-boto3-lexmodelbuildingservice-module)
-  - [LexModelBuildingServiceClient](#lexmodelbuildingserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_bot_version](#create_bot_version)
-    - [create_intent_version](#create_intent_version)
-    - [create_slot_type_version](#create_slot_type_version)
-    - [delete_bot](#delete_bot)
-    - [delete_bot_alias](#delete_bot_alias)
-    - [delete_bot_channel_association](#delete_bot_channel_association)
-    - [delete_bot_version](#delete_bot_version)
-    - [delete_intent](#delete_intent)
-    - [delete_intent_version](#delete_intent_version)
-    - [delete_slot_type](#delete_slot_type)
-    - [delete_slot_type_version](#delete_slot_type_version)
-    - [delete_utterances](#delete_utterances)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_bot](#get_bot)
-    - [get_bot_alias](#get_bot_alias)
-    - [get_bot_aliases](#get_bot_aliases)
-    - [get_bot_channel_association](#get_bot_channel_association)
-    - [get_bot_channel_associations](#get_bot_channel_associations)
-    - [get_bot_versions](#get_bot_versions)
-    - [get_bots](#get_bots)
-    - [get_builtin_intent](#get_builtin_intent)
-    - [get_builtin_intents](#get_builtin_intents)
-    - [get_builtin_slot_types](#get_builtin_slot_types)
-    - [get_export](#get_export)
-    - [get_import](#get_import)
-    - [get_intent](#get_intent)
-    - [get_intent_versions](#get_intent_versions)
-    - [get_intents](#get_intents)
-    - [get_migration](#get_migration)
-    - [get_migrations](#get_migrations)
-    - [get_slot_type](#get_slot_type)
-    - [get_slot_type_versions](#get_slot_type_versions)
-    - [get_slot_types](#get_slot_types)
-    - [get_utterances_view](#get_utterances_view)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_bot](#put_bot)
-    - [put_bot_alias](#put_bot_alias)
-    - [put_intent](#put_intent)
-    - [put_slot_type](#put_slot_type)
-    - [start_import](#start_import)
-    - [start_migration](#start_migration)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [get_paginator](#get_paginator)
-
-<a id="lexmodelbuildingserviceclient"></a>
+    Auto-generated documentation for [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+    type annotations stubs module [mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 ## LexModelBuildingServiceClient
 
-Type annotations for `boto3.client("lex-models")`
+Type annotations and code completion for `#!python boto3.client("lex-models")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_lex_models.client import LexModelBuildingServiceClient
 
@@ -77,1097 +20,1478 @@ def get_lex-models_client() -> LexModelBuildingServiceClient:
     return Session().client("lex-models")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("lex-models").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("lex-models")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalFailureException,
+    client.LimitExceededException,
+    client.NotFoundException,
+    client.PreconditionFailedException,
+    client.ResourceInUseException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_lex_models.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalFailureException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-- `Exceptions.PreconditionFailedException`
-- `Exceptions.ResourceInUseException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-LexModelBuildingServiceClient exceptions.
-
-Type annotations for `boto3.client("lex-models").exceptions` method.
-
-Boto3 documentation:
-[LexModelBuildingService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("lex-models").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.can_paginate)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_bot\_version"></a>
-
-### create_bot_version
+### create\_bot\_version
 
 Creates a new version of the bot based on the `$LATEST` version.
 
-Type annotations for `boto3.client("lex-models").create_bot_version` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").create_bot_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_bot_version)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.create_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_bot_version)
+```python title="Method definition"
+def create_bot_version(
+    self,
+    *,
+    name: str,
+    checksum: str = ...,
+) -> CreateBotVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateBotVersionRequestRequestTypeDef](./type_defs.md#createbotversionrequestrequesttypedef).
+1. See [:material-code-braces: CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `checksum`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBotVersionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef).
+parent.create_bot_version(**kwargs)
+```
 
-<a id="create\_intent\_version"></a>
+1. See [:material-code-braces: CreateBotVersionRequestRequestTypeDef](./type_defs.md#createbotversionrequestrequesttypedef) 
 
-### create_intent_version
+### create\_intent\_version
 
-Creates a new version of an intent based on the `$LATEST` version of the
-intent.
+Creates a new version of an intent based on the `$LATEST` version of the intent.
 
-Type annotations for `boto3.client("lex-models").create_intent_version` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").create_intent_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_intent_version)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.create_intent_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_intent_version)
+```python title="Method definition"
+def create_intent_version(
+    self,
+    *,
+    name: str,
+    checksum: str = ...,
+) -> CreateIntentVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateIntentVersionRequestRequestTypeDef](./type_defs.md#createintentversionrequestrequesttypedef).
+1. See [:material-code-braces: CreateIntentVersionResponseTypeDef](./type_defs.md#createintentversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `checksum`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateIntentVersionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateIntentVersionResponseTypeDef](./type_defs.md#createintentversionresponsetypedef).
+parent.create_intent_version(**kwargs)
+```
 
-<a id="create\_slot\_type\_version"></a>
+1. See [:material-code-braces: CreateIntentVersionRequestRequestTypeDef](./type_defs.md#createintentversionrequestrequesttypedef) 
 
-### create_slot_type_version
+### create\_slot\_type\_version
 
 Creates a new version of a slot type based on the `$LATEST` version of the
 specified slot type.
 
-Type annotations for `boto3.client("lex-models").create_slot_type_version`
-method.
+Type annotations and code completion for `#!python boto3.client("lex-models").create_slot_type_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_slot_type_version)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.create_slot_type_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.create_slot_type_version)
+```python title="Method definition"
+def create_slot_type_version(
+    self,
+    *,
+    name: str,
+    checksum: str = ...,
+) -> CreateSlotTypeVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSlotTypeVersionRequestRequestTypeDef](./type_defs.md#createslottypeversionrequestrequesttypedef).
+1. See [:material-code-braces: CreateSlotTypeVersionResponseTypeDef](./type_defs.md#createslottypeversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `checksum`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateSlotTypeVersionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateSlotTypeVersionResponseTypeDef](./type_defs.md#createslottypeversionresponsetypedef).
+parent.create_slot_type_version(**kwargs)
+```
 
-<a id="delete\_bot"></a>
+1. See [:material-code-braces: CreateSlotTypeVersionRequestRequestTypeDef](./type_defs.md#createslottypeversionrequestrequesttypedef) 
 
-### delete_bot
+### delete\_bot
 
 Deletes all versions of the bot, including the `$LATEST` version.
 
-Type annotations for `boto3.client("lex-models").delete_bot` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").delete_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot)
+```python title="Method definition"
+def delete_bot(
+    self,
+    *,
+    name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBotRequestRequestTypeDef](./type_defs.md#deletebotrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBotRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-<a id="delete\_bot\_alias"></a>
+parent.delete_bot(**kwargs)
+```
 
-### delete_bot_alias
+1. See [:material-code-braces: DeleteBotRequestRequestTypeDef](./type_defs.md#deletebotrequestrequesttypedef) 
+
+### delete\_bot\_alias
 
 Deletes an alias for the specified bot.
 
-Type annotations for `boto3.client("lex-models").delete_bot_alias` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").delete_bot_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_alias)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.delete_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_alias)
+```python title="Method definition"
+def delete_bot_alias(
+    self,
+    *,
+    name: str,
+    botName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBotAliasRequestRequestTypeDef](./type_defs.md#deletebotaliasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `botName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBotAliasRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "botName": ...,
+}
 
-<a id="delete\_bot\_channel\_association"></a>
+parent.delete_bot_alias(**kwargs)
+```
 
-### delete_bot_channel_association
+1. See [:material-code-braces: DeleteBotAliasRequestRequestTypeDef](./type_defs.md#deletebotaliasrequestrequesttypedef) 
+
+### delete\_bot\_channel\_association
 
 Deletes the association between an Amazon Lex bot and a messaging platform.
 
-Type annotations for
-`boto3.client("lex-models").delete_bot_channel_association` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").delete_bot_channel_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_channel_association)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.delete_bot_channel_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_channel_association)
+```python title="Method definition"
+def delete_bot_channel_association(
+    self,
+    *,
+    name: str,
+    botName: str,
+    botAlias: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBotChannelAssociationRequestRequestTypeDef](./type_defs.md#deletebotchannelassociationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `botName`: `str` *(required)*
-- `botAlias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBotChannelAssociationRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "botName": ...,
+    "botAlias": ...,
+}
 
-<a id="delete\_bot\_version"></a>
+parent.delete_bot_channel_association(**kwargs)
+```
 
-### delete_bot_version
+1. See [:material-code-braces: DeleteBotChannelAssociationRequestRequestTypeDef](./type_defs.md#deletebotchannelassociationrequestrequesttypedef) 
+
+### delete\_bot\_version
 
 Deletes a specific version of a bot.
 
-Type annotations for `boto3.client("lex-models").delete_bot_version` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").delete_bot_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_version)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.delete_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_bot_version)
+```python title="Method definition"
+def delete_bot_version(
+    self,
+    *,
+    name: str,
+    version: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBotVersionRequestRequestTypeDef](./type_defs.md#deletebotversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `version`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBotVersionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "version": ...,
+}
 
-<a id="delete\_intent"></a>
+parent.delete_bot_version(**kwargs)
+```
 
-### delete_intent
+1. See [:material-code-braces: DeleteBotVersionRequestRequestTypeDef](./type_defs.md#deletebotversionrequestrequesttypedef) 
+
+### delete\_intent
 
 Deletes all versions of the intent, including the `$LATEST` version.
 
-Type annotations for `boto3.client("lex-models").delete_intent` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").delete_intent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.delete_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent)
+```python title="Method definition"
+def delete_intent(
+    self,
+    *,
+    name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIntentRequestRequestTypeDef](./type_defs.md#deleteintentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIntentRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-<a id="delete\_intent\_version"></a>
+parent.delete_intent(**kwargs)
+```
 
-### delete_intent_version
+1. See [:material-code-braces: DeleteIntentRequestRequestTypeDef](./type_defs.md#deleteintentrequestrequesttypedef) 
+
+### delete\_intent\_version
 
 Deletes a specific version of an intent.
 
-Type annotations for `boto3.client("lex-models").delete_intent_version` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").delete_intent_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent_version)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.delete_intent_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_intent_version)
+```python title="Method definition"
+def delete_intent_version(
+    self,
+    *,
+    name: str,
+    version: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIntentVersionRequestRequestTypeDef](./type_defs.md#deleteintentversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `version`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIntentVersionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "version": ...,
+}
 
-<a id="delete\_slot\_type"></a>
+parent.delete_intent_version(**kwargs)
+```
 
-### delete_slot_type
+1. See [:material-code-braces: DeleteIntentVersionRequestRequestTypeDef](./type_defs.md#deleteintentversionrequestrequesttypedef) 
+
+### delete\_slot\_type
 
 Deletes all versions of the slot type, including the `$LATEST` version.
 
-Type annotations for `boto3.client("lex-models").delete_slot_type` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").delete_slot_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.delete_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type)
+```python title="Method definition"
+def delete_slot_type(
+    self,
+    *,
+    name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSlotTypeRequestRequestTypeDef](./type_defs.md#deleteslottyperequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSlotTypeRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-<a id="delete\_slot\_type\_version"></a>
+parent.delete_slot_type(**kwargs)
+```
 
-### delete_slot_type_version
+1. See [:material-code-braces: DeleteSlotTypeRequestRequestTypeDef](./type_defs.md#deleteslottyperequestrequesttypedef) 
+
+### delete\_slot\_type\_version
 
 Deletes a specific version of a slot type.
 
-Type annotations for `boto3.client("lex-models").delete_slot_type_version`
-method.
+Type annotations and code completion for `#!python boto3.client("lex-models").delete_slot_type_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type_version)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.delete_slot_type_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_slot_type_version)
+```python title="Method definition"
+def delete_slot_type_version(
+    self,
+    *,
+    name: str,
+    version: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSlotTypeVersionRequestRequestTypeDef](./type_defs.md#deleteslottypeversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `version`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSlotTypeVersionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "version": ...,
+}
 
-<a id="delete\_utterances"></a>
+parent.delete_slot_type_version(**kwargs)
+```
 
-### delete_utterances
+1. See [:material-code-braces: DeleteSlotTypeVersionRequestRequestTypeDef](./type_defs.md#deleteslottypeversionrequestrequesttypedef) 
+
+### delete\_utterances
 
 Deletes stored utterances.
 
-Type annotations for `boto3.client("lex-models").delete_utterances` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").delete_utterances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_utterances)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.delete_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.delete_utterances)
+```python title="Method definition"
+def delete_utterances(
+    self,
+    *,
+    botName: str,
+    userId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUtterancesRequestRequestTypeDef](./type_defs.md#deleteutterancesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `botName`: `str` *(required)*
-- `userId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUtterancesRequestRequestTypeDef = {  # (1)
+    "botName": ...,
+    "userId": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_utterances(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteUtterancesRequestRequestTypeDef](./type_defs.md#deleteutterancesrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("lex-models").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("lex-models").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_bot"></a>
-
-### get_bot
+### get\_bot
 
 Returns metadata information for a specific bot.
 
-Type annotations for `boto3.client("lex-models").get_bot` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot)
+```python title="Method definition"
+def get_bot(
+    self,
+    *,
+    name: str,
+    versionOrAlias: str,
+) -> GetBotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBotRequestRequestTypeDef](./type_defs.md#getbotrequestrequesttypedef).
+1. See [:material-code-braces: GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `versionOrAlias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBotRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "versionOrAlias": ...,
+}
 
-Returns [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef).
+parent.get_bot(**kwargs)
+```
 
-<a id="get\_bot\_alias"></a>
+1. See [:material-code-braces: GetBotRequestRequestTypeDef](./type_defs.md#getbotrequestrequesttypedef) 
 
-### get_bot_alias
+### get\_bot\_alias
 
 Returns information about an Amazon Lex bot alias.
 
-Type annotations for `boto3.client("lex-models").get_bot_alias` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_bot_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_alias)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_alias)
+```python title="Method definition"
+def get_bot_alias(
+    self,
+    *,
+    name: str,
+    botName: str,
+) -> GetBotAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBotAliasRequestRequestTypeDef](./type_defs.md#getbotaliasrequestrequesttypedef).
+1. See [:material-code-braces: GetBotAliasResponseTypeDef](./type_defs.md#getbotaliasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `botName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBotAliasRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "botName": ...,
+}
 
-Returns
-[GetBotAliasResponseTypeDef](./type_defs.md#getbotaliasresponsetypedef).
+parent.get_bot_alias(**kwargs)
+```
 
-<a id="get\_bot\_aliases"></a>
+1. See [:material-code-braces: GetBotAliasRequestRequestTypeDef](./type_defs.md#getbotaliasrequestrequesttypedef) 
 
-### get_bot_aliases
+### get\_bot\_aliases
 
 Returns a list of aliases for a specified Amazon Lex bot.
 
-Type annotations for `boto3.client("lex-models").get_bot_aliases` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_bot_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_aliases)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_bot_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_aliases)
+```python title="Method definition"
+def get_bot_aliases(
+    self,
+    *,
+    botName: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    nameContains: str = ...,
+) -> GetBotAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBotAliasesRequestRequestTypeDef](./type_defs.md#getbotaliasesrequestrequesttypedef).
+1. See [:material-code-braces: GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botName`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `nameContains`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetBotAliasesRequestRequestTypeDef = {  # (1)
+    "botName": ...,
+}
 
-Returns
-[GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef).
+parent.get_bot_aliases(**kwargs)
+```
 
-<a id="get\_bot\_channel\_association"></a>
+1. See [:material-code-braces: GetBotAliasesRequestRequestTypeDef](./type_defs.md#getbotaliasesrequestrequesttypedef) 
 
-### get_bot_channel_association
+### get\_bot\_channel\_association
 
 Returns information about the association between an Amazon Lex bot and a
 messaging platform.
 
-Type annotations for `boto3.client("lex-models").get_bot_channel_association`
-method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_bot_channel_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_association)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_bot_channel_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_association)
+```python title="Method definition"
+def get_bot_channel_association(
+    self,
+    *,
+    name: str,
+    botName: str,
+    botAlias: str,
+) -> GetBotChannelAssociationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBotChannelAssociationRequestRequestTypeDef](./type_defs.md#getbotchannelassociationrequestrequesttypedef).
+1. See [:material-code-braces: GetBotChannelAssociationResponseTypeDef](./type_defs.md#getbotchannelassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `botName`: `str` *(required)*
-- `botAlias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBotChannelAssociationRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "botName": ...,
+    "botAlias": ...,
+}
 
-Returns
-[GetBotChannelAssociationResponseTypeDef](./type_defs.md#getbotchannelassociationresponsetypedef).
+parent.get_bot_channel_association(**kwargs)
+```
 
-<a id="get\_bot\_channel\_associations"></a>
+1. See [:material-code-braces: GetBotChannelAssociationRequestRequestTypeDef](./type_defs.md#getbotchannelassociationrequestrequesttypedef) 
 
-### get_bot_channel_associations
+### get\_bot\_channel\_associations
 
 Returns a list of all of the channels associated with the specified bot.
 
-Type annotations for `boto3.client("lex-models").get_bot_channel_associations`
-method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_bot_channel_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_associations)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_bot_channel_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_channel_associations)
+```python title="Method definition"
+def get_bot_channel_associations(
+    self,
+    *,
+    botName: str,
+    botAlias: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    nameContains: str = ...,
+) -> GetBotChannelAssociationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBotChannelAssociationsRequestRequestTypeDef](./type_defs.md#getbotchannelassociationsrequestrequesttypedef).
+1. See [:material-code-braces: GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botName`: `str` *(required)*
-- `botAlias`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `nameContains`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetBotChannelAssociationsRequestRequestTypeDef = {  # (1)
+    "botName": ...,
+    "botAlias": ...,
+}
 
-Returns
-[GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef).
+parent.get_bot_channel_associations(**kwargs)
+```
 
-<a id="get\_bot\_versions"></a>
+1. See [:material-code-braces: GetBotChannelAssociationsRequestRequestTypeDef](./type_defs.md#getbotchannelassociationsrequestrequesttypedef) 
 
-### get_bot_versions
+### get\_bot\_versions
 
 Gets information about all of the versions of a bot.
 
-Type annotations for `boto3.client("lex-models").get_bot_versions` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_bot_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_versions)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_bot_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bot_versions)
+```python title="Method definition"
+def get_bot_versions(
+    self,
+    *,
+    name: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetBotVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBotVersionsRequestRequestTypeDef](./type_defs.md#getbotversionsrequestrequesttypedef).
+1. See [:material-code-braces: GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetBotVersionsRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef).
+parent.get_bot_versions(**kwargs)
+```
 
-<a id="get\_bots"></a>
+1. See [:material-code-braces: GetBotVersionsRequestRequestTypeDef](./type_defs.md#getbotversionsrequestrequesttypedef) 
 
-### get_bots
+### get\_bots
 
 Returns bot information as follows * If you provide the `nameContains` field,
 the response includes information for the `$LATEST` version of all bots whose
 name contains the specified string.
 
-Type annotations for `boto3.client("lex-models").get_bots` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_bots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bots)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_bots)
+```python title="Method definition"
+def get_bots(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    nameContains: str = ...,
+) -> GetBotsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBotsRequestRequestTypeDef](./type_defs.md#getbotsrequestrequesttypedef).
+1. See [:material-code-braces: GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `nameContains`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetBotsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns [GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef).
+parent.get_bots(**kwargs)
+```
 
-<a id="get\_builtin\_intent"></a>
+1. See [:material-code-braces: GetBotsRequestRequestTypeDef](./type_defs.md#getbotsrequestrequesttypedef) 
 
-### get_builtin_intent
+### get\_builtin\_intent
 
 Returns information about a built-in intent.
 
-Type annotations for `boto3.client("lex-models").get_builtin_intent` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_builtin_intent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intent)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_builtin_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intent)
+```python title="Method definition"
+def get_builtin_intent(
+    self,
+    *,
+    signature: str,
+) -> GetBuiltinIntentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBuiltinIntentRequestRequestTypeDef](./type_defs.md#getbuiltinintentrequestrequesttypedef).
+1. See [:material-code-braces: GetBuiltinIntentResponseTypeDef](./type_defs.md#getbuiltinintentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `signature`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBuiltinIntentRequestRequestTypeDef = {  # (1)
+    "signature": ...,
+}
 
-Returns
-[GetBuiltinIntentResponseTypeDef](./type_defs.md#getbuiltinintentresponsetypedef).
+parent.get_builtin_intent(**kwargs)
+```
 
-<a id="get\_builtin\_intents"></a>
+1. See [:material-code-braces: GetBuiltinIntentRequestRequestTypeDef](./type_defs.md#getbuiltinintentrequestrequesttypedef) 
 
-### get_builtin_intents
+### get\_builtin\_intents
 
 Gets a list of built-in intents that meet the specified criteria.
 
-Type annotations for `boto3.client("lex-models").get_builtin_intents` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_builtin_intents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intents)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_builtin_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_intents)
+```python title="Method definition"
+def get_builtin_intents(
+    self,
+    *,
+    locale: LocaleType = ...,  # (1)
+    signatureContains: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetBuiltinIntentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetBuiltinIntentsRequestRequestTypeDef](./type_defs.md#getbuiltinintentsrequestrequesttypedef).
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `locale`: [LocaleType](./literals.md#localetype)
-- `signatureContains`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetBuiltinIntentsRequestRequestTypeDef = {  # (1)
+    "locale": ...,
+}
 
-Returns
-[GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef).
+parent.get_builtin_intents(**kwargs)
+```
 
-<a id="get\_builtin\_slot\_types"></a>
+1. See [:material-code-braces: GetBuiltinIntentsRequestRequestTypeDef](./type_defs.md#getbuiltinintentsrequestrequesttypedef) 
 
-### get_builtin_slot_types
+### get\_builtin\_slot\_types
 
 Gets a list of built-in slot types that meet the specified criteria.
 
-Type annotations for `boto3.client("lex-models").get_builtin_slot_types`
-method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_builtin_slot_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_slot_types)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_builtin_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_builtin_slot_types)
+```python title="Method definition"
+def get_builtin_slot_types(
+    self,
+    *,
+    locale: LocaleType = ...,  # (1)
+    signatureContains: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetBuiltinSlotTypesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetBuiltinSlotTypesRequestRequestTypeDef](./type_defs.md#getbuiltinslottypesrequestrequesttypedef).
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `locale`: [LocaleType](./literals.md#localetype)
-- `signatureContains`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetBuiltinSlotTypesRequestRequestTypeDef = {  # (1)
+    "locale": ...,
+}
 
-Returns
-[GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef).
+parent.get_builtin_slot_types(**kwargs)
+```
 
-<a id="get\_export"></a>
+1. See [:material-code-braces: GetBuiltinSlotTypesRequestRequestTypeDef](./type_defs.md#getbuiltinslottypesrequestrequesttypedef) 
 
-### get_export
+### get\_export
 
 Exports the contents of a Amazon Lex resource in a specified format.
 
-Type annotations for `boto3.client("lex-models").get_export` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_export)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_export)
+```python title="Method definition"
+def get_export(
+    self,
+    *,
+    name: str,
+    version: str,
+    resourceType: ResourceTypeType,  # (1)
+    exportType: ExportTypeType,  # (2)
+) -> GetExportResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetExportRequestRequestTypeDef](./type_defs.md#getexportrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-brackets: ExportTypeType](./literals.md#exporttypetype) 
+3. See [:material-code-braces: GetExportResponseTypeDef](./type_defs.md#getexportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `version`: `str` *(required)*
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-  *(required)*
-- `exportType`: [ExportTypeType](./literals.md#exporttypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetExportRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "version": ...,
+    "resourceType": ...,
+    "exportType": ...,
+}
 
-Returns [GetExportResponseTypeDef](./type_defs.md#getexportresponsetypedef).
+parent.get_export(**kwargs)
+```
 
-<a id="get\_import"></a>
+1. See [:material-code-braces: GetExportRequestRequestTypeDef](./type_defs.md#getexportrequestrequesttypedef) 
 
-### get_import
+### get\_import
 
 Gets information about an import job started with the `StartImport` operation.
 
-Type annotations for `boto3.client("lex-models").get_import` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_import)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_import)
+```python title="Method definition"
+def get_import(
+    self,
+    *,
+    importId: str,
+) -> GetImportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImportRequestRequestTypeDef](./type_defs.md#getimportrequestrequesttypedef).
+1. See [:material-code-braces: GetImportResponseTypeDef](./type_defs.md#getimportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `importId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetImportRequestRequestTypeDef = {  # (1)
+    "importId": ...,
+}
 
-Returns [GetImportResponseTypeDef](./type_defs.md#getimportresponsetypedef).
+parent.get_import(**kwargs)
+```
 
-<a id="get\_intent"></a>
+1. See [:material-code-braces: GetImportRequestRequestTypeDef](./type_defs.md#getimportrequestrequesttypedef) 
 
-### get_intent
+### get\_intent
 
 Returns information about an intent.
 
-Type annotations for `boto3.client("lex-models").get_intent` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_intent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent)
+```python title="Method definition"
+def get_intent(
+    self,
+    *,
+    name: str,
+    version: str,
+) -> GetIntentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIntentRequestRequestTypeDef](./type_defs.md#getintentrequestrequesttypedef).
+1. See [:material-code-braces: GetIntentResponseTypeDef](./type_defs.md#getintentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `version`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetIntentRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "version": ...,
+}
 
-Returns [GetIntentResponseTypeDef](./type_defs.md#getintentresponsetypedef).
+parent.get_intent(**kwargs)
+```
 
-<a id="get\_intent\_versions"></a>
+1. See [:material-code-braces: GetIntentRequestRequestTypeDef](./type_defs.md#getintentrequestrequesttypedef) 
 
-### get_intent_versions
+### get\_intent\_versions
 
 Gets information about all of the versions of an intent.
 
-Type annotations for `boto3.client("lex-models").get_intent_versions` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_intent_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent_versions)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_intent_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intent_versions)
+```python title="Method definition"
+def get_intent_versions(
+    self,
+    *,
+    name: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetIntentVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIntentVersionsRequestRequestTypeDef](./type_defs.md#getintentversionsrequestrequesttypedef).
+1. See [:material-code-braces: GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetIntentVersionsRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef).
+parent.get_intent_versions(**kwargs)
+```
 
-<a id="get\_intents"></a>
+1. See [:material-code-braces: GetIntentVersionsRequestRequestTypeDef](./type_defs.md#getintentversionsrequestrequesttypedef) 
 
-### get_intents
+### get\_intents
 
-Returns intent information as follows * If you specify the `nameContains`
-field, returns the `$LATEST` version of all intents that contain the specified
-string.
+Returns intent information as follows * If you specify the `nameContains` field,
+returns the `$LATEST` version of all intents that contain the specified string.
 
-Type annotations for `boto3.client("lex-models").get_intents` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_intents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intents)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_intents)
+```python title="Method definition"
+def get_intents(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    nameContains: str = ...,
+) -> GetIntentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIntentsRequestRequestTypeDef](./type_defs.md#getintentsrequestrequesttypedef).
+1. See [:material-code-braces: GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `nameContains`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetIntentsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns [GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef).
+parent.get_intents(**kwargs)
+```
 
-<a id="get\_migration"></a>
+1. See [:material-code-braces: GetIntentsRequestRequestTypeDef](./type_defs.md#getintentsrequestrequesttypedef) 
 
-### get_migration
+### get\_migration
 
 Provides details about an ongoing or complete migration from an Amazon Lex V1
 bot to an Amazon Lex V2 bot.
 
-Type annotations for `boto3.client("lex-models").get_migration` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_migration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_migration)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_migration)
+```python title="Method definition"
+def get_migration(
+    self,
+    *,
+    migrationId: str,
+) -> GetMigrationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMigrationRequestRequestTypeDef](./type_defs.md#getmigrationrequestrequesttypedef).
+1. See [:material-code-braces: GetMigrationResponseTypeDef](./type_defs.md#getmigrationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `migrationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMigrationRequestRequestTypeDef = {  # (1)
+    "migrationId": ...,
+}
 
-Returns
-[GetMigrationResponseTypeDef](./type_defs.md#getmigrationresponsetypedef).
+parent.get_migration(**kwargs)
+```
 
-<a id="get\_migrations"></a>
+1. See [:material-code-braces: GetMigrationRequestRequestTypeDef](./type_defs.md#getmigrationrequestrequesttypedef) 
 
-### get_migrations
+### get\_migrations
 
 Gets a list of migrations between Amazon Lex V1 and Amazon Lex V2.
 
-Type annotations for `boto3.client("lex-models").get_migrations` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_migrations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_migrations)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_migrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_migrations)
+```python title="Method definition"
+def get_migrations(
+    self,
+    *,
+    sortByAttribute: MigrationSortAttributeType = ...,  # (1)
+    sortByOrder: SortOrderType = ...,  # (2)
+    v1BotNameContains: str = ...,
+    migrationStatusEquals: MigrationStatusType = ...,  # (3)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> GetMigrationsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetMigrationsRequestRequestTypeDef](./type_defs.md#getmigrationsrequestrequesttypedef).
+1. See [:material-code-brackets: MigrationSortAttributeType](./literals.md#migrationsortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-brackets: MigrationStatusType](./literals.md#migrationstatustype) 
+4. See [:material-code-braces: GetMigrationsResponseTypeDef](./type_defs.md#getmigrationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sortByAttribute`:
-  [MigrationSortAttributeType](./literals.md#migrationsortattributetype)
-- `sortByOrder`: [SortOrderType](./literals.md#sortordertype)
-- `v1BotNameContains`: `str`
-- `migrationStatusEquals`:
-  [MigrationStatusType](./literals.md#migrationstatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetMigrationsRequestRequestTypeDef = {  # (1)
+    "sortByAttribute": ...,
+}
 
-Returns
-[GetMigrationsResponseTypeDef](./type_defs.md#getmigrationsresponsetypedef).
+parent.get_migrations(**kwargs)
+```
 
-<a id="get\_slot\_type"></a>
+1. See [:material-code-braces: GetMigrationsRequestRequestTypeDef](./type_defs.md#getmigrationsrequestrequesttypedef) 
 
-### get_slot_type
+### get\_slot\_type
 
 Returns information about a specific version of a slot type.
 
-Type annotations for `boto3.client("lex-models").get_slot_type` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_slot_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type)
+```python title="Method definition"
+def get_slot_type(
+    self,
+    *,
+    name: str,
+    version: str,
+) -> GetSlotTypeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSlotTypeRequestRequestTypeDef](./type_defs.md#getslottyperequestrequesttypedef).
+1. See [:material-code-braces: GetSlotTypeResponseTypeDef](./type_defs.md#getslottyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `version`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSlotTypeRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "version": ...,
+}
 
-Returns
-[GetSlotTypeResponseTypeDef](./type_defs.md#getslottyperesponsetypedef).
+parent.get_slot_type(**kwargs)
+```
 
-<a id="get\_slot\_type\_versions"></a>
+1. See [:material-code-braces: GetSlotTypeRequestRequestTypeDef](./type_defs.md#getslottyperequestrequesttypedef) 
 
-### get_slot_type_versions
+### get\_slot\_type\_versions
 
 Gets information about all versions of a slot type.
 
-Type annotations for `boto3.client("lex-models").get_slot_type_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_slot_type_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type_versions)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_slot_type_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_type_versions)
+```python title="Method definition"
+def get_slot_type_versions(
+    self,
+    *,
+    name: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetSlotTypeVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSlotTypeVersionsRequestRequestTypeDef](./type_defs.md#getslottypeversionsrequestrequesttypedef).
+1. See [:material-code-braces: GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetSlotTypeVersionsRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef).
+parent.get_slot_type_versions(**kwargs)
+```
 
-<a id="get\_slot\_types"></a>
+1. See [:material-code-braces: GetSlotTypeVersionsRequestRequestTypeDef](./type_defs.md#getslottypeversionsrequestrequesttypedef) 
 
-### get_slot_types
+### get\_slot\_types
 
 Returns slot type information as follows * If you specify the `nameContains`
 field, returns the `$LATEST` version of all slot types that contain the
 specified string.
 
-Type annotations for `boto3.client("lex-models").get_slot_types` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_slot_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_types)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_slot_types)
+```python title="Method definition"
+def get_slot_types(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    nameContains: str = ...,
+) -> GetSlotTypesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSlotTypesRequestRequestTypeDef](./type_defs.md#getslottypesrequestrequesttypedef).
+1. See [:material-code-braces: GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `nameContains`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSlotTypesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef).
+parent.get_slot_types(**kwargs)
+```
 
-<a id="get\_utterances\_view"></a>
+1. See [:material-code-braces: GetSlotTypesRequestRequestTypeDef](./type_defs.md#getslottypesrequestrequesttypedef) 
 
-### get_utterances_view
+### get\_utterances\_view
 
 Use the `GetUtterancesView` operation to get information about the utterances
 that your users have made to your bot.
 
-Type annotations for `boto3.client("lex-models").get_utterances_view` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_utterances_view` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_utterances_view)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.get_utterances_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.get_utterances_view)
+```python title="Method definition"
+def get_utterances_view(
+    self,
+    *,
+    botName: str,
+    botVersions: Sequence[str],
+    statusType: StatusTypeType,  # (1)
+) -> GetUtterancesViewResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetUtterancesViewRequestRequestTypeDef](./type_defs.md#getutterancesviewrequestrequesttypedef).
+1. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
+2. See [:material-code-braces: GetUtterancesViewResponseTypeDef](./type_defs.md#getutterancesviewresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botName`: `str` *(required)*
-- `botVersions`: `Sequence`\[`str`\] *(required)*
-- `statusType`: [StatusTypeType](./literals.md#statustypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUtterancesViewRequestRequestTypeDef = {  # (1)
+    "botName": ...,
+    "botVersions": ...,
+    "statusType": ...,
+}
 
-Returns
-[GetUtterancesViewResponseTypeDef](./type_defs.md#getutterancesviewresponsetypedef).
+parent.get_utterances_view(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: GetUtterancesViewRequestRequestTypeDef](./type_defs.md#getutterancesviewrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Gets a list of tags associated with the specified resource.
 
-Type annotations for `boto3.client("lex-models").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("lex-models").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_bot"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_bot
+### put\_bot
 
 Creates an Amazon Lex conversational bot or replaces an existing bot.
 
-Type annotations for `boto3.client("lex-models").put_bot` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").put_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.put_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot)
+```python title="Method definition"
+def put_bot(
+    self,
+    *,
+    name: str,
+    locale: LocaleType,  # (1)
+    childDirected: bool,
+    description: str = ...,
+    intents: Sequence[IntentTypeDef] = ...,  # (2)
+    enableModelImprovements: bool = ...,
+    nluIntentConfidenceThreshold: float = ...,
+    clarificationPrompt: PromptTypeDef = ...,  # (3)
+    abortStatement: StatementTypeDef = ...,  # (4)
+    idleSessionTTLInSeconds: int = ...,
+    voiceId: str = ...,
+    checksum: str = ...,
+    processBehavior: ProcessBehaviorType = ...,  # (5)
+    detectSentiment: bool = ...,
+    createVersion: bool = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (6)
+) -> PutBotResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[PutBotRequestRequestTypeDef](./type_defs.md#putbotrequestrequesttypedef).
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: IntentTypeDef](./type_defs.md#intenttypedef) 
+3. See [:material-code-braces: PromptTypeDef](./type_defs.md#prompttypedef) 
+4. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
+5. See [:material-code-brackets: ProcessBehaviorType](./literals.md#processbehaviortype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: PutBotResponseTypeDef](./type_defs.md#putbotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `locale`: [LocaleType](./literals.md#localetype) *(required)*
-- `childDirected`: `bool` *(required)*
-- `description`: `str`
-- `intents`: `Sequence`\[[IntentTypeDef](./type_defs.md#intenttypedef)\]
-- `enableModelImprovements`: `bool`
-- `nluIntentConfidenceThreshold`: `float`
-- `clarificationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
-- `abortStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `idleSessionTTLInSeconds`: `int`
-- `voiceId`: `str`
-- `checksum`: `str`
-- `processBehavior`: [ProcessBehaviorType](./literals.md#processbehaviortype)
-- `detectSentiment`: `bool`
-- `createVersion`: `bool`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutBotRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "locale": ...,
+    "childDirected": ...,
+}
 
-Returns [PutBotResponseTypeDef](./type_defs.md#putbotresponsetypedef).
+parent.put_bot(**kwargs)
+```
 
-<a id="put\_bot\_alias"></a>
+1. See [:material-code-braces: PutBotRequestRequestTypeDef](./type_defs.md#putbotrequestrequesttypedef) 
 
-### put_bot_alias
+### put\_bot\_alias
 
 Creates an alias for the specified version of the bot or replaces an alias for
 the specified bot.
 
-Type annotations for `boto3.client("lex-models").put_bot_alias` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").put_bot_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot_alias)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.put_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_bot_alias)
+```python title="Method definition"
+def put_bot_alias(
+    self,
+    *,
+    name: str,
+    botVersion: str,
+    botName: str,
+    description: str = ...,
+    checksum: str = ...,
+    conversationLogs: ConversationLogsRequestTypeDef = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> PutBotAliasResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutBotAliasRequestRequestTypeDef](./type_defs.md#putbotaliasrequestrequesttypedef).
+1. See [:material-code-braces: ConversationLogsRequestTypeDef](./type_defs.md#conversationlogsrequesttypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: PutBotAliasResponseTypeDef](./type_defs.md#putbotaliasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `botName`: `str` *(required)*
-- `description`: `str`
-- `checksum`: `str`
-- `conversationLogs`:
-  [ConversationLogsRequestTypeDef](./type_defs.md#conversationlogsrequesttypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutBotAliasRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "botVersion": ...,
+    "botName": ...,
+}
 
-Returns
-[PutBotAliasResponseTypeDef](./type_defs.md#putbotaliasresponsetypedef).
+parent.put_bot_alias(**kwargs)
+```
 
-<a id="put\_intent"></a>
+1. See [:material-code-braces: PutBotAliasRequestRequestTypeDef](./type_defs.md#putbotaliasrequestrequesttypedef) 
 
-### put_intent
+### put\_intent
 
 Creates an intent or replaces an existing intent.
 
-Type annotations for `boto3.client("lex-models").put_intent` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").put_intent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_intent)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.put_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_intent)
+```python title="Method definition"
+def put_intent(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    slots: Sequence[SlotTypeDef] = ...,  # (1)
+    sampleUtterances: Sequence[str] = ...,
+    confirmationPrompt: PromptTypeDef = ...,  # (2)
+    rejectionStatement: StatementTypeDef = ...,  # (3)
+    followUpPrompt: FollowUpPromptTypeDef = ...,  # (4)
+    conclusionStatement: StatementTypeDef = ...,  # (3)
+    dialogCodeHook: CodeHookTypeDef = ...,  # (6)
+    fulfillmentActivity: FulfillmentActivityTypeDef = ...,  # (7)
+    parentIntentSignature: str = ...,
+    checksum: str = ...,
+    createVersion: bool = ...,
+    kendraConfiguration: KendraConfigurationTypeDef = ...,  # (8)
+    inputContexts: Sequence[InputContextTypeDef] = ...,  # (9)
+    outputContexts: Sequence[OutputContextTypeDef] = ...,  # (10)
+) -> PutIntentResponseTypeDef:  # (11)
+    ...
+```
 
-Arguments mapping described in
-[PutIntentRequestRequestTypeDef](./type_defs.md#putintentrequestrequesttypedef).
+1. See [:material-code-braces: SlotTypeDef](./type_defs.md#slottypedef) 
+2. See [:material-code-braces: PromptTypeDef](./type_defs.md#prompttypedef) 
+3. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
+4. See [:material-code-braces: FollowUpPromptTypeDef](./type_defs.md#followupprompttypedef) 
+5. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
+6. See [:material-code-braces: CodeHookTypeDef](./type_defs.md#codehooktypedef) 
+7. See [:material-code-braces: FulfillmentActivityTypeDef](./type_defs.md#fulfillmentactivitytypedef) 
+8. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
+9. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
+10. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
+11. See [:material-code-braces: PutIntentResponseTypeDef](./type_defs.md#putintentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `slots`: `Sequence`\[[SlotTypeDef](./type_defs.md#slottypedef)\]
-- `sampleUtterances`: `Sequence`\[`str`\]
-- `confirmationPrompt`: [PromptTypeDef](./type_defs.md#prompttypedef)
-- `rejectionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `followUpPrompt`:
-  [FollowUpPromptTypeDef](./type_defs.md#followupprompttypedef)
-- `conclusionStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `dialogCodeHook`: [CodeHookTypeDef](./type_defs.md#codehooktypedef)
-- `fulfillmentActivity`:
-  [FulfillmentActivityTypeDef](./type_defs.md#fulfillmentactivitytypedef)
-- `parentIntentSignature`: `str`
-- `checksum`: `str`
-- `createVersion`: `bool`
-- `kendraConfiguration`:
-  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
-- `inputContexts`:
-  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
-- `outputContexts`:
-  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutIntentRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [PutIntentResponseTypeDef](./type_defs.md#putintentresponsetypedef).
+parent.put_intent(**kwargs)
+```
 
-<a id="put\_slot\_type"></a>
+1. See [:material-code-braces: PutIntentRequestRequestTypeDef](./type_defs.md#putintentrequestrequesttypedef) 
 
-### put_slot_type
+### put\_slot\_type
 
 Creates a custom slot type or replaces an existing custom slot type.
 
-Type annotations for `boto3.client("lex-models").put_slot_type` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").put_slot_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_slot_type)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.put_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.put_slot_type)
+```python title="Method definition"
+def put_slot_type(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    enumerationValues: Sequence[EnumerationValueTypeDef] = ...,  # (1)
+    checksum: str = ...,
+    valueSelectionStrategy: SlotValueSelectionStrategyType = ...,  # (2)
+    createVersion: bool = ...,
+    parentSlotTypeSignature: str = ...,
+    slotTypeConfigurations: Sequence[SlotTypeConfigurationTypeDef] = ...,  # (3)
+) -> PutSlotTypeResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[PutSlotTypeRequestRequestTypeDef](./type_defs.md#putslottyperequestrequesttypedef).
+1. See [:material-code-braces: EnumerationValueTypeDef](./type_defs.md#enumerationvaluetypedef) 
+2. See [:material-code-brackets: SlotValueSelectionStrategyType](./literals.md#slotvalueselectionstrategytype) 
+3. See [:material-code-braces: SlotTypeConfigurationTypeDef](./type_defs.md#slottypeconfigurationtypedef) 
+4. See [:material-code-braces: PutSlotTypeResponseTypeDef](./type_defs.md#putslottyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `enumerationValues`:
-  `Sequence`\[[EnumerationValueTypeDef](./type_defs.md#enumerationvaluetypedef)\]
-- `checksum`: `str`
-- `valueSelectionStrategy`:
-  [SlotValueSelectionStrategyType](./literals.md#slotvalueselectionstrategytype)
-- `createVersion`: `bool`
-- `parentSlotTypeSignature`: `str`
-- `slotTypeConfigurations`:
-  `Sequence`\[[SlotTypeConfigurationTypeDef](./type_defs.md#slottypeconfigurationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutSlotTypeRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[PutSlotTypeResponseTypeDef](./type_defs.md#putslottyperesponsetypedef).
+parent.put_slot_type(**kwargs)
+```
 
-<a id="start\_import"></a>
+1. See [:material-code-braces: PutSlotTypeRequestRequestTypeDef](./type_defs.md#putslottyperequestrequesttypedef) 
 
-### start_import
+### start\_import
 
 Starts a job to import a resource to Amazon Lex.
 
-Type annotations for `boto3.client("lex-models").start_import` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").start_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_import)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.start_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_import)
+```python title="Method definition"
+def start_import(
+    self,
+    *,
+    payload: Union[bytes, IO[bytes], StreamingBody],
+    resourceType: ResourceTypeType,  # (1)
+    mergeStrategy: MergeStrategyType,  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> StartImportResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartImportRequestRequestTypeDef](./type_defs.md#startimportrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-  *(required)*
-- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
-  *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: StartImportRequestRequestTypeDef = {  # (1)
+    "payload": ...,
+    "resourceType": ...,
+    "mergeStrategy": ...,
+}
 
-Returns
-[StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef).
+parent.start_import(**kwargs)
+```
 
-<a id="start\_migration"></a>
+1. See [:material-code-braces: StartImportRequestRequestTypeDef](./type_defs.md#startimportrequestrequesttypedef) 
 
-### start_migration
+### start\_migration
 
 Starts migrating a bot from Amazon Lex V1 to Amazon Lex V2.
 
-Type annotations for `boto3.client("lex-models").start_migration` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").start_migration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_migration)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.start_migration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.start_migration)
+```python title="Method definition"
+def start_migration(
+    self,
+    *,
+    v1BotName: str,
+    v1BotVersion: str,
+    v2BotName: str,
+    v2BotRole: str,
+    migrationStrategy: MigrationStrategyType,  # (1)
+) -> StartMigrationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartMigrationRequestRequestTypeDef](./type_defs.md#startmigrationrequestrequesttypedef).
+1. See [:material-code-brackets: MigrationStrategyType](./literals.md#migrationstrategytype) 
+2. See [:material-code-braces: StartMigrationResponseTypeDef](./type_defs.md#startmigrationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `v1BotName`: `str` *(required)*
-- `v1BotVersion`: `str` *(required)*
-- `v2BotName`: `str` *(required)*
-- `v2BotRole`: `str` *(required)*
-- `migrationStrategy`:
-  [MigrationStrategyType](./literals.md#migrationstrategytype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartMigrationRequestRequestTypeDef = {  # (1)
+    "v1BotName": ...,
+    "v1BotVersion": ...,
+    "v2BotName": ...,
+    "v2BotRole": ...,
+    "migrationStrategy": ...,
+}
 
-Returns
-[StartMigrationResponseTypeDef](./type_defs.md#startmigrationresponsetypedef).
+parent.start_migration(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartMigrationRequestRequestTypeDef](./type_defs.md#startmigrationrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds the specified tags to the specified resource.
 
-Type annotations for `boto3.client("lex-models").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.tag_resource)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a bot, bot alias or bot channel.
 
-Type annotations for `boto3.client("lex-models").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lex-models").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.untag_resource)
 
-Boto3 documentation:
-[LexModelBuildingService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("lex-models").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator` method with overloads.
 
-- `client.get_paginator("get_bot_aliases")` ->
-  [GetBotAliasesPaginator](./paginators.md#getbotaliasespaginator)
-- `client.get_paginator("get_bot_channel_associations")` ->
-  [GetBotChannelAssociationsPaginator](./paginators.md#getbotchannelassociationspaginator)
-- `client.get_paginator("get_bot_versions")` ->
-  [GetBotVersionsPaginator](./paginators.md#getbotversionspaginator)
-- `client.get_paginator("get_bots")` ->
-  [GetBotsPaginator](./paginators.md#getbotspaginator)
-- `client.get_paginator("get_builtin_intents")` ->
-  [GetBuiltinIntentsPaginator](./paginators.md#getbuiltinintentspaginator)
-- `client.get_paginator("get_builtin_slot_types")` ->
-  [GetBuiltinSlotTypesPaginator](./paginators.md#getbuiltinslottypespaginator)
-- `client.get_paginator("get_intent_versions")` ->
-  [GetIntentVersionsPaginator](./paginators.md#getintentversionspaginator)
-- `client.get_paginator("get_intents")` ->
-  [GetIntentsPaginator](./paginators.md#getintentspaginator)
-- `client.get_paginator("get_slot_type_versions")` ->
-  [GetSlotTypeVersionsPaginator](./paginators.md#getslottypeversionspaginator)
-- `client.get_paginator("get_slot_types")` ->
-  [GetSlotTypesPaginator](./paginators.md#getslottypespaginator)
+- `client.get_paginator("get_bot_aliases")` -> [GetBotAliasesPaginator](./paginators.md#getbotaliasespaginator)
+- `client.get_paginator("get_bot_channel_associations")` -> [GetBotChannelAssociationsPaginator](./paginators.md#getbotchannelassociationspaginator)
+- `client.get_paginator("get_bot_versions")` -> [GetBotVersionsPaginator](./paginators.md#getbotversionspaginator)
+- `client.get_paginator("get_bots")` -> [GetBotsPaginator](./paginators.md#getbotspaginator)
+- `client.get_paginator("get_builtin_intents")` -> [GetBuiltinIntentsPaginator](./paginators.md#getbuiltinintentspaginator)
+- `client.get_paginator("get_builtin_slot_types")` -> [GetBuiltinSlotTypesPaginator](./paginators.md#getbuiltinslottypespaginator)
+- `client.get_paginator("get_intent_versions")` -> [GetIntentVersionsPaginator](./paginators.md#getintentversionspaginator)
+- `client.get_paginator("get_intents")` -> [GetIntentsPaginator](./paginators.md#getintentspaginator)
+- `client.get_paginator("get_slot_type_versions")` -> [GetSlotTypeVersionsPaginator](./paginators.md#getslottypeversionspaginator)
+- `client.get_paginator("get_slot_types")` -> [GetSlotTypesPaginator](./paginators.md#getslottypespaginator)
+
+
+

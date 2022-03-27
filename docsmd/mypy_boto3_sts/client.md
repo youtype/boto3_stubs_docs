@@ -1,39 +1,18 @@
-<a id="stsclient-for-boto3-sts-module"></a>
-
-# STSClient for boto3 STS module
+# STSClient
 
 > [Index](../README.md) > [STS](./README.md) > STSClient
 
-Auto-generated documentation for
-[STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
-type annotations stubs module
-[mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
+!!! note ""
 
-- [STSClient for boto3 STS module](#stsclient-for-boto3-sts-module)
-  - [STSClient](#stsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [assume_role](#assume_role)
-    - [assume_role_with_saml](#assume_role_with_saml)
-    - [assume_role_with_web_identity](#assume_role_with_web_identity)
-    - [can_paginate](#can_paginate)
-    - [decode_authorization_message](#decode_authorization_message)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_access_key_info](#get_access_key_info)
-    - [get_caller_identity](#get_caller_identity)
-    - [get_federation_token](#get_federation_token)
-    - [get_session_token](#get_session_token)
-
-<a id="stsclient"></a>
+    Auto-generated documentation for [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
+    type annotations stubs module [mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
 
 ## STSClient
 
-Type annotations for `boto3.client("sts")`
+Type annotations and code completion for `#!python boto3.client("sts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sts.client import STSClient
 
@@ -41,284 +20,341 @@ def get_sts_client() -> STSClient:
     return Session().client("sts")
 ```
 
-Boto3 documentation:
-[STS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sts").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sts")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ExpiredTokenException,
+    client.IDPCommunicationErrorException,
+    client.IDPRejectedClaimException,
+    client.InvalidAuthorizationMessageException,
+    client.InvalidIdentityTokenException,
+    client.MalformedPolicyDocumentException,
+    client.PackedPolicyTooLargeException,
+    client.RegionDisabledException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sts.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ExpiredTokenException`
-- `Exceptions.IDPCommunicationErrorException`
-- `Exceptions.IDPRejectedClaimException`
-- `Exceptions.InvalidAuthorizationMessageException`
-- `Exceptions.InvalidIdentityTokenException`
-- `Exceptions.MalformedPolicyDocumentException`
-- `Exceptions.PackedPolicyTooLargeException`
-- `Exceptions.RegionDisabledException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-STSClient exceptions.
-
-Type annotations for `boto3.client("sts").exceptions` method.
-
-Boto3 documentation:
-[STS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="assume\_role"></a>
-
-### assume_role
+### assume\_role
 
 Returns a set of temporary security credentials that you can use to access
 Amazon Web Services resources that you might not normally have access to.
 
-Type annotations for `boto3.client("sts").assume_role` method.
+Type annotations and code completion for `#!python boto3.client("sts").assume_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role)
 
-Boto3 documentation:
-[STS.Client.assume_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role)
+```python title="Method definition"
+def assume_role(
+    self,
+    *,
+    RoleArn: str,
+    RoleSessionName: str,
+    PolicyArns: Sequence[PolicyDescriptorTypeTypeDef] = ...,  # (1)
+    Policy: str = ...,
+    DurationSeconds: int = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    TransitiveTagKeys: Sequence[str] = ...,
+    ExternalId: str = ...,
+    SerialNumber: str = ...,
+    TokenCode: str = ...,
+    SourceIdentity: str = ...,
+) -> AssumeRoleResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[AssumeRoleRequestRequestTypeDef](./type_defs.md#assumerolerequestrequesttypedef).
+1. See [:material-code-braces: PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleArn`: `str` *(required)*
-- `RoleSessionName`: `str` *(required)*
-- `PolicyArns`:
-  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
-- `Policy`: `str`
-- `DurationSeconds`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TransitiveTagKeys`: `Sequence`\[`str`\]
-- `ExternalId`: `str`
-- `SerialNumber`: `str`
-- `TokenCode`: `str`
-- `SourceIdentity`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssumeRoleRequestRequestTypeDef = {  # (1)
+    "RoleArn": ...,
+    "RoleSessionName": ...,
+}
 
-Returns [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef).
+parent.assume_role(**kwargs)
+```
 
-<a id="assume\_role\_with\_saml"></a>
+1. See [:material-code-braces: AssumeRoleRequestRequestTypeDef](./type_defs.md#assumerolerequestrequesttypedef) 
 
-### assume_role_with_saml
+### assume\_role\_with\_saml
 
 Returns a set of temporary security credentials for users who have been
 authenticated via a SAML authentication response.
 
-Type annotations for `boto3.client("sts").assume_role_with_saml` method.
+Type annotations and code completion for `#!python boto3.client("sts").assume_role_with_saml` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml)
 
-Boto3 documentation:
-[STS.Client.assume_role_with_saml](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_saml)
+```python title="Method definition"
+def assume_role_with_saml(
+    self,
+    *,
+    RoleArn: str,
+    PrincipalArn: str,
+    SAMLAssertion: str,
+    PolicyArns: Sequence[PolicyDescriptorTypeTypeDef] = ...,  # (1)
+    Policy: str = ...,
+    DurationSeconds: int = ...,
+) -> AssumeRoleWithSAMLResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AssumeRoleWithSAMLRequestRequestTypeDef](./type_defs.md#assumerolewithsamlrequestrequesttypedef).
+1. See [:material-code-braces: PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef) 
+2. See [:material-code-braces: AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleArn`: `str` *(required)*
-- `PrincipalArn`: `str` *(required)*
-- `SAMLAssertion`: `str` *(required)*
-- `PolicyArns`:
-  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
-- `Policy`: `str`
-- `DurationSeconds`: `int`
+```python title="Usage example with kwargs"
+kwargs: AssumeRoleWithSAMLRequestRequestTypeDef = {  # (1)
+    "RoleArn": ...,
+    "PrincipalArn": ...,
+    "SAMLAssertion": ...,
+}
 
-Returns
-[AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef).
+parent.assume_role_with_saml(**kwargs)
+```
 
-<a id="assume\_role\_with\_web\_identity"></a>
+1. See [:material-code-braces: AssumeRoleWithSAMLRequestRequestTypeDef](./type_defs.md#assumerolewithsamlrequestrequesttypedef) 
 
-### assume_role_with_web_identity
+### assume\_role\_with\_web\_identity
 
 Returns a set of temporary security credentials for users who have been
 authenticated in a mobile or web application with a web identity provider.
 
-Type annotations for `boto3.client("sts").assume_role_with_web_identity`
-method.
+Type annotations and code completion for `#!python boto3.client("sts").assume_role_with_web_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity)
 
-Boto3 documentation:
-[STS.Client.assume_role_with_web_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.assume_role_with_web_identity)
+```python title="Method definition"
+def assume_role_with_web_identity(
+    self,
+    *,
+    RoleArn: str,
+    RoleSessionName: str,
+    WebIdentityToken: str,
+    ProviderId: str = ...,
+    PolicyArns: Sequence[PolicyDescriptorTypeTypeDef] = ...,  # (1)
+    Policy: str = ...,
+    DurationSeconds: int = ...,
+) -> AssumeRoleWithWebIdentityResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AssumeRoleWithWebIdentityRequestRequestTypeDef](./type_defs.md#assumerolewithwebidentityrequestrequesttypedef).
+1. See [:material-code-braces: PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef) 
+2. See [:material-code-braces: AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleArn`: `str` *(required)*
-- `RoleSessionName`: `str` *(required)*
-- `WebIdentityToken`: `str` *(required)*
-- `ProviderId`: `str`
-- `PolicyArns`:
-  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
-- `Policy`: `str`
-- `DurationSeconds`: `int`
+```python title="Usage example with kwargs"
+kwargs: AssumeRoleWithWebIdentityRequestRequestTypeDef = {  # (1)
+    "RoleArn": ...,
+    "RoleSessionName": ...,
+    "WebIdentityToken": ...,
+}
 
-Returns
-[AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef).
+parent.assume_role_with_web_identity(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssumeRoleWithWebIdentityRequestRequestTypeDef](./type_defs.md#assumerolewithwebidentityrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sts").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("sts").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.can_paginate)
 
-Boto3 documentation:
-[STS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="decode\_authorization\_message"></a>
-
-### decode_authorization_message
+### decode\_authorization\_message
 
 Decodes additional information about the authorization status of a request from
 an encoded message returned in response to an Amazon Web Services request.
 
-Type annotations for `boto3.client("sts").decode_authorization_message` method.
+Type annotations and code completion for `#!python boto3.client("sts").decode_authorization_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message)
 
-Boto3 documentation:
-[STS.Client.decode_authorization_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.decode_authorization_message)
+```python title="Method definition"
+def decode_authorization_message(
+    self,
+    *,
+    EncodedMessage: str,
+) -> DecodeAuthorizationMessageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DecodeAuthorizationMessageRequestRequestTypeDef](./type_defs.md#decodeauthorizationmessagerequestrequesttypedef).
+1. See [:material-code-braces: DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EncodedMessage`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DecodeAuthorizationMessageRequestRequestTypeDef = {  # (1)
+    "EncodedMessage": ...,
+}
 
-Returns
-[DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef).
+parent.decode_authorization_message(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DecodeAuthorizationMessageRequestRequestTypeDef](./type_defs.md#decodeauthorizationmessagerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("sts").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sts").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[STS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_access\_key\_info"></a>
-
-### get_access_key_info
+### get\_access\_key\_info
 
 Returns the account identifier for the specified access key ID.
 
-Type annotations for `boto3.client("sts").get_access_key_info` method.
+Type annotations and code completion for `#!python boto3.client("sts").get_access_key_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info)
 
-Boto3 documentation:
-[STS.Client.get_access_key_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_access_key_info)
+```python title="Method definition"
+def get_access_key_info(
+    self,
+    *,
+    AccessKeyId: str,
+) -> GetAccessKeyInfoResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessKeyInfoRequestRequestTypeDef](./type_defs.md#getaccesskeyinforequestrequesttypedef).
+1. See [:material-code-braces: GetAccessKeyInfoResponseTypeDef](./type_defs.md#getaccesskeyinforesponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccessKeyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessKeyInfoRequestRequestTypeDef = {  # (1)
+    "AccessKeyId": ...,
+}
 
-Returns
-[GetAccessKeyInfoResponseTypeDef](./type_defs.md#getaccesskeyinforesponsetypedef).
+parent.get_access_key_info(**kwargs)
+```
 
-<a id="get\_caller\_identity"></a>
+1. See [:material-code-braces: GetAccessKeyInfoRequestRequestTypeDef](./type_defs.md#getaccesskeyinforequestrequesttypedef) 
 
-### get_caller_identity
+### get\_caller\_identity
 
 Returns details about the IAM user or role whose credentials are used to call
 the operation.
 
-Type annotations for `boto3.client("sts").get_caller_identity` method.
+Type annotations and code completion for `#!python boto3.client("sts").get_caller_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity)
 
-Boto3 documentation:
-[STS.Client.get_caller_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_caller_identity)
+```python title="Method definition"
+def get_caller_identity(
+    self,
+) -> GetCallerIdentityResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef).
+1. See [:material-code-braces: GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef) 
 
-<a id="get\_federation\_token"></a>
+### get\_federation\_token
 
-### get_federation_token
+Returns a set of temporary security credentials (consisting of an access key ID,
+a secret access key, and a security token) for a federated user.
 
-Returns a set of temporary security credentials (consisting of an access key
-ID, a secret access key, and a security token) for a federated user.
+Type annotations and code completion for `#!python boto3.client("sts").get_federation_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token)
 
-Type annotations for `boto3.client("sts").get_federation_token` method.
+```python title="Method definition"
+def get_federation_token(
+    self,
+    *,
+    Name: str,
+    Policy: str = ...,
+    PolicyArns: Sequence[PolicyDescriptorTypeTypeDef] = ...,  # (1)
+    DurationSeconds: int = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> GetFederationTokenResponseTypeDef:  # (3)
+    ...
+```
 
-Boto3 documentation:
-[STS.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_federation_token)
+1. See [:material-code-braces: PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef) 
 
-Arguments mapping described in
-[GetFederationTokenRequestRequestTypeDef](./type_defs.md#getfederationtokenrequestrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: GetFederationTokenRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-- `Name`: `str` *(required)*
-- `Policy`: `str`
-- `PolicyArns`:
-  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
-- `DurationSeconds`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+parent.get_federation_token(**kwargs)
+```
 
-Returns
-[GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).
+1. See [:material-code-braces: GetFederationTokenRequestRequestTypeDef](./type_defs.md#getfederationtokenrequestrequesttypedef) 
 
-<a id="get\_session\_token"></a>
+### get\_session\_token
 
-### get_session_token
+Returns a set of temporary credentials for an Amazon Web Services account or IAM
+user.
 
-Returns a set of temporary credentials for an Amazon Web Services account or
-IAM user.
+Type annotations and code completion for `#!python boto3.client("sts").get_session_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token)
 
-Type annotations for `boto3.client("sts").get_session_token` method.
+```python title="Method definition"
+def get_session_token(
+    self,
+    *,
+    DurationSeconds: int = ...,
+    SerialNumber: str = ...,
+    TokenCode: str = ...,
+) -> GetSessionTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[STS.Client.get_session_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client.get_session_token)
+1. See [:material-code-braces: GetSessionTokenResponseTypeDef](./type_defs.md#getsessiontokenresponsetypedef) 
 
-Arguments mapping described in
-[GetSessionTokenRequestRequestTypeDef](./type_defs.md#getsessiontokenrequestrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: GetSessionTokenRequestRequestTypeDef = {  # (1)
+    "DurationSeconds": ...,
+}
 
-- `DurationSeconds`: `int`
-- `SerialNumber`: `str`
-- `TokenCode`: `str`
+parent.get_session_token(**kwargs)
+```
 
-Returns
-[GetSessionTokenResponseTypeDef](./type_defs.md#getsessiontokenresponsetypedef).
+1. See [:material-code-braces: GetSessionTokenRequestRequestTypeDef](./type_defs.md#getsessiontokenrequestrequesttypedef) 
+
+
+
+

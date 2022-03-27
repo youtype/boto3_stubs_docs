@@ -1,1010 +1,1259 @@
-<a id="typed-dictionaries-for-boto3-appconfig-module"></a>
-
-# Typed dictionaries for boto3 AppConfig module
+# Typed dictionaries
 
 > [Index](../README.md) > [AppConfig](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
-type annotations stubs module
-[mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
+!!! note ""
 
-- [Typed dictionaries for boto3 AppConfig module](#typed-dictionaries-for-boto3-appconfig-module)
-  - [ApplicationResponseMetadataTypeDef](#applicationresponsemetadatatypedef)
-  - [ApplicationTypeDef](#applicationtypedef)
-  - [ApplicationsTypeDef](#applicationstypedef)
-  - [ConfigurationProfileSummaryTypeDef](#configurationprofilesummarytypedef)
-  - [ConfigurationProfileTypeDef](#configurationprofiletypedef)
-  - [ConfigurationProfilesTypeDef](#configurationprofilestypedef)
-  - [ConfigurationTypeDef](#configurationtypedef)
-  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
-  - [CreateConfigurationProfileRequestRequestTypeDef](#createconfigurationprofilerequestrequesttypedef)
-  - [CreateDeploymentStrategyRequestRequestTypeDef](#createdeploymentstrategyrequestrequesttypedef)
-  - [CreateEnvironmentRequestRequestTypeDef](#createenvironmentrequestrequesttypedef)
-  - [CreateHostedConfigurationVersionRequestRequestTypeDef](#createhostedconfigurationversionrequestrequesttypedef)
-  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
-  - [DeleteConfigurationProfileRequestRequestTypeDef](#deleteconfigurationprofilerequestrequesttypedef)
-  - [DeleteDeploymentStrategyRequestRequestTypeDef](#deletedeploymentstrategyrequestrequesttypedef)
-  - [DeleteEnvironmentRequestRequestTypeDef](#deleteenvironmentrequestrequesttypedef)
-  - [DeleteHostedConfigurationVersionRequestRequestTypeDef](#deletehostedconfigurationversionrequestrequesttypedef)
-  - [DeploymentEventTypeDef](#deploymenteventtypedef)
-  - [DeploymentStrategiesTypeDef](#deploymentstrategiestypedef)
-  - [DeploymentStrategyResponseMetadataTypeDef](#deploymentstrategyresponsemetadatatypedef)
-  - [DeploymentStrategyTypeDef](#deploymentstrategytypedef)
-  - [DeploymentSummaryTypeDef](#deploymentsummarytypedef)
-  - [DeploymentTypeDef](#deploymenttypedef)
-  - [DeploymentsTypeDef](#deploymentstypedef)
-  - [EnvironmentResponseMetadataTypeDef](#environmentresponsemetadatatypedef)
-  - [EnvironmentTypeDef](#environmenttypedef)
-  - [EnvironmentsTypeDef](#environmentstypedef)
-  - [GetApplicationRequestRequestTypeDef](#getapplicationrequestrequesttypedef)
-  - [GetConfigurationProfileRequestRequestTypeDef](#getconfigurationprofilerequestrequesttypedef)
-  - [GetConfigurationRequestRequestTypeDef](#getconfigurationrequestrequesttypedef)
-  - [GetDeploymentRequestRequestTypeDef](#getdeploymentrequestrequesttypedef)
-  - [GetDeploymentStrategyRequestRequestTypeDef](#getdeploymentstrategyrequestrequesttypedef)
-  - [GetEnvironmentRequestRequestTypeDef](#getenvironmentrequestrequesttypedef)
-  - [GetHostedConfigurationVersionRequestRequestTypeDef](#gethostedconfigurationversionrequestrequesttypedef)
-  - [HostedConfigurationVersionSummaryTypeDef](#hostedconfigurationversionsummarytypedef)
-  - [HostedConfigurationVersionTypeDef](#hostedconfigurationversiontypedef)
-  - [HostedConfigurationVersionsTypeDef](#hostedconfigurationversionstypedef)
-  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
-  - [ListConfigurationProfilesRequestRequestTypeDef](#listconfigurationprofilesrequestrequesttypedef)
-  - [ListDeploymentStrategiesRequestRequestTypeDef](#listdeploymentstrategiesrequestrequesttypedef)
-  - [ListDeploymentsRequestRequestTypeDef](#listdeploymentsrequestrequesttypedef)
-  - [ListEnvironmentsRequestRequestTypeDef](#listenvironmentsrequestrequesttypedef)
-  - [ListHostedConfigurationVersionsRequestRequestTypeDef](#listhostedconfigurationversionsrequestrequesttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [MonitorTypeDef](#monitortypedef)
-  - [ResourceTagsTypeDef](#resourcetagstypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartDeploymentRequestRequestTypeDef](#startdeploymentrequestrequesttypedef)
-  - [StopDeploymentRequestRequestTypeDef](#stopdeploymentrequestrequesttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
-  - [UpdateConfigurationProfileRequestRequestTypeDef](#updateconfigurationprofilerequestrequesttypedef)
-  - [UpdateDeploymentStrategyRequestRequestTypeDef](#updatedeploymentstrategyrequestrequesttypedef)
-  - [UpdateEnvironmentRequestRequestTypeDef](#updateenvironmentrequestrequesttypedef)
-  - [ValidateConfigurationRequestRequestTypeDef](#validateconfigurationrequestrequesttypedef)
-  - [ValidatorTypeDef](#validatortypedef)
-
-<a id="applicationresponsemetadatatypedef"></a>
+    Auto-generated documentation for [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
+    type annotations stubs module [mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 ## ApplicationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ApplicationResponseMetadataTypeDef
+
+def get_value() -> ApplicationResponseMetadataTypeDef:
+    return {
+        "Id": ...,
+        "Name": ...,
+        "Description": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationResponseMetadataTypeDef(TypedDict):
+    Id: str,
+    Name: str,
+    Description: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="applicationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApplicationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ApplicationTypeDef
+
+def get_value() -> ApplicationTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="applicationstypedef"></a>
+```python title="Definition"
+class ApplicationTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## ApplicationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ApplicationsTypeDef
+
+def get_value() -> ApplicationsTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationsTypeDef(TypedDict):
+    Items: List[ApplicationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="configurationprofilesummarytypedef"></a>
-
+1. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigurationProfileSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ConfigurationProfileSummaryTypeDef
+
+def get_value() -> ConfigurationProfileSummaryTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationProfileSummaryTypeDef(TypedDict):
+    ApplicationId: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    LocationUri: NotRequired[str],
+    ValidatorTypes: NotRequired[List[ValidatorTypeType]],  # (1)
+    Type: NotRequired[str],
+```
 
-- `ApplicationId`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `LocationUri`: `str`
-- `ValidatorTypes`:
-  `List`\[[ValidatorTypeType](./literals.md#validatortypetype)\]
-- `Type`: `str`
-
-<a id="configurationprofiletypedef"></a>
-
+1. See [:material-code-brackets: ValidatorTypeType](./literals.md#validatortypetype) 
 ## ConfigurationProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ConfigurationProfileTypeDef
+
+def get_value() -> ConfigurationProfileTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Id": ...,
+        "Name": ...,
+        "Description": ...,
+        "LocationUri": ...,
+        "RetrievalRoleArn": ...,
+        "Validators": ...,
+        "Type": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigurationProfileTypeDef(TypedDict):
+    ApplicationId: str,
+    Id: str,
+    Name: str,
+    Description: str,
+    LocationUri: str,
+    RetrievalRoleArn: str,
+    Validators: List[ValidatorTypeDef],  # (1)
+    Type: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationId`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `LocationUri`: `str`
-- `RetrievalRoleArn`: `str`
-- `Validators`: `List`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
-- `Type`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="configurationprofilestypedef"></a>
-
+1. See [:material-code-braces: ValidatorTypeDef](./type_defs.md#validatortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigurationProfilesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ConfigurationProfilesTypeDef
+
+def get_value() -> ConfigurationProfilesTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigurationProfilesTypeDef(TypedDict):
+    Items: List[ConfigurationProfileSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[ConfigurationProfileSummaryTypeDef](./type_defs.md#configurationprofilesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="configurationtypedef"></a>
-
+1. See [:material-code-braces: ConfigurationProfileSummaryTypeDef](./type_defs.md#configurationprofilesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ConfigurationTypeDef
+
+def get_value() -> ConfigurationTypeDef:
+    return {
+        "Content": ...,
+        "ConfigurationVersion": ...,
+        "ContentType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigurationTypeDef(TypedDict):
+    Content: StreamingBody,
+    ConfigurationVersion: str,
+    ContentType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Content`: `StreamingBody`
-- `ConfigurationVersion`: `str`
-- `ContentType`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import CreateApplicationRequestRequestTypeDef
+
+def get_value() -> CreateApplicationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createconfigurationprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class CreateApplicationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateConfigurationProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import CreateConfigurationProfileRequestRequestTypeDef
+
+def get_value() -> CreateConfigurationProfileRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Name": ...,
+        "LocationUri": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConfigurationProfileRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    Name: str,
+    LocationUri: str,
+    Description: NotRequired[str],
+    RetrievalRoleArn: NotRequired[str],
+    Validators: NotRequired[Sequence[ValidatorTypeDef]],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+    Type: NotRequired[str],
+```
 
-- `ApplicationId`: `str`
-- `Name`: `str`
-- `LocationUri`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `RetrievalRoleArn`: `str`
-- `Validators`:
-  `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Type`: `str`
-
-<a id="createdeploymentstrategyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ValidatorTypeDef](./type_defs.md#validatortypedef) 
 ## CreateDeploymentStrategyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import CreateDeploymentStrategyRequestRequestTypeDef
+
+def get_value() -> CreateDeploymentStrategyRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "DeploymentDurationInMinutes": ...,
+        "GrowthFactor": ...,
+        "ReplicateTo": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentStrategyRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DeploymentDurationInMinutes: int,
+    GrowthFactor: float,
+    ReplicateTo: ReplicateToType,  # (1)
+    Description: NotRequired[str],
+    FinalBakeTimeInMinutes: NotRequired[int],
+    GrowthType: NotRequired[GrowthTypeType],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Name`: `str`
-- `DeploymentDurationInMinutes`: `int`
-- `GrowthFactor`: `float`
-- `ReplicateTo`: [ReplicateToType](./literals.md#replicatetotype)
-
-Optional fields:
-
-- `Description`: `str`
-- `FinalBakeTimeInMinutes`: `int`
-- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ReplicateToType](./literals.md#replicatetotype) 
+2. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
 ## CreateEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import CreateEnvironmentRequestRequestTypeDef
+
+def get_value() -> CreateEnvironmentRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    Name: str,
+    Description: NotRequired[str],
+    Monitors: NotRequired[Sequence[MonitorTypeDef]],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `ApplicationId`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Monitors`: `Sequence`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createhostedconfigurationversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MonitorTypeDef](./type_defs.md#monitortypedef) 
 ## CreateHostedConfigurationVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import CreateHostedConfigurationVersionRequestRequestTypeDef
+
+def get_value() -> CreateHostedConfigurationVersionRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ConfigurationProfileId": ...,
+        "Content": ...,
+        "ContentType": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `ContentType`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `LatestVersionNumber`: `int`
-
-<a id="deleteapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class CreateHostedConfigurationVersionRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    Content: Union[bytes, IO[bytes], StreamingBody],
+    ContentType: str,
+    Description: NotRequired[str],
+    LatestVersionNumber: NotRequired[int],
+```
 
 ## DeleteApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeleteApplicationRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-<a id="deleteconfigurationprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+```
 
 ## DeleteConfigurationProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeleteConfigurationProfileRequestRequestTypeDef
+
+def get_value() -> DeleteConfigurationProfileRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ConfigurationProfileId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-
-<a id="deletedeploymentstrategyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConfigurationProfileRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+```
 
 ## DeleteDeploymentStrategyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeleteDeploymentStrategyRequestRequestTypeDef
+
+def get_value() -> DeleteDeploymentStrategyRequestRequestTypeDef:
+    return {
+        "DeploymentStrategyId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeploymentStrategyId`: `str`
-
-<a id="deleteenvironmentrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDeploymentStrategyRequestRequestTypeDef(TypedDict):
+    DeploymentStrategyId: str,
+```
 
 ## DeleteEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeleteEnvironmentRequestRequestTypeDef
+
+def get_value() -> DeleteEnvironmentRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "EnvironmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `EnvironmentId`: `str`
-
-<a id="deletehostedconfigurationversionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteEnvironmentRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    EnvironmentId: str,
+```
 
 ## DeleteHostedConfigurationVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeleteHostedConfigurationVersionRequestRequestTypeDef
+
+def get_value() -> DeleteHostedConfigurationVersionRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ConfigurationProfileId": ...,
+        "VersionNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-- `VersionNumber`: `int`
-
-<a id="deploymenteventtypedef"></a>
+```python title="Definition"
+class DeleteHostedConfigurationVersionRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    VersionNumber: int,
+```
 
 ## DeploymentEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeploymentEventTypeDef
+
+def get_value() -> DeploymentEventTypeDef:
+    return {
+        "EventType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentEventTypeDef(TypedDict):
+    EventType: NotRequired[DeploymentEventTypeType],  # (1)
+    TriggeredBy: NotRequired[TriggeredByType],  # (2)
+    Description: NotRequired[str],
+    OccurredAt: NotRequired[datetime],
+```
 
-- `EventType`: [DeploymentEventTypeType](./literals.md#deploymenteventtypetype)
-- `TriggeredBy`: [TriggeredByType](./literals.md#triggeredbytype)
-- `Description`: `str`
-- `OccurredAt`: `datetime`
-
-<a id="deploymentstrategiestypedef"></a>
-
+1. See [:material-code-brackets: DeploymentEventTypeType](./literals.md#deploymenteventtypetype) 
+2. See [:material-code-brackets: TriggeredByType](./literals.md#triggeredbytype) 
 ## DeploymentStrategiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeploymentStrategiesTypeDef
+
+def get_value() -> DeploymentStrategiesTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeploymentStrategiesTypeDef(TypedDict):
+    Items: List[DeploymentStrategyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[DeploymentStrategyTypeDef](./type_defs.md#deploymentstrategytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deploymentstrategyresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: DeploymentStrategyTypeDef](./type_defs.md#deploymentstrategytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeploymentStrategyResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeploymentStrategyResponseMetadataTypeDef
+
+def get_value() -> DeploymentStrategyResponseMetadataTypeDef:
+    return {
+        "Id": ...,
+        "Name": ...,
+        "Description": ...,
+        "DeploymentDurationInMinutes": ...,
+        "GrowthType": ...,
+        "GrowthFactor": ...,
+        "FinalBakeTimeInMinutes": ...,
+        "ReplicateTo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeploymentStrategyResponseMetadataTypeDef(TypedDict):
+    Id: str,
+    Name: str,
+    Description: str,
+    DeploymentDurationInMinutes: int,
+    GrowthType: GrowthTypeType,  # (1)
+    GrowthFactor: float,
+    FinalBakeTimeInMinutes: int,
+    ReplicateTo: ReplicateToType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-- `GrowthFactor`: `float`
-- `FinalBakeTimeInMinutes`: `int`
-- `ReplicateTo`: [ReplicateToType](./literals.md#replicatetotype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deploymentstrategytypedef"></a>
-
+1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+2. See [:material-code-brackets: ReplicateToType](./literals.md#replicatetotype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeploymentStrategyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeploymentStrategyTypeDef
+
+def get_value() -> DeploymentStrategyTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentStrategyTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    DeploymentDurationInMinutes: NotRequired[int],
+    GrowthType: NotRequired[GrowthTypeType],  # (1)
+    GrowthFactor: NotRequired[float],
+    FinalBakeTimeInMinutes: NotRequired[int],
+    ReplicateTo: NotRequired[ReplicateToType],  # (2)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-- `GrowthFactor`: `float`
-- `FinalBakeTimeInMinutes`: `int`
-- `ReplicateTo`: [ReplicateToType](./literals.md#replicatetotype)
-
-<a id="deploymentsummarytypedef"></a>
-
+1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+2. See [:material-code-brackets: ReplicateToType](./literals.md#replicatetotype) 
 ## DeploymentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeploymentSummaryTypeDef
+
+def get_value() -> DeploymentSummaryTypeDef:
+    return {
+        "DeploymentNumber": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentSummaryTypeDef(TypedDict):
+    DeploymentNumber: NotRequired[int],
+    ConfigurationName: NotRequired[str],
+    ConfigurationVersion: NotRequired[str],
+    DeploymentDurationInMinutes: NotRequired[int],
+    GrowthType: NotRequired[GrowthTypeType],  # (1)
+    GrowthFactor: NotRequired[float],
+    FinalBakeTimeInMinutes: NotRequired[int],
+    State: NotRequired[DeploymentStateType],  # (2)
+    PercentageComplete: NotRequired[float],
+    StartedAt: NotRequired[datetime],
+    CompletedAt: NotRequired[datetime],
+```
 
-- `DeploymentNumber`: `int`
-- `ConfigurationName`: `str`
-- `ConfigurationVersion`: `str`
-- `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-- `GrowthFactor`: `float`
-- `FinalBakeTimeInMinutes`: `int`
-- `State`: [DeploymentStateType](./literals.md#deploymentstatetype)
-- `PercentageComplete`: `float`
-- `StartedAt`: `datetime`
-- `CompletedAt`: `datetime`
-
-<a id="deploymenttypedef"></a>
-
+1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+2. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
 ## DeploymentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeploymentTypeDef
+
+def get_value() -> DeploymentTypeDef:
+    return {
+        "ApplicationId": ...,
+        "EnvironmentId": ...,
+        "DeploymentStrategyId": ...,
+        "ConfigurationProfileId": ...,
+        "DeploymentNumber": ...,
+        "ConfigurationName": ...,
+        "ConfigurationLocationUri": ...,
+        "ConfigurationVersion": ...,
+        "Description": ...,
+        "DeploymentDurationInMinutes": ...,
+        "GrowthType": ...,
+        "GrowthFactor": ...,
+        "FinalBakeTimeInMinutes": ...,
+        "State": ...,
+        "EventLog": ...,
+        "PercentageComplete": ...,
+        "StartedAt": ...,
+        "CompletedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeploymentTypeDef(TypedDict):
+    ApplicationId: str,
+    EnvironmentId: str,
+    DeploymentStrategyId: str,
+    ConfigurationProfileId: str,
+    DeploymentNumber: int,
+    ConfigurationName: str,
+    ConfigurationLocationUri: str,
+    ConfigurationVersion: str,
+    Description: str,
+    DeploymentDurationInMinutes: int,
+    GrowthType: GrowthTypeType,  # (1)
+    GrowthFactor: float,
+    FinalBakeTimeInMinutes: int,
+    State: DeploymentStateType,  # (2)
+    EventLog: List[DeploymentEventTypeDef],  # (3)
+    PercentageComplete: float,
+    StartedAt: datetime,
+    CompletedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `ApplicationId`: `str`
-- `EnvironmentId`: `str`
-- `DeploymentStrategyId`: `str`
-- `ConfigurationProfileId`: `str`
-- `DeploymentNumber`: `int`
-- `ConfigurationName`: `str`
-- `ConfigurationLocationUri`: `str`
-- `ConfigurationVersion`: `str`
-- `Description`: `str`
-- `DeploymentDurationInMinutes`: `int`
-- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-- `GrowthFactor`: `float`
-- `FinalBakeTimeInMinutes`: `int`
-- `State`: [DeploymentStateType](./literals.md#deploymentstatetype)
-- `EventLog`:
-  `List`\[[DeploymentEventTypeDef](./type_defs.md#deploymenteventtypedef)\]
-- `PercentageComplete`: `float`
-- `StartedAt`: `datetime`
-- `CompletedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deploymentstypedef"></a>
-
+1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+2. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
+3. See [:material-code-braces: DeploymentEventTypeDef](./type_defs.md#deploymenteventtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeploymentsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import DeploymentsTypeDef
+
+def get_value() -> DeploymentsTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeploymentsTypeDef(TypedDict):
+    Items: List[DeploymentSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[DeploymentSummaryTypeDef](./type_defs.md#deploymentsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmentresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: DeploymentSummaryTypeDef](./type_defs.md#deploymentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import EnvironmentResponseMetadataTypeDef
+
+def get_value() -> EnvironmentResponseMetadataTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Id": ...,
+        "Name": ...,
+        "Description": ...,
+        "State": ...,
+        "Monitors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentResponseMetadataTypeDef(TypedDict):
+    ApplicationId: str,
+    Id: str,
+    Name: str,
+    Description: str,
+    State: EnvironmentStateType,  # (1)
+    Monitors: List[MonitorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ApplicationId`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `State`: [EnvironmentStateType](./literals.md#environmentstatetype)
-- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmenttypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentStateType](./literals.md#environmentstatetype) 
+2. See [:material-code-braces: MonitorTypeDef](./type_defs.md#monitortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import EnvironmentTypeDef
+
+def get_value() -> EnvironmentTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentTypeDef(TypedDict):
+    ApplicationId: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    State: NotRequired[EnvironmentStateType],  # (1)
+    Monitors: NotRequired[List[MonitorTypeDef]],  # (2)
+```
 
-- `ApplicationId`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `State`: [EnvironmentStateType](./literals.md#environmentstatetype)
-- `Monitors`: `List`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
-
-<a id="environmentstypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentStateType](./literals.md#environmentstatetype) 
+2. See [:material-code-braces: MonitorTypeDef](./type_defs.md#monitortypedef) 
 ## EnvironmentsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import EnvironmentsTypeDef
+
+def get_value() -> EnvironmentsTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentsTypeDef(TypedDict):
+    Items: List[EnvironmentTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[[EnvironmentTypeDef](./type_defs.md#environmenttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import GetApplicationRequestRequestTypeDef
+
+def get_value() -> GetApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-<a id="getconfigurationprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class GetApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+```
 
 ## GetConfigurationProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import GetConfigurationProfileRequestRequestTypeDef
+
+def get_value() -> GetConfigurationProfileRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ConfigurationProfileId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-
-<a id="getconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class GetConfigurationProfileRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+```
 
 ## GetConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import GetConfigurationRequestRequestTypeDef
+
+def get_value() -> GetConfigurationRequestRequestTypeDef:
+    return {
+        "Application": ...,
+        "Environment": ...,
+        "Configuration": ...,
+        "ClientId": ...,
+    }
 ```
 
-Required fields:
-
-- `Application`: `str`
-- `Environment`: `str`
-- `Configuration`: `str`
-- `ClientId`: `str`
-
-Optional fields:
-
-- `ClientConfigurationVersion`: `str`
-
-<a id="getdeploymentrequestrequesttypedef"></a>
+```python title="Definition"
+class GetConfigurationRequestRequestTypeDef(TypedDict):
+    Application: str,
+    Environment: str,
+    Configuration: str,
+    ClientId: str,
+    ClientConfigurationVersion: NotRequired[str],
+```
 
 ## GetDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import GetDeploymentRequestRequestTypeDef
+
+def get_value() -> GetDeploymentRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "EnvironmentId": ...,
+        "DeploymentNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `EnvironmentId`: `str`
-- `DeploymentNumber`: `int`
-
-<a id="getdeploymentstrategyrequestrequesttypedef"></a>
+```python title="Definition"
+class GetDeploymentRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    EnvironmentId: str,
+    DeploymentNumber: int,
+```
 
 ## GetDeploymentStrategyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import GetDeploymentStrategyRequestRequestTypeDef
+
+def get_value() -> GetDeploymentStrategyRequestRequestTypeDef:
+    return {
+        "DeploymentStrategyId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeploymentStrategyId`: `str`
-
-<a id="getenvironmentrequestrequesttypedef"></a>
+```python title="Definition"
+class GetDeploymentStrategyRequestRequestTypeDef(TypedDict):
+    DeploymentStrategyId: str,
+```
 
 ## GetEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import GetEnvironmentRequestRequestTypeDef
+
+def get_value() -> GetEnvironmentRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "EnvironmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `EnvironmentId`: `str`
-
-<a id="gethostedconfigurationversionrequestrequesttypedef"></a>
+```python title="Definition"
+class GetEnvironmentRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    EnvironmentId: str,
+```
 
 ## GetHostedConfigurationVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import GetHostedConfigurationVersionRequestRequestTypeDef
+
+def get_value() -> GetHostedConfigurationVersionRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ConfigurationProfileId": ...,
+        "VersionNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-- `VersionNumber`: `int`
-
-<a id="hostedconfigurationversionsummarytypedef"></a>
+```python title="Definition"
+class GetHostedConfigurationVersionRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    VersionNumber: int,
+```
 
 ## HostedConfigurationVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionSummaryTypeDef
+
+def get_value() -> HostedConfigurationVersionSummaryTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-- `VersionNumber`: `int`
-- `Description`: `str`
-- `ContentType`: `str`
-
-<a id="hostedconfigurationversiontypedef"></a>
+```python title="Definition"
+class HostedConfigurationVersionSummaryTypeDef(TypedDict):
+    ApplicationId: NotRequired[str],
+    ConfigurationProfileId: NotRequired[str],
+    VersionNumber: NotRequired[int],
+    Description: NotRequired[str],
+    ContentType: NotRequired[str],
+```
 
 ## HostedConfigurationVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionTypeDef
+
+def get_value() -> HostedConfigurationVersionTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ConfigurationProfileId": ...,
+        "VersionNumber": ...,
+        "Description": ...,
+        "Content": ...,
+        "ContentType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HostedConfigurationVersionTypeDef(TypedDict):
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    VersionNumber: int,
+    Description: str,
+    Content: StreamingBody,
+    ContentType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-- `VersionNumber`: `int`
-- `Description`: `str`
-- `Content`: `StreamingBody`
-- `ContentType`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hostedconfigurationversionstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HostedConfigurationVersionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import HostedConfigurationVersionsTypeDef
+
+def get_value() -> HostedConfigurationVersionsTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HostedConfigurationVersionsTypeDef(TypedDict):
+    Items: List[HostedConfigurationVersionSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[HostedConfigurationVersionSummaryTypeDef](./type_defs.md#hostedconfigurationversionsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listapplicationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HostedConfigurationVersionSummaryTypeDef](./type_defs.md#hostedconfigurationversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListApplicationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ListApplicationsRequestRequestTypeDef
+
+def get_value() -> ListApplicationsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listconfigurationprofilesrequestrequesttypedef"></a>
+```python title="Definition"
+class ListApplicationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListConfigurationProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ListConfigurationProfilesRequestRequestTypeDef
+
+def get_value() -> ListConfigurationProfilesRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Type`: `str`
-
-<a id="listdeploymentstrategiesrequestrequesttypedef"></a>
+```python title="Definition"
+class ListConfigurationProfilesRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Type: NotRequired[str],
+```
 
 ## ListDeploymentStrategiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ListDeploymentStrategiesRequestRequestTypeDef
+
+def get_value() -> ListDeploymentStrategiesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdeploymentsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListDeploymentStrategiesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDeploymentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ListDeploymentsRequestRequestTypeDef
+
+def get_value() -> ListDeploymentsRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "EnvironmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `EnvironmentId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listenvironmentsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListDeploymentsRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    EnvironmentId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListEnvironmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ListEnvironmentsRequestRequestTypeDef
+
+def get_value() -> ListEnvironmentsRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listhostedconfigurationversionsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListEnvironmentsRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListHostedConfigurationVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ListHostedConfigurationVersionsRequestRequestTypeDef
+
+def get_value() -> ListHostedConfigurationVersionsRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ConfigurationProfileId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class ListHostedConfigurationVersionsRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="monitortypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## MonitorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import MonitorTypeDef
+
+def get_value() -> MonitorTypeDef:
+    return {
+        "AlarmArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AlarmArn`: `str`
-
-Optional fields:
-
-- `AlarmRoleArn`: `str`
-
-<a id="resourcetagstypedef"></a>
+```python title="Definition"
+class MonitorTypeDef(TypedDict):
+    AlarmArn: str,
+    AlarmRoleArn: NotRequired[str],
+```
 
 ## ResourceTagsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ResourceTagsTypeDef
+
+def get_value() -> ResourceTagsTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceTagsTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startdeploymentrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import StartDeploymentRequestRequestTypeDef
+
+def get_value() -> StartDeploymentRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "EnvironmentId": ...,
+        "DeploymentStrategyId": ...,
+        "ConfigurationProfileId": ...,
+        "ConfigurationVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `EnvironmentId`: `str`
-- `DeploymentStrategyId`: `str`
-- `ConfigurationProfileId`: `str`
-- `ConfigurationVersion`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="stopdeploymentrequestrequesttypedef"></a>
+```python title="Definition"
+class StartDeploymentRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    EnvironmentId: str,
+    DeploymentStrategyId: str,
+    ConfigurationProfileId: str,
+    ConfigurationVersion: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## StopDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import StopDeploymentRequestRequestTypeDef
+
+def get_value() -> StopDeploymentRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "EnvironmentId": ...,
+        "DeploymentNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `EnvironmentId`: `str`
-- `DeploymentNumber`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StopDeploymentRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    EnvironmentId: str,
+    DeploymentNumber: int,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import UpdateApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="updateconfigurationprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateConfigurationProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import UpdateConfigurationProfileRequestRequestTypeDef
+
+def get_value() -> UpdateConfigurationProfileRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ConfigurationProfileId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConfigurationProfileRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    RetrievalRoleArn: NotRequired[str],
+    Validators: NotRequired[Sequence[ValidatorTypeDef]],  # (1)
+```
 
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `RetrievalRoleArn`: `str`
-- `Validators`:
-  `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
-
-<a id="updatedeploymentstrategyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ValidatorTypeDef](./type_defs.md#validatortypedef) 
 ## UpdateDeploymentStrategyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import UpdateDeploymentStrategyRequestRequestTypeDef
+
+def get_value() -> UpdateDeploymentStrategyRequestRequestTypeDef:
+    return {
+        "DeploymentStrategyId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDeploymentStrategyRequestRequestTypeDef(TypedDict):
+    DeploymentStrategyId: str,
+    Description: NotRequired[str],
+    DeploymentDurationInMinutes: NotRequired[int],
+    FinalBakeTimeInMinutes: NotRequired[int],
+    GrowthFactor: NotRequired[float],
+    GrowthType: NotRequired[GrowthTypeType],  # (1)
+```
 
-- `DeploymentStrategyId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `DeploymentDurationInMinutes`: `int`
-- `FinalBakeTimeInMinutes`: `int`
-- `GrowthFactor`: `float`
-- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-
-<a id="updateenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
 ## UpdateEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import UpdateEnvironmentRequestRequestTypeDef
+
+def get_value() -> UpdateEnvironmentRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "EnvironmentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    EnvironmentId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Monitors: NotRequired[Sequence[MonitorTypeDef]],  # (1)
+```
 
-- `ApplicationId`: `str`
-- `EnvironmentId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `Monitors`: `Sequence`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
-
-<a id="validateconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MonitorTypeDef](./type_defs.md#monitortypedef) 
 ## ValidateConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ValidateConfigurationRequestRequestTypeDef
+
+def get_value() -> ValidateConfigurationRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ConfigurationProfileId": ...,
+        "ConfigurationVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `ConfigurationProfileId`: `str`
-- `ConfigurationVersion`: `str`
-
-<a id="validatortypedef"></a>
+```python title="Definition"
+class ValidateConfigurationRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    ConfigurationVersion: str,
+```
 
 ## ValidatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfig.type_defs import ValidatorTypeDef
+
+def get_value() -> ValidatorTypeDef:
+    return {
+        "Type": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValidatorTypeDef(TypedDict):
+    Type: ValidatorTypeType,  # (1)
+    Content: str,
+```
 
-- `Type`: [ValidatorTypeType](./literals.md#validatortypetype)
-- `Content`: `str`
+1. See [:material-code-brackets: ValidatorTypeType](./literals.md#validatortypetype) 

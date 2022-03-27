@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-iot-module"></a>
-
-# Examples for boto3 IoT module
+# Examples
 
 > [Index](../README.md) > [IoT](./README.md) > Examples
 
-- [Examples for boto3 IoT module](#examples-for-boto3-iot-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
+    type annotations stubs module [mypy-boto3-iot](https://pypi.org/project/mypy-boto3-iot/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[iot]` package installed.
 
-Write your `IoT` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `IoT` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type IoTClient
-# and provides type checking and code completion
-client = session.client("iot")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.accept_certificate_transfer()
 
-# paginator has type GetBehaviorModelTrainingSummariesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_behavior_model_training_summaries")
-for item in paginator.paginate(...):
-    # item has type GetBehaviorModelTrainingSummariesResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("iot")  # (1)
+    result = client.associate_targets_with_job()  # (2)
+    ```
+
+    1. client: [IoTClient](./client.md)
+    2. result: [:material-code-braces: AssociateTargetsWithJobResponseTypeDef](./type_defs.md#associatetargetswithjobresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("iot")  # (1)
+
+    paginator = client.get_paginator("get_behavior_model_training_summaries")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [IoTClient](./client.md)
+    2. paginator: [GetBehaviorModelTrainingSummariesPaginator](./paginators.md#getbehaviormodeltrainingsummariespaginator)
+    3. item: [:material-code-braces: GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[iot]` or a standalone `mypy_boto3_iot` package, you have
-to explicitly specify `client: IoTClient` type annotation.
+With `boto3-stubs-lite[iot]`
+or a standalone `mypy_boto3_iot` package, you have to explicitly specify `client: IoTClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_iot.client import IoTClient
-from mypy_boto3_iot.paginator import GetBehaviorModelTrainingSummariesPaginator
-
-from mypy_boto3_iot.literals import PaginatorName
-
-from mypy_boto3_iot.type_defs import None
-from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: IoTClient = session.client("iot")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.accept_certificate_transfer()
+    from mypy_boto3_iot.client import IoTClient
+    from mypy_boto3_iot.type_defs import AssociateTargetsWithJobResponseTypeDef
+    from mypy_boto3_iot.type_defs import AssociateTargetsWithJobRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_behavior_model_training_summaries"
-paginator: GetBehaviorModelTrainingSummariesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetBehaviorModelTrainingSummariesResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: IoTClient = session.client("iot")
+
+    kwargs: AssociateTargetsWithJobRequestRequestTypeDef = {...}
+    result: AssociateTargetsWithJobResponseTypeDef = client.associate_targets_with_job(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iot.client import IoTClient
+    from mypy_boto3_iot.paginator import GetBehaviorModelTrainingSummariesPaginator
+    from mypy_boto3_iot.type_defs import GetBehaviorModelTrainingSummariesResponseTypeDef
+
+
+    session = Session()
+    client: IoTClient = session.client("iot")
+
+    paginator: GetBehaviorModelTrainingSummariesPaginator = client.get_paginator("get_behavior_model_training_summaries")
+    for item in paginator.paginate(...):
+        item: GetBehaviorModelTrainingSummariesResponseTypeDef
+        print(item)
+    ```
+
+
+
+

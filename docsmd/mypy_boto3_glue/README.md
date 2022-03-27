@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-glue-module"></a>
-
-# Type annotations for boto3 Glue module
+#  Glue module
 
 > [Index](../README.md) > Glue
 
-Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
-type annotations stubs module
-[mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
+!!! note ""
 
-- [Type annotations for boto3 Glue module](#type-annotations-for-boto3-glue-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GlueClient](#glueclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+    type annotations stubs module [mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Glue`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[glue]'
 python -m pip install mypy-boto3-glue
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,259 +42,37 @@ python -m pip install mypy-boto3-glue
 python -m pip uninstall -y mypy-boto3-glue
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="glueclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GlueClient
 
-Type annotations for `boto3.client("glue")` as [GlueClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("glue")` as [GlueClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_glue.client import GlueClient
+
+def get_client() -> GlueClient:
+    return Session().cleint("glue")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_create_partition](./client.md#batch_create_partition)
-- [batch_delete_connection](./client.md#batch_delete_connection)
-- [batch_delete_partition](./client.md#batch_delete_partition)
-- [batch_delete_table](./client.md#batch_delete_table)
-- [batch_delete_table_version](./client.md#batch_delete_table_version)
-- [batch_get_blueprints](./client.md#batch_get_blueprints)
-- [batch_get_crawlers](./client.md#batch_get_crawlers)
-- [batch_get_dev_endpoints](./client.md#batch_get_dev_endpoints)
-- [batch_get_jobs](./client.md#batch_get_jobs)
-- [batch_get_partition](./client.md#batch_get_partition)
-- [batch_get_triggers](./client.md#batch_get_triggers)
-- [batch_get_workflows](./client.md#batch_get_workflows)
-- [batch_stop_job_run](./client.md#batch_stop_job_run)
-- [batch_update_partition](./client.md#batch_update_partition)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_ml_task_run](./client.md#cancel_ml_task_run)
-- [cancel_statement](./client.md#cancel_statement)
-- [check_schema_version_validity](./client.md#check_schema_version_validity)
-- [create_blueprint](./client.md#create_blueprint)
-- [create_classifier](./client.md#create_classifier)
-- [create_connection](./client.md#create_connection)
-- [create_crawler](./client.md#create_crawler)
-- [create_database](./client.md#create_database)
-- [create_dev_endpoint](./client.md#create_dev_endpoint)
-- [create_job](./client.md#create_job)
-- [create_ml_transform](./client.md#create_ml_transform)
-- [create_partition](./client.md#create_partition)
-- [create_partition_index](./client.md#create_partition_index)
-- [create_registry](./client.md#create_registry)
-- [create_schema](./client.md#create_schema)
-- [create_script](./client.md#create_script)
-- [create_security_configuration](./client.md#create_security_configuration)
-- [create_session](./client.md#create_session)
-- [create_table](./client.md#create_table)
-- [create_trigger](./client.md#create_trigger)
-- [create_user_defined_function](./client.md#create_user_defined_function)
-- [create_workflow](./client.md#create_workflow)
-- [delete_blueprint](./client.md#delete_blueprint)
-- [delete_classifier](./client.md#delete_classifier)
-- [delete_column_statistics_for_partition](./client.md#delete_column_statistics_for_partition)
-- [delete_column_statistics_for_table](./client.md#delete_column_statistics_for_table)
-- [delete_connection](./client.md#delete_connection)
-- [delete_crawler](./client.md#delete_crawler)
-- [delete_database](./client.md#delete_database)
-- [delete_dev_endpoint](./client.md#delete_dev_endpoint)
-- [delete_job](./client.md#delete_job)
-- [delete_ml_transform](./client.md#delete_ml_transform)
-- [delete_partition](./client.md#delete_partition)
-- [delete_partition_index](./client.md#delete_partition_index)
-- [delete_registry](./client.md#delete_registry)
-- [delete_resource_policy](./client.md#delete_resource_policy)
-- [delete_schema](./client.md#delete_schema)
-- [delete_schema_versions](./client.md#delete_schema_versions)
-- [delete_security_configuration](./client.md#delete_security_configuration)
-- [delete_session](./client.md#delete_session)
-- [delete_table](./client.md#delete_table)
-- [delete_table_version](./client.md#delete_table_version)
-- [delete_trigger](./client.md#delete_trigger)
-- [delete_user_defined_function](./client.md#delete_user_defined_function)
-- [delete_workflow](./client.md#delete_workflow)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_blueprint](./client.md#get_blueprint)
-- [get_blueprint_run](./client.md#get_blueprint_run)
-- [get_blueprint_runs](./client.md#get_blueprint_runs)
-- [get_catalog_import_status](./client.md#get_catalog_import_status)
-- [get_classifier](./client.md#get_classifier)
-- [get_classifiers](./client.md#get_classifiers)
-- [get_column_statistics_for_partition](./client.md#get_column_statistics_for_partition)
-- [get_column_statistics_for_table](./client.md#get_column_statistics_for_table)
-- [get_connection](./client.md#get_connection)
-- [get_connections](./client.md#get_connections)
-- [get_crawler](./client.md#get_crawler)
-- [get_crawler_metrics](./client.md#get_crawler_metrics)
-- [get_crawlers](./client.md#get_crawlers)
-- [get_data_catalog_encryption_settings](./client.md#get_data_catalog_encryption_settings)
-- [get_database](./client.md#get_database)
-- [get_databases](./client.md#get_databases)
-- [get_dataflow_graph](./client.md#get_dataflow_graph)
-- [get_dev_endpoint](./client.md#get_dev_endpoint)
-- [get_dev_endpoints](./client.md#get_dev_endpoints)
-- [get_job](./client.md#get_job)
-- [get_job_bookmark](./client.md#get_job_bookmark)
-- [get_job_run](./client.md#get_job_run)
-- [get_job_runs](./client.md#get_job_runs)
-- [get_jobs](./client.md#get_jobs)
-- [get_mapping](./client.md#get_mapping)
-- [get_ml_task_run](./client.md#get_ml_task_run)
-- [get_ml_task_runs](./client.md#get_ml_task_runs)
-- [get_ml_transform](./client.md#get_ml_transform)
-- [get_ml_transforms](./client.md#get_ml_transforms)
-- [get_paginator](./client.md#get_paginator)
-- [get_partition](./client.md#get_partition)
-- [get_partition_indexes](./client.md#get_partition_indexes)
-- [get_partitions](./client.md#get_partitions)
-- [get_plan](./client.md#get_plan)
-- [get_registry](./client.md#get_registry)
-- [get_resource_policies](./client.md#get_resource_policies)
-- [get_resource_policy](./client.md#get_resource_policy)
-- [get_schema](./client.md#get_schema)
-- [get_schema_by_definition](./client.md#get_schema_by_definition)
-- [get_schema_version](./client.md#get_schema_version)
-- [get_schema_versions_diff](./client.md#get_schema_versions_diff)
-- [get_security_configuration](./client.md#get_security_configuration)
-- [get_security_configurations](./client.md#get_security_configurations)
-- [get_session](./client.md#get_session)
-- [get_statement](./client.md#get_statement)
-- [get_table](./client.md#get_table)
-- [get_table_version](./client.md#get_table_version)
-- [get_table_versions](./client.md#get_table_versions)
-- [get_tables](./client.md#get_tables)
-- [get_tags](./client.md#get_tags)
-- [get_trigger](./client.md#get_trigger)
-- [get_triggers](./client.md#get_triggers)
-- [get_unfiltered_partition_metadata](./client.md#get_unfiltered_partition_metadata)
-- [get_unfiltered_partitions_metadata](./client.md#get_unfiltered_partitions_metadata)
-- [get_unfiltered_table_metadata](./client.md#get_unfiltered_table_metadata)
-- [get_user_defined_function](./client.md#get_user_defined_function)
-- [get_user_defined_functions](./client.md#get_user_defined_functions)
-- [get_workflow](./client.md#get_workflow)
-- [get_workflow_run](./client.md#get_workflow_run)
-- [get_workflow_run_properties](./client.md#get_workflow_run_properties)
-- [get_workflow_runs](./client.md#get_workflow_runs)
-- [import_catalog_to_glue](./client.md#import_catalog_to_glue)
-- [list_blueprints](./client.md#list_blueprints)
-- [list_crawlers](./client.md#list_crawlers)
-- [list_dev_endpoints](./client.md#list_dev_endpoints)
-- [list_jobs](./client.md#list_jobs)
-- [list_ml_transforms](./client.md#list_ml_transforms)
-- [list_registries](./client.md#list_registries)
-- [list_schema_versions](./client.md#list_schema_versions)
-- [list_schemas](./client.md#list_schemas)
-- [list_sessions](./client.md#list_sessions)
-- [list_statements](./client.md#list_statements)
-- [list_triggers](./client.md#list_triggers)
-- [list_workflows](./client.md#list_workflows)
-- [put_data_catalog_encryption_settings](./client.md#put_data_catalog_encryption_settings)
-- [put_resource_policy](./client.md#put_resource_policy)
-- [put_schema_version_metadata](./client.md#put_schema_version_metadata)
-- [put_workflow_run_properties](./client.md#put_workflow_run_properties)
-- [query_schema_version_metadata](./client.md#query_schema_version_metadata)
-- [register_schema_version](./client.md#register_schema_version)
-- [remove_schema_version_metadata](./client.md#remove_schema_version_metadata)
-- [reset_job_bookmark](./client.md#reset_job_bookmark)
-- [resume_workflow_run](./client.md#resume_workflow_run)
-- [run_statement](./client.md#run_statement)
-- [search_tables](./client.md#search_tables)
-- [start_blueprint_run](./client.md#start_blueprint_run)
-- [start_crawler](./client.md#start_crawler)
-- [start_crawler_schedule](./client.md#start_crawler_schedule)
-- [start_export_labels_task_run](./client.md#start_export_labels_task_run)
-- [start_import_labels_task_run](./client.md#start_import_labels_task_run)
-- [start_job_run](./client.md#start_job_run)
-- [start_ml_evaluation_task_run](./client.md#start_ml_evaluation_task_run)
-- [start_ml_labeling_set_generation_task_run](./client.md#start_ml_labeling_set_generation_task_run)
-- [start_trigger](./client.md#start_trigger)
-- [start_workflow_run](./client.md#start_workflow_run)
-- [stop_crawler](./client.md#stop_crawler)
-- [stop_crawler_schedule](./client.md#stop_crawler_schedule)
-- [stop_session](./client.md#stop_session)
-- [stop_trigger](./client.md#stop_trigger)
-- [stop_workflow_run](./client.md#stop_workflow_run)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_blueprint](./client.md#update_blueprint)
-- [update_classifier](./client.md#update_classifier)
-- [update_column_statistics_for_partition](./client.md#update_column_statistics_for_partition)
-- [update_column_statistics_for_table](./client.md#update_column_statistics_for_table)
-- [update_connection](./client.md#update_connection)
-- [update_crawler](./client.md#update_crawler)
-- [update_crawler_schedule](./client.md#update_crawler_schedule)
-- [update_database](./client.md#update_database)
-- [update_dev_endpoint](./client.md#update_dev_endpoint)
-- [update_job](./client.md#update_job)
-- [update_ml_transform](./client.md#update_ml_transform)
-- [update_partition](./client.md#update_partition)
-- [update_registry](./client.md#update_registry)
-- [update_schema](./client.md#update_schema)
-- [update_table](./client.md#update_table)
-- [update_trigger](./client.md#update_trigger)
-- [update_user_defined_function](./client.md#update_user_defined_function)
-- [update_workflow](./client.md#update_workflow)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-GlueClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- AlreadyExistsException
-- ClientError
-- ConcurrentModificationException
-- ConcurrentRunsExceededException
-- ConditionCheckFailureException
-- ConflictException
-- CrawlerNotRunningException
-- CrawlerRunningException
-- CrawlerStoppingException
-- EntityNotFoundException
-- GlueEncryptionException
-- IdempotentParameterMismatchException
-- IllegalBlueprintStateException
-- IllegalSessionStateException
-- IllegalWorkflowStateException
-- InternalServiceException
-- InvalidInputException
-- InvalidStateException
-- MLTransformNotReadyException
-- NoScheduleException
-- OperationTimeoutException
-- PermissionTypeMismatchException
-- ResourceNotReadyException
-- ResourceNumberLimitExceededException
-- SchedulerNotRunningException
-- SchedulerRunningException
-- SchedulerTransitioningException
-- ValidationException
-- VersionMismatchException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("glue").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("glue").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_glue.paginator import GetClassifiersPaginator, ...
+from mypy_boto3_glue.paginator import GetClassifiersPaginator
+
+def get_get_classifiers_paginator() -> GetClassifiersPaginator:
+    return Session().client("glue").get_paginator("get_classifiers"))
 ```
 
 - [GetClassifiersPaginator](./paginators.md#getclassifierspaginator)
@@ -339,16 +95,23 @@ from mypy_boto3_glue.paginator import GetClassifiersPaginator, ...
 - [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
 - [ListSchemasPaginator](./paginators.md#listschemaspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_glue.literals import BackfillErrorCodeType
 
-```python
-from mypy_boto3_glue.literals import BackfillErrorCodeType, ...
+def get_value() -> BackfillErrorCodeType:
+    return "ENCRYPTED_PARTITION_ERROR"
 ```
 
 - [BackfillErrorCodeType](./literals.md#backfillerrorcodetype)
@@ -428,18 +191,22 @@ from mypy_boto3_glue.literals import BackfillErrorCodeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_glue.type_defs import ActionTypeDef
 
-```python
-from mypy_boto3_glue.type_defs import ActionTypeDef, ...
+def get_value() -> ActionTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
 - [ActionTypeDef](./type_defs.md#actiontypedef)
@@ -615,6 +382,7 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [GetCatalogImportStatusResponseTypeDef](./type_defs.md#getcatalogimportstatusresponsetypedef)
 - [GetClassifierRequestRequestTypeDef](./type_defs.md#getclassifierrequestrequesttypedef)
 - [GetClassifierResponseTypeDef](./type_defs.md#getclassifierresponsetypedef)
+- [GetClassifiersRequestGetClassifiersPaginateTypeDef](./type_defs.md#getclassifiersrequestgetclassifierspaginatetypedef)
 - [GetClassifiersRequestRequestTypeDef](./type_defs.md#getclassifiersrequestrequesttypedef)
 - [GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef)
 - [GetColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#getcolumnstatisticsforpartitionrequestrequesttypedef)
@@ -624,24 +392,29 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [GetConnectionRequestRequestTypeDef](./type_defs.md#getconnectionrequestrequesttypedef)
 - [GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef)
 - [GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef)
+- [GetConnectionsRequestGetConnectionsPaginateTypeDef](./type_defs.md#getconnectionsrequestgetconnectionspaginatetypedef)
 - [GetConnectionsRequestRequestTypeDef](./type_defs.md#getconnectionsrequestrequesttypedef)
 - [GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)
+- [GetCrawlerMetricsRequestGetCrawlerMetricsPaginateTypeDef](./type_defs.md#getcrawlermetricsrequestgetcrawlermetricspaginatetypedef)
 - [GetCrawlerMetricsRequestRequestTypeDef](./type_defs.md#getcrawlermetricsrequestrequesttypedef)
 - [GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef)
 - [GetCrawlerRequestRequestTypeDef](./type_defs.md#getcrawlerrequestrequesttypedef)
 - [GetCrawlerResponseTypeDef](./type_defs.md#getcrawlerresponsetypedef)
+- [GetCrawlersRequestGetCrawlersPaginateTypeDef](./type_defs.md#getcrawlersrequestgetcrawlerspaginatetypedef)
 - [GetCrawlersRequestRequestTypeDef](./type_defs.md#getcrawlersrequestrequesttypedef)
 - [GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef)
 - [GetDataCatalogEncryptionSettingsRequestRequestTypeDef](./type_defs.md#getdatacatalogencryptionsettingsrequestrequesttypedef)
 - [GetDataCatalogEncryptionSettingsResponseTypeDef](./type_defs.md#getdatacatalogencryptionsettingsresponsetypedef)
 - [GetDatabaseRequestRequestTypeDef](./type_defs.md#getdatabaserequestrequesttypedef)
 - [GetDatabaseResponseTypeDef](./type_defs.md#getdatabaseresponsetypedef)
+- [GetDatabasesRequestGetDatabasesPaginateTypeDef](./type_defs.md#getdatabasesrequestgetdatabasespaginatetypedef)
 - [GetDatabasesRequestRequestTypeDef](./type_defs.md#getdatabasesrequestrequesttypedef)
 - [GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef)
 - [GetDataflowGraphRequestRequestTypeDef](./type_defs.md#getdataflowgraphrequestrequesttypedef)
 - [GetDataflowGraphResponseTypeDef](./type_defs.md#getdataflowgraphresponsetypedef)
 - [GetDevEndpointRequestRequestTypeDef](./type_defs.md#getdevendpointrequestrequesttypedef)
 - [GetDevEndpointResponseTypeDef](./type_defs.md#getdevendpointresponsetypedef)
+- [GetDevEndpointsRequestGetDevEndpointsPaginateTypeDef](./type_defs.md#getdevendpointsrequestgetdevendpointspaginatetypedef)
 - [GetDevEndpointsRequestRequestTypeDef](./type_defs.md#getdevendpointsrequestrequesttypedef)
 - [GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef)
 - [GetJobBookmarkRequestRequestTypeDef](./type_defs.md#getjobbookmarkrequestrequesttypedef)
@@ -650,8 +423,10 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef)
 - [GetJobRunRequestRequestTypeDef](./type_defs.md#getjobrunrequestrequesttypedef)
 - [GetJobRunResponseTypeDef](./type_defs.md#getjobrunresponsetypedef)
+- [GetJobRunsRequestGetJobRunsPaginateTypeDef](./type_defs.md#getjobrunsrequestgetjobrunspaginatetypedef)
 - [GetJobRunsRequestRequestTypeDef](./type_defs.md#getjobrunsrequestrequesttypedef)
 - [GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef)
+- [GetJobsRequestGetJobsPaginateTypeDef](./type_defs.md#getjobsrequestgetjobspaginatetypedef)
 - [GetJobsRequestRequestTypeDef](./type_defs.md#getjobsrequestrequesttypedef)
 - [GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef)
 - [GetMLTaskRunRequestRequestTypeDef](./type_defs.md#getmltaskrunrequestrequesttypedef)
@@ -664,16 +439,19 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [GetMLTransformsResponseTypeDef](./type_defs.md#getmltransformsresponsetypedef)
 - [GetMappingRequestRequestTypeDef](./type_defs.md#getmappingrequestrequesttypedef)
 - [GetMappingResponseTypeDef](./type_defs.md#getmappingresponsetypedef)
+- [GetPartitionIndexesRequestGetPartitionIndexesPaginateTypeDef](./type_defs.md#getpartitionindexesrequestgetpartitionindexespaginatetypedef)
 - [GetPartitionIndexesRequestRequestTypeDef](./type_defs.md#getpartitionindexesrequestrequesttypedef)
 - [GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef)
 - [GetPartitionRequestRequestTypeDef](./type_defs.md#getpartitionrequestrequesttypedef)
 - [GetPartitionResponseTypeDef](./type_defs.md#getpartitionresponsetypedef)
+- [GetPartitionsRequestGetPartitionsPaginateTypeDef](./type_defs.md#getpartitionsrequestgetpartitionspaginatetypedef)
 - [GetPartitionsRequestRequestTypeDef](./type_defs.md#getpartitionsrequestrequesttypedef)
 - [GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef)
 - [GetPlanRequestRequestTypeDef](./type_defs.md#getplanrequestrequesttypedef)
 - [GetPlanResponseTypeDef](./type_defs.md#getplanresponsetypedef)
 - [GetRegistryInputRequestTypeDef](./type_defs.md#getregistryinputrequesttypedef)
 - [GetRegistryResponseTypeDef](./type_defs.md#getregistryresponsetypedef)
+- [GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef](./type_defs.md#getresourcepoliciesrequestgetresourcepoliciespaginatetypedef)
 - [GetResourcePoliciesRequestRequestTypeDef](./type_defs.md#getresourcepoliciesrequestrequesttypedef)
 - [GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef)
 - [GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef)
@@ -688,6 +466,7 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [GetSchemaVersionsDiffResponseTypeDef](./type_defs.md#getschemaversionsdiffresponsetypedef)
 - [GetSecurityConfigurationRequestRequestTypeDef](./type_defs.md#getsecurityconfigurationrequestrequesttypedef)
 - [GetSecurityConfigurationResponseTypeDef](./type_defs.md#getsecurityconfigurationresponsetypedef)
+- [GetSecurityConfigurationsRequestGetSecurityConfigurationsPaginateTypeDef](./type_defs.md#getsecurityconfigurationsrequestgetsecurityconfigurationspaginatetypedef)
 - [GetSecurityConfigurationsRequestRequestTypeDef](./type_defs.md#getsecurityconfigurationsrequestrequesttypedef)
 - [GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef)
 - [GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef)
@@ -698,14 +477,17 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [GetTableResponseTypeDef](./type_defs.md#gettableresponsetypedef)
 - [GetTableVersionRequestRequestTypeDef](./type_defs.md#gettableversionrequestrequesttypedef)
 - [GetTableVersionResponseTypeDef](./type_defs.md#gettableversionresponsetypedef)
+- [GetTableVersionsRequestGetTableVersionsPaginateTypeDef](./type_defs.md#gettableversionsrequestgettableversionspaginatetypedef)
 - [GetTableVersionsRequestRequestTypeDef](./type_defs.md#gettableversionsrequestrequesttypedef)
 - [GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef)
+- [GetTablesRequestGetTablesPaginateTypeDef](./type_defs.md#gettablesrequestgettablespaginatetypedef)
 - [GetTablesRequestRequestTypeDef](./type_defs.md#gettablesrequestrequesttypedef)
 - [GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef)
 - [GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef)
 - [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef)
 - [GetTriggerRequestRequestTypeDef](./type_defs.md#gettriggerrequestrequesttypedef)
 - [GetTriggerResponseTypeDef](./type_defs.md#gettriggerresponsetypedef)
+- [GetTriggersRequestGetTriggersPaginateTypeDef](./type_defs.md#gettriggersrequestgettriggerspaginatetypedef)
 - [GetTriggersRequestRequestTypeDef](./type_defs.md#gettriggersrequestrequesttypedef)
 - [GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef)
 - [GetUnfilteredPartitionMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredpartitionmetadatarequestrequesttypedef)
@@ -716,6 +498,7 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [GetUnfilteredTableMetadataResponseTypeDef](./type_defs.md#getunfilteredtablemetadataresponsetypedef)
 - [GetUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionrequestrequesttypedef)
 - [GetUserDefinedFunctionResponseTypeDef](./type_defs.md#getuserdefinedfunctionresponsetypedef)
+- [GetUserDefinedFunctionsRequestGetUserDefinedFunctionsPaginateTypeDef](./type_defs.md#getuserdefinedfunctionsrequestgetuserdefinedfunctionspaginatetypedef)
 - [GetUserDefinedFunctionsRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionsrequestrequesttypedef)
 - [GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef)
 - [GetWorkflowRequestRequestTypeDef](./type_defs.md#getworkflowrequestrequesttypedef)
@@ -756,10 +539,13 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)
 - [ListMLTransformsRequestRequestTypeDef](./type_defs.md#listmltransformsrequestrequesttypedef)
 - [ListMLTransformsResponseTypeDef](./type_defs.md#listmltransformsresponsetypedef)
+- [ListRegistriesInputListRegistriesPaginateTypeDef](./type_defs.md#listregistriesinputlistregistriespaginatetypedef)
 - [ListRegistriesInputRequestTypeDef](./type_defs.md#listregistriesinputrequesttypedef)
 - [ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef)
+- [ListSchemaVersionsInputListSchemaVersionsPaginateTypeDef](./type_defs.md#listschemaversionsinputlistschemaversionspaginatetypedef)
 - [ListSchemaVersionsInputRequestTypeDef](./type_defs.md#listschemaversionsinputrequesttypedef)
 - [ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef)
+- [ListSchemasInputListSchemasPaginateTypeDef](./type_defs.md#listschemasinputlistschemaspaginatetypedef)
 - [ListSchemasInputRequestTypeDef](./type_defs.md#listschemasinputrequesttypedef)
 - [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)
 - [ListSessionsRequestRequestTypeDef](./type_defs.md#listsessionsrequestrequesttypedef)
@@ -926,3 +712,4 @@ from mypy_boto3_glue.type_defs import ActionTypeDef, ...
 - [WorkflowRunTypeDef](./type_defs.md#workflowruntypedef)
 - [WorkflowTypeDef](./type_defs.md#workflowtypedef)
 - [XMLClassifierTypeDef](./type_defs.md#xmlclassifiertypedef)
+

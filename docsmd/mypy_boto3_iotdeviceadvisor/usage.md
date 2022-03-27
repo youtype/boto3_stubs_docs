@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-iotdeviceadvisor-module"></a>
-
-# Examples for boto3 IoTDeviceAdvisor module
+# Examples
 
 > [Index](../README.md) > [IoTDeviceAdvisor](./README.md) > Examples
 
-- [Examples for boto3 IoTDeviceAdvisor module](#examples-for-boto3-iotdeviceadvisor-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+    type annotations stubs module [mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[iotdeviceadvisor]` package installed.
 
-Write your `IoTDeviceAdvisor` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `IoTDeviceAdvisor` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type IoTDeviceAdvisorClient
-# and provides type checking and code completion
-client = session.client("iotdeviceadvisor")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("iotdeviceadvisor")  # (1)
+    result = client.create_suite_definition()  # (2)
+    ```
+
+    1. client: [IoTDeviceAdvisorClient](./client.md)
+    2. result: [:material-code-braces: CreateSuiteDefinitionResponseTypeDef](./type_defs.md#createsuitedefinitionresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[iotdeviceadvisor]` or a standalone
-`mypy_boto3_iotdeviceadvisor` package, you have to explicitly specify
-`client: IoTDeviceAdvisorClient` type annotation.
+With `boto3-stubs-lite[iotdeviceadvisor]`
+or a standalone `mypy_boto3_iotdeviceadvisor` package, you have to explicitly specify `client: IoTDeviceAdvisorClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
+    from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionResponseTypeDef
+    from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionRequestRequestTypeDef
 
 
-from mypy_boto3_iotdeviceadvisor.type_defs import bool
+    session = Session()
+
+    client: IoTDeviceAdvisorClient = session.client("iotdeviceadvisor")
+
+    kwargs: CreateSuiteDefinitionRequestRequestTypeDef = {...}
+    result: CreateSuiteDefinitionResponseTypeDef = client.create_suite_definition(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: IoTDeviceAdvisorClient = session.client("iotdeviceadvisor")
 
-result: bool = client.can_paginate()
-```
+

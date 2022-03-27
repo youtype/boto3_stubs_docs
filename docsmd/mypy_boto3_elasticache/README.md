@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-elasticache-module"></a>
-
-# Type annotations for boto3 ElastiCache module
+#  ElastiCache module
 
 > [Index](../README.md) > ElastiCache
 
-Auto-generated documentation for
-[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
-type annotations stubs module
-[mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+!!! note ""
 
-- [Type annotations for boto3 ElastiCache module](#type-annotations-for-boto3-elasticache-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ElastiCacheClient](#elasticacheclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
+    type annotations stubs module [mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ElastiCache`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[elasticache]'
 python -m pip install mypy-boto3-elasticache
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,186 +42,37 @@ python -m pip install mypy-boto3-elasticache
 python -m pip uninstall -y mypy-boto3-elasticache
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="elasticacheclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ElastiCacheClient
 
-Type annotations for `boto3.client("elasticache")` as
-[ElastiCacheClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("elasticache")` as [ElastiCacheClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_elasticache.client import ElastiCacheClient
+
+def get_client() -> ElastiCacheClient:
+    return Session().cleint("elasticache")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_tags_to_resource](./client.md#add_tags_to_resource)
-- [authorize_cache_security_group_ingress](./client.md#authorize_cache_security_group_ingress)
-- [batch_apply_update_action](./client.md#batch_apply_update_action)
-- [batch_stop_update_action](./client.md#batch_stop_update_action)
-- [can_paginate](./client.md#can_paginate)
-- [complete_migration](./client.md#complete_migration)
-- [copy_snapshot](./client.md#copy_snapshot)
-- [create_cache_cluster](./client.md#create_cache_cluster)
-- [create_cache_parameter_group](./client.md#create_cache_parameter_group)
-- [create_cache_security_group](./client.md#create_cache_security_group)
-- [create_cache_subnet_group](./client.md#create_cache_subnet_group)
-- [create_global_replication_group](./client.md#create_global_replication_group)
-- [create_replication_group](./client.md#create_replication_group)
-- [create_snapshot](./client.md#create_snapshot)
-- [create_user](./client.md#create_user)
-- [create_user_group](./client.md#create_user_group)
-- [decrease_node_groups_in_global_replication_group](./client.md#decrease_node_groups_in_global_replication_group)
-- [decrease_replica_count](./client.md#decrease_replica_count)
-- [delete_cache_cluster](./client.md#delete_cache_cluster)
-- [delete_cache_parameter_group](./client.md#delete_cache_parameter_group)
-- [delete_cache_security_group](./client.md#delete_cache_security_group)
-- [delete_cache_subnet_group](./client.md#delete_cache_subnet_group)
-- [delete_global_replication_group](./client.md#delete_global_replication_group)
-- [delete_replication_group](./client.md#delete_replication_group)
-- [delete_snapshot](./client.md#delete_snapshot)
-- [delete_user](./client.md#delete_user)
-- [delete_user_group](./client.md#delete_user_group)
-- [describe_cache_clusters](./client.md#describe_cache_clusters)
-- [describe_cache_engine_versions](./client.md#describe_cache_engine_versions)
-- [describe_cache_parameter_groups](./client.md#describe_cache_parameter_groups)
-- [describe_cache_parameters](./client.md#describe_cache_parameters)
-- [describe_cache_security_groups](./client.md#describe_cache_security_groups)
-- [describe_cache_subnet_groups](./client.md#describe_cache_subnet_groups)
-- [describe_engine_default_parameters](./client.md#describe_engine_default_parameters)
-- [describe_events](./client.md#describe_events)
-- [describe_global_replication_groups](./client.md#describe_global_replication_groups)
-- [describe_replication_groups](./client.md#describe_replication_groups)
-- [describe_reserved_cache_nodes](./client.md#describe_reserved_cache_nodes)
-- [describe_reserved_cache_nodes_offerings](./client.md#describe_reserved_cache_nodes_offerings)
-- [describe_service_updates](./client.md#describe_service_updates)
-- [describe_snapshots](./client.md#describe_snapshots)
-- [describe_update_actions](./client.md#describe_update_actions)
-- [describe_user_groups](./client.md#describe_user_groups)
-- [describe_users](./client.md#describe_users)
-- [disassociate_global_replication_group](./client.md#disassociate_global_replication_group)
-- [exceptions](./client.md#exceptions)
-- [failover_global_replication_group](./client.md#failover_global_replication_group)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [increase_node_groups_in_global_replication_group](./client.md#increase_node_groups_in_global_replication_group)
-- [increase_replica_count](./client.md#increase_replica_count)
-- [list_allowed_node_type_modifications](./client.md#list_allowed_node_type_modifications)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [modify_cache_cluster](./client.md#modify_cache_cluster)
-- [modify_cache_parameter_group](./client.md#modify_cache_parameter_group)
-- [modify_cache_subnet_group](./client.md#modify_cache_subnet_group)
-- [modify_global_replication_group](./client.md#modify_global_replication_group)
-- [modify_replication_group](./client.md#modify_replication_group)
-- [modify_replication_group_shard_configuration](./client.md#modify_replication_group_shard_configuration)
-- [modify_user](./client.md#modify_user)
-- [modify_user_group](./client.md#modify_user_group)
-- [purchase_reserved_cache_nodes_offering](./client.md#purchase_reserved_cache_nodes_offering)
-- [rebalance_slots_in_global_replication_group](./client.md#rebalance_slots_in_global_replication_group)
-- [reboot_cache_cluster](./client.md#reboot_cache_cluster)
-- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
-- [reset_cache_parameter_group](./client.md#reset_cache_parameter_group)
-- [revoke_cache_security_group_ingress](./client.md#revoke_cache_security_group_ingress)
-- [start_migration](./client.md#start_migration)
-- [test_failover](./client.md#test_failover)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ElastiCacheClient [exceptions](./client.md#exceptions)
-
-- APICallRateForCustomerExceededFault
-- AuthorizationAlreadyExistsFault
-- AuthorizationNotFoundFault
-- CacheClusterAlreadyExistsFault
-- CacheClusterNotFoundFault
-- CacheParameterGroupAlreadyExistsFault
-- CacheParameterGroupNotFoundFault
-- CacheParameterGroupQuotaExceededFault
-- CacheSecurityGroupAlreadyExistsFault
-- CacheSecurityGroupNotFoundFault
-- CacheSecurityGroupQuotaExceededFault
-- CacheSubnetGroupAlreadyExistsFault
-- CacheSubnetGroupInUse
-- CacheSubnetGroupNotFoundFault
-- CacheSubnetGroupQuotaExceededFault
-- CacheSubnetQuotaExceededFault
-- ClientError
-- ClusterQuotaForCustomerExceededFault
-- DefaultUserAssociatedToUserGroupFault
-- DefaultUserRequired
-- DuplicateUserNameFault
-- GlobalReplicationGroupAlreadyExistsFault
-- GlobalReplicationGroupNotFoundFault
-- InsufficientCacheClusterCapacityFault
-- InvalidARNFault
-- InvalidCacheClusterStateFault
-- InvalidCacheParameterGroupStateFault
-- InvalidCacheSecurityGroupStateFault
-- InvalidGlobalReplicationGroupStateFault
-- InvalidKMSKeyFault
-- InvalidParameterCombinationException
-- InvalidParameterValueException
-- InvalidReplicationGroupStateFault
-- InvalidSnapshotStateFault
-- InvalidSubnet
-- InvalidUserGroupStateFault
-- InvalidUserStateFault
-- InvalidVPCNetworkStateFault
-- NoOperationFault
-- NodeGroupNotFoundFault
-- NodeGroupsPerReplicationGroupQuotaExceededFault
-- NodeQuotaForClusterExceededFault
-- NodeQuotaForCustomerExceededFault
-- ReplicationGroupAlreadyExistsFault
-- ReplicationGroupAlreadyUnderMigrationFault
-- ReplicationGroupNotFoundFault
-- ReplicationGroupNotUnderMigrationFault
-- ReservedCacheNodeAlreadyExistsFault
-- ReservedCacheNodeNotFoundFault
-- ReservedCacheNodeQuotaExceededFault
-- ReservedCacheNodesOfferingNotFoundFault
-- ServiceLinkedRoleNotFoundFault
-- ServiceUpdateNotFoundFault
-- SnapshotAlreadyExistsFault
-- SnapshotFeatureNotSupportedFault
-- SnapshotNotFoundFault
-- SnapshotQuotaExceededFault
-- SubnetInUse
-- SubnetNotAllowedFault
-- TagNotFoundFault
-- TagQuotaPerResourceExceeded
-- TestFailoverNotAvailableFault
-- UserAlreadyExistsFault
-- UserGroupAlreadyExistsFault
-- UserGroupNotFoundFault
-- UserGroupQuotaExceededFault
-- UserNotFoundFault
-- UserQuotaExceededFault
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("elasticache").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("elasticache").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_elasticache.paginator import DescribeCacheClustersPaginator, ...
+from mypy_boto3_elasticache.paginator import DescribeCacheClustersPaginator
+
+def get_describe_cache_clusters_paginator() -> DescribeCacheClustersPaginator:
+    return Session().client("elasticache").get_paginator("describe_cache_clusters"))
 ```
 
 - [DescribeCacheClustersPaginator](./paginators.md#describecacheclusterspaginator)
@@ -265,17 +93,21 @@ from mypy_boto3_elasticache.paginator import DescribeCacheClustersPaginator, ...
 - [DescribeUserGroupsPaginator](./paginators.md#describeusergroupspaginator)
 - [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("elasticache").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("elasticache").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_elasticache.waiter import CacheClusterAvailableWaiter, ...
+from mypy_boto3_elasticache.waiter import CacheClusterAvailableWaiter
+
+def get_cache_cluster_available_waiter() -> CacheClusterAvailableWaiter:
+    return Session().client("elasticache").get_waiter("cache_cluster_available")
 ```
 
 - [CacheClusterAvailableWaiter](./waiters.md#cacheclusteravailablewaiter)
@@ -283,16 +115,21 @@ from mypy_boto3_elasticache.waiter import CacheClusterAvailableWaiter, ...
 - [ReplicationGroupAvailableWaiter](./waiters.md#replicationgroupavailablewaiter)
 - [ReplicationGroupDeletedWaiter](./waiters.md#replicationgroupdeletedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elasticache.literals import AZModeType
 
-```python
-from mypy_boto3_elasticache.literals import AZModeType, ...
+def get_value() -> AZModeType:
+    return "cross-az"
 ```
 
 - [AZModeType](./literals.md#azmodetype)
@@ -343,18 +180,23 @@ from mypy_boto3_elasticache.literals import AZModeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elasticache.type_defs import AddTagsToResourceMessageRequestTypeDef
 
-```python
-from mypy_boto3_elasticache.type_defs import AddTagsToResourceMessageRequestTypeDef, ...
+def get_value() -> AddTagsToResourceMessageRequestTypeDef:
+    return {
+        "ResourceName": ...,
+        "Tags": ...,
+    }
 ```
 
 - [AddTagsToResourceMessageRequestTypeDef](./type_defs.md#addtagstoresourcemessagerequesttypedef)
@@ -423,26 +265,47 @@ from mypy_boto3_elasticache.type_defs import AddTagsToResourceMessageRequestType
 - [DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef)
 - [DeleteUserGroupMessageRequestTypeDef](./type_defs.md#deleteusergroupmessagerequesttypedef)
 - [DeleteUserMessageRequestTypeDef](./type_defs.md#deleteusermessagerequesttypedef)
+- [DescribeCacheClustersMessageCacheClusterAvailableWaitTypeDef](./type_defs.md#describecacheclustersmessagecacheclusteravailablewaittypedef)
+- [DescribeCacheClustersMessageCacheClusterDeletedWaitTypeDef](./type_defs.md#describecacheclustersmessagecacheclusterdeletedwaittypedef)
+- [DescribeCacheClustersMessageDescribeCacheClustersPaginateTypeDef](./type_defs.md#describecacheclustersmessagedescribecacheclusterspaginatetypedef)
 - [DescribeCacheClustersMessageRequestTypeDef](./type_defs.md#describecacheclustersmessagerequesttypedef)
+- [DescribeCacheEngineVersionsMessageDescribeCacheEngineVersionsPaginateTypeDef](./type_defs.md#describecacheengineversionsmessagedescribecacheengineversionspaginatetypedef)
 - [DescribeCacheEngineVersionsMessageRequestTypeDef](./type_defs.md#describecacheengineversionsmessagerequesttypedef)
+- [DescribeCacheParameterGroupsMessageDescribeCacheParameterGroupsPaginateTypeDef](./type_defs.md#describecacheparametergroupsmessagedescribecacheparametergroupspaginatetypedef)
 - [DescribeCacheParameterGroupsMessageRequestTypeDef](./type_defs.md#describecacheparametergroupsmessagerequesttypedef)
+- [DescribeCacheParametersMessageDescribeCacheParametersPaginateTypeDef](./type_defs.md#describecacheparametersmessagedescribecacheparameterspaginatetypedef)
 - [DescribeCacheParametersMessageRequestTypeDef](./type_defs.md#describecacheparametersmessagerequesttypedef)
+- [DescribeCacheSecurityGroupsMessageDescribeCacheSecurityGroupsPaginateTypeDef](./type_defs.md#describecachesecuritygroupsmessagedescribecachesecuritygroupspaginatetypedef)
 - [DescribeCacheSecurityGroupsMessageRequestTypeDef](./type_defs.md#describecachesecuritygroupsmessagerequesttypedef)
+- [DescribeCacheSubnetGroupsMessageDescribeCacheSubnetGroupsPaginateTypeDef](./type_defs.md#describecachesubnetgroupsmessagedescribecachesubnetgroupspaginatetypedef)
 - [DescribeCacheSubnetGroupsMessageRequestTypeDef](./type_defs.md#describecachesubnetgroupsmessagerequesttypedef)
+- [DescribeEngineDefaultParametersMessageDescribeEngineDefaultParametersPaginateTypeDef](./type_defs.md#describeenginedefaultparametersmessagedescribeenginedefaultparameterspaginatetypedef)
 - [DescribeEngineDefaultParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultparametersmessagerequesttypedef)
 - [DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)
+- [DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef)
 - [DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef)
+- [DescribeGlobalReplicationGroupsMessageDescribeGlobalReplicationGroupsPaginateTypeDef](./type_defs.md#describeglobalreplicationgroupsmessagedescribeglobalreplicationgroupspaginatetypedef)
 - [DescribeGlobalReplicationGroupsMessageRequestTypeDef](./type_defs.md#describeglobalreplicationgroupsmessagerequesttypedef)
 - [DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef)
+- [DescribeReplicationGroupsMessageDescribeReplicationGroupsPaginateTypeDef](./type_defs.md#describereplicationgroupsmessagedescribereplicationgroupspaginatetypedef)
+- [DescribeReplicationGroupsMessageReplicationGroupAvailableWaitTypeDef](./type_defs.md#describereplicationgroupsmessagereplicationgroupavailablewaittypedef)
+- [DescribeReplicationGroupsMessageReplicationGroupDeletedWaitTypeDef](./type_defs.md#describereplicationgroupsmessagereplicationgroupdeletedwaittypedef)
 - [DescribeReplicationGroupsMessageRequestTypeDef](./type_defs.md#describereplicationgroupsmessagerequesttypedef)
+- [DescribeReservedCacheNodesMessageDescribeReservedCacheNodesPaginateTypeDef](./type_defs.md#describereservedcachenodesmessagedescribereservedcachenodespaginatetypedef)
 - [DescribeReservedCacheNodesMessageRequestTypeDef](./type_defs.md#describereservedcachenodesmessagerequesttypedef)
+- [DescribeReservedCacheNodesOfferingsMessageDescribeReservedCacheNodesOfferingsPaginateTypeDef](./type_defs.md#describereservedcachenodesofferingsmessagedescribereservedcachenodesofferingspaginatetypedef)
 - [DescribeReservedCacheNodesOfferingsMessageRequestTypeDef](./type_defs.md#describereservedcachenodesofferingsmessagerequesttypedef)
+- [DescribeServiceUpdatesMessageDescribeServiceUpdatesPaginateTypeDef](./type_defs.md#describeserviceupdatesmessagedescribeserviceupdatespaginatetypedef)
 - [DescribeServiceUpdatesMessageRequestTypeDef](./type_defs.md#describeserviceupdatesmessagerequesttypedef)
 - [DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef)
+- [DescribeSnapshotsMessageDescribeSnapshotsPaginateTypeDef](./type_defs.md#describesnapshotsmessagedescribesnapshotspaginatetypedef)
 - [DescribeSnapshotsMessageRequestTypeDef](./type_defs.md#describesnapshotsmessagerequesttypedef)
+- [DescribeUpdateActionsMessageDescribeUpdateActionsPaginateTypeDef](./type_defs.md#describeupdateactionsmessagedescribeupdateactionspaginatetypedef)
 - [DescribeUpdateActionsMessageRequestTypeDef](./type_defs.md#describeupdateactionsmessagerequesttypedef)
+- [DescribeUserGroupsMessageDescribeUserGroupsPaginateTypeDef](./type_defs.md#describeusergroupsmessagedescribeusergroupspaginatetypedef)
 - [DescribeUserGroupsMessageRequestTypeDef](./type_defs.md#describeusergroupsmessagerequesttypedef)
 - [DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef)
+- [DescribeUsersMessageDescribeUsersPaginateTypeDef](./type_defs.md#describeusersmessagedescribeuserspaginatetypedef)
 - [DescribeUsersMessageRequestTypeDef](./type_defs.md#describeusersmessagerequesttypedef)
 - [DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)
 - [DestinationDetailsTypeDef](./type_defs.md#destinationdetailstypedef)
@@ -542,3 +405,4 @@ from mypy_boto3_elasticache.type_defs import AddTagsToResourceMessageRequestType
 - [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

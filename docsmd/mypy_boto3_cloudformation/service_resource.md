@@ -1,252 +1,249 @@
-<a id="cloudformationserviceresource-for-boto3-cloudformation-module"></a>
+# CloudFormationServiceResource
 
-# CloudFormationServiceResource for boto3 CloudFormation module
+> [Index](../README.md) > [CloudFormation](./README.md) > CloudFormationServiceResource
 
-> [Index](../README.md) > [CloudFormation](./README.md) >
-> CloudFormationServiceResource
+!!! note ""
 
-Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module
-[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
-
-- [CloudFormationServiceResource for boto3 CloudFormation module](#cloudformationserviceresource-for-boto3-cloudformation-module)
-  - [CloudFormationServiceResource](#cloudformationserviceresource)
-  - [Attributes](#attributes)
-  - [Collections](#collections)
-    - [ServiceResourceStacksCollection](#serviceresourcestackscollection)
-  - [Methods](#methods)
-    - [CloudFormationServiceResource.Event method](#cloudformationserviceresourceevent-method)
-    - [CloudFormationServiceResource.Stack method](#cloudformationserviceresourcestack-method)
-    - [CloudFormationServiceResource.StackResource method](#cloudformationserviceresourcestackresource-method)
-    - [CloudFormationServiceResource.StackResourceSummary method](#cloudformationserviceresourcestackresourcesummary-method)
-    - [CloudFormationServiceResource.create_stack method](#cloudformationserviceresourcecreate_stack-method)
-    - [CloudFormationServiceResource.get_available_subresources method](#cloudformationserviceresourceget_available_subresources-method)
-  - [Event](#event)
-    - [Event attributes](#event-attributes)
-    - [Event methods](#event-methods)
-  - [Stack](#stack)
-    - [Stack attributes](#stack-attributes)
-    - [Stack collections](#stack-collections)
-    - [Stack methods](#stack-methods)
-  - [StackResource](#stackresource)
-    - [StackResource attributes](#stackresource-attributes)
-    - [StackResource methods](#stackresource-methods)
-  - [StackResourceSummary](#stackresourcesummary)
-    - [StackResourceSummary attributes](#stackresourcesummary-attributes)
-    - [StackResourceSummary methods](#stackresourcesummary-methods)
-
-<a id="cloudformationserviceresource"></a>
+    Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+    type annotations stubs module [mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 ## CloudFormationServiceResource
 
-Type annotations for `boto3.resource("cloudformation")`, included resources and
-collections.
+Type annotations and code completion for `#!python boto3.resource("cloudformation")`, included resources and collections.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_cloudformation.service_resource import CloudFormationServiceResource
 
 def get_cloudformation_resource() -> CloudFormationServiceResource:
     return boto3.resource("cloudformation")
 ```
 
-Boto3 documentation:
-[CloudFormation.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource)
-
-<a id="attributes"></a>
 
 ## Attributes
+
 
 - `meta`: [CloudFormationResourceMeta](#cloudformationresourcemeta)
 
 - `stacks`: [ServiceResourceStacksCollection](#serviceresourcestackscollection)
 
-<a id="collections"></a>
+
+
 
 ## Collections
 
-<a id="serviceresourcestackscollection"></a>
-
 ### ServiceResourceStacksCollection
 
-Type annotations for `boto3.resource("cloudformation").stacks` collection.
+Provides access to [Stack](#stack) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("cloudformation").stacks` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.stacks)
 
-```python
-from mypy_boto3_cloudformation.service_resource import ServiceResourceStacksCollection,
+```python title="Usage example"
+from mypy_boto3_cloudformation.service_resource import ServiceResourceStacksCollection
 
 def get_collection() -> ServiceResourceStacksCollection:
     return boto3.resource("cloudformation").stacks
 ```
 
-Provides access to [Stack](#stack) resource.
 
-Boto3 documentation:
-[CloudFormation.ServiceResource.stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.stacks)
 
-<a id="methods"></a>
 
 ## Methods
-
-<a id="cloudformationserviceresourceevent-method"></a>
 
 ### CloudFormationServiceResource.Event method
 
 Creates a Event resource.
 
-Type annotations for `boto3.resource("cloudformation").Event` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").Event` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.Event)
 
-Boto3 documentation:
-[CloudFormation.ServiceResource.Event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.Event)
+```python title="Method definition"
+def Event(
+    self,
+    id: str,
+) -> Event:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceEventRequestTypeDef](./type_defs.md#serviceresourceeventrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceEventRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [Event](#event).
+parent.Event(**kwargs)
+```
 
-<a id="cloudformationserviceresourcestack-method"></a>
+1. See [:material-code-braces: ServiceResourceEventRequestTypeDef](./type_defs.md#serviceresourceeventrequesttypedef) 
 
 ### CloudFormationServiceResource.Stack method
 
 Creates a Stack resource.
 
-Type annotations for `boto3.resource("cloudformation").Stack` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").Stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.Stack)
 
-Boto3 documentation:
-[CloudFormation.ServiceResource.Stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.Stack)
+```python title="Method definition"
+def Stack(
+    self,
+    name: str,
+) -> Stack:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceStackRequestTypeDef](./type_defs.md#serviceresourcestackrequesttypedef).
 
-Arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceStackRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [Stack](#stack).
+parent.Stack(**kwargs)
+```
 
-<a id="cloudformationserviceresourcestackresource-method"></a>
+1. See [:material-code-braces: ServiceResourceStackRequestTypeDef](./type_defs.md#serviceresourcestackrequesttypedef) 
 
 ### CloudFormationServiceResource.StackResource method
 
 Creates a StackResource resource.
 
-Type annotations for `boto3.resource("cloudformation").StackResource` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").StackResource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResource)
 
-Boto3 documentation:
-[CloudFormation.ServiceResource.StackResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResource)
+```python title="Method definition"
+def StackResource(
+    self,
+    stack_name: str,
+    logical_id: str,
+) -> StackResource:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceStackResourceRequestTypeDef](./type_defs.md#serviceresourcestackresourcerequesttypedef).
 
-Arguments:
 
-- `stack_name`: `str` *(required)*
-- `logical_id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceStackResourceRequestTypeDef = {  # (1)
+    "stack_name": ...,
+    "logical_id": ...,
+}
 
-Returns [StackResource](#stackresource).
+parent.StackResource(**kwargs)
+```
 
-<a id="cloudformationserviceresourcestackresourcesummary-method"></a>
+1. See [:material-code-braces: ServiceResourceStackResourceRequestTypeDef](./type_defs.md#serviceresourcestackresourcerequesttypedef) 
 
 ### CloudFormationServiceResource.StackResourceSummary method
 
 Creates a StackResourceSummary resource.
 
-Type annotations for `boto3.resource("cloudformation").StackResourceSummary`
-method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").StackResourceSummary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResourceSummary)
 
-Boto3 documentation:
-[CloudFormation.ServiceResource.StackResourceSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResourceSummary)
+```python title="Method definition"
+def StackResourceSummary(
+    self,
+    stack_name: str,
+    logical_id: str,
+) -> StackResourceSummary:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceStackResourceSummaryRequestTypeDef](./type_defs.md#serviceresourcestackresourcesummaryrequesttypedef).
 
-Arguments:
 
-- `stack_name`: `str` *(required)*
-- `logical_id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceStackResourceSummaryRequestTypeDef = {  # (1)
+    "stack_name": ...,
+    "logical_id": ...,
+}
 
-Returns [StackResourceSummary](#stackresourcesummary).
+parent.StackResourceSummary(**kwargs)
+```
 
-<a id="cloudformationserviceresourcecreate\_stack-method"></a>
+1. See [:material-code-braces: ServiceResourceStackResourceSummaryRequestTypeDef](./type_defs.md#serviceresourcestackresourcesummaryrequesttypedef) 
 
-### CloudFormationServiceResource.create_stack method
+### CloudFormationServiceResource.create\_stack method
 
 .
 
-Type annotations for `boto3.resource("cloudformation").create_stack` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").create_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.create_stack)
 
-Boto3 documentation:
-[CloudFormation.ServiceResource.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.create_stack)
+```python title="Method definition"
+def create_stack(
+    self,
+    *,
+    StackName: str,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+    DisableRollback: bool = ...,
+    RollbackConfiguration: RollbackConfigurationTypeDef = ...,  # (2)
+    TimeoutInMinutes: int = ...,
+    NotificationARNs: Sequence[str] = ...,
+    Capabilities: Sequence[CapabilityType] = ...,  # (3)
+    ResourceTypes: Sequence[str] = ...,
+    RoleARN: str = ...,
+    OnFailure: OnFailureType = ...,  # (4)
+    StackPolicyBody: str = ...,
+    StackPolicyURL: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+    ClientRequestToken: str = ...,
+    EnableTerminationProtection: bool = ...,
+) -> Stack:
+    ...
+```
 
-Arguments mapping described in
-[CreateStackInputServiceResourceCreateStackTypeDef](./type_defs.md#createstackinputserviceresourcecreatestacktypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+3. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+4. See [:material-code-brackets: OnFailureType](./literals.md#onfailuretype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `DisableRollback`: `bool`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `TimeoutInMinutes`: `int`
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientRequestToken`: `str`
-- `EnableTerminationProtection`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateStackInputServiceResourceCreateStackTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns [Stack](#stack).
+parent.create_stack(**kwargs)
+```
 
-<a id="cloudformationserviceresourceget\_available\_subresources-method"></a>
+1. See [:material-code-braces: CreateStackInputServiceResourceCreateStackTypeDef](./type_defs.md#createstackinputserviceresourcecreatestacktypedef) 
 
-### CloudFormationServiceResource.get_available_subresources method
+### CloudFormationServiceResource.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for
-`boto3.resource("cloudformation").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.get_available_subresources)
 
-Boto3 documentation:
-[CloudFormation.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="event"></a>
+
 
 ## Event
 
-Type annotations for `boto3.resource("cloudformation").Event` class.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").Event` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.Event)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_cloudformation.service_resource import Event
 
 def get_resource() -> Event:
     return boto3.resource("cloudformation").Event(...)
 ```
 
-Boto3 documentation:
-[CloudFormation.Event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.Event)
-
-<a id="event-attributes"></a>
 
 ### Event attributes
+
 
 - `stack_id`: `str`
 - `event_id`: `str`
@@ -262,286 +259,316 @@ Boto3 documentation:
 - `hook_type`: `str`
 - `hook_status`: [HookStatusType](./literals.md#hookstatustype)
 - `hook_status_reason`: `str`
-- `hook_invocation_point`: `Literal['PRE_PROVISION']` (see
-  [HookInvocationPointType](./literals.md#hookinvocationpointtype))
+- `hook_invocation_point`: `Literal['PRE_PROVISION']` (see [HookInvocationPointType](./literals.md#hookinvocationpointtype))
 - `hook_failure_mode`: [HookFailureModeType](./literals.md#hookfailuremodetype)
 - `id`: `str`
 
-<a id="event-methods"></a>
+
+
+
 
 ### Event methods
 
-<a id="eventget\_available\_subresources-method"></a>
 
-#### Event.get_available_subresources method
+#### Event.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for
-`boto3.resource("cloudformation").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Event.get_available_subresources)
 
-Boto3 documentation:
-[CloudFormation.Event.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Event.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="stack"></a>
+
+
 
 ## Stack
 
-Type annotations for `boto3.resource("cloudformation").Stack` class.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").Stack` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.Stack)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_cloudformation.service_resource import Stack
 
 def get_resource() -> Stack:
     return boto3.resource("cloudformation").Stack(...)
 ```
 
-Boto3 documentation:
-[CloudFormation.Stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.Stack)
-
-<a id="stack-attributes"></a>
 
 ### Stack attributes
+
 
 - `stack_id`: `str`
 - `stack_name`: `str`
 - `change_set_id`: `str`
 - `description`: `str`
-- `parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+- `parameters`: `List`[[ParameterTypeDef](./type_defs.md#parametertypedef)]
 - `creation_time`: `datetime`
 - `deletion_time`: `datetime`
 - `last_updated_time`: `datetime`
-- `rollback_configuration`:
-  [RollbackConfigurationResponseMetadataTypeDef](./type_defs.md#rollbackconfigurationresponsemetadatatypedef)
+- `rollback_configuration`: [RollbackConfigurationResponseMetadataTypeDef](./type_defs.md#rollbackconfigurationresponsemetadatatypedef)
 - `stack_status`: [StackStatusType](./literals.md#stackstatustype)
 - `stack_status_reason`: `str`
 - `disable_rollback`: `bool`
-- `notification_arns`: `List`\[`str`\]
+- `notification_arns`: `List`[`str`]
 - `timeout_in_minutes`: `int`
-- `capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
+- `capabilities`: `List`[[CapabilityType](./literals.md#capabilitytype)]
+- `outputs`: `List`[[OutputTypeDef](./type_defs.md#outputtypedef)]
 - `role_arn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `tags`: `List`[[TagTypeDef](./type_defs.md#tagtypedef)]
 - `enable_termination_protection`: `bool`
 - `parent_id`: `str`
 - `root_id`: `str`
-- `drift_information`:
-  [StackDriftInformationResponseMetadataTypeDef](./type_defs.md#stackdriftinformationresponsemetadatatypedef)
+- `drift_information`: [StackDriftInformationResponseMetadataTypeDef](./type_defs.md#stackdriftinformationresponsemetadatatypedef)
 - `name`: `str`
 - `events`: [StackEventsCollection](#stackeventscollection)
-- `resource_summaries`:
-  [StackResourceSummariesCollection](#stackresourcesummariescollection)
+- `resource_summaries`: [StackResourceSummariesCollection](#stackresourcesummariescollection)
 
-<a id="stack-collections"></a>
+
 
 ### Stack collections
 
-<a id="stackevents"></a>
 
 #### Stack.events
 
-Type annotations for `boto3.resource("cloudformation").Stack(...).events`
-collection.
+Provides access to [Event](#event) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("cloudformation").Stack(...).events` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.events)
 
-```python
-from mypy_boto3_cloudformation.service_resource import StackEventsCollection,
+```python title="Usage example"
+from mypy_boto3_cloudformation.service_resource import StackEventsCollection
 
 def get_collection() -> StackEventsCollection:
     resource = boto3.resource("cloudformation").Stack(...)
     return resource.events
 ```
 
-Provides access to [Event](#event) resource.
-
-Boto3 documentation:
-[CloudFormation.Stack.StackEventsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.events)
-
-<a id="stackresource_summaries"></a>
-
 #### Stack.resource_summaries
 
-Type annotations for
-`boto3.resource("cloudformation").Stack(...).resource_summaries` collection.
+Provides access to [StackResourceSummary](#stackresourcesummary) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("cloudformation").Stack(...).resource_summaries` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.resource_summaries)
 
-```python
-from mypy_boto3_cloudformation.service_resource import StackResourceSummariesCollection,
+```python title="Usage example"
+from mypy_boto3_cloudformation.service_resource import StackResourceSummariesCollection
 
 def get_collection() -> StackResourceSummariesCollection:
     resource = boto3.resource("cloudformation").Stack(...)
     return resource.resource_summaries
 ```
 
-Provides access to [StackResourceSummary](#stackresourcesummary) resource.
 
-Boto3 documentation:
-[CloudFormation.Stack.StackResourceSummariesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.resource_summaries)
 
-<a id="stack-methods"></a>
 
 ### Stack methods
 
-<a id="stackresource-method"></a>
 
 #### Stack.Resource method
 
 Creates a StackResource resource.
 
-Type annotations for `boto3.resource("cloudformation").Resource` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").Resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.Resource)
 
-Boto3 documentation:
-[CloudFormation.Stack.Resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.Resource)
+```python title="Method definition"
+def Resource(
+    self,
+    logical_id: str,
+) -> StackResource:
+    ...
+```
 
-Arguments mapping described in
-[StackResourceRequestTypeDef](./type_defs.md#stackresourcerequesttypedef).
 
-Arguments:
 
-- `logical_id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StackResourceRequestTypeDef = {  # (1)
+    "logical_id": ...,
+}
 
-Returns [StackResource](#stackresource).
+parent.Resource(**kwargs)
+```
 
-<a id="stackcancel\_update-method"></a>
+1. See [:material-code-braces: StackResourceRequestTypeDef](./type_defs.md#stackresourcerequesttypedef) 
 
-#### Stack.cancel_update method
+#### Stack.cancel\_update method
 
 Cancels an update on the specified stack.
 
-Type annotations for `boto3.resource("cloudformation").cancel_update` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").cancel_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.cancel_update)
 
-Boto3 documentation:
-[CloudFormation.Stack.cancel_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.cancel_update)
+```python title="Method definition"
+def cancel_update(
+    self,
+    *,
+    ClientRequestToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CancelUpdateStackInputStackCancelUpdateTypeDef](./type_defs.md#cancelupdatestackinputstackcancelupdatetypedef).
 
-Keyword-only arguments:
 
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CancelUpdateStackInputStackCancelUpdateTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+}
 
-<a id="stackdelete-method"></a>
+parent.cancel_update(**kwargs)
+```
+
+1. See [:material-code-braces: CancelUpdateStackInputStackCancelUpdateTypeDef](./type_defs.md#cancelupdatestackinputstackcancelupdatetypedef) 
 
 #### Stack.delete method
 
 Deletes a specified stack.
 
-Type annotations for `boto3.resource("cloudformation").delete` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.delete)
 
-Boto3 documentation:
-[CloudFormation.Stack.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    RetainResources: Sequence[str] = ...,
+    RoleARN: str = ...,
+    ClientRequestToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStackInputStackDeleteTypeDef](./type_defs.md#deletestackinputstackdeletetypedef).
 
-Keyword-only arguments:
 
-- `RetainResources`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStackInputStackDeleteTypeDef = {  # (1)
+    "RetainResources": ...,
+}
 
-<a id="stackget\_available\_subresources-method"></a>
+parent.delete(**kwargs)
+```
 
-#### Stack.get_available_subresources method
+1. See [:material-code-braces: DeleteStackInputStackDeleteTypeDef](./type_defs.md#deletestackinputstackdeletetypedef) 
+
+#### Stack.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for
-`boto3.resource("cloudformation").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.get_available_subresources)
 
-Boto3 documentation:
-[CloudFormation.Stack.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="stackload-method"></a>
 
 #### Stack.load method
 
 Calls :py:meth:`CloudFormation.Client.describe_stacks` to update the attributes
 of the Stack resource.
 
-Type annotations for `boto3.resource("cloudformation").load` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.load)
 
-Boto3 documentation:
-[CloudFormation.Stack.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="stackreload-method"></a>
 
 #### Stack.reload method
 
 Calls :py:meth:`CloudFormation.Client.describe_stacks` to update the attributes
 of the Stack resource.
 
-Type annotations for `boto3.resource("cloudformation").reload` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.reload)
 
-Boto3 documentation:
-[CloudFormation.Stack.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="stackupdate-method"></a>
 
 #### Stack.update method
 
 .
 
-Type annotations for `boto3.resource("cloudformation").update` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.update)
 
-Boto3 documentation:
-[CloudFormation.Stack.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Stack.update)
+```python title="Method definition"
+def update(
+    self,
+    *,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+    UsePreviousTemplate: bool = ...,
+    StackPolicyDuringUpdateBody: str = ...,
+    StackPolicyDuringUpdateURL: str = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+    Capabilities: Sequence[CapabilityType] = ...,  # (2)
+    ResourceTypes: Sequence[str] = ...,
+    RoleARN: str = ...,
+    RollbackConfiguration: RollbackConfigurationTypeDef = ...,  # (3)
+    StackPolicyBody: str = ...,
+    StackPolicyURL: str = ...,
+    NotificationARNs: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+    DisableRollback: bool = ...,
+    ClientRequestToken: str = ...,
+) -> UpdateStackOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStackInputStackUpdateTypeDef](./type_defs.md#updatestackinputstackupdatetypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `UsePreviousTemplate`: `bool`
-- `StackPolicyDuringUpdateBody`: `str`
-- `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DisableRollback`: `bool`
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStackInputStackUpdateTypeDef = {  # (1)
+    "TemplateBody": ...,
+}
 
-Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
+parent.update(**kwargs)
+```
 
-<a id="stackresource"></a>
+1. See [:material-code-braces: UpdateStackInputStackUpdateTypeDef](./type_defs.md#updatestackinputstackupdatetypedef) 
+
+
+
 
 ## StackResource
 
-Type annotations for `boto3.resource("cloudformation").StackResource` class.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").StackResource` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_cloudformation.service_resource import StackResource
 
 def get_resource() -> StackResource:
     return boto3.resource("cloudformation").StackResource(...)
 ```
 
-Boto3 documentation:
-[CloudFormation.StackResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResource)
-
-<a id="stackresource-attributes"></a>
 
 ### StackResource attributes
+
 
 - `stack_id`: `str`
 - `logical_resource_id`: `str`
@@ -552,90 +579,98 @@ Boto3 documentation:
 - `resource_status_reason`: `str`
 - `description`: `str`
 - `metadata`: `str`
-- `drift_information`:
-  [StackResourceDriftInformationResponseMetadataTypeDef](./type_defs.md#stackresourcedriftinformationresponsemetadatatypedef)
-- `module_info`:
-  [ModuleInfoResponseMetadataTypeDef](./type_defs.md#moduleinforesponsemetadatatypedef)
+- `drift_information`: [StackResourceDriftInformationResponseMetadataTypeDef](./type_defs.md#stackresourcedriftinformationresponsemetadatatypedef)
+- `module_info`: [ModuleInfoResponseMetadataTypeDef](./type_defs.md#moduleinforesponsemetadatatypedef)
 - `stack_name`: `str`
 - `logical_id`: `str`
 
-<a id="stackresource-methods"></a>
+
+
+
 
 ### StackResource methods
 
-<a id="stackresourcestack-method"></a>
 
 #### StackResource.Stack method
 
 Creates a Stack resource.
 
-Type annotations for `boto3.resource("cloudformation").Stack` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").Stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResource.Stack)
 
-Boto3 documentation:
-[CloudFormation.StackResource.Stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResource.Stack)
+```python title="Method definition"
+def Stack(
+    self,
+) -> Stack:
+    ...
+```
 
-Returns [Stack](#stack).
 
-<a id="stackresourceget\_available\_subresources-method"></a>
-
-#### StackResource.get_available_subresources method
+#### StackResource.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for
-`boto3.resource("cloudformation").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResource.get_available_subresources)
 
-Boto3 documentation:
-[CloudFormation.StackResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResource.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="stackresourceload-method"></a>
 
 #### StackResource.load method
 
 Calls :py:meth:`CloudFormation.Client.describe_stack_resource` to update the
 attributes of the StackResource resource.
 
-Type annotations for `boto3.resource("cloudformation").load` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResource.load)
 
-Boto3 documentation:
-[CloudFormation.StackResource.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResource.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="stackresourcereload-method"></a>
 
 #### StackResource.reload method
 
 Calls :py:meth:`CloudFormation.Client.describe_stack_resource` to update the
 attributes of the StackResource resource.
 
-Type annotations for `boto3.resource("cloudformation").reload` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResource.reload)
 
-Boto3 documentation:
-[CloudFormation.StackResource.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResource.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="stackresourcesummary"></a>
+
+
+
 
 ## StackResourceSummary
 
-Type annotations for `boto3.resource("cloudformation").StackResourceSummary`
-class.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").StackResourceSummary` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResourceSummary)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_cloudformation.service_resource import StackResourceSummary
 
 def get_resource() -> StackResourceSummary:
     return boto3.resource("cloudformation").StackResourceSummary(...)
 ```
 
-Boto3 documentation:
-[CloudFormation.StackResourceSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource.StackResourceSummary)
-
-<a id="stackresourcesummary-attributes"></a>
 
 ### StackResourceSummary attributes
+
 
 - `logical_resource_id`: `str`
 - `physical_resource_id`: `str`
@@ -643,40 +678,47 @@ Boto3 documentation:
 - `last_updated_timestamp`: `datetime`
 - `resource_status`: [ResourceStatusType](./literals.md#resourcestatustype)
 - `resource_status_reason`: `str`
-- `drift_information`:
-  [StackResourceDriftInformationSummaryResponseMetadataTypeDef](./type_defs.md#stackresourcedriftinformationsummaryresponsemetadatatypedef)
-- `module_info`:
-  [ModuleInfoResponseMetadataTypeDef](./type_defs.md#moduleinforesponsemetadatatypedef)
+- `drift_information`: [StackResourceDriftInformationSummaryResponseMetadataTypeDef](./type_defs.md#stackresourcedriftinformationsummaryresponsemetadatatypedef)
+- `module_info`: [ModuleInfoResponseMetadataTypeDef](./type_defs.md#moduleinforesponsemetadatatypedef)
 - `stack_name`: `str`
 - `logical_id`: `str`
 
-<a id="stackresourcesummary-methods"></a>
+
+
+
 
 ### StackResourceSummary methods
 
-<a id="stackresourcesummaryresource-method"></a>
 
 #### StackResourceSummary.Resource method
 
 Creates a StackResource resource.
 
-Type annotations for `boto3.resource("cloudformation").Resource` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").Resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResourceSummary.Resource)
 
-Boto3 documentation:
-[CloudFormation.StackResourceSummary.Resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResourceSummary.Resource)
+```python title="Method definition"
+def Resource(
+    self,
+) -> StackResource:
+    ...
+```
 
-Returns [StackResource](#stackresource).
 
-<a id="stackresourcesummaryget\_available\_subresources-method"></a>
-
-#### StackResourceSummary.get_available_subresources method
+#### StackResourceSummary.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for
-`boto3.resource("cloudformation").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("cloudformation").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResourceSummary.get_available_subresources)
 
-Boto3 documentation:
-[CloudFormation.StackResourceSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.StackResourceSummary.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
+
+
+

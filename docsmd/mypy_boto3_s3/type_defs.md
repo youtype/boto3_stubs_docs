@@ -1,7393 +1,8917 @@
-<a id="typed-dictionaries-for-boto3-s3-module"></a>
-
-# Typed dictionaries for boto3 S3 module
+# Typed dictionaries
 
 > [Index](../README.md) > [S3](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
-type annotations stubs module
-[mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
+!!! note ""
 
-- [Typed dictionaries for boto3 S3 module](#typed-dictionaries-for-boto3-s3-module)
-  - [AbortIncompleteMultipartUploadTypeDef](#abortincompletemultipartuploadtypedef)
-  - [AbortMultipartUploadOutputTypeDef](#abortmultipartuploadoutputtypedef)
-  - [AbortMultipartUploadRequestMultipartUploadAbortTypeDef](#abortmultipartuploadrequestmultipartuploadaborttypedef)
-  - [AbortMultipartUploadRequestRequestTypeDef](#abortmultipartuploadrequestrequesttypedef)
-  - [AccelerateConfigurationTypeDef](#accelerateconfigurationtypedef)
-  - [AccessControlPolicyTypeDef](#accesscontrolpolicytypedef)
-  - [AccessControlTranslationTypeDef](#accesscontroltranslationtypedef)
-  - [AnalyticsAndOperatorTypeDef](#analyticsandoperatortypedef)
-  - [AnalyticsConfigurationTypeDef](#analyticsconfigurationtypedef)
-  - [AnalyticsExportDestinationTypeDef](#analyticsexportdestinationtypedef)
-  - [AnalyticsFilterTypeDef](#analyticsfiltertypedef)
-  - [AnalyticsS3BucketDestinationTypeDef](#analyticss3bucketdestinationtypedef)
-  - [BucketCopyRequestTypeDef](#bucketcopyrequesttypedef)
-  - [BucketDownloadFileRequestTypeDef](#bucketdownloadfilerequesttypedef)
-  - [BucketDownloadFileobjRequestTypeDef](#bucketdownloadfileobjrequesttypedef)
-  - [BucketLifecycleConfigurationTypeDef](#bucketlifecycleconfigurationtypedef)
-  - [BucketLoggingStatusTypeDef](#bucketloggingstatustypedef)
-  - [BucketObjectRequestTypeDef](#bucketobjectrequesttypedef)
-  - [BucketTypeDef](#buckettypedef)
-  - [BucketUploadFileRequestTypeDef](#bucketuploadfilerequesttypedef)
-  - [BucketUploadFileobjRequestTypeDef](#bucketuploadfileobjrequesttypedef)
-  - [CORSConfigurationTypeDef](#corsconfigurationtypedef)
-  - [CORSRuleTypeDef](#corsruletypedef)
-  - [CSVInputTypeDef](#csvinputtypedef)
-  - [CSVOutputTypeDef](#csvoutputtypedef)
-  - [ChecksumTypeDef](#checksumtypedef)
-  - [ClientCopyRequestTypeDef](#clientcopyrequesttypedef)
-  - [ClientDownloadFileRequestTypeDef](#clientdownloadfilerequesttypedef)
-  - [ClientDownloadFileobjRequestTypeDef](#clientdownloadfileobjrequesttypedef)
-  - [ClientGeneratePresignedPostRequestTypeDef](#clientgeneratepresignedpostrequesttypedef)
-  - [ClientUploadFileRequestTypeDef](#clientuploadfilerequesttypedef)
-  - [ClientUploadFileobjRequestTypeDef](#clientuploadfileobjrequesttypedef)
-  - [CloudFunctionConfigurationTypeDef](#cloudfunctionconfigurationtypedef)
-  - [CommonPrefixTypeDef](#commonprefixtypedef)
-  - [CompleteMultipartUploadOutputTypeDef](#completemultipartuploadoutputtypedef)
-  - [CompleteMultipartUploadRequestMultipartUploadCompleteTypeDef](#completemultipartuploadrequestmultipartuploadcompletetypedef)
-  - [CompleteMultipartUploadRequestRequestTypeDef](#completemultipartuploadrequestrequesttypedef)
-  - [CompletedMultipartUploadTypeDef](#completedmultipartuploadtypedef)
-  - [CompletedPartTypeDef](#completedparttypedef)
-  - [ConditionTypeDef](#conditiontypedef)
-  - [CopyObjectOutputTypeDef](#copyobjectoutputtypedef)
-  - [CopyObjectRequestObjectCopyFromTypeDef](#copyobjectrequestobjectcopyfromtypedef)
-  - [CopyObjectRequestObjectSummaryCopyFromTypeDef](#copyobjectrequestobjectsummarycopyfromtypedef)
-  - [CopyObjectRequestRequestTypeDef](#copyobjectrequestrequesttypedef)
-  - [CopyObjectResultTypeDef](#copyobjectresulttypedef)
-  - [CopyPartResultTypeDef](#copypartresulttypedef)
-  - [CopySourceTypeDef](#copysourcetypedef)
-  - [CreateBucketConfigurationTypeDef](#createbucketconfigurationtypedef)
-  - [CreateBucketOutputTypeDef](#createbucketoutputtypedef)
-  - [CreateBucketRequestBucketCreateTypeDef](#createbucketrequestbucketcreatetypedef)
-  - [CreateBucketRequestRequestTypeDef](#createbucketrequestrequesttypedef)
-  - [CreateBucketRequestServiceResourceCreateBucketTypeDef](#createbucketrequestserviceresourcecreatebuckettypedef)
-  - [CreateMultipartUploadOutputTypeDef](#createmultipartuploadoutputtypedef)
-  - [CreateMultipartUploadRequestObjectInitiateMultipartUploadTypeDef](#createmultipartuploadrequestobjectinitiatemultipartuploadtypedef)
-  - [CreateMultipartUploadRequestObjectSummaryInitiateMultipartUploadTypeDef](#createmultipartuploadrequestobjectsummaryinitiatemultipartuploadtypedef)
-  - [CreateMultipartUploadRequestRequestTypeDef](#createmultipartuploadrequestrequesttypedef)
-  - [DefaultRetentionTypeDef](#defaultretentiontypedef)
-  - [DeleteBucketAnalyticsConfigurationRequestRequestTypeDef](#deletebucketanalyticsconfigurationrequestrequesttypedef)
-  - [DeleteBucketCorsRequestBucketCorsDeleteTypeDef](#deletebucketcorsrequestbucketcorsdeletetypedef)
-  - [DeleteBucketCorsRequestRequestTypeDef](#deletebucketcorsrequestrequesttypedef)
-  - [DeleteBucketEncryptionRequestRequestTypeDef](#deletebucketencryptionrequestrequesttypedef)
-  - [DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef](#deletebucketintelligenttieringconfigurationrequestrequesttypedef)
-  - [DeleteBucketInventoryConfigurationRequestRequestTypeDef](#deletebucketinventoryconfigurationrequestrequesttypedef)
-  - [DeleteBucketLifecycleRequestBucketLifecycleConfigurationDeleteTypeDef](#deletebucketlifecyclerequestbucketlifecycleconfigurationdeletetypedef)
-  - [DeleteBucketLifecycleRequestBucketLifecycleDeleteTypeDef](#deletebucketlifecyclerequestbucketlifecycledeletetypedef)
-  - [DeleteBucketLifecycleRequestRequestTypeDef](#deletebucketlifecyclerequestrequesttypedef)
-  - [DeleteBucketMetricsConfigurationRequestRequestTypeDef](#deletebucketmetricsconfigurationrequestrequesttypedef)
-  - [DeleteBucketOwnershipControlsRequestRequestTypeDef](#deletebucketownershipcontrolsrequestrequesttypedef)
-  - [DeleteBucketPolicyRequestBucketPolicyDeleteTypeDef](#deletebucketpolicyrequestbucketpolicydeletetypedef)
-  - [DeleteBucketPolicyRequestRequestTypeDef](#deletebucketpolicyrequestrequesttypedef)
-  - [DeleteBucketReplicationRequestRequestTypeDef](#deletebucketreplicationrequestrequesttypedef)
-  - [DeleteBucketRequestBucketDeleteTypeDef](#deletebucketrequestbucketdeletetypedef)
-  - [DeleteBucketRequestRequestTypeDef](#deletebucketrequestrequesttypedef)
-  - [DeleteBucketTaggingRequestBucketTaggingDeleteTypeDef](#deletebuckettaggingrequestbuckettaggingdeletetypedef)
-  - [DeleteBucketTaggingRequestRequestTypeDef](#deletebuckettaggingrequestrequesttypedef)
-  - [DeleteBucketWebsiteRequestBucketWebsiteDeleteTypeDef](#deletebucketwebsiterequestbucketwebsitedeletetypedef)
-  - [DeleteBucketWebsiteRequestRequestTypeDef](#deletebucketwebsiterequestrequesttypedef)
-  - [DeleteMarkerEntryTypeDef](#deletemarkerentrytypedef)
-  - [DeleteMarkerReplicationTypeDef](#deletemarkerreplicationtypedef)
-  - [DeleteObjectOutputTypeDef](#deleteobjectoutputtypedef)
-  - [DeleteObjectRequestObjectDeleteTypeDef](#deleteobjectrequestobjectdeletetypedef)
-  - [DeleteObjectRequestObjectSummaryDeleteTypeDef](#deleteobjectrequestobjectsummarydeletetypedef)
-  - [DeleteObjectRequestObjectVersionDeleteTypeDef](#deleteobjectrequestobjectversiondeletetypedef)
-  - [DeleteObjectRequestRequestTypeDef](#deleteobjectrequestrequesttypedef)
-  - [DeleteObjectTaggingOutputTypeDef](#deleteobjecttaggingoutputtypedef)
-  - [DeleteObjectTaggingRequestRequestTypeDef](#deleteobjecttaggingrequestrequesttypedef)
-  - [DeleteObjectsOutputTypeDef](#deleteobjectsoutputtypedef)
-  - [DeleteObjectsRequestBucketDeleteObjectsTypeDef](#deleteobjectsrequestbucketdeleteobjectstypedef)
-  - [DeleteObjectsRequestRequestTypeDef](#deleteobjectsrequestrequesttypedef)
-  - [DeletePublicAccessBlockRequestRequestTypeDef](#deletepublicaccessblockrequestrequesttypedef)
-  - [DeleteTypeDef](#deletetypedef)
-  - [DeletedObjectTypeDef](#deletedobjecttypedef)
-  - [DestinationTypeDef](#destinationtypedef)
-  - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
-  - [EncryptionTypeDef](#encryptiontypedef)
-  - [ErrorDocumentResponseMetadataTypeDef](#errordocumentresponsemetadatatypedef)
-  - [ErrorDocumentTypeDef](#errordocumenttypedef)
-  - [ErrorTypeDef](#errortypedef)
-  - [ExistingObjectReplicationTypeDef](#existingobjectreplicationtypedef)
-  - [FilterRuleTypeDef](#filterruletypedef)
-  - [GetBucketAccelerateConfigurationOutputTypeDef](#getbucketaccelerateconfigurationoutputtypedef)
-  - [GetBucketAccelerateConfigurationRequestRequestTypeDef](#getbucketaccelerateconfigurationrequestrequesttypedef)
-  - [GetBucketAclOutputTypeDef](#getbucketacloutputtypedef)
-  - [GetBucketAclRequestRequestTypeDef](#getbucketaclrequestrequesttypedef)
-  - [GetBucketAnalyticsConfigurationOutputTypeDef](#getbucketanalyticsconfigurationoutputtypedef)
-  - [GetBucketAnalyticsConfigurationRequestRequestTypeDef](#getbucketanalyticsconfigurationrequestrequesttypedef)
-  - [GetBucketCorsOutputTypeDef](#getbucketcorsoutputtypedef)
-  - [GetBucketCorsRequestRequestTypeDef](#getbucketcorsrequestrequesttypedef)
-  - [GetBucketEncryptionOutputTypeDef](#getbucketencryptionoutputtypedef)
-  - [GetBucketEncryptionRequestRequestTypeDef](#getbucketencryptionrequestrequesttypedef)
-  - [GetBucketIntelligentTieringConfigurationOutputTypeDef](#getbucketintelligenttieringconfigurationoutputtypedef)
-  - [GetBucketIntelligentTieringConfigurationRequestRequestTypeDef](#getbucketintelligenttieringconfigurationrequestrequesttypedef)
-  - [GetBucketInventoryConfigurationOutputTypeDef](#getbucketinventoryconfigurationoutputtypedef)
-  - [GetBucketInventoryConfigurationRequestRequestTypeDef](#getbucketinventoryconfigurationrequestrequesttypedef)
-  - [GetBucketLifecycleConfigurationOutputTypeDef](#getbucketlifecycleconfigurationoutputtypedef)
-  - [GetBucketLifecycleConfigurationRequestRequestTypeDef](#getbucketlifecycleconfigurationrequestrequesttypedef)
-  - [GetBucketLifecycleOutputTypeDef](#getbucketlifecycleoutputtypedef)
-  - [GetBucketLifecycleRequestRequestTypeDef](#getbucketlifecyclerequestrequesttypedef)
-  - [GetBucketLocationOutputTypeDef](#getbucketlocationoutputtypedef)
-  - [GetBucketLocationRequestRequestTypeDef](#getbucketlocationrequestrequesttypedef)
-  - [GetBucketLoggingOutputTypeDef](#getbucketloggingoutputtypedef)
-  - [GetBucketLoggingRequestRequestTypeDef](#getbucketloggingrequestrequesttypedef)
-  - [GetBucketMetricsConfigurationOutputTypeDef](#getbucketmetricsconfigurationoutputtypedef)
-  - [GetBucketMetricsConfigurationRequestRequestTypeDef](#getbucketmetricsconfigurationrequestrequesttypedef)
-  - [GetBucketNotificationConfigurationRequestRequestTypeDef](#getbucketnotificationconfigurationrequestrequesttypedef)
-  - [GetBucketOwnershipControlsOutputTypeDef](#getbucketownershipcontrolsoutputtypedef)
-  - [GetBucketOwnershipControlsRequestRequestTypeDef](#getbucketownershipcontrolsrequestrequesttypedef)
-  - [GetBucketPolicyOutputTypeDef](#getbucketpolicyoutputtypedef)
-  - [GetBucketPolicyRequestRequestTypeDef](#getbucketpolicyrequestrequesttypedef)
-  - [GetBucketPolicyStatusOutputTypeDef](#getbucketpolicystatusoutputtypedef)
-  - [GetBucketPolicyStatusRequestRequestTypeDef](#getbucketpolicystatusrequestrequesttypedef)
-  - [GetBucketReplicationOutputTypeDef](#getbucketreplicationoutputtypedef)
-  - [GetBucketReplicationRequestRequestTypeDef](#getbucketreplicationrequestrequesttypedef)
-  - [GetBucketRequestPaymentOutputTypeDef](#getbucketrequestpaymentoutputtypedef)
-  - [GetBucketRequestPaymentRequestRequestTypeDef](#getbucketrequestpaymentrequestrequesttypedef)
-  - [GetBucketTaggingOutputTypeDef](#getbuckettaggingoutputtypedef)
-  - [GetBucketTaggingRequestRequestTypeDef](#getbuckettaggingrequestrequesttypedef)
-  - [GetBucketVersioningOutputTypeDef](#getbucketversioningoutputtypedef)
-  - [GetBucketVersioningRequestRequestTypeDef](#getbucketversioningrequestrequesttypedef)
-  - [GetBucketWebsiteOutputTypeDef](#getbucketwebsiteoutputtypedef)
-  - [GetBucketWebsiteRequestRequestTypeDef](#getbucketwebsiterequestrequesttypedef)
-  - [GetObjectAclOutputTypeDef](#getobjectacloutputtypedef)
-  - [GetObjectAclRequestRequestTypeDef](#getobjectaclrequestrequesttypedef)
-  - [GetObjectAttributesOutputTypeDef](#getobjectattributesoutputtypedef)
-  - [GetObjectAttributesPartsTypeDef](#getobjectattributespartstypedef)
-  - [GetObjectAttributesRequestRequestTypeDef](#getobjectattributesrequestrequesttypedef)
-  - [GetObjectLegalHoldOutputTypeDef](#getobjectlegalholdoutputtypedef)
-  - [GetObjectLegalHoldRequestRequestTypeDef](#getobjectlegalholdrequestrequesttypedef)
-  - [GetObjectLockConfigurationOutputTypeDef](#getobjectlockconfigurationoutputtypedef)
-  - [GetObjectLockConfigurationRequestRequestTypeDef](#getobjectlockconfigurationrequestrequesttypedef)
-  - [GetObjectOutputTypeDef](#getobjectoutputtypedef)
-  - [GetObjectRequestObjectGetTypeDef](#getobjectrequestobjectgettypedef)
-  - [GetObjectRequestObjectSummaryGetTypeDef](#getobjectrequestobjectsummarygettypedef)
-  - [GetObjectRequestObjectVersionGetTypeDef](#getobjectrequestobjectversiongettypedef)
-  - [GetObjectRequestRequestTypeDef](#getobjectrequestrequesttypedef)
-  - [GetObjectRetentionOutputTypeDef](#getobjectretentionoutputtypedef)
-  - [GetObjectRetentionRequestRequestTypeDef](#getobjectretentionrequestrequesttypedef)
-  - [GetObjectTaggingOutputTypeDef](#getobjecttaggingoutputtypedef)
-  - [GetObjectTaggingRequestRequestTypeDef](#getobjecttaggingrequestrequesttypedef)
-  - [GetObjectTorrentOutputTypeDef](#getobjecttorrentoutputtypedef)
-  - [GetObjectTorrentRequestRequestTypeDef](#getobjecttorrentrequestrequesttypedef)
-  - [GetPublicAccessBlockOutputTypeDef](#getpublicaccessblockoutputtypedef)
-  - [GetPublicAccessBlockRequestRequestTypeDef](#getpublicaccessblockrequestrequesttypedef)
-  - [GlacierJobParametersTypeDef](#glacierjobparameterstypedef)
-  - [GrantTypeDef](#granttypedef)
-  - [GranteeTypeDef](#granteetypedef)
-  - [HeadBucketRequestRequestTypeDef](#headbucketrequestrequesttypedef)
-  - [HeadObjectOutputTypeDef](#headobjectoutputtypedef)
-  - [HeadObjectRequestObjectVersionHeadTypeDef](#headobjectrequestobjectversionheadtypedef)
-  - [HeadObjectRequestRequestTypeDef](#headobjectrequestrequesttypedef)
-  - [IndexDocumentResponseMetadataTypeDef](#indexdocumentresponsemetadatatypedef)
-  - [IndexDocumentTypeDef](#indexdocumenttypedef)
-  - [InitiatorResponseMetadataTypeDef](#initiatorresponsemetadatatypedef)
-  - [InitiatorTypeDef](#initiatortypedef)
-  - [InputSerializationTypeDef](#inputserializationtypedef)
-  - [IntelligentTieringAndOperatorTypeDef](#intelligenttieringandoperatortypedef)
-  - [IntelligentTieringConfigurationTypeDef](#intelligenttieringconfigurationtypedef)
-  - [IntelligentTieringFilterTypeDef](#intelligenttieringfiltertypedef)
-  - [InventoryConfigurationTypeDef](#inventoryconfigurationtypedef)
-  - [InventoryDestinationTypeDef](#inventorydestinationtypedef)
-  - [InventoryEncryptionTypeDef](#inventoryencryptiontypedef)
-  - [InventoryFilterTypeDef](#inventoryfiltertypedef)
-  - [InventoryS3BucketDestinationTypeDef](#inventorys3bucketdestinationtypedef)
-  - [InventoryScheduleTypeDef](#inventoryscheduletypedef)
-  - [JSONInputTypeDef](#jsoninputtypedef)
-  - [JSONOutputTypeDef](#jsonoutputtypedef)
-  - [LambdaFunctionConfigurationTypeDef](#lambdafunctionconfigurationtypedef)
-  - [LifecycleConfigurationTypeDef](#lifecycleconfigurationtypedef)
-  - [LifecycleExpirationTypeDef](#lifecycleexpirationtypedef)
-  - [LifecycleRuleAndOperatorTypeDef](#lifecycleruleandoperatortypedef)
-  - [LifecycleRuleFilterTypeDef](#lifecyclerulefiltertypedef)
-  - [LifecycleRuleTypeDef](#lifecycleruletypedef)
-  - [ListBucketAnalyticsConfigurationsOutputTypeDef](#listbucketanalyticsconfigurationsoutputtypedef)
-  - [ListBucketAnalyticsConfigurationsRequestRequestTypeDef](#listbucketanalyticsconfigurationsrequestrequesttypedef)
-  - [ListBucketIntelligentTieringConfigurationsOutputTypeDef](#listbucketintelligenttieringconfigurationsoutputtypedef)
-  - [ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef](#listbucketintelligenttieringconfigurationsrequestrequesttypedef)
-  - [ListBucketInventoryConfigurationsOutputTypeDef](#listbucketinventoryconfigurationsoutputtypedef)
-  - [ListBucketInventoryConfigurationsRequestRequestTypeDef](#listbucketinventoryconfigurationsrequestrequesttypedef)
-  - [ListBucketMetricsConfigurationsOutputTypeDef](#listbucketmetricsconfigurationsoutputtypedef)
-  - [ListBucketMetricsConfigurationsRequestRequestTypeDef](#listbucketmetricsconfigurationsrequestrequesttypedef)
-  - [ListBucketsOutputTypeDef](#listbucketsoutputtypedef)
-  - [ListMultipartUploadsOutputTypeDef](#listmultipartuploadsoutputtypedef)
-  - [ListMultipartUploadsRequestRequestTypeDef](#listmultipartuploadsrequestrequesttypedef)
-  - [ListObjectVersionsOutputTypeDef](#listobjectversionsoutputtypedef)
-  - [ListObjectVersionsRequestRequestTypeDef](#listobjectversionsrequestrequesttypedef)
-  - [ListObjectsOutputTypeDef](#listobjectsoutputtypedef)
-  - [ListObjectsRequestRequestTypeDef](#listobjectsrequestrequesttypedef)
-  - [ListObjectsV2OutputTypeDef](#listobjectsv2outputtypedef)
-  - [ListObjectsV2RequestRequestTypeDef](#listobjectsv2requestrequesttypedef)
-  - [ListPartsOutputTypeDef](#listpartsoutputtypedef)
-  - [ListPartsRequestRequestTypeDef](#listpartsrequestrequesttypedef)
-  - [LoggingEnabledResponseMetadataTypeDef](#loggingenabledresponsemetadatatypedef)
-  - [LoggingEnabledTypeDef](#loggingenabledtypedef)
-  - [MetadataEntryTypeDef](#metadataentrytypedef)
-  - [MetricsAndOperatorTypeDef](#metricsandoperatortypedef)
-  - [MetricsConfigurationTypeDef](#metricsconfigurationtypedef)
-  - [MetricsFilterTypeDef](#metricsfiltertypedef)
-  - [MetricsTypeDef](#metricstypedef)
-  - [MultipartUploadPartRequestTypeDef](#multipartuploadpartrequesttypedef)
-  - [MultipartUploadTypeDef](#multipartuploadtypedef)
-  - [NoncurrentVersionExpirationTypeDef](#noncurrentversionexpirationtypedef)
-  - [NoncurrentVersionTransitionTypeDef](#noncurrentversiontransitiontypedef)
-  - [NotificationConfigurationDeprecatedResponseMetadataTypeDef](#notificationconfigurationdeprecatedresponsemetadatatypedef)
-  - [NotificationConfigurationDeprecatedTypeDef](#notificationconfigurationdeprecatedtypedef)
-  - [NotificationConfigurationFilterTypeDef](#notificationconfigurationfiltertypedef)
-  - [NotificationConfigurationResponseMetadataTypeDef](#notificationconfigurationresponsemetadatatypedef)
-  - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
-  - [ObjectCopyRequestTypeDef](#objectcopyrequesttypedef)
-  - [ObjectDownloadFileRequestTypeDef](#objectdownloadfilerequesttypedef)
-  - [ObjectDownloadFileobjRequestTypeDef](#objectdownloadfileobjrequesttypedef)
-  - [ObjectIdentifierTypeDef](#objectidentifiertypedef)
-  - [ObjectLockConfigurationTypeDef](#objectlockconfigurationtypedef)
-  - [ObjectLockLegalHoldTypeDef](#objectlocklegalholdtypedef)
-  - [ObjectLockRetentionTypeDef](#objectlockretentiontypedef)
-  - [ObjectLockRuleTypeDef](#objectlockruletypedef)
-  - [ObjectMultipartUploadRequestTypeDef](#objectmultipartuploadrequesttypedef)
-  - [ObjectPartTypeDef](#objectparttypedef)
-  - [ObjectSummaryMultipartUploadRequestTypeDef](#objectsummarymultipartuploadrequesttypedef)
-  - [ObjectSummaryVersionRequestTypeDef](#objectsummaryversionrequesttypedef)
-  - [ObjectTypeDef](#objecttypedef)
-  - [ObjectUploadFileRequestTypeDef](#objectuploadfilerequesttypedef)
-  - [ObjectUploadFileobjRequestTypeDef](#objectuploadfileobjrequesttypedef)
-  - [ObjectVersionRequestTypeDef](#objectversionrequesttypedef)
-  - [ObjectVersionTypeDef](#objectversiontypedef)
-  - [OutputLocationTypeDef](#outputlocationtypedef)
-  - [OutputSerializationTypeDef](#outputserializationtypedef)
-  - [OwnerResponseMetadataTypeDef](#ownerresponsemetadatatypedef)
-  - [OwnerTypeDef](#ownertypedef)
-  - [OwnershipControlsRuleTypeDef](#ownershipcontrolsruletypedef)
-  - [OwnershipControlsTypeDef](#ownershipcontrolstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PartTypeDef](#parttypedef)
-  - [PolicyStatusTypeDef](#policystatustypedef)
-  - [ProgressEventTypeDef](#progresseventtypedef)
-  - [ProgressTypeDef](#progresstypedef)
-  - [PublicAccessBlockConfigurationTypeDef](#publicaccessblockconfigurationtypedef)
-  - [PutBucketAccelerateConfigurationRequestRequestTypeDef](#putbucketaccelerateconfigurationrequestrequesttypedef)
-  - [PutBucketAclRequestBucketAclPutTypeDef](#putbucketaclrequestbucketaclputtypedef)
-  - [PutBucketAclRequestRequestTypeDef](#putbucketaclrequestrequesttypedef)
-  - [PutBucketAnalyticsConfigurationRequestRequestTypeDef](#putbucketanalyticsconfigurationrequestrequesttypedef)
-  - [PutBucketCorsRequestBucketCorsPutTypeDef](#putbucketcorsrequestbucketcorsputtypedef)
-  - [PutBucketCorsRequestRequestTypeDef](#putbucketcorsrequestrequesttypedef)
-  - [PutBucketEncryptionRequestRequestTypeDef](#putbucketencryptionrequestrequesttypedef)
-  - [PutBucketIntelligentTieringConfigurationRequestRequestTypeDef](#putbucketintelligenttieringconfigurationrequestrequesttypedef)
-  - [PutBucketInventoryConfigurationRequestRequestTypeDef](#putbucketinventoryconfigurationrequestrequesttypedef)
-  - [PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationPutTypeDef](#putbucketlifecycleconfigurationrequestbucketlifecycleconfigurationputtypedef)
-  - [PutBucketLifecycleConfigurationRequestRequestTypeDef](#putbucketlifecycleconfigurationrequestrequesttypedef)
-  - [PutBucketLifecycleRequestBucketLifecyclePutTypeDef](#putbucketlifecyclerequestbucketlifecycleputtypedef)
-  - [PutBucketLifecycleRequestRequestTypeDef](#putbucketlifecyclerequestrequesttypedef)
-  - [PutBucketLoggingRequestBucketLoggingPutTypeDef](#putbucketloggingrequestbucketloggingputtypedef)
-  - [PutBucketLoggingRequestRequestTypeDef](#putbucketloggingrequestrequesttypedef)
-  - [PutBucketMetricsConfigurationRequestRequestTypeDef](#putbucketmetricsconfigurationrequestrequesttypedef)
-  - [PutBucketNotificationConfigurationRequestBucketNotificationPutTypeDef](#putbucketnotificationconfigurationrequestbucketnotificationputtypedef)
-  - [PutBucketNotificationConfigurationRequestRequestTypeDef](#putbucketnotificationconfigurationrequestrequesttypedef)
-  - [PutBucketNotificationRequestRequestTypeDef](#putbucketnotificationrequestrequesttypedef)
-  - [PutBucketOwnershipControlsRequestRequestTypeDef](#putbucketownershipcontrolsrequestrequesttypedef)
-  - [PutBucketPolicyRequestBucketPolicyPutTypeDef](#putbucketpolicyrequestbucketpolicyputtypedef)
-  - [PutBucketPolicyRequestRequestTypeDef](#putbucketpolicyrequestrequesttypedef)
-  - [PutBucketReplicationRequestRequestTypeDef](#putbucketreplicationrequestrequesttypedef)
-  - [PutBucketRequestPaymentRequestBucketRequestPaymentPutTypeDef](#putbucketrequestpaymentrequestbucketrequestpaymentputtypedef)
-  - [PutBucketRequestPaymentRequestRequestTypeDef](#putbucketrequestpaymentrequestrequesttypedef)
-  - [PutBucketTaggingRequestBucketTaggingPutTypeDef](#putbuckettaggingrequestbuckettaggingputtypedef)
-  - [PutBucketTaggingRequestRequestTypeDef](#putbuckettaggingrequestrequesttypedef)
-  - [PutBucketVersioningRequestBucketVersioningEnableTypeDef](#putbucketversioningrequestbucketversioningenabletypedef)
-  - [PutBucketVersioningRequestBucketVersioningPutTypeDef](#putbucketversioningrequestbucketversioningputtypedef)
-  - [PutBucketVersioningRequestBucketVersioningSuspendTypeDef](#putbucketversioningrequestbucketversioningsuspendtypedef)
-  - [PutBucketVersioningRequestRequestTypeDef](#putbucketversioningrequestrequesttypedef)
-  - [PutBucketWebsiteRequestBucketWebsitePutTypeDef](#putbucketwebsiterequestbucketwebsiteputtypedef)
-  - [PutBucketWebsiteRequestRequestTypeDef](#putbucketwebsiterequestrequesttypedef)
-  - [PutObjectAclOutputTypeDef](#putobjectacloutputtypedef)
-  - [PutObjectAclRequestObjectAclPutTypeDef](#putobjectaclrequestobjectaclputtypedef)
-  - [PutObjectAclRequestRequestTypeDef](#putobjectaclrequestrequesttypedef)
-  - [PutObjectLegalHoldOutputTypeDef](#putobjectlegalholdoutputtypedef)
-  - [PutObjectLegalHoldRequestRequestTypeDef](#putobjectlegalholdrequestrequesttypedef)
-  - [PutObjectLockConfigurationOutputTypeDef](#putobjectlockconfigurationoutputtypedef)
-  - [PutObjectLockConfigurationRequestRequestTypeDef](#putobjectlockconfigurationrequestrequesttypedef)
-  - [PutObjectOutputTypeDef](#putobjectoutputtypedef)
-  - [PutObjectRequestBucketPutObjectTypeDef](#putobjectrequestbucketputobjecttypedef)
-  - [PutObjectRequestObjectPutTypeDef](#putobjectrequestobjectputtypedef)
-  - [PutObjectRequestObjectSummaryPutTypeDef](#putobjectrequestobjectsummaryputtypedef)
-  - [PutObjectRequestRequestTypeDef](#putobjectrequestrequesttypedef)
-  - [PutObjectRetentionOutputTypeDef](#putobjectretentionoutputtypedef)
-  - [PutObjectRetentionRequestRequestTypeDef](#putobjectretentionrequestrequesttypedef)
-  - [PutObjectTaggingOutputTypeDef](#putobjecttaggingoutputtypedef)
-  - [PutObjectTaggingRequestRequestTypeDef](#putobjecttaggingrequestrequesttypedef)
-  - [PutPublicAccessBlockRequestRequestTypeDef](#putpublicaccessblockrequestrequesttypedef)
-  - [QueueConfigurationDeprecatedTypeDef](#queueconfigurationdeprecatedtypedef)
-  - [QueueConfigurationTypeDef](#queueconfigurationtypedef)
-  - [RecordsEventTypeDef](#recordseventtypedef)
-  - [RedirectAllRequestsToResponseMetadataTypeDef](#redirectallrequeststoresponsemetadatatypedef)
-  - [RedirectAllRequestsToTypeDef](#redirectallrequeststotypedef)
-  - [RedirectTypeDef](#redirecttypedef)
-  - [ReplicaModificationsTypeDef](#replicamodificationstypedef)
-  - [ReplicationConfigurationTypeDef](#replicationconfigurationtypedef)
-  - [ReplicationRuleAndOperatorTypeDef](#replicationruleandoperatortypedef)
-  - [ReplicationRuleFilterTypeDef](#replicationrulefiltertypedef)
-  - [ReplicationRuleTypeDef](#replicationruletypedef)
-  - [ReplicationTimeTypeDef](#replicationtimetypedef)
-  - [ReplicationTimeValueTypeDef](#replicationtimevaluetypedef)
-  - [RequestPaymentConfigurationTypeDef](#requestpaymentconfigurationtypedef)
-  - [RequestProgressTypeDef](#requestprogresstypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreObjectOutputTypeDef](#restoreobjectoutputtypedef)
-  - [RestoreObjectRequestObjectRestoreObjectTypeDef](#restoreobjectrequestobjectrestoreobjecttypedef)
-  - [RestoreObjectRequestObjectSummaryRestoreObjectTypeDef](#restoreobjectrequestobjectsummaryrestoreobjecttypedef)
-  - [RestoreObjectRequestRequestTypeDef](#restoreobjectrequestrequesttypedef)
-  - [RestoreRequestTypeDef](#restorerequesttypedef)
-  - [RoutingRuleTypeDef](#routingruletypedef)
-  - [RuleTypeDef](#ruletypedef)
-  - [S3KeyFilterTypeDef](#s3keyfiltertypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [SSEKMSTypeDef](#ssekmstypedef)
-  - [ScanRangeTypeDef](#scanrangetypedef)
-  - [SelectObjectContentEventStreamTypeDef](#selectobjectcontenteventstreamtypedef)
-  - [SelectObjectContentOutputTypeDef](#selectobjectcontentoutputtypedef)
-  - [SelectObjectContentRequestRequestTypeDef](#selectobjectcontentrequestrequesttypedef)
-  - [SelectParametersTypeDef](#selectparameterstypedef)
-  - [ServerSideEncryptionByDefaultTypeDef](#serversideencryptionbydefaulttypedef)
-  - [ServerSideEncryptionConfigurationTypeDef](#serversideencryptionconfigurationtypedef)
-  - [ServerSideEncryptionRuleTypeDef](#serversideencryptionruletypedef)
-  - [ServiceResourceBucketAclRequestTypeDef](#serviceresourcebucketaclrequesttypedef)
-  - [ServiceResourceBucketCorsRequestTypeDef](#serviceresourcebucketcorsrequesttypedef)
-  - [ServiceResourceBucketLifecycleConfigurationRequestTypeDef](#serviceresourcebucketlifecycleconfigurationrequesttypedef)
-  - [ServiceResourceBucketLifecycleRequestTypeDef](#serviceresourcebucketlifecyclerequesttypedef)
-  - [ServiceResourceBucketLoggingRequestTypeDef](#serviceresourcebucketloggingrequesttypedef)
-  - [ServiceResourceBucketNotificationRequestTypeDef](#serviceresourcebucketnotificationrequesttypedef)
-  - [ServiceResourceBucketPolicyRequestTypeDef](#serviceresourcebucketpolicyrequesttypedef)
-  - [ServiceResourceBucketRequestPaymentRequestTypeDef](#serviceresourcebucketrequestpaymentrequesttypedef)
-  - [ServiceResourceBucketRequestTypeDef](#serviceresourcebucketrequesttypedef)
-  - [ServiceResourceBucketTaggingRequestTypeDef](#serviceresourcebuckettaggingrequesttypedef)
-  - [ServiceResourceBucketVersioningRequestTypeDef](#serviceresourcebucketversioningrequesttypedef)
-  - [ServiceResourceBucketWebsiteRequestTypeDef](#serviceresourcebucketwebsiterequesttypedef)
-  - [ServiceResourceMultipartUploadPartRequestTypeDef](#serviceresourcemultipartuploadpartrequesttypedef)
-  - [ServiceResourceMultipartUploadRequestTypeDef](#serviceresourcemultipartuploadrequesttypedef)
-  - [ServiceResourceObjectAclRequestTypeDef](#serviceresourceobjectaclrequesttypedef)
-  - [ServiceResourceObjectRequestTypeDef](#serviceresourceobjectrequesttypedef)
-  - [ServiceResourceObjectSummaryRequestTypeDef](#serviceresourceobjectsummaryrequesttypedef)
-  - [ServiceResourceObjectVersionRequestTypeDef](#serviceresourceobjectversionrequesttypedef)
-  - [SourceSelectionCriteriaTypeDef](#sourceselectioncriteriatypedef)
-  - [SseKmsEncryptedObjectsTypeDef](#ssekmsencryptedobjectstypedef)
-  - [StatsEventTypeDef](#statseventtypedef)
-  - [StatsTypeDef](#statstypedef)
-  - [StorageClassAnalysisDataExportTypeDef](#storageclassanalysisdataexporttypedef)
-  - [StorageClassAnalysisTypeDef](#storageclassanalysistypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TaggingTypeDef](#taggingtypedef)
-  - [TargetGrantTypeDef](#targetgranttypedef)
-  - [TieringTypeDef](#tieringtypedef)
-  - [TopicConfigurationDeprecatedTypeDef](#topicconfigurationdeprecatedtypedef)
-  - [TopicConfigurationTypeDef](#topicconfigurationtypedef)
-  - [TransitionTypeDef](#transitiontypedef)
-  - [UploadPartCopyOutputTypeDef](#uploadpartcopyoutputtypedef)
-  - [UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef](#uploadpartcopyrequestmultipartuploadpartcopyfromtypedef)
-  - [UploadPartCopyRequestRequestTypeDef](#uploadpartcopyrequestrequesttypedef)
-  - [UploadPartOutputTypeDef](#uploadpartoutputtypedef)
-  - [UploadPartRequestMultipartUploadPartUploadTypeDef](#uploadpartrequestmultipartuploadpartuploadtypedef)
-  - [UploadPartRequestRequestTypeDef](#uploadpartrequestrequesttypedef)
-  - [VersioningConfigurationTypeDef](#versioningconfigurationtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-  - [WebsiteConfigurationTypeDef](#websiteconfigurationtypedef)
-  - [WriteGetObjectResponseRequestRequestTypeDef](#writegetobjectresponserequestrequesttypedef)
-
-<a id="abortincompletemultipartuploadtypedef"></a>
+    Auto-generated documentation for [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+    type annotations stubs module [mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
 ## AbortIncompleteMultipartUploadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AbortIncompleteMultipartUploadTypeDef
+
+def get_value() -> AbortIncompleteMultipartUploadTypeDef:
+    return {
+        "DaysAfterInitiation": ...,
+    }
 ```
 
-Optional fields:
-
-- `DaysAfterInitiation`: `int`
-
-<a id="abortmultipartuploadoutputtypedef"></a>
+```python title="Definition"
+class AbortIncompleteMultipartUploadTypeDef(TypedDict):
+    DaysAfterInitiation: NotRequired[int],
+```
 
 ## AbortMultipartUploadOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AbortMultipartUploadOutputTypeDef
+
+def get_value() -> AbortMultipartUploadOutputTypeDef:
+    return {
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AbortMultipartUploadOutputTypeDef(TypedDict):
+    RequestCharged: RequestChargedType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="abortmultipartuploadrequestmultipartuploadaborttypedef"></a>
-
+1. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AbortMultipartUploadRequestMultipartUploadAbortTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AbortMultipartUploadRequestMultipartUploadAbortTypeDef
+
+def get_value() -> AbortMultipartUploadRequestMultipartUploadAbortTypeDef:
+    return {
+        "RequestPayer": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AbortMultipartUploadRequestMultipartUploadAbortTypeDef(TypedDict):
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="abortmultipartuploadrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## AbortMultipartUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AbortMultipartUploadRequestRequestTypeDef
+
+def get_value() -> AbortMultipartUploadRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "UploadId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AbortMultipartUploadRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    UploadId: str,
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-- `UploadId`: `str`
-
-Optional fields:
-
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="accelerateconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## AccelerateConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AccelerateConfigurationTypeDef
+
+def get_value() -> AccelerateConfigurationTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccelerateConfigurationTypeDef(TypedDict):
+    Status: NotRequired[BucketAccelerateStatusType],  # (1)
+```
 
-- `Status`:
-  [BucketAccelerateStatusType](./literals.md#bucketacceleratestatustype)
-
-<a id="accesscontrolpolicytypedef"></a>
-
+1. See [:material-code-brackets: BucketAccelerateStatusType](./literals.md#bucketacceleratestatustype) 
 ## AccessControlPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AccessControlPolicyTypeDef
+
+def get_value() -> AccessControlPolicyTypeDef:
+    return {
+        "Grants": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccessControlPolicyTypeDef(TypedDict):
+    Grants: NotRequired[Sequence[GrantTypeDef]],  # (1)
+    Owner: NotRequired[OwnerTypeDef],  # (2)
+```
 
-- `Grants`: `Sequence`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
-- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-
-<a id="accesscontroltranslationtypedef"></a>
-
+1. See [:material-code-braces: GrantTypeDef](./type_defs.md#granttypedef) 
+2. See [:material-code-braces: OwnerTypeDef](./type_defs.md#ownertypedef) 
 ## AccessControlTranslationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AccessControlTranslationTypeDef
+
+def get_value() -> AccessControlTranslationTypeDef:
+    return {
+        "Owner": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessControlTranslationTypeDef(TypedDict):
+    Owner: OwnerOverrideType,  # (1)
+```
 
-- `Owner`: `Literal['Destination']` (see
-  [OwnerOverrideType](./literals.md#owneroverridetype))
-
-<a id="analyticsandoperatortypedef"></a>
-
+1. See [:material-code-brackets: OwnerOverrideType](./literals.md#owneroverridetype) 
 ## AnalyticsAndOperatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AnalyticsAndOperatorTypeDef
+
+def get_value() -> AnalyticsAndOperatorTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnalyticsAndOperatorTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `Prefix`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="analyticsconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AnalyticsConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AnalyticsConfigurationTypeDef
+
+def get_value() -> AnalyticsConfigurationTypeDef:
+    return {
+        "Id": ...,
+        "StorageClassAnalysis": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnalyticsConfigurationTypeDef(TypedDict):
+    Id: str,
+    StorageClassAnalysis: StorageClassAnalysisTypeDef,  # (2)
+    Filter: NotRequired[AnalyticsFilterTypeDef],  # (1)
+```
 
-- `Id`: `str`
-- `StorageClassAnalysis`:
-  [StorageClassAnalysisTypeDef](./type_defs.md#storageclassanalysistypedef)
-
-Optional fields:
-
-- `Filter`: [AnalyticsFilterTypeDef](./type_defs.md#analyticsfiltertypedef)
-
-<a id="analyticsexportdestinationtypedef"></a>
-
+1. See [:material-code-braces: AnalyticsFilterTypeDef](./type_defs.md#analyticsfiltertypedef) 
+2. See [:material-code-braces: StorageClassAnalysisTypeDef](./type_defs.md#storageclassanalysistypedef) 
 ## AnalyticsExportDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AnalyticsExportDestinationTypeDef
+
+def get_value() -> AnalyticsExportDestinationTypeDef:
+    return {
+        "S3BucketDestination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnalyticsExportDestinationTypeDef(TypedDict):
+    S3BucketDestination: AnalyticsS3BucketDestinationTypeDef,  # (1)
+```
 
-- `S3BucketDestination`:
-  [AnalyticsS3BucketDestinationTypeDef](./type_defs.md#analyticss3bucketdestinationtypedef)
-
-<a id="analyticsfiltertypedef"></a>
-
+1. See [:material-code-braces: AnalyticsS3BucketDestinationTypeDef](./type_defs.md#analyticss3bucketdestinationtypedef) 
 ## AnalyticsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AnalyticsFilterTypeDef
+
+def get_value() -> AnalyticsFilterTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnalyticsFilterTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tag: NotRequired[TagTypeDef],  # (1)
+    And: NotRequired[AnalyticsAndOperatorTypeDef],  # (2)
+```
 
-- `Prefix`: `str`
-- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
-- `And`:
-  [AnalyticsAndOperatorTypeDef](./type_defs.md#analyticsandoperatortypedef)
-
-<a id="analyticss3bucketdestinationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: AnalyticsAndOperatorTypeDef](./type_defs.md#analyticsandoperatortypedef) 
 ## AnalyticsS3BucketDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import AnalyticsS3BucketDestinationTypeDef
+
+def get_value() -> AnalyticsS3BucketDestinationTypeDef:
+    return {
+        "Format": ...,
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnalyticsS3BucketDestinationTypeDef(TypedDict):
+    Format: AnalyticsS3ExportFileFormatType,  # (1)
+    Bucket: str,
+    BucketAccountId: NotRequired[str],
+    Prefix: NotRequired[str],
+```
 
-- `Format`: `Literal['CSV']` (see
-  [AnalyticsS3ExportFileFormatType](./literals.md#analyticss3exportfileformattype))
-- `Bucket`: `str`
-
-Optional fields:
-
-- `BucketAccountId`: `str`
-- `Prefix`: `str`
-
-<a id="bucketcopyrequesttypedef"></a>
-
+1. See [:material-code-brackets: AnalyticsS3ExportFileFormatType](./literals.md#analyticss3exportfileformattype) 
 ## BucketCopyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import BucketCopyRequestTypeDef
+
+def get_value() -> BucketCopyRequestTypeDef:
+    return {
+        "CopySource": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BucketCopyRequestTypeDef(TypedDict):
+    CopySource: CopySourceTypeDef,  # (1)
+    Key: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    SourceClient: NotRequired[BaseClient],
+    Config: NotRequired[TransferConfig],
+```
 
-- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
-- `Key`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `SourceClient`: `BaseClient`
-- `Config`: `TransferConfig`
-
-<a id="bucketdownloadfilerequesttypedef"></a>
-
+1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
 ## BucketDownloadFileRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import BucketDownloadFileRequestTypeDef
+
+def get_value() -> BucketDownloadFileRequestTypeDef:
+    return {
+        "Key": ...,
+        "Filename": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Filename`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="bucketdownloadfileobjrequesttypedef"></a>
+```python title="Definition"
+class BucketDownloadFileRequestTypeDef(TypedDict):
+    Key: str,
+    Filename: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## BucketDownloadFileobjRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import BucketDownloadFileobjRequestTypeDef
+
+def get_value() -> BucketDownloadFileobjRequestTypeDef:
+    return {
+        "Key": ...,
+        "Fileobj": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="bucketlifecycleconfigurationtypedef"></a>
+```python title="Definition"
+class BucketDownloadFileobjRequestTypeDef(TypedDict):
+    Key: str,
+    Fileobj: Union[IO[Any], StreamingBody],
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## BucketLifecycleConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import BucketLifecycleConfigurationTypeDef
+
+def get_value() -> BucketLifecycleConfigurationTypeDef:
+    return {
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BucketLifecycleConfigurationTypeDef(TypedDict):
+    Rules: Sequence[LifecycleRuleTypeDef],  # (1)
+```
 
-- `Rules`:
-  `Sequence`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
-
-<a id="bucketloggingstatustypedef"></a>
-
+1. See [:material-code-braces: LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef) 
 ## BucketLoggingStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import BucketLoggingStatusTypeDef
+
+def get_value() -> BucketLoggingStatusTypeDef:
+    return {
+        "LoggingEnabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BucketLoggingStatusTypeDef(TypedDict):
+    LoggingEnabled: NotRequired[LoggingEnabledTypeDef],  # (1)
+```
 
-- `LoggingEnabled`:
-  [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
-
-<a id="bucketobjectrequesttypedef"></a>
-
+1. See [:material-code-braces: LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef) 
 ## BucketObjectRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import BucketObjectRequestTypeDef
+
+def get_value() -> BucketObjectRequestTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Required fields:
-
-- `key`: `str`
-
-<a id="buckettypedef"></a>
+```python title="Definition"
+class BucketObjectRequestTypeDef(TypedDict):
+    key: str,
+```
 
 ## BucketTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import BucketTypeDef
+
+def get_value() -> BucketTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `CreationDate`: `datetime`
-
-<a id="bucketuploadfilerequesttypedef"></a>
+```python title="Definition"
+class BucketTypeDef(TypedDict):
+    Name: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+```
 
 ## BucketUploadFileRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import BucketUploadFileRequestTypeDef
+
+def get_value() -> BucketUploadFileRequestTypeDef:
+    return {
+        "Filename": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Filename`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="bucketuploadfileobjrequesttypedef"></a>
+```python title="Definition"
+class BucketUploadFileRequestTypeDef(TypedDict):
+    Filename: str,
+    Key: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## BucketUploadFileobjRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import BucketUploadFileobjRequestTypeDef
+
+def get_value() -> BucketUploadFileobjRequestTypeDef:
+    return {
+        "Fileobj": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
-- `Key`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="corsconfigurationtypedef"></a>
+```python title="Definition"
+class BucketUploadFileobjRequestTypeDef(TypedDict):
+    Fileobj: Union[IO[Any], StreamingBody],
+    Key: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## CORSConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CORSConfigurationTypeDef
+
+def get_value() -> CORSConfigurationTypeDef:
+    return {
+        "CORSRules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CORSConfigurationTypeDef(TypedDict):
+    CORSRules: Sequence[CORSRuleTypeDef],  # (1)
+```
 
-- `CORSRules`: `Sequence`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
-
-<a id="corsruletypedef"></a>
-
+1. See [:material-code-braces: CORSRuleTypeDef](./type_defs.md#corsruletypedef) 
 ## CORSRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CORSRuleTypeDef
+
+def get_value() -> CORSRuleTypeDef:
+    return {
+        "AllowedMethods": ...,
+        "AllowedOrigins": ...,
+    }
 ```
 
-Required fields:
-
-- `AllowedMethods`: `List`\[`str`\]
-- `AllowedOrigins`: `List`\[`str`\]
-
-Optional fields:
-
-- `ID`: `str`
-- `AllowedHeaders`: `List`\[`str`\]
-- `ExposeHeaders`: `List`\[`str`\]
-- `MaxAgeSeconds`: `int`
-
-<a id="csvinputtypedef"></a>
+```python title="Definition"
+class CORSRuleTypeDef(TypedDict):
+    AllowedMethods: List[str],
+    AllowedOrigins: List[str],
+    ID: NotRequired[str],
+    AllowedHeaders: NotRequired[List[str]],
+    ExposeHeaders: NotRequired[List[str]],
+    MaxAgeSeconds: NotRequired[int],
+```
 
 ## CSVInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CSVInputTypeDef
+
+def get_value() -> CSVInputTypeDef:
+    return {
+        "FileHeaderInfo": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CSVInputTypeDef(TypedDict):
+    FileHeaderInfo: NotRequired[FileHeaderInfoType],  # (1)
+    Comments: NotRequired[str],
+    QuoteEscapeCharacter: NotRequired[str],
+    RecordDelimiter: NotRequired[str],
+    FieldDelimiter: NotRequired[str],
+    QuoteCharacter: NotRequired[str],
+    AllowQuotedRecordDelimiter: NotRequired[bool],
+```
 
-- `FileHeaderInfo`: [FileHeaderInfoType](./literals.md#fileheaderinfotype)
-- `Comments`: `str`
-- `QuoteEscapeCharacter`: `str`
-- `RecordDelimiter`: `str`
-- `FieldDelimiter`: `str`
-- `QuoteCharacter`: `str`
-- `AllowQuotedRecordDelimiter`: `bool`
-
-<a id="csvoutputtypedef"></a>
-
+1. See [:material-code-brackets: FileHeaderInfoType](./literals.md#fileheaderinfotype) 
 ## CSVOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CSVOutputTypeDef
+
+def get_value() -> CSVOutputTypeDef:
+    return {
+        "QuoteFields": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CSVOutputTypeDef(TypedDict):
+    QuoteFields: NotRequired[QuoteFieldsType],  # (1)
+    QuoteEscapeCharacter: NotRequired[str],
+    RecordDelimiter: NotRequired[str],
+    FieldDelimiter: NotRequired[str],
+    QuoteCharacter: NotRequired[str],
+```
 
-- `QuoteFields`: [QuoteFieldsType](./literals.md#quotefieldstype)
-- `QuoteEscapeCharacter`: `str`
-- `RecordDelimiter`: `str`
-- `FieldDelimiter`: `str`
-- `QuoteCharacter`: `str`
-
-<a id="checksumtypedef"></a>
-
+1. See [:material-code-brackets: QuoteFieldsType](./literals.md#quotefieldstype) 
 ## ChecksumTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ChecksumTypeDef
+
+def get_value() -> ChecksumTypeDef:
+    return {
+        "ChecksumCRC32": ...,
+    }
 ```
 
-Optional fields:
-
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-
-<a id="clientcopyrequesttypedef"></a>
+```python title="Definition"
+class ChecksumTypeDef(TypedDict):
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+```
 
 ## ClientCopyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ClientCopyRequestTypeDef
+
+def get_value() -> ClientCopyRequestTypeDef:
+    return {
+        "CopySource": ...,
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClientCopyRequestTypeDef(TypedDict):
+    CopySource: CopySourceTypeDef,  # (1)
+    Bucket: str,
+    Key: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    SourceClient: NotRequired[BaseClient],
+    Config: NotRequired[TransferConfig],
+```
 
-- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `SourceClient`: `BaseClient`
-- `Config`: `TransferConfig`
-
-<a id="clientdownloadfilerequesttypedef"></a>
-
+1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
 ## ClientDownloadFileRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ClientDownloadFileRequestTypeDef
+
+def get_value() -> ClientDownloadFileRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "Filename": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Key`: `str`
-- `Filename`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="clientdownloadfileobjrequesttypedef"></a>
+```python title="Definition"
+class ClientDownloadFileRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    Filename: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## ClientDownloadFileobjRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ClientDownloadFileobjRequestTypeDef
+
+def get_value() -> ClientDownloadFileobjRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "Fileobj": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Key`: `str`
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="clientgeneratepresignedpostrequesttypedef"></a>
+```python title="Definition"
+class ClientDownloadFileobjRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    Fileobj: Union[IO[Any], StreamingBody],
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## ClientGeneratePresignedPostRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ClientGeneratePresignedPostRequestTypeDef
+
+def get_value() -> ClientGeneratePresignedPostRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `Fields`: `Dict`\[`str`, `Any`\]
-- `Conditions`: `List`\[`Any`\]
-- `ExpiresIn`: `int`
-
-<a id="clientuploadfilerequesttypedef"></a>
+```python title="Definition"
+class ClientGeneratePresignedPostRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    Fields: NotRequired[Dict[str, Any]],
+    Conditions: NotRequired[List[Any]],
+    ExpiresIn: NotRequired[int],
+```
 
 ## ClientUploadFileRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ClientUploadFileRequestTypeDef
+
+def get_value() -> ClientUploadFileRequestTypeDef:
+    return {
+        "Filename": ...,
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Filename`: `str`
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="clientuploadfileobjrequesttypedef"></a>
+```python title="Definition"
+class ClientUploadFileRequestTypeDef(TypedDict):
+    Filename: str,
+    Bucket: str,
+    Key: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## ClientUploadFileobjRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ClientUploadFileobjRequestTypeDef
+
+def get_value() -> ClientUploadFileobjRequestTypeDef:
+    return {
+        "Fileobj": ...,
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="cloudfunctionconfigurationtypedef"></a>
+```python title="Definition"
+class ClientUploadFileobjRequestTypeDef(TypedDict):
+    Fileobj: Union[IO[Any], StreamingBody],
+    Bucket: str,
+    Key: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## CloudFunctionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CloudFunctionConfigurationTypeDef
+
+def get_value() -> CloudFunctionConfigurationTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CloudFunctionConfigurationTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Event: NotRequired[EventType],  # (1)
+    Events: NotRequired[List[EventType]],  # (2)
+    CloudFunction: NotRequired[str],
+    InvocationRole: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Event`: [EventType](./literals.md#eventtype)
-- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
-- `CloudFunction`: `str`
-- `InvocationRole`: `str`
-
-<a id="commonprefixtypedef"></a>
-
+1. See [:material-code-brackets: EventType](./literals.md#eventtype) 
+2. See [:material-code-brackets: EventType](./literals.md#eventtype) 
 ## CommonPrefixTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CommonPrefixTypeDef
+
+def get_value() -> CommonPrefixTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `Prefix`: `str`
-
-<a id="completemultipartuploadoutputtypedef"></a>
+```python title="Definition"
+class CommonPrefixTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+```
 
 ## CompleteMultipartUploadOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CompleteMultipartUploadOutputTypeDef
+
+def get_value() -> CompleteMultipartUploadOutputTypeDef:
+    return {
+        "Location": ...,
+        "Bucket": ...,
+        "Key": ...,
+        "Expiration": ...,
+        "ETag": ...,
+        "ChecksumCRC32": ...,
+        "ChecksumCRC32C": ...,
+        "ChecksumSHA1": ...,
+        "ChecksumSHA256": ...,
+        "ServerSideEncryption": ...,
+        "VersionId": ...,
+        "SSEKMSKeyId": ...,
+        "BucketKeyEnabled": ...,
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CompleteMultipartUploadOutputTypeDef(TypedDict):
+    Location: str,
+    Bucket: str,
+    Key: str,
+    Expiration: str,
+    ETag: str,
+    ChecksumCRC32: str,
+    ChecksumCRC32C: str,
+    ChecksumSHA1: str,
+    ChecksumSHA256: str,
+    ServerSideEncryption: ServerSideEncryptionType,  # (1)
+    VersionId: str,
+    SSEKMSKeyId: str,
+    BucketKeyEnabled: bool,
+    RequestCharged: RequestChargedType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Location`: `str`
-- `Bucket`: `str`
-- `Key`: `str`
-- `Expiration`: `str`
-- `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `VersionId`: `str`
-- `SSEKMSKeyId`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="completemultipartuploadrequestmultipartuploadcompletetypedef"></a>
-
+1. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+2. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CompleteMultipartUploadRequestMultipartUploadCompleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CompleteMultipartUploadRequestMultipartUploadCompleteTypeDef
+
+def get_value() -> CompleteMultipartUploadRequestMultipartUploadCompleteTypeDef:
+    return {
+        "MultipartUpload": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CompleteMultipartUploadRequestMultipartUploadCompleteTypeDef(TypedDict):
+    MultipartUpload: NotRequired[CompletedMultipartUploadTypeDef],  # (1)
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+```
 
-- `MultipartUpload`:
-  [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-
-<a id="completemultipartuploadrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## CompleteMultipartUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CompleteMultipartUploadRequestRequestTypeDef
+
+def get_value() -> CompleteMultipartUploadRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "UploadId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CompleteMultipartUploadRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    UploadId: str,
+    MultipartUpload: NotRequired[CompletedMultipartUploadTypeDef],  # (1)
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-- `UploadId`: `str`
-
-Optional fields:
-
-- `MultipartUpload`:
-  [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-
-<a id="completedmultipartuploadtypedef"></a>
-
+1. See [:material-code-braces: CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## CompletedMultipartUploadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CompletedMultipartUploadTypeDef
+
+def get_value() -> CompletedMultipartUploadTypeDef:
+    return {
+        "Parts": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CompletedMultipartUploadTypeDef(TypedDict):
+    Parts: NotRequired[Sequence[CompletedPartTypeDef]],  # (1)
+```
 
-- `Parts`:
-  `Sequence`\[[CompletedPartTypeDef](./type_defs.md#completedparttypedef)\]
-
-<a id="completedparttypedef"></a>
-
+1. See [:material-code-braces: CompletedPartTypeDef](./type_defs.md#completedparttypedef) 
 ## CompletedPartTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CompletedPartTypeDef
+
+def get_value() -> CompletedPartTypeDef:
+    return {
+        "ETag": ...,
+    }
 ```
 
-Optional fields:
-
-- `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `PartNumber`: `int`
-
-<a id="conditiontypedef"></a>
+```python title="Definition"
+class CompletedPartTypeDef(TypedDict):
+    ETag: NotRequired[str],
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    PartNumber: NotRequired[int],
+```
 
 ## ConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ConditionTypeDef
+
+def get_value() -> ConditionTypeDef:
+    return {
+        "HttpErrorCodeReturnedEquals": ...,
+    }
 ```
 
-Optional fields:
-
-- `HttpErrorCodeReturnedEquals`: `str`
-- `KeyPrefixEquals`: `str`
-
-<a id="copyobjectoutputtypedef"></a>
+```python title="Definition"
+class ConditionTypeDef(TypedDict):
+    HttpErrorCodeReturnedEquals: NotRequired[str],
+    KeyPrefixEquals: NotRequired[str],
+```
 
 ## CopyObjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CopyObjectOutputTypeDef
+
+def get_value() -> CopyObjectOutputTypeDef:
+    return {
+        "CopyObjectResult": ...,
+        "Expiration": ...,
+        "CopySourceVersionId": ...,
+        "VersionId": ...,
+        "ServerSideEncryption": ...,
+        "SSECustomerAlgorithm": ...,
+        "SSECustomerKeyMD5": ...,
+        "SSEKMSKeyId": ...,
+        "SSEKMSEncryptionContext": ...,
+        "BucketKeyEnabled": ...,
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyObjectOutputTypeDef(TypedDict):
+    CopyObjectResult: CopyObjectResultTypeDef,  # (1)
+    Expiration: str,
+    CopySourceVersionId: str,
+    VersionId: str,
+    ServerSideEncryption: ServerSideEncryptionType,  # (2)
+    SSECustomerAlgorithm: str,
+    SSECustomerKeyMD5: str,
+    SSEKMSKeyId: str,
+    SSEKMSEncryptionContext: str,
+    BucketKeyEnabled: bool,
+    RequestCharged: RequestChargedType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `CopyObjectResult`:
-  [CopyObjectResultTypeDef](./type_defs.md#copyobjectresulttypedef)
-- `Expiration`: `str`
-- `CopySourceVersionId`: `str`
-- `VersionId`: `str`
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="copyobjectrequestobjectcopyfromtypedef"></a>
-
+1. See [:material-code-braces: CopyObjectResultTypeDef](./type_defs.md#copyobjectresulttypedef) 
+2. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+3. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CopyObjectRequestObjectCopyFromTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CopyObjectRequestObjectCopyFromTypeDef
+
+def get_value() -> CopyObjectRequestObjectCopyFromTypeDef:
+    return {
+        "CopySource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyObjectRequestObjectCopyFromTypeDef(TypedDict):
+    CopySource: str,
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    CacheControl: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentType: NotRequired[str],
+    CopySourceIfMatch: NotRequired[str],
+    CopySourceIfModifiedSince: NotRequired[Union[datetime, str]],
+    CopySourceIfNoneMatch: NotRequired[str],
+    CopySourceIfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    MetadataDirective: NotRequired[MetadataDirectiveType],  # (3)
+    TaggingDirective: NotRequired[TaggingDirectiveType],  # (4)
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (5)
+    StorageClass: NotRequired[StorageClassType],  # (6)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    CopySourceSSECustomerAlgorithm: NotRequired[str],
+    CopySourceSSECustomerKey: NotRequired[str],
+    CopySourceSSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (7)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (8)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (9)
+    ExpectedBucketOwner: NotRequired[str],
+    ExpectedSourceBucketOwner: NotRequired[str],
+```
 
-- `CopySource`: `str`
-
-Optional fields:
-
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `MetadataDirective`:
-  [MetadataDirectiveType](./literals.md#metadatadirectivetype)
-- `TaggingDirective`:
-  [TaggingDirectiveType](./literals.md#taggingdirectivetype)
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `CopySourceSSECustomerAlgorithm`: `str`
-- `CopySourceSSECustomerKey`: `str`
-- `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ExpectedSourceBucketOwner`: `str`
-
-<a id="copyobjectrequestobjectsummarycopyfromtypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: MetadataDirectiveType](./literals.md#metadatadirectivetype) 
+4. See [:material-code-brackets: TaggingDirectiveType](./literals.md#taggingdirectivetype) 
+5. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+6. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+7. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+8. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+9. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
 ## CopyObjectRequestObjectSummaryCopyFromTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CopyObjectRequestObjectSummaryCopyFromTypeDef
+
+def get_value() -> CopyObjectRequestObjectSummaryCopyFromTypeDef:
+    return {
+        "CopySource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyObjectRequestObjectSummaryCopyFromTypeDef(TypedDict):
+    CopySource: str,
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    CacheControl: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentType: NotRequired[str],
+    CopySourceIfMatch: NotRequired[str],
+    CopySourceIfModifiedSince: NotRequired[Union[datetime, str]],
+    CopySourceIfNoneMatch: NotRequired[str],
+    CopySourceIfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    MetadataDirective: NotRequired[MetadataDirectiveType],  # (3)
+    TaggingDirective: NotRequired[TaggingDirectiveType],  # (4)
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (5)
+    StorageClass: NotRequired[StorageClassType],  # (6)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    CopySourceSSECustomerAlgorithm: NotRequired[str],
+    CopySourceSSECustomerKey: NotRequired[str],
+    CopySourceSSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (7)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (8)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (9)
+    ExpectedBucketOwner: NotRequired[str],
+    ExpectedSourceBucketOwner: NotRequired[str],
+```
 
-- `CopySource`: `str`
-
-Optional fields:
-
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `MetadataDirective`:
-  [MetadataDirectiveType](./literals.md#metadatadirectivetype)
-- `TaggingDirective`:
-  [TaggingDirectiveType](./literals.md#taggingdirectivetype)
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `CopySourceSSECustomerAlgorithm`: `str`
-- `CopySourceSSECustomerKey`: `str`
-- `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ExpectedSourceBucketOwner`: `str`
-
-<a id="copyobjectrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: MetadataDirectiveType](./literals.md#metadatadirectivetype) 
+4. See [:material-code-brackets: TaggingDirectiveType](./literals.md#taggingdirectivetype) 
+5. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+6. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+7. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+8. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+9. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
 ## CopyObjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CopyObjectRequestRequestTypeDef
+
+def get_value() -> CopyObjectRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "CopySource": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyObjectRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    CopySource: Union[str, CopySourceTypeDef],  # (1)
+    Key: str,
+    ACL: NotRequired[ObjectCannedACLType],  # (2)
+    CacheControl: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentType: NotRequired[str],
+    CopySourceIfMatch: NotRequired[str],
+    CopySourceIfModifiedSince: NotRequired[Union[datetime, str]],
+    CopySourceIfNoneMatch: NotRequired[str],
+    CopySourceIfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    MetadataDirective: NotRequired[MetadataDirectiveType],  # (4)
+    TaggingDirective: NotRequired[TaggingDirectiveType],  # (5)
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (6)
+    StorageClass: NotRequired[StorageClassType],  # (7)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    CopySourceSSECustomerAlgorithm: NotRequired[str],
+    CopySourceSSECustomerKey: NotRequired[str],
+    CopySourceSSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (8)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (9)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (10)
+    ExpectedBucketOwner: NotRequired[str],
+    ExpectedSourceBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `CopySource`: `Union`\[`str`,
-  [CopySourceTypeDef](./type_defs.md#copysourcetypedef)\]
-- `Key`: `str`
-
-Optional fields:
-
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `MetadataDirective`:
-  [MetadataDirectiveType](./literals.md#metadatadirectivetype)
-- `TaggingDirective`:
-  [TaggingDirectiveType](./literals.md#taggingdirectivetype)
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `CopySourceSSECustomerAlgorithm`: `str`
-- `CopySourceSSECustomerKey`: `str`
-- `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ExpectedSourceBucketOwner`: `str`
-
-<a id="copyobjectresulttypedef"></a>
-
+1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
+2. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+4. See [:material-code-brackets: MetadataDirectiveType](./literals.md#metadatadirectivetype) 
+5. See [:material-code-brackets: TaggingDirectiveType](./literals.md#taggingdirectivetype) 
+6. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+7. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+8. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+9. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+10. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
 ## CopyObjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CopyObjectResultTypeDef
+
+def get_value() -> CopyObjectResultTypeDef:
+    return {
+        "ETag": ...,
+    }
 ```
 
-Optional fields:
-
-- `ETag`: `str`
-- `LastModified`: `datetime`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-
-<a id="copypartresulttypedef"></a>
+```python title="Definition"
+class CopyObjectResultTypeDef(TypedDict):
+    ETag: NotRequired[str],
+    LastModified: NotRequired[datetime],
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+```
 
 ## CopyPartResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CopyPartResultTypeDef
+
+def get_value() -> CopyPartResultTypeDef:
+    return {
+        "ETag": ...,
+    }
 ```
 
-Optional fields:
-
-- `ETag`: `str`
-- `LastModified`: `datetime`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-
-<a id="copysourcetypedef"></a>
+```python title="Definition"
+class CopyPartResultTypeDef(TypedDict):
+    ETag: NotRequired[str],
+    LastModified: NotRequired[datetime],
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+```
 
 ## CopySourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CopySourceTypeDef
+
+def get_value() -> CopySourceTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-
-<a id="createbucketconfigurationtypedef"></a>
+```python title="Definition"
+class CopySourceTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    VersionId: NotRequired[str],
+```
 
 ## CreateBucketConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CreateBucketConfigurationTypeDef
+
+def get_value() -> CreateBucketConfigurationTypeDef:
+    return {
+        "LocationConstraint": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateBucketConfigurationTypeDef(TypedDict):
+    LocationConstraint: NotRequired[BucketLocationConstraintType],  # (1)
+```
 
-- `LocationConstraint`:
-  [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
-
-<a id="createbucketoutputtypedef"></a>
-
+1. See [:material-code-brackets: BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype) 
 ## CreateBucketOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CreateBucketOutputTypeDef
+
+def get_value() -> CreateBucketOutputTypeDef:
+    return {
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBucketOutputTypeDef(TypedDict):
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbucketrequestbucketcreatetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBucketRequestBucketCreateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CreateBucketRequestBucketCreateTypeDef
+
+def get_value() -> CreateBucketRequestBucketCreateTypeDef:
+    return {
+        "ACL": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateBucketRequestBucketCreateTypeDef(TypedDict):
+    ACL: NotRequired[BucketCannedACLType],  # (1)
+    CreateBucketConfiguration: NotRequired[CreateBucketConfigurationTypeDef],  # (2)
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWrite: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    ObjectLockEnabledForBucket: NotRequired[bool],
+    ObjectOwnership: NotRequired[ObjectOwnershipType],  # (3)
+```
 
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ObjectLockEnabledForBucket`: `bool`
-- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
-
-<a id="createbucketrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef) 
+3. See [:material-code-brackets: ObjectOwnershipType](./literals.md#objectownershiptype) 
 ## CreateBucketRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CreateBucketRequestRequestTypeDef
+
+def get_value() -> CreateBucketRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBucketRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ACL: NotRequired[BucketCannedACLType],  # (1)
+    CreateBucketConfiguration: NotRequired[CreateBucketConfigurationTypeDef],  # (2)
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWrite: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    ObjectLockEnabledForBucket: NotRequired[bool],
+    ObjectOwnership: NotRequired[ObjectOwnershipType],  # (3)
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ObjectLockEnabledForBucket`: `bool`
-- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
-
-<a id="createbucketrequestserviceresourcecreatebuckettypedef"></a>
-
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef) 
+3. See [:material-code-brackets: ObjectOwnershipType](./literals.md#objectownershiptype) 
 ## CreateBucketRequestServiceResourceCreateBucketTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CreateBucketRequestServiceResourceCreateBucketTypeDef
+
+def get_value() -> CreateBucketRequestServiceResourceCreateBucketTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBucketRequestServiceResourceCreateBucketTypeDef(TypedDict):
+    Bucket: str,
+    ACL: NotRequired[BucketCannedACLType],  # (1)
+    CreateBucketConfiguration: NotRequired[CreateBucketConfigurationTypeDef],  # (2)
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWrite: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    ObjectLockEnabledForBucket: NotRequired[bool],
+    ObjectOwnership: NotRequired[ObjectOwnershipType],  # (3)
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ObjectLockEnabledForBucket`: `bool`
-- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
-
-<a id="createmultipartuploadoutputtypedef"></a>
-
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef) 
+3. See [:material-code-brackets: ObjectOwnershipType](./literals.md#objectownershiptype) 
 ## CreateMultipartUploadOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CreateMultipartUploadOutputTypeDef
+
+def get_value() -> CreateMultipartUploadOutputTypeDef:
+    return {
+        "AbortDate": ...,
+        "AbortRuleId": ...,
+        "Bucket": ...,
+        "Key": ...,
+        "UploadId": ...,
+        "ServerSideEncryption": ...,
+        "SSECustomerAlgorithm": ...,
+        "SSECustomerKeyMD5": ...,
+        "SSEKMSKeyId": ...,
+        "SSEKMSEncryptionContext": ...,
+        "BucketKeyEnabled": ...,
+        "RequestCharged": ...,
+        "ChecksumAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMultipartUploadOutputTypeDef(TypedDict):
+    AbortDate: datetime,
+    AbortRuleId: str,
+    Bucket: str,
+    Key: str,
+    UploadId: str,
+    ServerSideEncryption: ServerSideEncryptionType,  # (1)
+    SSECustomerAlgorithm: str,
+    SSECustomerKeyMD5: str,
+    SSEKMSKeyId: str,
+    SSEKMSEncryptionContext: str,
+    BucketKeyEnabled: bool,
+    RequestCharged: RequestChargedType,  # (2)
+    ChecksumAlgorithm: ChecksumAlgorithmType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `AbortDate`: `datetime`
-- `AbortRuleId`: `str`
-- `Bucket`: `str`
-- `Key`: `str`
-- `UploadId`: `str`
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmultipartuploadrequestobjectinitiatemultipartuploadtypedef"></a>
-
+1. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+2. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMultipartUploadRequestObjectInitiateMultipartUploadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CreateMultipartUploadRequestObjectInitiateMultipartUploadTypeDef
+
+def get_value() -> CreateMultipartUploadRequestObjectInitiateMultipartUploadTypeDef:
+    return {
+        "ACL": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateMultipartUploadRequestObjectInitiateMultipartUploadTypeDef(TypedDict):
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    CacheControl: NotRequired[str],
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentType: NotRequired[str],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (2)
+    StorageClass: NotRequired[StorageClassType],  # (3)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    RequestPayer: NotRequired[RequestPayerType],  # (4)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (5)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (6)
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (7)
+```
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-
-<a id="createmultipartuploadrequestobjectsummaryinitiatemultipartuploadtypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+3. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+4. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+5. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+6. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+7. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## CreateMultipartUploadRequestObjectSummaryInitiateMultipartUploadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CreateMultipartUploadRequestObjectSummaryInitiateMultipartUploadTypeDef
+
+def get_value() -> CreateMultipartUploadRequestObjectSummaryInitiateMultipartUploadTypeDef:
+    return {
+        "ACL": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateMultipartUploadRequestObjectSummaryInitiateMultipartUploadTypeDef(TypedDict):
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    CacheControl: NotRequired[str],
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentType: NotRequired[str],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (2)
+    StorageClass: NotRequired[StorageClassType],  # (3)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    RequestPayer: NotRequired[RequestPayerType],  # (4)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (5)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (6)
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (7)
+```
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-
-<a id="createmultipartuploadrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+3. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+4. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+5. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+6. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+7. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## CreateMultipartUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import CreateMultipartUploadRequestRequestTypeDef
+
+def get_value() -> CreateMultipartUploadRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMultipartUploadRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    CacheControl: NotRequired[str],
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentType: NotRequired[str],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (2)
+    StorageClass: NotRequired[StorageClassType],  # (3)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    RequestPayer: NotRequired[RequestPayerType],  # (4)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (5)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (6)
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (7)
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-
-<a id="defaultretentiontypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+3. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+4. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+5. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+6. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+7. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## DefaultRetentionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DefaultRetentionTypeDef
+
+def get_value() -> DefaultRetentionTypeDef:
+    return {
+        "Mode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DefaultRetentionTypeDef(TypedDict):
+    Mode: NotRequired[ObjectLockRetentionModeType],  # (1)
+    Days: NotRequired[int],
+    Years: NotRequired[int],
+```
 
-- `Mode`:
-  [ObjectLockRetentionModeType](./literals.md#objectlockretentionmodetype)
-- `Days`: `int`
-- `Years`: `int`
-
-<a id="deletebucketanalyticsconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ObjectLockRetentionModeType](./literals.md#objectlockretentionmodetype) 
 ## DeleteBucketAnalyticsConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketAnalyticsConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteBucketAnalyticsConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Id`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketcorsrequestbucketcorsdeletetypedef"></a>
+```python title="Definition"
+class DeleteBucketAnalyticsConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketCorsRequestBucketCorsDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketCorsRequestBucketCorsDeleteTypeDef
+
+def get_value() -> DeleteBucketCorsRequestBucketCorsDeleteTypeDef:
+    return {
+        "ExpectedBucketOwner": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketcorsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketCorsRequestBucketCorsDeleteTypeDef(TypedDict):
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketCorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketCorsRequestRequestTypeDef
+
+def get_value() -> DeleteBucketCorsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketencryptionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketCorsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketEncryptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketEncryptionRequestRequestTypeDef
+
+def get_value() -> DeleteBucketEncryptionRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketintelligenttieringconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketEncryptionRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Id`: `str`
-
-<a id="deletebucketinventoryconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+```
 
 ## DeleteBucketInventoryConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketInventoryConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteBucketInventoryConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Id`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketlifecyclerequestbucketlifecycleconfigurationdeletetypedef"></a>
+```python title="Definition"
+class DeleteBucketInventoryConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketLifecycleRequestBucketLifecycleConfigurationDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketLifecycleRequestBucketLifecycleConfigurationDeleteTypeDef
+
+def get_value() -> DeleteBucketLifecycleRequestBucketLifecycleConfigurationDeleteTypeDef:
+    return {
+        "ExpectedBucketOwner": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketlifecyclerequestbucketlifecycledeletetypedef"></a>
+```python title="Definition"
+class DeleteBucketLifecycleRequestBucketLifecycleConfigurationDeleteTypeDef(TypedDict):
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketLifecycleRequestBucketLifecycleDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketLifecycleRequestBucketLifecycleDeleteTypeDef
+
+def get_value() -> DeleteBucketLifecycleRequestBucketLifecycleDeleteTypeDef:
+    return {
+        "ExpectedBucketOwner": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketlifecyclerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketLifecycleRequestBucketLifecycleDeleteTypeDef(TypedDict):
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketLifecycleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketLifecycleRequestRequestTypeDef
+
+def get_value() -> DeleteBucketLifecycleRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketmetricsconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketLifecycleRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketMetricsConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketMetricsConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteBucketMetricsConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Id`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketownershipcontrolsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketMetricsConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketOwnershipControlsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketOwnershipControlsRequestRequestTypeDef
+
+def get_value() -> DeleteBucketOwnershipControlsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketpolicyrequestbucketpolicydeletetypedef"></a>
+```python title="Definition"
+class DeleteBucketOwnershipControlsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketPolicyRequestBucketPolicyDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketPolicyRequestBucketPolicyDeleteTypeDef
+
+def get_value() -> DeleteBucketPolicyRequestBucketPolicyDeleteTypeDef:
+    return {
+        "ExpectedBucketOwner": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketPolicyRequestBucketPolicyDeleteTypeDef(TypedDict):
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteBucketPolicyRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketreplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketPolicyRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketReplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketReplicationRequestRequestTypeDef
+
+def get_value() -> DeleteBucketReplicationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketrequestbucketdeletetypedef"></a>
+```python title="Definition"
+class DeleteBucketReplicationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketRequestBucketDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketRequestBucketDeleteTypeDef
+
+def get_value() -> DeleteBucketRequestBucketDeleteTypeDef:
+    return {
+        "ExpectedBucketOwner": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketRequestBucketDeleteTypeDef(TypedDict):
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketRequestRequestTypeDef
+
+def get_value() -> DeleteBucketRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebuckettaggingrequestbuckettaggingdeletetypedef"></a>
+```python title="Definition"
+class DeleteBucketRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketTaggingRequestBucketTaggingDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketTaggingRequestBucketTaggingDeleteTypeDef
+
+def get_value() -> DeleteBucketTaggingRequestBucketTaggingDeleteTypeDef:
+    return {
+        "ExpectedBucketOwner": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebuckettaggingrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketTaggingRequestBucketTaggingDeleteTypeDef(TypedDict):
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketTaggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketTaggingRequestRequestTypeDef
+
+def get_value() -> DeleteBucketTaggingRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketwebsiterequestbucketwebsitedeletetypedef"></a>
+```python title="Definition"
+class DeleteBucketTaggingRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketWebsiteRequestBucketWebsiteDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketWebsiteRequestBucketWebsiteDeleteTypeDef
+
+def get_value() -> DeleteBucketWebsiteRequestBucketWebsiteDeleteTypeDef:
+    return {
+        "ExpectedBucketOwner": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletebucketwebsiterequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBucketWebsiteRequestBucketWebsiteDeleteTypeDef(TypedDict):
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteBucketWebsiteRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteBucketWebsiteRequestRequestTypeDef
+
+def get_value() -> DeleteBucketWebsiteRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletemarkerentrytypedef"></a>
+```python title="Definition"
+class DeleteBucketWebsiteRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteMarkerEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteMarkerEntryTypeDef
+
+def get_value() -> DeleteMarkerEntryTypeDef:
+    return {
+        "Owner": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeleteMarkerEntryTypeDef(TypedDict):
+    Owner: NotRequired[OwnerTypeDef],  # (1)
+    Key: NotRequired[str],
+    VersionId: NotRequired[str],
+    IsLatest: NotRequired[bool],
+    LastModified: NotRequired[datetime],
+```
 
-- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-- `Key`: `str`
-- `VersionId`: `str`
-- `IsLatest`: `bool`
-- `LastModified`: `datetime`
-
-<a id="deletemarkerreplicationtypedef"></a>
-
+1. See [:material-code-braces: OwnerTypeDef](./type_defs.md#ownertypedef) 
 ## DeleteMarkerReplicationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteMarkerReplicationTypeDef
+
+def get_value() -> DeleteMarkerReplicationTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeleteMarkerReplicationTypeDef(TypedDict):
+    Status: NotRequired[DeleteMarkerReplicationStatusType],  # (1)
+```
 
-- `Status`:
-  [DeleteMarkerReplicationStatusType](./literals.md#deletemarkerreplicationstatustype)
-
-<a id="deleteobjectoutputtypedef"></a>
-
+1. See [:material-code-brackets: DeleteMarkerReplicationStatusType](./literals.md#deletemarkerreplicationstatustype) 
 ## DeleteObjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectOutputTypeDef
+
+def get_value() -> DeleteObjectOutputTypeDef:
+    return {
+        "DeleteMarker": ...,
+        "VersionId": ...,
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteObjectOutputTypeDef(TypedDict):
+    DeleteMarker: bool,
+    VersionId: str,
+    RequestCharged: RequestChargedType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeleteMarker`: `bool`
-- `VersionId`: `str`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteobjectrequestobjectdeletetypedef"></a>
-
+1. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteObjectRequestObjectDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectRequestObjectDeleteTypeDef
+
+def get_value() -> DeleteObjectRequestObjectDeleteTypeDef:
+    return {
+        "MFA": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeleteObjectRequestObjectDeleteTypeDef(TypedDict):
+    MFA: NotRequired[str],
+    VersionId: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    BypassGovernanceRetention: NotRequired[bool],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `MFA`: `str`
-- `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
-
-<a id="deleteobjectrequestobjectsummarydeletetypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## DeleteObjectRequestObjectSummaryDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectRequestObjectSummaryDeleteTypeDef
+
+def get_value() -> DeleteObjectRequestObjectSummaryDeleteTypeDef:
+    return {
+        "MFA": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeleteObjectRequestObjectSummaryDeleteTypeDef(TypedDict):
+    MFA: NotRequired[str],
+    VersionId: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    BypassGovernanceRetention: NotRequired[bool],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `MFA`: `str`
-- `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
-
-<a id="deleteobjectrequestobjectversiondeletetypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## DeleteObjectRequestObjectVersionDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectRequestObjectVersionDeleteTypeDef
+
+def get_value() -> DeleteObjectRequestObjectVersionDeleteTypeDef:
+    return {
+        "MFA": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeleteObjectRequestObjectVersionDeleteTypeDef(TypedDict):
+    MFA: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    BypassGovernanceRetention: NotRequired[bool],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `MFA`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
-
-<a id="deleteobjectrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## DeleteObjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectRequestRequestTypeDef
+
+def get_value() -> DeleteObjectRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteObjectRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    MFA: NotRequired[str],
+    VersionId: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    BypassGovernanceRetention: NotRequired[bool],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `MFA`: `str`
-- `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
-
-<a id="deleteobjecttaggingoutputtypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## DeleteObjectTaggingOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectTaggingOutputTypeDef
+
+def get_value() -> DeleteObjectTaggingOutputTypeDef:
+    return {
+        "VersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteObjectTaggingOutputTypeDef(TypedDict):
+    VersionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VersionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteobjecttaggingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteObjectTaggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectTaggingRequestRequestTypeDef
+
+def get_value() -> DeleteObjectTaggingRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="deleteobjectsoutputtypedef"></a>
+```python title="Definition"
+class DeleteObjectTaggingRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    VersionId: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteObjectsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectsOutputTypeDef
+
+def get_value() -> DeleteObjectsOutputTypeDef:
+    return {
+        "Deleted": ...,
+        "RequestCharged": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteObjectsOutputTypeDef(TypedDict):
+    Deleted: List[DeletedObjectTypeDef],  # (1)
+    RequestCharged: RequestChargedType,  # (2)
+    Errors: List[ErrorTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Deleted`:
-  `List`\[[DeletedObjectTypeDef](./type_defs.md#deletedobjecttypedef)\]
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `Errors`: `List`\[[ErrorTypeDef](./type_defs.md#errortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteobjectsrequestbucketdeleteobjectstypedef"></a>
-
+1. See [:material-code-braces: DeletedObjectTypeDef](./type_defs.md#deletedobjecttypedef) 
+2. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+3. See [:material-code-braces: ErrorTypeDef](./type_defs.md#errortypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteObjectsRequestBucketDeleteObjectsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectsRequestBucketDeleteObjectsTypeDef
+
+def get_value() -> DeleteObjectsRequestBucketDeleteObjectsTypeDef:
+    return {
+        "Delete": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteObjectsRequestBucketDeleteObjectsTypeDef(TypedDict):
+    Delete: DeleteTypeDef,  # (1)
+    MFA: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    BypassGovernanceRetention: NotRequired[bool],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+```
 
-- `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef)
-
-Optional fields:
-
-- `MFA`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-
-<a id="deleteobjectsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeleteTypeDef](./type_defs.md#deletetypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## DeleteObjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteObjectsRequestRequestTypeDef
+
+def get_value() -> DeleteObjectsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Delete": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteObjectsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Delete: DeleteTypeDef,  # (1)
+    MFA: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    BypassGovernanceRetention: NotRequired[bool],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+```
 
-- `Bucket`: `str`
-- `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef)
-
-Optional fields:
-
-- `MFA`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-
-<a id="deletepublicaccessblockrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeleteTypeDef](./type_defs.md#deletetypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## DeletePublicAccessBlockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeletePublicAccessBlockRequestRequestTypeDef
+
+def get_value() -> DeletePublicAccessBlockRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="deletetypedef"></a>
+```python title="Definition"
+class DeletePublicAccessBlockRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## DeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeleteTypeDef
+
+def get_value() -> DeleteTypeDef:
+    return {
+        "Objects": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTypeDef(TypedDict):
+    Objects: Sequence[ObjectIdentifierTypeDef],  # (1)
+    Quiet: NotRequired[bool],
+```
 
-- `Objects`:
-  `Sequence`\[[ObjectIdentifierTypeDef](./type_defs.md#objectidentifiertypedef)\]
-
-Optional fields:
-
-- `Quiet`: `bool`
-
-<a id="deletedobjecttypedef"></a>
-
+1. See [:material-code-braces: ObjectIdentifierTypeDef](./type_defs.md#objectidentifiertypedef) 
 ## DeletedObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DeletedObjectTypeDef
+
+def get_value() -> DeletedObjectTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `VersionId`: `str`
-- `DeleteMarker`: `bool`
-- `DeleteMarkerVersionId`: `str`
-
-<a id="destinationtypedef"></a>
+```python title="Definition"
+class DeletedObjectTypeDef(TypedDict):
+    Key: NotRequired[str],
+    VersionId: NotRequired[str],
+    DeleteMarker: NotRequired[bool],
+    DeleteMarkerVersionId: NotRequired[str],
+```
 
 ## DestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import DestinationTypeDef
+
+def get_value() -> DestinationTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DestinationTypeDef(TypedDict):
+    Bucket: str,
+    Account: NotRequired[str],
+    StorageClass: NotRequired[StorageClassType],  # (1)
+    AccessControlTranslation: NotRequired[AccessControlTranslationTypeDef],  # (2)
+    EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (3)
+    ReplicationTime: NotRequired[ReplicationTimeTypeDef],  # (4)
+    Metrics: NotRequired[MetricsTypeDef],  # (5)
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Account`: `str`
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `AccessControlTranslation`:
-  [AccessControlTranslationTypeDef](./type_defs.md#accesscontroltranslationtypedef)
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-- `ReplicationTime`:
-  [ReplicationTimeTypeDef](./type_defs.md#replicationtimetypedef)
-- `Metrics`: [MetricsTypeDef](./type_defs.md#metricstypedef)
-
-<a id="encryptionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+2. See [:material-code-braces: AccessControlTranslationTypeDef](./type_defs.md#accesscontroltranslationtypedef) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: ReplicationTimeTypeDef](./type_defs.md#replicationtimetypedef) 
+5. See [:material-code-braces: MetricsTypeDef](./type_defs.md#metricstypedef) 
 ## EncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import EncryptionConfigurationTypeDef
+
+def get_value() -> EncryptionConfigurationTypeDef:
+    return {
+        "ReplicaKmsKeyID": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReplicaKmsKeyID`: `str`
-
-<a id="encryptiontypedef"></a>
+```python title="Definition"
+class EncryptionConfigurationTypeDef(TypedDict):
+    ReplicaKmsKeyID: NotRequired[str],
+```
 
 ## EncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import EncryptionTypeDef
+
+def get_value() -> EncryptionTypeDef:
+    return {
+        "EncryptionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EncryptionTypeDef(TypedDict):
+    EncryptionType: ServerSideEncryptionType,  # (1)
+    KMSKeyId: NotRequired[str],
+    KMSContext: NotRequired[str],
+```
 
-- `EncryptionType`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-
-Optional fields:
-
-- `KMSKeyId`: `str`
-- `KMSContext`: `str`
-
-<a id="errordocumentresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
 ## ErrorDocumentResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ErrorDocumentResponseMetadataTypeDef
+
+def get_value() -> ErrorDocumentResponseMetadataTypeDef:
+    return {
+        "Key": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ErrorDocumentResponseMetadataTypeDef(TypedDict):
+    Key: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Key`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="errordocumenttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ErrorDocumentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ErrorDocumentTypeDef
+
+def get_value() -> ErrorDocumentTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-<a id="errortypedef"></a>
+```python title="Definition"
+class ErrorDocumentTypeDef(TypedDict):
+    Key: str,
+```
 
 ## ErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ErrorTypeDef
+
+def get_value() -> ErrorTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `VersionId`: `str`
-- `Code`: `str`
-- `Message`: `str`
-
-<a id="existingobjectreplicationtypedef"></a>
+```python title="Definition"
+class ErrorTypeDef(TypedDict):
+    Key: NotRequired[str],
+    VersionId: NotRequired[str],
+    Code: NotRequired[str],
+    Message: NotRequired[str],
+```
 
 ## ExistingObjectReplicationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ExistingObjectReplicationTypeDef
+
+def get_value() -> ExistingObjectReplicationTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExistingObjectReplicationTypeDef(TypedDict):
+    Status: ExistingObjectReplicationStatusType,  # (1)
+```
 
-- `Status`:
-  [ExistingObjectReplicationStatusType](./literals.md#existingobjectreplicationstatustype)
-
-<a id="filterruletypedef"></a>
-
+1. See [:material-code-brackets: ExistingObjectReplicationStatusType](./literals.md#existingobjectreplicationstatustype) 
 ## FilterRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import FilterRuleTypeDef
+
+def get_value() -> FilterRuleTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FilterRuleTypeDef(TypedDict):
+    Name: NotRequired[FilterRuleNameType],  # (1)
+    Value: NotRequired[str],
+```
 
-- `Name`: [FilterRuleNameType](./literals.md#filterrulenametype)
-- `Value`: `str`
-
-<a id="getbucketaccelerateconfigurationoutputtypedef"></a>
-
+1. See [:material-code-brackets: FilterRuleNameType](./literals.md#filterrulenametype) 
 ## GetBucketAccelerateConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationOutputTypeDef
+
+def get_value() -> GetBucketAccelerateConfigurationOutputTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketAccelerateConfigurationOutputTypeDef(TypedDict):
+    Status: BucketAccelerateStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`:
-  [BucketAccelerateStatusType](./literals.md#bucketacceleratestatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketaccelerateconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BucketAccelerateStatusType](./literals.md#bucketacceleratestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketAccelerateConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketAccelerateConfigurationRequestRequestTypeDef
+
+def get_value() -> GetBucketAccelerateConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketacloutputtypedef"></a>
+```python title="Definition"
+class GetBucketAccelerateConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketAclOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketAclOutputTypeDef
+
+def get_value() -> GetBucketAclOutputTypeDef:
+    return {
+        "Owner": ...,
+        "Grants": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketAclOutputTypeDef(TypedDict):
+    Owner: OwnerTypeDef,  # (1)
+    Grants: List[GrantTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-- `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketaclrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OwnerTypeDef](./type_defs.md#ownertypedef) 
+2. See [:material-code-braces: GrantTypeDef](./type_defs.md#granttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketAclRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketAclRequestRequestTypeDef
+
+def get_value() -> GetBucketAclRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketanalyticsconfigurationoutputtypedef"></a>
+```python title="Definition"
+class GetBucketAclRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketAnalyticsConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationOutputTypeDef
+
+def get_value() -> GetBucketAnalyticsConfigurationOutputTypeDef:
+    return {
+        "AnalyticsConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketAnalyticsConfigurationOutputTypeDef(TypedDict):
+    AnalyticsConfiguration: AnalyticsConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnalyticsConfiguration`:
-  [AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketanalyticsconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketAnalyticsConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketAnalyticsConfigurationRequestRequestTypeDef
+
+def get_value() -> GetBucketAnalyticsConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Id`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketcorsoutputtypedef"></a>
+```python title="Definition"
+class GetBucketAnalyticsConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketCorsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketCorsOutputTypeDef
+
+def get_value() -> GetBucketCorsOutputTypeDef:
+    return {
+        "CORSRules": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketCorsOutputTypeDef(TypedDict):
+    CORSRules: List[CORSRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CORSRules`: `List`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketcorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CORSRuleTypeDef](./type_defs.md#corsruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketCorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketCorsRequestRequestTypeDef
+
+def get_value() -> GetBucketCorsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketencryptionoutputtypedef"></a>
+```python title="Definition"
+class GetBucketCorsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketEncryptionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketEncryptionOutputTypeDef
+
+def get_value() -> GetBucketEncryptionOutputTypeDef:
+    return {
+        "ServerSideEncryptionConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketEncryptionOutputTypeDef(TypedDict):
+    ServerSideEncryptionConfiguration: ServerSideEncryptionConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketencryptionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketEncryptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketEncryptionRequestRequestTypeDef
+
+def get_value() -> GetBucketEncryptionRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketintelligenttieringconfigurationoutputtypedef"></a>
+```python title="Definition"
+class GetBucketEncryptionRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketIntelligentTieringConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationOutputTypeDef
+
+def get_value() -> GetBucketIntelligentTieringConfigurationOutputTypeDef:
+    return {
+        "IntelligentTieringConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketIntelligentTieringConfigurationOutputTypeDef(TypedDict):
+    IntelligentTieringConfiguration: IntelligentTieringConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IntelligentTieringConfiguration`:
-  [IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketintelligenttieringconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketIntelligentTieringConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketIntelligentTieringConfigurationRequestRequestTypeDef
+
+def get_value() -> GetBucketIntelligentTieringConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Id`: `str`
-
-<a id="getbucketinventoryconfigurationoutputtypedef"></a>
+```python title="Definition"
+class GetBucketIntelligentTieringConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+```
 
 ## GetBucketInventoryConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationOutputTypeDef
+
+def get_value() -> GetBucketInventoryConfigurationOutputTypeDef:
+    return {
+        "InventoryConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketInventoryConfigurationOutputTypeDef(TypedDict):
+    InventoryConfiguration: InventoryConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InventoryConfiguration`:
-  [InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketinventoryconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketInventoryConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketInventoryConfigurationRequestRequestTypeDef
+
+def get_value() -> GetBucketInventoryConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Id`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketlifecycleconfigurationoutputtypedef"></a>
+```python title="Definition"
+class GetBucketInventoryConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketLifecycleConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationOutputTypeDef
+
+def get_value() -> GetBucketLifecycleConfigurationOutputTypeDef:
+    return {
+        "Rules": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketLifecycleConfigurationOutputTypeDef(TypedDict):
+    Rules: List[LifecycleRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Rules`:
-  `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketlifecycleconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketLifecycleConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketLifecycleConfigurationRequestRequestTypeDef
+
+def get_value() -> GetBucketLifecycleConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketlifecycleoutputtypedef"></a>
+```python title="Definition"
+class GetBucketLifecycleConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketLifecycleOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketLifecycleOutputTypeDef
+
+def get_value() -> GetBucketLifecycleOutputTypeDef:
+    return {
+        "Rules": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketLifecycleOutputTypeDef(TypedDict):
+    Rules: List[RuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketlifecyclerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketLifecycleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketLifecycleRequestRequestTypeDef
+
+def get_value() -> GetBucketLifecycleRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketlocationoutputtypedef"></a>
+```python title="Definition"
+class GetBucketLifecycleRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketLocationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketLocationOutputTypeDef
+
+def get_value() -> GetBucketLocationOutputTypeDef:
+    return {
+        "LocationConstraint": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketLocationOutputTypeDef(TypedDict):
+    LocationConstraint: BucketLocationConstraintType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LocationConstraint`:
-  [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketlocationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketLocationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketLocationRequestRequestTypeDef
+
+def get_value() -> GetBucketLocationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketloggingoutputtypedef"></a>
+```python title="Definition"
+class GetBucketLocationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketLoggingOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketLoggingOutputTypeDef
+
+def get_value() -> GetBucketLoggingOutputTypeDef:
+    return {
+        "LoggingEnabled": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketLoggingOutputTypeDef(TypedDict):
+    LoggingEnabled: LoggingEnabledTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LoggingEnabled`:
-  [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketloggingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketLoggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketLoggingRequestRequestTypeDef
+
+def get_value() -> GetBucketLoggingRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketmetricsconfigurationoutputtypedef"></a>
+```python title="Definition"
+class GetBucketLoggingRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketMetricsConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationOutputTypeDef
+
+def get_value() -> GetBucketMetricsConfigurationOutputTypeDef:
+    return {
+        "MetricsConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketMetricsConfigurationOutputTypeDef(TypedDict):
+    MetricsConfiguration: MetricsConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MetricsConfiguration`:
-  [MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketmetricsconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketMetricsConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketMetricsConfigurationRequestRequestTypeDef
+
+def get_value() -> GetBucketMetricsConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Id`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketnotificationconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class GetBucketMetricsConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketNotificationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketNotificationConfigurationRequestRequestTypeDef
+
+def get_value() -> GetBucketNotificationConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketownershipcontrolsoutputtypedef"></a>
+```python title="Definition"
+class GetBucketNotificationConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketOwnershipControlsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsOutputTypeDef
+
+def get_value() -> GetBucketOwnershipControlsOutputTypeDef:
+    return {
+        "OwnershipControls": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketOwnershipControlsOutputTypeDef(TypedDict):
+    OwnershipControls: OwnershipControlsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OwnershipControls`:
-  [OwnershipControlsTypeDef](./type_defs.md#ownershipcontrolstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketownershipcontrolsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OwnershipControlsTypeDef](./type_defs.md#ownershipcontrolstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketOwnershipControlsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketOwnershipControlsRequestRequestTypeDef
+
+def get_value() -> GetBucketOwnershipControlsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketpolicyoutputtypedef"></a>
+```python title="Definition"
+class GetBucketOwnershipControlsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketPolicyOutputTypeDef
+
+def get_value() -> GetBucketPolicyOutputTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketPolicyOutputTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketPolicyRequestRequestTypeDef
+
+def get_value() -> GetBucketPolicyRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketpolicystatusoutputtypedef"></a>
+```python title="Definition"
+class GetBucketPolicyRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketPolicyStatusOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketPolicyStatusOutputTypeDef
+
+def get_value() -> GetBucketPolicyStatusOutputTypeDef:
+    return {
+        "PolicyStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketPolicyStatusOutputTypeDef(TypedDict):
+    PolicyStatus: PolicyStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PolicyStatus`: [PolicyStatusTypeDef](./type_defs.md#policystatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketpolicystatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyStatusTypeDef](./type_defs.md#policystatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketPolicyStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketPolicyStatusRequestRequestTypeDef
+
+def get_value() -> GetBucketPolicyStatusRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketreplicationoutputtypedef"></a>
+```python title="Definition"
+class GetBucketPolicyStatusRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketReplicationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketReplicationOutputTypeDef
+
+def get_value() -> GetBucketReplicationOutputTypeDef:
+    return {
+        "ReplicationConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketReplicationOutputTypeDef(TypedDict):
+    ReplicationConfiguration: ReplicationConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReplicationConfiguration`:
-  [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketreplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketReplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketReplicationRequestRequestTypeDef
+
+def get_value() -> GetBucketReplicationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketrequestpaymentoutputtypedef"></a>
+```python title="Definition"
+class GetBucketReplicationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketRequestPaymentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketRequestPaymentOutputTypeDef
+
+def get_value() -> GetBucketRequestPaymentOutputTypeDef:
+    return {
+        "Payer": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketRequestPaymentOutputTypeDef(TypedDict):
+    Payer: PayerType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Payer`: [PayerType](./literals.md#payertype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketrequestpaymentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PayerType](./literals.md#payertype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketRequestPaymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketRequestPaymentRequestRequestTypeDef
+
+def get_value() -> GetBucketRequestPaymentRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbuckettaggingoutputtypedef"></a>
+```python title="Definition"
+class GetBucketRequestPaymentRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketTaggingOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketTaggingOutputTypeDef
+
+def get_value() -> GetBucketTaggingOutputTypeDef:
+    return {
+        "TagSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketTaggingOutputTypeDef(TypedDict):
+    TagSet: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbuckettaggingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketTaggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketTaggingRequestRequestTypeDef
+
+def get_value() -> GetBucketTaggingRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketversioningoutputtypedef"></a>
+```python title="Definition"
+class GetBucketTaggingRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketVersioningOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketVersioningOutputTypeDef
+
+def get_value() -> GetBucketVersioningOutputTypeDef:
+    return {
+        "Status": ...,
+        "MFADelete": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketVersioningOutputTypeDef(TypedDict):
+    Status: BucketVersioningStatusType,  # (1)
+    MFADelete: MFADeleteStatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`:
-  [BucketVersioningStatusType](./literals.md#bucketversioningstatustype)
-- `MFADelete`: [MFADeleteStatusType](./literals.md#mfadeletestatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketversioningrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BucketVersioningStatusType](./literals.md#bucketversioningstatustype) 
+2. See [:material-code-brackets: MFADeleteStatusType](./literals.md#mfadeletestatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketVersioningRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketVersioningRequestRequestTypeDef
+
+def get_value() -> GetBucketVersioningRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getbucketwebsiteoutputtypedef"></a>
+```python title="Definition"
+class GetBucketVersioningRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetBucketWebsiteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketWebsiteOutputTypeDef
+
+def get_value() -> GetBucketWebsiteOutputTypeDef:
+    return {
+        "RedirectAllRequestsTo": ...,
+        "IndexDocument": ...,
+        "ErrorDocument": ...,
+        "RoutingRules": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketWebsiteOutputTypeDef(TypedDict):
+    RedirectAllRequestsTo: RedirectAllRequestsToTypeDef,  # (1)
+    IndexDocument: IndexDocumentTypeDef,  # (2)
+    ErrorDocument: ErrorDocumentTypeDef,  # (3)
+    RoutingRules: List[RoutingRuleTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `RedirectAllRequestsTo`:
-  [RedirectAllRequestsToTypeDef](./type_defs.md#redirectallrequeststotypedef)
-- `IndexDocument`: [IndexDocumentTypeDef](./type_defs.md#indexdocumenttypedef)
-- `ErrorDocument`: [ErrorDocumentTypeDef](./type_defs.md#errordocumenttypedef)
-- `RoutingRules`:
-  `List`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketwebsiterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RedirectAllRequestsToTypeDef](./type_defs.md#redirectallrequeststotypedef) 
+2. See [:material-code-braces: IndexDocumentTypeDef](./type_defs.md#indexdocumenttypedef) 
+3. See [:material-code-braces: ErrorDocumentTypeDef](./type_defs.md#errordocumenttypedef) 
+4. See [:material-code-braces: RoutingRuleTypeDef](./type_defs.md#routingruletypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketWebsiteRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetBucketWebsiteRequestRequestTypeDef
+
+def get_value() -> GetBucketWebsiteRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getobjectacloutputtypedef"></a>
+```python title="Definition"
+class GetBucketWebsiteRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetObjectAclOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectAclOutputTypeDef
+
+def get_value() -> GetObjectAclOutputTypeDef:
+    return {
+        "Owner": ...,
+        "Grants": ...,
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectAclOutputTypeDef(TypedDict):
+    Owner: OwnerTypeDef,  # (1)
+    Grants: List[GrantTypeDef],  # (2)
+    RequestCharged: RequestChargedType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-- `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getobjectaclrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OwnerTypeDef](./type_defs.md#ownertypedef) 
+2. See [:material-code-braces: GrantTypeDef](./type_defs.md#granttypedef) 
+3. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetObjectAclRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectAclRequestRequestTypeDef
+
+def get_value() -> GetObjectAclRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectAclRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    VersionId: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="getobjectattributesoutputtypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## GetObjectAttributesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectAttributesOutputTypeDef
+
+def get_value() -> GetObjectAttributesOutputTypeDef:
+    return {
+        "DeleteMarker": ...,
+        "LastModified": ...,
+        "VersionId": ...,
+        "RequestCharged": ...,
+        "ETag": ...,
+        "Checksum": ...,
+        "ObjectParts": ...,
+        "StorageClass": ...,
+        "ObjectSize": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectAttributesOutputTypeDef(TypedDict):
+    DeleteMarker: bool,
+    LastModified: datetime,
+    VersionId: str,
+    RequestCharged: RequestChargedType,  # (1)
+    ETag: str,
+    Checksum: ChecksumTypeDef,  # (2)
+    ObjectParts: GetObjectAttributesPartsTypeDef,  # (3)
+    StorageClass: StorageClassType,  # (4)
+    ObjectSize: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `DeleteMarker`: `bool`
-- `LastModified`: `datetime`
-- `VersionId`: `str`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ETag`: `str`
-- `Checksum`: [ChecksumTypeDef](./type_defs.md#checksumtypedef)
-- `ObjectParts`:
-  [GetObjectAttributesPartsTypeDef](./type_defs.md#getobjectattributespartstypedef)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `ObjectSize`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getobjectattributespartstypedef"></a>
-
+1. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+2. See [:material-code-braces: ChecksumTypeDef](./type_defs.md#checksumtypedef) 
+3. See [:material-code-braces: GetObjectAttributesPartsTypeDef](./type_defs.md#getobjectattributespartstypedef) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetObjectAttributesPartsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectAttributesPartsTypeDef
+
+def get_value() -> GetObjectAttributesPartsTypeDef:
+    return {
+        "TotalPartsCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetObjectAttributesPartsTypeDef(TypedDict):
+    TotalPartsCount: NotRequired[int],
+    PartNumberMarker: NotRequired[int],
+    NextPartNumberMarker: NotRequired[int],
+    MaxParts: NotRequired[int],
+    IsTruncated: NotRequired[bool],
+    Parts: NotRequired[List[ObjectPartTypeDef]],  # (1)
+```
 
-- `TotalPartsCount`: `int`
-- `PartNumberMarker`: `int`
-- `NextPartNumberMarker`: `int`
-- `MaxParts`: `int`
-- `IsTruncated`: `bool`
-- `Parts`: `List`\[[ObjectPartTypeDef](./type_defs.md#objectparttypedef)\]
-
-<a id="getobjectattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ObjectPartTypeDef](./type_defs.md#objectparttypedef) 
 ## GetObjectAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectAttributesRequestRequestTypeDef
+
+def get_value() -> GetObjectAttributesRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "ObjectAttributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectAttributesRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    ObjectAttributes: Sequence[ObjectAttributesType],  # (1)
+    VersionId: NotRequired[str],
+    MaxParts: NotRequired[int],
+    PartNumberMarker: NotRequired[int],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-- `ObjectAttributes`:
-  `Sequence`\[[ObjectAttributesType](./literals.md#objectattributestype)\]
-
-Optional fields:
-
-- `VersionId`: `str`
-- `MaxParts`: `int`
-- `PartNumberMarker`: `int`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="getobjectlegalholdoutputtypedef"></a>
-
+1. See [:material-code-brackets: ObjectAttributesType](./literals.md#objectattributestype) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## GetObjectLegalHoldOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectLegalHoldOutputTypeDef
+
+def get_value() -> GetObjectLegalHoldOutputTypeDef:
+    return {
+        "LegalHold": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectLegalHoldOutputTypeDef(TypedDict):
+    LegalHold: ObjectLockLegalHoldTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LegalHold`:
-  [ObjectLockLegalHoldTypeDef](./type_defs.md#objectlocklegalholdtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getobjectlegalholdrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ObjectLockLegalHoldTypeDef](./type_defs.md#objectlocklegalholdtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetObjectLegalHoldRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectLegalHoldRequestRequestTypeDef
+
+def get_value() -> GetObjectLegalHoldRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectLegalHoldRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    VersionId: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="getobjectlockconfigurationoutputtypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## GetObjectLockConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectLockConfigurationOutputTypeDef
+
+def get_value() -> GetObjectLockConfigurationOutputTypeDef:
+    return {
+        "ObjectLockConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectLockConfigurationOutputTypeDef(TypedDict):
+    ObjectLockConfiguration: ObjectLockConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ObjectLockConfiguration`:
-  [ObjectLockConfigurationTypeDef](./type_defs.md#objectlockconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getobjectlockconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ObjectLockConfigurationTypeDef](./type_defs.md#objectlockconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetObjectLockConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectLockConfigurationRequestRequestTypeDef
+
+def get_value() -> GetObjectLockConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="getobjectoutputtypedef"></a>
+```python title="Definition"
+class GetObjectLockConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GetObjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectOutputTypeDef
+
+def get_value() -> GetObjectOutputTypeDef:
+    return {
+        "Body": ...,
+        "DeleteMarker": ...,
+        "AcceptRanges": ...,
+        "Expiration": ...,
+        "Restore": ...,
+        "LastModified": ...,
+        "ContentLength": ...,
+        "ETag": ...,
+        "ChecksumCRC32": ...,
+        "ChecksumCRC32C": ...,
+        "ChecksumSHA1": ...,
+        "ChecksumSHA256": ...,
+        "MissingMeta": ...,
+        "VersionId": ...,
+        "CacheControl": ...,
+        "ContentDisposition": ...,
+        "ContentEncoding": ...,
+        "ContentLanguage": ...,
+        "ContentRange": ...,
+        "ContentType": ...,
+        "Expires": ...,
+        "WebsiteRedirectLocation": ...,
+        "ServerSideEncryption": ...,
+        "Metadata": ...,
+        "SSECustomerAlgorithm": ...,
+        "SSECustomerKeyMD5": ...,
+        "SSEKMSKeyId": ...,
+        "BucketKeyEnabled": ...,
+        "StorageClass": ...,
+        "RequestCharged": ...,
+        "ReplicationStatus": ...,
+        "PartsCount": ...,
+        "TagCount": ...,
+        "ObjectLockMode": ...,
+        "ObjectLockRetainUntilDate": ...,
+        "ObjectLockLegalHoldStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectOutputTypeDef(TypedDict):
+    Body: StreamingBody,
+    DeleteMarker: bool,
+    AcceptRanges: str,
+    Expiration: str,
+    Restore: str,
+    LastModified: datetime,
+    ContentLength: int,
+    ETag: str,
+    ChecksumCRC32: str,
+    ChecksumCRC32C: str,
+    ChecksumSHA1: str,
+    ChecksumSHA256: str,
+    MissingMeta: int,
+    VersionId: str,
+    CacheControl: str,
+    ContentDisposition: str,
+    ContentEncoding: str,
+    ContentLanguage: str,
+    ContentRange: str,
+    ContentType: str,
+    Expires: datetime,
+    WebsiteRedirectLocation: str,
+    ServerSideEncryption: ServerSideEncryptionType,  # (1)
+    Metadata: Dict[str, str],
+    SSECustomerAlgorithm: str,
+    SSECustomerKeyMD5: str,
+    SSEKMSKeyId: str,
+    BucketKeyEnabled: bool,
+    StorageClass: StorageClassType,  # (2)
+    RequestCharged: RequestChargedType,  # (3)
+    ReplicationStatus: ReplicationStatusType,  # (4)
+    PartsCount: int,
+    TagCount: int,
+    ObjectLockMode: ObjectLockModeType,  # (5)
+    ObjectLockRetainUntilDate: datetime,
+    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatusType,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `Body`: `StreamingBody`
-- `DeleteMarker`: `bool`
-- `AcceptRanges`: `str`
-- `Expiration`: `str`
-- `Restore`: `str`
-- `LastModified`: `datetime`
-- `ContentLength`: `int`
-- `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `MissingMeta`: `int`
-- `VersionId`: `str`
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentRange`: `str`
-- `ContentType`: `str`
-- `Expires`: `datetime`
-- `WebsiteRedirectLocation`: `str`
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `Metadata`: `Dict`\[`str`, `str`\]
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `BucketKeyEnabled`: `bool`
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ReplicationStatus`:
-  [ReplicationStatusType](./literals.md#replicationstatustype)
-- `PartsCount`: `int`
-- `TagCount`: `int`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `datetime`
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getobjectrequestobjectgettypedef"></a>
-
+1. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+2. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+3. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+4. See [:material-code-brackets: ReplicationStatusType](./literals.md#replicationstatustype) 
+5. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+6. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetObjectRequestObjectGetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectRequestObjectGetTypeDef
+
+def get_value() -> GetObjectRequestObjectGetTypeDef:
+    return {
+        "IfMatch": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetObjectRequestObjectGetTypeDef(TypedDict):
+    IfMatch: NotRequired[str],
+    IfModifiedSince: NotRequired[Union[datetime, str]],
+    IfNoneMatch: NotRequired[str],
+    IfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Range: NotRequired[str],
+    ResponseCacheControl: NotRequired[str],
+    ResponseContentDisposition: NotRequired[str],
+    ResponseContentEncoding: NotRequired[str],
+    ResponseContentLanguage: NotRequired[str],
+    ResponseContentType: NotRequired[str],
+    ResponseExpires: NotRequired[Union[datetime, str]],
+    VersionId: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    PartNumber: NotRequired[int],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumMode: NotRequired[ChecksumModeType],  # (2)
+```
 
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `ResponseCacheControl`: `str`
-- `ResponseContentDisposition`: `str`
-- `ResponseContentEncoding`: `str`
-- `ResponseContentLanguage`: `str`
-- `ResponseContentType`: `str`
-- `ResponseExpires`: `Union`\[`datetime`, `str`\]
-- `VersionId`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
-
-<a id="getobjectrequestobjectsummarygettypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
 ## GetObjectRequestObjectSummaryGetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectRequestObjectSummaryGetTypeDef
+
+def get_value() -> GetObjectRequestObjectSummaryGetTypeDef:
+    return {
+        "IfMatch": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetObjectRequestObjectSummaryGetTypeDef(TypedDict):
+    IfMatch: NotRequired[str],
+    IfModifiedSince: NotRequired[Union[datetime, str]],
+    IfNoneMatch: NotRequired[str],
+    IfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Range: NotRequired[str],
+    ResponseCacheControl: NotRequired[str],
+    ResponseContentDisposition: NotRequired[str],
+    ResponseContentEncoding: NotRequired[str],
+    ResponseContentLanguage: NotRequired[str],
+    ResponseContentType: NotRequired[str],
+    ResponseExpires: NotRequired[Union[datetime, str]],
+    VersionId: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    PartNumber: NotRequired[int],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumMode: NotRequired[ChecksumModeType],  # (2)
+```
 
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `ResponseCacheControl`: `str`
-- `ResponseContentDisposition`: `str`
-- `ResponseContentEncoding`: `str`
-- `ResponseContentLanguage`: `str`
-- `ResponseContentType`: `str`
-- `ResponseExpires`: `Union`\[`datetime`, `str`\]
-- `VersionId`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
-
-<a id="getobjectrequestobjectversiongettypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
 ## GetObjectRequestObjectVersionGetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectRequestObjectVersionGetTypeDef
+
+def get_value() -> GetObjectRequestObjectVersionGetTypeDef:
+    return {
+        "IfMatch": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetObjectRequestObjectVersionGetTypeDef(TypedDict):
+    IfMatch: NotRequired[str],
+    IfModifiedSince: NotRequired[Union[datetime, str]],
+    IfNoneMatch: NotRequired[str],
+    IfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Range: NotRequired[str],
+    ResponseCacheControl: NotRequired[str],
+    ResponseContentDisposition: NotRequired[str],
+    ResponseContentEncoding: NotRequired[str],
+    ResponseContentLanguage: NotRequired[str],
+    ResponseContentType: NotRequired[str],
+    ResponseExpires: NotRequired[Union[datetime, str]],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    PartNumber: NotRequired[int],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumMode: NotRequired[ChecksumModeType],  # (2)
+```
 
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `ResponseCacheControl`: `str`
-- `ResponseContentDisposition`: `str`
-- `ResponseContentEncoding`: `str`
-- `ResponseContentLanguage`: `str`
-- `ResponseContentType`: `str`
-- `ResponseExpires`: `Union`\[`datetime`, `str`\]
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
-
-<a id="getobjectrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
 ## GetObjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectRequestRequestTypeDef
+
+def get_value() -> GetObjectRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    IfMatch: NotRequired[str],
+    IfModifiedSince: NotRequired[Union[datetime, str]],
+    IfNoneMatch: NotRequired[str],
+    IfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Range: NotRequired[str],
+    ResponseCacheControl: NotRequired[str],
+    ResponseContentDisposition: NotRequired[str],
+    ResponseContentEncoding: NotRequired[str],
+    ResponseContentLanguage: NotRequired[str],
+    ResponseContentType: NotRequired[str],
+    ResponseExpires: NotRequired[Union[datetime, str]],
+    VersionId: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    PartNumber: NotRequired[int],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumMode: NotRequired[ChecksumModeType],  # (2)
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `ResponseCacheControl`: `str`
-- `ResponseContentDisposition`: `str`
-- `ResponseContentEncoding`: `str`
-- `ResponseContentLanguage`: `str`
-- `ResponseContentType`: `str`
-- `ResponseExpires`: `Union`\[`datetime`, `str`\]
-- `VersionId`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
-
-<a id="getobjectretentionoutputtypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
 ## GetObjectRetentionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectRetentionOutputTypeDef
+
+def get_value() -> GetObjectRetentionOutputTypeDef:
+    return {
+        "Retention": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectRetentionOutputTypeDef(TypedDict):
+    Retention: ObjectLockRetentionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Retention`:
-  [ObjectLockRetentionTypeDef](./type_defs.md#objectlockretentiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getobjectretentionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ObjectLockRetentionTypeDef](./type_defs.md#objectlockretentiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetObjectRetentionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectRetentionRequestRequestTypeDef
+
+def get_value() -> GetObjectRetentionRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectRetentionRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    VersionId: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="getobjecttaggingoutputtypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## GetObjectTaggingOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectTaggingOutputTypeDef
+
+def get_value() -> GetObjectTaggingOutputTypeDef:
+    return {
+        "VersionId": ...,
+        "TagSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectTaggingOutputTypeDef(TypedDict):
+    VersionId: str,
+    TagSet: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VersionId`: `str`
-- `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getobjecttaggingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetObjectTaggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectTaggingRequestRequestTypeDef
+
+def get_value() -> GetObjectTaggingRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectTaggingRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    VersionId: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-- `ExpectedBucketOwner`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-
-<a id="getobjecttorrentoutputtypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## GetObjectTorrentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectTorrentOutputTypeDef
+
+def get_value() -> GetObjectTorrentOutputTypeDef:
+    return {
+        "Body": ...,
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectTorrentOutputTypeDef(TypedDict):
+    Body: StreamingBody,
+    RequestCharged: RequestChargedType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Body`: `StreamingBody`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getobjecttorrentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetObjectTorrentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetObjectTorrentRequestRequestTypeDef
+
+def get_value() -> GetObjectTorrentRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetObjectTorrentRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="getpublicaccessblockoutputtypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## GetPublicAccessBlockOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetPublicAccessBlockOutputTypeDef
+
+def get_value() -> GetPublicAccessBlockOutputTypeDef:
+    return {
+        "PublicAccessBlockConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPublicAccessBlockOutputTypeDef(TypedDict):
+    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PublicAccessBlockConfiguration`:
-  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpublicaccessblockrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPublicAccessBlockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GetPublicAccessBlockRequestRequestTypeDef
+
+def get_value() -> GetPublicAccessBlockRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="glacierjobparameterstypedef"></a>
+```python title="Definition"
+class GetPublicAccessBlockRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## GlacierJobParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GlacierJobParametersTypeDef
+
+def get_value() -> GlacierJobParametersTypeDef:
+    return {
+        "Tier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GlacierJobParametersTypeDef(TypedDict):
+    Tier: TierType,  # (1)
+```
 
-- `Tier`: [TierType](./literals.md#tiertype)
-
-<a id="granttypedef"></a>
-
+1. See [:material-code-brackets: TierType](./literals.md#tiertype) 
 ## GrantTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GrantTypeDef
+
+def get_value() -> GrantTypeDef:
+    return {
+        "Grantee": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GrantTypeDef(TypedDict):
+    Grantee: NotRequired[GranteeTypeDef],  # (1)
+    Permission: NotRequired[PermissionType],  # (2)
+```
 
-- `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
-- `Permission`: [PermissionType](./literals.md#permissiontype)
-
-<a id="granteetypedef"></a>
-
+1. See [:material-code-braces: GranteeTypeDef](./type_defs.md#granteetypedef) 
+2. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## GranteeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import GranteeTypeDef
+
+def get_value() -> GranteeTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GranteeTypeDef(TypedDict):
+    Type: TypeType,  # (1)
+    DisplayName: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    ID: NotRequired[str],
+    URI: NotRequired[str],
+```
 
-- `Type`: [TypeType](./literals.md#typetype)
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+## HeadBucketRequestBucketExistsWaitTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import HeadBucketRequestBucketExistsWaitTypeDef
 
-- `DisplayName`: `str`
-- `EmailAddress`: `str`
-- `ID`: `str`
-- `URI`: `str`
+def get_value() -> HeadBucketRequestBucketExistsWaitTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
 
-<a id="headbucketrequestrequesttypedef"></a>
+```python title="Definition"
+class HeadBucketRequestBucketExistsWaitTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## HeadBucketRequestBucketNotExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import HeadBucketRequestBucketNotExistsWaitTypeDef
+
+def get_value() -> HeadBucketRequestBucketNotExistsWaitTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class HeadBucketRequestBucketNotExistsWaitTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## HeadBucketRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import HeadBucketRequestRequestTypeDef
+
+def get_value() -> HeadBucketRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="headobjectoutputtypedef"></a>
+```python title="Definition"
+class HeadBucketRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## HeadObjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import HeadObjectOutputTypeDef
+
+def get_value() -> HeadObjectOutputTypeDef:
+    return {
+        "DeleteMarker": ...,
+        "AcceptRanges": ...,
+        "Expiration": ...,
+        "Restore": ...,
+        "ArchiveStatus": ...,
+        "LastModified": ...,
+        "ContentLength": ...,
+        "ChecksumCRC32": ...,
+        "ChecksumCRC32C": ...,
+        "ChecksumSHA1": ...,
+        "ChecksumSHA256": ...,
+        "ETag": ...,
+        "MissingMeta": ...,
+        "VersionId": ...,
+        "CacheControl": ...,
+        "ContentDisposition": ...,
+        "ContentEncoding": ...,
+        "ContentLanguage": ...,
+        "ContentType": ...,
+        "Expires": ...,
+        "WebsiteRedirectLocation": ...,
+        "ServerSideEncryption": ...,
+        "Metadata": ...,
+        "SSECustomerAlgorithm": ...,
+        "SSECustomerKeyMD5": ...,
+        "SSEKMSKeyId": ...,
+        "BucketKeyEnabled": ...,
+        "StorageClass": ...,
+        "RequestCharged": ...,
+        "ReplicationStatus": ...,
+        "PartsCount": ...,
+        "ObjectLockMode": ...,
+        "ObjectLockRetainUntilDate": ...,
+        "ObjectLockLegalHoldStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HeadObjectOutputTypeDef(TypedDict):
+    DeleteMarker: bool,
+    AcceptRanges: str,
+    Expiration: str,
+    Restore: str,
+    ArchiveStatus: ArchiveStatusType,  # (1)
+    LastModified: datetime,
+    ContentLength: int,
+    ChecksumCRC32: str,
+    ChecksumCRC32C: str,
+    ChecksumSHA1: str,
+    ChecksumSHA256: str,
+    ETag: str,
+    MissingMeta: int,
+    VersionId: str,
+    CacheControl: str,
+    ContentDisposition: str,
+    ContentEncoding: str,
+    ContentLanguage: str,
+    ContentType: str,
+    Expires: datetime,
+    WebsiteRedirectLocation: str,
+    ServerSideEncryption: ServerSideEncryptionType,  # (2)
+    Metadata: Dict[str, str],
+    SSECustomerAlgorithm: str,
+    SSECustomerKeyMD5: str,
+    SSEKMSKeyId: str,
+    BucketKeyEnabled: bool,
+    StorageClass: StorageClassType,  # (3)
+    RequestCharged: RequestChargedType,  # (4)
+    ReplicationStatus: ReplicationStatusType,  # (5)
+    PartsCount: int,
+    ObjectLockMode: ObjectLockModeType,  # (6)
+    ObjectLockRetainUntilDate: datetime,
+    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatusType,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
 
-- `DeleteMarker`: `bool`
-- `AcceptRanges`: `str`
-- `Expiration`: `str`
-- `Restore`: `str`
-- `ArchiveStatus`: [ArchiveStatusType](./literals.md#archivestatustype)
-- `LastModified`: `datetime`
-- `ContentLength`: `int`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `ETag`: `str`
-- `MissingMeta`: `int`
-- `VersionId`: `str`
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `Expires`: `datetime`
-- `WebsiteRedirectLocation`: `str`
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `Metadata`: `Dict`\[`str`, `str`\]
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `BucketKeyEnabled`: `bool`
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ReplicationStatus`:
-  [ReplicationStatusType](./literals.md#replicationstatustype)
-- `PartsCount`: `int`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `datetime`
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: ArchiveStatusType](./literals.md#archivestatustype) 
+2. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+3. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+4. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+5. See [:material-code-brackets: ReplicationStatusType](./literals.md#replicationstatustype) 
+6. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+7. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## HeadObjectRequestObjectExistsWaitTypeDef
 
-<a id="headobjectrequestobjectversionheadtypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import HeadObjectRequestObjectExistsWaitTypeDef
 
+def get_value() -> HeadObjectRequestObjectExistsWaitTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class HeadObjectRequestObjectExistsWaitTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    IfMatch: NotRequired[str],
+    IfModifiedSince: NotRequired[Union[datetime, str]],
+    IfNoneMatch: NotRequired[str],
+    IfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Range: NotRequired[str],
+    VersionId: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    PartNumber: NotRequired[int],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumMode: NotRequired[ChecksumModeType],  # (2)
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## HeadObjectRequestObjectNotExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import HeadObjectRequestObjectNotExistsWaitTypeDef
+
+def get_value() -> HeadObjectRequestObjectNotExistsWaitTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
+```
+
+```python title="Definition"
+class HeadObjectRequestObjectNotExistsWaitTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    IfMatch: NotRequired[str],
+    IfModifiedSince: NotRequired[Union[datetime, str]],
+    IfNoneMatch: NotRequired[str],
+    IfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Range: NotRequired[str],
+    VersionId: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    PartNumber: NotRequired[int],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumMode: NotRequired[ChecksumModeType],  # (2)
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## HeadObjectRequestObjectVersionHeadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import HeadObjectRequestObjectVersionHeadTypeDef
+
+def get_value() -> HeadObjectRequestObjectVersionHeadTypeDef:
+    return {
+        "IfMatch": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HeadObjectRequestObjectVersionHeadTypeDef(TypedDict):
+    IfMatch: NotRequired[str],
+    IfModifiedSince: NotRequired[Union[datetime, str]],
+    IfNoneMatch: NotRequired[str],
+    IfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Range: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    PartNumber: NotRequired[int],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumMode: NotRequired[ChecksumModeType],  # (2)
+```
 
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
-
-<a id="headobjectrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
 ## HeadObjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import HeadObjectRequestRequestTypeDef
+
+def get_value() -> HeadObjectRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HeadObjectRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    IfMatch: NotRequired[str],
+    IfModifiedSince: NotRequired[Union[datetime, str]],
+    IfNoneMatch: NotRequired[str],
+    IfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    Range: NotRequired[str],
+    VersionId: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    PartNumber: NotRequired[int],
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumMode: NotRequired[ChecksumModeType],  # (2)
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `VersionId`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
-
-<a id="indexdocumentresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
 ## IndexDocumentResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import IndexDocumentResponseMetadataTypeDef
+
+def get_value() -> IndexDocumentResponseMetadataTypeDef:
+    return {
+        "Suffix": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IndexDocumentResponseMetadataTypeDef(TypedDict):
+    Suffix: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Suffix`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="indexdocumenttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IndexDocumentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import IndexDocumentTypeDef
+
+def get_value() -> IndexDocumentTypeDef:
+    return {
+        "Suffix": ...,
+    }
 ```
 
-Required fields:
-
-- `Suffix`: `str`
-
-<a id="initiatorresponsemetadatatypedef"></a>
+```python title="Definition"
+class IndexDocumentTypeDef(TypedDict):
+    Suffix: str,
+```
 
 ## InitiatorResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import InitiatorResponseMetadataTypeDef
+
+def get_value() -> InitiatorResponseMetadataTypeDef:
+    return {
+        "ID": ...,
+        "DisplayName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiatorResponseMetadataTypeDef(TypedDict):
+    ID: str,
+    DisplayName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ID`: `str`
-- `DisplayName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="initiatortypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InitiatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import InitiatorTypeDef
+
+def get_value() -> InitiatorTypeDef:
+    return {
+        "ID": ...,
+    }
 ```
 
-Optional fields:
-
-- `ID`: `str`
-- `DisplayName`: `str`
-
-<a id="inputserializationtypedef"></a>
+```python title="Definition"
+class InitiatorTypeDef(TypedDict):
+    ID: NotRequired[str],
+    DisplayName: NotRequired[str],
+```
 
 ## InputSerializationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import InputSerializationTypeDef
+
+def get_value() -> InputSerializationTypeDef:
+    return {
+        "CSV": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputSerializationTypeDef(TypedDict):
+    CSV: NotRequired[CSVInputTypeDef],  # (1)
+    CompressionType: NotRequired[CompressionTypeType],  # (2)
+    JSON: NotRequired[JSONInputTypeDef],  # (3)
+    Parquet: NotRequired[Mapping[str, Any]],
+```
 
-- `CSV`: [CSVInputTypeDef](./type_defs.md#csvinputtypedef)
-- `CompressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
-- `JSON`: [JSONInputTypeDef](./type_defs.md#jsoninputtypedef)
-- `Parquet`: `Mapping`\[`str`, `Any`\]
-
-<a id="intelligenttieringandoperatortypedef"></a>
-
+1. See [:material-code-braces: CSVInputTypeDef](./type_defs.md#csvinputtypedef) 
+2. See [:material-code-brackets: CompressionTypeType](./literals.md#compressiontypetype) 
+3. See [:material-code-braces: JSONInputTypeDef](./type_defs.md#jsoninputtypedef) 
 ## IntelligentTieringAndOperatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import IntelligentTieringAndOperatorTypeDef
+
+def get_value() -> IntelligentTieringAndOperatorTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IntelligentTieringAndOperatorTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `Prefix`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="intelligenttieringconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## IntelligentTieringConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import IntelligentTieringConfigurationTypeDef
+
+def get_value() -> IntelligentTieringConfigurationTypeDef:
+    return {
+        "Id": ...,
+        "Status": ...,
+        "Tierings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IntelligentTieringConfigurationTypeDef(TypedDict):
+    Id: str,
+    Status: IntelligentTieringStatusType,  # (2)
+    Tierings: List[TieringTypeDef],  # (3)
+    Filter: NotRequired[IntelligentTieringFilterTypeDef],  # (1)
+```
 
-- `Id`: `str`
-- `Status`:
-  [IntelligentTieringStatusType](./literals.md#intelligenttieringstatustype)
-- `Tierings`: `List`\[[TieringTypeDef](./type_defs.md#tieringtypedef)\]
-
-Optional fields:
-
-- `Filter`:
-  [IntelligentTieringFilterTypeDef](./type_defs.md#intelligenttieringfiltertypedef)
-
-<a id="intelligenttieringfiltertypedef"></a>
-
+1. See [:material-code-braces: IntelligentTieringFilterTypeDef](./type_defs.md#intelligenttieringfiltertypedef) 
+2. See [:material-code-brackets: IntelligentTieringStatusType](./literals.md#intelligenttieringstatustype) 
+3. See [:material-code-braces: TieringTypeDef](./type_defs.md#tieringtypedef) 
 ## IntelligentTieringFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import IntelligentTieringFilterTypeDef
+
+def get_value() -> IntelligentTieringFilterTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IntelligentTieringFilterTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tag: NotRequired[TagTypeDef],  # (1)
+    And: NotRequired[IntelligentTieringAndOperatorTypeDef],  # (2)
+```
 
-- `Prefix`: `str`
-- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
-- `And`:
-  [IntelligentTieringAndOperatorTypeDef](./type_defs.md#intelligenttieringandoperatortypedef)
-
-<a id="inventoryconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: IntelligentTieringAndOperatorTypeDef](./type_defs.md#intelligenttieringandoperatortypedef) 
 ## InventoryConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import InventoryConfigurationTypeDef
+
+def get_value() -> InventoryConfigurationTypeDef:
+    return {
+        "Destination": ...,
+        "IsEnabled": ...,
+        "Id": ...,
+        "IncludedObjectVersions": ...,
+        "Schedule": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InventoryConfigurationTypeDef(TypedDict):
+    Destination: InventoryDestinationTypeDef,  # (1)
+    IsEnabled: bool,
+    Id: str,
+    IncludedObjectVersions: InventoryIncludedObjectVersionsType,  # (3)
+    Schedule: InventoryScheduleTypeDef,  # (5)
+    Filter: NotRequired[InventoryFilterTypeDef],  # (2)
+    OptionalFields: NotRequired[List[InventoryOptionalFieldType]],  # (4)
+```
 
-- `Destination`:
-  [InventoryDestinationTypeDef](./type_defs.md#inventorydestinationtypedef)
-- `IsEnabled`: `bool`
-- `Id`: `str`
-- `IncludedObjectVersions`:
-  [InventoryIncludedObjectVersionsType](./literals.md#inventoryincludedobjectversionstype)
-- `Schedule`:
-  [InventoryScheduleTypeDef](./type_defs.md#inventoryscheduletypedef)
-
-Optional fields:
-
-- `Filter`: [InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)
-- `OptionalFields`:
-  `List`\[[InventoryOptionalFieldType](./literals.md#inventoryoptionalfieldtype)\]
-
-<a id="inventorydestinationtypedef"></a>
-
+1. See [:material-code-braces: InventoryDestinationTypeDef](./type_defs.md#inventorydestinationtypedef) 
+2. See [:material-code-braces: InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef) 
+3. See [:material-code-brackets: InventoryIncludedObjectVersionsType](./literals.md#inventoryincludedobjectversionstype) 
+4. See [:material-code-brackets: InventoryOptionalFieldType](./literals.md#inventoryoptionalfieldtype) 
+5. See [:material-code-braces: InventoryScheduleTypeDef](./type_defs.md#inventoryscheduletypedef) 
 ## InventoryDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import InventoryDestinationTypeDef
+
+def get_value() -> InventoryDestinationTypeDef:
+    return {
+        "S3BucketDestination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InventoryDestinationTypeDef(TypedDict):
+    S3BucketDestination: InventoryS3BucketDestinationTypeDef,  # (1)
+```
 
-- `S3BucketDestination`:
-  [InventoryS3BucketDestinationTypeDef](./type_defs.md#inventorys3bucketdestinationtypedef)
-
-<a id="inventoryencryptiontypedef"></a>
-
+1. See [:material-code-braces: InventoryS3BucketDestinationTypeDef](./type_defs.md#inventorys3bucketdestinationtypedef) 
 ## InventoryEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import InventoryEncryptionTypeDef
+
+def get_value() -> InventoryEncryptionTypeDef:
+    return {
+        "SSES3": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InventoryEncryptionTypeDef(TypedDict):
+    SSES3: NotRequired[Dict[str, Any]],
+    SSEKMS: NotRequired[SSEKMSTypeDef],  # (1)
+```
 
-- `SSES3`: `Dict`\[`str`, `Any`\]
-- `SSEKMS`: [SSEKMSTypeDef](./type_defs.md#ssekmstypedef)
-
-<a id="inventoryfiltertypedef"></a>
-
+1. See [:material-code-braces: SSEKMSTypeDef](./type_defs.md#ssekmstypedef) 
 ## InventoryFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import InventoryFilterTypeDef
+
+def get_value() -> InventoryFilterTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Required fields:
-
-- `Prefix`: `str`
-
-<a id="inventorys3bucketdestinationtypedef"></a>
+```python title="Definition"
+class InventoryFilterTypeDef(TypedDict):
+    Prefix: str,
+```
 
 ## InventoryS3BucketDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import InventoryS3BucketDestinationTypeDef
+
+def get_value() -> InventoryS3BucketDestinationTypeDef:
+    return {
+        "Bucket": ...,
+        "Format": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InventoryS3BucketDestinationTypeDef(TypedDict):
+    Bucket: str,
+    Format: InventoryFormatType,  # (1)
+    AccountId: NotRequired[str],
+    Prefix: NotRequired[str],
+    Encryption: NotRequired[InventoryEncryptionTypeDef],  # (2)
+```
 
-- `Bucket`: `str`
-- `Format`: [InventoryFormatType](./literals.md#inventoryformattype)
-
-Optional fields:
-
-- `AccountId`: `str`
-- `Prefix`: `str`
-- `Encryption`:
-  [InventoryEncryptionTypeDef](./type_defs.md#inventoryencryptiontypedef)
-
-<a id="inventoryscheduletypedef"></a>
-
+1. See [:material-code-brackets: InventoryFormatType](./literals.md#inventoryformattype) 
+2. See [:material-code-braces: InventoryEncryptionTypeDef](./type_defs.md#inventoryencryptiontypedef) 
 ## InventoryScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import InventoryScheduleTypeDef
+
+def get_value() -> InventoryScheduleTypeDef:
+    return {
+        "Frequency": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InventoryScheduleTypeDef(TypedDict):
+    Frequency: InventoryFrequencyType,  # (1)
+```
 
-- `Frequency`: [InventoryFrequencyType](./literals.md#inventoryfrequencytype)
-
-<a id="jsoninputtypedef"></a>
-
+1. See [:material-code-brackets: InventoryFrequencyType](./literals.md#inventoryfrequencytype) 
 ## JSONInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import JSONInputTypeDef
+
+def get_value() -> JSONInputTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JSONInputTypeDef(TypedDict):
+    Type: NotRequired[JSONTypeType],  # (1)
+```
 
-- `Type`: [JSONTypeType](./literals.md#jsontypetype)
-
-<a id="jsonoutputtypedef"></a>
-
+1. See [:material-code-brackets: JSONTypeType](./literals.md#jsontypetype) 
 ## JSONOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import JSONOutputTypeDef
+
+def get_value() -> JSONOutputTypeDef:
+    return {
+        "RecordDelimiter": ...,
+    }
 ```
 
-Optional fields:
-
-- `RecordDelimiter`: `str`
-
-<a id="lambdafunctionconfigurationtypedef"></a>
+```python title="Definition"
+class JSONOutputTypeDef(TypedDict):
+    RecordDelimiter: NotRequired[str],
+```
 
 ## LambdaFunctionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import LambdaFunctionConfigurationTypeDef
+
+def get_value() -> LambdaFunctionConfigurationTypeDef:
+    return {
+        "LambdaFunctionArn": ...,
+        "Events": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaFunctionConfigurationTypeDef(TypedDict):
+    LambdaFunctionArn: str,
+    Events: List[EventType],  # (1)
+    Id: NotRequired[str],
+    Filter: NotRequired[NotificationConfigurationFilterTypeDef],  # (2)
+```
 
-- `LambdaFunctionArn`: `str`
-- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
-
-Optional fields:
-
-- `Id`: `str`
-- `Filter`:
-  [NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef)
-
-<a id="lifecycleconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: EventType](./literals.md#eventtype) 
+2. See [:material-code-braces: NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef) 
 ## LifecycleConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import LifecycleConfigurationTypeDef
+
+def get_value() -> LifecycleConfigurationTypeDef:
+    return {
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LifecycleConfigurationTypeDef(TypedDict):
+    Rules: Sequence[RuleTypeDef],  # (1)
+```
 
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-
-<a id="lifecycleexpirationtypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 ## LifecycleExpirationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import LifecycleExpirationTypeDef
+
+def get_value() -> LifecycleExpirationTypeDef:
+    return {
+        "Date": ...,
+    }
 ```
 
-Optional fields:
-
-- `Date`: `datetime`
-- `Days`: `int`
-- `ExpiredObjectDeleteMarker`: `bool`
-
-<a id="lifecycleruleandoperatortypedef"></a>
+```python title="Definition"
+class LifecycleExpirationTypeDef(TypedDict):
+    Date: NotRequired[datetime],
+    Days: NotRequired[int],
+    ExpiredObjectDeleteMarker: NotRequired[bool],
+```
 
 ## LifecycleRuleAndOperatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import LifecycleRuleAndOperatorTypeDef
+
+def get_value() -> LifecycleRuleAndOperatorTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LifecycleRuleAndOperatorTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    ObjectSizeGreaterThan: NotRequired[int],
+    ObjectSizeLessThan: NotRequired[int],
+```
 
-- `Prefix`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ObjectSizeGreaterThan`: `int`
-- `ObjectSizeLessThan`: `int`
-
-<a id="lifecyclerulefiltertypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## LifecycleRuleFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import LifecycleRuleFilterTypeDef
+
+def get_value() -> LifecycleRuleFilterTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LifecycleRuleFilterTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tag: NotRequired[TagTypeDef],  # (1)
+    ObjectSizeGreaterThan: NotRequired[int],
+    ObjectSizeLessThan: NotRequired[int],
+    And: NotRequired[LifecycleRuleAndOperatorTypeDef],  # (2)
+```
 
-- `Prefix`: `str`
-- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
-- `ObjectSizeGreaterThan`: `int`
-- `ObjectSizeLessThan`: `int`
-- `And`:
-  [LifecycleRuleAndOperatorTypeDef](./type_defs.md#lifecycleruleandoperatortypedef)
-
-<a id="lifecycleruletypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: LifecycleRuleAndOperatorTypeDef](./type_defs.md#lifecycleruleandoperatortypedef) 
 ## LifecycleRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import LifecycleRuleTypeDef
+
+def get_value() -> LifecycleRuleTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LifecycleRuleTypeDef(TypedDict):
+    Status: ExpirationStatusType,  # (3)
+    Expiration: NotRequired[LifecycleExpirationTypeDef],  # (1)
+    ID: NotRequired[str],
+    Prefix: NotRequired[str],
+    Filter: NotRequired[LifecycleRuleFilterTypeDef],  # (2)
+    Transitions: NotRequired[List[TransitionTypeDef]],  # (4)
+    NoncurrentVersionTransitions: NotRequired[List[NoncurrentVersionTransitionTypeDef]],  # (5)
+    NoncurrentVersionExpiration: NotRequired[NoncurrentVersionExpirationTypeDef],  # (6)
+    AbortIncompleteMultipartUpload: NotRequired[AbortIncompleteMultipartUploadTypeDef],  # (7)
+```
 
-- `Status`: [ExpirationStatusType](./literals.md#expirationstatustype)
-
-Optional fields:
-
-- `Expiration`:
-  [LifecycleExpirationTypeDef](./type_defs.md#lifecycleexpirationtypedef)
-- `ID`: `str`
-- `Prefix`: `str`
-- `Filter`:
-  [LifecycleRuleFilterTypeDef](./type_defs.md#lifecyclerulefiltertypedef)
-- `Transitions`:
-  `List`\[[TransitionTypeDef](./type_defs.md#transitiontypedef)\]
-- `NoncurrentVersionTransitions`:
-  `List`\[[NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef)\]
-- `NoncurrentVersionExpiration`:
-  [NoncurrentVersionExpirationTypeDef](./type_defs.md#noncurrentversionexpirationtypedef)
-- `AbortIncompleteMultipartUpload`:
-  [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
-
-<a id="listbucketanalyticsconfigurationsoutputtypedef"></a>
-
+1. See [:material-code-braces: LifecycleExpirationTypeDef](./type_defs.md#lifecycleexpirationtypedef) 
+2. See [:material-code-braces: LifecycleRuleFilterTypeDef](./type_defs.md#lifecyclerulefiltertypedef) 
+3. See [:material-code-brackets: ExpirationStatusType](./literals.md#expirationstatustype) 
+4. See [:material-code-braces: TransitionTypeDef](./type_defs.md#transitiontypedef) 
+5. See [:material-code-braces: NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef) 
+6. See [:material-code-braces: NoncurrentVersionExpirationTypeDef](./type_defs.md#noncurrentversionexpirationtypedef) 
+7. See [:material-code-braces: AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef) 
 ## ListBucketAnalyticsConfigurationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsOutputTypeDef
+
+def get_value() -> ListBucketAnalyticsConfigurationsOutputTypeDef:
+    return {
+        "IsTruncated": ...,
+        "ContinuationToken": ...,
+        "NextContinuationToken": ...,
+        "AnalyticsConfigurationList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBucketAnalyticsConfigurationsOutputTypeDef(TypedDict):
+    IsTruncated: bool,
+    ContinuationToken: str,
+    NextContinuationToken: str,
+    AnalyticsConfigurationList: List[AnalyticsConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IsTruncated`: `bool`
-- `ContinuationToken`: `str`
-- `NextContinuationToken`: `str`
-- `AnalyticsConfigurationList`:
-  `List`\[[AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbucketanalyticsconfigurationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBucketAnalyticsConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListBucketAnalyticsConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListBucketAnalyticsConfigurationsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ContinuationToken`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="listbucketintelligenttieringconfigurationsoutputtypedef"></a>
+```python title="Definition"
+class ListBucketAnalyticsConfigurationsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ContinuationToken: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## ListBucketIntelligentTieringConfigurationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsOutputTypeDef
+
+def get_value() -> ListBucketIntelligentTieringConfigurationsOutputTypeDef:
+    return {
+        "IsTruncated": ...,
+        "ContinuationToken": ...,
+        "NextContinuationToken": ...,
+        "IntelligentTieringConfigurationList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBucketIntelligentTieringConfigurationsOutputTypeDef(TypedDict):
+    IsTruncated: bool,
+    ContinuationToken: str,
+    NextContinuationToken: str,
+    IntelligentTieringConfigurationList: List[IntelligentTieringConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IsTruncated`: `bool`
-- `ContinuationToken`: `str`
-- `NextContinuationToken`: `str`
-- `IntelligentTieringConfigurationList`:
-  `List`\[[IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbucketintelligenttieringconfigurationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ContinuationToken`: `str`
-
-<a id="listbucketinventoryconfigurationsoutputtypedef"></a>
+```python title="Definition"
+class ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ContinuationToken: NotRequired[str],
+```
 
 ## ListBucketInventoryConfigurationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsOutputTypeDef
+
+def get_value() -> ListBucketInventoryConfigurationsOutputTypeDef:
+    return {
+        "ContinuationToken": ...,
+        "InventoryConfigurationList": ...,
+        "IsTruncated": ...,
+        "NextContinuationToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBucketInventoryConfigurationsOutputTypeDef(TypedDict):
+    ContinuationToken: str,
+    InventoryConfigurationList: List[InventoryConfigurationTypeDef],  # (1)
+    IsTruncated: bool,
+    NextContinuationToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ContinuationToken`: `str`
-- `InventoryConfigurationList`:
-  `List`\[[InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef)\]
-- `IsTruncated`: `bool`
-- `NextContinuationToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbucketinventoryconfigurationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBucketInventoryConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListBucketInventoryConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListBucketInventoryConfigurationsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ContinuationToken`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="listbucketmetricsconfigurationsoutputtypedef"></a>
+```python title="Definition"
+class ListBucketInventoryConfigurationsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ContinuationToken: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## ListBucketMetricsConfigurationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsOutputTypeDef
+
+def get_value() -> ListBucketMetricsConfigurationsOutputTypeDef:
+    return {
+        "IsTruncated": ...,
+        "ContinuationToken": ...,
+        "NextContinuationToken": ...,
+        "MetricsConfigurationList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBucketMetricsConfigurationsOutputTypeDef(TypedDict):
+    IsTruncated: bool,
+    ContinuationToken: str,
+    NextContinuationToken: str,
+    MetricsConfigurationList: List[MetricsConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IsTruncated`: `bool`
-- `ContinuationToken`: `str`
-- `NextContinuationToken`: `str`
-- `MetricsConfigurationList`:
-  `List`\[[MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbucketmetricsconfigurationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBucketMetricsConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListBucketMetricsConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListBucketMetricsConfigurationsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ContinuationToken`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="listbucketsoutputtypedef"></a>
+```python title="Definition"
+class ListBucketMetricsConfigurationsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ContinuationToken: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
 ## ListBucketsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListBucketsOutputTypeDef
+
+def get_value() -> ListBucketsOutputTypeDef:
+    return {
+        "Buckets": ...,
+        "Owner": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBucketsOutputTypeDef(TypedDict):
+    Buckets: List[BucketTypeDef],  # (1)
+    Owner: OwnerTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Buckets`: `List`\[[BucketTypeDef](./type_defs.md#buckettypedef)\]
-- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmultipartuploadsoutputtypedef"></a>
-
+1. See [:material-code-braces: BucketTypeDef](./type_defs.md#buckettypedef) 
+2. See [:material-code-braces: OwnerTypeDef](./type_defs.md#ownertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMultipartUploadsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListMultipartUploadsOutputTypeDef
+
+def get_value() -> ListMultipartUploadsOutputTypeDef:
+    return {
+        "Bucket": ...,
+        "KeyMarker": ...,
+        "UploadIdMarker": ...,
+        "NextKeyMarker": ...,
+        "Prefix": ...,
+        "Delimiter": ...,
+        "NextUploadIdMarker": ...,
+        "MaxUploads": ...,
+        "IsTruncated": ...,
+        "Uploads": ...,
+        "CommonPrefixes": ...,
+        "EncodingType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMultipartUploadsOutputTypeDef(TypedDict):
+    Bucket: str,
+    KeyMarker: str,
+    UploadIdMarker: str,
+    NextKeyMarker: str,
+    Prefix: str,
+    Delimiter: str,
+    NextUploadIdMarker: str,
+    MaxUploads: int,
+    IsTruncated: bool,
+    Uploads: List[MultipartUploadTypeDef],  # (1)
+    CommonPrefixes: List[CommonPrefixTypeDef],  # (2)
+    EncodingType: EncodingTypeType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Bucket`: `str`
-- `KeyMarker`: `str`
-- `UploadIdMarker`: `str`
-- `NextKeyMarker`: `str`
-- `Prefix`: `str`
-- `Delimiter`: `str`
-- `NextUploadIdMarker`: `str`
-- `MaxUploads`: `int`
-- `IsTruncated`: `bool`
-- `Uploads`:
-  `List`\[[MultipartUploadTypeDef](./type_defs.md#multipartuploadtypedef)\]
-- `CommonPrefixes`:
-  `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
-- `EncodingType`: `Literal['url']` (see
-  [EncodingTypeType](./literals.md#encodingtypetype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MultipartUploadTypeDef](./type_defs.md#multipartuploadtypedef) 
+2. See [:material-code-braces: CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef) 
+3. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMultipartUploadsRequestListMultipartUploadsPaginateTypeDef
 
-<a id="listmultipartuploadsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import ListMultipartUploadsRequestListMultipartUploadsPaginateTypeDef
 
+def get_value() -> ListMultipartUploadsRequestListMultipartUploadsPaginateTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class ListMultipartUploadsRequestListMultipartUploadsPaginateTypeDef(TypedDict):
+    Bucket: str,
+    Delimiter: NotRequired[str],
+    EncodingType: NotRequired[EncodingTypeType],  # (1)
+    Prefix: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMultipartUploadsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListMultipartUploadsRequestRequestTypeDef
+
+def get_value() -> ListMultipartUploadsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMultipartUploadsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Delimiter: NotRequired[str],
+    EncodingType: NotRequired[EncodingTypeType],  # (1)
+    KeyMarker: NotRequired[str],
+    MaxUploads: NotRequired[int],
+    Prefix: NotRequired[str],
+    UploadIdMarker: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Delimiter`: `str`
-- `EncodingType`: `Literal['url']` (see
-  [EncodingTypeType](./literals.md#encodingtypetype))
-- `KeyMarker`: `str`
-- `MaxUploads`: `int`
-- `Prefix`: `str`
-- `UploadIdMarker`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="listobjectversionsoutputtypedef"></a>
-
+1. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
 ## ListObjectVersionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListObjectVersionsOutputTypeDef
+
+def get_value() -> ListObjectVersionsOutputTypeDef:
+    return {
+        "IsTruncated": ...,
+        "KeyMarker": ...,
+        "VersionIdMarker": ...,
+        "NextKeyMarker": ...,
+        "NextVersionIdMarker": ...,
+        "Versions": ...,
+        "DeleteMarkers": ...,
+        "Name": ...,
+        "Prefix": ...,
+        "Delimiter": ...,
+        "MaxKeys": ...,
+        "CommonPrefixes": ...,
+        "EncodingType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListObjectVersionsOutputTypeDef(TypedDict):
+    IsTruncated: bool,
+    KeyMarker: str,
+    VersionIdMarker: str,
+    NextKeyMarker: str,
+    NextVersionIdMarker: str,
+    Versions: List[ObjectVersionTypeDef],  # (1)
+    DeleteMarkers: List[DeleteMarkerEntryTypeDef],  # (2)
+    Name: str,
+    Prefix: str,
+    Delimiter: str,
+    MaxKeys: int,
+    CommonPrefixes: List[CommonPrefixTypeDef],  # (3)
+    EncodingType: EncodingTypeType,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `IsTruncated`: `bool`
-- `KeyMarker`: `str`
-- `VersionIdMarker`: `str`
-- `NextKeyMarker`: `str`
-- `NextVersionIdMarker`: `str`
-- `Versions`:
-  `List`\[[ObjectVersionTypeDef](./type_defs.md#objectversiontypedef)\]
-- `DeleteMarkers`:
-  `List`\[[DeleteMarkerEntryTypeDef](./type_defs.md#deletemarkerentrytypedef)\]
-- `Name`: `str`
-- `Prefix`: `str`
-- `Delimiter`: `str`
-- `MaxKeys`: `int`
-- `CommonPrefixes`:
-  `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
-- `EncodingType`: `Literal['url']` (see
-  [EncodingTypeType](./literals.md#encodingtypetype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ObjectVersionTypeDef](./type_defs.md#objectversiontypedef) 
+2. See [:material-code-braces: DeleteMarkerEntryTypeDef](./type_defs.md#deletemarkerentrytypedef) 
+3. See [:material-code-braces: CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef) 
+4. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListObjectVersionsRequestListObjectVersionsPaginateTypeDef
 
-<a id="listobjectversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import ListObjectVersionsRequestListObjectVersionsPaginateTypeDef
 
+def get_value() -> ListObjectVersionsRequestListObjectVersionsPaginateTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class ListObjectVersionsRequestListObjectVersionsPaginateTypeDef(TypedDict):
+    Bucket: str,
+    Delimiter: NotRequired[str],
+    EncodingType: NotRequired[EncodingTypeType],  # (1)
+    Prefix: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListObjectVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListObjectVersionsRequestRequestTypeDef
+
+def get_value() -> ListObjectVersionsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListObjectVersionsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Delimiter: NotRequired[str],
+    EncodingType: NotRequired[EncodingTypeType],  # (1)
+    KeyMarker: NotRequired[str],
+    MaxKeys: NotRequired[int],
+    Prefix: NotRequired[str],
+    VersionIdMarker: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Delimiter`: `str`
-- `EncodingType`: `Literal['url']` (see
-  [EncodingTypeType](./literals.md#encodingtypetype))
-- `KeyMarker`: `str`
-- `MaxKeys`: `int`
-- `Prefix`: `str`
-- `VersionIdMarker`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="listobjectsoutputtypedef"></a>
-
+1. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
 ## ListObjectsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListObjectsOutputTypeDef
+
+def get_value() -> ListObjectsOutputTypeDef:
+    return {
+        "IsTruncated": ...,
+        "Marker": ...,
+        "NextMarker": ...,
+        "Contents": ...,
+        "Name": ...,
+        "Prefix": ...,
+        "Delimiter": ...,
+        "MaxKeys": ...,
+        "CommonPrefixes": ...,
+        "EncodingType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListObjectsOutputTypeDef(TypedDict):
+    IsTruncated: bool,
+    Marker: str,
+    NextMarker: str,
+    Contents: List[ObjectTypeDef],  # (1)
+    Name: str,
+    Prefix: str,
+    Delimiter: str,
+    MaxKeys: int,
+    CommonPrefixes: List[CommonPrefixTypeDef],  # (2)
+    EncodingType: EncodingTypeType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `NextMarker`: `str`
-- `Contents`: `List`\[[ObjectTypeDef](./type_defs.md#objecttypedef)\]
-- `Name`: `str`
-- `Prefix`: `str`
-- `Delimiter`: `str`
-- `MaxKeys`: `int`
-- `CommonPrefixes`:
-  `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
-- `EncodingType`: `Literal['url']` (see
-  [EncodingTypeType](./literals.md#encodingtypetype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ObjectTypeDef](./type_defs.md#objecttypedef) 
+2. See [:material-code-braces: CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef) 
+3. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListObjectsRequestListObjectsPaginateTypeDef
 
-<a id="listobjectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import ListObjectsRequestListObjectsPaginateTypeDef
 
+def get_value() -> ListObjectsRequestListObjectsPaginateTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class ListObjectsRequestListObjectsPaginateTypeDef(TypedDict):
+    Bucket: str,
+    Delimiter: NotRequired[str],
+    EncodingType: NotRequired[EncodingTypeType],  # (1)
+    Prefix: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListObjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListObjectsRequestRequestTypeDef
+
+def get_value() -> ListObjectsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListObjectsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Delimiter: NotRequired[str],
+    EncodingType: NotRequired[EncodingTypeType],  # (1)
+    Marker: NotRequired[str],
+    MaxKeys: NotRequired[int],
+    Prefix: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Delimiter`: `str`
-- `EncodingType`: `Literal['url']` (see
-  [EncodingTypeType](./literals.md#encodingtypetype))
-- `Marker`: `str`
-- `MaxKeys`: `int`
-- `Prefix`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="listobjectsv2outputtypedef"></a>
-
+1. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## ListObjectsV2OutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListObjectsV2OutputTypeDef
+
+def get_value() -> ListObjectsV2OutputTypeDef:
+    return {
+        "IsTruncated": ...,
+        "Contents": ...,
+        "Name": ...,
+        "Prefix": ...,
+        "Delimiter": ...,
+        "MaxKeys": ...,
+        "CommonPrefixes": ...,
+        "EncodingType": ...,
+        "KeyCount": ...,
+        "ContinuationToken": ...,
+        "NextContinuationToken": ...,
+        "StartAfter": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListObjectsV2OutputTypeDef(TypedDict):
+    IsTruncated: bool,
+    Contents: List[ObjectTypeDef],  # (1)
+    Name: str,
+    Prefix: str,
+    Delimiter: str,
+    MaxKeys: int,
+    CommonPrefixes: List[CommonPrefixTypeDef],  # (2)
+    EncodingType: EncodingTypeType,  # (3)
+    KeyCount: int,
+    ContinuationToken: str,
+    NextContinuationToken: str,
+    StartAfter: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `IsTruncated`: `bool`
-- `Contents`: `List`\[[ObjectTypeDef](./type_defs.md#objecttypedef)\]
-- `Name`: `str`
-- `Prefix`: `str`
-- `Delimiter`: `str`
-- `MaxKeys`: `int`
-- `CommonPrefixes`:
-  `List`\[[CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef)\]
-- `EncodingType`: `Literal['url']` (see
-  [EncodingTypeType](./literals.md#encodingtypetype))
-- `KeyCount`: `int`
-- `ContinuationToken`: `str`
-- `NextContinuationToken`: `str`
-- `StartAfter`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ObjectTypeDef](./type_defs.md#objecttypedef) 
+2. See [:material-code-braces: CommonPrefixTypeDef](./type_defs.md#commonprefixtypedef) 
+3. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListObjectsV2RequestListObjectsV2PaginateTypeDef
 
-<a id="listobjectsv2requestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import ListObjectsV2RequestListObjectsV2PaginateTypeDef
 
+def get_value() -> ListObjectsV2RequestListObjectsV2PaginateTypeDef:
+    return {
+        "Bucket": ...,
+    }
+```
+
+```python title="Definition"
+class ListObjectsV2RequestListObjectsV2PaginateTypeDef(TypedDict):
+    Bucket: str,
+    Delimiter: NotRequired[str],
+    EncodingType: NotRequired[EncodingTypeType],  # (1)
+    Prefix: NotRequired[str],
+    FetchOwner: NotRequired[bool],
+    StartAfter: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListObjectsV2RequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListObjectsV2RequestRequestTypeDef
+
+def get_value() -> ListObjectsV2RequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListObjectsV2RequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Delimiter: NotRequired[str],
+    EncodingType: NotRequired[EncodingTypeType],  # (1)
+    MaxKeys: NotRequired[int],
+    Prefix: NotRequired[str],
+    ContinuationToken: NotRequired[str],
+    FetchOwner: NotRequired[bool],
+    StartAfter: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Delimiter`: `str`
-- `EncodingType`: `Literal['url']` (see
-  [EncodingTypeType](./literals.md#encodingtypetype))
-- `MaxKeys`: `int`
-- `Prefix`: `str`
-- `ContinuationToken`: `str`
-- `FetchOwner`: `bool`
-- `StartAfter`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="listpartsoutputtypedef"></a>
-
+1. See [:material-code-brackets: EncodingTypeType](./literals.md#encodingtypetype) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## ListPartsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListPartsOutputTypeDef
+
+def get_value() -> ListPartsOutputTypeDef:
+    return {
+        "AbortDate": ...,
+        "AbortRuleId": ...,
+        "Bucket": ...,
+        "Key": ...,
+        "UploadId": ...,
+        "PartNumberMarker": ...,
+        "NextPartNumberMarker": ...,
+        "MaxParts": ...,
+        "IsTruncated": ...,
+        "Parts": ...,
+        "Initiator": ...,
+        "Owner": ...,
+        "StorageClass": ...,
+        "RequestCharged": ...,
+        "ChecksumAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPartsOutputTypeDef(TypedDict):
+    AbortDate: datetime,
+    AbortRuleId: str,
+    Bucket: str,
+    Key: str,
+    UploadId: str,
+    PartNumberMarker: int,
+    NextPartNumberMarker: int,
+    MaxParts: int,
+    IsTruncated: bool,
+    Parts: List[PartTypeDef],  # (1)
+    Initiator: InitiatorTypeDef,  # (2)
+    Owner: OwnerTypeDef,  # (3)
+    StorageClass: StorageClassType,  # (4)
+    RequestCharged: RequestChargedType,  # (5)
+    ChecksumAlgorithm: ChecksumAlgorithmType,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `AbortDate`: `datetime`
-- `AbortRuleId`: `str`
-- `Bucket`: `str`
-- `Key`: `str`
-- `UploadId`: `str`
-- `PartNumberMarker`: `int`
-- `NextPartNumberMarker`: `int`
-- `MaxParts`: `int`
-- `IsTruncated`: `bool`
-- `Parts`: `List`\[[PartTypeDef](./type_defs.md#parttypedef)\]
-- `Initiator`: [InitiatorTypeDef](./type_defs.md#initiatortypedef)
-- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PartTypeDef](./type_defs.md#parttypedef) 
+2. See [:material-code-braces: InitiatorTypeDef](./type_defs.md#initiatortypedef) 
+3. See [:material-code-braces: OwnerTypeDef](./type_defs.md#ownertypedef) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+5. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+6. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPartsRequestListPartsPaginateTypeDef
 
-<a id="listpartsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_s3.type_defs import ListPartsRequestListPartsPaginateTypeDef
 
+def get_value() -> ListPartsRequestListPartsPaginateTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "UploadId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPartsRequestListPartsPaginateTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    UploadId: str,
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPartsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ListPartsRequestRequestTypeDef
+
+def get_value() -> ListPartsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "UploadId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPartsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    UploadId: str,
+    MaxParts: NotRequired[int],
+    PartNumberMarker: NotRequired[int],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-- `UploadId`: `str`
-
-Optional fields:
-
-- `MaxParts`: `int`
-- `PartNumberMarker`: `int`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-
-<a id="loggingenabledresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## LoggingEnabledResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import LoggingEnabledResponseMetadataTypeDef
+
+def get_value() -> LoggingEnabledResponseMetadataTypeDef:
+    return {
+        "TargetBucket": ...,
+        "TargetGrants": ...,
+        "TargetPrefix": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LoggingEnabledResponseMetadataTypeDef(TypedDict):
+    TargetBucket: str,
+    TargetGrants: List[TargetGrantTypeDef],  # (1)
+    TargetPrefix: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TargetBucket`: `str`
-- `TargetGrants`:
-  `List`\[[TargetGrantTypeDef](./type_defs.md#targetgranttypedef)\]
-- `TargetPrefix`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loggingenabledtypedef"></a>
-
+1. See [:material-code-braces: TargetGrantTypeDef](./type_defs.md#targetgranttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingEnabledTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import LoggingEnabledTypeDef
+
+def get_value() -> LoggingEnabledTypeDef:
+    return {
+        "TargetBucket": ...,
+        "TargetPrefix": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LoggingEnabledTypeDef(TypedDict):
+    TargetBucket: str,
+    TargetPrefix: str,
+    TargetGrants: NotRequired[List[TargetGrantTypeDef]],  # (1)
+```
 
-- `TargetBucket`: `str`
-- `TargetPrefix`: `str`
-
-Optional fields:
-
-- `TargetGrants`:
-  `List`\[[TargetGrantTypeDef](./type_defs.md#targetgranttypedef)\]
-
-<a id="metadataentrytypedef"></a>
-
+1. See [:material-code-braces: TargetGrantTypeDef](./type_defs.md#targetgranttypedef) 
 ## MetadataEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import MetadataEntryTypeDef
+
+def get_value() -> MetadataEntryTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="metricsandoperatortypedef"></a>
+```python title="Definition"
+class MetadataEntryTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## MetricsAndOperatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import MetricsAndOperatorTypeDef
+
+def get_value() -> MetricsAndOperatorTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MetricsAndOperatorTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    AccessPointArn: NotRequired[str],
+```
 
-- `Prefix`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AccessPointArn`: `str`
-
-<a id="metricsconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## MetricsConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import MetricsConfigurationTypeDef
+
+def get_value() -> MetricsConfigurationTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricsConfigurationTypeDef(TypedDict):
+    Id: str,
+    Filter: NotRequired[MetricsFilterTypeDef],  # (1)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `Filter`: [MetricsFilterTypeDef](./type_defs.md#metricsfiltertypedef)
-
-<a id="metricsfiltertypedef"></a>
-
+1. See [:material-code-braces: MetricsFilterTypeDef](./type_defs.md#metricsfiltertypedef) 
 ## MetricsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import MetricsFilterTypeDef
+
+def get_value() -> MetricsFilterTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MetricsFilterTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tag: NotRequired[TagTypeDef],  # (1)
+    AccessPointArn: NotRequired[str],
+    And: NotRequired[MetricsAndOperatorTypeDef],  # (2)
+```
 
-- `Prefix`: `str`
-- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
-- `AccessPointArn`: `str`
-- `And`: [MetricsAndOperatorTypeDef](./type_defs.md#metricsandoperatortypedef)
-
-<a id="metricstypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: MetricsAndOperatorTypeDef](./type_defs.md#metricsandoperatortypedef) 
 ## MetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import MetricsTypeDef
+
+def get_value() -> MetricsTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricsTypeDef(TypedDict):
+    Status: MetricsStatusType,  # (1)
+    EventThreshold: NotRequired[ReplicationTimeValueTypeDef],  # (2)
+```
 
-- `Status`: [MetricsStatusType](./literals.md#metricsstatustype)
-
-Optional fields:
-
-- `EventThreshold`:
-  [ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef)
-
-<a id="multipartuploadpartrequesttypedef"></a>
-
+1. See [:material-code-brackets: MetricsStatusType](./literals.md#metricsstatustype) 
+2. See [:material-code-braces: ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef) 
 ## MultipartUploadPartRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import MultipartUploadPartRequestTypeDef
+
+def get_value() -> MultipartUploadPartRequestTypeDef:
+    return {
+        "part_number": ...,
+    }
 ```
 
-Required fields:
-
-- `part_number`: `str`
-
-<a id="multipartuploadtypedef"></a>
+```python title="Definition"
+class MultipartUploadPartRequestTypeDef(TypedDict):
+    part_number: str,
+```
 
 ## MultipartUploadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import MultipartUploadTypeDef
+
+def get_value() -> MultipartUploadTypeDef:
+    return {
+        "UploadId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MultipartUploadTypeDef(TypedDict):
+    UploadId: NotRequired[str],
+    Key: NotRequired[str],
+    Initiated: NotRequired[datetime],
+    StorageClass: NotRequired[StorageClassType],  # (1)
+    Owner: NotRequired[OwnerTypeDef],  # (2)
+    Initiator: NotRequired[InitiatorTypeDef],  # (3)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (4)
+```
 
-- `UploadId`: `str`
-- `Key`: `str`
-- `Initiated`: `datetime`
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-- `Initiator`: [InitiatorTypeDef](./type_defs.md#initiatortypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-
-<a id="noncurrentversionexpirationtypedef"></a>
-
+1. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+2. See [:material-code-braces: OwnerTypeDef](./type_defs.md#ownertypedef) 
+3. See [:material-code-braces: InitiatorTypeDef](./type_defs.md#initiatortypedef) 
+4. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## NoncurrentVersionExpirationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import NoncurrentVersionExpirationTypeDef
+
+def get_value() -> NoncurrentVersionExpirationTypeDef:
+    return {
+        "NoncurrentDays": ...,
+    }
 ```
 
-Optional fields:
-
-- `NoncurrentDays`: `int`
-- `NewerNoncurrentVersions`: `int`
-
-<a id="noncurrentversiontransitiontypedef"></a>
+```python title="Definition"
+class NoncurrentVersionExpirationTypeDef(TypedDict):
+    NoncurrentDays: NotRequired[int],
+    NewerNoncurrentVersions: NotRequired[int],
+```
 
 ## NoncurrentVersionTransitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import NoncurrentVersionTransitionTypeDef
+
+def get_value() -> NoncurrentVersionTransitionTypeDef:
+    return {
+        "NoncurrentDays": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NoncurrentVersionTransitionTypeDef(TypedDict):
+    NoncurrentDays: NotRequired[int],
+    StorageClass: NotRequired[TransitionStorageClassType],  # (1)
+    NewerNoncurrentVersions: NotRequired[int],
+```
 
-- `NoncurrentDays`: `int`
-- `StorageClass`:
-  [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
-- `NewerNoncurrentVersions`: `int`
-
-<a id="notificationconfigurationdeprecatedresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: TransitionStorageClassType](./literals.md#transitionstorageclasstype) 
 ## NotificationConfigurationDeprecatedResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import NotificationConfigurationDeprecatedResponseMetadataTypeDef
+
+def get_value() -> NotificationConfigurationDeprecatedResponseMetadataTypeDef:
+    return {
+        "TopicConfiguration": ...,
+        "QueueConfiguration": ...,
+        "CloudFunctionConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotificationConfigurationDeprecatedResponseMetadataTypeDef(TypedDict):
+    TopicConfiguration: TopicConfigurationDeprecatedTypeDef,  # (1)
+    QueueConfiguration: QueueConfigurationDeprecatedTypeDef,  # (2)
+    CloudFunctionConfiguration: CloudFunctionConfigurationTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `TopicConfiguration`:
-  [TopicConfigurationDeprecatedTypeDef](./type_defs.md#topicconfigurationdeprecatedtypedef)
-- `QueueConfiguration`:
-  [QueueConfigurationDeprecatedTypeDef](./type_defs.md#queueconfigurationdeprecatedtypedef)
-- `CloudFunctionConfiguration`:
-  [CloudFunctionConfigurationTypeDef](./type_defs.md#cloudfunctionconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notificationconfigurationdeprecatedtypedef"></a>
-
+1. See [:material-code-braces: TopicConfigurationDeprecatedTypeDef](./type_defs.md#topicconfigurationdeprecatedtypedef) 
+2. See [:material-code-braces: QueueConfigurationDeprecatedTypeDef](./type_defs.md#queueconfigurationdeprecatedtypedef) 
+3. See [:material-code-braces: CloudFunctionConfigurationTypeDef](./type_defs.md#cloudfunctionconfigurationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotificationConfigurationDeprecatedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import NotificationConfigurationDeprecatedTypeDef
+
+def get_value() -> NotificationConfigurationDeprecatedTypeDef:
+    return {
+        "TopicConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotificationConfigurationDeprecatedTypeDef(TypedDict):
+    TopicConfiguration: NotRequired[TopicConfigurationDeprecatedTypeDef],  # (1)
+    QueueConfiguration: NotRequired[QueueConfigurationDeprecatedTypeDef],  # (2)
+    CloudFunctionConfiguration: NotRequired[CloudFunctionConfigurationTypeDef],  # (3)
+```
 
-- `TopicConfiguration`:
-  [TopicConfigurationDeprecatedTypeDef](./type_defs.md#topicconfigurationdeprecatedtypedef)
-- `QueueConfiguration`:
-  [QueueConfigurationDeprecatedTypeDef](./type_defs.md#queueconfigurationdeprecatedtypedef)
-- `CloudFunctionConfiguration`:
-  [CloudFunctionConfigurationTypeDef](./type_defs.md#cloudfunctionconfigurationtypedef)
-
-<a id="notificationconfigurationfiltertypedef"></a>
-
+1. See [:material-code-braces: TopicConfigurationDeprecatedTypeDef](./type_defs.md#topicconfigurationdeprecatedtypedef) 
+2. See [:material-code-braces: QueueConfigurationDeprecatedTypeDef](./type_defs.md#queueconfigurationdeprecatedtypedef) 
+3. See [:material-code-braces: CloudFunctionConfigurationTypeDef](./type_defs.md#cloudfunctionconfigurationtypedef) 
 ## NotificationConfigurationFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import NotificationConfigurationFilterTypeDef
+
+def get_value() -> NotificationConfigurationFilterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotificationConfigurationFilterTypeDef(TypedDict):
+    Key: NotRequired[S3KeyFilterTypeDef],  # (1)
+```
 
-- `Key`: [S3KeyFilterTypeDef](./type_defs.md#s3keyfiltertypedef)
-
-<a id="notificationconfigurationresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: S3KeyFilterTypeDef](./type_defs.md#s3keyfiltertypedef) 
 ## NotificationConfigurationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import NotificationConfigurationResponseMetadataTypeDef
+
+def get_value() -> NotificationConfigurationResponseMetadataTypeDef:
+    return {
+        "TopicConfigurations": ...,
+        "QueueConfigurations": ...,
+        "LambdaFunctionConfigurations": ...,
+        "EventBridgeConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotificationConfigurationResponseMetadataTypeDef(TypedDict):
+    TopicConfigurations: List[TopicConfigurationTypeDef],  # (1)
+    QueueConfigurations: List[QueueConfigurationTypeDef],  # (2)
+    LambdaFunctionConfigurations: List[LambdaFunctionConfigurationTypeDef],  # (3)
+    EventBridgeConfiguration: Dict[str, Any],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `TopicConfigurations`:
-  `List`\[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)\]
-- `QueueConfigurations`:
-  `List`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
-- `LambdaFunctionConfigurations`:
-  `List`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
-- `EventBridgeConfiguration`: `Dict`\[`str`, `Any`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notificationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef) 
+2. See [:material-code-braces: QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef) 
+3. See [:material-code-braces: LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotificationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import NotificationConfigurationTypeDef
+
+def get_value() -> NotificationConfigurationTypeDef:
+    return {
+        "TopicConfigurations": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotificationConfigurationTypeDef(TypedDict):
+    TopicConfigurations: NotRequired[Sequence[TopicConfigurationTypeDef]],  # (1)
+    QueueConfigurations: NotRequired[Sequence[QueueConfigurationTypeDef]],  # (2)
+    LambdaFunctionConfigurations: NotRequired[Sequence[LambdaFunctionConfigurationTypeDef]],  # (3)
+    EventBridgeConfiguration: NotRequired[Mapping[str, Any]],
+```
 
-- `TopicConfigurations`:
-  `Sequence`\[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)\]
-- `QueueConfigurations`:
-  `Sequence`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
-- `LambdaFunctionConfigurations`:
-  `Sequence`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
-- `EventBridgeConfiguration`: `Mapping`\[`str`, `Any`\]
-
-<a id="objectcopyrequesttypedef"></a>
-
+1. See [:material-code-braces: TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef) 
+2. See [:material-code-braces: QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef) 
+3. See [:material-code-braces: LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef) 
 ## ObjectCopyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectCopyRequestTypeDef
+
+def get_value() -> ObjectCopyRequestTypeDef:
+    return {
+        "CopySource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ObjectCopyRequestTypeDef(TypedDict):
+    CopySource: CopySourceTypeDef,  # (1)
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    SourceClient: NotRequired[BaseClient],
+    Config: NotRequired[TransferConfig],
+```
 
-- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `SourceClient`: `BaseClient`
-- `Config`: `TransferConfig`
-
-<a id="objectdownloadfilerequesttypedef"></a>
-
+1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
 ## ObjectDownloadFileRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectDownloadFileRequestTypeDef
+
+def get_value() -> ObjectDownloadFileRequestTypeDef:
+    return {
+        "Filename": ...,
+    }
 ```
 
-Required fields:
-
-- `Filename`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="objectdownloadfileobjrequesttypedef"></a>
+```python title="Definition"
+class ObjectDownloadFileRequestTypeDef(TypedDict):
+    Filename: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## ObjectDownloadFileobjRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectDownloadFileobjRequestTypeDef
+
+def get_value() -> ObjectDownloadFileobjRequestTypeDef:
+    return {
+        "Fileobj": ...,
+    }
 ```
 
-Required fields:
-
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="objectidentifiertypedef"></a>
+```python title="Definition"
+class ObjectDownloadFileobjRequestTypeDef(TypedDict):
+    Fileobj: Union[IO[Any], StreamingBody],
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## ObjectIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectIdentifierTypeDef
+
+def get_value() -> ObjectIdentifierTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-
-<a id="objectlockconfigurationtypedef"></a>
+```python title="Definition"
+class ObjectIdentifierTypeDef(TypedDict):
+    Key: str,
+    VersionId: NotRequired[str],
+```
 
 ## ObjectLockConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectLockConfigurationTypeDef
+
+def get_value() -> ObjectLockConfigurationTypeDef:
+    return {
+        "ObjectLockEnabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ObjectLockConfigurationTypeDef(TypedDict):
+    ObjectLockEnabled: NotRequired[ObjectLockEnabledType],  # (1)
+    Rule: NotRequired[ObjectLockRuleTypeDef],  # (2)
+```
 
-- `ObjectLockEnabled`: `Literal['Enabled']` (see
-  [ObjectLockEnabledType](./literals.md#objectlockenabledtype))
-- `Rule`: [ObjectLockRuleTypeDef](./type_defs.md#objectlockruletypedef)
-
-<a id="objectlocklegalholdtypedef"></a>
-
+1. See [:material-code-brackets: ObjectLockEnabledType](./literals.md#objectlockenabledtype) 
+2. See [:material-code-braces: ObjectLockRuleTypeDef](./type_defs.md#objectlockruletypedef) 
 ## ObjectLockLegalHoldTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectLockLegalHoldTypeDef
+
+def get_value() -> ObjectLockLegalHoldTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ObjectLockLegalHoldTypeDef(TypedDict):
+    Status: NotRequired[ObjectLockLegalHoldStatusType],  # (1)
+```
 
-- `Status`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-
-<a id="objectlockretentiontypedef"></a>
-
+1. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
 ## ObjectLockRetentionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectLockRetentionTypeDef
+
+def get_value() -> ObjectLockRetentionTypeDef:
+    return {
+        "Mode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ObjectLockRetentionTypeDef(TypedDict):
+    Mode: NotRequired[ObjectLockRetentionModeType],  # (1)
+    RetainUntilDate: NotRequired[datetime],
+```
 
-- `Mode`:
-  [ObjectLockRetentionModeType](./literals.md#objectlockretentionmodetype)
-- `RetainUntilDate`: `datetime`
-
-<a id="objectlockruletypedef"></a>
-
+1. See [:material-code-brackets: ObjectLockRetentionModeType](./literals.md#objectlockretentionmodetype) 
 ## ObjectLockRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectLockRuleTypeDef
+
+def get_value() -> ObjectLockRuleTypeDef:
+    return {
+        "DefaultRetention": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ObjectLockRuleTypeDef(TypedDict):
+    DefaultRetention: NotRequired[DefaultRetentionTypeDef],  # (1)
+```
 
-- `DefaultRetention`:
-  [DefaultRetentionTypeDef](./type_defs.md#defaultretentiontypedef)
-
-<a id="objectmultipartuploadrequesttypedef"></a>
-
+1. See [:material-code-braces: DefaultRetentionTypeDef](./type_defs.md#defaultretentiontypedef) 
 ## ObjectMultipartUploadRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectMultipartUploadRequestTypeDef
+
+def get_value() -> ObjectMultipartUploadRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="objectparttypedef"></a>
+```python title="Definition"
+class ObjectMultipartUploadRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## ObjectPartTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectPartTypeDef
+
+def get_value() -> ObjectPartTypeDef:
+    return {
+        "PartNumber": ...,
+    }
 ```
 
-Optional fields:
-
-- `PartNumber`: `int`
-- `Size`: `int`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-
-<a id="objectsummarymultipartuploadrequesttypedef"></a>
+```python title="Definition"
+class ObjectPartTypeDef(TypedDict):
+    PartNumber: NotRequired[int],
+    Size: NotRequired[int],
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+```
 
 ## ObjectSummaryMultipartUploadRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectSummaryMultipartUploadRequestTypeDef
+
+def get_value() -> ObjectSummaryMultipartUploadRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="objectsummaryversionrequesttypedef"></a>
+```python title="Definition"
+class ObjectSummaryMultipartUploadRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## ObjectSummaryVersionRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectSummaryVersionRequestTypeDef
+
+def get_value() -> ObjectSummaryVersionRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="objecttypedef"></a>
+```python title="Definition"
+class ObjectSummaryVersionRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## ObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectTypeDef
+
+def get_value() -> ObjectTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ObjectTypeDef(TypedDict):
+    Key: NotRequired[str],
+    LastModified: NotRequired[datetime],
+    ETag: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[List[ChecksumAlgorithmType]],  # (1)
+    Size: NotRequired[int],
+    StorageClass: NotRequired[ObjectStorageClassType],  # (2)
+    Owner: NotRequired[OwnerTypeDef],  # (3)
+```
 
-- `Key`: `str`
-- `LastModified`: `datetime`
-- `ETag`: `str`
-- `ChecksumAlgorithm`:
-  `List`\[[ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)\]
-- `Size`: `int`
-- `StorageClass`:
-  [ObjectStorageClassType](./literals.md#objectstorageclasstype)
-- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-
-<a id="objectuploadfilerequesttypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-brackets: ObjectStorageClassType](./literals.md#objectstorageclasstype) 
+3. See [:material-code-braces: OwnerTypeDef](./type_defs.md#ownertypedef) 
 ## ObjectUploadFileRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectUploadFileRequestTypeDef
+
+def get_value() -> ObjectUploadFileRequestTypeDef:
+    return {
+        "Filename": ...,
+    }
 ```
 
-Required fields:
-
-- `Filename`: `str`
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="objectuploadfileobjrequesttypedef"></a>
+```python title="Definition"
+class ObjectUploadFileRequestTypeDef(TypedDict):
+    Filename: str,
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## ObjectUploadFileobjRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectUploadFileobjRequestTypeDef
+
+def get_value() -> ObjectUploadFileobjRequestTypeDef:
+    return {
+        "Fileobj": ...,
+    }
 ```
 
-Required fields:
-
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\]
-
-Optional fields:
-
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
-
-<a id="objectversionrequesttypedef"></a>
+```python title="Definition"
+class ObjectUploadFileobjRequestTypeDef(TypedDict):
+    Fileobj: Union[IO[Any], StreamingBody],
+    ExtraArgs: NotRequired[Dict[str, Any]],
+    Callback: NotRequired[Callable[..., Any]],
+    Config: NotRequired[TransferConfig],
+```
 
 ## ObjectVersionRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectVersionRequestTypeDef
+
+def get_value() -> ObjectVersionRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="objectversiontypedef"></a>
+```python title="Definition"
+class ObjectVersionRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## ObjectVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ObjectVersionTypeDef
+
+def get_value() -> ObjectVersionTypeDef:
+    return {
+        "ETag": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ObjectVersionTypeDef(TypedDict):
+    ETag: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[List[ChecksumAlgorithmType]],  # (1)
+    Size: NotRequired[int],
+    StorageClass: NotRequired[ObjectVersionStorageClassType],  # (2)
+    Key: NotRequired[str],
+    VersionId: NotRequired[str],
+    IsLatest: NotRequired[bool],
+    LastModified: NotRequired[datetime],
+    Owner: NotRequired[OwnerTypeDef],  # (3)
+```
 
-- `ETag`: `str`
-- `ChecksumAlgorithm`:
-  `List`\[[ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)\]
-- `Size`: `int`
-- `StorageClass`: `Literal['STANDARD']` (see
-  [ObjectVersionStorageClassType](./literals.md#objectversionstorageclasstype))
-- `Key`: `str`
-- `VersionId`: `str`
-- `IsLatest`: `bool`
-- `LastModified`: `datetime`
-- `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
-
-<a id="outputlocationtypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-brackets: ObjectVersionStorageClassType](./literals.md#objectversionstorageclasstype) 
+3. See [:material-code-braces: OwnerTypeDef](./type_defs.md#ownertypedef) 
 ## OutputLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import OutputLocationTypeDef
+
+def get_value() -> OutputLocationTypeDef:
+    return {
+        "S3": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputLocationTypeDef(TypedDict):
+    S3: NotRequired[S3LocationTypeDef],  # (1)
+```
 
-- `S3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="outputserializationtypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## OutputSerializationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import OutputSerializationTypeDef
+
+def get_value() -> OutputSerializationTypeDef:
+    return {
+        "CSV": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputSerializationTypeDef(TypedDict):
+    CSV: NotRequired[CSVOutputTypeDef],  # (1)
+    JSON: NotRequired[JSONOutputTypeDef],  # (2)
+```
 
-- `CSV`: [CSVOutputTypeDef](./type_defs.md#csvoutputtypedef)
-- `JSON`: [JSONOutputTypeDef](./type_defs.md#jsonoutputtypedef)
-
-<a id="ownerresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: CSVOutputTypeDef](./type_defs.md#csvoutputtypedef) 
+2. See [:material-code-braces: JSONOutputTypeDef](./type_defs.md#jsonoutputtypedef) 
 ## OwnerResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import OwnerResponseMetadataTypeDef
+
+def get_value() -> OwnerResponseMetadataTypeDef:
+    return {
+        "DisplayName": ...,
+        "ID": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OwnerResponseMetadataTypeDef(TypedDict):
+    DisplayName: str,
+    ID: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DisplayName`: `str`
-- `ID`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ownertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OwnerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import OwnerTypeDef
+
+def get_value() -> OwnerTypeDef:
+    return {
+        "DisplayName": ...,
+    }
 ```
 
-Optional fields:
-
-- `DisplayName`: `str`
-- `ID`: `str`
-
-<a id="ownershipcontrolsruletypedef"></a>
+```python title="Definition"
+class OwnerTypeDef(TypedDict):
+    DisplayName: NotRequired[str],
+    ID: NotRequired[str],
+```
 
 ## OwnershipControlsRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import OwnershipControlsRuleTypeDef
+
+def get_value() -> OwnershipControlsRuleTypeDef:
+    return {
+        "ObjectOwnership": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OwnershipControlsRuleTypeDef(TypedDict):
+    ObjectOwnership: ObjectOwnershipType,  # (1)
+```
 
-- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
-
-<a id="ownershipcontrolstypedef"></a>
-
+1. See [:material-code-brackets: ObjectOwnershipType](./literals.md#objectownershiptype) 
 ## OwnershipControlsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import OwnershipControlsTypeDef
+
+def get_value() -> OwnershipControlsTypeDef:
+    return {
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OwnershipControlsTypeDef(TypedDict):
+    Rules: List[OwnershipControlsRuleTypeDef],  # (1)
+```
 
-- `Rules`:
-  `List`\[[OwnershipControlsRuleTypeDef](./type_defs.md#ownershipcontrolsruletypedef)\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: OwnershipControlsRuleTypeDef](./type_defs.md#ownershipcontrolsruletypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PartTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PartTypeDef
+
+def get_value() -> PartTypeDef:
+    return {
+        "PartNumber": ...,
+    }
 ```
 
-Optional fields:
-
-- `PartNumber`: `int`
-- `LastModified`: `datetime`
-- `ETag`: `str`
-- `Size`: `int`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-
-<a id="policystatustypedef"></a>
+```python title="Definition"
+class PartTypeDef(TypedDict):
+    PartNumber: NotRequired[int],
+    LastModified: NotRequired[datetime],
+    ETag: NotRequired[str],
+    Size: NotRequired[int],
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+```
 
 ## PolicyStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PolicyStatusTypeDef
+
+def get_value() -> PolicyStatusTypeDef:
+    return {
+        "IsPublic": ...,
+    }
 ```
 
-Optional fields:
-
-- `IsPublic`: `bool`
-
-<a id="progresseventtypedef"></a>
+```python title="Definition"
+class PolicyStatusTypeDef(TypedDict):
+    IsPublic: NotRequired[bool],
+```
 
 ## ProgressEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ProgressEventTypeDef
+
+def get_value() -> ProgressEventTypeDef:
+    return {
+        "Details": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProgressEventTypeDef(TypedDict):
+    Details: NotRequired[ProgressTypeDef],  # (1)
+```
 
-- `Details`: [ProgressTypeDef](./type_defs.md#progresstypedef)
-
-<a id="progresstypedef"></a>
-
+1. See [:material-code-braces: ProgressTypeDef](./type_defs.md#progresstypedef) 
 ## ProgressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ProgressTypeDef
+
+def get_value() -> ProgressTypeDef:
+    return {
+        "BytesScanned": ...,
+    }
 ```
 
-Optional fields:
-
-- `BytesScanned`: `int`
-- `BytesProcessed`: `int`
-- `BytesReturned`: `int`
-
-<a id="publicaccessblockconfigurationtypedef"></a>
+```python title="Definition"
+class ProgressTypeDef(TypedDict):
+    BytesScanned: NotRequired[int],
+    BytesProcessed: NotRequired[int],
+    BytesReturned: NotRequired[int],
+```
 
 ## PublicAccessBlockConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PublicAccessBlockConfigurationTypeDef
+
+def get_value() -> PublicAccessBlockConfigurationTypeDef:
+    return {
+        "BlockPublicAcls": ...,
+    }
 ```
 
-Optional fields:
-
-- `BlockPublicAcls`: `bool`
-- `IgnorePublicAcls`: `bool`
-- `BlockPublicPolicy`: `bool`
-- `RestrictPublicBuckets`: `bool`
-
-<a id="putbucketaccelerateconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class PublicAccessBlockConfigurationTypeDef(TypedDict):
+    BlockPublicAcls: NotRequired[bool],
+    IgnorePublicAcls: NotRequired[bool],
+    BlockPublicPolicy: NotRequired[bool],
+    RestrictPublicBuckets: NotRequired[bool],
+```
 
 ## PutBucketAccelerateConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketAccelerateConfigurationRequestRequestTypeDef
+
+def get_value() -> PutBucketAccelerateConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "AccelerateConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketAccelerateConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    AccelerateConfiguration: AccelerateConfigurationTypeDef,  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+```
 
-- `Bucket`: `str`
-- `AccelerateConfiguration`:
-  [AccelerateConfigurationTypeDef](./type_defs.md#accelerateconfigurationtypedef)
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-
-<a id="putbucketaclrequestbucketaclputtypedef"></a>
-
+1. See [:material-code-braces: AccelerateConfigurationTypeDef](./type_defs.md#accelerateconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketAclRequestBucketAclPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketAclRequestBucketAclPutTypeDef
+
+def get_value() -> PutBucketAclRequestBucketAclPutTypeDef:
+    return {
+        "ACL": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutBucketAclRequestBucketAclPutTypeDef(TypedDict):
+    ACL: NotRequired[BucketCannedACLType],  # (1)
+    AccessControlPolicy: NotRequired[AccessControlPolicyTypeDef],  # (2)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWrite: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `AccessControlPolicy`:
-  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketaclrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketAclRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketAclRequestRequestTypeDef
+
+def get_value() -> PutBucketAclRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketAclRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ACL: NotRequired[BucketCannedACLType],  # (1)
+    AccessControlPolicy: NotRequired[AccessControlPolicyTypeDef],  # (2)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWrite: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `AccessControlPolicy`:
-  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketanalyticsconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketAnalyticsConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketAnalyticsConfigurationRequestRequestTypeDef
+
+def get_value() -> PutBucketAnalyticsConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+        "AnalyticsConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketAnalyticsConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    AnalyticsConfiguration: AnalyticsConfigurationTypeDef,  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Id`: `str`
-- `AnalyticsConfiguration`:
-  [AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef)
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketcorsrequestbucketcorsputtypedef"></a>
-
+1. See [:material-code-braces: AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef) 
 ## PutBucketCorsRequestBucketCorsPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketCorsRequestBucketCorsPutTypeDef
+
+def get_value() -> PutBucketCorsRequestBucketCorsPutTypeDef:
+    return {
+        "CORSConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketCorsRequestBucketCorsPutTypeDef(TypedDict):
+    CORSConfiguration: CORSConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `CORSConfiguration`:
-  [CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketcorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketCorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketCorsRequestRequestTypeDef
+
+def get_value() -> PutBucketCorsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "CORSConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketCorsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    CORSConfiguration: CORSConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `CORSConfiguration`:
-  [CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketencryptionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketEncryptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketEncryptionRequestRequestTypeDef
+
+def get_value() -> PutBucketEncryptionRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "ServerSideEncryptionConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketEncryptionRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ServerSideEncryptionConfiguration: ServerSideEncryptionConfigurationTypeDef,  # (1)
+    ContentMD5: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-
-Optional fields:
-
-- `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketintelligenttieringconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketIntelligentTieringConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketIntelligentTieringConfigurationRequestRequestTypeDef
+
+def get_value() -> PutBucketIntelligentTieringConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+        "IntelligentTieringConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketIntelligentTieringConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    IntelligentTieringConfiguration: IntelligentTieringConfigurationTypeDef,  # (1)
+```
 
-- `Bucket`: `str`
-- `Id`: `str`
-- `IntelligentTieringConfiguration`:
-  [IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef)
-
-<a id="putbucketinventoryconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef) 
 ## PutBucketInventoryConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketInventoryConfigurationRequestRequestTypeDef
+
+def get_value() -> PutBucketInventoryConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+        "InventoryConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketInventoryConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    InventoryConfiguration: InventoryConfigurationTypeDef,  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Id`: `str`
-- `InventoryConfiguration`:
-  [InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef)
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketlifecycleconfigurationrequestbucketlifecycleconfigurationputtypedef"></a>
-
+1. See [:material-code-braces: InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef) 
 ## PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationPutTypeDef
+
+def get_value() -> PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationPutTypeDef:
+    return {
+        "ChecksumAlgorithm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationPutTypeDef(TypedDict):
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    LifecycleConfiguration: NotRequired[BucketLifecycleConfigurationTypeDef],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `LifecycleConfiguration`:
-  [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketlifecycleconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef) 
 ## PutBucketLifecycleConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketLifecycleConfigurationRequestRequestTypeDef
+
+def get_value() -> PutBucketLifecycleConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketLifecycleConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    LifecycleConfiguration: NotRequired[BucketLifecycleConfigurationTypeDef],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `LifecycleConfiguration`:
-  [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketlifecyclerequestbucketlifecycleputtypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef) 
 ## PutBucketLifecycleRequestBucketLifecyclePutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketLifecycleRequestBucketLifecyclePutTypeDef
+
+def get_value() -> PutBucketLifecycleRequestBucketLifecyclePutTypeDef:
+    return {
+        "ChecksumAlgorithm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutBucketLifecycleRequestBucketLifecyclePutTypeDef(TypedDict):
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    LifecycleConfiguration: NotRequired[LifecycleConfigurationTypeDef],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `LifecycleConfiguration`:
-  [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketlifecyclerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef) 
 ## PutBucketLifecycleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketLifecycleRequestRequestTypeDef
+
+def get_value() -> PutBucketLifecycleRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketLifecycleRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    LifecycleConfiguration: NotRequired[LifecycleConfigurationTypeDef],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `LifecycleConfiguration`:
-  [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketloggingrequestbucketloggingputtypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef) 
 ## PutBucketLoggingRequestBucketLoggingPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketLoggingRequestBucketLoggingPutTypeDef
+
+def get_value() -> PutBucketLoggingRequestBucketLoggingPutTypeDef:
+    return {
+        "BucketLoggingStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketLoggingRequestBucketLoggingPutTypeDef(TypedDict):
+    BucketLoggingStatus: BucketLoggingStatusTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `BucketLoggingStatus`:
-  [BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketloggingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketLoggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketLoggingRequestRequestTypeDef
+
+def get_value() -> PutBucketLoggingRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "BucketLoggingStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketLoggingRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    BucketLoggingStatus: BucketLoggingStatusTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `BucketLoggingStatus`:
-  [BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketmetricsconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketMetricsConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketMetricsConfigurationRequestRequestTypeDef
+
+def get_value() -> PutBucketMetricsConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Id": ...,
+        "MetricsConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketMetricsConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Id: str,
+    MetricsConfiguration: MetricsConfigurationTypeDef,  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Id`: `str`
-- `MetricsConfiguration`:
-  [MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketnotificationconfigurationrequestbucketnotificationputtypedef"></a>
-
+1. See [:material-code-braces: MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef) 
 ## PutBucketNotificationConfigurationRequestBucketNotificationPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketNotificationConfigurationRequestBucketNotificationPutTypeDef
+
+def get_value() -> PutBucketNotificationConfigurationRequestBucketNotificationPutTypeDef:
+    return {
+        "NotificationConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketNotificationConfigurationRequestBucketNotificationPutTypeDef(TypedDict):
+    NotificationConfiguration: NotificationConfigurationTypeDef,  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+    SkipDestinationValidation: NotRequired[bool],
+```
 
-- `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-- `SkipDestinationValidation`: `bool`
-
-<a id="putbucketnotificationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
 ## PutBucketNotificationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketNotificationConfigurationRequestRequestTypeDef
+
+def get_value() -> PutBucketNotificationConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "NotificationConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketNotificationConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    NotificationConfiguration: NotificationConfigurationTypeDef,  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+    SkipDestinationValidation: NotRequired[bool],
+```
 
-- `Bucket`: `str`
-- `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-- `SkipDestinationValidation`: `bool`
-
-<a id="putbucketnotificationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
 ## PutBucketNotificationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketNotificationRequestRequestTypeDef
+
+def get_value() -> PutBucketNotificationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "NotificationConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketNotificationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    NotificationConfiguration: NotificationConfigurationDeprecatedTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `NotificationConfiguration`:
-  [NotificationConfigurationDeprecatedTypeDef](./type_defs.md#notificationconfigurationdeprecatedtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketownershipcontrolsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationConfigurationDeprecatedTypeDef](./type_defs.md#notificationconfigurationdeprecatedtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketOwnershipControlsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketOwnershipControlsRequestRequestTypeDef
+
+def get_value() -> PutBucketOwnershipControlsRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "OwnershipControls": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketOwnershipControlsRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    OwnershipControls: OwnershipControlsTypeDef,  # (1)
+    ContentMD5: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `OwnershipControls`:
-  [OwnershipControlsTypeDef](./type_defs.md#ownershipcontrolstypedef)
-
-Optional fields:
-
-- `ContentMD5`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketpolicyrequestbucketpolicyputtypedef"></a>
-
+1. See [:material-code-braces: OwnershipControlsTypeDef](./type_defs.md#ownershipcontrolstypedef) 
 ## PutBucketPolicyRequestBucketPolicyPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketPolicyRequestBucketPolicyPutTypeDef
+
+def get_value() -> PutBucketPolicyRequestBucketPolicyPutTypeDef:
+    return {
+        "Policy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketPolicyRequestBucketPolicyPutTypeDef(TypedDict):
+    Policy: str,
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    ConfirmRemoveSelfBucketAccess: NotRequired[bool],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Policy`: `str`
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ConfirmRemoveSelfBucketAccess`: `bool`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketPolicyRequestRequestTypeDef
+
+def get_value() -> PutBucketPolicyRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Policy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketPolicyRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Policy: str,
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    ConfirmRemoveSelfBucketAccess: NotRequired[bool],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Policy`: `str`
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ConfirmRemoveSelfBucketAccess`: `bool`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketreplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketReplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketReplicationRequestRequestTypeDef
+
+def get_value() -> PutBucketReplicationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "ReplicationConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketReplicationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ReplicationConfiguration: ReplicationConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    Token: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `ReplicationConfiguration`:
-  [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `Token`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketrequestpaymentrequestbucketrequestpaymentputtypedef"></a>
-
+1. See [:material-code-braces: ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketRequestPaymentRequestBucketRequestPaymentPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketRequestPaymentRequestBucketRequestPaymentPutTypeDef
+
+def get_value() -> PutBucketRequestPaymentRequestBucketRequestPaymentPutTypeDef:
+    return {
+        "RequestPaymentConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketRequestPaymentRequestBucketRequestPaymentPutTypeDef(TypedDict):
+    RequestPaymentConfiguration: RequestPaymentConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `RequestPaymentConfiguration`:
-  [RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketrequestpaymentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketRequestPaymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketRequestPaymentRequestRequestTypeDef
+
+def get_value() -> PutBucketRequestPaymentRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "RequestPaymentConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketRequestPaymentRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    RequestPaymentConfiguration: RequestPaymentConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `RequestPaymentConfiguration`:
-  [RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbuckettaggingrequestbuckettaggingputtypedef"></a>
-
+1. See [:material-code-braces: RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketTaggingRequestBucketTaggingPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketTaggingRequestBucketTaggingPutTypeDef
+
+def get_value() -> PutBucketTaggingRequestBucketTaggingPutTypeDef:
+    return {
+        "Tagging": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketTaggingRequestBucketTaggingPutTypeDef(TypedDict):
+    Tagging: TaggingTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbuckettaggingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaggingTypeDef](./type_defs.md#taggingtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketTaggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketTaggingRequestRequestTypeDef
+
+def get_value() -> PutBucketTaggingRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Tagging": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketTaggingRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Tagging: TaggingTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketversioningrequestbucketversioningenabletypedef"></a>
-
+1. See [:material-code-braces: TaggingTypeDef](./type_defs.md#taggingtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketVersioningRequestBucketVersioningEnableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketVersioningRequestBucketVersioningEnableTypeDef
+
+def get_value() -> PutBucketVersioningRequestBucketVersioningEnableTypeDef:
+    return {
+        "ChecksumAlgorithm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutBucketVersioningRequestBucketVersioningEnableTypeDef(TypedDict):
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    MFA: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `MFA`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketversioningrequestbucketversioningputtypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketVersioningRequestBucketVersioningPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketVersioningRequestBucketVersioningPutTypeDef
+
+def get_value() -> PutBucketVersioningRequestBucketVersioningPutTypeDef:
+    return {
+        "VersioningConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketVersioningRequestBucketVersioningPutTypeDef(TypedDict):
+    VersioningConfiguration: VersioningConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    MFA: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `VersioningConfiguration`:
-  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `MFA`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketversioningrequestbucketversioningsuspendtypedef"></a>
-
+1. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketVersioningRequestBucketVersioningSuspendTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketVersioningRequestBucketVersioningSuspendTypeDef
+
+def get_value() -> PutBucketVersioningRequestBucketVersioningSuspendTypeDef:
+    return {
+        "ChecksumAlgorithm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutBucketVersioningRequestBucketVersioningSuspendTypeDef(TypedDict):
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    MFA: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `MFA`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketversioningrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketVersioningRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketVersioningRequestRequestTypeDef
+
+def get_value() -> PutBucketVersioningRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "VersioningConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketVersioningRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    VersioningConfiguration: VersioningConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    MFA: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `VersioningConfiguration`:
-  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `MFA`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketwebsiterequestbucketwebsiteputtypedef"></a>
-
+1. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketWebsiteRequestBucketWebsitePutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketWebsiteRequestBucketWebsitePutTypeDef
+
+def get_value() -> PutBucketWebsiteRequestBucketWebsitePutTypeDef:
+    return {
+        "WebsiteConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketWebsiteRequestBucketWebsitePutTypeDef(TypedDict):
+    WebsiteConfiguration: WebsiteConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `WebsiteConfiguration`:
-  [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putbucketwebsiterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutBucketWebsiteRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutBucketWebsiteRequestRequestTypeDef
+
+def get_value() -> PutBucketWebsiteRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "WebsiteConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBucketWebsiteRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    WebsiteConfiguration: WebsiteConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `WebsiteConfiguration`:
-  [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
-
-Optional fields:
-
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjectacloutputtypedef"></a>
-
+1. See [:material-code-braces: WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutObjectAclOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectAclOutputTypeDef
+
+def get_value() -> PutObjectAclOutputTypeDef:
+    return {
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectAclOutputTypeDef(TypedDict):
+    RequestCharged: RequestChargedType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putobjectaclrequestobjectaclputtypedef"></a>
-
+1. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutObjectAclRequestObjectAclPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectAclRequestObjectAclPutTypeDef
+
+def get_value() -> PutObjectAclRequestObjectAclPutTypeDef:
+    return {
+        "ACL": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutObjectAclRequestObjectAclPutTypeDef(TypedDict):
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    AccessControlPolicy: NotRequired[AccessControlPolicyTypeDef],  # (2)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWrite: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (4)
+    VersionId: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `AccessControlPolicy`:
-  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `VersionId`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjectaclrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-braces: AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+4. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## PutObjectAclRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectAclRequestRequestTypeDef
+
+def get_value() -> PutObjectAclRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectAclRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    AccessControlPolicy: NotRequired[AccessControlPolicyTypeDef],  # (2)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWrite: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (4)
+    VersionId: NotRequired[str],
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `AccessControlPolicy`:
-  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `VersionId`: `str`
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjectlegalholdoutputtypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-braces: AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+4. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## PutObjectLegalHoldOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectLegalHoldOutputTypeDef
+
+def get_value() -> PutObjectLegalHoldOutputTypeDef:
+    return {
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectLegalHoldOutputTypeDef(TypedDict):
+    RequestCharged: RequestChargedType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putobjectlegalholdrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutObjectLegalHoldRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectLegalHoldRequestRequestTypeDef
+
+def get_value() -> PutObjectLegalHoldRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectLegalHoldRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    LegalHold: NotRequired[ObjectLockLegalHoldTypeDef],  # (1)
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    VersionId: NotRequired[str],
+    ContentMD5: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `LegalHold`:
-  [ObjectLockLegalHoldTypeDef](./type_defs.md#objectlocklegalholdtypedef)
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `VersionId`: `str`
-- `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjectlockconfigurationoutputtypedef"></a>
-
+1. See [:material-code-braces: ObjectLockLegalHoldTypeDef](./type_defs.md#objectlocklegalholdtypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutObjectLockConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectLockConfigurationOutputTypeDef
+
+def get_value() -> PutObjectLockConfigurationOutputTypeDef:
+    return {
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectLockConfigurationOutputTypeDef(TypedDict):
+    RequestCharged: RequestChargedType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putobjectlockconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutObjectLockConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectLockConfigurationRequestRequestTypeDef
+
+def get_value() -> PutObjectLockConfigurationRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectLockConfigurationRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    ObjectLockConfiguration: NotRequired[ObjectLockConfigurationTypeDef],  # (1)
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    Token: NotRequired[str],
+    ContentMD5: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-
-Optional fields:
-
-- `ObjectLockConfiguration`:
-  [ObjectLockConfigurationTypeDef](./type_defs.md#objectlockconfigurationtypedef)
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Token`: `str`
-- `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjectoutputtypedef"></a>
-
+1. See [:material-code-braces: ObjectLockConfigurationTypeDef](./type_defs.md#objectlockconfigurationtypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutObjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectOutputTypeDef
+
+def get_value() -> PutObjectOutputTypeDef:
+    return {
+        "Expiration": ...,
+        "ETag": ...,
+        "ChecksumCRC32": ...,
+        "ChecksumCRC32C": ...,
+        "ChecksumSHA1": ...,
+        "ChecksumSHA256": ...,
+        "ServerSideEncryption": ...,
+        "VersionId": ...,
+        "SSECustomerAlgorithm": ...,
+        "SSECustomerKeyMD5": ...,
+        "SSEKMSKeyId": ...,
+        "SSEKMSEncryptionContext": ...,
+        "BucketKeyEnabled": ...,
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectOutputTypeDef(TypedDict):
+    Expiration: str,
+    ETag: str,
+    ChecksumCRC32: str,
+    ChecksumCRC32C: str,
+    ChecksumSHA1: str,
+    ChecksumSHA256: str,
+    ServerSideEncryption: ServerSideEncryptionType,  # (1)
+    VersionId: str,
+    SSECustomerAlgorithm: str,
+    SSECustomerKeyMD5: str,
+    SSEKMSKeyId: str,
+    SSEKMSEncryptionContext: str,
+    BucketKeyEnabled: bool,
+    RequestCharged: RequestChargedType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Expiration`: `str`
-- `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `VersionId`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putobjectrequestbucketputobjecttypedef"></a>
-
+1. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+2. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutObjectRequestBucketPutObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectRequestBucketPutObjectTypeDef
+
+def get_value() -> PutObjectRequestBucketPutObjectTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectRequestBucketPutObjectTypeDef(TypedDict):
+    Key: str,
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    CacheControl: NotRequired[str],
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentLength: NotRequired[int],
+    ContentMD5: NotRequired[str],
+    ContentType: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (3)
+    StorageClass: NotRequired[StorageClassType],  # (4)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    RequestPayer: NotRequired[RequestPayerType],  # (5)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (6)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (7)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Key`: `str`
-
-Optional fields:
-
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjectrequestobjectputtypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+5. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+6. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+7. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
 ## PutObjectRequestObjectPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectRequestObjectPutTypeDef
+
+def get_value() -> PutObjectRequestObjectPutTypeDef:
+    return {
+        "ACL": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutObjectRequestObjectPutTypeDef(TypedDict):
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    CacheControl: NotRequired[str],
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentLength: NotRequired[int],
+    ContentMD5: NotRequired[str],
+    ContentType: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (3)
+    StorageClass: NotRequired[StorageClassType],  # (4)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    RequestPayer: NotRequired[RequestPayerType],  # (5)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (6)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (7)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjectrequestobjectsummaryputtypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+5. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+6. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+7. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
 ## PutObjectRequestObjectSummaryPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectRequestObjectSummaryPutTypeDef
+
+def get_value() -> PutObjectRequestObjectSummaryPutTypeDef:
+    return {
+        "ACL": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutObjectRequestObjectSummaryPutTypeDef(TypedDict):
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    CacheControl: NotRequired[str],
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentLength: NotRequired[int],
+    ContentMD5: NotRequired[str],
+    ContentType: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (3)
+    StorageClass: NotRequired[StorageClassType],  # (4)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    RequestPayer: NotRequired[RequestPayerType],  # (5)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (6)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (7)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjectrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+5. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+6. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+7. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
 ## PutObjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectRequestRequestTypeDef
+
+def get_value() -> PutObjectRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    ACL: NotRequired[ObjectCannedACLType],  # (1)
+    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    CacheControl: NotRequired[str],
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentLength: NotRequired[int],
+    ContentMD5: NotRequired[str],
+    ContentType: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    Expires: NotRequired[Union[datetime, str]],
+    GrantFullControl: NotRequired[str],
+    GrantRead: NotRequired[str],
+    GrantReadACP: NotRequired[str],
+    GrantWriteACP: NotRequired[str],
+    Metadata: NotRequired[Mapping[str, str]],
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (3)
+    StorageClass: NotRequired[StorageClassType],  # (4)
+    WebsiteRedirectLocation: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSEKMSEncryptionContext: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+    RequestPayer: NotRequired[RequestPayerType],  # (5)
+    Tagging: NotRequired[str],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (6)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (7)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjectretentionoutputtypedef"></a>
-
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+5. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+6. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+7. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
 ## PutObjectRetentionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectRetentionOutputTypeDef
+
+def get_value() -> PutObjectRetentionOutputTypeDef:
+    return {
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectRetentionOutputTypeDef(TypedDict):
+    RequestCharged: RequestChargedType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putobjectretentionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutObjectRetentionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectRetentionRequestRequestTypeDef
+
+def get_value() -> PutObjectRetentionRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectRetentionRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    Retention: NotRequired[ObjectLockRetentionTypeDef],  # (1)
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    VersionId: NotRequired[str],
+    BypassGovernanceRetention: NotRequired[bool],
+    ContentMD5: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `Retention`:
-  [ObjectLockRetentionTypeDef](./type_defs.md#objectlockretentiontypedef)
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `VersionId`: `str`
-- `BypassGovernanceRetention`: `bool`
-- `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="putobjecttaggingoutputtypedef"></a>
-
+1. See [:material-code-braces: ObjectLockRetentionTypeDef](./type_defs.md#objectlockretentiontypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutObjectTaggingOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectTaggingOutputTypeDef
+
+def get_value() -> PutObjectTaggingOutputTypeDef:
+    return {
+        "VersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectTaggingOutputTypeDef(TypedDict):
+    VersionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VersionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putobjecttaggingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutObjectTaggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutObjectTaggingRequestRequestTypeDef
+
+def get_value() -> PutObjectTaggingRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "Tagging": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutObjectTaggingRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    Tagging: TaggingTypeDef,  # (1)
+    VersionId: NotRequired[str],
+    ContentMD5: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (3)
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
-
-Optional fields:
-
-- `VersionId`: `str`
-- `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-
-<a id="putpublicaccessblockrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaggingTypeDef](./type_defs.md#taggingtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## PutPublicAccessBlockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import PutPublicAccessBlockRequestRequestTypeDef
+
+def get_value() -> PutPublicAccessBlockRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "PublicAccessBlockConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutPublicAccessBlockRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
+    ContentMD5: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `PublicAccessBlockConfiguration`:
-  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
-
-Optional fields:
-
-- `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="queueconfigurationdeprecatedtypedef"></a>
-
+1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## QueueConfigurationDeprecatedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import QueueConfigurationDeprecatedTypeDef
+
+def get_value() -> QueueConfigurationDeprecatedTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QueueConfigurationDeprecatedTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Event: NotRequired[EventType],  # (1)
+    Events: NotRequired[List[EventType]],  # (2)
+    Queue: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Event`: [EventType](./literals.md#eventtype)
-- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
-- `Queue`: `str`
-
-<a id="queueconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: EventType](./literals.md#eventtype) 
+2. See [:material-code-brackets: EventType](./literals.md#eventtype) 
 ## QueueConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import QueueConfigurationTypeDef
+
+def get_value() -> QueueConfigurationTypeDef:
+    return {
+        "QueueArn": ...,
+        "Events": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueueConfigurationTypeDef(TypedDict):
+    QueueArn: str,
+    Events: List[EventType],  # (1)
+    Id: NotRequired[str],
+    Filter: NotRequired[NotificationConfigurationFilterTypeDef],  # (2)
+```
 
-- `QueueArn`: `str`
-- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
-
-Optional fields:
-
-- `Id`: `str`
-- `Filter`:
-  [NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef)
-
-<a id="recordseventtypedef"></a>
-
+1. See [:material-code-brackets: EventType](./literals.md#eventtype) 
+2. See [:material-code-braces: NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef) 
 ## RecordsEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RecordsEventTypeDef
+
+def get_value() -> RecordsEventTypeDef:
+    return {
+        "Payload": ...,
+    }
 ```
 
-Optional fields:
-
-- `Payload`: `bytes`
-
-<a id="redirectallrequeststoresponsemetadatatypedef"></a>
+```python title="Definition"
+class RecordsEventTypeDef(TypedDict):
+    Payload: NotRequired[bytes],
+```
 
 ## RedirectAllRequestsToResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RedirectAllRequestsToResponseMetadataTypeDef
+
+def get_value() -> RedirectAllRequestsToResponseMetadataTypeDef:
+    return {
+        "HostName": ...,
+        "Protocol": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RedirectAllRequestsToResponseMetadataTypeDef(TypedDict):
+    HostName: str,
+    Protocol: ProtocolType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HostName`: `str`
-- `Protocol`: [ProtocolType](./literals.md#protocoltype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="redirectallrequeststotypedef"></a>
-
+1. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RedirectAllRequestsToTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RedirectAllRequestsToTypeDef
+
+def get_value() -> RedirectAllRequestsToTypeDef:
+    return {
+        "HostName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RedirectAllRequestsToTypeDef(TypedDict):
+    HostName: str,
+    Protocol: NotRequired[ProtocolType],  # (1)
+```
 
-- `HostName`: `str`
-
-Optional fields:
-
-- `Protocol`: [ProtocolType](./literals.md#protocoltype)
-
-<a id="redirecttypedef"></a>
-
+1. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
 ## RedirectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RedirectTypeDef
+
+def get_value() -> RedirectTypeDef:
+    return {
+        "HostName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RedirectTypeDef(TypedDict):
+    HostName: NotRequired[str],
+    HttpRedirectCode: NotRequired[str],
+    Protocol: NotRequired[ProtocolType],  # (1)
+    ReplaceKeyPrefixWith: NotRequired[str],
+    ReplaceKeyWith: NotRequired[str],
+```
 
-- `HostName`: `str`
-- `HttpRedirectCode`: `str`
-- `Protocol`: [ProtocolType](./literals.md#protocoltype)
-- `ReplaceKeyPrefixWith`: `str`
-- `ReplaceKeyWith`: `str`
-
-<a id="replicamodificationstypedef"></a>
-
+1. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
 ## ReplicaModificationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ReplicaModificationsTypeDef
+
+def get_value() -> ReplicaModificationsTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicaModificationsTypeDef(TypedDict):
+    Status: ReplicaModificationsStatusType,  # (1)
+```
 
-- `Status`:
-  [ReplicaModificationsStatusType](./literals.md#replicamodificationsstatustype)
-
-<a id="replicationconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ReplicaModificationsStatusType](./literals.md#replicamodificationsstatustype) 
 ## ReplicationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ReplicationConfigurationTypeDef
+
+def get_value() -> ReplicationConfigurationTypeDef:
+    return {
+        "Role": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicationConfigurationTypeDef(TypedDict):
+    Role: str,
+    Rules: List[ReplicationRuleTypeDef],  # (1)
+```
 
-- `Role`: `str`
-- `Rules`:
-  `List`\[[ReplicationRuleTypeDef](./type_defs.md#replicationruletypedef)\]
-
-<a id="replicationruleandoperatortypedef"></a>
-
+1. See [:material-code-braces: ReplicationRuleTypeDef](./type_defs.md#replicationruletypedef) 
 ## ReplicationRuleAndOperatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ReplicationRuleAndOperatorTypeDef
+
+def get_value() -> ReplicationRuleAndOperatorTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicationRuleAndOperatorTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `Prefix`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="replicationrulefiltertypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ReplicationRuleFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ReplicationRuleFilterTypeDef
+
+def get_value() -> ReplicationRuleFilterTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicationRuleFilterTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Tag: NotRequired[TagTypeDef],  # (1)
+    And: NotRequired[ReplicationRuleAndOperatorTypeDef],  # (2)
+```
 
-- `Prefix`: `str`
-- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
-- `And`:
-  [ReplicationRuleAndOperatorTypeDef](./type_defs.md#replicationruleandoperatortypedef)
-
-<a id="replicationruletypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ReplicationRuleAndOperatorTypeDef](./type_defs.md#replicationruleandoperatortypedef) 
 ## ReplicationRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ReplicationRuleTypeDef
+
+def get_value() -> ReplicationRuleTypeDef:
+    return {
+        "Status": ...,
+        "Destination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicationRuleTypeDef(TypedDict):
+    Status: ReplicationRuleStatusType,  # (2)
+    Destination: DestinationTypeDef,  # (5)
+    ID: NotRequired[str],
+    Priority: NotRequired[int],
+    Prefix: NotRequired[str],
+    Filter: NotRequired[ReplicationRuleFilterTypeDef],  # (1)
+    SourceSelectionCriteria: NotRequired[SourceSelectionCriteriaTypeDef],  # (3)
+    ExistingObjectReplication: NotRequired[ExistingObjectReplicationTypeDef],  # (4)
+    DeleteMarkerReplication: NotRequired[DeleteMarkerReplicationTypeDef],  # (6)
+```
 
-- `Status`:
-  [ReplicationRuleStatusType](./literals.md#replicationrulestatustype)
-- `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-
-Optional fields:
-
-- `ID`: `str`
-- `Priority`: `int`
-- `Prefix`: `str`
-- `Filter`:
-  [ReplicationRuleFilterTypeDef](./type_defs.md#replicationrulefiltertypedef)
-- `SourceSelectionCriteria`:
-  [SourceSelectionCriteriaTypeDef](./type_defs.md#sourceselectioncriteriatypedef)
-- `ExistingObjectReplication`:
-  [ExistingObjectReplicationTypeDef](./type_defs.md#existingobjectreplicationtypedef)
-- `DeleteMarkerReplication`:
-  [DeleteMarkerReplicationTypeDef](./type_defs.md#deletemarkerreplicationtypedef)
-
-<a id="replicationtimetypedef"></a>
-
+1. See [:material-code-braces: ReplicationRuleFilterTypeDef](./type_defs.md#replicationrulefiltertypedef) 
+2. See [:material-code-brackets: ReplicationRuleStatusType](./literals.md#replicationrulestatustype) 
+3. See [:material-code-braces: SourceSelectionCriteriaTypeDef](./type_defs.md#sourceselectioncriteriatypedef) 
+4. See [:material-code-braces: ExistingObjectReplicationTypeDef](./type_defs.md#existingobjectreplicationtypedef) 
+5. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+6. See [:material-code-braces: DeleteMarkerReplicationTypeDef](./type_defs.md#deletemarkerreplicationtypedef) 
 ## ReplicationTimeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ReplicationTimeTypeDef
+
+def get_value() -> ReplicationTimeTypeDef:
+    return {
+        "Status": ...,
+        "Time": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicationTimeTypeDef(TypedDict):
+    Status: ReplicationTimeStatusType,  # (1)
+    Time: ReplicationTimeValueTypeDef,  # (2)
+```
 
-- `Status`:
-  [ReplicationTimeStatusType](./literals.md#replicationtimestatustype)
-- `Time`:
-  [ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef)
-
-<a id="replicationtimevaluetypedef"></a>
-
+1. See [:material-code-brackets: ReplicationTimeStatusType](./literals.md#replicationtimestatustype) 
+2. See [:material-code-braces: ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef) 
 ## ReplicationTimeValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ReplicationTimeValueTypeDef
+
+def get_value() -> ReplicationTimeValueTypeDef:
+    return {
+        "Minutes": ...,
+    }
 ```
 
-Optional fields:
-
-- `Minutes`: `int`
-
-<a id="requestpaymentconfigurationtypedef"></a>
+```python title="Definition"
+class ReplicationTimeValueTypeDef(TypedDict):
+    Minutes: NotRequired[int],
+```
 
 ## RequestPaymentConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RequestPaymentConfigurationTypeDef
+
+def get_value() -> RequestPaymentConfigurationTypeDef:
+    return {
+        "Payer": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RequestPaymentConfigurationTypeDef(TypedDict):
+    Payer: PayerType,  # (1)
+```
 
-- `Payer`: [PayerType](./literals.md#payertype)
-
-<a id="requestprogresstypedef"></a>
-
+1. See [:material-code-brackets: PayerType](./literals.md#payertype) 
 ## RequestProgressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RequestProgressTypeDef
+
+def get_value() -> RequestProgressTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `Enabled`: `bool`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RequestProgressTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restoreobjectoutputtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreObjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RestoreObjectOutputTypeDef
+
+def get_value() -> RestoreObjectOutputTypeDef:
+    return {
+        "RequestCharged": ...,
+        "RestoreOutputPath": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreObjectOutputTypeDef(TypedDict):
+    RequestCharged: RequestChargedType,  # (1)
+    RestoreOutputPath: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `RestoreOutputPath`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="restoreobjectrequestobjectrestoreobjecttypedef"></a>
-
+1. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RestoreObjectRequestObjectRestoreObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RestoreObjectRequestObjectRestoreObjectTypeDef
+
+def get_value() -> RestoreObjectRequestObjectRestoreObjectTypeDef:
+    return {
+        "VersionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RestoreObjectRequestObjectRestoreObjectTypeDef(TypedDict):
+    VersionId: NotRequired[str],
+    RestoreRequest: NotRequired[RestoreRequestTypeDef],  # (1)
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `VersionId`: `str`
-- `RestoreRequest`:
-  [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="restoreobjectrequestobjectsummaryrestoreobjecttypedef"></a>
-
+1. See [:material-code-braces: RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## RestoreObjectRequestObjectSummaryRestoreObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RestoreObjectRequestObjectSummaryRestoreObjectTypeDef
+
+def get_value() -> RestoreObjectRequestObjectSummaryRestoreObjectTypeDef:
+    return {
+        "VersionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RestoreObjectRequestObjectSummaryRestoreObjectTypeDef(TypedDict):
+    VersionId: NotRequired[str],
+    RestoreRequest: NotRequired[RestoreRequestTypeDef],  # (1)
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `VersionId`: `str`
-- `RestoreRequest`:
-  [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="restoreobjectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## RestoreObjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RestoreObjectRequestRequestTypeDef
+
+def get_value() -> RestoreObjectRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreObjectRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    VersionId: NotRequired[str],
+    RestoreRequest: NotRequired[RestoreRequestTypeDef],  # (1)
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (3)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-- `RestoreRequest`:
-  [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
-
-<a id="restorerequesttypedef"></a>
-
+1. See [:material-code-braces: RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## RestoreRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RestoreRequestTypeDef
+
+def get_value() -> RestoreRequestTypeDef:
+    return {
+        "Days": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RestoreRequestTypeDef(TypedDict):
+    Days: NotRequired[int],
+    GlacierJobParameters: NotRequired[GlacierJobParametersTypeDef],  # (1)
+    Type: NotRequired[RestoreRequestTypeType],  # (2)
+    Tier: NotRequired[TierType],  # (3)
+    Description: NotRequired[str],
+    SelectParameters: NotRequired[SelectParametersTypeDef],  # (4)
+    OutputLocation: NotRequired[OutputLocationTypeDef],  # (5)
+```
 
-- `Days`: `int`
-- `GlacierJobParameters`:
-  [GlacierJobParametersTypeDef](./type_defs.md#glacierjobparameterstypedef)
-- `Type`: `Literal['SELECT']` (see
-  [RestoreRequestTypeType](./literals.md#restorerequesttypetype))
-- `Tier`: [TierType](./literals.md#tiertype)
-- `Description`: `str`
-- `SelectParameters`:
-  [SelectParametersTypeDef](./type_defs.md#selectparameterstypedef)
-- `OutputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-
-<a id="routingruletypedef"></a>
-
+1. See [:material-code-braces: GlacierJobParametersTypeDef](./type_defs.md#glacierjobparameterstypedef) 
+2. See [:material-code-brackets: RestoreRequestTypeType](./literals.md#restorerequesttypetype) 
+3. See [:material-code-brackets: TierType](./literals.md#tiertype) 
+4. See [:material-code-braces: SelectParametersTypeDef](./type_defs.md#selectparameterstypedef) 
+5. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
 ## RoutingRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RoutingRuleTypeDef
+
+def get_value() -> RoutingRuleTypeDef:
+    return {
+        "Redirect": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RoutingRuleTypeDef(TypedDict):
+    Redirect: RedirectTypeDef,  # (2)
+    Condition: NotRequired[ConditionTypeDef],  # (1)
+```
 
-- `Redirect`: [RedirectTypeDef](./type_defs.md#redirecttypedef)
-
-Optional fields:
-
-- `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
-
-<a id="ruletypedef"></a>
-
+1. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: RedirectTypeDef](./type_defs.md#redirecttypedef) 
 ## RuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import RuleTypeDef
+
+def get_value() -> RuleTypeDef:
+    return {
+        "Prefix": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RuleTypeDef(TypedDict):
+    Prefix: str,
+    Status: ExpirationStatusType,  # (2)
+    Expiration: NotRequired[LifecycleExpirationTypeDef],  # (1)
+    ID: NotRequired[str],
+    Transition: NotRequired[TransitionTypeDef],  # (3)
+    NoncurrentVersionTransition: NotRequired[NoncurrentVersionTransitionTypeDef],  # (4)
+    NoncurrentVersionExpiration: NotRequired[NoncurrentVersionExpirationTypeDef],  # (5)
+    AbortIncompleteMultipartUpload: NotRequired[AbortIncompleteMultipartUploadTypeDef],  # (6)
+```
 
-- `Prefix`: `str`
-- `Status`: [ExpirationStatusType](./literals.md#expirationstatustype)
-
-Optional fields:
-
-- `Expiration`:
-  [LifecycleExpirationTypeDef](./type_defs.md#lifecycleexpirationtypedef)
-- `ID`: `str`
-- `Transition`: [TransitionTypeDef](./type_defs.md#transitiontypedef)
-- `NoncurrentVersionTransition`:
-  [NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef)
-- `NoncurrentVersionExpiration`:
-  [NoncurrentVersionExpirationTypeDef](./type_defs.md#noncurrentversionexpirationtypedef)
-- `AbortIncompleteMultipartUpload`:
-  [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
-
-<a id="s3keyfiltertypedef"></a>
-
+1. See [:material-code-braces: LifecycleExpirationTypeDef](./type_defs.md#lifecycleexpirationtypedef) 
+2. See [:material-code-brackets: ExpirationStatusType](./literals.md#expirationstatustype) 
+3. See [:material-code-braces: TransitionTypeDef](./type_defs.md#transitiontypedef) 
+4. See [:material-code-braces: NoncurrentVersionTransitionTypeDef](./type_defs.md#noncurrentversiontransitiontypedef) 
+5. See [:material-code-braces: NoncurrentVersionExpirationTypeDef](./type_defs.md#noncurrentversionexpirationtypedef) 
+6. See [:material-code-braces: AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef) 
 ## S3KeyFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import S3KeyFilterTypeDef
+
+def get_value() -> S3KeyFilterTypeDef:
+    return {
+        "FilterRules": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3KeyFilterTypeDef(TypedDict):
+    FilterRules: NotRequired[List[FilterRuleTypeDef]],  # (1)
+```
 
-- `FilterRules`:
-  `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
-
-<a id="s3locationtypedef"></a>
-
+1. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "BucketName": ...,
+        "Prefix": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    BucketName: str,
+    Prefix: str,
+    Encryption: NotRequired[EncryptionTypeDef],  # (1)
+    CannedACL: NotRequired[ObjectCannedACLType],  # (2)
+    AccessControlList: NotRequired[Sequence[GrantTypeDef]],  # (3)
+    Tagging: NotRequired[TaggingTypeDef],  # (4)
+    UserMetadata: NotRequired[Sequence[MetadataEntryTypeDef]],  # (5)
+    StorageClass: NotRequired[StorageClassType],  # (6)
+```
 
-- `BucketName`: `str`
-- `Prefix`: `str`
-
-Optional fields:
-
-- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `CannedACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `AccessControlList`:
-  `Sequence`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
-- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef)
-- `UserMetadata`:
-  `Sequence`\[[MetadataEntryTypeDef](./type_defs.md#metadataentrytypedef)\]
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-
-<a id="ssekmstypedef"></a>
-
+1. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
+2. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+3. See [:material-code-braces: GrantTypeDef](./type_defs.md#granttypedef) 
+4. See [:material-code-braces: TaggingTypeDef](./type_defs.md#taggingtypedef) 
+5. See [:material-code-braces: MetadataEntryTypeDef](./type_defs.md#metadataentrytypedef) 
+6. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
 ## SSEKMSTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import SSEKMSTypeDef
+
+def get_value() -> SSEKMSTypeDef:
+    return {
+        "KeyId": ...,
+    }
 ```
 
-Required fields:
-
-- `KeyId`: `str`
-
-<a id="scanrangetypedef"></a>
+```python title="Definition"
+class SSEKMSTypeDef(TypedDict):
+    KeyId: str,
+```
 
 ## ScanRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ScanRangeTypeDef
+
+def get_value() -> ScanRangeTypeDef:
+    return {
+        "Start": ...,
+    }
 ```
 
-Optional fields:
-
-- `Start`: `int`
-- `End`: `int`
-
-<a id="selectobjectcontenteventstreamtypedef"></a>
+```python title="Definition"
+class ScanRangeTypeDef(TypedDict):
+    Start: NotRequired[int],
+    End: NotRequired[int],
+```
 
 ## SelectObjectContentEventStreamTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import SelectObjectContentEventStreamTypeDef
+
+def get_value() -> SelectObjectContentEventStreamTypeDef:
+    return {
+        "Records": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SelectObjectContentEventStreamTypeDef(TypedDict):
+    Records: NotRequired[RecordsEventTypeDef],  # (1)
+    Stats: NotRequired[StatsEventTypeDef],  # (2)
+    Progress: NotRequired[ProgressEventTypeDef],  # (3)
+    Cont: NotRequired[Dict[str, Any]],
+    End: NotRequired[Dict[str, Any]],
+```
 
-- `Records`: [RecordsEventTypeDef](./type_defs.md#recordseventtypedef)
-- `Stats`: [StatsEventTypeDef](./type_defs.md#statseventtypedef)
-- `Progress`: [ProgressEventTypeDef](./type_defs.md#progresseventtypedef)
-- `Cont`: `Dict`\[`str`, `Any`\]
-- `End`: `Dict`\[`str`, `Any`\]
-
-<a id="selectobjectcontentoutputtypedef"></a>
-
+1. See [:material-code-braces: RecordsEventTypeDef](./type_defs.md#recordseventtypedef) 
+2. See [:material-code-braces: StatsEventTypeDef](./type_defs.md#statseventtypedef) 
+3. See [:material-code-braces: ProgressEventTypeDef](./type_defs.md#progresseventtypedef) 
 ## SelectObjectContentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import SelectObjectContentOutputTypeDef
+
+def get_value() -> SelectObjectContentOutputTypeDef:
+    return {
+        "Payload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectObjectContentOutputTypeDef(TypedDict):
+    Payload: SelectObjectContentEventStreamTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Payload`:
-  [SelectObjectContentEventStreamTypeDef](./type_defs.md#selectobjectcontenteventstreamtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="selectobjectcontentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SelectObjectContentEventStreamTypeDef](./type_defs.md#selectobjectcontenteventstreamtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SelectObjectContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import SelectObjectContentRequestRequestTypeDef
+
+def get_value() -> SelectObjectContentRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "Expression": ...,
+        "ExpressionType": ...,
+        "InputSerialization": ...,
+        "OutputSerialization": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectObjectContentRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    Expression: str,
+    ExpressionType: ExpressionTypeType,  # (1)
+    InputSerialization: InputSerializationTypeDef,  # (2)
+    OutputSerialization: OutputSerializationTypeDef,  # (3)
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestProgress: NotRequired[RequestProgressTypeDef],  # (4)
+    ScanRange: NotRequired[ScanRangeTypeDef],  # (5)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-- `Expression`: `str`
-- `ExpressionType`: `Literal['SQL']` (see
-  [ExpressionTypeType](./literals.md#expressiontypetype))
-- `InputSerialization`:
-  [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
-- `OutputSerialization`:
-  [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
-
-Optional fields:
-
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestProgress`:
-  [RequestProgressTypeDef](./type_defs.md#requestprogresstypedef)
-- `ScanRange`: [ScanRangeTypeDef](./type_defs.md#scanrangetypedef)
-- `ExpectedBucketOwner`: `str`
-
-<a id="selectparameterstypedef"></a>
-
+1. See [:material-code-brackets: ExpressionTypeType](./literals.md#expressiontypetype) 
+2. See [:material-code-braces: InputSerializationTypeDef](./type_defs.md#inputserializationtypedef) 
+3. See [:material-code-braces: OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef) 
+4. See [:material-code-braces: RequestProgressTypeDef](./type_defs.md#requestprogresstypedef) 
+5. See [:material-code-braces: ScanRangeTypeDef](./type_defs.md#scanrangetypedef) 
 ## SelectParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import SelectParametersTypeDef
+
+def get_value() -> SelectParametersTypeDef:
+    return {
+        "InputSerialization": ...,
+        "ExpressionType": ...,
+        "Expression": ...,
+        "OutputSerialization": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectParametersTypeDef(TypedDict):
+    InputSerialization: InputSerializationTypeDef,  # (1)
+    ExpressionType: ExpressionTypeType,  # (2)
+    Expression: str,
+    OutputSerialization: OutputSerializationTypeDef,  # (3)
+```
 
-- `InputSerialization`:
-  [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
-- `ExpressionType`: `Literal['SQL']` (see
-  [ExpressionTypeType](./literals.md#expressiontypetype))
-- `Expression`: `str`
-- `OutputSerialization`:
-  [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
-
-<a id="serversideencryptionbydefaulttypedef"></a>
-
+1. See [:material-code-braces: InputSerializationTypeDef](./type_defs.md#inputserializationtypedef) 
+2. See [:material-code-brackets: ExpressionTypeType](./literals.md#expressiontypetype) 
+3. See [:material-code-braces: OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef) 
 ## ServerSideEncryptionByDefaultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServerSideEncryptionByDefaultTypeDef
+
+def get_value() -> ServerSideEncryptionByDefaultTypeDef:
+    return {
+        "SSEAlgorithm": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServerSideEncryptionByDefaultTypeDef(TypedDict):
+    SSEAlgorithm: ServerSideEncryptionType,  # (1)
+    KMSMasterKeyID: NotRequired[str],
+```
 
-- `SSEAlgorithm`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-
-Optional fields:
-
-- `KMSMasterKeyID`: `str`
-
-<a id="serversideencryptionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
 ## ServerSideEncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServerSideEncryptionConfigurationTypeDef
+
+def get_value() -> ServerSideEncryptionConfigurationTypeDef:
+    return {
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServerSideEncryptionConfigurationTypeDef(TypedDict):
+    Rules: List[ServerSideEncryptionRuleTypeDef],  # (1)
+```
 
-- `Rules`:
-  `List`\[[ServerSideEncryptionRuleTypeDef](./type_defs.md#serversideencryptionruletypedef)\]
-
-<a id="serversideencryptionruletypedef"></a>
-
+1. See [:material-code-braces: ServerSideEncryptionRuleTypeDef](./type_defs.md#serversideencryptionruletypedef) 
 ## ServerSideEncryptionRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServerSideEncryptionRuleTypeDef
+
+def get_value() -> ServerSideEncryptionRuleTypeDef:
+    return {
+        "ApplyServerSideEncryptionByDefault": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerSideEncryptionRuleTypeDef(TypedDict):
+    ApplyServerSideEncryptionByDefault: NotRequired[ServerSideEncryptionByDefaultTypeDef],  # (1)
+    BucketKeyEnabled: NotRequired[bool],
+```
 
-- `ApplyServerSideEncryptionByDefault`:
-  [ServerSideEncryptionByDefaultTypeDef](./type_defs.md#serversideencryptionbydefaulttypedef)
-- `BucketKeyEnabled`: `bool`
-
-<a id="serviceresourcebucketaclrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerSideEncryptionByDefaultTypeDef](./type_defs.md#serversideencryptionbydefaulttypedef) 
 ## ServiceResourceBucketAclRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketAclRequestTypeDef
+
+def get_value() -> ServiceResourceBucketAclRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketcorsrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketAclRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketCorsRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketCorsRequestTypeDef
+
+def get_value() -> ServiceResourceBucketCorsRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketlifecycleconfigurationrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketCorsRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketLifecycleConfigurationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketLifecycleConfigurationRequestTypeDef
+
+def get_value() -> ServiceResourceBucketLifecycleConfigurationRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketlifecyclerequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketLifecycleConfigurationRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketLifecycleRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketLifecycleRequestTypeDef
+
+def get_value() -> ServiceResourceBucketLifecycleRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketloggingrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketLifecycleRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketLoggingRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketLoggingRequestTypeDef
+
+def get_value() -> ServiceResourceBucketLoggingRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketnotificationrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketLoggingRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketNotificationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketNotificationRequestTypeDef
+
+def get_value() -> ServiceResourceBucketNotificationRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketpolicyrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketNotificationRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketPolicyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketPolicyRequestTypeDef
+
+def get_value() -> ServiceResourceBucketPolicyRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketrequestpaymentrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketPolicyRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketRequestPaymentRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketRequestPaymentRequestTypeDef
+
+def get_value() -> ServiceResourceBucketRequestPaymentRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketRequestPaymentRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketRequestTypeDef
+
+def get_value() -> ServiceResourceBucketRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="serviceresourcebuckettaggingrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## ServiceResourceBucketTaggingRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketTaggingRequestTypeDef
+
+def get_value() -> ServiceResourceBucketTaggingRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketversioningrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketTaggingRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketVersioningRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketVersioningRequestTypeDef
+
+def get_value() -> ServiceResourceBucketVersioningRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcebucketwebsiterequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketVersioningRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceBucketWebsiteRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceBucketWebsiteRequestTypeDef
+
+def get_value() -> ServiceResourceBucketWebsiteRequestTypeDef:
+    return {
+        "bucket_name": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-
-<a id="serviceresourcemultipartuploadpartrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceBucketWebsiteRequestTypeDef(TypedDict):
+    bucket_name: str,
+```
 
 ## ServiceResourceMultipartUploadPartRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceMultipartUploadPartRequestTypeDef
+
+def get_value() -> ServiceResourceMultipartUploadPartRequestTypeDef:
+    return {
+        "bucket_name": ...,
+        "object_key": ...,
+        "multipart_upload_id": ...,
+        "part_number": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-- `object_key`: `str`
-- `multipart_upload_id`: `str`
-- `part_number`: `str`
-
-<a id="serviceresourcemultipartuploadrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceMultipartUploadPartRequestTypeDef(TypedDict):
+    bucket_name: str,
+    object_key: str,
+    multipart_upload_id: str,
+    part_number: str,
+```
 
 ## ServiceResourceMultipartUploadRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceMultipartUploadRequestTypeDef
+
+def get_value() -> ServiceResourceMultipartUploadRequestTypeDef:
+    return {
+        "bucket_name": ...,
+        "object_key": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-- `object_key`: `str`
-- `id`: `str`
-
-<a id="serviceresourceobjectaclrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceMultipartUploadRequestTypeDef(TypedDict):
+    bucket_name: str,
+    object_key: str,
+    id: str,
+```
 
 ## ServiceResourceObjectAclRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceObjectAclRequestTypeDef
+
+def get_value() -> ServiceResourceObjectAclRequestTypeDef:
+    return {
+        "bucket_name": ...,
+        "object_key": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-- `object_key`: `str`
-
-<a id="serviceresourceobjectrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceObjectAclRequestTypeDef(TypedDict):
+    bucket_name: str,
+    object_key: str,
+```
 
 ## ServiceResourceObjectRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceObjectRequestTypeDef
+
+def get_value() -> ServiceResourceObjectRequestTypeDef:
+    return {
+        "bucket_name": ...,
+        "key": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-- `key`: `str`
-
-<a id="serviceresourceobjectsummaryrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceObjectRequestTypeDef(TypedDict):
+    bucket_name: str,
+    key: str,
+```
 
 ## ServiceResourceObjectSummaryRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceObjectSummaryRequestTypeDef
+
+def get_value() -> ServiceResourceObjectSummaryRequestTypeDef:
+    return {
+        "bucket_name": ...,
+        "key": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-- `key`: `str`
-
-<a id="serviceresourceobjectversionrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceObjectSummaryRequestTypeDef(TypedDict):
+    bucket_name: str,
+    key: str,
+```
 
 ## ServiceResourceObjectVersionRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import ServiceResourceObjectVersionRequestTypeDef
+
+def get_value() -> ServiceResourceObjectVersionRequestTypeDef:
+    return {
+        "bucket_name": ...,
+        "object_key": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket_name`: `str`
-- `object_key`: `str`
-- `id`: `str`
-
-<a id="sourceselectioncriteriatypedef"></a>
+```python title="Definition"
+class ServiceResourceObjectVersionRequestTypeDef(TypedDict):
+    bucket_name: str,
+    object_key: str,
+    id: str,
+```
 
 ## SourceSelectionCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import SourceSelectionCriteriaTypeDef
+
+def get_value() -> SourceSelectionCriteriaTypeDef:
+    return {
+        "SseKmsEncryptedObjects": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceSelectionCriteriaTypeDef(TypedDict):
+    SseKmsEncryptedObjects: NotRequired[SseKmsEncryptedObjectsTypeDef],  # (1)
+    ReplicaModifications: NotRequired[ReplicaModificationsTypeDef],  # (2)
+```
 
-- `SseKmsEncryptedObjects`:
-  [SseKmsEncryptedObjectsTypeDef](./type_defs.md#ssekmsencryptedobjectstypedef)
-- `ReplicaModifications`:
-  [ReplicaModificationsTypeDef](./type_defs.md#replicamodificationstypedef)
-
-<a id="ssekmsencryptedobjectstypedef"></a>
-
+1. See [:material-code-braces: SseKmsEncryptedObjectsTypeDef](./type_defs.md#ssekmsencryptedobjectstypedef) 
+2. See [:material-code-braces: ReplicaModificationsTypeDef](./type_defs.md#replicamodificationstypedef) 
 ## SseKmsEncryptedObjectsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import SseKmsEncryptedObjectsTypeDef
+
+def get_value() -> SseKmsEncryptedObjectsTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SseKmsEncryptedObjectsTypeDef(TypedDict):
+    Status: SseKmsEncryptedObjectsStatusType,  # (1)
+```
 
-- `Status`:
-  [SseKmsEncryptedObjectsStatusType](./literals.md#ssekmsencryptedobjectsstatustype)
-
-<a id="statseventtypedef"></a>
-
+1. See [:material-code-brackets: SseKmsEncryptedObjectsStatusType](./literals.md#ssekmsencryptedobjectsstatustype) 
 ## StatsEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import StatsEventTypeDef
+
+def get_value() -> StatsEventTypeDef:
+    return {
+        "Details": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StatsEventTypeDef(TypedDict):
+    Details: NotRequired[StatsTypeDef],  # (1)
+```
 
-- `Details`: [StatsTypeDef](./type_defs.md#statstypedef)
-
-<a id="statstypedef"></a>
-
+1. See [:material-code-braces: StatsTypeDef](./type_defs.md#statstypedef) 
 ## StatsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import StatsTypeDef
+
+def get_value() -> StatsTypeDef:
+    return {
+        "BytesScanned": ...,
+    }
 ```
 
-Optional fields:
-
-- `BytesScanned`: `int`
-- `BytesProcessed`: `int`
-- `BytesReturned`: `int`
-
-<a id="storageclassanalysisdataexporttypedef"></a>
+```python title="Definition"
+class StatsTypeDef(TypedDict):
+    BytesScanned: NotRequired[int],
+    BytesProcessed: NotRequired[int],
+    BytesReturned: NotRequired[int],
+```
 
 ## StorageClassAnalysisDataExportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import StorageClassAnalysisDataExportTypeDef
+
+def get_value() -> StorageClassAnalysisDataExportTypeDef:
+    return {
+        "OutputSchemaVersion": ...,
+        "Destination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StorageClassAnalysisDataExportTypeDef(TypedDict):
+    OutputSchemaVersion: StorageClassAnalysisSchemaVersionType,  # (1)
+    Destination: AnalyticsExportDestinationTypeDef,  # (2)
+```
 
-- `OutputSchemaVersion`: `Literal['V_1']` (see
-  [StorageClassAnalysisSchemaVersionType](./literals.md#storageclassanalysisschemaversiontype))
-- `Destination`:
-  [AnalyticsExportDestinationTypeDef](./type_defs.md#analyticsexportdestinationtypedef)
-
-<a id="storageclassanalysistypedef"></a>
-
+1. See [:material-code-brackets: StorageClassAnalysisSchemaVersionType](./literals.md#storageclassanalysisschemaversiontype) 
+2. See [:material-code-braces: AnalyticsExportDestinationTypeDef](./type_defs.md#analyticsexportdestinationtypedef) 
 ## StorageClassAnalysisTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import StorageClassAnalysisTypeDef
+
+def get_value() -> StorageClassAnalysisTypeDef:
+    return {
+        "DataExport": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StorageClassAnalysisTypeDef(TypedDict):
+    DataExport: NotRequired[StorageClassAnalysisDataExportTypeDef],  # (1)
+```
 
-- `DataExport`:
-  [StorageClassAnalysisDataExportTypeDef](./type_defs.md#storageclassanalysisdataexporttypedef)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: StorageClassAnalysisDataExportTypeDef](./type_defs.md#storageclassanalysisdataexporttypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="taggingtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TaggingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import TaggingTypeDef
+
+def get_value() -> TaggingTypeDef:
+    return {
+        "TagSet": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TaggingTypeDef(TypedDict):
+    TagSet: Sequence[TagTypeDef],  # (1)
+```
 
-- `TagSet`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="targetgranttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TargetGrantTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import TargetGrantTypeDef
+
+def get_value() -> TargetGrantTypeDef:
+    return {
+        "Grantee": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TargetGrantTypeDef(TypedDict):
+    Grantee: NotRequired[GranteeTypeDef],  # (1)
+    Permission: NotRequired[BucketLogsPermissionType],  # (2)
+```
 
-- `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
-- `Permission`:
-  [BucketLogsPermissionType](./literals.md#bucketlogspermissiontype)
-
-<a id="tieringtypedef"></a>
-
+1. See [:material-code-braces: GranteeTypeDef](./type_defs.md#granteetypedef) 
+2. See [:material-code-brackets: BucketLogsPermissionType](./literals.md#bucketlogspermissiontype) 
 ## TieringTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import TieringTypeDef
+
+def get_value() -> TieringTypeDef:
+    return {
+        "Days": ...,
+        "AccessTier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TieringTypeDef(TypedDict):
+    Days: int,
+    AccessTier: IntelligentTieringAccessTierType,  # (1)
+```
 
-- `Days`: `int`
-- `AccessTier`:
-  [IntelligentTieringAccessTierType](./literals.md#intelligenttieringaccesstiertype)
-
-<a id="topicconfigurationdeprecatedtypedef"></a>
-
+1. See [:material-code-brackets: IntelligentTieringAccessTierType](./literals.md#intelligenttieringaccesstiertype) 
 ## TopicConfigurationDeprecatedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import TopicConfigurationDeprecatedTypeDef
+
+def get_value() -> TopicConfigurationDeprecatedTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TopicConfigurationDeprecatedTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Events: NotRequired[List[EventType]],  # (1)
+    Event: NotRequired[EventType],  # (2)
+    Topic: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
-- `Event`: [EventType](./literals.md#eventtype)
-- `Topic`: `str`
-
-<a id="topicconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: EventType](./literals.md#eventtype) 
+2. See [:material-code-brackets: EventType](./literals.md#eventtype) 
 ## TopicConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import TopicConfigurationTypeDef
+
+def get_value() -> TopicConfigurationTypeDef:
+    return {
+        "TopicArn": ...,
+        "Events": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TopicConfigurationTypeDef(TypedDict):
+    TopicArn: str,
+    Events: List[EventType],  # (1)
+    Id: NotRequired[str],
+    Filter: NotRequired[NotificationConfigurationFilterTypeDef],  # (2)
+```
 
-- `TopicArn`: `str`
-- `Events`: `List`\[[EventType](./literals.md#eventtype)\]
-
-Optional fields:
-
-- `Id`: `str`
-- `Filter`:
-  [NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef)
-
-<a id="transitiontypedef"></a>
-
+1. See [:material-code-brackets: EventType](./literals.md#eventtype) 
+2. See [:material-code-braces: NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef) 
 ## TransitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import TransitionTypeDef
+
+def get_value() -> TransitionTypeDef:
+    return {
+        "Date": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TransitionTypeDef(TypedDict):
+    Date: NotRequired[datetime],
+    Days: NotRequired[int],
+    StorageClass: NotRequired[TransitionStorageClassType],  # (1)
+```
 
-- `Date`: `datetime`
-- `Days`: `int`
-- `StorageClass`:
-  [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
-
-<a id="uploadpartcopyoutputtypedef"></a>
-
+1. See [:material-code-brackets: TransitionStorageClassType](./literals.md#transitionstorageclasstype) 
 ## UploadPartCopyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import UploadPartCopyOutputTypeDef
+
+def get_value() -> UploadPartCopyOutputTypeDef:
+    return {
+        "CopySourceVersionId": ...,
+        "CopyPartResult": ...,
+        "ServerSideEncryption": ...,
+        "SSECustomerAlgorithm": ...,
+        "SSECustomerKeyMD5": ...,
+        "SSEKMSKeyId": ...,
+        "BucketKeyEnabled": ...,
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadPartCopyOutputTypeDef(TypedDict):
+    CopySourceVersionId: str,
+    CopyPartResult: CopyPartResultTypeDef,  # (1)
+    ServerSideEncryption: ServerSideEncryptionType,  # (2)
+    SSECustomerAlgorithm: str,
+    SSECustomerKeyMD5: str,
+    SSEKMSKeyId: str,
+    BucketKeyEnabled: bool,
+    RequestCharged: RequestChargedType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `CopySourceVersionId`: `str`
-- `CopyPartResult`:
-  [CopyPartResultTypeDef](./type_defs.md#copypartresulttypedef)
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="uploadpartcopyrequestmultipartuploadpartcopyfromtypedef"></a>
-
+1. See [:material-code-braces: CopyPartResultTypeDef](./type_defs.md#copypartresulttypedef) 
+2. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+3. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef
+
+def get_value() -> UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef:
+    return {
+        "CopySource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef(TypedDict):
+    CopySource: str,
+    CopySourceIfMatch: NotRequired[str],
+    CopySourceIfModifiedSince: NotRequired[Union[datetime, str]],
+    CopySourceIfNoneMatch: NotRequired[str],
+    CopySourceIfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    CopySourceRange: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    CopySourceSSECustomerAlgorithm: NotRequired[str],
+    CopySourceSSECustomerKey: NotRequired[str],
+    CopySourceSSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (1)
+    ExpectedBucketOwner: NotRequired[str],
+    ExpectedSourceBucketOwner: NotRequired[str],
+```
 
-- `CopySource`: `str`
-
-Optional fields:
-
-- `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceRange`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `CopySourceSSECustomerAlgorithm`: `str`
-- `CopySourceSSECustomerKey`: `str`
-- `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-- `ExpectedSourceBucketOwner`: `str`
-
-<a id="uploadpartcopyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## UploadPartCopyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import UploadPartCopyRequestRequestTypeDef
+
+def get_value() -> UploadPartCopyRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "CopySource": ...,
+        "Key": ...,
+        "PartNumber": ...,
+        "UploadId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadPartCopyRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    CopySource: Union[str, CopySourceTypeDef],  # (1)
+    Key: str,
+    PartNumber: int,
+    UploadId: str,
+    CopySourceIfMatch: NotRequired[str],
+    CopySourceIfModifiedSince: NotRequired[Union[datetime, str]],
+    CopySourceIfNoneMatch: NotRequired[str],
+    CopySourceIfUnmodifiedSince: NotRequired[Union[datetime, str]],
+    CopySourceRange: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    CopySourceSSECustomerAlgorithm: NotRequired[str],
+    CopySourceSSECustomerKey: NotRequired[str],
+    CopySourceSSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+    ExpectedSourceBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `CopySource`: `Union`\[`str`,
-  [CopySourceTypeDef](./type_defs.md#copysourcetypedef)\]
-- `Key`: `str`
-- `PartNumber`: `int`
-- `UploadId`: `str`
-
-Optional fields:
-
-- `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceRange`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `CopySourceSSECustomerAlgorithm`: `str`
-- `CopySourceSSECustomerKey`: `str`
-- `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-- `ExpectedSourceBucketOwner`: `str`
-
-<a id="uploadpartoutputtypedef"></a>
-
+1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## UploadPartOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import UploadPartOutputTypeDef
+
+def get_value() -> UploadPartOutputTypeDef:
+    return {
+        "ServerSideEncryption": ...,
+        "ETag": ...,
+        "ChecksumCRC32": ...,
+        "ChecksumCRC32C": ...,
+        "ChecksumSHA1": ...,
+        "ChecksumSHA256": ...,
+        "SSECustomerAlgorithm": ...,
+        "SSECustomerKeyMD5": ...,
+        "SSEKMSKeyId": ...,
+        "BucketKeyEnabled": ...,
+        "RequestCharged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadPartOutputTypeDef(TypedDict):
+    ServerSideEncryption: ServerSideEncryptionType,  # (1)
+    ETag: str,
+    ChecksumCRC32: str,
+    ChecksumCRC32C: str,
+    ChecksumSHA1: str,
+    ChecksumSHA256: str,
+    SSECustomerAlgorithm: str,
+    SSECustomerKeyMD5: str,
+    SSEKMSKeyId: str,
+    BucketKeyEnabled: bool,
+    RequestCharged: RequestChargedType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="uploadpartrequestmultipartuploadpartuploadtypedef"></a>
-
+1. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+2. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UploadPartRequestMultipartUploadPartUploadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import UploadPartRequestMultipartUploadPartUploadTypeDef
+
+def get_value() -> UploadPartRequestMultipartUploadPartUploadTypeDef:
+    return {
+        "Body": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UploadPartRequestMultipartUploadPartUploadTypeDef(TypedDict):
+    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ContentLength: NotRequired[int],
+    ContentMD5: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="uploadpartrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## UploadPartRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import UploadPartRequestRequestTypeDef
+
+def get_value() -> UploadPartRequestRequestTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+        "PartNumber": ...,
+        "UploadId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadPartRequestRequestTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    PartNumber: int,
+    UploadId: str,
+    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    ContentLength: NotRequired[int],
+    ContentMD5: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    SSECustomerAlgorithm: NotRequired[str],
+    SSECustomerKey: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    RequestPayer: NotRequired[RequestPayerType],  # (2)
+    ExpectedBucketOwner: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
-- `PartNumber`: `int`
-- `UploadId`: `str`
-
-Optional fields:
-
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-<a id="versioningconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 ## VersioningConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import VersioningConfigurationTypeDef
+
+def get_value() -> VersioningConfigurationTypeDef:
+    return {
+        "MFADelete": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VersioningConfigurationTypeDef(TypedDict):
+    MFADelete: NotRequired[MFADeleteType],  # (1)
+    Status: NotRequired[BucketVersioningStatusType],  # (2)
+```
 
-- `MFADelete`: [MFADeleteType](./literals.md#mfadeletetype)
-- `Status`:
-  [BucketVersioningStatusType](./literals.md#bucketversioningstatustype)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-brackets: MFADeleteType](./literals.md#mfadeletetype) 
+2. See [:material-code-brackets: BucketVersioningStatusType](./literals.md#bucketversioningstatustype) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
-
-- `Delay`: `int`
-- `MaxAttempts`: `int`
-
-<a id="websiteconfigurationtypedef"></a>
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
 ## WebsiteConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import WebsiteConfigurationTypeDef
+
+def get_value() -> WebsiteConfigurationTypeDef:
+    return {
+        "ErrorDocument": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WebsiteConfigurationTypeDef(TypedDict):
+    ErrorDocument: NotRequired[ErrorDocumentTypeDef],  # (1)
+    IndexDocument: NotRequired[IndexDocumentTypeDef],  # (2)
+    RedirectAllRequestsTo: NotRequired[RedirectAllRequestsToTypeDef],  # (3)
+    RoutingRules: NotRequired[Sequence[RoutingRuleTypeDef]],  # (4)
+```
 
-- `ErrorDocument`: [ErrorDocumentTypeDef](./type_defs.md#errordocumenttypedef)
-- `IndexDocument`: [IndexDocumentTypeDef](./type_defs.md#indexdocumenttypedef)
-- `RedirectAllRequestsTo`:
-  [RedirectAllRequestsToTypeDef](./type_defs.md#redirectallrequeststotypedef)
-- `RoutingRules`:
-  `Sequence`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
-
-<a id="writegetobjectresponserequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ErrorDocumentTypeDef](./type_defs.md#errordocumenttypedef) 
+2. See [:material-code-braces: IndexDocumentTypeDef](./type_defs.md#indexdocumenttypedef) 
+3. See [:material-code-braces: RedirectAllRequestsToTypeDef](./type_defs.md#redirectallrequeststotypedef) 
+4. See [:material-code-braces: RoutingRuleTypeDef](./type_defs.md#routingruletypedef) 
 ## WriteGetObjectResponseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.type_defs import WriteGetObjectResponseRequestRequestTypeDef
+
+def get_value() -> WriteGetObjectResponseRequestRequestTypeDef:
+    return {
+        "RequestRoute": ...,
+        "RequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WriteGetObjectResponseRequestRequestTypeDef(TypedDict):
+    RequestRoute: str,
+    RequestToken: str,
+    Body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    StatusCode: NotRequired[int],
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    AcceptRanges: NotRequired[str],
+    CacheControl: NotRequired[str],
+    ContentDisposition: NotRequired[str],
+    ContentEncoding: NotRequired[str],
+    ContentLanguage: NotRequired[str],
+    ContentLength: NotRequired[int],
+    ContentRange: NotRequired[str],
+    ContentType: NotRequired[str],
+    ChecksumCRC32: NotRequired[str],
+    ChecksumCRC32C: NotRequired[str],
+    ChecksumSHA1: NotRequired[str],
+    ChecksumSHA256: NotRequired[str],
+    DeleteMarker: NotRequired[bool],
+    ETag: NotRequired[str],
+    Expires: NotRequired[Union[datetime, str]],
+    Expiration: NotRequired[str],
+    LastModified: NotRequired[Union[datetime, str]],
+    MissingMeta: NotRequired[int],
+    Metadata: NotRequired[Mapping[str, str]],
+    ObjectLockMode: NotRequired[ObjectLockModeType],  # (1)
+    ObjectLockLegalHoldStatus: NotRequired[ObjectLockLegalHoldStatusType],  # (2)
+    ObjectLockRetainUntilDate: NotRequired[Union[datetime, str]],
+    PartsCount: NotRequired[int],
+    ReplicationStatus: NotRequired[ReplicationStatusType],  # (3)
+    RequestCharged: NotRequired[RequestChargedType],  # (4)
+    Restore: NotRequired[str],
+    ServerSideEncryption: NotRequired[ServerSideEncryptionType],  # (5)
+    SSECustomerAlgorithm: NotRequired[str],
+    SSEKMSKeyId: NotRequired[str],
+    SSECustomerKeyMD5: NotRequired[str],
+    StorageClass: NotRequired[StorageClassType],  # (6)
+    TagCount: NotRequired[int],
+    VersionId: NotRequired[str],
+    BucketKeyEnabled: NotRequired[bool],
+```
 
-- `RequestRoute`: `str`
-- `RequestToken`: `str`
-
-Optional fields:
-
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `StatusCode`: `int`
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-- `AcceptRanges`: `str`
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentLength`: `int`
-- `ContentRange`: `str`
-- `ContentType`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `DeleteMarker`: `bool`
-- `ETag`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `Expiration`: `str`
-- `LastModified`: `Union`\[`datetime`, `str`\]
-- `MissingMeta`: `int`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `PartsCount`: `int`
-- `ReplicationStatus`:
-  [ReplicationStatusType](./literals.md#replicationstatustype)
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `Restore`: `str`
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `SSECustomerAlgorithm`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `TagCount`: `int`
-- `VersionId`: `str`
-- `BucketKeyEnabled`: `bool`
+1. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+2. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+3. See [:material-code-brackets: ReplicationStatusType](./literals.md#replicationstatustype) 
+4. See [:material-code-brackets: RequestChargedType](./literals.md#requestchargedtype) 
+5. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+6. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 

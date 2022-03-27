@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-mediaconvert-module"></a>
-
-# Type annotations for boto3 MediaConvert module
+#  MediaConvert module
 
 > [Index](../README.md) > MediaConvert
 
-Auto-generated documentation for
-[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
-type annotations stubs module
-[mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+!!! note ""
 
-- [Type annotations for boto3 MediaConvert module](#type-annotations-for-boto3-mediaconvert-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MediaConvertClient](#mediaconvertclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+    type annotations stubs module [mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `MediaConvert`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[mediaconvert]'
 python -m pip install mypy-boto3-mediaconvert
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,87 +42,37 @@ python -m pip install mypy-boto3-mediaconvert
 python -m pip uninstall -y mypy-boto3-mediaconvert
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="mediaconvertclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MediaConvertClient
 
-Type annotations for `boto3.client("mediaconvert")` as
-[MediaConvertClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("mediaconvert")` as [MediaConvertClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_mediaconvert.client import MediaConvertClient
+
+def get_client() -> MediaConvertClient:
+    return Session().cleint("mediaconvert")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_certificate](./client.md#associate_certificate)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_job](./client.md#cancel_job)
-- [create_job](./client.md#create_job)
-- [create_job_template](./client.md#create_job_template)
-- [create_preset](./client.md#create_preset)
-- [create_queue](./client.md#create_queue)
-- [delete_job_template](./client.md#delete_job_template)
-- [delete_policy](./client.md#delete_policy)
-- [delete_preset](./client.md#delete_preset)
-- [delete_queue](./client.md#delete_queue)
-- [describe_endpoints](./client.md#describe_endpoints)
-- [disassociate_certificate](./client.md#disassociate_certificate)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_job](./client.md#get_job)
-- [get_job_template](./client.md#get_job_template)
-- [get_paginator](./client.md#get_paginator)
-- [get_policy](./client.md#get_policy)
-- [get_preset](./client.md#get_preset)
-- [get_queue](./client.md#get_queue)
-- [list_job_templates](./client.md#list_job_templates)
-- [list_jobs](./client.md#list_jobs)
-- [list_presets](./client.md#list_presets)
-- [list_queues](./client.md#list_queues)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_policy](./client.md#put_policy)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_job_template](./client.md#update_job_template)
-- [update_preset](./client.md#update_preset)
-- [update_queue](./client.md#update_queue)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-MediaConvertClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- InternalServerErrorException
-- NotFoundException
-- TooManyRequestsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("mediaconvert").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("mediaconvert").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_mediaconvert.paginator import DescribeEndpointsPaginator, ...
+from mypy_boto3_mediaconvert.paginator import DescribeEndpointsPaginator
+
+def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
+    return Session().client("mediaconvert").get_paginator("describe_endpoints"))
 ```
 
 - [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
@@ -153,16 +81,23 @@ from mypy_boto3_mediaconvert.paginator import DescribeEndpointsPaginator, ...
 - [ListPresetsPaginator](./paginators.md#listpresetspaginator)
 - [ListQueuesPaginator](./paginators.md#listqueuespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMixType
 
-```python
-from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMixType, ...
+def get_value() -> AacAudioDescriptionBroadcasterMixType:
+    return "BROADCASTER_MIXED_AD"
 ```
 
 - [AacAudioDescriptionBroadcasterMixType](./literals.md#aacaudiodescriptionbroadcastermixtype)
@@ -557,18 +492,22 @@ from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMixTy
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mediaconvert.type_defs import AacSettingsTypeDef
 
-```python
-from mypy_boto3_mediaconvert.type_defs import AacSettingsTypeDef, ...
+def get_value() -> AacSettingsTypeDef:
+    return {
+        "AudioDescriptionBroadcasterMix": ...,
+    }
 ```
 
 - [AacSettingsTypeDef](./type_defs.md#aacsettingstypedef)
@@ -622,6 +561,7 @@ from mypy_boto3_mediaconvert.type_defs import AacSettingsTypeDef, ...
 - [DeleteJobTemplateRequestRequestTypeDef](./type_defs.md#deletejobtemplaterequestrequesttypedef)
 - [DeletePresetRequestRequestTypeDef](./type_defs.md#deletepresetrequestrequesttypedef)
 - [DeleteQueueRequestRequestTypeDef](./type_defs.md#deletequeuerequestrequesttypedef)
+- [DescribeEndpointsRequestDescribeEndpointsPaginateTypeDef](./type_defs.md#describeendpointsrequestdescribeendpointspaginatetypedef)
 - [DescribeEndpointsRequestRequestTypeDef](./type_defs.md#describeendpointsrequestrequesttypedef)
 - [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)
 - [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
@@ -683,12 +623,16 @@ from mypy_boto3_mediaconvert.type_defs import AacSettingsTypeDef, ...
 - [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
 - [JobTypeDef](./type_defs.md#jobtypedef)
 - [KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef)
+- [ListJobTemplatesRequestListJobTemplatesPaginateTypeDef](./type_defs.md#listjobtemplatesrequestlistjobtemplatespaginatetypedef)
 - [ListJobTemplatesRequestRequestTypeDef](./type_defs.md#listjobtemplatesrequestrequesttypedef)
 - [ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)
+- [ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef)
 - [ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef)
 - [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)
+- [ListPresetsRequestListPresetsPaginateTypeDef](./type_defs.md#listpresetsrequestlistpresetspaginatetypedef)
 - [ListPresetsRequestRequestTypeDef](./type_defs.md#listpresetsrequestrequesttypedef)
 - [ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef)
+- [ListQueuesRequestListQueuesPaginateTypeDef](./type_defs.md#listqueuesrequestlistqueuespaginatetypedef)
 - [ListQueuesRequestRequestTypeDef](./type_defs.md#listqueuesrequestrequesttypedef)
 - [ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -783,3 +727,4 @@ from mypy_boto3_mediaconvert.type_defs import AacSettingsTypeDef, ...
 - [XavcHdIntraCbgProfileSettingsTypeDef](./type_defs.md#xavchdintracbgprofilesettingstypedef)
 - [XavcHdProfileSettingsTypeDef](./type_defs.md#xavchdprofilesettingstypedef)
 - [XavcSettingsTypeDef](./type_defs.md#xavcsettingstypedef)
+

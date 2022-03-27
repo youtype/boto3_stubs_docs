@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-resourcegroupstaggingapi-module"></a>
-
-# Paginators for boto3 ResourceGroupsTaggingAPI module
+# Paginators
 
 > [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) > Paginators
 
-Auto-generated documentation for
-[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
-type annotations stubs module
-[mypy-boto3-resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
+!!! note ""
 
-- [Paginators for boto3 ResourceGroupsTaggingAPI module](#paginators-for-boto3-resourcegroupstaggingapi-module)
-  - [GetComplianceSummaryPaginator](#getcompliancesummarypaginator)
-  - [GetResourcesPaginator](#getresourcespaginator)
-  - [GetTagKeysPaginator](#gettagkeyspaginator)
-  - [GetTagValuesPaginator](#gettagvaluespaginator)
-
-<a id="getcompliancesummarypaginator"></a>
+    Auto-generated documentation for [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+    type annotations stubs module [mypy-boto3-resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 ## GetComplianceSummaryPaginator
 
-Type annotations for
-`boto3.client("resourcegroupstaggingapi").get_paginator("get_compliance_summary")`.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").get_paginator("get_compliance_summary")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_resourcegroupstaggingapi.paginator import GetComplianceSummaryPaginator
@@ -33,33 +21,45 @@ def get_get_compliance_summary_paginator() -> GetComplianceSummaryPaginator:
     return Session().client("resourcegroupstaggingapi").get_paginator("get_compliance_summary")
 ```
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetComplianceSummary)
 
-Arguments for `GetComplianceSummaryPaginator.paginate` method:
+### paginate
 
-- `TargetIdFilters`: `Sequence`\[`str`\]
-- `RegionFilters`: `Sequence`\[`str`\]
-- `ResourceTypeFilters`: `Sequence`\[`str`\]
-- `TagKeyFilters`: `Sequence`\[`str`\]
-- `GroupBy`:
-  `Sequence`\[[GroupByAttributeType](./literals.md#groupbyattributetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetComplianceSummaryPaginator.paginate` method.
 
-`GetComplianceSummaryPaginator.paginate` returns
-`_PageIterator`\[[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TargetIdFilters: Sequence[str] = ...,
+    RegionFilters: Sequence[str] = ...,
+    ResourceTypeFilters: Sequence[str] = ...,
+    TagKeyFilters: Sequence[str] = ...,
+    GroupBy: Sequence[GroupByAttributeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetComplianceSummaryOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="getresourcespaginator"></a>
+1. See [:material-code-brackets: GroupByAttributeType](./literals.md#groupbyattributetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef = {  # (1)
+    "TargetIdFilters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetComplianceSummaryInputGetComplianceSummaryPaginateTypeDef](./type_defs.md#getcompliancesummaryinputgetcompliancesummarypaginatetypedef) 
 ## GetResourcesPaginator
 
-Type annotations for
-`boto3.client("resourcegroupstaggingapi").get_paginator("get_resources")`.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").get_paginator("get_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_resourcegroupstaggingapi.paginator import GetResourcesPaginator
@@ -68,34 +68,46 @@ def get_get_resources_paginator() -> GetResourcesPaginator:
     return Session().client("resourcegroupstaggingapi").get_paginator("get_resources")
 ```
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Paginator.GetResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetResources)
 
-Arguments for `GetResourcesPaginator.paginate` method:
+### paginate
 
-- `TagFilters`:
-  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `TagsPerPage`: `int`
-- `ResourceTypeFilters`: `Sequence`\[`str`\]
-- `IncludeComplianceDetails`: `bool`
-- `ExcludeCompliantResources`: `bool`
-- `ResourceARNList`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetResourcesPaginator.paginate` method.
 
-`GetResourcesPaginator.paginate` returns
-`_PageIterator`\[[GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TagFilters: Sequence[TagFilterTypeDef] = ...,  # (1)
+    TagsPerPage: int = ...,
+    ResourceTypeFilters: Sequence[str] = ...,
+    IncludeComplianceDetails: bool = ...,
+    ExcludeCompliantResources: bool = ...,
+    ResourceARNList: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetResourcesOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="gettagkeyspaginator"></a>
+1. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetResourcesInputGetResourcesPaginateTypeDef = {  # (1)
+    "TagFilters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourcesInputGetResourcesPaginateTypeDef](./type_defs.md#getresourcesinputgetresourcespaginatetypedef) 
 ## GetTagKeysPaginator
 
-Type annotations for
-`boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_keys")`.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_keys")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagKeys)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_resourcegroupstaggingapi.paginator import GetTagKeysPaginator
@@ -104,27 +116,39 @@ def get_get_tag_keys_paginator() -> GetTagKeysPaginator:
     return Session().client("resourcegroupstaggingapi").get_paginator("get_tag_keys")
 ```
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Paginator.GetTagKeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagKeys)
 
-Arguments for `GetTagKeysPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTagKeysPaginator.paginate` method.
 
-`GetTagKeysPaginator.paginate` returns
-`_PageIterator`\[[GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetTagKeysOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="gettagvaluespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTagKeysInputGetTagKeysPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTagKeysInputGetTagKeysPaginateTypeDef](./type_defs.md#gettagkeysinputgettagkeyspaginatetypedef) 
 ## GetTagValuesPaginator
 
-Type annotations for
-`boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_values")`.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").get_paginator("get_tag_values")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagValues)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_resourcegroupstaggingapi.paginator import GetTagValuesPaginator
@@ -133,14 +157,31 @@ def get_get_tag_values_paginator() -> GetTagValuesPaginator:
     return Session().client("resourcegroupstaggingapi").get_paginator("get_tag_values")
 ```
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Paginator.GetTagValues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Paginator.GetTagValues)
 
-Arguments for `GetTagValuesPaginator.paginate` method:
+### paginate
 
-- `Key`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTagValuesPaginator.paginate` method.
 
-`GetTagValuesPaginator.paginate` returns
-`_PageIterator`\[[GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Key: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetTagValuesOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetTagValuesInputGetTagValuesPaginateTypeDef = {  # (1)
+    "Key": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTagValuesInputGetTagValuesPaginateTypeDef](./type_defs.md#gettagvaluesinputgettagvaluespaginatetypedef) 

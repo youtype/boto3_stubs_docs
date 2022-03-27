@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-workdocs-module"></a>
-
-# Type annotations for boto3 WorkDocs module
+#  WorkDocs module
 
 > [Index](../README.md) > WorkDocs
 
-Auto-generated documentation for
-[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
-type annotations stubs module
-[mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+!!! note ""
 
-- [Type annotations for boto3 WorkDocs module](#type-annotations-for-boto3-workdocs-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [WorkDocsClient](#workdocsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
+    type annotations stubs module [mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `WorkDocs`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[workdocs]'
 python -m pip install mypy-boto3-workdocs
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,119 +42,37 @@ python -m pip install mypy-boto3-workdocs
 python -m pip uninstall -y mypy-boto3-workdocs
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="workdocsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## WorkDocsClient
 
-Type annotations for `boto3.client("workdocs")` as
-[WorkDocsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("workdocs")` as [WorkDocsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_workdocs.client import WorkDocsClient
+
+def get_client() -> WorkDocsClient:
+    return Session().cleint("workdocs")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [abort_document_version_upload](./client.md#abort_document_version_upload)
-- [activate_user](./client.md#activate_user)
-- [add_resource_permissions](./client.md#add_resource_permissions)
-- [can_paginate](./client.md#can_paginate)
-- [create_comment](./client.md#create_comment)
-- [create_custom_metadata](./client.md#create_custom_metadata)
-- [create_folder](./client.md#create_folder)
-- [create_labels](./client.md#create_labels)
-- [create_notification_subscription](./client.md#create_notification_subscription)
-- [create_user](./client.md#create_user)
-- [deactivate_user](./client.md#deactivate_user)
-- [delete_comment](./client.md#delete_comment)
-- [delete_custom_metadata](./client.md#delete_custom_metadata)
-- [delete_document](./client.md#delete_document)
-- [delete_folder](./client.md#delete_folder)
-- [delete_folder_contents](./client.md#delete_folder_contents)
-- [delete_labels](./client.md#delete_labels)
-- [delete_notification_subscription](./client.md#delete_notification_subscription)
-- [delete_user](./client.md#delete_user)
-- [describe_activities](./client.md#describe_activities)
-- [describe_comments](./client.md#describe_comments)
-- [describe_document_versions](./client.md#describe_document_versions)
-- [describe_folder_contents](./client.md#describe_folder_contents)
-- [describe_groups](./client.md#describe_groups)
-- [describe_notification_subscriptions](./client.md#describe_notification_subscriptions)
-- [describe_resource_permissions](./client.md#describe_resource_permissions)
-- [describe_root_folders](./client.md#describe_root_folders)
-- [describe_users](./client.md#describe_users)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_current_user](./client.md#get_current_user)
-- [get_document](./client.md#get_document)
-- [get_document_path](./client.md#get_document_path)
-- [get_document_version](./client.md#get_document_version)
-- [get_folder](./client.md#get_folder)
-- [get_folder_path](./client.md#get_folder_path)
-- [get_paginator](./client.md#get_paginator)
-- [get_resources](./client.md#get_resources)
-- [initiate_document_version_upload](./client.md#initiate_document_version_upload)
-- [remove_all_resource_permissions](./client.md#remove_all_resource_permissions)
-- [remove_resource_permission](./client.md#remove_resource_permission)
-- [update_document](./client.md#update_document)
-- [update_document_version](./client.md#update_document_version)
-- [update_folder](./client.md#update_folder)
-- [update_user](./client.md#update_user)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-WorkDocsClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentModificationException
-- ConflictingOperationException
-- CustomMetadataLimitExceededException
-- DeactivatingLastSystemUserException
-- DocumentLockedForCommentsException
-- DraftUploadOutOfSyncException
-- EntityAlreadyExistsException
-- EntityNotExistsException
-- FailedDependencyException
-- IllegalUserStateException
-- InvalidArgumentException
-- InvalidCommentOperationException
-- InvalidOperationException
-- InvalidPasswordException
-- LimitExceededException
-- ProhibitedStateException
-- RequestedEntityTooLargeException
-- ResourceAlreadyCheckedOutException
-- ServiceUnavailableException
-- StorageLimitExceededException
-- StorageLimitWillExceedException
-- TooManyLabelsException
-- TooManySubscriptionsException
-- UnauthorizedOperationException
-- UnauthorizedResourceAccessException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("workdocs").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("workdocs").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_workdocs.paginator import DescribeActivitiesPaginator, ...
+from mypy_boto3_workdocs.paginator import DescribeActivitiesPaginator
+
+def get_describe_activities_paginator() -> DescribeActivitiesPaginator:
+    return Session().client("workdocs").get_paginator("describe_activities"))
 ```
 
 - [DescribeActivitiesPaginator](./paginators.md#describeactivitiespaginator)
@@ -189,16 +85,23 @@ from mypy_boto3_workdocs.paginator import DescribeActivitiesPaginator, ...
 - [DescribeRootFoldersPaginator](./paginators.md#describerootfolderspaginator)
 - [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_workdocs.literals import ActivityTypeType
 
-```python
-from mypy_boto3_workdocs.literals import ActivityTypeType, ...
+def get_value() -> ActivityTypeType:
+    return "DOCUMENT_ANNOTATION_ADDED"
 ```
 
 - [ActivityTypeType](./literals.md#activitytypetype)
@@ -240,18 +143,23 @@ from mypy_boto3_workdocs.literals import ActivityTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_workdocs.type_defs import AbortDocumentVersionUploadRequestRequestTypeDef
 
-```python
-from mypy_boto3_workdocs.type_defs import AbortDocumentVersionUploadRequestRequestTypeDef, ...
+def get_value() -> AbortDocumentVersionUploadRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+        "VersionId": ...,
+    }
 ```
 
 - [AbortDocumentVersionUploadRequestRequestTypeDef](./type_defs.md#abortdocumentversionuploadrequestrequesttypedef)
@@ -281,22 +189,31 @@ from mypy_boto3_workdocs.type_defs import AbortDocumentVersionUploadRequestReque
 - [DeleteLabelsRequestRequestTypeDef](./type_defs.md#deletelabelsrequestrequesttypedef)
 - [DeleteNotificationSubscriptionRequestRequestTypeDef](./type_defs.md#deletenotificationsubscriptionrequestrequesttypedef)
 - [DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef)
+- [DescribeActivitiesRequestDescribeActivitiesPaginateTypeDef](./type_defs.md#describeactivitiesrequestdescribeactivitiespaginatetypedef)
 - [DescribeActivitiesRequestRequestTypeDef](./type_defs.md#describeactivitiesrequestrequesttypedef)
 - [DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef)
+- [DescribeCommentsRequestDescribeCommentsPaginateTypeDef](./type_defs.md#describecommentsrequestdescribecommentspaginatetypedef)
 - [DescribeCommentsRequestRequestTypeDef](./type_defs.md#describecommentsrequestrequesttypedef)
 - [DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef)
+- [DescribeDocumentVersionsRequestDescribeDocumentVersionsPaginateTypeDef](./type_defs.md#describedocumentversionsrequestdescribedocumentversionspaginatetypedef)
 - [DescribeDocumentVersionsRequestRequestTypeDef](./type_defs.md#describedocumentversionsrequestrequesttypedef)
 - [DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef)
+- [DescribeFolderContentsRequestDescribeFolderContentsPaginateTypeDef](./type_defs.md#describefoldercontentsrequestdescribefoldercontentspaginatetypedef)
 - [DescribeFolderContentsRequestRequestTypeDef](./type_defs.md#describefoldercontentsrequestrequesttypedef)
 - [DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef)
+- [DescribeGroupsRequestDescribeGroupsPaginateTypeDef](./type_defs.md#describegroupsrequestdescribegroupspaginatetypedef)
 - [DescribeGroupsRequestRequestTypeDef](./type_defs.md#describegroupsrequestrequesttypedef)
 - [DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef)
+- [DescribeNotificationSubscriptionsRequestDescribeNotificationSubscriptionsPaginateTypeDef](./type_defs.md#describenotificationsubscriptionsrequestdescribenotificationsubscriptionspaginatetypedef)
 - [DescribeNotificationSubscriptionsRequestRequestTypeDef](./type_defs.md#describenotificationsubscriptionsrequestrequesttypedef)
 - [DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef)
+- [DescribeResourcePermissionsRequestDescribeResourcePermissionsPaginateTypeDef](./type_defs.md#describeresourcepermissionsrequestdescriberesourcepermissionspaginatetypedef)
 - [DescribeResourcePermissionsRequestRequestTypeDef](./type_defs.md#describeresourcepermissionsrequestrequesttypedef)
 - [DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef)
+- [DescribeRootFoldersRequestDescribeRootFoldersPaginateTypeDef](./type_defs.md#describerootfoldersrequestdescriberootfolderspaginatetypedef)
 - [DescribeRootFoldersRequestRequestTypeDef](./type_defs.md#describerootfoldersrequestrequesttypedef)
 - [DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef)
+- [DescribeUsersRequestDescribeUsersPaginateTypeDef](./type_defs.md#describeusersrequestdescribeuserspaginatetypedef)
 - [DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef)
 - [DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef)
 - [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
@@ -343,3 +260,4 @@ from mypy_boto3_workdocs.type_defs import AbortDocumentVersionUploadRequestReque
 - [UserMetadataTypeDef](./type_defs.md#usermetadatatypedef)
 - [UserStorageMetadataTypeDef](./type_defs.md#userstoragemetadatatypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
+

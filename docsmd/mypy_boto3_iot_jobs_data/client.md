@@ -1,36 +1,18 @@
-<a id="iotjobsdataplaneclient-for-boto3-iotjobsdataplane-module"></a>
+# IoTJobsDataPlaneClient
 
-# IoTJobsDataPlaneClient for boto3 IoTJobsDataPlane module
+> [Index](../README.md) > [IoTJobsDataPlane](./README.md) > IoTJobsDataPlaneClient
 
-> [Index](../README.md) > [IoTJobsDataPlane](./README.md) >
-> IoTJobsDataPlaneClient
+!!! note ""
 
-Auto-generated documentation for
-[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
-type annotations stubs module
-[mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
-
-- [IoTJobsDataPlaneClient for boto3 IoTJobsDataPlane module](#iotjobsdataplaneclient-for-boto3-iotjobsdataplane-module)
-  - [IoTJobsDataPlaneClient](#iotjobsdataplaneclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [describe_job_execution](#describe_job_execution)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_pending_job_executions](#get_pending_job_executions)
-    - [start_next_pending_job_execution](#start_next_pending_job_execution)
-    - [update_job_execution](#update_job_execution)
-
-<a id="iotjobsdataplaneclient"></a>
+    Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+    type annotations stubs module [mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 ## IoTJobsDataPlaneClient
 
-Type annotations for `boto3.client("iot-jobs-data")`
+Type annotations and code completion for `#!python boto3.client("iot-jobs-data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
 
@@ -38,188 +20,210 @@ def get_iot-jobs-data_client() -> IoTJobsDataPlaneClient:
     return Session().client("iot-jobs-data")
 ```
 
-Boto3 documentation:
-[IoTJobsDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iot-jobs-data").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iot-jobs-data")
+
+try:
+    do_something(client)
+except (
+    client.CertificateValidationException,
+    client.ClientError,
+    client.InvalidRequestException,
+    client.InvalidStateTransitionException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.TerminalStateException,
+    client.ThrottlingException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iot_jobs_data.client import Exceptions
 
 def handle_error(exc: Exceptions.CertificateValidationException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.CertificateValidationException`
-- `Exceptions.ClientError`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.InvalidStateTransitionException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TerminalStateException`
-- `Exceptions.ThrottlingException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IoTJobsDataPlaneClient exceptions.
-
-Type annotations for `boto3.client("iot-jobs-data").exceptions` method.
-
-Boto3 documentation:
-[IoTJobsDataPlane.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iot-jobs-data").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iot-jobs-data").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.can_paginate)
 
-Boto3 documentation:
-[IoTJobsDataPlane.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="describe\_job\_execution"></a>
-
-### describe_job_execution
+### describe\_job\_execution
 
 Gets details of a job execution.
 
-Type annotations for `boto3.client("iot-jobs-data").describe_job_execution`
-method.
+Type annotations and code completion for `#!python boto3.client("iot-jobs-data").describe_job_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution)
 
-Boto3 documentation:
-[IoTJobsDataPlane.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.describe_job_execution)
+```python title="Method definition"
+def describe_job_execution(
+    self,
+    *,
+    jobId: str,
+    thingName: str,
+    includeJobDocument: bool = ...,
+    executionNumber: int = ...,
+) -> DescribeJobExecutionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobExecutionRequestRequestTypeDef](./type_defs.md#describejobexecutionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `thingName`: `str` *(required)*
-- `includeJobDocument`: `bool`
-- `executionNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeJobExecutionRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "thingName": ...,
+}
 
-Returns
-[DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef).
+parent.describe_job_execution(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeJobExecutionRequestRequestTypeDef](./type_defs.md#describejobexecutionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iot-jobs-data").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("iot-jobs-data").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IoTJobsDataPlane.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_pending\_job\_executions"></a>
-
-### get_pending_job_executions
+### get\_pending\_job\_executions
 
 Gets the list of all jobs for a thing that are not in a terminal status.
 
-Type annotations for `boto3.client("iot-jobs-data").get_pending_job_executions`
-method.
+Type annotations and code completion for `#!python boto3.client("iot-jobs-data").get_pending_job_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions)
 
-Boto3 documentation:
-[IoTJobsDataPlane.Client.get_pending_job_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.get_pending_job_executions)
+```python title="Method definition"
+def get_pending_job_executions(
+    self,
+    *,
+    thingName: str,
+) -> GetPendingJobExecutionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPendingJobExecutionsRequestRequestTypeDef](./type_defs.md#getpendingjobexecutionsrequestrequesttypedef).
+1. See [:material-code-braces: GetPendingJobExecutionsResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPendingJobExecutionsRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[GetPendingJobExecutionsResponseTypeDef](./type_defs.md#getpendingjobexecutionsresponsetypedef).
+parent.get_pending_job_executions(**kwargs)
+```
 
-<a id="start\_next\_pending\_job\_execution"></a>
+1. See [:material-code-braces: GetPendingJobExecutionsRequestRequestTypeDef](./type_defs.md#getpendingjobexecutionsrequestrequesttypedef) 
 
-### start_next_pending_job_execution
+### start\_next\_pending\_job\_execution
 
 Gets and starts the next pending (status IN_PROGRESS or QUEUED) job execution
 for a thing.
 
-Type annotations for
-`boto3.client("iot-jobs-data").start_next_pending_job_execution` method.
+Type annotations and code completion for `#!python boto3.client("iot-jobs-data").start_next_pending_job_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution)
 
-Boto3 documentation:
-[IoTJobsDataPlane.Client.start_next_pending_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.start_next_pending_job_execution)
+```python title="Method definition"
+def start_next_pending_job_execution(
+    self,
+    *,
+    thingName: str,
+    statusDetails: Mapping[str, str] = ...,
+    stepTimeoutInMinutes: int = ...,
+) -> StartNextPendingJobExecutionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartNextPendingJobExecutionRequestRequestTypeDef](./type_defs.md#startnextpendingjobexecutionrequestrequesttypedef).
+1. See [:material-code-braces: StartNextPendingJobExecutionResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `statusDetails`: `Mapping`\[`str`, `str`\]
-- `stepTimeoutInMinutes`: `int`
+```python title="Usage example with kwargs"
+kwargs: StartNextPendingJobExecutionRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[StartNextPendingJobExecutionResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponsetypedef).
+parent.start_next_pending_job_execution(**kwargs)
+```
 
-<a id="update\_job\_execution"></a>
+1. See [:material-code-braces: StartNextPendingJobExecutionRequestRequestTypeDef](./type_defs.md#startnextpendingjobexecutionrequestrequesttypedef) 
 
-### update_job_execution
+### update\_job\_execution
 
 Updates the status of a job execution.
 
-Type annotations for `boto3.client("iot-jobs-data").update_job_execution`
-method.
+Type annotations and code completion for `#!python boto3.client("iot-jobs-data").update_job_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution)
 
-Boto3 documentation:
-[IoTJobsDataPlane.Client.update_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client.update_job_execution)
+```python title="Method definition"
+def update_job_execution(
+    self,
+    *,
+    jobId: str,
+    thingName: str,
+    status: JobExecutionStatusType,  # (1)
+    statusDetails: Mapping[str, str] = ...,
+    stepTimeoutInMinutes: int = ...,
+    expectedVersion: int = ...,
+    includeJobExecutionState: bool = ...,
+    includeJobDocument: bool = ...,
+    executionNumber: int = ...,
+) -> UpdateJobExecutionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateJobExecutionRequestRequestTypeDef](./type_defs.md#updatejobexecutionrequestrequesttypedef).
+1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
+2. See [:material-code-braces: UpdateJobExecutionResponseTypeDef](./type_defs.md#updatejobexecutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `thingName`: `str` *(required)*
-- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
-  *(required)*
-- `statusDetails`: `Mapping`\[`str`, `str`\]
-- `stepTimeoutInMinutes`: `int`
-- `expectedVersion`: `int`
-- `includeJobExecutionState`: `bool`
-- `includeJobDocument`: `bool`
-- `executionNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateJobExecutionRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "thingName": ...,
+    "status": ...,
+}
 
-Returns
-[UpdateJobExecutionResponseTypeDef](./type_defs.md#updatejobexecutionresponsetypedef).
+parent.update_job_execution(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateJobExecutionRequestRequestTypeDef](./type_defs.md#updatejobexecutionrequestrequesttypedef) 
+
+
+
+

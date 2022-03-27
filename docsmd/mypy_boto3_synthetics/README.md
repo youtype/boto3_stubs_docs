@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-synthetics-module"></a>
-
-# Type annotations for boto3 Synthetics module
+#  Synthetics module
 
 > [Index](../README.md) > Synthetics
 
-Auto-generated documentation for
-[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
-type annotations stubs module
-[mypy-boto3-synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
+!!! note ""
 
-- [Type annotations for boto3 Synthetics module](#type-annotations-for-boto3-synthetics-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SyntheticsClient](#syntheticsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
+    type annotations stubs module [mypy-boto3-synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Synthetics`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[synthetics]'
 python -m pip install mypy-boto3-synthetics
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,69 +42,41 @@ python -m pip install mypy-boto3-synthetics
 python -m pip uninstall -y mypy-boto3-synthetics
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="syntheticsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SyntheticsClient
 
-Type annotations for `boto3.client("synthetics")` as
-[SyntheticsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("synthetics")` as [SyntheticsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_synthetics.client import SyntheticsClient
+
+def get_client() -> SyntheticsClient:
+    return Session().cleint("synthetics")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_canary](./client.md#create_canary)
-- [delete_canary](./client.md#delete_canary)
-- [describe_canaries](./client.md#describe_canaries)
-- [describe_canaries_last_run](./client.md#describe_canaries_last_run)
-- [describe_runtime_versions](./client.md#describe_runtime_versions)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_canary](./client.md#get_canary)
-- [get_canary_runs](./client.md#get_canary_runs)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [start_canary](./client.md#start_canary)
-- [stop_canary](./client.md#stop_canary)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_canary](./client.md#update_canary)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-SyntheticsClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- ConflictException
-- InternalServerException
-- RequestEntityTooLargeException
-- ResourceNotFoundException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_synthetics.literals import CanaryRunStateReasonCodeType
 
-```python
-from mypy_boto3_synthetics.literals import CanaryRunStateReasonCodeType, ...
+def get_value() -> CanaryRunStateReasonCodeType:
+    return "CANARY_FAILURE"
 ```
 
 - [CanaryRunStateReasonCodeType](./literals.md#canaryrunstatereasoncodetype)
@@ -136,18 +87,22 @@ from mypy_boto3_synthetics.literals import CanaryRunStateReasonCodeType, ...
 - [SyntheticsServiceName](./literals.md#syntheticsservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_synthetics.type_defs import ArtifactConfigInputTypeDef
 
-```python
-from mypy_boto3_synthetics.type_defs import ArtifactConfigInputTypeDef, ...
+def get_value() -> ArtifactConfigInputTypeDef:
+    return {
+        "S3Encryption": ...,
+    }
 ```
 
 - [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
@@ -193,3 +148,4 @@ from mypy_boto3_synthetics.type_defs import ArtifactConfigInputTypeDef, ...
 - [VisualReferenceOutputTypeDef](./type_defs.md#visualreferenceoutputtypedef)
 - [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
 - [VpcConfigOutputTypeDef](./type_defs.md#vpcconfigoutputtypedef)
+

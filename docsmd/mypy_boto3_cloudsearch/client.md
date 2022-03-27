@@ -1,57 +1,18 @@
-<a id="cloudsearchclient-for-boto3-cloudsearch-module"></a>
-
-# CloudSearchClient for boto3 CloudSearch module
+# CloudSearchClient
 
 > [Index](../README.md) > [CloudSearch](./README.md) > CloudSearchClient
 
-Auto-generated documentation for
-[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
-type annotations stubs module
-[mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
+!!! note ""
 
-- [CloudSearchClient for boto3 CloudSearch module](#cloudsearchclient-for-boto3-cloudsearch-module)
-  - [CloudSearchClient](#cloudsearchclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [build_suggesters](#build_suggesters)
-    - [can_paginate](#can_paginate)
-    - [create_domain](#create_domain)
-    - [define_analysis_scheme](#define_analysis_scheme)
-    - [define_expression](#define_expression)
-    - [define_index_field](#define_index_field)
-    - [define_suggester](#define_suggester)
-    - [delete_analysis_scheme](#delete_analysis_scheme)
-    - [delete_domain](#delete_domain)
-    - [delete_expression](#delete_expression)
-    - [delete_index_field](#delete_index_field)
-    - [delete_suggester](#delete_suggester)
-    - [describe_analysis_schemes](#describe_analysis_schemes)
-    - [describe_availability_options](#describe_availability_options)
-    - [describe_domain_endpoint_options](#describe_domain_endpoint_options)
-    - [describe_domains](#describe_domains)
-    - [describe_expressions](#describe_expressions)
-    - [describe_index_fields](#describe_index_fields)
-    - [describe_scaling_parameters](#describe_scaling_parameters)
-    - [describe_service_access_policies](#describe_service_access_policies)
-    - [describe_suggesters](#describe_suggesters)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [index_documents](#index_documents)
-    - [list_domain_names](#list_domain_names)
-    - [update_availability_options](#update_availability_options)
-    - [update_domain_endpoint_options](#update_domain_endpoint_options)
-    - [update_scaling_parameters](#update_scaling_parameters)
-    - [update_service_access_policies](#update_service_access_policies)
-
-<a id="cloudsearchclient"></a>
+    Auto-generated documentation for [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
+    type annotations stubs module [mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 ## CloudSearchClient
 
-Type annotations for `boto3.client("cloudsearch")`
+Type annotations and code completion for `#!python boto3.client("cloudsearch")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cloudsearch.client import CloudSearchClient
 
@@ -59,673 +20,865 @@ def get_cloudsearch_client() -> CloudSearchClient:
     return Session().client("cloudsearch")
 ```
 
-Boto3 documentation:
-[CloudSearch.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cloudsearch").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cloudsearch")
+
+try:
+    do_something(client)
+except (
+    client.BaseException,
+    client.ClientError,
+    client.DisabledOperationException,
+    client.InternalException,
+    client.InvalidTypeException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cloudsearch.client import Exceptions
 
 def handle_error(exc: Exceptions.BaseException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BaseException`
-- `Exceptions.ClientError`
-- `Exceptions.DisabledOperationException`
-- `Exceptions.InternalException`
-- `Exceptions.InvalidTypeException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudSearchClient exceptions.
-
-Type annotations for `boto3.client("cloudsearch").exceptions` method.
-
-Boto3 documentation:
-[CloudSearch.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="build\_suggesters"></a>
-
-### build_suggesters
+### build\_suggesters
 
 Indexes the search suggestions.
 
-Type annotations for `boto3.client("cloudsearch").build_suggesters` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").build_suggesters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters)
 
-Boto3 documentation:
-[CloudSearch.Client.build_suggesters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.build_suggesters)
+```python title="Method definition"
+def build_suggesters(
+    self,
+    *,
+    DomainName: str,
+) -> BuildSuggestersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BuildSuggestersRequestRequestTypeDef](./type_defs.md#buildsuggestersrequestrequesttypedef).
+1. See [:material-code-braces: BuildSuggestersResponseTypeDef](./type_defs.md#buildsuggestersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: BuildSuggestersRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[BuildSuggestersResponseTypeDef](./type_defs.md#buildsuggestersresponsetypedef).
+parent.build_suggesters(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BuildSuggestersRequestRequestTypeDef](./type_defs.md#buildsuggestersrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cloudsearch").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.can_paginate)
 
-Boto3 documentation:
-[CloudSearch.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_domain"></a>
-
-### create_domain
+### create\_domain
 
 Creates a new search domain.
 
-Type annotations for `boto3.client("cloudsearch").create_domain` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").create_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.create_domain)
 
-Boto3 documentation:
-[CloudSearch.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.create_domain)
+```python title="Method definition"
+def create_domain(
+    self,
+    *,
+    DomainName: str,
+) -> CreateDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef).
+1. See [:material-code-braces: CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
+parent.create_domain(**kwargs)
+```
 
-<a id="define\_analysis\_scheme"></a>
+1. See [:material-code-braces: CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef) 
 
-### define_analysis_scheme
+### define\_analysis\_scheme
 
 Configures an analysis scheme that can be applied to a `text` or `text-array`
 field to define language-specific text processing options.
 
-Type annotations for `boto3.client("cloudsearch").define_analysis_scheme`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").define_analysis_scheme` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme)
 
-Boto3 documentation:
-[CloudSearch.Client.define_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_analysis_scheme)
+```python title="Method definition"
+def define_analysis_scheme(
+    self,
+    *,
+    DomainName: str,
+    AnalysisScheme: AnalysisSchemeTypeDef,  # (1)
+) -> DefineAnalysisSchemeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DefineAnalysisSchemeRequestRequestTypeDef](./type_defs.md#defineanalysisschemerequestrequesttypedef).
+1. See [:material-code-braces: AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef) 
+2. See [:material-code-braces: DefineAnalysisSchemeResponseTypeDef](./type_defs.md#defineanalysisschemeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `AnalysisScheme`:
-  [AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DefineAnalysisSchemeRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "AnalysisScheme": ...,
+}
 
-Returns
-[DefineAnalysisSchemeResponseTypeDef](./type_defs.md#defineanalysisschemeresponsetypedef).
+parent.define_analysis_scheme(**kwargs)
+```
 
-<a id="define\_expression"></a>
+1. See [:material-code-braces: DefineAnalysisSchemeRequestRequestTypeDef](./type_defs.md#defineanalysisschemerequestrequesttypedef) 
 
-### define_expression
+### define\_expression
 
 Configures an ` Expression` for the search domain.
 
-Type annotations for `boto3.client("cloudsearch").define_expression` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").define_expression` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_expression)
 
-Boto3 documentation:
-[CloudSearch.Client.define_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_expression)
+```python title="Method definition"
+def define_expression(
+    self,
+    *,
+    DomainName: str,
+    Expression: ExpressionTypeDef,  # (1)
+) -> DefineExpressionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DefineExpressionRequestRequestTypeDef](./type_defs.md#defineexpressionrequestrequesttypedef).
+1. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+2. See [:material-code-braces: DefineExpressionResponseTypeDef](./type_defs.md#defineexpressionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `Expression`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DefineExpressionRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Expression": ...,
+}
 
-Returns
-[DefineExpressionResponseTypeDef](./type_defs.md#defineexpressionresponsetypedef).
+parent.define_expression(**kwargs)
+```
 
-<a id="define\_index\_field"></a>
+1. See [:material-code-braces: DefineExpressionRequestRequestTypeDef](./type_defs.md#defineexpressionrequestrequesttypedef) 
 
-### define_index_field
+### define\_index\_field
 
 Configures an ` IndexField` for the search domain.
 
-Type annotations for `boto3.client("cloudsearch").define_index_field` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").define_index_field` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field)
 
-Boto3 documentation:
-[CloudSearch.Client.define_index_field](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_index_field)
+```python title="Method definition"
+def define_index_field(
+    self,
+    *,
+    DomainName: str,
+    IndexField: IndexFieldTypeDef,  # (1)
+) -> DefineIndexFieldResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DefineIndexFieldRequestRequestTypeDef](./type_defs.md#defineindexfieldrequestrequesttypedef).
+1. See [:material-code-braces: IndexFieldTypeDef](./type_defs.md#indexfieldtypedef) 
+2. See [:material-code-braces: DefineIndexFieldResponseTypeDef](./type_defs.md#defineindexfieldresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `IndexField`: [IndexFieldTypeDef](./type_defs.md#indexfieldtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DefineIndexFieldRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "IndexField": ...,
+}
 
-Returns
-[DefineIndexFieldResponseTypeDef](./type_defs.md#defineindexfieldresponsetypedef).
+parent.define_index_field(**kwargs)
+```
 
-<a id="define\_suggester"></a>
+1. See [:material-code-braces: DefineIndexFieldRequestRequestTypeDef](./type_defs.md#defineindexfieldrequestrequesttypedef) 
 
-### define_suggester
+### define\_suggester
 
 Configures a suggester for a domain.
 
-Type annotations for `boto3.client("cloudsearch").define_suggester` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").define_suggester` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester)
 
-Boto3 documentation:
-[CloudSearch.Client.define_suggester](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.define_suggester)
+```python title="Method definition"
+def define_suggester(
+    self,
+    *,
+    DomainName: str,
+    Suggester: SuggesterTypeDef,  # (1)
+) -> DefineSuggesterResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DefineSuggesterRequestRequestTypeDef](./type_defs.md#definesuggesterrequestrequesttypedef).
+1. See [:material-code-braces: SuggesterTypeDef](./type_defs.md#suggestertypedef) 
+2. See [:material-code-braces: DefineSuggesterResponseTypeDef](./type_defs.md#definesuggesterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `Suggester`: [SuggesterTypeDef](./type_defs.md#suggestertypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DefineSuggesterRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Suggester": ...,
+}
 
-Returns
-[DefineSuggesterResponseTypeDef](./type_defs.md#definesuggesterresponsetypedef).
+parent.define_suggester(**kwargs)
+```
 
-<a id="delete\_analysis\_scheme"></a>
+1. See [:material-code-braces: DefineSuggesterRequestRequestTypeDef](./type_defs.md#definesuggesterrequestrequesttypedef) 
 
-### delete_analysis_scheme
+### delete\_analysis\_scheme
 
 Deletes an analysis scheme.
 
-Type annotations for `boto3.client("cloudsearch").delete_analysis_scheme`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").delete_analysis_scheme` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme)
 
-Boto3 documentation:
-[CloudSearch.Client.delete_analysis_scheme](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_analysis_scheme)
+```python title="Method definition"
+def delete_analysis_scheme(
+    self,
+    *,
+    DomainName: str,
+    AnalysisSchemeName: str,
+) -> DeleteAnalysisSchemeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAnalysisSchemeRequestRequestTypeDef](./type_defs.md#deleteanalysisschemerequestrequesttypedef).
+1. See [:material-code-braces: DeleteAnalysisSchemeResponseTypeDef](./type_defs.md#deleteanalysisschemeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `AnalysisSchemeName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAnalysisSchemeRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "AnalysisSchemeName": ...,
+}
 
-Returns
-[DeleteAnalysisSchemeResponseTypeDef](./type_defs.md#deleteanalysisschemeresponsetypedef).
+parent.delete_analysis_scheme(**kwargs)
+```
 
-<a id="delete\_domain"></a>
+1. See [:material-code-braces: DeleteAnalysisSchemeRequestRequestTypeDef](./type_defs.md#deleteanalysisschemerequestrequesttypedef) 
 
-### delete_domain
+### delete\_domain
 
 Permanently deletes a search domain and all of its data.
 
-Type annotations for `boto3.client("cloudsearch").delete_domain` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").delete_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain)
 
-Boto3 documentation:
-[CloudSearch.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_domain)
+```python title="Method definition"
+def delete_domain(
+    self,
+    *,
+    DomainName: str,
+) -> DeleteDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
+parent.delete_domain(**kwargs)
+```
 
-<a id="delete\_expression"></a>
+1. See [:material-code-braces: DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef) 
 
-### delete_expression
+### delete\_expression
 
 Removes an ` Expression` from the search domain.
 
-Type annotations for `boto3.client("cloudsearch").delete_expression` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").delete_expression` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression)
 
-Boto3 documentation:
-[CloudSearch.Client.delete_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_expression)
+```python title="Method definition"
+def delete_expression(
+    self,
+    *,
+    DomainName: str,
+    ExpressionName: str,
+) -> DeleteExpressionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteExpressionRequestRequestTypeDef](./type_defs.md#deleteexpressionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteExpressionResponseTypeDef](./type_defs.md#deleteexpressionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ExpressionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteExpressionRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "ExpressionName": ...,
+}
 
-Returns
-[DeleteExpressionResponseTypeDef](./type_defs.md#deleteexpressionresponsetypedef).
+parent.delete_expression(**kwargs)
+```
 
-<a id="delete\_index\_field"></a>
+1. See [:material-code-braces: DeleteExpressionRequestRequestTypeDef](./type_defs.md#deleteexpressionrequestrequesttypedef) 
 
-### delete_index_field
+### delete\_index\_field
 
 Removes an ` IndexField` from the search domain.
 
-Type annotations for `boto3.client("cloudsearch").delete_index_field` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").delete_index_field` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field)
 
-Boto3 documentation:
-[CloudSearch.Client.delete_index_field](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_index_field)
+```python title="Method definition"
+def delete_index_field(
+    self,
+    *,
+    DomainName: str,
+    IndexFieldName: str,
+) -> DeleteIndexFieldResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteIndexFieldRequestRequestTypeDef](./type_defs.md#deleteindexfieldrequestrequesttypedef).
+1. See [:material-code-braces: DeleteIndexFieldResponseTypeDef](./type_defs.md#deleteindexfieldresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `IndexFieldName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIndexFieldRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "IndexFieldName": ...,
+}
 
-Returns
-[DeleteIndexFieldResponseTypeDef](./type_defs.md#deleteindexfieldresponsetypedef).
+parent.delete_index_field(**kwargs)
+```
 
-<a id="delete\_suggester"></a>
+1. See [:material-code-braces: DeleteIndexFieldRequestRequestTypeDef](./type_defs.md#deleteindexfieldrequestrequesttypedef) 
 
-### delete_suggester
+### delete\_suggester
 
 Deletes a suggester.
 
-Type annotations for `boto3.client("cloudsearch").delete_suggester` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").delete_suggester` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester)
 
-Boto3 documentation:
-[CloudSearch.Client.delete_suggester](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.delete_suggester)
+```python title="Method definition"
+def delete_suggester(
+    self,
+    *,
+    DomainName: str,
+    SuggesterName: str,
+) -> DeleteSuggesterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSuggesterRequestRequestTypeDef](./type_defs.md#deletesuggesterrequestrequesttypedef).
+1. See [:material-code-braces: DeleteSuggesterResponseTypeDef](./type_defs.md#deletesuggesterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `SuggesterName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSuggesterRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "SuggesterName": ...,
+}
 
-Returns
-[DeleteSuggesterResponseTypeDef](./type_defs.md#deletesuggesterresponsetypedef).
+parent.delete_suggester(**kwargs)
+```
 
-<a id="describe\_analysis\_schemes"></a>
+1. See [:material-code-braces: DeleteSuggesterRequestRequestTypeDef](./type_defs.md#deletesuggesterrequestrequesttypedef) 
 
-### describe_analysis_schemes
+### describe\_analysis\_schemes
 
 Gets the analysis schemes configured for a domain.
 
-Type annotations for `boto3.client("cloudsearch").describe_analysis_schemes`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").describe_analysis_schemes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes)
 
-Boto3 documentation:
-[CloudSearch.Client.describe_analysis_schemes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_analysis_schemes)
+```python title="Method definition"
+def describe_analysis_schemes(
+    self,
+    *,
+    DomainName: str,
+    AnalysisSchemeNames: Sequence[str] = ...,
+    Deployed: bool = ...,
+) -> DescribeAnalysisSchemesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAnalysisSchemesRequestRequestTypeDef](./type_defs.md#describeanalysisschemesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAnalysisSchemesResponseTypeDef](./type_defs.md#describeanalysisschemesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `AnalysisSchemeNames`: `Sequence`\[`str`\]
-- `Deployed`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeAnalysisSchemesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeAnalysisSchemesResponseTypeDef](./type_defs.md#describeanalysisschemesresponsetypedef).
+parent.describe_analysis_schemes(**kwargs)
+```
 
-<a id="describe\_availability\_options"></a>
+1. See [:material-code-braces: DescribeAnalysisSchemesRequestRequestTypeDef](./type_defs.md#describeanalysisschemesrequestrequesttypedef) 
 
-### describe_availability_options
+### describe\_availability\_options
 
 Gets the availability options configured for a domain.
 
-Type annotations for
-`boto3.client("cloudsearch").describe_availability_options` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").describe_availability_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options)
 
-Boto3 documentation:
-[CloudSearch.Client.describe_availability_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_availability_options)
+```python title="Method definition"
+def describe_availability_options(
+    self,
+    *,
+    DomainName: str,
+    Deployed: bool = ...,
+) -> DescribeAvailabilityOptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAvailabilityOptionsRequestRequestTypeDef](./type_defs.md#describeavailabilityoptionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAvailabilityOptionsResponseTypeDef](./type_defs.md#describeavailabilityoptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `Deployed`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeAvailabilityOptionsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeAvailabilityOptionsResponseTypeDef](./type_defs.md#describeavailabilityoptionsresponsetypedef).
+parent.describe_availability_options(**kwargs)
+```
 
-<a id="describe\_domain\_endpoint\_options"></a>
+1. See [:material-code-braces: DescribeAvailabilityOptionsRequestRequestTypeDef](./type_defs.md#describeavailabilityoptionsrequestrequesttypedef) 
 
-### describe_domain_endpoint_options
+### describe\_domain\_endpoint\_options
 
 Returns the domain's endpoint options, specifically whether all requests to the
 domain must arrive over HTTPS.
 
-Type annotations for
-`boto3.client("cloudsearch").describe_domain_endpoint_options` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").describe_domain_endpoint_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options)
 
-Boto3 documentation:
-[CloudSearch.Client.describe_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domain_endpoint_options)
+```python title="Method definition"
+def describe_domain_endpoint_options(
+    self,
+    *,
+    DomainName: str,
+    Deployed: bool = ...,
+) -> DescribeDomainEndpointOptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainEndpointOptionsRequestRequestTypeDef](./type_defs.md#describedomainendpointoptionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainEndpointOptionsResponseTypeDef](./type_defs.md#describedomainendpointoptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `Deployed`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainEndpointOptionsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeDomainEndpointOptionsResponseTypeDef](./type_defs.md#describedomainendpointoptionsresponsetypedef).
+parent.describe_domain_endpoint_options(**kwargs)
+```
 
-<a id="describe\_domains"></a>
+1. See [:material-code-braces: DescribeDomainEndpointOptionsRequestRequestTypeDef](./type_defs.md#describedomainendpointoptionsrequestrequesttypedef) 
 
-### describe_domains
+### describe\_domains
 
 Gets information about the search domains owned by this account.
 
-Type annotations for `boto3.client("cloudsearch").describe_domains` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").describe_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains)
 
-Boto3 documentation:
-[CloudSearch.Client.describe_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_domains)
+```python title="Method definition"
+def describe_domains(
+    self,
+    *,
+    DomainNames: Sequence[str] = ...,
+) -> DescribeDomainsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainsRequestRequestTypeDef](./type_defs.md#describedomainsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainsRequestRequestTypeDef = {  # (1)
+    "DomainNames": ...,
+}
 
-Returns
-[DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef).
+parent.describe_domains(**kwargs)
+```
 
-<a id="describe\_expressions"></a>
+1. See [:material-code-braces: DescribeDomainsRequestRequestTypeDef](./type_defs.md#describedomainsrequestrequesttypedef) 
 
-### describe_expressions
+### describe\_expressions
 
 Gets the expressions configured for the search domain.
 
-Type annotations for `boto3.client("cloudsearch").describe_expressions` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").describe_expressions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions)
 
-Boto3 documentation:
-[CloudSearch.Client.describe_expressions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_expressions)
+```python title="Method definition"
+def describe_expressions(
+    self,
+    *,
+    DomainName: str,
+    ExpressionNames: Sequence[str] = ...,
+    Deployed: bool = ...,
+) -> DescribeExpressionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExpressionsRequestRequestTypeDef](./type_defs.md#describeexpressionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeExpressionsResponseTypeDef](./type_defs.md#describeexpressionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ExpressionNames`: `Sequence`\[`str`\]
-- `Deployed`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeExpressionsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeExpressionsResponseTypeDef](./type_defs.md#describeexpressionsresponsetypedef).
+parent.describe_expressions(**kwargs)
+```
 
-<a id="describe\_index\_fields"></a>
+1. See [:material-code-braces: DescribeExpressionsRequestRequestTypeDef](./type_defs.md#describeexpressionsrequestrequesttypedef) 
 
-### describe_index_fields
+### describe\_index\_fields
 
 Gets information about the index fields configured for the search domain.
 
-Type annotations for `boto3.client("cloudsearch").describe_index_fields`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").describe_index_fields` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields)
 
-Boto3 documentation:
-[CloudSearch.Client.describe_index_fields](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_index_fields)
+```python title="Method definition"
+def describe_index_fields(
+    self,
+    *,
+    DomainName: str,
+    FieldNames: Sequence[str] = ...,
+    Deployed: bool = ...,
+) -> DescribeIndexFieldsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIndexFieldsRequestRequestTypeDef](./type_defs.md#describeindexfieldsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeIndexFieldsResponseTypeDef](./type_defs.md#describeindexfieldsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `FieldNames`: `Sequence`\[`str`\]
-- `Deployed`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeIndexFieldsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeIndexFieldsResponseTypeDef](./type_defs.md#describeindexfieldsresponsetypedef).
+parent.describe_index_fields(**kwargs)
+```
 
-<a id="describe\_scaling\_parameters"></a>
+1. See [:material-code-braces: DescribeIndexFieldsRequestRequestTypeDef](./type_defs.md#describeindexfieldsrequestrequesttypedef) 
 
-### describe_scaling_parameters
+### describe\_scaling\_parameters
 
 Gets the scaling parameters configured for a domain.
 
-Type annotations for `boto3.client("cloudsearch").describe_scaling_parameters`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").describe_scaling_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters)
 
-Boto3 documentation:
-[CloudSearch.Client.describe_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_scaling_parameters)
+```python title="Method definition"
+def describe_scaling_parameters(
+    self,
+    *,
+    DomainName: str,
+) -> DescribeScalingParametersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScalingParametersRequestRequestTypeDef](./type_defs.md#describescalingparametersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeScalingParametersResponseTypeDef](./type_defs.md#describescalingparametersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingParametersRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeScalingParametersResponseTypeDef](./type_defs.md#describescalingparametersresponsetypedef).
+parent.describe_scaling_parameters(**kwargs)
+```
 
-<a id="describe\_service\_access\_policies"></a>
+1. See [:material-code-braces: DescribeScalingParametersRequestRequestTypeDef](./type_defs.md#describescalingparametersrequestrequesttypedef) 
 
-### describe_service_access_policies
+### describe\_service\_access\_policies
 
 Gets information about the access policies that control access to the domain's
 document and search endpoints.
 
-Type annotations for
-`boto3.client("cloudsearch").describe_service_access_policies` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").describe_service_access_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies)
 
-Boto3 documentation:
-[CloudSearch.Client.describe_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_service_access_policies)
+```python title="Method definition"
+def describe_service_access_policies(
+    self,
+    *,
+    DomainName: str,
+    Deployed: bool = ...,
+) -> DescribeServiceAccessPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeServiceAccessPoliciesRequestRequestTypeDef](./type_defs.md#describeserviceaccesspoliciesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeServiceAccessPoliciesResponseTypeDef](./type_defs.md#describeserviceaccesspoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `Deployed`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeServiceAccessPoliciesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeServiceAccessPoliciesResponseTypeDef](./type_defs.md#describeserviceaccesspoliciesresponsetypedef).
+parent.describe_service_access_policies(**kwargs)
+```
 
-<a id="describe\_suggesters"></a>
+1. See [:material-code-braces: DescribeServiceAccessPoliciesRequestRequestTypeDef](./type_defs.md#describeserviceaccesspoliciesrequestrequesttypedef) 
 
-### describe_suggesters
+### describe\_suggesters
 
 Gets the suggesters configured for a domain.
 
-Type annotations for `boto3.client("cloudsearch").describe_suggesters` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").describe_suggesters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters)
 
-Boto3 documentation:
-[CloudSearch.Client.describe_suggesters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.describe_suggesters)
+```python title="Method definition"
+def describe_suggesters(
+    self,
+    *,
+    DomainName: str,
+    SuggesterNames: Sequence[str] = ...,
+    Deployed: bool = ...,
+) -> DescribeSuggestersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSuggestersRequestRequestTypeDef](./type_defs.md#describesuggestersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSuggestersResponseTypeDef](./type_defs.md#describesuggestersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `SuggesterNames`: `Sequence`\[`str`\]
-- `Deployed`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeSuggestersRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeSuggestersResponseTypeDef](./type_defs.md#describesuggestersresponsetypedef).
+parent.describe_suggesters(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeSuggestersRequestRequestTypeDef](./type_defs.md#describesuggestersrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cloudsearch").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudSearch.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="index\_documents"></a>
-
-### index_documents
+### index\_documents
 
 Tells the search domain to start indexing its documents using the latest
 indexing options.
 
-Type annotations for `boto3.client("cloudsearch").index_documents` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").index_documents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.index_documents)
 
-Boto3 documentation:
-[CloudSearch.Client.index_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.index_documents)
+```python title="Method definition"
+def index_documents(
+    self,
+    *,
+    DomainName: str,
+) -> IndexDocumentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[IndexDocumentsRequestRequestTypeDef](./type_defs.md#indexdocumentsrequestrequesttypedef).
+1. See [:material-code-braces: IndexDocumentsResponseTypeDef](./type_defs.md#indexdocumentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: IndexDocumentsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[IndexDocumentsResponseTypeDef](./type_defs.md#indexdocumentsresponsetypedef).
+parent.index_documents(**kwargs)
+```
 
-<a id="list\_domain\_names"></a>
+1. See [:material-code-braces: IndexDocumentsRequestRequestTypeDef](./type_defs.md#indexdocumentsrequestrequesttypedef) 
 
-### list_domain_names
+### list\_domain\_names
 
 Lists all search domains owned by an account.
 
-Type annotations for `boto3.client("cloudsearch").list_domain_names` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").list_domain_names` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names)
 
-Boto3 documentation:
-[CloudSearch.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.list_domain_names)
+```python title="Method definition"
+def list_domain_names(
+    self,
+) -> ListDomainNamesResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
+1. See [:material-code-braces: ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef) 
 
-<a id="update\_availability\_options"></a>
-
-### update_availability_options
+### update\_availability\_options
 
 Configures the availability options for a domain.
 
-Type annotations for `boto3.client("cloudsearch").update_availability_options`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").update_availability_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options)
 
-Boto3 documentation:
-[CloudSearch.Client.update_availability_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_availability_options)
+```python title="Method definition"
+def update_availability_options(
+    self,
+    *,
+    DomainName: str,
+    MultiAZ: bool,
+) -> UpdateAvailabilityOptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAvailabilityOptionsRequestRequestTypeDef](./type_defs.md#updateavailabilityoptionsrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAvailabilityOptionsResponseTypeDef](./type_defs.md#updateavailabilityoptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `MultiAZ`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAvailabilityOptionsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "MultiAZ": ...,
+}
 
-Returns
-[UpdateAvailabilityOptionsResponseTypeDef](./type_defs.md#updateavailabilityoptionsresponsetypedef).
+parent.update_availability_options(**kwargs)
+```
 
-<a id="update\_domain\_endpoint\_options"></a>
+1. See [:material-code-braces: UpdateAvailabilityOptionsRequestRequestTypeDef](./type_defs.md#updateavailabilityoptionsrequestrequesttypedef) 
 
-### update_domain_endpoint_options
+### update\_domain\_endpoint\_options
 
 Updates the domain's endpoint options, specifically whether all requests to the
 domain must arrive over HTTPS.
 
-Type annotations for
-`boto3.client("cloudsearch").update_domain_endpoint_options` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").update_domain_endpoint_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options)
 
-Boto3 documentation:
-[CloudSearch.Client.update_domain_endpoint_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_domain_endpoint_options)
+```python title="Method definition"
+def update_domain_endpoint_options(
+    self,
+    *,
+    DomainName: str,
+    DomainEndpointOptions: DomainEndpointOptionsTypeDef,  # (1)
+) -> UpdateDomainEndpointOptionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDomainEndpointOptionsRequestRequestTypeDef](./type_defs.md#updatedomainendpointoptionsrequestrequesttypedef).
+1. See [:material-code-braces: DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef) 
+2. See [:material-code-braces: UpdateDomainEndpointOptionsResponseTypeDef](./type_defs.md#updatedomainendpointoptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateDomainEndpointOptionsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "DomainEndpointOptions": ...,
+}
 
-Returns
-[UpdateDomainEndpointOptionsResponseTypeDef](./type_defs.md#updatedomainendpointoptionsresponsetypedef).
+parent.update_domain_endpoint_options(**kwargs)
+```
 
-<a id="update\_scaling\_parameters"></a>
+1. See [:material-code-braces: UpdateDomainEndpointOptionsRequestRequestTypeDef](./type_defs.md#updatedomainendpointoptionsrequestrequesttypedef) 
 
-### update_scaling_parameters
+### update\_scaling\_parameters
 
 Configures scaling parameters for a domain.
 
-Type annotations for `boto3.client("cloudsearch").update_scaling_parameters`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").update_scaling_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters)
 
-Boto3 documentation:
-[CloudSearch.Client.update_scaling_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_scaling_parameters)
+```python title="Method definition"
+def update_scaling_parameters(
+    self,
+    *,
+    DomainName: str,
+    ScalingParameters: ScalingParametersTypeDef,  # (1)
+) -> UpdateScalingParametersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateScalingParametersRequestRequestTypeDef](./type_defs.md#updatescalingparametersrequestrequesttypedef).
+1. See [:material-code-braces: ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef) 
+2. See [:material-code-braces: UpdateScalingParametersResponseTypeDef](./type_defs.md#updatescalingparametersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ScalingParameters`:
-  [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateScalingParametersRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "ScalingParameters": ...,
+}
 
-Returns
-[UpdateScalingParametersResponseTypeDef](./type_defs.md#updatescalingparametersresponsetypedef).
+parent.update_scaling_parameters(**kwargs)
+```
 
-<a id="update\_service\_access\_policies"></a>
+1. See [:material-code-braces: UpdateScalingParametersRequestRequestTypeDef](./type_defs.md#updatescalingparametersrequestrequesttypedef) 
 
-### update_service_access_policies
+### update\_service\_access\_policies
 
 Configures the access rules that control access to the domain's document and
 search endpoints.
 
-Type annotations for
-`boto3.client("cloudsearch").update_service_access_policies` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearch").update_service_access_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies)
 
-Boto3 documentation:
-[CloudSearch.Client.update_service_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.update_service_access_policies)
+```python title="Method definition"
+def update_service_access_policies(
+    self,
+    *,
+    DomainName: str,
+    AccessPolicies: str,
+) -> UpdateServiceAccessPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceAccessPoliciesRequestRequestTypeDef](./type_defs.md#updateserviceaccesspoliciesrequestrequesttypedef).
+1. See [:material-code-braces: UpdateServiceAccessPoliciesResponseTypeDef](./type_defs.md#updateserviceaccesspoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `AccessPolicies`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceAccessPoliciesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "AccessPolicies": ...,
+}
 
-Returns
-[UpdateServiceAccessPoliciesResponseTypeDef](./type_defs.md#updateserviceaccesspoliciesresponsetypedef).
+parent.update_service_access_policies(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateServiceAccessPoliciesRequestRequestTypeDef](./type_defs.md#updateserviceaccesspoliciesrequestrequesttypedef) 
+
+
+
+

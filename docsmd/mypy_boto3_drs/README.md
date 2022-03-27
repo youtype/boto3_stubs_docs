@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-drs-module"></a>
-
-# Type annotations for boto3 drs module
+#  drs module
 
 > [Index](../README.md) > drs
 
-Auto-generated documentation for
-[drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs)
-type annotations stubs module
-[mypy-boto3-drs](https://pypi.org/project/mypy-boto3-drs/).
+!!! note ""
 
-- [Type annotations for boto3 drs module](#type-annotations-for-boto3-drs-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [drsClient](#drsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs)
+    type annotations stubs module [mypy-boto3-drs](https://pypi.org/project/mypy-boto3-drs/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `drs`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[drs]'
 python -m pip install mypy-boto3-drs
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,89 +42,37 @@ python -m pip install mypy-boto3-drs
 python -m pip uninstall -y mypy-boto3-drs
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="drsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## drsClient
 
-Type annotations for `boto3.client("drs")` as [drsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("drs")` as [drsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_drs.client import drsClient
+
+def get_client() -> drsClient:
+    return Session().cleint("drs")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_replication_configuration_template](./client.md#create_replication_configuration_template)
-- [delete_job](./client.md#delete_job)
-- [delete_recovery_instance](./client.md#delete_recovery_instance)
-- [delete_replication_configuration_template](./client.md#delete_replication_configuration_template)
-- [delete_source_server](./client.md#delete_source_server)
-- [describe_job_log_items](./client.md#describe_job_log_items)
-- [describe_jobs](./client.md#describe_jobs)
-- [describe_recovery_instances](./client.md#describe_recovery_instances)
-- [describe_recovery_snapshots](./client.md#describe_recovery_snapshots)
-- [describe_replication_configuration_templates](./client.md#describe_replication_configuration_templates)
-- [describe_source_servers](./client.md#describe_source_servers)
-- [disconnect_recovery_instance](./client.md#disconnect_recovery_instance)
-- [disconnect_source_server](./client.md#disconnect_source_server)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_failback_replication_configuration](./client.md#get_failback_replication_configuration)
-- [get_launch_configuration](./client.md#get_launch_configuration)
-- [get_paginator](./client.md#get_paginator)
-- [get_replication_configuration](./client.md#get_replication_configuration)
-- [initialize_service](./client.md#initialize_service)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [retry_data_replication](./client.md#retry_data_replication)
-- [start_failback_launch](./client.md#start_failback_launch)
-- [start_recovery](./client.md#start_recovery)
-- [stop_failback](./client.md#stop_failback)
-- [tag_resource](./client.md#tag_resource)
-- [terminate_recovery_instances](./client.md#terminate_recovery_instances)
-- [untag_resource](./client.md#untag_resource)
-- [update_failback_replication_configuration](./client.md#update_failback_replication_configuration)
-- [update_launch_configuration](./client.md#update_launch_configuration)
-- [update_replication_configuration](./client.md#update_replication_configuration)
-- [update_replication_configuration_template](./client.md#update_replication_configuration_template)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-drsClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- UninitializedAccountException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("drs").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("drs").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_drs.paginator import DescribeJobLogItemsPaginator, ...
+from mypy_boto3_drs.paginator import DescribeJobLogItemsPaginator
+
+def get_describe_job_log_items_paginator() -> DescribeJobLogItemsPaginator:
+    return Session().client("drs").get_paginator("describe_job_log_items"))
 ```
 
 - [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
@@ -156,16 +82,23 @@ from mypy_boto3_drs.paginator import DescribeJobLogItemsPaginator, ...
 - [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
 - [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_drs.literals import DataReplicationErrorStringType
 
-```python
-from mypy_boto3_drs.literals import DataReplicationErrorStringType, ...
+def get_value() -> DataReplicationErrorStringType:
+    return "AGENT_NOT_SEEN"
 ```
 
 - [DataReplicationErrorStringType](./literals.md#datareplicationerrorstringtype)
@@ -203,18 +136,22 @@ from mypy_boto3_drs.literals import DataReplicationErrorStringType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_drs.type_defs import CPUTypeDef
 
-```python
-from mypy_boto3_drs.type_defs import CPUTypeDef, ...
+def get_value() -> CPUTypeDef:
+    return {
+        "cores": ...,
+    }
 ```
 
 - [CPUTypeDef](./type_defs.md#cputypedef)
@@ -228,19 +165,25 @@ from mypy_boto3_drs.type_defs import CPUTypeDef, ...
 - [DeleteRecoveryInstanceRequestRequestTypeDef](./type_defs.md#deleterecoveryinstancerequestrequesttypedef)
 - [DeleteReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationtemplaterequestrequesttypedef)
 - [DeleteSourceServerRequestRequestTypeDef](./type_defs.md#deletesourceserverrequestrequesttypedef)
+- [DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef](./type_defs.md#describejoblogitemsrequestdescribejoblogitemspaginatetypedef)
 - [DescribeJobLogItemsRequestRequestTypeDef](./type_defs.md#describejoblogitemsrequestrequesttypedef)
 - [DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)
+- [DescribeJobsRequestDescribeJobsPaginateTypeDef](./type_defs.md#describejobsrequestdescribejobspaginatetypedef)
 - [DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef)
 - [DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef)
 - [DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef)
+- [DescribeRecoveryInstancesRequestDescribeRecoveryInstancesPaginateTypeDef](./type_defs.md#describerecoveryinstancesrequestdescriberecoveryinstancespaginatetypedef)
 - [DescribeRecoveryInstancesRequestFiltersTypeDef](./type_defs.md#describerecoveryinstancesrequestfilterstypedef)
 - [DescribeRecoveryInstancesRequestRequestTypeDef](./type_defs.md#describerecoveryinstancesrequestrequesttypedef)
 - [DescribeRecoveryInstancesResponseTypeDef](./type_defs.md#describerecoveryinstancesresponsetypedef)
+- [DescribeRecoverySnapshotsRequestDescribeRecoverySnapshotsPaginateTypeDef](./type_defs.md#describerecoverysnapshotsrequestdescriberecoverysnapshotspaginatetypedef)
 - [DescribeRecoverySnapshotsRequestFiltersTypeDef](./type_defs.md#describerecoverysnapshotsrequestfilterstypedef)
 - [DescribeRecoverySnapshotsRequestRequestTypeDef](./type_defs.md#describerecoverysnapshotsrequestrequesttypedef)
 - [DescribeRecoverySnapshotsResponseTypeDef](./type_defs.md#describerecoverysnapshotsresponsetypedef)
+- [DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestdescribereplicationconfigurationtemplatespaginatetypedef)
 - [DescribeReplicationConfigurationTemplatesRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestrequesttypedef)
 - [DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef)
+- [DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef](./type_defs.md#describesourceserversrequestdescribesourceserverspaginatetypedef)
 - [DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef)
 - [DescribeSourceServersRequestRequestTypeDef](./type_defs.md#describesourceserversrequestrequesttypedef)
 - [DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef)
@@ -300,3 +243,4 @@ from mypy_boto3_drs.type_defs import CPUTypeDef, ...
 - [UpdateLaunchConfigurationRequestRequestTypeDef](./type_defs.md#updatelaunchconfigurationrequestrequesttypedef)
 - [UpdateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationrequestrequesttypedef)
 - [UpdateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequestrequesttypedef)
+

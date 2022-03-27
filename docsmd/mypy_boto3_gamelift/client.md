@@ -1,127 +1,18 @@
-<a id="gameliftclient-for-boto3-gamelift-module"></a>
-
-# GameLiftClient for boto3 GameLift module
+# GameLiftClient
 
 > [Index](../README.md) > [GameLift](./README.md) > GameLiftClient
 
-Auto-generated documentation for
-[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
-type annotations stubs module
-[mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+!!! note ""
 
-- [GameLiftClient for boto3 GameLift module](#gameliftclient-for-boto3-gamelift-module)
-  - [GameLiftClient](#gameliftclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_match](#accept_match)
-    - [can_paginate](#can_paginate)
-    - [claim_game_server](#claim_game_server)
-    - [create_alias](#create_alias)
-    - [create_build](#create_build)
-    - [create_fleet](#create_fleet)
-    - [create_fleet_locations](#create_fleet_locations)
-    - [create_game_server_group](#create_game_server_group)
-    - [create_game_session](#create_game_session)
-    - [create_game_session_queue](#create_game_session_queue)
-    - [create_matchmaking_configuration](#create_matchmaking_configuration)
-    - [create_matchmaking_rule_set](#create_matchmaking_rule_set)
-    - [create_player_session](#create_player_session)
-    - [create_player_sessions](#create_player_sessions)
-    - [create_script](#create_script)
-    - [create_vpc_peering_authorization](#create_vpc_peering_authorization)
-    - [create_vpc_peering_connection](#create_vpc_peering_connection)
-    - [delete_alias](#delete_alias)
-    - [delete_build](#delete_build)
-    - [delete_fleet](#delete_fleet)
-    - [delete_fleet_locations](#delete_fleet_locations)
-    - [delete_game_server_group](#delete_game_server_group)
-    - [delete_game_session_queue](#delete_game_session_queue)
-    - [delete_matchmaking_configuration](#delete_matchmaking_configuration)
-    - [delete_matchmaking_rule_set](#delete_matchmaking_rule_set)
-    - [delete_scaling_policy](#delete_scaling_policy)
-    - [delete_script](#delete_script)
-    - [delete_vpc_peering_authorization](#delete_vpc_peering_authorization)
-    - [delete_vpc_peering_connection](#delete_vpc_peering_connection)
-    - [deregister_game_server](#deregister_game_server)
-    - [describe_alias](#describe_alias)
-    - [describe_build](#describe_build)
-    - [describe_ec2_instance_limits](#describe_ec2_instance_limits)
-    - [describe_fleet_attributes](#describe_fleet_attributes)
-    - [describe_fleet_capacity](#describe_fleet_capacity)
-    - [describe_fleet_events](#describe_fleet_events)
-    - [describe_fleet_location_attributes](#describe_fleet_location_attributes)
-    - [describe_fleet_location_capacity](#describe_fleet_location_capacity)
-    - [describe_fleet_location_utilization](#describe_fleet_location_utilization)
-    - [describe_fleet_port_settings](#describe_fleet_port_settings)
-    - [describe_fleet_utilization](#describe_fleet_utilization)
-    - [describe_game_server](#describe_game_server)
-    - [describe_game_server_group](#describe_game_server_group)
-    - [describe_game_server_instances](#describe_game_server_instances)
-    - [describe_game_session_details](#describe_game_session_details)
-    - [describe_game_session_placement](#describe_game_session_placement)
-    - [describe_game_session_queues](#describe_game_session_queues)
-    - [describe_game_sessions](#describe_game_sessions)
-    - [describe_instances](#describe_instances)
-    - [describe_matchmaking](#describe_matchmaking)
-    - [describe_matchmaking_configurations](#describe_matchmaking_configurations)
-    - [describe_matchmaking_rule_sets](#describe_matchmaking_rule_sets)
-    - [describe_player_sessions](#describe_player_sessions)
-    - [describe_runtime_configuration](#describe_runtime_configuration)
-    - [describe_scaling_policies](#describe_scaling_policies)
-    - [describe_script](#describe_script)
-    - [describe_vpc_peering_authorizations](#describe_vpc_peering_authorizations)
-    - [describe_vpc_peering_connections](#describe_vpc_peering_connections)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_game_session_log_url](#get_game_session_log_url)
-    - [get_instance_access](#get_instance_access)
-    - [list_aliases](#list_aliases)
-    - [list_builds](#list_builds)
-    - [list_fleets](#list_fleets)
-    - [list_game_server_groups](#list_game_server_groups)
-    - [list_game_servers](#list_game_servers)
-    - [list_scripts](#list_scripts)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_scaling_policy](#put_scaling_policy)
-    - [register_game_server](#register_game_server)
-    - [request_upload_credentials](#request_upload_credentials)
-    - [resolve_alias](#resolve_alias)
-    - [resume_game_server_group](#resume_game_server_group)
-    - [search_game_sessions](#search_game_sessions)
-    - [start_fleet_actions](#start_fleet_actions)
-    - [start_game_session_placement](#start_game_session_placement)
-    - [start_match_backfill](#start_match_backfill)
-    - [start_matchmaking](#start_matchmaking)
-    - [stop_fleet_actions](#stop_fleet_actions)
-    - [stop_game_session_placement](#stop_game_session_placement)
-    - [stop_matchmaking](#stop_matchmaking)
-    - [suspend_game_server_group](#suspend_game_server_group)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_alias](#update_alias)
-    - [update_build](#update_build)
-    - [update_fleet_attributes](#update_fleet_attributes)
-    - [update_fleet_capacity](#update_fleet_capacity)
-    - [update_fleet_port_settings](#update_fleet_port_settings)
-    - [update_game_server](#update_game_server)
-    - [update_game_server_group](#update_game_server_group)
-    - [update_game_session](#update_game_session)
-    - [update_game_session_queue](#update_game_session_queue)
-    - [update_matchmaking_configuration](#update_matchmaking_configuration)
-    - [update_runtime_configuration](#update_runtime_configuration)
-    - [update_script](#update_script)
-    - [validate_matchmaking_rule_set](#validate_matchmaking_rule_set)
-    - [get_paginator](#get_paginator)
-
-<a id="gameliftclient"></a>
+    Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+    type annotations stubs module [mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 ## GameLiftClient
 
-Type annotations for `boto3.client("gamelift")`
+Type annotations and code completion for `#!python boto3.client("gamelift")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_gamelift.client import GameLiftClient
 
@@ -129,2492 +20,3257 @@ def get_gamelift_client() -> GameLiftClient:
     return Session().client("gamelift")
 ```
 
-Boto3 documentation:
-[GameLift.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("gamelift").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("gamelift")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.FleetCapacityExceededException,
+    client.GameSessionFullException,
+    client.IdempotentParameterMismatchException,
+    client.InternalServiceException,
+    client.InvalidFleetStatusException,
+    client.InvalidGameSessionStatusException,
+    client.InvalidRequestException,
+    client.LimitExceededException,
+    client.NotFoundException,
+    client.OutOfCapacityException,
+    client.TaggingFailedException,
+    client.TerminalRoutingStrategyException,
+    client.UnauthorizedException,
+    client.UnsupportedRegionException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_gamelift.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.FleetCapacityExceededException`
-- `Exceptions.GameSessionFullException`
-- `Exceptions.IdempotentParameterMismatchException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidFleetStatusException`
-- `Exceptions.InvalidGameSessionStatusException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-- `Exceptions.OutOfCapacityException`
-- `Exceptions.TaggingFailedException`
-- `Exceptions.TerminalRoutingStrategyException`
-- `Exceptions.UnauthorizedException`
-- `Exceptions.UnsupportedRegionException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-GameLiftClient exceptions.
-
-Type annotations for `boto3.client("gamelift").exceptions` method.
-
-Boto3 documentation:
-[GameLift.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_match"></a>
-
-### accept_match
+### accept\_match
 
 Registers a player's acceptance or rejection of a proposed FlexMatch match.
 
-Type annotations for `boto3.client("gamelift").accept_match` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").accept_match` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.accept_match)
 
-Boto3 documentation:
-[GameLift.Client.accept_match](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.accept_match)
+```python title="Method definition"
+def accept_match(
+    self,
+    *,
+    TicketId: str,
+    PlayerIds: Sequence[str],
+    AcceptanceType: AcceptanceTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AcceptMatchInputRequestTypeDef](./type_defs.md#acceptmatchinputrequesttypedef).
+1. See [:material-code-brackets: AcceptanceTypeType](./literals.md#acceptancetypetype) 
 
-Keyword-only arguments:
 
-- `TicketId`: `str` *(required)*
-- `PlayerIds`: `Sequence`\[`str`\] *(required)*
-- `AcceptanceType`: [AcceptanceTypeType](./literals.md#acceptancetypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptMatchInputRequestTypeDef = {  # (1)
+    "TicketId": ...,
+    "PlayerIds": ...,
+    "AcceptanceType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.accept_match(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AcceptMatchInputRequestTypeDef](./type_defs.md#acceptmatchinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("gamelift").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.can_paginate)
 
-Boto3 documentation:
-[GameLift.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="claim\_game\_server"></a>
-
-### claim_game_server
+### claim\_game\_server
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Locates an available game server and temporarily reserves it to host
 gameplay and players.
 
-Type annotations for `boto3.client("gamelift").claim_game_server` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").claim_game_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.claim_game_server)
 
-Boto3 documentation:
-[GameLift.Client.claim_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.claim_game_server)
+```python title="Method definition"
+def claim_game_server(
+    self,
+    *,
+    GameServerGroupName: str,
+    GameServerId: str = ...,
+    GameServerData: str = ...,
+) -> ClaimGameServerOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ClaimGameServerInputRequestTypeDef](./type_defs.md#claimgameserverinputrequesttypedef).
+1. See [:material-code-braces: ClaimGameServerOutputTypeDef](./type_defs.md#claimgameserveroutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `GameServerId`: `str`
-- `GameServerData`: `str`
+```python title="Usage example with kwargs"
+kwargs: ClaimGameServerInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+}
 
-Returns
-[ClaimGameServerOutputTypeDef](./type_defs.md#claimgameserveroutputtypedef).
+parent.claim_game_server(**kwargs)
+```
 
-<a id="create\_alias"></a>
+1. See [:material-code-braces: ClaimGameServerInputRequestTypeDef](./type_defs.md#claimgameserverinputrequesttypedef) 
 
-### create_alias
+### create\_alias
 
 Creates an alias for a fleet.
 
-Type annotations for `boto3.client("gamelift").create_alias` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_alias)
 
-Boto3 documentation:
-[GameLift.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_alias)
+```python title="Method definition"
+def create_alias(
+    self,
+    *,
+    Name: str,
+    RoutingStrategy: RoutingStrategyTypeDef,  # (1)
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateAliasOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAliasInputRequestTypeDef](./type_defs.md#createaliasinputrequesttypedef).
+1. See [:material-code-braces: RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateAliasOutputTypeDef](./type_defs.md#createaliasoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RoutingStrategy`:
-  [RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef) *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAliasInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RoutingStrategy": ...,
+}
 
-Returns [CreateAliasOutputTypeDef](./type_defs.md#createaliasoutputtypedef).
+parent.create_alias(**kwargs)
+```
 
-<a id="create\_build"></a>
+1. See [:material-code-braces: CreateAliasInputRequestTypeDef](./type_defs.md#createaliasinputrequesttypedef) 
 
-### create_build
+### create\_build
 
 Creates a new Amazon Web Services build resource for your game server binary
 files.
 
-Type annotations for `boto3.client("gamelift").create_build` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_build` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_build)
 
-Boto3 documentation:
-[GameLift.Client.create_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_build)
+```python title="Method definition"
+def create_build(
+    self,
+    *,
+    Name: str = ...,
+    Version: str = ...,
+    StorageLocation: S3LocationTypeDef = ...,  # (1)
+    OperatingSystem: OperatingSystemType = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateBuildOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateBuildInputRequestTypeDef](./type_defs.md#createbuildinputrequesttypedef).
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateBuildOutputTypeDef](./type_defs.md#createbuildoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str`
-- `Version`: `str`
-- `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateBuildInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [CreateBuildOutputTypeDef](./type_defs.md#createbuildoutputtypedef).
+parent.create_build(**kwargs)
+```
 
-<a id="create\_fleet"></a>
+1. See [:material-code-braces: CreateBuildInputRequestTypeDef](./type_defs.md#createbuildinputrequesttypedef) 
 
-### create_fleet
+### create\_fleet
 
 Creates a fleet of Amazon Elastic Compute Cloud (Amazon Elastic Compute Cloud)
 instances to host your custom game server or Realtime Servers.
 
-Type annotations for `boto3.client("gamelift").create_fleet` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet)
 
-Boto3 documentation:
-[GameLift.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet)
+```python title="Method definition"
+def create_fleet(
+    self,
+    *,
+    Name: str,
+    EC2InstanceType: EC2InstanceTypeType,  # (1)
+    Description: str = ...,
+    BuildId: str = ...,
+    ScriptId: str = ...,
+    ServerLaunchPath: str = ...,
+    ServerLaunchParameters: str = ...,
+    LogPaths: Sequence[str] = ...,
+    EC2InboundPermissions: Sequence[IpPermissionTypeDef] = ...,  # (2)
+    NewGameSessionProtectionPolicy: ProtectionPolicyType = ...,  # (3)
+    RuntimeConfiguration: RuntimeConfigurationTypeDef = ...,  # (4)
+    ResourceCreationLimitPolicy: ResourceCreationLimitPolicyTypeDef = ...,  # (5)
+    MetricGroups: Sequence[str] = ...,
+    PeerVpcAwsAccountId: str = ...,
+    PeerVpcId: str = ...,
+    FleetType: FleetTypeType = ...,  # (6)
+    InstanceRoleArn: str = ...,
+    CertificateConfiguration: CertificateConfigurationTypeDef = ...,  # (7)
+    Locations: Sequence[LocationConfigurationTypeDef] = ...,  # (8)
+    Tags: Sequence[TagTypeDef] = ...,  # (9)
+) -> CreateFleetOutputTypeDef:  # (10)
+    ...
+```
 
-Arguments mapping described in
-[CreateFleetInputRequestTypeDef](./type_defs.md#createfleetinputrequesttypedef).
+1. See [:material-code-brackets: EC2InstanceTypeType](./literals.md#ec2instancetypetype) 
+2. See [:material-code-braces: IpPermissionTypeDef](./type_defs.md#ippermissiontypedef) 
+3. See [:material-code-brackets: ProtectionPolicyType](./literals.md#protectionpolicytype) 
+4. See [:material-code-braces: RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef) 
+5. See [:material-code-braces: ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef) 
+6. See [:material-code-brackets: FleetTypeType](./literals.md#fleettypetype) 
+7. See [:material-code-braces: CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef) 
+8. See [:material-code-braces: LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef) 
+9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+10. See [:material-code-braces: CreateFleetOutputTypeDef](./type_defs.md#createfleetoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `EC2InstanceType`: [EC2InstanceTypeType](./literals.md#ec2instancetypetype)
-  *(required)*
-- `Description`: `str`
-- `BuildId`: `str`
-- `ScriptId`: `str`
-- `ServerLaunchPath`: `str`
-- `ServerLaunchParameters`: `str`
-- `LogPaths`: `Sequence`\[`str`\]
-- `EC2InboundPermissions`:
-  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `NewGameSessionProtectionPolicy`:
-  [ProtectionPolicyType](./literals.md#protectionpolicytype)
-- `RuntimeConfiguration`:
-  [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
-- `ResourceCreationLimitPolicy`:
-  [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
-- `MetricGroups`: `Sequence`\[`str`\]
-- `PeerVpcAwsAccountId`: `str`
-- `PeerVpcId`: `str`
-- `FleetType`: [FleetTypeType](./literals.md#fleettypetype)
-- `InstanceRoleArn`: `str`
-- `CertificateConfiguration`:
-  [CertificateConfigurationTypeDef](./type_defs.md#certificateconfigurationtypedef)
-- `Locations`:
-  `Sequence`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateFleetInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "EC2InstanceType": ...,
+}
 
-Returns [CreateFleetOutputTypeDef](./type_defs.md#createfleetoutputtypedef).
+parent.create_fleet(**kwargs)
+```
 
-<a id="create\_fleet\_locations"></a>
+1. See [:material-code-braces: CreateFleetInputRequestTypeDef](./type_defs.md#createfleetinputrequesttypedef) 
 
-### create_fleet_locations
+### create\_fleet\_locations
 
 Adds remote locations to a fleet and begins populating the new locations with
 EC2 instances.
 
-Type annotations for `boto3.client("gamelift").create_fleet_locations` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_fleet_locations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet_locations)
 
-Boto3 documentation:
-[GameLift.Client.create_fleet_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_fleet_locations)
+```python title="Method definition"
+def create_fleet_locations(
+    self,
+    *,
+    FleetId: str,
+    Locations: Sequence[LocationConfigurationTypeDef],  # (1)
+) -> CreateFleetLocationsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFleetLocationsInputRequestTypeDef](./type_defs.md#createfleetlocationsinputrequesttypedef).
+1. See [:material-code-braces: LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef) 
+2. See [:material-code-braces: CreateFleetLocationsOutputTypeDef](./type_defs.md#createfleetlocationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `Locations`:
-  `Sequence`\[[LocationConfigurationTypeDef](./type_defs.md#locationconfigurationtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateFleetLocationsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "Locations": ...,
+}
 
-Returns
-[CreateFleetLocationsOutputTypeDef](./type_defs.md#createfleetlocationsoutputtypedef).
+parent.create_fleet_locations(**kwargs)
+```
 
-<a id="create\_game\_server\_group"></a>
+1. See [:material-code-braces: CreateFleetLocationsInputRequestTypeDef](./type_defs.md#createfleetlocationsinputrequesttypedef) 
 
-### create_game_server_group
+### create\_game\_server\_group
 
 **This operation is used with the GameLift FleetIQ solution and game server
-groups.** Creates a GameLift FleetIQ game server group for managing game
-hosting on a collection of Amazon Elastic Compute Cloud instances for game
-hosting.
+groups.** Creates a GameLift FleetIQ game server group for managing game hosting
+on a collection of Amazon Elastic Compute Cloud instances for game hosting.
 
-Type annotations for `boto3.client("gamelift").create_game_server_group`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_game_server_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_server_group)
 
-Boto3 documentation:
-[GameLift.Client.create_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_server_group)
+```python title="Method definition"
+def create_game_server_group(
+    self,
+    *,
+    GameServerGroupName: str,
+    RoleArn: str,
+    MinSize: int,
+    MaxSize: int,
+    LaunchTemplate: LaunchTemplateSpecificationTypeDef,  # (1)
+    InstanceDefinitions: Sequence[InstanceDefinitionTypeDef],  # (2)
+    AutoScalingPolicy: GameServerGroupAutoScalingPolicyTypeDef = ...,  # (3)
+    BalancingStrategy: BalancingStrategyType = ...,  # (4)
+    GameServerProtectionPolicy: GameServerProtectionPolicyType = ...,  # (5)
+    VpcSubnets: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (6)
+) -> CreateGameServerGroupOutputTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateGameServerGroupInputRequestTypeDef](./type_defs.md#creategameservergroupinputrequesttypedef).
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+2. See [:material-code-braces: InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef) 
+3. See [:material-code-braces: GameServerGroupAutoScalingPolicyTypeDef](./type_defs.md#gameservergroupautoscalingpolicytypedef) 
+4. See [:material-code-brackets: BalancingStrategyType](./literals.md#balancingstrategytype) 
+5. See [:material-code-brackets: GameServerProtectionPolicyType](./literals.md#gameserverprotectionpolicytype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: CreateGameServerGroupOutputTypeDef](./type_defs.md#creategameservergroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `MinSize`: `int` *(required)*
-- `MaxSize`: `int` *(required)*
-- `LaunchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
-  *(required)*
-- `InstanceDefinitions`:
-  `Sequence`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
-  *(required)*
-- `AutoScalingPolicy`:
-  [GameServerGroupAutoScalingPolicyTypeDef](./type_defs.md#gameservergroupautoscalingpolicytypedef)
-- `BalancingStrategy`:
-  [BalancingStrategyType](./literals.md#balancingstrategytype)
-- `GameServerProtectionPolicy`:
-  [GameServerProtectionPolicyType](./literals.md#gameserverprotectionpolicytype)
-- `VpcSubnets`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateGameServerGroupInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+    "RoleArn": ...,
+    "MinSize": ...,
+    "MaxSize": ...,
+    "LaunchTemplate": ...,
+    "InstanceDefinitions": ...,
+}
 
-Returns
-[CreateGameServerGroupOutputTypeDef](./type_defs.md#creategameservergroupoutputtypedef).
+parent.create_game_server_group(**kwargs)
+```
 
-<a id="create\_game\_session"></a>
+1. See [:material-code-braces: CreateGameServerGroupInputRequestTypeDef](./type_defs.md#creategameservergroupinputrequesttypedef) 
 
-### create_game_session
+### create\_game\_session
 
 Creates a multiplayer game session for players in a specific fleet location.
 
-Type annotations for `boto3.client("gamelift").create_game_session` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_game_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session)
 
-Boto3 documentation:
-[GameLift.Client.create_game_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session)
+```python title="Method definition"
+def create_game_session(
+    self,
+    *,
+    MaximumPlayerSessionCount: int,
+    FleetId: str = ...,
+    AliasId: str = ...,
+    Name: str = ...,
+    GameProperties: Sequence[GamePropertyTypeDef] = ...,  # (1)
+    CreatorId: str = ...,
+    GameSessionId: str = ...,
+    IdempotencyToken: str = ...,
+    GameSessionData: str = ...,
+    Location: str = ...,
+) -> CreateGameSessionOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateGameSessionInputRequestTypeDef](./type_defs.md#creategamesessioninputrequesttypedef).
+1. See [:material-code-braces: GamePropertyTypeDef](./type_defs.md#gamepropertytypedef) 
+2. See [:material-code-braces: CreateGameSessionOutputTypeDef](./type_defs.md#creategamesessionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaximumPlayerSessionCount`: `int` *(required)*
-- `FleetId`: `str`
-- `AliasId`: `str`
-- `Name`: `str`
-- `GameProperties`:
-  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
-- `CreatorId`: `str`
-- `GameSessionId`: `str`
-- `IdempotencyToken`: `str`
-- `GameSessionData`: `str`
-- `Location`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateGameSessionInputRequestTypeDef = {  # (1)
+    "MaximumPlayerSessionCount": ...,
+}
 
-Returns
-[CreateGameSessionOutputTypeDef](./type_defs.md#creategamesessionoutputtypedef).
+parent.create_game_session(**kwargs)
+```
 
-<a id="create\_game\_session\_queue"></a>
+1. See [:material-code-braces: CreateGameSessionInputRequestTypeDef](./type_defs.md#creategamesessioninputrequesttypedef) 
 
-### create_game_session_queue
+### create\_game\_session\_queue
 
 Creates a placement queue that processes requests for new game sessions.
 
-Type annotations for `boto3.client("gamelift").create_game_session_queue`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_game_session_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session_queue)
 
-Boto3 documentation:
-[GameLift.Client.create_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_game_session_queue)
+```python title="Method definition"
+def create_game_session_queue(
+    self,
+    *,
+    Name: str,
+    TimeoutInSeconds: int = ...,
+    PlayerLatencyPolicies: Sequence[PlayerLatencyPolicyTypeDef] = ...,  # (1)
+    Destinations: Sequence[GameSessionQueueDestinationTypeDef] = ...,  # (2)
+    FilterConfiguration: FilterConfigurationTypeDef = ...,  # (3)
+    PriorityConfiguration: PriorityConfigurationTypeDef = ...,  # (4)
+    CustomEventData: str = ...,
+    NotificationTarget: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+) -> CreateGameSessionQueueOutputTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateGameSessionQueueInputRequestTypeDef](./type_defs.md#creategamesessionqueueinputrequesttypedef).
+1. See [:material-code-braces: PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef) 
+2. See [:material-code-braces: GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef) 
+3. See [:material-code-braces: FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef) 
+4. See [:material-code-braces: PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: CreateGameSessionQueueOutputTypeDef](./type_defs.md#creategamesessionqueueoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `TimeoutInSeconds`: `int`
-- `PlayerLatencyPolicies`:
-  `Sequence`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
-- `Destinations`:
-  `Sequence`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
-- `FilterConfiguration`:
-  [FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef)
-- `PriorityConfiguration`:
-  [PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef)
-- `CustomEventData`: `str`
-- `NotificationTarget`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateGameSessionQueueInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateGameSessionQueueOutputTypeDef](./type_defs.md#creategamesessionqueueoutputtypedef).
+parent.create_game_session_queue(**kwargs)
+```
 
-<a id="create\_matchmaking\_configuration"></a>
+1. See [:material-code-braces: CreateGameSessionQueueInputRequestTypeDef](./type_defs.md#creategamesessionqueueinputrequesttypedef) 
 
-### create_matchmaking_configuration
+### create\_matchmaking\_configuration
 
 Defines a new matchmaking configuration for use with FlexMatch.
 
-Type annotations for
-`boto3.client("gamelift").create_matchmaking_configuration` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_matchmaking_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_configuration)
 
-Boto3 documentation:
-[GameLift.Client.create_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_configuration)
+```python title="Method definition"
+def create_matchmaking_configuration(
+    self,
+    *,
+    Name: str,
+    RequestTimeoutSeconds: int,
+    AcceptanceRequired: bool,
+    RuleSetName: str,
+    Description: str = ...,
+    GameSessionQueueArns: Sequence[str] = ...,
+    AcceptanceTimeoutSeconds: int = ...,
+    NotificationTarget: str = ...,
+    AdditionalPlayerCount: int = ...,
+    CustomEventData: str = ...,
+    GameProperties: Sequence[GamePropertyTypeDef] = ...,  # (1)
+    GameSessionData: str = ...,
+    BackfillMode: BackfillModeType = ...,  # (2)
+    FlexMatchMode: FlexMatchModeType = ...,  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateMatchmakingConfigurationOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateMatchmakingConfigurationInputRequestTypeDef](./type_defs.md#creatematchmakingconfigurationinputrequesttypedef).
+1. See [:material-code-braces: GamePropertyTypeDef](./type_defs.md#gamepropertytypedef) 
+2. See [:material-code-brackets: BackfillModeType](./literals.md#backfillmodetype) 
+3. See [:material-code-brackets: FlexMatchModeType](./literals.md#flexmatchmodetype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateMatchmakingConfigurationOutputTypeDef](./type_defs.md#creatematchmakingconfigurationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RequestTimeoutSeconds`: `int` *(required)*
-- `AcceptanceRequired`: `bool` *(required)*
-- `RuleSetName`: `str` *(required)*
-- `Description`: `str`
-- `GameSessionQueueArns`: `Sequence`\[`str`\]
-- `AcceptanceTimeoutSeconds`: `int`
-- `NotificationTarget`: `str`
-- `AdditionalPlayerCount`: `int`
-- `CustomEventData`: `str`
-- `GameProperties`:
-  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
-- `GameSessionData`: `str`
-- `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
-- `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateMatchmakingConfigurationInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RequestTimeoutSeconds": ...,
+    "AcceptanceRequired": ...,
+    "RuleSetName": ...,
+}
 
-Returns
-[CreateMatchmakingConfigurationOutputTypeDef](./type_defs.md#creatematchmakingconfigurationoutputtypedef).
+parent.create_matchmaking_configuration(**kwargs)
+```
 
-<a id="create\_matchmaking\_rule\_set"></a>
+1. See [:material-code-braces: CreateMatchmakingConfigurationInputRequestTypeDef](./type_defs.md#creatematchmakingconfigurationinputrequesttypedef) 
 
-### create_matchmaking_rule_set
+### create\_matchmaking\_rule\_set
 
 Creates a new rule set for FlexMatch matchmaking.
 
-Type annotations for `boto3.client("gamelift").create_matchmaking_rule_set`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_matchmaking_rule_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_rule_set)
 
-Boto3 documentation:
-[GameLift.Client.create_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_matchmaking_rule_set)
+```python title="Method definition"
+def create_matchmaking_rule_set(
+    self,
+    *,
+    Name: str,
+    RuleSetBody: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateMatchmakingRuleSetOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMatchmakingRuleSetInputRequestTypeDef](./type_defs.md#creatematchmakingrulesetinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateMatchmakingRuleSetOutputTypeDef](./type_defs.md#creatematchmakingrulesetoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RuleSetBody`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateMatchmakingRuleSetInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RuleSetBody": ...,
+}
 
-Returns
-[CreateMatchmakingRuleSetOutputTypeDef](./type_defs.md#creatematchmakingrulesetoutputtypedef).
+parent.create_matchmaking_rule_set(**kwargs)
+```
 
-<a id="create\_player\_session"></a>
+1. See [:material-code-braces: CreateMatchmakingRuleSetInputRequestTypeDef](./type_defs.md#creatematchmakingrulesetinputrequesttypedef) 
 
-### create_player_session
+### create\_player\_session
 
 Reserves an open player slot in a game session for a player.
 
-Type annotations for `boto3.client("gamelift").create_player_session` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_player_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_session)
 
-Boto3 documentation:
-[GameLift.Client.create_player_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_session)
+```python title="Method definition"
+def create_player_session(
+    self,
+    *,
+    GameSessionId: str,
+    PlayerId: str,
+    PlayerData: str = ...,
+) -> CreatePlayerSessionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePlayerSessionInputRequestTypeDef](./type_defs.md#createplayersessioninputrequesttypedef).
+1. See [:material-code-braces: CreatePlayerSessionOutputTypeDef](./type_defs.md#createplayersessionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameSessionId`: `str` *(required)*
-- `PlayerId`: `str` *(required)*
-- `PlayerData`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePlayerSessionInputRequestTypeDef = {  # (1)
+    "GameSessionId": ...,
+    "PlayerId": ...,
+}
 
-Returns
-[CreatePlayerSessionOutputTypeDef](./type_defs.md#createplayersessionoutputtypedef).
+parent.create_player_session(**kwargs)
+```
 
-<a id="create\_player\_sessions"></a>
+1. See [:material-code-braces: CreatePlayerSessionInputRequestTypeDef](./type_defs.md#createplayersessioninputrequesttypedef) 
 
-### create_player_sessions
+### create\_player\_sessions
 
 Reserves open slots in a game session for a group of players.
 
-Type annotations for `boto3.client("gamelift").create_player_sessions` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_player_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_sessions)
 
-Boto3 documentation:
-[GameLift.Client.create_player_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_player_sessions)
+```python title="Method definition"
+def create_player_sessions(
+    self,
+    *,
+    GameSessionId: str,
+    PlayerIds: Sequence[str],
+    PlayerDataMap: Mapping[str, str] = ...,
+) -> CreatePlayerSessionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePlayerSessionsInputRequestTypeDef](./type_defs.md#createplayersessionsinputrequesttypedef).
+1. See [:material-code-braces: CreatePlayerSessionsOutputTypeDef](./type_defs.md#createplayersessionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameSessionId`: `str` *(required)*
-- `PlayerIds`: `Sequence`\[`str`\] *(required)*
-- `PlayerDataMap`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreatePlayerSessionsInputRequestTypeDef = {  # (1)
+    "GameSessionId": ...,
+    "PlayerIds": ...,
+}
 
-Returns
-[CreatePlayerSessionsOutputTypeDef](./type_defs.md#createplayersessionsoutputtypedef).
+parent.create_player_sessions(**kwargs)
+```
 
-<a id="create\_script"></a>
+1. See [:material-code-braces: CreatePlayerSessionsInputRequestTypeDef](./type_defs.md#createplayersessionsinputrequesttypedef) 
 
-### create_script
+### create\_script
 
 Creates a new script record for your Realtime Servers script.
 
-Type annotations for `boto3.client("gamelift").create_script` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_script` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_script)
 
-Boto3 documentation:
-[GameLift.Client.create_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_script)
+```python title="Method definition"
+def create_script(
+    self,
+    *,
+    Name: str = ...,
+    Version: str = ...,
+    StorageLocation: S3LocationTypeDef = ...,  # (1)
+    ZipFile: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateScriptOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateScriptInputRequestTypeDef](./type_defs.md#createscriptinputrequesttypedef).
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateScriptOutputTypeDef](./type_defs.md#createscriptoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str`
-- `Version`: `str`
-- `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateScriptInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [CreateScriptOutputTypeDef](./type_defs.md#createscriptoutputtypedef).
+parent.create_script(**kwargs)
+```
 
-<a id="create\_vpc\_peering\_authorization"></a>
+1. See [:material-code-braces: CreateScriptInputRequestTypeDef](./type_defs.md#createscriptinputrequesttypedef) 
 
-### create_vpc_peering_authorization
+### create\_vpc\_peering\_authorization
 
-Requests authorization to create or delete a peer connection between the VPC
-for your Amazon Web Services fleet and a virtual private cloud (VPC) in your
-Amazon Web Services account.
+Requests authorization to create or delete a peer connection between the VPC for
+your Amazon Web Services fleet and a virtual private cloud (VPC) in your Amazon
+Web Services account.
 
-Type annotations for
-`boto3.client("gamelift").create_vpc_peering_authorization` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_vpc_peering_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_authorization)
 
-Boto3 documentation:
-[GameLift.Client.create_vpc_peering_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_authorization)
+```python title="Method definition"
+def create_vpc_peering_authorization(
+    self,
+    *,
+    GameLiftAwsAccountId: str,
+    PeerVpcId: str,
+) -> CreateVpcPeeringAuthorizationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateVpcPeeringAuthorizationInputRequestTypeDef](./type_defs.md#createvpcpeeringauthorizationinputrequesttypedef).
+1. See [:material-code-braces: CreateVpcPeeringAuthorizationOutputTypeDef](./type_defs.md#createvpcpeeringauthorizationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameLiftAwsAccountId`: `str` *(required)*
-- `PeerVpcId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateVpcPeeringAuthorizationInputRequestTypeDef = {  # (1)
+    "GameLiftAwsAccountId": ...,
+    "PeerVpcId": ...,
+}
 
-Returns
-[CreateVpcPeeringAuthorizationOutputTypeDef](./type_defs.md#createvpcpeeringauthorizationoutputtypedef).
+parent.create_vpc_peering_authorization(**kwargs)
+```
 
-<a id="create\_vpc\_peering\_connection"></a>
+1. See [:material-code-braces: CreateVpcPeeringAuthorizationInputRequestTypeDef](./type_defs.md#createvpcpeeringauthorizationinputrequesttypedef) 
 
-### create_vpc_peering_connection
+### create\_vpc\_peering\_connection
 
-Establishes a VPC peering connection between a virtual private cloud (VPC) in
-an Amazon Web Services account with the VPC for your Amazon Web Services fleet.
+Establishes a VPC peering connection between a virtual private cloud (VPC) in an
+Amazon Web Services account with the VPC for your Amazon Web Services fleet.
 
-Type annotations for `boto3.client("gamelift").create_vpc_peering_connection`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").create_vpc_peering_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_connection)
 
-Boto3 documentation:
-[GameLift.Client.create_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.create_vpc_peering_connection)
+```python title="Method definition"
+def create_vpc_peering_connection(
+    self,
+    *,
+    FleetId: str,
+    PeerVpcAwsAccountId: str,
+    PeerVpcId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateVpcPeeringConnectionInputRequestTypeDef](./type_defs.md#createvpcpeeringconnectioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `PeerVpcAwsAccountId`: `str` *(required)*
-- `PeerVpcId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateVpcPeeringConnectionInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "PeerVpcAwsAccountId": ...,
+    "PeerVpcId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_vpc_peering_connection(**kwargs)
+```
 
-<a id="delete\_alias"></a>
+1. See [:material-code-braces: CreateVpcPeeringConnectionInputRequestTypeDef](./type_defs.md#createvpcpeeringconnectioninputrequesttypedef) 
 
-### delete_alias
+### delete\_alias
 
 Deletes an alias.
 
-Type annotations for `boto3.client("gamelift").delete_alias` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_alias)
 
-Boto3 documentation:
-[GameLift.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_alias)
+```python title="Method definition"
+def delete_alias(
+    self,
+    *,
+    AliasId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAliasInputRequestTypeDef](./type_defs.md#deletealiasinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `AliasId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAliasInputRequestTypeDef = {  # (1)
+    "AliasId": ...,
+}
 
-<a id="delete\_build"></a>
+parent.delete_alias(**kwargs)
+```
 
-### delete_build
+1. See [:material-code-braces: DeleteAliasInputRequestTypeDef](./type_defs.md#deletealiasinputrequesttypedef) 
+
+### delete\_build
 
 Deletes a build.
 
-Type annotations for `boto3.client("gamelift").delete_build` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_build` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_build)
 
-Boto3 documentation:
-[GameLift.Client.delete_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_build)
+```python title="Method definition"
+def delete_build(
+    self,
+    *,
+    BuildId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBuildInputRequestTypeDef](./type_defs.md#deletebuildinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BuildId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBuildInputRequestTypeDef = {  # (1)
+    "BuildId": ...,
+}
 
-<a id="delete\_fleet"></a>
+parent.delete_build(**kwargs)
+```
 
-### delete_fleet
+1. See [:material-code-braces: DeleteBuildInputRequestTypeDef](./type_defs.md#deletebuildinputrequesttypedef) 
+
+### delete\_fleet
 
 Deletes all resources and information related a fleet.
 
-Type annotations for `boto3.client("gamelift").delete_fleet` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet)
 
-Boto3 documentation:
-[GameLift.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet)
+```python title="Method definition"
+def delete_fleet(
+    self,
+    *,
+    FleetId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFleetInputRequestTypeDef](./type_defs.md#deletefleetinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFleetInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-<a id="delete\_fleet\_locations"></a>
+parent.delete_fleet(**kwargs)
+```
 
-### delete_fleet_locations
+1. See [:material-code-braces: DeleteFleetInputRequestTypeDef](./type_defs.md#deletefleetinputrequesttypedef) 
+
+### delete\_fleet\_locations
 
 Removes locations from a multi-location fleet.
 
-Type annotations for `boto3.client("gamelift").delete_fleet_locations` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_fleet_locations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet_locations)
 
-Boto3 documentation:
-[GameLift.Client.delete_fleet_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_fleet_locations)
+```python title="Method definition"
+def delete_fleet_locations(
+    self,
+    *,
+    FleetId: str,
+    Locations: Sequence[str],
+) -> DeleteFleetLocationsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFleetLocationsInputRequestTypeDef](./type_defs.md#deletefleetlocationsinputrequesttypedef).
+1. See [:material-code-braces: DeleteFleetLocationsOutputTypeDef](./type_defs.md#deletefleetlocationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `Locations`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFleetLocationsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "Locations": ...,
+}
 
-Returns
-[DeleteFleetLocationsOutputTypeDef](./type_defs.md#deletefleetlocationsoutputtypedef).
+parent.delete_fleet_locations(**kwargs)
+```
 
-<a id="delete\_game\_server\_group"></a>
+1. See [:material-code-braces: DeleteFleetLocationsInputRequestTypeDef](./type_defs.md#deletefleetlocationsinputrequesttypedef) 
 
-### delete_game_server_group
+### delete\_game\_server\_group
 
 **This operation is used with the GameLift FleetIQ solution and game server
-groups.** Terminates a game server group and permanently deletes the game
-server group record.
+groups.** Terminates a game server group and permanently deletes the game server
+group record.
 
-Type annotations for `boto3.client("gamelift").delete_game_server_group`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_game_server_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_server_group)
 
-Boto3 documentation:
-[GameLift.Client.delete_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_server_group)
+```python title="Method definition"
+def delete_game_server_group(
+    self,
+    *,
+    GameServerGroupName: str,
+    DeleteOption: GameServerGroupDeleteOptionType = ...,  # (1)
+) -> DeleteGameServerGroupOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGameServerGroupInputRequestTypeDef](./type_defs.md#deletegameservergroupinputrequesttypedef).
+1. See [:material-code-brackets: GameServerGroupDeleteOptionType](./literals.md#gameservergroupdeleteoptiontype) 
+2. See [:material-code-braces: DeleteGameServerGroupOutputTypeDef](./type_defs.md#deletegameservergroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `DeleteOption`:
-  [GameServerGroupDeleteOptionType](./literals.md#gameservergroupdeleteoptiontype)
+```python title="Usage example with kwargs"
+kwargs: DeleteGameServerGroupInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+}
 
-Returns
-[DeleteGameServerGroupOutputTypeDef](./type_defs.md#deletegameservergroupoutputtypedef).
+parent.delete_game_server_group(**kwargs)
+```
 
-<a id="delete\_game\_session\_queue"></a>
+1. See [:material-code-braces: DeleteGameServerGroupInputRequestTypeDef](./type_defs.md#deletegameservergroupinputrequesttypedef) 
 
-### delete_game_session_queue
+### delete\_game\_session\_queue
 
 Deletes a game session queue.
 
-Type annotations for `boto3.client("gamelift").delete_game_session_queue`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_game_session_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_session_queue)
 
-Boto3 documentation:
-[GameLift.Client.delete_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_game_session_queue)
+```python title="Method definition"
+def delete_game_session_queue(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGameSessionQueueInputRequestTypeDef](./type_defs.md#deletegamesessionqueueinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGameSessionQueueInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_game_session_queue(**kwargs)
+```
 
-<a id="delete\_matchmaking\_configuration"></a>
+1. See [:material-code-braces: DeleteGameSessionQueueInputRequestTypeDef](./type_defs.md#deletegamesessionqueueinputrequesttypedef) 
 
-### delete_matchmaking_configuration
+### delete\_matchmaking\_configuration
 
 Permanently removes a FlexMatch matchmaking configuration.
 
-Type annotations for
-`boto3.client("gamelift").delete_matchmaking_configuration` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_matchmaking_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_configuration)
 
-Boto3 documentation:
-[GameLift.Client.delete_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_configuration)
+```python title="Method definition"
+def delete_matchmaking_configuration(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMatchmakingConfigurationInputRequestTypeDef](./type_defs.md#deletematchmakingconfigurationinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMatchmakingConfigurationInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_matchmaking_configuration(**kwargs)
+```
 
-<a id="delete\_matchmaking\_rule\_set"></a>
+1. See [:material-code-braces: DeleteMatchmakingConfigurationInputRequestTypeDef](./type_defs.md#deletematchmakingconfigurationinputrequesttypedef) 
 
-### delete_matchmaking_rule_set
+### delete\_matchmaking\_rule\_set
 
 Deletes an existing matchmaking rule set.
 
-Type annotations for `boto3.client("gamelift").delete_matchmaking_rule_set`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_matchmaking_rule_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_rule_set)
 
-Boto3 documentation:
-[GameLift.Client.delete_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_matchmaking_rule_set)
+```python title="Method definition"
+def delete_matchmaking_rule_set(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMatchmakingRuleSetInputRequestTypeDef](./type_defs.md#deletematchmakingrulesetinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMatchmakingRuleSetInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_matchmaking_rule_set(**kwargs)
+```
 
-<a id="delete\_scaling\_policy"></a>
+1. See [:material-code-braces: DeleteMatchmakingRuleSetInputRequestTypeDef](./type_defs.md#deletematchmakingrulesetinputrequesttypedef) 
 
-### delete_scaling_policy
+### delete\_scaling\_policy
 
 Deletes a fleet scaling policy.
 
-Type annotations for `boto3.client("gamelift").delete_scaling_policy` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_scaling_policy)
 
-Boto3 documentation:
-[GameLift.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_scaling_policy)
+```python title="Method definition"
+def delete_scaling_policy(
+    self,
+    *,
+    Name: str,
+    FleetId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteScalingPolicyInputRequestTypeDef](./type_defs.md#deletescalingpolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `FleetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScalingPolicyInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "FleetId": ...,
+}
 
-<a id="delete\_script"></a>
+parent.delete_scaling_policy(**kwargs)
+```
 
-### delete_script
+1. See [:material-code-braces: DeleteScalingPolicyInputRequestTypeDef](./type_defs.md#deletescalingpolicyinputrequesttypedef) 
+
+### delete\_script
 
 Deletes a Realtime script.
 
-Type annotations for `boto3.client("gamelift").delete_script` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_script` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_script)
 
-Boto3 documentation:
-[GameLift.Client.delete_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_script)
+```python title="Method definition"
+def delete_script(
+    self,
+    *,
+    ScriptId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteScriptInputRequestTypeDef](./type_defs.md#deletescriptinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ScriptId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScriptInputRequestTypeDef = {  # (1)
+    "ScriptId": ...,
+}
 
-<a id="delete\_vpc\_peering\_authorization"></a>
+parent.delete_script(**kwargs)
+```
 
-### delete_vpc_peering_authorization
+1. See [:material-code-braces: DeleteScriptInputRequestTypeDef](./type_defs.md#deletescriptinputrequesttypedef) 
+
+### delete\_vpc\_peering\_authorization
 
 Cancels a pending VPC peering authorization for the specified VPC.
 
-Type annotations for
-`boto3.client("gamelift").delete_vpc_peering_authorization` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_vpc_peering_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_authorization)
 
-Boto3 documentation:
-[GameLift.Client.delete_vpc_peering_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_authorization)
+```python title="Method definition"
+def delete_vpc_peering_authorization(
+    self,
+    *,
+    GameLiftAwsAccountId: str,
+    PeerVpcId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVpcPeeringAuthorizationInputRequestTypeDef](./type_defs.md#deletevpcpeeringauthorizationinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `GameLiftAwsAccountId`: `str` *(required)*
-- `PeerVpcId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVpcPeeringAuthorizationInputRequestTypeDef = {  # (1)
+    "GameLiftAwsAccountId": ...,
+    "PeerVpcId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_vpc_peering_authorization(**kwargs)
+```
 
-<a id="delete\_vpc\_peering\_connection"></a>
+1. See [:material-code-braces: DeleteVpcPeeringAuthorizationInputRequestTypeDef](./type_defs.md#deletevpcpeeringauthorizationinputrequesttypedef) 
 
-### delete_vpc_peering_connection
+### delete\_vpc\_peering\_connection
 
 Removes a VPC peering connection.
 
-Type annotations for `boto3.client("gamelift").delete_vpc_peering_connection`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").delete_vpc_peering_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_connection)
 
-Boto3 documentation:
-[GameLift.Client.delete_vpc_peering_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.delete_vpc_peering_connection)
+```python title="Method definition"
+def delete_vpc_peering_connection(
+    self,
+    *,
+    FleetId: str,
+    VpcPeeringConnectionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVpcPeeringConnectionInputRequestTypeDef](./type_defs.md#deletevpcpeeringconnectioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `VpcPeeringConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVpcPeeringConnectionInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "VpcPeeringConnectionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_vpc_peering_connection(**kwargs)
+```
 
-<a id="deregister\_game\_server"></a>
+1. See [:material-code-braces: DeleteVpcPeeringConnectionInputRequestTypeDef](./type_defs.md#deletevpcpeeringconnectioninputrequesttypedef) 
 
-### deregister_game_server
+### deregister\_game\_server
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Removes the game server from a game server group.
 
-Type annotations for `boto3.client("gamelift").deregister_game_server` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").deregister_game_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.deregister_game_server)
 
-Boto3 documentation:
-[GameLift.Client.deregister_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.deregister_game_server)
+```python title="Method definition"
+def deregister_game_server(
+    self,
+    *,
+    GameServerGroupName: str,
+    GameServerId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterGameServerInputRequestTypeDef](./type_defs.md#deregistergameserverinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `GameServerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterGameServerInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+    "GameServerId": ...,
+}
 
-<a id="describe\_alias"></a>
+parent.deregister_game_server(**kwargs)
+```
 
-### describe_alias
+1. See [:material-code-braces: DeregisterGameServerInputRequestTypeDef](./type_defs.md#deregistergameserverinputrequesttypedef) 
+
+### describe\_alias
 
 Retrieves properties for an alias.
 
-Type annotations for `boto3.client("gamelift").describe_alias` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_alias)
 
-Boto3 documentation:
-[GameLift.Client.describe_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_alias)
+```python title="Method definition"
+def describe_alias(
+    self,
+    *,
+    AliasId: str,
+) -> DescribeAliasOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAliasInputRequestTypeDef](./type_defs.md#describealiasinputrequesttypedef).
+1. See [:material-code-braces: DescribeAliasOutputTypeDef](./type_defs.md#describealiasoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AliasId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAliasInputRequestTypeDef = {  # (1)
+    "AliasId": ...,
+}
 
-Returns
-[DescribeAliasOutputTypeDef](./type_defs.md#describealiasoutputtypedef).
+parent.describe_alias(**kwargs)
+```
 
-<a id="describe\_build"></a>
+1. See [:material-code-braces: DescribeAliasInputRequestTypeDef](./type_defs.md#describealiasinputrequesttypedef) 
 
-### describe_build
+### describe\_build
 
 Retrieves properties for a custom game build.
 
-Type annotations for `boto3.client("gamelift").describe_build` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_build` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_build)
 
-Boto3 documentation:
-[GameLift.Client.describe_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_build)
+```python title="Method definition"
+def describe_build(
+    self,
+    *,
+    BuildId: str,
+) -> DescribeBuildOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBuildInputRequestTypeDef](./type_defs.md#describebuildinputrequesttypedef).
+1. See [:material-code-braces: DescribeBuildOutputTypeDef](./type_defs.md#describebuildoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BuildId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBuildInputRequestTypeDef = {  # (1)
+    "BuildId": ...,
+}
 
-Returns
-[DescribeBuildOutputTypeDef](./type_defs.md#describebuildoutputtypedef).
+parent.describe_build(**kwargs)
+```
 
-<a id="describe\_ec2\_instance\_limits"></a>
+1. See [:material-code-braces: DescribeBuildInputRequestTypeDef](./type_defs.md#describebuildinputrequesttypedef) 
 
-### describe_ec2_instance_limits
+### describe\_ec2\_instance\_limits
 
-Retrieves the instance limits and current utilization for an Amazon Web
-Services Region or location.
+Retrieves the instance limits and current utilization for an Amazon Web Services
+Region or location.
 
-Type annotations for `boto3.client("gamelift").describe_ec2_instance_limits`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_ec2_instance_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_ec2_instance_limits)
 
-Boto3 documentation:
-[GameLift.Client.describe_ec2_instance_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_ec2_instance_limits)
+```python title="Method definition"
+def describe_ec2_instance_limits(
+    self,
+    *,
+    EC2InstanceType: EC2InstanceTypeType = ...,  # (1)
+    Location: str = ...,
+) -> DescribeEC2InstanceLimitsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEC2InstanceLimitsInputRequestTypeDef](./type_defs.md#describeec2instancelimitsinputrequesttypedef).
+1. See [:material-code-brackets: EC2InstanceTypeType](./literals.md#ec2instancetypetype) 
+2. See [:material-code-braces: DescribeEC2InstanceLimitsOutputTypeDef](./type_defs.md#describeec2instancelimitsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `EC2InstanceType`: [EC2InstanceTypeType](./literals.md#ec2instancetypetype)
-- `Location`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEC2InstanceLimitsInputRequestTypeDef = {  # (1)
+    "EC2InstanceType": ...,
+}
 
-Returns
-[DescribeEC2InstanceLimitsOutputTypeDef](./type_defs.md#describeec2instancelimitsoutputtypedef).
+parent.describe_ec2_instance_limits(**kwargs)
+```
 
-<a id="describe\_fleet\_attributes"></a>
+1. See [:material-code-braces: DescribeEC2InstanceLimitsInputRequestTypeDef](./type_defs.md#describeec2instancelimitsinputrequesttypedef) 
 
-### describe_fleet_attributes
+### describe\_fleet\_attributes
 
 Retrieves core fleet-wide properties, including the computing hardware and
 deployment configuration for all instances in the fleet.
 
-Type annotations for `boto3.client("gamelift").describe_fleet_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_fleet_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_attributes)
 
-Boto3 documentation:
-[GameLift.Client.describe_fleet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_attributes)
+```python title="Method definition"
+def describe_fleet_attributes(
+    self,
+    *,
+    FleetIds: Sequence[str] = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeFleetAttributesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetAttributesInputRequestTypeDef](./type_defs.md#describefleetattributesinputrequesttypedef).
+1. See [:material-code-braces: DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetIds`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetAttributesInputRequestTypeDef = {  # (1)
+    "FleetIds": ...,
+}
 
-Returns
-[DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef).
+parent.describe_fleet_attributes(**kwargs)
+```
 
-<a id="describe\_fleet\_capacity"></a>
+1. See [:material-code-braces: DescribeFleetAttributesInputRequestTypeDef](./type_defs.md#describefleetattributesinputrequesttypedef) 
 
-### describe_fleet_capacity
+### describe\_fleet\_capacity
 
 Retrieves the resource capacity settings for one or more fleets.
 
-Type annotations for `boto3.client("gamelift").describe_fleet_capacity` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_fleet_capacity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_capacity)
 
-Boto3 documentation:
-[GameLift.Client.describe_fleet_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_capacity)
+```python title="Method definition"
+def describe_fleet_capacity(
+    self,
+    *,
+    FleetIds: Sequence[str] = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeFleetCapacityOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetCapacityInputRequestTypeDef](./type_defs.md#describefleetcapacityinputrequesttypedef).
+1. See [:material-code-braces: DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetIds`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetCapacityInputRequestTypeDef = {  # (1)
+    "FleetIds": ...,
+}
 
-Returns
-[DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef).
+parent.describe_fleet_capacity(**kwargs)
+```
 
-<a id="describe\_fleet\_events"></a>
+1. See [:material-code-braces: DescribeFleetCapacityInputRequestTypeDef](./type_defs.md#describefleetcapacityinputrequesttypedef) 
 
-### describe_fleet_events
+### describe\_fleet\_events
 
 Retrieves entries from a fleet's event log.
 
-Type annotations for `boto3.client("gamelift").describe_fleet_events` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_fleet_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_events)
 
-Boto3 documentation:
-[GameLift.Client.describe_fleet_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_events)
+```python title="Method definition"
+def describe_fleet_events(
+    self,
+    *,
+    FleetId: str,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeFleetEventsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetEventsInputRequestTypeDef](./type_defs.md#describefleeteventsinputrequesttypedef).
+1. See [:material-code-braces: DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetEventsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef).
+parent.describe_fleet_events(**kwargs)
+```
 
-<a id="describe\_fleet\_location\_attributes"></a>
+1. See [:material-code-braces: DescribeFleetEventsInputRequestTypeDef](./type_defs.md#describefleeteventsinputrequesttypedef) 
 
-### describe_fleet_location_attributes
+### describe\_fleet\_location\_attributes
 
-Retrieves information on a fleet's remote locations, including life-cycle
-status and any suspended fleet activity.
+Retrieves information on a fleet's remote locations, including life-cycle status
+and any suspended fleet activity.
 
-Type annotations for
-`boto3.client("gamelift").describe_fleet_location_attributes` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_fleet_location_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_attributes)
 
-Boto3 documentation:
-[GameLift.Client.describe_fleet_location_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_attributes)
+```python title="Method definition"
+def describe_fleet_location_attributes(
+    self,
+    *,
+    FleetId: str,
+    Locations: Sequence[str] = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeFleetLocationAttributesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetLocationAttributesInputRequestTypeDef](./type_defs.md#describefleetlocationattributesinputrequesttypedef).
+1. See [:material-code-braces: DescribeFleetLocationAttributesOutputTypeDef](./type_defs.md#describefleetlocationattributesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `Locations`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetLocationAttributesInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[DescribeFleetLocationAttributesOutputTypeDef](./type_defs.md#describefleetlocationattributesoutputtypedef).
+parent.describe_fleet_location_attributes(**kwargs)
+```
 
-<a id="describe\_fleet\_location\_capacity"></a>
+1. See [:material-code-braces: DescribeFleetLocationAttributesInputRequestTypeDef](./type_defs.md#describefleetlocationattributesinputrequesttypedef) 
 
-### describe_fleet_location_capacity
+### describe\_fleet\_location\_capacity
 
 Retrieves the resource capacity settings for a fleet location.
 
-Type annotations for
-`boto3.client("gamelift").describe_fleet_location_capacity` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_fleet_location_capacity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_capacity)
 
-Boto3 documentation:
-[GameLift.Client.describe_fleet_location_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_capacity)
+```python title="Method definition"
+def describe_fleet_location_capacity(
+    self,
+    *,
+    FleetId: str,
+    Location: str,
+) -> DescribeFleetLocationCapacityOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetLocationCapacityInputRequestTypeDef](./type_defs.md#describefleetlocationcapacityinputrequesttypedef).
+1. See [:material-code-braces: DescribeFleetLocationCapacityOutputTypeDef](./type_defs.md#describefleetlocationcapacityoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `Location`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetLocationCapacityInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "Location": ...,
+}
 
-Returns
-[DescribeFleetLocationCapacityOutputTypeDef](./type_defs.md#describefleetlocationcapacityoutputtypedef).
+parent.describe_fleet_location_capacity(**kwargs)
+```
 
-<a id="describe\_fleet\_location\_utilization"></a>
+1. See [:material-code-braces: DescribeFleetLocationCapacityInputRequestTypeDef](./type_defs.md#describefleetlocationcapacityinputrequesttypedef) 
 
-### describe_fleet_location_utilization
+### describe\_fleet\_location\_utilization
 
 Retrieves current usage data for a fleet location.
 
-Type annotations for
-`boto3.client("gamelift").describe_fleet_location_utilization` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_fleet_location_utilization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_utilization)
 
-Boto3 documentation:
-[GameLift.Client.describe_fleet_location_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_location_utilization)
+```python title="Method definition"
+def describe_fleet_location_utilization(
+    self,
+    *,
+    FleetId: str,
+    Location: str,
+) -> DescribeFleetLocationUtilizationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetLocationUtilizationInputRequestTypeDef](./type_defs.md#describefleetlocationutilizationinputrequesttypedef).
+1. See [:material-code-braces: DescribeFleetLocationUtilizationOutputTypeDef](./type_defs.md#describefleetlocationutilizationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `Location`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetLocationUtilizationInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "Location": ...,
+}
 
-Returns
-[DescribeFleetLocationUtilizationOutputTypeDef](./type_defs.md#describefleetlocationutilizationoutputtypedef).
+parent.describe_fleet_location_utilization(**kwargs)
+```
 
-<a id="describe\_fleet\_port\_settings"></a>
+1. See [:material-code-braces: DescribeFleetLocationUtilizationInputRequestTypeDef](./type_defs.md#describefleetlocationutilizationinputrequesttypedef) 
 
-### describe_fleet_port_settings
+### describe\_fleet\_port\_settings
 
 Retrieves a fleet's inbound connection permissions.
 
-Type annotations for `boto3.client("gamelift").describe_fleet_port_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_fleet_port_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_port_settings)
 
-Boto3 documentation:
-[GameLift.Client.describe_fleet_port_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_port_settings)
+```python title="Method definition"
+def describe_fleet_port_settings(
+    self,
+    *,
+    FleetId: str,
+    Location: str = ...,
+) -> DescribeFleetPortSettingsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetPortSettingsInputRequestTypeDef](./type_defs.md#describefleetportsettingsinputrequesttypedef).
+1. See [:material-code-braces: DescribeFleetPortSettingsOutputTypeDef](./type_defs.md#describefleetportsettingsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `Location`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetPortSettingsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[DescribeFleetPortSettingsOutputTypeDef](./type_defs.md#describefleetportsettingsoutputtypedef).
+parent.describe_fleet_port_settings(**kwargs)
+```
 
-<a id="describe\_fleet\_utilization"></a>
+1. See [:material-code-braces: DescribeFleetPortSettingsInputRequestTypeDef](./type_defs.md#describefleetportsettingsinputrequesttypedef) 
 
-### describe_fleet_utilization
+### describe\_fleet\_utilization
 
 Retrieves utilization statistics for one or more fleets.
 
-Type annotations for `boto3.client("gamelift").describe_fleet_utilization`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_fleet_utilization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_utilization)
 
-Boto3 documentation:
-[GameLift.Client.describe_fleet_utilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_fleet_utilization)
+```python title="Method definition"
+def describe_fleet_utilization(
+    self,
+    *,
+    FleetIds: Sequence[str] = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeFleetUtilizationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetUtilizationInputRequestTypeDef](./type_defs.md#describefleetutilizationinputrequesttypedef).
+1. See [:material-code-braces: DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetIds`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetUtilizationInputRequestTypeDef = {  # (1)
+    "FleetIds": ...,
+}
 
-Returns
-[DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef).
+parent.describe_fleet_utilization(**kwargs)
+```
 
-<a id="describe\_game\_server"></a>
+1. See [:material-code-braces: DescribeFleetUtilizationInputRequestTypeDef](./type_defs.md#describefleetutilizationinputrequesttypedef) 
 
-### describe_game_server
+### describe\_game\_server
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Retrieves information for a registered game server.
 
-Type annotations for `boto3.client("gamelift").describe_game_server` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_game_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server)
 
-Boto3 documentation:
-[GameLift.Client.describe_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server)
+```python title="Method definition"
+def describe_game_server(
+    self,
+    *,
+    GameServerGroupName: str,
+    GameServerId: str,
+) -> DescribeGameServerOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGameServerInputRequestTypeDef](./type_defs.md#describegameserverinputrequesttypedef).
+1. See [:material-code-braces: DescribeGameServerOutputTypeDef](./type_defs.md#describegameserveroutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `GameServerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeGameServerInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+    "GameServerId": ...,
+}
 
-Returns
-[DescribeGameServerOutputTypeDef](./type_defs.md#describegameserveroutputtypedef).
+parent.describe_game_server(**kwargs)
+```
 
-<a id="describe\_game\_server\_group"></a>
+1. See [:material-code-braces: DescribeGameServerInputRequestTypeDef](./type_defs.md#describegameserverinputrequesttypedef) 
 
-### describe_game_server_group
+### describe\_game\_server\_group
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Retrieves information on a game server group.
 
-Type annotations for `boto3.client("gamelift").describe_game_server_group`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_game_server_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_group)
 
-Boto3 documentation:
-[GameLift.Client.describe_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_group)
+```python title="Method definition"
+def describe_game_server_group(
+    self,
+    *,
+    GameServerGroupName: str,
+) -> DescribeGameServerGroupOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGameServerGroupInputRequestTypeDef](./type_defs.md#describegameservergroupinputrequesttypedef).
+1. See [:material-code-braces: DescribeGameServerGroupOutputTypeDef](./type_defs.md#describegameservergroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeGameServerGroupInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+}
 
-Returns
-[DescribeGameServerGroupOutputTypeDef](./type_defs.md#describegameservergroupoutputtypedef).
+parent.describe_game_server_group(**kwargs)
+```
 
-<a id="describe\_game\_server\_instances"></a>
+1. See [:material-code-braces: DescribeGameServerGroupInputRequestTypeDef](./type_defs.md#describegameservergroupinputrequesttypedef) 
 
-### describe_game_server_instances
+### describe\_game\_server\_instances
 
 **This operation is used with the GameLift FleetIQ solution and game server
-groups.** Retrieves status information about the Amazon EC2 instances
-associated with a GameLift FleetIQ game server group.
+groups.** Retrieves status information about the Amazon EC2 instances associated
+with a GameLift FleetIQ game server group.
 
-Type annotations for `boto3.client("gamelift").describe_game_server_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_game_server_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_instances)
 
-Boto3 documentation:
-[GameLift.Client.describe_game_server_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_server_instances)
+```python title="Method definition"
+def describe_game_server_instances(
+    self,
+    *,
+    GameServerGroupName: str,
+    InstanceIds: Sequence[str] = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeGameServerInstancesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGameServerInstancesInputRequestTypeDef](./type_defs.md#describegameserverinstancesinputrequesttypedef).
+1. See [:material-code-braces: DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `InstanceIds`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeGameServerInstancesInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+}
 
-Returns
-[DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef).
+parent.describe_game_server_instances(**kwargs)
+```
 
-<a id="describe\_game\_session\_details"></a>
+1. See [:material-code-braces: DescribeGameServerInstancesInputRequestTypeDef](./type_defs.md#describegameserverinstancesinputrequesttypedef) 
 
-### describe_game_session_details
+### describe\_game\_session\_details
 
 Retrieves additional game session properties, including the game session
 protection policy in force, a set of one or more game sessions in a specific
 fleet location.
 
-Type annotations for `boto3.client("gamelift").describe_game_session_details`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_game_session_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_details)
 
-Boto3 documentation:
-[GameLift.Client.describe_game_session_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_details)
+```python title="Method definition"
+def describe_game_session_details(
+    self,
+    *,
+    FleetId: str = ...,
+    GameSessionId: str = ...,
+    AliasId: str = ...,
+    Location: str = ...,
+    StatusFilter: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeGameSessionDetailsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGameSessionDetailsInputRequestTypeDef](./type_defs.md#describegamesessiondetailsinputrequesttypedef).
+1. See [:material-code-braces: DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str`
-- `GameSessionId`: `str`
-- `AliasId`: `str`
-- `Location`: `str`
-- `StatusFilter`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeGameSessionDetailsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef).
+parent.describe_game_session_details(**kwargs)
+```
 
-<a id="describe\_game\_session\_placement"></a>
+1. See [:material-code-braces: DescribeGameSessionDetailsInputRequestTypeDef](./type_defs.md#describegamesessiondetailsinputrequesttypedef) 
 
-### describe_game_session_placement
+### describe\_game\_session\_placement
 
 Retrieves information, including current status, about a game session placement
 request.
 
-Type annotations for `boto3.client("gamelift").describe_game_session_placement`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_game_session_placement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_placement)
 
-Boto3 documentation:
-[GameLift.Client.describe_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_placement)
+```python title="Method definition"
+def describe_game_session_placement(
+    self,
+    *,
+    PlacementId: str,
+) -> DescribeGameSessionPlacementOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGameSessionPlacementInputRequestTypeDef](./type_defs.md#describegamesessionplacementinputrequesttypedef).
+1. See [:material-code-braces: DescribeGameSessionPlacementOutputTypeDef](./type_defs.md#describegamesessionplacementoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PlacementId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeGameSessionPlacementInputRequestTypeDef = {  # (1)
+    "PlacementId": ...,
+}
 
-Returns
-[DescribeGameSessionPlacementOutputTypeDef](./type_defs.md#describegamesessionplacementoutputtypedef).
+parent.describe_game_session_placement(**kwargs)
+```
 
-<a id="describe\_game\_session\_queues"></a>
+1. See [:material-code-braces: DescribeGameSessionPlacementInputRequestTypeDef](./type_defs.md#describegamesessionplacementinputrequesttypedef) 
 
-### describe_game_session_queues
+### describe\_game\_session\_queues
 
 Retrieves the properties for one or more game session queues.
 
-Type annotations for `boto3.client("gamelift").describe_game_session_queues`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_game_session_queues` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_queues)
 
-Boto3 documentation:
-[GameLift.Client.describe_game_session_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_session_queues)
+```python title="Method definition"
+def describe_game_session_queues(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeGameSessionQueuesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGameSessionQueuesInputRequestTypeDef](./type_defs.md#describegamesessionqueuesinputrequesttypedef).
+1. See [:material-code-braces: DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeGameSessionQueuesInputRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef).
+parent.describe_game_session_queues(**kwargs)
+```
 
-<a id="describe\_game\_sessions"></a>
+1. See [:material-code-braces: DescribeGameSessionQueuesInputRequestTypeDef](./type_defs.md#describegamesessionqueuesinputrequesttypedef) 
 
-### describe_game_sessions
+### describe\_game\_sessions
 
 Retrieves a set of one or more game sessions in a specific fleet location.
 
-Type annotations for `boto3.client("gamelift").describe_game_sessions` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_game_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_sessions)
 
-Boto3 documentation:
-[GameLift.Client.describe_game_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_game_sessions)
+```python title="Method definition"
+def describe_game_sessions(
+    self,
+    *,
+    FleetId: str = ...,
+    GameSessionId: str = ...,
+    AliasId: str = ...,
+    Location: str = ...,
+    StatusFilter: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeGameSessionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGameSessionsInputRequestTypeDef](./type_defs.md#describegamesessionsinputrequesttypedef).
+1. See [:material-code-braces: DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str`
-- `GameSessionId`: `str`
-- `AliasId`: `str`
-- `Location`: `str`
-- `StatusFilter`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeGameSessionsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef).
+parent.describe_game_sessions(**kwargs)
+```
 
-<a id="describe\_instances"></a>
+1. See [:material-code-braces: DescribeGameSessionsInputRequestTypeDef](./type_defs.md#describegamesessionsinputrequesttypedef) 
 
-### describe_instances
+### describe\_instances
 
 Retrieves information about a fleet's instances, including instance IDs,
 connection data, and status.
 
-Type annotations for `boto3.client("gamelift").describe_instances` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_instances)
 
-Boto3 documentation:
-[GameLift.Client.describe_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_instances)
+```python title="Method definition"
+def describe_instances(
+    self,
+    *,
+    FleetId: str,
+    InstanceId: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+    Location: str = ...,
+) -> DescribeInstancesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInstancesInputRequestTypeDef](./type_defs.md#describeinstancesinputrequesttypedef).
+1. See [:material-code-braces: DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `InstanceId`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
-- `Location`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancesInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef).
+parent.describe_instances(**kwargs)
+```
 
-<a id="describe\_matchmaking"></a>
+1. See [:material-code-braces: DescribeInstancesInputRequestTypeDef](./type_defs.md#describeinstancesinputrequesttypedef) 
 
-### describe_matchmaking
+### describe\_matchmaking
 
 Retrieves one or more matchmaking tickets.
 
-Type annotations for `boto3.client("gamelift").describe_matchmaking` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_matchmaking` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking)
 
-Boto3 documentation:
-[GameLift.Client.describe_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking)
+```python title="Method definition"
+def describe_matchmaking(
+    self,
+    *,
+    TicketIds: Sequence[str],
+) -> DescribeMatchmakingOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMatchmakingInputRequestTypeDef](./type_defs.md#describematchmakinginputrequesttypedef).
+1. See [:material-code-braces: DescribeMatchmakingOutputTypeDef](./type_defs.md#describematchmakingoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TicketIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMatchmakingInputRequestTypeDef = {  # (1)
+    "TicketIds": ...,
+}
 
-Returns
-[DescribeMatchmakingOutputTypeDef](./type_defs.md#describematchmakingoutputtypedef).
+parent.describe_matchmaking(**kwargs)
+```
 
-<a id="describe\_matchmaking\_configurations"></a>
+1. See [:material-code-braces: DescribeMatchmakingInputRequestTypeDef](./type_defs.md#describematchmakinginputrequesttypedef) 
 
-### describe_matchmaking_configurations
+### describe\_matchmaking\_configurations
 
 Retrieves the details of FlexMatch matchmaking configurations.
 
-Type annotations for
-`boto3.client("gamelift").describe_matchmaking_configurations` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_matchmaking_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_configurations)
 
-Boto3 documentation:
-[GameLift.Client.describe_matchmaking_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_configurations)
+```python title="Method definition"
+def describe_matchmaking_configurations(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    RuleSetName: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeMatchmakingConfigurationsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMatchmakingConfigurationsInputRequestTypeDef](./type_defs.md#describematchmakingconfigurationsinputrequesttypedef).
+1. See [:material-code-braces: DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\]
-- `RuleSetName`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeMatchmakingConfigurationsInputRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef).
+parent.describe_matchmaking_configurations(**kwargs)
+```
 
-<a id="describe\_matchmaking\_rule\_sets"></a>
+1. See [:material-code-braces: DescribeMatchmakingConfigurationsInputRequestTypeDef](./type_defs.md#describematchmakingconfigurationsinputrequesttypedef) 
 
-### describe_matchmaking_rule_sets
+### describe\_matchmaking\_rule\_sets
 
 Retrieves the details for FlexMatch matchmaking rule sets.
 
-Type annotations for `boto3.client("gamelift").describe_matchmaking_rule_sets`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_matchmaking_rule_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_rule_sets)
 
-Boto3 documentation:
-[GameLift.Client.describe_matchmaking_rule_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_matchmaking_rule_sets)
+```python title="Method definition"
+def describe_matchmaking_rule_sets(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeMatchmakingRuleSetsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMatchmakingRuleSetsInputRequestTypeDef](./type_defs.md#describematchmakingrulesetsinputrequesttypedef).
+1. See [:material-code-braces: DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeMatchmakingRuleSetsInputRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef).
+parent.describe_matchmaking_rule_sets(**kwargs)
+```
 
-<a id="describe\_player\_sessions"></a>
+1. See [:material-code-braces: DescribeMatchmakingRuleSetsInputRequestTypeDef](./type_defs.md#describematchmakingrulesetsinputrequesttypedef) 
 
-### describe_player_sessions
+### describe\_player\_sessions
 
 Retrieves properties for one or more player sessions.
 
-Type annotations for `boto3.client("gamelift").describe_player_sessions`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_player_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_player_sessions)
 
-Boto3 documentation:
-[GameLift.Client.describe_player_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_player_sessions)
+```python title="Method definition"
+def describe_player_sessions(
+    self,
+    *,
+    GameSessionId: str = ...,
+    PlayerId: str = ...,
+    PlayerSessionId: str = ...,
+    PlayerSessionStatusFilter: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribePlayerSessionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePlayerSessionsInputRequestTypeDef](./type_defs.md#describeplayersessionsinputrequesttypedef).
+1. See [:material-code-braces: DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameSessionId`: `str`
-- `PlayerId`: `str`
-- `PlayerSessionId`: `str`
-- `PlayerSessionStatusFilter`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribePlayerSessionsInputRequestTypeDef = {  # (1)
+    "GameSessionId": ...,
+}
 
-Returns
-[DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef).
+parent.describe_player_sessions(**kwargs)
+```
 
-<a id="describe\_runtime\_configuration"></a>
+1. See [:material-code-braces: DescribePlayerSessionsInputRequestTypeDef](./type_defs.md#describeplayersessionsinputrequesttypedef) 
 
-### describe_runtime_configuration
+### describe\_runtime\_configuration
 
 Retrieves a fleet's runtime configuration settings.
 
-Type annotations for `boto3.client("gamelift").describe_runtime_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_runtime_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_runtime_configuration)
 
-Boto3 documentation:
-[GameLift.Client.describe_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_runtime_configuration)
+```python title="Method definition"
+def describe_runtime_configuration(
+    self,
+    *,
+    FleetId: str,
+) -> DescribeRuntimeConfigurationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRuntimeConfigurationInputRequestTypeDef](./type_defs.md#describeruntimeconfigurationinputrequesttypedef).
+1. See [:material-code-braces: DescribeRuntimeConfigurationOutputTypeDef](./type_defs.md#describeruntimeconfigurationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRuntimeConfigurationInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[DescribeRuntimeConfigurationOutputTypeDef](./type_defs.md#describeruntimeconfigurationoutputtypedef).
+parent.describe_runtime_configuration(**kwargs)
+```
 
-<a id="describe\_scaling\_policies"></a>
+1. See [:material-code-braces: DescribeRuntimeConfigurationInputRequestTypeDef](./type_defs.md#describeruntimeconfigurationinputrequesttypedef) 
 
-### describe_scaling_policies
+### describe\_scaling\_policies
 
 Retrieves all scaling policies applied to a fleet.
 
-Type annotations for `boto3.client("gamelift").describe_scaling_policies`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_scaling_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_scaling_policies)
 
-Boto3 documentation:
-[GameLift.Client.describe_scaling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_scaling_policies)
+```python title="Method definition"
+def describe_scaling_policies(
+    self,
+    *,
+    FleetId: str,
+    StatusFilter: ScalingStatusTypeType = ...,  # (1)
+    Limit: int = ...,
+    NextToken: str = ...,
+    Location: str = ...,
+) -> DescribeScalingPoliciesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScalingPoliciesInputRequestTypeDef](./type_defs.md#describescalingpoliciesinputrequesttypedef).
+1. See [:material-code-brackets: ScalingStatusTypeType](./literals.md#scalingstatustypetype) 
+2. See [:material-code-braces: DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `StatusFilter`: [ScalingStatusTypeType](./literals.md#scalingstatustypetype)
-- `Limit`: `int`
-- `NextToken`: `str`
-- `Location`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingPoliciesInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef).
+parent.describe_scaling_policies(**kwargs)
+```
 
-<a id="describe\_script"></a>
+1. See [:material-code-braces: DescribeScalingPoliciesInputRequestTypeDef](./type_defs.md#describescalingpoliciesinputrequesttypedef) 
 
-### describe_script
+### describe\_script
 
 Retrieves properties for a Realtime script.
 
-Type annotations for `boto3.client("gamelift").describe_script` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_script` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_script)
 
-Boto3 documentation:
-[GameLift.Client.describe_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_script)
+```python title="Method definition"
+def describe_script(
+    self,
+    *,
+    ScriptId: str,
+) -> DescribeScriptOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScriptInputRequestTypeDef](./type_defs.md#describescriptinputrequesttypedef).
+1. See [:material-code-braces: DescribeScriptOutputTypeDef](./type_defs.md#describescriptoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ScriptId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeScriptInputRequestTypeDef = {  # (1)
+    "ScriptId": ...,
+}
 
-Returns
-[DescribeScriptOutputTypeDef](./type_defs.md#describescriptoutputtypedef).
+parent.describe_script(**kwargs)
+```
 
-<a id="describe\_vpc\_peering\_authorizations"></a>
+1. See [:material-code-braces: DescribeScriptInputRequestTypeDef](./type_defs.md#describescriptinputrequesttypedef) 
 
-### describe_vpc_peering_authorizations
+### describe\_vpc\_peering\_authorizations
 
 Retrieves valid VPC peering authorizations that are pending for the Amazon Web
 Services account.
 
-Type annotations for
-`boto3.client("gamelift").describe_vpc_peering_authorizations` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_vpc_peering_authorizations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_authorizations)
 
-Boto3 documentation:
-[GameLift.Client.describe_vpc_peering_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_authorizations)
+```python title="Method definition"
+def describe_vpc_peering_authorizations(
+    self,
+) -> DescribeVpcPeeringAuthorizationsOutputTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeVpcPeeringAuthorizationsOutputTypeDef](./type_defs.md#describevpcpeeringauthorizationsoutputtypedef).
+1. See [:material-code-braces: DescribeVpcPeeringAuthorizationsOutputTypeDef](./type_defs.md#describevpcpeeringauthorizationsoutputtypedef) 
 
-<a id="describe\_vpc\_peering\_connections"></a>
-
-### describe_vpc_peering_connections
+### describe\_vpc\_peering\_connections
 
 Retrieves information on VPC peering connections.
 
-Type annotations for
-`boto3.client("gamelift").describe_vpc_peering_connections` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").describe_vpc_peering_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_connections)
 
-Boto3 documentation:
-[GameLift.Client.describe_vpc_peering_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.describe_vpc_peering_connections)
+```python title="Method definition"
+def describe_vpc_peering_connections(
+    self,
+    *,
+    FleetId: str = ...,
+) -> DescribeVpcPeeringConnectionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVpcPeeringConnectionsInputRequestTypeDef](./type_defs.md#describevpcpeeringconnectionsinputrequesttypedef).
+1. See [:material-code-braces: DescribeVpcPeeringConnectionsOutputTypeDef](./type_defs.md#describevpcpeeringconnectionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcPeeringConnectionsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[DescribeVpcPeeringConnectionsOutputTypeDef](./type_defs.md#describevpcpeeringconnectionsoutputtypedef).
+parent.describe_vpc_peering_connections(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeVpcPeeringConnectionsInputRequestTypeDef](./type_defs.md#describevpcpeeringconnectionsinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("gamelift").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.generate_presigned_url)
 
-Boto3 documentation:
-[GameLift.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_game\_session\_log\_url
 
-Returns `str`.
+Retrieves the location of stored game session logs for a specified game session.
 
-<a id="get\_game\_session\_log\_url"></a>
+Type annotations and code completion for `#!python boto3.client("gamelift").get_game_session_log_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_game_session_log_url)
 
-### get_game_session_log_url
+```python title="Method definition"
+def get_game_session_log_url(
+    self,
+    *,
+    GameSessionId: str,
+) -> GetGameSessionLogUrlOutputTypeDef:  # (1)
+    ...
+```
 
-Retrieves the location of stored game session logs for a specified game
-session.
+1. See [:material-code-braces: GetGameSessionLogUrlOutputTypeDef](./type_defs.md#getgamesessionlogurloutputtypedef) 
 
-Type annotations for `boto3.client("gamelift").get_game_session_log_url`
-method.
 
-Boto3 documentation:
-[GameLift.Client.get_game_session_log_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_game_session_log_url)
+```python title="Usage example with kwargs"
+kwargs: GetGameSessionLogUrlInputRequestTypeDef = {  # (1)
+    "GameSessionId": ...,
+}
 
-Arguments mapping described in
-[GetGameSessionLogUrlInputRequestTypeDef](./type_defs.md#getgamesessionlogurlinputrequesttypedef).
+parent.get_game_session_log_url(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: GetGameSessionLogUrlInputRequestTypeDef](./type_defs.md#getgamesessionlogurlinputrequesttypedef) 
 
-- `GameSessionId`: `str` *(required)*
-
-Returns
-[GetGameSessionLogUrlOutputTypeDef](./type_defs.md#getgamesessionlogurloutputtypedef).
-
-<a id="get\_instance\_access"></a>
-
-### get_instance_access
+### get\_instance\_access
 
 Requests remote access to a fleet instance.
 
-Type annotations for `boto3.client("gamelift").get_instance_access` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_instance_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_instance_access)
 
-Boto3 documentation:
-[GameLift.Client.get_instance_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.get_instance_access)
+```python title="Method definition"
+def get_instance_access(
+    self,
+    *,
+    FleetId: str,
+    InstanceId: str,
+) -> GetInstanceAccessOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInstanceAccessInputRequestTypeDef](./type_defs.md#getinstanceaccessinputrequesttypedef).
+1. See [:material-code-braces: GetInstanceAccessOutputTypeDef](./type_defs.md#getinstanceaccessoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInstanceAccessInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[GetInstanceAccessOutputTypeDef](./type_defs.md#getinstanceaccessoutputtypedef).
+parent.get_instance_access(**kwargs)
+```
 
-<a id="list\_aliases"></a>
+1. See [:material-code-braces: GetInstanceAccessInputRequestTypeDef](./type_defs.md#getinstanceaccessinputrequesttypedef) 
 
-### list_aliases
+### list\_aliases
 
 Retrieves all aliases for this Amazon Web Services account.
 
-Type annotations for `boto3.client("gamelift").list_aliases` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").list_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_aliases)
 
-Boto3 documentation:
-[GameLift.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_aliases)
+```python title="Method definition"
+def list_aliases(
+    self,
+    *,
+    RoutingStrategyType: RoutingStrategyTypeType = ...,  # (1)
+    Name: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListAliasesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAliasesInputRequestTypeDef](./type_defs.md#listaliasesinputrequesttypedef).
+1. See [:material-code-brackets: RoutingStrategyTypeType](./literals.md#routingstrategytypetype) 
+2. See [:material-code-braces: ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RoutingStrategyType`:
-  [RoutingStrategyTypeType](./literals.md#routingstrategytypetype)
-- `Name`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAliasesInputRequestTypeDef = {  # (1)
+    "RoutingStrategyType": ...,
+}
 
-Returns [ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef).
+parent.list_aliases(**kwargs)
+```
 
-<a id="list\_builds"></a>
+1. See [:material-code-braces: ListAliasesInputRequestTypeDef](./type_defs.md#listaliasesinputrequesttypedef) 
 
-### list_builds
+### list\_builds
 
-Retrieves build resources for all builds associated with the Amazon Web
-Services account in use.
+Retrieves build resources for all builds associated with the Amazon Web Services
+account in use.
 
-Type annotations for `boto3.client("gamelift").list_builds` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").list_builds` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_builds)
 
-Boto3 documentation:
-[GameLift.Client.list_builds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_builds)
+```python title="Method definition"
+def list_builds(
+    self,
+    *,
+    Status: BuildStatusType = ...,  # (1)
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListBuildsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListBuildsInputRequestTypeDef](./type_defs.md#listbuildsinputrequesttypedef).
+1. See [:material-code-brackets: BuildStatusType](./literals.md#buildstatustype) 
+2. See [:material-code-braces: ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Status`: [BuildStatusType](./literals.md#buildstatustype)
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBuildsInputRequestTypeDef = {  # (1)
+    "Status": ...,
+}
 
-Returns [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef).
+parent.list_builds(**kwargs)
+```
 
-<a id="list\_fleets"></a>
+1. See [:material-code-braces: ListBuildsInputRequestTypeDef](./type_defs.md#listbuildsinputrequesttypedef) 
 
-### list_fleets
+### list\_fleets
 
 Retrieves a collection of fleet resources in an Amazon Web Services Region.
 
-Type annotations for `boto3.client("gamelift").list_fleets` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").list_fleets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_fleets)
 
-Boto3 documentation:
-[GameLift.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_fleets)
+```python title="Method definition"
+def list_fleets(
+    self,
+    *,
+    BuildId: str = ...,
+    ScriptId: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListFleetsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFleetsInputRequestTypeDef](./type_defs.md#listfleetsinputrequesttypedef).
+1. See [:material-code-braces: ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BuildId`: `str`
-- `ScriptId`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFleetsInputRequestTypeDef = {  # (1)
+    "BuildId": ...,
+}
 
-Returns [ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef).
+parent.list_fleets(**kwargs)
+```
 
-<a id="list\_game\_server\_groups"></a>
+1. See [:material-code-braces: ListFleetsInputRequestTypeDef](./type_defs.md#listfleetsinputrequesttypedef) 
 
-### list_game_server_groups
+### list\_game\_server\_groups
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Retrieves information on all game servers groups that exist in the
 current Amazon Web Services account for the selected Region.
 
-Type annotations for `boto3.client("gamelift").list_game_server_groups` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").list_game_server_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_server_groups)
 
-Boto3 documentation:
-[GameLift.Client.list_game_server_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_server_groups)
+```python title="Method definition"
+def list_game_server_groups(
+    self,
+    *,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListGameServerGroupsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGameServerGroupsInputRequestTypeDef](./type_defs.md#listgameservergroupsinputrequesttypedef).
+1. See [:material-code-braces: ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGameServerGroupsInputRequestTypeDef = {  # (1)
+    "Limit": ...,
+}
 
-Returns
-[ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef).
+parent.list_game_server_groups(**kwargs)
+```
 
-<a id="list\_game\_servers"></a>
+1. See [:material-code-braces: ListGameServerGroupsInputRequestTypeDef](./type_defs.md#listgameservergroupsinputrequesttypedef) 
 
-### list_game_servers
+### list\_game\_servers
 
 **This operation is used with the GameLift FleetIQ solution and game server
-groups.** Retrieves information on all game servers that are currently active
-in a specified game server group.
+groups.** Retrieves information on all game servers that are currently active in
+a specified game server group.
 
-Type annotations for `boto3.client("gamelift").list_game_servers` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").list_game_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_servers)
 
-Boto3 documentation:
-[GameLift.Client.list_game_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_game_servers)
+```python title="Method definition"
+def list_game_servers(
+    self,
+    *,
+    GameServerGroupName: str,
+    SortOrder: SortOrderType = ...,  # (1)
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListGameServersOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListGameServersInputRequestTypeDef](./type_defs.md#listgameserversinputrequesttypedef).
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-braces: ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGameServersInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+}
 
-Returns
-[ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef).
+parent.list_game_servers(**kwargs)
+```
 
-<a id="list\_scripts"></a>
+1. See [:material-code-braces: ListGameServersInputRequestTypeDef](./type_defs.md#listgameserversinputrequesttypedef) 
 
-### list_scripts
+### list\_scripts
 
 Retrieves script records for all Realtime scripts that are associated with the
 Amazon Web Services account in use.
 
-Type annotations for `boto3.client("gamelift").list_scripts` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").list_scripts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_scripts)
 
-Boto3 documentation:
-[GameLift.Client.list_scripts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_scripts)
+```python title="Method definition"
+def list_scripts(
+    self,
+    *,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListScriptsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListScriptsInputRequestTypeDef](./type_defs.md#listscriptsinputrequesttypedef).
+1. See [:material-code-braces: ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListScriptsInputRequestTypeDef = {  # (1)
+    "Limit": ...,
+}
 
-Returns [ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef).
+parent.list_scripts(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListScriptsInputRequestTypeDef](./type_defs.md#listscriptsinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves all tags that are assigned to a GameLift resource.
 
-Type annotations for `boto3.client("gamelift").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[GameLift.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_scaling\_policy"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_scaling_policy
+### put\_scaling\_policy
 
 Creates or updates a scaling policy for a fleet.
 
-Type annotations for `boto3.client("gamelift").put_scaling_policy` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").put_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.put_scaling_policy)
 
-Boto3 documentation:
-[GameLift.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.put_scaling_policy)
+```python title="Method definition"
+def put_scaling_policy(
+    self,
+    *,
+    Name: str,
+    FleetId: str,
+    MetricName: MetricNameType,  # (1)
+    ScalingAdjustment: int = ...,
+    ScalingAdjustmentType: ScalingAdjustmentTypeType = ...,  # (2)
+    Threshold: float = ...,
+    ComparisonOperator: ComparisonOperatorTypeType = ...,  # (3)
+    EvaluationPeriods: int = ...,
+    PolicyType: PolicyTypeType = ...,  # (4)
+    TargetConfiguration: TargetConfigurationTypeDef = ...,  # (5)
+) -> PutScalingPolicyOutputTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[PutScalingPolicyInputRequestTypeDef](./type_defs.md#putscalingpolicyinputrequesttypedef).
+1. See [:material-code-brackets: MetricNameType](./literals.md#metricnametype) 
+2. See [:material-code-brackets: ScalingAdjustmentTypeType](./literals.md#scalingadjustmenttypetype) 
+3. See [:material-code-brackets: ComparisonOperatorTypeType](./literals.md#comparisonoperatortypetype) 
+4. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+5. See [:material-code-braces: TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef) 
+6. See [:material-code-braces: PutScalingPolicyOutputTypeDef](./type_defs.md#putscalingpolicyoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `FleetId`: `str` *(required)*
-- `MetricName`: [MetricNameType](./literals.md#metricnametype) *(required)*
-- `ScalingAdjustment`: `int`
-- `ScalingAdjustmentType`:
-  [ScalingAdjustmentTypeType](./literals.md#scalingadjustmenttypetype)
-- `Threshold`: `float`
-- `ComparisonOperator`:
-  [ComparisonOperatorTypeType](./literals.md#comparisonoperatortypetype)
-- `EvaluationPeriods`: `int`
-- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype)
-- `TargetConfiguration`:
-  [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: PutScalingPolicyInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "FleetId": ...,
+    "MetricName": ...,
+}
 
-Returns
-[PutScalingPolicyOutputTypeDef](./type_defs.md#putscalingpolicyoutputtypedef).
+parent.put_scaling_policy(**kwargs)
+```
 
-<a id="register\_game\_server"></a>
+1. See [:material-code-braces: PutScalingPolicyInputRequestTypeDef](./type_defs.md#putscalingpolicyinputrequesttypedef) 
 
-### register_game_server
+### register\_game\_server
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Creates a new game server resource and notifies GameLift FleetIQ that
 the game server is ready to host gameplay and players.
 
-Type annotations for `boto3.client("gamelift").register_game_server` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").register_game_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.register_game_server)
 
-Boto3 documentation:
-[GameLift.Client.register_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.register_game_server)
+```python title="Method definition"
+def register_game_server(
+    self,
+    *,
+    GameServerGroupName: str,
+    GameServerId: str,
+    InstanceId: str,
+    ConnectionInfo: str = ...,
+    GameServerData: str = ...,
+) -> RegisterGameServerOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterGameServerInputRequestTypeDef](./type_defs.md#registergameserverinputrequesttypedef).
+1. See [:material-code-braces: RegisterGameServerOutputTypeDef](./type_defs.md#registergameserveroutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `GameServerId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `ConnectionInfo`: `str`
-- `GameServerData`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterGameServerInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+    "GameServerId": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[RegisterGameServerOutputTypeDef](./type_defs.md#registergameserveroutputtypedef).
+parent.register_game_server(**kwargs)
+```
 
-<a id="request\_upload\_credentials"></a>
+1. See [:material-code-braces: RegisterGameServerInputRequestTypeDef](./type_defs.md#registergameserverinputrequesttypedef) 
 
-### request_upload_credentials
+### request\_upload\_credentials
 
 Retrieves a fresh set of credentials for use when uploading a new set of game
 build files to Amazon Web Services's Amazon S3.
 
-Type annotations for `boto3.client("gamelift").request_upload_credentials`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").request_upload_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.request_upload_credentials)
 
-Boto3 documentation:
-[GameLift.Client.request_upload_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.request_upload_credentials)
+```python title="Method definition"
+def request_upload_credentials(
+    self,
+    *,
+    BuildId: str,
+) -> RequestUploadCredentialsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RequestUploadCredentialsInputRequestTypeDef](./type_defs.md#requestuploadcredentialsinputrequesttypedef).
+1. See [:material-code-braces: RequestUploadCredentialsOutputTypeDef](./type_defs.md#requestuploadcredentialsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BuildId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RequestUploadCredentialsInputRequestTypeDef = {  # (1)
+    "BuildId": ...,
+}
 
-Returns
-[RequestUploadCredentialsOutputTypeDef](./type_defs.md#requestuploadcredentialsoutputtypedef).
+parent.request_upload_credentials(**kwargs)
+```
 
-<a id="resolve\_alias"></a>
+1. See [:material-code-braces: RequestUploadCredentialsInputRequestTypeDef](./type_defs.md#requestuploadcredentialsinputrequesttypedef) 
 
-### resolve_alias
+### resolve\_alias
 
 Retrieves the fleet ID that an alias is currently pointing to.
 
-Type annotations for `boto3.client("gamelift").resolve_alias` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").resolve_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resolve_alias)
 
-Boto3 documentation:
-[GameLift.Client.resolve_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resolve_alias)
+```python title="Method definition"
+def resolve_alias(
+    self,
+    *,
+    AliasId: str,
+) -> ResolveAliasOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResolveAliasInputRequestTypeDef](./type_defs.md#resolvealiasinputrequesttypedef).
+1. See [:material-code-braces: ResolveAliasOutputTypeDef](./type_defs.md#resolvealiasoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AliasId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResolveAliasInputRequestTypeDef = {  # (1)
+    "AliasId": ...,
+}
 
-Returns [ResolveAliasOutputTypeDef](./type_defs.md#resolvealiasoutputtypedef).
+parent.resolve_alias(**kwargs)
+```
 
-<a id="resume\_game\_server\_group"></a>
+1. See [:material-code-braces: ResolveAliasInputRequestTypeDef](./type_defs.md#resolvealiasinputrequesttypedef) 
 
-### resume_game_server_group
+### resume\_game\_server\_group
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Reinstates activity on a game server group after it has been
 suspended.
 
-Type annotations for `boto3.client("gamelift").resume_game_server_group`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").resume_game_server_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resume_game_server_group)
 
-Boto3 documentation:
-[GameLift.Client.resume_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.resume_game_server_group)
+```python title="Method definition"
+def resume_game_server_group(
+    self,
+    *,
+    GameServerGroupName: str,
+    ResumeActions: Sequence[GameServerGroupActionType],  # (1)
+) -> ResumeGameServerGroupOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ResumeGameServerGroupInputRequestTypeDef](./type_defs.md#resumegameservergroupinputrequesttypedef).
+1. See [:material-code-brackets: GameServerGroupActionType](./literals.md#gameservergroupactiontype) 
+2. See [:material-code-braces: ResumeGameServerGroupOutputTypeDef](./type_defs.md#resumegameservergroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `ResumeActions`: `Sequence`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
-  [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResumeGameServerGroupInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+    "ResumeActions": ...,
+}
 
-Returns
-[ResumeGameServerGroupOutputTypeDef](./type_defs.md#resumegameservergroupoutputtypedef).
+parent.resume_game_server_group(**kwargs)
+```
 
-<a id="search\_game\_sessions"></a>
+1. See [:material-code-braces: ResumeGameServerGroupInputRequestTypeDef](./type_defs.md#resumegameservergroupinputrequesttypedef) 
 
-### search_game_sessions
+### search\_game\_sessions
 
-Retrieves all active game sessions that match a set of search criteria and
-sorts them into a specified order.
+Retrieves all active game sessions that match a set of search criteria and sorts
+them into a specified order.
 
-Type annotations for `boto3.client("gamelift").search_game_sessions` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").search_game_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.search_game_sessions)
 
-Boto3 documentation:
-[GameLift.Client.search_game_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.search_game_sessions)
+```python title="Method definition"
+def search_game_sessions(
+    self,
+    *,
+    FleetId: str = ...,
+    AliasId: str = ...,
+    Location: str = ...,
+    FilterExpression: str = ...,
+    SortExpression: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> SearchGameSessionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SearchGameSessionsInputRequestTypeDef](./type_defs.md#searchgamesessionsinputrequesttypedef).
+1. See [:material-code-braces: SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str`
-- `AliasId`: `str`
-- `Location`: `str`
-- `FilterExpression`: `str`
-- `SortExpression`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchGameSessionsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef).
+parent.search_game_sessions(**kwargs)
+```
 
-<a id="start\_fleet\_actions"></a>
+1. See [:material-code-braces: SearchGameSessionsInputRequestTypeDef](./type_defs.md#searchgamesessionsinputrequesttypedef) 
 
-### start_fleet_actions
+### start\_fleet\_actions
 
 Resumes certain types of activity on fleet instances that were suspended with
 StopFleetActions.
 
-Type annotations for `boto3.client("gamelift").start_fleet_actions` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").start_fleet_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_fleet_actions)
 
-Boto3 documentation:
-[GameLift.Client.start_fleet_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_fleet_actions)
+```python title="Method definition"
+def start_fleet_actions(
+    self,
+    *,
+    FleetId: str,
+    Actions: Sequence[FleetActionType],  # (1)
+    Location: str = ...,
+) -> StartFleetActionsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartFleetActionsInputRequestTypeDef](./type_defs.md#startfleetactionsinputrequesttypedef).
+1. See [:material-code-brackets: FleetActionType](./literals.md#fleetactiontype) 
+2. See [:material-code-braces: StartFleetActionsOutputTypeDef](./type_defs.md#startfleetactionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `Actions`: `Sequence`\[`Literal['AUTO_SCALING']` (see
-  [FleetActionType](./literals.md#fleetactiontype))\] *(required)*
-- `Location`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartFleetActionsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "Actions": ...,
+}
 
-Returns
-[StartFleetActionsOutputTypeDef](./type_defs.md#startfleetactionsoutputtypedef).
+parent.start_fleet_actions(**kwargs)
+```
 
-<a id="start\_game\_session\_placement"></a>
+1. See [:material-code-braces: StartFleetActionsInputRequestTypeDef](./type_defs.md#startfleetactionsinputrequesttypedef) 
 
-### start_game_session_placement
+### start\_game\_session\_placement
 
-Places a request for a new game session in a queue (see CreateGameSessionQueue
+Places a request for a new game session in a queue (see  CreateGameSessionQueue
 ).
 
-Type annotations for `boto3.client("gamelift").start_game_session_placement`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").start_game_session_placement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_game_session_placement)
 
-Boto3 documentation:
-[GameLift.Client.start_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_game_session_placement)
+```python title="Method definition"
+def start_game_session_placement(
+    self,
+    *,
+    PlacementId: str,
+    GameSessionQueueName: str,
+    MaximumPlayerSessionCount: int,
+    GameProperties: Sequence[GamePropertyTypeDef] = ...,  # (1)
+    GameSessionName: str = ...,
+    PlayerLatencies: Sequence[PlayerLatencyTypeDef] = ...,  # (2)
+    DesiredPlayerSessions: Sequence[DesiredPlayerSessionTypeDef] = ...,  # (3)
+    GameSessionData: str = ...,
+) -> StartGameSessionPlacementOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartGameSessionPlacementInputRequestTypeDef](./type_defs.md#startgamesessionplacementinputrequesttypedef).
+1. See [:material-code-braces: GamePropertyTypeDef](./type_defs.md#gamepropertytypedef) 
+2. See [:material-code-braces: PlayerLatencyTypeDef](./type_defs.md#playerlatencytypedef) 
+3. See [:material-code-braces: DesiredPlayerSessionTypeDef](./type_defs.md#desiredplayersessiontypedef) 
+4. See [:material-code-braces: StartGameSessionPlacementOutputTypeDef](./type_defs.md#startgamesessionplacementoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PlacementId`: `str` *(required)*
-- `GameSessionQueueName`: `str` *(required)*
-- `MaximumPlayerSessionCount`: `int` *(required)*
-- `GameProperties`:
-  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
-- `GameSessionName`: `str`
-- `PlayerLatencies`:
-  `Sequence`\[[PlayerLatencyTypeDef](./type_defs.md#playerlatencytypedef)\]
-- `DesiredPlayerSessions`:
-  `Sequence`\[[DesiredPlayerSessionTypeDef](./type_defs.md#desiredplayersessiontypedef)\]
-- `GameSessionData`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartGameSessionPlacementInputRequestTypeDef = {  # (1)
+    "PlacementId": ...,
+    "GameSessionQueueName": ...,
+    "MaximumPlayerSessionCount": ...,
+}
 
-Returns
-[StartGameSessionPlacementOutputTypeDef](./type_defs.md#startgamesessionplacementoutputtypedef).
+parent.start_game_session_placement(**kwargs)
+```
 
-<a id="start\_match\_backfill"></a>
+1. See [:material-code-braces: StartGameSessionPlacementInputRequestTypeDef](./type_defs.md#startgamesessionplacementinputrequesttypedef) 
 
-### start_match_backfill
+### start\_match\_backfill
 
 Finds new players to fill open slots in currently running game sessions.
 
-Type annotations for `boto3.client("gamelift").start_match_backfill` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").start_match_backfill` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_match_backfill)
 
-Boto3 documentation:
-[GameLift.Client.start_match_backfill](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_match_backfill)
+```python title="Method definition"
+def start_match_backfill(
+    self,
+    *,
+    ConfigurationName: str,
+    Players: Sequence[PlayerTypeDef],  # (1)
+    TicketId: str = ...,
+    GameSessionArn: str = ...,
+) -> StartMatchBackfillOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartMatchBackfillInputRequestTypeDef](./type_defs.md#startmatchbackfillinputrequesttypedef).
+1. See [:material-code-braces: PlayerTypeDef](./type_defs.md#playertypedef) 
+2. See [:material-code-braces: StartMatchBackfillOutputTypeDef](./type_defs.md#startmatchbackfilloutputtypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationName`: `str` *(required)*
-- `Players`: `Sequence`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
-  *(required)*
-- `TicketId`: `str`
-- `GameSessionArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartMatchBackfillInputRequestTypeDef = {  # (1)
+    "ConfigurationName": ...,
+    "Players": ...,
+}
 
-Returns
-[StartMatchBackfillOutputTypeDef](./type_defs.md#startmatchbackfilloutputtypedef).
+parent.start_match_backfill(**kwargs)
+```
 
-<a id="start\_matchmaking"></a>
+1. See [:material-code-braces: StartMatchBackfillInputRequestTypeDef](./type_defs.md#startmatchbackfillinputrequesttypedef) 
 
-### start_matchmaking
+### start\_matchmaking
 
 Uses FlexMatch to create a game match for a group of players based on custom
 matchmaking rules.
 
-Type annotations for `boto3.client("gamelift").start_matchmaking` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").start_matchmaking` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_matchmaking)
 
-Boto3 documentation:
-[GameLift.Client.start_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.start_matchmaking)
+```python title="Method definition"
+def start_matchmaking(
+    self,
+    *,
+    ConfigurationName: str,
+    Players: Sequence[PlayerTypeDef],  # (1)
+    TicketId: str = ...,
+) -> StartMatchmakingOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartMatchmakingInputRequestTypeDef](./type_defs.md#startmatchmakinginputrequesttypedef).
+1. See [:material-code-braces: PlayerTypeDef](./type_defs.md#playertypedef) 
+2. See [:material-code-braces: StartMatchmakingOutputTypeDef](./type_defs.md#startmatchmakingoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationName`: `str` *(required)*
-- `Players`: `Sequence`\[[PlayerTypeDef](./type_defs.md#playertypedef)\]
-  *(required)*
-- `TicketId`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartMatchmakingInputRequestTypeDef = {  # (1)
+    "ConfigurationName": ...,
+    "Players": ...,
+}
 
-Returns
-[StartMatchmakingOutputTypeDef](./type_defs.md#startmatchmakingoutputtypedef).
+parent.start_matchmaking(**kwargs)
+```
 
-<a id="stop\_fleet\_actions"></a>
+1. See [:material-code-braces: StartMatchmakingInputRequestTypeDef](./type_defs.md#startmatchmakinginputrequesttypedef) 
 
-### stop_fleet_actions
+### stop\_fleet\_actions
 
 Suspends certain types of activity in a fleet location.
 
-Type annotations for `boto3.client("gamelift").stop_fleet_actions` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").stop_fleet_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_fleet_actions)
 
-Boto3 documentation:
-[GameLift.Client.stop_fleet_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_fleet_actions)
+```python title="Method definition"
+def stop_fleet_actions(
+    self,
+    *,
+    FleetId: str,
+    Actions: Sequence[FleetActionType],  # (1)
+    Location: str = ...,
+) -> StopFleetActionsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StopFleetActionsInputRequestTypeDef](./type_defs.md#stopfleetactionsinputrequesttypedef).
+1. See [:material-code-brackets: FleetActionType](./literals.md#fleetactiontype) 
+2. See [:material-code-braces: StopFleetActionsOutputTypeDef](./type_defs.md#stopfleetactionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `Actions`: `Sequence`\[`Literal['AUTO_SCALING']` (see
-  [FleetActionType](./literals.md#fleetactiontype))\] *(required)*
-- `Location`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopFleetActionsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "Actions": ...,
+}
 
-Returns
-[StopFleetActionsOutputTypeDef](./type_defs.md#stopfleetactionsoutputtypedef).
+parent.stop_fleet_actions(**kwargs)
+```
 
-<a id="stop\_game\_session\_placement"></a>
+1. See [:material-code-braces: StopFleetActionsInputRequestTypeDef](./type_defs.md#stopfleetactionsinputrequesttypedef) 
 
-### stop_game_session_placement
+### stop\_game\_session\_placement
 
 Cancels a game session placement that is in `PENDING` status.
 
-Type annotations for `boto3.client("gamelift").stop_game_session_placement`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").stop_game_session_placement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_game_session_placement)
 
-Boto3 documentation:
-[GameLift.Client.stop_game_session_placement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_game_session_placement)
+```python title="Method definition"
+def stop_game_session_placement(
+    self,
+    *,
+    PlacementId: str,
+) -> StopGameSessionPlacementOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopGameSessionPlacementInputRequestTypeDef](./type_defs.md#stopgamesessionplacementinputrequesttypedef).
+1. See [:material-code-braces: StopGameSessionPlacementOutputTypeDef](./type_defs.md#stopgamesessionplacementoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PlacementId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopGameSessionPlacementInputRequestTypeDef = {  # (1)
+    "PlacementId": ...,
+}
 
-Returns
-[StopGameSessionPlacementOutputTypeDef](./type_defs.md#stopgamesessionplacementoutputtypedef).
+parent.stop_game_session_placement(**kwargs)
+```
 
-<a id="stop\_matchmaking"></a>
+1. See [:material-code-braces: StopGameSessionPlacementInputRequestTypeDef](./type_defs.md#stopgamesessionplacementinputrequesttypedef) 
 
-### stop_matchmaking
+### stop\_matchmaking
 
 Cancels a matchmaking ticket or match backfill ticket that is currently being
 processed.
 
-Type annotations for `boto3.client("gamelift").stop_matchmaking` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").stop_matchmaking` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_matchmaking)
 
-Boto3 documentation:
-[GameLift.Client.stop_matchmaking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.stop_matchmaking)
+```python title="Method definition"
+def stop_matchmaking(
+    self,
+    *,
+    TicketId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopMatchmakingInputRequestTypeDef](./type_defs.md#stopmatchmakinginputrequesttypedef).
 
-Keyword-only arguments:
 
-- `TicketId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopMatchmakingInputRequestTypeDef = {  # (1)
+    "TicketId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_matchmaking(**kwargs)
+```
 
-<a id="suspend\_game\_server\_group"></a>
+1. See [:material-code-braces: StopMatchmakingInputRequestTypeDef](./type_defs.md#stopmatchmakinginputrequesttypedef) 
 
-### suspend_game_server_group
+### suspend\_game\_server\_group
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Temporarily stops activity on a game server group without terminating
 instances or the game server group.
 
-Type annotations for `boto3.client("gamelift").suspend_game_server_group`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").suspend_game_server_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.suspend_game_server_group)
 
-Boto3 documentation:
-[GameLift.Client.suspend_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.suspend_game_server_group)
+```python title="Method definition"
+def suspend_game_server_group(
+    self,
+    *,
+    GameServerGroupName: str,
+    SuspendActions: Sequence[GameServerGroupActionType],  # (1)
+) -> SuspendGameServerGroupOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SuspendGameServerGroupInputRequestTypeDef](./type_defs.md#suspendgameservergroupinputrequesttypedef).
+1. See [:material-code-brackets: GameServerGroupActionType](./literals.md#gameservergroupactiontype) 
+2. See [:material-code-braces: SuspendGameServerGroupOutputTypeDef](./type_defs.md#suspendgameservergroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `SuspendActions`: `Sequence`\[`Literal['REPLACE_INSTANCE_TYPES']` (see
-  [GameServerGroupActionType](./literals.md#gameservergroupactiontype))\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SuspendGameServerGroupInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+    "SuspendActions": ...,
+}
 
-Returns
-[SuspendGameServerGroupOutputTypeDef](./type_defs.md#suspendgameservergroupoutputtypedef).
+parent.suspend_game_server_group(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SuspendGameServerGroupInputRequestTypeDef](./type_defs.md#suspendgameservergroupinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns a tag to a GameLift resource.
 
-Type annotations for `boto3.client("gamelift").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.tag_resource)
 
-Boto3 documentation:
-[GameLift.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag that is assigned to a GameLift resource.
 
-Type annotations for `boto3.client("gamelift").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.untag_resource)
 
-Boto3 documentation:
-[GameLift.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_alias"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_alias
+### update\_alias
 
 Updates properties for an alias.
 
-Type annotations for `boto3.client("gamelift").update_alias` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_alias)
 
-Boto3 documentation:
-[GameLift.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_alias)
+```python title="Method definition"
+def update_alias(
+    self,
+    *,
+    AliasId: str,
+    Name: str = ...,
+    Description: str = ...,
+    RoutingStrategy: RoutingStrategyTypeDef = ...,  # (1)
+) -> UpdateAliasOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAliasInputRequestTypeDef](./type_defs.md#updatealiasinputrequesttypedef).
+1. See [:material-code-braces: RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef) 
+2. See [:material-code-braces: UpdateAliasOutputTypeDef](./type_defs.md#updatealiasoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AliasId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `RoutingStrategy`:
-  [RoutingStrategyTypeDef](./type_defs.md#routingstrategytypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateAliasInputRequestTypeDef = {  # (1)
+    "AliasId": ...,
+}
 
-Returns [UpdateAliasOutputTypeDef](./type_defs.md#updatealiasoutputtypedef).
+parent.update_alias(**kwargs)
+```
 
-<a id="update\_build"></a>
+1. See [:material-code-braces: UpdateAliasInputRequestTypeDef](./type_defs.md#updatealiasinputrequesttypedef) 
 
-### update_build
+### update\_build
 
 Updates metadata in a build resource, including the build name and version.
 
-Type annotations for `boto3.client("gamelift").update_build` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_build` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_build)
 
-Boto3 documentation:
-[GameLift.Client.update_build](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_build)
+```python title="Method definition"
+def update_build(
+    self,
+    *,
+    BuildId: str,
+    Name: str = ...,
+    Version: str = ...,
+) -> UpdateBuildOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBuildInputRequestTypeDef](./type_defs.md#updatebuildinputrequesttypedef).
+1. See [:material-code-braces: UpdateBuildOutputTypeDef](./type_defs.md#updatebuildoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BuildId`: `str` *(required)*
-- `Name`: `str`
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateBuildInputRequestTypeDef = {  # (1)
+    "BuildId": ...,
+}
 
-Returns [UpdateBuildOutputTypeDef](./type_defs.md#updatebuildoutputtypedef).
+parent.update_build(**kwargs)
+```
 
-<a id="update\_fleet\_attributes"></a>
+1. See [:material-code-braces: UpdateBuildInputRequestTypeDef](./type_defs.md#updatebuildinputrequesttypedef) 
 
-### update_fleet_attributes
+### update\_fleet\_attributes
 
 Updates a fleet's mutable attributes, including game session protection and
 resource creation limits.
 
-Type annotations for `boto3.client("gamelift").update_fleet_attributes` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_fleet_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_attributes)
 
-Boto3 documentation:
-[GameLift.Client.update_fleet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_attributes)
+```python title="Method definition"
+def update_fleet_attributes(
+    self,
+    *,
+    FleetId: str,
+    Name: str = ...,
+    Description: str = ...,
+    NewGameSessionProtectionPolicy: ProtectionPolicyType = ...,  # (1)
+    ResourceCreationLimitPolicy: ResourceCreationLimitPolicyTypeDef = ...,  # (2)
+    MetricGroups: Sequence[str] = ...,
+) -> UpdateFleetAttributesOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFleetAttributesInputRequestTypeDef](./type_defs.md#updatefleetattributesinputrequesttypedef).
+1. See [:material-code-brackets: ProtectionPolicyType](./literals.md#protectionpolicytype) 
+2. See [:material-code-braces: ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef) 
+3. See [:material-code-braces: UpdateFleetAttributesOutputTypeDef](./type_defs.md#updatefleetattributesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `NewGameSessionProtectionPolicy`:
-  [ProtectionPolicyType](./literals.md#protectionpolicytype)
-- `ResourceCreationLimitPolicy`:
-  [ResourceCreationLimitPolicyTypeDef](./type_defs.md#resourcecreationlimitpolicytypedef)
-- `MetricGroups`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateFleetAttributesInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[UpdateFleetAttributesOutputTypeDef](./type_defs.md#updatefleetattributesoutputtypedef).
+parent.update_fleet_attributes(**kwargs)
+```
 
-<a id="update\_fleet\_capacity"></a>
+1. See [:material-code-braces: UpdateFleetAttributesInputRequestTypeDef](./type_defs.md#updatefleetattributesinputrequesttypedef) 
 
-### update_fleet_capacity
+### update\_fleet\_capacity
 
 Updates capacity settings for a fleet.
 
-Type annotations for `boto3.client("gamelift").update_fleet_capacity` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_fleet_capacity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_capacity)
 
-Boto3 documentation:
-[GameLift.Client.update_fleet_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_capacity)
+```python title="Method definition"
+def update_fleet_capacity(
+    self,
+    *,
+    FleetId: str,
+    DesiredInstances: int = ...,
+    MinSize: int = ...,
+    MaxSize: int = ...,
+    Location: str = ...,
+) -> UpdateFleetCapacityOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFleetCapacityInputRequestTypeDef](./type_defs.md#updatefleetcapacityinputrequesttypedef).
+1. See [:material-code-braces: UpdateFleetCapacityOutputTypeDef](./type_defs.md#updatefleetcapacityoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `DesiredInstances`: `int`
-- `MinSize`: `int`
-- `MaxSize`: `int`
-- `Location`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFleetCapacityInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[UpdateFleetCapacityOutputTypeDef](./type_defs.md#updatefleetcapacityoutputtypedef).
+parent.update_fleet_capacity(**kwargs)
+```
 
-<a id="update\_fleet\_port\_settings"></a>
+1. See [:material-code-braces: UpdateFleetCapacityInputRequestTypeDef](./type_defs.md#updatefleetcapacityinputrequesttypedef) 
 
-### update_fleet_port_settings
+### update\_fleet\_port\_settings
 
 Updates permissions that allow inbound traffic to connect to game sessions that
 are being hosted on instances in the fleet.
 
-Type annotations for `boto3.client("gamelift").update_fleet_port_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_fleet_port_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_port_settings)
 
-Boto3 documentation:
-[GameLift.Client.update_fleet_port_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_fleet_port_settings)
+```python title="Method definition"
+def update_fleet_port_settings(
+    self,
+    *,
+    FleetId: str,
+    InboundPermissionAuthorizations: Sequence[IpPermissionTypeDef] = ...,  # (1)
+    InboundPermissionRevocations: Sequence[IpPermissionTypeDef] = ...,  # (1)
+) -> UpdateFleetPortSettingsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFleetPortSettingsInputRequestTypeDef](./type_defs.md#updatefleetportsettingsinputrequesttypedef).
+1. See [:material-code-braces: IpPermissionTypeDef](./type_defs.md#ippermissiontypedef) 
+2. See [:material-code-braces: IpPermissionTypeDef](./type_defs.md#ippermissiontypedef) 
+3. See [:material-code-braces: UpdateFleetPortSettingsOutputTypeDef](./type_defs.md#updatefleetportsettingsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `InboundPermissionAuthorizations`:
-  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
-- `InboundPermissionRevocations`:
-  `Sequence`\[[IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateFleetPortSettingsInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+}
 
-Returns
-[UpdateFleetPortSettingsOutputTypeDef](./type_defs.md#updatefleetportsettingsoutputtypedef).
+parent.update_fleet_port_settings(**kwargs)
+```
 
-<a id="update\_game\_server"></a>
+1. See [:material-code-braces: UpdateFleetPortSettingsInputRequestTypeDef](./type_defs.md#updatefleetportsettingsinputrequesttypedef) 
 
-### update_game_server
+### update\_game\_server
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Updates information about a registered game server to help GameLift
 FleetIQ to track game server availability.
 
-Type annotations for `boto3.client("gamelift").update_game_server` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_game_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server)
 
-Boto3 documentation:
-[GameLift.Client.update_game_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server)
+```python title="Method definition"
+def update_game_server(
+    self,
+    *,
+    GameServerGroupName: str,
+    GameServerId: str,
+    GameServerData: str = ...,
+    UtilizationStatus: GameServerUtilizationStatusType = ...,  # (1)
+    HealthCheck: GameServerHealthCheckType = ...,  # (2)
+) -> UpdateGameServerOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGameServerInputRequestTypeDef](./type_defs.md#updategameserverinputrequesttypedef).
+1. See [:material-code-brackets: GameServerUtilizationStatusType](./literals.md#gameserverutilizationstatustype) 
+2. See [:material-code-brackets: GameServerHealthCheckType](./literals.md#gameserverhealthchecktype) 
+3. See [:material-code-braces: UpdateGameServerOutputTypeDef](./type_defs.md#updategameserveroutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `GameServerId`: `str` *(required)*
-- `GameServerData`: `str`
-- `UtilizationStatus`:
-  [GameServerUtilizationStatusType](./literals.md#gameserverutilizationstatustype)
-- `HealthCheck`: `Literal['HEALTHY']` (see
-  [GameServerHealthCheckType](./literals.md#gameserverhealthchecktype))
+```python title="Usage example with kwargs"
+kwargs: UpdateGameServerInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+    "GameServerId": ...,
+}
 
-Returns
-[UpdateGameServerOutputTypeDef](./type_defs.md#updategameserveroutputtypedef).
+parent.update_game_server(**kwargs)
+```
 
-<a id="update\_game\_server\_group"></a>
+1. See [:material-code-braces: UpdateGameServerInputRequestTypeDef](./type_defs.md#updategameserverinputrequesttypedef) 
 
-### update_game_server_group
+### update\_game\_server\_group
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Updates GameLift FleetIQ-specific properties for a game server group.
 
-Type annotations for `boto3.client("gamelift").update_game_server_group`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_game_server_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server_group)
 
-Boto3 documentation:
-[GameLift.Client.update_game_server_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_server_group)
+```python title="Method definition"
+def update_game_server_group(
+    self,
+    *,
+    GameServerGroupName: str,
+    RoleArn: str = ...,
+    InstanceDefinitions: Sequence[InstanceDefinitionTypeDef] = ...,  # (1)
+    GameServerProtectionPolicy: GameServerProtectionPolicyType = ...,  # (2)
+    BalancingStrategy: BalancingStrategyType = ...,  # (3)
+) -> UpdateGameServerGroupOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGameServerGroupInputRequestTypeDef](./type_defs.md#updategameservergroupinputrequesttypedef).
+1. See [:material-code-braces: InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef) 
+2. See [:material-code-brackets: GameServerProtectionPolicyType](./literals.md#gameserverprotectionpolicytype) 
+3. See [:material-code-brackets: BalancingStrategyType](./literals.md#balancingstrategytype) 
+4. See [:material-code-braces: UpdateGameServerGroupOutputTypeDef](./type_defs.md#updategameservergroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameServerGroupName`: `str` *(required)*
-- `RoleArn`: `str`
-- `InstanceDefinitions`:
-  `Sequence`\[[InstanceDefinitionTypeDef](./type_defs.md#instancedefinitiontypedef)\]
-- `GameServerProtectionPolicy`:
-  [GameServerProtectionPolicyType](./literals.md#gameserverprotectionpolicytype)
-- `BalancingStrategy`:
-  [BalancingStrategyType](./literals.md#balancingstrategytype)
+```python title="Usage example with kwargs"
+kwargs: UpdateGameServerGroupInputRequestTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+}
 
-Returns
-[UpdateGameServerGroupOutputTypeDef](./type_defs.md#updategameservergroupoutputtypedef).
+parent.update_game_server_group(**kwargs)
+```
 
-<a id="update\_game\_session"></a>
+1. See [:material-code-braces: UpdateGameServerGroupInputRequestTypeDef](./type_defs.md#updategameservergroupinputrequesttypedef) 
 
-### update_game_session
+### update\_game\_session
 
 Updates the mutable properties of a game session.
 
-Type annotations for `boto3.client("gamelift").update_game_session` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_game_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session)
 
-Boto3 documentation:
-[GameLift.Client.update_game_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session)
+```python title="Method definition"
+def update_game_session(
+    self,
+    *,
+    GameSessionId: str,
+    MaximumPlayerSessionCount: int = ...,
+    Name: str = ...,
+    PlayerSessionCreationPolicy: PlayerSessionCreationPolicyType = ...,  # (1)
+    ProtectionPolicy: ProtectionPolicyType = ...,  # (2)
+) -> UpdateGameSessionOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGameSessionInputRequestTypeDef](./type_defs.md#updategamesessioninputrequesttypedef).
+1. See [:material-code-brackets: PlayerSessionCreationPolicyType](./literals.md#playersessioncreationpolicytype) 
+2. See [:material-code-brackets: ProtectionPolicyType](./literals.md#protectionpolicytype) 
+3. See [:material-code-braces: UpdateGameSessionOutputTypeDef](./type_defs.md#updategamesessionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GameSessionId`: `str` *(required)*
-- `MaximumPlayerSessionCount`: `int`
-- `Name`: `str`
-- `PlayerSessionCreationPolicy`:
-  [PlayerSessionCreationPolicyType](./literals.md#playersessioncreationpolicytype)
-- `ProtectionPolicy`:
-  [ProtectionPolicyType](./literals.md#protectionpolicytype)
+```python title="Usage example with kwargs"
+kwargs: UpdateGameSessionInputRequestTypeDef = {  # (1)
+    "GameSessionId": ...,
+}
 
-Returns
-[UpdateGameSessionOutputTypeDef](./type_defs.md#updategamesessionoutputtypedef).
+parent.update_game_session(**kwargs)
+```
 
-<a id="update\_game\_session\_queue"></a>
+1. See [:material-code-braces: UpdateGameSessionInputRequestTypeDef](./type_defs.md#updategamesessioninputrequesttypedef) 
 
-### update_game_session_queue
+### update\_game\_session\_queue
 
 Updates the configuration of a game session queue, which determines how the
 queue processes new game session requests.
 
-Type annotations for `boto3.client("gamelift").update_game_session_queue`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_game_session_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session_queue)
 
-Boto3 documentation:
-[GameLift.Client.update_game_session_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_game_session_queue)
+```python title="Method definition"
+def update_game_session_queue(
+    self,
+    *,
+    Name: str,
+    TimeoutInSeconds: int = ...,
+    PlayerLatencyPolicies: Sequence[PlayerLatencyPolicyTypeDef] = ...,  # (1)
+    Destinations: Sequence[GameSessionQueueDestinationTypeDef] = ...,  # (2)
+    FilterConfiguration: FilterConfigurationTypeDef = ...,  # (3)
+    PriorityConfiguration: PriorityConfigurationTypeDef = ...,  # (4)
+    CustomEventData: str = ...,
+    NotificationTarget: str = ...,
+) -> UpdateGameSessionQueueOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGameSessionQueueInputRequestTypeDef](./type_defs.md#updategamesessionqueueinputrequesttypedef).
+1. See [:material-code-braces: PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef) 
+2. See [:material-code-braces: GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef) 
+3. See [:material-code-braces: FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef) 
+4. See [:material-code-braces: PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef) 
+5. See [:material-code-braces: UpdateGameSessionQueueOutputTypeDef](./type_defs.md#updategamesessionqueueoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `TimeoutInSeconds`: `int`
-- `PlayerLatencyPolicies`:
-  `Sequence`\[[PlayerLatencyPolicyTypeDef](./type_defs.md#playerlatencypolicytypedef)\]
-- `Destinations`:
-  `Sequence`\[[GameSessionQueueDestinationTypeDef](./type_defs.md#gamesessionqueuedestinationtypedef)\]
-- `FilterConfiguration`:
-  [FilterConfigurationTypeDef](./type_defs.md#filterconfigurationtypedef)
-- `PriorityConfiguration`:
-  [PriorityConfigurationTypeDef](./type_defs.md#priorityconfigurationtypedef)
-- `CustomEventData`: `str`
-- `NotificationTarget`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGameSessionQueueInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateGameSessionQueueOutputTypeDef](./type_defs.md#updategamesessionqueueoutputtypedef).
+parent.update_game_session_queue(**kwargs)
+```
 
-<a id="update\_matchmaking\_configuration"></a>
+1. See [:material-code-braces: UpdateGameSessionQueueInputRequestTypeDef](./type_defs.md#updategamesessionqueueinputrequesttypedef) 
 
-### update_matchmaking_configuration
+### update\_matchmaking\_configuration
 
 Updates settings for a FlexMatch matchmaking configuration.
 
-Type annotations for
-`boto3.client("gamelift").update_matchmaking_configuration` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_matchmaking_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_matchmaking_configuration)
 
-Boto3 documentation:
-[GameLift.Client.update_matchmaking_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_matchmaking_configuration)
+```python title="Method definition"
+def update_matchmaking_configuration(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    GameSessionQueueArns: Sequence[str] = ...,
+    RequestTimeoutSeconds: int = ...,
+    AcceptanceTimeoutSeconds: int = ...,
+    AcceptanceRequired: bool = ...,
+    RuleSetName: str = ...,
+    NotificationTarget: str = ...,
+    AdditionalPlayerCount: int = ...,
+    CustomEventData: str = ...,
+    GameProperties: Sequence[GamePropertyTypeDef] = ...,  # (1)
+    GameSessionData: str = ...,
+    BackfillMode: BackfillModeType = ...,  # (2)
+    FlexMatchMode: FlexMatchModeType = ...,  # (3)
+) -> UpdateMatchmakingConfigurationOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMatchmakingConfigurationInputRequestTypeDef](./type_defs.md#updatematchmakingconfigurationinputrequesttypedef).
+1. See [:material-code-braces: GamePropertyTypeDef](./type_defs.md#gamepropertytypedef) 
+2. See [:material-code-brackets: BackfillModeType](./literals.md#backfillmodetype) 
+3. See [:material-code-brackets: FlexMatchModeType](./literals.md#flexmatchmodetype) 
+4. See [:material-code-braces: UpdateMatchmakingConfigurationOutputTypeDef](./type_defs.md#updatematchmakingconfigurationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `GameSessionQueueArns`: `Sequence`\[`str`\]
-- `RequestTimeoutSeconds`: `int`
-- `AcceptanceTimeoutSeconds`: `int`
-- `AcceptanceRequired`: `bool`
-- `RuleSetName`: `str`
-- `NotificationTarget`: `str`
-- `AdditionalPlayerCount`: `int`
-- `CustomEventData`: `str`
-- `GameProperties`:
-  `Sequence`\[[GamePropertyTypeDef](./type_defs.md#gamepropertytypedef)\]
-- `GameSessionData`: `str`
-- `BackfillMode`: [BackfillModeType](./literals.md#backfillmodetype)
-- `FlexMatchMode`: [FlexMatchModeType](./literals.md#flexmatchmodetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateMatchmakingConfigurationInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateMatchmakingConfigurationOutputTypeDef](./type_defs.md#updatematchmakingconfigurationoutputtypedef).
+parent.update_matchmaking_configuration(**kwargs)
+```
 
-<a id="update\_runtime\_configuration"></a>
+1. See [:material-code-braces: UpdateMatchmakingConfigurationInputRequestTypeDef](./type_defs.md#updatematchmakingconfigurationinputrequesttypedef) 
 
-### update_runtime_configuration
+### update\_runtime\_configuration
 
 Updates the current runtime configuration for the specified fleet, which tells
 GameLift how to launch server processes on all instances in the fleet.
 
-Type annotations for `boto3.client("gamelift").update_runtime_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_runtime_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_runtime_configuration)
 
-Boto3 documentation:
-[GameLift.Client.update_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_runtime_configuration)
+```python title="Method definition"
+def update_runtime_configuration(
+    self,
+    *,
+    FleetId: str,
+    RuntimeConfiguration: RuntimeConfigurationTypeDef,  # (1)
+) -> UpdateRuntimeConfigurationOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRuntimeConfigurationInputRequestTypeDef](./type_defs.md#updateruntimeconfigurationinputrequesttypedef).
+1. See [:material-code-braces: RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef) 
+2. See [:material-code-braces: UpdateRuntimeConfigurationOutputTypeDef](./type_defs.md#updateruntimeconfigurationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FleetId`: `str` *(required)*
-- `RuntimeConfiguration`:
-  [RuntimeConfigurationTypeDef](./type_defs.md#runtimeconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRuntimeConfigurationInputRequestTypeDef = {  # (1)
+    "FleetId": ...,
+    "RuntimeConfiguration": ...,
+}
 
-Returns
-[UpdateRuntimeConfigurationOutputTypeDef](./type_defs.md#updateruntimeconfigurationoutputtypedef).
+parent.update_runtime_configuration(**kwargs)
+```
 
-<a id="update\_script"></a>
+1. See [:material-code-braces: UpdateRuntimeConfigurationInputRequestTypeDef](./type_defs.md#updateruntimeconfigurationinputrequesttypedef) 
 
-### update_script
+### update\_script
 
 Updates Realtime script metadata and content.
 
-Type annotations for `boto3.client("gamelift").update_script` method.
+Type annotations and code completion for `#!python boto3.client("gamelift").update_script` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_script)
 
-Boto3 documentation:
-[GameLift.Client.update_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.update_script)
+```python title="Method definition"
+def update_script(
+    self,
+    *,
+    ScriptId: str,
+    Name: str = ...,
+    Version: str = ...,
+    StorageLocation: S3LocationTypeDef = ...,  # (1)
+    ZipFile: Union[bytes, IO[bytes], StreamingBody] = ...,
+) -> UpdateScriptOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateScriptInputRequestTypeDef](./type_defs.md#updatescriptinputrequesttypedef).
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: UpdateScriptOutputTypeDef](./type_defs.md#updatescriptoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ScriptId`: `str` *(required)*
-- `Name`: `str`
-- `Version`: `str`
-- `StorageLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateScriptInputRequestTypeDef = {  # (1)
+    "ScriptId": ...,
+}
 
-Returns [UpdateScriptOutputTypeDef](./type_defs.md#updatescriptoutputtypedef).
+parent.update_script(**kwargs)
+```
 
-<a id="validate\_matchmaking\_rule\_set"></a>
+1. See [:material-code-braces: UpdateScriptInputRequestTypeDef](./type_defs.md#updatescriptinputrequesttypedef) 
 
-### validate_matchmaking_rule_set
+### validate\_matchmaking\_rule\_set
 
 Validates the syntax of a matchmaking rule or rule set.
 
-Type annotations for `boto3.client("gamelift").validate_matchmaking_rule_set`
-method.
+Type annotations and code completion for `#!python boto3.client("gamelift").validate_matchmaking_rule_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.validate_matchmaking_rule_set)
 
-Boto3 documentation:
-[GameLift.Client.validate_matchmaking_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client.validate_matchmaking_rule_set)
+```python title="Method definition"
+def validate_matchmaking_rule_set(
+    self,
+    *,
+    RuleSetBody: str,
+) -> ValidateMatchmakingRuleSetOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ValidateMatchmakingRuleSetInputRequestTypeDef](./type_defs.md#validatematchmakingrulesetinputrequesttypedef).
+1. See [:material-code-braces: ValidateMatchmakingRuleSetOutputTypeDef](./type_defs.md#validatematchmakingrulesetoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RuleSetBody`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ValidateMatchmakingRuleSetInputRequestTypeDef = {  # (1)
+    "RuleSetBody": ...,
+}
 
-Returns
-[ValidateMatchmakingRuleSetOutputTypeDef](./type_defs.md#validatematchmakingrulesetoutputtypedef).
+parent.validate_matchmaking_rule_set(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ValidateMatchmakingRuleSetInputRequestTypeDef](./type_defs.md#validatematchmakingrulesetinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("gamelift").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_fleet_attributes")` ->
-  [DescribeFleetAttributesPaginator](./paginators.md#describefleetattributespaginator)
-- `client.get_paginator("describe_fleet_capacity")` ->
-  [DescribeFleetCapacityPaginator](./paginators.md#describefleetcapacitypaginator)
-- `client.get_paginator("describe_fleet_events")` ->
-  [DescribeFleetEventsPaginator](./paginators.md#describefleeteventspaginator)
-- `client.get_paginator("describe_fleet_utilization")` ->
-  [DescribeFleetUtilizationPaginator](./paginators.md#describefleetutilizationpaginator)
-- `client.get_paginator("describe_game_server_instances")` ->
-  [DescribeGameServerInstancesPaginator](./paginators.md#describegameserverinstancespaginator)
-- `client.get_paginator("describe_game_session_details")` ->
-  [DescribeGameSessionDetailsPaginator](./paginators.md#describegamesessiondetailspaginator)
-- `client.get_paginator("describe_game_session_queues")` ->
-  [DescribeGameSessionQueuesPaginator](./paginators.md#describegamesessionqueuespaginator)
-- `client.get_paginator("describe_game_sessions")` ->
-  [DescribeGameSessionsPaginator](./paginators.md#describegamesessionspaginator)
-- `client.get_paginator("describe_instances")` ->
-  [DescribeInstancesPaginator](./paginators.md#describeinstancespaginator)
-- `client.get_paginator("describe_matchmaking_configurations")` ->
-  [DescribeMatchmakingConfigurationsPaginator](./paginators.md#describematchmakingconfigurationspaginator)
-- `client.get_paginator("describe_matchmaking_rule_sets")` ->
-  [DescribeMatchmakingRuleSetsPaginator](./paginators.md#describematchmakingrulesetspaginator)
-- `client.get_paginator("describe_player_sessions")` ->
-  [DescribePlayerSessionsPaginator](./paginators.md#describeplayersessionspaginator)
-- `client.get_paginator("describe_scaling_policies")` ->
-  [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
-- `client.get_paginator("list_aliases")` ->
-  [ListAliasesPaginator](./paginators.md#listaliasespaginator)
-- `client.get_paginator("list_builds")` ->
-  [ListBuildsPaginator](./paginators.md#listbuildspaginator)
-- `client.get_paginator("list_fleets")` ->
-  [ListFleetsPaginator](./paginators.md#listfleetspaginator)
-- `client.get_paginator("list_game_server_groups")` ->
-  [ListGameServerGroupsPaginator](./paginators.md#listgameservergroupspaginator)
-- `client.get_paginator("list_game_servers")` ->
-  [ListGameServersPaginator](./paginators.md#listgameserverspaginator)
-- `client.get_paginator("list_scripts")` ->
-  [ListScriptsPaginator](./paginators.md#listscriptspaginator)
-- `client.get_paginator("search_game_sessions")` ->
-  [SearchGameSessionsPaginator](./paginators.md#searchgamesessionspaginator)
+- `client.get_paginator("describe_fleet_attributes")` -> [DescribeFleetAttributesPaginator](./paginators.md#describefleetattributespaginator)
+- `client.get_paginator("describe_fleet_capacity")` -> [DescribeFleetCapacityPaginator](./paginators.md#describefleetcapacitypaginator)
+- `client.get_paginator("describe_fleet_events")` -> [DescribeFleetEventsPaginator](./paginators.md#describefleeteventspaginator)
+- `client.get_paginator("describe_fleet_utilization")` -> [DescribeFleetUtilizationPaginator](./paginators.md#describefleetutilizationpaginator)
+- `client.get_paginator("describe_game_server_instances")` -> [DescribeGameServerInstancesPaginator](./paginators.md#describegameserverinstancespaginator)
+- `client.get_paginator("describe_game_session_details")` -> [DescribeGameSessionDetailsPaginator](./paginators.md#describegamesessiondetailspaginator)
+- `client.get_paginator("describe_game_session_queues")` -> [DescribeGameSessionQueuesPaginator](./paginators.md#describegamesessionqueuespaginator)
+- `client.get_paginator("describe_game_sessions")` -> [DescribeGameSessionsPaginator](./paginators.md#describegamesessionspaginator)
+- `client.get_paginator("describe_instances")` -> [DescribeInstancesPaginator](./paginators.md#describeinstancespaginator)
+- `client.get_paginator("describe_matchmaking_configurations")` -> [DescribeMatchmakingConfigurationsPaginator](./paginators.md#describematchmakingconfigurationspaginator)
+- `client.get_paginator("describe_matchmaking_rule_sets")` -> [DescribeMatchmakingRuleSetsPaginator](./paginators.md#describematchmakingrulesetspaginator)
+- `client.get_paginator("describe_player_sessions")` -> [DescribePlayerSessionsPaginator](./paginators.md#describeplayersessionspaginator)
+- `client.get_paginator("describe_scaling_policies")` -> [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
+- `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+- `client.get_paginator("list_builds")` -> [ListBuildsPaginator](./paginators.md#listbuildspaginator)
+- `client.get_paginator("list_fleets")` -> [ListFleetsPaginator](./paginators.md#listfleetspaginator)
+- `client.get_paginator("list_game_server_groups")` -> [ListGameServerGroupsPaginator](./paginators.md#listgameservergroupspaginator)
+- `client.get_paginator("list_game_servers")` -> [ListGameServersPaginator](./paginators.md#listgameserverspaginator)
+- `client.get_paginator("list_scripts")` -> [ListScriptsPaginator](./paginators.md#listscriptspaginator)
+- `client.get_paginator("search_game_sessions")` -> [SearchGameSessionsPaginator](./paginators.md#searchgamesessionspaginator)
+
+
+

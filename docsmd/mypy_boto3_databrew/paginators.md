@@ -1,33 +1,18 @@
-<a id="paginators-for-boto3-gluedatabrew-module"></a>
-
-# Paginators for boto3 GlueDataBrew module
+# Paginators
 
 > [Index](../README.md) > [GlueDataBrew](./README.md) > Paginators
 
-Auto-generated documentation for
-[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
-type annotations stubs module
-[mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
+!!! note ""
 
-- [Paginators for boto3 GlueDataBrew module](#paginators-for-boto3-gluedatabrew-module)
-  - [ListDatasetsPaginator](#listdatasetspaginator)
-  - [ListJobRunsPaginator](#listjobrunspaginator)
-  - [ListJobsPaginator](#listjobspaginator)
-  - [ListProjectsPaginator](#listprojectspaginator)
-  - [ListRecipeVersionsPaginator](#listrecipeversionspaginator)
-  - [ListRecipesPaginator](#listrecipespaginator)
-  - [ListRulesetsPaginator](#listrulesetspaginator)
-  - [ListSchedulesPaginator](#listschedulespaginator)
-
-<a id="listdatasetspaginator"></a>
+    Auto-generated documentation for [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
+    type annotations stubs module [mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 ## ListDatasetsPaginator
 
-Type annotations for `boto3.client("databrew").get_paginator("list_datasets")`.
+Type annotations and code completion for `#!python boto3.client("databrew").get_paginator("list_datasets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListDatasets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_databrew.paginator import ListDatasetsPaginator
@@ -36,26 +21,39 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return Session().client("databrew").get_paginator("list_datasets")
 ```
 
-Boto3 documentation:
-[GlueDataBrew.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListDatasets)
 
-Arguments for `ListDatasetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetsPaginator.paginate` method.
 
-`ListDatasetsPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatasetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listjobrunspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestListDatasetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef) 
 ## ListJobRunsPaginator
 
-Type annotations for `boto3.client("databrew").get_paginator("list_job_runs")`.
+Type annotations and code completion for `#!python boto3.client("databrew").get_paginator("list_job_runs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobRuns)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_databrew.paginator import ListJobRunsPaginator
@@ -64,27 +62,40 @@ def get_list_job_runs_paginator() -> ListJobRunsPaginator:
     return Session().client("databrew").get_paginator("list_job_runs")
 ```
 
-Boto3 documentation:
-[GlueDataBrew.Paginator.ListJobRuns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobRuns)
 
-Arguments for `ListJobRunsPaginator.paginate` method:
+### paginate
 
-- `Name`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobRunsPaginator.paginate` method.
 
-`ListJobRunsPaginator.paginate` returns
-`_PageIterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Name: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListJobRunsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listjobspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobRunsRequestListJobRunsPaginateTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobRunsRequestListJobRunsPaginateTypeDef](./type_defs.md#listjobrunsrequestlistjobrunspaginatetypedef) 
 ## ListJobsPaginator
 
-Type annotations for `boto3.client("databrew").get_paginator("list_jobs")`.
+Type annotations and code completion for `#!python boto3.client("databrew").get_paginator("list_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_databrew.paginator import ListJobsPaginator
@@ -93,28 +104,41 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("databrew").get_paginator("list_jobs")
 ```
 
-Boto3 documentation:
-[GlueDataBrew.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListJobs)
 
-Arguments for `ListJobsPaginator.paginate` method:
+### paginate
 
-- `DatasetName`: `str`
-- `ProjectName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobsPaginator.paginate` method.
 
-`ListJobsPaginator.paginate` returns
-`_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DatasetName: str = ...,
+    ProjectName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListJobsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listprojectspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestListJobsPaginateTypeDef = {  # (1)
+    "DatasetName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef) 
 ## ListProjectsPaginator
 
-Type annotations for `boto3.client("databrew").get_paginator("list_projects")`.
+Type annotations and code completion for `#!python boto3.client("databrew").get_paginator("list_projects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListProjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_databrew.paginator import ListProjectsPaginator
@@ -123,27 +147,39 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("databrew").get_paginator("list_projects")
 ```
 
-Boto3 documentation:
-[GlueDataBrew.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListProjects)
 
-Arguments for `ListProjectsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListProjectsPaginator.paginate` method.
 
-`ListProjectsPaginator.paginate` returns
-`_PageIterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListProjectsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrecipeversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestListProjectsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef) 
 ## ListRecipeVersionsPaginator
 
-Type annotations for
-`boto3.client("databrew").get_paginator("list_recipe_versions")`.
+Type annotations and code completion for `#!python boto3.client("databrew").get_paginator("list_recipe_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipeVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_databrew.paginator import ListRecipeVersionsPaginator
@@ -152,27 +188,40 @@ def get_list_recipe_versions_paginator() -> ListRecipeVersionsPaginator:
     return Session().client("databrew").get_paginator("list_recipe_versions")
 ```
 
-Boto3 documentation:
-[GlueDataBrew.Paginator.ListRecipeVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipeVersions)
 
-Arguments for `ListRecipeVersionsPaginator.paginate` method:
+### paginate
 
-- `Name`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRecipeVersionsPaginator.paginate` method.
 
-`ListRecipeVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Name: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRecipeVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrecipespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRecipeVersionsRequestListRecipeVersionsPaginateTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRecipeVersionsRequestListRecipeVersionsPaginateTypeDef](./type_defs.md#listrecipeversionsrequestlistrecipeversionspaginatetypedef) 
 ## ListRecipesPaginator
 
-Type annotations for `boto3.client("databrew").get_paginator("list_recipes")`.
+Type annotations and code completion for `#!python boto3.client("databrew").get_paginator("list_recipes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_databrew.paginator import ListRecipesPaginator
@@ -181,27 +230,40 @@ def get_list_recipes_paginator() -> ListRecipesPaginator:
     return Session().client("databrew").get_paginator("list_recipes")
 ```
 
-Boto3 documentation:
-[GlueDataBrew.Paginator.ListRecipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRecipes)
 
-Arguments for `ListRecipesPaginator.paginate` method:
+### paginate
 
-- `RecipeVersion`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRecipesPaginator.paginate` method.
 
-`ListRecipesPaginator.paginate` returns
-`_PageIterator`\[[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RecipeVersion: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRecipesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrulesetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRecipesRequestListRecipesPaginateTypeDef = {  # (1)
+    "RecipeVersion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRecipesRequestListRecipesPaginateTypeDef](./type_defs.md#listrecipesrequestlistrecipespaginatetypedef) 
 ## ListRulesetsPaginator
 
-Type annotations for `boto3.client("databrew").get_paginator("list_rulesets")`.
+Type annotations and code completion for `#!python boto3.client("databrew").get_paginator("list_rulesets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRulesets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_databrew.paginator import ListRulesetsPaginator
@@ -210,28 +272,40 @@ def get_list_rulesets_paginator() -> ListRulesetsPaginator:
     return Session().client("databrew").get_paginator("list_rulesets")
 ```
 
-Boto3 documentation:
-[GlueDataBrew.Paginator.ListRulesets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListRulesets)
 
-Arguments for `ListRulesetsPaginator.paginate` method:
+### paginate
 
-- `TargetArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRulesetsPaginator.paginate` method.
 
-`ListRulesetsPaginator.paginate` returns
-`_PageIterator`\[[ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TargetArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRulesetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listschedulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRulesetsRequestListRulesetsPaginateTypeDef = {  # (1)
+    "TargetArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRulesetsRequestListRulesetsPaginateTypeDef](./type_defs.md#listrulesetsrequestlistrulesetspaginatetypedef) 
 ## ListSchedulesPaginator
 
-Type annotations for
-`boto3.client("databrew").get_paginator("list_schedules")`.
+Type annotations and code completion for `#!python boto3.client("databrew").get_paginator("list_schedules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListSchedules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_databrew.paginator import ListSchedulesPaginator
@@ -240,14 +314,31 @@ def get_list_schedules_paginator() -> ListSchedulesPaginator:
     return Session().client("databrew").get_paginator("list_schedules")
 ```
 
-Boto3 documentation:
-[GlueDataBrew.Paginator.ListSchedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Paginator.ListSchedules)
 
-Arguments for `ListSchedulesPaginator.paginate` method:
+### paginate
 
-- `JobName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSchedulesPaginator.paginate` method.
 
-`ListSchedulesPaginator.paginate` returns
-`_PageIterator`\[[ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    JobName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSchedulesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSchedulesRequestListSchedulesPaginateTypeDef = {  # (1)
+    "JobName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSchedulesRequestListSchedulesPaginateTypeDef](./type_defs.md#listschedulesrequestlistschedulespaginatetypedef) 

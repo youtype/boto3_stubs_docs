@@ -1,89 +1,18 @@
-<a id="macie2client-for-boto3-macie2-module"></a>
-
-# Macie2Client for boto3 Macie2 module
+# Macie2Client
 
 > [Index](../README.md) > [Macie2](./README.md) > Macie2Client
 
-Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
-type annotations stubs module
-[mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
+!!! note ""
 
-- [Macie2Client for boto3 Macie2 module](#macie2client-for-boto3-macie2-module)
-  - [Macie2Client](#macie2client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_invitation](#accept_invitation)
-    - [batch_get_custom_data_identifiers](#batch_get_custom_data_identifiers)
-    - [can_paginate](#can_paginate)
-    - [create_classification_job](#create_classification_job)
-    - [create_custom_data_identifier](#create_custom_data_identifier)
-    - [create_findings_filter](#create_findings_filter)
-    - [create_invitations](#create_invitations)
-    - [create_member](#create_member)
-    - [create_sample_findings](#create_sample_findings)
-    - [decline_invitations](#decline_invitations)
-    - [delete_custom_data_identifier](#delete_custom_data_identifier)
-    - [delete_findings_filter](#delete_findings_filter)
-    - [delete_invitations](#delete_invitations)
-    - [delete_member](#delete_member)
-    - [describe_buckets](#describe_buckets)
-    - [describe_classification_job](#describe_classification_job)
-    - [describe_organization_configuration](#describe_organization_configuration)
-    - [disable_macie](#disable_macie)
-    - [disable_organization_admin_account](#disable_organization_admin_account)
-    - [disassociate_from_administrator_account](#disassociate_from_administrator_account)
-    - [disassociate_from_master_account](#disassociate_from_master_account)
-    - [disassociate_member](#disassociate_member)
-    - [enable_macie](#enable_macie)
-    - [enable_organization_admin_account](#enable_organization_admin_account)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_administrator_account](#get_administrator_account)
-    - [get_bucket_statistics](#get_bucket_statistics)
-    - [get_classification_export_configuration](#get_classification_export_configuration)
-    - [get_custom_data_identifier](#get_custom_data_identifier)
-    - [get_finding_statistics](#get_finding_statistics)
-    - [get_findings](#get_findings)
-    - [get_findings_filter](#get_findings_filter)
-    - [get_findings_publication_configuration](#get_findings_publication_configuration)
-    - [get_invitations_count](#get_invitations_count)
-    - [get_macie_session](#get_macie_session)
-    - [get_master_account](#get_master_account)
-    - [get_member](#get_member)
-    - [get_usage_statistics](#get_usage_statistics)
-    - [get_usage_totals](#get_usage_totals)
-    - [list_classification_jobs](#list_classification_jobs)
-    - [list_custom_data_identifiers](#list_custom_data_identifiers)
-    - [list_findings](#list_findings)
-    - [list_findings_filters](#list_findings_filters)
-    - [list_invitations](#list_invitations)
-    - [list_managed_data_identifiers](#list_managed_data_identifiers)
-    - [list_members](#list_members)
-    - [list_organization_admin_accounts](#list_organization_admin_accounts)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_classification_export_configuration](#put_classification_export_configuration)
-    - [put_findings_publication_configuration](#put_findings_publication_configuration)
-    - [search_resources](#search_resources)
-    - [tag_resource](#tag_resource)
-    - [test_custom_data_identifier](#test_custom_data_identifier)
-    - [untag_resource](#untag_resource)
-    - [update_classification_job](#update_classification_job)
-    - [update_findings_filter](#update_findings_filter)
-    - [update_macie_session](#update_macie_session)
-    - [update_member_session](#update_member_session)
-    - [update_organization_configuration](#update_organization_configuration)
-    - [get_paginator](#get_paginator)
-
-<a id="macie2client"></a>
+    Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+    type annotations stubs module [mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 ## Macie2Client
 
-Type annotations for `boto3.client("macie2")`
+Type annotations and code completion for `#!python boto3.client("macie2")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_macie2.client import Macie2Client
 
@@ -91,1370 +20,1747 @@ def get_macie2_client() -> Macie2Client:
     return Session().client("macie2")
 ```
 
-Boto3 documentation:
-[Macie2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("macie2").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("macie2")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_macie2.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-Macie2Client exceptions.
-
-Type annotations for `boto3.client("macie2").exceptions` method.
-
-Boto3 documentation:
-[Macie2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_invitation"></a>
-
-### accept_invitation
+### accept\_invitation
 
 Accepts an Amazon Macie membership invitation that was received from a specific
 account.
 
-Type annotations for `boto3.client("macie2").accept_invitation` method.
+Type annotations and code completion for `#!python boto3.client("macie2").accept_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.accept_invitation)
 
-Boto3 documentation:
-[Macie2.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.accept_invitation)
+```python title="Method definition"
+def accept_invitation(
+    self,
+    *,
+    invitationId: str,
+    administratorAccountId: str = ...,
+    masterAccount: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `invitationId`: `str` *(required)*
-- `administratorAccountId`: `str`
-- `masterAccount`: `str`
+```python title="Usage example with kwargs"
+kwargs: AcceptInvitationRequestRequestTypeDef = {  # (1)
+    "invitationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.accept_invitation(**kwargs)
+```
 
-<a id="batch\_get\_custom\_data\_identifiers"></a>
+1. See [:material-code-braces: AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef) 
 
-### batch_get_custom_data_identifiers
+### batch\_get\_custom\_data\_identifiers
 
 Retrieves information about one or more custom data identifiers.
 
-Type annotations for `boto3.client("macie2").batch_get_custom_data_identifiers`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").batch_get_custom_data_identifiers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.batch_get_custom_data_identifiers)
 
-Boto3 documentation:
-[Macie2.Client.batch_get_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.batch_get_custom_data_identifiers)
+```python title="Method definition"
+def batch_get_custom_data_identifiers(
+    self,
+    *,
+    ids: Sequence[str] = ...,
+) -> BatchGetCustomDataIdentifiersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetCustomDataIdentifiersRequestRequestTypeDef](./type_defs.md#batchgetcustomdataidentifiersrequestrequesttypedef).
+1. See [:material-code-braces: BatchGetCustomDataIdentifiersResponseTypeDef](./type_defs.md#batchgetcustomdataidentifiersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ids`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: BatchGetCustomDataIdentifiersRequestRequestTypeDef = {  # (1)
+    "ids": ...,
+}
 
-Returns
-[BatchGetCustomDataIdentifiersResponseTypeDef](./type_defs.md#batchgetcustomdataidentifiersresponsetypedef).
+parent.batch_get_custom_data_identifiers(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchGetCustomDataIdentifiersRequestRequestTypeDef](./type_defs.md#batchgetcustomdataidentifiersrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("macie2").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("macie2").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.can_paginate)
 
-Boto3 documentation:
-[Macie2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_classification\_job"></a>
-
-### create_classification_job
+### create\_classification\_job
 
 Creates and defines the settings for a classification job.
 
-Type annotations for `boto3.client("macie2").create_classification_job` method.
+Type annotations and code completion for `#!python boto3.client("macie2").create_classification_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_classification_job)
 
-Boto3 documentation:
-[Macie2.Client.create_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_classification_job)
+```python title="Method definition"
+def create_classification_job(
+    self,
+    *,
+    clientToken: str,
+    jobType: JobTypeType,  # (1)
+    name: str,
+    s3JobDefinition: S3JobDefinitionTypeDef,  # (2)
+    customDataIdentifierIds: Sequence[str] = ...,
+    description: str = ...,
+    initialRun: bool = ...,
+    managedDataIdentifierIds: Sequence[str] = ...,
+    managedDataIdentifierSelector: ManagedDataIdentifierSelectorType = ...,  # (3)
+    samplingPercentage: int = ...,
+    scheduleFrequency: JobScheduleFrequencyTypeDef = ...,  # (4)
+    tags: Mapping[str, str] = ...,
+) -> CreateClassificationJobResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateClassificationJobRequestRequestTypeDef](./type_defs.md#createclassificationjobrequestrequesttypedef).
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef) 
+3. See [:material-code-brackets: ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype) 
+4. See [:material-code-braces: JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef) 
+5. See [:material-code-braces: CreateClassificationJobResponseTypeDef](./type_defs.md#createclassificationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientToken`: `str` *(required)*
-- `jobType`: [JobTypeType](./literals.md#jobtypetype) *(required)*
-- `name`: `str` *(required)*
-- `s3JobDefinition`:
-  [S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef) *(required)*
-- `customDataIdentifierIds`: `Sequence`\[`str`\]
-- `description`: `str`
-- `initialRun`: `bool`
-- `managedDataIdentifierIds`: `Sequence`\[`str`\]
-- `managedDataIdentifierSelector`:
-  [ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype)
-- `samplingPercentage`: `int`
-- `scheduleFrequency`:
-  [JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateClassificationJobRequestRequestTypeDef = {  # (1)
+    "clientToken": ...,
+    "jobType": ...,
+    "name": ...,
+    "s3JobDefinition": ...,
+}
 
-Returns
-[CreateClassificationJobResponseTypeDef](./type_defs.md#createclassificationjobresponsetypedef).
+parent.create_classification_job(**kwargs)
+```
 
-<a id="create\_custom\_data\_identifier"></a>
+1. See [:material-code-braces: CreateClassificationJobRequestRequestTypeDef](./type_defs.md#createclassificationjobrequestrequesttypedef) 
 
-### create_custom_data_identifier
+### create\_custom\_data\_identifier
 
 Creates and defines the criteria and other settings for a custom data
 identifier.
 
-Type annotations for `boto3.client("macie2").create_custom_data_identifier`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").create_custom_data_identifier` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_custom_data_identifier)
 
-Boto3 documentation:
-[Macie2.Client.create_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_custom_data_identifier)
+```python title="Method definition"
+def create_custom_data_identifier(
+    self,
+    *,
+    name: str,
+    regex: str,
+    clientToken: str = ...,
+    description: str = ...,
+    ignoreWords: Sequence[str] = ...,
+    keywords: Sequence[str] = ...,
+    maximumMatchDistance: int = ...,
+    severityLevels: Sequence[SeverityLevelTypeDef] = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> CreateCustomDataIdentifierResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#createcustomdataidentifierrequestrequesttypedef).
+1. See [:material-code-braces: SeverityLevelTypeDef](./type_defs.md#severityleveltypedef) 
+2. See [:material-code-braces: CreateCustomDataIdentifierResponseTypeDef](./type_defs.md#createcustomdataidentifierresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `regex`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `ignoreWords`: `Sequence`\[`str`\]
-- `keywords`: `Sequence`\[`str`\]
-- `maximumMatchDistance`: `int`
-- `severityLevels`:
-  `Sequence`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateCustomDataIdentifierRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "regex": ...,
+}
 
-Returns
-[CreateCustomDataIdentifierResponseTypeDef](./type_defs.md#createcustomdataidentifierresponsetypedef).
+parent.create_custom_data_identifier(**kwargs)
+```
 
-<a id="create\_findings\_filter"></a>
+1. See [:material-code-braces: CreateCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#createcustomdataidentifierrequestrequesttypedef) 
 
-### create_findings_filter
+### create\_findings\_filter
 
 Creates and defines the criteria and other settings for a findings filter.
 
-Type annotations for `boto3.client("macie2").create_findings_filter` method.
+Type annotations and code completion for `#!python boto3.client("macie2").create_findings_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_findings_filter)
 
-Boto3 documentation:
-[Macie2.Client.create_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_findings_filter)
+```python title="Method definition"
+def create_findings_filter(
+    self,
+    *,
+    action: FindingsFilterActionType,  # (1)
+    findingCriteria: FindingCriteriaTypeDef,  # (2)
+    name: str,
+    clientToken: str = ...,
+    description: str = ...,
+    position: int = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateFindingsFilterResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateFindingsFilterRequestRequestTypeDef](./type_defs.md#createfindingsfilterrequestrequesttypedef).
+1. See [:material-code-brackets: FindingsFilterActionType](./literals.md#findingsfilteractiontype) 
+2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+3. See [:material-code-braces: CreateFindingsFilterResponseTypeDef](./type_defs.md#createfindingsfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
-  *(required)*
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) *(required)*
-- `name`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `position`: `int`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFindingsFilterRequestRequestTypeDef = {  # (1)
+    "action": ...,
+    "findingCriteria": ...,
+    "name": ...,
+}
 
-Returns
-[CreateFindingsFilterResponseTypeDef](./type_defs.md#createfindingsfilterresponsetypedef).
+parent.create_findings_filter(**kwargs)
+```
 
-<a id="create\_invitations"></a>
+1. See [:material-code-braces: CreateFindingsFilterRequestRequestTypeDef](./type_defs.md#createfindingsfilterrequestrequesttypedef) 
 
-### create_invitations
+### create\_invitations
 
 Sends an Amazon Macie membership invitation to one or more accounts.
 
-Type annotations for `boto3.client("macie2").create_invitations` method.
+Type annotations and code completion for `#!python boto3.client("macie2").create_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_invitations)
 
-Boto3 documentation:
-[Macie2.Client.create_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_invitations)
+```python title="Method definition"
+def create_invitations(
+    self,
+    *,
+    accountIds: Sequence[str],
+    disableEmailNotification: bool = ...,
+    message: str = ...,
+) -> CreateInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateInvitationsRequestRequestTypeDef](./type_defs.md#createinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: CreateInvitationsResponseTypeDef](./type_defs.md#createinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountIds`: `Sequence`\[`str`\] *(required)*
-- `disableEmailNotification`: `bool`
-- `message`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateInvitationsRequestRequestTypeDef = {  # (1)
+    "accountIds": ...,
+}
 
-Returns
-[CreateInvitationsResponseTypeDef](./type_defs.md#createinvitationsresponsetypedef).
+parent.create_invitations(**kwargs)
+```
 
-<a id="create\_member"></a>
+1. See [:material-code-braces: CreateInvitationsRequestRequestTypeDef](./type_defs.md#createinvitationsrequestrequesttypedef) 
 
-### create_member
+### create\_member
 
 Associates an account with an Amazon Macie administrator account.
 
-Type annotations for `boto3.client("macie2").create_member` method.
+Type annotations and code completion for `#!python boto3.client("macie2").create_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_member)
 
-Boto3 documentation:
-[Macie2.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_member)
+```python title="Method definition"
+def create_member(
+    self,
+    *,
+    account: AccountDetailTypeDef,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> CreateMemberResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMemberRequestRequestTypeDef](./type_defs.md#creatememberrequestrequesttypedef).
+1. See [:material-code-braces: AccountDetailTypeDef](./type_defs.md#accountdetailtypedef) 
+2. See [:material-code-braces: CreateMemberResponseTypeDef](./type_defs.md#creatememberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `account`: [AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)
-  *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateMemberRequestRequestTypeDef = {  # (1)
+    "account": ...,
+}
 
-Returns
-[CreateMemberResponseTypeDef](./type_defs.md#creatememberresponsetypedef).
+parent.create_member(**kwargs)
+```
 
-<a id="create\_sample\_findings"></a>
+1. See [:material-code-braces: CreateMemberRequestRequestTypeDef](./type_defs.md#creatememberrequestrequesttypedef) 
 
-### create_sample_findings
+### create\_sample\_findings
 
 Creates sample findings.
 
-Type annotations for `boto3.client("macie2").create_sample_findings` method.
+Type annotations and code completion for `#!python boto3.client("macie2").create_sample_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_sample_findings)
 
-Boto3 documentation:
-[Macie2.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.create_sample_findings)
+```python title="Method definition"
+def create_sample_findings(
+    self,
+    *,
+    findingTypes: Sequence[FindingTypeType] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateSampleFindingsRequestRequestTypeDef](./type_defs.md#createsamplefindingsrequestrequesttypedef).
+1. See [:material-code-brackets: FindingTypeType](./literals.md#findingtypetype) 
 
-Keyword-only arguments:
 
-- `findingTypes`:
-  `Sequence`\[[FindingTypeType](./literals.md#findingtypetype)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSampleFindingsRequestRequestTypeDef = {  # (1)
+    "findingTypes": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_sample_findings(**kwargs)
+```
 
-<a id="decline\_invitations"></a>
+1. See [:material-code-braces: CreateSampleFindingsRequestRequestTypeDef](./type_defs.md#createsamplefindingsrequestrequesttypedef) 
 
-### decline_invitations
+### decline\_invitations
 
 Declines Amazon Macie membership invitations that were received from specific
 accounts.
 
-Type annotations for `boto3.client("macie2").decline_invitations` method.
+Type annotations and code completion for `#!python boto3.client("macie2").decline_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.decline_invitations)
 
-Boto3 documentation:
-[Macie2.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.decline_invitations)
+```python title="Method definition"
+def decline_invitations(
+    self,
+    *,
+    accountIds: Sequence[str],
+) -> DeclineInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeclineInvitationsRequestRequestTypeDef](./type_defs.md#declineinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeclineInvitationsRequestRequestTypeDef = {  # (1)
+    "accountIds": ...,
+}
 
-Returns
-[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
+parent.decline_invitations(**kwargs)
+```
 
-<a id="delete\_custom\_data\_identifier"></a>
+1. See [:material-code-braces: DeclineInvitationsRequestRequestTypeDef](./type_defs.md#declineinvitationsrequestrequesttypedef) 
 
-### delete_custom_data_identifier
+### delete\_custom\_data\_identifier
 
 Soft deletes a custom data identifier.
 
-Type annotations for `boto3.client("macie2").delete_custom_data_identifier`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").delete_custom_data_identifier` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_custom_data_identifier)
 
-Boto3 documentation:
-[Macie2.Client.delete_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_custom_data_identifier)
+```python title="Method definition"
+def delete_custom_data_identifier(
+    self,
+    *,
+    id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#deletecustomdataidentifierrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomDataIdentifierRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_custom_data_identifier(**kwargs)
+```
 
-<a id="delete\_findings\_filter"></a>
+1. See [:material-code-braces: DeleteCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#deletecustomdataidentifierrequestrequesttypedef) 
 
-### delete_findings_filter
+### delete\_findings\_filter
 
 Deletes a findings filter.
 
-Type annotations for `boto3.client("macie2").delete_findings_filter` method.
+Type annotations and code completion for `#!python boto3.client("macie2").delete_findings_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_findings_filter)
 
-Boto3 documentation:
-[Macie2.Client.delete_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_findings_filter)
+```python title="Method definition"
+def delete_findings_filter(
+    self,
+    *,
+    id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFindingsFilterRequestRequestTypeDef](./type_defs.md#deletefindingsfilterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFindingsFilterRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_findings_filter(**kwargs)
+```
 
-<a id="delete\_invitations"></a>
+1. See [:material-code-braces: DeleteFindingsFilterRequestRequestTypeDef](./type_defs.md#deletefindingsfilterrequestrequesttypedef) 
 
-### delete_invitations
+### delete\_invitations
 
 Deletes Amazon Macie membership invitations that were received from specific
 accounts.
 
-Type annotations for `boto3.client("macie2").delete_invitations` method.
+Type annotations and code completion for `#!python boto3.client("macie2").delete_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_invitations)
 
-Boto3 documentation:
-[Macie2.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_invitations)
+```python title="Method definition"
+def delete_invitations(
+    self,
+    *,
+    accountIds: Sequence[str],
+) -> DeleteInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInvitationsRequestRequestTypeDef](./type_defs.md#deleteinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInvitationsRequestRequestTypeDef = {  # (1)
+    "accountIds": ...,
+}
 
-Returns
-[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
+parent.delete_invitations(**kwargs)
+```
 
-<a id="delete\_member"></a>
+1. See [:material-code-braces: DeleteInvitationsRequestRequestTypeDef](./type_defs.md#deleteinvitationsrequestrequesttypedef) 
 
-### delete_member
+### delete\_member
 
 Deletes the association between an Amazon Macie administrator account and an
 account.
 
-Type annotations for `boto3.client("macie2").delete_member` method.
+Type annotations and code completion for `#!python boto3.client("macie2").delete_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_member)
 
-Boto3 documentation:
-[Macie2.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.delete_member)
+```python title="Method definition"
+def delete_member(
+    self,
+    *,
+    id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMemberRequestRequestTypeDef](./type_defs.md#deletememberrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMemberRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_member(**kwargs)
+```
 
-<a id="describe\_buckets"></a>
+1. See [:material-code-braces: DeleteMemberRequestRequestTypeDef](./type_defs.md#deletememberrequestrequesttypedef) 
 
-### describe_buckets
+### describe\_buckets
 
 Retrieves (queries) statistical data and other information about one or more S3
 buckets that Amazon Macie monitors and analyzes.
 
-Type annotations for `boto3.client("macie2").describe_buckets` method.
+Type annotations and code completion for `#!python boto3.client("macie2").describe_buckets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_buckets)
 
-Boto3 documentation:
-[Macie2.Client.describe_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_buckets)
+```python title="Method definition"
+def describe_buckets(
+    self,
+    *,
+    criteria: Mapping[str, BucketCriteriaAdditionalPropertiesTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    sortCriteria: BucketSortCriteriaTypeDef = ...,  # (2)
+) -> DescribeBucketsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBucketsRequestRequestTypeDef](./type_defs.md#describebucketsrequestrequesttypedef).
+1. See [:material-code-braces: BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef) 
+2. See [:material-code-braces: BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef) 
+3. See [:material-code-braces: DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `criteria`: `Mapping`\[`str`,
-  [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`:
-  [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: DescribeBucketsRequestRequestTypeDef = {  # (1)
+    "criteria": ...,
+}
 
-Returns
-[DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef).
+parent.describe_buckets(**kwargs)
+```
 
-<a id="describe\_classification\_job"></a>
+1. See [:material-code-braces: DescribeBucketsRequestRequestTypeDef](./type_defs.md#describebucketsrequestrequesttypedef) 
 
-### describe_classification_job
+### describe\_classification\_job
 
 Retrieves the status and settings for a classification job.
 
-Type annotations for `boto3.client("macie2").describe_classification_job`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").describe_classification_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_classification_job)
 
-Boto3 documentation:
-[Macie2.Client.describe_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_classification_job)
+```python title="Method definition"
+def describe_classification_job(
+    self,
+    *,
+    jobId: str,
+) -> DescribeClassificationJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeClassificationJobRequestRequestTypeDef](./type_defs.md#describeclassificationjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeClassificationJobResponseTypeDef](./type_defs.md#describeclassificationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeClassificationJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-Returns
-[DescribeClassificationJobResponseTypeDef](./type_defs.md#describeclassificationjobresponsetypedef).
+parent.describe_classification_job(**kwargs)
+```
 
-<a id="describe\_organization\_configuration"></a>
+1. See [:material-code-braces: DescribeClassificationJobRequestRequestTypeDef](./type_defs.md#describeclassificationjobrequestrequesttypedef) 
 
-### describe_organization_configuration
+### describe\_organization\_configuration
 
 Retrieves the Amazon Macie configuration settings for an organization in
 Organizations.
 
-Type annotations for
-`boto3.client("macie2").describe_organization_configuration` method.
+Type annotations and code completion for `#!python boto3.client("macie2").describe_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_organization_configuration)
 
-Boto3 documentation:
-[Macie2.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.describe_organization_configuration)
+```python title="Method definition"
+def describe_organization_configuration(
+    self,
+) -> DescribeOrganizationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
+1. See [:material-code-braces: DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef) 
 
-<a id="disable\_macie"></a>
-
-### disable_macie
+### disable\_macie
 
 Disables Amazon Macie and deletes all settings and resources for a Macie
 account.
 
-Type annotations for `boto3.client("macie2").disable_macie` method.
+Type annotations and code completion for `#!python boto3.client("macie2").disable_macie` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_macie)
 
-Boto3 documentation:
-[Macie2.Client.disable_macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_macie)
+```python title="Method definition"
+def disable_macie(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disable\_organization\_admin\_account"></a>
-
-### disable_organization_admin_account
+### disable\_organization\_admin\_account
 
 Disables an account as the delegated Amazon Macie administrator account for an
 organization in Organizations.
 
-Type annotations for
-`boto3.client("macie2").disable_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("macie2").disable_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_organization_admin_account)
 
-Boto3 documentation:
-[Macie2.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_organization_admin_account)
+```python title="Method definition"
+def disable_organization_admin_account(
+    self,
+    *,
+    adminAccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `adminAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableOrganizationAdminAccountRequestRequestTypeDef = {  # (1)
+    "adminAccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_organization_admin_account(**kwargs)
+```
 
-<a id="disassociate\_from\_administrator\_account"></a>
+1. See [:material-code-braces: DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef) 
 
-### disassociate_from_administrator_account
+### disassociate\_from\_administrator\_account
 
 Disassociates a member account from its Amazon Macie administrator account.
 
-Type annotations for
-`boto3.client("macie2").disassociate_from_administrator_account` method.
+Type annotations and code completion for `#!python boto3.client("macie2").disassociate_from_administrator_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_administrator_account)
 
-Boto3 documentation:
-[Macie2.Client.disassociate_from_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_administrator_account)
+```python title="Method definition"
+def disassociate_from_administrator_account(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate\_from\_master\_account"></a>
-
-### disassociate_from_master_account
+### disassociate\_from\_master\_account
 
 (Deprecated) Disassociates a member account from its Amazon Macie administrator
 account.
 
-Type annotations for `boto3.client("macie2").disassociate_from_master_account`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").disassociate_from_master_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_master_account)
 
-Boto3 documentation:
-[Macie2.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_master_account)
+```python title="Method definition"
+def disassociate_from_master_account(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate\_member"></a>
-
-### disassociate_member
+### disassociate\_member
 
 Disassociates an Amazon Macie administrator account from a member account.
 
-Type annotations for `boto3.client("macie2").disassociate_member` method.
+Type annotations and code completion for `#!python boto3.client("macie2").disassociate_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_member)
 
-Boto3 documentation:
-[Macie2.Client.disassociate_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_member)
+```python title="Method definition"
+def disassociate_member(
+    self,
+    *,
+    id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateMemberRequestRequestTypeDef](./type_defs.md#disassociatememberrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateMemberRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_member(**kwargs)
+```
 
-<a id="enable\_macie"></a>
+1. See [:material-code-braces: DisassociateMemberRequestRequestTypeDef](./type_defs.md#disassociatememberrequestrequesttypedef) 
 
-### enable_macie
+### enable\_macie
 
 Enables Amazon Macie and specifies the configuration settings for a Macie
 account.
 
-Type annotations for `boto3.client("macie2").enable_macie` method.
+Type annotations and code completion for `#!python boto3.client("macie2").enable_macie` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_macie)
 
-Boto3 documentation:
-[Macie2.Client.enable_macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_macie)
+```python title="Method definition"
+def enable_macie(
+    self,
+    *,
+    clientToken: str = ...,
+    findingPublishingFrequency: FindingPublishingFrequencyType = ...,  # (1)
+    status: MacieStatusType = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableMacieRequestRequestTypeDef](./type_defs.md#enablemacierequestrequesttypedef).
+1. See [:material-code-brackets: FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype) 
+2. See [:material-code-brackets: MacieStatusType](./literals.md#maciestatustype) 
 
-Keyword-only arguments:
 
-- `clientToken`: `str`
-- `findingPublishingFrequency`:
-  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
-- `status`: [MacieStatusType](./literals.md#maciestatustype)
+```python title="Usage example with kwargs"
+kwargs: EnableMacieRequestRequestTypeDef = {  # (1)
+    "clientToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_macie(**kwargs)
+```
 
-<a id="enable\_organization\_admin\_account"></a>
+1. See [:material-code-braces: EnableMacieRequestRequestTypeDef](./type_defs.md#enablemacierequestrequesttypedef) 
 
-### enable_organization_admin_account
+### enable\_organization\_admin\_account
 
-Designates an account as the delegated Amazon Macie administrator account for
-an organization in Organizations.
+Designates an account as the delegated Amazon Macie administrator account for an
+organization in Organizations.
 
-Type annotations for `boto3.client("macie2").enable_organization_admin_account`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").enable_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_organization_admin_account)
 
-Boto3 documentation:
-[Macie2.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.enable_organization_admin_account)
+```python title="Method definition"
+def enable_organization_admin_account(
+    self,
+    *,
+    adminAccountId: str,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `adminAccountId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: EnableOrganizationAdminAccountRequestRequestTypeDef = {  # (1)
+    "adminAccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_organization_admin_account(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("macie2").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("macie2").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Macie2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_administrator\_account"></a>
-
-### get_administrator_account
+### get\_administrator\_account
 
 Retrieves information about the Amazon Macie administrator account for an
 account.
 
-Type annotations for `boto3.client("macie2").get_administrator_account` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_administrator_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_administrator_account)
 
-Boto3 documentation:
-[Macie2.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_administrator_account)
+```python title="Method definition"
+def get_administrator_account(
+    self,
+) -> GetAdministratorAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
+1. See [:material-code-braces: GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef) 
 
-<a id="get\_bucket\_statistics"></a>
-
-### get_bucket_statistics
+### get\_bucket\_statistics
 
 Retrieves (queries) aggregated statistical data about S3 buckets that Amazon
 Macie monitors and analyzes.
 
-Type annotations for `boto3.client("macie2").get_bucket_statistics` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_bucket_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_bucket_statistics)
 
-Boto3 documentation:
-[Macie2.Client.get_bucket_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_bucket_statistics)
+```python title="Method definition"
+def get_bucket_statistics(
+    self,
+    *,
+    accountId: str = ...,
+) -> GetBucketStatisticsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBucketStatisticsRequestRequestTypeDef](./type_defs.md#getbucketstatisticsrequestrequesttypedef).
+1. See [:material-code-braces: GetBucketStatisticsResponseTypeDef](./type_defs.md#getbucketstatisticsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetBucketStatisticsRequestRequestTypeDef = {  # (1)
+    "accountId": ...,
+}
 
-Returns
-[GetBucketStatisticsResponseTypeDef](./type_defs.md#getbucketstatisticsresponsetypedef).
+parent.get_bucket_statistics(**kwargs)
+```
 
-<a id="get\_classification\_export\_configuration"></a>
+1. See [:material-code-braces: GetBucketStatisticsRequestRequestTypeDef](./type_defs.md#getbucketstatisticsrequestrequesttypedef) 
 
-### get_classification_export_configuration
+### get\_classification\_export\_configuration
 
 Retrieves the configuration settings for storing data classification results.
 
-Type annotations for
-`boto3.client("macie2").get_classification_export_configuration` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_classification_export_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_classification_export_configuration)
 
-Boto3 documentation:
-[Macie2.Client.get_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_classification_export_configuration)
+```python title="Method definition"
+def get_classification_export_configuration(
+    self,
+) -> GetClassificationExportConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetClassificationExportConfigurationResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponsetypedef).
+1. See [:material-code-braces: GetClassificationExportConfigurationResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponsetypedef) 
 
-<a id="get\_custom\_data\_identifier"></a>
-
-### get_custom_data_identifier
+### get\_custom\_data\_identifier
 
 Retrieves the criteria and other settings for a custom data identifier.
 
-Type annotations for `boto3.client("macie2").get_custom_data_identifier`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_custom_data_identifier` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_custom_data_identifier)
 
-Boto3 documentation:
-[Macie2.Client.get_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_custom_data_identifier)
+```python title="Method definition"
+def get_custom_data_identifier(
+    self,
+    *,
+    id: str,
+) -> GetCustomDataIdentifierResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#getcustomdataidentifierrequestrequesttypedef).
+1. See [:material-code-braces: GetCustomDataIdentifierResponseTypeDef](./type_defs.md#getcustomdataidentifierresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCustomDataIdentifierRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetCustomDataIdentifierResponseTypeDef](./type_defs.md#getcustomdataidentifierresponsetypedef).
+parent.get_custom_data_identifier(**kwargs)
+```
 
-<a id="get\_finding\_statistics"></a>
+1. See [:material-code-braces: GetCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#getcustomdataidentifierrequestrequesttypedef) 
 
-### get_finding_statistics
+### get\_finding\_statistics
 
 Retrieves (queries) aggregated statistical data about findings.
 
-Type annotations for `boto3.client("macie2").get_finding_statistics` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_finding_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_finding_statistics)
 
-Boto3 documentation:
-[Macie2.Client.get_finding_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_finding_statistics)
+```python title="Method definition"
+def get_finding_statistics(
+    self,
+    *,
+    groupBy: GroupByType,  # (1)
+    findingCriteria: FindingCriteriaTypeDef = ...,  # (2)
+    size: int = ...,
+    sortCriteria: FindingStatisticsSortCriteriaTypeDef = ...,  # (3)
+) -> GetFindingStatisticsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetFindingStatisticsRequestRequestTypeDef](./type_defs.md#getfindingstatisticsrequestrequesttypedef).
+1. See [:material-code-brackets: GroupByType](./literals.md#groupbytype) 
+2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+3. See [:material-code-braces: FindingStatisticsSortCriteriaTypeDef](./type_defs.md#findingstatisticssortcriteriatypedef) 
+4. See [:material-code-braces: GetFindingStatisticsResponseTypeDef](./type_defs.md#getfindingstatisticsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `groupBy`: [GroupByType](./literals.md#groupbytype) *(required)*
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `size`: `int`
-- `sortCriteria`:
-  [FindingStatisticsSortCriteriaTypeDef](./type_defs.md#findingstatisticssortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: GetFindingStatisticsRequestRequestTypeDef = {  # (1)
+    "groupBy": ...,
+}
 
-Returns
-[GetFindingStatisticsResponseTypeDef](./type_defs.md#getfindingstatisticsresponsetypedef).
+parent.get_finding_statistics(**kwargs)
+```
 
-<a id="get\_findings"></a>
+1. See [:material-code-braces: GetFindingStatisticsRequestRequestTypeDef](./type_defs.md#getfindingstatisticsrequestrequesttypedef) 
 
-### get_findings
+### get\_findings
 
 Retrieves the details of one or more findings.
 
-Type annotations for `boto3.client("macie2").get_findings` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings)
 
-Boto3 documentation:
-[Macie2.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings)
+```python title="Method definition"
+def get_findings(
+    self,
+    *,
+    findingIds: Sequence[str],
+    sortCriteria: SortCriteriaTypeDef = ...,  # (1)
+) -> GetFindingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef).
+1. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+2. See [:material-code-braces: GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `findingIds`: `Sequence`\[`str`\] *(required)*
-- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: GetFindingsRequestRequestTypeDef = {  # (1)
+    "findingIds": ...,
+}
 
-Returns
-[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
+parent.get_findings(**kwargs)
+```
 
-<a id="get\_findings\_filter"></a>
+1. See [:material-code-braces: GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef) 
 
-### get_findings_filter
+### get\_findings\_filter
 
 Retrieves the criteria and other settings for a findings filter.
 
-Type annotations for `boto3.client("macie2").get_findings_filter` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_findings_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_filter)
 
-Boto3 documentation:
-[Macie2.Client.get_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_filter)
+```python title="Method definition"
+def get_findings_filter(
+    self,
+    *,
+    id: str,
+) -> GetFindingsFilterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFindingsFilterRequestRequestTypeDef](./type_defs.md#getfindingsfilterrequestrequesttypedef).
+1. See [:material-code-braces: GetFindingsFilterResponseTypeDef](./type_defs.md#getfindingsfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFindingsFilterRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetFindingsFilterResponseTypeDef](./type_defs.md#getfindingsfilterresponsetypedef).
+parent.get_findings_filter(**kwargs)
+```
 
-<a id="get\_findings\_publication\_configuration"></a>
+1. See [:material-code-braces: GetFindingsFilterRequestRequestTypeDef](./type_defs.md#getfindingsfilterrequestrequesttypedef) 
 
-### get_findings_publication_configuration
+### get\_findings\_publication\_configuration
 
 Retrieves the configuration settings for publishing findings to Security Hub.
 
-Type annotations for
-`boto3.client("macie2").get_findings_publication_configuration` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_findings_publication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_publication_configuration)
 
-Boto3 documentation:
-[Macie2.Client.get_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_findings_publication_configuration)
+```python title="Method definition"
+def get_findings_publication_configuration(
+    self,
+) -> GetFindingsPublicationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetFindingsPublicationConfigurationResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponsetypedef).
+1. See [:material-code-braces: GetFindingsPublicationConfigurationResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponsetypedef) 
 
-<a id="get\_invitations\_count"></a>
+### get\_invitations\_count
 
-### get_invitations_count
+Retrieves the count of Amazon Macie membership invitations that were received by
+an account.
 
-Retrieves the count of Amazon Macie membership invitations that were received
-by an account.
+Type annotations and code completion for `#!python boto3.client("macie2").get_invitations_count` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_invitations_count)
 
-Type annotations for `boto3.client("macie2").get_invitations_count` method.
+```python title="Method definition"
+def get_invitations_count(
+    self,
+) -> GetInvitationsCountResponseTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[Macie2.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_invitations_count)
+1. See [:material-code-braces: GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef) 
 
-Returns
-[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
-
-<a id="get\_macie\_session"></a>
-
-### get_macie_session
+### get\_macie\_session
 
 Retrieves the current status and configuration settings for an Amazon Macie
 account.
 
-Type annotations for `boto3.client("macie2").get_macie_session` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_macie_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_macie_session)
 
-Boto3 documentation:
-[Macie2.Client.get_macie_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_macie_session)
+```python title="Method definition"
+def get_macie_session(
+    self,
+) -> GetMacieSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetMacieSessionResponseTypeDef](./type_defs.md#getmaciesessionresponsetypedef).
+1. See [:material-code-braces: GetMacieSessionResponseTypeDef](./type_defs.md#getmaciesessionresponsetypedef) 
 
-<a id="get\_master\_account"></a>
-
-### get_master_account
+### get\_master\_account
 
 (Deprecated) Retrieves information about the Amazon Macie administrator account
 for an account.
 
-Type annotations for `boto3.client("macie2").get_master_account` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_master_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_master_account)
 
-Boto3 documentation:
-[Macie2.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_master_account)
+```python title="Method definition"
+def get_master_account(
+    self,
+) -> GetMasterAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
+1. See [:material-code-braces: GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef) 
 
-<a id="get\_member"></a>
-
-### get_member
+### get\_member
 
 Retrieves information about an account that's associated with an Amazon Macie
 administrator account.
 
-Type annotations for `boto3.client("macie2").get_member` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_member)
 
-Boto3 documentation:
-[Macie2.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_member)
+```python title="Method definition"
+def get_member(
+    self,
+    *,
+    id: str,
+) -> GetMemberResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMemberRequestRequestTypeDef](./type_defs.md#getmemberrequestrequesttypedef).
+1. See [:material-code-braces: GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMemberRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef).
+parent.get_member(**kwargs)
+```
 
-<a id="get\_usage\_statistics"></a>
+1. See [:material-code-braces: GetMemberRequestRequestTypeDef](./type_defs.md#getmemberrequestrequesttypedef) 
 
-### get_usage_statistics
+### get\_usage\_statistics
 
 Retrieves (queries) quotas and aggregated usage data for one or more accounts.
 
-Type annotations for `boto3.client("macie2").get_usage_statistics` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_usage_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_statistics)
 
-Boto3 documentation:
-[Macie2.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_statistics)
+```python title="Method definition"
+def get_usage_statistics(
+    self,
+    *,
+    filterBy: Sequence[UsageStatisticsFilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    sortBy: UsageStatisticsSortByTypeDef = ...,  # (2)
+    timeRange: TimeRangeType = ...,  # (3)
+) -> GetUsageStatisticsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetUsageStatisticsRequestRequestTypeDef](./type_defs.md#getusagestatisticsrequestrequesttypedef).
+1. See [:material-code-braces: UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef) 
+2. See [:material-code-braces: UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef) 
+3. See [:material-code-brackets: TimeRangeType](./literals.md#timerangetype) 
+4. See [:material-code-braces: GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterBy`:
-  `Sequence`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortBy`:
-  [UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef)
-- `timeRange`: [TimeRangeType](./literals.md#timerangetype)
+```python title="Usage example with kwargs"
+kwargs: GetUsageStatisticsRequestRequestTypeDef = {  # (1)
+    "filterBy": ...,
+}
 
-Returns
-[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef).
+parent.get_usage_statistics(**kwargs)
+```
 
-<a id="get\_usage\_totals"></a>
+1. See [:material-code-braces: GetUsageStatisticsRequestRequestTypeDef](./type_defs.md#getusagestatisticsrequestrequesttypedef) 
 
-### get_usage_totals
+### get\_usage\_totals
 
 Retrieves (queries) aggregated usage data for an account.
 
-Type annotations for `boto3.client("macie2").get_usage_totals` method.
+Type annotations and code completion for `#!python boto3.client("macie2").get_usage_totals` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_totals)
 
-Boto3 documentation:
-[Macie2.Client.get_usage_totals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.get_usage_totals)
+```python title="Method definition"
+def get_usage_totals(
+    self,
+    *,
+    timeRange: str = ...,
+) -> GetUsageTotalsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUsageTotalsRequestRequestTypeDef](./type_defs.md#getusagetotalsrequestrequesttypedef).
+1. See [:material-code-braces: GetUsageTotalsResponseTypeDef](./type_defs.md#getusagetotalsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `timeRange`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetUsageTotalsRequestRequestTypeDef = {  # (1)
+    "timeRange": ...,
+}
 
-Returns
-[GetUsageTotalsResponseTypeDef](./type_defs.md#getusagetotalsresponsetypedef).
+parent.get_usage_totals(**kwargs)
+```
 
-<a id="list\_classification\_jobs"></a>
+1. See [:material-code-braces: GetUsageTotalsRequestRequestTypeDef](./type_defs.md#getusagetotalsrequestrequesttypedef) 
 
-### list_classification_jobs
+### list\_classification\_jobs
 
 Retrieves a subset of information about one or more classification jobs.
 
-Type annotations for `boto3.client("macie2").list_classification_jobs` method.
+Type annotations and code completion for `#!python boto3.client("macie2").list_classification_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_classification_jobs)
 
-Boto3 documentation:
-[Macie2.Client.list_classification_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_classification_jobs)
+```python title="Method definition"
+def list_classification_jobs(
+    self,
+    *,
+    filterCriteria: ListJobsFilterCriteriaTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    sortCriteria: ListJobsSortCriteriaTypeDef = ...,  # (2)
+) -> ListClassificationJobsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListClassificationJobsRequestRequestTypeDef](./type_defs.md#listclassificationjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef) 
+2. See [:material-code-braces: ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef) 
+3. See [:material-code-braces: ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterCriteria`:
-  [ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`:
-  [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: ListClassificationJobsRequestRequestTypeDef = {  # (1)
+    "filterCriteria": ...,
+}
 
-Returns
-[ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef).
+parent.list_classification_jobs(**kwargs)
+```
 
-<a id="list\_custom\_data\_identifiers"></a>
+1. See [:material-code-braces: ListClassificationJobsRequestRequestTypeDef](./type_defs.md#listclassificationjobsrequestrequesttypedef) 
 
-### list_custom_data_identifiers
+### list\_custom\_data\_identifiers
 
 Retrieves a subset of information about all the custom data identifiers for an
 account.
 
-Type annotations for `boto3.client("macie2").list_custom_data_identifiers`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").list_custom_data_identifiers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_custom_data_identifiers)
 
-Boto3 documentation:
-[Macie2.Client.list_custom_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_custom_data_identifiers)
+```python title="Method definition"
+def list_custom_data_identifiers(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListCustomDataIdentifiersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomDataIdentifiersRequestRequestTypeDef](./type_defs.md#listcustomdataidentifiersrequestrequesttypedef).
+1. See [:material-code-braces: ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCustomDataIdentifiersRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef).
+parent.list_custom_data_identifiers(**kwargs)
+```
 
-<a id="list\_findings"></a>
+1. See [:material-code-braces: ListCustomDataIdentifiersRequestRequestTypeDef](./type_defs.md#listcustomdataidentifiersrequestrequesttypedef) 
 
-### list_findings
+### list\_findings
 
 Retrieves a subset of information about one or more findings.
 
-Type annotations for `boto3.client("macie2").list_findings` method.
+Type annotations and code completion for `#!python boto3.client("macie2").list_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings)
 
-Boto3 documentation:
-[Macie2.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings)
+```python title="Method definition"
+def list_findings(
+    self,
+    *,
+    findingCriteria: FindingCriteriaTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    sortCriteria: SortCriteriaTypeDef = ...,  # (2)
+) -> ListFindingsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef).
+1. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: ListFindingsRequestRequestTypeDef = {  # (1)
+    "findingCriteria": ...,
+}
 
-Returns
-[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
+parent.list_findings(**kwargs)
+```
 
-<a id="list\_findings\_filters"></a>
+1. See [:material-code-braces: ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef) 
 
-### list_findings_filters
+### list\_findings\_filters
 
-Retrieves a subset of information about all the findings filters for an
-account.
+Retrieves a subset of information about all the findings filters for an account.
 
-Type annotations for `boto3.client("macie2").list_findings_filters` method.
+Type annotations and code completion for `#!python boto3.client("macie2").list_findings_filters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings_filters)
 
-Boto3 documentation:
-[Macie2.Client.list_findings_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_findings_filters)
+```python title="Method definition"
+def list_findings_filters(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListFindingsFiltersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFindingsFiltersRequestRequestTypeDef](./type_defs.md#listfindingsfiltersrequestrequesttypedef).
+1. See [:material-code-braces: ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFindingsFiltersRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef).
+parent.list_findings_filters(**kwargs)
+```
 
-<a id="list\_invitations"></a>
+1. See [:material-code-braces: ListFindingsFiltersRequestRequestTypeDef](./type_defs.md#listfindingsfiltersrequestrequesttypedef) 
 
-### list_invitations
+### list\_invitations
 
 Retrieves information about the Amazon Macie membership invitations that were
 received by an account.
 
-Type annotations for `boto3.client("macie2").list_invitations` method.
+Type annotations and code completion for `#!python boto3.client("macie2").list_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_invitations)
 
-Boto3 documentation:
-[Macie2.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_invitations)
+```python title="Method definition"
+def list_invitations(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInvitationsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
+parent.list_invitations(**kwargs)
+```
 
-<a id="list\_managed\_data\_identifiers"></a>
+1. See [:material-code-braces: ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef) 
 
-### list_managed_data_identifiers
+### list\_managed\_data\_identifiers
 
 Retrieves information about all the managed data identifiers that Amazon Macie
 currently provides.
 
-Type annotations for `boto3.client("macie2").list_managed_data_identifiers`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").list_managed_data_identifiers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_managed_data_identifiers)
 
-Boto3 documentation:
-[Macie2.Client.list_managed_data_identifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_managed_data_identifiers)
+```python title="Method definition"
+def list_managed_data_identifiers(
+    self,
+    *,
+    nextToken: str = ...,
+) -> ListManagedDataIdentifiersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListManagedDataIdentifiersRequestRequestTypeDef](./type_defs.md#listmanageddataidentifiersrequestrequesttypedef).
+1. See [:material-code-braces: ListManagedDataIdentifiersResponseTypeDef](./type_defs.md#listmanageddataidentifiersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListManagedDataIdentifiersRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListManagedDataIdentifiersResponseTypeDef](./type_defs.md#listmanageddataidentifiersresponsetypedef).
+parent.list_managed_data_identifiers(**kwargs)
+```
 
-<a id="list\_members"></a>
+1. See [:material-code-braces: ListManagedDataIdentifiersRequestRequestTypeDef](./type_defs.md#listmanageddataidentifiersrequestrequesttypedef) 
 
-### list_members
+### list\_members
 
 Retrieves information about the accounts that are associated with an Amazon
 Macie administrator account.
 
-Type annotations for `boto3.client("macie2").list_members` method.
+Type annotations and code completion for `#!python boto3.client("macie2").list_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_members)
 
-Boto3 documentation:
-[Macie2.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_members)
+```python title="Method definition"
+def list_members(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    onlyAssociated: str = ...,
+) -> ListMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef).
+1. See [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `onlyAssociated`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMembersRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
+parent.list_members(**kwargs)
+```
 
-<a id="list\_organization\_admin\_accounts"></a>
+1. See [:material-code-braces: ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef) 
 
-### list_organization_admin_accounts
+### list\_organization\_admin\_accounts
 
-Retrieves information about the delegated Amazon Macie administrator account
-for an organization in Organizations.
+Retrieves information about the delegated Amazon Macie administrator account for
+an organization in Organizations.
 
-Type annotations for `boto3.client("macie2").list_organization_admin_accounts`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").list_organization_admin_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_organization_admin_accounts)
 
-Boto3 documentation:
-[Macie2.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_organization_admin_accounts)
+```python title="Method definition"
+def list_organization_admin_accounts(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListOrganizationAdminAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationAdminAccountsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
+parent.list_organization_admin_accounts(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves the tags (keys and values) that are associated with a classification
 job, custom data identifier, findings filter, or member account.
 
-Type annotations for `boto3.client("macie2").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("macie2").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Macie2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_classification\_export\_configuration"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_classification_export_configuration
+### put\_classification\_export\_configuration
 
 Creates or updates the configuration settings for storing data classification
 results.
 
-Type annotations for
-`boto3.client("macie2").put_classification_export_configuration` method.
+Type annotations and code completion for `#!python boto3.client("macie2").put_classification_export_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_classification_export_configuration)
 
-Boto3 documentation:
-[Macie2.Client.put_classification_export_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_classification_export_configuration)
+```python title="Method definition"
+def put_classification_export_configuration(
+    self,
+    *,
+    configuration: ClassificationExportConfigurationTypeDef,  # (1)
+) -> PutClassificationExportConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutClassificationExportConfigurationRequestRequestTypeDef](./type_defs.md#putclassificationexportconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef) 
+2. See [:material-code-braces: PutClassificationExportConfigurationResponseTypeDef](./type_defs.md#putclassificationexportconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `configuration`:
-  [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutClassificationExportConfigurationRequestRequestTypeDef = {  # (1)
+    "configuration": ...,
+}
 
-Returns
-[PutClassificationExportConfigurationResponseTypeDef](./type_defs.md#putclassificationexportconfigurationresponsetypedef).
+parent.put_classification_export_configuration(**kwargs)
+```
 
-<a id="put\_findings\_publication\_configuration"></a>
+1. See [:material-code-braces: PutClassificationExportConfigurationRequestRequestTypeDef](./type_defs.md#putclassificationexportconfigurationrequestrequesttypedef) 
 
-### put_findings_publication_configuration
+### put\_findings\_publication\_configuration
 
 Updates the configuration settings for publishing findings to Security Hub.
 
-Type annotations for
-`boto3.client("macie2").put_findings_publication_configuration` method.
+Type annotations and code completion for `#!python boto3.client("macie2").put_findings_publication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_findings_publication_configuration)
 
-Boto3 documentation:
-[Macie2.Client.put_findings_publication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.put_findings_publication_configuration)
+```python title="Method definition"
+def put_findings_publication_configuration(
+    self,
+    *,
+    clientToken: str = ...,
+    securityHubConfiguration: SecurityHubConfigurationTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutFindingsPublicationConfigurationRequestRequestTypeDef](./type_defs.md#putfindingspublicationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `clientToken`: `str`
-- `securityHubConfiguration`:
-  [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: PutFindingsPublicationConfigurationRequestRequestTypeDef = {  # (1)
+    "clientToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_findings_publication_configuration(**kwargs)
+```
 
-<a id="search\_resources"></a>
+1. See [:material-code-braces: PutFindingsPublicationConfigurationRequestRequestTypeDef](./type_defs.md#putfindingspublicationconfigurationrequestrequesttypedef) 
 
-### search_resources
+### search\_resources
 
 Retrieves (queries) statistical data and other information about Amazon Web
 Services resources that Amazon Macie monitors and analyzes.
 
-Type annotations for `boto3.client("macie2").search_resources` method.
+Type annotations and code completion for `#!python boto3.client("macie2").search_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.search_resources)
 
-Boto3 documentation:
-[Macie2.Client.search_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.search_resources)
+```python title="Method definition"
+def search_resources(
+    self,
+    *,
+    bucketCriteria: SearchResourcesBucketCriteriaTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    sortCriteria: SearchResourcesSortCriteriaTypeDef = ...,  # (2)
+) -> SearchResourcesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchResourcesRequestRequestTypeDef](./type_defs.md#searchresourcesrequestrequesttypedef).
+1. See [:material-code-braces: SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef) 
+2. See [:material-code-braces: SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef) 
+3. See [:material-code-braces: SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `bucketCriteria`:
-  [SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`:
-  [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: SearchResourcesRequestRequestTypeDef = {  # (1)
+    "bucketCriteria": ...,
+}
 
-Returns
-[SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef).
+parent.search_resources(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SearchResourcesRequestRequestTypeDef](./type_defs.md#searchresourcesrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or updates one or more tags (keys and values) that are associated with a
 classification job, custom data identifier, findings filter, or member account.
 
-Type annotations for `boto3.client("macie2").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("macie2").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.tag_resource)
 
-Boto3 documentation:
-[Macie2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="test\_custom\_data\_identifier"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### test_custom_data_identifier
+### test\_custom\_data\_identifier
 
 Tests a custom data identifier.
 
-Type annotations for `boto3.client("macie2").test_custom_data_identifier`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").test_custom_data_identifier` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.test_custom_data_identifier)
 
-Boto3 documentation:
-[Macie2.Client.test_custom_data_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.test_custom_data_identifier)
+```python title="Method definition"
+def test_custom_data_identifier(
+    self,
+    *,
+    regex: str,
+    sampleText: str,
+    ignoreWords: Sequence[str] = ...,
+    keywords: Sequence[str] = ...,
+    maximumMatchDistance: int = ...,
+) -> TestCustomDataIdentifierResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TestCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#testcustomdataidentifierrequestrequesttypedef).
+1. See [:material-code-braces: TestCustomDataIdentifierResponseTypeDef](./type_defs.md#testcustomdataidentifierresponsetypedef) 
 
-Keyword-only arguments:
 
-- `regex`: `str` *(required)*
-- `sampleText`: `str` *(required)*
-- `ignoreWords`: `Sequence`\[`str`\]
-- `keywords`: `Sequence`\[`str`\]
-- `maximumMatchDistance`: `int`
+```python title="Usage example with kwargs"
+kwargs: TestCustomDataIdentifierRequestRequestTypeDef = {  # (1)
+    "regex": ...,
+    "sampleText": ...,
+}
 
-Returns
-[TestCustomDataIdentifierResponseTypeDef](./type_defs.md#testcustomdataidentifierresponsetypedef).
+parent.test_custom_data_identifier(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TestCustomDataIdentifierRequestRequestTypeDef](./type_defs.md#testcustomdataidentifierrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags (keys and values) from a classification job, custom
 data identifier, findings filter, or member account.
 
-Type annotations for `boto3.client("macie2").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("macie2").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.untag_resource)
 
-Boto3 documentation:
-[Macie2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_classification\_job"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_classification_job
+### update\_classification\_job
 
 Changes the status of a classification job.
 
-Type annotations for `boto3.client("macie2").update_classification_job` method.
+Type annotations and code completion for `#!python boto3.client("macie2").update_classification_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_classification_job)
 
-Boto3 documentation:
-[Macie2.Client.update_classification_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_classification_job)
+```python title="Method definition"
+def update_classification_job(
+    self,
+    *,
+    jobId: str,
+    jobStatus: JobStatusType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateClassificationJobRequestRequestTypeDef](./type_defs.md#updateclassificationjobrequestrequesttypedef).
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `jobStatus`: [JobStatusType](./literals.md#jobstatustype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateClassificationJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "jobStatus": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_classification_job(**kwargs)
+```
 
-<a id="update\_findings\_filter"></a>
+1. See [:material-code-braces: UpdateClassificationJobRequestRequestTypeDef](./type_defs.md#updateclassificationjobrequestrequesttypedef) 
 
-### update_findings_filter
+### update\_findings\_filter
 
 Updates the criteria and other settings for a findings filter.
 
-Type annotations for `boto3.client("macie2").update_findings_filter` method.
+Type annotations and code completion for `#!python boto3.client("macie2").update_findings_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_findings_filter)
 
-Boto3 documentation:
-[Macie2.Client.update_findings_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_findings_filter)
+```python title="Method definition"
+def update_findings_filter(
+    self,
+    *,
+    id: str,
+    action: FindingsFilterActionType = ...,  # (1)
+    description: str = ...,
+    findingCriteria: FindingCriteriaTypeDef = ...,  # (2)
+    name: str = ...,
+    position: int = ...,
+    clientToken: str = ...,
+) -> UpdateFindingsFilterResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFindingsFilterRequestRequestTypeDef](./type_defs.md#updatefindingsfilterrequestrequesttypedef).
+1. See [:material-code-brackets: FindingsFilterActionType](./literals.md#findingsfilteractiontype) 
+2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+3. See [:material-code-braces: UpdateFindingsFilterResponseTypeDef](./type_defs.md#updatefindingsfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
-- `description`: `str`
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `name`: `str`
-- `position`: `int`
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFindingsFilterRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[UpdateFindingsFilterResponseTypeDef](./type_defs.md#updatefindingsfilterresponsetypedef).
+parent.update_findings_filter(**kwargs)
+```
 
-<a id="update\_macie\_session"></a>
+1. See [:material-code-braces: UpdateFindingsFilterRequestRequestTypeDef](./type_defs.md#updatefindingsfilterrequestrequesttypedef) 
 
-### update_macie_session
+### update\_macie\_session
 
-Suspends or re-enables Amazon Macie, or updates the configuration settings for
-a Macie account.
+Suspends or re-enables Amazon Macie, or updates the configuration settings for a
+Macie account.
 
-Type annotations for `boto3.client("macie2").update_macie_session` method.
+Type annotations and code completion for `#!python boto3.client("macie2").update_macie_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_macie_session)
 
-Boto3 documentation:
-[Macie2.Client.update_macie_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_macie_session)
+```python title="Method definition"
+def update_macie_session(
+    self,
+    *,
+    findingPublishingFrequency: FindingPublishingFrequencyType = ...,  # (1)
+    status: MacieStatusType = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateMacieSessionRequestRequestTypeDef](./type_defs.md#updatemaciesessionrequestrequesttypedef).
+1. See [:material-code-brackets: FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype) 
+2. See [:material-code-brackets: MacieStatusType](./literals.md#maciestatustype) 
 
-Keyword-only arguments:
 
-- `findingPublishingFrequency`:
-  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
-- `status`: [MacieStatusType](./literals.md#maciestatustype)
+```python title="Usage example with kwargs"
+kwargs: UpdateMacieSessionRequestRequestTypeDef = {  # (1)
+    "findingPublishingFrequency": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_macie_session(**kwargs)
+```
 
-<a id="update\_member\_session"></a>
+1. See [:material-code-braces: UpdateMacieSessionRequestRequestTypeDef](./type_defs.md#updatemaciesessionrequestrequesttypedef) 
 
-### update_member_session
+### update\_member\_session
 
-Enables an Amazon Macie administrator to suspend or re-enable Macie for a
-member account.
+Enables an Amazon Macie administrator to suspend or re-enable Macie for a member
+account.
 
-Type annotations for `boto3.client("macie2").update_member_session` method.
+Type annotations and code completion for `#!python boto3.client("macie2").update_member_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_member_session)
 
-Boto3 documentation:
-[Macie2.Client.update_member_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_member_session)
+```python title="Method definition"
+def update_member_session(
+    self,
+    *,
+    id: str,
+    status: MacieStatusType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateMemberSessionRequestRequestTypeDef](./type_defs.md#updatemembersessionrequestrequesttypedef).
+1. See [:material-code-brackets: MacieStatusType](./literals.md#maciestatustype) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `status`: [MacieStatusType](./literals.md#maciestatustype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateMemberSessionRequestRequestTypeDef = {  # (1)
+    "id": ...,
+    "status": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_member_session(**kwargs)
+```
 
-<a id="update\_organization\_configuration"></a>
+1. See [:material-code-braces: UpdateMemberSessionRequestRequestTypeDef](./type_defs.md#updatemembersessionrequestrequesttypedef) 
 
-### update_organization_configuration
+### update\_organization\_configuration
 
 Updates the Amazon Macie configuration settings for an organization in
 Organizations.
 
-Type annotations for `boto3.client("macie2").update_organization_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("macie2").update_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_organization_configuration)
 
-Boto3 documentation:
-[Macie2.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.update_organization_configuration)
+```python title="Method definition"
+def update_organization_configuration(
+    self,
+    *,
+    autoEnable: bool,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `autoEnable`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateOrganizationConfigurationRequestRequestTypeDef = {  # (1)
+    "autoEnable": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_organization_configuration(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("macie2").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_buckets")` ->
-  [DescribeBucketsPaginator](./paginators.md#describebucketspaginator)
-- `client.get_paginator("get_usage_statistics")` ->
-  [GetUsageStatisticsPaginator](./paginators.md#getusagestatisticspaginator)
-- `client.get_paginator("list_classification_jobs")` ->
-  [ListClassificationJobsPaginator](./paginators.md#listclassificationjobspaginator)
-- `client.get_paginator("list_custom_data_identifiers")` ->
-  [ListCustomDataIdentifiersPaginator](./paginators.md#listcustomdataidentifierspaginator)
-- `client.get_paginator("list_findings")` ->
-  [ListFindingsPaginator](./paginators.md#listfindingspaginator)
-- `client.get_paginator("list_findings_filters")` ->
-  [ListFindingsFiltersPaginator](./paginators.md#listfindingsfilterspaginator)
-- `client.get_paginator("list_invitations")` ->
-  [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
-- `client.get_paginator("list_members")` ->
-  [ListMembersPaginator](./paginators.md#listmemberspaginator)
-- `client.get_paginator("list_organization_admin_accounts")` ->
-  [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
-- `client.get_paginator("search_resources")` ->
-  [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
+- `client.get_paginator("describe_buckets")` -> [DescribeBucketsPaginator](./paginators.md#describebucketspaginator)
+- `client.get_paginator("get_usage_statistics")` -> [GetUsageStatisticsPaginator](./paginators.md#getusagestatisticspaginator)
+- `client.get_paginator("list_classification_jobs")` -> [ListClassificationJobsPaginator](./paginators.md#listclassificationjobspaginator)
+- `client.get_paginator("list_custom_data_identifiers")` -> [ListCustomDataIdentifiersPaginator](./paginators.md#listcustomdataidentifierspaginator)
+- `client.get_paginator("list_findings")` -> [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+- `client.get_paginator("list_findings_filters")` -> [ListFindingsFiltersPaginator](./paginators.md#listfindingsfilterspaginator)
+- `client.get_paginator("list_invitations")` -> [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
+- `client.get_paginator("list_members")` -> [ListMembersPaginator](./paginators.md#listmemberspaginator)
+- `client.get_paginator("list_organization_admin_accounts")` -> [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+- `client.get_paginator("search_resources")` -> [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
+
+
+

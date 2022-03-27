@@ -1,44 +1,18 @@
-<a id="paginators-for-boto3-glue-module"></a>
-
-# Paginators for boto3 Glue module
+# Paginators
 
 > [Index](../README.md) > [Glue](./README.md) > Paginators
 
-Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
-type annotations stubs module
-[mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
+!!! note ""
 
-- [Paginators for boto3 Glue module](#paginators-for-boto3-glue-module)
-  - [GetClassifiersPaginator](#getclassifierspaginator)
-  - [GetConnectionsPaginator](#getconnectionspaginator)
-  - [GetCrawlerMetricsPaginator](#getcrawlermetricspaginator)
-  - [GetCrawlersPaginator](#getcrawlerspaginator)
-  - [GetDatabasesPaginator](#getdatabasespaginator)
-  - [GetDevEndpointsPaginator](#getdevendpointspaginator)
-  - [GetJobRunsPaginator](#getjobrunspaginator)
-  - [GetJobsPaginator](#getjobspaginator)
-  - [GetPartitionIndexesPaginator](#getpartitionindexespaginator)
-  - [GetPartitionsPaginator](#getpartitionspaginator)
-  - [GetResourcePoliciesPaginator](#getresourcepoliciespaginator)
-  - [GetSecurityConfigurationsPaginator](#getsecurityconfigurationspaginator)
-  - [GetTableVersionsPaginator](#gettableversionspaginator)
-  - [GetTablesPaginator](#gettablespaginator)
-  - [GetTriggersPaginator](#gettriggerspaginator)
-  - [GetUserDefinedFunctionsPaginator](#getuserdefinedfunctionspaginator)
-  - [ListRegistriesPaginator](#listregistriespaginator)
-  - [ListSchemaVersionsPaginator](#listschemaversionspaginator)
-  - [ListSchemasPaginator](#listschemaspaginator)
-
-<a id="getclassifierspaginator"></a>
+    Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+    type annotations stubs module [mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
 ## GetClassifiersPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_classifiers")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_classifiers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetClassifiers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetClassifiersPaginator
@@ -47,26 +21,39 @@ def get_get_classifiers_paginator() -> GetClassifiersPaginator:
     return Session().client("glue").get_paginator("get_classifiers")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetClassifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetClassifiers)
 
-Arguments for `GetClassifiersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetClassifiersPaginator.paginate` method.
 
-`GetClassifiersPaginator.paginate` returns
-`_PageIterator`\[[GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetClassifiersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getconnectionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetClassifiersRequestGetClassifiersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetClassifiersRequestGetClassifiersPaginateTypeDef](./type_defs.md#getclassifiersrequestgetclassifierspaginatetypedef) 
 ## GetConnectionsPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_connections")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_connections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetConnections)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetConnectionsPaginator
@@ -75,31 +62,43 @@ def get_get_connections_paginator() -> GetConnectionsPaginator:
     return Session().client("glue").get_paginator("get_connections")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetConnections)
 
-Arguments for `GetConnectionsPaginator.paginate` method:
+### paginate
 
-- `CatalogId`: `str`
-- `Filter`:
-  [GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef)
-- `HidePassword`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetConnectionsPaginator.paginate` method.
 
-`GetConnectionsPaginator.paginate` returns
-`_PageIterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CatalogId: str = ...,
+    Filter: GetConnectionsFilterTypeDef = ...,  # (1)
+    HidePassword: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetConnectionsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getcrawlermetricspaginator"></a>
+1. See [:material-code-braces: GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetConnectionsRequestGetConnectionsPaginateTypeDef = {  # (1)
+    "CatalogId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetConnectionsRequestGetConnectionsPaginateTypeDef](./type_defs.md#getconnectionsrequestgetconnectionspaginatetypedef) 
 ## GetCrawlerMetricsPaginator
 
-Type annotations for
-`boto3.client("glue").get_paginator("get_crawler_metrics")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_crawler_metrics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetCrawlerMetrics)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetCrawlerMetricsPaginator
@@ -108,27 +107,40 @@ def get_get_crawler_metrics_paginator() -> GetCrawlerMetricsPaginator:
     return Session().client("glue").get_paginator("get_crawler_metrics")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetCrawlerMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetCrawlerMetrics)
 
-Arguments for `GetCrawlerMetricsPaginator.paginate` method:
+### paginate
 
-- `CrawlerNameList`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetCrawlerMetricsPaginator.paginate` method.
 
-`GetCrawlerMetricsPaginator.paginate` returns
-`_PageIterator`\[[GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CrawlerNameList: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetCrawlerMetricsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getcrawlerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetCrawlerMetricsRequestGetCrawlerMetricsPaginateTypeDef = {  # (1)
+    "CrawlerNameList": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetCrawlerMetricsRequestGetCrawlerMetricsPaginateTypeDef](./type_defs.md#getcrawlermetricsrequestgetcrawlermetricspaginatetypedef) 
 ## GetCrawlersPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_crawlers")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_crawlers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetCrawlers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetCrawlersPaginator
@@ -137,26 +149,39 @@ def get_get_crawlers_paginator() -> GetCrawlersPaginator:
     return Session().client("glue").get_paginator("get_crawlers")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetCrawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetCrawlers)
 
-Arguments for `GetCrawlersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetCrawlersPaginator.paginate` method.
 
-`GetCrawlersPaginator.paginate` returns
-`_PageIterator`\[[GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetCrawlersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getdatabasespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetCrawlersRequestGetCrawlersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetCrawlersRequestGetCrawlersPaginateTypeDef](./type_defs.md#getcrawlersrequestgetcrawlerspaginatetypedef) 
 ## GetDatabasesPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_databases")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_databases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetDatabases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetDatabasesPaginator
@@ -165,29 +190,42 @@ def get_get_databases_paginator() -> GetDatabasesPaginator:
     return Session().client("glue").get_paginator("get_databases")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetDatabases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetDatabases)
 
-Arguments for `GetDatabasesPaginator.paginate` method:
+### paginate
 
-- `CatalogId`: `str`
-- `ResourceShareType`:
-  [ResourceShareTypeType](./literals.md#resourcesharetypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDatabasesPaginator.paginate` method.
 
-`GetDatabasesPaginator.paginate` returns
-`_PageIterator`\[[GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CatalogId: str = ...,
+    ResourceShareType: ResourceShareTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetDatabasesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getdevendpointspaginator"></a>
+1. See [:material-code-brackets: ResourceShareTypeType](./literals.md#resourcesharetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDatabasesRequestGetDatabasesPaginateTypeDef = {  # (1)
+    "CatalogId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDatabasesRequestGetDatabasesPaginateTypeDef](./type_defs.md#getdatabasesrequestgetdatabasespaginatetypedef) 
 ## GetDevEndpointsPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_dev_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_dev_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetDevEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetDevEndpointsPaginator
@@ -196,26 +234,39 @@ def get_get_dev_endpoints_paginator() -> GetDevEndpointsPaginator:
     return Session().client("glue").get_paginator("get_dev_endpoints")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetDevEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetDevEndpoints)
 
-Arguments for `GetDevEndpointsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDevEndpointsPaginator.paginate` method.
 
-`GetDevEndpointsPaginator.paginate` returns
-`_PageIterator`\[[GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetDevEndpointsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getjobrunspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDevEndpointsRequestGetDevEndpointsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDevEndpointsRequestGetDevEndpointsPaginateTypeDef](./type_defs.md#getdevendpointsrequestgetdevendpointspaginatetypedef) 
 ## GetJobRunsPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_job_runs")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_job_runs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetJobRuns)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetJobRunsPaginator
@@ -224,27 +275,40 @@ def get_get_job_runs_paginator() -> GetJobRunsPaginator:
     return Session().client("glue").get_paginator("get_job_runs")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetJobRuns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetJobRuns)
 
-Arguments for `GetJobRunsPaginator.paginate` method:
+### paginate
 
-- `JobName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetJobRunsPaginator.paginate` method.
 
-`GetJobRunsPaginator.paginate` returns
-`_PageIterator`\[[GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    JobName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetJobRunsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getjobspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetJobRunsRequestGetJobRunsPaginateTypeDef = {  # (1)
+    "JobName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetJobRunsRequestGetJobRunsPaginateTypeDef](./type_defs.md#getjobrunsrequestgetjobrunspaginatetypedef) 
 ## GetJobsPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_jobs")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetJobsPaginator
@@ -253,27 +317,39 @@ def get_get_jobs_paginator() -> GetJobsPaginator:
     return Session().client("glue").get_paginator("get_jobs")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetJobs)
 
-Arguments for `GetJobsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetJobsPaginator.paginate` method.
 
-`GetJobsPaginator.paginate` returns
-`_PageIterator`\[[GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetJobsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getpartitionindexespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetJobsRequestGetJobsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetJobsRequestGetJobsPaginateTypeDef](./type_defs.md#getjobsrequestgetjobspaginatetypedef) 
 ## GetPartitionIndexesPaginator
 
-Type annotations for
-`boto3.client("glue").get_paginator("get_partition_indexes")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_partition_indexes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetPartitionIndexes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetPartitionIndexesPaginator
@@ -282,29 +358,43 @@ def get_get_partition_indexes_paginator() -> GetPartitionIndexesPaginator:
     return Session().client("glue").get_paginator("get_partition_indexes")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetPartitionIndexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetPartitionIndexes)
 
-Arguments for `GetPartitionIndexesPaginator.paginate` method:
+### paginate
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `CatalogId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetPartitionIndexesPaginator.paginate` method.
 
-`GetPartitionIndexesPaginator.paginate` returns
-`_PageIterator`\[[GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetPartitionIndexesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getpartitionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetPartitionIndexesRequestGetPartitionIndexesPaginateTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetPartitionIndexesRequestGetPartitionIndexesPaginateTypeDef](./type_defs.md#getpartitionindexesrequestgetpartitionindexespaginatetypedef) 
 ## GetPartitionsPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_partitions")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_partitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetPartitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetPartitionsPaginator
@@ -313,35 +403,49 @@ def get_get_partitions_paginator() -> GetPartitionsPaginator:
     return Session().client("glue").get_paginator("get_partitions")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetPartitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetPartitions)
 
-Arguments for `GetPartitionsPaginator.paginate` method:
+### paginate
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `CatalogId`: `str`
-- `Expression`: `str`
-- `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
-- `ExcludeColumnSchema`: `bool`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetPartitionsPaginator.paginate` method.
 
-`GetPartitionsPaginator.paginate` returns
-`_PageIterator`\[[GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: str = ...,
+    Expression: str = ...,
+    Segment: SegmentTypeDef = ...,  # (1)
+    ExcludeColumnSchema: bool = ...,
+    TransactionId: str = ...,
+    QueryAsOfTime: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetPartitionsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getresourcepoliciespaginator"></a>
+1. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetPartitionsRequestGetPartitionsPaginateTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetPartitionsRequestGetPartitionsPaginateTypeDef](./type_defs.md#getpartitionsrequestgetpartitionspaginatetypedef) 
 ## GetResourcePoliciesPaginator
 
-Type annotations for
-`boto3.client("glue").get_paginator("get_resource_policies")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_resource_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetResourcePolicies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetResourcePoliciesPaginator
@@ -350,27 +454,39 @@ def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
     return Session().client("glue").get_paginator("get_resource_policies")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetResourcePolicies)
 
-Arguments for `GetResourcePoliciesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetResourcePoliciesPaginator.paginate` method.
 
-`GetResourcePoliciesPaginator.paginate` returns
-`_PageIterator`\[[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetResourcePoliciesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getsecurityconfigurationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef](./type_defs.md#getresourcepoliciesrequestgetresourcepoliciespaginatetypedef) 
 ## GetSecurityConfigurationsPaginator
 
-Type annotations for
-`boto3.client("glue").get_paginator("get_security_configurations")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_security_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetSecurityConfigurations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetSecurityConfigurationsPaginator
@@ -379,27 +495,39 @@ def get_get_security_configurations_paginator() -> GetSecurityConfigurationsPagi
     return Session().client("glue").get_paginator("get_security_configurations")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetSecurityConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetSecurityConfigurations)
 
-Arguments for `GetSecurityConfigurationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetSecurityConfigurationsPaginator.paginate` method.
 
-`GetSecurityConfigurationsPaginator.paginate` returns
-`_PageIterator`\[[GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetSecurityConfigurationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="gettableversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetSecurityConfigurationsRequestGetSecurityConfigurationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetSecurityConfigurationsRequestGetSecurityConfigurationsPaginateTypeDef](./type_defs.md#getsecurityconfigurationsrequestgetsecurityconfigurationspaginatetypedef) 
 ## GetTableVersionsPaginator
 
-Type annotations for
-`boto3.client("glue").get_paginator("get_table_versions")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_table_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTableVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetTableVersionsPaginator
@@ -408,29 +536,43 @@ def get_get_table_versions_paginator() -> GetTableVersionsPaginator:
     return Session().client("glue").get_paginator("get_table_versions")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetTableVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTableVersions)
 
-Arguments for `GetTableVersionsPaginator.paginate` method:
+### paginate
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `CatalogId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTableVersionsPaginator.paginate` method.
 
-`GetTableVersionsPaginator.paginate` returns
-`_PageIterator`\[[GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetTableVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="gettablespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTableVersionsRequestGetTableVersionsPaginateTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTableVersionsRequestGetTableVersionsPaginateTypeDef](./type_defs.md#gettableversionsrequestgettableversionspaginatetypedef) 
 ## GetTablesPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_tables")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_tables")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTables)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetTablesPaginator
@@ -439,31 +581,44 @@ def get_get_tables_paginator() -> GetTablesPaginator:
     return Session().client("glue").get_paginator("get_tables")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTables)
 
-Arguments for `GetTablesPaginator.paginate` method:
+### paginate
 
-- `DatabaseName`: `str` *(required)*
-- `CatalogId`: `str`
-- `Expression`: `str`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTablesPaginator.paginate` method.
 
-`GetTablesPaginator.paginate` returns
-`_PageIterator`\[[GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DatabaseName: str,
+    CatalogId: str = ...,
+    Expression: str = ...,
+    TransactionId: str = ...,
+    QueryAsOfTime: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetTablesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="gettriggerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTablesRequestGetTablesPaginateTypeDef = {  # (1)
+    "DatabaseName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTablesRequestGetTablesPaginateTypeDef](./type_defs.md#gettablesrequestgettablespaginatetypedef) 
 ## GetTriggersPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("get_triggers")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_triggers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTriggers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetTriggersPaginator
@@ -472,28 +627,40 @@ def get_get_triggers_paginator() -> GetTriggersPaginator:
     return Session().client("glue").get_paginator("get_triggers")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetTriggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetTriggers)
 
-Arguments for `GetTriggersPaginator.paginate` method:
+### paginate
 
-- `DependentJobName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTriggersPaginator.paginate` method.
 
-`GetTriggersPaginator.paginate` returns
-`_PageIterator`\[[GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DependentJobName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetTriggersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getuserdefinedfunctionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTriggersRequestGetTriggersPaginateTypeDef = {  # (1)
+    "DependentJobName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTriggersRequestGetTriggersPaginateTypeDef](./type_defs.md#gettriggersrequestgettriggerspaginatetypedef) 
 ## GetUserDefinedFunctionsPaginator
 
-Type annotations for
-`boto3.client("glue").get_paginator("get_user_defined_functions")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("get_user_defined_functions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetUserDefinedFunctions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import GetUserDefinedFunctionsPaginator
@@ -502,29 +669,42 @@ def get_get_user_defined_functions_paginator() -> GetUserDefinedFunctionsPaginat
     return Session().client("glue").get_paginator("get_user_defined_functions")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.GetUserDefinedFunctions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.GetUserDefinedFunctions)
 
-Arguments for `GetUserDefinedFunctionsPaginator.paginate` method:
+### paginate
 
-- `Pattern`: `str` *(required)*
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetUserDefinedFunctionsPaginator.paginate` method.
 
-`GetUserDefinedFunctionsPaginator.paginate` returns
-`_PageIterator`\[[GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Pattern: str,
+    CatalogId: str = ...,
+    DatabaseName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetUserDefinedFunctionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listregistriespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetUserDefinedFunctionsRequestGetUserDefinedFunctionsPaginateTypeDef = {  # (1)
+    "Pattern": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetUserDefinedFunctionsRequestGetUserDefinedFunctionsPaginateTypeDef](./type_defs.md#getuserdefinedfunctionsrequestgetuserdefinedfunctionspaginatetypedef) 
 ## ListRegistriesPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("list_registries")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("list_registries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListRegistries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import ListRegistriesPaginator
@@ -533,27 +713,39 @@ def get_list_registries_paginator() -> ListRegistriesPaginator:
     return Session().client("glue").get_paginator("list_registries")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.ListRegistries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListRegistries)
 
-Arguments for `ListRegistriesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRegistriesPaginator.paginate` method.
 
-`ListRegistriesPaginator.paginate` returns
-`_PageIterator`\[[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRegistriesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listschemaversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRegistriesInputListRegistriesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRegistriesInputListRegistriesPaginateTypeDef](./type_defs.md#listregistriesinputlistregistriespaginatetypedef) 
 ## ListSchemaVersionsPaginator
 
-Type annotations for
-`boto3.client("glue").get_paginator("list_schema_versions")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("list_schema_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListSchemaVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import ListSchemaVersionsPaginator
@@ -562,27 +754,41 @@ def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
     return Session().client("glue").get_paginator("list_schema_versions")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.ListSchemaVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListSchemaVersions)
 
-Arguments for `ListSchemaVersionsPaginator.paginate` method:
+### paginate
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSchemaVersionsPaginator.paginate` method.
 
-`ListSchemaVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListSchemaVersionsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listschemaspaginator"></a>
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSchemaVersionsInputListSchemaVersionsPaginateTypeDef = {  # (1)
+    "SchemaId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSchemaVersionsInputListSchemaVersionsPaginateTypeDef](./type_defs.md#listschemaversionsinputlistschemaversionspaginatetypedef) 
 ## ListSchemasPaginator
 
-Type annotations for `boto3.client("glue").get_paginator("list_schemas")`.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator("list_schemas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListSchemas)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glue.paginator import ListSchemasPaginator
@@ -591,14 +797,32 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return Session().client("glue").get_paginator("list_schemas")
 ```
 
-Boto3 documentation:
-[Glue.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Paginator.ListSchemas)
 
-Arguments for `ListSchemasPaginator.paginate` method:
+### paginate
 
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSchemasPaginator.paginate` method.
 
-`ListSchemasPaginator.paginate` returns
-`_PageIterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RegistryId: RegistryIdTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListSchemasResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSchemasInputListSchemasPaginateTypeDef = {  # (1)
+    "RegistryId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSchemasInputListSchemasPaginateTypeDef](./type_defs.md#listschemasinputlistschemaspaginatetypedef) 

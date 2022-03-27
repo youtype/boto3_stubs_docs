@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-appconfigdata-module"></a>
-
-# Examples for boto3 AppConfigData module
+# Examples
 
 > [Index](../README.md) > [AppConfigData](./README.md) > Examples
 
-- [Examples for boto3 AppConfigData module](#examples-for-boto3-appconfigdata-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [AppConfigData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData)
+    type annotations stubs module [mypy-boto3-appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[appconfigdata]` package installed.
 
-Write your `AppConfigData` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `AppConfigData` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type AppConfigDataClient
-# and provides type checking and code completion
-client = session.client("appconfigdata")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("appconfigdata")  # (1)
+    result = client.get_latest_configuration()  # (2)
+    ```
+
+    1. client: [AppConfigDataClient](./client.md)
+    2. result: [:material-code-braces: GetLatestConfigurationResponseTypeDef](./type_defs.md#getlatestconfigurationresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[appconfigdata]` or a standalone
-`mypy_boto3_appconfigdata` package, you have to explicitly specify
-`client: AppConfigDataClient` type annotation.
+With `boto3-stubs-lite[appconfigdata]`
+or a standalone `mypy_boto3_appconfigdata` package, you have to explicitly specify `client: AppConfigDataClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_appconfigdata.client import AppConfigDataClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_appconfigdata.client import AppConfigDataClient
+    from mypy_boto3_appconfigdata.type_defs import GetLatestConfigurationResponseTypeDef
+    from mypy_boto3_appconfigdata.type_defs import GetLatestConfigurationRequestRequestTypeDef
 
 
-from mypy_boto3_appconfigdata.type_defs import bool
+    session = Session()
+
+    client: AppConfigDataClient = session.client("appconfigdata")
+
+    kwargs: GetLatestConfigurationRequestRequestTypeDef = {...}
+    result: GetLatestConfigurationResponseTypeDef = client.get_latest_configuration(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: AppConfigDataClient = session.client("appconfigdata")
 
-result: bool = client.can_paginate()
-```
+

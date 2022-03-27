@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-health-module"></a>
-
-# Type annotations for boto3 Health module
+#  Health module
 
 > [Index](../README.md) > Health
 
-Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
-type annotations stubs module
-[mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
+!!! note ""
 
-- [Type annotations for boto3 Health module](#type-annotations-for-boto3-health-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [HealthClient](#healthclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+    type annotations stubs module [mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Health`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[health]'
 python -m pip install mypy-boto3-health
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,68 +42,37 @@ python -m pip install mypy-boto3-health
 python -m pip uninstall -y mypy-boto3-health
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="healthclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## HealthClient
 
-Type annotations for `boto3.client("health")` as [HealthClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("health")` as [HealthClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_health.client import HealthClient
+
+def get_client() -> HealthClient:
+    return Session().cleint("health")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [describe_affected_accounts_for_organization](./client.md#describe_affected_accounts_for_organization)
-- [describe_affected_entities](./client.md#describe_affected_entities)
-- [describe_affected_entities_for_organization](./client.md#describe_affected_entities_for_organization)
-- [describe_entity_aggregates](./client.md#describe_entity_aggregates)
-- [describe_event_aggregates](./client.md#describe_event_aggregates)
-- [describe_event_details](./client.md#describe_event_details)
-- [describe_event_details_for_organization](./client.md#describe_event_details_for_organization)
-- [describe_event_types](./client.md#describe_event_types)
-- [describe_events](./client.md#describe_events)
-- [describe_events_for_organization](./client.md#describe_events_for_organization)
-- [describe_health_service_status_for_organization](./client.md#describe_health_service_status_for_organization)
-- [disable_health_service_access_for_organization](./client.md#disable_health_service_access_for_organization)
-- [enable_health_service_access_for_organization](./client.md#enable_health_service_access_for_organization)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-HealthClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentModificationException
-- InvalidPaginationToken
-- UnsupportedLocale
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("health").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("health").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationPaginator, ...
+from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationPaginator
+
+def get_describe_affected_accounts_for_organization_paginator() -> DescribeAffectedAccountsForOrganizationPaginator:
+    return Session().client("health").get_paginator("describe_affected_accounts_for_organization"))
 ```
 
 - [DescribeAffectedAccountsForOrganizationPaginator](./paginators.md#describeaffectedaccountsfororganizationpaginator)
@@ -136,16 +83,23 @@ from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationP
 - [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
 - [DescribeEventsForOrganizationPaginator](./paginators.md#describeeventsfororganizationpaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_health.literals import DescribeAffectedAccountsForOrganizationPaginatorName
 
-```python
-from mypy_boto3_health.literals import DescribeAffectedAccountsForOrganizationPaginatorName, ...
+def get_value() -> DescribeAffectedAccountsForOrganizationPaginatorName:
+    return "describe_affected_accounts_for_organization"
 ```
 
 - [DescribeAffectedAccountsForOrganizationPaginatorName](./literals.md#describeaffectedaccountsfororganizationpaginatorname)
@@ -164,40 +118,51 @@ from mypy_boto3_health.literals import DescribeAffectedAccountsForOrganizationPa
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_health.type_defs import AffectedEntityTypeDef
 
-```python
-from mypy_boto3_health.type_defs import AffectedEntityTypeDef, ...
+def get_value() -> AffectedEntityTypeDef:
+    return {
+        "entityArn": ...,
+    }
 ```
 
 - [AffectedEntityTypeDef](./type_defs.md#affectedentitytypedef)
 - [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
+- [DescribeAffectedAccountsForOrganizationRequestDescribeAffectedAccountsForOrganizationPaginateTypeDef](./type_defs.md#describeaffectedaccountsfororganizationrequestdescribeaffectedaccountsfororganizationpaginatetypedef)
 - [DescribeAffectedAccountsForOrganizationRequestRequestTypeDef](./type_defs.md#describeaffectedaccountsfororganizationrequestrequesttypedef)
 - [DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef)
+- [DescribeAffectedEntitiesForOrganizationRequestDescribeAffectedEntitiesForOrganizationPaginateTypeDef](./type_defs.md#describeaffectedentitiesfororganizationrequestdescribeaffectedentitiesfororganizationpaginatetypedef)
 - [DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef](./type_defs.md#describeaffectedentitiesfororganizationrequestrequesttypedef)
 - [DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef)
+- [DescribeAffectedEntitiesRequestDescribeAffectedEntitiesPaginateTypeDef](./type_defs.md#describeaffectedentitiesrequestdescribeaffectedentitiespaginatetypedef)
 - [DescribeAffectedEntitiesRequestRequestTypeDef](./type_defs.md#describeaffectedentitiesrequestrequesttypedef)
 - [DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef)
 - [DescribeEntityAggregatesRequestRequestTypeDef](./type_defs.md#describeentityaggregatesrequestrequesttypedef)
 - [DescribeEntityAggregatesResponseTypeDef](./type_defs.md#describeentityaggregatesresponsetypedef)
+- [DescribeEventAggregatesRequestDescribeEventAggregatesPaginateTypeDef](./type_defs.md#describeeventaggregatesrequestdescribeeventaggregatespaginatetypedef)
 - [DescribeEventAggregatesRequestRequestTypeDef](./type_defs.md#describeeventaggregatesrequestrequesttypedef)
 - [DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef)
 - [DescribeEventDetailsForOrganizationRequestRequestTypeDef](./type_defs.md#describeeventdetailsfororganizationrequestrequesttypedef)
 - [DescribeEventDetailsForOrganizationResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponsetypedef)
 - [DescribeEventDetailsRequestRequestTypeDef](./type_defs.md#describeeventdetailsrequestrequesttypedef)
 - [DescribeEventDetailsResponseTypeDef](./type_defs.md#describeeventdetailsresponsetypedef)
+- [DescribeEventTypesRequestDescribeEventTypesPaginateTypeDef](./type_defs.md#describeeventtypesrequestdescribeeventtypespaginatetypedef)
 - [DescribeEventTypesRequestRequestTypeDef](./type_defs.md#describeeventtypesrequestrequesttypedef)
 - [DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef)
+- [DescribeEventsForOrganizationRequestDescribeEventsForOrganizationPaginateTypeDef](./type_defs.md#describeeventsfororganizationrequestdescribeeventsfororganizationpaginatetypedef)
 - [DescribeEventsForOrganizationRequestRequestTypeDef](./type_defs.md#describeeventsfororganizationrequestrequesttypedef)
 - [DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef)
+- [DescribeEventsRequestDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsrequestdescribeeventspaginatetypedef)
 - [DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef)
 - [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)
 - [DescribeHealthServiceStatusForOrganizationResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponsetypedef)
@@ -219,3 +184,4 @@ from mypy_boto3_health.type_defs import AffectedEntityTypeDef, ...
 - [OrganizationEventTypeDef](./type_defs.md#organizationeventtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+

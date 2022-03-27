@@ -1,61 +1,18 @@
-<a id="cloudtrailclient-for-boto3-cloudtrail-module"></a>
-
-# CloudTrailClient for boto3 CloudTrail module
+# CloudTrailClient
 
 > [Index](../README.md) > [CloudTrail](./README.md) > CloudTrailClient
 
-Auto-generated documentation for
-[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
-type annotations stubs module
-[mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+!!! note ""
 
-- [CloudTrailClient for boto3 CloudTrail module](#cloudtrailclient-for-boto3-cloudtrail-module)
-  - [CloudTrailClient](#cloudtrailclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_tags](#add_tags)
-    - [can_paginate](#can_paginate)
-    - [cancel_query](#cancel_query)
-    - [create_event_data_store](#create_event_data_store)
-    - [create_trail](#create_trail)
-    - [delete_event_data_store](#delete_event_data_store)
-    - [delete_trail](#delete_trail)
-    - [describe_query](#describe_query)
-    - [describe_trails](#describe_trails)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_event_data_store](#get_event_data_store)
-    - [get_event_selectors](#get_event_selectors)
-    - [get_insight_selectors](#get_insight_selectors)
-    - [get_query_results](#get_query_results)
-    - [get_trail](#get_trail)
-    - [get_trail_status](#get_trail_status)
-    - [list_event_data_stores](#list_event_data_stores)
-    - [list_public_keys](#list_public_keys)
-    - [list_queries](#list_queries)
-    - [list_tags](#list_tags)
-    - [list_trails](#list_trails)
-    - [lookup_events](#lookup_events)
-    - [put_event_selectors](#put_event_selectors)
-    - [put_insight_selectors](#put_insight_selectors)
-    - [remove_tags](#remove_tags)
-    - [restore_event_data_store](#restore_event_data_store)
-    - [start_logging](#start_logging)
-    - [start_query](#start_query)
-    - [stop_logging](#stop_logging)
-    - [update_event_data_store](#update_event_data_store)
-    - [update_trail](#update_trail)
-    - [get_paginator](#get_paginator)
-
-<a id="cloudtrailclient"></a>
+    Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+    type annotations stubs module [mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 ## CloudTrailClient
 
-Type annotations for `boto3.client("cloudtrail")`
+Type annotations and code completion for `#!python boto3.client("cloudtrail")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cloudtrail.client import CloudTrailClient
 
@@ -63,842 +20,1068 @@ def get_cloudtrail_client() -> CloudTrailClient:
     return Session().client("cloudtrail")
 ```
 
-Boto3 documentation:
-[CloudTrail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cloudtrail").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cloudtrail")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.CloudTrailARNInvalidException,
+    client.CloudTrailAccessNotEnabledException,
+    client.CloudTrailInvalidClientTokenIdException,
+    client.CloudWatchLogsDeliveryUnavailableException,
+    client.ConflictException,
+    client.EventDataStoreARNInvalidException,
+    client.EventDataStoreAlreadyExistsException,
+    client.EventDataStoreMaxLimitExceededException,
+    client.EventDataStoreNotFoundException,
+    client.EventDataStoreTerminationProtectedException,
+    client.InactiveEventDataStoreException,
+    client.InactiveQueryException,
+    client.InsightNotEnabledException,
+    client.InsufficientDependencyServiceAccessPermissionException,
+    client.InsufficientEncryptionPolicyException,
+    client.InsufficientS3BucketPolicyException,
+    client.InsufficientSnsTopicPolicyException,
+    client.InvalidCloudWatchLogsLogGroupArnException,
+    client.InvalidCloudWatchLogsRoleArnException,
+    client.InvalidDateRangeException,
+    client.InvalidEventCategoryException,
+    client.InvalidEventDataStoreStatusException,
+    client.InvalidEventSelectorsException,
+    client.InvalidHomeRegionException,
+    client.InvalidInsightSelectorsException,
+    client.InvalidKmsKeyIdException,
+    client.InvalidLookupAttributesException,
+    client.InvalidMaxResultsException,
+    client.InvalidNextTokenException,
+    client.InvalidParameterCombinationException,
+    client.InvalidParameterException,
+    client.InvalidQueryStatementException,
+    client.InvalidQueryStatusException,
+    client.InvalidS3BucketNameException,
+    client.InvalidS3PrefixException,
+    client.InvalidSnsTopicNameException,
+    client.InvalidTagParameterException,
+    client.InvalidTimeRangeException,
+    client.InvalidTokenException,
+    client.InvalidTrailNameException,
+    client.KmsException,
+    client.KmsKeyDisabledException,
+    client.KmsKeyNotFoundException,
+    client.MaxConcurrentQueriesException,
+    client.MaximumNumberOfTrailsExceededException,
+    client.NotOrganizationMasterAccountException,
+    client.OperationNotPermittedException,
+    client.OrganizationNotInAllFeaturesModeException,
+    client.OrganizationsNotInUseException,
+    client.QueryIdNotFoundException,
+    client.ResourceNotFoundException,
+    client.ResourceTypeNotSupportedException,
+    client.S3BucketDoesNotExistException,
+    client.TagsLimitExceededException,
+    client.TrailAlreadyExistsException,
+    client.TrailNotFoundException,
+    client.TrailNotProvidedException,
+    client.UnsupportedOperationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cloudtrail.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.CloudTrailARNInvalidException`
-- `Exceptions.CloudTrailAccessNotEnabledException`
-- `Exceptions.CloudTrailInvalidClientTokenIdException`
-- `Exceptions.CloudWatchLogsDeliveryUnavailableException`
-- `Exceptions.ConflictException`
-- `Exceptions.EventDataStoreARNInvalidException`
-- `Exceptions.EventDataStoreAlreadyExistsException`
-- `Exceptions.EventDataStoreMaxLimitExceededException`
-- `Exceptions.EventDataStoreNotFoundException`
-- `Exceptions.EventDataStoreTerminationProtectedException`
-- `Exceptions.InactiveEventDataStoreException`
-- `Exceptions.InactiveQueryException`
-- `Exceptions.InsightNotEnabledException`
-- `Exceptions.InsufficientDependencyServiceAccessPermissionException`
-- `Exceptions.InsufficientEncryptionPolicyException`
-- `Exceptions.InsufficientS3BucketPolicyException`
-- `Exceptions.InsufficientSnsTopicPolicyException`
-- `Exceptions.InvalidCloudWatchLogsLogGroupArnException`
-- `Exceptions.InvalidCloudWatchLogsRoleArnException`
-- `Exceptions.InvalidDateRangeException`
-- `Exceptions.InvalidEventCategoryException`
-- `Exceptions.InvalidEventDataStoreStatusException`
-- `Exceptions.InvalidEventSelectorsException`
-- `Exceptions.InvalidHomeRegionException`
-- `Exceptions.InvalidInsightSelectorsException`
-- `Exceptions.InvalidKmsKeyIdException`
-- `Exceptions.InvalidLookupAttributesException`
-- `Exceptions.InvalidMaxResultsException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidParameterCombinationException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidQueryStatementException`
-- `Exceptions.InvalidQueryStatusException`
-- `Exceptions.InvalidS3BucketNameException`
-- `Exceptions.InvalidS3PrefixException`
-- `Exceptions.InvalidSnsTopicNameException`
-- `Exceptions.InvalidTagParameterException`
-- `Exceptions.InvalidTimeRangeException`
-- `Exceptions.InvalidTokenException`
-- `Exceptions.InvalidTrailNameException`
-- `Exceptions.KmsException`
-- `Exceptions.KmsKeyDisabledException`
-- `Exceptions.KmsKeyNotFoundException`
-- `Exceptions.MaxConcurrentQueriesException`
-- `Exceptions.MaximumNumberOfTrailsExceededException`
-- `Exceptions.NotOrganizationMasterAccountException`
-- `Exceptions.OperationNotPermittedException`
-- `Exceptions.OrganizationNotInAllFeaturesModeException`
-- `Exceptions.OrganizationsNotInUseException`
-- `Exceptions.QueryIdNotFoundException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceTypeNotSupportedException`
-- `Exceptions.S3BucketDoesNotExistException`
-- `Exceptions.TagsLimitExceededException`
-- `Exceptions.TrailAlreadyExistsException`
-- `Exceptions.TrailNotFoundException`
-- `Exceptions.TrailNotProvidedException`
-- `Exceptions.UnsupportedOperationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudTrailClient exceptions.
-
-Type annotations for `boto3.client("cloudtrail").exceptions` method.
-
-Boto3 documentation:
-[CloudTrail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_tags"></a>
-
-### add_tags
+### add\_tags
 
 Adds one or more tags to a trail, up to a limit of 50.
 
-Type annotations for `boto3.client("cloudtrail").add_tags` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").add_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags)
 
-Boto3 documentation:
-[CloudTrail.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.add_tags)
+```python title="Method definition"
+def add_tags(
+    self,
+    *,
+    ResourceId: str,
+    TagsList: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsRequestRequestTypeDef](./type_defs.md#addtagsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "TagsList": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_tags(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddTagsRequestRequestTypeDef](./type_defs.md#addtagsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cloudtrail").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.can_paginate)
 
-Boto3 documentation:
-[CloudTrail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### cancel\_query
 
-Returns `bool`.
+Cancels a query if the query is not in a terminated state, such as `CANCELLED` ,
+`FAILED` , `TIMED_OUT` , or `FINISHED`.
 
-<a id="cancel\_query"></a>
+Type annotations and code completion for `#!python boto3.client("cloudtrail").cancel_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.cancel_query)
 
-### cancel_query
+```python title="Method definition"
+def cancel_query(
+    self,
+    *,
+    EventDataStore: str,
+    QueryId: str,
+) -> CancelQueryResponseTypeDef:  # (1)
+    ...
+```
 
-Cancels a query if the query is not in a terminated state, such as `CANCELLED`
-, `FAILED` , `TIMED_OUT` , or `FINISHED`.
+1. See [:material-code-braces: CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef) 
 
-Type annotations for `boto3.client("cloudtrail").cancel_query` method.
 
-Boto3 documentation:
-[CloudTrail.Client.cancel_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.cancel_query)
+```python title="Usage example with kwargs"
+kwargs: CancelQueryRequestRequestTypeDef = {  # (1)
+    "EventDataStore": ...,
+    "QueryId": ...,
+}
 
-Arguments mapping described in
-[CancelQueryRequestRequestTypeDef](./type_defs.md#cancelqueryrequestrequesttypedef).
+parent.cancel_query(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CancelQueryRequestRequestTypeDef](./type_defs.md#cancelqueryrequestrequesttypedef) 
 
-- `EventDataStore`: `str` *(required)*
-- `QueryId`: `str` *(required)*
-
-Returns
-[CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef).
-
-<a id="create\_event\_data\_store"></a>
-
-### create_event_data_store
+### create\_event\_data\_store
 
 Creates a new event data store.
 
-Type annotations for `boto3.client("cloudtrail").create_event_data_store`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").create_event_data_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_event_data_store)
 
-Boto3 documentation:
-[CloudTrail.Client.create_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_event_data_store)
+```python title="Method definition"
+def create_event_data_store(
+    self,
+    *,
+    Name: str,
+    AdvancedEventSelectors: Sequence[AdvancedEventSelectorTypeDef] = ...,  # (1)
+    MultiRegionEnabled: bool = ...,
+    OrganizationEnabled: bool = ...,
+    RetentionPeriod: int = ...,
+    TerminationProtectionEnabled: bool = ...,
+    TagsList: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateEventDataStoreResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateEventDataStoreRequestRequestTypeDef](./type_defs.md#createeventdatastorerequestrequesttypedef).
+1. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateEventDataStoreResponseTypeDef](./type_defs.md#createeventdatastoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateEventDataStoreRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateEventDataStoreResponseTypeDef](./type_defs.md#createeventdatastoreresponsetypedef).
+parent.create_event_data_store(**kwargs)
+```
 
-<a id="create\_trail"></a>
+1. See [:material-code-braces: CreateEventDataStoreRequestRequestTypeDef](./type_defs.md#createeventdatastorerequestrequesttypedef) 
 
-### create_trail
+### create\_trail
 
 Creates a trail that specifies the settings for delivery of log data to an
 Amazon S3 bucket.
 
-Type annotations for `boto3.client("cloudtrail").create_trail` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").create_trail` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail)
 
-Boto3 documentation:
-[CloudTrail.Client.create_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.create_trail)
+```python title="Method definition"
+def create_trail(
+    self,
+    *,
+    Name: str,
+    S3BucketName: str,
+    S3KeyPrefix: str = ...,
+    SnsTopicName: str = ...,
+    IncludeGlobalServiceEvents: bool = ...,
+    IsMultiRegionTrail: bool = ...,
+    EnableLogFileValidation: bool = ...,
+    CloudWatchLogsLogGroupArn: str = ...,
+    CloudWatchLogsRoleArn: str = ...,
+    KmsKeyId: str = ...,
+    IsOrganizationTrail: bool = ...,
+    TagsList: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateTrailResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateTrailRequestRequestTypeDef](./type_defs.md#createtrailrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateTrailResponseTypeDef](./type_defs.md#createtrailresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `S3BucketName`: `str` *(required)*
-- `S3KeyPrefix`: `str`
-- `SnsTopicName`: `str`
-- `IncludeGlobalServiceEvents`: `bool`
-- `IsMultiRegionTrail`: `bool`
-- `EnableLogFileValidation`: `bool`
-- `CloudWatchLogsLogGroupArn`: `str`
-- `CloudWatchLogsRoleArn`: `str`
-- `KmsKeyId`: `str`
-- `IsOrganizationTrail`: `bool`
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateTrailRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "S3BucketName": ...,
+}
 
-Returns
-[CreateTrailResponseTypeDef](./type_defs.md#createtrailresponsetypedef).
+parent.create_trail(**kwargs)
+```
 
-<a id="delete\_event\_data\_store"></a>
+1. See [:material-code-braces: CreateTrailRequestRequestTypeDef](./type_defs.md#createtrailrequestrequesttypedef) 
 
-### delete_event_data_store
+### delete\_event\_data\_store
 
 Disables the event data store specified by `EventDataStore` , which accepts an
 event data store ARN.
 
-Type annotations for `boto3.client("cloudtrail").delete_event_data_store`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").delete_event_data_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_event_data_store)
 
-Boto3 documentation:
-[CloudTrail.Client.delete_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_event_data_store)
+```python title="Method definition"
+def delete_event_data_store(
+    self,
+    *,
+    EventDataStore: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventDataStoreRequestRequestTypeDef](./type_defs.md#deleteeventdatastorerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EventDataStore`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventDataStoreRequestRequestTypeDef = {  # (1)
+    "EventDataStore": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_event_data_store(**kwargs)
+```
 
-<a id="delete\_trail"></a>
+1. See [:material-code-braces: DeleteEventDataStoreRequestRequestTypeDef](./type_defs.md#deleteeventdatastorerequestrequesttypedef) 
 
-### delete_trail
+### delete\_trail
 
 Deletes a trail.
 
-Type annotations for `boto3.client("cloudtrail").delete_trail` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").delete_trail` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail)
 
-Boto3 documentation:
-[CloudTrail.Client.delete_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.delete_trail)
+```python title="Method definition"
+def delete_trail(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTrailRequestRequestTypeDef](./type_defs.md#deletetrailrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTrailRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_trail(**kwargs)
+```
 
-<a id="describe\_query"></a>
+1. See [:material-code-braces: DeleteTrailRequestRequestTypeDef](./type_defs.md#deletetrailrequestrequesttypedef) 
 
-### describe_query
+### describe\_query
 
-Returns metadata about a query, including query run time in milliseconds,
-number of events scanned and matched, and query status.
+Returns metadata about a query, including query run time in milliseconds, number
+of events scanned and matched, and query status.
 
-Type annotations for `boto3.client("cloudtrail").describe_query` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").describe_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_query)
 
-Boto3 documentation:
-[CloudTrail.Client.describe_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_query)
+```python title="Method definition"
+def describe_query(
+    self,
+    *,
+    EventDataStore: str,
+    QueryId: str,
+) -> DescribeQueryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeQueryRequestRequestTypeDef](./type_defs.md#describequeryrequestrequesttypedef).
+1. See [:material-code-braces: DescribeQueryResponseTypeDef](./type_defs.md#describequeryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventDataStore`: `str` *(required)*
-- `QueryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeQueryRequestRequestTypeDef = {  # (1)
+    "EventDataStore": ...,
+    "QueryId": ...,
+}
 
-Returns
-[DescribeQueryResponseTypeDef](./type_defs.md#describequeryresponsetypedef).
+parent.describe_query(**kwargs)
+```
 
-<a id="describe\_trails"></a>
+1. See [:material-code-braces: DescribeQueryRequestRequestTypeDef](./type_defs.md#describequeryrequestrequesttypedef) 
 
-### describe_trails
+### describe\_trails
 
-Retrieves settings for one or more trails associated with the current region
-for your account.
+Retrieves settings for one or more trails associated with the current region for
+your account.
 
-Type annotations for `boto3.client("cloudtrail").describe_trails` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").describe_trails` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails)
 
-Boto3 documentation:
-[CloudTrail.Client.describe_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.describe_trails)
+```python title="Method definition"
+def describe_trails(
+    self,
+    *,
+    trailNameList: Sequence[str] = ...,
+    includeShadowTrails: bool = ...,
+) -> DescribeTrailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTrailsRequestRequestTypeDef](./type_defs.md#describetrailsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTrailsResponseTypeDef](./type_defs.md#describetrailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `trailNameList`: `Sequence`\[`str`\]
-- `includeShadowTrails`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeTrailsRequestRequestTypeDef = {  # (1)
+    "trailNameList": ...,
+}
 
-Returns
-[DescribeTrailsResponseTypeDef](./type_defs.md#describetrailsresponsetypedef).
+parent.describe_trails(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeTrailsRequestRequestTypeDef](./type_defs.md#describetrailsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cloudtrail").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudTrail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_event\_data\_store"></a>
-
-### get_event_data_store
+### get\_event\_data\_store
 
 Returns information about an event data store specified as either an ARN or the
 ID portion of the ARN.
 
-Type annotations for `boto3.client("cloudtrail").get_event_data_store` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_event_data_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_data_store)
 
-Boto3 documentation:
-[CloudTrail.Client.get_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_data_store)
+```python title="Method definition"
+def get_event_data_store(
+    self,
+    *,
+    EventDataStore: str,
+) -> GetEventDataStoreResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEventDataStoreRequestRequestTypeDef](./type_defs.md#geteventdatastorerequestrequesttypedef).
+1. See [:material-code-braces: GetEventDataStoreResponseTypeDef](./type_defs.md#geteventdatastoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventDataStore`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEventDataStoreRequestRequestTypeDef = {  # (1)
+    "EventDataStore": ...,
+}
 
-Returns
-[GetEventDataStoreResponseTypeDef](./type_defs.md#geteventdatastoreresponsetypedef).
+parent.get_event_data_store(**kwargs)
+```
 
-<a id="get\_event\_selectors"></a>
+1. See [:material-code-braces: GetEventDataStoreRequestRequestTypeDef](./type_defs.md#geteventdatastorerequestrequesttypedef) 
 
-### get_event_selectors
+### get\_event\_selectors
 
 Describes the settings for the event selectors that you configured for your
 trail.
 
-Type annotations for `boto3.client("cloudtrail").get_event_selectors` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_event_selectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors)
 
-Boto3 documentation:
-[CloudTrail.Client.get_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_event_selectors)
+```python title="Method definition"
+def get_event_selectors(
+    self,
+    *,
+    TrailName: str,
+) -> GetEventSelectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEventSelectorsRequestRequestTypeDef](./type_defs.md#geteventselectorsrequestrequesttypedef).
+1. See [:material-code-braces: GetEventSelectorsResponseTypeDef](./type_defs.md#geteventselectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TrailName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEventSelectorsRequestRequestTypeDef = {  # (1)
+    "TrailName": ...,
+}
 
-Returns
-[GetEventSelectorsResponseTypeDef](./type_defs.md#geteventselectorsresponsetypedef).
+parent.get_event_selectors(**kwargs)
+```
 
-<a id="get\_insight\_selectors"></a>
+1. See [:material-code-braces: GetEventSelectorsRequestRequestTypeDef](./type_defs.md#geteventselectorsrequestrequesttypedef) 
 
-### get_insight_selectors
+### get\_insight\_selectors
 
 Describes the settings for the Insights event selectors that you configured for
 your trail.
 
-Type annotations for `boto3.client("cloudtrail").get_insight_selectors` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_insight_selectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors)
 
-Boto3 documentation:
-[CloudTrail.Client.get_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_insight_selectors)
+```python title="Method definition"
+def get_insight_selectors(
+    self,
+    *,
+    TrailName: str,
+) -> GetInsightSelectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInsightSelectorsRequestRequestTypeDef](./type_defs.md#getinsightselectorsrequestrequesttypedef).
+1. See [:material-code-braces: GetInsightSelectorsResponseTypeDef](./type_defs.md#getinsightselectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TrailName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInsightSelectorsRequestRequestTypeDef = {  # (1)
+    "TrailName": ...,
+}
 
-Returns
-[GetInsightSelectorsResponseTypeDef](./type_defs.md#getinsightselectorsresponsetypedef).
+parent.get_insight_selectors(**kwargs)
+```
 
-<a id="get\_query\_results"></a>
+1. See [:material-code-braces: GetInsightSelectorsRequestRequestTypeDef](./type_defs.md#getinsightselectorsrequestrequesttypedef) 
 
-### get_query_results
+### get\_query\_results
 
 Gets event data results of a query.
 
-Type annotations for `boto3.client("cloudtrail").get_query_results` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_query_results` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_query_results)
 
-Boto3 documentation:
-[CloudTrail.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_query_results)
+```python title="Method definition"
+def get_query_results(
+    self,
+    *,
+    EventDataStore: str,
+    QueryId: str,
+    NextToken: str = ...,
+    MaxQueryResults: int = ...,
+) -> GetQueryResultsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQueryResultsRequestRequestTypeDef](./type_defs.md#getqueryresultsrequestrequesttypedef).
+1. See [:material-code-braces: GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventDataStore`: `str` *(required)*
-- `QueryId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxQueryResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetQueryResultsRequestRequestTypeDef = {  # (1)
+    "EventDataStore": ...,
+    "QueryId": ...,
+}
 
-Returns
-[GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef).
+parent.get_query_results(**kwargs)
+```
 
-<a id="get\_trail"></a>
+1. See [:material-code-braces: GetQueryResultsRequestRequestTypeDef](./type_defs.md#getqueryresultsrequestrequesttypedef) 
 
-### get_trail
+### get\_trail
 
 Returns settings information for a specified trail.
 
-Type annotations for `boto3.client("cloudtrail").get_trail` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_trail` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail)
 
-Boto3 documentation:
-[CloudTrail.Client.get_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail)
+```python title="Method definition"
+def get_trail(
+    self,
+    *,
+    Name: str,
+) -> GetTrailResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTrailRequestRequestTypeDef](./type_defs.md#gettrailrequestrequesttypedef).
+1. See [:material-code-braces: GetTrailResponseTypeDef](./type_defs.md#gettrailresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTrailRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [GetTrailResponseTypeDef](./type_defs.md#gettrailresponsetypedef).
+parent.get_trail(**kwargs)
+```
 
-<a id="get\_trail\_status"></a>
+1. See [:material-code-braces: GetTrailRequestRequestTypeDef](./type_defs.md#gettrailrequestrequesttypedef) 
 
-### get_trail_status
+### get\_trail\_status
 
 Returns a JSON-formatted list of information about the specified trail.
 
-Type annotations for `boto3.client("cloudtrail").get_trail_status` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_trail_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status)
 
-Boto3 documentation:
-[CloudTrail.Client.get_trail_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.get_trail_status)
+```python title="Method definition"
+def get_trail_status(
+    self,
+    *,
+    Name: str,
+) -> GetTrailStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTrailStatusRequestRequestTypeDef](./type_defs.md#gettrailstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetTrailStatusResponseTypeDef](./type_defs.md#gettrailstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTrailStatusRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetTrailStatusResponseTypeDef](./type_defs.md#gettrailstatusresponsetypedef).
+parent.get_trail_status(**kwargs)
+```
 
-<a id="list\_event\_data\_stores"></a>
+1. See [:material-code-braces: GetTrailStatusRequestRequestTypeDef](./type_defs.md#gettrailstatusrequestrequesttypedef) 
 
-### list_event_data_stores
+### list\_event\_data\_stores
 
 Returns information about all event data stores in the account, in the current
 region.
 
-Type annotations for `boto3.client("cloudtrail").list_event_data_stores`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").list_event_data_stores` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_event_data_stores)
 
-Boto3 documentation:
-[CloudTrail.Client.list_event_data_stores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_event_data_stores)
+```python title="Method definition"
+def list_event_data_stores(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEventDataStoresResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEventDataStoresRequestRequestTypeDef](./type_defs.md#listeventdatastoresrequestrequesttypedef).
+1. See [:material-code-braces: ListEventDataStoresResponseTypeDef](./type_defs.md#listeventdatastoresresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEventDataStoresRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListEventDataStoresResponseTypeDef](./type_defs.md#listeventdatastoresresponsetypedef).
+parent.list_event_data_stores(**kwargs)
+```
 
-<a id="list\_public\_keys"></a>
+1. See [:material-code-braces: ListEventDataStoresRequestRequestTypeDef](./type_defs.md#listeventdatastoresrequestrequesttypedef) 
 
-### list_public_keys
+### list\_public\_keys
 
 Returns all public keys whose private keys were used to sign the digest files
 within the specified time range.
 
-Type annotations for `boto3.client("cloudtrail").list_public_keys` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").list_public_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys)
 
-Boto3 documentation:
-[CloudTrail.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_public_keys)
+```python title="Method definition"
+def list_public_keys(
+    self,
+    *,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    NextToken: str = ...,
+) -> ListPublicKeysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPublicKeysRequestRequestTypeDef](./type_defs.md#listpublickeysrequestrequesttypedef).
+1. See [:material-code-braces: ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPublicKeysRequestRequestTypeDef = {  # (1)
+    "StartTime": ...,
+}
 
-Returns
-[ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef).
+parent.list_public_keys(**kwargs)
+```
 
-<a id="list\_queries"></a>
+1. See [:material-code-braces: ListPublicKeysRequestRequestTypeDef](./type_defs.md#listpublickeysrequestrequesttypedef) 
 
-### list_queries
+### list\_queries
 
 Returns a list of queries and query statuses for the past seven days.
 
-Type annotations for `boto3.client("cloudtrail").list_queries` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").list_queries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_queries)
 
-Boto3 documentation:
-[CloudTrail.Client.list_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_queries)
+```python title="Method definition"
+def list_queries(
+    self,
+    *,
+    EventDataStore: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    QueryStatus: QueryStatusType = ...,  # (1)
+) -> ListQueriesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListQueriesRequestRequestTypeDef](./type_defs.md#listqueriesrequestrequesttypedef).
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
+2. See [:material-code-braces: ListQueriesResponseTypeDef](./type_defs.md#listqueriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventDataStore`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
+```python title="Usage example with kwargs"
+kwargs: ListQueriesRequestRequestTypeDef = {  # (1)
+    "EventDataStore": ...,
+}
 
-Returns
-[ListQueriesResponseTypeDef](./type_defs.md#listqueriesresponsetypedef).
+parent.list_queries(**kwargs)
+```
 
-<a id="list\_tags"></a>
+1. See [:material-code-braces: ListQueriesRequestRequestTypeDef](./type_defs.md#listqueriesrequestrequesttypedef) 
 
-### list_tags
+### list\_tags
 
 Lists the tags for the trail in the current region.
 
-Type annotations for `boto3.client("cloudtrail").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags)
 
-Boto3 documentation:
-[CloudTrail.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    ResourceIdList: Sequence[str],
+    NextToken: str = ...,
+) -> ListTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceIdList`: `Sequence`\[`str`\] *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestRequestTypeDef = {  # (1)
+    "ResourceIdList": ...,
+}
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="list\_trails"></a>
+1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
-### list_trails
+### list\_trails
 
 Lists trails that are in the current account.
 
-Type annotations for `boto3.client("cloudtrail").list_trails` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").list_trails` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_trails)
 
-Boto3 documentation:
-[CloudTrail.Client.list_trails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.list_trails)
+```python title="Method definition"
+def list_trails(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListTrailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTrailsRequestRequestTypeDef](./type_defs.md#listtrailsrequestrequesttypedef).
+1. See [:material-code-braces: ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTrailsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef).
+parent.list_trails(**kwargs)
+```
 
-<a id="lookup\_events"></a>
+1. See [:material-code-braces: ListTrailsRequestRequestTypeDef](./type_defs.md#listtrailsrequestrequesttypedef) 
 
-### lookup_events
+### lookup\_events
 
-Looks up \[management
-events\](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-
-concepts.html#cloudtrail-concepts-management-events)\_ or
-`CloudTrail Insights events <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail- concepts.html#cloudtrail-concepts-insigh...`.
+Looks up [management
+events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-
+concepts.html#cloudtrail-concepts-management-events)_ or `CloudTrail Insights
+events <https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-
+concepts.html#cloudtrail-concepts-insigh...`.
 
-Type annotations for `boto3.client("cloudtrail").lookup_events` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").lookup_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events)
 
-Boto3 documentation:
-[CloudTrail.Client.lookup_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.lookup_events)
+```python title="Method definition"
+def lookup_events(
+    self,
+    *,
+    LookupAttributes: Sequence[LookupAttributeTypeDef] = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    EventCategory: EventCategoryType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> LookupEventsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[LookupEventsRequestRequestTypeDef](./type_defs.md#lookupeventsrequestrequesttypedef).
+1. See [:material-code-braces: LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef) 
+2. See [:material-code-brackets: EventCategoryType](./literals.md#eventcategorytype) 
+3. See [:material-code-braces: LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LookupAttributes`:
-  `Sequence`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `EventCategory`: `Literal['insight']` (see
-  [EventCategoryType](./literals.md#eventcategorytype))
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: LookupEventsRequestRequestTypeDef = {  # (1)
+    "LookupAttributes": ...,
+}
 
-Returns
-[LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef).
+parent.lookup_events(**kwargs)
+```
 
-<a id="put\_event\_selectors"></a>
+1. See [:material-code-braces: LookupEventsRequestRequestTypeDef](./type_defs.md#lookupeventsrequestrequesttypedef) 
 
-### put_event_selectors
+### put\_event\_selectors
 
 Configures an event selector or advanced event selectors for your trail.
 
-Type annotations for `boto3.client("cloudtrail").put_event_selectors` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").put_event_selectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors)
 
-Boto3 documentation:
-[CloudTrail.Client.put_event_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_event_selectors)
+```python title="Method definition"
+def put_event_selectors(
+    self,
+    *,
+    TrailName: str,
+    EventSelectors: Sequence[EventSelectorTypeDef] = ...,  # (1)
+    AdvancedEventSelectors: Sequence[AdvancedEventSelectorTypeDef] = ...,  # (2)
+) -> PutEventSelectorsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutEventSelectorsRequestRequestTypeDef](./type_defs.md#puteventselectorsrequestrequesttypedef).
+1. See [:material-code-braces: EventSelectorTypeDef](./type_defs.md#eventselectortypedef) 
+2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+3. See [:material-code-braces: PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TrailName`: `str` *(required)*
-- `EventSelectors`:
-  `Sequence`\[[EventSelectorTypeDef](./type_defs.md#eventselectortypedef)\]
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutEventSelectorsRequestRequestTypeDef = {  # (1)
+    "TrailName": ...,
+}
 
-Returns
-[PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef).
+parent.put_event_selectors(**kwargs)
+```
 
-<a id="put\_insight\_selectors"></a>
+1. See [:material-code-braces: PutEventSelectorsRequestRequestTypeDef](./type_defs.md#puteventselectorsrequestrequesttypedef) 
 
-### put_insight_selectors
+### put\_insight\_selectors
 
-Lets you enable Insights event logging by specifying the Insights selectors
-that you want to enable on an existing trail.
+Lets you enable Insights event logging by specifying the Insights selectors that
+you want to enable on an existing trail.
 
-Type annotations for `boto3.client("cloudtrail").put_insight_selectors` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").put_insight_selectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors)
 
-Boto3 documentation:
-[CloudTrail.Client.put_insight_selectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.put_insight_selectors)
+```python title="Method definition"
+def put_insight_selectors(
+    self,
+    *,
+    TrailName: str,
+    InsightSelectors: Sequence[InsightSelectorTypeDef],  # (1)
+) -> PutInsightSelectorsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutInsightSelectorsRequestRequestTypeDef](./type_defs.md#putinsightselectorsrequestrequesttypedef).
+1. See [:material-code-braces: InsightSelectorTypeDef](./type_defs.md#insightselectortypedef) 
+2. See [:material-code-braces: PutInsightSelectorsResponseTypeDef](./type_defs.md#putinsightselectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TrailName`: `str` *(required)*
-- `InsightSelectors`:
-  `Sequence`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutInsightSelectorsRequestRequestTypeDef = {  # (1)
+    "TrailName": ...,
+    "InsightSelectors": ...,
+}
 
-Returns
-[PutInsightSelectorsResponseTypeDef](./type_defs.md#putinsightselectorsresponsetypedef).
+parent.put_insight_selectors(**kwargs)
+```
 
-<a id="remove\_tags"></a>
+1. See [:material-code-braces: PutInsightSelectorsRequestRequestTypeDef](./type_defs.md#putinsightselectorsrequestrequesttypedef) 
 
-### remove_tags
+### remove\_tags
 
 Removes the specified tags from a trail.
 
-Type annotations for `boto3.client("cloudtrail").remove_tags` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").remove_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags)
 
-Boto3 documentation:
-[CloudTrail.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.remove_tags)
+```python title="Method definition"
+def remove_tags(
+    self,
+    *,
+    ResourceId: str,
+    TagsList: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsRequestRequestTypeDef](./type_defs.md#removetagsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "TagsList": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_tags(**kwargs)
+```
 
-<a id="restore\_event\_data\_store"></a>
+1. See [:material-code-braces: RemoveTagsRequestRequestTypeDef](./type_defs.md#removetagsrequestrequesttypedef) 
 
-### restore_event_data_store
+### restore\_event\_data\_store
 
 Restores a deleted event data store specified by `EventDataStore` , which
 accepts an event data store ARN.
 
-Type annotations for `boto3.client("cloudtrail").restore_event_data_store`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").restore_event_data_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.restore_event_data_store)
 
-Boto3 documentation:
-[CloudTrail.Client.restore_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.restore_event_data_store)
+```python title="Method definition"
+def restore_event_data_store(
+    self,
+    *,
+    EventDataStore: str,
+) -> RestoreEventDataStoreResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RestoreEventDataStoreRequestRequestTypeDef](./type_defs.md#restoreeventdatastorerequestrequesttypedef).
+1. See [:material-code-braces: RestoreEventDataStoreResponseTypeDef](./type_defs.md#restoreeventdatastoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventDataStore`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RestoreEventDataStoreRequestRequestTypeDef = {  # (1)
+    "EventDataStore": ...,
+}
 
-Returns
-[RestoreEventDataStoreResponseTypeDef](./type_defs.md#restoreeventdatastoreresponsetypedef).
+parent.restore_event_data_store(**kwargs)
+```
 
-<a id="start\_logging"></a>
+1. See [:material-code-braces: RestoreEventDataStoreRequestRequestTypeDef](./type_defs.md#restoreeventdatastorerequestrequesttypedef) 
 
-### start_logging
+### start\_logging
 
 Starts the recording of Amazon Web Services API calls and log file delivery for
 a trail.
 
-Type annotations for `boto3.client("cloudtrail").start_logging` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").start_logging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_logging)
 
-Boto3 documentation:
-[CloudTrail.Client.start_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_logging)
+```python title="Method definition"
+def start_logging(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartLoggingRequestRequestTypeDef](./type_defs.md#startloggingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartLoggingRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_logging(**kwargs)
+```
 
-<a id="start\_query"></a>
+1. See [:material-code-braces: StartLoggingRequestRequestTypeDef](./type_defs.md#startloggingrequestrequesttypedef) 
 
-### start_query
+### start\_query
 
 Starts a CloudTrail Lake query.
 
-Type annotations for `boto3.client("cloudtrail").start_query` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").start_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_query)
 
-Boto3 documentation:
-[CloudTrail.Client.start_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.start_query)
+```python title="Method definition"
+def start_query(
+    self,
+    *,
+    QueryStatement: str,
+) -> StartQueryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartQueryRequestRequestTypeDef](./type_defs.md#startqueryrequestrequesttypedef).
+1. See [:material-code-braces: StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QueryStatement`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartQueryRequestRequestTypeDef = {  # (1)
+    "QueryStatement": ...,
+}
 
-Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
+parent.start_query(**kwargs)
+```
 
-<a id="stop\_logging"></a>
+1. See [:material-code-braces: StartQueryRequestRequestTypeDef](./type_defs.md#startqueryrequestrequesttypedef) 
 
-### stop_logging
+### stop\_logging
 
 Suspends the recording of Amazon Web Services API calls and log file delivery
 for the specified trail.
 
-Type annotations for `boto3.client("cloudtrail").stop_logging` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").stop_logging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging)
 
-Boto3 documentation:
-[CloudTrail.Client.stop_logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.stop_logging)
+```python title="Method definition"
+def stop_logging(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopLoggingRequestRequestTypeDef](./type_defs.md#stoploggingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopLoggingRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_logging(**kwargs)
+```
 
-<a id="update\_event\_data\_store"></a>
+1. See [:material-code-braces: StopLoggingRequestRequestTypeDef](./type_defs.md#stoploggingrequestrequesttypedef) 
 
-### update_event_data_store
+### update\_event\_data\_store
 
 Updates an event data store.
 
-Type annotations for `boto3.client("cloudtrail").update_event_data_store`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").update_event_data_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_event_data_store)
 
-Boto3 documentation:
-[CloudTrail.Client.update_event_data_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_event_data_store)
+```python title="Method definition"
+def update_event_data_store(
+    self,
+    *,
+    EventDataStore: str,
+    Name: str = ...,
+    AdvancedEventSelectors: Sequence[AdvancedEventSelectorTypeDef] = ...,  # (1)
+    MultiRegionEnabled: bool = ...,
+    OrganizationEnabled: bool = ...,
+    RetentionPeriod: int = ...,
+    TerminationProtectionEnabled: bool = ...,
+) -> UpdateEventDataStoreResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEventDataStoreRequestRequestTypeDef](./type_defs.md#updateeventdatastorerequestrequesttypedef).
+1. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+2. See [:material-code-braces: UpdateEventDataStoreResponseTypeDef](./type_defs.md#updateeventdatastoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventDataStore`: `str` *(required)*
-- `Name`: `str`
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateEventDataStoreRequestRequestTypeDef = {  # (1)
+    "EventDataStore": ...,
+}
 
-Returns
-[UpdateEventDataStoreResponseTypeDef](./type_defs.md#updateeventdatastoreresponsetypedef).
+parent.update_event_data_store(**kwargs)
+```
 
-<a id="update\_trail"></a>
+1. See [:material-code-braces: UpdateEventDataStoreRequestRequestTypeDef](./type_defs.md#updateeventdatastorerequestrequesttypedef) 
 
-### update_trail
+### update\_trail
 
 Updates trail settings that control what events you are logging, and how to
 handle log files.
 
-Type annotations for `boto3.client("cloudtrail").update_trail` method.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").update_trail` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail)
 
-Boto3 documentation:
-[CloudTrail.Client.update_trail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.update_trail)
+```python title="Method definition"
+def update_trail(
+    self,
+    *,
+    Name: str,
+    S3BucketName: str = ...,
+    S3KeyPrefix: str = ...,
+    SnsTopicName: str = ...,
+    IncludeGlobalServiceEvents: bool = ...,
+    IsMultiRegionTrail: bool = ...,
+    EnableLogFileValidation: bool = ...,
+    CloudWatchLogsLogGroupArn: str = ...,
+    CloudWatchLogsRoleArn: str = ...,
+    KmsKeyId: str = ...,
+    IsOrganizationTrail: bool = ...,
+) -> UpdateTrailResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTrailRequestRequestTypeDef](./type_defs.md#updatetrailrequestrequesttypedef).
+1. See [:material-code-braces: UpdateTrailResponseTypeDef](./type_defs.md#updatetrailresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `SnsTopicName`: `str`
-- `IncludeGlobalServiceEvents`: `bool`
-- `IsMultiRegionTrail`: `bool`
-- `EnableLogFileValidation`: `bool`
-- `CloudWatchLogsLogGroupArn`: `str`
-- `CloudWatchLogsRoleArn`: `str`
-- `KmsKeyId`: `str`
-- `IsOrganizationTrail`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateTrailRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateTrailResponseTypeDef](./type_defs.md#updatetrailresponsetypedef).
+parent.update_trail(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateTrailRequestRequestTypeDef](./type_defs.md#updatetrailrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudtrail").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloudtrail").get_paginator` method with overloads.
 
-- `client.get_paginator("list_public_keys")` ->
-  [ListPublicKeysPaginator](./paginators.md#listpublickeyspaginator)
-- `client.get_paginator("list_tags")` ->
-  [ListTagsPaginator](./paginators.md#listtagspaginator)
-- `client.get_paginator("list_trails")` ->
-  [ListTrailsPaginator](./paginators.md#listtrailspaginator)
-- `client.get_paginator("lookup_events")` ->
-  [LookupEventsPaginator](./paginators.md#lookupeventspaginator)
+- `client.get_paginator("list_public_keys")` -> [ListPublicKeysPaginator](./paginators.md#listpublickeyspaginator)
+- `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)
+- `client.get_paginator("list_trails")` -> [ListTrailsPaginator](./paginators.md#listtrailspaginator)
+- `client.get_paginator("lookup_events")` -> [LookupEventsPaginator](./paginators.md#lookupeventspaginator)
+
+
+

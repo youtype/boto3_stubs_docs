@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-apigatewaymanagementapi-module"></a>
-
-# Type annotations for boto3 ApiGatewayManagementApi module
+#  ApiGatewayManagementApi module
 
 > [Index](../README.md) > ApiGatewayManagementApi
 
-Auto-generated documentation for
-[ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
-type annotations stubs module
-[mypy-boto3-apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
+!!! note ""
 
-- [Type annotations for boto3 ApiGatewayManagementApi module](#type-annotations-for-boto3-apigatewaymanagementapi-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ApiGatewayManagementApiClient](#apigatewaymanagementapiclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
+    type annotations stubs module [mypy-boto3-apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ApiGatewayManagementApi`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[apigatewaymanagementapi]'
 python -m pip install mypy-boto3-apigatewaymanagementapi
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,75 +42,61 @@ python -m pip install mypy-boto3-apigatewaymanagementapi
 python -m pip uninstall -y mypy-boto3-apigatewaymanagementapi
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="apigatewaymanagementapiclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ApiGatewayManagementApiClient
 
-Type annotations for `boto3.client("apigatewaymanagementapi")` as
-[ApiGatewayManagementApiClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("apigatewaymanagementapi")` as [ApiGatewayManagementApiClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_apigatewaymanagementapi.client import ApiGatewayManagementApiClient
+
+def get_client() -> ApiGatewayManagementApiClient:
+    return Session().cleint("apigatewaymanagementapi")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [delete_connection](./client.md#delete_connection)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_connection](./client.md#get_connection)
-- [post_to_connection](./client.md#post_to_connection)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-ApiGatewayManagementApiClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- ForbiddenException
-- GoneException
-- LimitExceededException
-- PayloadTooLargeException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_apigatewaymanagementapi.literals import ApiGatewayManagementApiServiceName
 
-```python
-from mypy_boto3_apigatewaymanagementapi.literals import ApiGatewayManagementApiServiceName, ...
+def get_value() -> ApiGatewayManagementApiServiceName:
+    return "apigatewaymanagementapi"
 ```
 
 - [ApiGatewayManagementApiServiceName](./literals.md#apigatewaymanagementapiservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequestRequestTypeDef
 
-```python
-from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequestRequestTypeDef, ...
+def get_value() -> DeleteConnectionRequestRequestTypeDef:
+    return {
+        "ConnectionId": ...,
+    }
 ```
 
 - [DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef)
@@ -140,3 +105,4 @@ from mypy_boto3_apigatewaymanagementapi.type_defs import DeleteConnectionRequest
 - [IdentityTypeDef](./type_defs.md#identitytypedef)
 - [PostToConnectionRequestRequestTypeDef](./type_defs.md#posttoconnectionrequestrequesttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+

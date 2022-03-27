@@ -1,33 +1,18 @@
-<a id="paginators-for-boto3-forecastservice-module"></a>
-
-# Paginators for boto3 ForecastService module
+# Paginators
 
 > [Index](../README.md) > [ForecastService](./README.md) > Paginators
 
-Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
-type annotations stubs module
-[mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
+!!! note ""
 
-- [Paginators for boto3 ForecastService module](#paginators-for-boto3-forecastservice-module)
-  - [ListDatasetGroupsPaginator](#listdatasetgroupspaginator)
-  - [ListDatasetImportJobsPaginator](#listdatasetimportjobspaginator)
-  - [ListDatasetsPaginator](#listdatasetspaginator)
-  - [ListForecastExportJobsPaginator](#listforecastexportjobspaginator)
-  - [ListForecastsPaginator](#listforecastspaginator)
-  - [ListPredictorBacktestExportJobsPaginator](#listpredictorbacktestexportjobspaginator)
-  - [ListPredictorsPaginator](#listpredictorspaginator)
-
-<a id="listdatasetgroupspaginator"></a>
+    Auto-generated documentation for [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+    type annotations stubs module [mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 ## ListDatasetGroupsPaginator
 
-Type annotations for
-`boto3.client("forecast").get_paginator("list_dataset_groups")`.
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_dataset_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_forecast.paginator import ListDatasetGroupsPaginator
@@ -36,27 +21,39 @@ def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
     return Session().client("forecast").get_paginator("list_dataset_groups")
 ```
 
-Boto3 documentation:
-[ForecastService.Paginator.ListDatasetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetGroups)
 
-Arguments for `ListDatasetGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetGroupsPaginator.paginate` method.
 
-`ListDatasetGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatasetGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatasetimportjobspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef](./type_defs.md#listdatasetgroupsrequestlistdatasetgroupspaginatetypedef) 
 ## ListDatasetImportJobsPaginator
 
-Type annotations for
-`boto3.client("forecast").get_paginator("list_dataset_import_jobs")`.
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_dataset_import_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetImportJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_forecast.paginator import ListDatasetImportJobsPaginator
@@ -65,27 +62,41 @@ def get_list_dataset_import_jobs_paginator() -> ListDatasetImportJobsPaginator:
     return Session().client("forecast").get_paginator("list_dataset_import_jobs")
 ```
 
-Boto3 documentation:
-[ForecastService.Paginator.ListDatasetImportJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasetImportJobs)
 
-Arguments for `ListDatasetImportJobsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetImportJobsPaginator.paginate` method.
 
-`ListDatasetImportJobsPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListDatasetImportJobsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listdatasetspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef](./type_defs.md#listdatasetimportjobsrequestlistdatasetimportjobspaginatetypedef) 
 ## ListDatasetsPaginator
 
-Type annotations for `boto3.client("forecast").get_paginator("list_datasets")`.
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_datasets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_forecast.paginator import ListDatasetsPaginator
@@ -94,27 +105,39 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return Session().client("forecast").get_paginator("list_datasets")
 ```
 
-Boto3 documentation:
-[ForecastService.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListDatasets)
 
-Arguments for `ListDatasetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetsPaginator.paginate` method.
 
-`ListDatasetsPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatasetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listforecastexportjobspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestListDatasetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef) 
 ## ListForecastExportJobsPaginator
 
-Type annotations for
-`boto3.client("forecast").get_paginator("list_forecast_export_jobs")`.
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_forecast_export_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecastExportJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_forecast.paginator import ListForecastExportJobsPaginator
@@ -123,28 +146,41 @@ def get_list_forecast_export_jobs_paginator() -> ListForecastExportJobsPaginator
     return Session().client("forecast").get_paginator("list_forecast_export_jobs")
 ```
 
-Boto3 documentation:
-[ForecastService.Paginator.ListForecastExportJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecastExportJobs)
 
-Arguments for `ListForecastExportJobsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListForecastExportJobsPaginator.paginate` method.
 
-`ListForecastExportJobsPaginator.paginate` returns
-`_PageIterator`\[[ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListForecastExportJobsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listforecastspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListForecastExportJobsRequestListForecastExportJobsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListForecastExportJobsRequestListForecastExportJobsPaginateTypeDef](./type_defs.md#listforecastexportjobsrequestlistforecastexportjobspaginatetypedef) 
 ## ListForecastsPaginator
 
-Type annotations for
-`boto3.client("forecast").get_paginator("list_forecasts")`.
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_forecasts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecasts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_forecast.paginator import ListForecastsPaginator
@@ -153,28 +189,41 @@ def get_list_forecasts_paginator() -> ListForecastsPaginator:
     return Session().client("forecast").get_paginator("list_forecasts")
 ```
 
-Boto3 documentation:
-[ForecastService.Paginator.ListForecasts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListForecasts)
 
-Arguments for `ListForecastsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListForecastsPaginator.paginate` method.
 
-`ListForecastsPaginator.paginate` returns
-`_PageIterator`\[[ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListForecastsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listpredictorbacktestexportjobspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListForecastsRequestListForecastsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListForecastsRequestListForecastsPaginateTypeDef](./type_defs.md#listforecastsrequestlistforecastspaginatetypedef) 
 ## ListPredictorBacktestExportJobsPaginator
 
-Type annotations for
-`boto3.client("forecast").get_paginator("list_predictor_backtest_export_jobs")`.
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_predictor_backtest_export_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictorBacktestExportJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_forecast.paginator import ListPredictorBacktestExportJobsPaginator
@@ -183,28 +232,41 @@ def get_list_predictor_backtest_export_jobs_paginator() -> ListPredictorBacktest
     return Session().client("forecast").get_paginator("list_predictor_backtest_export_jobs")
 ```
 
-Boto3 documentation:
-[ForecastService.Paginator.ListPredictorBacktestExportJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictorBacktestExportJobs)
 
-Arguments for `ListPredictorBacktestExportJobsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPredictorBacktestExportJobsPaginator.paginate` method.
 
-`ListPredictorBacktestExportJobsPaginator.paginate` returns
-`_PageIterator`\[[ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPredictorBacktestExportJobsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listpredictorspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPredictorBacktestExportJobsRequestListPredictorBacktestExportJobsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPredictorBacktestExportJobsRequestListPredictorBacktestExportJobsPaginateTypeDef](./type_defs.md#listpredictorbacktestexportjobsrequestlistpredictorbacktestexportjobspaginatetypedef) 
 ## ListPredictorsPaginator
 
-Type annotations for
-`boto3.client("forecast").get_paginator("list_predictors")`.
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator("list_predictors")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictors)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_forecast.paginator import ListPredictorsPaginator
@@ -213,14 +275,32 @@ def get_list_predictors_paginator() -> ListPredictorsPaginator:
     return Session().client("forecast").get_paginator("list_predictors")
 ```
 
-Boto3 documentation:
-[ForecastService.Paginator.ListPredictors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Paginator.ListPredictors)
 
-Arguments for `ListPredictorsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPredictorsPaginator.paginate` method.
 
-`ListPredictorsPaginator.paginate` returns
-`_PageIterator`\[[ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPredictorsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPredictorsRequestListPredictorsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPredictorsRequestListPredictorsPaginateTypeDef](./type_defs.md#listpredictorsrequestlistpredictorspaginatetypedef) 

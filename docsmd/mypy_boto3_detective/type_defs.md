@@ -1,548 +1,673 @@
-<a id="typed-dictionaries-for-boto3-detective-module"></a>
-
-# Typed dictionaries for boto3 Detective module
+# Typed dictionaries
 
 > [Index](../README.md) > [Detective](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
-type annotations stubs module
-[mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Detective module](#typed-dictionaries-for-boto3-detective-module)
-  - [AcceptInvitationRequestRequestTypeDef](#acceptinvitationrequestrequesttypedef)
-  - [AccountTypeDef](#accounttypedef)
-  - [AdministratorTypeDef](#administratortypedef)
-  - [CreateGraphRequestRequestTypeDef](#creategraphrequestrequesttypedef)
-  - [CreateGraphResponseTypeDef](#creategraphresponsetypedef)
-  - [CreateMembersRequestRequestTypeDef](#createmembersrequestrequesttypedef)
-  - [CreateMembersResponseTypeDef](#createmembersresponsetypedef)
-  - [DeleteGraphRequestRequestTypeDef](#deletegraphrequestrequesttypedef)
-  - [DeleteMembersRequestRequestTypeDef](#deletemembersrequestrequesttypedef)
-  - [DeleteMembersResponseTypeDef](#deletemembersresponsetypedef)
-  - [DescribeOrganizationConfigurationRequestRequestTypeDef](#describeorganizationconfigurationrequestrequesttypedef)
-  - [DescribeOrganizationConfigurationResponseTypeDef](#describeorganizationconfigurationresponsetypedef)
-  - [DisassociateMembershipRequestRequestTypeDef](#disassociatemembershiprequestrequesttypedef)
-  - [EnableOrganizationAdminAccountRequestRequestTypeDef](#enableorganizationadminaccountrequestrequesttypedef)
-  - [GetMembersRequestRequestTypeDef](#getmembersrequestrequesttypedef)
-  - [GetMembersResponseTypeDef](#getmembersresponsetypedef)
-  - [GraphTypeDef](#graphtypedef)
-  - [ListGraphsRequestRequestTypeDef](#listgraphsrequestrequesttypedef)
-  - [ListGraphsResponseTypeDef](#listgraphsresponsetypedef)
-  - [ListInvitationsRequestRequestTypeDef](#listinvitationsrequestrequesttypedef)
-  - [ListInvitationsResponseTypeDef](#listinvitationsresponsetypedef)
-  - [ListMembersRequestRequestTypeDef](#listmembersrequestrequesttypedef)
-  - [ListMembersResponseTypeDef](#listmembersresponsetypedef)
-  - [ListOrganizationAdminAccountsRequestRequestTypeDef](#listorganizationadminaccountsrequestrequesttypedef)
-  - [ListOrganizationAdminAccountsResponseTypeDef](#listorganizationadminaccountsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MemberDetailTypeDef](#memberdetailtypedef)
-  - [RejectInvitationRequestRequestTypeDef](#rejectinvitationrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartMonitoringMemberRequestRequestTypeDef](#startmonitoringmemberrequestrequesttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UnprocessedAccountTypeDef](#unprocessedaccounttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateOrganizationConfigurationRequestRequestTypeDef](#updateorganizationconfigurationrequestrequesttypedef)
-
-<a id="acceptinvitationrequestrequesttypedef"></a>
+    Auto-generated documentation for [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
+    type annotations stubs module [mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
 
 ## AcceptInvitationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
+
+def get_value() -> AcceptInvitationRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GraphArn`: `str`
-
-<a id="accounttypedef"></a>
+```python title="Definition"
+class AcceptInvitationRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+```
 
 ## AccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import AccountTypeDef
+
+def get_value() -> AccountTypeDef:
+    return {
+        "AccountId": ...,
+        "EmailAddress": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-- `EmailAddress`: `str`
-
-<a id="administratortypedef"></a>
+```python title="Definition"
+class AccountTypeDef(TypedDict):
+    AccountId: str,
+    EmailAddress: str,
+```
 
 ## AdministratorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import AdministratorTypeDef
+
+def get_value() -> AdministratorTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountId`: `str`
-- `GraphArn`: `str`
-- `DelegationTime`: `datetime`
-
-<a id="creategraphrequestrequesttypedef"></a>
+```python title="Definition"
+class AdministratorTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    GraphArn: NotRequired[str],
+    DelegationTime: NotRequired[datetime],
+```
 
 ## CreateGraphRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import CreateGraphRequestRequestTypeDef
+
+def get_value() -> CreateGraphRequestRequestTypeDef:
+    return {
+        "Tags": ...,
+    }
 ```
 
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="creategraphresponsetypedef"></a>
+```python title="Definition"
+class CreateGraphRequestRequestTypeDef(TypedDict):
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateGraphResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import CreateGraphResponseTypeDef
+
+def get_value() -> CreateGraphResponseTypeDef:
+    return {
+        "GraphArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGraphResponseTypeDef(TypedDict):
+    GraphArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GraphArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmembersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMembersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import CreateMembersRequestRequestTypeDef
+
+def get_value() -> CreateMembersRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+        "Accounts": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMembersRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+    Accounts: Sequence[AccountTypeDef],  # (1)
+    Message: NotRequired[str],
+    DisableEmailNotification: NotRequired[bool],
+```
 
-- `GraphArn`: `str`
-- `Accounts`: `Sequence`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
-
-Optional fields:
-
-- `Message`: `str`
-- `DisableEmailNotification`: `bool`
-
-<a id="createmembersresponsetypedef"></a>
-
+1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
 ## CreateMembersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import CreateMembersResponseTypeDef
+
+def get_value() -> CreateMembersResponseTypeDef:
+    return {
+        "Members": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMembersResponseTypeDef(TypedDict):
+    Members: List[MemberDetailTypeDef],  # (1)
+    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Members`:
-  `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
-- `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletegraphrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MemberDetailTypeDef](./type_defs.md#memberdetailtypedef) 
+2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGraphRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import DeleteGraphRequestRequestTypeDef
+
+def get_value() -> DeleteGraphRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GraphArn`: `str`
-
-<a id="deletemembersrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteGraphRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+```
 
 ## DeleteMembersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import DeleteMembersRequestRequestTypeDef
+
+def get_value() -> DeleteMembersRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+        "AccountIds": ...,
+    }
 ```
 
-Required fields:
-
-- `GraphArn`: `str`
-- `AccountIds`: `Sequence`\[`str`\]
-
-<a id="deletemembersresponsetypedef"></a>
+```python title="Definition"
+class DeleteMembersRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+    AccountIds: Sequence[str],
+```
 
 ## DeleteMembersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import DeleteMembersResponseTypeDef
+
+def get_value() -> DeleteMembersResponseTypeDef:
+    return {
+        "AccountIds": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteMembersResponseTypeDef(TypedDict):
+    AccountIds: List[str],
+    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountIds`: `List`\[`str`\]
-- `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeorganizationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrganizationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import DescribeOrganizationConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeOrganizationConfigurationRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GraphArn`: `str`
-
-<a id="describeorganizationconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DescribeOrganizationConfigurationRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+```
 
 ## DescribeOrganizationConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import DescribeOrganizationConfigurationResponseTypeDef
+
+def get_value() -> DescribeOrganizationConfigurationResponseTypeDef:
+    return {
+        "AutoEnable": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationConfigurationResponseTypeDef(TypedDict):
+    AutoEnable: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AutoEnable`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociatemembershiprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateMembershipRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import DisassociateMembershipRequestRequestTypeDef
+
+def get_value() -> DisassociateMembershipRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GraphArn`: `str`
-
-<a id="enableorganizationadminaccountrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateMembershipRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+```
 
 ## EnableOrganizationAdminAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import EnableOrganizationAdminAccountRequestRequestTypeDef
+
+def get_value() -> EnableOrganizationAdminAccountRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-
-<a id="getmembersrequestrequesttypedef"></a>
+```python title="Definition"
+class EnableOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+```
 
 ## GetMembersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import GetMembersRequestRequestTypeDef
+
+def get_value() -> GetMembersRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+        "AccountIds": ...,
+    }
 ```
 
-Required fields:
-
-- `GraphArn`: `str`
-- `AccountIds`: `Sequence`\[`str`\]
-
-<a id="getmembersresponsetypedef"></a>
+```python title="Definition"
+class GetMembersRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+    AccountIds: Sequence[str],
+```
 
 ## GetMembersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import GetMembersResponseTypeDef
+
+def get_value() -> GetMembersResponseTypeDef:
+    return {
+        "MemberDetails": ...,
+        "UnprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMembersResponseTypeDef(TypedDict):
+    MemberDetails: List[MemberDetailTypeDef],  # (1)
+    UnprocessedAccounts: List[UnprocessedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `MemberDetails`:
-  `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
-- `UnprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="graphtypedef"></a>
-
+1. See [:material-code-braces: MemberDetailTypeDef](./type_defs.md#memberdetailtypedef) 
+2. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GraphTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import GraphTypeDef
+
+def get_value() -> GraphTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
-
-<a id="listgraphsrequestrequesttypedef"></a>
+```python title="Definition"
+class GraphTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+```
 
 ## ListGraphsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListGraphsRequestRequestTypeDef
+
+def get_value() -> ListGraphsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listgraphsresponsetypedef"></a>
+```python title="Definition"
+class ListGraphsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListGraphsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListGraphsResponseTypeDef
+
+def get_value() -> ListGraphsResponseTypeDef:
+    return {
+        "GraphList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGraphsResponseTypeDef(TypedDict):
+    GraphList: List[GraphTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GraphList`: `List`\[[GraphTypeDef](./type_defs.md#graphtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listinvitationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GraphTypeDef](./type_defs.md#graphtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInvitationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListInvitationsRequestRequestTypeDef
+
+def get_value() -> ListInvitationsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listinvitationsresponsetypedef"></a>
+```python title="Definition"
+class ListInvitationsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListInvitationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListInvitationsResponseTypeDef
+
+def get_value() -> ListInvitationsResponseTypeDef:
+    return {
+        "Invitations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInvitationsResponseTypeDef(TypedDict):
+    Invitations: List[MemberDetailTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Invitations`:
-  `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmembersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MemberDetailTypeDef](./type_defs.md#memberdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMembersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListMembersRequestRequestTypeDef
+
+def get_value() -> ListMembersRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GraphArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listmembersresponsetypedef"></a>
+```python title="Definition"
+class ListMembersRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListMembersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListMembersResponseTypeDef
+
+def get_value() -> ListMembersResponseTypeDef:
+    return {
+        "MemberDetails": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMembersResponseTypeDef(TypedDict):
+    MemberDetails: List[MemberDetailTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MemberDetails`:
-  `List`\[[MemberDetailTypeDef](./type_defs.md#memberdetailtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listorganizationadminaccountsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MemberDetailTypeDef](./type_defs.md#memberdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListOrganizationAdminAccountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListOrganizationAdminAccountsRequestRequestTypeDef
+
+def get_value() -> ListOrganizationAdminAccountsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listorganizationadminaccountsresponsetypedef"></a>
+```python title="Definition"
+class ListOrganizationAdminAccountsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListOrganizationAdminAccountsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListOrganizationAdminAccountsResponseTypeDef
+
+def get_value() -> ListOrganizationAdminAccountsResponseTypeDef:
+    return {
+        "Administrators": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOrganizationAdminAccountsResponseTypeDef(TypedDict):
+    Administrators: List[AdministratorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Administrators`:
-  `List`\[[AdministratorTypeDef](./type_defs.md#administratortypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AdministratorTypeDef](./type_defs.md#administratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="memberdetailtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MemberDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import MemberDetailTypeDef
+
+def get_value() -> MemberDetailTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MemberDetailTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    GraphArn: NotRequired[str],
+    MasterId: NotRequired[str],
+    AdministratorId: NotRequired[str],
+    Status: NotRequired[MemberStatusType],  # (1)
+    DisabledReason: NotRequired[MemberDisabledReasonType],  # (2)
+    InvitedTime: NotRequired[datetime],
+    UpdatedTime: NotRequired[datetime],
+    VolumeUsageInBytes: NotRequired[int],
+    VolumeUsageUpdatedTime: NotRequired[datetime],
+    PercentOfGraphUtilization: NotRequired[float],
+    PercentOfGraphUtilizationUpdatedTime: NotRequired[datetime],
+    InvitationType: NotRequired[InvitationTypeType],  # (3)
+```
 
-- `AccountId`: `str`
-- `EmailAddress`: `str`
-- `GraphArn`: `str`
-- `MasterId`: `str`
-- `AdministratorId`: `str`
-- `Status`: [MemberStatusType](./literals.md#memberstatustype)
-- `DisabledReason`:
-  [MemberDisabledReasonType](./literals.md#memberdisabledreasontype)
-- `InvitedTime`: `datetime`
-- `UpdatedTime`: `datetime`
-- `VolumeUsageInBytes`: `int`
-- `VolumeUsageUpdatedTime`: `datetime`
-- `PercentOfGraphUtilization`: `float`
-- `PercentOfGraphUtilizationUpdatedTime`: `datetime`
-- `InvitationType`: [InvitationTypeType](./literals.md#invitationtypetype)
-
-<a id="rejectinvitationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: MemberStatusType](./literals.md#memberstatustype) 
+2. See [:material-code-brackets: MemberDisabledReasonType](./literals.md#memberdisabledreasontype) 
+3. See [:material-code-brackets: InvitationTypeType](./literals.md#invitationtypetype) 
 ## RejectInvitationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import RejectInvitationRequestRequestTypeDef
+
+def get_value() -> RejectInvitationRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GraphArn`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RejectInvitationRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startmonitoringmemberrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartMonitoringMemberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import StartMonitoringMemberRequestRequestTypeDef
+
+def get_value() -> StartMonitoringMemberRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+        "AccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `GraphArn`: `str`
-- `AccountId`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StartMonitoringMemberRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+    AccountId: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="unprocessedaccounttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UnprocessedAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import UnprocessedAccountTypeDef
+
+def get_value() -> UnprocessedAccountTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountId`: `str`
-- `Reason`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class UnprocessedAccountTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    Reason: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateorganizationconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateOrganizationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_detective.type_defs import UpdateOrganizationConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateOrganizationConfigurationRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOrganizationConfigurationRequestRequestTypeDef(TypedDict):
+    GraphArn: str,
+    AutoEnable: NotRequired[bool],
+```
 
-- `GraphArn`: `str`
-
-Optional fields:
-
-- `AutoEnable`: `bool`

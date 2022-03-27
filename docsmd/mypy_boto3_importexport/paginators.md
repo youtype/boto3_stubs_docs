@@ -1,26 +1,18 @@
-<a id="paginators-for-boto3-importexport-module"></a>
-
-# Paginators for boto3 ImportExport module
+# Paginators
 
 > [Index](../README.md) > [ImportExport](./README.md) > Paginators
 
-Auto-generated documentation for
-[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
-type annotations stubs module
-[mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
+!!! note ""
 
-- [Paginators for boto3 ImportExport module](#paginators-for-boto3-importexport-module)
-  - [ListJobsPaginator](#listjobspaginator)
-
-<a id="listjobspaginator"></a>
+    Auto-generated documentation for [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
+    type annotations stubs module [mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
 ## ListJobsPaginator
 
-Type annotations for `boto3.client("importexport").get_paginator("list_jobs")`.
+Type annotations and code completion for `#!python boto3.client("importexport").get_paginator("list_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Paginator.ListJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_importexport.paginator import ListJobsPaginator
@@ -29,14 +21,31 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("importexport").get_paginator("list_jobs")
 ```
 
-Boto3 documentation:
-[ImportExport.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Paginator.ListJobs)
 
-Arguments for `ListJobsPaginator.paginate` method:
+### paginate
 
-- `APIVersion`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobsPaginator.paginate` method.
 
-`ListJobsPaginator.paginate` returns
-`_PageIterator`\[[ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    APIVersion: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListJobsOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListJobsInputListJobsPaginateTypeDef = {  # (1)
+    "APIVersion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobsInputListJobsPaginateTypeDef](./type_defs.md#listjobsinputlistjobspaginatetypedef) 

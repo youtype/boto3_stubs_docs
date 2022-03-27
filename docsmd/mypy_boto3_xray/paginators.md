@@ -1,33 +1,18 @@
-<a id="paginators-for-boto3-xray-module"></a>
-
-# Paginators for boto3 XRay module
+# Paginators
 
 > [Index](../README.md) > [XRay](./README.md) > Paginators
 
-Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
-type annotations stubs module
-[mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
+!!! note ""
 
-- [Paginators for boto3 XRay module](#paginators-for-boto3-xray-module)
-  - [BatchGetTracesPaginator](#batchgettracespaginator)
-  - [GetGroupsPaginator](#getgroupspaginator)
-  - [GetSamplingRulesPaginator](#getsamplingrulespaginator)
-  - [GetSamplingStatisticSummariesPaginator](#getsamplingstatisticsummariespaginator)
-  - [GetServiceGraphPaginator](#getservicegraphpaginator)
-  - [GetTimeSeriesServiceStatisticsPaginator](#gettimeseriesservicestatisticspaginator)
-  - [GetTraceGraphPaginator](#gettracegraphpaginator)
-  - [GetTraceSummariesPaginator](#gettracesummariespaginator)
-
-<a id="batchgettracespaginator"></a>
+    Auto-generated documentation for [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+    type annotations stubs module [mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
 
 ## BatchGetTracesPaginator
 
-Type annotations for `boto3.client("xray").get_paginator("batch_get_traces")`.
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("batch_get_traces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.BatchGetTraces)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_xray.paginator import BatchGetTracesPaginator
@@ -36,27 +21,40 @@ def get_batch_get_traces_paginator() -> BatchGetTracesPaginator:
     return Session().client("xray").get_paginator("batch_get_traces")
 ```
 
-Boto3 documentation:
-[XRay.Paginator.BatchGetTraces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.BatchGetTraces)
 
-Arguments for `BatchGetTracesPaginator.paginate` method:
+### paginate
 
-- `TraceIds`: `Sequence`\[`str`\] *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python BatchGetTracesPaginator.paginate` method.
 
-`BatchGetTracesPaginator.paginate` returns
-`_PageIterator`\[[BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TraceIds: Sequence[str],
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[BatchGetTracesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getgroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: BatchGetTracesRequestBatchGetTracesPaginateTypeDef = {  # (1)
+    "TraceIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: BatchGetTracesRequestBatchGetTracesPaginateTypeDef](./type_defs.md#batchgettracesrequestbatchgettracespaginatetypedef) 
 ## GetGroupsPaginator
 
-Type annotations for `boto3.client("xray").get_paginator("get_groups")`.
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("get_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_xray.paginator import GetGroupsPaginator
@@ -65,27 +63,39 @@ def get_get_groups_paginator() -> GetGroupsPaginator:
     return Session().client("xray").get_paginator("get_groups")
 ```
 
-Boto3 documentation:
-[XRay.Paginator.GetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetGroups)
 
-Arguments for `GetGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetGroupsPaginator.paginate` method.
 
-`GetGroupsPaginator.paginate` returns
-`_PageIterator`\[[GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetGroupsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getsamplingrulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetGroupsRequestGetGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetGroupsRequestGetGroupsPaginateTypeDef](./type_defs.md#getgroupsrequestgetgroupspaginatetypedef) 
 ## GetSamplingRulesPaginator
 
-Type annotations for
-`boto3.client("xray").get_paginator("get_sampling_rules")`.
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("get_sampling_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetSamplingRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_xray.paginator import GetSamplingRulesPaginator
@@ -94,27 +104,39 @@ def get_get_sampling_rules_paginator() -> GetSamplingRulesPaginator:
     return Session().client("xray").get_paginator("get_sampling_rules")
 ```
 
-Boto3 documentation:
-[XRay.Paginator.GetSamplingRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetSamplingRules)
 
-Arguments for `GetSamplingRulesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetSamplingRulesPaginator.paginate` method.
 
-`GetSamplingRulesPaginator.paginate` returns
-`_PageIterator`\[[GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetSamplingRulesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getsamplingstatisticsummariespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetSamplingRulesRequestGetSamplingRulesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetSamplingRulesRequestGetSamplingRulesPaginateTypeDef](./type_defs.md#getsamplingrulesrequestgetsamplingrulespaginatetypedef) 
 ## GetSamplingStatisticSummariesPaginator
 
-Type annotations for
-`boto3.client("xray").get_paginator("get_sampling_statistic_summaries")`.
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("get_sampling_statistic_summaries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetSamplingStatisticSummaries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_xray.paginator import GetSamplingStatisticSummariesPaginator
@@ -123,26 +145,39 @@ def get_get_sampling_statistic_summaries_paginator() -> GetSamplingStatisticSumm
     return Session().client("xray").get_paginator("get_sampling_statistic_summaries")
 ```
 
-Boto3 documentation:
-[XRay.Paginator.GetSamplingStatisticSummaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetSamplingStatisticSummaries)
 
-Arguments for `GetSamplingStatisticSummariesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetSamplingStatisticSummariesPaginator.paginate` method.
 
-`GetSamplingStatisticSummariesPaginator.paginate` returns
-`_PageIterator`\[[GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetSamplingStatisticSummariesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getservicegraphpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetSamplingStatisticSummariesRequestGetSamplingStatisticSummariesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetSamplingStatisticSummariesRequestGetSamplingStatisticSummariesPaginateTypeDef](./type_defs.md#getsamplingstatisticsummariesrequestgetsamplingstatisticsummariespaginatetypedef) 
 ## GetServiceGraphPaginator
 
-Type annotations for `boto3.client("xray").get_paginator("get_service_graph")`.
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("get_service_graph")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetServiceGraph)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_xray.paginator import GetServiceGraphPaginator
@@ -151,31 +186,44 @@ def get_get_service_graph_paginator() -> GetServiceGraphPaginator:
     return Session().client("xray").get_paginator("get_service_graph")
 ```
 
-Boto3 documentation:
-[XRay.Paginator.GetServiceGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetServiceGraph)
 
-Arguments for `GetServiceGraphPaginator.paginate` method:
+### paginate
 
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetServiceGraphPaginator.paginate` method.
 
-`GetServiceGraphPaginator.paginate` returns
-`_PageIterator`\[[GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    GroupName: str = ...,
+    GroupARN: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetServiceGraphResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="gettimeseriesservicestatisticspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetServiceGraphRequestGetServiceGraphPaginateTypeDef = {  # (1)
+    "StartTime": ...,
+    "EndTime": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetServiceGraphRequestGetServiceGraphPaginateTypeDef](./type_defs.md#getservicegraphrequestgetservicegraphpaginatetypedef) 
 ## GetTimeSeriesServiceStatisticsPaginator
 
-Type annotations for
-`boto3.client("xray").get_paginator("get_time_series_service_statistics")`.
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("get_time_series_service_statistics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTimeSeriesServiceStatistics)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_xray.paginator import GetTimeSeriesServiceStatisticsPaginator
@@ -184,33 +232,47 @@ def get_get_time_series_service_statistics_paginator() -> GetTimeSeriesServiceSt
     return Session().client("xray").get_paginator("get_time_series_service_statistics")
 ```
 
-Boto3 documentation:
-[XRay.Paginator.GetTimeSeriesServiceStatistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTimeSeriesServiceStatistics)
 
-Arguments for `GetTimeSeriesServiceStatisticsPaginator.paginate` method:
+### paginate
 
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `EntitySelectorExpression`: `str`
-- `Period`: `int`
-- `ForecastStatistics`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTimeSeriesServiceStatisticsPaginator.paginate` method.
 
-`GetTimeSeriesServiceStatisticsPaginator.paginate` returns
-`_PageIterator`\[[GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    GroupName: str = ...,
+    GroupARN: str = ...,
+    EntitySelectorExpression: str = ...,
+    Period: int = ...,
+    ForecastStatistics: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetTimeSeriesServiceStatisticsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="gettracegraphpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTimeSeriesServiceStatisticsRequestGetTimeSeriesServiceStatisticsPaginateTypeDef = {  # (1)
+    "StartTime": ...,
+    "EndTime": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTimeSeriesServiceStatisticsRequestGetTimeSeriesServiceStatisticsPaginateTypeDef](./type_defs.md#gettimeseriesservicestatisticsrequestgettimeseriesservicestatisticspaginatetypedef) 
 ## GetTraceGraphPaginator
 
-Type annotations for `boto3.client("xray").get_paginator("get_trace_graph")`.
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("get_trace_graph")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTraceGraph)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_xray.paginator import GetTraceGraphPaginator
@@ -219,28 +281,40 @@ def get_get_trace_graph_paginator() -> GetTraceGraphPaginator:
     return Session().client("xray").get_paginator("get_trace_graph")
 ```
 
-Boto3 documentation:
-[XRay.Paginator.GetTraceGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTraceGraph)
 
-Arguments for `GetTraceGraphPaginator.paginate` method:
+### paginate
 
-- `TraceIds`: `Sequence`\[`str`\] *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTraceGraphPaginator.paginate` method.
 
-`GetTraceGraphPaginator.paginate` returns
-`_PageIterator`\[[GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TraceIds: Sequence[str],
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetTraceGraphResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="gettracesummariespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTraceGraphRequestGetTraceGraphPaginateTypeDef = {  # (1)
+    "TraceIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTraceGraphRequestGetTraceGraphPaginateTypeDef](./type_defs.md#gettracegraphrequestgettracegraphpaginatetypedef) 
 ## GetTraceSummariesPaginator
 
-Type annotations for
-`boto3.client("xray").get_paginator("get_trace_summaries")`.
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator("get_trace_summaries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTraceSummaries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_xray.paginator import GetTraceSummariesPaginator
@@ -249,20 +323,39 @@ def get_get_trace_summaries_paginator() -> GetTraceSummariesPaginator:
     return Session().client("xray").get_paginator("get_trace_summaries")
 ```
 
-Boto3 documentation:
-[XRay.Paginator.GetTraceSummaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Paginator.GetTraceSummaries)
 
-Arguments for `GetTraceSummariesPaginator.paginate` method:
+### paginate
 
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `TimeRangeType`: [TimeRangeTypeType](./literals.md#timerangetypetype)
-- `Sampling`: `bool`
-- `SamplingStrategy`:
-  [SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef)
-- `FilterExpression`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTraceSummariesPaginator.paginate` method.
 
-`GetTraceSummariesPaginator.paginate` returns
-`_PageIterator`\[[GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    TimeRangeType: TimeRangeTypeType = ...,  # (1)
+    Sampling: bool = ...,
+    SamplingStrategy: SamplingStrategyTypeDef = ...,  # (2)
+    FilterExpression: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[GetTraceSummariesResultTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: TimeRangeTypeType](./literals.md#timerangetypetype) 
+2. See [:material-code-braces: SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetTraceSummariesRequestGetTraceSummariesPaginateTypeDef = {  # (1)
+    "StartTime": ...,
+    "EndTime": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTraceSummariesRequestGetTraceSummariesPaginateTypeDef](./type_defs.md#gettracesummariesrequestgettracesummariespaginatetypedef) 

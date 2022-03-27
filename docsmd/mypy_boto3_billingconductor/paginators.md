@@ -1,35 +1,18 @@
-<a id="paginators-for-boto3-billingconductor-module"></a>
-
-# Paginators for boto3 BillingConductor module
+# Paginators
 
 > [Index](../README.md) > [BillingConductor](./README.md) > Paginators
 
-Auto-generated documentation for
-[BillingConductor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor)
-type annotations stubs module
-[mypy-boto3-billingconductor](https://pypi.org/project/mypy-boto3-billingconductor/).
+!!! note ""
 
-- [Paginators for boto3 BillingConductor module](#paginators-for-boto3-billingconductor-module)
-  - [ListAccountAssociationsPaginator](#listaccountassociationspaginator)
-  - [ListBillingGroupCostReportsPaginator](#listbillinggroupcostreportspaginator)
-  - [ListBillingGroupsPaginator](#listbillinggroupspaginator)
-  - [ListCustomLineItemsPaginator](#listcustomlineitemspaginator)
-  - [ListPricingPlansPaginator](#listpricingplanspaginator)
-  - [ListPricingPlansAssociatedWithPricingRulePaginator](#listpricingplansassociatedwithpricingrulepaginator)
-  - [ListPricingRulesPaginator](#listpricingrulespaginator)
-  - [ListPricingRulesAssociatedToPricingPlanPaginator](#listpricingrulesassociatedtopricingplanpaginator)
-  - [ListResourcesAssociatedToCustomLineItemPaginator](#listresourcesassociatedtocustomlineitempaginator)
-
-<a id="listaccountassociationspaginator"></a>
+    Auto-generated documentation for [BillingConductor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor)
+    type annotations stubs module [mypy-boto3-billingconductor](https://pypi.org/project/mypy-boto3-billingconductor/).
 
 ## ListAccountAssociationsPaginator
 
-Type annotations for
-`boto3.client("billingconductor").get_paginator("list_account_associations")`.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_account_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListAccountAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_billingconductor.paginator import ListAccountAssociationsPaginator
@@ -38,30 +21,42 @@ def get_list_account_associations_paginator() -> ListAccountAssociationsPaginato
     return Session().client("billingconductor").get_paginator("list_account_associations")
 ```
 
-Boto3 documentation:
-[BillingConductor.Paginator.ListAccountAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListAccountAssociations)
 
-Arguments for `ListAccountAssociationsPaginator.paginate` method:
+### paginate
 
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListAccountAssociationsFilterTypeDef](./type_defs.md#listaccountassociationsfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountAssociationsPaginator.paginate` method.
 
-`ListAccountAssociationsPaginator.paginate` returns
-`_PageIterator`\[[ListAccountAssociationsOutputTypeDef](./type_defs.md#listaccountassociationsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    Filters: ListAccountAssociationsFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAccountAssociationsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listbillinggroupcostreportspaginator"></a>
+1. See [:material-code-braces: ListAccountAssociationsFilterTypeDef](./type_defs.md#listaccountassociationsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAccountAssociationsOutputTypeDef](./type_defs.md#listaccountassociationsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountAssociationsInputListAccountAssociationsPaginateTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountAssociationsInputListAccountAssociationsPaginateTypeDef](./type_defs.md#listaccountassociationsinputlistaccountassociationspaginatetypedef) 
 ## ListBillingGroupCostReportsPaginator
 
-Type annotations for
-`boto3.client("billingconductor").get_paginator("list_billing_group_cost_reports")`.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_billing_group_cost_reports")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListBillingGroupCostReports)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_billingconductor.paginator import ListBillingGroupCostReportsPaginator
@@ -70,30 +65,42 @@ def get_list_billing_group_cost_reports_paginator() -> ListBillingGroupCostRepor
     return Session().client("billingconductor").get_paginator("list_billing_group_cost_reports")
 ```
 
-Boto3 documentation:
-[BillingConductor.Paginator.ListBillingGroupCostReports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListBillingGroupCostReports)
 
-Arguments for `ListBillingGroupCostReportsPaginator.paginate` method:
+### paginate
 
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListBillingGroupCostReportsFilterTypeDef](./type_defs.md#listbillinggroupcostreportsfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBillingGroupCostReportsPaginator.paginate` method.
 
-`ListBillingGroupCostReportsPaginator.paginate` returns
-`_PageIterator`\[[ListBillingGroupCostReportsOutputTypeDef](./type_defs.md#listbillinggroupcostreportsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    Filters: ListBillingGroupCostReportsFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListBillingGroupCostReportsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listbillinggroupspaginator"></a>
+1. See [:material-code-braces: ListBillingGroupCostReportsFilterTypeDef](./type_defs.md#listbillinggroupcostreportsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListBillingGroupCostReportsOutputTypeDef](./type_defs.md#listbillinggroupcostreportsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBillingGroupCostReportsInputListBillingGroupCostReportsPaginateTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBillingGroupCostReportsInputListBillingGroupCostReportsPaginateTypeDef](./type_defs.md#listbillinggroupcostreportsinputlistbillinggroupcostreportspaginatetypedef) 
 ## ListBillingGroupsPaginator
 
-Type annotations for
-`boto3.client("billingconductor").get_paginator("list_billing_groups")`.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_billing_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListBillingGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_billingconductor.paginator import ListBillingGroupsPaginator
@@ -102,30 +109,42 @@ def get_list_billing_groups_paginator() -> ListBillingGroupsPaginator:
     return Session().client("billingconductor").get_paginator("list_billing_groups")
 ```
 
-Boto3 documentation:
-[BillingConductor.Paginator.ListBillingGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListBillingGroups)
 
-Arguments for `ListBillingGroupsPaginator.paginate` method:
+### paginate
 
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListBillingGroupsFilterTypeDef](./type_defs.md#listbillinggroupsfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBillingGroupsPaginator.paginate` method.
 
-`ListBillingGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListBillingGroupsOutputTypeDef](./type_defs.md#listbillinggroupsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    Filters: ListBillingGroupsFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListBillingGroupsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcustomlineitemspaginator"></a>
+1. See [:material-code-braces: ListBillingGroupsFilterTypeDef](./type_defs.md#listbillinggroupsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListBillingGroupsOutputTypeDef](./type_defs.md#listbillinggroupsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBillingGroupsInputListBillingGroupsPaginateTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBillingGroupsInputListBillingGroupsPaginateTypeDef](./type_defs.md#listbillinggroupsinputlistbillinggroupspaginatetypedef) 
 ## ListCustomLineItemsPaginator
 
-Type annotations for
-`boto3.client("billingconductor").get_paginator("list_custom_line_items")`.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_custom_line_items")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListCustomLineItems)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_billingconductor.paginator import ListCustomLineItemsPaginator
@@ -134,30 +153,42 @@ def get_list_custom_line_items_paginator() -> ListCustomLineItemsPaginator:
     return Session().client("billingconductor").get_paginator("list_custom_line_items")
 ```
 
-Boto3 documentation:
-[BillingConductor.Paginator.ListCustomLineItems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListCustomLineItems)
 
-Arguments for `ListCustomLineItemsPaginator.paginate` method:
+### paginate
 
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListCustomLineItemsFilterTypeDef](./type_defs.md#listcustomlineitemsfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCustomLineItemsPaginator.paginate` method.
 
-`ListCustomLineItemsPaginator.paginate` returns
-`_PageIterator`\[[ListCustomLineItemsOutputTypeDef](./type_defs.md#listcustomlineitemsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    Filters: ListCustomLineItemsFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListCustomLineItemsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listpricingplanspaginator"></a>
+1. See [:material-code-braces: ListCustomLineItemsFilterTypeDef](./type_defs.md#listcustomlineitemsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListCustomLineItemsOutputTypeDef](./type_defs.md#listcustomlineitemsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomLineItemsInputListCustomLineItemsPaginateTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomLineItemsInputListCustomLineItemsPaginateTypeDef](./type_defs.md#listcustomlineitemsinputlistcustomlineitemspaginatetypedef) 
 ## ListPricingPlansPaginator
 
-Type annotations for
-`boto3.client("billingconductor").get_paginator("list_pricing_plans")`.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_pricing_plans")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListPricingPlans)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_billingconductor.paginator import ListPricingPlansPaginator
@@ -166,30 +197,42 @@ def get_list_pricing_plans_paginator() -> ListPricingPlansPaginator:
     return Session().client("billingconductor").get_paginator("list_pricing_plans")
 ```
 
-Boto3 documentation:
-[BillingConductor.Paginator.ListPricingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListPricingPlans)
 
-Arguments for `ListPricingPlansPaginator.paginate` method:
+### paginate
 
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListPricingPlansFilterTypeDef](./type_defs.md#listpricingplansfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPricingPlansPaginator.paginate` method.
 
-`ListPricingPlansPaginator.paginate` returns
-`_PageIterator`\[[ListPricingPlansOutputTypeDef](./type_defs.md#listpricingplansoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    Filters: ListPricingPlansFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPricingPlansOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listpricingplansassociatedwithpricingrulepaginator"></a>
+1. See [:material-code-braces: ListPricingPlansFilterTypeDef](./type_defs.md#listpricingplansfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPricingPlansOutputTypeDef](./type_defs.md#listpricingplansoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPricingPlansInputListPricingPlansPaginateTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPricingPlansInputListPricingPlansPaginateTypeDef](./type_defs.md#listpricingplansinputlistpricingplanspaginatetypedef) 
 ## ListPricingPlansAssociatedWithPricingRulePaginator
 
-Type annotations for
-`boto3.client("billingconductor").get_paginator("list_pricing_plans_associated_with_pricing_rule")`.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_pricing_plans_associated_with_pricing_rule")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListPricingPlansAssociatedWithPricingRule)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_billingconductor.paginator import ListPricingPlansAssociatedWithPricingRulePaginator
@@ -198,30 +241,41 @@ def get_list_pricing_plans_associated_with_pricing_rule_paginator() -> ListPrici
     return Session().client("billingconductor").get_paginator("list_pricing_plans_associated_with_pricing_rule")
 ```
 
-Boto3 documentation:
-[BillingConductor.Paginator.ListPricingPlansAssociatedWithPricingRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListPricingPlansAssociatedWithPricingRule)
 
-Arguments for `ListPricingPlansAssociatedWithPricingRulePaginator.paginate`
-method:
+### paginate
 
-- `PricingRuleArn`: `str` *(required)*
-- `BillingPeriod`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPricingPlansAssociatedWithPricingRulePaginator.paginate` method.
 
-`ListPricingPlansAssociatedWithPricingRulePaginator.paginate` returns
-`_PageIterator`\[[ListPricingPlansAssociatedWithPricingRuleOutputTypeDef](./type_defs.md#listpricingplansassociatedwithpricingruleoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PricingRuleArn: str,
+    BillingPeriod: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPricingPlansAssociatedWithPricingRuleOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpricingrulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPricingPlansAssociatedWithPricingRuleOutputTypeDef](./type_defs.md#listpricingplansassociatedwithpricingruleoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPricingPlansAssociatedWithPricingRuleInputListPricingPlansAssociatedWithPricingRulePaginateTypeDef = {  # (1)
+    "PricingRuleArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPricingPlansAssociatedWithPricingRuleInputListPricingPlansAssociatedWithPricingRulePaginateTypeDef](./type_defs.md#listpricingplansassociatedwithpricingruleinputlistpricingplansassociatedwithpricingrulepaginatetypedef) 
 ## ListPricingRulesPaginator
 
-Type annotations for
-`boto3.client("billingconductor").get_paginator("list_pricing_rules")`.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_pricing_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListPricingRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_billingconductor.paginator import ListPricingRulesPaginator
@@ -230,30 +284,42 @@ def get_list_pricing_rules_paginator() -> ListPricingRulesPaginator:
     return Session().client("billingconductor").get_paginator("list_pricing_rules")
 ```
 
-Boto3 documentation:
-[BillingConductor.Paginator.ListPricingRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListPricingRules)
 
-Arguments for `ListPricingRulesPaginator.paginate` method:
+### paginate
 
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListPricingRulesFilterTypeDef](./type_defs.md#listpricingrulesfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPricingRulesPaginator.paginate` method.
 
-`ListPricingRulesPaginator.paginate` returns
-`_PageIterator`\[[ListPricingRulesOutputTypeDef](./type_defs.md#listpricingrulesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    Filters: ListPricingRulesFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPricingRulesOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listpricingrulesassociatedtopricingplanpaginator"></a>
+1. See [:material-code-braces: ListPricingRulesFilterTypeDef](./type_defs.md#listpricingrulesfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPricingRulesOutputTypeDef](./type_defs.md#listpricingrulesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPricingRulesInputListPricingRulesPaginateTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPricingRulesInputListPricingRulesPaginateTypeDef](./type_defs.md#listpricingrulesinputlistpricingrulespaginatetypedef) 
 ## ListPricingRulesAssociatedToPricingPlanPaginator
 
-Type annotations for
-`boto3.client("billingconductor").get_paginator("list_pricing_rules_associated_to_pricing_plan")`.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_pricing_rules_associated_to_pricing_plan")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListPricingRulesAssociatedToPricingPlan)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_billingconductor.paginator import ListPricingRulesAssociatedToPricingPlanPaginator
@@ -262,30 +328,41 @@ def get_list_pricing_rules_associated_to_pricing_plan_paginator() -> ListPricing
     return Session().client("billingconductor").get_paginator("list_pricing_rules_associated_to_pricing_plan")
 ```
 
-Boto3 documentation:
-[BillingConductor.Paginator.ListPricingRulesAssociatedToPricingPlan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListPricingRulesAssociatedToPricingPlan)
 
-Arguments for `ListPricingRulesAssociatedToPricingPlanPaginator.paginate`
-method:
+### paginate
 
-- `PricingPlanArn`: `str` *(required)*
-- `BillingPeriod`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPricingRulesAssociatedToPricingPlanPaginator.paginate` method.
 
-`ListPricingRulesAssociatedToPricingPlanPaginator.paginate` returns
-`_PageIterator`\[[ListPricingRulesAssociatedToPricingPlanOutputTypeDef](./type_defs.md#listpricingrulesassociatedtopricingplanoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PricingPlanArn: str,
+    BillingPeriod: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPricingRulesAssociatedToPricingPlanOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresourcesassociatedtocustomlineitempaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPricingRulesAssociatedToPricingPlanOutputTypeDef](./type_defs.md#listpricingrulesassociatedtopricingplanoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPricingRulesAssociatedToPricingPlanInputListPricingRulesAssociatedToPricingPlanPaginateTypeDef = {  # (1)
+    "PricingPlanArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPricingRulesAssociatedToPricingPlanInputListPricingRulesAssociatedToPricingPlanPaginateTypeDef](./type_defs.md#listpricingrulesassociatedtopricingplaninputlistpricingrulesassociatedtopricingplanpaginatetypedef) 
 ## ListResourcesAssociatedToCustomLineItemPaginator
 
-Type annotations for
-`boto3.client("billingconductor").get_paginator("list_resources_associated_to_custom_line_item")`.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator("list_resources_associated_to_custom_line_item")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListResourcesAssociatedToCustomLineItem)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_billingconductor.paginator import ListResourcesAssociatedToCustomLineItemPaginator
@@ -294,18 +371,34 @@ def get_list_resources_associated_to_custom_line_item_paginator() -> ListResourc
     return Session().client("billingconductor").get_paginator("list_resources_associated_to_custom_line_item")
 ```
 
-Boto3 documentation:
-[BillingConductor.Paginator.ListResourcesAssociatedToCustomLineItem](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Paginator.ListResourcesAssociatedToCustomLineItem)
 
-Arguments for `ListResourcesAssociatedToCustomLineItemPaginator.paginate`
-method:
+### paginate
 
-- `Arn`: `str` *(required)*
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListResourcesAssociatedToCustomLineItemFilterTypeDef](./type_defs.md#listresourcesassociatedtocustomlineitemfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourcesAssociatedToCustomLineItemPaginator.paginate` method.
 
-`ListResourcesAssociatedToCustomLineItemPaginator.paginate` returns
-`_PageIterator`\[[ListResourcesAssociatedToCustomLineItemOutputTypeDef](./type_defs.md#listresourcesassociatedtocustomlineitemoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Arn: str,
+    BillingPeriod: str = ...,
+    Filters: ListResourcesAssociatedToCustomLineItemFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListResourcesAssociatedToCustomLineItemOutputTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: ListResourcesAssociatedToCustomLineItemFilterTypeDef](./type_defs.md#listresourcesassociatedtocustomlineitemfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListResourcesAssociatedToCustomLineItemOutputTypeDef](./type_defs.md#listresourcesassociatedtocustomlineitemoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourcesAssociatedToCustomLineItemInputListResourcesAssociatedToCustomLineItemPaginateTypeDef = {  # (1)
+    "Arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourcesAssociatedToCustomLineItemInputListResourcesAssociatedToCustomLineItemPaginateTypeDef](./type_defs.md#listresourcesassociatedtocustomlineiteminputlistresourcesassociatedtocustomlineitempaginatetypedef) 

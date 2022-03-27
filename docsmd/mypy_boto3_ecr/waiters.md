@@ -1,27 +1,18 @@
-<a id="waiters-for-boto3-ecr-module"></a>
-
-# Waiters for boto3 ECR module
+# Waiters
 
 > [Index](../README.md) > [ECR](./README.md) > Waiters
 
-Auto-generated documentation for
-[ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
-type annotations stubs module
-[mypy-boto3-ecr](https://pypi.org/project/mypy-boto3-ecr/).
+!!! note ""
 
-- [Waiters for boto3 ECR module](#waiters-for-boto3-ecr-module)
-  - [ImageScanCompleteWaiter](#imagescancompletewaiter)
-  - [LifecyclePolicyPreviewCompleteWaiter](#lifecyclepolicypreviewcompletewaiter)
-
-<a id="imagescancompletewaiter"></a>
+    Auto-generated documentation for [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+    type annotations stubs module [mypy-boto3-ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 ## ImageScanCompleteWaiter
 
-Type annotations for `boto3.client("ecr").get_waiter("image_scan_complete")`.
+Type annotations and code completion for `#!python boto3.client("ecr").get_waiter("image_scan_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.ImageScanComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecr.waiter import ImageScanCompleteWaiter
@@ -30,29 +21,45 @@ def get_image_scan_complete_waiter() -> ImageScanCompleteWaiter:
     return Session().client("ecr").get_waiter("image_scan_complete")
 ```
 
-Boto3 documentation:
-[ECR.Waiter.image_scan_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.ImageScanComplete)
 
-Arguments for `ImageScanCompleteWaiter.wait` method:
+### wait
 
-- `repositoryName`: `str` *(required)*
-- `imageId`: [ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)
-  *(required)*
-- `registryId`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ImageScanCompleteWaiter.wait` method.
 
-<a id="lifecyclepolicypreviewcompletewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    repositoryName: str,
+    imageId: ImageIdentifierTypeDef,  # (1)
+    registryId: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImageScanFindingsRequestImageScanCompleteWaitTypeDef = {  # (1)
+    "repositoryName": ...,
+    "imageId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImageScanFindingsRequestImageScanCompleteWaitTypeDef](./type_defs.md#describeimagescanfindingsrequestimagescancompletewaittypedef) 
 ## LifecyclePolicyPreviewCompleteWaiter
 
-Type annotations for
-`boto3.client("ecr").get_waiter("lifecycle_policy_preview_complete")`.
+Type annotations and code completion for `#!python boto3.client("ecr").get_waiter("lifecycle_policy_preview_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.LifecyclePolicyPreviewComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecr.waiter import LifecyclePolicyPreviewCompleteWaiter
@@ -61,17 +68,37 @@ def get_lifecycle_policy_preview_complete_waiter() -> LifecyclePolicyPreviewComp
     return Session().client("ecr").get_waiter("lifecycle_policy_preview_complete")
 ```
 
-Boto3 documentation:
-[ECR.Waiter.lifecycle_policy_preview_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR.Waiter.LifecyclePolicyPreviewComplete)
 
-Arguments for `LifecyclePolicyPreviewCompleteWaiter.wait` method:
+### wait
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
-- `imageIds`:
-  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filter`:
-  [LifecyclePolicyPreviewFilterTypeDef](./type_defs.md#lifecyclepolicypreviewfiltertypedef)
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python LifecyclePolicyPreviewCompleteWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+    imageIds: Sequence[ImageIdentifierTypeDef] = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filter: LifecyclePolicyPreviewFilterTypeDef = ...,  # (2)
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (3)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef) 
+2. See [:material-code-braces: LifecyclePolicyPreviewFilterTypeDef](./type_defs.md#lifecyclepolicypreviewfiltertypedef) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetLifecyclePolicyPreviewRequestLifecyclePolicyPreviewCompleteWaitTypeDef = {  # (1)
+    "repositoryName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetLifecyclePolicyPreviewRequestLifecyclePolicyPreviewCompleteWaitTypeDef](./type_defs.md#getlifecyclepolicypreviewrequestlifecyclepolicypreviewcompletewaittypedef) 

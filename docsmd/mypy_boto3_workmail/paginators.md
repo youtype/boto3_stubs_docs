@@ -1,33 +1,18 @@
-<a id="paginators-for-boto3-workmail-module"></a>
-
-# Paginators for boto3 WorkMail module
+# Paginators
 
 > [Index](../README.md) > [WorkMail](./README.md) > Paginators
 
-Auto-generated documentation for
-[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
-type annotations stubs module
-[mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
+!!! note ""
 
-- [Paginators for boto3 WorkMail module](#paginators-for-boto3-workmail-module)
-  - [ListAliasesPaginator](#listaliasespaginator)
-  - [ListGroupMembersPaginator](#listgroupmemberspaginator)
-  - [ListGroupsPaginator](#listgroupspaginator)
-  - [ListMailboxPermissionsPaginator](#listmailboxpermissionspaginator)
-  - [ListOrganizationsPaginator](#listorganizationspaginator)
-  - [ListResourceDelegatesPaginator](#listresourcedelegatespaginator)
-  - [ListResourcesPaginator](#listresourcespaginator)
-  - [ListUsersPaginator](#listuserspaginator)
-
-<a id="listaliasespaginator"></a>
+    Auto-generated documentation for [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
+    type annotations stubs module [mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 ## ListAliasesPaginator
 
-Type annotations for `boto3.client("workmail").get_paginator("list_aliases")`.
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_aliases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListAliases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workmail.paginator import ListAliasesPaginator
@@ -36,29 +21,42 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return Session().client("workmail").get_paginator("list_aliases")
 ```
 
-Boto3 documentation:
-[WorkMail.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListAliases)
 
-Arguments for `ListAliasesPaginator.paginate` method:
+### paginate
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAliasesPaginator.paginate` method.
 
-`ListAliasesPaginator.paginate` returns
-`_PageIterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAliasesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgroupmemberspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAliasesRequestListAliasesPaginateTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAliasesRequestListAliasesPaginateTypeDef](./type_defs.md#listaliasesrequestlistaliasespaginatetypedef) 
 ## ListGroupMembersPaginator
 
-Type annotations for
-`boto3.client("workmail").get_paginator("list_group_members")`.
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_group_members")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListGroupMembers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workmail.paginator import ListGroupMembersPaginator
@@ -67,28 +65,42 @@ def get_list_group_members_paginator() -> ListGroupMembersPaginator:
     return Session().client("workmail").get_paginator("list_group_members")
 ```
 
-Boto3 documentation:
-[WorkMail.Paginator.ListGroupMembers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListGroupMembers)
 
-Arguments for `ListGroupMembersPaginator.paginate` method:
+### paginate
 
-- `OrganizationId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGroupMembersPaginator.paginate` method.
 
-`ListGroupMembersPaginator.paginate` returns
-`_PageIterator`\[[ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationId: str,
+    GroupId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGroupMembersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGroupMembersRequestListGroupMembersPaginateTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "GroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroupMembersRequestListGroupMembersPaginateTypeDef](./type_defs.md#listgroupmembersrequestlistgroupmemberspaginatetypedef) 
 ## ListGroupsPaginator
 
-Type annotations for `boto3.client("workmail").get_paginator("list_groups")`.
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workmail.paginator import ListGroupsPaginator
@@ -97,28 +109,40 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return Session().client("workmail").get_paginator("list_groups")
 ```
 
-Boto3 documentation:
-[WorkMail.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListGroups)
 
-Arguments for `ListGroupsPaginator.paginate` method:
+### paginate
 
-- `OrganizationId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGroupsPaginator.paginate` method.
 
-`ListGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmailboxpermissionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestListGroupsPaginateTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroupsRequestListGroupsPaginateTypeDef](./type_defs.md#listgroupsrequestlistgroupspaginatetypedef) 
 ## ListMailboxPermissionsPaginator
 
-Type annotations for
-`boto3.client("workmail").get_paginator("list_mailbox_permissions")`.
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_mailbox_permissions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListMailboxPermissions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workmail.paginator import ListMailboxPermissionsPaginator
@@ -127,29 +151,42 @@ def get_list_mailbox_permissions_paginator() -> ListMailboxPermissionsPaginator:
     return Session().client("workmail").get_paginator("list_mailbox_permissions")
 ```
 
-Boto3 documentation:
-[WorkMail.Paginator.ListMailboxPermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListMailboxPermissions)
 
-Arguments for `ListMailboxPermissionsPaginator.paginate` method:
+### paginate
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMailboxPermissionsPaginator.paginate` method.
 
-`ListMailboxPermissionsPaginator.paginate` returns
-`_PageIterator`\[[ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMailboxPermissionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listorganizationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef](./type_defs.md#listmailboxpermissionsrequestlistmailboxpermissionspaginatetypedef) 
 ## ListOrganizationsPaginator
 
-Type annotations for
-`boto3.client("workmail").get_paginator("list_organizations")`.
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_organizations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListOrganizations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workmail.paginator import ListOrganizationsPaginator
@@ -158,27 +195,39 @@ def get_list_organizations_paginator() -> ListOrganizationsPaginator:
     return Session().client("workmail").get_paginator("list_organizations")
 ```
 
-Boto3 documentation:
-[WorkMail.Paginator.ListOrganizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListOrganizations)
 
-Arguments for `ListOrganizationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOrganizationsPaginator.paginate` method.
 
-`ListOrganizationsPaginator.paginate` returns
-`_PageIterator`\[[ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOrganizationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresourcedelegatespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationsRequestListOrganizationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOrganizationsRequestListOrganizationsPaginateTypeDef](./type_defs.md#listorganizationsrequestlistorganizationspaginatetypedef) 
 ## ListResourceDelegatesPaginator
 
-Type annotations for
-`boto3.client("workmail").get_paginator("list_resource_delegates")`.
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_resource_delegates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListResourceDelegates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workmail.paginator import ListResourceDelegatesPaginator
@@ -187,29 +236,42 @@ def get_list_resource_delegates_paginator() -> ListResourceDelegatesPaginator:
     return Session().client("workmail").get_paginator("list_resource_delegates")
 ```
 
-Boto3 documentation:
-[WorkMail.Paginator.ListResourceDelegates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListResourceDelegates)
 
-Arguments for `ListResourceDelegatesPaginator.paginate` method:
+### paginate
 
-- `OrganizationId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourceDelegatesPaginator.paginate` method.
 
-`ListResourceDelegatesPaginator.paginate` returns
-`_PageIterator`\[[ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationId: str,
+    ResourceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourceDelegatesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ResourceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef](./type_defs.md#listresourcedelegatesrequestlistresourcedelegatespaginatetypedef) 
 ## ListResourcesPaginator
 
-Type annotations for
-`boto3.client("workmail").get_paginator("list_resources")`.
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workmail.paginator import ListResourcesPaginator
@@ -218,27 +280,40 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
     return Session().client("workmail").get_paginator("list_resources")
 ```
 
-Boto3 documentation:
-[WorkMail.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListResources)
 
-Arguments for `ListResourcesPaginator.paginate` method:
+### paginate
 
-- `OrganizationId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourcesPaginator.paginate` method.
 
-`ListResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourcesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuserspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResourcesRequestListResourcesPaginateTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourcesRequestListResourcesPaginateTypeDef](./type_defs.md#listresourcesrequestlistresourcespaginatetypedef) 
 ## ListUsersPaginator
 
-Type annotations for `boto3.client("workmail").get_paginator("list_users")`.
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator("list_users")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListUsers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workmail.paginator import ListUsersPaginator
@@ -247,14 +322,31 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("workmail").get_paginator("list_users")
 ```
 
-Boto3 documentation:
-[WorkMail.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Paginator.ListUsers)
 
-Arguments for `ListUsersPaginator.paginate` method:
+### paginate
 
-- `OrganizationId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUsersPaginator.paginate` method.
 
-`ListUsersPaginator.paginate` returns
-`_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUsersResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestListUsersPaginateTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef) 

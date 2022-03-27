@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-iotwireless-module"></a>
-
-# Examples for boto3 IoTWireless module
+# Examples
 
 > [Index](../README.md) > [IoTWireless](./README.md) > Examples
 
-- [Examples for boto3 IoTWireless module](#examples-for-boto3-iotwireless-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
+    type annotations stubs module [mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[iotwireless]` package installed.
 
-Write your `IoTWireless` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `IoTWireless` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type IoTWirelessClient
-# and provides type checking and code completion
-client = session.client("iotwireless")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateAwsAccountWithPartnerAccountResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_aws_account_with_partner_account()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("iotwireless")  # (1)
+    result = client.associate_aws_account_with_partner_account()  # (2)
+    ```
+
+    1. client: [IoTWirelessClient](./client.md)
+    2. result: [:material-code-braces: AssociateAwsAccountWithPartnerAccountResponseTypeDef](./type_defs.md#associateawsaccountwithpartneraccountresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[iotwireless]` or a standalone `mypy_boto3_iotwireless`
-package, you have to explicitly specify `client: IoTWirelessClient` type
-annotation.
+With `boto3-stubs-lite[iotwireless]`
+or a standalone `mypy_boto3_iotwireless` package, you have to explicitly specify `client: IoTWirelessClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_iotwireless.client import IoTWirelessClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iotwireless.client import IoTWirelessClient
+    from mypy_boto3_iotwireless.type_defs import AssociateAwsAccountWithPartnerAccountResponseTypeDef
+    from mypy_boto3_iotwireless.type_defs import AssociateAwsAccountWithPartnerAccountRequestRequestTypeDef
 
 
-from mypy_boto3_iotwireless.type_defs import AssociateAwsAccountWithPartnerAccountResponseTypeDef
+    session = Session()
+
+    client: IoTWirelessClient = session.client("iotwireless")
+
+    kwargs: AssociateAwsAccountWithPartnerAccountRequestRequestTypeDef = {...}
+    result: AssociateAwsAccountWithPartnerAccountResponseTypeDef = client.associate_aws_account_with_partner_account(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: IoTWirelessClient = session.client("iotwireless")
 
-result: AssociateAwsAccountWithPartnerAccountResponseTypeDef = client.associate_aws_account_with_partner_account()
-```
+

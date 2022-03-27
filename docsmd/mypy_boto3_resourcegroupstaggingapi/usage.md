@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-resourcegroupstaggingapi-module"></a>
-
-# Examples for boto3 ResourceGroupsTaggingAPI module
+# Examples
 
 > [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) > Examples
 
-- [Examples for boto3 ResourceGroupsTaggingAPI module](#examples-for-boto3-resourcegroupstaggingapi-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+    type annotations stubs module [mypy-boto3-resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[resourcegroupstaggingapi]` package installed.
 
-Write your `ResourceGroupsTaggingAPI` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `ResourceGroupsTaggingAPI` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ResourceGroupsTaggingAPIClient
-# and provides type checking and code completion
-client = session.client("resourcegroupstaggingapi")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type GetComplianceSummaryPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_compliance_summary")
-for item in paginator.paginate(...):
-    # item has type GetComplianceSummaryOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("resourcegroupstaggingapi")  # (1)
+    result = client.get_compliance_summary()  # (2)
+    ```
+
+    1. client: [ResourceGroupsTaggingAPIClient](./client.md)
+    2. result: [:material-code-braces: GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("resourcegroupstaggingapi")  # (1)
+
+    paginator = client.get_paginator("get_compliance_summary")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ResourceGroupsTaggingAPIClient](./client.md)
+    2. paginator: [GetComplianceSummaryPaginator](./paginators.md#getcompliancesummarypaginator)
+    3. item: [:material-code-braces: GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[resourcegroupstaggingapi]` or a standalone
-`mypy_boto3_resourcegroupstaggingapi` package, you have to explicitly specify
-`client: ResourceGroupsTaggingAPIClient` type annotation.
+With `boto3-stubs-lite[resourcegroupstaggingapi]`
+or a standalone `mypy_boto3_resourcegroupstaggingapi` package, you have to explicitly specify `client: ResourceGroupsTaggingAPIClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
-from mypy_boto3_resourcegroupstaggingapi.paginator import GetComplianceSummaryPaginator
-
-from mypy_boto3_resourcegroupstaggingapi.literals import PaginatorName
-
-from mypy_boto3_resourcegroupstaggingapi.type_defs import bool
-from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ResourceGroupsTaggingAPIClient = session.client("resourcegroupstaggingapi")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
+    from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryOutputTypeDef
+    from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryInputRequestTypeDef
 
-paginator_name: PaginatorName = "get_compliance_summary"
-paginator: GetComplianceSummaryPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetComplianceSummaryOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ResourceGroupsTaggingAPIClient = session.client("resourcegroupstaggingapi")
+
+    kwargs: GetComplianceSummaryInputRequestTypeDef = {...}
+    result: GetComplianceSummaryOutputTypeDef = client.get_compliance_summary(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
+    from mypy_boto3_resourcegroupstaggingapi.paginator import GetComplianceSummaryPaginator
+    from mypy_boto3_resourcegroupstaggingapi.type_defs import GetComplianceSummaryOutputTypeDef
+
+
+    session = Session()
+    client: ResourceGroupsTaggingAPIClient = session.client("resourcegroupstaggingapi")
+
+    paginator: GetComplianceSummaryPaginator = client.get_paginator("get_compliance_summary")
+    for item in paginator.paginate(...):
+        item: GetComplianceSummaryOutputTypeDef
+        print(item)
+    ```
+
+
+
+

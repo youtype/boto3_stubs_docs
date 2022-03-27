@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-autoscalingplans-module"></a>
-
-# Type annotations for boto3 AutoScalingPlans module
+#  AutoScalingPlans module
 
 > [Index](../README.md) > AutoScalingPlans
 
-Auto-generated documentation for
-[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
-type annotations stubs module
-[mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
+!!! note ""
 
-- [Type annotations for boto3 AutoScalingPlans module](#type-annotations-for-boto3-autoscalingplans-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AutoScalingPlansClient](#autoscalingplansclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
+    type annotations stubs module [mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AutoScalingPlans`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[autoscaling-plans]'
 python -m pip install mypy-boto3-autoscaling-plans
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,80 +42,59 @@ python -m pip install mypy-boto3-autoscaling-plans
 python -m pip uninstall -y mypy-boto3-autoscaling-plans
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="autoscalingplansclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AutoScalingPlansClient
 
-Type annotations for `boto3.client("autoscaling-plans")` as
-[AutoScalingPlansClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("autoscaling-plans")` as [AutoScalingPlansClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_autoscaling_plans.client import AutoScalingPlansClient
+
+def get_client() -> AutoScalingPlansClient:
+    return Session().cleint("autoscaling-plans")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_scaling_plan](./client.md#create_scaling_plan)
-- [delete_scaling_plan](./client.md#delete_scaling_plan)
-- [describe_scaling_plan_resources](./client.md#describe_scaling_plan_resources)
-- [describe_scaling_plans](./client.md#describe_scaling_plans)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_scaling_plan_resource_forecast_data](./client.md#get_scaling_plan_resource_forecast_data)
-- [update_scaling_plan](./client.md#update_scaling_plan)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-AutoScalingPlansClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentUpdateException
-- InternalServiceException
-- InvalidNextTokenException
-- LimitExceededException
-- ObjectNotFoundException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("autoscaling-plans").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("autoscaling-plans").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlanResourcesPaginator, ...
+from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlanResourcesPaginator
+
+def get_describe_scaling_plan_resources_paginator() -> DescribeScalingPlanResourcesPaginator:
+    return Session().client("autoscaling-plans").get_paginator("describe_scaling_plan_resources"))
 ```
 
 - [DescribeScalingPlanResourcesPaginator](./paginators.md#describescalingplanresourcespaginator)
 - [DescribeScalingPlansPaginator](./paginators.md#describescalingplanspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlanResourcesPaginatorName
 
-```python
-from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlanResourcesPaginatorName, ...
+def get_value() -> DescribeScalingPlanResourcesPaginatorName:
+    return "describe_scaling_plan_resources"
 ```
 
 - [DescribeScalingPlanResourcesPaginatorName](./literals.md#describescalingplanresourcespaginatorname)
@@ -158,18 +115,22 @@ from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlanResourcesPa
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_autoscaling_plans.type_defs import ApplicationSourceTypeDef
 
-```python
-from mypy_boto3_autoscaling_plans.type_defs import ApplicationSourceTypeDef, ...
+def get_value() -> ApplicationSourceTypeDef:
+    return {
+        "CloudFormationStackARN": ...,
+    }
 ```
 
 - [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
@@ -179,8 +140,10 @@ from mypy_boto3_autoscaling_plans.type_defs import ApplicationSourceTypeDef, ...
 - [CustomizedScalingMetricSpecificationTypeDef](./type_defs.md#customizedscalingmetricspecificationtypedef)
 - [DatapointTypeDef](./type_defs.md#datapointtypedef)
 - [DeleteScalingPlanRequestRequestTypeDef](./type_defs.md#deletescalingplanrequestrequesttypedef)
+- [DescribeScalingPlanResourcesRequestDescribeScalingPlanResourcesPaginateTypeDef](./type_defs.md#describescalingplanresourcesrequestdescribescalingplanresourcespaginatetypedef)
 - [DescribeScalingPlanResourcesRequestRequestTypeDef](./type_defs.md#describescalingplanresourcesrequestrequesttypedef)
 - [DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef)
+- [DescribeScalingPlansRequestDescribeScalingPlansPaginateTypeDef](./type_defs.md#describescalingplansrequestdescribescalingplanspaginatetypedef)
 - [DescribeScalingPlansRequestRequestTypeDef](./type_defs.md#describescalingplansrequestrequesttypedef)
 - [DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef)
 - [GetScalingPlanResourceForecastDataRequestRequestTypeDef](./type_defs.md#getscalingplanresourceforecastdatarequestrequesttypedef)
@@ -197,3 +160,4 @@ from mypy_boto3_autoscaling_plans.type_defs import ApplicationSourceTypeDef, ...
 - [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - [TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)
 - [UpdateScalingPlanRequestRequestTypeDef](./type_defs.md#updatescalingplanrequestrequesttypedef)
+

@@ -1,80 +1,18 @@
-<a id="nimblestudioclient-for-boto3-nimblestudio-module"></a>
-
-# NimbleStudioClient for boto3 NimbleStudio module
+# NimbleStudioClient
 
 > [Index](../README.md) > [NimbleStudio](./README.md) > NimbleStudioClient
 
-Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
-type annotations stubs module
-[mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
+!!! note ""
 
-- [NimbleStudioClient for boto3 NimbleStudio module](#nimblestudioclient-for-boto3-nimblestudio-module)
-  - [NimbleStudioClient](#nimblestudioclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_eulas](#accept_eulas)
-    - [can_paginate](#can_paginate)
-    - [create_launch_profile](#create_launch_profile)
-    - [create_streaming_image](#create_streaming_image)
-    - [create_streaming_session](#create_streaming_session)
-    - [create_streaming_session_stream](#create_streaming_session_stream)
-    - [create_studio](#create_studio)
-    - [create_studio_component](#create_studio_component)
-    - [delete_launch_profile](#delete_launch_profile)
-    - [delete_launch_profile_member](#delete_launch_profile_member)
-    - [delete_streaming_image](#delete_streaming_image)
-    - [delete_streaming_session](#delete_streaming_session)
-    - [delete_studio](#delete_studio)
-    - [delete_studio_component](#delete_studio_component)
-    - [delete_studio_member](#delete_studio_member)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_eula](#get_eula)
-    - [get_launch_profile](#get_launch_profile)
-    - [get_launch_profile_details](#get_launch_profile_details)
-    - [get_launch_profile_initialization](#get_launch_profile_initialization)
-    - [get_launch_profile_member](#get_launch_profile_member)
-    - [get_streaming_image](#get_streaming_image)
-    - [get_streaming_session](#get_streaming_session)
-    - [get_streaming_session_stream](#get_streaming_session_stream)
-    - [get_studio](#get_studio)
-    - [get_studio_component](#get_studio_component)
-    - [get_studio_member](#get_studio_member)
-    - [list_eula_acceptances](#list_eula_acceptances)
-    - [list_eulas](#list_eulas)
-    - [list_launch_profile_members](#list_launch_profile_members)
-    - [list_launch_profiles](#list_launch_profiles)
-    - [list_streaming_images](#list_streaming_images)
-    - [list_streaming_sessions](#list_streaming_sessions)
-    - [list_studio_components](#list_studio_components)
-    - [list_studio_members](#list_studio_members)
-    - [list_studios](#list_studios)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_launch_profile_members](#put_launch_profile_members)
-    - [put_studio_members](#put_studio_members)
-    - [start_streaming_session](#start_streaming_session)
-    - [start_studio_sso_configuration_repair](#start_studio_sso_configuration_repair)
-    - [stop_streaming_session](#stop_streaming_session)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_launch_profile](#update_launch_profile)
-    - [update_launch_profile_member](#update_launch_profile_member)
-    - [update_streaming_image](#update_streaming_image)
-    - [update_studio](#update_studio)
-    - [update_studio_component](#update_studio_component)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="nimblestudioclient"></a>
+    Auto-generated documentation for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+    type annotations stubs module [mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 ## NimbleStudioClient
 
-Type annotations for `boto3.client("nimble")`
+Type annotations and code completion for `#!python boto3.client("nimble")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_nimble.client import NimbleStudioClient
 
@@ -82,1286 +20,1670 @@ def get_nimble_client() -> NimbleStudioClient:
     return Session().client("nimble")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("nimble").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("nimble")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerErrorException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_nimble.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-NimbleStudioClient exceptions.
-
-Type annotations for `boto3.client("nimble").exceptions` method.
-
-Boto3 documentation:
-[NimbleStudio.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_eulas"></a>
-
-### accept_eulas
+### accept\_eulas
 
 Accept EULAs.
 
-Type annotations for `boto3.client("nimble").accept_eulas` method.
+Type annotations and code completion for `#!python boto3.client("nimble").accept_eulas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas)
 
-Boto3 documentation:
-[NimbleStudio.Client.accept_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.accept_eulas)
+```python title="Method definition"
+def accept_eulas(
+    self,
+    *,
+    studioId: str,
+    clientToken: str = ...,
+    eulaIds: Sequence[str] = ...,
+) -> AcceptEulasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AcceptEulasRequestRequestTypeDef](./type_defs.md#accepteulasrequestrequesttypedef).
+1. See [:material-code-braces: AcceptEulasResponseTypeDef](./type_defs.md#accepteulasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
-- `eulaIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: AcceptEulasRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[AcceptEulasResponseTypeDef](./type_defs.md#accepteulasresponsetypedef).
+parent.accept_eulas(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AcceptEulasRequestRequestTypeDef](./type_defs.md#accepteulasrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("nimble").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("nimble").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.can_paginate)
 
-Boto3 documentation:
-[NimbleStudio.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_launch\_profile"></a>
-
-### create_launch_profile
+### create\_launch\_profile
 
 Create a launch profile.
 
-Type annotations for `boto3.client("nimble").create_launch_profile` method.
+Type annotations and code completion for `#!python boto3.client("nimble").create_launch_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile)
 
-Boto3 documentation:
-[NimbleStudio.Client.create_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_launch_profile)
+```python title="Method definition"
+def create_launch_profile(
+    self,
+    *,
+    ec2SubnetIds: Sequence[str],
+    launchProfileProtocolVersions: Sequence[str],
+    name: str,
+    streamConfiguration: StreamConfigurationCreateTypeDef,  # (1)
+    studioComponentIds: Sequence[str],
+    studioId: str,
+    clientToken: str = ...,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateLaunchProfileResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateLaunchProfileRequestRequestTypeDef](./type_defs.md#createlaunchprofilerequestrequesttypedef).
+1. See [:material-code-braces: StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef) 
+2. See [:material-code-braces: CreateLaunchProfileResponseTypeDef](./type_defs.md#createlaunchprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ec2SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `launchProfileProtocolVersions`: `Sequence`\[`str`\] *(required)*
-- `name`: `str` *(required)*
-- `streamConfiguration`:
-  [StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef)
-  *(required)*
-- `studioComponentIds`: `Sequence`\[`str`\] *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateLaunchProfileRequestRequestTypeDef = {  # (1)
+    "ec2SubnetIds": ...,
+    "launchProfileProtocolVersions": ...,
+    "name": ...,
+    "streamConfiguration": ...,
+    "studioComponentIds": ...,
+    "studioId": ...,
+}
 
-Returns
-[CreateLaunchProfileResponseTypeDef](./type_defs.md#createlaunchprofileresponsetypedef).
+parent.create_launch_profile(**kwargs)
+```
 
-<a id="create\_streaming\_image"></a>
+1. See [:material-code-braces: CreateLaunchProfileRequestRequestTypeDef](./type_defs.md#createlaunchprofilerequestrequesttypedef) 
 
-### create_streaming_image
+### create\_streaming\_image
 
 Creates a streaming image resource in a studio.
 
-Type annotations for `boto3.client("nimble").create_streaming_image` method.
+Type annotations and code completion for `#!python boto3.client("nimble").create_streaming_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image)
 
-Boto3 documentation:
-[NimbleStudio.Client.create_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_image)
+```python title="Method definition"
+def create_streaming_image(
+    self,
+    *,
+    ec2ImageId: str,
+    name: str,
+    studioId: str,
+    clientToken: str = ...,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateStreamingImageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamingImageRequestRequestTypeDef](./type_defs.md#createstreamingimagerequestrequesttypedef).
+1. See [:material-code-braces: CreateStreamingImageResponseTypeDef](./type_defs.md#createstreamingimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ec2ImageId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStreamingImageRequestRequestTypeDef = {  # (1)
+    "ec2ImageId": ...,
+    "name": ...,
+    "studioId": ...,
+}
 
-Returns
-[CreateStreamingImageResponseTypeDef](./type_defs.md#createstreamingimageresponsetypedef).
+parent.create_streaming_image(**kwargs)
+```
 
-<a id="create\_streaming\_session"></a>
+1. See [:material-code-braces: CreateStreamingImageRequestRequestTypeDef](./type_defs.md#createstreamingimagerequestrequesttypedef) 
 
-### create_streaming_session
+### create\_streaming\_session
 
 Creates a streaming session in a studio.
 
-Type annotations for `boto3.client("nimble").create_streaming_session` method.
+Type annotations and code completion for `#!python boto3.client("nimble").create_streaming_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session)
 
-Boto3 documentation:
-[NimbleStudio.Client.create_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session)
+```python title="Method definition"
+def create_streaming_session(
+    self,
+    *,
+    studioId: str,
+    clientToken: str = ...,
+    ec2InstanceType: StreamingInstanceTypeType = ...,  # (1)
+    launchProfileId: str = ...,
+    ownedBy: str = ...,
+    streamingImageId: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateStreamingSessionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamingSessionRequestRequestTypeDef](./type_defs.md#createstreamingsessionrequestrequesttypedef).
+1. See [:material-code-brackets: StreamingInstanceTypeType](./literals.md#streaminginstancetypetype) 
+2. See [:material-code-braces: CreateStreamingSessionResponseTypeDef](./type_defs.md#createstreamingsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
-- `ec2InstanceType`:
-  [StreamingInstanceTypeType](./literals.md#streaminginstancetypetype)
-- `launchProfileId`: `str`
-- `ownedBy`: `str`
-- `streamingImageId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStreamingSessionRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[CreateStreamingSessionResponseTypeDef](./type_defs.md#createstreamingsessionresponsetypedef).
+parent.create_streaming_session(**kwargs)
+```
 
-<a id="create\_streaming\_session\_stream"></a>
+1. See [:material-code-braces: CreateStreamingSessionRequestRequestTypeDef](./type_defs.md#createstreamingsessionrequestrequesttypedef) 
 
-### create_streaming_session_stream
+### create\_streaming\_session\_stream
 
 Creates a streaming session stream for a streaming session.
 
-Type annotations for `boto3.client("nimble").create_streaming_session_stream`
-method.
+Type annotations and code completion for `#!python boto3.client("nimble").create_streaming_session_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream)
 
-Boto3 documentation:
-[NimbleStudio.Client.create_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_streaming_session_stream)
+```python title="Method definition"
+def create_streaming_session_stream(
+    self,
+    *,
+    sessionId: str,
+    studioId: str,
+    clientToken: str = ...,
+    expirationInSeconds: int = ...,
+) -> CreateStreamingSessionStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamingSessionStreamRequestRequestTypeDef](./type_defs.md#createstreamingsessionstreamrequestrequesttypedef).
+1. See [:material-code-braces: CreateStreamingSessionStreamResponseTypeDef](./type_defs.md#createstreamingsessionstreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sessionId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
-- `expirationInSeconds`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateStreamingSessionStreamRequestRequestTypeDef = {  # (1)
+    "sessionId": ...,
+    "studioId": ...,
+}
 
-Returns
-[CreateStreamingSessionStreamResponseTypeDef](./type_defs.md#createstreamingsessionstreamresponsetypedef).
+parent.create_streaming_session_stream(**kwargs)
+```
 
-<a id="create\_studio"></a>
+1. See [:material-code-braces: CreateStreamingSessionStreamRequestRequestTypeDef](./type_defs.md#createstreamingsessionstreamrequestrequesttypedef) 
 
-### create_studio
+### create\_studio
 
 Create a new Studio.
 
-Type annotations for `boto3.client("nimble").create_studio` method.
+Type annotations and code completion for `#!python boto3.client("nimble").create_studio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio)
 
-Boto3 documentation:
-[NimbleStudio.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio)
+```python title="Method definition"
+def create_studio(
+    self,
+    *,
+    adminRoleArn: str,
+    displayName: str,
+    studioName: str,
+    userRoleArn: str,
+    clientToken: str = ...,
+    studioEncryptionConfiguration: StudioEncryptionConfigurationTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> CreateStudioResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateStudioRequestRequestTypeDef](./type_defs.md#createstudiorequestrequesttypedef).
+1. See [:material-code-braces: StudioEncryptionConfigurationTypeDef](./type_defs.md#studioencryptionconfigurationtypedef) 
+2. See [:material-code-braces: CreateStudioResponseTypeDef](./type_defs.md#createstudioresponsetypedef) 
 
-Keyword-only arguments:
 
-- `adminRoleArn`: `str` *(required)*
-- `displayName`: `str` *(required)*
-- `studioName`: `str` *(required)*
-- `userRoleArn`: `str` *(required)*
-- `clientToken`: `str`
-- `studioEncryptionConfiguration`:
-  [StudioEncryptionConfigurationTypeDef](./type_defs.md#studioencryptionconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStudioRequestRequestTypeDef = {  # (1)
+    "adminRoleArn": ...,
+    "displayName": ...,
+    "studioName": ...,
+    "userRoleArn": ...,
+}
 
-Returns
-[CreateStudioResponseTypeDef](./type_defs.md#createstudioresponsetypedef).
+parent.create_studio(**kwargs)
+```
 
-<a id="create\_studio\_component"></a>
+1. See [:material-code-braces: CreateStudioRequestRequestTypeDef](./type_defs.md#createstudiorequestrequesttypedef) 
 
-### create_studio_component
+### create\_studio\_component
 
 Creates a studio component resource.
 
-Type annotations for `boto3.client("nimble").create_studio_component` method.
+Type annotations and code completion for `#!python boto3.client("nimble").create_studio_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component)
 
-Boto3 documentation:
-[NimbleStudio.Client.create_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.create_studio_component)
+```python title="Method definition"
+def create_studio_component(
+    self,
+    *,
+    name: str,
+    studioId: str,
+    type: StudioComponentTypeType,  # (1)
+    clientToken: str = ...,
+    configuration: StudioComponentConfigurationTypeDef = ...,  # (2)
+    description: str = ...,
+    ec2SecurityGroupIds: Sequence[str] = ...,
+    initializationScripts: Sequence[StudioComponentInitializationScriptTypeDef] = ...,  # (3)
+    scriptParameters: Sequence[ScriptParameterKeyValueTypeDef] = ...,  # (4)
+    subtype: StudioComponentSubtypeType = ...,  # (5)
+    tags: Mapping[str, str] = ...,
+) -> CreateStudioComponentResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateStudioComponentRequestRequestTypeDef](./type_defs.md#createstudiocomponentrequestrequesttypedef).
+1. See [:material-code-brackets: StudioComponentTypeType](./literals.md#studiocomponenttypetype) 
+2. See [:material-code-braces: StudioComponentConfigurationTypeDef](./type_defs.md#studiocomponentconfigurationtypedef) 
+3. See [:material-code-braces: StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef) 
+4. See [:material-code-braces: ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef) 
+5. See [:material-code-brackets: StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype) 
+6. See [:material-code-braces: CreateStudioComponentResponseTypeDef](./type_defs.md#createstudiocomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
-  *(required)*
-- `clientToken`: `str`
-- `configuration`:
-  [StudioComponentConfigurationTypeDef](./type_defs.md#studiocomponentconfigurationtypedef)
-- `description`: `str`
-- `ec2SecurityGroupIds`: `Sequence`\[`str`\]
-- `initializationScripts`:
-  `Sequence`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
-- `scriptParameters`:
-  `Sequence`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
-- `subtype`:
-  [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStudioComponentRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "studioId": ...,
+    "type": ...,
+}
 
-Returns
-[CreateStudioComponentResponseTypeDef](./type_defs.md#createstudiocomponentresponsetypedef).
+parent.create_studio_component(**kwargs)
+```
 
-<a id="delete\_launch\_profile"></a>
+1. See [:material-code-braces: CreateStudioComponentRequestRequestTypeDef](./type_defs.md#createstudiocomponentrequestrequesttypedef) 
 
-### delete_launch_profile
+### delete\_launch\_profile
 
 Permanently delete a launch profile.
 
-Type annotations for `boto3.client("nimble").delete_launch_profile` method.
+Type annotations and code completion for `#!python boto3.client("nimble").delete_launch_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile)
 
-Boto3 documentation:
-[NimbleStudio.Client.delete_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile)
+```python title="Method definition"
+def delete_launch_profile(
+    self,
+    *,
+    launchProfileId: str,
+    studioId: str,
+    clientToken: str = ...,
+) -> DeleteLaunchProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteLaunchProfileRequestRequestTypeDef](./type_defs.md#deletelaunchprofilerequestrequesttypedef).
+1. See [:material-code-braces: DeleteLaunchProfileResponseTypeDef](./type_defs.md#deletelaunchprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launchProfileId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteLaunchProfileRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "studioId": ...,
+}
 
-Returns
-[DeleteLaunchProfileResponseTypeDef](./type_defs.md#deletelaunchprofileresponsetypedef).
+parent.delete_launch_profile(**kwargs)
+```
 
-<a id="delete\_launch\_profile\_member"></a>
+1. See [:material-code-braces: DeleteLaunchProfileRequestRequestTypeDef](./type_defs.md#deletelaunchprofilerequestrequesttypedef) 
 
-### delete_launch_profile_member
+### delete\_launch\_profile\_member
 
 Delete a user from launch profile membership.
 
-Type annotations for `boto3.client("nimble").delete_launch_profile_member`
-method.
+Type annotations and code completion for `#!python boto3.client("nimble").delete_launch_profile_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member)
 
-Boto3 documentation:
-[NimbleStudio.Client.delete_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_launch_profile_member)
+```python title="Method definition"
+def delete_launch_profile_member(
+    self,
+    *,
+    launchProfileId: str,
+    principalId: str,
+    studioId: str,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#deletelaunchprofilememberrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `launchProfileId`: `str` *(required)*
-- `principalId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteLaunchProfileMemberRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "principalId": ...,
+    "studioId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_launch_profile_member(**kwargs)
+```
 
-<a id="delete\_streaming\_image"></a>
+1. See [:material-code-braces: DeleteLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#deletelaunchprofilememberrequestrequesttypedef) 
 
-### delete_streaming_image
+### delete\_streaming\_image
 
 Delete streaming image.
 
-Type annotations for `boto3.client("nimble").delete_streaming_image` method.
+Type annotations and code completion for `#!python boto3.client("nimble").delete_streaming_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image)
 
-Boto3 documentation:
-[NimbleStudio.Client.delete_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_image)
+```python title="Method definition"
+def delete_streaming_image(
+    self,
+    *,
+    streamingImageId: str,
+    studioId: str,
+    clientToken: str = ...,
+) -> DeleteStreamingImageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteStreamingImageRequestRequestTypeDef](./type_defs.md#deletestreamingimagerequestrequesttypedef).
+1. See [:material-code-braces: DeleteStreamingImageResponseTypeDef](./type_defs.md#deletestreamingimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `streamingImageId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStreamingImageRequestRequestTypeDef = {  # (1)
+    "streamingImageId": ...,
+    "studioId": ...,
+}
 
-Returns
-[DeleteStreamingImageResponseTypeDef](./type_defs.md#deletestreamingimageresponsetypedef).
+parent.delete_streaming_image(**kwargs)
+```
 
-<a id="delete\_streaming\_session"></a>
+1. See [:material-code-braces: DeleteStreamingImageRequestRequestTypeDef](./type_defs.md#deletestreamingimagerequestrequesttypedef) 
 
-### delete_streaming_session
+### delete\_streaming\_session
 
 Deletes streaming session resource.
 
-Type annotations for `boto3.client("nimble").delete_streaming_session` method.
+Type annotations and code completion for `#!python boto3.client("nimble").delete_streaming_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session)
 
-Boto3 documentation:
-[NimbleStudio.Client.delete_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_streaming_session)
+```python title="Method definition"
+def delete_streaming_session(
+    self,
+    *,
+    sessionId: str,
+    studioId: str,
+    clientToken: str = ...,
+) -> DeleteStreamingSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteStreamingSessionRequestRequestTypeDef](./type_defs.md#deletestreamingsessionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteStreamingSessionResponseTypeDef](./type_defs.md#deletestreamingsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sessionId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStreamingSessionRequestRequestTypeDef = {  # (1)
+    "sessionId": ...,
+    "studioId": ...,
+}
 
-Returns
-[DeleteStreamingSessionResponseTypeDef](./type_defs.md#deletestreamingsessionresponsetypedef).
+parent.delete_streaming_session(**kwargs)
+```
 
-<a id="delete\_studio"></a>
+1. See [:material-code-braces: DeleteStreamingSessionRequestRequestTypeDef](./type_defs.md#deletestreamingsessionrequestrequesttypedef) 
 
-### delete_studio
+### delete\_studio
 
 Delete a studio resource.
 
-Type annotations for `boto3.client("nimble").delete_studio` method.
+Type annotations and code completion for `#!python boto3.client("nimble").delete_studio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio)
 
-Boto3 documentation:
-[NimbleStudio.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio)
+```python title="Method definition"
+def delete_studio(
+    self,
+    *,
+    studioId: str,
+    clientToken: str = ...,
+) -> DeleteStudioResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteStudioRequestRequestTypeDef](./type_defs.md#deletestudiorequestrequesttypedef).
+1. See [:material-code-braces: DeleteStudioResponseTypeDef](./type_defs.md#deletestudioresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStudioRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[DeleteStudioResponseTypeDef](./type_defs.md#deletestudioresponsetypedef).
+parent.delete_studio(**kwargs)
+```
 
-<a id="delete\_studio\_component"></a>
+1. See [:material-code-braces: DeleteStudioRequestRequestTypeDef](./type_defs.md#deletestudiorequestrequesttypedef) 
 
-### delete_studio_component
+### delete\_studio\_component
 
 Deletes a studio component resource.
 
-Type annotations for `boto3.client("nimble").delete_studio_component` method.
+Type annotations and code completion for `#!python boto3.client("nimble").delete_studio_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component)
 
-Boto3 documentation:
-[NimbleStudio.Client.delete_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_component)
+```python title="Method definition"
+def delete_studio_component(
+    self,
+    *,
+    studioComponentId: str,
+    studioId: str,
+    clientToken: str = ...,
+) -> DeleteStudioComponentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteStudioComponentRequestRequestTypeDef](./type_defs.md#deletestudiocomponentrequestrequesttypedef).
+1. See [:material-code-braces: DeleteStudioComponentResponseTypeDef](./type_defs.md#deletestudiocomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioComponentId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStudioComponentRequestRequestTypeDef = {  # (1)
+    "studioComponentId": ...,
+    "studioId": ...,
+}
 
-Returns
-[DeleteStudioComponentResponseTypeDef](./type_defs.md#deletestudiocomponentresponsetypedef).
+parent.delete_studio_component(**kwargs)
+```
 
-<a id="delete\_studio\_member"></a>
+1. See [:material-code-braces: DeleteStudioComponentRequestRequestTypeDef](./type_defs.md#deletestudiocomponentrequestrequesttypedef) 
 
-### delete_studio_member
+### delete\_studio\_member
 
 Delete a user from studio membership.
 
-Type annotations for `boto3.client("nimble").delete_studio_member` method.
+Type annotations and code completion for `#!python boto3.client("nimble").delete_studio_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member)
 
-Boto3 documentation:
-[NimbleStudio.Client.delete_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.delete_studio_member)
+```python title="Method definition"
+def delete_studio_member(
+    self,
+    *,
+    principalId: str,
+    studioId: str,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStudioMemberRequestRequestTypeDef](./type_defs.md#deletestudiomemberrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `principalId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStudioMemberRequestRequestTypeDef = {  # (1)
+    "principalId": ...,
+    "studioId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_studio_member(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteStudioMemberRequestRequestTypeDef](./type_defs.md#deletestudiomemberrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("nimble").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("nimble").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.generate_presigned_url)
 
-Boto3 documentation:
-[NimbleStudio.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_eula"></a>
-
-### get_eula
+### get\_eula
 
 Get Eula.
 
-Type annotations for `boto3.client("nimble").get_eula` method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_eula` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_eula](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_eula)
+```python title="Method definition"
+def get_eula(
+    self,
+    *,
+    eulaId: str,
+) -> GetEulaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEulaRequestRequestTypeDef](./type_defs.md#geteularequestrequesttypedef).
+1. See [:material-code-braces: GetEulaResponseTypeDef](./type_defs.md#geteularesponsetypedef) 
 
-Keyword-only arguments:
 
-- `eulaId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEulaRequestRequestTypeDef = {  # (1)
+    "eulaId": ...,
+}
 
-Returns [GetEulaResponseTypeDef](./type_defs.md#geteularesponsetypedef).
+parent.get_eula(**kwargs)
+```
 
-<a id="get\_launch\_profile"></a>
+1. See [:material-code-braces: GetEulaRequestRequestTypeDef](./type_defs.md#geteularequestrequesttypedef) 
 
-### get_launch_profile
+### get\_launch\_profile
 
 Get a launch profile.
 
-Type annotations for `boto3.client("nimble").get_launch_profile` method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_launch_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile)
+```python title="Method definition"
+def get_launch_profile(
+    self,
+    *,
+    launchProfileId: str,
+    studioId: str,
+) -> GetLaunchProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLaunchProfileRequestRequestTypeDef](./type_defs.md#getlaunchprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetLaunchProfileResponseTypeDef](./type_defs.md#getlaunchprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launchProfileId`: `str` *(required)*
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLaunchProfileRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "studioId": ...,
+}
 
-Returns
-[GetLaunchProfileResponseTypeDef](./type_defs.md#getlaunchprofileresponsetypedef).
+parent.get_launch_profile(**kwargs)
+```
 
-<a id="get\_launch\_profile\_details"></a>
+1. See [:material-code-braces: GetLaunchProfileRequestRequestTypeDef](./type_defs.md#getlaunchprofilerequestrequesttypedef) 
 
-### get_launch_profile_details
+### get\_launch\_profile\_details
 
 Launch profile details include the launch profile resource and summary
 information of resources that are used by, or available to, the launch profile.
 
-Type annotations for `boto3.client("nimble").get_launch_profile_details`
-method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_launch_profile_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_launch_profile_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_details)
+```python title="Method definition"
+def get_launch_profile_details(
+    self,
+    *,
+    launchProfileId: str,
+    studioId: str,
+) -> GetLaunchProfileDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLaunchProfileDetailsRequestRequestTypeDef](./type_defs.md#getlaunchprofiledetailsrequestrequesttypedef).
+1. See [:material-code-braces: GetLaunchProfileDetailsResponseTypeDef](./type_defs.md#getlaunchprofiledetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launchProfileId`: `str` *(required)*
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLaunchProfileDetailsRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "studioId": ...,
+}
 
-Returns
-[GetLaunchProfileDetailsResponseTypeDef](./type_defs.md#getlaunchprofiledetailsresponsetypedef).
+parent.get_launch_profile_details(**kwargs)
+```
 
-<a id="get\_launch\_profile\_initialization"></a>
+1. See [:material-code-braces: GetLaunchProfileDetailsRequestRequestTypeDef](./type_defs.md#getlaunchprofiledetailsrequestrequesttypedef) 
 
-### get_launch_profile_initialization
+### get\_launch\_profile\_initialization
 
 Get a launch profile initialization.
 
-Type annotations for `boto3.client("nimble").get_launch_profile_initialization`
-method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_launch_profile_initialization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_launch_profile_initialization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_initialization)
+```python title="Method definition"
+def get_launch_profile_initialization(
+    self,
+    *,
+    launchProfileId: str,
+    launchProfileProtocolVersions: Sequence[str],
+    launchPurpose: str,
+    platform: str,
+    studioId: str,
+) -> GetLaunchProfileInitializationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLaunchProfileInitializationRequestRequestTypeDef](./type_defs.md#getlaunchprofileinitializationrequestrequesttypedef).
+1. See [:material-code-braces: GetLaunchProfileInitializationResponseTypeDef](./type_defs.md#getlaunchprofileinitializationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launchProfileId`: `str` *(required)*
-- `launchProfileProtocolVersions`: `Sequence`\[`str`\] *(required)*
-- `launchPurpose`: `str` *(required)*
-- `platform`: `str` *(required)*
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLaunchProfileInitializationRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "launchProfileProtocolVersions": ...,
+    "launchPurpose": ...,
+    "platform": ...,
+    "studioId": ...,
+}
 
-Returns
-[GetLaunchProfileInitializationResponseTypeDef](./type_defs.md#getlaunchprofileinitializationresponsetypedef).
+parent.get_launch_profile_initialization(**kwargs)
+```
 
-<a id="get\_launch\_profile\_member"></a>
+1. See [:material-code-braces: GetLaunchProfileInitializationRequestRequestTypeDef](./type_defs.md#getlaunchprofileinitializationrequestrequesttypedef) 
 
-### get_launch_profile_member
+### get\_launch\_profile\_member
 
 Get a user persona in launch profile membership.
 
-Type annotations for `boto3.client("nimble").get_launch_profile_member` method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_launch_profile_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_launch_profile_member)
+```python title="Method definition"
+def get_launch_profile_member(
+    self,
+    *,
+    launchProfileId: str,
+    principalId: str,
+    studioId: str,
+) -> GetLaunchProfileMemberResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#getlaunchprofilememberrequestrequesttypedef).
+1. See [:material-code-braces: GetLaunchProfileMemberResponseTypeDef](./type_defs.md#getlaunchprofilememberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launchProfileId`: `str` *(required)*
-- `principalId`: `str` *(required)*
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLaunchProfileMemberRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "principalId": ...,
+    "studioId": ...,
+}
 
-Returns
-[GetLaunchProfileMemberResponseTypeDef](./type_defs.md#getlaunchprofilememberresponsetypedef).
+parent.get_launch_profile_member(**kwargs)
+```
 
-<a id="get\_streaming\_image"></a>
+1. See [:material-code-braces: GetLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#getlaunchprofilememberrequestrequesttypedef) 
 
-### get_streaming_image
+### get\_streaming\_image
 
 Get streaming image.
 
-Type annotations for `boto3.client("nimble").get_streaming_image` method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_streaming_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_image)
+```python title="Method definition"
+def get_streaming_image(
+    self,
+    *,
+    streamingImageId: str,
+    studioId: str,
+) -> GetStreamingImageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStreamingImageRequestRequestTypeDef](./type_defs.md#getstreamingimagerequestrequesttypedef).
+1. See [:material-code-braces: GetStreamingImageResponseTypeDef](./type_defs.md#getstreamingimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `streamingImageId`: `str` *(required)*
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStreamingImageRequestRequestTypeDef = {  # (1)
+    "streamingImageId": ...,
+    "studioId": ...,
+}
 
-Returns
-[GetStreamingImageResponseTypeDef](./type_defs.md#getstreamingimageresponsetypedef).
+parent.get_streaming_image(**kwargs)
+```
 
-<a id="get\_streaming\_session"></a>
+1. See [:material-code-braces: GetStreamingImageRequestRequestTypeDef](./type_defs.md#getstreamingimagerequestrequesttypedef) 
 
-### get_streaming_session
+### get\_streaming\_session
 
 Gets StreamingSession resource.
 
-Type annotations for `boto3.client("nimble").get_streaming_session` method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_streaming_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session)
+```python title="Method definition"
+def get_streaming_session(
+    self,
+    *,
+    sessionId: str,
+    studioId: str,
+) -> GetStreamingSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStreamingSessionRequestRequestTypeDef](./type_defs.md#getstreamingsessionrequestrequesttypedef).
+1. See [:material-code-braces: GetStreamingSessionResponseTypeDef](./type_defs.md#getstreamingsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sessionId`: `str` *(required)*
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStreamingSessionRequestRequestTypeDef = {  # (1)
+    "sessionId": ...,
+    "studioId": ...,
+}
 
-Returns
-[GetStreamingSessionResponseTypeDef](./type_defs.md#getstreamingsessionresponsetypedef).
+parent.get_streaming_session(**kwargs)
+```
 
-<a id="get\_streaming\_session\_stream"></a>
+1. See [:material-code-braces: GetStreamingSessionRequestRequestTypeDef](./type_defs.md#getstreamingsessionrequestrequesttypedef) 
 
-### get_streaming_session_stream
+### get\_streaming\_session\_stream
 
 Gets a StreamingSessionStream for a streaming session.
 
-Type annotations for `boto3.client("nimble").get_streaming_session_stream`
-method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_streaming_session_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_streaming_session_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_streaming_session_stream)
+```python title="Method definition"
+def get_streaming_session_stream(
+    self,
+    *,
+    sessionId: str,
+    streamId: str,
+    studioId: str,
+) -> GetStreamingSessionStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStreamingSessionStreamRequestRequestTypeDef](./type_defs.md#getstreamingsessionstreamrequestrequesttypedef).
+1. See [:material-code-braces: GetStreamingSessionStreamResponseTypeDef](./type_defs.md#getstreamingsessionstreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sessionId`: `str` *(required)*
-- `streamId`: `str` *(required)*
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStreamingSessionStreamRequestRequestTypeDef = {  # (1)
+    "sessionId": ...,
+    "streamId": ...,
+    "studioId": ...,
+}
 
-Returns
-[GetStreamingSessionStreamResponseTypeDef](./type_defs.md#getstreamingsessionstreamresponsetypedef).
+parent.get_streaming_session_stream(**kwargs)
+```
 
-<a id="get\_studio"></a>
+1. See [:material-code-braces: GetStreamingSessionStreamRequestRequestTypeDef](./type_defs.md#getstreamingsessionstreamrequestrequesttypedef) 
 
-### get_studio
+### get\_studio
 
 Get a Studio resource.
 
-Type annotations for `boto3.client("nimble").get_studio` method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_studio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio)
+```python title="Method definition"
+def get_studio(
+    self,
+    *,
+    studioId: str,
+) -> GetStudioResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStudioRequestRequestTypeDef](./type_defs.md#getstudiorequestrequesttypedef).
+1. See [:material-code-braces: GetStudioResponseTypeDef](./type_defs.md#getstudioresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStudioRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns [GetStudioResponseTypeDef](./type_defs.md#getstudioresponsetypedef).
+parent.get_studio(**kwargs)
+```
 
-<a id="get\_studio\_component"></a>
+1. See [:material-code-braces: GetStudioRequestRequestTypeDef](./type_defs.md#getstudiorequestrequesttypedef) 
 
-### get_studio_component
+### get\_studio\_component
 
 Gets a studio component resource.
 
-Type annotations for `boto3.client("nimble").get_studio_component` method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_studio_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_component)
+```python title="Method definition"
+def get_studio_component(
+    self,
+    *,
+    studioComponentId: str,
+    studioId: str,
+) -> GetStudioComponentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStudioComponentRequestRequestTypeDef](./type_defs.md#getstudiocomponentrequestrequesttypedef).
+1. See [:material-code-braces: GetStudioComponentResponseTypeDef](./type_defs.md#getstudiocomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioComponentId`: `str` *(required)*
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStudioComponentRequestRequestTypeDef = {  # (1)
+    "studioComponentId": ...,
+    "studioId": ...,
+}
 
-Returns
-[GetStudioComponentResponseTypeDef](./type_defs.md#getstudiocomponentresponsetypedef).
+parent.get_studio_component(**kwargs)
+```
 
-<a id="get\_studio\_member"></a>
+1. See [:material-code-braces: GetStudioComponentRequestRequestTypeDef](./type_defs.md#getstudiocomponentrequestrequesttypedef) 
 
-### get_studio_member
+### get\_studio\_member
 
 Get a user's membership in a studio.
 
-Type annotations for `boto3.client("nimble").get_studio_member` method.
+Type annotations and code completion for `#!python boto3.client("nimble").get_studio_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member)
 
-Boto3 documentation:
-[NimbleStudio.Client.get_studio_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.get_studio_member)
+```python title="Method definition"
+def get_studio_member(
+    self,
+    *,
+    principalId: str,
+    studioId: str,
+) -> GetStudioMemberResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStudioMemberRequestRequestTypeDef](./type_defs.md#getstudiomemberrequestrequesttypedef).
+1. See [:material-code-braces: GetStudioMemberResponseTypeDef](./type_defs.md#getstudiomemberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `principalId`: `str` *(required)*
-- `studioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStudioMemberRequestRequestTypeDef = {  # (1)
+    "principalId": ...,
+    "studioId": ...,
+}
 
-Returns
-[GetStudioMemberResponseTypeDef](./type_defs.md#getstudiomemberresponsetypedef).
+parent.get_studio_member(**kwargs)
+```
 
-<a id="list\_eula\_acceptances"></a>
+1. See [:material-code-braces: GetStudioMemberRequestRequestTypeDef](./type_defs.md#getstudiomemberrequestrequesttypedef) 
 
-### list_eula_acceptances
+### list\_eula\_acceptances
 
 List Eula Acceptances.
 
-Type annotations for `boto3.client("nimble").list_eula_acceptances` method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_eula_acceptances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_eula_acceptances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eula_acceptances)
+```python title="Method definition"
+def list_eula_acceptances(
+    self,
+    *,
+    studioId: str,
+    eulaIds: Sequence[str] = ...,
+    nextToken: str = ...,
+) -> ListEulaAcceptancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEulaAcceptancesRequestRequestTypeDef](./type_defs.md#listeulaacceptancesrequestrequesttypedef).
+1. See [:material-code-braces: ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `eulaIds`: `Sequence`\[`str`\]
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEulaAcceptancesRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef).
+parent.list_eula_acceptances(**kwargs)
+```
 
-<a id="list\_eulas"></a>
+1. See [:material-code-braces: ListEulaAcceptancesRequestRequestTypeDef](./type_defs.md#listeulaacceptancesrequestrequesttypedef) 
 
-### list_eulas
+### list\_eulas
 
 List Eulas.
 
-Type annotations for `boto3.client("nimble").list_eulas` method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_eulas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_eulas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_eulas)
+```python title="Method definition"
+def list_eulas(
+    self,
+    *,
+    eulaIds: Sequence[str] = ...,
+    nextToken: str = ...,
+) -> ListEulasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEulasRequestRequestTypeDef](./type_defs.md#listeulasrequestrequesttypedef).
+1. See [:material-code-braces: ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `eulaIds`: `Sequence`\[`str`\]
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEulasRequestRequestTypeDef = {  # (1)
+    "eulaIds": ...,
+}
 
-Returns [ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef).
+parent.list_eulas(**kwargs)
+```
 
-<a id="list\_launch\_profile\_members"></a>
+1. See [:material-code-braces: ListEulasRequestRequestTypeDef](./type_defs.md#listeulasrequestrequesttypedef) 
 
-### list_launch_profile_members
+### list\_launch\_profile\_members
 
 Get all users in a given launch profile membership.
 
-Type annotations for `boto3.client("nimble").list_launch_profile_members`
-method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_launch_profile_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profile_members)
+```python title="Method definition"
+def list_launch_profile_members(
+    self,
+    *,
+    launchProfileId: str,
+    studioId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListLaunchProfileMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLaunchProfileMembersRequestRequestTypeDef](./type_defs.md#listlaunchprofilemembersrequestrequesttypedef).
+1. See [:material-code-braces: ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launchProfileId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLaunchProfileMembersRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "studioId": ...,
+}
 
-Returns
-[ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef).
+parent.list_launch_profile_members(**kwargs)
+```
 
-<a id="list\_launch\_profiles"></a>
+1. See [:material-code-braces: ListLaunchProfileMembersRequestRequestTypeDef](./type_defs.md#listlaunchprofilemembersrequestrequesttypedef) 
 
-### list_launch_profiles
+### list\_launch\_profiles
 
 List all the launch profiles a studio.
 
-Type annotations for `boto3.client("nimble").list_launch_profiles` method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_launch_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_launch_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_launch_profiles)
+```python title="Method definition"
+def list_launch_profiles(
+    self,
+    *,
+    studioId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    principalId: str = ...,
+    states: Sequence[LaunchProfileStateType] = ...,  # (1)
+) -> ListLaunchProfilesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLaunchProfilesRequestRequestTypeDef](./type_defs.md#listlaunchprofilesrequestrequesttypedef).
+1. See [:material-code-brackets: LaunchProfileStateType](./literals.md#launchprofilestatetype) 
+2. See [:material-code-braces: ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `principalId`: `str`
-- `states`:
-  `Sequence`\[[LaunchProfileStateType](./literals.md#launchprofilestatetype)\]
+```python title="Usage example with kwargs"
+kwargs: ListLaunchProfilesRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef).
+parent.list_launch_profiles(**kwargs)
+```
 
-<a id="list\_streaming\_images"></a>
+1. See [:material-code-braces: ListLaunchProfilesRequestRequestTypeDef](./type_defs.md#listlaunchprofilesrequestrequesttypedef) 
 
-### list_streaming_images
+### list\_streaming\_images
 
 List the streaming image resources available to this studio.
 
-Type annotations for `boto3.client("nimble").list_streaming_images` method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_streaming_images` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_streaming_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_images)
+```python title="Method definition"
+def list_streaming_images(
+    self,
+    *,
+    studioId: str,
+    nextToken: str = ...,
+    owner: str = ...,
+) -> ListStreamingImagesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamingImagesRequestRequestTypeDef](./type_defs.md#liststreamingimagesrequestrequesttypedef).
+1. See [:material-code-braces: ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `nextToken`: `str`
-- `owner`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStreamingImagesRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef).
+parent.list_streaming_images(**kwargs)
+```
 
-<a id="list\_streaming\_sessions"></a>
+1. See [:material-code-braces: ListStreamingImagesRequestRequestTypeDef](./type_defs.md#liststreamingimagesrequestrequesttypedef) 
 
-### list_streaming_sessions
+### list\_streaming\_sessions
 
 Lists the streaming image resources in a studio.
 
-Type annotations for `boto3.client("nimble").list_streaming_sessions` method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_streaming_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_streaming_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_streaming_sessions)
+```python title="Method definition"
+def list_streaming_sessions(
+    self,
+    *,
+    studioId: str,
+    createdBy: str = ...,
+    nextToken: str = ...,
+    ownedBy: str = ...,
+    sessionIds: str = ...,
+) -> ListStreamingSessionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamingSessionsRequestRequestTypeDef](./type_defs.md#liststreamingsessionsrequestrequesttypedef).
+1. See [:material-code-braces: ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `createdBy`: `str`
-- `nextToken`: `str`
-- `ownedBy`: `str`
-- `sessionIds`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStreamingSessionsRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef).
+parent.list_streaming_sessions(**kwargs)
+```
 
-<a id="list\_studio\_components"></a>
+1. See [:material-code-braces: ListStreamingSessionsRequestRequestTypeDef](./type_defs.md#liststreamingsessionsrequestrequesttypedef) 
 
-### list_studio_components
+### list\_studio\_components
 
 Lists the StudioComponents in a studio.
 
-Type annotations for `boto3.client("nimble").list_studio_components` method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_studio_components` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_studio_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_components)
+```python title="Method definition"
+def list_studio_components(
+    self,
+    *,
+    studioId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    states: Sequence[StudioComponentStateType] = ...,  # (1)
+    types: Sequence[StudioComponentTypeType] = ...,  # (2)
+) -> ListStudioComponentsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListStudioComponentsRequestRequestTypeDef](./type_defs.md#liststudiocomponentsrequestrequesttypedef).
+1. See [:material-code-brackets: StudioComponentStateType](./literals.md#studiocomponentstatetype) 
+2. See [:material-code-brackets: StudioComponentTypeType](./literals.md#studiocomponenttypetype) 
+3. See [:material-code-braces: ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `states`:
-  `Sequence`\[[StudioComponentStateType](./literals.md#studiocomponentstatetype)\]
-- `types`:
-  `Sequence`\[[StudioComponentTypeType](./literals.md#studiocomponenttypetype)\]
+```python title="Usage example with kwargs"
+kwargs: ListStudioComponentsRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef).
+parent.list_studio_components(**kwargs)
+```
 
-<a id="list\_studio\_members"></a>
+1. See [:material-code-braces: ListStudioComponentsRequestRequestTypeDef](./type_defs.md#liststudiocomponentsrequestrequesttypedef) 
 
-### list_studio_members
+### list\_studio\_members
 
 Get all users in a given studio membership.
 
-Type annotations for `boto3.client("nimble").list_studio_members` method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_studio_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studio_members)
+```python title="Method definition"
+def list_studio_members(
+    self,
+    *,
+    studioId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListStudioMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStudioMembersRequestRequestTypeDef](./type_defs.md#liststudiomembersrequestrequesttypedef).
+1. See [:material-code-braces: ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStudioMembersRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef).
+parent.list_studio_members(**kwargs)
+```
 
-<a id="list\_studios"></a>
+1. See [:material-code-braces: ListStudioMembersRequestRequestTypeDef](./type_defs.md#liststudiomembersrequestrequesttypedef) 
 
-### list_studios
+### list\_studios
 
 List studios in your Amazon Web Services account in the requested Amazon Web
 Services Region.
 
-Type annotations for `boto3.client("nimble").list_studios` method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_studios` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_studios)
+```python title="Method definition"
+def list_studios(
+    self,
+    *,
+    nextToken: str = ...,
+) -> ListStudiosResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStudiosRequestRequestTypeDef](./type_defs.md#liststudiosrequestrequesttypedef).
+1. See [:material-code-braces: ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStudiosRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef).
+parent.list_studios(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListStudiosRequestRequestTypeDef](./type_defs.md#liststudiosrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Gets the tags for a resource, given its Amazon Resource Names (ARN).
 
-Type annotations for `boto3.client("nimble").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("nimble").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[NimbleStudio.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_launch\_profile\_members"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_launch_profile_members
+### put\_launch\_profile\_members
 
 Add/update users with given persona to launch profile membership.
 
-Type annotations for `boto3.client("nimble").put_launch_profile_members`
-method.
+Type annotations and code completion for `#!python boto3.client("nimble").put_launch_profile_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members)
 
-Boto3 documentation:
-[NimbleStudio.Client.put_launch_profile_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_launch_profile_members)
+```python title="Method definition"
+def put_launch_profile_members(
+    self,
+    *,
+    identityStoreId: str,
+    launchProfileId: str,
+    members: Sequence[NewLaunchProfileMemberTypeDef],  # (1)
+    studioId: str,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutLaunchProfileMembersRequestRequestTypeDef](./type_defs.md#putlaunchprofilemembersrequestrequesttypedef).
+1. See [:material-code-braces: NewLaunchProfileMemberTypeDef](./type_defs.md#newlaunchprofilemembertypedef) 
 
-Keyword-only arguments:
 
-- `identityStoreId`: `str` *(required)*
-- `launchProfileId`: `str` *(required)*
-- `members`:
-  `Sequence`\[[NewLaunchProfileMemberTypeDef](./type_defs.md#newlaunchprofilemembertypedef)\]
-  *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutLaunchProfileMembersRequestRequestTypeDef = {  # (1)
+    "identityStoreId": ...,
+    "launchProfileId": ...,
+    "members": ...,
+    "studioId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_launch_profile_members(**kwargs)
+```
 
-<a id="put\_studio\_members"></a>
+1. See [:material-code-braces: PutLaunchProfileMembersRequestRequestTypeDef](./type_defs.md#putlaunchprofilemembersrequestrequesttypedef) 
 
-### put_studio_members
+### put\_studio\_members
 
 Add/update users with given persona to studio membership.
 
-Type annotations for `boto3.client("nimble").put_studio_members` method.
+Type annotations and code completion for `#!python boto3.client("nimble").put_studio_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members)
 
-Boto3 documentation:
-[NimbleStudio.Client.put_studio_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.put_studio_members)
+```python title="Method definition"
+def put_studio_members(
+    self,
+    *,
+    identityStoreId: str,
+    members: Sequence[NewStudioMemberTypeDef],  # (1)
+    studioId: str,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutStudioMembersRequestRequestTypeDef](./type_defs.md#putstudiomembersrequestrequesttypedef).
+1. See [:material-code-braces: NewStudioMemberTypeDef](./type_defs.md#newstudiomembertypedef) 
 
-Keyword-only arguments:
 
-- `identityStoreId`: `str` *(required)*
-- `members`:
-  `Sequence`\[[NewStudioMemberTypeDef](./type_defs.md#newstudiomembertypedef)\]
-  *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutStudioMembersRequestRequestTypeDef = {  # (1)
+    "identityStoreId": ...,
+    "members": ...,
+    "studioId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_studio_members(**kwargs)
+```
 
-<a id="start\_streaming\_session"></a>
+1. See [:material-code-braces: PutStudioMembersRequestRequestTypeDef](./type_defs.md#putstudiomembersrequestrequesttypedef) 
 
-### start_streaming_session
+### start\_streaming\_session
 
 Transitions sessions from the STOPPED state into the READY state.
 
-Type annotations for `boto3.client("nimble").start_streaming_session` method.
+Type annotations and code completion for `#!python boto3.client("nimble").start_streaming_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_streaming_session)
 
-Boto3 documentation:
-[NimbleStudio.Client.start_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_streaming_session)
+```python title="Method definition"
+def start_streaming_session(
+    self,
+    *,
+    sessionId: str,
+    studioId: str,
+    clientToken: str = ...,
+) -> StartStreamingSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartStreamingSessionRequestRequestTypeDef](./type_defs.md#startstreamingsessionrequestrequesttypedef).
+1. See [:material-code-braces: StartStreamingSessionResponseTypeDef](./type_defs.md#startstreamingsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sessionId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartStreamingSessionRequestRequestTypeDef = {  # (1)
+    "sessionId": ...,
+    "studioId": ...,
+}
 
-Returns
-[StartStreamingSessionResponseTypeDef](./type_defs.md#startstreamingsessionresponsetypedef).
+parent.start_streaming_session(**kwargs)
+```
 
-<a id="start\_studio\_sso\_configuration\_repair"></a>
+1. See [:material-code-braces: StartStreamingSessionRequestRequestTypeDef](./type_defs.md#startstreamingsessionrequestrequesttypedef) 
 
-### start_studio_sso_configuration_repair
+### start\_studio\_sso\_configuration\_repair
 
 Repairs the Amazon Web Services SSO configuration for a given studio.
 
-Type annotations for
-`boto3.client("nimble").start_studio_sso_configuration_repair` method.
+Type annotations and code completion for `#!python boto3.client("nimble").start_studio_sso_configuration_repair` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair)
 
-Boto3 documentation:
-[NimbleStudio.Client.start_studio_sso_configuration_repair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.start_studio_sso_configuration_repair)
+```python title="Method definition"
+def start_studio_sso_configuration_repair(
+    self,
+    *,
+    studioId: str,
+    clientToken: str = ...,
+) -> StartStudioSSOConfigurationRepairResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartStudioSSOConfigurationRepairRequestRequestTypeDef](./type_defs.md#startstudiossoconfigurationrepairrequestrequesttypedef).
+1. See [:material-code-braces: StartStudioSSOConfigurationRepairResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartStudioSSOConfigurationRepairRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[StartStudioSSOConfigurationRepairResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponsetypedef).
+parent.start_studio_sso_configuration_repair(**kwargs)
+```
 
-<a id="stop\_streaming\_session"></a>
+1. See [:material-code-braces: StartStudioSSOConfigurationRepairRequestRequestTypeDef](./type_defs.md#startstudiossoconfigurationrepairrequestrequesttypedef) 
 
-### stop_streaming_session
+### stop\_streaming\_session
 
 Transitions sessions from the READY state into the STOPPED state.
 
-Type annotations for `boto3.client("nimble").stop_streaming_session` method.
+Type annotations and code completion for `#!python boto3.client("nimble").stop_streaming_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.stop_streaming_session)
 
-Boto3 documentation:
-[NimbleStudio.Client.stop_streaming_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.stop_streaming_session)
+```python title="Method definition"
+def stop_streaming_session(
+    self,
+    *,
+    sessionId: str,
+    studioId: str,
+    clientToken: str = ...,
+) -> StopStreamingSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopStreamingSessionRequestRequestTypeDef](./type_defs.md#stopstreamingsessionrequestrequesttypedef).
+1. See [:material-code-braces: StopStreamingSessionResponseTypeDef](./type_defs.md#stopstreamingsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sessionId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopStreamingSessionRequestRequestTypeDef = {  # (1)
+    "sessionId": ...,
+    "studioId": ...,
+}
 
-Returns
-[StopStreamingSessionResponseTypeDef](./type_defs.md#stopstreamingsessionresponsetypedef).
+parent.stop_streaming_session(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopStreamingSessionRequestRequestTypeDef](./type_defs.md#stopstreamingsessionrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Creates tags for a resource, given its ARN.
 
-Type annotations for `boto3.client("nimble").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("nimble").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource)
 
-Boto3 documentation:
-[NimbleStudio.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes the tags for a resource.
 
-Type annotations for `boto3.client("nimble").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("nimble").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource)
 
-Boto3 documentation:
-[NimbleStudio.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_launch\_profile"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_launch_profile
+### update\_launch\_profile
 
 Update a launch profile.
 
-Type annotations for `boto3.client("nimble").update_launch_profile` method.
+Type annotations and code completion for `#!python boto3.client("nimble").update_launch_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile)
 
-Boto3 documentation:
-[NimbleStudio.Client.update_launch_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile)
+```python title="Method definition"
+def update_launch_profile(
+    self,
+    *,
+    launchProfileId: str,
+    studioId: str,
+    clientToken: str = ...,
+    description: str = ...,
+    launchProfileProtocolVersions: Sequence[str] = ...,
+    name: str = ...,
+    streamConfiguration: StreamConfigurationCreateTypeDef = ...,  # (1)
+    studioComponentIds: Sequence[str] = ...,
+) -> UpdateLaunchProfileResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLaunchProfileRequestRequestTypeDef](./type_defs.md#updatelaunchprofilerequestrequesttypedef).
+1. See [:material-code-braces: StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef) 
+2. See [:material-code-braces: UpdateLaunchProfileResponseTypeDef](./type_defs.md#updatelaunchprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launchProfileId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `launchProfileProtocolVersions`: `Sequence`\[`str`\]
-- `name`: `str`
-- `streamConfiguration`:
-  [StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef)
-- `studioComponentIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateLaunchProfileRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "studioId": ...,
+}
 
-Returns
-[UpdateLaunchProfileResponseTypeDef](./type_defs.md#updatelaunchprofileresponsetypedef).
+parent.update_launch_profile(**kwargs)
+```
 
-<a id="update\_launch\_profile\_member"></a>
+1. See [:material-code-braces: UpdateLaunchProfileRequestRequestTypeDef](./type_defs.md#updatelaunchprofilerequestrequesttypedef) 
 
-### update_launch_profile_member
+### update\_launch\_profile\_member
 
 Update a user persona in launch profile membership.
 
-Type annotations for `boto3.client("nimble").update_launch_profile_member`
-method.
+Type annotations and code completion for `#!python boto3.client("nimble").update_launch_profile_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member)
 
-Boto3 documentation:
-[NimbleStudio.Client.update_launch_profile_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_launch_profile_member)
+```python title="Method definition"
+def update_launch_profile_member(
+    self,
+    *,
+    launchProfileId: str,
+    persona: LaunchProfilePersonaType,  # (1)
+    principalId: str,
+    studioId: str,
+    clientToken: str = ...,
+) -> UpdateLaunchProfileMemberResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#updatelaunchprofilememberrequestrequesttypedef).
+1. See [:material-code-brackets: LaunchProfilePersonaType](./literals.md#launchprofilepersonatype) 
+2. See [:material-code-braces: UpdateLaunchProfileMemberResponseTypeDef](./type_defs.md#updatelaunchprofilememberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launchProfileId`: `str` *(required)*
-- `persona`: `Literal['USER']` (see
-  [LaunchProfilePersonaType](./literals.md#launchprofilepersonatype))
-  *(required)*
-- `principalId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateLaunchProfileMemberRequestRequestTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "persona": ...,
+    "principalId": ...,
+    "studioId": ...,
+}
 
-Returns
-[UpdateLaunchProfileMemberResponseTypeDef](./type_defs.md#updatelaunchprofilememberresponsetypedef).
+parent.update_launch_profile_member(**kwargs)
+```
 
-<a id="update\_streaming\_image"></a>
+1. See [:material-code-braces: UpdateLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#updatelaunchprofilememberrequestrequesttypedef) 
 
-### update_streaming_image
+### update\_streaming\_image
 
 Update streaming image.
 
-Type annotations for `boto3.client("nimble").update_streaming_image` method.
+Type annotations and code completion for `#!python boto3.client("nimble").update_streaming_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image)
 
-Boto3 documentation:
-[NimbleStudio.Client.update_streaming_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_streaming_image)
+```python title="Method definition"
+def update_streaming_image(
+    self,
+    *,
+    streamingImageId: str,
+    studioId: str,
+    clientToken: str = ...,
+    description: str = ...,
+    name: str = ...,
+) -> UpdateStreamingImageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStreamingImageRequestRequestTypeDef](./type_defs.md#updatestreamingimagerequestrequesttypedef).
+1. See [:material-code-braces: UpdateStreamingImageResponseTypeDef](./type_defs.md#updatestreamingimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `streamingImageId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStreamingImageRequestRequestTypeDef = {  # (1)
+    "streamingImageId": ...,
+    "studioId": ...,
+}
 
-Returns
-[UpdateStreamingImageResponseTypeDef](./type_defs.md#updatestreamingimageresponsetypedef).
+parent.update_streaming_image(**kwargs)
+```
 
-<a id="update\_studio"></a>
+1. See [:material-code-braces: UpdateStreamingImageRequestRequestTypeDef](./type_defs.md#updatestreamingimagerequestrequesttypedef) 
 
-### update_studio
+### update\_studio
 
 Update a Studio resource.
 
-Type annotations for `boto3.client("nimble").update_studio` method.
+Type annotations and code completion for `#!python boto3.client("nimble").update_studio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio)
 
-Boto3 documentation:
-[NimbleStudio.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio)
+```python title="Method definition"
+def update_studio(
+    self,
+    *,
+    studioId: str,
+    adminRoleArn: str = ...,
+    clientToken: str = ...,
+    displayName: str = ...,
+    userRoleArn: str = ...,
+) -> UpdateStudioResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStudioRequestRequestTypeDef](./type_defs.md#updatestudiorequestrequesttypedef).
+1. See [:material-code-braces: UpdateStudioResponseTypeDef](./type_defs.md#updatestudioresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioId`: `str` *(required)*
-- `adminRoleArn`: `str`
-- `clientToken`: `str`
-- `displayName`: `str`
-- `userRoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStudioRequestRequestTypeDef = {  # (1)
+    "studioId": ...,
+}
 
-Returns
-[UpdateStudioResponseTypeDef](./type_defs.md#updatestudioresponsetypedef).
+parent.update_studio(**kwargs)
+```
 
-<a id="update\_studio\_component"></a>
+1. See [:material-code-braces: UpdateStudioRequestRequestTypeDef](./type_defs.md#updatestudiorequestrequesttypedef) 
 
-### update_studio_component
+### update\_studio\_component
 
 Updates a studio component resource.
 
-Type annotations for `boto3.client("nimble").update_studio_component` method.
+Type annotations and code completion for `#!python boto3.client("nimble").update_studio_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component)
 
-Boto3 documentation:
-[NimbleStudio.Client.update_studio_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client.update_studio_component)
+```python title="Method definition"
+def update_studio_component(
+    self,
+    *,
+    studioComponentId: str,
+    studioId: str,
+    clientToken: str = ...,
+    configuration: StudioComponentConfigurationTypeDef = ...,  # (1)
+    description: str = ...,
+    ec2SecurityGroupIds: Sequence[str] = ...,
+    initializationScripts: Sequence[StudioComponentInitializationScriptTypeDef] = ...,  # (2)
+    name: str = ...,
+    scriptParameters: Sequence[ScriptParameterKeyValueTypeDef] = ...,  # (3)
+    subtype: StudioComponentSubtypeType = ...,  # (4)
+    type: StudioComponentTypeType = ...,  # (5)
+) -> UpdateStudioComponentResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStudioComponentRequestRequestTypeDef](./type_defs.md#updatestudiocomponentrequestrequesttypedef).
+1. See [:material-code-braces: StudioComponentConfigurationTypeDef](./type_defs.md#studiocomponentconfigurationtypedef) 
+2. See [:material-code-braces: StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef) 
+3. See [:material-code-braces: ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef) 
+4. See [:material-code-brackets: StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype) 
+5. See [:material-code-brackets: StudioComponentTypeType](./literals.md#studiocomponenttypetype) 
+6. See [:material-code-braces: UpdateStudioComponentResponseTypeDef](./type_defs.md#updatestudiocomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `studioComponentId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `clientToken`: `str`
-- `configuration`:
-  [StudioComponentConfigurationTypeDef](./type_defs.md#studiocomponentconfigurationtypedef)
-- `description`: `str`
-- `ec2SecurityGroupIds`: `Sequence`\[`str`\]
-- `initializationScripts`:
-  `Sequence`\[[StudioComponentInitializationScriptTypeDef](./type_defs.md#studiocomponentinitializationscripttypedef)\]
-- `name`: `str`
-- `scriptParameters`:
-  `Sequence`\[[ScriptParameterKeyValueTypeDef](./type_defs.md#scriptparameterkeyvaluetypedef)\]
-- `subtype`:
-  [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
-- `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateStudioComponentRequestRequestTypeDef = {  # (1)
+    "studioComponentId": ...,
+    "studioId": ...,
+}
 
-Returns
-[UpdateStudioComponentResponseTypeDef](./type_defs.md#updatestudiocomponentresponsetypedef).
+parent.update_studio_component(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateStudioComponentRequestRequestTypeDef](./type_defs.md#updatestudiocomponentrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("nimble").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("nimble").get_paginator` method with overloads.
 
-- `client.get_paginator("list_eula_acceptances")` ->
-  [ListEulaAcceptancesPaginator](./paginators.md#listeulaacceptancespaginator)
-- `client.get_paginator("list_eulas")` ->
-  [ListEulasPaginator](./paginators.md#listeulaspaginator)
-- `client.get_paginator("list_launch_profile_members")` ->
-  [ListLaunchProfileMembersPaginator](./paginators.md#listlaunchprofilememberspaginator)
-- `client.get_paginator("list_launch_profiles")` ->
-  [ListLaunchProfilesPaginator](./paginators.md#listlaunchprofilespaginator)
-- `client.get_paginator("list_streaming_images")` ->
-  [ListStreamingImagesPaginator](./paginators.md#liststreamingimagespaginator)
-- `client.get_paginator("list_streaming_sessions")` ->
-  [ListStreamingSessionsPaginator](./paginators.md#liststreamingsessionspaginator)
-- `client.get_paginator("list_studio_components")` ->
-  [ListStudioComponentsPaginator](./paginators.md#liststudiocomponentspaginator)
-- `client.get_paginator("list_studio_members")` ->
-  [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
-- `client.get_paginator("list_studios")` ->
-  [ListStudiosPaginator](./paginators.md#liststudiospaginator)
+- `client.get_paginator("list_eula_acceptances")` -> [ListEulaAcceptancesPaginator](./paginators.md#listeulaacceptancespaginator)
+- `client.get_paginator("list_eulas")` -> [ListEulasPaginator](./paginators.md#listeulaspaginator)
+- `client.get_paginator("list_launch_profile_members")` -> [ListLaunchProfileMembersPaginator](./paginators.md#listlaunchprofilememberspaginator)
+- `client.get_paginator("list_launch_profiles")` -> [ListLaunchProfilesPaginator](./paginators.md#listlaunchprofilespaginator)
+- `client.get_paginator("list_streaming_images")` -> [ListStreamingImagesPaginator](./paginators.md#liststreamingimagespaginator)
+- `client.get_paginator("list_streaming_sessions")` -> [ListStreamingSessionsPaginator](./paginators.md#liststreamingsessionspaginator)
+- `client.get_paginator("list_studio_components")` -> [ListStudioComponentsPaginator](./paginators.md#liststudiocomponentspaginator)
+- `client.get_paginator("list_studio_members")` -> [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
+- `client.get_paginator("list_studios")` -> [ListStudiosPaginator](./paginators.md#liststudiospaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("nimble").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter` method with overloads.
 
-- `client.get_waiter("launch_profile_deleted")` ->
-  [LaunchProfileDeletedWaiter](./waiters.md#launchprofiledeletedwaiter)
-- `client.get_waiter("launch_profile_ready")` ->
-  [LaunchProfileReadyWaiter](./waiters.md#launchprofilereadywaiter)
-- `client.get_waiter("streaming_image_deleted")` ->
-  [StreamingImageDeletedWaiter](./waiters.md#streamingimagedeletedwaiter)
-- `client.get_waiter("streaming_image_ready")` ->
-  [StreamingImageReadyWaiter](./waiters.md#streamingimagereadywaiter)
-- `client.get_waiter("streaming_session_deleted")` ->
-  [StreamingSessionDeletedWaiter](./waiters.md#streamingsessiondeletedwaiter)
-- `client.get_waiter("streaming_session_ready")` ->
-  [StreamingSessionReadyWaiter](./waiters.md#streamingsessionreadywaiter)
-- `client.get_waiter("streaming_session_stopped")` ->
-  [StreamingSessionStoppedWaiter](./waiters.md#streamingsessionstoppedwaiter)
-- `client.get_waiter("streaming_session_stream_ready")` ->
-  [StreamingSessionStreamReadyWaiter](./waiters.md#streamingsessionstreamreadywaiter)
-- `client.get_waiter("studio_component_deleted")` ->
-  [StudioComponentDeletedWaiter](./waiters.md#studiocomponentdeletedwaiter)
-- `client.get_waiter("studio_component_ready")` ->
-  [StudioComponentReadyWaiter](./waiters.md#studiocomponentreadywaiter)
-- `client.get_waiter("studio_deleted")` ->
-  [StudioDeletedWaiter](./waiters.md#studiodeletedwaiter)
-- `client.get_waiter("studio_ready")` ->
-  [StudioReadyWaiter](./waiters.md#studioreadywaiter)
+- `client.get_waiter("launch_profile_deleted")` -> [LaunchProfileDeletedWaiter](./waiters.md#launchprofiledeletedwaiter)
+- `client.get_waiter("launch_profile_ready")` -> [LaunchProfileReadyWaiter](./waiters.md#launchprofilereadywaiter)
+- `client.get_waiter("streaming_image_deleted")` -> [StreamingImageDeletedWaiter](./waiters.md#streamingimagedeletedwaiter)
+- `client.get_waiter("streaming_image_ready")` -> [StreamingImageReadyWaiter](./waiters.md#streamingimagereadywaiter)
+- `client.get_waiter("streaming_session_deleted")` -> [StreamingSessionDeletedWaiter](./waiters.md#streamingsessiondeletedwaiter)
+- `client.get_waiter("streaming_session_ready")` -> [StreamingSessionReadyWaiter](./waiters.md#streamingsessionreadywaiter)
+- `client.get_waiter("streaming_session_stopped")` -> [StreamingSessionStoppedWaiter](./waiters.md#streamingsessionstoppedwaiter)
+- `client.get_waiter("streaming_session_stream_ready")` -> [StreamingSessionStreamReadyWaiter](./waiters.md#streamingsessionstreamreadywaiter)
+- `client.get_waiter("studio_component_deleted")` -> [StudioComponentDeletedWaiter](./waiters.md#studiocomponentdeletedwaiter)
+- `client.get_waiter("studio_component_ready")` -> [StudioComponentReadyWaiter](./waiters.md#studiocomponentreadywaiter)
+- `client.get_waiter("studio_deleted")` -> [StudioDeletedWaiter](./waiters.md#studiodeletedwaiter)
+- `client.get_waiter("studio_ready")` -> [StudioReadyWaiter](./waiters.md#studioreadywaiter)
+

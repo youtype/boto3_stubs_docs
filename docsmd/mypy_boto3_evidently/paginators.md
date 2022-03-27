@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-cloudwatchevidently-module"></a>
-
-# Paginators for boto3 CloudWatchEvidently module
+# Paginators
 
 > [Index](../README.md) > [CloudWatchEvidently](./README.md) > Paginators
 
-Auto-generated documentation for
-[CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
-type annotations stubs module
-[mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
+!!! note ""
 
-- [Paginators for boto3 CloudWatchEvidently module](#paginators-for-boto3-cloudwatchevidently-module)
-  - [ListExperimentsPaginator](#listexperimentspaginator)
-  - [ListFeaturesPaginator](#listfeaturespaginator)
-  - [ListLaunchesPaginator](#listlaunchespaginator)
-  - [ListProjectsPaginator](#listprojectspaginator)
-
-<a id="listexperimentspaginator"></a>
+    Auto-generated documentation for [CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
+    type annotations stubs module [mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
 
 ## ListExperimentsPaginator
 
-Type annotations for
-`boto3.client("evidently").get_paginator("list_experiments")`.
+Type annotations and code completion for `#!python boto3.client("evidently").get_paginator("list_experiments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListExperiments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_evidently.paginator import ListExperimentsPaginator
@@ -33,29 +21,42 @@ def get_list_experiments_paginator() -> ListExperimentsPaginator:
     return Session().client("evidently").get_paginator("list_experiments")
 ```
 
-Boto3 documentation:
-[CloudWatchEvidently.Paginator.ListExperiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListExperiments)
 
-Arguments for `ListExperimentsPaginator.paginate` method:
+### paginate
 
-- `project`: `str` *(required)*
-- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListExperimentsPaginator.paginate` method.
 
-`ListExperimentsPaginator.paginate` returns
-`_PageIterator`\[[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    project: str,
+    status: ExperimentStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListExperimentsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listfeaturespaginator"></a>
+1. See [:material-code-brackets: ExperimentStatusType](./literals.md#experimentstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListExperimentsRequestListExperimentsPaginateTypeDef = {  # (1)
+    "project": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListExperimentsRequestListExperimentsPaginateTypeDef](./type_defs.md#listexperimentsrequestlistexperimentspaginatetypedef) 
 ## ListFeaturesPaginator
 
-Type annotations for
-`boto3.client("evidently").get_paginator("list_features")`.
+Type annotations and code completion for `#!python boto3.client("evidently").get_paginator("list_features")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListFeatures)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_evidently.paginator import ListFeaturesPaginator
@@ -64,28 +65,40 @@ def get_list_features_paginator() -> ListFeaturesPaginator:
     return Session().client("evidently").get_paginator("list_features")
 ```
 
-Boto3 documentation:
-[CloudWatchEvidently.Paginator.ListFeatures](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListFeatures)
 
-Arguments for `ListFeaturesPaginator.paginate` method:
+### paginate
 
-- `project`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFeaturesPaginator.paginate` method.
 
-`ListFeaturesPaginator.paginate` returns
-`_PageIterator`\[[ListFeaturesResponseTypeDef](./type_defs.md#listfeaturesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    project: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFeaturesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listlaunchespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFeaturesResponseTypeDef](./type_defs.md#listfeaturesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFeaturesRequestListFeaturesPaginateTypeDef = {  # (1)
+    "project": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFeaturesRequestListFeaturesPaginateTypeDef](./type_defs.md#listfeaturesrequestlistfeaturespaginatetypedef) 
 ## ListLaunchesPaginator
 
-Type annotations for
-`boto3.client("evidently").get_paginator("list_launches")`.
+Type annotations and code completion for `#!python boto3.client("evidently").get_paginator("list_launches")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListLaunches)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_evidently.paginator import ListLaunchesPaginator
@@ -94,29 +107,42 @@ def get_list_launches_paginator() -> ListLaunchesPaginator:
     return Session().client("evidently").get_paginator("list_launches")
 ```
 
-Boto3 documentation:
-[CloudWatchEvidently.Paginator.ListLaunches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListLaunches)
 
-Arguments for `ListLaunchesPaginator.paginate` method:
+### paginate
 
-- `project`: `str` *(required)*
-- `status`: [LaunchStatusType](./literals.md#launchstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListLaunchesPaginator.paginate` method.
 
-`ListLaunchesPaginator.paginate` returns
-`_PageIterator`\[[ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    project: str,
+    status: LaunchStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListLaunchesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listprojectspaginator"></a>
+1. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListLaunchesRequestListLaunchesPaginateTypeDef = {  # (1)
+    "project": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLaunchesRequestListLaunchesPaginateTypeDef](./type_defs.md#listlaunchesrequestlistlaunchespaginatetypedef) 
 ## ListProjectsPaginator
 
-Type annotations for
-`boto3.client("evidently").get_paginator("list_projects")`.
+Type annotations and code completion for `#!python boto3.client("evidently").get_paginator("list_projects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListProjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_evidently.paginator import ListProjectsPaginator
@@ -125,13 +151,30 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("evidently").get_paginator("list_projects")
 ```
 
-Boto3 documentation:
-[CloudWatchEvidently.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Paginator.ListProjects)
 
-Arguments for `ListProjectsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListProjectsPaginator.paginate` method.
 
-`ListProjectsPaginator.paginate` returns
-`_PageIterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListProjectsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestListProjectsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef) 

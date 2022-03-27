@@ -1,39 +1,18 @@
-<a id="applicationcostprofilerclient-for-boto3-applicationcostprofiler-module"></a>
+# ApplicationCostProfilerClient
 
-# ApplicationCostProfilerClient for boto3 ApplicationCostProfiler module
+> [Index](../README.md) > [ApplicationCostProfiler](./README.md) > ApplicationCostProfilerClient
 
-> [Index](../README.md) > [ApplicationCostProfiler](./README.md) >
-> ApplicationCostProfilerClient
+!!! note ""
 
-Auto-generated documentation for
-[ApplicationCostProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler)
-type annotations stubs module
-[mypy-boto3-applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
-
-- [ApplicationCostProfilerClient for boto3 ApplicationCostProfiler module](#applicationcostprofilerclient-for-boto3-applicationcostprofiler-module)
-  - [ApplicationCostProfilerClient](#applicationcostprofilerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [delete_report_definition](#delete_report_definition)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_report_definition](#get_report_definition)
-    - [import_application_usage](#import_application_usage)
-    - [list_report_definitions](#list_report_definitions)
-    - [put_report_definition](#put_report_definition)
-    - [update_report_definition](#update_report_definition)
-    - [get_paginator](#get_paginator)
-
-<a id="applicationcostprofilerclient"></a>
+    Auto-generated documentation for [ApplicationCostProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler)
+    type annotations stubs module [mypy-boto3-applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
 
 ## ApplicationCostProfilerClient
 
-Type annotations for `boto3.client("applicationcostprofiler")`
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_applicationcostprofiler.client import ApplicationCostProfilerClient
 
@@ -41,243 +20,280 @@ def get_applicationcostprofiler_client() -> ApplicationCostProfilerClient:
     return Session().client("applicationcostprofiler")
 ```
 
-Boto3 documentation:
-[ApplicationCostProfiler.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("applicationcostprofiler").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("applicationcostprofiler")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.InternalServerException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_applicationcostprofiler.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ApplicationCostProfilerClient exceptions.
-
-Type annotations for `boto3.client("applicationcostprofiler").exceptions`
-method.
-
-Boto3 documentation:
-[ApplicationCostProfiler.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("applicationcostprofiler").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.can_paginate)
 
-Boto3 documentation:
-[ApplicationCostProfiler.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_report\_definition"></a>
-
-### delete_report_definition
+### delete\_report\_definition
 
 Deletes the specified report definition in AWS Application Cost Profiler.
 
-Type annotations for
-`boto3.client("applicationcostprofiler").delete_report_definition` method.
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler").delete_report_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.delete_report_definition)
 
-Boto3 documentation:
-[ApplicationCostProfiler.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.delete_report_definition)
+```python title="Method definition"
+def delete_report_definition(
+    self,
+    *,
+    reportId: str,
+) -> DeleteReportDefinitionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteReportDefinitionResultTypeDef](./type_defs.md#deletereportdefinitionresulttypedef) 
 
-Keyword-only arguments:
 
-- `reportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReportDefinitionRequestRequestTypeDef = {  # (1)
+    "reportId": ...,
+}
 
-Returns
-[DeleteReportDefinitionResultTypeDef](./type_defs.md#deletereportdefinitionresulttypedef).
+parent.delete_report_definition(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("applicationcostprofiler").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ApplicationCostProfiler.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_report\_definition"></a>
-
-### get_report_definition
+### get\_report\_definition
 
 Retrieves the definition of a report already configured in AWS Application Cost
 Profiler.
 
-Type annotations for
-`boto3.client("applicationcostprofiler").get_report_definition` method.
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler").get_report_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.get_report_definition)
 
-Boto3 documentation:
-[ApplicationCostProfiler.Client.get_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.get_report_definition)
+```python title="Method definition"
+def get_report_definition(
+    self,
+    *,
+    reportId: str,
+) -> GetReportDefinitionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetReportDefinitionRequestRequestTypeDef](./type_defs.md#getreportdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: GetReportDefinitionResultTypeDef](./type_defs.md#getreportdefinitionresulttypedef) 
 
-Keyword-only arguments:
 
-- `reportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetReportDefinitionRequestRequestTypeDef = {  # (1)
+    "reportId": ...,
+}
 
-Returns
-[GetReportDefinitionResultTypeDef](./type_defs.md#getreportdefinitionresulttypedef).
+parent.get_report_definition(**kwargs)
+```
 
-<a id="import\_application\_usage"></a>
+1. See [:material-code-braces: GetReportDefinitionRequestRequestTypeDef](./type_defs.md#getreportdefinitionrequestrequesttypedef) 
 
-### import_application_usage
+### import\_application\_usage
 
 Ingests application usage data from Amazon Simple Storage Service (Amazon S3).
 
-Type annotations for
-`boto3.client("applicationcostprofiler").import_application_usage` method.
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler").import_application_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.import_application_usage)
 
-Boto3 documentation:
-[ApplicationCostProfiler.Client.import_application_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.import_application_usage)
+```python title="Method definition"
+def import_application_usage(
+    self,
+    *,
+    sourceS3Location: SourceS3LocationTypeDef,  # (1)
+) -> ImportApplicationUsageResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportApplicationUsageRequestRequestTypeDef](./type_defs.md#importapplicationusagerequestrequesttypedef).
+1. See [:material-code-braces: SourceS3LocationTypeDef](./type_defs.md#sources3locationtypedef) 
+2. See [:material-code-braces: ImportApplicationUsageResultTypeDef](./type_defs.md#importapplicationusageresulttypedef) 
 
-Keyword-only arguments:
 
-- `sourceS3Location`:
-  [SourceS3LocationTypeDef](./type_defs.md#sources3locationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ImportApplicationUsageRequestRequestTypeDef = {  # (1)
+    "sourceS3Location": ...,
+}
 
-Returns
-[ImportApplicationUsageResultTypeDef](./type_defs.md#importapplicationusageresulttypedef).
+parent.import_application_usage(**kwargs)
+```
 
-<a id="list\_report\_definitions"></a>
+1. See [:material-code-braces: ImportApplicationUsageRequestRequestTypeDef](./type_defs.md#importapplicationusagerequestrequesttypedef) 
 
-### list_report_definitions
+### list\_report\_definitions
 
 Retrieves a list of all reports and their configurations for your AWS account.
 
-Type annotations for
-`boto3.client("applicationcostprofiler").list_report_definitions` method.
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler").list_report_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.list_report_definitions)
 
-Boto3 documentation:
-[ApplicationCostProfiler.Client.list_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.list_report_definitions)
+```python title="Method definition"
+def list_report_definitions(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListReportDefinitionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListReportDefinitionsRequestRequestTypeDef](./type_defs.md#listreportdefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListReportDefinitionsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef).
+parent.list_report_definitions(**kwargs)
+```
 
-<a id="put\_report\_definition"></a>
+1. See [:material-code-braces: ListReportDefinitionsRequestRequestTypeDef](./type_defs.md#listreportdefinitionsrequestrequesttypedef) 
 
-### put_report_definition
+### put\_report\_definition
 
 Creates the report definition for a report in Application Cost Profiler.
 
-Type annotations for
-`boto3.client("applicationcostprofiler").put_report_definition` method.
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler").put_report_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.put_report_definition)
 
-Boto3 documentation:
-[ApplicationCostProfiler.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.put_report_definition)
+```python title="Method definition"
+def put_report_definition(
+    self,
+    *,
+    reportId: str,
+    reportDescription: str,
+    reportFrequency: ReportFrequencyType,  # (1)
+    format: FormatType,  # (2)
+    destinationS3Location: S3LocationTypeDef,  # (3)
+) -> PutReportDefinitionResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef).
+1. See [:material-code-brackets: ReportFrequencyType](./literals.md#reportfrequencytype) 
+2. See [:material-code-brackets: FormatType](./literals.md#formattype) 
+3. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+4. See [:material-code-braces: PutReportDefinitionResultTypeDef](./type_defs.md#putreportdefinitionresulttypedef) 
 
-Keyword-only arguments:
 
-- `reportId`: `str` *(required)*
-- `reportDescription`: `str` *(required)*
-- `reportFrequency`: [ReportFrequencyType](./literals.md#reportfrequencytype)
-  *(required)*
-- `format`: [FormatType](./literals.md#formattype) *(required)*
-- `destinationS3Location`:
-  [S3LocationTypeDef](./type_defs.md#s3locationtypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutReportDefinitionRequestRequestTypeDef = {  # (1)
+    "reportId": ...,
+    "reportDescription": ...,
+    "reportFrequency": ...,
+    "format": ...,
+    "destinationS3Location": ...,
+}
 
-Returns
-[PutReportDefinitionResultTypeDef](./type_defs.md#putreportdefinitionresulttypedef).
+parent.put_report_definition(**kwargs)
+```
 
-<a id="update\_report\_definition"></a>
+1. See [:material-code-braces: PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef) 
 
-### update_report_definition
+### update\_report\_definition
 
 Updates existing report in AWS Application Cost Profiler.
 
-Type annotations for
-`boto3.client("applicationcostprofiler").update_report_definition` method.
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler").update_report_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.update_report_definition)
 
-Boto3 documentation:
-[ApplicationCostProfiler.Client.update_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.update_report_definition)
+```python title="Method definition"
+def update_report_definition(
+    self,
+    *,
+    reportId: str,
+    reportDescription: str,
+    reportFrequency: ReportFrequencyType,  # (1)
+    format: FormatType,  # (2)
+    destinationS3Location: S3LocationTypeDef,  # (3)
+) -> UpdateReportDefinitionResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateReportDefinitionRequestRequestTypeDef](./type_defs.md#updatereportdefinitionrequestrequesttypedef).
+1. See [:material-code-brackets: ReportFrequencyType](./literals.md#reportfrequencytype) 
+2. See [:material-code-brackets: FormatType](./literals.md#formattype) 
+3. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+4. See [:material-code-braces: UpdateReportDefinitionResultTypeDef](./type_defs.md#updatereportdefinitionresulttypedef) 
 
-Keyword-only arguments:
 
-- `reportId`: `str` *(required)*
-- `reportDescription`: `str` *(required)*
-- `reportFrequency`: [ReportFrequencyType](./literals.md#reportfrequencytype)
-  *(required)*
-- `format`: [FormatType](./literals.md#formattype) *(required)*
-- `destinationS3Location`:
-  [S3LocationTypeDef](./type_defs.md#s3locationtypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateReportDefinitionRequestRequestTypeDef = {  # (1)
+    "reportId": ...,
+    "reportDescription": ...,
+    "reportFrequency": ...,
+    "format": ...,
+    "destinationS3Location": ...,
+}
 
-Returns
-[UpdateReportDefinitionResultTypeDef](./type_defs.md#updatereportdefinitionresulttypedef).
+parent.update_report_definition(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateReportDefinitionRequestRequestTypeDef](./type_defs.md#updatereportdefinitionrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("applicationcostprofiler").get_paginator`
-method with overloads.
+Type annotations and code completion for `#!python boto3.client("applicationcostprofiler").get_paginator` method with overloads.
 
-- `client.get_paginator("list_report_definitions")` ->
-  [ListReportDefinitionsPaginator](./paginators.md#listreportdefinitionspaginator)
+- `client.get_paginator("list_report_definitions")` -> [ListReportDefinitionsPaginator](./paginators.md#listreportdefinitionspaginator)
+
+
+

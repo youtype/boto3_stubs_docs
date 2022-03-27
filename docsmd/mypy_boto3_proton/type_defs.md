@@ -1,2976 +1,4146 @@
-<a id="typed-dictionaries-for-boto3-proton-module"></a>
-
-# Typed dictionaries for boto3 Proton module
+# Typed dictionaries
 
 > [Index](../README.md) > [Proton](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
-type annotations stubs module
-[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Proton module](#typed-dictionaries-for-boto3-proton-module)
-  - [AcceptEnvironmentAccountConnectionInputRequestTypeDef](#acceptenvironmentaccountconnectioninputrequesttypedef)
-  - [AcceptEnvironmentAccountConnectionOutputTypeDef](#acceptenvironmentaccountconnectionoutputtypedef)
-  - [AccountSettingsTypeDef](#accountsettingstypedef)
-  - [CancelEnvironmentDeploymentInputRequestTypeDef](#cancelenvironmentdeploymentinputrequesttypedef)
-  - [CancelEnvironmentDeploymentOutputTypeDef](#cancelenvironmentdeploymentoutputtypedef)
-  - [CancelServiceInstanceDeploymentInputRequestTypeDef](#cancelserviceinstancedeploymentinputrequesttypedef)
-  - [CancelServiceInstanceDeploymentOutputTypeDef](#cancelserviceinstancedeploymentoutputtypedef)
-  - [CancelServicePipelineDeploymentInputRequestTypeDef](#cancelservicepipelinedeploymentinputrequesttypedef)
-  - [CancelServicePipelineDeploymentOutputTypeDef](#cancelservicepipelinedeploymentoutputtypedef)
-  - [CompatibleEnvironmentTemplateInputTypeDef](#compatibleenvironmenttemplateinputtypedef)
-  - [CompatibleEnvironmentTemplateTypeDef](#compatibleenvironmenttemplatetypedef)
-  - [CreateEnvironmentAccountConnectionInputRequestTypeDef](#createenvironmentaccountconnectioninputrequesttypedef)
-  - [CreateEnvironmentAccountConnectionOutputTypeDef](#createenvironmentaccountconnectionoutputtypedef)
-  - [CreateEnvironmentInputRequestTypeDef](#createenvironmentinputrequesttypedef)
-  - [CreateEnvironmentOutputTypeDef](#createenvironmentoutputtypedef)
-  - [CreateEnvironmentTemplateInputRequestTypeDef](#createenvironmenttemplateinputrequesttypedef)
-  - [CreateEnvironmentTemplateOutputTypeDef](#createenvironmenttemplateoutputtypedef)
-  - [CreateEnvironmentTemplateVersionInputRequestTypeDef](#createenvironmenttemplateversioninputrequesttypedef)
-  - [CreateEnvironmentTemplateVersionOutputTypeDef](#createenvironmenttemplateversionoutputtypedef)
-  - [CreateRepositoryInputRequestTypeDef](#createrepositoryinputrequesttypedef)
-  - [CreateRepositoryOutputTypeDef](#createrepositoryoutputtypedef)
-  - [CreateServiceInputRequestTypeDef](#createserviceinputrequesttypedef)
-  - [CreateServiceOutputTypeDef](#createserviceoutputtypedef)
-  - [CreateServiceTemplateInputRequestTypeDef](#createservicetemplateinputrequesttypedef)
-  - [CreateServiceTemplateOutputTypeDef](#createservicetemplateoutputtypedef)
-  - [CreateServiceTemplateVersionInputRequestTypeDef](#createservicetemplateversioninputrequesttypedef)
-  - [CreateServiceTemplateVersionOutputTypeDef](#createservicetemplateversionoutputtypedef)
-  - [CreateTemplateSyncConfigInputRequestTypeDef](#createtemplatesyncconfiginputrequesttypedef)
-  - [CreateTemplateSyncConfigOutputTypeDef](#createtemplatesyncconfigoutputtypedef)
-  - [DeleteEnvironmentAccountConnectionInputRequestTypeDef](#deleteenvironmentaccountconnectioninputrequesttypedef)
-  - [DeleteEnvironmentAccountConnectionOutputTypeDef](#deleteenvironmentaccountconnectionoutputtypedef)
-  - [DeleteEnvironmentInputRequestTypeDef](#deleteenvironmentinputrequesttypedef)
-  - [DeleteEnvironmentOutputTypeDef](#deleteenvironmentoutputtypedef)
-  - [DeleteEnvironmentTemplateInputRequestTypeDef](#deleteenvironmenttemplateinputrequesttypedef)
-  - [DeleteEnvironmentTemplateOutputTypeDef](#deleteenvironmenttemplateoutputtypedef)
-  - [DeleteEnvironmentTemplateVersionInputRequestTypeDef](#deleteenvironmenttemplateversioninputrequesttypedef)
-  - [DeleteEnvironmentTemplateVersionOutputTypeDef](#deleteenvironmenttemplateversionoutputtypedef)
-  - [DeleteRepositoryInputRequestTypeDef](#deleterepositoryinputrequesttypedef)
-  - [DeleteRepositoryOutputTypeDef](#deleterepositoryoutputtypedef)
-  - [DeleteServiceInputRequestTypeDef](#deleteserviceinputrequesttypedef)
-  - [DeleteServiceOutputTypeDef](#deleteserviceoutputtypedef)
-  - [DeleteServiceTemplateInputRequestTypeDef](#deleteservicetemplateinputrequesttypedef)
-  - [DeleteServiceTemplateOutputTypeDef](#deleteservicetemplateoutputtypedef)
-  - [DeleteServiceTemplateVersionInputRequestTypeDef](#deleteservicetemplateversioninputrequesttypedef)
-  - [DeleteServiceTemplateVersionOutputTypeDef](#deleteservicetemplateversionoutputtypedef)
-  - [DeleteTemplateSyncConfigInputRequestTypeDef](#deletetemplatesyncconfiginputrequesttypedef)
-  - [DeleteTemplateSyncConfigOutputTypeDef](#deletetemplatesyncconfigoutputtypedef)
-  - [EnvironmentAccountConnectionSummaryTypeDef](#environmentaccountconnectionsummarytypedef)
-  - [EnvironmentAccountConnectionTypeDef](#environmentaccountconnectiontypedef)
-  - [EnvironmentSummaryTypeDef](#environmentsummarytypedef)
-  - [EnvironmentTemplateFilterTypeDef](#environmenttemplatefiltertypedef)
-  - [EnvironmentTemplateSummaryTypeDef](#environmenttemplatesummarytypedef)
-  - [EnvironmentTemplateTypeDef](#environmenttemplatetypedef)
-  - [EnvironmentTemplateVersionSummaryTypeDef](#environmenttemplateversionsummarytypedef)
-  - [EnvironmentTemplateVersionTypeDef](#environmenttemplateversiontypedef)
-  - [EnvironmentTypeDef](#environmenttypedef)
-  - [GetAccountSettingsOutputTypeDef](#getaccountsettingsoutputtypedef)
-  - [GetEnvironmentAccountConnectionInputRequestTypeDef](#getenvironmentaccountconnectioninputrequesttypedef)
-  - [GetEnvironmentAccountConnectionOutputTypeDef](#getenvironmentaccountconnectionoutputtypedef)
-  - [GetEnvironmentInputRequestTypeDef](#getenvironmentinputrequesttypedef)
-  - [GetEnvironmentOutputTypeDef](#getenvironmentoutputtypedef)
-  - [GetEnvironmentTemplateInputRequestTypeDef](#getenvironmenttemplateinputrequesttypedef)
-  - [GetEnvironmentTemplateOutputTypeDef](#getenvironmenttemplateoutputtypedef)
-  - [GetEnvironmentTemplateVersionInputRequestTypeDef](#getenvironmenttemplateversioninputrequesttypedef)
-  - [GetEnvironmentTemplateVersionOutputTypeDef](#getenvironmenttemplateversionoutputtypedef)
-  - [GetRepositoryInputRequestTypeDef](#getrepositoryinputrequesttypedef)
-  - [GetRepositoryOutputTypeDef](#getrepositoryoutputtypedef)
-  - [GetRepositorySyncStatusInputRequestTypeDef](#getrepositorysyncstatusinputrequesttypedef)
-  - [GetRepositorySyncStatusOutputTypeDef](#getrepositorysyncstatusoutputtypedef)
-  - [GetServiceInputRequestTypeDef](#getserviceinputrequesttypedef)
-  - [GetServiceInstanceInputRequestTypeDef](#getserviceinstanceinputrequesttypedef)
-  - [GetServiceInstanceOutputTypeDef](#getserviceinstanceoutputtypedef)
-  - [GetServiceOutputTypeDef](#getserviceoutputtypedef)
-  - [GetServiceTemplateInputRequestTypeDef](#getservicetemplateinputrequesttypedef)
-  - [GetServiceTemplateOutputTypeDef](#getservicetemplateoutputtypedef)
-  - [GetServiceTemplateVersionInputRequestTypeDef](#getservicetemplateversioninputrequesttypedef)
-  - [GetServiceTemplateVersionOutputTypeDef](#getservicetemplateversionoutputtypedef)
-  - [GetTemplateSyncConfigInputRequestTypeDef](#gettemplatesyncconfiginputrequesttypedef)
-  - [GetTemplateSyncConfigOutputTypeDef](#gettemplatesyncconfigoutputtypedef)
-  - [GetTemplateSyncStatusInputRequestTypeDef](#gettemplatesyncstatusinputrequesttypedef)
-  - [GetTemplateSyncStatusOutputTypeDef](#gettemplatesyncstatusoutputtypedef)
-  - [ListEnvironmentAccountConnectionsInputRequestTypeDef](#listenvironmentaccountconnectionsinputrequesttypedef)
-  - [ListEnvironmentAccountConnectionsOutputTypeDef](#listenvironmentaccountconnectionsoutputtypedef)
-  - [ListEnvironmentOutputsInputRequestTypeDef](#listenvironmentoutputsinputrequesttypedef)
-  - [ListEnvironmentOutputsOutputTypeDef](#listenvironmentoutputsoutputtypedef)
-  - [ListEnvironmentProvisionedResourcesInputRequestTypeDef](#listenvironmentprovisionedresourcesinputrequesttypedef)
-  - [ListEnvironmentProvisionedResourcesOutputTypeDef](#listenvironmentprovisionedresourcesoutputtypedef)
-  - [ListEnvironmentTemplateVersionsInputRequestTypeDef](#listenvironmenttemplateversionsinputrequesttypedef)
-  - [ListEnvironmentTemplateVersionsOutputTypeDef](#listenvironmenttemplateversionsoutputtypedef)
-  - [ListEnvironmentTemplatesInputRequestTypeDef](#listenvironmenttemplatesinputrequesttypedef)
-  - [ListEnvironmentTemplatesOutputTypeDef](#listenvironmenttemplatesoutputtypedef)
-  - [ListEnvironmentsInputRequestTypeDef](#listenvironmentsinputrequesttypedef)
-  - [ListEnvironmentsOutputTypeDef](#listenvironmentsoutputtypedef)
-  - [ListRepositoriesInputRequestTypeDef](#listrepositoriesinputrequesttypedef)
-  - [ListRepositoriesOutputTypeDef](#listrepositoriesoutputtypedef)
-  - [ListRepositorySyncDefinitionsInputRequestTypeDef](#listrepositorysyncdefinitionsinputrequesttypedef)
-  - [ListRepositorySyncDefinitionsOutputTypeDef](#listrepositorysyncdefinitionsoutputtypedef)
-  - [ListServiceInstanceOutputsInputRequestTypeDef](#listserviceinstanceoutputsinputrequesttypedef)
-  - [ListServiceInstanceOutputsOutputTypeDef](#listserviceinstanceoutputsoutputtypedef)
-  - [ListServiceInstanceProvisionedResourcesInputRequestTypeDef](#listserviceinstanceprovisionedresourcesinputrequesttypedef)
-  - [ListServiceInstanceProvisionedResourcesOutputTypeDef](#listserviceinstanceprovisionedresourcesoutputtypedef)
-  - [ListServiceInstancesInputRequestTypeDef](#listserviceinstancesinputrequesttypedef)
-  - [ListServiceInstancesOutputTypeDef](#listserviceinstancesoutputtypedef)
-  - [ListServicePipelineOutputsInputRequestTypeDef](#listservicepipelineoutputsinputrequesttypedef)
-  - [ListServicePipelineOutputsOutputTypeDef](#listservicepipelineoutputsoutputtypedef)
-  - [ListServicePipelineProvisionedResourcesInputRequestTypeDef](#listservicepipelineprovisionedresourcesinputrequesttypedef)
-  - [ListServicePipelineProvisionedResourcesOutputTypeDef](#listservicepipelineprovisionedresourcesoutputtypedef)
-  - [ListServiceTemplateVersionsInputRequestTypeDef](#listservicetemplateversionsinputrequesttypedef)
-  - [ListServiceTemplateVersionsOutputTypeDef](#listservicetemplateversionsoutputtypedef)
-  - [ListServiceTemplatesInputRequestTypeDef](#listservicetemplatesinputrequesttypedef)
-  - [ListServiceTemplatesOutputTypeDef](#listservicetemplatesoutputtypedef)
-  - [ListServicesInputRequestTypeDef](#listservicesinputrequesttypedef)
-  - [ListServicesOutputTypeDef](#listservicesoutputtypedef)
-  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [NotifyResourceDeploymentStatusChangeInputRequestTypeDef](#notifyresourcedeploymentstatuschangeinputrequesttypedef)
-  - [OutputTypeDef](#outputtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProvisionedResourceTypeDef](#provisionedresourcetypedef)
-  - [RejectEnvironmentAccountConnectionInputRequestTypeDef](#rejectenvironmentaccountconnectioninputrequesttypedef)
-  - [RejectEnvironmentAccountConnectionOutputTypeDef](#rejectenvironmentaccountconnectionoutputtypedef)
-  - [RepositoryBranchInputTypeDef](#repositorybranchinputtypedef)
-  - [RepositoryBranchTypeDef](#repositorybranchtypedef)
-  - [RepositorySummaryTypeDef](#repositorysummarytypedef)
-  - [RepositorySyncAttemptTypeDef](#repositorysyncattempttypedef)
-  - [RepositorySyncDefinitionTypeDef](#repositorysyncdefinitiontypedef)
-  - [RepositorySyncEventTypeDef](#repositorysynceventtypedef)
-  - [RepositoryTypeDef](#repositorytypedef)
-  - [ResourceSyncAttemptTypeDef](#resourcesyncattempttypedef)
-  - [ResourceSyncEventTypeDef](#resourcesynceventtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RevisionTypeDef](#revisiontypedef)
-  - [S3ObjectSourceTypeDef](#s3objectsourcetypedef)
-  - [ServiceInstanceSummaryTypeDef](#serviceinstancesummarytypedef)
-  - [ServiceInstanceTypeDef](#serviceinstancetypedef)
-  - [ServicePipelineTypeDef](#servicepipelinetypedef)
-  - [ServiceSummaryTypeDef](#servicesummarytypedef)
-  - [ServiceTemplateSummaryTypeDef](#servicetemplatesummarytypedef)
-  - [ServiceTemplateTypeDef](#servicetemplatetypedef)
-  - [ServiceTemplateVersionSummaryTypeDef](#servicetemplateversionsummarytypedef)
-  - [ServiceTemplateVersionTypeDef](#servicetemplateversiontypedef)
-  - [ServiceTypeDef](#servicetypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TemplateSyncConfigTypeDef](#templatesyncconfigtypedef)
-  - [TemplateVersionSourceInputTypeDef](#templateversionsourceinputtypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-  - [UpdateAccountSettingsInputRequestTypeDef](#updateaccountsettingsinputrequesttypedef)
-  - [UpdateAccountSettingsOutputTypeDef](#updateaccountsettingsoutputtypedef)
-  - [UpdateEnvironmentAccountConnectionInputRequestTypeDef](#updateenvironmentaccountconnectioninputrequesttypedef)
-  - [UpdateEnvironmentAccountConnectionOutputTypeDef](#updateenvironmentaccountconnectionoutputtypedef)
-  - [UpdateEnvironmentInputRequestTypeDef](#updateenvironmentinputrequesttypedef)
-  - [UpdateEnvironmentOutputTypeDef](#updateenvironmentoutputtypedef)
-  - [UpdateEnvironmentTemplateInputRequestTypeDef](#updateenvironmenttemplateinputrequesttypedef)
-  - [UpdateEnvironmentTemplateOutputTypeDef](#updateenvironmenttemplateoutputtypedef)
-  - [UpdateEnvironmentTemplateVersionInputRequestTypeDef](#updateenvironmenttemplateversioninputrequesttypedef)
-  - [UpdateEnvironmentTemplateVersionOutputTypeDef](#updateenvironmenttemplateversionoutputtypedef)
-  - [UpdateServiceInputRequestTypeDef](#updateserviceinputrequesttypedef)
-  - [UpdateServiceInstanceInputRequestTypeDef](#updateserviceinstanceinputrequesttypedef)
-  - [UpdateServiceInstanceOutputTypeDef](#updateserviceinstanceoutputtypedef)
-  - [UpdateServiceOutputTypeDef](#updateserviceoutputtypedef)
-  - [UpdateServicePipelineInputRequestTypeDef](#updateservicepipelineinputrequesttypedef)
-  - [UpdateServicePipelineOutputTypeDef](#updateservicepipelineoutputtypedef)
-  - [UpdateServiceTemplateInputRequestTypeDef](#updateservicetemplateinputrequesttypedef)
-  - [UpdateServiceTemplateOutputTypeDef](#updateservicetemplateoutputtypedef)
-  - [UpdateServiceTemplateVersionInputRequestTypeDef](#updateservicetemplateversioninputrequesttypedef)
-  - [UpdateServiceTemplateVersionOutputTypeDef](#updateservicetemplateversionoutputtypedef)
-  - [UpdateTemplateSyncConfigInputRequestTypeDef](#updatetemplatesyncconfiginputrequesttypedef)
-  - [UpdateTemplateSyncConfigOutputTypeDef](#updatetemplatesyncconfigoutputtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="acceptenvironmentaccountconnectioninputrequesttypedef"></a>
+    Auto-generated documentation for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
+    type annotations stubs module [mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 ## AcceptEnvironmentAccountConnectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputRequestTypeDef
+
+def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="acceptenvironmentaccountconnectionoutputtypedef"></a>
+```python title="Definition"
+class AcceptEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## AcceptEnvironmentAccountConnectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionOutputTypeDef
+
+def get_value() -> AcceptEnvironmentAccountConnectionOutputTypeDef:
+    return {
+        "environmentAccountConnection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AcceptEnvironmentAccountConnectionOutputTypeDef(TypedDict):
+    environmentAccountConnection: EnvironmentAccountConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentAccountConnection`:
-  [EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="accountsettingstypedef"></a>
-
+1. See [:material-code-braces: EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AccountSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import AccountSettingsTypeDef
+
+def get_value() -> AccountSettingsTypeDef:
+    return {
+        "pipelineProvisioningRepository": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountSettingsTypeDef(TypedDict):
+    pipelineProvisioningRepository: NotRequired[RepositoryBranchTypeDef],  # (1)
+    pipelineServiceRoleArn: NotRequired[str],
+```
 
-- `pipelineProvisioningRepository`:
-  [RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef)
-- `pipelineServiceRoleArn`: `str`
-
-<a id="cancelenvironmentdeploymentinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef) 
 ## CancelEnvironmentDeploymentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CancelEnvironmentDeploymentInputRequestTypeDef
+
+def get_value() -> CancelEnvironmentDeploymentInputRequestTypeDef:
+    return {
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `environmentName`: `str`
-
-<a id="cancelenvironmentdeploymentoutputtypedef"></a>
+```python title="Definition"
+class CancelEnvironmentDeploymentInputRequestTypeDef(TypedDict):
+    environmentName: str,
+```
 
 ## CancelEnvironmentDeploymentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CancelEnvironmentDeploymentOutputTypeDef
+
+def get_value() -> CancelEnvironmentDeploymentOutputTypeDef:
+    return {
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelEnvironmentDeploymentOutputTypeDef(TypedDict):
+    environment: EnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cancelserviceinstancedeploymentinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelServiceInstanceDeploymentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CancelServiceInstanceDeploymentInputRequestTypeDef
+
+def get_value() -> CancelServiceInstanceDeploymentInputRequestTypeDef:
+    return {
+        "serviceInstanceName": ...,
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
-
-- `serviceInstanceName`: `str`
-- `serviceName`: `str`
-
-<a id="cancelserviceinstancedeploymentoutputtypedef"></a>
+```python title="Definition"
+class CancelServiceInstanceDeploymentInputRequestTypeDef(TypedDict):
+    serviceInstanceName: str,
+    serviceName: str,
+```
 
 ## CancelServiceInstanceDeploymentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CancelServiceInstanceDeploymentOutputTypeDef
+
+def get_value() -> CancelServiceInstanceDeploymentOutputTypeDef:
+    return {
+        "serviceInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelServiceInstanceDeploymentOutputTypeDef(TypedDict):
+    serviceInstance: ServiceInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceInstance`:
-  [ServiceInstanceTypeDef](./type_defs.md#serviceinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cancelservicepipelinedeploymentinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceInstanceTypeDef](./type_defs.md#serviceinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelServicePipelineDeploymentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CancelServicePipelineDeploymentInputRequestTypeDef
+
+def get_value() -> CancelServicePipelineDeploymentInputRequestTypeDef:
+    return {
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
-
-- `serviceName`: `str`
-
-<a id="cancelservicepipelinedeploymentoutputtypedef"></a>
+```python title="Definition"
+class CancelServicePipelineDeploymentInputRequestTypeDef(TypedDict):
+    serviceName: str,
+```
 
 ## CancelServicePipelineDeploymentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CancelServicePipelineDeploymentOutputTypeDef
+
+def get_value() -> CancelServicePipelineDeploymentOutputTypeDef:
+    return {
+        "pipeline": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelServicePipelineDeploymentOutputTypeDef(TypedDict):
+    pipeline: ServicePipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `pipeline`: [ServicePipelineTypeDef](./type_defs.md#servicepipelinetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="compatibleenvironmenttemplateinputtypedef"></a>
-
+1. See [:material-code-braces: ServicePipelineTypeDef](./type_defs.md#servicepipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CompatibleEnvironmentTemplateInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CompatibleEnvironmentTemplateInputTypeDef
+
+def get_value() -> CompatibleEnvironmentTemplateInputTypeDef:
+    return {
+        "majorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
-
-- `majorVersion`: `str`
-- `templateName`: `str`
-
-<a id="compatibleenvironmenttemplatetypedef"></a>
+```python title="Definition"
+class CompatibleEnvironmentTemplateInputTypeDef(TypedDict):
+    majorVersion: str,
+    templateName: str,
+```
 
 ## CompatibleEnvironmentTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CompatibleEnvironmentTemplateTypeDef
+
+def get_value() -> CompatibleEnvironmentTemplateTypeDef:
+    return {
+        "majorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
-
-- `majorVersion`: `str`
-- `templateName`: `str`
-
-<a id="createenvironmentaccountconnectioninputrequesttypedef"></a>
+```python title="Definition"
+class CompatibleEnvironmentTemplateTypeDef(TypedDict):
+    majorVersion: str,
+    templateName: str,
+```
 
 ## CreateEnvironmentAccountConnectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateEnvironmentAccountConnectionInputRequestTypeDef
+
+def get_value() -> CreateEnvironmentAccountConnectionInputRequestTypeDef:
+    return {
+        "environmentName": ...,
+        "managementAccountId": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
+    environmentName: str,
+    managementAccountId: str,
+    roleArn: str,
+    clientToken: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `environmentName`: `str`
-- `managementAccountId`: `str`
-- `roleArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createenvironmentaccountconnectionoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEnvironmentAccountConnectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateEnvironmentAccountConnectionOutputTypeDef
+
+def get_value() -> CreateEnvironmentAccountConnectionOutputTypeDef:
+    return {
+        "environmentAccountConnection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentAccountConnectionOutputTypeDef(TypedDict):
+    environmentAccountConnection: EnvironmentAccountConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentAccountConnection`:
-  [EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createenvironmentinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEnvironmentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateEnvironmentInputRequestTypeDef
+
+def get_value() -> CreateEnvironmentInputRequestTypeDef:
+    return {
+        "name": ...,
+        "spec": ...,
+        "templateMajorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentInputRequestTypeDef(TypedDict):
+    name: str,
+    spec: str,
+    templateMajorVersion: str,
+    templateName: str,
+    description: NotRequired[str],
+    environmentAccountConnectionId: NotRequired[str],
+    protonServiceRoleArn: NotRequired[str],
+    provisioningRepository: NotRequired[RepositoryBranchInputTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    templateMinorVersion: NotRequired[str],
+```
 
-- `name`: `str`
-- `spec`: `str`
-- `templateMajorVersion`: `str`
-- `templateName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `environmentAccountConnectionId`: `str`
-- `protonServiceRoleArn`: `str`
-- `provisioningRepository`:
-  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `templateMinorVersion`: `str`
-
-<a id="createenvironmentoutputtypedef"></a>
-
+1. See [:material-code-braces: RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEnvironmentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateEnvironmentOutputTypeDef
+
+def get_value() -> CreateEnvironmentOutputTypeDef:
+    return {
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentOutputTypeDef(TypedDict):
+    environment: EnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createenvironmenttemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEnvironmentTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateInputRequestTypeDef
+
+def get_value() -> CreateEnvironmentTemplateInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentTemplateInputRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    displayName: NotRequired[str],
+    encryptionKey: NotRequired[str],
+    provisioning: NotRequired[ProvisioningType],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `displayName`: `str`
-- `encryptionKey`: `str`
-- `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createenvironmenttemplateoutputtypedef"></a>
-
+1. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEnvironmentTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateOutputTypeDef
+
+def get_value() -> CreateEnvironmentTemplateOutputTypeDef:
+    return {
+        "environmentTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentTemplateOutputTypeDef(TypedDict):
+    environmentTemplate: EnvironmentTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentTemplate`:
-  [EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createenvironmenttemplateversioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEnvironmentTemplateVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateVersionInputRequestTypeDef
+
+def get_value() -> CreateEnvironmentTemplateVersionInputRequestTypeDef:
+    return {
+        "source": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentTemplateVersionInputRequestTypeDef(TypedDict):
+    source: TemplateVersionSourceInputTypeDef,  # (1)
+    templateName: str,
+    clientToken: NotRequired[str],
+    description: NotRequired[str],
+    majorVersion: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `source`:
-  [TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef)
-- `templateName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `description`: `str`
-- `majorVersion`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createenvironmenttemplateversionoutputtypedef"></a>
-
+1. See [:material-code-braces: TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEnvironmentTemplateVersionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateEnvironmentTemplateVersionOutputTypeDef
+
+def get_value() -> CreateEnvironmentTemplateVersionOutputTypeDef:
+    return {
+        "environmentTemplateVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentTemplateVersionOutputTypeDef(TypedDict):
+    environmentTemplateVersion: EnvironmentTemplateVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentTemplateVersion`:
-  [EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrepositoryinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRepositoryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateRepositoryInputRequestTypeDef
+
+def get_value() -> CreateRepositoryInputRequestTypeDef:
+    return {
+        "connectionArn": ...,
+        "name": ...,
+        "provider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRepositoryInputRequestTypeDef(TypedDict):
+    connectionArn: str,
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+    encryptionKey: NotRequired[str],
+```
 
-- `connectionArn`: `str`
-- `name`: `str`
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-
-Optional fields:
-
-- `encryptionKey`: `str`
-
-<a id="createrepositoryoutputtypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
 ## CreateRepositoryOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateRepositoryOutputTypeDef
+
+def get_value() -> CreateRepositoryOutputTypeDef:
+    return {
+        "repository": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRepositoryOutputTypeDef(TypedDict):
+    repository: RepositoryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createserviceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RepositoryTypeDef](./type_defs.md#repositorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateServiceInputRequestTypeDef
+
+def get_value() -> CreateServiceInputRequestTypeDef:
+    return {
+        "name": ...,
+        "spec": ...,
+        "templateMajorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceInputRequestTypeDef(TypedDict):
+    name: str,
+    spec: str,
+    templateMajorVersion: str,
+    templateName: str,
+    branchName: NotRequired[str],
+    description: NotRequired[str],
+    repositoryConnectionArn: NotRequired[str],
+    repositoryId: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    templateMinorVersion: NotRequired[str],
+```
 
-- `name`: `str`
-- `spec`: `str`
-- `templateMajorVersion`: `str`
-- `templateName`: `str`
-
-Optional fields:
-
-- `branchName`: `str`
-- `description`: `str`
-- `repositoryConnectionArn`: `str`
-- `repositoryId`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `templateMinorVersion`: `str`
-
-<a id="createserviceoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateServiceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateServiceOutputTypeDef
+
+def get_value() -> CreateServiceOutputTypeDef:
+    return {
+        "service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceOutputTypeDef(TypedDict):
+    service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createservicetemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateServiceTemplateInputRequestTypeDef
+
+def get_value() -> CreateServiceTemplateInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceTemplateInputRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    displayName: NotRequired[str],
+    encryptionKey: NotRequired[str],
+    pipelineProvisioning: NotRequired[ProvisioningType],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `displayName`: `str`
-- `encryptionKey`: `str`
-- `pipelineProvisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createservicetemplateoutputtypedef"></a>
-
+1. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateServiceTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateServiceTemplateOutputTypeDef
+
+def get_value() -> CreateServiceTemplateOutputTypeDef:
+    return {
+        "serviceTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceTemplateOutputTypeDef(TypedDict):
+    serviceTemplate: ServiceTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceTemplate`:
-  [ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createservicetemplateversioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceTemplateVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateServiceTemplateVersionInputRequestTypeDef
+
+def get_value() -> CreateServiceTemplateVersionInputRequestTypeDef:
+    return {
+        "compatibleEnvironmentTemplates": ...,
+        "source": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceTemplateVersionInputRequestTypeDef(TypedDict):
+    compatibleEnvironmentTemplates: Sequence[CompatibleEnvironmentTemplateInputTypeDef],  # (1)
+    source: TemplateVersionSourceInputTypeDef,  # (2)
+    templateName: str,
+    clientToken: NotRequired[str],
+    description: NotRequired[str],
+    majorVersion: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `compatibleEnvironmentTemplates`:
-  `Sequence`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
-- `source`:
-  [TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef)
-- `templateName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `description`: `str`
-- `majorVersion`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createservicetemplateversionoutputtypedef"></a>
-
+1. See [:material-code-braces: CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef) 
+2. See [:material-code-braces: TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateServiceTemplateVersionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateServiceTemplateVersionOutputTypeDef
+
+def get_value() -> CreateServiceTemplateVersionOutputTypeDef:
+    return {
+        "serviceTemplateVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceTemplateVersionOutputTypeDef(TypedDict):
+    serviceTemplateVersion: ServiceTemplateVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceTemplateVersion`:
-  [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtemplatesyncconfiginputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTemplateSyncConfigInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateTemplateSyncConfigInputRequestTypeDef
+
+def get_value() -> CreateTemplateSyncConfigInputRequestTypeDef:
+    return {
+        "branch": ...,
+        "repositoryName": ...,
+        "repositoryProvider": ...,
+        "templateName": ...,
+        "templateType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTemplateSyncConfigInputRequestTypeDef(TypedDict):
+    branch: str,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    templateName: str,
+    templateType: TemplateTypeType,  # (2)
+    subdirectory: NotRequired[str],
+```
 
-- `branch`: `str`
-- `repositoryName`: `str`
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype)
-- `templateName`: `str`
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-
-Optional fields:
-
-- `subdirectory`: `str`
-
-<a id="createtemplatesyncconfigoutputtypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
 ## CreateTemplateSyncConfigOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import CreateTemplateSyncConfigOutputTypeDef
+
+def get_value() -> CreateTemplateSyncConfigOutputTypeDef:
+    return {
+        "templateSyncConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTemplateSyncConfigOutputTypeDef(TypedDict):
+    templateSyncConfig: TemplateSyncConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `templateSyncConfig`:
-  [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteenvironmentaccountconnectioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEnvironmentAccountConnectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteEnvironmentAccountConnectionInputRequestTypeDef
+
+def get_value() -> DeleteEnvironmentAccountConnectionInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="deleteenvironmentaccountconnectionoutputtypedef"></a>
+```python title="Definition"
+class DeleteEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## DeleteEnvironmentAccountConnectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteEnvironmentAccountConnectionOutputTypeDef
+
+def get_value() -> DeleteEnvironmentAccountConnectionOutputTypeDef:
+    return {
+        "environmentAccountConnection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteEnvironmentAccountConnectionOutputTypeDef(TypedDict):
+    environmentAccountConnection: EnvironmentAccountConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentAccountConnection`:
-  [EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteenvironmentinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEnvironmentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteEnvironmentInputRequestTypeDef
+
+def get_value() -> DeleteEnvironmentInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="deleteenvironmentoutputtypedef"></a>
+```python title="Definition"
+class DeleteEnvironmentInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DeleteEnvironmentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteEnvironmentOutputTypeDef
+
+def get_value() -> DeleteEnvironmentOutputTypeDef:
+    return {
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteEnvironmentOutputTypeDef(TypedDict):
+    environment: EnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteenvironmenttemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEnvironmentTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateInputRequestTypeDef
+
+def get_value() -> DeleteEnvironmentTemplateInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="deleteenvironmenttemplateoutputtypedef"></a>
+```python title="Definition"
+class DeleteEnvironmentTemplateInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DeleteEnvironmentTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateOutputTypeDef
+
+def get_value() -> DeleteEnvironmentTemplateOutputTypeDef:
+    return {
+        "environmentTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteEnvironmentTemplateOutputTypeDef(TypedDict):
+    environmentTemplate: EnvironmentTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentTemplate`:
-  [EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteenvironmenttemplateversioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEnvironmentTemplateVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateVersionInputRequestTypeDef
+
+def get_value() -> DeleteEnvironmentTemplateVersionInputRequestTypeDef:
+    return {
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
-
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `templateName`: `str`
-
-<a id="deleteenvironmenttemplateversionoutputtypedef"></a>
+```python title="Definition"
+class DeleteEnvironmentTemplateVersionInputRequestTypeDef(TypedDict):
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+```
 
 ## DeleteEnvironmentTemplateVersionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteEnvironmentTemplateVersionOutputTypeDef
+
+def get_value() -> DeleteEnvironmentTemplateVersionOutputTypeDef:
+    return {
+        "environmentTemplateVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteEnvironmentTemplateVersionOutputTypeDef(TypedDict):
+    environmentTemplateVersion: EnvironmentTemplateVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentTemplateVersion`:
-  [EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleterepositoryinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRepositoryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteRepositoryInputRequestTypeDef
+
+def get_value() -> DeleteRepositoryInputRequestTypeDef:
+    return {
+        "name": ...,
+        "provider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRepositoryInputRequestTypeDef(TypedDict):
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+```
 
-- `name`: `str`
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-
-<a id="deleterepositoryoutputtypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
 ## DeleteRepositoryOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteRepositoryOutputTypeDef
+
+def get_value() -> DeleteRepositoryOutputTypeDef:
+    return {
+        "repository": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRepositoryOutputTypeDef(TypedDict):
+    repository: RepositoryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteserviceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RepositoryTypeDef](./type_defs.md#repositorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteServiceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteServiceInputRequestTypeDef
+
+def get_value() -> DeleteServiceInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="deleteserviceoutputtypedef"></a>
+```python title="Definition"
+class DeleteServiceInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DeleteServiceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteServiceOutputTypeDef
+
+def get_value() -> DeleteServiceOutputTypeDef:
+    return {
+        "service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteServiceOutputTypeDef(TypedDict):
+    service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteservicetemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteServiceTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteServiceTemplateInputRequestTypeDef
+
+def get_value() -> DeleteServiceTemplateInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="deleteservicetemplateoutputtypedef"></a>
+```python title="Definition"
+class DeleteServiceTemplateInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DeleteServiceTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteServiceTemplateOutputTypeDef
+
+def get_value() -> DeleteServiceTemplateOutputTypeDef:
+    return {
+        "serviceTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteServiceTemplateOutputTypeDef(TypedDict):
+    serviceTemplate: ServiceTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceTemplate`:
-  [ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteservicetemplateversioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteServiceTemplateVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteServiceTemplateVersionInputRequestTypeDef
+
+def get_value() -> DeleteServiceTemplateVersionInputRequestTypeDef:
+    return {
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
-
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `templateName`: `str`
-
-<a id="deleteservicetemplateversionoutputtypedef"></a>
+```python title="Definition"
+class DeleteServiceTemplateVersionInputRequestTypeDef(TypedDict):
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+```
 
 ## DeleteServiceTemplateVersionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteServiceTemplateVersionOutputTypeDef
+
+def get_value() -> DeleteServiceTemplateVersionOutputTypeDef:
+    return {
+        "serviceTemplateVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteServiceTemplateVersionOutputTypeDef(TypedDict):
+    serviceTemplateVersion: ServiceTemplateVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceTemplateVersion`:
-  [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetemplatesyncconfiginputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTemplateSyncConfigInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteTemplateSyncConfigInputRequestTypeDef
+
+def get_value() -> DeleteTemplateSyncConfigInputRequestTypeDef:
+    return {
+        "templateName": ...,
+        "templateType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTemplateSyncConfigInputRequestTypeDef(TypedDict):
+    templateName: str,
+    templateType: TemplateTypeType,  # (1)
+```
 
-- `templateName`: `str`
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-
-<a id="deletetemplatesyncconfigoutputtypedef"></a>
-
+1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
 ## DeleteTemplateSyncConfigOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import DeleteTemplateSyncConfigOutputTypeDef
+
+def get_value() -> DeleteTemplateSyncConfigOutputTypeDef:
+    return {
+        "templateSyncConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTemplateSyncConfigOutputTypeDef(TypedDict):
+    templateSyncConfig: TemplateSyncConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `templateSyncConfig`:
-  [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmentaccountconnectionsummarytypedef"></a>
-
+1. See [:material-code-braces: TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentAccountConnectionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import EnvironmentAccountConnectionSummaryTypeDef
+
+def get_value() -> EnvironmentAccountConnectionSummaryTypeDef:
+    return {
+        "arn": ...,
+        "environmentAccountId": ...,
+        "environmentName": ...,
+        "id": ...,
+        "lastModifiedAt": ...,
+        "managementAccountId": ...,
+        "requestedAt": ...,
+        "roleArn": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentAccountConnectionSummaryTypeDef(TypedDict):
+    arn: str,
+    environmentAccountId: str,
+    environmentName: str,
+    id: str,
+    lastModifiedAt: datetime,
+    managementAccountId: str,
+    requestedAt: datetime,
+    roleArn: str,
+    status: EnvironmentAccountConnectionStatusType,  # (1)
+```
 
-- `arn`: `str`
-- `environmentAccountId`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-- `lastModifiedAt`: `datetime`
-- `managementAccountId`: `str`
-- `requestedAt`: `datetime`
-- `roleArn`: `str`
-- `status`:
-  [EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)
-
-<a id="environmentaccountconnectiontypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype) 
 ## EnvironmentAccountConnectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import EnvironmentAccountConnectionTypeDef
+
+def get_value() -> EnvironmentAccountConnectionTypeDef:
+    return {
+        "arn": ...,
+        "environmentAccountId": ...,
+        "environmentName": ...,
+        "id": ...,
+        "lastModifiedAt": ...,
+        "managementAccountId": ...,
+        "requestedAt": ...,
+        "roleArn": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentAccountConnectionTypeDef(TypedDict):
+    arn: str,
+    environmentAccountId: str,
+    environmentName: str,
+    id: str,
+    lastModifiedAt: datetime,
+    managementAccountId: str,
+    requestedAt: datetime,
+    roleArn: str,
+    status: EnvironmentAccountConnectionStatusType,  # (1)
+```
 
-- `arn`: `str`
-- `environmentAccountId`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-- `lastModifiedAt`: `datetime`
-- `managementAccountId`: `str`
-- `requestedAt`: `datetime`
-- `roleArn`: `str`
-- `status`:
-  [EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)
-
-<a id="environmentsummarytypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype) 
 ## EnvironmentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import EnvironmentSummaryTypeDef
+
+def get_value() -> EnvironmentSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "deploymentStatus": ...,
+        "lastDeploymentAttemptedAt": ...,
+        "lastDeploymentSucceededAt": ...,
+        "name": ...,
+        "templateMajorVersion": ...,
+        "templateMinorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    deploymentStatus: DeploymentStatusType,  # (1)
+    lastDeploymentAttemptedAt: datetime,
+    lastDeploymentSucceededAt: datetime,
+    name: str,
+    templateMajorVersion: str,
+    templateMinorVersion: str,
+    templateName: str,
+    deploymentStatusMessage: NotRequired[str],
+    description: NotRequired[str],
+    environmentAccountConnectionId: NotRequired[str],
+    environmentAccountId: NotRequired[str],
+    protonServiceRoleArn: NotRequired[str],
+    provisioning: NotRequired[ProvisioningType],  # (2)
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `deploymentStatus`:
-  [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `lastDeploymentAttemptedAt`: `datetime`
-- `lastDeploymentSucceededAt`: `datetime`
-- `name`: `str`
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
-- `templateName`: `str`
-
-Optional fields:
-
-- `deploymentStatusMessage`: `str`
-- `description`: `str`
-- `environmentAccountConnectionId`: `str`
-- `environmentAccountId`: `str`
-- `protonServiceRoleArn`: `str`
-- `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-
-<a id="environmenttemplatefiltertypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+2. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
 ## EnvironmentTemplateFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import EnvironmentTemplateFilterTypeDef
+
+def get_value() -> EnvironmentTemplateFilterTypeDef:
+    return {
+        "majorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
-
-- `majorVersion`: `str`
-- `templateName`: `str`
-
-<a id="environmenttemplatesummarytypedef"></a>
+```python title="Definition"
+class EnvironmentTemplateFilterTypeDef(TypedDict):
+    majorVersion: str,
+    templateName: str,
+```
 
 ## EnvironmentTemplateSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import EnvironmentTemplateSummaryTypeDef
+
+def get_value() -> EnvironmentTemplateSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentTemplateSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    name: str,
+    description: NotRequired[str],
+    displayName: NotRequired[str],
+    provisioning: NotRequired[ProvisioningType],  # (1)
+    recommendedVersion: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `displayName`: `str`
-- `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-- `recommendedVersion`: `str`
-
-<a id="environmenttemplatetypedef"></a>
-
+1. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
 ## EnvironmentTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import EnvironmentTemplateTypeDef
+
+def get_value() -> EnvironmentTemplateTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentTemplateTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    name: str,
+    description: NotRequired[str],
+    displayName: NotRequired[str],
+    encryptionKey: NotRequired[str],
+    provisioning: NotRequired[ProvisioningType],  # (1)
+    recommendedVersion: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `displayName`: `str`
-- `encryptionKey`: `str`
-- `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-- `recommendedVersion`: `str`
-
-<a id="environmenttemplateversionsummarytypedef"></a>
-
+1. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
 ## EnvironmentTemplateVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import EnvironmentTemplateVersionSummaryTypeDef
+
+def get_value() -> EnvironmentTemplateVersionSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "status": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentTemplateVersionSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    majorVersion: str,
+    minorVersion: str,
+    status: TemplateVersionStatusType,  # (1)
+    templateName: str,
+    description: NotRequired[str],
+    recommendedMinorVersion: NotRequired[str],
+    statusMessage: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `status`:
-  [TemplateVersionStatusType](./literals.md#templateversionstatustype)
-- `templateName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `recommendedMinorVersion`: `str`
-- `statusMessage`: `str`
-
-<a id="environmenttemplateversiontypedef"></a>
-
+1. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
 ## EnvironmentTemplateVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import EnvironmentTemplateVersionTypeDef
+
+def get_value() -> EnvironmentTemplateVersionTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "status": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentTemplateVersionTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    majorVersion: str,
+    minorVersion: str,
+    status: TemplateVersionStatusType,  # (1)
+    templateName: str,
+    description: NotRequired[str],
+    recommendedMinorVersion: NotRequired[str],
+    schema: NotRequired[str],
+    statusMessage: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `status`:
-  [TemplateVersionStatusType](./literals.md#templateversionstatustype)
-- `templateName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `recommendedMinorVersion`: `str`
-- `schema`: `str`
-- `statusMessage`: `str`
-
-<a id="environmenttypedef"></a>
-
+1. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
 ## EnvironmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import EnvironmentTypeDef
+
+def get_value() -> EnvironmentTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "deploymentStatus": ...,
+        "lastDeploymentAttemptedAt": ...,
+        "lastDeploymentSucceededAt": ...,
+        "name": ...,
+        "templateMajorVersion": ...,
+        "templateMinorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    deploymentStatus: DeploymentStatusType,  # (1)
+    lastDeploymentAttemptedAt: datetime,
+    lastDeploymentSucceededAt: datetime,
+    name: str,
+    templateMajorVersion: str,
+    templateMinorVersion: str,
+    templateName: str,
+    deploymentStatusMessage: NotRequired[str],
+    description: NotRequired[str],
+    environmentAccountConnectionId: NotRequired[str],
+    environmentAccountId: NotRequired[str],
+    protonServiceRoleArn: NotRequired[str],
+    provisioning: NotRequired[ProvisioningType],  # (2)
+    provisioningRepository: NotRequired[RepositoryBranchTypeDef],  # (3)
+    spec: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `deploymentStatus`:
-  [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `lastDeploymentAttemptedAt`: `datetime`
-- `lastDeploymentSucceededAt`: `datetime`
-- `name`: `str`
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
-- `templateName`: `str`
-
-Optional fields:
-
-- `deploymentStatusMessage`: `str`
-- `description`: `str`
-- `environmentAccountConnectionId`: `str`
-- `environmentAccountId`: `str`
-- `protonServiceRoleArn`: `str`
-- `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-- `provisioningRepository`:
-  [RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef)
-- `spec`: `str`
-
-<a id="getaccountsettingsoutputtypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+2. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
+3. See [:material-code-braces: RepositoryBranchTypeDef](./type_defs.md#repositorybranchtypedef) 
 ## GetAccountSettingsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetAccountSettingsOutputTypeDef
+
+def get_value() -> GetAccountSettingsOutputTypeDef:
+    return {
+        "accountSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountSettingsOutputTypeDef(TypedDict):
+    accountSettings: AccountSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `accountSettings`:
-  [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getenvironmentaccountconnectioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEnvironmentAccountConnectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetEnvironmentAccountConnectionInputRequestTypeDef
+
+def get_value() -> GetEnvironmentAccountConnectionInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="getenvironmentaccountconnectionoutputtypedef"></a>
+```python title="Definition"
+class GetEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## GetEnvironmentAccountConnectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetEnvironmentAccountConnectionOutputTypeDef
+
+def get_value() -> GetEnvironmentAccountConnectionOutputTypeDef:
+    return {
+        "environmentAccountConnection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEnvironmentAccountConnectionOutputTypeDef(TypedDict):
+    environmentAccountConnection: EnvironmentAccountConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentAccountConnection`:
-  [EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetEnvironmentInputEnvironmentDeployedWaitTypeDef
 
-<a id="getenvironmentinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetEnvironmentInputEnvironmentDeployedWaitTypeDef
 
+def get_value() -> GetEnvironmentInputEnvironmentDeployedWaitTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetEnvironmentInputEnvironmentDeployedWaitTypeDef(TypedDict):
+    name: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetEnvironmentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetEnvironmentInputRequestTypeDef
+
+def get_value() -> GetEnvironmentInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="getenvironmentoutputtypedef"></a>
+```python title="Definition"
+class GetEnvironmentInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## GetEnvironmentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetEnvironmentOutputTypeDef
+
+def get_value() -> GetEnvironmentOutputTypeDef:
+    return {
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEnvironmentOutputTypeDef(TypedDict):
+    environment: EnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getenvironmenttemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEnvironmentTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetEnvironmentTemplateInputRequestTypeDef
+
+def get_value() -> GetEnvironmentTemplateInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="getenvironmenttemplateoutputtypedef"></a>
+```python title="Definition"
+class GetEnvironmentTemplateInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## GetEnvironmentTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetEnvironmentTemplateOutputTypeDef
+
+def get_value() -> GetEnvironmentTemplateOutputTypeDef:
+    return {
+        "environmentTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEnvironmentTemplateOutputTypeDef(TypedDict):
+    environmentTemplate: EnvironmentTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentTemplate`:
-  [EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetEnvironmentTemplateVersionInputEnvironmentTemplateVersionRegisteredWaitTypeDef
 
-<a id="getenvironmenttemplateversioninputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetEnvironmentTemplateVersionInputEnvironmentTemplateVersionRegisteredWaitTypeDef
 
+def get_value() -> GetEnvironmentTemplateVersionInputEnvironmentTemplateVersionRegisteredWaitTypeDef:
+    return {
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "templateName": ...,
+    }
+```
+
+```python title="Definition"
+class GetEnvironmentTemplateVersionInputEnvironmentTemplateVersionRegisteredWaitTypeDef(TypedDict):
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetEnvironmentTemplateVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetEnvironmentTemplateVersionInputRequestTypeDef
+
+def get_value() -> GetEnvironmentTemplateVersionInputRequestTypeDef:
+    return {
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
-
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `templateName`: `str`
-
-<a id="getenvironmenttemplateversionoutputtypedef"></a>
+```python title="Definition"
+class GetEnvironmentTemplateVersionInputRequestTypeDef(TypedDict):
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+```
 
 ## GetEnvironmentTemplateVersionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetEnvironmentTemplateVersionOutputTypeDef
+
+def get_value() -> GetEnvironmentTemplateVersionOutputTypeDef:
+    return {
+        "environmentTemplateVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEnvironmentTemplateVersionOutputTypeDef(TypedDict):
+    environmentTemplateVersion: EnvironmentTemplateVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentTemplateVersion`:
-  [EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrepositoryinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRepositoryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetRepositoryInputRequestTypeDef
+
+def get_value() -> GetRepositoryInputRequestTypeDef:
+    return {
+        "name": ...,
+        "provider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRepositoryInputRequestTypeDef(TypedDict):
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+```
 
-- `name`: `str`
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-
-<a id="getrepositoryoutputtypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
 ## GetRepositoryOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetRepositoryOutputTypeDef
+
+def get_value() -> GetRepositoryOutputTypeDef:
+    return {
+        "repository": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRepositoryOutputTypeDef(TypedDict):
+    repository: RepositoryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrepositorysyncstatusinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RepositoryTypeDef](./type_defs.md#repositorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRepositorySyncStatusInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetRepositorySyncStatusInputRequestTypeDef
+
+def get_value() -> GetRepositorySyncStatusInputRequestTypeDef:
+    return {
+        "branch": ...,
+        "repositoryName": ...,
+        "repositoryProvider": ...,
+        "syncType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRepositorySyncStatusInputRequestTypeDef(TypedDict):
+    branch: str,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    syncType: SyncTypeType,  # (2)
+```
 
-- `branch`: `str`
-- `repositoryName`: `str`
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype)
-- `syncType`: `Literal['TEMPLATE_SYNC']` (see
-  [SyncTypeType](./literals.md#synctypetype))
-
-<a id="getrepositorysyncstatusoutputtypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: SyncTypeType](./literals.md#synctypetype) 
 ## GetRepositorySyncStatusOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetRepositorySyncStatusOutputTypeDef
+
+def get_value() -> GetRepositorySyncStatusOutputTypeDef:
+    return {
+        "latestSync": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRepositorySyncStatusOutputTypeDef(TypedDict):
+    latestSync: RepositorySyncAttemptTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `latestSync`:
-  [RepositorySyncAttemptTypeDef](./type_defs.md#repositorysyncattempttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getserviceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RepositorySyncAttemptTypeDef](./type_defs.md#repositorysyncattempttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetServiceInputRequestTypeDef
+
+def get_value() -> GetServiceInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
-- `name`: `str`
+## GetServiceInputServiceCreatedWaitTypeDef
 
-<a id="getserviceinstanceinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetServiceInputServiceCreatedWaitTypeDef
 
+def get_value() -> GetServiceInputServiceCreatedWaitTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetServiceInputServiceCreatedWaitTypeDef(TypedDict):
+    name: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetServiceInputServiceDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetServiceInputServiceDeletedWaitTypeDef
+
+def get_value() -> GetServiceInputServiceDeletedWaitTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetServiceInputServiceDeletedWaitTypeDef(TypedDict):
+    name: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetServiceInputServicePipelineDeployedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetServiceInputServicePipelineDeployedWaitTypeDef
+
+def get_value() -> GetServiceInputServicePipelineDeployedWaitTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetServiceInputServicePipelineDeployedWaitTypeDef(TypedDict):
+    name: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetServiceInputServiceUpdatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetServiceInputServiceUpdatedWaitTypeDef
+
+def get_value() -> GetServiceInputServiceUpdatedWaitTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class GetServiceInputServiceUpdatedWaitTypeDef(TypedDict):
+    name: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetServiceInstanceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetServiceInstanceInputRequestTypeDef
+
+def get_value() -> GetServiceInstanceInputRequestTypeDef:
+    return {
+        "name": ...,
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceInstanceInputRequestTypeDef(TypedDict):
+    name: str,
+    serviceName: str,
+```
 
-- `name`: `str`
-- `serviceName`: `str`
+## GetServiceInstanceInputServiceInstanceDeployedWaitTypeDef
 
-<a id="getserviceinstanceoutputtypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetServiceInstanceInputServiceInstanceDeployedWaitTypeDef
 
+def get_value() -> GetServiceInstanceInputServiceInstanceDeployedWaitTypeDef:
+    return {
+        "name": ...,
+        "serviceName": ...,
+    }
+```
+
+```python title="Definition"
+class GetServiceInstanceInputServiceInstanceDeployedWaitTypeDef(TypedDict):
+    name: str,
+    serviceName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetServiceInstanceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetServiceInstanceOutputTypeDef
+
+def get_value() -> GetServiceInstanceOutputTypeDef:
+    return {
+        "serviceInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceInstanceOutputTypeDef(TypedDict):
+    serviceInstance: ServiceInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceInstance`:
-  [ServiceInstanceTypeDef](./type_defs.md#serviceinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getserviceoutputtypedef"></a>
-
+1. See [:material-code-braces: ServiceInstanceTypeDef](./type_defs.md#serviceinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetServiceOutputTypeDef
+
+def get_value() -> GetServiceOutputTypeDef:
+    return {
+        "service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceOutputTypeDef(TypedDict):
+    service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservicetemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetServiceTemplateInputRequestTypeDef
+
+def get_value() -> GetServiceTemplateInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="getservicetemplateoutputtypedef"></a>
+```python title="Definition"
+class GetServiceTemplateInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## GetServiceTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetServiceTemplateOutputTypeDef
+
+def get_value() -> GetServiceTemplateOutputTypeDef:
+    return {
+        "serviceTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceTemplateOutputTypeDef(TypedDict):
+    serviceTemplate: ServiceTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceTemplate`:
-  [ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservicetemplateversioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceTemplateVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetServiceTemplateVersionInputRequestTypeDef
+
+def get_value() -> GetServiceTemplateVersionInputRequestTypeDef:
+    return {
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceTemplateVersionInputRequestTypeDef(TypedDict):
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+```
 
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `templateName`: `str`
+## GetServiceTemplateVersionInputServiceTemplateVersionRegisteredWaitTypeDef
 
-<a id="getservicetemplateversionoutputtypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import GetServiceTemplateVersionInputServiceTemplateVersionRegisteredWaitTypeDef
 
+def get_value() -> GetServiceTemplateVersionInputServiceTemplateVersionRegisteredWaitTypeDef:
+    return {
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "templateName": ...,
+    }
+```
+
+```python title="Definition"
+class GetServiceTemplateVersionInputServiceTemplateVersionRegisteredWaitTypeDef(TypedDict):
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetServiceTemplateVersionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetServiceTemplateVersionOutputTypeDef
+
+def get_value() -> GetServiceTemplateVersionOutputTypeDef:
+    return {
+        "serviceTemplateVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceTemplateVersionOutputTypeDef(TypedDict):
+    serviceTemplateVersion: ServiceTemplateVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceTemplateVersion`:
-  [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettemplatesyncconfiginputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTemplateSyncConfigInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetTemplateSyncConfigInputRequestTypeDef
+
+def get_value() -> GetTemplateSyncConfigInputRequestTypeDef:
+    return {
+        "templateName": ...,
+        "templateType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemplateSyncConfigInputRequestTypeDef(TypedDict):
+    templateName: str,
+    templateType: TemplateTypeType,  # (1)
+```
 
-- `templateName`: `str`
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-
-<a id="gettemplatesyncconfigoutputtypedef"></a>
-
+1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
 ## GetTemplateSyncConfigOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetTemplateSyncConfigOutputTypeDef
+
+def get_value() -> GetTemplateSyncConfigOutputTypeDef:
+    return {
+        "templateSyncConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemplateSyncConfigOutputTypeDef(TypedDict):
+    templateSyncConfig: TemplateSyncConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `templateSyncConfig`:
-  [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettemplatesyncstatusinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTemplateSyncStatusInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetTemplateSyncStatusInputRequestTypeDef
+
+def get_value() -> GetTemplateSyncStatusInputRequestTypeDef:
+    return {
+        "templateName": ...,
+        "templateType": ...,
+        "templateVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemplateSyncStatusInputRequestTypeDef(TypedDict):
+    templateName: str,
+    templateType: TemplateTypeType,  # (1)
+    templateVersion: str,
+```
 
-- `templateName`: `str`
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-- `templateVersion`: `str`
-
-<a id="gettemplatesyncstatusoutputtypedef"></a>
-
+1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
 ## GetTemplateSyncStatusOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import GetTemplateSyncStatusOutputTypeDef
+
+def get_value() -> GetTemplateSyncStatusOutputTypeDef:
+    return {
+        "desiredState": ...,
+        "latestSuccessfulSync": ...,
+        "latestSync": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemplateSyncStatusOutputTypeDef(TypedDict):
+    desiredState: RevisionTypeDef,  # (1)
+    latestSuccessfulSync: ResourceSyncAttemptTypeDef,  # (2)
+    latestSync: ResourceSyncAttemptTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `desiredState`: [RevisionTypeDef](./type_defs.md#revisiontypedef)
-- `latestSuccessfulSync`:
-  [ResourceSyncAttemptTypeDef](./type_defs.md#resourcesyncattempttypedef)
-- `latestSync`:
-  [ResourceSyncAttemptTypeDef](./type_defs.md#resourcesyncattempttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RevisionTypeDef](./type_defs.md#revisiontypedef) 
+2. See [:material-code-braces: ResourceSyncAttemptTypeDef](./type_defs.md#resourcesyncattempttypedef) 
+3. See [:material-code-braces: ResourceSyncAttemptTypeDef](./type_defs.md#resourcesyncattempttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnvironmentAccountConnectionsInputListEnvironmentAccountConnectionsPaginateTypeDef
 
-<a id="listenvironmentaccountconnectionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListEnvironmentAccountConnectionsInputListEnvironmentAccountConnectionsPaginateTypeDef
 
+def get_value() -> ListEnvironmentAccountConnectionsInputListEnvironmentAccountConnectionsPaginateTypeDef:
+    return {
+        "requestedBy": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentAccountConnectionsInputListEnvironmentAccountConnectionsPaginateTypeDef(TypedDict):
+    requestedBy: EnvironmentAccountConnectionRequesterAccountTypeType,  # (1)
+    environmentName: NotRequired[str],
+    statuses: NotRequired[Sequence[EnvironmentAccountConnectionStatusType]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: EnvironmentAccountConnectionRequesterAccountTypeType](./literals.md#environmentaccountconnectionrequesteraccounttypetype) 
+2. See [:material-code-brackets: EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentAccountConnectionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentAccountConnectionsInputRequestTypeDef
+
+def get_value() -> ListEnvironmentAccountConnectionsInputRequestTypeDef:
+    return {
+        "requestedBy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentAccountConnectionsInputRequestTypeDef(TypedDict):
+    requestedBy: EnvironmentAccountConnectionRequesterAccountTypeType,  # (1)
+    environmentName: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    statuses: NotRequired[Sequence[EnvironmentAccountConnectionStatusType]],  # (2)
+```
 
-- `requestedBy`:
-  [EnvironmentAccountConnectionRequesterAccountTypeType](./literals.md#environmentaccountconnectionrequesteraccounttypetype)
-
-Optional fields:
-
-- `environmentName`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `statuses`:
-  `Sequence`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
-
-<a id="listenvironmentaccountconnectionsoutputtypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentAccountConnectionRequesterAccountTypeType](./literals.md#environmentaccountconnectionrequesteraccounttypetype) 
+2. See [:material-code-brackets: EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype) 
 ## ListEnvironmentAccountConnectionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentAccountConnectionsOutputTypeDef
+
+def get_value() -> ListEnvironmentAccountConnectionsOutputTypeDef:
+    return {
+        "environmentAccountConnections": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentAccountConnectionsOutputTypeDef(TypedDict):
+    environmentAccountConnections: List[EnvironmentAccountConnectionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentAccountConnections`:
-  `List`\[[EnvironmentAccountConnectionSummaryTypeDef](./type_defs.md#environmentaccountconnectionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentAccountConnectionSummaryTypeDef](./type_defs.md#environmentaccountconnectionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnvironmentOutputsInputListEnvironmentOutputsPaginateTypeDef
 
-<a id="listenvironmentoutputsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListEnvironmentOutputsInputListEnvironmentOutputsPaginateTypeDef
 
+def get_value() -> ListEnvironmentOutputsInputListEnvironmentOutputsPaginateTypeDef:
+    return {
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentOutputsInputListEnvironmentOutputsPaginateTypeDef(TypedDict):
+    environmentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentOutputsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentOutputsInputRequestTypeDef
+
+def get_value() -> ListEnvironmentOutputsInputRequestTypeDef:
+    return {
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `environmentName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listenvironmentoutputsoutputtypedef"></a>
+```python title="Definition"
+class ListEnvironmentOutputsInputRequestTypeDef(TypedDict):
+    environmentName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListEnvironmentOutputsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentOutputsOutputTypeDef
+
+def get_value() -> ListEnvironmentOutputsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "outputs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentOutputsOutputTypeDef(TypedDict):
+    nextToken: str,
+    outputs: List[OutputTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnvironmentProvisionedResourcesInputListEnvironmentProvisionedResourcesPaginateTypeDef
 
-<a id="listenvironmentprovisionedresourcesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListEnvironmentProvisionedResourcesInputListEnvironmentProvisionedResourcesPaginateTypeDef
 
+def get_value() -> ListEnvironmentProvisionedResourcesInputListEnvironmentProvisionedResourcesPaginateTypeDef:
+    return {
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentProvisionedResourcesInputListEnvironmentProvisionedResourcesPaginateTypeDef(TypedDict):
+    environmentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentProvisionedResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentProvisionedResourcesInputRequestTypeDef
+
+def get_value() -> ListEnvironmentProvisionedResourcesInputRequestTypeDef:
+    return {
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `environmentName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listenvironmentprovisionedresourcesoutputtypedef"></a>
+```python title="Definition"
+class ListEnvironmentProvisionedResourcesInputRequestTypeDef(TypedDict):
+    environmentName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListEnvironmentProvisionedResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentProvisionedResourcesOutputTypeDef
+
+def get_value() -> ListEnvironmentProvisionedResourcesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "provisionedResources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentProvisionedResourcesOutputTypeDef(TypedDict):
+    nextToken: str,
+    provisionedResources: List[ProvisionedResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `provisionedResources`:
-  `List`\[[ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnvironmentTemplateVersionsInputListEnvironmentTemplateVersionsPaginateTypeDef
 
-<a id="listenvironmenttemplateversionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListEnvironmentTemplateVersionsInputListEnvironmentTemplateVersionsPaginateTypeDef
 
+def get_value() -> ListEnvironmentTemplateVersionsInputListEnvironmentTemplateVersionsPaginateTypeDef:
+    return {
+        "templateName": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentTemplateVersionsInputListEnvironmentTemplateVersionsPaginateTypeDef(TypedDict):
+    templateName: str,
+    majorVersion: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentTemplateVersionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentTemplateVersionsInputRequestTypeDef
+
+def get_value() -> ListEnvironmentTemplateVersionsInputRequestTypeDef:
+    return {
+        "templateName": ...,
+    }
 ```
 
-Required fields:
-
-- `templateName`: `str`
-
-Optional fields:
-
-- `majorVersion`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listenvironmenttemplateversionsoutputtypedef"></a>
+```python title="Definition"
+class ListEnvironmentTemplateVersionsInputRequestTypeDef(TypedDict):
+    templateName: str,
+    majorVersion: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListEnvironmentTemplateVersionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentTemplateVersionsOutputTypeDef
+
+def get_value() -> ListEnvironmentTemplateVersionsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "templateVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentTemplateVersionsOutputTypeDef(TypedDict):
+    nextToken: str,
+    templateVersions: List[EnvironmentTemplateVersionSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `templateVersions`:
-  `List`\[[EnvironmentTemplateVersionSummaryTypeDef](./type_defs.md#environmenttemplateversionsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentTemplateVersionSummaryTypeDef](./type_defs.md#environmenttemplateversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnvironmentTemplatesInputListEnvironmentTemplatesPaginateTypeDef
 
-<a id="listenvironmenttemplatesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListEnvironmentTemplatesInputListEnvironmentTemplatesPaginateTypeDef
 
+def get_value() -> ListEnvironmentTemplatesInputListEnvironmentTemplatesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentTemplatesInputListEnvironmentTemplatesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentTemplatesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentTemplatesInputRequestTypeDef
+
+def get_value() -> ListEnvironmentTemplatesInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listenvironmenttemplatesoutputtypedef"></a>
+```python title="Definition"
+class ListEnvironmentTemplatesInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListEnvironmentTemplatesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentTemplatesOutputTypeDef
+
+def get_value() -> ListEnvironmentTemplatesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "templates": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentTemplatesOutputTypeDef(TypedDict):
+    nextToken: str,
+    templates: List[EnvironmentTemplateSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `templates`:
-  `List`\[[EnvironmentTemplateSummaryTypeDef](./type_defs.md#environmenttemplatesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentTemplateSummaryTypeDef](./type_defs.md#environmenttemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnvironmentsInputListEnvironmentsPaginateTypeDef
 
-<a id="listenvironmentsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListEnvironmentsInputListEnvironmentsPaginateTypeDef
 
+def get_value() -> ListEnvironmentsInputListEnvironmentsPaginateTypeDef:
+    return {
+        "environmentTemplates": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentsInputListEnvironmentsPaginateTypeDef(TypedDict):
+    environmentTemplates: NotRequired[Sequence[EnvironmentTemplateFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentsInputRequestTypeDef
+
+def get_value() -> ListEnvironmentsInputRequestTypeDef:
+    return {
+        "environmentTemplates": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListEnvironmentsInputRequestTypeDef(TypedDict):
+    environmentTemplates: NotRequired[Sequence[EnvironmentTemplateFilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `environmentTemplates`:
-  `Sequence`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listenvironmentsoutputtypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef) 
 ## ListEnvironmentsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListEnvironmentsOutputTypeDef
+
+def get_value() -> ListEnvironmentsOutputTypeDef:
+    return {
+        "environments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentsOutputTypeDef(TypedDict):
+    environments: List[EnvironmentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environments`:
-  `List`\[[EnvironmentSummaryTypeDef](./type_defs.md#environmentsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentSummaryTypeDef](./type_defs.md#environmentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRepositoriesInputListRepositoriesPaginateTypeDef
 
-<a id="listrepositoriesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListRepositoriesInputListRepositoriesPaginateTypeDef
 
+def get_value() -> ListRepositoriesInputListRepositoriesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListRepositoriesInputListRepositoriesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRepositoriesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListRepositoriesInputRequestTypeDef
+
+def get_value() -> ListRepositoriesInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listrepositoriesoutputtypedef"></a>
+```python title="Definition"
+class ListRepositoriesInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListRepositoriesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListRepositoriesOutputTypeDef
+
+def get_value() -> ListRepositoriesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "repositories": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRepositoriesOutputTypeDef(TypedDict):
+    nextToken: str,
+    repositories: List[RepositorySummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `repositories`:
-  `List`\[[RepositorySummaryTypeDef](./type_defs.md#repositorysummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RepositorySummaryTypeDef](./type_defs.md#repositorysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRepositorySyncDefinitionsInputListRepositorySyncDefinitionsPaginateTypeDef
 
-<a id="listrepositorysyncdefinitionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListRepositorySyncDefinitionsInputListRepositorySyncDefinitionsPaginateTypeDef
 
+def get_value() -> ListRepositorySyncDefinitionsInputListRepositorySyncDefinitionsPaginateTypeDef:
+    return {
+        "repositoryName": ...,
+        "repositoryProvider": ...,
+        "syncType": ...,
+    }
+```
+
+```python title="Definition"
+class ListRepositorySyncDefinitionsInputListRepositorySyncDefinitionsPaginateTypeDef(TypedDict):
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    syncType: SyncTypeType,  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: SyncTypeType](./literals.md#synctypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRepositorySyncDefinitionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListRepositorySyncDefinitionsInputRequestTypeDef
+
+def get_value() -> ListRepositorySyncDefinitionsInputRequestTypeDef:
+    return {
+        "repositoryName": ...,
+        "repositoryProvider": ...,
+        "syncType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRepositorySyncDefinitionsInputRequestTypeDef(TypedDict):
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    syncType: SyncTypeType,  # (2)
+    nextToken: NotRequired[str],
+```
 
-- `repositoryName`: `str`
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype)
-- `syncType`: `Literal['TEMPLATE_SYNC']` (see
-  [SyncTypeType](./literals.md#synctypetype))
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listrepositorysyncdefinitionsoutputtypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: SyncTypeType](./literals.md#synctypetype) 
 ## ListRepositorySyncDefinitionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListRepositorySyncDefinitionsOutputTypeDef
+
+def get_value() -> ListRepositorySyncDefinitionsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "syncDefinitions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRepositorySyncDefinitionsOutputTypeDef(TypedDict):
+    nextToken: str,
+    syncDefinitions: List[RepositorySyncDefinitionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `syncDefinitions`:
-  `List`\[[RepositorySyncDefinitionTypeDef](./type_defs.md#repositorysyncdefinitiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RepositorySyncDefinitionTypeDef](./type_defs.md#repositorysyncdefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServiceInstanceOutputsInputListServiceInstanceOutputsPaginateTypeDef
 
-<a id="listserviceinstanceoutputsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServiceInstanceOutputsInputListServiceInstanceOutputsPaginateTypeDef
 
+def get_value() -> ListServiceInstanceOutputsInputListServiceInstanceOutputsPaginateTypeDef:
+    return {
+        "serviceInstanceName": ...,
+        "serviceName": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceInstanceOutputsInputListServiceInstanceOutputsPaginateTypeDef(TypedDict):
+    serviceInstanceName: str,
+    serviceName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServiceInstanceOutputsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceInstanceOutputsInputRequestTypeDef
+
+def get_value() -> ListServiceInstanceOutputsInputRequestTypeDef:
+    return {
+        "serviceInstanceName": ...,
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
-
-- `serviceInstanceName`: `str`
-- `serviceName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listserviceinstanceoutputsoutputtypedef"></a>
+```python title="Definition"
+class ListServiceInstanceOutputsInputRequestTypeDef(TypedDict):
+    serviceInstanceName: str,
+    serviceName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListServiceInstanceOutputsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceInstanceOutputsOutputTypeDef
+
+def get_value() -> ListServiceInstanceOutputsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "outputs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServiceInstanceOutputsOutputTypeDef(TypedDict):
+    nextToken: str,
+    outputs: List[OutputTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServiceInstanceProvisionedResourcesInputListServiceInstanceProvisionedResourcesPaginateTypeDef
 
-<a id="listserviceinstanceprovisionedresourcesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServiceInstanceProvisionedResourcesInputListServiceInstanceProvisionedResourcesPaginateTypeDef
 
+def get_value() -> ListServiceInstanceProvisionedResourcesInputListServiceInstanceProvisionedResourcesPaginateTypeDef:
+    return {
+        "serviceInstanceName": ...,
+        "serviceName": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceInstanceProvisionedResourcesInputListServiceInstanceProvisionedResourcesPaginateTypeDef(TypedDict):
+    serviceInstanceName: str,
+    serviceName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServiceInstanceProvisionedResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceInstanceProvisionedResourcesInputRequestTypeDef
+
+def get_value() -> ListServiceInstanceProvisionedResourcesInputRequestTypeDef:
+    return {
+        "serviceInstanceName": ...,
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
-
-- `serviceInstanceName`: `str`
-- `serviceName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listserviceinstanceprovisionedresourcesoutputtypedef"></a>
+```python title="Definition"
+class ListServiceInstanceProvisionedResourcesInputRequestTypeDef(TypedDict):
+    serviceInstanceName: str,
+    serviceName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListServiceInstanceProvisionedResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceInstanceProvisionedResourcesOutputTypeDef
+
+def get_value() -> ListServiceInstanceProvisionedResourcesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "provisionedResources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServiceInstanceProvisionedResourcesOutputTypeDef(TypedDict):
+    nextToken: str,
+    provisionedResources: List[ProvisionedResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `provisionedResources`:
-  `List`\[[ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServiceInstancesInputListServiceInstancesPaginateTypeDef
 
-<a id="listserviceinstancesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServiceInstancesInputListServiceInstancesPaginateTypeDef
 
+def get_value() -> ListServiceInstancesInputListServiceInstancesPaginateTypeDef:
+    return {
+        "serviceName": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceInstancesInputListServiceInstancesPaginateTypeDef(TypedDict):
+    serviceName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServiceInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceInstancesInputRequestTypeDef
+
+def get_value() -> ListServiceInstancesInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `serviceName`: `str`
-
-<a id="listserviceinstancesoutputtypedef"></a>
+```python title="Definition"
+class ListServiceInstancesInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    serviceName: NotRequired[str],
+```
 
 ## ListServiceInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceInstancesOutputTypeDef
+
+def get_value() -> ListServiceInstancesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "serviceInstances": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServiceInstancesOutputTypeDef(TypedDict):
+    nextToken: str,
+    serviceInstances: List[ServiceInstanceSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `serviceInstances`:
-  `List`\[[ServiceInstanceSummaryTypeDef](./type_defs.md#serviceinstancesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ServiceInstanceSummaryTypeDef](./type_defs.md#serviceinstancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServicePipelineOutputsInputListServicePipelineOutputsPaginateTypeDef
 
-<a id="listservicepipelineoutputsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServicePipelineOutputsInputListServicePipelineOutputsPaginateTypeDef
 
+def get_value() -> ListServicePipelineOutputsInputListServicePipelineOutputsPaginateTypeDef:
+    return {
+        "serviceName": ...,
+    }
+```
+
+```python title="Definition"
+class ListServicePipelineOutputsInputListServicePipelineOutputsPaginateTypeDef(TypedDict):
+    serviceName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServicePipelineOutputsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServicePipelineOutputsInputRequestTypeDef
+
+def get_value() -> ListServicePipelineOutputsInputRequestTypeDef:
+    return {
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
-
-- `serviceName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listservicepipelineoutputsoutputtypedef"></a>
+```python title="Definition"
+class ListServicePipelineOutputsInputRequestTypeDef(TypedDict):
+    serviceName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListServicePipelineOutputsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServicePipelineOutputsOutputTypeDef
+
+def get_value() -> ListServicePipelineOutputsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "outputs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServicePipelineOutputsOutputTypeDef(TypedDict):
+    nextToken: str,
+    outputs: List[OutputTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServicePipelineProvisionedResourcesInputListServicePipelineProvisionedResourcesPaginateTypeDef
 
-<a id="listservicepipelineprovisionedresourcesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServicePipelineProvisionedResourcesInputListServicePipelineProvisionedResourcesPaginateTypeDef
 
+def get_value() -> ListServicePipelineProvisionedResourcesInputListServicePipelineProvisionedResourcesPaginateTypeDef:
+    return {
+        "serviceName": ...,
+    }
+```
+
+```python title="Definition"
+class ListServicePipelineProvisionedResourcesInputListServicePipelineProvisionedResourcesPaginateTypeDef(TypedDict):
+    serviceName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServicePipelineProvisionedResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServicePipelineProvisionedResourcesInputRequestTypeDef
+
+def get_value() -> ListServicePipelineProvisionedResourcesInputRequestTypeDef:
+    return {
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
-
-- `serviceName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listservicepipelineprovisionedresourcesoutputtypedef"></a>
+```python title="Definition"
+class ListServicePipelineProvisionedResourcesInputRequestTypeDef(TypedDict):
+    serviceName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListServicePipelineProvisionedResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServicePipelineProvisionedResourcesOutputTypeDef
+
+def get_value() -> ListServicePipelineProvisionedResourcesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "provisionedResources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServicePipelineProvisionedResourcesOutputTypeDef(TypedDict):
+    nextToken: str,
+    provisionedResources: List[ProvisionedResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `provisionedResources`:
-  `List`\[[ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ProvisionedResourceTypeDef](./type_defs.md#provisionedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServiceTemplateVersionsInputListServiceTemplateVersionsPaginateTypeDef
 
-<a id="listservicetemplateversionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServiceTemplateVersionsInputListServiceTemplateVersionsPaginateTypeDef
 
+def get_value() -> ListServiceTemplateVersionsInputListServiceTemplateVersionsPaginateTypeDef:
+    return {
+        "templateName": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceTemplateVersionsInputListServiceTemplateVersionsPaginateTypeDef(TypedDict):
+    templateName: str,
+    majorVersion: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServiceTemplateVersionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceTemplateVersionsInputRequestTypeDef
+
+def get_value() -> ListServiceTemplateVersionsInputRequestTypeDef:
+    return {
+        "templateName": ...,
+    }
 ```
 
-Required fields:
-
-- `templateName`: `str`
-
-Optional fields:
-
-- `majorVersion`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listservicetemplateversionsoutputtypedef"></a>
+```python title="Definition"
+class ListServiceTemplateVersionsInputRequestTypeDef(TypedDict):
+    templateName: str,
+    majorVersion: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListServiceTemplateVersionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceTemplateVersionsOutputTypeDef
+
+def get_value() -> ListServiceTemplateVersionsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "templateVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServiceTemplateVersionsOutputTypeDef(TypedDict):
+    nextToken: str,
+    templateVersions: List[ServiceTemplateVersionSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `templateVersions`:
-  `List`\[[ServiceTemplateVersionSummaryTypeDef](./type_defs.md#servicetemplateversionsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ServiceTemplateVersionSummaryTypeDef](./type_defs.md#servicetemplateversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServiceTemplatesInputListServiceTemplatesPaginateTypeDef
 
-<a id="listservicetemplatesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServiceTemplatesInputListServiceTemplatesPaginateTypeDef
 
+def get_value() -> ListServiceTemplatesInputListServiceTemplatesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListServiceTemplatesInputListServiceTemplatesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServiceTemplatesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceTemplatesInputRequestTypeDef
+
+def get_value() -> ListServiceTemplatesInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listservicetemplatesoutputtypedef"></a>
+```python title="Definition"
+class ListServiceTemplatesInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListServiceTemplatesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServiceTemplatesOutputTypeDef
+
+def get_value() -> ListServiceTemplatesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "templates": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServiceTemplatesOutputTypeDef(TypedDict):
+    nextToken: str,
+    templates: List[ServiceTemplateSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `templates`:
-  `List`\[[ServiceTemplateSummaryTypeDef](./type_defs.md#servicetemplatesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ServiceTemplateSummaryTypeDef](./type_defs.md#servicetemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServicesInputListServicesPaginateTypeDef
 
-<a id="listservicesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListServicesInputListServicesPaginateTypeDef
 
+def get_value() -> ListServicesInputListServicesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListServicesInputListServicesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServicesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServicesInputRequestTypeDef
+
+def get_value() -> ListServicesInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listservicesoutputtypedef"></a>
+```python title="Definition"
+class ListServicesInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListServicesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListServicesOutputTypeDef
+
+def get_value() -> ListServicesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "services": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServicesOutputTypeDef(TypedDict):
+    nextToken: str,
+    services: List[ServiceSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `services`:
-  `List`\[[ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceInputListTagsForResourcePaginateTypeDef
 
-<a id="listtagsforresourceinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_proton.type_defs import ListTagsForResourceInputListTagsForResourcePaginateTypeDef
 
+def get_value() -> ListTagsForResourceInputListTagsForResourcePaginateTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceInputListTagsForResourcePaginateTypeDef(TypedDict):
+    resourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listtagsforresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTagsForResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    nextToken: str,
+    tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notifyresourcedeploymentstatuschangeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotifyResourceDeploymentStatusChangeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import NotifyResourceDeploymentStatusChangeInputRequestTypeDef
+
+def get_value() -> NotifyResourceDeploymentStatusChangeInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotifyResourceDeploymentStatusChangeInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    status: ResourceDeploymentStatusType,  # (1)
+    deploymentId: NotRequired[str],
+    outputs: NotRequired[Sequence[OutputTypeDef]],  # (2)
+    statusMessage: NotRequired[str],
+```
 
-- `resourceArn`: `str`
-- `status`:
-  [ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype)
-
-Optional fields:
-
-- `deploymentId`: `str`
-- `outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `statusMessage`: `str`
-
-<a id="outputtypedef"></a>
-
+1. See [:material-code-brackets: ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype) 
+2. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
 ## OutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import OutputTypeDef
+
+def get_value() -> OutputTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `valueString`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OutputTypeDef(TypedDict):
+    key: NotRequired[str],
+    valueString: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="provisionedresourcetypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProvisionedResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ProvisionedResourceTypeDef
+
+def get_value() -> ProvisionedResourceTypeDef:
+    return {
+        "identifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProvisionedResourceTypeDef(TypedDict):
+    identifier: NotRequired[str],
+    name: NotRequired[str],
+    provisioningEngine: NotRequired[ProvisionedResourceEngineType],  # (1)
+```
 
-- `identifier`: `str`
-- `name`: `str`
-- `provisioningEngine`:
-  [ProvisionedResourceEngineType](./literals.md#provisionedresourceenginetype)
-
-<a id="rejectenvironmentaccountconnectioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProvisionedResourceEngineType](./literals.md#provisionedresourceenginetype) 
 ## RejectEnvironmentAccountConnectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RejectEnvironmentAccountConnectionInputRequestTypeDef
+
+def get_value() -> RejectEnvironmentAccountConnectionInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="rejectenvironmentaccountconnectionoutputtypedef"></a>
+```python title="Definition"
+class RejectEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## RejectEnvironmentAccountConnectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RejectEnvironmentAccountConnectionOutputTypeDef
+
+def get_value() -> RejectEnvironmentAccountConnectionOutputTypeDef:
+    return {
+        "environmentAccountConnection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RejectEnvironmentAccountConnectionOutputTypeDef(TypedDict):
+    environmentAccountConnection: EnvironmentAccountConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentAccountConnection`:
-  [EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="repositorybranchinputtypedef"></a>
-
+1. See [:material-code-braces: EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RepositoryBranchInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RepositoryBranchInputTypeDef
+
+def get_value() -> RepositoryBranchInputTypeDef:
+    return {
+        "branch": ...,
+        "name": ...,
+        "provider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RepositoryBranchInputTypeDef(TypedDict):
+    branch: str,
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+```
 
-- `branch`: `str`
-- `name`: `str`
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-
-<a id="repositorybranchtypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
 ## RepositoryBranchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RepositoryBranchTypeDef
+
+def get_value() -> RepositoryBranchTypeDef:
+    return {
+        "arn": ...,
+        "branch": ...,
+        "name": ...,
+        "provider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RepositoryBranchTypeDef(TypedDict):
+    arn: str,
+    branch: str,
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+```
 
-- `arn`: `str`
-- `branch`: `str`
-- `name`: `str`
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-
-<a id="repositorysummarytypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
 ## RepositorySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RepositorySummaryTypeDef
+
+def get_value() -> RepositorySummaryTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "provider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RepositorySummaryTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-
-<a id="repositorysyncattempttypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
 ## RepositorySyncAttemptTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RepositorySyncAttemptTypeDef
+
+def get_value() -> RepositorySyncAttemptTypeDef:
+    return {
+        "events": ...,
+        "startedAt": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RepositorySyncAttemptTypeDef(TypedDict):
+    events: List[RepositorySyncEventTypeDef],  # (1)
+    startedAt: datetime,
+    status: RepositorySyncStatusType,  # (2)
+```
 
-- `events`:
-  `List`\[[RepositorySyncEventTypeDef](./type_defs.md#repositorysynceventtypedef)\]
-- `startedAt`: `datetime`
-- `status`: [RepositorySyncStatusType](./literals.md#repositorysyncstatustype)
-
-<a id="repositorysyncdefinitiontypedef"></a>
-
+1. See [:material-code-braces: RepositorySyncEventTypeDef](./type_defs.md#repositorysynceventtypedef) 
+2. See [:material-code-brackets: RepositorySyncStatusType](./literals.md#repositorysyncstatustype) 
 ## RepositorySyncDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RepositorySyncDefinitionTypeDef
+
+def get_value() -> RepositorySyncDefinitionTypeDef:
+    return {
+        "branch": ...,
+        "directory": ...,
+        "parent": ...,
+        "target": ...,
+    }
 ```
 
-Required fields:
-
-- `branch`: `str`
-- `directory`: `str`
-- `parent`: `str`
-- `target`: `str`
-
-<a id="repositorysynceventtypedef"></a>
+```python title="Definition"
+class RepositorySyncDefinitionTypeDef(TypedDict):
+    branch: str,
+    directory: str,
+    parent: str,
+    target: str,
+```
 
 ## RepositorySyncEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RepositorySyncEventTypeDef
+
+def get_value() -> RepositorySyncEventTypeDef:
+    return {
+        "event": ...,
+        "time": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
-
-- `event`: `str`
-- `time`: `datetime`
-- `type`: `str`
-
-Optional fields:
-
-- `externalId`: `str`
-
-<a id="repositorytypedef"></a>
+```python title="Definition"
+class RepositorySyncEventTypeDef(TypedDict):
+    event: str,
+    time: datetime,
+    type: str,
+    externalId: NotRequired[str],
+```
 
 ## RepositoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RepositoryTypeDef
+
+def get_value() -> RepositoryTypeDef:
+    return {
+        "arn": ...,
+        "connectionArn": ...,
+        "name": ...,
+        "provider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RepositoryTypeDef(TypedDict):
+    arn: str,
+    connectionArn: str,
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+    encryptionKey: NotRequired[str],
+```
 
-- `arn`: `str`
-- `connectionArn`: `str`
-- `name`: `str`
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-
-Optional fields:
-
-- `encryptionKey`: `str`
-
-<a id="resourcesyncattempttypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
 ## ResourceSyncAttemptTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ResourceSyncAttemptTypeDef
+
+def get_value() -> ResourceSyncAttemptTypeDef:
+    return {
+        "events": ...,
+        "initialRevision": ...,
+        "startedAt": ...,
+        "status": ...,
+        "target": ...,
+        "targetRevision": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceSyncAttemptTypeDef(TypedDict):
+    events: List[ResourceSyncEventTypeDef],  # (1)
+    initialRevision: RevisionTypeDef,  # (2)
+    startedAt: datetime,
+    status: ResourceSyncStatusType,  # (3)
+    target: str,
+    targetRevision: RevisionTypeDef,  # (2)
+```
 
-- `events`:
-  `List`\[[ResourceSyncEventTypeDef](./type_defs.md#resourcesynceventtypedef)\]
-- `initialRevision`: [RevisionTypeDef](./type_defs.md#revisiontypedef)
-- `startedAt`: `datetime`
-- `status`: [ResourceSyncStatusType](./literals.md#resourcesyncstatustype)
-- `target`: `str`
-- `targetRevision`: [RevisionTypeDef](./type_defs.md#revisiontypedef)
-
-<a id="resourcesynceventtypedef"></a>
-
+1. See [:material-code-braces: ResourceSyncEventTypeDef](./type_defs.md#resourcesynceventtypedef) 
+2. See [:material-code-braces: RevisionTypeDef](./type_defs.md#revisiontypedef) 
+3. See [:material-code-brackets: ResourceSyncStatusType](./literals.md#resourcesyncstatustype) 
+4. See [:material-code-braces: RevisionTypeDef](./type_defs.md#revisiontypedef) 
 ## ResourceSyncEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ResourceSyncEventTypeDef
+
+def get_value() -> ResourceSyncEventTypeDef:
+    return {
+        "event": ...,
+        "time": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
-
-- `event`: `str`
-- `time`: `datetime`
-- `type`: `str`
-
-Optional fields:
-
-- `externalId`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceSyncEventTypeDef(TypedDict):
+    event: str,
+    time: datetime,
+    type: str,
+    externalId: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="revisiontypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RevisionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import RevisionTypeDef
+
+def get_value() -> RevisionTypeDef:
+    return {
+        "branch": ...,
+        "directory": ...,
+        "repositoryName": ...,
+        "repositoryProvider": ...,
+        "sha": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RevisionTypeDef(TypedDict):
+    branch: str,
+    directory: str,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    sha: str,
+```
 
-- `branch`: `str`
-- `directory`: `str`
-- `repositoryName`: `str`
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype)
-- `sha`: `str`
-
-<a id="s3objectsourcetypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
 ## S3ObjectSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import S3ObjectSourceTypeDef
+
+def get_value() -> S3ObjectSourceTypeDef:
+    return {
+        "bucket": ...,
+        "key": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket`: `str`
-- `key`: `str`
-
-<a id="serviceinstancesummarytypedef"></a>
+```python title="Definition"
+class S3ObjectSourceTypeDef(TypedDict):
+    bucket: str,
+    key: str,
+```
 
 ## ServiceInstanceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ServiceInstanceSummaryTypeDef
+
+def get_value() -> ServiceInstanceSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "deploymentStatus": ...,
+        "environmentName": ...,
+        "lastDeploymentAttemptedAt": ...,
+        "lastDeploymentSucceededAt": ...,
+        "name": ...,
+        "serviceName": ...,
+        "templateMajorVersion": ...,
+        "templateMinorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceInstanceSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    deploymentStatus: DeploymentStatusType,  # (1)
+    environmentName: str,
+    lastDeploymentAttemptedAt: datetime,
+    lastDeploymentSucceededAt: datetime,
+    name: str,
+    serviceName: str,
+    templateMajorVersion: str,
+    templateMinorVersion: str,
+    templateName: str,
+    deploymentStatusMessage: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `deploymentStatus`:
-  [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `environmentName`: `str`
-- `lastDeploymentAttemptedAt`: `datetime`
-- `lastDeploymentSucceededAt`: `datetime`
-- `name`: `str`
-- `serviceName`: `str`
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
-- `templateName`: `str`
-
-Optional fields:
-
-- `deploymentStatusMessage`: `str`
-
-<a id="serviceinstancetypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
 ## ServiceInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ServiceInstanceTypeDef
+
+def get_value() -> ServiceInstanceTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "deploymentStatus": ...,
+        "environmentName": ...,
+        "lastDeploymentAttemptedAt": ...,
+        "lastDeploymentSucceededAt": ...,
+        "name": ...,
+        "serviceName": ...,
+        "templateMajorVersion": ...,
+        "templateMinorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceInstanceTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    deploymentStatus: DeploymentStatusType,  # (1)
+    environmentName: str,
+    lastDeploymentAttemptedAt: datetime,
+    lastDeploymentSucceededAt: datetime,
+    name: str,
+    serviceName: str,
+    templateMajorVersion: str,
+    templateMinorVersion: str,
+    templateName: str,
+    deploymentStatusMessage: NotRequired[str],
+    spec: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `deploymentStatus`:
-  [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `environmentName`: `str`
-- `lastDeploymentAttemptedAt`: `datetime`
-- `lastDeploymentSucceededAt`: `datetime`
-- `name`: `str`
-- `serviceName`: `str`
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
-- `templateName`: `str`
-
-Optional fields:
-
-- `deploymentStatusMessage`: `str`
-- `spec`: `str`
-
-<a id="servicepipelinetypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
 ## ServicePipelineTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ServicePipelineTypeDef
+
+def get_value() -> ServicePipelineTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "deploymentStatus": ...,
+        "lastDeploymentAttemptedAt": ...,
+        "lastDeploymentSucceededAt": ...,
+        "templateMajorVersion": ...,
+        "templateMinorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServicePipelineTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    deploymentStatus: DeploymentStatusType,  # (1)
+    lastDeploymentAttemptedAt: datetime,
+    lastDeploymentSucceededAt: datetime,
+    templateMajorVersion: str,
+    templateMinorVersion: str,
+    templateName: str,
+    deploymentStatusMessage: NotRequired[str],
+    spec: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `deploymentStatus`:
-  [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `lastDeploymentAttemptedAt`: `datetime`
-- `lastDeploymentSucceededAt`: `datetime`
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
-- `templateName`: `str`
-
-Optional fields:
-
-- `deploymentStatusMessage`: `str`
-- `spec`: `str`
-
-<a id="servicesummarytypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
 ## ServiceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ServiceSummaryTypeDef
+
+def get_value() -> ServiceSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "name": ...,
+        "status": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    name: str,
+    status: ServiceStatusType,  # (1)
+    templateName: str,
+    description: NotRequired[str],
+    statusMessage: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `name`: `str`
-- `status`: [ServiceStatusType](./literals.md#servicestatustype)
-- `templateName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `statusMessage`: `str`
-
-<a id="servicetemplatesummarytypedef"></a>
-
+1. See [:material-code-brackets: ServiceStatusType](./literals.md#servicestatustype) 
 ## ServiceTemplateSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ServiceTemplateSummaryTypeDef
+
+def get_value() -> ServiceTemplateSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceTemplateSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    name: str,
+    description: NotRequired[str],
+    displayName: NotRequired[str],
+    pipelineProvisioning: NotRequired[ProvisioningType],  # (1)
+    recommendedVersion: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `displayName`: `str`
-- `pipelineProvisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-- `recommendedVersion`: `str`
-
-<a id="servicetemplatetypedef"></a>
-
+1. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
 ## ServiceTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ServiceTemplateTypeDef
+
+def get_value() -> ServiceTemplateTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceTemplateTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    name: str,
+    description: NotRequired[str],
+    displayName: NotRequired[str],
+    encryptionKey: NotRequired[str],
+    pipelineProvisioning: NotRequired[ProvisioningType],  # (1)
+    recommendedVersion: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `displayName`: `str`
-- `encryptionKey`: `str`
-- `pipelineProvisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-- `recommendedVersion`: `str`
-
-<a id="servicetemplateversionsummarytypedef"></a>
-
+1. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
 ## ServiceTemplateVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ServiceTemplateVersionSummaryTypeDef
+
+def get_value() -> ServiceTemplateVersionSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "status": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceTemplateVersionSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    majorVersion: str,
+    minorVersion: str,
+    status: TemplateVersionStatusType,  # (1)
+    templateName: str,
+    description: NotRequired[str],
+    recommendedMinorVersion: NotRequired[str],
+    statusMessage: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `status`:
-  [TemplateVersionStatusType](./literals.md#templateversionstatustype)
-- `templateName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `recommendedMinorVersion`: `str`
-- `statusMessage`: `str`
-
-<a id="servicetemplateversiontypedef"></a>
-
+1. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
 ## ServiceTemplateVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ServiceTemplateVersionTypeDef
+
+def get_value() -> ServiceTemplateVersionTypeDef:
+    return {
+        "arn": ...,
+        "compatibleEnvironmentTemplates": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "status": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceTemplateVersionTypeDef(TypedDict):
+    arn: str,
+    compatibleEnvironmentTemplates: List[CompatibleEnvironmentTemplateTypeDef],  # (1)
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    majorVersion: str,
+    minorVersion: str,
+    status: TemplateVersionStatusType,  # (2)
+    templateName: str,
+    description: NotRequired[str],
+    recommendedMinorVersion: NotRequired[str],
+    schema: NotRequired[str],
+    statusMessage: NotRequired[str],
+```
 
-- `arn`: `str`
-- `compatibleEnvironmentTemplates`:
-  `List`\[[CompatibleEnvironmentTemplateTypeDef](./type_defs.md#compatibleenvironmenttemplatetypedef)\]
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `status`:
-  [TemplateVersionStatusType](./literals.md#templateversionstatustype)
-- `templateName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `recommendedMinorVersion`: `str`
-- `schema`: `str`
-- `statusMessage`: `str`
-
-<a id="servicetypedef"></a>
-
+1. See [:material-code-braces: CompatibleEnvironmentTemplateTypeDef](./type_defs.md#compatibleenvironmenttemplatetypedef) 
+2. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
 ## ServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import ServiceTypeDef
+
+def get_value() -> ServiceTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "name": ...,
+        "spec": ...,
+        "status": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    name: str,
+    spec: str,
+    status: ServiceStatusType,  # (2)
+    templateName: str,
+    branchName: NotRequired[str],
+    description: NotRequired[str],
+    pipeline: NotRequired[ServicePipelineTypeDef],  # (1)
+    repositoryConnectionArn: NotRequired[str],
+    repositoryId: NotRequired[str],
+    statusMessage: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `name`: `str`
-- `spec`: `str`
-- `status`: [ServiceStatusType](./literals.md#servicestatustype)
-- `templateName`: `str`
-
-Optional fields:
-
-- `branchName`: `str`
-- `description`: `str`
-- `pipeline`: [ServicePipelineTypeDef](./type_defs.md#servicepipelinetypedef)
-- `repositoryConnectionArn`: `str`
-- `repositoryId`: `str`
-- `statusMessage`: `str`
-
-<a id="tagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServicePipelineTypeDef](./type_defs.md#servicepipelinetypedef) 
+2. See [:material-code-brackets: ServiceStatusType](./literals.md#servicestatustype) 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `resourceArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="templatesyncconfigtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: str,
+    value: str,
+```
 
 ## TemplateSyncConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import TemplateSyncConfigTypeDef
+
+def get_value() -> TemplateSyncConfigTypeDef:
+    return {
+        "branch": ...,
+        "repositoryName": ...,
+        "repositoryProvider": ...,
+        "templateName": ...,
+        "templateType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TemplateSyncConfigTypeDef(TypedDict):
+    branch: str,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    templateName: str,
+    templateType: TemplateTypeType,  # (2)
+    subdirectory: NotRequired[str],
+```
 
-- `branch`: `str`
-- `repositoryName`: `str`
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype)
-- `templateName`: `str`
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-
-Optional fields:
-
-- `subdirectory`: `str`
-
-<a id="templateversionsourceinputtypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
 ## TemplateVersionSourceInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import TemplateVersionSourceInputTypeDef
+
+def get_value() -> TemplateVersionSourceInputTypeDef:
+    return {
+        "s3": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TemplateVersionSourceInputTypeDef(TypedDict):
+    s3: NotRequired[S3ObjectSourceTypeDef],  # (1)
+```
 
-- `s3`: [S3ObjectSourceTypeDef](./type_defs.md#s3objectsourcetypedef)
-
-<a id="untagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: S3ObjectSourceTypeDef](./type_defs.md#s3objectsourcetypedef) 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateaccountsettingsinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateAccountSettingsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateAccountSettingsInputRequestTypeDef
+
+def get_value() -> UpdateAccountSettingsInputRequestTypeDef:
+    return {
+        "pipelineProvisioningRepository": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateAccountSettingsInputRequestTypeDef(TypedDict):
+    pipelineProvisioningRepository: NotRequired[RepositoryBranchInputTypeDef],  # (1)
+    pipelineServiceRoleArn: NotRequired[str],
+```
 
-- `pipelineProvisioningRepository`:
-  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
-- `pipelineServiceRoleArn`: `str`
-
-<a id="updateaccountsettingsoutputtypedef"></a>
-
+1. See [:material-code-braces: RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef) 
 ## UpdateAccountSettingsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateAccountSettingsOutputTypeDef
+
+def get_value() -> UpdateAccountSettingsOutputTypeDef:
+    return {
+        "accountSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAccountSettingsOutputTypeDef(TypedDict):
+    accountSettings: AccountSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `accountSettings`:
-  [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateenvironmentaccountconnectioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEnvironmentAccountConnectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateEnvironmentAccountConnectionInputRequestTypeDef
+
+def get_value() -> UpdateEnvironmentAccountConnectionInputRequestTypeDef:
+    return {
+        "id": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-- `roleArn`: `str`
-
-<a id="updateenvironmentaccountconnectionoutputtypedef"></a>
+```python title="Definition"
+class UpdateEnvironmentAccountConnectionInputRequestTypeDef(TypedDict):
+    id: str,
+    roleArn: str,
+```
 
 ## UpdateEnvironmentAccountConnectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateEnvironmentAccountConnectionOutputTypeDef
+
+def get_value() -> UpdateEnvironmentAccountConnectionOutputTypeDef:
+    return {
+        "environmentAccountConnection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentAccountConnectionOutputTypeDef(TypedDict):
+    environmentAccountConnection: EnvironmentAccountConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentAccountConnection`:
-  [EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateenvironmentinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentAccountConnectionTypeDef](./type_defs.md#environmentaccountconnectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEnvironmentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateEnvironmentInputRequestTypeDef
+
+def get_value() -> UpdateEnvironmentInputRequestTypeDef:
+    return {
+        "deploymentType": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentInputRequestTypeDef(TypedDict):
+    deploymentType: DeploymentUpdateTypeType,  # (1)
+    name: str,
+    description: NotRequired[str],
+    environmentAccountConnectionId: NotRequired[str],
+    protonServiceRoleArn: NotRequired[str],
+    provisioningRepository: NotRequired[RepositoryBranchInputTypeDef],  # (2)
+    spec: NotRequired[str],
+    templateMajorVersion: NotRequired[str],
+    templateMinorVersion: NotRequired[str],
+```
 
-- `deploymentType`:
-  [DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype)
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `environmentAccountConnectionId`: `str`
-- `protonServiceRoleArn`: `str`
-- `provisioningRepository`:
-  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
-- `spec`: `str`
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
-
-<a id="updateenvironmentoutputtypedef"></a>
-
+1. See [:material-code-brackets: DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype) 
+2. See [:material-code-braces: RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef) 
 ## UpdateEnvironmentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateEnvironmentOutputTypeDef
+
+def get_value() -> UpdateEnvironmentOutputTypeDef:
+    return {
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentOutputTypeDef(TypedDict):
+    environment: EnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateenvironmenttemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEnvironmentTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateInputRequestTypeDef
+
+def get_value() -> UpdateEnvironmentTemplateInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `displayName`: `str`
-
-<a id="updateenvironmenttemplateoutputtypedef"></a>
+```python title="Definition"
+class UpdateEnvironmentTemplateInputRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    displayName: NotRequired[str],
+```
 
 ## UpdateEnvironmentTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateOutputTypeDef
+
+def get_value() -> UpdateEnvironmentTemplateOutputTypeDef:
+    return {
+        "environmentTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentTemplateOutputTypeDef(TypedDict):
+    environmentTemplate: EnvironmentTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentTemplate`:
-  [EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateenvironmenttemplateversioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTemplateTypeDef](./type_defs.md#environmenttemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEnvironmentTemplateVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateVersionInputRequestTypeDef
+
+def get_value() -> UpdateEnvironmentTemplateVersionInputRequestTypeDef:
+    return {
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentTemplateVersionInputRequestTypeDef(TypedDict):
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+    description: NotRequired[str],
+    status: NotRequired[TemplateVersionStatusType],  # (1)
+```
 
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `templateName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `status`:
-  [TemplateVersionStatusType](./literals.md#templateversionstatustype)
-
-<a id="updateenvironmenttemplateversionoutputtypedef"></a>
-
+1. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
 ## UpdateEnvironmentTemplateVersionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateEnvironmentTemplateVersionOutputTypeDef
+
+def get_value() -> UpdateEnvironmentTemplateVersionOutputTypeDef:
+    return {
+        "environmentTemplateVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentTemplateVersionOutputTypeDef(TypedDict):
+    environmentTemplateVersion: EnvironmentTemplateVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environmentTemplateVersion`:
-  [EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateserviceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTemplateVersionTypeDef](./type_defs.md#environmenttemplateversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServiceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServiceInputRequestTypeDef
+
+def get_value() -> UpdateServiceInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `spec`: `str`
-
-<a id="updateserviceinstanceinputrequesttypedef"></a>
+```python title="Definition"
+class UpdateServiceInputRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    spec: NotRequired[str],
+```
 
 ## UpdateServiceInstanceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServiceInstanceInputRequestTypeDef
+
+def get_value() -> UpdateServiceInstanceInputRequestTypeDef:
+    return {
+        "deploymentType": ...,
+        "name": ...,
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceInstanceInputRequestTypeDef(TypedDict):
+    deploymentType: DeploymentUpdateTypeType,  # (1)
+    name: str,
+    serviceName: str,
+    spec: NotRequired[str],
+    templateMajorVersion: NotRequired[str],
+    templateMinorVersion: NotRequired[str],
+```
 
-- `deploymentType`:
-  [DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype)
-- `name`: `str`
-- `serviceName`: `str`
-
-Optional fields:
-
-- `spec`: `str`
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
-
-<a id="updateserviceinstanceoutputtypedef"></a>
-
+1. See [:material-code-brackets: DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype) 
 ## UpdateServiceInstanceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServiceInstanceOutputTypeDef
+
+def get_value() -> UpdateServiceInstanceOutputTypeDef:
+    return {
+        "serviceInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceInstanceOutputTypeDef(TypedDict):
+    serviceInstance: ServiceInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceInstance`:
-  [ServiceInstanceTypeDef](./type_defs.md#serviceinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateserviceoutputtypedef"></a>
-
+1. See [:material-code-braces: ServiceInstanceTypeDef](./type_defs.md#serviceinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServiceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServiceOutputTypeDef
+
+def get_value() -> UpdateServiceOutputTypeDef:
+    return {
+        "service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceOutputTypeDef(TypedDict):
+    service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateservicepipelineinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServicePipelineInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServicePipelineInputRequestTypeDef
+
+def get_value() -> UpdateServicePipelineInputRequestTypeDef:
+    return {
+        "deploymentType": ...,
+        "serviceName": ...,
+        "spec": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServicePipelineInputRequestTypeDef(TypedDict):
+    deploymentType: DeploymentUpdateTypeType,  # (1)
+    serviceName: str,
+    spec: str,
+    templateMajorVersion: NotRequired[str],
+    templateMinorVersion: NotRequired[str],
+```
 
-- `deploymentType`:
-  [DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype)
-- `serviceName`: `str`
-- `spec`: `str`
-
-Optional fields:
-
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
-
-<a id="updateservicepipelineoutputtypedef"></a>
-
+1. See [:material-code-brackets: DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype) 
 ## UpdateServicePipelineOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServicePipelineOutputTypeDef
+
+def get_value() -> UpdateServicePipelineOutputTypeDef:
+    return {
+        "pipeline": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServicePipelineOutputTypeDef(TypedDict):
+    pipeline: ServicePipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `pipeline`: [ServicePipelineTypeDef](./type_defs.md#servicepipelinetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateservicetemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServicePipelineTypeDef](./type_defs.md#servicepipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServiceTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServiceTemplateInputRequestTypeDef
+
+def get_value() -> UpdateServiceTemplateInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `displayName`: `str`
-
-<a id="updateservicetemplateoutputtypedef"></a>
+```python title="Definition"
+class UpdateServiceTemplateInputRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    displayName: NotRequired[str],
+```
 
 ## UpdateServiceTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServiceTemplateOutputTypeDef
+
+def get_value() -> UpdateServiceTemplateOutputTypeDef:
+    return {
+        "serviceTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceTemplateOutputTypeDef(TypedDict):
+    serviceTemplate: ServiceTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceTemplate`:
-  [ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateservicetemplateversioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTemplateTypeDef](./type_defs.md#servicetemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServiceTemplateVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServiceTemplateVersionInputRequestTypeDef
+
+def get_value() -> UpdateServiceTemplateVersionInputRequestTypeDef:
+    return {
+        "majorVersion": ...,
+        "minorVersion": ...,
+        "templateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceTemplateVersionInputRequestTypeDef(TypedDict):
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+    compatibleEnvironmentTemplates: NotRequired[Sequence[CompatibleEnvironmentTemplateInputTypeDef]],  # (1)
+    description: NotRequired[str],
+    status: NotRequired[TemplateVersionStatusType],  # (2)
+```
 
-- `majorVersion`: `str`
-- `minorVersion`: `str`
-- `templateName`: `str`
-
-Optional fields:
-
-- `compatibleEnvironmentTemplates`:
-  `Sequence`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
-- `description`: `str`
-- `status`:
-  [TemplateVersionStatusType](./literals.md#templateversionstatustype)
-
-<a id="updateservicetemplateversionoutputtypedef"></a>
-
+1. See [:material-code-braces: CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef) 
+2. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
 ## UpdateServiceTemplateVersionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateServiceTemplateVersionOutputTypeDef
+
+def get_value() -> UpdateServiceTemplateVersionOutputTypeDef:
+    return {
+        "serviceTemplateVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceTemplateVersionOutputTypeDef(TypedDict):
+    serviceTemplateVersion: ServiceTemplateVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceTemplateVersion`:
-  [ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetemplatesyncconfiginputrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTemplateVersionTypeDef](./type_defs.md#servicetemplateversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTemplateSyncConfigInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateTemplateSyncConfigInputRequestTypeDef
+
+def get_value() -> UpdateTemplateSyncConfigInputRequestTypeDef:
+    return {
+        "branch": ...,
+        "repositoryName": ...,
+        "repositoryProvider": ...,
+        "templateName": ...,
+        "templateType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTemplateSyncConfigInputRequestTypeDef(TypedDict):
+    branch: str,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    templateName: str,
+    templateType: TemplateTypeType,  # (2)
+    subdirectory: NotRequired[str],
+```
 
-- `branch`: `str`
-- `repositoryName`: `str`
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype)
-- `templateName`: `str`
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-
-Optional fields:
-
-- `subdirectory`: `str`
-
-<a id="updatetemplatesyncconfigoutputtypedef"></a>
-
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
 ## UpdateTemplateSyncConfigOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import UpdateTemplateSyncConfigOutputTypeDef
+
+def get_value() -> UpdateTemplateSyncConfigOutputTypeDef:
+    return {
+        "templateSyncConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTemplateSyncConfigOutputTypeDef(TypedDict):
+    templateSyncConfig: TemplateSyncConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `templateSyncConfig`:
-  [TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: TemplateSyncConfigTypeDef](./type_defs.md#templatesyncconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

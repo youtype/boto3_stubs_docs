@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-apigateway-module"></a>
-
-# Type annotations for boto3 APIGateway module
+#  APIGateway module
 
 > [Index](../README.md) > APIGateway
 
-Auto-generated documentation for
-[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
-type annotations stubs module
-[mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
+!!! note ""
 
-- [Type annotations for boto3 APIGateway module](#type-annotations-for-boto3-apigateway-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [APIGatewayClient](#apigatewayclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
+    type annotations stubs module [mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `APIGateway`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[apigateway]'
 python -m pip install mypy-boto3-apigateway
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,180 +42,37 @@ python -m pip install mypy-boto3-apigateway
 python -m pip uninstall -y mypy-boto3-apigateway
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="apigatewayclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## APIGatewayClient
 
-Type annotations for `boto3.client("apigateway")` as
-[APIGatewayClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("apigateway")` as [APIGatewayClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_apigateway.client import APIGatewayClient
+
+def get_client() -> APIGatewayClient:
+    return Session().cleint("apigateway")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_api_key](./client.md#create_api_key)
-- [create_authorizer](./client.md#create_authorizer)
-- [create_base_path_mapping](./client.md#create_base_path_mapping)
-- [create_deployment](./client.md#create_deployment)
-- [create_documentation_part](./client.md#create_documentation_part)
-- [create_documentation_version](./client.md#create_documentation_version)
-- [create_domain_name](./client.md#create_domain_name)
-- [create_model](./client.md#create_model)
-- [create_request_validator](./client.md#create_request_validator)
-- [create_resource](./client.md#create_resource)
-- [create_rest_api](./client.md#create_rest_api)
-- [create_stage](./client.md#create_stage)
-- [create_usage_plan](./client.md#create_usage_plan)
-- [create_usage_plan_key](./client.md#create_usage_plan_key)
-- [create_vpc_link](./client.md#create_vpc_link)
-- [delete_api_key](./client.md#delete_api_key)
-- [delete_authorizer](./client.md#delete_authorizer)
-- [delete_base_path_mapping](./client.md#delete_base_path_mapping)
-- [delete_client_certificate](./client.md#delete_client_certificate)
-- [delete_deployment](./client.md#delete_deployment)
-- [delete_documentation_part](./client.md#delete_documentation_part)
-- [delete_documentation_version](./client.md#delete_documentation_version)
-- [delete_domain_name](./client.md#delete_domain_name)
-- [delete_gateway_response](./client.md#delete_gateway_response)
-- [delete_integration](./client.md#delete_integration)
-- [delete_integration_response](./client.md#delete_integration_response)
-- [delete_method](./client.md#delete_method)
-- [delete_method_response](./client.md#delete_method_response)
-- [delete_model](./client.md#delete_model)
-- [delete_request_validator](./client.md#delete_request_validator)
-- [delete_resource](./client.md#delete_resource)
-- [delete_rest_api](./client.md#delete_rest_api)
-- [delete_stage](./client.md#delete_stage)
-- [delete_usage_plan](./client.md#delete_usage_plan)
-- [delete_usage_plan_key](./client.md#delete_usage_plan_key)
-- [delete_vpc_link](./client.md#delete_vpc_link)
-- [exceptions](./client.md#exceptions)
-- [flush_stage_authorizers_cache](./client.md#flush_stage_authorizers_cache)
-- [flush_stage_cache](./client.md#flush_stage_cache)
-- [generate_client_certificate](./client.md#generate_client_certificate)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_account](./client.md#get_account)
-- [get_api_key](./client.md#get_api_key)
-- [get_api_keys](./client.md#get_api_keys)
-- [get_authorizer](./client.md#get_authorizer)
-- [get_authorizers](./client.md#get_authorizers)
-- [get_base_path_mapping](./client.md#get_base_path_mapping)
-- [get_base_path_mappings](./client.md#get_base_path_mappings)
-- [get_client_certificate](./client.md#get_client_certificate)
-- [get_client_certificates](./client.md#get_client_certificates)
-- [get_deployment](./client.md#get_deployment)
-- [get_deployments](./client.md#get_deployments)
-- [get_documentation_part](./client.md#get_documentation_part)
-- [get_documentation_parts](./client.md#get_documentation_parts)
-- [get_documentation_version](./client.md#get_documentation_version)
-- [get_documentation_versions](./client.md#get_documentation_versions)
-- [get_domain_name](./client.md#get_domain_name)
-- [get_domain_names](./client.md#get_domain_names)
-- [get_export](./client.md#get_export)
-- [get_gateway_response](./client.md#get_gateway_response)
-- [get_gateway_responses](./client.md#get_gateway_responses)
-- [get_integration](./client.md#get_integration)
-- [get_integration_response](./client.md#get_integration_response)
-- [get_method](./client.md#get_method)
-- [get_method_response](./client.md#get_method_response)
-- [get_model](./client.md#get_model)
-- [get_model_template](./client.md#get_model_template)
-- [get_models](./client.md#get_models)
-- [get_paginator](./client.md#get_paginator)
-- [get_request_validator](./client.md#get_request_validator)
-- [get_request_validators](./client.md#get_request_validators)
-- [get_resource](./client.md#get_resource)
-- [get_resources](./client.md#get_resources)
-- [get_rest_api](./client.md#get_rest_api)
-- [get_rest_apis](./client.md#get_rest_apis)
-- [get_sdk](./client.md#get_sdk)
-- [get_sdk_type](./client.md#get_sdk_type)
-- [get_sdk_types](./client.md#get_sdk_types)
-- [get_stage](./client.md#get_stage)
-- [get_stages](./client.md#get_stages)
-- [get_tags](./client.md#get_tags)
-- [get_usage](./client.md#get_usage)
-- [get_usage_plan](./client.md#get_usage_plan)
-- [get_usage_plan_key](./client.md#get_usage_plan_key)
-- [get_usage_plan_keys](./client.md#get_usage_plan_keys)
-- [get_usage_plans](./client.md#get_usage_plans)
-- [get_vpc_link](./client.md#get_vpc_link)
-- [get_vpc_links](./client.md#get_vpc_links)
-- [import_api_keys](./client.md#import_api_keys)
-- [import_documentation_parts](./client.md#import_documentation_parts)
-- [import_rest_api](./client.md#import_rest_api)
-- [put_gateway_response](./client.md#put_gateway_response)
-- [put_integration](./client.md#put_integration)
-- [put_integration_response](./client.md#put_integration_response)
-- [put_method](./client.md#put_method)
-- [put_method_response](./client.md#put_method_response)
-- [put_rest_api](./client.md#put_rest_api)
-- [tag_resource](./client.md#tag_resource)
-- [test_invoke_authorizer](./client.md#test_invoke_authorizer)
-- [test_invoke_method](./client.md#test_invoke_method)
-- [untag_resource](./client.md#untag_resource)
-- [update_account](./client.md#update_account)
-- [update_api_key](./client.md#update_api_key)
-- [update_authorizer](./client.md#update_authorizer)
-- [update_base_path_mapping](./client.md#update_base_path_mapping)
-- [update_client_certificate](./client.md#update_client_certificate)
-- [update_deployment](./client.md#update_deployment)
-- [update_documentation_part](./client.md#update_documentation_part)
-- [update_documentation_version](./client.md#update_documentation_version)
-- [update_domain_name](./client.md#update_domain_name)
-- [update_gateway_response](./client.md#update_gateway_response)
-- [update_integration](./client.md#update_integration)
-- [update_integration_response](./client.md#update_integration_response)
-- [update_method](./client.md#update_method)
-- [update_method_response](./client.md#update_method_response)
-- [update_model](./client.md#update_model)
-- [update_request_validator](./client.md#update_request_validator)
-- [update_resource](./client.md#update_resource)
-- [update_rest_api](./client.md#update_rest_api)
-- [update_stage](./client.md#update_stage)
-- [update_usage](./client.md#update_usage)
-- [update_usage_plan](./client.md#update_usage_plan)
-- [update_vpc_link](./client.md#update_vpc_link)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-APIGatewayClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- ConflictException
-- LimitExceededException
-- NotFoundException
-- ServiceUnavailableException
-- TooManyRequestsException
-- UnauthorizedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("apigateway").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("apigateway").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_apigateway.paginator import GetApiKeysPaginator, ...
+from mypy_boto3_apigateway.paginator import GetApiKeysPaginator
+
+def get_get_api_keys_paginator() -> GetApiKeysPaginator:
+    return Session().client("apigateway").get_paginator("get_api_keys"))
 ```
 
 - [GetApiKeysPaginator](./paginators.md#getapikeyspaginator)
@@ -259,16 +94,23 @@ from mypy_boto3_apigateway.paginator import GetApiKeysPaginator, ...
 - [GetUsagePlansPaginator](./paginators.md#getusageplanspaginator)
 - [GetVpcLinksPaginator](./paginators.md#getvpclinkspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_apigateway.literals import ApiKeySourceTypeType
 
-```python
-from mypy_boto3_apigateway.literals import ApiKeySourceTypeType, ...
+def get_value() -> ApiKeySourceTypeType:
+    return "AUTHORIZER"
 ```
 
 - [ApiKeySourceTypeType](./literals.md#apikeysourcetypetype)
@@ -312,18 +154,22 @@ from mypy_boto3_apigateway.literals import ApiKeySourceTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_apigateway.type_defs import AccessLogSettingsTypeDef
 
-```python
-from mypy_boto3_apigateway.type_defs import AccessLogSettingsTypeDef, ...
+def get_value() -> AccessLogSettingsTypeDef:
+    return {
+        "format": ...,
+    }
 ```
 
 - [AccessLogSettingsTypeDef](./type_defs.md#accesslogsettingstypedef)
@@ -403,23 +249,32 @@ from mypy_boto3_apigateway.type_defs import AccessLogSettingsTypeDef, ...
 - [GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef)
 - [GenerateClientCertificateRequestRequestTypeDef](./type_defs.md#generateclientcertificaterequestrequesttypedef)
 - [GetApiKeyRequestRequestTypeDef](./type_defs.md#getapikeyrequestrequesttypedef)
+- [GetApiKeysRequestGetApiKeysPaginateTypeDef](./type_defs.md#getapikeysrequestgetapikeyspaginatetypedef)
 - [GetApiKeysRequestRequestTypeDef](./type_defs.md#getapikeysrequestrequesttypedef)
 - [GetAuthorizerRequestRequestTypeDef](./type_defs.md#getauthorizerrequestrequesttypedef)
+- [GetAuthorizersRequestGetAuthorizersPaginateTypeDef](./type_defs.md#getauthorizersrequestgetauthorizerspaginatetypedef)
 - [GetAuthorizersRequestRequestTypeDef](./type_defs.md#getauthorizersrequestrequesttypedef)
 - [GetBasePathMappingRequestRequestTypeDef](./type_defs.md#getbasepathmappingrequestrequesttypedef)
+- [GetBasePathMappingsRequestGetBasePathMappingsPaginateTypeDef](./type_defs.md#getbasepathmappingsrequestgetbasepathmappingspaginatetypedef)
 - [GetBasePathMappingsRequestRequestTypeDef](./type_defs.md#getbasepathmappingsrequestrequesttypedef)
 - [GetClientCertificateRequestRequestTypeDef](./type_defs.md#getclientcertificaterequestrequesttypedef)
+- [GetClientCertificatesRequestGetClientCertificatesPaginateTypeDef](./type_defs.md#getclientcertificatesrequestgetclientcertificatespaginatetypedef)
 - [GetClientCertificatesRequestRequestTypeDef](./type_defs.md#getclientcertificatesrequestrequesttypedef)
 - [GetDeploymentRequestRequestTypeDef](./type_defs.md#getdeploymentrequestrequesttypedef)
+- [GetDeploymentsRequestGetDeploymentsPaginateTypeDef](./type_defs.md#getdeploymentsrequestgetdeploymentspaginatetypedef)
 - [GetDeploymentsRequestRequestTypeDef](./type_defs.md#getdeploymentsrequestrequesttypedef)
 - [GetDocumentationPartRequestRequestTypeDef](./type_defs.md#getdocumentationpartrequestrequesttypedef)
+- [GetDocumentationPartsRequestGetDocumentationPartsPaginateTypeDef](./type_defs.md#getdocumentationpartsrequestgetdocumentationpartspaginatetypedef)
 - [GetDocumentationPartsRequestRequestTypeDef](./type_defs.md#getdocumentationpartsrequestrequesttypedef)
 - [GetDocumentationVersionRequestRequestTypeDef](./type_defs.md#getdocumentationversionrequestrequesttypedef)
+- [GetDocumentationVersionsRequestGetDocumentationVersionsPaginateTypeDef](./type_defs.md#getdocumentationversionsrequestgetdocumentationversionspaginatetypedef)
 - [GetDocumentationVersionsRequestRequestTypeDef](./type_defs.md#getdocumentationversionsrequestrequesttypedef)
 - [GetDomainNameRequestRequestTypeDef](./type_defs.md#getdomainnamerequestrequesttypedef)
+- [GetDomainNamesRequestGetDomainNamesPaginateTypeDef](./type_defs.md#getdomainnamesrequestgetdomainnamespaginatetypedef)
 - [GetDomainNamesRequestRequestTypeDef](./type_defs.md#getdomainnamesrequestrequesttypedef)
 - [GetExportRequestRequestTypeDef](./type_defs.md#getexportrequestrequesttypedef)
 - [GetGatewayResponseRequestRequestTypeDef](./type_defs.md#getgatewayresponserequestrequesttypedef)
+- [GetGatewayResponsesRequestGetGatewayResponsesPaginateTypeDef](./type_defs.md#getgatewayresponsesrequestgetgatewayresponsespaginatetypedef)
 - [GetGatewayResponsesRequestRequestTypeDef](./type_defs.md#getgatewayresponsesrequestrequesttypedef)
 - [GetIntegrationRequestRequestTypeDef](./type_defs.md#getintegrationrequestrequesttypedef)
 - [GetIntegrationResponseRequestRequestTypeDef](./type_defs.md#getintegrationresponserequestrequesttypedef)
@@ -427,25 +282,34 @@ from mypy_boto3_apigateway.type_defs import AccessLogSettingsTypeDef, ...
 - [GetMethodResponseRequestRequestTypeDef](./type_defs.md#getmethodresponserequestrequesttypedef)
 - [GetModelRequestRequestTypeDef](./type_defs.md#getmodelrequestrequesttypedef)
 - [GetModelTemplateRequestRequestTypeDef](./type_defs.md#getmodeltemplaterequestrequesttypedef)
+- [GetModelsRequestGetModelsPaginateTypeDef](./type_defs.md#getmodelsrequestgetmodelspaginatetypedef)
 - [GetModelsRequestRequestTypeDef](./type_defs.md#getmodelsrequestrequesttypedef)
 - [GetRequestValidatorRequestRequestTypeDef](./type_defs.md#getrequestvalidatorrequestrequesttypedef)
+- [GetRequestValidatorsRequestGetRequestValidatorsPaginateTypeDef](./type_defs.md#getrequestvalidatorsrequestgetrequestvalidatorspaginatetypedef)
 - [GetRequestValidatorsRequestRequestTypeDef](./type_defs.md#getrequestvalidatorsrequestrequesttypedef)
 - [GetResourceRequestRequestTypeDef](./type_defs.md#getresourcerequestrequesttypedef)
+- [GetResourcesRequestGetResourcesPaginateTypeDef](./type_defs.md#getresourcesrequestgetresourcespaginatetypedef)
 - [GetResourcesRequestRequestTypeDef](./type_defs.md#getresourcesrequestrequesttypedef)
 - [GetRestApiRequestRequestTypeDef](./type_defs.md#getrestapirequestrequesttypedef)
+- [GetRestApisRequestGetRestApisPaginateTypeDef](./type_defs.md#getrestapisrequestgetrestapispaginatetypedef)
 - [GetRestApisRequestRequestTypeDef](./type_defs.md#getrestapisrequestrequesttypedef)
 - [GetSdkRequestRequestTypeDef](./type_defs.md#getsdkrequestrequesttypedef)
 - [GetSdkTypeRequestRequestTypeDef](./type_defs.md#getsdktyperequestrequesttypedef)
+- [GetSdkTypesRequestGetSdkTypesPaginateTypeDef](./type_defs.md#getsdktypesrequestgetsdktypespaginatetypedef)
 - [GetSdkTypesRequestRequestTypeDef](./type_defs.md#getsdktypesrequestrequesttypedef)
 - [GetStageRequestRequestTypeDef](./type_defs.md#getstagerequestrequesttypedef)
 - [GetStagesRequestRequestTypeDef](./type_defs.md#getstagesrequestrequesttypedef)
 - [GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef)
 - [GetUsagePlanKeyRequestRequestTypeDef](./type_defs.md#getusageplankeyrequestrequesttypedef)
+- [GetUsagePlanKeysRequestGetUsagePlanKeysPaginateTypeDef](./type_defs.md#getusageplankeysrequestgetusageplankeyspaginatetypedef)
 - [GetUsagePlanKeysRequestRequestTypeDef](./type_defs.md#getusageplankeysrequestrequesttypedef)
 - [GetUsagePlanRequestRequestTypeDef](./type_defs.md#getusageplanrequestrequesttypedef)
+- [GetUsagePlansRequestGetUsagePlansPaginateTypeDef](./type_defs.md#getusageplansrequestgetusageplanspaginatetypedef)
 - [GetUsagePlansRequestRequestTypeDef](./type_defs.md#getusageplansrequestrequesttypedef)
+- [GetUsageRequestGetUsagePaginateTypeDef](./type_defs.md#getusagerequestgetusagepaginatetypedef)
 - [GetUsageRequestRequestTypeDef](./type_defs.md#getusagerequestrequesttypedef)
 - [GetVpcLinkRequestRequestTypeDef](./type_defs.md#getvpclinkrequestrequesttypedef)
+- [GetVpcLinksRequestGetVpcLinksPaginateTypeDef](./type_defs.md#getvpclinksrequestgetvpclinkspaginatetypedef)
 - [GetVpcLinksRequestRequestTypeDef](./type_defs.md#getvpclinksrequestrequesttypedef)
 - [ImportApiKeysRequestRequestTypeDef](./type_defs.md#importapikeysrequestrequesttypedef)
 - [ImportDocumentationPartsRequestRequestTypeDef](./type_defs.md#importdocumentationpartsrequestrequesttypedef)
@@ -535,3 +399,4 @@ from mypy_boto3_apigateway.type_defs import AccessLogSettingsTypeDef, ...
 - [VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef)
 - [VpcLinkTypeDef](./type_defs.md#vpclinktypedef)
 - [VpcLinksTypeDef](./type_defs.md#vpclinkstypedef)
+

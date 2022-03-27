@@ -1,97 +1,18 @@
-<a id="route53client-for-boto3-route53-module"></a>
-
-# Route53Client for boto3 Route53 module
+# Route53Client
 
 > [Index](../README.md) > [Route53](./README.md) > Route53Client
 
-Auto-generated documentation for
-[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
-type annotations stubs module
-[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
+!!! note ""
 
-- [Route53Client for boto3 Route53 module](#route53client-for-boto3-route53-module)
-  - [Route53Client](#route53client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [activate_key_signing_key](#activate_key_signing_key)
-    - [associate_vpc_with_hosted_zone](#associate_vpc_with_hosted_zone)
-    - [can_paginate](#can_paginate)
-    - [change_resource_record_sets](#change_resource_record_sets)
-    - [change_tags_for_resource](#change_tags_for_resource)
-    - [create_health_check](#create_health_check)
-    - [create_hosted_zone](#create_hosted_zone)
-    - [create_key_signing_key](#create_key_signing_key)
-    - [create_query_logging_config](#create_query_logging_config)
-    - [create_reusable_delegation_set](#create_reusable_delegation_set)
-    - [create_traffic_policy](#create_traffic_policy)
-    - [create_traffic_policy_instance](#create_traffic_policy_instance)
-    - [create_traffic_policy_version](#create_traffic_policy_version)
-    - [create_vpc_association_authorization](#create_vpc_association_authorization)
-    - [deactivate_key_signing_key](#deactivate_key_signing_key)
-    - [delete_health_check](#delete_health_check)
-    - [delete_hosted_zone](#delete_hosted_zone)
-    - [delete_key_signing_key](#delete_key_signing_key)
-    - [delete_query_logging_config](#delete_query_logging_config)
-    - [delete_reusable_delegation_set](#delete_reusable_delegation_set)
-    - [delete_traffic_policy](#delete_traffic_policy)
-    - [delete_traffic_policy_instance](#delete_traffic_policy_instance)
-    - [delete_vpc_association_authorization](#delete_vpc_association_authorization)
-    - [disable_hosted_zone_dnssec](#disable_hosted_zone_dnssec)
-    - [disassociate_vpc_from_hosted_zone](#disassociate_vpc_from_hosted_zone)
-    - [enable_hosted_zone_dnssec](#enable_hosted_zone_dnssec)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account_limit](#get_account_limit)
-    - [get_change](#get_change)
-    - [get_checker_ip_ranges](#get_checker_ip_ranges)
-    - [get_dnssec](#get_dnssec)
-    - [get_geo_location](#get_geo_location)
-    - [get_health_check](#get_health_check)
-    - [get_health_check_count](#get_health_check_count)
-    - [get_health_check_last_failure_reason](#get_health_check_last_failure_reason)
-    - [get_health_check_status](#get_health_check_status)
-    - [get_hosted_zone](#get_hosted_zone)
-    - [get_hosted_zone_count](#get_hosted_zone_count)
-    - [get_hosted_zone_limit](#get_hosted_zone_limit)
-    - [get_query_logging_config](#get_query_logging_config)
-    - [get_reusable_delegation_set](#get_reusable_delegation_set)
-    - [get_reusable_delegation_set_limit](#get_reusable_delegation_set_limit)
-    - [get_traffic_policy](#get_traffic_policy)
-    - [get_traffic_policy_instance](#get_traffic_policy_instance)
-    - [get_traffic_policy_instance_count](#get_traffic_policy_instance_count)
-    - [list_geo_locations](#list_geo_locations)
-    - [list_health_checks](#list_health_checks)
-    - [list_hosted_zones](#list_hosted_zones)
-    - [list_hosted_zones_by_name](#list_hosted_zones_by_name)
-    - [list_hosted_zones_by_vpc](#list_hosted_zones_by_vpc)
-    - [list_query_logging_configs](#list_query_logging_configs)
-    - [list_resource_record_sets](#list_resource_record_sets)
-    - [list_reusable_delegation_sets](#list_reusable_delegation_sets)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_tags_for_resources](#list_tags_for_resources)
-    - [list_traffic_policies](#list_traffic_policies)
-    - [list_traffic_policy_instances](#list_traffic_policy_instances)
-    - [list_traffic_policy_instances_by_hosted_zone](#list_traffic_policy_instances_by_hosted_zone)
-    - [list_traffic_policy_instances_by_policy](#list_traffic_policy_instances_by_policy)
-    - [list_traffic_policy_versions](#list_traffic_policy_versions)
-    - [list_vpc_association_authorizations](#list_vpc_association_authorizations)
-    - [test_dns_answer](#test_dns_answer)
-    - [update_health_check](#update_health_check)
-    - [update_hosted_zone_comment](#update_hosted_zone_comment)
-    - [update_traffic_policy_comment](#update_traffic_policy_comment)
-    - [update_traffic_policy_instance](#update_traffic_policy_instance)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="route53client"></a>
+    Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+    type annotations stubs module [mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 ## Route53Client
 
-Type annotations for `boto3.client("route53")`
+Type annotations and code completion for `#!python boto3.client("route53")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_route53.client import Route53Client
 
@@ -99,1662 +20,2148 @@ def get_route53_client() -> Route53Client:
     return Session().client("route53")
 ```
 
-Boto3 documentation:
-[Route53.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("route53").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("route53")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModification,
+    client.ConflictingDomainExists,
+    client.ConflictingTypes,
+    client.DNSSECNotFound,
+    client.DelegationSetAlreadyCreated,
+    client.DelegationSetAlreadyReusable,
+    client.DelegationSetInUse,
+    client.DelegationSetNotAvailable,
+    client.DelegationSetNotReusable,
+    client.HealthCheckAlreadyExists,
+    client.HealthCheckInUse,
+    client.HealthCheckVersionMismatch,
+    client.HostedZoneAlreadyExists,
+    client.HostedZoneNotEmpty,
+    client.HostedZoneNotFound,
+    client.HostedZoneNotPrivate,
+    client.HostedZonePartiallyDelegated,
+    client.IncompatibleVersion,
+    client.InsufficientCloudWatchLogsResourcePolicy,
+    client.InvalidArgument,
+    client.InvalidChangeBatch,
+    client.InvalidDomainName,
+    client.InvalidInput,
+    client.InvalidKMSArn,
+    client.InvalidKeySigningKeyName,
+    client.InvalidKeySigningKeyStatus,
+    client.InvalidPaginationToken,
+    client.InvalidSigningStatus,
+    client.InvalidTrafficPolicyDocument,
+    client.InvalidVPCId,
+    client.KeySigningKeyAlreadyExists,
+    client.KeySigningKeyInParentDSRecord,
+    client.KeySigningKeyInUse,
+    client.KeySigningKeyWithActiveStatusNotFound,
+    client.LastVPCAssociation,
+    client.LimitsExceeded,
+    client.NoSuchChange,
+    client.NoSuchCloudWatchLogsLogGroup,
+    client.NoSuchDelegationSet,
+    client.NoSuchGeoLocation,
+    client.NoSuchHealthCheck,
+    client.NoSuchHostedZone,
+    client.NoSuchKeySigningKey,
+    client.NoSuchQueryLoggingConfig,
+    client.NoSuchTrafficPolicy,
+    client.NoSuchTrafficPolicyInstance,
+    client.NotAuthorizedException,
+    client.PriorRequestNotComplete,
+    client.PublicZoneVPCAssociation,
+    client.QueryLoggingConfigAlreadyExists,
+    client.ThrottlingException,
+    client.TooManyHealthChecks,
+    client.TooManyHostedZones,
+    client.TooManyKeySigningKeys,
+    client.TooManyTrafficPolicies,
+    client.TooManyTrafficPolicyInstances,
+    client.TooManyTrafficPolicyVersionsForCurrentPolicy,
+    client.TooManyVPCAssociationAuthorizations,
+    client.TrafficPolicyAlreadyExists,
+    client.TrafficPolicyInUse,
+    client.TrafficPolicyInstanceAlreadyExists,
+    client.VPCAssociationAuthorizationNotFound,
+    client.VPCAssociationNotFound,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_route53.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModification`
-- `Exceptions.ConflictingDomainExists`
-- `Exceptions.ConflictingTypes`
-- `Exceptions.DNSSECNotFound`
-- `Exceptions.DelegationSetAlreadyCreated`
-- `Exceptions.DelegationSetAlreadyReusable`
-- `Exceptions.DelegationSetInUse`
-- `Exceptions.DelegationSetNotAvailable`
-- `Exceptions.DelegationSetNotReusable`
-- `Exceptions.HealthCheckAlreadyExists`
-- `Exceptions.HealthCheckInUse`
-- `Exceptions.HealthCheckVersionMismatch`
-- `Exceptions.HostedZoneAlreadyExists`
-- `Exceptions.HostedZoneNotEmpty`
-- `Exceptions.HostedZoneNotFound`
-- `Exceptions.HostedZoneNotPrivate`
-- `Exceptions.HostedZonePartiallyDelegated`
-- `Exceptions.IncompatibleVersion`
-- `Exceptions.InsufficientCloudWatchLogsResourcePolicy`
-- `Exceptions.InvalidArgument`
-- `Exceptions.InvalidChangeBatch`
-- `Exceptions.InvalidDomainName`
-- `Exceptions.InvalidInput`
-- `Exceptions.InvalidKMSArn`
-- `Exceptions.InvalidKeySigningKeyName`
-- `Exceptions.InvalidKeySigningKeyStatus`
-- `Exceptions.InvalidPaginationToken`
-- `Exceptions.InvalidSigningStatus`
-- `Exceptions.InvalidTrafficPolicyDocument`
-- `Exceptions.InvalidVPCId`
-- `Exceptions.KeySigningKeyAlreadyExists`
-- `Exceptions.KeySigningKeyInParentDSRecord`
-- `Exceptions.KeySigningKeyInUse`
-- `Exceptions.KeySigningKeyWithActiveStatusNotFound`
-- `Exceptions.LastVPCAssociation`
-- `Exceptions.LimitsExceeded`
-- `Exceptions.NoSuchChange`
-- `Exceptions.NoSuchCloudWatchLogsLogGroup`
-- `Exceptions.NoSuchDelegationSet`
-- `Exceptions.NoSuchGeoLocation`
-- `Exceptions.NoSuchHealthCheck`
-- `Exceptions.NoSuchHostedZone`
-- `Exceptions.NoSuchKeySigningKey`
-- `Exceptions.NoSuchQueryLoggingConfig`
-- `Exceptions.NoSuchTrafficPolicy`
-- `Exceptions.NoSuchTrafficPolicyInstance`
-- `Exceptions.NotAuthorizedException`
-- `Exceptions.PriorRequestNotComplete`
-- `Exceptions.PublicZoneVPCAssociation`
-- `Exceptions.QueryLoggingConfigAlreadyExists`
-- `Exceptions.ThrottlingException`
-- `Exceptions.TooManyHealthChecks`
-- `Exceptions.TooManyHostedZones`
-- `Exceptions.TooManyKeySigningKeys`
-- `Exceptions.TooManyTrafficPolicies`
-- `Exceptions.TooManyTrafficPolicyInstances`
-- `Exceptions.TooManyTrafficPolicyVersionsForCurrentPolicy`
-- `Exceptions.TooManyVPCAssociationAuthorizations`
-- `Exceptions.TrafficPolicyAlreadyExists`
-- `Exceptions.TrafficPolicyInUse`
-- `Exceptions.TrafficPolicyInstanceAlreadyExists`
-- `Exceptions.VPCAssociationAuthorizationNotFound`
-- `Exceptions.VPCAssociationNotFound`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-Route53Client exceptions.
-
-Type annotations for `boto3.client("route53").exceptions` method.
-
-Boto3 documentation:
-[Route53.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="activate\_key\_signing\_key"></a>
-
-### activate_key_signing_key
+### activate\_key\_signing\_key
 
 Activates a key-signing key (KSK) so that it can be used for signing by DNSSEC.
 
-Type annotations for `boto3.client("route53").activate_key_signing_key` method.
+Type annotations and code completion for `#!python boto3.client("route53").activate_key_signing_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.activate_key_signing_key)
 
-Boto3 documentation:
-[Route53.Client.activate_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.activate_key_signing_key)
+```python title="Method definition"
+def activate_key_signing_key(
+    self,
+    *,
+    HostedZoneId: str,
+    Name: str,
+) -> ActivateKeySigningKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ActivateKeySigningKeyRequestRequestTypeDef](./type_defs.md#activatekeysigningkeyrequestrequesttypedef).
+1. See [:material-code-braces: ActivateKeySigningKeyResponseTypeDef](./type_defs.md#activatekeysigningkeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ActivateKeySigningKeyRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "Name": ...,
+}
 
-Returns
-[ActivateKeySigningKeyResponseTypeDef](./type_defs.md#activatekeysigningkeyresponsetypedef).
+parent.activate_key_signing_key(**kwargs)
+```
 
-<a id="associate\_vpc\_with\_hosted\_zone"></a>
+1. See [:material-code-braces: ActivateKeySigningKeyRequestRequestTypeDef](./type_defs.md#activatekeysigningkeyrequestrequesttypedef) 
 
-### associate_vpc_with_hosted_zone
+### associate\_vpc\_with\_hosted\_zone
 
 Associates an Amazon VPC with a private hosted zone.
 
-Type annotations for `boto3.client("route53").associate_vpc_with_hosted_zone`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").associate_vpc_with_hosted_zone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.associate_vpc_with_hosted_zone)
 
-Boto3 documentation:
-[Route53.Client.associate_vpc_with_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.associate_vpc_with_hosted_zone)
+```python title="Method definition"
+def associate_vpc_with_hosted_zone(
+    self,
+    *,
+    HostedZoneId: str,
+    VPC: VPCTypeDef,  # (1)
+    Comment: str = ...,
+) -> AssociateVPCWithHostedZoneResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AssociateVPCWithHostedZoneRequestRequestTypeDef](./type_defs.md#associatevpcwithhostedzonerequestrequesttypedef).
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
+2. See [:material-code-braces: AssociateVPCWithHostedZoneResponseTypeDef](./type_defs.md#associatevpcwithhostedzoneresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef) *(required)*
-- `Comment`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateVPCWithHostedZoneRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "VPC": ...,
+}
 
-Returns
-[AssociateVPCWithHostedZoneResponseTypeDef](./type_defs.md#associatevpcwithhostedzoneresponsetypedef).
+parent.associate_vpc_with_hosted_zone(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateVPCWithHostedZoneRequestRequestTypeDef](./type_defs.md#associatevpcwithhostedzonerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("route53").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("route53").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.can_paginate)
 
-Boto3 documentation:
-[Route53.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### change\_resource\_record\_sets
 
-Returns `bool`.
+Creates, changes, or deletes a resource record set, which contains authoritative
+DNS information for a specified domain name or subdomain name.
 
-<a id="change\_resource\_record\_sets"></a>
+Type annotations and code completion for `#!python boto3.client("route53").change_resource_record_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_resource_record_sets)
 
-### change_resource_record_sets
+```python title="Method definition"
+def change_resource_record_sets(
+    self,
+    *,
+    HostedZoneId: str,
+    ChangeBatch: ChangeBatchTypeDef,  # (1)
+) -> ChangeResourceRecordSetsResponseTypeDef:  # (2)
+    ...
+```
 
-Creates, changes, or deletes a resource record set, which contains
-authoritative DNS information for a specified domain name or subdomain name.
+1. See [:material-code-braces: ChangeBatchTypeDef](./type_defs.md#changebatchtypedef) 
+2. See [:material-code-braces: ChangeResourceRecordSetsResponseTypeDef](./type_defs.md#changeresourcerecordsetsresponsetypedef) 
 
-Type annotations for `boto3.client("route53").change_resource_record_sets`
-method.
 
-Boto3 documentation:
-[Route53.Client.change_resource_record_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_resource_record_sets)
+```python title="Usage example with kwargs"
+kwargs: ChangeResourceRecordSetsRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "ChangeBatch": ...,
+}
 
-Arguments mapping described in
-[ChangeResourceRecordSetsRequestRequestTypeDef](./type_defs.md#changeresourcerecordsetsrequestrequesttypedef).
+parent.change_resource_record_sets(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ChangeResourceRecordSetsRequestRequestTypeDef](./type_defs.md#changeresourcerecordsetsrequestrequesttypedef) 
 
-- `HostedZoneId`: `str` *(required)*
-- `ChangeBatch`: [ChangeBatchTypeDef](./type_defs.md#changebatchtypedef)
-  *(required)*
-
-Returns
-[ChangeResourceRecordSetsResponseTypeDef](./type_defs.md#changeresourcerecordsetsresponsetypedef).
-
-<a id="change\_tags\_for\_resource"></a>
-
-### change_tags_for_resource
+### change\_tags\_for\_resource
 
 Adds, edits, or deletes tags for a health check or a hosted zone.
 
-Type annotations for `boto3.client("route53").change_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("route53").change_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_tags_for_resource)
 
-Boto3 documentation:
-[Route53.Client.change_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.change_tags_for_resource)
+```python title="Method definition"
+def change_tags_for_resource(
+    self,
+    *,
+    ResourceType: TagResourceTypeType,  # (1)
+    ResourceId: str,
+    AddTags: Sequence[TagTypeDef] = ...,  # (2)
+    RemoveTagKeys: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ChangeTagsForResourceRequestRequestTypeDef](./type_defs.md#changetagsforresourcerequestrequesttypedef).
+1. See [:material-code-brackets: TagResourceTypeType](./literals.md#tagresourcetypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
-  *(required)*
-- `ResourceId`: `str` *(required)*
-- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTagKeys`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ChangeTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceType": ...,
+    "ResourceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.change_tags_for_resource(**kwargs)
+```
 
-<a id="create\_health\_check"></a>
+1. See [:material-code-braces: ChangeTagsForResourceRequestRequestTypeDef](./type_defs.md#changetagsforresourcerequestrequesttypedef) 
 
-### create_health_check
+### create\_health\_check
 
 Creates a new health check.
 
-Type annotations for `boto3.client("route53").create_health_check` method.
+Type annotations and code completion for `#!python boto3.client("route53").create_health_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_health_check)
 
-Boto3 documentation:
-[Route53.Client.create_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_health_check)
+```python title="Method definition"
+def create_health_check(
+    self,
+    *,
+    CallerReference: str,
+    HealthCheckConfig: HealthCheckConfigTypeDef,  # (1)
+) -> CreateHealthCheckResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateHealthCheckRequestRequestTypeDef](./type_defs.md#createhealthcheckrequestrequesttypedef).
+1. See [:material-code-braces: HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef) 
+2. See [:material-code-braces: CreateHealthCheckResponseTypeDef](./type_defs.md#createhealthcheckresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CallerReference`: `str` *(required)*
-- `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateHealthCheckRequestRequestTypeDef = {  # (1)
+    "CallerReference": ...,
+    "HealthCheckConfig": ...,
+}
 
-Returns
-[CreateHealthCheckResponseTypeDef](./type_defs.md#createhealthcheckresponsetypedef).
+parent.create_health_check(**kwargs)
+```
 
-<a id="create\_hosted\_zone"></a>
+1. See [:material-code-braces: CreateHealthCheckRequestRequestTypeDef](./type_defs.md#createhealthcheckrequestrequesttypedef) 
 
-### create_hosted_zone
+### create\_hosted\_zone
 
 Creates a new public or private hosted zone.
 
-Type annotations for `boto3.client("route53").create_hosted_zone` method.
+Type annotations and code completion for `#!python boto3.client("route53").create_hosted_zone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_hosted_zone)
 
-Boto3 documentation:
-[Route53.Client.create_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_hosted_zone)
+```python title="Method definition"
+def create_hosted_zone(
+    self,
+    *,
+    Name: str,
+    CallerReference: str,
+    VPC: VPCTypeDef = ...,  # (1)
+    HostedZoneConfig: HostedZoneConfigTypeDef = ...,  # (2)
+    DelegationSetId: str = ...,
+) -> CreateHostedZoneResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateHostedZoneRequestRequestTypeDef](./type_defs.md#createhostedzonerequestrequesttypedef).
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
+2. See [:material-code-braces: HostedZoneConfigTypeDef](./type_defs.md#hostedzoneconfigtypedef) 
+3. See [:material-code-braces: CreateHostedZoneResponseTypeDef](./type_defs.md#createhostedzoneresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `CallerReference`: `str` *(required)*
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
-- `HostedZoneConfig`:
-  [HostedZoneConfigTypeDef](./type_defs.md#hostedzoneconfigtypedef)
-- `DelegationSetId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateHostedZoneRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "CallerReference": ...,
+}
 
-Returns
-[CreateHostedZoneResponseTypeDef](./type_defs.md#createhostedzoneresponsetypedef).
+parent.create_hosted_zone(**kwargs)
+```
 
-<a id="create\_key\_signing\_key"></a>
+1. See [:material-code-braces: CreateHostedZoneRequestRequestTypeDef](./type_defs.md#createhostedzonerequestrequesttypedef) 
 
-### create_key_signing_key
+### create\_key\_signing\_key
 
 Creates a new key-signing key (KSK) associated with a hosted zone.
 
-Type annotations for `boto3.client("route53").create_key_signing_key` method.
+Type annotations and code completion for `#!python boto3.client("route53").create_key_signing_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_key_signing_key)
 
-Boto3 documentation:
-[Route53.Client.create_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_key_signing_key)
+```python title="Method definition"
+def create_key_signing_key(
+    self,
+    *,
+    CallerReference: str,
+    HostedZoneId: str,
+    KeyManagementServiceArn: str,
+    Name: str,
+    Status: str,
+) -> CreateKeySigningKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateKeySigningKeyRequestRequestTypeDef](./type_defs.md#createkeysigningkeyrequestrequesttypedef).
+1. See [:material-code-braces: CreateKeySigningKeyResponseTypeDef](./type_defs.md#createkeysigningkeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CallerReference`: `str` *(required)*
-- `HostedZoneId`: `str` *(required)*
-- `KeyManagementServiceArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Status`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateKeySigningKeyRequestRequestTypeDef = {  # (1)
+    "CallerReference": ...,
+    "HostedZoneId": ...,
+    "KeyManagementServiceArn": ...,
+    "Name": ...,
+    "Status": ...,
+}
 
-Returns
-[CreateKeySigningKeyResponseTypeDef](./type_defs.md#createkeysigningkeyresponsetypedef).
+parent.create_key_signing_key(**kwargs)
+```
 
-<a id="create\_query\_logging\_config"></a>
+1. See [:material-code-braces: CreateKeySigningKeyRequestRequestTypeDef](./type_defs.md#createkeysigningkeyrequestrequesttypedef) 
 
-### create_query_logging_config
+### create\_query\_logging\_config
 
 Creates a configuration for DNS query logging.
 
-Type annotations for `boto3.client("route53").create_query_logging_config`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").create_query_logging_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_query_logging_config)
 
-Boto3 documentation:
-[Route53.Client.create_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_query_logging_config)
+```python title="Method definition"
+def create_query_logging_config(
+    self,
+    *,
+    HostedZoneId: str,
+    CloudWatchLogsLogGroupArn: str,
+) -> CreateQueryLoggingConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateQueryLoggingConfigRequestRequestTypeDef](./type_defs.md#createqueryloggingconfigrequestrequesttypedef).
+1. See [:material-code-braces: CreateQueryLoggingConfigResponseTypeDef](./type_defs.md#createqueryloggingconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `CloudWatchLogsLogGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateQueryLoggingConfigRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "CloudWatchLogsLogGroupArn": ...,
+}
 
-Returns
-[CreateQueryLoggingConfigResponseTypeDef](./type_defs.md#createqueryloggingconfigresponsetypedef).
+parent.create_query_logging_config(**kwargs)
+```
 
-<a id="create\_reusable\_delegation\_set"></a>
+1. See [:material-code-braces: CreateQueryLoggingConfigRequestRequestTypeDef](./type_defs.md#createqueryloggingconfigrequestrequesttypedef) 
 
-### create_reusable_delegation_set
+### create\_reusable\_delegation\_set
 
 Creates a delegation set (a group of four name servers) that can be reused by
-multiple hosted zones that were created by the same Amazon Web Services
-account.
+multiple hosted zones that were created by the same Amazon Web Services account.
 
-Type annotations for `boto3.client("route53").create_reusable_delegation_set`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").create_reusable_delegation_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_reusable_delegation_set)
 
-Boto3 documentation:
-[Route53.Client.create_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_reusable_delegation_set)
+```python title="Method definition"
+def create_reusable_delegation_set(
+    self,
+    *,
+    CallerReference: str,
+    HostedZoneId: str = ...,
+) -> CreateReusableDelegationSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateReusableDelegationSetRequestRequestTypeDef](./type_defs.md#createreusabledelegationsetrequestrequesttypedef).
+1. See [:material-code-braces: CreateReusableDelegationSetResponseTypeDef](./type_defs.md#createreusabledelegationsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CallerReference`: `str` *(required)*
-- `HostedZoneId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateReusableDelegationSetRequestRequestTypeDef = {  # (1)
+    "CallerReference": ...,
+}
 
-Returns
-[CreateReusableDelegationSetResponseTypeDef](./type_defs.md#createreusabledelegationsetresponsetypedef).
+parent.create_reusable_delegation_set(**kwargs)
+```
 
-<a id="create\_traffic\_policy"></a>
+1. See [:material-code-braces: CreateReusableDelegationSetRequestRequestTypeDef](./type_defs.md#createreusabledelegationsetrequestrequesttypedef) 
 
-### create_traffic_policy
+### create\_traffic\_policy
 
 Creates a traffic policy, which you use to create multiple DNS resource record
 sets for one domain name (such as example.com) or one subdomain name (such as
 www.example.com).
 
-Type annotations for `boto3.client("route53").create_traffic_policy` method.
+Type annotations and code completion for `#!python boto3.client("route53").create_traffic_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy)
 
-Boto3 documentation:
-[Route53.Client.create_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy)
+```python title="Method definition"
+def create_traffic_policy(
+    self,
+    *,
+    Name: str,
+    Document: str,
+    Comment: str = ...,
+) -> CreateTrafficPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateTrafficPolicyRequestRequestTypeDef](./type_defs.md#createtrafficpolicyrequestrequesttypedef).
+1. See [:material-code-braces: CreateTrafficPolicyResponseTypeDef](./type_defs.md#createtrafficpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Document`: `str` *(required)*
-- `Comment`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateTrafficPolicyRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Document": ...,
+}
 
-Returns
-[CreateTrafficPolicyResponseTypeDef](./type_defs.md#createtrafficpolicyresponsetypedef).
+parent.create_traffic_policy(**kwargs)
+```
 
-<a id="create\_traffic\_policy\_instance"></a>
+1. See [:material-code-braces: CreateTrafficPolicyRequestRequestTypeDef](./type_defs.md#createtrafficpolicyrequestrequesttypedef) 
 
-### create_traffic_policy_instance
+### create\_traffic\_policy\_instance
 
-Creates resource record sets in a specified hosted zone based on the settings
-in a specified traffic policy version.
+Creates resource record sets in a specified hosted zone based on the settings in
+a specified traffic policy version.
 
-Type annotations for `boto3.client("route53").create_traffic_policy_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").create_traffic_policy_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_instance)
 
-Boto3 documentation:
-[Route53.Client.create_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_instance)
+```python title="Method definition"
+def create_traffic_policy_instance(
+    self,
+    *,
+    HostedZoneId: str,
+    Name: str,
+    TTL: int,
+    TrafficPolicyId: str,
+    TrafficPolicyVersion: int,
+) -> CreateTrafficPolicyInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#createtrafficpolicyinstancerequestrequesttypedef).
+1. See [:material-code-braces: CreateTrafficPolicyInstanceResponseTypeDef](./type_defs.md#createtrafficpolicyinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `TTL`: `int` *(required)*
-- `TrafficPolicyId`: `str` *(required)*
-- `TrafficPolicyVersion`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTrafficPolicyInstanceRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "Name": ...,
+    "TTL": ...,
+    "TrafficPolicyId": ...,
+    "TrafficPolicyVersion": ...,
+}
 
-Returns
-[CreateTrafficPolicyInstanceResponseTypeDef](./type_defs.md#createtrafficpolicyinstanceresponsetypedef).
+parent.create_traffic_policy_instance(**kwargs)
+```
 
-<a id="create\_traffic\_policy\_version"></a>
+1. See [:material-code-braces: CreateTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#createtrafficpolicyinstancerequestrequesttypedef) 
 
-### create_traffic_policy_version
+### create\_traffic\_policy\_version
 
 Creates a new version of an existing traffic policy.
 
-Type annotations for `boto3.client("route53").create_traffic_policy_version`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").create_traffic_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_version)
 
-Boto3 documentation:
-[Route53.Client.create_traffic_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_traffic_policy_version)
+```python title="Method definition"
+def create_traffic_policy_version(
+    self,
+    *,
+    Id: str,
+    Document: str,
+    Comment: str = ...,
+) -> CreateTrafficPolicyVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateTrafficPolicyVersionRequestRequestTypeDef](./type_defs.md#createtrafficpolicyversionrequestrequesttypedef).
+1. See [:material-code-braces: CreateTrafficPolicyVersionResponseTypeDef](./type_defs.md#createtrafficpolicyversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Document`: `str` *(required)*
-- `Comment`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateTrafficPolicyVersionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Document": ...,
+}
 
-Returns
-[CreateTrafficPolicyVersionResponseTypeDef](./type_defs.md#createtrafficpolicyversionresponsetypedef).
+parent.create_traffic_policy_version(**kwargs)
+```
 
-<a id="create\_vpc\_association\_authorization"></a>
+1. See [:material-code-braces: CreateTrafficPolicyVersionRequestRequestTypeDef](./type_defs.md#createtrafficpolicyversionrequestrequesttypedef) 
 
-### create_vpc_association_authorization
+### create\_vpc\_association\_authorization
 
 Authorizes the Amazon Web Services account that created a specified VPC to
 submit an `AssociateVPCWithHostedZone` request to associate the VPC with a
 specified hosted zone that was created by a different account.
 
-Type annotations for
-`boto3.client("route53").create_vpc_association_authorization` method.
+Type annotations and code completion for `#!python boto3.client("route53").create_vpc_association_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_vpc_association_authorization)
 
-Boto3 documentation:
-[Route53.Client.create_vpc_association_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.create_vpc_association_authorization)
+```python title="Method definition"
+def create_vpc_association_authorization(
+    self,
+    *,
+    HostedZoneId: str,
+    VPC: VPCTypeDef,  # (1)
+) -> CreateVPCAssociationAuthorizationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateVPCAssociationAuthorizationRequestRequestTypeDef](./type_defs.md#createvpcassociationauthorizationrequestrequesttypedef).
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
+2. See [:material-code-braces: CreateVPCAssociationAuthorizationResponseTypeDef](./type_defs.md#createvpcassociationauthorizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateVPCAssociationAuthorizationRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "VPC": ...,
+}
 
-Returns
-[CreateVPCAssociationAuthorizationResponseTypeDef](./type_defs.md#createvpcassociationauthorizationresponsetypedef).
+parent.create_vpc_association_authorization(**kwargs)
+```
 
-<a id="deactivate\_key\_signing\_key"></a>
+1. See [:material-code-braces: CreateVPCAssociationAuthorizationRequestRequestTypeDef](./type_defs.md#createvpcassociationauthorizationrequestrequesttypedef) 
 
-### deactivate_key_signing_key
+### deactivate\_key\_signing\_key
 
 Deactivates a key-signing key (KSK) so that it will not be used for signing by
 DNSSEC.
 
-Type annotations for `boto3.client("route53").deactivate_key_signing_key`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").deactivate_key_signing_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.deactivate_key_signing_key)
 
-Boto3 documentation:
-[Route53.Client.deactivate_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.deactivate_key_signing_key)
+```python title="Method definition"
+def deactivate_key_signing_key(
+    self,
+    *,
+    HostedZoneId: str,
+    Name: str,
+) -> DeactivateKeySigningKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeactivateKeySigningKeyRequestRequestTypeDef](./type_defs.md#deactivatekeysigningkeyrequestrequesttypedef).
+1. See [:material-code-braces: DeactivateKeySigningKeyResponseTypeDef](./type_defs.md#deactivatekeysigningkeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeactivateKeySigningKeyRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "Name": ...,
+}
 
-Returns
-[DeactivateKeySigningKeyResponseTypeDef](./type_defs.md#deactivatekeysigningkeyresponsetypedef).
+parent.deactivate_key_signing_key(**kwargs)
+```
 
-<a id="delete\_health\_check"></a>
+1. See [:material-code-braces: DeactivateKeySigningKeyRequestRequestTypeDef](./type_defs.md#deactivatekeysigningkeyrequestrequesttypedef) 
 
-### delete_health_check
+### delete\_health\_check
 
 Deletes a health check.
 
-Type annotations for `boto3.client("route53").delete_health_check` method.
+Type annotations and code completion for `#!python boto3.client("route53").delete_health_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_health_check)
 
-Boto3 documentation:
-[Route53.Client.delete_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_health_check)
+```python title="Method definition"
+def delete_health_check(
+    self,
+    *,
+    HealthCheckId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteHealthCheckRequestRequestTypeDef](./type_defs.md#deletehealthcheckrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `HealthCheckId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteHealthCheckRequestRequestTypeDef = {  # (1)
+    "HealthCheckId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_health_check(**kwargs)
+```
 
-<a id="delete\_hosted\_zone"></a>
+1. See [:material-code-braces: DeleteHealthCheckRequestRequestTypeDef](./type_defs.md#deletehealthcheckrequestrequesttypedef) 
 
-### delete_hosted_zone
+### delete\_hosted\_zone
 
 Deletes a hosted zone.
 
-Type annotations for `boto3.client("route53").delete_hosted_zone` method.
+Type annotations and code completion for `#!python boto3.client("route53").delete_hosted_zone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_hosted_zone)
 
-Boto3 documentation:
-[Route53.Client.delete_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_hosted_zone)
+```python title="Method definition"
+def delete_hosted_zone(
+    self,
+    *,
+    Id: str,
+) -> DeleteHostedZoneResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteHostedZoneRequestRequestTypeDef](./type_defs.md#deletehostedzonerequestrequesttypedef).
+1. See [:material-code-braces: DeleteHostedZoneResponseTypeDef](./type_defs.md#deletehostedzoneresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteHostedZoneRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DeleteHostedZoneResponseTypeDef](./type_defs.md#deletehostedzoneresponsetypedef).
+parent.delete_hosted_zone(**kwargs)
+```
 
-<a id="delete\_key\_signing\_key"></a>
+1. See [:material-code-braces: DeleteHostedZoneRequestRequestTypeDef](./type_defs.md#deletehostedzonerequestrequesttypedef) 
 
-### delete_key_signing_key
+### delete\_key\_signing\_key
 
 Deletes a key-signing key (KSK).
 
-Type annotations for `boto3.client("route53").delete_key_signing_key` method.
+Type annotations and code completion for `#!python boto3.client("route53").delete_key_signing_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_key_signing_key)
 
-Boto3 documentation:
-[Route53.Client.delete_key_signing_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_key_signing_key)
+```python title="Method definition"
+def delete_key_signing_key(
+    self,
+    *,
+    HostedZoneId: str,
+    Name: str,
+) -> DeleteKeySigningKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteKeySigningKeyRequestRequestTypeDef](./type_defs.md#deletekeysigningkeyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteKeySigningKeyResponseTypeDef](./type_defs.md#deletekeysigningkeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteKeySigningKeyRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "Name": ...,
+}
 
-Returns
-[DeleteKeySigningKeyResponseTypeDef](./type_defs.md#deletekeysigningkeyresponsetypedef).
+parent.delete_key_signing_key(**kwargs)
+```
 
-<a id="delete\_query\_logging\_config"></a>
+1. See [:material-code-braces: DeleteKeySigningKeyRequestRequestTypeDef](./type_defs.md#deletekeysigningkeyrequestrequesttypedef) 
 
-### delete_query_logging_config
+### delete\_query\_logging\_config
 
 Deletes a configuration for DNS query logging.
 
-Type annotations for `boto3.client("route53").delete_query_logging_config`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").delete_query_logging_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_query_logging_config)
 
-Boto3 documentation:
-[Route53.Client.delete_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_query_logging_config)
+```python title="Method definition"
+def delete_query_logging_config(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteQueryLoggingConfigRequestRequestTypeDef](./type_defs.md#deletequeryloggingconfigrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteQueryLoggingConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_query_logging_config(**kwargs)
+```
 
-<a id="delete\_reusable\_delegation\_set"></a>
+1. See [:material-code-braces: DeleteQueryLoggingConfigRequestRequestTypeDef](./type_defs.md#deletequeryloggingconfigrequestrequesttypedef) 
 
-### delete_reusable_delegation_set
+### delete\_reusable\_delegation\_set
 
 Deletes a reusable delegation set.
 
-Type annotations for `boto3.client("route53").delete_reusable_delegation_set`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").delete_reusable_delegation_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_reusable_delegation_set)
 
-Boto3 documentation:
-[Route53.Client.delete_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_reusable_delegation_set)
+```python title="Method definition"
+def delete_reusable_delegation_set(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteReusableDelegationSetRequestRequestTypeDef](./type_defs.md#deletereusabledelegationsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReusableDelegationSetRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_reusable_delegation_set(**kwargs)
+```
 
-<a id="delete\_traffic\_policy"></a>
+1. See [:material-code-braces: DeleteReusableDelegationSetRequestRequestTypeDef](./type_defs.md#deletereusabledelegationsetrequestrequesttypedef) 
 
-### delete_traffic_policy
+### delete\_traffic\_policy
 
 Deletes a traffic policy.
 
-Type annotations for `boto3.client("route53").delete_traffic_policy` method.
+Type annotations and code completion for `#!python boto3.client("route53").delete_traffic_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy)
 
-Boto3 documentation:
-[Route53.Client.delete_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy)
+```python title="Method definition"
+def delete_traffic_policy(
+    self,
+    *,
+    Id: str,
+    Version: int,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTrafficPolicyRequestRequestTypeDef](./type_defs.md#deletetrafficpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Version`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTrafficPolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Version": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_traffic_policy(**kwargs)
+```
 
-<a id="delete\_traffic\_policy\_instance"></a>
+1. See [:material-code-braces: DeleteTrafficPolicyRequestRequestTypeDef](./type_defs.md#deletetrafficpolicyrequestrequesttypedef) 
 
-### delete_traffic_policy_instance
+### delete\_traffic\_policy\_instance
 
 Deletes a traffic policy instance and all of the resource record sets that
 Amazon Route 53 created when you created the instance.
 
-Type annotations for `boto3.client("route53").delete_traffic_policy_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").delete_traffic_policy_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy_instance)
 
-Boto3 documentation:
-[Route53.Client.delete_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_traffic_policy_instance)
+```python title="Method definition"
+def delete_traffic_policy_instance(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#deletetrafficpolicyinstancerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTrafficPolicyInstanceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_traffic_policy_instance(**kwargs)
+```
 
-<a id="delete\_vpc\_association\_authorization"></a>
+1. See [:material-code-braces: DeleteTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#deletetrafficpolicyinstancerequestrequesttypedef) 
 
-### delete_vpc_association_authorization
+### delete\_vpc\_association\_authorization
 
 Removes authorization to submit an `AssociateVPCWithHostedZone` request to
 associate a specified VPC with a hosted zone that was created by a different
 account.
 
-Type annotations for
-`boto3.client("route53").delete_vpc_association_authorization` method.
+Type annotations and code completion for `#!python boto3.client("route53").delete_vpc_association_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_vpc_association_authorization)
 
-Boto3 documentation:
-[Route53.Client.delete_vpc_association_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.delete_vpc_association_authorization)
+```python title="Method definition"
+def delete_vpc_association_authorization(
+    self,
+    *,
+    HostedZoneId: str,
+    VPC: VPCTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVPCAssociationAuthorizationRequestRequestTypeDef](./type_defs.md#deletevpcassociationauthorizationrequestrequesttypedef).
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVPCAssociationAuthorizationRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "VPC": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_vpc_association_authorization(**kwargs)
+```
 
-<a id="disable\_hosted\_zone\_dnssec"></a>
+1. See [:material-code-braces: DeleteVPCAssociationAuthorizationRequestRequestTypeDef](./type_defs.md#deletevpcassociationauthorizationrequestrequesttypedef) 
 
-### disable_hosted_zone_dnssec
+### disable\_hosted\_zone\_dnssec
 
 Disables DNSSEC signing in a specific hosted zone.
 
-Type annotations for `boto3.client("route53").disable_hosted_zone_dnssec`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").disable_hosted_zone_dnssec` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disable_hosted_zone_dnssec)
 
-Boto3 documentation:
-[Route53.Client.disable_hosted_zone_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disable_hosted_zone_dnssec)
+```python title="Method definition"
+def disable_hosted_zone_dnssec(
+    self,
+    *,
+    HostedZoneId: str,
+) -> DisableHostedZoneDNSSECResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisableHostedZoneDNSSECRequestRequestTypeDef](./type_defs.md#disablehostedzonednssecrequestrequesttypedef).
+1. See [:material-code-braces: DisableHostedZoneDNSSECResponseTypeDef](./type_defs.md#disablehostedzonednssecresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableHostedZoneDNSSECRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
 
-Returns
-[DisableHostedZoneDNSSECResponseTypeDef](./type_defs.md#disablehostedzonednssecresponsetypedef).
+parent.disable_hosted_zone_dnssec(**kwargs)
+```
 
-<a id="disassociate\_vpc\_from\_hosted\_zone"></a>
+1. See [:material-code-braces: DisableHostedZoneDNSSECRequestRequestTypeDef](./type_defs.md#disablehostedzonednssecrequestrequesttypedef) 
 
-### disassociate_vpc_from_hosted_zone
+### disassociate\_vpc\_from\_hosted\_zone
 
 Disassociates an Amazon Virtual Private Cloud (Amazon VPC) from an Amazon Route
 53 private hosted zone.
 
-Type annotations for
-`boto3.client("route53").disassociate_vpc_from_hosted_zone` method.
+Type annotations and code completion for `#!python boto3.client("route53").disassociate_vpc_from_hosted_zone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disassociate_vpc_from_hosted_zone)
 
-Boto3 documentation:
-[Route53.Client.disassociate_vpc_from_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.disassociate_vpc_from_hosted_zone)
+```python title="Method definition"
+def disassociate_vpc_from_hosted_zone(
+    self,
+    *,
+    HostedZoneId: str,
+    VPC: VPCTypeDef,  # (1)
+    Comment: str = ...,
+) -> DisassociateVPCFromHostedZoneResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateVPCFromHostedZoneRequestRequestTypeDef](./type_defs.md#disassociatevpcfromhostedzonerequestrequesttypedef).
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
+2. See [:material-code-braces: DisassociateVPCFromHostedZoneResponseTypeDef](./type_defs.md#disassociatevpcfromhostedzoneresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef) *(required)*
-- `Comment`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateVPCFromHostedZoneRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "VPC": ...,
+}
 
-Returns
-[DisassociateVPCFromHostedZoneResponseTypeDef](./type_defs.md#disassociatevpcfromhostedzoneresponsetypedef).
+parent.disassociate_vpc_from_hosted_zone(**kwargs)
+```
 
-<a id="enable\_hosted\_zone\_dnssec"></a>
+1. See [:material-code-braces: DisassociateVPCFromHostedZoneRequestRequestTypeDef](./type_defs.md#disassociatevpcfromhostedzonerequestrequesttypedef) 
 
-### enable_hosted_zone_dnssec
+### enable\_hosted\_zone\_dnssec
 
 Enables DNSSEC signing in a specific hosted zone.
 
-Type annotations for `boto3.client("route53").enable_hosted_zone_dnssec`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").enable_hosted_zone_dnssec` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.enable_hosted_zone_dnssec)
 
-Boto3 documentation:
-[Route53.Client.enable_hosted_zone_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.enable_hosted_zone_dnssec)
+```python title="Method definition"
+def enable_hosted_zone_dnssec(
+    self,
+    *,
+    HostedZoneId: str,
+) -> EnableHostedZoneDNSSECResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EnableHostedZoneDNSSECRequestRequestTypeDef](./type_defs.md#enablehostedzonednssecrequestrequesttypedef).
+1. See [:material-code-braces: EnableHostedZoneDNSSECResponseTypeDef](./type_defs.md#enablehostedzonednssecresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableHostedZoneDNSSECRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
 
-Returns
-[EnableHostedZoneDNSSECResponseTypeDef](./type_defs.md#enablehostedzonednssecresponsetypedef).
+parent.enable_hosted_zone_dnssec(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableHostedZoneDNSSECRequestRequestTypeDef](./type_defs.md#enablehostedzonednssecrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("route53").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("route53").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Route53.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_account\_limit"></a>
-
-### get_account_limit
+### get\_account\_limit
 
 Gets the specified limit for the current account, for example, the maximum
 number of health checks that you can create using the account.
 
-Type annotations for `boto3.client("route53").get_account_limit` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_account_limit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_account_limit)
 
-Boto3 documentation:
-[Route53.Client.get_account_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_account_limit)
+```python title="Method definition"
+def get_account_limit(
+    self,
+    *,
+    Type: AccountLimitTypeType,  # (1)
+) -> GetAccountLimitResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetAccountLimitRequestRequestTypeDef](./type_defs.md#getaccountlimitrequestrequesttypedef).
+1. See [:material-code-brackets: AccountLimitTypeType](./literals.md#accountlimittypetype) 
+2. See [:material-code-braces: GetAccountLimitResponseTypeDef](./type_defs.md#getaccountlimitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [AccountLimitTypeType](./literals.md#accountlimittypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccountLimitRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns
-[GetAccountLimitResponseTypeDef](./type_defs.md#getaccountlimitresponsetypedef).
+parent.get_account_limit(**kwargs)
+```
 
-<a id="get\_change"></a>
+1. See [:material-code-braces: GetAccountLimitRequestRequestTypeDef](./type_defs.md#getaccountlimitrequestrequesttypedef) 
 
-### get_change
+### get\_change
 
 Returns the current status of a change batch request.
 
-Type annotations for `boto3.client("route53").get_change` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_change` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_change)
 
-Boto3 documentation:
-[Route53.Client.get_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_change)
+```python title="Method definition"
+def get_change(
+    self,
+    *,
+    Id: str,
+) -> GetChangeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChangeRequestRequestTypeDef](./type_defs.md#getchangerequestrequesttypedef).
+1. See [:material-code-braces: GetChangeResponseTypeDef](./type_defs.md#getchangeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetChangeRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns [GetChangeResponseTypeDef](./type_defs.md#getchangeresponsetypedef).
+parent.get_change(**kwargs)
+```
 
-<a id="get\_checker\_ip\_ranges"></a>
+1. See [:material-code-braces: GetChangeRequestRequestTypeDef](./type_defs.md#getchangerequestrequesttypedef) 
 
-### get_checker_ip_ranges
+### get\_checker\_ip\_ranges
 
 Route 53 does not perform authorization for this API because it retrieves
 information that is already available to the public.
 
-Type annotations for `boto3.client("route53").get_checker_ip_ranges` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_checker_ip_ranges` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_checker_ip_ranges)
 
-Boto3 documentation:
-[Route53.Client.get_checker_ip_ranges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_checker_ip_ranges)
+```python title="Method definition"
+def get_checker_ip_ranges(
+    self,
+) -> GetCheckerIpRangesResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetCheckerIpRangesResponseTypeDef](./type_defs.md#getcheckeriprangesresponsetypedef).
+1. See [:material-code-braces: GetCheckerIpRangesResponseTypeDef](./type_defs.md#getcheckeriprangesresponsetypedef) 
 
-<a id="get\_dnssec"></a>
-
-### get_dnssec
+### get\_dnssec
 
 Returns information about DNSSEC for a specific hosted zone, including the key-
 signing keys (KSKs) in the hosted zone.
 
-Type annotations for `boto3.client("route53").get_dnssec` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_dnssec` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_dnssec)
 
-Boto3 documentation:
-[Route53.Client.get_dnssec](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_dnssec)
+```python title="Method definition"
+def get_dnssec(
+    self,
+    *,
+    HostedZoneId: str,
+) -> GetDNSSECResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDNSSECRequestRequestTypeDef](./type_defs.md#getdnssecrequestrequesttypedef).
+1. See [:material-code-braces: GetDNSSECResponseTypeDef](./type_defs.md#getdnssecresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDNSSECRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
 
-Returns [GetDNSSECResponseTypeDef](./type_defs.md#getdnssecresponsetypedef).
+parent.get_dnssec(**kwargs)
+```
 
-<a id="get\_geo\_location"></a>
+1. See [:material-code-braces: GetDNSSECRequestRequestTypeDef](./type_defs.md#getdnssecrequestrequesttypedef) 
 
-### get_geo_location
+### get\_geo\_location
 
 Gets information about whether a specified geographic location is supported for
 Amazon Route 53 geolocation resource record sets.
 
-Type annotations for `boto3.client("route53").get_geo_location` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_geo_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_geo_location)
 
-Boto3 documentation:
-[Route53.Client.get_geo_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_geo_location)
+```python title="Method definition"
+def get_geo_location(
+    self,
+    *,
+    ContinentCode: str = ...,
+    CountryCode: str = ...,
+    SubdivisionCode: str = ...,
+) -> GetGeoLocationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGeoLocationRequestRequestTypeDef](./type_defs.md#getgeolocationrequestrequesttypedef).
+1. See [:material-code-braces: GetGeoLocationResponseTypeDef](./type_defs.md#getgeolocationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ContinentCode`: `str`
-- `CountryCode`: `str`
-- `SubdivisionCode`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetGeoLocationRequestRequestTypeDef = {  # (1)
+    "ContinentCode": ...,
+}
 
-Returns
-[GetGeoLocationResponseTypeDef](./type_defs.md#getgeolocationresponsetypedef).
+parent.get_geo_location(**kwargs)
+```
 
-<a id="get\_health\_check"></a>
+1. See [:material-code-braces: GetGeoLocationRequestRequestTypeDef](./type_defs.md#getgeolocationrequestrequesttypedef) 
 
-### get_health_check
+### get\_health\_check
 
 Gets information about a specified health check.
 
-Type annotations for `boto3.client("route53").get_health_check` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_health_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check)
 
-Boto3 documentation:
-[Route53.Client.get_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check)
+```python title="Method definition"
+def get_health_check(
+    self,
+    *,
+    HealthCheckId: str,
+) -> GetHealthCheckResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetHealthCheckRequestRequestTypeDef](./type_defs.md#gethealthcheckrequestrequesttypedef).
+1. See [:material-code-braces: GetHealthCheckResponseTypeDef](./type_defs.md#gethealthcheckresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HealthCheckId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetHealthCheckRequestRequestTypeDef = {  # (1)
+    "HealthCheckId": ...,
+}
 
-Returns
-[GetHealthCheckResponseTypeDef](./type_defs.md#gethealthcheckresponsetypedef).
+parent.get_health_check(**kwargs)
+```
 
-<a id="get\_health\_check\_count"></a>
+1. See [:material-code-braces: GetHealthCheckRequestRequestTypeDef](./type_defs.md#gethealthcheckrequestrequesttypedef) 
 
-### get_health_check_count
+### get\_health\_check\_count
 
 Retrieves the number of health checks that are associated with the current
 Amazon Web Services account.
 
-Type annotations for `boto3.client("route53").get_health_check_count` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_health_check_count` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_count)
 
-Boto3 documentation:
-[Route53.Client.get_health_check_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_count)
+```python title="Method definition"
+def get_health_check_count(
+    self,
+) -> GetHealthCheckCountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetHealthCheckCountResponseTypeDef](./type_defs.md#gethealthcheckcountresponsetypedef).
+1. See [:material-code-braces: GetHealthCheckCountResponseTypeDef](./type_defs.md#gethealthcheckcountresponsetypedef) 
 
-<a id="get\_health\_check\_last\_failure\_reason"></a>
-
-### get_health_check_last_failure_reason
+### get\_health\_check\_last\_failure\_reason
 
 Gets the reason that a specified health check failed most recently.
 
-Type annotations for
-`boto3.client("route53").get_health_check_last_failure_reason` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_health_check_last_failure_reason` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_last_failure_reason)
 
-Boto3 documentation:
-[Route53.Client.get_health_check_last_failure_reason](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_last_failure_reason)
+```python title="Method definition"
+def get_health_check_last_failure_reason(
+    self,
+    *,
+    HealthCheckId: str,
+) -> GetHealthCheckLastFailureReasonResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetHealthCheckLastFailureReasonRequestRequestTypeDef](./type_defs.md#gethealthchecklastfailurereasonrequestrequesttypedef).
+1. See [:material-code-braces: GetHealthCheckLastFailureReasonResponseTypeDef](./type_defs.md#gethealthchecklastfailurereasonresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HealthCheckId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetHealthCheckLastFailureReasonRequestRequestTypeDef = {  # (1)
+    "HealthCheckId": ...,
+}
 
-Returns
-[GetHealthCheckLastFailureReasonResponseTypeDef](./type_defs.md#gethealthchecklastfailurereasonresponsetypedef).
+parent.get_health_check_last_failure_reason(**kwargs)
+```
 
-<a id="get\_health\_check\_status"></a>
+1. See [:material-code-braces: GetHealthCheckLastFailureReasonRequestRequestTypeDef](./type_defs.md#gethealthchecklastfailurereasonrequestrequesttypedef) 
 
-### get_health_check_status
+### get\_health\_check\_status
 
 Gets status of a specified health check.
 
-Type annotations for `boto3.client("route53").get_health_check_status` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_health_check_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_status)
 
-Boto3 documentation:
-[Route53.Client.get_health_check_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_health_check_status)
+```python title="Method definition"
+def get_health_check_status(
+    self,
+    *,
+    HealthCheckId: str,
+) -> GetHealthCheckStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetHealthCheckStatusRequestRequestTypeDef](./type_defs.md#gethealthcheckstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetHealthCheckStatusResponseTypeDef](./type_defs.md#gethealthcheckstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HealthCheckId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetHealthCheckStatusRequestRequestTypeDef = {  # (1)
+    "HealthCheckId": ...,
+}
 
-Returns
-[GetHealthCheckStatusResponseTypeDef](./type_defs.md#gethealthcheckstatusresponsetypedef).
+parent.get_health_check_status(**kwargs)
+```
 
-<a id="get\_hosted\_zone"></a>
+1. See [:material-code-braces: GetHealthCheckStatusRequestRequestTypeDef](./type_defs.md#gethealthcheckstatusrequestrequesttypedef) 
 
-### get_hosted_zone
+### get\_hosted\_zone
 
 Gets information about a specified hosted zone including the four name servers
 assigned to the hosted zone.
 
-Type annotations for `boto3.client("route53").get_hosted_zone` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_hosted_zone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone)
 
-Boto3 documentation:
-[Route53.Client.get_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone)
+```python title="Method definition"
+def get_hosted_zone(
+    self,
+    *,
+    Id: str,
+) -> GetHostedZoneResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetHostedZoneRequestRequestTypeDef](./type_defs.md#gethostedzonerequestrequesttypedef).
+1. See [:material-code-braces: GetHostedZoneResponseTypeDef](./type_defs.md#gethostedzoneresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetHostedZoneRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetHostedZoneResponseTypeDef](./type_defs.md#gethostedzoneresponsetypedef).
+parent.get_hosted_zone(**kwargs)
+```
 
-<a id="get\_hosted\_zone\_count"></a>
+1. See [:material-code-braces: GetHostedZoneRequestRequestTypeDef](./type_defs.md#gethostedzonerequestrequesttypedef) 
 
-### get_hosted_zone_count
+### get\_hosted\_zone\_count
 
-Retrieves the number of hosted zones that are associated with the current
-Amazon Web Services account.
+Retrieves the number of hosted zones that are associated with the current Amazon
+Web Services account.
 
-Type annotations for `boto3.client("route53").get_hosted_zone_count` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_hosted_zone_count` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_count)
 
-Boto3 documentation:
-[Route53.Client.get_hosted_zone_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_count)
+```python title="Method definition"
+def get_hosted_zone_count(
+    self,
+) -> GetHostedZoneCountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetHostedZoneCountResponseTypeDef](./type_defs.md#gethostedzonecountresponsetypedef).
+1. See [:material-code-braces: GetHostedZoneCountResponseTypeDef](./type_defs.md#gethostedzonecountresponsetypedef) 
 
-<a id="get\_hosted\_zone\_limit"></a>
-
-### get_hosted_zone_limit
+### get\_hosted\_zone\_limit
 
 Gets the specified limit for a specified hosted zone, for example, the maximum
 number of records that you can create in the hosted zone.
 
-Type annotations for `boto3.client("route53").get_hosted_zone_limit` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_hosted_zone_limit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_limit)
 
-Boto3 documentation:
-[Route53.Client.get_hosted_zone_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_hosted_zone_limit)
+```python title="Method definition"
+def get_hosted_zone_limit(
+    self,
+    *,
+    Type: HostedZoneLimitTypeType,  # (1)
+    HostedZoneId: str,
+) -> GetHostedZoneLimitResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetHostedZoneLimitRequestRequestTypeDef](./type_defs.md#gethostedzonelimitrequestrequesttypedef).
+1. See [:material-code-brackets: HostedZoneLimitTypeType](./literals.md#hostedzonelimittypetype) 
+2. See [:material-code-braces: GetHostedZoneLimitResponseTypeDef](./type_defs.md#gethostedzonelimitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [HostedZoneLimitTypeType](./literals.md#hostedzonelimittypetype)
-  *(required)*
-- `HostedZoneId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetHostedZoneLimitRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+    "HostedZoneId": ...,
+}
 
-Returns
-[GetHostedZoneLimitResponseTypeDef](./type_defs.md#gethostedzonelimitresponsetypedef).
+parent.get_hosted_zone_limit(**kwargs)
+```
 
-<a id="get\_query\_logging\_config"></a>
+1. See [:material-code-braces: GetHostedZoneLimitRequestRequestTypeDef](./type_defs.md#gethostedzonelimitrequestrequesttypedef) 
 
-### get_query_logging_config
+### get\_query\_logging\_config
 
 Gets information about a specified configuration for DNS query logging.
 
-Type annotations for `boto3.client("route53").get_query_logging_config` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_query_logging_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_query_logging_config)
 
-Boto3 documentation:
-[Route53.Client.get_query_logging_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_query_logging_config)
+```python title="Method definition"
+def get_query_logging_config(
+    self,
+    *,
+    Id: str,
+) -> GetQueryLoggingConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQueryLoggingConfigRequestRequestTypeDef](./type_defs.md#getqueryloggingconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetQueryLoggingConfigResponseTypeDef](./type_defs.md#getqueryloggingconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetQueryLoggingConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetQueryLoggingConfigResponseTypeDef](./type_defs.md#getqueryloggingconfigresponsetypedef).
+parent.get_query_logging_config(**kwargs)
+```
 
-<a id="get\_reusable\_delegation\_set"></a>
+1. See [:material-code-braces: GetQueryLoggingConfigRequestRequestTypeDef](./type_defs.md#getqueryloggingconfigrequestrequesttypedef) 
 
-### get_reusable_delegation_set
+### get\_reusable\_delegation\_set
 
 Retrieves information about a specified reusable delegation set, including the
 four name servers that are assigned to the delegation set.
 
-Type annotations for `boto3.client("route53").get_reusable_delegation_set`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").get_reusable_delegation_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set)
 
-Boto3 documentation:
-[Route53.Client.get_reusable_delegation_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set)
+```python title="Method definition"
+def get_reusable_delegation_set(
+    self,
+    *,
+    Id: str,
+) -> GetReusableDelegationSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetReusableDelegationSetRequestRequestTypeDef](./type_defs.md#getreusabledelegationsetrequestrequesttypedef).
+1. See [:material-code-braces: GetReusableDelegationSetResponseTypeDef](./type_defs.md#getreusabledelegationsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetReusableDelegationSetRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetReusableDelegationSetResponseTypeDef](./type_defs.md#getreusabledelegationsetresponsetypedef).
+parent.get_reusable_delegation_set(**kwargs)
+```
 
-<a id="get\_reusable\_delegation\_set\_limit"></a>
+1. See [:material-code-braces: GetReusableDelegationSetRequestRequestTypeDef](./type_defs.md#getreusabledelegationsetrequestrequesttypedef) 
 
-### get_reusable_delegation_set_limit
+### get\_reusable\_delegation\_set\_limit
 
 Gets the maximum number of hosted zones that you can associate with the
 specified reusable delegation set.
 
-Type annotations for
-`boto3.client("route53").get_reusable_delegation_set_limit` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_reusable_delegation_set_limit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set_limit)
 
-Boto3 documentation:
-[Route53.Client.get_reusable_delegation_set_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_reusable_delegation_set_limit)
+```python title="Method definition"
+def get_reusable_delegation_set_limit(
+    self,
+    *,
+    Type: ReusableDelegationSetLimitTypeType,  # (1)
+    DelegationSetId: str,
+) -> GetReusableDelegationSetLimitResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetReusableDelegationSetLimitRequestRequestTypeDef](./type_defs.md#getreusabledelegationsetlimitrequestrequesttypedef).
+1. See [:material-code-brackets: ReusableDelegationSetLimitTypeType](./literals.md#reusabledelegationsetlimittypetype) 
+2. See [:material-code-braces: GetReusableDelegationSetLimitResponseTypeDef](./type_defs.md#getreusabledelegationsetlimitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Type`: `Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET']` (see
-  [ReusableDelegationSetLimitTypeType](./literals.md#reusabledelegationsetlimittypetype))
-  *(required)*
-- `DelegationSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetReusableDelegationSetLimitRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+    "DelegationSetId": ...,
+}
 
-Returns
-[GetReusableDelegationSetLimitResponseTypeDef](./type_defs.md#getreusabledelegationsetlimitresponsetypedef).
+parent.get_reusable_delegation_set_limit(**kwargs)
+```
 
-<a id="get\_traffic\_policy"></a>
+1. See [:material-code-braces: GetReusableDelegationSetLimitRequestRequestTypeDef](./type_defs.md#getreusabledelegationsetlimitrequestrequesttypedef) 
 
-### get_traffic_policy
+### get\_traffic\_policy
 
 Gets information about a specific traffic policy version.
 
-Type annotations for `boto3.client("route53").get_traffic_policy` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_traffic_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy)
 
-Boto3 documentation:
-[Route53.Client.get_traffic_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy)
+```python title="Method definition"
+def get_traffic_policy(
+    self,
+    *,
+    Id: str,
+    Version: int,
+) -> GetTrafficPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTrafficPolicyRequestRequestTypeDef](./type_defs.md#gettrafficpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetTrafficPolicyResponseTypeDef](./type_defs.md#gettrafficpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Version`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTrafficPolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Version": ...,
+}
 
-Returns
-[GetTrafficPolicyResponseTypeDef](./type_defs.md#gettrafficpolicyresponsetypedef).
+parent.get_traffic_policy(**kwargs)
+```
 
-<a id="get\_traffic\_policy\_instance"></a>
+1. See [:material-code-braces: GetTrafficPolicyRequestRequestTypeDef](./type_defs.md#gettrafficpolicyrequestrequesttypedef) 
 
-### get_traffic_policy_instance
+### get\_traffic\_policy\_instance
 
 Gets information about a specified traffic policy instance.
 
-Type annotations for `boto3.client("route53").get_traffic_policy_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").get_traffic_policy_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance)
 
-Boto3 documentation:
-[Route53.Client.get_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance)
+```python title="Method definition"
+def get_traffic_policy_instance(
+    self,
+    *,
+    Id: str,
+) -> GetTrafficPolicyInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#gettrafficpolicyinstancerequestrequesttypedef).
+1. See [:material-code-braces: GetTrafficPolicyInstanceResponseTypeDef](./type_defs.md#gettrafficpolicyinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTrafficPolicyInstanceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetTrafficPolicyInstanceResponseTypeDef](./type_defs.md#gettrafficpolicyinstanceresponsetypedef).
+parent.get_traffic_policy_instance(**kwargs)
+```
 
-<a id="get\_traffic\_policy\_instance\_count"></a>
+1. See [:material-code-braces: GetTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#gettrafficpolicyinstancerequestrequesttypedef) 
 
-### get_traffic_policy_instance_count
+### get\_traffic\_policy\_instance\_count
 
-Gets the number of traffic policy instances that are associated with the
-current Amazon Web Services account.
+Gets the number of traffic policy instances that are associated with the current
+Amazon Web Services account.
 
-Type annotations for
-`boto3.client("route53").get_traffic_policy_instance_count` method.
+Type annotations and code completion for `#!python boto3.client("route53").get_traffic_policy_instance_count` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance_count)
 
-Boto3 documentation:
-[Route53.Client.get_traffic_policy_instance_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.get_traffic_policy_instance_count)
+```python title="Method definition"
+def get_traffic_policy_instance_count(
+    self,
+) -> GetTrafficPolicyInstanceCountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetTrafficPolicyInstanceCountResponseTypeDef](./type_defs.md#gettrafficpolicyinstancecountresponsetypedef).
+1. See [:material-code-braces: GetTrafficPolicyInstanceCountResponseTypeDef](./type_defs.md#gettrafficpolicyinstancecountresponsetypedef) 
 
-<a id="list\_geo\_locations"></a>
-
-### list_geo_locations
+### list\_geo\_locations
 
 Retrieves a list of supported geographic locations.
 
-Type annotations for `boto3.client("route53").list_geo_locations` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_geo_locations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_geo_locations)
 
-Boto3 documentation:
-[Route53.Client.list_geo_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_geo_locations)
+```python title="Method definition"
+def list_geo_locations(
+    self,
+    *,
+    StartContinentCode: str = ...,
+    StartCountryCode: str = ...,
+    StartSubdivisionCode: str = ...,
+    MaxItems: str = ...,
+) -> ListGeoLocationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGeoLocationsRequestRequestTypeDef](./type_defs.md#listgeolocationsrequestrequesttypedef).
+1. See [:material-code-braces: ListGeoLocationsResponseTypeDef](./type_defs.md#listgeolocationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StartContinentCode`: `str`
-- `StartCountryCode`: `str`
-- `StartSubdivisionCode`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGeoLocationsRequestRequestTypeDef = {  # (1)
+    "StartContinentCode": ...,
+}
 
-Returns
-[ListGeoLocationsResponseTypeDef](./type_defs.md#listgeolocationsresponsetypedef).
+parent.list_geo_locations(**kwargs)
+```
 
-<a id="list\_health\_checks"></a>
+1. See [:material-code-braces: ListGeoLocationsRequestRequestTypeDef](./type_defs.md#listgeolocationsrequestrequesttypedef) 
 
-### list_health_checks
+### list\_health\_checks
 
-Retrieve a list of the health checks that are associated with the current
-Amazon Web Services account.
+Retrieve a list of the health checks that are associated with the current Amazon
+Web Services account.
 
-Type annotations for `boto3.client("route53").list_health_checks` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_health_checks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_health_checks)
 
-Boto3 documentation:
-[Route53.Client.list_health_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_health_checks)
+```python title="Method definition"
+def list_health_checks(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListHealthChecksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListHealthChecksRequestRequestTypeDef](./type_defs.md#listhealthchecksrequestrequesttypedef).
+1. See [:material-code-braces: ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListHealthChecksRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef).
+parent.list_health_checks(**kwargs)
+```
 
-<a id="list\_hosted\_zones"></a>
+1. See [:material-code-braces: ListHealthChecksRequestRequestTypeDef](./type_defs.md#listhealthchecksrequestrequesttypedef) 
 
-### list_hosted_zones
+### list\_hosted\_zones
 
-Retrieves a list of the public and private hosted zones that are associated
-with the current Amazon Web Services account.
+Retrieves a list of the public and private hosted zones that are associated with
+the current Amazon Web Services account.
 
-Type annotations for `boto3.client("route53").list_hosted_zones` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_hosted_zones` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones)
 
-Boto3 documentation:
-[Route53.Client.list_hosted_zones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones)
+```python title="Method definition"
+def list_hosted_zones(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+    DelegationSetId: str = ...,
+) -> ListHostedZonesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListHostedZonesRequestRequestTypeDef](./type_defs.md#listhostedzonesrequestrequesttypedef).
+1. See [:material-code-braces: ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
-- `DelegationSetId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListHostedZonesRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef).
+parent.list_hosted_zones(**kwargs)
+```
 
-<a id="list\_hosted\_zones\_by\_name"></a>
+1. See [:material-code-braces: ListHostedZonesRequestRequestTypeDef](./type_defs.md#listhostedzonesrequestrequesttypedef) 
 
-### list_hosted_zones_by_name
+### list\_hosted\_zones\_by\_name
 
 Retrieves a list of your hosted zones in lexicographic order.
 
-Type annotations for `boto3.client("route53").list_hosted_zones_by_name`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").list_hosted_zones_by_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_name)
 
-Boto3 documentation:
-[Route53.Client.list_hosted_zones_by_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_name)
+```python title="Method definition"
+def list_hosted_zones_by_name(
+    self,
+    *,
+    DNSName: str = ...,
+    HostedZoneId: str = ...,
+    MaxItems: str = ...,
+) -> ListHostedZonesByNameResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListHostedZonesByNameRequestRequestTypeDef](./type_defs.md#listhostedzonesbynamerequestrequesttypedef).
+1. See [:material-code-braces: ListHostedZonesByNameResponseTypeDef](./type_defs.md#listhostedzonesbynameresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DNSName`: `str`
-- `HostedZoneId`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListHostedZonesByNameRequestRequestTypeDef = {  # (1)
+    "DNSName": ...,
+}
 
-Returns
-[ListHostedZonesByNameResponseTypeDef](./type_defs.md#listhostedzonesbynameresponsetypedef).
+parent.list_hosted_zones_by_name(**kwargs)
+```
 
-<a id="list\_hosted\_zones\_by\_vpc"></a>
+1. See [:material-code-braces: ListHostedZonesByNameRequestRequestTypeDef](./type_defs.md#listhostedzonesbynamerequestrequesttypedef) 
 
-### list_hosted_zones_by_vpc
+### list\_hosted\_zones\_by\_vpc
 
 Lists all the private hosted zones that a specified VPC is associated with,
 regardless of which Amazon Web Services account or Amazon Web Services service
 owns the hosted zones.
 
-Type annotations for `boto3.client("route53").list_hosted_zones_by_vpc` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_hosted_zones_by_vpc` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_vpc)
 
-Boto3 documentation:
-[Route53.Client.list_hosted_zones_by_vpc](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_hosted_zones_by_vpc)
+```python title="Method definition"
+def list_hosted_zones_by_vpc(
+    self,
+    *,
+    VPCId: str,
+    VPCRegion: VPCRegionType,  # (1)
+    MaxItems: str = ...,
+    NextToken: str = ...,
+) -> ListHostedZonesByVPCResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListHostedZonesByVPCRequestRequestTypeDef](./type_defs.md#listhostedzonesbyvpcrequestrequesttypedef).
+1. See [:material-code-brackets: VPCRegionType](./literals.md#vpcregiontype) 
+2. See [:material-code-braces: ListHostedZonesByVPCResponseTypeDef](./type_defs.md#listhostedzonesbyvpcresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VPCId`: `str` *(required)*
-- `VPCRegion`: [VPCRegionType](./literals.md#vpcregiontype) *(required)*
-- `MaxItems`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListHostedZonesByVPCRequestRequestTypeDef = {  # (1)
+    "VPCId": ...,
+    "VPCRegion": ...,
+}
 
-Returns
-[ListHostedZonesByVPCResponseTypeDef](./type_defs.md#listhostedzonesbyvpcresponsetypedef).
+parent.list_hosted_zones_by_vpc(**kwargs)
+```
 
-<a id="list\_query\_logging\_configs"></a>
+1. See [:material-code-braces: ListHostedZonesByVPCRequestRequestTypeDef](./type_defs.md#listhostedzonesbyvpcrequestrequesttypedef) 
 
-### list_query_logging_configs
+### list\_query\_logging\_configs
 
 Lists the configurations for DNS query logging that are associated with the
-current Amazon Web Services account or the configuration that is associated
-with a specified hosted zone.
+current Amazon Web Services account or the configuration that is associated with
+a specified hosted zone.
 
-Type annotations for `boto3.client("route53").list_query_logging_configs`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").list_query_logging_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_query_logging_configs)
 
-Boto3 documentation:
-[Route53.Client.list_query_logging_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_query_logging_configs)
+```python title="Method definition"
+def list_query_logging_configs(
+    self,
+    *,
+    HostedZoneId: str = ...,
+    NextToken: str = ...,
+    MaxResults: str = ...,
+) -> ListQueryLoggingConfigsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListQueryLoggingConfigsRequestRequestTypeDef](./type_defs.md#listqueryloggingconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListQueryLoggingConfigsRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
 
-Returns
-[ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef).
+parent.list_query_logging_configs(**kwargs)
+```
 
-<a id="list\_resource\_record\_sets"></a>
+1. See [:material-code-braces: ListQueryLoggingConfigsRequestRequestTypeDef](./type_defs.md#listqueryloggingconfigsrequestrequesttypedef) 
 
-### list_resource_record_sets
+### list\_resource\_record\_sets
 
 Lists the resource record sets in a specified hosted zone.
 
-Type annotations for `boto3.client("route53").list_resource_record_sets`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").list_resource_record_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_resource_record_sets)
 
-Boto3 documentation:
-[Route53.Client.list_resource_record_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_resource_record_sets)
+```python title="Method definition"
+def list_resource_record_sets(
+    self,
+    *,
+    HostedZoneId: str,
+    StartRecordName: str = ...,
+    StartRecordType: RRTypeType = ...,  # (1)
+    StartRecordIdentifier: str = ...,
+    MaxItems: str = ...,
+) -> ListResourceRecordSetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResourceRecordSetsRequestRequestTypeDef](./type_defs.md#listresourcerecordsetsrequestrequesttypedef).
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+2. See [:material-code-braces: ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `StartRecordName`: `str`
-- `StartRecordType`: [RRTypeType](./literals.md#rrtypetype)
-- `StartRecordIdentifier`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResourceRecordSetsRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
 
-Returns
-[ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef).
+parent.list_resource_record_sets(**kwargs)
+```
 
-<a id="list\_reusable\_delegation\_sets"></a>
+1. See [:material-code-braces: ListResourceRecordSetsRequestRequestTypeDef](./type_defs.md#listresourcerecordsetsrequestrequesttypedef) 
 
-### list_reusable_delegation_sets
+### list\_reusable\_delegation\_sets
 
 Retrieves a list of the reusable delegation sets that are associated with the
 current Amazon Web Services account.
 
-Type annotations for `boto3.client("route53").list_reusable_delegation_sets`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").list_reusable_delegation_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_reusable_delegation_sets)
 
-Boto3 documentation:
-[Route53.Client.list_reusable_delegation_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_reusable_delegation_sets)
+```python title="Method definition"
+def list_reusable_delegation_sets(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListReusableDelegationSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListReusableDelegationSetsRequestRequestTypeDef](./type_defs.md#listreusabledelegationsetsrequestrequesttypedef).
+1. See [:material-code-braces: ListReusableDelegationSetsResponseTypeDef](./type_defs.md#listreusabledelegationsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListReusableDelegationSetsRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListReusableDelegationSetsResponseTypeDef](./type_defs.md#listreusabledelegationsetsresponsetypedef).
+parent.list_reusable_delegation_sets(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListReusableDelegationSetsRequestRequestTypeDef](./type_defs.md#listreusabledelegationsetsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists tags for one health check or hosted zone.
 
-Type annotations for `boto3.client("route53").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Route53.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceType: TagResourceTypeType,  # (1)
+    ResourceId: str,
+) -> ListTagsForResourceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-brackets: TagResourceTypeType](./literals.md#tagresourcetypetype) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
-  *(required)*
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceType": ...,
+    "ResourceId": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_tags\_for\_resources"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_tags_for_resources
+### list\_tags\_for\_resources
 
 Lists tags for up to 10 health checks or hosted zones.
 
-Type annotations for `boto3.client("route53").list_tags_for_resources` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_tags_for_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resources)
 
-Boto3 documentation:
-[Route53.Client.list_tags_for_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_tags_for_resources)
+```python title="Method definition"
+def list_tags_for_resources(
+    self,
+    *,
+    ResourceType: TagResourceTypeType,  # (1)
+    ResourceIds: Sequence[str],
+) -> ListTagsForResourcesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourcesRequestRequestTypeDef](./type_defs.md#listtagsforresourcesrequestrequesttypedef).
+1. See [:material-code-brackets: TagResourceTypeType](./literals.md#tagresourcetypetype) 
+2. See [:material-code-braces: ListTagsForResourcesResponseTypeDef](./type_defs.md#listtagsforresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
-  *(required)*
-- `ResourceIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourcesRequestRequestTypeDef = {  # (1)
+    "ResourceType": ...,
+    "ResourceIds": ...,
+}
 
-Returns
-[ListTagsForResourcesResponseTypeDef](./type_defs.md#listtagsforresourcesresponsetypedef).
+parent.list_tags_for_resources(**kwargs)
+```
 
-<a id="list\_traffic\_policies"></a>
+1. See [:material-code-braces: ListTagsForResourcesRequestRequestTypeDef](./type_defs.md#listtagsforresourcesrequestrequesttypedef) 
 
-### list_traffic_policies
+### list\_traffic\_policies
 
 Gets information about the latest version for every traffic policy that is
 associated with the current Amazon Web Services account.
 
-Type annotations for `boto3.client("route53").list_traffic_policies` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_traffic_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policies)
 
-Boto3 documentation:
-[Route53.Client.list_traffic_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policies)
+```python title="Method definition"
+def list_traffic_policies(
+    self,
+    *,
+    TrafficPolicyIdMarker: str = ...,
+    MaxItems: str = ...,
+) -> ListTrafficPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTrafficPoliciesRequestRequestTypeDef](./type_defs.md#listtrafficpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListTrafficPoliciesResponseTypeDef](./type_defs.md#listtrafficpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TrafficPolicyIdMarker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTrafficPoliciesRequestRequestTypeDef = {  # (1)
+    "TrafficPolicyIdMarker": ...,
+}
 
-Returns
-[ListTrafficPoliciesResponseTypeDef](./type_defs.md#listtrafficpoliciesresponsetypedef).
+parent.list_traffic_policies(**kwargs)
+```
 
-<a id="list\_traffic\_policy\_instances"></a>
+1. See [:material-code-braces: ListTrafficPoliciesRequestRequestTypeDef](./type_defs.md#listtrafficpoliciesrequestrequesttypedef) 
 
-### list_traffic_policy_instances
+### list\_traffic\_policy\_instances
 
 Gets information about the traffic policy instances that you created by using
 the current Amazon Web Services account.
 
-Type annotations for `boto3.client("route53").list_traffic_policy_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").list_traffic_policy_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances)
 
-Boto3 documentation:
-[Route53.Client.list_traffic_policy_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances)
+```python title="Method definition"
+def list_traffic_policy_instances(
+    self,
+    *,
+    HostedZoneIdMarker: str = ...,
+    TrafficPolicyInstanceNameMarker: str = ...,
+    TrafficPolicyInstanceTypeMarker: RRTypeType = ...,  # (1)
+    MaxItems: str = ...,
+) -> ListTrafficPolicyInstancesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTrafficPolicyInstancesRequestRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesrequestrequesttypedef).
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+2. See [:material-code-braces: ListTrafficPolicyInstancesResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneIdMarker`: `str`
-- `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTrafficPolicyInstancesRequestRequestTypeDef = {  # (1)
+    "HostedZoneIdMarker": ...,
+}
 
-Returns
-[ListTrafficPolicyInstancesResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesresponsetypedef).
+parent.list_traffic_policy_instances(**kwargs)
+```
 
-<a id="list\_traffic\_policy\_instances\_by\_hosted\_zone"></a>
+1. See [:material-code-braces: ListTrafficPolicyInstancesRequestRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesrequestrequesttypedef) 
 
-### list_traffic_policy_instances_by_hosted_zone
+### list\_traffic\_policy\_instances\_by\_hosted\_zone
 
 Gets information about the traffic policy instances that you created in a
 specified hosted zone.
 
-Type annotations for
-`boto3.client("route53").list_traffic_policy_instances_by_hosted_zone` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_traffic_policy_instances_by_hosted_zone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_hosted_zone)
 
-Boto3 documentation:
-[Route53.Client.list_traffic_policy_instances_by_hosted_zone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_hosted_zone)
+```python title="Method definition"
+def list_traffic_policy_instances_by_hosted_zone(
+    self,
+    *,
+    HostedZoneId: str,
+    TrafficPolicyInstanceNameMarker: str = ...,
+    TrafficPolicyInstanceTypeMarker: RRTypeType = ...,  # (1)
+    MaxItems: str = ...,
+) -> ListTrafficPolicyInstancesByHostedZoneResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTrafficPolicyInstancesByHostedZoneRequestRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesbyhostedzonerequestrequesttypedef).
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+2. See [:material-code-braces: ListTrafficPolicyInstancesByHostedZoneResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbyhostedzoneresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTrafficPolicyInstancesByHostedZoneRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
 
-Returns
-[ListTrafficPolicyInstancesByHostedZoneResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbyhostedzoneresponsetypedef).
+parent.list_traffic_policy_instances_by_hosted_zone(**kwargs)
+```
 
-<a id="list\_traffic\_policy\_instances\_by\_policy"></a>
+1. See [:material-code-braces: ListTrafficPolicyInstancesByHostedZoneRequestRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesbyhostedzonerequestrequesttypedef) 
 
-### list_traffic_policy_instances_by_policy
+### list\_traffic\_policy\_instances\_by\_policy
 
 Gets information about the traffic policy instances that you created by using a
 specify traffic policy version.
 
-Type annotations for
-`boto3.client("route53").list_traffic_policy_instances_by_policy` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_traffic_policy_instances_by_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_policy)
 
-Boto3 documentation:
-[Route53.Client.list_traffic_policy_instances_by_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_instances_by_policy)
+```python title="Method definition"
+def list_traffic_policy_instances_by_policy(
+    self,
+    *,
+    TrafficPolicyId: str,
+    TrafficPolicyVersion: int,
+    HostedZoneIdMarker: str = ...,
+    TrafficPolicyInstanceNameMarker: str = ...,
+    TrafficPolicyInstanceTypeMarker: RRTypeType = ...,  # (1)
+    MaxItems: str = ...,
+) -> ListTrafficPolicyInstancesByPolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTrafficPolicyInstancesByPolicyRequestRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesbypolicyrequestrequesttypedef).
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+2. See [:material-code-braces: ListTrafficPolicyInstancesByPolicyResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbypolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TrafficPolicyId`: `str` *(required)*
-- `TrafficPolicyVersion`: `int` *(required)*
-- `HostedZoneIdMarker`: `str`
-- `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTrafficPolicyInstancesByPolicyRequestRequestTypeDef = {  # (1)
+    "TrafficPolicyId": ...,
+    "TrafficPolicyVersion": ...,
+}
 
-Returns
-[ListTrafficPolicyInstancesByPolicyResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesbypolicyresponsetypedef).
+parent.list_traffic_policy_instances_by_policy(**kwargs)
+```
 
-<a id="list\_traffic\_policy\_versions"></a>
+1. See [:material-code-braces: ListTrafficPolicyInstancesByPolicyRequestRequestTypeDef](./type_defs.md#listtrafficpolicyinstancesbypolicyrequestrequesttypedef) 
 
-### list_traffic_policy_versions
+### list\_traffic\_policy\_versions
 
 Gets information about all of the versions for a specified traffic policy.
 
-Type annotations for `boto3.client("route53").list_traffic_policy_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").list_traffic_policy_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_versions)
 
-Boto3 documentation:
-[Route53.Client.list_traffic_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_traffic_policy_versions)
+```python title="Method definition"
+def list_traffic_policy_versions(
+    self,
+    *,
+    Id: str,
+    TrafficPolicyVersionMarker: str = ...,
+    MaxItems: str = ...,
+) -> ListTrafficPolicyVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTrafficPolicyVersionsRequestRequestTypeDef](./type_defs.md#listtrafficpolicyversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListTrafficPolicyVersionsResponseTypeDef](./type_defs.md#listtrafficpolicyversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `TrafficPolicyVersionMarker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTrafficPolicyVersionsRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[ListTrafficPolicyVersionsResponseTypeDef](./type_defs.md#listtrafficpolicyversionsresponsetypedef).
+parent.list_traffic_policy_versions(**kwargs)
+```
 
-<a id="list\_vpc\_association\_authorizations"></a>
+1. See [:material-code-braces: ListTrafficPolicyVersionsRequestRequestTypeDef](./type_defs.md#listtrafficpolicyversionsrequestrequesttypedef) 
 
-### list_vpc_association_authorizations
+### list\_vpc\_association\_authorizations
 
 Gets a list of the VPCs that were created by other accounts and that can be
 associated with a specified hosted zone because you've submitted one or more
 `CreateVPCAssociationAuthorization` requests.
 
-Type annotations for
-`boto3.client("route53").list_vpc_association_authorizations` method.
+Type annotations and code completion for `#!python boto3.client("route53").list_vpc_association_authorizations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_vpc_association_authorizations)
 
-Boto3 documentation:
-[Route53.Client.list_vpc_association_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.list_vpc_association_authorizations)
+```python title="Method definition"
+def list_vpc_association_authorizations(
+    self,
+    *,
+    HostedZoneId: str,
+    NextToken: str = ...,
+    MaxResults: str = ...,
+) -> ListVPCAssociationAuthorizationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVPCAssociationAuthorizationsRequestRequestTypeDef](./type_defs.md#listvpcassociationauthorizationsrequestrequesttypedef).
+1. See [:material-code-braces: ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVPCAssociationAuthorizationsRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
 
-Returns
-[ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef).
+parent.list_vpc_association_authorizations(**kwargs)
+```
 
-<a id="test\_dns\_answer"></a>
+1. See [:material-code-braces: ListVPCAssociationAuthorizationsRequestRequestTypeDef](./type_defs.md#listvpcassociationauthorizationsrequestrequesttypedef) 
 
-### test_dns_answer
+### test\_dns\_answer
 
 Gets the value that Amazon Route 53 returns in response to a DNS request for a
 specified record name and type.
 
-Type annotations for `boto3.client("route53").test_dns_answer` method.
+Type annotations and code completion for `#!python boto3.client("route53").test_dns_answer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.test_dns_answer)
 
-Boto3 documentation:
-[Route53.Client.test_dns_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.test_dns_answer)
+```python title="Method definition"
+def test_dns_answer(
+    self,
+    *,
+    HostedZoneId: str,
+    RecordName: str,
+    RecordType: RRTypeType,  # (1)
+    ResolverIP: str = ...,
+    EDNS0ClientSubnetIP: str = ...,
+    EDNS0ClientSubnetMask: str = ...,
+) -> TestDNSAnswerResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TestDNSAnswerRequestRequestTypeDef](./type_defs.md#testdnsanswerrequestrequesttypedef).
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+2. See [:material-code-braces: TestDNSAnswerResponseTypeDef](./type_defs.md#testdnsanswerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HostedZoneId`: `str` *(required)*
-- `RecordName`: `str` *(required)*
-- `RecordType`: [RRTypeType](./literals.md#rrtypetype) *(required)*
-- `ResolverIP`: `str`
-- `EDNS0ClientSubnetIP`: `str`
-- `EDNS0ClientSubnetMask`: `str`
+```python title="Usage example with kwargs"
+kwargs: TestDNSAnswerRequestRequestTypeDef = {  # (1)
+    "HostedZoneId": ...,
+    "RecordName": ...,
+    "RecordType": ...,
+}
 
-Returns
-[TestDNSAnswerResponseTypeDef](./type_defs.md#testdnsanswerresponsetypedef).
+parent.test_dns_answer(**kwargs)
+```
 
-<a id="update\_health\_check"></a>
+1. See [:material-code-braces: TestDNSAnswerRequestRequestTypeDef](./type_defs.md#testdnsanswerrequestrequesttypedef) 
 
-### update_health_check
+### update\_health\_check
 
 Updates an existing health check.
 
-Type annotations for `boto3.client("route53").update_health_check` method.
+Type annotations and code completion for `#!python boto3.client("route53").update_health_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_health_check)
 
-Boto3 documentation:
-[Route53.Client.update_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_health_check)
+```python title="Method definition"
+def update_health_check(
+    self,
+    *,
+    HealthCheckId: str,
+    HealthCheckVersion: int = ...,
+    IPAddress: str = ...,
+    Port: int = ...,
+    ResourcePath: str = ...,
+    FullyQualifiedDomainName: str = ...,
+    SearchString: str = ...,
+    FailureThreshold: int = ...,
+    Inverted: bool = ...,
+    Disabled: bool = ...,
+    HealthThreshold: int = ...,
+    ChildHealthChecks: Sequence[str] = ...,
+    EnableSNI: bool = ...,
+    Regions: Sequence[HealthCheckRegionType] = ...,  # (1)
+    AlarmIdentifier: AlarmIdentifierTypeDef = ...,  # (2)
+    InsufficientDataHealthStatus: InsufficientDataHealthStatusType = ...,  # (3)
+    ResetElements: Sequence[ResettableElementNameType] = ...,  # (4)
+) -> UpdateHealthCheckResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateHealthCheckRequestRequestTypeDef](./type_defs.md#updatehealthcheckrequestrequesttypedef).
+1. See [:material-code-brackets: HealthCheckRegionType](./literals.md#healthcheckregiontype) 
+2. See [:material-code-braces: AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef) 
+3. See [:material-code-brackets: InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype) 
+4. See [:material-code-brackets: ResettableElementNameType](./literals.md#resettableelementnametype) 
+5. See [:material-code-braces: UpdateHealthCheckResponseTypeDef](./type_defs.md#updatehealthcheckresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HealthCheckId`: `str` *(required)*
-- `HealthCheckVersion`: `int`
-- `IPAddress`: `str`
-- `Port`: `int`
-- `ResourcePath`: `str`
-- `FullyQualifiedDomainName`: `str`
-- `SearchString`: `str`
-- `FailureThreshold`: `int`
-- `Inverted`: `bool`
-- `Disabled`: `bool`
-- `HealthThreshold`: `int`
-- `ChildHealthChecks`: `Sequence`\[`str`\]
-- `EnableSNI`: `bool`
-- `Regions`:
-  `Sequence`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
-- `AlarmIdentifier`:
-  [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
-- `InsufficientDataHealthStatus`:
-  [InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype)
-- `ResetElements`:
-  `Sequence`\[[ResettableElementNameType](./literals.md#resettableelementnametype)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateHealthCheckRequestRequestTypeDef = {  # (1)
+    "HealthCheckId": ...,
+}
 
-Returns
-[UpdateHealthCheckResponseTypeDef](./type_defs.md#updatehealthcheckresponsetypedef).
+parent.update_health_check(**kwargs)
+```
 
-<a id="update\_hosted\_zone\_comment"></a>
+1. See [:material-code-braces: UpdateHealthCheckRequestRequestTypeDef](./type_defs.md#updatehealthcheckrequestrequesttypedef) 
 
-### update_hosted_zone_comment
+### update\_hosted\_zone\_comment
 
 Updates the comment for a specified hosted zone.
 
-Type annotations for `boto3.client("route53").update_hosted_zone_comment`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").update_hosted_zone_comment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_hosted_zone_comment)
 
-Boto3 documentation:
-[Route53.Client.update_hosted_zone_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_hosted_zone_comment)
+```python title="Method definition"
+def update_hosted_zone_comment(
+    self,
+    *,
+    Id: str,
+    Comment: str = ...,
+) -> UpdateHostedZoneCommentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateHostedZoneCommentRequestRequestTypeDef](./type_defs.md#updatehostedzonecommentrequestrequesttypedef).
+1. See [:material-code-braces: UpdateHostedZoneCommentResponseTypeDef](./type_defs.md#updatehostedzonecommentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Comment`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateHostedZoneCommentRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[UpdateHostedZoneCommentResponseTypeDef](./type_defs.md#updatehostedzonecommentresponsetypedef).
+parent.update_hosted_zone_comment(**kwargs)
+```
 
-<a id="update\_traffic\_policy\_comment"></a>
+1. See [:material-code-braces: UpdateHostedZoneCommentRequestRequestTypeDef](./type_defs.md#updatehostedzonecommentrequestrequesttypedef) 
 
-### update_traffic_policy_comment
+### update\_traffic\_policy\_comment
 
 Updates the comment for a specified traffic policy version.
 
-Type annotations for `boto3.client("route53").update_traffic_policy_comment`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").update_traffic_policy_comment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_comment)
 
-Boto3 documentation:
-[Route53.Client.update_traffic_policy_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_comment)
+```python title="Method definition"
+def update_traffic_policy_comment(
+    self,
+    *,
+    Id: str,
+    Version: int,
+    Comment: str,
+) -> UpdateTrafficPolicyCommentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTrafficPolicyCommentRequestRequestTypeDef](./type_defs.md#updatetrafficpolicycommentrequestrequesttypedef).
+1. See [:material-code-braces: UpdateTrafficPolicyCommentResponseTypeDef](./type_defs.md#updatetrafficpolicycommentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Version`: `int` *(required)*
-- `Comment`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTrafficPolicyCommentRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Version": ...,
+    "Comment": ...,
+}
 
-Returns
-[UpdateTrafficPolicyCommentResponseTypeDef](./type_defs.md#updatetrafficpolicycommentresponsetypedef).
+parent.update_traffic_policy_comment(**kwargs)
+```
 
-<a id="update\_traffic\_policy\_instance"></a>
+1. See [:material-code-braces: UpdateTrafficPolicyCommentRequestRequestTypeDef](./type_defs.md#updatetrafficpolicycommentrequestrequesttypedef) 
 
-### update_traffic_policy_instance
+### update\_traffic\_policy\_instance
 
 Updates the resource record sets in a specified hosted zone that were created
 based on the settings in a specified traffic policy version.
 
-Type annotations for `boto3.client("route53").update_traffic_policy_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("route53").update_traffic_policy_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_instance)
 
-Boto3 documentation:
-[Route53.Client.update_traffic_policy_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client.update_traffic_policy_instance)
+```python title="Method definition"
+def update_traffic_policy_instance(
+    self,
+    *,
+    Id: str,
+    TTL: int,
+    TrafficPolicyId: str,
+    TrafficPolicyVersion: int,
+) -> UpdateTrafficPolicyInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#updatetrafficpolicyinstancerequestrequesttypedef).
+1. See [:material-code-braces: UpdateTrafficPolicyInstanceResponseTypeDef](./type_defs.md#updatetrafficpolicyinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `TTL`: `int` *(required)*
-- `TrafficPolicyId`: `str` *(required)*
-- `TrafficPolicyVersion`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTrafficPolicyInstanceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "TTL": ...,
+    "TrafficPolicyId": ...,
+    "TrafficPolicyVersion": ...,
+}
 
-Returns
-[UpdateTrafficPolicyInstanceResponseTypeDef](./type_defs.md#updatetrafficpolicyinstanceresponsetypedef).
+parent.update_traffic_policy_instance(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateTrafficPolicyInstanceRequestRequestTypeDef](./type_defs.md#updatetrafficpolicyinstancerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("route53").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("route53").get_paginator` method with overloads.
 
-- `client.get_paginator("list_health_checks")` ->
-  [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
-- `client.get_paginator("list_hosted_zones")` ->
-  [ListHostedZonesPaginator](./paginators.md#listhostedzonespaginator)
-- `client.get_paginator("list_query_logging_configs")` ->
-  [ListQueryLoggingConfigsPaginator](./paginators.md#listqueryloggingconfigspaginator)
-- `client.get_paginator("list_resource_record_sets")` ->
-  [ListResourceRecordSetsPaginator](./paginators.md#listresourcerecordsetspaginator)
-- `client.get_paginator("list_vpc_association_authorizations")` ->
-  [ListVPCAssociationAuthorizationsPaginator](./paginators.md#listvpcassociationauthorizationspaginator)
+- `client.get_paginator("list_health_checks")` -> [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
+- `client.get_paginator("list_hosted_zones")` -> [ListHostedZonesPaginator](./paginators.md#listhostedzonespaginator)
+- `client.get_paginator("list_query_logging_configs")` -> [ListQueryLoggingConfigsPaginator](./paginators.md#listqueryloggingconfigspaginator)
+- `client.get_paginator("list_resource_record_sets")` -> [ListResourceRecordSetsPaginator](./paginators.md#listresourcerecordsetspaginator)
+- `client.get_paginator("list_vpc_association_authorizations")` -> [ListVPCAssociationAuthorizationsPaginator](./paginators.md#listvpcassociationauthorizationspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("route53").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("route53").get_waiter` method with overloads.
 
-- `client.get_waiter("resource_record_sets_changed")` ->
-  [ResourceRecordSetsChangedWaiter](./waiters.md#resourcerecordsetschangedwaiter)
+- `client.get_waiter("resource_record_sets_changed")` -> [ResourceRecordSetsChangedWaiter](./waiters.md#resourcerecordsetschangedwaiter)
+

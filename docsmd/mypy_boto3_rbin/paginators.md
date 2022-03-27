@@ -1,26 +1,18 @@
-<a id="paginators-for-boto3-recyclebin-module"></a>
-
-# Paginators for boto3 RecycleBin module
+# Paginators
 
 > [Index](../README.md) > [RecycleBin](./README.md) > Paginators
 
-Auto-generated documentation for
-[RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
-type annotations stubs module
-[mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
+!!! note ""
 
-- [Paginators for boto3 RecycleBin module](#paginators-for-boto3-recyclebin-module)
-  - [ListRulesPaginator](#listrulespaginator)
-
-<a id="listrulespaginator"></a>
+    Auto-generated documentation for [RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
+    type annotations stubs module [mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
 
 ## ListRulesPaginator
 
-Type annotations for `boto3.client("rbin").get_paginator("list_rules")`.
+Type annotations and code completion for `#!python boto3.client("rbin").get_paginator("list_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Paginator.ListRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rbin.paginator import ListRulesPaginator
@@ -29,17 +21,34 @@ def get_list_rules_paginator() -> ListRulesPaginator:
     return Session().client("rbin").get_paginator("list_rules")
 ```
 
-Boto3 documentation:
-[RecycleBin.Paginator.ListRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Paginator.ListRules)
 
-Arguments for `ListRulesPaginator.paginate` method:
+### paginate
 
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-  *(required)*
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRulesPaginator.paginate` method.
 
-`ListRulesPaginator.paginate` returns
-`_PageIterator`\[[ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceType: ResourceTypeType,  # (1)
+    ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListRulesResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRulesRequestListRulesPaginateTypeDef = {  # (1)
+    "ResourceType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRulesRequestListRulesPaginateTypeDef](./type_defs.md#listrulesrequestlistrulespaginatetypedef) 

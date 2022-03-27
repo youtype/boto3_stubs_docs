@@ -1,1178 +1,1232 @@
-<a id="literals-for-boto3-chime-module"></a>
-
-# Literals for boto3 Chime module
+# Literals
 
 > [Index](../README.md) > [Chime](./README.md) > Literals
 
-Auto-generated documentation for
-[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
-type annotations stubs module
-[mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
+!!! note ""
 
-- [Literals for boto3 Chime module](#literals-for-boto3-chime-module)
-  - [AccountStatusType](#accountstatustype)
-  - [AccountTypeType](#accounttypetype)
-  - [AppInstanceDataTypeType](#appinstancedatatypetype)
-  - [ArtifactsStateType](#artifactsstatetype)
-  - [AudioMuxTypeType](#audiomuxtypetype)
-  - [BotTypeType](#bottypetype)
-  - [CallingNameStatusType](#callingnamestatustype)
-  - [CapabilityType](#capabilitytype)
-  - [ChannelMembershipTypeType](#channelmembershiptypetype)
-  - [ChannelMessagePersistenceTypeType](#channelmessagepersistencetypetype)
-  - [ChannelMessageTypeType](#channelmessagetypetype)
-  - [ChannelModeType](#channelmodetype)
-  - [ChannelPrivacyType](#channelprivacytype)
-  - [ContentMuxTypeType](#contentmuxtypetype)
-  - [EmailStatusType](#emailstatustype)
-  - [ErrorCodeType](#errorcodetype)
-  - [GeoMatchLevelType](#geomatchleveltype)
-  - [InviteStatusType](#invitestatustype)
-  - [LicenseType](#licensetype)
-  - [ListAccountsPaginatorName](#listaccountspaginatorname)
-  - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [MediaPipelineSinkTypeType](#mediapipelinesinktypetype)
-  - [MediaPipelineSourceTypeType](#mediapipelinesourcetypetype)
-  - [MediaPipelineStatusType](#mediapipelinestatustype)
-  - [MemberTypeType](#membertypetype)
-  - [NotificationTargetType](#notificationtargettype)
-  - [NumberSelectionBehaviorType](#numberselectionbehaviortype)
-  - [OrderedPhoneNumberStatusType](#orderedphonenumberstatustype)
-  - [OriginationRouteProtocolType](#originationrouteprotocoltype)
-  - [PhoneNumberAssociationNameType](#phonenumberassociationnametype)
-  - [PhoneNumberOrderStatusType](#phonenumberorderstatustype)
-  - [PhoneNumberProductTypeType](#phonenumberproducttypetype)
-  - [PhoneNumberStatusType](#phonenumberstatustype)
-  - [PhoneNumberTypeType](#phonenumbertypetype)
-  - [ProxySessionStatusType](#proxysessionstatustype)
-  - [RegistrationStatusType](#registrationstatustype)
-  - [RoomMembershipRoleType](#roommembershiproletype)
-  - [SipRuleTriggerTypeType](#sipruletriggertypetype)
-  - [SortOrderType](#sortordertype)
-  - [TranscribeContentIdentificationTypeType](#transcribecontentidentificationtypetype)
-  - [TranscribeContentRedactionTypeType](#transcribecontentredactiontypetype)
-  - [TranscribeLanguageCodeType](#transcribelanguagecodetype)
-  - [TranscribeMedicalContentIdentificationTypeType](#transcribemedicalcontentidentificationtypetype)
-  - [TranscribeMedicalLanguageCodeType](#transcribemedicallanguagecodetype)
-  - [TranscribeMedicalRegionType](#transcribemedicalregiontype)
-  - [TranscribeMedicalSpecialtyType](#transcribemedicalspecialtytype)
-  - [TranscribeMedicalTypeType](#transcribemedicaltypetype)
-  - [TranscribePartialResultsStabilityType](#transcribepartialresultsstabilitytype)
-  - [TranscribeRegionType](#transcriberegiontype)
-  - [TranscribeVocabularyFilterMethodType](#transcribevocabularyfiltermethodtype)
-  - [UserTypeType](#usertypetype)
-  - [VideoMuxTypeType](#videomuxtypetype)
-  - [VoiceConnectorAwsRegionType](#voiceconnectorawsregiontype)
-  - [ChimeServiceName](#chimeservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="accountstatustype"></a>
+    Auto-generated documentation for [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+    type annotations stubs module [mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
 
 ## AccountStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import AccountStatusType
+
+def get_value() -> AccountStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Suspended`
-
-<a id="accounttypetype"></a>
-
+```python title="Definition"
+AccountStatusType = Literal[
+    "Active",
+    "Suspended",
+]
+```
 ## AccountTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import AccountTypeType
+
+def get_value() -> AccountTypeType:
+    return "EnterpriseDirectory"
 ```
 
-Values:
-
-- `EnterpriseDirectory`
-- `EnterpriseLWA`
-- `EnterpriseOIDC`
-- `Team`
-
-<a id="appinstancedatatypetype"></a>
-
+```python title="Definition"
+AccountTypeType = Literal[
+    "EnterpriseDirectory",
+    "EnterpriseLWA",
+    "EnterpriseOIDC",
+    "Team",
+]
+```
 ## AppInstanceDataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import AppInstanceDataTypeType
+
+def get_value() -> AppInstanceDataTypeType:
+    return "Channel"
 ```
 
-Values:
-
-- `Channel`
-- `ChannelMessage`
-
-<a id="artifactsstatetype"></a>
-
+```python title="Definition"
+AppInstanceDataTypeType = Literal[
+    "Channel",
+    "ChannelMessage",
+]
+```
 ## ArtifactsStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ArtifactsStateType
+
+def get_value() -> ArtifactsStateType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="audiomuxtypetype"></a>
-
+```python title="Definition"
+ArtifactsStateType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## AudioMuxTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import AudioMuxTypeType
+
+def get_value() -> AudioMuxTypeType:
+    return "AudioOnly"
 ```
 
-Values:
-
-- `AudioOnly`
-- `AudioWithActiveSpeakerVideo`
-
-<a id="bottypetype"></a>
-
+```python title="Definition"
+AudioMuxTypeType = Literal[
+    "AudioOnly",
+    "AudioWithActiveSpeakerVideo",
+]
+```
 ## BotTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import BotTypeType
+
+def get_value() -> BotTypeType:
+    return "ChatBot"
 ```
 
-Values:
-
-- `ChatBot`
-
-<a id="callingnamestatustype"></a>
-
+```python title="Definition"
+BotTypeType = Literal[
+    "ChatBot",
+]
+```
 ## CallingNameStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import CallingNameStatusType
+
+def get_value() -> CallingNameStatusType:
+    return "Unassigned"
 ```
 
-Values:
-
-- `Unassigned`
-- `UpdateFailed`
-- `UpdateInProgress`
-- `UpdateSucceeded`
-
-<a id="capabilitytype"></a>
-
+```python title="Definition"
+CallingNameStatusType = Literal[
+    "Unassigned",
+    "UpdateFailed",
+    "UpdateInProgress",
+    "UpdateSucceeded",
+]
+```
 ## CapabilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import CapabilityType
+
+def get_value() -> CapabilityType:
+    return "SMS"
 ```
 
-Values:
-
-- `SMS`
-- `Voice`
-
-<a id="channelmembershiptypetype"></a>
-
+```python title="Definition"
+CapabilityType = Literal[
+    "SMS",
+    "Voice",
+]
+```
 ## ChannelMembershipTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ChannelMembershipTypeType
+
+def get_value() -> ChannelMembershipTypeType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `DEFAULT`
-- `HIDDEN`
-
-<a id="channelmessagepersistencetypetype"></a>
-
+```python title="Definition"
+ChannelMembershipTypeType = Literal[
+    "DEFAULT",
+    "HIDDEN",
+]
+```
 ## ChannelMessagePersistenceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ChannelMessagePersistenceTypeType
+
+def get_value() -> ChannelMessagePersistenceTypeType:
+    return "NON_PERSISTENT"
 ```
 
-Values:
-
-- `NON_PERSISTENT`
-- `PERSISTENT`
-
-<a id="channelmessagetypetype"></a>
-
+```python title="Definition"
+ChannelMessagePersistenceTypeType = Literal[
+    "NON_PERSISTENT",
+    "PERSISTENT",
+]
+```
 ## ChannelMessageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ChannelMessageTypeType
+
+def get_value() -> ChannelMessageTypeType:
+    return "CONTROL"
 ```
 
-Values:
-
-- `CONTROL`
-- `STANDARD`
-
-<a id="channelmodetype"></a>
-
+```python title="Definition"
+ChannelMessageTypeType = Literal[
+    "CONTROL",
+    "STANDARD",
+]
+```
 ## ChannelModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ChannelModeType
+
+def get_value() -> ChannelModeType:
+    return "RESTRICTED"
 ```
 
-Values:
-
-- `RESTRICTED`
-- `UNRESTRICTED`
-
-<a id="channelprivacytype"></a>
-
+```python title="Definition"
+ChannelModeType = Literal[
+    "RESTRICTED",
+    "UNRESTRICTED",
+]
+```
 ## ChannelPrivacyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ChannelPrivacyType
+
+def get_value() -> ChannelPrivacyType:
+    return "PRIVATE"
 ```
 
-Values:
-
-- `PRIVATE`
-- `PUBLIC`
-
-<a id="contentmuxtypetype"></a>
-
+```python title="Definition"
+ChannelPrivacyType = Literal[
+    "PRIVATE",
+    "PUBLIC",
+]
+```
 ## ContentMuxTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ContentMuxTypeType
+
+def get_value() -> ContentMuxTypeType:
+    return "ContentOnly"
 ```
 
-Values:
-
-- `ContentOnly`
-
-<a id="emailstatustype"></a>
-
+```python title="Definition"
+ContentMuxTypeType = Literal[
+    "ContentOnly",
+]
+```
 ## EmailStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import EmailStatusType
+
+def get_value() -> EmailStatusType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `NotSent`
-- `Sent`
-
-<a id="errorcodetype"></a>
-
+```python title="Definition"
+EmailStatusType = Literal[
+    "Failed",
+    "NotSent",
+    "Sent",
+]
+```
 ## ErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ErrorCodeType
+
+def get_value() -> ErrorCodeType:
+    return "AccessDenied"
 ```
 
-Values:
-
-- `AccessDenied`
-- `BadRequest`
-- `Conflict`
-- `Forbidden`
-- `NotFound`
-- `PhoneNumberAssociationsExist`
-- `PreconditionFailed`
-- `ResourceLimitExceeded`
-- `ServiceFailure`
-- `ServiceUnavailable`
-- `Throttled`
-- `Throttling`
-- `Unauthorized`
-- `Unprocessable`
-- `VoiceConnectorGroupAssociationsExist`
-
-<a id="geomatchleveltype"></a>
-
+```python title="Definition"
+ErrorCodeType = Literal[
+    "AccessDenied",
+    "BadRequest",
+    "Conflict",
+    "Forbidden",
+    "NotFound",
+    "PhoneNumberAssociationsExist",
+    "PreconditionFailed",
+    "ResourceLimitExceeded",
+    "ServiceFailure",
+    "ServiceUnavailable",
+    "Throttled",
+    "Throttling",
+    "Unauthorized",
+    "Unprocessable",
+    "VoiceConnectorGroupAssociationsExist",
+]
+```
 ## GeoMatchLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import GeoMatchLevelType
+
+def get_value() -> GeoMatchLevelType:
+    return "AreaCode"
 ```
 
-Values:
-
-- `AreaCode`
-- `Country`
-
-<a id="invitestatustype"></a>
-
+```python title="Definition"
+GeoMatchLevelType = Literal[
+    "AreaCode",
+    "Country",
+]
+```
 ## InviteStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import InviteStatusType
+
+def get_value() -> InviteStatusType:
+    return "Accepted"
 ```
 
-Values:
-
-- `Accepted`
-- `Failed`
-- `Pending`
-
-<a id="licensetype"></a>
-
+```python title="Definition"
+InviteStatusType = Literal[
+    "Accepted",
+    "Failed",
+    "Pending",
+]
+```
 ## LicenseType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import LicenseType
+
+def get_value() -> LicenseType:
+    return "Basic"
 ```
 
-Values:
-
-- `Basic`
-- `Plus`
-- `Pro`
-- `ProTrial`
-
-<a id="listaccountspaginatorname"></a>
-
+```python title="Definition"
+LicenseType = Literal[
+    "Basic",
+    "Plus",
+    "Pro",
+    "ProTrial",
+]
+```
 ## ListAccountsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ListAccountsPaginatorName
+
+def get_value() -> ListAccountsPaginatorName:
+    return "list_accounts"
 ```
 
-Values:
-
-- `list_accounts`
-
-<a id="listuserspaginatorname"></a>
-
+```python title="Definition"
+ListAccountsPaginatorName = Literal[
+    "list_accounts",
+]
+```
 ## ListUsersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ListUsersPaginatorName
+
+def get_value() -> ListUsersPaginatorName:
+    return "list_users"
 ```
 
-Values:
-
-- `list_users`
-
-<a id="mediapipelinesinktypetype"></a>
-
+```python title="Definition"
+ListUsersPaginatorName = Literal[
+    "list_users",
+]
+```
 ## MediaPipelineSinkTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import MediaPipelineSinkTypeType
+
+def get_value() -> MediaPipelineSinkTypeType:
+    return "S3Bucket"
 ```
 
-Values:
-
-- `S3Bucket`
-
-<a id="mediapipelinesourcetypetype"></a>
-
+```python title="Definition"
+MediaPipelineSinkTypeType = Literal[
+    "S3Bucket",
+]
+```
 ## MediaPipelineSourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import MediaPipelineSourceTypeType
+
+def get_value() -> MediaPipelineSourceTypeType:
+    return "ChimeSdkMeeting"
 ```
 
-Values:
-
-- `ChimeSdkMeeting`
-
-<a id="mediapipelinestatustype"></a>
-
+```python title="Definition"
+MediaPipelineSourceTypeType = Literal[
+    "ChimeSdkMeeting",
+]
+```
 ## MediaPipelineStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import MediaPipelineStatusType
+
+def get_value() -> MediaPipelineStatusType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `Initializing`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-
-<a id="membertypetype"></a>
-
+```python title="Definition"
+MediaPipelineStatusType = Literal[
+    "Failed",
+    "Initializing",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+]
+```
 ## MemberTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import MemberTypeType
+
+def get_value() -> MemberTypeType:
+    return "Bot"
 ```
 
-Values:
-
-- `Bot`
-- `User`
-- `Webhook`
-
-<a id="notificationtargettype"></a>
-
+```python title="Definition"
+MemberTypeType = Literal[
+    "Bot",
+    "User",
+    "Webhook",
+]
+```
 ## NotificationTargetType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import NotificationTargetType
+
+def get_value() -> NotificationTargetType:
+    return "EventBridge"
 ```
 
-Values:
-
-- `EventBridge`
-- `SNS`
-- `SQS`
-
-<a id="numberselectionbehaviortype"></a>
-
+```python title="Definition"
+NotificationTargetType = Literal[
+    "EventBridge",
+    "SNS",
+    "SQS",
+]
+```
 ## NumberSelectionBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import NumberSelectionBehaviorType
+
+def get_value() -> NumberSelectionBehaviorType:
+    return "AvoidSticky"
 ```
 
-Values:
-
-- `AvoidSticky`
-- `PreferSticky`
-
-<a id="orderedphonenumberstatustype"></a>
-
+```python title="Definition"
+NumberSelectionBehaviorType = Literal[
+    "AvoidSticky",
+    "PreferSticky",
+]
+```
 ## OrderedPhoneNumberStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import OrderedPhoneNumberStatusType
+
+def get_value() -> OrderedPhoneNumberStatusType:
+    return "Acquired"
 ```
 
-Values:
-
-- `Acquired`
-- `Failed`
-- `Processing`
-
-<a id="originationrouteprotocoltype"></a>
-
+```python title="Definition"
+OrderedPhoneNumberStatusType = Literal[
+    "Acquired",
+    "Failed",
+    "Processing",
+]
+```
 ## OriginationRouteProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import OriginationRouteProtocolType
+
+def get_value() -> OriginationRouteProtocolType:
+    return "TCP"
 ```
 
-Values:
-
-- `TCP`
-- `UDP`
-
-<a id="phonenumberassociationnametype"></a>
-
+```python title="Definition"
+OriginationRouteProtocolType = Literal[
+    "TCP",
+    "UDP",
+]
+```
 ## PhoneNumberAssociationNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import PhoneNumberAssociationNameType
+
+def get_value() -> PhoneNumberAssociationNameType:
+    return "AccountId"
 ```
 
-Values:
-
-- `AccountId`
-- `SipRuleId`
-- `UserId`
-- `VoiceConnectorGroupId`
-- `VoiceConnectorId`
-
-<a id="phonenumberorderstatustype"></a>
-
+```python title="Definition"
+PhoneNumberAssociationNameType = Literal[
+    "AccountId",
+    "SipRuleId",
+    "UserId",
+    "VoiceConnectorGroupId",
+    "VoiceConnectorId",
+]
+```
 ## PhoneNumberOrderStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import PhoneNumberOrderStatusType
+
+def get_value() -> PhoneNumberOrderStatusType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `Partial`
-- `Processing`
-- `Successful`
-
-<a id="phonenumberproducttypetype"></a>
-
+```python title="Definition"
+PhoneNumberOrderStatusType = Literal[
+    "Failed",
+    "Partial",
+    "Processing",
+    "Successful",
+]
+```
 ## PhoneNumberProductTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import PhoneNumberProductTypeType
+
+def get_value() -> PhoneNumberProductTypeType:
+    return "BusinessCalling"
 ```
 
-Values:
-
-- `BusinessCalling`
-- `SipMediaApplicationDialIn`
-- `VoiceConnector`
-
-<a id="phonenumberstatustype"></a>
-
+```python title="Definition"
+PhoneNumberProductTypeType = Literal[
+    "BusinessCalling",
+    "SipMediaApplicationDialIn",
+    "VoiceConnector",
+]
+```
 ## PhoneNumberStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import PhoneNumberStatusType
+
+def get_value() -> PhoneNumberStatusType:
+    return "AcquireFailed"
 ```
 
-Values:
-
-- `AcquireFailed`
-- `AcquireInProgress`
-- `Assigned`
-- `DeleteFailed`
-- `DeleteInProgress`
-- `ReleaseFailed`
-- `ReleaseInProgress`
-- `Unassigned`
-
-<a id="phonenumbertypetype"></a>
-
+```python title="Definition"
+PhoneNumberStatusType = Literal[
+    "AcquireFailed",
+    "AcquireInProgress",
+    "Assigned",
+    "DeleteFailed",
+    "DeleteInProgress",
+    "ReleaseFailed",
+    "ReleaseInProgress",
+    "Unassigned",
+]
+```
 ## PhoneNumberTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import PhoneNumberTypeType
+
+def get_value() -> PhoneNumberTypeType:
+    return "Local"
 ```
 
-Values:
-
-- `Local`
-- `TollFree`
-
-<a id="proxysessionstatustype"></a>
-
+```python title="Definition"
+PhoneNumberTypeType = Literal[
+    "Local",
+    "TollFree",
+]
+```
 ## ProxySessionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ProxySessionStatusType
+
+def get_value() -> ProxySessionStatusType:
+    return "Closed"
 ```
 
-Values:
-
-- `Closed`
-- `InProgress`
-- `Open`
-
-<a id="registrationstatustype"></a>
-
+```python title="Definition"
+ProxySessionStatusType = Literal[
+    "Closed",
+    "InProgress",
+    "Open",
+]
+```
 ## RegistrationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import RegistrationStatusType
+
+def get_value() -> RegistrationStatusType:
+    return "Registered"
 ```
 
-Values:
-
-- `Registered`
-- `Suspended`
-- `Unregistered`
-
-<a id="roommembershiproletype"></a>
-
+```python title="Definition"
+RegistrationStatusType = Literal[
+    "Registered",
+    "Suspended",
+    "Unregistered",
+]
+```
 ## RoomMembershipRoleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import RoomMembershipRoleType
+
+def get_value() -> RoomMembershipRoleType:
+    return "Administrator"
 ```
 
-Values:
-
-- `Administrator`
-- `Member`
-
-<a id="sipruletriggertypetype"></a>
-
+```python title="Definition"
+RoomMembershipRoleType = Literal[
+    "Administrator",
+    "Member",
+]
+```
 ## SipRuleTriggerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import SipRuleTriggerTypeType
+
+def get_value() -> SipRuleTriggerTypeType:
+    return "RequestUriHostname"
 ```
 
-Values:
-
-- `RequestUriHostname`
-- `ToPhoneNumber`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+SipRuleTriggerTypeType = Literal[
+    "RequestUriHostname",
+    "ToPhoneNumber",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="transcribecontentidentificationtypetype"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## TranscribeContentIdentificationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeContentIdentificationTypeType
+
+def get_value() -> TranscribeContentIdentificationTypeType:
+    return "PII"
 ```
 
-Values:
-
-- `PII`
-
-<a id="transcribecontentredactiontypetype"></a>
-
+```python title="Definition"
+TranscribeContentIdentificationTypeType = Literal[
+    "PII",
+]
+```
 ## TranscribeContentRedactionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeContentRedactionTypeType
+
+def get_value() -> TranscribeContentRedactionTypeType:
+    return "PII"
 ```
 
-Values:
-
-- `PII`
-
-<a id="transcribelanguagecodetype"></a>
-
+```python title="Definition"
+TranscribeContentRedactionTypeType = Literal[
+    "PII",
+]
+```
 ## TranscribeLanguageCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeLanguageCodeType
+
+def get_value() -> TranscribeLanguageCodeType:
+    return "de-DE"
 ```
 
-Values:
-
-- `de-DE`
-- `en-AU`
-- `en-GB`
-- `en-US`
-- `es-US`
-- `fr-CA`
-- `fr-FR`
-- `it-IT`
-- `ja-JP`
-- `ko-KR`
-- `pt-BR`
-- `zh-CN`
-
-<a id="transcribemedicalcontentidentificationtypetype"></a>
-
+```python title="Definition"
+TranscribeLanguageCodeType = Literal[
+    "de-DE",
+    "en-AU",
+    "en-GB",
+    "en-US",
+    "es-US",
+    "fr-CA",
+    "fr-FR",
+    "it-IT",
+    "ja-JP",
+    "ko-KR",
+    "pt-BR",
+    "zh-CN",
+]
+```
 ## TranscribeMedicalContentIdentificationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeMedicalContentIdentificationTypeType
+
+def get_value() -> TranscribeMedicalContentIdentificationTypeType:
+    return "PHI"
 ```
 
-Values:
-
-- `PHI`
-
-<a id="transcribemedicallanguagecodetype"></a>
-
+```python title="Definition"
+TranscribeMedicalContentIdentificationTypeType = Literal[
+    "PHI",
+]
+```
 ## TranscribeMedicalLanguageCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeMedicalLanguageCodeType
+
+def get_value() -> TranscribeMedicalLanguageCodeType:
+    return "en-US"
 ```
 
-Values:
-
-- `en-US`
-
-<a id="transcribemedicalregiontype"></a>
-
+```python title="Definition"
+TranscribeMedicalLanguageCodeType = Literal[
+    "en-US",
+]
+```
 ## TranscribeMedicalRegionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeMedicalRegionType
+
+def get_value() -> TranscribeMedicalRegionType:
+    return "ap-southeast-2"
 ```
 
-Values:
-
-- `ap-southeast-2`
-- `auto`
-- `ca-central-1`
-- `eu-west-1`
-- `us-east-1`
-- `us-east-2`
-- `us-west-2`
-
-<a id="transcribemedicalspecialtytype"></a>
-
+```python title="Definition"
+TranscribeMedicalRegionType = Literal[
+    "ap-southeast-2",
+    "auto",
+    "ca-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```
 ## TranscribeMedicalSpecialtyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeMedicalSpecialtyType
+
+def get_value() -> TranscribeMedicalSpecialtyType:
+    return "CARDIOLOGY"
 ```
 
-Values:
-
-- `CARDIOLOGY`
-- `NEUROLOGY`
-- `ONCOLOGY`
-- `PRIMARYCARE`
-- `RADIOLOGY`
-- `UROLOGY`
-
-<a id="transcribemedicaltypetype"></a>
-
+```python title="Definition"
+TranscribeMedicalSpecialtyType = Literal[
+    "CARDIOLOGY",
+    "NEUROLOGY",
+    "ONCOLOGY",
+    "PRIMARYCARE",
+    "RADIOLOGY",
+    "UROLOGY",
+]
+```
 ## TranscribeMedicalTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeMedicalTypeType
+
+def get_value() -> TranscribeMedicalTypeType:
+    return "CONVERSATION"
 ```
 
-Values:
-
-- `CONVERSATION`
-- `DICTATION`
-
-<a id="transcribepartialresultsstabilitytype"></a>
-
+```python title="Definition"
+TranscribeMedicalTypeType = Literal[
+    "CONVERSATION",
+    "DICTATION",
+]
+```
 ## TranscribePartialResultsStabilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribePartialResultsStabilityType
+
+def get_value() -> TranscribePartialResultsStabilityType:
+    return "high"
 ```
 
-Values:
-
-- `high`
-- `low`
-- `medium`
-
-<a id="transcriberegiontype"></a>
-
+```python title="Definition"
+TranscribePartialResultsStabilityType = Literal[
+    "high",
+    "low",
+    "medium",
+]
+```
 ## TranscribeRegionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeRegionType
+
+def get_value() -> TranscribeRegionType:
+    return "ap-northeast-1"
 ```
 
-Values:
-
-- `ap-northeast-1`
-- `ap-northeast-2`
-- `ap-southeast-2`
-- `auto`
-- `ca-central-1`
-- `eu-central-1`
-- `eu-west-1`
-- `eu-west-2`
-- `sa-east-1`
-- `us-east-1`
-- `us-east-2`
-- `us-west-2`
-
-<a id="transcribevocabularyfiltermethodtype"></a>
-
+```python title="Definition"
+TranscribeRegionType = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-southeast-2",
+    "auto",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-1",
+    "eu-west-2",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```
 ## TranscribeVocabularyFilterMethodType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import TranscribeVocabularyFilterMethodType
+
+def get_value() -> TranscribeVocabularyFilterMethodType:
+    return "mask"
 ```
 
-Values:
-
-- `mask`
-- `remove`
-- `tag`
-
-<a id="usertypetype"></a>
-
+```python title="Definition"
+TranscribeVocabularyFilterMethodType = Literal[
+    "mask",
+    "remove",
+    "tag",
+]
+```
 ## UserTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import UserTypeType
+
+def get_value() -> UserTypeType:
+    return "PrivateUser"
 ```
 
-Values:
-
-- `PrivateUser`
-- `SharedDevice`
-
-<a id="videomuxtypetype"></a>
-
+```python title="Definition"
+UserTypeType = Literal[
+    "PrivateUser",
+    "SharedDevice",
+]
+```
 ## VideoMuxTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import VideoMuxTypeType
+
+def get_value() -> VideoMuxTypeType:
+    return "VideoOnly"
 ```
 
-Values:
-
-- `VideoOnly`
-
-<a id="voiceconnectorawsregiontype"></a>
-
+```python title="Definition"
+VideoMuxTypeType = Literal[
+    "VideoOnly",
+]
+```
 ## VoiceConnectorAwsRegionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import VoiceConnectorAwsRegionType
+
+def get_value() -> VoiceConnectorAwsRegionType:
+    return "us-east-1"
 ```
 
-Values:
-
-- `us-east-1`
-- `us-west-2`
-
-<a id="chimeservicename"></a>
-
+```python title="Definition"
+VoiceConnectorAwsRegionType = Literal[
+    "us-east-1",
+    "us-west-2",
+]
+```
 ## ChimeServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ChimeServiceName
+
+def get_value() -> ChimeServiceName:
+    return "chime"
 ```
 
-Values:
-
-- `chime`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ChimeServiceName = Literal[
+    "chime",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_accounts"
 ```
 
-Values:
-
-- `list_accounts`
-- `list_users`
+```python title="Definition"
+PaginatorName = Literal[
+    "list_accounts",
+    "list_users",
+]
+```

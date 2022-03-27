@@ -1,91 +1,139 @@
-<a id="examples-for-boto3-proton-module"></a>
-
-# Examples for boto3 Proton module
+# Examples
 
 > [Index](../README.md) > [Proton](./README.md) > Examples
 
-- [Examples for boto3 Proton module](#examples-for-boto3-proton-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
+    type annotations stubs module [mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[proton]` package installed.
 
-Write your `Proton` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Proton` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ProtonClient
-# and provides type checking and code completion
-client = session.client("proton")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AcceptEnvironmentAccountConnectionOutputTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.accept_environment_account_connection()
 
-# paginator has type ListEnvironmentAccountConnectionsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_environment_account_connections")
-for item in paginator.paginate(...):
-    # item has type ListEnvironmentAccountConnectionsOutputTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type EnvironmentDeployedWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("environment_deployed")
-waiter.wait()
-```
+    client = session.client("proton")  # (1)
+    result = client.accept_environment_account_connection()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [ProtonClient](./client.md)
+    2. result: [:material-code-braces: AcceptEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#acceptenvironmentaccountconnectionoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("proton")  # (1)
+
+    paginator = client.get_paginator("list_environment_account_connections")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ProtonClient](./client.md)
+    2. paginator: [ListEnvironmentAccountConnectionsPaginator](./paginators.md#listenvironmentaccountconnectionspaginator)
+    3. item: [:material-code-braces: ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("proton")  # (1)
+
+    waiter = client.get_waiter("environment_deployed")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [ProtonClient](./client.md)
+    2. waiter: [EnvironmentDeployedWaiter](./waiters.md#environmentdeployedwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[proton]` or a standalone `mypy_boto3_proton` package,
-you have to explicitly specify `client: ProtonClient` type annotation.
+With `boto3-stubs-lite[proton]`
+or a standalone `mypy_boto3_proton` package, you have to explicitly specify `client: ProtonClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_proton.client import ProtonClient
-from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginator
-from mypy_boto3_proton.waiter import EnvironmentDeployedWaiter
-from mypy_boto3_proton.literals import PaginatorName
-from mypy_boto3_proton.literals import WaiterName
-from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionOutputTypeDef
-from mypy_boto3_proton.type_defs import ListEnvironmentAccountConnectionsOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ProtonClient = session.client("proton")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AcceptEnvironmentAccountConnectionOutputTypeDef = client.accept_environment_account_connection()
+    from mypy_boto3_proton.client import ProtonClient
+    from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionOutputTypeDef
+    from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_environment_account_connections"
-paginator: ListEnvironmentAccountConnectionsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListEnvironmentAccountConnectionsOutputTypeDef
-    print(item)
 
-waiter_name: WaiterName = "environment_deployed"
-waiter: EnvironmentDeployedWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: ProtonClient = session.client("proton")
+
+    kwargs: AcceptEnvironmentAccountConnectionInputRequestTypeDef = {...}
+    result: AcceptEnvironmentAccountConnectionOutputTypeDef = client.accept_environment_account_connection(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_proton.client import ProtonClient
+    from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginator
+    from mypy_boto3_proton.type_defs import ListEnvironmentAccountConnectionsOutputTypeDef
+
+
+    session = Session()
+    client: ProtonClient = session.client("proton")
+
+    paginator: ListEnvironmentAccountConnectionsPaginator = client.get_paginator("list_environment_account_connections")
+    for item in paginator.paginate(...):
+        item: ListEnvironmentAccountConnectionsOutputTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_proton.client import ProtonClient
+    from mypy_boto3_proton.waiter import EnvironmentDeployedWaiter
+
+    session = Session()
+    client: ProtonClient = session.client("proton")
+
+    waiter: EnvironmentDeployedWaiter = client.get_waiter("environment_deployed")
+    waiter.wait()
+    ```
+
+

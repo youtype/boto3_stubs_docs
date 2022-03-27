@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-applicationdiscoveryservice-module"></a>
-
-# Type annotations for boto3 ApplicationDiscoveryService module
+#  ApplicationDiscoveryService module
 
 > [Index](../README.md) > ApplicationDiscoveryService
 
-Auto-generated documentation for
-[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
-type annotations stubs module
-[mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
+!!! note ""
 
-- [Type annotations for boto3 ApplicationDiscoveryService module](#type-annotations-for-boto3-applicationdiscoveryservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ApplicationDiscoveryServiceClient](#applicationdiscoveryserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
+    type annotations stubs module [mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ApplicationDiscoveryService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[discovery]'
 python -m pip install mypy-boto3-discovery
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,87 +42,37 @@ python -m pip install mypy-boto3-discovery
 python -m pip uninstall -y mypy-boto3-discovery
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="applicationdiscoveryserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ApplicationDiscoveryServiceClient
 
-Type annotations for `boto3.client("discovery")` as
-[ApplicationDiscoveryServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("discovery")` as [ApplicationDiscoveryServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_discovery.client import ApplicationDiscoveryServiceClient
+
+def get_client() -> ApplicationDiscoveryServiceClient:
+    return Session().cleint("discovery")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_configuration_items_to_application](./client.md#associate_configuration_items_to_application)
-- [batch_delete_import_data](./client.md#batch_delete_import_data)
-- [can_paginate](./client.md#can_paginate)
-- [create_application](./client.md#create_application)
-- [create_tags](./client.md#create_tags)
-- [delete_applications](./client.md#delete_applications)
-- [delete_tags](./client.md#delete_tags)
-- [describe_agents](./client.md#describe_agents)
-- [describe_configurations](./client.md#describe_configurations)
-- [describe_continuous_exports](./client.md#describe_continuous_exports)
-- [describe_export_configurations](./client.md#describe_export_configurations)
-- [describe_export_tasks](./client.md#describe_export_tasks)
-- [describe_import_tasks](./client.md#describe_import_tasks)
-- [describe_tags](./client.md#describe_tags)
-- [disassociate_configuration_items_from_application](./client.md#disassociate_configuration_items_from_application)
-- [exceptions](./client.md#exceptions)
-- [export_configurations](./client.md#export_configurations)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_discovery_summary](./client.md#get_discovery_summary)
-- [get_paginator](./client.md#get_paginator)
-- [list_configurations](./client.md#list_configurations)
-- [list_server_neighbors](./client.md#list_server_neighbors)
-- [start_continuous_export](./client.md#start_continuous_export)
-- [start_data_collection_by_agent_ids](./client.md#start_data_collection_by_agent_ids)
-- [start_export_task](./client.md#start_export_task)
-- [start_import_task](./client.md#start_import_task)
-- [stop_continuous_export](./client.md#stop_continuous_export)
-- [stop_data_collection_by_agent_ids](./client.md#stop_data_collection_by_agent_ids)
-- [update_application](./client.md#update_application)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ApplicationDiscoveryServiceClient [exceptions](./client.md#exceptions)
-
-- AuthorizationErrorException
-- ClientError
-- ConflictErrorException
-- HomeRegionNotSetException
-- InvalidParameterException
-- InvalidParameterValueException
-- OperationNotPermittedException
-- ResourceInUseException
-- ResourceNotFoundException
-- ServerInternalErrorException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("discovery").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("discovery").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_discovery.paginator import DescribeAgentsPaginator, ...
+from mypy_boto3_discovery.paginator import DescribeAgentsPaginator
+
+def get_describe_agents_paginator() -> DescribeAgentsPaginator:
+    return Session().client("discovery").get_paginator("describe_agents"))
 ```
 
 - [DescribeAgentsPaginator](./paginators.md#describeagentspaginator)
@@ -154,16 +82,23 @@ from mypy_boto3_discovery.paginator import DescribeAgentsPaginator, ...
 - [DescribeTagsPaginator](./paginators.md#describetagspaginator)
 - [ListConfigurationsPaginator](./paginators.md#listconfigurationspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_discovery.literals import AgentStatusType
 
-```python
-from mypy_boto3_discovery.literals import AgentStatusType, ...
+def get_value() -> AgentStatusType:
+    return "BLACKLISTED"
 ```
 
 - [AgentStatusType](./literals.md#agentstatustype)
@@ -186,18 +121,22 @@ from mypy_boto3_discovery.literals import AgentStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_discovery.type_defs import AgentConfigurationStatusTypeDef
 
-```python
-from mypy_boto3_discovery.type_defs import AgentConfigurationStatusTypeDef, ...
+def get_value() -> AgentConfigurationStatusTypeDef:
+    return {
+        "agentId": ...,
+    }
 ```
 
 - [AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef)
@@ -216,18 +155,23 @@ from mypy_boto3_discovery.type_defs import AgentConfigurationStatusTypeDef, ...
 - [CustomerConnectorInfoTypeDef](./type_defs.md#customerconnectorinfotypedef)
 - [DeleteApplicationsRequestRequestTypeDef](./type_defs.md#deleteapplicationsrequestrequesttypedef)
 - [DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef)
+- [DescribeAgentsRequestDescribeAgentsPaginateTypeDef](./type_defs.md#describeagentsrequestdescribeagentspaginatetypedef)
 - [DescribeAgentsRequestRequestTypeDef](./type_defs.md#describeagentsrequestrequesttypedef)
 - [DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef)
 - [DescribeConfigurationsRequestRequestTypeDef](./type_defs.md#describeconfigurationsrequestrequesttypedef)
 - [DescribeConfigurationsResponseTypeDef](./type_defs.md#describeconfigurationsresponsetypedef)
+- [DescribeContinuousExportsRequestDescribeContinuousExportsPaginateTypeDef](./type_defs.md#describecontinuousexportsrequestdescribecontinuousexportspaginatetypedef)
 - [DescribeContinuousExportsRequestRequestTypeDef](./type_defs.md#describecontinuousexportsrequestrequesttypedef)
 - [DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef)
+- [DescribeExportConfigurationsRequestDescribeExportConfigurationsPaginateTypeDef](./type_defs.md#describeexportconfigurationsrequestdescribeexportconfigurationspaginatetypedef)
 - [DescribeExportConfigurationsRequestRequestTypeDef](./type_defs.md#describeexportconfigurationsrequestrequesttypedef)
 - [DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef)
+- [DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef](./type_defs.md#describeexporttasksrequestdescribeexporttaskspaginatetypedef)
 - [DescribeExportTasksRequestRequestTypeDef](./type_defs.md#describeexporttasksrequestrequesttypedef)
 - [DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)
 - [DescribeImportTasksRequestRequestTypeDef](./type_defs.md#describeimporttasksrequestrequesttypedef)
 - [DescribeImportTasksResponseTypeDef](./type_defs.md#describeimporttasksresponsetypedef)
+- [DescribeTagsRequestDescribeTagsPaginateTypeDef](./type_defs.md#describetagsrequestdescribetagspaginatetypedef)
 - [DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef)
 - [DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef)
 - [DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef](./type_defs.md#disassociateconfigurationitemsfromapplicationrequestrequesttypedef)
@@ -238,6 +182,7 @@ from mypy_boto3_discovery.type_defs import AgentConfigurationStatusTypeDef, ...
 - [GetDiscoverySummaryResponseTypeDef](./type_defs.md#getdiscoverysummaryresponsetypedef)
 - [ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)
 - [ImportTaskTypeDef](./type_defs.md#importtasktypedef)
+- [ListConfigurationsRequestListConfigurationsPaginateTypeDef](./type_defs.md#listconfigurationsrequestlistconfigurationspaginatetypedef)
 - [ListConfigurationsRequestRequestTypeDef](./type_defs.md#listconfigurationsrequestrequesttypedef)
 - [ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef)
 - [ListServerNeighborsRequestRequestTypeDef](./type_defs.md#listserverneighborsrequestrequesttypedef)
@@ -260,3 +205,4 @@ from mypy_boto3_discovery.type_defs import AgentConfigurationStatusTypeDef, ...
 - [TagFilterTypeDef](./type_defs.md#tagfiltertypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef)
+

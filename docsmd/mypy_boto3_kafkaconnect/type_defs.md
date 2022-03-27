@@ -1,1300 +1,1654 @@
-<a id="typed-dictionaries-for-boto3-kafkaconnect-module"></a>
-
-# Typed dictionaries for boto3 KafkaConnect module
+# Typed dictionaries
 
 > [Index](../README.md) > [KafkaConnect](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
-type annotations stubs module
-[mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
+!!! note ""
 
-- [Typed dictionaries for boto3 KafkaConnect module](#typed-dictionaries-for-boto3-kafkaconnect-module)
-  - [ApacheKafkaClusterDescriptionTypeDef](#apachekafkaclusterdescriptiontypedef)
-  - [ApacheKafkaClusterTypeDef](#apachekafkaclustertypedef)
-  - [AutoScalingDescriptionTypeDef](#autoscalingdescriptiontypedef)
-  - [AutoScalingTypeDef](#autoscalingtypedef)
-  - [AutoScalingUpdateTypeDef](#autoscalingupdatetypedef)
-  - [CapacityDescriptionTypeDef](#capacitydescriptiontypedef)
-  - [CapacityTypeDef](#capacitytypedef)
-  - [CapacityUpdateTypeDef](#capacityupdatetypedef)
-  - [CloudWatchLogsLogDeliveryDescriptionTypeDef](#cloudwatchlogslogdeliverydescriptiontypedef)
-  - [CloudWatchLogsLogDeliveryTypeDef](#cloudwatchlogslogdeliverytypedef)
-  - [ConnectorSummaryTypeDef](#connectorsummarytypedef)
-  - [CreateConnectorRequestRequestTypeDef](#createconnectorrequestrequesttypedef)
-  - [CreateConnectorResponseTypeDef](#createconnectorresponsetypedef)
-  - [CreateCustomPluginRequestRequestTypeDef](#createcustompluginrequestrequesttypedef)
-  - [CreateCustomPluginResponseTypeDef](#createcustompluginresponsetypedef)
-  - [CreateWorkerConfigurationRequestRequestTypeDef](#createworkerconfigurationrequestrequesttypedef)
-  - [CreateWorkerConfigurationResponseTypeDef](#createworkerconfigurationresponsetypedef)
-  - [CustomPluginDescriptionTypeDef](#customplugindescriptiontypedef)
-  - [CustomPluginFileDescriptionTypeDef](#custompluginfiledescriptiontypedef)
-  - [CustomPluginLocationDescriptionTypeDef](#custompluginlocationdescriptiontypedef)
-  - [CustomPluginLocationTypeDef](#custompluginlocationtypedef)
-  - [CustomPluginRevisionSummaryTypeDef](#custompluginrevisionsummarytypedef)
-  - [CustomPluginSummaryTypeDef](#custompluginsummarytypedef)
-  - [CustomPluginTypeDef](#customplugintypedef)
-  - [DeleteConnectorRequestRequestTypeDef](#deleteconnectorrequestrequesttypedef)
-  - [DeleteConnectorResponseTypeDef](#deleteconnectorresponsetypedef)
-  - [DeleteCustomPluginRequestRequestTypeDef](#deletecustompluginrequestrequesttypedef)
-  - [DeleteCustomPluginResponseTypeDef](#deletecustompluginresponsetypedef)
-  - [DescribeConnectorRequestRequestTypeDef](#describeconnectorrequestrequesttypedef)
-  - [DescribeConnectorResponseTypeDef](#describeconnectorresponsetypedef)
-  - [DescribeCustomPluginRequestRequestTypeDef](#describecustompluginrequestrequesttypedef)
-  - [DescribeCustomPluginResponseTypeDef](#describecustompluginresponsetypedef)
-  - [DescribeWorkerConfigurationRequestRequestTypeDef](#describeworkerconfigurationrequestrequesttypedef)
-  - [DescribeWorkerConfigurationResponseTypeDef](#describeworkerconfigurationresponsetypedef)
-  - [FirehoseLogDeliveryDescriptionTypeDef](#firehoselogdeliverydescriptiontypedef)
-  - [FirehoseLogDeliveryTypeDef](#firehoselogdeliverytypedef)
-  - [KafkaClusterClientAuthenticationDescriptionTypeDef](#kafkaclusterclientauthenticationdescriptiontypedef)
-  - [KafkaClusterClientAuthenticationTypeDef](#kafkaclusterclientauthenticationtypedef)
-  - [KafkaClusterDescriptionTypeDef](#kafkaclusterdescriptiontypedef)
-  - [KafkaClusterEncryptionInTransitDescriptionTypeDef](#kafkaclusterencryptionintransitdescriptiontypedef)
-  - [KafkaClusterEncryptionInTransitTypeDef](#kafkaclusterencryptionintransittypedef)
-  - [KafkaClusterTypeDef](#kafkaclustertypedef)
-  - [ListConnectorsRequestRequestTypeDef](#listconnectorsrequestrequesttypedef)
-  - [ListConnectorsResponseTypeDef](#listconnectorsresponsetypedef)
-  - [ListCustomPluginsRequestRequestTypeDef](#listcustompluginsrequestrequesttypedef)
-  - [ListCustomPluginsResponseTypeDef](#listcustompluginsresponsetypedef)
-  - [ListWorkerConfigurationsRequestRequestTypeDef](#listworkerconfigurationsrequestrequesttypedef)
-  - [ListWorkerConfigurationsResponseTypeDef](#listworkerconfigurationsresponsetypedef)
-  - [LogDeliveryDescriptionTypeDef](#logdeliverydescriptiontypedef)
-  - [LogDeliveryTypeDef](#logdeliverytypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PluginDescriptionTypeDef](#plugindescriptiontypedef)
-  - [PluginTypeDef](#plugintypedef)
-  - [ProvisionedCapacityDescriptionTypeDef](#provisionedcapacitydescriptiontypedef)
-  - [ProvisionedCapacityTypeDef](#provisionedcapacitytypedef)
-  - [ProvisionedCapacityUpdateTypeDef](#provisionedcapacityupdatetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3LocationDescriptionTypeDef](#s3locationdescriptiontypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [S3LogDeliveryDescriptionTypeDef](#s3logdeliverydescriptiontypedef)
-  - [S3LogDeliveryTypeDef](#s3logdeliverytypedef)
-  - [ScaleInPolicyDescriptionTypeDef](#scaleinpolicydescriptiontypedef)
-  - [ScaleInPolicyTypeDef](#scaleinpolicytypedef)
-  - [ScaleInPolicyUpdateTypeDef](#scaleinpolicyupdatetypedef)
-  - [ScaleOutPolicyDescriptionTypeDef](#scaleoutpolicydescriptiontypedef)
-  - [ScaleOutPolicyTypeDef](#scaleoutpolicytypedef)
-  - [ScaleOutPolicyUpdateTypeDef](#scaleoutpolicyupdatetypedef)
-  - [StateDescriptionTypeDef](#statedescriptiontypedef)
-  - [UpdateConnectorRequestRequestTypeDef](#updateconnectorrequestrequesttypedef)
-  - [UpdateConnectorResponseTypeDef](#updateconnectorresponsetypedef)
-  - [VpcDescriptionTypeDef](#vpcdescriptiontypedef)
-  - [VpcTypeDef](#vpctypedef)
-  - [WorkerConfigurationDescriptionTypeDef](#workerconfigurationdescriptiontypedef)
-  - [WorkerConfigurationRevisionDescriptionTypeDef](#workerconfigurationrevisiondescriptiontypedef)
-  - [WorkerConfigurationRevisionSummaryTypeDef](#workerconfigurationrevisionsummarytypedef)
-  - [WorkerConfigurationSummaryTypeDef](#workerconfigurationsummarytypedef)
-  - [WorkerConfigurationTypeDef](#workerconfigurationtypedef)
-  - [WorkerLogDeliveryDescriptionTypeDef](#workerlogdeliverydescriptiontypedef)
-  - [WorkerLogDeliveryTypeDef](#workerlogdeliverytypedef)
-
-<a id="apachekafkaclusterdescriptiontypedef"></a>
+    Auto-generated documentation for [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
+    type annotations stubs module [mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
 
 ## ApacheKafkaClusterDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ApacheKafkaClusterDescriptionTypeDef
+
+def get_value() -> ApacheKafkaClusterDescriptionTypeDef:
+    return {
+        "bootstrapServers": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApacheKafkaClusterDescriptionTypeDef(TypedDict):
+    bootstrapServers: NotRequired[str],
+    vpc: NotRequired[VpcDescriptionTypeDef],  # (1)
+```
 
-- `bootstrapServers`: `str`
-- `vpc`: [VpcDescriptionTypeDef](./type_defs.md#vpcdescriptiontypedef)
-
-<a id="apachekafkaclustertypedef"></a>
-
+1. See [:material-code-braces: VpcDescriptionTypeDef](./type_defs.md#vpcdescriptiontypedef) 
 ## ApacheKafkaClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ApacheKafkaClusterTypeDef
+
+def get_value() -> ApacheKafkaClusterTypeDef:
+    return {
+        "bootstrapServers": ...,
+        "vpc": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApacheKafkaClusterTypeDef(TypedDict):
+    bootstrapServers: str,
+    vpc: VpcTypeDef,  # (1)
+```
 
-- `bootstrapServers`: `str`
-- `vpc`: [VpcTypeDef](./type_defs.md#vpctypedef)
-
-<a id="autoscalingdescriptiontypedef"></a>
-
+1. See [:material-code-braces: VpcTypeDef](./type_defs.md#vpctypedef) 
 ## AutoScalingDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import AutoScalingDescriptionTypeDef
+
+def get_value() -> AutoScalingDescriptionTypeDef:
+    return {
+        "maxWorkerCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoScalingDescriptionTypeDef(TypedDict):
+    maxWorkerCount: NotRequired[int],
+    mcuCount: NotRequired[int],
+    minWorkerCount: NotRequired[int],
+    scaleInPolicy: NotRequired[ScaleInPolicyDescriptionTypeDef],  # (1)
+    scaleOutPolicy: NotRequired[ScaleOutPolicyDescriptionTypeDef],  # (2)
+```
 
-- `maxWorkerCount`: `int`
-- `mcuCount`: `int`
-- `minWorkerCount`: `int`
-- `scaleInPolicy`:
-  [ScaleInPolicyDescriptionTypeDef](./type_defs.md#scaleinpolicydescriptiontypedef)
-- `scaleOutPolicy`:
-  [ScaleOutPolicyDescriptionTypeDef](./type_defs.md#scaleoutpolicydescriptiontypedef)
-
-<a id="autoscalingtypedef"></a>
-
+1. See [:material-code-braces: ScaleInPolicyDescriptionTypeDef](./type_defs.md#scaleinpolicydescriptiontypedef) 
+2. See [:material-code-braces: ScaleOutPolicyDescriptionTypeDef](./type_defs.md#scaleoutpolicydescriptiontypedef) 
 ## AutoScalingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import AutoScalingTypeDef
+
+def get_value() -> AutoScalingTypeDef:
+    return {
+        "maxWorkerCount": ...,
+        "mcuCount": ...,
+        "minWorkerCount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AutoScalingTypeDef(TypedDict):
+    maxWorkerCount: int,
+    mcuCount: int,
+    minWorkerCount: int,
+    scaleInPolicy: NotRequired[ScaleInPolicyTypeDef],  # (1)
+    scaleOutPolicy: NotRequired[ScaleOutPolicyTypeDef],  # (2)
+```
 
-- `maxWorkerCount`: `int`
-- `mcuCount`: `int`
-- `minWorkerCount`: `int`
-
-Optional fields:
-
-- `scaleInPolicy`: [ScaleInPolicyTypeDef](./type_defs.md#scaleinpolicytypedef)
-- `scaleOutPolicy`:
-  [ScaleOutPolicyTypeDef](./type_defs.md#scaleoutpolicytypedef)
-
-<a id="autoscalingupdatetypedef"></a>
-
+1. See [:material-code-braces: ScaleInPolicyTypeDef](./type_defs.md#scaleinpolicytypedef) 
+2. See [:material-code-braces: ScaleOutPolicyTypeDef](./type_defs.md#scaleoutpolicytypedef) 
 ## AutoScalingUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import AutoScalingUpdateTypeDef
+
+def get_value() -> AutoScalingUpdateTypeDef:
+    return {
+        "maxWorkerCount": ...,
+        "mcuCount": ...,
+        "minWorkerCount": ...,
+        "scaleInPolicy": ...,
+        "scaleOutPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AutoScalingUpdateTypeDef(TypedDict):
+    maxWorkerCount: int,
+    mcuCount: int,
+    minWorkerCount: int,
+    scaleInPolicy: ScaleInPolicyUpdateTypeDef,  # (1)
+    scaleOutPolicy: ScaleOutPolicyUpdateTypeDef,  # (2)
+```
 
-- `maxWorkerCount`: `int`
-- `mcuCount`: `int`
-- `minWorkerCount`: `int`
-- `scaleInPolicy`:
-  [ScaleInPolicyUpdateTypeDef](./type_defs.md#scaleinpolicyupdatetypedef)
-- `scaleOutPolicy`:
-  [ScaleOutPolicyUpdateTypeDef](./type_defs.md#scaleoutpolicyupdatetypedef)
-
-<a id="capacitydescriptiontypedef"></a>
-
+1. See [:material-code-braces: ScaleInPolicyUpdateTypeDef](./type_defs.md#scaleinpolicyupdatetypedef) 
+2. See [:material-code-braces: ScaleOutPolicyUpdateTypeDef](./type_defs.md#scaleoutpolicyupdatetypedef) 
 ## CapacityDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CapacityDescriptionTypeDef
+
+def get_value() -> CapacityDescriptionTypeDef:
+    return {
+        "autoScaling": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CapacityDescriptionTypeDef(TypedDict):
+    autoScaling: NotRequired[AutoScalingDescriptionTypeDef],  # (1)
+    provisionedCapacity: NotRequired[ProvisionedCapacityDescriptionTypeDef],  # (2)
+```
 
-- `autoScaling`:
-  [AutoScalingDescriptionTypeDef](./type_defs.md#autoscalingdescriptiontypedef)
-- `provisionedCapacity`:
-  [ProvisionedCapacityDescriptionTypeDef](./type_defs.md#provisionedcapacitydescriptiontypedef)
-
-<a id="capacitytypedef"></a>
-
+1. See [:material-code-braces: AutoScalingDescriptionTypeDef](./type_defs.md#autoscalingdescriptiontypedef) 
+2. See [:material-code-braces: ProvisionedCapacityDescriptionTypeDef](./type_defs.md#provisionedcapacitydescriptiontypedef) 
 ## CapacityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CapacityTypeDef
+
+def get_value() -> CapacityTypeDef:
+    return {
+        "autoScaling": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CapacityTypeDef(TypedDict):
+    autoScaling: NotRequired[AutoScalingTypeDef],  # (1)
+    provisionedCapacity: NotRequired[ProvisionedCapacityTypeDef],  # (2)
+```
 
-- `autoScaling`: [AutoScalingTypeDef](./type_defs.md#autoscalingtypedef)
-- `provisionedCapacity`:
-  [ProvisionedCapacityTypeDef](./type_defs.md#provisionedcapacitytypedef)
-
-<a id="capacityupdatetypedef"></a>
-
+1. See [:material-code-braces: AutoScalingTypeDef](./type_defs.md#autoscalingtypedef) 
+2. See [:material-code-braces: ProvisionedCapacityTypeDef](./type_defs.md#provisionedcapacitytypedef) 
 ## CapacityUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CapacityUpdateTypeDef
+
+def get_value() -> CapacityUpdateTypeDef:
+    return {
+        "autoScaling": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CapacityUpdateTypeDef(TypedDict):
+    autoScaling: NotRequired[AutoScalingUpdateTypeDef],  # (1)
+    provisionedCapacity: NotRequired[ProvisionedCapacityUpdateTypeDef],  # (2)
+```
 
-- `autoScaling`:
-  [AutoScalingUpdateTypeDef](./type_defs.md#autoscalingupdatetypedef)
-- `provisionedCapacity`:
-  [ProvisionedCapacityUpdateTypeDef](./type_defs.md#provisionedcapacityupdatetypedef)
-
-<a id="cloudwatchlogslogdeliverydescriptiontypedef"></a>
-
+1. See [:material-code-braces: AutoScalingUpdateTypeDef](./type_defs.md#autoscalingupdatetypedef) 
+2. See [:material-code-braces: ProvisionedCapacityUpdateTypeDef](./type_defs.md#provisionedcapacityupdatetypedef) 
 ## CloudWatchLogsLogDeliveryDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CloudWatchLogsLogDeliveryDescriptionTypeDef
+
+def get_value() -> CloudWatchLogsLogDeliveryDescriptionTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `enabled`: `bool`
-- `logGroup`: `str`
-
-<a id="cloudwatchlogslogdeliverytypedef"></a>
+```python title="Definition"
+class CloudWatchLogsLogDeliveryDescriptionTypeDef(TypedDict):
+    enabled: NotRequired[bool],
+    logGroup: NotRequired[str],
+```
 
 ## CloudWatchLogsLogDeliveryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CloudWatchLogsLogDeliveryTypeDef
+
+def get_value() -> CloudWatchLogsLogDeliveryTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `enabled`: `bool`
-
-Optional fields:
-
-- `logGroup`: `str`
-
-<a id="connectorsummarytypedef"></a>
+```python title="Definition"
+class CloudWatchLogsLogDeliveryTypeDef(TypedDict):
+    enabled: bool,
+    logGroup: NotRequired[str],
+```
 
 ## ConnectorSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ConnectorSummaryTypeDef
+
+def get_value() -> ConnectorSummaryTypeDef:
+    return {
+        "capacity": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorSummaryTypeDef(TypedDict):
+    capacity: NotRequired[CapacityDescriptionTypeDef],  # (1)
+    connectorArn: NotRequired[str],
+    connectorDescription: NotRequired[str],
+    connectorName: NotRequired[str],
+    connectorState: NotRequired[ConnectorStateType],  # (2)
+    creationTime: NotRequired[datetime],
+    currentVersion: NotRequired[str],
+    kafkaCluster: NotRequired[KafkaClusterDescriptionTypeDef],  # (3)
+    kafkaClusterClientAuthentication: NotRequired[KafkaClusterClientAuthenticationDescriptionTypeDef],  # (4)
+    kafkaClusterEncryptionInTransit: NotRequired[KafkaClusterEncryptionInTransitDescriptionTypeDef],  # (5)
+    kafkaConnectVersion: NotRequired[str],
+    logDelivery: NotRequired[LogDeliveryDescriptionTypeDef],  # (6)
+    plugins: NotRequired[List[PluginDescriptionTypeDef]],  # (7)
+    serviceExecutionRoleArn: NotRequired[str],
+    workerConfiguration: NotRequired[WorkerConfigurationDescriptionTypeDef],  # (8)
+```
 
-- `capacity`:
-  [CapacityDescriptionTypeDef](./type_defs.md#capacitydescriptiontypedef)
-- `connectorArn`: `str`
-- `connectorDescription`: `str`
-- `connectorName`: `str`
-- `connectorState`: [ConnectorStateType](./literals.md#connectorstatetype)
-- `creationTime`: `datetime`
-- `currentVersion`: `str`
-- `kafkaCluster`:
-  [KafkaClusterDescriptionTypeDef](./type_defs.md#kafkaclusterdescriptiontypedef)
-- `kafkaClusterClientAuthentication`:
-  [KafkaClusterClientAuthenticationDescriptionTypeDef](./type_defs.md#kafkaclusterclientauthenticationdescriptiontypedef)
-- `kafkaClusterEncryptionInTransit`:
-  [KafkaClusterEncryptionInTransitDescriptionTypeDef](./type_defs.md#kafkaclusterencryptionintransitdescriptiontypedef)
-- `kafkaConnectVersion`: `str`
-- `logDelivery`:
-  [LogDeliveryDescriptionTypeDef](./type_defs.md#logdeliverydescriptiontypedef)
-- `plugins`:
-  `List`\[[PluginDescriptionTypeDef](./type_defs.md#plugindescriptiontypedef)\]
-- `serviceExecutionRoleArn`: `str`
-- `workerConfiguration`:
-  [WorkerConfigurationDescriptionTypeDef](./type_defs.md#workerconfigurationdescriptiontypedef)
-
-<a id="createconnectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CapacityDescriptionTypeDef](./type_defs.md#capacitydescriptiontypedef) 
+2. See [:material-code-brackets: ConnectorStateType](./literals.md#connectorstatetype) 
+3. See [:material-code-braces: KafkaClusterDescriptionTypeDef](./type_defs.md#kafkaclusterdescriptiontypedef) 
+4. See [:material-code-braces: KafkaClusterClientAuthenticationDescriptionTypeDef](./type_defs.md#kafkaclusterclientauthenticationdescriptiontypedef) 
+5. See [:material-code-braces: KafkaClusterEncryptionInTransitDescriptionTypeDef](./type_defs.md#kafkaclusterencryptionintransitdescriptiontypedef) 
+6. See [:material-code-braces: LogDeliveryDescriptionTypeDef](./type_defs.md#logdeliverydescriptiontypedef) 
+7. See [:material-code-braces: PluginDescriptionTypeDef](./type_defs.md#plugindescriptiontypedef) 
+8. See [:material-code-braces: WorkerConfigurationDescriptionTypeDef](./type_defs.md#workerconfigurationdescriptiontypedef) 
 ## CreateConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CreateConnectorRequestRequestTypeDef
+
+def get_value() -> CreateConnectorRequestRequestTypeDef:
+    return {
+        "capacity": ...,
+        "connectorConfiguration": ...,
+        "connectorName": ...,
+        "kafkaCluster": ...,
+        "kafkaClusterClientAuthentication": ...,
+        "kafkaClusterEncryptionInTransit": ...,
+        "kafkaConnectVersion": ...,
+        "plugins": ...,
+        "serviceExecutionRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectorRequestRequestTypeDef(TypedDict):
+    capacity: CapacityTypeDef,  # (1)
+    connectorConfiguration: Mapping[str, str],
+    connectorName: str,
+    kafkaCluster: KafkaClusterTypeDef,  # (2)
+    kafkaClusterClientAuthentication: KafkaClusterClientAuthenticationTypeDef,  # (3)
+    kafkaClusterEncryptionInTransit: KafkaClusterEncryptionInTransitTypeDef,  # (4)
+    kafkaConnectVersion: str,
+    plugins: Sequence[PluginTypeDef],  # (5)
+    serviceExecutionRoleArn: str,
+    connectorDescription: NotRequired[str],
+    logDelivery: NotRequired[LogDeliveryTypeDef],  # (6)
+    workerConfiguration: NotRequired[WorkerConfigurationTypeDef],  # (7)
+```
 
-- `capacity`: [CapacityTypeDef](./type_defs.md#capacitytypedef)
-- `connectorConfiguration`: `Mapping`\[`str`, `str`\]
-- `connectorName`: `str`
-- `kafkaCluster`: [KafkaClusterTypeDef](./type_defs.md#kafkaclustertypedef)
-- `kafkaClusterClientAuthentication`:
-  [KafkaClusterClientAuthenticationTypeDef](./type_defs.md#kafkaclusterclientauthenticationtypedef)
-- `kafkaClusterEncryptionInTransit`:
-  [KafkaClusterEncryptionInTransitTypeDef](./type_defs.md#kafkaclusterencryptionintransittypedef)
-- `kafkaConnectVersion`: `str`
-- `plugins`: `Sequence`\[[PluginTypeDef](./type_defs.md#plugintypedef)\]
-- `serviceExecutionRoleArn`: `str`
-
-Optional fields:
-
-- `connectorDescription`: `str`
-- `logDelivery`: [LogDeliveryTypeDef](./type_defs.md#logdeliverytypedef)
-- `workerConfiguration`:
-  [WorkerConfigurationTypeDef](./type_defs.md#workerconfigurationtypedef)
-
-<a id="createconnectorresponsetypedef"></a>
-
+1. See [:material-code-braces: CapacityTypeDef](./type_defs.md#capacitytypedef) 
+2. See [:material-code-braces: KafkaClusterTypeDef](./type_defs.md#kafkaclustertypedef) 
+3. See [:material-code-braces: KafkaClusterClientAuthenticationTypeDef](./type_defs.md#kafkaclusterclientauthenticationtypedef) 
+4. See [:material-code-braces: KafkaClusterEncryptionInTransitTypeDef](./type_defs.md#kafkaclusterencryptionintransittypedef) 
+5. See [:material-code-braces: PluginTypeDef](./type_defs.md#plugintypedef) 
+6. See [:material-code-braces: LogDeliveryTypeDef](./type_defs.md#logdeliverytypedef) 
+7. See [:material-code-braces: WorkerConfigurationTypeDef](./type_defs.md#workerconfigurationtypedef) 
 ## CreateConnectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CreateConnectorResponseTypeDef
+
+def get_value() -> CreateConnectorResponseTypeDef:
+    return {
+        "connectorArn": ...,
+        "connectorName": ...,
+        "connectorState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectorResponseTypeDef(TypedDict):
+    connectorArn: str,
+    connectorName: str,
+    connectorState: ConnectorStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectorArn`: `str`
-- `connectorName`: `str`
-- `connectorState`: [ConnectorStateType](./literals.md#connectorstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcustompluginrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectorStateType](./literals.md#connectorstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCustomPluginRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CreateCustomPluginRequestRequestTypeDef
+
+def get_value() -> CreateCustomPluginRequestRequestTypeDef:
+    return {
+        "contentType": ...,
+        "location": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomPluginRequestRequestTypeDef(TypedDict):
+    contentType: CustomPluginContentTypeType,  # (1)
+    location: CustomPluginLocationTypeDef,  # (2)
+    name: str,
+    description: NotRequired[str],
+```
 
-- `contentType`:
-  [CustomPluginContentTypeType](./literals.md#customplugincontenttypetype)
-- `location`:
-  [CustomPluginLocationTypeDef](./type_defs.md#custompluginlocationtypedef)
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="createcustompluginresponsetypedef"></a>
-
+1. See [:material-code-brackets: CustomPluginContentTypeType](./literals.md#customplugincontenttypetype) 
+2. See [:material-code-braces: CustomPluginLocationTypeDef](./type_defs.md#custompluginlocationtypedef) 
 ## CreateCustomPluginResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CreateCustomPluginResponseTypeDef
+
+def get_value() -> CreateCustomPluginResponseTypeDef:
+    return {
+        "customPluginArn": ...,
+        "customPluginState": ...,
+        "name": ...,
+        "revision": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomPluginResponseTypeDef(TypedDict):
+    customPluginArn: str,
+    customPluginState: CustomPluginStateType,  # (1)
+    name: str,
+    revision: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `customPluginArn`: `str`
-- `customPluginState`:
-  [CustomPluginStateType](./literals.md#custompluginstatetype)
-- `name`: `str`
-- `revision`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworkerconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CustomPluginStateType](./literals.md#custompluginstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkerConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CreateWorkerConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateWorkerConfigurationRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "propertiesFileContent": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `propertiesFileContent`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="createworkerconfigurationresponsetypedef"></a>
+```python title="Definition"
+class CreateWorkerConfigurationRequestRequestTypeDef(TypedDict):
+    name: str,
+    propertiesFileContent: str,
+    description: NotRequired[str],
+```
 
 ## CreateWorkerConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CreateWorkerConfigurationResponseTypeDef
+
+def get_value() -> CreateWorkerConfigurationResponseTypeDef:
+    return {
+        "creationTime": ...,
+        "latestRevision": ...,
+        "name": ...,
+        "workerConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkerConfigurationResponseTypeDef(TypedDict):
+    creationTime: datetime,
+    latestRevision: WorkerConfigurationRevisionSummaryTypeDef,  # (1)
+    name: str,
+    workerConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `creationTime`: `datetime`
-- `latestRevision`:
-  [WorkerConfigurationRevisionSummaryTypeDef](./type_defs.md#workerconfigurationrevisionsummarytypedef)
-- `name`: `str`
-- `workerConfigurationArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customplugindescriptiontypedef"></a>
-
+1. See [:material-code-braces: WorkerConfigurationRevisionSummaryTypeDef](./type_defs.md#workerconfigurationrevisionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomPluginDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CustomPluginDescriptionTypeDef
+
+def get_value() -> CustomPluginDescriptionTypeDef:
+    return {
+        "customPluginArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `customPluginArn`: `str`
-- `revision`: `int`
-
-<a id="custompluginfiledescriptiontypedef"></a>
+```python title="Definition"
+class CustomPluginDescriptionTypeDef(TypedDict):
+    customPluginArn: NotRequired[str],
+    revision: NotRequired[int],
+```
 
 ## CustomPluginFileDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CustomPluginFileDescriptionTypeDef
+
+def get_value() -> CustomPluginFileDescriptionTypeDef:
+    return {
+        "fileMd5": ...,
+    }
 ```
 
-Optional fields:
-
-- `fileMd5`: `str`
-- `fileSize`: `int`
-
-<a id="custompluginlocationdescriptiontypedef"></a>
+```python title="Definition"
+class CustomPluginFileDescriptionTypeDef(TypedDict):
+    fileMd5: NotRequired[str],
+    fileSize: NotRequired[int],
+```
 
 ## CustomPluginLocationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CustomPluginLocationDescriptionTypeDef
+
+def get_value() -> CustomPluginLocationDescriptionTypeDef:
+    return {
+        "s3Location": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomPluginLocationDescriptionTypeDef(TypedDict):
+    s3Location: NotRequired[S3LocationDescriptionTypeDef],  # (1)
+```
 
-- `s3Location`:
-  [S3LocationDescriptionTypeDef](./type_defs.md#s3locationdescriptiontypedef)
-
-<a id="custompluginlocationtypedef"></a>
-
+1. See [:material-code-braces: S3LocationDescriptionTypeDef](./type_defs.md#s3locationdescriptiontypedef) 
 ## CustomPluginLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CustomPluginLocationTypeDef
+
+def get_value() -> CustomPluginLocationTypeDef:
+    return {
+        "s3Location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomPluginLocationTypeDef(TypedDict):
+    s3Location: S3LocationTypeDef,  # (1)
+```
 
-- `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="custompluginrevisionsummarytypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## CustomPluginRevisionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CustomPluginRevisionSummaryTypeDef
+
+def get_value() -> CustomPluginRevisionSummaryTypeDef:
+    return {
+        "contentType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomPluginRevisionSummaryTypeDef(TypedDict):
+    contentType: NotRequired[CustomPluginContentTypeType],  # (1)
+    creationTime: NotRequired[datetime],
+    description: NotRequired[str],
+    fileDescription: NotRequired[CustomPluginFileDescriptionTypeDef],  # (2)
+    location: NotRequired[CustomPluginLocationDescriptionTypeDef],  # (3)
+    revision: NotRequired[int],
+```
 
-- `contentType`:
-  [CustomPluginContentTypeType](./literals.md#customplugincontenttypetype)
-- `creationTime`: `datetime`
-- `description`: `str`
-- `fileDescription`:
-  [CustomPluginFileDescriptionTypeDef](./type_defs.md#custompluginfiledescriptiontypedef)
-- `location`:
-  [CustomPluginLocationDescriptionTypeDef](./type_defs.md#custompluginlocationdescriptiontypedef)
-- `revision`: `int`
-
-<a id="custompluginsummarytypedef"></a>
-
+1. See [:material-code-brackets: CustomPluginContentTypeType](./literals.md#customplugincontenttypetype) 
+2. See [:material-code-braces: CustomPluginFileDescriptionTypeDef](./type_defs.md#custompluginfiledescriptiontypedef) 
+3. See [:material-code-braces: CustomPluginLocationDescriptionTypeDef](./type_defs.md#custompluginlocationdescriptiontypedef) 
 ## CustomPluginSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CustomPluginSummaryTypeDef
+
+def get_value() -> CustomPluginSummaryTypeDef:
+    return {
+        "creationTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomPluginSummaryTypeDef(TypedDict):
+    creationTime: NotRequired[datetime],
+    customPluginArn: NotRequired[str],
+    customPluginState: NotRequired[CustomPluginStateType],  # (1)
+    description: NotRequired[str],
+    latestRevision: NotRequired[CustomPluginRevisionSummaryTypeDef],  # (2)
+    name: NotRequired[str],
+```
 
-- `creationTime`: `datetime`
-- `customPluginArn`: `str`
-- `customPluginState`:
-  [CustomPluginStateType](./literals.md#custompluginstatetype)
-- `description`: `str`
-- `latestRevision`:
-  [CustomPluginRevisionSummaryTypeDef](./type_defs.md#custompluginrevisionsummarytypedef)
-- `name`: `str`
-
-<a id="customplugintypedef"></a>
-
+1. See [:material-code-brackets: CustomPluginStateType](./literals.md#custompluginstatetype) 
+2. See [:material-code-braces: CustomPluginRevisionSummaryTypeDef](./type_defs.md#custompluginrevisionsummarytypedef) 
 ## CustomPluginTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import CustomPluginTypeDef
+
+def get_value() -> CustomPluginTypeDef:
+    return {
+        "customPluginArn": ...,
+        "revision": ...,
+    }
 ```
 
-Required fields:
-
-- `customPluginArn`: `str`
-- `revision`: `int`
-
-<a id="deleteconnectorrequestrequesttypedef"></a>
+```python title="Definition"
+class CustomPluginTypeDef(TypedDict):
+    customPluginArn: str,
+    revision: int,
+```
 
 ## DeleteConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DeleteConnectorRequestRequestTypeDef
+
+def get_value() -> DeleteConnectorRequestRequestTypeDef:
+    return {
+        "connectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `connectorArn`: `str`
-
-Optional fields:
-
-- `currentVersion`: `str`
-
-<a id="deleteconnectorresponsetypedef"></a>
+```python title="Definition"
+class DeleteConnectorRequestRequestTypeDef(TypedDict):
+    connectorArn: str,
+    currentVersion: NotRequired[str],
+```
 
 ## DeleteConnectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DeleteConnectorResponseTypeDef
+
+def get_value() -> DeleteConnectorResponseTypeDef:
+    return {
+        "connectorArn": ...,
+        "connectorState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteConnectorResponseTypeDef(TypedDict):
+    connectorArn: str,
+    connectorState: ConnectorStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectorArn`: `str`
-- `connectorState`: [ConnectorStateType](./literals.md#connectorstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletecustompluginrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectorStateType](./literals.md#connectorstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteCustomPluginRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DeleteCustomPluginRequestRequestTypeDef
+
+def get_value() -> DeleteCustomPluginRequestRequestTypeDef:
+    return {
+        "customPluginArn": ...,
+    }
 ```
 
-Required fields:
-
-- `customPluginArn`: `str`
-
-<a id="deletecustompluginresponsetypedef"></a>
+```python title="Definition"
+class DeleteCustomPluginRequestRequestTypeDef(TypedDict):
+    customPluginArn: str,
+```
 
 ## DeleteCustomPluginResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DeleteCustomPluginResponseTypeDef
+
+def get_value() -> DeleteCustomPluginResponseTypeDef:
+    return {
+        "customPluginArn": ...,
+        "customPluginState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteCustomPluginResponseTypeDef(TypedDict):
+    customPluginArn: str,
+    customPluginState: CustomPluginStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `customPluginArn`: `str`
-- `customPluginState`:
-  [CustomPluginStateType](./literals.md#custompluginstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectorrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CustomPluginStateType](./literals.md#custompluginstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DescribeConnectorRequestRequestTypeDef
+
+def get_value() -> DescribeConnectorRequestRequestTypeDef:
+    return {
+        "connectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `connectorArn`: `str`
-
-<a id="describeconnectorresponsetypedef"></a>
+```python title="Definition"
+class DescribeConnectorRequestRequestTypeDef(TypedDict):
+    connectorArn: str,
+```
 
 ## DescribeConnectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DescribeConnectorResponseTypeDef
+
+def get_value() -> DescribeConnectorResponseTypeDef:
+    return {
+        "capacity": ...,
+        "connectorArn": ...,
+        "connectorConfiguration": ...,
+        "connectorDescription": ...,
+        "connectorName": ...,
+        "connectorState": ...,
+        "creationTime": ...,
+        "currentVersion": ...,
+        "kafkaCluster": ...,
+        "kafkaClusterClientAuthentication": ...,
+        "kafkaClusterEncryptionInTransit": ...,
+        "kafkaConnectVersion": ...,
+        "logDelivery": ...,
+        "plugins": ...,
+        "serviceExecutionRoleArn": ...,
+        "stateDescription": ...,
+        "workerConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectorResponseTypeDef(TypedDict):
+    capacity: CapacityDescriptionTypeDef,  # (1)
+    connectorArn: str,
+    connectorConfiguration: Dict[str, str],
+    connectorDescription: str,
+    connectorName: str,
+    connectorState: ConnectorStateType,  # (2)
+    creationTime: datetime,
+    currentVersion: str,
+    kafkaCluster: KafkaClusterDescriptionTypeDef,  # (3)
+    kafkaClusterClientAuthentication: KafkaClusterClientAuthenticationDescriptionTypeDef,  # (4)
+    kafkaClusterEncryptionInTransit: KafkaClusterEncryptionInTransitDescriptionTypeDef,  # (5)
+    kafkaConnectVersion: str,
+    logDelivery: LogDeliveryDescriptionTypeDef,  # (6)
+    plugins: List[PluginDescriptionTypeDef],  # (7)
+    serviceExecutionRoleArn: str,
+    stateDescription: StateDescriptionTypeDef,  # (8)
+    workerConfiguration: WorkerConfigurationDescriptionTypeDef,  # (9)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
+```
 
-- `capacity`:
-  [CapacityDescriptionTypeDef](./type_defs.md#capacitydescriptiontypedef)
-- `connectorArn`: `str`
-- `connectorConfiguration`: `Dict`\[`str`, `str`\]
-- `connectorDescription`: `str`
-- `connectorName`: `str`
-- `connectorState`: [ConnectorStateType](./literals.md#connectorstatetype)
-- `creationTime`: `datetime`
-- `currentVersion`: `str`
-- `kafkaCluster`:
-  [KafkaClusterDescriptionTypeDef](./type_defs.md#kafkaclusterdescriptiontypedef)
-- `kafkaClusterClientAuthentication`:
-  [KafkaClusterClientAuthenticationDescriptionTypeDef](./type_defs.md#kafkaclusterclientauthenticationdescriptiontypedef)
-- `kafkaClusterEncryptionInTransit`:
-  [KafkaClusterEncryptionInTransitDescriptionTypeDef](./type_defs.md#kafkaclusterencryptionintransitdescriptiontypedef)
-- `kafkaConnectVersion`: `str`
-- `logDelivery`:
-  [LogDeliveryDescriptionTypeDef](./type_defs.md#logdeliverydescriptiontypedef)
-- `plugins`:
-  `List`\[[PluginDescriptionTypeDef](./type_defs.md#plugindescriptiontypedef)\]
-- `serviceExecutionRoleArn`: `str`
-- `stateDescription`:
-  [StateDescriptionTypeDef](./type_defs.md#statedescriptiontypedef)
-- `workerConfiguration`:
-  [WorkerConfigurationDescriptionTypeDef](./type_defs.md#workerconfigurationdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecustompluginrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CapacityDescriptionTypeDef](./type_defs.md#capacitydescriptiontypedef) 
+2. See [:material-code-brackets: ConnectorStateType](./literals.md#connectorstatetype) 
+3. See [:material-code-braces: KafkaClusterDescriptionTypeDef](./type_defs.md#kafkaclusterdescriptiontypedef) 
+4. See [:material-code-braces: KafkaClusterClientAuthenticationDescriptionTypeDef](./type_defs.md#kafkaclusterclientauthenticationdescriptiontypedef) 
+5. See [:material-code-braces: KafkaClusterEncryptionInTransitDescriptionTypeDef](./type_defs.md#kafkaclusterencryptionintransitdescriptiontypedef) 
+6. See [:material-code-braces: LogDeliveryDescriptionTypeDef](./type_defs.md#logdeliverydescriptiontypedef) 
+7. See [:material-code-braces: PluginDescriptionTypeDef](./type_defs.md#plugindescriptiontypedef) 
+8. See [:material-code-braces: StateDescriptionTypeDef](./type_defs.md#statedescriptiontypedef) 
+9. See [:material-code-braces: WorkerConfigurationDescriptionTypeDef](./type_defs.md#workerconfigurationdescriptiontypedef) 
+10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCustomPluginRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DescribeCustomPluginRequestRequestTypeDef
+
+def get_value() -> DescribeCustomPluginRequestRequestTypeDef:
+    return {
+        "customPluginArn": ...,
+    }
 ```
 
-Required fields:
-
-- `customPluginArn`: `str`
-
-<a id="describecustompluginresponsetypedef"></a>
+```python title="Definition"
+class DescribeCustomPluginRequestRequestTypeDef(TypedDict):
+    customPluginArn: str,
+```
 
 ## DescribeCustomPluginResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DescribeCustomPluginResponseTypeDef
+
+def get_value() -> DescribeCustomPluginResponseTypeDef:
+    return {
+        "creationTime": ...,
+        "customPluginArn": ...,
+        "customPluginState": ...,
+        "description": ...,
+        "latestRevision": ...,
+        "name": ...,
+        "stateDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCustomPluginResponseTypeDef(TypedDict):
+    creationTime: datetime,
+    customPluginArn: str,
+    customPluginState: CustomPluginStateType,  # (1)
+    description: str,
+    latestRevision: CustomPluginRevisionSummaryTypeDef,  # (2)
+    name: str,
+    stateDescription: StateDescriptionTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `creationTime`: `datetime`
-- `customPluginArn`: `str`
-- `customPluginState`:
-  [CustomPluginStateType](./literals.md#custompluginstatetype)
-- `description`: `str`
-- `latestRevision`:
-  [CustomPluginRevisionSummaryTypeDef](./type_defs.md#custompluginrevisionsummarytypedef)
-- `name`: `str`
-- `stateDescription`:
-  [StateDescriptionTypeDef](./type_defs.md#statedescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeworkerconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CustomPluginStateType](./literals.md#custompluginstatetype) 
+2. See [:material-code-braces: CustomPluginRevisionSummaryTypeDef](./type_defs.md#custompluginrevisionsummarytypedef) 
+3. See [:material-code-braces: StateDescriptionTypeDef](./type_defs.md#statedescriptiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWorkerConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DescribeWorkerConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeWorkerConfigurationRequestRequestTypeDef:
+    return {
+        "workerConfigurationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `workerConfigurationArn`: `str`
-
-<a id="describeworkerconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DescribeWorkerConfigurationRequestRequestTypeDef(TypedDict):
+    workerConfigurationArn: str,
+```
 
 ## DescribeWorkerConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import DescribeWorkerConfigurationResponseTypeDef
+
+def get_value() -> DescribeWorkerConfigurationResponseTypeDef:
+    return {
+        "creationTime": ...,
+        "description": ...,
+        "latestRevision": ...,
+        "name": ...,
+        "workerConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorkerConfigurationResponseTypeDef(TypedDict):
+    creationTime: datetime,
+    description: str,
+    latestRevision: WorkerConfigurationRevisionDescriptionTypeDef,  # (1)
+    name: str,
+    workerConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `creationTime`: `datetime`
-- `description`: `str`
-- `latestRevision`:
-  [WorkerConfigurationRevisionDescriptionTypeDef](./type_defs.md#workerconfigurationrevisiondescriptiontypedef)
-- `name`: `str`
-- `workerConfigurationArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="firehoselogdeliverydescriptiontypedef"></a>
-
+1. See [:material-code-braces: WorkerConfigurationRevisionDescriptionTypeDef](./type_defs.md#workerconfigurationrevisiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FirehoseLogDeliveryDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import FirehoseLogDeliveryDescriptionTypeDef
+
+def get_value() -> FirehoseLogDeliveryDescriptionTypeDef:
+    return {
+        "deliveryStream": ...,
+    }
 ```
 
-Optional fields:
-
-- `deliveryStream`: `str`
-- `enabled`: `bool`
-
-<a id="firehoselogdeliverytypedef"></a>
+```python title="Definition"
+class FirehoseLogDeliveryDescriptionTypeDef(TypedDict):
+    deliveryStream: NotRequired[str],
+    enabled: NotRequired[bool],
+```
 
 ## FirehoseLogDeliveryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import FirehoseLogDeliveryTypeDef
+
+def get_value() -> FirehoseLogDeliveryTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `enabled`: `bool`
-
-Optional fields:
-
-- `deliveryStream`: `str`
-
-<a id="kafkaclusterclientauthenticationdescriptiontypedef"></a>
+```python title="Definition"
+class FirehoseLogDeliveryTypeDef(TypedDict):
+    enabled: bool,
+    deliveryStream: NotRequired[str],
+```
 
 ## KafkaClusterClientAuthenticationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import KafkaClusterClientAuthenticationDescriptionTypeDef
+
+def get_value() -> KafkaClusterClientAuthenticationDescriptionTypeDef:
+    return {
+        "authenticationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KafkaClusterClientAuthenticationDescriptionTypeDef(TypedDict):
+    authenticationType: NotRequired[KafkaClusterClientAuthenticationTypeType],  # (1)
+```
 
-- `authenticationType`:
-  [KafkaClusterClientAuthenticationTypeType](./literals.md#kafkaclusterclientauthenticationtypetype)
-
-<a id="kafkaclusterclientauthenticationtypedef"></a>
-
+1. See [:material-code-brackets: KafkaClusterClientAuthenticationTypeType](./literals.md#kafkaclusterclientauthenticationtypetype) 
 ## KafkaClusterClientAuthenticationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import KafkaClusterClientAuthenticationTypeDef
+
+def get_value() -> KafkaClusterClientAuthenticationTypeDef:
+    return {
+        "authenticationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KafkaClusterClientAuthenticationTypeDef(TypedDict):
+    authenticationType: KafkaClusterClientAuthenticationTypeType,  # (1)
+```
 
-- `authenticationType`:
-  [KafkaClusterClientAuthenticationTypeType](./literals.md#kafkaclusterclientauthenticationtypetype)
-
-<a id="kafkaclusterdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: KafkaClusterClientAuthenticationTypeType](./literals.md#kafkaclusterclientauthenticationtypetype) 
 ## KafkaClusterDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import KafkaClusterDescriptionTypeDef
+
+def get_value() -> KafkaClusterDescriptionTypeDef:
+    return {
+        "apacheKafkaCluster": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KafkaClusterDescriptionTypeDef(TypedDict):
+    apacheKafkaCluster: NotRequired[ApacheKafkaClusterDescriptionTypeDef],  # (1)
+```
 
-- `apacheKafkaCluster`:
-  [ApacheKafkaClusterDescriptionTypeDef](./type_defs.md#apachekafkaclusterdescriptiontypedef)
-
-<a id="kafkaclusterencryptionintransitdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ApacheKafkaClusterDescriptionTypeDef](./type_defs.md#apachekafkaclusterdescriptiontypedef) 
 ## KafkaClusterEncryptionInTransitDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import KafkaClusterEncryptionInTransitDescriptionTypeDef
+
+def get_value() -> KafkaClusterEncryptionInTransitDescriptionTypeDef:
+    return {
+        "encryptionType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KafkaClusterEncryptionInTransitDescriptionTypeDef(TypedDict):
+    encryptionType: NotRequired[KafkaClusterEncryptionInTransitTypeType],  # (1)
+```
 
-- `encryptionType`:
-  [KafkaClusterEncryptionInTransitTypeType](./literals.md#kafkaclusterencryptionintransittypetype)
-
-<a id="kafkaclusterencryptionintransittypedef"></a>
-
+1. See [:material-code-brackets: KafkaClusterEncryptionInTransitTypeType](./literals.md#kafkaclusterencryptionintransittypetype) 
 ## KafkaClusterEncryptionInTransitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import KafkaClusterEncryptionInTransitTypeDef
+
+def get_value() -> KafkaClusterEncryptionInTransitTypeDef:
+    return {
+        "encryptionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KafkaClusterEncryptionInTransitTypeDef(TypedDict):
+    encryptionType: KafkaClusterEncryptionInTransitTypeType,  # (1)
+```
 
-- `encryptionType`:
-  [KafkaClusterEncryptionInTransitTypeType](./literals.md#kafkaclusterencryptionintransittypetype)
-
-<a id="kafkaclustertypedef"></a>
-
+1. See [:material-code-brackets: KafkaClusterEncryptionInTransitTypeType](./literals.md#kafkaclusterencryptionintransittypetype) 
 ## KafkaClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import KafkaClusterTypeDef
+
+def get_value() -> KafkaClusterTypeDef:
+    return {
+        "apacheKafkaCluster": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KafkaClusterTypeDef(TypedDict):
+    apacheKafkaCluster: ApacheKafkaClusterTypeDef,  # (1)
+```
 
-- `apacheKafkaCluster`:
-  [ApacheKafkaClusterTypeDef](./type_defs.md#apachekafkaclustertypedef)
+1. See [:material-code-braces: ApacheKafkaClusterTypeDef](./type_defs.md#apachekafkaclustertypedef) 
+## ListConnectorsRequestListConnectorsPaginateTypeDef
 
-<a id="listconnectorsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_kafkaconnect.type_defs import ListConnectorsRequestListConnectorsPaginateTypeDef
 
+def get_value() -> ListConnectorsRequestListConnectorsPaginateTypeDef:
+    return {
+        "connectorNamePrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListConnectorsRequestListConnectorsPaginateTypeDef(TypedDict):
+    connectorNamePrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListConnectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ListConnectorsRequestRequestTypeDef
+
+def get_value() -> ListConnectorsRequestRequestTypeDef:
+    return {
+        "connectorNamePrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `connectorNamePrefix`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listconnectorsresponsetypedef"></a>
+```python title="Definition"
+class ListConnectorsRequestRequestTypeDef(TypedDict):
+    connectorNamePrefix: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListConnectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ListConnectorsResponseTypeDef
+
+def get_value() -> ListConnectorsResponseTypeDef:
+    return {
+        "connectors": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConnectorsResponseTypeDef(TypedDict):
+    connectors: List[ConnectorSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectors`:
-  `List`\[[ConnectorSummaryTypeDef](./type_defs.md#connectorsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConnectorSummaryTypeDef](./type_defs.md#connectorsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomPluginsRequestListCustomPluginsPaginateTypeDef
 
-<a id="listcustompluginsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_kafkaconnect.type_defs import ListCustomPluginsRequestListCustomPluginsPaginateTypeDef
 
+def get_value() -> ListCustomPluginsRequestListCustomPluginsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomPluginsRequestListCustomPluginsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCustomPluginsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ListCustomPluginsRequestRequestTypeDef
+
+def get_value() -> ListCustomPluginsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listcustompluginsresponsetypedef"></a>
+```python title="Definition"
+class ListCustomPluginsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListCustomPluginsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ListCustomPluginsResponseTypeDef
+
+def get_value() -> ListCustomPluginsResponseTypeDef:
+    return {
+        "customPlugins": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCustomPluginsResponseTypeDef(TypedDict):
+    customPlugins: List[CustomPluginSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `customPlugins`:
-  `List`\[[CustomPluginSummaryTypeDef](./type_defs.md#custompluginsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CustomPluginSummaryTypeDef](./type_defs.md#custompluginsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorkerConfigurationsRequestListWorkerConfigurationsPaginateTypeDef
 
-<a id="listworkerconfigurationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_kafkaconnect.type_defs import ListWorkerConfigurationsRequestListWorkerConfigurationsPaginateTypeDef
 
+def get_value() -> ListWorkerConfigurationsRequestListWorkerConfigurationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkerConfigurationsRequestListWorkerConfigurationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWorkerConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ListWorkerConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListWorkerConfigurationsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listworkerconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class ListWorkerConfigurationsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListWorkerConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ListWorkerConfigurationsResponseTypeDef
+
+def get_value() -> ListWorkerConfigurationsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "workerConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkerConfigurationsResponseTypeDef(TypedDict):
+    nextToken: str,
+    workerConfigurations: List[WorkerConfigurationSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `workerConfigurations`:
-  `List`\[[WorkerConfigurationSummaryTypeDef](./type_defs.md#workerconfigurationsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="logdeliverydescriptiontypedef"></a>
-
+1. See [:material-code-braces: WorkerConfigurationSummaryTypeDef](./type_defs.md#workerconfigurationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogDeliveryDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import LogDeliveryDescriptionTypeDef
+
+def get_value() -> LogDeliveryDescriptionTypeDef:
+    return {
+        "workerLogDelivery": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LogDeliveryDescriptionTypeDef(TypedDict):
+    workerLogDelivery: NotRequired[WorkerLogDeliveryDescriptionTypeDef],  # (1)
+```
 
-- `workerLogDelivery`:
-  [WorkerLogDeliveryDescriptionTypeDef](./type_defs.md#workerlogdeliverydescriptiontypedef)
-
-<a id="logdeliverytypedef"></a>
-
+1. See [:material-code-braces: WorkerLogDeliveryDescriptionTypeDef](./type_defs.md#workerlogdeliverydescriptiontypedef) 
 ## LogDeliveryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import LogDeliveryTypeDef
+
+def get_value() -> LogDeliveryTypeDef:
+    return {
+        "workerLogDelivery": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LogDeliveryTypeDef(TypedDict):
+    workerLogDelivery: WorkerLogDeliveryTypeDef,  # (1)
+```
 
-- `workerLogDelivery`:
-  [WorkerLogDeliveryTypeDef](./type_defs.md#workerlogdeliverytypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: WorkerLogDeliveryTypeDef](./type_defs.md#workerlogdeliverytypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="plugindescriptiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PluginDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import PluginDescriptionTypeDef
+
+def get_value() -> PluginDescriptionTypeDef:
+    return {
+        "customPlugin": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PluginDescriptionTypeDef(TypedDict):
+    customPlugin: NotRequired[CustomPluginDescriptionTypeDef],  # (1)
+```
 
-- `customPlugin`:
-  [CustomPluginDescriptionTypeDef](./type_defs.md#customplugindescriptiontypedef)
-
-<a id="plugintypedef"></a>
-
+1. See [:material-code-braces: CustomPluginDescriptionTypeDef](./type_defs.md#customplugindescriptiontypedef) 
 ## PluginTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import PluginTypeDef
+
+def get_value() -> PluginTypeDef:
+    return {
+        "customPlugin": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PluginTypeDef(TypedDict):
+    customPlugin: CustomPluginTypeDef,  # (1)
+```
 
-- `customPlugin`: [CustomPluginTypeDef](./type_defs.md#customplugintypedef)
-
-<a id="provisionedcapacitydescriptiontypedef"></a>
-
+1. See [:material-code-braces: CustomPluginTypeDef](./type_defs.md#customplugintypedef) 
 ## ProvisionedCapacityDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ProvisionedCapacityDescriptionTypeDef
+
+def get_value() -> ProvisionedCapacityDescriptionTypeDef:
+    return {
+        "mcuCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `mcuCount`: `int`
-- `workerCount`: `int`
-
-<a id="provisionedcapacitytypedef"></a>
+```python title="Definition"
+class ProvisionedCapacityDescriptionTypeDef(TypedDict):
+    mcuCount: NotRequired[int],
+    workerCount: NotRequired[int],
+```
 
 ## ProvisionedCapacityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ProvisionedCapacityTypeDef
+
+def get_value() -> ProvisionedCapacityTypeDef:
+    return {
+        "mcuCount": ...,
+        "workerCount": ...,
+    }
 ```
 
-Required fields:
-
-- `mcuCount`: `int`
-- `workerCount`: `int`
-
-<a id="provisionedcapacityupdatetypedef"></a>
+```python title="Definition"
+class ProvisionedCapacityTypeDef(TypedDict):
+    mcuCount: int,
+    workerCount: int,
+```
 
 ## ProvisionedCapacityUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ProvisionedCapacityUpdateTypeDef
+
+def get_value() -> ProvisionedCapacityUpdateTypeDef:
+    return {
+        "mcuCount": ...,
+        "workerCount": ...,
+    }
 ```
 
-Required fields:
-
-- `mcuCount`: `int`
-- `workerCount`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ProvisionedCapacityUpdateTypeDef(TypedDict):
+    mcuCount: int,
+    workerCount: int,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3locationdescriptiontypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3LocationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import S3LocationDescriptionTypeDef
+
+def get_value() -> S3LocationDescriptionTypeDef:
+    return {
+        "bucketArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucketArn`: `str`
-- `fileKey`: `str`
-- `objectVersion`: `str`
-
-<a id="s3locationtypedef"></a>
+```python title="Definition"
+class S3LocationDescriptionTypeDef(TypedDict):
+    bucketArn: NotRequired[str],
+    fileKey: NotRequired[str],
+    objectVersion: NotRequired[str],
+```
 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "bucketArn": ...,
+        "fileKey": ...,
+    }
 ```
 
-Required fields:
-
-- `bucketArn`: `str`
-- `fileKey`: `str`
-
-Optional fields:
-
-- `objectVersion`: `str`
-
-<a id="s3logdeliverydescriptiontypedef"></a>
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    bucketArn: str,
+    fileKey: str,
+    objectVersion: NotRequired[str],
+```
 
 ## S3LogDeliveryDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import S3LogDeliveryDescriptionTypeDef
+
+def get_value() -> S3LogDeliveryDescriptionTypeDef:
+    return {
+        "bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucket`: `str`
-- `enabled`: `bool`
-- `prefix`: `str`
-
-<a id="s3logdeliverytypedef"></a>
+```python title="Definition"
+class S3LogDeliveryDescriptionTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    enabled: NotRequired[bool],
+    prefix: NotRequired[str],
+```
 
 ## S3LogDeliveryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import S3LogDeliveryTypeDef
+
+def get_value() -> S3LogDeliveryTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `enabled`: `bool`
-
-Optional fields:
-
-- `bucket`: `str`
-- `prefix`: `str`
-
-<a id="scaleinpolicydescriptiontypedef"></a>
+```python title="Definition"
+class S3LogDeliveryTypeDef(TypedDict):
+    enabled: bool,
+    bucket: NotRequired[str],
+    prefix: NotRequired[str],
+```
 
 ## ScaleInPolicyDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ScaleInPolicyDescriptionTypeDef
+
+def get_value() -> ScaleInPolicyDescriptionTypeDef:
+    return {
+        "cpuUtilizationPercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `cpuUtilizationPercentage`: `int`
-
-<a id="scaleinpolicytypedef"></a>
+```python title="Definition"
+class ScaleInPolicyDescriptionTypeDef(TypedDict):
+    cpuUtilizationPercentage: NotRequired[int],
+```
 
 ## ScaleInPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ScaleInPolicyTypeDef
+
+def get_value() -> ScaleInPolicyTypeDef:
+    return {
+        "cpuUtilizationPercentage": ...,
+    }
 ```
 
-Required fields:
-
-- `cpuUtilizationPercentage`: `int`
-
-<a id="scaleinpolicyupdatetypedef"></a>
+```python title="Definition"
+class ScaleInPolicyTypeDef(TypedDict):
+    cpuUtilizationPercentage: int,
+```
 
 ## ScaleInPolicyUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ScaleInPolicyUpdateTypeDef
+
+def get_value() -> ScaleInPolicyUpdateTypeDef:
+    return {
+        "cpuUtilizationPercentage": ...,
+    }
 ```
 
-Required fields:
-
-- `cpuUtilizationPercentage`: `int`
-
-<a id="scaleoutpolicydescriptiontypedef"></a>
+```python title="Definition"
+class ScaleInPolicyUpdateTypeDef(TypedDict):
+    cpuUtilizationPercentage: int,
+```
 
 ## ScaleOutPolicyDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ScaleOutPolicyDescriptionTypeDef
+
+def get_value() -> ScaleOutPolicyDescriptionTypeDef:
+    return {
+        "cpuUtilizationPercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `cpuUtilizationPercentage`: `int`
-
-<a id="scaleoutpolicytypedef"></a>
+```python title="Definition"
+class ScaleOutPolicyDescriptionTypeDef(TypedDict):
+    cpuUtilizationPercentage: NotRequired[int],
+```
 
 ## ScaleOutPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ScaleOutPolicyTypeDef
+
+def get_value() -> ScaleOutPolicyTypeDef:
+    return {
+        "cpuUtilizationPercentage": ...,
+    }
 ```
 
-Required fields:
-
-- `cpuUtilizationPercentage`: `int`
-
-<a id="scaleoutpolicyupdatetypedef"></a>
+```python title="Definition"
+class ScaleOutPolicyTypeDef(TypedDict):
+    cpuUtilizationPercentage: int,
+```
 
 ## ScaleOutPolicyUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import ScaleOutPolicyUpdateTypeDef
+
+def get_value() -> ScaleOutPolicyUpdateTypeDef:
+    return {
+        "cpuUtilizationPercentage": ...,
+    }
 ```
 
-Required fields:
-
-- `cpuUtilizationPercentage`: `int`
-
-<a id="statedescriptiontypedef"></a>
+```python title="Definition"
+class ScaleOutPolicyUpdateTypeDef(TypedDict):
+    cpuUtilizationPercentage: int,
+```
 
 ## StateDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import StateDescriptionTypeDef
+
+def get_value() -> StateDescriptionTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
-
-- `code`: `str`
-- `message`: `str`
-
-<a id="updateconnectorrequestrequesttypedef"></a>
+```python title="Definition"
+class StateDescriptionTypeDef(TypedDict):
+    code: NotRequired[str],
+    message: NotRequired[str],
+```
 
 ## UpdateConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import UpdateConnectorRequestRequestTypeDef
+
+def get_value() -> UpdateConnectorRequestRequestTypeDef:
+    return {
+        "capacity": ...,
+        "connectorArn": ...,
+        "currentVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectorRequestRequestTypeDef(TypedDict):
+    capacity: CapacityUpdateTypeDef,  # (1)
+    connectorArn: str,
+    currentVersion: str,
+```
 
-- `capacity`: [CapacityUpdateTypeDef](./type_defs.md#capacityupdatetypedef)
-- `connectorArn`: `str`
-- `currentVersion`: `str`
-
-<a id="updateconnectorresponsetypedef"></a>
-
+1. See [:material-code-braces: CapacityUpdateTypeDef](./type_defs.md#capacityupdatetypedef) 
 ## UpdateConnectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import UpdateConnectorResponseTypeDef
+
+def get_value() -> UpdateConnectorResponseTypeDef:
+    return {
+        "connectorArn": ...,
+        "connectorState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectorResponseTypeDef(TypedDict):
+    connectorArn: str,
+    connectorState: ConnectorStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectorArn`: `str`
-- `connectorState`: [ConnectorStateType](./literals.md#connectorstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vpcdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ConnectorStateType](./literals.md#connectorstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VpcDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import VpcDescriptionTypeDef
+
+def get_value() -> VpcDescriptionTypeDef:
+    return {
+        "securityGroups": ...,
+    }
 ```
 
-Optional fields:
-
-- `securityGroups`: `List`\[`str`\]
-- `subnets`: `List`\[`str`\]
-
-<a id="vpctypedef"></a>
+```python title="Definition"
+class VpcDescriptionTypeDef(TypedDict):
+    securityGroups: NotRequired[List[str]],
+    subnets: NotRequired[List[str]],
+```
 
 ## VpcTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import VpcTypeDef
+
+def get_value() -> VpcTypeDef:
+    return {
+        "subnets": ...,
+    }
 ```
 
-Required fields:
-
-- `subnets`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `securityGroups`: `Sequence`\[`str`\]
-
-<a id="workerconfigurationdescriptiontypedef"></a>
+```python title="Definition"
+class VpcTypeDef(TypedDict):
+    subnets: Sequence[str],
+    securityGroups: NotRequired[Sequence[str]],
+```
 
 ## WorkerConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import WorkerConfigurationDescriptionTypeDef
+
+def get_value() -> WorkerConfigurationDescriptionTypeDef:
+    return {
+        "revision": ...,
+    }
 ```
 
-Optional fields:
-
-- `revision`: `int`
-- `workerConfigurationArn`: `str`
-
-<a id="workerconfigurationrevisiondescriptiontypedef"></a>
+```python title="Definition"
+class WorkerConfigurationDescriptionTypeDef(TypedDict):
+    revision: NotRequired[int],
+    workerConfigurationArn: NotRequired[str],
+```
 
 ## WorkerConfigurationRevisionDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import WorkerConfigurationRevisionDescriptionTypeDef
+
+def get_value() -> WorkerConfigurationRevisionDescriptionTypeDef:
+    return {
+        "creationTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `creationTime`: `datetime`
-- `description`: `str`
-- `propertiesFileContent`: `str`
-- `revision`: `int`
-
-<a id="workerconfigurationrevisionsummarytypedef"></a>
+```python title="Definition"
+class WorkerConfigurationRevisionDescriptionTypeDef(TypedDict):
+    creationTime: NotRequired[datetime],
+    description: NotRequired[str],
+    propertiesFileContent: NotRequired[str],
+    revision: NotRequired[int],
+```
 
 ## WorkerConfigurationRevisionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import WorkerConfigurationRevisionSummaryTypeDef
+
+def get_value() -> WorkerConfigurationRevisionSummaryTypeDef:
+    return {
+        "creationTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `creationTime`: `datetime`
-- `description`: `str`
-- `revision`: `int`
-
-<a id="workerconfigurationsummarytypedef"></a>
+```python title="Definition"
+class WorkerConfigurationRevisionSummaryTypeDef(TypedDict):
+    creationTime: NotRequired[datetime],
+    description: NotRequired[str],
+    revision: NotRequired[int],
+```
 
 ## WorkerConfigurationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import WorkerConfigurationSummaryTypeDef
+
+def get_value() -> WorkerConfigurationSummaryTypeDef:
+    return {
+        "creationTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkerConfigurationSummaryTypeDef(TypedDict):
+    creationTime: NotRequired[datetime],
+    description: NotRequired[str],
+    latestRevision: NotRequired[WorkerConfigurationRevisionSummaryTypeDef],  # (1)
+    name: NotRequired[str],
+    workerConfigurationArn: NotRequired[str],
+```
 
-- `creationTime`: `datetime`
-- `description`: `str`
-- `latestRevision`:
-  [WorkerConfigurationRevisionSummaryTypeDef](./type_defs.md#workerconfigurationrevisionsummarytypedef)
-- `name`: `str`
-- `workerConfigurationArn`: `str`
-
-<a id="workerconfigurationtypedef"></a>
-
+1. See [:material-code-braces: WorkerConfigurationRevisionSummaryTypeDef](./type_defs.md#workerconfigurationrevisionsummarytypedef) 
 ## WorkerConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import WorkerConfigurationTypeDef
+
+def get_value() -> WorkerConfigurationTypeDef:
+    return {
+        "revision": ...,
+        "workerConfigurationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `revision`: `int`
-- `workerConfigurationArn`: `str`
-
-<a id="workerlogdeliverydescriptiontypedef"></a>
+```python title="Definition"
+class WorkerConfigurationTypeDef(TypedDict):
+    revision: int,
+    workerConfigurationArn: str,
+```
 
 ## WorkerLogDeliveryDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import WorkerLogDeliveryDescriptionTypeDef
+
+def get_value() -> WorkerLogDeliveryDescriptionTypeDef:
+    return {
+        "cloudWatchLogs": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkerLogDeliveryDescriptionTypeDef(TypedDict):
+    cloudWatchLogs: NotRequired[CloudWatchLogsLogDeliveryDescriptionTypeDef],  # (1)
+    firehose: NotRequired[FirehoseLogDeliveryDescriptionTypeDef],  # (2)
+    s3: NotRequired[S3LogDeliveryDescriptionTypeDef],  # (3)
+```
 
-- `cloudWatchLogs`:
-  [CloudWatchLogsLogDeliveryDescriptionTypeDef](./type_defs.md#cloudwatchlogslogdeliverydescriptiontypedef)
-- `firehose`:
-  [FirehoseLogDeliveryDescriptionTypeDef](./type_defs.md#firehoselogdeliverydescriptiontypedef)
-- `s3`:
-  [S3LogDeliveryDescriptionTypeDef](./type_defs.md#s3logdeliverydescriptiontypedef)
-
-<a id="workerlogdeliverytypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogsLogDeliveryDescriptionTypeDef](./type_defs.md#cloudwatchlogslogdeliverydescriptiontypedef) 
+2. See [:material-code-braces: FirehoseLogDeliveryDescriptionTypeDef](./type_defs.md#firehoselogdeliverydescriptiontypedef) 
+3. See [:material-code-braces: S3LogDeliveryDescriptionTypeDef](./type_defs.md#s3logdeliverydescriptiontypedef) 
 ## WorkerLogDeliveryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kafkaconnect.type_defs import WorkerLogDeliveryTypeDef
+
+def get_value() -> WorkerLogDeliveryTypeDef:
+    return {
+        "cloudWatchLogs": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkerLogDeliveryTypeDef(TypedDict):
+    cloudWatchLogs: NotRequired[CloudWatchLogsLogDeliveryTypeDef],  # (1)
+    firehose: NotRequired[FirehoseLogDeliveryTypeDef],  # (2)
+    s3: NotRequired[S3LogDeliveryTypeDef],  # (3)
+```
 
-- `cloudWatchLogs`:
-  [CloudWatchLogsLogDeliveryTypeDef](./type_defs.md#cloudwatchlogslogdeliverytypedef)
-- `firehose`:
-  [FirehoseLogDeliveryTypeDef](./type_defs.md#firehoselogdeliverytypedef)
-- `s3`: [S3LogDeliveryTypeDef](./type_defs.md#s3logdeliverytypedef)
+1. See [:material-code-braces: CloudWatchLogsLogDeliveryTypeDef](./type_defs.md#cloudwatchlogslogdeliverytypedef) 
+2. See [:material-code-braces: FirehoseLogDeliveryTypeDef](./type_defs.md#firehoselogdeliverytypedef) 
+3. See [:material-code-braces: S3LogDeliveryTypeDef](./type_defs.md#s3logdeliverytypedef) 

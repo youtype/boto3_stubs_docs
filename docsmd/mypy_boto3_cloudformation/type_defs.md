@@ -1,3555 +1,4748 @@
-<a id="typed-dictionaries-for-boto3-cloudformation-module"></a>
-
-# Typed dictionaries for boto3 CloudFormation module
+# Typed dictionaries
 
 > [Index](../README.md) > [CloudFormation](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module
-[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CloudFormation module](#typed-dictionaries-for-boto3-cloudformation-module)
-  - [AccountGateResultTypeDef](#accountgateresulttypedef)
-  - [AccountLimitTypeDef](#accountlimittypedef)
-  - [ActivateTypeInputRequestTypeDef](#activatetypeinputrequesttypedef)
-  - [ActivateTypeOutputTypeDef](#activatetypeoutputtypedef)
-  - [AutoDeploymentTypeDef](#autodeploymenttypedef)
-  - [BatchDescribeTypeConfigurationsErrorTypeDef](#batchdescribetypeconfigurationserrortypedef)
-  - [BatchDescribeTypeConfigurationsInputRequestTypeDef](#batchdescribetypeconfigurationsinputrequesttypedef)
-  - [BatchDescribeTypeConfigurationsOutputTypeDef](#batchdescribetypeconfigurationsoutputtypedef)
-  - [CancelUpdateStackInputRequestTypeDef](#cancelupdatestackinputrequesttypedef)
-  - [CancelUpdateStackInputStackCancelUpdateTypeDef](#cancelupdatestackinputstackcancelupdatetypedef)
-  - [ChangeSetHookResourceTargetDetailsTypeDef](#changesethookresourcetargetdetailstypedef)
-  - [ChangeSetHookTargetDetailsTypeDef](#changesethooktargetdetailstypedef)
-  - [ChangeSetHookTypeDef](#changesethooktypedef)
-  - [ChangeSetSummaryTypeDef](#changesetsummarytypedef)
-  - [ChangeTypeDef](#changetypedef)
-  - [ContinueUpdateRollbackInputRequestTypeDef](#continueupdaterollbackinputrequesttypedef)
-  - [CreateChangeSetInputRequestTypeDef](#createchangesetinputrequesttypedef)
-  - [CreateChangeSetOutputTypeDef](#createchangesetoutputtypedef)
-  - [CreateStackInputRequestTypeDef](#createstackinputrequesttypedef)
-  - [CreateStackInputServiceResourceCreateStackTypeDef](#createstackinputserviceresourcecreatestacktypedef)
-  - [CreateStackInstancesInputRequestTypeDef](#createstackinstancesinputrequesttypedef)
-  - [CreateStackInstancesOutputTypeDef](#createstackinstancesoutputtypedef)
-  - [CreateStackOutputTypeDef](#createstackoutputtypedef)
-  - [CreateStackSetInputRequestTypeDef](#createstacksetinputrequesttypedef)
-  - [CreateStackSetOutputTypeDef](#createstacksetoutputtypedef)
-  - [DeactivateTypeInputRequestTypeDef](#deactivatetypeinputrequesttypedef)
-  - [DeleteChangeSetInputRequestTypeDef](#deletechangesetinputrequesttypedef)
-  - [DeleteStackInputRequestTypeDef](#deletestackinputrequesttypedef)
-  - [DeleteStackInputStackDeleteTypeDef](#deletestackinputstackdeletetypedef)
-  - [DeleteStackInstancesInputRequestTypeDef](#deletestackinstancesinputrequesttypedef)
-  - [DeleteStackInstancesOutputTypeDef](#deletestackinstancesoutputtypedef)
-  - [DeleteStackSetInputRequestTypeDef](#deletestacksetinputrequesttypedef)
-  - [DeploymentTargetsTypeDef](#deploymenttargetstypedef)
-  - [DeregisterTypeInputRequestTypeDef](#deregistertypeinputrequesttypedef)
-  - [DescribeAccountLimitsInputRequestTypeDef](#describeaccountlimitsinputrequesttypedef)
-  - [DescribeAccountLimitsOutputTypeDef](#describeaccountlimitsoutputtypedef)
-  - [DescribeChangeSetHooksInputRequestTypeDef](#describechangesethooksinputrequesttypedef)
-  - [DescribeChangeSetHooksOutputTypeDef](#describechangesethooksoutputtypedef)
-  - [DescribeChangeSetInputRequestTypeDef](#describechangesetinputrequesttypedef)
-  - [DescribeChangeSetOutputTypeDef](#describechangesetoutputtypedef)
-  - [DescribePublisherInputRequestTypeDef](#describepublisherinputrequesttypedef)
-  - [DescribePublisherOutputTypeDef](#describepublisheroutputtypedef)
-  - [DescribeStackDriftDetectionStatusInputRequestTypeDef](#describestackdriftdetectionstatusinputrequesttypedef)
-  - [DescribeStackDriftDetectionStatusOutputTypeDef](#describestackdriftdetectionstatusoutputtypedef)
-  - [DescribeStackEventsInputRequestTypeDef](#describestackeventsinputrequesttypedef)
-  - [DescribeStackEventsOutputTypeDef](#describestackeventsoutputtypedef)
-  - [DescribeStackInstanceInputRequestTypeDef](#describestackinstanceinputrequesttypedef)
-  - [DescribeStackInstanceOutputTypeDef](#describestackinstanceoutputtypedef)
-  - [DescribeStackResourceDriftsInputRequestTypeDef](#describestackresourcedriftsinputrequesttypedef)
-  - [DescribeStackResourceDriftsOutputTypeDef](#describestackresourcedriftsoutputtypedef)
-  - [DescribeStackResourceInputRequestTypeDef](#describestackresourceinputrequesttypedef)
-  - [DescribeStackResourceOutputTypeDef](#describestackresourceoutputtypedef)
-  - [DescribeStackResourcesInputRequestTypeDef](#describestackresourcesinputrequesttypedef)
-  - [DescribeStackResourcesOutputTypeDef](#describestackresourcesoutputtypedef)
-  - [DescribeStackSetInputRequestTypeDef](#describestacksetinputrequesttypedef)
-  - [DescribeStackSetOperationInputRequestTypeDef](#describestacksetoperationinputrequesttypedef)
-  - [DescribeStackSetOperationOutputTypeDef](#describestacksetoperationoutputtypedef)
-  - [DescribeStackSetOutputTypeDef](#describestacksetoutputtypedef)
-  - [DescribeStacksInputRequestTypeDef](#describestacksinputrequesttypedef)
-  - [DescribeStacksOutputTypeDef](#describestacksoutputtypedef)
-  - [DescribeTypeInputRequestTypeDef](#describetypeinputrequesttypedef)
-  - [DescribeTypeOutputTypeDef](#describetypeoutputtypedef)
-  - [DescribeTypeRegistrationInputRequestTypeDef](#describetyperegistrationinputrequesttypedef)
-  - [DescribeTypeRegistrationOutputTypeDef](#describetyperegistrationoutputtypedef)
-  - [DetectStackDriftInputRequestTypeDef](#detectstackdriftinputrequesttypedef)
-  - [DetectStackDriftOutputTypeDef](#detectstackdriftoutputtypedef)
-  - [DetectStackResourceDriftInputRequestTypeDef](#detectstackresourcedriftinputrequesttypedef)
-  - [DetectStackResourceDriftOutputTypeDef](#detectstackresourcedriftoutputtypedef)
-  - [DetectStackSetDriftInputRequestTypeDef](#detectstacksetdriftinputrequesttypedef)
-  - [DetectStackSetDriftOutputTypeDef](#detectstacksetdriftoutputtypedef)
-  - [EstimateTemplateCostInputRequestTypeDef](#estimatetemplatecostinputrequesttypedef)
-  - [EstimateTemplateCostOutputTypeDef](#estimatetemplatecostoutputtypedef)
-  - [ExecuteChangeSetInputRequestTypeDef](#executechangesetinputrequesttypedef)
-  - [ExportTypeDef](#exporttypedef)
-  - [GetStackPolicyInputRequestTypeDef](#getstackpolicyinputrequesttypedef)
-  - [GetStackPolicyOutputTypeDef](#getstackpolicyoutputtypedef)
-  - [GetTemplateInputRequestTypeDef](#gettemplateinputrequesttypedef)
-  - [GetTemplateOutputTypeDef](#gettemplateoutputtypedef)
-  - [GetTemplateSummaryInputRequestTypeDef](#gettemplatesummaryinputrequesttypedef)
-  - [GetTemplateSummaryOutputTypeDef](#gettemplatesummaryoutputtypedef)
-  - [ImportStacksToStackSetInputRequestTypeDef](#importstackstostacksetinputrequesttypedef)
-  - [ImportStacksToStackSetOutputTypeDef](#importstackstostacksetoutputtypedef)
-  - [ListChangeSetsInputRequestTypeDef](#listchangesetsinputrequesttypedef)
-  - [ListChangeSetsOutputTypeDef](#listchangesetsoutputtypedef)
-  - [ListExportsInputRequestTypeDef](#listexportsinputrequesttypedef)
-  - [ListExportsOutputTypeDef](#listexportsoutputtypedef)
-  - [ListImportsInputRequestTypeDef](#listimportsinputrequesttypedef)
-  - [ListImportsOutputTypeDef](#listimportsoutputtypedef)
-  - [ListStackInstancesInputRequestTypeDef](#liststackinstancesinputrequesttypedef)
-  - [ListStackInstancesOutputTypeDef](#liststackinstancesoutputtypedef)
-  - [ListStackResourcesInputRequestTypeDef](#liststackresourcesinputrequesttypedef)
-  - [ListStackResourcesOutputTypeDef](#liststackresourcesoutputtypedef)
-  - [ListStackSetOperationResultsInputRequestTypeDef](#liststacksetoperationresultsinputrequesttypedef)
-  - [ListStackSetOperationResultsOutputTypeDef](#liststacksetoperationresultsoutputtypedef)
-  - [ListStackSetOperationsInputRequestTypeDef](#liststacksetoperationsinputrequesttypedef)
-  - [ListStackSetOperationsOutputTypeDef](#liststacksetoperationsoutputtypedef)
-  - [ListStackSetsInputRequestTypeDef](#liststacksetsinputrequesttypedef)
-  - [ListStackSetsOutputTypeDef](#liststacksetsoutputtypedef)
-  - [ListStacksInputRequestTypeDef](#liststacksinputrequesttypedef)
-  - [ListStacksOutputTypeDef](#liststacksoutputtypedef)
-  - [ListTypeRegistrationsInputRequestTypeDef](#listtyperegistrationsinputrequesttypedef)
-  - [ListTypeRegistrationsOutputTypeDef](#listtyperegistrationsoutputtypedef)
-  - [ListTypeVersionsInputRequestTypeDef](#listtypeversionsinputrequesttypedef)
-  - [ListTypeVersionsOutputTypeDef](#listtypeversionsoutputtypedef)
-  - [ListTypesInputRequestTypeDef](#listtypesinputrequesttypedef)
-  - [ListTypesOutputTypeDef](#listtypesoutputtypedef)
-  - [LoggingConfigTypeDef](#loggingconfigtypedef)
-  - [ManagedExecutionTypeDef](#managedexecutiontypedef)
-  - [ModuleInfoResponseMetadataTypeDef](#moduleinforesponsemetadatatypedef)
-  - [ModuleInfoTypeDef](#moduleinfotypedef)
-  - [OutputTypeDef](#outputtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterConstraintsTypeDef](#parameterconstraintstypedef)
-  - [ParameterDeclarationTypeDef](#parameterdeclarationtypedef)
-  - [ParameterTypeDef](#parametertypedef)
-  - [PhysicalResourceIdContextKeyValuePairTypeDef](#physicalresourceidcontextkeyvaluepairtypedef)
-  - [PropertyDifferenceTypeDef](#propertydifferencetypedef)
-  - [PublishTypeInputRequestTypeDef](#publishtypeinputrequesttypedef)
-  - [PublishTypeOutputTypeDef](#publishtypeoutputtypedef)
-  - [RecordHandlerProgressInputRequestTypeDef](#recordhandlerprogressinputrequesttypedef)
-  - [RegisterPublisherInputRequestTypeDef](#registerpublisherinputrequesttypedef)
-  - [RegisterPublisherOutputTypeDef](#registerpublisheroutputtypedef)
-  - [RegisterTypeInputRequestTypeDef](#registertypeinputrequesttypedef)
-  - [RegisterTypeOutputTypeDef](#registertypeoutputtypedef)
-  - [RequiredActivatedTypeTypeDef](#requiredactivatedtypetypedef)
-  - [ResourceChangeDetailTypeDef](#resourcechangedetailtypedef)
-  - [ResourceChangeTypeDef](#resourcechangetypedef)
-  - [ResourceIdentifierSummaryTypeDef](#resourceidentifiersummarytypedef)
-  - [ResourceTargetDefinitionTypeDef](#resourcetargetdefinitiontypedef)
-  - [ResourceToImportTypeDef](#resourcetoimporttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RollbackConfigurationResponseMetadataTypeDef](#rollbackconfigurationresponsemetadatatypedef)
-  - [RollbackConfigurationTypeDef](#rollbackconfigurationtypedef)
-  - [RollbackStackInputRequestTypeDef](#rollbackstackinputrequesttypedef)
-  - [RollbackStackOutputTypeDef](#rollbackstackoutputtypedef)
-  - [RollbackTriggerTypeDef](#rollbacktriggertypedef)
-  - [ServiceResourceEventRequestTypeDef](#serviceresourceeventrequesttypedef)
-  - [ServiceResourceStackRequestTypeDef](#serviceresourcestackrequesttypedef)
-  - [ServiceResourceStackResourceRequestTypeDef](#serviceresourcestackresourcerequesttypedef)
-  - [ServiceResourceStackResourceSummaryRequestTypeDef](#serviceresourcestackresourcesummaryrequesttypedef)
-  - [SetStackPolicyInputRequestTypeDef](#setstackpolicyinputrequesttypedef)
-  - [SetTypeConfigurationInputRequestTypeDef](#settypeconfigurationinputrequesttypedef)
-  - [SetTypeConfigurationOutputTypeDef](#settypeconfigurationoutputtypedef)
-  - [SetTypeDefaultVersionInputRequestTypeDef](#settypedefaultversioninputrequesttypedef)
-  - [SignalResourceInputRequestTypeDef](#signalresourceinputrequesttypedef)
-  - [StackDriftInformationResponseMetadataTypeDef](#stackdriftinformationresponsemetadatatypedef)
-  - [StackDriftInformationSummaryTypeDef](#stackdriftinformationsummarytypedef)
-  - [StackDriftInformationTypeDef](#stackdriftinformationtypedef)
-  - [StackEventTypeDef](#stackeventtypedef)
-  - [StackInstanceComprehensiveStatusTypeDef](#stackinstancecomprehensivestatustypedef)
-  - [StackInstanceFilterTypeDef](#stackinstancefiltertypedef)
-  - [StackInstanceSummaryTypeDef](#stackinstancesummarytypedef)
-  - [StackInstanceTypeDef](#stackinstancetypedef)
-  - [StackResourceDetailTypeDef](#stackresourcedetailtypedef)
-  - [StackResourceDriftInformationResponseMetadataTypeDef](#stackresourcedriftinformationresponsemetadatatypedef)
-  - [StackResourceDriftInformationSummaryResponseMetadataTypeDef](#stackresourcedriftinformationsummaryresponsemetadatatypedef)
-  - [StackResourceDriftInformationSummaryTypeDef](#stackresourcedriftinformationsummarytypedef)
-  - [StackResourceDriftInformationTypeDef](#stackresourcedriftinformationtypedef)
-  - [StackResourceDriftTypeDef](#stackresourcedrifttypedef)
-  - [StackResourceRequestTypeDef](#stackresourcerequesttypedef)
-  - [StackResourceSummaryTypeDef](#stackresourcesummarytypedef)
-  - [StackResourceTypeDef](#stackresourcetypedef)
-  - [StackSetDriftDetectionDetailsTypeDef](#stacksetdriftdetectiondetailstypedef)
-  - [StackSetOperationPreferencesTypeDef](#stacksetoperationpreferencestypedef)
-  - [StackSetOperationResultSummaryTypeDef](#stacksetoperationresultsummarytypedef)
-  - [StackSetOperationSummaryTypeDef](#stacksetoperationsummarytypedef)
-  - [StackSetOperationTypeDef](#stacksetoperationtypedef)
-  - [StackSetSummaryTypeDef](#stacksetsummarytypedef)
-  - [StackSetTypeDef](#stacksettypedef)
-  - [StackSummaryTypeDef](#stacksummarytypedef)
-  - [StackTypeDef](#stacktypedef)
-  - [StopStackSetOperationInputRequestTypeDef](#stopstacksetoperationinputrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TemplateParameterTypeDef](#templateparametertypedef)
-  - [TestTypeInputRequestTypeDef](#testtypeinputrequesttypedef)
-  - [TestTypeOutputTypeDef](#testtypeoutputtypedef)
-  - [TypeConfigurationDetailsTypeDef](#typeconfigurationdetailstypedef)
-  - [TypeConfigurationIdentifierTypeDef](#typeconfigurationidentifiertypedef)
-  - [TypeFiltersTypeDef](#typefilterstypedef)
-  - [TypeSummaryTypeDef](#typesummarytypedef)
-  - [TypeVersionSummaryTypeDef](#typeversionsummarytypedef)
-  - [UpdateStackInputRequestTypeDef](#updatestackinputrequesttypedef)
-  - [UpdateStackInputStackUpdateTypeDef](#updatestackinputstackupdatetypedef)
-  - [UpdateStackInstancesInputRequestTypeDef](#updatestackinstancesinputrequesttypedef)
-  - [UpdateStackInstancesOutputTypeDef](#updatestackinstancesoutputtypedef)
-  - [UpdateStackOutputTypeDef](#updatestackoutputtypedef)
-  - [UpdateStackSetInputRequestTypeDef](#updatestacksetinputrequesttypedef)
-  - [UpdateStackSetOutputTypeDef](#updatestacksetoutputtypedef)
-  - [UpdateTerminationProtectionInputRequestTypeDef](#updateterminationprotectioninputrequesttypedef)
-  - [UpdateTerminationProtectionOutputTypeDef](#updateterminationprotectionoutputtypedef)
-  - [ValidateTemplateInputRequestTypeDef](#validatetemplateinputrequesttypedef)
-  - [ValidateTemplateOutputTypeDef](#validatetemplateoutputtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="accountgateresulttypedef"></a>
+    Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+    type annotations stubs module [mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 ## AccountGateResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef
+
+def get_value() -> AccountGateResultTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountGateResultTypeDef(TypedDict):
+    Status: NotRequired[AccountGateStatusType],  # (1)
+    StatusReason: NotRequired[str],
+```
 
-- `Status`: [AccountGateStatusType](./literals.md#accountgatestatustype)
-- `StatusReason`: `str`
-
-<a id="accountlimittypedef"></a>
-
+1. See [:material-code-brackets: AccountGateStatusType](./literals.md#accountgatestatustype) 
 ## AccountLimitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import AccountLimitTypeDef
+
+def get_value() -> AccountLimitTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Value`: `int`
-
-<a id="activatetypeinputrequesttypedef"></a>
+```python title="Definition"
+class AccountLimitTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[int],
+```
 
 ## ActivateTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ActivateTypeInputRequestTypeDef
+
+def get_value() -> ActivateTypeInputRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActivateTypeInputRequestTypeDef(TypedDict):
+    Type: NotRequired[ThirdPartyTypeType],  # (1)
+    PublicTypeArn: NotRequired[str],
+    PublisherId: NotRequired[str],
+    TypeName: NotRequired[str],
+    TypeNameAlias: NotRequired[str],
+    AutoUpdate: NotRequired[bool],
+    LoggingConfig: NotRequired[LoggingConfigTypeDef],  # (2)
+    ExecutionRoleArn: NotRequired[str],
+    VersionBump: NotRequired[VersionBumpType],  # (3)
+    MajorVersion: NotRequired[int],
+```
 
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-- `PublicTypeArn`: `str`
-- `PublisherId`: `str`
-- `TypeName`: `str`
-- `TypeNameAlias`: `str`
-- `AutoUpdate`: `bool`
-- `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `ExecutionRoleArn`: `str`
-- `VersionBump`: [VersionBumpType](./literals.md#versionbumptype)
-- `MajorVersion`: `int`
-
-<a id="activatetypeoutputtypedef"></a>
-
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
+2. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+3. See [:material-code-brackets: VersionBumpType](./literals.md#versionbumptype) 
 ## ActivateTypeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ActivateTypeOutputTypeDef
+
+def get_value() -> ActivateTypeOutputTypeDef:
+    return {
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActivateTypeOutputTypeDef(TypedDict):
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="autodeploymenttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AutoDeploymentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import AutoDeploymentTypeDef
+
+def get_value() -> AutoDeploymentTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `Enabled`: `bool`
-- `RetainStacksOnAccountRemoval`: `bool`
-
-<a id="batchdescribetypeconfigurationserrortypedef"></a>
+```python title="Definition"
+class AutoDeploymentTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    RetainStacksOnAccountRemoval: NotRequired[bool],
+```
 
 ## BatchDescribeTypeConfigurationsErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import BatchDescribeTypeConfigurationsErrorTypeDef
+
+def get_value() -> BatchDescribeTypeConfigurationsErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchDescribeTypeConfigurationsErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    TypeConfigurationIdentifier: NotRequired[TypeConfigurationIdentifierTypeDef],  # (1)
+```
 
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-- `TypeConfigurationIdentifier`:
-  [TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)
-
-<a id="batchdescribetypeconfigurationsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef) 
 ## BatchDescribeTypeConfigurationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import BatchDescribeTypeConfigurationsInputRequestTypeDef
+
+def get_value() -> BatchDescribeTypeConfigurationsInputRequestTypeDef:
+    return {
+        "TypeConfigurationIdentifiers": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDescribeTypeConfigurationsInputRequestTypeDef(TypedDict):
+    TypeConfigurationIdentifiers: Sequence[TypeConfigurationIdentifierTypeDef],  # (1)
+```
 
-- `TypeConfigurationIdentifiers`:
-  `Sequence`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
-
-<a id="batchdescribetypeconfigurationsoutputtypedef"></a>
-
+1. See [:material-code-braces: TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef) 
 ## BatchDescribeTypeConfigurationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import BatchDescribeTypeConfigurationsOutputTypeDef
+
+def get_value() -> BatchDescribeTypeConfigurationsOutputTypeDef:
+    return {
+        "Errors": ...,
+        "UnprocessedTypeConfigurations": ...,
+        "TypeConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDescribeTypeConfigurationsOutputTypeDef(TypedDict):
+    Errors: List[BatchDescribeTypeConfigurationsErrorTypeDef],  # (1)
+    UnprocessedTypeConfigurations: List[TypeConfigurationIdentifierTypeDef],  # (2)
+    TypeConfigurations: List[TypeConfigurationDetailsTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Errors`:
-  `List`\[[BatchDescribeTypeConfigurationsErrorTypeDef](./type_defs.md#batchdescribetypeconfigurationserrortypedef)\]
-- `UnprocessedTypeConfigurations`:
-  `List`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
-- `TypeConfigurations`:
-  `List`\[[TypeConfigurationDetailsTypeDef](./type_defs.md#typeconfigurationdetailstypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cancelupdatestackinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchDescribeTypeConfigurationsErrorTypeDef](./type_defs.md#batchdescribetypeconfigurationserrortypedef) 
+2. See [:material-code-braces: TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef) 
+3. See [:material-code-braces: TypeConfigurationDetailsTypeDef](./type_defs.md#typeconfigurationdetailstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelUpdateStackInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CancelUpdateStackInputRequestTypeDef
+
+def get_value() -> CancelUpdateStackInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-
-<a id="cancelupdatestackinputstackcancelupdatetypedef"></a>
+```python title="Definition"
+class CancelUpdateStackInputRequestTypeDef(TypedDict):
+    StackName: str,
+    ClientRequestToken: NotRequired[str],
+```
 
 ## CancelUpdateStackInputStackCancelUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CancelUpdateStackInputStackCancelUpdateTypeDef
+
+def get_value() -> CancelUpdateStackInputStackCancelUpdateTypeDef:
+    return {
+        "ClientRequestToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClientRequestToken`: `str`
-
-<a id="changesethookresourcetargetdetailstypedef"></a>
+```python title="Definition"
+class CancelUpdateStackInputStackCancelUpdateTypeDef(TypedDict):
+    ClientRequestToken: NotRequired[str],
+```
 
 ## ChangeSetHookResourceTargetDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ChangeSetHookResourceTargetDetailsTypeDef
+
+def get_value() -> ChangeSetHookResourceTargetDetailsTypeDef:
+    return {
+        "LogicalResourceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChangeSetHookResourceTargetDetailsTypeDef(TypedDict):
+    LogicalResourceId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceAction: NotRequired[ChangeActionType],  # (1)
+```
 
-- `LogicalResourceId`: `str`
-- `ResourceType`: `str`
-- `ResourceAction`: [ChangeActionType](./literals.md#changeactiontype)
-
-<a id="changesethooktargetdetailstypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
 ## ChangeSetHookTargetDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ChangeSetHookTargetDetailsTypeDef
+
+def get_value() -> ChangeSetHookTargetDetailsTypeDef:
+    return {
+        "TargetType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChangeSetHookTargetDetailsTypeDef(TypedDict):
+    TargetType: NotRequired[HookTargetTypeType],  # (1)
+    ResourceTargetDetails: NotRequired[ChangeSetHookResourceTargetDetailsTypeDef],  # (2)
+```
 
-- `TargetType`: `Literal['RESOURCE']` (see
-  [HookTargetTypeType](./literals.md#hooktargettypetype))
-- `ResourceTargetDetails`:
-  [ChangeSetHookResourceTargetDetailsTypeDef](./type_defs.md#changesethookresourcetargetdetailstypedef)
-
-<a id="changesethooktypedef"></a>
-
+1. See [:material-code-brackets: HookTargetTypeType](./literals.md#hooktargettypetype) 
+2. See [:material-code-braces: ChangeSetHookResourceTargetDetailsTypeDef](./type_defs.md#changesethookresourcetargetdetailstypedef) 
 ## ChangeSetHookTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ChangeSetHookTypeDef
+
+def get_value() -> ChangeSetHookTypeDef:
+    return {
+        "InvocationPoint": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChangeSetHookTypeDef(TypedDict):
+    InvocationPoint: NotRequired[HookInvocationPointType],  # (1)
+    FailureMode: NotRequired[HookFailureModeType],  # (2)
+    TypeName: NotRequired[str],
+    TypeVersionId: NotRequired[str],
+    TypeConfigurationVersionId: NotRequired[str],
+    TargetDetails: NotRequired[ChangeSetHookTargetDetailsTypeDef],  # (3)
+```
 
-- `InvocationPoint`: `Literal['PRE_PROVISION']` (see
-  [HookInvocationPointType](./literals.md#hookinvocationpointtype))
-- `FailureMode`: [HookFailureModeType](./literals.md#hookfailuremodetype)
-- `TypeName`: `str`
-- `TypeVersionId`: `str`
-- `TypeConfigurationVersionId`: `str`
-- `TargetDetails`:
-  [ChangeSetHookTargetDetailsTypeDef](./type_defs.md#changesethooktargetdetailstypedef)
-
-<a id="changesetsummarytypedef"></a>
-
+1. See [:material-code-brackets: HookInvocationPointType](./literals.md#hookinvocationpointtype) 
+2. See [:material-code-brackets: HookFailureModeType](./literals.md#hookfailuremodetype) 
+3. See [:material-code-braces: ChangeSetHookTargetDetailsTypeDef](./type_defs.md#changesethooktargetdetailstypedef) 
 ## ChangeSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ChangeSetSummaryTypeDef
+
+def get_value() -> ChangeSetSummaryTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChangeSetSummaryTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    StackName: NotRequired[str],
+    ChangeSetId: NotRequired[str],
+    ChangeSetName: NotRequired[str],
+    ExecutionStatus: NotRequired[ExecutionStatusType],  # (1)
+    Status: NotRequired[ChangeSetStatusType],  # (2)
+    StatusReason: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    Description: NotRequired[str],
+    IncludeNestedStacks: NotRequired[bool],
+    ParentChangeSetId: NotRequired[str],
+    RootChangeSetId: NotRequired[str],
+```
 
-- `StackId`: `str`
-- `StackName`: `str`
-- `ChangeSetId`: `str`
-- `ChangeSetName`: `str`
-- `ExecutionStatus`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `Status`: [ChangeSetStatusType](./literals.md#changesetstatustype)
-- `StatusReason`: `str`
-- `CreationTime`: `datetime`
-- `Description`: `str`
-- `IncludeNestedStacks`: `bool`
-- `ParentChangeSetId`: `str`
-- `RootChangeSetId`: `str`
-
-<a id="changetypedef"></a>
-
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+2. See [:material-code-brackets: ChangeSetStatusType](./literals.md#changesetstatustype) 
 ## ChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ChangeTypeDef
+
+def get_value() -> ChangeTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChangeTypeDef(TypedDict):
+    Type: NotRequired[ChangeTypeType],  # (1)
+    HookInvocationCount: NotRequired[int],
+    ResourceChange: NotRequired[ResourceChangeTypeDef],  # (2)
+```
 
-- `Type`: `Literal['Resource']` (see
-  [ChangeTypeType](./literals.md#changetypetype))
-- `HookInvocationCount`: `int`
-- `ResourceChange`:
-  [ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef)
-
-<a id="continueupdaterollbackinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
+2. See [:material-code-braces: ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef) 
 ## ContinueUpdateRollbackInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ContinueUpdateRollbackInputRequestTypeDef
+
+def get_value() -> ContinueUpdateRollbackInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-- `ResourcesToSkip`: `Sequence`\[`str`\]
-- `ClientRequestToken`: `str`
-
-<a id="createchangesetinputrequesttypedef"></a>
+```python title="Definition"
+class ContinueUpdateRollbackInputRequestTypeDef(TypedDict):
+    StackName: str,
+    RoleARN: NotRequired[str],
+    ResourcesToSkip: NotRequired[Sequence[str]],
+    ClientRequestToken: NotRequired[str],
+```
 
 ## CreateChangeSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CreateChangeSetInputRequestTypeDef
+
+def get_value() -> CreateChangeSetInputRequestTypeDef:
+    return {
+        "StackName": ...,
+        "ChangeSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChangeSetInputRequestTypeDef(TypedDict):
+    StackName: str,
+    ChangeSetName: str,
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+    UsePreviousTemplate: NotRequired[bool],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+    Capabilities: NotRequired[Sequence[CapabilityType]],  # (2)
+    ResourceTypes: NotRequired[Sequence[str]],
+    RoleARN: NotRequired[str],
+    RollbackConfiguration: NotRequired[RollbackConfigurationTypeDef],  # (3)
+    NotificationARNs: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    ClientToken: NotRequired[str],
+    Description: NotRequired[str],
+    ChangeSetType: NotRequired[ChangeSetTypeType],  # (5)
+    ResourcesToImport: NotRequired[Sequence[ResourceToImportTypeDef]],  # (6)
+    IncludeNestedStacks: NotRequired[bool],
+```
 
-- `StackName`: `str`
-- `ChangeSetName`: `str`
-
-Optional fields:
-
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `UsePreviousTemplate`: `bool`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientToken`: `str`
-- `Description`: `str`
-- `ChangeSetType`: [ChangeSetTypeType](./literals.md#changesettypetype)
-- `ResourcesToImport`:
-  `Sequence`\[[ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)\]
-- `IncludeNestedStacks`: `bool`
-
-<a id="createchangesetoutputtypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-brackets: ChangeSetTypeType](./literals.md#changesettypetype) 
+6. See [:material-code-braces: ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef) 
 ## CreateChangeSetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CreateChangeSetOutputTypeDef
+
+def get_value() -> CreateChangeSetOutputTypeDef:
+    return {
+        "Id": ...,
+        "StackId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChangeSetOutputTypeDef(TypedDict):
+    Id: str,
+    StackId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `StackId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstackinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStackInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CreateStackInputRequestTypeDef
+
+def get_value() -> CreateStackInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackInputRequestTypeDef(TypedDict):
+    StackName: str,
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+    DisableRollback: NotRequired[bool],
+    RollbackConfiguration: NotRequired[RollbackConfigurationTypeDef],  # (2)
+    TimeoutInMinutes: NotRequired[int],
+    NotificationARNs: NotRequired[Sequence[str]],
+    Capabilities: NotRequired[Sequence[CapabilityType]],  # (3)
+    ResourceTypes: NotRequired[Sequence[str]],
+    RoleARN: NotRequired[str],
+    OnFailure: NotRequired[OnFailureType],  # (4)
+    StackPolicyBody: NotRequired[str],
+    StackPolicyURL: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+    ClientRequestToken: NotRequired[str],
+    EnableTerminationProtection: NotRequired[bool],
+```
 
-- `StackName`: `str`
-
-Optional fields:
-
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `DisableRollback`: `bool`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `TimeoutInMinutes`: `int`
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientRequestToken`: `str`
-- `EnableTerminationProtection`: `bool`
-
-<a id="createstackinputserviceresourcecreatestacktypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+3. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+4. See [:material-code-brackets: OnFailureType](./literals.md#onfailuretype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateStackInputServiceResourceCreateStackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CreateStackInputServiceResourceCreateStackTypeDef
+
+def get_value() -> CreateStackInputServiceResourceCreateStackTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackInputServiceResourceCreateStackTypeDef(TypedDict):
+    StackName: str,
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+    DisableRollback: NotRequired[bool],
+    RollbackConfiguration: NotRequired[RollbackConfigurationTypeDef],  # (2)
+    TimeoutInMinutes: NotRequired[int],
+    NotificationARNs: NotRequired[Sequence[str]],
+    Capabilities: NotRequired[Sequence[CapabilityType]],  # (3)
+    ResourceTypes: NotRequired[Sequence[str]],
+    RoleARN: NotRequired[str],
+    OnFailure: NotRequired[OnFailureType],  # (4)
+    StackPolicyBody: NotRequired[str],
+    StackPolicyURL: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+    ClientRequestToken: NotRequired[str],
+    EnableTerminationProtection: NotRequired[bool],
+```
 
-- `StackName`: `str`
-
-Optional fields:
-
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `DisableRollback`: `bool`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `TimeoutInMinutes`: `int`
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientRequestToken`: `str`
-- `EnableTerminationProtection`: `bool`
-
-<a id="createstackinstancesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+3. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+4. See [:material-code-brackets: OnFailureType](./literals.md#onfailuretype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateStackInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CreateStackInstancesInputRequestTypeDef
+
+def get_value() -> CreateStackInstancesInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+        "Regions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackInstancesInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    Regions: Sequence[str],
+    Accounts: NotRequired[Sequence[str]],
+    DeploymentTargets: NotRequired[DeploymentTargetsTypeDef],  # (1)
+    ParameterOverrides: NotRequired[Sequence[ParameterTypeDef]],  # (2)
+    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (3)
+    OperationId: NotRequired[str],
+    CallAs: NotRequired[CallAsType],  # (4)
+```
 
-- `StackSetName`: `str`
-- `Regions`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Accounts`: `Sequence`\[`str`\]
-- `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
-- `ParameterOverrides`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="createstackinstancesoutputtypedef"></a>
-
+1. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+3. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+4. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## CreateStackInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CreateStackInstancesOutputTypeDef
+
+def get_value() -> CreateStackInstancesOutputTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackInstancesOutputTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstackoutputtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStackOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CreateStackOutputTypeDef
+
+def get_value() -> CreateStackOutputTypeDef:
+    return {
+        "StackId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackOutputTypeDef(TypedDict):
+    StackId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StackId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstacksetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStackSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CreateStackSetInputRequestTypeDef
+
+def get_value() -> CreateStackSetInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackSetInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    Description: NotRequired[str],
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+    StackId: NotRequired[str],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+    Capabilities: NotRequired[Sequence[CapabilityType]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    AdministrationRoleARN: NotRequired[str],
+    ExecutionRoleName: NotRequired[str],
+    PermissionModel: NotRequired[PermissionModelsType],  # (4)
+    AutoDeployment: NotRequired[AutoDeploymentTypeDef],  # (5)
+    CallAs: NotRequired[CallAsType],  # (6)
+    ClientRequestToken: NotRequired[str],
+    ManagedExecution: NotRequired[ManagedExecutionTypeDef],  # (7)
+```
 
-- `StackSetName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `StackId`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AdministrationRoleARN`: `str`
-- `ExecutionRoleName`: `str`
-- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
-- `AutoDeployment`:
-  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
-- `CallAs`: [CallAsType](./literals.md#callastype)
-- `ClientRequestToken`: `str`
-- `ManagedExecution`:
-  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
-
-<a id="createstacksetoutputtypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-brackets: PermissionModelsType](./literals.md#permissionmodelstype) 
+5. See [:material-code-braces: AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef) 
+6. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+7. See [:material-code-braces: ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef) 
 ## CreateStackSetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import CreateStackSetOutputTypeDef
+
+def get_value() -> CreateStackSetOutputTypeDef:
+    return {
+        "StackSetId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackSetOutputTypeDef(TypedDict):
+    StackSetId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StackSetId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deactivatetypeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeactivateTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DeactivateTypeInputRequestTypeDef
+
+def get_value() -> DeactivateTypeInputRequestTypeDef:
+    return {
+        "TypeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeactivateTypeInputRequestTypeDef(TypedDict):
+    TypeName: NotRequired[str],
+    Type: NotRequired[ThirdPartyTypeType],  # (1)
+    Arn: NotRequired[str],
+```
 
-- `TypeName`: `str`
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-- `Arn`: `str`
-
-<a id="deletechangesetinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
 ## DeleteChangeSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DeleteChangeSetInputRequestTypeDef
+
+def get_value() -> DeleteChangeSetInputRequestTypeDef:
+    return {
+        "ChangeSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChangeSetName`: `str`
-
-Optional fields:
-
-- `StackName`: `str`
-
-<a id="deletestackinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteChangeSetInputRequestTypeDef(TypedDict):
+    ChangeSetName: str,
+    StackName: NotRequired[str],
+```
 
 ## DeleteStackInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DeleteStackInputRequestTypeDef
+
+def get_value() -> DeleteStackInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-
-Optional fields:
-
-- `RetainResources`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="deletestackinputstackdeletetypedef"></a>
+```python title="Definition"
+class DeleteStackInputRequestTypeDef(TypedDict):
+    StackName: str,
+    RetainResources: NotRequired[Sequence[str]],
+    RoleARN: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+```
 
 ## DeleteStackInputStackDeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DeleteStackInputStackDeleteTypeDef
+
+def get_value() -> DeleteStackInputStackDeleteTypeDef:
+    return {
+        "RetainResources": ...,
+    }
 ```
 
-Optional fields:
-
-- `RetainResources`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="deletestackinstancesinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteStackInputStackDeleteTypeDef(TypedDict):
+    RetainResources: NotRequired[Sequence[str]],
+    RoleARN: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+```
 
 ## DeleteStackInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DeleteStackInstancesInputRequestTypeDef
+
+def get_value() -> DeleteStackInstancesInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+        "Regions": ...,
+        "RetainStacks": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteStackInstancesInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    Regions: Sequence[str],
+    RetainStacks: bool,
+    Accounts: NotRequired[Sequence[str]],
+    DeploymentTargets: NotRequired[DeploymentTargetsTypeDef],  # (1)
+    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (2)
+    OperationId: NotRequired[str],
+    CallAs: NotRequired[CallAsType],  # (3)
+```
 
-- `StackSetName`: `str`
-- `Regions`: `Sequence`\[`str`\]
-- `RetainStacks`: `bool`
-
-Optional fields:
-
-- `Accounts`: `Sequence`\[`str`\]
-- `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="deletestackinstancesoutputtypedef"></a>
-
+1. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+2. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+3. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## DeleteStackInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DeleteStackInstancesOutputTypeDef
+
+def get_value() -> DeleteStackInstancesOutputTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteStackInstancesOutputTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletestacksetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteStackSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DeleteStackSetInputRequestTypeDef
+
+def get_value() -> DeleteStackSetInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteStackSetInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    CallAs: NotRequired[CallAsType],  # (1)
+```
 
-- `StackSetName`: `str`
-
-Optional fields:
-
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="deploymenttargetstypedef"></a>
-
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## DeploymentTargetsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DeploymentTargetsTypeDef
+
+def get_value() -> DeploymentTargetsTypeDef:
+    return {
+        "Accounts": ...,
+    }
 ```
 
-Optional fields:
-
-- `Accounts`: `Sequence`\[`str`\]
-- `AccountsUrl`: `str`
-- `OrganizationalUnitIds`: `Sequence`\[`str`\]
-
-<a id="deregistertypeinputrequesttypedef"></a>
+```python title="Definition"
+class DeploymentTargetsTypeDef(TypedDict):
+    Accounts: NotRequired[Sequence[str]],
+    AccountsUrl: NotRequired[str],
+    OrganizationalUnitIds: NotRequired[Sequence[str]],
+```
 
 ## DeregisterTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DeregisterTypeInputRequestTypeDef
+
+def get_value() -> DeregisterTypeInputRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeregisterTypeInputRequestTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Type: NotRequired[RegistryTypeType],  # (1)
+    TypeName: NotRequired[str],
+    VersionId: NotRequired[str],
+```
 
-- `Arn`: `str`
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `VersionId`: `str`
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+## DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef
 
-<a id="describeaccountlimitsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef
 
+def get_value() -> DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAccountLimitsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeAccountLimitsInputRequestTypeDef
+
+def get_value() -> DescribeAccountLimitsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="describeaccountlimitsoutputtypedef"></a>
+```python title="Definition"
+class DescribeAccountLimitsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## DescribeAccountLimitsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeAccountLimitsOutputTypeDef
+
+def get_value() -> DescribeAccountLimitsOutputTypeDef:
+    return {
+        "AccountLimits": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccountLimitsOutputTypeDef(TypedDict):
+    AccountLimits: List[AccountLimitTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountLimits`:
-  `List`\[[AccountLimitTypeDef](./type_defs.md#accountlimittypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describechangesethooksinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountLimitTypeDef](./type_defs.md#accountlimittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChangeSetHooksInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeChangeSetHooksInputRequestTypeDef
+
+def get_value() -> DescribeChangeSetHooksInputRequestTypeDef:
+    return {
+        "ChangeSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChangeSetName`: `str`
-
-Optional fields:
-
-- `StackName`: `str`
-- `NextToken`: `str`
-- `LogicalResourceId`: `str`
-
-<a id="describechangesethooksoutputtypedef"></a>
+```python title="Definition"
+class DescribeChangeSetHooksInputRequestTypeDef(TypedDict):
+    ChangeSetName: str,
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+    LogicalResourceId: NotRequired[str],
+```
 
 ## DescribeChangeSetHooksOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeChangeSetHooksOutputTypeDef
+
+def get_value() -> DescribeChangeSetHooksOutputTypeDef:
+    return {
+        "ChangeSetId": ...,
+        "ChangeSetName": ...,
+        "Hooks": ...,
+        "Status": ...,
+        "NextToken": ...,
+        "StackId": ...,
+        "StackName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChangeSetHooksOutputTypeDef(TypedDict):
+    ChangeSetId: str,
+    ChangeSetName: str,
+    Hooks: List[ChangeSetHookTypeDef],  # (1)
+    Status: ChangeSetHooksStatusType,  # (2)
+    NextToken: str,
+    StackId: str,
+    StackName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ChangeSetId`: `str`
-- `ChangeSetName`: `str`
-- `Hooks`:
-  `List`\[[ChangeSetHookTypeDef](./type_defs.md#changesethooktypedef)\]
-- `Status`: [ChangeSetHooksStatusType](./literals.md#changesethooksstatustype)
-- `NextToken`: `str`
-- `StackId`: `str`
-- `StackName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ChangeSetHookTypeDef](./type_defs.md#changesethooktypedef) 
+2. See [:material-code-brackets: ChangeSetHooksStatusType](./literals.md#changesethooksstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeChangeSetInputChangeSetCreateCompleteWaitTypeDef
 
-<a id="describechangesetinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeChangeSetInputChangeSetCreateCompleteWaitTypeDef
 
+def get_value() -> DescribeChangeSetInputChangeSetCreateCompleteWaitTypeDef:
+    return {
+        "ChangeSetName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeChangeSetInputChangeSetCreateCompleteWaitTypeDef(TypedDict):
+    ChangeSetName: str,
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeChangeSetInputDescribeChangeSetPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeChangeSetInputDescribeChangeSetPaginateTypeDef
+
+def get_value() -> DescribeChangeSetInputDescribeChangeSetPaginateTypeDef:
+    return {
+        "ChangeSetName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeChangeSetInputDescribeChangeSetPaginateTypeDef(TypedDict):
+    ChangeSetName: str,
+    StackName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeChangeSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeChangeSetInputRequestTypeDef
+
+def get_value() -> DescribeChangeSetInputRequestTypeDef:
+    return {
+        "ChangeSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChangeSetName`: `str`
-
-Optional fields:
-
-- `StackName`: `str`
-- `NextToken`: `str`
-
-<a id="describechangesetoutputtypedef"></a>
+```python title="Definition"
+class DescribeChangeSetInputRequestTypeDef(TypedDict):
+    ChangeSetName: str,
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeChangeSetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeChangeSetOutputTypeDef
+
+def get_value() -> DescribeChangeSetOutputTypeDef:
+    return {
+        "ChangeSetName": ...,
+        "ChangeSetId": ...,
+        "StackId": ...,
+        "StackName": ...,
+        "Description": ...,
+        "Parameters": ...,
+        "CreationTime": ...,
+        "ExecutionStatus": ...,
+        "Status": ...,
+        "StatusReason": ...,
+        "NotificationARNs": ...,
+        "RollbackConfiguration": ...,
+        "Capabilities": ...,
+        "Tags": ...,
+        "Changes": ...,
+        "NextToken": ...,
+        "IncludeNestedStacks": ...,
+        "ParentChangeSetId": ...,
+        "RootChangeSetId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChangeSetOutputTypeDef(TypedDict):
+    ChangeSetName: str,
+    ChangeSetId: str,
+    StackId: str,
+    StackName: str,
+    Description: str,
+    Parameters: List[ParameterTypeDef],  # (1)
+    CreationTime: datetime,
+    ExecutionStatus: ExecutionStatusType,  # (2)
+    Status: ChangeSetStatusType,  # (3)
+    StatusReason: str,
+    NotificationARNs: List[str],
+    RollbackConfiguration: RollbackConfigurationTypeDef,  # (4)
+    Capabilities: List[CapabilityType],  # (5)
+    Tags: List[TagTypeDef],  # (6)
+    Changes: List[ChangeTypeDef],  # (7)
+    NextToken: str,
+    IncludeNestedStacks: bool,
+    ParentChangeSetId: str,
+    RootChangeSetId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
 
-- `ChangeSetName`: `str`
-- `ChangeSetId`: `str`
-- `StackId`: `str`
-- `StackName`: `str`
-- `Description`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `CreationTime`: `datetime`
-- `ExecutionStatus`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `Status`: [ChangeSetStatusType](./literals.md#changesetstatustype)
-- `StatusReason`: `str`
-- `NotificationARNs`: `List`\[`str`\]
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Changes`: `List`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
-- `NextToken`: `str`
-- `IncludeNestedStacks`: `bool`
-- `ParentChangeSetId`: `str`
-- `RootChangeSetId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepublisherinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+3. See [:material-code-brackets: ChangeSetStatusType](./literals.md#changesetstatustype) 
+4. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+5. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: ChangeTypeDef](./type_defs.md#changetypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePublisherInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribePublisherInputRequestTypeDef
+
+def get_value() -> DescribePublisherInputRequestTypeDef:
+    return {
+        "PublisherId": ...,
+    }
 ```
 
-Optional fields:
-
-- `PublisherId`: `str`
-
-<a id="describepublisheroutputtypedef"></a>
+```python title="Definition"
+class DescribePublisherInputRequestTypeDef(TypedDict):
+    PublisherId: NotRequired[str],
+```
 
 ## DescribePublisherOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribePublisherOutputTypeDef
+
+def get_value() -> DescribePublisherOutputTypeDef:
+    return {
+        "PublisherId": ...,
+        "PublisherStatus": ...,
+        "IdentityProvider": ...,
+        "PublisherProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePublisherOutputTypeDef(TypedDict):
+    PublisherId: str,
+    PublisherStatus: PublisherStatusType,  # (1)
+    IdentityProvider: IdentityProviderType,  # (2)
+    PublisherProfile: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `PublisherId`: `str`
-- `PublisherStatus`: [PublisherStatusType](./literals.md#publisherstatustype)
-- `IdentityProvider`:
-  [IdentityProviderType](./literals.md#identityprovidertype)
-- `PublisherProfile`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestackdriftdetectionstatusinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: PublisherStatusType](./literals.md#publisherstatustype) 
+2. See [:material-code-brackets: IdentityProviderType](./literals.md#identityprovidertype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackDriftDetectionStatusInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackDriftDetectionStatusInputRequestTypeDef
+
+def get_value() -> DescribeStackDriftDetectionStatusInputRequestTypeDef:
+    return {
+        "StackDriftDetectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackDriftDetectionId`: `str`
-
-<a id="describestackdriftdetectionstatusoutputtypedef"></a>
+```python title="Definition"
+class DescribeStackDriftDetectionStatusInputRequestTypeDef(TypedDict):
+    StackDriftDetectionId: str,
+```
 
 ## DescribeStackDriftDetectionStatusOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackDriftDetectionStatusOutputTypeDef
+
+def get_value() -> DescribeStackDriftDetectionStatusOutputTypeDef:
+    return {
+        "StackId": ...,
+        "StackDriftDetectionId": ...,
+        "StackDriftStatus": ...,
+        "DetectionStatus": ...,
+        "DetectionStatusReason": ...,
+        "DriftedStackResourceCount": ...,
+        "Timestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackDriftDetectionStatusOutputTypeDef(TypedDict):
+    StackId: str,
+    StackDriftDetectionId: str,
+    StackDriftStatus: StackDriftStatusType,  # (1)
+    DetectionStatus: StackDriftDetectionStatusType,  # (2)
+    DetectionStatusReason: str,
+    DriftedStackResourceCount: int,
+    Timestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `StackId`: `str`
-- `StackDriftDetectionId`: `str`
-- `StackDriftStatus`:
-  [StackDriftStatusType](./literals.md#stackdriftstatustype)
-- `DetectionStatus`:
-  [StackDriftDetectionStatusType](./literals.md#stackdriftdetectionstatustype)
-- `DetectionStatusReason`: `str`
-- `DriftedStackResourceCount`: `int`
-- `Timestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: StackDriftStatusType](./literals.md#stackdriftstatustype) 
+2. See [:material-code-brackets: StackDriftDetectionStatusType](./literals.md#stackdriftdetectionstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeStackEventsInputDescribeStackEventsPaginateTypeDef
 
-<a id="describestackeventsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeStackEventsInputDescribeStackEventsPaginateTypeDef
 
+def get_value() -> DescribeStackEventsInputDescribeStackEventsPaginateTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStackEventsInputDescribeStackEventsPaginateTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeStackEventsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackEventsInputRequestTypeDef
+
+def get_value() -> DescribeStackEventsInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackName`: `str`
-- `NextToken`: `str`
-
-<a id="describestackeventsoutputtypedef"></a>
+```python title="Definition"
+class DescribeStackEventsInputRequestTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeStackEventsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackEventsOutputTypeDef
+
+def get_value() -> DescribeStackEventsOutputTypeDef:
+    return {
+        "StackEvents": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackEventsOutputTypeDef(TypedDict):
+    StackEvents: List[StackEventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackEvents`:
-  `List`\[[StackEventTypeDef](./type_defs.md#stackeventtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestackinstanceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StackEventTypeDef](./type_defs.md#stackeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackInstanceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackInstanceInputRequestTypeDef
+
+def get_value() -> DescribeStackInstanceInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+        "StackInstanceAccount": ...,
+        "StackInstanceRegion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackInstanceInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    StackInstanceAccount: str,
+    StackInstanceRegion: str,
+    CallAs: NotRequired[CallAsType],  # (1)
+```
 
-- `StackSetName`: `str`
-- `StackInstanceAccount`: `str`
-- `StackInstanceRegion`: `str`
-
-Optional fields:
-
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="describestackinstanceoutputtypedef"></a>
-
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## DescribeStackInstanceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackInstanceOutputTypeDef
+
+def get_value() -> DescribeStackInstanceOutputTypeDef:
+    return {
+        "StackInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackInstanceOutputTypeDef(TypedDict):
+    StackInstance: StackInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackInstance`: [StackInstanceTypeDef](./type_defs.md#stackinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestackresourcedriftsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StackInstanceTypeDef](./type_defs.md#stackinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackResourceDriftsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackResourceDriftsInputRequestTypeDef
+
+def get_value() -> DescribeStackResourceDriftsInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackResourceDriftsInputRequestTypeDef(TypedDict):
+    StackName: str,
+    StackResourceDriftStatusFilters: NotRequired[Sequence[StackResourceDriftStatusType]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `StackName`: `str`
-
-Optional fields:
-
-- `StackResourceDriftStatusFilters`:
-  `Sequence`\[[StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describestackresourcedriftsoutputtypedef"></a>
-
+1. See [:material-code-brackets: StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype) 
 ## DescribeStackResourceDriftsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackResourceDriftsOutputTypeDef
+
+def get_value() -> DescribeStackResourceDriftsOutputTypeDef:
+    return {
+        "StackResourceDrifts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackResourceDriftsOutputTypeDef(TypedDict):
+    StackResourceDrifts: List[StackResourceDriftTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackResourceDrifts`:
-  `List`\[[StackResourceDriftTypeDef](./type_defs.md#stackresourcedrifttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestackresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StackResourceDriftTypeDef](./type_defs.md#stackresourcedrifttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackResourceInputRequestTypeDef
+
+def get_value() -> DescribeStackResourceInputRequestTypeDef:
+    return {
+        "StackName": ...,
+        "LogicalResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-- `LogicalResourceId`: `str`
-
-<a id="describestackresourceoutputtypedef"></a>
+```python title="Definition"
+class DescribeStackResourceInputRequestTypeDef(TypedDict):
+    StackName: str,
+    LogicalResourceId: str,
+```
 
 ## DescribeStackResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackResourceOutputTypeDef
+
+def get_value() -> DescribeStackResourceOutputTypeDef:
+    return {
+        "StackResourceDetail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackResourceOutputTypeDef(TypedDict):
+    StackResourceDetail: StackResourceDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackResourceDetail`:
-  [StackResourceDetailTypeDef](./type_defs.md#stackresourcedetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestackresourcesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StackResourceDetailTypeDef](./type_defs.md#stackresourcedetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackResourcesInputRequestTypeDef
+
+def get_value() -> DescribeStackResourcesInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackName`: `str`
-- `LogicalResourceId`: `str`
-- `PhysicalResourceId`: `str`
-
-<a id="describestackresourcesoutputtypedef"></a>
+```python title="Definition"
+class DescribeStackResourcesInputRequestTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    LogicalResourceId: NotRequired[str],
+    PhysicalResourceId: NotRequired[str],
+```
 
 ## DescribeStackResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackResourcesOutputTypeDef
+
+def get_value() -> DescribeStackResourcesOutputTypeDef:
+    return {
+        "StackResources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackResourcesOutputTypeDef(TypedDict):
+    StackResources: List[StackResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackResources`:
-  `List`\[[StackResourceTypeDef](./type_defs.md#stackresourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestacksetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StackResourceTypeDef](./type_defs.md#stackresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackSetInputRequestTypeDef
+
+def get_value() -> DescribeStackSetInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackSetInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    CallAs: NotRequired[CallAsType],  # (1)
+```
 
-- `StackSetName`: `str`
-
-Optional fields:
-
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="describestacksetoperationinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## DescribeStackSetOperationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackSetOperationInputRequestTypeDef
+
+def get_value() -> DescribeStackSetOperationInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+        "OperationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackSetOperationInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    OperationId: str,
+    CallAs: NotRequired[CallAsType],  # (1)
+```
 
-- `StackSetName`: `str`
-- `OperationId`: `str`
-
-Optional fields:
-
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="describestacksetoperationoutputtypedef"></a>
-
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## DescribeStackSetOperationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackSetOperationOutputTypeDef
+
+def get_value() -> DescribeStackSetOperationOutputTypeDef:
+    return {
+        "StackSetOperation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackSetOperationOutputTypeDef(TypedDict):
+    StackSetOperation: StackSetOperationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackSetOperation`:
-  [StackSetOperationTypeDef](./type_defs.md#stacksetoperationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestacksetoutputtypedef"></a>
-
+1. See [:material-code-braces: StackSetOperationTypeDef](./type_defs.md#stacksetoperationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackSetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStackSetOutputTypeDef
+
+def get_value() -> DescribeStackSetOutputTypeDef:
+    return {
+        "StackSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackSetOutputTypeDef(TypedDict):
+    StackSet: StackSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackSet`: [StackSetTypeDef](./type_defs.md#stacksettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StackSetTypeDef](./type_defs.md#stacksettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeStacksInputDescribeStacksPaginateTypeDef
 
-<a id="describestacksinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeStacksInputDescribeStacksPaginateTypeDef
 
+def get_value() -> DescribeStacksInputDescribeStacksPaginateTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStacksInputDescribeStacksPaginateTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeStacksInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStacksInputRequestTypeDef
+
+def get_value() -> DescribeStacksInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeStacksInputRequestTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+```
 
-- `StackName`: `str`
-- `NextToken`: `str`
+## DescribeStacksInputStackCreateCompleteWaitTypeDef
 
-<a id="describestacksoutputtypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeStacksInputStackCreateCompleteWaitTypeDef
 
+def get_value() -> DescribeStacksInputStackCreateCompleteWaitTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStacksInputStackCreateCompleteWaitTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeStacksInputStackDeleteCompleteWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeStacksInputStackDeleteCompleteWaitTypeDef
+
+def get_value() -> DescribeStacksInputStackDeleteCompleteWaitTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStacksInputStackDeleteCompleteWaitTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeStacksInputStackExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeStacksInputStackExistsWaitTypeDef
+
+def get_value() -> DescribeStacksInputStackExistsWaitTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStacksInputStackExistsWaitTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeStacksInputStackImportCompleteWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeStacksInputStackImportCompleteWaitTypeDef
+
+def get_value() -> DescribeStacksInputStackImportCompleteWaitTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStacksInputStackImportCompleteWaitTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeStacksInputStackRollbackCompleteWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeStacksInputStackRollbackCompleteWaitTypeDef
+
+def get_value() -> DescribeStacksInputStackRollbackCompleteWaitTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStacksInputStackRollbackCompleteWaitTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeStacksInputStackUpdateCompleteWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeStacksInputStackUpdateCompleteWaitTypeDef
+
+def get_value() -> DescribeStacksInputStackUpdateCompleteWaitTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStacksInputStackUpdateCompleteWaitTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeStacksOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeStacksOutputTypeDef
+
+def get_value() -> DescribeStacksOutputTypeDef:
+    return {
+        "Stacks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStacksOutputTypeDef(TypedDict):
+    Stacks: List[StackTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Stacks`: `List`\[[StackTypeDef](./type_defs.md#stacktypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetypeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StackTypeDef](./type_defs.md#stacktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeTypeInputRequestTypeDef
+
+def get_value() -> DescribeTypeInputRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeTypeInputRequestTypeDef(TypedDict):
+    Type: NotRequired[RegistryTypeType],  # (1)
+    TypeName: NotRequired[str],
+    Arn: NotRequired[str],
+    VersionId: NotRequired[str],
+    PublisherId: NotRequired[str],
+    PublicVersionNumber: NotRequired[str],
+```
 
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `Arn`: `str`
-- `VersionId`: `str`
-- `PublisherId`: `str`
-- `PublicVersionNumber`: `str`
-
-<a id="describetypeoutputtypedef"></a>
-
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
 ## DescribeTypeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeTypeOutputTypeDef
+
+def get_value() -> DescribeTypeOutputTypeDef:
+    return {
+        "Arn": ...,
+        "Type": ...,
+        "TypeName": ...,
+        "DefaultVersionId": ...,
+        "IsDefaultVersion": ...,
+        "TypeTestsStatus": ...,
+        "TypeTestsStatusDescription": ...,
+        "Description": ...,
+        "Schema": ...,
+        "ProvisioningType": ...,
+        "DeprecatedStatus": ...,
+        "LoggingConfig": ...,
+        "RequiredActivatedTypes": ...,
+        "ExecutionRoleArn": ...,
+        "Visibility": ...,
+        "SourceUrl": ...,
+        "DocumentationUrl": ...,
+        "LastUpdated": ...,
+        "TimeCreated": ...,
+        "ConfigurationSchema": ...,
+        "PublisherId": ...,
+        "OriginalTypeName": ...,
+        "OriginalTypeArn": ...,
+        "PublicVersionNumber": ...,
+        "LatestPublicVersion": ...,
+        "IsActivated": ...,
+        "AutoUpdate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTypeOutputTypeDef(TypedDict):
+    Arn: str,
+    Type: RegistryTypeType,  # (1)
+    TypeName: str,
+    DefaultVersionId: str,
+    IsDefaultVersion: bool,
+    TypeTestsStatus: TypeTestsStatusType,  # (2)
+    TypeTestsStatusDescription: str,
+    Description: str,
+    Schema: str,
+    ProvisioningType: ProvisioningTypeType,  # (3)
+    DeprecatedStatus: DeprecatedStatusType,  # (4)
+    LoggingConfig: LoggingConfigTypeDef,  # (5)
+    RequiredActivatedTypes: List[RequiredActivatedTypeTypeDef],  # (6)
+    ExecutionRoleArn: str,
+    Visibility: VisibilityType,  # (7)
+    SourceUrl: str,
+    DocumentationUrl: str,
+    LastUpdated: datetime,
+    TimeCreated: datetime,
+    ConfigurationSchema: str,
+    PublisherId: str,
+    OriginalTypeName: str,
+    OriginalTypeArn: str,
+    PublicVersionNumber: str,
+    LatestPublicVersion: str,
+    IsActivated: bool,
+    AutoUpdate: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
 
-- `Arn`: `str`
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `DefaultVersionId`: `str`
-- `IsDefaultVersion`: `bool`
-- `TypeTestsStatus`: [TypeTestsStatusType](./literals.md#typetestsstatustype)
-- `TypeTestsStatusDescription`: `str`
-- `Description`: `str`
-- `Schema`: `str`
-- `ProvisioningType`:
-  [ProvisioningTypeType](./literals.md#provisioningtypetype)
-- `DeprecatedStatus`:
-  [DeprecatedStatusType](./literals.md#deprecatedstatustype)
-- `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `RequiredActivatedTypes`:
-  `List`\[[RequiredActivatedTypeTypeDef](./type_defs.md#requiredactivatedtypetypedef)\]
-- `ExecutionRoleArn`: `str`
-- `Visibility`: [VisibilityType](./literals.md#visibilitytype)
-- `SourceUrl`: `str`
-- `DocumentationUrl`: `str`
-- `LastUpdated`: `datetime`
-- `TimeCreated`: `datetime`
-- `ConfigurationSchema`: `str`
-- `PublisherId`: `str`
-- `OriginalTypeName`: `str`
-- `OriginalTypeArn`: `str`
-- `PublicVersionNumber`: `str`
-- `LatestPublicVersion`: `str`
-- `IsActivated`: `bool`
-- `AutoUpdate`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetyperegistrationinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+2. See [:material-code-brackets: TypeTestsStatusType](./literals.md#typetestsstatustype) 
+3. See [:material-code-brackets: ProvisioningTypeType](./literals.md#provisioningtypetype) 
+4. See [:material-code-brackets: DeprecatedStatusType](./literals.md#deprecatedstatustype) 
+5. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+6. See [:material-code-braces: RequiredActivatedTypeTypeDef](./type_defs.md#requiredactivatedtypetypedef) 
+7. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTypeRegistrationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeTypeRegistrationInputRequestTypeDef
+
+def get_value() -> DescribeTypeRegistrationInputRequestTypeDef:
+    return {
+        "RegistrationToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTypeRegistrationInputRequestTypeDef(TypedDict):
+    RegistrationToken: str,
+```
 
-- `RegistrationToken`: `str`
+## DescribeTypeRegistrationInputTypeRegistrationCompleteWaitTypeDef
 
-<a id="describetyperegistrationoutputtypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import DescribeTypeRegistrationInputTypeRegistrationCompleteWaitTypeDef
 
+def get_value() -> DescribeTypeRegistrationInputTypeRegistrationCompleteWaitTypeDef:
+    return {
+        "RegistrationToken": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTypeRegistrationInputTypeRegistrationCompleteWaitTypeDef(TypedDict):
+    RegistrationToken: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeTypeRegistrationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DescribeTypeRegistrationOutputTypeDef
+
+def get_value() -> DescribeTypeRegistrationOutputTypeDef:
+    return {
+        "ProgressStatus": ...,
+        "Description": ...,
+        "TypeArn": ...,
+        "TypeVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTypeRegistrationOutputTypeDef(TypedDict):
+    ProgressStatus: RegistrationStatusType,  # (1)
+    Description: str,
+    TypeArn: str,
+    TypeVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProgressStatus`:
-  [RegistrationStatusType](./literals.md#registrationstatustype)
-- `Description`: `str`
-- `TypeArn`: `str`
-- `TypeVersionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectstackdriftinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: RegistrationStatusType](./literals.md#registrationstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectStackDriftInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DetectStackDriftInputRequestTypeDef
+
+def get_value() -> DetectStackDriftInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-
-Optional fields:
-
-- `LogicalResourceIds`: `Sequence`\[`str`\]
-
-<a id="detectstackdriftoutputtypedef"></a>
+```python title="Definition"
+class DetectStackDriftInputRequestTypeDef(TypedDict):
+    StackName: str,
+    LogicalResourceIds: NotRequired[Sequence[str]],
+```
 
 ## DetectStackDriftOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DetectStackDriftOutputTypeDef
+
+def get_value() -> DetectStackDriftOutputTypeDef:
+    return {
+        "StackDriftDetectionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectStackDriftOutputTypeDef(TypedDict):
+    StackDriftDetectionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StackDriftDetectionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectstackresourcedriftinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectStackResourceDriftInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DetectStackResourceDriftInputRequestTypeDef
+
+def get_value() -> DetectStackResourceDriftInputRequestTypeDef:
+    return {
+        "StackName": ...,
+        "LogicalResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-- `LogicalResourceId`: `str`
-
-<a id="detectstackresourcedriftoutputtypedef"></a>
+```python title="Definition"
+class DetectStackResourceDriftInputRequestTypeDef(TypedDict):
+    StackName: str,
+    LogicalResourceId: str,
+```
 
 ## DetectStackResourceDriftOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DetectStackResourceDriftOutputTypeDef
+
+def get_value() -> DetectStackResourceDriftOutputTypeDef:
+    return {
+        "StackResourceDrift": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectStackResourceDriftOutputTypeDef(TypedDict):
+    StackResourceDrift: StackResourceDriftTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackResourceDrift`:
-  [StackResourceDriftTypeDef](./type_defs.md#stackresourcedrifttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectstacksetdriftinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StackResourceDriftTypeDef](./type_defs.md#stackresourcedrifttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectStackSetDriftInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DetectStackSetDriftInputRequestTypeDef
+
+def get_value() -> DetectStackSetDriftInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectStackSetDriftInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (1)
+    OperationId: NotRequired[str],
+    CallAs: NotRequired[CallAsType],  # (2)
+```
 
-- `StackSetName`: `str`
-
-Optional fields:
-
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="detectstacksetdriftoutputtypedef"></a>
-
+1. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## DetectStackSetDriftOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import DetectStackSetDriftOutputTypeDef
+
+def get_value() -> DetectStackSetDriftOutputTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectStackSetDriftOutputTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="estimatetemplatecostinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EstimateTemplateCostInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import EstimateTemplateCostInputRequestTypeDef
+
+def get_value() -> EstimateTemplateCostInputRequestTypeDef:
+    return {
+        "TemplateBody": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EstimateTemplateCostInputRequestTypeDef(TypedDict):
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+```
 
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-
-<a id="estimatetemplatecostoutputtypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 ## EstimateTemplateCostOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import EstimateTemplateCostOutputTypeDef
+
+def get_value() -> EstimateTemplateCostOutputTypeDef:
+    return {
+        "Url": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EstimateTemplateCostOutputTypeDef(TypedDict):
+    Url: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Url`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="executechangesetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExecuteChangeSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ExecuteChangeSetInputRequestTypeDef
+
+def get_value() -> ExecuteChangeSetInputRequestTypeDef:
+    return {
+        "ChangeSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChangeSetName`: `str`
-
-Optional fields:
-
-- `StackName`: `str`
-- `ClientRequestToken`: `str`
-- `DisableRollback`: `bool`
-
-<a id="exporttypedef"></a>
+```python title="Definition"
+class ExecuteChangeSetInputRequestTypeDef(TypedDict):
+    ChangeSetName: str,
+    StackName: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    DisableRollback: NotRequired[bool],
+```
 
 ## ExportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ExportTypeDef
+
+def get_value() -> ExportTypeDef:
+    return {
+        "ExportingStackId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExportingStackId`: `str`
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="getstackpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class ExportTypeDef(TypedDict):
+    ExportingStackId: NotRequired[str],
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## GetStackPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import GetStackPolicyInputRequestTypeDef
+
+def get_value() -> GetStackPolicyInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-
-<a id="getstackpolicyoutputtypedef"></a>
+```python title="Definition"
+class GetStackPolicyInputRequestTypeDef(TypedDict):
+    StackName: str,
+```
 
 ## GetStackPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import GetStackPolicyOutputTypeDef
+
+def get_value() -> GetStackPolicyOutputTypeDef:
+    return {
+        "StackPolicyBody": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStackPolicyOutputTypeDef(TypedDict):
+    StackPolicyBody: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StackPolicyBody`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import GetTemplateInputRequestTypeDef
+
+def get_value() -> GetTemplateInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetTemplateInputRequestTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    ChangeSetName: NotRequired[str],
+    TemplateStage: NotRequired[TemplateStageType],  # (1)
+```
 
-- `StackName`: `str`
-- `ChangeSetName`: `str`
-- `TemplateStage`: [TemplateStageType](./literals.md#templatestagetype)
-
-<a id="gettemplateoutputtypedef"></a>
-
+1. See [:material-code-brackets: TemplateStageType](./literals.md#templatestagetype) 
 ## GetTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import GetTemplateOutputTypeDef
+
+def get_value() -> GetTemplateOutputTypeDef:
+    return {
+        "TemplateBody": ...,
+        "StagesAvailable": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemplateOutputTypeDef(TypedDict):
+    TemplateBody: str,
+    StagesAvailable: List[TemplateStageType],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TemplateBody`: `str`
-- `StagesAvailable`:
-  `List`\[[TemplateStageType](./literals.md#templatestagetype)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettemplatesummaryinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: TemplateStageType](./literals.md#templatestagetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTemplateSummaryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import GetTemplateSummaryInputRequestTypeDef
+
+def get_value() -> GetTemplateSummaryInputRequestTypeDef:
+    return {
+        "TemplateBody": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetTemplateSummaryInputRequestTypeDef(TypedDict):
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+    StackName: NotRequired[str],
+    StackSetName: NotRequired[str],
+    CallAs: NotRequired[CallAsType],  # (1)
+```
 
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `StackName`: `str`
-- `StackSetName`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="gettemplatesummaryoutputtypedef"></a>
-
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## GetTemplateSummaryOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import GetTemplateSummaryOutputTypeDef
+
+def get_value() -> GetTemplateSummaryOutputTypeDef:
+    return {
+        "Parameters": ...,
+        "Description": ...,
+        "Capabilities": ...,
+        "CapabilitiesReason": ...,
+        "ResourceTypes": ...,
+        "Version": ...,
+        "Metadata": ...,
+        "DeclaredTransforms": ...,
+        "ResourceIdentifierSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemplateSummaryOutputTypeDef(TypedDict):
+    Parameters: List[ParameterDeclarationTypeDef],  # (1)
+    Description: str,
+    Capabilities: List[CapabilityType],  # (2)
+    CapabilitiesReason: str,
+    ResourceTypes: List[str],
+    Version: str,
+    Metadata: str,
+    DeclaredTransforms: List[str],
+    ResourceIdentifierSummaries: List[ResourceIdentifierSummaryTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Parameters`:
-  `List`\[[ParameterDeclarationTypeDef](./type_defs.md#parameterdeclarationtypedef)\]
-- `Description`: `str`
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `CapabilitiesReason`: `str`
-- `ResourceTypes`: `List`\[`str`\]
-- `Version`: `str`
-- `Metadata`: `str`
-- `DeclaredTransforms`: `List`\[`str`\]
-- `ResourceIdentifierSummaries`:
-  `List`\[[ResourceIdentifierSummaryTypeDef](./type_defs.md#resourceidentifiersummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="importstackstostacksetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterDeclarationTypeDef](./type_defs.md#parameterdeclarationtypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: ResourceIdentifierSummaryTypeDef](./type_defs.md#resourceidentifiersummarytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportStacksToStackSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ImportStacksToStackSetInputRequestTypeDef
+
+def get_value() -> ImportStacksToStackSetInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportStacksToStackSetInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    StackIds: NotRequired[Sequence[str]],
+    StackIdsUrl: NotRequired[str],
+    OrganizationalUnitIds: NotRequired[Sequence[str]],
+    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (1)
+    OperationId: NotRequired[str],
+    CallAs: NotRequired[CallAsType],  # (2)
+```
 
-- `StackSetName`: `str`
-
-Optional fields:
-
-- `StackIds`: `Sequence`\[`str`\]
-- `StackIdsUrl`: `str`
-- `OrganizationalUnitIds`: `Sequence`\[`str`\]
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="importstackstostacksetoutputtypedef"></a>
-
+1. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## ImportStacksToStackSetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ImportStacksToStackSetOutputTypeDef
+
+def get_value() -> ImportStacksToStackSetOutputTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportStacksToStackSetOutputTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChangeSetsInputListChangeSetsPaginateTypeDef
 
-<a id="listchangesetsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListChangeSetsInputListChangeSetsPaginateTypeDef
 
+def get_value() -> ListChangeSetsInputListChangeSetsPaginateTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class ListChangeSetsInputListChangeSetsPaginateTypeDef(TypedDict):
+    StackName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListChangeSetsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListChangeSetsInputRequestTypeDef
+
+def get_value() -> ListChangeSetsInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listchangesetsoutputtypedef"></a>
+```python title="Definition"
+class ListChangeSetsInputRequestTypeDef(TypedDict):
+    StackName: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListChangeSetsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListChangeSetsOutputTypeDef
+
+def get_value() -> ListChangeSetsOutputTypeDef:
+    return {
+        "Summaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChangeSetsOutputTypeDef(TypedDict):
+    Summaries: List[ChangeSetSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Summaries`:
-  `List`\[[ChangeSetSummaryTypeDef](./type_defs.md#changesetsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ChangeSetSummaryTypeDef](./type_defs.md#changesetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListExportsInputListExportsPaginateTypeDef
 
-<a id="listexportsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListExportsInputListExportsPaginateTypeDef
 
+def get_value() -> ListExportsInputListExportsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListExportsInputListExportsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListExportsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListExportsInputRequestTypeDef
+
+def get_value() -> ListExportsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listexportsoutputtypedef"></a>
+```python title="Definition"
+class ListExportsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListExportsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListExportsOutputTypeDef
+
+def get_value() -> ListExportsOutputTypeDef:
+    return {
+        "Exports": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExportsOutputTypeDef(TypedDict):
+    Exports: List[ExportTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Exports`: `List`\[[ExportTypeDef](./type_defs.md#exporttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ExportTypeDef](./type_defs.md#exporttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListImportsInputListImportsPaginateTypeDef
 
-<a id="listimportsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListImportsInputListImportsPaginateTypeDef
 
+def get_value() -> ListImportsInputListImportsPaginateTypeDef:
+    return {
+        "ExportName": ...,
+    }
+```
+
+```python title="Definition"
+class ListImportsInputListImportsPaginateTypeDef(TypedDict):
+    ExportName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListImportsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListImportsInputRequestTypeDef
+
+def get_value() -> ListImportsInputRequestTypeDef:
+    return {
+        "ExportName": ...,
+    }
 ```
 
-Required fields:
-
-- `ExportName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listimportsoutputtypedef"></a>
+```python title="Definition"
+class ListImportsInputRequestTypeDef(TypedDict):
+    ExportName: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListImportsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListImportsOutputTypeDef
+
+def get_value() -> ListImportsOutputTypeDef:
+    return {
+        "Imports": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListImportsOutputTypeDef(TypedDict):
+    Imports: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Imports`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStackInstancesInputListStackInstancesPaginateTypeDef
 
-<a id="liststackinstancesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListStackInstancesInputListStackInstancesPaginateTypeDef
 
+def get_value() -> ListStackInstancesInputListStackInstancesPaginateTypeDef:
+    return {
+        "StackSetName": ...,
+    }
+```
+
+```python title="Definition"
+class ListStackInstancesInputListStackInstancesPaginateTypeDef(TypedDict):
+    StackSetName: str,
+    Filters: NotRequired[Sequence[StackInstanceFilterTypeDef]],  # (1)
+    StackInstanceAccount: NotRequired[str],
+    StackInstanceRegion: NotRequired[str],
+    CallAs: NotRequired[CallAsType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStackInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackInstancesInputRequestTypeDef
+
+def get_value() -> ListStackInstancesInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStackInstancesInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[StackInstanceFilterTypeDef]],  # (1)
+    StackInstanceAccount: NotRequired[str],
+    StackInstanceRegion: NotRequired[str],
+    CallAs: NotRequired[CallAsType],  # (2)
+```
 
-- `StackSetName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`:
-  `Sequence`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
-- `StackInstanceAccount`: `str`
-- `StackInstanceRegion`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="liststackinstancesoutputtypedef"></a>
-
+1. See [:material-code-braces: StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## ListStackInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackInstancesOutputTypeDef
+
+def get_value() -> ListStackInstancesOutputTypeDef:
+    return {
+        "Summaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStackInstancesOutputTypeDef(TypedDict):
+    Summaries: List[StackInstanceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Summaries`:
-  `List`\[[StackInstanceSummaryTypeDef](./type_defs.md#stackinstancesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StackInstanceSummaryTypeDef](./type_defs.md#stackinstancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStackResourcesInputListStackResourcesPaginateTypeDef
 
-<a id="liststackresourcesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListStackResourcesInputListStackResourcesPaginateTypeDef
 
+def get_value() -> ListStackResourcesInputListStackResourcesPaginateTypeDef:
+    return {
+        "StackName": ...,
+    }
+```
+
+```python title="Definition"
+class ListStackResourcesInputListStackResourcesPaginateTypeDef(TypedDict):
+    StackName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStackResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackResourcesInputRequestTypeDef
+
+def get_value() -> ListStackResourcesInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="liststackresourcesoutputtypedef"></a>
+```python title="Definition"
+class ListStackResourcesInputRequestTypeDef(TypedDict):
+    StackName: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListStackResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackResourcesOutputTypeDef
+
+def get_value() -> ListStackResourcesOutputTypeDef:
+    return {
+        "StackResourceSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStackResourcesOutputTypeDef(TypedDict):
+    StackResourceSummaries: List[StackResourceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackResourceSummaries`:
-  `List`\[[StackResourceSummaryTypeDef](./type_defs.md#stackresourcesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StackResourceSummaryTypeDef](./type_defs.md#stackresourcesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef
 
-<a id="liststacksetoperationresultsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef
 
+def get_value() -> ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef:
+    return {
+        "StackSetName": ...,
+        "OperationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef(TypedDict):
+    StackSetName: str,
+    OperationId: str,
+    CallAs: NotRequired[CallAsType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStackSetOperationResultsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsInputRequestTypeDef
+
+def get_value() -> ListStackSetOperationResultsInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+        "OperationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStackSetOperationResultsInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    OperationId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    CallAs: NotRequired[CallAsType],  # (1)
+```
 
-- `StackSetName`: `str`
-- `OperationId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="liststacksetoperationresultsoutputtypedef"></a>
-
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## ListStackSetOperationResultsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackSetOperationResultsOutputTypeDef
+
+def get_value() -> ListStackSetOperationResultsOutputTypeDef:
+    return {
+        "Summaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStackSetOperationResultsOutputTypeDef(TypedDict):
+    Summaries: List[StackSetOperationResultSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Summaries`:
-  `List`\[[StackSetOperationResultSummaryTypeDef](./type_defs.md#stacksetoperationresultsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StackSetOperationResultSummaryTypeDef](./type_defs.md#stacksetoperationresultsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStackSetOperationsInputListStackSetOperationsPaginateTypeDef
 
-<a id="liststacksetoperationsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListStackSetOperationsInputListStackSetOperationsPaginateTypeDef
 
+def get_value() -> ListStackSetOperationsInputListStackSetOperationsPaginateTypeDef:
+    return {
+        "StackSetName": ...,
+    }
+```
+
+```python title="Definition"
+class ListStackSetOperationsInputListStackSetOperationsPaginateTypeDef(TypedDict):
+    StackSetName: str,
+    CallAs: NotRequired[CallAsType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStackSetOperationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackSetOperationsInputRequestTypeDef
+
+def get_value() -> ListStackSetOperationsInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStackSetOperationsInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    CallAs: NotRequired[CallAsType],  # (1)
+```
 
-- `StackSetName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="liststacksetoperationsoutputtypedef"></a>
-
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## ListStackSetOperationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackSetOperationsOutputTypeDef
+
+def get_value() -> ListStackSetOperationsOutputTypeDef:
+    return {
+        "Summaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStackSetOperationsOutputTypeDef(TypedDict):
+    Summaries: List[StackSetOperationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Summaries`:
-  `List`\[[StackSetOperationSummaryTypeDef](./type_defs.md#stacksetoperationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StackSetOperationSummaryTypeDef](./type_defs.md#stacksetoperationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStackSetsInputListStackSetsPaginateTypeDef
 
-<a id="liststacksetsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListStackSetsInputListStackSetsPaginateTypeDef
 
+def get_value() -> ListStackSetsInputListStackSetsPaginateTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class ListStackSetsInputListStackSetsPaginateTypeDef(TypedDict):
+    Status: NotRequired[StackSetStatusType],  # (1)
+    CallAs: NotRequired[CallAsType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: StackSetStatusType](./literals.md#stacksetstatustype) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStackSetsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackSetsInputRequestTypeDef
+
+def get_value() -> ListStackSetsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListStackSetsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Status: NotRequired[StackSetStatusType],  # (1)
+    CallAs: NotRequired[CallAsType],  # (2)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Status`: [StackSetStatusType](./literals.md#stacksetstatustype)
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="liststacksetsoutputtypedef"></a>
-
+1. See [:material-code-brackets: StackSetStatusType](./literals.md#stacksetstatustype) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## ListStackSetsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStackSetsOutputTypeDef
+
+def get_value() -> ListStackSetsOutputTypeDef:
+    return {
+        "Summaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStackSetsOutputTypeDef(TypedDict):
+    Summaries: List[StackSetSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Summaries`:
-  `List`\[[StackSetSummaryTypeDef](./type_defs.md#stacksetsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StackSetSummaryTypeDef](./type_defs.md#stacksetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStacksInputListStacksPaginateTypeDef
 
-<a id="liststacksinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListStacksInputListStacksPaginateTypeDef
 
+def get_value() -> ListStacksInputListStacksPaginateTypeDef:
+    return {
+        "StackStatusFilter": ...,
+    }
+```
+
+```python title="Definition"
+class ListStacksInputListStacksPaginateTypeDef(TypedDict):
+    StackStatusFilter: NotRequired[Sequence[StackStatusType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: StackStatusType](./literals.md#stackstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStacksInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStacksInputRequestTypeDef
+
+def get_value() -> ListStacksInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListStacksInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    StackStatusFilter: NotRequired[Sequence[StackStatusType]],  # (1)
+```
 
-- `NextToken`: `str`
-- `StackStatusFilter`:
-  `Sequence`\[[StackStatusType](./literals.md#stackstatustype)\]
-
-<a id="liststacksoutputtypedef"></a>
-
+1. See [:material-code-brackets: StackStatusType](./literals.md#stackstatustype) 
 ## ListStacksOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListStacksOutputTypeDef
+
+def get_value() -> ListStacksOutputTypeDef:
+    return {
+        "StackSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStacksOutputTypeDef(TypedDict):
+    StackSummaries: List[StackSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackSummaries`:
-  `List`\[[StackSummaryTypeDef](./type_defs.md#stacksummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtyperegistrationsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StackSummaryTypeDef](./type_defs.md#stacksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTypeRegistrationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListTypeRegistrationsInputRequestTypeDef
+
+def get_value() -> ListTypeRegistrationsInputRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTypeRegistrationsInputRequestTypeDef(TypedDict):
+    Type: NotRequired[RegistryTypeType],  # (1)
+    TypeName: NotRequired[str],
+    TypeArn: NotRequired[str],
+    RegistrationStatusFilter: NotRequired[RegistrationStatusType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `TypeArn`: `str`
-- `RegistrationStatusFilter`:
-  [RegistrationStatusType](./literals.md#registrationstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listtyperegistrationsoutputtypedef"></a>
-
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+2. See [:material-code-brackets: RegistrationStatusType](./literals.md#registrationstatustype) 
 ## ListTypeRegistrationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListTypeRegistrationsOutputTypeDef
+
+def get_value() -> ListTypeRegistrationsOutputTypeDef:
+    return {
+        "RegistrationTokenList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTypeRegistrationsOutputTypeDef(TypedDict):
+    RegistrationTokenList: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RegistrationTokenList`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtypeversionsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTypeVersionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListTypeVersionsInputRequestTypeDef
+
+def get_value() -> ListTypeVersionsInputRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTypeVersionsInputRequestTypeDef(TypedDict):
+    Type: NotRequired[RegistryTypeType],  # (1)
+    TypeName: NotRequired[str],
+    Arn: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    DeprecatedStatus: NotRequired[DeprecatedStatusType],  # (2)
+    PublisherId: NotRequired[str],
+```
 
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `Arn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `DeprecatedStatus`:
-  [DeprecatedStatusType](./literals.md#deprecatedstatustype)
-- `PublisherId`: `str`
-
-<a id="listtypeversionsoutputtypedef"></a>
-
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+2. See [:material-code-brackets: DeprecatedStatusType](./literals.md#deprecatedstatustype) 
 ## ListTypeVersionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListTypeVersionsOutputTypeDef
+
+def get_value() -> ListTypeVersionsOutputTypeDef:
+    return {
+        "TypeVersionSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTypeVersionsOutputTypeDef(TypedDict):
+    TypeVersionSummaries: List[TypeVersionSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TypeVersionSummaries`:
-  `List`\[[TypeVersionSummaryTypeDef](./type_defs.md#typeversionsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TypeVersionSummaryTypeDef](./type_defs.md#typeversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTypesInputListTypesPaginateTypeDef
 
-<a id="listtypesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudformation.type_defs import ListTypesInputListTypesPaginateTypeDef
 
+def get_value() -> ListTypesInputListTypesPaginateTypeDef:
+    return {
+        "Visibility": ...,
+    }
+```
+
+```python title="Definition"
+class ListTypesInputListTypesPaginateTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    ProvisioningType: NotRequired[ProvisioningTypeType],  # (2)
+    DeprecatedStatus: NotRequired[DeprecatedStatusType],  # (3)
+    Type: NotRequired[RegistryTypeType],  # (4)
+    Filters: NotRequired[TypeFiltersTypeDef],  # (5)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (6)
+```
+
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: ProvisioningTypeType](./literals.md#provisioningtypetype) 
+3. See [:material-code-brackets: DeprecatedStatusType](./literals.md#deprecatedstatustype) 
+4. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+5. See [:material-code-braces: TypeFiltersTypeDef](./type_defs.md#typefilterstypedef) 
+6. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTypesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListTypesInputRequestTypeDef
+
+def get_value() -> ListTypesInputRequestTypeDef:
+    return {
+        "Visibility": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTypesInputRequestTypeDef(TypedDict):
+    Visibility: NotRequired[VisibilityType],  # (1)
+    ProvisioningType: NotRequired[ProvisioningTypeType],  # (2)
+    DeprecatedStatus: NotRequired[DeprecatedStatusType],  # (3)
+    Type: NotRequired[RegistryTypeType],  # (4)
+    Filters: NotRequired[TypeFiltersTypeDef],  # (5)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Visibility`: [VisibilityType](./literals.md#visibilitytype)
-- `ProvisioningType`:
-  [ProvisioningTypeType](./literals.md#provisioningtypetype)
-- `DeprecatedStatus`:
-  [DeprecatedStatusType](./literals.md#deprecatedstatustype)
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `Filters`: [TypeFiltersTypeDef](./type_defs.md#typefilterstypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listtypesoutputtypedef"></a>
-
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: ProvisioningTypeType](./literals.md#provisioningtypetype) 
+3. See [:material-code-brackets: DeprecatedStatusType](./literals.md#deprecatedstatustype) 
+4. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+5. See [:material-code-braces: TypeFiltersTypeDef](./type_defs.md#typefilterstypedef) 
 ## ListTypesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ListTypesOutputTypeDef
+
+def get_value() -> ListTypesOutputTypeDef:
+    return {
+        "TypeSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTypesOutputTypeDef(TypedDict):
+    TypeSummaries: List[TypeSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TypeSummaries`:
-  `List`\[[TypeSummaryTypeDef](./type_defs.md#typesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loggingconfigtypedef"></a>
-
+1. See [:material-code-braces: TypeSummaryTypeDef](./type_defs.md#typesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import LoggingConfigTypeDef
+
+def get_value() -> LoggingConfigTypeDef:
+    return {
+        "LogRoleArn": ...,
+        "LogGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `LogRoleArn`: `str`
-- `LogGroupName`: `str`
-
-<a id="managedexecutiontypedef"></a>
+```python title="Definition"
+class LoggingConfigTypeDef(TypedDict):
+    LogRoleArn: str,
+    LogGroupName: str,
+```
 
 ## ManagedExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ManagedExecutionTypeDef
+
+def get_value() -> ManagedExecutionTypeDef:
+    return {
+        "Active": ...,
+    }
 ```
 
-Optional fields:
-
-- `Active`: `bool`
-
-<a id="moduleinforesponsemetadatatypedef"></a>
+```python title="Definition"
+class ManagedExecutionTypeDef(TypedDict):
+    Active: NotRequired[bool],
+```
 
 ## ModuleInfoResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ModuleInfoResponseMetadataTypeDef
+
+def get_value() -> ModuleInfoResponseMetadataTypeDef:
+    return {
+        "TypeHierarchy": ...,
+        "LogicalIdHierarchy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModuleInfoResponseMetadataTypeDef(TypedDict):
+    TypeHierarchy: str,
+    LogicalIdHierarchy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TypeHierarchy`: `str`
-- `LogicalIdHierarchy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="moduleinfotypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModuleInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ModuleInfoTypeDef
+
+def get_value() -> ModuleInfoTypeDef:
+    return {
+        "TypeHierarchy": ...,
+    }
 ```
 
-Optional fields:
-
-- `TypeHierarchy`: `str`
-- `LogicalIdHierarchy`: `str`
-
-<a id="outputtypedef"></a>
+```python title="Definition"
+class ModuleInfoTypeDef(TypedDict):
+    TypeHierarchy: NotRequired[str],
+    LogicalIdHierarchy: NotRequired[str],
+```
 
 ## OutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import OutputTypeDef
+
+def get_value() -> OutputTypeDef:
+    return {
+        "OutputKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `OutputKey`: `str`
-- `OutputValue`: `str`
-- `Description`: `str`
-- `ExportName`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OutputTypeDef(TypedDict):
+    OutputKey: NotRequired[str],
+    OutputValue: NotRequired[str],
+    Description: NotRequired[str],
+    ExportName: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parameterconstraintstypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterConstraintsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ParameterConstraintsTypeDef
+
+def get_value() -> ParameterConstraintsTypeDef:
+    return {
+        "AllowedValues": ...,
+    }
 ```
 
-Optional fields:
-
-- `AllowedValues`: `List`\[`str`\]
-
-<a id="parameterdeclarationtypedef"></a>
+```python title="Definition"
+class ParameterConstraintsTypeDef(TypedDict):
+    AllowedValues: NotRequired[List[str]],
+```
 
 ## ParameterDeclarationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ParameterDeclarationTypeDef
+
+def get_value() -> ParameterDeclarationTypeDef:
+    return {
+        "ParameterKey": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParameterDeclarationTypeDef(TypedDict):
+    ParameterKey: NotRequired[str],
+    DefaultValue: NotRequired[str],
+    ParameterType: NotRequired[str],
+    NoEcho: NotRequired[bool],
+    Description: NotRequired[str],
+    ParameterConstraints: NotRequired[ParameterConstraintsTypeDef],  # (1)
+```
 
-- `ParameterKey`: `str`
-- `DefaultValue`: `str`
-- `ParameterType`: `str`
-- `NoEcho`: `bool`
-- `Description`: `str`
-- `ParameterConstraints`:
-  [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)
-
-<a id="parametertypedef"></a>
-
+1. See [:material-code-braces: ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef) 
 ## ParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ParameterTypeDef
+
+def get_value() -> ParameterTypeDef:
+    return {
+        "ParameterKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterKey`: `str`
-- `ParameterValue`: `str`
-- `UsePreviousValue`: `bool`
-- `ResolvedValue`: `str`
-
-<a id="physicalresourceidcontextkeyvaluepairtypedef"></a>
+```python title="Definition"
+class ParameterTypeDef(TypedDict):
+    ParameterKey: NotRequired[str],
+    ParameterValue: NotRequired[str],
+    UsePreviousValue: NotRequired[bool],
+    ResolvedValue: NotRequired[str],
+```
 
 ## PhysicalResourceIdContextKeyValuePairTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import PhysicalResourceIdContextKeyValuePairTypeDef
+
+def get_value() -> PhysicalResourceIdContextKeyValuePairTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="propertydifferencetypedef"></a>
+```python title="Definition"
+class PhysicalResourceIdContextKeyValuePairTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## PropertyDifferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import PropertyDifferenceTypeDef
+
+def get_value() -> PropertyDifferenceTypeDef:
+    return {
+        "PropertyPath": ...,
+        "ExpectedValue": ...,
+        "ActualValue": ...,
+        "DifferenceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PropertyDifferenceTypeDef(TypedDict):
+    PropertyPath: str,
+    ExpectedValue: str,
+    ActualValue: str,
+    DifferenceType: DifferenceTypeType,  # (1)
+```
 
-- `PropertyPath`: `str`
-- `ExpectedValue`: `str`
-- `ActualValue`: `str`
-- `DifferenceType`: [DifferenceTypeType](./literals.md#differencetypetype)
-
-<a id="publishtypeinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: DifferenceTypeType](./literals.md#differencetypetype) 
 ## PublishTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import PublishTypeInputRequestTypeDef
+
+def get_value() -> PublishTypeInputRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PublishTypeInputRequestTypeDef(TypedDict):
+    Type: NotRequired[ThirdPartyTypeType],  # (1)
+    Arn: NotRequired[str],
+    TypeName: NotRequired[str],
+    PublicVersionNumber: NotRequired[str],
+```
 
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-- `Arn`: `str`
-- `TypeName`: `str`
-- `PublicVersionNumber`: `str`
-
-<a id="publishtypeoutputtypedef"></a>
-
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
 ## PublishTypeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import PublishTypeOutputTypeDef
+
+def get_value() -> PublishTypeOutputTypeDef:
+    return {
+        "PublicTypeArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishTypeOutputTypeDef(TypedDict):
+    PublicTypeArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PublicTypeArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="recordhandlerprogressinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecordHandlerProgressInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RecordHandlerProgressInputRequestTypeDef
+
+def get_value() -> RecordHandlerProgressInputRequestTypeDef:
+    return {
+        "BearerToken": ...,
+        "OperationStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecordHandlerProgressInputRequestTypeDef(TypedDict):
+    BearerToken: str,
+    OperationStatus: OperationStatusType,  # (1)
+    CurrentOperationStatus: NotRequired[OperationStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    ErrorCode: NotRequired[HandlerErrorCodeType],  # (3)
+    ResourceModel: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+```
 
-- `BearerToken`: `str`
-- `OperationStatus`: [OperationStatusType](./literals.md#operationstatustype)
-
-Optional fields:
-
-- `CurrentOperationStatus`:
-  [OperationStatusType](./literals.md#operationstatustype)
-- `StatusMessage`: `str`
-- `ErrorCode`: [HandlerErrorCodeType](./literals.md#handlererrorcodetype)
-- `ResourceModel`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="registerpublisherinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+2. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+3. See [:material-code-brackets: HandlerErrorCodeType](./literals.md#handlererrorcodetype) 
 ## RegisterPublisherInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RegisterPublisherInputRequestTypeDef
+
+def get_value() -> RegisterPublisherInputRequestTypeDef:
+    return {
+        "AcceptTermsAndConditions": ...,
+    }
 ```
 
-Optional fields:
-
-- `AcceptTermsAndConditions`: `bool`
-- `ConnectionArn`: `str`
-
-<a id="registerpublisheroutputtypedef"></a>
+```python title="Definition"
+class RegisterPublisherInputRequestTypeDef(TypedDict):
+    AcceptTermsAndConditions: NotRequired[bool],
+    ConnectionArn: NotRequired[str],
+```
 
 ## RegisterPublisherOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RegisterPublisherOutputTypeDef
+
+def get_value() -> RegisterPublisherOutputTypeDef:
+    return {
+        "PublisherId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterPublisherOutputTypeDef(TypedDict):
+    PublisherId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PublisherId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registertypeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RegisterTypeInputRequestTypeDef
+
+def get_value() -> RegisterTypeInputRequestTypeDef:
+    return {
+        "TypeName": ...,
+        "SchemaHandlerPackage": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterTypeInputRequestTypeDef(TypedDict):
+    TypeName: str,
+    SchemaHandlerPackage: str,
+    Type: NotRequired[RegistryTypeType],  # (1)
+    LoggingConfig: NotRequired[LoggingConfigTypeDef],  # (2)
+    ExecutionRoleArn: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+```
 
-- `TypeName`: `str`
-- `SchemaHandlerPackage`: `str`
-
-Optional fields:
-
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `ExecutionRoleArn`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="registertypeoutputtypedef"></a>
-
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+2. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
 ## RegisterTypeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RegisterTypeOutputTypeDef
+
+def get_value() -> RegisterTypeOutputTypeDef:
+    return {
+        "RegistrationToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterTypeOutputTypeDef(TypedDict):
+    RegistrationToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RegistrationToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="requiredactivatedtypetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RequiredActivatedTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RequiredActivatedTypeTypeDef
+
+def get_value() -> RequiredActivatedTypeTypeDef:
+    return {
+        "TypeNameAlias": ...,
+    }
 ```
 
-Optional fields:
-
-- `TypeNameAlias`: `str`
-- `OriginalTypeName`: `str`
-- `PublisherId`: `str`
-- `SupportedMajorVersions`: `List`\[`int`\]
-
-<a id="resourcechangedetailtypedef"></a>
+```python title="Definition"
+class RequiredActivatedTypeTypeDef(TypedDict):
+    TypeNameAlias: NotRequired[str],
+    OriginalTypeName: NotRequired[str],
+    PublisherId: NotRequired[str],
+    SupportedMajorVersions: NotRequired[List[int]],
+```
 
 ## ResourceChangeDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ResourceChangeDetailTypeDef
+
+def get_value() -> ResourceChangeDetailTypeDef:
+    return {
+        "Target": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceChangeDetailTypeDef(TypedDict):
+    Target: NotRequired[ResourceTargetDefinitionTypeDef],  # (1)
+    Evaluation: NotRequired[EvaluationTypeType],  # (2)
+    ChangeSource: NotRequired[ChangeSourceType],  # (3)
+    CausingEntity: NotRequired[str],
+```
 
-- `Target`:
-  [ResourceTargetDefinitionTypeDef](./type_defs.md#resourcetargetdefinitiontypedef)
-- `Evaluation`: [EvaluationTypeType](./literals.md#evaluationtypetype)
-- `ChangeSource`: [ChangeSourceType](./literals.md#changesourcetype)
-- `CausingEntity`: `str`
-
-<a id="resourcechangetypedef"></a>
-
+1. See [:material-code-braces: ResourceTargetDefinitionTypeDef](./type_defs.md#resourcetargetdefinitiontypedef) 
+2. See [:material-code-brackets: EvaluationTypeType](./literals.md#evaluationtypetype) 
+3. See [:material-code-brackets: ChangeSourceType](./literals.md#changesourcetype) 
 ## ResourceChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ResourceChangeTypeDef
+
+def get_value() -> ResourceChangeTypeDef:
+    return {
+        "Action": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceChangeTypeDef(TypedDict):
+    Action: NotRequired[ChangeActionType],  # (1)
+    LogicalResourceId: NotRequired[str],
+    PhysicalResourceId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    Replacement: NotRequired[ReplacementType],  # (2)
+    Scope: NotRequired[List[ResourceAttributeType]],  # (3)
+    Details: NotRequired[List[ResourceChangeDetailTypeDef]],  # (4)
+    ChangeSetId: NotRequired[str],
+    ModuleInfo: NotRequired[ModuleInfoTypeDef],  # (5)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `LogicalResourceId`: `str`
-- `PhysicalResourceId`: `str`
-- `ResourceType`: `str`
-- `Replacement`: [ReplacementType](./literals.md#replacementtype)
-- `Scope`:
-  `List`\[[ResourceAttributeType](./literals.md#resourceattributetype)\]
-- `Details`:
-  `List`\[[ResourceChangeDetailTypeDef](./type_defs.md#resourcechangedetailtypedef)\]
-- `ChangeSetId`: `str`
-- `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
-
-<a id="resourceidentifiersummarytypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-brackets: ReplacementType](./literals.md#replacementtype) 
+3. See [:material-code-brackets: ResourceAttributeType](./literals.md#resourceattributetype) 
+4. See [:material-code-braces: ResourceChangeDetailTypeDef](./type_defs.md#resourcechangedetailtypedef) 
+5. See [:material-code-braces: ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef) 
 ## ResourceIdentifierSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ResourceIdentifierSummaryTypeDef
+
+def get_value() -> ResourceIdentifierSummaryTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceType`: `str`
-- `LogicalResourceIds`: `List`\[`str`\]
-- `ResourceIdentifiers`: `List`\[`str`\]
-
-<a id="resourcetargetdefinitiontypedef"></a>
+```python title="Definition"
+class ResourceIdentifierSummaryTypeDef(TypedDict):
+    ResourceType: NotRequired[str],
+    LogicalResourceIds: NotRequired[List[str]],
+    ResourceIdentifiers: NotRequired[List[str]],
+```
 
 ## ResourceTargetDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ResourceTargetDefinitionTypeDef
+
+def get_value() -> ResourceTargetDefinitionTypeDef:
+    return {
+        "Attribute": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceTargetDefinitionTypeDef(TypedDict):
+    Attribute: NotRequired[ResourceAttributeType],  # (1)
+    Name: NotRequired[str],
+    RequiresRecreation: NotRequired[RequiresRecreationType],  # (2)
+```
 
-- `Attribute`: [ResourceAttributeType](./literals.md#resourceattributetype)
-- `Name`: `str`
-- `RequiresRecreation`:
-  [RequiresRecreationType](./literals.md#requiresrecreationtype)
-
-<a id="resourcetoimporttypedef"></a>
-
+1. See [:material-code-brackets: ResourceAttributeType](./literals.md#resourceattributetype) 
+2. See [:material-code-brackets: RequiresRecreationType](./literals.md#requiresrecreationtype) 
 ## ResourceToImportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ResourceToImportTypeDef
+
+def get_value() -> ResourceToImportTypeDef:
+    return {
+        "ResourceType": ...,
+        "LogicalResourceId": ...,
+        "ResourceIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceType`: `str`
-- `LogicalResourceId`: `str`
-- `ResourceIdentifier`: `Mapping`\[`str`, `str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceToImportTypeDef(TypedDict):
+    ResourceType: str,
+    LogicalResourceId: str,
+    ResourceIdentifier: Mapping[str, str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="rollbackconfigurationresponsemetadatatypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RollbackConfigurationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RollbackConfigurationResponseMetadataTypeDef
+
+def get_value() -> RollbackConfigurationResponseMetadataTypeDef:
+    return {
+        "RollbackTriggers": ...,
+        "MonitoringTimeInMinutes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RollbackConfigurationResponseMetadataTypeDef(TypedDict):
+    RollbackTriggers: List[RollbackTriggerTypeDef],  # (1)
+    MonitoringTimeInMinutes: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RollbackTriggers`:
-  `List`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
-- `MonitoringTimeInMinutes`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rollbackconfigurationtypedef"></a>
-
+1. See [:material-code-braces: RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RollbackConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RollbackConfigurationTypeDef
+
+def get_value() -> RollbackConfigurationTypeDef:
+    return {
+        "RollbackTriggers": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RollbackConfigurationTypeDef(TypedDict):
+    RollbackTriggers: NotRequired[Sequence[RollbackTriggerTypeDef]],  # (1)
+    MonitoringTimeInMinutes: NotRequired[int],
+```
 
-- `RollbackTriggers`:
-  `Sequence`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
-- `MonitoringTimeInMinutes`: `int`
-
-<a id="rollbackstackinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef) 
 ## RollbackStackInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RollbackStackInputRequestTypeDef
+
+def get_value() -> RollbackStackInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="rollbackstackoutputtypedef"></a>
+```python title="Definition"
+class RollbackStackInputRequestTypeDef(TypedDict):
+    StackName: str,
+    RoleARN: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+```
 
 ## RollbackStackOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RollbackStackOutputTypeDef
+
+def get_value() -> RollbackStackOutputTypeDef:
+    return {
+        "StackId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RollbackStackOutputTypeDef(TypedDict):
+    StackId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StackId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rollbacktriggertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RollbackTriggerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import RollbackTriggerTypeDef
+
+def get_value() -> RollbackTriggerTypeDef:
+    return {
+        "Arn": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `Type`: `str`
-
-<a id="serviceresourceeventrequesttypedef"></a>
+```python title="Definition"
+class RollbackTriggerTypeDef(TypedDict):
+    Arn: str,
+    Type: str,
+```
 
 ## ServiceResourceEventRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ServiceResourceEventRequestTypeDef
+
+def get_value() -> ServiceResourceEventRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="serviceresourcestackrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceEventRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## ServiceResourceStackRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ServiceResourceStackRequestTypeDef
+
+def get_value() -> ServiceResourceStackRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="serviceresourcestackresourcerequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceStackRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## ServiceResourceStackResourceRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ServiceResourceStackResourceRequestTypeDef
+
+def get_value() -> ServiceResourceStackResourceRequestTypeDef:
+    return {
+        "stack_name": ...,
+        "logical_id": ...,
+    }
 ```
 
-Required fields:
-
-- `stack_name`: `str`
-- `logical_id`: `str`
-
-<a id="serviceresourcestackresourcesummaryrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceStackResourceRequestTypeDef(TypedDict):
+    stack_name: str,
+    logical_id: str,
+```
 
 ## ServiceResourceStackResourceSummaryRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ServiceResourceStackResourceSummaryRequestTypeDef
+
+def get_value() -> ServiceResourceStackResourceSummaryRequestTypeDef:
+    return {
+        "stack_name": ...,
+        "logical_id": ...,
+    }
 ```
 
-Required fields:
-
-- `stack_name`: `str`
-- `logical_id`: `str`
-
-<a id="setstackpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceStackResourceSummaryRequestTypeDef(TypedDict):
+    stack_name: str,
+    logical_id: str,
+```
 
 ## SetStackPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import SetStackPolicyInputRequestTypeDef
+
+def get_value() -> SetStackPolicyInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `StackName`: `str`
-
-Optional fields:
-
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
-
-<a id="settypeconfigurationinputrequesttypedef"></a>
+```python title="Definition"
+class SetStackPolicyInputRequestTypeDef(TypedDict):
+    StackName: str,
+    StackPolicyBody: NotRequired[str],
+    StackPolicyURL: NotRequired[str],
+```
 
 ## SetTypeConfigurationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import SetTypeConfigurationInputRequestTypeDef
+
+def get_value() -> SetTypeConfigurationInputRequestTypeDef:
+    return {
+        "Configuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetTypeConfigurationInputRequestTypeDef(TypedDict):
+    Configuration: str,
+    TypeArn: NotRequired[str],
+    ConfigurationAlias: NotRequired[str],
+    TypeName: NotRequired[str],
+    Type: NotRequired[ThirdPartyTypeType],  # (1)
+```
 
-- `Configuration`: `str`
-
-Optional fields:
-
-- `TypeArn`: `str`
-- `ConfigurationAlias`: `str`
-- `TypeName`: `str`
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-
-<a id="settypeconfigurationoutputtypedef"></a>
-
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
 ## SetTypeConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import SetTypeConfigurationOutputTypeDef
+
+def get_value() -> SetTypeConfigurationOutputTypeDef:
+    return {
+        "ConfigurationArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetTypeConfigurationOutputTypeDef(TypedDict):
+    ConfigurationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ConfigurationArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="settypedefaultversioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SetTypeDefaultVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import SetTypeDefaultVersionInputRequestTypeDef
+
+def get_value() -> SetTypeDefaultVersionInputRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SetTypeDefaultVersionInputRequestTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Type: NotRequired[RegistryTypeType],  # (1)
+    TypeName: NotRequired[str],
+    VersionId: NotRequired[str],
+```
 
-- `Arn`: `str`
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `VersionId`: `str`
-
-<a id="signalresourceinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
 ## SignalResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import SignalResourceInputRequestTypeDef
+
+def get_value() -> SignalResourceInputRequestTypeDef:
+    return {
+        "StackName": ...,
+        "LogicalResourceId": ...,
+        "UniqueId": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SignalResourceInputRequestTypeDef(TypedDict):
+    StackName: str,
+    LogicalResourceId: str,
+    UniqueId: str,
+    Status: ResourceSignalStatusType,  # (1)
+```
 
-- `StackName`: `str`
-- `LogicalResourceId`: `str`
-- `UniqueId`: `str`
-- `Status`: [ResourceSignalStatusType](./literals.md#resourcesignalstatustype)
-
-<a id="stackdriftinformationresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ResourceSignalStatusType](./literals.md#resourcesignalstatustype) 
 ## StackDriftInformationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackDriftInformationResponseMetadataTypeDef
+
+def get_value() -> StackDriftInformationResponseMetadataTypeDef:
+    return {
+        "StackDriftStatus": ...,
+        "LastCheckTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackDriftInformationResponseMetadataTypeDef(TypedDict):
+    StackDriftStatus: StackDriftStatusType,  # (1)
+    LastCheckTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackDriftStatus`:
-  [StackDriftStatusType](./literals.md#stackdriftstatustype)
-- `LastCheckTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stackdriftinformationsummarytypedef"></a>
-
+1. See [:material-code-brackets: StackDriftStatusType](./literals.md#stackdriftstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StackDriftInformationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackDriftInformationSummaryTypeDef
+
+def get_value() -> StackDriftInformationSummaryTypeDef:
+    return {
+        "StackDriftStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackDriftInformationSummaryTypeDef(TypedDict):
+    StackDriftStatus: StackDriftStatusType,  # (1)
+    LastCheckTimestamp: NotRequired[datetime],
+```
 
-- `StackDriftStatus`:
-  [StackDriftStatusType](./literals.md#stackdriftstatustype)
-
-Optional fields:
-
-- `LastCheckTimestamp`: `datetime`
-
-<a id="stackdriftinformationtypedef"></a>
-
+1. See [:material-code-brackets: StackDriftStatusType](./literals.md#stackdriftstatustype) 
 ## StackDriftInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackDriftInformationTypeDef
+
+def get_value() -> StackDriftInformationTypeDef:
+    return {
+        "StackDriftStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackDriftInformationTypeDef(TypedDict):
+    StackDriftStatus: StackDriftStatusType,  # (1)
+    LastCheckTimestamp: NotRequired[datetime],
+```
 
-- `StackDriftStatus`:
-  [StackDriftStatusType](./literals.md#stackdriftstatustype)
-
-Optional fields:
-
-- `LastCheckTimestamp`: `datetime`
-
-<a id="stackeventtypedef"></a>
-
+1. See [:material-code-brackets: StackDriftStatusType](./literals.md#stackdriftstatustype) 
 ## StackEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackEventTypeDef
+
+def get_value() -> StackEventTypeDef:
+    return {
+        "StackId": ...,
+        "EventId": ...,
+        "StackName": ...,
+        "Timestamp": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackEventTypeDef(TypedDict):
+    StackId: str,
+    EventId: str,
+    StackName: str,
+    Timestamp: datetime,
+    LogicalResourceId: NotRequired[str],
+    PhysicalResourceId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceStatus: NotRequired[ResourceStatusType],  # (1)
+    ResourceStatusReason: NotRequired[str],
+    ResourceProperties: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    HookType: NotRequired[str],
+    HookStatus: NotRequired[HookStatusType],  # (2)
+    HookStatusReason: NotRequired[str],
+    HookInvocationPoint: NotRequired[HookInvocationPointType],  # (3)
+    HookFailureMode: NotRequired[HookFailureModeType],  # (4)
+```
 
-- `StackId`: `str`
-- `EventId`: `str`
-- `StackName`: `str`
-- `Timestamp`: `datetime`
-
-Optional fields:
-
-- `LogicalResourceId`: `str`
-- `PhysicalResourceId`: `str`
-- `ResourceType`: `str`
-- `ResourceStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
-- `ResourceStatusReason`: `str`
-- `ResourceProperties`: `str`
-- `ClientRequestToken`: `str`
-- `HookType`: `str`
-- `HookStatus`: [HookStatusType](./literals.md#hookstatustype)
-- `HookStatusReason`: `str`
-- `HookInvocationPoint`: `Literal['PRE_PROVISION']` (see
-  [HookInvocationPointType](./literals.md#hookinvocationpointtype))
-- `HookFailureMode`: [HookFailureModeType](./literals.md#hookfailuremodetype)
-
-<a id="stackinstancecomprehensivestatustypedef"></a>
-
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-brackets: HookStatusType](./literals.md#hookstatustype) 
+3. See [:material-code-brackets: HookInvocationPointType](./literals.md#hookinvocationpointtype) 
+4. See [:material-code-brackets: HookFailureModeType](./literals.md#hookfailuremodetype) 
 ## StackInstanceComprehensiveStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackInstanceComprehensiveStatusTypeDef
+
+def get_value() -> StackInstanceComprehensiveStatusTypeDef:
+    return {
+        "DetailedStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackInstanceComprehensiveStatusTypeDef(TypedDict):
+    DetailedStatus: NotRequired[StackInstanceDetailedStatusType],  # (1)
+```
 
-- `DetailedStatus`:
-  [StackInstanceDetailedStatusType](./literals.md#stackinstancedetailedstatustype)
-
-<a id="stackinstancefiltertypedef"></a>
-
+1. See [:material-code-brackets: StackInstanceDetailedStatusType](./literals.md#stackinstancedetailedstatustype) 
 ## StackInstanceFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackInstanceFilterTypeDef
+
+def get_value() -> StackInstanceFilterTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackInstanceFilterTypeDef(TypedDict):
+    Name: NotRequired[StackInstanceFilterNameType],  # (1)
+    Values: NotRequired[str],
+```
 
-- `Name`: `Literal['DETAILED_STATUS']` (see
-  [StackInstanceFilterNameType](./literals.md#stackinstancefilternametype))
-- `Values`: `str`
-
-<a id="stackinstancesummarytypedef"></a>
-
+1. See [:material-code-brackets: StackInstanceFilterNameType](./literals.md#stackinstancefilternametype) 
 ## StackInstanceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackInstanceSummaryTypeDef
+
+def get_value() -> StackInstanceSummaryTypeDef:
+    return {
+        "StackSetId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackInstanceSummaryTypeDef(TypedDict):
+    StackSetId: NotRequired[str],
+    Region: NotRequired[str],
+    Account: NotRequired[str],
+    StackId: NotRequired[str],
+    Status: NotRequired[StackInstanceStatusType],  # (1)
+    StatusReason: NotRequired[str],
+    StackInstanceStatus: NotRequired[StackInstanceComprehensiveStatusTypeDef],  # (2)
+    OrganizationalUnitId: NotRequired[str],
+    DriftStatus: NotRequired[StackDriftStatusType],  # (3)
+    LastDriftCheckTimestamp: NotRequired[datetime],
+```
 
-- `StackSetId`: `str`
-- `Region`: `str`
-- `Account`: `str`
-- `StackId`: `str`
-- `Status`: [StackInstanceStatusType](./literals.md#stackinstancestatustype)
-- `StatusReason`: `str`
-- `StackInstanceStatus`:
-  [StackInstanceComprehensiveStatusTypeDef](./type_defs.md#stackinstancecomprehensivestatustypedef)
-- `OrganizationalUnitId`: `str`
-- `DriftStatus`: [StackDriftStatusType](./literals.md#stackdriftstatustype)
-- `LastDriftCheckTimestamp`: `datetime`
-
-<a id="stackinstancetypedef"></a>
-
+1. See [:material-code-brackets: StackInstanceStatusType](./literals.md#stackinstancestatustype) 
+2. See [:material-code-braces: StackInstanceComprehensiveStatusTypeDef](./type_defs.md#stackinstancecomprehensivestatustypedef) 
+3. See [:material-code-brackets: StackDriftStatusType](./literals.md#stackdriftstatustype) 
 ## StackInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackInstanceTypeDef
+
+def get_value() -> StackInstanceTypeDef:
+    return {
+        "StackSetId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackInstanceTypeDef(TypedDict):
+    StackSetId: NotRequired[str],
+    Region: NotRequired[str],
+    Account: NotRequired[str],
+    StackId: NotRequired[str],
+    ParameterOverrides: NotRequired[List[ParameterTypeDef]],  # (1)
+    Status: NotRequired[StackInstanceStatusType],  # (2)
+    StackInstanceStatus: NotRequired[StackInstanceComprehensiveStatusTypeDef],  # (3)
+    StatusReason: NotRequired[str],
+    OrganizationalUnitId: NotRequired[str],
+    DriftStatus: NotRequired[StackDriftStatusType],  # (4)
+    LastDriftCheckTimestamp: NotRequired[datetime],
+```
 
-- `StackSetId`: `str`
-- `Region`: `str`
-- `Account`: `str`
-- `StackId`: `str`
-- `ParameterOverrides`:
-  `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Status`: [StackInstanceStatusType](./literals.md#stackinstancestatustype)
-- `StackInstanceStatus`:
-  [StackInstanceComprehensiveStatusTypeDef](./type_defs.md#stackinstancecomprehensivestatustypedef)
-- `StatusReason`: `str`
-- `OrganizationalUnitId`: `str`
-- `DriftStatus`: [StackDriftStatusType](./literals.md#stackdriftstatustype)
-- `LastDriftCheckTimestamp`: `datetime`
-
-<a id="stackresourcedetailtypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: StackInstanceStatusType](./literals.md#stackinstancestatustype) 
+3. See [:material-code-braces: StackInstanceComprehensiveStatusTypeDef](./type_defs.md#stackinstancecomprehensivestatustypedef) 
+4. See [:material-code-brackets: StackDriftStatusType](./literals.md#stackdriftstatustype) 
 ## StackResourceDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackResourceDetailTypeDef
+
+def get_value() -> StackResourceDetailTypeDef:
+    return {
+        "LogicalResourceId": ...,
+        "ResourceType": ...,
+        "LastUpdatedTimestamp": ...,
+        "ResourceStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackResourceDetailTypeDef(TypedDict):
+    LogicalResourceId: str,
+    ResourceType: str,
+    LastUpdatedTimestamp: datetime,
+    ResourceStatus: ResourceStatusType,  # (1)
+    StackName: NotRequired[str],
+    StackId: NotRequired[str],
+    PhysicalResourceId: NotRequired[str],
+    ResourceStatusReason: NotRequired[str],
+    Description: NotRequired[str],
+    Metadata: NotRequired[str],
+    DriftInformation: NotRequired[StackResourceDriftInformationTypeDef],  # (2)
+    ModuleInfo: NotRequired[ModuleInfoTypeDef],  # (3)
+```
 
-- `LogicalResourceId`: `str`
-- `ResourceType`: `str`
-- `LastUpdatedTimestamp`: `datetime`
-- `ResourceStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
-
-Optional fields:
-
-- `StackName`: `str`
-- `StackId`: `str`
-- `PhysicalResourceId`: `str`
-- `ResourceStatusReason`: `str`
-- `Description`: `str`
-- `Metadata`: `str`
-- `DriftInformation`:
-  [StackResourceDriftInformationTypeDef](./type_defs.md#stackresourcedriftinformationtypedef)
-- `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
-
-<a id="stackresourcedriftinformationresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: StackResourceDriftInformationTypeDef](./type_defs.md#stackresourcedriftinformationtypedef) 
+3. See [:material-code-braces: ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef) 
 ## StackResourceDriftInformationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackResourceDriftInformationResponseMetadataTypeDef
+
+def get_value() -> StackResourceDriftInformationResponseMetadataTypeDef:
+    return {
+        "StackResourceDriftStatus": ...,
+        "LastCheckTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackResourceDriftInformationResponseMetadataTypeDef(TypedDict):
+    StackResourceDriftStatus: StackResourceDriftStatusType,  # (1)
+    LastCheckTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackResourceDriftStatus`:
-  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
-- `LastCheckTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stackresourcedriftinformationsummaryresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StackResourceDriftInformationSummaryResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackResourceDriftInformationSummaryResponseMetadataTypeDef
+
+def get_value() -> StackResourceDriftInformationSummaryResponseMetadataTypeDef:
+    return {
+        "StackResourceDriftStatus": ...,
+        "LastCheckTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackResourceDriftInformationSummaryResponseMetadataTypeDef(TypedDict):
+    StackResourceDriftStatus: StackResourceDriftStatusType,  # (1)
+    LastCheckTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackResourceDriftStatus`:
-  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
-- `LastCheckTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stackresourcedriftinformationsummarytypedef"></a>
-
+1. See [:material-code-brackets: StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StackResourceDriftInformationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackResourceDriftInformationSummaryTypeDef
+
+def get_value() -> StackResourceDriftInformationSummaryTypeDef:
+    return {
+        "StackResourceDriftStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackResourceDriftInformationSummaryTypeDef(TypedDict):
+    StackResourceDriftStatus: StackResourceDriftStatusType,  # (1)
+    LastCheckTimestamp: NotRequired[datetime],
+```
 
-- `StackResourceDriftStatus`:
-  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
-
-Optional fields:
-
-- `LastCheckTimestamp`: `datetime`
-
-<a id="stackresourcedriftinformationtypedef"></a>
-
+1. See [:material-code-brackets: StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype) 
 ## StackResourceDriftInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackResourceDriftInformationTypeDef
+
+def get_value() -> StackResourceDriftInformationTypeDef:
+    return {
+        "StackResourceDriftStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackResourceDriftInformationTypeDef(TypedDict):
+    StackResourceDriftStatus: StackResourceDriftStatusType,  # (1)
+    LastCheckTimestamp: NotRequired[datetime],
+```
 
-- `StackResourceDriftStatus`:
-  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
-
-Optional fields:
-
-- `LastCheckTimestamp`: `datetime`
-
-<a id="stackresourcedrifttypedef"></a>
-
+1. See [:material-code-brackets: StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype) 
 ## StackResourceDriftTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackResourceDriftTypeDef
+
+def get_value() -> StackResourceDriftTypeDef:
+    return {
+        "StackId": ...,
+        "LogicalResourceId": ...,
+        "ResourceType": ...,
+        "StackResourceDriftStatus": ...,
+        "Timestamp": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackResourceDriftTypeDef(TypedDict):
+    StackId: str,
+    LogicalResourceId: str,
+    ResourceType: str,
+    StackResourceDriftStatus: StackResourceDriftStatusType,  # (3)
+    Timestamp: datetime,
+    PhysicalResourceId: NotRequired[str],
+    PhysicalResourceIdContext: NotRequired[List[PhysicalResourceIdContextKeyValuePairTypeDef]],  # (1)
+    ExpectedProperties: NotRequired[str],
+    ActualProperties: NotRequired[str],
+    PropertyDifferences: NotRequired[List[PropertyDifferenceTypeDef]],  # (2)
+    ModuleInfo: NotRequired[ModuleInfoTypeDef],  # (4)
+```
 
-- `StackId`: `str`
-- `LogicalResourceId`: `str`
-- `ResourceType`: `str`
-- `StackResourceDriftStatus`:
-  [StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)
-- `Timestamp`: `datetime`
-
-Optional fields:
-
-- `PhysicalResourceId`: `str`
-- `PhysicalResourceIdContext`:
-  `List`\[[PhysicalResourceIdContextKeyValuePairTypeDef](./type_defs.md#physicalresourceidcontextkeyvaluepairtypedef)\]
-- `ExpectedProperties`: `str`
-- `ActualProperties`: `str`
-- `PropertyDifferences`:
-  `List`\[[PropertyDifferenceTypeDef](./type_defs.md#propertydifferencetypedef)\]
-- `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
-
-<a id="stackresourcerequesttypedef"></a>
-
+1. See [:material-code-braces: PhysicalResourceIdContextKeyValuePairTypeDef](./type_defs.md#physicalresourceidcontextkeyvaluepairtypedef) 
+2. See [:material-code-braces: PropertyDifferenceTypeDef](./type_defs.md#propertydifferencetypedef) 
+3. See [:material-code-brackets: StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype) 
+4. See [:material-code-braces: ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef) 
 ## StackResourceRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackResourceRequestTypeDef
+
+def get_value() -> StackResourceRequestTypeDef:
+    return {
+        "logical_id": ...,
+    }
 ```
 
-Required fields:
-
-- `logical_id`: `str`
-
-<a id="stackresourcesummarytypedef"></a>
+```python title="Definition"
+class StackResourceRequestTypeDef(TypedDict):
+    logical_id: str,
+```
 
 ## StackResourceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackResourceSummaryTypeDef
+
+def get_value() -> StackResourceSummaryTypeDef:
+    return {
+        "LogicalResourceId": ...,
+        "ResourceType": ...,
+        "LastUpdatedTimestamp": ...,
+        "ResourceStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackResourceSummaryTypeDef(TypedDict):
+    LogicalResourceId: str,
+    ResourceType: str,
+    LastUpdatedTimestamp: datetime,
+    ResourceStatus: ResourceStatusType,  # (1)
+    PhysicalResourceId: NotRequired[str],
+    ResourceStatusReason: NotRequired[str],
+    DriftInformation: NotRequired[StackResourceDriftInformationSummaryTypeDef],  # (2)
+    ModuleInfo: NotRequired[ModuleInfoTypeDef],  # (3)
+```
 
-- `LogicalResourceId`: `str`
-- `ResourceType`: `str`
-- `LastUpdatedTimestamp`: `datetime`
-- `ResourceStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
-
-Optional fields:
-
-- `PhysicalResourceId`: `str`
-- `ResourceStatusReason`: `str`
-- `DriftInformation`:
-  [StackResourceDriftInformationSummaryTypeDef](./type_defs.md#stackresourcedriftinformationsummarytypedef)
-- `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
-
-<a id="stackresourcetypedef"></a>
-
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: StackResourceDriftInformationSummaryTypeDef](./type_defs.md#stackresourcedriftinformationsummarytypedef) 
+3. See [:material-code-braces: ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef) 
 ## StackResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackResourceTypeDef
+
+def get_value() -> StackResourceTypeDef:
+    return {
+        "LogicalResourceId": ...,
+        "ResourceType": ...,
+        "Timestamp": ...,
+        "ResourceStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackResourceTypeDef(TypedDict):
+    LogicalResourceId: str,
+    ResourceType: str,
+    Timestamp: datetime,
+    ResourceStatus: ResourceStatusType,  # (1)
+    StackName: NotRequired[str],
+    StackId: NotRequired[str],
+    PhysicalResourceId: NotRequired[str],
+    ResourceStatusReason: NotRequired[str],
+    Description: NotRequired[str],
+    DriftInformation: NotRequired[StackResourceDriftInformationTypeDef],  # (2)
+    ModuleInfo: NotRequired[ModuleInfoTypeDef],  # (3)
+```
 
-- `LogicalResourceId`: `str`
-- `ResourceType`: `str`
-- `Timestamp`: `datetime`
-- `ResourceStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
-
-Optional fields:
-
-- `StackName`: `str`
-- `StackId`: `str`
-- `PhysicalResourceId`: `str`
-- `ResourceStatusReason`: `str`
-- `Description`: `str`
-- `DriftInformation`:
-  [StackResourceDriftInformationTypeDef](./type_defs.md#stackresourcedriftinformationtypedef)
-- `ModuleInfo`: [ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef)
-
-<a id="stacksetdriftdetectiondetailstypedef"></a>
-
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: StackResourceDriftInformationTypeDef](./type_defs.md#stackresourcedriftinformationtypedef) 
+3. See [:material-code-braces: ModuleInfoTypeDef](./type_defs.md#moduleinfotypedef) 
 ## StackSetDriftDetectionDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackSetDriftDetectionDetailsTypeDef
+
+def get_value() -> StackSetDriftDetectionDetailsTypeDef:
+    return {
+        "DriftStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackSetDriftDetectionDetailsTypeDef(TypedDict):
+    DriftStatus: NotRequired[StackSetDriftStatusType],  # (1)
+    DriftDetectionStatus: NotRequired[StackSetDriftDetectionStatusType],  # (2)
+    LastDriftCheckTimestamp: NotRequired[datetime],
+    TotalStackInstancesCount: NotRequired[int],
+    DriftedStackInstancesCount: NotRequired[int],
+    InSyncStackInstancesCount: NotRequired[int],
+    InProgressStackInstancesCount: NotRequired[int],
+    FailedStackInstancesCount: NotRequired[int],
+```
 
-- `DriftStatus`:
-  [StackSetDriftStatusType](./literals.md#stacksetdriftstatustype)
-- `DriftDetectionStatus`:
-  [StackSetDriftDetectionStatusType](./literals.md#stacksetdriftdetectionstatustype)
-- `LastDriftCheckTimestamp`: `datetime`
-- `TotalStackInstancesCount`: `int`
-- `DriftedStackInstancesCount`: `int`
-- `InSyncStackInstancesCount`: `int`
-- `InProgressStackInstancesCount`: `int`
-- `FailedStackInstancesCount`: `int`
-
-<a id="stacksetoperationpreferencestypedef"></a>
-
+1. See [:material-code-brackets: StackSetDriftStatusType](./literals.md#stacksetdriftstatustype) 
+2. See [:material-code-brackets: StackSetDriftDetectionStatusType](./literals.md#stacksetdriftdetectionstatustype) 
 ## StackSetOperationPreferencesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackSetOperationPreferencesTypeDef
+
+def get_value() -> StackSetOperationPreferencesTypeDef:
+    return {
+        "RegionConcurrencyType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackSetOperationPreferencesTypeDef(TypedDict):
+    RegionConcurrencyType: NotRequired[RegionConcurrencyTypeType],  # (1)
+    RegionOrder: NotRequired[Sequence[str]],
+    FailureToleranceCount: NotRequired[int],
+    FailureTolerancePercentage: NotRequired[int],
+    MaxConcurrentCount: NotRequired[int],
+    MaxConcurrentPercentage: NotRequired[int],
+```
 
-- `RegionConcurrencyType`:
-  [RegionConcurrencyTypeType](./literals.md#regionconcurrencytypetype)
-- `RegionOrder`: `Sequence`\[`str`\]
-- `FailureToleranceCount`: `int`
-- `FailureTolerancePercentage`: `int`
-- `MaxConcurrentCount`: `int`
-- `MaxConcurrentPercentage`: `int`
-
-<a id="stacksetoperationresultsummarytypedef"></a>
-
+1. See [:material-code-brackets: RegionConcurrencyTypeType](./literals.md#regionconcurrencytypetype) 
 ## StackSetOperationResultSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackSetOperationResultSummaryTypeDef
+
+def get_value() -> StackSetOperationResultSummaryTypeDef:
+    return {
+        "Account": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackSetOperationResultSummaryTypeDef(TypedDict):
+    Account: NotRequired[str],
+    Region: NotRequired[str],
+    Status: NotRequired[StackSetOperationResultStatusType],  # (1)
+    StatusReason: NotRequired[str],
+    AccountGateResult: NotRequired[AccountGateResultTypeDef],  # (2)
+    OrganizationalUnitId: NotRequired[str],
+```
 
-- `Account`: `str`
-- `Region`: `str`
-- `Status`:
-  [StackSetOperationResultStatusType](./literals.md#stacksetoperationresultstatustype)
-- `StatusReason`: `str`
-- `AccountGateResult`:
-  [AccountGateResultTypeDef](./type_defs.md#accountgateresulttypedef)
-- `OrganizationalUnitId`: `str`
-
-<a id="stacksetoperationsummarytypedef"></a>
-
+1. See [:material-code-brackets: StackSetOperationResultStatusType](./literals.md#stacksetoperationresultstatustype) 
+2. See [:material-code-braces: AccountGateResultTypeDef](./type_defs.md#accountgateresulttypedef) 
 ## StackSetOperationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackSetOperationSummaryTypeDef
+
+def get_value() -> StackSetOperationSummaryTypeDef:
+    return {
+        "OperationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackSetOperationSummaryTypeDef(TypedDict):
+    OperationId: NotRequired[str],
+    Action: NotRequired[StackSetOperationActionType],  # (1)
+    Status: NotRequired[StackSetOperationStatusType],  # (2)
+    CreationTimestamp: NotRequired[datetime],
+    EndTimestamp: NotRequired[datetime],
+```
 
-- `OperationId`: `str`
-- `Action`:
-  [StackSetOperationActionType](./literals.md#stacksetoperationactiontype)
-- `Status`:
-  [StackSetOperationStatusType](./literals.md#stacksetoperationstatustype)
-- `CreationTimestamp`: `datetime`
-- `EndTimestamp`: `datetime`
-
-<a id="stacksetoperationtypedef"></a>
-
+1. See [:material-code-brackets: StackSetOperationActionType](./literals.md#stacksetoperationactiontype) 
+2. See [:material-code-brackets: StackSetOperationStatusType](./literals.md#stacksetoperationstatustype) 
 ## StackSetOperationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackSetOperationTypeDef
+
+def get_value() -> StackSetOperationTypeDef:
+    return {
+        "OperationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackSetOperationTypeDef(TypedDict):
+    OperationId: NotRequired[str],
+    StackSetId: NotRequired[str],
+    Action: NotRequired[StackSetOperationActionType],  # (1)
+    Status: NotRequired[StackSetOperationStatusType],  # (2)
+    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (3)
+    RetainStacks: NotRequired[bool],
+    AdministrationRoleARN: NotRequired[str],
+    ExecutionRoleName: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    EndTimestamp: NotRequired[datetime],
+    DeploymentTargets: NotRequired[DeploymentTargetsTypeDef],  # (4)
+    StackSetDriftDetectionDetails: NotRequired[StackSetDriftDetectionDetailsTypeDef],  # (5)
+```
 
-- `OperationId`: `str`
-- `StackSetId`: `str`
-- `Action`:
-  [StackSetOperationActionType](./literals.md#stacksetoperationactiontype)
-- `Status`:
-  [StackSetOperationStatusType](./literals.md#stacksetoperationstatustype)
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `RetainStacks`: `bool`
-- `AdministrationRoleARN`: `str`
-- `ExecutionRoleName`: `str`
-- `CreationTimestamp`: `datetime`
-- `EndTimestamp`: `datetime`
-- `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
-- `StackSetDriftDetectionDetails`:
-  [StackSetDriftDetectionDetailsTypeDef](./type_defs.md#stacksetdriftdetectiondetailstypedef)
-
-<a id="stacksetsummarytypedef"></a>
-
+1. See [:material-code-brackets: StackSetOperationActionType](./literals.md#stacksetoperationactiontype) 
+2. See [:material-code-brackets: StackSetOperationStatusType](./literals.md#stacksetoperationstatustype) 
+3. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+4. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+5. See [:material-code-braces: StackSetDriftDetectionDetailsTypeDef](./type_defs.md#stacksetdriftdetectiondetailstypedef) 
 ## StackSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackSetSummaryTypeDef
+
+def get_value() -> StackSetSummaryTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackSetSummaryTypeDef(TypedDict):
+    StackSetName: NotRequired[str],
+    StackSetId: NotRequired[str],
+    Description: NotRequired[str],
+    Status: NotRequired[StackSetStatusType],  # (1)
+    AutoDeployment: NotRequired[AutoDeploymentTypeDef],  # (2)
+    PermissionModel: NotRequired[PermissionModelsType],  # (3)
+    DriftStatus: NotRequired[StackDriftStatusType],  # (4)
+    LastDriftCheckTimestamp: NotRequired[datetime],
+    ManagedExecution: NotRequired[ManagedExecutionTypeDef],  # (5)
+```
 
-- `StackSetName`: `str`
-- `StackSetId`: `str`
-- `Description`: `str`
-- `Status`: [StackSetStatusType](./literals.md#stacksetstatustype)
-- `AutoDeployment`:
-  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
-- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
-- `DriftStatus`: [StackDriftStatusType](./literals.md#stackdriftstatustype)
-- `LastDriftCheckTimestamp`: `datetime`
-- `ManagedExecution`:
-  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
-
-<a id="stacksettypedef"></a>
-
+1. See [:material-code-brackets: StackSetStatusType](./literals.md#stacksetstatustype) 
+2. See [:material-code-braces: AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef) 
+3. See [:material-code-brackets: PermissionModelsType](./literals.md#permissionmodelstype) 
+4. See [:material-code-brackets: StackDriftStatusType](./literals.md#stackdriftstatustype) 
+5. See [:material-code-braces: ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef) 
 ## StackSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackSetTypeDef
+
+def get_value() -> StackSetTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackSetTypeDef(TypedDict):
+    StackSetName: NotRequired[str],
+    StackSetId: NotRequired[str],
+    Description: NotRequired[str],
+    Status: NotRequired[StackSetStatusType],  # (1)
+    TemplateBody: NotRequired[str],
+    Parameters: NotRequired[List[ParameterTypeDef]],  # (2)
+    Capabilities: NotRequired[List[CapabilityType]],  # (3)
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+    StackSetARN: NotRequired[str],
+    AdministrationRoleARN: NotRequired[str],
+    ExecutionRoleName: NotRequired[str],
+    StackSetDriftDetectionDetails: NotRequired[StackSetDriftDetectionDetailsTypeDef],  # (5)
+    AutoDeployment: NotRequired[AutoDeploymentTypeDef],  # (6)
+    PermissionModel: NotRequired[PermissionModelsType],  # (7)
+    OrganizationalUnitIds: NotRequired[List[str]],
+    ManagedExecution: NotRequired[ManagedExecutionTypeDef],  # (8)
+```
 
-- `StackSetName`: `str`
-- `StackSetId`: `str`
-- `Description`: `str`
-- `Status`: [StackSetStatusType](./literals.md#stacksetstatustype)
-- `TemplateBody`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `StackSetARN`: `str`
-- `AdministrationRoleARN`: `str`
-- `ExecutionRoleName`: `str`
-- `StackSetDriftDetectionDetails`:
-  [StackSetDriftDetectionDetailsTypeDef](./type_defs.md#stacksetdriftdetectiondetailstypedef)
-- `AutoDeployment`:
-  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
-- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
-- `OrganizationalUnitIds`: `List`\[`str`\]
-- `ManagedExecution`:
-  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
-
-<a id="stacksummarytypedef"></a>
-
+1. See [:material-code-brackets: StackSetStatusType](./literals.md#stacksetstatustype) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+3. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: StackSetDriftDetectionDetailsTypeDef](./type_defs.md#stacksetdriftdetectiondetailstypedef) 
+6. See [:material-code-braces: AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef) 
+7. See [:material-code-brackets: PermissionModelsType](./literals.md#permissionmodelstype) 
+8. See [:material-code-braces: ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef) 
 ## StackSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackSummaryTypeDef
+
+def get_value() -> StackSummaryTypeDef:
+    return {
+        "StackName": ...,
+        "CreationTime": ...,
+        "StackStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackSummaryTypeDef(TypedDict):
+    StackName: str,
+    CreationTime: datetime,
+    StackStatus: StackStatusType,  # (1)
+    StackId: NotRequired[str],
+    TemplateDescription: NotRequired[str],
+    LastUpdatedTime: NotRequired[datetime],
+    DeletionTime: NotRequired[datetime],
+    StackStatusReason: NotRequired[str],
+    ParentId: NotRequired[str],
+    RootId: NotRequired[str],
+    DriftInformation: NotRequired[StackDriftInformationSummaryTypeDef],  # (2)
+```
 
-- `StackName`: `str`
-- `CreationTime`: `datetime`
-- `StackStatus`: [StackStatusType](./literals.md#stackstatustype)
-
-Optional fields:
-
-- `StackId`: `str`
-- `TemplateDescription`: `str`
-- `LastUpdatedTime`: `datetime`
-- `DeletionTime`: `datetime`
-- `StackStatusReason`: `str`
-- `ParentId`: `str`
-- `RootId`: `str`
-- `DriftInformation`:
-  [StackDriftInformationSummaryTypeDef](./type_defs.md#stackdriftinformationsummarytypedef)
-
-<a id="stacktypedef"></a>
-
+1. See [:material-code-brackets: StackStatusType](./literals.md#stackstatustype) 
+2. See [:material-code-braces: StackDriftInformationSummaryTypeDef](./type_defs.md#stackdriftinformationsummarytypedef) 
 ## StackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StackTypeDef
+
+def get_value() -> StackTypeDef:
+    return {
+        "StackName": ...,
+        "CreationTime": ...,
+        "StackStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackTypeDef(TypedDict):
+    StackName: str,
+    CreationTime: datetime,
+    StackStatus: StackStatusType,  # (3)
+    StackId: NotRequired[str],
+    ChangeSetId: NotRequired[str],
+    Description: NotRequired[str],
+    Parameters: NotRequired[List[ParameterTypeDef]],  # (1)
+    DeletionTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    RollbackConfiguration: NotRequired[RollbackConfigurationTypeDef],  # (2)
+    StackStatusReason: NotRequired[str],
+    DisableRollback: NotRequired[bool],
+    NotificationARNs: NotRequired[List[str]],
+    TimeoutInMinutes: NotRequired[int],
+    Capabilities: NotRequired[List[CapabilityType]],  # (4)
+    Outputs: NotRequired[List[OutputTypeDef]],  # (5)
+    RoleARN: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (6)
+    EnableTerminationProtection: NotRequired[bool],
+    ParentId: NotRequired[str],
+    RootId: NotRequired[str],
+    DriftInformation: NotRequired[StackDriftInformationTypeDef],  # (7)
+```
 
-- `StackName`: `str`
-- `CreationTime`: `datetime`
-- `StackStatus`: [StackStatusType](./literals.md#stackstatustype)
-
-Optional fields:
-
-- `StackId`: `str`
-- `ChangeSetId`: `str`
-- `Description`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `DeletionTime`: `datetime`
-- `LastUpdatedTime`: `datetime`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `StackStatusReason`: `str`
-- `DisableRollback`: `bool`
-- `NotificationARNs`: `List`\[`str`\]
-- `TimeoutInMinutes`: `int`
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Outputs`: `List`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `RoleARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `EnableTerminationProtection`: `bool`
-- `ParentId`: `str`
-- `RootId`: `str`
-- `DriftInformation`:
-  [StackDriftInformationTypeDef](./type_defs.md#stackdriftinformationtypedef)
-
-<a id="stopstacksetoperationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+3. See [:material-code-brackets: StackStatusType](./literals.md#stackstatustype) 
+4. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+5. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: StackDriftInformationTypeDef](./type_defs.md#stackdriftinformationtypedef) 
 ## StopStackSetOperationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import StopStackSetOperationInputRequestTypeDef
+
+def get_value() -> StopStackSetOperationInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+        "OperationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopStackSetOperationInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    OperationId: str,
+    CallAs: NotRequired[CallAsType],  # (1)
+```
 
-- `StackSetName`: `str`
-- `OperationId`: `str`
-
-Optional fields:
-
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="templateparametertypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TemplateParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import TemplateParameterTypeDef
+
+def get_value() -> TemplateParameterTypeDef:
+    return {
+        "ParameterKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterKey`: `str`
-- `DefaultValue`: `str`
-- `NoEcho`: `bool`
-- `Description`: `str`
-
-<a id="testtypeinputrequesttypedef"></a>
+```python title="Definition"
+class TemplateParameterTypeDef(TypedDict):
+    ParameterKey: NotRequired[str],
+    DefaultValue: NotRequired[str],
+    NoEcho: NotRequired[bool],
+    Description: NotRequired[str],
+```
 
 ## TestTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import TestTypeInputRequestTypeDef
+
+def get_value() -> TestTypeInputRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestTypeInputRequestTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Type: NotRequired[ThirdPartyTypeType],  # (1)
+    TypeName: NotRequired[str],
+    VersionId: NotRequired[str],
+    LogDeliveryBucket: NotRequired[str],
+```
 
-- `Arn`: `str`
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-- `TypeName`: `str`
-- `VersionId`: `str`
-- `LogDeliveryBucket`: `str`
-
-<a id="testtypeoutputtypedef"></a>
-
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
 ## TestTypeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import TestTypeOutputTypeDef
+
+def get_value() -> TestTypeOutputTypeDef:
+    return {
+        "TypeVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestTypeOutputTypeDef(TypedDict):
+    TypeVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TypeVersionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="typeconfigurationdetailstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TypeConfigurationDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import TypeConfigurationDetailsTypeDef
+
+def get_value() -> TypeConfigurationDetailsTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Alias`: `str`
-- `Configuration`: `str`
-- `LastUpdated`: `datetime`
-- `TypeArn`: `str`
-- `TypeName`: `str`
-- `IsDefaultConfiguration`: `bool`
-
-<a id="typeconfigurationidentifiertypedef"></a>
+```python title="Definition"
+class TypeConfigurationDetailsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Alias: NotRequired[str],
+    Configuration: NotRequired[str],
+    LastUpdated: NotRequired[datetime],
+    TypeArn: NotRequired[str],
+    TypeName: NotRequired[str],
+    IsDefaultConfiguration: NotRequired[bool],
+```
 
 ## TypeConfigurationIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import TypeConfigurationIdentifierTypeDef
+
+def get_value() -> TypeConfigurationIdentifierTypeDef:
+    return {
+        "TypeArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TypeConfigurationIdentifierTypeDef(TypedDict):
+    TypeArn: NotRequired[str],
+    TypeConfigurationAlias: NotRequired[str],
+    TypeConfigurationArn: NotRequired[str],
+    Type: NotRequired[ThirdPartyTypeType],  # (1)
+    TypeName: NotRequired[str],
+```
 
-- `TypeArn`: `str`
-- `TypeConfigurationAlias`: `str`
-- `TypeConfigurationArn`: `str`
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-- `TypeName`: `str`
-
-<a id="typefilterstypedef"></a>
-
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
 ## TypeFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import TypeFiltersTypeDef
+
+def get_value() -> TypeFiltersTypeDef:
+    return {
+        "Category": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TypeFiltersTypeDef(TypedDict):
+    Category: NotRequired[CategoryType],  # (1)
+    PublisherId: NotRequired[str],
+    TypeNamePrefix: NotRequired[str],
+```
 
-- `Category`: [CategoryType](./literals.md#categorytype)
-- `PublisherId`: `str`
-- `TypeNamePrefix`: `str`
-
-<a id="typesummarytypedef"></a>
-
+1. See [:material-code-brackets: CategoryType](./literals.md#categorytype) 
 ## TypeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import TypeSummaryTypeDef
+
+def get_value() -> TypeSummaryTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TypeSummaryTypeDef(TypedDict):
+    Type: NotRequired[RegistryTypeType],  # (1)
+    TypeName: NotRequired[str],
+    DefaultVersionId: NotRequired[str],
+    TypeArn: NotRequired[str],
+    LastUpdated: NotRequired[datetime],
+    Description: NotRequired[str],
+    PublisherId: NotRequired[str],
+    OriginalTypeName: NotRequired[str],
+    PublicVersionNumber: NotRequired[str],
+    LatestPublicVersion: NotRequired[str],
+    PublisherIdentity: NotRequired[IdentityProviderType],  # (2)
+    PublisherName: NotRequired[str],
+    IsActivated: NotRequired[bool],
+```
 
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `DefaultVersionId`: `str`
-- `TypeArn`: `str`
-- `LastUpdated`: `datetime`
-- `Description`: `str`
-- `PublisherId`: `str`
-- `OriginalTypeName`: `str`
-- `PublicVersionNumber`: `str`
-- `LatestPublicVersion`: `str`
-- `PublisherIdentity`:
-  [IdentityProviderType](./literals.md#identityprovidertype)
-- `PublisherName`: `str`
-- `IsActivated`: `bool`
-
-<a id="typeversionsummarytypedef"></a>
-
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+2. See [:material-code-brackets: IdentityProviderType](./literals.md#identityprovidertype) 
 ## TypeVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import TypeVersionSummaryTypeDef
+
+def get_value() -> TypeVersionSummaryTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TypeVersionSummaryTypeDef(TypedDict):
+    Type: NotRequired[RegistryTypeType],  # (1)
+    TypeName: NotRequired[str],
+    VersionId: NotRequired[str],
+    IsDefaultVersion: NotRequired[bool],
+    Arn: NotRequired[str],
+    TimeCreated: NotRequired[datetime],
+    Description: NotRequired[str],
+    PublicVersionNumber: NotRequired[str],
+```
 
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `VersionId`: `str`
-- `IsDefaultVersion`: `bool`
-- `Arn`: `str`
-- `TimeCreated`: `datetime`
-- `Description`: `str`
-- `PublicVersionNumber`: `str`
-
-<a id="updatestackinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
 ## UpdateStackInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import UpdateStackInputRequestTypeDef
+
+def get_value() -> UpdateStackInputRequestTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStackInputRequestTypeDef(TypedDict):
+    StackName: str,
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+    UsePreviousTemplate: NotRequired[bool],
+    StackPolicyDuringUpdateBody: NotRequired[str],
+    StackPolicyDuringUpdateURL: NotRequired[str],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+    Capabilities: NotRequired[Sequence[CapabilityType]],  # (2)
+    ResourceTypes: NotRequired[Sequence[str]],
+    RoleARN: NotRequired[str],
+    RollbackConfiguration: NotRequired[RollbackConfigurationTypeDef],  # (3)
+    StackPolicyBody: NotRequired[str],
+    StackPolicyURL: NotRequired[str],
+    NotificationARNs: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    DisableRollback: NotRequired[bool],
+    ClientRequestToken: NotRequired[str],
+```
 
-- `StackName`: `str`
-
-Optional fields:
-
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `UsePreviousTemplate`: `bool`
-- `StackPolicyDuringUpdateBody`: `str`
-- `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DisableRollback`: `bool`
-- `ClientRequestToken`: `str`
-
-<a id="updatestackinputstackupdatetypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateStackInputStackUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import UpdateStackInputStackUpdateTypeDef
+
+def get_value() -> UpdateStackInputStackUpdateTypeDef:
+    return {
+        "TemplateBody": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateStackInputStackUpdateTypeDef(TypedDict):
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+    UsePreviousTemplate: NotRequired[bool],
+    StackPolicyDuringUpdateBody: NotRequired[str],
+    StackPolicyDuringUpdateURL: NotRequired[str],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+    Capabilities: NotRequired[Sequence[CapabilityType]],  # (2)
+    ResourceTypes: NotRequired[Sequence[str]],
+    RoleARN: NotRequired[str],
+    RollbackConfiguration: NotRequired[RollbackConfigurationTypeDef],  # (3)
+    StackPolicyBody: NotRequired[str],
+    StackPolicyURL: NotRequired[str],
+    NotificationARNs: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    DisableRollback: NotRequired[bool],
+    ClientRequestToken: NotRequired[str],
+```
 
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `UsePreviousTemplate`: `bool`
-- `StackPolicyDuringUpdateBody`: `str`
-- `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DisableRollback`: `bool`
-- `ClientRequestToken`: `str`
-
-<a id="updatestackinstancesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateStackInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import UpdateStackInstancesInputRequestTypeDef
+
+def get_value() -> UpdateStackInstancesInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+        "Regions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStackInstancesInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    Regions: Sequence[str],
+    Accounts: NotRequired[Sequence[str]],
+    DeploymentTargets: NotRequired[DeploymentTargetsTypeDef],  # (1)
+    ParameterOverrides: NotRequired[Sequence[ParameterTypeDef]],  # (2)
+    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (3)
+    OperationId: NotRequired[str],
+    CallAs: NotRequired[CallAsType],  # (4)
+```
 
-- `StackSetName`: `str`
-- `Regions`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Accounts`: `Sequence`\[`str`\]
-- `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
-- `ParameterOverrides`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-<a id="updatestackinstancesoutputtypedef"></a>
-
+1. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+3. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+4. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 ## UpdateStackInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import UpdateStackInstancesOutputTypeDef
+
+def get_value() -> UpdateStackInstancesOutputTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStackInstancesOutputTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatestackoutputtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateStackOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import UpdateStackOutputTypeDef
+
+def get_value() -> UpdateStackOutputTypeDef:
+    return {
+        "StackId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStackOutputTypeDef(TypedDict):
+    StackId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StackId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatestacksetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateStackSetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import UpdateStackSetInputRequestTypeDef
+
+def get_value() -> UpdateStackSetInputRequestTypeDef:
+    return {
+        "StackSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStackSetInputRequestTypeDef(TypedDict):
+    StackSetName: str,
+    Description: NotRequired[str],
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+    UsePreviousTemplate: NotRequired[bool],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+    Capabilities: NotRequired[Sequence[CapabilityType]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    OperationPreferences: NotRequired[StackSetOperationPreferencesTypeDef],  # (4)
+    AdministrationRoleARN: NotRequired[str],
+    ExecutionRoleName: NotRequired[str],
+    DeploymentTargets: NotRequired[DeploymentTargetsTypeDef],  # (5)
+    PermissionModel: NotRequired[PermissionModelsType],  # (6)
+    AutoDeployment: NotRequired[AutoDeploymentTypeDef],  # (7)
+    OperationId: NotRequired[str],
+    Accounts: NotRequired[Sequence[str]],
+    Regions: NotRequired[Sequence[str]],
+    CallAs: NotRequired[CallAsType],  # (8)
+    ManagedExecution: NotRequired[ManagedExecutionTypeDef],  # (9)
+```
 
-- `StackSetName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `UsePreviousTemplate`: `bool`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `AdministrationRoleARN`: `str`
-- `ExecutionRoleName`: `str`
-- `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
-- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
-- `AutoDeployment`:
-  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
-- `OperationId`: `str`
-- `Accounts`: `Sequence`\[`str`\]
-- `Regions`: `Sequence`\[`str`\]
-- `CallAs`: [CallAsType](./literals.md#callastype)
-- `ManagedExecution`:
-  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
-
-<a id="updatestacksetoutputtypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+5. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+6. See [:material-code-brackets: PermissionModelsType](./literals.md#permissionmodelstype) 
+7. See [:material-code-braces: AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef) 
+8. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+9. See [:material-code-braces: ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef) 
 ## UpdateStackSetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import UpdateStackSetOutputTypeDef
+
+def get_value() -> UpdateStackSetOutputTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStackSetOutputTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateterminationprotectioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTerminationProtectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import UpdateTerminationProtectionInputRequestTypeDef
+
+def get_value() -> UpdateTerminationProtectionInputRequestTypeDef:
+    return {
+        "EnableTerminationProtection": ...,
+        "StackName": ...,
+    }
 ```
 
-Required fields:
-
-- `EnableTerminationProtection`: `bool`
-- `StackName`: `str`
-
-<a id="updateterminationprotectionoutputtypedef"></a>
+```python title="Definition"
+class UpdateTerminationProtectionInputRequestTypeDef(TypedDict):
+    EnableTerminationProtection: bool,
+    StackName: str,
+```
 
 ## UpdateTerminationProtectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import UpdateTerminationProtectionOutputTypeDef
+
+def get_value() -> UpdateTerminationProtectionOutputTypeDef:
+    return {
+        "StackId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTerminationProtectionOutputTypeDef(TypedDict):
+    StackId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StackId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="validatetemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ValidateTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ValidateTemplateInputRequestTypeDef
+
+def get_value() -> ValidateTemplateInputRequestTypeDef:
+    return {
+        "TemplateBody": ...,
+    }
 ```
 
-Optional fields:
-
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-
-<a id="validatetemplateoutputtypedef"></a>
+```python title="Definition"
+class ValidateTemplateInputRequestTypeDef(TypedDict):
+    TemplateBody: NotRequired[str],
+    TemplateURL: NotRequired[str],
+```
 
 ## ValidateTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import ValidateTemplateOutputTypeDef
+
+def get_value() -> ValidateTemplateOutputTypeDef:
+    return {
+        "Parameters": ...,
+        "Description": ...,
+        "Capabilities": ...,
+        "CapabilitiesReason": ...,
+        "DeclaredTransforms": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValidateTemplateOutputTypeDef(TypedDict):
+    Parameters: List[TemplateParameterTypeDef],  # (1)
+    Description: str,
+    Capabilities: List[CapabilityType],  # (2)
+    CapabilitiesReason: str,
+    DeclaredTransforms: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Parameters`:
-  `List`\[[TemplateParameterTypeDef](./type_defs.md#templateparametertypedef)\]
-- `Description`: `str`
-- `Capabilities`: `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `CapabilitiesReason`: `str`
-- `DeclaredTransforms`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: TemplateParameterTypeDef](./type_defs.md#templateparametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudformation.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

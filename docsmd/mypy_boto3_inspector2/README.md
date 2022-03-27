@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-inspector2-module"></a>
-
-# Type annotations for boto3 Inspector2 module
+#  Inspector2 module
 
 > [Index](../README.md) > Inspector2
 
-Auto-generated documentation for
-[Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
-type annotations stubs module
-[mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
+!!! note ""
 
-- [Type annotations for boto3 Inspector2 module](#type-annotations-for-boto3-inspector2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [Inspector2Client](#inspector2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
+    type annotations stubs module [mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Inspector2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[inspector2]'
 python -m pip install mypy-boto3-inspector2
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,91 +42,37 @@ python -m pip install mypy-boto3-inspector2
 python -m pip uninstall -y mypy-boto3-inspector2
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="inspector2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## Inspector2Client
 
-Type annotations for `boto3.client("inspector2")` as
-[Inspector2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("inspector2")` as [Inspector2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_inspector2.client import Inspector2Client
+
+def get_client() -> Inspector2Client:
+    return Session().cleint("inspector2")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_member](./client.md#associate_member)
-- [batch_get_account_status](./client.md#batch_get_account_status)
-- [batch_get_free_trial_info](./client.md#batch_get_free_trial_info)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_findings_report](./client.md#cancel_findings_report)
-- [create_filter](./client.md#create_filter)
-- [create_findings_report](./client.md#create_findings_report)
-- [delete_filter](./client.md#delete_filter)
-- [describe_organization_configuration](./client.md#describe_organization_configuration)
-- [disable](./client.md#disable)
-- [disable_delegated_admin_account](./client.md#disable_delegated_admin_account)
-- [disassociate_member](./client.md#disassociate_member)
-- [enable](./client.md#enable)
-- [enable_delegated_admin_account](./client.md#enable_delegated_admin_account)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_delegated_admin_account](./client.md#get_delegated_admin_account)
-- [get_findings_report_status](./client.md#get_findings_report_status)
-- [get_member](./client.md#get_member)
-- [get_paginator](./client.md#get_paginator)
-- [list_account_permissions](./client.md#list_account_permissions)
-- [list_coverage](./client.md#list_coverage)
-- [list_coverage_statistics](./client.md#list_coverage_statistics)
-- [list_delegated_admin_accounts](./client.md#list_delegated_admin_accounts)
-- [list_filters](./client.md#list_filters)
-- [list_finding_aggregations](./client.md#list_finding_aggregations)
-- [list_findings](./client.md#list_findings)
-- [list_members](./client.md#list_members)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_usage_totals](./client.md#list_usage_totals)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_filter](./client.md#update_filter)
-- [update_organization_configuration](./client.md#update_organization_configuration)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-Inspector2Client [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- BadRequestException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("inspector2").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("inspector2").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_inspector2.paginator import ListAccountPermissionsPaginator, ...
+from mypy_boto3_inspector2.paginator import ListAccountPermissionsPaginator
+
+def get_list_account_permissions_paginator() -> ListAccountPermissionsPaginator:
+    return Session().client("inspector2").get_paginator("list_account_permissions"))
 ```
 
 - [ListAccountPermissionsPaginator](./paginators.md#listaccountpermissionspaginator)
@@ -161,16 +85,23 @@ from mypy_boto3_inspector2.paginator import ListAccountPermissionsPaginator, ...
 - [ListMembersPaginator](./paginators.md#listmemberspaginator)
 - [ListUsageTotalsPaginator](./paginators.md#listusagetotalspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_inspector2.literals import AccountSortByType
 
-```python
-from mypy_boto3_inspector2.literals import AccountSortByType, ...
+def get_value() -> AccountSortByType:
+    return "ALL"
 ```
 
 - [AccountSortByType](./literals.md#accountsortbytype)
@@ -233,18 +164,22 @@ from mypy_boto3_inspector2.literals import AccountSortByType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_inspector2.type_defs import AccountAggregationResponseTypeDef
 
-```python
-from mypy_boto3_inspector2.type_defs import AccountAggregationResponseTypeDef, ...
+def get_value() -> AccountAggregationResponseTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
 - [AccountAggregationResponseTypeDef](./type_defs.md#accountaggregationresponsetypedef)
@@ -319,24 +254,33 @@ from mypy_boto3_inspector2.type_defs import AccountAggregationResponseTypeDef, .
 - [ImageLayerAggregationResponseTypeDef](./type_defs.md#imagelayeraggregationresponsetypedef)
 - [ImageLayerAggregationTypeDef](./type_defs.md#imagelayeraggregationtypedef)
 - [InspectorScoreDetailsTypeDef](./type_defs.md#inspectorscoredetailstypedef)
+- [ListAccountPermissionsRequestListAccountPermissionsPaginateTypeDef](./type_defs.md#listaccountpermissionsrequestlistaccountpermissionspaginatetypedef)
 - [ListAccountPermissionsRequestRequestTypeDef](./type_defs.md#listaccountpermissionsrequestrequesttypedef)
 - [ListAccountPermissionsResponseTypeDef](./type_defs.md#listaccountpermissionsresponsetypedef)
+- [ListCoverageRequestListCoveragePaginateTypeDef](./type_defs.md#listcoveragerequestlistcoveragepaginatetypedef)
 - [ListCoverageRequestRequestTypeDef](./type_defs.md#listcoveragerequestrequesttypedef)
 - [ListCoverageResponseTypeDef](./type_defs.md#listcoverageresponsetypedef)
+- [ListCoverageStatisticsRequestListCoverageStatisticsPaginateTypeDef](./type_defs.md#listcoveragestatisticsrequestlistcoveragestatisticspaginatetypedef)
 - [ListCoverageStatisticsRequestRequestTypeDef](./type_defs.md#listcoveragestatisticsrequestrequesttypedef)
 - [ListCoverageStatisticsResponseTypeDef](./type_defs.md#listcoveragestatisticsresponsetypedef)
+- [ListDelegatedAdminAccountsRequestListDelegatedAdminAccountsPaginateTypeDef](./type_defs.md#listdelegatedadminaccountsrequestlistdelegatedadminaccountspaginatetypedef)
 - [ListDelegatedAdminAccountsRequestRequestTypeDef](./type_defs.md#listdelegatedadminaccountsrequestrequesttypedef)
 - [ListDelegatedAdminAccountsResponseTypeDef](./type_defs.md#listdelegatedadminaccountsresponsetypedef)
+- [ListFiltersRequestListFiltersPaginateTypeDef](./type_defs.md#listfiltersrequestlistfilterspaginatetypedef)
 - [ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef)
 - [ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef)
+- [ListFindingAggregationsRequestListFindingAggregationsPaginateTypeDef](./type_defs.md#listfindingaggregationsrequestlistfindingaggregationspaginatetypedef)
 - [ListFindingAggregationsRequestRequestTypeDef](./type_defs.md#listfindingaggregationsrequestrequesttypedef)
 - [ListFindingAggregationsResponseTypeDef](./type_defs.md#listfindingaggregationsresponsetypedef)
+- [ListFindingsRequestListFindingsPaginateTypeDef](./type_defs.md#listfindingsrequestlistfindingspaginatetypedef)
 - [ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef)
 - [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)
+- [ListMembersRequestListMembersPaginateTypeDef](./type_defs.md#listmembersrequestlistmemberspaginatetypedef)
 - [ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef)
 - [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListUsageTotalsRequestListUsageTotalsPaginateTypeDef](./type_defs.md#listusagetotalsrequestlistusagetotalspaginatetypedef)
 - [ListUsageTotalsRequestRequestTypeDef](./type_defs.md#listusagetotalsrequestrequesttypedef)
 - [ListUsageTotalsResponseTypeDef](./type_defs.md#listusagetotalsresponsetypedef)
 - [MapFilterTypeDef](./type_defs.md#mapfiltertypedef)
@@ -379,3 +323,4 @@ from mypy_boto3_inspector2.type_defs import AccountAggregationResponseTypeDef, .
 - [UsageTotalTypeDef](./type_defs.md#usagetotaltypedef)
 - [UsageTypeDef](./type_defs.md#usagetypedef)
 - [VulnerablePackageTypeDef](./type_defs.md#vulnerablepackagetypedef)
+

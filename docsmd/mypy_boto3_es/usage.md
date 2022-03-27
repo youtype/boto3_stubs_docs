@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-elasticsearchservice-module"></a>
-
-# Examples for boto3 ElasticsearchService module
+# Examples
 
 > [Index](../README.md) > [ElasticsearchService](./README.md) > Examples
 
-- [Examples for boto3 ElasticsearchService module](#examples-for-boto3-elasticsearchservice-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
+    type annotations stubs module [mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[es]` package installed.
 
-Write your `ElasticsearchService` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `ElasticsearchService` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ElasticsearchServiceClient
-# and provides type checking and code completion
-client = session.client("es")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AcceptInboundCrossClusterSearchConnectionResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.accept_inbound_cross_cluster_search_connection()
 
-# paginator has type DescribeReservedElasticsearchInstanceOfferingsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_reserved_elasticsearch_instance_offerings")
-for item in paginator.paginate(...):
-    # item has type DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("es")  # (1)
+    result = client.accept_inbound_cross_cluster_search_connection()  # (2)
+    ```
+
+    1. client: [ElasticsearchServiceClient](./client.md)
+    2. result: [:material-code-braces: AcceptInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("es")  # (1)
+
+    paginator = client.get_paginator("describe_reserved_elasticsearch_instance_offerings")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ElasticsearchServiceClient](./client.md)
+    2. paginator: [DescribeReservedElasticsearchInstanceOfferingsPaginator](./paginators.md#describereservedelasticsearchinstanceofferingspaginator)
+    3. item: [:material-code-braces: DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[es]` or a standalone `mypy_boto3_es` package, you have
-to explicitly specify `client: ElasticsearchServiceClient` type annotation.
+With `boto3-stubs-lite[es]`
+or a standalone `mypy_boto3_es` package, you have to explicitly specify `client: ElasticsearchServiceClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_es.client import ElasticsearchServiceClient
-from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferingsPaginator
-
-from mypy_boto3_es.literals import PaginatorName
-
-from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionResponseTypeDef
-from mypy_boto3_es.type_defs import DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ElasticsearchServiceClient = session.client("es")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AcceptInboundCrossClusterSearchConnectionResponseTypeDef = client.accept_inbound_cross_cluster_search_connection()
+    from mypy_boto3_es.client import ElasticsearchServiceClient
+    from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionResponseTypeDef
+    from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_reserved_elasticsearch_instance_offerings"
-paginator: DescribeReservedElasticsearchInstanceOfferingsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ElasticsearchServiceClient = session.client("es")
+
+    kwargs: AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDef = {...}
+    result: AcceptInboundCrossClusterSearchConnectionResponseTypeDef = client.accept_inbound_cross_cluster_search_connection(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_es.client import ElasticsearchServiceClient
+    from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferingsPaginator
+    from mypy_boto3_es.type_defs import DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef
+
+
+    session = Session()
+    client: ElasticsearchServiceClient = session.client("es")
+
+    paginator: DescribeReservedElasticsearchInstanceOfferingsPaginator = client.get_paginator("describe_reserved_elasticsearch_instance_offerings")
+    for item in paginator.paginate(...):
+        item: DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-fms-module"></a>
-
-# Paginators for boto3 FMS module
+# Paginators
 
 > [Index](../README.md) > [FMS](./README.md) > Paginators
 
-Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
-type annotations stubs module
-[mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
+!!! note ""
 
-- [Paginators for boto3 FMS module](#paginators-for-boto3-fms-module)
-  - [ListAppsListsPaginator](#listappslistspaginator)
-  - [ListComplianceStatusPaginator](#listcompliancestatuspaginator)
-  - [ListMemberAccountsPaginator](#listmemberaccountspaginator)
-  - [ListPoliciesPaginator](#listpoliciespaginator)
-  - [ListProtocolsListsPaginator](#listprotocolslistspaginator)
-
-<a id="listappslistspaginator"></a>
+    Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+    type annotations stubs module [mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
 
 ## ListAppsListsPaginator
 
-Type annotations for `boto3.client("fms").get_paginator("list_apps_lists")`.
+Type annotations and code completion for `#!python boto3.client("fms").get_paginator("list_apps_lists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListAppsLists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_fms.paginator import ListAppsListsPaginator
@@ -33,28 +21,40 @@ def get_list_apps_lists_paginator() -> ListAppsListsPaginator:
     return Session().client("fms").get_paginator("list_apps_lists")
 ```
 
-Boto3 documentation:
-[FMS.Paginator.ListAppsLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListAppsLists)
 
-Arguments for `ListAppsListsPaginator.paginate` method:
+### paginate
 
-- `DefaultLists`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAppsListsPaginator.paginate` method.
 
-`ListAppsListsPaginator.paginate` returns
-`_PageIterator`\[[ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DefaultLists: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAppsListsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcompliancestatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAppsListsRequestListAppsListsPaginateTypeDef = {  # (1)
+    "DefaultLists": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAppsListsRequestListAppsListsPaginateTypeDef](./type_defs.md#listappslistsrequestlistappslistspaginatetypedef) 
 ## ListComplianceStatusPaginator
 
-Type annotations for
-`boto3.client("fms").get_paginator("list_compliance_status")`.
+Type annotations and code completion for `#!python boto3.client("fms").get_paginator("list_compliance_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListComplianceStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_fms.paginator import ListComplianceStatusPaginator
@@ -63,28 +63,40 @@ def get_list_compliance_status_paginator() -> ListComplianceStatusPaginator:
     return Session().client("fms").get_paginator("list_compliance_status")
 ```
 
-Boto3 documentation:
-[FMS.Paginator.ListComplianceStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListComplianceStatus)
 
-Arguments for `ListComplianceStatusPaginator.paginate` method:
+### paginate
 
-- `PolicyId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListComplianceStatusPaginator.paginate` method.
 
-`ListComplianceStatusPaginator.paginate` returns
-`_PageIterator`\[[ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PolicyId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListComplianceStatusResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmemberaccountspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListComplianceStatusRequestListComplianceStatusPaginateTypeDef = {  # (1)
+    "PolicyId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListComplianceStatusRequestListComplianceStatusPaginateTypeDef](./type_defs.md#listcompliancestatusrequestlistcompliancestatuspaginatetypedef) 
 ## ListMemberAccountsPaginator
 
-Type annotations for
-`boto3.client("fms").get_paginator("list_member_accounts")`.
+Type annotations and code completion for `#!python boto3.client("fms").get_paginator("list_member_accounts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListMemberAccounts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_fms.paginator import ListMemberAccountsPaginator
@@ -93,26 +105,39 @@ def get_list_member_accounts_paginator() -> ListMemberAccountsPaginator:
     return Session().client("fms").get_paginator("list_member_accounts")
 ```
 
-Boto3 documentation:
-[FMS.Paginator.ListMemberAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListMemberAccounts)
 
-Arguments for `ListMemberAccountsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMemberAccountsPaginator.paginate` method.
 
-`ListMemberAccountsPaginator.paginate` returns
-`_PageIterator`\[[ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMemberAccountsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpoliciespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMemberAccountsRequestListMemberAccountsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMemberAccountsRequestListMemberAccountsPaginateTypeDef](./type_defs.md#listmemberaccountsrequestlistmemberaccountspaginatetypedef) 
 ## ListPoliciesPaginator
 
-Type annotations for `boto3.client("fms").get_paginator("list_policies")`.
+Type annotations and code completion for `#!python boto3.client("fms").get_paginator("list_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListPolicies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_fms.paginator import ListPoliciesPaginator
@@ -121,27 +146,39 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return Session().client("fms").get_paginator("list_policies")
 ```
 
-Boto3 documentation:
-[FMS.Paginator.ListPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListPolicies)
 
-Arguments for `ListPoliciesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPoliciesPaginator.paginate` method.
 
-`ListPoliciesPaginator.paginate` returns
-`_PageIterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPoliciesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listprotocolslistspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPoliciesRequestListPoliciesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPoliciesRequestListPoliciesPaginateTypeDef](./type_defs.md#listpoliciesrequestlistpoliciespaginatetypedef) 
 ## ListProtocolsListsPaginator
 
-Type annotations for
-`boto3.client("fms").get_paginator("list_protocols_lists")`.
+Type annotations and code completion for `#!python boto3.client("fms").get_paginator("list_protocols_lists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListProtocolsLists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_fms.paginator import ListProtocolsListsPaginator
@@ -150,14 +187,31 @@ def get_list_protocols_lists_paginator() -> ListProtocolsListsPaginator:
     return Session().client("fms").get_paginator("list_protocols_lists")
 ```
 
-Boto3 documentation:
-[FMS.Paginator.ListProtocolsLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Paginator.ListProtocolsLists)
 
-Arguments for `ListProtocolsListsPaginator.paginate` method:
+### paginate
 
-- `DefaultLists`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListProtocolsListsPaginator.paginate` method.
 
-`ListProtocolsListsPaginator.paginate` returns
-`_PageIterator`\[[ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DefaultLists: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListProtocolsListsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListProtocolsListsRequestListProtocolsListsPaginateTypeDef = {  # (1)
+    "DefaultLists": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProtocolsListsRequestListProtocolsListsPaginateTypeDef](./type_defs.md#listprotocolslistsrequestlistprotocolslistspaginatetypedef) 

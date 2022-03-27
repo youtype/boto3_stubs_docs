@@ -1,27 +1,18 @@
-<a id="paginators-for-boto3-chime-module"></a>
-
-# Paginators for boto3 Chime module
+# Paginators
 
 > [Index](../README.md) > [Chime](./README.md) > Paginators
 
-Auto-generated documentation for
-[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
-type annotations stubs module
-[mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
+!!! note ""
 
-- [Paginators for boto3 Chime module](#paginators-for-boto3-chime-module)
-  - [ListAccountsPaginator](#listaccountspaginator)
-  - [ListUsersPaginator](#listuserspaginator)
-
-<a id="listaccountspaginator"></a>
+    Auto-generated documentation for [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+    type annotations stubs module [mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
 
 ## ListAccountsPaginator
 
-Type annotations for `boto3.client("chime").get_paginator("list_accounts")`.
+Type annotations and code completion for `#!python boto3.client("chime").get_paginator("list_accounts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListAccounts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_chime.paginator import ListAccountsPaginator
@@ -30,28 +21,41 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
     return Session().client("chime").get_paginator("list_accounts")
 ```
 
-Boto3 documentation:
-[Chime.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListAccounts)
 
-Arguments for `ListAccountsPaginator.paginate` method:
+### paginate
 
-- `Name`: `str`
-- `UserEmail`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountsPaginator.paginate` method.
 
-`ListAccountsPaginator.paginate` returns
-`_PageIterator`\[[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Name: str = ...,
+    UserEmail: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAccountsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuserspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountsRequestListAccountsPaginateTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountsRequestListAccountsPaginateTypeDef](./type_defs.md#listaccountsrequestlistaccountspaginatetypedef) 
 ## ListUsersPaginator
 
-Type annotations for `boto3.client("chime").get_paginator("list_users")`.
+Type annotations and code completion for `#!python boto3.client("chime").get_paginator("list_users")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListUsers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_chime.paginator import ListUsersPaginator
@@ -60,16 +64,34 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("chime").get_paginator("list_users")
 ```
 
-Boto3 documentation:
-[Chime.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Paginator.ListUsers)
 
-Arguments for `ListUsersPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `UserEmail`: `str`
-- `UserType`: [UserTypeType](./literals.md#usertypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUsersPaginator.paginate` method.
 
-`ListUsersPaginator.paginate` returns
-`_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    UserEmail: str = ...,
+    UserType: UserTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListUsersResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestListUsersPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef) 

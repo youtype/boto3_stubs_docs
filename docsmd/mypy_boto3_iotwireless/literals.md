@@ -1,753 +1,797 @@
-<a id="literals-for-boto3-iotwireless-module"></a>
-
-# Literals for boto3 IoTWireless module
+# Literals
 
 > [Index](../README.md) > [IoTWireless](./README.md) > Literals
 
-Auto-generated documentation for
-[IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
-type annotations stubs module
-[mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
+!!! note ""
 
-- [Literals for boto3 IoTWireless module](#literals-for-boto3-iotwireless-module)
-  - [BatteryLevelType](#batteryleveltype)
-  - [ConnectionStatusType](#connectionstatustype)
-  - [DeviceStateType](#devicestatetype)
-  - [DlClassType](#dlclasstype)
-  - [EventNotificationPartnerTypeType](#eventnotificationpartnertypetype)
-  - [EventNotificationTopicStatusType](#eventnotificationtopicstatustype)
-  - [EventType](#eventtype)
-  - [ExpressionTypeType](#expressiontypetype)
-  - [FuotaDeviceStatusType](#fuotadevicestatustype)
-  - [FuotaTaskStatusType](#fuotataskstatustype)
-  - [IdentifierTypeType](#identifiertypetype)
-  - [LogLevelType](#logleveltype)
-  - [MessageTypeType](#messagetypetype)
-  - [PartnerTypeType](#partnertypetype)
-  - [SigningAlgType](#signingalgtype)
-  - [SupportedRfRegionType](#supportedrfregiontype)
-  - [WirelessDeviceEventType](#wirelessdeviceeventtype)
-  - [WirelessDeviceFrameInfoType](#wirelessdeviceframeinfotype)
-  - [WirelessDeviceIdTypeType](#wirelessdeviceidtypetype)
-  - [WirelessDeviceTypeType](#wirelessdevicetypetype)
-  - [WirelessGatewayEventType](#wirelessgatewayeventtype)
-  - [WirelessGatewayIdTypeType](#wirelessgatewayidtypetype)
-  - [WirelessGatewayServiceTypeType](#wirelessgatewayservicetypetype)
-  - [WirelessGatewayTaskDefinitionTypeType](#wirelessgatewaytaskdefinitiontypetype)
-  - [WirelessGatewayTaskStatusType](#wirelessgatewaytaskstatustype)
-  - [WirelessGatewayTypeType](#wirelessgatewaytypetype)
-  - [IoTWirelessServiceName](#iotwirelessservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-
-<a id="batteryleveltype"></a>
+    Auto-generated documentation for [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
+    type annotations stubs module [mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 ## BatteryLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import BatteryLevelType
+
+def get_value() -> BatteryLevelType:
+    return "critical"
 ```
 
-Values:
-
-- `critical`
-- `low`
-- `normal`
-
-<a id="connectionstatustype"></a>
-
+```python title="Definition"
+BatteryLevelType = Literal[
+    "critical",
+    "low",
+    "normal",
+]
+```
 ## ConnectionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import ConnectionStatusType
+
+def get_value() -> ConnectionStatusType:
+    return "Connected"
 ```
 
-Values:
-
-- `Connected`
-- `Disconnected`
-
-<a id="devicestatetype"></a>
-
+```python title="Definition"
+ConnectionStatusType = Literal[
+    "Connected",
+    "Disconnected",
+]
+```
 ## DeviceStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import DeviceStateType
+
+def get_value() -> DeviceStateType:
+    return "Provisioned"
 ```
 
-Values:
-
-- `Provisioned`
-- `RegisteredNotSeen`
-- `RegisteredReachable`
-- `RegisteredUnreachable`
-
-<a id="dlclasstype"></a>
-
+```python title="Definition"
+DeviceStateType = Literal[
+    "Provisioned",
+    "RegisteredNotSeen",
+    "RegisteredReachable",
+    "RegisteredUnreachable",
+]
+```
 ## DlClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import DlClassType
+
+def get_value() -> DlClassType:
+    return "ClassB"
 ```
 
-Values:
-
-- `ClassB`
-- `ClassC`
-
-<a id="eventnotificationpartnertypetype"></a>
-
+```python title="Definition"
+DlClassType = Literal[
+    "ClassB",
+    "ClassC",
+]
+```
 ## EventNotificationPartnerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import EventNotificationPartnerTypeType
+
+def get_value() -> EventNotificationPartnerTypeType:
+    return "Sidewalk"
 ```
 
-Values:
-
-- `Sidewalk`
-
-<a id="eventnotificationtopicstatustype"></a>
-
+```python title="Definition"
+EventNotificationPartnerTypeType = Literal[
+    "Sidewalk",
+]
+```
 ## EventNotificationTopicStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import EventNotificationTopicStatusType
+
+def get_value() -> EventNotificationTopicStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="eventtype"></a>
-
+```python title="Definition"
+EventNotificationTopicStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## EventType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import EventType
+
+def get_value() -> EventType:
+    return "ack"
 ```
 
-Values:
-
-- `ack`
-- `discovered`
-- `lost`
-- `nack`
-- `passthrough`
-
-<a id="expressiontypetype"></a>
-
+```python title="Definition"
+EventType = Literal[
+    "ack",
+    "discovered",
+    "lost",
+    "nack",
+    "passthrough",
+]
+```
 ## ExpressionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import ExpressionTypeType
+
+def get_value() -> ExpressionTypeType:
+    return "MqttTopic"
 ```
 
-Values:
-
-- `MqttTopic`
-- `RuleName`
-
-<a id="fuotadevicestatustype"></a>
-
+```python title="Definition"
+ExpressionTypeType = Literal[
+    "MqttTopic",
+    "RuleName",
+]
+```
 ## FuotaDeviceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import FuotaDeviceStatusType
+
+def get_value() -> FuotaDeviceStatusType:
+    return "FragAlgo_unsupported"
 ```
 
-Values:
-
-- `FragAlgo_unsupported`
-- `FragIndex_unsupported`
-- `Initial`
-- `MemoryError`
-- `MICError`
-- `MissingFrag`
-- `Not_enough_memory`
-- `Package_Not_Supported`
-- `SessionCnt_replay`
-- `Successful`
-- `Wrong_descriptor`
-
-<a id="fuotataskstatustype"></a>
-
+```python title="Definition"
+FuotaDeviceStatusType = Literal[
+    "FragAlgo_unsupported",
+    "FragIndex_unsupported",
+    "Initial",
+    "MemoryError",
+    "MICError",
+    "MissingFrag",
+    "Not_enough_memory",
+    "Package_Not_Supported",
+    "SessionCnt_replay",
+    "Successful",
+    "Wrong_descriptor",
+]
+```
 ## FuotaTaskStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import FuotaTaskStatusType
+
+def get_value() -> FuotaTaskStatusType:
+    return "Delete_Waiting"
 ```
 
-Values:
-
-- `Delete_Waiting`
-- `FuotaDone`
-- `FuotaSession_Waiting`
-- `In_FuotaSession`
-- `Pending`
-
-<a id="identifiertypetype"></a>
-
+```python title="Definition"
+FuotaTaskStatusType = Literal[
+    "Delete_Waiting",
+    "FuotaDone",
+    "FuotaSession_Waiting",
+    "In_FuotaSession",
+    "Pending",
+]
+```
 ## IdentifierTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import IdentifierTypeType
+
+def get_value() -> IdentifierTypeType:
+    return "PartnerAccountId"
 ```
 
-Values:
-
-- `PartnerAccountId`
-
-<a id="logleveltype"></a>
-
+```python title="Definition"
+IdentifierTypeType = Literal[
+    "PartnerAccountId",
+]
+```
 ## LogLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import LogLevelType
+
+def get_value() -> LogLevelType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ERROR`
-- `INFO`
-
-<a id="messagetypetype"></a>
-
+```python title="Definition"
+LogLevelType = Literal[
+    "DISABLED",
+    "ERROR",
+    "INFO",
+]
+```
 ## MessageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import MessageTypeType
+
+def get_value() -> MessageTypeType:
+    return "CUSTOM_COMMAND_ID_GET"
 ```
 
-Values:
-
-- `CUSTOM_COMMAND_ID_GET`
-- `CUSTOM_COMMAND_ID_NOTIFY`
-- `CUSTOM_COMMAND_ID_RESP`
-- `CUSTOM_COMMAND_ID_SET`
-
-<a id="partnertypetype"></a>
-
+```python title="Definition"
+MessageTypeType = Literal[
+    "CUSTOM_COMMAND_ID_GET",
+    "CUSTOM_COMMAND_ID_NOTIFY",
+    "CUSTOM_COMMAND_ID_RESP",
+    "CUSTOM_COMMAND_ID_SET",
+]
+```
 ## PartnerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import PartnerTypeType
+
+def get_value() -> PartnerTypeType:
+    return "Sidewalk"
 ```
 
-Values:
-
-- `Sidewalk`
-
-<a id="signingalgtype"></a>
-
+```python title="Definition"
+PartnerTypeType = Literal[
+    "Sidewalk",
+]
+```
 ## SigningAlgType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import SigningAlgType
+
+def get_value() -> SigningAlgType:
+    return "Ed25519"
 ```
 
-Values:
-
-- `Ed25519`
-- `P256r1`
-
-<a id="supportedrfregiontype"></a>
-
+```python title="Definition"
+SigningAlgType = Literal[
+    "Ed25519",
+    "P256r1",
+]
+```
 ## SupportedRfRegionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import SupportedRfRegionType
+
+def get_value() -> SupportedRfRegionType:
+    return "AS923-1"
 ```
 
-Values:
-
-- `AS923-1`
-- `AU915`
-- `EU868`
-- `US915`
-
-<a id="wirelessdeviceeventtype"></a>
-
+```python title="Definition"
+SupportedRfRegionType = Literal[
+    "AS923-1",
+    "AU915",
+    "EU868",
+    "US915",
+]
+```
 ## WirelessDeviceEventType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessDeviceEventType
+
+def get_value() -> WirelessDeviceEventType:
+    return "Downlink_Data"
 ```
 
-Values:
-
-- `Downlink_Data`
-- `Join`
-- `Registration`
-- `Rejoin`
-- `Uplink_Data`
-
-<a id="wirelessdeviceframeinfotype"></a>
-
+```python title="Definition"
+WirelessDeviceEventType = Literal[
+    "Downlink_Data",
+    "Join",
+    "Registration",
+    "Rejoin",
+    "Uplink_Data",
+]
+```
 ## WirelessDeviceFrameInfoType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessDeviceFrameInfoType
+
+def get_value() -> WirelessDeviceFrameInfoType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="wirelessdeviceidtypetype"></a>
-
+```python title="Definition"
+WirelessDeviceFrameInfoType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## WirelessDeviceIdTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessDeviceIdTypeType
+
+def get_value() -> WirelessDeviceIdTypeType:
+    return "DevEui"
 ```
 
-Values:
-
-- `DevEui`
-- `SidewalkManufacturingSn`
-- `ThingName`
-- `WirelessDeviceId`
-
-<a id="wirelessdevicetypetype"></a>
-
+```python title="Definition"
+WirelessDeviceIdTypeType = Literal[
+    "DevEui",
+    "SidewalkManufacturingSn",
+    "ThingName",
+    "WirelessDeviceId",
+]
+```
 ## WirelessDeviceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessDeviceTypeType
+
+def get_value() -> WirelessDeviceTypeType:
+    return "LoRaWAN"
 ```
 
-Values:
-
-- `LoRaWAN`
-- `Sidewalk`
-
-<a id="wirelessgatewayeventtype"></a>
-
+```python title="Definition"
+WirelessDeviceTypeType = Literal[
+    "LoRaWAN",
+    "Sidewalk",
+]
+```
 ## WirelessGatewayEventType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessGatewayEventType
+
+def get_value() -> WirelessGatewayEventType:
+    return "CUPS_Request"
 ```
 
-Values:
-
-- `Certificate`
-- `CUPS_Request`
-
-<a id="wirelessgatewayidtypetype"></a>
-
+```python title="Definition"
+WirelessGatewayEventType = Literal[
+    "Certificate",
+    "CUPS_Request",
+]
+```
 ## WirelessGatewayIdTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessGatewayIdTypeType
+
+def get_value() -> WirelessGatewayIdTypeType:
+    return "GatewayEui"
 ```
 
-Values:
-
-- `GatewayEui`
-- `ThingName`
-- `WirelessGatewayId`
-
-<a id="wirelessgatewayservicetypetype"></a>
-
+```python title="Definition"
+WirelessGatewayIdTypeType = Literal[
+    "GatewayEui",
+    "ThingName",
+    "WirelessGatewayId",
+]
+```
 ## WirelessGatewayServiceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessGatewayServiceTypeType
+
+def get_value() -> WirelessGatewayServiceTypeType:
+    return "CUPS"
 ```
 
-Values:
-
-- `CUPS`
-- `LNS`
-
-<a id="wirelessgatewaytaskdefinitiontypetype"></a>
-
+```python title="Definition"
+WirelessGatewayServiceTypeType = Literal[
+    "CUPS",
+    "LNS",
+]
+```
 ## WirelessGatewayTaskDefinitionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessGatewayTaskDefinitionTypeType
+
+def get_value() -> WirelessGatewayTaskDefinitionTypeType:
+    return "UPDATE"
 ```
 
-Values:
-
-- `UPDATE`
-
-<a id="wirelessgatewaytaskstatustype"></a>
-
+```python title="Definition"
+WirelessGatewayTaskDefinitionTypeType = Literal[
+    "UPDATE",
+]
+```
 ## WirelessGatewayTaskStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessGatewayTaskStatusType
+
+def get_value() -> WirelessGatewayTaskStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `FIRST_RETRY`
-- `IN_PROGRESS`
-- `PENDING`
-- `SECOND_RETRY`
-
-<a id="wirelessgatewaytypetype"></a>
-
+```python title="Definition"
+WirelessGatewayTaskStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "FIRST_RETRY",
+    "IN_PROGRESS",
+    "PENDING",
+    "SECOND_RETRY",
+]
+```
 ## WirelessGatewayTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import WirelessGatewayTypeType
+
+def get_value() -> WirelessGatewayTypeType:
+    return "LoRaWAN"
 ```
 
-Values:
-
-- `LoRaWAN`
-
-<a id="iotwirelessservicename"></a>
-
+```python title="Definition"
+WirelessGatewayTypeType = Literal[
+    "LoRaWAN",
+]
+```
 ## IoTWirelessServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import IoTWirelessServiceName
+
+def get_value() -> IoTWirelessServiceName:
+    return "iotwireless"
 ```
 
-Values:
-
-- `iotwireless`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+IoTWirelessServiceName = Literal[
+    "iotwireless",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
+## RegionName
 
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
+```python title="Usage Example"
+from mypy_boto3_iotwireless.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-southeast-2",
+    "eu-west-1",
+    "us-east-1",
+    "us-west-2",
+]
+```

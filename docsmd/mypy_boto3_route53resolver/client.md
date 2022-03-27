@@ -1,96 +1,18 @@
-<a id="route53resolverclient-for-boto3-route53resolver-module"></a>
+# Route53ResolverClient
 
-# Route53ResolverClient for boto3 Route53Resolver module
+> [Index](../README.md) > [Route53Resolver](./README.md) > Route53ResolverClient
 
-> [Index](../README.md) > [Route53Resolver](./README.md) >
-> Route53ResolverClient
+!!! note ""
 
-Auto-generated documentation for
-[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
-type annotations stubs module
-[mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
-
-- [Route53ResolverClient for boto3 Route53Resolver module](#route53resolverclient-for-boto3-route53resolver-module)
-  - [Route53ResolverClient](#route53resolverclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_firewall_rule_group](#associate_firewall_rule_group)
-    - [associate_resolver_endpoint_ip_address](#associate_resolver_endpoint_ip_address)
-    - [associate_resolver_query_log_config](#associate_resolver_query_log_config)
-    - [associate_resolver_rule](#associate_resolver_rule)
-    - [can_paginate](#can_paginate)
-    - [create_firewall_domain_list](#create_firewall_domain_list)
-    - [create_firewall_rule](#create_firewall_rule)
-    - [create_firewall_rule_group](#create_firewall_rule_group)
-    - [create_resolver_endpoint](#create_resolver_endpoint)
-    - [create_resolver_query_log_config](#create_resolver_query_log_config)
-    - [create_resolver_rule](#create_resolver_rule)
-    - [delete_firewall_domain_list](#delete_firewall_domain_list)
-    - [delete_firewall_rule](#delete_firewall_rule)
-    - [delete_firewall_rule_group](#delete_firewall_rule_group)
-    - [delete_resolver_endpoint](#delete_resolver_endpoint)
-    - [delete_resolver_query_log_config](#delete_resolver_query_log_config)
-    - [delete_resolver_rule](#delete_resolver_rule)
-    - [disassociate_firewall_rule_group](#disassociate_firewall_rule_group)
-    - [disassociate_resolver_endpoint_ip_address](#disassociate_resolver_endpoint_ip_address)
-    - [disassociate_resolver_query_log_config](#disassociate_resolver_query_log_config)
-    - [disassociate_resolver_rule](#disassociate_resolver_rule)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_firewall_config](#get_firewall_config)
-    - [get_firewall_domain_list](#get_firewall_domain_list)
-    - [get_firewall_rule_group](#get_firewall_rule_group)
-    - [get_firewall_rule_group_association](#get_firewall_rule_group_association)
-    - [get_firewall_rule_group_policy](#get_firewall_rule_group_policy)
-    - [get_resolver_config](#get_resolver_config)
-    - [get_resolver_dnssec_config](#get_resolver_dnssec_config)
-    - [get_resolver_endpoint](#get_resolver_endpoint)
-    - [get_resolver_query_log_config](#get_resolver_query_log_config)
-    - [get_resolver_query_log_config_association](#get_resolver_query_log_config_association)
-    - [get_resolver_query_log_config_policy](#get_resolver_query_log_config_policy)
-    - [get_resolver_rule](#get_resolver_rule)
-    - [get_resolver_rule_association](#get_resolver_rule_association)
-    - [get_resolver_rule_policy](#get_resolver_rule_policy)
-    - [import_firewall_domains](#import_firewall_domains)
-    - [list_firewall_configs](#list_firewall_configs)
-    - [list_firewall_domain_lists](#list_firewall_domain_lists)
-    - [list_firewall_domains](#list_firewall_domains)
-    - [list_firewall_rule_group_associations](#list_firewall_rule_group_associations)
-    - [list_firewall_rule_groups](#list_firewall_rule_groups)
-    - [list_firewall_rules](#list_firewall_rules)
-    - [list_resolver_configs](#list_resolver_configs)
-    - [list_resolver_dnssec_configs](#list_resolver_dnssec_configs)
-    - [list_resolver_endpoint_ip_addresses](#list_resolver_endpoint_ip_addresses)
-    - [list_resolver_endpoints](#list_resolver_endpoints)
-    - [list_resolver_query_log_config_associations](#list_resolver_query_log_config_associations)
-    - [list_resolver_query_log_configs](#list_resolver_query_log_configs)
-    - [list_resolver_rule_associations](#list_resolver_rule_associations)
-    - [list_resolver_rules](#list_resolver_rules)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_firewall_rule_group_policy](#put_firewall_rule_group_policy)
-    - [put_resolver_query_log_config_policy](#put_resolver_query_log_config_policy)
-    - [put_resolver_rule_policy](#put_resolver_rule_policy)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_firewall_config](#update_firewall_config)
-    - [update_firewall_domains](#update_firewall_domains)
-    - [update_firewall_rule](#update_firewall_rule)
-    - [update_firewall_rule_group_association](#update_firewall_rule_group_association)
-    - [update_resolver_config](#update_resolver_config)
-    - [update_resolver_dnssec_config](#update_resolver_dnssec_config)
-    - [update_resolver_endpoint](#update_resolver_endpoint)
-    - [update_resolver_rule](#update_resolver_rule)
-    - [get_paginator](#get_paginator)
-
-<a id="route53resolverclient"></a>
+    Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+    type annotations stubs module [mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 ## Route53ResolverClient
 
-Type annotations for `boto3.client("route53resolver")`
+Type annotations and code completion for `#!python boto3.client("route53resolver")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_route53resolver.client import Route53ResolverClient
 
@@ -98,1680 +20,2144 @@ def get_route53resolver_client() -> Route53ResolverClient:
     return Session().client("route53resolver")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("route53resolver").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("route53resolver")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServiceErrorException,
+    client.InvalidNextTokenException,
+    client.InvalidParameterException,
+    client.InvalidPolicyDocument,
+    client.InvalidRequestException,
+    client.InvalidTagException,
+    client.LimitExceededException,
+    client.ResourceExistsException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ResourceUnavailableException,
+    client.ThrottlingException,
+    client.UnknownResourceException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_route53resolver.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServiceErrorException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidPolicyDocument`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.InvalidTagException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceExistsException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceUnavailableException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.UnknownResourceException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### associate\_firewall\_rule\_group
 
-Route53ResolverClient exceptions.
-
-Type annotations for `boto3.client("route53resolver").exceptions` method.
-
-Boto3 documentation:
-[Route53Resolver.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_firewall\_rule\_group"></a>
-
-### associate_firewall_rule_group
-
-Associates a FirewallRuleGroup with a VPC, to provide DNS filtering for the
+Associates a  FirewallRuleGroup with a VPC, to provide DNS filtering for the
 VPC.
 
-Type annotations for
-`boto3.client("route53resolver").associate_firewall_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").associate_firewall_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_firewall_rule_group)
 
-Boto3 documentation:
-[Route53Resolver.Client.associate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_firewall_rule_group)
+```python title="Method definition"
+def associate_firewall_rule_group(
+    self,
+    *,
+    CreatorRequestId: str,
+    FirewallRuleGroupId: str,
+    VpcId: str,
+    Priority: int,
+    Name: str,
+    MutationProtection: MutationProtectionStatusType = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> AssociateFirewallRuleGroupResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[AssociateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#associatefirewallrulegrouprequestrequesttypedef).
+1. See [:material-code-brackets: MutationProtectionStatusType](./literals.md#mutationprotectionstatustype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: AssociateFirewallRuleGroupResponseTypeDef](./type_defs.md#associatefirewallrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CreatorRequestId`: `str` *(required)*
-- `FirewallRuleGroupId`: `str` *(required)*
-- `VpcId`: `str` *(required)*
-- `Priority`: `int` *(required)*
-- `Name`: `str` *(required)*
-- `MutationProtection`:
-  [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: AssociateFirewallRuleGroupRequestRequestTypeDef = {  # (1)
+    "CreatorRequestId": ...,
+    "FirewallRuleGroupId": ...,
+    "VpcId": ...,
+    "Priority": ...,
+    "Name": ...,
+}
 
-Returns
-[AssociateFirewallRuleGroupResponseTypeDef](./type_defs.md#associatefirewallrulegroupresponsetypedef).
+parent.associate_firewall_rule_group(**kwargs)
+```
 
-<a id="associate\_resolver\_endpoint\_ip\_address"></a>
+1. See [:material-code-braces: AssociateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#associatefirewallrulegrouprequestrequesttypedef) 
 
-### associate_resolver_endpoint_ip_address
+### associate\_resolver\_endpoint\_ip\_address
 
 Adds IP addresses to an inbound or an outbound Resolver endpoint.
 
-Type annotations for
-`boto3.client("route53resolver").associate_resolver_endpoint_ip_address`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").associate_resolver_endpoint_ip_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_endpoint_ip_address)
 
-Boto3 documentation:
-[Route53Resolver.Client.associate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_endpoint_ip_address)
+```python title="Method definition"
+def associate_resolver_endpoint_ip_address(
+    self,
+    *,
+    ResolverEndpointId: str,
+    IpAddress: IpAddressUpdateTypeDef,  # (1)
+) -> AssociateResolverEndpointIpAddressResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AssociateResolverEndpointIpAddressRequestRequestTypeDef](./type_defs.md#associateresolverendpointipaddressrequestrequesttypedef).
+1. See [:material-code-braces: IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef) 
+2. See [:material-code-braces: AssociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#associateresolverendpointipaddressresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverEndpointId`: `str` *(required)*
-- `IpAddress`: [IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateResolverEndpointIpAddressRequestRequestTypeDef = {  # (1)
+    "ResolverEndpointId": ...,
+    "IpAddress": ...,
+}
 
-Returns
-[AssociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#associateresolverendpointipaddressresponsetypedef).
+parent.associate_resolver_endpoint_ip_address(**kwargs)
+```
 
-<a id="associate\_resolver\_query\_log\_config"></a>
+1. See [:material-code-braces: AssociateResolverEndpointIpAddressRequestRequestTypeDef](./type_defs.md#associateresolverendpointipaddressrequestrequesttypedef) 
 
-### associate_resolver_query_log_config
+### associate\_resolver\_query\_log\_config
 
 Associates an Amazon VPC with a specified query logging configuration.
 
-Type annotations for
-`boto3.client("route53resolver").associate_resolver_query_log_config` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").associate_resolver_query_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_query_log_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.associate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_query_log_config)
+```python title="Method definition"
+def associate_resolver_query_log_config(
+    self,
+    *,
+    ResolverQueryLogConfigId: str,
+    ResourceId: str,
+) -> AssociateResolverQueryLogConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#associateresolverquerylogconfigrequestrequesttypedef).
+1. See [:material-code-braces: AssociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#associateresolverquerylogconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverQueryLogConfigId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateResolverQueryLogConfigRequestRequestTypeDef = {  # (1)
+    "ResolverQueryLogConfigId": ...,
+    "ResourceId": ...,
+}
 
-Returns
-[AssociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#associateresolverquerylogconfigresponsetypedef).
+parent.associate_resolver_query_log_config(**kwargs)
+```
 
-<a id="associate\_resolver\_rule"></a>
+1. See [:material-code-braces: AssociateResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#associateresolverquerylogconfigrequestrequesttypedef) 
 
-### associate_resolver_rule
+### associate\_resolver\_rule
 
 Associates a Resolver rule with a VPC.
 
-Type annotations for `boto3.client("route53resolver").associate_resolver_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").associate_resolver_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_rule)
 
-Boto3 documentation:
-[Route53Resolver.Client.associate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.associate_resolver_rule)
+```python title="Method definition"
+def associate_resolver_rule(
+    self,
+    *,
+    ResolverRuleId: str,
+    VPCId: str,
+    Name: str = ...,
+) -> AssociateResolverRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateResolverRuleRequestRequestTypeDef](./type_defs.md#associateresolverrulerequestrequesttypedef).
+1. See [:material-code-braces: AssociateResolverRuleResponseTypeDef](./type_defs.md#associateresolverruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverRuleId`: `str` *(required)*
-- `VPCId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateResolverRuleRequestRequestTypeDef = {  # (1)
+    "ResolverRuleId": ...,
+    "VPCId": ...,
+}
 
-Returns
-[AssociateResolverRuleResponseTypeDef](./type_defs.md#associateresolverruleresponsetypedef).
+parent.associate_resolver_rule(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateResolverRuleRequestRequestTypeDef](./type_defs.md#associateresolverrulerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("route53resolver").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.can_paginate)
 
-Boto3 documentation:
-[Route53Resolver.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_firewall\_domain\_list"></a>
-
-### create_firewall_domain_list
+### create\_firewall\_domain\_list
 
 Creates an empty firewall domain list for use in DNS Firewall rules.
 
-Type annotations for
-`boto3.client("route53resolver").create_firewall_domain_list` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").create_firewall_domain_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_domain_list)
 
-Boto3 documentation:
-[Route53Resolver.Client.create_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_domain_list)
+```python title="Method definition"
+def create_firewall_domain_list(
+    self,
+    *,
+    CreatorRequestId: str,
+    Name: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateFirewallDomainListResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFirewallDomainListRequestRequestTypeDef](./type_defs.md#createfirewalldomainlistrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateFirewallDomainListResponseTypeDef](./type_defs.md#createfirewalldomainlistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CreatorRequestId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateFirewallDomainListRequestRequestTypeDef = {  # (1)
+    "CreatorRequestId": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateFirewallDomainListResponseTypeDef](./type_defs.md#createfirewalldomainlistresponsetypedef).
+parent.create_firewall_domain_list(**kwargs)
+```
 
-<a id="create\_firewall\_rule"></a>
+1. See [:material-code-braces: CreateFirewallDomainListRequestRequestTypeDef](./type_defs.md#createfirewalldomainlistrequestrequesttypedef) 
 
-### create_firewall_rule
+### create\_firewall\_rule
 
 Creates a single DNS Firewall rule in the specified rule group, using the
 specified domain list.
 
-Type annotations for `boto3.client("route53resolver").create_firewall_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").create_firewall_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule)
 
-Boto3 documentation:
-[Route53Resolver.Client.create_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule)
+```python title="Method definition"
+def create_firewall_rule(
+    self,
+    *,
+    CreatorRequestId: str,
+    FirewallRuleGroupId: str,
+    FirewallDomainListId: str,
+    Priority: int,
+    Action: ActionType,  # (1)
+    Name: str,
+    BlockResponse: BlockResponseType = ...,  # (2)
+    BlockOverrideDomain: str = ...,
+    BlockOverrideDnsType: BlockOverrideDnsTypeType = ...,  # (3)
+    BlockOverrideTtl: int = ...,
+) -> CreateFirewallRuleResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateFirewallRuleRequestRequestTypeDef](./type_defs.md#createfirewallrulerequestrequesttypedef).
+1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
+2. See [:material-code-brackets: BlockResponseType](./literals.md#blockresponsetype) 
+3. See [:material-code-brackets: BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype) 
+4. See [:material-code-braces: CreateFirewallRuleResponseTypeDef](./type_defs.md#createfirewallruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CreatorRequestId`: `str` *(required)*
-- `FirewallRuleGroupId`: `str` *(required)*
-- `FirewallDomainListId`: `str` *(required)*
-- `Priority`: `int` *(required)*
-- `Action`: [ActionType](./literals.md#actiontype) *(required)*
-- `Name`: `str` *(required)*
-- `BlockResponse`: [BlockResponseType](./literals.md#blockresponsetype)
-- `BlockOverrideDomain`: `str`
-- `BlockOverrideDnsType`: `Literal['CNAME']` (see
-  [BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype))
-- `BlockOverrideTtl`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateFirewallRuleRequestRequestTypeDef = {  # (1)
+    "CreatorRequestId": ...,
+    "FirewallRuleGroupId": ...,
+    "FirewallDomainListId": ...,
+    "Priority": ...,
+    "Action": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateFirewallRuleResponseTypeDef](./type_defs.md#createfirewallruleresponsetypedef).
+parent.create_firewall_rule(**kwargs)
+```
 
-<a id="create\_firewall\_rule\_group"></a>
+1. See [:material-code-braces: CreateFirewallRuleRequestRequestTypeDef](./type_defs.md#createfirewallrulerequestrequesttypedef) 
 
-### create_firewall_rule_group
+### create\_firewall\_rule\_group
 
 Creates an empty DNS Firewall rule group for filtering DNS network traffic in a
 VPC.
 
-Type annotations for
-`boto3.client("route53resolver").create_firewall_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").create_firewall_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule_group)
 
-Boto3 documentation:
-[Route53Resolver.Client.create_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_firewall_rule_group)
+```python title="Method definition"
+def create_firewall_rule_group(
+    self,
+    *,
+    CreatorRequestId: str,
+    Name: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateFirewallRuleGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#createfirewallrulegrouprequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateFirewallRuleGroupResponseTypeDef](./type_defs.md#createfirewallrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CreatorRequestId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateFirewallRuleGroupRequestRequestTypeDef = {  # (1)
+    "CreatorRequestId": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateFirewallRuleGroupResponseTypeDef](./type_defs.md#createfirewallrulegroupresponsetypedef).
+parent.create_firewall_rule_group(**kwargs)
+```
 
-<a id="create\_resolver\_endpoint"></a>
+1. See [:material-code-braces: CreateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#createfirewallrulegrouprequestrequesttypedef) 
 
-### create_resolver_endpoint
+### create\_resolver\_endpoint
 
 Creates a Resolver endpoint.
 
-Type annotations for `boto3.client("route53resolver").create_resolver_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").create_resolver_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_endpoint)
 
-Boto3 documentation:
-[Route53Resolver.Client.create_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_endpoint)
+```python title="Method definition"
+def create_resolver_endpoint(
+    self,
+    *,
+    CreatorRequestId: str,
+    SecurityGroupIds: Sequence[str],
+    Direction: ResolverEndpointDirectionType,  # (1)
+    IpAddresses: Sequence[IpAddressRequestTypeDef],  # (2)
+    Name: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateResolverEndpointResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateResolverEndpointRequestRequestTypeDef](./type_defs.md#createresolverendpointrequestrequesttypedef).
+1. See [:material-code-brackets: ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype) 
+2. See [:material-code-braces: IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateResolverEndpointResponseTypeDef](./type_defs.md#createresolverendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CreatorRequestId`: `str` *(required)*
-- `SecurityGroupIds`: `Sequence`\[`str`\] *(required)*
-- `Direction`:
-  [ResolverEndpointDirectionType](./literals.md#resolverendpointdirectiontype)
-  *(required)*
-- `IpAddresses`:
-  `Sequence`\[[IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef)\]
-  *(required)*
-- `Name`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateResolverEndpointRequestRequestTypeDef = {  # (1)
+    "CreatorRequestId": ...,
+    "SecurityGroupIds": ...,
+    "Direction": ...,
+    "IpAddresses": ...,
+}
 
-Returns
-[CreateResolverEndpointResponseTypeDef](./type_defs.md#createresolverendpointresponsetypedef).
+parent.create_resolver_endpoint(**kwargs)
+```
 
-<a id="create\_resolver\_query\_log\_config"></a>
+1. See [:material-code-braces: CreateResolverEndpointRequestRequestTypeDef](./type_defs.md#createresolverendpointrequestrequesttypedef) 
 
-### create_resolver_query_log_config
+### create\_resolver\_query\_log\_config
 
 Creates a Resolver query logging configuration, which defines where you want
 Resolver to save DNS query logs that originate in your VPCs.
 
-Type annotations for
-`boto3.client("route53resolver").create_resolver_query_log_config` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").create_resolver_query_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_query_log_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.create_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_query_log_config)
+```python title="Method definition"
+def create_resolver_query_log_config(
+    self,
+    *,
+    Name: str,
+    DestinationArn: str,
+    CreatorRequestId: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateResolverQueryLogConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#createresolverquerylogconfigrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateResolverQueryLogConfigResponseTypeDef](./type_defs.md#createresolverquerylogconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `DestinationArn`: `str` *(required)*
-- `CreatorRequestId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateResolverQueryLogConfigRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "DestinationArn": ...,
+    "CreatorRequestId": ...,
+}
 
-Returns
-[CreateResolverQueryLogConfigResponseTypeDef](./type_defs.md#createresolverquerylogconfigresponsetypedef).
+parent.create_resolver_query_log_config(**kwargs)
+```
 
-<a id="create\_resolver\_rule"></a>
+1. See [:material-code-braces: CreateResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#createresolverquerylogconfigrequestrequesttypedef) 
 
-### create_resolver_rule
+### create\_resolver\_rule
 
 For DNS queries that originate in your VPCs, specifies which Resolver endpoint
 the queries pass through, one domain name that you want to forward to your
 network, and the IP addresses of the DNS resolvers in your network.
 
-Type annotations for `boto3.client("route53resolver").create_resolver_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").create_resolver_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_rule)
 
-Boto3 documentation:
-[Route53Resolver.Client.create_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.create_resolver_rule)
+```python title="Method definition"
+def create_resolver_rule(
+    self,
+    *,
+    CreatorRequestId: str,
+    RuleType: RuleTypeOptionType,  # (1)
+    DomainName: str,
+    Name: str = ...,
+    TargetIps: Sequence[TargetAddressTypeDef] = ...,  # (2)
+    ResolverEndpointId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateResolverRuleResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateResolverRuleRequestRequestTypeDef](./type_defs.md#createresolverrulerequestrequesttypedef).
+1. See [:material-code-brackets: RuleTypeOptionType](./literals.md#ruletypeoptiontype) 
+2. See [:material-code-braces: TargetAddressTypeDef](./type_defs.md#targetaddresstypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateResolverRuleResponseTypeDef](./type_defs.md#createresolverruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CreatorRequestId`: `str` *(required)*
-- `RuleType`: [RuleTypeOptionType](./literals.md#ruletypeoptiontype)
-  *(required)*
-- `DomainName`: `str` *(required)*
-- `Name`: `str`
-- `TargetIps`:
-  `Sequence`\[[TargetAddressTypeDef](./type_defs.md#targetaddresstypedef)\]
-- `ResolverEndpointId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateResolverRuleRequestRequestTypeDef = {  # (1)
+    "CreatorRequestId": ...,
+    "RuleType": ...,
+    "DomainName": ...,
+}
 
-Returns
-[CreateResolverRuleResponseTypeDef](./type_defs.md#createresolverruleresponsetypedef).
+parent.create_resolver_rule(**kwargs)
+```
 
-<a id="delete\_firewall\_domain\_list"></a>
+1. See [:material-code-braces: CreateResolverRuleRequestRequestTypeDef](./type_defs.md#createresolverrulerequestrequesttypedef) 
 
-### delete_firewall_domain_list
+### delete\_firewall\_domain\_list
 
 Deletes the specified domain list.
 
-Type annotations for
-`boto3.client("route53resolver").delete_firewall_domain_list` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").delete_firewall_domain_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_domain_list)
 
-Boto3 documentation:
-[Route53Resolver.Client.delete_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_domain_list)
+```python title="Method definition"
+def delete_firewall_domain_list(
+    self,
+    *,
+    FirewallDomainListId: str,
+) -> DeleteFirewallDomainListResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFirewallDomainListRequestRequestTypeDef](./type_defs.md#deletefirewalldomainlistrequestrequesttypedef).
+1. See [:material-code-braces: DeleteFirewallDomainListResponseTypeDef](./type_defs.md#deletefirewalldomainlistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallDomainListId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFirewallDomainListRequestRequestTypeDef = {  # (1)
+    "FirewallDomainListId": ...,
+}
 
-Returns
-[DeleteFirewallDomainListResponseTypeDef](./type_defs.md#deletefirewalldomainlistresponsetypedef).
+parent.delete_firewall_domain_list(**kwargs)
+```
 
-<a id="delete\_firewall\_rule"></a>
+1. See [:material-code-braces: DeleteFirewallDomainListRequestRequestTypeDef](./type_defs.md#deletefirewalldomainlistrequestrequesttypedef) 
 
-### delete_firewall_rule
+### delete\_firewall\_rule
 
 Deletes the specified firewall rule.
 
-Type annotations for `boto3.client("route53resolver").delete_firewall_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").delete_firewall_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule)
 
-Boto3 documentation:
-[Route53Resolver.Client.delete_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule)
+```python title="Method definition"
+def delete_firewall_rule(
+    self,
+    *,
+    FirewallRuleGroupId: str,
+    FirewallDomainListId: str,
+) -> DeleteFirewallRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFirewallRuleRequestRequestTypeDef](./type_defs.md#deletefirewallrulerequestrequesttypedef).
+1. See [:material-code-braces: DeleteFirewallRuleResponseTypeDef](./type_defs.md#deletefirewallruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallRuleGroupId`: `str` *(required)*
-- `FirewallDomainListId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFirewallRuleRequestRequestTypeDef = {  # (1)
+    "FirewallRuleGroupId": ...,
+    "FirewallDomainListId": ...,
+}
 
-Returns
-[DeleteFirewallRuleResponseTypeDef](./type_defs.md#deletefirewallruleresponsetypedef).
+parent.delete_firewall_rule(**kwargs)
+```
 
-<a id="delete\_firewall\_rule\_group"></a>
+1. See [:material-code-braces: DeleteFirewallRuleRequestRequestTypeDef](./type_defs.md#deletefirewallrulerequestrequesttypedef) 
 
-### delete_firewall_rule_group
+### delete\_firewall\_rule\_group
 
 Deletes the specified firewall rule group.
 
-Type annotations for
-`boto3.client("route53resolver").delete_firewall_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").delete_firewall_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule_group)
 
-Boto3 documentation:
-[Route53Resolver.Client.delete_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_firewall_rule_group)
+```python title="Method definition"
+def delete_firewall_rule_group(
+    self,
+    *,
+    FirewallRuleGroupId: str,
+) -> DeleteFirewallRuleGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#deletefirewallrulegrouprequestrequesttypedef).
+1. See [:material-code-braces: DeleteFirewallRuleGroupResponseTypeDef](./type_defs.md#deletefirewallrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallRuleGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFirewallRuleGroupRequestRequestTypeDef = {  # (1)
+    "FirewallRuleGroupId": ...,
+}
 
-Returns
-[DeleteFirewallRuleGroupResponseTypeDef](./type_defs.md#deletefirewallrulegroupresponsetypedef).
+parent.delete_firewall_rule_group(**kwargs)
+```
 
-<a id="delete\_resolver\_endpoint"></a>
+1. See [:material-code-braces: DeleteFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#deletefirewallrulegrouprequestrequesttypedef) 
 
-### delete_resolver_endpoint
+### delete\_resolver\_endpoint
 
 Deletes a Resolver endpoint.
 
-Type annotations for `boto3.client("route53resolver").delete_resolver_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").delete_resolver_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_endpoint)
 
-Boto3 documentation:
-[Route53Resolver.Client.delete_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_endpoint)
+```python title="Method definition"
+def delete_resolver_endpoint(
+    self,
+    *,
+    ResolverEndpointId: str,
+) -> DeleteResolverEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteResolverEndpointRequestRequestTypeDef](./type_defs.md#deleteresolverendpointrequestrequesttypedef).
+1. See [:material-code-braces: DeleteResolverEndpointResponseTypeDef](./type_defs.md#deleteresolverendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverEndpointId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResolverEndpointRequestRequestTypeDef = {  # (1)
+    "ResolverEndpointId": ...,
+}
 
-Returns
-[DeleteResolverEndpointResponseTypeDef](./type_defs.md#deleteresolverendpointresponsetypedef).
+parent.delete_resolver_endpoint(**kwargs)
+```
 
-<a id="delete\_resolver\_query\_log\_config"></a>
+1. See [:material-code-braces: DeleteResolverEndpointRequestRequestTypeDef](./type_defs.md#deleteresolverendpointrequestrequesttypedef) 
 
-### delete_resolver_query_log_config
+### delete\_resolver\_query\_log\_config
 
 Deletes a query logging configuration.
 
-Type annotations for
-`boto3.client("route53resolver").delete_resolver_query_log_config` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").delete_resolver_query_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_query_log_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.delete_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_query_log_config)
+```python title="Method definition"
+def delete_resolver_query_log_config(
+    self,
+    *,
+    ResolverQueryLogConfigId: str,
+) -> DeleteResolverQueryLogConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#deleteresolverquerylogconfigrequestrequesttypedef).
+1. See [:material-code-braces: DeleteResolverQueryLogConfigResponseTypeDef](./type_defs.md#deleteresolverquerylogconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverQueryLogConfigId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResolverQueryLogConfigRequestRequestTypeDef = {  # (1)
+    "ResolverQueryLogConfigId": ...,
+}
 
-Returns
-[DeleteResolverQueryLogConfigResponseTypeDef](./type_defs.md#deleteresolverquerylogconfigresponsetypedef).
+parent.delete_resolver_query_log_config(**kwargs)
+```
 
-<a id="delete\_resolver\_rule"></a>
+1. See [:material-code-braces: DeleteResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#deleteresolverquerylogconfigrequestrequesttypedef) 
 
-### delete_resolver_rule
+### delete\_resolver\_rule
 
 Deletes a Resolver rule.
 
-Type annotations for `boto3.client("route53resolver").delete_resolver_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").delete_resolver_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_rule)
 
-Boto3 documentation:
-[Route53Resolver.Client.delete_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.delete_resolver_rule)
+```python title="Method definition"
+def delete_resolver_rule(
+    self,
+    *,
+    ResolverRuleId: str,
+) -> DeleteResolverRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteResolverRuleRequestRequestTypeDef](./type_defs.md#deleteresolverrulerequestrequesttypedef).
+1. See [:material-code-braces: DeleteResolverRuleResponseTypeDef](./type_defs.md#deleteresolverruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverRuleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResolverRuleRequestRequestTypeDef = {  # (1)
+    "ResolverRuleId": ...,
+}
 
-Returns
-[DeleteResolverRuleResponseTypeDef](./type_defs.md#deleteresolverruleresponsetypedef).
+parent.delete_resolver_rule(**kwargs)
+```
 
-<a id="disassociate\_firewall\_rule\_group"></a>
+1. See [:material-code-braces: DeleteResolverRuleRequestRequestTypeDef](./type_defs.md#deleteresolverrulerequestrequesttypedef) 
 
-### disassociate_firewall_rule_group
+### disassociate\_firewall\_rule\_group
 
-Disassociates a FirewallRuleGroup from a VPC, to remove DNS filtering from the
+Disassociates a  FirewallRuleGroup from a VPC, to remove DNS filtering from the
 VPC.
 
-Type annotations for
-`boto3.client("route53resolver").disassociate_firewall_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").disassociate_firewall_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_firewall_rule_group)
 
-Boto3 documentation:
-[Route53Resolver.Client.disassociate_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_firewall_rule_group)
+```python title="Method definition"
+def disassociate_firewall_rule_group(
+    self,
+    *,
+    FirewallRuleGroupAssociationId: str,
+) -> DisassociateFirewallRuleGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#disassociatefirewallrulegrouprequestrequesttypedef).
+1. See [:material-code-braces: DisassociateFirewallRuleGroupResponseTypeDef](./type_defs.md#disassociatefirewallrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallRuleGroupAssociationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateFirewallRuleGroupRequestRequestTypeDef = {  # (1)
+    "FirewallRuleGroupAssociationId": ...,
+}
 
-Returns
-[DisassociateFirewallRuleGroupResponseTypeDef](./type_defs.md#disassociatefirewallrulegroupresponsetypedef).
+parent.disassociate_firewall_rule_group(**kwargs)
+```
 
-<a id="disassociate\_resolver\_endpoint\_ip\_address"></a>
+1. See [:material-code-braces: DisassociateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#disassociatefirewallrulegrouprequestrequesttypedef) 
 
-### disassociate_resolver_endpoint_ip_address
+### disassociate\_resolver\_endpoint\_ip\_address
 
 Removes IP addresses from an inbound or an outbound Resolver endpoint.
 
-Type annotations for
-`boto3.client("route53resolver").disassociate_resolver_endpoint_ip_address`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").disassociate_resolver_endpoint_ip_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_endpoint_ip_address)
 
-Boto3 documentation:
-[Route53Resolver.Client.disassociate_resolver_endpoint_ip_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_endpoint_ip_address)
+```python title="Method definition"
+def disassociate_resolver_endpoint_ip_address(
+    self,
+    *,
+    ResolverEndpointId: str,
+    IpAddress: IpAddressUpdateTypeDef,  # (1)
+) -> DisassociateResolverEndpointIpAddressResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateResolverEndpointIpAddressRequestRequestTypeDef](./type_defs.md#disassociateresolverendpointipaddressrequestrequesttypedef).
+1. See [:material-code-braces: IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef) 
+2. See [:material-code-braces: DisassociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#disassociateresolverendpointipaddressresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverEndpointId`: `str` *(required)*
-- `IpAddress`: [IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateResolverEndpointIpAddressRequestRequestTypeDef = {  # (1)
+    "ResolverEndpointId": ...,
+    "IpAddress": ...,
+}
 
-Returns
-[DisassociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#disassociateresolverendpointipaddressresponsetypedef).
+parent.disassociate_resolver_endpoint_ip_address(**kwargs)
+```
 
-<a id="disassociate\_resolver\_query\_log\_config"></a>
+1. See [:material-code-braces: DisassociateResolverEndpointIpAddressRequestRequestTypeDef](./type_defs.md#disassociateresolverendpointipaddressrequestrequesttypedef) 
 
-### disassociate_resolver_query_log_config
+### disassociate\_resolver\_query\_log\_config
 
 Disassociates a VPC from a query logging configuration.
 
-Type annotations for
-`boto3.client("route53resolver").disassociate_resolver_query_log_config`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").disassociate_resolver_query_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_query_log_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.disassociate_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_query_log_config)
+```python title="Method definition"
+def disassociate_resolver_query_log_config(
+    self,
+    *,
+    ResolverQueryLogConfigId: str,
+    ResourceId: str,
+) -> DisassociateResolverQueryLogConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#disassociateresolverquerylogconfigrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#disassociateresolverquerylogconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverQueryLogConfigId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateResolverQueryLogConfigRequestRequestTypeDef = {  # (1)
+    "ResolverQueryLogConfigId": ...,
+    "ResourceId": ...,
+}
 
-Returns
-[DisassociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#disassociateresolverquerylogconfigresponsetypedef).
+parent.disassociate_resolver_query_log_config(**kwargs)
+```
 
-<a id="disassociate\_resolver\_rule"></a>
+1. See [:material-code-braces: DisassociateResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#disassociateresolverquerylogconfigrequestrequesttypedef) 
 
-### disassociate_resolver_rule
+### disassociate\_resolver\_rule
 
 Removes the association between a specified Resolver rule and a specified VPC.
 
-Type annotations for
-`boto3.client("route53resolver").disassociate_resolver_rule` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").disassociate_resolver_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_rule)
 
-Boto3 documentation:
-[Route53Resolver.Client.disassociate_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.disassociate_resolver_rule)
+```python title="Method definition"
+def disassociate_resolver_rule(
+    self,
+    *,
+    VPCId: str,
+    ResolverRuleId: str,
+) -> DisassociateResolverRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateResolverRuleRequestRequestTypeDef](./type_defs.md#disassociateresolverrulerequestrequesttypedef).
+1. See [:material-code-braces: DisassociateResolverRuleResponseTypeDef](./type_defs.md#disassociateresolverruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VPCId`: `str` *(required)*
-- `ResolverRuleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateResolverRuleRequestRequestTypeDef = {  # (1)
+    "VPCId": ...,
+    "ResolverRuleId": ...,
+}
 
-Returns
-[DisassociateResolverRuleResponseTypeDef](./type_defs.md#disassociateresolverruleresponsetypedef).
+parent.disassociate_resolver_rule(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateResolverRuleRequestRequestTypeDef](./type_defs.md#disassociateresolverrulerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("route53resolver").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Route53Resolver.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_firewall\_config"></a>
-
-### get_firewall_config
+### get\_firewall\_config
 
 Retrieves the configuration of the firewall behavior provided by DNS Firewall
 for a single VPC from Amazon Virtual Private Cloud (Amazon VPC).
 
-Type annotations for `boto3.client("route53resolver").get_firewall_config`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_firewall_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_config)
+```python title="Method definition"
+def get_firewall_config(
+    self,
+    *,
+    ResourceId: str,
+) -> GetFirewallConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFirewallConfigRequestRequestTypeDef](./type_defs.md#getfirewallconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetFirewallConfigResponseTypeDef](./type_defs.md#getfirewallconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFirewallConfigRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns
-[GetFirewallConfigResponseTypeDef](./type_defs.md#getfirewallconfigresponsetypedef).
+parent.get_firewall_config(**kwargs)
+```
 
-<a id="get\_firewall\_domain\_list"></a>
+1. See [:material-code-braces: GetFirewallConfigRequestRequestTypeDef](./type_defs.md#getfirewallconfigrequestrequesttypedef) 
 
-### get_firewall_domain_list
+### get\_firewall\_domain\_list
 
 Retrieves the specified firewall domain list.
 
-Type annotations for `boto3.client("route53resolver").get_firewall_domain_list`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_firewall_domain_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_domain_list)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_firewall_domain_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_domain_list)
+```python title="Method definition"
+def get_firewall_domain_list(
+    self,
+    *,
+    FirewallDomainListId: str,
+) -> GetFirewallDomainListResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFirewallDomainListRequestRequestTypeDef](./type_defs.md#getfirewalldomainlistrequestrequesttypedef).
+1. See [:material-code-braces: GetFirewallDomainListResponseTypeDef](./type_defs.md#getfirewalldomainlistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallDomainListId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFirewallDomainListRequestRequestTypeDef = {  # (1)
+    "FirewallDomainListId": ...,
+}
 
-Returns
-[GetFirewallDomainListResponseTypeDef](./type_defs.md#getfirewalldomainlistresponsetypedef).
+parent.get_firewall_domain_list(**kwargs)
+```
 
-<a id="get\_firewall\_rule\_group"></a>
+1. See [:material-code-braces: GetFirewallDomainListRequestRequestTypeDef](./type_defs.md#getfirewalldomainlistrequestrequesttypedef) 
 
-### get_firewall_rule_group
+### get\_firewall\_rule\_group
 
 Retrieves the specified firewall rule group.
 
-Type annotations for `boto3.client("route53resolver").get_firewall_rule_group`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_firewall_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_firewall_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group)
+```python title="Method definition"
+def get_firewall_rule_group(
+    self,
+    *,
+    FirewallRuleGroupId: str,
+) -> GetFirewallRuleGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#getfirewallrulegrouprequestrequesttypedef).
+1. See [:material-code-braces: GetFirewallRuleGroupResponseTypeDef](./type_defs.md#getfirewallrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallRuleGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFirewallRuleGroupRequestRequestTypeDef = {  # (1)
+    "FirewallRuleGroupId": ...,
+}
 
-Returns
-[GetFirewallRuleGroupResponseTypeDef](./type_defs.md#getfirewallrulegroupresponsetypedef).
+parent.get_firewall_rule_group(**kwargs)
+```
 
-<a id="get\_firewall\_rule\_group\_association"></a>
+1. See [:material-code-braces: GetFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#getfirewallrulegrouprequestrequesttypedef) 
 
-### get_firewall_rule_group_association
+### get\_firewall\_rule\_group\_association
 
 Retrieves a firewall rule group association, which enables DNS filtering for a
 VPC with one rule group.
 
-Type annotations for
-`boto3.client("route53resolver").get_firewall_rule_group_association` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_firewall_rule_group_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_association)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_association)
+```python title="Method definition"
+def get_firewall_rule_group_association(
+    self,
+    *,
+    FirewallRuleGroupAssociationId: str,
+) -> GetFirewallRuleGroupAssociationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFirewallRuleGroupAssociationRequestRequestTypeDef](./type_defs.md#getfirewallrulegroupassociationrequestrequesttypedef).
+1. See [:material-code-braces: GetFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#getfirewallrulegroupassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallRuleGroupAssociationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFirewallRuleGroupAssociationRequestRequestTypeDef = {  # (1)
+    "FirewallRuleGroupAssociationId": ...,
+}
 
-Returns
-[GetFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#getfirewallrulegroupassociationresponsetypedef).
+parent.get_firewall_rule_group_association(**kwargs)
+```
 
-<a id="get\_firewall\_rule\_group\_policy"></a>
+1. See [:material-code-braces: GetFirewallRuleGroupAssociationRequestRequestTypeDef](./type_defs.md#getfirewallrulegroupassociationrequestrequesttypedef) 
 
-### get_firewall_rule_group_policy
+### get\_firewall\_rule\_group\_policy
 
 Returns the Identity and Access Management (Amazon Web Services IAM) policy for
 sharing the specified rule group.
 
-Type annotations for
-`boto3.client("route53resolver").get_firewall_rule_group_policy` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_firewall_rule_group_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_policy)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_firewall_rule_group_policy)
+```python title="Method definition"
+def get_firewall_rule_group_policy(
+    self,
+    *,
+    Arn: str,
+) -> GetFirewallRuleGroupPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFirewallRuleGroupPolicyRequestRequestTypeDef](./type_defs.md#getfirewallrulegrouppolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#getfirewallrulegrouppolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFirewallRuleGroupPolicyRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[GetFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#getfirewallrulegrouppolicyresponsetypedef).
+parent.get_firewall_rule_group_policy(**kwargs)
+```
 
-<a id="get\_resolver\_config"></a>
+1. See [:material-code-braces: GetFirewallRuleGroupPolicyRequestRequestTypeDef](./type_defs.md#getfirewallrulegrouppolicyrequestrequesttypedef) 
 
-### get_resolver_config
+### get\_resolver\_config
 
 Retrieves the behavior configuration of Route 53 Resolver behavior for a single
 VPC from Amazon Virtual Private Cloud.
 
-Type annotations for `boto3.client("route53resolver").get_resolver_config`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_resolver_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_resolver_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_config)
+```python title="Method definition"
+def get_resolver_config(
+    self,
+    *,
+    ResourceId: str,
+) -> GetResolverConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverConfigRequestRequestTypeDef](./type_defs.md#getresolverconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetResolverConfigResponseTypeDef](./type_defs.md#getresolverconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverConfigRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns
-[GetResolverConfigResponseTypeDef](./type_defs.md#getresolverconfigresponsetypedef).
+parent.get_resolver_config(**kwargs)
+```
 
-<a id="get\_resolver\_dnssec\_config"></a>
+1. See [:material-code-braces: GetResolverConfigRequestRequestTypeDef](./type_defs.md#getresolverconfigrequestrequesttypedef) 
 
-### get_resolver_dnssec_config
+### get\_resolver\_dnssec\_config
 
 Gets DNSSEC validation information for a specified resource.
 
-Type annotations for
-`boto3.client("route53resolver").get_resolver_dnssec_config` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_resolver_dnssec_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_dnssec_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_dnssec_config)
+```python title="Method definition"
+def get_resolver_dnssec_config(
+    self,
+    *,
+    ResourceId: str,
+) -> GetResolverDnssecConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverDnssecConfigRequestRequestTypeDef](./type_defs.md#getresolverdnssecconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetResolverDnssecConfigResponseTypeDef](./type_defs.md#getresolverdnssecconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverDnssecConfigRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns
-[GetResolverDnssecConfigResponseTypeDef](./type_defs.md#getresolverdnssecconfigresponsetypedef).
+parent.get_resolver_dnssec_config(**kwargs)
+```
 
-<a id="get\_resolver\_endpoint"></a>
+1. See [:material-code-braces: GetResolverDnssecConfigRequestRequestTypeDef](./type_defs.md#getresolverdnssecconfigrequestrequesttypedef) 
 
-### get_resolver_endpoint
+### get\_resolver\_endpoint
 
 Gets information about a specified Resolver endpoint, such as whether it's an
 inbound or an outbound Resolver endpoint, and the current status of the
 endpoint.
 
-Type annotations for `boto3.client("route53resolver").get_resolver_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_resolver_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_endpoint)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_endpoint)
+```python title="Method definition"
+def get_resolver_endpoint(
+    self,
+    *,
+    ResolverEndpointId: str,
+) -> GetResolverEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverEndpointRequestRequestTypeDef](./type_defs.md#getresolverendpointrequestrequesttypedef).
+1. See [:material-code-braces: GetResolverEndpointResponseTypeDef](./type_defs.md#getresolverendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverEndpointId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverEndpointRequestRequestTypeDef = {  # (1)
+    "ResolverEndpointId": ...,
+}
 
-Returns
-[GetResolverEndpointResponseTypeDef](./type_defs.md#getresolverendpointresponsetypedef).
+parent.get_resolver_endpoint(**kwargs)
+```
 
-<a id="get\_resolver\_query\_log\_config"></a>
+1. See [:material-code-braces: GetResolverEndpointRequestRequestTypeDef](./type_defs.md#getresolverendpointrequestrequesttypedef) 
 
-### get_resolver_query_log_config
+### get\_resolver\_query\_log\_config
 
-Gets information about a specified Resolver query logging configuration, such
-as the number of VPCs that the configuration is logging queries for and the
+Gets information about a specified Resolver query logging configuration, such as
+the number of VPCs that the configuration is logging queries for and the
 location that logs are sent to.
 
-Type annotations for
-`boto3.client("route53resolver").get_resolver_query_log_config` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_resolver_query_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_resolver_query_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config)
+```python title="Method definition"
+def get_resolver_query_log_config(
+    self,
+    *,
+    ResolverQueryLogConfigId: str,
+) -> GetResolverQueryLogConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#getresolverquerylogconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetResolverQueryLogConfigResponseTypeDef](./type_defs.md#getresolverquerylogconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverQueryLogConfigId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverQueryLogConfigRequestRequestTypeDef = {  # (1)
+    "ResolverQueryLogConfigId": ...,
+}
 
-Returns
-[GetResolverQueryLogConfigResponseTypeDef](./type_defs.md#getresolverquerylogconfigresponsetypedef).
+parent.get_resolver_query_log_config(**kwargs)
+```
 
-<a id="get\_resolver\_query\_log\_config\_association"></a>
+1. See [:material-code-braces: GetResolverQueryLogConfigRequestRequestTypeDef](./type_defs.md#getresolverquerylogconfigrequestrequesttypedef) 
 
-### get_resolver_query_log_config_association
+### get\_resolver\_query\_log\_config\_association
 
 Gets information about a specified association between a Resolver query logging
 configuration and an Amazon VPC.
 
-Type annotations for
-`boto3.client("route53resolver").get_resolver_query_log_config_association`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_resolver_query_log_config_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_association)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_resolver_query_log_config_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_association)
+```python title="Method definition"
+def get_resolver_query_log_config_association(
+    self,
+    *,
+    ResolverQueryLogConfigAssociationId: str,
+) -> GetResolverQueryLogConfigAssociationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverQueryLogConfigAssociationRequestRequestTypeDef](./type_defs.md#getresolverquerylogconfigassociationrequestrequesttypedef).
+1. See [:material-code-braces: GetResolverQueryLogConfigAssociationResponseTypeDef](./type_defs.md#getresolverquerylogconfigassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverQueryLogConfigAssociationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverQueryLogConfigAssociationRequestRequestTypeDef = {  # (1)
+    "ResolverQueryLogConfigAssociationId": ...,
+}
 
-Returns
-[GetResolverQueryLogConfigAssociationResponseTypeDef](./type_defs.md#getresolverquerylogconfigassociationresponsetypedef).
+parent.get_resolver_query_log_config_association(**kwargs)
+```
 
-<a id="get\_resolver\_query\_log\_config\_policy"></a>
+1. See [:material-code-braces: GetResolverQueryLogConfigAssociationRequestRequestTypeDef](./type_defs.md#getresolverquerylogconfigassociationrequestrequesttypedef) 
 
-### get_resolver_query_log_config_policy
+### get\_resolver\_query\_log\_config\_policy
 
 Gets information about a query logging policy.
 
-Type annotations for
-`boto3.client("route53resolver").get_resolver_query_log_config_policy` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_resolver_query_log_config_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_policy)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_query_log_config_policy)
+```python title="Method definition"
+def get_resolver_query_log_config_policy(
+    self,
+    *,
+    Arn: str,
+) -> GetResolverQueryLogConfigPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverQueryLogConfigPolicyRequestRequestTypeDef](./type_defs.md#getresolverquerylogconfigpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#getresolverquerylogconfigpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverQueryLogConfigPolicyRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[GetResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#getresolverquerylogconfigpolicyresponsetypedef).
+parent.get_resolver_query_log_config_policy(**kwargs)
+```
 
-<a id="get\_resolver\_rule"></a>
+1. See [:material-code-braces: GetResolverQueryLogConfigPolicyRequestRequestTypeDef](./type_defs.md#getresolverquerylogconfigpolicyrequestrequesttypedef) 
 
-### get_resolver_rule
+### get\_resolver\_rule
 
 Gets information about a specified Resolver rule, such as the domain name that
 the rule forwards DNS queries for and the ID of the outbound Resolver endpoint
 that the rule is associated with.
 
-Type annotations for `boto3.client("route53resolver").get_resolver_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_resolver_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule)
+```python title="Method definition"
+def get_resolver_rule(
+    self,
+    *,
+    ResolverRuleId: str,
+) -> GetResolverRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverRuleRequestRequestTypeDef](./type_defs.md#getresolverrulerequestrequesttypedef).
+1. See [:material-code-braces: GetResolverRuleResponseTypeDef](./type_defs.md#getresolverruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverRuleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverRuleRequestRequestTypeDef = {  # (1)
+    "ResolverRuleId": ...,
+}
 
-Returns
-[GetResolverRuleResponseTypeDef](./type_defs.md#getresolverruleresponsetypedef).
+parent.get_resolver_rule(**kwargs)
+```
 
-<a id="get\_resolver\_rule\_association"></a>
+1. See [:material-code-braces: GetResolverRuleRequestRequestTypeDef](./type_defs.md#getresolverrulerequestrequesttypedef) 
 
-### get_resolver_rule_association
+### get\_resolver\_rule\_association
 
 Gets information about an association between a specified Resolver rule and a
 VPC.
 
-Type annotations for
-`boto3.client("route53resolver").get_resolver_rule_association` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_resolver_rule_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_association)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_resolver_rule_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_association)
+```python title="Method definition"
+def get_resolver_rule_association(
+    self,
+    *,
+    ResolverRuleAssociationId: str,
+) -> GetResolverRuleAssociationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverRuleAssociationRequestRequestTypeDef](./type_defs.md#getresolverruleassociationrequestrequesttypedef).
+1. See [:material-code-braces: GetResolverRuleAssociationResponseTypeDef](./type_defs.md#getresolverruleassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverRuleAssociationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverRuleAssociationRequestRequestTypeDef = {  # (1)
+    "ResolverRuleAssociationId": ...,
+}
 
-Returns
-[GetResolverRuleAssociationResponseTypeDef](./type_defs.md#getresolverruleassociationresponsetypedef).
+parent.get_resolver_rule_association(**kwargs)
+```
 
-<a id="get\_resolver\_rule\_policy"></a>
+1. See [:material-code-braces: GetResolverRuleAssociationRequestRequestTypeDef](./type_defs.md#getresolverruleassociationrequestrequesttypedef) 
 
-### get_resolver_rule_policy
+### get\_resolver\_rule\_policy
 
 Gets information about the Resolver rule policy for a specified rule.
 
-Type annotations for `boto3.client("route53resolver").get_resolver_rule_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_resolver_rule_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_policy)
 
-Boto3 documentation:
-[Route53Resolver.Client.get_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.get_resolver_rule_policy)
+```python title="Method definition"
+def get_resolver_rule_policy(
+    self,
+    *,
+    Arn: str,
+) -> GetResolverRulePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverRulePolicyRequestRequestTypeDef](./type_defs.md#getresolverrulepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetResolverRulePolicyResponseTypeDef](./type_defs.md#getresolverrulepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverRulePolicyRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[GetResolverRulePolicyResponseTypeDef](./type_defs.md#getresolverrulepolicyresponsetypedef).
+parent.get_resolver_rule_policy(**kwargs)
+```
 
-<a id="import\_firewall\_domains"></a>
+1. See [:material-code-braces: GetResolverRulePolicyRequestRequestTypeDef](./type_defs.md#getresolverrulepolicyrequestrequesttypedef) 
 
-### import_firewall_domains
+### import\_firewall\_domains
 
 Imports domain names from a file into a domain list, for use in a DNS firewall
 rule group.
 
-Type annotations for `boto3.client("route53resolver").import_firewall_domains`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").import_firewall_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.import_firewall_domains)
 
-Boto3 documentation:
-[Route53Resolver.Client.import_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.import_firewall_domains)
+```python title="Method definition"
+def import_firewall_domains(
+    self,
+    *,
+    FirewallDomainListId: str,
+    Operation: FirewallDomainImportOperationType,  # (1)
+    DomainFileUrl: str,
+) -> ImportFirewallDomainsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportFirewallDomainsRequestRequestTypeDef](./type_defs.md#importfirewalldomainsrequestrequesttypedef).
+1. See [:material-code-brackets: FirewallDomainImportOperationType](./literals.md#firewalldomainimportoperationtype) 
+2. See [:material-code-braces: ImportFirewallDomainsResponseTypeDef](./type_defs.md#importfirewalldomainsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallDomainListId`: `str` *(required)*
-- `Operation`: `Literal['REPLACE']` (see
-  [FirewallDomainImportOperationType](./literals.md#firewalldomainimportoperationtype))
-  *(required)*
-- `DomainFileUrl`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ImportFirewallDomainsRequestRequestTypeDef = {  # (1)
+    "FirewallDomainListId": ...,
+    "Operation": ...,
+    "DomainFileUrl": ...,
+}
 
-Returns
-[ImportFirewallDomainsResponseTypeDef](./type_defs.md#importfirewalldomainsresponsetypedef).
+parent.import_firewall_domains(**kwargs)
+```
 
-<a id="list\_firewall\_configs"></a>
+1. See [:material-code-braces: ImportFirewallDomainsRequestRequestTypeDef](./type_defs.md#importfirewalldomainsrequestrequesttypedef) 
 
-### list_firewall_configs
+### list\_firewall\_configs
 
 Retrieves the firewall configurations that you have defined.
 
-Type annotations for `boto3.client("route53resolver").list_firewall_configs`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_firewall_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_configs)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_firewall_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_configs)
+```python title="Method definition"
+def list_firewall_configs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFirewallConfigsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFirewallConfigsRequestRequestTypeDef](./type_defs.md#listfirewallconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFirewallConfigsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef).
+parent.list_firewall_configs(**kwargs)
+```
 
-<a id="list\_firewall\_domain\_lists"></a>
+1. See [:material-code-braces: ListFirewallConfigsRequestRequestTypeDef](./type_defs.md#listfirewallconfigsrequestrequesttypedef) 
 
-### list_firewall_domain_lists
+### list\_firewall\_domain\_lists
 
 Retrieves the firewall domain lists that you have defined.
 
-Type annotations for
-`boto3.client("route53resolver").list_firewall_domain_lists` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_firewall_domain_lists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domain_lists)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_firewall_domain_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domain_lists)
+```python title="Method definition"
+def list_firewall_domain_lists(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFirewallDomainListsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFirewallDomainListsRequestRequestTypeDef](./type_defs.md#listfirewalldomainlistsrequestrequesttypedef).
+1. See [:material-code-braces: ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFirewallDomainListsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef).
+parent.list_firewall_domain_lists(**kwargs)
+```
 
-<a id="list\_firewall\_domains"></a>
+1. See [:material-code-braces: ListFirewallDomainListsRequestRequestTypeDef](./type_defs.md#listfirewalldomainlistsrequestrequesttypedef) 
 
-### list_firewall_domains
+### list\_firewall\_domains
 
 Retrieves the domains that you have defined for the specified firewall domain
 list.
 
-Type annotations for `boto3.client("route53resolver").list_firewall_domains`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_firewall_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domains)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_domains)
+```python title="Method definition"
+def list_firewall_domains(
+    self,
+    *,
+    FirewallDomainListId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFirewallDomainsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFirewallDomainsRequestRequestTypeDef](./type_defs.md#listfirewalldomainsrequestrequesttypedef).
+1. See [:material-code-braces: ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallDomainListId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFirewallDomainsRequestRequestTypeDef = {  # (1)
+    "FirewallDomainListId": ...,
+}
 
-Returns
-[ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef).
+parent.list_firewall_domains(**kwargs)
+```
 
-<a id="list\_firewall\_rule\_group\_associations"></a>
+1. See [:material-code-braces: ListFirewallDomainsRequestRequestTypeDef](./type_defs.md#listfirewalldomainsrequestrequesttypedef) 
 
-### list_firewall_rule_group_associations
+### list\_firewall\_rule\_group\_associations
 
 Retrieves the firewall rule group associations that you have defined.
 
-Type annotations for
-`boto3.client("route53resolver").list_firewall_rule_group_associations` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_firewall_rule_group_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_group_associations)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_firewall_rule_group_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_group_associations)
+```python title="Method definition"
+def list_firewall_rule_group_associations(
+    self,
+    *,
+    FirewallRuleGroupId: str = ...,
+    VpcId: str = ...,
+    Priority: int = ...,
+    Status: FirewallRuleGroupAssociationStatusType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFirewallRuleGroupAssociationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFirewallRuleGroupAssociationsRequestRequestTypeDef](./type_defs.md#listfirewallrulegroupassociationsrequestrequesttypedef).
+1. See [:material-code-brackets: FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype) 
+2. See [:material-code-braces: ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallRuleGroupId`: `str`
-- `VpcId`: `str`
-- `Priority`: `int`
-- `Status`:
-  [FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFirewallRuleGroupAssociationsRequestRequestTypeDef = {  # (1)
+    "FirewallRuleGroupId": ...,
+}
 
-Returns
-[ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef).
+parent.list_firewall_rule_group_associations(**kwargs)
+```
 
-<a id="list\_firewall\_rule\_groups"></a>
+1. See [:material-code-braces: ListFirewallRuleGroupAssociationsRequestRequestTypeDef](./type_defs.md#listfirewallrulegroupassociationsrequestrequesttypedef) 
 
-### list_firewall_rule_groups
+### list\_firewall\_rule\_groups
 
 Retrieves the minimal high-level information for the rule groups that you have
 defined.
 
-Type annotations for
-`boto3.client("route53resolver").list_firewall_rule_groups` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_firewall_rule_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_groups)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_firewall_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rule_groups)
+```python title="Method definition"
+def list_firewall_rule_groups(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFirewallRuleGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFirewallRuleGroupsRequestRequestTypeDef](./type_defs.md#listfirewallrulegroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFirewallRuleGroupsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef).
+parent.list_firewall_rule_groups(**kwargs)
+```
 
-<a id="list\_firewall\_rules"></a>
+1. See [:material-code-braces: ListFirewallRuleGroupsRequestRequestTypeDef](./type_defs.md#listfirewallrulegroupsrequestrequesttypedef) 
 
-### list_firewall_rules
+### list\_firewall\_rules
 
 Retrieves the firewall rules that you have defined for the specified firewall
 rule group.
 
-Type annotations for `boto3.client("route53resolver").list_firewall_rules`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_firewall_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rules)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_firewall_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_firewall_rules)
+```python title="Method definition"
+def list_firewall_rules(
+    self,
+    *,
+    FirewallRuleGroupId: str,
+    Priority: int = ...,
+    Action: ActionType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFirewallRulesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFirewallRulesRequestRequestTypeDef](./type_defs.md#listfirewallrulesrequestrequesttypedef).
+1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
+2. See [:material-code-braces: ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallRuleGroupId`: `str` *(required)*
-- `Priority`: `int`
-- `Action`: [ActionType](./literals.md#actiontype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFirewallRulesRequestRequestTypeDef = {  # (1)
+    "FirewallRuleGroupId": ...,
+}
 
-Returns
-[ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef).
+parent.list_firewall_rules(**kwargs)
+```
 
-<a id="list\_resolver\_configs"></a>
+1. See [:material-code-braces: ListFirewallRulesRequestRequestTypeDef](./type_defs.md#listfirewallrulesrequestrequesttypedef) 
 
-### list_resolver_configs
+### list\_resolver\_configs
 
 Retrieves the Resolver configurations that you have defined.
 
-Type annotations for `boto3.client("route53resolver").list_resolver_configs`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_resolver_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_configs)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_resolver_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_configs)
+```python title="Method definition"
+def list_resolver_configs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListResolverConfigsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResolverConfigsRequestRequestTypeDef](./type_defs.md#listresolverconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResolverConfigsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef).
+parent.list_resolver_configs(**kwargs)
+```
 
-<a id="list\_resolver\_dnssec\_configs"></a>
+1. See [:material-code-braces: ListResolverConfigsRequestRequestTypeDef](./type_defs.md#listresolverconfigsrequestrequesttypedef) 
 
-### list_resolver_dnssec_configs
+### list\_resolver\_dnssec\_configs
 
 Lists the configurations for DNSSEC validation that are associated with the
 current Amazon Web Services account.
 
-Type annotations for
-`boto3.client("route53resolver").list_resolver_dnssec_configs` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_resolver_dnssec_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_dnssec_configs)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_resolver_dnssec_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_dnssec_configs)
+```python title="Method definition"
+def list_resolver_dnssec_configs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListResolverDnssecConfigsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResolverDnssecConfigsRequestRequestTypeDef](./type_defs.md#listresolverdnssecconfigsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListResolverDnssecConfigsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef).
+parent.list_resolver_dnssec_configs(**kwargs)
+```
 
-<a id="list\_resolver\_endpoint\_ip\_addresses"></a>
+1. See [:material-code-braces: ListResolverDnssecConfigsRequestRequestTypeDef](./type_defs.md#listresolverdnssecconfigsrequestrequesttypedef) 
 
-### list_resolver_endpoint_ip_addresses
+### list\_resolver\_endpoint\_ip\_addresses
 
 Gets the IP addresses for a specified Resolver endpoint.
 
-Type annotations for
-`boto3.client("route53resolver").list_resolver_endpoint_ip_addresses` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_resolver_endpoint_ip_addresses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoint_ip_addresses)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_resolver_endpoint_ip_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoint_ip_addresses)
+```python title="Method definition"
+def list_resolver_endpoint_ip_addresses(
+    self,
+    *,
+    ResolverEndpointId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListResolverEndpointIpAddressesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResolverEndpointIpAddressesRequestRequestTypeDef](./type_defs.md#listresolverendpointipaddressesrequestrequesttypedef).
+1. See [:material-code-braces: ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverEndpointId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResolverEndpointIpAddressesRequestRequestTypeDef = {  # (1)
+    "ResolverEndpointId": ...,
+}
 
-Returns
-[ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef).
+parent.list_resolver_endpoint_ip_addresses(**kwargs)
+```
 
-<a id="list\_resolver\_endpoints"></a>
+1. See [:material-code-braces: ListResolverEndpointIpAddressesRequestRequestTypeDef](./type_defs.md#listresolverendpointipaddressesrequestrequesttypedef) 
 
-### list_resolver_endpoints
+### list\_resolver\_endpoints
 
 Lists all the Resolver endpoints that were created using the current Amazon Web
 Services account.
 
-Type annotations for `boto3.client("route53resolver").list_resolver_endpoints`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_resolver_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoints)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_resolver_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_endpoints)
+```python title="Method definition"
+def list_resolver_endpoints(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListResolverEndpointsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResolverEndpointsRequestRequestTypeDef](./type_defs.md#listresolverendpointsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListResolverEndpointsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef).
+parent.list_resolver_endpoints(**kwargs)
+```
 
-<a id="list\_resolver\_query\_log\_config\_associations"></a>
+1. See [:material-code-braces: ListResolverEndpointsRequestRequestTypeDef](./type_defs.md#listresolverendpointsrequestrequesttypedef) 
 
-### list_resolver_query_log_config_associations
+### list\_resolver\_query\_log\_config\_associations
 
 Lists information about associations between Amazon VPCs and query logging
 configurations.
 
-Type annotations for
-`boto3.client("route53resolver").list_resolver_query_log_config_associations`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_resolver_query_log_config_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_config_associations)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_resolver_query_log_config_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_config_associations)
+```python title="Method definition"
+def list_resolver_query_log_config_associations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortBy: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+) -> ListResolverQueryLogConfigAssociationsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListResolverQueryLogConfigAssociationsRequestRequestTypeDef](./type_defs.md#listresolverquerylogconfigassociationsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortBy`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+```python title="Usage example with kwargs"
+kwargs: ListResolverQueryLogConfigAssociationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef).
+parent.list_resolver_query_log_config_associations(**kwargs)
+```
 
-<a id="list\_resolver\_query\_log\_configs"></a>
+1. See [:material-code-braces: ListResolverQueryLogConfigAssociationsRequestRequestTypeDef](./type_defs.md#listresolverquerylogconfigassociationsrequestrequesttypedef) 
 
-### list_resolver_query_log_configs
+### list\_resolver\_query\_log\_configs
 
 Lists information about the specified query logging configurations.
 
-Type annotations for
-`boto3.client("route53resolver").list_resolver_query_log_configs` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_resolver_query_log_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_configs)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_resolver_query_log_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_query_log_configs)
+```python title="Method definition"
+def list_resolver_query_log_configs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortBy: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+) -> ListResolverQueryLogConfigsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListResolverQueryLogConfigsRequestRequestTypeDef](./type_defs.md#listresolverquerylogconfigsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortBy`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+```python title="Usage example with kwargs"
+kwargs: ListResolverQueryLogConfigsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef).
+parent.list_resolver_query_log_configs(**kwargs)
+```
 
-<a id="list\_resolver\_rule\_associations"></a>
+1. See [:material-code-braces: ListResolverQueryLogConfigsRequestRequestTypeDef](./type_defs.md#listresolverquerylogconfigsrequestrequesttypedef) 
 
-### list_resolver_rule_associations
+### list\_resolver\_rule\_associations
 
 Lists the associations that were created between Resolver rules and VPCs using
 the current Amazon Web Services account.
 
-Type annotations for
-`boto3.client("route53resolver").list_resolver_rule_associations` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_resolver_rule_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rule_associations)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_resolver_rule_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rule_associations)
+```python title="Method definition"
+def list_resolver_rule_associations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListResolverRuleAssociationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResolverRuleAssociationsRequestRequestTypeDef](./type_defs.md#listresolverruleassociationsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListResolverRuleAssociationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef).
+parent.list_resolver_rule_associations(**kwargs)
+```
 
-<a id="list\_resolver\_rules"></a>
+1. See [:material-code-braces: ListResolverRuleAssociationsRequestRequestTypeDef](./type_defs.md#listresolverruleassociationsrequestrequesttypedef) 
 
-### list_resolver_rules
+### list\_resolver\_rules
 
-Lists the Resolver rules that were created using the current Amazon Web
-Services account.
+Lists the Resolver rules that were created using the current Amazon Web Services
+account.
 
-Type annotations for `boto3.client("route53resolver").list_resolver_rules`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_resolver_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rules)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_resolver_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_resolver_rules)
+```python title="Method definition"
+def list_resolver_rules(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListResolverRulesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResolverRulesRequestRequestTypeDef](./type_defs.md#listresolverrulesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListResolverRulesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef).
+parent.list_resolver_rules(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListResolverRulesRequestRequestTypeDef](./type_defs.md#listresolverrulesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags that you associated with the specified resource.
 
-Type annotations for `boto3.client("route53resolver").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Route53Resolver.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_firewall\_rule\_group\_policy"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_firewall_rule_group_policy
+### put\_firewall\_rule\_group\_policy
 
 Attaches an Identity and Access Management (Amazon Web Services IAM) policy for
 sharing the rule group.
 
-Type annotations for
-`boto3.client("route53resolver").put_firewall_rule_group_policy` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").put_firewall_rule_group_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_firewall_rule_group_policy)
 
-Boto3 documentation:
-[Route53Resolver.Client.put_firewall_rule_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_firewall_rule_group_policy)
+```python title="Method definition"
+def put_firewall_rule_group_policy(
+    self,
+    *,
+    Arn: str,
+    FirewallRuleGroupPolicy: str,
+) -> PutFirewallRuleGroupPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutFirewallRuleGroupPolicyRequestRequestTypeDef](./type_defs.md#putfirewallrulegrouppolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#putfirewallrulegrouppolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `FirewallRuleGroupPolicy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutFirewallRuleGroupPolicyRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "FirewallRuleGroupPolicy": ...,
+}
 
-Returns
-[PutFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#putfirewallrulegrouppolicyresponsetypedef).
+parent.put_firewall_rule_group_policy(**kwargs)
+```
 
-<a id="put\_resolver\_query\_log\_config\_policy"></a>
+1. See [:material-code-braces: PutFirewallRuleGroupPolicyRequestRequestTypeDef](./type_defs.md#putfirewallrulegrouppolicyrequestrequesttypedef) 
 
-### put_resolver_query_log_config_policy
+### put\_resolver\_query\_log\_config\_policy
 
 Specifies an Amazon Web Services account that you want to share a query logging
 configuration with, the query logging configuration that you want to share, and
 the operations that you want the account to be able to perform on the
 configuration.
 
-Type annotations for
-`boto3.client("route53resolver").put_resolver_query_log_config_policy` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").put_resolver_query_log_config_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_query_log_config_policy)
 
-Boto3 documentation:
-[Route53Resolver.Client.put_resolver_query_log_config_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_query_log_config_policy)
+```python title="Method definition"
+def put_resolver_query_log_config_policy(
+    self,
+    *,
+    Arn: str,
+    ResolverQueryLogConfigPolicy: str,
+) -> PutResolverQueryLogConfigPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutResolverQueryLogConfigPolicyRequestRequestTypeDef](./type_defs.md#putresolverquerylogconfigpolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#putresolverquerylogconfigpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `ResolverQueryLogConfigPolicy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutResolverQueryLogConfigPolicyRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "ResolverQueryLogConfigPolicy": ...,
+}
 
-Returns
-[PutResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#putresolverquerylogconfigpolicyresponsetypedef).
+parent.put_resolver_query_log_config_policy(**kwargs)
+```
 
-<a id="put\_resolver\_rule\_policy"></a>
+1. See [:material-code-braces: PutResolverQueryLogConfigPolicyRequestRequestTypeDef](./type_defs.md#putresolverquerylogconfigpolicyrequestrequesttypedef) 
 
-### put_resolver_rule_policy
+### put\_resolver\_rule\_policy
 
 Specifies an Amazon Web Services rule that you want to share with another
 account, the account that you want to share the rule with, and the operations
 that you want the account to be able to perform on the rule.
 
-Type annotations for `boto3.client("route53resolver").put_resolver_rule_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").put_resolver_rule_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_rule_policy)
 
-Boto3 documentation:
-[Route53Resolver.Client.put_resolver_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.put_resolver_rule_policy)
+```python title="Method definition"
+def put_resolver_rule_policy(
+    self,
+    *,
+    Arn: str,
+    ResolverRulePolicy: str,
+) -> PutResolverRulePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutResolverRulePolicyRequestRequestTypeDef](./type_defs.md#putresolverrulepolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutResolverRulePolicyResponseTypeDef](./type_defs.md#putresolverrulepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `ResolverRulePolicy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutResolverRulePolicyRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "ResolverRulePolicy": ...,
+}
 
-Returns
-[PutResolverRulePolicyResponseTypeDef](./type_defs.md#putresolverrulepolicyresponsetypedef).
+parent.put_resolver_rule_policy(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutResolverRulePolicyRequestRequestTypeDef](./type_defs.md#putresolverrulepolicyrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags to a specified resource.
 
-Type annotations for `boto3.client("route53resolver").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.tag_resource)
 
-Boto3 documentation:
-[Route53Resolver.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from a specified resource.
 
-Type annotations for `boto3.client("route53resolver").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.untag_resource)
 
-Boto3 documentation:
-[Route53Resolver.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_firewall\_config"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_firewall_config
+### update\_firewall\_config
 
 Updates the configuration of the firewall behavior provided by DNS Firewall for
 a single VPC from Amazon Virtual Private Cloud (Amazon VPC).
 
-Type annotations for `boto3.client("route53resolver").update_firewall_config`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").update_firewall_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.update_firewall_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_config)
+```python title="Method definition"
+def update_firewall_config(
+    self,
+    *,
+    ResourceId: str,
+    FirewallFailOpen: FirewallFailOpenStatusType,  # (1)
+) -> UpdateFirewallConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFirewallConfigRequestRequestTypeDef](./type_defs.md#updatefirewallconfigrequestrequesttypedef).
+1. See [:material-code-brackets: FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype) 
+2. See [:material-code-braces: UpdateFirewallConfigResponseTypeDef](./type_defs.md#updatefirewallconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `FirewallFailOpen`:
-  [FirewallFailOpenStatusType](./literals.md#firewallfailopenstatustype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateFirewallConfigRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "FirewallFailOpen": ...,
+}
 
-Returns
-[UpdateFirewallConfigResponseTypeDef](./type_defs.md#updatefirewallconfigresponsetypedef).
+parent.update_firewall_config(**kwargs)
+```
 
-<a id="update\_firewall\_domains"></a>
+1. See [:material-code-braces: UpdateFirewallConfigRequestRequestTypeDef](./type_defs.md#updatefirewallconfigrequestrequesttypedef) 
 
-### update_firewall_domains
+### update\_firewall\_domains
 
 Updates the firewall domain list from an array of domain specifications.
 
-Type annotations for `boto3.client("route53resolver").update_firewall_domains`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").update_firewall_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_domains)
 
-Boto3 documentation:
-[Route53Resolver.Client.update_firewall_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_domains)
+```python title="Method definition"
+def update_firewall_domains(
+    self,
+    *,
+    FirewallDomainListId: str,
+    Operation: FirewallDomainUpdateOperationType,  # (1)
+    Domains: Sequence[str],
+) -> UpdateFirewallDomainsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFirewallDomainsRequestRequestTypeDef](./type_defs.md#updatefirewalldomainsrequestrequesttypedef).
+1. See [:material-code-brackets: FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype) 
+2. See [:material-code-braces: UpdateFirewallDomainsResponseTypeDef](./type_defs.md#updatefirewalldomainsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallDomainListId`: `str` *(required)*
-- `Operation`:
-  [FirewallDomainUpdateOperationType](./literals.md#firewalldomainupdateoperationtype)
-  *(required)*
-- `Domains`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateFirewallDomainsRequestRequestTypeDef = {  # (1)
+    "FirewallDomainListId": ...,
+    "Operation": ...,
+    "Domains": ...,
+}
 
-Returns
-[UpdateFirewallDomainsResponseTypeDef](./type_defs.md#updatefirewalldomainsresponsetypedef).
+parent.update_firewall_domains(**kwargs)
+```
 
-<a id="update\_firewall\_rule"></a>
+1. See [:material-code-braces: UpdateFirewallDomainsRequestRequestTypeDef](./type_defs.md#updatefirewalldomainsrequestrequesttypedef) 
 
-### update_firewall_rule
+### update\_firewall\_rule
 
 Updates the specified firewall rule.
 
-Type annotations for `boto3.client("route53resolver").update_firewall_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").update_firewall_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule)
 
-Boto3 documentation:
-[Route53Resolver.Client.update_firewall_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule)
+```python title="Method definition"
+def update_firewall_rule(
+    self,
+    *,
+    FirewallRuleGroupId: str,
+    FirewallDomainListId: str,
+    Priority: int = ...,
+    Action: ActionType = ...,  # (1)
+    BlockResponse: BlockResponseType = ...,  # (2)
+    BlockOverrideDomain: str = ...,
+    BlockOverrideDnsType: BlockOverrideDnsTypeType = ...,  # (3)
+    BlockOverrideTtl: int = ...,
+    Name: str = ...,
+) -> UpdateFirewallRuleResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFirewallRuleRequestRequestTypeDef](./type_defs.md#updatefirewallrulerequestrequesttypedef).
+1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
+2. See [:material-code-brackets: BlockResponseType](./literals.md#blockresponsetype) 
+3. See [:material-code-brackets: BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype) 
+4. See [:material-code-braces: UpdateFirewallRuleResponseTypeDef](./type_defs.md#updatefirewallruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallRuleGroupId`: `str` *(required)*
-- `FirewallDomainListId`: `str` *(required)*
-- `Priority`: `int`
-- `Action`: [ActionType](./literals.md#actiontype)
-- `BlockResponse`: [BlockResponseType](./literals.md#blockresponsetype)
-- `BlockOverrideDomain`: `str`
-- `BlockOverrideDnsType`: `Literal['CNAME']` (see
-  [BlockOverrideDnsTypeType](./literals.md#blockoverridednstypetype))
-- `BlockOverrideTtl`: `int`
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFirewallRuleRequestRequestTypeDef = {  # (1)
+    "FirewallRuleGroupId": ...,
+    "FirewallDomainListId": ...,
+}
 
-Returns
-[UpdateFirewallRuleResponseTypeDef](./type_defs.md#updatefirewallruleresponsetypedef).
+parent.update_firewall_rule(**kwargs)
+```
 
-<a id="update\_firewall\_rule\_group\_association"></a>
+1. See [:material-code-braces: UpdateFirewallRuleRequestRequestTypeDef](./type_defs.md#updatefirewallrulerequestrequesttypedef) 
 
-### update_firewall_rule_group_association
+### update\_firewall\_rule\_group\_association
 
-Changes the association of a FirewallRuleGroup with a VPC.
+Changes the association of a  FirewallRuleGroup with a VPC.
 
-Type annotations for
-`boto3.client("route53resolver").update_firewall_rule_group_association`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").update_firewall_rule_group_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule_group_association)
 
-Boto3 documentation:
-[Route53Resolver.Client.update_firewall_rule_group_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_firewall_rule_group_association)
+```python title="Method definition"
+def update_firewall_rule_group_association(
+    self,
+    *,
+    FirewallRuleGroupAssociationId: str,
+    Priority: int = ...,
+    MutationProtection: MutationProtectionStatusType = ...,  # (1)
+    Name: str = ...,
+) -> UpdateFirewallRuleGroupAssociationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFirewallRuleGroupAssociationRequestRequestTypeDef](./type_defs.md#updatefirewallrulegroupassociationrequestrequesttypedef).
+1. See [:material-code-brackets: MutationProtectionStatusType](./literals.md#mutationprotectionstatustype) 
+2. See [:material-code-braces: UpdateFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#updatefirewallrulegroupassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirewallRuleGroupAssociationId`: `str` *(required)*
-- `Priority`: `int`
-- `MutationProtection`:
-  [MutationProtectionStatusType](./literals.md#mutationprotectionstatustype)
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFirewallRuleGroupAssociationRequestRequestTypeDef = {  # (1)
+    "FirewallRuleGroupAssociationId": ...,
+}
 
-Returns
-[UpdateFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#updatefirewallrulegroupassociationresponsetypedef).
+parent.update_firewall_rule_group_association(**kwargs)
+```
 
-<a id="update\_resolver\_config"></a>
+1. See [:material-code-braces: UpdateFirewallRuleGroupAssociationRequestRequestTypeDef](./type_defs.md#updatefirewallrulegroupassociationrequestrequesttypedef) 
 
-### update_resolver_config
+### update\_resolver\_config
 
 Updates the behavior configuration of Route 53 Resolver behavior for a single
 VPC from Amazon Virtual Private Cloud.
 
-Type annotations for `boto3.client("route53resolver").update_resolver_config`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").update_resolver_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.update_resolver_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_config)
+```python title="Method definition"
+def update_resolver_config(
+    self,
+    *,
+    ResourceId: str,
+    AutodefinedReverseFlag: AutodefinedReverseFlagType,  # (1)
+) -> UpdateResolverConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResolverConfigRequestRequestTypeDef](./type_defs.md#updateresolverconfigrequestrequesttypedef).
+1. See [:material-code-brackets: AutodefinedReverseFlagType](./literals.md#autodefinedreverseflagtype) 
+2. See [:material-code-braces: UpdateResolverConfigResponseTypeDef](./type_defs.md#updateresolverconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `AutodefinedReverseFlag`:
-  [AutodefinedReverseFlagType](./literals.md#autodefinedreverseflagtype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateResolverConfigRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "AutodefinedReverseFlag": ...,
+}
 
-Returns
-[UpdateResolverConfigResponseTypeDef](./type_defs.md#updateresolverconfigresponsetypedef).
+parent.update_resolver_config(**kwargs)
+```
 
-<a id="update\_resolver\_dnssec\_config"></a>
+1. See [:material-code-braces: UpdateResolverConfigRequestRequestTypeDef](./type_defs.md#updateresolverconfigrequestrequesttypedef) 
 
-### update_resolver_dnssec_config
+### update\_resolver\_dnssec\_config
 
 Updates an existing DNSSEC validation configuration.
 
-Type annotations for
-`boto3.client("route53resolver").update_resolver_dnssec_config` method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").update_resolver_dnssec_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_dnssec_config)
 
-Boto3 documentation:
-[Route53Resolver.Client.update_resolver_dnssec_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_dnssec_config)
+```python title="Method definition"
+def update_resolver_dnssec_config(
+    self,
+    *,
+    ResourceId: str,
+    Validation: ValidationType,  # (1)
+) -> UpdateResolverDnssecConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResolverDnssecConfigRequestRequestTypeDef](./type_defs.md#updateresolverdnssecconfigrequestrequesttypedef).
+1. See [:material-code-brackets: ValidationType](./literals.md#validationtype) 
+2. See [:material-code-braces: UpdateResolverDnssecConfigResponseTypeDef](./type_defs.md#updateresolverdnssecconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `Validation`: [ValidationType](./literals.md#validationtype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateResolverDnssecConfigRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Validation": ...,
+}
 
-Returns
-[UpdateResolverDnssecConfigResponseTypeDef](./type_defs.md#updateresolverdnssecconfigresponsetypedef).
+parent.update_resolver_dnssec_config(**kwargs)
+```
 
-<a id="update\_resolver\_endpoint"></a>
+1. See [:material-code-braces: UpdateResolverDnssecConfigRequestRequestTypeDef](./type_defs.md#updateresolverdnssecconfigrequestrequesttypedef) 
 
-### update_resolver_endpoint
+### update\_resolver\_endpoint
 
 Updates the name of an inbound or an outbound Resolver endpoint.
 
-Type annotations for `boto3.client("route53resolver").update_resolver_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").update_resolver_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint)
 
-Boto3 documentation:
-[Route53Resolver.Client.update_resolver_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_endpoint)
+```python title="Method definition"
+def update_resolver_endpoint(
+    self,
+    *,
+    ResolverEndpointId: str,
+    Name: str = ...,
+) -> UpdateResolverEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResolverEndpointRequestRequestTypeDef](./type_defs.md#updateresolverendpointrequestrequesttypedef).
+1. See [:material-code-braces: UpdateResolverEndpointResponseTypeDef](./type_defs.md#updateresolverendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverEndpointId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateResolverEndpointRequestRequestTypeDef = {  # (1)
+    "ResolverEndpointId": ...,
+}
 
-Returns
-[UpdateResolverEndpointResponseTypeDef](./type_defs.md#updateresolverendpointresponsetypedef).
+parent.update_resolver_endpoint(**kwargs)
+```
 
-<a id="update\_resolver\_rule"></a>
+1. See [:material-code-braces: UpdateResolverEndpointRequestRequestTypeDef](./type_defs.md#updateresolverendpointrequestrequesttypedef) 
 
-### update_resolver_rule
+### update\_resolver\_rule
 
 Updates settings for a specified Resolver rule.
 
-Type annotations for `boto3.client("route53resolver").update_resolver_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("route53resolver").update_resolver_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_rule)
 
-Boto3 documentation:
-[Route53Resolver.Client.update_resolver_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.update_resolver_rule)
+```python title="Method definition"
+def update_resolver_rule(
+    self,
+    *,
+    ResolverRuleId: str,
+    Config: ResolverRuleConfigTypeDef,  # (1)
+) -> UpdateResolverRuleResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResolverRuleRequestRequestTypeDef](./type_defs.md#updateresolverrulerequestrequesttypedef).
+1. See [:material-code-braces: ResolverRuleConfigTypeDef](./type_defs.md#resolverruleconfigtypedef) 
+2. See [:material-code-braces: UpdateResolverRuleResponseTypeDef](./type_defs.md#updateresolverruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResolverRuleId`: `str` *(required)*
-- `Config`:
-  [ResolverRuleConfigTypeDef](./type_defs.md#resolverruleconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateResolverRuleRequestRequestTypeDef = {  # (1)
+    "ResolverRuleId": ...,
+    "Config": ...,
+}
 
-Returns
-[UpdateResolverRuleResponseTypeDef](./type_defs.md#updateresolverruleresponsetypedef).
+parent.update_resolver_rule(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateResolverRuleRequestRequestTypeDef](./type_defs.md#updateresolverrulerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("route53resolver").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator` method with overloads.
 
-- `client.get_paginator("list_firewall_configs")` ->
-  [ListFirewallConfigsPaginator](./paginators.md#listfirewallconfigspaginator)
-- `client.get_paginator("list_firewall_domain_lists")` ->
-  [ListFirewallDomainListsPaginator](./paginators.md#listfirewalldomainlistspaginator)
-- `client.get_paginator("list_firewall_domains")` ->
-  [ListFirewallDomainsPaginator](./paginators.md#listfirewalldomainspaginator)
-- `client.get_paginator("list_firewall_rule_group_associations")` ->
-  [ListFirewallRuleGroupAssociationsPaginator](./paginators.md#listfirewallrulegroupassociationspaginator)
-- `client.get_paginator("list_firewall_rule_groups")` ->
-  [ListFirewallRuleGroupsPaginator](./paginators.md#listfirewallrulegroupspaginator)
-- `client.get_paginator("list_firewall_rules")` ->
-  [ListFirewallRulesPaginator](./paginators.md#listfirewallrulespaginator)
-- `client.get_paginator("list_resolver_configs")` ->
-  [ListResolverConfigsPaginator](./paginators.md#listresolverconfigspaginator)
-- `client.get_paginator("list_resolver_dnssec_configs")` ->
-  [ListResolverDnssecConfigsPaginator](./paginators.md#listresolverdnssecconfigspaginator)
-- `client.get_paginator("list_resolver_endpoint_ip_addresses")` ->
-  [ListResolverEndpointIpAddressesPaginator](./paginators.md#listresolverendpointipaddressespaginator)
-- `client.get_paginator("list_resolver_endpoints")` ->
-  [ListResolverEndpointsPaginator](./paginators.md#listresolverendpointspaginator)
-- `client.get_paginator("list_resolver_query_log_config_associations")` ->
-  [ListResolverQueryLogConfigAssociationsPaginator](./paginators.md#listresolverquerylogconfigassociationspaginator)
-- `client.get_paginator("list_resolver_query_log_configs")` ->
-  [ListResolverQueryLogConfigsPaginator](./paginators.md#listresolverquerylogconfigspaginator)
-- `client.get_paginator("list_resolver_rule_associations")` ->
-  [ListResolverRuleAssociationsPaginator](./paginators.md#listresolverruleassociationspaginator)
-- `client.get_paginator("list_resolver_rules")` ->
-  [ListResolverRulesPaginator](./paginators.md#listresolverrulespaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_firewall_configs")` -> [ListFirewallConfigsPaginator](./paginators.md#listfirewallconfigspaginator)
+- `client.get_paginator("list_firewall_domain_lists")` -> [ListFirewallDomainListsPaginator](./paginators.md#listfirewalldomainlistspaginator)
+- `client.get_paginator("list_firewall_domains")` -> [ListFirewallDomainsPaginator](./paginators.md#listfirewalldomainspaginator)
+- `client.get_paginator("list_firewall_rule_group_associations")` -> [ListFirewallRuleGroupAssociationsPaginator](./paginators.md#listfirewallrulegroupassociationspaginator)
+- `client.get_paginator("list_firewall_rule_groups")` -> [ListFirewallRuleGroupsPaginator](./paginators.md#listfirewallrulegroupspaginator)
+- `client.get_paginator("list_firewall_rules")` -> [ListFirewallRulesPaginator](./paginators.md#listfirewallrulespaginator)
+- `client.get_paginator("list_resolver_configs")` -> [ListResolverConfigsPaginator](./paginators.md#listresolverconfigspaginator)
+- `client.get_paginator("list_resolver_dnssec_configs")` -> [ListResolverDnssecConfigsPaginator](./paginators.md#listresolverdnssecconfigspaginator)
+- `client.get_paginator("list_resolver_endpoint_ip_addresses")` -> [ListResolverEndpointIpAddressesPaginator](./paginators.md#listresolverendpointipaddressespaginator)
+- `client.get_paginator("list_resolver_endpoints")` -> [ListResolverEndpointsPaginator](./paginators.md#listresolverendpointspaginator)
+- `client.get_paginator("list_resolver_query_log_config_associations")` -> [ListResolverQueryLogConfigAssociationsPaginator](./paginators.md#listresolverquerylogconfigassociationspaginator)
+- `client.get_paginator("list_resolver_query_log_configs")` -> [ListResolverQueryLogConfigsPaginator](./paginators.md#listresolverquerylogconfigspaginator)
+- `client.get_paginator("list_resolver_rule_associations")` -> [ListResolverRuleAssociationsPaginator](./paginators.md#listresolverruleassociationspaginator)
+- `client.get_paginator("list_resolver_rules")` -> [ListResolverRulesPaginator](./paginators.md#listresolverrulespaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+
+

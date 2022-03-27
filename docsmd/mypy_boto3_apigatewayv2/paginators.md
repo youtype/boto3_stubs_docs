@@ -1,35 +1,18 @@
-<a id="paginators-for-boto3-apigatewayv2-module"></a>
-
-# Paginators for boto3 ApiGatewayV2 module
+# Paginators
 
 > [Index](../README.md) > [ApiGatewayV2](./README.md) > Paginators
 
-Auto-generated documentation for
-[ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
-type annotations stubs module
-[mypy-boto3-apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
+!!! note ""
 
-- [Paginators for boto3 ApiGatewayV2 module](#paginators-for-boto3-apigatewayv2-module)
-  - [GetApisPaginator](#getapispaginator)
-  - [GetAuthorizersPaginator](#getauthorizerspaginator)
-  - [GetDeploymentsPaginator](#getdeploymentspaginator)
-  - [GetDomainNamesPaginator](#getdomainnamespaginator)
-  - [GetIntegrationResponsesPaginator](#getintegrationresponsespaginator)
-  - [GetIntegrationsPaginator](#getintegrationspaginator)
-  - [GetModelsPaginator](#getmodelspaginator)
-  - [GetRouteResponsesPaginator](#getrouteresponsespaginator)
-  - [GetRoutesPaginator](#getroutespaginator)
-  - [GetStagesPaginator](#getstagespaginator)
-
-<a id="getapispaginator"></a>
+    Auto-generated documentation for [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
+    type annotations stubs module [mypy-boto3-apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
 ## GetApisPaginator
 
-Type annotations for `boto3.client("apigatewayv2").get_paginator("get_apis")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_apis")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetApis)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetApisPaginator
@@ -38,27 +21,39 @@ def get_get_apis_paginator() -> GetApisPaginator:
     return Session().client("apigatewayv2").get_paginator("get_apis")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetApis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetApis)
 
-Arguments for `GetApisPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetApisPaginator.paginate` method.
 
-`GetApisPaginator.paginate` returns
-`_PageIterator`\[[GetApisResponseTypeDef](./type_defs.md#getapisresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetApisResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getauthorizerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetApisResponseTypeDef](./type_defs.md#getapisresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetApisRequestGetApisPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetApisRequestGetApisPaginateTypeDef](./type_defs.md#getapisrequestgetapispaginatetypedef) 
 ## GetAuthorizersPaginator
 
-Type annotations for
-`boto3.client("apigatewayv2").get_paginator("get_authorizers")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_authorizers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetAuthorizers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetAuthorizersPaginator
@@ -67,28 +62,40 @@ def get_get_authorizers_paginator() -> GetAuthorizersPaginator:
     return Session().client("apigatewayv2").get_paginator("get_authorizers")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetAuthorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetAuthorizers)
 
-Arguments for `GetAuthorizersPaginator.paginate` method:
+### paginate
 
-- `ApiId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetAuthorizersPaginator.paginate` method.
 
-`GetAuthorizersPaginator.paginate` returns
-`_PageIterator`\[[GetAuthorizersResponseTypeDef](./type_defs.md#getauthorizersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApiId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetAuthorizersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getdeploymentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetAuthorizersResponseTypeDef](./type_defs.md#getauthorizersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetAuthorizersRequestGetAuthorizersPaginateTypeDef = {  # (1)
+    "ApiId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetAuthorizersRequestGetAuthorizersPaginateTypeDef](./type_defs.md#getauthorizersrequestgetauthorizerspaginatetypedef) 
 ## GetDeploymentsPaginator
 
-Type annotations for
-`boto3.client("apigatewayv2").get_paginator("get_deployments")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_deployments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetDeployments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetDeploymentsPaginator
@@ -97,28 +104,40 @@ def get_get_deployments_paginator() -> GetDeploymentsPaginator:
     return Session().client("apigatewayv2").get_paginator("get_deployments")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetDeployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetDeployments)
 
-Arguments for `GetDeploymentsPaginator.paginate` method:
+### paginate
 
-- `ApiId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDeploymentsPaginator.paginate` method.
 
-`GetDeploymentsPaginator.paginate` returns
-`_PageIterator`\[[GetDeploymentsResponseTypeDef](./type_defs.md#getdeploymentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApiId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetDeploymentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getdomainnamespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetDeploymentsResponseTypeDef](./type_defs.md#getdeploymentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDeploymentsRequestGetDeploymentsPaginateTypeDef = {  # (1)
+    "ApiId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDeploymentsRequestGetDeploymentsPaginateTypeDef](./type_defs.md#getdeploymentsrequestgetdeploymentspaginatetypedef) 
 ## GetDomainNamesPaginator
 
-Type annotations for
-`boto3.client("apigatewayv2").get_paginator("get_domain_names")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_domain_names")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetDomainNames)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetDomainNamesPaginator
@@ -127,27 +146,39 @@ def get_get_domain_names_paginator() -> GetDomainNamesPaginator:
     return Session().client("apigatewayv2").get_paginator("get_domain_names")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetDomainNames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetDomainNames)
 
-Arguments for `GetDomainNamesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDomainNamesPaginator.paginate` method.
 
-`GetDomainNamesPaginator.paginate` returns
-`_PageIterator`\[[GetDomainNamesResponseTypeDef](./type_defs.md#getdomainnamesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetDomainNamesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getintegrationresponsespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetDomainNamesResponseTypeDef](./type_defs.md#getdomainnamesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDomainNamesRequestGetDomainNamesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDomainNamesRequestGetDomainNamesPaginateTypeDef](./type_defs.md#getdomainnamesrequestgetdomainnamespaginatetypedef) 
 ## GetIntegrationResponsesPaginator
 
-Type annotations for
-`boto3.client("apigatewayv2").get_paginator("get_integration_responses")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_integration_responses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetIntegrationResponses)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetIntegrationResponsesPaginator
@@ -156,29 +187,42 @@ def get_get_integration_responses_paginator() -> GetIntegrationResponsesPaginato
     return Session().client("apigatewayv2").get_paginator("get_integration_responses")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetIntegrationResponses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetIntegrationResponses)
 
-Arguments for `GetIntegrationResponsesPaginator.paginate` method:
+### paginate
 
-- `ApiId`: `str` *(required)*
-- `IntegrationId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetIntegrationResponsesPaginator.paginate` method.
 
-`GetIntegrationResponsesPaginator.paginate` returns
-`_PageIterator`\[[GetIntegrationResponsesResponseTypeDef](./type_defs.md#getintegrationresponsesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApiId: str,
+    IntegrationId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetIntegrationResponsesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getintegrationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetIntegrationResponsesResponseTypeDef](./type_defs.md#getintegrationresponsesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetIntegrationResponsesRequestGetIntegrationResponsesPaginateTypeDef = {  # (1)
+    "ApiId": ...,
+    "IntegrationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIntegrationResponsesRequestGetIntegrationResponsesPaginateTypeDef](./type_defs.md#getintegrationresponsesrequestgetintegrationresponsespaginatetypedef) 
 ## GetIntegrationsPaginator
 
-Type annotations for
-`boto3.client("apigatewayv2").get_paginator("get_integrations")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_integrations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetIntegrations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetIntegrationsPaginator
@@ -187,28 +231,40 @@ def get_get_integrations_paginator() -> GetIntegrationsPaginator:
     return Session().client("apigatewayv2").get_paginator("get_integrations")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetIntegrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetIntegrations)
 
-Arguments for `GetIntegrationsPaginator.paginate` method:
+### paginate
 
-- `ApiId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetIntegrationsPaginator.paginate` method.
 
-`GetIntegrationsPaginator.paginate` returns
-`_PageIterator`\[[GetIntegrationsResponseTypeDef](./type_defs.md#getintegrationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApiId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetIntegrationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getmodelspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetIntegrationsResponseTypeDef](./type_defs.md#getintegrationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetIntegrationsRequestGetIntegrationsPaginateTypeDef = {  # (1)
+    "ApiId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIntegrationsRequestGetIntegrationsPaginateTypeDef](./type_defs.md#getintegrationsrequestgetintegrationspaginatetypedef) 
 ## GetModelsPaginator
 
-Type annotations for
-`boto3.client("apigatewayv2").get_paginator("get_models")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_models")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetModels)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetModelsPaginator
@@ -217,28 +273,40 @@ def get_get_models_paginator() -> GetModelsPaginator:
     return Session().client("apigatewayv2").get_paginator("get_models")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetModels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetModels)
 
-Arguments for `GetModelsPaginator.paginate` method:
+### paginate
 
-- `ApiId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetModelsPaginator.paginate` method.
 
-`GetModelsPaginator.paginate` returns
-`_PageIterator`\[[GetModelsResponseTypeDef](./type_defs.md#getmodelsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApiId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetModelsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getrouteresponsespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetModelsResponseTypeDef](./type_defs.md#getmodelsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetModelsRequestGetModelsPaginateTypeDef = {  # (1)
+    "ApiId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetModelsRequestGetModelsPaginateTypeDef](./type_defs.md#getmodelsrequestgetmodelspaginatetypedef) 
 ## GetRouteResponsesPaginator
 
-Type annotations for
-`boto3.client("apigatewayv2").get_paginator("get_route_responses")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_route_responses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetRouteResponses)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetRouteResponsesPaginator
@@ -247,29 +315,42 @@ def get_get_route_responses_paginator() -> GetRouteResponsesPaginator:
     return Session().client("apigatewayv2").get_paginator("get_route_responses")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetRouteResponses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetRouteResponses)
 
-Arguments for `GetRouteResponsesPaginator.paginate` method:
+### paginate
 
-- `ApiId`: `str` *(required)*
-- `RouteId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetRouteResponsesPaginator.paginate` method.
 
-`GetRouteResponsesPaginator.paginate` returns
-`_PageIterator`\[[GetRouteResponsesResponseTypeDef](./type_defs.md#getrouteresponsesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApiId: str,
+    RouteId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetRouteResponsesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getroutespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetRouteResponsesResponseTypeDef](./type_defs.md#getrouteresponsesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetRouteResponsesRequestGetRouteResponsesPaginateTypeDef = {  # (1)
+    "ApiId": ...,
+    "RouteId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetRouteResponsesRequestGetRouteResponsesPaginateTypeDef](./type_defs.md#getrouteresponsesrequestgetrouteresponsespaginatetypedef) 
 ## GetRoutesPaginator
 
-Type annotations for
-`boto3.client("apigatewayv2").get_paginator("get_routes")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_routes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetRoutes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetRoutesPaginator
@@ -278,28 +359,40 @@ def get_get_routes_paginator() -> GetRoutesPaginator:
     return Session().client("apigatewayv2").get_paginator("get_routes")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetRoutes)
 
-Arguments for `GetRoutesPaginator.paginate` method:
+### paginate
 
-- `ApiId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetRoutesPaginator.paginate` method.
 
-`GetRoutesPaginator.paginate` returns
-`_PageIterator`\[[GetRoutesResponseTypeDef](./type_defs.md#getroutesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApiId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetRoutesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getstagespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetRoutesResponseTypeDef](./type_defs.md#getroutesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetRoutesRequestGetRoutesPaginateTypeDef = {  # (1)
+    "ApiId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetRoutesRequestGetRoutesPaginateTypeDef](./type_defs.md#getroutesrequestgetroutespaginatetypedef) 
 ## GetStagesPaginator
 
-Type annotations for
-`boto3.client("apigatewayv2").get_paginator("get_stages")`.
+Type annotations and code completion for `#!python boto3.client("apigatewayv2").get_paginator("get_stages")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetStages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_apigatewayv2.paginator import GetStagesPaginator
@@ -308,14 +401,31 @@ def get_get_stages_paginator() -> GetStagesPaginator:
     return Session().client("apigatewayv2").get_paginator("get_stages")
 ```
 
-Boto3 documentation:
-[ApiGatewayV2.Paginator.GetStages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2.Paginator.GetStages)
 
-Arguments for `GetStagesPaginator.paginate` method:
+### paginate
 
-- `ApiId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetStagesPaginator.paginate` method.
 
-`GetStagesPaginator.paginate` returns
-`_PageIterator`\[[GetStagesResponseTypeDef](./type_defs.md#getstagesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApiId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetStagesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetStagesResponseTypeDef](./type_defs.md#getstagesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStagesRequestGetStagesPaginateTypeDef = {  # (1)
+    "ApiId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetStagesRequestGetStagesPaginateTypeDef](./type_defs.md#getstagesrequestgetstagespaginatetypedef) 

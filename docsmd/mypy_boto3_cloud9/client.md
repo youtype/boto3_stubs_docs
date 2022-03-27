@@ -1,45 +1,18 @@
-<a id="cloud9client-for-boto3-cloud9-module"></a>
-
-# Cloud9Client for boto3 Cloud9 module
+# Cloud9Client
 
 > [Index](../README.md) > [Cloud9](./README.md) > Cloud9Client
 
-Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
-type annotations stubs module
-[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+!!! note ""
 
-- [Cloud9Client for boto3 Cloud9 module](#cloud9client-for-boto3-cloud9-module)
-  - [Cloud9Client](#cloud9client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_environment_ec2](#create_environment_ec2)
-    - [create_environment_membership](#create_environment_membership)
-    - [delete_environment](#delete_environment)
-    - [delete_environment_membership](#delete_environment_membership)
-    - [describe_environment_memberships](#describe_environment_memberships)
-    - [describe_environment_status](#describe_environment_status)
-    - [describe_environments](#describe_environments)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_environments](#list_environments)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_environment](#update_environment)
-    - [update_environment_membership](#update_environment_membership)
-    - [get_paginator](#get_paginator)
-
-<a id="cloud9client"></a>
+    Auto-generated documentation for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+    type annotations stubs module [mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 ## Cloud9Client
 
-Type annotations for `boto3.client("cloud9")`
+Type annotations and code completion for `#!python boto3.client("cloud9")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cloud9.client import Cloud9Client
 
@@ -47,402 +20,501 @@ def get_cloud9_client() -> Cloud9Client:
     return Session().client("cloud9")
 ```
 
-Boto3 documentation:
-[Cloud9.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cloud9").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cloud9")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConcurrentAccessException,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.InternalServerErrorException,
+    client.LimitExceededException,
+    client.NotFoundException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cloud9.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentAccessException`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-Cloud9Client exceptions.
-
-Type annotations for `boto3.client("cloud9").exceptions` method.
-
-Boto3 documentation:
-[Cloud9.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cloud9").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.can_paginate)
 
-Boto3 documentation:
-[Cloud9.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_environment\_ec2"></a>
-
-### create_environment_ec2
+### create\_environment\_ec2
 
 Creates an Cloud9 development environment, launches an Amazon Elastic Compute
 Cloud (Amazon EC2) instance, and then connects from the instance to the
 environment.
 
-Type annotations for `boto3.client("cloud9").create_environment_ec2` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").create_environment_ec2` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2)
 
-Boto3 documentation:
-[Cloud9.Client.create_environment_ec2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_ec2)
+```python title="Method definition"
+def create_environment_ec2(
+    self,
+    *,
+    name: str,
+    instanceType: str,
+    description: str = ...,
+    clientRequestToken: str = ...,
+    subnetId: str = ...,
+    imageId: str = ...,
+    automaticStopTimeMinutes: int = ...,
+    ownerArn: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+    connectionType: ConnectionTypeType = ...,  # (2)
+    dryRun: bool = ...,
+) -> CreateEnvironmentEC2ResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentEC2RequestRequestTypeDef](./type_defs.md#createenvironmentec2requestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+3. See [:material-code-braces: CreateEnvironmentEC2ResultTypeDef](./type_defs.md#createenvironmentec2resulttypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `instanceType`: `str` *(required)*
-- `description`: `str`
-- `clientRequestToken`: `str`
-- `subnetId`: `str`
-- `imageId`: `str`
-- `automaticStopTimeMinutes`: `int`
-- `ownerArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
-- `dryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentEC2RequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "instanceType": ...,
+}
 
-Returns
-[CreateEnvironmentEC2ResultTypeDef](./type_defs.md#createenvironmentec2resulttypedef).
+parent.create_environment_ec2(**kwargs)
+```
 
-<a id="create\_environment\_membership"></a>
+1. See [:material-code-braces: CreateEnvironmentEC2RequestRequestTypeDef](./type_defs.md#createenvironmentec2requestrequesttypedef) 
 
-### create_environment_membership
+### create\_environment\_membership
 
 Adds an environment member to an Cloud9 development environment.
 
-Type annotations for `boto3.client("cloud9").create_environment_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("cloud9").create_environment_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_membership)
 
-Boto3 documentation:
-[Cloud9.Client.create_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.create_environment_membership)
+```python title="Method definition"
+def create_environment_membership(
+    self,
+    *,
+    environmentId: str,
+    userArn: str,
+    permissions: MemberPermissionsType,  # (1)
+) -> CreateEnvironmentMembershipResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#createenvironmentmembershiprequestrequesttypedef).
+1. See [:material-code-brackets: MemberPermissionsType](./literals.md#memberpermissionstype) 
+2. See [:material-code-braces: CreateEnvironmentMembershipResultTypeDef](./type_defs.md#createenvironmentmembershipresulttypedef) 
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
-- `userArn`: `str` *(required)*
-- `permissions`: [MemberPermissionsType](./literals.md#memberpermissionstype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentMembershipRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+    "userArn": ...,
+    "permissions": ...,
+}
 
-Returns
-[CreateEnvironmentMembershipResultTypeDef](./type_defs.md#createenvironmentmembershipresulttypedef).
+parent.create_environment_membership(**kwargs)
+```
 
-<a id="delete\_environment"></a>
+1. See [:material-code-braces: CreateEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#createenvironmentmembershiprequestrequesttypedef) 
 
-### delete_environment
+### delete\_environment
 
 Deletes an Cloud9 development environment.
 
-Type annotations for `boto3.client("cloud9").delete_environment` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").delete_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment)
 
-Boto3 documentation:
-[Cloud9.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment)
+```python title="Method definition"
+def delete_environment(
+    self,
+    *,
+    environmentId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_environment(**kwargs)
+```
 
-<a id="delete\_environment\_membership"></a>
+1. See [:material-code-braces: DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef) 
 
-### delete_environment_membership
+### delete\_environment\_membership
 
 Deletes an environment member from an Cloud9 development environment.
 
-Type annotations for `boto3.client("cloud9").delete_environment_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("cloud9").delete_environment_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership)
 
-Boto3 documentation:
-[Cloud9.Client.delete_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.delete_environment_membership)
+```python title="Method definition"
+def delete_environment_membership(
+    self,
+    *,
+    environmentId: str,
+    userArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#deleteenvironmentmembershiprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
-- `userArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentMembershipRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+    "userArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_environment_membership(**kwargs)
+```
 
-<a id="describe\_environment\_memberships"></a>
+1. See [:material-code-braces: DeleteEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#deleteenvironmentmembershiprequestrequesttypedef) 
 
-### describe_environment_memberships
+### describe\_environment\_memberships
 
 Gets information about environment members for an Cloud9 development
 environment.
 
-Type annotations for `boto3.client("cloud9").describe_environment_memberships`
-method.
+Type annotations and code completion for `#!python boto3.client("cloud9").describe_environment_memberships` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships)
 
-Boto3 documentation:
-[Cloud9.Client.describe_environment_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_memberships)
+```python title="Method definition"
+def describe_environment_memberships(
+    self,
+    *,
+    userArn: str = ...,
+    environmentId: str = ...,
+    permissions: Sequence[PermissionsType] = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeEnvironmentMembershipsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEnvironmentMembershipsRequestRequestTypeDef](./type_defs.md#describeenvironmentmembershipsrequestrequesttypedef).
+1. See [:material-code-brackets: PermissionsType](./literals.md#permissionstype) 
+2. See [:material-code-braces: DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef) 
 
-Keyword-only arguments:
 
-- `userArn`: `str`
-- `environmentId`: `str`
-- `permissions`: `Sequence`\[[PermissionsType](./literals.md#permissionstype)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentMembershipsRequestRequestTypeDef = {  # (1)
+    "userArn": ...,
+}
 
-Returns
-[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef).
+parent.describe_environment_memberships(**kwargs)
+```
 
-<a id="describe\_environment\_status"></a>
+1. See [:material-code-braces: DescribeEnvironmentMembershipsRequestRequestTypeDef](./type_defs.md#describeenvironmentmembershipsrequestrequesttypedef) 
 
-### describe_environment_status
+### describe\_environment\_status
 
 Gets status information for an Cloud9 development environment.
 
-Type annotations for `boto3.client("cloud9").describe_environment_status`
-method.
+Type annotations and code completion for `#!python boto3.client("cloud9").describe_environment_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_status)
 
-Boto3 documentation:
-[Cloud9.Client.describe_environment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environment_status)
+```python title="Method definition"
+def describe_environment_status(
+    self,
+    *,
+    environmentId: str,
+) -> DescribeEnvironmentStatusResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEnvironmentStatusRequestRequestTypeDef](./type_defs.md#describeenvironmentstatusrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEnvironmentStatusResultTypeDef](./type_defs.md#describeenvironmentstatusresulttypedef) 
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentStatusRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+}
 
-Returns
-[DescribeEnvironmentStatusResultTypeDef](./type_defs.md#describeenvironmentstatusresulttypedef).
+parent.describe_environment_status(**kwargs)
+```
 
-<a id="describe\_environments"></a>
+1. See [:material-code-braces: DescribeEnvironmentStatusRequestRequestTypeDef](./type_defs.md#describeenvironmentstatusrequestrequesttypedef) 
 
-### describe_environments
+### describe\_environments
 
 Gets information about Cloud9 development environments.
 
-Type annotations for `boto3.client("cloud9").describe_environments` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").describe_environments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environments)
 
-Boto3 documentation:
-[Cloud9.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.describe_environments)
+```python title="Method definition"
+def describe_environments(
+    self,
+    *,
+    environmentIds: Sequence[str],
+) -> DescribeEnvironmentsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEnvironmentsRequestRequestTypeDef](./type_defs.md#describeenvironmentsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEnvironmentsResultTypeDef](./type_defs.md#describeenvironmentsresulttypedef) 
 
-Keyword-only arguments:
 
-- `environmentIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentsRequestRequestTypeDef = {  # (1)
+    "environmentIds": ...,
+}
 
-Returns
-[DescribeEnvironmentsResultTypeDef](./type_defs.md#describeenvironmentsresulttypedef).
+parent.describe_environments(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeEnvironmentsRequestRequestTypeDef](./type_defs.md#describeenvironmentsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cloud9").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Cloud9.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_environments"></a>
-
-### list_environments
+### list\_environments
 
 Gets a list of Cloud9 development environment identifiers.
 
-Type annotations for `boto3.client("cloud9").list_environments` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").list_environments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_environments)
 
-Boto3 documentation:
-[Cloud9.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_environments)
+```python title="Method definition"
+def list_environments(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListEnvironmentsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef).
+1. See [:material-code-braces: ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef).
+parent.list_environments(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Gets a list of the tags associated with an Cloud9 development environment.
 
-Type annotations for `boto3.client("cloud9").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Cloud9.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to an Cloud9 development environment.
 
-Type annotations for `boto3.client("cloud9").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.tag_resource)
 
-Boto3 documentation:
-[Cloud9.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from an Cloud9 development environment.
 
-Type annotations for `boto3.client("cloud9").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.untag_resource)
 
-Boto3 documentation:
-[Cloud9.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_environment"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_environment
+### update\_environment
 
 Changes the settings of an existing Cloud9 development environment.
 
-Type annotations for `boto3.client("cloud9").update_environment` method.
+Type annotations and code completion for `#!python boto3.client("cloud9").update_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment)
 
-Boto3 documentation:
-[Cloud9.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment)
+```python title="Method definition"
+def update_environment(
+    self,
+    *,
+    environmentId: str,
+    name: str = ...,
+    description: str = ...,
+    managedCredentialsAction: ManagedCredentialsActionType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef).
+1. See [:material-code-brackets: ManagedCredentialsActionType](./literals.md#managedcredentialsactiontype) 
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
-- `managedCredentialsAction`:
-  [ManagedCredentialsActionType](./literals.md#managedcredentialsactiontype)
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_environment(**kwargs)
+```
 
-<a id="update\_environment\_membership"></a>
+1. See [:material-code-braces: UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef) 
 
-### update_environment_membership
+### update\_environment\_membership
 
-Changes the settings of an existing environment member for an Cloud9
-development environment.
+Changes the settings of an existing environment member for an Cloud9 development
+environment.
 
-Type annotations for `boto3.client("cloud9").update_environment_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("cloud9").update_environment_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment_membership)
 
-Boto3 documentation:
-[Cloud9.Client.update_environment_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client.update_environment_membership)
+```python title="Method definition"
+def update_environment_membership(
+    self,
+    *,
+    environmentId: str,
+    userArn: str,
+    permissions: MemberPermissionsType,  # (1)
+) -> UpdateEnvironmentMembershipResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#updateenvironmentmembershiprequestrequesttypedef).
+1. See [:material-code-brackets: MemberPermissionsType](./literals.md#memberpermissionstype) 
+2. See [:material-code-braces: UpdateEnvironmentMembershipResultTypeDef](./type_defs.md#updateenvironmentmembershipresulttypedef) 
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
-- `userArn`: `str` *(required)*
-- `permissions`: [MemberPermissionsType](./literals.md#memberpermissionstype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentMembershipRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+    "userArn": ...,
+    "permissions": ...,
+}
 
-Returns
-[UpdateEnvironmentMembershipResultTypeDef](./type_defs.md#updateenvironmentmembershipresulttypedef).
+parent.update_environment_membership(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#updateenvironmentmembershiprequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloud9").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloud9").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_environment_memberships")` ->
-  [DescribeEnvironmentMembershipsPaginator](./paginators.md#describeenvironmentmembershipspaginator)
-- `client.get_paginator("list_environments")` ->
-  [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+- `client.get_paginator("describe_environment_memberships")` -> [DescribeEnvironmentMembershipsPaginator](./paginators.md#describeenvironmentmembershipspaginator)
+- `client.get_paginator("list_environments")` -> [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+
+
+

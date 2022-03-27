@@ -1,147 +1,200 @@
-<a id="examples-for-boto3-sns-module"></a>
-
-# Examples for boto3 SNS module
+# Examples
 
 > [Index](../README.md) > [SNS](./README.md) > Examples
 
-- [Examples for boto3 SNS module](#examples-for-boto3-sns-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
-  - [Service Resource](#service-resource)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+    type annotations stubs module [mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 ## Client
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[sns]` package installed.
 
-Write your `SNS` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `SNS` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SNSClient
-# and provides type checking and code completion
-client = session.client("sns")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_permission()
 
-# paginator has type ListEndpointsByPlatformApplicationPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_endpoints_by_platform_application")
-for item in paginator.paginate(...):
-    # item has type ListEndpointsByPlatformApplicationResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("sns")  # (1)
+    result = client.check_if_phone_number_is_opted_out()  # (2)
+    ```
+
+    1. client: [SNSClient](./client.md)
+    2. result: [:material-code-braces: CheckIfPhoneNumberIsOptedOutResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("sns")  # (1)
+
+    paginator = client.get_paginator("list_endpoints_by_platform_application")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [SNSClient](./client.md)
+    2. paginator: [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
+    3. item: [:material-code-braces: ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[sns]` or a standalone `mypy_boto3_sns` package, you have
-to explicitly specify `client: SNSClient` type annotation.
+With `boto3-stubs-lite[sns]`
+or a standalone `mypy_boto3_sns` package, you have to explicitly specify `client: SNSClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_sns.client import SNSClient
-from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator
-
-from mypy_boto3_sns.literals import PaginatorName
-
-from mypy_boto3_sns.type_defs import None
-from mypy_boto3_sns.type_defs import ListEndpointsByPlatformApplicationResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: SNSClient = session.client("sns")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.add_permission()
+    from mypy_boto3_sns.client import SNSClient
+    from mypy_boto3_sns.type_defs import CheckIfPhoneNumberIsOptedOutResponseTypeDef
+    from mypy_boto3_sns.type_defs import CheckIfPhoneNumberIsOptedOutInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_endpoints_by_platform_application"
-paginator: ListEndpointsByPlatformApplicationPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListEndpointsByPlatformApplicationResponseTypeDef
-    print(item)
-```
 
-<a id="service-resource"></a>
+    session = Session()
+
+    client: SNSClient = session.client("sns")
+
+    kwargs: CheckIfPhoneNumberIsOptedOutInputRequestTypeDef = {...}
+    result: CheckIfPhoneNumberIsOptedOutResponseTypeDef = client.check_if_phone_number_is_opted_out(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_sns.client import SNSClient
+    from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator
+    from mypy_boto3_sns.type_defs import ListEndpointsByPlatformApplicationResponseTypeDef
+
+
+    session = Session()
+    client: SNSClient = session.client("sns")
+
+    paginator: ListEndpointsByPlatformApplicationPaginator = client.get_paginator("list_endpoints_by_platform_application")
+    for item in paginator.paginate(...):
+        item: ListEndpointsByPlatformApplicationResponseTypeDef
+        print(item)
+    ```
+
+
+
+
 
 ## Service Resource
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[sns]` package installed.
 
-```python
-import boto3
+
+=== "ServiceResource"
+
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
 
-session = boto3.Session()
+    session = Session()
 
-# resource has type SNSServiceResource
-# and provides type checking and code completion
-resource = session.resource("sns")
+    resource = session.resource("sns")  # (1)
+    result = resource.PlatformApplication()  # (2)
+    ```
 
-# result has type PlatformApplication
-# and provides type checking and code completion
-result = resource.PlatformApplication()
+    1. resource: [SNSServiceResource](./service_resource.md)
+    2. result: 
 
-# collection has type ServiceResourcePlatformApplicationsCollection and provides type checking
-# and code completion for all collection methods
-collection = resource.platform_applications
-for item in collection:
-    # item has type PlatformApplication
-    print(item)
-```
 
-<a id="explicit-type-annotations"></a>
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    resource = session.resource("sns")  # (1)
+
+    collection = resource.platform_applications  # (2)
+    for item in collection:
+        print(item)  # (3)
+    ```
+
+    1. resource: [SNSServiceResource](./service_resource.md)
+    2. collection: [SNSServiceResource](./service_resource.md#snsserviceresourceplatform_applications)
+    3. item: PlatformApplication
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[sns]` or a standalone `mypy_boto3_sns` package, you have
-to explicitly specify `resource: SNSServiceResource` type annotation.
+With `boto3-stubs-lite[sns]`
+or a standalone `mypy_boto3_sns` package, you have to explicitly specify
+`resource: SNSServiceResource` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
-```python
-import boto3
 
-from mypy_boto3_sns.service_resource import SNSServiceResource
-from mypy_boto3_sns.service_resource import PlatformApplication
-from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsCollection, PlatformApplication
 
-session = boto3.Session()
+=== "ServiceResource"
 
-resource: SNSServiceResource = session.resource("sns")
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
-result: PlatformApplication = resource.PlatformApplication()
+    from mypy_boto3_sns.service_resource import SNSServiceResource
+    from mypy_boto3_sns.service_resource import PlatformApplication
 
-collection: ServiceResourcePlatformApplicationsCollection = resource.platform_applications
-for item in collection:
-    item: PlatformApplication
-    print(item)
-```
+
+    session = Session()
+
+    resource: SNSServiceResource = session.resource("sns")
+    result: PlatformApplication = resource.PlatformApplication()
+    ```
+
+
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_sns.service_resource import SNSServiceResource
+    from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsCollection
+    from mypy_boto3_sns.service_resource import PlatformApplication
+
+
+    session = Session()
+
+    resource: SNSServiceResource = session.resource("sns")
+    
+    collection: ServiceResourcePlatformApplicationsCollection = resource.platform_applications
+    for item in collection:
+        item: PlatformApplication
+        print(item)
+    ```
+

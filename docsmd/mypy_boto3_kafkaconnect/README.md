@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-kafkaconnect-module"></a>
-
-# Type annotations for boto3 KafkaConnect module
+#  KafkaConnect module
 
 > [Index](../README.md) > KafkaConnect
 
-Auto-generated documentation for
-[KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
-type annotations stubs module
-[mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
+!!! note ""
 
-- [Type annotations for boto3 KafkaConnect module](#type-annotations-for-boto3-kafkaconnect-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [KafkaConnectClient](#kafkaconnectclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
+    type annotations stubs module [mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `KafkaConnect`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[kafkaconnect]'
 python -m pip install mypy-boto3-kafkaconnect
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,89 +42,60 @@ python -m pip install mypy-boto3-kafkaconnect
 python -m pip uninstall -y mypy-boto3-kafkaconnect
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="kafkaconnectclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## KafkaConnectClient
 
-Type annotations for `boto3.client("kafkaconnect")` as
-[KafkaConnectClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("kafkaconnect")` as [KafkaConnectClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_kafkaconnect.client import KafkaConnectClient
+
+def get_client() -> KafkaConnectClient:
+    return Session().cleint("kafkaconnect")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_connector](./client.md#create_connector)
-- [create_custom_plugin](./client.md#create_custom_plugin)
-- [create_worker_configuration](./client.md#create_worker_configuration)
-- [delete_connector](./client.md#delete_connector)
-- [delete_custom_plugin](./client.md#delete_custom_plugin)
-- [describe_connector](./client.md#describe_connector)
-- [describe_custom_plugin](./client.md#describe_custom_plugin)
-- [describe_worker_configuration](./client.md#describe_worker_configuration)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_connectors](./client.md#list_connectors)
-- [list_custom_plugins](./client.md#list_custom_plugins)
-- [list_worker_configurations](./client.md#list_worker_configurations)
-- [update_connector](./client.md#update_connector)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-KafkaConnectClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- InternalServerErrorException
-- NotFoundException
-- ServiceUnavailableException
-- TooManyRequestsException
-- UnauthorizedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("kafkaconnect").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("kafkaconnect").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_kafkaconnect.paginator import ListConnectorsPaginator, ...
+from mypy_boto3_kafkaconnect.paginator import ListConnectorsPaginator
+
+def get_list_connectors_paginator() -> ListConnectorsPaginator:
+    return Session().client("kafkaconnect").get_paginator("list_connectors"))
 ```
 
 - [ListConnectorsPaginator](./paginators.md#listconnectorspaginator)
 - [ListCustomPluginsPaginator](./paginators.md#listcustompluginspaginator)
 - [ListWorkerConfigurationsPaginator](./paginators.md#listworkerconfigurationspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kafkaconnect.literals import ConnectorStateType
 
-```python
-from mypy_boto3_kafkaconnect.literals import ConnectorStateType, ...
+def get_value() -> ConnectorStateType:
+    return "CREATING"
 ```
 
 - [ConnectorStateType](./literals.md#connectorstatetype)
@@ -161,18 +110,22 @@ from mypy_boto3_kafkaconnect.literals import ConnectorStateType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kafkaconnect.type_defs import ApacheKafkaClusterDescriptionTypeDef
 
-```python
-from mypy_boto3_kafkaconnect.type_defs import ApacheKafkaClusterDescriptionTypeDef, ...
+def get_value() -> ApacheKafkaClusterDescriptionTypeDef:
+    return {
+        "bootstrapServers": ...,
+    }
 ```
 
 - [ApacheKafkaClusterDescriptionTypeDef](./type_defs.md#apachekafkaclusterdescriptiontypedef)
@@ -217,10 +170,13 @@ from mypy_boto3_kafkaconnect.type_defs import ApacheKafkaClusterDescriptionTypeD
 - [KafkaClusterEncryptionInTransitDescriptionTypeDef](./type_defs.md#kafkaclusterencryptionintransitdescriptiontypedef)
 - [KafkaClusterEncryptionInTransitTypeDef](./type_defs.md#kafkaclusterencryptionintransittypedef)
 - [KafkaClusterTypeDef](./type_defs.md#kafkaclustertypedef)
+- [ListConnectorsRequestListConnectorsPaginateTypeDef](./type_defs.md#listconnectorsrequestlistconnectorspaginatetypedef)
 - [ListConnectorsRequestRequestTypeDef](./type_defs.md#listconnectorsrequestrequesttypedef)
 - [ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef)
+- [ListCustomPluginsRequestListCustomPluginsPaginateTypeDef](./type_defs.md#listcustompluginsrequestlistcustompluginspaginatetypedef)
 - [ListCustomPluginsRequestRequestTypeDef](./type_defs.md#listcustompluginsrequestrequesttypedef)
 - [ListCustomPluginsResponseTypeDef](./type_defs.md#listcustompluginsresponsetypedef)
+- [ListWorkerConfigurationsRequestListWorkerConfigurationsPaginateTypeDef](./type_defs.md#listworkerconfigurationsrequestlistworkerconfigurationspaginatetypedef)
 - [ListWorkerConfigurationsRequestRequestTypeDef](./type_defs.md#listworkerconfigurationsrequestrequesttypedef)
 - [ListWorkerConfigurationsResponseTypeDef](./type_defs.md#listworkerconfigurationsresponsetypedef)
 - [LogDeliveryDescriptionTypeDef](./type_defs.md#logdeliverydescriptiontypedef)
@@ -254,3 +210,4 @@ from mypy_boto3_kafkaconnect.type_defs import ApacheKafkaClusterDescriptionTypeD
 - [WorkerConfigurationTypeDef](./type_defs.md#workerconfigurationtypedef)
 - [WorkerLogDeliveryDescriptionTypeDef](./type_defs.md#workerlogdeliverydescriptiontypedef)
 - [WorkerLogDeliveryTypeDef](./type_defs.md#workerlogdeliverytypedef)
+

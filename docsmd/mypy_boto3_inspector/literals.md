@@ -1,736 +1,786 @@
-<a id="literals-for-boto3-inspector-module"></a>
-
-# Literals for boto3 Inspector module
+# Literals
 
 > [Index](../README.md) > [Inspector](./README.md) > Literals
 
-Auto-generated documentation for
-[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
-type annotations stubs module
-[mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
+!!! note ""
 
-- [Literals for boto3 Inspector module](#literals-for-boto3-inspector-module)
-  - [AgentHealthCodeType](#agenthealthcodetype)
-  - [AgentHealthType](#agenthealthtype)
-  - [AssessmentRunNotificationSnsStatusCodeType](#assessmentrunnotificationsnsstatuscodetype)
-  - [AssessmentRunStateType](#assessmentrunstatetype)
-  - [AssetTypeType](#assettypetype)
-  - [FailedItemErrorCodeType](#faileditemerrorcodetype)
-  - [InspectorEventType](#inspectoreventtype)
-  - [ListAssessmentRunAgentsPaginatorName](#listassessmentrunagentspaginatorname)
-  - [ListAssessmentRunsPaginatorName](#listassessmentrunspaginatorname)
-  - [ListAssessmentTargetsPaginatorName](#listassessmenttargetspaginatorname)
-  - [ListAssessmentTemplatesPaginatorName](#listassessmenttemplatespaginatorname)
-  - [ListEventSubscriptionsPaginatorName](#listeventsubscriptionspaginatorname)
-  - [ListExclusionsPaginatorName](#listexclusionspaginatorname)
-  - [ListFindingsPaginatorName](#listfindingspaginatorname)
-  - [ListRulesPackagesPaginatorName](#listrulespackagespaginatorname)
-  - [LocaleType](#localetype)
-  - [PreviewAgentsPaginatorName](#previewagentspaginatorname)
-  - [PreviewStatusType](#previewstatustype)
-  - [ReportFileFormatType](#reportfileformattype)
-  - [ReportStatusType](#reportstatustype)
-  - [ReportTypeType](#reporttypetype)
-  - [ScopeTypeType](#scopetypetype)
-  - [SeverityType](#severitytype)
-  - [StopActionType](#stopactiontype)
-  - [InspectorServiceName](#inspectorservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="agenthealthcodetype"></a>
+    Auto-generated documentation for [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+    type annotations stubs module [mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 ## AgentHealthCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import AgentHealthCodeType
+
+def get_value() -> AgentHealthCodeType:
+    return "IDLE"
 ```
 
-Values:
-
-- `IDLE`
-- `RUNNING`
-- `SHUTDOWN`
-- `THROTTLED`
-- `UNHEALTHY`
-- `UNKNOWN`
-
-<a id="agenthealthtype"></a>
-
+```python title="Definition"
+AgentHealthCodeType = Literal[
+    "IDLE",
+    "RUNNING",
+    "SHUTDOWN",
+    "THROTTLED",
+    "UNHEALTHY",
+    "UNKNOWN",
+]
+```
 ## AgentHealthType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import AgentHealthType
+
+def get_value() -> AgentHealthType:
+    return "HEALTHY"
 ```
 
-Values:
-
-- `HEALTHY`
-- `UNHEALTHY`
-- `UNKNOWN`
-
-<a id="assessmentrunnotificationsnsstatuscodetype"></a>
-
+```python title="Definition"
+AgentHealthType = Literal[
+    "HEALTHY",
+    "UNHEALTHY",
+    "UNKNOWN",
+]
+```
 ## AssessmentRunNotificationSnsStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import AssessmentRunNotificationSnsStatusCodeType
+
+def get_value() -> AssessmentRunNotificationSnsStatusCodeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `INTERNAL_ERROR`
-- `SUCCESS`
-- `TOPIC_DOES_NOT_EXIST`
-
-<a id="assessmentrunstatetype"></a>
-
+```python title="Definition"
+AssessmentRunNotificationSnsStatusCodeType = Literal[
+    "ACCESS_DENIED",
+    "INTERNAL_ERROR",
+    "SUCCESS",
+    "TOPIC_DOES_NOT_EXIST",
+]
+```
 ## AssessmentRunStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import AssessmentRunStateType
+
+def get_value() -> AssessmentRunStateType:
+    return "CANCELED"
 ```
 
-Values:
-
-- `CANCELED`
-- `COLLECTING_DATA`
-- `COMPLETED`
-- `COMPLETED_WITH_ERRORS`
-- `CREATED`
-- `DATA_COLLECTED`
-- `ERROR`
-- `EVALUATING_RULES`
-- `FAILED`
-- `START_DATA_COLLECTION_IN_PROGRESS`
-- `START_DATA_COLLECTION_PENDING`
-- `START_EVALUATING_RULES_PENDING`
-- `STOP_DATA_COLLECTION_PENDING`
-
-<a id="assettypetype"></a>
-
+```python title="Definition"
+AssessmentRunStateType = Literal[
+    "CANCELED",
+    "COLLECTING_DATA",
+    "COMPLETED",
+    "COMPLETED_WITH_ERRORS",
+    "CREATED",
+    "DATA_COLLECTED",
+    "ERROR",
+    "EVALUATING_RULES",
+    "FAILED",
+    "START_DATA_COLLECTION_IN_PROGRESS",
+    "START_DATA_COLLECTION_PENDING",
+    "START_EVALUATING_RULES_PENDING",
+    "STOP_DATA_COLLECTION_PENDING",
+]
+```
 ## AssetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import AssetTypeType
+
+def get_value() -> AssetTypeType:
+    return "ec2-instance"
 ```
 
-Values:
-
-- `ec2-instance`
-
-<a id="faileditemerrorcodetype"></a>
-
+```python title="Definition"
+AssetTypeType = Literal[
+    "ec2-instance",
+]
+```
 ## FailedItemErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import FailedItemErrorCodeType
+
+def get_value() -> FailedItemErrorCodeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `DUPLICATE_ARN`
-- `INTERNAL_ERROR`
-- `INVALID_ARN`
-- `ITEM_DOES_NOT_EXIST`
-- `LIMIT_EXCEEDED`
-
-<a id="inspectoreventtype"></a>
-
+```python title="Definition"
+FailedItemErrorCodeType = Literal[
+    "ACCESS_DENIED",
+    "DUPLICATE_ARN",
+    "INTERNAL_ERROR",
+    "INVALID_ARN",
+    "ITEM_DOES_NOT_EXIST",
+    "LIMIT_EXCEEDED",
+]
+```
 ## InspectorEventType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import InspectorEventType
+
+def get_value() -> InspectorEventType:
+    return "ASSESSMENT_RUN_COMPLETED"
 ```
 
-Values:
-
-- `ASSESSMENT_RUN_COMPLETED`
-- `ASSESSMENT_RUN_STARTED`
-- `ASSESSMENT_RUN_STATE_CHANGED`
-- `FINDING_REPORTED`
-- `OTHER`
-
-<a id="listassessmentrunagentspaginatorname"></a>
-
+```python title="Definition"
+InspectorEventType = Literal[
+    "ASSESSMENT_RUN_COMPLETED",
+    "ASSESSMENT_RUN_STARTED",
+    "ASSESSMENT_RUN_STATE_CHANGED",
+    "FINDING_REPORTED",
+    "OTHER",
+]
+```
 ## ListAssessmentRunAgentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ListAssessmentRunAgentsPaginatorName
+
+def get_value() -> ListAssessmentRunAgentsPaginatorName:
+    return "list_assessment_run_agents"
 ```
 
-Values:
-
-- `list_assessment_run_agents`
-
-<a id="listassessmentrunspaginatorname"></a>
-
+```python title="Definition"
+ListAssessmentRunAgentsPaginatorName = Literal[
+    "list_assessment_run_agents",
+]
+```
 ## ListAssessmentRunsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ListAssessmentRunsPaginatorName
+
+def get_value() -> ListAssessmentRunsPaginatorName:
+    return "list_assessment_runs"
 ```
 
-Values:
-
-- `list_assessment_runs`
-
-<a id="listassessmenttargetspaginatorname"></a>
-
+```python title="Definition"
+ListAssessmentRunsPaginatorName = Literal[
+    "list_assessment_runs",
+]
+```
 ## ListAssessmentTargetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ListAssessmentTargetsPaginatorName
+
+def get_value() -> ListAssessmentTargetsPaginatorName:
+    return "list_assessment_targets"
 ```
 
-Values:
-
-- `list_assessment_targets`
-
-<a id="listassessmenttemplatespaginatorname"></a>
-
+```python title="Definition"
+ListAssessmentTargetsPaginatorName = Literal[
+    "list_assessment_targets",
+]
+```
 ## ListAssessmentTemplatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ListAssessmentTemplatesPaginatorName
+
+def get_value() -> ListAssessmentTemplatesPaginatorName:
+    return "list_assessment_templates"
 ```
 
-Values:
-
-- `list_assessment_templates`
-
-<a id="listeventsubscriptionspaginatorname"></a>
-
+```python title="Definition"
+ListAssessmentTemplatesPaginatorName = Literal[
+    "list_assessment_templates",
+]
+```
 ## ListEventSubscriptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ListEventSubscriptionsPaginatorName
+
+def get_value() -> ListEventSubscriptionsPaginatorName:
+    return "list_event_subscriptions"
 ```
 
-Values:
-
-- `list_event_subscriptions`
-
-<a id="listexclusionspaginatorname"></a>
-
+```python title="Definition"
+ListEventSubscriptionsPaginatorName = Literal[
+    "list_event_subscriptions",
+]
+```
 ## ListExclusionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ListExclusionsPaginatorName
+
+def get_value() -> ListExclusionsPaginatorName:
+    return "list_exclusions"
 ```
 
-Values:
-
-- `list_exclusions`
-
-<a id="listfindingspaginatorname"></a>
-
+```python title="Definition"
+ListExclusionsPaginatorName = Literal[
+    "list_exclusions",
+]
+```
 ## ListFindingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ListFindingsPaginatorName
+
+def get_value() -> ListFindingsPaginatorName:
+    return "list_findings"
 ```
 
-Values:
-
-- `list_findings`
-
-<a id="listrulespackagespaginatorname"></a>
-
+```python title="Definition"
+ListFindingsPaginatorName = Literal[
+    "list_findings",
+]
+```
 ## ListRulesPackagesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ListRulesPackagesPaginatorName
+
+def get_value() -> ListRulesPackagesPaginatorName:
+    return "list_rules_packages"
 ```
 
-Values:
-
-- `list_rules_packages`
-
-<a id="localetype"></a>
-
+```python title="Definition"
+ListRulesPackagesPaginatorName = Literal[
+    "list_rules_packages",
+]
+```
 ## LocaleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import LocaleType
+
+def get_value() -> LocaleType:
+    return "EN_US"
 ```
 
-Values:
-
-- `EN_US`
-
-<a id="previewagentspaginatorname"></a>
-
+```python title="Definition"
+LocaleType = Literal[
+    "EN_US",
+]
+```
 ## PreviewAgentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import PreviewAgentsPaginatorName
+
+def get_value() -> PreviewAgentsPaginatorName:
+    return "preview_agents"
 ```
 
-Values:
-
-- `preview_agents`
-
-<a id="previewstatustype"></a>
-
+```python title="Definition"
+PreviewAgentsPaginatorName = Literal[
+    "preview_agents",
+]
+```
 ## PreviewStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import PreviewStatusType
+
+def get_value() -> PreviewStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `WORK_IN_PROGRESS`
-
-<a id="reportfileformattype"></a>
-
+```python title="Definition"
+PreviewStatusType = Literal[
+    "COMPLETED",
+    "WORK_IN_PROGRESS",
+]
+```
 ## ReportFileFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ReportFileFormatType
+
+def get_value() -> ReportFileFormatType:
+    return "HTML"
 ```
 
-Values:
-
-- `HTML`
-- `PDF`
-
-<a id="reportstatustype"></a>
-
+```python title="Definition"
+ReportFileFormatType = Literal[
+    "HTML",
+    "PDF",
+]
+```
 ## ReportStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ReportStatusType
+
+def get_value() -> ReportStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `WORK_IN_PROGRESS`
-
-<a id="reporttypetype"></a>
-
+```python title="Definition"
+ReportStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "WORK_IN_PROGRESS",
+]
+```
 ## ReportTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ReportTypeType
+
+def get_value() -> ReportTypeType:
+    return "FINDING"
 ```
 
-Values:
-
-- `FINDING`
-- `FULL`
-
-<a id="scopetypetype"></a>
-
+```python title="Definition"
+ReportTypeType = Literal[
+    "FINDING",
+    "FULL",
+]
+```
 ## ScopeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ScopeTypeType
+
+def get_value() -> ScopeTypeType:
+    return "INSTANCE_ID"
 ```
 
-Values:
-
-- `INSTANCE_ID`
-- `RULES_PACKAGE_ARN`
-
-<a id="severitytype"></a>
-
+```python title="Definition"
+ScopeTypeType = Literal[
+    "INSTANCE_ID",
+    "RULES_PACKAGE_ARN",
+]
+```
 ## SeverityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import SeverityType
+
+def get_value() -> SeverityType:
+    return "High"
 ```
 
-Values:
-
-- `High`
-- `Informational`
-- `Low`
-- `Medium`
-- `Undefined`
-
-<a id="stopactiontype"></a>
-
+```python title="Definition"
+SeverityType = Literal[
+    "High",
+    "Informational",
+    "Low",
+    "Medium",
+    "Undefined",
+]
+```
 ## StopActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import StopActionType
+
+def get_value() -> StopActionType:
+    return "SKIP_EVALUATION"
 ```
 
-Values:
-
-- `SKIP_EVALUATION`
-- `START_EVALUATION`
-
-<a id="inspectorservicename"></a>
-
+```python title="Definition"
+StopActionType = Literal[
+    "SKIP_EVALUATION",
+    "START_EVALUATION",
+]
+```
 ## InspectorServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import InspectorServiceName
+
+def get_value() -> InspectorServiceName:
+    return "inspector"
 ```
 
-Values:
-
-- `inspector`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+InspectorServiceName = Literal[
+    "inspector",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_assessment_run_agents"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_assessment_run_agents",
+    "list_assessment_runs",
+    "list_assessment_targets",
+    "list_assessment_templates",
+    "list_event_subscriptions",
+    "list_exclusions",
+    "list_findings",
+    "list_rules_packages",
+    "preview_agents",
+]
+```
+## RegionName
 
-- `list_assessment_run_agents`
-- `list_assessment_runs`
-- `list_assessment_targets`
-- `list_assessment_templates`
-- `list_event_subscriptions`
-- `list_exclusions`
-- `list_findings`
-- `list_rules_packages`
-- `preview_agents`
+```python title="Usage Example"
+from mypy_boto3_inspector.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-2",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-west-1",
+    "eu-west-2",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

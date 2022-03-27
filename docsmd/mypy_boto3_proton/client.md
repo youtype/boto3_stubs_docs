@@ -1,100 +1,18 @@
-<a id="protonclient-for-boto3-proton-module"></a>
-
-# ProtonClient for boto3 Proton module
+# ProtonClient
 
 > [Index](../README.md) > [Proton](./README.md) > ProtonClient
 
-Auto-generated documentation for
-[Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
-type annotations stubs module
-[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
+!!! note ""
 
-- [ProtonClient for boto3 Proton module](#protonclient-for-boto3-proton-module)
-  - [ProtonClient](#protonclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_environment_account_connection](#accept_environment_account_connection)
-    - [can_paginate](#can_paginate)
-    - [cancel_environment_deployment](#cancel_environment_deployment)
-    - [cancel_service_instance_deployment](#cancel_service_instance_deployment)
-    - [cancel_service_pipeline_deployment](#cancel_service_pipeline_deployment)
-    - [create_environment](#create_environment)
-    - [create_environment_account_connection](#create_environment_account_connection)
-    - [create_environment_template](#create_environment_template)
-    - [create_environment_template_version](#create_environment_template_version)
-    - [create_repository](#create_repository)
-    - [create_service](#create_service)
-    - [create_service_template](#create_service_template)
-    - [create_service_template_version](#create_service_template_version)
-    - [create_template_sync_config](#create_template_sync_config)
-    - [delete_environment](#delete_environment)
-    - [delete_environment_account_connection](#delete_environment_account_connection)
-    - [delete_environment_template](#delete_environment_template)
-    - [delete_environment_template_version](#delete_environment_template_version)
-    - [delete_repository](#delete_repository)
-    - [delete_service](#delete_service)
-    - [delete_service_template](#delete_service_template)
-    - [delete_service_template_version](#delete_service_template_version)
-    - [delete_template_sync_config](#delete_template_sync_config)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account_settings](#get_account_settings)
-    - [get_environment](#get_environment)
-    - [get_environment_account_connection](#get_environment_account_connection)
-    - [get_environment_template](#get_environment_template)
-    - [get_environment_template_version](#get_environment_template_version)
-    - [get_repository](#get_repository)
-    - [get_repository_sync_status](#get_repository_sync_status)
-    - [get_service](#get_service)
-    - [get_service_instance](#get_service_instance)
-    - [get_service_template](#get_service_template)
-    - [get_service_template_version](#get_service_template_version)
-    - [get_template_sync_config](#get_template_sync_config)
-    - [get_template_sync_status](#get_template_sync_status)
-    - [list_environment_account_connections](#list_environment_account_connections)
-    - [list_environment_outputs](#list_environment_outputs)
-    - [list_environment_provisioned_resources](#list_environment_provisioned_resources)
-    - [list_environment_template_versions](#list_environment_template_versions)
-    - [list_environment_templates](#list_environment_templates)
-    - [list_environments](#list_environments)
-    - [list_repositories](#list_repositories)
-    - [list_repository_sync_definitions](#list_repository_sync_definitions)
-    - [list_service_instance_outputs](#list_service_instance_outputs)
-    - [list_service_instance_provisioned_resources](#list_service_instance_provisioned_resources)
-    - [list_service_instances](#list_service_instances)
-    - [list_service_pipeline_outputs](#list_service_pipeline_outputs)
-    - [list_service_pipeline_provisioned_resources](#list_service_pipeline_provisioned_resources)
-    - [list_service_template_versions](#list_service_template_versions)
-    - [list_service_templates](#list_service_templates)
-    - [list_services](#list_services)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [notify_resource_deployment_status_change](#notify_resource_deployment_status_change)
-    - [reject_environment_account_connection](#reject_environment_account_connection)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_account_settings](#update_account_settings)
-    - [update_environment](#update_environment)
-    - [update_environment_account_connection](#update_environment_account_connection)
-    - [update_environment_template](#update_environment_template)
-    - [update_environment_template_version](#update_environment_template_version)
-    - [update_service](#update_service)
-    - [update_service_instance](#update_service_instance)
-    - [update_service_pipeline](#update_service_pipeline)
-    - [update_service_template](#update_service_template)
-    - [update_service_template_version](#update_service_template_version)
-    - [update_template_sync_config](#update_template_sync_config)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="protonclient"></a>
+    Auto-generated documentation for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
+    type annotations stubs module [mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 ## ProtonClient
 
-Type annotations for `boto3.client("proton")`
+Type annotations and code completion for `#!python boto3.client("proton")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_proton.client import ProtonClient
 
@@ -102,1780 +20,2299 @@ def get_proton_client() -> ProtonClient:
     return Session().client("proton")
 ```
 
-Boto3 documentation:
-[Proton.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("proton").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("proton")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_proton.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ProtonClient exceptions.
-
-Type annotations for `boto3.client("proton").exceptions` method.
-
-Boto3 documentation:
-[Proton.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_environment\_account\_connection"></a>
-
-### accept_environment_account_connection
+### accept\_environment\_account\_connection
 
 In a management account, an environment account connection request is accepted.
 
-Type annotations for
-`boto3.client("proton").accept_environment_account_connection` method.
+Type annotations and code completion for `#!python boto3.client("proton").accept_environment_account_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.accept_environment_account_connection)
 
-Boto3 documentation:
-[Proton.Client.accept_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.accept_environment_account_connection)
+```python title="Method definition"
+def accept_environment_account_connection(
+    self,
+    *,
+    id: str,
+) -> AcceptEnvironmentAccountConnectionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AcceptEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#acceptenvironmentaccountconnectioninputrequesttypedef).
+1. See [:material-code-braces: AcceptEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#acceptenvironmentaccountconnectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptEnvironmentAccountConnectionInputRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[AcceptEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#acceptenvironmentaccountconnectionoutputtypedef).
+parent.accept_environment_account_connection(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AcceptEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#acceptenvironmentaccountconnectioninputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("proton").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("proton").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.can_paginate)
 
-Boto3 documentation:
-[Proton.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### cancel\_environment\_deployment
 
-Returns `bool`.
-
-<a id="cancel\_environment\_deployment"></a>
-
-### cancel_environment_deployment
-
-Attempts to cancel an environment deployment on an UpdateEnvironment action, if
+Attempts to cancel an environment deployment on an  UpdateEnvironment action, if
 the deployment is `IN_PROGRESS`.
 
-Type annotations for `boto3.client("proton").cancel_environment_deployment`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").cancel_environment_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_environment_deployment)
 
-Boto3 documentation:
-[Proton.Client.cancel_environment_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_environment_deployment)
+```python title="Method definition"
+def cancel_environment_deployment(
+    self,
+    *,
+    environmentName: str,
+) -> CancelEnvironmentDeploymentOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelEnvironmentDeploymentInputRequestTypeDef](./type_defs.md#cancelenvironmentdeploymentinputrequesttypedef).
+1. See [:material-code-braces: CancelEnvironmentDeploymentOutputTypeDef](./type_defs.md#cancelenvironmentdeploymentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `environmentName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelEnvironmentDeploymentInputRequestTypeDef = {  # (1)
+    "environmentName": ...,
+}
 
-Returns
-[CancelEnvironmentDeploymentOutputTypeDef](./type_defs.md#cancelenvironmentdeploymentoutputtypedef).
+parent.cancel_environment_deployment(**kwargs)
+```
 
-<a id="cancel\_service\_instance\_deployment"></a>
+1. See [:material-code-braces: CancelEnvironmentDeploymentInputRequestTypeDef](./type_defs.md#cancelenvironmentdeploymentinputrequesttypedef) 
 
-### cancel_service_instance_deployment
+### cancel\_service\_instance\_deployment
 
-Attempts to cancel a service instance deployment on an UpdateServiceInstance
+Attempts to cancel a service instance deployment on an  UpdateServiceInstance
 action, if the deployment is `IN_PROGRESS`.
 
-Type annotations for
-`boto3.client("proton").cancel_service_instance_deployment` method.
+Type annotations and code completion for `#!python boto3.client("proton").cancel_service_instance_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_service_instance_deployment)
 
-Boto3 documentation:
-[Proton.Client.cancel_service_instance_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_service_instance_deployment)
+```python title="Method definition"
+def cancel_service_instance_deployment(
+    self,
+    *,
+    serviceInstanceName: str,
+    serviceName: str,
+) -> CancelServiceInstanceDeploymentOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelServiceInstanceDeploymentInputRequestTypeDef](./type_defs.md#cancelserviceinstancedeploymentinputrequesttypedef).
+1. See [:material-code-braces: CancelServiceInstanceDeploymentOutputTypeDef](./type_defs.md#cancelserviceinstancedeploymentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `serviceInstanceName`: `str` *(required)*
-- `serviceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelServiceInstanceDeploymentInputRequestTypeDef = {  # (1)
+    "serviceInstanceName": ...,
+    "serviceName": ...,
+}
 
-Returns
-[CancelServiceInstanceDeploymentOutputTypeDef](./type_defs.md#cancelserviceinstancedeploymentoutputtypedef).
+parent.cancel_service_instance_deployment(**kwargs)
+```
 
-<a id="cancel\_service\_pipeline\_deployment"></a>
+1. See [:material-code-braces: CancelServiceInstanceDeploymentInputRequestTypeDef](./type_defs.md#cancelserviceinstancedeploymentinputrequesttypedef) 
 
-### cancel_service_pipeline_deployment
+### cancel\_service\_pipeline\_deployment
 
-Attempts to cancel a service pipeline deployment on an UpdateServicePipeline
+Attempts to cancel a service pipeline deployment on an  UpdateServicePipeline
 action, if the deployment is `IN_PROGRESS`.
 
-Type annotations for
-`boto3.client("proton").cancel_service_pipeline_deployment` method.
+Type annotations and code completion for `#!python boto3.client("proton").cancel_service_pipeline_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_service_pipeline_deployment)
 
-Boto3 documentation:
-[Proton.Client.cancel_service_pipeline_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.cancel_service_pipeline_deployment)
+```python title="Method definition"
+def cancel_service_pipeline_deployment(
+    self,
+    *,
+    serviceName: str,
+) -> CancelServicePipelineDeploymentOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelServicePipelineDeploymentInputRequestTypeDef](./type_defs.md#cancelservicepipelinedeploymentinputrequesttypedef).
+1. See [:material-code-braces: CancelServicePipelineDeploymentOutputTypeDef](./type_defs.md#cancelservicepipelinedeploymentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `serviceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelServicePipelineDeploymentInputRequestTypeDef = {  # (1)
+    "serviceName": ...,
+}
 
-Returns
-[CancelServicePipelineDeploymentOutputTypeDef](./type_defs.md#cancelservicepipelinedeploymentoutputtypedef).
+parent.cancel_service_pipeline_deployment(**kwargs)
+```
 
-<a id="create\_environment"></a>
+1. See [:material-code-braces: CancelServicePipelineDeploymentInputRequestTypeDef](./type_defs.md#cancelservicepipelinedeploymentinputrequesttypedef) 
 
-### create_environment
+### create\_environment
 
 Deploy a new environment.
 
-Type annotations for `boto3.client("proton").create_environment` method.
+Type annotations and code completion for `#!python boto3.client("proton").create_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment)
 
-Boto3 documentation:
-[Proton.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment)
+```python title="Method definition"
+def create_environment(
+    self,
+    *,
+    name: str,
+    spec: str,
+    templateMajorVersion: str,
+    templateName: str,
+    description: str = ...,
+    environmentAccountConnectionId: str = ...,
+    protonServiceRoleArn: str = ...,
+    provisioningRepository: RepositoryBranchInputTypeDef = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+    templateMinorVersion: str = ...,
+) -> CreateEnvironmentOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentInputRequestTypeDef](./type_defs.md#createenvironmentinputrequesttypedef).
+1. See [:material-code-braces: RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `spec`: `str` *(required)*
-- `templateMajorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
-- `description`: `str`
-- `environmentAccountConnectionId`: `str`
-- `protonServiceRoleArn`: `str`
-- `provisioningRepository`:
-  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `templateMinorVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentInputRequestTypeDef = {  # (1)
+    "name": ...,
+    "spec": ...,
+    "templateMajorVersion": ...,
+    "templateName": ...,
+}
 
-Returns
-[CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef).
+parent.create_environment(**kwargs)
+```
 
-<a id="create\_environment\_account\_connection"></a>
+1. See [:material-code-braces: CreateEnvironmentInputRequestTypeDef](./type_defs.md#createenvironmentinputrequesttypedef) 
 
-### create_environment_account_connection
+### create\_environment\_account\_connection
 
 Create an environment account connection in an environment account so that
 environment infrastructure resources can be provisioned in the environment
 account from a management account.
 
-Type annotations for
-`boto3.client("proton").create_environment_account_connection` method.
+Type annotations and code completion for `#!python boto3.client("proton").create_environment_account_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment_account_connection)
 
-Boto3 documentation:
-[Proton.Client.create_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment_account_connection)
+```python title="Method definition"
+def create_environment_account_connection(
+    self,
+    *,
+    environmentName: str,
+    managementAccountId: str,
+    roleArn: str,
+    clientToken: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateEnvironmentAccountConnectionOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#createenvironmentaccountconnectioninputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#createenvironmentaccountconnectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `environmentName`: `str` *(required)*
-- `managementAccountId`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `clientToken`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentAccountConnectionInputRequestTypeDef = {  # (1)
+    "environmentName": ...,
+    "managementAccountId": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#createenvironmentaccountconnectionoutputtypedef).
+parent.create_environment_account_connection(**kwargs)
+```
 
-<a id="create\_environment\_template"></a>
+1. See [:material-code-braces: CreateEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#createenvironmentaccountconnectioninputrequesttypedef) 
 
-### create_environment_template
+### create\_environment\_template
 
 Create an environment template for Proton.
 
-Type annotations for `boto3.client("proton").create_environment_template`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").create_environment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment_template)
 
-Boto3 documentation:
-[Proton.Client.create_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment_template)
+```python title="Method definition"
+def create_environment_template(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    displayName: str = ...,
+    encryptionKey: str = ...,
+    provisioning: ProvisioningType = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateEnvironmentTemplateOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentTemplateInputRequestTypeDef](./type_defs.md#createenvironmenttemplateinputrequesttypedef).
+1. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateEnvironmentTemplateOutputTypeDef](./type_defs.md#createenvironmenttemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `displayName`: `str`
-- `encryptionKey`: `str`
-- `provisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentTemplateInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateEnvironmentTemplateOutputTypeDef](./type_defs.md#createenvironmenttemplateoutputtypedef).
+parent.create_environment_template(**kwargs)
+```
 
-<a id="create\_environment\_template\_version"></a>
+1. See [:material-code-braces: CreateEnvironmentTemplateInputRequestTypeDef](./type_defs.md#createenvironmenttemplateinputrequesttypedef) 
 
-### create_environment_template_version
+### create\_environment\_template\_version
 
 Create a new major or minor version of an environment template.
 
-Type annotations for
-`boto3.client("proton").create_environment_template_version` method.
+Type annotations and code completion for `#!python boto3.client("proton").create_environment_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment_template_version)
 
-Boto3 documentation:
-[Proton.Client.create_environment_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_environment_template_version)
+```python title="Method definition"
+def create_environment_template_version(
+    self,
+    *,
+    source: TemplateVersionSourceInputTypeDef,  # (1)
+    templateName: str,
+    clientToken: str = ...,
+    description: str = ...,
+    majorVersion: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateEnvironmentTemplateVersionOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#createenvironmenttemplateversioninputrequesttypedef).
+1. See [:material-code-braces: TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#createenvironmenttemplateversionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `source`:
-  [TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef)
-  *(required)*
-- `templateName`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `majorVersion`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentTemplateVersionInputRequestTypeDef = {  # (1)
+    "source": ...,
+    "templateName": ...,
+}
 
-Returns
-[CreateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#createenvironmenttemplateversionoutputtypedef).
+parent.create_environment_template_version(**kwargs)
+```
 
-<a id="create\_repository"></a>
+1. See [:material-code-braces: CreateEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#createenvironmenttemplateversioninputrequesttypedef) 
 
-### create_repository
+### create\_repository
 
 Create and register a link to a repository that can be used with pull request
 provisioning or template sync configurations.
 
-Type annotations for `boto3.client("proton").create_repository` method.
+Type annotations and code completion for `#!python boto3.client("proton").create_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_repository)
 
-Boto3 documentation:
-[Proton.Client.create_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_repository)
+```python title="Method definition"
+def create_repository(
+    self,
+    *,
+    connectionArn: str,
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+    encryptionKey: str = ...,
+) -> CreateRepositoryOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRepositoryInputRequestTypeDef](./type_defs.md#createrepositoryinputrequesttypedef).
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-braces: CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `connectionArn`: `str` *(required)*
-- `name`: `str` *(required)*
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-  *(required)*
-- `encryptionKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateRepositoryInputRequestTypeDef = {  # (1)
+    "connectionArn": ...,
+    "name": ...,
+    "provider": ...,
+}
 
-Returns
-[CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef).
+parent.create_repository(**kwargs)
+```
 
-<a id="create\_service"></a>
+1. See [:material-code-braces: CreateRepositoryInputRequestTypeDef](./type_defs.md#createrepositoryinputrequesttypedef) 
 
-### create_service
+### create\_service
 
 Create an Proton service.
 
-Type annotations for `boto3.client("proton").create_service` method.
+Type annotations and code completion for `#!python boto3.client("proton").create_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_service)
 
-Boto3 documentation:
-[Proton.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_service)
+```python title="Method definition"
+def create_service(
+    self,
+    *,
+    name: str,
+    spec: str,
+    templateMajorVersion: str,
+    templateName: str,
+    branchName: str = ...,
+    description: str = ...,
+    repositoryConnectionArn: str = ...,
+    repositoryId: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+    templateMinorVersion: str = ...,
+) -> CreateServiceOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateServiceInputRequestTypeDef](./type_defs.md#createserviceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateServiceOutputTypeDef](./type_defs.md#createserviceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `spec`: `str` *(required)*
-- `templateMajorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
-- `branchName`: `str`
-- `description`: `str`
-- `repositoryConnectionArn`: `str`
-- `repositoryId`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `templateMinorVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateServiceInputRequestTypeDef = {  # (1)
+    "name": ...,
+    "spec": ...,
+    "templateMajorVersion": ...,
+    "templateName": ...,
+}
 
-Returns
-[CreateServiceOutputTypeDef](./type_defs.md#createserviceoutputtypedef).
+parent.create_service(**kwargs)
+```
 
-<a id="create\_service\_template"></a>
+1. See [:material-code-braces: CreateServiceInputRequestTypeDef](./type_defs.md#createserviceinputrequesttypedef) 
 
-### create_service_template
+### create\_service\_template
 
 Create a service template.
 
-Type annotations for `boto3.client("proton").create_service_template` method.
+Type annotations and code completion for `#!python boto3.client("proton").create_service_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_service_template)
 
-Boto3 documentation:
-[Proton.Client.create_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_service_template)
+```python title="Method definition"
+def create_service_template(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    displayName: str = ...,
+    encryptionKey: str = ...,
+    pipelineProvisioning: ProvisioningType = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateServiceTemplateOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateServiceTemplateInputRequestTypeDef](./type_defs.md#createservicetemplateinputrequesttypedef).
+1. See [:material-code-brackets: ProvisioningType](./literals.md#provisioningtype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateServiceTemplateOutputTypeDef](./type_defs.md#createservicetemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `displayName`: `str`
-- `encryptionKey`: `str`
-- `pipelineProvisioning`: `Literal['CUSTOMER_MANAGED']` (see
-  [ProvisioningType](./literals.md#provisioningtype))
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateServiceTemplateInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateServiceTemplateOutputTypeDef](./type_defs.md#createservicetemplateoutputtypedef).
+parent.create_service_template(**kwargs)
+```
 
-<a id="create\_service\_template\_version"></a>
+1. See [:material-code-braces: CreateServiceTemplateInputRequestTypeDef](./type_defs.md#createservicetemplateinputrequesttypedef) 
 
-### create_service_template_version
+### create\_service\_template\_version
 
 Create a new major or minor version of a service template.
 
-Type annotations for `boto3.client("proton").create_service_template_version`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").create_service_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_service_template_version)
 
-Boto3 documentation:
-[Proton.Client.create_service_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_service_template_version)
+```python title="Method definition"
+def create_service_template_version(
+    self,
+    *,
+    compatibleEnvironmentTemplates: Sequence[CompatibleEnvironmentTemplateInputTypeDef],  # (1)
+    source: TemplateVersionSourceInputTypeDef,  # (2)
+    templateName: str,
+    clientToken: str = ...,
+    description: str = ...,
+    majorVersion: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateServiceTemplateVersionOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateServiceTemplateVersionInputRequestTypeDef](./type_defs.md#createservicetemplateversioninputrequesttypedef).
+1. See [:material-code-braces: CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef) 
+2. See [:material-code-braces: TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateServiceTemplateVersionOutputTypeDef](./type_defs.md#createservicetemplateversionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `compatibleEnvironmentTemplates`:
-  `Sequence`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
-  *(required)*
-- `source`:
-  [TemplateVersionSourceInputTypeDef](./type_defs.md#templateversionsourceinputtypedef)
-  *(required)*
-- `templateName`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `majorVersion`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateServiceTemplateVersionInputRequestTypeDef = {  # (1)
+    "compatibleEnvironmentTemplates": ...,
+    "source": ...,
+    "templateName": ...,
+}
 
-Returns
-[CreateServiceTemplateVersionOutputTypeDef](./type_defs.md#createservicetemplateversionoutputtypedef).
+parent.create_service_template_version(**kwargs)
+```
 
-<a id="create\_template\_sync\_config"></a>
+1. See [:material-code-braces: CreateServiceTemplateVersionInputRequestTypeDef](./type_defs.md#createservicetemplateversioninputrequesttypedef) 
 
-### create_template_sync_config
+### create\_template\_sync\_config
 
 Set up a template for automated template version creation.
 
-Type annotations for `boto3.client("proton").create_template_sync_config`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").create_template_sync_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_template_sync_config)
 
-Boto3 documentation:
-[Proton.Client.create_template_sync_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.create_template_sync_config)
+```python title="Method definition"
+def create_template_sync_config(
+    self,
+    *,
+    branch: str,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    templateName: str,
+    templateType: TemplateTypeType,  # (2)
+    subdirectory: str = ...,
+) -> CreateTemplateSyncConfigOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateTemplateSyncConfigInputRequestTypeDef](./type_defs.md#createtemplatesyncconfiginputrequesttypedef).
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+3. See [:material-code-braces: CreateTemplateSyncConfigOutputTypeDef](./type_defs.md#createtemplatesyncconfigoutputtypedef) 
 
-Keyword-only arguments:
 
-- `branch`: `str` *(required)*
-- `repositoryName`: `str` *(required)*
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype) *(required)*
-- `templateName`: `str` *(required)*
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-  *(required)*
-- `subdirectory`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateTemplateSyncConfigInputRequestTypeDef = {  # (1)
+    "branch": ...,
+    "repositoryName": ...,
+    "repositoryProvider": ...,
+    "templateName": ...,
+    "templateType": ...,
+}
 
-Returns
-[CreateTemplateSyncConfigOutputTypeDef](./type_defs.md#createtemplatesyncconfigoutputtypedef).
+parent.create_template_sync_config(**kwargs)
+```
 
-<a id="delete\_environment"></a>
+1. See [:material-code-braces: CreateTemplateSyncConfigInputRequestTypeDef](./type_defs.md#createtemplatesyncconfiginputrequesttypedef) 
 
-### delete_environment
+### delete\_environment
 
 Delete an environment.
 
-Type annotations for `boto3.client("proton").delete_environment` method.
+Type annotations and code completion for `#!python boto3.client("proton").delete_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment)
 
-Boto3 documentation:
-[Proton.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment)
+```python title="Method definition"
+def delete_environment(
+    self,
+    *,
+    name: str,
+) -> DeleteEnvironmentOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentInputRequestTypeDef](./type_defs.md#deleteenvironmentinputrequesttypedef).
+1. See [:material-code-braces: DeleteEnvironmentOutputTypeDef](./type_defs.md#deleteenvironmentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[DeleteEnvironmentOutputTypeDef](./type_defs.md#deleteenvironmentoutputtypedef).
+parent.delete_environment(**kwargs)
+```
 
-<a id="delete\_environment\_account\_connection"></a>
+1. See [:material-code-braces: DeleteEnvironmentInputRequestTypeDef](./type_defs.md#deleteenvironmentinputrequesttypedef) 
 
-### delete_environment_account_connection
+### delete\_environment\_account\_connection
 
 In an environment account, delete an environment account connection.
 
-Type annotations for
-`boto3.client("proton").delete_environment_account_connection` method.
+Type annotations and code completion for `#!python boto3.client("proton").delete_environment_account_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_account_connection)
 
-Boto3 documentation:
-[Proton.Client.delete_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_account_connection)
+```python title="Method definition"
+def delete_environment_account_connection(
+    self,
+    *,
+    id: str,
+) -> DeleteEnvironmentAccountConnectionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#deleteenvironmentaccountconnectioninputrequesttypedef).
+1. See [:material-code-braces: DeleteEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#deleteenvironmentaccountconnectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentAccountConnectionInputRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[DeleteEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#deleteenvironmentaccountconnectionoutputtypedef).
+parent.delete_environment_account_connection(**kwargs)
+```
 
-<a id="delete\_environment\_template"></a>
+1. See [:material-code-braces: DeleteEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#deleteenvironmentaccountconnectioninputrequesttypedef) 
 
-### delete_environment_template
+### delete\_environment\_template
 
-If no other major or minor versions of an environment template exist, delete
-the environment template.
+If no other major or minor versions of an environment template exist, delete the
+environment template.
 
-Type annotations for `boto3.client("proton").delete_environment_template`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").delete_environment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_template)
 
-Boto3 documentation:
-[Proton.Client.delete_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_template)
+```python title="Method definition"
+def delete_environment_template(
+    self,
+    *,
+    name: str,
+) -> DeleteEnvironmentTemplateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentTemplateInputRequestTypeDef](./type_defs.md#deleteenvironmenttemplateinputrequesttypedef).
+1. See [:material-code-braces: DeleteEnvironmentTemplateOutputTypeDef](./type_defs.md#deleteenvironmenttemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentTemplateInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[DeleteEnvironmentTemplateOutputTypeDef](./type_defs.md#deleteenvironmenttemplateoutputtypedef).
+parent.delete_environment_template(**kwargs)
+```
 
-<a id="delete\_environment\_template\_version"></a>
+1. See [:material-code-braces: DeleteEnvironmentTemplateInputRequestTypeDef](./type_defs.md#deleteenvironmenttemplateinputrequesttypedef) 
 
-### delete_environment_template_version
+### delete\_environment\_template\_version
 
 If no other minor versions of an environment template exist, delete a major
 version of the environment template if it's not the `Recommended` version.
 
-Type annotations for
-`boto3.client("proton").delete_environment_template_version` method.
+Type annotations and code completion for `#!python boto3.client("proton").delete_environment_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_template_version)
 
-Boto3 documentation:
-[Proton.Client.delete_environment_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_environment_template_version)
+```python title="Method definition"
+def delete_environment_template_version(
+    self,
+    *,
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+) -> DeleteEnvironmentTemplateVersionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#deleteenvironmenttemplateversioninputrequesttypedef).
+1. See [:material-code-braces: DeleteEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#deleteenvironmenttemplateversionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `majorVersion`: `str` *(required)*
-- `minorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentTemplateVersionInputRequestTypeDef = {  # (1)
+    "majorVersion": ...,
+    "minorVersion": ...,
+    "templateName": ...,
+}
 
-Returns
-[DeleteEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#deleteenvironmenttemplateversionoutputtypedef).
+parent.delete_environment_template_version(**kwargs)
+```
 
-<a id="delete\_repository"></a>
+1. See [:material-code-braces: DeleteEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#deleteenvironmenttemplateversioninputrequesttypedef) 
 
-### delete_repository
+### delete\_repository
 
 De-register and unlink your repository.
 
-Type annotations for `boto3.client("proton").delete_repository` method.
+Type annotations and code completion for `#!python boto3.client("proton").delete_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_repository)
 
-Boto3 documentation:
-[Proton.Client.delete_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_repository)
+```python title="Method definition"
+def delete_repository(
+    self,
+    *,
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+) -> DeleteRepositoryOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRepositoryInputRequestTypeDef](./type_defs.md#deleterepositoryinputrequesttypedef).
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-braces: DeleteRepositoryOutputTypeDef](./type_defs.md#deleterepositoryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRepositoryInputRequestTypeDef = {  # (1)
+    "name": ...,
+    "provider": ...,
+}
 
-Returns
-[DeleteRepositoryOutputTypeDef](./type_defs.md#deleterepositoryoutputtypedef).
+parent.delete_repository(**kwargs)
+```
 
-<a id="delete\_service"></a>
+1. See [:material-code-braces: DeleteRepositoryInputRequestTypeDef](./type_defs.md#deleterepositoryinputrequesttypedef) 
 
-### delete_service
+### delete\_service
 
 Delete a service.
 
-Type annotations for `boto3.client("proton").delete_service` method.
+Type annotations and code completion for `#!python boto3.client("proton").delete_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service)
 
-Boto3 documentation:
-[Proton.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service)
+```python title="Method definition"
+def delete_service(
+    self,
+    *,
+    name: str,
+) -> DeleteServiceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceInputRequestTypeDef](./type_defs.md#deleteserviceinputrequesttypedef).
+1. See [:material-code-braces: DeleteServiceOutputTypeDef](./type_defs.md#deleteserviceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[DeleteServiceOutputTypeDef](./type_defs.md#deleteserviceoutputtypedef).
+parent.delete_service(**kwargs)
+```
 
-<a id="delete\_service\_template"></a>
+1. See [:material-code-braces: DeleteServiceInputRequestTypeDef](./type_defs.md#deleteserviceinputrequesttypedef) 
 
-### delete_service_template
+### delete\_service\_template
 
 If no other major or minor versions of the service template exist, delete the
 service template.
 
-Type annotations for `boto3.client("proton").delete_service_template` method.
+Type annotations and code completion for `#!python boto3.client("proton").delete_service_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service_template)
 
-Boto3 documentation:
-[Proton.Client.delete_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service_template)
+```python title="Method definition"
+def delete_service_template(
+    self,
+    *,
+    name: str,
+) -> DeleteServiceTemplateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceTemplateInputRequestTypeDef](./type_defs.md#deleteservicetemplateinputrequesttypedef).
+1. See [:material-code-braces: DeleteServiceTemplateOutputTypeDef](./type_defs.md#deleteservicetemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceTemplateInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[DeleteServiceTemplateOutputTypeDef](./type_defs.md#deleteservicetemplateoutputtypedef).
+parent.delete_service_template(**kwargs)
+```
 
-<a id="delete\_service\_template\_version"></a>
+1. See [:material-code-braces: DeleteServiceTemplateInputRequestTypeDef](./type_defs.md#deleteservicetemplateinputrequesttypedef) 
 
-### delete_service_template_version
+### delete\_service\_template\_version
 
 If no other minor versions of a service template exist, delete a major version
 of the service template if it's not the `Recommended` version.
 
-Type annotations for `boto3.client("proton").delete_service_template_version`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").delete_service_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service_template_version)
 
-Boto3 documentation:
-[Proton.Client.delete_service_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_service_template_version)
+```python title="Method definition"
+def delete_service_template_version(
+    self,
+    *,
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+) -> DeleteServiceTemplateVersionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceTemplateVersionInputRequestTypeDef](./type_defs.md#deleteservicetemplateversioninputrequesttypedef).
+1. See [:material-code-braces: DeleteServiceTemplateVersionOutputTypeDef](./type_defs.md#deleteservicetemplateversionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `majorVersion`: `str` *(required)*
-- `minorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceTemplateVersionInputRequestTypeDef = {  # (1)
+    "majorVersion": ...,
+    "minorVersion": ...,
+    "templateName": ...,
+}
 
-Returns
-[DeleteServiceTemplateVersionOutputTypeDef](./type_defs.md#deleteservicetemplateversionoutputtypedef).
+parent.delete_service_template_version(**kwargs)
+```
 
-<a id="delete\_template\_sync\_config"></a>
+1. See [:material-code-braces: DeleteServiceTemplateVersionInputRequestTypeDef](./type_defs.md#deleteservicetemplateversioninputrequesttypedef) 
 
-### delete_template_sync_config
+### delete\_template\_sync\_config
 
 Delete a template sync configuration.
 
-Type annotations for `boto3.client("proton").delete_template_sync_config`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").delete_template_sync_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_template_sync_config)
 
-Boto3 documentation:
-[Proton.Client.delete_template_sync_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.delete_template_sync_config)
+```python title="Method definition"
+def delete_template_sync_config(
+    self,
+    *,
+    templateName: str,
+    templateType: TemplateTypeType,  # (1)
+) -> DeleteTemplateSyncConfigOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTemplateSyncConfigInputRequestTypeDef](./type_defs.md#deletetemplatesyncconfiginputrequesttypedef).
+1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+2. See [:material-code-braces: DeleteTemplateSyncConfigOutputTypeDef](./type_defs.md#deletetemplatesyncconfigoutputtypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTemplateSyncConfigInputRequestTypeDef = {  # (1)
+    "templateName": ...,
+    "templateType": ...,
+}
 
-Returns
-[DeleteTemplateSyncConfigOutputTypeDef](./type_defs.md#deletetemplatesyncconfigoutputtypedef).
+parent.delete_template_sync_config(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteTemplateSyncConfigInputRequestTypeDef](./type_defs.md#deletetemplatesyncconfiginputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("proton").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("proton").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Proton.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_account\_settings"></a>
-
-### get_account_settings
+### get\_account\_settings
 
 Get detail data for the Proton pipeline service role.
 
-Type annotations for `boto3.client("proton").get_account_settings` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_account_settings)
 
-Boto3 documentation:
-[Proton.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_account_settings)
+```python title="Method definition"
+def get_account_settings(
+    self,
+) -> GetAccountSettingsOutputTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAccountSettingsOutputTypeDef](./type_defs.md#getaccountsettingsoutputtypedef).
+1. See [:material-code-braces: GetAccountSettingsOutputTypeDef](./type_defs.md#getaccountsettingsoutputtypedef) 
 
-<a id="get\_environment"></a>
-
-### get_environment
+### get\_environment
 
 Get detail data for an environment.
 
-Type annotations for `boto3.client("proton").get_environment` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment)
 
-Boto3 documentation:
-[Proton.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment)
+```python title="Method definition"
+def get_environment(
+    self,
+    *,
+    name: str,
+) -> GetEnvironmentOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEnvironmentInputRequestTypeDef](./type_defs.md#getenvironmentinputrequesttypedef).
+1. See [:material-code-braces: GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEnvironmentInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef).
+parent.get_environment(**kwargs)
+```
 
-<a id="get\_environment\_account\_connection"></a>
+1. See [:material-code-braces: GetEnvironmentInputRequestTypeDef](./type_defs.md#getenvironmentinputrequesttypedef) 
 
-### get_environment_account_connection
+### get\_environment\_account\_connection
 
 In an environment account, view the detail data for an environment account
 connection.
 
-Type annotations for
-`boto3.client("proton").get_environment_account_connection` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_environment_account_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_account_connection)
 
-Boto3 documentation:
-[Proton.Client.get_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_account_connection)
+```python title="Method definition"
+def get_environment_account_connection(
+    self,
+    *,
+    id: str,
+) -> GetEnvironmentAccountConnectionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#getenvironmentaccountconnectioninputrequesttypedef).
+1. See [:material-code-braces: GetEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#getenvironmentaccountconnectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEnvironmentAccountConnectionInputRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#getenvironmentaccountconnectionoutputtypedef).
+parent.get_environment_account_connection(**kwargs)
+```
 
-<a id="get\_environment\_template"></a>
+1. See [:material-code-braces: GetEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#getenvironmentaccountconnectioninputrequesttypedef) 
 
-### get_environment_template
+### get\_environment\_template
 
 Get detail data for an environment template.
 
-Type annotations for `boto3.client("proton").get_environment_template` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_environment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_template)
 
-Boto3 documentation:
-[Proton.Client.get_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_template)
+```python title="Method definition"
+def get_environment_template(
+    self,
+    *,
+    name: str,
+) -> GetEnvironmentTemplateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEnvironmentTemplateInputRequestTypeDef](./type_defs.md#getenvironmenttemplateinputrequesttypedef).
+1. See [:material-code-braces: GetEnvironmentTemplateOutputTypeDef](./type_defs.md#getenvironmenttemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEnvironmentTemplateInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[GetEnvironmentTemplateOutputTypeDef](./type_defs.md#getenvironmenttemplateoutputtypedef).
+parent.get_environment_template(**kwargs)
+```
 
-<a id="get\_environment\_template\_version"></a>
+1. See [:material-code-braces: GetEnvironmentTemplateInputRequestTypeDef](./type_defs.md#getenvironmenttemplateinputrequesttypedef) 
 
-### get_environment_template_version
+### get\_environment\_template\_version
 
 View detail data for a major or minor version of an environment template.
 
-Type annotations for `boto3.client("proton").get_environment_template_version`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").get_environment_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_template_version)
 
-Boto3 documentation:
-[Proton.Client.get_environment_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_environment_template_version)
+```python title="Method definition"
+def get_environment_template_version(
+    self,
+    *,
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+) -> GetEnvironmentTemplateVersionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#getenvironmenttemplateversioninputrequesttypedef).
+1. See [:material-code-braces: GetEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#getenvironmenttemplateversionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `majorVersion`: `str` *(required)*
-- `minorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEnvironmentTemplateVersionInputRequestTypeDef = {  # (1)
+    "majorVersion": ...,
+    "minorVersion": ...,
+    "templateName": ...,
+}
 
-Returns
-[GetEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#getenvironmenttemplateversionoutputtypedef).
+parent.get_environment_template_version(**kwargs)
+```
 
-<a id="get\_repository"></a>
+1. See [:material-code-braces: GetEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#getenvironmenttemplateversioninputrequesttypedef) 
 
-### get_repository
+### get\_repository
 
 Get detail data for a repository.
 
-Type annotations for `boto3.client("proton").get_repository` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_repository)
 
-Boto3 documentation:
-[Proton.Client.get_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_repository)
+```python title="Method definition"
+def get_repository(
+    self,
+    *,
+    name: str,
+    provider: RepositoryProviderType,  # (1)
+) -> GetRepositoryOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetRepositoryInputRequestTypeDef](./type_defs.md#getrepositoryinputrequesttypedef).
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-braces: GetRepositoryOutputTypeDef](./type_defs.md#getrepositoryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `provider`: [RepositoryProviderType](./literals.md#repositoryprovidertype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRepositoryInputRequestTypeDef = {  # (1)
+    "name": ...,
+    "provider": ...,
+}
 
-Returns
-[GetRepositoryOutputTypeDef](./type_defs.md#getrepositoryoutputtypedef).
+parent.get_repository(**kwargs)
+```
 
-<a id="get\_repository\_sync\_status"></a>
+1. See [:material-code-braces: GetRepositoryInputRequestTypeDef](./type_defs.md#getrepositoryinputrequesttypedef) 
 
-### get_repository_sync_status
+### get\_repository\_sync\_status
 
 Get the repository sync status.
 
-Type annotations for `boto3.client("proton").get_repository_sync_status`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").get_repository_sync_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_repository_sync_status)
 
-Boto3 documentation:
-[Proton.Client.get_repository_sync_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_repository_sync_status)
+```python title="Method definition"
+def get_repository_sync_status(
+    self,
+    *,
+    branch: str,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    syncType: SyncTypeType,  # (2)
+) -> GetRepositorySyncStatusOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetRepositorySyncStatusInputRequestTypeDef](./type_defs.md#getrepositorysyncstatusinputrequesttypedef).
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: SyncTypeType](./literals.md#synctypetype) 
+3. See [:material-code-braces: GetRepositorySyncStatusOutputTypeDef](./type_defs.md#getrepositorysyncstatusoutputtypedef) 
 
-Keyword-only arguments:
 
-- `branch`: `str` *(required)*
-- `repositoryName`: `str` *(required)*
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype) *(required)*
-- `syncType`: `Literal['TEMPLATE_SYNC']` (see
-  [SyncTypeType](./literals.md#synctypetype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRepositorySyncStatusInputRequestTypeDef = {  # (1)
+    "branch": ...,
+    "repositoryName": ...,
+    "repositoryProvider": ...,
+    "syncType": ...,
+}
 
-Returns
-[GetRepositorySyncStatusOutputTypeDef](./type_defs.md#getrepositorysyncstatusoutputtypedef).
+parent.get_repository_sync_status(**kwargs)
+```
 
-<a id="get\_service"></a>
+1. See [:material-code-braces: GetRepositorySyncStatusInputRequestTypeDef](./type_defs.md#getrepositorysyncstatusinputrequesttypedef) 
 
-### get_service
+### get\_service
 
 Get detail data for a service.
 
-Type annotations for `boto3.client("proton").get_service` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service)
 
-Boto3 documentation:
-[Proton.Client.get_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service)
+```python title="Method definition"
+def get_service(
+    self,
+    *,
+    name: str,
+) -> GetServiceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceInputRequestTypeDef](./type_defs.md#getserviceinputrequesttypedef).
+1. See [:material-code-braces: GetServiceOutputTypeDef](./type_defs.md#getserviceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServiceInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [GetServiceOutputTypeDef](./type_defs.md#getserviceoutputtypedef).
+parent.get_service(**kwargs)
+```
 
-<a id="get\_service\_instance"></a>
+1. See [:material-code-braces: GetServiceInputRequestTypeDef](./type_defs.md#getserviceinputrequesttypedef) 
 
-### get_service_instance
+### get\_service\_instance
 
 Get detail data for a service instance.
 
-Type annotations for `boto3.client("proton").get_service_instance` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_service_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_instance)
 
-Boto3 documentation:
-[Proton.Client.get_service_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_instance)
+```python title="Method definition"
+def get_service_instance(
+    self,
+    *,
+    name: str,
+    serviceName: str,
+) -> GetServiceInstanceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceInstanceInputRequestTypeDef](./type_defs.md#getserviceinstanceinputrequesttypedef).
+1. See [:material-code-braces: GetServiceInstanceOutputTypeDef](./type_defs.md#getserviceinstanceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `serviceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServiceInstanceInputRequestTypeDef = {  # (1)
+    "name": ...,
+    "serviceName": ...,
+}
 
-Returns
-[GetServiceInstanceOutputTypeDef](./type_defs.md#getserviceinstanceoutputtypedef).
+parent.get_service_instance(**kwargs)
+```
 
-<a id="get\_service\_template"></a>
+1. See [:material-code-braces: GetServiceInstanceInputRequestTypeDef](./type_defs.md#getserviceinstanceinputrequesttypedef) 
 
-### get_service_template
+### get\_service\_template
 
 Get detail data for a service template.
 
-Type annotations for `boto3.client("proton").get_service_template` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_service_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_template)
 
-Boto3 documentation:
-[Proton.Client.get_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_template)
+```python title="Method definition"
+def get_service_template(
+    self,
+    *,
+    name: str,
+) -> GetServiceTemplateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceTemplateInputRequestTypeDef](./type_defs.md#getservicetemplateinputrequesttypedef).
+1. See [:material-code-braces: GetServiceTemplateOutputTypeDef](./type_defs.md#getservicetemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServiceTemplateInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[GetServiceTemplateOutputTypeDef](./type_defs.md#getservicetemplateoutputtypedef).
+parent.get_service_template(**kwargs)
+```
 
-<a id="get\_service\_template\_version"></a>
+1. See [:material-code-braces: GetServiceTemplateInputRequestTypeDef](./type_defs.md#getservicetemplateinputrequesttypedef) 
 
-### get_service_template_version
+### get\_service\_template\_version
 
 View detail data for a major or minor version of a service template.
 
-Type annotations for `boto3.client("proton").get_service_template_version`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").get_service_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_template_version)
 
-Boto3 documentation:
-[Proton.Client.get_service_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_service_template_version)
+```python title="Method definition"
+def get_service_template_version(
+    self,
+    *,
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+) -> GetServiceTemplateVersionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceTemplateVersionInputRequestTypeDef](./type_defs.md#getservicetemplateversioninputrequesttypedef).
+1. See [:material-code-braces: GetServiceTemplateVersionOutputTypeDef](./type_defs.md#getservicetemplateversionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `majorVersion`: `str` *(required)*
-- `minorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServiceTemplateVersionInputRequestTypeDef = {  # (1)
+    "majorVersion": ...,
+    "minorVersion": ...,
+    "templateName": ...,
+}
 
-Returns
-[GetServiceTemplateVersionOutputTypeDef](./type_defs.md#getservicetemplateversionoutputtypedef).
+parent.get_service_template_version(**kwargs)
+```
 
-<a id="get\_template\_sync\_config"></a>
+1. See [:material-code-braces: GetServiceTemplateVersionInputRequestTypeDef](./type_defs.md#getservicetemplateversioninputrequesttypedef) 
 
-### get_template_sync_config
+### get\_template\_sync\_config
 
 Get detail data for a template sync configuration.
 
-Type annotations for `boto3.client("proton").get_template_sync_config` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_template_sync_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_template_sync_config)
 
-Boto3 documentation:
-[Proton.Client.get_template_sync_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_template_sync_config)
+```python title="Method definition"
+def get_template_sync_config(
+    self,
+    *,
+    templateName: str,
+    templateType: TemplateTypeType,  # (1)
+) -> GetTemplateSyncConfigOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetTemplateSyncConfigInputRequestTypeDef](./type_defs.md#gettemplatesyncconfiginputrequesttypedef).
+1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+2. See [:material-code-braces: GetTemplateSyncConfigOutputTypeDef](./type_defs.md#gettemplatesyncconfigoutputtypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTemplateSyncConfigInputRequestTypeDef = {  # (1)
+    "templateName": ...,
+    "templateType": ...,
+}
 
-Returns
-[GetTemplateSyncConfigOutputTypeDef](./type_defs.md#gettemplatesyncconfigoutputtypedef).
+parent.get_template_sync_config(**kwargs)
+```
 
-<a id="get\_template\_sync\_status"></a>
+1. See [:material-code-braces: GetTemplateSyncConfigInputRequestTypeDef](./type_defs.md#gettemplatesyncconfiginputrequesttypedef) 
 
-### get_template_sync_status
+### get\_template\_sync\_status
 
 Get the status of a template sync.
 
-Type annotations for `boto3.client("proton").get_template_sync_status` method.
+Type annotations and code completion for `#!python boto3.client("proton").get_template_sync_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_template_sync_status)
 
-Boto3 documentation:
-[Proton.Client.get_template_sync_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.get_template_sync_status)
+```python title="Method definition"
+def get_template_sync_status(
+    self,
+    *,
+    templateName: str,
+    templateType: TemplateTypeType,  # (1)
+    templateVersion: str,
+) -> GetTemplateSyncStatusOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetTemplateSyncStatusInputRequestTypeDef](./type_defs.md#gettemplatesyncstatusinputrequesttypedef).
+1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+2. See [:material-code-braces: GetTemplateSyncStatusOutputTypeDef](./type_defs.md#gettemplatesyncstatusoutputtypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-  *(required)*
-- `templateVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTemplateSyncStatusInputRequestTypeDef = {  # (1)
+    "templateName": ...,
+    "templateType": ...,
+    "templateVersion": ...,
+}
 
-Returns
-[GetTemplateSyncStatusOutputTypeDef](./type_defs.md#gettemplatesyncstatusoutputtypedef).
+parent.get_template_sync_status(**kwargs)
+```
 
-<a id="list\_environment\_account\_connections"></a>
+1. See [:material-code-braces: GetTemplateSyncStatusInputRequestTypeDef](./type_defs.md#gettemplatesyncstatusinputrequesttypedef) 
 
-### list_environment_account_connections
+### list\_environment\_account\_connections
 
 View a list of environment account connections.
 
-Type annotations for
-`boto3.client("proton").list_environment_account_connections` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_environment_account_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_account_connections)
 
-Boto3 documentation:
-[Proton.Client.list_environment_account_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_account_connections)
+```python title="Method definition"
+def list_environment_account_connections(
+    self,
+    *,
+    requestedBy: EnvironmentAccountConnectionRequesterAccountTypeType,  # (1)
+    environmentName: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    statuses: Sequence[EnvironmentAccountConnectionStatusType] = ...,  # (2)
+) -> ListEnvironmentAccountConnectionsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentAccountConnectionsInputRequestTypeDef](./type_defs.md#listenvironmentaccountconnectionsinputrequesttypedef).
+1. See [:material-code-brackets: EnvironmentAccountConnectionRequesterAccountTypeType](./literals.md#environmentaccountconnectionrequesteraccounttypetype) 
+2. See [:material-code-brackets: EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype) 
+3. See [:material-code-braces: ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `requestedBy`:
-  [EnvironmentAccountConnectionRequesterAccountTypeType](./literals.md#environmentaccountconnectionrequesteraccounttypetype)
-  *(required)*
-- `environmentName`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `statuses`:
-  `Sequence`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentAccountConnectionsInputRequestTypeDef = {  # (1)
+    "requestedBy": ...,
+}
 
-Returns
-[ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef).
+parent.list_environment_account_connections(**kwargs)
+```
 
-<a id="list\_environment\_outputs"></a>
+1. See [:material-code-braces: ListEnvironmentAccountConnectionsInputRequestTypeDef](./type_defs.md#listenvironmentaccountconnectionsinputrequesttypedef) 
 
-### list_environment_outputs
+### list\_environment\_outputs
 
 List the infrastructure as code outputs for your environment.
 
-Type annotations for `boto3.client("proton").list_environment_outputs` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_environment_outputs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_outputs)
 
-Boto3 documentation:
-[Proton.Client.list_environment_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_outputs)
+```python title="Method definition"
+def list_environment_outputs(
+    self,
+    *,
+    environmentName: str,
+    nextToken: str = ...,
+) -> ListEnvironmentOutputsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentOutputsInputRequestTypeDef](./type_defs.md#listenvironmentoutputsinputrequesttypedef).
+1. See [:material-code-braces: ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `environmentName`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentOutputsInputRequestTypeDef = {  # (1)
+    "environmentName": ...,
+}
 
-Returns
-[ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef).
+parent.list_environment_outputs(**kwargs)
+```
 
-<a id="list\_environment\_provisioned\_resources"></a>
+1. See [:material-code-braces: ListEnvironmentOutputsInputRequestTypeDef](./type_defs.md#listenvironmentoutputsinputrequesttypedef) 
 
-### list_environment_provisioned_resources
+### list\_environment\_provisioned\_resources
 
 List the provisioned resources for your environment.
 
-Type annotations for
-`boto3.client("proton").list_environment_provisioned_resources` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_environment_provisioned_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_provisioned_resources)
 
-Boto3 documentation:
-[Proton.Client.list_environment_provisioned_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_provisioned_resources)
+```python title="Method definition"
+def list_environment_provisioned_resources(
+    self,
+    *,
+    environmentName: str,
+    nextToken: str = ...,
+) -> ListEnvironmentProvisionedResourcesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentProvisionedResourcesInputRequestTypeDef](./type_defs.md#listenvironmentprovisionedresourcesinputrequesttypedef).
+1. See [:material-code-braces: ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `environmentName`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentProvisionedResourcesInputRequestTypeDef = {  # (1)
+    "environmentName": ...,
+}
 
-Returns
-[ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef).
+parent.list_environment_provisioned_resources(**kwargs)
+```
 
-<a id="list\_environment\_template\_versions"></a>
+1. See [:material-code-braces: ListEnvironmentProvisionedResourcesInputRequestTypeDef](./type_defs.md#listenvironmentprovisionedresourcesinputrequesttypedef) 
 
-### list_environment_template_versions
+### list\_environment\_template\_versions
 
 List major or minor versions of an environment template with detail data.
 
-Type annotations for
-`boto3.client("proton").list_environment_template_versions` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_environment_template_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_template_versions)
 
-Boto3 documentation:
-[Proton.Client.list_environment_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_template_versions)
+```python title="Method definition"
+def list_environment_template_versions(
+    self,
+    *,
+    templateName: str,
+    majorVersion: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListEnvironmentTemplateVersionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentTemplateVersionsInputRequestTypeDef](./type_defs.md#listenvironmenttemplateversionsinputrequesttypedef).
+1. See [:material-code-braces: ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `majorVersion`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentTemplateVersionsInputRequestTypeDef = {  # (1)
+    "templateName": ...,
+}
 
-Returns
-[ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef).
+parent.list_environment_template_versions(**kwargs)
+```
 
-<a id="list\_environment\_templates"></a>
+1. See [:material-code-braces: ListEnvironmentTemplateVersionsInputRequestTypeDef](./type_defs.md#listenvironmenttemplateversionsinputrequesttypedef) 
 
-### list_environment_templates
+### list\_environment\_templates
 
 List environment templates.
 
-Type annotations for `boto3.client("proton").list_environment_templates`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").list_environment_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_templates)
 
-Boto3 documentation:
-[Proton.Client.list_environment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environment_templates)
+```python title="Method definition"
+def list_environment_templates(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListEnvironmentTemplatesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentTemplatesInputRequestTypeDef](./type_defs.md#listenvironmenttemplatesinputrequesttypedef).
+1. See [:material-code-braces: ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentTemplatesInputRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef).
+parent.list_environment_templates(**kwargs)
+```
 
-<a id="list\_environments"></a>
+1. See [:material-code-braces: ListEnvironmentTemplatesInputRequestTypeDef](./type_defs.md#listenvironmenttemplatesinputrequesttypedef) 
 
-### list_environments
+### list\_environments
 
 List environments with detail data summaries.
 
-Type annotations for `boto3.client("proton").list_environments` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_environments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environments)
 
-Boto3 documentation:
-[Proton.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_environments)
+```python title="Method definition"
+def list_environments(
+    self,
+    *,
+    environmentTemplates: Sequence[EnvironmentTemplateFilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListEnvironmentsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentsInputRequestTypeDef](./type_defs.md#listenvironmentsinputrequesttypedef).
+1. See [:material-code-braces: EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef) 
+2. See [:material-code-braces: ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `environmentTemplates`:
-  `Sequence`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentsInputRequestTypeDef = {  # (1)
+    "environmentTemplates": ...,
+}
 
-Returns
-[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef).
+parent.list_environments(**kwargs)
+```
 
-<a id="list\_repositories"></a>
+1. See [:material-code-braces: ListEnvironmentsInputRequestTypeDef](./type_defs.md#listenvironmentsinputrequesttypedef) 
 
-### list_repositories
+### list\_repositories
 
 List repositories with detail data.
 
-Type annotations for `boto3.client("proton").list_repositories` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_repositories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_repositories)
 
-Boto3 documentation:
-[Proton.Client.list_repositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_repositories)
+```python title="Method definition"
+def list_repositories(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListRepositoriesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRepositoriesInputRequestTypeDef](./type_defs.md#listrepositoriesinputrequesttypedef).
+1. See [:material-code-braces: ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRepositoriesInputRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef).
+parent.list_repositories(**kwargs)
+```
 
-<a id="list\_repository\_sync\_definitions"></a>
+1. See [:material-code-braces: ListRepositoriesInputRequestTypeDef](./type_defs.md#listrepositoriesinputrequesttypedef) 
 
-### list_repository_sync_definitions
+### list\_repository\_sync\_definitions
 
 List repository sync definitions with detail data.
 
-Type annotations for `boto3.client("proton").list_repository_sync_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").list_repository_sync_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_repository_sync_definitions)
 
-Boto3 documentation:
-[Proton.Client.list_repository_sync_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_repository_sync_definitions)
+```python title="Method definition"
+def list_repository_sync_definitions(
+    self,
+    *,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    syncType: SyncTypeType,  # (2)
+    nextToken: str = ...,
+) -> ListRepositorySyncDefinitionsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListRepositorySyncDefinitionsInputRequestTypeDef](./type_defs.md#listrepositorysyncdefinitionsinputrequesttypedef).
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: SyncTypeType](./literals.md#synctypetype) 
+3. See [:material-code-braces: ListRepositorySyncDefinitionsOutputTypeDef](./type_defs.md#listrepositorysyncdefinitionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `repositoryName`: `str` *(required)*
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype) *(required)*
-- `syncType`: `Literal['TEMPLATE_SYNC']` (see
-  [SyncTypeType](./literals.md#synctypetype)) *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRepositorySyncDefinitionsInputRequestTypeDef = {  # (1)
+    "repositoryName": ...,
+    "repositoryProvider": ...,
+    "syncType": ...,
+}
 
-Returns
-[ListRepositorySyncDefinitionsOutputTypeDef](./type_defs.md#listrepositorysyncdefinitionsoutputtypedef).
+parent.list_repository_sync_definitions(**kwargs)
+```
 
-<a id="list\_service\_instance\_outputs"></a>
+1. See [:material-code-braces: ListRepositorySyncDefinitionsInputRequestTypeDef](./type_defs.md#listrepositorysyncdefinitionsinputrequesttypedef) 
 
-### list_service_instance_outputs
+### list\_service\_instance\_outputs
 
 View a list service instance infrastructure as code outputs with detail data.
 
-Type annotations for `boto3.client("proton").list_service_instance_outputs`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").list_service_instance_outputs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instance_outputs)
 
-Boto3 documentation:
-[Proton.Client.list_service_instance_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instance_outputs)
+```python title="Method definition"
+def list_service_instance_outputs(
+    self,
+    *,
+    serviceInstanceName: str,
+    serviceName: str,
+    nextToken: str = ...,
+) -> ListServiceInstanceOutputsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceInstanceOutputsInputRequestTypeDef](./type_defs.md#listserviceinstanceoutputsinputrequesttypedef).
+1. See [:material-code-braces: ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `serviceInstanceName`: `str` *(required)*
-- `serviceName`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServiceInstanceOutputsInputRequestTypeDef = {  # (1)
+    "serviceInstanceName": ...,
+    "serviceName": ...,
+}
 
-Returns
-[ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef).
+parent.list_service_instance_outputs(**kwargs)
+```
 
-<a id="list\_service\_instance\_provisioned\_resources"></a>
+1. See [:material-code-braces: ListServiceInstanceOutputsInputRequestTypeDef](./type_defs.md#listserviceinstanceoutputsinputrequesttypedef) 
 
-### list_service_instance_provisioned_resources
+### list\_service\_instance\_provisioned\_resources
 
 List provisioned resources for a service instance with details.
 
-Type annotations for
-`boto3.client("proton").list_service_instance_provisioned_resources` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_service_instance_provisioned_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instance_provisioned_resources)
 
-Boto3 documentation:
-[Proton.Client.list_service_instance_provisioned_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instance_provisioned_resources)
+```python title="Method definition"
+def list_service_instance_provisioned_resources(
+    self,
+    *,
+    serviceInstanceName: str,
+    serviceName: str,
+    nextToken: str = ...,
+) -> ListServiceInstanceProvisionedResourcesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceInstanceProvisionedResourcesInputRequestTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesinputrequesttypedef).
+1. See [:material-code-braces: ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `serviceInstanceName`: `str` *(required)*
-- `serviceName`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServiceInstanceProvisionedResourcesInputRequestTypeDef = {  # (1)
+    "serviceInstanceName": ...,
+    "serviceName": ...,
+}
 
-Returns
-[ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef).
+parent.list_service_instance_provisioned_resources(**kwargs)
+```
 
-<a id="list\_service\_instances"></a>
+1. See [:material-code-braces: ListServiceInstanceProvisionedResourcesInputRequestTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesinputrequesttypedef) 
 
-### list_service_instances
+### list\_service\_instances
 
 List service instances with summaries of detail data.
 
-Type annotations for `boto3.client("proton").list_service_instances` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_service_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instances)
 
-Boto3 documentation:
-[Proton.Client.list_service_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_instances)
+```python title="Method definition"
+def list_service_instances(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    serviceName: str = ...,
+) -> ListServiceInstancesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceInstancesInputRequestTypeDef](./type_defs.md#listserviceinstancesinputrequesttypedef).
+1. See [:material-code-braces: ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `serviceName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServiceInstancesInputRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef).
+parent.list_service_instances(**kwargs)
+```
 
-<a id="list\_service\_pipeline\_outputs"></a>
+1. See [:material-code-braces: ListServiceInstancesInputRequestTypeDef](./type_defs.md#listserviceinstancesinputrequesttypedef) 
 
-### list_service_pipeline_outputs
+### list\_service\_pipeline\_outputs
 
 View a list service pipeline infrastructure as code outputs with detail.
 
-Type annotations for `boto3.client("proton").list_service_pipeline_outputs`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").list_service_pipeline_outputs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_pipeline_outputs)
 
-Boto3 documentation:
-[Proton.Client.list_service_pipeline_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_pipeline_outputs)
+```python title="Method definition"
+def list_service_pipeline_outputs(
+    self,
+    *,
+    serviceName: str,
+    nextToken: str = ...,
+) -> ListServicePipelineOutputsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServicePipelineOutputsInputRequestTypeDef](./type_defs.md#listservicepipelineoutputsinputrequesttypedef).
+1. See [:material-code-braces: ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `serviceName`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServicePipelineOutputsInputRequestTypeDef = {  # (1)
+    "serviceName": ...,
+}
 
-Returns
-[ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef).
+parent.list_service_pipeline_outputs(**kwargs)
+```
 
-<a id="list\_service\_pipeline\_provisioned\_resources"></a>
+1. See [:material-code-braces: ListServicePipelineOutputsInputRequestTypeDef](./type_defs.md#listservicepipelineoutputsinputrequesttypedef) 
 
-### list_service_pipeline_provisioned_resources
+### list\_service\_pipeline\_provisioned\_resources
 
 List provisioned resources for a service and pipeline with details.
 
-Type annotations for
-`boto3.client("proton").list_service_pipeline_provisioned_resources` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_service_pipeline_provisioned_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_pipeline_provisioned_resources)
 
-Boto3 documentation:
-[Proton.Client.list_service_pipeline_provisioned_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_pipeline_provisioned_resources)
+```python title="Method definition"
+def list_service_pipeline_provisioned_resources(
+    self,
+    *,
+    serviceName: str,
+    nextToken: str = ...,
+) -> ListServicePipelineProvisionedResourcesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServicePipelineProvisionedResourcesInputRequestTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesinputrequesttypedef).
+1. See [:material-code-braces: ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `serviceName`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServicePipelineProvisionedResourcesInputRequestTypeDef = {  # (1)
+    "serviceName": ...,
+}
 
-Returns
-[ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef).
+parent.list_service_pipeline_provisioned_resources(**kwargs)
+```
 
-<a id="list\_service\_template\_versions"></a>
+1. See [:material-code-braces: ListServicePipelineProvisionedResourcesInputRequestTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesinputrequesttypedef) 
 
-### list_service_template_versions
+### list\_service\_template\_versions
 
 List major or minor versions of a service template with detail data.
 
-Type annotations for `boto3.client("proton").list_service_template_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").list_service_template_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_template_versions)
 
-Boto3 documentation:
-[Proton.Client.list_service_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_template_versions)
+```python title="Method definition"
+def list_service_template_versions(
+    self,
+    *,
+    templateName: str,
+    majorVersion: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListServiceTemplateVersionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceTemplateVersionsInputRequestTypeDef](./type_defs.md#listservicetemplateversionsinputrequesttypedef).
+1. See [:material-code-braces: ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `majorVersion`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServiceTemplateVersionsInputRequestTypeDef = {  # (1)
+    "templateName": ...,
+}
 
-Returns
-[ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef).
+parent.list_service_template_versions(**kwargs)
+```
 
-<a id="list\_service\_templates"></a>
+1. See [:material-code-braces: ListServiceTemplateVersionsInputRequestTypeDef](./type_defs.md#listservicetemplateversionsinputrequesttypedef) 
 
-### list_service_templates
+### list\_service\_templates
 
 List service templates with detail data.
 
-Type annotations for `boto3.client("proton").list_service_templates` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_service_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_templates)
 
-Boto3 documentation:
-[Proton.Client.list_service_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_service_templates)
+```python title="Method definition"
+def list_service_templates(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListServiceTemplatesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceTemplatesInputRequestTypeDef](./type_defs.md#listservicetemplatesinputrequesttypedef).
+1. See [:material-code-braces: ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServiceTemplatesInputRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef).
+parent.list_service_templates(**kwargs)
+```
 
-<a id="list\_services"></a>
+1. See [:material-code-braces: ListServiceTemplatesInputRequestTypeDef](./type_defs.md#listservicetemplatesinputrequesttypedef) 
 
-### list_services
+### list\_services
 
 List services with summaries of detail data.
 
-Type annotations for `boto3.client("proton").list_services` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_services` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_services)
 
-Boto3 documentation:
-[Proton.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_services)
+```python title="Method definition"
+def list_services(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListServicesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServicesInputRequestTypeDef](./type_defs.md#listservicesinputrequesttypedef).
+1. See [:material-code-braces: ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServicesInputRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns [ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef).
+parent.list_services(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListServicesInputRequestTypeDef](./type_defs.md#listservicesinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List tags for a resource.
 
-Type annotations for `boto3.client("proton").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("proton").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Proton.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="notify\_resource\_deployment\_status\_change"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### notify_resource_deployment_status_change
+### notify\_resource\_deployment\_status\_change
 
 Notify Proton of status changes to a provisioned resource when you use pull
 request provisioning.
 
-Type annotations for
-`boto3.client("proton").notify_resource_deployment_status_change` method.
+Type annotations and code completion for `#!python boto3.client("proton").notify_resource_deployment_status_change` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.notify_resource_deployment_status_change)
 
-Boto3 documentation:
-[Proton.Client.notify_resource_deployment_status_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.notify_resource_deployment_status_change)
+```python title="Method definition"
+def notify_resource_deployment_status_change(
+    self,
+    *,
+    resourceArn: str,
+    status: ResourceDeploymentStatusType,  # (1)
+    deploymentId: str = ...,
+    outputs: Sequence[OutputTypeDef] = ...,  # (2)
+    statusMessage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[NotifyResourceDeploymentStatusChangeInputRequestTypeDef](./type_defs.md#notifyresourcedeploymentstatuschangeinputrequesttypedef).
+1. See [:material-code-brackets: ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype) 
+2. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `status`:
-  [ResourceDeploymentStatusType](./literals.md#resourcedeploymentstatustype)
-  *(required)*
-- `deploymentId`: `str`
-- `outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `statusMessage`: `str`
+```python title="Usage example with kwargs"
+kwargs: NotifyResourceDeploymentStatusChangeInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "status": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.notify_resource_deployment_status_change(**kwargs)
+```
 
-<a id="reject\_environment\_account\_connection"></a>
+1. See [:material-code-braces: NotifyResourceDeploymentStatusChangeInputRequestTypeDef](./type_defs.md#notifyresourcedeploymentstatuschangeinputrequesttypedef) 
 
-### reject_environment_account_connection
+### reject\_environment\_account\_connection
 
 In a management account, reject an environment account connection from another
 environment account.
 
-Type annotations for
-`boto3.client("proton").reject_environment_account_connection` method.
+Type annotations and code completion for `#!python boto3.client("proton").reject_environment_account_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.reject_environment_account_connection)
 
-Boto3 documentation:
-[Proton.Client.reject_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.reject_environment_account_connection)
+```python title="Method definition"
+def reject_environment_account_connection(
+    self,
+    *,
+    id: str,
+) -> RejectEnvironmentAccountConnectionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RejectEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#rejectenvironmentaccountconnectioninputrequesttypedef).
+1. See [:material-code-braces: RejectEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#rejectenvironmentaccountconnectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectEnvironmentAccountConnectionInputRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[RejectEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#rejectenvironmentaccountconnectionoutputtypedef).
+parent.reject_environment_account_connection(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RejectEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#rejectenvironmentaccountconnectioninputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Tag a resource.
 
-Type annotations for `boto3.client("proton").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("proton").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.tag_resource)
 
-Boto3 documentation:
-[Proton.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Remove a tag from a resource.
 
-Type annotations for `boto3.client("proton").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("proton").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.untag_resource)
 
-Boto3 documentation:
-[Proton.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_account\_settings"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_account_settings
+### update\_account\_settings
 
 Update the Proton service pipeline role or repository settings.
 
-Type annotations for `boto3.client("proton").update_account_settings` method.
+Type annotations and code completion for `#!python boto3.client("proton").update_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_account_settings)
 
-Boto3 documentation:
-[Proton.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_account_settings)
+```python title="Method definition"
+def update_account_settings(
+    self,
+    *,
+    pipelineProvisioningRepository: RepositoryBranchInputTypeDef = ...,  # (1)
+    pipelineServiceRoleArn: str = ...,
+) -> UpdateAccountSettingsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccountSettingsInputRequestTypeDef](./type_defs.md#updateaccountsettingsinputrequesttypedef).
+1. See [:material-code-braces: RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef) 
+2. See [:material-code-braces: UpdateAccountSettingsOutputTypeDef](./type_defs.md#updateaccountsettingsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineProvisioningRepository`:
-  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
-- `pipelineServiceRoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAccountSettingsInputRequestTypeDef = {  # (1)
+    "pipelineProvisioningRepository": ...,
+}
 
-Returns
-[UpdateAccountSettingsOutputTypeDef](./type_defs.md#updateaccountsettingsoutputtypedef).
+parent.update_account_settings(**kwargs)
+```
 
-<a id="update\_environment"></a>
+1. See [:material-code-braces: UpdateAccountSettingsInputRequestTypeDef](./type_defs.md#updateaccountsettingsinputrequesttypedef) 
 
-### update_environment
+### update\_environment
 
 Update an environment.
 
-Type annotations for `boto3.client("proton").update_environment` method.
+Type annotations and code completion for `#!python boto3.client("proton").update_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment)
 
-Boto3 documentation:
-[Proton.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment)
+```python title="Method definition"
+def update_environment(
+    self,
+    *,
+    deploymentType: DeploymentUpdateTypeType,  # (1)
+    name: str,
+    description: str = ...,
+    environmentAccountConnectionId: str = ...,
+    protonServiceRoleArn: str = ...,
+    provisioningRepository: RepositoryBranchInputTypeDef = ...,  # (2)
+    spec: str = ...,
+    templateMajorVersion: str = ...,
+    templateMinorVersion: str = ...,
+) -> UpdateEnvironmentOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentInputRequestTypeDef](./type_defs.md#updateenvironmentinputrequesttypedef).
+1. See [:material-code-brackets: DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype) 
+2. See [:material-code-braces: RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef) 
+3. See [:material-code-braces: UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `deploymentType`:
-  [DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype)
-  *(required)*
-- `name`: `str` *(required)*
-- `description`: `str`
-- `environmentAccountConnectionId`: `str`
-- `protonServiceRoleArn`: `str`
-- `provisioningRepository`:
-  [RepositoryBranchInputTypeDef](./type_defs.md#repositorybranchinputtypedef)
-- `spec`: `str`
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentInputRequestTypeDef = {  # (1)
+    "deploymentType": ...,
+    "name": ...,
+}
 
-Returns
-[UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef).
+parent.update_environment(**kwargs)
+```
 
-<a id="update\_environment\_account\_connection"></a>
+1. See [:material-code-braces: UpdateEnvironmentInputRequestTypeDef](./type_defs.md#updateenvironmentinputrequesttypedef) 
 
-### update_environment_account_connection
+### update\_environment\_account\_connection
 
-In an environment account, update an environment account connection to use a
-new IAM role.
+In an environment account, update an environment account connection to use a new
+IAM role.
 
-Type annotations for
-`boto3.client("proton").update_environment_account_connection` method.
+Type annotations and code completion for `#!python boto3.client("proton").update_environment_account_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_account_connection)
 
-Boto3 documentation:
-[Proton.Client.update_environment_account_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_account_connection)
+```python title="Method definition"
+def update_environment_account_connection(
+    self,
+    *,
+    id: str,
+    roleArn: str,
+) -> UpdateEnvironmentAccountConnectionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#updateenvironmentaccountconnectioninputrequesttypedef).
+1. See [:material-code-braces: UpdateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#updateenvironmentaccountconnectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `roleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentAccountConnectionInputRequestTypeDef = {  # (1)
+    "id": ...,
+    "roleArn": ...,
+}
 
-Returns
-[UpdateEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#updateenvironmentaccountconnectionoutputtypedef).
+parent.update_environment_account_connection(**kwargs)
+```
 
-<a id="update\_environment\_template"></a>
+1. See [:material-code-braces: UpdateEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#updateenvironmentaccountconnectioninputrequesttypedef) 
 
-### update_environment_template
+### update\_environment\_template
 
 Update an environment template.
 
-Type annotations for `boto3.client("proton").update_environment_template`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").update_environment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_template)
 
-Boto3 documentation:
-[Proton.Client.update_environment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_template)
+```python title="Method definition"
+def update_environment_template(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    displayName: str = ...,
+) -> UpdateEnvironmentTemplateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentTemplateInputRequestTypeDef](./type_defs.md#updateenvironmenttemplateinputrequesttypedef).
+1. See [:material-code-braces: UpdateEnvironmentTemplateOutputTypeDef](./type_defs.md#updateenvironmenttemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `displayName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentTemplateInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[UpdateEnvironmentTemplateOutputTypeDef](./type_defs.md#updateenvironmenttemplateoutputtypedef).
+parent.update_environment_template(**kwargs)
+```
 
-<a id="update\_environment\_template\_version"></a>
+1. See [:material-code-braces: UpdateEnvironmentTemplateInputRequestTypeDef](./type_defs.md#updateenvironmenttemplateinputrequesttypedef) 
 
-### update_environment_template_version
+### update\_environment\_template\_version
 
 Update a major or minor version of an environment template.
 
-Type annotations for
-`boto3.client("proton").update_environment_template_version` method.
+Type annotations and code completion for `#!python boto3.client("proton").update_environment_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_template_version)
 
-Boto3 documentation:
-[Proton.Client.update_environment_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_environment_template_version)
+```python title="Method definition"
+def update_environment_template_version(
+    self,
+    *,
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+    description: str = ...,
+    status: TemplateVersionStatusType = ...,  # (1)
+) -> UpdateEnvironmentTemplateVersionOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#updateenvironmenttemplateversioninputrequesttypedef).
+1. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
+2. See [:material-code-braces: UpdateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#updateenvironmenttemplateversionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `majorVersion`: `str` *(required)*
-- `minorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
-- `description`: `str`
-- `status`:
-  [TemplateVersionStatusType](./literals.md#templateversionstatustype)
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentTemplateVersionInputRequestTypeDef = {  # (1)
+    "majorVersion": ...,
+    "minorVersion": ...,
+    "templateName": ...,
+}
 
-Returns
-[UpdateEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#updateenvironmenttemplateversionoutputtypedef).
+parent.update_environment_template_version(**kwargs)
+```
 
-<a id="update\_service"></a>
+1. See [:material-code-braces: UpdateEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#updateenvironmenttemplateversioninputrequesttypedef) 
 
-### update_service
+### update\_service
 
 Edit a service description or use a spec to add and delete service instances.
 
-Type annotations for `boto3.client("proton").update_service` method.
+Type annotations and code completion for `#!python boto3.client("proton").update_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service)
 
-Boto3 documentation:
-[Proton.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service)
+```python title="Method definition"
+def update_service(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    spec: str = ...,
+) -> UpdateServiceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceInputRequestTypeDef](./type_defs.md#updateserviceinputrequesttypedef).
+1. See [:material-code-braces: UpdateServiceOutputTypeDef](./type_defs.md#updateserviceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `spec`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[UpdateServiceOutputTypeDef](./type_defs.md#updateserviceoutputtypedef).
+parent.update_service(**kwargs)
+```
 
-<a id="update\_service\_instance"></a>
+1. See [:material-code-braces: UpdateServiceInputRequestTypeDef](./type_defs.md#updateserviceinputrequesttypedef) 
 
-### update_service_instance
+### update\_service\_instance
 
 Update a service instance.
 
-Type annotations for `boto3.client("proton").update_service_instance` method.
+Type annotations and code completion for `#!python boto3.client("proton").update_service_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_instance)
 
-Boto3 documentation:
-[Proton.Client.update_service_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_instance)
+```python title="Method definition"
+def update_service_instance(
+    self,
+    *,
+    deploymentType: DeploymentUpdateTypeType,  # (1)
+    name: str,
+    serviceName: str,
+    spec: str = ...,
+    templateMajorVersion: str = ...,
+    templateMinorVersion: str = ...,
+) -> UpdateServiceInstanceOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceInstanceInputRequestTypeDef](./type_defs.md#updateserviceinstanceinputrequesttypedef).
+1. See [:material-code-brackets: DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype) 
+2. See [:material-code-braces: UpdateServiceInstanceOutputTypeDef](./type_defs.md#updateserviceinstanceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `deploymentType`:
-  [DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype)
-  *(required)*
-- `name`: `str` *(required)*
-- `serviceName`: `str` *(required)*
-- `spec`: `str`
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceInstanceInputRequestTypeDef = {  # (1)
+    "deploymentType": ...,
+    "name": ...,
+    "serviceName": ...,
+}
 
-Returns
-[UpdateServiceInstanceOutputTypeDef](./type_defs.md#updateserviceinstanceoutputtypedef).
+parent.update_service_instance(**kwargs)
+```
 
-<a id="update\_service\_pipeline"></a>
+1. See [:material-code-braces: UpdateServiceInstanceInputRequestTypeDef](./type_defs.md#updateserviceinstanceinputrequesttypedef) 
 
-### update_service_pipeline
+### update\_service\_pipeline
 
 Update the service pipeline.
 
-Type annotations for `boto3.client("proton").update_service_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("proton").update_service_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_pipeline)
 
-Boto3 documentation:
-[Proton.Client.update_service_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_pipeline)
+```python title="Method definition"
+def update_service_pipeline(
+    self,
+    *,
+    deploymentType: DeploymentUpdateTypeType,  # (1)
+    serviceName: str,
+    spec: str,
+    templateMajorVersion: str = ...,
+    templateMinorVersion: str = ...,
+) -> UpdateServicePipelineOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServicePipelineInputRequestTypeDef](./type_defs.md#updateservicepipelineinputrequesttypedef).
+1. See [:material-code-brackets: DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype) 
+2. See [:material-code-braces: UpdateServicePipelineOutputTypeDef](./type_defs.md#updateservicepipelineoutputtypedef) 
 
-Keyword-only arguments:
 
-- `deploymentType`:
-  [DeploymentUpdateTypeType](./literals.md#deploymentupdatetypetype)
-  *(required)*
-- `serviceName`: `str` *(required)*
-- `spec`: `str` *(required)*
-- `templateMajorVersion`: `str`
-- `templateMinorVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateServicePipelineInputRequestTypeDef = {  # (1)
+    "deploymentType": ...,
+    "serviceName": ...,
+    "spec": ...,
+}
 
-Returns
-[UpdateServicePipelineOutputTypeDef](./type_defs.md#updateservicepipelineoutputtypedef).
+parent.update_service_pipeline(**kwargs)
+```
 
-<a id="update\_service\_template"></a>
+1. See [:material-code-braces: UpdateServicePipelineInputRequestTypeDef](./type_defs.md#updateservicepipelineinputrequesttypedef) 
 
-### update_service_template
+### update\_service\_template
 
 Update a service template.
 
-Type annotations for `boto3.client("proton").update_service_template` method.
+Type annotations and code completion for `#!python boto3.client("proton").update_service_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_template)
 
-Boto3 documentation:
-[Proton.Client.update_service_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_template)
+```python title="Method definition"
+def update_service_template(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    displayName: str = ...,
+) -> UpdateServiceTemplateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceTemplateInputRequestTypeDef](./type_defs.md#updateservicetemplateinputrequesttypedef).
+1. See [:material-code-braces: UpdateServiceTemplateOutputTypeDef](./type_defs.md#updateservicetemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `displayName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceTemplateInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[UpdateServiceTemplateOutputTypeDef](./type_defs.md#updateservicetemplateoutputtypedef).
+parent.update_service_template(**kwargs)
+```
 
-<a id="update\_service\_template\_version"></a>
+1. See [:material-code-braces: UpdateServiceTemplateInputRequestTypeDef](./type_defs.md#updateservicetemplateinputrequesttypedef) 
 
-### update_service_template_version
+### update\_service\_template\_version
 
 Update a major or minor version of a service template.
 
-Type annotations for `boto3.client("proton").update_service_template_version`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").update_service_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_template_version)
 
-Boto3 documentation:
-[Proton.Client.update_service_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_service_template_version)
+```python title="Method definition"
+def update_service_template_version(
+    self,
+    *,
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+    compatibleEnvironmentTemplates: Sequence[CompatibleEnvironmentTemplateInputTypeDef] = ...,  # (1)
+    description: str = ...,
+    status: TemplateVersionStatusType = ...,  # (2)
+) -> UpdateServiceTemplateVersionOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceTemplateVersionInputRequestTypeDef](./type_defs.md#updateservicetemplateversioninputrequesttypedef).
+1. See [:material-code-braces: CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef) 
+2. See [:material-code-brackets: TemplateVersionStatusType](./literals.md#templateversionstatustype) 
+3. See [:material-code-braces: UpdateServiceTemplateVersionOutputTypeDef](./type_defs.md#updateservicetemplateversionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `majorVersion`: `str` *(required)*
-- `minorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
-- `compatibleEnvironmentTemplates`:
-  `Sequence`\[[CompatibleEnvironmentTemplateInputTypeDef](./type_defs.md#compatibleenvironmenttemplateinputtypedef)\]
-- `description`: `str`
-- `status`:
-  [TemplateVersionStatusType](./literals.md#templateversionstatustype)
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceTemplateVersionInputRequestTypeDef = {  # (1)
+    "majorVersion": ...,
+    "minorVersion": ...,
+    "templateName": ...,
+}
 
-Returns
-[UpdateServiceTemplateVersionOutputTypeDef](./type_defs.md#updateservicetemplateversionoutputtypedef).
+parent.update_service_template_version(**kwargs)
+```
 
-<a id="update\_template\_sync\_config"></a>
+1. See [:material-code-braces: UpdateServiceTemplateVersionInputRequestTypeDef](./type_defs.md#updateservicetemplateversioninputrequesttypedef) 
 
-### update_template_sync_config
+### update\_template\_sync\_config
 
-Update template sync configuration parameters, except for the `templateName`
-and `templateType` .
+Update template sync configuration parameters, except for the `templateName` and
+`templateType` .
 
-Type annotations for `boto3.client("proton").update_template_sync_config`
-method.
+Type annotations and code completion for `#!python boto3.client("proton").update_template_sync_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_template_sync_config)
 
-Boto3 documentation:
-[Proton.Client.update_template_sync_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client.update_template_sync_config)
+```python title="Method definition"
+def update_template_sync_config(
+    self,
+    *,
+    branch: str,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    templateName: str,
+    templateType: TemplateTypeType,  # (2)
+    subdirectory: str = ...,
+) -> UpdateTemplateSyncConfigOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTemplateSyncConfigInputRequestTypeDef](./type_defs.md#updatetemplatesyncconfiginputrequesttypedef).
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+3. See [:material-code-braces: UpdateTemplateSyncConfigOutputTypeDef](./type_defs.md#updatetemplatesyncconfigoutputtypedef) 
 
-Keyword-only arguments:
 
-- `branch`: `str` *(required)*
-- `repositoryName`: `str` *(required)*
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype) *(required)*
-- `templateName`: `str` *(required)*
-- `templateType`: [TemplateTypeType](./literals.md#templatetypetype)
-  *(required)*
-- `subdirectory`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateTemplateSyncConfigInputRequestTypeDef = {  # (1)
+    "branch": ...,
+    "repositoryName": ...,
+    "repositoryProvider": ...,
+    "templateName": ...,
+    "templateType": ...,
+}
 
-Returns
-[UpdateTemplateSyncConfigOutputTypeDef](./type_defs.md#updatetemplatesyncconfigoutputtypedef).
+parent.update_template_sync_config(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateTemplateSyncConfigInputRequestTypeDef](./type_defs.md#updatetemplatesyncconfiginputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("proton").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator` method with overloads.
 
-- `client.get_paginator("list_environment_account_connections")` ->
-  [ListEnvironmentAccountConnectionsPaginator](./paginators.md#listenvironmentaccountconnectionspaginator)
-- `client.get_paginator("list_environment_outputs")` ->
-  [ListEnvironmentOutputsPaginator](./paginators.md#listenvironmentoutputspaginator)
-- `client.get_paginator("list_environment_provisioned_resources")` ->
-  [ListEnvironmentProvisionedResourcesPaginator](./paginators.md#listenvironmentprovisionedresourcespaginator)
-- `client.get_paginator("list_environment_template_versions")` ->
-  [ListEnvironmentTemplateVersionsPaginator](./paginators.md#listenvironmenttemplateversionspaginator)
-- `client.get_paginator("list_environment_templates")` ->
-  [ListEnvironmentTemplatesPaginator](./paginators.md#listenvironmenttemplatespaginator)
-- `client.get_paginator("list_environments")` ->
-  [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
-- `client.get_paginator("list_repositories")` ->
-  [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
-- `client.get_paginator("list_repository_sync_definitions")` ->
-  [ListRepositorySyncDefinitionsPaginator](./paginators.md#listrepositorysyncdefinitionspaginator)
-- `client.get_paginator("list_service_instance_outputs")` ->
-  [ListServiceInstanceOutputsPaginator](./paginators.md#listserviceinstanceoutputspaginator)
-- `client.get_paginator("list_service_instance_provisioned_resources")` ->
-  [ListServiceInstanceProvisionedResourcesPaginator](./paginators.md#listserviceinstanceprovisionedresourcespaginator)
-- `client.get_paginator("list_service_instances")` ->
-  [ListServiceInstancesPaginator](./paginators.md#listserviceinstancespaginator)
-- `client.get_paginator("list_service_pipeline_outputs")` ->
-  [ListServicePipelineOutputsPaginator](./paginators.md#listservicepipelineoutputspaginator)
-- `client.get_paginator("list_service_pipeline_provisioned_resources")` ->
-  [ListServicePipelineProvisionedResourcesPaginator](./paginators.md#listservicepipelineprovisionedresourcespaginator)
-- `client.get_paginator("list_service_template_versions")` ->
-  [ListServiceTemplateVersionsPaginator](./paginators.md#listservicetemplateversionspaginator)
-- `client.get_paginator("list_service_templates")` ->
-  [ListServiceTemplatesPaginator](./paginators.md#listservicetemplatespaginator)
-- `client.get_paginator("list_services")` ->
-  [ListServicesPaginator](./paginators.md#listservicespaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_environment_account_connections")` -> [ListEnvironmentAccountConnectionsPaginator](./paginators.md#listenvironmentaccountconnectionspaginator)
+- `client.get_paginator("list_environment_outputs")` -> [ListEnvironmentOutputsPaginator](./paginators.md#listenvironmentoutputspaginator)
+- `client.get_paginator("list_environment_provisioned_resources")` -> [ListEnvironmentProvisionedResourcesPaginator](./paginators.md#listenvironmentprovisionedresourcespaginator)
+- `client.get_paginator("list_environment_template_versions")` -> [ListEnvironmentTemplateVersionsPaginator](./paginators.md#listenvironmenttemplateversionspaginator)
+- `client.get_paginator("list_environment_templates")` -> [ListEnvironmentTemplatesPaginator](./paginators.md#listenvironmenttemplatespaginator)
+- `client.get_paginator("list_environments")` -> [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+- `client.get_paginator("list_repositories")` -> [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
+- `client.get_paginator("list_repository_sync_definitions")` -> [ListRepositorySyncDefinitionsPaginator](./paginators.md#listrepositorysyncdefinitionspaginator)
+- `client.get_paginator("list_service_instance_outputs")` -> [ListServiceInstanceOutputsPaginator](./paginators.md#listserviceinstanceoutputspaginator)
+- `client.get_paginator("list_service_instance_provisioned_resources")` -> [ListServiceInstanceProvisionedResourcesPaginator](./paginators.md#listserviceinstanceprovisionedresourcespaginator)
+- `client.get_paginator("list_service_instances")` -> [ListServiceInstancesPaginator](./paginators.md#listserviceinstancespaginator)
+- `client.get_paginator("list_service_pipeline_outputs")` -> [ListServicePipelineOutputsPaginator](./paginators.md#listservicepipelineoutputspaginator)
+- `client.get_paginator("list_service_pipeline_provisioned_resources")` -> [ListServicePipelineProvisionedResourcesPaginator](./paginators.md#listservicepipelineprovisionedresourcespaginator)
+- `client.get_paginator("list_service_template_versions")` -> [ListServiceTemplateVersionsPaginator](./paginators.md#listservicetemplateversionspaginator)
+- `client.get_paginator("list_service_templates")` -> [ListServiceTemplatesPaginator](./paginators.md#listservicetemplatespaginator)
+- `client.get_paginator("list_services")` -> [ListServicesPaginator](./paginators.md#listservicespaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("proton").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter` method with overloads.
 
-- `client.get_waiter("environment_deployed")` ->
-  [EnvironmentDeployedWaiter](./waiters.md#environmentdeployedwaiter)
-- `client.get_waiter("environment_template_version_registered")` ->
-  [EnvironmentTemplateVersionRegisteredWaiter](./waiters.md#environmenttemplateversionregisteredwaiter)
-- `client.get_waiter("service_created")` ->
-  [ServiceCreatedWaiter](./waiters.md#servicecreatedwaiter)
-- `client.get_waiter("service_deleted")` ->
-  [ServiceDeletedWaiter](./waiters.md#servicedeletedwaiter)
-- `client.get_waiter("service_instance_deployed")` ->
-  [ServiceInstanceDeployedWaiter](./waiters.md#serviceinstancedeployedwaiter)
-- `client.get_waiter("service_pipeline_deployed")` ->
-  [ServicePipelineDeployedWaiter](./waiters.md#servicepipelinedeployedwaiter)
-- `client.get_waiter("service_template_version_registered")` ->
-  [ServiceTemplateVersionRegisteredWaiter](./waiters.md#servicetemplateversionregisteredwaiter)
-- `client.get_waiter("service_updated")` ->
-  [ServiceUpdatedWaiter](./waiters.md#serviceupdatedwaiter)
+- `client.get_waiter("environment_deployed")` -> [EnvironmentDeployedWaiter](./waiters.md#environmentdeployedwaiter)
+- `client.get_waiter("environment_template_version_registered")` -> [EnvironmentTemplateVersionRegisteredWaiter](./waiters.md#environmenttemplateversionregisteredwaiter)
+- `client.get_waiter("service_created")` -> [ServiceCreatedWaiter](./waiters.md#servicecreatedwaiter)
+- `client.get_waiter("service_deleted")` -> [ServiceDeletedWaiter](./waiters.md#servicedeletedwaiter)
+- `client.get_waiter("service_instance_deployed")` -> [ServiceInstanceDeployedWaiter](./waiters.md#serviceinstancedeployedwaiter)
+- `client.get_waiter("service_pipeline_deployed")` -> [ServicePipelineDeployedWaiter](./waiters.md#servicepipelinedeployedwaiter)
+- `client.get_waiter("service_template_version_registered")` -> [ServiceTemplateVersionRegisteredWaiter](./waiters.md#servicetemplateversionregisteredwaiter)
+- `client.get_waiter("service_updated")` -> [ServiceUpdatedWaiter](./waiters.md#serviceupdatedwaiter)
+

@@ -1,1090 +1,1540 @@
-<a id="typed-dictionaries-for-boto3-ssoadmin-module"></a>
-
-# Typed dictionaries for boto3 SSOAdmin module
+# Typed dictionaries
 
 > [Index](../README.md) > [SSOAdmin](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
-type annotations stubs module
-[mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SSOAdmin module](#typed-dictionaries-for-boto3-ssoadmin-module)
-  - [AccessControlAttributeTypeDef](#accesscontrolattributetypedef)
-  - [AccessControlAttributeValueTypeDef](#accesscontrolattributevaluetypedef)
-  - [AccountAssignmentOperationStatusMetadataTypeDef](#accountassignmentoperationstatusmetadatatypedef)
-  - [AccountAssignmentOperationStatusTypeDef](#accountassignmentoperationstatustypedef)
-  - [AccountAssignmentTypeDef](#accountassignmenttypedef)
-  - [AttachManagedPolicyToPermissionSetRequestRequestTypeDef](#attachmanagedpolicytopermissionsetrequestrequesttypedef)
-  - [AttachedManagedPolicyTypeDef](#attachedmanagedpolicytypedef)
-  - [CreateAccountAssignmentRequestRequestTypeDef](#createaccountassignmentrequestrequesttypedef)
-  - [CreateAccountAssignmentResponseTypeDef](#createaccountassignmentresponsetypedef)
-  - [CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](#createinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
-  - [CreatePermissionSetRequestRequestTypeDef](#createpermissionsetrequestrequesttypedef)
-  - [CreatePermissionSetResponseTypeDef](#createpermissionsetresponsetypedef)
-  - [DeleteAccountAssignmentRequestRequestTypeDef](#deleteaccountassignmentrequestrequesttypedef)
-  - [DeleteAccountAssignmentResponseTypeDef](#deleteaccountassignmentresponsetypedef)
-  - [DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef](#deleteinlinepolicyfrompermissionsetrequestrequesttypedef)
-  - [DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](#deleteinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
-  - [DeletePermissionSetRequestRequestTypeDef](#deletepermissionsetrequestrequesttypedef)
-  - [DescribeAccountAssignmentCreationStatusRequestRequestTypeDef](#describeaccountassignmentcreationstatusrequestrequesttypedef)
-  - [DescribeAccountAssignmentCreationStatusResponseTypeDef](#describeaccountassignmentcreationstatusresponsetypedef)
-  - [DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef](#describeaccountassignmentdeletionstatusrequestrequesttypedef)
-  - [DescribeAccountAssignmentDeletionStatusResponseTypeDef](#describeaccountassignmentdeletionstatusresponsetypedef)
-  - [DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](#describeinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
-  - [DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef](#describeinstanceaccesscontrolattributeconfigurationresponsetypedef)
-  - [DescribePermissionSetProvisioningStatusRequestRequestTypeDef](#describepermissionsetprovisioningstatusrequestrequesttypedef)
-  - [DescribePermissionSetProvisioningStatusResponseTypeDef](#describepermissionsetprovisioningstatusresponsetypedef)
-  - [DescribePermissionSetRequestRequestTypeDef](#describepermissionsetrequestrequesttypedef)
-  - [DescribePermissionSetResponseTypeDef](#describepermissionsetresponsetypedef)
-  - [DetachManagedPolicyFromPermissionSetRequestRequestTypeDef](#detachmanagedpolicyfrompermissionsetrequestrequesttypedef)
-  - [GetInlinePolicyForPermissionSetRequestRequestTypeDef](#getinlinepolicyforpermissionsetrequestrequesttypedef)
-  - [GetInlinePolicyForPermissionSetResponseTypeDef](#getinlinepolicyforpermissionsetresponsetypedef)
-  - [InstanceAccessControlAttributeConfigurationTypeDef](#instanceaccesscontrolattributeconfigurationtypedef)
-  - [InstanceMetadataTypeDef](#instancemetadatatypedef)
-  - [ListAccountAssignmentCreationStatusRequestRequestTypeDef](#listaccountassignmentcreationstatusrequestrequesttypedef)
-  - [ListAccountAssignmentCreationStatusResponseTypeDef](#listaccountassignmentcreationstatusresponsetypedef)
-  - [ListAccountAssignmentDeletionStatusRequestRequestTypeDef](#listaccountassignmentdeletionstatusrequestrequesttypedef)
-  - [ListAccountAssignmentDeletionStatusResponseTypeDef](#listaccountassignmentdeletionstatusresponsetypedef)
-  - [ListAccountAssignmentsRequestRequestTypeDef](#listaccountassignmentsrequestrequesttypedef)
-  - [ListAccountAssignmentsResponseTypeDef](#listaccountassignmentsresponsetypedef)
-  - [ListAccountsForProvisionedPermissionSetRequestRequestTypeDef](#listaccountsforprovisionedpermissionsetrequestrequesttypedef)
-  - [ListAccountsForProvisionedPermissionSetResponseTypeDef](#listaccountsforprovisionedpermissionsetresponsetypedef)
-  - [ListInstancesRequestRequestTypeDef](#listinstancesrequestrequesttypedef)
-  - [ListInstancesResponseTypeDef](#listinstancesresponsetypedef)
-  - [ListManagedPoliciesInPermissionSetRequestRequestTypeDef](#listmanagedpoliciesinpermissionsetrequestrequesttypedef)
-  - [ListManagedPoliciesInPermissionSetResponseTypeDef](#listmanagedpoliciesinpermissionsetresponsetypedef)
-  - [ListPermissionSetProvisioningStatusRequestRequestTypeDef](#listpermissionsetprovisioningstatusrequestrequesttypedef)
-  - [ListPermissionSetProvisioningStatusResponseTypeDef](#listpermissionsetprovisioningstatusresponsetypedef)
-  - [ListPermissionSetsProvisionedToAccountRequestRequestTypeDef](#listpermissionsetsprovisionedtoaccountrequestrequesttypedef)
-  - [ListPermissionSetsProvisionedToAccountResponseTypeDef](#listpermissionsetsprovisionedtoaccountresponsetypedef)
-  - [ListPermissionSetsRequestRequestTypeDef](#listpermissionsetsrequestrequesttypedef)
-  - [ListPermissionSetsResponseTypeDef](#listpermissionsetsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [OperationStatusFilterTypeDef](#operationstatusfiltertypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PermissionSetProvisioningStatusMetadataTypeDef](#permissionsetprovisioningstatusmetadatatypedef)
-  - [PermissionSetProvisioningStatusTypeDef](#permissionsetprovisioningstatustypedef)
-  - [PermissionSetTypeDef](#permissionsettypedef)
-  - [ProvisionPermissionSetRequestRequestTypeDef](#provisionpermissionsetrequestrequesttypedef)
-  - [ProvisionPermissionSetResponseTypeDef](#provisionpermissionsetresponsetypedef)
-  - [PutInlinePolicyToPermissionSetRequestRequestTypeDef](#putinlinepolicytopermissionsetrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](#updateinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
-  - [UpdatePermissionSetRequestRequestTypeDef](#updatepermissionsetrequestrequesttypedef)
-
-<a id="accesscontrolattributetypedef"></a>
+    Auto-generated documentation for [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+    type annotations stubs module [mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 ## AccessControlAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import AccessControlAttributeTypeDef
+
+def get_value() -> AccessControlAttributeTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessControlAttributeTypeDef(TypedDict):
+    Key: str,
+    Value: AccessControlAttributeValueTypeDef,  # (1)
+```
 
-- `Key`: `str`
-- `Value`:
-  [AccessControlAttributeValueTypeDef](./type_defs.md#accesscontrolattributevaluetypedef)
-
-<a id="accesscontrolattributevaluetypedef"></a>
-
+1. See [:material-code-braces: AccessControlAttributeValueTypeDef](./type_defs.md#accesscontrolattributevaluetypedef) 
 ## AccessControlAttributeValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import AccessControlAttributeValueTypeDef
+
+def get_value() -> AccessControlAttributeValueTypeDef:
+    return {
+        "Source": ...,
+    }
 ```
 
-Required fields:
-
-- `Source`: `Sequence`\[`str`\]
-
-<a id="accountassignmentoperationstatusmetadatatypedef"></a>
+```python title="Definition"
+class AccessControlAttributeValueTypeDef(TypedDict):
+    Source: Sequence[str],
+```
 
 ## AccountAssignmentOperationStatusMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import AccountAssignmentOperationStatusMetadataTypeDef
+
+def get_value() -> AccountAssignmentOperationStatusMetadataTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountAssignmentOperationStatusMetadataTypeDef(TypedDict):
+    Status: NotRequired[StatusValuesType],  # (1)
+    RequestId: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+```
 
-- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
-- `RequestId`: `str`
-- `CreatedDate`: `datetime`
-
-<a id="accountassignmentoperationstatustypedef"></a>
-
+1. See [:material-code-brackets: StatusValuesType](./literals.md#statusvaluestype) 
 ## AccountAssignmentOperationStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import AccountAssignmentOperationStatusTypeDef
+
+def get_value() -> AccountAssignmentOperationStatusTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountAssignmentOperationStatusTypeDef(TypedDict):
+    Status: NotRequired[StatusValuesType],  # (1)
+    RequestId: NotRequired[str],
+    FailureReason: NotRequired[str],
+    TargetId: NotRequired[str],
+    TargetType: NotRequired[TargetTypeType],  # (2)
+    PermissionSetArn: NotRequired[str],
+    PrincipalType: NotRequired[PrincipalTypeType],  # (3)
+    PrincipalId: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+```
 
-- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
-- `RequestId`: `str`
-- `FailureReason`: `str`
-- `TargetId`: `str`
-- `TargetType`: `Literal['AWS_ACCOUNT']` (see
-  [TargetTypeType](./literals.md#targettypetype))
-- `PermissionSetArn`: `str`
-- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
-- `PrincipalId`: `str`
-- `CreatedDate`: `datetime`
-
-<a id="accountassignmenttypedef"></a>
-
+1. See [:material-code-brackets: StatusValuesType](./literals.md#statusvaluestype) 
+2. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+3. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 ## AccountAssignmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import AccountAssignmentTypeDef
+
+def get_value() -> AccountAssignmentTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountAssignmentTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    PermissionSetArn: NotRequired[str],
+    PrincipalType: NotRequired[PrincipalTypeType],  # (1)
+    PrincipalId: NotRequired[str],
+```
 
-- `AccountId`: `str`
-- `PermissionSetArn`: `str`
-- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
-- `PrincipalId`: `str`
-
-<a id="attachmanagedpolicytopermissionsetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 ## AttachManagedPolicyToPermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import AttachManagedPolicyToPermissionSetRequestRequestTypeDef
+
+def get_value() -> AttachManagedPolicyToPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+        "ManagedPolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-- `ManagedPolicyArn`: `str`
-
-<a id="attachedmanagedpolicytypedef"></a>
+```python title="Definition"
+class AttachManagedPolicyToPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    ManagedPolicyArn: str,
+```
 
 ## AttachedManagedPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import AttachedManagedPolicyTypeDef
+
+def get_value() -> AttachedManagedPolicyTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Arn`: `str`
-
-<a id="createaccountassignmentrequestrequesttypedef"></a>
+```python title="Definition"
+class AttachedManagedPolicyTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+```
 
 ## CreateAccountAssignmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import CreateAccountAssignmentRequestRequestTypeDef
+
+def get_value() -> CreateAccountAssignmentRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "TargetId": ...,
+        "TargetType": ...,
+        "PermissionSetArn": ...,
+        "PrincipalType": ...,
+        "PrincipalId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAccountAssignmentRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    TargetId: str,
+    TargetType: TargetTypeType,  # (1)
+    PermissionSetArn: str,
+    PrincipalType: PrincipalTypeType,  # (2)
+    PrincipalId: str,
+```
 
-- `InstanceArn`: `str`
-- `TargetId`: `str`
-- `TargetType`: `Literal['AWS_ACCOUNT']` (see
-  [TargetTypeType](./literals.md#targettypetype))
-- `PermissionSetArn`: `str`
-- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
-- `PrincipalId`: `str`
-
-<a id="createaccountassignmentresponsetypedef"></a>
-
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+2. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 ## CreateAccountAssignmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import CreateAccountAssignmentResponseTypeDef
+
+def get_value() -> CreateAccountAssignmentResponseTypeDef:
+    return {
+        "AccountAssignmentCreationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAccountAssignmentResponseTypeDef(TypedDict):
+    AccountAssignmentCreationStatus: AccountAssignmentOperationStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountAssignmentCreationStatus`:
-  [AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinstanceaccesscontrolattributeconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "InstanceAccessControlAttributeConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    InstanceAccessControlAttributeConfiguration: InstanceAccessControlAttributeConfigurationTypeDef,  # (1)
+```
 
-- `InstanceArn`: `str`
-- `InstanceAccessControlAttributeConfiguration`:
-  [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
-
-<a id="createpermissionsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef) 
 ## CreatePermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import CreatePermissionSetRequestRequestTypeDef
+
+def get_value() -> CreatePermissionSetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "InstanceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePermissionSetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    InstanceArn: str,
+    Description: NotRequired[str],
+    SessionDuration: NotRequired[str],
+    RelayState: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `InstanceArn`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `SessionDuration`: `str`
-- `RelayState`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createpermissionsetresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreatePermissionSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import CreatePermissionSetResponseTypeDef
+
+def get_value() -> CreatePermissionSetResponseTypeDef:
+    return {
+        "PermissionSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePermissionSetResponseTypeDef(TypedDict):
+    PermissionSet: PermissionSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PermissionSet`: [PermissionSetTypeDef](./type_defs.md#permissionsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteaccountassignmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PermissionSetTypeDef](./type_defs.md#permissionsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAccountAssignmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DeleteAccountAssignmentRequestRequestTypeDef
+
+def get_value() -> DeleteAccountAssignmentRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "TargetId": ...,
+        "TargetType": ...,
+        "PermissionSetArn": ...,
+        "PrincipalType": ...,
+        "PrincipalId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAccountAssignmentRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    TargetId: str,
+    TargetType: TargetTypeType,  # (1)
+    PermissionSetArn: str,
+    PrincipalType: PrincipalTypeType,  # (2)
+    PrincipalId: str,
+```
 
-- `InstanceArn`: `str`
-- `TargetId`: `str`
-- `TargetType`: `Literal['AWS_ACCOUNT']` (see
-  [TargetTypeType](./literals.md#targettypetype))
-- `PermissionSetArn`: `str`
-- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
-- `PrincipalId`: `str`
-
-<a id="deleteaccountassignmentresponsetypedef"></a>
-
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+2. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 ## DeleteAccountAssignmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DeleteAccountAssignmentResponseTypeDef
+
+def get_value() -> DeleteAccountAssignmentResponseTypeDef:
+    return {
+        "AccountAssignmentDeletionStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAccountAssignmentResponseTypeDef(TypedDict):
+    AccountAssignmentDeletionStatus: AccountAssignmentOperationStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountAssignmentDeletionStatus`:
-  [AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteinlinepolicyfrompermissionsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef
+
+def get_value() -> DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-
-<a id="deleteinstanceaccesscontrolattributeconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+```
 
 ## DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-
-<a id="deletepermissionsetrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+```
 
 ## DeletePermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DeletePermissionSetRequestRequestTypeDef
+
+def get_value() -> DeletePermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-
-<a id="describeaccountassignmentcreationstatusrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+```
 
 ## DescribeAccountAssignmentCreationStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentCreationStatusRequestRequestTypeDef
+
+def get_value() -> DescribeAccountAssignmentCreationStatusRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "AccountAssignmentCreationRequestId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `AccountAssignmentCreationRequestId`: `str`
-
-<a id="describeaccountassignmentcreationstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeAccountAssignmentCreationStatusRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    AccountAssignmentCreationRequestId: str,
+```
 
 ## DescribeAccountAssignmentCreationStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentCreationStatusResponseTypeDef
+
+def get_value() -> DescribeAccountAssignmentCreationStatusResponseTypeDef:
+    return {
+        "AccountAssignmentCreationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccountAssignmentCreationStatusResponseTypeDef(TypedDict):
+    AccountAssignmentCreationStatus: AccountAssignmentOperationStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountAssignmentCreationStatus`:
-  [AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeaccountassignmentdeletionstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef
+
+def get_value() -> DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "AccountAssignmentDeletionRequestId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `AccountAssignmentDeletionRequestId`: `str`
-
-<a id="describeaccountassignmentdeletionstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    AccountAssignmentDeletionRequestId: str,
+```
 
 ## DescribeAccountAssignmentDeletionStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribeAccountAssignmentDeletionStatusResponseTypeDef
+
+def get_value() -> DescribeAccountAssignmentDeletionStatusResponseTypeDef:
+    return {
+        "AccountAssignmentDeletionStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccountAssignmentDeletionStatusResponseTypeDef(TypedDict):
+    AccountAssignmentDeletionStatus: AccountAssignmentOperationStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountAssignmentDeletionStatus`:
-  [AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeinstanceaccesscontrolattributeconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountAssignmentOperationStatusTypeDef](./type_defs.md#accountassignmentoperationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-
-<a id="describeinstanceaccesscontrolattributeconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+```
 
 ## DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef
+
+def get_value() -> DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef:
+    return {
+        "Status": ...,
+        "StatusReason": ...,
+        "InstanceAccessControlAttributeConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef(TypedDict):
+    Status: InstanceAccessControlAttributeConfigurationStatusType,  # (1)
+    StatusReason: str,
+    InstanceAccessControlAttributeConfiguration: InstanceAccessControlAttributeConfigurationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`:
-  [InstanceAccessControlAttributeConfigurationStatusType](./literals.md#instanceaccesscontrolattributeconfigurationstatustype)
-- `StatusReason`: `str`
-- `InstanceAccessControlAttributeConfiguration`:
-  [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepermissionsetprovisioningstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InstanceAccessControlAttributeConfigurationStatusType](./literals.md#instanceaccesscontrolattributeconfigurationstatustype) 
+2. See [:material-code-braces: InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePermissionSetProvisioningStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribePermissionSetProvisioningStatusRequestRequestTypeDef
+
+def get_value() -> DescribePermissionSetProvisioningStatusRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "ProvisionPermissionSetRequestId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `ProvisionPermissionSetRequestId`: `str`
-
-<a id="describepermissionsetprovisioningstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribePermissionSetProvisioningStatusRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    ProvisionPermissionSetRequestId: str,
+```
 
 ## DescribePermissionSetProvisioningStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribePermissionSetProvisioningStatusResponseTypeDef
+
+def get_value() -> DescribePermissionSetProvisioningStatusResponseTypeDef:
+    return {
+        "PermissionSetProvisioningStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePermissionSetProvisioningStatusResponseTypeDef(TypedDict):
+    PermissionSetProvisioningStatus: PermissionSetProvisioningStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PermissionSetProvisioningStatus`:
-  [PermissionSetProvisioningStatusTypeDef](./type_defs.md#permissionsetprovisioningstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepermissionsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PermissionSetProvisioningStatusTypeDef](./type_defs.md#permissionsetprovisioningstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribePermissionSetRequestRequestTypeDef
+
+def get_value() -> DescribePermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-
-<a id="describepermissionsetresponsetypedef"></a>
+```python title="Definition"
+class DescribePermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+```
 
 ## DescribePermissionSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DescribePermissionSetResponseTypeDef
+
+def get_value() -> DescribePermissionSetResponseTypeDef:
+    return {
+        "PermissionSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePermissionSetResponseTypeDef(TypedDict):
+    PermissionSet: PermissionSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PermissionSet`: [PermissionSetTypeDef](./type_defs.md#permissionsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detachmanagedpolicyfrompermissionsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PermissionSetTypeDef](./type_defs.md#permissionsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetachManagedPolicyFromPermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import DetachManagedPolicyFromPermissionSetRequestRequestTypeDef
+
+def get_value() -> DetachManagedPolicyFromPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+        "ManagedPolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-- `ManagedPolicyArn`: `str`
-
-<a id="getinlinepolicyforpermissionsetrequestrequesttypedef"></a>
+```python title="Definition"
+class DetachManagedPolicyFromPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    ManagedPolicyArn: str,
+```
 
 ## GetInlinePolicyForPermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import GetInlinePolicyForPermissionSetRequestRequestTypeDef
+
+def get_value() -> GetInlinePolicyForPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-
-<a id="getinlinepolicyforpermissionsetresponsetypedef"></a>
+```python title="Definition"
+class GetInlinePolicyForPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+```
 
 ## GetInlinePolicyForPermissionSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import GetInlinePolicyForPermissionSetResponseTypeDef
+
+def get_value() -> GetInlinePolicyForPermissionSetResponseTypeDef:
+    return {
+        "InlinePolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInlinePolicyForPermissionSetResponseTypeDef(TypedDict):
+    InlinePolicy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `InlinePolicy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="instanceaccesscontrolattributeconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceAccessControlAttributeConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import InstanceAccessControlAttributeConfigurationTypeDef
+
+def get_value() -> InstanceAccessControlAttributeConfigurationTypeDef:
+    return {
+        "AccessControlAttributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceAccessControlAttributeConfigurationTypeDef(TypedDict):
+    AccessControlAttributes: Sequence[AccessControlAttributeTypeDef],  # (1)
+```
 
-- `AccessControlAttributes`:
-  `Sequence`\[[AccessControlAttributeTypeDef](./type_defs.md#accesscontrolattributetypedef)\]
-
-<a id="instancemetadatatypedef"></a>
-
+1. See [:material-code-braces: AccessControlAttributeTypeDef](./type_defs.md#accesscontrolattributetypedef) 
 ## InstanceMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import InstanceMetadataTypeDef
+
+def get_value() -> InstanceMetadataTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceMetadataTypeDef(TypedDict):
+    InstanceArn: NotRequired[str],
+    IdentityStoreId: NotRequired[str],
+```
 
-- `InstanceArn`: `str`
-- `IdentityStoreId`: `str`
+## ListAccountAssignmentCreationStatusRequestListAccountAssignmentCreationStatusPaginateTypeDef
 
-<a id="listaccountassignmentcreationstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusRequestListAccountAssignmentCreationStatusPaginateTypeDef
 
+def get_value() -> ListAccountAssignmentCreationStatusRequestListAccountAssignmentCreationStatusPaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountAssignmentCreationStatusRequestListAccountAssignmentCreationStatusPaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    Filter: NotRequired[OperationStatusFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountAssignmentCreationStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusRequestRequestTypeDef
+
+def get_value() -> ListAccountAssignmentCreationStatusRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountAssignmentCreationStatusRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filter: NotRequired[OperationStatusFilterTypeDef],  # (1)
+```
 
-- `InstanceArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filter`:
-  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
-
-<a id="listaccountassignmentcreationstatusresponsetypedef"></a>
-
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
 ## ListAccountAssignmentCreationStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusResponseTypeDef
+
+def get_value() -> ListAccountAssignmentCreationStatusResponseTypeDef:
+    return {
+        "AccountAssignmentsCreationStatus": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountAssignmentCreationStatusResponseTypeDef(TypedDict):
+    AccountAssignmentsCreationStatus: List[AccountAssignmentOperationStatusMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountAssignmentsCreationStatus`:
-  `List`\[[AccountAssignmentOperationStatusMetadataTypeDef](./type_defs.md#accountassignmentoperationstatusmetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccountAssignmentOperationStatusMetadataTypeDef](./type_defs.md#accountassignmentoperationstatusmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccountAssignmentDeletionStatusRequestListAccountAssignmentDeletionStatusPaginateTypeDef
 
-<a id="listaccountassignmentdeletionstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentDeletionStatusRequestListAccountAssignmentDeletionStatusPaginateTypeDef
 
+def get_value() -> ListAccountAssignmentDeletionStatusRequestListAccountAssignmentDeletionStatusPaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountAssignmentDeletionStatusRequestListAccountAssignmentDeletionStatusPaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    Filter: NotRequired[OperationStatusFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountAssignmentDeletionStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentDeletionStatusRequestRequestTypeDef
+
+def get_value() -> ListAccountAssignmentDeletionStatusRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountAssignmentDeletionStatusRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filter: NotRequired[OperationStatusFilterTypeDef],  # (1)
+```
 
-- `InstanceArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filter`:
-  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
-
-<a id="listaccountassignmentdeletionstatusresponsetypedef"></a>
-
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
 ## ListAccountAssignmentDeletionStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentDeletionStatusResponseTypeDef
+
+def get_value() -> ListAccountAssignmentDeletionStatusResponseTypeDef:
+    return {
+        "AccountAssignmentsDeletionStatus": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountAssignmentDeletionStatusResponseTypeDef(TypedDict):
+    AccountAssignmentsDeletionStatus: List[AccountAssignmentOperationStatusMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountAssignmentsDeletionStatus`:
-  `List`\[[AccountAssignmentOperationStatusMetadataTypeDef](./type_defs.md#accountassignmentoperationstatusmetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccountAssignmentOperationStatusMetadataTypeDef](./type_defs.md#accountassignmentoperationstatusmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccountAssignmentsRequestListAccountAssignmentsPaginateTypeDef
 
-<a id="listaccountassignmentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentsRequestListAccountAssignmentsPaginateTypeDef
 
+def get_value() -> ListAccountAssignmentsRequestListAccountAssignmentsPaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+        "AccountId": ...,
+        "PermissionSetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountAssignmentsRequestListAccountAssignmentsPaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    AccountId: str,
+    PermissionSetArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountAssignmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentsRequestRequestTypeDef
+
+def get_value() -> ListAccountAssignmentsRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "AccountId": ...,
+        "PermissionSetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `AccountId`: `str`
-- `PermissionSetArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listaccountassignmentsresponsetypedef"></a>
+```python title="Definition"
+class ListAccountAssignmentsRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    AccountId: str,
+    PermissionSetArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListAccountAssignmentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentsResponseTypeDef
+
+def get_value() -> ListAccountAssignmentsResponseTypeDef:
+    return {
+        "AccountAssignments": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountAssignmentsResponseTypeDef(TypedDict):
+    AccountAssignments: List[AccountAssignmentTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountAssignments`:
-  `List`\[[AccountAssignmentTypeDef](./type_defs.md#accountassignmenttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccountAssignmentTypeDef](./type_defs.md#accountassignmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccountsForProvisionedPermissionSetRequestListAccountsForProvisionedPermissionSetPaginateTypeDef
 
-<a id="listaccountsforprovisionedpermissionsetrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListAccountsForProvisionedPermissionSetRequestListAccountsForProvisionedPermissionSetPaginateTypeDef
 
+def get_value() -> ListAccountsForProvisionedPermissionSetRequestListAccountsForProvisionedPermissionSetPaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountsForProvisionedPermissionSetRequestListAccountsForProvisionedPermissionSetPaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    ProvisioningStatus: NotRequired[ProvisioningStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountsForProvisionedPermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListAccountsForProvisionedPermissionSetRequestRequestTypeDef
+
+def get_value() -> ListAccountsForProvisionedPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountsForProvisionedPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    ProvisioningStatus: NotRequired[ProvisioningStatusType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-
-Optional fields:
-
-- `ProvisioningStatus`:
-  [ProvisioningStatusType](./literals.md#provisioningstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listaccountsforprovisionedpermissionsetresponsetypedef"></a>
-
+1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
 ## ListAccountsForProvisionedPermissionSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListAccountsForProvisionedPermissionSetResponseTypeDef
+
+def get_value() -> ListAccountsForProvisionedPermissionSetResponseTypeDef:
+    return {
+        "AccountIds": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountsForProvisionedPermissionSetResponseTypeDef(TypedDict):
+    AccountIds: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AccountIds`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstancesRequestListInstancesPaginateTypeDef
 
-<a id="listinstancesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListInstancesRequestListInstancesPaginateTypeDef
 
+def get_value() -> ListInstancesRequestListInstancesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstancesRequestListInstancesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListInstancesRequestRequestTypeDef
+
+def get_value() -> ListInstancesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listinstancesresponsetypedef"></a>
+```python title="Definition"
+class ListInstancesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListInstancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListInstancesResponseTypeDef
+
+def get_value() -> ListInstancesResponseTypeDef:
+    return {
+        "Instances": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstancesResponseTypeDef(TypedDict):
+    Instances: List[InstanceMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Instances`:
-  `List`\[[InstanceMetadataTypeDef](./type_defs.md#instancemetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceMetadataTypeDef](./type_defs.md#instancemetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListManagedPoliciesInPermissionSetRequestListManagedPoliciesInPermissionSetPaginateTypeDef
 
-<a id="listmanagedpoliciesinpermissionsetrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListManagedPoliciesInPermissionSetRequestListManagedPoliciesInPermissionSetPaginateTypeDef
 
+def get_value() -> ListManagedPoliciesInPermissionSetRequestListManagedPoliciesInPermissionSetPaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListManagedPoliciesInPermissionSetRequestListManagedPoliciesInPermissionSetPaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListManagedPoliciesInPermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListManagedPoliciesInPermissionSetRequestRequestTypeDef
+
+def get_value() -> ListManagedPoliciesInPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listmanagedpoliciesinpermissionsetresponsetypedef"></a>
+```python title="Definition"
+class ListManagedPoliciesInPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListManagedPoliciesInPermissionSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListManagedPoliciesInPermissionSetResponseTypeDef
+
+def get_value() -> ListManagedPoliciesInPermissionSetResponseTypeDef:
+    return {
+        "AttachedManagedPolicies": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListManagedPoliciesInPermissionSetResponseTypeDef(TypedDict):
+    AttachedManagedPolicies: List[AttachedManagedPolicyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AttachedManagedPolicies`:
-  `List`\[[AttachedManagedPolicyTypeDef](./type_defs.md#attachedmanagedpolicytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AttachedManagedPolicyTypeDef](./type_defs.md#attachedmanagedpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPermissionSetProvisioningStatusRequestListPermissionSetProvisioningStatusPaginateTypeDef
 
-<a id="listpermissionsetprovisioningstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListPermissionSetProvisioningStatusRequestListPermissionSetProvisioningStatusPaginateTypeDef
 
+def get_value() -> ListPermissionSetProvisioningStatusRequestListPermissionSetProvisioningStatusPaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListPermissionSetProvisioningStatusRequestListPermissionSetProvisioningStatusPaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    Filter: NotRequired[OperationStatusFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPermissionSetProvisioningStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListPermissionSetProvisioningStatusRequestRequestTypeDef
+
+def get_value() -> ListPermissionSetProvisioningStatusRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPermissionSetProvisioningStatusRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filter: NotRequired[OperationStatusFilterTypeDef],  # (1)
+```
 
-- `InstanceArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filter`:
-  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
-
-<a id="listpermissionsetprovisioningstatusresponsetypedef"></a>
-
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
 ## ListPermissionSetProvisioningStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListPermissionSetProvisioningStatusResponseTypeDef
+
+def get_value() -> ListPermissionSetProvisioningStatusResponseTypeDef:
+    return {
+        "PermissionSetsProvisioningStatus": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPermissionSetProvisioningStatusResponseTypeDef(TypedDict):
+    PermissionSetsProvisioningStatus: List[PermissionSetProvisioningStatusMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PermissionSetsProvisioningStatus`:
-  `List`\[[PermissionSetProvisioningStatusMetadataTypeDef](./type_defs.md#permissionsetprovisioningstatusmetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PermissionSetProvisioningStatusMetadataTypeDef](./type_defs.md#permissionsetprovisioningstatusmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPermissionSetsProvisionedToAccountRequestListPermissionSetsProvisionedToAccountPaginateTypeDef
 
-<a id="listpermissionsetsprovisionedtoaccountrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListPermissionSetsProvisionedToAccountRequestListPermissionSetsProvisionedToAccountPaginateTypeDef
 
+def get_value() -> ListPermissionSetsProvisionedToAccountRequestListPermissionSetsProvisionedToAccountPaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPermissionSetsProvisionedToAccountRequestListPermissionSetsProvisionedToAccountPaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    AccountId: str,
+    ProvisioningStatus: NotRequired[ProvisioningStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPermissionSetsProvisionedToAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListPermissionSetsProvisionedToAccountRequestRequestTypeDef
+
+def get_value() -> ListPermissionSetsProvisionedToAccountRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "AccountId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPermissionSetsProvisionedToAccountRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    AccountId: str,
+    ProvisioningStatus: NotRequired[ProvisioningStatusType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `InstanceArn`: `str`
-- `AccountId`: `str`
-
-Optional fields:
-
-- `ProvisioningStatus`:
-  [ProvisioningStatusType](./literals.md#provisioningstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listpermissionsetsprovisionedtoaccountresponsetypedef"></a>
-
+1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
 ## ListPermissionSetsProvisionedToAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListPermissionSetsProvisionedToAccountResponseTypeDef
+
+def get_value() -> ListPermissionSetsProvisionedToAccountResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "PermissionSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPermissionSetsProvisionedToAccountResponseTypeDef(TypedDict):
+    NextToken: str,
+    PermissionSets: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NextToken`: `str`
-- `PermissionSets`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPermissionSetsRequestListPermissionSetsPaginateTypeDef
 
-<a id="listpermissionsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListPermissionSetsRequestListPermissionSetsPaginateTypeDef
 
+def get_value() -> ListPermissionSetsRequestListPermissionSetsPaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListPermissionSetsRequestListPermissionSetsPaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPermissionSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListPermissionSetsRequestRequestTypeDef
+
+def get_value() -> ListPermissionSetsRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listpermissionsetsresponsetypedef"></a>
+```python title="Definition"
+class ListPermissionSetsRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListPermissionSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListPermissionSetsResponseTypeDef
+
+def get_value() -> ListPermissionSetsResponseTypeDef:
+    return {
+        "PermissionSets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPermissionSetsResponseTypeDef(TypedDict):
+    PermissionSets: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PermissionSets`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
-<a id="listtagsforresourcerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso_admin.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "InstanceArn": ...,
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    InstanceArn: str,
+    ResourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    ResourceArn: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="operationstatusfiltertypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OperationStatusFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import OperationStatusFilterTypeDef
+
+def get_value() -> OperationStatusFilterTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OperationStatusFilterTypeDef(TypedDict):
+    Status: NotRequired[StatusValuesType],  # (1)
+```
 
-- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: StatusValuesType](./literals.md#statusvaluestype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="permissionsetprovisioningstatusmetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PermissionSetProvisioningStatusMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import PermissionSetProvisioningStatusMetadataTypeDef
+
+def get_value() -> PermissionSetProvisioningStatusMetadataTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PermissionSetProvisioningStatusMetadataTypeDef(TypedDict):
+    Status: NotRequired[StatusValuesType],  # (1)
+    RequestId: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+```
 
-- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
-- `RequestId`: `str`
-- `CreatedDate`: `datetime`
-
-<a id="permissionsetprovisioningstatustypedef"></a>
-
+1. See [:material-code-brackets: StatusValuesType](./literals.md#statusvaluestype) 
 ## PermissionSetProvisioningStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import PermissionSetProvisioningStatusTypeDef
+
+def get_value() -> PermissionSetProvisioningStatusTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PermissionSetProvisioningStatusTypeDef(TypedDict):
+    Status: NotRequired[StatusValuesType],  # (1)
+    RequestId: NotRequired[str],
+    AccountId: NotRequired[str],
+    PermissionSetArn: NotRequired[str],
+    FailureReason: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+```
 
-- `Status`: [StatusValuesType](./literals.md#statusvaluestype)
-- `RequestId`: `str`
-- `AccountId`: `str`
-- `PermissionSetArn`: `str`
-- `FailureReason`: `str`
-- `CreatedDate`: `datetime`
-
-<a id="permissionsettypedef"></a>
-
+1. See [:material-code-brackets: StatusValuesType](./literals.md#statusvaluestype) 
 ## PermissionSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import PermissionSetTypeDef
+
+def get_value() -> PermissionSetTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `PermissionSetArn`: `str`
-- `Description`: `str`
-- `CreatedDate`: `datetime`
-- `SessionDuration`: `str`
-- `RelayState`: `str`
-
-<a id="provisionpermissionsetrequestrequesttypedef"></a>
+```python title="Definition"
+class PermissionSetTypeDef(TypedDict):
+    Name: NotRequired[str],
+    PermissionSetArn: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+    SessionDuration: NotRequired[str],
+    RelayState: NotRequired[str],
+```
 
 ## ProvisionPermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ProvisionPermissionSetRequestRequestTypeDef
+
+def get_value() -> ProvisionPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+        "TargetType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProvisionPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    TargetType: ProvisionTargetTypeType,  # (1)
+    TargetId: NotRequired[str],
+```
 
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-- `TargetType`:
-  [ProvisionTargetTypeType](./literals.md#provisiontargettypetype)
-
-Optional fields:
-
-- `TargetId`: `str`
-
-<a id="provisionpermissionsetresponsetypedef"></a>
-
+1. See [:material-code-brackets: ProvisionTargetTypeType](./literals.md#provisiontargettypetype) 
 ## ProvisionPermissionSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ProvisionPermissionSetResponseTypeDef
+
+def get_value() -> ProvisionPermissionSetResponseTypeDef:
+    return {
+        "PermissionSetProvisioningStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProvisionPermissionSetResponseTypeDef(TypedDict):
+    PermissionSetProvisioningStatus: PermissionSetProvisioningStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PermissionSetProvisioningStatus`:
-  [PermissionSetProvisioningStatusTypeDef](./type_defs.md#permissionsetprovisioningstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putinlinepolicytopermissionsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PermissionSetProvisioningStatusTypeDef](./type_defs.md#permissionsetprovisioningstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutInlinePolicyToPermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import PutInlinePolicyToPermissionSetRequestRequestTypeDef
+
+def get_value() -> PutInlinePolicyToPermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+        "InlinePolicy": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-- `InlinePolicy`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PutInlinePolicyToPermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    InlinePolicy: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `InstanceArn`: `str`
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceArn`: `str`
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateinstanceaccesscontrolattributeconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "InstanceAccessControlAttributeConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    InstanceAccessControlAttributeConfiguration: InstanceAccessControlAttributeConfigurationTypeDef,  # (1)
+```
 
-- `InstanceArn`: `str`
-- `InstanceAccessControlAttributeConfiguration`:
-  [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
-
-<a id="updatepermissionsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef) 
 ## UpdatePermissionSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso_admin.type_defs import UpdatePermissionSetRequestRequestTypeDef
+
+def get_value() -> UpdatePermissionSetRequestRequestTypeDef:
+    return {
+        "InstanceArn": ...,
+        "PermissionSetArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePermissionSetRequestRequestTypeDef(TypedDict):
+    InstanceArn: str,
+    PermissionSetArn: str,
+    Description: NotRequired[str],
+    SessionDuration: NotRequired[str],
+    RelayState: NotRequired[str],
+```
 
-- `InstanceArn`: `str`
-- `PermissionSetArn`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `SessionDuration`: `str`
-- `RelayState`: `str`

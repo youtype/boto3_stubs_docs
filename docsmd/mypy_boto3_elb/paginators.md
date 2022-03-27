@@ -1,28 +1,18 @@
-<a id="paginators-for-boto3-elasticloadbalancing-module"></a>
-
-# Paginators for boto3 ElasticLoadBalancing module
+# Paginators
 
 > [Index](../README.md) > [ElasticLoadBalancing](./README.md) > Paginators
 
-Auto-generated documentation for
-[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
-type annotations stubs module
-[mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
+!!! note ""
 
-- [Paginators for boto3 ElasticLoadBalancing module](#paginators-for-boto3-elasticloadbalancing-module)
-  - [DescribeAccountLimitsPaginator](#describeaccountlimitspaginator)
-  - [DescribeLoadBalancersPaginator](#describeloadbalancerspaginator)
-
-<a id="describeaccountlimitspaginator"></a>
+    Auto-generated documentation for [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
+    type annotations stubs module [mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
 
 ## DescribeAccountLimitsPaginator
 
-Type annotations for
-`boto3.client("elb").get_paginator("describe_account_limits")`.
+Type annotations and code completion for `#!python boto3.client("elb").get_paginator("describe_account_limits")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeAccountLimits)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elb.paginator import DescribeAccountLimitsPaginator
@@ -31,27 +21,39 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return Session().client("elb").get_paginator("describe_account_limits")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancing.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeAccountLimits)
 
-Arguments for `DescribeAccountLimitsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAccountLimitsPaginator.paginate` method.
 
-`DescribeAccountLimitsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeAccountLimitsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeloadbalancerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef](./type_defs.md#describeaccountlimitsinputdescribeaccountlimitspaginatetypedef) 
 ## DescribeLoadBalancersPaginator
 
-Type annotations for
-`boto3.client("elb").get_paginator("describe_load_balancers")`.
+Type annotations and code completion for `#!python boto3.client("elb").get_paginator("describe_load_balancers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeLoadBalancers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elb.paginator import DescribeLoadBalancersPaginator
@@ -60,14 +62,31 @@ def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return Session().client("elb").get_paginator("describe_load_balancers")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancing.Paginator.DescribeLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Paginator.DescribeLoadBalancers)
 
-Arguments for `DescribeLoadBalancersPaginator.paginate` method:
+### paginate
 
-- `LoadBalancerNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLoadBalancersPaginator.paginate` method.
 
-`DescribeLoadBalancersPaginator.paginate` returns
-`_PageIterator`\[[DescribeAccessPointsOutputTypeDef](./type_defs.md#describeaccesspointsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LoadBalancerNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeAccessPointsOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeAccessPointsOutputTypeDef](./type_defs.md#describeaccesspointsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAccessPointsInputDescribeLoadBalancersPaginateTypeDef = {  # (1)
+    "LoadBalancerNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAccessPointsInputDescribeLoadBalancersPaginateTypeDef](./type_defs.md#describeaccesspointsinputdescribeloadbalancerspaginatetypedef) 

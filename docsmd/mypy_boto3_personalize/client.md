@@ -1,87 +1,18 @@
-<a id="personalizeclient-for-boto3-personalize-module"></a>
-
-# PersonalizeClient for boto3 Personalize module
+# PersonalizeClient
 
 > [Index](../README.md) > [Personalize](./README.md) > PersonalizeClient
 
-Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
-type annotations stubs module
-[mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
+!!! note ""
 
-- [PersonalizeClient for boto3 Personalize module](#personalizeclient-for-boto3-personalize-module)
-  - [PersonalizeClient](#personalizeclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_batch_inference_job](#create_batch_inference_job)
-    - [create_batch_segment_job](#create_batch_segment_job)
-    - [create_campaign](#create_campaign)
-    - [create_dataset](#create_dataset)
-    - [create_dataset_export_job](#create_dataset_export_job)
-    - [create_dataset_group](#create_dataset_group)
-    - [create_dataset_import_job](#create_dataset_import_job)
-    - [create_event_tracker](#create_event_tracker)
-    - [create_filter](#create_filter)
-    - [create_recommender](#create_recommender)
-    - [create_schema](#create_schema)
-    - [create_solution](#create_solution)
-    - [create_solution_version](#create_solution_version)
-    - [delete_campaign](#delete_campaign)
-    - [delete_dataset](#delete_dataset)
-    - [delete_dataset_group](#delete_dataset_group)
-    - [delete_event_tracker](#delete_event_tracker)
-    - [delete_filter](#delete_filter)
-    - [delete_recommender](#delete_recommender)
-    - [delete_schema](#delete_schema)
-    - [delete_solution](#delete_solution)
-    - [describe_algorithm](#describe_algorithm)
-    - [describe_batch_inference_job](#describe_batch_inference_job)
-    - [describe_batch_segment_job](#describe_batch_segment_job)
-    - [describe_campaign](#describe_campaign)
-    - [describe_dataset](#describe_dataset)
-    - [describe_dataset_export_job](#describe_dataset_export_job)
-    - [describe_dataset_group](#describe_dataset_group)
-    - [describe_dataset_import_job](#describe_dataset_import_job)
-    - [describe_event_tracker](#describe_event_tracker)
-    - [describe_feature_transformation](#describe_feature_transformation)
-    - [describe_filter](#describe_filter)
-    - [describe_recipe](#describe_recipe)
-    - [describe_recommender](#describe_recommender)
-    - [describe_schema](#describe_schema)
-    - [describe_solution](#describe_solution)
-    - [describe_solution_version](#describe_solution_version)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_solution_metrics](#get_solution_metrics)
-    - [list_batch_inference_jobs](#list_batch_inference_jobs)
-    - [list_batch_segment_jobs](#list_batch_segment_jobs)
-    - [list_campaigns](#list_campaigns)
-    - [list_dataset_export_jobs](#list_dataset_export_jobs)
-    - [list_dataset_groups](#list_dataset_groups)
-    - [list_dataset_import_jobs](#list_dataset_import_jobs)
-    - [list_datasets](#list_datasets)
-    - [list_event_trackers](#list_event_trackers)
-    - [list_filters](#list_filters)
-    - [list_recipes](#list_recipes)
-    - [list_recommenders](#list_recommenders)
-    - [list_schemas](#list_schemas)
-    - [list_solution_versions](#list_solution_versions)
-    - [list_solutions](#list_solutions)
-    - [stop_solution_version_creation](#stop_solution_version_creation)
-    - [update_campaign](#update_campaign)
-    - [update_recommender](#update_recommender)
-    - [get_paginator](#get_paginator)
-
-<a id="personalizeclient"></a>
+    Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+    type annotations stubs module [mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 ## PersonalizeClient
 
-Type annotations for `boto3.client("personalize")`
+Type annotations and code completion for `#!python boto3.client("personalize")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_personalize.client import PersonalizeClient
 
@@ -89,1376 +20,1815 @@ def get_personalize_client() -> PersonalizeClient:
     return Session().client("personalize")
 ```
 
-Boto3 documentation:
-[Personalize.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("personalize").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("personalize")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InvalidInputException,
+    client.InvalidNextTokenException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_personalize.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InvalidInputException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-PersonalizeClient exceptions.
-
-Type annotations for `boto3.client("personalize").exceptions` method.
-
-Boto3 documentation:
-[Personalize.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("personalize").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("personalize").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.can_paginate)
 
-Boto3 documentation:
-[Personalize.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_batch\_inference\_job"></a>
-
-### create_batch_inference_job
+### create\_batch\_inference\_job
 
 Creates a batch inference job.
 
-Type annotations for `boto3.client("personalize").create_batch_inference_job`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_batch_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job)
 
-Boto3 documentation:
-[Personalize.Client.create_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_inference_job)
+```python title="Method definition"
+def create_batch_inference_job(
+    self,
+    *,
+    jobName: str,
+    solutionVersionArn: str,
+    jobInput: BatchInferenceJobInputTypeDef,  # (1)
+    jobOutput: BatchInferenceJobOutputTypeDef,  # (2)
+    roleArn: str,
+    filterArn: str = ...,
+    numResults: int = ...,
+    batchInferenceJobConfig: BatchInferenceJobConfigTypeDef = ...,  # (3)
+) -> CreateBatchInferenceJobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateBatchInferenceJobRequestRequestTypeDef](./type_defs.md#createbatchinferencejobrequestrequesttypedef).
+1. See [:material-code-braces: BatchInferenceJobInputTypeDef](./type_defs.md#batchinferencejobinputtypedef) 
+2. See [:material-code-braces: BatchInferenceJobOutputTypeDef](./type_defs.md#batchinferencejoboutputtypedef) 
+3. See [:material-code-braces: BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef) 
+4. See [:material-code-braces: CreateBatchInferenceJobResponseTypeDef](./type_defs.md#createbatchinferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobName`: `str` *(required)*
-- `solutionVersionArn`: `str` *(required)*
-- `jobInput`:
-  [BatchInferenceJobInputTypeDef](./type_defs.md#batchinferencejobinputtypedef)
-  *(required)*
-- `jobOutput`:
-  [BatchInferenceJobOutputTypeDef](./type_defs.md#batchinferencejoboutputtypedef)
-  *(required)*
-- `roleArn`: `str` *(required)*
-- `filterArn`: `str`
-- `numResults`: `int`
-- `batchInferenceJobConfig`:
-  [BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateBatchInferenceJobRequestRequestTypeDef = {  # (1)
+    "jobName": ...,
+    "solutionVersionArn": ...,
+    "jobInput": ...,
+    "jobOutput": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreateBatchInferenceJobResponseTypeDef](./type_defs.md#createbatchinferencejobresponsetypedef).
+parent.create_batch_inference_job(**kwargs)
+```
 
-<a id="create\_batch\_segment\_job"></a>
+1. See [:material-code-braces: CreateBatchInferenceJobRequestRequestTypeDef](./type_defs.md#createbatchinferencejobrequestrequesttypedef) 
 
-### create_batch_segment_job
+### create\_batch\_segment\_job
 
 Creates a batch segment job.
 
-Type annotations for `boto3.client("personalize").create_batch_segment_job`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_batch_segment_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_segment_job)
 
-Boto3 documentation:
-[Personalize.Client.create_batch_segment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_batch_segment_job)
+```python title="Method definition"
+def create_batch_segment_job(
+    self,
+    *,
+    jobName: str,
+    solutionVersionArn: str,
+    jobInput: BatchSegmentJobInputTypeDef,  # (1)
+    jobOutput: BatchSegmentJobOutputTypeDef,  # (2)
+    roleArn: str,
+    filterArn: str = ...,
+    numResults: int = ...,
+) -> CreateBatchSegmentJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateBatchSegmentJobRequestRequestTypeDef](./type_defs.md#createbatchsegmentjobrequestrequesttypedef).
+1. See [:material-code-braces: BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef) 
+2. See [:material-code-braces: BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef) 
+3. See [:material-code-braces: CreateBatchSegmentJobResponseTypeDef](./type_defs.md#createbatchsegmentjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobName`: `str` *(required)*
-- `solutionVersionArn`: `str` *(required)*
-- `jobInput`:
-  [BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef)
-  *(required)*
-- `jobOutput`:
-  [BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef)
-  *(required)*
-- `roleArn`: `str` *(required)*
-- `filterArn`: `str`
-- `numResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateBatchSegmentJobRequestRequestTypeDef = {  # (1)
+    "jobName": ...,
+    "solutionVersionArn": ...,
+    "jobInput": ...,
+    "jobOutput": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreateBatchSegmentJobResponseTypeDef](./type_defs.md#createbatchsegmentjobresponsetypedef).
+parent.create_batch_segment_job(**kwargs)
+```
 
-<a id="create\_campaign"></a>
+1. See [:material-code-braces: CreateBatchSegmentJobRequestRequestTypeDef](./type_defs.md#createbatchsegmentjobrequestrequesttypedef) 
 
-### create_campaign
+### create\_campaign
 
 Creates a campaign that deploys a solution version.
 
-Type annotations for `boto3.client("personalize").create_campaign` method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_campaign` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign)
 
-Boto3 documentation:
-[Personalize.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_campaign)
+```python title="Method definition"
+def create_campaign(
+    self,
+    *,
+    name: str,
+    solutionVersionArn: str,
+    minProvisionedTPS: int = ...,
+    campaignConfig: CampaignConfigTypeDef = ...,  # (1)
+) -> CreateCampaignResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCampaignRequestRequestTypeDef](./type_defs.md#createcampaignrequestrequesttypedef).
+1. See [:material-code-braces: CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef) 
+2. See [:material-code-braces: CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `solutionVersionArn`: `str` *(required)*
-- `minProvisionedTPS`: `int`
-- `campaignConfig`:
-  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateCampaignRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "solutionVersionArn": ...,
+}
 
-Returns
-[CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef).
+parent.create_campaign(**kwargs)
+```
 
-<a id="create\_dataset"></a>
+1. See [:material-code-braces: CreateCampaignRequestRequestTypeDef](./type_defs.md#createcampaignrequestrequesttypedef) 
 
-### create_dataset
+### create\_dataset
 
 Creates an empty dataset and adds it to the specified dataset group.
 
-Type annotations for `boto3.client("personalize").create_dataset` method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset)
 
-Boto3 documentation:
-[Personalize.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset)
+```python title="Method definition"
+def create_dataset(
+    self,
+    *,
+    name: str,
+    schemaArn: str,
+    datasetGroupArn: str,
+    datasetType: str,
+) -> CreateDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+1. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `schemaArn`: `str` *(required)*
-- `datasetGroupArn`: `str` *(required)*
-- `datasetType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "schemaArn": ...,
+    "datasetGroupArn": ...,
+    "datasetType": ...,
+}
 
-Returns
-[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+parent.create_dataset(**kwargs)
+```
 
-<a id="create\_dataset\_export\_job"></a>
+1. See [:material-code-braces: CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
 
-### create_dataset_export_job
+### create\_dataset\_export\_job
 
 Creates a job that exports data from your dataset to an Amazon S3 bucket.
 
-Type annotations for `boto3.client("personalize").create_dataset_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_dataset_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job)
 
-Boto3 documentation:
-[Personalize.Client.create_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_export_job)
+```python title="Method definition"
+def create_dataset_export_job(
+    self,
+    *,
+    jobName: str,
+    datasetArn: str,
+    roleArn: str,
+    jobOutput: DatasetExportJobOutputTypeDef,  # (1)
+    ingestionMode: IngestionModeType = ...,  # (2)
+) -> CreateDatasetExportJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetExportJobRequestRequestTypeDef](./type_defs.md#createdatasetexportjobrequestrequesttypedef).
+1. See [:material-code-braces: DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef) 
+2. See [:material-code-brackets: IngestionModeType](./literals.md#ingestionmodetype) 
+3. See [:material-code-braces: CreateDatasetExportJobResponseTypeDef](./type_defs.md#createdatasetexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobName`: `str` *(required)*
-- `datasetArn`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `jobOutput`:
-  [DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef)
-  *(required)*
-- `ingestionMode`: [IngestionModeType](./literals.md#ingestionmodetype)
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetExportJobRequestRequestTypeDef = {  # (1)
+    "jobName": ...,
+    "datasetArn": ...,
+    "roleArn": ...,
+    "jobOutput": ...,
+}
 
-Returns
-[CreateDatasetExportJobResponseTypeDef](./type_defs.md#createdatasetexportjobresponsetypedef).
+parent.create_dataset_export_job(**kwargs)
+```
 
-<a id="create\_dataset\_group"></a>
+1. See [:material-code-braces: CreateDatasetExportJobRequestRequestTypeDef](./type_defs.md#createdatasetexportjobrequestrequesttypedef) 
 
-### create_dataset_group
+### create\_dataset\_group
 
 Creates an empty dataset group.
 
-Type annotations for `boto3.client("personalize").create_dataset_group` method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_dataset_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group)
 
-Boto3 documentation:
-[Personalize.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_group)
+```python title="Method definition"
+def create_dataset_group(
+    self,
+    *,
+    name: str,
+    roleArn: str = ...,
+    kmsKeyArn: str = ...,
+    domain: DomainType = ...,  # (1)
+) -> CreateDatasetGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetGroupRequestRequestTypeDef](./type_defs.md#createdatasetgrouprequestrequesttypedef).
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-braces: CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `roleArn`: `str`
-- `kmsKeyArn`: `str`
-- `domain`: [DomainType](./literals.md#domaintype)
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetGroupRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef).
+parent.create_dataset_group(**kwargs)
+```
 
-<a id="create\_dataset\_import\_job"></a>
+1. See [:material-code-braces: CreateDatasetGroupRequestRequestTypeDef](./type_defs.md#createdatasetgrouprequestrequesttypedef) 
 
-### create_dataset_import_job
+### create\_dataset\_import\_job
 
 Creates a job that imports training data from your data source (an Amazon S3
 bucket) to an Amazon Personalize dataset.
 
-Type annotations for `boto3.client("personalize").create_dataset_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_dataset_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job)
 
-Boto3 documentation:
-[Personalize.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_dataset_import_job)
+```python title="Method definition"
+def create_dataset_import_job(
+    self,
+    *,
+    jobName: str,
+    datasetArn: str,
+    dataSource: DataSourceTypeDef,  # (1)
+    roleArn: str,
+) -> CreateDatasetImportJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetImportJobRequestRequestTypeDef](./type_defs.md#createdatasetimportjobrequestrequesttypedef).
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobName`: `str` *(required)*
-- `datasetArn`: `str` *(required)*
-- `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-  *(required)*
-- `roleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetImportJobRequestRequestTypeDef = {  # (1)
+    "jobName": ...,
+    "datasetArn": ...,
+    "dataSource": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef).
+parent.create_dataset_import_job(**kwargs)
+```
 
-<a id="create\_event\_tracker"></a>
+1. See [:material-code-braces: CreateDatasetImportJobRequestRequestTypeDef](./type_defs.md#createdatasetimportjobrequestrequesttypedef) 
 
-### create_event_tracker
+### create\_event\_tracker
 
 Creates an event tracker that you use when adding event data to a specified
 dataset group using the
-[PutEvents](https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_PutEvents.html)\_
+[PutEvents](https://docs.aws.amazon.com/personalize/latest/dg/API_UBS_PutEvents.html)_
 API.
 
-Type annotations for `boto3.client("personalize").create_event_tracker` method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_event_tracker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker)
 
-Boto3 documentation:
-[Personalize.Client.create_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_event_tracker)
+```python title="Method definition"
+def create_event_tracker(
+    self,
+    *,
+    name: str,
+    datasetGroupArn: str,
+) -> CreateEventTrackerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateEventTrackerRequestRequestTypeDef](./type_defs.md#createeventtrackerrequestrequesttypedef).
+1. See [:material-code-braces: CreateEventTrackerResponseTypeDef](./type_defs.md#createeventtrackerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `datasetGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateEventTrackerRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "datasetGroupArn": ...,
+}
 
-Returns
-[CreateEventTrackerResponseTypeDef](./type_defs.md#createeventtrackerresponsetypedef).
+parent.create_event_tracker(**kwargs)
+```
 
-<a id="create\_filter"></a>
+1. See [:material-code-braces: CreateEventTrackerRequestRequestTypeDef](./type_defs.md#createeventtrackerrequestrequesttypedef) 
 
-### create_filter
+### create\_filter
 
 Creates a recommendation filter.
 
-Type annotations for `boto3.client("personalize").create_filter` method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter)
 
-Boto3 documentation:
-[Personalize.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_filter)
+```python title="Method definition"
+def create_filter(
+    self,
+    *,
+    name: str,
+    datasetGroupArn: str,
+    filterExpression: str,
+) -> CreateFilterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateFilterRequestRequestTypeDef](./type_defs.md#createfilterrequestrequesttypedef).
+1. See [:material-code-braces: CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `datasetGroupArn`: `str` *(required)*
-- `filterExpression`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateFilterRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "datasetGroupArn": ...,
+    "filterExpression": ...,
+}
 
-Returns
-[CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
+parent.create_filter(**kwargs)
+```
 
-<a id="create\_recommender"></a>
+1. See [:material-code-braces: CreateFilterRequestRequestTypeDef](./type_defs.md#createfilterrequestrequesttypedef) 
 
-### create_recommender
+### create\_recommender
 
 Creates a recommender with the recipe (a Domain dataset group use case) you
 specify.
 
-Type annotations for `boto3.client("personalize").create_recommender` method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_recommender` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_recommender)
 
-Boto3 documentation:
-[Personalize.Client.create_recommender](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_recommender)
+```python title="Method definition"
+def create_recommender(
+    self,
+    *,
+    name: str,
+    datasetGroupArn: str,
+    recipeArn: str,
+    recommenderConfig: RecommenderConfigTypeDef = ...,  # (1)
+) -> CreateRecommenderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRecommenderRequestRequestTypeDef](./type_defs.md#createrecommenderrequestrequesttypedef).
+1. See [:material-code-braces: RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef) 
+2. See [:material-code-braces: CreateRecommenderResponseTypeDef](./type_defs.md#createrecommenderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `datasetGroupArn`: `str` *(required)*
-- `recipeArn`: `str` *(required)*
-- `recommenderConfig`:
-  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateRecommenderRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "datasetGroupArn": ...,
+    "recipeArn": ...,
+}
 
-Returns
-[CreateRecommenderResponseTypeDef](./type_defs.md#createrecommenderresponsetypedef).
+parent.create_recommender(**kwargs)
+```
 
-<a id="create\_schema"></a>
+1. See [:material-code-braces: CreateRecommenderRequestRequestTypeDef](./type_defs.md#createrecommenderrequestrequesttypedef) 
 
-### create_schema
+### create\_schema
 
 Creates an Amazon Personalize schema from the specified schema string.
 
-Type annotations for `boto3.client("personalize").create_schema` method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema)
 
-Boto3 documentation:
-[Personalize.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_schema)
+```python title="Method definition"
+def create_schema(
+    self,
+    *,
+    name: str,
+    schema: str,
+    domain: DomainType = ...,  # (1)
+) -> CreateSchemaResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSchemaRequestRequestTypeDef](./type_defs.md#createschemarequestrequesttypedef).
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-braces: CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `schema`: `str` *(required)*
-- `domain`: [DomainType](./literals.md#domaintype)
+```python title="Usage example with kwargs"
+kwargs: CreateSchemaRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "schema": ...,
+}
 
-Returns
-[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
+parent.create_schema(**kwargs)
+```
 
-<a id="create\_solution"></a>
+1. See [:material-code-braces: CreateSchemaRequestRequestTypeDef](./type_defs.md#createschemarequestrequesttypedef) 
 
-### create_solution
+### create\_solution
 
 Creates the configuration for training a model.
 
-Type annotations for `boto3.client("personalize").create_solution` method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_solution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution)
 
-Boto3 documentation:
-[Personalize.Client.create_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution)
+```python title="Method definition"
+def create_solution(
+    self,
+    *,
+    name: str,
+    datasetGroupArn: str,
+    performHPO: bool = ...,
+    performAutoML: bool = ...,
+    recipeArn: str = ...,
+    eventType: str = ...,
+    solutionConfig: SolutionConfigTypeDef = ...,  # (1)
+) -> CreateSolutionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSolutionRequestRequestTypeDef](./type_defs.md#createsolutionrequestrequesttypedef).
+1. See [:material-code-braces: SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef) 
+2. See [:material-code-braces: CreateSolutionResponseTypeDef](./type_defs.md#createsolutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `datasetGroupArn`: `str` *(required)*
-- `performHPO`: `bool`
-- `performAutoML`: `bool`
-- `recipeArn`: `str`
-- `eventType`: `str`
-- `solutionConfig`:
-  [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateSolutionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "datasetGroupArn": ...,
+}
 
-Returns
-[CreateSolutionResponseTypeDef](./type_defs.md#createsolutionresponsetypedef).
+parent.create_solution(**kwargs)
+```
 
-<a id="create\_solution\_version"></a>
+1. See [:material-code-braces: CreateSolutionRequestRequestTypeDef](./type_defs.md#createsolutionrequestrequesttypedef) 
 
-### create_solution_version
+### create\_solution\_version
 
 Trains or retrains an active solution in a Custom dataset group.
 
-Type annotations for `boto3.client("personalize").create_solution_version`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").create_solution_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version)
 
-Boto3 documentation:
-[Personalize.Client.create_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.create_solution_version)
+```python title="Method definition"
+def create_solution_version(
+    self,
+    *,
+    solutionArn: str,
+    trainingMode: TrainingModeType = ...,  # (1)
+) -> CreateSolutionVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSolutionVersionRequestRequestTypeDef](./type_defs.md#createsolutionversionrequestrequesttypedef).
+1. See [:material-code-brackets: TrainingModeType](./literals.md#trainingmodetype) 
+2. See [:material-code-braces: CreateSolutionVersionResponseTypeDef](./type_defs.md#createsolutionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `solutionArn`: `str` *(required)*
-- `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
+```python title="Usage example with kwargs"
+kwargs: CreateSolutionVersionRequestRequestTypeDef = {  # (1)
+    "solutionArn": ...,
+}
 
-Returns
-[CreateSolutionVersionResponseTypeDef](./type_defs.md#createsolutionversionresponsetypedef).
+parent.create_solution_version(**kwargs)
+```
 
-<a id="delete\_campaign"></a>
+1. See [:material-code-braces: CreateSolutionVersionRequestRequestTypeDef](./type_defs.md#createsolutionversionrequestrequesttypedef) 
 
-### delete_campaign
+### delete\_campaign
 
 Removes a campaign by deleting the solution deployment.
 
-Type annotations for `boto3.client("personalize").delete_campaign` method.
+Type annotations and code completion for `#!python boto3.client("personalize").delete_campaign` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign)
 
-Boto3 documentation:
-[Personalize.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_campaign)
+```python title="Method definition"
+def delete_campaign(
+    self,
+    *,
+    campaignArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCampaignRequestRequestTypeDef](./type_defs.md#deletecampaignrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `campaignArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCampaignRequestRequestTypeDef = {  # (1)
+    "campaignArn": ...,
+}
 
-<a id="delete\_dataset"></a>
+parent.delete_campaign(**kwargs)
+```
 
-### delete_dataset
+1. See [:material-code-braces: DeleteCampaignRequestRequestTypeDef](./type_defs.md#deletecampaignrequestrequesttypedef) 
+
+### delete\_dataset
 
 Deletes a dataset.
 
-Type annotations for `boto3.client("personalize").delete_dataset` method.
+Type annotations and code completion for `#!python boto3.client("personalize").delete_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset)
 
-Boto3 documentation:
-[Personalize.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset)
+```python title="Method definition"
+def delete_dataset(
+    self,
+    *,
+    datasetArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `datasetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetRequestRequestTypeDef = {  # (1)
+    "datasetArn": ...,
+}
 
-<a id="delete\_dataset\_group"></a>
+parent.delete_dataset(**kwargs)
+```
 
-### delete_dataset_group
+1. See [:material-code-braces: DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
+
+### delete\_dataset\_group
 
 Deletes a dataset group.
 
-Type annotations for `boto3.client("personalize").delete_dataset_group` method.
+Type annotations and code completion for `#!python boto3.client("personalize").delete_dataset_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group)
 
-Boto3 documentation:
-[Personalize.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_dataset_group)
+```python title="Method definition"
+def delete_dataset_group(
+    self,
+    *,
+    datasetGroupArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetGroupRequestRequestTypeDef](./type_defs.md#deletedatasetgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `datasetGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetGroupRequestRequestTypeDef = {  # (1)
+    "datasetGroupArn": ...,
+}
 
-<a id="delete\_event\_tracker"></a>
+parent.delete_dataset_group(**kwargs)
+```
 
-### delete_event_tracker
+1. See [:material-code-braces: DeleteDatasetGroupRequestRequestTypeDef](./type_defs.md#deletedatasetgrouprequestrequesttypedef) 
+
+### delete\_event\_tracker
 
 Deletes the event tracker.
 
-Type annotations for `boto3.client("personalize").delete_event_tracker` method.
+Type annotations and code completion for `#!python boto3.client("personalize").delete_event_tracker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker)
 
-Boto3 documentation:
-[Personalize.Client.delete_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_event_tracker)
+```python title="Method definition"
+def delete_event_tracker(
+    self,
+    *,
+    eventTrackerArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventTrackerRequestRequestTypeDef](./type_defs.md#deleteeventtrackerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `eventTrackerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventTrackerRequestRequestTypeDef = {  # (1)
+    "eventTrackerArn": ...,
+}
 
-<a id="delete\_filter"></a>
+parent.delete_event_tracker(**kwargs)
+```
 
-### delete_filter
+1. See [:material-code-braces: DeleteEventTrackerRequestRequestTypeDef](./type_defs.md#deleteeventtrackerrequestrequesttypedef) 
+
+### delete\_filter
 
 Deletes a filter.
 
-Type annotations for `boto3.client("personalize").delete_filter` method.
+Type annotations and code completion for `#!python boto3.client("personalize").delete_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter)
 
-Boto3 documentation:
-[Personalize.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_filter)
+```python title="Method definition"
+def delete_filter(
+    self,
+    *,
+    filterArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFilterRequestRequestTypeDef](./type_defs.md#deletefilterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `filterArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFilterRequestRequestTypeDef = {  # (1)
+    "filterArn": ...,
+}
 
-<a id="delete\_recommender"></a>
+parent.delete_filter(**kwargs)
+```
 
-### delete_recommender
+1. See [:material-code-braces: DeleteFilterRequestRequestTypeDef](./type_defs.md#deletefilterrequestrequesttypedef) 
+
+### delete\_recommender
 
 Deactivates and removes a recommender.
 
-Type annotations for `boto3.client("personalize").delete_recommender` method.
+Type annotations and code completion for `#!python boto3.client("personalize").delete_recommender` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_recommender)
 
-Boto3 documentation:
-[Personalize.Client.delete_recommender](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_recommender)
+```python title="Method definition"
+def delete_recommender(
+    self,
+    *,
+    recommenderArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRecommenderRequestRequestTypeDef](./type_defs.md#deleterecommenderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `recommenderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRecommenderRequestRequestTypeDef = {  # (1)
+    "recommenderArn": ...,
+}
 
-<a id="delete\_schema"></a>
+parent.delete_recommender(**kwargs)
+```
 
-### delete_schema
+1. See [:material-code-braces: DeleteRecommenderRequestRequestTypeDef](./type_defs.md#deleterecommenderrequestrequesttypedef) 
+
+### delete\_schema
 
 Deletes a schema.
 
-Type annotations for `boto3.client("personalize").delete_schema` method.
+Type annotations and code completion for `#!python boto3.client("personalize").delete_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema)
 
-Boto3 documentation:
-[Personalize.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_schema)
+```python title="Method definition"
+def delete_schema(
+    self,
+    *,
+    schemaArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `schemaArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSchemaRequestRequestTypeDef = {  # (1)
+    "schemaArn": ...,
+}
 
-<a id="delete\_solution"></a>
+parent.delete_schema(**kwargs)
+```
 
-### delete_solution
+1. See [:material-code-braces: DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef) 
+
+### delete\_solution
 
 Deletes all versions of a solution and the `Solution` object itself.
 
-Type annotations for `boto3.client("personalize").delete_solution` method.
+Type annotations and code completion for `#!python boto3.client("personalize").delete_solution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution)
 
-Boto3 documentation:
-[Personalize.Client.delete_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.delete_solution)
+```python title="Method definition"
+def delete_solution(
+    self,
+    *,
+    solutionArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSolutionRequestRequestTypeDef](./type_defs.md#deletesolutionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `solutionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSolutionRequestRequestTypeDef = {  # (1)
+    "solutionArn": ...,
+}
 
-<a id="describe\_algorithm"></a>
+parent.delete_solution(**kwargs)
+```
 
-### describe_algorithm
+1. See [:material-code-braces: DeleteSolutionRequestRequestTypeDef](./type_defs.md#deletesolutionrequestrequesttypedef) 
+
+### describe\_algorithm
 
 Describes the given algorithm.
 
-Type annotations for `boto3.client("personalize").describe_algorithm` method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_algorithm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm)
 
-Boto3 documentation:
-[Personalize.Client.describe_algorithm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_algorithm)
+```python title="Method definition"
+def describe_algorithm(
+    self,
+    *,
+    algorithmArn: str,
+) -> DescribeAlgorithmResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAlgorithmRequestRequestTypeDef](./type_defs.md#describealgorithmrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAlgorithmResponseTypeDef](./type_defs.md#describealgorithmresponsetypedef) 
 
-Keyword-only arguments:
 
-- `algorithmArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAlgorithmRequestRequestTypeDef = {  # (1)
+    "algorithmArn": ...,
+}
 
-Returns
-[DescribeAlgorithmResponseTypeDef](./type_defs.md#describealgorithmresponsetypedef).
+parent.describe_algorithm(**kwargs)
+```
 
-<a id="describe\_batch\_inference\_job"></a>
+1. See [:material-code-braces: DescribeAlgorithmRequestRequestTypeDef](./type_defs.md#describealgorithmrequestrequesttypedef) 
 
-### describe_batch_inference_job
+### describe\_batch\_inference\_job
 
 Gets the properties of a batch inference job including name, Amazon Resource
-Name (ARN), status, input and output configurations, and the ARN of the
-solution version used to generate the recommendations.
+Name (ARN), status, input and output configurations, and the ARN of the solution
+version used to generate the recommendations.
 
-Type annotations for `boto3.client("personalize").describe_batch_inference_job`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_batch_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job)
 
-Boto3 documentation:
-[Personalize.Client.describe_batch_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_inference_job)
+```python title="Method definition"
+def describe_batch_inference_job(
+    self,
+    *,
+    batchInferenceJobArn: str,
+) -> DescribeBatchInferenceJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBatchInferenceJobRequestRequestTypeDef](./type_defs.md#describebatchinferencejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBatchInferenceJobResponseTypeDef](./type_defs.md#describebatchinferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `batchInferenceJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBatchInferenceJobRequestRequestTypeDef = {  # (1)
+    "batchInferenceJobArn": ...,
+}
 
-Returns
-[DescribeBatchInferenceJobResponseTypeDef](./type_defs.md#describebatchinferencejobresponsetypedef).
+parent.describe_batch_inference_job(**kwargs)
+```
 
-<a id="describe\_batch\_segment\_job"></a>
+1. See [:material-code-braces: DescribeBatchInferenceJobRequestRequestTypeDef](./type_defs.md#describebatchinferencejobrequestrequesttypedef) 
 
-### describe_batch_segment_job
+### describe\_batch\_segment\_job
 
 Gets the properties of a batch segment job including name, Amazon Resource Name
 (ARN), status, input and output configurations, and the ARN of the solution
 version used to generate segments.
 
-Type annotations for `boto3.client("personalize").describe_batch_segment_job`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_batch_segment_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_segment_job)
 
-Boto3 documentation:
-[Personalize.Client.describe_batch_segment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_batch_segment_job)
+```python title="Method definition"
+def describe_batch_segment_job(
+    self,
+    *,
+    batchSegmentJobArn: str,
+) -> DescribeBatchSegmentJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBatchSegmentJobRequestRequestTypeDef](./type_defs.md#describebatchsegmentjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBatchSegmentJobResponseTypeDef](./type_defs.md#describebatchsegmentjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `batchSegmentJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBatchSegmentJobRequestRequestTypeDef = {  # (1)
+    "batchSegmentJobArn": ...,
+}
 
-Returns
-[DescribeBatchSegmentJobResponseTypeDef](./type_defs.md#describebatchsegmentjobresponsetypedef).
+parent.describe_batch_segment_job(**kwargs)
+```
 
-<a id="describe\_campaign"></a>
+1. See [:material-code-braces: DescribeBatchSegmentJobRequestRequestTypeDef](./type_defs.md#describebatchsegmentjobrequestrequesttypedef) 
 
-### describe_campaign
+### describe\_campaign
 
 Describes the given campaign, including its status.
 
-Type annotations for `boto3.client("personalize").describe_campaign` method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_campaign` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign)
 
-Boto3 documentation:
-[Personalize.Client.describe_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_campaign)
+```python title="Method definition"
+def describe_campaign(
+    self,
+    *,
+    campaignArn: str,
+) -> DescribeCampaignResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCampaignRequestRequestTypeDef](./type_defs.md#describecampaignrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCampaignResponseTypeDef](./type_defs.md#describecampaignresponsetypedef) 
 
-Keyword-only arguments:
 
-- `campaignArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCampaignRequestRequestTypeDef = {  # (1)
+    "campaignArn": ...,
+}
 
-Returns
-[DescribeCampaignResponseTypeDef](./type_defs.md#describecampaignresponsetypedef).
+parent.describe_campaign(**kwargs)
+```
 
-<a id="describe\_dataset"></a>
+1. See [:material-code-braces: DescribeCampaignRequestRequestTypeDef](./type_defs.md#describecampaignrequestrequesttypedef) 
 
-### describe_dataset
+### describe\_dataset
 
 Describes the given dataset.
 
-Type annotations for `boto3.client("personalize").describe_dataset` method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset)
 
-Boto3 documentation:
-[Personalize.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset)
+```python title="Method definition"
+def describe_dataset(
+    self,
+    *,
+    datasetArn: str,
+) -> DescribeDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetRequestRequestTypeDef = {  # (1)
+    "datasetArn": ...,
+}
 
-Returns
-[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+parent.describe_dataset(**kwargs)
+```
 
-<a id="describe\_dataset\_export\_job"></a>
+1. See [:material-code-braces: DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef) 
 
-### describe_dataset_export_job
+### describe\_dataset\_export\_job
 
-Describes the dataset export job created by CreateDatasetExportJob , including
+Describes the dataset export job created by  CreateDatasetExportJob , including
 the export job status.
 
-Type annotations for `boto3.client("personalize").describe_dataset_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_dataset_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
 
-Boto3 documentation:
-[Personalize.Client.describe_dataset_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_export_job)
+```python title="Method definition"
+def describe_dataset_export_job(
+    self,
+    *,
+    datasetExportJobArn: str,
+) -> DescribeDatasetExportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetExportJobRequestRequestTypeDef](./type_defs.md#describedatasetexportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetExportJobResponseTypeDef](./type_defs.md#describedatasetexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetExportJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetExportJobRequestRequestTypeDef = {  # (1)
+    "datasetExportJobArn": ...,
+}
 
-Returns
-[DescribeDatasetExportJobResponseTypeDef](./type_defs.md#describedatasetexportjobresponsetypedef).
+parent.describe_dataset_export_job(**kwargs)
+```
 
-<a id="describe\_dataset\_group"></a>
+1. See [:material-code-braces: DescribeDatasetExportJobRequestRequestTypeDef](./type_defs.md#describedatasetexportjobrequestrequesttypedef) 
 
-### describe_dataset_group
+### describe\_dataset\_group
 
 Describes the given dataset group.
 
-Type annotations for `boto3.client("personalize").describe_dataset_group`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_dataset_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group)
 
-Boto3 documentation:
-[Personalize.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_group)
+```python title="Method definition"
+def describe_dataset_group(
+    self,
+    *,
+    datasetGroupArn: str,
+) -> DescribeDatasetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetGroupRequestRequestTypeDef](./type_defs.md#describedatasetgrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetGroupRequestRequestTypeDef = {  # (1)
+    "datasetGroupArn": ...,
+}
 
-Returns
-[DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef).
+parent.describe_dataset_group(**kwargs)
+```
 
-<a id="describe\_dataset\_import\_job"></a>
+1. See [:material-code-braces: DescribeDatasetGroupRequestRequestTypeDef](./type_defs.md#describedatasetgrouprequestrequesttypedef) 
 
-### describe_dataset_import_job
+### describe\_dataset\_import\_job
 
-Describes the dataset import job created by CreateDatasetImportJob , including
+Describes the dataset import job created by  CreateDatasetImportJob , including
 the import job status.
 
-Type annotations for `boto3.client("personalize").describe_dataset_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_dataset_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
 
-Boto3 documentation:
-[Personalize.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_dataset_import_job)
+```python title="Method definition"
+def describe_dataset_import_job(
+    self,
+    *,
+    datasetImportJobArn: str,
+) -> DescribeDatasetImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetImportJobRequestRequestTypeDef](./type_defs.md#describedatasetimportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetImportJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetImportJobRequestRequestTypeDef = {  # (1)
+    "datasetImportJobArn": ...,
+}
 
-Returns
-[DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef).
+parent.describe_dataset_import_job(**kwargs)
+```
 
-<a id="describe\_event\_tracker"></a>
+1. See [:material-code-braces: DescribeDatasetImportJobRequestRequestTypeDef](./type_defs.md#describedatasetimportjobrequestrequesttypedef) 
 
-### describe_event_tracker
+### describe\_event\_tracker
 
 Describes an event tracker.
 
-Type annotations for `boto3.client("personalize").describe_event_tracker`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_event_tracker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker)
 
-Boto3 documentation:
-[Personalize.Client.describe_event_tracker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_event_tracker)
+```python title="Method definition"
+def describe_event_tracker(
+    self,
+    *,
+    eventTrackerArn: str,
+) -> DescribeEventTrackerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventTrackerRequestRequestTypeDef](./type_defs.md#describeeventtrackerrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEventTrackerResponseTypeDef](./type_defs.md#describeeventtrackerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `eventTrackerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeEventTrackerRequestRequestTypeDef = {  # (1)
+    "eventTrackerArn": ...,
+}
 
-Returns
-[DescribeEventTrackerResponseTypeDef](./type_defs.md#describeeventtrackerresponsetypedef).
+parent.describe_event_tracker(**kwargs)
+```
 
-<a id="describe\_feature\_transformation"></a>
+1. See [:material-code-braces: DescribeEventTrackerRequestRequestTypeDef](./type_defs.md#describeeventtrackerrequestrequesttypedef) 
 
-### describe_feature_transformation
+### describe\_feature\_transformation
 
 Describes the given feature transformation.
 
-Type annotations for
-`boto3.client("personalize").describe_feature_transformation` method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_feature_transformation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation)
 
-Boto3 documentation:
-[Personalize.Client.describe_feature_transformation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_feature_transformation)
+```python title="Method definition"
+def describe_feature_transformation(
+    self,
+    *,
+    featureTransformationArn: str,
+) -> DescribeFeatureTransformationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFeatureTransformationRequestRequestTypeDef](./type_defs.md#describefeaturetransformationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFeatureTransformationResponseTypeDef](./type_defs.md#describefeaturetransformationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `featureTransformationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFeatureTransformationRequestRequestTypeDef = {  # (1)
+    "featureTransformationArn": ...,
+}
 
-Returns
-[DescribeFeatureTransformationResponseTypeDef](./type_defs.md#describefeaturetransformationresponsetypedef).
+parent.describe_feature_transformation(**kwargs)
+```
 
-<a id="describe\_filter"></a>
+1. See [:material-code-braces: DescribeFeatureTransformationRequestRequestTypeDef](./type_defs.md#describefeaturetransformationrequestrequesttypedef) 
 
-### describe_filter
+### describe\_filter
 
 Describes a filter's properties.
 
-Type annotations for `boto3.client("personalize").describe_filter` method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter)
 
-Boto3 documentation:
-[Personalize.Client.describe_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_filter)
+```python title="Method definition"
+def describe_filter(
+    self,
+    *,
+    filterArn: str,
+) -> DescribeFilterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFilterRequestRequestTypeDef](./type_defs.md#describefilterrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFilterResponseTypeDef](./type_defs.md#describefilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFilterRequestRequestTypeDef = {  # (1)
+    "filterArn": ...,
+}
 
-Returns
-[DescribeFilterResponseTypeDef](./type_defs.md#describefilterresponsetypedef).
+parent.describe_filter(**kwargs)
+```
 
-<a id="describe\_recipe"></a>
+1. See [:material-code-braces: DescribeFilterRequestRequestTypeDef](./type_defs.md#describefilterrequestrequesttypedef) 
 
-### describe_recipe
+### describe\_recipe
 
 Describes a recipe.
 
-Type annotations for `boto3.client("personalize").describe_recipe` method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe)
 
-Boto3 documentation:
-[Personalize.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recipe)
+```python title="Method definition"
+def describe_recipe(
+    self,
+    *,
+    recipeArn: str,
+) -> DescribeRecipeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRecipeRequestRequestTypeDef](./type_defs.md#describereciperequestrequesttypedef).
+1. See [:material-code-braces: DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `recipeArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRecipeRequestRequestTypeDef = {  # (1)
+    "recipeArn": ...,
+}
 
-Returns
-[DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
+parent.describe_recipe(**kwargs)
+```
 
-<a id="describe\_recommender"></a>
+1. See [:material-code-braces: DescribeRecipeRequestRequestTypeDef](./type_defs.md#describereciperequestrequesttypedef) 
 
-### describe_recommender
+### describe\_recommender
 
 Describes the given recommender, including its status.
 
-Type annotations for `boto3.client("personalize").describe_recommender` method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_recommender` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recommender)
 
-Boto3 documentation:
-[Personalize.Client.describe_recommender](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_recommender)
+```python title="Method definition"
+def describe_recommender(
+    self,
+    *,
+    recommenderArn: str,
+) -> DescribeRecommenderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRecommenderRequestRequestTypeDef](./type_defs.md#describerecommenderrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRecommenderResponseTypeDef](./type_defs.md#describerecommenderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `recommenderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRecommenderRequestRequestTypeDef = {  # (1)
+    "recommenderArn": ...,
+}
 
-Returns
-[DescribeRecommenderResponseTypeDef](./type_defs.md#describerecommenderresponsetypedef).
+parent.describe_recommender(**kwargs)
+```
 
-<a id="describe\_schema"></a>
+1. See [:material-code-braces: DescribeRecommenderRequestRequestTypeDef](./type_defs.md#describerecommenderrequestrequesttypedef) 
 
-### describe_schema
+### describe\_schema
 
 Describes a schema.
 
-Type annotations for `boto3.client("personalize").describe_schema` method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema)
 
-Boto3 documentation:
-[Personalize.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_schema)
+```python title="Method definition"
+def describe_schema(
+    self,
+    *,
+    schemaArn: str,
+) -> DescribeSchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSchemaRequestRequestTypeDef](./type_defs.md#describeschemarequestrequesttypedef).
+1. See [:material-code-braces: DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `schemaArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSchemaRequestRequestTypeDef = {  # (1)
+    "schemaArn": ...,
+}
 
-Returns
-[DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
+parent.describe_schema(**kwargs)
+```
 
-<a id="describe\_solution"></a>
+1. See [:material-code-braces: DescribeSchemaRequestRequestTypeDef](./type_defs.md#describeschemarequestrequesttypedef) 
 
-### describe_solution
+### describe\_solution
 
 Describes a solution.
 
-Type annotations for `boto3.client("personalize").describe_solution` method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_solution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution)
 
-Boto3 documentation:
-[Personalize.Client.describe_solution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution)
+```python title="Method definition"
+def describe_solution(
+    self,
+    *,
+    solutionArn: str,
+) -> DescribeSolutionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSolutionRequestRequestTypeDef](./type_defs.md#describesolutionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSolutionResponseTypeDef](./type_defs.md#describesolutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `solutionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSolutionRequestRequestTypeDef = {  # (1)
+    "solutionArn": ...,
+}
 
-Returns
-[DescribeSolutionResponseTypeDef](./type_defs.md#describesolutionresponsetypedef).
+parent.describe_solution(**kwargs)
+```
 
-<a id="describe\_solution\_version"></a>
+1. See [:material-code-braces: DescribeSolutionRequestRequestTypeDef](./type_defs.md#describesolutionrequestrequesttypedef) 
 
-### describe_solution_version
+### describe\_solution\_version
 
 Describes a specific version of a solution.
 
-Type annotations for `boto3.client("personalize").describe_solution_version`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").describe_solution_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version)
 
-Boto3 documentation:
-[Personalize.Client.describe_solution_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.describe_solution_version)
+```python title="Method definition"
+def describe_solution_version(
+    self,
+    *,
+    solutionVersionArn: str,
+) -> DescribeSolutionVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSolutionVersionRequestRequestTypeDef](./type_defs.md#describesolutionversionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSolutionVersionResponseTypeDef](./type_defs.md#describesolutionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `solutionVersionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSolutionVersionRequestRequestTypeDef = {  # (1)
+    "solutionVersionArn": ...,
+}
 
-Returns
-[DescribeSolutionVersionResponseTypeDef](./type_defs.md#describesolutionversionresponsetypedef).
+parent.describe_solution_version(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeSolutionVersionRequestRequestTypeDef](./type_defs.md#describesolutionversionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("personalize").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Personalize.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_solution\_metrics"></a>
-
-### get_solution_metrics
+### get\_solution\_metrics
 
 Gets the metrics for the specified solution version.
 
-Type annotations for `boto3.client("personalize").get_solution_metrics` method.
+Type annotations and code completion for `#!python boto3.client("personalize").get_solution_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics)
 
-Boto3 documentation:
-[Personalize.Client.get_solution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.get_solution_metrics)
+```python title="Method definition"
+def get_solution_metrics(
+    self,
+    *,
+    solutionVersionArn: str,
+) -> GetSolutionMetricsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSolutionMetricsRequestRequestTypeDef](./type_defs.md#getsolutionmetricsrequestrequesttypedef).
+1. See [:material-code-braces: GetSolutionMetricsResponseTypeDef](./type_defs.md#getsolutionmetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `solutionVersionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSolutionMetricsRequestRequestTypeDef = {  # (1)
+    "solutionVersionArn": ...,
+}
 
-Returns
-[GetSolutionMetricsResponseTypeDef](./type_defs.md#getsolutionmetricsresponsetypedef).
+parent.get_solution_metrics(**kwargs)
+```
 
-<a id="list\_batch\_inference\_jobs"></a>
+1. See [:material-code-braces: GetSolutionMetricsRequestRequestTypeDef](./type_defs.md#getsolutionmetricsrequestrequesttypedef) 
 
-### list_batch_inference_jobs
+### list\_batch\_inference\_jobs
 
 Gets a list of the batch inference jobs that have been performed off of a
 solution version.
 
-Type annotations for `boto3.client("personalize").list_batch_inference_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_batch_inference_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs)
 
-Boto3 documentation:
-[Personalize.Client.list_batch_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_inference_jobs)
+```python title="Method definition"
+def list_batch_inference_jobs(
+    self,
+    *,
+    solutionVersionArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListBatchInferenceJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBatchInferenceJobsRequestRequestTypeDef](./type_defs.md#listbatchinferencejobsrequestrequesttypedef).
+1. See [:material-code-braces: ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `solutionVersionArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListBatchInferenceJobsRequestRequestTypeDef = {  # (1)
+    "solutionVersionArn": ...,
+}
 
-Returns
-[ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef).
+parent.list_batch_inference_jobs(**kwargs)
+```
 
-<a id="list\_batch\_segment\_jobs"></a>
+1. See [:material-code-braces: ListBatchInferenceJobsRequestRequestTypeDef](./type_defs.md#listbatchinferencejobsrequestrequesttypedef) 
 
-### list_batch_segment_jobs
+### list\_batch\_segment\_jobs
 
-Gets a list of the batch segment jobs that have been performed off of a
-solution version that you specify.
+Gets a list of the batch segment jobs that have been performed off of a solution
+version that you specify.
 
-Type annotations for `boto3.client("personalize").list_batch_segment_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_batch_segment_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_segment_jobs)
 
-Boto3 documentation:
-[Personalize.Client.list_batch_segment_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_batch_segment_jobs)
+```python title="Method definition"
+def list_batch_segment_jobs(
+    self,
+    *,
+    solutionVersionArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListBatchSegmentJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBatchSegmentJobsRequestRequestTypeDef](./type_defs.md#listbatchsegmentjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListBatchSegmentJobsResponseTypeDef](./type_defs.md#listbatchsegmentjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `solutionVersionArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListBatchSegmentJobsRequestRequestTypeDef = {  # (1)
+    "solutionVersionArn": ...,
+}
 
-Returns
-[ListBatchSegmentJobsResponseTypeDef](./type_defs.md#listbatchsegmentjobsresponsetypedef).
+parent.list_batch_segment_jobs(**kwargs)
+```
 
-<a id="list\_campaigns"></a>
+1. See [:material-code-braces: ListBatchSegmentJobsRequestRequestTypeDef](./type_defs.md#listbatchsegmentjobsrequestrequesttypedef) 
 
-### list_campaigns
+### list\_campaigns
 
 Returns a list of campaigns that use the given solution.
 
-Type annotations for `boto3.client("personalize").list_campaigns` method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_campaigns` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns)
 
-Boto3 documentation:
-[Personalize.Client.list_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_campaigns)
+```python title="Method definition"
+def list_campaigns(
+    self,
+    *,
+    solutionArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListCampaignsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCampaignsRequestRequestTypeDef](./type_defs.md#listcampaignsrequestrequesttypedef).
+1. See [:material-code-braces: ListCampaignsResponseTypeDef](./type_defs.md#listcampaignsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `solutionArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCampaignsRequestRequestTypeDef = {  # (1)
+    "solutionArn": ...,
+}
 
-Returns
-[ListCampaignsResponseTypeDef](./type_defs.md#listcampaignsresponsetypedef).
+parent.list_campaigns(**kwargs)
+```
 
-<a id="list\_dataset\_export\_jobs"></a>
+1. See [:material-code-braces: ListCampaignsRequestRequestTypeDef](./type_defs.md#listcampaignsrequestrequesttypedef) 
 
-### list_dataset_export_jobs
+### list\_dataset\_export\_jobs
 
 Returns a list of dataset export jobs that use the given dataset.
 
-Type annotations for `boto3.client("personalize").list_dataset_export_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_dataset_export_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs)
 
-Boto3 documentation:
-[Personalize.Client.list_dataset_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_export_jobs)
+```python title="Method definition"
+def list_dataset_export_jobs(
+    self,
+    *,
+    datasetArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDatasetExportJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetExportJobsRequestRequestTypeDef](./type_defs.md#listdatasetexportjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetExportJobsResponseTypeDef](./type_defs.md#listdatasetexportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetExportJobsRequestRequestTypeDef = {  # (1)
+    "datasetArn": ...,
+}
 
-Returns
-[ListDatasetExportJobsResponseTypeDef](./type_defs.md#listdatasetexportjobsresponsetypedef).
+parent.list_dataset_export_jobs(**kwargs)
+```
 
-<a id="list\_dataset\_groups"></a>
+1. See [:material-code-braces: ListDatasetExportJobsRequestRequestTypeDef](./type_defs.md#listdatasetexportjobsrequestrequesttypedef) 
 
-### list_dataset_groups
+### list\_dataset\_groups
 
 Returns a list of dataset groups.
 
-Type annotations for `boto3.client("personalize").list_dataset_groups` method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_dataset_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups)
 
-Boto3 documentation:
-[Personalize.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_groups)
+```python title="Method definition"
+def list_dataset_groups(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDatasetGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetGroupsRequestRequestTypeDef](./type_defs.md#listdatasetgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetGroupsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef).
+parent.list_dataset_groups(**kwargs)
+```
 
-<a id="list\_dataset\_import\_jobs"></a>
+1. See [:material-code-braces: ListDatasetGroupsRequestRequestTypeDef](./type_defs.md#listdatasetgroupsrequestrequesttypedef) 
 
-### list_dataset_import_jobs
+### list\_dataset\_import\_jobs
 
 Returns a list of dataset import jobs that use the given dataset.
 
-Type annotations for `boto3.client("personalize").list_dataset_import_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_dataset_import_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs)
 
-Boto3 documentation:
-[Personalize.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_dataset_import_jobs)
+```python title="Method definition"
+def list_dataset_import_jobs(
+    self,
+    *,
+    datasetArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDatasetImportJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetImportJobsRequestRequestTypeDef](./type_defs.md#listdatasetimportjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetImportJobsRequestRequestTypeDef = {  # (1)
+    "datasetArn": ...,
+}
 
-Returns
-[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef).
+parent.list_dataset_import_jobs(**kwargs)
+```
 
-<a id="list\_datasets"></a>
+1. See [:material-code-braces: ListDatasetImportJobsRequestRequestTypeDef](./type_defs.md#listdatasetimportjobsrequestrequesttypedef) 
 
-### list_datasets
+### list\_datasets
 
 Returns the list of datasets contained in the given dataset group.
 
-Type annotations for `boto3.client("personalize").list_datasets` method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_datasets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets)
 
-Boto3 documentation:
-[Personalize.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_datasets)
+```python title="Method definition"
+def list_datasets(
+    self,
+    *,
+    datasetGroupArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDatasetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestRequestTypeDef = {  # (1)
+    "datasetGroupArn": ...,
+}
 
-Returns
-[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+parent.list_datasets(**kwargs)
+```
 
-<a id="list\_event\_trackers"></a>
+1. See [:material-code-braces: ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef) 
 
-### list_event_trackers
+### list\_event\_trackers
 
 Returns the list of event trackers associated with the account.
 
-Type annotations for `boto3.client("personalize").list_event_trackers` method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_event_trackers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers)
 
-Boto3 documentation:
-[Personalize.Client.list_event_trackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_event_trackers)
+```python title="Method definition"
+def list_event_trackers(
+    self,
+    *,
+    datasetGroupArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListEventTrackersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEventTrackersRequestRequestTypeDef](./type_defs.md#listeventtrackersrequestrequesttypedef).
+1. See [:material-code-braces: ListEventTrackersResponseTypeDef](./type_defs.md#listeventtrackersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEventTrackersRequestRequestTypeDef = {  # (1)
+    "datasetGroupArn": ...,
+}
 
-Returns
-[ListEventTrackersResponseTypeDef](./type_defs.md#listeventtrackersresponsetypedef).
+parent.list_event_trackers(**kwargs)
+```
 
-<a id="list\_filters"></a>
+1. See [:material-code-braces: ListEventTrackersRequestRequestTypeDef](./type_defs.md#listeventtrackersrequestrequesttypedef) 
 
-### list_filters
+### list\_filters
 
 Lists all filters that belong to a given dataset group.
 
-Type annotations for `boto3.client("personalize").list_filters` method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_filters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters)
 
-Boto3 documentation:
-[Personalize.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_filters)
+```python title="Method definition"
+def list_filters(
+    self,
+    *,
+    datasetGroupArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListFiltersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef).
+1. See [:material-code-braces: ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFiltersRequestRequestTypeDef = {  # (1)
+    "datasetGroupArn": ...,
+}
 
-Returns
-[ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
+parent.list_filters(**kwargs)
+```
 
-<a id="list\_recipes"></a>
+1. See [:material-code-braces: ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef) 
 
-### list_recipes
+### list\_recipes
 
 Returns a list of available recipes.
 
-Type annotations for `boto3.client("personalize").list_recipes` method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_recipes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes)
 
-Boto3 documentation:
-[Personalize.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recipes)
+```python title="Method definition"
+def list_recipes(
+    self,
+    *,
+    recipeProvider: RecipeProviderType = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+    domain: DomainType = ...,  # (2)
+) -> ListRecipesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListRecipesRequestRequestTypeDef](./type_defs.md#listrecipesrequestrequesttypedef).
+1. See [:material-code-brackets: RecipeProviderType](./literals.md#recipeprovidertype) 
+2. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+3. See [:material-code-braces: ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `recipeProvider`: `Literal['SERVICE']` (see
-  [RecipeProviderType](./literals.md#recipeprovidertype))
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `domain`: [DomainType](./literals.md#domaintype)
+```python title="Usage example with kwargs"
+kwargs: ListRecipesRequestRequestTypeDef = {  # (1)
+    "recipeProvider": ...,
+}
 
-Returns
-[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
+parent.list_recipes(**kwargs)
+```
 
-<a id="list\_recommenders"></a>
+1. See [:material-code-braces: ListRecipesRequestRequestTypeDef](./type_defs.md#listrecipesrequestrequesttypedef) 
 
-### list_recommenders
+### list\_recommenders
 
 Returns a list of recommenders in a given Domain dataset group.
 
-Type annotations for `boto3.client("personalize").list_recommenders` method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_recommenders` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recommenders)
 
-Boto3 documentation:
-[Personalize.Client.list_recommenders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_recommenders)
+```python title="Method definition"
+def list_recommenders(
+    self,
+    *,
+    datasetGroupArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListRecommendersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecommendersRequestRequestTypeDef](./type_defs.md#listrecommendersrequestrequesttypedef).
+1. See [:material-code-braces: ListRecommendersResponseTypeDef](./type_defs.md#listrecommendersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRecommendersRequestRequestTypeDef = {  # (1)
+    "datasetGroupArn": ...,
+}
 
-Returns
-[ListRecommendersResponseTypeDef](./type_defs.md#listrecommendersresponsetypedef).
+parent.list_recommenders(**kwargs)
+```
 
-<a id="list\_schemas"></a>
+1. See [:material-code-braces: ListRecommendersRequestRequestTypeDef](./type_defs.md#listrecommendersrequestrequesttypedef) 
 
-### list_schemas
+### list\_schemas
 
 Returns the list of schemas associated with the account.
 
-Type annotations for `boto3.client("personalize").list_schemas` method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_schemas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas)
 
-Boto3 documentation:
-[Personalize.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_schemas)
+```python title="Method definition"
+def list_schemas(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListSchemasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef).
+1. See [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSchemasRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
+parent.list_schemas(**kwargs)
+```
 
-<a id="list\_solution\_versions"></a>
+1. See [:material-code-braces: ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef) 
 
-### list_solution_versions
+### list\_solution\_versions
 
 Returns a list of solution versions for the given solution.
 
-Type annotations for `boto3.client("personalize").list_solution_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_solution_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions)
 
-Boto3 documentation:
-[Personalize.Client.list_solution_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solution_versions)
+```python title="Method definition"
+def list_solution_versions(
+    self,
+    *,
+    solutionArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListSolutionVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSolutionVersionsRequestRequestTypeDef](./type_defs.md#listsolutionversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListSolutionVersionsResponseTypeDef](./type_defs.md#listsolutionversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `solutionArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSolutionVersionsRequestRequestTypeDef = {  # (1)
+    "solutionArn": ...,
+}
 
-Returns
-[ListSolutionVersionsResponseTypeDef](./type_defs.md#listsolutionversionsresponsetypedef).
+parent.list_solution_versions(**kwargs)
+```
 
-<a id="list\_solutions"></a>
+1. See [:material-code-braces: ListSolutionVersionsRequestRequestTypeDef](./type_defs.md#listsolutionversionsrequestrequesttypedef) 
 
-### list_solutions
+### list\_solutions
 
 Returns a list of solutions that use the given dataset group.
 
-Type annotations for `boto3.client("personalize").list_solutions` method.
+Type annotations and code completion for `#!python boto3.client("personalize").list_solutions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions)
 
-Boto3 documentation:
-[Personalize.Client.list_solutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.list_solutions)
+```python title="Method definition"
+def list_solutions(
+    self,
+    *,
+    datasetGroupArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListSolutionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSolutionsRequestRequestTypeDef](./type_defs.md#listsolutionsrequestrequesttypedef).
+1. See [:material-code-braces: ListSolutionsResponseTypeDef](./type_defs.md#listsolutionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSolutionsRequestRequestTypeDef = {  # (1)
+    "datasetGroupArn": ...,
+}
 
-Returns
-[ListSolutionsResponseTypeDef](./type_defs.md#listsolutionsresponsetypedef).
+parent.list_solutions(**kwargs)
+```
 
-<a id="stop\_solution\_version\_creation"></a>
+1. See [:material-code-braces: ListSolutionsRequestRequestTypeDef](./type_defs.md#listsolutionsrequestrequesttypedef) 
 
-### stop_solution_version_creation
+### stop\_solution\_version\_creation
 
-Stops creating a solution version that is in a state of CREATE_PENDING or
-CREATE IN_PROGRESS.
+Stops creating a solution version that is in a state of CREATE_PENDING or CREATE
+IN_PROGRESS.
 
-Type annotations for
-`boto3.client("personalize").stop_solution_version_creation` method.
+Type annotations and code completion for `#!python boto3.client("personalize").stop_solution_version_creation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.stop_solution_version_creation)
 
-Boto3 documentation:
-[Personalize.Client.stop_solution_version_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.stop_solution_version_creation)
+```python title="Method definition"
+def stop_solution_version_creation(
+    self,
+    *,
+    solutionVersionArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopSolutionVersionCreationRequestRequestTypeDef](./type_defs.md#stopsolutionversioncreationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `solutionVersionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopSolutionVersionCreationRequestRequestTypeDef = {  # (1)
+    "solutionVersionArn": ...,
+}
 
-<a id="update\_campaign"></a>
+parent.stop_solution_version_creation(**kwargs)
+```
 
-### update_campaign
+1. See [:material-code-braces: StopSolutionVersionCreationRequestRequestTypeDef](./type_defs.md#stopsolutionversioncreationrequestrequesttypedef) 
+
+### update\_campaign
 
 Updates a campaign by either deploying a new solution or changing the value of
 the campaign's `minProvisionedTPS` parameter.
 
-Type annotations for `boto3.client("personalize").update_campaign` method.
+Type annotations and code completion for `#!python boto3.client("personalize").update_campaign` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign)
 
-Boto3 documentation:
-[Personalize.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_campaign)
+```python title="Method definition"
+def update_campaign(
+    self,
+    *,
+    campaignArn: str,
+    solutionVersionArn: str = ...,
+    minProvisionedTPS: int = ...,
+    campaignConfig: CampaignConfigTypeDef = ...,  # (1)
+) -> UpdateCampaignResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCampaignRequestRequestTypeDef](./type_defs.md#updatecampaignrequestrequesttypedef).
+1. See [:material-code-braces: CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef) 
+2. See [:material-code-braces: UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef) 
 
-Keyword-only arguments:
 
-- `campaignArn`: `str` *(required)*
-- `solutionVersionArn`: `str`
-- `minProvisionedTPS`: `int`
-- `campaignConfig`:
-  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateCampaignRequestRequestTypeDef = {  # (1)
+    "campaignArn": ...,
+}
 
-Returns
-[UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef).
+parent.update_campaign(**kwargs)
+```
 
-<a id="update\_recommender"></a>
+1. See [:material-code-braces: UpdateCampaignRequestRequestTypeDef](./type_defs.md#updatecampaignrequestrequesttypedef) 
 
-### update_recommender
+### update\_recommender
 
 Updates the recommender to modify the recommender configuration.
 
-Type annotations for `boto3.client("personalize").update_recommender` method.
+Type annotations and code completion for `#!python boto3.client("personalize").update_recommender` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_recommender)
 
-Boto3 documentation:
-[Personalize.Client.update_recommender](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client.update_recommender)
+```python title="Method definition"
+def update_recommender(
+    self,
+    *,
+    recommenderArn: str,
+    recommenderConfig: RecommenderConfigTypeDef,  # (1)
+) -> UpdateRecommenderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRecommenderRequestRequestTypeDef](./type_defs.md#updaterecommenderrequestrequesttypedef).
+1. See [:material-code-braces: RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef) 
+2. See [:material-code-braces: UpdateRecommenderResponseTypeDef](./type_defs.md#updaterecommenderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `recommenderArn`: `str` *(required)*
-- `recommenderConfig`:
-  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRecommenderRequestRequestTypeDef = {  # (1)
+    "recommenderArn": ...,
+    "recommenderConfig": ...,
+}
 
-Returns
-[UpdateRecommenderResponseTypeDef](./type_defs.md#updaterecommenderresponsetypedef).
+parent.update_recommender(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateRecommenderRequestRequestTypeDef](./type_defs.md#updaterecommenderrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("personalize").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("personalize").get_paginator` method with overloads.
 
-- `client.get_paginator("list_batch_inference_jobs")` ->
-  [ListBatchInferenceJobsPaginator](./paginators.md#listbatchinferencejobspaginator)
-- `client.get_paginator("list_batch_segment_jobs")` ->
-  [ListBatchSegmentJobsPaginator](./paginators.md#listbatchsegmentjobspaginator)
-- `client.get_paginator("list_campaigns")` ->
-  [ListCampaignsPaginator](./paginators.md#listcampaignspaginator)
-- `client.get_paginator("list_dataset_export_jobs")` ->
-  [ListDatasetExportJobsPaginator](./paginators.md#listdatasetexportjobspaginator)
-- `client.get_paginator("list_dataset_groups")` ->
-  [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
-- `client.get_paginator("list_dataset_import_jobs")` ->
-  [ListDatasetImportJobsPaginator](./paginators.md#listdatasetimportjobspaginator)
-- `client.get_paginator("list_datasets")` ->
-  [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
-- `client.get_paginator("list_event_trackers")` ->
-  [ListEventTrackersPaginator](./paginators.md#listeventtrackerspaginator)
-- `client.get_paginator("list_filters")` ->
-  [ListFiltersPaginator](./paginators.md#listfilterspaginator)
-- `client.get_paginator("list_recipes")` ->
-  [ListRecipesPaginator](./paginators.md#listrecipespaginator)
-- `client.get_paginator("list_recommenders")` ->
-  [ListRecommendersPaginator](./paginators.md#listrecommenderspaginator)
-- `client.get_paginator("list_schemas")` ->
-  [ListSchemasPaginator](./paginators.md#listschemaspaginator)
-- `client.get_paginator("list_solution_versions")` ->
-  [ListSolutionVersionsPaginator](./paginators.md#listsolutionversionspaginator)
-- `client.get_paginator("list_solutions")` ->
-  [ListSolutionsPaginator](./paginators.md#listsolutionspaginator)
+- `client.get_paginator("list_batch_inference_jobs")` -> [ListBatchInferenceJobsPaginator](./paginators.md#listbatchinferencejobspaginator)
+- `client.get_paginator("list_batch_segment_jobs")` -> [ListBatchSegmentJobsPaginator](./paginators.md#listbatchsegmentjobspaginator)
+- `client.get_paginator("list_campaigns")` -> [ListCampaignsPaginator](./paginators.md#listcampaignspaginator)
+- `client.get_paginator("list_dataset_export_jobs")` -> [ListDatasetExportJobsPaginator](./paginators.md#listdatasetexportjobspaginator)
+- `client.get_paginator("list_dataset_groups")` -> [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
+- `client.get_paginator("list_dataset_import_jobs")` -> [ListDatasetImportJobsPaginator](./paginators.md#listdatasetimportjobspaginator)
+- `client.get_paginator("list_datasets")` -> [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+- `client.get_paginator("list_event_trackers")` -> [ListEventTrackersPaginator](./paginators.md#listeventtrackerspaginator)
+- `client.get_paginator("list_filters")` -> [ListFiltersPaginator](./paginators.md#listfilterspaginator)
+- `client.get_paginator("list_recipes")` -> [ListRecipesPaginator](./paginators.md#listrecipespaginator)
+- `client.get_paginator("list_recommenders")` -> [ListRecommendersPaginator](./paginators.md#listrecommenderspaginator)
+- `client.get_paginator("list_schemas")` -> [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+- `client.get_paginator("list_solution_versions")` -> [ListSolutionVersionsPaginator](./paginators.md#listsolutionversionspaginator)
+- `client.get_paginator("list_solutions")` -> [ListSolutionsPaginator](./paginators.md#listsolutionspaginator)
+
+
+

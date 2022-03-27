@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-codestar-module"></a>
-
-# Paginators for boto3 CodeStar module
+# Paginators
 
 > [Index](../README.md) > [CodeStar](./README.md) > Paginators
 
-Auto-generated documentation for
-[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
-type annotations stubs module
-[mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
+!!! note ""
 
-- [Paginators for boto3 CodeStar module](#paginators-for-boto3-codestar-module)
-  - [ListProjectsPaginator](#listprojectspaginator)
-  - [ListResourcesPaginator](#listresourcespaginator)
-  - [ListTeamMembersPaginator](#listteammemberspaginator)
-  - [ListUserProfilesPaginator](#listuserprofilespaginator)
-
-<a id="listprojectspaginator"></a>
+    Auto-generated documentation for [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
+    type annotations stubs module [mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 ## ListProjectsPaginator
 
-Type annotations for `boto3.client("codestar").get_paginator("list_projects")`.
+Type annotations and code completion for `#!python boto3.client("codestar").get_paginator("list_projects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codestar.paginator import ListProjectsPaginator
@@ -32,27 +21,39 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("codestar").get_paginator("list_projects")
 ```
 
-Boto3 documentation:
-[CodeStar.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListProjects)
 
-Arguments for `ListProjectsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListProjectsPaginator.paginate` method.
 
-`ListProjectsPaginator.paginate` returns
-`_PageIterator`\[[ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListProjectsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestListProjectsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef) 
 ## ListResourcesPaginator
 
-Type annotations for
-`boto3.client("codestar").get_paginator("list_resources")`.
+Type annotations and code completion for `#!python boto3.client("codestar").get_paginator("list_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codestar.paginator import ListResourcesPaginator
@@ -61,28 +62,40 @@ def get_list_resources_paginator() -> ListResourcesPaginator:
     return Session().client("codestar").get_paginator("list_resources")
 ```
 
-Boto3 documentation:
-[CodeStar.Paginator.ListResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListResources)
 
-Arguments for `ListResourcesPaginator.paginate` method:
+### paginate
 
-- `projectId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourcesPaginator.paginate` method.
 
-`ListResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    projectId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourcesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listteammemberspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResourcesRequestListResourcesPaginateTypeDef = {  # (1)
+    "projectId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourcesRequestListResourcesPaginateTypeDef](./type_defs.md#listresourcesrequestlistresourcespaginatetypedef) 
 ## ListTeamMembersPaginator
 
-Type annotations for
-`boto3.client("codestar").get_paginator("list_team_members")`.
+Type annotations and code completion for `#!python boto3.client("codestar").get_paginator("list_team_members")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codestar.paginator import ListTeamMembersPaginator
@@ -91,28 +104,40 @@ def get_list_team_members_paginator() -> ListTeamMembersPaginator:
     return Session().client("codestar").get_paginator("list_team_members")
 ```
 
-Boto3 documentation:
-[CodeStar.Paginator.ListTeamMembers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListTeamMembers)
 
-Arguments for `ListTeamMembersPaginator.paginate` method:
+### paginate
 
-- `projectId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTeamMembersPaginator.paginate` method.
 
-`ListTeamMembersPaginator.paginate` returns
-`_PageIterator`\[[ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    projectId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTeamMembersResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuserprofilespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTeamMembersRequestListTeamMembersPaginateTypeDef = {  # (1)
+    "projectId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTeamMembersRequestListTeamMembersPaginateTypeDef](./type_defs.md#listteammembersrequestlistteammemberspaginatetypedef) 
 ## ListUserProfilesPaginator
 
-Type annotations for
-`boto3.client("codestar").get_paginator("list_user_profiles")`.
+Type annotations and code completion for `#!python boto3.client("codestar").get_paginator("list_user_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codestar.paginator import ListUserProfilesPaginator
@@ -121,13 +146,30 @@ def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
     return Session().client("codestar").get_paginator("list_user_profiles")
 ```
 
-Boto3 documentation:
-[CodeStar.Paginator.ListUserProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Paginator.ListUserProfiles)
 
-Arguments for `ListUserProfilesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUserProfilesPaginator.paginate` method.
 
-`ListUserProfilesPaginator.paginate` returns
-`_PageIterator`\[[ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUserProfilesResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListUserProfilesRequestListUserProfilesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUserProfilesRequestListUserProfilesPaginateTypeDef](./type_defs.md#listuserprofilesrequestlistuserprofilespaginatetypedef) 

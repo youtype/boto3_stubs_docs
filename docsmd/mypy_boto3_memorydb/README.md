@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-memorydb-module"></a>
-
-# Type annotations for boto3 MemoryDB module
+#  MemoryDB module
 
 > [Index](../README.md) > MemoryDB
 
-Auto-generated documentation for
-[MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
-type annotations stubs module
-[mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
+!!! note ""
 
-- [Type annotations for boto3 MemoryDB module](#type-annotations-for-boto3-memorydb-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MemoryDBClient](#memorydbclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
+    type annotations stubs module [mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `MemoryDB`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[memorydb]'
 python -m pip install mypy-boto3-memorydb
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,135 +42,41 @@ python -m pip install mypy-boto3-memorydb
 python -m pip uninstall -y mypy-boto3-memorydb
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="memorydbclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MemoryDBClient
 
-Type annotations for `boto3.client("memorydb")` as
-[MemoryDBClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("memorydb")` as [MemoryDBClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_memorydb.client import MemoryDBClient
+
+def get_client() -> MemoryDBClient:
+    return Session().cleint("memorydb")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [batch_update_cluster](./client.md#batch_update_cluster)
-- [can_paginate](./client.md#can_paginate)
-- [copy_snapshot](./client.md#copy_snapshot)
-- [create_acl](./client.md#create_acl)
-- [create_cluster](./client.md#create_cluster)
-- [create_parameter_group](./client.md#create_parameter_group)
-- [create_snapshot](./client.md#create_snapshot)
-- [create_subnet_group](./client.md#create_subnet_group)
-- [create_user](./client.md#create_user)
-- [delete_acl](./client.md#delete_acl)
-- [delete_cluster](./client.md#delete_cluster)
-- [delete_parameter_group](./client.md#delete_parameter_group)
-- [delete_snapshot](./client.md#delete_snapshot)
-- [delete_subnet_group](./client.md#delete_subnet_group)
-- [delete_user](./client.md#delete_user)
-- [describe_acls](./client.md#describe_acls)
-- [describe_clusters](./client.md#describe_clusters)
-- [describe_engine_versions](./client.md#describe_engine_versions)
-- [describe_events](./client.md#describe_events)
-- [describe_parameter_groups](./client.md#describe_parameter_groups)
-- [describe_parameters](./client.md#describe_parameters)
-- [describe_service_updates](./client.md#describe_service_updates)
-- [describe_snapshots](./client.md#describe_snapshots)
-- [describe_subnet_groups](./client.md#describe_subnet_groups)
-- [describe_users](./client.md#describe_users)
-- [exceptions](./client.md#exceptions)
-- [failover_shard](./client.md#failover_shard)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_allowed_node_type_updates](./client.md#list_allowed_node_type_updates)
-- [list_tags](./client.md#list_tags)
-- [reset_parameter_group](./client.md#reset_parameter_group)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_acl](./client.md#update_acl)
-- [update_cluster](./client.md#update_cluster)
-- [update_parameter_group](./client.md#update_parameter_group)
-- [update_subnet_group](./client.md#update_subnet_group)
-- [update_user](./client.md#update_user)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-MemoryDBClient [exceptions](./client.md#exceptions)
 
-- ACLAlreadyExistsFault
-- ACLNotFoundFault
-- ACLQuotaExceededFault
-- APICallRateForCustomerExceededFault
-- ClientError
-- ClusterAlreadyExistsFault
-- ClusterNotFoundFault
-- ClusterQuotaForCustomerExceededFault
-- DefaultUserRequired
-- DuplicateUserNameFault
-- InsufficientClusterCapacityFault
-- InvalidACLStateFault
-- InvalidARNFault
-- InvalidClusterStateFault
-- InvalidCredentialsException
-- InvalidKMSKeyFault
-- InvalidNodeStateFault
-- InvalidParameterCombinationException
-- InvalidParameterGroupStateFault
-- InvalidParameterValueException
-- InvalidSnapshotStateFault
-- InvalidSubnet
-- InvalidUserStateFault
-- InvalidVPCNetworkStateFault
-- NoOperationFault
-- NodeQuotaForClusterExceededFault
-- NodeQuotaForCustomerExceededFault
-- ParameterGroupAlreadyExistsFault
-- ParameterGroupNotFoundFault
-- ParameterGroupQuotaExceededFault
-- ServiceLinkedRoleNotFoundFault
-- ServiceUpdateNotFoundFault
-- ShardNotFoundFault
-- ShardsPerClusterQuotaExceededFault
-- SnapshotAlreadyExistsFault
-- SnapshotNotFoundFault
-- SnapshotQuotaExceededFault
-- SubnetGroupAlreadyExistsFault
-- SubnetGroupInUseFault
-- SubnetGroupNotFoundFault
-- SubnetGroupQuotaExceededFault
-- SubnetInUse
-- SubnetNotAllowedFault
-- SubnetQuotaExceededFault
-- TagNotFoundFault
-- TagQuotaPerResourceExceeded
-- TestFailoverNotAvailableFault
-- UserAlreadyExistsFault
-- UserNotFoundFault
-- UserQuotaExceededFault
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_memorydb.literals import AZStatusType
 
-```python
-from mypy_boto3_memorydb.literals import AZStatusType, ...
+def get_value() -> AZStatusType:
+    return "multiaz"
 ```
 
 - [AZStatusType](./literals.md#azstatustype)
@@ -204,17 +89,20 @@ from mypy_boto3_memorydb.literals import AZStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_memorydb.type_defs import ACLPendingChangesTypeDef
 
-```python
-from mypy_boto3_memorydb.type_defs import ACLPendingChangesTypeDef, ...
+def get_value() -> ACLPendingChangesTypeDef:
+    return {
+        "UserNamesToRemove": ...,
+    }
 ```
 
 - [ACLPendingChangesTypeDef](./type_defs.md#aclpendingchangestypedef)
@@ -322,3 +210,4 @@ from mypy_boto3_memorydb.type_defs import ACLPendingChangesTypeDef, ...
 - [UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef)
 - [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
+

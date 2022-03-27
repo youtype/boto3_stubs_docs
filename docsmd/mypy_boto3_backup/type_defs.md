@@ -1,2532 +1,3130 @@
-<a id="typed-dictionaries-for-boto3-backup-module"></a>
-
-# Typed dictionaries for boto3 Backup module
+# Typed dictionaries
 
 > [Index](../README.md) > [Backup](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
-type annotations stubs module
-[mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Backup module](#typed-dictionaries-for-boto3-backup-module)
-  - [AdvancedBackupSettingTypeDef](#advancedbackupsettingtypedef)
-  - [BackupJobTypeDef](#backupjobtypedef)
-  - [BackupPlanInputTypeDef](#backupplaninputtypedef)
-  - [BackupPlanTemplatesListMemberTypeDef](#backupplantemplateslistmembertypedef)
-  - [BackupPlanTypeDef](#backupplantypedef)
-  - [BackupPlansListMemberTypeDef](#backupplanslistmembertypedef)
-  - [BackupRuleInputTypeDef](#backupruleinputtypedef)
-  - [BackupRuleTypeDef](#backupruletypedef)
-  - [BackupSelectionTypeDef](#backupselectiontypedef)
-  - [BackupSelectionsListMemberTypeDef](#backupselectionslistmembertypedef)
-  - [BackupVaultListMemberTypeDef](#backupvaultlistmembertypedef)
-  - [CalculatedLifecycleTypeDef](#calculatedlifecycletypedef)
-  - [ConditionParameterTypeDef](#conditionparametertypedef)
-  - [ConditionTypeDef](#conditiontypedef)
-  - [ConditionsTypeDef](#conditionstypedef)
-  - [ControlInputParameterTypeDef](#controlinputparametertypedef)
-  - [ControlScopeTypeDef](#controlscopetypedef)
-  - [CopyActionTypeDef](#copyactiontypedef)
-  - [CopyJobTypeDef](#copyjobtypedef)
-  - [CreateBackupPlanInputRequestTypeDef](#createbackupplaninputrequesttypedef)
-  - [CreateBackupPlanOutputTypeDef](#createbackupplanoutputtypedef)
-  - [CreateBackupSelectionInputRequestTypeDef](#createbackupselectioninputrequesttypedef)
-  - [CreateBackupSelectionOutputTypeDef](#createbackupselectionoutputtypedef)
-  - [CreateBackupVaultInputRequestTypeDef](#createbackupvaultinputrequesttypedef)
-  - [CreateBackupVaultOutputTypeDef](#createbackupvaultoutputtypedef)
-  - [CreateFrameworkInputRequestTypeDef](#createframeworkinputrequesttypedef)
-  - [CreateFrameworkOutputTypeDef](#createframeworkoutputtypedef)
-  - [CreateReportPlanInputRequestTypeDef](#createreportplaninputrequesttypedef)
-  - [CreateReportPlanOutputTypeDef](#createreportplanoutputtypedef)
-  - [DeleteBackupPlanInputRequestTypeDef](#deletebackupplaninputrequesttypedef)
-  - [DeleteBackupPlanOutputTypeDef](#deletebackupplanoutputtypedef)
-  - [DeleteBackupSelectionInputRequestTypeDef](#deletebackupselectioninputrequesttypedef)
-  - [DeleteBackupVaultAccessPolicyInputRequestTypeDef](#deletebackupvaultaccesspolicyinputrequesttypedef)
-  - [DeleteBackupVaultInputRequestTypeDef](#deletebackupvaultinputrequesttypedef)
-  - [DeleteBackupVaultLockConfigurationInputRequestTypeDef](#deletebackupvaultlockconfigurationinputrequesttypedef)
-  - [DeleteBackupVaultNotificationsInputRequestTypeDef](#deletebackupvaultnotificationsinputrequesttypedef)
-  - [DeleteFrameworkInputRequestTypeDef](#deleteframeworkinputrequesttypedef)
-  - [DeleteRecoveryPointInputRequestTypeDef](#deleterecoverypointinputrequesttypedef)
-  - [DeleteReportPlanInputRequestTypeDef](#deletereportplaninputrequesttypedef)
-  - [DescribeBackupJobInputRequestTypeDef](#describebackupjobinputrequesttypedef)
-  - [DescribeBackupJobOutputTypeDef](#describebackupjoboutputtypedef)
-  - [DescribeBackupVaultInputRequestTypeDef](#describebackupvaultinputrequesttypedef)
-  - [DescribeBackupVaultOutputTypeDef](#describebackupvaultoutputtypedef)
-  - [DescribeCopyJobInputRequestTypeDef](#describecopyjobinputrequesttypedef)
-  - [DescribeCopyJobOutputTypeDef](#describecopyjoboutputtypedef)
-  - [DescribeFrameworkInputRequestTypeDef](#describeframeworkinputrequesttypedef)
-  - [DescribeFrameworkOutputTypeDef](#describeframeworkoutputtypedef)
-  - [DescribeGlobalSettingsOutputTypeDef](#describeglobalsettingsoutputtypedef)
-  - [DescribeProtectedResourceInputRequestTypeDef](#describeprotectedresourceinputrequesttypedef)
-  - [DescribeProtectedResourceOutputTypeDef](#describeprotectedresourceoutputtypedef)
-  - [DescribeRecoveryPointInputRequestTypeDef](#describerecoverypointinputrequesttypedef)
-  - [DescribeRecoveryPointOutputTypeDef](#describerecoverypointoutputtypedef)
-  - [DescribeRegionSettingsOutputTypeDef](#describeregionsettingsoutputtypedef)
-  - [DescribeReportJobInputRequestTypeDef](#describereportjobinputrequesttypedef)
-  - [DescribeReportJobOutputTypeDef](#describereportjoboutputtypedef)
-  - [DescribeReportPlanInputRequestTypeDef](#describereportplaninputrequesttypedef)
-  - [DescribeReportPlanOutputTypeDef](#describereportplanoutputtypedef)
-  - [DescribeRestoreJobInputRequestTypeDef](#describerestorejobinputrequesttypedef)
-  - [DescribeRestoreJobOutputTypeDef](#describerestorejoboutputtypedef)
-  - [DisassociateRecoveryPointInputRequestTypeDef](#disassociaterecoverypointinputrequesttypedef)
-  - [ExportBackupPlanTemplateInputRequestTypeDef](#exportbackupplantemplateinputrequesttypedef)
-  - [ExportBackupPlanTemplateOutputTypeDef](#exportbackupplantemplateoutputtypedef)
-  - [FrameworkControlTypeDef](#frameworkcontroltypedef)
-  - [FrameworkTypeDef](#frameworktypedef)
-  - [GetBackupPlanFromJSONInputRequestTypeDef](#getbackupplanfromjsoninputrequesttypedef)
-  - [GetBackupPlanFromJSONOutputTypeDef](#getbackupplanfromjsonoutputtypedef)
-  - [GetBackupPlanFromTemplateInputRequestTypeDef](#getbackupplanfromtemplateinputrequesttypedef)
-  - [GetBackupPlanFromTemplateOutputTypeDef](#getbackupplanfromtemplateoutputtypedef)
-  - [GetBackupPlanInputRequestTypeDef](#getbackupplaninputrequesttypedef)
-  - [GetBackupPlanOutputTypeDef](#getbackupplanoutputtypedef)
-  - [GetBackupSelectionInputRequestTypeDef](#getbackupselectioninputrequesttypedef)
-  - [GetBackupSelectionOutputTypeDef](#getbackupselectionoutputtypedef)
-  - [GetBackupVaultAccessPolicyInputRequestTypeDef](#getbackupvaultaccesspolicyinputrequesttypedef)
-  - [GetBackupVaultAccessPolicyOutputTypeDef](#getbackupvaultaccesspolicyoutputtypedef)
-  - [GetBackupVaultNotificationsInputRequestTypeDef](#getbackupvaultnotificationsinputrequesttypedef)
-  - [GetBackupVaultNotificationsOutputTypeDef](#getbackupvaultnotificationsoutputtypedef)
-  - [GetRecoveryPointRestoreMetadataInputRequestTypeDef](#getrecoverypointrestoremetadatainputrequesttypedef)
-  - [GetRecoveryPointRestoreMetadataOutputTypeDef](#getrecoverypointrestoremetadataoutputtypedef)
-  - [GetSupportedResourceTypesOutputTypeDef](#getsupportedresourcetypesoutputtypedef)
-  - [LifecycleTypeDef](#lifecycletypedef)
-  - [ListBackupJobsInputRequestTypeDef](#listbackupjobsinputrequesttypedef)
-  - [ListBackupJobsOutputTypeDef](#listbackupjobsoutputtypedef)
-  - [ListBackupPlanTemplatesInputRequestTypeDef](#listbackupplantemplatesinputrequesttypedef)
-  - [ListBackupPlanTemplatesOutputTypeDef](#listbackupplantemplatesoutputtypedef)
-  - [ListBackupPlanVersionsInputRequestTypeDef](#listbackupplanversionsinputrequesttypedef)
-  - [ListBackupPlanVersionsOutputTypeDef](#listbackupplanversionsoutputtypedef)
-  - [ListBackupPlansInputRequestTypeDef](#listbackupplansinputrequesttypedef)
-  - [ListBackupPlansOutputTypeDef](#listbackupplansoutputtypedef)
-  - [ListBackupSelectionsInputRequestTypeDef](#listbackupselectionsinputrequesttypedef)
-  - [ListBackupSelectionsOutputTypeDef](#listbackupselectionsoutputtypedef)
-  - [ListBackupVaultsInputRequestTypeDef](#listbackupvaultsinputrequesttypedef)
-  - [ListBackupVaultsOutputTypeDef](#listbackupvaultsoutputtypedef)
-  - [ListCopyJobsInputRequestTypeDef](#listcopyjobsinputrequesttypedef)
-  - [ListCopyJobsOutputTypeDef](#listcopyjobsoutputtypedef)
-  - [ListFrameworksInputRequestTypeDef](#listframeworksinputrequesttypedef)
-  - [ListFrameworksOutputTypeDef](#listframeworksoutputtypedef)
-  - [ListProtectedResourcesInputRequestTypeDef](#listprotectedresourcesinputrequesttypedef)
-  - [ListProtectedResourcesOutputTypeDef](#listprotectedresourcesoutputtypedef)
-  - [ListRecoveryPointsByBackupVaultInputRequestTypeDef](#listrecoverypointsbybackupvaultinputrequesttypedef)
-  - [ListRecoveryPointsByBackupVaultOutputTypeDef](#listrecoverypointsbybackupvaultoutputtypedef)
-  - [ListRecoveryPointsByResourceInputRequestTypeDef](#listrecoverypointsbyresourceinputrequesttypedef)
-  - [ListRecoveryPointsByResourceOutputTypeDef](#listrecoverypointsbyresourceoutputtypedef)
-  - [ListReportJobsInputRequestTypeDef](#listreportjobsinputrequesttypedef)
-  - [ListReportJobsOutputTypeDef](#listreportjobsoutputtypedef)
-  - [ListReportPlansInputRequestTypeDef](#listreportplansinputrequesttypedef)
-  - [ListReportPlansOutputTypeDef](#listreportplansoutputtypedef)
-  - [ListRestoreJobsInputRequestTypeDef](#listrestorejobsinputrequesttypedef)
-  - [ListRestoreJobsOutputTypeDef](#listrestorejobsoutputtypedef)
-  - [ListTagsInputRequestTypeDef](#listtagsinputrequesttypedef)
-  - [ListTagsOutputTypeDef](#listtagsoutputtypedef)
-  - [ProtectedResourceTypeDef](#protectedresourcetypedef)
-  - [PutBackupVaultAccessPolicyInputRequestTypeDef](#putbackupvaultaccesspolicyinputrequesttypedef)
-  - [PutBackupVaultLockConfigurationInputRequestTypeDef](#putbackupvaultlockconfigurationinputrequesttypedef)
-  - [PutBackupVaultNotificationsInputRequestTypeDef](#putbackupvaultnotificationsinputrequesttypedef)
-  - [RecoveryPointByBackupVaultTypeDef](#recoverypointbybackupvaulttypedef)
-  - [RecoveryPointByResourceTypeDef](#recoverypointbyresourcetypedef)
-  - [RecoveryPointCreatorTypeDef](#recoverypointcreatortypedef)
-  - [ReportDeliveryChannelTypeDef](#reportdeliverychanneltypedef)
-  - [ReportDestinationTypeDef](#reportdestinationtypedef)
-  - [ReportJobTypeDef](#reportjobtypedef)
-  - [ReportPlanTypeDef](#reportplantypedef)
-  - [ReportSettingTypeDef](#reportsettingtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreJobsListMemberTypeDef](#restorejobslistmembertypedef)
-  - [StartBackupJobInputRequestTypeDef](#startbackupjobinputrequesttypedef)
-  - [StartBackupJobOutputTypeDef](#startbackupjoboutputtypedef)
-  - [StartCopyJobInputRequestTypeDef](#startcopyjobinputrequesttypedef)
-  - [StartCopyJobOutputTypeDef](#startcopyjoboutputtypedef)
-  - [StartReportJobInputRequestTypeDef](#startreportjobinputrequesttypedef)
-  - [StartReportJobOutputTypeDef](#startreportjoboutputtypedef)
-  - [StartRestoreJobInputRequestTypeDef](#startrestorejobinputrequesttypedef)
-  - [StartRestoreJobOutputTypeDef](#startrestorejoboutputtypedef)
-  - [StopBackupJobInputRequestTypeDef](#stopbackupjobinputrequesttypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-  - [UpdateBackupPlanInputRequestTypeDef](#updatebackupplaninputrequesttypedef)
-  - [UpdateBackupPlanOutputTypeDef](#updatebackupplanoutputtypedef)
-  - [UpdateFrameworkInputRequestTypeDef](#updateframeworkinputrequesttypedef)
-  - [UpdateFrameworkOutputTypeDef](#updateframeworkoutputtypedef)
-  - [UpdateGlobalSettingsInputRequestTypeDef](#updateglobalsettingsinputrequesttypedef)
-  - [UpdateRecoveryPointLifecycleInputRequestTypeDef](#updaterecoverypointlifecycleinputrequesttypedef)
-  - [UpdateRecoveryPointLifecycleOutputTypeDef](#updaterecoverypointlifecycleoutputtypedef)
-  - [UpdateRegionSettingsInputRequestTypeDef](#updateregionsettingsinputrequesttypedef)
-  - [UpdateReportPlanInputRequestTypeDef](#updatereportplaninputrequesttypedef)
-  - [UpdateReportPlanOutputTypeDef](#updatereportplanoutputtypedef)
-
-<a id="advancedbackupsettingtypedef"></a>
+    Auto-generated documentation for [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
+    type annotations stubs module [mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
 
 ## AdvancedBackupSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import AdvancedBackupSettingTypeDef
+
+def get_value() -> AdvancedBackupSettingTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceType`: `str`
-- `BackupOptions`: `Mapping`\[`str`, `str`\]
-
-<a id="backupjobtypedef"></a>
+```python title="Definition"
+class AdvancedBackupSettingTypeDef(TypedDict):
+    ResourceType: NotRequired[str],
+    BackupOptions: NotRequired[Mapping[str, str]],
+```
 
 ## BackupJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupJobTypeDef
+
+def get_value() -> BackupJobTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackupJobTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    BackupJobId: NotRequired[str],
+    BackupVaultName: NotRequired[str],
+    BackupVaultArn: NotRequired[str],
+    RecoveryPointArn: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    CompletionDate: NotRequired[datetime],
+    State: NotRequired[BackupJobStateType],  # (1)
+    StatusMessage: NotRequired[str],
+    PercentDone: NotRequired[str],
+    BackupSizeInBytes: NotRequired[int],
+    IamRoleArn: NotRequired[str],
+    CreatedBy: NotRequired[RecoveryPointCreatorTypeDef],  # (2)
+    ExpectedCompletionDate: NotRequired[datetime],
+    StartBy: NotRequired[datetime],
+    ResourceType: NotRequired[str],
+    BytesTransferred: NotRequired[int],
+    BackupOptions: NotRequired[Dict[str, str]],
+    BackupType: NotRequired[str],
+```
 
-- `AccountId`: `str`
-- `BackupJobId`: `str`
-- `BackupVaultName`: `str`
-- `BackupVaultArn`: `str`
-- `RecoveryPointArn`: `str`
-- `ResourceArn`: `str`
-- `CreationDate`: `datetime`
-- `CompletionDate`: `datetime`
-- `State`: [BackupJobStateType](./literals.md#backupjobstatetype)
-- `StatusMessage`: `str`
-- `PercentDone`: `str`
-- `BackupSizeInBytes`: `int`
-- `IamRoleArn`: `str`
-- `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
-- `ExpectedCompletionDate`: `datetime`
-- `StartBy`: `datetime`
-- `ResourceType`: `str`
-- `BytesTransferred`: `int`
-- `BackupOptions`: `Dict`\[`str`, `str`\]
-- `BackupType`: `str`
-
-<a id="backupplaninputtypedef"></a>
-
+1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
+2. See [:material-code-braces: RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef) 
 ## BackupPlanInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupPlanInputTypeDef
+
+def get_value() -> BackupPlanInputTypeDef:
+    return {
+        "BackupPlanName": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BackupPlanInputTypeDef(TypedDict):
+    BackupPlanName: str,
+    Rules: Sequence[BackupRuleInputTypeDef],  # (1)
+    AdvancedBackupSettings: NotRequired[Sequence[AdvancedBackupSettingTypeDef]],  # (2)
+```
 
-- `BackupPlanName`: `str`
-- `Rules`:
-  `Sequence`\[[BackupRuleInputTypeDef](./type_defs.md#backupruleinputtypedef)\]
-
-Optional fields:
-
-- `AdvancedBackupSettings`:
-  `Sequence`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
-
-<a id="backupplantemplateslistmembertypedef"></a>
-
+1. See [:material-code-braces: BackupRuleInputTypeDef](./type_defs.md#backupruleinputtypedef) 
+2. See [:material-code-braces: AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef) 
 ## BackupPlanTemplatesListMemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupPlanTemplatesListMemberTypeDef
+
+def get_value() -> BackupPlanTemplatesListMemberTypeDef:
+    return {
+        "BackupPlanTemplateId": ...,
+    }
 ```
 
-Optional fields:
-
-- `BackupPlanTemplateId`: `str`
-- `BackupPlanTemplateName`: `str`
-
-<a id="backupplantypedef"></a>
+```python title="Definition"
+class BackupPlanTemplatesListMemberTypeDef(TypedDict):
+    BackupPlanTemplateId: NotRequired[str],
+    BackupPlanTemplateName: NotRequired[str],
+```
 
 ## BackupPlanTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupPlanTypeDef
+
+def get_value() -> BackupPlanTypeDef:
+    return {
+        "BackupPlanName": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BackupPlanTypeDef(TypedDict):
+    BackupPlanName: str,
+    Rules: List[BackupRuleTypeDef],  # (1)
+    AdvancedBackupSettings: NotRequired[List[AdvancedBackupSettingTypeDef]],  # (2)
+```
 
-- `BackupPlanName`: `str`
-- `Rules`: `List`\[[BackupRuleTypeDef](./type_defs.md#backupruletypedef)\]
-
-Optional fields:
-
-- `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
-
-<a id="backupplanslistmembertypedef"></a>
-
+1. See [:material-code-braces: BackupRuleTypeDef](./type_defs.md#backupruletypedef) 
+2. See [:material-code-braces: AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef) 
 ## BackupPlansListMemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupPlansListMemberTypeDef
+
+def get_value() -> BackupPlansListMemberTypeDef:
+    return {
+        "BackupPlanArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackupPlansListMemberTypeDef(TypedDict):
+    BackupPlanArn: NotRequired[str],
+    BackupPlanId: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    DeletionDate: NotRequired[datetime],
+    VersionId: NotRequired[str],
+    BackupPlanName: NotRequired[str],
+    CreatorRequestId: NotRequired[str],
+    LastExecutionDate: NotRequired[datetime],
+    AdvancedBackupSettings: NotRequired[List[AdvancedBackupSettingTypeDef]],  # (1)
+```
 
-- `BackupPlanArn`: `str`
-- `BackupPlanId`: `str`
-- `CreationDate`: `datetime`
-- `DeletionDate`: `datetime`
-- `VersionId`: `str`
-- `BackupPlanName`: `str`
-- `CreatorRequestId`: `str`
-- `LastExecutionDate`: `datetime`
-- `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
-
-<a id="backupruleinputtypedef"></a>
-
+1. See [:material-code-braces: AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef) 
 ## BackupRuleInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupRuleInputTypeDef
+
+def get_value() -> BackupRuleInputTypeDef:
+    return {
+        "RuleName": ...,
+        "TargetBackupVaultName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BackupRuleInputTypeDef(TypedDict):
+    RuleName: str,
+    TargetBackupVaultName: str,
+    ScheduleExpression: NotRequired[str],
+    StartWindowMinutes: NotRequired[int],
+    CompletionWindowMinutes: NotRequired[int],
+    Lifecycle: NotRequired[LifecycleTypeDef],  # (1)
+    RecoveryPointTags: NotRequired[Mapping[str, str]],
+    CopyActions: NotRequired[Sequence[CopyActionTypeDef]],  # (2)
+    EnableContinuousBackup: NotRequired[bool],
+```
 
-- `RuleName`: `str`
-- `TargetBackupVaultName`: `str`
-
-Optional fields:
-
-- `ScheduleExpression`: `str`
-- `StartWindowMinutes`: `int`
-- `CompletionWindowMinutes`: `int`
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `RecoveryPointTags`: `Mapping`\[`str`, `str`\]
-- `CopyActions`:
-  `Sequence`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
-- `EnableContinuousBackup`: `bool`
-
-<a id="backupruletypedef"></a>
-
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
+2. See [:material-code-braces: CopyActionTypeDef](./type_defs.md#copyactiontypedef) 
 ## BackupRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupRuleTypeDef
+
+def get_value() -> BackupRuleTypeDef:
+    return {
+        "RuleName": ...,
+        "TargetBackupVaultName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BackupRuleTypeDef(TypedDict):
+    RuleName: str,
+    TargetBackupVaultName: str,
+    ScheduleExpression: NotRequired[str],
+    StartWindowMinutes: NotRequired[int],
+    CompletionWindowMinutes: NotRequired[int],
+    Lifecycle: NotRequired[LifecycleTypeDef],  # (1)
+    RecoveryPointTags: NotRequired[Dict[str, str]],
+    RuleId: NotRequired[str],
+    CopyActions: NotRequired[List[CopyActionTypeDef]],  # (2)
+    EnableContinuousBackup: NotRequired[bool],
+```
 
-- `RuleName`: `str`
-- `TargetBackupVaultName`: `str`
-
-Optional fields:
-
-- `ScheduleExpression`: `str`
-- `StartWindowMinutes`: `int`
-- `CompletionWindowMinutes`: `int`
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `RecoveryPointTags`: `Dict`\[`str`, `str`\]
-- `RuleId`: `str`
-- `CopyActions`:
-  `List`\[[CopyActionTypeDef](./type_defs.md#copyactiontypedef)\]
-- `EnableContinuousBackup`: `bool`
-
-<a id="backupselectiontypedef"></a>
-
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
+2. See [:material-code-braces: CopyActionTypeDef](./type_defs.md#copyactiontypedef) 
 ## BackupSelectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupSelectionTypeDef
+
+def get_value() -> BackupSelectionTypeDef:
+    return {
+        "SelectionName": ...,
+        "IamRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BackupSelectionTypeDef(TypedDict):
+    SelectionName: str,
+    IamRoleArn: str,
+    Resources: NotRequired[Sequence[str]],
+    ListOfTags: NotRequired[Sequence[ConditionTypeDef]],  # (1)
+    NotResources: NotRequired[Sequence[str]],
+    Conditions: NotRequired[ConditionsTypeDef],  # (2)
+```
 
-- `SelectionName`: `str`
-- `IamRoleArn`: `str`
-
-Optional fields:
-
-- `Resources`: `Sequence`\[`str`\]
-- `ListOfTags`:
-  `Sequence`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `NotResources`: `Sequence`\[`str`\]
-- `Conditions`: [ConditionsTypeDef](./type_defs.md#conditionstypedef)
-
-<a id="backupselectionslistmembertypedef"></a>
-
+1. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+2. See [:material-code-braces: ConditionsTypeDef](./type_defs.md#conditionstypedef) 
 ## BackupSelectionsListMemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupSelectionsListMemberTypeDef
+
+def get_value() -> BackupSelectionsListMemberTypeDef:
+    return {
+        "SelectionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `SelectionId`: `str`
-- `SelectionName`: `str`
-- `BackupPlanId`: `str`
-- `CreationDate`: `datetime`
-- `CreatorRequestId`: `str`
-- `IamRoleArn`: `str`
-
-<a id="backupvaultlistmembertypedef"></a>
+```python title="Definition"
+class BackupSelectionsListMemberTypeDef(TypedDict):
+    SelectionId: NotRequired[str],
+    SelectionName: NotRequired[str],
+    BackupPlanId: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    CreatorRequestId: NotRequired[str],
+    IamRoleArn: NotRequired[str],
+```
 
 ## BackupVaultListMemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import BackupVaultListMemberTypeDef
+
+def get_value() -> BackupVaultListMemberTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Optional fields:
-
-- `BackupVaultName`: `str`
-- `BackupVaultArn`: `str`
-- `CreationDate`: `datetime`
-- `EncryptionKeyArn`: `str`
-- `CreatorRequestId`: `str`
-- `NumberOfRecoveryPoints`: `int`
-- `Locked`: `bool`
-- `MinRetentionDays`: `int`
-- `MaxRetentionDays`: `int`
-- `LockDate`: `datetime`
-
-<a id="calculatedlifecycletypedef"></a>
+```python title="Definition"
+class BackupVaultListMemberTypeDef(TypedDict):
+    BackupVaultName: NotRequired[str],
+    BackupVaultArn: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    EncryptionKeyArn: NotRequired[str],
+    CreatorRequestId: NotRequired[str],
+    NumberOfRecoveryPoints: NotRequired[int],
+    Locked: NotRequired[bool],
+    MinRetentionDays: NotRequired[int],
+    MaxRetentionDays: NotRequired[int],
+    LockDate: NotRequired[datetime],
+```
 
 ## CalculatedLifecycleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CalculatedLifecycleTypeDef
+
+def get_value() -> CalculatedLifecycleTypeDef:
+    return {
+        "MoveToColdStorageAt": ...,
+    }
 ```
 
-Optional fields:
-
-- `MoveToColdStorageAt`: `datetime`
-- `DeleteAt`: `datetime`
-
-<a id="conditionparametertypedef"></a>
+```python title="Definition"
+class CalculatedLifecycleTypeDef(TypedDict):
+    MoveToColdStorageAt: NotRequired[datetime],
+    DeleteAt: NotRequired[datetime],
+```
 
 ## ConditionParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ConditionParameterTypeDef
+
+def get_value() -> ConditionParameterTypeDef:
+    return {
+        "ConditionKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConditionKey`: `str`
-- `ConditionValue`: `str`
-
-<a id="conditiontypedef"></a>
+```python title="Definition"
+class ConditionParameterTypeDef(TypedDict):
+    ConditionKey: NotRequired[str],
+    ConditionValue: NotRequired[str],
+```
 
 ## ConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ConditionTypeDef
+
+def get_value() -> ConditionTypeDef:
+    return {
+        "ConditionType": ...,
+        "ConditionKey": ...,
+        "ConditionValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConditionTypeDef(TypedDict):
+    ConditionType: ConditionTypeType,  # (1)
+    ConditionKey: str,
+    ConditionValue: str,
+```
 
-- `ConditionType`: `Literal['STRINGEQUALS']` (see
-  [ConditionTypeType](./literals.md#conditiontypetype))
-- `ConditionKey`: `str`
-- `ConditionValue`: `str`
-
-<a id="conditionstypedef"></a>
-
+1. See [:material-code-brackets: ConditionTypeType](./literals.md#conditiontypetype) 
 ## ConditionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ConditionsTypeDef
+
+def get_value() -> ConditionsTypeDef:
+    return {
+        "StringEquals": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConditionsTypeDef(TypedDict):
+    StringEquals: NotRequired[Sequence[ConditionParameterTypeDef]],  # (1)
+    StringNotEquals: NotRequired[Sequence[ConditionParameterTypeDef]],  # (1)
+    StringLike: NotRequired[Sequence[ConditionParameterTypeDef]],  # (1)
+    StringNotLike: NotRequired[Sequence[ConditionParameterTypeDef]],  # (1)
+```
 
-- `StringEquals`:
-  `Sequence`\[[ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef)\]
-- `StringNotEquals`:
-  `Sequence`\[[ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef)\]
-- `StringLike`:
-  `Sequence`\[[ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef)\]
-- `StringNotLike`:
-  `Sequence`\[[ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef)\]
-
-<a id="controlinputparametertypedef"></a>
-
+1. See [:material-code-braces: ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef) 
+2. See [:material-code-braces: ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef) 
+3. See [:material-code-braces: ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef) 
+4. See [:material-code-braces: ConditionParameterTypeDef](./type_defs.md#conditionparametertypedef) 
 ## ControlInputParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ControlInputParameterTypeDef
+
+def get_value() -> ControlInputParameterTypeDef:
+    return {
+        "ParameterName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterName`: `str`
-- `ParameterValue`: `str`
-
-<a id="controlscopetypedef"></a>
+```python title="Definition"
+class ControlInputParameterTypeDef(TypedDict):
+    ParameterName: NotRequired[str],
+    ParameterValue: NotRequired[str],
+```
 
 ## ControlScopeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ControlScopeTypeDef
+
+def get_value() -> ControlScopeTypeDef:
+    return {
+        "ComplianceResourceIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `ComplianceResourceIds`: `Sequence`\[`str`\]
-- `ComplianceResourceTypes`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="copyactiontypedef"></a>
+```python title="Definition"
+class ControlScopeTypeDef(TypedDict):
+    ComplianceResourceIds: NotRequired[Sequence[str]],
+    ComplianceResourceTypes: NotRequired[Sequence[str]],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CopyActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CopyActionTypeDef
+
+def get_value() -> CopyActionTypeDef:
+    return {
+        "DestinationBackupVaultArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyActionTypeDef(TypedDict):
+    DestinationBackupVaultArn: str,
+    Lifecycle: NotRequired[LifecycleTypeDef],  # (1)
+```
 
-- `DestinationBackupVaultArn`: `str`
-
-Optional fields:
-
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-
-<a id="copyjobtypedef"></a>
-
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
 ## CopyJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CopyJobTypeDef
+
+def get_value() -> CopyJobTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CopyJobTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    CopyJobId: NotRequired[str],
+    SourceBackupVaultArn: NotRequired[str],
+    SourceRecoveryPointArn: NotRequired[str],
+    DestinationBackupVaultArn: NotRequired[str],
+    DestinationRecoveryPointArn: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    CompletionDate: NotRequired[datetime],
+    State: NotRequired[CopyJobStateType],  # (1)
+    StatusMessage: NotRequired[str],
+    BackupSizeInBytes: NotRequired[int],
+    IamRoleArn: NotRequired[str],
+    CreatedBy: NotRequired[RecoveryPointCreatorTypeDef],  # (2)
+    ResourceType: NotRequired[str],
+```
 
-- `AccountId`: `str`
-- `CopyJobId`: `str`
-- `SourceBackupVaultArn`: `str`
-- `SourceRecoveryPointArn`: `str`
-- `DestinationBackupVaultArn`: `str`
-- `DestinationRecoveryPointArn`: `str`
-- `ResourceArn`: `str`
-- `CreationDate`: `datetime`
-- `CompletionDate`: `datetime`
-- `State`: [CopyJobStateType](./literals.md#copyjobstatetype)
-- `StatusMessage`: `str`
-- `BackupSizeInBytes`: `int`
-- `IamRoleArn`: `str`
-- `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
-- `ResourceType`: `str`
-
-<a id="createbackupplaninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
+2. See [:material-code-braces: RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef) 
 ## CreateBackupPlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateBackupPlanInputRequestTypeDef
+
+def get_value() -> CreateBackupPlanInputRequestTypeDef:
+    return {
+        "BackupPlan": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBackupPlanInputRequestTypeDef(TypedDict):
+    BackupPlan: BackupPlanInputTypeDef,  # (1)
+    BackupPlanTags: NotRequired[Mapping[str, str]],
+    CreatorRequestId: NotRequired[str],
+```
 
-- `BackupPlan`: [BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef)
-
-Optional fields:
-
-- `BackupPlanTags`: `Mapping`\[`str`, `str`\]
-- `CreatorRequestId`: `str`
-
-<a id="createbackupplanoutputtypedef"></a>
-
+1. See [:material-code-braces: BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef) 
 ## CreateBackupPlanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateBackupPlanOutputTypeDef
+
+def get_value() -> CreateBackupPlanOutputTypeDef:
+    return {
+        "BackupPlanId": ...,
+        "BackupPlanArn": ...,
+        "CreationDate": ...,
+        "VersionId": ...,
+        "AdvancedBackupSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBackupPlanOutputTypeDef(TypedDict):
+    BackupPlanId: str,
+    BackupPlanArn: str,
+    CreationDate: datetime,
+    VersionId: str,
+    AdvancedBackupSettings: List[AdvancedBackupSettingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupPlanId`: `str`
-- `BackupPlanArn`: `str`
-- `CreationDate`: `datetime`
-- `VersionId`: `str`
-- `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbackupselectioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBackupSelectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateBackupSelectionInputRequestTypeDef
+
+def get_value() -> CreateBackupSelectionInputRequestTypeDef:
+    return {
+        "BackupPlanId": ...,
+        "BackupSelection": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBackupSelectionInputRequestTypeDef(TypedDict):
+    BackupPlanId: str,
+    BackupSelection: BackupSelectionTypeDef,  # (1)
+    CreatorRequestId: NotRequired[str],
+```
 
-- `BackupPlanId`: `str`
-- `BackupSelection`:
-  [BackupSelectionTypeDef](./type_defs.md#backupselectiontypedef)
-
-Optional fields:
-
-- `CreatorRequestId`: `str`
-
-<a id="createbackupselectionoutputtypedef"></a>
-
+1. See [:material-code-braces: BackupSelectionTypeDef](./type_defs.md#backupselectiontypedef) 
 ## CreateBackupSelectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateBackupSelectionOutputTypeDef
+
+def get_value() -> CreateBackupSelectionOutputTypeDef:
+    return {
+        "SelectionId": ...,
+        "BackupPlanId": ...,
+        "CreationDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBackupSelectionOutputTypeDef(TypedDict):
+    SelectionId: str,
+    BackupPlanId: str,
+    CreationDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SelectionId`: `str`
-- `BackupPlanId`: `str`
-- `CreationDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbackupvaultinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBackupVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateBackupVaultInputRequestTypeDef
+
+def get_value() -> CreateBackupVaultInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-Optional fields:
-
-- `BackupVaultTags`: `Mapping`\[`str`, `str`\]
-- `EncryptionKeyArn`: `str`
-- `CreatorRequestId`: `str`
-
-<a id="createbackupvaultoutputtypedef"></a>
+```python title="Definition"
+class CreateBackupVaultInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    BackupVaultTags: NotRequired[Mapping[str, str]],
+    EncryptionKeyArn: NotRequired[str],
+    CreatorRequestId: NotRequired[str],
+```
 
 ## CreateBackupVaultOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateBackupVaultOutputTypeDef
+
+def get_value() -> CreateBackupVaultOutputTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "BackupVaultArn": ...,
+        "CreationDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBackupVaultOutputTypeDef(TypedDict):
+    BackupVaultName: str,
+    BackupVaultArn: str,
+    CreationDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BackupVaultName`: `str`
-- `BackupVaultArn`: `str`
-- `CreationDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createframeworkinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFrameworkInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateFrameworkInputRequestTypeDef
+
+def get_value() -> CreateFrameworkInputRequestTypeDef:
+    return {
+        "FrameworkName": ...,
+        "FrameworkControls": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFrameworkInputRequestTypeDef(TypedDict):
+    FrameworkName: str,
+    FrameworkControls: Sequence[FrameworkControlTypeDef],  # (1)
+    FrameworkDescription: NotRequired[str],
+    IdempotencyToken: NotRequired[str],
+    FrameworkTags: NotRequired[Mapping[str, str]],
+```
 
-- `FrameworkName`: `str`
-- `FrameworkControls`:
-  `Sequence`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
-
-Optional fields:
-
-- `FrameworkDescription`: `str`
-- `IdempotencyToken`: `str`
-- `FrameworkTags`: `Mapping`\[`str`, `str`\]
-
-<a id="createframeworkoutputtypedef"></a>
-
+1. See [:material-code-braces: FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef) 
 ## CreateFrameworkOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateFrameworkOutputTypeDef
+
+def get_value() -> CreateFrameworkOutputTypeDef:
+    return {
+        "FrameworkName": ...,
+        "FrameworkArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFrameworkOutputTypeDef(TypedDict):
+    FrameworkName: str,
+    FrameworkArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FrameworkName`: `str`
-- `FrameworkArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createreportplaninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateReportPlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateReportPlanInputRequestTypeDef
+
+def get_value() -> CreateReportPlanInputRequestTypeDef:
+    return {
+        "ReportPlanName": ...,
+        "ReportDeliveryChannel": ...,
+        "ReportSetting": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReportPlanInputRequestTypeDef(TypedDict):
+    ReportPlanName: str,
+    ReportDeliveryChannel: ReportDeliveryChannelTypeDef,  # (1)
+    ReportSetting: ReportSettingTypeDef,  # (2)
+    ReportPlanDescription: NotRequired[str],
+    ReportPlanTags: NotRequired[Mapping[str, str]],
+    IdempotencyToken: NotRequired[str],
+```
 
-- `ReportPlanName`: `str`
-- `ReportDeliveryChannel`:
-  [ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef)
-- `ReportSetting`: [ReportSettingTypeDef](./type_defs.md#reportsettingtypedef)
-
-Optional fields:
-
-- `ReportPlanDescription`: `str`
-- `ReportPlanTags`: `Mapping`\[`str`, `str`\]
-- `IdempotencyToken`: `str`
-
-<a id="createreportplanoutputtypedef"></a>
-
+1. See [:material-code-braces: ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef) 
+2. See [:material-code-braces: ReportSettingTypeDef](./type_defs.md#reportsettingtypedef) 
 ## CreateReportPlanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import CreateReportPlanOutputTypeDef
+
+def get_value() -> CreateReportPlanOutputTypeDef:
+    return {
+        "ReportPlanName": ...,
+        "ReportPlanArn": ...,
+        "CreationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReportPlanOutputTypeDef(TypedDict):
+    ReportPlanName: str,
+    ReportPlanArn: str,
+    CreationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ReportPlanName`: `str`
-- `ReportPlanArn`: `str`
-- `CreationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebackupplaninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBackupPlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteBackupPlanInputRequestTypeDef
+
+def get_value() -> DeleteBackupPlanInputRequestTypeDef:
+    return {
+        "BackupPlanId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupPlanId`: `str`
-
-<a id="deletebackupplanoutputtypedef"></a>
+```python title="Definition"
+class DeleteBackupPlanInputRequestTypeDef(TypedDict):
+    BackupPlanId: str,
+```
 
 ## DeleteBackupPlanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteBackupPlanOutputTypeDef
+
+def get_value() -> DeleteBackupPlanOutputTypeDef:
+    return {
+        "BackupPlanId": ...,
+        "BackupPlanArn": ...,
+        "DeletionDate": ...,
+        "VersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBackupPlanOutputTypeDef(TypedDict):
+    BackupPlanId: str,
+    BackupPlanArn: str,
+    DeletionDate: datetime,
+    VersionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BackupPlanId`: `str`
-- `BackupPlanArn`: `str`
-- `DeletionDate`: `datetime`
-- `VersionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebackupselectioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBackupSelectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteBackupSelectionInputRequestTypeDef
+
+def get_value() -> DeleteBackupSelectionInputRequestTypeDef:
+    return {
+        "BackupPlanId": ...,
+        "SelectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupPlanId`: `str`
-- `SelectionId`: `str`
-
-<a id="deletebackupvaultaccesspolicyinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteBackupSelectionInputRequestTypeDef(TypedDict):
+    BackupPlanId: str,
+    SelectionId: str,
+```
 
 ## DeleteBackupVaultAccessPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteBackupVaultAccessPolicyInputRequestTypeDef
+
+def get_value() -> DeleteBackupVaultAccessPolicyInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-<a id="deletebackupvaultinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteBackupVaultAccessPolicyInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+```
 
 ## DeleteBackupVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteBackupVaultInputRequestTypeDef
+
+def get_value() -> DeleteBackupVaultInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-<a id="deletebackupvaultlockconfigurationinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteBackupVaultInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+```
 
 ## DeleteBackupVaultLockConfigurationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteBackupVaultLockConfigurationInputRequestTypeDef
+
+def get_value() -> DeleteBackupVaultLockConfigurationInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-<a id="deletebackupvaultnotificationsinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteBackupVaultLockConfigurationInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+```
 
 ## DeleteBackupVaultNotificationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteBackupVaultNotificationsInputRequestTypeDef
+
+def get_value() -> DeleteBackupVaultNotificationsInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-<a id="deleteframeworkinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteBackupVaultNotificationsInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+```
 
 ## DeleteFrameworkInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteFrameworkInputRequestTypeDef
+
+def get_value() -> DeleteFrameworkInputRequestTypeDef:
+    return {
+        "FrameworkName": ...,
+    }
 ```
 
-Required fields:
-
-- `FrameworkName`: `str`
-
-<a id="deleterecoverypointinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteFrameworkInputRequestTypeDef(TypedDict):
+    FrameworkName: str,
+```
 
 ## DeleteRecoveryPointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteRecoveryPointInputRequestTypeDef
+
+def get_value() -> DeleteRecoveryPointInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "RecoveryPointArn": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-- `RecoveryPointArn`: `str`
-
-<a id="deletereportplaninputrequesttypedef"></a>
+```python title="Definition"
+class DeleteRecoveryPointInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+```
 
 ## DeleteReportPlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DeleteReportPlanInputRequestTypeDef
+
+def get_value() -> DeleteReportPlanInputRequestTypeDef:
+    return {
+        "ReportPlanName": ...,
+    }
 ```
 
-Required fields:
-
-- `ReportPlanName`: `str`
-
-<a id="describebackupjobinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteReportPlanInputRequestTypeDef(TypedDict):
+    ReportPlanName: str,
+```
 
 ## DescribeBackupJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeBackupJobInputRequestTypeDef
+
+def get_value() -> DescribeBackupJobInputRequestTypeDef:
+    return {
+        "BackupJobId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupJobId`: `str`
-
-<a id="describebackupjoboutputtypedef"></a>
+```python title="Definition"
+class DescribeBackupJobInputRequestTypeDef(TypedDict):
+    BackupJobId: str,
+```
 
 ## DescribeBackupJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeBackupJobOutputTypeDef
+
+def get_value() -> DescribeBackupJobOutputTypeDef:
+    return {
+        "AccountId": ...,
+        "BackupJobId": ...,
+        "BackupVaultName": ...,
+        "BackupVaultArn": ...,
+        "RecoveryPointArn": ...,
+        "ResourceArn": ...,
+        "CreationDate": ...,
+        "CompletionDate": ...,
+        "State": ...,
+        "StatusMessage": ...,
+        "PercentDone": ...,
+        "BackupSizeInBytes": ...,
+        "IamRoleArn": ...,
+        "CreatedBy": ...,
+        "ResourceType": ...,
+        "BytesTransferred": ...,
+        "ExpectedCompletionDate": ...,
+        "StartBy": ...,
+        "BackupOptions": ...,
+        "BackupType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBackupJobOutputTypeDef(TypedDict):
+    AccountId: str,
+    BackupJobId: str,
+    BackupVaultName: str,
+    BackupVaultArn: str,
+    RecoveryPointArn: str,
+    ResourceArn: str,
+    CreationDate: datetime,
+    CompletionDate: datetime,
+    State: BackupJobStateType,  # (1)
+    StatusMessage: str,
+    PercentDone: str,
+    BackupSizeInBytes: int,
+    IamRoleArn: str,
+    CreatedBy: RecoveryPointCreatorTypeDef,  # (2)
+    ResourceType: str,
+    BytesTransferred: int,
+    ExpectedCompletionDate: datetime,
+    StartBy: datetime,
+    BackupOptions: Dict[str, str],
+    BackupType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `AccountId`: `str`
-- `BackupJobId`: `str`
-- `BackupVaultName`: `str`
-- `BackupVaultArn`: `str`
-- `RecoveryPointArn`: `str`
-- `ResourceArn`: `str`
-- `CreationDate`: `datetime`
-- `CompletionDate`: `datetime`
-- `State`: [BackupJobStateType](./literals.md#backupjobstatetype)
-- `StatusMessage`: `str`
-- `PercentDone`: `str`
-- `BackupSizeInBytes`: `int`
-- `IamRoleArn`: `str`
-- `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
-- `ResourceType`: `str`
-- `BytesTransferred`: `int`
-- `ExpectedCompletionDate`: `datetime`
-- `StartBy`: `datetime`
-- `BackupOptions`: `Dict`\[`str`, `str`\]
-- `BackupType`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describebackupvaultinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
+2. See [:material-code-braces: RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBackupVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeBackupVaultInputRequestTypeDef
+
+def get_value() -> DescribeBackupVaultInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-<a id="describebackupvaultoutputtypedef"></a>
+```python title="Definition"
+class DescribeBackupVaultInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+```
 
 ## DescribeBackupVaultOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeBackupVaultOutputTypeDef
+
+def get_value() -> DescribeBackupVaultOutputTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "BackupVaultArn": ...,
+        "EncryptionKeyArn": ...,
+        "CreationDate": ...,
+        "CreatorRequestId": ...,
+        "NumberOfRecoveryPoints": ...,
+        "Locked": ...,
+        "MinRetentionDays": ...,
+        "MaxRetentionDays": ...,
+        "LockDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBackupVaultOutputTypeDef(TypedDict):
+    BackupVaultName: str,
+    BackupVaultArn: str,
+    EncryptionKeyArn: str,
+    CreationDate: datetime,
+    CreatorRequestId: str,
+    NumberOfRecoveryPoints: int,
+    Locked: bool,
+    MinRetentionDays: int,
+    MaxRetentionDays: int,
+    LockDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BackupVaultName`: `str`
-- `BackupVaultArn`: `str`
-- `EncryptionKeyArn`: `str`
-- `CreationDate`: `datetime`
-- `CreatorRequestId`: `str`
-- `NumberOfRecoveryPoints`: `int`
-- `Locked`: `bool`
-- `MinRetentionDays`: `int`
-- `MaxRetentionDays`: `int`
-- `LockDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecopyjobinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCopyJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeCopyJobInputRequestTypeDef
+
+def get_value() -> DescribeCopyJobInputRequestTypeDef:
+    return {
+        "CopyJobId": ...,
+    }
 ```
 
-Required fields:
-
-- `CopyJobId`: `str`
-
-<a id="describecopyjoboutputtypedef"></a>
+```python title="Definition"
+class DescribeCopyJobInputRequestTypeDef(TypedDict):
+    CopyJobId: str,
+```
 
 ## DescribeCopyJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeCopyJobOutputTypeDef
+
+def get_value() -> DescribeCopyJobOutputTypeDef:
+    return {
+        "CopyJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCopyJobOutputTypeDef(TypedDict):
+    CopyJob: CopyJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CopyJob`: [CopyJobTypeDef](./type_defs.md#copyjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeframeworkinputrequesttypedef"></a>
-
+1. See [:material-code-braces: CopyJobTypeDef](./type_defs.md#copyjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFrameworkInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeFrameworkInputRequestTypeDef
+
+def get_value() -> DescribeFrameworkInputRequestTypeDef:
+    return {
+        "FrameworkName": ...,
+    }
 ```
 
-Required fields:
-
-- `FrameworkName`: `str`
-
-<a id="describeframeworkoutputtypedef"></a>
+```python title="Definition"
+class DescribeFrameworkInputRequestTypeDef(TypedDict):
+    FrameworkName: str,
+```
 
 ## DescribeFrameworkOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeFrameworkOutputTypeDef
+
+def get_value() -> DescribeFrameworkOutputTypeDef:
+    return {
+        "FrameworkName": ...,
+        "FrameworkArn": ...,
+        "FrameworkDescription": ...,
+        "FrameworkControls": ...,
+        "CreationTime": ...,
+        "DeploymentStatus": ...,
+        "FrameworkStatus": ...,
+        "IdempotencyToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFrameworkOutputTypeDef(TypedDict):
+    FrameworkName: str,
+    FrameworkArn: str,
+    FrameworkDescription: str,
+    FrameworkControls: List[FrameworkControlTypeDef],  # (1)
+    CreationTime: datetime,
+    DeploymentStatus: str,
+    FrameworkStatus: str,
+    IdempotencyToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FrameworkName`: `str`
-- `FrameworkArn`: `str`
-- `FrameworkDescription`: `str`
-- `FrameworkControls`:
-  `List`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
-- `CreationTime`: `datetime`
-- `DeploymentStatus`: `str`
-- `FrameworkStatus`: `str`
-- `IdempotencyToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeglobalsettingsoutputtypedef"></a>
-
+1. See [:material-code-braces: FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeGlobalSettingsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeGlobalSettingsOutputTypeDef
+
+def get_value() -> DescribeGlobalSettingsOutputTypeDef:
+    return {
+        "GlobalSettings": ...,
+        "LastUpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGlobalSettingsOutputTypeDef(TypedDict):
+    GlobalSettings: Dict[str, str],
+    LastUpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GlobalSettings`: `Dict`\[`str`, `str`\]
-- `LastUpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeprotectedresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProtectedResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeProtectedResourceInputRequestTypeDef
+
+def get_value() -> DescribeProtectedResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="describeprotectedresourceoutputtypedef"></a>
+```python title="Definition"
+class DescribeProtectedResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## DescribeProtectedResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeProtectedResourceOutputTypeDef
+
+def get_value() -> DescribeProtectedResourceOutputTypeDef:
+    return {
+        "ResourceArn": ...,
+        "ResourceType": ...,
+        "LastBackupTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProtectedResourceOutputTypeDef(TypedDict):
+    ResourceArn: str,
+    ResourceType: str,
+    LastBackupTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ResourceArn`: `str`
-- `ResourceType`: `str`
-- `LastBackupTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerecoverypointinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRecoveryPointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeRecoveryPointInputRequestTypeDef
+
+def get_value() -> DescribeRecoveryPointInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "RecoveryPointArn": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-- `RecoveryPointArn`: `str`
-
-<a id="describerecoverypointoutputtypedef"></a>
+```python title="Definition"
+class DescribeRecoveryPointInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+```
 
 ## DescribeRecoveryPointOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeRecoveryPointOutputTypeDef
+
+def get_value() -> DescribeRecoveryPointOutputTypeDef:
+    return {
+        "RecoveryPointArn": ...,
+        "BackupVaultName": ...,
+        "BackupVaultArn": ...,
+        "SourceBackupVaultArn": ...,
+        "ResourceArn": ...,
+        "ResourceType": ...,
+        "CreatedBy": ...,
+        "IamRoleArn": ...,
+        "Status": ...,
+        "StatusMessage": ...,
+        "CreationDate": ...,
+        "CompletionDate": ...,
+        "BackupSizeInBytes": ...,
+        "CalculatedLifecycle": ...,
+        "Lifecycle": ...,
+        "EncryptionKeyArn": ...,
+        "IsEncrypted": ...,
+        "StorageClass": ...,
+        "LastRestoreTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRecoveryPointOutputTypeDef(TypedDict):
+    RecoveryPointArn: str,
+    BackupVaultName: str,
+    BackupVaultArn: str,
+    SourceBackupVaultArn: str,
+    ResourceArn: str,
+    ResourceType: str,
+    CreatedBy: RecoveryPointCreatorTypeDef,  # (1)
+    IamRoleArn: str,
+    Status: RecoveryPointStatusType,  # (2)
+    StatusMessage: str,
+    CreationDate: datetime,
+    CompletionDate: datetime,
+    BackupSizeInBytes: int,
+    CalculatedLifecycle: CalculatedLifecycleTypeDef,  # (3)
+    Lifecycle: LifecycleTypeDef,  # (4)
+    EncryptionKeyArn: str,
+    IsEncrypted: bool,
+    StorageClass: StorageClassType,  # (5)
+    LastRestoreTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `RecoveryPointArn`: `str`
-- `BackupVaultName`: `str`
-- `BackupVaultArn`: `str`
-- `SourceBackupVaultArn`: `str`
-- `ResourceArn`: `str`
-- `ResourceType`: `str`
-- `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
-- `IamRoleArn`: `str`
-- `Status`: [RecoveryPointStatusType](./literals.md#recoverypointstatustype)
-- `StatusMessage`: `str`
-- `CreationDate`: `datetime`
-- `CompletionDate`: `datetime`
-- `BackupSizeInBytes`: `int`
-- `CalculatedLifecycle`:
-  [CalculatedLifecycleTypeDef](./type_defs.md#calculatedlifecycletypedef)
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `EncryptionKeyArn`: `str`
-- `IsEncrypted`: `bool`
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `LastRestoreTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeregionsettingsoutputtypedef"></a>
-
+1. See [:material-code-braces: RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef) 
+2. See [:material-code-brackets: RecoveryPointStatusType](./literals.md#recoverypointstatustype) 
+3. See [:material-code-braces: CalculatedLifecycleTypeDef](./type_defs.md#calculatedlifecycletypedef) 
+4. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
+5. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRegionSettingsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeRegionSettingsOutputTypeDef
+
+def get_value() -> DescribeRegionSettingsOutputTypeDef:
+    return {
+        "ResourceTypeOptInPreference": ...,
+        "ResourceTypeManagementPreference": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRegionSettingsOutputTypeDef(TypedDict):
+    ResourceTypeOptInPreference: Dict[str, bool],
+    ResourceTypeManagementPreference: Dict[str, bool],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ResourceTypeOptInPreference`: `Dict`\[`str`, `bool`\]
-- `ResourceTypeManagementPreference`: `Dict`\[`str`, `bool`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describereportjobinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeReportJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeReportJobInputRequestTypeDef
+
+def get_value() -> DescribeReportJobInputRequestTypeDef:
+    return {
+        "ReportJobId": ...,
+    }
 ```
 
-Required fields:
-
-- `ReportJobId`: `str`
-
-<a id="describereportjoboutputtypedef"></a>
+```python title="Definition"
+class DescribeReportJobInputRequestTypeDef(TypedDict):
+    ReportJobId: str,
+```
 
 ## DescribeReportJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeReportJobOutputTypeDef
+
+def get_value() -> DescribeReportJobOutputTypeDef:
+    return {
+        "ReportJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeReportJobOutputTypeDef(TypedDict):
+    ReportJob: ReportJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReportJob`: [ReportJobTypeDef](./type_defs.md#reportjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describereportplaninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReportJobTypeDef](./type_defs.md#reportjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeReportPlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeReportPlanInputRequestTypeDef
+
+def get_value() -> DescribeReportPlanInputRequestTypeDef:
+    return {
+        "ReportPlanName": ...,
+    }
 ```
 
-Required fields:
-
-- `ReportPlanName`: `str`
-
-<a id="describereportplanoutputtypedef"></a>
+```python title="Definition"
+class DescribeReportPlanInputRequestTypeDef(TypedDict):
+    ReportPlanName: str,
+```
 
 ## DescribeReportPlanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeReportPlanOutputTypeDef
+
+def get_value() -> DescribeReportPlanOutputTypeDef:
+    return {
+        "ReportPlan": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeReportPlanOutputTypeDef(TypedDict):
+    ReportPlan: ReportPlanTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReportPlan`: [ReportPlanTypeDef](./type_defs.md#reportplantypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerestorejobinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReportPlanTypeDef](./type_defs.md#reportplantypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRestoreJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeRestoreJobInputRequestTypeDef
+
+def get_value() -> DescribeRestoreJobInputRequestTypeDef:
+    return {
+        "RestoreJobId": ...,
+    }
 ```
 
-Required fields:
-
-- `RestoreJobId`: `str`
-
-<a id="describerestorejoboutputtypedef"></a>
+```python title="Definition"
+class DescribeRestoreJobInputRequestTypeDef(TypedDict):
+    RestoreJobId: str,
+```
 
 ## DescribeRestoreJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DescribeRestoreJobOutputTypeDef
+
+def get_value() -> DescribeRestoreJobOutputTypeDef:
+    return {
+        "AccountId": ...,
+        "RestoreJobId": ...,
+        "RecoveryPointArn": ...,
+        "CreationDate": ...,
+        "CompletionDate": ...,
+        "Status": ...,
+        "StatusMessage": ...,
+        "PercentDone": ...,
+        "BackupSizeInBytes": ...,
+        "IamRoleArn": ...,
+        "ExpectedCompletionTimeMinutes": ...,
+        "CreatedResourceArn": ...,
+        "ResourceType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRestoreJobOutputTypeDef(TypedDict):
+    AccountId: str,
+    RestoreJobId: str,
+    RecoveryPointArn: str,
+    CreationDate: datetime,
+    CompletionDate: datetime,
+    Status: RestoreJobStatusType,  # (1)
+    StatusMessage: str,
+    PercentDone: str,
+    BackupSizeInBytes: int,
+    IamRoleArn: str,
+    ExpectedCompletionTimeMinutes: int,
+    CreatedResourceArn: str,
+    ResourceType: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountId`: `str`
-- `RestoreJobId`: `str`
-- `RecoveryPointArn`: `str`
-- `CreationDate`: `datetime`
-- `CompletionDate`: `datetime`
-- `Status`: [RestoreJobStatusType](./literals.md#restorejobstatustype)
-- `StatusMessage`: `str`
-- `PercentDone`: `str`
-- `BackupSizeInBytes`: `int`
-- `IamRoleArn`: `str`
-- `ExpectedCompletionTimeMinutes`: `int`
-- `CreatedResourceArn`: `str`
-- `ResourceType`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociaterecoverypointinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: RestoreJobStatusType](./literals.md#restorejobstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateRecoveryPointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import DisassociateRecoveryPointInputRequestTypeDef
+
+def get_value() -> DisassociateRecoveryPointInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "RecoveryPointArn": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-- `RecoveryPointArn`: `str`
-
-<a id="exportbackupplantemplateinputrequesttypedef"></a>
+```python title="Definition"
+class DisassociateRecoveryPointInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+```
 
 ## ExportBackupPlanTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ExportBackupPlanTemplateInputRequestTypeDef
+
+def get_value() -> ExportBackupPlanTemplateInputRequestTypeDef:
+    return {
+        "BackupPlanId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupPlanId`: `str`
-
-<a id="exportbackupplantemplateoutputtypedef"></a>
+```python title="Definition"
+class ExportBackupPlanTemplateInputRequestTypeDef(TypedDict):
+    BackupPlanId: str,
+```
 
 ## ExportBackupPlanTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ExportBackupPlanTemplateOutputTypeDef
+
+def get_value() -> ExportBackupPlanTemplateOutputTypeDef:
+    return {
+        "BackupPlanTemplateJson": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportBackupPlanTemplateOutputTypeDef(TypedDict):
+    BackupPlanTemplateJson: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BackupPlanTemplateJson`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="frameworkcontroltypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FrameworkControlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import FrameworkControlTypeDef
+
+def get_value() -> FrameworkControlTypeDef:
+    return {
+        "ControlName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FrameworkControlTypeDef(TypedDict):
+    ControlName: str,
+    ControlInputParameters: NotRequired[Sequence[ControlInputParameterTypeDef]],  # (1)
+    ControlScope: NotRequired[ControlScopeTypeDef],  # (2)
+```
 
-- `ControlName`: `str`
-
-Optional fields:
-
-- `ControlInputParameters`:
-  `Sequence`\[[ControlInputParameterTypeDef](./type_defs.md#controlinputparametertypedef)\]
-- `ControlScope`: [ControlScopeTypeDef](./type_defs.md#controlscopetypedef)
-
-<a id="frameworktypedef"></a>
-
+1. See [:material-code-braces: ControlInputParameterTypeDef](./type_defs.md#controlinputparametertypedef) 
+2. See [:material-code-braces: ControlScopeTypeDef](./type_defs.md#controlscopetypedef) 
 ## FrameworkTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import FrameworkTypeDef
+
+def get_value() -> FrameworkTypeDef:
+    return {
+        "FrameworkName": ...,
+    }
 ```
 
-Optional fields:
-
-- `FrameworkName`: `str`
-- `FrameworkArn`: `str`
-- `FrameworkDescription`: `str`
-- `NumberOfControls`: `int`
-- `CreationTime`: `datetime`
-- `DeploymentStatus`: `str`
-
-<a id="getbackupplanfromjsoninputrequesttypedef"></a>
+```python title="Definition"
+class FrameworkTypeDef(TypedDict):
+    FrameworkName: NotRequired[str],
+    FrameworkArn: NotRequired[str],
+    FrameworkDescription: NotRequired[str],
+    NumberOfControls: NotRequired[int],
+    CreationTime: NotRequired[datetime],
+    DeploymentStatus: NotRequired[str],
+```
 
 ## GetBackupPlanFromJSONInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupPlanFromJSONInputRequestTypeDef
+
+def get_value() -> GetBackupPlanFromJSONInputRequestTypeDef:
+    return {
+        "BackupPlanTemplateJson": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupPlanTemplateJson`: `str`
-
-<a id="getbackupplanfromjsonoutputtypedef"></a>
+```python title="Definition"
+class GetBackupPlanFromJSONInputRequestTypeDef(TypedDict):
+    BackupPlanTemplateJson: str,
+```
 
 ## GetBackupPlanFromJSONOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupPlanFromJSONOutputTypeDef
+
+def get_value() -> GetBackupPlanFromJSONOutputTypeDef:
+    return {
+        "BackupPlan": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBackupPlanFromJSONOutputTypeDef(TypedDict):
+    BackupPlan: BackupPlanTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupPlan`: [BackupPlanTypeDef](./type_defs.md#backupplantypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbackupplanfromtemplateinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupPlanTypeDef](./type_defs.md#backupplantypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBackupPlanFromTemplateInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupPlanFromTemplateInputRequestTypeDef
+
+def get_value() -> GetBackupPlanFromTemplateInputRequestTypeDef:
+    return {
+        "BackupPlanTemplateId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupPlanTemplateId`: `str`
-
-<a id="getbackupplanfromtemplateoutputtypedef"></a>
+```python title="Definition"
+class GetBackupPlanFromTemplateInputRequestTypeDef(TypedDict):
+    BackupPlanTemplateId: str,
+```
 
 ## GetBackupPlanFromTemplateOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupPlanFromTemplateOutputTypeDef
+
+def get_value() -> GetBackupPlanFromTemplateOutputTypeDef:
+    return {
+        "BackupPlanDocument": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBackupPlanFromTemplateOutputTypeDef(TypedDict):
+    BackupPlanDocument: BackupPlanTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupPlanDocument`: [BackupPlanTypeDef](./type_defs.md#backupplantypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbackupplaninputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupPlanTypeDef](./type_defs.md#backupplantypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBackupPlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupPlanInputRequestTypeDef
+
+def get_value() -> GetBackupPlanInputRequestTypeDef:
+    return {
+        "BackupPlanId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupPlanId`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-
-<a id="getbackupplanoutputtypedef"></a>
+```python title="Definition"
+class GetBackupPlanInputRequestTypeDef(TypedDict):
+    BackupPlanId: str,
+    VersionId: NotRequired[str],
+```
 
 ## GetBackupPlanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupPlanOutputTypeDef
+
+def get_value() -> GetBackupPlanOutputTypeDef:
+    return {
+        "BackupPlan": ...,
+        "BackupPlanId": ...,
+        "BackupPlanArn": ...,
+        "VersionId": ...,
+        "CreatorRequestId": ...,
+        "CreationDate": ...,
+        "DeletionDate": ...,
+        "LastExecutionDate": ...,
+        "AdvancedBackupSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBackupPlanOutputTypeDef(TypedDict):
+    BackupPlan: BackupPlanTypeDef,  # (1)
+    BackupPlanId: str,
+    BackupPlanArn: str,
+    VersionId: str,
+    CreatorRequestId: str,
+    CreationDate: datetime,
+    DeletionDate: datetime,
+    LastExecutionDate: datetime,
+    AdvancedBackupSettings: List[AdvancedBackupSettingTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `BackupPlan`: [BackupPlanTypeDef](./type_defs.md#backupplantypedef)
-- `BackupPlanId`: `str`
-- `BackupPlanArn`: `str`
-- `VersionId`: `str`
-- `CreatorRequestId`: `str`
-- `CreationDate`: `datetime`
-- `DeletionDate`: `datetime`
-- `LastExecutionDate`: `datetime`
-- `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbackupselectioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupPlanTypeDef](./type_defs.md#backupplantypedef) 
+2. See [:material-code-braces: AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBackupSelectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupSelectionInputRequestTypeDef
+
+def get_value() -> GetBackupSelectionInputRequestTypeDef:
+    return {
+        "BackupPlanId": ...,
+        "SelectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupPlanId`: `str`
-- `SelectionId`: `str`
-
-<a id="getbackupselectionoutputtypedef"></a>
+```python title="Definition"
+class GetBackupSelectionInputRequestTypeDef(TypedDict):
+    BackupPlanId: str,
+    SelectionId: str,
+```
 
 ## GetBackupSelectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupSelectionOutputTypeDef
+
+def get_value() -> GetBackupSelectionOutputTypeDef:
+    return {
+        "BackupSelection": ...,
+        "SelectionId": ...,
+        "BackupPlanId": ...,
+        "CreationDate": ...,
+        "CreatorRequestId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBackupSelectionOutputTypeDef(TypedDict):
+    BackupSelection: BackupSelectionTypeDef,  # (1)
+    SelectionId: str,
+    BackupPlanId: str,
+    CreationDate: datetime,
+    CreatorRequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupSelection`:
-  [BackupSelectionTypeDef](./type_defs.md#backupselectiontypedef)
-- `SelectionId`: `str`
-- `BackupPlanId`: `str`
-- `CreationDate`: `datetime`
-- `CreatorRequestId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbackupvaultaccesspolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupSelectionTypeDef](./type_defs.md#backupselectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBackupVaultAccessPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupVaultAccessPolicyInputRequestTypeDef
+
+def get_value() -> GetBackupVaultAccessPolicyInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-<a id="getbackupvaultaccesspolicyoutputtypedef"></a>
+```python title="Definition"
+class GetBackupVaultAccessPolicyInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+```
 
 ## GetBackupVaultAccessPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupVaultAccessPolicyOutputTypeDef
+
+def get_value() -> GetBackupVaultAccessPolicyOutputTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "BackupVaultArn": ...,
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBackupVaultAccessPolicyOutputTypeDef(TypedDict):
+    BackupVaultName: str,
+    BackupVaultArn: str,
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BackupVaultName`: `str`
-- `BackupVaultArn`: `str`
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbackupvaultnotificationsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBackupVaultNotificationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupVaultNotificationsInputRequestTypeDef
+
+def get_value() -> GetBackupVaultNotificationsInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-<a id="getbackupvaultnotificationsoutputtypedef"></a>
+```python title="Definition"
+class GetBackupVaultNotificationsInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+```
 
 ## GetBackupVaultNotificationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetBackupVaultNotificationsOutputTypeDef
+
+def get_value() -> GetBackupVaultNotificationsOutputTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "BackupVaultArn": ...,
+        "SNSTopicArn": ...,
+        "BackupVaultEvents": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBackupVaultNotificationsOutputTypeDef(TypedDict):
+    BackupVaultName: str,
+    BackupVaultArn: str,
+    SNSTopicArn: str,
+    BackupVaultEvents: List[BackupVaultEventType],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupVaultName`: `str`
-- `BackupVaultArn`: `str`
-- `SNSTopicArn`: `str`
-- `BackupVaultEvents`:
-  `List`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrecoverypointrestoremetadatainputrequesttypedef"></a>
-
+1. See [:material-code-brackets: BackupVaultEventType](./literals.md#backupvaulteventtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRecoveryPointRestoreMetadataInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetRecoveryPointRestoreMetadataInputRequestTypeDef
+
+def get_value() -> GetRecoveryPointRestoreMetadataInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "RecoveryPointArn": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-- `RecoveryPointArn`: `str`
-
-<a id="getrecoverypointrestoremetadataoutputtypedef"></a>
+```python title="Definition"
+class GetRecoveryPointRestoreMetadataInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+```
 
 ## GetRecoveryPointRestoreMetadataOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetRecoveryPointRestoreMetadataOutputTypeDef
+
+def get_value() -> GetRecoveryPointRestoreMetadataOutputTypeDef:
+    return {
+        "BackupVaultArn": ...,
+        "RecoveryPointArn": ...,
+        "RestoreMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRecoveryPointRestoreMetadataOutputTypeDef(TypedDict):
+    BackupVaultArn: str,
+    RecoveryPointArn: str,
+    RestoreMetadata: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BackupVaultArn`: `str`
-- `RecoveryPointArn`: `str`
-- `RestoreMetadata`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsupportedresourcetypesoutputtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSupportedResourceTypesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import GetSupportedResourceTypesOutputTypeDef
+
+def get_value() -> GetSupportedResourceTypesOutputTypeDef:
+    return {
+        "ResourceTypes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSupportedResourceTypesOutputTypeDef(TypedDict):
+    ResourceTypes: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ResourceTypes`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lifecycletypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LifecycleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import LifecycleTypeDef
+
+def get_value() -> LifecycleTypeDef:
+    return {
+        "MoveToColdStorageAfterDays": ...,
+    }
 ```
 
-Optional fields:
-
-- `MoveToColdStorageAfterDays`: `int`
-- `DeleteAfterDays`: `int`
-
-<a id="listbackupjobsinputrequesttypedef"></a>
+```python title="Definition"
+class LifecycleTypeDef(TypedDict):
+    MoveToColdStorageAfterDays: NotRequired[int],
+    DeleteAfterDays: NotRequired[int],
+```
 
 ## ListBackupJobsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupJobsInputRequestTypeDef
+
+def get_value() -> ListBackupJobsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListBackupJobsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ByResourceArn: NotRequired[str],
+    ByState: NotRequired[BackupJobStateType],  # (1)
+    ByBackupVaultName: NotRequired[str],
+    ByCreatedBefore: NotRequired[Union[datetime, str]],
+    ByCreatedAfter: NotRequired[Union[datetime, str]],
+    ByResourceType: NotRequired[str],
+    ByAccountId: NotRequired[str],
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ByResourceArn`: `str`
-- `ByState`: [BackupJobStateType](./literals.md#backupjobstatetype)
-- `ByBackupVaultName`: `str`
-- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
-- `ByResourceType`: `str`
-- `ByAccountId`: `str`
-
-<a id="listbackupjobsoutputtypedef"></a>
-
+1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
 ## ListBackupJobsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupJobsOutputTypeDef
+
+def get_value() -> ListBackupJobsOutputTypeDef:
+    return {
+        "BackupJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBackupJobsOutputTypeDef(TypedDict):
+    BackupJobs: List[BackupJobTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupJobs`: `List`\[[BackupJobTypeDef](./type_defs.md#backupjobtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbackupplantemplatesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupJobTypeDef](./type_defs.md#backupjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBackupPlanTemplatesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupPlanTemplatesInputRequestTypeDef
+
+def get_value() -> ListBackupPlanTemplatesInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listbackupplantemplatesoutputtypedef"></a>
+```python title="Definition"
+class ListBackupPlanTemplatesInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListBackupPlanTemplatesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupPlanTemplatesOutputTypeDef
+
+def get_value() -> ListBackupPlanTemplatesOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "BackupPlanTemplatesList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBackupPlanTemplatesOutputTypeDef(TypedDict):
+    NextToken: str,
+    BackupPlanTemplatesList: List[BackupPlanTemplatesListMemberTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `BackupPlanTemplatesList`:
-  `List`\[[BackupPlanTemplatesListMemberTypeDef](./type_defs.md#backupplantemplateslistmembertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbackupplanversionsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupPlanTemplatesListMemberTypeDef](./type_defs.md#backupplantemplateslistmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBackupPlanVersionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupPlanVersionsInputRequestTypeDef
+
+def get_value() -> ListBackupPlanVersionsInputRequestTypeDef:
+    return {
+        "BackupPlanId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupPlanId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listbackupplanversionsoutputtypedef"></a>
+```python title="Definition"
+class ListBackupPlanVersionsInputRequestTypeDef(TypedDict):
+    BackupPlanId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListBackupPlanVersionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupPlanVersionsOutputTypeDef
+
+def get_value() -> ListBackupPlanVersionsOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "BackupPlanVersionsList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBackupPlanVersionsOutputTypeDef(TypedDict):
+    NextToken: str,
+    BackupPlanVersionsList: List[BackupPlansListMemberTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `BackupPlanVersionsList`:
-  `List`\[[BackupPlansListMemberTypeDef](./type_defs.md#backupplanslistmembertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbackupplansinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupPlansListMemberTypeDef](./type_defs.md#backupplanslistmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBackupPlansInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupPlansInputRequestTypeDef
+
+def get_value() -> ListBackupPlansInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `IncludeDeleted`: `bool`
-
-<a id="listbackupplansoutputtypedef"></a>
+```python title="Definition"
+class ListBackupPlansInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    IncludeDeleted: NotRequired[bool],
+```
 
 ## ListBackupPlansOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupPlansOutputTypeDef
+
+def get_value() -> ListBackupPlansOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "BackupPlansList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBackupPlansOutputTypeDef(TypedDict):
+    NextToken: str,
+    BackupPlansList: List[BackupPlansListMemberTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `BackupPlansList`:
-  `List`\[[BackupPlansListMemberTypeDef](./type_defs.md#backupplanslistmembertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbackupselectionsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupPlansListMemberTypeDef](./type_defs.md#backupplanslistmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBackupSelectionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupSelectionsInputRequestTypeDef
+
+def get_value() -> ListBackupSelectionsInputRequestTypeDef:
+    return {
+        "BackupPlanId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupPlanId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listbackupselectionsoutputtypedef"></a>
+```python title="Definition"
+class ListBackupSelectionsInputRequestTypeDef(TypedDict):
+    BackupPlanId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListBackupSelectionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupSelectionsOutputTypeDef
+
+def get_value() -> ListBackupSelectionsOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "BackupSelectionsList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBackupSelectionsOutputTypeDef(TypedDict):
+    NextToken: str,
+    BackupSelectionsList: List[BackupSelectionsListMemberTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `BackupSelectionsList`:
-  `List`\[[BackupSelectionsListMemberTypeDef](./type_defs.md#backupselectionslistmembertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbackupvaultsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupSelectionsListMemberTypeDef](./type_defs.md#backupselectionslistmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBackupVaultsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupVaultsInputRequestTypeDef
+
+def get_value() -> ListBackupVaultsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listbackupvaultsoutputtypedef"></a>
+```python title="Definition"
+class ListBackupVaultsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListBackupVaultsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListBackupVaultsOutputTypeDef
+
+def get_value() -> ListBackupVaultsOutputTypeDef:
+    return {
+        "BackupVaultList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBackupVaultsOutputTypeDef(TypedDict):
+    BackupVaultList: List[BackupVaultListMemberTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupVaultList`:
-  `List`\[[BackupVaultListMemberTypeDef](./type_defs.md#backupvaultlistmembertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcopyjobsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupVaultListMemberTypeDef](./type_defs.md#backupvaultlistmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListCopyJobsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListCopyJobsInputRequestTypeDef
+
+def get_value() -> ListCopyJobsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCopyJobsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ByResourceArn: NotRequired[str],
+    ByState: NotRequired[CopyJobStateType],  # (1)
+    ByCreatedBefore: NotRequired[Union[datetime, str]],
+    ByCreatedAfter: NotRequired[Union[datetime, str]],
+    ByResourceType: NotRequired[str],
+    ByDestinationVaultArn: NotRequired[str],
+    ByAccountId: NotRequired[str],
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ByResourceArn`: `str`
-- `ByState`: [CopyJobStateType](./literals.md#copyjobstatetype)
-- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
-- `ByResourceType`: `str`
-- `ByDestinationVaultArn`: `str`
-- `ByAccountId`: `str`
-
-<a id="listcopyjobsoutputtypedef"></a>
-
+1. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
 ## ListCopyJobsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListCopyJobsOutputTypeDef
+
+def get_value() -> ListCopyJobsOutputTypeDef:
+    return {
+        "CopyJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCopyJobsOutputTypeDef(TypedDict):
+    CopyJobs: List[CopyJobTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CopyJobs`: `List`\[[CopyJobTypeDef](./type_defs.md#copyjobtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listframeworksinputrequesttypedef"></a>
-
+1. See [:material-code-braces: CopyJobTypeDef](./type_defs.md#copyjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFrameworksInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListFrameworksInputRequestTypeDef
+
+def get_value() -> ListFrameworksInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listframeworksoutputtypedef"></a>
+```python title="Definition"
+class ListFrameworksInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListFrameworksOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListFrameworksOutputTypeDef
+
+def get_value() -> ListFrameworksOutputTypeDef:
+    return {
+        "Frameworks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFrameworksOutputTypeDef(TypedDict):
+    Frameworks: List[FrameworkTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Frameworks`: `List`\[[FrameworkTypeDef](./type_defs.md#frameworktypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listprotectedresourcesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: FrameworkTypeDef](./type_defs.md#frameworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProtectedResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListProtectedResourcesInputRequestTypeDef
+
+def get_value() -> ListProtectedResourcesInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listprotectedresourcesoutputtypedef"></a>
+```python title="Definition"
+class ListProtectedResourcesInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListProtectedResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListProtectedResourcesOutputTypeDef
+
+def get_value() -> ListProtectedResourcesOutputTypeDef:
+    return {
+        "Results": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProtectedResourcesOutputTypeDef(TypedDict):
+    Results: List[ProtectedResourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Results`:
-  `List`\[[ProtectedResourceTypeDef](./type_defs.md#protectedresourcetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listrecoverypointsbybackupvaultinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProtectedResourceTypeDef](./type_defs.md#protectedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRecoveryPointsByBackupVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListRecoveryPointsByBackupVaultInputRequestTypeDef
+
+def get_value() -> ListRecoveryPointsByBackupVaultInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ByResourceArn`: `str`
-- `ByResourceType`: `str`
-- `ByBackupPlanId`: `str`
-- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
-
-<a id="listrecoverypointsbybackupvaultoutputtypedef"></a>
+```python title="Definition"
+class ListRecoveryPointsByBackupVaultInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ByResourceArn: NotRequired[str],
+    ByResourceType: NotRequired[str],
+    ByBackupPlanId: NotRequired[str],
+    ByCreatedBefore: NotRequired[Union[datetime, str]],
+    ByCreatedAfter: NotRequired[Union[datetime, str]],
+```
 
 ## ListRecoveryPointsByBackupVaultOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListRecoveryPointsByBackupVaultOutputTypeDef
+
+def get_value() -> ListRecoveryPointsByBackupVaultOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "RecoveryPoints": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRecoveryPointsByBackupVaultOutputTypeDef(TypedDict):
+    NextToken: str,
+    RecoveryPoints: List[RecoveryPointByBackupVaultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `RecoveryPoints`:
-  `List`\[[RecoveryPointByBackupVaultTypeDef](./type_defs.md#recoverypointbybackupvaulttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listrecoverypointsbyresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RecoveryPointByBackupVaultTypeDef](./type_defs.md#recoverypointbybackupvaulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRecoveryPointsByResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListRecoveryPointsByResourceInputRequestTypeDef
+
+def get_value() -> ListRecoveryPointsByResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listrecoverypointsbyresourceoutputtypedef"></a>
+```python title="Definition"
+class ListRecoveryPointsByResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListRecoveryPointsByResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListRecoveryPointsByResourceOutputTypeDef
+
+def get_value() -> ListRecoveryPointsByResourceOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "RecoveryPoints": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRecoveryPointsByResourceOutputTypeDef(TypedDict):
+    NextToken: str,
+    RecoveryPoints: List[RecoveryPointByResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `RecoveryPoints`:
-  `List`\[[RecoveryPointByResourceTypeDef](./type_defs.md#recoverypointbyresourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listreportjobsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RecoveryPointByResourceTypeDef](./type_defs.md#recoverypointbyresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListReportJobsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListReportJobsInputRequestTypeDef
+
+def get_value() -> ListReportJobsInputRequestTypeDef:
+    return {
+        "ByReportPlanName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ByReportPlanName`: `str`
-- `ByCreationBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreationAfter`: `Union`\[`datetime`, `str`\]
-- `ByStatus`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listreportjobsoutputtypedef"></a>
+```python title="Definition"
+class ListReportJobsInputRequestTypeDef(TypedDict):
+    ByReportPlanName: NotRequired[str],
+    ByCreationBefore: NotRequired[Union[datetime, str]],
+    ByCreationAfter: NotRequired[Union[datetime, str]],
+    ByStatus: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListReportJobsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListReportJobsOutputTypeDef
+
+def get_value() -> ListReportJobsOutputTypeDef:
+    return {
+        "ReportJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReportJobsOutputTypeDef(TypedDict):
+    ReportJobs: List[ReportJobTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReportJobs`: `List`\[[ReportJobTypeDef](./type_defs.md#reportjobtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listreportplansinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReportJobTypeDef](./type_defs.md#reportjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListReportPlansInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListReportPlansInputRequestTypeDef
+
+def get_value() -> ListReportPlansInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listreportplansoutputtypedef"></a>
+```python title="Definition"
+class ListReportPlansInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListReportPlansOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListReportPlansOutputTypeDef
+
+def get_value() -> ListReportPlansOutputTypeDef:
+    return {
+        "ReportPlans": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReportPlansOutputTypeDef(TypedDict):
+    ReportPlans: List[ReportPlanTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReportPlans`:
-  `List`\[[ReportPlanTypeDef](./type_defs.md#reportplantypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listrestorejobsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReportPlanTypeDef](./type_defs.md#reportplantypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRestoreJobsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListRestoreJobsInputRequestTypeDef
+
+def get_value() -> ListRestoreJobsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListRestoreJobsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ByAccountId: NotRequired[str],
+    ByCreatedBefore: NotRequired[Union[datetime, str]],
+    ByCreatedAfter: NotRequired[Union[datetime, str]],
+    ByStatus: NotRequired[RestoreJobStatusType],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ByAccountId`: `str`
-- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
-- `ByStatus`: [RestoreJobStatusType](./literals.md#restorejobstatustype)
-
-<a id="listrestorejobsoutputtypedef"></a>
-
+1. See [:material-code-brackets: RestoreJobStatusType](./literals.md#restorejobstatustype) 
 ## ListRestoreJobsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListRestoreJobsOutputTypeDef
+
+def get_value() -> ListRestoreJobsOutputTypeDef:
+    return {
+        "RestoreJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRestoreJobsOutputTypeDef(TypedDict):
+    RestoreJobs: List[RestoreJobsListMemberTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RestoreJobs`:
-  `List`\[[RestoreJobsListMemberTypeDef](./type_defs.md#restorejobslistmembertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RestoreJobsListMemberTypeDef](./type_defs.md#restorejobslistmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListTagsInputRequestTypeDef
+
+def get_value() -> ListTagsInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listtagsoutputtypedef"></a>
+```python title="Definition"
+class ListTagsInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListTagsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ListTagsOutputTypeDef
+
+def get_value() -> ListTagsOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsOutputTypeDef(TypedDict):
+    NextToken: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NextToken`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="protectedresourcetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ProtectedResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ProtectedResourceTypeDef
+
+def get_value() -> ProtectedResourceTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceArn`: `str`
-- `ResourceType`: `str`
-- `LastBackupTime`: `datetime`
-
-<a id="putbackupvaultaccesspolicyinputrequesttypedef"></a>
+```python title="Definition"
+class ProtectedResourceTypeDef(TypedDict):
+    ResourceArn: NotRequired[str],
+    ResourceType: NotRequired[str],
+    LastBackupTime: NotRequired[datetime],
+```
 
 ## PutBackupVaultAccessPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import PutBackupVaultAccessPolicyInputRequestTypeDef
+
+def get_value() -> PutBackupVaultAccessPolicyInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-Optional fields:
-
-- `Policy`: `str`
-
-<a id="putbackupvaultlockconfigurationinputrequesttypedef"></a>
+```python title="Definition"
+class PutBackupVaultAccessPolicyInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    Policy: NotRequired[str],
+```
 
 ## PutBackupVaultLockConfigurationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import PutBackupVaultLockConfigurationInputRequestTypeDef
+
+def get_value() -> PutBackupVaultLockConfigurationInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupVaultName`: `str`
-
-Optional fields:
-
-- `MinRetentionDays`: `int`
-- `MaxRetentionDays`: `int`
-- `ChangeableForDays`: `int`
-
-<a id="putbackupvaultnotificationsinputrequesttypedef"></a>
+```python title="Definition"
+class PutBackupVaultLockConfigurationInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    MinRetentionDays: NotRequired[int],
+    MaxRetentionDays: NotRequired[int],
+    ChangeableForDays: NotRequired[int],
+```
 
 ## PutBackupVaultNotificationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import PutBackupVaultNotificationsInputRequestTypeDef
+
+def get_value() -> PutBackupVaultNotificationsInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "SNSTopicArn": ...,
+        "BackupVaultEvents": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBackupVaultNotificationsInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    SNSTopicArn: str,
+    BackupVaultEvents: Sequence[BackupVaultEventType],  # (1)
+```
 
-- `BackupVaultName`: `str`
-- `SNSTopicArn`: `str`
-- `BackupVaultEvents`:
-  `Sequence`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
-
-<a id="recoverypointbybackupvaulttypedef"></a>
-
+1. See [:material-code-brackets: BackupVaultEventType](./literals.md#backupvaulteventtype) 
 ## RecoveryPointByBackupVaultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import RecoveryPointByBackupVaultTypeDef
+
+def get_value() -> RecoveryPointByBackupVaultTypeDef:
+    return {
+        "RecoveryPointArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecoveryPointByBackupVaultTypeDef(TypedDict):
+    RecoveryPointArn: NotRequired[str],
+    BackupVaultName: NotRequired[str],
+    BackupVaultArn: NotRequired[str],
+    SourceBackupVaultArn: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    ResourceType: NotRequired[str],
+    CreatedBy: NotRequired[RecoveryPointCreatorTypeDef],  # (1)
+    IamRoleArn: NotRequired[str],
+    Status: NotRequired[RecoveryPointStatusType],  # (2)
+    StatusMessage: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    CompletionDate: NotRequired[datetime],
+    BackupSizeInBytes: NotRequired[int],
+    CalculatedLifecycle: NotRequired[CalculatedLifecycleTypeDef],  # (3)
+    Lifecycle: NotRequired[LifecycleTypeDef],  # (4)
+    EncryptionKeyArn: NotRequired[str],
+    IsEncrypted: NotRequired[bool],
+    LastRestoreTime: NotRequired[datetime],
+```
 
-- `RecoveryPointArn`: `str`
-- `BackupVaultName`: `str`
-- `BackupVaultArn`: `str`
-- `SourceBackupVaultArn`: `str`
-- `ResourceArn`: `str`
-- `ResourceType`: `str`
-- `CreatedBy`:
-  [RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef)
-- `IamRoleArn`: `str`
-- `Status`: [RecoveryPointStatusType](./literals.md#recoverypointstatustype)
-- `StatusMessage`: `str`
-- `CreationDate`: `datetime`
-- `CompletionDate`: `datetime`
-- `BackupSizeInBytes`: `int`
-- `CalculatedLifecycle`:
-  [CalculatedLifecycleTypeDef](./type_defs.md#calculatedlifecycletypedef)
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `EncryptionKeyArn`: `str`
-- `IsEncrypted`: `bool`
-- `LastRestoreTime`: `datetime`
-
-<a id="recoverypointbyresourcetypedef"></a>
-
+1. See [:material-code-braces: RecoveryPointCreatorTypeDef](./type_defs.md#recoverypointcreatortypedef) 
+2. See [:material-code-brackets: RecoveryPointStatusType](./literals.md#recoverypointstatustype) 
+3. See [:material-code-braces: CalculatedLifecycleTypeDef](./type_defs.md#calculatedlifecycletypedef) 
+4. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
 ## RecoveryPointByResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import RecoveryPointByResourceTypeDef
+
+def get_value() -> RecoveryPointByResourceTypeDef:
+    return {
+        "RecoveryPointArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecoveryPointByResourceTypeDef(TypedDict):
+    RecoveryPointArn: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    Status: NotRequired[RecoveryPointStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    EncryptionKeyArn: NotRequired[str],
+    BackupSizeBytes: NotRequired[int],
+    BackupVaultName: NotRequired[str],
+```
 
-- `RecoveryPointArn`: `str`
-- `CreationDate`: `datetime`
-- `Status`: [RecoveryPointStatusType](./literals.md#recoverypointstatustype)
-- `StatusMessage`: `str`
-- `EncryptionKeyArn`: `str`
-- `BackupSizeBytes`: `int`
-- `BackupVaultName`: `str`
-
-<a id="recoverypointcreatortypedef"></a>
-
+1. See [:material-code-brackets: RecoveryPointStatusType](./literals.md#recoverypointstatustype) 
 ## RecoveryPointCreatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import RecoveryPointCreatorTypeDef
+
+def get_value() -> RecoveryPointCreatorTypeDef:
+    return {
+        "BackupPlanId": ...,
+    }
 ```
 
-Optional fields:
-
-- `BackupPlanId`: `str`
-- `BackupPlanArn`: `str`
-- `BackupPlanVersion`: `str`
-- `BackupRuleId`: `str`
-
-<a id="reportdeliverychanneltypedef"></a>
+```python title="Definition"
+class RecoveryPointCreatorTypeDef(TypedDict):
+    BackupPlanId: NotRequired[str],
+    BackupPlanArn: NotRequired[str],
+    BackupPlanVersion: NotRequired[str],
+    BackupRuleId: NotRequired[str],
+```
 
 ## ReportDeliveryChannelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ReportDeliveryChannelTypeDef
+
+def get_value() -> ReportDeliveryChannelTypeDef:
+    return {
+        "S3BucketName": ...,
+    }
 ```
 
-Required fields:
-
-- `S3BucketName`: `str`
-
-Optional fields:
-
-- `S3KeyPrefix`: `str`
-- `Formats`: `Sequence`\[`str`\]
-
-<a id="reportdestinationtypedef"></a>
+```python title="Definition"
+class ReportDeliveryChannelTypeDef(TypedDict):
+    S3BucketName: str,
+    S3KeyPrefix: NotRequired[str],
+    Formats: NotRequired[Sequence[str]],
+```
 
 ## ReportDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ReportDestinationTypeDef
+
+def get_value() -> ReportDestinationTypeDef:
+    return {
+        "S3BucketName": ...,
+    }
 ```
 
-Optional fields:
-
-- `S3BucketName`: `str`
-- `S3Keys`: `List`\[`str`\]
-
-<a id="reportjobtypedef"></a>
+```python title="Definition"
+class ReportDestinationTypeDef(TypedDict):
+    S3BucketName: NotRequired[str],
+    S3Keys: NotRequired[List[str]],
+```
 
 ## ReportJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ReportJobTypeDef
+
+def get_value() -> ReportJobTypeDef:
+    return {
+        "ReportJobId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReportJobTypeDef(TypedDict):
+    ReportJobId: NotRequired[str],
+    ReportPlanArn: NotRequired[str],
+    ReportTemplate: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    CompletionTime: NotRequired[datetime],
+    Status: NotRequired[str],
+    StatusMessage: NotRequired[str],
+    ReportDestination: NotRequired[ReportDestinationTypeDef],  # (1)
+```
 
-- `ReportJobId`: `str`
-- `ReportPlanArn`: `str`
-- `ReportTemplate`: `str`
-- `CreationTime`: `datetime`
-- `CompletionTime`: `datetime`
-- `Status`: `str`
-- `StatusMessage`: `str`
-- `ReportDestination`:
-  [ReportDestinationTypeDef](./type_defs.md#reportdestinationtypedef)
-
-<a id="reportplantypedef"></a>
-
+1. See [:material-code-braces: ReportDestinationTypeDef](./type_defs.md#reportdestinationtypedef) 
 ## ReportPlanTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ReportPlanTypeDef
+
+def get_value() -> ReportPlanTypeDef:
+    return {
+        "ReportPlanArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReportPlanTypeDef(TypedDict):
+    ReportPlanArn: NotRequired[str],
+    ReportPlanName: NotRequired[str],
+    ReportPlanDescription: NotRequired[str],
+    ReportSetting: NotRequired[ReportSettingTypeDef],  # (1)
+    ReportDeliveryChannel: NotRequired[ReportDeliveryChannelTypeDef],  # (2)
+    DeploymentStatus: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastAttemptedExecutionTime: NotRequired[datetime],
+    LastSuccessfulExecutionTime: NotRequired[datetime],
+```
 
-- `ReportPlanArn`: `str`
-- `ReportPlanName`: `str`
-- `ReportPlanDescription`: `str`
-- `ReportSetting`: [ReportSettingTypeDef](./type_defs.md#reportsettingtypedef)
-- `ReportDeliveryChannel`:
-  [ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef)
-- `DeploymentStatus`: `str`
-- `CreationTime`: `datetime`
-- `LastAttemptedExecutionTime`: `datetime`
-- `LastSuccessfulExecutionTime`: `datetime`
-
-<a id="reportsettingtypedef"></a>
-
+1. See [:material-code-braces: ReportSettingTypeDef](./type_defs.md#reportsettingtypedef) 
+2. See [:material-code-braces: ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef) 
 ## ReportSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ReportSettingTypeDef
+
+def get_value() -> ReportSettingTypeDef:
+    return {
+        "ReportTemplate": ...,
+    }
 ```
 
-Required fields:
-
-- `ReportTemplate`: `str`
-
-Optional fields:
-
-- `FrameworkArns`: `Sequence`\[`str`\]
-- `NumberOfFrameworks`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ReportSettingTypeDef(TypedDict):
+    ReportTemplate: str,
+    FrameworkArns: NotRequired[Sequence[str]],
+    NumberOfFrameworks: NotRequired[int],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restorejobslistmembertypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreJobsListMemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import RestoreJobsListMemberTypeDef
+
+def get_value() -> RestoreJobsListMemberTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RestoreJobsListMemberTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    RestoreJobId: NotRequired[str],
+    RecoveryPointArn: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    CompletionDate: NotRequired[datetime],
+    Status: NotRequired[RestoreJobStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    PercentDone: NotRequired[str],
+    BackupSizeInBytes: NotRequired[int],
+    IamRoleArn: NotRequired[str],
+    ExpectedCompletionTimeMinutes: NotRequired[int],
+    CreatedResourceArn: NotRequired[str],
+    ResourceType: NotRequired[str],
+```
 
-- `AccountId`: `str`
-- `RestoreJobId`: `str`
-- `RecoveryPointArn`: `str`
-- `CreationDate`: `datetime`
-- `CompletionDate`: `datetime`
-- `Status`: [RestoreJobStatusType](./literals.md#restorejobstatustype)
-- `StatusMessage`: `str`
-- `PercentDone`: `str`
-- `BackupSizeInBytes`: `int`
-- `IamRoleArn`: `str`
-- `ExpectedCompletionTimeMinutes`: `int`
-- `CreatedResourceArn`: `str`
-- `ResourceType`: `str`
-
-<a id="startbackupjobinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: RestoreJobStatusType](./literals.md#restorejobstatustype) 
 ## StartBackupJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import StartBackupJobInputRequestTypeDef
+
+def get_value() -> StartBackupJobInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "ResourceArn": ...,
+        "IamRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBackupJobInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    ResourceArn: str,
+    IamRoleArn: str,
+    IdempotencyToken: NotRequired[str],
+    StartWindowMinutes: NotRequired[int],
+    CompleteWindowMinutes: NotRequired[int],
+    Lifecycle: NotRequired[LifecycleTypeDef],  # (1)
+    RecoveryPointTags: NotRequired[Mapping[str, str]],
+    BackupOptions: NotRequired[Mapping[str, str]],
+```
 
-- `BackupVaultName`: `str`
-- `ResourceArn`: `str`
-- `IamRoleArn`: `str`
-
-Optional fields:
-
-- `IdempotencyToken`: `str`
-- `StartWindowMinutes`: `int`
-- `CompleteWindowMinutes`: `int`
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `RecoveryPointTags`: `Mapping`\[`str`, `str`\]
-- `BackupOptions`: `Mapping`\[`str`, `str`\]
-
-<a id="startbackupjoboutputtypedef"></a>
-
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
 ## StartBackupJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import StartBackupJobOutputTypeDef
+
+def get_value() -> StartBackupJobOutputTypeDef:
+    return {
+        "BackupJobId": ...,
+        "RecoveryPointArn": ...,
+        "CreationDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBackupJobOutputTypeDef(TypedDict):
+    BackupJobId: str,
+    RecoveryPointArn: str,
+    CreationDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BackupJobId`: `str`
-- `RecoveryPointArn`: `str`
-- `CreationDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startcopyjobinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartCopyJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import StartCopyJobInputRequestTypeDef
+
+def get_value() -> StartCopyJobInputRequestTypeDef:
+    return {
+        "RecoveryPointArn": ...,
+        "SourceBackupVaultName": ...,
+        "DestinationBackupVaultArn": ...,
+        "IamRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartCopyJobInputRequestTypeDef(TypedDict):
+    RecoveryPointArn: str,
+    SourceBackupVaultName: str,
+    DestinationBackupVaultArn: str,
+    IamRoleArn: str,
+    IdempotencyToken: NotRequired[str],
+    Lifecycle: NotRequired[LifecycleTypeDef],  # (1)
+```
 
-- `RecoveryPointArn`: `str`
-- `SourceBackupVaultName`: `str`
-- `DestinationBackupVaultArn`: `str`
-- `IamRoleArn`: `str`
-
-Optional fields:
-
-- `IdempotencyToken`: `str`
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-
-<a id="startcopyjoboutputtypedef"></a>
-
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
 ## StartCopyJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import StartCopyJobOutputTypeDef
+
+def get_value() -> StartCopyJobOutputTypeDef:
+    return {
+        "CopyJobId": ...,
+        "CreationDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartCopyJobOutputTypeDef(TypedDict):
+    CopyJobId: str,
+    CreationDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CopyJobId`: `str`
-- `CreationDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startreportjobinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartReportJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import StartReportJobInputRequestTypeDef
+
+def get_value() -> StartReportJobInputRequestTypeDef:
+    return {
+        "ReportPlanName": ...,
+    }
 ```
 
-Required fields:
-
-- `ReportPlanName`: `str`
-
-Optional fields:
-
-- `IdempotencyToken`: `str`
-
-<a id="startreportjoboutputtypedef"></a>
+```python title="Definition"
+class StartReportJobInputRequestTypeDef(TypedDict):
+    ReportPlanName: str,
+    IdempotencyToken: NotRequired[str],
+```
 
 ## StartReportJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import StartReportJobOutputTypeDef
+
+def get_value() -> StartReportJobOutputTypeDef:
+    return {
+        "ReportJobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartReportJobOutputTypeDef(TypedDict):
+    ReportJobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ReportJobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startrestorejobinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartRestoreJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import StartRestoreJobInputRequestTypeDef
+
+def get_value() -> StartRestoreJobInputRequestTypeDef:
+    return {
+        "RecoveryPointArn": ...,
+        "Metadata": ...,
+        "IamRoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RecoveryPointArn`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `IamRoleArn`: `str`
-
-Optional fields:
-
-- `IdempotencyToken`: `str`
-- `ResourceType`: `str`
-
-<a id="startrestorejoboutputtypedef"></a>
+```python title="Definition"
+class StartRestoreJobInputRequestTypeDef(TypedDict):
+    RecoveryPointArn: str,
+    Metadata: Mapping[str, str],
+    IamRoleArn: str,
+    IdempotencyToken: NotRequired[str],
+    ResourceType: NotRequired[str],
+```
 
 ## StartRestoreJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import StartRestoreJobOutputTypeDef
+
+def get_value() -> StartRestoreJobOutputTypeDef:
+    return {
+        "RestoreJobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartRestoreJobOutputTypeDef(TypedDict):
+    RestoreJobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RestoreJobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopbackupjobinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopBackupJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import StopBackupJobInputRequestTypeDef
+
+def get_value() -> StopBackupJobInputRequestTypeDef:
+    return {
+        "BackupJobId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupJobId`: `str`
-
-<a id="tagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class StopBackupJobInputRequestTypeDef(TypedDict):
+    BackupJobId: str,
+```
 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeyList": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeyList`: `Sequence`\[`str`\]
-
-<a id="updatebackupplaninputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeyList: Sequence[str],
+```
 
 ## UpdateBackupPlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateBackupPlanInputRequestTypeDef
+
+def get_value() -> UpdateBackupPlanInputRequestTypeDef:
+    return {
+        "BackupPlanId": ...,
+        "BackupPlan": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBackupPlanInputRequestTypeDef(TypedDict):
+    BackupPlanId: str,
+    BackupPlan: BackupPlanInputTypeDef,  # (1)
+```
 
-- `BackupPlanId`: `str`
-- `BackupPlan`: [BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef)
-
-<a id="updatebackupplanoutputtypedef"></a>
-
+1. See [:material-code-braces: BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef) 
 ## UpdateBackupPlanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateBackupPlanOutputTypeDef
+
+def get_value() -> UpdateBackupPlanOutputTypeDef:
+    return {
+        "BackupPlanId": ...,
+        "BackupPlanArn": ...,
+        "CreationDate": ...,
+        "VersionId": ...,
+        "AdvancedBackupSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBackupPlanOutputTypeDef(TypedDict):
+    BackupPlanId: str,
+    BackupPlanArn: str,
+    CreationDate: datetime,
+    VersionId: str,
+    AdvancedBackupSettings: List[AdvancedBackupSettingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupPlanId`: `str`
-- `BackupPlanArn`: `str`
-- `CreationDate`: `datetime`
-- `VersionId`: `str`
-- `AdvancedBackupSettings`:
-  `List`\[[AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateframeworkinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFrameworkInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateFrameworkInputRequestTypeDef
+
+def get_value() -> UpdateFrameworkInputRequestTypeDef:
+    return {
+        "FrameworkName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFrameworkInputRequestTypeDef(TypedDict):
+    FrameworkName: str,
+    FrameworkDescription: NotRequired[str],
+    FrameworkControls: NotRequired[Sequence[FrameworkControlTypeDef]],  # (1)
+    IdempotencyToken: NotRequired[str],
+```
 
-- `FrameworkName`: `str`
-
-Optional fields:
-
-- `FrameworkDescription`: `str`
-- `FrameworkControls`:
-  `Sequence`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
-- `IdempotencyToken`: `str`
-
-<a id="updateframeworkoutputtypedef"></a>
-
+1. See [:material-code-braces: FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef) 
 ## UpdateFrameworkOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateFrameworkOutputTypeDef
+
+def get_value() -> UpdateFrameworkOutputTypeDef:
+    return {
+        "FrameworkName": ...,
+        "FrameworkArn": ...,
+        "CreationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFrameworkOutputTypeDef(TypedDict):
+    FrameworkName: str,
+    FrameworkArn: str,
+    CreationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FrameworkName`: `str`
-- `FrameworkArn`: `str`
-- `CreationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateglobalsettingsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGlobalSettingsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateGlobalSettingsInputRequestTypeDef
+
+def get_value() -> UpdateGlobalSettingsInputRequestTypeDef:
+    return {
+        "GlobalSettings": ...,
+    }
 ```
 
-Optional fields:
-
-- `GlobalSettings`: `Mapping`\[`str`, `str`\]
-
-<a id="updaterecoverypointlifecycleinputrequesttypedef"></a>
+```python title="Definition"
+class UpdateGlobalSettingsInputRequestTypeDef(TypedDict):
+    GlobalSettings: NotRequired[Mapping[str, str]],
+```
 
 ## UpdateRecoveryPointLifecycleInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateRecoveryPointLifecycleInputRequestTypeDef
+
+def get_value() -> UpdateRecoveryPointLifecycleInputRequestTypeDef:
+    return {
+        "BackupVaultName": ...,
+        "RecoveryPointArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRecoveryPointLifecycleInputRequestTypeDef(TypedDict):
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+    Lifecycle: NotRequired[LifecycleTypeDef],  # (1)
+```
 
-- `BackupVaultName`: `str`
-- `RecoveryPointArn`: `str`
-
-Optional fields:
-
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-
-<a id="updaterecoverypointlifecycleoutputtypedef"></a>
-
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
 ## UpdateRecoveryPointLifecycleOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateRecoveryPointLifecycleOutputTypeDef
+
+def get_value() -> UpdateRecoveryPointLifecycleOutputTypeDef:
+    return {
+        "BackupVaultArn": ...,
+        "RecoveryPointArn": ...,
+        "Lifecycle": ...,
+        "CalculatedLifecycle": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRecoveryPointLifecycleOutputTypeDef(TypedDict):
+    BackupVaultArn: str,
+    RecoveryPointArn: str,
+    Lifecycle: LifecycleTypeDef,  # (1)
+    CalculatedLifecycle: CalculatedLifecycleTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `BackupVaultArn`: `str`
-- `RecoveryPointArn`: `str`
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `CalculatedLifecycle`:
-  [CalculatedLifecycleTypeDef](./type_defs.md#calculatedlifecycletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateregionsettingsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
+2. See [:material-code-braces: CalculatedLifecycleTypeDef](./type_defs.md#calculatedlifecycletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRegionSettingsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateRegionSettingsInputRequestTypeDef
+
+def get_value() -> UpdateRegionSettingsInputRequestTypeDef:
+    return {
+        "ResourceTypeOptInPreference": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceTypeOptInPreference`: `Mapping`\[`str`, `bool`\]
-- `ResourceTypeManagementPreference`: `Mapping`\[`str`, `bool`\]
-
-<a id="updatereportplaninputrequesttypedef"></a>
+```python title="Definition"
+class UpdateRegionSettingsInputRequestTypeDef(TypedDict):
+    ResourceTypeOptInPreference: NotRequired[Mapping[str, bool]],
+    ResourceTypeManagementPreference: NotRequired[Mapping[str, bool]],
+```
 
 ## UpdateReportPlanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateReportPlanInputRequestTypeDef
+
+def get_value() -> UpdateReportPlanInputRequestTypeDef:
+    return {
+        "ReportPlanName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateReportPlanInputRequestTypeDef(TypedDict):
+    ReportPlanName: str,
+    ReportPlanDescription: NotRequired[str],
+    ReportDeliveryChannel: NotRequired[ReportDeliveryChannelTypeDef],  # (1)
+    ReportSetting: NotRequired[ReportSettingTypeDef],  # (2)
+    IdempotencyToken: NotRequired[str],
+```
 
-- `ReportPlanName`: `str`
-
-Optional fields:
-
-- `ReportPlanDescription`: `str`
-- `ReportDeliveryChannel`:
-  [ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef)
-- `ReportSetting`: [ReportSettingTypeDef](./type_defs.md#reportsettingtypedef)
-- `IdempotencyToken`: `str`
-
-<a id="updatereportplanoutputtypedef"></a>
-
+1. See [:material-code-braces: ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef) 
+2. See [:material-code-braces: ReportSettingTypeDef](./type_defs.md#reportsettingtypedef) 
 ## UpdateReportPlanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_backup.type_defs import UpdateReportPlanOutputTypeDef
+
+def get_value() -> UpdateReportPlanOutputTypeDef:
+    return {
+        "ReportPlanName": ...,
+        "ReportPlanArn": ...,
+        "CreationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateReportPlanOutputTypeDef(TypedDict):
+    ReportPlanName: str,
+    ReportPlanArn: str,
+    CreationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ReportPlanName`: `str`
-- `ReportPlanArn`: `str`
-- `CreationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -1,53 +1,18 @@
-<a id="daxclient-for-boto3-dax-module"></a>
-
-# DAXClient for boto3 DAX module
+# DAXClient
 
 > [Index](../README.md) > [DAX](./README.md) > DAXClient
 
-Auto-generated documentation for
-[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
-type annotations stubs module
-[mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
+!!! note ""
 
-- [DAXClient for boto3 DAX module](#daxclient-for-boto3-dax-module)
-  - [DAXClient](#daxclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_cluster](#create_cluster)
-    - [create_parameter_group](#create_parameter_group)
-    - [create_subnet_group](#create_subnet_group)
-    - [decrease_replication_factor](#decrease_replication_factor)
-    - [delete_cluster](#delete_cluster)
-    - [delete_parameter_group](#delete_parameter_group)
-    - [delete_subnet_group](#delete_subnet_group)
-    - [describe_clusters](#describe_clusters)
-    - [describe_default_parameters](#describe_default_parameters)
-    - [describe_events](#describe_events)
-    - [describe_parameter_groups](#describe_parameter_groups)
-    - [describe_parameters](#describe_parameters)
-    - [describe_subnet_groups](#describe_subnet_groups)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [increase_replication_factor](#increase_replication_factor)
-    - [list_tags](#list_tags)
-    - [reboot_node](#reboot_node)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_cluster](#update_cluster)
-    - [update_parameter_group](#update_parameter_group)
-    - [update_subnet_group](#update_subnet_group)
-    - [get_paginator](#get_paginator)
-
-<a id="daxclient"></a>
+    Auto-generated documentation for [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+    type annotations stubs module [mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
 
 ## DAXClient
 
-Type annotations for `boto3.client("dax")`
+Type annotations and code completion for `#!python boto3.client("dax")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_dax.client import DAXClient
 
@@ -55,620 +20,786 @@ def get_dax_client() -> DAXClient:
     return Session().client("dax")
 ```
 
-Boto3 documentation:
-[DAX.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("dax").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("dax")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ClusterAlreadyExistsFault,
+    client.ClusterNotFoundFault,
+    client.ClusterQuotaForCustomerExceededFault,
+    client.InsufficientClusterCapacityFault,
+    client.InvalidARNFault,
+    client.InvalidClusterStateFault,
+    client.InvalidParameterCombinationException,
+    client.InvalidParameterGroupStateFault,
+    client.InvalidParameterValueException,
+    client.InvalidSubnet,
+    client.InvalidVPCNetworkStateFault,
+    client.NodeNotFoundFault,
+    client.NodeQuotaForClusterExceededFault,
+    client.NodeQuotaForCustomerExceededFault,
+    client.ParameterGroupAlreadyExistsFault,
+    client.ParameterGroupNotFoundFault,
+    client.ParameterGroupQuotaExceededFault,
+    client.ServiceLinkedRoleNotFoundFault,
+    client.ServiceQuotaExceededException,
+    client.SubnetGroupAlreadyExistsFault,
+    client.SubnetGroupInUseFault,
+    client.SubnetGroupNotFoundFault,
+    client.SubnetGroupQuotaExceededFault,
+    client.SubnetInUse,
+    client.SubnetQuotaExceededFault,
+    client.TagNotFoundFault,
+    client.TagQuotaPerResourceExceeded,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_dax.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ClusterAlreadyExistsFault`
-- `Exceptions.ClusterNotFoundFault`
-- `Exceptions.ClusterQuotaForCustomerExceededFault`
-- `Exceptions.InsufficientClusterCapacityFault`
-- `Exceptions.InvalidARNFault`
-- `Exceptions.InvalidClusterStateFault`
-- `Exceptions.InvalidParameterCombinationException`
-- `Exceptions.InvalidParameterGroupStateFault`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.InvalidSubnet`
-- `Exceptions.InvalidVPCNetworkStateFault`
-- `Exceptions.NodeNotFoundFault`
-- `Exceptions.NodeQuotaForClusterExceededFault`
-- `Exceptions.NodeQuotaForCustomerExceededFault`
-- `Exceptions.ParameterGroupAlreadyExistsFault`
-- `Exceptions.ParameterGroupNotFoundFault`
-- `Exceptions.ParameterGroupQuotaExceededFault`
-- `Exceptions.ServiceLinkedRoleNotFoundFault`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.SubnetGroupAlreadyExistsFault`
-- `Exceptions.SubnetGroupInUseFault`
-- `Exceptions.SubnetGroupNotFoundFault`
-- `Exceptions.SubnetGroupQuotaExceededFault`
-- `Exceptions.SubnetInUse`
-- `Exceptions.SubnetQuotaExceededFault`
-- `Exceptions.TagNotFoundFault`
-- `Exceptions.TagQuotaPerResourceExceeded`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-DAXClient exceptions.
-
-Type annotations for `boto3.client("dax").exceptions` method.
-
-Boto3 documentation:
-[DAX.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("dax").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("dax").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.can_paginate)
 
-Boto3 documentation:
-[DAX.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_cluster"></a>
-
-### create_cluster
+### create\_cluster
 
 Creates a DAX cluster.
 
-Type annotations for `boto3.client("dax").create_cluster` method.
+Type annotations and code completion for `#!python boto3.client("dax").create_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_cluster)
 
-Boto3 documentation:
-[DAX.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_cluster)
+```python title="Method definition"
+def create_cluster(
+    self,
+    *,
+    ClusterName: str,
+    NodeType: str,
+    ReplicationFactor: int,
+    IamRoleArn: str,
+    Description: str = ...,
+    AvailabilityZones: Sequence[str] = ...,
+    SubnetGroupName: str = ...,
+    SecurityGroupIds: Sequence[str] = ...,
+    PreferredMaintenanceWindow: str = ...,
+    NotificationTopicArn: str = ...,
+    ParameterGroupName: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    SSESpecification: SSESpecificationTypeDef = ...,  # (2)
+    ClusterEndpointEncryptionType: ClusterEndpointEncryptionTypeType = ...,  # (3)
+) -> CreateClusterResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+3. See [:material-code-brackets: ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype) 
+4. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `NodeType`: `str` *(required)*
-- `ReplicationFactor`: `int` *(required)*
-- `IamRoleArn`: `str` *(required)*
-- `Description`: `str`
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `SubnetGroupName`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `PreferredMaintenanceWindow`: `str`
-- `NotificationTopicArn`: `str`
-- `ParameterGroupName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SSESpecification`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `ClusterEndpointEncryptionType`:
-  [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
+```python title="Usage example with kwargs"
+kwargs: CreateClusterRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+    "NodeType": ...,
+    "ReplicationFactor": ...,
+    "IamRoleArn": ...,
+}
 
-Returns
-[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
+parent.create_cluster(**kwargs)
+```
 
-<a id="create\_parameter\_group"></a>
+1. See [:material-code-braces: CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef) 
 
-### create_parameter_group
+### create\_parameter\_group
 
 Creates a new parameter group.
 
-Type annotations for `boto3.client("dax").create_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("dax").create_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_parameter_group)
 
-Boto3 documentation:
-[DAX.Client.create_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_parameter_group)
+```python title="Method definition"
+def create_parameter_group(
+    self,
+    *,
+    ParameterGroupName: str,
+    Description: str = ...,
+) -> CreateParameterGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateParameterGroupRequestRequestTypeDef](./type_defs.md#createparametergrouprequestrequesttypedef).
+1. See [:material-code-braces: CreateParameterGroupResponseTypeDef](./type_defs.md#createparametergroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateParameterGroupRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
 
-Returns
-[CreateParameterGroupResponseTypeDef](./type_defs.md#createparametergroupresponsetypedef).
+parent.create_parameter_group(**kwargs)
+```
 
-<a id="create\_subnet\_group"></a>
+1. See [:material-code-braces: CreateParameterGroupRequestRequestTypeDef](./type_defs.md#createparametergrouprequestrequesttypedef) 
 
-### create_subnet_group
+### create\_subnet\_group
 
 Creates a new subnet group.
 
-Type annotations for `boto3.client("dax").create_subnet_group` method.
+Type annotations and code completion for `#!python boto3.client("dax").create_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_subnet_group)
 
-Boto3 documentation:
-[DAX.Client.create_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.create_subnet_group)
+```python title="Method definition"
+def create_subnet_group(
+    self,
+    *,
+    SubnetGroupName: str,
+    SubnetIds: Sequence[str],
+    Description: str = ...,
+) -> CreateSubnetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSubnetGroupRequestRequestTypeDef](./type_defs.md#createsubnetgrouprequestrequesttypedef).
+1. See [:material-code-braces: CreateSubnetGroupResponseTypeDef](./type_defs.md#createsubnetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubnetGroupName`: `str` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateSubnetGroupRequestRequestTypeDef = {  # (1)
+    "SubnetGroupName": ...,
+    "SubnetIds": ...,
+}
 
-Returns
-[CreateSubnetGroupResponseTypeDef](./type_defs.md#createsubnetgroupresponsetypedef).
+parent.create_subnet_group(**kwargs)
+```
 
-<a id="decrease\_replication\_factor"></a>
+1. See [:material-code-braces: CreateSubnetGroupRequestRequestTypeDef](./type_defs.md#createsubnetgrouprequestrequesttypedef) 
 
-### decrease_replication_factor
+### decrease\_replication\_factor
 
 Removes one or more nodes from a DAX cluster.
 
-Type annotations for `boto3.client("dax").decrease_replication_factor` method.
+Type annotations and code completion for `#!python boto3.client("dax").decrease_replication_factor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.decrease_replication_factor)
 
-Boto3 documentation:
-[DAX.Client.decrease_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.decrease_replication_factor)
+```python title="Method definition"
+def decrease_replication_factor(
+    self,
+    *,
+    ClusterName: str,
+    NewReplicationFactor: int,
+    AvailabilityZones: Sequence[str] = ...,
+    NodeIdsToRemove: Sequence[str] = ...,
+) -> DecreaseReplicationFactorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DecreaseReplicationFactorRequestRequestTypeDef](./type_defs.md#decreasereplicationfactorrequestrequesttypedef).
+1. See [:material-code-braces: DecreaseReplicationFactorResponseTypeDef](./type_defs.md#decreasereplicationfactorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `NewReplicationFactor`: `int` *(required)*
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `NodeIdsToRemove`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DecreaseReplicationFactorRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+    "NewReplicationFactor": ...,
+}
 
-Returns
-[DecreaseReplicationFactorResponseTypeDef](./type_defs.md#decreasereplicationfactorresponsetypedef).
+parent.decrease_replication_factor(**kwargs)
+```
 
-<a id="delete\_cluster"></a>
+1. See [:material-code-braces: DecreaseReplicationFactorRequestRequestTypeDef](./type_defs.md#decreasereplicationfactorrequestrequesttypedef) 
 
-### delete_cluster
+### delete\_cluster
 
 Deletes a previously provisioned DAX cluster.
 
-Type annotations for `boto3.client("dax").delete_cluster` method.
+Type annotations and code completion for `#!python boto3.client("dax").delete_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_cluster)
 
-Boto3 documentation:
-[DAX.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_cluster)
+```python title="Method definition"
+def delete_cluster(
+    self,
+    *,
+    ClusterName: str,
+) -> DeleteClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
+1. See [:material-code-braces: DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteClusterRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+}
 
-Returns
-[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+parent.delete_cluster(**kwargs)
+```
 
-<a id="delete\_parameter\_group"></a>
+1. See [:material-code-braces: DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef) 
 
-### delete_parameter_group
+### delete\_parameter\_group
 
 Deletes the specified parameter group.
 
-Type annotations for `boto3.client("dax").delete_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("dax").delete_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_parameter_group)
 
-Boto3 documentation:
-[DAX.Client.delete_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_parameter_group)
+```python title="Method definition"
+def delete_parameter_group(
+    self,
+    *,
+    ParameterGroupName: str,
+) -> DeleteParameterGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteParameterGroupRequestRequestTypeDef](./type_defs.md#deleteparametergrouprequestrequesttypedef).
+1. See [:material-code-braces: DeleteParameterGroupResponseTypeDef](./type_defs.md#deleteparametergroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteParameterGroupRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
 
-Returns
-[DeleteParameterGroupResponseTypeDef](./type_defs.md#deleteparametergroupresponsetypedef).
+parent.delete_parameter_group(**kwargs)
+```
 
-<a id="delete\_subnet\_group"></a>
+1. See [:material-code-braces: DeleteParameterGroupRequestRequestTypeDef](./type_defs.md#deleteparametergrouprequestrequesttypedef) 
 
-### delete_subnet_group
+### delete\_subnet\_group
 
 Deletes a subnet group.
 
-Type annotations for `boto3.client("dax").delete_subnet_group` method.
+Type annotations and code completion for `#!python boto3.client("dax").delete_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_subnet_group)
 
-Boto3 documentation:
-[DAX.Client.delete_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.delete_subnet_group)
+```python title="Method definition"
+def delete_subnet_group(
+    self,
+    *,
+    SubnetGroupName: str,
+) -> DeleteSubnetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSubnetGroupRequestRequestTypeDef](./type_defs.md#deletesubnetgrouprequestrequesttypedef).
+1. See [:material-code-braces: DeleteSubnetGroupResponseTypeDef](./type_defs.md#deletesubnetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubnetGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSubnetGroupRequestRequestTypeDef = {  # (1)
+    "SubnetGroupName": ...,
+}
 
-Returns
-[DeleteSubnetGroupResponseTypeDef](./type_defs.md#deletesubnetgroupresponsetypedef).
+parent.delete_subnet_group(**kwargs)
+```
 
-<a id="describe\_clusters"></a>
+1. See [:material-code-braces: DeleteSubnetGroupRequestRequestTypeDef](./type_defs.md#deletesubnetgrouprequestrequesttypedef) 
 
-### describe_clusters
+### describe\_clusters
 
 Returns information about all provisioned DAX clusters if no cluster identifier
 is specified, or about a specific DAX cluster if a cluster identifier is
 supplied.
 
-Type annotations for `boto3.client("dax").describe_clusters` method.
+Type annotations and code completion for `#!python boto3.client("dax").describe_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_clusters)
 
-Boto3 documentation:
-[DAX.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_clusters)
+```python title="Method definition"
+def describe_clusters(
+    self,
+    *,
+    ClusterNames: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeClustersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterNames`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeClustersRequestRequestTypeDef = {  # (1)
+    "ClusterNames": ...,
+}
 
-Returns
-[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
+parent.describe_clusters(**kwargs)
+```
 
-<a id="describe\_default\_parameters"></a>
+1. See [:material-code-braces: DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef) 
 
-### describe_default_parameters
+### describe\_default\_parameters
 
 Returns the default system parameter information for the DAX caching software.
 
-Type annotations for `boto3.client("dax").describe_default_parameters` method.
+Type annotations and code completion for `#!python boto3.client("dax").describe_default_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_default_parameters)
 
-Boto3 documentation:
-[DAX.Client.describe_default_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_default_parameters)
+```python title="Method definition"
+def describe_default_parameters(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeDefaultParametersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDefaultParametersRequestRequestTypeDef](./type_defs.md#describedefaultparametersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDefaultParametersResponseTypeDef](./type_defs.md#describedefaultparametersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDefaultParametersRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[DescribeDefaultParametersResponseTypeDef](./type_defs.md#describedefaultparametersresponsetypedef).
+parent.describe_default_parameters(**kwargs)
+```
 
-<a id="describe\_events"></a>
+1. See [:material-code-braces: DescribeDefaultParametersRequestRequestTypeDef](./type_defs.md#describedefaultparametersrequestrequesttypedef) 
 
-### describe_events
+### describe\_events
 
 Returns events related to DAX clusters and parameter groups.
 
-Type annotations for `boto3.client("dax").describe_events` method.
+Type annotations and code completion for `#!python boto3.client("dax").describe_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_events)
 
-Boto3 documentation:
-[DAX.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_events)
+```python title="Method definition"
+def describe_events(
+    self,
+    *,
+    SourceName: str = ...,
+    SourceType: SourceTypeType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Duration: int = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeEventsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef).
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsRequestRequestTypeDef = {  # (1)
+    "SourceName": ...,
+}
 
-Returns
-[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
+parent.describe_events(**kwargs)
+```
 
-<a id="describe\_parameter\_groups"></a>
+1. See [:material-code-braces: DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef) 
 
-### describe_parameter_groups
+### describe\_parameter\_groups
 
 Returns a list of parameter group descriptions.
 
-Type annotations for `boto3.client("dax").describe_parameter_groups` method.
+Type annotations and code completion for `#!python boto3.client("dax").describe_parameter_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameter_groups)
 
-Boto3 documentation:
-[DAX.Client.describe_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameter_groups)
+```python title="Method definition"
+def describe_parameter_groups(
+    self,
+    *,
+    ParameterGroupNames: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeParameterGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeParameterGroupsRequestRequestTypeDef](./type_defs.md#describeparametergroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupNames`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeParameterGroupsRequestRequestTypeDef = {  # (1)
+    "ParameterGroupNames": ...,
+}
 
-Returns
-[DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef).
+parent.describe_parameter_groups(**kwargs)
+```
 
-<a id="describe\_parameters"></a>
+1. See [:material-code-braces: DescribeParameterGroupsRequestRequestTypeDef](./type_defs.md#describeparametergroupsrequestrequesttypedef) 
 
-### describe_parameters
+### describe\_parameters
 
 Returns the detailed parameter list for a particular parameter group.
 
-Type annotations for `boto3.client("dax").describe_parameters` method.
+Type annotations and code completion for `#!python boto3.client("dax").describe_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameters)
 
-Boto3 documentation:
-[DAX.Client.describe_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_parameters)
+```python title="Method definition"
+def describe_parameters(
+    self,
+    *,
+    ParameterGroupName: str,
+    Source: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeParametersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeParametersRequestRequestTypeDef](./type_defs.md#describeparametersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str` *(required)*
-- `Source`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeParametersRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
 
-Returns
-[DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef).
+parent.describe_parameters(**kwargs)
+```
 
-<a id="describe\_subnet\_groups"></a>
+1. See [:material-code-braces: DescribeParametersRequestRequestTypeDef](./type_defs.md#describeparametersrequestrequesttypedef) 
 
-### describe_subnet_groups
+### describe\_subnet\_groups
 
 Returns a list of subnet group descriptions.
 
-Type annotations for `boto3.client("dax").describe_subnet_groups` method.
+Type annotations and code completion for `#!python boto3.client("dax").describe_subnet_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_subnet_groups)
 
-Boto3 documentation:
-[DAX.Client.describe_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.describe_subnet_groups)
+```python title="Method definition"
+def describe_subnet_groups(
+    self,
+    *,
+    SubnetGroupNames: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeSubnetGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSubnetGroupsRequestRequestTypeDef](./type_defs.md#describesubnetgroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubnetGroupNames`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSubnetGroupsRequestRequestTypeDef = {  # (1)
+    "SubnetGroupNames": ...,
+}
 
-Returns
-[DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef).
+parent.describe_subnet_groups(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeSubnetGroupsRequestRequestTypeDef](./type_defs.md#describesubnetgroupsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("dax").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("dax").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.generate_presigned_url)
 
-Boto3 documentation:
-[DAX.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="increase\_replication\_factor"></a>
-
-### increase_replication_factor
+### increase\_replication\_factor
 
 Adds one or more nodes to a DAX cluster.
 
-Type annotations for `boto3.client("dax").increase_replication_factor` method.
+Type annotations and code completion for `#!python boto3.client("dax").increase_replication_factor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.increase_replication_factor)
 
-Boto3 documentation:
-[DAX.Client.increase_replication_factor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.increase_replication_factor)
+```python title="Method definition"
+def increase_replication_factor(
+    self,
+    *,
+    ClusterName: str,
+    NewReplicationFactor: int,
+    AvailabilityZones: Sequence[str] = ...,
+) -> IncreaseReplicationFactorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[IncreaseReplicationFactorRequestRequestTypeDef](./type_defs.md#increasereplicationfactorrequestrequesttypedef).
+1. See [:material-code-braces: IncreaseReplicationFactorResponseTypeDef](./type_defs.md#increasereplicationfactorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `NewReplicationFactor`: `int` *(required)*
-- `AvailabilityZones`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: IncreaseReplicationFactorRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+    "NewReplicationFactor": ...,
+}
 
-Returns
-[IncreaseReplicationFactorResponseTypeDef](./type_defs.md#increasereplicationfactorresponsetypedef).
+parent.increase_replication_factor(**kwargs)
+```
 
-<a id="list\_tags"></a>
+1. See [:material-code-braces: IncreaseReplicationFactorRequestRequestTypeDef](./type_defs.md#increasereplicationfactorrequestrequesttypedef) 
 
-### list_tags
+### list\_tags
 
 List all of the tags for a DAX cluster.
 
-Type annotations for `boto3.client("dax").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("dax").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.list_tags)
 
-Boto3 documentation:
-[DAX.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    ResourceName: str,
+    NextToken: str = ...,
+) -> ListTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceName`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestRequestTypeDef = {  # (1)
+    "ResourceName": ...,
+}
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="reboot\_node"></a>
+1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
-### reboot_node
+### reboot\_node
 
 Reboots a single node of a DAX cluster.
 
-Type annotations for `boto3.client("dax").reboot_node` method.
+Type annotations and code completion for `#!python boto3.client("dax").reboot_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.reboot_node)
 
-Boto3 documentation:
-[DAX.Client.reboot_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.reboot_node)
+```python title="Method definition"
+def reboot_node(
+    self,
+    *,
+    ClusterName: str,
+    NodeId: str,
+) -> RebootNodeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RebootNodeRequestRequestTypeDef](./type_defs.md#rebootnoderequestrequesttypedef).
+1. See [:material-code-braces: RebootNodeResponseTypeDef](./type_defs.md#rebootnoderesponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `NodeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RebootNodeRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+    "NodeId": ...,
+}
 
-Returns [RebootNodeResponseTypeDef](./type_defs.md#rebootnoderesponsetypedef).
+parent.reboot_node(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RebootNodeRequestRequestTypeDef](./type_defs.md#rebootnoderequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates a set of tags with a DAX resource.
 
-Type annotations for `boto3.client("dax").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("dax").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.tag_resource)
 
-Boto3 documentation:
-[DAX.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> TagResourceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceName`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceName": ...,
+    "Tags": ...,
+}
 
-Returns
-[TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the association of tags from a DAX resource.
 
-Type annotations for `boto3.client("dax").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("dax").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.untag_resource)
 
-Boto3 documentation:
-[DAX.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceName: str,
+    TagKeys: Sequence[str],
+) -> UntagResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+1. See [:material-code-braces: UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceName`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceName": ...,
+    "TagKeys": ...,
+}
 
-Returns
-[UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_cluster"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_cluster
+### update\_cluster
 
 Modifies the settings for a DAX cluster.
 
-Type annotations for `boto3.client("dax").update_cluster` method.
+Type annotations and code completion for `#!python boto3.client("dax").update_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_cluster)
 
-Boto3 documentation:
-[DAX.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_cluster)
+```python title="Method definition"
+def update_cluster(
+    self,
+    *,
+    ClusterName: str,
+    Description: str = ...,
+    PreferredMaintenanceWindow: str = ...,
+    NotificationTopicArn: str = ...,
+    NotificationTopicStatus: str = ...,
+    ParameterGroupName: str = ...,
+    SecurityGroupIds: Sequence[str] = ...,
+) -> UpdateClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef).
+1. See [:material-code-braces: UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `Description`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `NotificationTopicArn`: `str`
-- `NotificationTopicStatus`: `str`
-- `ParameterGroupName`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateClusterRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+}
 
-Returns
-[UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
+parent.update_cluster(**kwargs)
+```
 
-<a id="update\_parameter\_group"></a>
+1. See [:material-code-braces: UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef) 
 
-### update_parameter_group
+### update\_parameter\_group
 
 Modifies the parameters of a parameter group.
 
-Type annotations for `boto3.client("dax").update_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("dax").update_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_parameter_group)
 
-Boto3 documentation:
-[DAX.Client.update_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_parameter_group)
+```python title="Method definition"
+def update_parameter_group(
+    self,
+    *,
+    ParameterGroupName: str,
+    ParameterNameValues: Sequence[ParameterNameValueTypeDef],  # (1)
+) -> UpdateParameterGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateParameterGroupRequestRequestTypeDef](./type_defs.md#updateparametergrouprequestrequesttypedef).
+1. See [:material-code-braces: ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef) 
+2. See [:material-code-braces: UpdateParameterGroupResponseTypeDef](./type_defs.md#updateparametergroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str` *(required)*
-- `ParameterNameValues`:
-  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateParameterGroupRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+    "ParameterNameValues": ...,
+}
 
-Returns
-[UpdateParameterGroupResponseTypeDef](./type_defs.md#updateparametergroupresponsetypedef).
+parent.update_parameter_group(**kwargs)
+```
 
-<a id="update\_subnet\_group"></a>
+1. See [:material-code-braces: UpdateParameterGroupRequestRequestTypeDef](./type_defs.md#updateparametergrouprequestrequesttypedef) 
 
-### update_subnet_group
+### update\_subnet\_group
 
 Modifies an existing subnet group.
 
-Type annotations for `boto3.client("dax").update_subnet_group` method.
+Type annotations and code completion for `#!python boto3.client("dax").update_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_subnet_group)
 
-Boto3 documentation:
-[DAX.Client.update_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client.update_subnet_group)
+```python title="Method definition"
+def update_subnet_group(
+    self,
+    *,
+    SubnetGroupName: str,
+    Description: str = ...,
+    SubnetIds: Sequence[str] = ...,
+) -> UpdateSubnetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSubnetGroupRequestRequestTypeDef](./type_defs.md#updatesubnetgrouprequestrequesttypedef).
+1. See [:material-code-braces: UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubnetGroupName`: `str` *(required)*
-- `Description`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateSubnetGroupRequestRequestTypeDef = {  # (1)
+    "SubnetGroupName": ...,
+}
 
-Returns
-[UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef).
+parent.update_subnet_group(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateSubnetGroupRequestRequestTypeDef](./type_defs.md#updatesubnetgrouprequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("dax").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("dax").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_clusters")` ->
-  [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
-- `client.get_paginator("describe_default_parameters")` ->
-  [DescribeDefaultParametersPaginator](./paginators.md#describedefaultparameterspaginator)
-- `client.get_paginator("describe_events")` ->
-  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("describe_parameter_groups")` ->
-  [DescribeParameterGroupsPaginator](./paginators.md#describeparametergroupspaginator)
-- `client.get_paginator("describe_parameters")` ->
-  [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
-- `client.get_paginator("describe_subnet_groups")` ->
-  [DescribeSubnetGroupsPaginator](./paginators.md#describesubnetgroupspaginator)
-- `client.get_paginator("list_tags")` ->
-  [ListTagsPaginator](./paginators.md#listtagspaginator)
+- `client.get_paginator("describe_clusters")` -> [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+- `client.get_paginator("describe_default_parameters")` -> [DescribeDefaultParametersPaginator](./paginators.md#describedefaultparameterspaginator)
+- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_parameter_groups")` -> [DescribeParameterGroupsPaginator](./paginators.md#describeparametergroupspaginator)
+- `client.get_paginator("describe_parameters")` -> [DescribeParametersPaginator](./paginators.md#describeparameterspaginator)
+- `client.get_paginator("describe_subnet_groups")` -> [DescribeSubnetGroupsPaginator](./paginators.md#describesubnetgroupspaginator)
+- `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)
+
+
+

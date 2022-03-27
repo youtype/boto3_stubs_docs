@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-connectwisdomservice-module"></a>
-
-# Type annotations for boto3 ConnectWisdomService module
+#  ConnectWisdomService module
 
 > [Index](../README.md) > ConnectWisdomService
 
-Auto-generated documentation for
-[ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
-type annotations stubs module
-[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
+!!! note ""
 
-- [Type annotations for boto3 ConnectWisdomService module](#type-annotations-for-boto3-connectwisdomservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ConnectWisdomServiceClient](#connectwisdomserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
+    type annotations stubs module [mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ConnectWisdomService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[wisdom]'
 python -m pip install mypy-boto3-wisdom
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,91 +42,37 @@ python -m pip install mypy-boto3-wisdom
 python -m pip uninstall -y mypy-boto3-wisdom
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="connectwisdomserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ConnectWisdomServiceClient
 
-Type annotations for `boto3.client("wisdom")` as
-[ConnectWisdomServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("wisdom")` as [ConnectWisdomServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_wisdom.client import ConnectWisdomServiceClient
+
+def get_client() -> ConnectWisdomServiceClient:
+    return Session().cleint("wisdom")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_assistant](./client.md#create_assistant)
-- [create_assistant_association](./client.md#create_assistant_association)
-- [create_content](./client.md#create_content)
-- [create_knowledge_base](./client.md#create_knowledge_base)
-- [create_session](./client.md#create_session)
-- [delete_assistant](./client.md#delete_assistant)
-- [delete_assistant_association](./client.md#delete_assistant_association)
-- [delete_content](./client.md#delete_content)
-- [delete_knowledge_base](./client.md#delete_knowledge_base)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_assistant](./client.md#get_assistant)
-- [get_assistant_association](./client.md#get_assistant_association)
-- [get_content](./client.md#get_content)
-- [get_content_summary](./client.md#get_content_summary)
-- [get_knowledge_base](./client.md#get_knowledge_base)
-- [get_paginator](./client.md#get_paginator)
-- [get_recommendations](./client.md#get_recommendations)
-- [get_session](./client.md#get_session)
-- [list_assistant_associations](./client.md#list_assistant_associations)
-- [list_assistants](./client.md#list_assistants)
-- [list_contents](./client.md#list_contents)
-- [list_knowledge_bases](./client.md#list_knowledge_bases)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [notify_recommendations_received](./client.md#notify_recommendations_received)
-- [query_assistant](./client.md#query_assistant)
-- [remove_knowledge_base_template_uri](./client.md#remove_knowledge_base_template_uri)
-- [search_content](./client.md#search_content)
-- [search_sessions](./client.md#search_sessions)
-- [start_content_upload](./client.md#start_content_upload)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_content](./client.md#update_content)
-- [update_knowledge_base_template_uri](./client.md#update_knowledge_base_template_uri)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ConnectWisdomServiceClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- PreconditionFailedException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- TooManyTagsException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("wisdom").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("wisdom").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_wisdom.paginator import ListAssistantAssociationsPaginator, ...
+from mypy_boto3_wisdom.paginator import ListAssistantAssociationsPaginator
+
+def get_list_assistant_associations_paginator() -> ListAssistantAssociationsPaginator:
+    return Session().client("wisdom").get_paginator("list_assistant_associations"))
 ```
 
 - [ListAssistantAssociationsPaginator](./paginators.md#listassistantassociationspaginator)
@@ -159,16 +83,23 @@ from mypy_boto3_wisdom.paginator import ListAssistantAssociationsPaginator, ...
 - [SearchContentPaginator](./paginators.md#searchcontentpaginator)
 - [SearchSessionsPaginator](./paginators.md#searchsessionspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_wisdom.literals import AssistantStatusType
 
-```python
-from mypy_boto3_wisdom.literals import AssistantStatusType, ...
+def get_value() -> AssistantStatusType:
+    return "ACTIVE"
 ```
 
 - [AssistantStatusType](./literals.md#assistantstatustype)
@@ -191,18 +122,23 @@ from mypy_boto3_wisdom.literals import AssistantStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_wisdom.type_defs import AppIntegrationsConfigurationTypeDef
 
-```python
-from mypy_boto3_wisdom.type_defs import AppIntegrationsConfigurationTypeDef, ...
+def get_value() -> AppIntegrationsConfigurationTypeDef:
+    return {
+        "appIntegrationArn": ...,
+        "objectFields": ...,
+    }
 ```
 
 - [AppIntegrationsConfigurationTypeDef](./type_defs.md#appintegrationsconfigurationtypedef)
@@ -250,12 +186,16 @@ from mypy_boto3_wisdom.type_defs import AppIntegrationsConfigurationTypeDef, ...
 - [KnowledgeBaseAssociationDataTypeDef](./type_defs.md#knowledgebaseassociationdatatypedef)
 - [KnowledgeBaseDataTypeDef](./type_defs.md#knowledgebasedatatypedef)
 - [KnowledgeBaseSummaryTypeDef](./type_defs.md#knowledgebasesummarytypedef)
+- [ListAssistantAssociationsRequestListAssistantAssociationsPaginateTypeDef](./type_defs.md#listassistantassociationsrequestlistassistantassociationspaginatetypedef)
 - [ListAssistantAssociationsRequestRequestTypeDef](./type_defs.md#listassistantassociationsrequestrequesttypedef)
 - [ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef)
+- [ListAssistantsRequestListAssistantsPaginateTypeDef](./type_defs.md#listassistantsrequestlistassistantspaginatetypedef)
 - [ListAssistantsRequestRequestTypeDef](./type_defs.md#listassistantsrequestrequesttypedef)
 - [ListAssistantsResponseTypeDef](./type_defs.md#listassistantsresponsetypedef)
+- [ListContentsRequestListContentsPaginateTypeDef](./type_defs.md#listcontentsrequestlistcontentspaginatetypedef)
 - [ListContentsRequestRequestTypeDef](./type_defs.md#listcontentsrequestrequesttypedef)
 - [ListContentsResponseTypeDef](./type_defs.md#listcontentsresponsetypedef)
+- [ListKnowledgeBasesRequestListKnowledgeBasesPaginateTypeDef](./type_defs.md#listknowledgebasesrequestlistknowledgebasespaginatetypedef)
 - [ListKnowledgeBasesRequestRequestTypeDef](./type_defs.md#listknowledgebasesrequestrequesttypedef)
 - [ListKnowledgeBasesResponseTypeDef](./type_defs.md#listknowledgebasesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -264,6 +204,7 @@ from mypy_boto3_wisdom.type_defs import AppIntegrationsConfigurationTypeDef, ...
 - [NotifyRecommendationsReceivedRequestRequestTypeDef](./type_defs.md#notifyrecommendationsreceivedrequestrequesttypedef)
 - [NotifyRecommendationsReceivedResponseTypeDef](./type_defs.md#notifyrecommendationsreceivedresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [QueryAssistantRequestQueryAssistantPaginateTypeDef](./type_defs.md#queryassistantrequestqueryassistantpaginatetypedef)
 - [QueryAssistantRequestRequestTypeDef](./type_defs.md#queryassistantrequestrequesttypedef)
 - [QueryAssistantResponseTypeDef](./type_defs.md#queryassistantresponsetypedef)
 - [RecommendationDataTypeDef](./type_defs.md#recommendationdatatypedef)
@@ -272,9 +213,11 @@ from mypy_boto3_wisdom.type_defs import AppIntegrationsConfigurationTypeDef, ...
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ResultDataTypeDef](./type_defs.md#resultdatatypedef)
 - [SearchContentRequestRequestTypeDef](./type_defs.md#searchcontentrequestrequesttypedef)
+- [SearchContentRequestSearchContentPaginateTypeDef](./type_defs.md#searchcontentrequestsearchcontentpaginatetypedef)
 - [SearchContentResponseTypeDef](./type_defs.md#searchcontentresponsetypedef)
 - [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
 - [SearchSessionsRequestRequestTypeDef](./type_defs.md#searchsessionsrequestrequesttypedef)
+- [SearchSessionsRequestSearchSessionsPaginateTypeDef](./type_defs.md#searchsessionsrequestsearchsessionspaginatetypedef)
 - [SearchSessionsResponseTypeDef](./type_defs.md#searchsessionsresponsetypedef)
 - [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - [SessionDataTypeDef](./type_defs.md#sessiondatatypedef)
@@ -288,3 +231,4 @@ from mypy_boto3_wisdom.type_defs import AppIntegrationsConfigurationTypeDef, ...
 - [UpdateContentResponseTypeDef](./type_defs.md#updatecontentresponsetypedef)
 - [UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef](./type_defs.md#updateknowledgebasetemplateurirequestrequesttypedef)
 - [UpdateKnowledgeBaseTemplateUriResponseTypeDef](./type_defs.md#updateknowledgebasetemplateuriresponsetypedef)
+

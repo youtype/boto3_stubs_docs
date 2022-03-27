@@ -1,65 +1,18 @@
-<a id="transferclient-for-boto3-transfer-module"></a>
-
-# TransferClient for boto3 Transfer module
+# TransferClient
 
 > [Index](../README.md) > [Transfer](./README.md) > TransferClient
 
-Auto-generated documentation for
-[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
-type annotations stubs module
-[mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
+!!! note ""
 
-- [TransferClient for boto3 Transfer module](#transferclient-for-boto3-transfer-module)
-  - [TransferClient](#transferclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_access](#create_access)
-    - [create_server](#create_server)
-    - [create_user](#create_user)
-    - [create_workflow](#create_workflow)
-    - [delete_access](#delete_access)
-    - [delete_server](#delete_server)
-    - [delete_ssh_public_key](#delete_ssh_public_key)
-    - [delete_user](#delete_user)
-    - [delete_workflow](#delete_workflow)
-    - [describe_access](#describe_access)
-    - [describe_execution](#describe_execution)
-    - [describe_security_policy](#describe_security_policy)
-    - [describe_server](#describe_server)
-    - [describe_user](#describe_user)
-    - [describe_workflow](#describe_workflow)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [import_ssh_public_key](#import_ssh_public_key)
-    - [list_accesses](#list_accesses)
-    - [list_executions](#list_executions)
-    - [list_security_policies](#list_security_policies)
-    - [list_servers](#list_servers)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_users](#list_users)
-    - [list_workflows](#list_workflows)
-    - [send_workflow_step_state](#send_workflow_step_state)
-    - [start_server](#start_server)
-    - [stop_server](#stop_server)
-    - [tag_resource](#tag_resource)
-    - [test_identity_provider](#test_identity_provider)
-    - [untag_resource](#untag_resource)
-    - [update_access](#update_access)
-    - [update_server](#update_server)
-    - [update_user](#update_user)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="transferclient"></a>
+    Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+    type annotations stubs module [mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 ## TransferClient
 
-Type annotations for `boto3.client("transfer")`
+Type annotations and code completion for `#!python boto3.client("transfer")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_transfer.client import TransferClient
 
@@ -67,898 +20,1186 @@ def get_transfer_client() -> TransferClient:
     return Session().client("transfer")
 ```
 
-Boto3 documentation:
-[Transfer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("transfer").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("transfer")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServiceError,
+    client.InvalidNextTokenException,
+    client.InvalidRequestException,
+    client.ResourceExistsException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.ThrottlingException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_transfer.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServiceError`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.ResourceExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottlingException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-TransferClient exceptions.
-
-Type annotations for `boto3.client("transfer").exceptions` method.
-
-Boto3 documentation:
-[Transfer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("transfer").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("transfer").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.can_paginate)
 
-Boto3 documentation:
-[Transfer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_access"></a>
-
-### create_access
+### create\_access
 
 Used by administrators to choose which groups in the directory should have
 access to upload and download files over the enabled protocols using Amazon Web
 Services Transfer Family.
 
-Type annotations for `boto3.client("transfer").create_access` method.
+Type annotations and code completion for `#!python boto3.client("transfer").create_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_access)
 
-Boto3 documentation:
-[Transfer.Client.create_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_access)
+```python title="Method definition"
+def create_access(
+    self,
+    *,
+    Role: str,
+    ServerId: str,
+    ExternalId: str,
+    HomeDirectory: str = ...,
+    HomeDirectoryType: HomeDirectoryTypeType = ...,  # (1)
+    HomeDirectoryMappings: Sequence[HomeDirectoryMapEntryTypeDef] = ...,  # (2)
+    Policy: str = ...,
+    PosixProfile: PosixProfileTypeDef = ...,  # (3)
+) -> CreateAccessResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateAccessRequestRequestTypeDef](./type_defs.md#createaccessrequestrequesttypedef).
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+4. See [:material-code-braces: CreateAccessResponseTypeDef](./type_defs.md#createaccessresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Role`: `str` *(required)*
-- `ServerId`: `str` *(required)*
-- `ExternalId`: `str` *(required)*
-- `HomeDirectory`: `str`
-- `HomeDirectoryType`:
-  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
-- `HomeDirectoryMappings`:
-  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
-- `Policy`: `str`
-- `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateAccessRequestRequestTypeDef = {  # (1)
+    "Role": ...,
+    "ServerId": ...,
+    "ExternalId": ...,
+}
 
-Returns
-[CreateAccessResponseTypeDef](./type_defs.md#createaccessresponsetypedef).
+parent.create_access(**kwargs)
+```
 
-<a id="create\_server"></a>
+1. See [:material-code-braces: CreateAccessRequestRequestTypeDef](./type_defs.md#createaccessrequestrequesttypedef) 
 
-### create_server
+### create\_server
 
 Instantiates an auto-scaling virtual server based on the selected file transfer
 protocol in Amazon Web Services.
 
-Type annotations for `boto3.client("transfer").create_server` method.
+Type annotations and code completion for `#!python boto3.client("transfer").create_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server)
 
-Boto3 documentation:
-[Transfer.Client.create_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_server)
+```python title="Method definition"
+def create_server(
+    self,
+    *,
+    Certificate: str = ...,
+    Domain: DomainType = ...,  # (1)
+    EndpointDetails: EndpointDetailsTypeDef = ...,  # (2)
+    EndpointType: EndpointTypeType = ...,  # (3)
+    HostKey: str = ...,
+    IdentityProviderDetails: IdentityProviderDetailsTypeDef = ...,  # (4)
+    IdentityProviderType: IdentityProviderTypeType = ...,  # (5)
+    LoggingRole: str = ...,
+    PostAuthenticationLoginBanner: str = ...,
+    PreAuthenticationLoginBanner: str = ...,
+    Protocols: Sequence[ProtocolType] = ...,  # (6)
+    ProtocolDetails: ProtocolDetailsTypeDef = ...,  # (7)
+    SecurityPolicyName: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (8)
+    WorkflowDetails: WorkflowDetailsTypeDef = ...,  # (9)
+) -> CreateServerResponseTypeDef:  # (10)
+    ...
+```
 
-Arguments mapping described in
-[CreateServerRequestRequestTypeDef](./type_defs.md#createserverrequestrequesttypedef).
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
+3. See [:material-code-brackets: EndpointTypeType](./literals.md#endpointtypetype) 
+4. See [:material-code-braces: IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef) 
+5. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
+6. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+7. See [:material-code-braces: ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef) 
+10. See [:material-code-braces: CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Certificate`: `str`
-- `Domain`: [DomainType](./literals.md#domaintype)
-- `EndpointDetails`:
-  [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
-- `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
-- `HostKey`: `str`
-- `IdentityProviderDetails`:
-  [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
-- `IdentityProviderType`:
-  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
-- `LoggingRole`: `str`
-- `PostAuthenticationLoginBanner`: `str`
-- `PreAuthenticationLoginBanner`: `str`
-- `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
-- `ProtocolDetails`:
-  [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
-- `SecurityPolicyName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `WorkflowDetails`:
-  [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateServerRequestRequestTypeDef = {  # (1)
+    "Certificate": ...,
+}
 
-Returns
-[CreateServerResponseTypeDef](./type_defs.md#createserverresponsetypedef).
+parent.create_server(**kwargs)
+```
 
-<a id="create\_user"></a>
+1. See [:material-code-braces: CreateServerRequestRequestTypeDef](./type_defs.md#createserverrequestrequesttypedef) 
 
-### create_user
+### create\_user
 
 Creates a user and associates them with an existing file transfer protocol-
 enabled server.
 
-Type annotations for `boto3.client("transfer").create_user` method.
+Type annotations and code completion for `#!python boto3.client("transfer").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user)
 
-Boto3 documentation:
-[Transfer.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    Role: str,
+    ServerId: str,
+    UserName: str,
+    HomeDirectory: str = ...,
+    HomeDirectoryType: HomeDirectoryTypeType = ...,  # (1)
+    HomeDirectoryMappings: Sequence[HomeDirectoryMapEntryTypeDef] = ...,  # (2)
+    Policy: str = ...,
+    PosixProfile: PosixProfileTypeDef = ...,  # (3)
+    SshPublicKeyBody: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateUserResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Role`: `str` *(required)*
-- `ServerId`: `str` *(required)*
-- `UserName`: `str` *(required)*
-- `HomeDirectory`: `str`
-- `HomeDirectoryType`:
-  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
-- `HomeDirectoryMappings`:
-  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
-- `Policy`: `str`
-- `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
-- `SshPublicKeyBody`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "Role": ...,
+    "ServerId": ...,
+    "UserName": ...,
+}
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+parent.create_user(**kwargs)
+```
 
-<a id="create\_workflow"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### create_workflow
+### create\_workflow
 
 Allows you to create a workflow with specified steps and step details the
 workflow invokes after file transfer completes.
 
-Type annotations for `boto3.client("transfer").create_workflow` method.
+Type annotations and code completion for `#!python boto3.client("transfer").create_workflow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_workflow)
 
-Boto3 documentation:
-[Transfer.Client.create_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.create_workflow)
+```python title="Method definition"
+def create_workflow(
+    self,
+    *,
+    Steps: Sequence[WorkflowStepTypeDef],  # (1)
+    Description: str = ...,
+    OnExceptionSteps: Sequence[WorkflowStepTypeDef] = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateWorkflowResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkflowRequestRequestTypeDef](./type_defs.md#createworkflowrequestrequesttypedef).
+1. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
+2. See [:material-code-braces: WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Steps`:
-  `Sequence`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
-  *(required)*
-- `Description`: `str`
-- `OnExceptionSteps`:
-  `Sequence`\[[WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateWorkflowRequestRequestTypeDef = {  # (1)
+    "Steps": ...,
+}
 
-Returns
-[CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
+parent.create_workflow(**kwargs)
+```
 
-<a id="delete\_access"></a>
+1. See [:material-code-braces: CreateWorkflowRequestRequestTypeDef](./type_defs.md#createworkflowrequestrequesttypedef) 
 
-### delete_access
+### delete\_access
 
 Allows you to delete the access specified in the `ServerID` and `ExternalID`
 parameters.
 
-Type annotations for `boto3.client("transfer").delete_access` method.
+Type annotations and code completion for `#!python boto3.client("transfer").delete_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_access)
 
-Boto3 documentation:
-[Transfer.Client.delete_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_access)
+```python title="Method definition"
+def delete_access(
+    self,
+    *,
+    ServerId: str,
+    ExternalId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessRequestRequestTypeDef](./type_defs.md#deleteaccessrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `ExternalId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "ExternalId": ...,
+}
 
-<a id="delete\_server"></a>
+parent.delete_access(**kwargs)
+```
 
-### delete_server
+1. See [:material-code-braces: DeleteAccessRequestRequestTypeDef](./type_defs.md#deleteaccessrequestrequesttypedef) 
+
+### delete\_server
 
 Deletes the file transfer protocol-enabled server that you specify.
 
-Type annotations for `boto3.client("transfer").delete_server` method.
+Type annotations and code completion for `#!python boto3.client("transfer").delete_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server)
 
-Boto3 documentation:
-[Transfer.Client.delete_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_server)
+```python title="Method definition"
+def delete_server(
+    self,
+    *,
+    ServerId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteServerRequestRequestTypeDef](./type_defs.md#deleteserverrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteServerRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+}
 
-<a id="delete\_ssh\_public\_key"></a>
+parent.delete_server(**kwargs)
+```
 
-### delete_ssh_public_key
+1. See [:material-code-braces: DeleteServerRequestRequestTypeDef](./type_defs.md#deleteserverrequestrequesttypedef) 
+
+### delete\_ssh\_public\_key
 
 Deletes a user's Secure Shell (SSH) public key.
 
-Type annotations for `boto3.client("transfer").delete_ssh_public_key` method.
+Type annotations and code completion for `#!python boto3.client("transfer").delete_ssh_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key)
 
-Boto3 documentation:
-[Transfer.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_ssh_public_key)
+```python title="Method definition"
+def delete_ssh_public_key(
+    self,
+    *,
+    ServerId: str,
+    SshPublicKeyId: str,
+    UserName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSshPublicKeyRequestRequestTypeDef](./type_defs.md#deletesshpublickeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `SshPublicKeyId`: `str` *(required)*
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSshPublicKeyRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "SshPublicKeyId": ...,
+    "UserName": ...,
+}
 
-<a id="delete\_user"></a>
+parent.delete_ssh_public_key(**kwargs)
+```
 
-### delete_user
+1. See [:material-code-braces: DeleteSshPublicKeyRequestRequestTypeDef](./type_defs.md#deletesshpublickeyrequestrequesttypedef) 
+
+### delete\_user
 
 Deletes the user belonging to a file transfer protocol-enabled server you
 specify.
 
-Type annotations for `boto3.client("transfer").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("transfer").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user)
 
-Boto3 documentation:
-[Transfer.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    ServerId: str,
+    UserName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "UserName": ...,
+}
 
-<a id="delete\_workflow"></a>
+parent.delete_user(**kwargs)
+```
 
-### delete_workflow
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
+
+### delete\_workflow
 
 Deletes the specified workflow.
 
-Type annotations for `boto3.client("transfer").delete_workflow` method.
+Type annotations and code completion for `#!python boto3.client("transfer").delete_workflow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_workflow)
 
-Boto3 documentation:
-[Transfer.Client.delete_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.delete_workflow)
+```python title="Method definition"
+def delete_workflow(
+    self,
+    *,
+    WorkflowId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkflowRequestRequestTypeDef](./type_defs.md#deleteworkflowrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkflowId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkflowRequestRequestTypeDef = {  # (1)
+    "WorkflowId": ...,
+}
 
-<a id="describe\_access"></a>
+parent.delete_workflow(**kwargs)
+```
 
-### describe_access
+1. See [:material-code-braces: DeleteWorkflowRequestRequestTypeDef](./type_defs.md#deleteworkflowrequestrequesttypedef) 
+
+### describe\_access
 
 Describes the access that is assigned to the specific file transfer protocol-
 enabled server, as identified by its `ServerId` property and its `ExternalID` .
 
-Type annotations for `boto3.client("transfer").describe_access` method.
+Type annotations and code completion for `#!python boto3.client("transfer").describe_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_access)
 
-Boto3 documentation:
-[Transfer.Client.describe_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_access)
+```python title="Method definition"
+def describe_access(
+    self,
+    *,
+    ServerId: str,
+    ExternalId: str,
+) -> DescribeAccessResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccessRequestRequestTypeDef](./type_defs.md#describeaccessrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAccessResponseTypeDef](./type_defs.md#describeaccessresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `ExternalId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAccessRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "ExternalId": ...,
+}
 
-Returns
-[DescribeAccessResponseTypeDef](./type_defs.md#describeaccessresponsetypedef).
+parent.describe_access(**kwargs)
+```
 
-<a id="describe\_execution"></a>
+1. See [:material-code-braces: DescribeAccessRequestRequestTypeDef](./type_defs.md#describeaccessrequestrequesttypedef) 
 
-### describe_execution
+### describe\_execution
 
 You can use `DescribeExecution` to check the details of the execution of the
 specified workflow.
 
-Type annotations for `boto3.client("transfer").describe_execution` method.
+Type annotations and code completion for `#!python boto3.client("transfer").describe_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_execution)
 
-Boto3 documentation:
-[Transfer.Client.describe_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_execution)
+```python title="Method definition"
+def describe_execution(
+    self,
+    *,
+    ExecutionId: str,
+    WorkflowId: str,
+) -> DescribeExecutionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExecutionRequestRequestTypeDef](./type_defs.md#describeexecutionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeExecutionResponseTypeDef](./type_defs.md#describeexecutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ExecutionId`: `str` *(required)*
-- `WorkflowId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeExecutionRequestRequestTypeDef = {  # (1)
+    "ExecutionId": ...,
+    "WorkflowId": ...,
+}
 
-Returns
-[DescribeExecutionResponseTypeDef](./type_defs.md#describeexecutionresponsetypedef).
+parent.describe_execution(**kwargs)
+```
 
-<a id="describe\_security\_policy"></a>
+1. See [:material-code-braces: DescribeExecutionRequestRequestTypeDef](./type_defs.md#describeexecutionrequestrequesttypedef) 
 
-### describe_security_policy
+### describe\_security\_policy
 
 Describes the security policy that is attached to your file transfer protocol-
 enabled server.
 
-Type annotations for `boto3.client("transfer").describe_security_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("transfer").describe_security_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy)
 
-Boto3 documentation:
-[Transfer.Client.describe_security_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_security_policy)
+```python title="Method definition"
+def describe_security_policy(
+    self,
+    *,
+    SecurityPolicyName: str,
+) -> DescribeSecurityPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSecurityPolicyRequestRequestTypeDef](./type_defs.md#describesecuritypolicyrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSecurityPolicyResponseTypeDef](./type_defs.md#describesecuritypolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecurityPolicyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSecurityPolicyRequestRequestTypeDef = {  # (1)
+    "SecurityPolicyName": ...,
+}
 
-Returns
-[DescribeSecurityPolicyResponseTypeDef](./type_defs.md#describesecuritypolicyresponsetypedef).
+parent.describe_security_policy(**kwargs)
+```
 
-<a id="describe\_server"></a>
+1. See [:material-code-braces: DescribeSecurityPolicyRequestRequestTypeDef](./type_defs.md#describesecuritypolicyrequestrequesttypedef) 
 
-### describe_server
+### describe\_server
 
 Describes a file transfer protocol-enabled server that you specify by passing
 the `ServerId` parameter.
 
-Type annotations for `boto3.client("transfer").describe_server` method.
+Type annotations and code completion for `#!python boto3.client("transfer").describe_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server)
 
-Boto3 documentation:
-[Transfer.Client.describe_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_server)
+```python title="Method definition"
+def describe_server(
+    self,
+    *,
+    ServerId: str,
+) -> DescribeServerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeServerRequestRequestTypeDef](./type_defs.md#describeserverrequestrequesttypedef).
+1. See [:material-code-braces: DescribeServerResponseTypeDef](./type_defs.md#describeserverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeServerRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+}
 
-Returns
-[DescribeServerResponseTypeDef](./type_defs.md#describeserverresponsetypedef).
+parent.describe_server(**kwargs)
+```
 
-<a id="describe\_user"></a>
+1. See [:material-code-braces: DescribeServerRequestRequestTypeDef](./type_defs.md#describeserverrequestrequesttypedef) 
 
-### describe_user
+### describe\_user
 
 Describes the user assigned to the specific file transfer protocol-enabled
 server, as identified by its `ServerId` property.
 
-Type annotations for `boto3.client("transfer").describe_user` method.
+Type annotations and code completion for `#!python boto3.client("transfer").describe_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user)
 
-Boto3 documentation:
-[Transfer.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_user)
+```python title="Method definition"
+def describe_user(
+    self,
+    *,
+    ServerId: str,
+    UserName: str,
+) -> DescribeUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "UserName": ...,
+}
 
-Returns
-[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+parent.describe_user(**kwargs)
+```
 
-<a id="describe\_workflow"></a>
+1. See [:material-code-braces: DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef) 
 
-### describe_workflow
+### describe\_workflow
 
 Describes the specified workflow.
 
-Type annotations for `boto3.client("transfer").describe_workflow` method.
+Type annotations and code completion for `#!python boto3.client("transfer").describe_workflow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_workflow)
 
-Boto3 documentation:
-[Transfer.Client.describe_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.describe_workflow)
+```python title="Method definition"
+def describe_workflow(
+    self,
+    *,
+    WorkflowId: str,
+) -> DescribeWorkflowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkflowRequestRequestTypeDef](./type_defs.md#describeworkflowrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkflowResponseTypeDef](./type_defs.md#describeworkflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `WorkflowId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkflowRequestRequestTypeDef = {  # (1)
+    "WorkflowId": ...,
+}
 
-Returns
-[DescribeWorkflowResponseTypeDef](./type_defs.md#describeworkflowresponsetypedef).
+parent.describe_workflow(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeWorkflowRequestRequestTypeDef](./type_defs.md#describeworkflowrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("transfer").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("transfer").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Transfer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="import\_ssh\_public\_key"></a>
-
-### import_ssh_public_key
+### import\_ssh\_public\_key
 
 Adds a Secure Shell (SSH) public key to a user account identified by a
-`UserName` value assigned to the specific file transfer protocol-enabled
-server, identified by `ServerId` .
+`UserName` value assigned to the specific file transfer protocol-enabled server,
+identified by `ServerId` .
 
-Type annotations for `boto3.client("transfer").import_ssh_public_key` method.
+Type annotations and code completion for `#!python boto3.client("transfer").import_ssh_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key)
 
-Boto3 documentation:
-[Transfer.Client.import_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.import_ssh_public_key)
+```python title="Method definition"
+def import_ssh_public_key(
+    self,
+    *,
+    ServerId: str,
+    SshPublicKeyBody: str,
+    UserName: str,
+) -> ImportSshPublicKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ImportSshPublicKeyRequestRequestTypeDef](./type_defs.md#importsshpublickeyrequestrequesttypedef).
+1. See [:material-code-braces: ImportSshPublicKeyResponseTypeDef](./type_defs.md#importsshpublickeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `SshPublicKeyBody`: `str` *(required)*
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ImportSshPublicKeyRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "SshPublicKeyBody": ...,
+    "UserName": ...,
+}
 
-Returns
-[ImportSshPublicKeyResponseTypeDef](./type_defs.md#importsshpublickeyresponsetypedef).
+parent.import_ssh_public_key(**kwargs)
+```
 
-<a id="list\_accesses"></a>
+1. See [:material-code-braces: ImportSshPublicKeyRequestRequestTypeDef](./type_defs.md#importsshpublickeyrequestrequesttypedef) 
 
-### list_accesses
+### list\_accesses
 
 Lists the details for all the accesses you have on your server.
 
-Type annotations for `boto3.client("transfer").list_accesses` method.
+Type annotations and code completion for `#!python boto3.client("transfer").list_accesses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_accesses)
 
-Boto3 documentation:
-[Transfer.Client.list_accesses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_accesses)
+```python title="Method definition"
+def list_accesses(
+    self,
+    *,
+    ServerId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAccessesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccessesRequestRequestTypeDef](./type_defs.md#listaccessesrequestrequesttypedef).
+1. See [:material-code-braces: ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAccessesRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+}
 
-Returns
-[ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef).
+parent.list_accesses(**kwargs)
+```
 
-<a id="list\_executions"></a>
+1. See [:material-code-braces: ListAccessesRequestRequestTypeDef](./type_defs.md#listaccessesrequestrequesttypedef) 
 
-### list_executions
+### list\_executions
 
 Lists all executions for the specified workflow.
 
-Type annotations for `boto3.client("transfer").list_executions` method.
+Type annotations and code completion for `#!python boto3.client("transfer").list_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_executions)
 
-Boto3 documentation:
-[Transfer.Client.list_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_executions)
+```python title="Method definition"
+def list_executions(
+    self,
+    *,
+    WorkflowId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListExecutionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListExecutionsRequestRequestTypeDef](./type_defs.md#listexecutionsrequestrequesttypedef).
+1. See [:material-code-braces: ListExecutionsResponseTypeDef](./type_defs.md#listexecutionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `WorkflowId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListExecutionsRequestRequestTypeDef = {  # (1)
+    "WorkflowId": ...,
+}
 
-Returns
-[ListExecutionsResponseTypeDef](./type_defs.md#listexecutionsresponsetypedef).
+parent.list_executions(**kwargs)
+```
 
-<a id="list\_security\_policies"></a>
+1. See [:material-code-braces: ListExecutionsRequestRequestTypeDef](./type_defs.md#listexecutionsrequestrequesttypedef) 
 
-### list_security_policies
+### list\_security\_policies
 
 Lists the security policies that are attached to your file transfer protocol-
 enabled servers.
 
-Type annotations for `boto3.client("transfer").list_security_policies` method.
+Type annotations and code completion for `#!python boto3.client("transfer").list_security_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies)
 
-Boto3 documentation:
-[Transfer.Client.list_security_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_security_policies)
+```python title="Method definition"
+def list_security_policies(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSecurityPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSecurityPoliciesRequestRequestTypeDef](./type_defs.md#listsecuritypoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListSecurityPoliciesResponseTypeDef](./type_defs.md#listsecuritypoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSecurityPoliciesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListSecurityPoliciesResponseTypeDef](./type_defs.md#listsecuritypoliciesresponsetypedef).
+parent.list_security_policies(**kwargs)
+```
 
-<a id="list\_servers"></a>
+1. See [:material-code-braces: ListSecurityPoliciesRequestRequestTypeDef](./type_defs.md#listsecuritypoliciesrequestrequesttypedef) 
 
-### list_servers
+### list\_servers
 
 Lists the file transfer protocol-enabled servers that are associated with your
 Amazon Web Services account.
 
-Type annotations for `boto3.client("transfer").list_servers` method.
+Type annotations and code completion for `#!python boto3.client("transfer").list_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers)
 
-Boto3 documentation:
-[Transfer.Client.list_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_servers)
+```python title="Method definition"
+def list_servers(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListServersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServersRequestRequestTypeDef](./type_defs.md#listserversrequestrequesttypedef).
+1. See [:material-code-braces: ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServersRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef).
+parent.list_servers(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListServersRequestRequestTypeDef](./type_defs.md#listserversrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all of the tags associated with the Amazon Resource Name (ARN) that you
 specify.
 
-Type annotations for `boto3.client("transfer").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("transfer").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Transfer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    Arn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_users
+### list\_users
 
 Lists the users for a file transfer protocol-enabled server that you specify by
 passing the `ServerId` parameter.
 
-Type annotations for `boto3.client("transfer").list_users` method.
+Type annotations and code completion for `#!python boto3.client("transfer").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users)
 
-Boto3 documentation:
-[Transfer.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    ServerId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
 
-<a id="list\_workflows"></a>
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
-### list_workflows
+### list\_workflows
 
 Lists all of your workflows.
 
-Type annotations for `boto3.client("transfer").list_workflows` method.
+Type annotations and code completion for `#!python boto3.client("transfer").list_workflows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_workflows)
 
-Boto3 documentation:
-[Transfer.Client.list_workflows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.list_workflows)
+```python title="Method definition"
+def list_workflows(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListWorkflowsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkflowsRequestRequestTypeDef](./type_defs.md#listworkflowsrequestrequesttypedef).
+1. See [:material-code-braces: ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListWorkflowsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef).
+parent.list_workflows(**kwargs)
+```
 
-<a id="send\_workflow\_step\_state"></a>
+1. See [:material-code-braces: ListWorkflowsRequestRequestTypeDef](./type_defs.md#listworkflowsrequestrequesttypedef) 
 
-### send_workflow_step_state
+### send\_workflow\_step\_state
 
 Sends a callback for asynchronous custom steps.
 
-Type annotations for `boto3.client("transfer").send_workflow_step_state`
-method.
+Type annotations and code completion for `#!python boto3.client("transfer").send_workflow_step_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.send_workflow_step_state)
 
-Boto3 documentation:
-[Transfer.Client.send_workflow_step_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.send_workflow_step_state)
+```python title="Method definition"
+def send_workflow_step_state(
+    self,
+    *,
+    WorkflowId: str,
+    ExecutionId: str,
+    Token: str,
+    Status: CustomStepStatusType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SendWorkflowStepStateRequestRequestTypeDef](./type_defs.md#sendworkflowstepstaterequestrequesttypedef).
+1. See [:material-code-brackets: CustomStepStatusType](./literals.md#customstepstatustype) 
 
-Keyword-only arguments:
 
-- `WorkflowId`: `str` *(required)*
-- `ExecutionId`: `str` *(required)*
-- `Token`: `str` *(required)*
-- `Status`: [CustomStepStatusType](./literals.md#customstepstatustype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SendWorkflowStepStateRequestRequestTypeDef = {  # (1)
+    "WorkflowId": ...,
+    "ExecutionId": ...,
+    "Token": ...,
+    "Status": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.send_workflow_step_state(**kwargs)
+```
 
-<a id="start\_server"></a>
+1. See [:material-code-braces: SendWorkflowStepStateRequestRequestTypeDef](./type_defs.md#sendworkflowstepstaterequestrequesttypedef) 
 
-### start_server
+### start\_server
 
 Changes the state of a file transfer protocol-enabled server from `OFFLINE` to
 `ONLINE`.
 
-Type annotations for `boto3.client("transfer").start_server` method.
+Type annotations and code completion for `#!python boto3.client("transfer").start_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server)
 
-Boto3 documentation:
-[Transfer.Client.start_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.start_server)
+```python title="Method definition"
+def start_server(
+    self,
+    *,
+    ServerId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StartServerRequestRequestTypeDef](./type_defs.md#startserverrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartServerRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+}
 
-<a id="stop\_server"></a>
+parent.start_server(**kwargs)
+```
 
-### stop_server
+1. See [:material-code-braces: StartServerRequestRequestTypeDef](./type_defs.md#startserverrequestrequesttypedef) 
+
+### stop\_server
 
 Changes the state of a file transfer protocol-enabled server from `ONLINE` to
 `OFFLINE`.
 
-Type annotations for `boto3.client("transfer").stop_server` method.
+Type annotations and code completion for `#!python boto3.client("transfer").stop_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server)
 
-Boto3 documentation:
-[Transfer.Client.stop_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.stop_server)
+```python title="Method definition"
+def stop_server(
+    self,
+    *,
+    ServerId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopServerRequestRequestTypeDef](./type_defs.md#stopserverrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopServerRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.stop_server(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: StopServerRequestRequestTypeDef](./type_defs.md#stopserverrequestrequesttypedef) 
+
+### tag\_resource
 
 Attaches a key-value pair to a resource, as identified by its Amazon Resource
 Name (ARN).
 
-Type annotations for `boto3.client("transfer").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("transfer").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource)
 
-Boto3 documentation:
-[Transfer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    Arn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "Tags": ...,
+}
 
-<a id="test\_identity\_provider"></a>
+parent.tag_resource(**kwargs)
+```
 
-### test_identity_provider
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### test\_identity\_provider
 
 If the `IdentityProviderType` of a file transfer protocol-enabled server is
 `AWS_DIRECTORY_SERVICE` or `API_Gateway` , tests whether your identity provider
 is set up successfully.
 
-Type annotations for `boto3.client("transfer").test_identity_provider` method.
+Type annotations and code completion for `#!python boto3.client("transfer").test_identity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider)
 
-Boto3 documentation:
-[Transfer.Client.test_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.test_identity_provider)
+```python title="Method definition"
+def test_identity_provider(
+    self,
+    *,
+    ServerId: str,
+    UserName: str,
+    ServerProtocol: ProtocolType = ...,  # (1)
+    SourceIp: str = ...,
+    UserPassword: str = ...,
+) -> TestIdentityProviderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TestIdentityProviderRequestRequestTypeDef](./type_defs.md#testidentityproviderrequestrequesttypedef).
+1. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+2. See [:material-code-braces: TestIdentityProviderResponseTypeDef](./type_defs.md#testidentityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `UserName`: `str` *(required)*
-- `ServerProtocol`: [ProtocolType](./literals.md#protocoltype)
-- `SourceIp`: `str`
-- `UserPassword`: `str`
+```python title="Usage example with kwargs"
+kwargs: TestIdentityProviderRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "UserName": ...,
+}
 
-Returns
-[TestIdentityProviderResponseTypeDef](./type_defs.md#testidentityproviderresponsetypedef).
+parent.test_identity_provider(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TestIdentityProviderRequestRequestTypeDef](./type_defs.md#testidentityproviderrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Detaches a key-value pair from a resource, as identified by its Amazon Resource
 Name (ARN).
 
-Type annotations for `boto3.client("transfer").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("transfer").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource)
 
-Boto3 documentation:
-[Transfer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    Arn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_access"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_access
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_access
 
 Allows you to update parameters for the access specified in the `ServerID` and
 `ExternalID` parameters.
 
-Type annotations for `boto3.client("transfer").update_access` method.
+Type annotations and code completion for `#!python boto3.client("transfer").update_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_access)
 
-Boto3 documentation:
-[Transfer.Client.update_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_access)
+```python title="Method definition"
+def update_access(
+    self,
+    *,
+    ServerId: str,
+    ExternalId: str,
+    HomeDirectory: str = ...,
+    HomeDirectoryType: HomeDirectoryTypeType = ...,  # (1)
+    HomeDirectoryMappings: Sequence[HomeDirectoryMapEntryTypeDef] = ...,  # (2)
+    Policy: str = ...,
+    PosixProfile: PosixProfileTypeDef = ...,  # (3)
+    Role: str = ...,
+) -> UpdateAccessResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccessRequestRequestTypeDef](./type_defs.md#updateaccessrequestrequesttypedef).
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+4. See [:material-code-braces: UpdateAccessResponseTypeDef](./type_defs.md#updateaccessresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `ExternalId`: `str` *(required)*
-- `HomeDirectory`: `str`
-- `HomeDirectoryType`:
-  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
-- `HomeDirectoryMappings`:
-  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
-- `Policy`: `str`
-- `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
-- `Role`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAccessRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "ExternalId": ...,
+}
 
-Returns
-[UpdateAccessResponseTypeDef](./type_defs.md#updateaccessresponsetypedef).
+parent.update_access(**kwargs)
+```
 
-<a id="update\_server"></a>
+1. See [:material-code-braces: UpdateAccessRequestRequestTypeDef](./type_defs.md#updateaccessrequestrequesttypedef) 
 
-### update_server
+### update\_server
 
-Updates the file transfer protocol-enabled server's properties after that
-server has been created.
+Updates the file transfer protocol-enabled server's properties after that server
+has been created.
 
-Type annotations for `boto3.client("transfer").update_server` method.
+Type annotations and code completion for `#!python boto3.client("transfer").update_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server)
 
-Boto3 documentation:
-[Transfer.Client.update_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_server)
+```python title="Method definition"
+def update_server(
+    self,
+    *,
+    ServerId: str,
+    Certificate: str = ...,
+    ProtocolDetails: ProtocolDetailsTypeDef = ...,  # (1)
+    EndpointDetails: EndpointDetailsTypeDef = ...,  # (2)
+    EndpointType: EndpointTypeType = ...,  # (3)
+    HostKey: str = ...,
+    IdentityProviderDetails: IdentityProviderDetailsTypeDef = ...,  # (4)
+    LoggingRole: str = ...,
+    PostAuthenticationLoginBanner: str = ...,
+    PreAuthenticationLoginBanner: str = ...,
+    Protocols: Sequence[ProtocolType] = ...,  # (5)
+    SecurityPolicyName: str = ...,
+    WorkflowDetails: WorkflowDetailsTypeDef = ...,  # (6)
+) -> UpdateServerResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServerRequestRequestTypeDef](./type_defs.md#updateserverrequestrequesttypedef).
+1. See [:material-code-braces: ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef) 
+2. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
+3. See [:material-code-brackets: EndpointTypeType](./literals.md#endpointtypetype) 
+4. See [:material-code-braces: IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef) 
+5. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+6. See [:material-code-braces: WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef) 
+7. See [:material-code-braces: UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `Certificate`: `str`
-- `ProtocolDetails`:
-  [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
-- `EndpointDetails`:
-  [EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)
-- `EndpointType`: [EndpointTypeType](./literals.md#endpointtypetype)
-- `HostKey`: `str`
-- `IdentityProviderDetails`:
-  [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
-- `LoggingRole`: `str`
-- `PostAuthenticationLoginBanner`: `str`
-- `PreAuthenticationLoginBanner`: `str`
-- `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
-- `SecurityPolicyName`: `str`
-- `WorkflowDetails`:
-  [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateServerRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+}
 
-Returns
-[UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef).
+parent.update_server(**kwargs)
+```
 
-<a id="update\_user"></a>
+1. See [:material-code-braces: UpdateServerRequestRequestTypeDef](./type_defs.md#updateserverrequestrequesttypedef) 
 
-### update_user
+### update\_user
 
 Assigns new properties to a user.
 
-Type annotations for `boto3.client("transfer").update_user` method.
+Type annotations and code completion for `#!python boto3.client("transfer").update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user)
 
-Boto3 documentation:
-[Transfer.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Client.update_user)
+```python title="Method definition"
+def update_user(
+    self,
+    *,
+    ServerId: str,
+    UserName: str,
+    HomeDirectory: str = ...,
+    HomeDirectoryType: HomeDirectoryTypeType = ...,  # (1)
+    HomeDirectoryMappings: Sequence[HomeDirectoryMapEntryTypeDef] = ...,  # (2)
+    Policy: str = ...,
+    PosixProfile: PosixProfileTypeDef = ...,  # (3)
+    Role: str = ...,
+) -> UpdateUserResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
+1. See [:material-code-brackets: HomeDirectoryTypeType](./literals.md#homedirectorytypetype) 
+2. See [:material-code-braces: HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef) 
+3. See [:material-code-braces: PosixProfileTypeDef](./type_defs.md#posixprofiletypedef) 
+4. See [:material-code-braces: UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerId`: `str` *(required)*
-- `UserName`: `str` *(required)*
-- `HomeDirectory`: `str`
-- `HomeDirectoryType`:
-  [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
-- `HomeDirectoryMappings`:
-  `Sequence`\[[HomeDirectoryMapEntryTypeDef](./type_defs.md#homedirectorymapentrytypedef)\]
-- `Policy`: `str`
-- `PosixProfile`: [PosixProfileTypeDef](./type_defs.md#posixprofiletypedef)
-- `Role`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRequestRequestTypeDef = {  # (1)
+    "ServerId": ...,
+    "UserName": ...,
+}
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+parent.update_user(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("transfer").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("transfer").get_paginator` method with overloads.
 
-- `client.get_paginator("list_accesses")` ->
-  [ListAccessesPaginator](./paginators.md#listaccessespaginator)
-- `client.get_paginator("list_executions")` ->
-  [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
-- `client.get_paginator("list_security_policies")` ->
-  [ListSecurityPoliciesPaginator](./paginators.md#listsecuritypoliciespaginator)
-- `client.get_paginator("list_servers")` ->
-  [ListServersPaginator](./paginators.md#listserverspaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_users")` ->
-  [ListUsersPaginator](./paginators.md#listuserspaginator)
-- `client.get_paginator("list_workflows")` ->
-  [ListWorkflowsPaginator](./paginators.md#listworkflowspaginator)
+- `client.get_paginator("list_accesses")` -> [ListAccessesPaginator](./paginators.md#listaccessespaginator)
+- `client.get_paginator("list_executions")` -> [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+- `client.get_paginator("list_security_policies")` -> [ListSecurityPoliciesPaginator](./paginators.md#listsecuritypoliciespaginator)
+- `client.get_paginator("list_servers")` -> [ListServersPaginator](./paginators.md#listserverspaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("list_workflows")` -> [ListWorkflowsPaginator](./paginators.md#listworkflowspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("transfer").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("transfer").get_waiter` method with overloads.
 
-- `client.get_waiter("server_offline")` ->
-  [ServerOfflineWaiter](./waiters.md#serverofflinewaiter)
-- `client.get_waiter("server_online")` ->
-  [ServerOnlineWaiter](./waiters.md#serveronlinewaiter)
+- `client.get_waiter("server_offline")` -> [ServerOfflineWaiter](./waiters.md#serverofflinewaiter)
+- `client.get_waiter("server_online")` -> [ServerOnlineWaiter](./waiters.md#serveronlinewaiter)
+

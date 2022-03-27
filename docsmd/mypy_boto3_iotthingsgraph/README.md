@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-iotthingsgraph-module"></a>
-
-# Type annotations for boto3 IoTThingsGraph module
+#  IoTThingsGraph module
 
 > [Index](../README.md) > IoTThingsGraph
 
-Auto-generated documentation for
-[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
-type annotations stubs module
-[mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+!!! note ""
 
-- [Type annotations for boto3 IoTThingsGraph module](#type-annotations-for-boto3-iotthingsgraph-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoTThingsGraphClient](#iotthingsgraphclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+    type annotations stubs module [mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoTThingsGraph`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iotthingsgraph]'
 python -m pip install mypy-boto3-iotthingsgraph
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,95 +42,37 @@ python -m pip install mypy-boto3-iotthingsgraph
 python -m pip uninstall -y mypy-boto3-iotthingsgraph
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="iotthingsgraphclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoTThingsGraphClient
 
-Type annotations for `boto3.client("iotthingsgraph")` as
-[IoTThingsGraphClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iotthingsgraph")` as [IoTThingsGraphClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iotthingsgraph.client import IoTThingsGraphClient
+
+def get_client() -> IoTThingsGraphClient:
+    return Session().cleint("iotthingsgraph")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_entity_to_thing](./client.md#associate_entity_to_thing)
-- [can_paginate](./client.md#can_paginate)
-- [create_flow_template](./client.md#create_flow_template)
-- [create_system_instance](./client.md#create_system_instance)
-- [create_system_template](./client.md#create_system_template)
-- [delete_flow_template](./client.md#delete_flow_template)
-- [delete_namespace](./client.md#delete_namespace)
-- [delete_system_instance](./client.md#delete_system_instance)
-- [delete_system_template](./client.md#delete_system_template)
-- [deploy_system_instance](./client.md#deploy_system_instance)
-- [deprecate_flow_template](./client.md#deprecate_flow_template)
-- [deprecate_system_template](./client.md#deprecate_system_template)
-- [describe_namespace](./client.md#describe_namespace)
-- [dissociate_entity_from_thing](./client.md#dissociate_entity_from_thing)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_entities](./client.md#get_entities)
-- [get_flow_template](./client.md#get_flow_template)
-- [get_flow_template_revisions](./client.md#get_flow_template_revisions)
-- [get_namespace_deletion_status](./client.md#get_namespace_deletion_status)
-- [get_paginator](./client.md#get_paginator)
-- [get_system_instance](./client.md#get_system_instance)
-- [get_system_template](./client.md#get_system_template)
-- [get_system_template_revisions](./client.md#get_system_template_revisions)
-- [get_upload_status](./client.md#get_upload_status)
-- [list_flow_execution_messages](./client.md#list_flow_execution_messages)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [search_entities](./client.md#search_entities)
-- [search_flow_executions](./client.md#search_flow_executions)
-- [search_flow_templates](./client.md#search_flow_templates)
-- [search_system_instances](./client.md#search_system_instances)
-- [search_system_templates](./client.md#search_system_templates)
-- [search_things](./client.md#search_things)
-- [tag_resource](./client.md#tag_resource)
-- [undeploy_system_instance](./client.md#undeploy_system_instance)
-- [untag_resource](./client.md#untag_resource)
-- [update_flow_template](./client.md#update_flow_template)
-- [update_system_template](./client.md#update_system_template)
-- [upload_entity_definitions](./client.md#upload_entity_definitions)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-IoTThingsGraphClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InternalFailureException
-- InvalidRequestException
-- LimitExceededException
-- ResourceAlreadyExistsException
-- ResourceInUseException
-- ResourceNotFoundException
-- ThrottlingException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("iotthingsgraph").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("iotthingsgraph").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_iotthingsgraph.paginator import GetFlowTemplateRevisionsPaginator, ...
+from mypy_boto3_iotthingsgraph.paginator import GetFlowTemplateRevisionsPaginator
+
+def get_get_flow_template_revisions_paginator() -> GetFlowTemplateRevisionsPaginator:
+    return Session().client("iotthingsgraph").get_paginator("get_flow_template_revisions"))
 ```
 
 - [GetFlowTemplateRevisionsPaginator](./paginators.md#getflowtemplaterevisionspaginator)
@@ -166,16 +86,23 @@ from mypy_boto3_iotthingsgraph.paginator import GetFlowTemplateRevisionsPaginato
 - [SearchSystemTemplatesPaginator](./paginators.md#searchsystemtemplatespaginator)
 - [SearchThingsPaginator](./paginators.md#searchthingspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotthingsgraph.literals import DefinitionLanguageType
 
-```python
-from mypy_boto3_iotthingsgraph.literals import DefinitionLanguageType, ...
+def get_value() -> DefinitionLanguageType:
+    return "GRAPHQL"
 ```
 
 - [DefinitionLanguageType](./literals.md#definitionlanguagetype)
@@ -205,18 +132,23 @@ from mypy_boto3_iotthingsgraph.literals import DefinitionLanguageType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotthingsgraph.type_defs import AssociateEntityToThingRequestRequestTypeDef
 
-```python
-from mypy_boto3_iotthingsgraph.type_defs import AssociateEntityToThingRequestRequestTypeDef, ...
+def get_value() -> AssociateEntityToThingRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+        "entityId": ...,
+    }
 ```
 
 - [AssociateEntityToThingRequestRequestTypeDef](./type_defs.md#associateentitytothingrequestrequesttypedef)
@@ -250,6 +182,7 @@ from mypy_boto3_iotthingsgraph.type_defs import AssociateEntityToThingRequestReq
 - [GetEntitiesResponseTypeDef](./type_defs.md#getentitiesresponsetypedef)
 - [GetFlowTemplateRequestRequestTypeDef](./type_defs.md#getflowtemplaterequestrequesttypedef)
 - [GetFlowTemplateResponseTypeDef](./type_defs.md#getflowtemplateresponsetypedef)
+- [GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef](./type_defs.md#getflowtemplaterevisionsrequestgetflowtemplaterevisionspaginatetypedef)
 - [GetFlowTemplateRevisionsRequestRequestTypeDef](./type_defs.md#getflowtemplaterevisionsrequestrequesttypedef)
 - [GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef)
 - [GetNamespaceDeletionStatusResponseTypeDef](./type_defs.md#getnamespacedeletionstatusresponsetypedef)
@@ -257,28 +190,37 @@ from mypy_boto3_iotthingsgraph.type_defs import AssociateEntityToThingRequestReq
 - [GetSystemInstanceResponseTypeDef](./type_defs.md#getsysteminstanceresponsetypedef)
 - [GetSystemTemplateRequestRequestTypeDef](./type_defs.md#getsystemtemplaterequestrequesttypedef)
 - [GetSystemTemplateResponseTypeDef](./type_defs.md#getsystemtemplateresponsetypedef)
+- [GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef](./type_defs.md#getsystemtemplaterevisionsrequestgetsystemtemplaterevisionspaginatetypedef)
 - [GetSystemTemplateRevisionsRequestRequestTypeDef](./type_defs.md#getsystemtemplaterevisionsrequestrequesttypedef)
 - [GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef)
 - [GetUploadStatusRequestRequestTypeDef](./type_defs.md#getuploadstatusrequestrequesttypedef)
 - [GetUploadStatusResponseTypeDef](./type_defs.md#getuploadstatusresponsetypedef)
+- [ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef](./type_defs.md#listflowexecutionmessagesrequestlistflowexecutionmessagespaginatetypedef)
 - [ListFlowExecutionMessagesRequestRequestTypeDef](./type_defs.md#listflowexecutionmessagesrequestrequesttypedef)
 - [ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SearchEntitiesRequestRequestTypeDef](./type_defs.md#searchentitiesrequestrequesttypedef)
+- [SearchEntitiesRequestSearchEntitiesPaginateTypeDef](./type_defs.md#searchentitiesrequestsearchentitiespaginatetypedef)
 - [SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef)
 - [SearchFlowExecutionsRequestRequestTypeDef](./type_defs.md#searchflowexecutionsrequestrequesttypedef)
+- [SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef](./type_defs.md#searchflowexecutionsrequestsearchflowexecutionspaginatetypedef)
 - [SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef)
 - [SearchFlowTemplatesRequestRequestTypeDef](./type_defs.md#searchflowtemplatesrequestrequesttypedef)
+- [SearchFlowTemplatesRequestSearchFlowTemplatesPaginateTypeDef](./type_defs.md#searchflowtemplatesrequestsearchflowtemplatespaginatetypedef)
 - [SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef)
 - [SearchSystemInstancesRequestRequestTypeDef](./type_defs.md#searchsysteminstancesrequestrequesttypedef)
+- [SearchSystemInstancesRequestSearchSystemInstancesPaginateTypeDef](./type_defs.md#searchsysteminstancesrequestsearchsysteminstancespaginatetypedef)
 - [SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef)
 - [SearchSystemTemplatesRequestRequestTypeDef](./type_defs.md#searchsystemtemplatesrequestrequesttypedef)
+- [SearchSystemTemplatesRequestSearchSystemTemplatesPaginateTypeDef](./type_defs.md#searchsystemtemplatesrequestsearchsystemtemplatespaginatetypedef)
 - [SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef)
 - [SearchThingsRequestRequestTypeDef](./type_defs.md#searchthingsrequestrequesttypedef)
+- [SearchThingsRequestSearchThingsPaginateTypeDef](./type_defs.md#searchthingsrequestsearchthingspaginatetypedef)
 - [SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef)
 - [SystemInstanceDescriptionTypeDef](./type_defs.md#systeminstancedescriptiontypedef)
 - [SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)
@@ -298,3 +240,4 @@ from mypy_boto3_iotthingsgraph.type_defs import AssociateEntityToThingRequestReq
 - [UpdateSystemTemplateResponseTypeDef](./type_defs.md#updatesystemtemplateresponsetypedef)
 - [UploadEntityDefinitionsRequestRequestTypeDef](./type_defs.md#uploadentitydefinitionsrequestrequesttypedef)
 - [UploadEntityDefinitionsResponseTypeDef](./type_defs.md#uploadentitydefinitionsresponsetypedef)
+

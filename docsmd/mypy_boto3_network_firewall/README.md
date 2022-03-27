@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-networkfirewall-module"></a>
-
-# Type annotations for boto3 NetworkFirewall module
+#  NetworkFirewall module
 
 > [Index](../README.md) > NetworkFirewall
 
-Auto-generated documentation for
-[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
-type annotations stubs module
-[mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+!!! note ""
 
-- [Type annotations for boto3 NetworkFirewall module](#type-annotations-for-boto3-networkfirewall-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [NetworkFirewallClient](#networkfirewallclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+    type annotations stubs module [mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `NetworkFirewall`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[network-firewall]'
 python -m pip install mypy-boto3-network-firewall
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,95 +42,37 @@ python -m pip install mypy-boto3-network-firewall
 python -m pip uninstall -y mypy-boto3-network-firewall
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="networkfirewallclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## NetworkFirewallClient
 
-Type annotations for `boto3.client("network-firewall")` as
-[NetworkFirewallClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("network-firewall")` as [NetworkFirewallClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_network_firewall.client import NetworkFirewallClient
+
+def get_client() -> NetworkFirewallClient:
+    return Session().cleint("network-firewall")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_firewall_policy](./client.md#associate_firewall_policy)
-- [associate_subnets](./client.md#associate_subnets)
-- [can_paginate](./client.md#can_paginate)
-- [create_firewall](./client.md#create_firewall)
-- [create_firewall_policy](./client.md#create_firewall_policy)
-- [create_rule_group](./client.md#create_rule_group)
-- [delete_firewall](./client.md#delete_firewall)
-- [delete_firewall_policy](./client.md#delete_firewall_policy)
-- [delete_resource_policy](./client.md#delete_resource_policy)
-- [delete_rule_group](./client.md#delete_rule_group)
-- [describe_firewall](./client.md#describe_firewall)
-- [describe_firewall_policy](./client.md#describe_firewall_policy)
-- [describe_logging_configuration](./client.md#describe_logging_configuration)
-- [describe_resource_policy](./client.md#describe_resource_policy)
-- [describe_rule_group](./client.md#describe_rule_group)
-- [describe_rule_group_metadata](./client.md#describe_rule_group_metadata)
-- [disassociate_subnets](./client.md#disassociate_subnets)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_firewall_policies](./client.md#list_firewall_policies)
-- [list_firewalls](./client.md#list_firewalls)
-- [list_rule_groups](./client.md#list_rule_groups)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_resource_policy](./client.md#put_resource_policy)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_firewall_delete_protection](./client.md#update_firewall_delete_protection)
-- [update_firewall_description](./client.md#update_firewall_description)
-- [update_firewall_policy](./client.md#update_firewall_policy)
-- [update_firewall_policy_change_protection](./client.md#update_firewall_policy_change_protection)
-- [update_logging_configuration](./client.md#update_logging_configuration)
-- [update_rule_group](./client.md#update_rule_group)
-- [update_subnet_change_protection](./client.md#update_subnet_change_protection)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-NetworkFirewallClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InsufficientCapacityException
-- InternalServerError
-- InvalidOperationException
-- InvalidRequestException
-- InvalidResourcePolicyException
-- InvalidTokenException
-- LimitExceededException
-- LogDestinationPermissionException
-- ResourceNotFoundException
-- ResourceOwnerCheckException
-- ThrottlingException
-- UnsupportedOperationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("network-firewall").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("network-firewall").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_network_firewall.paginator import ListFirewallPoliciesPaginator, ...
+from mypy_boto3_network_firewall.paginator import ListFirewallPoliciesPaginator
+
+def get_list_firewall_policies_paginator() -> ListFirewallPoliciesPaginator:
+    return Session().client("network-firewall").get_paginator("list_firewall_policies"))
 ```
 
 - [ListFirewallPoliciesPaginator](./paginators.md#listfirewallpoliciespaginator)
@@ -160,16 +80,23 @@ from mypy_boto3_network_firewall.paginator import ListFirewallPoliciesPaginator,
 - [ListRuleGroupsPaginator](./paginators.md#listrulegroupspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_network_firewall.literals import AttachmentStatusType
 
-```python
-from mypy_boto3_network_firewall.literals import AttachmentStatusType, ...
+def get_value() -> AttachmentStatusType:
+    return "CREATING"
 ```
 
 - [AttachmentStatusType](./literals.md#attachmentstatustype)
@@ -197,18 +124,22 @@ from mypy_boto3_network_firewall.literals import AttachmentStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_network_firewall.type_defs import ActionDefinitionTypeDef
 
-```python
-from mypy_boto3_network_firewall.type_defs import ActionDefinitionTypeDef, ...
+def get_value() -> ActionDefinitionTypeDef:
+    return {
+        "PublishMetricAction": ...,
+    }
 ```
 
 - [ActionDefinitionTypeDef](./type_defs.md#actiondefinitiontypedef)
@@ -255,12 +186,16 @@ from mypy_boto3_network_firewall.type_defs import ActionDefinitionTypeDef, ...
 - [FirewallTypeDef](./type_defs.md#firewalltypedef)
 - [HeaderTypeDef](./type_defs.md#headertypedef)
 - [IPSetTypeDef](./type_defs.md#ipsettypedef)
+- [ListFirewallPoliciesRequestListFirewallPoliciesPaginateTypeDef](./type_defs.md#listfirewallpoliciesrequestlistfirewallpoliciespaginatetypedef)
 - [ListFirewallPoliciesRequestRequestTypeDef](./type_defs.md#listfirewallpoliciesrequestrequesttypedef)
 - [ListFirewallPoliciesResponseTypeDef](./type_defs.md#listfirewallpoliciesresponsetypedef)
+- [ListFirewallsRequestListFirewallsPaginateTypeDef](./type_defs.md#listfirewallsrequestlistfirewallspaginatetypedef)
 - [ListFirewallsRequestRequestTypeDef](./type_defs.md#listfirewallsrequestrequesttypedef)
 - [ListFirewallsResponseTypeDef](./type_defs.md#listfirewallsresponsetypedef)
+- [ListRuleGroupsRequestListRuleGroupsPaginateTypeDef](./type_defs.md#listrulegroupsrequestlistrulegroupspaginatetypedef)
 - [ListRuleGroupsRequestRequestTypeDef](./type_defs.md#listrulegroupsrequestrequesttypedef)
 - [ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [LogDestinationConfigTypeDef](./type_defs.md#logdestinationconfigtypedef)
@@ -309,3 +244,4 @@ from mypy_boto3_network_firewall.type_defs import ActionDefinitionTypeDef, ...
 - [UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef)
 - [UpdateSubnetChangeProtectionRequestRequestTypeDef](./type_defs.md#updatesubnetchangeprotectionrequestrequesttypedef)
 - [UpdateSubnetChangeProtectionResponseTypeDef](./type_defs.md#updatesubnetchangeprotectionresponsetypedef)
+

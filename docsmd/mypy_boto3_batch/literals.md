@@ -1,718 +1,776 @@
-<a id="literals-for-boto3-batch-module"></a>
-
-# Literals for boto3 Batch module
+# Literals
 
 > [Index](../README.md) > [Batch](./README.md) > Literals
 
-Auto-generated documentation for
-[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
-type annotations stubs module
-[mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
+!!! note ""
 
-- [Literals for boto3 Batch module](#literals-for-boto3-batch-module)
-  - [ArrayJobDependencyType](#arrayjobdependencytype)
-  - [AssignPublicIpType](#assignpubliciptype)
-  - [CEStateType](#cestatetype)
-  - [CEStatusType](#cestatustype)
-  - [CETypeType](#cetypetype)
-  - [CRAllocationStrategyType](#crallocationstrategytype)
-  - [CRTypeType](#crtypetype)
-  - [DescribeComputeEnvironmentsPaginatorName](#describecomputeenvironmentspaginatorname)
-  - [DescribeJobDefinitionsPaginatorName](#describejobdefinitionspaginatorname)
-  - [DescribeJobQueuesPaginatorName](#describejobqueuespaginatorname)
-  - [DeviceCgroupPermissionType](#devicecgrouppermissiontype)
-  - [EFSAuthorizationConfigIAMType](#efsauthorizationconfigiamtype)
-  - [EFSTransitEncryptionType](#efstransitencryptiontype)
-  - [JQStateType](#jqstatetype)
-  - [JQStatusType](#jqstatustype)
-  - [JobDefinitionTypeType](#jobdefinitiontypetype)
-  - [JobStatusType](#jobstatustype)
-  - [ListJobsPaginatorName](#listjobspaginatorname)
-  - [ListSchedulingPoliciesPaginatorName](#listschedulingpoliciespaginatorname)
-  - [LogDriverType](#logdrivertype)
-  - [PlatformCapabilityType](#platformcapabilitytype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [RetryActionType](#retryactiontype)
-  - [BatchServiceName](#batchservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="arrayjobdependencytype"></a>
+    Auto-generated documentation for [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+    type annotations stubs module [mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
 
 ## ArrayJobDependencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import ArrayJobDependencyType
+
+def get_value() -> ArrayJobDependencyType:
+    return "N_TO_N"
 ```
 
-Values:
-
-- `N_TO_N`
-- `SEQUENTIAL`
-
-<a id="assignpubliciptype"></a>
-
+```python title="Definition"
+ArrayJobDependencyType = Literal[
+    "N_TO_N",
+    "SEQUENTIAL",
+]
+```
 ## AssignPublicIpType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import AssignPublicIpType
+
+def get_value() -> AssignPublicIpType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="cestatetype"></a>
-
+```python title="Definition"
+AssignPublicIpType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## CEStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import CEStateType
+
+def get_value() -> CEStateType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="cestatustype"></a>
-
+```python title="Definition"
+CEStateType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## CEStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import CEStatusType
+
+def get_value() -> CEStatusType:
+    return "CREATING"
 ```
 
-Values:
-
-- `CREATING`
-- `DELETED`
-- `DELETING`
-- `INVALID`
-- `UPDATING`
-- `VALID`
-
-<a id="cetypetype"></a>
-
+```python title="Definition"
+CEStatusType = Literal[
+    "CREATING",
+    "DELETED",
+    "DELETING",
+    "INVALID",
+    "UPDATING",
+    "VALID",
+]
+```
 ## CETypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import CETypeType
+
+def get_value() -> CETypeType:
+    return "MANAGED"
 ```
 
-Values:
-
-- `MANAGED`
-- `UNMANAGED`
-
-<a id="crallocationstrategytype"></a>
-
+```python title="Definition"
+CETypeType = Literal[
+    "MANAGED",
+    "UNMANAGED",
+]
+```
 ## CRAllocationStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import CRAllocationStrategyType
+
+def get_value() -> CRAllocationStrategyType:
+    return "BEST_FIT"
 ```
 
-Values:
-
-- `BEST_FIT`
-- `BEST_FIT_PROGRESSIVE`
-- `SPOT_CAPACITY_OPTIMIZED`
-
-<a id="crtypetype"></a>
-
+```python title="Definition"
+CRAllocationStrategyType = Literal[
+    "BEST_FIT",
+    "BEST_FIT_PROGRESSIVE",
+    "SPOT_CAPACITY_OPTIMIZED",
+]
+```
 ## CRTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import CRTypeType
+
+def get_value() -> CRTypeType:
+    return "EC2"
 ```
 
-Values:
-
-- `EC2`
-- `FARGATE`
-- `FARGATE_SPOT`
-- `SPOT`
-
-<a id="describecomputeenvironmentspaginatorname"></a>
-
+```python title="Definition"
+CRTypeType = Literal[
+    "EC2",
+    "FARGATE",
+    "FARGATE_SPOT",
+    "SPOT",
+]
+```
 ## DescribeComputeEnvironmentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import DescribeComputeEnvironmentsPaginatorName
+
+def get_value() -> DescribeComputeEnvironmentsPaginatorName:
+    return "describe_compute_environments"
 ```
 
-Values:
-
-- `describe_compute_environments`
-
-<a id="describejobdefinitionspaginatorname"></a>
-
+```python title="Definition"
+DescribeComputeEnvironmentsPaginatorName = Literal[
+    "describe_compute_environments",
+]
+```
 ## DescribeJobDefinitionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import DescribeJobDefinitionsPaginatorName
+
+def get_value() -> DescribeJobDefinitionsPaginatorName:
+    return "describe_job_definitions"
 ```
 
-Values:
-
-- `describe_job_definitions`
-
-<a id="describejobqueuespaginatorname"></a>
-
+```python title="Definition"
+DescribeJobDefinitionsPaginatorName = Literal[
+    "describe_job_definitions",
+]
+```
 ## DescribeJobQueuesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import DescribeJobQueuesPaginatorName
+
+def get_value() -> DescribeJobQueuesPaginatorName:
+    return "describe_job_queues"
 ```
 
-Values:
-
-- `describe_job_queues`
-
-<a id="devicecgrouppermissiontype"></a>
-
+```python title="Definition"
+DescribeJobQueuesPaginatorName = Literal[
+    "describe_job_queues",
+]
+```
 ## DeviceCgroupPermissionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import DeviceCgroupPermissionType
+
+def get_value() -> DeviceCgroupPermissionType:
+    return "MKNOD"
 ```
 
-Values:
-
-- `MKNOD`
-- `READ`
-- `WRITE`
-
-<a id="efsauthorizationconfigiamtype"></a>
-
+```python title="Definition"
+DeviceCgroupPermissionType = Literal[
+    "MKNOD",
+    "READ",
+    "WRITE",
+]
+```
 ## EFSAuthorizationConfigIAMType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import EFSAuthorizationConfigIAMType
+
+def get_value() -> EFSAuthorizationConfigIAMType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="efstransitencryptiontype"></a>
-
+```python title="Definition"
+EFSAuthorizationConfigIAMType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## EFSTransitEncryptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import EFSTransitEncryptionType
+
+def get_value() -> EFSTransitEncryptionType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="jqstatetype"></a>
-
+```python title="Definition"
+EFSTransitEncryptionType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## JQStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import JQStateType
+
+def get_value() -> JQStateType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="jqstatustype"></a>
-
+```python title="Definition"
+JQStateType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## JQStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import JQStatusType
+
+def get_value() -> JQStatusType:
+    return "CREATING"
 ```
 
-Values:
-
-- `CREATING`
-- `DELETED`
-- `DELETING`
-- `INVALID`
-- `UPDATING`
-- `VALID`
-
-<a id="jobdefinitiontypetype"></a>
-
+```python title="Definition"
+JQStatusType = Literal[
+    "CREATING",
+    "DELETED",
+    "DELETING",
+    "INVALID",
+    "UPDATING",
+    "VALID",
+]
+```
 ## JobDefinitionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import JobDefinitionTypeType
+
+def get_value() -> JobDefinitionTypeType:
+    return "container"
 ```
 
-Values:
-
-- `container`
-- `multinode`
-
-<a id="jobstatustype"></a>
-
+```python title="Definition"
+JobDefinitionTypeType = Literal[
+    "container",
+    "multinode",
+]
+```
 ## JobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import JobStatusType
+
+def get_value() -> JobStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `PENDING`
-- `RUNNABLE`
-- `RUNNING`
-- `STARTING`
-- `SUBMITTED`
-- `SUCCEEDED`
-
-<a id="listjobspaginatorname"></a>
-
+```python title="Definition"
+JobStatusType = Literal[
+    "FAILED",
+    "PENDING",
+    "RUNNABLE",
+    "RUNNING",
+    "STARTING",
+    "SUBMITTED",
+    "SUCCEEDED",
+]
+```
 ## ListJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import ListJobsPaginatorName
+
+def get_value() -> ListJobsPaginatorName:
+    return "list_jobs"
 ```
 
-Values:
-
-- `list_jobs`
-
-<a id="listschedulingpoliciespaginatorname"></a>
-
+```python title="Definition"
+ListJobsPaginatorName = Literal[
+    "list_jobs",
+]
+```
 ## ListSchedulingPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import ListSchedulingPoliciesPaginatorName
+
+def get_value() -> ListSchedulingPoliciesPaginatorName:
+    return "list_scheduling_policies"
 ```
 
-Values:
-
-- `list_scheduling_policies`
-
-<a id="logdrivertype"></a>
-
+```python title="Definition"
+ListSchedulingPoliciesPaginatorName = Literal[
+    "list_scheduling_policies",
+]
+```
 ## LogDriverType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import LogDriverType
+
+def get_value() -> LogDriverType:
+    return "awslogs"
 ```
 
-Values:
-
-- `awslogs`
-- `fluentd`
-- `gelf`
-- `journald`
-- `json-file`
-- `splunk`
-- `syslog`
-
-<a id="platformcapabilitytype"></a>
-
+```python title="Definition"
+LogDriverType = Literal[
+    "awslogs",
+    "fluentd",
+    "gelf",
+    "journald",
+    "json-file",
+    "splunk",
+    "syslog",
+]
+```
 ## PlatformCapabilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import PlatformCapabilityType
+
+def get_value() -> PlatformCapabilityType:
+    return "EC2"
 ```
 
-Values:
-
-- `EC2`
-- `FARGATE`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+PlatformCapabilityType = Literal[
+    "EC2",
+    "FARGATE",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "GPU"
 ```
 
-Values:
-
-- `GPU`
-- `MEMORY`
-- `VCPU`
-
-<a id="retryactiontype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "GPU",
+    "MEMORY",
+    "VCPU",
+]
+```
 ## RetryActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import RetryActionType
+
+def get_value() -> RetryActionType:
+    return "EXIT"
 ```
 
-Values:
-
-- `EXIT`
-- `RETRY`
-
-<a id="batchservicename"></a>
-
+```python title="Definition"
+RetryActionType = Literal[
+    "EXIT",
+    "RETRY",
+]
+```
 ## BatchServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import BatchServiceName
+
+def get_value() -> BatchServiceName:
+    return "batch"
 ```
 
-Values:
-
-- `batch`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+BatchServiceName = Literal[
+    "batch",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_batch.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_compute_environments"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_compute_environments",
+    "describe_job_definitions",
+    "describe_job_queues",
+    "list_jobs",
+    "list_scheduling_policies",
+]
+```
+## RegionName
 
-- `describe_compute_environments`
-- `describe_job_definitions`
-- `describe_job_queues`
-- `list_jobs`
-- `list_scheduling_policies`
+```python title="Usage Example"
+from mypy_boto3_batch.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

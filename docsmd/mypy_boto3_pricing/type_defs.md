@@ -1,190 +1,294 @@
-<a id="typed-dictionaries-for-boto3-pricing-module"></a>
-
-# Typed dictionaries for boto3 Pricing module
+# Typed dictionaries
 
 > [Index](../README.md) > [Pricing](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
-type annotations stubs module
-[mypy-boto3-pricing](https://pypi.org/project/mypy-boto3-pricing/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Pricing module](#typed-dictionaries-for-boto3-pricing-module)
-  - [AttributeValueTypeDef](#attributevaluetypedef)
-  - [DescribeServicesRequestRequestTypeDef](#describeservicesrequestrequesttypedef)
-  - [DescribeServicesResponseTypeDef](#describeservicesresponsetypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [GetAttributeValuesRequestRequestTypeDef](#getattributevaluesrequestrequesttypedef)
-  - [GetAttributeValuesResponseTypeDef](#getattributevaluesresponsetypedef)
-  - [GetProductsRequestRequestTypeDef](#getproductsrequestrequesttypedef)
-  - [GetProductsResponseTypeDef](#getproductsresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ServiceTypeDef](#servicetypedef)
-
-<a id="attributevaluetypedef"></a>
+    Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
+    type annotations stubs module [mypy-boto3-pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 ## AttributeValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import AttributeValueTypeDef
+
+def get_value() -> AttributeValueTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttributeValueTypeDef(TypedDict):
+    Value: NotRequired[str],
+```
 
-- `Value`: `str`
+## DescribeServicesRequestDescribeServicesPaginateTypeDef
 
-<a id="describeservicesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_pricing.type_defs import DescribeServicesRequestDescribeServicesPaginateTypeDef
 
+def get_value() -> DescribeServicesRequestDescribeServicesPaginateTypeDef:
+    return {
+        "ServiceCode": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeServicesRequestDescribeServicesPaginateTypeDef(TypedDict):
+    ServiceCode: NotRequired[str],
+    FormatVersion: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeServicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import DescribeServicesRequestRequestTypeDef
+
+def get_value() -> DescribeServicesRequestRequestTypeDef:
+    return {
+        "ServiceCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ServiceCode`: `str`
-- `FormatVersion`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeservicesresponsetypedef"></a>
+```python title="Definition"
+class DescribeServicesRequestRequestTypeDef(TypedDict):
+    ServiceCode: NotRequired[str],
+    FormatVersion: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeServicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import DescribeServicesResponseTypeDef
+
+def get_value() -> DescribeServicesResponseTypeDef:
+    return {
+        "Services": ...,
+        "FormatVersion": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServicesResponseTypeDef(TypedDict):
+    Services: List[ServiceTypeDef],  # (1)
+    FormatVersion: str,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Services`: `List`\[[ServiceTypeDef](./type_defs.md#servicetypedef)\]
-- `FormatVersion`: `str`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "Type": ...,
+        "Field": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    Type: FilterTypeType,  # (1)
+    Field: str,
+    Value: str,
+```
 
-- `Type`: `Literal['TERM_MATCH']` (see
-  [FilterTypeType](./literals.md#filtertypetype))
-- `Field`: `str`
-- `Value`: `str`
+1. See [:material-code-brackets: FilterTypeType](./literals.md#filtertypetype) 
+## GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef
 
-<a id="getattributevaluesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_pricing.type_defs import GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef
 
+def get_value() -> GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef:
+    return {
+        "ServiceCode": ...,
+        "AttributeName": ...,
+    }
+```
+
+```python title="Definition"
+class GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef(TypedDict):
+    ServiceCode: str,
+    AttributeName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetAttributeValuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import GetAttributeValuesRequestRequestTypeDef
+
+def get_value() -> GetAttributeValuesRequestRequestTypeDef:
+    return {
+        "ServiceCode": ...,
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceCode`: `str`
-- `AttributeName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getattributevaluesresponsetypedef"></a>
+```python title="Definition"
+class GetAttributeValuesRequestRequestTypeDef(TypedDict):
+    ServiceCode: str,
+    AttributeName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetAttributeValuesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import GetAttributeValuesResponseTypeDef
+
+def get_value() -> GetAttributeValuesResponseTypeDef:
+    return {
+        "AttributeValues": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAttributeValuesResponseTypeDef(TypedDict):
+    AttributeValues: List[AttributeValueTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AttributeValues`:
-  `List`\[[AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AttributeValueTypeDef](./type_defs.md#attributevaluetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetProductsRequestGetProductsPaginateTypeDef
 
-<a id="getproductsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_pricing.type_defs import GetProductsRequestGetProductsPaginateTypeDef
 
+def get_value() -> GetProductsRequestGetProductsPaginateTypeDef:
+    return {
+        "ServiceCode": ...,
+    }
+```
+
+```python title="Definition"
+class GetProductsRequestGetProductsPaginateTypeDef(TypedDict):
+    ServiceCode: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    FormatVersion: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetProductsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import GetProductsRequestRequestTypeDef
+
+def get_value() -> GetProductsRequestRequestTypeDef:
+    return {
+        "ServiceCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetProductsRequestRequestTypeDef(TypedDict):
+    ServiceCode: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    FormatVersion: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `ServiceCode`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `FormatVersion`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getproductsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## GetProductsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import GetProductsResponseTypeDef
+
+def get_value() -> GetProductsResponseTypeDef:
+    return {
+        "FormatVersion": ...,
+        "PriceList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetProductsResponseTypeDef(TypedDict):
+    FormatVersion: str,
+    PriceList: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FormatVersion`: `str`
-- `PriceList`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="servicetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pricing.type_defs import ServiceTypeDef
+
+def get_value() -> ServiceTypeDef:
+    return {
+        "ServiceCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceTypeDef(TypedDict):
+    ServiceCode: NotRequired[str],
+    AttributeNames: NotRequired[List[str]],
+```
 
-- `ServiceCode`: `str`
-- `AttributeNames`: `List`\[`str`\]

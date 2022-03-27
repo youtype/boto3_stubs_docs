@@ -1,57 +1,18 @@
-<a id="finspacedataclient-for-boto3-finspacedata-module"></a>
-
-# FinSpaceDataClient for boto3 FinSpaceData module
+# FinSpaceDataClient
 
 > [Index](../README.md) > [FinSpaceData](./README.md) > FinSpaceDataClient
 
-Auto-generated documentation for
-[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
-type annotations stubs module
-[mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
+!!! note ""
 
-- [FinSpaceDataClient for boto3 FinSpaceData module](#finspacedataclient-for-boto3-finspacedata-module)
-  - [FinSpaceDataClient](#finspacedataclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_changeset](#create_changeset)
-    - [create_data_view](#create_data_view)
-    - [create_dataset](#create_dataset)
-    - [create_permission_group](#create_permission_group)
-    - [create_user](#create_user)
-    - [delete_dataset](#delete_dataset)
-    - [delete_permission_group](#delete_permission_group)
-    - [disable_user](#disable_user)
-    - [enable_user](#enable_user)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_changeset](#get_changeset)
-    - [get_data_view](#get_data_view)
-    - [get_dataset](#get_dataset)
-    - [get_programmatic_access_credentials](#get_programmatic_access_credentials)
-    - [get_user](#get_user)
-    - [get_working_location](#get_working_location)
-    - [list_changesets](#list_changesets)
-    - [list_data_views](#list_data_views)
-    - [list_datasets](#list_datasets)
-    - [list_permission_groups](#list_permission_groups)
-    - [list_users](#list_users)
-    - [reset_user_password](#reset_user_password)
-    - [update_changeset](#update_changeset)
-    - [update_dataset](#update_dataset)
-    - [update_permission_group](#update_permission_group)
-    - [update_user](#update_user)
-    - [get_paginator](#get_paginator)
-
-<a id="finspacedataclient"></a>
+    Auto-generated documentation for [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
+    type annotations stubs module [mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 ## FinSpaceDataClient
 
-Type annotations for `boto3.client("finspace-data")`
+Type annotations and code completion for `#!python boto3.client("finspace-data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_finspace_data.client import FinSpaceDataClient
 
@@ -59,700 +20,905 @@ def get_finspace-data_client() -> FinSpaceDataClient:
     return Session().client("finspace-data")
 ```
 
-Boto3 documentation:
-[FinSpaceData.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("finspace-data").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("finspace-data")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.LimitExceededException,
+    client.ResourceNotFoundException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_finspace_data.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-FinSpaceDataClient exceptions.
-
-Type annotations for `boto3.client("finspace-data").exceptions` method.
-
-Boto3 documentation:
-[FinSpaceData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("finspace-data").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.can_paginate)
 
-Boto3 documentation:
-[FinSpaceData.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_changeset"></a>
-
-### create_changeset
+### create\_changeset
 
 Creates a new Changeset in a FinSpace Dataset.
 
-Type annotations for `boto3.client("finspace-data").create_changeset` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").create_changeset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_changeset)
 
-Boto3 documentation:
-[FinSpaceData.Client.create_changeset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_changeset)
+```python title="Method definition"
+def create_changeset(
+    self,
+    *,
+    datasetId: str,
+    changeType: ChangeTypeType,  # (1)
+    sourceParams: Mapping[str, str],
+    formatParams: Mapping[str, str],
+    clientToken: str = ...,
+) -> CreateChangesetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateChangesetRequestRequestTypeDef](./type_defs.md#createchangesetrequestrequesttypedef).
+1. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
+2. See [:material-code-braces: CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetId`: `str` *(required)*
-- `changeType`: [ChangeTypeType](./literals.md#changetypetype) *(required)*
-- `sourceParams`: `Mapping`\[`str`, `str`\] *(required)*
-- `formatParams`: `Mapping`\[`str`, `str`\] *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateChangesetRequestRequestTypeDef = {  # (1)
+    "datasetId": ...,
+    "changeType": ...,
+    "sourceParams": ...,
+    "formatParams": ...,
+}
 
-Returns
-[CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef).
+parent.create_changeset(**kwargs)
+```
 
-<a id="create\_data\_view"></a>
+1. See [:material-code-braces: CreateChangesetRequestRequestTypeDef](./type_defs.md#createchangesetrequestrequesttypedef) 
 
-### create_data_view
+### create\_data\_view
 
 Creates a Dataview for a Dataset.
 
-Type annotations for `boto3.client("finspace-data").create_data_view` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").create_data_view` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_data_view)
 
-Boto3 documentation:
-[FinSpaceData.Client.create_data_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_data_view)
+```python title="Method definition"
+def create_data_view(
+    self,
+    *,
+    datasetId: str,
+    destinationTypeParams: DataViewDestinationTypeParamsTypeDef,  # (1)
+    clientToken: str = ...,
+    autoUpdate: bool = ...,
+    sortColumns: Sequence[str] = ...,
+    partitionColumns: Sequence[str] = ...,
+    asOfTimestamp: int = ...,
+) -> CreateDataViewResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataViewRequestRequestTypeDef](./type_defs.md#createdataviewrequestrequesttypedef).
+1. See [:material-code-braces: DataViewDestinationTypeParamsTypeDef](./type_defs.md#dataviewdestinationtypeparamstypedef) 
+2. See [:material-code-braces: CreateDataViewResponseTypeDef](./type_defs.md#createdataviewresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetId`: `str` *(required)*
-- `destinationTypeParams`:
-  [DataViewDestinationTypeParamsTypeDef](./type_defs.md#dataviewdestinationtypeparamstypedef)
-  *(required)*
-- `clientToken`: `str`
-- `autoUpdate`: `bool`
-- `sortColumns`: `Sequence`\[`str`\]
-- `partitionColumns`: `Sequence`\[`str`\]
-- `asOfTimestamp`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateDataViewRequestRequestTypeDef = {  # (1)
+    "datasetId": ...,
+    "destinationTypeParams": ...,
+}
 
-Returns
-[CreateDataViewResponseTypeDef](./type_defs.md#createdataviewresponsetypedef).
+parent.create_data_view(**kwargs)
+```
 
-<a id="create\_dataset"></a>
+1. See [:material-code-braces: CreateDataViewRequestRequestTypeDef](./type_defs.md#createdataviewrequestrequesttypedef) 
 
-### create_dataset
+### create\_dataset
 
 Creates a new FinSpace Dataset.
 
-Type annotations for `boto3.client("finspace-data").create_dataset` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").create_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_dataset)
 
-Boto3 documentation:
-[FinSpaceData.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_dataset)
+```python title="Method definition"
+def create_dataset(
+    self,
+    *,
+    datasetTitle: str,
+    kind: DatasetKindType,  # (1)
+    permissionGroupParams: PermissionGroupParamsTypeDef,  # (2)
+    clientToken: str = ...,
+    datasetDescription: str = ...,
+    ownerInfo: DatasetOwnerInfoTypeDef = ...,  # (3)
+    alias: str = ...,
+    schemaDefinition: SchemaUnionTypeDef = ...,  # (4)
+) -> CreateDatasetResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+1. See [:material-code-brackets: DatasetKindType](./literals.md#datasetkindtype) 
+2. See [:material-code-braces: PermissionGroupParamsTypeDef](./type_defs.md#permissiongroupparamstypedef) 
+3. See [:material-code-braces: DatasetOwnerInfoTypeDef](./type_defs.md#datasetownerinfotypedef) 
+4. See [:material-code-braces: SchemaUnionTypeDef](./type_defs.md#schemauniontypedef) 
+5. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetTitle`: `str` *(required)*
-- `kind`: [DatasetKindType](./literals.md#datasetkindtype) *(required)*
-- `permissionGroupParams`:
-  [PermissionGroupParamsTypeDef](./type_defs.md#permissiongroupparamstypedef)
-  *(required)*
-- `clientToken`: `str`
-- `datasetDescription`: `str`
-- `ownerInfo`:
-  [DatasetOwnerInfoTypeDef](./type_defs.md#datasetownerinfotypedef)
-- `alias`: `str`
-- `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetRequestRequestTypeDef = {  # (1)
+    "datasetTitle": ...,
+    "kind": ...,
+    "permissionGroupParams": ...,
+}
 
-Returns
-[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+parent.create_dataset(**kwargs)
+```
 
-<a id="create\_permission\_group"></a>
+1. See [:material-code-braces: CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
 
-### create_permission_group
+### create\_permission\_group
 
 Creates a group of permissions for various actions that a user can perform in
 FinSpace.
 
-Type annotations for `boto3.client("finspace-data").create_permission_group`
-method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").create_permission_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_permission_group)
 
-Boto3 documentation:
-[FinSpaceData.Client.create_permission_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_permission_group)
+```python title="Method definition"
+def create_permission_group(
+    self,
+    *,
+    name: str,
+    applicationPermissions: Sequence[ApplicationPermissionType],  # (1)
+    description: str = ...,
+    clientToken: str = ...,
+) -> CreatePermissionGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePermissionGroupRequestRequestTypeDef](./type_defs.md#createpermissiongrouprequestrequesttypedef).
+1. See [:material-code-brackets: ApplicationPermissionType](./literals.md#applicationpermissiontype) 
+2. See [:material-code-braces: CreatePermissionGroupResponseTypeDef](./type_defs.md#createpermissiongroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `applicationPermissions`:
-  `Sequence`\[[ApplicationPermissionType](./literals.md#applicationpermissiontype)\]
-  *(required)*
-- `description`: `str`
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePermissionGroupRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "applicationPermissions": ...,
+}
 
-Returns
-[CreatePermissionGroupResponseTypeDef](./type_defs.md#createpermissiongroupresponsetypedef).
+parent.create_permission_group(**kwargs)
+```
 
-<a id="create\_user"></a>
+1. See [:material-code-braces: CreatePermissionGroupRequestRequestTypeDef](./type_defs.md#createpermissiongrouprequestrequesttypedef) 
 
-### create_user
+### create\_user
 
 Creates a new user in FinSpace.
 
-Type annotations for `boto3.client("finspace-data").create_user` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_user)
 
-Boto3 documentation:
-[FinSpaceData.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    emailAddress: str,
+    type: UserTypeType,  # (1)
+    firstName: str = ...,
+    lastName: str = ...,
+    ApiAccess: ApiAccessType = ...,  # (2)
+    apiAccessPrincipalArn: str = ...,
+    clientToken: str = ...,
+) -> CreateUserResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-brackets: ApiAccessType](./literals.md#apiaccesstype) 
+3. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `emailAddress`: `str` *(required)*
-- `type`: [UserTypeType](./literals.md#usertypetype) *(required)*
-- `firstName`: `str`
-- `lastName`: `str`
-- `ApiAccess`: [ApiAccessType](./literals.md#apiaccesstype)
-- `apiAccessPrincipalArn`: `str`
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "emailAddress": ...,
+    "type": ...,
+}
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+parent.create_user(**kwargs)
+```
 
-<a id="delete\_dataset"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### delete_dataset
+### delete\_dataset
 
 Deletes a FinSpace Dataset.
 
-Type annotations for `boto3.client("finspace-data").delete_dataset` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").delete_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.delete_dataset)
 
-Boto3 documentation:
-[FinSpaceData.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.delete_dataset)
+```python title="Method definition"
+def delete_dataset(
+    self,
+    *,
+    datasetId: str,
+    clientToken: str = ...,
+) -> DeleteDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetRequestRequestTypeDef = {  # (1)
+    "datasetId": ...,
+}
 
-Returns
-[DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
+parent.delete_dataset(**kwargs)
+```
 
-<a id="delete\_permission\_group"></a>
+1. See [:material-code-braces: DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
 
-### delete_permission_group
+### delete\_permission\_group
 
 Deletes a permission group.
 
-Type annotations for `boto3.client("finspace-data").delete_permission_group`
-method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").delete_permission_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.delete_permission_group)
 
-Boto3 documentation:
-[FinSpaceData.Client.delete_permission_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.delete_permission_group)
+```python title="Method definition"
+def delete_permission_group(
+    self,
+    *,
+    permissionGroupId: str,
+    clientToken: str = ...,
+) -> DeletePermissionGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeletePermissionGroupRequestRequestTypeDef](./type_defs.md#deletepermissiongrouprequestrequesttypedef).
+1. See [:material-code-braces: DeletePermissionGroupResponseTypeDef](./type_defs.md#deletepermissiongroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `permissionGroupId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePermissionGroupRequestRequestTypeDef = {  # (1)
+    "permissionGroupId": ...,
+}
 
-Returns
-[DeletePermissionGroupResponseTypeDef](./type_defs.md#deletepermissiongroupresponsetypedef).
+parent.delete_permission_group(**kwargs)
+```
 
-<a id="disable\_user"></a>
+1. See [:material-code-braces: DeletePermissionGroupRequestRequestTypeDef](./type_defs.md#deletepermissiongrouprequestrequesttypedef) 
 
-### disable_user
+### disable\_user
 
 Denies access to the FinSpace web application and API for the specified user.
 
-Type annotations for `boto3.client("finspace-data").disable_user` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").disable_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.disable_user)
 
-Boto3 documentation:
-[FinSpaceData.Client.disable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.disable_user)
+```python title="Method definition"
+def disable_user(
+    self,
+    *,
+    userId: str,
+    clientToken: str = ...,
+) -> DisableUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisableUserRequestRequestTypeDef](./type_defs.md#disableuserrequestrequesttypedef).
+1. See [:material-code-braces: DisableUserResponseTypeDef](./type_defs.md#disableuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `userId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisableUserRequestRequestTypeDef = {  # (1)
+    "userId": ...,
+}
 
-Returns
-[DisableUserResponseTypeDef](./type_defs.md#disableuserresponsetypedef).
+parent.disable_user(**kwargs)
+```
 
-<a id="enable\_user"></a>
+1. See [:material-code-braces: DisableUserRequestRequestTypeDef](./type_defs.md#disableuserrequestrequesttypedef) 
 
-### enable_user
+### enable\_user
 
 Allows the specified user to access the FinSpace web application and API.
 
-Type annotations for `boto3.client("finspace-data").enable_user` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").enable_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.enable_user)
 
-Boto3 documentation:
-[FinSpaceData.Client.enable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.enable_user)
+```python title="Method definition"
+def enable_user(
+    self,
+    *,
+    userId: str,
+    clientToken: str = ...,
+) -> EnableUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EnableUserRequestRequestTypeDef](./type_defs.md#enableuserrequestrequesttypedef).
+1. See [:material-code-braces: EnableUserResponseTypeDef](./type_defs.md#enableuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `userId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: EnableUserRequestRequestTypeDef = {  # (1)
+    "userId": ...,
+}
 
-Returns [EnableUserResponseTypeDef](./type_defs.md#enableuserresponsetypedef).
+parent.enable_user(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableUserRequestRequestTypeDef](./type_defs.md#enableuserrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("finspace-data").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.generate_presigned_url)
 
-Boto3 documentation:
-[FinSpaceData.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_changeset"></a>
-
-### get_changeset
+### get\_changeset
 
 Get information about a Changeset.
 
-Type annotations for `boto3.client("finspace-data").get_changeset` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_changeset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_changeset)
 
-Boto3 documentation:
-[FinSpaceData.Client.get_changeset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_changeset)
+```python title="Method definition"
+def get_changeset(
+    self,
+    *,
+    datasetId: str,
+    changesetId: str,
+) -> GetChangesetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChangesetRequestRequestTypeDef](./type_defs.md#getchangesetrequestrequesttypedef).
+1. See [:material-code-braces: GetChangesetResponseTypeDef](./type_defs.md#getchangesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetId`: `str` *(required)*
-- `changesetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetChangesetRequestRequestTypeDef = {  # (1)
+    "datasetId": ...,
+    "changesetId": ...,
+}
 
-Returns
-[GetChangesetResponseTypeDef](./type_defs.md#getchangesetresponsetypedef).
+parent.get_changeset(**kwargs)
+```
 
-<a id="get\_data\_view"></a>
+1. See [:material-code-braces: GetChangesetRequestRequestTypeDef](./type_defs.md#getchangesetrequestrequesttypedef) 
 
-### get_data_view
+### get\_data\_view
 
 Gets information about a Dataview.
 
-Type annotations for `boto3.client("finspace-data").get_data_view` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_data_view` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_data_view)
 
-Boto3 documentation:
-[FinSpaceData.Client.get_data_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_data_view)
+```python title="Method definition"
+def get_data_view(
+    self,
+    *,
+    dataViewId: str,
+    datasetId: str,
+) -> GetDataViewResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataViewRequestRequestTypeDef](./type_defs.md#getdataviewrequestrequesttypedef).
+1. See [:material-code-braces: GetDataViewResponseTypeDef](./type_defs.md#getdataviewresponsetypedef) 
 
-Keyword-only arguments:
 
-- `dataViewId`: `str` *(required)*
-- `datasetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDataViewRequestRequestTypeDef = {  # (1)
+    "dataViewId": ...,
+    "datasetId": ...,
+}
 
-Returns
-[GetDataViewResponseTypeDef](./type_defs.md#getdataviewresponsetypedef).
+parent.get_data_view(**kwargs)
+```
 
-<a id="get\_dataset"></a>
+1. See [:material-code-braces: GetDataViewRequestRequestTypeDef](./type_defs.md#getdataviewrequestrequesttypedef) 
 
-### get_dataset
+### get\_dataset
 
 Returns information about a Dataset.
 
-Type annotations for `boto3.client("finspace-data").get_dataset` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_dataset)
 
-Boto3 documentation:
-[FinSpaceData.Client.get_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_dataset)
+```python title="Method definition"
+def get_dataset(
+    self,
+    *,
+    datasetId: str,
+) -> GetDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDatasetRequestRequestTypeDef](./type_defs.md#getdatasetrequestrequesttypedef).
+1. See [:material-code-braces: GetDatasetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDatasetRequestRequestTypeDef = {  # (1)
+    "datasetId": ...,
+}
 
-Returns [GetDatasetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef).
+parent.get_dataset(**kwargs)
+```
 
-<a id="get\_programmatic\_access\_credentials"></a>
+1. See [:material-code-braces: GetDatasetRequestRequestTypeDef](./type_defs.md#getdatasetrequestrequesttypedef) 
 
-### get_programmatic_access_credentials
+### get\_programmatic\_access\_credentials
 
 Request programmatic credentials to use with FinSpace SDK.
 
-Type annotations for
-`boto3.client("finspace-data").get_programmatic_access_credentials` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_programmatic_access_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_programmatic_access_credentials)
 
-Boto3 documentation:
-[FinSpaceData.Client.get_programmatic_access_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_programmatic_access_credentials)
+```python title="Method definition"
+def get_programmatic_access_credentials(
+    self,
+    *,
+    environmentId: str,
+    durationInMinutes: int = ...,
+) -> GetProgrammaticAccessCredentialsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProgrammaticAccessCredentialsRequestRequestTypeDef](./type_defs.md#getprogrammaticaccesscredentialsrequestrequesttypedef).
+1. See [:material-code-braces: GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
-- `durationInMinutes`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetProgrammaticAccessCredentialsRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+}
 
-Returns
-[GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef).
+parent.get_programmatic_access_credentials(**kwargs)
+```
 
-<a id="get\_user"></a>
+1. See [:material-code-braces: GetProgrammaticAccessCredentialsRequestRequestTypeDef](./type_defs.md#getprogrammaticaccesscredentialsrequestrequesttypedef) 
 
-### get_user
+### get\_user
 
 Retrieves details for a specific user.
 
-Type annotations for `boto3.client("finspace-data").get_user` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_user)
 
-Boto3 documentation:
-[FinSpaceData.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_user)
+```python title="Method definition"
+def get_user(
+    self,
+    *,
+    userId: str,
+) -> GetUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef).
+1. See [:material-code-braces: GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `userId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUserRequestRequestTypeDef = {  # (1)
+    "userId": ...,
+}
 
-Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
+parent.get_user(**kwargs)
+```
 
-<a id="get\_working\_location"></a>
+1. See [:material-code-braces: GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef) 
 
-### get_working_location
+### get\_working\_location
 
 A temporary Amazon S3 location, where you can copy your files from a source
 location to stage or use as a scratch space in FinSpace notebook.
 
-Type annotations for `boto3.client("finspace-data").get_working_location`
-method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_working_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_working_location)
 
-Boto3 documentation:
-[FinSpaceData.Client.get_working_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_working_location)
+```python title="Method definition"
+def get_working_location(
+    self,
+    *,
+    locationType: locationTypeType = ...,  # (1)
+) -> GetWorkingLocationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkingLocationRequestRequestTypeDef](./type_defs.md#getworkinglocationrequestrequesttypedef).
+1. See [:material-code-brackets: locationTypeType](./literals.md#locationtypetype) 
+2. See [:material-code-braces: GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `locationType`: [locationTypeType](./literals.md#locationtypetype)
+```python title="Usage example with kwargs"
+kwargs: GetWorkingLocationRequestRequestTypeDef = {  # (1)
+    "locationType": ...,
+}
 
-Returns
-[GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef).
+parent.get_working_location(**kwargs)
+```
 
-<a id="list\_changesets"></a>
+1. See [:material-code-braces: GetWorkingLocationRequestRequestTypeDef](./type_defs.md#getworkinglocationrequestrequesttypedef) 
 
-### list_changesets
+### list\_changesets
 
 Lists the FinSpace Changesets for a Dataset.
 
-Type annotations for `boto3.client("finspace-data").list_changesets` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").list_changesets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_changesets)
 
-Boto3 documentation:
-[FinSpaceData.Client.list_changesets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_changesets)
+```python title="Method definition"
+def list_changesets(
+    self,
+    *,
+    datasetId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListChangesetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChangesetsRequestRequestTypeDef](./type_defs.md#listchangesetsrequestrequesttypedef).
+1. See [:material-code-braces: ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChangesetsRequestRequestTypeDef = {  # (1)
+    "datasetId": ...,
+}
 
-Returns
-[ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef).
+parent.list_changesets(**kwargs)
+```
 
-<a id="list\_data\_views"></a>
+1. See [:material-code-braces: ListChangesetsRequestRequestTypeDef](./type_defs.md#listchangesetsrequestrequesttypedef) 
 
-### list_data_views
+### list\_data\_views
 
 Lists all available Dataviews for a Dataset.
 
-Type annotations for `boto3.client("finspace-data").list_data_views` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").list_data_views` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_data_views)
 
-Boto3 documentation:
-[FinSpaceData.Client.list_data_views](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_data_views)
+```python title="Method definition"
+def list_data_views(
+    self,
+    *,
+    datasetId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDataViewsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataViewsRequestRequestTypeDef](./type_defs.md#listdataviewsrequestrequesttypedef).
+1. See [:material-code-braces: ListDataViewsResponseTypeDef](./type_defs.md#listdataviewsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDataViewsRequestRequestTypeDef = {  # (1)
+    "datasetId": ...,
+}
 
-Returns
-[ListDataViewsResponseTypeDef](./type_defs.md#listdataviewsresponsetypedef).
+parent.list_data_views(**kwargs)
+```
 
-<a id="list\_datasets"></a>
+1. See [:material-code-braces: ListDataViewsRequestRequestTypeDef](./type_defs.md#listdataviewsrequestrequesttypedef) 
 
-### list_datasets
+### list\_datasets
 
 Lists all of the active Datasets that a user has access to.
 
-Type annotations for `boto3.client("finspace-data").list_datasets` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").list_datasets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_datasets)
 
-Boto3 documentation:
-[FinSpaceData.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_datasets)
+```python title="Method definition"
+def list_datasets(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDatasetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+parent.list_datasets(**kwargs)
+```
 
-<a id="list\_permission\_groups"></a>
+1. See [:material-code-braces: ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef) 
 
-### list_permission_groups
+### list\_permission\_groups
 
 Lists all available permission groups in FinSpace.
 
-Type annotations for `boto3.client("finspace-data").list_permission_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").list_permission_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_permission_groups)
 
-Boto3 documentation:
-[FinSpaceData.Client.list_permission_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_permission_groups)
+```python title="Method definition"
+def list_permission_groups(
+    self,
+    *,
+    maxResults: int,
+    nextToken: str = ...,
+) -> ListPermissionGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPermissionGroupsRequestRequestTypeDef](./type_defs.md#listpermissiongroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPermissionGroupsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef).
+parent.list_permission_groups(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListPermissionGroupsRequestRequestTypeDef](./type_defs.md#listpermissiongroupsrequestrequesttypedef) 
 
-### list_users
+### list\_users
 
 Lists all available user accounts in FinSpace.
 
-Type annotations for `boto3.client("finspace-data").list_users` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_users)
 
-Boto3 documentation:
-[FinSpaceData.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    maxResults: int,
+    nextToken: str = ...,
+) -> ListUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
 
-<a id="reset\_user\_password"></a>
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
-### reset_user_password
+### reset\_user\_password
 
 Resets the password for a specified user ID and generates a temporary one.
 
-Type annotations for `boto3.client("finspace-data").reset_user_password`
-method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").reset_user_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.reset_user_password)
 
-Boto3 documentation:
-[FinSpaceData.Client.reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.reset_user_password)
+```python title="Method definition"
+def reset_user_password(
+    self,
+    *,
+    userId: str,
+    clientToken: str = ...,
+) -> ResetUserPasswordResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResetUserPasswordRequestRequestTypeDef](./type_defs.md#resetuserpasswordrequestrequesttypedef).
+1. See [:material-code-braces: ResetUserPasswordResponseTypeDef](./type_defs.md#resetuserpasswordresponsetypedef) 
 
-Keyword-only arguments:
 
-- `userId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ResetUserPasswordRequestRequestTypeDef = {  # (1)
+    "userId": ...,
+}
 
-Returns
-[ResetUserPasswordResponseTypeDef](./type_defs.md#resetuserpasswordresponsetypedef).
+parent.reset_user_password(**kwargs)
+```
 
-<a id="update\_changeset"></a>
+1. See [:material-code-braces: ResetUserPasswordRequestRequestTypeDef](./type_defs.md#resetuserpasswordrequestrequesttypedef) 
 
-### update_changeset
+### update\_changeset
 
 Updates a FinSpace Changeset.
 
-Type annotations for `boto3.client("finspace-data").update_changeset` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").update_changeset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_changeset)
 
-Boto3 documentation:
-[FinSpaceData.Client.update_changeset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_changeset)
+```python title="Method definition"
+def update_changeset(
+    self,
+    *,
+    datasetId: str,
+    changesetId: str,
+    sourceParams: Mapping[str, str],
+    formatParams: Mapping[str, str],
+    clientToken: str = ...,
+) -> UpdateChangesetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChangesetRequestRequestTypeDef](./type_defs.md#updatechangesetrequestrequesttypedef).
+1. See [:material-code-braces: UpdateChangesetResponseTypeDef](./type_defs.md#updatechangesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetId`: `str` *(required)*
-- `changesetId`: `str` *(required)*
-- `sourceParams`: `Mapping`\[`str`, `str`\] *(required)*
-- `formatParams`: `Mapping`\[`str`, `str`\] *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateChangesetRequestRequestTypeDef = {  # (1)
+    "datasetId": ...,
+    "changesetId": ...,
+    "sourceParams": ...,
+    "formatParams": ...,
+}
 
-Returns
-[UpdateChangesetResponseTypeDef](./type_defs.md#updatechangesetresponsetypedef).
+parent.update_changeset(**kwargs)
+```
 
-<a id="update\_dataset"></a>
+1. See [:material-code-braces: UpdateChangesetRequestRequestTypeDef](./type_defs.md#updatechangesetrequestrequesttypedef) 
 
-### update_dataset
+### update\_dataset
 
 Updates a FinSpace Dataset.
 
-Type annotations for `boto3.client("finspace-data").update_dataset` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").update_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_dataset)
 
-Boto3 documentation:
-[FinSpaceData.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_dataset)
+```python title="Method definition"
+def update_dataset(
+    self,
+    *,
+    datasetId: str,
+    datasetTitle: str,
+    kind: DatasetKindType,  # (1)
+    clientToken: str = ...,
+    datasetDescription: str = ...,
+    alias: str = ...,
+    schemaDefinition: SchemaUnionTypeDef = ...,  # (2)
+) -> UpdateDatasetResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDatasetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef).
+1. See [:material-code-brackets: DatasetKindType](./literals.md#datasetkindtype) 
+2. See [:material-code-braces: SchemaUnionTypeDef](./type_defs.md#schemauniontypedef) 
+3. See [:material-code-braces: UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `datasetId`: `str` *(required)*
-- `datasetTitle`: `str` *(required)*
-- `kind`: [DatasetKindType](./literals.md#datasetkindtype) *(required)*
-- `clientToken`: `str`
-- `datasetDescription`: `str`
-- `alias`: `str`
-- `schemaDefinition`: [SchemaUnionTypeDef](./type_defs.md#schemauniontypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateDatasetRequestRequestTypeDef = {  # (1)
+    "datasetId": ...,
+    "datasetTitle": ...,
+    "kind": ...,
+}
 
-Returns
-[UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
+parent.update_dataset(**kwargs)
+```
 
-<a id="update\_permission\_group"></a>
+1. See [:material-code-braces: UpdateDatasetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef) 
 
-### update_permission_group
+### update\_permission\_group
 
 Modifies the details of a permission group.
 
-Type annotations for `boto3.client("finspace-data").update_permission_group`
-method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").update_permission_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_permission_group)
 
-Boto3 documentation:
-[FinSpaceData.Client.update_permission_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_permission_group)
+```python title="Method definition"
+def update_permission_group(
+    self,
+    *,
+    permissionGroupId: str,
+    name: str = ...,
+    description: str = ...,
+    applicationPermissions: Sequence[ApplicationPermissionType] = ...,  # (1)
+    clientToken: str = ...,
+) -> UpdatePermissionGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePermissionGroupRequestRequestTypeDef](./type_defs.md#updatepermissiongrouprequestrequesttypedef).
+1. See [:material-code-brackets: ApplicationPermissionType](./literals.md#applicationpermissiontype) 
+2. See [:material-code-braces: UpdatePermissionGroupResponseTypeDef](./type_defs.md#updatepermissiongroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `permissionGroupId`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
-- `applicationPermissions`:
-  `Sequence`\[[ApplicationPermissionType](./literals.md#applicationpermissiontype)\]
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePermissionGroupRequestRequestTypeDef = {  # (1)
+    "permissionGroupId": ...,
+}
 
-Returns
-[UpdatePermissionGroupResponseTypeDef](./type_defs.md#updatepermissiongroupresponsetypedef).
+parent.update_permission_group(**kwargs)
+```
 
-<a id="update\_user"></a>
+1. See [:material-code-braces: UpdatePermissionGroupRequestRequestTypeDef](./type_defs.md#updatepermissiongrouprequestrequesttypedef) 
 
-### update_user
+### update\_user
 
 Modifies the details of the specified user account.
 
-Type annotations for `boto3.client("finspace-data").update_user` method.
+Type annotations and code completion for `#!python boto3.client("finspace-data").update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_user)
 
-Boto3 documentation:
-[FinSpaceData.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_user)
+```python title="Method definition"
+def update_user(
+    self,
+    *,
+    userId: str,
+    type: UserTypeType = ...,  # (1)
+    firstName: str = ...,
+    lastName: str = ...,
+    apiAccess: ApiAccessType = ...,  # (2)
+    apiAccessPrincipalArn: str = ...,
+    clientToken: str = ...,
+) -> UpdateUserResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-brackets: ApiAccessType](./literals.md#apiaccesstype) 
+3. See [:material-code-braces: UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `userId`: `str` *(required)*
-- `type`: [UserTypeType](./literals.md#usertypetype)
-- `firstName`: `str`
-- `lastName`: `str`
-- `apiAccess`: [ApiAccessType](./literals.md#apiaccesstype)
-- `apiAccessPrincipalArn`: `str`
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRequestRequestTypeDef = {  # (1)
+    "userId": ...,
+}
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+parent.update_user(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("finspace-data").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_paginator` method with overloads.
 
-- `client.get_paginator("list_changesets")` ->
-  [ListChangesetsPaginator](./paginators.md#listchangesetspaginator)
-- `client.get_paginator("list_data_views")` ->
-  [ListDataViewsPaginator](./paginators.md#listdataviewspaginator)
-- `client.get_paginator("list_datasets")` ->
-  [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
-- `client.get_paginator("list_permission_groups")` ->
-  [ListPermissionGroupsPaginator](./paginators.md#listpermissiongroupspaginator)
-- `client.get_paginator("list_users")` ->
-  [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("list_changesets")` -> [ListChangesetsPaginator](./paginators.md#listchangesetspaginator)
+- `client.get_paginator("list_data_views")` -> [ListDataViewsPaginator](./paginators.md#listdataviewspaginator)
+- `client.get_paginator("list_datasets")` -> [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+- `client.get_paginator("list_permission_groups")` -> [ListPermissionGroupsPaginator](./paginators.md#listpermissiongroupspaginator)
+- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
+
+
+

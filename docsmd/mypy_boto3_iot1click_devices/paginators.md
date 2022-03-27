@@ -1,28 +1,18 @@
-<a id="paginators-for-boto3-iot1clickdevicesservice-module"></a>
-
-# Paginators for boto3 IoT1ClickDevicesService module
+# Paginators
 
 > [Index](../README.md) > [IoT1ClickDevicesService](./README.md) > Paginators
 
-Auto-generated documentation for
-[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
-type annotations stubs module
-[mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
+!!! note ""
 
-- [Paginators for boto3 IoT1ClickDevicesService module](#paginators-for-boto3-iot1clickdevicesservice-module)
-  - [ListDeviceEventsPaginator](#listdeviceeventspaginator)
-  - [ListDevicesPaginator](#listdevicespaginator)
-
-<a id="listdeviceeventspaginator"></a>
+    Auto-generated documentation for [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+    type annotations stubs module [mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 ## ListDeviceEventsPaginator
 
-Type annotations for
-`boto3.client("iot1click-devices").get_paginator("list_device_events")`.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").get_paginator("list_device_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDeviceEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iot1click_devices.paginator import ListDeviceEventsPaginator
@@ -31,30 +21,44 @@ def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
     return Session().client("iot1click-devices").get_paginator("list_device_events")
 ```
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Paginator.ListDeviceEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDeviceEvents)
 
-Arguments for `ListDeviceEventsPaginator.paginate` method:
+### paginate
 
-- `DeviceId`: `str` *(required)*
-- `FromTimeStamp`: `Union`\[`datetime`, `str`\] *(required)*
-- `ToTimeStamp`: `Union`\[`datetime`, `str`\] *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDeviceEventsPaginator.paginate` method.
 
-`ListDeviceEventsPaginator.paginate` returns
-`_PageIterator`\[[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DeviceId: str,
+    FromTimeStamp: Union[datetime, str],
+    ToTimeStamp: Union[datetime, str],
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDeviceEventsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdevicespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDeviceEventsRequestListDeviceEventsPaginateTypeDef = {  # (1)
+    "DeviceId": ...,
+    "FromTimeStamp": ...,
+    "ToTimeStamp": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDeviceEventsRequestListDeviceEventsPaginateTypeDef](./type_defs.md#listdeviceeventsrequestlistdeviceeventspaginatetypedef) 
 ## ListDevicesPaginator
 
-Type annotations for
-`boto3.client("iot1click-devices").get_paginator("list_devices")`.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").get_paginator("list_devices")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDevices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iot1click_devices.paginator import ListDevicesPaginator
@@ -63,14 +67,31 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
     return Session().client("iot1click-devices").get_paginator("list_devices")
 ```
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Paginator.ListDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Paginator.ListDevices)
 
-Arguments for `ListDevicesPaginator.paginate` method:
+### paginate
 
-- `DeviceType`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDevicesPaginator.paginate` method.
 
-`ListDevicesPaginator.paginate` returns
-`_PageIterator`\[[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DeviceType: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDevicesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListDevicesRequestListDevicesPaginateTypeDef = {  # (1)
+    "DeviceType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDevicesRequestListDevicesPaginateTypeDef](./type_defs.md#listdevicesrequestlistdevicespaginatetypedef) 

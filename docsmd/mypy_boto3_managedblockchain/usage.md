@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-managedblockchain-module"></a>
-
-# Examples for boto3 ManagedBlockchain module
+# Examples
 
 > [Index](../README.md) > [ManagedBlockchain](./README.md) > Examples
 
-- [Examples for boto3 ManagedBlockchain module](#examples-for-boto3-managedblockchain-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
+    type annotations stubs module [mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[managedblockchain]` package installed.
 
-Write your `ManagedBlockchain` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `ManagedBlockchain` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ManagedBlockchainClient
-# and provides type checking and code completion
-client = session.client("managedblockchain")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("managedblockchain")  # (1)
+    result = client.create_member()  # (2)
+    ```
+
+    1. client: [ManagedBlockchainClient](./client.md)
+    2. result: [:material-code-braces: CreateMemberOutputTypeDef](./type_defs.md#creatememberoutputtypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[managedblockchain]` or a standalone
-`mypy_boto3_managedblockchain` package, you have to explicitly specify
-`client: ManagedBlockchainClient` type annotation.
+With `boto3-stubs-lite[managedblockchain]`
+or a standalone `mypy_boto3_managedblockchain` package, you have to explicitly specify `client: ManagedBlockchainClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
+    from mypy_boto3_managedblockchain.type_defs import CreateMemberOutputTypeDef
+    from mypy_boto3_managedblockchain.type_defs import CreateMemberInputRequestTypeDef
 
 
-from mypy_boto3_managedblockchain.type_defs import bool
+    session = Session()
+
+    client: ManagedBlockchainClient = session.client("managedblockchain")
+
+    kwargs: CreateMemberInputRequestTypeDef = {...}
+    result: CreateMemberOutputTypeDef = client.create_member(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: ManagedBlockchainClient = session.client("managedblockchain")
 
-result: bool = client.can_paginate()
-```
+

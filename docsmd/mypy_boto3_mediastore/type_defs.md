@@ -1,537 +1,680 @@
-<a id="typed-dictionaries-for-boto3-mediastore-module"></a>
-
-# Typed dictionaries for boto3 MediaStore module
+# Typed dictionaries
 
 > [Index](../README.md) > [MediaStore](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
-type annotations stubs module
-[mypy-boto3-mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
+!!! note ""
 
-- [Typed dictionaries for boto3 MediaStore module](#typed-dictionaries-for-boto3-mediastore-module)
-  - [ContainerTypeDef](#containertypedef)
-  - [CorsRuleTypeDef](#corsruletypedef)
-  - [CreateContainerInputRequestTypeDef](#createcontainerinputrequesttypedef)
-  - [CreateContainerOutputTypeDef](#createcontaineroutputtypedef)
-  - [DeleteContainerInputRequestTypeDef](#deletecontainerinputrequesttypedef)
-  - [DeleteContainerPolicyInputRequestTypeDef](#deletecontainerpolicyinputrequesttypedef)
-  - [DeleteCorsPolicyInputRequestTypeDef](#deletecorspolicyinputrequesttypedef)
-  - [DeleteLifecyclePolicyInputRequestTypeDef](#deletelifecyclepolicyinputrequesttypedef)
-  - [DeleteMetricPolicyInputRequestTypeDef](#deletemetricpolicyinputrequesttypedef)
-  - [DescribeContainerInputRequestTypeDef](#describecontainerinputrequesttypedef)
-  - [DescribeContainerOutputTypeDef](#describecontaineroutputtypedef)
-  - [GetContainerPolicyInputRequestTypeDef](#getcontainerpolicyinputrequesttypedef)
-  - [GetContainerPolicyOutputTypeDef](#getcontainerpolicyoutputtypedef)
-  - [GetCorsPolicyInputRequestTypeDef](#getcorspolicyinputrequesttypedef)
-  - [GetCorsPolicyOutputTypeDef](#getcorspolicyoutputtypedef)
-  - [GetLifecyclePolicyInputRequestTypeDef](#getlifecyclepolicyinputrequesttypedef)
-  - [GetLifecyclePolicyOutputTypeDef](#getlifecyclepolicyoutputtypedef)
-  - [GetMetricPolicyInputRequestTypeDef](#getmetricpolicyinputrequesttypedef)
-  - [GetMetricPolicyOutputTypeDef](#getmetricpolicyoutputtypedef)
-  - [ListContainersInputRequestTypeDef](#listcontainersinputrequesttypedef)
-  - [ListContainersOutputTypeDef](#listcontainersoutputtypedef)
-  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [MetricPolicyRuleTypeDef](#metricpolicyruletypedef)
-  - [MetricPolicyTypeDef](#metricpolicytypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutContainerPolicyInputRequestTypeDef](#putcontainerpolicyinputrequesttypedef)
-  - [PutCorsPolicyInputRequestTypeDef](#putcorspolicyinputrequesttypedef)
-  - [PutLifecyclePolicyInputRequestTypeDef](#putlifecyclepolicyinputrequesttypedef)
-  - [PutMetricPolicyInputRequestTypeDef](#putmetricpolicyinputrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartAccessLoggingInputRequestTypeDef](#startaccesslogginginputrequesttypedef)
-  - [StopAccessLoggingInputRequestTypeDef](#stopaccesslogginginputrequesttypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-
-<a id="containertypedef"></a>
+    Auto-generated documentation for [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
+    type annotations stubs module [mypy-boto3-mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 ## ContainerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import ContainerTypeDef
+
+def get_value() -> ContainerTypeDef:
+    return {
+        "Endpoint": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContainerTypeDef(TypedDict):
+    Endpoint: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    ARN: NotRequired[str],
+    Name: NotRequired[str],
+    Status: NotRequired[ContainerStatusType],  # (1)
+    AccessLoggingEnabled: NotRequired[bool],
+```
 
-- `Endpoint`: `str`
-- `CreationTime`: `datetime`
-- `ARN`: `str`
-- `Name`: `str`
-- `Status`: [ContainerStatusType](./literals.md#containerstatustype)
-- `AccessLoggingEnabled`: `bool`
-
-<a id="corsruletypedef"></a>
-
+1. See [:material-code-brackets: ContainerStatusType](./literals.md#containerstatustype) 
 ## CorsRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import CorsRuleTypeDef
+
+def get_value() -> CorsRuleTypeDef:
+    return {
+        "AllowedOrigins": ...,
+        "AllowedHeaders": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CorsRuleTypeDef(TypedDict):
+    AllowedOrigins: List[str],
+    AllowedHeaders: List[str],
+    AllowedMethods: NotRequired[List[MethodNameType]],  # (1)
+    MaxAgeSeconds: NotRequired[int],
+    ExposeHeaders: NotRequired[List[str]],
+```
 
-- `AllowedOrigins`: `List`\[`str`\]
-- `AllowedHeaders`: `List`\[`str`\]
-
-Optional fields:
-
-- `AllowedMethods`: `List`\[[MethodNameType](./literals.md#methodnametype)\]
-- `MaxAgeSeconds`: `int`
-- `ExposeHeaders`: `List`\[`str`\]
-
-<a id="createcontainerinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: MethodNameType](./literals.md#methodnametype) 
 ## CreateContainerInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import CreateContainerInputRequestTypeDef
+
+def get_value() -> CreateContainerInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContainerInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ContainerName`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createcontaineroutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateContainerOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import CreateContainerOutputTypeDef
+
+def get_value() -> CreateContainerOutputTypeDef:
+    return {
+        "Container": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContainerOutputTypeDef(TypedDict):
+    Container: ContainerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Container`: [ContainerTypeDef](./type_defs.md#containertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletecontainerinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ContainerTypeDef](./type_defs.md#containertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteContainerInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import DeleteContainerInputRequestTypeDef
+
+def get_value() -> DeleteContainerInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="deletecontainerpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteContainerInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## DeleteContainerPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import DeleteContainerPolicyInputRequestTypeDef
+
+def get_value() -> DeleteContainerPolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="deletecorspolicyinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteContainerPolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## DeleteCorsPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import DeleteCorsPolicyInputRequestTypeDef
+
+def get_value() -> DeleteCorsPolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="deletelifecyclepolicyinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteCorsPolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## DeleteLifecyclePolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import DeleteLifecyclePolicyInputRequestTypeDef
+
+def get_value() -> DeleteLifecyclePolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="deletemetricpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteLifecyclePolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## DeleteMetricPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import DeleteMetricPolicyInputRequestTypeDef
+
+def get_value() -> DeleteMetricPolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="describecontainerinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteMetricPolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## DescribeContainerInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import DescribeContainerInputRequestTypeDef
+
+def get_value() -> DescribeContainerInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ContainerName`: `str`
-
-<a id="describecontaineroutputtypedef"></a>
+```python title="Definition"
+class DescribeContainerInputRequestTypeDef(TypedDict):
+    ContainerName: NotRequired[str],
+```
 
 ## DescribeContainerOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import DescribeContainerOutputTypeDef
+
+def get_value() -> DescribeContainerOutputTypeDef:
+    return {
+        "Container": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeContainerOutputTypeDef(TypedDict):
+    Container: ContainerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Container`: [ContainerTypeDef](./type_defs.md#containertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontainerpolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ContainerTypeDef](./type_defs.md#containertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContainerPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import GetContainerPolicyInputRequestTypeDef
+
+def get_value() -> GetContainerPolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="getcontainerpolicyoutputtypedef"></a>
+```python title="Definition"
+class GetContainerPolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## GetContainerPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import GetContainerPolicyOutputTypeDef
+
+def get_value() -> GetContainerPolicyOutputTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContainerPolicyOutputTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcorspolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCorsPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import GetCorsPolicyInputRequestTypeDef
+
+def get_value() -> GetCorsPolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="getcorspolicyoutputtypedef"></a>
+```python title="Definition"
+class GetCorsPolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## GetCorsPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import GetCorsPolicyOutputTypeDef
+
+def get_value() -> GetCorsPolicyOutputTypeDef:
+    return {
+        "CorsPolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCorsPolicyOutputTypeDef(TypedDict):
+    CorsPolicy: List[CorsRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CorsPolicy`: `List`\[[CorsRuleTypeDef](./type_defs.md#corsruletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlifecyclepolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: CorsRuleTypeDef](./type_defs.md#corsruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLifecyclePolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import GetLifecyclePolicyInputRequestTypeDef
+
+def get_value() -> GetLifecyclePolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="getlifecyclepolicyoutputtypedef"></a>
+```python title="Definition"
+class GetLifecyclePolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## GetLifecyclePolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import GetLifecyclePolicyOutputTypeDef
+
+def get_value() -> GetLifecyclePolicyOutputTypeDef:
+    return {
+        "LifecyclePolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLifecyclePolicyOutputTypeDef(TypedDict):
+    LifecyclePolicy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LifecyclePolicy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmetricpolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMetricPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import GetMetricPolicyInputRequestTypeDef
+
+def get_value() -> GetMetricPolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="getmetricpolicyoutputtypedef"></a>
+```python title="Definition"
+class GetMetricPolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## GetMetricPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import GetMetricPolicyOutputTypeDef
+
+def get_value() -> GetMetricPolicyOutputTypeDef:
+    return {
+        "MetricPolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMetricPolicyOutputTypeDef(TypedDict):
+    MetricPolicy: MetricPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MetricPolicy`: [MetricPolicyTypeDef](./type_defs.md#metricpolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MetricPolicyTypeDef](./type_defs.md#metricpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContainersInputListContainersPaginateTypeDef
 
-<a id="listcontainersinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediastore.type_defs import ListContainersInputListContainersPaginateTypeDef
 
+def get_value() -> ListContainersInputListContainersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListContainersInputListContainersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListContainersInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import ListContainersInputRequestTypeDef
+
+def get_value() -> ListContainersInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcontainersoutputtypedef"></a>
+```python title="Definition"
+class ListContainersInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListContainersOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import ListContainersOutputTypeDef
+
+def get_value() -> ListContainersOutputTypeDef:
+    return {
+        "Containers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContainersOutputTypeDef(TypedDict):
+    Containers: List[ContainerTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Containers`: `List`\[[ContainerTypeDef](./type_defs.md#containertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ContainerTypeDef](./type_defs.md#containertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "Resource": ...,
+    }
 ```
 
-Required fields:
-
-- `Resource`: `str`
-
-<a id="listtagsforresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    Resource: str,
+```
 
 ## ListTagsForResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="metricpolicyruletypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricPolicyRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import MetricPolicyRuleTypeDef
+
+def get_value() -> MetricPolicyRuleTypeDef:
+    return {
+        "ObjectGroup": ...,
+        "ObjectGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ObjectGroup`: `str`
-- `ObjectGroupName`: `str`
-
-<a id="metricpolicytypedef"></a>
+```python title="Definition"
+class MetricPolicyRuleTypeDef(TypedDict):
+    ObjectGroup: str,
+    ObjectGroupName: str,
+```
 
 ## MetricPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import MetricPolicyTypeDef
+
+def get_value() -> MetricPolicyTypeDef:
+    return {
+        "ContainerLevelMetrics": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricPolicyTypeDef(TypedDict):
+    ContainerLevelMetrics: ContainerLevelMetricsType,  # (1)
+    MetricPolicyRules: NotRequired[List[MetricPolicyRuleTypeDef]],  # (2)
+```
 
-- `ContainerLevelMetrics`:
-  [ContainerLevelMetricsType](./literals.md#containerlevelmetricstype)
-
-Optional fields:
-
-- `MetricPolicyRules`:
-  `List`\[[MetricPolicyRuleTypeDef](./type_defs.md#metricpolicyruletypedef)\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: ContainerLevelMetricsType](./literals.md#containerlevelmetricstype) 
+2. See [:material-code-braces: MetricPolicyRuleTypeDef](./type_defs.md#metricpolicyruletypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putcontainerpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutContainerPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import PutContainerPolicyInputRequestTypeDef
+
+def get_value() -> PutContainerPolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+        "Policy": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-- `Policy`: `str`
-
-<a id="putcorspolicyinputrequesttypedef"></a>
+```python title="Definition"
+class PutContainerPolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+    Policy: str,
+```
 
 ## PutCorsPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import PutCorsPolicyInputRequestTypeDef
+
+def get_value() -> PutCorsPolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+        "CorsPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutCorsPolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+    CorsPolicy: Sequence[CorsRuleTypeDef],  # (1)
+```
 
-- `ContainerName`: `str`
-- `CorsPolicy`: `Sequence`\[[CorsRuleTypeDef](./type_defs.md#corsruletypedef)\]
-
-<a id="putlifecyclepolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: CorsRuleTypeDef](./type_defs.md#corsruletypedef) 
 ## PutLifecyclePolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import PutLifecyclePolicyInputRequestTypeDef
+
+def get_value() -> PutLifecyclePolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+        "LifecyclePolicy": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-- `LifecyclePolicy`: `str`
-
-<a id="putmetricpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class PutLifecyclePolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+    LifecyclePolicy: str,
+```
 
 ## PutMetricPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import PutMetricPolicyInputRequestTypeDef
+
+def get_value() -> PutMetricPolicyInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+        "MetricPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutMetricPolicyInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+    MetricPolicy: MetricPolicyTypeDef,  # (1)
+```
 
-- `ContainerName`: `str`
-- `MetricPolicy`: [MetricPolicyTypeDef](./type_defs.md#metricpolicytypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: MetricPolicyTypeDef](./type_defs.md#metricpolicytypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startaccesslogginginputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartAccessLoggingInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import StartAccessLoggingInputRequestTypeDef
+
+def get_value() -> StartAccessLoggingInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="stopaccesslogginginputrequesttypedef"></a>
+```python title="Definition"
+class StartAccessLoggingInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## StopAccessLoggingInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import StopAccessLoggingInputRequestTypeDef
+
+def get_value() -> StopAccessLoggingInputRequestTypeDef:
+    return {
+        "ContainerName": ...,
+    }
 ```
 
-Required fields:
-
-- `ContainerName`: `str`
-
-<a id="tagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class StopAccessLoggingInputRequestTypeDef(TypedDict):
+    ContainerName: str,
+```
 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "Resource": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    Resource: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `Resource`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `Value`: `str`
-
-<a id="untagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
+```
 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediastore.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "Resource": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    Resource: str,
+    TagKeys: Sequence[str],
+```
 
-- `Resource`: `str`
-- `TagKeys`: `Sequence`\[`str`\]

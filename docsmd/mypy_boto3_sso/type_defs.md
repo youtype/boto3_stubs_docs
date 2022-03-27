@@ -1,203 +1,281 @@
-<a id="typed-dictionaries-for-boto3-sso-module"></a>
-
-# Typed dictionaries for boto3 SSO module
+# Typed dictionaries
 
 > [Index](../README.md) > [SSO](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
-type annotations stubs module
-[mypy-boto3-sso](https://pypi.org/project/mypy-boto3-sso/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SSO module](#typed-dictionaries-for-boto3-sso-module)
-  - [AccountInfoTypeDef](#accountinfotypedef)
-  - [GetRoleCredentialsRequestRequestTypeDef](#getrolecredentialsrequestrequesttypedef)
-  - [GetRoleCredentialsResponseTypeDef](#getrolecredentialsresponsetypedef)
-  - [ListAccountRolesRequestRequestTypeDef](#listaccountrolesrequestrequesttypedef)
-  - [ListAccountRolesResponseTypeDef](#listaccountrolesresponsetypedef)
-  - [ListAccountsRequestRequestTypeDef](#listaccountsrequestrequesttypedef)
-  - [ListAccountsResponseTypeDef](#listaccountsresponsetypedef)
-  - [LogoutRequestRequestTypeDef](#logoutrequestrequesttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RoleCredentialsTypeDef](#rolecredentialstypedef)
-  - [RoleInfoTypeDef](#roleinfotypedef)
-
-<a id="accountinfotypedef"></a>
+    Auto-generated documentation for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+    type annotations stubs module [mypy-boto3-sso](https://pypi.org/project/mypy-boto3-sso/).
 
 ## AccountInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import AccountInfoTypeDef
+
+def get_value() -> AccountInfoTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-- `accountName`: `str`
-- `emailAddress`: `str`
-
-<a id="getrolecredentialsrequestrequesttypedef"></a>
+```python title="Definition"
+class AccountInfoTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    accountName: NotRequired[str],
+    emailAddress: NotRequired[str],
+```
 
 ## GetRoleCredentialsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import GetRoleCredentialsRequestRequestTypeDef
+
+def get_value() -> GetRoleCredentialsRequestRequestTypeDef:
+    return {
+        "roleName": ...,
+        "accountId": ...,
+        "accessToken": ...,
+    }
 ```
 
-Required fields:
-
-- `roleName`: `str`
-- `accountId`: `str`
-- `accessToken`: `str`
-
-<a id="getrolecredentialsresponsetypedef"></a>
+```python title="Definition"
+class GetRoleCredentialsRequestRequestTypeDef(TypedDict):
+    roleName: str,
+    accountId: str,
+    accessToken: str,
+```
 
 ## GetRoleCredentialsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import GetRoleCredentialsResponseTypeDef
+
+def get_value() -> GetRoleCredentialsResponseTypeDef:
+    return {
+        "roleCredentials": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRoleCredentialsResponseTypeDef(TypedDict):
+    roleCredentials: RoleCredentialsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `roleCredentials`:
-  [RoleCredentialsTypeDef](./type_defs.md#rolecredentialstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RoleCredentialsTypeDef](./type_defs.md#rolecredentialstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccountRolesRequestListAccountRolesPaginateTypeDef
 
-<a id="listaccountrolesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso.type_defs import ListAccountRolesRequestListAccountRolesPaginateTypeDef
 
+def get_value() -> ListAccountRolesRequestListAccountRolesPaginateTypeDef:
+    return {
+        "accessToken": ...,
+        "accountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountRolesRequestListAccountRolesPaginateTypeDef(TypedDict):
+    accessToken: str,
+    accountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountRolesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import ListAccountRolesRequestRequestTypeDef
+
+def get_value() -> ListAccountRolesRequestRequestTypeDef:
+    return {
+        "accessToken": ...,
+        "accountId": ...,
+    }
 ```
 
-Required fields:
-
-- `accessToken`: `str`
-- `accountId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listaccountrolesresponsetypedef"></a>
+```python title="Definition"
+class ListAccountRolesRequestRequestTypeDef(TypedDict):
+    accessToken: str,
+    accountId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListAccountRolesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import ListAccountRolesResponseTypeDef
+
+def get_value() -> ListAccountRolesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "roleList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountRolesResponseTypeDef(TypedDict):
+    nextToken: str,
+    roleList: List[RoleInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `roleList`: `List`\[[RoleInfoTypeDef](./type_defs.md#roleinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RoleInfoTypeDef](./type_defs.md#roleinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccountsRequestListAccountsPaginateTypeDef
 
-<a id="listaccountsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sso.type_defs import ListAccountsRequestListAccountsPaginateTypeDef
 
+def get_value() -> ListAccountsRequestListAccountsPaginateTypeDef:
+    return {
+        "accessToken": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountsRequestListAccountsPaginateTypeDef(TypedDict):
+    accessToken: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import ListAccountsRequestRequestTypeDef
+
+def get_value() -> ListAccountsRequestRequestTypeDef:
+    return {
+        "accessToken": ...,
+    }
 ```
 
-Required fields:
-
-- `accessToken`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listaccountsresponsetypedef"></a>
+```python title="Definition"
+class ListAccountsRequestRequestTypeDef(TypedDict):
+    accessToken: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListAccountsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import ListAccountsResponseTypeDef
+
+def get_value() -> ListAccountsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "accountList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountsResponseTypeDef(TypedDict):
+    nextToken: str,
+    accountList: List[AccountInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `accountList`:
-  `List`\[[AccountInfoTypeDef](./type_defs.md#accountinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="logoutrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountInfoTypeDef](./type_defs.md#accountinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogoutRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import LogoutRequestRequestTypeDef
+
+def get_value() -> LogoutRequestRequestTypeDef:
+    return {
+        "accessToken": ...,
+    }
 ```
 
-Required fields:
-
-- `accessToken`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class LogoutRequestRequestTypeDef(TypedDict):
+    accessToken: str,
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="rolecredentialstypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RoleCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import RoleCredentialsTypeDef
+
+def get_value() -> RoleCredentialsTypeDef:
+    return {
+        "accessKeyId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accessKeyId`: `str`
-- `secretAccessKey`: `str`
-- `sessionToken`: `str`
-- `expiration`: `int`
-
-<a id="roleinfotypedef"></a>
+```python title="Definition"
+class RoleCredentialsTypeDef(TypedDict):
+    accessKeyId: NotRequired[str],
+    secretAccessKey: NotRequired[str],
+    sessionToken: NotRequired[str],
+    expiration: NotRequired[int],
+```
 
 ## RoleInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sso.type_defs import RoleInfoTypeDef
+
+def get_value() -> RoleInfoTypeDef:
+    return {
+        "roleName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RoleInfoTypeDef(TypedDict):
+    roleName: NotRequired[str],
+    accountId: NotRequired[str],
+```
 
-- `roleName`: `str`
-- `accountId`: `str`

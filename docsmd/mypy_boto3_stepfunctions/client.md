@@ -1,55 +1,18 @@
-<a id="sfnclient-for-boto3-sfn-module"></a>
-
-# SFNClient for boto3 SFN module
+# SFNClient
 
 > [Index](../README.md) > [SFN](./README.md) > SFNClient
 
-Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
-type annotations stubs module
-[mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+!!! note ""
 
-- [SFNClient for boto3 SFN module](#sfnclient-for-boto3-sfn-module)
-  - [SFNClient](#sfnclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_activity](#create_activity)
-    - [create_state_machine](#create_state_machine)
-    - [delete_activity](#delete_activity)
-    - [delete_state_machine](#delete_state_machine)
-    - [describe_activity](#describe_activity)
-    - [describe_execution](#describe_execution)
-    - [describe_state_machine](#describe_state_machine)
-    - [describe_state_machine_for_execution](#describe_state_machine_for_execution)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_activity_task](#get_activity_task)
-    - [get_execution_history](#get_execution_history)
-    - [list_activities](#list_activities)
-    - [list_executions](#list_executions)
-    - [list_state_machines](#list_state_machines)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [send_task_failure](#send_task_failure)
-    - [send_task_heartbeat](#send_task_heartbeat)
-    - [send_task_success](#send_task_success)
-    - [start_execution](#start_execution)
-    - [start_sync_execution](#start_sync_execution)
-    - [stop_execution](#stop_execution)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_state_machine](#update_state_machine)
-    - [get_paginator](#get_paginator)
-
-<a id="sfnclient"></a>
+    Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+    type annotations stubs module [mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 ## SFNClient
 
-Type annotations for `boto3.client("stepfunctions")`
+Type annotations and code completion for `#!python boto3.client("stepfunctions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_stepfunctions.client import SFNClient
 
@@ -57,654 +20,823 @@ def get_stepfunctions_client() -> SFNClient:
     return Session().client("stepfunctions")
 ```
 
-Boto3 documentation:
-[SFN.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("stepfunctions").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("stepfunctions")
+
+try:
+    do_something(client)
+except (
+    client.ActivityDoesNotExist,
+    client.ActivityLimitExceeded,
+    client.ActivityWorkerLimitExceeded,
+    client.ClientError,
+    client.ExecutionAlreadyExists,
+    client.ExecutionDoesNotExist,
+    client.ExecutionLimitExceeded,
+    client.InvalidArn,
+    client.InvalidDefinition,
+    client.InvalidExecutionInput,
+    client.InvalidLoggingConfiguration,
+    client.InvalidName,
+    client.InvalidOutput,
+    client.InvalidToken,
+    client.InvalidTracingConfiguration,
+    client.MissingRequiredParameter,
+    client.ResourceNotFound,
+    client.StateMachineAlreadyExists,
+    client.StateMachineDeleting,
+    client.StateMachineDoesNotExist,
+    client.StateMachineLimitExceeded,
+    client.StateMachineTypeNotSupported,
+    client.TaskDoesNotExist,
+    client.TaskTimedOut,
+    client.TooManyTags,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_stepfunctions.client import Exceptions
 
 def handle_error(exc: Exceptions.ActivityDoesNotExist) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ActivityDoesNotExist`
-- `Exceptions.ActivityLimitExceeded`
-- `Exceptions.ActivityWorkerLimitExceeded`
-- `Exceptions.ClientError`
-- `Exceptions.ExecutionAlreadyExists`
-- `Exceptions.ExecutionDoesNotExist`
-- `Exceptions.ExecutionLimitExceeded`
-- `Exceptions.InvalidArn`
-- `Exceptions.InvalidDefinition`
-- `Exceptions.InvalidExecutionInput`
-- `Exceptions.InvalidLoggingConfiguration`
-- `Exceptions.InvalidName`
-- `Exceptions.InvalidOutput`
-- `Exceptions.InvalidToken`
-- `Exceptions.InvalidTracingConfiguration`
-- `Exceptions.MissingRequiredParameter`
-- `Exceptions.ResourceNotFound`
-- `Exceptions.StateMachineAlreadyExists`
-- `Exceptions.StateMachineDeleting`
-- `Exceptions.StateMachineDoesNotExist`
-- `Exceptions.StateMachineLimitExceeded`
-- `Exceptions.StateMachineTypeNotSupported`
-- `Exceptions.TaskDoesNotExist`
-- `Exceptions.TaskTimedOut`
-- `Exceptions.TooManyTags`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SFNClient exceptions.
-
-Type annotations for `boto3.client("stepfunctions").exceptions` method.
-
-Boto3 documentation:
-[SFN.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("stepfunctions").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.can_paginate)
 
-Boto3 documentation:
-[SFN.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_activity"></a>
-
-### create_activity
+### create\_activity
 
 Creates an activity.
 
-Type annotations for `boto3.client("stepfunctions").create_activity` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").create_activity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_activity)
 
-Boto3 documentation:
-[SFN.Client.create_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_activity)
+```python title="Method definition"
+def create_activity(
+    self,
+    *,
+    name: str,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateActivityOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateActivityInputRequestTypeDef](./type_defs.md#createactivityinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateActivityOutputTypeDef](./type_defs.md#createactivityoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateActivityInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateActivityOutputTypeDef](./type_defs.md#createactivityoutputtypedef).
+parent.create_activity(**kwargs)
+```
 
-<a id="create\_state\_machine"></a>
+1. See [:material-code-braces: CreateActivityInputRequestTypeDef](./type_defs.md#createactivityinputrequesttypedef) 
 
-### create_state_machine
+### create\_state\_machine
 
 Creates a state machine.
 
-Type annotations for `boto3.client("stepfunctions").create_state_machine`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").create_state_machine` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_state_machine)
 
-Boto3 documentation:
-[SFN.Client.create_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.create_state_machine)
+```python title="Method definition"
+def create_state_machine(
+    self,
+    *,
+    name: str,
+    definition: str,
+    roleArn: str,
+    type: StateMachineTypeType = ...,  # (1)
+    loggingConfiguration: LoggingConfigurationTypeDef = ...,  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (3)
+    tracingConfiguration: TracingConfigurationTypeDef = ...,  # (4)
+) -> CreateStateMachineOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateStateMachineInputRequestTypeDef](./type_defs.md#createstatemachineinputrequesttypedef).
+1. See [:material-code-brackets: StateMachineTypeType](./literals.md#statemachinetypetype) 
+2. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef) 
+5. See [:material-code-braces: CreateStateMachineOutputTypeDef](./type_defs.md#createstatemachineoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `definition`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
-- `loggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `tracingConfiguration`:
-  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateStateMachineInputRequestTypeDef = {  # (1)
+    "name": ...,
+    "definition": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreateStateMachineOutputTypeDef](./type_defs.md#createstatemachineoutputtypedef).
+parent.create_state_machine(**kwargs)
+```
 
-<a id="delete\_activity"></a>
+1. See [:material-code-braces: CreateStateMachineInputRequestTypeDef](./type_defs.md#createstatemachineinputrequesttypedef) 
 
-### delete_activity
+### delete\_activity
 
 Deletes an activity.
 
-Type annotations for `boto3.client("stepfunctions").delete_activity` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").delete_activity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_activity)
 
-Boto3 documentation:
-[SFN.Client.delete_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_activity)
+```python title="Method definition"
+def delete_activity(
+    self,
+    *,
+    activityArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteActivityInputRequestTypeDef](./type_defs.md#deleteactivityinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `activityArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteActivityInputRequestTypeDef = {  # (1)
+    "activityArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_activity(**kwargs)
+```
 
-<a id="delete\_state\_machine"></a>
+1. See [:material-code-braces: DeleteActivityInputRequestTypeDef](./type_defs.md#deleteactivityinputrequesttypedef) 
 
-### delete_state_machine
+### delete\_state\_machine
 
 Deletes a state machine.
 
-Type annotations for `boto3.client("stepfunctions").delete_state_machine`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").delete_state_machine` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_state_machine)
 
-Boto3 documentation:
-[SFN.Client.delete_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.delete_state_machine)
+```python title="Method definition"
+def delete_state_machine(
+    self,
+    *,
+    stateMachineArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStateMachineInputRequestTypeDef](./type_defs.md#deletestatemachineinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `stateMachineArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteStateMachineInputRequestTypeDef = {  # (1)
+    "stateMachineArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_state_machine(**kwargs)
+```
 
-<a id="describe\_activity"></a>
+1. See [:material-code-braces: DeleteStateMachineInputRequestTypeDef](./type_defs.md#deletestatemachineinputrequesttypedef) 
 
-### describe_activity
+### describe\_activity
 
 Describes an activity.
 
-Type annotations for `boto3.client("stepfunctions").describe_activity` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").describe_activity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_activity)
 
-Boto3 documentation:
-[SFN.Client.describe_activity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_activity)
+```python title="Method definition"
+def describe_activity(
+    self,
+    *,
+    activityArn: str,
+) -> DescribeActivityOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeActivityInputRequestTypeDef](./type_defs.md#describeactivityinputrequesttypedef).
+1. See [:material-code-braces: DescribeActivityOutputTypeDef](./type_defs.md#describeactivityoutputtypedef) 
 
-Keyword-only arguments:
 
-- `activityArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeActivityInputRequestTypeDef = {  # (1)
+    "activityArn": ...,
+}
 
-Returns
-[DescribeActivityOutputTypeDef](./type_defs.md#describeactivityoutputtypedef).
+parent.describe_activity(**kwargs)
+```
 
-<a id="describe\_execution"></a>
+1. See [:material-code-braces: DescribeActivityInputRequestTypeDef](./type_defs.md#describeactivityinputrequesttypedef) 
 
-### describe_execution
+### describe\_execution
 
 Describes an execution.
 
-Type annotations for `boto3.client("stepfunctions").describe_execution` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").describe_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution)
 
-Boto3 documentation:
-[SFN.Client.describe_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_execution)
+```python title="Method definition"
+def describe_execution(
+    self,
+    *,
+    executionArn: str,
+) -> DescribeExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExecutionInputRequestTypeDef](./type_defs.md#describeexecutioninputrequesttypedef).
+1. See [:material-code-braces: DescribeExecutionOutputTypeDef](./type_defs.md#describeexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `executionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeExecutionInputRequestTypeDef = {  # (1)
+    "executionArn": ...,
+}
 
-Returns
-[DescribeExecutionOutputTypeDef](./type_defs.md#describeexecutionoutputtypedef).
+parent.describe_execution(**kwargs)
+```
 
-<a id="describe\_state\_machine"></a>
+1. See [:material-code-braces: DescribeExecutionInputRequestTypeDef](./type_defs.md#describeexecutioninputrequesttypedef) 
 
-### describe_state_machine
+### describe\_state\_machine
 
 Describes a state machine.
 
-Type annotations for `boto3.client("stepfunctions").describe_state_machine`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").describe_state_machine` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine)
 
-Boto3 documentation:
-[SFN.Client.describe_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine)
+```python title="Method definition"
+def describe_state_machine(
+    self,
+    *,
+    stateMachineArn: str,
+) -> DescribeStateMachineOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStateMachineInputRequestTypeDef](./type_defs.md#describestatemachineinputrequesttypedef).
+1. See [:material-code-braces: DescribeStateMachineOutputTypeDef](./type_defs.md#describestatemachineoutputtypedef) 
 
-Keyword-only arguments:
 
-- `stateMachineArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStateMachineInputRequestTypeDef = {  # (1)
+    "stateMachineArn": ...,
+}
 
-Returns
-[DescribeStateMachineOutputTypeDef](./type_defs.md#describestatemachineoutputtypedef).
+parent.describe_state_machine(**kwargs)
+```
 
-<a id="describe\_state\_machine\_for\_execution"></a>
+1. See [:material-code-braces: DescribeStateMachineInputRequestTypeDef](./type_defs.md#describestatemachineinputrequesttypedef) 
 
-### describe_state_machine_for_execution
+### describe\_state\_machine\_for\_execution
 
 Describes the state machine associated with a specific execution.
 
-Type annotations for
-`boto3.client("stepfunctions").describe_state_machine_for_execution` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").describe_state_machine_for_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution)
 
-Boto3 documentation:
-[SFN.Client.describe_state_machine_for_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.describe_state_machine_for_execution)
+```python title="Method definition"
+def describe_state_machine_for_execution(
+    self,
+    *,
+    executionArn: str,
+) -> DescribeStateMachineForExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStateMachineForExecutionInputRequestTypeDef](./type_defs.md#describestatemachineforexecutioninputrequesttypedef).
+1. See [:material-code-braces: DescribeStateMachineForExecutionOutputTypeDef](./type_defs.md#describestatemachineforexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `executionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStateMachineForExecutionInputRequestTypeDef = {  # (1)
+    "executionArn": ...,
+}
 
-Returns
-[DescribeStateMachineForExecutionOutputTypeDef](./type_defs.md#describestatemachineforexecutionoutputtypedef).
+parent.describe_state_machine_for_execution(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeStateMachineForExecutionInputRequestTypeDef](./type_defs.md#describestatemachineforexecutioninputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("stepfunctions").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SFN.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_activity\_task"></a>
-
-### get_activity_task
+### get\_activity\_task
 
 Used by workers to retrieve a task (with the specified activity ARN) which has
 been scheduled for execution by a running state machine.
 
-Type annotations for `boto3.client("stepfunctions").get_activity_task` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").get_activity_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_activity_task)
 
-Boto3 documentation:
-[SFN.Client.get_activity_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_activity_task)
+```python title="Method definition"
+def get_activity_task(
+    self,
+    *,
+    activityArn: str,
+    workerName: str = ...,
+) -> GetActivityTaskOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetActivityTaskInputRequestTypeDef](./type_defs.md#getactivitytaskinputrequesttypedef).
+1. See [:material-code-braces: GetActivityTaskOutputTypeDef](./type_defs.md#getactivitytaskoutputtypedef) 
 
-Keyword-only arguments:
 
-- `activityArn`: `str` *(required)*
-- `workerName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetActivityTaskInputRequestTypeDef = {  # (1)
+    "activityArn": ...,
+}
 
-Returns
-[GetActivityTaskOutputTypeDef](./type_defs.md#getactivitytaskoutputtypedef).
+parent.get_activity_task(**kwargs)
+```
 
-<a id="get\_execution\_history"></a>
+1. See [:material-code-braces: GetActivityTaskInputRequestTypeDef](./type_defs.md#getactivitytaskinputrequesttypedef) 
 
-### get_execution_history
+### get\_execution\_history
 
 Returns the history of the specified execution as a list of events.
 
-Type annotations for `boto3.client("stepfunctions").get_execution_history`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").get_execution_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_execution_history)
 
-Boto3 documentation:
-[SFN.Client.get_execution_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.get_execution_history)
+```python title="Method definition"
+def get_execution_history(
+    self,
+    *,
+    executionArn: str,
+    maxResults: int = ...,
+    reverseOrder: bool = ...,
+    nextToken: str = ...,
+    includeExecutionData: bool = ...,
+) -> GetExecutionHistoryOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetExecutionHistoryInputRequestTypeDef](./type_defs.md#getexecutionhistoryinputrequesttypedef).
+1. See [:material-code-braces: GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `executionArn`: `str` *(required)*
-- `maxResults`: `int`
-- `reverseOrder`: `bool`
-- `nextToken`: `str`
-- `includeExecutionData`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetExecutionHistoryInputRequestTypeDef = {  # (1)
+    "executionArn": ...,
+}
 
-Returns
-[GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef).
+parent.get_execution_history(**kwargs)
+```
 
-<a id="list\_activities"></a>
+1. See [:material-code-braces: GetExecutionHistoryInputRequestTypeDef](./type_defs.md#getexecutionhistoryinputrequesttypedef) 
 
-### list_activities
+### list\_activities
 
 Lists the existing activities.
 
-Type annotations for `boto3.client("stepfunctions").list_activities` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").list_activities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_activities)
 
-Boto3 documentation:
-[SFN.Client.list_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_activities)
+```python title="Method definition"
+def list_activities(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListActivitiesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListActivitiesInputRequestTypeDef](./type_defs.md#listactivitiesinputrequesttypedef).
+1. See [:material-code-braces: ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListActivitiesInputRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef).
+parent.list_activities(**kwargs)
+```
 
-<a id="list\_executions"></a>
+1. See [:material-code-braces: ListActivitiesInputRequestTypeDef](./type_defs.md#listactivitiesinputrequesttypedef) 
 
-### list_executions
+### list\_executions
 
 Lists the executions of a state machine that meet the filtering criteria.
 
-Type annotations for `boto3.client("stepfunctions").list_executions` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").list_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions)
 
-Boto3 documentation:
-[SFN.Client.list_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_executions)
+```python title="Method definition"
+def list_executions(
+    self,
+    *,
+    stateMachineArn: str,
+    statusFilter: ExecutionStatusType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListExecutionsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListExecutionsInputRequestTypeDef](./type_defs.md#listexecutionsinputrequesttypedef).
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+2. See [:material-code-braces: ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `stateMachineArn`: `str` *(required)*
-- `statusFilter`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListExecutionsInputRequestTypeDef = {  # (1)
+    "stateMachineArn": ...,
+}
 
-Returns
-[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef).
+parent.list_executions(**kwargs)
+```
 
-<a id="list\_state\_machines"></a>
+1. See [:material-code-braces: ListExecutionsInputRequestTypeDef](./type_defs.md#listexecutionsinputrequesttypedef) 
 
-### list_state_machines
+### list\_state\_machines
 
 Lists the existing state machines.
 
-Type annotations for `boto3.client("stepfunctions").list_state_machines`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").list_state_machines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_state_machines)
 
-Boto3 documentation:
-[SFN.Client.list_state_machines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_state_machines)
+```python title="Method definition"
+def list_state_machines(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListStateMachinesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStateMachinesInputRequestTypeDef](./type_defs.md#liststatemachinesinputrequesttypedef).
+1. See [:material-code-braces: ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStateMachinesInputRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef).
+parent.list_state_machines(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListStateMachinesInputRequestTypeDef](./type_defs.md#liststatemachinesinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List tags for a given resource.
 
-Type annotations for `boto3.client("stepfunctions").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[SFN.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="send\_task\_failure"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### send_task_failure
-
-Used by activity workers and task states using the
-\[callback\](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-
-resource.html#connect-wait-token)\_ pattern to report that the task identified
-by the `taskToken` failed.
-
-Type annotations for `boto3.client("stepfunctions").send_task_failure` method.
-
-Boto3 documentation:
-[SFN.Client.send_task_failure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_failure)
-
-Arguments mapping described in
-[SendTaskFailureInputRequestTypeDef](./type_defs.md#sendtaskfailureinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `taskToken`: `str` *(required)*
-- `error`: `str`
-- `cause`: `str`
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="send\_task\_heartbeat"></a>
-
-### send_task_heartbeat
+### send\_task\_failure
 
 Used by activity workers and task states using the
-\[callback\](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-
-resource.html#connect-wait-token)\_ pattern to report to Step Functions that
-the task represented by the specified `taskToken` is still making progress.
+[callback](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-
+resource.html#connect-wait-token)_ pattern to report that the task identified by
+the `taskToken` failed.
 
-Type annotations for `boto3.client("stepfunctions").send_task_heartbeat`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").send_task_failure` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_failure)
 
-Boto3 documentation:
-[SFN.Client.send_task_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat)
+```python title="Method definition"
+def send_task_failure(
+    self,
+    *,
+    taskToken: str,
+    error: str = ...,
+    cause: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SendTaskHeartbeatInputRequestTypeDef](./type_defs.md#sendtaskheartbeatinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `taskToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SendTaskFailureInputRequestTypeDef = {  # (1)
+    "taskToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.send_task_failure(**kwargs)
+```
 
-<a id="send\_task\_success"></a>
+1. See [:material-code-braces: SendTaskFailureInputRequestTypeDef](./type_defs.md#sendtaskfailureinputrequesttypedef) 
 
-### send_task_success
+### send\_task\_heartbeat
 
 Used by activity workers and task states using the
-\[callback\](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-
-resource.html#connect-wait-token)\_ pattern to report that the task identified
-by the `taskToken` completed successfully.
+[callback](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-
+resource.html#connect-wait-token)_ pattern to report to Step Functions that the
+task represented by the specified `taskToken` is still making progress.
 
-Type annotations for `boto3.client("stepfunctions").send_task_success` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").send_task_heartbeat` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_heartbeat)
 
-Boto3 documentation:
-[SFN.Client.send_task_success](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_success)
+```python title="Method definition"
+def send_task_heartbeat(
+    self,
+    *,
+    taskToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SendTaskSuccessInputRequestTypeDef](./type_defs.md#sendtasksuccessinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `taskToken`: `str` *(required)*
-- `output`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SendTaskHeartbeatInputRequestTypeDef = {  # (1)
+    "taskToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.send_task_heartbeat(**kwargs)
+```
 
-<a id="start\_execution"></a>
+1. See [:material-code-braces: SendTaskHeartbeatInputRequestTypeDef](./type_defs.md#sendtaskheartbeatinputrequesttypedef) 
 
-### start_execution
+### send\_task\_success
+
+Used by activity workers and task states using the
+[callback](https://docs.aws.amazon.com/step-functions/latest/dg/connect-to-
+resource.html#connect-wait-token)_ pattern to report that the task identified by
+the `taskToken` completed successfully.
+
+Type annotations and code completion for `#!python boto3.client("stepfunctions").send_task_success` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.send_task_success)
+
+```python title="Method definition"
+def send_task_success(
+    self,
+    *,
+    taskToken: str,
+    output: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: SendTaskSuccessInputRequestTypeDef = {  # (1)
+    "taskToken": ...,
+    "output": ...,
+}
+
+parent.send_task_success(**kwargs)
+```
+
+1. See [:material-code-braces: SendTaskSuccessInputRequestTypeDef](./type_defs.md#sendtasksuccessinputrequesttypedef) 
+
+### start\_execution
 
 Starts a state machine execution.
 
-Type annotations for `boto3.client("stepfunctions").start_execution` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").start_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_execution)
 
-Boto3 documentation:
-[SFN.Client.start_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_execution)
+```python title="Method definition"
+def start_execution(
+    self,
+    *,
+    stateMachineArn: str,
+    name: str = ...,
+    input: str = ...,
+    traceHeader: str = ...,
+) -> StartExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartExecutionInputRequestTypeDef](./type_defs.md#startexecutioninputrequesttypedef).
+1. See [:material-code-braces: StartExecutionOutputTypeDef](./type_defs.md#startexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `stateMachineArn`: `str` *(required)*
-- `name`: `str`
-- `input`: `str`
-- `traceHeader`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartExecutionInputRequestTypeDef = {  # (1)
+    "stateMachineArn": ...,
+}
 
-Returns
-[StartExecutionOutputTypeDef](./type_defs.md#startexecutionoutputtypedef).
+parent.start_execution(**kwargs)
+```
 
-<a id="start\_sync\_execution"></a>
+1. See [:material-code-braces: StartExecutionInputRequestTypeDef](./type_defs.md#startexecutioninputrequesttypedef) 
 
-### start_sync_execution
+### start\_sync\_execution
 
 Starts a Synchronous Express state machine execution.
 
-Type annotations for `boto3.client("stepfunctions").start_sync_execution`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").start_sync_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_sync_execution)
 
-Boto3 documentation:
-[SFN.Client.start_sync_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.start_sync_execution)
+```python title="Method definition"
+def start_sync_execution(
+    self,
+    *,
+    stateMachineArn: str,
+    name: str = ...,
+    input: str = ...,
+    traceHeader: str = ...,
+) -> StartSyncExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartSyncExecutionInputRequestTypeDef](./type_defs.md#startsyncexecutioninputrequesttypedef).
+1. See [:material-code-braces: StartSyncExecutionOutputTypeDef](./type_defs.md#startsyncexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `stateMachineArn`: `str` *(required)*
-- `name`: `str`
-- `input`: `str`
-- `traceHeader`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartSyncExecutionInputRequestTypeDef = {  # (1)
+    "stateMachineArn": ...,
+}
 
-Returns
-[StartSyncExecutionOutputTypeDef](./type_defs.md#startsyncexecutionoutputtypedef).
+parent.start_sync_execution(**kwargs)
+```
 
-<a id="stop\_execution"></a>
+1. See [:material-code-braces: StartSyncExecutionInputRequestTypeDef](./type_defs.md#startsyncexecutioninputrequesttypedef) 
 
-### stop_execution
+### stop\_execution
 
 Stops an execution.
 
-Type annotations for `boto3.client("stepfunctions").stop_execution` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").stop_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.stop_execution)
 
-Boto3 documentation:
-[SFN.Client.stop_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.stop_execution)
+```python title="Method definition"
+def stop_execution(
+    self,
+    *,
+    executionArn: str,
+    error: str = ...,
+    cause: str = ...,
+) -> StopExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopExecutionInputRequestTypeDef](./type_defs.md#stopexecutioninputrequesttypedef).
+1. See [:material-code-braces: StopExecutionOutputTypeDef](./type_defs.md#stopexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `executionArn`: `str` *(required)*
-- `error`: `str`
-- `cause`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopExecutionInputRequestTypeDef = {  # (1)
+    "executionArn": ...,
+}
 
-Returns
-[StopExecutionOutputTypeDef](./type_defs.md#stopexecutionoutputtypedef).
+parent.stop_execution(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopExecutionInputRequestTypeDef](./type_defs.md#stopexecutioninputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Add a tag to a Step Functions resource.
 
-Type annotations for `boto3.client("stepfunctions").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.tag_resource)
 
-Boto3 documentation:
-[SFN.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
-Remove a tag from a Step Functions resource See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/states-2016-11-23/UntagResource).
+Remove a tag from a Step Functions resource See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/states-2016-11-23/UntagResource).
 
-Type annotations for `boto3.client("stepfunctions").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.untag_resource)
 
-Boto3 documentation:
-[SFN.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_state\_machine"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_state_machine
+### update\_state\_machine
 
-Updates an existing state machine by modifying its `definition` , `roleArn` ,
-or `loggingConfiguration`.
+Updates an existing state machine by modifying its `definition` , `roleArn` , or
+`loggingConfiguration`.
 
-Type annotations for `boto3.client("stepfunctions").update_state_machine`
-method.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").update_state_machine` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_state_machine)
 
-Boto3 documentation:
-[SFN.Client.update_state_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client.update_state_machine)
+```python title="Method definition"
+def update_state_machine(
+    self,
+    *,
+    stateMachineArn: str,
+    definition: str = ...,
+    roleArn: str = ...,
+    loggingConfiguration: LoggingConfigurationTypeDef = ...,  # (1)
+    tracingConfiguration: TracingConfigurationTypeDef = ...,  # (2)
+) -> UpdateStateMachineOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStateMachineInputRequestTypeDef](./type_defs.md#updatestatemachineinputrequesttypedef).
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef) 
+3. See [:material-code-braces: UpdateStateMachineOutputTypeDef](./type_defs.md#updatestatemachineoutputtypedef) 
 
-Keyword-only arguments:
 
-- `stateMachineArn`: `str` *(required)*
-- `definition`: `str`
-- `roleArn`: `str`
-- `loggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `tracingConfiguration`:
-  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateStateMachineInputRequestTypeDef = {  # (1)
+    "stateMachineArn": ...,
+}
 
-Returns
-[UpdateStateMachineOutputTypeDef](./type_defs.md#updatestatemachineoutputtypedef).
+parent.update_state_machine(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateStateMachineInputRequestTypeDef](./type_defs.md#updatestatemachineinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("stepfunctions").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").get_paginator` method with overloads.
 
-- `client.get_paginator("get_execution_history")` ->
-  [GetExecutionHistoryPaginator](./paginators.md#getexecutionhistorypaginator)
-- `client.get_paginator("list_activities")` ->
-  [ListActivitiesPaginator](./paginators.md#listactivitiespaginator)
-- `client.get_paginator("list_executions")` ->
-  [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
-- `client.get_paginator("list_state_machines")` ->
-  [ListStateMachinesPaginator](./paginators.md#liststatemachinespaginator)
+- `client.get_paginator("get_execution_history")` -> [GetExecutionHistoryPaginator](./paginators.md#getexecutionhistorypaginator)
+- `client.get_paginator("list_activities")` -> [ListActivitiesPaginator](./paginators.md#listactivitiespaginator)
+- `client.get_paginator("list_executions")` -> [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+- `client.get_paginator("list_state_machines")` -> [ListStateMachinesPaginator](./paginators.md#liststatemachinespaginator)
+
+
+

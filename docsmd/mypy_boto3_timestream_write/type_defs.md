@@ -1,618 +1,761 @@
-<a id="typed-dictionaries-for-boto3-timestreamwrite-module"></a>
-
-# Typed dictionaries for boto3 TimestreamWrite module
+# Typed dictionaries
 
 > [Index](../README.md) > [TimestreamWrite](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
-type annotations stubs module
-[mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
+!!! note ""
 
-- [Typed dictionaries for boto3 TimestreamWrite module](#typed-dictionaries-for-boto3-timestreamwrite-module)
-  - [CreateDatabaseRequestRequestTypeDef](#createdatabaserequestrequesttypedef)
-  - [CreateDatabaseResponseTypeDef](#createdatabaseresponsetypedef)
-  - [CreateTableRequestRequestTypeDef](#createtablerequestrequesttypedef)
-  - [CreateTableResponseTypeDef](#createtableresponsetypedef)
-  - [DatabaseTypeDef](#databasetypedef)
-  - [DeleteDatabaseRequestRequestTypeDef](#deletedatabaserequestrequesttypedef)
-  - [DeleteTableRequestRequestTypeDef](#deletetablerequestrequesttypedef)
-  - [DescribeDatabaseRequestRequestTypeDef](#describedatabaserequestrequesttypedef)
-  - [DescribeDatabaseResponseTypeDef](#describedatabaseresponsetypedef)
-  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
-  - [DescribeTableRequestRequestTypeDef](#describetablerequestrequesttypedef)
-  - [DescribeTableResponseTypeDef](#describetableresponsetypedef)
-  - [DimensionTypeDef](#dimensiontypedef)
-  - [EndpointTypeDef](#endpointtypedef)
-  - [ListDatabasesRequestRequestTypeDef](#listdatabasesrequestrequesttypedef)
-  - [ListDatabasesResponseTypeDef](#listdatabasesresponsetypedef)
-  - [ListTablesRequestRequestTypeDef](#listtablesrequestrequesttypedef)
-  - [ListTablesResponseTypeDef](#listtablesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MagneticStoreRejectedDataLocationTypeDef](#magneticstorerejecteddatalocationtypedef)
-  - [MagneticStoreWritePropertiesTypeDef](#magneticstorewritepropertiestypedef)
-  - [MeasureValueTypeDef](#measurevaluetypedef)
-  - [RecordTypeDef](#recordtypedef)
-  - [RecordsIngestedTypeDef](#recordsingestedtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetentionPropertiesTypeDef](#retentionpropertiestypedef)
-  - [S3ConfigurationTypeDef](#s3configurationtypedef)
-  - [TableTypeDef](#tabletypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDatabaseRequestRequestTypeDef](#updatedatabaserequestrequesttypedef)
-  - [UpdateDatabaseResponseTypeDef](#updatedatabaseresponsetypedef)
-  - [UpdateTableRequestRequestTypeDef](#updatetablerequestrequesttypedef)
-  - [UpdateTableResponseTypeDef](#updatetableresponsetypedef)
-  - [WriteRecordsRequestRequestTypeDef](#writerecordsrequestrequesttypedef)
-  - [WriteRecordsResponseTypeDef](#writerecordsresponsetypedef)
-
-<a id="createdatabaserequestrequesttypedef"></a>
+    Auto-generated documentation for [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
+    type annotations stubs module [mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 ## CreateDatabaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import CreateDatabaseRequestRequestTypeDef
+
+def get_value() -> CreateDatabaseRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatabaseRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    KmsKeyId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `DatabaseName`: `str`
-
-Optional fields:
-
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdatabaseresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDatabaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import CreateDatabaseResponseTypeDef
+
+def get_value() -> CreateDatabaseResponseTypeDef:
+    return {
+        "Database": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatabaseResponseTypeDef(TypedDict):
+    Database: DatabaseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatabaseTypeDef](./type_defs.md#databasetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import CreateTableRequestRequestTypeDef
+
+def get_value() -> CreateTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    RetentionProperties: NotRequired[RetentionPropertiesTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    MagneticStoreWriteProperties: NotRequired[MagneticStoreWritePropertiesTypeDef],  # (3)
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `RetentionProperties`:
-  [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `MagneticStoreWriteProperties`:
-  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
-
-<a id="createtableresponsetypedef"></a>
-
+1. See [:material-code-braces: RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef) 
 ## CreateTableResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import CreateTableResponseTypeDef
+
+def get_value() -> CreateTableResponseTypeDef:
+    return {
+        "Table": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTableResponseTypeDef(TypedDict):
+    Table: TableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="databasetypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DatabaseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import DatabaseTypeDef
+
+def get_value() -> DatabaseTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `DatabaseName`: `str`
-- `TableCount`: `int`
-- `KmsKeyId`: `str`
-- `CreationTime`: `datetime`
-- `LastUpdatedTime`: `datetime`
-
-<a id="deletedatabaserequestrequesttypedef"></a>
+```python title="Definition"
+class DatabaseTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    TableCount: NotRequired[int],
+    KmsKeyId: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+```
 
 ## DeleteDatabaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import DeleteDatabaseRequestRequestTypeDef
+
+def get_value() -> DeleteDatabaseRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-
-<a id="deletetablerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatabaseRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+```
 
 ## DeleteTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import DeleteTableRequestRequestTypeDef
+
+def get_value() -> DeleteTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-<a id="describedatabaserequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+```
 
 ## DescribeDatabaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import DescribeDatabaseRequestRequestTypeDef
+
+def get_value() -> DescribeDatabaseRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-
-<a id="describedatabaseresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatabaseRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+```
 
 ## DescribeDatabaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import DescribeDatabaseResponseTypeDef
+
+def get_value() -> DescribeDatabaseResponseTypeDef:
+    return {
+        "Database": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatabaseResponseTypeDef(TypedDict):
+    Database: DatabaseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeendpointsresponsetypedef"></a>
-
+1. See [:material-code-braces: DatabaseTypeDef](./type_defs.md#databasetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEndpointsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import DescribeEndpointsResponseTypeDef
+
+def get_value() -> DescribeEndpointsResponseTypeDef:
+    return {
+        "Endpoints": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEndpointsResponseTypeDef(TypedDict):
+    Endpoints: List[EndpointTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import DescribeTableRequestRequestTypeDef
+
+def get_value() -> DescribeTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-<a id="describetableresponsetypedef"></a>
+```python title="Definition"
+class DescribeTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+```
 
 ## DescribeTableResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import DescribeTableResponseTypeDef
+
+def get_value() -> DescribeTableResponseTypeDef:
+    return {
+        "Table": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTableResponseTypeDef(TypedDict):
+    Table: TableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dimensiontypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DimensionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import DimensionTypeDef
+
+def get_value() -> DimensionTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DimensionTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+    DimensionValueType: NotRequired[DimensionValueTypeType],  # (1)
+```
 
-- `Name`: `str`
-- `Value`: `str`
-
-Optional fields:
-
-- `DimensionValueType`: `Literal['VARCHAR']` (see
-  [DimensionValueTypeType](./literals.md#dimensionvaluetypetype))
-
-<a id="endpointtypedef"></a>
-
+1. See [:material-code-brackets: DimensionValueTypeType](./literals.md#dimensionvaluetypetype) 
 ## EndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "Address": ...,
+        "CachePeriodInMinutes": ...,
+    }
 ```
 
-Required fields:
-
-- `Address`: `str`
-- `CachePeriodInMinutes`: `int`
-
-<a id="listdatabasesrequestrequesttypedef"></a>
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    Address: str,
+    CachePeriodInMinutes: int,
+```
 
 ## ListDatabasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import ListDatabasesRequestRequestTypeDef
+
+def get_value() -> ListDatabasesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdatabasesresponsetypedef"></a>
+```python title="Definition"
+class ListDatabasesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDatabasesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import ListDatabasesResponseTypeDef
+
+def get_value() -> ListDatabasesResponseTypeDef:
+    return {
+        "Databases": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatabasesResponseTypeDef(TypedDict):
+    Databases: List[DatabaseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Databases`: `List`\[[DatabaseTypeDef](./type_defs.md#databasetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtablesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatabaseTypeDef](./type_defs.md#databasetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTablesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import ListTablesRequestRequestTypeDef
+
+def get_value() -> ListTablesRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
 ```
 
-Optional fields:
-
-- `DatabaseName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listtablesresponsetypedef"></a>
+```python title="Definition"
+class ListTablesRequestRequestTypeDef(TypedDict):
+    DatabaseName: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListTablesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import ListTablesResponseTypeDef
+
+def get_value() -> ListTablesResponseTypeDef:
+    return {
+        "Tables": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTablesResponseTypeDef(TypedDict):
+    Tables: List[TableTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tables`: `List`\[[TableTypeDef](./type_defs.md#tabletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="magneticstorerejecteddatalocationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MagneticStoreRejectedDataLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import MagneticStoreRejectedDataLocationTypeDef
+
+def get_value() -> MagneticStoreRejectedDataLocationTypeDef:
+    return {
+        "S3Configuration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MagneticStoreRejectedDataLocationTypeDef(TypedDict):
+    S3Configuration: NotRequired[S3ConfigurationTypeDef],  # (1)
+```
 
-- `S3Configuration`:
-  [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
-
-<a id="magneticstorewritepropertiestypedef"></a>
-
+1. See [:material-code-braces: S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef) 
 ## MagneticStoreWritePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import MagneticStoreWritePropertiesTypeDef
+
+def get_value() -> MagneticStoreWritePropertiesTypeDef:
+    return {
+        "EnableMagneticStoreWrites": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MagneticStoreWritePropertiesTypeDef(TypedDict):
+    EnableMagneticStoreWrites: bool,
+    MagneticStoreRejectedDataLocation: NotRequired[MagneticStoreRejectedDataLocationTypeDef],  # (1)
+```
 
-- `EnableMagneticStoreWrites`: `bool`
-
-Optional fields:
-
-- `MagneticStoreRejectedDataLocation`:
-  [MagneticStoreRejectedDataLocationTypeDef](./type_defs.md#magneticstorerejecteddatalocationtypedef)
-
-<a id="measurevaluetypedef"></a>
-
+1. See [:material-code-braces: MagneticStoreRejectedDataLocationTypeDef](./type_defs.md#magneticstorerejecteddatalocationtypedef) 
 ## MeasureValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import MeasureValueTypeDef
+
+def get_value() -> MeasureValueTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MeasureValueTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+    Type: MeasureValueTypeType,  # (1)
+```
 
-- `Name`: `str`
-- `Value`: `str`
-- `Type`: [MeasureValueTypeType](./literals.md#measurevaluetypetype)
-
-<a id="recordtypedef"></a>
-
+1. See [:material-code-brackets: MeasureValueTypeType](./literals.md#measurevaluetypetype) 
 ## RecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import RecordTypeDef
+
+def get_value() -> RecordTypeDef:
+    return {
+        "Dimensions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecordTypeDef(TypedDict):
+    Dimensions: NotRequired[Sequence[DimensionTypeDef]],  # (1)
+    MeasureName: NotRequired[str],
+    MeasureValue: NotRequired[str],
+    MeasureValueType: NotRequired[MeasureValueTypeType],  # (2)
+    Time: NotRequired[str],
+    TimeUnit: NotRequired[TimeUnitType],  # (3)
+    Version: NotRequired[int],
+    MeasureValues: NotRequired[Sequence[MeasureValueTypeDef]],  # (4)
+```
 
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `MeasureName`: `str`
-- `MeasureValue`: `str`
-- `MeasureValueType`:
-  [MeasureValueTypeType](./literals.md#measurevaluetypetype)
-- `Time`: `str`
-- `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
-- `Version`: `int`
-- `MeasureValues`:
-  `Sequence`\[[MeasureValueTypeDef](./type_defs.md#measurevaluetypedef)\]
-
-<a id="recordsingestedtypedef"></a>
-
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-brackets: MeasureValueTypeType](./literals.md#measurevaluetypetype) 
+3. See [:material-code-brackets: TimeUnitType](./literals.md#timeunittype) 
+4. See [:material-code-braces: MeasureValueTypeDef](./type_defs.md#measurevaluetypedef) 
 ## RecordsIngestedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import RecordsIngestedTypeDef
+
+def get_value() -> RecordsIngestedTypeDef:
+    return {
+        "Total": ...,
+    }
 ```
 
-Optional fields:
-
-- `Total`: `int`
-- `MemoryStore`: `int`
-- `MagneticStore`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RecordsIngestedTypeDef(TypedDict):
+    Total: NotRequired[int],
+    MemoryStore: NotRequired[int],
+    MagneticStore: NotRequired[int],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retentionpropertiestypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetentionPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import RetentionPropertiesTypeDef
+
+def get_value() -> RetentionPropertiesTypeDef:
+    return {
+        "MemoryStoreRetentionPeriodInHours": ...,
+        "MagneticStoreRetentionPeriodInDays": ...,
+    }
 ```
 
-Required fields:
-
-- `MemoryStoreRetentionPeriodInHours`: `int`
-- `MagneticStoreRetentionPeriodInDays`: `int`
-
-<a id="s3configurationtypedef"></a>
+```python title="Definition"
+class RetentionPropertiesTypeDef(TypedDict):
+    MemoryStoreRetentionPeriodInHours: int,
+    MagneticStoreRetentionPeriodInDays: int,
+```
 
 ## S3ConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import S3ConfigurationTypeDef
+
+def get_value() -> S3ConfigurationTypeDef:
+    return {
+        "BucketName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3ConfigurationTypeDef(TypedDict):
+    BucketName: NotRequired[str],
+    ObjectKeyPrefix: NotRequired[str],
+    EncryptionOption: NotRequired[S3EncryptionOptionType],  # (1)
+    KmsKeyId: NotRequired[str],
+```
 
-- `BucketName`: `str`
-- `ObjectKeyPrefix`: `str`
-- `EncryptionOption`:
-  [S3EncryptionOptionType](./literals.md#s3encryptionoptiontype)
-- `KmsKeyId`: `str`
-
-<a id="tabletypedef"></a>
-
+1. See [:material-code-brackets: S3EncryptionOptionType](./literals.md#s3encryptionoptiontype) 
 ## TableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import TableTypeDef
+
+def get_value() -> TableTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TableTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    TableName: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    TableStatus: NotRequired[TableStatusType],  # (1)
+    RetentionProperties: NotRequired[RetentionPropertiesTypeDef],  # (2)
+    CreationTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    MagneticStoreWriteProperties: NotRequired[MagneticStoreWritePropertiesTypeDef],  # (3)
+```
 
-- `Arn`: `str`
-- `TableName`: `str`
-- `DatabaseName`: `str`
-- `TableStatus`: [TableStatusType](./literals.md#tablestatustype)
-- `RetentionProperties`:
-  [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
-- `CreationTime`: `datetime`
-- `LastUpdatedTime`: `datetime`
-- `MagneticStoreWriteProperties`:
-  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TableStatusType](./literals.md#tablestatustype) 
+2. See [:material-code-braces: RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef) 
+3. See [:material-code-braces: MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedatabaserequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDatabaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import UpdateDatabaseRequestRequestTypeDef
+
+def get_value() -> UpdateDatabaseRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "KmsKeyId": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `KmsKeyId`: `str`
-
-<a id="updatedatabaseresponsetypedef"></a>
+```python title="Definition"
+class UpdateDatabaseRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    KmsKeyId: str,
+```
 
 ## UpdateDatabaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import UpdateDatabaseResponseTypeDef
+
+def get_value() -> UpdateDatabaseResponseTypeDef:
+    return {
+        "Database": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDatabaseResponseTypeDef(TypedDict):
+    Database: DatabaseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatabaseTypeDef](./type_defs.md#databasetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import UpdateTableRequestRequestTypeDef
+
+def get_value() -> UpdateTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    RetentionProperties: NotRequired[RetentionPropertiesTypeDef],  # (1)
+    MagneticStoreWriteProperties: NotRequired[MagneticStoreWritePropertiesTypeDef],  # (2)
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `RetentionProperties`:
-  [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
-- `MagneticStoreWriteProperties`:
-  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
-
-<a id="updatetableresponsetypedef"></a>
-
+1. See [:material-code-braces: RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef) 
+2. See [:material-code-braces: MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef) 
 ## UpdateTableResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import UpdateTableResponseTypeDef
+
+def get_value() -> UpdateTableResponseTypeDef:
+    return {
+        "Table": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableResponseTypeDef(TypedDict):
+    Table: TableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="writerecordsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WriteRecordsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import WriteRecordsRequestRequestTypeDef
+
+def get_value() -> WriteRecordsRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "Records": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WriteRecordsRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    Records: Sequence[RecordTypeDef],  # (1)
+    CommonAttributes: NotRequired[RecordTypeDef],  # (2)
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
-
-Optional fields:
-
-- `CommonAttributes`: [RecordTypeDef](./type_defs.md#recordtypedef)
-
-<a id="writerecordsresponsetypedef"></a>
-
+1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
+2. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
 ## WriteRecordsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_write.type_defs import WriteRecordsResponseTypeDef
+
+def get_value() -> WriteRecordsResponseTypeDef:
+    return {
+        "RecordsIngested": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WriteRecordsResponseTypeDef(TypedDict):
+    RecordsIngested: RecordsIngestedTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RecordsIngested`:
-  [RecordsIngestedTypeDef](./type_defs.md#recordsingestedtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RecordsIngestedTypeDef](./type_defs.md#recordsingestedtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

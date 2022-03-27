@@ -1,158 +1,231 @@
-<a id="examples-for-boto3-cloudwatch-module"></a>
-
-# Examples for boto3 CloudWatch module
+# Examples
 
 > [Index](../README.md) > [CloudWatch](./README.md) > Examples
 
-- [Examples for boto3 CloudWatch module](#examples-for-boto3-cloudwatch-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
-  - [Service Resource](#service-resource)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+    type annotations stubs module [mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 ## Client
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[cloudwatch]` package installed.
 
-Write your `CloudWatch` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `CloudWatch` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CloudWatchClient
-# and provides type checking and code completion
-client = session.client("cloudwatch")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type DescribeAlarmHistoryPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_alarm_history")
-for item in paginator.paginate(...):
-    # item has type DescribeAlarmHistoryOutputTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type AlarmExistsWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("alarm_exists")
-waiter.wait()
-```
+    client = session.client("cloudwatch")  # (1)
+    result = client.delete_insight_rules()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [CloudWatchClient](./client.md)
+    2. result: [:material-code-braces: DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("cloudwatch")  # (1)
+
+    paginator = client.get_paginator("describe_alarm_history")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CloudWatchClient](./client.md)
+    2. paginator: [DescribeAlarmHistoryPaginator](./paginators.md#describealarmhistorypaginator)
+    3. item: [:material-code-braces: DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("cloudwatch")  # (1)
+
+    waiter = client.get_waiter("alarm_exists")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [CloudWatchClient](./client.md)
+    2. waiter: [AlarmExistsWaiter](./waiters.md#alarmexistswaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[cloudwatch]` or a standalone `mypy_boto3_cloudwatch`
-package, you have to explicitly specify `client: CloudWatchClient` type
-annotation.
+With `boto3-stubs-lite[cloudwatch]`
+or a standalone `mypy_boto3_cloudwatch` package, you have to explicitly specify `client: CloudWatchClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_cloudwatch.client import CloudWatchClient
-from mypy_boto3_cloudwatch.paginator import DescribeAlarmHistoryPaginator
-from mypy_boto3_cloudwatch.waiter import AlarmExistsWaiter
-from mypy_boto3_cloudwatch.literals import PaginatorName
-from mypy_boto3_cloudwatch.literals import WaiterName
-from mypy_boto3_cloudwatch.type_defs import bool
-from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CloudWatchClient = session.client("cloudwatch")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_cloudwatch.client import CloudWatchClient
+    from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesOutputTypeDef
+    from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesInputRequestTypeDef
 
-paginator_name: PaginatorName = "describe_alarm_history"
-paginator: DescribeAlarmHistoryPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeAlarmHistoryOutputTypeDef
-    print(item)
 
-waiter_name: WaiterName = "alarm_exists"
-waiter: AlarmExistsWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
 
-<a id="service-resource"></a>
+    client: CloudWatchClient = session.client("cloudwatch")
+
+    kwargs: DeleteInsightRulesInputRequestTypeDef = {...}
+    result: DeleteInsightRulesOutputTypeDef = client.delete_insight_rules(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cloudwatch.client import CloudWatchClient
+    from mypy_boto3_cloudwatch.paginator import DescribeAlarmHistoryPaginator
+    from mypy_boto3_cloudwatch.type_defs import DescribeAlarmHistoryOutputTypeDef
+
+
+    session = Session()
+    client: CloudWatchClient = session.client("cloudwatch")
+
+    paginator: DescribeAlarmHistoryPaginator = client.get_paginator("describe_alarm_history")
+    for item in paginator.paginate(...):
+        item: DescribeAlarmHistoryOutputTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cloudwatch.client import CloudWatchClient
+    from mypy_boto3_cloudwatch.waiter import AlarmExistsWaiter
+
+    session = Session()
+    client: CloudWatchClient = session.client("cloudwatch")
+
+    waiter: AlarmExistsWaiter = client.get_waiter("alarm_exists")
+    waiter.wait()
+    ```
+
+
 
 ## Service Resource
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[cloudwatch]` package installed.
 
-```python
-import boto3
+
+=== "ServiceResource"
+
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
 
-session = boto3.Session()
+    session = Session()
 
-# resource has type CloudWatchServiceResource
-# and provides type checking and code completion
-resource = session.resource("cloudwatch")
+    resource = session.resource("cloudwatch")  # (1)
+    result = resource.Alarm()  # (2)
+    ```
 
-# result has type Alarm
-# and provides type checking and code completion
-result = resource.Alarm()
+    1. resource: [CloudWatchServiceResource](./service_resource.md)
+    2. result: 
 
-# collection has type ServiceResourceAlarmsCollection and provides type checking
-# and code completion for all collection methods
-collection = resource.alarms
-for item in collection:
-    # item has type Alarm
-    print(item)
-```
 
-<a id="explicit-type-annotations"></a>
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    resource = session.resource("cloudwatch")  # (1)
+
+    collection = resource.alarms  # (2)
+    for item in collection:
+        print(item)  # (3)
+    ```
+
+    1. resource: [CloudWatchServiceResource](./service_resource.md)
+    2. collection: [CloudWatchServiceResource](./service_resource.md#cloudwatchserviceresourcealarms)
+    3. item: Alarm
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[cloudwatch]` or a standalone `mypy_boto3_cloudwatch`
-package, you have to explicitly specify `resource: CloudWatchServiceResource`
-type annotation.
+With `boto3-stubs-lite[cloudwatch]`
+or a standalone `mypy_boto3_cloudwatch` package, you have to explicitly specify
+`resource: CloudWatchServiceResource` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
-```python
-import boto3
 
-from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
-from mypy_boto3_cloudwatch.service_resource import Alarm
-from mypy_boto3_cloudwatch.service_resource import ServiceResourceAlarmsCollection, Alarm
 
-session = boto3.Session()
+=== "ServiceResource"
 
-resource: CloudWatchServiceResource = session.resource("cloudwatch")
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
-result: Alarm = resource.Alarm()
+    from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
+    from mypy_boto3_cloudwatch.service_resource import Alarm
 
-collection: ServiceResourceAlarmsCollection = resource.alarms
-for item in collection:
-    item: Alarm
-    print(item)
-```
+
+    session = Session()
+
+    resource: CloudWatchServiceResource = session.resource("cloudwatch")
+    result: Alarm = resource.Alarm()
+    ```
+
+
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
+    from mypy_boto3_cloudwatch.service_resource import ServiceResourceAlarmsCollection
+    from mypy_boto3_cloudwatch.service_resource import Alarm
+
+
+    session = Session()
+
+    resource: CloudWatchServiceResource = session.resource("cloudwatch")
+    
+    collection: ServiceResourceAlarmsCollection = resource.alarms
+    for item in collection:
+        item: Alarm
+        print(item)
+    ```
+

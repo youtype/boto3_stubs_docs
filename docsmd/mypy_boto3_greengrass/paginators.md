@@ -1,45 +1,18 @@
-<a id="paginators-for-boto3-greengrass-module"></a>
-
-# Paginators for boto3 Greengrass module
+# Paginators
 
 > [Index](../README.md) > [Greengrass](./README.md) > Paginators
 
-Auto-generated documentation for
-[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
-type annotations stubs module
-[mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+!!! note ""
 
-- [Paginators for boto3 Greengrass module](#paginators-for-boto3-greengrass-module)
-  - [ListBulkDeploymentDetailedReportsPaginator](#listbulkdeploymentdetailedreportspaginator)
-  - [ListBulkDeploymentsPaginator](#listbulkdeploymentspaginator)
-  - [ListConnectorDefinitionVersionsPaginator](#listconnectordefinitionversionspaginator)
-  - [ListConnectorDefinitionsPaginator](#listconnectordefinitionspaginator)
-  - [ListCoreDefinitionVersionsPaginator](#listcoredefinitionversionspaginator)
-  - [ListCoreDefinitionsPaginator](#listcoredefinitionspaginator)
-  - [ListDeploymentsPaginator](#listdeploymentspaginator)
-  - [ListDeviceDefinitionVersionsPaginator](#listdevicedefinitionversionspaginator)
-  - [ListDeviceDefinitionsPaginator](#listdevicedefinitionspaginator)
-  - [ListFunctionDefinitionVersionsPaginator](#listfunctiondefinitionversionspaginator)
-  - [ListFunctionDefinitionsPaginator](#listfunctiondefinitionspaginator)
-  - [ListGroupVersionsPaginator](#listgroupversionspaginator)
-  - [ListGroupsPaginator](#listgroupspaginator)
-  - [ListLoggerDefinitionVersionsPaginator](#listloggerdefinitionversionspaginator)
-  - [ListLoggerDefinitionsPaginator](#listloggerdefinitionspaginator)
-  - [ListResourceDefinitionVersionsPaginator](#listresourcedefinitionversionspaginator)
-  - [ListResourceDefinitionsPaginator](#listresourcedefinitionspaginator)
-  - [ListSubscriptionDefinitionVersionsPaginator](#listsubscriptiondefinitionversionspaginator)
-  - [ListSubscriptionDefinitionsPaginator](#listsubscriptiondefinitionspaginator)
-
-<a id="listbulkdeploymentdetailedreportspaginator"></a>
+    Auto-generated documentation for [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
+    type annotations stubs module [mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 ## ListBulkDeploymentDetailedReportsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_bulk_deployment_detailed_reports")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_bulk_deployment_detailed_reports")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeploymentDetailedReports)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListBulkDeploymentDetailedReportsPaginator
@@ -48,28 +21,40 @@ def get_list_bulk_deployment_detailed_reports_paginator() -> ListBulkDeploymentD
     return Session().client("greengrass").get_paginator("list_bulk_deployment_detailed_reports")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListBulkDeploymentDetailedReports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeploymentDetailedReports)
 
-Arguments for `ListBulkDeploymentDetailedReportsPaginator.paginate` method:
+### paginate
 
-- `BulkDeploymentId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBulkDeploymentDetailedReportsPaginator.paginate` method.
 
-`ListBulkDeploymentDetailedReportsPaginator.paginate` returns
-`_PageIterator`\[[ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BulkDeploymentId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListBulkDeploymentDetailedReportsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listbulkdeploymentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBulkDeploymentDetailedReportsRequestListBulkDeploymentDetailedReportsPaginateTypeDef = {  # (1)
+    "BulkDeploymentId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBulkDeploymentDetailedReportsRequestListBulkDeploymentDetailedReportsPaginateTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsrequestlistbulkdeploymentdetailedreportspaginatetypedef) 
 ## ListBulkDeploymentsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_bulk_deployments")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_bulk_deployments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeployments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListBulkDeploymentsPaginator
@@ -78,27 +63,39 @@ def get_list_bulk_deployments_paginator() -> ListBulkDeploymentsPaginator:
     return Session().client("greengrass").get_paginator("list_bulk_deployments")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListBulkDeployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListBulkDeployments)
 
-Arguments for `ListBulkDeploymentsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBulkDeploymentsPaginator.paginate` method.
 
-`ListBulkDeploymentsPaginator.paginate` returns
-`_PageIterator`\[[ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListBulkDeploymentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listconnectordefinitionversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBulkDeploymentsRequestListBulkDeploymentsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBulkDeploymentsRequestListBulkDeploymentsPaginateTypeDef](./type_defs.md#listbulkdeploymentsrequestlistbulkdeploymentspaginatetypedef) 
 ## ListConnectorDefinitionVersionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_connector_definition_versions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_connector_definition_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitionVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListConnectorDefinitionVersionsPaginator
@@ -107,28 +104,40 @@ def get_list_connector_definition_versions_paginator() -> ListConnectorDefinitio
     return Session().client("greengrass").get_paginator("list_connector_definition_versions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListConnectorDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitionVersions)
 
-Arguments for `ListConnectorDefinitionVersionsPaginator.paginate` method:
+### paginate
 
-- `ConnectorDefinitionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListConnectorDefinitionVersionsPaginator.paginate` method.
 
-`ListConnectorDefinitionVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConnectorDefinitionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListConnectorDefinitionVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listconnectordefinitionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListConnectorDefinitionVersionsRequestListConnectorDefinitionVersionsPaginateTypeDef = {  # (1)
+    "ConnectorDefinitionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListConnectorDefinitionVersionsRequestListConnectorDefinitionVersionsPaginateTypeDef](./type_defs.md#listconnectordefinitionversionsrequestlistconnectordefinitionversionspaginatetypedef) 
 ## ListConnectorDefinitionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_connector_definitions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_connector_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListConnectorDefinitionsPaginator
@@ -137,27 +146,39 @@ def get_list_connector_definitions_paginator() -> ListConnectorDefinitionsPagina
     return Session().client("greengrass").get_paginator("list_connector_definitions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListConnectorDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListConnectorDefinitions)
 
-Arguments for `ListConnectorDefinitionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListConnectorDefinitionsPaginator.paginate` method.
 
-`ListConnectorDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListConnectorDefinitionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcoredefinitionversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListConnectorDefinitionsRequestListConnectorDefinitionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListConnectorDefinitionsRequestListConnectorDefinitionsPaginateTypeDef](./type_defs.md#listconnectordefinitionsrequestlistconnectordefinitionspaginatetypedef) 
 ## ListCoreDefinitionVersionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_core_definition_versions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_core_definition_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitionVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListCoreDefinitionVersionsPaginator
@@ -166,28 +187,40 @@ def get_list_core_definition_versions_paginator() -> ListCoreDefinitionVersionsP
     return Session().client("greengrass").get_paginator("list_core_definition_versions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListCoreDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitionVersions)
 
-Arguments for `ListCoreDefinitionVersionsPaginator.paginate` method:
+### paginate
 
-- `CoreDefinitionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCoreDefinitionVersionsPaginator.paginate` method.
 
-`ListCoreDefinitionVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CoreDefinitionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCoreDefinitionVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcoredefinitionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCoreDefinitionVersionsRequestListCoreDefinitionVersionsPaginateTypeDef = {  # (1)
+    "CoreDefinitionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCoreDefinitionVersionsRequestListCoreDefinitionVersionsPaginateTypeDef](./type_defs.md#listcoredefinitionversionsrequestlistcoredefinitionversionspaginatetypedef) 
 ## ListCoreDefinitionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_core_definitions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_core_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListCoreDefinitionsPaginator
@@ -196,27 +229,39 @@ def get_list_core_definitions_paginator() -> ListCoreDefinitionsPaginator:
     return Session().client("greengrass").get_paginator("list_core_definitions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListCoreDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListCoreDefinitions)
 
-Arguments for `ListCoreDefinitionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCoreDefinitionsPaginator.paginate` method.
 
-`ListCoreDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCoreDefinitionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdeploymentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCoreDefinitionsRequestListCoreDefinitionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCoreDefinitionsRequestListCoreDefinitionsPaginateTypeDef](./type_defs.md#listcoredefinitionsrequestlistcoredefinitionspaginatetypedef) 
 ## ListDeploymentsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_deployments")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_deployments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeployments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListDeploymentsPaginator
@@ -225,28 +270,40 @@ def get_list_deployments_paginator() -> ListDeploymentsPaginator:
     return Session().client("greengrass").get_paginator("list_deployments")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListDeployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeployments)
 
-Arguments for `ListDeploymentsPaginator.paginate` method:
+### paginate
 
-- `GroupId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDeploymentsPaginator.paginate` method.
 
-`ListDeploymentsPaginator.paginate` returns
-`_PageIterator`\[[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GroupId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDeploymentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdevicedefinitionversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDeploymentsRequestListDeploymentsPaginateTypeDef = {  # (1)
+    "GroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDeploymentsRequestListDeploymentsPaginateTypeDef](./type_defs.md#listdeploymentsrequestlistdeploymentspaginatetypedef) 
 ## ListDeviceDefinitionVersionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_device_definition_versions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_device_definition_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitionVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListDeviceDefinitionVersionsPaginator
@@ -255,28 +312,40 @@ def get_list_device_definition_versions_paginator() -> ListDeviceDefinitionVersi
     return Session().client("greengrass").get_paginator("list_device_definition_versions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListDeviceDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitionVersions)
 
-Arguments for `ListDeviceDefinitionVersionsPaginator.paginate` method:
+### paginate
 
-- `DeviceDefinitionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDeviceDefinitionVersionsPaginator.paginate` method.
 
-`ListDeviceDefinitionVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DeviceDefinitionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDeviceDefinitionVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdevicedefinitionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDeviceDefinitionVersionsRequestListDeviceDefinitionVersionsPaginateTypeDef = {  # (1)
+    "DeviceDefinitionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDeviceDefinitionVersionsRequestListDeviceDefinitionVersionsPaginateTypeDef](./type_defs.md#listdevicedefinitionversionsrequestlistdevicedefinitionversionspaginatetypedef) 
 ## ListDeviceDefinitionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_device_definitions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_device_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListDeviceDefinitionsPaginator
@@ -285,27 +354,39 @@ def get_list_device_definitions_paginator() -> ListDeviceDefinitionsPaginator:
     return Session().client("greengrass").get_paginator("list_device_definitions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListDeviceDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListDeviceDefinitions)
 
-Arguments for `ListDeviceDefinitionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDeviceDefinitionsPaginator.paginate` method.
 
-`ListDeviceDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDeviceDefinitionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfunctiondefinitionversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDeviceDefinitionsRequestListDeviceDefinitionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDeviceDefinitionsRequestListDeviceDefinitionsPaginateTypeDef](./type_defs.md#listdevicedefinitionsrequestlistdevicedefinitionspaginatetypedef) 
 ## ListFunctionDefinitionVersionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_function_definition_versions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_function_definition_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitionVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListFunctionDefinitionVersionsPaginator
@@ -314,28 +395,40 @@ def get_list_function_definition_versions_paginator() -> ListFunctionDefinitionV
     return Session().client("greengrass").get_paginator("list_function_definition_versions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListFunctionDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitionVersions)
 
-Arguments for `ListFunctionDefinitionVersionsPaginator.paginate` method:
+### paginate
 
-- `FunctionDefinitionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFunctionDefinitionVersionsPaginator.paginate` method.
 
-`ListFunctionDefinitionVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FunctionDefinitionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFunctionDefinitionVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfunctiondefinitionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFunctionDefinitionVersionsRequestListFunctionDefinitionVersionsPaginateTypeDef = {  # (1)
+    "FunctionDefinitionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFunctionDefinitionVersionsRequestListFunctionDefinitionVersionsPaginateTypeDef](./type_defs.md#listfunctiondefinitionversionsrequestlistfunctiondefinitionversionspaginatetypedef) 
 ## ListFunctionDefinitionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_function_definitions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_function_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListFunctionDefinitionsPaginator
@@ -344,27 +437,39 @@ def get_list_function_definitions_paginator() -> ListFunctionDefinitionsPaginato
     return Session().client("greengrass").get_paginator("list_function_definitions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListFunctionDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListFunctionDefinitions)
 
-Arguments for `ListFunctionDefinitionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFunctionDefinitionsPaginator.paginate` method.
 
-`ListFunctionDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFunctionDefinitionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgroupversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFunctionDefinitionsRequestListFunctionDefinitionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFunctionDefinitionsRequestListFunctionDefinitionsPaginateTypeDef](./type_defs.md#listfunctiondefinitionsrequestlistfunctiondefinitionspaginatetypedef) 
 ## ListGroupVersionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_group_versions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_group_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListGroupVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListGroupVersionsPaginator
@@ -373,27 +478,40 @@ def get_list_group_versions_paginator() -> ListGroupVersionsPaginator:
     return Session().client("greengrass").get_paginator("list_group_versions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListGroupVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListGroupVersions)
 
-Arguments for `ListGroupVersionsPaginator.paginate` method:
+### paginate
 
-- `GroupId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGroupVersionsPaginator.paginate` method.
 
-`ListGroupVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GroupId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGroupVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGroupVersionsRequestListGroupVersionsPaginateTypeDef = {  # (1)
+    "GroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroupVersionsRequestListGroupVersionsPaginateTypeDef](./type_defs.md#listgroupversionsrequestlistgroupversionspaginatetypedef) 
 ## ListGroupsPaginator
 
-Type annotations for `boto3.client("greengrass").get_paginator("list_groups")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListGroupsPaginator
@@ -402,27 +520,39 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return Session().client("greengrass").get_paginator("list_groups")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListGroups)
 
-Arguments for `ListGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGroupsPaginator.paginate` method.
 
-`ListGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listloggerdefinitionversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestListGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroupsRequestListGroupsPaginateTypeDef](./type_defs.md#listgroupsrequestlistgroupspaginatetypedef) 
 ## ListLoggerDefinitionVersionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_logger_definition_versions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_logger_definition_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitionVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListLoggerDefinitionVersionsPaginator
@@ -431,28 +561,40 @@ def get_list_logger_definition_versions_paginator() -> ListLoggerDefinitionVersi
     return Session().client("greengrass").get_paginator("list_logger_definition_versions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListLoggerDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitionVersions)
 
-Arguments for `ListLoggerDefinitionVersionsPaginator.paginate` method:
+### paginate
 
-- `LoggerDefinitionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListLoggerDefinitionVersionsPaginator.paginate` method.
 
-`ListLoggerDefinitionVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LoggerDefinitionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListLoggerDefinitionVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listloggerdefinitionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListLoggerDefinitionVersionsRequestListLoggerDefinitionVersionsPaginateTypeDef = {  # (1)
+    "LoggerDefinitionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLoggerDefinitionVersionsRequestListLoggerDefinitionVersionsPaginateTypeDef](./type_defs.md#listloggerdefinitionversionsrequestlistloggerdefinitionversionspaginatetypedef) 
 ## ListLoggerDefinitionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_logger_definitions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_logger_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListLoggerDefinitionsPaginator
@@ -461,27 +603,39 @@ def get_list_logger_definitions_paginator() -> ListLoggerDefinitionsPaginator:
     return Session().client("greengrass").get_paginator("list_logger_definitions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListLoggerDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListLoggerDefinitions)
 
-Arguments for `ListLoggerDefinitionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListLoggerDefinitionsPaginator.paginate` method.
 
-`ListLoggerDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListLoggerDefinitionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresourcedefinitionversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListLoggerDefinitionsRequestListLoggerDefinitionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLoggerDefinitionsRequestListLoggerDefinitionsPaginateTypeDef](./type_defs.md#listloggerdefinitionsrequestlistloggerdefinitionspaginatetypedef) 
 ## ListResourceDefinitionVersionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_resource_definition_versions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_resource_definition_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitionVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListResourceDefinitionVersionsPaginator
@@ -490,28 +644,40 @@ def get_list_resource_definition_versions_paginator() -> ListResourceDefinitionV
     return Session().client("greengrass").get_paginator("list_resource_definition_versions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListResourceDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitionVersions)
 
-Arguments for `ListResourceDefinitionVersionsPaginator.paginate` method:
+### paginate
 
-- `ResourceDefinitionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourceDefinitionVersionsPaginator.paginate` method.
 
-`ListResourceDefinitionVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceDefinitionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourceDefinitionVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresourcedefinitionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceDefinitionVersionsRequestListResourceDefinitionVersionsPaginateTypeDef = {  # (1)
+    "ResourceDefinitionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceDefinitionVersionsRequestListResourceDefinitionVersionsPaginateTypeDef](./type_defs.md#listresourcedefinitionversionsrequestlistresourcedefinitionversionspaginatetypedef) 
 ## ListResourceDefinitionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_resource_definitions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_resource_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListResourceDefinitionsPaginator
@@ -520,27 +686,39 @@ def get_list_resource_definitions_paginator() -> ListResourceDefinitionsPaginato
     return Session().client("greengrass").get_paginator("list_resource_definitions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListResourceDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListResourceDefinitions)
 
-Arguments for `ListResourceDefinitionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourceDefinitionsPaginator.paginate` method.
 
-`ListResourceDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourceDefinitionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsubscriptiondefinitionversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceDefinitionsRequestListResourceDefinitionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceDefinitionsRequestListResourceDefinitionsPaginateTypeDef](./type_defs.md#listresourcedefinitionsrequestlistresourcedefinitionspaginatetypedef) 
 ## ListSubscriptionDefinitionVersionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_subscription_definition_versions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_subscription_definition_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitionVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListSubscriptionDefinitionVersionsPaginator
@@ -549,28 +727,40 @@ def get_list_subscription_definition_versions_paginator() -> ListSubscriptionDef
     return Session().client("greengrass").get_paginator("list_subscription_definition_versions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListSubscriptionDefinitionVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitionVersions)
 
-Arguments for `ListSubscriptionDefinitionVersionsPaginator.paginate` method:
+### paginate
 
-- `SubscriptionDefinitionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSubscriptionDefinitionVersionsPaginator.paginate` method.
 
-`ListSubscriptionDefinitionVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SubscriptionDefinitionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSubscriptionDefinitionVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsubscriptiondefinitionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSubscriptionDefinitionVersionsRequestListSubscriptionDefinitionVersionsPaginateTypeDef = {  # (1)
+    "SubscriptionDefinitionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSubscriptionDefinitionVersionsRequestListSubscriptionDefinitionVersionsPaginateTypeDef](./type_defs.md#listsubscriptiondefinitionversionsrequestlistsubscriptiondefinitionversionspaginatetypedef) 
 ## ListSubscriptionDefinitionsPaginator
 
-Type annotations for
-`boto3.client("greengrass").get_paginator("list_subscription_definitions")`.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator("list_subscription_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_greengrass.paginator import ListSubscriptionDefinitionsPaginator
@@ -579,13 +769,30 @@ def get_list_subscription_definitions_paginator() -> ListSubscriptionDefinitions
     return Session().client("greengrass").get_paginator("list_subscription_definitions")
 ```
 
-Boto3 documentation:
-[Greengrass.Paginator.ListSubscriptionDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Paginator.ListSubscriptionDefinitions)
 
-Arguments for `ListSubscriptionDefinitionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSubscriptionDefinitionsPaginator.paginate` method.
 
-`ListSubscriptionDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSubscriptionDefinitionsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSubscriptionDefinitionsRequestListSubscriptionDefinitionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSubscriptionDefinitionsRequestListSubscriptionDefinitionsPaginateTypeDef](./type_defs.md#listsubscriptiondefinitionsrequestlistsubscriptiondefinitionspaginatetypedef) 

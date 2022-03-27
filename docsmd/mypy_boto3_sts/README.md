@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-sts-module"></a>
-
-# Type annotations for boto3 STS module
+#  STS module
 
 > [Index](../README.md) > STS
 
-Auto-generated documentation for
-[STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
-type annotations stubs module
-[mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
+!!! note ""
 
-- [Type annotations for boto3 STS module](#type-annotations-for-boto3-sts-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [STSClient](#stsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
+    type annotations stubs module [mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `STS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[sts]'
 python -m pip install mypy-boto3-sts
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,83 +42,63 @@ python -m pip install mypy-boto3-sts
 python -m pip uninstall -y mypy-boto3-sts
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="stsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## STSClient
 
-Type annotations for `boto3.client("sts")` as [STSClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("sts")` as [STSClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_sts.client import STSClient
+
+def get_client() -> STSClient:
+    return Session().cleint("sts")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [assume_role](./client.md#assume_role)
-- [assume_role_with_saml](./client.md#assume_role_with_saml)
-- [assume_role_with_web_identity](./client.md#assume_role_with_web_identity)
-- [can_paginate](./client.md#can_paginate)
-- [decode_authorization_message](./client.md#decode_authorization_message)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_access_key_info](./client.md#get_access_key_info)
-- [get_caller_identity](./client.md#get_caller_identity)
-- [get_federation_token](./client.md#get_federation_token)
-- [get_session_token](./client.md#get_session_token)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-STSClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- ExpiredTokenException
-- IDPCommunicationErrorException
-- IDPRejectedClaimException
-- InvalidAuthorizationMessageException
-- InvalidIdentityTokenException
-- MalformedPolicyDocumentException
-- PackedPolicyTooLargeException
-- RegionDisabledException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sts.literals import STSServiceName
 
-```python
-from mypy_boto3_sts.literals import STSServiceName, ...
+def get_value() -> STSServiceName:
+    return "sts"
 ```
 
 - [STSServiceName](./literals.md#stsservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sts.type_defs import AssumeRoleRequestRequestTypeDef
 
-```python
-from mypy_boto3_sts.type_defs import AssumeRoleRequestRequestTypeDef, ...
+def get_value() -> AssumeRoleRequestRequestTypeDef:
+    return {
+        "RoleArn": ...,
+        "RoleSessionName": ...,
+    }
 ```
 
 - [AssumeRoleRequestRequestTypeDef](./type_defs.md#assumerolerequestrequesttypedef)
@@ -163,3 +122,4 @@ from mypy_boto3_sts.type_defs import AssumeRoleRequestRequestTypeDef, ...
 - [PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
+

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-ssmcontacts-module"></a>
-
-# Type annotations for boto3 SSMContacts module
+#  SSMContacts module
 
 > [Index](../README.md) > SSMContacts
 
-Auto-generated documentation for
-[SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts)
-type annotations stubs module
-[mypy-boto3-ssm-contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
+!!! note ""
 
-- [Type annotations for boto3 SSMContacts module](#type-annotations-for-boto3-ssmcontacts-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SSMContactsClient](#ssmcontactsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts)
+    type annotations stubs module [mypy-boto3-ssm-contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SSMContacts`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ssm-contacts]'
 python -m pip install mypy-boto3-ssm-contacts
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,88 +42,37 @@ python -m pip install mypy-boto3-ssm-contacts
 python -m pip uninstall -y mypy-boto3-ssm-contacts
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ssmcontactsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SSMContactsClient
 
-Type annotations for `boto3.client("ssm-contacts")` as
-[SSMContactsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ssm-contacts")` as [SSMContactsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ssm_contacts.client import SSMContactsClient
+
+def get_client() -> SSMContactsClient:
+    return Session().cleint("ssm-contacts")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_page](./client.md#accept_page)
-- [activate_contact_channel](./client.md#activate_contact_channel)
-- [can_paginate](./client.md#can_paginate)
-- [create_contact](./client.md#create_contact)
-- [create_contact_channel](./client.md#create_contact_channel)
-- [deactivate_contact_channel](./client.md#deactivate_contact_channel)
-- [delete_contact](./client.md#delete_contact)
-- [delete_contact_channel](./client.md#delete_contact_channel)
-- [describe_engagement](./client.md#describe_engagement)
-- [describe_page](./client.md#describe_page)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_contact](./client.md#get_contact)
-- [get_contact_channel](./client.md#get_contact_channel)
-- [get_contact_policy](./client.md#get_contact_policy)
-- [get_paginator](./client.md#get_paginator)
-- [list_contact_channels](./client.md#list_contact_channels)
-- [list_contacts](./client.md#list_contacts)
-- [list_engagements](./client.md#list_engagements)
-- [list_page_receipts](./client.md#list_page_receipts)
-- [list_pages_by_contact](./client.md#list_pages_by_contact)
-- [list_pages_by_engagement](./client.md#list_pages_by_engagement)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_contact_policy](./client.md#put_contact_policy)
-- [send_activation_code](./client.md#send_activation_code)
-- [start_engagement](./client.md#start_engagement)
-- [stop_engagement](./client.md#stop_engagement)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_contact](./client.md#update_contact)
-- [update_contact_channel](./client.md#update_contact_channel)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SSMContactsClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- DataEncryptionException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("ssm-contacts").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("ssm-contacts").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ssm_contacts.paginator import ListContactChannelsPaginator, ...
+from mypy_boto3_ssm_contacts.paginator import ListContactChannelsPaginator
+
+def get_list_contact_channels_paginator() -> ListContactChannelsPaginator:
+    return Session().client("ssm-contacts").get_paginator("list_contact_channels"))
 ```
 
 - [ListContactChannelsPaginator](./paginators.md#listcontactchannelspaginator)
@@ -155,16 +82,23 @@ from mypy_boto3_ssm_contacts.paginator import ListContactChannelsPaginator, ...
 - [ListPagesByContactPaginator](./paginators.md#listpagesbycontactpaginator)
 - [ListPagesByEngagementPaginator](./paginators.md#listpagesbyengagementpaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ssm_contacts.literals import AcceptCodeValidationType
 
-```python
-from mypy_boto3_ssm_contacts.literals import AcceptCodeValidationType, ...
+def get_value() -> AcceptCodeValidationType:
+    return "ENFORCE"
 ```
 
 - [AcceptCodeValidationType](./literals.md#acceptcodevalidationtype)
@@ -184,17 +118,22 @@ from mypy_boto3_ssm_contacts.literals import AcceptCodeValidationType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ssm_contacts.type_defs import AcceptPageRequestRequestTypeDef
 
-```python
-from mypy_boto3_ssm_contacts.type_defs import AcceptPageRequestRequestTypeDef, ...
+def get_value() -> AcceptPageRequestRequestTypeDef:
+    return {
+        "PageId": ...,
+        "AcceptType": ...,
+        "AcceptCode": ...,
+    }
 ```
 
 - [AcceptPageRequestRequestTypeDef](./type_defs.md#acceptpagerequestrequesttypedef)
@@ -222,16 +161,22 @@ from mypy_boto3_ssm_contacts.type_defs import AcceptPageRequestRequestTypeDef, .
 - [GetContactPolicyResultTypeDef](./type_defs.md#getcontactpolicyresulttypedef)
 - [GetContactRequestRequestTypeDef](./type_defs.md#getcontactrequestrequesttypedef)
 - [GetContactResultTypeDef](./type_defs.md#getcontactresulttypedef)
+- [ListContactChannelsRequestListContactChannelsPaginateTypeDef](./type_defs.md#listcontactchannelsrequestlistcontactchannelspaginatetypedef)
 - [ListContactChannelsRequestRequestTypeDef](./type_defs.md#listcontactchannelsrequestrequesttypedef)
 - [ListContactChannelsResultTypeDef](./type_defs.md#listcontactchannelsresulttypedef)
+- [ListContactsRequestListContactsPaginateTypeDef](./type_defs.md#listcontactsrequestlistcontactspaginatetypedef)
 - [ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef)
 - [ListContactsResultTypeDef](./type_defs.md#listcontactsresulttypedef)
+- [ListEngagementsRequestListEngagementsPaginateTypeDef](./type_defs.md#listengagementsrequestlistengagementspaginatetypedef)
 - [ListEngagementsRequestRequestTypeDef](./type_defs.md#listengagementsrequestrequesttypedef)
 - [ListEngagementsResultTypeDef](./type_defs.md#listengagementsresulttypedef)
+- [ListPageReceiptsRequestListPageReceiptsPaginateTypeDef](./type_defs.md#listpagereceiptsrequestlistpagereceiptspaginatetypedef)
 - [ListPageReceiptsRequestRequestTypeDef](./type_defs.md#listpagereceiptsrequestrequesttypedef)
 - [ListPageReceiptsResultTypeDef](./type_defs.md#listpagereceiptsresulttypedef)
+- [ListPagesByContactRequestListPagesByContactPaginateTypeDef](./type_defs.md#listpagesbycontactrequestlistpagesbycontactpaginatetypedef)
 - [ListPagesByContactRequestRequestTypeDef](./type_defs.md#listpagesbycontactrequestrequesttypedef)
 - [ListPagesByContactResultTypeDef](./type_defs.md#listpagesbycontactresulttypedef)
+- [ListPagesByEngagementRequestListPagesByEngagementPaginateTypeDef](./type_defs.md#listpagesbyengagementrequestlistpagesbyengagementpaginatetypedef)
 - [ListPagesByEngagementRequestRequestTypeDef](./type_defs.md#listpagesbyengagementrequestrequesttypedef)
 - [ListPagesByEngagementResultTypeDef](./type_defs.md#listpagesbyengagementresulttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -254,3 +199,4 @@ from mypy_boto3_ssm_contacts.type_defs import AcceptPageRequestRequestTypeDef, .
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateContactChannelRequestRequestTypeDef](./type_defs.md#updatecontactchannelrequestrequesttypedef)
 - [UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef)
+

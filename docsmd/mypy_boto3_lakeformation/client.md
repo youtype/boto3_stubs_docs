@@ -1,76 +1,18 @@
-<a id="lakeformationclient-for-boto3-lakeformation-module"></a>
-
-# LakeFormationClient for boto3 LakeFormation module
+# LakeFormationClient
 
 > [Index](../README.md) > [LakeFormation](./README.md) > LakeFormationClient
 
-Auto-generated documentation for
-[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
-type annotations stubs module
-[mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+!!! note ""
 
-- [LakeFormationClient for boto3 LakeFormation module](#lakeformationclient-for-boto3-lakeformation-module)
-  - [LakeFormationClient](#lakeformationclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_lf_tags_to_resource](#add_lf_tags_to_resource)
-    - [batch_grant_permissions](#batch_grant_permissions)
-    - [batch_revoke_permissions](#batch_revoke_permissions)
-    - [can_paginate](#can_paginate)
-    - [cancel_transaction](#cancel_transaction)
-    - [commit_transaction](#commit_transaction)
-    - [create_data_cells_filter](#create_data_cells_filter)
-    - [create_lf_tag](#create_lf_tag)
-    - [delete_data_cells_filter](#delete_data_cells_filter)
-    - [delete_lf_tag](#delete_lf_tag)
-    - [delete_objects_on_cancel](#delete_objects_on_cancel)
-    - [deregister_resource](#deregister_resource)
-    - [describe_resource](#describe_resource)
-    - [describe_transaction](#describe_transaction)
-    - [extend_transaction](#extend_transaction)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_data_lake_settings](#get_data_lake_settings)
-    - [get_effective_permissions_for_path](#get_effective_permissions_for_path)
-    - [get_lf_tag](#get_lf_tag)
-    - [get_query_state](#get_query_state)
-    - [get_query_statistics](#get_query_statistics)
-    - [get_resource_lf_tags](#get_resource_lf_tags)
-    - [get_table_objects](#get_table_objects)
-    - [get_temporary_glue_partition_credentials](#get_temporary_glue_partition_credentials)
-    - [get_temporary_glue_table_credentials](#get_temporary_glue_table_credentials)
-    - [get_work_unit_results](#get_work_unit_results)
-    - [get_work_units](#get_work_units)
-    - [grant_permissions](#grant_permissions)
-    - [list_data_cells_filter](#list_data_cells_filter)
-    - [list_lf_tags](#list_lf_tags)
-    - [list_permissions](#list_permissions)
-    - [list_resources](#list_resources)
-    - [list_table_storage_optimizers](#list_table_storage_optimizers)
-    - [list_transactions](#list_transactions)
-    - [put_data_lake_settings](#put_data_lake_settings)
-    - [register_resource](#register_resource)
-    - [remove_lf_tags_from_resource](#remove_lf_tags_from_resource)
-    - [revoke_permissions](#revoke_permissions)
-    - [search_databases_by_lf_tags](#search_databases_by_lf_tags)
-    - [search_tables_by_lf_tags](#search_tables_by_lf_tags)
-    - [start_query_planning](#start_query_planning)
-    - [start_transaction](#start_transaction)
-    - [update_lf_tag](#update_lf_tag)
-    - [update_resource](#update_resource)
-    - [update_table_objects](#update_table_objects)
-    - [update_table_storage_optimizer](#update_table_storage_optimizer)
-    - [get_paginator](#get_paginator)
-
-<a id="lakeformationclient"></a>
+    Auto-generated documentation for [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+    type annotations stubs module [mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 ## LakeFormationClient
 
-Type annotations for `boto3.client("lakeformation")`
+Type annotations and code completion for `#!python boto3.client("lakeformation")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_lakeformation.client import LakeFormationClient
 
@@ -78,1192 +20,1529 @@ def get_lakeformation_client() -> LakeFormationClient:
     return Session().client("lakeformation")
 ```
 
-Boto3 documentation:
-[LakeFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("lakeformation").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("lakeformation")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AlreadyExistsException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.EntityNotFoundException,
+    client.ExpiredException,
+    client.GlueEncryptionException,
+    client.InternalServiceException,
+    client.InvalidInputException,
+    client.OperationTimeoutException,
+    client.PermissionTypeMismatchException,
+    client.ResourceNotReadyException,
+    client.ResourceNumberLimitExceededException,
+    client.StatisticsNotReadyYetException,
+    client.ThrottledException,
+    client.TransactionCanceledException,
+    client.TransactionCommitInProgressException,
+    client.TransactionCommittedException,
+    client.WorkUnitsNotReadyYetException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_lakeformation.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AlreadyExistsException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.EntityNotFoundException`
-- `Exceptions.ExpiredException`
-- `Exceptions.GlueEncryptionException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidInputException`
-- `Exceptions.OperationTimeoutException`
-- `Exceptions.PermissionTypeMismatchException`
-- `Exceptions.ResourceNotReadyException`
-- `Exceptions.ResourceNumberLimitExceededException`
-- `Exceptions.StatisticsNotReadyYetException`
-- `Exceptions.ThrottledException`
-- `Exceptions.TransactionCanceledException`
-- `Exceptions.TransactionCommitInProgressException`
-- `Exceptions.TransactionCommittedException`
-- `Exceptions.WorkUnitsNotReadyYetException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-LakeFormationClient exceptions.
-
-Type annotations for `boto3.client("lakeformation").exceptions` method.
-
-Boto3 documentation:
-[LakeFormation.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_lf\_tags\_to\_resource"></a>
-
-### add_lf_tags_to_resource
+### add\_lf\_tags\_to\_resource
 
 Attaches one or more LF-tags to an existing resource.
 
-Type annotations for `boto3.client("lakeformation").add_lf_tags_to_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").add_lf_tags_to_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.add_lf_tags_to_resource)
 
-Boto3 documentation:
-[LakeFormation.Client.add_lf_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.add_lf_tags_to_resource)
+```python title="Method definition"
+def add_lf_tags_to_resource(
+    self,
+    *,
+    Resource: ResourceTypeDef,  # (1)
+    LFTags: Sequence[LFTagPairTypeDef],  # (2)
+    CatalogId: str = ...,
+) -> AddLFTagsToResourceResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[AddLFTagsToResourceRequestRequestTypeDef](./type_defs.md#addlftagstoresourcerequestrequesttypedef).
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
+3. See [:material-code-braces: AddLFTagsToResourceResponseTypeDef](./type_defs.md#addlftagstoresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `LFTags`: `Sequence`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AddLFTagsToResourceRequestRequestTypeDef = {  # (1)
+    "Resource": ...,
+    "LFTags": ...,
+}
 
-Returns
-[AddLFTagsToResourceResponseTypeDef](./type_defs.md#addlftagstoresourceresponsetypedef).
+parent.add_lf_tags_to_resource(**kwargs)
+```
 
-<a id="batch\_grant\_permissions"></a>
+1. See [:material-code-braces: AddLFTagsToResourceRequestRequestTypeDef](./type_defs.md#addlftagstoresourcerequestrequesttypedef) 
 
-### batch_grant_permissions
+### batch\_grant\_permissions
 
 Batch operation to grant permissions to the principal.
 
-Type annotations for `boto3.client("lakeformation").batch_grant_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").batch_grant_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions)
 
-Boto3 documentation:
-[LakeFormation.Client.batch_grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_grant_permissions)
+```python title="Method definition"
+def batch_grant_permissions(
+    self,
+    *,
+    Entries: Sequence[BatchPermissionsRequestEntryTypeDef],  # (1)
+    CatalogId: str = ...,
+) -> BatchGrantPermissionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchGrantPermissionsRequestRequestTypeDef](./type_defs.md#batchgrantpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef) 
+2. See [:material-code-braces: BatchGrantPermissionsResponseTypeDef](./type_defs.md#batchgrantpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Entries`:
-  `Sequence`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchGrantPermissionsRequestRequestTypeDef = {  # (1)
+    "Entries": ...,
+}
 
-Returns
-[BatchGrantPermissionsResponseTypeDef](./type_defs.md#batchgrantpermissionsresponsetypedef).
+parent.batch_grant_permissions(**kwargs)
+```
 
-<a id="batch\_revoke\_permissions"></a>
+1. See [:material-code-braces: BatchGrantPermissionsRequestRequestTypeDef](./type_defs.md#batchgrantpermissionsrequestrequesttypedef) 
 
-### batch_revoke_permissions
+### batch\_revoke\_permissions
 
 Batch operation to revoke permissions from the principal.
 
-Type annotations for `boto3.client("lakeformation").batch_revoke_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").batch_revoke_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions)
 
-Boto3 documentation:
-[LakeFormation.Client.batch_revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.batch_revoke_permissions)
+```python title="Method definition"
+def batch_revoke_permissions(
+    self,
+    *,
+    Entries: Sequence[BatchPermissionsRequestEntryTypeDef],  # (1)
+    CatalogId: str = ...,
+) -> BatchRevokePermissionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchRevokePermissionsRequestRequestTypeDef](./type_defs.md#batchrevokepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef) 
+2. See [:material-code-braces: BatchRevokePermissionsResponseTypeDef](./type_defs.md#batchrevokepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Entries`:
-  `Sequence`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchRevokePermissionsRequestRequestTypeDef = {  # (1)
+    "Entries": ...,
+}
 
-Returns
-[BatchRevokePermissionsResponseTypeDef](./type_defs.md#batchrevokepermissionsresponsetypedef).
+parent.batch_revoke_permissions(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchRevokePermissionsRequestRequestTypeDef](./type_defs.md#batchrevokepermissionsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("lakeformation").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.can_paginate)
 
-Boto3 documentation:
-[LakeFormation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_transaction"></a>
-
-### cancel_transaction
+### cancel\_transaction
 
 Attempts to cancel the specified transaction.
 
-Type annotations for `boto3.client("lakeformation").cancel_transaction` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").cancel_transaction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.cancel_transaction)
 
-Boto3 documentation:
-[LakeFormation.Client.cancel_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.cancel_transaction)
+```python title="Method definition"
+def cancel_transaction(
+    self,
+    *,
+    TransactionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelTransactionRequestRequestTypeDef](./type_defs.md#canceltransactionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TransactionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelTransactionRequestRequestTypeDef = {  # (1)
+    "TransactionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_transaction(**kwargs)
+```
 
-<a id="commit\_transaction"></a>
+1. See [:material-code-braces: CancelTransactionRequestRequestTypeDef](./type_defs.md#canceltransactionrequestrequesttypedef) 
 
-### commit_transaction
+### commit\_transaction
 
 Attempts to commit the specified transaction.
 
-Type annotations for `boto3.client("lakeformation").commit_transaction` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").commit_transaction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.commit_transaction)
 
-Boto3 documentation:
-[LakeFormation.Client.commit_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.commit_transaction)
+```python title="Method definition"
+def commit_transaction(
+    self,
+    *,
+    TransactionId: str,
+) -> CommitTransactionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CommitTransactionRequestRequestTypeDef](./type_defs.md#committransactionrequestrequesttypedef).
+1. See [:material-code-braces: CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransactionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CommitTransactionRequestRequestTypeDef = {  # (1)
+    "TransactionId": ...,
+}
 
-Returns
-[CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef).
+parent.commit_transaction(**kwargs)
+```
 
-<a id="create\_data\_cells\_filter"></a>
+1. See [:material-code-braces: CommitTransactionRequestRequestTypeDef](./type_defs.md#committransactionrequestrequesttypedef) 
 
-### create_data_cells_filter
+### create\_data\_cells\_filter
 
 Creates a data cell filter to allow one to grant access to certain columns on
 certain rows.
 
-Type annotations for `boto3.client("lakeformation").create_data_cells_filter`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").create_data_cells_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.create_data_cells_filter)
 
-Boto3 documentation:
-[LakeFormation.Client.create_data_cells_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.create_data_cells_filter)
+```python title="Method definition"
+def create_data_cells_filter(
+    self,
+    *,
+    TableData: DataCellsFilterTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateDataCellsFilterRequestRequestTypeDef](./type_defs.md#createdatacellsfilterrequestrequesttypedef).
+1. See [:material-code-braces: DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef) 
 
-Keyword-only arguments:
 
-- `TableData`: [DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateDataCellsFilterRequestRequestTypeDef = {  # (1)
+    "TableData": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_data_cells_filter(**kwargs)
+```
 
-<a id="create\_lf\_tag"></a>
+1. See [:material-code-braces: CreateDataCellsFilterRequestRequestTypeDef](./type_defs.md#createdatacellsfilterrequestrequesttypedef) 
 
-### create_lf_tag
+### create\_lf\_tag
 
 Creates an LF-tag with the specified name and values.
 
-Type annotations for `boto3.client("lakeformation").create_lf_tag` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").create_lf_tag` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.create_lf_tag)
 
-Boto3 documentation:
-[LakeFormation.Client.create_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.create_lf_tag)
+```python title="Method definition"
+def create_lf_tag(
+    self,
+    *,
+    TagKey: str,
+    TagValues: Sequence[str],
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateLFTagRequestRequestTypeDef](./type_defs.md#createlftagrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TagKey`: `str` *(required)*
-- `TagValues`: `Sequence`\[`str`\] *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateLFTagRequestRequestTypeDef = {  # (1)
+    "TagKey": ...,
+    "TagValues": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_lf_tag(**kwargs)
+```
 
-<a id="delete\_data\_cells\_filter"></a>
+1. See [:material-code-braces: CreateLFTagRequestRequestTypeDef](./type_defs.md#createlftagrequestrequesttypedef) 
 
-### delete_data_cells_filter
+### delete\_data\_cells\_filter
 
 Deletes a data cell filter.
 
-Type annotations for `boto3.client("lakeformation").delete_data_cells_filter`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").delete_data_cells_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_data_cells_filter)
 
-Boto3 documentation:
-[LakeFormation.Client.delete_data_cells_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_data_cells_filter)
+```python title="Method definition"
+def delete_data_cells_filter(
+    self,
+    *,
+    TableCatalogId: str = ...,
+    DatabaseName: str = ...,
+    TableName: str = ...,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataCellsFilterRequestRequestTypeDef](./type_defs.md#deletedatacellsfilterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TableCatalogId`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDataCellsFilterRequestRequestTypeDef = {  # (1)
+    "TableCatalogId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_data_cells_filter(**kwargs)
+```
 
-<a id="delete\_lf\_tag"></a>
+1. See [:material-code-braces: DeleteDataCellsFilterRequestRequestTypeDef](./type_defs.md#deletedatacellsfilterrequestrequesttypedef) 
 
-### delete_lf_tag
+### delete\_lf\_tag
 
 Deletes the specified LF-tag key name.
 
-Type annotations for `boto3.client("lakeformation").delete_lf_tag` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").delete_lf_tag` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_lf_tag)
 
-Boto3 documentation:
-[LakeFormation.Client.delete_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_lf_tag)
+```python title="Method definition"
+def delete_lf_tag(
+    self,
+    *,
+    TagKey: str,
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLFTagRequestRequestTypeDef](./type_defs.md#deletelftagrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TagKey`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteLFTagRequestRequestTypeDef = {  # (1)
+    "TagKey": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_lf_tag(**kwargs)
+```
 
-<a id="delete\_objects\_on\_cancel"></a>
+1. See [:material-code-braces: DeleteLFTagRequestRequestTypeDef](./type_defs.md#deletelftagrequestrequesttypedef) 
 
-### delete_objects_on_cancel
+### delete\_objects\_on\_cancel
 
-For a specific governed table, provides a list of Amazon S3 objects that will
-be written during the current transaction and that can be automatically deleted
-if the transaction is canceled.
+For a specific governed table, provides a list of Amazon S3 objects that will be
+written during the current transaction and that can be automatically deleted if
+the transaction is canceled.
 
-Type annotations for `boto3.client("lakeformation").delete_objects_on_cancel`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").delete_objects_on_cancel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_objects_on_cancel)
 
-Boto3 documentation:
-[LakeFormation.Client.delete_objects_on_cancel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.delete_objects_on_cancel)
+```python title="Method definition"
+def delete_objects_on_cancel(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    TransactionId: str,
+    Objects: Sequence[VirtualObjectTypeDef],  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteObjectsOnCancelRequestRequestTypeDef](./type_defs.md#deleteobjectsoncancelrequestrequesttypedef).
+1. See [:material-code-braces: VirtualObjectTypeDef](./type_defs.md#virtualobjecttypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `TransactionId`: `str` *(required)*
-- `Objects`:
-  `Sequence`\[[VirtualObjectTypeDef](./type_defs.md#virtualobjecttypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteObjectsOnCancelRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "TransactionId": ...,
+    "Objects": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_objects_on_cancel(**kwargs)
+```
 
-<a id="deregister\_resource"></a>
+1. See [:material-code-braces: DeleteObjectsOnCancelRequestRequestTypeDef](./type_defs.md#deleteobjectsoncancelrequestrequesttypedef) 
 
-### deregister_resource
+### deregister\_resource
 
 Deregisters the resource as managed by the Data Catalog.
 
-Type annotations for `boto3.client("lakeformation").deregister_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").deregister_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource)
 
-Boto3 documentation:
-[LakeFormation.Client.deregister_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.deregister_resource)
+```python title="Method definition"
+def deregister_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterResourceRequestRequestTypeDef](./type_defs.md#deregisterresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_resource(**kwargs)
+```
 
-<a id="describe\_resource"></a>
+1. See [:material-code-braces: DeregisterResourceRequestRequestTypeDef](./type_defs.md#deregisterresourcerequestrequesttypedef) 
 
-### describe_resource
+### describe\_resource
 
-Retrieves the current data access role for the given resource registered in
-Lake Formation.
+Retrieves the current data access role for the given resource registered in Lake
+Formation.
 
-Type annotations for `boto3.client("lakeformation").describe_resource` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").describe_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_resource)
 
-Boto3 documentation:
-[LakeFormation.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_resource)
+```python title="Method definition"
+def describe_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> DescribeResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeResourceRequestRequestTypeDef](./type_defs.md#describeresourcerequestrequesttypedef).
+1. See [:material-code-braces: DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
+parent.describe_resource(**kwargs)
+```
 
-<a id="describe\_transaction"></a>
+1. See [:material-code-braces: DescribeResourceRequestRequestTypeDef](./type_defs.md#describeresourcerequestrequesttypedef) 
 
-### describe_transaction
+### describe\_transaction
 
 Returns the details of a single transaction.
 
-Type annotations for `boto3.client("lakeformation").describe_transaction`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").describe_transaction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_transaction)
 
-Boto3 documentation:
-[LakeFormation.Client.describe_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.describe_transaction)
+```python title="Method definition"
+def describe_transaction(
+    self,
+    *,
+    TransactionId: str,
+) -> DescribeTransactionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTransactionRequestRequestTypeDef](./type_defs.md#describetransactionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTransactionResponseTypeDef](./type_defs.md#describetransactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransactionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTransactionRequestRequestTypeDef = {  # (1)
+    "TransactionId": ...,
+}
 
-Returns
-[DescribeTransactionResponseTypeDef](./type_defs.md#describetransactionresponsetypedef).
+parent.describe_transaction(**kwargs)
+```
 
-<a id="extend\_transaction"></a>
+1. See [:material-code-braces: DescribeTransactionRequestRequestTypeDef](./type_defs.md#describetransactionrequestrequesttypedef) 
 
-### extend_transaction
+### extend\_transaction
 
 Indicates to the service that the specified transaction is still active and
 should not be treated as idle and aborted.
 
-Type annotations for `boto3.client("lakeformation").extend_transaction` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").extend_transaction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.extend_transaction)
 
-Boto3 documentation:
-[LakeFormation.Client.extend_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.extend_transaction)
+```python title="Method definition"
+def extend_transaction(
+    self,
+    *,
+    TransactionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ExtendTransactionRequestRequestTypeDef](./type_defs.md#extendtransactionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TransactionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ExtendTransactionRequestRequestTypeDef = {  # (1)
+    "TransactionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.extend_transaction(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExtendTransactionRequestRequestTypeDef](./type_defs.md#extendtransactionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("lakeformation").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.generate_presigned_url)
 
-Boto3 documentation:
-[LakeFormation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_data\_lake\_settings"></a>
-
-### get_data_lake_settings
+### get\_data\_lake\_settings
 
 Retrieves the list of the data lake administrators of a Lake Formation-managed
 data lake.
 
-Type annotations for `boto3.client("lakeformation").get_data_lake_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_data_lake_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings)
 
-Boto3 documentation:
-[LakeFormation.Client.get_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_data_lake_settings)
+```python title="Method definition"
+def get_data_lake_settings(
+    self,
+    *,
+    CatalogId: str = ...,
+) -> GetDataLakeSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataLakeSettingsRequestRequestTypeDef](./type_defs.md#getdatalakesettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetDataLakeSettingsResponseTypeDef](./type_defs.md#getdatalakesettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDataLakeSettingsRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns
-[GetDataLakeSettingsResponseTypeDef](./type_defs.md#getdatalakesettingsresponsetypedef).
+parent.get_data_lake_settings(**kwargs)
+```
 
-<a id="get\_effective\_permissions\_for\_path"></a>
+1. See [:material-code-braces: GetDataLakeSettingsRequestRequestTypeDef](./type_defs.md#getdatalakesettingsrequestrequesttypedef) 
 
-### get_effective_permissions_for_path
+### get\_effective\_permissions\_for\_path
 
 Returns the Lake Formation permissions for a specified table or database
 resource located at a path in Amazon S3.
 
-Type annotations for
-`boto3.client("lakeformation").get_effective_permissions_for_path` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_effective_permissions_for_path` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path)
 
-Boto3 documentation:
-[LakeFormation.Client.get_effective_permissions_for_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_effective_permissions_for_path)
+```python title="Method definition"
+def get_effective_permissions_for_path(
+    self,
+    *,
+    ResourceArn: str,
+    CatalogId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetEffectivePermissionsForPathResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEffectivePermissionsForPathRequestRequestTypeDef](./type_defs.md#geteffectivepermissionsforpathrequestrequesttypedef).
+1. See [:material-code-braces: GetEffectivePermissionsForPathResponseTypeDef](./type_defs.md#geteffectivepermissionsforpathresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `CatalogId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetEffectivePermissionsForPathRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[GetEffectivePermissionsForPathResponseTypeDef](./type_defs.md#geteffectivepermissionsforpathresponsetypedef).
+parent.get_effective_permissions_for_path(**kwargs)
+```
 
-<a id="get\_lf\_tag"></a>
+1. See [:material-code-braces: GetEffectivePermissionsForPathRequestRequestTypeDef](./type_defs.md#geteffectivepermissionsforpathrequestrequesttypedef) 
 
-### get_lf_tag
+### get\_lf\_tag
 
 Returns an LF-tag definition.
 
-Type annotations for `boto3.client("lakeformation").get_lf_tag` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_lf_tag` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_lf_tag)
 
-Boto3 documentation:
-[LakeFormation.Client.get_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_lf_tag)
+```python title="Method definition"
+def get_lf_tag(
+    self,
+    *,
+    TagKey: str,
+    CatalogId: str = ...,
+) -> GetLFTagResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLFTagRequestRequestTypeDef](./type_defs.md#getlftagrequestrequesttypedef).
+1. See [:material-code-braces: GetLFTagResponseTypeDef](./type_defs.md#getlftagresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TagKey`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetLFTagRequestRequestTypeDef = {  # (1)
+    "TagKey": ...,
+}
 
-Returns [GetLFTagResponseTypeDef](./type_defs.md#getlftagresponsetypedef).
+parent.get_lf_tag(**kwargs)
+```
 
-<a id="get\_query\_state"></a>
+1. See [:material-code-braces: GetLFTagRequestRequestTypeDef](./type_defs.md#getlftagrequestrequesttypedef) 
 
-### get_query_state
+### get\_query\_state
 
 Returns the state of a query previously submitted.
 
-Type annotations for `boto3.client("lakeformation").get_query_state` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_query_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_query_state)
 
-Boto3 documentation:
-[LakeFormation.Client.get_query_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_query_state)
+```python title="Method definition"
+def get_query_state(
+    self,
+    *,
+    QueryId: str,
+) -> GetQueryStateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQueryStateRequestRequestTypeDef](./type_defs.md#getquerystaterequestrequesttypedef).
+1. See [:material-code-braces: GetQueryStateResponseTypeDef](./type_defs.md#getquerystateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QueryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetQueryStateRequestRequestTypeDef = {  # (1)
+    "QueryId": ...,
+}
 
-Returns
-[GetQueryStateResponseTypeDef](./type_defs.md#getquerystateresponsetypedef).
+parent.get_query_state(**kwargs)
+```
 
-<a id="get\_query\_statistics"></a>
+1. See [:material-code-braces: GetQueryStateRequestRequestTypeDef](./type_defs.md#getquerystaterequestrequesttypedef) 
 
-### get_query_statistics
+### get\_query\_statistics
 
 Retrieves statistics on the planning and execution of a query.
 
-Type annotations for `boto3.client("lakeformation").get_query_statistics`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_query_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_query_statistics)
 
-Boto3 documentation:
-[LakeFormation.Client.get_query_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_query_statistics)
+```python title="Method definition"
+def get_query_statistics(
+    self,
+    *,
+    QueryId: str,
+) -> GetQueryStatisticsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQueryStatisticsRequestRequestTypeDef](./type_defs.md#getquerystatisticsrequestrequesttypedef).
+1. See [:material-code-braces: GetQueryStatisticsResponseTypeDef](./type_defs.md#getquerystatisticsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QueryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetQueryStatisticsRequestRequestTypeDef = {  # (1)
+    "QueryId": ...,
+}
 
-Returns
-[GetQueryStatisticsResponseTypeDef](./type_defs.md#getquerystatisticsresponsetypedef).
+parent.get_query_statistics(**kwargs)
+```
 
-<a id="get\_resource\_lf\_tags"></a>
+1. See [:material-code-braces: GetQueryStatisticsRequestRequestTypeDef](./type_defs.md#getquerystatisticsrequestrequesttypedef) 
 
-### get_resource_lf_tags
+### get\_resource\_lf\_tags
 
 Returns the LF-tags applied to a resource.
 
-Type annotations for `boto3.client("lakeformation").get_resource_lf_tags`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_resource_lf_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_resource_lf_tags)
 
-Boto3 documentation:
-[LakeFormation.Client.get_resource_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_resource_lf_tags)
+```python title="Method definition"
+def get_resource_lf_tags(
+    self,
+    *,
+    Resource: ResourceTypeDef,  # (1)
+    CatalogId: str = ...,
+    ShowAssignedLFTags: bool = ...,
+) -> GetResourceLFTagsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetResourceLFTagsRequestRequestTypeDef](./type_defs.md#getresourcelftagsrequestrequesttypedef).
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: GetResourceLFTagsResponseTypeDef](./type_defs.md#getresourcelftagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `CatalogId`: `str`
-- `ShowAssignedLFTags`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetResourceLFTagsRequestRequestTypeDef = {  # (1)
+    "Resource": ...,
+}
 
-Returns
-[GetResourceLFTagsResponseTypeDef](./type_defs.md#getresourcelftagsresponsetypedef).
+parent.get_resource_lf_tags(**kwargs)
+```
 
-<a id="get\_table\_objects"></a>
+1. See [:material-code-braces: GetResourceLFTagsRequestRequestTypeDef](./type_defs.md#getresourcelftagsrequestrequesttypedef) 
 
-### get_table_objects
+### get\_table\_objects
 
 Returns the set of Amazon S3 objects that make up the specified governed table.
 
-Type annotations for `boto3.client("lakeformation").get_table_objects` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_table_objects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_table_objects)
 
-Boto3 documentation:
-[LakeFormation.Client.get_table_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_table_objects)
+```python title="Method definition"
+def get_table_objects(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: str = ...,
+    TransactionId: str = ...,
+    QueryAsOfTime: Union[datetime, str] = ...,
+    PartitionPredicate: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetTableObjectsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTableObjectsRequestRequestTypeDef](./type_defs.md#gettableobjectsrequestrequesttypedef).
+1. See [:material-code-braces: GetTableObjectsResponseTypeDef](./type_defs.md#gettableobjectsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `CatalogId`: `str`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
-- `PartitionPredicate`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTableObjectsRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[GetTableObjectsResponseTypeDef](./type_defs.md#gettableobjectsresponsetypedef).
+parent.get_table_objects(**kwargs)
+```
 
-<a id="get\_temporary\_glue\_partition\_credentials"></a>
+1. See [:material-code-braces: GetTableObjectsRequestRequestTypeDef](./type_defs.md#gettableobjectsrequestrequesttypedef) 
 
-### get_temporary_glue_partition_credentials
+### get\_temporary\_glue\_partition\_credentials
 
-This API is identical to `GetTemporaryTableCredentials` except that this is
-used when the target Data Catalog resource is of type Partition.
+This API is identical to `GetTemporaryTableCredentials` except that this is used
+when the target Data Catalog resource is of type Partition.
 
-Type annotations for
-`boto3.client("lakeformation").get_temporary_glue_partition_credentials`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_temporary_glue_partition_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_temporary_glue_partition_credentials)
 
-Boto3 documentation:
-[LakeFormation.Client.get_temporary_glue_partition_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_temporary_glue_partition_credentials)
+```python title="Method definition"
+def get_temporary_glue_partition_credentials(
+    self,
+    *,
+    TableArn: str,
+    Partition: PartitionValueListTypeDef,  # (1)
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (2)
+    Permissions: Sequence[PermissionType] = ...,  # (3)
+    DurationSeconds: int = ...,
+    AuditContext: AuditContextTypeDef = ...,  # (4)
+) -> GetTemporaryGluePartitionCredentialsResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[GetTemporaryGluePartitionCredentialsRequestRequestTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsrequestrequesttypedef).
+1. See [:material-code-braces: PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef) 
+2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
+5. See [:material-code-braces: GetTemporaryGluePartitionCredentialsResponseTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TableArn`: `str` *(required)*
-- `Partition`:
-  [PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)
-  *(required)*
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-  *(required)*
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-- `DurationSeconds`: `int`
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+```python title="Usage example with kwargs"
+kwargs: GetTemporaryGluePartitionCredentialsRequestRequestTypeDef = {  # (1)
+    "TableArn": ...,
+    "Partition": ...,
+    "SupportedPermissionTypes": ...,
+}
 
-Returns
-[GetTemporaryGluePartitionCredentialsResponseTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsresponsetypedef).
+parent.get_temporary_glue_partition_credentials(**kwargs)
+```
 
-<a id="get\_temporary\_glue\_table\_credentials"></a>
+1. See [:material-code-braces: GetTemporaryGluePartitionCredentialsRequestRequestTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsrequestrequesttypedef) 
 
-### get_temporary_glue_table_credentials
+### get\_temporary\_glue\_table\_credentials
 
 Allows a caller in a secure environment to assume a role with permission to
 access Amazon S3.
 
-Type annotations for
-`boto3.client("lakeformation").get_temporary_glue_table_credentials` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_temporary_glue_table_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_temporary_glue_table_credentials)
 
-Boto3 documentation:
-[LakeFormation.Client.get_temporary_glue_table_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_temporary_glue_table_credentials)
+```python title="Method definition"
+def get_temporary_glue_table_credentials(
+    self,
+    *,
+    TableArn: str,
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (1)
+    Permissions: Sequence[PermissionType] = ...,  # (2)
+    DurationSeconds: int = ...,
+    AuditContext: AuditContextTypeDef = ...,  # (3)
+) -> GetTemporaryGlueTableCredentialsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetTemporaryGlueTableCredentialsRequestRequestTypeDef](./type_defs.md#gettemporarygluetablecredentialsrequestrequesttypedef).
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+3. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
+4. See [:material-code-braces: GetTemporaryGlueTableCredentialsResponseTypeDef](./type_defs.md#gettemporarygluetablecredentialsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TableArn`: `str` *(required)*
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-  *(required)*
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-- `DurationSeconds`: `int`
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+```python title="Usage example with kwargs"
+kwargs: GetTemporaryGlueTableCredentialsRequestRequestTypeDef = {  # (1)
+    "TableArn": ...,
+    "SupportedPermissionTypes": ...,
+}
 
-Returns
-[GetTemporaryGlueTableCredentialsResponseTypeDef](./type_defs.md#gettemporarygluetablecredentialsresponsetypedef).
+parent.get_temporary_glue_table_credentials(**kwargs)
+```
 
-<a id="get\_work\_unit\_results"></a>
+1. See [:material-code-braces: GetTemporaryGlueTableCredentialsRequestRequestTypeDef](./type_defs.md#gettemporarygluetablecredentialsrequestrequesttypedef) 
 
-### get_work_unit_results
+### get\_work\_unit\_results
 
 Returns the work units resulting from the query.
 
-Type annotations for `boto3.client("lakeformation").get_work_unit_results`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_work_unit_results` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_work_unit_results)
 
-Boto3 documentation:
-[LakeFormation.Client.get_work_unit_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_work_unit_results)
+```python title="Method definition"
+def get_work_unit_results(
+    self,
+    *,
+    QueryId: str,
+    WorkUnitId: int,
+    WorkUnitToken: str,
+) -> GetWorkUnitResultsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkUnitResultsRequestRequestTypeDef](./type_defs.md#getworkunitresultsrequestrequesttypedef).
+1. See [:material-code-braces: GetWorkUnitResultsResponseTypeDef](./type_defs.md#getworkunitresultsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QueryId`: `str` *(required)*
-- `WorkUnitId`: `int` *(required)*
-- `WorkUnitToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetWorkUnitResultsRequestRequestTypeDef = {  # (1)
+    "QueryId": ...,
+    "WorkUnitId": ...,
+    "WorkUnitToken": ...,
+}
 
-Returns
-[GetWorkUnitResultsResponseTypeDef](./type_defs.md#getworkunitresultsresponsetypedef).
+parent.get_work_unit_results(**kwargs)
+```
 
-<a id="get\_work\_units"></a>
+1. See [:material-code-braces: GetWorkUnitResultsRequestRequestTypeDef](./type_defs.md#getworkunitresultsrequestrequesttypedef) 
 
-### get_work_units
+### get\_work\_units
 
 Retrieves the work units generated by the `StartQueryPlanning` operation.
 
-Type annotations for `boto3.client("lakeformation").get_work_units` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_work_units` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_work_units)
 
-Boto3 documentation:
-[LakeFormation.Client.get_work_units](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_work_units)
+```python title="Method definition"
+def get_work_units(
+    self,
+    *,
+    QueryId: str,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> GetWorkUnitsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkUnitsRequestRequestTypeDef](./type_defs.md#getworkunitsrequestrequesttypedef).
+1. See [:material-code-braces: GetWorkUnitsResponseTypeDef](./type_defs.md#getworkunitsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QueryId`: `str` *(required)*
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetWorkUnitsRequestRequestTypeDef = {  # (1)
+    "QueryId": ...,
+}
 
-Returns
-[GetWorkUnitsResponseTypeDef](./type_defs.md#getworkunitsresponsetypedef).
+parent.get_work_units(**kwargs)
+```
 
-<a id="grant\_permissions"></a>
+1. See [:material-code-braces: GetWorkUnitsRequestRequestTypeDef](./type_defs.md#getworkunitsrequestrequesttypedef) 
 
-### grant_permissions
+### grant\_permissions
 
 Grants permissions to the principal to access metadata in the Data Catalog and
 data organized in underlying data storage such as Amazon S3.
 
-Type annotations for `boto3.client("lakeformation").grant_permissions` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").grant_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions)
 
-Boto3 documentation:
-[LakeFormation.Client.grant_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.grant_permissions)
+```python title="Method definition"
+def grant_permissions(
+    self,
+    *,
+    Principal: DataLakePrincipalTypeDef,  # (1)
+    Resource: ResourceTypeDef,  # (2)
+    Permissions: Sequence[PermissionType],  # (3)
+    CatalogId: str = ...,
+    PermissionsWithGrantOption: Sequence[PermissionType] = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[GrantPermissionsRequestRequestTypeDef](./type_defs.md#grantpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 
-Keyword-only arguments:
 
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-  *(required)*
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-  *(required)*
-- `CatalogId`: `str`
-- `PermissionsWithGrantOption`:
-  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
+```python title="Usage example with kwargs"
+kwargs: GrantPermissionsRequestRequestTypeDef = {  # (1)
+    "Principal": ...,
+    "Resource": ...,
+    "Permissions": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.grant_permissions(**kwargs)
+```
 
-<a id="list\_data\_cells\_filter"></a>
+1. See [:material-code-braces: GrantPermissionsRequestRequestTypeDef](./type_defs.md#grantpermissionsrequestrequesttypedef) 
 
-### list_data_cells_filter
+### list\_data\_cells\_filter
 
 Lists all the data cell filters on a table.
 
-Type annotations for `boto3.client("lakeformation").list_data_cells_filter`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").list_data_cells_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_data_cells_filter)
 
-Boto3 documentation:
-[LakeFormation.Client.list_data_cells_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_data_cells_filter)
+```python title="Method definition"
+def list_data_cells_filter(
+    self,
+    *,
+    Table: TableResourceTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataCellsFilterResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDataCellsFilterRequestRequestTypeDef](./type_defs.md#listdatacellsfilterrequestrequesttypedef).
+1. See [:material-code-braces: TableResourceTypeDef](./type_defs.md#tableresourcetypedef) 
+2. See [:material-code-braces: ListDataCellsFilterResponseTypeDef](./type_defs.md#listdatacellsfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDataCellsFilterRequestRequestTypeDef = {  # (1)
+    "Table": ...,
+}
 
-Returns
-[ListDataCellsFilterResponseTypeDef](./type_defs.md#listdatacellsfilterresponsetypedef).
+parent.list_data_cells_filter(**kwargs)
+```
 
-<a id="list\_lf\_tags"></a>
+1. See [:material-code-braces: ListDataCellsFilterRequestRequestTypeDef](./type_defs.md#listdatacellsfilterrequestrequesttypedef) 
 
-### list_lf_tags
+### list\_lf\_tags
 
 Lists LF-tags that the requester has permission to view.
 
-Type annotations for `boto3.client("lakeformation").list_lf_tags` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").list_lf_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_lf_tags)
 
-Boto3 documentation:
-[LakeFormation.Client.list_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_lf_tags)
+```python title="Method definition"
+def list_lf_tags(
+    self,
+    *,
+    CatalogId: str = ...,
+    ResourceShareType: ResourceShareTypeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListLFTagsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLFTagsRequestRequestTypeDef](./type_defs.md#listlftagsrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceShareTypeType](./literals.md#resourcesharetypetype) 
+2. See [:material-code-braces: ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
-- `ResourceShareType`:
-  [ResourceShareTypeType](./literals.md#resourcesharetypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLFTagsRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns [ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef).
+parent.list_lf_tags(**kwargs)
+```
 
-<a id="list\_permissions"></a>
+1. See [:material-code-braces: ListLFTagsRequestRequestTypeDef](./type_defs.md#listlftagsrequestrequesttypedef) 
 
-### list_permissions
+### list\_permissions
 
 Returns a list of the principal permissions on the resource, filtered by the
 permissions of the caller.
 
-Type annotations for `boto3.client("lakeformation").list_permissions` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").list_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions)
 
-Boto3 documentation:
-[LakeFormation.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_permissions)
+```python title="Method definition"
+def list_permissions(
+    self,
+    *,
+    CatalogId: str = ...,
+    Principal: DataLakePrincipalTypeDef = ...,  # (1)
+    ResourceType: DataLakeResourceTypeType = ...,  # (2)
+    Resource: ResourceTypeDef = ...,  # (3)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    IncludeRelated: str = ...,
+) -> ListPermissionsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-brackets: DataLakeResourceTypeType](./literals.md#datalakeresourcetypetype) 
+3. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+4. See [:material-code-braces: ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `ResourceType`:
-  [DataLakeResourceTypeType](./literals.md#datalakeresourcetypetype)
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `IncludeRelated`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPermissionsRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns
-[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
+parent.list_permissions(**kwargs)
+```
 
-<a id="list\_resources"></a>
+1. See [:material-code-braces: ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef) 
 
-### list_resources
+### list\_resources
 
 Lists the resources registered to be managed by the Data Catalog.
 
-Type annotations for `boto3.client("lakeformation").list_resources` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").list_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources)
 
-Boto3 documentation:
-[LakeFormation.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_resources)
+```python title="Method definition"
+def list_resources(
+    self,
+    *,
+    FilterConditionList: Sequence[FilterConditionTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListResourcesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef).
+1. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
+2. See [:material-code-braces: ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FilterConditionList`:
-  `Sequence`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResourcesRequestRequestTypeDef = {  # (1)
+    "FilterConditionList": ...,
+}
 
-Returns
-[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
+parent.list_resources(**kwargs)
+```
 
-<a id="list\_table\_storage\_optimizers"></a>
+1. See [:material-code-braces: ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef) 
 
-### list_table_storage_optimizers
+### list\_table\_storage\_optimizers
 
 Returns the configuration of all storage optimizers associated with a specified
 table.
 
-Type annotations for
-`boto3.client("lakeformation").list_table_storage_optimizers` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").list_table_storage_optimizers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_table_storage_optimizers)
 
-Boto3 documentation:
-[LakeFormation.Client.list_table_storage_optimizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_table_storage_optimizers)
+```python title="Method definition"
+def list_table_storage_optimizers(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: str = ...,
+    StorageOptimizerType: OptimizerTypeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTableStorageOptimizersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTableStorageOptimizersRequestRequestTypeDef](./type_defs.md#listtablestorageoptimizersrequestrequesttypedef).
+1. See [:material-code-brackets: OptimizerTypeType](./literals.md#optimizertypetype) 
+2. See [:material-code-braces: ListTableStorageOptimizersResponseTypeDef](./type_defs.md#listtablestorageoptimizersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `CatalogId`: `str`
-- `StorageOptimizerType`: [OptimizerTypeType](./literals.md#optimizertypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTableStorageOptimizersRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[ListTableStorageOptimizersResponseTypeDef](./type_defs.md#listtablestorageoptimizersresponsetypedef).
+parent.list_table_storage_optimizers(**kwargs)
+```
 
-<a id="list\_transactions"></a>
+1. See [:material-code-braces: ListTableStorageOptimizersRequestRequestTypeDef](./type_defs.md#listtablestorageoptimizersrequestrequesttypedef) 
 
-### list_transactions
+### list\_transactions
 
 Returns metadata about transactions and their status.
 
-Type annotations for `boto3.client("lakeformation").list_transactions` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").list_transactions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_transactions)
 
-Boto3 documentation:
-[LakeFormation.Client.list_transactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.list_transactions)
+```python title="Method definition"
+def list_transactions(
+    self,
+    *,
+    CatalogId: str = ...,
+    StatusFilter: TransactionStatusFilterType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTransactionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTransactionsRequestRequestTypeDef](./type_defs.md#listtransactionsrequestrequesttypedef).
+1. See [:material-code-brackets: TransactionStatusFilterType](./literals.md#transactionstatusfiltertype) 
+2. See [:material-code-braces: ListTransactionsResponseTypeDef](./type_defs.md#listtransactionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
-- `StatusFilter`:
-  [TransactionStatusFilterType](./literals.md#transactionstatusfiltertype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTransactionsRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns
-[ListTransactionsResponseTypeDef](./type_defs.md#listtransactionsresponsetypedef).
+parent.list_transactions(**kwargs)
+```
 
-<a id="put\_data\_lake\_settings"></a>
+1. See [:material-code-braces: ListTransactionsRequestRequestTypeDef](./type_defs.md#listtransactionsrequestrequesttypedef) 
 
-### put_data_lake_settings
+### put\_data\_lake\_settings
 
 Sets the list of data lake administrators who have admin privileges on all
 resources managed by Lake Formation.
 
-Type annotations for `boto3.client("lakeformation").put_data_lake_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").put_data_lake_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings)
 
-Boto3 documentation:
-[LakeFormation.Client.put_data_lake_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.put_data_lake_settings)
+```python title="Method definition"
+def put_data_lake_settings(
+    self,
+    *,
+    DataLakeSettings: DataLakeSettingsTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutDataLakeSettingsRequestRequestTypeDef](./type_defs.md#putdatalakesettingsrequestrequesttypedef).
+1. See [:material-code-braces: DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef) 
 
-Keyword-only arguments:
 
-- `DataLakeSettings`:
-  [DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef)
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutDataLakeSettingsRequestRequestTypeDef = {  # (1)
+    "DataLakeSettings": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_data_lake_settings(**kwargs)
+```
 
-<a id="register\_resource"></a>
+1. See [:material-code-braces: PutDataLakeSettingsRequestRequestTypeDef](./type_defs.md#putdatalakesettingsrequestrequesttypedef) 
 
-### register_resource
+### register\_resource
 
 Registers the resource as managed by the Data Catalog.
 
-Type annotations for `boto3.client("lakeformation").register_resource` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").register_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource)
 
-Boto3 documentation:
-[LakeFormation.Client.register_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.register_resource)
+```python title="Method definition"
+def register_resource(
+    self,
+    *,
+    ResourceArn: str,
+    UseServiceLinkedRole: bool = ...,
+    RoleArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RegisterResourceRequestRequestTypeDef](./type_defs.md#registerresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `UseServiceLinkedRole`: `bool`
-- `RoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.register_resource(**kwargs)
+```
 
-<a id="remove\_lf\_tags\_from\_resource"></a>
+1. See [:material-code-braces: RegisterResourceRequestRequestTypeDef](./type_defs.md#registerresourcerequestrequesttypedef) 
 
-### remove_lf_tags_from_resource
+### remove\_lf\_tags\_from\_resource
 
 Removes an LF-tag from the resource.
 
-Type annotations for
-`boto3.client("lakeformation").remove_lf_tags_from_resource` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").remove_lf_tags_from_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.remove_lf_tags_from_resource)
 
-Boto3 documentation:
-[LakeFormation.Client.remove_lf_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.remove_lf_tags_from_resource)
+```python title="Method definition"
+def remove_lf_tags_from_resource(
+    self,
+    *,
+    Resource: ResourceTypeDef,  # (1)
+    LFTags: Sequence[LFTagPairTypeDef],  # (2)
+    CatalogId: str = ...,
+) -> RemoveLFTagsFromResourceResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RemoveLFTagsFromResourceRequestRequestTypeDef](./type_defs.md#removelftagsfromresourcerequestrequesttypedef).
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
+3. See [:material-code-braces: RemoveLFTagsFromResourceResponseTypeDef](./type_defs.md#removelftagsfromresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `LFTags`: `Sequence`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemoveLFTagsFromResourceRequestRequestTypeDef = {  # (1)
+    "Resource": ...,
+    "LFTags": ...,
+}
 
-Returns
-[RemoveLFTagsFromResourceResponseTypeDef](./type_defs.md#removelftagsfromresourceresponsetypedef).
+parent.remove_lf_tags_from_resource(**kwargs)
+```
 
-<a id="revoke\_permissions"></a>
+1. See [:material-code-braces: RemoveLFTagsFromResourceRequestRequestTypeDef](./type_defs.md#removelftagsfromresourcerequestrequesttypedef) 
 
-### revoke_permissions
+### revoke\_permissions
 
 Revokes permissions to the principal to access metadata in the Data Catalog and
 data organized in underlying data storage such as Amazon S3.
 
-Type annotations for `boto3.client("lakeformation").revoke_permissions` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").revoke_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions)
 
-Boto3 documentation:
-[LakeFormation.Client.revoke_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.revoke_permissions)
+```python title="Method definition"
+def revoke_permissions(
+    self,
+    *,
+    Principal: DataLakePrincipalTypeDef,  # (1)
+    Resource: ResourceTypeDef,  # (2)
+    Permissions: Sequence[PermissionType],  # (3)
+    CatalogId: str = ...,
+    PermissionsWithGrantOption: Sequence[PermissionType] = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RevokePermissionsRequestRequestTypeDef](./type_defs.md#revokepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 
-Keyword-only arguments:
 
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-  *(required)*
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef) *(required)*
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-  *(required)*
-- `CatalogId`: `str`
-- `PermissionsWithGrantOption`:
-  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
+```python title="Usage example with kwargs"
+kwargs: RevokePermissionsRequestRequestTypeDef = {  # (1)
+    "Principal": ...,
+    "Resource": ...,
+    "Permissions": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.revoke_permissions(**kwargs)
+```
 
-<a id="search\_databases\_by\_lf\_tags"></a>
+1. See [:material-code-braces: RevokePermissionsRequestRequestTypeDef](./type_defs.md#revokepermissionsrequestrequesttypedef) 
 
-### search_databases_by_lf_tags
+### search\_databases\_by\_lf\_tags
 
 This operation allows a search on `DATABASE` resources by `TagCondition`.
 
-Type annotations for
-`boto3.client("lakeformation").search_databases_by_lf_tags` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").search_databases_by_lf_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_databases_by_lf_tags)
 
-Boto3 documentation:
-[LakeFormation.Client.search_databases_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_databases_by_lf_tags)
+```python title="Method definition"
+def search_databases_by_lf_tags(
+    self,
+    *,
+    Expression: Sequence[LFTagTypeDef],  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    CatalogId: str = ...,
+) -> SearchDatabasesByLFTagsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchDatabasesByLFTagsRequestRequestTypeDef](./type_defs.md#searchdatabasesbylftagsrequestrequesttypedef).
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
+2. See [:material-code-braces: SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
-  *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchDatabasesByLFTagsRequestRequestTypeDef = {  # (1)
+    "Expression": ...,
+}
 
-Returns
-[SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef).
+parent.search_databases_by_lf_tags(**kwargs)
+```
 
-<a id="search\_tables\_by\_lf\_tags"></a>
+1. See [:material-code-braces: SearchDatabasesByLFTagsRequestRequestTypeDef](./type_defs.md#searchdatabasesbylftagsrequestrequesttypedef) 
 
-### search_tables_by_lf_tags
+### search\_tables\_by\_lf\_tags
 
 This operation allows a search on `TABLE` resources by `LFTag` s.
 
-Type annotations for `boto3.client("lakeformation").search_tables_by_lf_tags`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").search_tables_by_lf_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_tables_by_lf_tags)
 
-Boto3 documentation:
-[LakeFormation.Client.search_tables_by_lf_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.search_tables_by_lf_tags)
+```python title="Method definition"
+def search_tables_by_lf_tags(
+    self,
+    *,
+    Expression: Sequence[LFTagTypeDef],  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    CatalogId: str = ...,
+) -> SearchTablesByLFTagsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchTablesByLFTagsRequestRequestTypeDef](./type_defs.md#searchtablesbylftagsrequestrequesttypedef).
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
+2. See [:material-code-braces: SearchTablesByLFTagsResponseTypeDef](./type_defs.md#searchtablesbylftagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
-  *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchTablesByLFTagsRequestRequestTypeDef = {  # (1)
+    "Expression": ...,
+}
 
-Returns
-[SearchTablesByLFTagsResponseTypeDef](./type_defs.md#searchtablesbylftagsresponsetypedef).
+parent.search_tables_by_lf_tags(**kwargs)
+```
 
-<a id="start\_query\_planning"></a>
+1. See [:material-code-braces: SearchTablesByLFTagsRequestRequestTypeDef](./type_defs.md#searchtablesbylftagsrequestrequesttypedef) 
 
-### start_query_planning
+### start\_query\_planning
 
 Submits a request to process a query statement.
 
-Type annotations for `boto3.client("lakeformation").start_query_planning`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").start_query_planning` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.start_query_planning)
 
-Boto3 documentation:
-[LakeFormation.Client.start_query_planning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.start_query_planning)
+```python title="Method definition"
+def start_query_planning(
+    self,
+    *,
+    QueryPlanningContext: QueryPlanningContextTypeDef,  # (1)
+    QueryString: str,
+) -> StartQueryPlanningResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartQueryPlanningRequestRequestTypeDef](./type_defs.md#startqueryplanningrequestrequesttypedef).
+1. See [:material-code-braces: QueryPlanningContextTypeDef](./type_defs.md#queryplanningcontexttypedef) 
+2. See [:material-code-braces: StartQueryPlanningResponseTypeDef](./type_defs.md#startqueryplanningresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QueryPlanningContext`:
-  [QueryPlanningContextTypeDef](./type_defs.md#queryplanningcontexttypedef)
-  *(required)*
-- `QueryString`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartQueryPlanningRequestRequestTypeDef = {  # (1)
+    "QueryPlanningContext": ...,
+    "QueryString": ...,
+}
 
-Returns
-[StartQueryPlanningResponseTypeDef](./type_defs.md#startqueryplanningresponsetypedef).
+parent.start_query_planning(**kwargs)
+```
 
-<a id="start\_transaction"></a>
+1. See [:material-code-braces: StartQueryPlanningRequestRequestTypeDef](./type_defs.md#startqueryplanningrequestrequesttypedef) 
 
-### start_transaction
+### start\_transaction
 
 Starts a new transaction and returns its transaction ID.
 
-Type annotations for `boto3.client("lakeformation").start_transaction` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").start_transaction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.start_transaction)
 
-Boto3 documentation:
-[LakeFormation.Client.start_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.start_transaction)
+```python title="Method definition"
+def start_transaction(
+    self,
+    *,
+    TransactionType: TransactionTypeType = ...,  # (1)
+) -> StartTransactionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartTransactionRequestRequestTypeDef](./type_defs.md#starttransactionrequestrequesttypedef).
+1. See [:material-code-brackets: TransactionTypeType](./literals.md#transactiontypetype) 
+2. See [:material-code-braces: StartTransactionResponseTypeDef](./type_defs.md#starttransactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransactionType`: [TransactionTypeType](./literals.md#transactiontypetype)
+```python title="Usage example with kwargs"
+kwargs: StartTransactionRequestRequestTypeDef = {  # (1)
+    "TransactionType": ...,
+}
 
-Returns
-[StartTransactionResponseTypeDef](./type_defs.md#starttransactionresponsetypedef).
+parent.start_transaction(**kwargs)
+```
 
-<a id="update\_lf\_tag"></a>
+1. See [:material-code-braces: StartTransactionRequestRequestTypeDef](./type_defs.md#starttransactionrequestrequesttypedef) 
 
-### update_lf_tag
+### update\_lf\_tag
 
 Updates the list of possible values for the specified LF-tag key.
 
-Type annotations for `boto3.client("lakeformation").update_lf_tag` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").update_lf_tag` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_lf_tag)
 
-Boto3 documentation:
-[LakeFormation.Client.update_lf_tag](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_lf_tag)
+```python title="Method definition"
+def update_lf_tag(
+    self,
+    *,
+    TagKey: str,
+    CatalogId: str = ...,
+    TagValuesToDelete: Sequence[str] = ...,
+    TagValuesToAdd: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLFTagRequestRequestTypeDef](./type_defs.md#updatelftagrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TagKey`: `str` *(required)*
-- `CatalogId`: `str`
-- `TagValuesToDelete`: `Sequence`\[`str`\]
-- `TagValuesToAdd`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateLFTagRequestRequestTypeDef = {  # (1)
+    "TagKey": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_lf_tag(**kwargs)
+```
 
-<a id="update\_resource"></a>
+1. See [:material-code-braces: UpdateLFTagRequestRequestTypeDef](./type_defs.md#updatelftagrequestrequesttypedef) 
 
-### update_resource
+### update\_resource
 
 Updates the data access role used for vending access to the given (registered)
 resource in Lake Formation.
 
-Type annotations for `boto3.client("lakeformation").update_resource` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").update_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_resource)
 
-Boto3 documentation:
-[LakeFormation.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_resource)
+```python title="Method definition"
+def update_resource(
+    self,
+    *,
+    RoleArn: str,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateResourceRequestRequestTypeDef](./type_defs.md#updateresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleArn`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateResourceRequestRequestTypeDef = {  # (1)
+    "RoleArn": ...,
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_resource(**kwargs)
+```
 
-<a id="update\_table\_objects"></a>
+1. See [:material-code-braces: UpdateResourceRequestRequestTypeDef](./type_defs.md#updateresourcerequestrequesttypedef) 
 
-### update_table_objects
+### update\_table\_objects
 
 Updates the manifest of Amazon S3 objects that make up the specified governed
 table.
 
-Type annotations for `boto3.client("lakeformation").update_table_objects`
-method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").update_table_objects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_table_objects)
 
-Boto3 documentation:
-[LakeFormation.Client.update_table_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_table_objects)
+```python title="Method definition"
+def update_table_objects(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    WriteOperations: Sequence[WriteOperationTypeDef],  # (1)
+    CatalogId: str = ...,
+    TransactionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateTableObjectsRequestRequestTypeDef](./type_defs.md#updatetableobjectsrequestrequesttypedef).
+1. See [:material-code-braces: WriteOperationTypeDef](./type_defs.md#writeoperationtypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `WriteOperations`:
-  `Sequence`\[[WriteOperationTypeDef](./type_defs.md#writeoperationtypedef)\]
-  *(required)*
-- `CatalogId`: `str`
-- `TransactionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateTableObjectsRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "WriteOperations": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_table_objects(**kwargs)
+```
 
-<a id="update\_table\_storage\_optimizer"></a>
+1. See [:material-code-braces: UpdateTableObjectsRequestRequestTypeDef](./type_defs.md#updatetableobjectsrequestrequesttypedef) 
 
-### update_table_storage_optimizer
+### update\_table\_storage\_optimizer
 
 Updates the configuration of the storage optimizers for a table.
 
-Type annotations for
-`boto3.client("lakeformation").update_table_storage_optimizer` method.
+Type annotations and code completion for `#!python boto3.client("lakeformation").update_table_storage_optimizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_table_storage_optimizer)
 
-Boto3 documentation:
-[LakeFormation.Client.update_table_storage_optimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.update_table_storage_optimizer)
+```python title="Method definition"
+def update_table_storage_optimizer(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    StorageOptimizerConfig: Mapping[OptimizerTypeType, Mapping[str, str]],  # (1)
+    CatalogId: str = ...,
+) -> UpdateTableStorageOptimizerResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTableStorageOptimizerRequestRequestTypeDef](./type_defs.md#updatetablestorageoptimizerrequestrequesttypedef).
+1. See [:material-code-brackets: OptimizerTypeType](./literals.md#optimizertypetype) 
+2. See [:material-code-braces: UpdateTableStorageOptimizerResponseTypeDef](./type_defs.md#updatetablestorageoptimizerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `StorageOptimizerConfig`:
-  `Mapping`\[[OptimizerTypeType](./literals.md#optimizertypetype),
-  `Mapping`\[`str`, `str`\]\] *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateTableStorageOptimizerRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "StorageOptimizerConfig": ...,
+}
 
-Returns
-[UpdateTableStorageOptimizerResponseTypeDef](./type_defs.md#updatetablestorageoptimizerresponsetypedef).
+parent.update_table_storage_optimizer(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateTableStorageOptimizerRequestRequestTypeDef](./type_defs.md#updatetablestorageoptimizerrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("lakeformation").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("lakeformation").get_paginator` method with overloads.
 
-- `client.get_paginator("get_work_units")` ->
-  [GetWorkUnitsPaginator](./paginators.md#getworkunitspaginator)
-- `client.get_paginator("list_data_cells_filter")` ->
-  [ListDataCellsFilterPaginator](./paginators.md#listdatacellsfilterpaginator)
-- `client.get_paginator("list_lf_tags")` ->
-  [ListLFTagsPaginator](./paginators.md#listlftagspaginator)
-- `client.get_paginator("search_databases_by_lf_tags")` ->
-  [SearchDatabasesByLFTagsPaginator](./paginators.md#searchdatabasesbylftagspaginator)
-- `client.get_paginator("search_tables_by_lf_tags")` ->
-  [SearchTablesByLFTagsPaginator](./paginators.md#searchtablesbylftagspaginator)
+- `client.get_paginator("get_work_units")` -> [GetWorkUnitsPaginator](./paginators.md#getworkunitspaginator)
+- `client.get_paginator("list_data_cells_filter")` -> [ListDataCellsFilterPaginator](./paginators.md#listdatacellsfilterpaginator)
+- `client.get_paginator("list_lf_tags")` -> [ListLFTagsPaginator](./paginators.md#listlftagspaginator)
+- `client.get_paginator("search_databases_by_lf_tags")` -> [SearchDatabasesByLFTagsPaginator](./paginators.md#searchdatabasesbylftagspaginator)
+- `client.get_paginator("search_tables_by_lf_tags")` -> [SearchTablesByLFTagsPaginator](./paginators.md#searchtablesbylftagspaginator)
+
+
+

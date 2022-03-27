@@ -1,1827 +1,2184 @@
-<a id="typed-dictionaries-for-boto3-iotevents-module"></a>
-
-# Typed dictionaries for boto3 IoTEvents module
+# Typed dictionaries
 
 > [Index](../README.md) > [IoTEvents](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
-type annotations stubs module
-[mypy-boto3-iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IoTEvents module](#typed-dictionaries-for-boto3-iotevents-module)
-  - [AcknowledgeFlowTypeDef](#acknowledgeflowtypedef)
-  - [ActionTypeDef](#actiontypedef)
-  - [AlarmActionTypeDef](#alarmactiontypedef)
-  - [AlarmCapabilitiesTypeDef](#alarmcapabilitiestypedef)
-  - [AlarmEventActionsTypeDef](#alarmeventactionstypedef)
-  - [AlarmModelSummaryTypeDef](#alarmmodelsummarytypedef)
-  - [AlarmModelVersionSummaryTypeDef](#alarmmodelversionsummarytypedef)
-  - [AlarmNotificationTypeDef](#alarmnotificationtypedef)
-  - [AlarmRuleTypeDef](#alarmruletypedef)
-  - [AnalysisResultLocationTypeDef](#analysisresultlocationtypedef)
-  - [AnalysisResultTypeDef](#analysisresulttypedef)
-  - [AssetPropertyTimestampTypeDef](#assetpropertytimestamptypedef)
-  - [AssetPropertyValueTypeDef](#assetpropertyvaluetypedef)
-  - [AssetPropertyVariantTypeDef](#assetpropertyvarianttypedef)
-  - [AttributeTypeDef](#attributetypedef)
-  - [ClearTimerActionTypeDef](#cleartimeractiontypedef)
-  - [CreateAlarmModelRequestRequestTypeDef](#createalarmmodelrequestrequesttypedef)
-  - [CreateAlarmModelResponseTypeDef](#createalarmmodelresponsetypedef)
-  - [CreateDetectorModelRequestRequestTypeDef](#createdetectormodelrequestrequesttypedef)
-  - [CreateDetectorModelResponseTypeDef](#createdetectormodelresponsetypedef)
-  - [CreateInputRequestRequestTypeDef](#createinputrequestrequesttypedef)
-  - [CreateInputResponseTypeDef](#createinputresponsetypedef)
-  - [DeleteAlarmModelRequestRequestTypeDef](#deletealarmmodelrequestrequesttypedef)
-  - [DeleteDetectorModelRequestRequestTypeDef](#deletedetectormodelrequestrequesttypedef)
-  - [DeleteInputRequestRequestTypeDef](#deleteinputrequestrequesttypedef)
-  - [DescribeAlarmModelRequestRequestTypeDef](#describealarmmodelrequestrequesttypedef)
-  - [DescribeAlarmModelResponseTypeDef](#describealarmmodelresponsetypedef)
-  - [DescribeDetectorModelAnalysisRequestRequestTypeDef](#describedetectormodelanalysisrequestrequesttypedef)
-  - [DescribeDetectorModelAnalysisResponseTypeDef](#describedetectormodelanalysisresponsetypedef)
-  - [DescribeDetectorModelRequestRequestTypeDef](#describedetectormodelrequestrequesttypedef)
-  - [DescribeDetectorModelResponseTypeDef](#describedetectormodelresponsetypedef)
-  - [DescribeInputRequestRequestTypeDef](#describeinputrequestrequesttypedef)
-  - [DescribeInputResponseTypeDef](#describeinputresponsetypedef)
-  - [DescribeLoggingOptionsResponseTypeDef](#describeloggingoptionsresponsetypedef)
-  - [DetectorDebugOptionTypeDef](#detectordebugoptiontypedef)
-  - [DetectorModelConfigurationTypeDef](#detectormodelconfigurationtypedef)
-  - [DetectorModelDefinitionTypeDef](#detectormodeldefinitiontypedef)
-  - [DetectorModelSummaryTypeDef](#detectormodelsummarytypedef)
-  - [DetectorModelTypeDef](#detectormodeltypedef)
-  - [DetectorModelVersionSummaryTypeDef](#detectormodelversionsummarytypedef)
-  - [DynamoDBActionTypeDef](#dynamodbactiontypedef)
-  - [DynamoDBv2ActionTypeDef](#dynamodbv2actiontypedef)
-  - [EmailConfigurationTypeDef](#emailconfigurationtypedef)
-  - [EmailContentTypeDef](#emailcontenttypedef)
-  - [EmailRecipientsTypeDef](#emailrecipientstypedef)
-  - [EventTypeDef](#eventtypedef)
-  - [FirehoseActionTypeDef](#firehoseactiontypedef)
-  - [GetDetectorModelAnalysisResultsRequestRequestTypeDef](#getdetectormodelanalysisresultsrequestrequesttypedef)
-  - [GetDetectorModelAnalysisResultsResponseTypeDef](#getdetectormodelanalysisresultsresponsetypedef)
-  - [InitializationConfigurationTypeDef](#initializationconfigurationtypedef)
-  - [InputConfigurationTypeDef](#inputconfigurationtypedef)
-  - [InputDefinitionTypeDef](#inputdefinitiontypedef)
-  - [InputIdentifierTypeDef](#inputidentifiertypedef)
-  - [InputSummaryTypeDef](#inputsummarytypedef)
-  - [InputTypeDef](#inputtypedef)
-  - [IotEventsActionTypeDef](#ioteventsactiontypedef)
-  - [IotEventsInputIdentifierTypeDef](#ioteventsinputidentifiertypedef)
-  - [IotSiteWiseActionTypeDef](#iotsitewiseactiontypedef)
-  - [IotSiteWiseAssetModelPropertyIdentifierTypeDef](#iotsitewiseassetmodelpropertyidentifiertypedef)
-  - [IotSiteWiseInputIdentifierTypeDef](#iotsitewiseinputidentifiertypedef)
-  - [IotTopicPublishActionTypeDef](#iottopicpublishactiontypedef)
-  - [LambdaActionTypeDef](#lambdaactiontypedef)
-  - [ListAlarmModelVersionsRequestRequestTypeDef](#listalarmmodelversionsrequestrequesttypedef)
-  - [ListAlarmModelVersionsResponseTypeDef](#listalarmmodelversionsresponsetypedef)
-  - [ListAlarmModelsRequestRequestTypeDef](#listalarmmodelsrequestrequesttypedef)
-  - [ListAlarmModelsResponseTypeDef](#listalarmmodelsresponsetypedef)
-  - [ListDetectorModelVersionsRequestRequestTypeDef](#listdetectormodelversionsrequestrequesttypedef)
-  - [ListDetectorModelVersionsResponseTypeDef](#listdetectormodelversionsresponsetypedef)
-  - [ListDetectorModelsRequestRequestTypeDef](#listdetectormodelsrequestrequesttypedef)
-  - [ListDetectorModelsResponseTypeDef](#listdetectormodelsresponsetypedef)
-  - [ListInputRoutingsRequestRequestTypeDef](#listinputroutingsrequestrequesttypedef)
-  - [ListInputRoutingsResponseTypeDef](#listinputroutingsresponsetypedef)
-  - [ListInputsRequestRequestTypeDef](#listinputsrequestrequesttypedef)
-  - [ListInputsResponseTypeDef](#listinputsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [LoggingOptionsTypeDef](#loggingoptionstypedef)
-  - [NotificationActionTypeDef](#notificationactiontypedef)
-  - [NotificationTargetActionsTypeDef](#notificationtargetactionstypedef)
-  - [OnEnterLifecycleTypeDef](#onenterlifecycletypedef)
-  - [OnExitLifecycleTypeDef](#onexitlifecycletypedef)
-  - [OnInputLifecycleTypeDef](#oninputlifecycletypedef)
-  - [PayloadTypeDef](#payloadtypedef)
-  - [PutLoggingOptionsRequestRequestTypeDef](#putloggingoptionsrequestrequesttypedef)
-  - [RecipientDetailTypeDef](#recipientdetailtypedef)
-  - [ResetTimerActionTypeDef](#resettimeractiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RoutedResourceTypeDef](#routedresourcetypedef)
-  - [SMSConfigurationTypeDef](#smsconfigurationtypedef)
-  - [SNSTopicPublishActionTypeDef](#snstopicpublishactiontypedef)
-  - [SSOIdentityTypeDef](#ssoidentitytypedef)
-  - [SetTimerActionTypeDef](#settimeractiontypedef)
-  - [SetVariableActionTypeDef](#setvariableactiontypedef)
-  - [SimpleRuleTypeDef](#simpleruletypedef)
-  - [SqsActionTypeDef](#sqsactiontypedef)
-  - [StartDetectorModelAnalysisRequestRequestTypeDef](#startdetectormodelanalysisrequestrequesttypedef)
-  - [StartDetectorModelAnalysisResponseTypeDef](#startdetectormodelanalysisresponsetypedef)
-  - [StateTypeDef](#statetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TransitionEventTypeDef](#transitioneventtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAlarmModelRequestRequestTypeDef](#updatealarmmodelrequestrequesttypedef)
-  - [UpdateAlarmModelResponseTypeDef](#updatealarmmodelresponsetypedef)
-  - [UpdateDetectorModelRequestRequestTypeDef](#updatedetectormodelrequestrequesttypedef)
-  - [UpdateDetectorModelResponseTypeDef](#updatedetectormodelresponsetypedef)
-  - [UpdateInputRequestRequestTypeDef](#updateinputrequestrequesttypedef)
-  - [UpdateInputResponseTypeDef](#updateinputresponsetypedef)
-
-<a id="acknowledgeflowtypedef"></a>
+    Auto-generated documentation for [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
+    type annotations stubs module [mypy-boto3-iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 ## AcknowledgeFlowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AcknowledgeFlowTypeDef
+
+def get_value() -> AcknowledgeFlowTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `enabled`: `bool`
-
-<a id="actiontypedef"></a>
+```python title="Definition"
+class AcknowledgeFlowTypeDef(TypedDict):
+    enabled: bool,
+```
 
 ## ActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "setVariable": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    setVariable: NotRequired[SetVariableActionTypeDef],  # (1)
+    sns: NotRequired[SNSTopicPublishActionTypeDef],  # (2)
+    iotTopicPublish: NotRequired[IotTopicPublishActionTypeDef],  # (3)
+    setTimer: NotRequired[SetTimerActionTypeDef],  # (4)
+    clearTimer: NotRequired[ClearTimerActionTypeDef],  # (5)
+    resetTimer: NotRequired[ResetTimerActionTypeDef],  # (6)
+    lambda: NotRequired[LambdaActionTypeDef],  # (7)
+    iotEvents: NotRequired[IotEventsActionTypeDef],  # (8)
+    sqs: NotRequired[SqsActionTypeDef],  # (9)
+    firehose: NotRequired[FirehoseActionTypeDef],  # (10)
+    dynamoDB: NotRequired[DynamoDBActionTypeDef],  # (11)
+    dynamoDBv2: NotRequired[DynamoDBv2ActionTypeDef],  # (12)
+    iotSiteWise: NotRequired[IotSiteWiseActionTypeDef],  # (13)
+```
 
-- `setVariable`:
-  [SetVariableActionTypeDef](./type_defs.md#setvariableactiontypedef)
-- `sns`:
-  [SNSTopicPublishActionTypeDef](./type_defs.md#snstopicpublishactiontypedef)
-- `iotTopicPublish`:
-  [IotTopicPublishActionTypeDef](./type_defs.md#iottopicpublishactiontypedef)
-- `setTimer`: [SetTimerActionTypeDef](./type_defs.md#settimeractiontypedef)
-- `clearTimer`:
-  [ClearTimerActionTypeDef](./type_defs.md#cleartimeractiontypedef)
-- `resetTimer`:
-  [ResetTimerActionTypeDef](./type_defs.md#resettimeractiontypedef)
-- `lambda`: [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
-- `iotEvents`: [IotEventsActionTypeDef](./type_defs.md#ioteventsactiontypedef)
-- `sqs`: [SqsActionTypeDef](./type_defs.md#sqsactiontypedef)
-- `firehose`: [FirehoseActionTypeDef](./type_defs.md#firehoseactiontypedef)
-- `dynamoDB`: [DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef)
-- `dynamoDBv2`:
-  [DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef)
-- `iotSiteWise`:
-  [IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef)
-
-<a id="alarmactiontypedef"></a>
-
+1. See [:material-code-braces: SetVariableActionTypeDef](./type_defs.md#setvariableactiontypedef) 
+2. See [:material-code-braces: SNSTopicPublishActionTypeDef](./type_defs.md#snstopicpublishactiontypedef) 
+3. See [:material-code-braces: IotTopicPublishActionTypeDef](./type_defs.md#iottopicpublishactiontypedef) 
+4. See [:material-code-braces: SetTimerActionTypeDef](./type_defs.md#settimeractiontypedef) 
+5. See [:material-code-braces: ClearTimerActionTypeDef](./type_defs.md#cleartimeractiontypedef) 
+6. See [:material-code-braces: ResetTimerActionTypeDef](./type_defs.md#resettimeractiontypedef) 
+7. See [:material-code-braces: LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef) 
+8. See [:material-code-braces: IotEventsActionTypeDef](./type_defs.md#ioteventsactiontypedef) 
+9. See [:material-code-braces: SqsActionTypeDef](./type_defs.md#sqsactiontypedef) 
+10. See [:material-code-braces: FirehoseActionTypeDef](./type_defs.md#firehoseactiontypedef) 
+11. See [:material-code-braces: DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef) 
+12. See [:material-code-braces: DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef) 
+13. See [:material-code-braces: IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef) 
 ## AlarmActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AlarmActionTypeDef
+
+def get_value() -> AlarmActionTypeDef:
+    return {
+        "sns": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlarmActionTypeDef(TypedDict):
+    sns: NotRequired[SNSTopicPublishActionTypeDef],  # (1)
+    iotTopicPublish: NotRequired[IotTopicPublishActionTypeDef],  # (2)
+    lambda: NotRequired[LambdaActionTypeDef],  # (3)
+    iotEvents: NotRequired[IotEventsActionTypeDef],  # (4)
+    sqs: NotRequired[SqsActionTypeDef],  # (5)
+    firehose: NotRequired[FirehoseActionTypeDef],  # (6)
+    dynamoDB: NotRequired[DynamoDBActionTypeDef],  # (7)
+    dynamoDBv2: NotRequired[DynamoDBv2ActionTypeDef],  # (8)
+    iotSiteWise: NotRequired[IotSiteWiseActionTypeDef],  # (9)
+```
 
-- `sns`:
-  [SNSTopicPublishActionTypeDef](./type_defs.md#snstopicpublishactiontypedef)
-- `iotTopicPublish`:
-  [IotTopicPublishActionTypeDef](./type_defs.md#iottopicpublishactiontypedef)
-- `lambda`: [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
-- `iotEvents`: [IotEventsActionTypeDef](./type_defs.md#ioteventsactiontypedef)
-- `sqs`: [SqsActionTypeDef](./type_defs.md#sqsactiontypedef)
-- `firehose`: [FirehoseActionTypeDef](./type_defs.md#firehoseactiontypedef)
-- `dynamoDB`: [DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef)
-- `dynamoDBv2`:
-  [DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef)
-- `iotSiteWise`:
-  [IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef)
-
-<a id="alarmcapabilitiestypedef"></a>
-
+1. See [:material-code-braces: SNSTopicPublishActionTypeDef](./type_defs.md#snstopicpublishactiontypedef) 
+2. See [:material-code-braces: IotTopicPublishActionTypeDef](./type_defs.md#iottopicpublishactiontypedef) 
+3. See [:material-code-braces: LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef) 
+4. See [:material-code-braces: IotEventsActionTypeDef](./type_defs.md#ioteventsactiontypedef) 
+5. See [:material-code-braces: SqsActionTypeDef](./type_defs.md#sqsactiontypedef) 
+6. See [:material-code-braces: FirehoseActionTypeDef](./type_defs.md#firehoseactiontypedef) 
+7. See [:material-code-braces: DynamoDBActionTypeDef](./type_defs.md#dynamodbactiontypedef) 
+8. See [:material-code-braces: DynamoDBv2ActionTypeDef](./type_defs.md#dynamodbv2actiontypedef) 
+9. See [:material-code-braces: IotSiteWiseActionTypeDef](./type_defs.md#iotsitewiseactiontypedef) 
 ## AlarmCapabilitiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AlarmCapabilitiesTypeDef
+
+def get_value() -> AlarmCapabilitiesTypeDef:
+    return {
+        "initializationConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlarmCapabilitiesTypeDef(TypedDict):
+    initializationConfiguration: NotRequired[InitializationConfigurationTypeDef],  # (1)
+    acknowledgeFlow: NotRequired[AcknowledgeFlowTypeDef],  # (2)
+```
 
-- `initializationConfiguration`:
-  [InitializationConfigurationTypeDef](./type_defs.md#initializationconfigurationtypedef)
-- `acknowledgeFlow`:
-  [AcknowledgeFlowTypeDef](./type_defs.md#acknowledgeflowtypedef)
-
-<a id="alarmeventactionstypedef"></a>
-
+1. See [:material-code-braces: InitializationConfigurationTypeDef](./type_defs.md#initializationconfigurationtypedef) 
+2. See [:material-code-braces: AcknowledgeFlowTypeDef](./type_defs.md#acknowledgeflowtypedef) 
 ## AlarmEventActionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AlarmEventActionsTypeDef
+
+def get_value() -> AlarmEventActionsTypeDef:
+    return {
+        "alarmActions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlarmEventActionsTypeDef(TypedDict):
+    alarmActions: NotRequired[Sequence[AlarmActionTypeDef]],  # (1)
+```
 
-- `alarmActions`:
-  `Sequence`\[[AlarmActionTypeDef](./type_defs.md#alarmactiontypedef)\]
-
-<a id="alarmmodelsummarytypedef"></a>
-
+1. See [:material-code-braces: AlarmActionTypeDef](./type_defs.md#alarmactiontypedef) 
 ## AlarmModelSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AlarmModelSummaryTypeDef
+
+def get_value() -> AlarmModelSummaryTypeDef:
+    return {
+        "creationTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `creationTime`: `datetime`
-- `alarmModelDescription`: `str`
-- `alarmModelName`: `str`
-
-<a id="alarmmodelversionsummarytypedef"></a>
+```python title="Definition"
+class AlarmModelSummaryTypeDef(TypedDict):
+    creationTime: NotRequired[datetime],
+    alarmModelDescription: NotRequired[str],
+    alarmModelName: NotRequired[str],
+```
 
 ## AlarmModelVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AlarmModelVersionSummaryTypeDef
+
+def get_value() -> AlarmModelVersionSummaryTypeDef:
+    return {
+        "alarmModelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlarmModelVersionSummaryTypeDef(TypedDict):
+    alarmModelName: NotRequired[str],
+    alarmModelArn: NotRequired[str],
+    alarmModelVersion: NotRequired[str],
+    roleArn: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    status: NotRequired[AlarmModelVersionStatusType],  # (1)
+    statusMessage: NotRequired[str],
+```
 
-- `alarmModelName`: `str`
-- `alarmModelArn`: `str`
-- `alarmModelVersion`: `str`
-- `roleArn`: `str`
-- `creationTime`: `datetime`
-- `lastUpdateTime`: `datetime`
-- `status`:
-  [AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype)
-- `statusMessage`: `str`
-
-<a id="alarmnotificationtypedef"></a>
-
+1. See [:material-code-brackets: AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype) 
 ## AlarmNotificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AlarmNotificationTypeDef
+
+def get_value() -> AlarmNotificationTypeDef:
+    return {
+        "notificationActions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlarmNotificationTypeDef(TypedDict):
+    notificationActions: NotRequired[Sequence[NotificationActionTypeDef]],  # (1)
+```
 
-- `notificationActions`:
-  `Sequence`\[[NotificationActionTypeDef](./type_defs.md#notificationactiontypedef)\]
-
-<a id="alarmruletypedef"></a>
-
+1. See [:material-code-braces: NotificationActionTypeDef](./type_defs.md#notificationactiontypedef) 
 ## AlarmRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AlarmRuleTypeDef
+
+def get_value() -> AlarmRuleTypeDef:
+    return {
+        "simpleRule": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlarmRuleTypeDef(TypedDict):
+    simpleRule: NotRequired[SimpleRuleTypeDef],  # (1)
+```
 
-- `simpleRule`: [SimpleRuleTypeDef](./type_defs.md#simpleruletypedef)
-
-<a id="analysisresultlocationtypedef"></a>
-
+1. See [:material-code-braces: SimpleRuleTypeDef](./type_defs.md#simpleruletypedef) 
 ## AnalysisResultLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AnalysisResultLocationTypeDef
+
+def get_value() -> AnalysisResultLocationTypeDef:
+    return {
+        "path": ...,
+    }
 ```
 
-Optional fields:
-
-- `path`: `str`
-
-<a id="analysisresulttypedef"></a>
+```python title="Definition"
+class AnalysisResultLocationTypeDef(TypedDict):
+    path: NotRequired[str],
+```
 
 ## AnalysisResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AnalysisResultTypeDef
+
+def get_value() -> AnalysisResultTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnalysisResultTypeDef(TypedDict):
+    type: NotRequired[str],
+    level: NotRequired[AnalysisResultLevelType],  # (1)
+    message: NotRequired[str],
+    locations: NotRequired[List[AnalysisResultLocationTypeDef]],  # (2)
+```
 
-- `type`: `str`
-- `level`: [AnalysisResultLevelType](./literals.md#analysisresultleveltype)
-- `message`: `str`
-- `locations`:
-  `List`\[[AnalysisResultLocationTypeDef](./type_defs.md#analysisresultlocationtypedef)\]
-
-<a id="assetpropertytimestamptypedef"></a>
-
+1. See [:material-code-brackets: AnalysisResultLevelType](./literals.md#analysisresultleveltype) 
+2. See [:material-code-braces: AnalysisResultLocationTypeDef](./type_defs.md#analysisresultlocationtypedef) 
 ## AssetPropertyTimestampTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AssetPropertyTimestampTypeDef
+
+def get_value() -> AssetPropertyTimestampTypeDef:
+    return {
+        "timeInSeconds": ...,
+    }
 ```
 
-Required fields:
-
-- `timeInSeconds`: `str`
-
-Optional fields:
-
-- `offsetInNanos`: `str`
-
-<a id="assetpropertyvaluetypedef"></a>
+```python title="Definition"
+class AssetPropertyTimestampTypeDef(TypedDict):
+    timeInSeconds: str,
+    offsetInNanos: NotRequired[str],
+```
 
 ## AssetPropertyValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AssetPropertyValueTypeDef
+
+def get_value() -> AssetPropertyValueTypeDef:
+    return {
+        "value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssetPropertyValueTypeDef(TypedDict):
+    value: NotRequired[AssetPropertyVariantTypeDef],  # (1)
+    timestamp: NotRequired[AssetPropertyTimestampTypeDef],  # (2)
+    quality: NotRequired[str],
+```
 
-- `value`:
-  [AssetPropertyVariantTypeDef](./type_defs.md#assetpropertyvarianttypedef)
-- `timestamp`:
-  [AssetPropertyTimestampTypeDef](./type_defs.md#assetpropertytimestamptypedef)
-- `quality`: `str`
-
-<a id="assetpropertyvarianttypedef"></a>
-
+1. See [:material-code-braces: AssetPropertyVariantTypeDef](./type_defs.md#assetpropertyvarianttypedef) 
+2. See [:material-code-braces: AssetPropertyTimestampTypeDef](./type_defs.md#assetpropertytimestamptypedef) 
 ## AssetPropertyVariantTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AssetPropertyVariantTypeDef
+
+def get_value() -> AssetPropertyVariantTypeDef:
+    return {
+        "stringValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `stringValue`: `str`
-- `integerValue`: `str`
-- `doubleValue`: `str`
-- `booleanValue`: `str`
-
-<a id="attributetypedef"></a>
+```python title="Definition"
+class AssetPropertyVariantTypeDef(TypedDict):
+    stringValue: NotRequired[str],
+    integerValue: NotRequired[str],
+    doubleValue: NotRequired[str],
+    booleanValue: NotRequired[str],
+```
 
 ## AttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import AttributeTypeDef
+
+def get_value() -> AttributeTypeDef:
+    return {
+        "jsonPath": ...,
+    }
 ```
 
-Required fields:
-
-- `jsonPath`: `str`
-
-<a id="cleartimeractiontypedef"></a>
+```python title="Definition"
+class AttributeTypeDef(TypedDict):
+    jsonPath: str,
+```
 
 ## ClearTimerActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ClearTimerActionTypeDef
+
+def get_value() -> ClearTimerActionTypeDef:
+    return {
+        "timerName": ...,
+    }
 ```
 
-Required fields:
-
-- `timerName`: `str`
-
-<a id="createalarmmodelrequestrequesttypedef"></a>
+```python title="Definition"
+class ClearTimerActionTypeDef(TypedDict):
+    timerName: str,
+```
 
 ## CreateAlarmModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import CreateAlarmModelRequestRequestTypeDef
+
+def get_value() -> CreateAlarmModelRequestRequestTypeDef:
+    return {
+        "alarmModelName": ...,
+        "roleArn": ...,
+        "alarmRule": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAlarmModelRequestRequestTypeDef(TypedDict):
+    alarmModelName: str,
+    roleArn: str,
+    alarmRule: AlarmRuleTypeDef,  # (1)
+    alarmModelDescription: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    key: NotRequired[str],
+    severity: NotRequired[int],
+    alarmNotification: NotRequired[AlarmNotificationTypeDef],  # (3)
+    alarmEventActions: NotRequired[AlarmEventActionsTypeDef],  # (4)
+    alarmCapabilities: NotRequired[AlarmCapabilitiesTypeDef],  # (5)
+```
 
-- `alarmModelName`: `str`
-- `roleArn`: `str`
-- `alarmRule`: [AlarmRuleTypeDef](./type_defs.md#alarmruletypedef)
-
-Optional fields:
-
-- `alarmModelDescription`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `key`: `str`
-- `severity`: `int`
-- `alarmNotification`:
-  [AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef)
-- `alarmEventActions`:
-  [AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef)
-- `alarmCapabilities`:
-  [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
-
-<a id="createalarmmodelresponsetypedef"></a>
-
+1. See [:material-code-braces: AlarmRuleTypeDef](./type_defs.md#alarmruletypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef) 
+4. See [:material-code-braces: AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef) 
+5. See [:material-code-braces: AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef) 
 ## CreateAlarmModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import CreateAlarmModelResponseTypeDef
+
+def get_value() -> CreateAlarmModelResponseTypeDef:
+    return {
+        "creationTime": ...,
+        "alarmModelArn": ...,
+        "alarmModelVersion": ...,
+        "lastUpdateTime": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAlarmModelResponseTypeDef(TypedDict):
+    creationTime: datetime,
+    alarmModelArn: str,
+    alarmModelVersion: str,
+    lastUpdateTime: datetime,
+    status: AlarmModelVersionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `creationTime`: `datetime`
-- `alarmModelArn`: `str`
-- `alarmModelVersion`: `str`
-- `lastUpdateTime`: `datetime`
-- `status`:
-  [AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdetectormodelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDetectorModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import CreateDetectorModelRequestRequestTypeDef
+
+def get_value() -> CreateDetectorModelRequestRequestTypeDef:
+    return {
+        "detectorModelName": ...,
+        "detectorModelDefinition": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDetectorModelRequestRequestTypeDef(TypedDict):
+    detectorModelName: str,
+    detectorModelDefinition: DetectorModelDefinitionTypeDef,  # (1)
+    roleArn: str,
+    detectorModelDescription: NotRequired[str],
+    key: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    evaluationMethod: NotRequired[EvaluationMethodType],  # (3)
+```
 
-- `detectorModelName`: `str`
-- `detectorModelDefinition`:
-  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
-- `roleArn`: `str`
-
-Optional fields:
-
-- `detectorModelDescription`: `str`
-- `key`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `evaluationMethod`:
-  [EvaluationMethodType](./literals.md#evaluationmethodtype)
-
-<a id="createdetectormodelresponsetypedef"></a>
-
+1. See [:material-code-braces: DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: EvaluationMethodType](./literals.md#evaluationmethodtype) 
 ## CreateDetectorModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import CreateDetectorModelResponseTypeDef
+
+def get_value() -> CreateDetectorModelResponseTypeDef:
+    return {
+        "detectorModelConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDetectorModelResponseTypeDef(TypedDict):
+    detectorModelConfiguration: DetectorModelConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `detectorModelConfiguration`:
-  [DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinputrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInputRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import CreateInputRequestRequestTypeDef
+
+def get_value() -> CreateInputRequestRequestTypeDef:
+    return {
+        "inputName": ...,
+        "inputDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInputRequestRequestTypeDef(TypedDict):
+    inputName: str,
+    inputDefinition: InputDefinitionTypeDef,  # (1)
+    inputDescription: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `inputName`: `str`
-- `inputDefinition`:
-  [InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef)
-
-Optional fields:
-
-- `inputDescription`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createinputresponsetypedef"></a>
-
+1. See [:material-code-braces: InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateInputResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import CreateInputResponseTypeDef
+
+def get_value() -> CreateInputResponseTypeDef:
+    return {
+        "inputConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInputResponseTypeDef(TypedDict):
+    inputConfiguration: InputConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `inputConfiguration`:
-  [InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletealarmmodelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAlarmModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DeleteAlarmModelRequestRequestTypeDef
+
+def get_value() -> DeleteAlarmModelRequestRequestTypeDef:
+    return {
+        "alarmModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `alarmModelName`: `str`
-
-<a id="deletedetectormodelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAlarmModelRequestRequestTypeDef(TypedDict):
+    alarmModelName: str,
+```
 
 ## DeleteDetectorModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DeleteDetectorModelRequestRequestTypeDef
+
+def get_value() -> DeleteDetectorModelRequestRequestTypeDef:
+    return {
+        "detectorModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `detectorModelName`: `str`
-
-<a id="deleteinputrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDetectorModelRequestRequestTypeDef(TypedDict):
+    detectorModelName: str,
+```
 
 ## DeleteInputRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DeleteInputRequestRequestTypeDef
+
+def get_value() -> DeleteInputRequestRequestTypeDef:
+    return {
+        "inputName": ...,
+    }
 ```
 
-Required fields:
-
-- `inputName`: `str`
-
-<a id="describealarmmodelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteInputRequestRequestTypeDef(TypedDict):
+    inputName: str,
+```
 
 ## DescribeAlarmModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DescribeAlarmModelRequestRequestTypeDef
+
+def get_value() -> DescribeAlarmModelRequestRequestTypeDef:
+    return {
+        "alarmModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `alarmModelName`: `str`
-
-Optional fields:
-
-- `alarmModelVersion`: `str`
-
-<a id="describealarmmodelresponsetypedef"></a>
+```python title="Definition"
+class DescribeAlarmModelRequestRequestTypeDef(TypedDict):
+    alarmModelName: str,
+    alarmModelVersion: NotRequired[str],
+```
 
 ## DescribeAlarmModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DescribeAlarmModelResponseTypeDef
+
+def get_value() -> DescribeAlarmModelResponseTypeDef:
+    return {
+        "creationTime": ...,
+        "alarmModelArn": ...,
+        "alarmModelVersion": ...,
+        "lastUpdateTime": ...,
+        "status": ...,
+        "statusMessage": ...,
+        "alarmModelName": ...,
+        "alarmModelDescription": ...,
+        "roleArn": ...,
+        "key": ...,
+        "severity": ...,
+        "alarmRule": ...,
+        "alarmNotification": ...,
+        "alarmEventActions": ...,
+        "alarmCapabilities": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAlarmModelResponseTypeDef(TypedDict):
+    creationTime: datetime,
+    alarmModelArn: str,
+    alarmModelVersion: str,
+    lastUpdateTime: datetime,
+    status: AlarmModelVersionStatusType,  # (1)
+    statusMessage: str,
+    alarmModelName: str,
+    alarmModelDescription: str,
+    roleArn: str,
+    key: str,
+    severity: int,
+    alarmRule: AlarmRuleTypeDef,  # (2)
+    alarmNotification: AlarmNotificationTypeDef,  # (3)
+    alarmEventActions: AlarmEventActionsTypeDef,  # (4)
+    alarmCapabilities: AlarmCapabilitiesTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `creationTime`: `datetime`
-- `alarmModelArn`: `str`
-- `alarmModelVersion`: `str`
-- `lastUpdateTime`: `datetime`
-- `status`:
-  [AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype)
-- `statusMessage`: `str`
-- `alarmModelName`: `str`
-- `alarmModelDescription`: `str`
-- `roleArn`: `str`
-- `key`: `str`
-- `severity`: `int`
-- `alarmRule`: [AlarmRuleTypeDef](./type_defs.md#alarmruletypedef)
-- `alarmNotification`:
-  [AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef)
-- `alarmEventActions`:
-  [AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef)
-- `alarmCapabilities`:
-  [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedetectormodelanalysisrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype) 
+2. See [:material-code-braces: AlarmRuleTypeDef](./type_defs.md#alarmruletypedef) 
+3. See [:material-code-braces: AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef) 
+4. See [:material-code-braces: AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef) 
+5. See [:material-code-braces: AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDetectorModelAnalysisRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DescribeDetectorModelAnalysisRequestRequestTypeDef
+
+def get_value() -> DescribeDetectorModelAnalysisRequestRequestTypeDef:
+    return {
+        "analysisId": ...,
+    }
 ```
 
-Required fields:
-
-- `analysisId`: `str`
-
-<a id="describedetectormodelanalysisresponsetypedef"></a>
+```python title="Definition"
+class DescribeDetectorModelAnalysisRequestRequestTypeDef(TypedDict):
+    analysisId: str,
+```
 
 ## DescribeDetectorModelAnalysisResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DescribeDetectorModelAnalysisResponseTypeDef
+
+def get_value() -> DescribeDetectorModelAnalysisResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDetectorModelAnalysisResponseTypeDef(TypedDict):
+    status: AnalysisStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `status`: [AnalysisStatusType](./literals.md#analysisstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedetectormodelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AnalysisStatusType](./literals.md#analysisstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDetectorModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DescribeDetectorModelRequestRequestTypeDef
+
+def get_value() -> DescribeDetectorModelRequestRequestTypeDef:
+    return {
+        "detectorModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `detectorModelName`: `str`
-
-Optional fields:
-
-- `detectorModelVersion`: `str`
-
-<a id="describedetectormodelresponsetypedef"></a>
+```python title="Definition"
+class DescribeDetectorModelRequestRequestTypeDef(TypedDict):
+    detectorModelName: str,
+    detectorModelVersion: NotRequired[str],
+```
 
 ## DescribeDetectorModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DescribeDetectorModelResponseTypeDef
+
+def get_value() -> DescribeDetectorModelResponseTypeDef:
+    return {
+        "detectorModel": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDetectorModelResponseTypeDef(TypedDict):
+    detectorModel: DetectorModelTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `detectorModel`: [DetectorModelTypeDef](./type_defs.md#detectormodeltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeinputrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DetectorModelTypeDef](./type_defs.md#detectormodeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInputRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DescribeInputRequestRequestTypeDef
+
+def get_value() -> DescribeInputRequestRequestTypeDef:
+    return {
+        "inputName": ...,
+    }
 ```
 
-Required fields:
-
-- `inputName`: `str`
-
-<a id="describeinputresponsetypedef"></a>
+```python title="Definition"
+class DescribeInputRequestRequestTypeDef(TypedDict):
+    inputName: str,
+```
 
 ## DescribeInputResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DescribeInputResponseTypeDef
+
+def get_value() -> DescribeInputResponseTypeDef:
+    return {
+        "input": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInputResponseTypeDef(TypedDict):
+    input: InputTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `input`: [InputTypeDef](./type_defs.md#inputtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeloggingoptionsresponsetypedef"></a>
-
+1. See [:material-code-braces: InputTypeDef](./type_defs.md#inputtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLoggingOptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DescribeLoggingOptionsResponseTypeDef
+
+def get_value() -> DescribeLoggingOptionsResponseTypeDef:
+    return {
+        "loggingOptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLoggingOptionsResponseTypeDef(TypedDict):
+    loggingOptions: LoggingOptionsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `loggingOptions`:
-  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectordebugoptiontypedef"></a>
-
+1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectorDebugOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DetectorDebugOptionTypeDef
+
+def get_value() -> DetectorDebugOptionTypeDef:
+    return {
+        "detectorModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `detectorModelName`: `str`
-
-Optional fields:
-
-- `keyValue`: `str`
-
-<a id="detectormodelconfigurationtypedef"></a>
+```python title="Definition"
+class DetectorDebugOptionTypeDef(TypedDict):
+    detectorModelName: str,
+    keyValue: NotRequired[str],
+```
 
 ## DetectorModelConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DetectorModelConfigurationTypeDef
+
+def get_value() -> DetectorModelConfigurationTypeDef:
+    return {
+        "detectorModelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DetectorModelConfigurationTypeDef(TypedDict):
+    detectorModelName: NotRequired[str],
+    detectorModelVersion: NotRequired[str],
+    detectorModelDescription: NotRequired[str],
+    detectorModelArn: NotRequired[str],
+    roleArn: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    status: NotRequired[DetectorModelVersionStatusType],  # (1)
+    key: NotRequired[str],
+    evaluationMethod: NotRequired[EvaluationMethodType],  # (2)
+```
 
-- `detectorModelName`: `str`
-- `detectorModelVersion`: `str`
-- `detectorModelDescription`: `str`
-- `detectorModelArn`: `str`
-- `roleArn`: `str`
-- `creationTime`: `datetime`
-- `lastUpdateTime`: `datetime`
-- `status`:
-  [DetectorModelVersionStatusType](./literals.md#detectormodelversionstatustype)
-- `key`: `str`
-- `evaluationMethod`:
-  [EvaluationMethodType](./literals.md#evaluationmethodtype)
-
-<a id="detectormodeldefinitiontypedef"></a>
-
+1. See [:material-code-brackets: DetectorModelVersionStatusType](./literals.md#detectormodelversionstatustype) 
+2. See [:material-code-brackets: EvaluationMethodType](./literals.md#evaluationmethodtype) 
 ## DetectorModelDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DetectorModelDefinitionTypeDef
+
+def get_value() -> DetectorModelDefinitionTypeDef:
+    return {
+        "states": ...,
+        "initialStateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectorModelDefinitionTypeDef(TypedDict):
+    states: Sequence[StateTypeDef],  # (1)
+    initialStateName: str,
+```
 
-- `states`: `Sequence`\[[StateTypeDef](./type_defs.md#statetypedef)\]
-- `initialStateName`: `str`
-
-<a id="detectormodelsummarytypedef"></a>
-
+1. See [:material-code-braces: StateTypeDef](./type_defs.md#statetypedef) 
 ## DetectorModelSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DetectorModelSummaryTypeDef
+
+def get_value() -> DetectorModelSummaryTypeDef:
+    return {
+        "detectorModelName": ...,
+    }
 ```
 
-Optional fields:
-
-- `detectorModelName`: `str`
-- `detectorModelDescription`: `str`
-- `creationTime`: `datetime`
-
-<a id="detectormodeltypedef"></a>
+```python title="Definition"
+class DetectorModelSummaryTypeDef(TypedDict):
+    detectorModelName: NotRequired[str],
+    detectorModelDescription: NotRequired[str],
+    creationTime: NotRequired[datetime],
+```
 
 ## DetectorModelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DetectorModelTypeDef
+
+def get_value() -> DetectorModelTypeDef:
+    return {
+        "detectorModelDefinition": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DetectorModelTypeDef(TypedDict):
+    detectorModelDefinition: NotRequired[DetectorModelDefinitionTypeDef],  # (1)
+    detectorModelConfiguration: NotRequired[DetectorModelConfigurationTypeDef],  # (2)
+```
 
-- `detectorModelDefinition`:
-  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
-- `detectorModelConfiguration`:
-  [DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef)
-
-<a id="detectormodelversionsummarytypedef"></a>
-
+1. See [:material-code-braces: DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef) 
+2. See [:material-code-braces: DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef) 
 ## DetectorModelVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DetectorModelVersionSummaryTypeDef
+
+def get_value() -> DetectorModelVersionSummaryTypeDef:
+    return {
+        "detectorModelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DetectorModelVersionSummaryTypeDef(TypedDict):
+    detectorModelName: NotRequired[str],
+    detectorModelVersion: NotRequired[str],
+    detectorModelArn: NotRequired[str],
+    roleArn: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    status: NotRequired[DetectorModelVersionStatusType],  # (1)
+    evaluationMethod: NotRequired[EvaluationMethodType],  # (2)
+```
 
-- `detectorModelName`: `str`
-- `detectorModelVersion`: `str`
-- `detectorModelArn`: `str`
-- `roleArn`: `str`
-- `creationTime`: `datetime`
-- `lastUpdateTime`: `datetime`
-- `status`:
-  [DetectorModelVersionStatusType](./literals.md#detectormodelversionstatustype)
-- `evaluationMethod`:
-  [EvaluationMethodType](./literals.md#evaluationmethodtype)
-
-<a id="dynamodbactiontypedef"></a>
-
+1. See [:material-code-brackets: DetectorModelVersionStatusType](./literals.md#detectormodelversionstatustype) 
+2. See [:material-code-brackets: EvaluationMethodType](./literals.md#evaluationmethodtype) 
 ## DynamoDBActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DynamoDBActionTypeDef
+
+def get_value() -> DynamoDBActionTypeDef:
+    return {
+        "hashKeyField": ...,
+        "hashKeyValue": ...,
+        "tableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DynamoDBActionTypeDef(TypedDict):
+    hashKeyField: str,
+    hashKeyValue: str,
+    tableName: str,
+    hashKeyType: NotRequired[str],
+    rangeKeyType: NotRequired[str],
+    rangeKeyField: NotRequired[str],
+    rangeKeyValue: NotRequired[str],
+    operation: NotRequired[str],
+    payloadField: NotRequired[str],
+    payload: NotRequired[PayloadTypeDef],  # (1)
+```
 
-- `hashKeyField`: `str`
-- `hashKeyValue`: `str`
-- `tableName`: `str`
-
-Optional fields:
-
-- `hashKeyType`: `str`
-- `rangeKeyType`: `str`
-- `rangeKeyField`: `str`
-- `rangeKeyValue`: `str`
-- `operation`: `str`
-- `payloadField`: `str`
-- `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
-
-<a id="dynamodbv2actiontypedef"></a>
-
+1. See [:material-code-braces: PayloadTypeDef](./type_defs.md#payloadtypedef) 
 ## DynamoDBv2ActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import DynamoDBv2ActionTypeDef
+
+def get_value() -> DynamoDBv2ActionTypeDef:
+    return {
+        "tableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DynamoDBv2ActionTypeDef(TypedDict):
+    tableName: str,
+    payload: NotRequired[PayloadTypeDef],  # (1)
+```
 
-- `tableName`: `str`
-
-Optional fields:
-
-- `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
-
-<a id="emailconfigurationtypedef"></a>
-
+1. See [:material-code-braces: PayloadTypeDef](./type_defs.md#payloadtypedef) 
 ## EmailConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import EmailConfigurationTypeDef
+
+def get_value() -> EmailConfigurationTypeDef:
+    return {
+        "from": ...,
+        "recipients": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EmailConfigurationTypeDef(TypedDict):
+    from: str,
+    recipients: EmailRecipientsTypeDef,  # (2)
+    content: NotRequired[EmailContentTypeDef],  # (1)
+```
 
-- `from`: `str`
-- `recipients`: [EmailRecipientsTypeDef](./type_defs.md#emailrecipientstypedef)
-
-Optional fields:
-
-- `content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
-
-<a id="emailcontenttypedef"></a>
-
+1. See [:material-code-braces: EmailContentTypeDef](./type_defs.md#emailcontenttypedef) 
+2. See [:material-code-braces: EmailRecipientsTypeDef](./type_defs.md#emailrecipientstypedef) 
 ## EmailContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import EmailContentTypeDef
+
+def get_value() -> EmailContentTypeDef:
+    return {
+        "subject": ...,
+    }
 ```
 
-Optional fields:
-
-- `subject`: `str`
-- `additionalMessage`: `str`
-
-<a id="emailrecipientstypedef"></a>
+```python title="Definition"
+class EmailContentTypeDef(TypedDict):
+    subject: NotRequired[str],
+    additionalMessage: NotRequired[str],
+```
 
 ## EmailRecipientsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import EmailRecipientsTypeDef
+
+def get_value() -> EmailRecipientsTypeDef:
+    return {
+        "to": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EmailRecipientsTypeDef(TypedDict):
+    to: NotRequired[Sequence[RecipientDetailTypeDef]],  # (1)
+```
 
-- `to`:
-  `Sequence`\[[RecipientDetailTypeDef](./type_defs.md#recipientdetailtypedef)\]
-
-<a id="eventtypedef"></a>
-
+1. See [:material-code-braces: RecipientDetailTypeDef](./type_defs.md#recipientdetailtypedef) 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "eventName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    eventName: str,
+    condition: NotRequired[str],
+    actions: NotRequired[Sequence[ActionTypeDef]],  # (1)
+```
 
-- `eventName`: `str`
-
-Optional fields:
-
-- `condition`: `str`
-- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-
-<a id="firehoseactiontypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 ## FirehoseActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import FirehoseActionTypeDef
+
+def get_value() -> FirehoseActionTypeDef:
+    return {
+        "deliveryStreamName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FirehoseActionTypeDef(TypedDict):
+    deliveryStreamName: str,
+    separator: NotRequired[str],
+    payload: NotRequired[PayloadTypeDef],  # (1)
+```
 
-- `deliveryStreamName`: `str`
-
-Optional fields:
-
-- `separator`: `str`
-- `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
-
-<a id="getdetectormodelanalysisresultsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PayloadTypeDef](./type_defs.md#payloadtypedef) 
 ## GetDetectorModelAnalysisResultsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import GetDetectorModelAnalysisResultsRequestRequestTypeDef
+
+def get_value() -> GetDetectorModelAnalysisResultsRequestRequestTypeDef:
+    return {
+        "analysisId": ...,
+    }
 ```
 
-Required fields:
-
-- `analysisId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getdetectormodelanalysisresultsresponsetypedef"></a>
+```python title="Definition"
+class GetDetectorModelAnalysisResultsRequestRequestTypeDef(TypedDict):
+    analysisId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetDetectorModelAnalysisResultsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import GetDetectorModelAnalysisResultsResponseTypeDef
+
+def get_value() -> GetDetectorModelAnalysisResultsResponseTypeDef:
+    return {
+        "analysisResults": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDetectorModelAnalysisResultsResponseTypeDef(TypedDict):
+    analysisResults: List[AnalysisResultTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `analysisResults`:
-  `List`\[[AnalysisResultTypeDef](./type_defs.md#analysisresulttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="initializationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: AnalysisResultTypeDef](./type_defs.md#analysisresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InitializationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import InitializationConfigurationTypeDef
+
+def get_value() -> InitializationConfigurationTypeDef:
+    return {
+        "disabledOnInitialization": ...,
+    }
 ```
 
-Required fields:
-
-- `disabledOnInitialization`: `bool`
-
-<a id="inputconfigurationtypedef"></a>
+```python title="Definition"
+class InitializationConfigurationTypeDef(TypedDict):
+    disabledOnInitialization: bool,
+```
 
 ## InputConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import InputConfigurationTypeDef
+
+def get_value() -> InputConfigurationTypeDef:
+    return {
+        "inputName": ...,
+        "inputArn": ...,
+        "creationTime": ...,
+        "lastUpdateTime": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InputConfigurationTypeDef(TypedDict):
+    inputName: str,
+    inputArn: str,
+    creationTime: datetime,
+    lastUpdateTime: datetime,
+    status: InputStatusType,  # (1)
+    inputDescription: NotRequired[str],
+```
 
-- `inputName`: `str`
-- `inputArn`: `str`
-- `creationTime`: `datetime`
-- `lastUpdateTime`: `datetime`
-- `status`: [InputStatusType](./literals.md#inputstatustype)
-
-Optional fields:
-
-- `inputDescription`: `str`
-
-<a id="inputdefinitiontypedef"></a>
-
+1. See [:material-code-brackets: InputStatusType](./literals.md#inputstatustype) 
 ## InputDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import InputDefinitionTypeDef
+
+def get_value() -> InputDefinitionTypeDef:
+    return {
+        "attributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InputDefinitionTypeDef(TypedDict):
+    attributes: Sequence[AttributeTypeDef],  # (1)
+```
 
-- `attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-
-<a id="inputidentifiertypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
 ## InputIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import InputIdentifierTypeDef
+
+def get_value() -> InputIdentifierTypeDef:
+    return {
+        "iotEventsInputIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputIdentifierTypeDef(TypedDict):
+    iotEventsInputIdentifier: NotRequired[IotEventsInputIdentifierTypeDef],  # (1)
+    iotSiteWiseInputIdentifier: NotRequired[IotSiteWiseInputIdentifierTypeDef],  # (2)
+```
 
-- `iotEventsInputIdentifier`:
-  [IotEventsInputIdentifierTypeDef](./type_defs.md#ioteventsinputidentifiertypedef)
-- `iotSiteWiseInputIdentifier`:
-  [IotSiteWiseInputIdentifierTypeDef](./type_defs.md#iotsitewiseinputidentifiertypedef)
-
-<a id="inputsummarytypedef"></a>
-
+1. See [:material-code-braces: IotEventsInputIdentifierTypeDef](./type_defs.md#ioteventsinputidentifiertypedef) 
+2. See [:material-code-braces: IotSiteWiseInputIdentifierTypeDef](./type_defs.md#iotsitewiseinputidentifiertypedef) 
 ## InputSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import InputSummaryTypeDef
+
+def get_value() -> InputSummaryTypeDef:
+    return {
+        "inputName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputSummaryTypeDef(TypedDict):
+    inputName: NotRequired[str],
+    inputDescription: NotRequired[str],
+    inputArn: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    status: NotRequired[InputStatusType],  # (1)
+```
 
-- `inputName`: `str`
-- `inputDescription`: `str`
-- `inputArn`: `str`
-- `creationTime`: `datetime`
-- `lastUpdateTime`: `datetime`
-- `status`: [InputStatusType](./literals.md#inputstatustype)
-
-<a id="inputtypedef"></a>
-
+1. See [:material-code-brackets: InputStatusType](./literals.md#inputstatustype) 
 ## InputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import InputTypeDef
+
+def get_value() -> InputTypeDef:
+    return {
+        "inputConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputTypeDef(TypedDict):
+    inputConfiguration: NotRequired[InputConfigurationTypeDef],  # (1)
+    inputDefinition: NotRequired[InputDefinitionTypeDef],  # (2)
+```
 
-- `inputConfiguration`:
-  [InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)
-- `inputDefinition`:
-  [InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef)
-
-<a id="ioteventsactiontypedef"></a>
-
+1. See [:material-code-braces: InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef) 
+2. See [:material-code-braces: InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef) 
 ## IotEventsActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import IotEventsActionTypeDef
+
+def get_value() -> IotEventsActionTypeDef:
+    return {
+        "inputName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IotEventsActionTypeDef(TypedDict):
+    inputName: str,
+    payload: NotRequired[PayloadTypeDef],  # (1)
+```
 
-- `inputName`: `str`
-
-Optional fields:
-
-- `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
-
-<a id="ioteventsinputidentifiertypedef"></a>
-
+1. See [:material-code-braces: PayloadTypeDef](./type_defs.md#payloadtypedef) 
 ## IotEventsInputIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import IotEventsInputIdentifierTypeDef
+
+def get_value() -> IotEventsInputIdentifierTypeDef:
+    return {
+        "inputName": ...,
+    }
 ```
 
-Required fields:
-
-- `inputName`: `str`
-
-<a id="iotsitewiseactiontypedef"></a>
+```python title="Definition"
+class IotEventsInputIdentifierTypeDef(TypedDict):
+    inputName: str,
+```
 
 ## IotSiteWiseActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import IotSiteWiseActionTypeDef
+
+def get_value() -> IotSiteWiseActionTypeDef:
+    return {
+        "entryId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IotSiteWiseActionTypeDef(TypedDict):
+    entryId: NotRequired[str],
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+    propertyValue: NotRequired[AssetPropertyValueTypeDef],  # (1)
+```
 
-- `entryId`: `str`
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
-- `propertyValue`:
-  [AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)
-
-<a id="iotsitewiseassetmodelpropertyidentifiertypedef"></a>
-
+1. See [:material-code-braces: AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef) 
 ## IotSiteWiseAssetModelPropertyIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import IotSiteWiseAssetModelPropertyIdentifierTypeDef
+
+def get_value() -> IotSiteWiseAssetModelPropertyIdentifierTypeDef:
+    return {
+        "assetModelId": ...,
+        "propertyId": ...,
+    }
 ```
 
-Required fields:
-
-- `assetModelId`: `str`
-- `propertyId`: `str`
-
-<a id="iotsitewiseinputidentifiertypedef"></a>
+```python title="Definition"
+class IotSiteWiseAssetModelPropertyIdentifierTypeDef(TypedDict):
+    assetModelId: str,
+    propertyId: str,
+```
 
 ## IotSiteWiseInputIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import IotSiteWiseInputIdentifierTypeDef
+
+def get_value() -> IotSiteWiseInputIdentifierTypeDef:
+    return {
+        "iotSiteWiseAssetModelPropertyIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IotSiteWiseInputIdentifierTypeDef(TypedDict):
+    iotSiteWiseAssetModelPropertyIdentifier: NotRequired[IotSiteWiseAssetModelPropertyIdentifierTypeDef],  # (1)
+```
 
-- `iotSiteWiseAssetModelPropertyIdentifier`:
-  [IotSiteWiseAssetModelPropertyIdentifierTypeDef](./type_defs.md#iotsitewiseassetmodelpropertyidentifiertypedef)
-
-<a id="iottopicpublishactiontypedef"></a>
-
+1. See [:material-code-braces: IotSiteWiseAssetModelPropertyIdentifierTypeDef](./type_defs.md#iotsitewiseassetmodelpropertyidentifiertypedef) 
 ## IotTopicPublishActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import IotTopicPublishActionTypeDef
+
+def get_value() -> IotTopicPublishActionTypeDef:
+    return {
+        "mqttTopic": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IotTopicPublishActionTypeDef(TypedDict):
+    mqttTopic: str,
+    payload: NotRequired[PayloadTypeDef],  # (1)
+```
 
-- `mqttTopic`: `str`
-
-Optional fields:
-
-- `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
-
-<a id="lambdaactiontypedef"></a>
-
+1. See [:material-code-braces: PayloadTypeDef](./type_defs.md#payloadtypedef) 
 ## LambdaActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import LambdaActionTypeDef
+
+def get_value() -> LambdaActionTypeDef:
+    return {
+        "functionArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaActionTypeDef(TypedDict):
+    functionArn: str,
+    payload: NotRequired[PayloadTypeDef],  # (1)
+```
 
-- `functionArn`: `str`
-
-Optional fields:
-
-- `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
-
-<a id="listalarmmodelversionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PayloadTypeDef](./type_defs.md#payloadtypedef) 
 ## ListAlarmModelVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListAlarmModelVersionsRequestRequestTypeDef
+
+def get_value() -> ListAlarmModelVersionsRequestRequestTypeDef:
+    return {
+        "alarmModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `alarmModelName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listalarmmodelversionsresponsetypedef"></a>
+```python title="Definition"
+class ListAlarmModelVersionsRequestRequestTypeDef(TypedDict):
+    alarmModelName: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListAlarmModelVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListAlarmModelVersionsResponseTypeDef
+
+def get_value() -> ListAlarmModelVersionsResponseTypeDef:
+    return {
+        "alarmModelVersionSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAlarmModelVersionsResponseTypeDef(TypedDict):
+    alarmModelVersionSummaries: List[AlarmModelVersionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `alarmModelVersionSummaries`:
-  `List`\[[AlarmModelVersionSummaryTypeDef](./type_defs.md#alarmmodelversionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listalarmmodelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AlarmModelVersionSummaryTypeDef](./type_defs.md#alarmmodelversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAlarmModelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListAlarmModelsRequestRequestTypeDef
+
+def get_value() -> ListAlarmModelsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listalarmmodelsresponsetypedef"></a>
+```python title="Definition"
+class ListAlarmModelsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListAlarmModelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListAlarmModelsResponseTypeDef
+
+def get_value() -> ListAlarmModelsResponseTypeDef:
+    return {
+        "alarmModelSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAlarmModelsResponseTypeDef(TypedDict):
+    alarmModelSummaries: List[AlarmModelSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `alarmModelSummaries`:
-  `List`\[[AlarmModelSummaryTypeDef](./type_defs.md#alarmmodelsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdetectormodelversionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AlarmModelSummaryTypeDef](./type_defs.md#alarmmodelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDetectorModelVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListDetectorModelVersionsRequestRequestTypeDef
+
+def get_value() -> ListDetectorModelVersionsRequestRequestTypeDef:
+    return {
+        "detectorModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `detectorModelName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listdetectormodelversionsresponsetypedef"></a>
+```python title="Definition"
+class ListDetectorModelVersionsRequestRequestTypeDef(TypedDict):
+    detectorModelName: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListDetectorModelVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListDetectorModelVersionsResponseTypeDef
+
+def get_value() -> ListDetectorModelVersionsResponseTypeDef:
+    return {
+        "detectorModelVersionSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDetectorModelVersionsResponseTypeDef(TypedDict):
+    detectorModelVersionSummaries: List[DetectorModelVersionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `detectorModelVersionSummaries`:
-  `List`\[[DetectorModelVersionSummaryTypeDef](./type_defs.md#detectormodelversionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdetectormodelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DetectorModelVersionSummaryTypeDef](./type_defs.md#detectormodelversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDetectorModelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListDetectorModelsRequestRequestTypeDef
+
+def get_value() -> ListDetectorModelsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listdetectormodelsresponsetypedef"></a>
+```python title="Definition"
+class ListDetectorModelsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListDetectorModelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListDetectorModelsResponseTypeDef
+
+def get_value() -> ListDetectorModelsResponseTypeDef:
+    return {
+        "detectorModelSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDetectorModelsResponseTypeDef(TypedDict):
+    detectorModelSummaries: List[DetectorModelSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `detectorModelSummaries`:
-  `List`\[[DetectorModelSummaryTypeDef](./type_defs.md#detectormodelsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listinputroutingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DetectorModelSummaryTypeDef](./type_defs.md#detectormodelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInputRoutingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListInputRoutingsRequestRequestTypeDef
+
+def get_value() -> ListInputRoutingsRequestRequestTypeDef:
+    return {
+        "inputIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInputRoutingsRequestRequestTypeDef(TypedDict):
+    inputIdentifier: InputIdentifierTypeDef,  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `inputIdentifier`:
-  [InputIdentifierTypeDef](./type_defs.md#inputidentifiertypedef)
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listinputroutingsresponsetypedef"></a>
-
+1. See [:material-code-braces: InputIdentifierTypeDef](./type_defs.md#inputidentifiertypedef) 
 ## ListInputRoutingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListInputRoutingsResponseTypeDef
+
+def get_value() -> ListInputRoutingsResponseTypeDef:
+    return {
+        "routedResources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInputRoutingsResponseTypeDef(TypedDict):
+    routedResources: List[RoutedResourceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `routedResources`:
-  `List`\[[RoutedResourceTypeDef](./type_defs.md#routedresourcetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listinputsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoutedResourceTypeDef](./type_defs.md#routedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInputsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListInputsRequestRequestTypeDef
+
+def get_value() -> ListInputsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listinputsresponsetypedef"></a>
+```python title="Definition"
+class ListInputsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListInputsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListInputsResponseTypeDef
+
+def get_value() -> ListInputsResponseTypeDef:
+    return {
+        "inputSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInputsResponseTypeDef(TypedDict):
+    inputSummaries: List[InputSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `inputSummaries`:
-  `List`\[[InputSummaryTypeDef](./type_defs.md#inputsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InputSummaryTypeDef](./type_defs.md#inputsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loggingoptionstypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import LoggingOptionsTypeDef
+
+def get_value() -> LoggingOptionsTypeDef:
+    return {
+        "roleArn": ...,
+        "level": ...,
+        "enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LoggingOptionsTypeDef(TypedDict):
+    roleArn: str,
+    level: LoggingLevelType,  # (1)
+    enabled: bool,
+    detectorDebugOptions: NotRequired[List[DetectorDebugOptionTypeDef]],  # (2)
+```
 
-- `roleArn`: `str`
-- `level`: [LoggingLevelType](./literals.md#loggingleveltype)
-- `enabled`: `bool`
-
-Optional fields:
-
-- `detectorDebugOptions`:
-  `List`\[[DetectorDebugOptionTypeDef](./type_defs.md#detectordebugoptiontypedef)\]
-
-<a id="notificationactiontypedef"></a>
-
+1. See [:material-code-brackets: LoggingLevelType](./literals.md#loggingleveltype) 
+2. See [:material-code-braces: DetectorDebugOptionTypeDef](./type_defs.md#detectordebugoptiontypedef) 
 ## NotificationActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import NotificationActionTypeDef
+
+def get_value() -> NotificationActionTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotificationActionTypeDef(TypedDict):
+    action: NotificationTargetActionsTypeDef,  # (1)
+    smsConfigurations: NotRequired[Sequence[SMSConfigurationTypeDef]],  # (2)
+    emailConfigurations: NotRequired[Sequence[EmailConfigurationTypeDef]],  # (3)
+```
 
-- `action`:
-  [NotificationTargetActionsTypeDef](./type_defs.md#notificationtargetactionstypedef)
-
-Optional fields:
-
-- `smsConfigurations`:
-  `Sequence`\[[SMSConfigurationTypeDef](./type_defs.md#smsconfigurationtypedef)\]
-- `emailConfigurations`:
-  `Sequence`\[[EmailConfigurationTypeDef](./type_defs.md#emailconfigurationtypedef)\]
-
-<a id="notificationtargetactionstypedef"></a>
-
+1. See [:material-code-braces: NotificationTargetActionsTypeDef](./type_defs.md#notificationtargetactionstypedef) 
+2. See [:material-code-braces: SMSConfigurationTypeDef](./type_defs.md#smsconfigurationtypedef) 
+3. See [:material-code-braces: EmailConfigurationTypeDef](./type_defs.md#emailconfigurationtypedef) 
 ## NotificationTargetActionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import NotificationTargetActionsTypeDef
+
+def get_value() -> NotificationTargetActionsTypeDef:
+    return {
+        "lambdaAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotificationTargetActionsTypeDef(TypedDict):
+    lambdaAction: NotRequired[LambdaActionTypeDef],  # (1)
+```
 
-- `lambdaAction`: [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
-
-<a id="onenterlifecycletypedef"></a>
-
+1. See [:material-code-braces: LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef) 
 ## OnEnterLifecycleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import OnEnterLifecycleTypeDef
+
+def get_value() -> OnEnterLifecycleTypeDef:
+    return {
+        "events": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OnEnterLifecycleTypeDef(TypedDict):
+    events: NotRequired[Sequence[EventTypeDef]],  # (1)
+```
 
-- `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-
-<a id="onexitlifecycletypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
 ## OnExitLifecycleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import OnExitLifecycleTypeDef
+
+def get_value() -> OnExitLifecycleTypeDef:
+    return {
+        "events": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OnExitLifecycleTypeDef(TypedDict):
+    events: NotRequired[Sequence[EventTypeDef]],  # (1)
+```
 
-- `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-
-<a id="oninputlifecycletypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
 ## OnInputLifecycleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import OnInputLifecycleTypeDef
+
+def get_value() -> OnInputLifecycleTypeDef:
+    return {
+        "events": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OnInputLifecycleTypeDef(TypedDict):
+    events: NotRequired[Sequence[EventTypeDef]],  # (1)
+    transitionEvents: NotRequired[Sequence[TransitionEventTypeDef]],  # (2)
+```
 
-- `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-- `transitionEvents`:
-  `Sequence`\[[TransitionEventTypeDef](./type_defs.md#transitioneventtypedef)\]
-
-<a id="payloadtypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: TransitionEventTypeDef](./type_defs.md#transitioneventtypedef) 
 ## PayloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import PayloadTypeDef
+
+def get_value() -> PayloadTypeDef:
+    return {
+        "contentExpression": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PayloadTypeDef(TypedDict):
+    contentExpression: str,
+    type: PayloadTypeType,  # (1)
+```
 
-- `contentExpression`: `str`
-- `type`: [PayloadTypeType](./literals.md#payloadtypetype)
-
-<a id="putloggingoptionsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PayloadTypeType](./literals.md#payloadtypetype) 
 ## PutLoggingOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import PutLoggingOptionsRequestRequestTypeDef
+
+def get_value() -> PutLoggingOptionsRequestRequestTypeDef:
+    return {
+        "loggingOptions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutLoggingOptionsRequestRequestTypeDef(TypedDict):
+    loggingOptions: LoggingOptionsTypeDef,  # (1)
+```
 
-- `loggingOptions`:
-  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
-
-<a id="recipientdetailtypedef"></a>
-
+1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
 ## RecipientDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import RecipientDetailTypeDef
+
+def get_value() -> RecipientDetailTypeDef:
+    return {
+        "ssoIdentity": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecipientDetailTypeDef(TypedDict):
+    ssoIdentity: NotRequired[SSOIdentityTypeDef],  # (1)
+```
 
-- `ssoIdentity`: [SSOIdentityTypeDef](./type_defs.md#ssoidentitytypedef)
-
-<a id="resettimeractiontypedef"></a>
-
+1. See [:material-code-braces: SSOIdentityTypeDef](./type_defs.md#ssoidentitytypedef) 
 ## ResetTimerActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ResetTimerActionTypeDef
+
+def get_value() -> ResetTimerActionTypeDef:
+    return {
+        "timerName": ...,
+    }
 ```
 
-Required fields:
-
-- `timerName`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResetTimerActionTypeDef(TypedDict):
+    timerName: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="routedresourcetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RoutedResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import RoutedResourceTypeDef
+
+def get_value() -> RoutedResourceTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `arn`: `str`
-
-<a id="smsconfigurationtypedef"></a>
+```python title="Definition"
+class RoutedResourceTypeDef(TypedDict):
+    name: NotRequired[str],
+    arn: NotRequired[str],
+```
 
 ## SMSConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import SMSConfigurationTypeDef
+
+def get_value() -> SMSConfigurationTypeDef:
+    return {
+        "recipients": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SMSConfigurationTypeDef(TypedDict):
+    recipients: Sequence[RecipientDetailTypeDef],  # (1)
+    senderId: NotRequired[str],
+    additionalMessage: NotRequired[str],
+```
 
-- `recipients`:
-  `Sequence`\[[RecipientDetailTypeDef](./type_defs.md#recipientdetailtypedef)\]
-
-Optional fields:
-
-- `senderId`: `str`
-- `additionalMessage`: `str`
-
-<a id="snstopicpublishactiontypedef"></a>
-
+1. See [:material-code-braces: RecipientDetailTypeDef](./type_defs.md#recipientdetailtypedef) 
 ## SNSTopicPublishActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import SNSTopicPublishActionTypeDef
+
+def get_value() -> SNSTopicPublishActionTypeDef:
+    return {
+        "targetArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SNSTopicPublishActionTypeDef(TypedDict):
+    targetArn: str,
+    payload: NotRequired[PayloadTypeDef],  # (1)
+```
 
-- `targetArn`: `str`
-
-Optional fields:
-
-- `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
-
-<a id="ssoidentitytypedef"></a>
-
+1. See [:material-code-braces: PayloadTypeDef](./type_defs.md#payloadtypedef) 
 ## SSOIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import SSOIdentityTypeDef
+
+def get_value() -> SSOIdentityTypeDef:
+    return {
+        "identityStoreId": ...,
+    }
 ```
 
-Required fields:
-
-- `identityStoreId`: `str`
-
-Optional fields:
-
-- `userId`: `str`
-
-<a id="settimeractiontypedef"></a>
+```python title="Definition"
+class SSOIdentityTypeDef(TypedDict):
+    identityStoreId: str,
+    userId: NotRequired[str],
+```
 
 ## SetTimerActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import SetTimerActionTypeDef
+
+def get_value() -> SetTimerActionTypeDef:
+    return {
+        "timerName": ...,
+    }
 ```
 
-Required fields:
-
-- `timerName`: `str`
-
-Optional fields:
-
-- `seconds`: `int`
-- `durationExpression`: `str`
-
-<a id="setvariableactiontypedef"></a>
+```python title="Definition"
+class SetTimerActionTypeDef(TypedDict):
+    timerName: str,
+    seconds: NotRequired[int],
+    durationExpression: NotRequired[str],
+```
 
 ## SetVariableActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import SetVariableActionTypeDef
+
+def get_value() -> SetVariableActionTypeDef:
+    return {
+        "variableName": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `variableName`: `str`
-- `value`: `str`
-
-<a id="simpleruletypedef"></a>
+```python title="Definition"
+class SetVariableActionTypeDef(TypedDict):
+    variableName: str,
+    value: str,
+```
 
 ## SimpleRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import SimpleRuleTypeDef
+
+def get_value() -> SimpleRuleTypeDef:
+    return {
+        "inputProperty": ...,
+        "comparisonOperator": ...,
+        "threshold": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SimpleRuleTypeDef(TypedDict):
+    inputProperty: str,
+    comparisonOperator: ComparisonOperatorType,  # (1)
+    threshold: str,
+```
 
-- `inputProperty`: `str`
-- `comparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-- `threshold`: `str`
-
-<a id="sqsactiontypedef"></a>
-
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 ## SqsActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import SqsActionTypeDef
+
+def get_value() -> SqsActionTypeDef:
+    return {
+        "queueUrl": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SqsActionTypeDef(TypedDict):
+    queueUrl: str,
+    useBase64: NotRequired[bool],
+    payload: NotRequired[PayloadTypeDef],  # (1)
+```
 
-- `queueUrl`: `str`
-
-Optional fields:
-
-- `useBase64`: `bool`
-- `payload`: [PayloadTypeDef](./type_defs.md#payloadtypedef)
-
-<a id="startdetectormodelanalysisrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PayloadTypeDef](./type_defs.md#payloadtypedef) 
 ## StartDetectorModelAnalysisRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import StartDetectorModelAnalysisRequestRequestTypeDef
+
+def get_value() -> StartDetectorModelAnalysisRequestRequestTypeDef:
+    return {
+        "detectorModelDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDetectorModelAnalysisRequestRequestTypeDef(TypedDict):
+    detectorModelDefinition: DetectorModelDefinitionTypeDef,  # (1)
+```
 
-- `detectorModelDefinition`:
-  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
-
-<a id="startdetectormodelanalysisresponsetypedef"></a>
-
+1. See [:material-code-braces: DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef) 
 ## StartDetectorModelAnalysisResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import StartDetectorModelAnalysisResponseTypeDef
+
+def get_value() -> StartDetectorModelAnalysisResponseTypeDef:
+    return {
+        "analysisId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDetectorModelAnalysisResponseTypeDef(TypedDict):
+    analysisId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `analysisId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="statetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import StateTypeDef
+
+def get_value() -> StateTypeDef:
+    return {
+        "stateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StateTypeDef(TypedDict):
+    stateName: str,
+    onInput: NotRequired[OnInputLifecycleTypeDef],  # (1)
+    onEnter: NotRequired[OnEnterLifecycleTypeDef],  # (2)
+    onExit: NotRequired[OnExitLifecycleTypeDef],  # (3)
+```
 
-- `stateName`: `str`
-
-Optional fields:
-
-- `onInput`: [OnInputLifecycleTypeDef](./type_defs.md#oninputlifecycletypedef)
-- `onEnter`: [OnEnterLifecycleTypeDef](./type_defs.md#onenterlifecycletypedef)
-- `onExit`: [OnExitLifecycleTypeDef](./type_defs.md#onexitlifecycletypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OnInputLifecycleTypeDef](./type_defs.md#oninputlifecycletypedef) 
+2. See [:material-code-braces: OnEnterLifecycleTypeDef](./type_defs.md#onenterlifecycletypedef) 
+3. See [:material-code-braces: OnExitLifecycleTypeDef](./type_defs.md#onexitlifecycletypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `resourceArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="transitioneventtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: str,
+    value: str,
+```
 
 ## TransitionEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import TransitionEventTypeDef
+
+def get_value() -> TransitionEventTypeDef:
+    return {
+        "eventName": ...,
+        "condition": ...,
+        "nextState": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransitionEventTypeDef(TypedDict):
+    eventName: str,
+    condition: str,
+    nextState: str,
+    actions: NotRequired[Sequence[ActionTypeDef]],  # (1)
+```
 
-- `eventName`: `str`
-- `condition`: `str`
-- `nextState`: `str`
-
-Optional fields:
-
-- `actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatealarmmodelrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateAlarmModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import UpdateAlarmModelRequestRequestTypeDef
+
+def get_value() -> UpdateAlarmModelRequestRequestTypeDef:
+    return {
+        "alarmModelName": ...,
+        "roleArn": ...,
+        "alarmRule": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAlarmModelRequestRequestTypeDef(TypedDict):
+    alarmModelName: str,
+    roleArn: str,
+    alarmRule: AlarmRuleTypeDef,  # (1)
+    alarmModelDescription: NotRequired[str],
+    severity: NotRequired[int],
+    alarmNotification: NotRequired[AlarmNotificationTypeDef],  # (2)
+    alarmEventActions: NotRequired[AlarmEventActionsTypeDef],  # (3)
+    alarmCapabilities: NotRequired[AlarmCapabilitiesTypeDef],  # (4)
+```
 
-- `alarmModelName`: `str`
-- `roleArn`: `str`
-- `alarmRule`: [AlarmRuleTypeDef](./type_defs.md#alarmruletypedef)
-
-Optional fields:
-
-- `alarmModelDescription`: `str`
-- `severity`: `int`
-- `alarmNotification`:
-  [AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef)
-- `alarmEventActions`:
-  [AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef)
-- `alarmCapabilities`:
-  [AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef)
-
-<a id="updatealarmmodelresponsetypedef"></a>
-
+1. See [:material-code-braces: AlarmRuleTypeDef](./type_defs.md#alarmruletypedef) 
+2. See [:material-code-braces: AlarmNotificationTypeDef](./type_defs.md#alarmnotificationtypedef) 
+3. See [:material-code-braces: AlarmEventActionsTypeDef](./type_defs.md#alarmeventactionstypedef) 
+4. See [:material-code-braces: AlarmCapabilitiesTypeDef](./type_defs.md#alarmcapabilitiestypedef) 
 ## UpdateAlarmModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import UpdateAlarmModelResponseTypeDef
+
+def get_value() -> UpdateAlarmModelResponseTypeDef:
+    return {
+        "creationTime": ...,
+        "alarmModelArn": ...,
+        "alarmModelVersion": ...,
+        "lastUpdateTime": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAlarmModelResponseTypeDef(TypedDict):
+    creationTime: datetime,
+    alarmModelArn: str,
+    alarmModelVersion: str,
+    lastUpdateTime: datetime,
+    status: AlarmModelVersionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `creationTime`: `datetime`
-- `alarmModelArn`: `str`
-- `alarmModelVersion`: `str`
-- `lastUpdateTime`: `datetime`
-- `status`:
-  [AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedetectormodelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AlarmModelVersionStatusType](./literals.md#alarmmodelversionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDetectorModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import UpdateDetectorModelRequestRequestTypeDef
+
+def get_value() -> UpdateDetectorModelRequestRequestTypeDef:
+    return {
+        "detectorModelName": ...,
+        "detectorModelDefinition": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDetectorModelRequestRequestTypeDef(TypedDict):
+    detectorModelName: str,
+    detectorModelDefinition: DetectorModelDefinitionTypeDef,  # (1)
+    roleArn: str,
+    detectorModelDescription: NotRequired[str],
+    evaluationMethod: NotRequired[EvaluationMethodType],  # (2)
+```
 
-- `detectorModelName`: `str`
-- `detectorModelDefinition`:
-  [DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef)
-- `roleArn`: `str`
-
-Optional fields:
-
-- `detectorModelDescription`: `str`
-- `evaluationMethod`:
-  [EvaluationMethodType](./literals.md#evaluationmethodtype)
-
-<a id="updatedetectormodelresponsetypedef"></a>
-
+1. See [:material-code-braces: DetectorModelDefinitionTypeDef](./type_defs.md#detectormodeldefinitiontypedef) 
+2. See [:material-code-brackets: EvaluationMethodType](./literals.md#evaluationmethodtype) 
 ## UpdateDetectorModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import UpdateDetectorModelResponseTypeDef
+
+def get_value() -> UpdateDetectorModelResponseTypeDef:
+    return {
+        "detectorModelConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDetectorModelResponseTypeDef(TypedDict):
+    detectorModelConfiguration: DetectorModelConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `detectorModelConfiguration`:
-  [DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateinputrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DetectorModelConfigurationTypeDef](./type_defs.md#detectormodelconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateInputRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import UpdateInputRequestRequestTypeDef
+
+def get_value() -> UpdateInputRequestRequestTypeDef:
+    return {
+        "inputName": ...,
+        "inputDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateInputRequestRequestTypeDef(TypedDict):
+    inputName: str,
+    inputDefinition: InputDefinitionTypeDef,  # (1)
+    inputDescription: NotRequired[str],
+```
 
-- `inputName`: `str`
-- `inputDefinition`:
-  [InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef)
-
-Optional fields:
-
-- `inputDescription`: `str`
-
-<a id="updateinputresponsetypedef"></a>
-
+1. See [:material-code-braces: InputDefinitionTypeDef](./type_defs.md#inputdefinitiontypedef) 
 ## UpdateInputResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotevents.type_defs import UpdateInputResponseTypeDef
+
+def get_value() -> UpdateInputResponseTypeDef:
+    return {
+        "inputConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateInputResponseTypeDef(TypedDict):
+    inputConfiguration: InputConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `inputConfiguration`:
-  [InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

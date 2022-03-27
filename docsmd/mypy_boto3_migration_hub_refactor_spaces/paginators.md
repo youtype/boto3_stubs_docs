@@ -1,32 +1,18 @@
-<a id="paginators-for-boto3-migrationhubrefactorspaces-module"></a>
+# Paginators
 
-# Paginators for boto3 MigrationHubRefactorSpaces module
+> [Index](../README.md) > [MigrationHubRefactorSpaces](./README.md) > Paginators
 
-> [Index](../README.md) > [MigrationHubRefactorSpaces](./README.md) >
-> Paginators
+!!! note ""
 
-Auto-generated documentation for
-[MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
-type annotations stubs module
-[mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
-
-- [Paginators for boto3 MigrationHubRefactorSpaces module](#paginators-for-boto3-migrationhubrefactorspaces-module)
-  - [ListApplicationsPaginator](#listapplicationspaginator)
-  - [ListEnvironmentVpcsPaginator](#listenvironmentvpcspaginator)
-  - [ListEnvironmentsPaginator](#listenvironmentspaginator)
-  - [ListRoutesPaginator](#listroutespaginator)
-  - [ListServicesPaginator](#listservicespaginator)
-
-<a id="listapplicationspaginator"></a>
+    Auto-generated documentation for [MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
+    type annotations stubs module [mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
 
 ## ListApplicationsPaginator
 
-Type annotations for
-`boto3.client("migration-hub-refactor-spaces").get_paginator("list_applications")`.
+Type annotations and code completion for `#!python boto3.client("migration-hub-refactor-spaces").get_paginator("list_applications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListApplications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListApplicationsPaginator
@@ -35,28 +21,40 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_applications")
 ```
 
-Boto3 documentation:
-[MigrationHubRefactorSpaces.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListApplications)
 
-Arguments for `ListApplicationsPaginator.paginate` method:
+### paginate
 
-- `EnvironmentIdentifier`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListApplicationsPaginator.paginate` method.
 
-`ListApplicationsPaginator.paginate` returns
-`_PageIterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    EnvironmentIdentifier: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListApplicationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listenvironmentvpcspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationsRequestListApplicationsPaginateTypeDef = {  # (1)
+    "EnvironmentIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationsRequestListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsrequestlistapplicationspaginatetypedef) 
 ## ListEnvironmentVpcsPaginator
 
-Type annotations for
-`boto3.client("migration-hub-refactor-spaces").get_paginator("list_environment_vpcs")`.
+Type annotations and code completion for `#!python boto3.client("migration-hub-refactor-spaces").get_paginator("list_environment_vpcs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListEnvironmentVpcs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListEnvironmentVpcsPaginator
@@ -65,28 +63,40 @@ def get_list_environment_vpcs_paginator() -> ListEnvironmentVpcsPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_environment_vpcs")
 ```
 
-Boto3 documentation:
-[MigrationHubRefactorSpaces.Paginator.ListEnvironmentVpcs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListEnvironmentVpcs)
 
-Arguments for `ListEnvironmentVpcsPaginator.paginate` method:
+### paginate
 
-- `EnvironmentIdentifier`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnvironmentVpcsPaginator.paginate` method.
 
-`ListEnvironmentVpcsPaginator.paginate` returns
-`_PageIterator`\[[ListEnvironmentVpcsResponseTypeDef](./type_defs.md#listenvironmentvpcsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    EnvironmentIdentifier: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEnvironmentVpcsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listenvironmentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEnvironmentVpcsResponseTypeDef](./type_defs.md#listenvironmentvpcsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentVpcsRequestListEnvironmentVpcsPaginateTypeDef = {  # (1)
+    "EnvironmentIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnvironmentVpcsRequestListEnvironmentVpcsPaginateTypeDef](./type_defs.md#listenvironmentvpcsrequestlistenvironmentvpcspaginatetypedef) 
 ## ListEnvironmentsPaginator
 
-Type annotations for
-`boto3.client("migration-hub-refactor-spaces").get_paginator("list_environments")`.
+Type annotations and code completion for `#!python boto3.client("migration-hub-refactor-spaces").get_paginator("list_environments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListEnvironments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListEnvironmentsPaginator
@@ -95,27 +105,39 @@ def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_environments")
 ```
 
-Boto3 documentation:
-[MigrationHubRefactorSpaces.Paginator.ListEnvironments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListEnvironments)
 
-Arguments for `ListEnvironmentsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnvironmentsPaginator.paginate` method.
 
-`ListEnvironmentsPaginator.paginate` returns
-`_PageIterator`\[[ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEnvironmentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listroutespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentsRequestListEnvironmentsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnvironmentsRequestListEnvironmentsPaginateTypeDef](./type_defs.md#listenvironmentsrequestlistenvironmentspaginatetypedef) 
 ## ListRoutesPaginator
 
-Type annotations for
-`boto3.client("migration-hub-refactor-spaces").get_paginator("list_routes")`.
+Type annotations and code completion for `#!python boto3.client("migration-hub-refactor-spaces").get_paginator("list_routes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListRoutes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListRoutesPaginator
@@ -124,29 +146,42 @@ def get_list_routes_paginator() -> ListRoutesPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_routes")
 ```
 
-Boto3 documentation:
-[MigrationHubRefactorSpaces.Paginator.ListRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListRoutes)
 
-Arguments for `ListRoutesPaginator.paginate` method:
+### paginate
 
-- `ApplicationIdentifier`: `str` *(required)*
-- `EnvironmentIdentifier`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRoutesPaginator.paginate` method.
 
-`ListRoutesPaginator.paginate` returns
-`_PageIterator`\[[ListRoutesResponseTypeDef](./type_defs.md#listroutesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRoutesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listservicespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRoutesResponseTypeDef](./type_defs.md#listroutesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRoutesRequestListRoutesPaginateTypeDef = {  # (1)
+    "ApplicationIdentifier": ...,
+    "EnvironmentIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRoutesRequestListRoutesPaginateTypeDef](./type_defs.md#listroutesrequestlistroutespaginatetypedef) 
 ## ListServicesPaginator
 
-Type annotations for
-`boto3.client("migration-hub-refactor-spaces").get_paginator("list_services")`.
+Type annotations and code completion for `#!python boto3.client("migration-hub-refactor-spaces").get_paginator("list_services")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListServices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListServicesPaginator
@@ -155,15 +190,33 @@ def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("migration-hub-refactor-spaces").get_paginator("list_services")
 ```
 
-Boto3 documentation:
-[MigrationHubRefactorSpaces.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Paginator.ListServices)
 
-Arguments for `ListServicesPaginator.paginate` method:
+### paginate
 
-- `ApplicationIdentifier`: `str` *(required)*
-- `EnvironmentIdentifier`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServicesPaginator.paginate` method.
 
-`ListServicesPaginator.paginate` returns
-`_PageIterator`\[[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServicesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListServicesRequestListServicesPaginateTypeDef = {  # (1)
+    "ApplicationIdentifier": ...,
+    "EnvironmentIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServicesRequestListServicesPaginateTypeDef](./type_defs.md#listservicesrequestlistservicespaginatetypedef) 

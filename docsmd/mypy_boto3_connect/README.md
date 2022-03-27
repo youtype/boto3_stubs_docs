@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-connect-module"></a>
-
-# Type annotations for boto3 Connect module
+#  Connect module
 
 > [Index](../README.md) > Connect
 
-Auto-generated documentation for
-[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
-type annotations stubs module
-[mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
+!!! note ""
 
-- [Type annotations for boto3 Connect module](#type-annotations-for-boto3-connect-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ConnectClient](#connectclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+    type annotations stubs module [mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Connect`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[connect]'
 python -m pip install mypy-boto3-connect
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,205 +42,37 @@ python -m pip install mypy-boto3-connect
 python -m pip uninstall -y mypy-boto3-connect
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="connectclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ConnectClient
 
-Type annotations for `boto3.client("connect")` as [ConnectClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("connect")` as [ConnectClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_connect.client import ConnectClient
+
+def get_client() -> ConnectClient:
+    return Session().cleint("connect")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_approved_origin](./client.md#associate_approved_origin)
-- [associate_bot](./client.md#associate_bot)
-- [associate_default_vocabulary](./client.md#associate_default_vocabulary)
-- [associate_instance_storage_config](./client.md#associate_instance_storage_config)
-- [associate_lambda_function](./client.md#associate_lambda_function)
-- [associate_lex_bot](./client.md#associate_lex_bot)
-- [associate_queue_quick_connects](./client.md#associate_queue_quick_connects)
-- [associate_routing_profile_queues](./client.md#associate_routing_profile_queues)
-- [associate_security_key](./client.md#associate_security_key)
-- [can_paginate](./client.md#can_paginate)
-- [create_agent_status](./client.md#create_agent_status)
-- [create_contact_flow](./client.md#create_contact_flow)
-- [create_contact_flow_module](./client.md#create_contact_flow_module)
-- [create_hours_of_operation](./client.md#create_hours_of_operation)
-- [create_instance](./client.md#create_instance)
-- [create_integration_association](./client.md#create_integration_association)
-- [create_queue](./client.md#create_queue)
-- [create_quick_connect](./client.md#create_quick_connect)
-- [create_routing_profile](./client.md#create_routing_profile)
-- [create_security_profile](./client.md#create_security_profile)
-- [create_use_case](./client.md#create_use_case)
-- [create_user](./client.md#create_user)
-- [create_user_hierarchy_group](./client.md#create_user_hierarchy_group)
-- [create_vocabulary](./client.md#create_vocabulary)
-- [delete_contact_flow](./client.md#delete_contact_flow)
-- [delete_contact_flow_module](./client.md#delete_contact_flow_module)
-- [delete_hours_of_operation](./client.md#delete_hours_of_operation)
-- [delete_instance](./client.md#delete_instance)
-- [delete_integration_association](./client.md#delete_integration_association)
-- [delete_quick_connect](./client.md#delete_quick_connect)
-- [delete_security_profile](./client.md#delete_security_profile)
-- [delete_use_case](./client.md#delete_use_case)
-- [delete_user](./client.md#delete_user)
-- [delete_user_hierarchy_group](./client.md#delete_user_hierarchy_group)
-- [delete_vocabulary](./client.md#delete_vocabulary)
-- [describe_agent_status](./client.md#describe_agent_status)
-- [describe_contact](./client.md#describe_contact)
-- [describe_contact_flow](./client.md#describe_contact_flow)
-- [describe_contact_flow_module](./client.md#describe_contact_flow_module)
-- [describe_hours_of_operation](./client.md#describe_hours_of_operation)
-- [describe_instance](./client.md#describe_instance)
-- [describe_instance_attribute](./client.md#describe_instance_attribute)
-- [describe_instance_storage_config](./client.md#describe_instance_storage_config)
-- [describe_queue](./client.md#describe_queue)
-- [describe_quick_connect](./client.md#describe_quick_connect)
-- [describe_routing_profile](./client.md#describe_routing_profile)
-- [describe_security_profile](./client.md#describe_security_profile)
-- [describe_user](./client.md#describe_user)
-- [describe_user_hierarchy_group](./client.md#describe_user_hierarchy_group)
-- [describe_user_hierarchy_structure](./client.md#describe_user_hierarchy_structure)
-- [describe_vocabulary](./client.md#describe_vocabulary)
-- [disassociate_approved_origin](./client.md#disassociate_approved_origin)
-- [disassociate_bot](./client.md#disassociate_bot)
-- [disassociate_instance_storage_config](./client.md#disassociate_instance_storage_config)
-- [disassociate_lambda_function](./client.md#disassociate_lambda_function)
-- [disassociate_lex_bot](./client.md#disassociate_lex_bot)
-- [disassociate_queue_quick_connects](./client.md#disassociate_queue_quick_connects)
-- [disassociate_routing_profile_queues](./client.md#disassociate_routing_profile_queues)
-- [disassociate_security_key](./client.md#disassociate_security_key)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_contact_attributes](./client.md#get_contact_attributes)
-- [get_current_metric_data](./client.md#get_current_metric_data)
-- [get_federation_token](./client.md#get_federation_token)
-- [get_metric_data](./client.md#get_metric_data)
-- [get_paginator](./client.md#get_paginator)
-- [list_agent_statuses](./client.md#list_agent_statuses)
-- [list_approved_origins](./client.md#list_approved_origins)
-- [list_bots](./client.md#list_bots)
-- [list_contact_flow_modules](./client.md#list_contact_flow_modules)
-- [list_contact_flows](./client.md#list_contact_flows)
-- [list_contact_references](./client.md#list_contact_references)
-- [list_default_vocabularies](./client.md#list_default_vocabularies)
-- [list_hours_of_operations](./client.md#list_hours_of_operations)
-- [list_instance_attributes](./client.md#list_instance_attributes)
-- [list_instance_storage_configs](./client.md#list_instance_storage_configs)
-- [list_instances](./client.md#list_instances)
-- [list_integration_associations](./client.md#list_integration_associations)
-- [list_lambda_functions](./client.md#list_lambda_functions)
-- [list_lex_bots](./client.md#list_lex_bots)
-- [list_phone_numbers](./client.md#list_phone_numbers)
-- [list_prompts](./client.md#list_prompts)
-- [list_queue_quick_connects](./client.md#list_queue_quick_connects)
-- [list_queues](./client.md#list_queues)
-- [list_quick_connects](./client.md#list_quick_connects)
-- [list_routing_profile_queues](./client.md#list_routing_profile_queues)
-- [list_routing_profiles](./client.md#list_routing_profiles)
-- [list_security_keys](./client.md#list_security_keys)
-- [list_security_profile_permissions](./client.md#list_security_profile_permissions)
-- [list_security_profiles](./client.md#list_security_profiles)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_use_cases](./client.md#list_use_cases)
-- [list_user_hierarchy_groups](./client.md#list_user_hierarchy_groups)
-- [list_users](./client.md#list_users)
-- [resume_contact_recording](./client.md#resume_contact_recording)
-- [search_vocabularies](./client.md#search_vocabularies)
-- [start_chat_contact](./client.md#start_chat_contact)
-- [start_contact_recording](./client.md#start_contact_recording)
-- [start_contact_streaming](./client.md#start_contact_streaming)
-- [start_outbound_voice_contact](./client.md#start_outbound_voice_contact)
-- [start_task_contact](./client.md#start_task_contact)
-- [stop_contact](./client.md#stop_contact)
-- [stop_contact_recording](./client.md#stop_contact_recording)
-- [stop_contact_streaming](./client.md#stop_contact_streaming)
-- [suspend_contact_recording](./client.md#suspend_contact_recording)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_agent_status](./client.md#update_agent_status)
-- [update_contact](./client.md#update_contact)
-- [update_contact_attributes](./client.md#update_contact_attributes)
-- [update_contact_flow_content](./client.md#update_contact_flow_content)
-- [update_contact_flow_metadata](./client.md#update_contact_flow_metadata)
-- [update_contact_flow_module_content](./client.md#update_contact_flow_module_content)
-- [update_contact_flow_module_metadata](./client.md#update_contact_flow_module_metadata)
-- [update_contact_flow_name](./client.md#update_contact_flow_name)
-- [update_contact_schedule](./client.md#update_contact_schedule)
-- [update_hours_of_operation](./client.md#update_hours_of_operation)
-- [update_instance_attribute](./client.md#update_instance_attribute)
-- [update_instance_storage_config](./client.md#update_instance_storage_config)
-- [update_queue_hours_of_operation](./client.md#update_queue_hours_of_operation)
-- [update_queue_max_contacts](./client.md#update_queue_max_contacts)
-- [update_queue_name](./client.md#update_queue_name)
-- [update_queue_outbound_caller_config](./client.md#update_queue_outbound_caller_config)
-- [update_queue_status](./client.md#update_queue_status)
-- [update_quick_connect_config](./client.md#update_quick_connect_config)
-- [update_quick_connect_name](./client.md#update_quick_connect_name)
-- [update_routing_profile_concurrency](./client.md#update_routing_profile_concurrency)
-- [update_routing_profile_default_outbound_queue](./client.md#update_routing_profile_default_outbound_queue)
-- [update_routing_profile_name](./client.md#update_routing_profile_name)
-- [update_routing_profile_queues](./client.md#update_routing_profile_queues)
-- [update_security_profile](./client.md#update_security_profile)
-- [update_user_hierarchy](./client.md#update_user_hierarchy)
-- [update_user_hierarchy_group_name](./client.md#update_user_hierarchy_group_name)
-- [update_user_hierarchy_structure](./client.md#update_user_hierarchy_structure)
-- [update_user_identity_info](./client.md#update_user_identity_info)
-- [update_user_phone_config](./client.md#update_user_phone_config)
-- [update_user_routing_profile](./client.md#update_user_routing_profile)
-- [update_user_security_profiles](./client.md#update_user_security_profiles)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ConnectClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ContactFlowNotPublishedException
-- ContactNotFoundException
-- DestinationNotAllowedException
-- DuplicateResourceException
-- IdempotencyException
-- InternalServiceException
-- InvalidContactFlowException
-- InvalidContactFlowModuleException
-- InvalidParameterException
-- InvalidRequestException
-- LimitExceededException
-- OutboundContactNotPermittedException
-- ResourceConflictException
-- ResourceInUseException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- UserNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("connect").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("connect").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_connect.paginator import GetMetricDataPaginator, ...
+from mypy_boto3_connect.paginator import GetMetricDataPaginator
+
+def get_get_metric_data_paginator() -> GetMetricDataPaginator:
+    return Session().client("connect").get_paginator("get_metric_data"))
 ```
 
 - [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
@@ -295,16 +105,23 @@ from mypy_boto3_connect.paginator import GetMetricDataPaginator, ...
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
 - [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_connect.literals import AgentStatusStateType
 
-```python
-from mypy_boto3_connect.literals import AgentStatusStateType, ...
+def get_value() -> AgentStatusStateType:
+    return "DISABLED"
 ```
 
 - [AgentStatusStateType](./literals.md#agentstatusstatetype)
@@ -377,18 +194,22 @@ from mypy_boto3_connect.literals import AgentStatusStateType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_connect.type_defs import AgentInfoTypeDef
 
-```python
-from mypy_boto3_connect.type_defs import AgentInfoTypeDef, ...
+def get_value() -> AgentInfoTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
 - [AgentInfoTypeDef](./type_defs.md#agentinfotypedef)
@@ -509,6 +330,7 @@ from mypy_boto3_connect.type_defs import AgentInfoTypeDef, ...
 - [GetCurrentMetricDataResponseTypeDef](./type_defs.md#getcurrentmetricdataresponsetypedef)
 - [GetFederationTokenRequestRequestTypeDef](./type_defs.md#getfederationtokenrequestrequesttypedef)
 - [GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef)
+- [GetMetricDataRequestGetMetricDataPaginateTypeDef](./type_defs.md#getmetricdatarequestgetmetricdatapaginatetypedef)
 - [GetMetricDataRequestRequestTypeDef](./type_defs.md#getmetricdatarequestrequesttypedef)
 - [GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef)
 - [HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef)
@@ -536,60 +358,87 @@ from mypy_boto3_connect.type_defs import AgentInfoTypeDef, ...
 - [LexBotConfigTypeDef](./type_defs.md#lexbotconfigtypedef)
 - [LexBotTypeDef](./type_defs.md#lexbottypedef)
 - [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+- [ListAgentStatusRequestListAgentStatusesPaginateTypeDef](./type_defs.md#listagentstatusrequestlistagentstatusespaginatetypedef)
 - [ListAgentStatusRequestRequestTypeDef](./type_defs.md#listagentstatusrequestrequesttypedef)
 - [ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef)
+- [ListApprovedOriginsRequestListApprovedOriginsPaginateTypeDef](./type_defs.md#listapprovedoriginsrequestlistapprovedoriginspaginatetypedef)
 - [ListApprovedOriginsRequestRequestTypeDef](./type_defs.md#listapprovedoriginsrequestrequesttypedef)
 - [ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef)
+- [ListBotsRequestListBotsPaginateTypeDef](./type_defs.md#listbotsrequestlistbotspaginatetypedef)
 - [ListBotsRequestRequestTypeDef](./type_defs.md#listbotsrequestrequesttypedef)
 - [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef)
+- [ListContactFlowModulesRequestListContactFlowModulesPaginateTypeDef](./type_defs.md#listcontactflowmodulesrequestlistcontactflowmodulespaginatetypedef)
 - [ListContactFlowModulesRequestRequestTypeDef](./type_defs.md#listcontactflowmodulesrequestrequesttypedef)
 - [ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef)
+- [ListContactFlowsRequestListContactFlowsPaginateTypeDef](./type_defs.md#listcontactflowsrequestlistcontactflowspaginatetypedef)
 - [ListContactFlowsRequestRequestTypeDef](./type_defs.md#listcontactflowsrequestrequesttypedef)
 - [ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef)
+- [ListContactReferencesRequestListContactReferencesPaginateTypeDef](./type_defs.md#listcontactreferencesrequestlistcontactreferencespaginatetypedef)
 - [ListContactReferencesRequestRequestTypeDef](./type_defs.md#listcontactreferencesrequestrequesttypedef)
 - [ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef)
+- [ListDefaultVocabulariesRequestListDefaultVocabulariesPaginateTypeDef](./type_defs.md#listdefaultvocabulariesrequestlistdefaultvocabulariespaginatetypedef)
 - [ListDefaultVocabulariesRequestRequestTypeDef](./type_defs.md#listdefaultvocabulariesrequestrequesttypedef)
 - [ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef)
+- [ListHoursOfOperationsRequestListHoursOfOperationsPaginateTypeDef](./type_defs.md#listhoursofoperationsrequestlisthoursofoperationspaginatetypedef)
 - [ListHoursOfOperationsRequestRequestTypeDef](./type_defs.md#listhoursofoperationsrequestrequesttypedef)
 - [ListHoursOfOperationsResponseTypeDef](./type_defs.md#listhoursofoperationsresponsetypedef)
+- [ListInstanceAttributesRequestListInstanceAttributesPaginateTypeDef](./type_defs.md#listinstanceattributesrequestlistinstanceattributespaginatetypedef)
 - [ListInstanceAttributesRequestRequestTypeDef](./type_defs.md#listinstanceattributesrequestrequesttypedef)
 - [ListInstanceAttributesResponseTypeDef](./type_defs.md#listinstanceattributesresponsetypedef)
+- [ListInstanceStorageConfigsRequestListInstanceStorageConfigsPaginateTypeDef](./type_defs.md#listinstancestorageconfigsrequestlistinstancestorageconfigspaginatetypedef)
 - [ListInstanceStorageConfigsRequestRequestTypeDef](./type_defs.md#listinstancestorageconfigsrequestrequesttypedef)
 - [ListInstanceStorageConfigsResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponsetypedef)
+- [ListInstancesRequestListInstancesPaginateTypeDef](./type_defs.md#listinstancesrequestlistinstancespaginatetypedef)
 - [ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef)
 - [ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)
+- [ListIntegrationAssociationsRequestListIntegrationAssociationsPaginateTypeDef](./type_defs.md#listintegrationassociationsrequestlistintegrationassociationspaginatetypedef)
 - [ListIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listintegrationassociationsrequestrequesttypedef)
 - [ListIntegrationAssociationsResponseTypeDef](./type_defs.md#listintegrationassociationsresponsetypedef)
+- [ListLambdaFunctionsRequestListLambdaFunctionsPaginateTypeDef](./type_defs.md#listlambdafunctionsrequestlistlambdafunctionspaginatetypedef)
 - [ListLambdaFunctionsRequestRequestTypeDef](./type_defs.md#listlambdafunctionsrequestrequesttypedef)
 - [ListLambdaFunctionsResponseTypeDef](./type_defs.md#listlambdafunctionsresponsetypedef)
+- [ListLexBotsRequestListLexBotsPaginateTypeDef](./type_defs.md#listlexbotsrequestlistlexbotspaginatetypedef)
 - [ListLexBotsRequestRequestTypeDef](./type_defs.md#listlexbotsrequestrequesttypedef)
 - [ListLexBotsResponseTypeDef](./type_defs.md#listlexbotsresponsetypedef)
+- [ListPhoneNumbersRequestListPhoneNumbersPaginateTypeDef](./type_defs.md#listphonenumbersrequestlistphonenumberspaginatetypedef)
 - [ListPhoneNumbersRequestRequestTypeDef](./type_defs.md#listphonenumbersrequestrequesttypedef)
 - [ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef)
+- [ListPromptsRequestListPromptsPaginateTypeDef](./type_defs.md#listpromptsrequestlistpromptspaginatetypedef)
 - [ListPromptsRequestRequestTypeDef](./type_defs.md#listpromptsrequestrequesttypedef)
 - [ListPromptsResponseTypeDef](./type_defs.md#listpromptsresponsetypedef)
+- [ListQueueQuickConnectsRequestListQueueQuickConnectsPaginateTypeDef](./type_defs.md#listqueuequickconnectsrequestlistqueuequickconnectspaginatetypedef)
 - [ListQueueQuickConnectsRequestRequestTypeDef](./type_defs.md#listqueuequickconnectsrequestrequesttypedef)
 - [ListQueueQuickConnectsResponseTypeDef](./type_defs.md#listqueuequickconnectsresponsetypedef)
+- [ListQueuesRequestListQueuesPaginateTypeDef](./type_defs.md#listqueuesrequestlistqueuespaginatetypedef)
 - [ListQueuesRequestRequestTypeDef](./type_defs.md#listqueuesrequestrequesttypedef)
 - [ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef)
+- [ListQuickConnectsRequestListQuickConnectsPaginateTypeDef](./type_defs.md#listquickconnectsrequestlistquickconnectspaginatetypedef)
 - [ListQuickConnectsRequestRequestTypeDef](./type_defs.md#listquickconnectsrequestrequesttypedef)
 - [ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef)
+- [ListRoutingProfileQueuesRequestListRoutingProfileQueuesPaginateTypeDef](./type_defs.md#listroutingprofilequeuesrequestlistroutingprofilequeuespaginatetypedef)
 - [ListRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#listroutingprofilequeuesrequestrequesttypedef)
 - [ListRoutingProfileQueuesResponseTypeDef](./type_defs.md#listroutingprofilequeuesresponsetypedef)
+- [ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef](./type_defs.md#listroutingprofilesrequestlistroutingprofilespaginatetypedef)
 - [ListRoutingProfilesRequestRequestTypeDef](./type_defs.md#listroutingprofilesrequestrequesttypedef)
 - [ListRoutingProfilesResponseTypeDef](./type_defs.md#listroutingprofilesresponsetypedef)
+- [ListSecurityKeysRequestListSecurityKeysPaginateTypeDef](./type_defs.md#listsecuritykeysrequestlistsecuritykeyspaginatetypedef)
 - [ListSecurityKeysRequestRequestTypeDef](./type_defs.md#listsecuritykeysrequestrequesttypedef)
 - [ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef)
+- [ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef](./type_defs.md#listsecurityprofilepermissionsrequestlistsecurityprofilepermissionspaginatetypedef)
 - [ListSecurityProfilePermissionsRequestRequestTypeDef](./type_defs.md#listsecurityprofilepermissionsrequestrequesttypedef)
 - [ListSecurityProfilePermissionsResponseTypeDef](./type_defs.md#listsecurityprofilepermissionsresponsetypedef)
+- [ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef](./type_defs.md#listsecurityprofilesrequestlistsecurityprofilespaginatetypedef)
 - [ListSecurityProfilesRequestRequestTypeDef](./type_defs.md#listsecurityprofilesrequestrequesttypedef)
 - [ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListUseCasesRequestListUseCasesPaginateTypeDef](./type_defs.md#listusecasesrequestlistusecasespaginatetypedef)
 - [ListUseCasesRequestRequestTypeDef](./type_defs.md#listusecasesrequestrequesttypedef)
 - [ListUseCasesResponseTypeDef](./type_defs.md#listusecasesresponsetypedef)
+- [ListUserHierarchyGroupsRequestListUserHierarchyGroupsPaginateTypeDef](./type_defs.md#listuserhierarchygroupsrequestlistuserhierarchygroupspaginatetypedef)
 - [ListUserHierarchyGroupsRequestRequestTypeDef](./type_defs.md#listuserhierarchygroupsrequestrequesttypedef)
 - [ListUserHierarchyGroupsResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponsetypedef)
+- [ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef)
 - [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
 - [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
 - [MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)
@@ -618,6 +467,7 @@ from mypy_boto3_connect.type_defs import AgentInfoTypeDef, ...
 - [RoutingProfileTypeDef](./type_defs.md#routingprofiletypedef)
 - [S3ConfigTypeDef](./type_defs.md#s3configtypedef)
 - [SearchVocabulariesRequestRequestTypeDef](./type_defs.md#searchvocabulariesrequestrequesttypedef)
+- [SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef](./type_defs.md#searchvocabulariesrequestsearchvocabulariespaginatetypedef)
 - [SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef)
 - [SecurityKeyTypeDef](./type_defs.md#securitykeytypedef)
 - [SecurityProfileSummaryTypeDef](./type_defs.md#securityprofilesummarytypedef)
@@ -679,3 +529,4 @@ from mypy_boto3_connect.type_defs import AgentInfoTypeDef, ...
 - [VocabularySummaryTypeDef](./type_defs.md#vocabularysummarytypedef)
 - [VocabularyTypeDef](./type_defs.md#vocabularytypedef)
 - [VoiceRecordingConfigurationTypeDef](./type_defs.md#voicerecordingconfigurationtypedef)
+

@@ -1,83 +1,18 @@
-<a id="organizationsclient-for-boto3-organizations-module"></a>
-
-# OrganizationsClient for boto3 Organizations module
+# OrganizationsClient
 
 > [Index](../README.md) > [Organizations](./README.md) > OrganizationsClient
 
-Auto-generated documentation for
-[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
-type annotations stubs module
-[mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
+!!! note ""
 
-- [OrganizationsClient for boto3 Organizations module](#organizationsclient-for-boto3-organizations-module)
-  - [OrganizationsClient](#organizationsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_handshake](#accept_handshake)
-    - [attach_policy](#attach_policy)
-    - [can_paginate](#can_paginate)
-    - [cancel_handshake](#cancel_handshake)
-    - [create_account](#create_account)
-    - [create_gov_cloud_account](#create_gov_cloud_account)
-    - [create_organization](#create_organization)
-    - [create_organizational_unit](#create_organizational_unit)
-    - [create_policy](#create_policy)
-    - [decline_handshake](#decline_handshake)
-    - [delete_organization](#delete_organization)
-    - [delete_organizational_unit](#delete_organizational_unit)
-    - [delete_policy](#delete_policy)
-    - [deregister_delegated_administrator](#deregister_delegated_administrator)
-    - [describe_account](#describe_account)
-    - [describe_create_account_status](#describe_create_account_status)
-    - [describe_effective_policy](#describe_effective_policy)
-    - [describe_handshake](#describe_handshake)
-    - [describe_organization](#describe_organization)
-    - [describe_organizational_unit](#describe_organizational_unit)
-    - [describe_policy](#describe_policy)
-    - [detach_policy](#detach_policy)
-    - [disable_aws_service_access](#disable_aws_service_access)
-    - [disable_policy_type](#disable_policy_type)
-    - [enable_all_features](#enable_all_features)
-    - [enable_aws_service_access](#enable_aws_service_access)
-    - [enable_policy_type](#enable_policy_type)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [invite_account_to_organization](#invite_account_to_organization)
-    - [leave_organization](#leave_organization)
-    - [list_accounts](#list_accounts)
-    - [list_accounts_for_parent](#list_accounts_for_parent)
-    - [list_aws_service_access_for_organization](#list_aws_service_access_for_organization)
-    - [list_children](#list_children)
-    - [list_create_account_status](#list_create_account_status)
-    - [list_delegated_administrators](#list_delegated_administrators)
-    - [list_delegated_services_for_account](#list_delegated_services_for_account)
-    - [list_handshakes_for_account](#list_handshakes_for_account)
-    - [list_handshakes_for_organization](#list_handshakes_for_organization)
-    - [list_organizational_units_for_parent](#list_organizational_units_for_parent)
-    - [list_parents](#list_parents)
-    - [list_policies](#list_policies)
-    - [list_policies_for_target](#list_policies_for_target)
-    - [list_roots](#list_roots)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_targets_for_policy](#list_targets_for_policy)
-    - [move_account](#move_account)
-    - [register_delegated_administrator](#register_delegated_administrator)
-    - [remove_account_from_organization](#remove_account_from_organization)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_organizational_unit](#update_organizational_unit)
-    - [update_policy](#update_policy)
-    - [get_paginator](#get_paginator)
-
-<a id="organizationsclient"></a>
+    Auto-generated documentation for [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+    type annotations stubs module [mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 ## OrganizationsClient
 
-Type annotations for `boto3.client("organizations")`
+Type annotations and code completion for `#!python boto3.client("organizations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_organizations.client import OrganizationsClient
 
@@ -85,1283 +20,1670 @@ def get_organizations_client() -> OrganizationsClient:
     return Session().client("organizations")
 ```
 
-Boto3 documentation:
-[Organizations.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("organizations").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("organizations")
+
+try:
+    do_something(client)
+except (
+    client.AWSOrganizationsNotInUseException,
+    client.AccessDeniedException,
+    client.AccessDeniedForDependencyException,
+    client.AccountAlreadyRegisteredException,
+    client.AccountNotFoundException,
+    client.AccountNotRegisteredException,
+    client.AccountOwnerNotVerifiedException,
+    client.AlreadyInOrganizationException,
+    client.ChildNotFoundException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.ConstraintViolationException,
+    client.CreateAccountStatusNotFoundException,
+    client.DestinationParentNotFoundException,
+    client.DuplicateAccountException,
+    client.DuplicateHandshakeException,
+    client.DuplicateOrganizationalUnitException,
+    client.DuplicatePolicyAttachmentException,
+    client.DuplicatePolicyException,
+    client.EffectivePolicyNotFoundException,
+    client.FinalizingOrganizationException,
+    client.HandshakeAlreadyInStateException,
+    client.HandshakeConstraintViolationException,
+    client.HandshakeNotFoundException,
+    client.InvalidHandshakeTransitionException,
+    client.InvalidInputException,
+    client.MalformedPolicyDocumentException,
+    client.MasterCannotLeaveOrganizationException,
+    client.OrganizationNotEmptyException,
+    client.OrganizationalUnitNotEmptyException,
+    client.OrganizationalUnitNotFoundException,
+    client.ParentNotFoundException,
+    client.PolicyChangesInProgressException,
+    client.PolicyInUseException,
+    client.PolicyNotAttachedException,
+    client.PolicyNotFoundException,
+    client.PolicyTypeAlreadyEnabledException,
+    client.PolicyTypeNotAvailableForOrganizationException,
+    client.PolicyTypeNotEnabledException,
+    client.RootNotFoundException,
+    client.ServiceException,
+    client.SourceParentNotFoundException,
+    client.TargetNotFoundException,
+    client.TooManyRequestsException,
+    client.UnsupportedAPIEndpointException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_organizations.client import Exceptions
 
 def handle_error(exc: Exceptions.AWSOrganizationsNotInUseException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AWSOrganizationsNotInUseException`
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AccessDeniedForDependencyException`
-- `Exceptions.AccountAlreadyRegisteredException`
-- `Exceptions.AccountNotFoundException`
-- `Exceptions.AccountNotRegisteredException`
-- `Exceptions.AccountOwnerNotVerifiedException`
-- `Exceptions.AlreadyInOrganizationException`
-- `Exceptions.ChildNotFoundException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.ConstraintViolationException`
-- `Exceptions.CreateAccountStatusNotFoundException`
-- `Exceptions.DestinationParentNotFoundException`
-- `Exceptions.DuplicateAccountException`
-- `Exceptions.DuplicateHandshakeException`
-- `Exceptions.DuplicateOrganizationalUnitException`
-- `Exceptions.DuplicatePolicyAttachmentException`
-- `Exceptions.DuplicatePolicyException`
-- `Exceptions.EffectivePolicyNotFoundException`
-- `Exceptions.FinalizingOrganizationException`
-- `Exceptions.HandshakeAlreadyInStateException`
-- `Exceptions.HandshakeConstraintViolationException`
-- `Exceptions.HandshakeNotFoundException`
-- `Exceptions.InvalidHandshakeTransitionException`
-- `Exceptions.InvalidInputException`
-- `Exceptions.MalformedPolicyDocumentException`
-- `Exceptions.MasterCannotLeaveOrganizationException`
-- `Exceptions.OrganizationNotEmptyException`
-- `Exceptions.OrganizationalUnitNotEmptyException`
-- `Exceptions.OrganizationalUnitNotFoundException`
-- `Exceptions.ParentNotFoundException`
-- `Exceptions.PolicyChangesInProgressException`
-- `Exceptions.PolicyInUseException`
-- `Exceptions.PolicyNotAttachedException`
-- `Exceptions.PolicyNotFoundException`
-- `Exceptions.PolicyTypeAlreadyEnabledException`
-- `Exceptions.PolicyTypeNotAvailableForOrganizationException`
-- `Exceptions.PolicyTypeNotEnabledException`
-- `Exceptions.RootNotFoundException`
-- `Exceptions.ServiceException`
-- `Exceptions.SourceParentNotFoundException`
-- `Exceptions.TargetNotFoundException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnsupportedAPIEndpointException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-OrganizationsClient exceptions.
-
-Type annotations for `boto3.client("organizations").exceptions` method.
-
-Boto3 documentation:
-[Organizations.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_handshake"></a>
-
-### accept_handshake
+### accept\_handshake
 
 Sends a response to the originator of a handshake agreeing to the action
 proposed by the handshake request.
 
-Type annotations for `boto3.client("organizations").accept_handshake` method.
+Type annotations and code completion for `#!python boto3.client("organizations").accept_handshake` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake)
 
-Boto3 documentation:
-[Organizations.Client.accept_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.accept_handshake)
+```python title="Method definition"
+def accept_handshake(
+    self,
+    *,
+    HandshakeId: str,
+) -> AcceptHandshakeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AcceptHandshakeRequestRequestTypeDef](./type_defs.md#accepthandshakerequestrequesttypedef).
+1. See [:material-code-braces: AcceptHandshakeResponseTypeDef](./type_defs.md#accepthandshakeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HandshakeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptHandshakeRequestRequestTypeDef = {  # (1)
+    "HandshakeId": ...,
+}
 
-Returns
-[AcceptHandshakeResponseTypeDef](./type_defs.md#accepthandshakeresponsetypedef).
+parent.accept_handshake(**kwargs)
+```
 
-<a id="attach\_policy"></a>
+1. See [:material-code-braces: AcceptHandshakeRequestRequestTypeDef](./type_defs.md#accepthandshakerequestrequesttypedef) 
 
-### attach_policy
+### attach\_policy
 
 Attaches a policy to a root, an organizational unit (OU), or an individual
 account.
 
-Type annotations for `boto3.client("organizations").attach_policy` method.
+Type annotations and code completion for `#!python boto3.client("organizations").attach_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy)
 
-Boto3 documentation:
-[Organizations.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.attach_policy)
+```python title="Method definition"
+def attach_policy(
+    self,
+    *,
+    PolicyId: str,
+    TargetId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AttachPolicyRequestRequestTypeDef](./type_defs.md#attachpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `TargetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+    "TargetId": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.attach_policy(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AttachPolicyRequestRequestTypeDef](./type_defs.md#attachpolicyrequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("organizations").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("organizations").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.can_paginate)
 
-Boto3 documentation:
-[Organizations.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_handshake"></a>
-
-### cancel_handshake
+### cancel\_handshake
 
 Cancels a handshake.
 
-Type annotations for `boto3.client("organizations").cancel_handshake` method.
+Type annotations and code completion for `#!python boto3.client("organizations").cancel_handshake` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake)
 
-Boto3 documentation:
-[Organizations.Client.cancel_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.cancel_handshake)
+```python title="Method definition"
+def cancel_handshake(
+    self,
+    *,
+    HandshakeId: str,
+) -> CancelHandshakeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelHandshakeRequestRequestTypeDef](./type_defs.md#cancelhandshakerequestrequesttypedef).
+1. See [:material-code-braces: CancelHandshakeResponseTypeDef](./type_defs.md#cancelhandshakeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HandshakeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelHandshakeRequestRequestTypeDef = {  # (1)
+    "HandshakeId": ...,
+}
 
-Returns
-[CancelHandshakeResponseTypeDef](./type_defs.md#cancelhandshakeresponsetypedef).
+parent.cancel_handshake(**kwargs)
+```
 
-<a id="create\_account"></a>
+1. See [:material-code-braces: CancelHandshakeRequestRequestTypeDef](./type_defs.md#cancelhandshakerequestrequesttypedef) 
 
-### create_account
+### create\_account
 
 Creates an AWS account that is automatically a member of the organization whose
 credentials made the request.
 
-Type annotations for `boto3.client("organizations").create_account` method.
+Type annotations and code completion for `#!python boto3.client("organizations").create_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account)
 
-Boto3 documentation:
-[Organizations.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_account)
+```python title="Method definition"
+def create_account(
+    self,
+    *,
+    Email: str,
+    AccountName: str,
+    RoleName: str = ...,
+    IamUserAccessToBilling: IAMUserAccessToBillingType = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateAccountResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAccountRequestRequestTypeDef](./type_defs.md#createaccountrequestrequesttypedef).
+1. See [:material-code-brackets: IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Email`: `str` *(required)*
-- `AccountName`: `str` *(required)*
-- `RoleName`: `str`
-- `IamUserAccessToBilling`:
-  [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAccountRequestRequestTypeDef = {  # (1)
+    "Email": ...,
+    "AccountName": ...,
+}
 
-Returns
-[CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
+parent.create_account(**kwargs)
+```
 
-<a id="create\_gov\_cloud\_account"></a>
+1. See [:material-code-braces: CreateAccountRequestRequestTypeDef](./type_defs.md#createaccountrequestrequesttypedef) 
 
-### create_gov_cloud_account
+### create\_gov\_cloud\_account
 
-This action is available if all of the following are true * You're authorized
-to create accounts in the AWS GovCloud (US) Region.
+This action is available if all of the following are true * You're authorized to
+create accounts in the AWS GovCloud (US) Region.
 
-Type annotations for `boto3.client("organizations").create_gov_cloud_account`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").create_gov_cloud_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
 
-Boto3 documentation:
-[Organizations.Client.create_gov_cloud_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_gov_cloud_account)
+```python title="Method definition"
+def create_gov_cloud_account(
+    self,
+    *,
+    Email: str,
+    AccountName: str,
+    RoleName: str = ...,
+    IamUserAccessToBilling: IAMUserAccessToBillingType = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateGovCloudAccountResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateGovCloudAccountRequestRequestTypeDef](./type_defs.md#creategovcloudaccountrequestrequesttypedef).
+1. See [:material-code-brackets: IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateGovCloudAccountResponseTypeDef](./type_defs.md#creategovcloudaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Email`: `str` *(required)*
-- `AccountName`: `str` *(required)*
-- `RoleName`: `str`
-- `IamUserAccessToBilling`:
-  [IAMUserAccessToBillingType](./literals.md#iamuseraccesstobillingtype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateGovCloudAccountRequestRequestTypeDef = {  # (1)
+    "Email": ...,
+    "AccountName": ...,
+}
 
-Returns
-[CreateGovCloudAccountResponseTypeDef](./type_defs.md#creategovcloudaccountresponsetypedef).
+parent.create_gov_cloud_account(**kwargs)
+```
 
-<a id="create\_organization"></a>
+1. See [:material-code-braces: CreateGovCloudAccountRequestRequestTypeDef](./type_defs.md#creategovcloudaccountrequestrequesttypedef) 
 
-### create_organization
+### create\_organization
 
 Creates an AWS organization.
 
-Type annotations for `boto3.client("organizations").create_organization`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").create_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization)
 
-Boto3 documentation:
-[Organizations.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organization)
+```python title="Method definition"
+def create_organization(
+    self,
+    *,
+    FeatureSet: OrganizationFeatureSetType = ...,  # (1)
+) -> CreateOrganizationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateOrganizationRequestRequestTypeDef](./type_defs.md#createorganizationrequestrequesttypedef).
+1. See [:material-code-brackets: OrganizationFeatureSetType](./literals.md#organizationfeaturesettype) 
+2. See [:material-code-braces: CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FeatureSet`:
-  [OrganizationFeatureSetType](./literals.md#organizationfeaturesettype)
+```python title="Usage example with kwargs"
+kwargs: CreateOrganizationRequestRequestTypeDef = {  # (1)
+    "FeatureSet": ...,
+}
 
-Returns
-[CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef).
+parent.create_organization(**kwargs)
+```
 
-<a id="create\_organizational\_unit"></a>
+1. See [:material-code-braces: CreateOrganizationRequestRequestTypeDef](./type_defs.md#createorganizationrequestrequesttypedef) 
 
-### create_organizational_unit
+### create\_organizational\_unit
 
 Creates an organizational unit (OU) within a root or parent OU.
 
-Type annotations for `boto3.client("organizations").create_organizational_unit`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").create_organizational_unit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit)
 
-Boto3 documentation:
-[Organizations.Client.create_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_organizational_unit)
+```python title="Method definition"
+def create_organizational_unit(
+    self,
+    *,
+    ParentId: str,
+    Name: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateOrganizationalUnitResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateOrganizationalUnitRequestRequestTypeDef](./type_defs.md#createorganizationalunitrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateOrganizationalUnitResponseTypeDef](./type_defs.md#createorganizationalunitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParentId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateOrganizationalUnitRequestRequestTypeDef = {  # (1)
+    "ParentId": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateOrganizationalUnitResponseTypeDef](./type_defs.md#createorganizationalunitresponsetypedef).
+parent.create_organizational_unit(**kwargs)
+```
 
-<a id="create\_policy"></a>
+1. See [:material-code-braces: CreateOrganizationalUnitRequestRequestTypeDef](./type_defs.md#createorganizationalunitrequestrequesttypedef) 
 
-### create_policy
+### create\_policy
 
 Creates a policy of a specified type that you can attach to a root, an
 organizational unit (OU), or an individual AWS account.
 
-Type annotations for `boto3.client("organizations").create_policy` method.
+Type annotations and code completion for `#!python boto3.client("organizations").create_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy)
 
-Boto3 documentation:
-[Organizations.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.create_policy)
+```python title="Method definition"
+def create_policy(
+    self,
+    *,
+    Content: str,
+    Description: str,
+    Name: str,
+    Type: PolicyTypeType,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreatePolicyResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePolicyRequestRequestTypeDef](./type_defs.md#createpolicyrequestrequesttypedef).
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Content`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Type`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePolicyRequestRequestTypeDef = {  # (1)
+    "Content": ...,
+    "Description": ...,
+    "Name": ...,
+    "Type": ...,
+}
 
-Returns
-[CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
+parent.create_policy(**kwargs)
+```
 
-<a id="decline\_handshake"></a>
+1. See [:material-code-braces: CreatePolicyRequestRequestTypeDef](./type_defs.md#createpolicyrequestrequesttypedef) 
 
-### decline_handshake
+### decline\_handshake
 
 Declines a handshake request.
 
-Type annotations for `boto3.client("organizations").decline_handshake` method.
+Type annotations and code completion for `#!python boto3.client("organizations").decline_handshake` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake)
 
-Boto3 documentation:
-[Organizations.Client.decline_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.decline_handshake)
+```python title="Method definition"
+def decline_handshake(
+    self,
+    *,
+    HandshakeId: str,
+) -> DeclineHandshakeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeclineHandshakeRequestRequestTypeDef](./type_defs.md#declinehandshakerequestrequesttypedef).
+1. See [:material-code-braces: DeclineHandshakeResponseTypeDef](./type_defs.md#declinehandshakeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HandshakeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeclineHandshakeRequestRequestTypeDef = {  # (1)
+    "HandshakeId": ...,
+}
 
-Returns
-[DeclineHandshakeResponseTypeDef](./type_defs.md#declinehandshakeresponsetypedef).
+parent.decline_handshake(**kwargs)
+```
 
-<a id="delete\_organization"></a>
+1. See [:material-code-braces: DeclineHandshakeRequestRequestTypeDef](./type_defs.md#declinehandshakerequestrequesttypedef) 
 
-### delete_organization
+### delete\_organization
 
 Deletes the organization.
 
-Type annotations for `boto3.client("organizations").delete_organization`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").delete_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organization)
 
-Boto3 documentation:
-[Organizations.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organization)
+```python title="Method definition"
+def delete_organization(
+    self,
+) -> None:
+    ...
+```
 
-<a id="delete\_organizational\_unit"></a>
 
-### delete_organizational_unit
+### delete\_organizational\_unit
 
 Deletes an organizational unit (OU) from a root or another OU.
 
-Type annotations for `boto3.client("organizations").delete_organizational_unit`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").delete_organizational_unit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit)
 
-Boto3 documentation:
-[Organizations.Client.delete_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organizational_unit)
+```python title="Method definition"
+def delete_organizational_unit(
+    self,
+    *,
+    OrganizationalUnitId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteOrganizationalUnitRequestRequestTypeDef](./type_defs.md#deleteorganizationalunitrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationalUnitId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteOrganizationalUnitRequestRequestTypeDef = {  # (1)
+    "OrganizationalUnitId": ...,
+}
 
-<a id="delete\_policy"></a>
+parent.delete_organizational_unit(**kwargs)
+```
 
-### delete_policy
+1. See [:material-code-braces: DeleteOrganizationalUnitRequestRequestTypeDef](./type_defs.md#deleteorganizationalunitrequestrequesttypedef) 
+
+### delete\_policy
 
 Deletes the specified policy from your organization.
 
-Type annotations for `boto3.client("organizations").delete_policy` method.
+Type annotations and code completion for `#!python boto3.client("organizations").delete_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy)
 
-Boto3 documentation:
-[Organizations.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_policy)
+```python title="Method definition"
+def delete_policy(
+    self,
+    *,
+    PolicyId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-<a id="deregister\_delegated\_administrator"></a>
+parent.delete_policy(**kwargs)
+```
 
-### deregister_delegated_administrator
+1. See [:material-code-braces: DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef) 
+
+### deregister\_delegated\_administrator
 
 Removes the specified member AWS account as a delegated administrator for the
 specified AWS service.
 
-Type annotations for
-`boto3.client("organizations").deregister_delegated_administrator` method.
+Type annotations and code completion for `#!python boto3.client("organizations").deregister_delegated_administrator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
 
-Boto3 documentation:
-[Organizations.Client.deregister_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.deregister_delegated_administrator)
+```python title="Method definition"
+def deregister_delegated_administrator(
+    self,
+    *,
+    AccountId: str,
+    ServicePrincipal: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterDelegatedAdministratorRequestRequestTypeDef](./type_defs.md#deregisterdelegatedadministratorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `ServicePrincipal`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterDelegatedAdministratorRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "ServicePrincipal": ...,
+}
 
-<a id="describe\_account"></a>
+parent.deregister_delegated_administrator(**kwargs)
+```
 
-### describe_account
+1. See [:material-code-braces: DeregisterDelegatedAdministratorRequestRequestTypeDef](./type_defs.md#deregisterdelegatedadministratorrequestrequesttypedef) 
+
+### describe\_account
 
 Retrieves AWS Organizations-related information about the specified account.
 
-Type annotations for `boto3.client("organizations").describe_account` method.
+Type annotations and code completion for `#!python boto3.client("organizations").describe_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account)
 
-Boto3 documentation:
-[Organizations.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_account)
+```python title="Method definition"
+def describe_account(
+    self,
+    *,
+    AccountId: str,
+) -> DescribeAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccountRequestRequestTypeDef](./type_defs.md#describeaccountrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAccountResponseTypeDef](./type_defs.md#describeaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[DescribeAccountResponseTypeDef](./type_defs.md#describeaccountresponsetypedef).
+parent.describe_account(**kwargs)
+```
 
-<a id="describe\_create\_account\_status"></a>
+1. See [:material-code-braces: DescribeAccountRequestRequestTypeDef](./type_defs.md#describeaccountrequestrequesttypedef) 
 
-### describe_create_account_status
+### describe\_create\_account\_status
 
 Retrieves the current status of an asynchronous request to create an account.
 
-Type annotations for
-`boto3.client("organizations").describe_create_account_status` method.
+Type annotations and code completion for `#!python boto3.client("organizations").describe_create_account_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status)
 
-Boto3 documentation:
-[Organizations.Client.describe_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_create_account_status)
+```python title="Method definition"
+def describe_create_account_status(
+    self,
+    *,
+    CreateAccountRequestId: str,
+) -> DescribeCreateAccountStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCreateAccountStatusRequestRequestTypeDef](./type_defs.md#describecreateaccountstatusrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCreateAccountStatusResponseTypeDef](./type_defs.md#describecreateaccountstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CreateAccountRequestId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCreateAccountStatusRequestRequestTypeDef = {  # (1)
+    "CreateAccountRequestId": ...,
+}
 
-Returns
-[DescribeCreateAccountStatusResponseTypeDef](./type_defs.md#describecreateaccountstatusresponsetypedef).
+parent.describe_create_account_status(**kwargs)
+```
 
-<a id="describe\_effective\_policy"></a>
+1. See [:material-code-braces: DescribeCreateAccountStatusRequestRequestTypeDef](./type_defs.md#describecreateaccountstatusrequestrequesttypedef) 
 
-### describe_effective_policy
+### describe\_effective\_policy
 
 Returns the contents of the effective policy for specified policy type and
 account.
 
-Type annotations for `boto3.client("organizations").describe_effective_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").describe_effective_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy)
 
-Boto3 documentation:
-[Organizations.Client.describe_effective_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_effective_policy)
+```python title="Method definition"
+def describe_effective_policy(
+    self,
+    *,
+    PolicyType: EffectivePolicyTypeType,  # (1)
+    TargetId: str = ...,
+) -> DescribeEffectivePolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEffectivePolicyRequestRequestTypeDef](./type_defs.md#describeeffectivepolicyrequestrequesttypedef).
+1. See [:material-code-brackets: EffectivePolicyTypeType](./literals.md#effectivepolicytypetype) 
+2. See [:material-code-braces: DescribeEffectivePolicyResponseTypeDef](./type_defs.md#describeeffectivepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyType`:
-  [EffectivePolicyTypeType](./literals.md#effectivepolicytypetype) *(required)*
-- `TargetId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEffectivePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyType": ...,
+}
 
-Returns
-[DescribeEffectivePolicyResponseTypeDef](./type_defs.md#describeeffectivepolicyresponsetypedef).
+parent.describe_effective_policy(**kwargs)
+```
 
-<a id="describe\_handshake"></a>
+1. See [:material-code-braces: DescribeEffectivePolicyRequestRequestTypeDef](./type_defs.md#describeeffectivepolicyrequestrequesttypedef) 
 
-### describe_handshake
+### describe\_handshake
 
 Retrieves information about a previously requested handshake.
 
-Type annotations for `boto3.client("organizations").describe_handshake` method.
+Type annotations and code completion for `#!python boto3.client("organizations").describe_handshake` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake)
 
-Boto3 documentation:
-[Organizations.Client.describe_handshake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_handshake)
+```python title="Method definition"
+def describe_handshake(
+    self,
+    *,
+    HandshakeId: str,
+) -> DescribeHandshakeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeHandshakeRequestRequestTypeDef](./type_defs.md#describehandshakerequestrequesttypedef).
+1. See [:material-code-braces: DescribeHandshakeResponseTypeDef](./type_defs.md#describehandshakeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HandshakeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeHandshakeRequestRequestTypeDef = {  # (1)
+    "HandshakeId": ...,
+}
 
-Returns
-[DescribeHandshakeResponseTypeDef](./type_defs.md#describehandshakeresponsetypedef).
+parent.describe_handshake(**kwargs)
+```
 
-<a id="describe\_organization"></a>
+1. See [:material-code-braces: DescribeHandshakeRequestRequestTypeDef](./type_defs.md#describehandshakerequestrequesttypedef) 
 
-### describe_organization
+### describe\_organization
 
-Retrieves information about the organization that the user's account belongs
-to.
+Retrieves information about the organization that the user's account belongs to.
 
-Type annotations for `boto3.client("organizations").describe_organization`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").describe_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organization)
 
-Boto3 documentation:
-[Organizations.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organization)
+```python title="Method definition"
+def describe_organization(
+    self,
+) -> DescribeOrganizationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef).
+1. See [:material-code-braces: DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef) 
 
-<a id="describe\_organizational\_unit"></a>
-
-### describe_organizational_unit
+### describe\_organizational\_unit
 
 Retrieves information about an organizational unit (OU).
 
-Type annotations for
-`boto3.client("organizations").describe_organizational_unit` method.
+Type annotations and code completion for `#!python boto3.client("organizations").describe_organizational_unit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit)
 
-Boto3 documentation:
-[Organizations.Client.describe_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_organizational_unit)
+```python title="Method definition"
+def describe_organizational_unit(
+    self,
+    *,
+    OrganizationalUnitId: str,
+) -> DescribeOrganizationalUnitResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOrganizationalUnitRequestRequestTypeDef](./type_defs.md#describeorganizationalunitrequestrequesttypedef).
+1. See [:material-code-braces: DescribeOrganizationalUnitResponseTypeDef](./type_defs.md#describeorganizationalunitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationalUnitId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeOrganizationalUnitRequestRequestTypeDef = {  # (1)
+    "OrganizationalUnitId": ...,
+}
 
-Returns
-[DescribeOrganizationalUnitResponseTypeDef](./type_defs.md#describeorganizationalunitresponsetypedef).
+parent.describe_organizational_unit(**kwargs)
+```
 
-<a id="describe\_policy"></a>
+1. See [:material-code-braces: DescribeOrganizationalUnitRequestRequestTypeDef](./type_defs.md#describeorganizationalunitrequestrequesttypedef) 
 
-### describe_policy
+### describe\_policy
 
 Retrieves information about a policy.
 
-Type annotations for `boto3.client("organizations").describe_policy` method.
+Type annotations and code completion for `#!python boto3.client("organizations").describe_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy)
 
-Boto3 documentation:
-[Organizations.Client.describe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.describe_policy)
+```python title="Method definition"
+def describe_policy(
+    self,
+    *,
+    PolicyId: str,
+) -> DescribePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePolicyRequestRequestTypeDef](./type_defs.md#describepolicyrequestrequesttypedef).
+1. See [:material-code-braces: DescribePolicyResponseTypeDef](./type_defs.md#describepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-Returns
-[DescribePolicyResponseTypeDef](./type_defs.md#describepolicyresponsetypedef).
+parent.describe_policy(**kwargs)
+```
 
-<a id="detach\_policy"></a>
+1. See [:material-code-braces: DescribePolicyRequestRequestTypeDef](./type_defs.md#describepolicyrequestrequesttypedef) 
 
-### detach_policy
+### detach\_policy
 
 Detaches a policy from a target root, organizational unit (OU), or account.
 
-Type annotations for `boto3.client("organizations").detach_policy` method.
+Type annotations and code completion for `#!python boto3.client("organizations").detach_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy)
 
-Boto3 documentation:
-[Organizations.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.detach_policy)
+```python title="Method definition"
+def detach_policy(
+    self,
+    *,
+    PolicyId: str,
+    TargetId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DetachPolicyRequestRequestTypeDef](./type_defs.md#detachpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `TargetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+    "TargetId": ...,
+}
 
-<a id="disable\_aws\_service\_access"></a>
+parent.detach_policy(**kwargs)
+```
 
-### disable_aws_service_access
+1. See [:material-code-braces: DetachPolicyRequestRequestTypeDef](./type_defs.md#detachpolicyrequestrequesttypedef) 
+
+### disable\_aws\_service\_access
 
 Disables the integration of an AWS service (the service that is specified by
 `ServicePrincipal` ) with AWS Organizations.
 
-Type annotations for `boto3.client("organizations").disable_aws_service_access`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").disable_aws_service_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
 
-Boto3 documentation:
-[Organizations.Client.disable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_aws_service_access)
+```python title="Method definition"
+def disable_aws_service_access(
+    self,
+    *,
+    ServicePrincipal: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisableAWSServiceAccessRequestRequestTypeDef](./type_defs.md#disableawsserviceaccessrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServicePrincipal`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableAWSServiceAccessRequestRequestTypeDef = {  # (1)
+    "ServicePrincipal": ...,
+}
 
-<a id="disable\_policy\_type"></a>
+parent.disable_aws_service_access(**kwargs)
+```
 
-### disable_policy_type
+1. See [:material-code-braces: DisableAWSServiceAccessRequestRequestTypeDef](./type_defs.md#disableawsserviceaccessrequestrequesttypedef) 
+
+### disable\_policy\_type
 
 Disables an organizational policy type in a root.
 
-Type annotations for `boto3.client("organizations").disable_policy_type`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").disable_policy_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type)
 
-Boto3 documentation:
-[Organizations.Client.disable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.disable_policy_type)
+```python title="Method definition"
+def disable_policy_type(
+    self,
+    *,
+    RootId: str,
+    PolicyType: PolicyTypeType,  # (1)
+) -> DisablePolicyTypeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DisablePolicyTypeRequestRequestTypeDef](./type_defs.md#disablepolicytyperequestrequesttypedef).
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-braces: DisablePolicyTypeResponseTypeDef](./type_defs.md#disablepolicytyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `RootId`: `str` *(required)*
-- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisablePolicyTypeRequestRequestTypeDef = {  # (1)
+    "RootId": ...,
+    "PolicyType": ...,
+}
 
-Returns
-[DisablePolicyTypeResponseTypeDef](./type_defs.md#disablepolicytyperesponsetypedef).
+parent.disable_policy_type(**kwargs)
+```
 
-<a id="enable\_all\_features"></a>
+1. See [:material-code-braces: DisablePolicyTypeRequestRequestTypeDef](./type_defs.md#disablepolicytyperequestrequesttypedef) 
 
-### enable_all_features
+### enable\_all\_features
 
 Enables all features in an organization.
 
-Type annotations for `boto3.client("organizations").enable_all_features`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").enable_all_features` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_all_features)
 
-Boto3 documentation:
-[Organizations.Client.enable_all_features](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_all_features)
+```python title="Method definition"
+def enable_all_features(
+    self,
+) -> EnableAllFeaturesResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[EnableAllFeaturesResponseTypeDef](./type_defs.md#enableallfeaturesresponsetypedef).
+1. See [:material-code-braces: EnableAllFeaturesResponseTypeDef](./type_defs.md#enableallfeaturesresponsetypedef) 
 
-<a id="enable\_aws\_service\_access"></a>
-
-### enable_aws_service_access
+### enable\_aws\_service\_access
 
 Enables the integration of an AWS service (the service that is specified by
 `ServicePrincipal` ) with AWS Organizations.
 
-Type annotations for `boto3.client("organizations").enable_aws_service_access`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").enable_aws_service_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
 
-Boto3 documentation:
-[Organizations.Client.enable_aws_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_aws_service_access)
+```python title="Method definition"
+def enable_aws_service_access(
+    self,
+    *,
+    ServicePrincipal: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[EnableAWSServiceAccessRequestRequestTypeDef](./type_defs.md#enableawsserviceaccessrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServicePrincipal`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableAWSServiceAccessRequestRequestTypeDef = {  # (1)
+    "ServicePrincipal": ...,
+}
 
-<a id="enable\_policy\_type"></a>
+parent.enable_aws_service_access(**kwargs)
+```
 
-### enable_policy_type
+1. See [:material-code-braces: EnableAWSServiceAccessRequestRequestTypeDef](./type_defs.md#enableawsserviceaccessrequestrequesttypedef) 
+
+### enable\_policy\_type
 
 Enables a policy type in a root.
 
-Type annotations for `boto3.client("organizations").enable_policy_type` method.
+Type annotations and code completion for `#!python boto3.client("organizations").enable_policy_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type)
 
-Boto3 documentation:
-[Organizations.Client.enable_policy_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.enable_policy_type)
+```python title="Method definition"
+def enable_policy_type(
+    self,
+    *,
+    RootId: str,
+    PolicyType: PolicyTypeType,  # (1)
+) -> EnablePolicyTypeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[EnablePolicyTypeRequestRequestTypeDef](./type_defs.md#enablepolicytyperequestrequesttypedef).
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-braces: EnablePolicyTypeResponseTypeDef](./type_defs.md#enablepolicytyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `RootId`: `str` *(required)*
-- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnablePolicyTypeRequestRequestTypeDef = {  # (1)
+    "RootId": ...,
+    "PolicyType": ...,
+}
 
-Returns
-[EnablePolicyTypeResponseTypeDef](./type_defs.md#enablepolicytyperesponsetypedef).
+parent.enable_policy_type(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnablePolicyTypeRequestRequestTypeDef](./type_defs.md#enablepolicytyperequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("organizations").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Organizations.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="invite\_account\_to\_organization"></a>
-
-### invite_account_to_organization
+### invite\_account\_to\_organization
 
 Sends an invitation to another account to join your organization as a member
 account.
 
-Type annotations for
-`boto3.client("organizations").invite_account_to_organization` method.
+Type annotations and code completion for `#!python boto3.client("organizations").invite_account_to_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization)
 
-Boto3 documentation:
-[Organizations.Client.invite_account_to_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.invite_account_to_organization)
+```python title="Method definition"
+def invite_account_to_organization(
+    self,
+    *,
+    Target: HandshakePartyTypeDef,  # (1)
+    Notes: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> InviteAccountToOrganizationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[InviteAccountToOrganizationRequestRequestTypeDef](./type_defs.md#inviteaccounttoorganizationrequestrequesttypedef).
+1. See [:material-code-braces: HandshakePartyTypeDef](./type_defs.md#handshakepartytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: InviteAccountToOrganizationResponseTypeDef](./type_defs.md#inviteaccounttoorganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Target`: [HandshakePartyTypeDef](./type_defs.md#handshakepartytypedef)
-  *(required)*
-- `Notes`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: InviteAccountToOrganizationRequestRequestTypeDef = {  # (1)
+    "Target": ...,
+}
 
-Returns
-[InviteAccountToOrganizationResponseTypeDef](./type_defs.md#inviteaccounttoorganizationresponsetypedef).
+parent.invite_account_to_organization(**kwargs)
+```
 
-<a id="leave\_organization"></a>
+1. See [:material-code-braces: InviteAccountToOrganizationRequestRequestTypeDef](./type_defs.md#inviteaccounttoorganizationrequestrequesttypedef) 
 
-### leave_organization
+### leave\_organization
 
 Removes a member account from its parent organization.
 
-Type annotations for `boto3.client("organizations").leave_organization` method.
+Type annotations and code completion for `#!python boto3.client("organizations").leave_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.leave_organization)
 
-Boto3 documentation:
-[Organizations.Client.leave_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.leave_organization)
+```python title="Method definition"
+def leave_organization(
+    self,
+) -> None:
+    ...
+```
 
-<a id="list\_accounts"></a>
 
-### list_accounts
+### list\_accounts
 
 Lists all the accounts in the organization.
 
-Type annotations for `boto3.client("organizations").list_accounts` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts)
 
-Boto3 documentation:
-[Organizations.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts)
+```python title="Method definition"
+def list_accounts(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccountsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
+parent.list_accounts(**kwargs)
+```
 
-<a id="list\_accounts\_for\_parent"></a>
+1. See [:material-code-braces: ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef) 
 
-### list_accounts_for_parent
+### list\_accounts\_for\_parent
 
-Lists the accounts in an organization that are contained by the specified
-target root or organizational unit (OU).
+Lists the accounts in an organization that are contained by the specified target
+root or organizational unit (OU).
 
-Type annotations for `boto3.client("organizations").list_accounts_for_parent`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_accounts_for_parent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent)
 
-Boto3 documentation:
-[Organizations.Client.list_accounts_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_accounts_for_parent)
+```python title="Method definition"
+def list_accounts_for_parent(
+    self,
+    *,
+    ParentId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAccountsForParentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountsForParentRequestRequestTypeDef](./type_defs.md#listaccountsforparentrequestrequesttypedef).
+1. See [:material-code-braces: ListAccountsForParentResponseTypeDef](./type_defs.md#listaccountsforparentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParentId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccountsForParentRequestRequestTypeDef = {  # (1)
+    "ParentId": ...,
+}
 
-Returns
-[ListAccountsForParentResponseTypeDef](./type_defs.md#listaccountsforparentresponsetypedef).
+parent.list_accounts_for_parent(**kwargs)
+```
 
-<a id="list\_aws\_service\_access\_for\_organization"></a>
+1. See [:material-code-braces: ListAccountsForParentRequestRequestTypeDef](./type_defs.md#listaccountsforparentrequestrequesttypedef) 
 
-### list_aws_service_access_for_organization
+### list\_aws\_service\_access\_for\_organization
 
 Returns a list of the AWS services that you enabled to integrate with your
 organization.
 
-Type annotations for
-`boto3.client("organizations").list_aws_service_access_for_organization`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_aws_service_access_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
 
-Boto3 documentation:
-[Organizations.Client.list_aws_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_aws_service_access_for_organization)
+```python title="Method definition"
+def list_aws_service_access_for_organization(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAWSServiceAccessForOrganizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAWSServiceAccessForOrganizationRequestRequestTypeDef](./type_defs.md#listawsserviceaccessfororganizationrequestrequesttypedef).
+1. See [:material-code-braces: ListAWSServiceAccessForOrganizationResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAWSServiceAccessForOrganizationRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListAWSServiceAccessForOrganizationResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponsetypedef).
+parent.list_aws_service_access_for_organization(**kwargs)
+```
 
-<a id="list\_children"></a>
+1. See [:material-code-braces: ListAWSServiceAccessForOrganizationRequestRequestTypeDef](./type_defs.md#listawsserviceaccessfororganizationrequestrequesttypedef) 
 
-### list_children
+### list\_children
 
 Lists all of the organizational units (OUs) or accounts that are contained in
 the specified parent OU or root.
 
-Type annotations for `boto3.client("organizations").list_children` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_children` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children)
 
-Boto3 documentation:
-[Organizations.Client.list_children](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_children)
+```python title="Method definition"
+def list_children(
+    self,
+    *,
+    ParentId: str,
+    ChildType: ChildTypeType,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListChildrenResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListChildrenRequestRequestTypeDef](./type_defs.md#listchildrenrequestrequesttypedef).
+1. See [:material-code-brackets: ChildTypeType](./literals.md#childtypetype) 
+2. See [:material-code-braces: ListChildrenResponseTypeDef](./type_defs.md#listchildrenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParentId`: `str` *(required)*
-- `ChildType`: [ChildTypeType](./literals.md#childtypetype) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListChildrenRequestRequestTypeDef = {  # (1)
+    "ParentId": ...,
+    "ChildType": ...,
+}
 
-Returns
-[ListChildrenResponseTypeDef](./type_defs.md#listchildrenresponsetypedef).
+parent.list_children(**kwargs)
+```
 
-<a id="list\_create\_account\_status"></a>
+1. See [:material-code-braces: ListChildrenRequestRequestTypeDef](./type_defs.md#listchildrenrequestrequesttypedef) 
 
-### list_create_account_status
+### list\_create\_account\_status
 
 Lists the account creation requests that match the specified status that is
 currently being tracked for the organization.
 
-Type annotations for `boto3.client("organizations").list_create_account_status`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_create_account_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status)
 
-Boto3 documentation:
-[Organizations.Client.list_create_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_create_account_status)
+```python title="Method definition"
+def list_create_account_status(
+    self,
+    *,
+    States: Sequence[CreateAccountStateType] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCreateAccountStatusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListCreateAccountStatusRequestRequestTypeDef](./type_defs.md#listcreateaccountstatusrequestrequesttypedef).
+1. See [:material-code-brackets: CreateAccountStateType](./literals.md#createaccountstatetype) 
+2. See [:material-code-braces: ListCreateAccountStatusResponseTypeDef](./type_defs.md#listcreateaccountstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `States`:
-  `Sequence`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCreateAccountStatusRequestRequestTypeDef = {  # (1)
+    "States": ...,
+}
 
-Returns
-[ListCreateAccountStatusResponseTypeDef](./type_defs.md#listcreateaccountstatusresponsetypedef).
+parent.list_create_account_status(**kwargs)
+```
 
-<a id="list\_delegated\_administrators"></a>
+1. See [:material-code-braces: ListCreateAccountStatusRequestRequestTypeDef](./type_defs.md#listcreateaccountstatusrequestrequesttypedef) 
 
-### list_delegated_administrators
+### list\_delegated\_administrators
 
 Lists the AWS accounts that are designated as delegated administrators in this
 organization.
 
-Type annotations for
-`boto3.client("organizations").list_delegated_administrators` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_delegated_administrators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
 
-Boto3 documentation:
-[Organizations.Client.list_delegated_administrators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_administrators)
+```python title="Method definition"
+def list_delegated_administrators(
+    self,
+    *,
+    ServicePrincipal: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDelegatedAdministratorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDelegatedAdministratorsRequestRequestTypeDef](./type_defs.md#listdelegatedadministratorsrequestrequesttypedef).
+1. See [:material-code-braces: ListDelegatedAdministratorsResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServicePrincipal`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDelegatedAdministratorsRequestRequestTypeDef = {  # (1)
+    "ServicePrincipal": ...,
+}
 
-Returns
-[ListDelegatedAdministratorsResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponsetypedef).
+parent.list_delegated_administrators(**kwargs)
+```
 
-<a id="list\_delegated\_services\_for\_account"></a>
+1. See [:material-code-braces: ListDelegatedAdministratorsRequestRequestTypeDef](./type_defs.md#listdelegatedadministratorsrequestrequesttypedef) 
 
-### list_delegated_services_for_account
+### list\_delegated\_services\_for\_account
 
 List the AWS services for which the specified account is a delegated
 administrator.
 
-Type annotations for
-`boto3.client("organizations").list_delegated_services_for_account` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_delegated_services_for_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
 
-Boto3 documentation:
-[Organizations.Client.list_delegated_services_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_delegated_services_for_account)
+```python title="Method definition"
+def list_delegated_services_for_account(
+    self,
+    *,
+    AccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDelegatedServicesForAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDelegatedServicesForAccountRequestRequestTypeDef](./type_defs.md#listdelegatedservicesforaccountrequestrequesttypedef).
+1. See [:material-code-braces: ListDelegatedServicesForAccountResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDelegatedServicesForAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[ListDelegatedServicesForAccountResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponsetypedef).
+parent.list_delegated_services_for_account(**kwargs)
+```
 
-<a id="list\_handshakes\_for\_account"></a>
+1. See [:material-code-braces: ListDelegatedServicesForAccountRequestRequestTypeDef](./type_defs.md#listdelegatedservicesforaccountrequestrequesttypedef) 
 
-### list_handshakes_for_account
+### list\_handshakes\_for\_account
 
 Lists the current handshakes that are associated with the account of the
 requesting user.
 
-Type annotations for
-`boto3.client("organizations").list_handshakes_for_account` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_handshakes_for_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account)
 
-Boto3 documentation:
-[Organizations.Client.list_handshakes_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_account)
+```python title="Method definition"
+def list_handshakes_for_account(
+    self,
+    *,
+    Filter: HandshakeFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListHandshakesForAccountResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListHandshakesForAccountRequestRequestTypeDef](./type_defs.md#listhandshakesforaccountrequestrequesttypedef).
+1. See [:material-code-braces: HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef) 
+2. See [:material-code-braces: ListHandshakesForAccountResponseTypeDef](./type_defs.md#listhandshakesforaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`: [HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListHandshakesForAccountRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListHandshakesForAccountResponseTypeDef](./type_defs.md#listhandshakesforaccountresponsetypedef).
+parent.list_handshakes_for_account(**kwargs)
+```
 
-<a id="list\_handshakes\_for\_organization"></a>
+1. See [:material-code-braces: ListHandshakesForAccountRequestRequestTypeDef](./type_defs.md#listhandshakesforaccountrequestrequesttypedef) 
 
-### list_handshakes_for_organization
+### list\_handshakes\_for\_organization
 
 Lists the handshakes that are associated with the organization that the
 requesting user is part of.
 
-Type annotations for
-`boto3.client("organizations").list_handshakes_for_organization` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_handshakes_for_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization)
 
-Boto3 documentation:
-[Organizations.Client.list_handshakes_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_handshakes_for_organization)
+```python title="Method definition"
+def list_handshakes_for_organization(
+    self,
+    *,
+    Filter: HandshakeFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListHandshakesForOrganizationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListHandshakesForOrganizationRequestRequestTypeDef](./type_defs.md#listhandshakesfororganizationrequestrequesttypedef).
+1. See [:material-code-braces: HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef) 
+2. See [:material-code-braces: ListHandshakesForOrganizationResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`: [HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListHandshakesForOrganizationRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListHandshakesForOrganizationResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponsetypedef).
+parent.list_handshakes_for_organization(**kwargs)
+```
 
-<a id="list\_organizational\_units\_for\_parent"></a>
+1. See [:material-code-braces: ListHandshakesForOrganizationRequestRequestTypeDef](./type_defs.md#listhandshakesfororganizationrequestrequesttypedef) 
 
-### list_organizational_units_for_parent
+### list\_organizational\_units\_for\_parent
 
 Lists the organizational units (OUs) in a parent organizational unit or root.
 
-Type annotations for
-`boto3.client("organizations").list_organizational_units_for_parent` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_organizational_units_for_parent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent)
 
-Boto3 documentation:
-[Organizations.Client.list_organizational_units_for_parent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_organizational_units_for_parent)
+```python title="Method definition"
+def list_organizational_units_for_parent(
+    self,
+    *,
+    ParentId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListOrganizationalUnitsForParentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOrganizationalUnitsForParentRequestRequestTypeDef](./type_defs.md#listorganizationalunitsforparentrequestrequesttypedef).
+1. See [:material-code-braces: ListOrganizationalUnitsForParentResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParentId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationalUnitsForParentRequestRequestTypeDef = {  # (1)
+    "ParentId": ...,
+}
 
-Returns
-[ListOrganizationalUnitsForParentResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponsetypedef).
+parent.list_organizational_units_for_parent(**kwargs)
+```
 
-<a id="list\_parents"></a>
+1. See [:material-code-braces: ListOrganizationalUnitsForParentRequestRequestTypeDef](./type_defs.md#listorganizationalunitsforparentrequestrequesttypedef) 
 
-### list_parents
+### list\_parents
 
 Lists the root or organizational units (OUs) that serve as the immediate parent
 of the specified child OU or account.
 
-Type annotations for `boto3.client("organizations").list_parents` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_parents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents)
 
-Boto3 documentation:
-[Organizations.Client.list_parents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_parents)
+```python title="Method definition"
+def list_parents(
+    self,
+    *,
+    ChildId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListParentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListParentsRequestRequestTypeDef](./type_defs.md#listparentsrequestrequesttypedef).
+1. See [:material-code-braces: ListParentsResponseTypeDef](./type_defs.md#listparentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChildId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListParentsRequestRequestTypeDef = {  # (1)
+    "ChildId": ...,
+}
 
-Returns
-[ListParentsResponseTypeDef](./type_defs.md#listparentsresponsetypedef).
+parent.list_parents(**kwargs)
+```
 
-<a id="list\_policies"></a>
+1. See [:material-code-braces: ListParentsRequestRequestTypeDef](./type_defs.md#listparentsrequestrequesttypedef) 
 
-### list_policies
+### list\_policies
 
 Retrieves the list of all policies in an organization of a specified type.
 
-Type annotations for `boto3.client("organizations").list_policies` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies)
 
-Boto3 documentation:
-[Organizations.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies)
+```python title="Method definition"
+def list_policies(
+    self,
+    *,
+    Filter: PolicyTypeType,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPoliciesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef).
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-braces: ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPoliciesRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+parent.list_policies(**kwargs)
+```
 
-<a id="list\_policies\_for\_target"></a>
+1. See [:material-code-braces: ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef) 
 
-### list_policies_for_target
+### list\_policies\_for\_target
 
 Lists the policies that are directly attached to the specified target root,
 organizational unit (OU), or account.
 
-Type annotations for `boto3.client("organizations").list_policies_for_target`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_policies_for_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target)
 
-Boto3 documentation:
-[Organizations.Client.list_policies_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_policies_for_target)
+```python title="Method definition"
+def list_policies_for_target(
+    self,
+    *,
+    TargetId: str,
+    Filter: PolicyTypeType,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPoliciesForTargetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPoliciesForTargetRequestRequestTypeDef](./type_defs.md#listpoliciesfortargetrequestrequesttypedef).
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-braces: ListPoliciesForTargetResponseTypeDef](./type_defs.md#listpoliciesfortargetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TargetId`: `str` *(required)*
-- `Filter`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPoliciesForTargetRequestRequestTypeDef = {  # (1)
+    "TargetId": ...,
+    "Filter": ...,
+}
 
-Returns
-[ListPoliciesForTargetResponseTypeDef](./type_defs.md#listpoliciesfortargetresponsetypedef).
+parent.list_policies_for_target(**kwargs)
+```
 
-<a id="list\_roots"></a>
+1. See [:material-code-braces: ListPoliciesForTargetRequestRequestTypeDef](./type_defs.md#listpoliciesfortargetrequestrequesttypedef) 
 
-### list_roots
+### list\_roots
 
 Lists the roots that are defined in the current organization.
 
-Type annotations for `boto3.client("organizations").list_roots` method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_roots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots)
 
-Boto3 documentation:
-[Organizations.Client.list_roots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_roots)
+```python title="Method definition"
+def list_roots(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListRootsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRootsRequestRequestTypeDef](./type_defs.md#listrootsrequestrequesttypedef).
+1. See [:material-code-braces: ListRootsResponseTypeDef](./type_defs.md#listrootsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRootsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListRootsResponseTypeDef](./type_defs.md#listrootsresponsetypedef).
+parent.list_roots(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListRootsRequestRequestTypeDef](./type_defs.md#listrootsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists tags that are attached to the specified resource.
 
-Type annotations for `boto3.client("organizations").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Organizations.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceId: str,
+    NextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_targets\_for\_policy"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_targets_for_policy
+### list\_targets\_for\_policy
 
-Lists all the roots, organizational units (OUs), and accounts that the
-specified policy is attached to.
+Lists all the roots, organizational units (OUs), and accounts that the specified
+policy is attached to.
 
-Type annotations for `boto3.client("organizations").list_targets_for_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").list_targets_for_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy)
 
-Boto3 documentation:
-[Organizations.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.list_targets_for_policy)
+```python title="Method definition"
+def list_targets_for_policy(
+    self,
+    *,
+    PolicyId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTargetsForPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTargetsForPolicyRequestRequestTypeDef](./type_defs.md#listtargetsforpolicyrequestrequesttypedef).
+1. See [:material-code-braces: ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTargetsForPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-Returns
-[ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef).
+parent.list_targets_for_policy(**kwargs)
+```
 
-<a id="move\_account"></a>
+1. See [:material-code-braces: ListTargetsForPolicyRequestRequestTypeDef](./type_defs.md#listtargetsforpolicyrequestrequesttypedef) 
 
-### move_account
+### move\_account
 
-Moves an account from its current source parent root or organizational unit
-(OU) to the specified destination parent root or OU.
+Moves an account from its current source parent root or organizational unit (OU)
+to the specified destination parent root or OU.
 
-Type annotations for `boto3.client("organizations").move_account` method.
+Type annotations and code completion for `#!python boto3.client("organizations").move_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account)
 
-Boto3 documentation:
-[Organizations.Client.move_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.move_account)
+```python title="Method definition"
+def move_account(
+    self,
+    *,
+    AccountId: str,
+    SourceParentId: str,
+    DestinationParentId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[MoveAccountRequestRequestTypeDef](./type_defs.md#moveaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `SourceParentId`: `str` *(required)*
-- `DestinationParentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: MoveAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "SourceParentId": ...,
+    "DestinationParentId": ...,
+}
 
-<a id="register\_delegated\_administrator"></a>
+parent.move_account(**kwargs)
+```
 
-### register_delegated_administrator
+1. See [:material-code-braces: MoveAccountRequestRequestTypeDef](./type_defs.md#moveaccountrequestrequesttypedef) 
 
-Enables the specified member account to administer the Organizations features
-of the specified AWS service.
+### register\_delegated\_administrator
 
-Type annotations for
-`boto3.client("organizations").register_delegated_administrator` method.
+Enables the specified member account to administer the Organizations features of
+the specified AWS service.
 
-Boto3 documentation:
-[Organizations.Client.register_delegated_administrator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)
+Type annotations and code completion for `#!python boto3.client("organizations").register_delegated_administrator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.register_delegated_administrator)
 
-Arguments mapping described in
-[RegisterDelegatedAdministratorRequestRequestTypeDef](./type_defs.md#registerdelegatedadministratorrequestrequesttypedef).
+```python title="Method definition"
+def register_delegated_administrator(
+    self,
+    *,
+    AccountId: str,
+    ServicePrincipal: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `ServicePrincipal`: `str` *(required)*
 
-<a id="remove\_account\_from\_organization"></a>
+```python title="Usage example with kwargs"
+kwargs: RegisterDelegatedAdministratorRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "ServicePrincipal": ...,
+}
 
-### remove_account_from_organization
+parent.register_delegated_administrator(**kwargs)
+```
+
+1. See [:material-code-braces: RegisterDelegatedAdministratorRequestRequestTypeDef](./type_defs.md#registerdelegatedadministratorrequestrequesttypedef) 
+
+### remove\_account\_from\_organization
 
 Removes the specified account from the organization.
 
-Type annotations for
-`boto3.client("organizations").remove_account_from_organization` method.
+Type annotations and code completion for `#!python boto3.client("organizations").remove_account_from_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization)
 
-Boto3 documentation:
-[Organizations.Client.remove_account_from_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.remove_account_from_organization)
+```python title="Method definition"
+def remove_account_from_organization(
+    self,
+    *,
+    AccountId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveAccountFromOrganizationRequestRequestTypeDef](./type_defs.md#removeaccountfromorganizationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveAccountFromOrganizationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.remove_account_from_organization(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: RemoveAccountFromOrganizationRequestRequestTypeDef](./type_defs.md#removeaccountfromorganizationrequestrequesttypedef) 
+
+### tag\_resource
 
 Adds one or more tags to the specified resource.
 
-Type annotations for `boto3.client("organizations").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("organizations").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource)
 
-Boto3 documentation:
-[Organizations.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Removes any tags with the specified keys from the specified resource.
 
-Type annotations for `boto3.client("organizations").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("organizations").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource)
 
-Boto3 documentation:
-[Organizations.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceId: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_organizational\_unit"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_organizational_unit
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_organizational\_unit
 
 Renames the specified organizational unit (OU).
 
-Type annotations for `boto3.client("organizations").update_organizational_unit`
-method.
+Type annotations and code completion for `#!python boto3.client("organizations").update_organizational_unit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit)
 
-Boto3 documentation:
-[Organizations.Client.update_organizational_unit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_organizational_unit)
+```python title="Method definition"
+def update_organizational_unit(
+    self,
+    *,
+    OrganizationalUnitId: str,
+    Name: str = ...,
+) -> UpdateOrganizationalUnitResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateOrganizationalUnitRequestRequestTypeDef](./type_defs.md#updateorganizationalunitrequestrequesttypedef).
+1. See [:material-code-braces: UpdateOrganizationalUnitResponseTypeDef](./type_defs.md#updateorganizationalunitresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationalUnitId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateOrganizationalUnitRequestRequestTypeDef = {  # (1)
+    "OrganizationalUnitId": ...,
+}
 
-Returns
-[UpdateOrganizationalUnitResponseTypeDef](./type_defs.md#updateorganizationalunitresponsetypedef).
+parent.update_organizational_unit(**kwargs)
+```
 
-<a id="update\_policy"></a>
+1. See [:material-code-braces: UpdateOrganizationalUnitRequestRequestTypeDef](./type_defs.md#updateorganizationalunitrequestrequesttypedef) 
 
-### update_policy
+### update\_policy
 
 Updates an existing policy with a new name, description, or content.
 
-Type annotations for `boto3.client("organizations").update_policy` method.
+Type annotations and code completion for `#!python boto3.client("organizations").update_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy)
 
-Boto3 documentation:
-[Organizations.Client.update_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.update_policy)
+```python title="Method definition"
+def update_policy(
+    self,
+    *,
+    PolicyId: str,
+    Name: str = ...,
+    Description: str = ...,
+    Content: str = ...,
+) -> UpdatePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePolicyRequestRequestTypeDef](./type_defs.md#updatepolicyrequestrequesttypedef).
+1. See [:material-code-braces: UpdatePolicyResponseTypeDef](./type_defs.md#updatepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `Content`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-Returns
-[UpdatePolicyResponseTypeDef](./type_defs.md#updatepolicyresponsetypedef).
+parent.update_policy(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdatePolicyRequestRequestTypeDef](./type_defs.md#updatepolicyrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("organizations").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator` method with overloads.
 
-- `client.get_paginator("list_aws_service_access_for_organization")` ->
-  [ListAWSServiceAccessForOrganizationPaginator](./paginators.md#listawsserviceaccessfororganizationpaginator)
-- `client.get_paginator("list_accounts")` ->
-  [ListAccountsPaginator](./paginators.md#listaccountspaginator)
-- `client.get_paginator("list_accounts_for_parent")` ->
-  [ListAccountsForParentPaginator](./paginators.md#listaccountsforparentpaginator)
-- `client.get_paginator("list_children")` ->
-  [ListChildrenPaginator](./paginators.md#listchildrenpaginator)
-- `client.get_paginator("list_create_account_status")` ->
-  [ListCreateAccountStatusPaginator](./paginators.md#listcreateaccountstatuspaginator)
-- `client.get_paginator("list_delegated_administrators")` ->
-  [ListDelegatedAdministratorsPaginator](./paginators.md#listdelegatedadministratorspaginator)
-- `client.get_paginator("list_delegated_services_for_account")` ->
-  [ListDelegatedServicesForAccountPaginator](./paginators.md#listdelegatedservicesforaccountpaginator)
-- `client.get_paginator("list_handshakes_for_account")` ->
-  [ListHandshakesForAccountPaginator](./paginators.md#listhandshakesforaccountpaginator)
-- `client.get_paginator("list_handshakes_for_organization")` ->
-  [ListHandshakesForOrganizationPaginator](./paginators.md#listhandshakesfororganizationpaginator)
-- `client.get_paginator("list_organizational_units_for_parent")` ->
-  [ListOrganizationalUnitsForParentPaginator](./paginators.md#listorganizationalunitsforparentpaginator)
-- `client.get_paginator("list_parents")` ->
-  [ListParentsPaginator](./paginators.md#listparentspaginator)
-- `client.get_paginator("list_policies")` ->
-  [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
-- `client.get_paginator("list_policies_for_target")` ->
-  [ListPoliciesForTargetPaginator](./paginators.md#listpoliciesfortargetpaginator)
-- `client.get_paginator("list_roots")` ->
-  [ListRootsPaginator](./paginators.md#listrootspaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_targets_for_policy")` ->
-  [ListTargetsForPolicyPaginator](./paginators.md#listtargetsforpolicypaginator)
+- `client.get_paginator("list_aws_service_access_for_organization")` -> [ListAWSServiceAccessForOrganizationPaginator](./paginators.md#listawsserviceaccessfororganizationpaginator)
+- `client.get_paginator("list_accounts")` -> [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+- `client.get_paginator("list_accounts_for_parent")` -> [ListAccountsForParentPaginator](./paginators.md#listaccountsforparentpaginator)
+- `client.get_paginator("list_children")` -> [ListChildrenPaginator](./paginators.md#listchildrenpaginator)
+- `client.get_paginator("list_create_account_status")` -> [ListCreateAccountStatusPaginator](./paginators.md#listcreateaccountstatuspaginator)
+- `client.get_paginator("list_delegated_administrators")` -> [ListDelegatedAdministratorsPaginator](./paginators.md#listdelegatedadministratorspaginator)
+- `client.get_paginator("list_delegated_services_for_account")` -> [ListDelegatedServicesForAccountPaginator](./paginators.md#listdelegatedservicesforaccountpaginator)
+- `client.get_paginator("list_handshakes_for_account")` -> [ListHandshakesForAccountPaginator](./paginators.md#listhandshakesforaccountpaginator)
+- `client.get_paginator("list_handshakes_for_organization")` -> [ListHandshakesForOrganizationPaginator](./paginators.md#listhandshakesfororganizationpaginator)
+- `client.get_paginator("list_organizational_units_for_parent")` -> [ListOrganizationalUnitsForParentPaginator](./paginators.md#listorganizationalunitsforparentpaginator)
+- `client.get_paginator("list_parents")` -> [ListParentsPaginator](./paginators.md#listparentspaginator)
+- `client.get_paginator("list_policies")` -> [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+- `client.get_paginator("list_policies_for_target")` -> [ListPoliciesForTargetPaginator](./paginators.md#listpoliciesfortargetpaginator)
+- `client.get_paginator("list_roots")` -> [ListRootsPaginator](./paginators.md#listrootspaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_targets_for_policy")` -> [ListTargetsForPolicyPaginator](./paginators.md#listtargetsforpolicypaginator)
+
+
+

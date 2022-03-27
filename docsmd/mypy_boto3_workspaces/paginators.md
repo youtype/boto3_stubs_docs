@@ -1,34 +1,18 @@
-<a id="paginators-for-boto3-workspaces-module"></a>
-
-# Paginators for boto3 WorkSpaces module
+# Paginators
 
 > [Index](../README.md) > [WorkSpaces](./README.md) > Paginators
 
-Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
-type annotations stubs module
-[mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+!!! note ""
 
-- [Paginators for boto3 WorkSpaces module](#paginators-for-boto3-workspaces-module)
-  - [DescribeAccountModificationsPaginator](#describeaccountmodificationspaginator)
-  - [DescribeIpGroupsPaginator](#describeipgroupspaginator)
-  - [DescribeWorkspaceBundlesPaginator](#describeworkspacebundlespaginator)
-  - [DescribeWorkspaceDirectoriesPaginator](#describeworkspacedirectoriespaginator)
-  - [DescribeWorkspaceImagesPaginator](#describeworkspaceimagespaginator)
-  - [DescribeWorkspacesPaginator](#describeworkspacespaginator)
-  - [DescribeWorkspacesConnectionStatusPaginator](#describeworkspacesconnectionstatuspaginator)
-  - [ListAvailableManagementCidrRangesPaginator](#listavailablemanagementcidrrangespaginator)
-
-<a id="describeaccountmodificationspaginator"></a>
+    Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+    type annotations stubs module [mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 ## DescribeAccountModificationsPaginator
 
-Type annotations for
-`boto3.client("workspaces").get_paginator("describe_account_modifications")`.
+Type annotations and code completion for `#!python boto3.client("workspaces").get_paginator("describe_account_modifications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeAccountModifications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workspaces.paginator import DescribeAccountModificationsPaginator
@@ -37,27 +21,39 @@ def get_describe_account_modifications_paginator() -> DescribeAccountModificatio
     return Session().client("workspaces").get_paginator("describe_account_modifications")
 ```
 
-Boto3 documentation:
-[WorkSpaces.Paginator.DescribeAccountModifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeAccountModifications)
 
-Arguments for `DescribeAccountModificationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAccountModificationsPaginator.paginate` method.
 
-`DescribeAccountModificationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeAccountModificationsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeipgroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountModificationsRequestDescribeAccountModificationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAccountModificationsRequestDescribeAccountModificationsPaginateTypeDef](./type_defs.md#describeaccountmodificationsrequestdescribeaccountmodificationspaginatetypedef) 
 ## DescribeIpGroupsPaginator
 
-Type annotations for
-`boto3.client("workspaces").get_paginator("describe_ip_groups")`.
+Type annotations and code completion for `#!python boto3.client("workspaces").get_paginator("describe_ip_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeIpGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workspaces.paginator import DescribeIpGroupsPaginator
@@ -66,28 +62,40 @@ def get_describe_ip_groups_paginator() -> DescribeIpGroupsPaginator:
     return Session().client("workspaces").get_paginator("describe_ip_groups")
 ```
 
-Boto3 documentation:
-[WorkSpaces.Paginator.DescribeIpGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeIpGroups)
 
-Arguments for `DescribeIpGroupsPaginator.paginate` method:
+### paginate
 
-- `GroupIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeIpGroupsPaginator.paginate` method.
 
-`DescribeIpGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GroupIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeIpGroupsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeworkspacebundlespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeIpGroupsRequestDescribeIpGroupsPaginateTypeDef = {  # (1)
+    "GroupIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeIpGroupsRequestDescribeIpGroupsPaginateTypeDef](./type_defs.md#describeipgroupsrequestdescribeipgroupspaginatetypedef) 
 ## DescribeWorkspaceBundlesPaginator
 
-Type annotations for
-`boto3.client("workspaces").get_paginator("describe_workspace_bundles")`.
+Type annotations and code completion for `#!python boto3.client("workspaces").get_paginator("describe_workspace_bundles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceBundles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workspaces.paginator import DescribeWorkspaceBundlesPaginator
@@ -96,29 +104,41 @@ def get_describe_workspace_bundles_paginator() -> DescribeWorkspaceBundlesPagina
     return Session().client("workspaces").get_paginator("describe_workspace_bundles")
 ```
 
-Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspaceBundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceBundles)
 
-Arguments for `DescribeWorkspaceBundlesPaginator.paginate` method:
+### paginate
 
-- `BundleIds`: `Sequence`\[`str`\]
-- `Owner`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeWorkspaceBundlesPaginator.paginate` method.
 
-`DescribeWorkspaceBundlesPaginator.paginate` returns
-`_PageIterator`\[[DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BundleIds: Sequence[str] = ...,
+    Owner: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeWorkspaceBundlesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeworkspacedirectoriespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceBundlesRequestDescribeWorkspaceBundlesPaginateTypeDef = {  # (1)
+    "BundleIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeWorkspaceBundlesRequestDescribeWorkspaceBundlesPaginateTypeDef](./type_defs.md#describeworkspacebundlesrequestdescribeworkspacebundlespaginatetypedef) 
 ## DescribeWorkspaceDirectoriesPaginator
 
-Type annotations for
-`boto3.client("workspaces").get_paginator("describe_workspace_directories")`.
+Type annotations and code completion for `#!python boto3.client("workspaces").get_paginator("describe_workspace_directories")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceDirectories)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workspaces.paginator import DescribeWorkspaceDirectoriesPaginator
@@ -127,29 +147,41 @@ def get_describe_workspace_directories_paginator() -> DescribeWorkspaceDirectori
     return Session().client("workspaces").get_paginator("describe_workspace_directories")
 ```
 
-Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspaceDirectories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceDirectories)
 
-Arguments for `DescribeWorkspaceDirectoriesPaginator.paginate` method:
+### paginate
 
-- `DirectoryIds`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeWorkspaceDirectoriesPaginator.paginate` method.
 
-`DescribeWorkspaceDirectoriesPaginator.paginate` returns
-`_PageIterator`\[[DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DirectoryIds: Sequence[str] = ...,
+    Limit: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeWorkspaceDirectoriesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeworkspaceimagespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceDirectoriesRequestDescribeWorkspaceDirectoriesPaginateTypeDef = {  # (1)
+    "DirectoryIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeWorkspaceDirectoriesRequestDescribeWorkspaceDirectoriesPaginateTypeDef](./type_defs.md#describeworkspacedirectoriesrequestdescribeworkspacedirectoriespaginatetypedef) 
 ## DescribeWorkspaceImagesPaginator
 
-Type annotations for
-`boto3.client("workspaces").get_paginator("describe_workspace_images")`.
+Type annotations and code completion for `#!python boto3.client("workspaces").get_paginator("describe_workspace_images")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceImages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workspaces.paginator import DescribeWorkspaceImagesPaginator
@@ -158,29 +190,42 @@ def get_describe_workspace_images_paginator() -> DescribeWorkspaceImagesPaginato
     return Session().client("workspaces").get_paginator("describe_workspace_images")
 ```
 
-Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspaceImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaceImages)
 
-Arguments for `DescribeWorkspaceImagesPaginator.paginate` method:
+### paginate
 
-- `ImageIds`: `Sequence`\[`str`\]
-- `ImageType`: [ImageTypeType](./literals.md#imagetypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeWorkspaceImagesPaginator.paginate` method.
 
-`DescribeWorkspaceImagesPaginator.paginate` returns
-`_PageIterator`\[[DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ImageIds: Sequence[str] = ...,
+    ImageType: ImageTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeWorkspaceImagesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeworkspacespaginator"></a>
+1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceImagesRequestDescribeWorkspaceImagesPaginateTypeDef = {  # (1)
+    "ImageIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeWorkspaceImagesRequestDescribeWorkspaceImagesPaginateTypeDef](./type_defs.md#describeworkspaceimagesrequestdescribeworkspaceimagespaginatetypedef) 
 ## DescribeWorkspacesPaginator
 
-Type annotations for
-`boto3.client("workspaces").get_paginator("describe_workspaces")`.
+Type annotations and code completion for `#!python boto3.client("workspaces").get_paginator("describe_workspaces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaces)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workspaces.paginator import DescribeWorkspacesPaginator
@@ -189,31 +234,43 @@ def get_describe_workspaces_paginator() -> DescribeWorkspacesPaginator:
     return Session().client("workspaces").get_paginator("describe_workspaces")
 ```
 
-Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspaces)
 
-Arguments for `DescribeWorkspacesPaginator.paginate` method:
+### paginate
 
-- `WorkspaceIds`: `Sequence`\[`str`\]
-- `DirectoryId`: `str`
-- `UserName`: `str`
-- `BundleId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeWorkspacesPaginator.paginate` method.
 
-`DescribeWorkspacesPaginator.paginate` returns
-`_PageIterator`\[[DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WorkspaceIds: Sequence[str] = ...,
+    DirectoryId: str = ...,
+    UserName: str = ...,
+    BundleId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeWorkspacesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeworkspacesconnectionstatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspacesRequestDescribeWorkspacesPaginateTypeDef = {  # (1)
+    "WorkspaceIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeWorkspacesRequestDescribeWorkspacesPaginateTypeDef](./type_defs.md#describeworkspacesrequestdescribeworkspacespaginatetypedef) 
 ## DescribeWorkspacesConnectionStatusPaginator
 
-Type annotations for
-`boto3.client("workspaces").get_paginator("describe_workspaces_connection_status")`.
+Type annotations and code completion for `#!python boto3.client("workspaces").get_paginator("describe_workspaces_connection_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspacesConnectionStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workspaces.paginator import DescribeWorkspacesConnectionStatusPaginator
@@ -222,28 +279,40 @@ def get_describe_workspaces_connection_status_paginator() -> DescribeWorkspacesC
     return Session().client("workspaces").get_paginator("describe_workspaces_connection_status")
 ```
 
-Boto3 documentation:
-[WorkSpaces.Paginator.DescribeWorkspacesConnectionStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.DescribeWorkspacesConnectionStatus)
 
-Arguments for `DescribeWorkspacesConnectionStatusPaginator.paginate` method:
+### paginate
 
-- `WorkspaceIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeWorkspacesConnectionStatusPaginator.paginate` method.
 
-`DescribeWorkspacesConnectionStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WorkspaceIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeWorkspacesConnectionStatusResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listavailablemanagementcidrrangespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspacesConnectionStatusRequestDescribeWorkspacesConnectionStatusPaginateTypeDef = {  # (1)
+    "WorkspaceIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeWorkspacesConnectionStatusRequestDescribeWorkspacesConnectionStatusPaginateTypeDef](./type_defs.md#describeworkspacesconnectionstatusrequestdescribeworkspacesconnectionstatuspaginatetypedef) 
 ## ListAvailableManagementCidrRangesPaginator
 
-Type annotations for
-`boto3.client("workspaces").get_paginator("list_available_management_cidr_ranges")`.
+Type annotations and code completion for `#!python boto3.client("workspaces").get_paginator("list_available_management_cidr_ranges")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.ListAvailableManagementCidrRanges)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_workspaces.paginator import ListAvailableManagementCidrRangesPaginator
@@ -252,14 +321,31 @@ def get_list_available_management_cidr_ranges_paginator() -> ListAvailableManage
     return Session().client("workspaces").get_paginator("list_available_management_cidr_ranges")
 ```
 
-Boto3 documentation:
-[WorkSpaces.Paginator.ListAvailableManagementCidrRanges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Paginator.ListAvailableManagementCidrRanges)
 
-Arguments for `ListAvailableManagementCidrRangesPaginator.paginate` method:
+### paginate
 
-- `ManagementCidrRangeConstraint`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAvailableManagementCidrRangesPaginator.paginate` method.
 
-`ListAvailableManagementCidrRangesPaginator.paginate` returns
-`_PageIterator`\[[ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ManagementCidrRangeConstraint: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAvailableManagementCidrRangesResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAvailableManagementCidrRangesRequestListAvailableManagementCidrRangesPaginateTypeDef = {  # (1)
+    "ManagementCidrRangeConstraint": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAvailableManagementCidrRangesRequestListAvailableManagementCidrRangesPaginateTypeDef](./type_defs.md#listavailablemanagementcidrrangesrequestlistavailablemanagementcidrrangespaginatetypedef) 

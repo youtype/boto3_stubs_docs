@@ -1,109 +1,18 @@
-<a id="wafclient-for-boto3-waf-module"></a>
-
-# WAFClient for boto3 WAF module
+# WAFClient
 
 > [Index](../README.md) > [WAF](./README.md) > WAFClient
 
-Auto-generated documentation for
-[WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
-type annotations stubs module
-[mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
+!!! note ""
 
-- [WAFClient for boto3 WAF module](#wafclient-for-boto3-waf-module)
-  - [WAFClient](#wafclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_byte_match_set](#create_byte_match_set)
-    - [create_geo_match_set](#create_geo_match_set)
-    - [create_ip_set](#create_ip_set)
-    - [create_rate_based_rule](#create_rate_based_rule)
-    - [create_regex_match_set](#create_regex_match_set)
-    - [create_regex_pattern_set](#create_regex_pattern_set)
-    - [create_rule](#create_rule)
-    - [create_rule_group](#create_rule_group)
-    - [create_size_constraint_set](#create_size_constraint_set)
-    - [create_sql_injection_match_set](#create_sql_injection_match_set)
-    - [create_web_acl](#create_web_acl)
-    - [create_web_acl_migration_stack](#create_web_acl_migration_stack)
-    - [create_xss_match_set](#create_xss_match_set)
-    - [delete_byte_match_set](#delete_byte_match_set)
-    - [delete_geo_match_set](#delete_geo_match_set)
-    - [delete_ip_set](#delete_ip_set)
-    - [delete_logging_configuration](#delete_logging_configuration)
-    - [delete_permission_policy](#delete_permission_policy)
-    - [delete_rate_based_rule](#delete_rate_based_rule)
-    - [delete_regex_match_set](#delete_regex_match_set)
-    - [delete_regex_pattern_set](#delete_regex_pattern_set)
-    - [delete_rule](#delete_rule)
-    - [delete_rule_group](#delete_rule_group)
-    - [delete_size_constraint_set](#delete_size_constraint_set)
-    - [delete_sql_injection_match_set](#delete_sql_injection_match_set)
-    - [delete_web_acl](#delete_web_acl)
-    - [delete_xss_match_set](#delete_xss_match_set)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_byte_match_set](#get_byte_match_set)
-    - [get_change_token](#get_change_token)
-    - [get_change_token_status](#get_change_token_status)
-    - [get_geo_match_set](#get_geo_match_set)
-    - [get_ip_set](#get_ip_set)
-    - [get_logging_configuration](#get_logging_configuration)
-    - [get_permission_policy](#get_permission_policy)
-    - [get_rate_based_rule](#get_rate_based_rule)
-    - [get_rate_based_rule_managed_keys](#get_rate_based_rule_managed_keys)
-    - [get_regex_match_set](#get_regex_match_set)
-    - [get_regex_pattern_set](#get_regex_pattern_set)
-    - [get_rule](#get_rule)
-    - [get_rule_group](#get_rule_group)
-    - [get_sampled_requests](#get_sampled_requests)
-    - [get_size_constraint_set](#get_size_constraint_set)
-    - [get_sql_injection_match_set](#get_sql_injection_match_set)
-    - [get_web_acl](#get_web_acl)
-    - [get_xss_match_set](#get_xss_match_set)
-    - [list_activated_rules_in_rule_group](#list_activated_rules_in_rule_group)
-    - [list_byte_match_sets](#list_byte_match_sets)
-    - [list_geo_match_sets](#list_geo_match_sets)
-    - [list_ip_sets](#list_ip_sets)
-    - [list_logging_configurations](#list_logging_configurations)
-    - [list_rate_based_rules](#list_rate_based_rules)
-    - [list_regex_match_sets](#list_regex_match_sets)
-    - [list_regex_pattern_sets](#list_regex_pattern_sets)
-    - [list_rule_groups](#list_rule_groups)
-    - [list_rules](#list_rules)
-    - [list_size_constraint_sets](#list_size_constraint_sets)
-    - [list_sql_injection_match_sets](#list_sql_injection_match_sets)
-    - [list_subscribed_rule_groups](#list_subscribed_rule_groups)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_web_acls](#list_web_acls)
-    - [list_xss_match_sets](#list_xss_match_sets)
-    - [put_logging_configuration](#put_logging_configuration)
-    - [put_permission_policy](#put_permission_policy)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_byte_match_set](#update_byte_match_set)
-    - [update_geo_match_set](#update_geo_match_set)
-    - [update_ip_set](#update_ip_set)
-    - [update_rate_based_rule](#update_rate_based_rule)
-    - [update_regex_match_set](#update_regex_match_set)
-    - [update_regex_pattern_set](#update_regex_pattern_set)
-    - [update_rule](#update_rule)
-    - [update_rule_group](#update_rule_group)
-    - [update_size_constraint_set](#update_size_constraint_set)
-    - [update_sql_injection_match_set](#update_sql_injection_match_set)
-    - [update_web_acl](#update_web_acl)
-    - [update_xss_match_set](#update_xss_match_set)
-    - [get_paginator](#get_paginator)
-
-<a id="wafclient"></a>
+    Auto-generated documentation for [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
+    type annotations stubs module [mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
 
 ## WAFClient
 
-Type annotations for `boto3.client("waf")`
+Type annotations and code completion for `#!python boto3.client("waf")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_waf.client import WAFClient
 
@@ -111,1856 +20,2499 @@ def get_waf_client() -> WAFClient:
     return Session().client("waf")
 ```
 
-Boto3 documentation:
-[WAF.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("waf").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("waf")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.WAFBadRequestException,
+    client.WAFDisallowedNameException,
+    client.WAFEntityMigrationException,
+    client.WAFInternalErrorException,
+    client.WAFInvalidAccountException,
+    client.WAFInvalidOperationException,
+    client.WAFInvalidParameterException,
+    client.WAFInvalidPermissionPolicyException,
+    client.WAFInvalidRegexPatternException,
+    client.WAFLimitsExceededException,
+    client.WAFNonEmptyEntityException,
+    client.WAFNonexistentContainerException,
+    client.WAFNonexistentItemException,
+    client.WAFReferencedItemException,
+    client.WAFServiceLinkedRoleErrorException,
+    client.WAFStaleDataException,
+    client.WAFSubscriptionNotFoundException,
+    client.WAFTagOperationException,
+    client.WAFTagOperationInternalErrorException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_waf.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.WAFBadRequestException`
-- `Exceptions.WAFDisallowedNameException`
-- `Exceptions.WAFEntityMigrationException`
-- `Exceptions.WAFInternalErrorException`
-- `Exceptions.WAFInvalidAccountException`
-- `Exceptions.WAFInvalidOperationException`
-- `Exceptions.WAFInvalidParameterException`
-- `Exceptions.WAFInvalidPermissionPolicyException`
-- `Exceptions.WAFInvalidRegexPatternException`
-- `Exceptions.WAFLimitsExceededException`
-- `Exceptions.WAFNonEmptyEntityException`
-- `Exceptions.WAFNonexistentContainerException`
-- `Exceptions.WAFNonexistentItemException`
-- `Exceptions.WAFReferencedItemException`
-- `Exceptions.WAFServiceLinkedRoleErrorException`
-- `Exceptions.WAFStaleDataException`
-- `Exceptions.WAFSubscriptionNotFoundException`
-- `Exceptions.WAFTagOperationException`
-- `Exceptions.WAFTagOperationInternalErrorException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-WAFClient exceptions.
-
-Type annotations for `boto3.client("waf").exceptions` method.
-
-Boto3 documentation:
-[WAF.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("waf").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("waf").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.can_paginate)
 
-Boto3 documentation:
-[WAF.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_byte\_match\_set"></a>
-
-### create_byte_match_set
-
-.
-
-Type annotations for `boto3.client("waf").create_byte_match_set` method.
-
-Boto3 documentation:
-[WAF.Client.create_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_byte_match_set)
-
-Arguments mapping described in
-[CreateByteMatchSetRequestRequestTypeDef](./type_defs.md#createbytematchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Name`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[CreateByteMatchSetResponseTypeDef](./type_defs.md#createbytematchsetresponsetypedef).
-
-<a id="create\_geo\_match\_set"></a>
-
-### create_geo_match_set
+### create\_byte\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").create_geo_match_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").create_byte_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_byte_match_set)
 
-Boto3 documentation:
-[WAF.Client.create_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_geo_match_set)
+```python title="Method definition"
+def create_byte_match_set(
+    self,
+    *,
+    Name: str,
+    ChangeToken: str,
+) -> CreateByteMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGeoMatchSetRequestRequestTypeDef](./type_defs.md#creategeomatchsetrequestrequesttypedef).
+1. See [:material-code-braces: CreateByteMatchSetResponseTypeDef](./type_defs.md#createbytematchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateByteMatchSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[CreateGeoMatchSetResponseTypeDef](./type_defs.md#creategeomatchsetresponsetypedef).
+parent.create_byte_match_set(**kwargs)
+```
 
-<a id="create\_ip\_set"></a>
+1. See [:material-code-braces: CreateByteMatchSetRequestRequestTypeDef](./type_defs.md#createbytematchsetrequestrequesttypedef) 
 
-### create_ip_set
-
-.
-
-Type annotations for `boto3.client("waf").create_ip_set` method.
-
-Boto3 documentation:
-[WAF.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_ip_set)
-
-Arguments mapping described in
-[CreateIPSetRequestRequestTypeDef](./type_defs.md#createipsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Name`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
-
-<a id="create\_rate\_based\_rule"></a>
-
-### create_rate_based_rule
+### create\_geo\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").create_rate_based_rule` method.
+Type annotations and code completion for `#!python boto3.client("waf").create_geo_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_geo_match_set)
 
-Boto3 documentation:
-[WAF.Client.create_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_rate_based_rule)
+```python title="Method definition"
+def create_geo_match_set(
+    self,
+    *,
+    Name: str,
+    ChangeToken: str,
+) -> CreateGeoMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRateBasedRuleRequestRequestTypeDef](./type_defs.md#createratebasedrulerequestrequesttypedef).
+1. See [:material-code-braces: CreateGeoMatchSetResponseTypeDef](./type_defs.md#creategeomatchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `MetricName`: `str` *(required)*
-- `RateKey`: `Literal['IP']` (see [RateKeyType](./literals.md#ratekeytype))
-  *(required)*
-- `RateLimit`: `int` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateGeoMatchSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[CreateRateBasedRuleResponseTypeDef](./type_defs.md#createratebasedruleresponsetypedef).
+parent.create_geo_match_set(**kwargs)
+```
 
-<a id="create\_regex\_match\_set"></a>
+1. See [:material-code-braces: CreateGeoMatchSetRequestRequestTypeDef](./type_defs.md#creategeomatchsetrequestrequesttypedef) 
 
-### create_regex_match_set
-
-.
-
-Type annotations for `boto3.client("waf").create_regex_match_set` method.
-
-Boto3 documentation:
-[WAF.Client.create_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_regex_match_set)
-
-Arguments mapping described in
-[CreateRegexMatchSetRequestRequestTypeDef](./type_defs.md#createregexmatchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Name`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[CreateRegexMatchSetResponseTypeDef](./type_defs.md#createregexmatchsetresponsetypedef).
-
-<a id="create\_regex\_pattern\_set"></a>
-
-### create_regex_pattern_set
+### create\_ip\_set
 
 .
 
-Type annotations for `boto3.client("waf").create_regex_pattern_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").create_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_ip_set)
 
-Boto3 documentation:
-[WAF.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_regex_pattern_set)
+```python title="Method definition"
+def create_ip_set(
+    self,
+    *,
+    Name: str,
+    ChangeToken: str,
+) -> CreateIPSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRegexPatternSetRequestRequestTypeDef](./type_defs.md#createregexpatternsetrequestrequesttypedef).
+1. See [:material-code-braces: CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateIPSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef).
+parent.create_ip_set(**kwargs)
+```
 
-<a id="create\_rule"></a>
+1. See [:material-code-braces: CreateIPSetRequestRequestTypeDef](./type_defs.md#createipsetrequestrequesttypedef) 
 
-### create_rule
-
-.
-
-Type annotations for `boto3.client("waf").create_rule` method.
-
-Boto3 documentation:
-[WAF.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_rule)
-
-Arguments mapping described in
-[CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Name`: `str` *(required)*
-- `MetricName`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-Returns [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef).
-
-<a id="create\_rule\_group"></a>
-
-### create_rule_group
+### create\_rate\_based\_rule
 
 .
 
-Type annotations for `boto3.client("waf").create_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("waf").create_rate_based_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_rate_based_rule)
 
-Boto3 documentation:
-[WAF.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_rule_group)
+```python title="Method definition"
+def create_rate_based_rule(
+    self,
+    *,
+    Name: str,
+    MetricName: str,
+    RateKey: RateKeyType,  # (1)
+    RateLimit: int,
+    ChangeToken: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateRateBasedRuleResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateRuleGroupRequestRequestTypeDef](./type_defs.md#createrulegrouprequestrequesttypedef).
+1. See [:material-code-brackets: RateKeyType](./literals.md#ratekeytype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateRateBasedRuleResponseTypeDef](./type_defs.md#createratebasedruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `MetricName`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRateBasedRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "MetricName": ...,
+    "RateKey": ...,
+    "RateLimit": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
+parent.create_rate_based_rule(**kwargs)
+```
 
-<a id="create\_size\_constraint\_set"></a>
+1. See [:material-code-braces: CreateRateBasedRuleRequestRequestTypeDef](./type_defs.md#createratebasedrulerequestrequesttypedef) 
 
-### create_size_constraint_set
-
-.
-
-Type annotations for `boto3.client("waf").create_size_constraint_set` method.
-
-Boto3 documentation:
-[WAF.Client.create_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_size_constraint_set)
-
-Arguments mapping described in
-[CreateSizeConstraintSetRequestRequestTypeDef](./type_defs.md#createsizeconstraintsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Name`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[CreateSizeConstraintSetResponseTypeDef](./type_defs.md#createsizeconstraintsetresponsetypedef).
-
-<a id="create\_sql\_injection\_match\_set"></a>
-
-### create_sql_injection_match_set
+### create\_regex\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").create_sql_injection_match_set`
-method.
+Type annotations and code completion for `#!python boto3.client("waf").create_regex_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_regex_match_set)
 
-Boto3 documentation:
-[WAF.Client.create_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_sql_injection_match_set)
+```python title="Method definition"
+def create_regex_match_set(
+    self,
+    *,
+    Name: str,
+    ChangeToken: str,
+) -> CreateRegexMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#createsqlinjectionmatchsetrequestrequesttypedef).
+1. See [:material-code-braces: CreateRegexMatchSetResponseTypeDef](./type_defs.md#createregexmatchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateRegexMatchSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[CreateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#createsqlinjectionmatchsetresponsetypedef).
+parent.create_regex_match_set(**kwargs)
+```
 
-<a id="create\_web\_acl"></a>
+1. See [:material-code-braces: CreateRegexMatchSetRequestRequestTypeDef](./type_defs.md#createregexmatchsetrequestrequesttypedef) 
 
-### create_web_acl
+### create\_regex\_pattern\_set
 
 .
 
-Type annotations for `boto3.client("waf").create_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("waf").create_regex_pattern_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_regex_pattern_set)
 
-Boto3 documentation:
-[WAF.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_web_acl)
+```python title="Method definition"
+def create_regex_pattern_set(
+    self,
+    *,
+    Name: str,
+    ChangeToken: str,
+) -> CreateRegexPatternSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateWebACLRequestRequestTypeDef](./type_defs.md#createwebaclrequestrequesttypedef).
+1. See [:material-code-braces: CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `MetricName`: `str` *(required)*
-- `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
-  *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRegexPatternSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
+parent.create_regex_pattern_set(**kwargs)
+```
 
-<a id="create\_web\_acl\_migration\_stack"></a>
+1. See [:material-code-braces: CreateRegexPatternSetRequestRequestTypeDef](./type_defs.md#createregexpatternsetrequestrequesttypedef) 
 
-### create_web_acl_migration_stack
+### create\_rule
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").create_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_rule)
+
+```python title="Method definition"
+def create_rule(
+    self,
+    *,
+    Name: str,
+    MetricName: str,
+    ChangeToken: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateRuleResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "MetricName": ...,
+    "ChangeToken": ...,
+}
+
+parent.create_rule(**kwargs)
+```
+
+1. See [:material-code-braces: CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef) 
+
+### create\_rule\_group
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").create_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_rule_group)
+
+```python title="Method definition"
+def create_rule_group(
+    self,
+    *,
+    Name: str,
+    MetricName: str,
+    ChangeToken: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateRuleGroupResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateRuleGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "MetricName": ...,
+    "ChangeToken": ...,
+}
+
+parent.create_rule_group(**kwargs)
+```
+
+1. See [:material-code-braces: CreateRuleGroupRequestRequestTypeDef](./type_defs.md#createrulegrouprequestrequesttypedef) 
+
+### create\_size\_constraint\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").create_size_constraint_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_size_constraint_set)
+
+```python title="Method definition"
+def create_size_constraint_set(
+    self,
+    *,
+    Name: str,
+    ChangeToken: str,
+) -> CreateSizeConstraintSetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateSizeConstraintSetResponseTypeDef](./type_defs.md#createsizeconstraintsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateSizeConstraintSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ChangeToken": ...,
+}
+
+parent.create_size_constraint_set(**kwargs)
+```
+
+1. See [:material-code-braces: CreateSizeConstraintSetRequestRequestTypeDef](./type_defs.md#createsizeconstraintsetrequestrequesttypedef) 
+
+### create\_sql\_injection\_match\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").create_sql_injection_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_sql_injection_match_set)
+
+```python title="Method definition"
+def create_sql_injection_match_set(
+    self,
+    *,
+    Name: str,
+    ChangeToken: str,
+) -> CreateSqlInjectionMatchSetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: CreateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#createsqlinjectionmatchsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateSqlInjectionMatchSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ChangeToken": ...,
+}
+
+parent.create_sql_injection_match_set(**kwargs)
+```
+
+1. See [:material-code-braces: CreateSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#createsqlinjectionmatchsetrequestrequesttypedef) 
+
+### create\_web\_acl
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").create_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_web_acl)
+
+```python title="Method definition"
+def create_web_acl(
+    self,
+    *,
+    Name: str,
+    MetricName: str,
+    DefaultAction: WafActionTypeDef,  # (1)
+    ChangeToken: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateWebACLResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: WafActionTypeDef](./type_defs.md#wafactiontypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateWebACLRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "MetricName": ...,
+    "DefaultAction": ...,
+    "ChangeToken": ...,
+}
+
+parent.create_web_acl(**kwargs)
+```
+
+1. See [:material-code-braces: CreateWebACLRequestRequestTypeDef](./type_defs.md#createwebaclrequestrequesttypedef) 
+
+### create\_web\_acl\_migration\_stack
 
 Creates an AWS CloudFormation WAFV2 template for the specified web ACL in the
 specified Amazon S3 bucket.
 
-Type annotations for `boto3.client("waf").create_web_acl_migration_stack`
-method.
+Type annotations and code completion for `#!python boto3.client("waf").create_web_acl_migration_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_web_acl_migration_stack)
 
-Boto3 documentation:
-[WAF.Client.create_web_acl_migration_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_web_acl_migration_stack)
+```python title="Method definition"
+def create_web_acl_migration_stack(
+    self,
+    *,
+    WebACLId: str,
+    S3BucketName: str,
+    IgnoreUnsupportedType: bool,
+) -> CreateWebACLMigrationStackResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateWebACLMigrationStackRequestRequestTypeDef](./type_defs.md#createwebaclmigrationstackrequestrequesttypedef).
+1. See [:material-code-braces: CreateWebACLMigrationStackResponseTypeDef](./type_defs.md#createwebaclmigrationstackresponsetypedef) 
 
-Keyword-only arguments:
 
-- `WebACLId`: `str` *(required)*
-- `S3BucketName`: `str` *(required)*
-- `IgnoreUnsupportedType`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateWebACLMigrationStackRequestRequestTypeDef = {  # (1)
+    "WebACLId": ...,
+    "S3BucketName": ...,
+    "IgnoreUnsupportedType": ...,
+}
 
-Returns
-[CreateWebACLMigrationStackResponseTypeDef](./type_defs.md#createwebaclmigrationstackresponsetypedef).
+parent.create_web_acl_migration_stack(**kwargs)
+```
 
-<a id="create\_xss\_match\_set"></a>
+1. See [:material-code-braces: CreateWebACLMigrationStackRequestRequestTypeDef](./type_defs.md#createwebaclmigrationstackrequestrequesttypedef) 
 
-### create_xss_match_set
-
-.
-
-Type annotations for `boto3.client("waf").create_xss_match_set` method.
-
-Boto3 documentation:
-[WAF.Client.create_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_xss_match_set)
-
-Arguments mapping described in
-[CreateXssMatchSetRequestRequestTypeDef](./type_defs.md#createxssmatchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Name`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[CreateXssMatchSetResponseTypeDef](./type_defs.md#createxssmatchsetresponsetypedef).
-
-<a id="delete\_byte\_match\_set"></a>
-
-### delete_byte_match_set
+### create\_xss\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").delete_byte_match_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").create_xss_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.create_xss_match_set)
 
-Boto3 documentation:
-[WAF.Client.delete_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_byte_match_set)
+```python title="Method definition"
+def create_xss_match_set(
+    self,
+    *,
+    Name: str,
+    ChangeToken: str,
+) -> CreateXssMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteByteMatchSetRequestRequestTypeDef](./type_defs.md#deletebytematchsetrequestrequesttypedef).
+1. See [:material-code-braces: CreateXssMatchSetResponseTypeDef](./type_defs.md#createxssmatchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ByteMatchSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateXssMatchSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[DeleteByteMatchSetResponseTypeDef](./type_defs.md#deletebytematchsetresponsetypedef).
+parent.create_xss_match_set(**kwargs)
+```
 
-<a id="delete\_geo\_match\_set"></a>
+1. See [:material-code-braces: CreateXssMatchSetRequestRequestTypeDef](./type_defs.md#createxssmatchsetrequestrequesttypedef) 
 
-### delete_geo_match_set
-
-.
-
-Type annotations for `boto3.client("waf").delete_geo_match_set` method.
-
-Boto3 documentation:
-[WAF.Client.delete_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_geo_match_set)
-
-Arguments mapping described in
-[DeleteGeoMatchSetRequestRequestTypeDef](./type_defs.md#deletegeomatchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `GeoMatchSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[DeleteGeoMatchSetResponseTypeDef](./type_defs.md#deletegeomatchsetresponsetypedef).
-
-<a id="delete\_ip\_set"></a>
-
-### delete_ip_set
+### delete\_byte\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").delete_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").delete_byte_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_byte_match_set)
 
-Boto3 documentation:
-[WAF.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_ip_set)
+```python title="Method definition"
+def delete_byte_match_set(
+    self,
+    *,
+    ByteMatchSetId: str,
+    ChangeToken: str,
+) -> DeleteByteMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteIPSetRequestRequestTypeDef](./type_defs.md#deleteipsetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteByteMatchSetResponseTypeDef](./type_defs.md#deletebytematchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IPSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteByteMatchSetRequestRequestTypeDef = {  # (1)
+    "ByteMatchSetId": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[DeleteIPSetResponseTypeDef](./type_defs.md#deleteipsetresponsetypedef).
+parent.delete_byte_match_set(**kwargs)
+```
 
-<a id="delete\_logging\_configuration"></a>
+1. See [:material-code-braces: DeleteByteMatchSetRequestRequestTypeDef](./type_defs.md#deletebytematchsetrequestrequesttypedef) 
 
-### delete_logging_configuration
-
-.
-
-Type annotations for `boto3.client("waf").delete_logging_configuration` method.
-
-Boto3 documentation:
-[WAF.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_logging_configuration)
-
-Arguments mapping described in
-[DeleteLoggingConfigurationRequestRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceArn`: `str` *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="delete\_permission\_policy"></a>
-
-### delete_permission_policy
+### delete\_geo\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").delete_permission_policy` method.
+Type annotations and code completion for `#!python boto3.client("waf").delete_geo_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_geo_match_set)
 
-Boto3 documentation:
-[WAF.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_permission_policy)
+```python title="Method definition"
+def delete_geo_match_set(
+    self,
+    *,
+    GeoMatchSetId: str,
+    ChangeToken: str,
+) -> DeleteGeoMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeletePermissionPolicyRequestRequestTypeDef](./type_defs.md#deletepermissionpolicyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteGeoMatchSetResponseTypeDef](./type_defs.md#deletegeomatchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGeoMatchSetRequestRequestTypeDef = {  # (1)
+    "GeoMatchSetId": ...,
+    "ChangeToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_geo_match_set(**kwargs)
+```
 
-<a id="delete\_rate\_based\_rule"></a>
+1. See [:material-code-braces: DeleteGeoMatchSetRequestRequestTypeDef](./type_defs.md#deletegeomatchsetrequestrequesttypedef) 
 
-### delete_rate_based_rule
-
-.
-
-Type annotations for `boto3.client("waf").delete_rate_based_rule` method.
-
-Boto3 documentation:
-[WAF.Client.delete_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rate_based_rule)
-
-Arguments mapping described in
-[DeleteRateBasedRuleRequestRequestTypeDef](./type_defs.md#deleteratebasedrulerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `RuleId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[DeleteRateBasedRuleResponseTypeDef](./type_defs.md#deleteratebasedruleresponsetypedef).
-
-<a id="delete\_regex\_match\_set"></a>
-
-### delete_regex_match_set
+### delete\_ip\_set
 
 .
 
-Type annotations for `boto3.client("waf").delete_regex_match_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").delete_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_ip_set)
 
-Boto3 documentation:
-[WAF.Client.delete_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_regex_match_set)
+```python title="Method definition"
+def delete_ip_set(
+    self,
+    *,
+    IPSetId: str,
+    ChangeToken: str,
+) -> DeleteIPSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRegexMatchSetRequestRequestTypeDef](./type_defs.md#deleteregexmatchsetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteIPSetResponseTypeDef](./type_defs.md#deleteipsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegexMatchSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIPSetRequestRequestTypeDef = {  # (1)
+    "IPSetId": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[DeleteRegexMatchSetResponseTypeDef](./type_defs.md#deleteregexmatchsetresponsetypedef).
+parent.delete_ip_set(**kwargs)
+```
 
-<a id="delete\_regex\_pattern\_set"></a>
+1. See [:material-code-braces: DeleteIPSetRequestRequestTypeDef](./type_defs.md#deleteipsetrequestrequesttypedef) 
 
-### delete_regex_pattern_set
-
-.
-
-Type annotations for `boto3.client("waf").delete_regex_pattern_set` method.
-
-Boto3 documentation:
-[WAF.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_regex_pattern_set)
-
-Arguments mapping described in
-[DeleteRegexPatternSetRequestRequestTypeDef](./type_defs.md#deleteregexpatternsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `RegexPatternSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[DeleteRegexPatternSetResponseTypeDef](./type_defs.md#deleteregexpatternsetresponsetypedef).
-
-<a id="delete\_rule"></a>
-
-### delete_rule
+### delete\_logging\_configuration
 
 .
 
-Type annotations for `boto3.client("waf").delete_rule` method.
+Type annotations and code completion for `#!python boto3.client("waf").delete_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_logging_configuration)
 
-Boto3 documentation:
-[WAF.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rule)
+```python title="Method definition"
+def delete_logging_configuration(
+    self,
+    *,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RuleId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns [DeleteRuleResponseTypeDef](./type_defs.md#deleteruleresponsetypedef).
+parent.delete_logging_configuration(**kwargs)
+```
 
-<a id="delete\_rule\_group"></a>
+1. See [:material-code-braces: DeleteLoggingConfigurationRequestRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequestrequesttypedef) 
 
-### delete_rule_group
-
-.
-
-Type annotations for `boto3.client("waf").delete_rule_group` method.
-
-Boto3 documentation:
-[WAF.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rule_group)
-
-Arguments mapping described in
-[DeleteRuleGroupRequestRequestTypeDef](./type_defs.md#deleterulegrouprequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `RuleGroupId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[DeleteRuleGroupResponseTypeDef](./type_defs.md#deleterulegroupresponsetypedef).
-
-<a id="delete\_size\_constraint\_set"></a>
-
-### delete_size_constraint_set
+### delete\_permission\_policy
 
 .
 
-Type annotations for `boto3.client("waf").delete_size_constraint_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").delete_permission_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_permission_policy)
 
-Boto3 documentation:
-[WAF.Client.delete_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_size_constraint_set)
+```python title="Method definition"
+def delete_permission_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSizeConstraintSetRequestRequestTypeDef](./type_defs.md#deletesizeconstraintsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SizeConstraintSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePermissionPolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[DeleteSizeConstraintSetResponseTypeDef](./type_defs.md#deletesizeconstraintsetresponsetypedef).
+parent.delete_permission_policy(**kwargs)
+```
 
-<a id="delete\_sql\_injection\_match\_set"></a>
+1. See [:material-code-braces: DeletePermissionPolicyRequestRequestTypeDef](./type_defs.md#deletepermissionpolicyrequestrequesttypedef) 
 
-### delete_sql_injection_match_set
-
-.
-
-Type annotations for `boto3.client("waf").delete_sql_injection_match_set`
-method.
-
-Boto3 documentation:
-[WAF.Client.delete_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_sql_injection_match_set)
-
-Arguments mapping described in
-[DeleteSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#deletesqlinjectionmatchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `SqlInjectionMatchSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[DeleteSqlInjectionMatchSetResponseTypeDef](./type_defs.md#deletesqlinjectionmatchsetresponsetypedef).
-
-<a id="delete\_web\_acl"></a>
-
-### delete_web_acl
+### delete\_rate\_based\_rule
 
 .
 
-Type annotations for `boto3.client("waf").delete_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("waf").delete_rate_based_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rate_based_rule)
 
-Boto3 documentation:
-[WAF.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_web_acl)
+```python title="Method definition"
+def delete_rate_based_rule(
+    self,
+    *,
+    RuleId: str,
+    ChangeToken: str,
+) -> DeleteRateBasedRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteWebACLRequestRequestTypeDef](./type_defs.md#deletewebaclrequestrequesttypedef).
+1. See [:material-code-braces: DeleteRateBasedRuleResponseTypeDef](./type_defs.md#deleteratebasedruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `WebACLId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRateBasedRuleRequestRequestTypeDef = {  # (1)
+    "RuleId": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[DeleteWebACLResponseTypeDef](./type_defs.md#deletewebaclresponsetypedef).
+parent.delete_rate_based_rule(**kwargs)
+```
 
-<a id="delete\_xss\_match\_set"></a>
+1. See [:material-code-braces: DeleteRateBasedRuleRequestRequestTypeDef](./type_defs.md#deleteratebasedrulerequestrequesttypedef) 
 
-### delete_xss_match_set
+### delete\_regex\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").delete_xss_match_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").delete_regex_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_regex_match_set)
 
-Boto3 documentation:
-[WAF.Client.delete_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_xss_match_set)
+```python title="Method definition"
+def delete_regex_match_set(
+    self,
+    *,
+    RegexMatchSetId: str,
+    ChangeToken: str,
+) -> DeleteRegexMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteXssMatchSetRequestRequestTypeDef](./type_defs.md#deletexssmatchsetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteRegexMatchSetResponseTypeDef](./type_defs.md#deleteregexmatchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `XssMatchSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRegexMatchSetRequestRequestTypeDef = {  # (1)
+    "RegexMatchSetId": ...,
+    "ChangeToken": ...,
+}
 
-Returns
-[DeleteXssMatchSetResponseTypeDef](./type_defs.md#deletexssmatchsetresponsetypedef).
+parent.delete_regex_match_set(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteRegexMatchSetRequestRequestTypeDef](./type_defs.md#deleteregexmatchsetrequestrequesttypedef) 
 
-### generate_presigned_url
+### delete\_regex\_pattern\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").delete_regex_pattern_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_regex_pattern_set)
+
+```python title="Method definition"
+def delete_regex_pattern_set(
+    self,
+    *,
+    RegexPatternSetId: str,
+    ChangeToken: str,
+) -> DeleteRegexPatternSetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteRegexPatternSetResponseTypeDef](./type_defs.md#deleteregexpatternsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteRegexPatternSetRequestRequestTypeDef = {  # (1)
+    "RegexPatternSetId": ...,
+    "ChangeToken": ...,
+}
+
+parent.delete_regex_pattern_set(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteRegexPatternSetRequestRequestTypeDef](./type_defs.md#deleteregexpatternsetrequestrequesttypedef) 
+
+### delete\_rule
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").delete_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rule)
+
+```python title="Method definition"
+def delete_rule(
+    self,
+    *,
+    RuleId: str,
+    ChangeToken: str,
+) -> DeleteRuleResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteRuleResponseTypeDef](./type_defs.md#deleteruleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteRuleRequestRequestTypeDef = {  # (1)
+    "RuleId": ...,
+    "ChangeToken": ...,
+}
+
+parent.delete_rule(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef) 
+
+### delete\_rule\_group
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").delete_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_rule_group)
+
+```python title="Method definition"
+def delete_rule_group(
+    self,
+    *,
+    RuleGroupId: str,
+    ChangeToken: str,
+) -> DeleteRuleGroupResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteRuleGroupResponseTypeDef](./type_defs.md#deleterulegroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteRuleGroupRequestRequestTypeDef = {  # (1)
+    "RuleGroupId": ...,
+    "ChangeToken": ...,
+}
+
+parent.delete_rule_group(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteRuleGroupRequestRequestTypeDef](./type_defs.md#deleterulegrouprequestrequesttypedef) 
+
+### delete\_size\_constraint\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").delete_size_constraint_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_size_constraint_set)
+
+```python title="Method definition"
+def delete_size_constraint_set(
+    self,
+    *,
+    SizeConstraintSetId: str,
+    ChangeToken: str,
+) -> DeleteSizeConstraintSetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteSizeConstraintSetResponseTypeDef](./type_defs.md#deletesizeconstraintsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteSizeConstraintSetRequestRequestTypeDef = {  # (1)
+    "SizeConstraintSetId": ...,
+    "ChangeToken": ...,
+}
+
+parent.delete_size_constraint_set(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteSizeConstraintSetRequestRequestTypeDef](./type_defs.md#deletesizeconstraintsetrequestrequesttypedef) 
+
+### delete\_sql\_injection\_match\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").delete_sql_injection_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_sql_injection_match_set)
+
+```python title="Method definition"
+def delete_sql_injection_match_set(
+    self,
+    *,
+    SqlInjectionMatchSetId: str,
+    ChangeToken: str,
+) -> DeleteSqlInjectionMatchSetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteSqlInjectionMatchSetResponseTypeDef](./type_defs.md#deletesqlinjectionmatchsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteSqlInjectionMatchSetRequestRequestTypeDef = {  # (1)
+    "SqlInjectionMatchSetId": ...,
+    "ChangeToken": ...,
+}
+
+parent.delete_sql_injection_match_set(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#deletesqlinjectionmatchsetrequestrequesttypedef) 
+
+### delete\_web\_acl
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").delete_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_web_acl)
+
+```python title="Method definition"
+def delete_web_acl(
+    self,
+    *,
+    WebACLId: str,
+    ChangeToken: str,
+) -> DeleteWebACLResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteWebACLResponseTypeDef](./type_defs.md#deletewebaclresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteWebACLRequestRequestTypeDef = {  # (1)
+    "WebACLId": ...,
+    "ChangeToken": ...,
+}
+
+parent.delete_web_acl(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteWebACLRequestRequestTypeDef](./type_defs.md#deletewebaclrequestrequesttypedef) 
+
+### delete\_xss\_match\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").delete_xss_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.delete_xss_match_set)
+
+```python title="Method definition"
+def delete_xss_match_set(
+    self,
+    *,
+    XssMatchSetId: str,
+    ChangeToken: str,
+) -> DeleteXssMatchSetResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteXssMatchSetResponseTypeDef](./type_defs.md#deletexssmatchsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteXssMatchSetRequestRequestTypeDef = {  # (1)
+    "XssMatchSetId": ...,
+    "ChangeToken": ...,
+}
+
+parent.delete_xss_match_set(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteXssMatchSetRequestRequestTypeDef](./type_defs.md#deletexssmatchsetrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("waf").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("waf").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.generate_presigned_url)
 
-Boto3 documentation:
-[WAF.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_byte\_match\_set"></a>
-
-### get_byte_match_set
-
-.
-
-Type annotations for `boto3.client("waf").get_byte_match_set` method.
-
-Boto3 documentation:
-[WAF.Client.get_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_byte_match_set)
-
-Arguments mapping described in
-[GetByteMatchSetRequestRequestTypeDef](./type_defs.md#getbytematchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ByteMatchSetId`: `str` *(required)*
-
-Returns
-[GetByteMatchSetResponseTypeDef](./type_defs.md#getbytematchsetresponsetypedef).
-
-<a id="get\_change\_token"></a>
-
-### get_change_token
+### get\_byte\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").get_change_token` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_byte_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_byte_match_set)
 
-Boto3 documentation:
-[WAF.Client.get_change_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_change_token)
+```python title="Method definition"
+def get_byte_match_set(
+    self,
+    *,
+    ByteMatchSetId: str,
+) -> GetByteMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetChangeTokenResponseTypeDef](./type_defs.md#getchangetokenresponsetypedef).
+1. See [:material-code-braces: GetByteMatchSetResponseTypeDef](./type_defs.md#getbytematchsetresponsetypedef) 
 
-<a id="get\_change\_token\_status"></a>
 
-### get_change_token_status
+```python title="Usage example with kwargs"
+kwargs: GetByteMatchSetRequestRequestTypeDef = {  # (1)
+    "ByteMatchSetId": ...,
+}
 
-.
+parent.get_byte_match_set(**kwargs)
+```
 
-Type annotations for `boto3.client("waf").get_change_token_status` method.
+1. See [:material-code-braces: GetByteMatchSetRequestRequestTypeDef](./type_defs.md#getbytematchsetrequestrequesttypedef) 
 
-Boto3 documentation:
-[WAF.Client.get_change_token_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_change_token_status)
-
-Arguments mapping described in
-[GetChangeTokenStatusRequestRequestTypeDef](./type_defs.md#getchangetokenstatusrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[GetChangeTokenStatusResponseTypeDef](./type_defs.md#getchangetokenstatusresponsetypedef).
-
-<a id="get\_geo\_match\_set"></a>
-
-### get_geo_match_set
+### get\_change\_token
 
 .
 
-Type annotations for `boto3.client("waf").get_geo_match_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_change_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_change_token)
 
-Boto3 documentation:
-[WAF.Client.get_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_geo_match_set)
+```python title="Method definition"
+def get_change_token(
+    self,
+) -> GetChangeTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGeoMatchSetRequestRequestTypeDef](./type_defs.md#getgeomatchsetrequestrequesttypedef).
+1. See [:material-code-braces: GetChangeTokenResponseTypeDef](./type_defs.md#getchangetokenresponsetypedef) 
 
-Keyword-only arguments:
-
-- `GeoMatchSetId`: `str` *(required)*
-
-Returns
-[GetGeoMatchSetResponseTypeDef](./type_defs.md#getgeomatchsetresponsetypedef).
-
-<a id="get\_ip\_set"></a>
-
-### get_ip_set
+### get\_change\_token\_status
 
 .
 
-Type annotations for `boto3.client("waf").get_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_change_token_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_change_token_status)
 
-Boto3 documentation:
-[WAF.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_ip_set)
+```python title="Method definition"
+def get_change_token_status(
+    self,
+    *,
+    ChangeToken: str,
+) -> GetChangeTokenStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIPSetRequestRequestTypeDef](./type_defs.md#getipsetrequestrequesttypedef).
+1. See [:material-code-braces: GetChangeTokenStatusResponseTypeDef](./type_defs.md#getchangetokenstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IPSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetChangeTokenStatusRequestRequestTypeDef = {  # (1)
+    "ChangeToken": ...,
+}
 
-Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
+parent.get_change_token_status(**kwargs)
+```
 
-<a id="get\_logging\_configuration"></a>
+1. See [:material-code-braces: GetChangeTokenStatusRequestRequestTypeDef](./type_defs.md#getchangetokenstatusrequestrequesttypedef) 
 
-### get_logging_configuration
-
-.
-
-Type annotations for `boto3.client("waf").get_logging_configuration` method.
-
-Boto3 documentation:
-[WAF.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_logging_configuration)
-
-Arguments mapping described in
-[GetLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getloggingconfigurationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceArn`: `str` *(required)*
-
-Returns
-[GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef).
-
-<a id="get\_permission\_policy"></a>
-
-### get_permission_policy
+### get\_geo\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").get_permission_policy` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_geo_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_geo_match_set)
 
-Boto3 documentation:
-[WAF.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_permission_policy)
+```python title="Method definition"
+def get_geo_match_set(
+    self,
+    *,
+    GeoMatchSetId: str,
+) -> GetGeoMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPermissionPolicyRequestRequestTypeDef](./type_defs.md#getpermissionpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetGeoMatchSetResponseTypeDef](./type_defs.md#getgeomatchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGeoMatchSetRequestRequestTypeDef = {  # (1)
+    "GeoMatchSetId": ...,
+}
 
-Returns
-[GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef).
+parent.get_geo_match_set(**kwargs)
+```
 
-<a id="get\_rate\_based\_rule"></a>
+1. See [:material-code-braces: GetGeoMatchSetRequestRequestTypeDef](./type_defs.md#getgeomatchsetrequestrequesttypedef) 
 
-### get_rate_based_rule
-
-.
-
-Type annotations for `boto3.client("waf").get_rate_based_rule` method.
-
-Boto3 documentation:
-[WAF.Client.get_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rate_based_rule)
-
-Arguments mapping described in
-[GetRateBasedRuleRequestRequestTypeDef](./type_defs.md#getratebasedrulerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `RuleId`: `str` *(required)*
-
-Returns
-[GetRateBasedRuleResponseTypeDef](./type_defs.md#getratebasedruleresponsetypedef).
-
-<a id="get\_rate\_based\_rule\_managed\_keys"></a>
-
-### get_rate_based_rule_managed_keys
+### get\_ip\_set
 
 .
 
-Type annotations for `boto3.client("waf").get_rate_based_rule_managed_keys`
-method.
+Type annotations and code completion for `#!python boto3.client("waf").get_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_ip_set)
 
-Boto3 documentation:
-[WAF.Client.get_rate_based_rule_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rate_based_rule_managed_keys)
+```python title="Method definition"
+def get_ip_set(
+    self,
+    *,
+    IPSetId: str,
+) -> GetIPSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRateBasedRuleManagedKeysRequestRequestTypeDef](./type_defs.md#getratebasedrulemanagedkeysrequestrequesttypedef).
+1. See [:material-code-braces: GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RuleId`: `str` *(required)*
-- `NextMarker`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetIPSetRequestRequestTypeDef = {  # (1)
+    "IPSetId": ...,
+}
 
-Returns
-[GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef).
+parent.get_ip_set(**kwargs)
+```
 
-<a id="get\_regex\_match\_set"></a>
+1. See [:material-code-braces: GetIPSetRequestRequestTypeDef](./type_defs.md#getipsetrequestrequesttypedef) 
 
-### get_regex_match_set
-
-.
-
-Type annotations for `boto3.client("waf").get_regex_match_set` method.
-
-Boto3 documentation:
-[WAF.Client.get_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_regex_match_set)
-
-Arguments mapping described in
-[GetRegexMatchSetRequestRequestTypeDef](./type_defs.md#getregexmatchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `RegexMatchSetId`: `str` *(required)*
-
-Returns
-[GetRegexMatchSetResponseTypeDef](./type_defs.md#getregexmatchsetresponsetypedef).
-
-<a id="get\_regex\_pattern\_set"></a>
-
-### get_regex_pattern_set
+### get\_logging\_configuration
 
 .
 
-Type annotations for `boto3.client("waf").get_regex_pattern_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_logging_configuration)
 
-Boto3 documentation:
-[WAF.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_regex_pattern_set)
+```python title="Method definition"
+def get_logging_configuration(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetLoggingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRegexPatternSetRequestRequestTypeDef](./type_defs.md#getregexpatternsetrequestrequesttypedef).
+1. See [:material-code-braces: GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegexPatternSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef).
+parent.get_logging_configuration(**kwargs)
+```
 
-<a id="get\_rule"></a>
+1. See [:material-code-braces: GetLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getloggingconfigurationrequestrequesttypedef) 
 
-### get_rule
-
-.
-
-Type annotations for `boto3.client("waf").get_rule` method.
-
-Boto3 documentation:
-[WAF.Client.get_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rule)
-
-Arguments mapping described in
-[GetRuleRequestRequestTypeDef](./type_defs.md#getrulerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `RuleId`: `str` *(required)*
-
-Returns [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef).
-
-<a id="get\_rule\_group"></a>
-
-### get_rule_group
+### get\_permission\_policy
 
 .
 
-Type annotations for `boto3.client("waf").get_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_permission_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_permission_policy)
 
-Boto3 documentation:
-[WAF.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rule_group)
+```python title="Method definition"
+def get_permission_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetPermissionPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRuleGroupRequestRequestTypeDef](./type_defs.md#getrulegrouprequestrequesttypedef).
+1. See [:material-code-braces: GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RuleGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPermissionPolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef).
+parent.get_permission_policy(**kwargs)
+```
 
-<a id="get\_sampled\_requests"></a>
+1. See [:material-code-braces: GetPermissionPolicyRequestRequestTypeDef](./type_defs.md#getpermissionpolicyrequestrequesttypedef) 
 
-### get_sampled_requests
-
-.
-
-Type annotations for `boto3.client("waf").get_sampled_requests` method.
-
-Boto3 documentation:
-[WAF.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_sampled_requests)
-
-Arguments mapping described in
-[GetSampledRequestsRequestRequestTypeDef](./type_defs.md#getsampledrequestsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `WebAclId`: `str` *(required)*
-- `RuleId`: `str` *(required)*
-- `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
-  *(required)*
-- `MaxItems`: `int` *(required)*
-
-Returns
-[GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef).
-
-<a id="get\_size\_constraint\_set"></a>
-
-### get_size_constraint_set
+### get\_rate\_based\_rule
 
 .
 
-Type annotations for `boto3.client("waf").get_size_constraint_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_rate_based_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rate_based_rule)
 
-Boto3 documentation:
-[WAF.Client.get_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_size_constraint_set)
+```python title="Method definition"
+def get_rate_based_rule(
+    self,
+    *,
+    RuleId: str,
+) -> GetRateBasedRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSizeConstraintSetRequestRequestTypeDef](./type_defs.md#getsizeconstraintsetrequestrequesttypedef).
+1. See [:material-code-braces: GetRateBasedRuleResponseTypeDef](./type_defs.md#getratebasedruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SizeConstraintSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRateBasedRuleRequestRequestTypeDef = {  # (1)
+    "RuleId": ...,
+}
 
-Returns
-[GetSizeConstraintSetResponseTypeDef](./type_defs.md#getsizeconstraintsetresponsetypedef).
+parent.get_rate_based_rule(**kwargs)
+```
 
-<a id="get\_sql\_injection\_match\_set"></a>
+1. See [:material-code-braces: GetRateBasedRuleRequestRequestTypeDef](./type_defs.md#getratebasedrulerequestrequesttypedef) 
 
-### get_sql_injection_match_set
-
-.
-
-Type annotations for `boto3.client("waf").get_sql_injection_match_set` method.
-
-Boto3 documentation:
-[WAF.Client.get_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_sql_injection_match_set)
-
-Arguments mapping described in
-[GetSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#getsqlinjectionmatchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `SqlInjectionMatchSetId`: `str` *(required)*
-
-Returns
-[GetSqlInjectionMatchSetResponseTypeDef](./type_defs.md#getsqlinjectionmatchsetresponsetypedef).
-
-<a id="get\_web\_acl"></a>
-
-### get_web_acl
+### get\_rate\_based\_rule\_managed\_keys
 
 .
 
-Type annotations for `boto3.client("waf").get_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_rate_based_rule_managed_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rate_based_rule_managed_keys)
 
-Boto3 documentation:
-[WAF.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_web_acl)
+```python title="Method definition"
+def get_rate_based_rule_managed_keys(
+    self,
+    *,
+    RuleId: str,
+    NextMarker: str = ...,
+) -> GetRateBasedRuleManagedKeysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWebACLRequestRequestTypeDef](./type_defs.md#getwebaclrequestrequesttypedef).
+1. See [:material-code-braces: GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `WebACLId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRateBasedRuleManagedKeysRequestRequestTypeDef = {  # (1)
+    "RuleId": ...,
+}
 
-Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
+parent.get_rate_based_rule_managed_keys(**kwargs)
+```
 
-<a id="get\_xss\_match\_set"></a>
+1. See [:material-code-braces: GetRateBasedRuleManagedKeysRequestRequestTypeDef](./type_defs.md#getratebasedrulemanagedkeysrequestrequesttypedef) 
 
-### get_xss_match_set
-
-.
-
-Type annotations for `boto3.client("waf").get_xss_match_set` method.
-
-Boto3 documentation:
-[WAF.Client.get_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_xss_match_set)
-
-Arguments mapping described in
-[GetXssMatchSetRequestRequestTypeDef](./type_defs.md#getxssmatchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `XssMatchSetId`: `str` *(required)*
-
-Returns
-[GetXssMatchSetResponseTypeDef](./type_defs.md#getxssmatchsetresponsetypedef).
-
-<a id="list\_activated\_rules\_in\_rule\_group"></a>
-
-### list_activated_rules_in_rule_group
+### get\_regex\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").list_activated_rules_in_rule_group`
-method.
+Type annotations and code completion for `#!python boto3.client("waf").get_regex_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_regex_match_set)
 
-Boto3 documentation:
-[WAF.Client.list_activated_rules_in_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_activated_rules_in_rule_group)
+```python title="Method definition"
+def get_regex_match_set(
+    self,
+    *,
+    RegexMatchSetId: str,
+) -> GetRegexMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListActivatedRulesInRuleGroupRequestRequestTypeDef](./type_defs.md#listactivatedrulesinrulegrouprequestrequesttypedef).
+1. See [:material-code-braces: GetRegexMatchSetResponseTypeDef](./type_defs.md#getregexmatchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RuleGroupId`: `str`
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetRegexMatchSetRequestRequestTypeDef = {  # (1)
+    "RegexMatchSetId": ...,
+}
 
-Returns
-[ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef).
+parent.get_regex_match_set(**kwargs)
+```
 
-<a id="list\_byte\_match\_sets"></a>
+1. See [:material-code-braces: GetRegexMatchSetRequestRequestTypeDef](./type_defs.md#getregexmatchsetrequestrequesttypedef) 
 
-### list_byte_match_sets
-
-.
-
-Type annotations for `boto3.client("waf").list_byte_match_sets` method.
-
-Boto3 documentation:
-[WAF.Client.list_byte_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_byte_match_sets)
-
-Arguments mapping described in
-[ListByteMatchSetsRequestRequestTypeDef](./type_defs.md#listbytematchsetsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-Returns
-[ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef).
-
-<a id="list\_geo\_match\_sets"></a>
-
-### list_geo_match_sets
+### get\_regex\_pattern\_set
 
 .
 
-Type annotations for `boto3.client("waf").list_geo_match_sets` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_regex_pattern_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_regex_pattern_set)
 
-Boto3 documentation:
-[WAF.Client.list_geo_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_geo_match_sets)
+```python title="Method definition"
+def get_regex_pattern_set(
+    self,
+    *,
+    RegexPatternSetId: str,
+) -> GetRegexPatternSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGeoMatchSetsRequestRequestTypeDef](./type_defs.md#listgeomatchsetsrequestrequesttypedef).
+1. See [:material-code-braces: GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetRegexPatternSetRequestRequestTypeDef = {  # (1)
+    "RegexPatternSetId": ...,
+}
 
-Returns
-[ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef).
+parent.get_regex_pattern_set(**kwargs)
+```
 
-<a id="list\_ip\_sets"></a>
+1. See [:material-code-braces: GetRegexPatternSetRequestRequestTypeDef](./type_defs.md#getregexpatternsetrequestrequesttypedef) 
 
-### list_ip_sets
-
-.
-
-Type annotations for `boto3.client("waf").list_ip_sets` method.
-
-Boto3 documentation:
-[WAF.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_ip_sets)
-
-Arguments mapping described in
-[ListIPSetsRequestRequestTypeDef](./type_defs.md#listipsetsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
-
-<a id="list\_logging\_configurations"></a>
-
-### list_logging_configurations
+### get\_rule
 
 .
 
-Type annotations for `boto3.client("waf").list_logging_configurations` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rule)
 
-Boto3 documentation:
-[WAF.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_logging_configurations)
+```python title="Method definition"
+def get_rule(
+    self,
+    *,
+    RuleId: str,
+) -> GetRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLoggingConfigurationsRequestRequestTypeDef](./type_defs.md#listloggingconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetRuleRequestRequestTypeDef = {  # (1)
+    "RuleId": ...,
+}
 
-Returns
-[ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef).
+parent.get_rule(**kwargs)
+```
 
-<a id="list\_rate\_based\_rules"></a>
+1. See [:material-code-braces: GetRuleRequestRequestTypeDef](./type_defs.md#getrulerequestrequesttypedef) 
 
-### list_rate_based_rules
-
-.
-
-Type annotations for `boto3.client("waf").list_rate_based_rules` method.
-
-Boto3 documentation:
-[WAF.Client.list_rate_based_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rate_based_rules)
-
-Arguments mapping described in
-[ListRateBasedRulesRequestRequestTypeDef](./type_defs.md#listratebasedrulesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-Returns
-[ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef).
-
-<a id="list\_regex\_match\_sets"></a>
-
-### list_regex_match_sets
+### get\_rule\_group
 
 .
 
-Type annotations for `boto3.client("waf").list_regex_match_sets` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_rule_group)
 
-Boto3 documentation:
-[WAF.Client.list_regex_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_regex_match_sets)
+```python title="Method definition"
+def get_rule_group(
+    self,
+    *,
+    RuleGroupId: str,
+) -> GetRuleGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRegexMatchSetsRequestRequestTypeDef](./type_defs.md#listregexmatchsetsrequestrequesttypedef).
+1. See [:material-code-braces: GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetRuleGroupRequestRequestTypeDef = {  # (1)
+    "RuleGroupId": ...,
+}
 
-Returns
-[ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef).
+parent.get_rule_group(**kwargs)
+```
 
-<a id="list\_regex\_pattern\_sets"></a>
+1. See [:material-code-braces: GetRuleGroupRequestRequestTypeDef](./type_defs.md#getrulegrouprequestrequesttypedef) 
 
-### list_regex_pattern_sets
-
-.
-
-Type annotations for `boto3.client("waf").list_regex_pattern_sets` method.
-
-Boto3 documentation:
-[WAF.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_regex_pattern_sets)
-
-Arguments mapping described in
-[ListRegexPatternSetsRequestRequestTypeDef](./type_defs.md#listregexpatternsetsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-Returns
-[ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef).
-
-<a id="list\_rule\_groups"></a>
-
-### list_rule_groups
+### get\_sampled\_requests
 
 .
 
-Type annotations for `boto3.client("waf").list_rule_groups` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_sampled_requests` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_sampled_requests)
 
-Boto3 documentation:
-[WAF.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rule_groups)
+```python title="Method definition"
+def get_sampled_requests(
+    self,
+    *,
+    WebAclId: str,
+    RuleId: str,
+    TimeWindow: TimeWindowTypeDef,  # (1)
+    MaxItems: int,
+) -> GetSampledRequestsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRuleGroupsRequestRequestTypeDef](./type_defs.md#listrulegroupsrequestrequesttypedef).
+1. See [:material-code-braces: TimeWindowTypeDef](./type_defs.md#timewindowtypedef) 
+2. See [:material-code-braces: GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetSampledRequestsRequestRequestTypeDef = {  # (1)
+    "WebAclId": ...,
+    "RuleId": ...,
+    "TimeWindow": ...,
+    "MaxItems": ...,
+}
 
-Returns
-[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
+parent.get_sampled_requests(**kwargs)
+```
 
-<a id="list\_rules"></a>
+1. See [:material-code-braces: GetSampledRequestsRequestRequestTypeDef](./type_defs.md#getsampledrequestsrequestrequesttypedef) 
 
-### list_rules
-
-.
-
-Type annotations for `boto3.client("waf").list_rules` method.
-
-Boto3 documentation:
-[WAF.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rules)
-
-Arguments mapping described in
-[ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
-
-<a id="list\_size\_constraint\_sets"></a>
-
-### list_size_constraint_sets
+### get\_size\_constraint\_set
 
 .
 
-Type annotations for `boto3.client("waf").list_size_constraint_sets` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_size_constraint_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_size_constraint_set)
 
-Boto3 documentation:
-[WAF.Client.list_size_constraint_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_size_constraint_sets)
+```python title="Method definition"
+def get_size_constraint_set(
+    self,
+    *,
+    SizeConstraintSetId: str,
+) -> GetSizeConstraintSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSizeConstraintSetsRequestRequestTypeDef](./type_defs.md#listsizeconstraintsetsrequestrequesttypedef).
+1. See [:material-code-braces: GetSizeConstraintSetResponseTypeDef](./type_defs.md#getsizeconstraintsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetSizeConstraintSetRequestRequestTypeDef = {  # (1)
+    "SizeConstraintSetId": ...,
+}
 
-Returns
-[ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef).
+parent.get_size_constraint_set(**kwargs)
+```
 
-<a id="list\_sql\_injection\_match\_sets"></a>
+1. See [:material-code-braces: GetSizeConstraintSetRequestRequestTypeDef](./type_defs.md#getsizeconstraintsetrequestrequesttypedef) 
 
-### list_sql_injection_match_sets
-
-.
-
-Type annotations for `boto3.client("waf").list_sql_injection_match_sets`
-method.
-
-Boto3 documentation:
-[WAF.Client.list_sql_injection_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_sql_injection_match_sets)
-
-Arguments mapping described in
-[ListSqlInjectionMatchSetsRequestRequestTypeDef](./type_defs.md#listsqlinjectionmatchsetsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-Returns
-[ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef).
-
-<a id="list\_subscribed\_rule\_groups"></a>
-
-### list_subscribed_rule_groups
+### get\_sql\_injection\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").list_subscribed_rule_groups` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_sql_injection_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_sql_injection_match_set)
 
-Boto3 documentation:
-[WAF.Client.list_subscribed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_subscribed_rule_groups)
+```python title="Method definition"
+def get_sql_injection_match_set(
+    self,
+    *,
+    SqlInjectionMatchSetId: str,
+) -> GetSqlInjectionMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSubscribedRuleGroupsRequestRequestTypeDef](./type_defs.md#listsubscribedrulegroupsrequestrequesttypedef).
+1. See [:material-code-braces: GetSqlInjectionMatchSetResponseTypeDef](./type_defs.md#getsqlinjectionmatchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetSqlInjectionMatchSetRequestRequestTypeDef = {  # (1)
+    "SqlInjectionMatchSetId": ...,
+}
 
-Returns
-[ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef).
+parent.get_sql_injection_match_set(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: GetSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#getsqlinjectionmatchsetrequestrequesttypedef) 
 
-### list_tags_for_resource
-
-.
-
-Type annotations for `boto3.client("waf").list_tags_for_resource` method.
-
-Boto3 documentation:
-[WAF.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_tags_for_resource)
-
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceARN`: `str` *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
-
-<a id="list\_web\_acls"></a>
-
-### list_web_acls
+### get\_web\_acl
 
 .
 
-Type annotations for `boto3.client("waf").list_web_acls` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_web_acl)
 
-Boto3 documentation:
-[WAF.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_web_acls)
+```python title="Method definition"
+def get_web_acl(
+    self,
+    *,
+    WebACLId: str,
+) -> GetWebACLResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWebACLsRequestRequestTypeDef](./type_defs.md#listwebaclsrequestrequesttypedef).
+1. See [:material-code-braces: GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetWebACLRequestRequestTypeDef = {  # (1)
+    "WebACLId": ...,
+}
 
-Returns
-[ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef).
+parent.get_web_acl(**kwargs)
+```
 
-<a id="list\_xss\_match\_sets"></a>
+1. See [:material-code-braces: GetWebACLRequestRequestTypeDef](./type_defs.md#getwebaclrequestrequesttypedef) 
 
-### list_xss_match_sets
-
-.
-
-Type annotations for `boto3.client("waf").list_xss_match_sets` method.
-
-Boto3 documentation:
-[WAF.Client.list_xss_match_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_xss_match_sets)
-
-Arguments mapping described in
-[ListXssMatchSetsRequestRequestTypeDef](./type_defs.md#listxssmatchsetsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-Returns
-[ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef).
-
-<a id="put\_logging\_configuration"></a>
-
-### put_logging_configuration
+### get\_xss\_match\_set
 
 .
 
-Type annotations for `boto3.client("waf").put_logging_configuration` method.
+Type annotations and code completion for `#!python boto3.client("waf").get_xss_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.get_xss_match_set)
 
-Boto3 documentation:
-[WAF.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.put_logging_configuration)
+```python title="Method definition"
+def get_xss_match_set(
+    self,
+    *,
+    XssMatchSetId: str,
+) -> GetXssMatchSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putloggingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetXssMatchSetResponseTypeDef](./type_defs.md#getxssmatchsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetXssMatchSetRequestRequestTypeDef = {  # (1)
+    "XssMatchSetId": ...,
+}
 
-Returns
-[PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef).
+parent.get_xss_match_set(**kwargs)
+```
 
-<a id="put\_permission\_policy"></a>
+1. See [:material-code-braces: GetXssMatchSetRequestRequestTypeDef](./type_defs.md#getxssmatchsetrequestrequesttypedef) 
 
-### put_permission_policy
-
-.
-
-Type annotations for `boto3.client("waf").put_permission_policy` method.
-
-Boto3 documentation:
-[WAF.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.put_permission_policy)
-
-Arguments mapping described in
-[PutPermissionPolicyRequestRequestTypeDef](./type_defs.md#putpermissionpolicyrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceArn`: `str` *(required)*
-- `Policy`: `str` *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="tag\_resource"></a>
-
-### tag_resource
+### list\_activated\_rules\_in\_rule\_group
 
 .
 
-Type annotations for `boto3.client("waf").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("waf").list_activated_rules_in_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_activated_rules_in_rule_group)
 
-Boto3 documentation:
-[WAF.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.tag_resource)
+```python title="Method definition"
+def list_activated_rules_in_rule_group(
+    self,
+    *,
+    RuleGroupId: str = ...,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListActivatedRulesInRuleGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListActivatedRulesInRuleGroupRequestRequestTypeDef = {  # (1)
+    "RuleGroupId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.list_activated_rules_in_rule_group(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: ListActivatedRulesInRuleGroupRequestRequestTypeDef](./type_defs.md#listactivatedrulesinrulegrouprequestrequesttypedef) 
 
-### untag_resource
-
-.
-
-Type annotations for `boto3.client("waf").untag_resource` method.
-
-Boto3 documentation:
-[WAF.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.untag_resource)
-
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="update\_byte\_match\_set"></a>
-
-### update_byte_match_set
+### list\_byte\_match\_sets
 
 .
 
-Type annotations for `boto3.client("waf").update_byte_match_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").list_byte_match_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_byte_match_sets)
 
-Boto3 documentation:
-[WAF.Client.update_byte_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_byte_match_set)
+```python title="Method definition"
+def list_byte_match_sets(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListByteMatchSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateByteMatchSetRequestRequestTypeDef](./type_defs.md#updatebytematchsetrequestrequesttypedef).
+1. See [:material-code-braces: ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ByteMatchSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListByteMatchSetsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
 
-Returns
-[UpdateByteMatchSetResponseTypeDef](./type_defs.md#updatebytematchsetresponsetypedef).
+parent.list_byte_match_sets(**kwargs)
+```
 
-<a id="update\_geo\_match\_set"></a>
+1. See [:material-code-braces: ListByteMatchSetsRequestRequestTypeDef](./type_defs.md#listbytematchsetsrequestrequesttypedef) 
 
-### update_geo_match_set
-
-.
-
-Type annotations for `boto3.client("waf").update_geo_match_set` method.
-
-Boto3 documentation:
-[WAF.Client.update_geo_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_geo_match_set)
-
-Arguments mapping described in
-[UpdateGeoMatchSetRequestRequestTypeDef](./type_defs.md#updategeomatchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `GeoMatchSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef)\]
-  *(required)*
-
-Returns
-[UpdateGeoMatchSetResponseTypeDef](./type_defs.md#updategeomatchsetresponsetypedef).
-
-<a id="update\_ip\_set"></a>
-
-### update_ip_set
+### list\_geo\_match\_sets
 
 .
 
-Type annotations for `boto3.client("waf").update_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").list_geo_match_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_geo_match_sets)
 
-Boto3 documentation:
-[WAF.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_ip_set)
+```python title="Method definition"
+def list_geo_match_sets(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListGeoMatchSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateIPSetRequestRequestTypeDef](./type_defs.md#updateipsetrequestrequesttypedef).
+1. See [:material-code-braces: ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IPSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListGeoMatchSetsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
 
-Returns
-[UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef).
+parent.list_geo_match_sets(**kwargs)
+```
 
-<a id="update\_rate\_based\_rule"></a>
+1. See [:material-code-braces: ListGeoMatchSetsRequestRequestTypeDef](./type_defs.md#listgeomatchsetsrequestrequesttypedef) 
 
-### update_rate_based_rule
-
-.
-
-Type annotations for `boto3.client("waf").update_rate_based_rule` method.
-
-Boto3 documentation:
-[WAF.Client.update_rate_based_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_rate_based_rule)
-
-Arguments mapping described in
-[UpdateRateBasedRuleRequestRequestTypeDef](./type_defs.md#updateratebasedrulerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `RuleId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
-  *(required)*
-- `RateLimit`: `int` *(required)*
-
-Returns
-[UpdateRateBasedRuleResponseTypeDef](./type_defs.md#updateratebasedruleresponsetypedef).
-
-<a id="update\_regex\_match\_set"></a>
-
-### update_regex_match_set
+### list\_ip\_sets
 
 .
 
-Type annotations for `boto3.client("waf").update_regex_match_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").list_ip_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_ip_sets)
 
-Boto3 documentation:
-[WAF.Client.update_regex_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_regex_match_set)
+```python title="Method definition"
+def list_ip_sets(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListIPSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRegexMatchSetRequestRequestTypeDef](./type_defs.md#updateregexmatchsetrequestrequesttypedef).
+1. See [:material-code-braces: ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegexMatchSetId`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef)\]
-  *(required)*
-- `ChangeToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListIPSetsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
 
-Returns
-[UpdateRegexMatchSetResponseTypeDef](./type_defs.md#updateregexmatchsetresponsetypedef).
+parent.list_ip_sets(**kwargs)
+```
 
-<a id="update\_regex\_pattern\_set"></a>
+1. See [:material-code-braces: ListIPSetsRequestRequestTypeDef](./type_defs.md#listipsetsrequestrequesttypedef) 
 
-### update_regex_pattern_set
-
-.
-
-Type annotations for `boto3.client("waf").update_regex_pattern_set` method.
-
-Boto3 documentation:
-[WAF.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_regex_pattern_set)
-
-Arguments mapping described in
-[UpdateRegexPatternSetRequestRequestTypeDef](./type_defs.md#updateregexpatternsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `RegexPatternSetId`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef)\]
-  *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef).
-
-<a id="update\_rule"></a>
-
-### update_rule
+### list\_logging\_configurations
 
 .
 
-Type annotations for `boto3.client("waf").update_rule` method.
+Type annotations and code completion for `#!python boto3.client("waf").list_logging_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_logging_configurations)
 
-Boto3 documentation:
-[WAF.Client.update_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_rule)
+```python title="Method definition"
+def list_logging_configurations(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListLoggingConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRuleRequestRequestTypeDef](./type_defs.md#updaterulerequestrequesttypedef).
+1. See [:material-code-braces: ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RuleId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListLoggingConfigurationsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
 
-Returns [UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef).
+parent.list_logging_configurations(**kwargs)
+```
 
-<a id="update\_rule\_group"></a>
+1. See [:material-code-braces: ListLoggingConfigurationsRequestRequestTypeDef](./type_defs.md#listloggingconfigurationsrequestrequesttypedef) 
 
-### update_rule_group
-
-.
-
-Type annotations for `boto3.client("waf").update_rule_group` method.
-
-Boto3 documentation:
-[WAF.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_rule_group)
-
-Arguments mapping described in
-[UpdateRuleGroupRequestRequestTypeDef](./type_defs.md#updaterulegrouprequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `RuleGroupId`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef)\]
-  *(required)*
-- `ChangeToken`: `str` *(required)*
-
-Returns
-[UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
-
-<a id="update\_size\_constraint\_set"></a>
-
-### update_size_constraint_set
+### list\_rate\_based\_rules
 
 .
 
-Type annotations for `boto3.client("waf").update_size_constraint_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").list_rate_based_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rate_based_rules)
 
-Boto3 documentation:
-[WAF.Client.update_size_constraint_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_size_constraint_set)
+```python title="Method definition"
+def list_rate_based_rules(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListRateBasedRulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSizeConstraintSetRequestRequestTypeDef](./type_defs.md#updatesizeconstraintsetrequestrequesttypedef).
+1. See [:material-code-braces: ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SizeConstraintSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListRateBasedRulesRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
 
-Returns
-[UpdateSizeConstraintSetResponseTypeDef](./type_defs.md#updatesizeconstraintsetresponsetypedef).
+parent.list_rate_based_rules(**kwargs)
+```
 
-<a id="update\_sql\_injection\_match\_set"></a>
+1. See [:material-code-braces: ListRateBasedRulesRequestRequestTypeDef](./type_defs.md#listratebasedrulesrequestrequesttypedef) 
 
-### update_sql_injection_match_set
-
-.
-
-Type annotations for `boto3.client("waf").update_sql_injection_match_set`
-method.
-
-Boto3 documentation:
-[WAF.Client.update_sql_injection_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_sql_injection_match_set)
-
-Arguments mapping described in
-[UpdateSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#updatesqlinjectionmatchsetrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `SqlInjectionMatchSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef)\]
-  *(required)*
-
-Returns
-[UpdateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#updatesqlinjectionmatchsetresponsetypedef).
-
-<a id="update\_web\_acl"></a>
-
-### update_web_acl
+### list\_regex\_match\_sets
 
 .
 
-Type annotations for `boto3.client("waf").update_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("waf").list_regex_match_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_regex_match_sets)
 
-Boto3 documentation:
-[WAF.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_web_acl)
+```python title="Method definition"
+def list_regex_match_sets(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListRegexMatchSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateWebACLRequestRequestTypeDef](./type_defs.md#updatewebaclrequestrequesttypedef).
+1. See [:material-code-braces: ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `WebACLId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef)\]
-- `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
+```python title="Usage example with kwargs"
+kwargs: ListRegexMatchSetsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
 
-Returns
-[UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef).
+parent.list_regex_match_sets(**kwargs)
+```
 
-<a id="update\_xss\_match\_set"></a>
+1. See [:material-code-braces: ListRegexMatchSetsRequestRequestTypeDef](./type_defs.md#listregexmatchsetsrequestrequesttypedef) 
 
-### update_xss_match_set
+### list\_regex\_pattern\_sets
 
 .
 
-Type annotations for `boto3.client("waf").update_xss_match_set` method.
+Type annotations and code completion for `#!python boto3.client("waf").list_regex_pattern_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_regex_pattern_sets)
 
-Boto3 documentation:
-[WAF.Client.update_xss_match_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_xss_match_set)
+```python title="Method definition"
+def list_regex_pattern_sets(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListRegexPatternSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateXssMatchSetRequestRequestTypeDef](./type_defs.md#updatexssmatchsetrequestrequesttypedef).
+1. See [:material-code-braces: ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `XssMatchSetId`: `str` *(required)*
-- `ChangeToken`: `str` *(required)*
-- `Updates`:
-  `Sequence`\[[XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListRegexPatternSetsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
 
-Returns
-[UpdateXssMatchSetResponseTypeDef](./type_defs.md#updatexssmatchsetresponsetypedef).
+parent.list_regex_pattern_sets(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ListRegexPatternSetsRequestRequestTypeDef](./type_defs.md#listregexpatternsetsrequestrequesttypedef) 
+
+### list\_rule\_groups
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").list_rule_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rule_groups)
+
+```python title="Method definition"
+def list_rule_groups(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListRuleGroupsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRuleGroupsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
+
+parent.list_rule_groups(**kwargs)
+```
+
+1. See [:material-code-braces: ListRuleGroupsRequestRequestTypeDef](./type_defs.md#listrulegroupsrequestrequesttypedef) 
+
+### list\_rules
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").list_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_rules)
+
+```python title="Method definition"
+def list_rules(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListRulesResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRulesRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
+
+parent.list_rules(**kwargs)
+```
+
+1. See [:material-code-braces: ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef) 
+
+### list\_size\_constraint\_sets
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").list_size_constraint_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_size_constraint_sets)
+
+```python title="Method definition"
+def list_size_constraint_sets(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListSizeConstraintSetsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSizeConstraintSetsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
+
+parent.list_size_constraint_sets(**kwargs)
+```
+
+1. See [:material-code-braces: ListSizeConstraintSetsRequestRequestTypeDef](./type_defs.md#listsizeconstraintsetsrequestrequesttypedef) 
+
+### list\_sql\_injection\_match\_sets
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").list_sql_injection_match_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_sql_injection_match_sets)
+
+```python title="Method definition"
+def list_sql_injection_match_sets(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListSqlInjectionMatchSetsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSqlInjectionMatchSetsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
+
+parent.list_sql_injection_match_sets(**kwargs)
+```
+
+1. See [:material-code-braces: ListSqlInjectionMatchSetsRequestRequestTypeDef](./type_defs.md#listsqlinjectionmatchsetsrequestrequesttypedef) 
+
+### list\_subscribed\_rule\_groups
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").list_subscribed_rule_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_subscribed_rule_groups)
+
+```python title="Method definition"
+def list_subscribed_rule_groups(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListSubscribedRuleGroupsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSubscribedRuleGroupsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
+
+parent.list_subscribed_rule_groups(**kwargs)
+```
+
+1. See [:material-code-braces: ListSubscribedRuleGroupsRequestRequestTypeDef](./type_defs.md#listsubscribedrulegroupsrequestrequesttypedef) 
+
+### list\_tags\_for\_resource
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_tags_for_resource)
+
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
+
+parent.list_tags_for_resource(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
+### list\_web\_acls
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").list_web_acls` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_web_acls)
+
+```python title="Method definition"
+def list_web_acls(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListWebACLsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListWebACLsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
+
+parent.list_web_acls(**kwargs)
+```
+
+1. See [:material-code-braces: ListWebACLsRequestRequestTypeDef](./type_defs.md#listwebaclsrequestrequesttypedef) 
+
+### list\_xss\_match\_sets
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").list_xss_match_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.list_xss_match_sets)
+
+```python title="Method definition"
+def list_xss_match_sets(
+    self,
+    *,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListXssMatchSetsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListXssMatchSetsRequestRequestTypeDef = {  # (1)
+    "NextMarker": ...,
+}
+
+parent.list_xss_match_sets(**kwargs)
+```
+
+1. See [:material-code-braces: ListXssMatchSetsRequestRequestTypeDef](./type_defs.md#listxssmatchsetsrequestrequesttypedef) 
+
+### put\_logging\_configuration
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").put_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.put_logging_configuration)
+
+```python title="Method definition"
+def put_logging_configuration(
+    self,
+    *,
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+) -> PutLoggingConfigurationResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "LoggingConfiguration": ...,
+}
+
+parent.put_logging_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: PutLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putloggingconfigurationrequestrequesttypedef) 
+
+### put\_permission\_policy
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").put_permission_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.put_permission_policy)
+
+```python title="Method definition"
+def put_permission_policy(
+    self,
+    *,
+    ResourceArn: str,
+    Policy: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: PutPermissionPolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Policy": ...,
+}
+
+parent.put_permission_policy(**kwargs)
+```
+
+1. See [:material-code-braces: PutPermissionPolicyRequestRequestTypeDef](./type_defs.md#putpermissionpolicyrequestrequesttypedef) 
+
+### tag\_resource
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.tag_resource)
+
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
+
+parent.tag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.untag_resource)
+
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
+
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_byte\_match\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_byte_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_byte_match_set)
+
+```python title="Method definition"
+def update_byte_match_set(
+    self,
+    *,
+    ByteMatchSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[ByteMatchSetUpdateTypeDef],  # (1)
+) -> UpdateByteMatchSetResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef) 
+2. See [:material-code-braces: UpdateByteMatchSetResponseTypeDef](./type_defs.md#updatebytematchsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateByteMatchSetRequestRequestTypeDef = {  # (1)
+    "ByteMatchSetId": ...,
+    "ChangeToken": ...,
+    "Updates": ...,
+}
+
+parent.update_byte_match_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateByteMatchSetRequestRequestTypeDef](./type_defs.md#updatebytematchsetrequestrequesttypedef) 
+
+### update\_geo\_match\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_geo_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_geo_match_set)
+
+```python title="Method definition"
+def update_geo_match_set(
+    self,
+    *,
+    GeoMatchSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[GeoMatchSetUpdateTypeDef],  # (1)
+) -> UpdateGeoMatchSetResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef) 
+2. See [:material-code-braces: UpdateGeoMatchSetResponseTypeDef](./type_defs.md#updategeomatchsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateGeoMatchSetRequestRequestTypeDef = {  # (1)
+    "GeoMatchSetId": ...,
+    "ChangeToken": ...,
+    "Updates": ...,
+}
+
+parent.update_geo_match_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateGeoMatchSetRequestRequestTypeDef](./type_defs.md#updategeomatchsetrequestrequesttypedef) 
+
+### update\_ip\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_ip_set)
+
+```python title="Method definition"
+def update_ip_set(
+    self,
+    *,
+    IPSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[IPSetUpdateTypeDef],  # (1)
+) -> UpdateIPSetResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef) 
+2. See [:material-code-braces: UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateIPSetRequestRequestTypeDef = {  # (1)
+    "IPSetId": ...,
+    "ChangeToken": ...,
+    "Updates": ...,
+}
+
+parent.update_ip_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateIPSetRequestRequestTypeDef](./type_defs.md#updateipsetrequestrequesttypedef) 
+
+### update\_rate\_based\_rule
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_rate_based_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_rate_based_rule)
+
+```python title="Method definition"
+def update_rate_based_rule(
+    self,
+    *,
+    RuleId: str,
+    ChangeToken: str,
+    Updates: Sequence[RuleUpdateTypeDef],  # (1)
+    RateLimit: int,
+) -> UpdateRateBasedRuleResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef) 
+2. See [:material-code-braces: UpdateRateBasedRuleResponseTypeDef](./type_defs.md#updateratebasedruleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateRateBasedRuleRequestRequestTypeDef = {  # (1)
+    "RuleId": ...,
+    "ChangeToken": ...,
+    "Updates": ...,
+    "RateLimit": ...,
+}
+
+parent.update_rate_based_rule(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRateBasedRuleRequestRequestTypeDef](./type_defs.md#updateratebasedrulerequestrequesttypedef) 
+
+### update\_regex\_match\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_regex_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_regex_match_set)
+
+```python title="Method definition"
+def update_regex_match_set(
+    self,
+    *,
+    RegexMatchSetId: str,
+    Updates: Sequence[RegexMatchSetUpdateTypeDef],  # (1)
+    ChangeToken: str,
+) -> UpdateRegexMatchSetResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef) 
+2. See [:material-code-braces: UpdateRegexMatchSetResponseTypeDef](./type_defs.md#updateregexmatchsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateRegexMatchSetRequestRequestTypeDef = {  # (1)
+    "RegexMatchSetId": ...,
+    "Updates": ...,
+    "ChangeToken": ...,
+}
+
+parent.update_regex_match_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRegexMatchSetRequestRequestTypeDef](./type_defs.md#updateregexmatchsetrequestrequesttypedef) 
+
+### update\_regex\_pattern\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_regex_pattern_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_regex_pattern_set)
+
+```python title="Method definition"
+def update_regex_pattern_set(
+    self,
+    *,
+    RegexPatternSetId: str,
+    Updates: Sequence[RegexPatternSetUpdateTypeDef],  # (1)
+    ChangeToken: str,
+) -> UpdateRegexPatternSetResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef) 
+2. See [:material-code-braces: UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateRegexPatternSetRequestRequestTypeDef = {  # (1)
+    "RegexPatternSetId": ...,
+    "Updates": ...,
+    "ChangeToken": ...,
+}
+
+parent.update_regex_pattern_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRegexPatternSetRequestRequestTypeDef](./type_defs.md#updateregexpatternsetrequestrequesttypedef) 
+
+### update\_rule
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_rule)
+
+```python title="Method definition"
+def update_rule(
+    self,
+    *,
+    RuleId: str,
+    ChangeToken: str,
+    Updates: Sequence[RuleUpdateTypeDef],  # (1)
+) -> UpdateRuleResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef) 
+2. See [:material-code-braces: UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateRuleRequestRequestTypeDef = {  # (1)
+    "RuleId": ...,
+    "ChangeToken": ...,
+    "Updates": ...,
+}
+
+parent.update_rule(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRuleRequestRequestTypeDef](./type_defs.md#updaterulerequestrequesttypedef) 
+
+### update\_rule\_group
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_rule_group)
+
+```python title="Method definition"
+def update_rule_group(
+    self,
+    *,
+    RuleGroupId: str,
+    Updates: Sequence[RuleGroupUpdateTypeDef],  # (1)
+    ChangeToken: str,
+) -> UpdateRuleGroupResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef) 
+2. See [:material-code-braces: UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateRuleGroupRequestRequestTypeDef = {  # (1)
+    "RuleGroupId": ...,
+    "Updates": ...,
+    "ChangeToken": ...,
+}
+
+parent.update_rule_group(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRuleGroupRequestRequestTypeDef](./type_defs.md#updaterulegrouprequestrequesttypedef) 
+
+### update\_size\_constraint\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_size_constraint_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_size_constraint_set)
+
+```python title="Method definition"
+def update_size_constraint_set(
+    self,
+    *,
+    SizeConstraintSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[SizeConstraintSetUpdateTypeDef],  # (1)
+) -> UpdateSizeConstraintSetResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef) 
+2. See [:material-code-braces: UpdateSizeConstraintSetResponseTypeDef](./type_defs.md#updatesizeconstraintsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateSizeConstraintSetRequestRequestTypeDef = {  # (1)
+    "SizeConstraintSetId": ...,
+    "ChangeToken": ...,
+    "Updates": ...,
+}
+
+parent.update_size_constraint_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateSizeConstraintSetRequestRequestTypeDef](./type_defs.md#updatesizeconstraintsetrequestrequesttypedef) 
+
+### update\_sql\_injection\_match\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_sql_injection_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_sql_injection_match_set)
+
+```python title="Method definition"
+def update_sql_injection_match_set(
+    self,
+    *,
+    SqlInjectionMatchSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[SqlInjectionMatchSetUpdateTypeDef],  # (1)
+) -> UpdateSqlInjectionMatchSetResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef) 
+2. See [:material-code-braces: UpdateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#updatesqlinjectionmatchsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateSqlInjectionMatchSetRequestRequestTypeDef = {  # (1)
+    "SqlInjectionMatchSetId": ...,
+    "ChangeToken": ...,
+    "Updates": ...,
+}
+
+parent.update_sql_injection_match_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateSqlInjectionMatchSetRequestRequestTypeDef](./type_defs.md#updatesqlinjectionmatchsetrequestrequesttypedef) 
+
+### update\_web\_acl
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_web_acl)
+
+```python title="Method definition"
+def update_web_acl(
+    self,
+    *,
+    WebACLId: str,
+    ChangeToken: str,
+    Updates: Sequence[WebACLUpdateTypeDef] = ...,  # (1)
+    DefaultAction: WafActionTypeDef = ...,  # (2)
+) -> UpdateWebACLResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef) 
+2. See [:material-code-braces: WafActionTypeDef](./type_defs.md#wafactiontypedef) 
+3. See [:material-code-braces: UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateWebACLRequestRequestTypeDef = {  # (1)
+    "WebACLId": ...,
+    "ChangeToken": ...,
+}
+
+parent.update_web_acl(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateWebACLRequestRequestTypeDef](./type_defs.md#updatewebaclrequestrequesttypedef) 
+
+### update\_xss\_match\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("waf").update_xss_match_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client.update_xss_match_set)
+
+```python title="Method definition"
+def update_xss_match_set(
+    self,
+    *,
+    XssMatchSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[XssMatchSetUpdateTypeDef],  # (1)
+) -> UpdateXssMatchSetResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef) 
+2. See [:material-code-braces: UpdateXssMatchSetResponseTypeDef](./type_defs.md#updatexssmatchsetresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateXssMatchSetRequestRequestTypeDef = {  # (1)
+    "XssMatchSetId": ...,
+    "ChangeToken": ...,
+    "Updates": ...,
+}
+
+parent.update_xss_match_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateXssMatchSetRequestRequestTypeDef](./type_defs.md#updatexssmatchsetrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("waf").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator` method with overloads.
 
-- `client.get_paginator("get_rate_based_rule_managed_keys")` ->
-  [GetRateBasedRuleManagedKeysPaginator](./paginators.md#getratebasedrulemanagedkeyspaginator)
-- `client.get_paginator("list_activated_rules_in_rule_group")` ->
-  [ListActivatedRulesInRuleGroupPaginator](./paginators.md#listactivatedrulesinrulegrouppaginator)
-- `client.get_paginator("list_byte_match_sets")` ->
-  [ListByteMatchSetsPaginator](./paginators.md#listbytematchsetspaginator)
-- `client.get_paginator("list_geo_match_sets")` ->
-  [ListGeoMatchSetsPaginator](./paginators.md#listgeomatchsetspaginator)
-- `client.get_paginator("list_ip_sets")` ->
-  [ListIPSetsPaginator](./paginators.md#listipsetspaginator)
-- `client.get_paginator("list_logging_configurations")` ->
-  [ListLoggingConfigurationsPaginator](./paginators.md#listloggingconfigurationspaginator)
-- `client.get_paginator("list_rate_based_rules")` ->
-  [ListRateBasedRulesPaginator](./paginators.md#listratebasedrulespaginator)
-- `client.get_paginator("list_regex_match_sets")` ->
-  [ListRegexMatchSetsPaginator](./paginators.md#listregexmatchsetspaginator)
-- `client.get_paginator("list_regex_pattern_sets")` ->
-  [ListRegexPatternSetsPaginator](./paginators.md#listregexpatternsetspaginator)
-- `client.get_paginator("list_rule_groups")` ->
-  [ListRuleGroupsPaginator](./paginators.md#listrulegroupspaginator)
-- `client.get_paginator("list_rules")` ->
-  [ListRulesPaginator](./paginators.md#listrulespaginator)
-- `client.get_paginator("list_size_constraint_sets")` ->
-  [ListSizeConstraintSetsPaginator](./paginators.md#listsizeconstraintsetspaginator)
-- `client.get_paginator("list_sql_injection_match_sets")` ->
-  [ListSqlInjectionMatchSetsPaginator](./paginators.md#listsqlinjectionmatchsetspaginator)
-- `client.get_paginator("list_subscribed_rule_groups")` ->
-  [ListSubscribedRuleGroupsPaginator](./paginators.md#listsubscribedrulegroupspaginator)
-- `client.get_paginator("list_web_acls")` ->
-  [ListWebACLsPaginator](./paginators.md#listwebaclspaginator)
-- `client.get_paginator("list_xss_match_sets")` ->
-  [ListXssMatchSetsPaginator](./paginators.md#listxssmatchsetspaginator)
+- `client.get_paginator("get_rate_based_rule_managed_keys")` -> [GetRateBasedRuleManagedKeysPaginator](./paginators.md#getratebasedrulemanagedkeyspaginator)
+- `client.get_paginator("list_activated_rules_in_rule_group")` -> [ListActivatedRulesInRuleGroupPaginator](./paginators.md#listactivatedrulesinrulegrouppaginator)
+- `client.get_paginator("list_byte_match_sets")` -> [ListByteMatchSetsPaginator](./paginators.md#listbytematchsetspaginator)
+- `client.get_paginator("list_geo_match_sets")` -> [ListGeoMatchSetsPaginator](./paginators.md#listgeomatchsetspaginator)
+- `client.get_paginator("list_ip_sets")` -> [ListIPSetsPaginator](./paginators.md#listipsetspaginator)
+- `client.get_paginator("list_logging_configurations")` -> [ListLoggingConfigurationsPaginator](./paginators.md#listloggingconfigurationspaginator)
+- `client.get_paginator("list_rate_based_rules")` -> [ListRateBasedRulesPaginator](./paginators.md#listratebasedrulespaginator)
+- `client.get_paginator("list_regex_match_sets")` -> [ListRegexMatchSetsPaginator](./paginators.md#listregexmatchsetspaginator)
+- `client.get_paginator("list_regex_pattern_sets")` -> [ListRegexPatternSetsPaginator](./paginators.md#listregexpatternsetspaginator)
+- `client.get_paginator("list_rule_groups")` -> [ListRuleGroupsPaginator](./paginators.md#listrulegroupspaginator)
+- `client.get_paginator("list_rules")` -> [ListRulesPaginator](./paginators.md#listrulespaginator)
+- `client.get_paginator("list_size_constraint_sets")` -> [ListSizeConstraintSetsPaginator](./paginators.md#listsizeconstraintsetspaginator)
+- `client.get_paginator("list_sql_injection_match_sets")` -> [ListSqlInjectionMatchSetsPaginator](./paginators.md#listsqlinjectionmatchsetspaginator)
+- `client.get_paginator("list_subscribed_rule_groups")` -> [ListSubscribedRuleGroupsPaginator](./paginators.md#listsubscribedrulegroupspaginator)
+- `client.get_paginator("list_web_acls")` -> [ListWebACLsPaginator](./paginators.md#listwebaclspaginator)
+- `client.get_paginator("list_xss_match_sets")` -> [ListXssMatchSetsPaginator](./paginators.md#listxssmatchsetspaginator)
+
+
+

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-waf-module"></a>
-
-# Type annotations for boto3 WAF module
+#  WAF module
 
 > [Index](../README.md) > WAF
 
-Auto-generated documentation for
-[WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
-type annotations stubs module
-[mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
+!!! note ""
 
-- [Type annotations for boto3 WAF module](#type-annotations-for-boto3-waf-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [WAFClient](#wafclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
+    type annotations stubs module [mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `WAF`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[waf]'
 python -m pip install mypy-boto3-waf
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,148 +42,37 @@ python -m pip install mypy-boto3-waf
 python -m pip uninstall -y mypy-boto3-waf
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="wafclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## WAFClient
 
-Type annotations for `boto3.client("waf")` as [WAFClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("waf")` as [WAFClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_waf.client import WAFClient
+
+def get_client() -> WAFClient:
+    return Session().cleint("waf")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_byte_match_set](./client.md#create_byte_match_set)
-- [create_geo_match_set](./client.md#create_geo_match_set)
-- [create_ip_set](./client.md#create_ip_set)
-- [create_rate_based_rule](./client.md#create_rate_based_rule)
-- [create_regex_match_set](./client.md#create_regex_match_set)
-- [create_regex_pattern_set](./client.md#create_regex_pattern_set)
-- [create_rule](./client.md#create_rule)
-- [create_rule_group](./client.md#create_rule_group)
-- [create_size_constraint_set](./client.md#create_size_constraint_set)
-- [create_sql_injection_match_set](./client.md#create_sql_injection_match_set)
-- [create_web_acl](./client.md#create_web_acl)
-- [create_web_acl_migration_stack](./client.md#create_web_acl_migration_stack)
-- [create_xss_match_set](./client.md#create_xss_match_set)
-- [delete_byte_match_set](./client.md#delete_byte_match_set)
-- [delete_geo_match_set](./client.md#delete_geo_match_set)
-- [delete_ip_set](./client.md#delete_ip_set)
-- [delete_logging_configuration](./client.md#delete_logging_configuration)
-- [delete_permission_policy](./client.md#delete_permission_policy)
-- [delete_rate_based_rule](./client.md#delete_rate_based_rule)
-- [delete_regex_match_set](./client.md#delete_regex_match_set)
-- [delete_regex_pattern_set](./client.md#delete_regex_pattern_set)
-- [delete_rule](./client.md#delete_rule)
-- [delete_rule_group](./client.md#delete_rule_group)
-- [delete_size_constraint_set](./client.md#delete_size_constraint_set)
-- [delete_sql_injection_match_set](./client.md#delete_sql_injection_match_set)
-- [delete_web_acl](./client.md#delete_web_acl)
-- [delete_xss_match_set](./client.md#delete_xss_match_set)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_byte_match_set](./client.md#get_byte_match_set)
-- [get_change_token](./client.md#get_change_token)
-- [get_change_token_status](./client.md#get_change_token_status)
-- [get_geo_match_set](./client.md#get_geo_match_set)
-- [get_ip_set](./client.md#get_ip_set)
-- [get_logging_configuration](./client.md#get_logging_configuration)
-- [get_paginator](./client.md#get_paginator)
-- [get_permission_policy](./client.md#get_permission_policy)
-- [get_rate_based_rule](./client.md#get_rate_based_rule)
-- [get_rate_based_rule_managed_keys](./client.md#get_rate_based_rule_managed_keys)
-- [get_regex_match_set](./client.md#get_regex_match_set)
-- [get_regex_pattern_set](./client.md#get_regex_pattern_set)
-- [get_rule](./client.md#get_rule)
-- [get_rule_group](./client.md#get_rule_group)
-- [get_sampled_requests](./client.md#get_sampled_requests)
-- [get_size_constraint_set](./client.md#get_size_constraint_set)
-- [get_sql_injection_match_set](./client.md#get_sql_injection_match_set)
-- [get_web_acl](./client.md#get_web_acl)
-- [get_xss_match_set](./client.md#get_xss_match_set)
-- [list_activated_rules_in_rule_group](./client.md#list_activated_rules_in_rule_group)
-- [list_byte_match_sets](./client.md#list_byte_match_sets)
-- [list_geo_match_sets](./client.md#list_geo_match_sets)
-- [list_ip_sets](./client.md#list_ip_sets)
-- [list_logging_configurations](./client.md#list_logging_configurations)
-- [list_rate_based_rules](./client.md#list_rate_based_rules)
-- [list_regex_match_sets](./client.md#list_regex_match_sets)
-- [list_regex_pattern_sets](./client.md#list_regex_pattern_sets)
-- [list_rule_groups](./client.md#list_rule_groups)
-- [list_rules](./client.md#list_rules)
-- [list_size_constraint_sets](./client.md#list_size_constraint_sets)
-- [list_sql_injection_match_sets](./client.md#list_sql_injection_match_sets)
-- [list_subscribed_rule_groups](./client.md#list_subscribed_rule_groups)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_web_acls](./client.md#list_web_acls)
-- [list_xss_match_sets](./client.md#list_xss_match_sets)
-- [put_logging_configuration](./client.md#put_logging_configuration)
-- [put_permission_policy](./client.md#put_permission_policy)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_byte_match_set](./client.md#update_byte_match_set)
-- [update_geo_match_set](./client.md#update_geo_match_set)
-- [update_ip_set](./client.md#update_ip_set)
-- [update_rate_based_rule](./client.md#update_rate_based_rule)
-- [update_regex_match_set](./client.md#update_regex_match_set)
-- [update_regex_pattern_set](./client.md#update_regex_pattern_set)
-- [update_rule](./client.md#update_rule)
-- [update_rule_group](./client.md#update_rule_group)
-- [update_size_constraint_set](./client.md#update_size_constraint_set)
-- [update_sql_injection_match_set](./client.md#update_sql_injection_match_set)
-- [update_web_acl](./client.md#update_web_acl)
-- [update_xss_match_set](./client.md#update_xss_match_set)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-WAFClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- WAFBadRequestException
-- WAFDisallowedNameException
-- WAFEntityMigrationException
-- WAFInternalErrorException
-- WAFInvalidAccountException
-- WAFInvalidOperationException
-- WAFInvalidParameterException
-- WAFInvalidPermissionPolicyException
-- WAFInvalidRegexPatternException
-- WAFLimitsExceededException
-- WAFNonEmptyEntityException
-- WAFNonexistentContainerException
-- WAFNonexistentItemException
-- WAFReferencedItemException
-- WAFServiceLinkedRoleErrorException
-- WAFStaleDataException
-- WAFSubscriptionNotFoundException
-- WAFTagOperationException
-- WAFTagOperationInternalErrorException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("waf").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("waf").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_waf.paginator import GetRateBasedRuleManagedKeysPaginator, ...
+from mypy_boto3_waf.paginator import GetRateBasedRuleManagedKeysPaginator
+
+def get_get_rate_based_rule_managed_keys_paginator() -> GetRateBasedRuleManagedKeysPaginator:
+    return Session().client("waf").get_paginator("get_rate_based_rule_managed_keys"))
 ```
 
 - [GetRateBasedRuleManagedKeysPaginator](./paginators.md#getratebasedrulemanagedkeyspaginator)
@@ -225,16 +92,23 @@ from mypy_boto3_waf.paginator import GetRateBasedRuleManagedKeysPaginator, ...
 - [ListWebACLsPaginator](./paginators.md#listwebaclspaginator)
 - [ListXssMatchSetsPaginator](./paginators.md#listxssmatchsetspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_waf.literals import ChangeActionType
 
-```python
-from mypy_boto3_waf.literals import ChangeActionType, ...
+def get_value() -> ChangeActionType:
+    return "DELETE"
 ```
 
 - [ChangeActionType](./literals.md#changeactiontype)
@@ -272,17 +146,21 @@ from mypy_boto3_waf.literals import ChangeActionType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_waf.type_defs import ActivatedRuleTypeDef
 
-```python
-from mypy_boto3_waf.type_defs import ActivatedRuleTypeDef, ...
+def get_value() -> ActivatedRuleTypeDef:
+    return {
+        "Priority": ...,
+        "RuleId": ...,
+    }
 ```
 
 - [ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)
@@ -361,6 +239,7 @@ from mypy_boto3_waf.type_defs import ActivatedRuleTypeDef, ...
 - [GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef)
 - [GetPermissionPolicyRequestRequestTypeDef](./type_defs.md#getpermissionpolicyrequestrequesttypedef)
 - [GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef)
+- [GetRateBasedRuleManagedKeysRequestGetRateBasedRuleManagedKeysPaginateTypeDef](./type_defs.md#getratebasedrulemanagedkeysrequestgetratebasedrulemanagedkeyspaginatetypedef)
 - [GetRateBasedRuleManagedKeysRequestRequestTypeDef](./type_defs.md#getratebasedrulemanagedkeysrequestrequesttypedef)
 - [GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef)
 - [GetRateBasedRuleRequestRequestTypeDef](./type_defs.md#getratebasedrulerequestrequesttypedef)
@@ -389,36 +268,51 @@ from mypy_boto3_waf.type_defs import ActivatedRuleTypeDef, ...
 - [IPSetSummaryTypeDef](./type_defs.md#ipsetsummarytypedef)
 - [IPSetTypeDef](./type_defs.md#ipsettypedef)
 - [IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef)
+- [ListActivatedRulesInRuleGroupRequestListActivatedRulesInRuleGroupPaginateTypeDef](./type_defs.md#listactivatedrulesinrulegrouprequestlistactivatedrulesinrulegrouppaginatetypedef)
 - [ListActivatedRulesInRuleGroupRequestRequestTypeDef](./type_defs.md#listactivatedrulesinrulegrouprequestrequesttypedef)
 - [ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef)
+- [ListByteMatchSetsRequestListByteMatchSetsPaginateTypeDef](./type_defs.md#listbytematchsetsrequestlistbytematchsetspaginatetypedef)
 - [ListByteMatchSetsRequestRequestTypeDef](./type_defs.md#listbytematchsetsrequestrequesttypedef)
 - [ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef)
+- [ListGeoMatchSetsRequestListGeoMatchSetsPaginateTypeDef](./type_defs.md#listgeomatchsetsrequestlistgeomatchsetspaginatetypedef)
 - [ListGeoMatchSetsRequestRequestTypeDef](./type_defs.md#listgeomatchsetsrequestrequesttypedef)
 - [ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef)
+- [ListIPSetsRequestListIPSetsPaginateTypeDef](./type_defs.md#listipsetsrequestlistipsetspaginatetypedef)
 - [ListIPSetsRequestRequestTypeDef](./type_defs.md#listipsetsrequestrequesttypedef)
 - [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef)
+- [ListLoggingConfigurationsRequestListLoggingConfigurationsPaginateTypeDef](./type_defs.md#listloggingconfigurationsrequestlistloggingconfigurationspaginatetypedef)
 - [ListLoggingConfigurationsRequestRequestTypeDef](./type_defs.md#listloggingconfigurationsrequestrequesttypedef)
 - [ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef)
+- [ListRateBasedRulesRequestListRateBasedRulesPaginateTypeDef](./type_defs.md#listratebasedrulesrequestlistratebasedrulespaginatetypedef)
 - [ListRateBasedRulesRequestRequestTypeDef](./type_defs.md#listratebasedrulesrequestrequesttypedef)
 - [ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef)
+- [ListRegexMatchSetsRequestListRegexMatchSetsPaginateTypeDef](./type_defs.md#listregexmatchsetsrequestlistregexmatchsetspaginatetypedef)
 - [ListRegexMatchSetsRequestRequestTypeDef](./type_defs.md#listregexmatchsetsrequestrequesttypedef)
 - [ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef)
+- [ListRegexPatternSetsRequestListRegexPatternSetsPaginateTypeDef](./type_defs.md#listregexpatternsetsrequestlistregexpatternsetspaginatetypedef)
 - [ListRegexPatternSetsRequestRequestTypeDef](./type_defs.md#listregexpatternsetsrequestrequesttypedef)
 - [ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef)
+- [ListRuleGroupsRequestListRuleGroupsPaginateTypeDef](./type_defs.md#listrulegroupsrequestlistrulegroupspaginatetypedef)
 - [ListRuleGroupsRequestRequestTypeDef](./type_defs.md#listrulegroupsrequestrequesttypedef)
 - [ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef)
+- [ListRulesRequestListRulesPaginateTypeDef](./type_defs.md#listrulesrequestlistrulespaginatetypedef)
 - [ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef)
 - [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)
+- [ListSizeConstraintSetsRequestListSizeConstraintSetsPaginateTypeDef](./type_defs.md#listsizeconstraintsetsrequestlistsizeconstraintsetspaginatetypedef)
 - [ListSizeConstraintSetsRequestRequestTypeDef](./type_defs.md#listsizeconstraintsetsrequestrequesttypedef)
 - [ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef)
+- [ListSqlInjectionMatchSetsRequestListSqlInjectionMatchSetsPaginateTypeDef](./type_defs.md#listsqlinjectionmatchsetsrequestlistsqlinjectionmatchsetspaginatetypedef)
 - [ListSqlInjectionMatchSetsRequestRequestTypeDef](./type_defs.md#listsqlinjectionmatchsetsrequestrequesttypedef)
 - [ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef)
+- [ListSubscribedRuleGroupsRequestListSubscribedRuleGroupsPaginateTypeDef](./type_defs.md#listsubscribedrulegroupsrequestlistsubscribedrulegroupspaginatetypedef)
 - [ListSubscribedRuleGroupsRequestRequestTypeDef](./type_defs.md#listsubscribedrulegroupsrequestrequesttypedef)
 - [ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListWebACLsRequestListWebACLsPaginateTypeDef](./type_defs.md#listwebaclsrequestlistwebaclspaginatetypedef)
 - [ListWebACLsRequestRequestTypeDef](./type_defs.md#listwebaclsrequestrequesttypedef)
 - [ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef)
+- [ListXssMatchSetsRequestListXssMatchSetsPaginateTypeDef](./type_defs.md#listxssmatchsetsrequestlistxssmatchsetspaginatetypedef)
 - [ListXssMatchSetsRequestRequestTypeDef](./type_defs.md#listxssmatchsetsrequestrequesttypedef)
 - [ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef)
 - [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
@@ -490,3 +384,4 @@ from mypy_boto3_waf.type_defs import ActivatedRuleTypeDef, ...
 - [XssMatchSetTypeDef](./type_defs.md#xssmatchsettypedef)
 - [XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef)
 - [XssMatchTupleTypeDef](./type_defs.md#xssmatchtupletypedef)
+

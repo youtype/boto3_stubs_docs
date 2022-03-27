@@ -1,403 +1,572 @@
-<a id="typed-dictionaries-for-boto3-polly-module"></a>
-
-# Typed dictionaries for boto3 Polly module
+# Typed dictionaries
 
 > [Index](../README.md) > [Polly](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
-type annotations stubs module
-[mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Polly module](#typed-dictionaries-for-boto3-polly-module)
-  - [DeleteLexiconInputRequestTypeDef](#deletelexiconinputrequesttypedef)
-  - [DescribeVoicesInputRequestTypeDef](#describevoicesinputrequesttypedef)
-  - [DescribeVoicesOutputTypeDef](#describevoicesoutputtypedef)
-  - [GetLexiconInputRequestTypeDef](#getlexiconinputrequesttypedef)
-  - [GetLexiconOutputTypeDef](#getlexiconoutputtypedef)
-  - [GetSpeechSynthesisTaskInputRequestTypeDef](#getspeechsynthesistaskinputrequesttypedef)
-  - [GetSpeechSynthesisTaskOutputTypeDef](#getspeechsynthesistaskoutputtypedef)
-  - [LexiconAttributesTypeDef](#lexiconattributestypedef)
-  - [LexiconDescriptionTypeDef](#lexicondescriptiontypedef)
-  - [LexiconTypeDef](#lexicontypedef)
-  - [ListLexiconsInputRequestTypeDef](#listlexiconsinputrequesttypedef)
-  - [ListLexiconsOutputTypeDef](#listlexiconsoutputtypedef)
-  - [ListSpeechSynthesisTasksInputRequestTypeDef](#listspeechsynthesistasksinputrequesttypedef)
-  - [ListSpeechSynthesisTasksOutputTypeDef](#listspeechsynthesistasksoutputtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutLexiconInputRequestTypeDef](#putlexiconinputrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartSpeechSynthesisTaskInputRequestTypeDef](#startspeechsynthesistaskinputrequesttypedef)
-  - [StartSpeechSynthesisTaskOutputTypeDef](#startspeechsynthesistaskoutputtypedef)
-  - [SynthesisTaskTypeDef](#synthesistasktypedef)
-  - [SynthesizeSpeechInputRequestTypeDef](#synthesizespeechinputrequesttypedef)
-  - [SynthesizeSpeechOutputTypeDef](#synthesizespeechoutputtypedef)
-  - [VoiceTypeDef](#voicetypedef)
-
-<a id="deletelexiconinputrequesttypedef"></a>
+    Auto-generated documentation for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+    type annotations stubs module [mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
 
 ## DeleteLexiconInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import DeleteLexiconInputRequestTypeDef
+
+def get_value() -> DeleteLexiconInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteLexiconInputRequestTypeDef(TypedDict):
+    Name: str,
+```
 
-- `Name`: `str`
+## DescribeVoicesInputDescribeVoicesPaginateTypeDef
 
-<a id="describevoicesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_polly.type_defs import DescribeVoicesInputDescribeVoicesPaginateTypeDef
 
+def get_value() -> DescribeVoicesInputDescribeVoicesPaginateTypeDef:
+    return {
+        "Engine": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVoicesInputDescribeVoicesPaginateTypeDef(TypedDict):
+    Engine: NotRequired[EngineType],  # (1)
+    LanguageCode: NotRequired[LanguageCodeType],  # (2)
+    IncludeAdditionalLanguageCodes: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: EngineType](./literals.md#enginetype) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeVoicesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import DescribeVoicesInputRequestTypeDef
+
+def get_value() -> DescribeVoicesInputRequestTypeDef:
+    return {
+        "Engine": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeVoicesInputRequestTypeDef(TypedDict):
+    Engine: NotRequired[EngineType],  # (1)
+    LanguageCode: NotRequired[LanguageCodeType],  # (2)
+    IncludeAdditionalLanguageCodes: NotRequired[bool],
+    NextToken: NotRequired[str],
+```
 
-- `Engine`: [EngineType](./literals.md#enginetype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `IncludeAdditionalLanguageCodes`: `bool`
-- `NextToken`: `str`
-
-<a id="describevoicesoutputtypedef"></a>
-
+1. See [:material-code-brackets: EngineType](./literals.md#enginetype) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## DescribeVoicesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import DescribeVoicesOutputTypeDef
+
+def get_value() -> DescribeVoicesOutputTypeDef:
+    return {
+        "Voices": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVoicesOutputTypeDef(TypedDict):
+    Voices: List[VoiceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Voices`: `List`\[[VoiceTypeDef](./type_defs.md#voicetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlexiconinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VoiceTypeDef](./type_defs.md#voicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLexiconInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import GetLexiconInputRequestTypeDef
+
+def get_value() -> GetLexiconInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getlexiconoutputtypedef"></a>
+```python title="Definition"
+class GetLexiconInputRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetLexiconOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import GetLexiconOutputTypeDef
+
+def get_value() -> GetLexiconOutputTypeDef:
+    return {
+        "Lexicon": ...,
+        "LexiconAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLexiconOutputTypeDef(TypedDict):
+    Lexicon: LexiconTypeDef,  # (1)
+    LexiconAttributes: LexiconAttributesTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Lexicon`: [LexiconTypeDef](./type_defs.md#lexicontypedef)
-- `LexiconAttributes`:
-  [LexiconAttributesTypeDef](./type_defs.md#lexiconattributestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getspeechsynthesistaskinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LexiconTypeDef](./type_defs.md#lexicontypedef) 
+2. See [:material-code-braces: LexiconAttributesTypeDef](./type_defs.md#lexiconattributestypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSpeechSynthesisTaskInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import GetSpeechSynthesisTaskInputRequestTypeDef
+
+def get_value() -> GetSpeechSynthesisTaskInputRequestTypeDef:
+    return {
+        "TaskId": ...,
+    }
 ```
 
-Required fields:
-
-- `TaskId`: `str`
-
-<a id="getspeechsynthesistaskoutputtypedef"></a>
+```python title="Definition"
+class GetSpeechSynthesisTaskInputRequestTypeDef(TypedDict):
+    TaskId: str,
+```
 
 ## GetSpeechSynthesisTaskOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import GetSpeechSynthesisTaskOutputTypeDef
+
+def get_value() -> GetSpeechSynthesisTaskOutputTypeDef:
+    return {
+        "SynthesisTask": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSpeechSynthesisTaskOutputTypeDef(TypedDict):
+    SynthesisTask: SynthesisTaskTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SynthesisTask`: [SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lexiconattributestypedef"></a>
-
+1. See [:material-code-braces: SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LexiconAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import LexiconAttributesTypeDef
+
+def get_value() -> LexiconAttributesTypeDef:
+    return {
+        "Alphabet": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LexiconAttributesTypeDef(TypedDict):
+    Alphabet: NotRequired[str],
+    LanguageCode: NotRequired[LanguageCodeType],  # (1)
+    LastModified: NotRequired[datetime],
+    LexiconArn: NotRequired[str],
+    LexemesCount: NotRequired[int],
+    Size: NotRequired[int],
+```
 
-- `Alphabet`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LastModified`: `datetime`
-- `LexiconArn`: `str`
-- `LexemesCount`: `int`
-- `Size`: `int`
-
-<a id="lexicondescriptiontypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## LexiconDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import LexiconDescriptionTypeDef
+
+def get_value() -> LexiconDescriptionTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LexiconDescriptionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Attributes: NotRequired[LexiconAttributesTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `Attributes`:
-  [LexiconAttributesTypeDef](./type_defs.md#lexiconattributestypedef)
-
-<a id="lexicontypedef"></a>
-
+1. See [:material-code-braces: LexiconAttributesTypeDef](./type_defs.md#lexiconattributestypedef) 
 ## LexiconTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import LexiconTypeDef
+
+def get_value() -> LexiconTypeDef:
+    return {
+        "Content": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LexiconTypeDef(TypedDict):
+    Content: NotRequired[str],
+    Name: NotRequired[str],
+```
 
-- `Content`: `str`
-- `Name`: `str`
+## ListLexiconsInputListLexiconsPaginateTypeDef
 
-<a id="listlexiconsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_polly.type_defs import ListLexiconsInputListLexiconsPaginateTypeDef
 
+def get_value() -> ListLexiconsInputListLexiconsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListLexiconsInputListLexiconsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLexiconsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import ListLexiconsInputRequestTypeDef
+
+def get_value() -> ListLexiconsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listlexiconsoutputtypedef"></a>
+```python title="Definition"
+class ListLexiconsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListLexiconsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import ListLexiconsOutputTypeDef
+
+def get_value() -> ListLexiconsOutputTypeDef:
+    return {
+        "Lexicons": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLexiconsOutputTypeDef(TypedDict):
+    Lexicons: List[LexiconDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Lexicons`:
-  `List`\[[LexiconDescriptionTypeDef](./type_defs.md#lexicondescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: LexiconDescriptionTypeDef](./type_defs.md#lexicondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSpeechSynthesisTasksInputListSpeechSynthesisTasksPaginateTypeDef
 
-<a id="listspeechsynthesistasksinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_polly.type_defs import ListSpeechSynthesisTasksInputListSpeechSynthesisTasksPaginateTypeDef
 
+def get_value() -> ListSpeechSynthesisTasksInputListSpeechSynthesisTasksPaginateTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class ListSpeechSynthesisTasksInputListSpeechSynthesisTasksPaginateTypeDef(TypedDict):
+    Status: NotRequired[TaskStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TaskStatusType](./literals.md#taskstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSpeechSynthesisTasksInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import ListSpeechSynthesisTasksInputRequestTypeDef
+
+def get_value() -> ListSpeechSynthesisTasksInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSpeechSynthesisTasksInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Status: NotRequired[TaskStatusType],  # (1)
+```
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Status`: [TaskStatusType](./literals.md#taskstatustype)
-
-<a id="listspeechsynthesistasksoutputtypedef"></a>
-
+1. See [:material-code-brackets: TaskStatusType](./literals.md#taskstatustype) 
 ## ListSpeechSynthesisTasksOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import ListSpeechSynthesisTasksOutputTypeDef
+
+def get_value() -> ListSpeechSynthesisTasksOutputTypeDef:
+    return {
+        "NextToken": ...,
+        "SynthesisTasks": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSpeechSynthesisTasksOutputTypeDef(TypedDict):
+    NextToken: str,
+    SynthesisTasks: List[SynthesisTaskTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `SynthesisTasks`:
-  `List`\[[SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putlexiconinputrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutLexiconInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import PutLexiconInputRequestTypeDef
+
+def get_value() -> PutLexiconInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Content`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PutLexiconInputRequestTypeDef(TypedDict):
+    Name: str,
+    Content: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startspeechsynthesistaskinputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartSpeechSynthesisTaskInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import StartSpeechSynthesisTaskInputRequestTypeDef
+
+def get_value() -> StartSpeechSynthesisTaskInputRequestTypeDef:
+    return {
+        "OutputFormat": ...,
+        "OutputS3BucketName": ...,
+        "Text": ...,
+        "VoiceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSpeechSynthesisTaskInputRequestTypeDef(TypedDict):
+    OutputFormat: OutputFormatType,  # (1)
+    OutputS3BucketName: str,
+    Text: str,
+    VoiceId: VoiceIdType,  # (2)
+    Engine: NotRequired[EngineType],  # (3)
+    LanguageCode: NotRequired[LanguageCodeType],  # (4)
+    LexiconNames: NotRequired[Sequence[str]],
+    OutputS3KeyPrefix: NotRequired[str],
+    SampleRate: NotRequired[str],
+    SnsTopicArn: NotRequired[str],
+    SpeechMarkTypes: NotRequired[Sequence[SpeechMarkTypeType]],  # (5)
+    TextType: NotRequired[TextTypeType],  # (6)
+```
 
-- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
-- `OutputS3BucketName`: `str`
-- `Text`: `str`
-- `VoiceId`: [VoiceIdType](./literals.md#voiceidtype)
-
-Optional fields:
-
-- `Engine`: [EngineType](./literals.md#enginetype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LexiconNames`: `Sequence`\[`str`\]
-- `OutputS3KeyPrefix`: `str`
-- `SampleRate`: `str`
-- `SnsTopicArn`: `str`
-- `SpeechMarkTypes`:
-  `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
-- `TextType`: [TextTypeType](./literals.md#texttypetype)
-
-<a id="startspeechsynthesistaskoutputtypedef"></a>
-
+1. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
+2. See [:material-code-brackets: VoiceIdType](./literals.md#voiceidtype) 
+3. See [:material-code-brackets: EngineType](./literals.md#enginetype) 
+4. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+5. See [:material-code-brackets: SpeechMarkTypeType](./literals.md#speechmarktypetype) 
+6. See [:material-code-brackets: TextTypeType](./literals.md#texttypetype) 
 ## StartSpeechSynthesisTaskOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import StartSpeechSynthesisTaskOutputTypeDef
+
+def get_value() -> StartSpeechSynthesisTaskOutputTypeDef:
+    return {
+        "SynthesisTask": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSpeechSynthesisTaskOutputTypeDef(TypedDict):
+    SynthesisTask: SynthesisTaskTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SynthesisTask`: [SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="synthesistasktypedef"></a>
-
+1. See [:material-code-braces: SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SynthesisTaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import SynthesisTaskTypeDef
+
+def get_value() -> SynthesisTaskTypeDef:
+    return {
+        "Engine": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SynthesisTaskTypeDef(TypedDict):
+    Engine: NotRequired[EngineType],  # (1)
+    TaskId: NotRequired[str],
+    TaskStatus: NotRequired[TaskStatusType],  # (2)
+    TaskStatusReason: NotRequired[str],
+    OutputUri: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    RequestCharacters: NotRequired[int],
+    SnsTopicArn: NotRequired[str],
+    LexiconNames: NotRequired[List[str]],
+    OutputFormat: NotRequired[OutputFormatType],  # (3)
+    SampleRate: NotRequired[str],
+    SpeechMarkTypes: NotRequired[List[SpeechMarkTypeType]],  # (4)
+    TextType: NotRequired[TextTypeType],  # (5)
+    VoiceId: NotRequired[VoiceIdType],  # (6)
+    LanguageCode: NotRequired[LanguageCodeType],  # (7)
+```
 
-- `Engine`: [EngineType](./literals.md#enginetype)
-- `TaskId`: `str`
-- `TaskStatus`: [TaskStatusType](./literals.md#taskstatustype)
-- `TaskStatusReason`: `str`
-- `OutputUri`: `str`
-- `CreationTime`: `datetime`
-- `RequestCharacters`: `int`
-- `SnsTopicArn`: `str`
-- `LexiconNames`: `List`\[`str`\]
-- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
-- `SampleRate`: `str`
-- `SpeechMarkTypes`:
-  `List`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
-- `TextType`: [TextTypeType](./literals.md#texttypetype)
-- `VoiceId`: [VoiceIdType](./literals.md#voiceidtype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-
-<a id="synthesizespeechinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: EngineType](./literals.md#enginetype) 
+2. See [:material-code-brackets: TaskStatusType](./literals.md#taskstatustype) 
+3. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
+4. See [:material-code-brackets: SpeechMarkTypeType](./literals.md#speechmarktypetype) 
+5. See [:material-code-brackets: TextTypeType](./literals.md#texttypetype) 
+6. See [:material-code-brackets: VoiceIdType](./literals.md#voiceidtype) 
+7. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## SynthesizeSpeechInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import SynthesizeSpeechInputRequestTypeDef
+
+def get_value() -> SynthesizeSpeechInputRequestTypeDef:
+    return {
+        "OutputFormat": ...,
+        "Text": ...,
+        "VoiceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SynthesizeSpeechInputRequestTypeDef(TypedDict):
+    OutputFormat: OutputFormatType,  # (1)
+    Text: str,
+    VoiceId: VoiceIdType,  # (2)
+    Engine: NotRequired[EngineType],  # (3)
+    LanguageCode: NotRequired[LanguageCodeType],  # (4)
+    LexiconNames: NotRequired[Sequence[str]],
+    SampleRate: NotRequired[str],
+    SpeechMarkTypes: NotRequired[Sequence[SpeechMarkTypeType]],  # (5)
+    TextType: NotRequired[TextTypeType],  # (6)
+```
 
-- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
-- `Text`: `str`
-- `VoiceId`: [VoiceIdType](./literals.md#voiceidtype)
-
-Optional fields:
-
-- `Engine`: [EngineType](./literals.md#enginetype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LexiconNames`: `Sequence`\[`str`\]
-- `SampleRate`: `str`
-- `SpeechMarkTypes`:
-  `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
-- `TextType`: [TextTypeType](./literals.md#texttypetype)
-
-<a id="synthesizespeechoutputtypedef"></a>
-
+1. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
+2. See [:material-code-brackets: VoiceIdType](./literals.md#voiceidtype) 
+3. See [:material-code-brackets: EngineType](./literals.md#enginetype) 
+4. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+5. See [:material-code-brackets: SpeechMarkTypeType](./literals.md#speechmarktypetype) 
+6. See [:material-code-brackets: TextTypeType](./literals.md#texttypetype) 
 ## SynthesizeSpeechOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import SynthesizeSpeechOutputTypeDef
+
+def get_value() -> SynthesizeSpeechOutputTypeDef:
+    return {
+        "AudioStream": ...,
+        "ContentType": ...,
+        "RequestCharacters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SynthesizeSpeechOutputTypeDef(TypedDict):
+    AudioStream: StreamingBody,
+    ContentType: str,
+    RequestCharacters: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AudioStream`: `StreamingBody`
-- `ContentType`: `str`
-- `RequestCharacters`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="voicetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VoiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_polly.type_defs import VoiceTypeDef
+
+def get_value() -> VoiceTypeDef:
+    return {
+        "Gender": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VoiceTypeDef(TypedDict):
+    Gender: NotRequired[GenderType],  # (1)
+    Id: NotRequired[VoiceIdType],  # (2)
+    LanguageCode: NotRequired[LanguageCodeType],  # (3)
+    LanguageName: NotRequired[str],
+    Name: NotRequired[str],
+    AdditionalLanguageCodes: NotRequired[List[LanguageCodeType]],  # (4)
+    SupportedEngines: NotRequired[List[EngineType]],  # (5)
+```
 
-- `Gender`: [GenderType](./literals.md#gendertype)
-- `Id`: [VoiceIdType](./literals.md#voiceidtype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LanguageName`: `str`
-- `Name`: `str`
-- `AdditionalLanguageCodes`:
-  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
-- `SupportedEngines`: `List`\[[EngineType](./literals.md#enginetype)\]
+1. See [:material-code-brackets: GenderType](./literals.md#gendertype) 
+2. See [:material-code-brackets: VoiceIdType](./literals.md#voiceidtype) 
+3. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+4. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+5. See [:material-code-brackets: EngineType](./literals.md#enginetype) 

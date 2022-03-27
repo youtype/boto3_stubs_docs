@@ -1,54 +1,18 @@
-<a id="mqclient-for-boto3-mq-module"></a>
-
-# MQClient for boto3 MQ module
+# MQClient
 
 > [Index](../README.md) > [MQ](./README.md) > MQClient
 
-Auto-generated documentation for
-[MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
-type annotations stubs module
-[mypy-boto3-mq](https://pypi.org/project/mypy-boto3-mq/).
+!!! note ""
 
-- [MQClient for boto3 MQ module](#mqclient-for-boto3-mq-module)
-  - [MQClient](#mqclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_broker](#create_broker)
-    - [create_configuration](#create_configuration)
-    - [create_tags](#create_tags)
-    - [create_user](#create_user)
-    - [delete_broker](#delete_broker)
-    - [delete_tags](#delete_tags)
-    - [delete_user](#delete_user)
-    - [describe_broker](#describe_broker)
-    - [describe_broker_engine_types](#describe_broker_engine_types)
-    - [describe_broker_instance_options](#describe_broker_instance_options)
-    - [describe_configuration](#describe_configuration)
-    - [describe_configuration_revision](#describe_configuration_revision)
-    - [describe_user](#describe_user)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_brokers](#list_brokers)
-    - [list_configuration_revisions](#list_configuration_revisions)
-    - [list_configurations](#list_configurations)
-    - [list_tags](#list_tags)
-    - [list_users](#list_users)
-    - [reboot_broker](#reboot_broker)
-    - [update_broker](#update_broker)
-    - [update_configuration](#update_configuration)
-    - [update_user](#update_user)
-    - [get_paginator](#get_paginator)
-
-<a id="mqclient"></a>
+    Auto-generated documentation for [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
+    type annotations stubs module [mypy-boto3-mq](https://pypi.org/project/mypy-boto3-mq/).
 
 ## MQClient
 
-Type annotations for `boto3.client("mq")`
+Type annotations and code completion for `#!python boto3.client("mq")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mq.client import MQClient
 
@@ -56,613 +20,806 @@ def get_mq_client() -> MQClient:
     return Session().client("mq")
 ```
 
-Boto3 documentation:
-[MQ.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mq").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mq")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.InternalServerErrorException,
+    client.NotFoundException,
+    client.UnauthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mq.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.NotFoundException`
-- `Exceptions.UnauthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MQClient exceptions.
-
-Type annotations for `boto3.client("mq").exceptions` method.
-
-Boto3 documentation:
-[MQ.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mq").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mq").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.can_paginate)
 
-Boto3 documentation:
-[MQ.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_broker"></a>
-
-### create_broker
+### create\_broker
 
 Creates a broker.
 
-Type annotations for `boto3.client("mq").create_broker` method.
+Type annotations and code completion for `#!python boto3.client("mq").create_broker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_broker)
 
-Boto3 documentation:
-[MQ.Client.create_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_broker)
+```python title="Method definition"
+def create_broker(
+    self,
+    *,
+    AutoMinorVersionUpgrade: bool,
+    BrokerName: str,
+    DeploymentMode: DeploymentModeType,  # (1)
+    EngineType: EngineTypeType,  # (2)
+    EngineVersion: str,
+    HostInstanceType: str,
+    PubliclyAccessible: bool,
+    Users: Sequence[UserTypeDef],  # (3)
+    AuthenticationStrategy: AuthenticationStrategyType = ...,  # (4)
+    Configuration: ConfigurationIdTypeDef = ...,  # (5)
+    CreatorRequestId: str = ...,
+    EncryptionOptions: EncryptionOptionsTypeDef = ...,  # (6)
+    LdapServerMetadata: LdapServerMetadataInputTypeDef = ...,  # (7)
+    Logs: LogsTypeDef = ...,  # (8)
+    MaintenanceWindowStartTime: WeeklyStartTimeTypeDef = ...,  # (9)
+    SecurityGroups: Sequence[str] = ...,
+    StorageType: BrokerStorageTypeType = ...,  # (10)
+    SubnetIds: Sequence[str] = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateBrokerResponseTypeDef:  # (11)
+    ...
+```
 
-Arguments mapping described in
-[CreateBrokerRequestRequestTypeDef](./type_defs.md#createbrokerrequestrequesttypedef).
+1. See [:material-code-brackets: DeploymentModeType](./literals.md#deploymentmodetype) 
+2. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+3. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+4. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+5. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
+6. See [:material-code-braces: EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef) 
+7. See [:material-code-braces: LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef) 
+8. See [:material-code-braces: LogsTypeDef](./type_defs.md#logstypedef) 
+9. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
+10. See [:material-code-brackets: BrokerStorageTypeType](./literals.md#brokerstoragetypetype) 
+11. See [:material-code-braces: CreateBrokerResponseTypeDef](./type_defs.md#createbrokerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AutoMinorVersionUpgrade`: `bool` *(required)*
-- `BrokerName`: `str` *(required)*
-- `DeploymentMode`: [DeploymentModeType](./literals.md#deploymentmodetype)
-  *(required)*
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype) *(required)*
-- `EngineVersion`: `str` *(required)*
-- `HostInstanceType`: `str` *(required)*
-- `PubliclyAccessible`: `bool` *(required)*
-- `Users`: `Sequence`\[[UserTypeDef](./type_defs.md#usertypedef)\] *(required)*
-- `AuthenticationStrategy`:
-  [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `Configuration`:
-  [ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef)
-- `CreatorRequestId`: `str`
-- `EncryptionOptions`:
-  [EncryptionOptionsTypeDef](./type_defs.md#encryptionoptionstypedef)
-- `LdapServerMetadata`:
-  [LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef)
-- `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
-- `MaintenanceWindowStartTime`:
-  [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
-- `SecurityGroups`: `Sequence`\[`str`\]
-- `StorageType`: [BrokerStorageTypeType](./literals.md#brokerstoragetypetype)
-- `SubnetIds`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateBrokerRequestRequestTypeDef = {  # (1)
+    "AutoMinorVersionUpgrade": ...,
+    "BrokerName": ...,
+    "DeploymentMode": ...,
+    "EngineType": ...,
+    "EngineVersion": ...,
+    "HostInstanceType": ...,
+    "PubliclyAccessible": ...,
+    "Users": ...,
+}
 
-Returns
-[CreateBrokerResponseTypeDef](./type_defs.md#createbrokerresponsetypedef).
+parent.create_broker(**kwargs)
+```
 
-<a id="create\_configuration"></a>
+1. See [:material-code-braces: CreateBrokerRequestRequestTypeDef](./type_defs.md#createbrokerrequestrequesttypedef) 
 
-### create_configuration
+### create\_configuration
 
 Creates a new configuration for the specified configuration name.
 
-Type annotations for `boto3.client("mq").create_configuration` method.
+Type annotations and code completion for `#!python boto3.client("mq").create_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_configuration)
 
-Boto3 documentation:
-[MQ.Client.create_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_configuration)
+```python title="Method definition"
+def create_configuration(
+    self,
+    *,
+    EngineType: EngineTypeType,  # (1)
+    EngineVersion: str,
+    Name: str,
+    AuthenticationStrategy: AuthenticationStrategyType = ...,  # (2)
+    Tags: Mapping[str, str] = ...,
+) -> CreateConfigurationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateConfigurationRequestRequestTypeDef](./type_defs.md#createconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+2. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+3. See [:material-code-braces: CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype) *(required)*
-- `EngineVersion`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `AuthenticationStrategy`:
-  [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateConfigurationRequestRequestTypeDef = {  # (1)
+    "EngineType": ...,
+    "EngineVersion": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
+parent.create_configuration(**kwargs)
+```
 
-<a id="create\_tags"></a>
+1. See [:material-code-braces: CreateConfigurationRequestRequestTypeDef](./type_defs.md#createconfigurationrequestrequesttypedef) 
 
-### create_tags
+### create\_tags
 
 Add a tag to a resource.
 
-Type annotations for `boto3.client("mq").create_tags` method.
+Type annotations and code completion for `#!python boto3.client("mq").create_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_tags)
 
-Boto3 documentation:
-[MQ.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_tags)
+```python title="Method definition"
+def create_tags(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateTagsRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-<a id="create\_user"></a>
+parent.create_tags(**kwargs)
+```
 
-### create_user
+1. See [:material-code-braces: CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef) 
+
+### create\_user
 
 Creates an ActiveMQ user.
 
-Type annotations for `boto3.client("mq").create_user` method.
+Type annotations and code completion for `#!python boto3.client("mq").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_user)
 
-Boto3 documentation:
-[MQ.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    BrokerId: str,
+    Password: str,
+    Username: str,
+    ConsoleAccess: bool = ...,
+    Groups: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `BrokerId`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `ConsoleAccess`: `bool`
-- `Groups`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "BrokerId": ...,
+    "Password": ...,
+    "Username": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_user(**kwargs)
+```
 
-<a id="delete\_broker"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### delete_broker
+### delete\_broker
 
 Deletes a broker.
 
-Type annotations for `boto3.client("mq").delete_broker` method.
+Type annotations and code completion for `#!python boto3.client("mq").delete_broker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_broker)
 
-Boto3 documentation:
-[MQ.Client.delete_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_broker)
+```python title="Method definition"
+def delete_broker(
+    self,
+    *,
+    BrokerId: str,
+) -> DeleteBrokerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBrokerRequestRequestTypeDef](./type_defs.md#deletebrokerrequestrequesttypedef).
+1. See [:material-code-braces: DeleteBrokerResponseTypeDef](./type_defs.md#deletebrokerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BrokerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBrokerRequestRequestTypeDef = {  # (1)
+    "BrokerId": ...,
+}
 
-Returns
-[DeleteBrokerResponseTypeDef](./type_defs.md#deletebrokerresponsetypedef).
+parent.delete_broker(**kwargs)
+```
 
-<a id="delete\_tags"></a>
+1. See [:material-code-braces: DeleteBrokerRequestRequestTypeDef](./type_defs.md#deletebrokerrequestrequesttypedef) 
 
-### delete_tags
+### delete\_tags
 
 Removes a tag from a resource.
 
-Type annotations for `boto3.client("mq").delete_tags` method.
+Type annotations and code completion for `#!python boto3.client("mq").delete_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_tags)
 
-Boto3 documentation:
-[MQ.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_tags)
+```python title="Method definition"
+def delete_tags(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTagsRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="delete\_user"></a>
+parent.delete_tags(**kwargs)
+```
 
-### delete_user
+1. See [:material-code-braces: DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef) 
+
+### delete\_user
 
 Deletes an ActiveMQ user.
 
-Type annotations for `boto3.client("mq").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("mq").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_user)
 
-Boto3 documentation:
-[MQ.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    BrokerId: str,
+    Username: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `BrokerId`: `str` *(required)*
-- `Username`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "BrokerId": ...,
+    "Username": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_user(**kwargs)
+```
 
-<a id="describe\_broker"></a>
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
 
-### describe_broker
+### describe\_broker
 
 Returns information about the specified broker.
 
-Type annotations for `boto3.client("mq").describe_broker` method.
+Type annotations and code completion for `#!python boto3.client("mq").describe_broker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker)
 
-Boto3 documentation:
-[MQ.Client.describe_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker)
+```python title="Method definition"
+def describe_broker(
+    self,
+    *,
+    BrokerId: str,
+) -> DescribeBrokerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBrokerRequestRequestTypeDef](./type_defs.md#describebrokerrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBrokerResponseTypeDef](./type_defs.md#describebrokerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BrokerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBrokerRequestRequestTypeDef = {  # (1)
+    "BrokerId": ...,
+}
 
-Returns
-[DescribeBrokerResponseTypeDef](./type_defs.md#describebrokerresponsetypedef).
+parent.describe_broker(**kwargs)
+```
 
-<a id="describe\_broker\_engine\_types"></a>
+1. See [:material-code-braces: DescribeBrokerRequestRequestTypeDef](./type_defs.md#describebrokerrequestrequesttypedef) 
 
-### describe_broker_engine_types
+### describe\_broker\_engine\_types
 
 Describe available engine types and versions.
 
-Type annotations for `boto3.client("mq").describe_broker_engine_types` method.
+Type annotations and code completion for `#!python boto3.client("mq").describe_broker_engine_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_engine_types)
 
-Boto3 documentation:
-[MQ.Client.describe_broker_engine_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_engine_types)
+```python title="Method definition"
+def describe_broker_engine_types(
+    self,
+    *,
+    EngineType: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeBrokerEngineTypesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBrokerEngineTypesRequestRequestTypeDef](./type_defs.md#describebrokerenginetypesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBrokerEngineTypesResponseTypeDef](./type_defs.md#describebrokerenginetypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EngineType`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeBrokerEngineTypesRequestRequestTypeDef = {  # (1)
+    "EngineType": ...,
+}
 
-Returns
-[DescribeBrokerEngineTypesResponseTypeDef](./type_defs.md#describebrokerenginetypesresponsetypedef).
+parent.describe_broker_engine_types(**kwargs)
+```
 
-<a id="describe\_broker\_instance\_options"></a>
+1. See [:material-code-braces: DescribeBrokerEngineTypesRequestRequestTypeDef](./type_defs.md#describebrokerenginetypesrequestrequesttypedef) 
 
-### describe_broker_instance_options
+### describe\_broker\_instance\_options
 
 Describe available broker instance options.
 
-Type annotations for `boto3.client("mq").describe_broker_instance_options`
-method.
+Type annotations and code completion for `#!python boto3.client("mq").describe_broker_instance_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_instance_options)
 
-Boto3 documentation:
-[MQ.Client.describe_broker_instance_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_broker_instance_options)
+```python title="Method definition"
+def describe_broker_instance_options(
+    self,
+    *,
+    EngineType: str = ...,
+    HostInstanceType: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    StorageType: str = ...,
+) -> DescribeBrokerInstanceOptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBrokerInstanceOptionsRequestRequestTypeDef](./type_defs.md#describebrokerinstanceoptionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBrokerInstanceOptionsResponseTypeDef](./type_defs.md#describebrokerinstanceoptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EngineType`: `str`
-- `HostInstanceType`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `StorageType`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeBrokerInstanceOptionsRequestRequestTypeDef = {  # (1)
+    "EngineType": ...,
+}
 
-Returns
-[DescribeBrokerInstanceOptionsResponseTypeDef](./type_defs.md#describebrokerinstanceoptionsresponsetypedef).
+parent.describe_broker_instance_options(**kwargs)
+```
 
-<a id="describe\_configuration"></a>
+1. See [:material-code-braces: DescribeBrokerInstanceOptionsRequestRequestTypeDef](./type_defs.md#describebrokerinstanceoptionsrequestrequesttypedef) 
 
-### describe_configuration
+### describe\_configuration
 
 Returns information about the specified configuration.
 
-Type annotations for `boto3.client("mq").describe_configuration` method.
+Type annotations and code completion for `#!python boto3.client("mq").describe_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration)
 
-Boto3 documentation:
-[MQ.Client.describe_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration)
+```python title="Method definition"
+def describe_configuration(
+    self,
+    *,
+    ConfigurationId: str,
+) -> DescribeConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConfigurationRequestRequestTypeDef](./type_defs.md#describeconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeConfigurationRequestRequestTypeDef = {  # (1)
+    "ConfigurationId": ...,
+}
 
-Returns
-[DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef).
+parent.describe_configuration(**kwargs)
+```
 
-<a id="describe\_configuration\_revision"></a>
+1. See [:material-code-braces: DescribeConfigurationRequestRequestTypeDef](./type_defs.md#describeconfigurationrequestrequesttypedef) 
 
-### describe_configuration_revision
+### describe\_configuration\_revision
 
 Returns the specified configuration revision for the specified configuration.
 
-Type annotations for `boto3.client("mq").describe_configuration_revision`
-method.
+Type annotations and code completion for `#!python boto3.client("mq").describe_configuration_revision` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration_revision)
 
-Boto3 documentation:
-[MQ.Client.describe_configuration_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_configuration_revision)
+```python title="Method definition"
+def describe_configuration_revision(
+    self,
+    *,
+    ConfigurationId: str,
+    ConfigurationRevision: str,
+) -> DescribeConfigurationRevisionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConfigurationRevisionRequestRequestTypeDef](./type_defs.md#describeconfigurationrevisionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationId`: `str` *(required)*
-- `ConfigurationRevision`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeConfigurationRevisionRequestRequestTypeDef = {  # (1)
+    "ConfigurationId": ...,
+    "ConfigurationRevision": ...,
+}
 
-Returns
-[DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef).
+parent.describe_configuration_revision(**kwargs)
+```
 
-<a id="describe\_user"></a>
+1. See [:material-code-braces: DescribeConfigurationRevisionRequestRequestTypeDef](./type_defs.md#describeconfigurationrevisionrequestrequesttypedef) 
 
-### describe_user
+### describe\_user
 
 Returns information about an ActiveMQ user.
 
-Type annotations for `boto3.client("mq").describe_user` method.
+Type annotations and code completion for `#!python boto3.client("mq").describe_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_user)
 
-Boto3 documentation:
-[MQ.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.describe_user)
+```python title="Method definition"
+def describe_user(
+    self,
+    *,
+    BrokerId: str,
+    Username: str,
+) -> DescribeUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BrokerId`: `str` *(required)*
-- `Username`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserRequestRequestTypeDef = {  # (1)
+    "BrokerId": ...,
+    "Username": ...,
+}
 
-Returns
-[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+parent.describe_user(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mq").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("mq").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MQ.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_brokers"></a>
-
-### list_brokers
+### list\_brokers
 
 Returns a list of all brokers.
 
-Type annotations for `boto3.client("mq").list_brokers` method.
+Type annotations and code completion for `#!python boto3.client("mq").list_brokers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_brokers)
 
-Boto3 documentation:
-[MQ.Client.list_brokers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_brokers)
+```python title="Method definition"
+def list_brokers(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListBrokersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBrokersRequestRequestTypeDef](./type_defs.md#listbrokersrequestrequesttypedef).
+1. See [:material-code-braces: ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBrokersRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef).
+parent.list_brokers(**kwargs)
+```
 
-<a id="list\_configuration\_revisions"></a>
+1. See [:material-code-braces: ListBrokersRequestRequestTypeDef](./type_defs.md#listbrokersrequestrequesttypedef) 
 
-### list_configuration_revisions
+### list\_configuration\_revisions
 
 Returns a list of all revisions for the specified configuration.
 
-Type annotations for `boto3.client("mq").list_configuration_revisions` method.
+Type annotations and code completion for `#!python boto3.client("mq").list_configuration_revisions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configuration_revisions)
 
-Boto3 documentation:
-[MQ.Client.list_configuration_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configuration_revisions)
+```python title="Method definition"
+def list_configuration_revisions(
+    self,
+    *,
+    ConfigurationId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListConfigurationRevisionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConfigurationRevisionsRequestRequestTypeDef](./type_defs.md#listconfigurationrevisionsrequestrequesttypedef).
+1. See [:material-code-braces: ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConfigurationRevisionsRequestRequestTypeDef = {  # (1)
+    "ConfigurationId": ...,
+}
 
-Returns
-[ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef).
+parent.list_configuration_revisions(**kwargs)
+```
 
-<a id="list\_configurations"></a>
+1. See [:material-code-braces: ListConfigurationRevisionsRequestRequestTypeDef](./type_defs.md#listconfigurationrevisionsrequestrequesttypedef) 
 
-### list_configurations
+### list\_configurations
 
 Returns a list of all configurations.
 
-Type annotations for `boto3.client("mq").list_configurations` method.
+Type annotations and code completion for `#!python boto3.client("mq").list_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configurations)
 
-Boto3 documentation:
-[MQ.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_configurations)
+```python title="Method definition"
+def list_configurations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConfigurationsRequestRequestTypeDef](./type_defs.md#listconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConfigurationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
+parent.list_configurations(**kwargs)
+```
 
-<a id="list\_tags"></a>
+1. See [:material-code-braces: ListConfigurationsRequestRequestTypeDef](./type_defs.md#listconfigurationsrequestrequesttypedef) 
 
-### list_tags
+### list\_tags
 
 Lists tags for a resource.
 
-Type annotations for `boto3.client("mq").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("mq").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_tags)
 
-Boto3 documentation:
-[MQ.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
-### list_users
+### list\_users
 
 Returns a list of all ActiveMQ users.
 
-Type annotations for `boto3.client("mq").list_users` method.
+Type annotations and code completion for `#!python boto3.client("mq").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_users)
 
-Boto3 documentation:
-[MQ.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    BrokerId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BrokerId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "BrokerId": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
 
-<a id="reboot\_broker"></a>
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
-### reboot_broker
+### reboot\_broker
 
 Reboots a broker.
 
-Type annotations for `boto3.client("mq").reboot_broker` method.
+Type annotations and code completion for `#!python boto3.client("mq").reboot_broker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.reboot_broker)
 
-Boto3 documentation:
-[MQ.Client.reboot_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.reboot_broker)
+```python title="Method definition"
+def reboot_broker(
+    self,
+    *,
+    BrokerId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RebootBrokerRequestRequestTypeDef](./type_defs.md#rebootbrokerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `BrokerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RebootBrokerRequestRequestTypeDef = {  # (1)
+    "BrokerId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.reboot_broker(**kwargs)
+```
 
-<a id="update\_broker"></a>
+1. See [:material-code-braces: RebootBrokerRequestRequestTypeDef](./type_defs.md#rebootbrokerrequestrequesttypedef) 
 
-### update_broker
+### update\_broker
 
 Adds a pending configuration change to a broker.
 
-Type annotations for `boto3.client("mq").update_broker` method.
+Type annotations and code completion for `#!python boto3.client("mq").update_broker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_broker)
 
-Boto3 documentation:
-[MQ.Client.update_broker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_broker)
+```python title="Method definition"
+def update_broker(
+    self,
+    *,
+    BrokerId: str,
+    AuthenticationStrategy: AuthenticationStrategyType = ...,  # (1)
+    AutoMinorVersionUpgrade: bool = ...,
+    Configuration: ConfigurationIdTypeDef = ...,  # (2)
+    EngineVersion: str = ...,
+    HostInstanceType: str = ...,
+    LdapServerMetadata: LdapServerMetadataInputTypeDef = ...,  # (3)
+    Logs: LogsTypeDef = ...,  # (4)
+    MaintenanceWindowStartTime: WeeklyStartTimeTypeDef = ...,  # (5)
+    SecurityGroups: Sequence[str] = ...,
+) -> UpdateBrokerResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBrokerRequestRequestTypeDef](./type_defs.md#updatebrokerrequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationStrategyType](./literals.md#authenticationstrategytype) 
+2. See [:material-code-braces: ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef) 
+3. See [:material-code-braces: LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef) 
+4. See [:material-code-braces: LogsTypeDef](./type_defs.md#logstypedef) 
+5. See [:material-code-braces: WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef) 
+6. See [:material-code-braces: UpdateBrokerResponseTypeDef](./type_defs.md#updatebrokerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BrokerId`: `str` *(required)*
-- `AuthenticationStrategy`:
-  [AuthenticationStrategyType](./literals.md#authenticationstrategytype)
-- `AutoMinorVersionUpgrade`: `bool`
-- `Configuration`:
-  [ConfigurationIdTypeDef](./type_defs.md#configurationidtypedef)
-- `EngineVersion`: `str`
-- `HostInstanceType`: `str`
-- `LdapServerMetadata`:
-  [LdapServerMetadataInputTypeDef](./type_defs.md#ldapservermetadatainputtypedef)
-- `Logs`: [LogsTypeDef](./type_defs.md#logstypedef)
-- `MaintenanceWindowStartTime`:
-  [WeeklyStartTimeTypeDef](./type_defs.md#weeklystarttimetypedef)
-- `SecurityGroups`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateBrokerRequestRequestTypeDef = {  # (1)
+    "BrokerId": ...,
+}
 
-Returns
-[UpdateBrokerResponseTypeDef](./type_defs.md#updatebrokerresponsetypedef).
+parent.update_broker(**kwargs)
+```
 
-<a id="update\_configuration"></a>
+1. See [:material-code-braces: UpdateBrokerRequestRequestTypeDef](./type_defs.md#updatebrokerrequestrequesttypedef) 
 
-### update_configuration
+### update\_configuration
 
 Updates the specified configuration.
 
-Type annotations for `boto3.client("mq").update_configuration` method.
+Type annotations and code completion for `#!python boto3.client("mq").update_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_configuration)
 
-Boto3 documentation:
-[MQ.Client.update_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_configuration)
+```python title="Method definition"
+def update_configuration(
+    self,
+    *,
+    ConfigurationId: str,
+    Data: str,
+    Description: str = ...,
+) -> UpdateConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConfigurationRequestRequestTypeDef](./type_defs.md#updateconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationId`: `str` *(required)*
-- `Data`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateConfigurationRequestRequestTypeDef = {  # (1)
+    "ConfigurationId": ...,
+    "Data": ...,
+}
 
-Returns
-[UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef).
+parent.update_configuration(**kwargs)
+```
 
-<a id="update\_user"></a>
+1. See [:material-code-braces: UpdateConfigurationRequestRequestTypeDef](./type_defs.md#updateconfigurationrequestrequesttypedef) 
 
-### update_user
+### update\_user
 
 Updates the information for an ActiveMQ user.
 
-Type annotations for `boto3.client("mq").update_user` method.
+Type annotations and code completion for `#!python boto3.client("mq").update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_user)
 
-Boto3 documentation:
-[MQ.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ.Client.update_user)
+```python title="Method definition"
+def update_user(
+    self,
+    *,
+    BrokerId: str,
+    Username: str,
+    ConsoleAccess: bool = ...,
+    Groups: Sequence[str] = ...,
+    Password: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `BrokerId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `ConsoleAccess`: `bool`
-- `Groups`: `Sequence`\[`str`\]
-- `Password`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRequestRequestTypeDef = {  # (1)
+    "BrokerId": ...,
+    "Username": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_user(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mq").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("mq").get_paginator` method with overloads.
 
-- `client.get_paginator("list_brokers")` ->
-  [ListBrokersPaginator](./paginators.md#listbrokerspaginator)
+- `client.get_paginator("list_brokers")` -> [ListBrokersPaginator](./paginators.md#listbrokerspaginator)
+
+
+

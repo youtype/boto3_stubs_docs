@@ -1,1105 +1,1190 @@
-<a id="literals-for-boto3-servicecatalog-module"></a>
-
-# Literals for boto3 ServiceCatalog module
+# Literals
 
 > [Index](../README.md) > [ServiceCatalog](./README.md) > Literals
 
-Auto-generated documentation for
-[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
-type annotations stubs module
-[mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+!!! note ""
 
-- [Literals for boto3 ServiceCatalog module](#literals-for-boto3-servicecatalog-module)
-  - [AccessLevelFilterKeyType](#accesslevelfilterkeytype)
-  - [AccessStatusType](#accessstatustype)
-  - [ChangeActionType](#changeactiontype)
-  - [CopyOptionType](#copyoptiontype)
-  - [CopyProductStatusType](#copyproductstatustype)
-  - [DescribePortfolioShareTypeType](#describeportfoliosharetypetype)
-  - [EvaluationTypeType](#evaluationtypetype)
-  - [ListAcceptedPortfolioSharesPaginatorName](#listacceptedportfoliosharespaginatorname)
-  - [ListConstraintsForPortfolioPaginatorName](#listconstraintsforportfoliopaginatorname)
-  - [ListLaunchPathsPaginatorName](#listlaunchpathspaginatorname)
-  - [ListOrganizationPortfolioAccessPaginatorName](#listorganizationportfolioaccesspaginatorname)
-  - [ListPortfoliosForProductPaginatorName](#listportfoliosforproductpaginatorname)
-  - [ListPortfoliosPaginatorName](#listportfoliospaginatorname)
-  - [ListPrincipalsForPortfolioPaginatorName](#listprincipalsforportfoliopaginatorname)
-  - [ListProvisionedProductPlansPaginatorName](#listprovisionedproductplanspaginatorname)
-  - [ListProvisioningArtifactsForServiceActionPaginatorName](#listprovisioningartifactsforserviceactionpaginatorname)
-  - [ListRecordHistoryPaginatorName](#listrecordhistorypaginatorname)
-  - [ListResourcesForTagOptionPaginatorName](#listresourcesfortagoptionpaginatorname)
-  - [ListServiceActionsForProvisioningArtifactPaginatorName](#listserviceactionsforprovisioningartifactpaginatorname)
-  - [ListServiceActionsPaginatorName](#listserviceactionspaginatorname)
-  - [ListTagOptionsPaginatorName](#listtagoptionspaginatorname)
-  - [OrganizationNodeTypeType](#organizationnodetypetype)
-  - [PortfolioShareTypeType](#portfoliosharetypetype)
-  - [PrincipalTypeType](#principaltypetype)
-  - [ProductSourceType](#productsourcetype)
-  - [ProductTypeType](#producttypetype)
-  - [ProductViewFilterByType](#productviewfilterbytype)
-  - [ProductViewSortByType](#productviewsortbytype)
-  - [PropertyKeyType](#propertykeytype)
-  - [ProvisionedProductPlanStatusType](#provisionedproductplanstatustype)
-  - [ProvisionedProductPlanTypeType](#provisionedproductplantypetype)
-  - [ProvisionedProductStatusType](#provisionedproductstatustype)
-  - [ProvisionedProductViewFilterByType](#provisionedproductviewfilterbytype)
-  - [ProvisioningArtifactGuidanceType](#provisioningartifactguidancetype)
-  - [ProvisioningArtifactPropertyNameType](#provisioningartifactpropertynametype)
-  - [ProvisioningArtifactTypeType](#provisioningartifacttypetype)
-  - [RecordStatusType](#recordstatustype)
-  - [ReplacementType](#replacementtype)
-  - [RequiresRecreationType](#requiresrecreationtype)
-  - [ResourceAttributeType](#resourceattributetype)
-  - [ScanProvisionedProductsPaginatorName](#scanprovisionedproductspaginatorname)
-  - [SearchProductsAsAdminPaginatorName](#searchproductsasadminpaginatorname)
-  - [ServiceActionAssociationErrorCodeType](#serviceactionassociationerrorcodetype)
-  - [ServiceActionDefinitionKeyType](#serviceactiondefinitionkeytype)
-  - [ServiceActionDefinitionTypeType](#serviceactiondefinitiontypetype)
-  - [ShareStatusType](#sharestatustype)
-  - [SortOrderType](#sortordertype)
-  - [StackInstanceStatusType](#stackinstancestatustype)
-  - [StackSetOperationTypeType](#stacksetoperationtypetype)
-  - [StatusType](#statustype)
-  - [ServiceCatalogServiceName](#servicecatalogservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="accesslevelfilterkeytype"></a>
+    Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+    type annotations stubs module [mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 ## AccessLevelFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import AccessLevelFilterKeyType
+
+def get_value() -> AccessLevelFilterKeyType:
+    return "Account"
 ```
 
-Values:
-
-- `Account`
-- `Role`
-- `User`
-
-<a id="accessstatustype"></a>
-
+```python title="Definition"
+AccessLevelFilterKeyType = Literal[
+    "Account",
+    "Role",
+    "User",
+]
+```
 ## AccessStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import AccessStatusType
+
+def get_value() -> AccessStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-- `UNDER_CHANGE`
-
-<a id="changeactiontype"></a>
-
+```python title="Definition"
+AccessStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "UNDER_CHANGE",
+]
+```
 ## ChangeActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ChangeActionType
+
+def get_value() -> ChangeActionType:
+    return "ADD"
 ```
 
-Values:
-
-- `ADD`
-- `MODIFY`
-- `REMOVE`
-
-<a id="copyoptiontype"></a>
-
+```python title="Definition"
+ChangeActionType = Literal[
+    "ADD",
+    "MODIFY",
+    "REMOVE",
+]
+```
 ## CopyOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import CopyOptionType
+
+def get_value() -> CopyOptionType:
+    return "CopyTags"
 ```
 
-Values:
-
-- `CopyTags`
-
-<a id="copyproductstatustype"></a>
-
+```python title="Definition"
+CopyOptionType = Literal[
+    "CopyTags",
+]
+```
 ## CopyProductStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import CopyProductStatusType
+
+def get_value() -> CopyProductStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `SUCCEEDED`
-
-<a id="describeportfoliosharetypetype"></a>
-
+```python title="Definition"
+CopyProductStatusType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "SUCCEEDED",
+]
+```
 ## DescribePortfolioShareTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import DescribePortfolioShareTypeType
+
+def get_value() -> DescribePortfolioShareTypeType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-- `ORGANIZATION`
-- `ORGANIZATION_MEMBER_ACCOUNT`
-- `ORGANIZATIONAL_UNIT`
-
-<a id="evaluationtypetype"></a>
-
+```python title="Definition"
+DescribePortfolioShareTypeType = Literal[
+    "ACCOUNT",
+    "ORGANIZATION",
+    "ORGANIZATION_MEMBER_ACCOUNT",
+    "ORGANIZATIONAL_UNIT",
+]
+```
 ## EvaluationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import EvaluationTypeType
+
+def get_value() -> EvaluationTypeType:
+    return "DYNAMIC"
 ```
 
-Values:
-
-- `DYNAMIC`
-- `STATIC`
-
-<a id="listacceptedportfoliosharespaginatorname"></a>
-
+```python title="Definition"
+EvaluationTypeType = Literal[
+    "DYNAMIC",
+    "STATIC",
+]
+```
 ## ListAcceptedPortfolioSharesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListAcceptedPortfolioSharesPaginatorName
+
+def get_value() -> ListAcceptedPortfolioSharesPaginatorName:
+    return "list_accepted_portfolio_shares"
 ```
 
-Values:
-
-- `list_accepted_portfolio_shares`
-
-<a id="listconstraintsforportfoliopaginatorname"></a>
-
+```python title="Definition"
+ListAcceptedPortfolioSharesPaginatorName = Literal[
+    "list_accepted_portfolio_shares",
+]
+```
 ## ListConstraintsForPortfolioPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListConstraintsForPortfolioPaginatorName
+
+def get_value() -> ListConstraintsForPortfolioPaginatorName:
+    return "list_constraints_for_portfolio"
 ```
 
-Values:
-
-- `list_constraints_for_portfolio`
-
-<a id="listlaunchpathspaginatorname"></a>
-
+```python title="Definition"
+ListConstraintsForPortfolioPaginatorName = Literal[
+    "list_constraints_for_portfolio",
+]
+```
 ## ListLaunchPathsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListLaunchPathsPaginatorName
+
+def get_value() -> ListLaunchPathsPaginatorName:
+    return "list_launch_paths"
 ```
 
-Values:
-
-- `list_launch_paths`
-
-<a id="listorganizationportfolioaccesspaginatorname"></a>
-
+```python title="Definition"
+ListLaunchPathsPaginatorName = Literal[
+    "list_launch_paths",
+]
+```
 ## ListOrganizationPortfolioAccessPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListOrganizationPortfolioAccessPaginatorName
+
+def get_value() -> ListOrganizationPortfolioAccessPaginatorName:
+    return "list_organization_portfolio_access"
 ```
 
-Values:
-
-- `list_organization_portfolio_access`
-
-<a id="listportfoliosforproductpaginatorname"></a>
-
+```python title="Definition"
+ListOrganizationPortfolioAccessPaginatorName = Literal[
+    "list_organization_portfolio_access",
+]
+```
 ## ListPortfoliosForProductPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListPortfoliosForProductPaginatorName
+
+def get_value() -> ListPortfoliosForProductPaginatorName:
+    return "list_portfolios_for_product"
 ```
 
-Values:
-
-- `list_portfolios_for_product`
-
-<a id="listportfoliospaginatorname"></a>
-
+```python title="Definition"
+ListPortfoliosForProductPaginatorName = Literal[
+    "list_portfolios_for_product",
+]
+```
 ## ListPortfoliosPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListPortfoliosPaginatorName
+
+def get_value() -> ListPortfoliosPaginatorName:
+    return "list_portfolios"
 ```
 
-Values:
-
-- `list_portfolios`
-
-<a id="listprincipalsforportfoliopaginatorname"></a>
-
+```python title="Definition"
+ListPortfoliosPaginatorName = Literal[
+    "list_portfolios",
+]
+```
 ## ListPrincipalsForPortfolioPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListPrincipalsForPortfolioPaginatorName
+
+def get_value() -> ListPrincipalsForPortfolioPaginatorName:
+    return "list_principals_for_portfolio"
 ```
 
-Values:
-
-- `list_principals_for_portfolio`
-
-<a id="listprovisionedproductplanspaginatorname"></a>
-
+```python title="Definition"
+ListPrincipalsForPortfolioPaginatorName = Literal[
+    "list_principals_for_portfolio",
+]
+```
 ## ListProvisionedProductPlansPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListProvisionedProductPlansPaginatorName
+
+def get_value() -> ListProvisionedProductPlansPaginatorName:
+    return "list_provisioned_product_plans"
 ```
 
-Values:
-
-- `list_provisioned_product_plans`
-
-<a id="listprovisioningartifactsforserviceactionpaginatorname"></a>
-
+```python title="Definition"
+ListProvisionedProductPlansPaginatorName = Literal[
+    "list_provisioned_product_plans",
+]
+```
 ## ListProvisioningArtifactsForServiceActionPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListProvisioningArtifactsForServiceActionPaginatorName
+
+def get_value() -> ListProvisioningArtifactsForServiceActionPaginatorName:
+    return "list_provisioning_artifacts_for_service_action"
 ```
 
-Values:
-
-- `list_provisioning_artifacts_for_service_action`
-
-<a id="listrecordhistorypaginatorname"></a>
-
+```python title="Definition"
+ListProvisioningArtifactsForServiceActionPaginatorName = Literal[
+    "list_provisioning_artifacts_for_service_action",
+]
+```
 ## ListRecordHistoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListRecordHistoryPaginatorName
+
+def get_value() -> ListRecordHistoryPaginatorName:
+    return "list_record_history"
 ```
 
-Values:
-
-- `list_record_history`
-
-<a id="listresourcesfortagoptionpaginatorname"></a>
-
+```python title="Definition"
+ListRecordHistoryPaginatorName = Literal[
+    "list_record_history",
+]
+```
 ## ListResourcesForTagOptionPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListResourcesForTagOptionPaginatorName
+
+def get_value() -> ListResourcesForTagOptionPaginatorName:
+    return "list_resources_for_tag_option"
 ```
 
-Values:
-
-- `list_resources_for_tag_option`
-
-<a id="listserviceactionsforprovisioningartifactpaginatorname"></a>
-
+```python title="Definition"
+ListResourcesForTagOptionPaginatorName = Literal[
+    "list_resources_for_tag_option",
+]
+```
 ## ListServiceActionsForProvisioningArtifactPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListServiceActionsForProvisioningArtifactPaginatorName
+
+def get_value() -> ListServiceActionsForProvisioningArtifactPaginatorName:
+    return "list_service_actions_for_provisioning_artifact"
 ```
 
-Values:
-
-- `list_service_actions_for_provisioning_artifact`
-
-<a id="listserviceactionspaginatorname"></a>
-
+```python title="Definition"
+ListServiceActionsForProvisioningArtifactPaginatorName = Literal[
+    "list_service_actions_for_provisioning_artifact",
+]
+```
 ## ListServiceActionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListServiceActionsPaginatorName
+
+def get_value() -> ListServiceActionsPaginatorName:
+    return "list_service_actions"
 ```
 
-Values:
-
-- `list_service_actions`
-
-<a id="listtagoptionspaginatorname"></a>
-
+```python title="Definition"
+ListServiceActionsPaginatorName = Literal[
+    "list_service_actions",
+]
+```
 ## ListTagOptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ListTagOptionsPaginatorName
+
+def get_value() -> ListTagOptionsPaginatorName:
+    return "list_tag_options"
 ```
 
-Values:
-
-- `list_tag_options`
-
-<a id="organizationnodetypetype"></a>
-
+```python title="Definition"
+ListTagOptionsPaginatorName = Literal[
+    "list_tag_options",
+]
+```
 ## OrganizationNodeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import OrganizationNodeTypeType
+
+def get_value() -> OrganizationNodeTypeType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-- `ORGANIZATION`
-- `ORGANIZATIONAL_UNIT`
-
-<a id="portfoliosharetypetype"></a>
-
+```python title="Definition"
+OrganizationNodeTypeType = Literal[
+    "ACCOUNT",
+    "ORGANIZATION",
+    "ORGANIZATIONAL_UNIT",
+]
+```
 ## PortfolioShareTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import PortfolioShareTypeType
+
+def get_value() -> PortfolioShareTypeType:
+    return "AWS_ORGANIZATIONS"
 ```
 
-Values:
-
-- `AWS_ORGANIZATIONS`
-- `AWS_SERVICECATALOG`
-- `IMPORTED`
-
-<a id="principaltypetype"></a>
-
+```python title="Definition"
+PortfolioShareTypeType = Literal[
+    "AWS_ORGANIZATIONS",
+    "AWS_SERVICECATALOG",
+    "IMPORTED",
+]
+```
 ## PrincipalTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import PrincipalTypeType
+
+def get_value() -> PrincipalTypeType:
+    return "IAM"
 ```
 
-Values:
-
-- `IAM`
-
-<a id="productsourcetype"></a>
-
+```python title="Definition"
+PrincipalTypeType = Literal[
+    "IAM",
+]
+```
 ## ProductSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProductSourceType
+
+def get_value() -> ProductSourceType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-
-<a id="producttypetype"></a>
-
+```python title="Definition"
+ProductSourceType = Literal[
+    "ACCOUNT",
+]
+```
 ## ProductTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProductTypeType
+
+def get_value() -> ProductTypeType:
+    return "CLOUD_FORMATION_TEMPLATE"
 ```
 
-Values:
-
-- `CLOUD_FORMATION_TEMPLATE`
-- `MARKETPLACE`
-
-<a id="productviewfilterbytype"></a>
-
+```python title="Definition"
+ProductTypeType = Literal[
+    "CLOUD_FORMATION_TEMPLATE",
+    "MARKETPLACE",
+]
+```
 ## ProductViewFilterByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProductViewFilterByType
+
+def get_value() -> ProductViewFilterByType:
+    return "FullTextSearch"
 ```
 
-Values:
-
-- `FullTextSearch`
-- `Owner`
-- `ProductType`
-- `SourceProductId`
-
-<a id="productviewsortbytype"></a>
-
+```python title="Definition"
+ProductViewFilterByType = Literal[
+    "FullTextSearch",
+    "Owner",
+    "ProductType",
+    "SourceProductId",
+]
+```
 ## ProductViewSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProductViewSortByType
+
+def get_value() -> ProductViewSortByType:
+    return "CreationDate"
 ```
 
-Values:
-
-- `CreationDate`
-- `Title`
-- `VersionCount`
-
-<a id="propertykeytype"></a>
-
+```python title="Definition"
+ProductViewSortByType = Literal[
+    "CreationDate",
+    "Title",
+    "VersionCount",
+]
+```
 ## PropertyKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import PropertyKeyType
+
+def get_value() -> PropertyKeyType:
+    return "LAUNCH_ROLE"
 ```
 
-Values:
-
-- `LAUNCH_ROLE`
-- `OWNER`
-
-<a id="provisionedproductplanstatustype"></a>
-
+```python title="Definition"
+PropertyKeyType = Literal[
+    "LAUNCH_ROLE",
+    "OWNER",
+]
+```
 ## ProvisionedProductPlanStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProvisionedProductPlanStatusType
+
+def get_value() -> ProvisionedProductPlanStatusType:
+    return "CREATE_FAILED"
 ```
 
-Values:
-
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `CREATE_SUCCESS`
-- `EXECUTE_FAILED`
-- `EXECUTE_IN_PROGRESS`
-- `EXECUTE_SUCCESS`
-
-<a id="provisionedproductplantypetype"></a>
-
+```python title="Definition"
+ProvisionedProductPlanStatusType = Literal[
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "CREATE_SUCCESS",
+    "EXECUTE_FAILED",
+    "EXECUTE_IN_PROGRESS",
+    "EXECUTE_SUCCESS",
+]
+```
 ## ProvisionedProductPlanTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProvisionedProductPlanTypeType
+
+def get_value() -> ProvisionedProductPlanTypeType:
+    return "CLOUDFORMATION"
 ```
 
-Values:
-
-- `CLOUDFORMATION`
-
-<a id="provisionedproductstatustype"></a>
-
+```python title="Definition"
+ProvisionedProductPlanTypeType = Literal[
+    "CLOUDFORMATION",
+]
+```
 ## ProvisionedProductStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProvisionedProductStatusType
+
+def get_value() -> ProvisionedProductStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `ERROR`
-- `PLAN_IN_PROGRESS`
-- `TAINTED`
-- `UNDER_CHANGE`
-
-<a id="provisionedproductviewfilterbytype"></a>
-
+```python title="Definition"
+ProvisionedProductStatusType = Literal[
+    "AVAILABLE",
+    "ERROR",
+    "PLAN_IN_PROGRESS",
+    "TAINTED",
+    "UNDER_CHANGE",
+]
+```
 ## ProvisionedProductViewFilterByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProvisionedProductViewFilterByType
+
+def get_value() -> ProvisionedProductViewFilterByType:
+    return "SearchQuery"
 ```
 
-Values:
-
-- `SearchQuery`
-
-<a id="provisioningartifactguidancetype"></a>
-
+```python title="Definition"
+ProvisionedProductViewFilterByType = Literal[
+    "SearchQuery",
+]
+```
 ## ProvisioningArtifactGuidanceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProvisioningArtifactGuidanceType
+
+def get_value() -> ProvisioningArtifactGuidanceType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `DEFAULT`
-- `DEPRECATED`
-
-<a id="provisioningartifactpropertynametype"></a>
-
+```python title="Definition"
+ProvisioningArtifactGuidanceType = Literal[
+    "DEFAULT",
+    "DEPRECATED",
+]
+```
 ## ProvisioningArtifactPropertyNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProvisioningArtifactPropertyNameType
+
+def get_value() -> ProvisioningArtifactPropertyNameType:
+    return "Id"
 ```
 
-Values:
-
-- `Id`
-
-<a id="provisioningartifacttypetype"></a>
-
+```python title="Definition"
+ProvisioningArtifactPropertyNameType = Literal[
+    "Id",
+]
+```
 ## ProvisioningArtifactTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ProvisioningArtifactTypeType
+
+def get_value() -> ProvisioningArtifactTypeType:
+    return "CLOUD_FORMATION_TEMPLATE"
 ```
 
-Values:
-
-- `CLOUD_FORMATION_TEMPLATE`
-- `MARKETPLACE_AMI`
-- `MARKETPLACE_CAR`
-
-<a id="recordstatustype"></a>
-
+```python title="Definition"
+ProvisioningArtifactTypeType = Literal[
+    "CLOUD_FORMATION_TEMPLATE",
+    "MARKETPLACE_AMI",
+    "MARKETPLACE_CAR",
+]
+```
 ## RecordStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import RecordStatusType
+
+def get_value() -> RecordStatusType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATED`
-- `FAILED`
-- `IN_PROGRESS`
-- `IN_PROGRESS_IN_ERROR`
-- `SUCCEEDED`
-
-<a id="replacementtype"></a>
-
+```python title="Definition"
+RecordStatusType = Literal[
+    "CREATED",
+    "FAILED",
+    "IN_PROGRESS",
+    "IN_PROGRESS_IN_ERROR",
+    "SUCCEEDED",
+]
+```
 ## ReplacementType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ReplacementType
+
+def get_value() -> ReplacementType:
+    return "CONDITIONAL"
 ```
 
-Values:
-
-- `CONDITIONAL`
-- `FALSE`
-- `TRUE`
-
-<a id="requiresrecreationtype"></a>
-
+```python title="Definition"
+ReplacementType = Literal[
+    "CONDITIONAL",
+    "FALSE",
+    "TRUE",
+]
+```
 ## RequiresRecreationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import RequiresRecreationType
+
+def get_value() -> RequiresRecreationType:
+    return "ALWAYS"
 ```
 
-Values:
-
-- `ALWAYS`
-- `CONDITIONALLY`
-- `NEVER`
-
-<a id="resourceattributetype"></a>
-
+```python title="Definition"
+RequiresRecreationType = Literal[
+    "ALWAYS",
+    "CONDITIONALLY",
+    "NEVER",
+]
+```
 ## ResourceAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ResourceAttributeType
+
+def get_value() -> ResourceAttributeType:
+    return "CREATIONPOLICY"
 ```
 
-Values:
-
-- `CREATIONPOLICY`
-- `DELETIONPOLICY`
-- `METADATA`
-- `PROPERTIES`
-- `TAGS`
-- `UPDATEPOLICY`
-
-<a id="scanprovisionedproductspaginatorname"></a>
-
+```python title="Definition"
+ResourceAttributeType = Literal[
+    "CREATIONPOLICY",
+    "DELETIONPOLICY",
+    "METADATA",
+    "PROPERTIES",
+    "TAGS",
+    "UPDATEPOLICY",
+]
+```
 ## ScanProvisionedProductsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ScanProvisionedProductsPaginatorName
+
+def get_value() -> ScanProvisionedProductsPaginatorName:
+    return "scan_provisioned_products"
 ```
 
-Values:
-
-- `scan_provisioned_products`
-
-<a id="searchproductsasadminpaginatorname"></a>
-
+```python title="Definition"
+ScanProvisionedProductsPaginatorName = Literal[
+    "scan_provisioned_products",
+]
+```
 ## SearchProductsAsAdminPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import SearchProductsAsAdminPaginatorName
+
+def get_value() -> SearchProductsAsAdminPaginatorName:
+    return "search_products_as_admin"
 ```
 
-Values:
-
-- `search_products_as_admin`
-
-<a id="serviceactionassociationerrorcodetype"></a>
-
+```python title="Definition"
+SearchProductsAsAdminPaginatorName = Literal[
+    "search_products_as_admin",
+]
+```
 ## ServiceActionAssociationErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ServiceActionAssociationErrorCodeType
+
+def get_value() -> ServiceActionAssociationErrorCodeType:
+    return "DUPLICATE_RESOURCE"
 ```
 
-Values:
-
-- `DUPLICATE_RESOURCE`
-- `INTERNAL_FAILURE`
-- `LIMIT_EXCEEDED`
-- `RESOURCE_NOT_FOUND`
-- `THROTTLING`
-
-<a id="serviceactiondefinitionkeytype"></a>
-
+```python title="Definition"
+ServiceActionAssociationErrorCodeType = Literal[
+    "DUPLICATE_RESOURCE",
+    "INTERNAL_FAILURE",
+    "LIMIT_EXCEEDED",
+    "RESOURCE_NOT_FOUND",
+    "THROTTLING",
+]
+```
 ## ServiceActionDefinitionKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ServiceActionDefinitionKeyType
+
+def get_value() -> ServiceActionDefinitionKeyType:
+    return "AssumeRole"
 ```
 
-Values:
-
-- `AssumeRole`
-- `Name`
-- `Parameters`
-- `Version`
-
-<a id="serviceactiondefinitiontypetype"></a>
-
+```python title="Definition"
+ServiceActionDefinitionKeyType = Literal[
+    "AssumeRole",
+    "Name",
+    "Parameters",
+    "Version",
+]
+```
 ## ServiceActionDefinitionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ServiceActionDefinitionTypeType
+
+def get_value() -> ServiceActionDefinitionTypeType:
+    return "SSM_AUTOMATION"
 ```
 
-Values:
-
-- `SSM_AUTOMATION`
-
-<a id="sharestatustype"></a>
-
+```python title="Definition"
+ServiceActionDefinitionTypeType = Literal[
+    "SSM_AUTOMATION",
+]
+```
 ## ShareStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ShareStatusType
+
+def get_value() -> ShareStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `COMPLETED_WITH_ERRORS`
-- `ERROR`
-- `IN_PROGRESS`
-- `NOT_STARTED`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+ShareStatusType = Literal[
+    "COMPLETED",
+    "COMPLETED_WITH_ERRORS",
+    "ERROR",
+    "IN_PROGRESS",
+    "NOT_STARTED",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="stackinstancestatustype"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## StackInstanceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import StackInstanceStatusType
+
+def get_value() -> StackInstanceStatusType:
+    return "CURRENT"
 ```
 
-Values:
-
-- `CURRENT`
-- `INOPERABLE`
-- `OUTDATED`
-
-<a id="stacksetoperationtypetype"></a>
-
+```python title="Definition"
+StackInstanceStatusType = Literal[
+    "CURRENT",
+    "INOPERABLE",
+    "OUTDATED",
+]
+```
 ## StackSetOperationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import StackSetOperationTypeType
+
+def get_value() -> StackSetOperationTypeType:
+    return "CREATE"
 ```
 
-Values:
-
-- `CREATE`
-- `DELETE`
-- `UPDATE`
-
-<a id="statustype"></a>
-
+```python title="Definition"
+StackSetOperationTypeType = Literal[
+    "CREATE",
+    "DELETE",
+    "UPDATE",
+]
+```
 ## StatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import StatusType
+
+def get_value() -> StatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `CREATING`
-- `FAILED`
-
-<a id="servicecatalogservicename"></a>
-
+```python title="Definition"
+StatusType = Literal[
+    "AVAILABLE",
+    "CREATING",
+    "FAILED",
+]
+```
 ## ServiceCatalogServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ServiceCatalogServiceName
+
+def get_value() -> ServiceCatalogServiceName:
+    return "servicecatalog"
 ```
 
-Values:
-
-- `servicecatalog`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ServiceCatalogServiceName = Literal[
+    "servicecatalog",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicecatalog.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_accepted_portfolio_shares"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_accepted_portfolio_shares",
+    "list_constraints_for_portfolio",
+    "list_launch_paths",
+    "list_organization_portfolio_access",
+    "list_portfolios",
+    "list_portfolios_for_product",
+    "list_principals_for_portfolio",
+    "list_provisioned_product_plans",
+    "list_provisioning_artifacts_for_service_action",
+    "list_record_history",
+    "list_resources_for_tag_option",
+    "list_service_actions",
+    "list_service_actions_for_provisioning_artifact",
+    "list_tag_options",
+    "scan_provisioned_products",
+    "search_products_as_admin",
+]
+```
+## RegionName
 
-- `list_accepted_portfolio_shares`
-- `list_constraints_for_portfolio`
-- `list_launch_paths`
-- `list_organization_portfolio_access`
-- `list_portfolios`
-- `list_portfolios_for_product`
-- `list_principals_for_portfolio`
-- `list_provisioned_product_plans`
-- `list_provisioning_artifacts_for_service_action`
-- `list_record_history`
-- `list_resources_for_tag_option`
-- `list_service_actions`
-- `list_service_actions_for_provisioning_artifact`
-- `list_tag_options`
-- `scan_provisioned_products`
-- `search_products_as_admin`
+```python title="Usage Example"
+from mypy_boto3_servicecatalog.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

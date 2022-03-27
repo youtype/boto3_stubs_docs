@@ -1,71 +1,18 @@
-<a id="transcribeserviceclient-for-boto3-transcribeservice-module"></a>
+# TranscribeServiceClient
 
-# TranscribeServiceClient for boto3 TranscribeService module
+> [Index](../README.md) > [TranscribeService](./README.md) > TranscribeServiceClient
 
-> [Index](../README.md) > [TranscribeService](./README.md) >
-> TranscribeServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
-type annotations stubs module
-[mypy-boto3-transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
-
-- [TranscribeServiceClient for boto3 TranscribeService module](#transcribeserviceclient-for-boto3-transcribeservice-module)
-  - [TranscribeServiceClient](#transcribeserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_call_analytics_category](#create_call_analytics_category)
-    - [create_language_model](#create_language_model)
-    - [create_medical_vocabulary](#create_medical_vocabulary)
-    - [create_vocabulary](#create_vocabulary)
-    - [create_vocabulary_filter](#create_vocabulary_filter)
-    - [delete_call_analytics_category](#delete_call_analytics_category)
-    - [delete_call_analytics_job](#delete_call_analytics_job)
-    - [delete_language_model](#delete_language_model)
-    - [delete_medical_transcription_job](#delete_medical_transcription_job)
-    - [delete_medical_vocabulary](#delete_medical_vocabulary)
-    - [delete_transcription_job](#delete_transcription_job)
-    - [delete_vocabulary](#delete_vocabulary)
-    - [delete_vocabulary_filter](#delete_vocabulary_filter)
-    - [describe_language_model](#describe_language_model)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_call_analytics_category](#get_call_analytics_category)
-    - [get_call_analytics_job](#get_call_analytics_job)
-    - [get_medical_transcription_job](#get_medical_transcription_job)
-    - [get_medical_vocabulary](#get_medical_vocabulary)
-    - [get_transcription_job](#get_transcription_job)
-    - [get_vocabulary](#get_vocabulary)
-    - [get_vocabulary_filter](#get_vocabulary_filter)
-    - [list_call_analytics_categories](#list_call_analytics_categories)
-    - [list_call_analytics_jobs](#list_call_analytics_jobs)
-    - [list_language_models](#list_language_models)
-    - [list_medical_transcription_jobs](#list_medical_transcription_jobs)
-    - [list_medical_vocabularies](#list_medical_vocabularies)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_transcription_jobs](#list_transcription_jobs)
-    - [list_vocabularies](#list_vocabularies)
-    - [list_vocabulary_filters](#list_vocabulary_filters)
-    - [start_call_analytics_job](#start_call_analytics_job)
-    - [start_medical_transcription_job](#start_medical_transcription_job)
-    - [start_transcription_job](#start_transcription_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_call_analytics_category](#update_call_analytics_category)
-    - [update_medical_vocabulary](#update_medical_vocabulary)
-    - [update_vocabulary](#update_vocabulary)
-    - [update_vocabulary_filter](#update_vocabulary_filter)
-
-<a id="transcribeserviceclient"></a>
+    Auto-generated documentation for [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
+    type annotations stubs module [mypy-boto3-transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 ## TranscribeServiceClient
 
-Type annotations for `boto3.client("transcribe")`
+Type annotations and code completion for `#!python boto3.client("transcribe")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_transcribe.client import TranscribeServiceClient
 
@@ -73,1020 +20,1350 @@ def get_transcribe_client() -> TranscribeServiceClient:
     return Session().client("transcribe")
 ```
 
-Boto3 documentation:
-[TranscribeService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("transcribe").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("transcribe")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalFailureException,
+    client.LimitExceededException,
+    client.NotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_transcribe.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalFailureException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-TranscribeServiceClient exceptions.
-
-Type annotations for `boto3.client("transcribe").exceptions` method.
-
-Boto3 documentation:
-[TranscribeService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("transcribe").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.can_paginate)
 
-Boto3 documentation:
-[TranscribeService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_call\_analytics\_category"></a>
-
-### create_call_analytics_category
+### create\_call\_analytics\_category
 
 Creates a call analytics category.
 
-Type annotations for
-`boto3.client("transcribe").create_call_analytics_category` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").create_call_analytics_category` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_call_analytics_category)
 
-Boto3 documentation:
-[TranscribeService.Client.create_call_analytics_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_call_analytics_category)
+```python title="Method definition"
+def create_call_analytics_category(
+    self,
+    *,
+    CategoryName: str,
+    Rules: Sequence[RuleTypeDef],  # (1)
+) -> CreateCallAnalyticsCategoryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#createcallanalyticscategoryrequestrequesttypedef).
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: CreateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#createcallanalyticscategoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CategoryName`: `str` *(required)*
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCallAnalyticsCategoryRequestRequestTypeDef = {  # (1)
+    "CategoryName": ...,
+    "Rules": ...,
+}
 
-Returns
-[CreateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#createcallanalyticscategoryresponsetypedef).
+parent.create_call_analytics_category(**kwargs)
+```
 
-<a id="create\_language\_model"></a>
+1. See [:material-code-braces: CreateCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#createcallanalyticscategoryrequestrequesttypedef) 
 
-### create_language_model
+### create\_language\_model
 
 Creates a new custom language model.
 
-Type annotations for `boto3.client("transcribe").create_language_model` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").create_language_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_language_model)
 
-Boto3 documentation:
-[TranscribeService.Client.create_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_language_model)
+```python title="Method definition"
+def create_language_model(
+    self,
+    *,
+    LanguageCode: CLMLanguageCodeType,  # (1)
+    BaseModelName: BaseModelNameType,  # (2)
+    ModelName: str,
+    InputDataConfig: InputDataConfigTypeDef,  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateLanguageModelResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateLanguageModelRequestRequestTypeDef](./type_defs.md#createlanguagemodelrequestrequesttypedef).
+1. See [:material-code-brackets: CLMLanguageCodeType](./literals.md#clmlanguagecodetype) 
+2. See [:material-code-brackets: BaseModelNameType](./literals.md#basemodelnametype) 
+3. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateLanguageModelResponseTypeDef](./type_defs.md#createlanguagemodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LanguageCode`: [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
-  *(required)*
-- `BaseModelName`: [BaseModelNameType](./literals.md#basemodelnametype)
-  *(required)*
-- `ModelName`: `str` *(required)*
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLanguageModelRequestRequestTypeDef = {  # (1)
+    "LanguageCode": ...,
+    "BaseModelName": ...,
+    "ModelName": ...,
+    "InputDataConfig": ...,
+}
 
-Returns
-[CreateLanguageModelResponseTypeDef](./type_defs.md#createlanguagemodelresponsetypedef).
+parent.create_language_model(**kwargs)
+```
 
-<a id="create\_medical\_vocabulary"></a>
+1. See [:material-code-braces: CreateLanguageModelRequestRequestTypeDef](./type_defs.md#createlanguagemodelrequestrequesttypedef) 
 
-### create_medical_vocabulary
+### create\_medical\_vocabulary
 
 Creates a new custom medical vocabulary.
 
-Type annotations for `boto3.client("transcribe").create_medical_vocabulary`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").create_medical_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_medical_vocabulary)
 
-Boto3 documentation:
-[TranscribeService.Client.create_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_medical_vocabulary)
+```python title="Method definition"
+def create_medical_vocabulary(
+    self,
+    *,
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    VocabularyFileUri: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateMedicalVocabularyResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateMedicalVocabularyRequestRequestTypeDef](./type_defs.md#createmedicalvocabularyrequestrequesttypedef).
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateMedicalVocabularyResponseTypeDef](./type_defs.md#createmedicalvocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VocabularyName`: `str` *(required)*
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-  *(required)*
-- `VocabularyFileUri`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateMedicalVocabularyRequestRequestTypeDef = {  # (1)
+    "VocabularyName": ...,
+    "LanguageCode": ...,
+    "VocabularyFileUri": ...,
+}
 
-Returns
-[CreateMedicalVocabularyResponseTypeDef](./type_defs.md#createmedicalvocabularyresponsetypedef).
+parent.create_medical_vocabulary(**kwargs)
+```
 
-<a id="create\_vocabulary"></a>
+1. See [:material-code-braces: CreateMedicalVocabularyRequestRequestTypeDef](./type_defs.md#createmedicalvocabularyrequestrequesttypedef) 
 
-### create_vocabulary
+### create\_vocabulary
 
 Creates a new custom vocabulary.
 
-Type annotations for `boto3.client("transcribe").create_vocabulary` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").create_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary)
 
-Boto3 documentation:
-[TranscribeService.Client.create_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary)
+```python title="Method definition"
+def create_vocabulary(
+    self,
+    *,
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    Phrases: Sequence[str] = ...,
+    VocabularyFileUri: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateVocabularyResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateVocabularyRequestRequestTypeDef](./type_defs.md#createvocabularyrequestrequesttypedef).
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VocabularyName`: `str` *(required)*
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-  *(required)*
-- `Phrases`: `Sequence`\[`str`\]
-- `VocabularyFileUri`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVocabularyRequestRequestTypeDef = {  # (1)
+    "VocabularyName": ...,
+    "LanguageCode": ...,
+}
 
-Returns
-[CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef).
+parent.create_vocabulary(**kwargs)
+```
 
-<a id="create\_vocabulary\_filter"></a>
+1. See [:material-code-braces: CreateVocabularyRequestRequestTypeDef](./type_defs.md#createvocabularyrequestrequesttypedef) 
 
-### create_vocabulary_filter
+### create\_vocabulary\_filter
 
 Creates a new vocabulary filter that you can use to filter words from your
 transcription output.
 
-Type annotations for `boto3.client("transcribe").create_vocabulary_filter`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").create_vocabulary_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter)
 
-Boto3 documentation:
-[TranscribeService.Client.create_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.create_vocabulary_filter)
+```python title="Method definition"
+def create_vocabulary_filter(
+    self,
+    *,
+    VocabularyFilterName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    Words: Sequence[str] = ...,
+    VocabularyFilterFileUri: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateVocabularyFilterResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateVocabularyFilterRequestRequestTypeDef](./type_defs.md#createvocabularyfilterrequestrequesttypedef).
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateVocabularyFilterResponseTypeDef](./type_defs.md#createvocabularyfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VocabularyFilterName`: `str` *(required)*
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-  *(required)*
-- `Words`: `Sequence`\[`str`\]
-- `VocabularyFilterFileUri`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVocabularyFilterRequestRequestTypeDef = {  # (1)
+    "VocabularyFilterName": ...,
+    "LanguageCode": ...,
+}
 
-Returns
-[CreateVocabularyFilterResponseTypeDef](./type_defs.md#createvocabularyfilterresponsetypedef).
+parent.create_vocabulary_filter(**kwargs)
+```
 
-<a id="delete\_call\_analytics\_category"></a>
+1. See [:material-code-braces: CreateVocabularyFilterRequestRequestTypeDef](./type_defs.md#createvocabularyfilterrequestrequesttypedef) 
 
-### delete_call_analytics_category
+### delete\_call\_analytics\_category
 
 Deletes a call analytics category.
 
-Type annotations for
-`boto3.client("transcribe").delete_call_analytics_category` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").delete_call_analytics_category` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_call_analytics_category)
 
-Boto3 documentation:
-[TranscribeService.Client.delete_call_analytics_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_call_analytics_category)
+```python title="Method definition"
+def delete_call_analytics_category(
+    self,
+    *,
+    CategoryName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#deletecallanalyticscategoryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CategoryName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCallAnalyticsCategoryRequestRequestTypeDef = {  # (1)
+    "CategoryName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_call_analytics_category(**kwargs)
+```
 
-<a id="delete\_call\_analytics\_job"></a>
+1. See [:material-code-braces: DeleteCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#deletecallanalyticscategoryrequestrequesttypedef) 
 
-### delete_call_analytics_job
+### delete\_call\_analytics\_job
 
 Deletes a call analytics job.
 
-Type annotations for `boto3.client("transcribe").delete_call_analytics_job`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").delete_call_analytics_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_call_analytics_job)
 
-Boto3 documentation:
-[TranscribeService.Client.delete_call_analytics_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_call_analytics_job)
+```python title="Method definition"
+def delete_call_analytics_job(
+    self,
+    *,
+    CallAnalyticsJobName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCallAnalyticsJobRequestRequestTypeDef](./type_defs.md#deletecallanalyticsjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CallAnalyticsJobName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCallAnalyticsJobRequestRequestTypeDef = {  # (1)
+    "CallAnalyticsJobName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_call_analytics_job(**kwargs)
+```
 
-<a id="delete\_language\_model"></a>
+1. See [:material-code-braces: DeleteCallAnalyticsJobRequestRequestTypeDef](./type_defs.md#deletecallanalyticsjobrequestrequesttypedef) 
 
-### delete_language_model
+### delete\_language\_model
 
 Deletes a custom language model.
 
-Type annotations for `boto3.client("transcribe").delete_language_model` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").delete_language_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_language_model)
 
-Boto3 documentation:
-[TranscribeService.Client.delete_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_language_model)
+```python title="Method definition"
+def delete_language_model(
+    self,
+    *,
+    ModelName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLanguageModelRequestRequestTypeDef](./type_defs.md#deletelanguagemodelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ModelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLanguageModelRequestRequestTypeDef = {  # (1)
+    "ModelName": ...,
+}
 
-<a id="delete\_medical\_transcription\_job"></a>
+parent.delete_language_model(**kwargs)
+```
 
-### delete_medical_transcription_job
+1. See [:material-code-braces: DeleteLanguageModelRequestRequestTypeDef](./type_defs.md#deletelanguagemodelrequestrequesttypedef) 
+
+### delete\_medical\_transcription\_job
 
 Deletes a medical transcription job, along with any related information.
 
-Type annotations for
-`boto3.client("transcribe").delete_medical_transcription_job` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").delete_medical_transcription_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_transcription_job)
 
-Boto3 documentation:
-[TranscribeService.Client.delete_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_transcription_job)
+```python title="Method definition"
+def delete_medical_transcription_job(
+    self,
+    *,
+    MedicalTranscriptionJobName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMedicalTranscriptionJobRequestRequestTypeDef](./type_defs.md#deletemedicaltranscriptionjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MedicalTranscriptionJobName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMedicalTranscriptionJobRequestRequestTypeDef = {  # (1)
+    "MedicalTranscriptionJobName": ...,
+}
 
-<a id="delete\_medical\_vocabulary"></a>
+parent.delete_medical_transcription_job(**kwargs)
+```
 
-### delete_medical_vocabulary
+1. See [:material-code-braces: DeleteMedicalTranscriptionJobRequestRequestTypeDef](./type_defs.md#deletemedicaltranscriptionjobrequestrequesttypedef) 
+
+### delete\_medical\_vocabulary
 
 Deletes a custom medical vocabulary.
 
-Type annotations for `boto3.client("transcribe").delete_medical_vocabulary`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").delete_medical_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_vocabulary)
 
-Boto3 documentation:
-[TranscribeService.Client.delete_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_medical_vocabulary)
+```python title="Method definition"
+def delete_medical_vocabulary(
+    self,
+    *,
+    VocabularyName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMedicalVocabularyRequestRequestTypeDef](./type_defs.md#deletemedicalvocabularyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `VocabularyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMedicalVocabularyRequestRequestTypeDef = {  # (1)
+    "VocabularyName": ...,
+}
 
-<a id="delete\_transcription\_job"></a>
+parent.delete_medical_vocabulary(**kwargs)
+```
 
-### delete_transcription_job
+1. See [:material-code-braces: DeleteMedicalVocabularyRequestRequestTypeDef](./type_defs.md#deletemedicalvocabularyrequestrequesttypedef) 
+
+### delete\_transcription\_job
 
 Deletes a transcription job, along with any related information.
 
-Type annotations for `boto3.client("transcribe").delete_transcription_job`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").delete_transcription_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_transcription_job)
 
-Boto3 documentation:
-[TranscribeService.Client.delete_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_transcription_job)
+```python title="Method definition"
+def delete_transcription_job(
+    self,
+    *,
+    TranscriptionJobName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTranscriptionJobRequestRequestTypeDef](./type_defs.md#deletetranscriptionjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TranscriptionJobName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTranscriptionJobRequestRequestTypeDef = {  # (1)
+    "TranscriptionJobName": ...,
+}
 
-<a id="delete\_vocabulary"></a>
+parent.delete_transcription_job(**kwargs)
+```
 
-### delete_vocabulary
+1. See [:material-code-braces: DeleteTranscriptionJobRequestRequestTypeDef](./type_defs.md#deletetranscriptionjobrequestrequesttypedef) 
+
+### delete\_vocabulary
 
 Deletes a custom vocabulary.
 
-Type annotations for `boto3.client("transcribe").delete_vocabulary` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").delete_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary)
 
-Boto3 documentation:
-[TranscribeService.Client.delete_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary)
+```python title="Method definition"
+def delete_vocabulary(
+    self,
+    *,
+    VocabularyName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVocabularyRequestRequestTypeDef](./type_defs.md#deletevocabularyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `VocabularyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVocabularyRequestRequestTypeDef = {  # (1)
+    "VocabularyName": ...,
+}
 
-<a id="delete\_vocabulary\_filter"></a>
+parent.delete_vocabulary(**kwargs)
+```
 
-### delete_vocabulary_filter
+1. See [:material-code-braces: DeleteVocabularyRequestRequestTypeDef](./type_defs.md#deletevocabularyrequestrequesttypedef) 
+
+### delete\_vocabulary\_filter
 
 Deletes a vocabulary filter.
 
-Type annotations for `boto3.client("transcribe").delete_vocabulary_filter`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").delete_vocabulary_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary_filter)
 
-Boto3 documentation:
-[TranscribeService.Client.delete_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.delete_vocabulary_filter)
+```python title="Method definition"
+def delete_vocabulary_filter(
+    self,
+    *,
+    VocabularyFilterName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVocabularyFilterRequestRequestTypeDef](./type_defs.md#deletevocabularyfilterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `VocabularyFilterName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVocabularyFilterRequestRequestTypeDef = {  # (1)
+    "VocabularyFilterName": ...,
+}
 
-<a id="describe\_language\_model"></a>
+parent.delete_vocabulary_filter(**kwargs)
+```
 
-### describe_language_model
+1. See [:material-code-braces: DeleteVocabularyFilterRequestRequestTypeDef](./type_defs.md#deletevocabularyfilterrequestrequesttypedef) 
+
+### describe\_language\_model
 
 Provides information about a specific custom language model in your Amazon Web
 Services account.
 
-Type annotations for `boto3.client("transcribe").describe_language_model`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").describe_language_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.describe_language_model)
 
-Boto3 documentation:
-[TranscribeService.Client.describe_language_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.describe_language_model)
+```python title="Method definition"
+def describe_language_model(
+    self,
+    *,
+    ModelName: str,
+) -> DescribeLanguageModelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLanguageModelRequestRequestTypeDef](./type_defs.md#describelanguagemodelrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLanguageModelResponseTypeDef](./type_defs.md#describelanguagemodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ModelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLanguageModelRequestRequestTypeDef = {  # (1)
+    "ModelName": ...,
+}
 
-Returns
-[DescribeLanguageModelResponseTypeDef](./type_defs.md#describelanguagemodelresponsetypedef).
+parent.describe_language_model(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeLanguageModelRequestRequestTypeDef](./type_defs.md#describelanguagemodelrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("transcribe").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[TranscribeService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_call\_analytics\_category"></a>
-
-### get_call_analytics_category
+### get\_call\_analytics\_category
 
 Retrieves information about a call analytics category.
 
-Type annotations for `boto3.client("transcribe").get_call_analytics_category`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").get_call_analytics_category` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_call_analytics_category)
 
-Boto3 documentation:
-[TranscribeService.Client.get_call_analytics_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_call_analytics_category)
+```python title="Method definition"
+def get_call_analytics_category(
+    self,
+    *,
+    CategoryName: str,
+) -> GetCallAnalyticsCategoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#getcallanalyticscategoryrequestrequesttypedef).
+1. See [:material-code-braces: GetCallAnalyticsCategoryResponseTypeDef](./type_defs.md#getcallanalyticscategoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CategoryName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCallAnalyticsCategoryRequestRequestTypeDef = {  # (1)
+    "CategoryName": ...,
+}
 
-Returns
-[GetCallAnalyticsCategoryResponseTypeDef](./type_defs.md#getcallanalyticscategoryresponsetypedef).
+parent.get_call_analytics_category(**kwargs)
+```
 
-<a id="get\_call\_analytics\_job"></a>
+1. See [:material-code-braces: GetCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#getcallanalyticscategoryrequestrequesttypedef) 
 
-### get_call_analytics_job
+### get\_call\_analytics\_job
 
 Retrieves information about a call analytics job.
 
-Type annotations for `boto3.client("transcribe").get_call_analytics_job`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").get_call_analytics_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_call_analytics_job)
 
-Boto3 documentation:
-[TranscribeService.Client.get_call_analytics_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_call_analytics_job)
+```python title="Method definition"
+def get_call_analytics_job(
+    self,
+    *,
+    CallAnalyticsJobName: str,
+) -> GetCallAnalyticsJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCallAnalyticsJobRequestRequestTypeDef](./type_defs.md#getcallanalyticsjobrequestrequesttypedef).
+1. See [:material-code-braces: GetCallAnalyticsJobResponseTypeDef](./type_defs.md#getcallanalyticsjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CallAnalyticsJobName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCallAnalyticsJobRequestRequestTypeDef = {  # (1)
+    "CallAnalyticsJobName": ...,
+}
 
-Returns
-[GetCallAnalyticsJobResponseTypeDef](./type_defs.md#getcallanalyticsjobresponsetypedef).
+parent.get_call_analytics_job(**kwargs)
+```
 
-<a id="get\_medical\_transcription\_job"></a>
+1. See [:material-code-braces: GetCallAnalyticsJobRequestRequestTypeDef](./type_defs.md#getcallanalyticsjobrequestrequesttypedef) 
 
-### get_medical_transcription_job
+### get\_medical\_transcription\_job
 
 Retrieves information about a medical transcription job.
 
-Type annotations for `boto3.client("transcribe").get_medical_transcription_job`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").get_medical_transcription_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_transcription_job)
 
-Boto3 documentation:
-[TranscribeService.Client.get_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_transcription_job)
+```python title="Method definition"
+def get_medical_transcription_job(
+    self,
+    *,
+    MedicalTranscriptionJobName: str,
+) -> GetMedicalTranscriptionJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMedicalTranscriptionJobRequestRequestTypeDef](./type_defs.md#getmedicaltranscriptionjobrequestrequesttypedef).
+1. See [:material-code-braces: GetMedicalTranscriptionJobResponseTypeDef](./type_defs.md#getmedicaltranscriptionjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MedicalTranscriptionJobName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMedicalTranscriptionJobRequestRequestTypeDef = {  # (1)
+    "MedicalTranscriptionJobName": ...,
+}
 
-Returns
-[GetMedicalTranscriptionJobResponseTypeDef](./type_defs.md#getmedicaltranscriptionjobresponsetypedef).
+parent.get_medical_transcription_job(**kwargs)
+```
 
-<a id="get\_medical\_vocabulary"></a>
+1. See [:material-code-braces: GetMedicalTranscriptionJobRequestRequestTypeDef](./type_defs.md#getmedicaltranscriptionjobrequestrequesttypedef) 
 
-### get_medical_vocabulary
+### get\_medical\_vocabulary
 
 Retrieves information about a medical vocabulary.
 
-Type annotations for `boto3.client("transcribe").get_medical_vocabulary`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").get_medical_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_vocabulary)
 
-Boto3 documentation:
-[TranscribeService.Client.get_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_medical_vocabulary)
+```python title="Method definition"
+def get_medical_vocabulary(
+    self,
+    *,
+    VocabularyName: str,
+) -> GetMedicalVocabularyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMedicalVocabularyRequestRequestTypeDef](./type_defs.md#getmedicalvocabularyrequestrequesttypedef).
+1. See [:material-code-braces: GetMedicalVocabularyResponseTypeDef](./type_defs.md#getmedicalvocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VocabularyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMedicalVocabularyRequestRequestTypeDef = {  # (1)
+    "VocabularyName": ...,
+}
 
-Returns
-[GetMedicalVocabularyResponseTypeDef](./type_defs.md#getmedicalvocabularyresponsetypedef).
+parent.get_medical_vocabulary(**kwargs)
+```
 
-<a id="get\_transcription\_job"></a>
+1. See [:material-code-braces: GetMedicalVocabularyRequestRequestTypeDef](./type_defs.md#getmedicalvocabularyrequestrequesttypedef) 
 
-### get_transcription_job
+### get\_transcription\_job
 
 Returns information about a transcription job.
 
-Type annotations for `boto3.client("transcribe").get_transcription_job` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").get_transcription_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_transcription_job)
 
-Boto3 documentation:
-[TranscribeService.Client.get_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_transcription_job)
+```python title="Method definition"
+def get_transcription_job(
+    self,
+    *,
+    TranscriptionJobName: str,
+) -> GetTranscriptionJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTranscriptionJobRequestRequestTypeDef](./type_defs.md#gettranscriptionjobrequestrequesttypedef).
+1. See [:material-code-braces: GetTranscriptionJobResponseTypeDef](./type_defs.md#gettranscriptionjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TranscriptionJobName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTranscriptionJobRequestRequestTypeDef = {  # (1)
+    "TranscriptionJobName": ...,
+}
 
-Returns
-[GetTranscriptionJobResponseTypeDef](./type_defs.md#gettranscriptionjobresponsetypedef).
+parent.get_transcription_job(**kwargs)
+```
 
-<a id="get\_vocabulary"></a>
+1. See [:material-code-braces: GetTranscriptionJobRequestRequestTypeDef](./type_defs.md#gettranscriptionjobrequestrequesttypedef) 
 
-### get_vocabulary
+### get\_vocabulary
 
 Gets information about a vocabulary.
 
-Type annotations for `boto3.client("transcribe").get_vocabulary` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").get_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary)
 
-Boto3 documentation:
-[TranscribeService.Client.get_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary)
+```python title="Method definition"
+def get_vocabulary(
+    self,
+    *,
+    VocabularyName: str,
+) -> GetVocabularyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVocabularyRequestRequestTypeDef](./type_defs.md#getvocabularyrequestrequesttypedef).
+1. See [:material-code-braces: GetVocabularyResponseTypeDef](./type_defs.md#getvocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VocabularyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVocabularyRequestRequestTypeDef = {  # (1)
+    "VocabularyName": ...,
+}
 
-Returns
-[GetVocabularyResponseTypeDef](./type_defs.md#getvocabularyresponsetypedef).
+parent.get_vocabulary(**kwargs)
+```
 
-<a id="get\_vocabulary\_filter"></a>
+1. See [:material-code-braces: GetVocabularyRequestRequestTypeDef](./type_defs.md#getvocabularyrequestrequesttypedef) 
 
-### get_vocabulary_filter
+### get\_vocabulary\_filter
 
 Returns information about a vocabulary filter.
 
-Type annotations for `boto3.client("transcribe").get_vocabulary_filter` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").get_vocabulary_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary_filter)
 
-Boto3 documentation:
-[TranscribeService.Client.get_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.get_vocabulary_filter)
+```python title="Method definition"
+def get_vocabulary_filter(
+    self,
+    *,
+    VocabularyFilterName: str,
+) -> GetVocabularyFilterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVocabularyFilterRequestRequestTypeDef](./type_defs.md#getvocabularyfilterrequestrequesttypedef).
+1. See [:material-code-braces: GetVocabularyFilterResponseTypeDef](./type_defs.md#getvocabularyfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VocabularyFilterName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVocabularyFilterRequestRequestTypeDef = {  # (1)
+    "VocabularyFilterName": ...,
+}
 
-Returns
-[GetVocabularyFilterResponseTypeDef](./type_defs.md#getvocabularyfilterresponsetypedef).
+parent.get_vocabulary_filter(**kwargs)
+```
 
-<a id="list\_call\_analytics\_categories"></a>
+1. See [:material-code-braces: GetVocabularyFilterRequestRequestTypeDef](./type_defs.md#getvocabularyfilterrequestrequesttypedef) 
 
-### list_call_analytics_categories
+### list\_call\_analytics\_categories
 
 Provides more information about the call analytics categories that you've
 created.
 
-Type annotations for
-`boto3.client("transcribe").list_call_analytics_categories` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").list_call_analytics_categories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_call_analytics_categories)
 
-Boto3 documentation:
-[TranscribeService.Client.list_call_analytics_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_call_analytics_categories)
+```python title="Method definition"
+def list_call_analytics_categories(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCallAnalyticsCategoriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCallAnalyticsCategoriesRequestRequestTypeDef](./type_defs.md#listcallanalyticscategoriesrequestrequesttypedef).
+1. See [:material-code-braces: ListCallAnalyticsCategoriesResponseTypeDef](./type_defs.md#listcallanalyticscategoriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCallAnalyticsCategoriesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListCallAnalyticsCategoriesResponseTypeDef](./type_defs.md#listcallanalyticscategoriesresponsetypedef).
+parent.list_call_analytics_categories(**kwargs)
+```
 
-<a id="list\_call\_analytics\_jobs"></a>
+1. See [:material-code-braces: ListCallAnalyticsCategoriesRequestRequestTypeDef](./type_defs.md#listcallanalyticscategoriesrequestrequesttypedef) 
 
-### list_call_analytics_jobs
+### list\_call\_analytics\_jobs
 
-List call analytics jobs with a specified status or substring that matches
-their names.
+List call analytics jobs with a specified status or substring that matches their
+names.
 
-Type annotations for `boto3.client("transcribe").list_call_analytics_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").list_call_analytics_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_call_analytics_jobs)
 
-Boto3 documentation:
-[TranscribeService.Client.list_call_analytics_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_call_analytics_jobs)
+```python title="Method definition"
+def list_call_analytics_jobs(
+    self,
+    *,
+    Status: CallAnalyticsJobStatusType = ...,  # (1)
+    JobNameContains: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCallAnalyticsJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListCallAnalyticsJobsRequestRequestTypeDef](./type_defs.md#listcallanalyticsjobsrequestrequesttypedef).
+1. See [:material-code-brackets: CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype) 
+2. See [:material-code-braces: ListCallAnalyticsJobsResponseTypeDef](./type_defs.md#listcallanalyticsjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Status`:
-  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
-- `JobNameContains`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCallAnalyticsJobsRequestRequestTypeDef = {  # (1)
+    "Status": ...,
+}
 
-Returns
-[ListCallAnalyticsJobsResponseTypeDef](./type_defs.md#listcallanalyticsjobsresponsetypedef).
+parent.list_call_analytics_jobs(**kwargs)
+```
 
-<a id="list\_language\_models"></a>
+1. See [:material-code-braces: ListCallAnalyticsJobsRequestRequestTypeDef](./type_defs.md#listcallanalyticsjobsrequestrequesttypedef) 
 
-### list_language_models
+### list\_language\_models
 
 Provides more information about the custom language models you've created.
 
-Type annotations for `boto3.client("transcribe").list_language_models` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").list_language_models` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_language_models)
 
-Boto3 documentation:
-[TranscribeService.Client.list_language_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_language_models)
+```python title="Method definition"
+def list_language_models(
+    self,
+    *,
+    StatusEquals: ModelStatusType = ...,  # (1)
+    NameContains: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLanguageModelsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLanguageModelsRequestRequestTypeDef](./type_defs.md#listlanguagemodelsrequestrequesttypedef).
+1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
+2. See [:material-code-braces: ListLanguageModelsResponseTypeDef](./type_defs.md#listlanguagemodelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StatusEquals`: [ModelStatusType](./literals.md#modelstatustype)
-- `NameContains`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListLanguageModelsRequestRequestTypeDef = {  # (1)
+    "StatusEquals": ...,
+}
 
-Returns
-[ListLanguageModelsResponseTypeDef](./type_defs.md#listlanguagemodelsresponsetypedef).
+parent.list_language_models(**kwargs)
+```
 
-<a id="list\_medical\_transcription\_jobs"></a>
+1. See [:material-code-braces: ListLanguageModelsRequestRequestTypeDef](./type_defs.md#listlanguagemodelsrequestrequesttypedef) 
 
-### list_medical_transcription_jobs
+### list\_medical\_transcription\_jobs
 
 Lists medical transcription jobs with a specified status or substring that
 matches their names.
 
-Type annotations for
-`boto3.client("transcribe").list_medical_transcription_jobs` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").list_medical_transcription_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_transcription_jobs)
 
-Boto3 documentation:
-[TranscribeService.Client.list_medical_transcription_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_transcription_jobs)
+```python title="Method definition"
+def list_medical_transcription_jobs(
+    self,
+    *,
+    Status: TranscriptionJobStatusType = ...,  # (1)
+    JobNameContains: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMedicalTranscriptionJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListMedicalTranscriptionJobsRequestRequestTypeDef](./type_defs.md#listmedicaltranscriptionjobsrequestrequesttypedef).
+1. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
+2. See [:material-code-braces: ListMedicalTranscriptionJobsResponseTypeDef](./type_defs.md#listmedicaltranscriptionjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Status`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `JobNameContains`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMedicalTranscriptionJobsRequestRequestTypeDef = {  # (1)
+    "Status": ...,
+}
 
-Returns
-[ListMedicalTranscriptionJobsResponseTypeDef](./type_defs.md#listmedicaltranscriptionjobsresponsetypedef).
+parent.list_medical_transcription_jobs(**kwargs)
+```
 
-<a id="list\_medical\_vocabularies"></a>
+1. See [:material-code-braces: ListMedicalTranscriptionJobsRequestRequestTypeDef](./type_defs.md#listmedicaltranscriptionjobsrequestrequesttypedef) 
 
-### list_medical_vocabularies
+### list\_medical\_vocabularies
 
 Returns a list of vocabularies that match the specified criteria.
 
-Type annotations for `boto3.client("transcribe").list_medical_vocabularies`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").list_medical_vocabularies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_vocabularies)
 
-Boto3 documentation:
-[TranscribeService.Client.list_medical_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_medical_vocabularies)
+```python title="Method definition"
+def list_medical_vocabularies(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    StateEquals: VocabularyStateType = ...,  # (1)
+    NameContains: str = ...,
+) -> ListMedicalVocabulariesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListMedicalVocabulariesRequestRequestTypeDef](./type_defs.md#listmedicalvocabulariesrequestrequesttypedef).
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-braces: ListMedicalVocabulariesResponseTypeDef](./type_defs.md#listmedicalvocabulariesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StateEquals`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `NameContains`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMedicalVocabulariesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListMedicalVocabulariesResponseTypeDef](./type_defs.md#listmedicalvocabulariesresponsetypedef).
+parent.list_medical_vocabularies(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListMedicalVocabulariesRequestRequestTypeDef](./type_defs.md#listmedicalvocabulariesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags associated with a given transcription job, vocabulary, or
 resource.
 
-Type annotations for `boto3.client("transcribe").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[TranscribeService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_transcription\_jobs"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_transcription_jobs
+### list\_transcription\_jobs
 
 Lists transcription jobs with the specified status.
 
-Type annotations for `boto3.client("transcribe").list_transcription_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").list_transcription_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_transcription_jobs)
 
-Boto3 documentation:
-[TranscribeService.Client.list_transcription_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_transcription_jobs)
+```python title="Method definition"
+def list_transcription_jobs(
+    self,
+    *,
+    Status: TranscriptionJobStatusType = ...,  # (1)
+    JobNameContains: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTranscriptionJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTranscriptionJobsRequestRequestTypeDef](./type_defs.md#listtranscriptionjobsrequestrequesttypedef).
+1. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
+2. See [:material-code-braces: ListTranscriptionJobsResponseTypeDef](./type_defs.md#listtranscriptionjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Status`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `JobNameContains`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTranscriptionJobsRequestRequestTypeDef = {  # (1)
+    "Status": ...,
+}
 
-Returns
-[ListTranscriptionJobsResponseTypeDef](./type_defs.md#listtranscriptionjobsresponsetypedef).
+parent.list_transcription_jobs(**kwargs)
+```
 
-<a id="list\_vocabularies"></a>
+1. See [:material-code-braces: ListTranscriptionJobsRequestRequestTypeDef](./type_defs.md#listtranscriptionjobsrequestrequesttypedef) 
 
-### list_vocabularies
+### list\_vocabularies
 
 Returns a list of vocabularies that match the specified criteria.
 
-Type annotations for `boto3.client("transcribe").list_vocabularies` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").list_vocabularies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabularies)
 
-Boto3 documentation:
-[TranscribeService.Client.list_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabularies)
+```python title="Method definition"
+def list_vocabularies(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    StateEquals: VocabularyStateType = ...,  # (1)
+    NameContains: str = ...,
+) -> ListVocabulariesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListVocabulariesRequestRequestTypeDef](./type_defs.md#listvocabulariesrequestrequesttypedef).
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-braces: ListVocabulariesResponseTypeDef](./type_defs.md#listvocabulariesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StateEquals`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `NameContains`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVocabulariesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListVocabulariesResponseTypeDef](./type_defs.md#listvocabulariesresponsetypedef).
+parent.list_vocabularies(**kwargs)
+```
 
-<a id="list\_vocabulary\_filters"></a>
+1. See [:material-code-braces: ListVocabulariesRequestRequestTypeDef](./type_defs.md#listvocabulariesrequestrequesttypedef) 
 
-### list_vocabulary_filters
+### list\_vocabulary\_filters
 
 Gets information about vocabulary filters.
 
-Type annotations for `boto3.client("transcribe").list_vocabulary_filters`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").list_vocabulary_filters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabulary_filters)
 
-Boto3 documentation:
-[TranscribeService.Client.list_vocabulary_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.list_vocabulary_filters)
+```python title="Method definition"
+def list_vocabulary_filters(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    NameContains: str = ...,
+) -> ListVocabularyFiltersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVocabularyFiltersRequestRequestTypeDef](./type_defs.md#listvocabularyfiltersrequestrequesttypedef).
+1. See [:material-code-braces: ListVocabularyFiltersResponseTypeDef](./type_defs.md#listvocabularyfiltersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `NameContains`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVocabularyFiltersRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListVocabularyFiltersResponseTypeDef](./type_defs.md#listvocabularyfiltersresponsetypedef).
+parent.list_vocabulary_filters(**kwargs)
+```
 
-<a id="start\_call\_analytics\_job"></a>
+1. See [:material-code-braces: ListVocabularyFiltersRequestRequestTypeDef](./type_defs.md#listvocabularyfiltersrequestrequesttypedef) 
 
-### start_call_analytics_job
+### start\_call\_analytics\_job
 
 Starts an asynchronous analytics job that not only transcribes the audio
 recording of a caller and agent, but also returns additional insights.
 
-Type annotations for `boto3.client("transcribe").start_call_analytics_job`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").start_call_analytics_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_call_analytics_job)
 
-Boto3 documentation:
-[TranscribeService.Client.start_call_analytics_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_call_analytics_job)
+```python title="Method definition"
+def start_call_analytics_job(
+    self,
+    *,
+    CallAnalyticsJobName: str,
+    Media: MediaTypeDef,  # (1)
+    DataAccessRoleArn: str,
+    OutputLocation: str = ...,
+    OutputEncryptionKMSKeyId: str = ...,
+    Settings: CallAnalyticsJobSettingsTypeDef = ...,  # (2)
+    ChannelDefinitions: Sequence[ChannelDefinitionTypeDef] = ...,  # (3)
+) -> StartCallAnalyticsJobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartCallAnalyticsJobRequestRequestTypeDef](./type_defs.md#startcallanalyticsjobrequestrequesttypedef).
+1. See [:material-code-braces: MediaTypeDef](./type_defs.md#mediatypedef) 
+2. See [:material-code-braces: CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef) 
+3. See [:material-code-braces: ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef) 
+4. See [:material-code-braces: StartCallAnalyticsJobResponseTypeDef](./type_defs.md#startcallanalyticsjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CallAnalyticsJobName`: `str` *(required)*
-- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef) *(required)*
-- `DataAccessRoleArn`: `str` *(required)*
-- `OutputLocation`: `str`
-- `OutputEncryptionKMSKeyId`: `str`
-- `Settings`:
-  [CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef)
-- `ChannelDefinitions`:
-  `Sequence`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: StartCallAnalyticsJobRequestRequestTypeDef = {  # (1)
+    "CallAnalyticsJobName": ...,
+    "Media": ...,
+    "DataAccessRoleArn": ...,
+}
 
-Returns
-[StartCallAnalyticsJobResponseTypeDef](./type_defs.md#startcallanalyticsjobresponsetypedef).
+parent.start_call_analytics_job(**kwargs)
+```
 
-<a id="start\_medical\_transcription\_job"></a>
+1. See [:material-code-braces: StartCallAnalyticsJobRequestRequestTypeDef](./type_defs.md#startcallanalyticsjobrequestrequesttypedef) 
 
-### start_medical_transcription_job
+### start\_medical\_transcription\_job
 
 Starts a batch job to transcribe medical speech to text.
 
-Type annotations for
-`boto3.client("transcribe").start_medical_transcription_job` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").start_medical_transcription_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_medical_transcription_job)
 
-Boto3 documentation:
-[TranscribeService.Client.start_medical_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_medical_transcription_job)
+```python title="Method definition"
+def start_medical_transcription_job(
+    self,
+    *,
+    MedicalTranscriptionJobName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    Media: MediaTypeDef,  # (2)
+    OutputBucketName: str,
+    Specialty: SpecialtyType,  # (3)
+    Type: TypeType,  # (4)
+    MediaSampleRateHertz: int = ...,
+    MediaFormat: MediaFormatType = ...,  # (5)
+    OutputKey: str = ...,
+    OutputEncryptionKMSKeyId: str = ...,
+    KMSEncryptionContext: Mapping[str, str] = ...,
+    Settings: MedicalTranscriptionSettingTypeDef = ...,  # (6)
+    ContentIdentificationType: MedicalContentIdentificationTypeType = ...,  # (7)
+    Tags: Sequence[TagTypeDef] = ...,  # (8)
+) -> StartMedicalTranscriptionJobResponseTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[StartMedicalTranscriptionJobRequestRequestTypeDef](./type_defs.md#startmedicaltranscriptionjobrequestrequesttypedef).
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: MediaTypeDef](./type_defs.md#mediatypedef) 
+3. See [:material-code-brackets: SpecialtyType](./literals.md#specialtytype) 
+4. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+5. See [:material-code-brackets: MediaFormatType](./literals.md#mediaformattype) 
+6. See [:material-code-braces: MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef) 
+7. See [:material-code-brackets: MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: StartMedicalTranscriptionJobResponseTypeDef](./type_defs.md#startmedicaltranscriptionjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MedicalTranscriptionJobName`: `str` *(required)*
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-  *(required)*
-- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef) *(required)*
-- `OutputBucketName`: `str` *(required)*
-- `Specialty`: `Literal['PRIMARYCARE']` (see
-  [SpecialtyType](./literals.md#specialtytype)) *(required)*
-- `Type`: [TypeType](./literals.md#typetype) *(required)*
-- `MediaSampleRateHertz`: `int`
-- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
-- `OutputKey`: `str`
-- `OutputEncryptionKMSKeyId`: `str`
-- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
-- `Settings`:
-  [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
-- `ContentIdentificationType`: `Literal['PHI']` (see
-  [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: StartMedicalTranscriptionJobRequestRequestTypeDef = {  # (1)
+    "MedicalTranscriptionJobName": ...,
+    "LanguageCode": ...,
+    "Media": ...,
+    "OutputBucketName": ...,
+    "Specialty": ...,
+    "Type": ...,
+}
 
-Returns
-[StartMedicalTranscriptionJobResponseTypeDef](./type_defs.md#startmedicaltranscriptionjobresponsetypedef).
+parent.start_medical_transcription_job(**kwargs)
+```
 
-<a id="start\_transcription\_job"></a>
+1. See [:material-code-braces: StartMedicalTranscriptionJobRequestRequestTypeDef](./type_defs.md#startmedicaltranscriptionjobrequestrequesttypedef) 
 
-### start_transcription_job
+### start\_transcription\_job
 
 Starts an asynchronous job to transcribe speech to text.
 
-Type annotations for `boto3.client("transcribe").start_transcription_job`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").start_transcription_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job)
 
-Boto3 documentation:
-[TranscribeService.Client.start_transcription_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.start_transcription_job)
+```python title="Method definition"
+def start_transcription_job(
+    self,
+    *,
+    TranscriptionJobName: str,
+    Media: MediaTypeDef,  # (1)
+    LanguageCode: LanguageCodeType = ...,  # (2)
+    MediaSampleRateHertz: int = ...,
+    MediaFormat: MediaFormatType = ...,  # (3)
+    OutputBucketName: str = ...,
+    OutputKey: str = ...,
+    OutputEncryptionKMSKeyId: str = ...,
+    KMSEncryptionContext: Mapping[str, str] = ...,
+    Settings: SettingsTypeDef = ...,  # (4)
+    ModelSettings: ModelSettingsTypeDef = ...,  # (5)
+    JobExecutionSettings: JobExecutionSettingsTypeDef = ...,  # (6)
+    ContentRedaction: ContentRedactionTypeDef = ...,  # (7)
+    IdentifyLanguage: bool = ...,
+    LanguageOptions: Sequence[LanguageCodeType] = ...,  # (8)
+    Subtitles: SubtitlesTypeDef = ...,  # (9)
+    Tags: Sequence[TagTypeDef] = ...,  # (10)
+    LanguageIdSettings: Mapping[LanguageCodeType, LanguageIdSettingsTypeDef] = ...,  # (11)
+) -> StartTranscriptionJobResponseTypeDef:  # (12)
+    ...
+```
 
-Arguments mapping described in
-[StartTranscriptionJobRequestRequestTypeDef](./type_defs.md#starttranscriptionjobrequestrequesttypedef).
+1. See [:material-code-braces: MediaTypeDef](./type_defs.md#mediatypedef) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+3. See [:material-code-brackets: MediaFormatType](./literals.md#mediaformattype) 
+4. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
+5. See [:material-code-braces: ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef) 
+6. See [:material-code-braces: JobExecutionSettingsTypeDef](./type_defs.md#jobexecutionsettingstypedef) 
+7. See [:material-code-braces: ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef) 
+8. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+9. See [:material-code-braces: SubtitlesTypeDef](./type_defs.md#subtitlestypedef) 
+10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+11. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) [:material-code-braces: LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef) 
+12. See [:material-code-braces: StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TranscriptionJobName`: `str` *(required)*
-- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef) *(required)*
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `MediaSampleRateHertz`: `int`
-- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
-- `OutputBucketName`: `str`
-- `OutputKey`: `str`
-- `OutputEncryptionKMSKeyId`: `str`
-- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
-- `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
-- `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
-- `JobExecutionSettings`:
-  [JobExecutionSettingsTypeDef](./type_defs.md#jobexecutionsettingstypedef)
-- `ContentRedaction`:
-  [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
-- `IdentifyLanguage`: `bool`
-- `LanguageOptions`:
-  `Sequence`\[[LanguageCodeType](./literals.md#languagecodetype)\]
-- `Subtitles`: [SubtitlesTypeDef](./type_defs.md#subtitlestypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `LanguageIdSettings`:
-  `Mapping`\[[LanguageCodeType](./literals.md#languagecodetype),
-  [LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef)\]
+```python title="Usage example with kwargs"
+kwargs: StartTranscriptionJobRequestRequestTypeDef = {  # (1)
+    "TranscriptionJobName": ...,
+    "Media": ...,
+}
 
-Returns
-[StartTranscriptionJobResponseTypeDef](./type_defs.md#starttranscriptionjobresponsetypedef).
+parent.start_transcription_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartTranscriptionJobRequestRequestTypeDef](./type_defs.md#starttranscriptionjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Tags an Amazon Transcribe resource with the given list of tags.
 
-Type annotations for `boto3.client("transcribe").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.tag_resource)
 
-Boto3 documentation:
-[TranscribeService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes specified tags from a specified Amazon Transcribe resource.
 
-Type annotations for `boto3.client("transcribe").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.untag_resource)
 
-Boto3 documentation:
-[TranscribeService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_call\_analytics\_category"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_call_analytics_category
+### update\_call\_analytics\_category
 
 Updates the call analytics category with new values.
 
-Type annotations for
-`boto3.client("transcribe").update_call_analytics_category` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").update_call_analytics_category` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_call_analytics_category)
 
-Boto3 documentation:
-[TranscribeService.Client.update_call_analytics_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_call_analytics_category)
+```python title="Method definition"
+def update_call_analytics_category(
+    self,
+    *,
+    CategoryName: str,
+    Rules: Sequence[RuleTypeDef],  # (1)
+) -> UpdateCallAnalyticsCategoryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#updatecallanalyticscategoryrequestrequesttypedef).
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: UpdateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#updatecallanalyticscategoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CategoryName`: `str` *(required)*
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateCallAnalyticsCategoryRequestRequestTypeDef = {  # (1)
+    "CategoryName": ...,
+    "Rules": ...,
+}
 
-Returns
-[UpdateCallAnalyticsCategoryResponseTypeDef](./type_defs.md#updatecallanalyticscategoryresponsetypedef).
+parent.update_call_analytics_category(**kwargs)
+```
 
-<a id="update\_medical\_vocabulary"></a>
+1. See [:material-code-braces: UpdateCallAnalyticsCategoryRequestRequestTypeDef](./type_defs.md#updatecallanalyticscategoryrequestrequesttypedef) 
 
-### update_medical_vocabulary
+### update\_medical\_vocabulary
 
 Updates a vocabulary with new values that you provide in a different text file
 from the one you used to create the vocabulary.
 
-Type annotations for `boto3.client("transcribe").update_medical_vocabulary`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").update_medical_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_medical_vocabulary)
 
-Boto3 documentation:
-[TranscribeService.Client.update_medical_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_medical_vocabulary)
+```python title="Method definition"
+def update_medical_vocabulary(
+    self,
+    *,
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    VocabularyFileUri: str = ...,
+) -> UpdateMedicalVocabularyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMedicalVocabularyRequestRequestTypeDef](./type_defs.md#updatemedicalvocabularyrequestrequesttypedef).
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: UpdateMedicalVocabularyResponseTypeDef](./type_defs.md#updatemedicalvocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VocabularyName`: `str` *(required)*
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-  *(required)*
-- `VocabularyFileUri`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateMedicalVocabularyRequestRequestTypeDef = {  # (1)
+    "VocabularyName": ...,
+    "LanguageCode": ...,
+}
 
-Returns
-[UpdateMedicalVocabularyResponseTypeDef](./type_defs.md#updatemedicalvocabularyresponsetypedef).
+parent.update_medical_vocabulary(**kwargs)
+```
 
-<a id="update\_vocabulary"></a>
+1. See [:material-code-braces: UpdateMedicalVocabularyRequestRequestTypeDef](./type_defs.md#updatemedicalvocabularyrequestrequesttypedef) 
 
-### update_vocabulary
+### update\_vocabulary
 
 Updates an existing vocabulary with new values.
 
-Type annotations for `boto3.client("transcribe").update_vocabulary` method.
+Type annotations and code completion for `#!python boto3.client("transcribe").update_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary)
 
-Boto3 documentation:
-[TranscribeService.Client.update_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary)
+```python title="Method definition"
+def update_vocabulary(
+    self,
+    *,
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    Phrases: Sequence[str] = ...,
+    VocabularyFileUri: str = ...,
+) -> UpdateVocabularyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVocabularyRequestRequestTypeDef](./type_defs.md#updatevocabularyrequestrequesttypedef).
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: UpdateVocabularyResponseTypeDef](./type_defs.md#updatevocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VocabularyName`: `str` *(required)*
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-  *(required)*
-- `Phrases`: `Sequence`\[`str`\]
-- `VocabularyFileUri`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateVocabularyRequestRequestTypeDef = {  # (1)
+    "VocabularyName": ...,
+    "LanguageCode": ...,
+}
 
-Returns
-[UpdateVocabularyResponseTypeDef](./type_defs.md#updatevocabularyresponsetypedef).
+parent.update_vocabulary(**kwargs)
+```
 
-<a id="update\_vocabulary\_filter"></a>
+1. See [:material-code-braces: UpdateVocabularyRequestRequestTypeDef](./type_defs.md#updatevocabularyrequestrequesttypedef) 
 
-### update_vocabulary_filter
+### update\_vocabulary\_filter
 
 Updates a vocabulary filter with a new list of filtered words.
 
-Type annotations for `boto3.client("transcribe").update_vocabulary_filter`
-method.
+Type annotations and code completion for `#!python boto3.client("transcribe").update_vocabulary_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary_filter)
 
-Boto3 documentation:
-[TranscribeService.Client.update_vocabulary_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client.update_vocabulary_filter)
+```python title="Method definition"
+def update_vocabulary_filter(
+    self,
+    *,
+    VocabularyFilterName: str,
+    Words: Sequence[str] = ...,
+    VocabularyFilterFileUri: str = ...,
+) -> UpdateVocabularyFilterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVocabularyFilterRequestRequestTypeDef](./type_defs.md#updatevocabularyfilterrequestrequesttypedef).
+1. See [:material-code-braces: UpdateVocabularyFilterResponseTypeDef](./type_defs.md#updatevocabularyfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VocabularyFilterName`: `str` *(required)*
-- `Words`: `Sequence`\[`str`\]
-- `VocabularyFilterFileUri`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateVocabularyFilterRequestRequestTypeDef = {  # (1)
+    "VocabularyFilterName": ...,
+}
 
-Returns
-[UpdateVocabularyFilterResponseTypeDef](./type_defs.md#updatevocabularyfilterresponsetypedef).
+parent.update_vocabulary_filter(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateVocabularyFilterRequestRequestTypeDef](./type_defs.md#updatevocabularyfilterrequestrequesttypedef) 
+
+
+
+

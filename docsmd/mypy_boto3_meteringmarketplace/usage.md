@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-marketplacemetering-module"></a>
-
-# Examples for boto3 MarketplaceMetering module
+# Examples
 
 > [Index](../README.md) > [MarketplaceMetering](./README.md) > Examples
 
-- [Examples for boto3 MarketplaceMetering module](#examples-for-boto3-marketplacemetering-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
+    type annotations stubs module [mypy-boto3-meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[meteringmarketplace]` package installed.
 
-Write your `MarketplaceMetering` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `MarketplaceMetering` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MarketplaceMeteringClient
-# and provides type checking and code completion
-client = session.client("meteringmarketplace")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BatchMeterUsageResultTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_meter_usage()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("meteringmarketplace")  # (1)
+    result = client.batch_meter_usage()  # (2)
+    ```
+
+    1. client: [MarketplaceMeteringClient](./client.md)
+    2. result: [:material-code-braces: BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[meteringmarketplace]` or a standalone
-`mypy_boto3_meteringmarketplace` package, you have to explicitly specify
-`client: MarketplaceMeteringClient` type annotation.
+With `boto3-stubs-lite[meteringmarketplace]`
+or a standalone `mypy_boto3_meteringmarketplace` package, you have to explicitly specify `client: MarketplaceMeteringClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_meteringmarketplace.client import MarketplaceMeteringClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_meteringmarketplace.client import MarketplaceMeteringClient
+    from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageResultTypeDef
+    from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestRequestTypeDef
 
 
-from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageResultTypeDef
+    session = Session()
+
+    client: MarketplaceMeteringClient = session.client("meteringmarketplace")
+
+    kwargs: BatchMeterUsageRequestRequestTypeDef = {...}
+    result: BatchMeterUsageResultTypeDef = client.batch_meter_usage(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: MarketplaceMeteringClient = session.client("meteringmarketplace")
 
-result: BatchMeterUsageResultTypeDef = client.batch_meter_usage()
-```
+

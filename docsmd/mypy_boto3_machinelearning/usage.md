@@ -1,92 +1,139 @@
-<a id="examples-for-boto3-machinelearning-module"></a>
-
-# Examples for boto3 MachineLearning module
+# Examples
 
 > [Index](../README.md) > [MachineLearning](./README.md) > Examples
 
-- [Examples for boto3 MachineLearning module](#examples-for-boto3-machinelearning-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+    type annotations stubs module [mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[machinelearning]` package installed.
 
-Write your `MachineLearning` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `MachineLearning` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MachineLearningClient
-# and provides type checking and code completion
-client = session.client("machinelearning")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AddTagsOutputTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_tags()
 
-# paginator has type DescribeBatchPredictionsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_batch_predictions")
-for item in paginator.paginate(...):
-    # item has type DescribeBatchPredictionsOutputTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type BatchPredictionAvailableWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("batch_prediction_available")
-waiter.wait()
-```
+    client = session.client("machinelearning")  # (1)
+    result = client.add_tags()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [MachineLearningClient](./client.md)
+    2. result: [:material-code-braces: AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("machinelearning")  # (1)
+
+    paginator = client.get_paginator("describe_batch_predictions")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [MachineLearningClient](./client.md)
+    2. paginator: [DescribeBatchPredictionsPaginator](./paginators.md#describebatchpredictionspaginator)
+    3. item: [:material-code-braces: DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("machinelearning")  # (1)
+
+    waiter = client.get_waiter("batch_prediction_available")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [MachineLearningClient](./client.md)
+    2. waiter: [BatchPredictionAvailableWaiter](./waiters.md#batchpredictionavailablewaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[machinelearning]` or a standalone
-`mypy_boto3_machinelearning` package, you have to explicitly specify
-`client: MachineLearningClient` type annotation.
+With `boto3-stubs-lite[machinelearning]`
+or a standalone `mypy_boto3_machinelearning` package, you have to explicitly specify `client: MachineLearningClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_machinelearning.client import MachineLearningClient
-from mypy_boto3_machinelearning.paginator import DescribeBatchPredictionsPaginator
-from mypy_boto3_machinelearning.waiter import BatchPredictionAvailableWaiter
-from mypy_boto3_machinelearning.literals import PaginatorName
-from mypy_boto3_machinelearning.literals import WaiterName
-from mypy_boto3_machinelearning.type_defs import AddTagsOutputTypeDef
-from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: MachineLearningClient = session.client("machinelearning")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AddTagsOutputTypeDef = client.add_tags()
+    from mypy_boto3_machinelearning.client import MachineLearningClient
+    from mypy_boto3_machinelearning.type_defs import AddTagsOutputTypeDef
+    from mypy_boto3_machinelearning.type_defs import AddTagsInputRequestTypeDef
 
-paginator_name: PaginatorName = "describe_batch_predictions"
-paginator: DescribeBatchPredictionsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeBatchPredictionsOutputTypeDef
-    print(item)
 
-waiter_name: WaiterName = "batch_prediction_available"
-waiter: BatchPredictionAvailableWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: MachineLearningClient = session.client("machinelearning")
+
+    kwargs: AddTagsInputRequestTypeDef = {...}
+    result: AddTagsOutputTypeDef = client.add_tags(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_machinelearning.client import MachineLearningClient
+    from mypy_boto3_machinelearning.paginator import DescribeBatchPredictionsPaginator
+    from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsOutputTypeDef
+
+
+    session = Session()
+    client: MachineLearningClient = session.client("machinelearning")
+
+    paginator: DescribeBatchPredictionsPaginator = client.get_paginator("describe_batch_predictions")
+    for item in paginator.paginate(...):
+        item: DescribeBatchPredictionsOutputTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_machinelearning.client import MachineLearningClient
+    from mypy_boto3_machinelearning.waiter import BatchPredictionAvailableWaiter
+
+    session = Session()
+    client: MachineLearningClient = session.client("machinelearning")
+
+    waiter: BatchPredictionAvailableWaiter = client.get_waiter("batch_prediction_available")
+    waiter.wait()
+    ```
+
+

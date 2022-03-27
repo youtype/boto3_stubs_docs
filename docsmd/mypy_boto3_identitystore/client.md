@@ -1,35 +1,18 @@
-<a id="identitystoreclient-for-boto3-identitystore-module"></a>
-
-# IdentityStoreClient for boto3 IdentityStore module
+# IdentityStoreClient
 
 > [Index](../README.md) > [IdentityStore](./README.md) > IdentityStoreClient
 
-Auto-generated documentation for
-[IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
-type annotations stubs module
-[mypy-boto3-identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
+!!! note ""
 
-- [IdentityStoreClient for boto3 IdentityStore module](#identitystoreclient-for-boto3-identitystore-module)
-  - [IdentityStoreClient](#identitystoreclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [describe_group](#describe_group)
-    - [describe_user](#describe_user)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_groups](#list_groups)
-    - [list_users](#list_users)
-
-<a id="identitystoreclient"></a>
+    Auto-generated documentation for [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
+    type annotations stubs module [mypy-boto3-identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
 ## IdentityStoreClient
 
-Type annotations for `boto3.client("identitystore")`
+Type annotations and code completion for `#!python boto3.client("identitystore")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_identitystore.client import IdentityStoreClient
 
@@ -37,176 +20,203 @@ def get_identitystore_client() -> IdentityStoreClient:
     return Session().client("identitystore")
 ```
 
-Boto3 documentation:
-[IdentityStore.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("identitystore").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("identitystore")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_identitystore.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IdentityStoreClient exceptions.
-
-Type annotations for `boto3.client("identitystore").exceptions` method.
-
-Boto3 documentation:
-[IdentityStore.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("identitystore").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("identitystore").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.can_paginate)
 
-Boto3 documentation:
-[IdentityStore.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### describe\_group
 
-Returns `bool`.
+Retrieves the group metadata and attributes from `GroupId` in an identity store.
 
-<a id="describe\_group"></a>
+Type annotations and code completion for `#!python boto3.client("identitystore").describe_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_group)
 
-### describe_group
+```python title="Method definition"
+def describe_group(
+    self,
+    *,
+    IdentityStoreId: str,
+    GroupId: str,
+) -> DescribeGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Retrieves the group metadata and attributes from `GroupId` in an identity
-store.
+1. See [:material-code-braces: DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef) 
 
-Type annotations for `boto3.client("identitystore").describe_group` method.
 
-Boto3 documentation:
-[IdentityStore.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_group)
+```python title="Usage example with kwargs"
+kwargs: DescribeGroupRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "GroupId": ...,
+}
 
-Arguments mapping described in
-[DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef).
+parent.describe_group(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef) 
 
-- `IdentityStoreId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
-
-Returns
-[DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
-
-<a id="describe\_user"></a>
-
-### describe_user
+### describe\_user
 
 Retrieves the user metadata and attributes from `UserId` in an identity store.
 
-Type annotations for `boto3.client("identitystore").describe_user` method.
+Type annotations and code completion for `#!python boto3.client("identitystore").describe_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_user)
 
-Boto3 documentation:
-[IdentityStore.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.describe_user)
+```python title="Method definition"
+def describe_user(
+    self,
+    *,
+    IdentityStoreId: str,
+    UserId: str,
+) -> DescribeUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityStoreId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+    "UserId": ...,
+}
 
-Returns
-[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+parent.describe_user(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("identitystore").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("identitystore").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IdentityStore.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_groups"></a>
-
-### list_groups
+### list\_groups
 
 Lists the attribute name and value of the group that you specified in the
 search.
 
-Type annotations for `boto3.client("identitystore").list_groups` method.
+Type annotations and code completion for `#!python boto3.client("identitystore").list_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_groups)
 
-Boto3 documentation:
-[IdentityStore.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_groups)
+```python title="Method definition"
+def list_groups(
+    self,
+    *,
+    IdentityStoreId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListGroupsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityStoreId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+}
 
-Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+parent.list_groups(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef) 
 
-### list_users
+### list\_users
 
-Lists the attribute name and value of the user that you specified in the
-search.
+Lists the attribute name and value of the user that you specified in the search.
 
-Type annotations for `boto3.client("identitystore").list_users` method.
+Type annotations and code completion for `#!python boto3.client("identitystore").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_users)
 
-Boto3 documentation:
-[IdentityStore.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    IdentityStoreId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListUsersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityStoreId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "IdentityStoreId": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
+
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
+
+
+
+

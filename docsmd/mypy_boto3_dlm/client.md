@@ -1,39 +1,18 @@
-<a id="dlmclient-for-boto3-dlm-module"></a>
-
-# DLMClient for boto3 DLM module
+# DLMClient
 
 > [Index](../README.md) > [DLM](./README.md) > DLMClient
 
-Auto-generated documentation for
-[DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
-type annotations stubs module
-[mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
+!!! note ""
 
-- [DLMClient for boto3 DLM module](#dlmclient-for-boto3-dlm-module)
-  - [DLMClient](#dlmclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_lifecycle_policy](#create_lifecycle_policy)
-    - [delete_lifecycle_policy](#delete_lifecycle_policy)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_lifecycle_policies](#get_lifecycle_policies)
-    - [get_lifecycle_policy](#get_lifecycle_policy)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_lifecycle_policy](#update_lifecycle_policy)
-
-<a id="dlmclient"></a>
+    Auto-generated documentation for [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+    type annotations stubs module [mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 ## DLMClient
 
-Type annotations for `boto3.client("dlm")`
+Type annotations and code completion for `#!python boto3.client("dlm")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_dlm.client import DLMClient
 
@@ -41,267 +20,328 @@ def get_dlm_client() -> DLMClient:
     return Session().client("dlm")
 ```
 
-Boto3 documentation:
-[DLM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("dlm").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("dlm")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServerException,
+    client.InvalidRequestException,
+    client.LimitExceededException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_dlm.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-DLMClient exceptions.
-
-Type annotations for `boto3.client("dlm").exceptions` method.
-
-Boto3 documentation:
-[DLM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("dlm").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("dlm").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.can_paginate)
 
-Boto3 documentation:
-[DLM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_lifecycle\_policy"></a>
-
-### create_lifecycle_policy
+### create\_lifecycle\_policy
 
 Creates a policy to manage the lifecycle of the specified Amazon Web Services
 resources.
 
-Type annotations for `boto3.client("dlm").create_lifecycle_policy` method.
+Type annotations and code completion for `#!python boto3.client("dlm").create_lifecycle_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.create_lifecycle_policy)
 
-Boto3 documentation:
-[DLM.Client.create_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.create_lifecycle_policy)
+```python title="Method definition"
+def create_lifecycle_policy(
+    self,
+    *,
+    ExecutionRoleArn: str,
+    Description: str,
+    State: SettablePolicyStateValuesType,  # (1)
+    PolicyDetails: PolicyDetailsTypeDef,  # (2)
+    Tags: Mapping[str, str] = ...,
+) -> CreateLifecyclePolicyResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#createlifecyclepolicyrequestrequesttypedef).
+1. See [:material-code-brackets: SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype) 
+2. See [:material-code-braces: PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef) 
+3. See [:material-code-braces: CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ExecutionRoleArn`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `State`:
-  [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
-  *(required)*
-- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
-  *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateLifecyclePolicyRequestRequestTypeDef = {  # (1)
+    "ExecutionRoleArn": ...,
+    "Description": ...,
+    "State": ...,
+    "PolicyDetails": ...,
+}
 
-Returns
-[CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef).
+parent.create_lifecycle_policy(**kwargs)
+```
 
-<a id="delete\_lifecycle\_policy"></a>
+1. See [:material-code-braces: CreateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#createlifecyclepolicyrequestrequesttypedef) 
 
-### delete_lifecycle_policy
+### delete\_lifecycle\_policy
 
 Deletes the specified lifecycle policy and halts the automated operations that
 the policy specified.
 
-Type annotations for `boto3.client("dlm").delete_lifecycle_policy` method.
+Type annotations and code completion for `#!python boto3.client("dlm").delete_lifecycle_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.delete_lifecycle_policy)
 
-Boto3 documentation:
-[DLM.Client.delete_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.delete_lifecycle_policy)
+```python title="Method definition"
+def delete_lifecycle_policy(
+    self,
+    *,
+    PolicyId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLifecyclePolicyRequestRequestTypeDef](./type_defs.md#deletelifecyclepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLifecyclePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_lifecycle_policy(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteLifecyclePolicyRequestRequestTypeDef](./type_defs.md#deletelifecyclepolicyrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("dlm").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("dlm").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.generate_presigned_url)
 
-Boto3 documentation:
-[DLM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_lifecycle\_policies"></a>
-
-### get_lifecycle_policies
+### get\_lifecycle\_policies
 
 Gets summary information about all or the specified data lifecycle policies.
 
-Type annotations for `boto3.client("dlm").get_lifecycle_policies` method.
+Type annotations and code completion for `#!python boto3.client("dlm").get_lifecycle_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policies)
 
-Boto3 documentation:
-[DLM.Client.get_lifecycle_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policies)
+```python title="Method definition"
+def get_lifecycle_policies(
+    self,
+    *,
+    PolicyIds: Sequence[str] = ...,
+    State: GettablePolicyStateValuesType = ...,  # (1)
+    ResourceTypes: Sequence[ResourceTypeValuesType] = ...,  # (2)
+    TargetTags: Sequence[str] = ...,
+    TagsToAdd: Sequence[str] = ...,
+) -> GetLifecyclePoliciesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetLifecyclePoliciesRequestRequestTypeDef](./type_defs.md#getlifecyclepoliciesrequestrequesttypedef).
+1. See [:material-code-brackets: GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype) 
+2. See [:material-code-brackets: ResourceTypeValuesType](./literals.md#resourcetypevaluestype) 
+3. See [:material-code-braces: GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyIds`: `Sequence`\[`str`\]
-- `State`:
-  [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
-- `ResourceTypes`:
-  `Sequence`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
-- `TargetTags`: `Sequence`\[`str`\]
-- `TagsToAdd`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetLifecyclePoliciesRequestRequestTypeDef = {  # (1)
+    "PolicyIds": ...,
+}
 
-Returns
-[GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef).
+parent.get_lifecycle_policies(**kwargs)
+```
 
-<a id="get\_lifecycle\_policy"></a>
+1. See [:material-code-braces: GetLifecyclePoliciesRequestRequestTypeDef](./type_defs.md#getlifecyclepoliciesrequestrequesttypedef) 
 
-### get_lifecycle_policy
+### get\_lifecycle\_policy
 
 Gets detailed information about the specified lifecycle policy.
 
-Type annotations for `boto3.client("dlm").get_lifecycle_policy` method.
+Type annotations and code completion for `#!python boto3.client("dlm").get_lifecycle_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policy)
 
-Boto3 documentation:
-[DLM.Client.get_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.get_lifecycle_policy)
+```python title="Method definition"
+def get_lifecycle_policy(
+    self,
+    *,
+    PolicyId: str,
+) -> GetLifecyclePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLifecyclePolicyRequestRequestTypeDef](./type_defs.md#getlifecyclepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLifecyclePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-Returns
-[GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef).
+parent.get_lifecycle_policy(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: GetLifecyclePolicyRequestRequestTypeDef](./type_defs.md#getlifecyclepolicyrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for the specified resource.
 
-Type annotations for `boto3.client("dlm").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("dlm").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[DLM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds the specified tags to the specified resource.
 
-Type annotations for `boto3.client("dlm").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("dlm").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.tag_resource)
 
-Boto3 documentation:
-[DLM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the specified tags from the specified resource.
 
-Type annotations for `boto3.client("dlm").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("dlm").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.untag_resource)
 
-Boto3 documentation:
-[DLM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_lifecycle\_policy"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_lifecycle_policy
+### update\_lifecycle\_policy
 
 Updates the specified lifecycle policy.
 
-Type annotations for `boto3.client("dlm").update_lifecycle_policy` method.
+Type annotations and code completion for `#!python boto3.client("dlm").update_lifecycle_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.update_lifecycle_policy)
 
-Boto3 documentation:
-[DLM.Client.update_lifecycle_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client.update_lifecycle_policy)
+```python title="Method definition"
+def update_lifecycle_policy(
+    self,
+    *,
+    PolicyId: str,
+    ExecutionRoleArn: str = ...,
+    State: SettablePolicyStateValuesType = ...,  # (1)
+    Description: str = ...,
+    PolicyDetails: PolicyDetailsTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#updatelifecyclepolicyrequestrequesttypedef).
+1. See [:material-code-brackets: SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype) 
+2. See [:material-code-braces: PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef) 
 
-Keyword-only arguments:
 
-- `PolicyId`: `str` *(required)*
-- `ExecutionRoleArn`: `str`
-- `State`:
-  [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
-- `Description`: `str`
-- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateLifecyclePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_lifecycle_policy(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#updatelifecyclepolicyrequestrequesttypedef) 
+
+
+
+

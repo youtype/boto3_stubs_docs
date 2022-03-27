@@ -1,71 +1,18 @@
-<a id="codepipelineclient-for-boto3-codepipeline-module"></a>
-
-# CodePipelineClient for boto3 CodePipeline module
+# CodePipelineClient
 
 > [Index](../README.md) > [CodePipeline](./README.md) > CodePipelineClient
 
-Auto-generated documentation for
-[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
-type annotations stubs module
-[mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+!!! note ""
 
-- [CodePipelineClient for boto3 CodePipeline module](#codepipelineclient-for-boto3-codepipeline-module)
-  - [CodePipelineClient](#codepipelineclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [acknowledge_job](#acknowledge_job)
-    - [acknowledge_third_party_job](#acknowledge_third_party_job)
-    - [can_paginate](#can_paginate)
-    - [create_custom_action_type](#create_custom_action_type)
-    - [create_pipeline](#create_pipeline)
-    - [delete_custom_action_type](#delete_custom_action_type)
-    - [delete_pipeline](#delete_pipeline)
-    - [delete_webhook](#delete_webhook)
-    - [deregister_webhook_with_third_party](#deregister_webhook_with_third_party)
-    - [disable_stage_transition](#disable_stage_transition)
-    - [enable_stage_transition](#enable_stage_transition)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_action_type](#get_action_type)
-    - [get_job_details](#get_job_details)
-    - [get_pipeline](#get_pipeline)
-    - [get_pipeline_execution](#get_pipeline_execution)
-    - [get_pipeline_state](#get_pipeline_state)
-    - [get_third_party_job_details](#get_third_party_job_details)
-    - [list_action_executions](#list_action_executions)
-    - [list_action_types](#list_action_types)
-    - [list_pipeline_executions](#list_pipeline_executions)
-    - [list_pipelines](#list_pipelines)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_webhooks](#list_webhooks)
-    - [poll_for_jobs](#poll_for_jobs)
-    - [poll_for_third_party_jobs](#poll_for_third_party_jobs)
-    - [put_action_revision](#put_action_revision)
-    - [put_approval_result](#put_approval_result)
-    - [put_job_failure_result](#put_job_failure_result)
-    - [put_job_success_result](#put_job_success_result)
-    - [put_third_party_job_failure_result](#put_third_party_job_failure_result)
-    - [put_third_party_job_success_result](#put_third_party_job_success_result)
-    - [put_webhook](#put_webhook)
-    - [register_webhook_with_third_party](#register_webhook_with_third_party)
-    - [retry_stage_execution](#retry_stage_execution)
-    - [start_pipeline_execution](#start_pipeline_execution)
-    - [stop_pipeline_execution](#stop_pipeline_execution)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_action_type](#update_action_type)
-    - [update_pipeline](#update_pipeline)
-    - [get_paginator](#get_paginator)
-
-<a id="codepipelineclient"></a>
+    Auto-generated documentation for [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+    type annotations stubs module [mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 ## CodePipelineClient
 
-Type annotations for `boto3.client("codepipeline")`
+Type annotations and code completion for `#!python boto3.client("codepipeline")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_codepipeline.client import CodePipelineClient
 
@@ -73,1047 +20,1380 @@ def get_codepipeline_client() -> CodePipelineClient:
     return Session().client("codepipeline")
 ```
 
-Boto3 documentation:
-[CodePipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("codepipeline").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("codepipeline")
+
+try:
+    do_something(client)
+except (
+    client.ActionNotFoundException,
+    client.ActionTypeAlreadyExistsException,
+    client.ActionTypeNotFoundException,
+    client.ApprovalAlreadyCompletedException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.ConflictException,
+    client.DuplicatedStopRequestException,
+    client.InvalidActionDeclarationException,
+    client.InvalidApprovalTokenException,
+    client.InvalidArnException,
+    client.InvalidBlockerDeclarationException,
+    client.InvalidClientTokenException,
+    client.InvalidJobException,
+    client.InvalidJobStateException,
+    client.InvalidNextTokenException,
+    client.InvalidNonceException,
+    client.InvalidStageDeclarationException,
+    client.InvalidStructureException,
+    client.InvalidTagsException,
+    client.InvalidWebhookAuthenticationParametersException,
+    client.InvalidWebhookFilterPatternException,
+    client.JobNotFoundException,
+    client.LimitExceededException,
+    client.NotLatestPipelineExecutionException,
+    client.OutputVariablesSizeExceededException,
+    client.PipelineExecutionNotFoundException,
+    client.PipelineExecutionNotStoppableException,
+    client.PipelineNameInUseException,
+    client.PipelineNotFoundException,
+    client.PipelineVersionNotFoundException,
+    client.RequestFailedException,
+    client.ResourceNotFoundException,
+    client.StageNotFoundException,
+    client.StageNotRetryableException,
+    client.TooManyTagsException,
+    client.ValidationException,
+    client.WebhookNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_codepipeline.client import Exceptions
 
 def handle_error(exc: Exceptions.ActionNotFoundException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ActionNotFoundException`
-- `Exceptions.ActionTypeAlreadyExistsException`
-- `Exceptions.ActionTypeNotFoundException`
-- `Exceptions.ApprovalAlreadyCompletedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.ConflictException`
-- `Exceptions.DuplicatedStopRequestException`
-- `Exceptions.InvalidActionDeclarationException`
-- `Exceptions.InvalidApprovalTokenException`
-- `Exceptions.InvalidArnException`
-- `Exceptions.InvalidBlockerDeclarationException`
-- `Exceptions.InvalidClientTokenException`
-- `Exceptions.InvalidJobException`
-- `Exceptions.InvalidJobStateException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidNonceException`
-- `Exceptions.InvalidStageDeclarationException`
-- `Exceptions.InvalidStructureException`
-- `Exceptions.InvalidTagsException`
-- `Exceptions.InvalidWebhookAuthenticationParametersException`
-- `Exceptions.InvalidWebhookFilterPatternException`
-- `Exceptions.JobNotFoundException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotLatestPipelineExecutionException`
-- `Exceptions.OutputVariablesSizeExceededException`
-- `Exceptions.PipelineExecutionNotFoundException`
-- `Exceptions.PipelineExecutionNotStoppableException`
-- `Exceptions.PipelineNameInUseException`
-- `Exceptions.PipelineNotFoundException`
-- `Exceptions.PipelineVersionNotFoundException`
-- `Exceptions.RequestFailedException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.StageNotFoundException`
-- `Exceptions.StageNotRetryableException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.ValidationException`
-- `Exceptions.WebhookNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### acknowledge\_job
 
-CodePipelineClient exceptions.
+Returns information about a specified job and whether that job has been received
+by the job worker.
 
-Type annotations for `boto3.client("codepipeline").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").acknowledge_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job)
 
-Boto3 documentation:
-[CodePipeline.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.exceptions)
+```python title="Method definition"
+def acknowledge_job(
+    self,
+    *,
+    jobId: str,
+    nonce: str,
+) -> AcknowledgeJobOutputTypeDef:  # (1)
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: AcknowledgeJobOutputTypeDef](./type_defs.md#acknowledgejoboutputtypedef) 
 
-<a id="acknowledge\_job"></a>
 
-### acknowledge_job
+```python title="Usage example with kwargs"
+kwargs: AcknowledgeJobInputRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "nonce": ...,
+}
 
-Returns information about a specified job and whether that job has been
-received by the job worker.
+parent.acknowledge_job(**kwargs)
+```
 
-Type annotations for `boto3.client("codepipeline").acknowledge_job` method.
+1. See [:material-code-braces: AcknowledgeJobInputRequestTypeDef](./type_defs.md#acknowledgejobinputrequesttypedef) 
 
-Boto3 documentation:
-[CodePipeline.Client.acknowledge_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_job)
-
-Arguments mapping described in
-[AcknowledgeJobInputRequestTypeDef](./type_defs.md#acknowledgejobinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `jobId`: `str` *(required)*
-- `nonce`: `str` *(required)*
-
-Returns
-[AcknowledgeJobOutputTypeDef](./type_defs.md#acknowledgejoboutputtypedef).
-
-<a id="acknowledge\_third\_party\_job"></a>
-
-### acknowledge_third_party_job
+### acknowledge\_third\_party\_job
 
 Confirms a job worker has received the specified job.
 
-Type annotations for `boto3.client("codepipeline").acknowledge_third_party_job`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").acknowledge_third_party_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job)
 
-Boto3 documentation:
-[CodePipeline.Client.acknowledge_third_party_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.acknowledge_third_party_job)
+```python title="Method definition"
+def acknowledge_third_party_job(
+    self,
+    *,
+    jobId: str,
+    nonce: str,
+    clientToken: str,
+) -> AcknowledgeThirdPartyJobOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AcknowledgeThirdPartyJobInputRequestTypeDef](./type_defs.md#acknowledgethirdpartyjobinputrequesttypedef).
+1. See [:material-code-braces: AcknowledgeThirdPartyJobOutputTypeDef](./type_defs.md#acknowledgethirdpartyjoboutputtypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `nonce`: `str` *(required)*
-- `clientToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcknowledgeThirdPartyJobInputRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "nonce": ...,
+    "clientToken": ...,
+}
 
-Returns
-[AcknowledgeThirdPartyJobOutputTypeDef](./type_defs.md#acknowledgethirdpartyjoboutputtypedef).
+parent.acknowledge_third_party_job(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AcknowledgeThirdPartyJobInputRequestTypeDef](./type_defs.md#acknowledgethirdpartyjobinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("codepipeline").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.can_paginate)
 
-Boto3 documentation:
-[CodePipeline.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_custom\_action\_type"></a>
-
-### create_custom_action_type
+### create\_custom\_action\_type
 
 Creates a new custom action that can be used in all pipelines associated with
 the AWS account.
 
-Type annotations for `boto3.client("codepipeline").create_custom_action_type`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").create_custom_action_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type)
 
-Boto3 documentation:
-[CodePipeline.Client.create_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_custom_action_type)
+```python title="Method definition"
+def create_custom_action_type(
+    self,
+    *,
+    category: ActionCategoryType,  # (1)
+    provider: str,
+    version: str,
+    inputArtifactDetails: ArtifactDetailsTypeDef,  # (2)
+    outputArtifactDetails: ArtifactDetailsTypeDef,  # (2)
+    settings: ActionTypeSettingsTypeDef = ...,  # (4)
+    configurationProperties: Sequence[ActionConfigurationPropertyTypeDef] = ...,  # (5)
+    tags: Sequence[TagTypeDef] = ...,  # (6)
+) -> CreateCustomActionTypeOutputTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomActionTypeInputRequestTypeDef](./type_defs.md#createcustomactiontypeinputrequesttypedef).
+1. See [:material-code-brackets: ActionCategoryType](./literals.md#actioncategorytype) 
+2. See [:material-code-braces: ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) 
+3. See [:material-code-braces: ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) 
+4. See [:material-code-braces: ActionTypeSettingsTypeDef](./type_defs.md#actiontypesettingstypedef) 
+5. See [:material-code-braces: ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: CreateCustomActionTypeOutputTypeDef](./type_defs.md#createcustomactiontypeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
-  *(required)*
-- `provider`: `str` *(required)*
-- `version`: `str` *(required)*
-- `inputArtifactDetails`:
-  [ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) *(required)*
-- `outputArtifactDetails`:
-  [ArtifactDetailsTypeDef](./type_defs.md#artifactdetailstypedef) *(required)*
-- `settings`:
-  [ActionTypeSettingsTypeDef](./type_defs.md#actiontypesettingstypedef)
-- `configurationProperties`:
-  `Sequence`\[[ActionConfigurationPropertyTypeDef](./type_defs.md#actionconfigurationpropertytypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateCustomActionTypeInputRequestTypeDef = {  # (1)
+    "category": ...,
+    "provider": ...,
+    "version": ...,
+    "inputArtifactDetails": ...,
+    "outputArtifactDetails": ...,
+}
 
-Returns
-[CreateCustomActionTypeOutputTypeDef](./type_defs.md#createcustomactiontypeoutputtypedef).
+parent.create_custom_action_type(**kwargs)
+```
 
-<a id="create\_pipeline"></a>
+1. See [:material-code-braces: CreateCustomActionTypeInputRequestTypeDef](./type_defs.md#createcustomactiontypeinputrequesttypedef) 
 
-### create_pipeline
+### create\_pipeline
 
 Creates a pipeline.
 
-Type annotations for `boto3.client("codepipeline").create_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").create_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline)
 
-Boto3 documentation:
-[CodePipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.create_pipeline)
+```python title="Method definition"
+def create_pipeline(
+    self,
+    *,
+    pipeline: PipelineDeclarationTypeDef,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreatePipelineOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePipelineInputRequestTypeDef](./type_defs.md#createpipelineinputrequesttypedef).
+1. See [:material-code-braces: PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipeline`:
-  [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
-  *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePipelineInputRequestTypeDef = {  # (1)
+    "pipeline": ...,
+}
 
-Returns
-[CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
+parent.create_pipeline(**kwargs)
+```
 
-<a id="delete\_custom\_action\_type"></a>
+1. See [:material-code-braces: CreatePipelineInputRequestTypeDef](./type_defs.md#createpipelineinputrequesttypedef) 
 
-### delete_custom_action_type
+### delete\_custom\_action\_type
 
 Marks a custom action as deleted.
 
-Type annotations for `boto3.client("codepipeline").delete_custom_action_type`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").delete_custom_action_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type)
 
-Boto3 documentation:
-[CodePipeline.Client.delete_custom_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_custom_action_type)
+```python title="Method definition"
+def delete_custom_action_type(
+    self,
+    *,
+    category: ActionCategoryType,  # (1)
+    provider: str,
+    version: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomActionTypeInputRequestTypeDef](./type_defs.md#deletecustomactiontypeinputrequesttypedef).
+1. See [:material-code-brackets: ActionCategoryType](./literals.md#actioncategorytype) 
 
-Keyword-only arguments:
 
-- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
-  *(required)*
-- `provider`: `str` *(required)*
-- `version`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomActionTypeInputRequestTypeDef = {  # (1)
+    "category": ...,
+    "provider": ...,
+    "version": ...,
+}
 
-<a id="delete\_pipeline"></a>
+parent.delete_custom_action_type(**kwargs)
+```
 
-### delete_pipeline
+1. See [:material-code-braces: DeleteCustomActionTypeInputRequestTypeDef](./type_defs.md#deletecustomactiontypeinputrequesttypedef) 
+
+### delete\_pipeline
 
 Deletes the specified pipeline.
 
-Type annotations for `boto3.client("codepipeline").delete_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").delete_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline)
 
-Boto3 documentation:
-[CodePipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_pipeline)
+```python title="Method definition"
+def delete_pipeline(
+    self,
+    *,
+    name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePipelineInputRequestTypeDef](./type_defs.md#deletepipelineinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePipelineInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-<a id="delete\_webhook"></a>
+parent.delete_pipeline(**kwargs)
+```
 
-### delete_webhook
+1. See [:material-code-braces: DeletePipelineInputRequestTypeDef](./type_defs.md#deletepipelineinputrequesttypedef) 
+
+### delete\_webhook
 
 Deletes a previously created webhook by name.
 
-Type annotations for `boto3.client("codepipeline").delete_webhook` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").delete_webhook` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook)
 
-Boto3 documentation:
-[CodePipeline.Client.delete_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.delete_webhook)
+```python title="Method definition"
+def delete_webhook(
+    self,
+    *,
+    name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWebhookInputRequestTypeDef](./type_defs.md#deletewebhookinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWebhookInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_webhook(**kwargs)
+```
 
-<a id="deregister\_webhook\_with\_third\_party"></a>
+1. See [:material-code-braces: DeleteWebhookInputRequestTypeDef](./type_defs.md#deletewebhookinputrequesttypedef) 
 
-### deregister_webhook_with_third_party
+### deregister\_webhook\_with\_third\_party
 
 Removes the connection between the webhook that was created by CodePipeline and
 the external tool with events to be detected.
 
-Type annotations for
-`boto3.client("codepipeline").deregister_webhook_with_third_party` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").deregister_webhook_with_third_party` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party)
 
-Boto3 documentation:
-[CodePipeline.Client.deregister_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.deregister_webhook_with_third_party)
+```python title="Method definition"
+def deregister_webhook_with_third_party(
+    self,
+    *,
+    webhookName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterWebhookWithThirdPartyInputRequestTypeDef](./type_defs.md#deregisterwebhookwiththirdpartyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `webhookName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeregisterWebhookWithThirdPartyInputRequestTypeDef = {  # (1)
+    "webhookName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_webhook_with_third_party(**kwargs)
+```
 
-<a id="disable\_stage\_transition"></a>
+1. See [:material-code-braces: DeregisterWebhookWithThirdPartyInputRequestTypeDef](./type_defs.md#deregisterwebhookwiththirdpartyinputrequesttypedef) 
 
-### disable_stage_transition
+### disable\_stage\_transition
 
 Prevents artifacts in a pipeline from transitioning to the next stage in the
 pipeline.
 
-Type annotations for `boto3.client("codepipeline").disable_stage_transition`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").disable_stage_transition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition)
 
-Boto3 documentation:
-[CodePipeline.Client.disable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.disable_stage_transition)
+```python title="Method definition"
+def disable_stage_transition(
+    self,
+    *,
+    pipelineName: str,
+    stageName: str,
+    transitionType: StageTransitionTypeType,  # (1)
+    reason: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisableStageTransitionInputRequestTypeDef](./type_defs.md#disablestagetransitioninputrequesttypedef).
+1. See [:material-code-brackets: StageTransitionTypeType](./literals.md#stagetransitiontypetype) 
 
-Keyword-only arguments:
 
-- `pipelineName`: `str` *(required)*
-- `stageName`: `str` *(required)*
-- `transitionType`:
-  [StageTransitionTypeType](./literals.md#stagetransitiontypetype) *(required)*
-- `reason`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableStageTransitionInputRequestTypeDef = {  # (1)
+    "pipelineName": ...,
+    "stageName": ...,
+    "transitionType": ...,
+    "reason": ...,
+}
 
-<a id="enable\_stage\_transition"></a>
+parent.disable_stage_transition(**kwargs)
+```
 
-### enable_stage_transition
+1. See [:material-code-braces: DisableStageTransitionInputRequestTypeDef](./type_defs.md#disablestagetransitioninputrequesttypedef) 
+
+### enable\_stage\_transition
 
 Enables artifacts in a pipeline to transition to a stage in a pipeline.
 
-Type annotations for `boto3.client("codepipeline").enable_stage_transition`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").enable_stage_transition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition)
 
-Boto3 documentation:
-[CodePipeline.Client.enable_stage_transition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.enable_stage_transition)
+```python title="Method definition"
+def enable_stage_transition(
+    self,
+    *,
+    pipelineName: str,
+    stageName: str,
+    transitionType: StageTransitionTypeType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[EnableStageTransitionInputRequestTypeDef](./type_defs.md#enablestagetransitioninputrequesttypedef).
+1. See [:material-code-brackets: StageTransitionTypeType](./literals.md#stagetransitiontypetype) 
 
-Keyword-only arguments:
 
-- `pipelineName`: `str` *(required)*
-- `stageName`: `str` *(required)*
-- `transitionType`:
-  [StageTransitionTypeType](./literals.md#stagetransitiontypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableStageTransitionInputRequestTypeDef = {  # (1)
+    "pipelineName": ...,
+    "stageName": ...,
+    "transitionType": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.enable_stage_transition(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: EnableStageTransitionInputRequestTypeDef](./type_defs.md#enablestagetransitioninputrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("codepipeline").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CodePipeline.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_action\_type
 
-Returns `str`.
+Returns information about an action type created for an external provider, where
+the action is to be used by customers of the external provider.
 
-<a id="get\_action\_type"></a>
+Type annotations and code completion for `#!python boto3.client("codepipeline").get_action_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_action_type)
 
-### get_action_type
+```python title="Method definition"
+def get_action_type(
+    self,
+    *,
+    category: ActionCategoryType,  # (1)
+    owner: str,
+    provider: str,
+    version: str,
+) -> GetActionTypeOutputTypeDef:  # (2)
+    ...
+```
 
-Returns information about an action type created for an external provider,
-where the action is to be used by customers of the external provider.
+1. See [:material-code-brackets: ActionCategoryType](./literals.md#actioncategorytype) 
+2. See [:material-code-braces: GetActionTypeOutputTypeDef](./type_defs.md#getactiontypeoutputtypedef) 
 
-Type annotations for `boto3.client("codepipeline").get_action_type` method.
 
-Boto3 documentation:
-[CodePipeline.Client.get_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_action_type)
+```python title="Usage example with kwargs"
+kwargs: GetActionTypeInputRequestTypeDef = {  # (1)
+    "category": ...,
+    "owner": ...,
+    "provider": ...,
+    "version": ...,
+}
 
-Arguments mapping described in
-[GetActionTypeInputRequestTypeDef](./type_defs.md#getactiontypeinputrequesttypedef).
+parent.get_action_type(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: GetActionTypeInputRequestTypeDef](./type_defs.md#getactiontypeinputrequesttypedef) 
 
-- `category`: [ActionCategoryType](./literals.md#actioncategorytype)
-  *(required)*
-- `owner`: `str` *(required)*
-- `provider`: `str` *(required)*
-- `version`: `str` *(required)*
-
-Returns
-[GetActionTypeOutputTypeDef](./type_defs.md#getactiontypeoutputtypedef).
-
-<a id="get\_job\_details"></a>
-
-### get_job_details
+### get\_job\_details
 
 Returns information about a job.
 
-Type annotations for `boto3.client("codepipeline").get_job_details` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").get_job_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_job_details)
 
-Boto3 documentation:
-[CodePipeline.Client.get_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_job_details)
+```python title="Method definition"
+def get_job_details(
+    self,
+    *,
+    jobId: str,
+) -> GetJobDetailsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobDetailsInputRequestTypeDef](./type_defs.md#getjobdetailsinputrequesttypedef).
+1. See [:material-code-braces: GetJobDetailsOutputTypeDef](./type_defs.md#getjobdetailsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobDetailsInputRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-Returns
-[GetJobDetailsOutputTypeDef](./type_defs.md#getjobdetailsoutputtypedef).
+parent.get_job_details(**kwargs)
+```
 
-<a id="get\_pipeline"></a>
+1. See [:material-code-braces: GetJobDetailsInputRequestTypeDef](./type_defs.md#getjobdetailsinputrequesttypedef) 
 
-### get_pipeline
+### get\_pipeline
 
 Returns the metadata, structure, stages, and actions of a pipeline.
 
-Type annotations for `boto3.client("codepipeline").get_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").get_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline)
 
-Boto3 documentation:
-[CodePipeline.Client.get_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline)
+```python title="Method definition"
+def get_pipeline(
+    self,
+    *,
+    name: str,
+    version: int = ...,
+) -> GetPipelineOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPipelineInputRequestTypeDef](./type_defs.md#getpipelineinputrequesttypedef).
+1. See [:material-code-braces: GetPipelineOutputTypeDef](./type_defs.md#getpipelineoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `version`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetPipelineInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [GetPipelineOutputTypeDef](./type_defs.md#getpipelineoutputtypedef).
+parent.get_pipeline(**kwargs)
+```
 
-<a id="get\_pipeline\_execution"></a>
+1. See [:material-code-braces: GetPipelineInputRequestTypeDef](./type_defs.md#getpipelineinputrequesttypedef) 
 
-### get_pipeline_execution
+### get\_pipeline\_execution
 
 Returns information about an execution of a pipeline, including details about
 artifacts, the pipeline execution ID, and the name, version, and status of the
 pipeline.
 
-Type annotations for `boto3.client("codepipeline").get_pipeline_execution`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").get_pipeline_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution)
 
-Boto3 documentation:
-[CodePipeline.Client.get_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_execution)
+```python title="Method definition"
+def get_pipeline_execution(
+    self,
+    *,
+    pipelineName: str,
+    pipelineExecutionId: str,
+) -> GetPipelineExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPipelineExecutionInputRequestTypeDef](./type_defs.md#getpipelineexecutioninputrequesttypedef).
+1. See [:material-code-braces: GetPipelineExecutionOutputTypeDef](./type_defs.md#getpipelineexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineName`: `str` *(required)*
-- `pipelineExecutionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPipelineExecutionInputRequestTypeDef = {  # (1)
+    "pipelineName": ...,
+    "pipelineExecutionId": ...,
+}
 
-Returns
-[GetPipelineExecutionOutputTypeDef](./type_defs.md#getpipelineexecutionoutputtypedef).
+parent.get_pipeline_execution(**kwargs)
+```
 
-<a id="get\_pipeline\_state"></a>
+1. See [:material-code-braces: GetPipelineExecutionInputRequestTypeDef](./type_defs.md#getpipelineexecutioninputrequesttypedef) 
 
-### get_pipeline_state
+### get\_pipeline\_state
 
 Returns information about the state of a pipeline, including the stages and
 actions.
 
-Type annotations for `boto3.client("codepipeline").get_pipeline_state` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").get_pipeline_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state)
 
-Boto3 documentation:
-[CodePipeline.Client.get_pipeline_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_pipeline_state)
+```python title="Method definition"
+def get_pipeline_state(
+    self,
+    *,
+    name: str,
+) -> GetPipelineStateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPipelineStateInputRequestTypeDef](./type_defs.md#getpipelinestateinputrequesttypedef).
+1. See [:material-code-braces: GetPipelineStateOutputTypeDef](./type_defs.md#getpipelinestateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPipelineStateInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[GetPipelineStateOutputTypeDef](./type_defs.md#getpipelinestateoutputtypedef).
+parent.get_pipeline_state(**kwargs)
+```
 
-<a id="get\_third\_party\_job\_details"></a>
+1. See [:material-code-braces: GetPipelineStateInputRequestTypeDef](./type_defs.md#getpipelinestateinputrequesttypedef) 
 
-### get_third_party_job_details
+### get\_third\_party\_job\_details
 
 Requests the details of a job for a third party action.
 
-Type annotations for `boto3.client("codepipeline").get_third_party_job_details`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").get_third_party_job_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details)
 
-Boto3 documentation:
-[CodePipeline.Client.get_third_party_job_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.get_third_party_job_details)
+```python title="Method definition"
+def get_third_party_job_details(
+    self,
+    *,
+    jobId: str,
+    clientToken: str,
+) -> GetThirdPartyJobDetailsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetThirdPartyJobDetailsInputRequestTypeDef](./type_defs.md#getthirdpartyjobdetailsinputrequesttypedef).
+1. See [:material-code-braces: GetThirdPartyJobDetailsOutputTypeDef](./type_defs.md#getthirdpartyjobdetailsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `clientToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetThirdPartyJobDetailsInputRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "clientToken": ...,
+}
 
-Returns
-[GetThirdPartyJobDetailsOutputTypeDef](./type_defs.md#getthirdpartyjobdetailsoutputtypedef).
+parent.get_third_party_job_details(**kwargs)
+```
 
-<a id="list\_action\_executions"></a>
+1. See [:material-code-braces: GetThirdPartyJobDetailsInputRequestTypeDef](./type_defs.md#getthirdpartyjobdetailsinputrequesttypedef) 
 
-### list_action_executions
+### list\_action\_executions
 
 Lists the action executions that have occurred in a pipeline.
 
-Type annotations for `boto3.client("codepipeline").list_action_executions`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").list_action_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions)
 
-Boto3 documentation:
-[CodePipeline.Client.list_action_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_executions)
+```python title="Method definition"
+def list_action_executions(
+    self,
+    *,
+    pipelineName: str,
+    filter: ActionExecutionFilterTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListActionExecutionsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListActionExecutionsInputRequestTypeDef](./type_defs.md#listactionexecutionsinputrequesttypedef).
+1. See [:material-code-braces: ActionExecutionFilterTypeDef](./type_defs.md#actionexecutionfiltertypedef) 
+2. See [:material-code-braces: ListActionExecutionsOutputTypeDef](./type_defs.md#listactionexecutionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineName`: `str` *(required)*
-- `filter`:
-  [ActionExecutionFilterTypeDef](./type_defs.md#actionexecutionfiltertypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListActionExecutionsInputRequestTypeDef = {  # (1)
+    "pipelineName": ...,
+}
 
-Returns
-[ListActionExecutionsOutputTypeDef](./type_defs.md#listactionexecutionsoutputtypedef).
+parent.list_action_executions(**kwargs)
+```
 
-<a id="list\_action\_types"></a>
+1. See [:material-code-braces: ListActionExecutionsInputRequestTypeDef](./type_defs.md#listactionexecutionsinputrequesttypedef) 
 
-### list_action_types
+### list\_action\_types
 
 Gets a summary of all AWS CodePipeline action types associated with your
 account.
 
-Type annotations for `boto3.client("codepipeline").list_action_types` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").list_action_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_types)
 
-Boto3 documentation:
-[CodePipeline.Client.list_action_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_action_types)
+```python title="Method definition"
+def list_action_types(
+    self,
+    *,
+    actionOwnerFilter: ActionOwnerType = ...,  # (1)
+    nextToken: str = ...,
+    regionFilter: str = ...,
+) -> ListActionTypesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListActionTypesInputRequestTypeDef](./type_defs.md#listactiontypesinputrequesttypedef).
+1. See [:material-code-brackets: ActionOwnerType](./literals.md#actionownertype) 
+2. See [:material-code-braces: ListActionTypesOutputTypeDef](./type_defs.md#listactiontypesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `actionOwnerFilter`: [ActionOwnerType](./literals.md#actionownertype)
-- `nextToken`: `str`
-- `regionFilter`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListActionTypesInputRequestTypeDef = {  # (1)
+    "actionOwnerFilter": ...,
+}
 
-Returns
-[ListActionTypesOutputTypeDef](./type_defs.md#listactiontypesoutputtypedef).
+parent.list_action_types(**kwargs)
+```
 
-<a id="list\_pipeline\_executions"></a>
+1. See [:material-code-braces: ListActionTypesInputRequestTypeDef](./type_defs.md#listactiontypesinputrequesttypedef) 
 
-### list_pipeline_executions
+### list\_pipeline\_executions
 
 Gets a summary of the most recent executions for a pipeline.
 
-Type annotations for `boto3.client("codepipeline").list_pipeline_executions`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").list_pipeline_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions)
 
-Boto3 documentation:
-[CodePipeline.Client.list_pipeline_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipeline_executions)
+```python title="Method definition"
+def list_pipeline_executions(
+    self,
+    *,
+    pipelineName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListPipelineExecutionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPipelineExecutionsInputRequestTypeDef](./type_defs.md#listpipelineexecutionsinputrequesttypedef).
+1. See [:material-code-braces: ListPipelineExecutionsOutputTypeDef](./type_defs.md#listpipelineexecutionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPipelineExecutionsInputRequestTypeDef = {  # (1)
+    "pipelineName": ...,
+}
 
-Returns
-[ListPipelineExecutionsOutputTypeDef](./type_defs.md#listpipelineexecutionsoutputtypedef).
+parent.list_pipeline_executions(**kwargs)
+```
 
-<a id="list\_pipelines"></a>
+1. See [:material-code-braces: ListPipelineExecutionsInputRequestTypeDef](./type_defs.md#listpipelineexecutionsinputrequesttypedef) 
 
-### list_pipelines
+### list\_pipelines
 
 Gets a summary of all of the pipelines associated with your account.
 
-Type annotations for `boto3.client("codepipeline").list_pipelines` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").list_pipelines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines)
 
-Boto3 documentation:
-[CodePipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_pipelines)
+```python title="Method definition"
+def list_pipelines(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListPipelinesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPipelinesInputRequestTypeDef](./type_defs.md#listpipelinesinputrequesttypedef).
+1. See [:material-code-braces: ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPipelinesInputRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef).
+parent.list_pipelines(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListPipelinesInputRequestTypeDef](./type_defs.md#listpipelinesinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
-Gets the set of key-value pairs (metadata) that are used to manage the
-resource.
+Gets the set of key-value pairs (metadata) that are used to manage the resource.
 
-Type annotations for `boto3.client("codepipeline").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CodePipeline.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_webhooks"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### list_webhooks
+### list\_webhooks
 
 Gets a listing of all the webhooks in this AWS Region for this account.
 
-Type annotations for `boto3.client("codepipeline").list_webhooks` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").list_webhooks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks)
 
-Boto3 documentation:
-[CodePipeline.Client.list_webhooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.list_webhooks)
+```python title="Method definition"
+def list_webhooks(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListWebhooksOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWebhooksInputRequestTypeDef](./type_defs.md#listwebhooksinputrequesttypedef).
+1. See [:material-code-braces: ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListWebhooksInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef).
+parent.list_webhooks(**kwargs)
+```
 
-<a id="poll\_for\_jobs"></a>
+1. See [:material-code-braces: ListWebhooksInputRequestTypeDef](./type_defs.md#listwebhooksinputrequesttypedef) 
 
-### poll_for_jobs
+### poll\_for\_jobs
 
 Returns information about any jobs for AWS CodePipeline to act on.
 
-Type annotations for `boto3.client("codepipeline").poll_for_jobs` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").poll_for_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs)
 
-Boto3 documentation:
-[CodePipeline.Client.poll_for_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_jobs)
+```python title="Method definition"
+def poll_for_jobs(
+    self,
+    *,
+    actionTypeId: ActionTypeIdTypeDef,  # (1)
+    maxBatchSize: int = ...,
+    queryParam: Mapping[str, str] = ...,
+) -> PollForJobsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PollForJobsInputRequestTypeDef](./type_defs.md#pollforjobsinputrequesttypedef).
+1. See [:material-code-braces: ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef) 
+2. See [:material-code-braces: PollForJobsOutputTypeDef](./type_defs.md#pollforjobsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
-  *(required)*
-- `maxBatchSize`: `int`
-- `queryParam`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: PollForJobsInputRequestTypeDef = {  # (1)
+    "actionTypeId": ...,
+}
 
-Returns [PollForJobsOutputTypeDef](./type_defs.md#pollforjobsoutputtypedef).
+parent.poll_for_jobs(**kwargs)
+```
 
-<a id="poll\_for\_third\_party\_jobs"></a>
+1. See [:material-code-braces: PollForJobsInputRequestTypeDef](./type_defs.md#pollforjobsinputrequesttypedef) 
 
-### poll_for_third_party_jobs
+### poll\_for\_third\_party\_jobs
 
 Determines whether there are any third party jobs for a job worker to act on.
 
-Type annotations for `boto3.client("codepipeline").poll_for_third_party_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").poll_for_third_party_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs)
 
-Boto3 documentation:
-[CodePipeline.Client.poll_for_third_party_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.poll_for_third_party_jobs)
+```python title="Method definition"
+def poll_for_third_party_jobs(
+    self,
+    *,
+    actionTypeId: ActionTypeIdTypeDef,  # (1)
+    maxBatchSize: int = ...,
+) -> PollForThirdPartyJobsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PollForThirdPartyJobsInputRequestTypeDef](./type_defs.md#pollforthirdpartyjobsinputrequesttypedef).
+1. See [:material-code-braces: ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef) 
+2. See [:material-code-braces: PollForThirdPartyJobsOutputTypeDef](./type_defs.md#pollforthirdpartyjobsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `actionTypeId`: [ActionTypeIdTypeDef](./type_defs.md#actiontypeidtypedef)
-  *(required)*
-- `maxBatchSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: PollForThirdPartyJobsInputRequestTypeDef = {  # (1)
+    "actionTypeId": ...,
+}
 
-Returns
-[PollForThirdPartyJobsOutputTypeDef](./type_defs.md#pollforthirdpartyjobsoutputtypedef).
+parent.poll_for_third_party_jobs(**kwargs)
+```
 
-<a id="put\_action\_revision"></a>
+1. See [:material-code-braces: PollForThirdPartyJobsInputRequestTypeDef](./type_defs.md#pollforthirdpartyjobsinputrequesttypedef) 
 
-### put_action_revision
+### put\_action\_revision
 
 Provides information to AWS CodePipeline about new revisions to a source.
 
-Type annotations for `boto3.client("codepipeline").put_action_revision` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").put_action_revision` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision)
 
-Boto3 documentation:
-[CodePipeline.Client.put_action_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_action_revision)
+```python title="Method definition"
+def put_action_revision(
+    self,
+    *,
+    pipelineName: str,
+    stageName: str,
+    actionName: str,
+    actionRevision: ActionRevisionTypeDef,  # (1)
+) -> PutActionRevisionOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutActionRevisionInputRequestTypeDef](./type_defs.md#putactionrevisioninputrequesttypedef).
+1. See [:material-code-braces: ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef) 
+2. See [:material-code-braces: PutActionRevisionOutputTypeDef](./type_defs.md#putactionrevisionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineName`: `str` *(required)*
-- `stageName`: `str` *(required)*
-- `actionName`: `str` *(required)*
-- `actionRevision`:
-  [ActionRevisionTypeDef](./type_defs.md#actionrevisiontypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutActionRevisionInputRequestTypeDef = {  # (1)
+    "pipelineName": ...,
+    "stageName": ...,
+    "actionName": ...,
+    "actionRevision": ...,
+}
 
-Returns
-[PutActionRevisionOutputTypeDef](./type_defs.md#putactionrevisionoutputtypedef).
+parent.put_action_revision(**kwargs)
+```
 
-<a id="put\_approval\_result"></a>
+1. See [:material-code-braces: PutActionRevisionInputRequestTypeDef](./type_defs.md#putactionrevisioninputrequesttypedef) 
 
-### put_approval_result
+### put\_approval\_result
 
 Provides the response to a manual approval request to AWS CodePipeline.
 
-Type annotations for `boto3.client("codepipeline").put_approval_result` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").put_approval_result` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result)
 
-Boto3 documentation:
-[CodePipeline.Client.put_approval_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_approval_result)
+```python title="Method definition"
+def put_approval_result(
+    self,
+    *,
+    pipelineName: str,
+    stageName: str,
+    actionName: str,
+    result: ApprovalResultTypeDef,  # (1)
+    token: str,
+) -> PutApprovalResultOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutApprovalResultInputRequestTypeDef](./type_defs.md#putapprovalresultinputrequesttypedef).
+1. See [:material-code-braces: ApprovalResultTypeDef](./type_defs.md#approvalresulttypedef) 
+2. See [:material-code-braces: PutApprovalResultOutputTypeDef](./type_defs.md#putapprovalresultoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineName`: `str` *(required)*
-- `stageName`: `str` *(required)*
-- `actionName`: `str` *(required)*
-- `result`: [ApprovalResultTypeDef](./type_defs.md#approvalresulttypedef)
-  *(required)*
-- `token`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutApprovalResultInputRequestTypeDef = {  # (1)
+    "pipelineName": ...,
+    "stageName": ...,
+    "actionName": ...,
+    "result": ...,
+    "token": ...,
+}
 
-Returns
-[PutApprovalResultOutputTypeDef](./type_defs.md#putapprovalresultoutputtypedef).
+parent.put_approval_result(**kwargs)
+```
 
-<a id="put\_job\_failure\_result"></a>
+1. See [:material-code-braces: PutApprovalResultInputRequestTypeDef](./type_defs.md#putapprovalresultinputrequesttypedef) 
 
-### put_job_failure_result
+### put\_job\_failure\_result
 
 Represents the failure of a job as returned to the pipeline by a job worker.
 
-Type annotations for `boto3.client("codepipeline").put_job_failure_result`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").put_job_failure_result` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result)
 
-Boto3 documentation:
-[CodePipeline.Client.put_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_failure_result)
+```python title="Method definition"
+def put_job_failure_result(
+    self,
+    *,
+    jobId: str,
+    failureDetails: FailureDetailsTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutJobFailureResultInputRequestTypeDef](./type_defs.md#putjobfailureresultinputrequesttypedef).
+1. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `failureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutJobFailureResultInputRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "failureDetails": ...,
+}
 
-<a id="put\_job\_success\_result"></a>
+parent.put_job_failure_result(**kwargs)
+```
 
-### put_job_success_result
+1. See [:material-code-braces: PutJobFailureResultInputRequestTypeDef](./type_defs.md#putjobfailureresultinputrequesttypedef) 
+
+### put\_job\_success\_result
 
 Represents the success of a job as returned to the pipeline by a job worker.
 
-Type annotations for `boto3.client("codepipeline").put_job_success_result`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").put_job_success_result` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result)
 
-Boto3 documentation:
-[CodePipeline.Client.put_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_job_success_result)
+```python title="Method definition"
+def put_job_success_result(
+    self,
+    *,
+    jobId: str,
+    currentRevision: CurrentRevisionTypeDef = ...,  # (1)
+    continuationToken: str = ...,
+    executionDetails: ExecutionDetailsTypeDef = ...,  # (2)
+    outputVariables: Mapping[str, str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutJobSuccessResultInputRequestTypeDef](./type_defs.md#putjobsuccessresultinputrequesttypedef).
+1. See [:material-code-braces: CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef) 
+2. See [:material-code-braces: ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `currentRevision`:
-  [CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef)
-- `continuationToken`: `str`
-- `executionDetails`:
-  [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
-- `outputVariables`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: PutJobSuccessResultInputRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-<a id="put\_third\_party\_job\_failure\_result"></a>
+parent.put_job_success_result(**kwargs)
+```
 
-### put_third_party_job_failure_result
+1. See [:material-code-braces: PutJobSuccessResultInputRequestTypeDef](./type_defs.md#putjobsuccessresultinputrequesttypedef) 
 
-Represents the failure of a third party job as returned to the pipeline by a
-job worker.
+### put\_third\_party\_job\_failure\_result
 
-Type annotations for
-`boto3.client("codepipeline").put_third_party_job_failure_result` method.
+Represents the failure of a third party job as returned to the pipeline by a job
+worker.
 
-Boto3 documentation:
-[CodePipeline.Client.put_third_party_job_failure_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result)
+Type annotations and code completion for `#!python boto3.client("codepipeline").put_third_party_job_failure_result` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_failure_result)
 
-Arguments mapping described in
-[PutThirdPartyJobFailureResultInputRequestTypeDef](./type_defs.md#putthirdpartyjobfailureresultinputrequesttypedef).
+```python title="Method definition"
+def put_third_party_job_failure_result(
+    self,
+    *,
+    jobId: str,
+    clientToken: str,
+    failureDetails: FailureDetailsTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
 
-- `jobId`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `failureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) *(required)*
 
-<a id="put\_third\_party\_job\_success\_result"></a>
+```python title="Usage example with kwargs"
+kwargs: PutThirdPartyJobFailureResultInputRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "clientToken": ...,
+    "failureDetails": ...,
+}
 
-### put_third_party_job_success_result
+parent.put_third_party_job_failure_result(**kwargs)
+```
 
-Represents the success of a third party job as returned to the pipeline by a
-job worker.
+1. See [:material-code-braces: PutThirdPartyJobFailureResultInputRequestTypeDef](./type_defs.md#putthirdpartyjobfailureresultinputrequesttypedef) 
 
-Type annotations for
-`boto3.client("codepipeline").put_third_party_job_success_result` method.
+### put\_third\_party\_job\_success\_result
 
-Boto3 documentation:
-[CodePipeline.Client.put_third_party_job_success_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result)
+Represents the success of a third party job as returned to the pipeline by a job
+worker.
 
-Arguments mapping described in
-[PutThirdPartyJobSuccessResultInputRequestTypeDef](./type_defs.md#putthirdpartyjobsuccessresultinputrequesttypedef).
+Type annotations and code completion for `#!python boto3.client("codepipeline").put_third_party_job_success_result` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_third_party_job_success_result)
 
-Keyword-only arguments:
+```python title="Method definition"
+def put_third_party_job_success_result(
+    self,
+    *,
+    jobId: str,
+    clientToken: str,
+    currentRevision: CurrentRevisionTypeDef = ...,  # (1)
+    continuationToken: str = ...,
+    executionDetails: ExecutionDetailsTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
-- `jobId`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `currentRevision`:
-  [CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef)
-- `continuationToken`: `str`
-- `executionDetails`:
-  [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
+1. See [:material-code-braces: CurrentRevisionTypeDef](./type_defs.md#currentrevisiontypedef) 
+2. See [:material-code-braces: ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef) 
 
-<a id="put\_webhook"></a>
 
-### put_webhook
+```python title="Usage example with kwargs"
+kwargs: PutThirdPartyJobSuccessResultInputRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "clientToken": ...,
+}
+
+parent.put_third_party_job_success_result(**kwargs)
+```
+
+1. See [:material-code-braces: PutThirdPartyJobSuccessResultInputRequestTypeDef](./type_defs.md#putthirdpartyjobsuccessresultinputrequesttypedef) 
+
+### put\_webhook
 
 Defines a webhook and returns a unique webhook URL generated by CodePipeline.
 
-Type annotations for `boto3.client("codepipeline").put_webhook` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").put_webhook` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_webhook)
 
-Boto3 documentation:
-[CodePipeline.Client.put_webhook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.put_webhook)
+```python title="Method definition"
+def put_webhook(
+    self,
+    *,
+    webhook: WebhookDefinitionTypeDef,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> PutWebhookOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutWebhookInputRequestTypeDef](./type_defs.md#putwebhookinputrequesttypedef).
+1. See [:material-code-braces: WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: PutWebhookOutputTypeDef](./type_defs.md#putwebhookoutputtypedef) 
 
-Keyword-only arguments:
 
-- `webhook`:
-  [WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef)
-  *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutWebhookInputRequestTypeDef = {  # (1)
+    "webhook": ...,
+}
 
-Returns [PutWebhookOutputTypeDef](./type_defs.md#putwebhookoutputtypedef).
+parent.put_webhook(**kwargs)
+```
 
-<a id="register\_webhook\_with\_third\_party"></a>
+1. See [:material-code-braces: PutWebhookInputRequestTypeDef](./type_defs.md#putwebhookinputrequesttypedef) 
 
-### register_webhook_with_third_party
+### register\_webhook\_with\_third\_party
 
 Configures a connection between the webhook that was created and the external
 tool with events to be detected.
 
-Type annotations for
-`boto3.client("codepipeline").register_webhook_with_third_party` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").register_webhook_with_third_party` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party)
 
-Boto3 documentation:
-[CodePipeline.Client.register_webhook_with_third_party](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.register_webhook_with_third_party)
+```python title="Method definition"
+def register_webhook_with_third_party(
+    self,
+    *,
+    webhookName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RegisterWebhookWithThirdPartyInputRequestTypeDef](./type_defs.md#registerwebhookwiththirdpartyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `webhookName`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterWebhookWithThirdPartyInputRequestTypeDef = {  # (1)
+    "webhookName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.register_webhook_with_third_party(**kwargs)
+```
 
-<a id="retry\_stage\_execution"></a>
+1. See [:material-code-braces: RegisterWebhookWithThirdPartyInputRequestTypeDef](./type_defs.md#registerwebhookwiththirdpartyinputrequesttypedef) 
 
-### retry_stage_execution
+### retry\_stage\_execution
 
 Resumes the pipeline execution by retrying the last failed actions in a stage.
 
-Type annotations for `boto3.client("codepipeline").retry_stage_execution`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").retry_stage_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution)
 
-Boto3 documentation:
-[CodePipeline.Client.retry_stage_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.retry_stage_execution)
+```python title="Method definition"
+def retry_stage_execution(
+    self,
+    *,
+    pipelineName: str,
+    stageName: str,
+    pipelineExecutionId: str,
+    retryMode: StageRetryModeType,  # (1)
+) -> RetryStageExecutionOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RetryStageExecutionInputRequestTypeDef](./type_defs.md#retrystageexecutioninputrequesttypedef).
+1. See [:material-code-brackets: StageRetryModeType](./literals.md#stageretrymodetype) 
+2. See [:material-code-braces: RetryStageExecutionOutputTypeDef](./type_defs.md#retrystageexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineName`: `str` *(required)*
-- `stageName`: `str` *(required)*
-- `pipelineExecutionId`: `str` *(required)*
-- `retryMode`: `Literal['FAILED_ACTIONS']` (see
-  [StageRetryModeType](./literals.md#stageretrymodetype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: RetryStageExecutionInputRequestTypeDef = {  # (1)
+    "pipelineName": ...,
+    "stageName": ...,
+    "pipelineExecutionId": ...,
+    "retryMode": ...,
+}
 
-Returns
-[RetryStageExecutionOutputTypeDef](./type_defs.md#retrystageexecutionoutputtypedef).
+parent.retry_stage_execution(**kwargs)
+```
 
-<a id="start\_pipeline\_execution"></a>
+1. See [:material-code-braces: RetryStageExecutionInputRequestTypeDef](./type_defs.md#retrystageexecutioninputrequesttypedef) 
 
-### start_pipeline_execution
+### start\_pipeline\_execution
 
 Starts the specified pipeline.
 
-Type annotations for `boto3.client("codepipeline").start_pipeline_execution`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").start_pipeline_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution)
 
-Boto3 documentation:
-[CodePipeline.Client.start_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.start_pipeline_execution)
+```python title="Method definition"
+def start_pipeline_execution(
+    self,
+    *,
+    name: str,
+    clientRequestToken: str = ...,
+) -> StartPipelineExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartPipelineExecutionInputRequestTypeDef](./type_defs.md#startpipelineexecutioninputrequesttypedef).
+1. See [:material-code-braces: StartPipelineExecutionOutputTypeDef](./type_defs.md#startpipelineexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartPipelineExecutionInputRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[StartPipelineExecutionOutputTypeDef](./type_defs.md#startpipelineexecutionoutputtypedef).
+parent.start_pipeline_execution(**kwargs)
+```
 
-<a id="stop\_pipeline\_execution"></a>
+1. See [:material-code-braces: StartPipelineExecutionInputRequestTypeDef](./type_defs.md#startpipelineexecutioninputrequesttypedef) 
 
-### stop_pipeline_execution
+### stop\_pipeline\_execution
 
 Stops the specified pipeline execution.
 
-Type annotations for `boto3.client("codepipeline").stop_pipeline_execution`
-method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").stop_pipeline_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution)
 
-Boto3 documentation:
-[CodePipeline.Client.stop_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.stop_pipeline_execution)
+```python title="Method definition"
+def stop_pipeline_execution(
+    self,
+    *,
+    pipelineName: str,
+    pipelineExecutionId: str,
+    abandon: bool = ...,
+    reason: str = ...,
+) -> StopPipelineExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopPipelineExecutionInputRequestTypeDef](./type_defs.md#stoppipelineexecutioninputrequesttypedef).
+1. See [:material-code-braces: StopPipelineExecutionOutputTypeDef](./type_defs.md#stoppipelineexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineName`: `str` *(required)*
-- `pipelineExecutionId`: `str` *(required)*
-- `abandon`: `bool`
-- `reason`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopPipelineExecutionInputRequestTypeDef = {  # (1)
+    "pipelineName": ...,
+    "pipelineExecutionId": ...,
+}
 
-Returns
-[StopPipelineExecutionOutputTypeDef](./type_defs.md#stoppipelineexecutionoutputtypedef).
+parent.stop_pipeline_execution(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopPipelineExecutionInputRequestTypeDef](./type_defs.md#stoppipelineexecutioninputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds to or modifies the tags of the given resource.
 
-Type annotations for `boto3.client("codepipeline").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.tag_resource)
 
-Boto3 documentation:
-[CodePipeline.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from an AWS resource.
 
-Type annotations for `boto3.client("codepipeline").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.untag_resource)
 
-Boto3 documentation:
-[CodePipeline.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_action\_type"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_action_type
+### update\_action\_type
 
 Updates an action type that was created with any supported integration model,
 where the action type is to be used by customers of the action type provider.
 
-Type annotations for `boto3.client("codepipeline").update_action_type` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").update_action_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_action_type)
 
-Boto3 documentation:
-[CodePipeline.Client.update_action_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_action_type)
+```python title="Method definition"
+def update_action_type(
+    self,
+    *,
+    actionType: ActionTypeDeclarationTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateActionTypeInputRequestTypeDef](./type_defs.md#updateactiontypeinputrequesttypedef).
+1. See [:material-code-braces: ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef) 
 
-Keyword-only arguments:
 
-- `actionType`:
-  [ActionTypeDeclarationTypeDef](./type_defs.md#actiontypedeclarationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateActionTypeInputRequestTypeDef = {  # (1)
+    "actionType": ...,
+}
 
-<a id="update\_pipeline"></a>
+parent.update_action_type(**kwargs)
+```
 
-### update_pipeline
+1. See [:material-code-braces: UpdateActionTypeInputRequestTypeDef](./type_defs.md#updateactiontypeinputrequesttypedef) 
+
+### update\_pipeline
 
 Updates a specified pipeline with edits or changes to its structure.
 
-Type annotations for `boto3.client("codepipeline").update_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("codepipeline").update_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline)
 
-Boto3 documentation:
-[CodePipeline.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client.update_pipeline)
+```python title="Method definition"
+def update_pipeline(
+    self,
+    *,
+    pipeline: PipelineDeclarationTypeDef,  # (1)
+) -> UpdatePipelineOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePipelineInputRequestTypeDef](./type_defs.md#updatepipelineinputrequesttypedef).
+1. See [:material-code-braces: PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef) 
+2. See [:material-code-braces: UpdatePipelineOutputTypeDef](./type_defs.md#updatepipelineoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipeline`:
-  [PipelineDeclarationTypeDef](./type_defs.md#pipelinedeclarationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdatePipelineInputRequestTypeDef = {  # (1)
+    "pipeline": ...,
+}
 
-Returns
-[UpdatePipelineOutputTypeDef](./type_defs.md#updatepipelineoutputtypedef).
+parent.update_pipeline(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdatePipelineInputRequestTypeDef](./type_defs.md#updatepipelineinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("codepipeline").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("codepipeline").get_paginator` method with overloads.
 
-- `client.get_paginator("list_action_executions")` ->
-  [ListActionExecutionsPaginator](./paginators.md#listactionexecutionspaginator)
-- `client.get_paginator("list_action_types")` ->
-  [ListActionTypesPaginator](./paginators.md#listactiontypespaginator)
-- `client.get_paginator("list_pipeline_executions")` ->
-  [ListPipelineExecutionsPaginator](./paginators.md#listpipelineexecutionspaginator)
-- `client.get_paginator("list_pipelines")` ->
-  [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_webhooks")` ->
-  [ListWebhooksPaginator](./paginators.md#listwebhookspaginator)
+- `client.get_paginator("list_action_executions")` -> [ListActionExecutionsPaginator](./paginators.md#listactionexecutionspaginator)
+- `client.get_paginator("list_action_types")` -> [ListActionTypesPaginator](./paginators.md#listactiontypespaginator)
+- `client.get_paginator("list_pipeline_executions")` -> [ListPipelineExecutionsPaginator](./paginators.md#listpipelineexecutionspaginator)
+- `client.get_paginator("list_pipelines")` -> [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_webhooks")` -> [ListWebhooksPaginator](./paginators.md#listwebhookspaginator)
+
+
+

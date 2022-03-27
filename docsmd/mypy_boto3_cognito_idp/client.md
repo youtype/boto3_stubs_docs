@@ -1,134 +1,18 @@
-<a id="cognitoidentityproviderclient-for-boto3-cognitoidentityprovider-module"></a>
+# CognitoIdentityProviderClient
 
-# CognitoIdentityProviderClient for boto3 CognitoIdentityProvider module
+> [Index](../README.md) > [CognitoIdentityProvider](./README.md) > CognitoIdentityProviderClient
 
-> [Index](../README.md) > [CognitoIdentityProvider](./README.md) >
-> CognitoIdentityProviderClient
+!!! note ""
 
-Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
-type annotations stubs module
-[mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
-
-- [CognitoIdentityProviderClient for boto3 CognitoIdentityProvider module](#cognitoidentityproviderclient-for-boto3-cognitoidentityprovider-module)
-  - [CognitoIdentityProviderClient](#cognitoidentityproviderclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_custom_attributes](#add_custom_attributes)
-    - [admin_add_user_to_group](#admin_add_user_to_group)
-    - [admin_confirm_sign_up](#admin_confirm_sign_up)
-    - [admin_create_user](#admin_create_user)
-    - [admin_delete_user](#admin_delete_user)
-    - [admin_delete_user_attributes](#admin_delete_user_attributes)
-    - [admin_disable_provider_for_user](#admin_disable_provider_for_user)
-    - [admin_disable_user](#admin_disable_user)
-    - [admin_enable_user](#admin_enable_user)
-    - [admin_forget_device](#admin_forget_device)
-    - [admin_get_device](#admin_get_device)
-    - [admin_get_user](#admin_get_user)
-    - [admin_initiate_auth](#admin_initiate_auth)
-    - [admin_link_provider_for_user](#admin_link_provider_for_user)
-    - [admin_list_devices](#admin_list_devices)
-    - [admin_list_groups_for_user](#admin_list_groups_for_user)
-    - [admin_list_user_auth_events](#admin_list_user_auth_events)
-    - [admin_remove_user_from_group](#admin_remove_user_from_group)
-    - [admin_reset_user_password](#admin_reset_user_password)
-    - [admin_respond_to_auth_challenge](#admin_respond_to_auth_challenge)
-    - [admin_set_user_mfa_preference](#admin_set_user_mfa_preference)
-    - [admin_set_user_password](#admin_set_user_password)
-    - [admin_set_user_settings](#admin_set_user_settings)
-    - [admin_update_auth_event_feedback](#admin_update_auth_event_feedback)
-    - [admin_update_device_status](#admin_update_device_status)
-    - [admin_update_user_attributes](#admin_update_user_attributes)
-    - [admin_user_global_sign_out](#admin_user_global_sign_out)
-    - [associate_software_token](#associate_software_token)
-    - [can_paginate](#can_paginate)
-    - [change_password](#change_password)
-    - [confirm_device](#confirm_device)
-    - [confirm_forgot_password](#confirm_forgot_password)
-    - [confirm_sign_up](#confirm_sign_up)
-    - [create_group](#create_group)
-    - [create_identity_provider](#create_identity_provider)
-    - [create_resource_server](#create_resource_server)
-    - [create_user_import_job](#create_user_import_job)
-    - [create_user_pool](#create_user_pool)
-    - [create_user_pool_client](#create_user_pool_client)
-    - [create_user_pool_domain](#create_user_pool_domain)
-    - [delete_group](#delete_group)
-    - [delete_identity_provider](#delete_identity_provider)
-    - [delete_resource_server](#delete_resource_server)
-    - [delete_user](#delete_user)
-    - [delete_user_attributes](#delete_user_attributes)
-    - [delete_user_pool](#delete_user_pool)
-    - [delete_user_pool_client](#delete_user_pool_client)
-    - [delete_user_pool_domain](#delete_user_pool_domain)
-    - [describe_identity_provider](#describe_identity_provider)
-    - [describe_resource_server](#describe_resource_server)
-    - [describe_risk_configuration](#describe_risk_configuration)
-    - [describe_user_import_job](#describe_user_import_job)
-    - [describe_user_pool](#describe_user_pool)
-    - [describe_user_pool_client](#describe_user_pool_client)
-    - [describe_user_pool_domain](#describe_user_pool_domain)
-    - [forget_device](#forget_device)
-    - [forgot_password](#forgot_password)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_csv_header](#get_csv_header)
-    - [get_device](#get_device)
-    - [get_group](#get_group)
-    - [get_identity_provider_by_identifier](#get_identity_provider_by_identifier)
-    - [get_signing_certificate](#get_signing_certificate)
-    - [get_ui_customization](#get_ui_customization)
-    - [get_user](#get_user)
-    - [get_user_attribute_verification_code](#get_user_attribute_verification_code)
-    - [get_user_pool_mfa_config](#get_user_pool_mfa_config)
-    - [global_sign_out](#global_sign_out)
-    - [initiate_auth](#initiate_auth)
-    - [list_devices](#list_devices)
-    - [list_groups](#list_groups)
-    - [list_identity_providers](#list_identity_providers)
-    - [list_resource_servers](#list_resource_servers)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_user_import_jobs](#list_user_import_jobs)
-    - [list_user_pool_clients](#list_user_pool_clients)
-    - [list_user_pools](#list_user_pools)
-    - [list_users](#list_users)
-    - [list_users_in_group](#list_users_in_group)
-    - [resend_confirmation_code](#resend_confirmation_code)
-    - [respond_to_auth_challenge](#respond_to_auth_challenge)
-    - [revoke_token](#revoke_token)
-    - [set_risk_configuration](#set_risk_configuration)
-    - [set_ui_customization](#set_ui_customization)
-    - [set_user_mfa_preference](#set_user_mfa_preference)
-    - [set_user_pool_mfa_config](#set_user_pool_mfa_config)
-    - [set_user_settings](#set_user_settings)
-    - [sign_up](#sign_up)
-    - [start_user_import_job](#start_user_import_job)
-    - [stop_user_import_job](#stop_user_import_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_auth_event_feedback](#update_auth_event_feedback)
-    - [update_device_status](#update_device_status)
-    - [update_group](#update_group)
-    - [update_identity_provider](#update_identity_provider)
-    - [update_resource_server](#update_resource_server)
-    - [update_user_attributes](#update_user_attributes)
-    - [update_user_pool](#update_user_pool)
-    - [update_user_pool_client](#update_user_pool_client)
-    - [update_user_pool_domain](#update_user_pool_domain)
-    - [verify_software_token](#verify_software_token)
-    - [verify_user_attribute](#verify_user_attribute)
-    - [get_paginator](#get_paginator)
-
-<a id="cognitoidentityproviderclient"></a>
+    Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+    type annotations stubs module [mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 ## CognitoIdentityProviderClient
 
-Type annotations for `boto3.client("cognito-idp")`
+Type annotations and code completion for `#!python boto3.client("cognito-idp")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
 
@@ -136,2663 +20,3517 @@ def get_cognito-idp_client() -> CognitoIdentityProviderClient:
     return Session().client("cognito-idp")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cognito-idp").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cognito-idp")
+
+try:
+    do_something(client)
+except (
+    client.AliasExistsException,
+    client.ClientError,
+    client.CodeDeliveryFailureException,
+    client.CodeMismatchException,
+    client.ConcurrentModificationException,
+    client.DuplicateProviderException,
+    client.EnableSoftwareTokenMFAException,
+    client.ExpiredCodeException,
+    client.GroupExistsException,
+    client.InternalErrorException,
+    client.InvalidEmailRoleAccessPolicyException,
+    client.InvalidLambdaResponseException,
+    client.InvalidOAuthFlowException,
+    client.InvalidParameterException,
+    client.InvalidPasswordException,
+    client.InvalidSmsRoleAccessPolicyException,
+    client.InvalidSmsRoleTrustRelationshipException,
+    client.InvalidUserPoolConfigurationException,
+    client.LimitExceededException,
+    client.MFAMethodNotFoundException,
+    client.NotAuthorizedException,
+    client.PasswordResetRequiredException,
+    client.PreconditionNotMetException,
+    client.ResourceNotFoundException,
+    client.ScopeDoesNotExistException,
+    client.SoftwareTokenMFANotFoundException,
+    client.TooManyFailedAttemptsException,
+    client.TooManyRequestsException,
+    client.UnauthorizedException,
+    client.UnexpectedLambdaException,
+    client.UnsupportedIdentityProviderException,
+    client.UnsupportedOperationException,
+    client.UnsupportedTokenTypeException,
+    client.UnsupportedUserStateException,
+    client.UserImportInProgressException,
+    client.UserLambdaValidationException,
+    client.UserNotConfirmedException,
+    client.UserNotFoundException,
+    client.UserPoolAddOnNotEnabledException,
+    client.UserPoolTaggingException,
+    client.UsernameExistsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cognito_idp.client import Exceptions
 
 def handle_error(exc: Exceptions.AliasExistsException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AliasExistsException`
-- `Exceptions.ClientError`
-- `Exceptions.CodeDeliveryFailureException`
-- `Exceptions.CodeMismatchException`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.DuplicateProviderException`
-- `Exceptions.EnableSoftwareTokenMFAException`
-- `Exceptions.ExpiredCodeException`
-- `Exceptions.GroupExistsException`
-- `Exceptions.InternalErrorException`
-- `Exceptions.InvalidEmailRoleAccessPolicyException`
-- `Exceptions.InvalidLambdaResponseException`
-- `Exceptions.InvalidOAuthFlowException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidPasswordException`
-- `Exceptions.InvalidSmsRoleAccessPolicyException`
-- `Exceptions.InvalidSmsRoleTrustRelationshipException`
-- `Exceptions.InvalidUserPoolConfigurationException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.MFAMethodNotFoundException`
-- `Exceptions.NotAuthorizedException`
-- `Exceptions.PasswordResetRequiredException`
-- `Exceptions.PreconditionNotMetException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ScopeDoesNotExistException`
-- `Exceptions.SoftwareTokenMFANotFoundException`
-- `Exceptions.TooManyFailedAttemptsException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnauthorizedException`
-- `Exceptions.UnexpectedLambdaException`
-- `Exceptions.UnsupportedIdentityProviderException`
-- `Exceptions.UnsupportedOperationException`
-- `Exceptions.UnsupportedTokenTypeException`
-- `Exceptions.UnsupportedUserStateException`
-- `Exceptions.UserImportInProgressException`
-- `Exceptions.UserLambdaValidationException`
-- `Exceptions.UserNotConfirmedException`
-- `Exceptions.UserNotFoundException`
-- `Exceptions.UserPoolAddOnNotEnabledException`
-- `Exceptions.UserPoolTaggingException`
-- `Exceptions.UsernameExistsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CognitoIdentityProviderClient exceptions.
-
-Type annotations for `boto3.client("cognito-idp").exceptions` method.
-
-Boto3 documentation:
-[CognitoIdentityProvider.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_custom\_attributes"></a>
-
-### add_custom_attributes
+### add\_custom\_attributes
 
 Adds additional user attributes to the user pool schema.
 
-Type annotations for `boto3.client("cognito-idp").add_custom_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").add_custom_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.add_custom_attributes)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.add_custom_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.add_custom_attributes)
+```python title="Method definition"
+def add_custom_attributes(
+    self,
+    *,
+    UserPoolId: str,
+    CustomAttributes: Sequence[SchemaAttributeTypeTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddCustomAttributesRequestRequestTypeDef](./type_defs.md#addcustomattributesrequestrequesttypedef).
+1. See [:material-code-braces: SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `CustomAttributes`:
-  `Sequence`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddCustomAttributesRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "CustomAttributes": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_custom_attributes(**kwargs)
+```
 
-<a id="admin\_add\_user\_to\_group"></a>
+1. See [:material-code-braces: AddCustomAttributesRequestRequestTypeDef](./type_defs.md#addcustomattributesrequestrequesttypedef) 
 
-### admin_add_user_to_group
+### admin\_add\_user\_to\_group
 
 Adds the specified user to the specified group.
 
-Type annotations for `boto3.client("cognito-idp").admin_add_user_to_group`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_add_user_to_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_add_user_to_group)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_add_user_to_group)
+```python title="Method definition"
+def admin_add_user_to_group(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    GroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AdminAddUserToGroupRequestRequestTypeDef](./type_defs.md#adminaddusertogrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `GroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminAddUserToGroupRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "GroupName": ...,
+}
 
-<a id="admin\_confirm\_sign\_up"></a>
+parent.admin_add_user_to_group(**kwargs)
+```
 
-### admin_confirm_sign_up
+1. See [:material-code-braces: AdminAddUserToGroupRequestRequestTypeDef](./type_defs.md#adminaddusertogrouprequestrequesttypedef) 
+
+### admin\_confirm\_sign\_up
 
 Confirms user registration as an admin without using a confirmation code.
 
-Type annotations for `boto3.client("cognito-idp").admin_confirm_sign_up`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_confirm_sign_up` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_confirm_sign_up)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_confirm_sign_up](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_confirm_sign_up)
+```python title="Method definition"
+def admin_confirm_sign_up(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    ClientMetadata: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminConfirmSignUpRequestRequestTypeDef](./type_defs.md#adminconfirmsignuprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: AdminConfirmSignUpRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_confirm_sign_up(**kwargs)
+```
 
-<a id="admin\_create\_user"></a>
+1. See [:material-code-braces: AdminConfirmSignUpRequestRequestTypeDef](./type_defs.md#adminconfirmsignuprequestrequesttypedef) 
 
-### admin_create_user
+### admin\_create\_user
 
 Creates a new user in the specified user pool.
 
-Type annotations for `boto3.client("cognito-idp").admin_create_user` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_create_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_create_user)
+```python title="Method definition"
+def admin_create_user(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    UserAttributes: Sequence[AttributeTypeTypeDef] = ...,  # (1)
+    ValidationData: Sequence[AttributeTypeTypeDef] = ...,  # (1)
+    TemporaryPassword: str = ...,
+    ForceAliasCreation: bool = ...,
+    MessageAction: MessageActionTypeType = ...,  # (3)
+    DesiredDeliveryMediums: Sequence[DeliveryMediumTypeType] = ...,  # (4)
+    ClientMetadata: Mapping[str, str] = ...,
+) -> AdminCreateUserResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[AdminCreateUserRequestRequestTypeDef](./type_defs.md#admincreateuserrequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+2. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+3. See [:material-code-brackets: MessageActionTypeType](./literals.md#messageactiontypetype) 
+4. See [:material-code-brackets: DeliveryMediumTypeType](./literals.md#deliverymediumtypetype) 
+5. See [:material-code-braces: AdminCreateUserResponseTypeDef](./type_defs.md#admincreateuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `UserAttributes`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `ValidationData`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `TemporaryPassword`: `str`
-- `ForceAliasCreation`: `bool`
-- `MessageAction`: [MessageActionTypeType](./literals.md#messageactiontypetype)
-- `DesiredDeliveryMediums`:
-  `Sequence`\[[DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)\]
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: AdminCreateUserRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns
-[AdminCreateUserResponseTypeDef](./type_defs.md#admincreateuserresponsetypedef).
+parent.admin_create_user(**kwargs)
+```
 
-<a id="admin\_delete\_user"></a>
+1. See [:material-code-braces: AdminCreateUserRequestRequestTypeDef](./type_defs.md#admincreateuserrequestrequesttypedef) 
 
-### admin_delete_user
+### admin\_delete\_user
 
 Deletes a user as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_delete_user` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user)
+```python title="Method definition"
+def admin_delete_user(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AdminDeleteUserRequestRequestTypeDef](./type_defs.md#admindeleteuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminDeleteUserRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-<a id="admin\_delete\_user\_attributes"></a>
+parent.admin_delete_user(**kwargs)
+```
 
-### admin_delete_user_attributes
+1. See [:material-code-braces: AdminDeleteUserRequestRequestTypeDef](./type_defs.md#admindeleteuserrequestrequesttypedef) 
+
+### admin\_delete\_user\_attributes
 
 Deletes the user attributes in a user pool as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_delete_user_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_delete_user_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user_attributes)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_delete_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_delete_user_attributes)
+```python title="Method definition"
+def admin_delete_user_attributes(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    UserAttributeNames: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminDeleteUserAttributesRequestRequestTypeDef](./type_defs.md#admindeleteuserattributesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `UserAttributeNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminDeleteUserAttributesRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "UserAttributeNames": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_delete_user_attributes(**kwargs)
+```
 
-<a id="admin\_disable\_provider\_for\_user"></a>
+1. See [:material-code-braces: AdminDeleteUserAttributesRequestRequestTypeDef](./type_defs.md#admindeleteuserattributesrequestrequesttypedef) 
 
-### admin_disable_provider_for_user
+### admin\_disable\_provider\_for\_user
 
 Prevents the user from signing in with the specified external (SAML or social)
 identity provider.
 
-Type annotations for
-`boto3.client("cognito-idp").admin_disable_provider_for_user` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_disable_provider_for_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_provider_for_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_disable_provider_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_provider_for_user)
+```python title="Method definition"
+def admin_disable_provider_for_user(
+    self,
+    *,
+    UserPoolId: str,
+    User: ProviderUserIdentifierTypeTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminDisableProviderForUserRequestRequestTypeDef](./type_defs.md#admindisableproviderforuserrequestrequesttypedef).
+1. See [:material-code-braces: ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `User`:
-  [ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminDisableProviderForUserRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "User": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_disable_provider_for_user(**kwargs)
+```
 
-<a id="admin\_disable\_user"></a>
+1. See [:material-code-braces: AdminDisableProviderForUserRequestRequestTypeDef](./type_defs.md#admindisableproviderforuserrequestrequesttypedef) 
 
-### admin_disable_user
+### admin\_disable\_user
 
 Disables the specified user.
 
-Type annotations for `boto3.client("cognito-idp").admin_disable_user` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_disable_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_disable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_disable_user)
+```python title="Method definition"
+def admin_disable_user(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminDisableUserRequestRequestTypeDef](./type_defs.md#admindisableuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminDisableUserRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_disable_user(**kwargs)
+```
 
-<a id="admin\_enable\_user"></a>
+1. See [:material-code-braces: AdminDisableUserRequestRequestTypeDef](./type_defs.md#admindisableuserrequestrequesttypedef) 
 
-### admin_enable_user
+### admin\_enable\_user
 
 Enables the specified user as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_enable_user` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_enable_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_enable_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_enable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_enable_user)
+```python title="Method definition"
+def admin_enable_user(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminEnableUserRequestRequestTypeDef](./type_defs.md#adminenableuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminEnableUserRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_enable_user(**kwargs)
+```
 
-<a id="admin\_forget\_device"></a>
+1. See [:material-code-braces: AdminEnableUserRequestRequestTypeDef](./type_defs.md#adminenableuserrequestrequesttypedef) 
 
-### admin_forget_device
+### admin\_forget\_device
 
 Forgets the device, as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_forget_device` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_forget_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_forget_device)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_forget_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_forget_device)
+```python title="Method definition"
+def admin_forget_device(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    DeviceKey: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AdminForgetDeviceRequestRequestTypeDef](./type_defs.md#adminforgetdevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `DeviceKey`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminForgetDeviceRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "DeviceKey": ...,
+}
 
-<a id="admin\_get\_device"></a>
+parent.admin_forget_device(**kwargs)
+```
 
-### admin_get_device
+1. See [:material-code-braces: AdminForgetDeviceRequestRequestTypeDef](./type_defs.md#adminforgetdevicerequestrequesttypedef) 
+
+### admin\_get\_device
 
 Gets the device, as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_get_device` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_get_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_device)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_device)
+```python title="Method definition"
+def admin_get_device(
+    self,
+    *,
+    DeviceKey: str,
+    UserPoolId: str,
+    Username: str,
+) -> AdminGetDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AdminGetDeviceRequestRequestTypeDef](./type_defs.md#admingetdevicerequestrequesttypedef).
+1. See [:material-code-braces: AdminGetDeviceResponseTypeDef](./type_defs.md#admingetdeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceKey`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminGetDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceKey": ...,
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns
-[AdminGetDeviceResponseTypeDef](./type_defs.md#admingetdeviceresponsetypedef).
+parent.admin_get_device(**kwargs)
+```
 
-<a id="admin\_get\_user"></a>
+1. See [:material-code-braces: AdminGetDeviceRequestRequestTypeDef](./type_defs.md#admingetdevicerequestrequesttypedef) 
 
-### admin_get_user
+### admin\_get\_user
 
 Gets the specified user by user name in a user pool as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_get_user` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_get_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_get_user)
+```python title="Method definition"
+def admin_get_user(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+) -> AdminGetUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AdminGetUserRequestRequestTypeDef](./type_defs.md#admingetuserrequestrequesttypedef).
+1. See [:material-code-braces: AdminGetUserResponseTypeDef](./type_defs.md#admingetuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminGetUserRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns
-[AdminGetUserResponseTypeDef](./type_defs.md#admingetuserresponsetypedef).
+parent.admin_get_user(**kwargs)
+```
 
-<a id="admin\_initiate\_auth"></a>
+1. See [:material-code-braces: AdminGetUserRequestRequestTypeDef](./type_defs.md#admingetuserrequestrequesttypedef) 
 
-### admin_initiate_auth
+### admin\_initiate\_auth
 
 Initiates the authentication flow, as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_initiate_auth` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_initiate_auth` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_initiate_auth)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_initiate_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_initiate_auth)
+```python title="Method definition"
+def admin_initiate_auth(
+    self,
+    *,
+    UserPoolId: str,
+    ClientId: str,
+    AuthFlow: AuthFlowTypeType,  # (1)
+    AuthParameters: Mapping[str, str] = ...,
+    ClientMetadata: Mapping[str, str] = ...,
+    AnalyticsMetadata: AnalyticsMetadataTypeTypeDef = ...,  # (2)
+    ContextData: ContextDataTypeTypeDef = ...,  # (3)
+) -> AdminInitiateAuthResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[AdminInitiateAuthRequestRequestTypeDef](./type_defs.md#admininitiateauthrequestrequesttypedef).
+1. See [:material-code-brackets: AuthFlowTypeType](./literals.md#authflowtypetype) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef) 
+4. See [:material-code-braces: AdminInitiateAuthResponseTypeDef](./type_defs.md#admininitiateauthresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientId`: `str` *(required)*
-- `AuthFlow`: [AuthFlowTypeType](./literals.md#authflowtypetype) *(required)*
-- `AuthParameters`: `Mapping`\[`str`, `str`\]
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ContextData`:
-  [ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef)
+```python title="Usage example with kwargs"
+kwargs: AdminInitiateAuthRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ClientId": ...,
+    "AuthFlow": ...,
+}
 
-Returns
-[AdminInitiateAuthResponseTypeDef](./type_defs.md#admininitiateauthresponsetypedef).
+parent.admin_initiate_auth(**kwargs)
+```
 
-<a id="admin\_link\_provider\_for\_user"></a>
+1. See [:material-code-braces: AdminInitiateAuthRequestRequestTypeDef](./type_defs.md#admininitiateauthrequestrequesttypedef) 
 
-### admin_link_provider_for_user
+### admin\_link\_provider\_for\_user
 
 Links an existing user account in a user pool (`DestinationUser` ) to an
-identity from an external identity provider (`SourceUser` ) based on a
-specified attribute name and value from the external identity provider.
+identity from an external identity provider (`SourceUser` ) based on a specified
+attribute name and value from the external identity provider.
 
-Type annotations for `boto3.client("cognito-idp").admin_link_provider_for_user`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_link_provider_for_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_link_provider_for_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_link_provider_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_link_provider_for_user)
+```python title="Method definition"
+def admin_link_provider_for_user(
+    self,
+    *,
+    UserPoolId: str,
+    DestinationUser: ProviderUserIdentifierTypeTypeDef,  # (1)
+    SourceUser: ProviderUserIdentifierTypeTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminLinkProviderForUserRequestRequestTypeDef](./type_defs.md#adminlinkproviderforuserrequestrequesttypedef).
+1. See [:material-code-braces: ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef) 
+2. See [:material-code-braces: ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `DestinationUser`:
-  [ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef)
-  *(required)*
-- `SourceUser`:
-  [ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminLinkProviderForUserRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "DestinationUser": ...,
+    "SourceUser": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_link_provider_for_user(**kwargs)
+```
 
-<a id="admin\_list\_devices"></a>
+1. See [:material-code-braces: AdminLinkProviderForUserRequestRequestTypeDef](./type_defs.md#adminlinkproviderforuserrequestrequesttypedef) 
 
-### admin_list_devices
+### admin\_list\_devices
 
 Lists devices, as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_list_devices` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_list_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_devices)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_devices)
+```python title="Method definition"
+def admin_list_devices(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    Limit: int = ...,
+    PaginationToken: str = ...,
+) -> AdminListDevicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AdminListDevicesRequestRequestTypeDef](./type_defs.md#adminlistdevicesrequestrequesttypedef).
+1. See [:material-code-braces: AdminListDevicesResponseTypeDef](./type_defs.md#adminlistdevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `Limit`: `int`
-- `PaginationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: AdminListDevicesRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns
-[AdminListDevicesResponseTypeDef](./type_defs.md#adminlistdevicesresponsetypedef).
+parent.admin_list_devices(**kwargs)
+```
 
-<a id="admin\_list\_groups\_for\_user"></a>
+1. See [:material-code-braces: AdminListDevicesRequestRequestTypeDef](./type_defs.md#adminlistdevicesrequestrequesttypedef) 
 
-### admin_list_groups_for_user
+### admin\_list\_groups\_for\_user
 
 Lists the groups that the user belongs to.
 
-Type annotations for `boto3.client("cognito-idp").admin_list_groups_for_user`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_list_groups_for_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_groups_for_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_groups_for_user)
+```python title="Method definition"
+def admin_list_groups_for_user(
+    self,
+    *,
+    Username: str,
+    UserPoolId: str,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> AdminListGroupsForUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AdminListGroupsForUserRequestRequestTypeDef](./type_defs.md#adminlistgroupsforuserrequestrequesttypedef).
+1. See [:material-code-braces: AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Username`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: AdminListGroupsForUserRequestRequestTypeDef = {  # (1)
+    "Username": ...,
+    "UserPoolId": ...,
+}
 
-Returns
-[AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef).
+parent.admin_list_groups_for_user(**kwargs)
+```
 
-<a id="admin\_list\_user\_auth\_events"></a>
+1. See [:material-code-braces: AdminListGroupsForUserRequestRequestTypeDef](./type_defs.md#adminlistgroupsforuserrequestrequesttypedef) 
 
-### admin_list_user_auth_events
+### admin\_list\_user\_auth\_events
 
 A history of user activity and any risks detected as part of Amazon Cognito
 advanced security.
 
-Type annotations for `boto3.client("cognito-idp").admin_list_user_auth_events`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_list_user_auth_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_user_auth_events)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_list_user_auth_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_list_user_auth_events)
+```python title="Method definition"
+def admin_list_user_auth_events(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> AdminListUserAuthEventsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AdminListUserAuthEventsRequestRequestTypeDef](./type_defs.md#adminlistuserautheventsrequestrequesttypedef).
+1. See [:material-code-braces: AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: AdminListUserAuthEventsRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns
-[AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef).
+parent.admin_list_user_auth_events(**kwargs)
+```
 
-<a id="admin\_remove\_user\_from\_group"></a>
+1. See [:material-code-braces: AdminListUserAuthEventsRequestRequestTypeDef](./type_defs.md#adminlistuserautheventsrequestrequesttypedef) 
 
-### admin_remove_user_from_group
+### admin\_remove\_user\_from\_group
 
 Removes the specified user from the specified group.
 
-Type annotations for `boto3.client("cognito-idp").admin_remove_user_from_group`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_remove_user_from_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_remove_user_from_group)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_remove_user_from_group)
+```python title="Method definition"
+def admin_remove_user_from_group(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    GroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AdminRemoveUserFromGroupRequestRequestTypeDef](./type_defs.md#adminremoveuserfromgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `GroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminRemoveUserFromGroupRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "GroupName": ...,
+}
 
-<a id="admin\_reset\_user\_password"></a>
+parent.admin_remove_user_from_group(**kwargs)
+```
 
-### admin_reset_user_password
+1. See [:material-code-braces: AdminRemoveUserFromGroupRequestRequestTypeDef](./type_defs.md#adminremoveuserfromgrouprequestrequesttypedef) 
+
+### admin\_reset\_user\_password
 
 Resets the specified user's password in a user pool as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_reset_user_password`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_reset_user_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_reset_user_password)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_reset_user_password)
+```python title="Method definition"
+def admin_reset_user_password(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    ClientMetadata: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminResetUserPasswordRequestRequestTypeDef](./type_defs.md#adminresetuserpasswordrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: AdminResetUserPasswordRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_reset_user_password(**kwargs)
+```
 
-<a id="admin\_respond\_to\_auth\_challenge"></a>
+1. See [:material-code-braces: AdminResetUserPasswordRequestRequestTypeDef](./type_defs.md#adminresetuserpasswordrequestrequesttypedef) 
 
-### admin_respond_to_auth_challenge
+### admin\_respond\_to\_auth\_challenge
 
 Responds to an authentication challenge, as an administrator.
 
-Type annotations for
-`boto3.client("cognito-idp").admin_respond_to_auth_challenge` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_respond_to_auth_challenge` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_respond_to_auth_challenge)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_respond_to_auth_challenge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_respond_to_auth_challenge)
+```python title="Method definition"
+def admin_respond_to_auth_challenge(
+    self,
+    *,
+    UserPoolId: str,
+    ClientId: str,
+    ChallengeName: ChallengeNameTypeType,  # (1)
+    ChallengeResponses: Mapping[str, str] = ...,
+    Session: str = ...,
+    AnalyticsMetadata: AnalyticsMetadataTypeTypeDef = ...,  # (2)
+    ContextData: ContextDataTypeTypeDef = ...,  # (3)
+    ClientMetadata: Mapping[str, str] = ...,
+) -> AdminRespondToAuthChallengeResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[AdminRespondToAuthChallengeRequestRequestTypeDef](./type_defs.md#adminrespondtoauthchallengerequestrequesttypedef).
+1. See [:material-code-brackets: ChallengeNameTypeType](./literals.md#challengenametypetype) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef) 
+4. See [:material-code-braces: AdminRespondToAuthChallengeResponseTypeDef](./type_defs.md#adminrespondtoauthchallengeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientId`: `str` *(required)*
-- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
-  *(required)*
-- `ChallengeResponses`: `Mapping`\[`str`, `str`\]
-- `Session`: `str`
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ContextData`:
-  [ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: AdminRespondToAuthChallengeRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ClientId": ...,
+    "ChallengeName": ...,
+}
 
-Returns
-[AdminRespondToAuthChallengeResponseTypeDef](./type_defs.md#adminrespondtoauthchallengeresponsetypedef).
+parent.admin_respond_to_auth_challenge(**kwargs)
+```
 
-<a id="admin\_set\_user\_mfa\_preference"></a>
+1. See [:material-code-braces: AdminRespondToAuthChallengeRequestRequestTypeDef](./type_defs.md#adminrespondtoauthchallengerequestrequesttypedef) 
 
-### admin_set_user_mfa_preference
+### admin\_set\_user\_mfa\_preference
 
 The user's multi-factor authentication (MFA) preference, including which MFA
 options are activated, and if any are preferred.
 
-Type annotations for
-`boto3.client("cognito-idp").admin_set_user_mfa_preference` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_set_user_mfa_preference` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_mfa_preference)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_set_user_mfa_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_mfa_preference)
+```python title="Method definition"
+def admin_set_user_mfa_preference(
+    self,
+    *,
+    Username: str,
+    UserPoolId: str,
+    SMSMfaSettings: SMSMfaSettingsTypeTypeDef = ...,  # (1)
+    SoftwareTokenMfaSettings: SoftwareTokenMfaSettingsTypeTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminSetUserMFAPreferenceRequestRequestTypeDef](./type_defs.md#adminsetusermfapreferencerequestrequesttypedef).
+1. See [:material-code-braces: SMSMfaSettingsTypeTypeDef](./type_defs.md#smsmfasettingstypetypedef) 
+2. See [:material-code-braces: SoftwareTokenMfaSettingsTypeTypeDef](./type_defs.md#softwaretokenmfasettingstypetypedef) 
 
-Keyword-only arguments:
 
-- `Username`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `SMSMfaSettings`:
-  [SMSMfaSettingsTypeTypeDef](./type_defs.md#smsmfasettingstypetypedef)
-- `SoftwareTokenMfaSettings`:
-  [SoftwareTokenMfaSettingsTypeTypeDef](./type_defs.md#softwaretokenmfasettingstypetypedef)
+```python title="Usage example with kwargs"
+kwargs: AdminSetUserMFAPreferenceRequestRequestTypeDef = {  # (1)
+    "Username": ...,
+    "UserPoolId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_set_user_mfa_preference(**kwargs)
+```
 
-<a id="admin\_set\_user\_password"></a>
+1. See [:material-code-braces: AdminSetUserMFAPreferenceRequestRequestTypeDef](./type_defs.md#adminsetusermfapreferencerequestrequesttypedef) 
 
-### admin_set_user_password
+### admin\_set\_user\_password
 
 Sets the specified user's password in a user pool as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_set_user_password`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_set_user_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_password)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_set_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_password)
+```python title="Method definition"
+def admin_set_user_password(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    Password: str,
+    Permanent: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminSetUserPasswordRequestRequestTypeDef](./type_defs.md#adminsetuserpasswordrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `Permanent`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AdminSetUserPasswordRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "Password": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_set_user_password(**kwargs)
+```
 
-<a id="admin\_set\_user\_settings"></a>
+1. See [:material-code-braces: AdminSetUserPasswordRequestRequestTypeDef](./type_defs.md#adminsetuserpasswordrequestrequesttypedef) 
 
-### admin_set_user_settings
+### admin\_set\_user\_settings
 
 *This action is no longer supported.* You can use it to configure only SMS MFA.
 
-Type annotations for `boto3.client("cognito-idp").admin_set_user_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_set_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_settings)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_set_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_set_user_settings)
+```python title="Method definition"
+def admin_set_user_settings(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    MFAOptions: Sequence[MFAOptionTypeTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminSetUserSettingsRequestRequestTypeDef](./type_defs.md#adminsetusersettingsrequestrequesttypedef).
+1. See [:material-code-braces: MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `MFAOptions`:
-  `Sequence`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminSetUserSettingsRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "MFAOptions": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_set_user_settings(**kwargs)
+```
 
-<a id="admin\_update\_auth\_event\_feedback"></a>
+1. See [:material-code-braces: AdminSetUserSettingsRequestRequestTypeDef](./type_defs.md#adminsetusersettingsrequestrequesttypedef) 
 
-### admin_update_auth_event_feedback
+### admin\_update\_auth\_event\_feedback
 
 Provides feedback for an authentication event indicating if it was from a valid
 user.
 
-Type annotations for
-`boto3.client("cognito-idp").admin_update_auth_event_feedback` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_update_auth_event_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_auth_event_feedback)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_update_auth_event_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_auth_event_feedback)
+```python title="Method definition"
+def admin_update_auth_event_feedback(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    EventId: str,
+    FeedbackValue: FeedbackValueTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminUpdateAuthEventFeedbackRequestRequestTypeDef](./type_defs.md#adminupdateautheventfeedbackrequestrequesttypedef).
+1. See [:material-code-brackets: FeedbackValueTypeType](./literals.md#feedbackvaluetypetype) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `EventId`: `str` *(required)*
-- `FeedbackValue`: [FeedbackValueTypeType](./literals.md#feedbackvaluetypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminUpdateAuthEventFeedbackRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "EventId": ...,
+    "FeedbackValue": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_update_auth_event_feedback(**kwargs)
+```
 
-<a id="admin\_update\_device\_status"></a>
+1. See [:material-code-braces: AdminUpdateAuthEventFeedbackRequestRequestTypeDef](./type_defs.md#adminupdateautheventfeedbackrequestrequesttypedef) 
 
-### admin_update_device_status
+### admin\_update\_device\_status
 
 Updates the device status as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_update_device_status`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_update_device_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_device_status)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_update_device_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_device_status)
+```python title="Method definition"
+def admin_update_device_status(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    DeviceKey: str,
+    DeviceRememberedStatus: DeviceRememberedStatusTypeType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminUpdateDeviceStatusRequestRequestTypeDef](./type_defs.md#adminupdatedevicestatusrequestrequesttypedef).
+1. See [:material-code-brackets: DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `DeviceKey`: `str` *(required)*
-- `DeviceRememberedStatus`:
-  [DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype)
+```python title="Usage example with kwargs"
+kwargs: AdminUpdateDeviceStatusRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "DeviceKey": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_update_device_status(**kwargs)
+```
 
-<a id="admin\_update\_user\_attributes"></a>
+1. See [:material-code-braces: AdminUpdateDeviceStatusRequestRequestTypeDef](./type_defs.md#adminupdatedevicestatusrequestrequesttypedef) 
 
-### admin_update_user_attributes
+### admin\_update\_user\_attributes
 
 Updates the specified user's attributes, including developer attributes, as an
 administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_update_user_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_update_user_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_user_attributes)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_update_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_update_user_attributes)
+```python title="Method definition"
+def admin_update_user_attributes(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    UserAttributes: Sequence[AttributeTypeTypeDef],  # (1)
+    ClientMetadata: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminUpdateUserAttributesRequestRequestTypeDef](./type_defs.md#adminupdateuserattributesrequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `UserAttributes`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-  *(required)*
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: AdminUpdateUserAttributesRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "UserAttributes": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_update_user_attributes(**kwargs)
+```
 
-<a id="admin\_user\_global\_sign\_out"></a>
+1. See [:material-code-braces: AdminUpdateUserAttributesRequestRequestTypeDef](./type_defs.md#adminupdateuserattributesrequestrequesttypedef) 
 
-### admin_user_global_sign_out
+### admin\_user\_global\_sign\_out
 
 Signs out users from all devices, as an administrator.
 
-Type annotations for `boto3.client("cognito-idp").admin_user_global_sign_out`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").admin_user_global_sign_out` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_user_global_sign_out)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.admin_user_global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.admin_user_global_sign_out)
+```python title="Method definition"
+def admin_user_global_sign_out(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AdminUserGlobalSignOutRequestRequestTypeDef](./type_defs.md#adminuserglobalsignoutrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdminUserGlobalSignOutRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.admin_user_global_sign_out(**kwargs)
+```
 
-<a id="associate\_software\_token"></a>
+1. See [:material-code-braces: AdminUserGlobalSignOutRequestRequestTypeDef](./type_defs.md#adminuserglobalsignoutrequestrequesttypedef) 
 
-### associate_software_token
+### associate\_software\_token
 
 Returns a unique generated shared secret key code for the user account.
 
-Type annotations for `boto3.client("cognito-idp").associate_software_token`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").associate_software_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.associate_software_token)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.associate_software_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.associate_software_token)
+```python title="Method definition"
+def associate_software_token(
+    self,
+    *,
+    AccessToken: str = ...,
+    Session: str = ...,
+) -> AssociateSoftwareTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateSoftwareTokenRequestRequestTypeDef](./type_defs.md#associatesoftwaretokenrequestrequesttypedef).
+1. See [:material-code-braces: AssociateSoftwareTokenResponseTypeDef](./type_defs.md#associatesoftwaretokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccessToken`: `str`
-- `Session`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateSoftwareTokenRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+}
 
-Returns
-[AssociateSoftwareTokenResponseTypeDef](./type_defs.md#associatesoftwaretokenresponsetypedef).
+parent.associate_software_token(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateSoftwareTokenRequestRequestTypeDef](./type_defs.md#associatesoftwaretokenrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cognito-idp").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.can_paginate)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="change\_password"></a>
-
-### change_password
+### change\_password
 
 Changes the password for a specified user in a user pool.
 
-Type annotations for `boto3.client("cognito-idp").change_password` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").change_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.change_password)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.change_password)
+```python title="Method definition"
+def change_password(
+    self,
+    *,
+    PreviousPassword: str,
+    ProposedPassword: str,
+    AccessToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ChangePasswordRequestRequestTypeDef](./type_defs.md#changepasswordrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PreviousPassword`: `str` *(required)*
-- `ProposedPassword`: `str` *(required)*
-- `AccessToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ChangePasswordRequestRequestTypeDef = {  # (1)
+    "PreviousPassword": ...,
+    "ProposedPassword": ...,
+    "AccessToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.change_password(**kwargs)
+```
 
-<a id="confirm\_device"></a>
+1. See [:material-code-braces: ChangePasswordRequestRequestTypeDef](./type_defs.md#changepasswordrequestrequesttypedef) 
 
-### confirm_device
+### confirm\_device
 
 Confirms tracking of the device.
 
-Type annotations for `boto3.client("cognito-idp").confirm_device` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").confirm_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_device)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.confirm_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_device)
+```python title="Method definition"
+def confirm_device(
+    self,
+    *,
+    AccessToken: str,
+    DeviceKey: str,
+    DeviceSecretVerifierConfig: DeviceSecretVerifierConfigTypeTypeDef = ...,  # (1)
+    DeviceName: str = ...,
+) -> ConfirmDeviceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ConfirmDeviceRequestRequestTypeDef](./type_defs.md#confirmdevicerequestrequesttypedef).
+1. See [:material-code-braces: DeviceSecretVerifierConfigTypeTypeDef](./type_defs.md#devicesecretverifierconfigtypetypedef) 
+2. See [:material-code-braces: ConfirmDeviceResponseTypeDef](./type_defs.md#confirmdeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
-- `DeviceKey`: `str` *(required)*
-- `DeviceSecretVerifierConfig`:
-  [DeviceSecretVerifierConfigTypeTypeDef](./type_defs.md#devicesecretverifierconfigtypetypedef)
-- `DeviceName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ConfirmDeviceRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+    "DeviceKey": ...,
+}
 
-Returns
-[ConfirmDeviceResponseTypeDef](./type_defs.md#confirmdeviceresponsetypedef).
+parent.confirm_device(**kwargs)
+```
 
-<a id="confirm\_forgot\_password"></a>
+1. See [:material-code-braces: ConfirmDeviceRequestRequestTypeDef](./type_defs.md#confirmdevicerequestrequesttypedef) 
 
-### confirm_forgot_password
+### confirm\_forgot\_password
 
 Allows a user to enter a confirmation code to reset a forgotten password.
 
-Type annotations for `boto3.client("cognito-idp").confirm_forgot_password`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").confirm_forgot_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_forgot_password)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.confirm_forgot_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_forgot_password)
+```python title="Method definition"
+def confirm_forgot_password(
+    self,
+    *,
+    ClientId: str,
+    Username: str,
+    ConfirmationCode: str,
+    Password: str,
+    SecretHash: str = ...,
+    AnalyticsMetadata: AnalyticsMetadataTypeTypeDef = ...,  # (1)
+    UserContextData: UserContextDataTypeTypeDef = ...,  # (2)
+    ClientMetadata: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ConfirmForgotPasswordRequestRequestTypeDef](./type_defs.md#confirmforgotpasswordrequestrequesttypedef).
+1. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+2. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
 
-Keyword-only arguments:
 
-- `ClientId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `ConfirmationCode`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `SecretHash`: `str`
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ConfirmForgotPasswordRequestRequestTypeDef = {  # (1)
+    "ClientId": ...,
+    "Username": ...,
+    "ConfirmationCode": ...,
+    "Password": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.confirm_forgot_password(**kwargs)
+```
 
-<a id="confirm\_sign\_up"></a>
+1. See [:material-code-braces: ConfirmForgotPasswordRequestRequestTypeDef](./type_defs.md#confirmforgotpasswordrequestrequesttypedef) 
 
-### confirm_sign_up
+### confirm\_sign\_up
 
 Confirms registration of a user and handles the existing alias from a previous
 user.
 
-Type annotations for `boto3.client("cognito-idp").confirm_sign_up` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").confirm_sign_up` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_sign_up)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.confirm_sign_up](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.confirm_sign_up)
+```python title="Method definition"
+def confirm_sign_up(
+    self,
+    *,
+    ClientId: str,
+    Username: str,
+    ConfirmationCode: str,
+    SecretHash: str = ...,
+    ForceAliasCreation: bool = ...,
+    AnalyticsMetadata: AnalyticsMetadataTypeTypeDef = ...,  # (1)
+    UserContextData: UserContextDataTypeTypeDef = ...,  # (2)
+    ClientMetadata: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ConfirmSignUpRequestRequestTypeDef](./type_defs.md#confirmsignuprequestrequesttypedef).
+1. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+2. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
 
-Keyword-only arguments:
 
-- `ClientId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `ConfirmationCode`: `str` *(required)*
-- `SecretHash`: `str`
-- `ForceAliasCreation`: `bool`
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ConfirmSignUpRequestRequestTypeDef = {  # (1)
+    "ClientId": ...,
+    "Username": ...,
+    "ConfirmationCode": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.confirm_sign_up(**kwargs)
+```
 
-<a id="create\_group"></a>
+1. See [:material-code-braces: ConfirmSignUpRequestRequestTypeDef](./type_defs.md#confirmsignuprequestrequesttypedef) 
 
-### create_group
+### create\_group
 
 Creates a new group in the specified user pool.
 
-Type annotations for `boto3.client("cognito-idp").create_group` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").create_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_group)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_group)
+```python title="Method definition"
+def create_group(
+    self,
+    *,
+    GroupName: str,
+    UserPoolId: str,
+    Description: str = ...,
+    RoleArn: str = ...,
+    Precedence: int = ...,
+) -> CreateGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
+1. See [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `Description`: `str`
-- `RoleArn`: `str`
-- `Precedence`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "UserPoolId": ...,
+}
 
-Returns
-[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+parent.create_group(**kwargs)
+```
 
-<a id="create\_identity\_provider"></a>
+1. See [:material-code-braces: CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef) 
 
-### create_identity_provider
+### create\_identity\_provider
 
 Creates an identity provider for a user pool.
 
-Type annotations for `boto3.client("cognito-idp").create_identity_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").create_identity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_identity_provider)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.create_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_identity_provider)
+```python title="Method definition"
+def create_identity_provider(
+    self,
+    *,
+    UserPoolId: str,
+    ProviderName: str,
+    ProviderType: IdentityProviderTypeTypeType,  # (1)
+    ProviderDetails: Mapping[str, str],
+    AttributeMapping: Mapping[str, str] = ...,
+    IdpIdentifiers: Sequence[str] = ...,
+) -> CreateIdentityProviderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateIdentityProviderRequestRequestTypeDef](./type_defs.md#createidentityproviderrequestrequesttypedef).
+1. See [:material-code-brackets: IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype) 
+2. See [:material-code-braces: CreateIdentityProviderResponseTypeDef](./type_defs.md#createidentityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ProviderName`: `str` *(required)*
-- `ProviderType`:
-  [IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype)
-  *(required)*
-- `ProviderDetails`: `Mapping`\[`str`, `str`\] *(required)*
-- `AttributeMapping`: `Mapping`\[`str`, `str`\]
-- `IdpIdentifiers`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateIdentityProviderRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ProviderName": ...,
+    "ProviderType": ...,
+    "ProviderDetails": ...,
+}
 
-Returns
-[CreateIdentityProviderResponseTypeDef](./type_defs.md#createidentityproviderresponsetypedef).
+parent.create_identity_provider(**kwargs)
+```
 
-<a id="create\_resource\_server"></a>
+1. See [:material-code-braces: CreateIdentityProviderRequestRequestTypeDef](./type_defs.md#createidentityproviderrequestrequesttypedef) 
 
-### create_resource_server
+### create\_resource\_server
 
 Creates a new OAuth2.0 resource server and defines custom scopes within it.
 
-Type annotations for `boto3.client("cognito-idp").create_resource_server`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").create_resource_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_resource_server)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.create_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_resource_server)
+```python title="Method definition"
+def create_resource_server(
+    self,
+    *,
+    UserPoolId: str,
+    Identifier: str,
+    Name: str,
+    Scopes: Sequence[ResourceServerScopeTypeTypeDef] = ...,  # (1)
+) -> CreateResourceServerResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourceServerRequestRequestTypeDef](./type_defs.md#createresourceserverrequestrequesttypedef).
+1. See [:material-code-braces: ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef) 
+2. See [:material-code-braces: CreateResourceServerResponseTypeDef](./type_defs.md#createresourceserverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Identifier`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Scopes`:
-  `Sequence`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateResourceServerRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Identifier": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateResourceServerResponseTypeDef](./type_defs.md#createresourceserverresponsetypedef).
+parent.create_resource_server(**kwargs)
+```
 
-<a id="create\_user\_import\_job"></a>
+1. See [:material-code-braces: CreateResourceServerRequestRequestTypeDef](./type_defs.md#createresourceserverrequestrequesttypedef) 
 
-### create_user_import_job
+### create\_user\_import\_job
 
 Creates the user import job.
 
-Type annotations for `boto3.client("cognito-idp").create_user_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").create_user_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_import_job)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.create_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_import_job)
+```python title="Method definition"
+def create_user_import_job(
+    self,
+    *,
+    JobName: str,
+    UserPoolId: str,
+    CloudWatchLogsRoleArn: str,
+) -> CreateUserImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserImportJobRequestRequestTypeDef](./type_defs.md#createuserimportjobrequestrequesttypedef).
+1. See [:material-code-braces: CreateUserImportJobResponseTypeDef](./type_defs.md#createuserimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `CloudWatchLogsRoleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateUserImportJobRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+    "UserPoolId": ...,
+    "CloudWatchLogsRoleArn": ...,
+}
 
-Returns
-[CreateUserImportJobResponseTypeDef](./type_defs.md#createuserimportjobresponsetypedef).
+parent.create_user_import_job(**kwargs)
+```
 
-<a id="create\_user\_pool"></a>
+1. See [:material-code-braces: CreateUserImportJobRequestRequestTypeDef](./type_defs.md#createuserimportjobrequestrequesttypedef) 
 
-### create_user_pool
+### create\_user\_pool
 
 Creates a new Amazon Cognito user pool and sets the password policy for the
 pool.
 
-Type annotations for `boto3.client("cognito-idp").create_user_pool` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").create_user_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.create_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool)
+```python title="Method definition"
+def create_user_pool(
+    self,
+    *,
+    PoolName: str,
+    Policies: UserPoolPolicyTypeTypeDef = ...,  # (1)
+    LambdaConfig: LambdaConfigTypeTypeDef = ...,  # (2)
+    AutoVerifiedAttributes: Sequence[VerifiedAttributeTypeType] = ...,  # (3)
+    AliasAttributes: Sequence[AliasAttributeTypeType] = ...,  # (4)
+    UsernameAttributes: Sequence[UsernameAttributeTypeType] = ...,  # (5)
+    SmsVerificationMessage: str = ...,
+    EmailVerificationMessage: str = ...,
+    EmailVerificationSubject: str = ...,
+    VerificationMessageTemplate: VerificationMessageTemplateTypeTypeDef = ...,  # (6)
+    SmsAuthenticationMessage: str = ...,
+    MfaConfiguration: UserPoolMfaTypeType = ...,  # (7)
+    DeviceConfiguration: DeviceConfigurationTypeTypeDef = ...,  # (8)
+    EmailConfiguration: EmailConfigurationTypeTypeDef = ...,  # (9)
+    SmsConfiguration: SmsConfigurationTypeTypeDef = ...,  # (10)
+    UserPoolTags: Mapping[str, str] = ...,
+    AdminCreateUserConfig: AdminCreateUserConfigTypeTypeDef = ...,  # (11)
+    Schema: Sequence[SchemaAttributeTypeTypeDef] = ...,  # (12)
+    UserPoolAddOns: UserPoolAddOnsTypeTypeDef = ...,  # (13)
+    UsernameConfiguration: UsernameConfigurationTypeTypeDef = ...,  # (14)
+    AccountRecoverySetting: AccountRecoverySettingTypeTypeDef = ...,  # (15)
+) -> CreateUserPoolResponseTypeDef:  # (16)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserPoolRequestRequestTypeDef](./type_defs.md#createuserpoolrequestrequesttypedef).
+1. See [:material-code-braces: UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef) 
+2. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
+3. See [:material-code-brackets: VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype) 
+4. See [:material-code-brackets: AliasAttributeTypeType](./literals.md#aliasattributetypetype) 
+5. See [:material-code-brackets: UsernameAttributeTypeType](./literals.md#usernameattributetypetype) 
+6. See [:material-code-braces: VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef) 
+7. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+8. See [:material-code-braces: DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef) 
+9. See [:material-code-braces: EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef) 
+10. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
+11. See [:material-code-braces: AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef) 
+12. See [:material-code-braces: SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef) 
+13. See [:material-code-braces: UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef) 
+14. See [:material-code-braces: UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef) 
+15. See [:material-code-braces: AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef) 
+16. See [:material-code-braces: CreateUserPoolResponseTypeDef](./type_defs.md#createuserpoolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PoolName`: `str` *(required)*
-- `Policies`:
-  [UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef)
-- `LambdaConfig`:
-  [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
-- `AutoVerifiedAttributes`:
-  `Sequence`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
-- `AliasAttributes`:
-  `Sequence`\[[AliasAttributeTypeType](./literals.md#aliasattributetypetype)\]
-- `UsernameAttributes`:
-  `Sequence`\[[UsernameAttributeTypeType](./literals.md#usernameattributetypetype)\]
-- `SmsVerificationMessage`: `str`
-- `EmailVerificationMessage`: `str`
-- `EmailVerificationSubject`: `str`
-- `VerificationMessageTemplate`:
-  [VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef)
-- `SmsAuthenticationMessage`: `str`
-- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
-- `DeviceConfiguration`:
-  [DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef)
-- `EmailConfiguration`:
-  [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
-- `SmsConfiguration`:
-  [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-- `UserPoolTags`: `Mapping`\[`str`, `str`\]
-- `AdminCreateUserConfig`:
-  [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
-- `Schema`:
-  `Sequence`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
-- `UserPoolAddOns`:
-  [UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef)
-- `UsernameConfiguration`:
-  [UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef)
-- `AccountRecoverySetting`:
-  [AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateUserPoolRequestRequestTypeDef = {  # (1)
+    "PoolName": ...,
+}
 
-Returns
-[CreateUserPoolResponseTypeDef](./type_defs.md#createuserpoolresponsetypedef).
+parent.create_user_pool(**kwargs)
+```
 
-<a id="create\_user\_pool\_client"></a>
+1. See [:material-code-braces: CreateUserPoolRequestRequestTypeDef](./type_defs.md#createuserpoolrequestrequesttypedef) 
 
-### create_user_pool_client
+### create\_user\_pool\_client
 
 Creates the user pool client.
 
-Type annotations for `boto3.client("cognito-idp").create_user_pool_client`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").create_user_pool_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_client)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.create_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_client)
+```python title="Method definition"
+def create_user_pool_client(
+    self,
+    *,
+    UserPoolId: str,
+    ClientName: str,
+    GenerateSecret: bool = ...,
+    RefreshTokenValidity: int = ...,
+    AccessTokenValidity: int = ...,
+    IdTokenValidity: int = ...,
+    TokenValidityUnits: TokenValidityUnitsTypeTypeDef = ...,  # (1)
+    ReadAttributes: Sequence[str] = ...,
+    WriteAttributes: Sequence[str] = ...,
+    ExplicitAuthFlows: Sequence[ExplicitAuthFlowsTypeType] = ...,  # (2)
+    SupportedIdentityProviders: Sequence[str] = ...,
+    CallbackURLs: Sequence[str] = ...,
+    LogoutURLs: Sequence[str] = ...,
+    DefaultRedirectURI: str = ...,
+    AllowedOAuthFlows: Sequence[OAuthFlowTypeType] = ...,  # (3)
+    AllowedOAuthScopes: Sequence[str] = ...,
+    AllowedOAuthFlowsUserPoolClient: bool = ...,
+    AnalyticsConfiguration: AnalyticsConfigurationTypeTypeDef = ...,  # (4)
+    PreventUserExistenceErrors: PreventUserExistenceErrorTypesType = ...,  # (5)
+    EnableTokenRevocation: bool = ...,
+) -> CreateUserPoolClientResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserPoolClientRequestRequestTypeDef](./type_defs.md#createuserpoolclientrequestrequesttypedef).
+1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 
+2. See [:material-code-brackets: ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype) 
+3. See [:material-code-brackets: OAuthFlowTypeType](./literals.md#oauthflowtypetype) 
+4. See [:material-code-braces: AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef) 
+5. See [:material-code-brackets: PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype) 
+6. See [:material-code-braces: CreateUserPoolClientResponseTypeDef](./type_defs.md#createuserpoolclientresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientName`: `str` *(required)*
-- `GenerateSecret`: `bool`
-- `RefreshTokenValidity`: `int`
-- `AccessTokenValidity`: `int`
-- `IdTokenValidity`: `int`
-- `TokenValidityUnits`:
-  [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
-- `ReadAttributes`: `Sequence`\[`str`\]
-- `WriteAttributes`: `Sequence`\[`str`\]
-- `ExplicitAuthFlows`:
-  `Sequence`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
-- `SupportedIdentityProviders`: `Sequence`\[`str`\]
-- `CallbackURLs`: `Sequence`\[`str`\]
-- `LogoutURLs`: `Sequence`\[`str`\]
-- `DefaultRedirectURI`: `str`
-- `AllowedOAuthFlows`:
-  `Sequence`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
-- `AllowedOAuthScopes`: `Sequence`\[`str`\]
-- `AllowedOAuthFlowsUserPoolClient`: `bool`
-- `AnalyticsConfiguration`:
-  [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
-- `PreventUserExistenceErrors`:
-  [PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype)
-- `EnableTokenRevocation`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateUserPoolClientRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ClientName": ...,
+}
 
-Returns
-[CreateUserPoolClientResponseTypeDef](./type_defs.md#createuserpoolclientresponsetypedef).
+parent.create_user_pool_client(**kwargs)
+```
 
-<a id="create\_user\_pool\_domain"></a>
+1. See [:material-code-braces: CreateUserPoolClientRequestRequestTypeDef](./type_defs.md#createuserpoolclientrequestrequesttypedef) 
 
-### create_user_pool_domain
+### create\_user\_pool\_domain
 
 Creates a new domain for a user pool.
 
-Type annotations for `boto3.client("cognito-idp").create_user_pool_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").create_user_pool_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_domain)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.create_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.create_user_pool_domain)
+```python title="Method definition"
+def create_user_pool_domain(
+    self,
+    *,
+    Domain: str,
+    UserPoolId: str,
+    CustomDomainConfig: CustomDomainConfigTypeTypeDef = ...,  # (1)
+) -> CreateUserPoolDomainResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserPoolDomainRequestRequestTypeDef](./type_defs.md#createuserpooldomainrequestrequesttypedef).
+1. See [:material-code-braces: CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef) 
+2. See [:material-code-braces: CreateUserPoolDomainResponseTypeDef](./type_defs.md#createuserpooldomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Domain`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `CustomDomainConfig`:
-  [CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateUserPoolDomainRequestRequestTypeDef = {  # (1)
+    "Domain": ...,
+    "UserPoolId": ...,
+}
 
-Returns
-[CreateUserPoolDomainResponseTypeDef](./type_defs.md#createuserpooldomainresponsetypedef).
+parent.create_user_pool_domain(**kwargs)
+```
 
-<a id="delete\_group"></a>
+1. See [:material-code-braces: CreateUserPoolDomainRequestRequestTypeDef](./type_defs.md#createuserpooldomainrequestrequesttypedef) 
 
-### delete_group
+### delete\_group
 
 Deletes a group.
 
-Type annotations for `boto3.client("cognito-idp").delete_group` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").delete_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_group)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_group)
+```python title="Method definition"
+def delete_group(
+    self,
+    *,
+    GroupName: str,
+    UserPoolId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "UserPoolId": ...,
+}
 
-<a id="delete\_identity\_provider"></a>
+parent.delete_group(**kwargs)
+```
 
-### delete_identity_provider
+1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
+
+### delete\_identity\_provider
 
 Deletes an identity provider for a user pool.
 
-Type annotations for `boto3.client("cognito-idp").delete_identity_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").delete_identity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_identity_provider)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_identity_provider)
+```python title="Method definition"
+def delete_identity_provider(
+    self,
+    *,
+    UserPoolId: str,
+    ProviderName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIdentityProviderRequestRequestTypeDef](./type_defs.md#deleteidentityproviderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ProviderName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIdentityProviderRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ProviderName": ...,
+}
 
-<a id="delete\_resource\_server"></a>
+parent.delete_identity_provider(**kwargs)
+```
 
-### delete_resource_server
+1. See [:material-code-braces: DeleteIdentityProviderRequestRequestTypeDef](./type_defs.md#deleteidentityproviderrequestrequesttypedef) 
+
+### delete\_resource\_server
 
 Deletes a resource server.
 
-Type annotations for `boto3.client("cognito-idp").delete_resource_server`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").delete_resource_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_resource_server)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_resource_server)
+```python title="Method definition"
+def delete_resource_server(
+    self,
+    *,
+    UserPoolId: str,
+    Identifier: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourceServerRequestRequestTypeDef](./type_defs.md#deleteresourceserverrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Identifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResourceServerRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Identifier": ...,
+}
 
-<a id="delete\_user"></a>
+parent.delete_resource_server(**kwargs)
+```
 
-### delete_user
+1. See [:material-code-braces: DeleteResourceServerRequestRequestTypeDef](./type_defs.md#deleteresourceserverrequestrequesttypedef) 
+
+### delete\_user
 
 Allows a user to delete himself or herself.
 
-Type annotations for `boto3.client("cognito-idp").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    AccessToken: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+}
 
-<a id="delete\_user\_attributes"></a>
+parent.delete_user(**kwargs)
+```
 
-### delete_user_attributes
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
+
+### delete\_user\_attributes
 
 Deletes the attributes for a user.
 
-Type annotations for `boto3.client("cognito-idp").delete_user_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").delete_user_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_attributes)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_attributes)
+```python title="Method definition"
+def delete_user_attributes(
+    self,
+    *,
+    UserAttributeNames: Sequence[str],
+    AccessToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserAttributesRequestRequestTypeDef](./type_defs.md#deleteuserattributesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserAttributeNames`: `Sequence`\[`str`\] *(required)*
-- `AccessToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserAttributesRequestRequestTypeDef = {  # (1)
+    "UserAttributeNames": ...,
+    "AccessToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_user_attributes(**kwargs)
+```
 
-<a id="delete\_user\_pool"></a>
+1. See [:material-code-braces: DeleteUserAttributesRequestRequestTypeDef](./type_defs.md#deleteuserattributesrequestrequesttypedef) 
 
-### delete_user_pool
+### delete\_user\_pool
 
 Deletes the specified Amazon Cognito user pool.
 
-Type annotations for `boto3.client("cognito-idp").delete_user_pool` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").delete_user_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool)
+```python title="Method definition"
+def delete_user_pool(
+    self,
+    *,
+    UserPoolId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserPoolRequestRequestTypeDef](./type_defs.md#deleteuserpoolrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserPoolRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-<a id="delete\_user\_pool\_client"></a>
+parent.delete_user_pool(**kwargs)
+```
 
-### delete_user_pool_client
+1. See [:material-code-braces: DeleteUserPoolRequestRequestTypeDef](./type_defs.md#deleteuserpoolrequestrequesttypedef) 
+
+### delete\_user\_pool\_client
 
 Allows the developer to delete the user pool client.
 
-Type annotations for `boto3.client("cognito-idp").delete_user_pool_client`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").delete_user_pool_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_client)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_client)
+```python title="Method definition"
+def delete_user_pool_client(
+    self,
+    *,
+    UserPoolId: str,
+    ClientId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserPoolClientRequestRequestTypeDef](./type_defs.md#deleteuserpoolclientrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserPoolClientRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ClientId": ...,
+}
 
-<a id="delete\_user\_pool\_domain"></a>
+parent.delete_user_pool_client(**kwargs)
+```
 
-### delete_user_pool_domain
+1. See [:material-code-braces: DeleteUserPoolClientRequestRequestTypeDef](./type_defs.md#deleteuserpoolclientrequestrequesttypedef) 
+
+### delete\_user\_pool\_domain
 
 Deletes a domain for a user pool.
 
-Type annotations for `boto3.client("cognito-idp").delete_user_pool_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").delete_user_pool_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_domain)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.delete_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.delete_user_pool_domain)
+```python title="Method definition"
+def delete_user_pool_domain(
+    self,
+    *,
+    Domain: str,
+    UserPoolId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserPoolDomainRequestRequestTypeDef](./type_defs.md#deleteuserpooldomainrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Domain`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserPoolDomainRequestRequestTypeDef = {  # (1)
+    "Domain": ...,
+    "UserPoolId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_user_pool_domain(**kwargs)
+```
 
-<a id="describe\_identity\_provider"></a>
+1. See [:material-code-braces: DeleteUserPoolDomainRequestRequestTypeDef](./type_defs.md#deleteuserpooldomainrequestrequesttypedef) 
 
-### describe_identity_provider
+### describe\_identity\_provider
 
 Gets information about a specific identity provider.
 
-Type annotations for `boto3.client("cognito-idp").describe_identity_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").describe_identity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_identity_provider)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_identity_provider)
+```python title="Method definition"
+def describe_identity_provider(
+    self,
+    *,
+    UserPoolId: str,
+    ProviderName: str,
+) -> DescribeIdentityProviderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIdentityProviderRequestRequestTypeDef](./type_defs.md#describeidentityproviderrequestrequesttypedef).
+1. See [:material-code-braces: DescribeIdentityProviderResponseTypeDef](./type_defs.md#describeidentityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ProviderName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIdentityProviderRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ProviderName": ...,
+}
 
-Returns
-[DescribeIdentityProviderResponseTypeDef](./type_defs.md#describeidentityproviderresponsetypedef).
+parent.describe_identity_provider(**kwargs)
+```
 
-<a id="describe\_resource\_server"></a>
+1. See [:material-code-braces: DescribeIdentityProviderRequestRequestTypeDef](./type_defs.md#describeidentityproviderrequestrequesttypedef) 
 
-### describe_resource_server
+### describe\_resource\_server
 
 Describes a resource server.
 
-Type annotations for `boto3.client("cognito-idp").describe_resource_server`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").describe_resource_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_resource_server)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_resource_server)
+```python title="Method definition"
+def describe_resource_server(
+    self,
+    *,
+    UserPoolId: str,
+    Identifier: str,
+) -> DescribeResourceServerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeResourceServerRequestRequestTypeDef](./type_defs.md#describeresourceserverrequestrequesttypedef).
+1. See [:material-code-braces: DescribeResourceServerResponseTypeDef](./type_defs.md#describeresourceserverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Identifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeResourceServerRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Identifier": ...,
+}
 
-Returns
-[DescribeResourceServerResponseTypeDef](./type_defs.md#describeresourceserverresponsetypedef).
+parent.describe_resource_server(**kwargs)
+```
 
-<a id="describe\_risk\_configuration"></a>
+1. See [:material-code-braces: DescribeResourceServerRequestRequestTypeDef](./type_defs.md#describeresourceserverrequestrequesttypedef) 
 
-### describe_risk_configuration
+### describe\_risk\_configuration
 
 Describes the risk configuration.
 
-Type annotations for `boto3.client("cognito-idp").describe_risk_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").describe_risk_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_risk_configuration)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_risk_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_risk_configuration)
+```python title="Method definition"
+def describe_risk_configuration(
+    self,
+    *,
+    UserPoolId: str,
+    ClientId: str = ...,
+) -> DescribeRiskConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRiskConfigurationRequestRequestTypeDef](./type_defs.md#describeriskconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRiskConfigurationResponseTypeDef](./type_defs.md#describeriskconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeRiskConfigurationRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[DescribeRiskConfigurationResponseTypeDef](./type_defs.md#describeriskconfigurationresponsetypedef).
+parent.describe_risk_configuration(**kwargs)
+```
 
-<a id="describe\_user\_import\_job"></a>
+1. See [:material-code-braces: DescribeRiskConfigurationRequestRequestTypeDef](./type_defs.md#describeriskconfigurationrequestrequesttypedef) 
 
-### describe_user_import_job
+### describe\_user\_import\_job
 
 Describes the user import job.
 
-Type annotations for `boto3.client("cognito-idp").describe_user_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").describe_user_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_import_job)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_import_job)
+```python title="Method definition"
+def describe_user_import_job(
+    self,
+    *,
+    UserPoolId: str,
+    JobId: str,
+) -> DescribeUserImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserImportJobRequestRequestTypeDef](./type_defs.md#describeuserimportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserImportJobResponseTypeDef](./type_defs.md#describeuserimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserImportJobRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "JobId": ...,
+}
 
-Returns
-[DescribeUserImportJobResponseTypeDef](./type_defs.md#describeuserimportjobresponsetypedef).
+parent.describe_user_import_job(**kwargs)
+```
 
-<a id="describe\_user\_pool"></a>
+1. See [:material-code-braces: DescribeUserImportJobRequestRequestTypeDef](./type_defs.md#describeuserimportjobrequestrequesttypedef) 
 
-### describe_user_pool
+### describe\_user\_pool
 
 Returns the configuration information and metadata of the specified user pool.
 
-Type annotations for `boto3.client("cognito-idp").describe_user_pool` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").describe_user_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool)
+```python title="Method definition"
+def describe_user_pool(
+    self,
+    *,
+    UserPoolId: str,
+) -> DescribeUserPoolResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserPoolRequestRequestTypeDef](./type_defs.md#describeuserpoolrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserPoolResponseTypeDef](./type_defs.md#describeuserpoolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserPoolRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[DescribeUserPoolResponseTypeDef](./type_defs.md#describeuserpoolresponsetypedef).
+parent.describe_user_pool(**kwargs)
+```
 
-<a id="describe\_user\_pool\_client"></a>
+1. See [:material-code-braces: DescribeUserPoolRequestRequestTypeDef](./type_defs.md#describeuserpoolrequestrequesttypedef) 
 
-### describe_user_pool_client
+### describe\_user\_pool\_client
 
 Client method for returning the configuration information and metadata of the
 specified user pool app client.
 
-Type annotations for `boto3.client("cognito-idp").describe_user_pool_client`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").describe_user_pool_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_client)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_client)
+```python title="Method definition"
+def describe_user_pool_client(
+    self,
+    *,
+    UserPoolId: str,
+    ClientId: str,
+) -> DescribeUserPoolClientResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserPoolClientRequestRequestTypeDef](./type_defs.md#describeuserpoolclientrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserPoolClientResponseTypeDef](./type_defs.md#describeuserpoolclientresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserPoolClientRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ClientId": ...,
+}
 
-Returns
-[DescribeUserPoolClientResponseTypeDef](./type_defs.md#describeuserpoolclientresponsetypedef).
+parent.describe_user_pool_client(**kwargs)
+```
 
-<a id="describe\_user\_pool\_domain"></a>
+1. See [:material-code-braces: DescribeUserPoolClientRequestRequestTypeDef](./type_defs.md#describeuserpoolclientrequestrequesttypedef) 
 
-### describe_user_pool_domain
+### describe\_user\_pool\_domain
 
 Gets information about a domain.
 
-Type annotations for `boto3.client("cognito-idp").describe_user_pool_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").describe_user_pool_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_domain)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.describe_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.describe_user_pool_domain)
+```python title="Method definition"
+def describe_user_pool_domain(
+    self,
+    *,
+    Domain: str,
+) -> DescribeUserPoolDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserPoolDomainRequestRequestTypeDef](./type_defs.md#describeuserpooldomainrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserPoolDomainResponseTypeDef](./type_defs.md#describeuserpooldomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Domain`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserPoolDomainRequestRequestTypeDef = {  # (1)
+    "Domain": ...,
+}
 
-Returns
-[DescribeUserPoolDomainResponseTypeDef](./type_defs.md#describeuserpooldomainresponsetypedef).
+parent.describe_user_pool_domain(**kwargs)
+```
 
-<a id="forget\_device"></a>
+1. See [:material-code-braces: DescribeUserPoolDomainRequestRequestTypeDef](./type_defs.md#describeuserpooldomainrequestrequesttypedef) 
 
-### forget_device
+### forget\_device
 
 Forgets the specified device.
 
-Type annotations for `boto3.client("cognito-idp").forget_device` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").forget_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forget_device)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.forget_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forget_device)
+```python title="Method definition"
+def forget_device(
+    self,
+    *,
+    DeviceKey: str,
+    AccessToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ForgetDeviceRequestRequestTypeDef](./type_defs.md#forgetdevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeviceKey`: `str` *(required)*
-- `AccessToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ForgetDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceKey": ...,
+}
 
-<a id="forgot\_password"></a>
+parent.forget_device(**kwargs)
+```
 
-### forgot_password
+1. See [:material-code-braces: ForgetDeviceRequestRequestTypeDef](./type_defs.md#forgetdevicerequestrequesttypedef) 
 
-Calling this API causes a message to be sent to the end user with a
-confirmation code that is required to change the user's password.
+### forgot\_password
 
-Type annotations for `boto3.client("cognito-idp").forgot_password` method.
+Calling this API causes a message to be sent to the end user with a confirmation
+code that is required to change the user's password.
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.forgot_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forgot_password)
+Type annotations and code completion for `#!python boto3.client("cognito-idp").forgot_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.forgot_password)
 
-Arguments mapping described in
-[ForgotPasswordRequestRequestTypeDef](./type_defs.md#forgotpasswordrequestrequesttypedef).
+```python title="Method definition"
+def forgot_password(
+    self,
+    *,
+    ClientId: str,
+    Username: str,
+    SecretHash: str = ...,
+    UserContextData: UserContextDataTypeTypeDef = ...,  # (1)
+    AnalyticsMetadata: AnalyticsMetadataTypeTypeDef = ...,  # (2)
+    ClientMetadata: Mapping[str, str] = ...,
+) -> ForgotPasswordResponseTypeDef:  # (3)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: ForgotPasswordResponseTypeDef](./type_defs.md#forgotpasswordresponsetypedef) 
 
-- `ClientId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `SecretHash`: `str`
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
 
-Returns
-[ForgotPasswordResponseTypeDef](./type_defs.md#forgotpasswordresponsetypedef).
+```python title="Usage example with kwargs"
+kwargs: ForgotPasswordRequestRequestTypeDef = {  # (1)
+    "ClientId": ...,
+    "Username": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.forgot_password(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: ForgotPasswordRequestRequestTypeDef](./type_defs.md#forgotpasswordrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cognito-idp").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_csv\_header"></a>
-
-### get_csv_header
+### get\_csv\_header
 
 Gets the header information for the comma-separated value (CSV) file to be used
 as input for the user import job.
 
-Type annotations for `boto3.client("cognito-idp").get_csv_header` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_csv_header` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_csv_header)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.get_csv_header](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_csv_header)
+```python title="Method definition"
+def get_csv_header(
+    self,
+    *,
+    UserPoolId: str,
+) -> GetCSVHeaderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCSVHeaderRequestRequestTypeDef](./type_defs.md#getcsvheaderrequestrequesttypedef).
+1. See [:material-code-braces: GetCSVHeaderResponseTypeDef](./type_defs.md#getcsvheaderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCSVHeaderRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[GetCSVHeaderResponseTypeDef](./type_defs.md#getcsvheaderresponsetypedef).
+parent.get_csv_header(**kwargs)
+```
 
-<a id="get\_device"></a>
+1. See [:material-code-braces: GetCSVHeaderRequestRequestTypeDef](./type_defs.md#getcsvheaderrequestrequesttypedef) 
 
-### get_device
+### get\_device
 
 Gets the device.
 
-Type annotations for `boto3.client("cognito-idp").get_device` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_device)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_device)
+```python title="Method definition"
+def get_device(
+    self,
+    *,
+    DeviceKey: str,
+    AccessToken: str = ...,
+) -> GetDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef).
+1. See [:material-code-braces: GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceKey`: `str` *(required)*
-- `AccessToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceKey": ...,
+}
 
-Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
+parent.get_device(**kwargs)
+```
 
-<a id="get\_group"></a>
+1. See [:material-code-braces: GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef) 
 
-### get_group
+### get\_group
 
 Gets a group.
 
-Type annotations for `boto3.client("cognito-idp").get_group` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_group)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_group)
+```python title="Method definition"
+def get_group(
+    self,
+    *,
+    GroupName: str,
+    UserPoolId: str,
+) -> GetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef).
+1. See [:material-code-braces: GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "UserPoolId": ...,
+}
 
-Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
+parent.get_group(**kwargs)
+```
 
-<a id="get\_identity\_provider\_by\_identifier"></a>
+1. See [:material-code-braces: GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef) 
 
-### get_identity_provider_by_identifier
+### get\_identity\_provider\_by\_identifier
 
 Gets the specified identity provider.
 
-Type annotations for
-`boto3.client("cognito-idp").get_identity_provider_by_identifier` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_identity_provider_by_identifier` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_identity_provider_by_identifier)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.get_identity_provider_by_identifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_identity_provider_by_identifier)
+```python title="Method definition"
+def get_identity_provider_by_identifier(
+    self,
+    *,
+    UserPoolId: str,
+    IdpIdentifier: str,
+) -> GetIdentityProviderByIdentifierResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIdentityProviderByIdentifierRequestRequestTypeDef](./type_defs.md#getidentityproviderbyidentifierrequestrequesttypedef).
+1. See [:material-code-braces: GetIdentityProviderByIdentifierResponseTypeDef](./type_defs.md#getidentityproviderbyidentifierresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `IdpIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetIdentityProviderByIdentifierRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "IdpIdentifier": ...,
+}
 
-Returns
-[GetIdentityProviderByIdentifierResponseTypeDef](./type_defs.md#getidentityproviderbyidentifierresponsetypedef).
+parent.get_identity_provider_by_identifier(**kwargs)
+```
 
-<a id="get\_signing\_certificate"></a>
+1. See [:material-code-braces: GetIdentityProviderByIdentifierRequestRequestTypeDef](./type_defs.md#getidentityproviderbyidentifierrequestrequesttypedef) 
 
-### get_signing_certificate
+### get\_signing\_certificate
 
 This method takes a user pool ID, and returns the signing certificate.
 
-Type annotations for `boto3.client("cognito-idp").get_signing_certificate`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_signing_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_signing_certificate)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.get_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_signing_certificate)
+```python title="Method definition"
+def get_signing_certificate(
+    self,
+    *,
+    UserPoolId: str,
+) -> GetSigningCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSigningCertificateRequestRequestTypeDef](./type_defs.md#getsigningcertificaterequestrequesttypedef).
+1. See [:material-code-braces: GetSigningCertificateResponseTypeDef](./type_defs.md#getsigningcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSigningCertificateRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[GetSigningCertificateResponseTypeDef](./type_defs.md#getsigningcertificateresponsetypedef).
+parent.get_signing_certificate(**kwargs)
+```
 
-<a id="get\_ui\_customization"></a>
+1. See [:material-code-braces: GetSigningCertificateRequestRequestTypeDef](./type_defs.md#getsigningcertificaterequestrequesttypedef) 
 
-### get_ui_customization
+### get\_ui\_customization
 
 Gets the user interface (UI) Customization information for a particular app
 client's app UI, if any such information exists for the client.
 
-Type annotations for `boto3.client("cognito-idp").get_ui_customization` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_ui_customization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_ui_customization)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.get_ui_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_ui_customization)
+```python title="Method definition"
+def get_ui_customization(
+    self,
+    *,
+    UserPoolId: str,
+    ClientId: str = ...,
+) -> GetUICustomizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUICustomizationRequestRequestTypeDef](./type_defs.md#getuicustomizationrequestrequesttypedef).
+1. See [:material-code-braces: GetUICustomizationResponseTypeDef](./type_defs.md#getuicustomizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetUICustomizationRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[GetUICustomizationResponseTypeDef](./type_defs.md#getuicustomizationresponsetypedef).
+parent.get_ui_customization(**kwargs)
+```
 
-<a id="get\_user"></a>
+1. See [:material-code-braces: GetUICustomizationRequestRequestTypeDef](./type_defs.md#getuicustomizationrequestrequesttypedef) 
 
-### get_user
+### get\_user
 
 Gets the user attributes and metadata for a user.
 
-Type annotations for `boto3.client("cognito-idp").get_user` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user)
+```python title="Method definition"
+def get_user(
+    self,
+    *,
+    AccessToken: str,
+) -> GetUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef).
+1. See [:material-code-braces: GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUserRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+}
 
-Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
+parent.get_user(**kwargs)
+```
 
-<a id="get\_user\_attribute\_verification\_code"></a>
+1. See [:material-code-braces: GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef) 
 
-### get_user_attribute_verification_code
+### get\_user\_attribute\_verification\_code
 
 Gets the user attribute verification code for the specified attribute name.
 
-Type annotations for
-`boto3.client("cognito-idp").get_user_attribute_verification_code` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_user_attribute_verification_code` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_attribute_verification_code)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.get_user_attribute_verification_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_attribute_verification_code)
+```python title="Method definition"
+def get_user_attribute_verification_code(
+    self,
+    *,
+    AccessToken: str,
+    AttributeName: str,
+    ClientMetadata: Mapping[str, str] = ...,
+) -> GetUserAttributeVerificationCodeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserAttributeVerificationCodeRequestRequestTypeDef](./type_defs.md#getuserattributeverificationcoderequestrequesttypedef).
+1. See [:material-code-braces: GetUserAttributeVerificationCodeResponseTypeDef](./type_defs.md#getuserattributeverificationcoderesponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
-- `AttributeName`: `str` *(required)*
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetUserAttributeVerificationCodeRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+    "AttributeName": ...,
+}
 
-Returns
-[GetUserAttributeVerificationCodeResponseTypeDef](./type_defs.md#getuserattributeverificationcoderesponsetypedef).
+parent.get_user_attribute_verification_code(**kwargs)
+```
 
-<a id="get\_user\_pool\_mfa\_config"></a>
+1. See [:material-code-braces: GetUserAttributeVerificationCodeRequestRequestTypeDef](./type_defs.md#getuserattributeverificationcoderequestrequesttypedef) 
 
-### get_user_pool_mfa_config
+### get\_user\_pool\_mfa\_config
 
 Gets the user pool multi-factor authentication (MFA) configuration.
 
-Type annotations for `boto3.client("cognito-idp").get_user_pool_mfa_config`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_user_pool_mfa_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_pool_mfa_config)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.get_user_pool_mfa_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.get_user_pool_mfa_config)
+```python title="Method definition"
+def get_user_pool_mfa_config(
+    self,
+    *,
+    UserPoolId: str,
+) -> GetUserPoolMfaConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserPoolMfaConfigRequestRequestTypeDef](./type_defs.md#getuserpoolmfaconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetUserPoolMfaConfigResponseTypeDef](./type_defs.md#getuserpoolmfaconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUserPoolMfaConfigRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[GetUserPoolMfaConfigResponseTypeDef](./type_defs.md#getuserpoolmfaconfigresponsetypedef).
+parent.get_user_pool_mfa_config(**kwargs)
+```
 
-<a id="global\_sign\_out"></a>
+1. See [:material-code-braces: GetUserPoolMfaConfigRequestRequestTypeDef](./type_defs.md#getuserpoolmfaconfigrequestrequesttypedef) 
 
-### global_sign_out
+### global\_sign\_out
 
 Signs out users from all devices.
 
-Type annotations for `boto3.client("cognito-idp").global_sign_out` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").global_sign_out` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.global_sign_out)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.global_sign_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.global_sign_out)
+```python title="Method definition"
+def global_sign_out(
+    self,
+    *,
+    AccessToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[GlobalSignOutRequestRequestTypeDef](./type_defs.md#globalsignoutrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GlobalSignOutRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.global_sign_out(**kwargs)
+```
 
-<a id="initiate\_auth"></a>
+1. See [:material-code-braces: GlobalSignOutRequestRequestTypeDef](./type_defs.md#globalsignoutrequestrequesttypedef) 
 
-### initiate_auth
+### initiate\_auth
 
 Initiates the authentication flow.
 
-Type annotations for `boto3.client("cognito-idp").initiate_auth` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").initiate_auth` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.initiate_auth)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.initiate_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.initiate_auth)
+```python title="Method definition"
+def initiate_auth(
+    self,
+    *,
+    AuthFlow: AuthFlowTypeType,  # (1)
+    ClientId: str,
+    AuthParameters: Mapping[str, str] = ...,
+    ClientMetadata: Mapping[str, str] = ...,
+    AnalyticsMetadata: AnalyticsMetadataTypeTypeDef = ...,  # (2)
+    UserContextData: UserContextDataTypeTypeDef = ...,  # (3)
+) -> InitiateAuthResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[InitiateAuthRequestRequestTypeDef](./type_defs.md#initiateauthrequestrequesttypedef).
+1. See [:material-code-brackets: AuthFlowTypeType](./literals.md#authflowtypetype) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
+4. See [:material-code-braces: InitiateAuthResponseTypeDef](./type_defs.md#initiateauthresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AuthFlow`: [AuthFlowTypeType](./literals.md#authflowtypetype) *(required)*
-- `ClientId`: `str` *(required)*
-- `AuthParameters`: `Mapping`\[`str`, `str`\]
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
+```python title="Usage example with kwargs"
+kwargs: InitiateAuthRequestRequestTypeDef = {  # (1)
+    "AuthFlow": ...,
+    "ClientId": ...,
+}
 
-Returns
-[InitiateAuthResponseTypeDef](./type_defs.md#initiateauthresponsetypedef).
+parent.initiate_auth(**kwargs)
+```
 
-<a id="list\_devices"></a>
+1. See [:material-code-braces: InitiateAuthRequestRequestTypeDef](./type_defs.md#initiateauthrequestrequesttypedef) 
 
-### list_devices
+### list\_devices
 
 Lists the devices.
 
-Type annotations for `boto3.client("cognito-idp").list_devices` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_devices)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_devices)
+```python title="Method definition"
+def list_devices(
+    self,
+    *,
+    AccessToken: str,
+    Limit: int = ...,
+    PaginationToken: str = ...,
+) -> ListDevicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef).
+1. See [:material-code-braces: ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
-- `Limit`: `int`
-- `PaginationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDevicesRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+}
 
-Returns
-[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
+parent.list_devices(**kwargs)
+```
 
-<a id="list\_groups"></a>
+1. See [:material-code-braces: ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef) 
 
-### list_groups
+### list\_groups
 
 Lists the groups associated with a user pool.
 
-Type annotations for `boto3.client("cognito-idp").list_groups` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_groups)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_groups)
+```python title="Method definition"
+def list_groups(
+    self,
+    *,
+    UserPoolId: str,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+parent.list_groups(**kwargs)
+```
 
-<a id="list\_identity\_providers"></a>
+1. See [:material-code-braces: ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef) 
 
-### list_identity_providers
+### list\_identity\_providers
 
 Lists information about all identity providers for a user pool.
 
-Type annotations for `boto3.client("cognito-idp").list_identity_providers`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_identity_providers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_identity_providers)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_identity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_identity_providers)
+```python title="Method definition"
+def list_identity_providers(
+    self,
+    *,
+    UserPoolId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListIdentityProvidersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIdentityProvidersRequestRequestTypeDef](./type_defs.md#listidentityprovidersrequestrequesttypedef).
+1. See [:material-code-braces: ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListIdentityProvidersRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef).
+parent.list_identity_providers(**kwargs)
+```
 
-<a id="list\_resource\_servers"></a>
+1. See [:material-code-braces: ListIdentityProvidersRequestRequestTypeDef](./type_defs.md#listidentityprovidersrequestrequesttypedef) 
 
-### list_resource_servers
+### list\_resource\_servers
 
 Lists the resource servers for a user pool.
 
-Type annotations for `boto3.client("cognito-idp").list_resource_servers`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_resource_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_resource_servers)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_resource_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_resource_servers)
+```python title="Method definition"
+def list_resource_servers(
+    self,
+    *,
+    UserPoolId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListResourceServersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourceServersRequestRequestTypeDef](./type_defs.md#listresourceserversrequestrequesttypedef).
+1. See [:material-code-braces: ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResourceServersRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef).
+parent.list_resource_servers(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListResourceServersRequestRequestTypeDef](./type_defs.md#listresourceserversrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags that are assigned to an Amazon Cognito user pool.
 
-Type annotations for `boto3.client("cognito-idp").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_user\_import\_jobs"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_user_import_jobs
+### list\_user\_import\_jobs
 
 Lists the user import jobs.
 
-Type annotations for `boto3.client("cognito-idp").list_user_import_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_user_import_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_import_jobs)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_user_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_import_jobs)
+```python title="Method definition"
+def list_user_import_jobs(
+    self,
+    *,
+    UserPoolId: str,
+    MaxResults: int,
+    PaginationToken: str = ...,
+) -> ListUserImportJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUserImportJobsRequestRequestTypeDef](./type_defs.md#listuserimportjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListUserImportJobsResponseTypeDef](./type_defs.md#listuserimportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `MaxResults`: `int` *(required)*
-- `PaginationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUserImportJobsRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "MaxResults": ...,
+}
 
-Returns
-[ListUserImportJobsResponseTypeDef](./type_defs.md#listuserimportjobsresponsetypedef).
+parent.list_user_import_jobs(**kwargs)
+```
 
-<a id="list\_user\_pool\_clients"></a>
+1. See [:material-code-braces: ListUserImportJobsRequestRequestTypeDef](./type_defs.md#listuserimportjobsrequestrequesttypedef) 
 
-### list_user_pool_clients
+### list\_user\_pool\_clients
 
 Lists the clients that have been created for the specified user pool.
 
-Type annotations for `boto3.client("cognito-idp").list_user_pool_clients`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_user_pool_clients` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pool_clients)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_user_pool_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pool_clients)
+```python title="Method definition"
+def list_user_pool_clients(
+    self,
+    *,
+    UserPoolId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListUserPoolClientsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUserPoolClientsRequestRequestTypeDef](./type_defs.md#listuserpoolclientsrequestrequesttypedef).
+1. See [:material-code-braces: ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUserPoolClientsRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef).
+parent.list_user_pool_clients(**kwargs)
+```
 
-<a id="list\_user\_pools"></a>
+1. See [:material-code-braces: ListUserPoolClientsRequestRequestTypeDef](./type_defs.md#listuserpoolclientsrequestrequesttypedef) 
 
-### list_user_pools
+### list\_user\_pools
 
 Lists the user pools associated with an Amazon Web Services account.
 
-Type annotations for `boto3.client("cognito-idp").list_user_pools` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_user_pools` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pools)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_user_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_user_pools)
+```python title="Method definition"
+def list_user_pools(
+    self,
+    *,
+    MaxResults: int,
+    NextToken: str = ...,
+) -> ListUserPoolsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUserPoolsRequestRequestTypeDef](./type_defs.md#listuserpoolsrequestrequesttypedef).
+1. See [:material-code-braces: ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUserPoolsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef).
+parent.list_user_pools(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListUserPoolsRequestRequestTypeDef](./type_defs.md#listuserpoolsrequestrequesttypedef) 
 
-### list_users
+### list\_users
 
 Lists the users in the Amazon Cognito user pool.
 
-Type annotations for `boto3.client("cognito-idp").list_users` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    UserPoolId: str,
+    AttributesToGet: Sequence[str] = ...,
+    Limit: int = ...,
+    PaginationToken: str = ...,
+    Filter: str = ...,
+) -> ListUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `PaginationToken`: `str`
-- `Filter`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
 
-<a id="list\_users\_in\_group"></a>
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
-### list_users_in_group
+### list\_users\_in\_group
 
 Lists the users in the specified group.
 
-Type annotations for `boto3.client("cognito-idp").list_users_in_group` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").list_users_in_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users_in_group)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.list_users_in_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.list_users_in_group)
+```python title="Method definition"
+def list_users_in_group(
+    self,
+    *,
+    UserPoolId: str,
+    GroupName: str,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListUsersInGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersInGroupRequestRequestTypeDef](./type_defs.md#listusersingrouprequestrequesttypedef).
+1. See [:material-code-braces: ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `GroupName`: `str` *(required)*
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUsersInGroupRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "GroupName": ...,
+}
 
-Returns
-[ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef).
+parent.list_users_in_group(**kwargs)
+```
 
-<a id="resend\_confirmation\_code"></a>
+1. See [:material-code-braces: ListUsersInGroupRequestRequestTypeDef](./type_defs.md#listusersingrouprequestrequesttypedef) 
 
-### resend_confirmation_code
+### resend\_confirmation\_code
 
 Resends the confirmation (for confirmation of registration) to a specific user
 in the user pool.
 
-Type annotations for `boto3.client("cognito-idp").resend_confirmation_code`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").resend_confirmation_code` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.resend_confirmation_code)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.resend_confirmation_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.resend_confirmation_code)
+```python title="Method definition"
+def resend_confirmation_code(
+    self,
+    *,
+    ClientId: str,
+    Username: str,
+    SecretHash: str = ...,
+    UserContextData: UserContextDataTypeTypeDef = ...,  # (1)
+    AnalyticsMetadata: AnalyticsMetadataTypeTypeDef = ...,  # (2)
+    ClientMetadata: Mapping[str, str] = ...,
+) -> ResendConfirmationCodeResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ResendConfirmationCodeRequestRequestTypeDef](./type_defs.md#resendconfirmationcoderequestrequesttypedef).
+1. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: ResendConfirmationCodeResponseTypeDef](./type_defs.md#resendconfirmationcoderesponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `SecretHash`: `str`
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ResendConfirmationCodeRequestRequestTypeDef = {  # (1)
+    "ClientId": ...,
+    "Username": ...,
+}
 
-Returns
-[ResendConfirmationCodeResponseTypeDef](./type_defs.md#resendconfirmationcoderesponsetypedef).
+parent.resend_confirmation_code(**kwargs)
+```
 
-<a id="respond\_to\_auth\_challenge"></a>
+1. See [:material-code-braces: ResendConfirmationCodeRequestRequestTypeDef](./type_defs.md#resendconfirmationcoderequestrequesttypedef) 
 
-### respond_to_auth_challenge
+### respond\_to\_auth\_challenge
 
 Responds to the authentication challenge.
 
-Type annotations for `boto3.client("cognito-idp").respond_to_auth_challenge`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").respond_to_auth_challenge` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.respond_to_auth_challenge)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.respond_to_auth_challenge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.respond_to_auth_challenge)
+```python title="Method definition"
+def respond_to_auth_challenge(
+    self,
+    *,
+    ClientId: str,
+    ChallengeName: ChallengeNameTypeType,  # (1)
+    Session: str = ...,
+    ChallengeResponses: Mapping[str, str] = ...,
+    AnalyticsMetadata: AnalyticsMetadataTypeTypeDef = ...,  # (2)
+    UserContextData: UserContextDataTypeTypeDef = ...,  # (3)
+    ClientMetadata: Mapping[str, str] = ...,
+) -> RespondToAuthChallengeResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[RespondToAuthChallengeRequestRequestTypeDef](./type_defs.md#respondtoauthchallengerequestrequesttypedef).
+1. See [:material-code-brackets: ChallengeNameTypeType](./literals.md#challengenametypetype) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
+4. See [:material-code-braces: RespondToAuthChallengeResponseTypeDef](./type_defs.md#respondtoauthchallengeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientId`: `str` *(required)*
-- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
-  *(required)*
-- `Session`: `str`
-- `ChallengeResponses`: `Mapping`\[`str`, `str`\]
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: RespondToAuthChallengeRequestRequestTypeDef = {  # (1)
+    "ClientId": ...,
+    "ChallengeName": ...,
+}
 
-Returns
-[RespondToAuthChallengeResponseTypeDef](./type_defs.md#respondtoauthchallengeresponsetypedef).
+parent.respond_to_auth_challenge(**kwargs)
+```
 
-<a id="revoke\_token"></a>
+1. See [:material-code-braces: RespondToAuthChallengeRequestRequestTypeDef](./type_defs.md#respondtoauthchallengerequestrequesttypedef) 
 
-### revoke_token
+### revoke\_token
 
 Revokes all of the access tokens generated by the specified refresh token.
 
-Type annotations for `boto3.client("cognito-idp").revoke_token` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").revoke_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.revoke_token)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.revoke_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.revoke_token)
+```python title="Method definition"
+def revoke_token(
+    self,
+    *,
+    Token: str,
+    ClientId: str,
+    ClientSecret: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RevokeTokenRequestRequestTypeDef](./type_defs.md#revoketokenrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Token`: `str` *(required)*
-- `ClientId`: `str` *(required)*
-- `ClientSecret`: `str`
+```python title="Usage example with kwargs"
+kwargs: RevokeTokenRequestRequestTypeDef = {  # (1)
+    "Token": ...,
+    "ClientId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.revoke_token(**kwargs)
+```
 
-<a id="set\_risk\_configuration"></a>
+1. See [:material-code-braces: RevokeTokenRequestRequestTypeDef](./type_defs.md#revoketokenrequestrequesttypedef) 
 
-### set_risk_configuration
+### set\_risk\_configuration
 
 Configures actions on detected risks.
 
-Type annotations for `boto3.client("cognito-idp").set_risk_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").set_risk_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_risk_configuration)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.set_risk_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_risk_configuration)
+```python title="Method definition"
+def set_risk_configuration(
+    self,
+    *,
+    UserPoolId: str,
+    ClientId: str = ...,
+    CompromisedCredentialsRiskConfiguration: CompromisedCredentialsRiskConfigurationTypeTypeDef = ...,  # (1)
+    AccountTakeoverRiskConfiguration: AccountTakeoverRiskConfigurationTypeTypeDef = ...,  # (2)
+    RiskExceptionConfiguration: RiskExceptionConfigurationTypeTypeDef = ...,  # (3)
+) -> SetRiskConfigurationResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[SetRiskConfigurationRequestRequestTypeDef](./type_defs.md#setriskconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: CompromisedCredentialsRiskConfigurationTypeTypeDef](./type_defs.md#compromisedcredentialsriskconfigurationtypetypedef) 
+2. See [:material-code-braces: AccountTakeoverRiskConfigurationTypeTypeDef](./type_defs.md#accounttakeoverriskconfigurationtypetypedef) 
+3. See [:material-code-braces: RiskExceptionConfigurationTypeTypeDef](./type_defs.md#riskexceptionconfigurationtypetypedef) 
+4. See [:material-code-braces: SetRiskConfigurationResponseTypeDef](./type_defs.md#setriskconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientId`: `str`
-- `CompromisedCredentialsRiskConfiguration`:
-  [CompromisedCredentialsRiskConfigurationTypeTypeDef](./type_defs.md#compromisedcredentialsriskconfigurationtypetypedef)
-- `AccountTakeoverRiskConfiguration`:
-  [AccountTakeoverRiskConfigurationTypeTypeDef](./type_defs.md#accounttakeoverriskconfigurationtypetypedef)
-- `RiskExceptionConfiguration`:
-  [RiskExceptionConfigurationTypeTypeDef](./type_defs.md#riskexceptionconfigurationtypetypedef)
+```python title="Usage example with kwargs"
+kwargs: SetRiskConfigurationRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[SetRiskConfigurationResponseTypeDef](./type_defs.md#setriskconfigurationresponsetypedef).
+parent.set_risk_configuration(**kwargs)
+```
 
-<a id="set\_ui\_customization"></a>
+1. See [:material-code-braces: SetRiskConfigurationRequestRequestTypeDef](./type_defs.md#setriskconfigurationrequestrequesttypedef) 
 
-### set_ui_customization
+### set\_ui\_customization
 
 Sets the user interface (UI) customization information for a user pool's built-
 in app UI.
 
-Type annotations for `boto3.client("cognito-idp").set_ui_customization` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").set_ui_customization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_ui_customization)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.set_ui_customization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_ui_customization)
+```python title="Method definition"
+def set_ui_customization(
+    self,
+    *,
+    UserPoolId: str,
+    ClientId: str = ...,
+    CSS: str = ...,
+    ImageFile: Union[bytes, IO[bytes], StreamingBody] = ...,
+) -> SetUICustomizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SetUICustomizationRequestRequestTypeDef](./type_defs.md#setuicustomizationrequestrequesttypedef).
+1. See [:material-code-braces: SetUICustomizationResponseTypeDef](./type_defs.md#setuicustomizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientId`: `str`
-- `CSS`: `str`
-- `ImageFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+```python title="Usage example with kwargs"
+kwargs: SetUICustomizationRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[SetUICustomizationResponseTypeDef](./type_defs.md#setuicustomizationresponsetypedef).
+parent.set_ui_customization(**kwargs)
+```
 
-<a id="set\_user\_mfa\_preference"></a>
+1. See [:material-code-braces: SetUICustomizationRequestRequestTypeDef](./type_defs.md#setuicustomizationrequestrequesttypedef) 
 
-### set_user_mfa_preference
+### set\_user\_mfa\_preference
 
 Set the user's multi-factor authentication (MFA) method preference, including
 which MFA factors are activated and if any are preferred.
 
-Type annotations for `boto3.client("cognito-idp").set_user_mfa_preference`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").set_user_mfa_preference` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_mfa_preference)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.set_user_mfa_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_mfa_preference)
+```python title="Method definition"
+def set_user_mfa_preference(
+    self,
+    *,
+    AccessToken: str,
+    SMSMfaSettings: SMSMfaSettingsTypeTypeDef = ...,  # (1)
+    SoftwareTokenMfaSettings: SoftwareTokenMfaSettingsTypeTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SetUserMFAPreferenceRequestRequestTypeDef](./type_defs.md#setusermfapreferencerequestrequesttypedef).
+1. See [:material-code-braces: SMSMfaSettingsTypeTypeDef](./type_defs.md#smsmfasettingstypetypedef) 
+2. See [:material-code-braces: SoftwareTokenMfaSettingsTypeTypeDef](./type_defs.md#softwaretokenmfasettingstypetypedef) 
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
-- `SMSMfaSettings`:
-  [SMSMfaSettingsTypeTypeDef](./type_defs.md#smsmfasettingstypetypedef)
-- `SoftwareTokenMfaSettings`:
-  [SoftwareTokenMfaSettingsTypeTypeDef](./type_defs.md#softwaretokenmfasettingstypetypedef)
+```python title="Usage example with kwargs"
+kwargs: SetUserMFAPreferenceRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.set_user_mfa_preference(**kwargs)
+```
 
-<a id="set\_user\_pool\_mfa\_config"></a>
+1. See [:material-code-braces: SetUserMFAPreferenceRequestRequestTypeDef](./type_defs.md#setusermfapreferencerequestrequesttypedef) 
 
-### set_user_pool_mfa_config
+### set\_user\_pool\_mfa\_config
 
 Sets the user pool multi-factor authentication (MFA) configuration.
 
-Type annotations for `boto3.client("cognito-idp").set_user_pool_mfa_config`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").set_user_pool_mfa_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_pool_mfa_config)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.set_user_pool_mfa_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_pool_mfa_config)
+```python title="Method definition"
+def set_user_pool_mfa_config(
+    self,
+    *,
+    UserPoolId: str,
+    SmsMfaConfiguration: SmsMfaConfigTypeTypeDef = ...,  # (1)
+    SoftwareTokenMfaConfiguration: SoftwareTokenMfaConfigTypeTypeDef = ...,  # (2)
+    MfaConfiguration: UserPoolMfaTypeType = ...,  # (3)
+) -> SetUserPoolMfaConfigResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[SetUserPoolMfaConfigRequestRequestTypeDef](./type_defs.md#setuserpoolmfaconfigrequestrequesttypedef).
+1. See [:material-code-braces: SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef) 
+2. See [:material-code-braces: SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef) 
+3. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+4. See [:material-code-braces: SetUserPoolMfaConfigResponseTypeDef](./type_defs.md#setuserpoolmfaconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `SmsMfaConfiguration`:
-  [SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef)
-- `SoftwareTokenMfaConfiguration`:
-  [SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef)
-- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
+```python title="Usage example with kwargs"
+kwargs: SetUserPoolMfaConfigRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns
-[SetUserPoolMfaConfigResponseTypeDef](./type_defs.md#setuserpoolmfaconfigresponsetypedef).
+parent.set_user_pool_mfa_config(**kwargs)
+```
 
-<a id="set\_user\_settings"></a>
+1. See [:material-code-braces: SetUserPoolMfaConfigRequestRequestTypeDef](./type_defs.md#setuserpoolmfaconfigrequestrequesttypedef) 
 
-### set_user_settings
+### set\_user\_settings
 
 *This action is no longer supported.* You can use it to configure only SMS MFA.
 
-Type annotations for `boto3.client("cognito-idp").set_user_settings` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").set_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_settings)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.set_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.set_user_settings)
+```python title="Method definition"
+def set_user_settings(
+    self,
+    *,
+    AccessToken: str,
+    MFAOptions: Sequence[MFAOptionTypeTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SetUserSettingsRequestRequestTypeDef](./type_defs.md#setusersettingsrequestrequesttypedef).
+1. See [:material-code-braces: MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef) 
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
-- `MFAOptions`:
-  `Sequence`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetUserSettingsRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+    "MFAOptions": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.set_user_settings(**kwargs)
+```
 
-<a id="sign\_up"></a>
+1. See [:material-code-braces: SetUserSettingsRequestRequestTypeDef](./type_defs.md#setusersettingsrequestrequesttypedef) 
 
-### sign_up
+### sign\_up
 
-Registers the user in the specified user pool and creates a user name,
-password, and user attributes.
+Registers the user in the specified user pool and creates a user name, password,
+and user attributes.
 
-Type annotations for `boto3.client("cognito-idp").sign_up` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").sign_up` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.sign_up)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.sign_up](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.sign_up)
+```python title="Method definition"
+def sign_up(
+    self,
+    *,
+    ClientId: str,
+    Username: str,
+    Password: str,
+    SecretHash: str = ...,
+    UserAttributes: Sequence[AttributeTypeTypeDef] = ...,  # (1)
+    ValidationData: Sequence[AttributeTypeTypeDef] = ...,  # (1)
+    AnalyticsMetadata: AnalyticsMetadataTypeTypeDef = ...,  # (3)
+    UserContextData: UserContextDataTypeTypeDef = ...,  # (4)
+    ClientMetadata: Mapping[str, str] = ...,
+) -> SignUpResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[SignUpRequestRequestTypeDef](./type_defs.md#signuprequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+2. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+3. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+4. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
+5. See [:material-code-braces: SignUpResponseTypeDef](./type_defs.md#signupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `SecretHash`: `str`
-- `UserAttributes`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `ValidationData`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: SignUpRequestRequestTypeDef = {  # (1)
+    "ClientId": ...,
+    "Username": ...,
+    "Password": ...,
+}
 
-Returns [SignUpResponseTypeDef](./type_defs.md#signupresponsetypedef).
+parent.sign_up(**kwargs)
+```
 
-<a id="start\_user\_import\_job"></a>
+1. See [:material-code-braces: SignUpRequestRequestTypeDef](./type_defs.md#signuprequestrequesttypedef) 
 
-### start_user_import_job
+### start\_user\_import\_job
 
 Starts the user import.
 
-Type annotations for `boto3.client("cognito-idp").start_user_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").start_user_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.start_user_import_job)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.start_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.start_user_import_job)
+```python title="Method definition"
+def start_user_import_job(
+    self,
+    *,
+    UserPoolId: str,
+    JobId: str,
+) -> StartUserImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartUserImportJobRequestRequestTypeDef](./type_defs.md#startuserimportjobrequestrequesttypedef).
+1. See [:material-code-braces: StartUserImportJobResponseTypeDef](./type_defs.md#startuserimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartUserImportJobRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "JobId": ...,
+}
 
-Returns
-[StartUserImportJobResponseTypeDef](./type_defs.md#startuserimportjobresponsetypedef).
+parent.start_user_import_job(**kwargs)
+```
 
-<a id="stop\_user\_import\_job"></a>
+1. See [:material-code-braces: StartUserImportJobRequestRequestTypeDef](./type_defs.md#startuserimportjobrequestrequesttypedef) 
 
-### stop_user_import_job
+### stop\_user\_import\_job
 
 Stops the user import job.
 
-Type annotations for `boto3.client("cognito-idp").stop_user_import_job` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").stop_user_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.stop_user_import_job)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.stop_user_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.stop_user_import_job)
+```python title="Method definition"
+def stop_user_import_job(
+    self,
+    *,
+    UserPoolId: str,
+    JobId: str,
+) -> StopUserImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopUserImportJobRequestRequestTypeDef](./type_defs.md#stopuserimportjobrequestrequesttypedef).
+1. See [:material-code-braces: StopUserImportJobResponseTypeDef](./type_defs.md#stopuserimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopUserImportJobRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "JobId": ...,
+}
 
-Returns
-[StopUserImportJobResponseTypeDef](./type_defs.md#stopuserimportjobresponsetypedef).
+parent.stop_user_import_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopUserImportJobRequestRequestTypeDef](./type_defs.md#stopuserimportjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns a set of tags to an Amazon Cognito user pool.
 
-Type annotations for `boto3.client("cognito-idp").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.tag_resource)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the specified tags from an Amazon Cognito user pool.
 
-Type annotations for `boto3.client("cognito-idp").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.untag_resource)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_auth\_event\_feedback"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_auth_event_feedback
+### update\_auth\_event\_feedback
 
 Provides the feedback for an authentication event, whether it was from a valid
 user or not.
 
-Type annotations for `boto3.client("cognito-idp").update_auth_event_feedback`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").update_auth_event_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_auth_event_feedback)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.update_auth_event_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_auth_event_feedback)
+```python title="Method definition"
+def update_auth_event_feedback(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    EventId: str,
+    FeedbackToken: str,
+    FeedbackValue: FeedbackValueTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAuthEventFeedbackRequestRequestTypeDef](./type_defs.md#updateautheventfeedbackrequestrequesttypedef).
+1. See [:material-code-brackets: FeedbackValueTypeType](./literals.md#feedbackvaluetypetype) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `EventId`: `str` *(required)*
-- `FeedbackToken`: `str` *(required)*
-- `FeedbackValue`: [FeedbackValueTypeType](./literals.md#feedbackvaluetypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAuthEventFeedbackRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+    "EventId": ...,
+    "FeedbackToken": ...,
+    "FeedbackValue": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_auth_event_feedback(**kwargs)
+```
 
-<a id="update\_device\_status"></a>
+1. See [:material-code-braces: UpdateAuthEventFeedbackRequestRequestTypeDef](./type_defs.md#updateautheventfeedbackrequestrequesttypedef) 
 
-### update_device_status
+### update\_device\_status
 
 Updates the device status.
 
-Type annotations for `boto3.client("cognito-idp").update_device_status` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").update_device_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_device_status)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.update_device_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_device_status)
+```python title="Method definition"
+def update_device_status(
+    self,
+    *,
+    AccessToken: str,
+    DeviceKey: str,
+    DeviceRememberedStatus: DeviceRememberedStatusTypeType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDeviceStatusRequestRequestTypeDef](./type_defs.md#updatedevicestatusrequestrequesttypedef).
+1. See [:material-code-brackets: DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype) 
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
-- `DeviceKey`: `str` *(required)*
-- `DeviceRememberedStatus`:
-  [DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateDeviceStatusRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+    "DeviceKey": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_device_status(**kwargs)
+```
 
-<a id="update\_group"></a>
+1. See [:material-code-braces: UpdateDeviceStatusRequestRequestTypeDef](./type_defs.md#updatedevicestatusrequestrequesttypedef) 
 
-### update_group
+### update\_group
 
 Updates the specified group with the specified attributes.
 
-Type annotations for `boto3.client("cognito-idp").update_group` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").update_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_group)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_group)
+```python title="Method definition"
+def update_group(
+    self,
+    *,
+    GroupName: str,
+    UserPoolId: str,
+    Description: str = ...,
+    RoleArn: str = ...,
+    Precedence: int = ...,
+) -> UpdateGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef).
+1. See [:material-code-braces: UpdateGroupResponseTypeDef](./type_defs.md#updategroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `Description`: `str`
-- `RoleArn`: `str`
-- `Precedence`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "UserPoolId": ...,
+}
 
-Returns
-[UpdateGroupResponseTypeDef](./type_defs.md#updategroupresponsetypedef).
+parent.update_group(**kwargs)
+```
 
-<a id="update\_identity\_provider"></a>
+1. See [:material-code-braces: UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef) 
 
-### update_identity_provider
+### update\_identity\_provider
 
 Updates identity provider information for a user pool.
 
-Type annotations for `boto3.client("cognito-idp").update_identity_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").update_identity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_identity_provider)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.update_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_identity_provider)
+```python title="Method definition"
+def update_identity_provider(
+    self,
+    *,
+    UserPoolId: str,
+    ProviderName: str,
+    ProviderDetails: Mapping[str, str] = ...,
+    AttributeMapping: Mapping[str, str] = ...,
+    IdpIdentifiers: Sequence[str] = ...,
+) -> UpdateIdentityProviderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateIdentityProviderRequestRequestTypeDef](./type_defs.md#updateidentityproviderrequestrequesttypedef).
+1. See [:material-code-braces: UpdateIdentityProviderResponseTypeDef](./type_defs.md#updateidentityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ProviderName`: `str` *(required)*
-- `ProviderDetails`: `Mapping`\[`str`, `str`\]
-- `AttributeMapping`: `Mapping`\[`str`, `str`\]
-- `IdpIdentifiers`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateIdentityProviderRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ProviderName": ...,
+}
 
-Returns
-[UpdateIdentityProviderResponseTypeDef](./type_defs.md#updateidentityproviderresponsetypedef).
+parent.update_identity_provider(**kwargs)
+```
 
-<a id="update\_resource\_server"></a>
+1. See [:material-code-braces: UpdateIdentityProviderRequestRequestTypeDef](./type_defs.md#updateidentityproviderrequestrequesttypedef) 
 
-### update_resource_server
+### update\_resource\_server
 
 Updates the name and scopes of resource server.
 
-Type annotations for `boto3.client("cognito-idp").update_resource_server`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").update_resource_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_resource_server)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.update_resource_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_resource_server)
+```python title="Method definition"
+def update_resource_server(
+    self,
+    *,
+    UserPoolId: str,
+    Identifier: str,
+    Name: str,
+    Scopes: Sequence[ResourceServerScopeTypeTypeDef] = ...,  # (1)
+) -> UpdateResourceServerResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResourceServerRequestRequestTypeDef](./type_defs.md#updateresourceserverrequestrequesttypedef).
+1. See [:material-code-braces: ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef) 
+2. See [:material-code-braces: UpdateResourceServerResponseTypeDef](./type_defs.md#updateresourceserverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Identifier`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Scopes`:
-  `Sequence`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateResourceServerRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Identifier": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateResourceServerResponseTypeDef](./type_defs.md#updateresourceserverresponsetypedef).
+parent.update_resource_server(**kwargs)
+```
 
-<a id="update\_user\_attributes"></a>
+1. See [:material-code-braces: UpdateResourceServerRequestRequestTypeDef](./type_defs.md#updateresourceserverrequestrequesttypedef) 
 
-### update_user_attributes
+### update\_user\_attributes
 
 Allows a user to update a specific attribute (one at a time).
 
-Type annotations for `boto3.client("cognito-idp").update_user_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").update_user_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_attributes)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.update_user_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_attributes)
+```python title="Method definition"
+def update_user_attributes(
+    self,
+    *,
+    UserAttributes: Sequence[AttributeTypeTypeDef],  # (1)
+    AccessToken: str,
+    ClientMetadata: Mapping[str, str] = ...,
+) -> UpdateUserAttributesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserAttributesRequestRequestTypeDef](./type_defs.md#updateuserattributesrequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+2. See [:material-code-braces: UpdateUserAttributesResponseTypeDef](./type_defs.md#updateuserattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserAttributes`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-  *(required)*
-- `AccessToken`: `str` *(required)*
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateUserAttributesRequestRequestTypeDef = {  # (1)
+    "UserAttributes": ...,
+    "AccessToken": ...,
+}
 
-Returns
-[UpdateUserAttributesResponseTypeDef](./type_defs.md#updateuserattributesresponsetypedef).
+parent.update_user_attributes(**kwargs)
+```
 
-<a id="update\_user\_pool"></a>
+1. See [:material-code-braces: UpdateUserAttributesRequestRequestTypeDef](./type_defs.md#updateuserattributesrequestrequesttypedef) 
 
-### update_user_pool
+### update\_user\_pool
 
 Updates the specified user pool with the specified attributes.
 
-Type annotations for `boto3.client("cognito-idp").update_user_pool` method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").update_user_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.update_user_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool)
+```python title="Method definition"
+def update_user_pool(
+    self,
+    *,
+    UserPoolId: str,
+    Policies: UserPoolPolicyTypeTypeDef = ...,  # (1)
+    LambdaConfig: LambdaConfigTypeTypeDef = ...,  # (2)
+    AutoVerifiedAttributes: Sequence[VerifiedAttributeTypeType] = ...,  # (3)
+    SmsVerificationMessage: str = ...,
+    EmailVerificationMessage: str = ...,
+    EmailVerificationSubject: str = ...,
+    VerificationMessageTemplate: VerificationMessageTemplateTypeTypeDef = ...,  # (4)
+    SmsAuthenticationMessage: str = ...,
+    MfaConfiguration: UserPoolMfaTypeType = ...,  # (5)
+    DeviceConfiguration: DeviceConfigurationTypeTypeDef = ...,  # (6)
+    EmailConfiguration: EmailConfigurationTypeTypeDef = ...,  # (7)
+    SmsConfiguration: SmsConfigurationTypeTypeDef = ...,  # (8)
+    UserPoolTags: Mapping[str, str] = ...,
+    AdminCreateUserConfig: AdminCreateUserConfigTypeTypeDef = ...,  # (9)
+    UserPoolAddOns: UserPoolAddOnsTypeTypeDef = ...,  # (10)
+    AccountRecoverySetting: AccountRecoverySettingTypeTypeDef = ...,  # (11)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserPoolRequestRequestTypeDef](./type_defs.md#updateuserpoolrequestrequesttypedef).
+1. See [:material-code-braces: UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef) 
+2. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
+3. See [:material-code-brackets: VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype) 
+4. See [:material-code-braces: VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef) 
+5. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+6. See [:material-code-braces: DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef) 
+7. See [:material-code-braces: EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef) 
+8. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
+9. See [:material-code-braces: AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef) 
+10. See [:material-code-braces: UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef) 
+11. See [:material-code-braces: AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `Policies`:
-  [UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef)
-- `LambdaConfig`:
-  [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
-- `AutoVerifiedAttributes`:
-  `Sequence`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
-- `SmsVerificationMessage`: `str`
-- `EmailVerificationMessage`: `str`
-- `EmailVerificationSubject`: `str`
-- `VerificationMessageTemplate`:
-  [VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef)
-- `SmsAuthenticationMessage`: `str`
-- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
-- `DeviceConfiguration`:
-  [DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef)
-- `EmailConfiguration`:
-  [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
-- `SmsConfiguration`:
-  [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-- `UserPoolTags`: `Mapping`\[`str`, `str`\]
-- `AdminCreateUserConfig`:
-  [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
-- `UserPoolAddOns`:
-  [UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef)
-- `AccountRecoverySetting`:
-  [AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateUserPoolRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_user_pool(**kwargs)
+```
 
-<a id="update\_user\_pool\_client"></a>
+1. See [:material-code-braces: UpdateUserPoolRequestRequestTypeDef](./type_defs.md#updateuserpoolrequestrequesttypedef) 
 
-### update_user_pool_client
+### update\_user\_pool\_client
 
 Updates the specified user pool app client with the specified attributes.
 
-Type annotations for `boto3.client("cognito-idp").update_user_pool_client`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").update_user_pool_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_client)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.update_user_pool_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_client)
+```python title="Method definition"
+def update_user_pool_client(
+    self,
+    *,
+    UserPoolId: str,
+    ClientId: str,
+    ClientName: str = ...,
+    RefreshTokenValidity: int = ...,
+    AccessTokenValidity: int = ...,
+    IdTokenValidity: int = ...,
+    TokenValidityUnits: TokenValidityUnitsTypeTypeDef = ...,  # (1)
+    ReadAttributes: Sequence[str] = ...,
+    WriteAttributes: Sequence[str] = ...,
+    ExplicitAuthFlows: Sequence[ExplicitAuthFlowsTypeType] = ...,  # (2)
+    SupportedIdentityProviders: Sequence[str] = ...,
+    CallbackURLs: Sequence[str] = ...,
+    LogoutURLs: Sequence[str] = ...,
+    DefaultRedirectURI: str = ...,
+    AllowedOAuthFlows: Sequence[OAuthFlowTypeType] = ...,  # (3)
+    AllowedOAuthScopes: Sequence[str] = ...,
+    AllowedOAuthFlowsUserPoolClient: bool = ...,
+    AnalyticsConfiguration: AnalyticsConfigurationTypeTypeDef = ...,  # (4)
+    PreventUserExistenceErrors: PreventUserExistenceErrorTypesType = ...,  # (5)
+    EnableTokenRevocation: bool = ...,
+) -> UpdateUserPoolClientResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserPoolClientRequestRequestTypeDef](./type_defs.md#updateuserpoolclientrequestrequesttypedef).
+1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 
+2. See [:material-code-brackets: ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype) 
+3. See [:material-code-brackets: OAuthFlowTypeType](./literals.md#oauthflowtypetype) 
+4. See [:material-code-braces: AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef) 
+5. See [:material-code-brackets: PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype) 
+6. See [:material-code-braces: UpdateUserPoolClientResponseTypeDef](./type_defs.md#updateuserpoolclientresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserPoolId`: `str` *(required)*
-- `ClientId`: `str` *(required)*
-- `ClientName`: `str`
-- `RefreshTokenValidity`: `int`
-- `AccessTokenValidity`: `int`
-- `IdTokenValidity`: `int`
-- `TokenValidityUnits`:
-  [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
-- `ReadAttributes`: `Sequence`\[`str`\]
-- `WriteAttributes`: `Sequence`\[`str`\]
-- `ExplicitAuthFlows`:
-  `Sequence`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
-- `SupportedIdentityProviders`: `Sequence`\[`str`\]
-- `CallbackURLs`: `Sequence`\[`str`\]
-- `LogoutURLs`: `Sequence`\[`str`\]
-- `DefaultRedirectURI`: `str`
-- `AllowedOAuthFlows`:
-  `Sequence`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
-- `AllowedOAuthScopes`: `Sequence`\[`str`\]
-- `AllowedOAuthFlowsUserPoolClient`: `bool`
-- `AnalyticsConfiguration`:
-  [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
-- `PreventUserExistenceErrors`:
-  [PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype)
-- `EnableTokenRevocation`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserPoolClientRequestRequestTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "ClientId": ...,
+}
 
-Returns
-[UpdateUserPoolClientResponseTypeDef](./type_defs.md#updateuserpoolclientresponsetypedef).
+parent.update_user_pool_client(**kwargs)
+```
 
-<a id="update\_user\_pool\_domain"></a>
+1. See [:material-code-braces: UpdateUserPoolClientRequestRequestTypeDef](./type_defs.md#updateuserpoolclientrequestrequesttypedef) 
 
-### update_user_pool_domain
+### update\_user\_pool\_domain
 
 Updates the Secure Sockets Layer (SSL) certificate for the custom domain for
 your user pool.
 
-Type annotations for `boto3.client("cognito-idp").update_user_pool_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").update_user_pool_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_domain)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.update_user_pool_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.update_user_pool_domain)
+```python title="Method definition"
+def update_user_pool_domain(
+    self,
+    *,
+    Domain: str,
+    UserPoolId: str,
+    CustomDomainConfig: CustomDomainConfigTypeTypeDef,  # (1)
+) -> UpdateUserPoolDomainResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserPoolDomainRequestRequestTypeDef](./type_defs.md#updateuserpooldomainrequestrequesttypedef).
+1. See [:material-code-braces: CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef) 
+2. See [:material-code-braces: UpdateUserPoolDomainResponseTypeDef](./type_defs.md#updateuserpooldomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Domain`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `CustomDomainConfig`:
-  [CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateUserPoolDomainRequestRequestTypeDef = {  # (1)
+    "Domain": ...,
+    "UserPoolId": ...,
+    "CustomDomainConfig": ...,
+}
 
-Returns
-[UpdateUserPoolDomainResponseTypeDef](./type_defs.md#updateuserpooldomainresponsetypedef).
+parent.update_user_pool_domain(**kwargs)
+```
 
-<a id="verify\_software\_token"></a>
+1. See [:material-code-braces: UpdateUserPoolDomainRequestRequestTypeDef](./type_defs.md#updateuserpooldomainrequestrequesttypedef) 
 
-### verify_software_token
+### verify\_software\_token
 
 Use this API to register a user's entered time-based one-time password (TOTP)
 code and mark the user's software token MFA status as "verified" if successful.
 
-Type annotations for `boto3.client("cognito-idp").verify_software_token`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").verify_software_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_software_token)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.verify_software_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_software_token)
+```python title="Method definition"
+def verify_software_token(
+    self,
+    *,
+    UserCode: str,
+    AccessToken: str = ...,
+    Session: str = ...,
+    FriendlyDeviceName: str = ...,
+) -> VerifySoftwareTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[VerifySoftwareTokenRequestRequestTypeDef](./type_defs.md#verifysoftwaretokenrequestrequesttypedef).
+1. See [:material-code-braces: VerifySoftwareTokenResponseTypeDef](./type_defs.md#verifysoftwaretokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserCode`: `str` *(required)*
-- `AccessToken`: `str`
-- `Session`: `str`
-- `FriendlyDeviceName`: `str`
+```python title="Usage example with kwargs"
+kwargs: VerifySoftwareTokenRequestRequestTypeDef = {  # (1)
+    "UserCode": ...,
+}
 
-Returns
-[VerifySoftwareTokenResponseTypeDef](./type_defs.md#verifysoftwaretokenresponsetypedef).
+parent.verify_software_token(**kwargs)
+```
 
-<a id="verify\_user\_attribute"></a>
+1. See [:material-code-braces: VerifySoftwareTokenRequestRequestTypeDef](./type_defs.md#verifysoftwaretokenrequestrequesttypedef) 
 
-### verify_user_attribute
+### verify\_user\_attribute
 
 Verifies the specified user attributes in the user pool.
 
-Type annotations for `boto3.client("cognito-idp").verify_user_attribute`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").verify_user_attribute` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_user_attribute)
 
-Boto3 documentation:
-[CognitoIdentityProvider.Client.verify_user_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client.verify_user_attribute)
+```python title="Method definition"
+def verify_user_attribute(
+    self,
+    *,
+    AccessToken: str,
+    AttributeName: str,
+    Code: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[VerifyUserAttributeRequestRequestTypeDef](./type_defs.md#verifyuserattributerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccessToken`: `str` *(required)*
-- `AttributeName`: `str` *(required)*
-- `Code`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: VerifyUserAttributeRequestRequestTypeDef = {  # (1)
+    "AccessToken": ...,
+    "AttributeName": ...,
+    "Code": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.verify_user_attribute(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: VerifyUserAttributeRequestRequestTypeDef](./type_defs.md#verifyuserattributerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator` method with overloads.
 
-- `client.get_paginator("admin_list_groups_for_user")` ->
-  [AdminListGroupsForUserPaginator](./paginators.md#adminlistgroupsforuserpaginator)
-- `client.get_paginator("admin_list_user_auth_events")` ->
-  [AdminListUserAuthEventsPaginator](./paginators.md#adminlistuserautheventspaginator)
-- `client.get_paginator("list_groups")` ->
-  [ListGroupsPaginator](./paginators.md#listgroupspaginator)
-- `client.get_paginator("list_identity_providers")` ->
-  [ListIdentityProvidersPaginator](./paginators.md#listidentityproviderspaginator)
-- `client.get_paginator("list_resource_servers")` ->
-  [ListResourceServersPaginator](./paginators.md#listresourceserverspaginator)
-- `client.get_paginator("list_user_pool_clients")` ->
-  [ListUserPoolClientsPaginator](./paginators.md#listuserpoolclientspaginator)
-- `client.get_paginator("list_user_pools")` ->
-  [ListUserPoolsPaginator](./paginators.md#listuserpoolspaginator)
-- `client.get_paginator("list_users")` ->
-  [ListUsersPaginator](./paginators.md#listuserspaginator)
-- `client.get_paginator("list_users_in_group")` ->
-  [ListUsersInGroupPaginator](./paginators.md#listusersingrouppaginator)
+- `client.get_paginator("admin_list_groups_for_user")` -> [AdminListGroupsForUserPaginator](./paginators.md#adminlistgroupsforuserpaginator)
+- `client.get_paginator("admin_list_user_auth_events")` -> [AdminListUserAuthEventsPaginator](./paginators.md#adminlistuserautheventspaginator)
+- `client.get_paginator("list_groups")` -> [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+- `client.get_paginator("list_identity_providers")` -> [ListIdentityProvidersPaginator](./paginators.md#listidentityproviderspaginator)
+- `client.get_paginator("list_resource_servers")` -> [ListResourceServersPaginator](./paginators.md#listresourceserverspaginator)
+- `client.get_paginator("list_user_pool_clients")` -> [ListUserPoolClientsPaginator](./paginators.md#listuserpoolclientspaginator)
+- `client.get_paginator("list_user_pools")` -> [ListUserPoolsPaginator](./paginators.md#listuserpoolspaginator)
+- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("list_users_in_group")` -> [ListUsersInGroupPaginator](./paginators.md#listusersingrouppaginator)
+
+
+

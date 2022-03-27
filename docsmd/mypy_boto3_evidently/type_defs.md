@@ -1,1768 +1,2191 @@
-<a id="typed-dictionaries-for-boto3-cloudwatchevidently-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 CloudWatchEvidently module
+> [Index](../README.md) > [CloudWatchEvidently](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [CloudWatchEvidently](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
-type annotations stubs module
-[mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
-
-- [Typed dictionaries for boto3 CloudWatchEvidently module](#typed-dictionaries-for-boto3-cloudwatchevidently-module)
-  - [BatchEvaluateFeatureRequestRequestTypeDef](#batchevaluatefeaturerequestrequesttypedef)
-  - [BatchEvaluateFeatureResponseTypeDef](#batchevaluatefeatureresponsetypedef)
-  - [CloudWatchLogsDestinationConfigTypeDef](#cloudwatchlogsdestinationconfigtypedef)
-  - [CloudWatchLogsDestinationTypeDef](#cloudwatchlogsdestinationtypedef)
-  - [CreateExperimentRequestRequestTypeDef](#createexperimentrequestrequesttypedef)
-  - [CreateExperimentResponseTypeDef](#createexperimentresponsetypedef)
-  - [CreateFeatureRequestRequestTypeDef](#createfeaturerequestrequesttypedef)
-  - [CreateFeatureResponseTypeDef](#createfeatureresponsetypedef)
-  - [CreateLaunchRequestRequestTypeDef](#createlaunchrequestrequesttypedef)
-  - [CreateLaunchResponseTypeDef](#createlaunchresponsetypedef)
-  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
-  - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
-  - [DeleteExperimentRequestRequestTypeDef](#deleteexperimentrequestrequesttypedef)
-  - [DeleteFeatureRequestRequestTypeDef](#deletefeaturerequestrequesttypedef)
-  - [DeleteLaunchRequestRequestTypeDef](#deletelaunchrequestrequesttypedef)
-  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
-  - [EvaluateFeatureRequestRequestTypeDef](#evaluatefeaturerequestrequesttypedef)
-  - [EvaluateFeatureResponseTypeDef](#evaluatefeatureresponsetypedef)
-  - [EvaluationRequestTypeDef](#evaluationrequesttypedef)
-  - [EvaluationResultTypeDef](#evaluationresulttypedef)
-  - [EvaluationRuleTypeDef](#evaluationruletypedef)
-  - [EventTypeDef](#eventtypedef)
-  - [ExperimentExecutionTypeDef](#experimentexecutiontypedef)
-  - [ExperimentReportTypeDef](#experimentreporttypedef)
-  - [ExperimentResultsDataTypeDef](#experimentresultsdatatypedef)
-  - [ExperimentScheduleTypeDef](#experimentscheduletypedef)
-  - [ExperimentTypeDef](#experimenttypedef)
-  - [FeatureSummaryTypeDef](#featuresummarytypedef)
-  - [FeatureTypeDef](#featuretypedef)
-  - [GetExperimentRequestRequestTypeDef](#getexperimentrequestrequesttypedef)
-  - [GetExperimentResponseTypeDef](#getexperimentresponsetypedef)
-  - [GetExperimentResultsRequestRequestTypeDef](#getexperimentresultsrequestrequesttypedef)
-  - [GetExperimentResultsResponseTypeDef](#getexperimentresultsresponsetypedef)
-  - [GetFeatureRequestRequestTypeDef](#getfeaturerequestrequesttypedef)
-  - [GetFeatureResponseTypeDef](#getfeatureresponsetypedef)
-  - [GetLaunchRequestRequestTypeDef](#getlaunchrequestrequesttypedef)
-  - [GetLaunchResponseTypeDef](#getlaunchresponsetypedef)
-  - [GetProjectRequestRequestTypeDef](#getprojectrequestrequesttypedef)
-  - [GetProjectResponseTypeDef](#getprojectresponsetypedef)
-  - [LaunchExecutionTypeDef](#launchexecutiontypedef)
-  - [LaunchGroupConfigTypeDef](#launchgroupconfigtypedef)
-  - [LaunchGroupTypeDef](#launchgrouptypedef)
-  - [LaunchTypeDef](#launchtypedef)
-  - [ListExperimentsRequestRequestTypeDef](#listexperimentsrequestrequesttypedef)
-  - [ListExperimentsResponseTypeDef](#listexperimentsresponsetypedef)
-  - [ListFeaturesRequestRequestTypeDef](#listfeaturesrequestrequesttypedef)
-  - [ListFeaturesResponseTypeDef](#listfeaturesresponsetypedef)
-  - [ListLaunchesRequestRequestTypeDef](#listlaunchesrequestrequesttypedef)
-  - [ListLaunchesResponseTypeDef](#listlaunchesresponsetypedef)
-  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
-  - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MetricDefinitionConfigTypeDef](#metricdefinitionconfigtypedef)
-  - [MetricDefinitionTypeDef](#metricdefinitiontypedef)
-  - [MetricGoalConfigTypeDef](#metricgoalconfigtypedef)
-  - [MetricGoalTypeDef](#metricgoaltypedef)
-  - [MetricMonitorConfigTypeDef](#metricmonitorconfigtypedef)
-  - [MetricMonitorTypeDef](#metricmonitortypedef)
-  - [OnlineAbConfigTypeDef](#onlineabconfigtypedef)
-  - [OnlineAbDefinitionTypeDef](#onlineabdefinitiontypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProjectDataDeliveryConfigTypeDef](#projectdatadeliveryconfigtypedef)
-  - [ProjectDataDeliveryTypeDef](#projectdatadeliverytypedef)
-  - [ProjectSummaryTypeDef](#projectsummarytypedef)
-  - [ProjectTypeDef](#projecttypedef)
-  - [PutProjectEventsRequestRequestTypeDef](#putprojecteventsrequestrequesttypedef)
-  - [PutProjectEventsResponseTypeDef](#putprojecteventsresponsetypedef)
-  - [PutProjectEventsResultEntryTypeDef](#putprojecteventsresultentrytypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3DestinationConfigTypeDef](#s3destinationconfigtypedef)
-  - [S3DestinationTypeDef](#s3destinationtypedef)
-  - [ScheduledSplitConfigTypeDef](#scheduledsplitconfigtypedef)
-  - [ScheduledSplitTypeDef](#scheduledsplittypedef)
-  - [ScheduledSplitsLaunchConfigTypeDef](#scheduledsplitslaunchconfigtypedef)
-  - [ScheduledSplitsLaunchDefinitionTypeDef](#scheduledsplitslaunchdefinitiontypedef)
-  - [StartExperimentRequestRequestTypeDef](#startexperimentrequestrequesttypedef)
-  - [StartExperimentResponseTypeDef](#startexperimentresponsetypedef)
-  - [StartLaunchRequestRequestTypeDef](#startlaunchrequestrequesttypedef)
-  - [StartLaunchResponseTypeDef](#startlaunchresponsetypedef)
-  - [StopExperimentRequestRequestTypeDef](#stopexperimentrequestrequesttypedef)
-  - [StopExperimentResponseTypeDef](#stopexperimentresponsetypedef)
-  - [StopLaunchRequestRequestTypeDef](#stoplaunchrequestrequesttypedef)
-  - [StopLaunchResponseTypeDef](#stoplaunchresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TreatmentConfigTypeDef](#treatmentconfigtypedef)
-  - [TreatmentTypeDef](#treatmenttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateExperimentRequestRequestTypeDef](#updateexperimentrequestrequesttypedef)
-  - [UpdateExperimentResponseTypeDef](#updateexperimentresponsetypedef)
-  - [UpdateFeatureRequestRequestTypeDef](#updatefeaturerequestrequesttypedef)
-  - [UpdateFeatureResponseTypeDef](#updatefeatureresponsetypedef)
-  - [UpdateLaunchRequestRequestTypeDef](#updatelaunchrequestrequesttypedef)
-  - [UpdateLaunchResponseTypeDef](#updatelaunchresponsetypedef)
-  - [UpdateProjectDataDeliveryRequestRequestTypeDef](#updateprojectdatadeliveryrequestrequesttypedef)
-  - [UpdateProjectDataDeliveryResponseTypeDef](#updateprojectdatadeliveryresponsetypedef)
-  - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
-  - [UpdateProjectResponseTypeDef](#updateprojectresponsetypedef)
-  - [VariableValueTypeDef](#variablevaluetypedef)
-  - [VariationConfigTypeDef](#variationconfigtypedef)
-  - [VariationTypeDef](#variationtypedef)
-
-<a id="batchevaluatefeaturerequestrequesttypedef"></a>
+    Auto-generated documentation for [CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
+    type annotations stubs module [mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
 
 ## BatchEvaluateFeatureRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import BatchEvaluateFeatureRequestRequestTypeDef
+
+def get_value() -> BatchEvaluateFeatureRequestRequestTypeDef:
+    return {
+        "project": ...,
+        "requests": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchEvaluateFeatureRequestRequestTypeDef(TypedDict):
+    project: str,
+    requests: Sequence[EvaluationRequestTypeDef],  # (1)
+```
 
-- `project`: `str`
-- `requests`:
-  `Sequence`\[[EvaluationRequestTypeDef](./type_defs.md#evaluationrequesttypedef)\]
-
-<a id="batchevaluatefeatureresponsetypedef"></a>
-
+1. See [:material-code-braces: EvaluationRequestTypeDef](./type_defs.md#evaluationrequesttypedef) 
 ## BatchEvaluateFeatureResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import BatchEvaluateFeatureResponseTypeDef
+
+def get_value() -> BatchEvaluateFeatureResponseTypeDef:
+    return {
+        "results": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchEvaluateFeatureResponseTypeDef(TypedDict):
+    results: List[EvaluationResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `results`:
-  `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cloudwatchlogsdestinationconfigtypedef"></a>
-
+1. See [:material-code-braces: EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CloudWatchLogsDestinationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CloudWatchLogsDestinationConfigTypeDef
+
+def get_value() -> CloudWatchLogsDestinationConfigTypeDef:
+    return {
+        "logGroup": ...,
+    }
 ```
 
-Optional fields:
-
-- `logGroup`: `str`
-
-<a id="cloudwatchlogsdestinationtypedef"></a>
+```python title="Definition"
+class CloudWatchLogsDestinationConfigTypeDef(TypedDict):
+    logGroup: NotRequired[str],
+```
 
 ## CloudWatchLogsDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CloudWatchLogsDestinationTypeDef
+
+def get_value() -> CloudWatchLogsDestinationTypeDef:
+    return {
+        "logGroup": ...,
+    }
 ```
 
-Optional fields:
-
-- `logGroup`: `str`
-
-<a id="createexperimentrequestrequesttypedef"></a>
+```python title="Definition"
+class CloudWatchLogsDestinationTypeDef(TypedDict):
+    logGroup: NotRequired[str],
+```
 
 ## CreateExperimentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CreateExperimentRequestRequestTypeDef
+
+def get_value() -> CreateExperimentRequestRequestTypeDef:
+    return {
+        "metricGoals": ...,
+        "name": ...,
+        "project": ...,
+        "treatments": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExperimentRequestRequestTypeDef(TypedDict):
+    metricGoals: Sequence[MetricGoalConfigTypeDef],  # (1)
+    name: str,
+    project: str,
+    treatments: Sequence[TreatmentConfigTypeDef],  # (2)
+    description: NotRequired[str],
+    onlineAbConfig: NotRequired[OnlineAbConfigTypeDef],  # (3)
+    randomizationSalt: NotRequired[str],
+    samplingRate: NotRequired[int],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `metricGoals`:
-  `Sequence`\[[MetricGoalConfigTypeDef](./type_defs.md#metricgoalconfigtypedef)\]
-- `name`: `str`
-- `project`: `str`
-- `treatments`:
-  `Sequence`\[[TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-- `onlineAbConfig`:
-  [OnlineAbConfigTypeDef](./type_defs.md#onlineabconfigtypedef)
-- `randomizationSalt`: `str`
-- `samplingRate`: `int`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createexperimentresponsetypedef"></a>
-
+1. See [:material-code-braces: MetricGoalConfigTypeDef](./type_defs.md#metricgoalconfigtypedef) 
+2. See [:material-code-braces: TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef) 
+3. See [:material-code-braces: OnlineAbConfigTypeDef](./type_defs.md#onlineabconfigtypedef) 
 ## CreateExperimentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CreateExperimentResponseTypeDef
+
+def get_value() -> CreateExperimentResponseTypeDef:
+    return {
+        "experiment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExperimentResponseTypeDef(TypedDict):
+    experiment: ExperimentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfeaturerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTypeDef](./type_defs.md#experimenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFeatureRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CreateFeatureRequestRequestTypeDef
+
+def get_value() -> CreateFeatureRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "project": ...,
+        "variations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFeatureRequestRequestTypeDef(TypedDict):
+    name: str,
+    project: str,
+    variations: Sequence[VariationConfigTypeDef],  # (1)
+    defaultVariation: NotRequired[str],
+    description: NotRequired[str],
+    entityOverrides: NotRequired[Mapping[str, str]],
+    evaluationStrategy: NotRequired[FeatureEvaluationStrategyType],  # (2)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-- `project`: `str`
-- `variations`:
-  `Sequence`\[[VariationConfigTypeDef](./type_defs.md#variationconfigtypedef)\]
-
-Optional fields:
-
-- `defaultVariation`: `str`
-- `description`: `str`
-- `entityOverrides`: `Mapping`\[`str`, `str`\]
-- `evaluationStrategy`:
-  [FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createfeatureresponsetypedef"></a>
-
+1. See [:material-code-braces: VariationConfigTypeDef](./type_defs.md#variationconfigtypedef) 
+2. See [:material-code-brackets: FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype) 
 ## CreateFeatureResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CreateFeatureResponseTypeDef
+
+def get_value() -> CreateFeatureResponseTypeDef:
+    return {
+        "feature": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFeatureResponseTypeDef(TypedDict):
+    feature: FeatureTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `feature`: [FeatureTypeDef](./type_defs.md#featuretypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createlaunchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FeatureTypeDef](./type_defs.md#featuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLaunchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CreateLaunchRequestRequestTypeDef
+
+def get_value() -> CreateLaunchRequestRequestTypeDef:
+    return {
+        "groups": ...,
+        "name": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLaunchRequestRequestTypeDef(TypedDict):
+    groups: Sequence[LaunchGroupConfigTypeDef],  # (1)
+    name: str,
+    project: str,
+    description: NotRequired[str],
+    metricMonitors: NotRequired[Sequence[MetricMonitorConfigTypeDef]],  # (2)
+    randomizationSalt: NotRequired[str],
+    scheduledSplitsConfig: NotRequired[ScheduledSplitsLaunchConfigTypeDef],  # (3)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `groups`:
-  `Sequence`\[[LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef)\]
-- `name`: `str`
-- `project`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `metricMonitors`:
-  `Sequence`\[[MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef)\]
-- `randomizationSalt`: `str`
-- `scheduledSplitsConfig`:
-  [ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createlaunchresponsetypedef"></a>
-
+1. See [:material-code-braces: LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef) 
+2. See [:material-code-braces: MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef) 
+3. See [:material-code-braces: ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef) 
 ## CreateLaunchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CreateLaunchResponseTypeDef
+
+def get_value() -> CreateLaunchResponseTypeDef:
+    return {
+        "launch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLaunchResponseTypeDef(TypedDict):
+    launch: LaunchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `launch`: [LaunchTypeDef](./type_defs.md#launchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LaunchTypeDef](./type_defs.md#launchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CreateProjectRequestRequestTypeDef
+
+def get_value() -> CreateProjectRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectRequestRequestTypeDef(TypedDict):
+    name: str,
+    dataDelivery: NotRequired[ProjectDataDeliveryConfigTypeDef],  # (1)
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `dataDelivery`:
-  [ProjectDataDeliveryConfigTypeDef](./type_defs.md#projectdatadeliveryconfigtypedef)
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createprojectresponsetypedef"></a>
-
+1. See [:material-code-braces: ProjectDataDeliveryConfigTypeDef](./type_defs.md#projectdatadeliveryconfigtypedef) 
 ## CreateProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import CreateProjectResponseTypeDef
+
+def get_value() -> CreateProjectResponseTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectResponseTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteexperimentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteExperimentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import DeleteExperimentRequestRequestTypeDef
+
+def get_value() -> DeleteExperimentRequestRequestTypeDef:
+    return {
+        "experiment": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `experiment`: `str`
-- `project`: `str`
-
-<a id="deletefeaturerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteExperimentRequestRequestTypeDef(TypedDict):
+    experiment: str,
+    project: str,
+```
 
 ## DeleteFeatureRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import DeleteFeatureRequestRequestTypeDef
+
+def get_value() -> DeleteFeatureRequestRequestTypeDef:
+    return {
+        "feature": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `feature`: `str`
-- `project`: `str`
-
-<a id="deletelaunchrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFeatureRequestRequestTypeDef(TypedDict):
+    feature: str,
+    project: str,
+```
 
 ## DeleteLaunchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import DeleteLaunchRequestRequestTypeDef
+
+def get_value() -> DeleteLaunchRequestRequestTypeDef:
+    return {
+        "launch": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `launch`: `str`
-- `project`: `str`
-
-<a id="deleteprojectrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteLaunchRequestRequestTypeDef(TypedDict):
+    launch: str,
+    project: str,
+```
 
 ## DeleteProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import DeleteProjectRequestRequestTypeDef
+
+def get_value() -> DeleteProjectRequestRequestTypeDef:
+    return {
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `project`: `str`
-
-<a id="evaluatefeaturerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteProjectRequestRequestTypeDef(TypedDict):
+    project: str,
+```
 
 ## EvaluateFeatureRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import EvaluateFeatureRequestRequestTypeDef
+
+def get_value() -> EvaluateFeatureRequestRequestTypeDef:
+    return {
+        "entityId": ...,
+        "feature": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `entityId`: `str`
-- `feature`: `str`
-- `project`: `str`
-
-Optional fields:
-
-- `evaluationContext`: `str`
-
-<a id="evaluatefeatureresponsetypedef"></a>
+```python title="Definition"
+class EvaluateFeatureRequestRequestTypeDef(TypedDict):
+    entityId: str,
+    feature: str,
+    project: str,
+    evaluationContext: NotRequired[str],
+```
 
 ## EvaluateFeatureResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import EvaluateFeatureResponseTypeDef
+
+def get_value() -> EvaluateFeatureResponseTypeDef:
+    return {
+        "details": ...,
+        "reason": ...,
+        "value": ...,
+        "variation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EvaluateFeatureResponseTypeDef(TypedDict):
+    details: str,
+    reason: str,
+    value: VariableValueTypeDef,  # (1)
+    variation: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `details`: `str`
-- `reason`: `str`
-- `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
-- `variation`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="evaluationrequesttypedef"></a>
-
+1. See [:material-code-braces: VariableValueTypeDef](./type_defs.md#variablevaluetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EvaluationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import EvaluationRequestTypeDef
+
+def get_value() -> EvaluationRequestTypeDef:
+    return {
+        "entityId": ...,
+        "feature": ...,
+    }
 ```
 
-Required fields:
-
-- `entityId`: `str`
-- `feature`: `str`
-
-Optional fields:
-
-- `evaluationContext`: `str`
-
-<a id="evaluationresulttypedef"></a>
+```python title="Definition"
+class EvaluationRequestTypeDef(TypedDict):
+    entityId: str,
+    feature: str,
+    evaluationContext: NotRequired[str],
+```
 
 ## EvaluationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import EvaluationResultTypeDef
+
+def get_value() -> EvaluationResultTypeDef:
+    return {
+        "entityId": ...,
+        "feature": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EvaluationResultTypeDef(TypedDict):
+    entityId: str,
+    feature: str,
+    details: NotRequired[str],
+    project: NotRequired[str],
+    reason: NotRequired[str],
+    value: NotRequired[VariableValueTypeDef],  # (1)
+    variation: NotRequired[str],
+```
 
-- `entityId`: `str`
-- `feature`: `str`
-
-Optional fields:
-
-- `details`: `str`
-- `project`: `str`
-- `reason`: `str`
-- `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
-- `variation`: `str`
-
-<a id="evaluationruletypedef"></a>
-
+1. See [:material-code-braces: VariableValueTypeDef](./type_defs.md#variablevaluetypedef) 
 ## EvaluationRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import EvaluationRuleTypeDef
+
+def get_value() -> EvaluationRuleTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
-
-- `type`: `str`
-
-Optional fields:
-
-- `name`: `str`
-
-<a id="eventtypedef"></a>
+```python title="Definition"
+class EvaluationRuleTypeDef(TypedDict):
+    type: str,
+    name: NotRequired[str],
+```
 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "data": ...,
+        "timestamp": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    data: str,
+    timestamp: Union[datetime, str],
+    type: EventTypeType,  # (1)
+```
 
-- `data`: `str`
-- `timestamp`: `Union`\[`datetime`, `str`\]
-- `type`: [EventTypeType](./literals.md#eventtypetype)
-
-<a id="experimentexecutiontypedef"></a>
-
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
 ## ExperimentExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ExperimentExecutionTypeDef
+
+def get_value() -> ExperimentExecutionTypeDef:
+    return {
+        "endedTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `endedTime`: `datetime`
-- `startedTime`: `datetime`
-
-<a id="experimentreporttypedef"></a>
+```python title="Definition"
+class ExperimentExecutionTypeDef(TypedDict):
+    endedTime: NotRequired[datetime],
+    startedTime: NotRequired[datetime],
+```
 
 ## ExperimentReportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ExperimentReportTypeDef
+
+def get_value() -> ExperimentReportTypeDef:
+    return {
+        "content": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentReportTypeDef(TypedDict):
+    content: NotRequired[str],
+    metricName: NotRequired[str],
+    reportName: NotRequired[ExperimentReportNameType],  # (1)
+    treatmentName: NotRequired[str],
+```
 
-- `content`: `str`
-- `metricName`: `str`
-- `reportName`: `Literal['BayesianInference']` (see
-  [ExperimentReportNameType](./literals.md#experimentreportnametype))
-- `treatmentName`: `str`
-
-<a id="experimentresultsdatatypedef"></a>
-
+1. See [:material-code-brackets: ExperimentReportNameType](./literals.md#experimentreportnametype) 
 ## ExperimentResultsDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ExperimentResultsDataTypeDef
+
+def get_value() -> ExperimentResultsDataTypeDef:
+    return {
+        "metricName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentResultsDataTypeDef(TypedDict):
+    metricName: NotRequired[str],
+    resultStat: NotRequired[ExperimentResultResponseTypeType],  # (1)
+    treatmentName: NotRequired[str],
+    values: NotRequired[List[float]],
+```
 
-- `metricName`: `str`
-- `resultStat`:
-  [ExperimentResultResponseTypeType](./literals.md#experimentresultresponsetypetype)
-- `treatmentName`: `str`
-- `values`: `List`\[`float`\]
-
-<a id="experimentscheduletypedef"></a>
-
+1. See [:material-code-brackets: ExperimentResultResponseTypeType](./literals.md#experimentresultresponsetypetype) 
 ## ExperimentScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ExperimentScheduleTypeDef
+
+def get_value() -> ExperimentScheduleTypeDef:
+    return {
+        "analysisCompleteTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `analysisCompleteTime`: `datetime`
-
-<a id="experimenttypedef"></a>
+```python title="Definition"
+class ExperimentScheduleTypeDef(TypedDict):
+    analysisCompleteTime: NotRequired[datetime],
+```
 
 ## ExperimentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ExperimentTypeDef
+
+def get_value() -> ExperimentTypeDef:
+    return {
+        "arn": ...,
+        "createdTime": ...,
+        "lastUpdatedTime": ...,
+        "name": ...,
+        "status": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExperimentTypeDef(TypedDict):
+    arn: str,
+    createdTime: datetime,
+    lastUpdatedTime: datetime,
+    name: str,
+    status: ExperimentStatusType,  # (5)
+    type: ExperimentTypeType,  # (7)
+    description: NotRequired[str],
+    execution: NotRequired[ExperimentExecutionTypeDef],  # (1)
+    metricGoals: NotRequired[List[MetricGoalTypeDef]],  # (2)
+    onlineAbDefinition: NotRequired[OnlineAbDefinitionTypeDef],  # (3)
+    project: NotRequired[str],
+    randomizationSalt: NotRequired[str],
+    samplingRate: NotRequired[int],
+    schedule: NotRequired[ExperimentScheduleTypeDef],  # (4)
+    statusReason: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    treatments: NotRequired[List[TreatmentTypeDef]],  # (6)
+```
 
-- `arn`: `str`
-- `createdTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `name`: `str`
-- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
-- `type`: `Literal['aws.evidently.onlineab']` (see
-  [ExperimentTypeType](./literals.md#experimenttypetype))
-
-Optional fields:
-
-- `description`: `str`
-- `execution`:
-  [ExperimentExecutionTypeDef](./type_defs.md#experimentexecutiontypedef)
-- `metricGoals`:
-  `List`\[[MetricGoalTypeDef](./type_defs.md#metricgoaltypedef)\]
-- `onlineAbDefinition`:
-  [OnlineAbDefinitionTypeDef](./type_defs.md#onlineabdefinitiontypedef)
-- `project`: `str`
-- `randomizationSalt`: `str`
-- `samplingRate`: `int`
-- `schedule`:
-  [ExperimentScheduleTypeDef](./type_defs.md#experimentscheduletypedef)
-- `statusReason`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `treatments`: `List`\[[TreatmentTypeDef](./type_defs.md#treatmenttypedef)\]
-
-<a id="featuresummarytypedef"></a>
-
+1. See [:material-code-braces: ExperimentExecutionTypeDef](./type_defs.md#experimentexecutiontypedef) 
+2. See [:material-code-braces: MetricGoalTypeDef](./type_defs.md#metricgoaltypedef) 
+3. See [:material-code-braces: OnlineAbDefinitionTypeDef](./type_defs.md#onlineabdefinitiontypedef) 
+4. See [:material-code-braces: ExperimentScheduleTypeDef](./type_defs.md#experimentscheduletypedef) 
+5. See [:material-code-brackets: ExperimentStatusType](./literals.md#experimentstatustype) 
+6. See [:material-code-braces: TreatmentTypeDef](./type_defs.md#treatmenttypedef) 
+7. See [:material-code-brackets: ExperimentTypeType](./literals.md#experimenttypetype) 
 ## FeatureSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import FeatureSummaryTypeDef
+
+def get_value() -> FeatureSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdTime": ...,
+        "evaluationStrategy": ...,
+        "lastUpdatedTime": ...,
+        "name": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FeatureSummaryTypeDef(TypedDict):
+    arn: str,
+    createdTime: datetime,
+    evaluationStrategy: FeatureEvaluationStrategyType,  # (2)
+    lastUpdatedTime: datetime,
+    name: str,
+    status: FeatureStatusType,  # (3)
+    defaultVariation: NotRequired[str],
+    evaluationRules: NotRequired[List[EvaluationRuleTypeDef]],  # (1)
+    project: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `arn`: `str`
-- `createdTime`: `datetime`
-- `evaluationStrategy`:
-  [FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype)
-- `lastUpdatedTime`: `datetime`
-- `name`: `str`
-- `status`: [FeatureStatusType](./literals.md#featurestatustype)
-
-Optional fields:
-
-- `defaultVariation`: `str`
-- `evaluationRules`:
-  `List`\[[EvaluationRuleTypeDef](./type_defs.md#evaluationruletypedef)\]
-- `project`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="featuretypedef"></a>
-
+1. See [:material-code-braces: EvaluationRuleTypeDef](./type_defs.md#evaluationruletypedef) 
+2. See [:material-code-brackets: FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype) 
+3. See [:material-code-brackets: FeatureStatusType](./literals.md#featurestatustype) 
 ## FeatureTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import FeatureTypeDef
+
+def get_value() -> FeatureTypeDef:
+    return {
+        "arn": ...,
+        "createdTime": ...,
+        "evaluationStrategy": ...,
+        "lastUpdatedTime": ...,
+        "name": ...,
+        "status": ...,
+        "valueType": ...,
+        "variations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FeatureTypeDef(TypedDict):
+    arn: str,
+    createdTime: datetime,
+    evaluationStrategy: FeatureEvaluationStrategyType,  # (2)
+    lastUpdatedTime: datetime,
+    name: str,
+    status: FeatureStatusType,  # (3)
+    valueType: VariationValueTypeType,  # (4)
+    variations: List[VariationTypeDef],  # (5)
+    defaultVariation: NotRequired[str],
+    description: NotRequired[str],
+    entityOverrides: NotRequired[Dict[str, str]],
+    evaluationRules: NotRequired[List[EvaluationRuleTypeDef]],  # (1)
+    project: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `arn`: `str`
-- `createdTime`: `datetime`
-- `evaluationStrategy`:
-  [FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype)
-- `lastUpdatedTime`: `datetime`
-- `name`: `str`
-- `status`: [FeatureStatusType](./literals.md#featurestatustype)
-- `valueType`: [VariationValueTypeType](./literals.md#variationvaluetypetype)
-- `variations`: `List`\[[VariationTypeDef](./type_defs.md#variationtypedef)\]
-
-Optional fields:
-
-- `defaultVariation`: `str`
-- `description`: `str`
-- `entityOverrides`: `Dict`\[`str`, `str`\]
-- `evaluationRules`:
-  `List`\[[EvaluationRuleTypeDef](./type_defs.md#evaluationruletypedef)\]
-- `project`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="getexperimentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EvaluationRuleTypeDef](./type_defs.md#evaluationruletypedef) 
+2. See [:material-code-brackets: FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype) 
+3. See [:material-code-brackets: FeatureStatusType](./literals.md#featurestatustype) 
+4. See [:material-code-brackets: VariationValueTypeType](./literals.md#variationvaluetypetype) 
+5. See [:material-code-braces: VariationTypeDef](./type_defs.md#variationtypedef) 
 ## GetExperimentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetExperimentRequestRequestTypeDef
+
+def get_value() -> GetExperimentRequestRequestTypeDef:
+    return {
+        "experiment": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `experiment`: `str`
-- `project`: `str`
-
-<a id="getexperimentresponsetypedef"></a>
+```python title="Definition"
+class GetExperimentRequestRequestTypeDef(TypedDict):
+    experiment: str,
+    project: str,
+```
 
 ## GetExperimentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetExperimentResponseTypeDef
+
+def get_value() -> GetExperimentResponseTypeDef:
+    return {
+        "experiment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetExperimentResponseTypeDef(TypedDict):
+    experiment: ExperimentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getexperimentresultsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTypeDef](./type_defs.md#experimenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetExperimentResultsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetExperimentResultsRequestRequestTypeDef
+
+def get_value() -> GetExperimentResultsRequestRequestTypeDef:
+    return {
+        "experiment": ...,
+        "metricNames": ...,
+        "project": ...,
+        "treatmentNames": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetExperimentResultsRequestRequestTypeDef(TypedDict):
+    experiment: str,
+    metricNames: Sequence[str],
+    project: str,
+    treatmentNames: Sequence[str],
+    baseStat: NotRequired[ExperimentBaseStatType],  # (1)
+    endTime: NotRequired[Union[datetime, str]],
+    period: NotRequired[int],
+    reportNames: NotRequired[Sequence[ExperimentReportNameType]],  # (2)
+    resultStats: NotRequired[Sequence[ExperimentResultRequestTypeType]],  # (3)
+    startTime: NotRequired[Union[datetime, str]],
+```
 
-- `experiment`: `str`
-- `metricNames`: `Sequence`\[`str`\]
-- `project`: `str`
-- `treatmentNames`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `baseStat`: `Literal['Mean']` (see
-  [ExperimentBaseStatType](./literals.md#experimentbasestattype))
-- `endTime`: `Union`\[`datetime`, `str`\]
-- `period`: `int`
-- `reportNames`: `Sequence`\[`Literal['BayesianInference']` (see
-  [ExperimentReportNameType](./literals.md#experimentreportnametype))\]
-- `resultStats`:
-  `Sequence`\[[ExperimentResultRequestTypeType](./literals.md#experimentresultrequesttypetype)\]
-- `startTime`: `Union`\[`datetime`, `str`\]
-
-<a id="getexperimentresultsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ExperimentBaseStatType](./literals.md#experimentbasestattype) 
+2. See [:material-code-brackets: ExperimentReportNameType](./literals.md#experimentreportnametype) 
+3. See [:material-code-brackets: ExperimentResultRequestTypeType](./literals.md#experimentresultrequesttypetype) 
 ## GetExperimentResultsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetExperimentResultsResponseTypeDef
+
+def get_value() -> GetExperimentResultsResponseTypeDef:
+    return {
+        "reports": ...,
+        "resultsData": ...,
+        "timestamps": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetExperimentResultsResponseTypeDef(TypedDict):
+    reports: List[ExperimentReportTypeDef],  # (1)
+    resultsData: List[ExperimentResultsDataTypeDef],  # (2)
+    timestamps: List[datetime],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `reports`:
-  `List`\[[ExperimentReportTypeDef](./type_defs.md#experimentreporttypedef)\]
-- `resultsData`:
-  `List`\[[ExperimentResultsDataTypeDef](./type_defs.md#experimentresultsdatatypedef)\]
-- `timestamps`: `List`\[`datetime`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfeaturerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentReportTypeDef](./type_defs.md#experimentreporttypedef) 
+2. See [:material-code-braces: ExperimentResultsDataTypeDef](./type_defs.md#experimentresultsdatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFeatureRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetFeatureRequestRequestTypeDef
+
+def get_value() -> GetFeatureRequestRequestTypeDef:
+    return {
+        "feature": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `feature`: `str`
-- `project`: `str`
-
-<a id="getfeatureresponsetypedef"></a>
+```python title="Definition"
+class GetFeatureRequestRequestTypeDef(TypedDict):
+    feature: str,
+    project: str,
+```
 
 ## GetFeatureResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetFeatureResponseTypeDef
+
+def get_value() -> GetFeatureResponseTypeDef:
+    return {
+        "feature": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFeatureResponseTypeDef(TypedDict):
+    feature: FeatureTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `feature`: [FeatureTypeDef](./type_defs.md#featuretypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlaunchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FeatureTypeDef](./type_defs.md#featuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLaunchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetLaunchRequestRequestTypeDef
+
+def get_value() -> GetLaunchRequestRequestTypeDef:
+    return {
+        "launch": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `launch`: `str`
-- `project`: `str`
-
-<a id="getlaunchresponsetypedef"></a>
+```python title="Definition"
+class GetLaunchRequestRequestTypeDef(TypedDict):
+    launch: str,
+    project: str,
+```
 
 ## GetLaunchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetLaunchResponseTypeDef
+
+def get_value() -> GetLaunchResponseTypeDef:
+    return {
+        "launch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLaunchResponseTypeDef(TypedDict):
+    launch: LaunchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `launch`: [LaunchTypeDef](./type_defs.md#launchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LaunchTypeDef](./type_defs.md#launchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetProjectRequestRequestTypeDef
+
+def get_value() -> GetProjectRequestRequestTypeDef:
+    return {
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `project`: `str`
-
-<a id="getprojectresponsetypedef"></a>
+```python title="Definition"
+class GetProjectRequestRequestTypeDef(TypedDict):
+    project: str,
+```
 
 ## GetProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import GetProjectResponseTypeDef
+
+def get_value() -> GetProjectResponseTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetProjectResponseTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="launchexecutiontypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LaunchExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import LaunchExecutionTypeDef
+
+def get_value() -> LaunchExecutionTypeDef:
+    return {
+        "endedTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `endedTime`: `datetime`
-- `startedTime`: `datetime`
-
-<a id="launchgroupconfigtypedef"></a>
+```python title="Definition"
+class LaunchExecutionTypeDef(TypedDict):
+    endedTime: NotRequired[datetime],
+    startedTime: NotRequired[datetime],
+```
 
 ## LaunchGroupConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import LaunchGroupConfigTypeDef
+
+def get_value() -> LaunchGroupConfigTypeDef:
+    return {
+        "feature": ...,
+        "name": ...,
+        "variation": ...,
+    }
 ```
 
-Required fields:
-
-- `feature`: `str`
-- `name`: `str`
-- `variation`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="launchgrouptypedef"></a>
+```python title="Definition"
+class LaunchGroupConfigTypeDef(TypedDict):
+    feature: str,
+    name: str,
+    variation: str,
+    description: NotRequired[str],
+```
 
 ## LaunchGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import LaunchGroupTypeDef
+
+def get_value() -> LaunchGroupTypeDef:
+    return {
+        "featureVariations": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `featureVariations`: `Dict`\[`str`, `str`\]
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="launchtypedef"></a>
+```python title="Definition"
+class LaunchGroupTypeDef(TypedDict):
+    featureVariations: Dict[str, str],
+    name: str,
+    description: NotRequired[str],
+```
 
 ## LaunchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import LaunchTypeDef
+
+def get_value() -> LaunchTypeDef:
+    return {
+        "arn": ...,
+        "createdTime": ...,
+        "lastUpdatedTime": ...,
+        "name": ...,
+        "status": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LaunchTypeDef(TypedDict):
+    arn: str,
+    createdTime: datetime,
+    lastUpdatedTime: datetime,
+    name: str,
+    status: LaunchStatusType,  # (5)
+    type: LaunchTypeType,  # (6)
+    description: NotRequired[str],
+    execution: NotRequired[LaunchExecutionTypeDef],  # (1)
+    groups: NotRequired[List[LaunchGroupTypeDef]],  # (2)
+    metricMonitors: NotRequired[List[MetricMonitorTypeDef]],  # (3)
+    project: NotRequired[str],
+    randomizationSalt: NotRequired[str],
+    scheduledSplitsDefinition: NotRequired[ScheduledSplitsLaunchDefinitionTypeDef],  # (4)
+    statusReason: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `arn`: `str`
-- `createdTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `name`: `str`
-- `status`: [LaunchStatusType](./literals.md#launchstatustype)
-- `type`: `Literal['aws.evidently.splits']` (see
-  [LaunchTypeType](./literals.md#launchtypetype))
+1. See [:material-code-braces: LaunchExecutionTypeDef](./type_defs.md#launchexecutiontypedef) 
+2. See [:material-code-braces: LaunchGroupTypeDef](./type_defs.md#launchgrouptypedef) 
+3. See [:material-code-braces: MetricMonitorTypeDef](./type_defs.md#metricmonitortypedef) 
+4. See [:material-code-braces: ScheduledSplitsLaunchDefinitionTypeDef](./type_defs.md#scheduledsplitslaunchdefinitiontypedef) 
+5. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
+6. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+## ListExperimentsRequestListExperimentsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListExperimentsRequestListExperimentsPaginateTypeDef
 
-- `description`: `str`
-- `execution`: [LaunchExecutionTypeDef](./type_defs.md#launchexecutiontypedef)
-- `groups`: `List`\[[LaunchGroupTypeDef](./type_defs.md#launchgrouptypedef)\]
-- `metricMonitors`:
-  `List`\[[MetricMonitorTypeDef](./type_defs.md#metricmonitortypedef)\]
-- `project`: `str`
-- `randomizationSalt`: `str`
-- `scheduledSplitsDefinition`:
-  [ScheduledSplitsLaunchDefinitionTypeDef](./type_defs.md#scheduledsplitslaunchdefinitiontypedef)
-- `statusReason`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
+def get_value() -> ListExperimentsRequestListExperimentsPaginateTypeDef:
+    return {
+        "project": ...,
+    }
+```
 
-<a id="listexperimentsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListExperimentsRequestListExperimentsPaginateTypeDef(TypedDict):
+    project: str,
+    status: NotRequired[ExperimentStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-brackets: ExperimentStatusType](./literals.md#experimentstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListExperimentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListExperimentsRequestRequestTypeDef
+
+def get_value() -> ListExperimentsRequestRequestTypeDef:
+    return {
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExperimentsRequestRequestTypeDef(TypedDict):
+    project: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    status: NotRequired[ExperimentStatusType],  # (1)
+```
 
-- `project`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
-
-<a id="listexperimentsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ExperimentStatusType](./literals.md#experimentstatustype) 
 ## ListExperimentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListExperimentsResponseTypeDef
+
+def get_value() -> ListExperimentsResponseTypeDef:
+    return {
+        "experiments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExperimentsResponseTypeDef(TypedDict):
+    experiments: List[ExperimentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experiments`:
-  `List`\[[ExperimentTypeDef](./type_defs.md#experimenttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ExperimentTypeDef](./type_defs.md#experimenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFeaturesRequestListFeaturesPaginateTypeDef
 
-<a id="listfeaturesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListFeaturesRequestListFeaturesPaginateTypeDef
 
+def get_value() -> ListFeaturesRequestListFeaturesPaginateTypeDef:
+    return {
+        "project": ...,
+    }
+```
+
+```python title="Definition"
+class ListFeaturesRequestListFeaturesPaginateTypeDef(TypedDict):
+    project: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFeaturesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListFeaturesRequestRequestTypeDef
+
+def get_value() -> ListFeaturesRequestRequestTypeDef:
+    return {
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `project`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listfeaturesresponsetypedef"></a>
+```python title="Definition"
+class ListFeaturesRequestRequestTypeDef(TypedDict):
+    project: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListFeaturesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListFeaturesResponseTypeDef
+
+def get_value() -> ListFeaturesResponseTypeDef:
+    return {
+        "features": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFeaturesResponseTypeDef(TypedDict):
+    features: List[FeatureSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `features`:
-  `List`\[[FeatureSummaryTypeDef](./type_defs.md#featuresummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FeatureSummaryTypeDef](./type_defs.md#featuresummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLaunchesRequestListLaunchesPaginateTypeDef
 
-<a id="listlaunchesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListLaunchesRequestListLaunchesPaginateTypeDef
 
+def get_value() -> ListLaunchesRequestListLaunchesPaginateTypeDef:
+    return {
+        "project": ...,
+    }
+```
+
+```python title="Definition"
+class ListLaunchesRequestListLaunchesPaginateTypeDef(TypedDict):
+    project: str,
+    status: NotRequired[LaunchStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLaunchesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListLaunchesRequestRequestTypeDef
+
+def get_value() -> ListLaunchesRequestRequestTypeDef:
+    return {
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLaunchesRequestRequestTypeDef(TypedDict):
+    project: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    status: NotRequired[LaunchStatusType],  # (1)
+```
 
-- `project`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `status`: [LaunchStatusType](./literals.md#launchstatustype)
-
-<a id="listlaunchesresponsetypedef"></a>
-
+1. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
 ## ListLaunchesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListLaunchesResponseTypeDef
+
+def get_value() -> ListLaunchesResponseTypeDef:
+    return {
+        "launches": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLaunchesResponseTypeDef(TypedDict):
+    launches: List[LaunchTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `launches`: `List`\[[LaunchTypeDef](./type_defs.md#launchtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: LaunchTypeDef](./type_defs.md#launchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProjectsRequestListProjectsPaginateTypeDef
 
-<a id="listprojectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_evidently.type_defs import ListProjectsRequestListProjectsPaginateTypeDef
 
+def get_value() -> ListProjectsRequestListProjectsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectsRequestListProjectsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListProjectsRequestRequestTypeDef
+
+def get_value() -> ListProjectsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listprojectsresponsetypedef"></a>
+```python title="Definition"
+class ListProjectsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListProjectsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListProjectsResponseTypeDef
+
+def get_value() -> ListProjectsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "projects": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProjectsResponseTypeDef(TypedDict):
+    nextToken: str,
+    projects: List[ProjectSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `projects`:
-  `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="metricdefinitionconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricDefinitionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import MetricDefinitionConfigTypeDef
+
+def get_value() -> MetricDefinitionConfigTypeDef:
+    return {
+        "entityIdKey": ...,
+        "name": ...,
+        "valueKey": ...,
+    }
 ```
 
-Required fields:
-
-- `entityIdKey`: `str`
-- `name`: `str`
-- `valueKey`: `str`
-
-Optional fields:
-
-- `eventPattern`: `str`
-- `unitLabel`: `str`
-
-<a id="metricdefinitiontypedef"></a>
+```python title="Definition"
+class MetricDefinitionConfigTypeDef(TypedDict):
+    entityIdKey: str,
+    name: str,
+    valueKey: str,
+    eventPattern: NotRequired[str],
+    unitLabel: NotRequired[str],
+```
 
 ## MetricDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import MetricDefinitionTypeDef
+
+def get_value() -> MetricDefinitionTypeDef:
+    return {
+        "entityIdKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `entityIdKey`: `str`
-- `eventPattern`: `str`
-- `name`: `str`
-- `unitLabel`: `str`
-- `valueKey`: `str`
-
-<a id="metricgoalconfigtypedef"></a>
+```python title="Definition"
+class MetricDefinitionTypeDef(TypedDict):
+    entityIdKey: NotRequired[str],
+    eventPattern: NotRequired[str],
+    name: NotRequired[str],
+    unitLabel: NotRequired[str],
+    valueKey: NotRequired[str],
+```
 
 ## MetricGoalConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import MetricGoalConfigTypeDef
+
+def get_value() -> MetricGoalConfigTypeDef:
+    return {
+        "metricDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricGoalConfigTypeDef(TypedDict):
+    metricDefinition: MetricDefinitionConfigTypeDef,  # (2)
+    desiredChange: NotRequired[ChangeDirectionEnumType],  # (1)
+```
 
-- `metricDefinition`:
-  [MetricDefinitionConfigTypeDef](./type_defs.md#metricdefinitionconfigtypedef)
-
-Optional fields:
-
-- `desiredChange`:
-  [ChangeDirectionEnumType](./literals.md#changedirectionenumtype)
-
-<a id="metricgoaltypedef"></a>
-
+1. See [:material-code-brackets: ChangeDirectionEnumType](./literals.md#changedirectionenumtype) 
+2. See [:material-code-braces: MetricDefinitionConfigTypeDef](./type_defs.md#metricdefinitionconfigtypedef) 
 ## MetricGoalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import MetricGoalTypeDef
+
+def get_value() -> MetricGoalTypeDef:
+    return {
+        "metricDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricGoalTypeDef(TypedDict):
+    metricDefinition: MetricDefinitionTypeDef,  # (2)
+    desiredChange: NotRequired[ChangeDirectionEnumType],  # (1)
+```
 
-- `metricDefinition`:
-  [MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)
-
-Optional fields:
-
-- `desiredChange`:
-  [ChangeDirectionEnumType](./literals.md#changedirectionenumtype)
-
-<a id="metricmonitorconfigtypedef"></a>
-
+1. See [:material-code-brackets: ChangeDirectionEnumType](./literals.md#changedirectionenumtype) 
+2. See [:material-code-braces: MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef) 
 ## MetricMonitorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import MetricMonitorConfigTypeDef
+
+def get_value() -> MetricMonitorConfigTypeDef:
+    return {
+        "metricDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricMonitorConfigTypeDef(TypedDict):
+    metricDefinition: MetricDefinitionConfigTypeDef,  # (1)
+```
 
-- `metricDefinition`:
-  [MetricDefinitionConfigTypeDef](./type_defs.md#metricdefinitionconfigtypedef)
-
-<a id="metricmonitortypedef"></a>
-
+1. See [:material-code-braces: MetricDefinitionConfigTypeDef](./type_defs.md#metricdefinitionconfigtypedef) 
 ## MetricMonitorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import MetricMonitorTypeDef
+
+def get_value() -> MetricMonitorTypeDef:
+    return {
+        "metricDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricMonitorTypeDef(TypedDict):
+    metricDefinition: MetricDefinitionTypeDef,  # (1)
+```
 
-- `metricDefinition`:
-  [MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)
-
-<a id="onlineabconfigtypedef"></a>
-
+1. See [:material-code-braces: MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef) 
 ## OnlineAbConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import OnlineAbConfigTypeDef
+
+def get_value() -> OnlineAbConfigTypeDef:
+    return {
+        "controlTreatmentName": ...,
+    }
 ```
 
-Optional fields:
-
-- `controlTreatmentName`: `str`
-- `treatmentWeights`: `Mapping`\[`str`, `int`\]
-
-<a id="onlineabdefinitiontypedef"></a>
+```python title="Definition"
+class OnlineAbConfigTypeDef(TypedDict):
+    controlTreatmentName: NotRequired[str],
+    treatmentWeights: NotRequired[Mapping[str, int]],
+```
 
 ## OnlineAbDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import OnlineAbDefinitionTypeDef
+
+def get_value() -> OnlineAbDefinitionTypeDef:
+    return {
+        "controlTreatmentName": ...,
+    }
 ```
 
-Optional fields:
-
-- `controlTreatmentName`: `str`
-- `treatmentWeights`: `Dict`\[`str`, `int`\]
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OnlineAbDefinitionTypeDef(TypedDict):
+    controlTreatmentName: NotRequired[str],
+    treatmentWeights: NotRequired[Dict[str, int]],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="projectdatadeliveryconfigtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProjectDataDeliveryConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ProjectDataDeliveryConfigTypeDef
+
+def get_value() -> ProjectDataDeliveryConfigTypeDef:
+    return {
+        "cloudWatchLogs": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectDataDeliveryConfigTypeDef(TypedDict):
+    cloudWatchLogs: NotRequired[CloudWatchLogsDestinationConfigTypeDef],  # (1)
+    s3Destination: NotRequired[S3DestinationConfigTypeDef],  # (2)
+```
 
-- `cloudWatchLogs`:
-  [CloudWatchLogsDestinationConfigTypeDef](./type_defs.md#cloudwatchlogsdestinationconfigtypedef)
-- `s3Destination`:
-  [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
-
-<a id="projectdatadeliverytypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogsDestinationConfigTypeDef](./type_defs.md#cloudwatchlogsdestinationconfigtypedef) 
+2. See [:material-code-braces: S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef) 
 ## ProjectDataDeliveryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ProjectDataDeliveryTypeDef
+
+def get_value() -> ProjectDataDeliveryTypeDef:
+    return {
+        "cloudWatchLogs": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectDataDeliveryTypeDef(TypedDict):
+    cloudWatchLogs: NotRequired[CloudWatchLogsDestinationTypeDef],  # (1)
+    s3Destination: NotRequired[S3DestinationTypeDef],  # (2)
+```
 
-- `cloudWatchLogs`:
-  [CloudWatchLogsDestinationTypeDef](./type_defs.md#cloudwatchlogsdestinationtypedef)
-- `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
-
-<a id="projectsummarytypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogsDestinationTypeDef](./type_defs.md#cloudwatchlogsdestinationtypedef) 
+2. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
 ## ProjectSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ProjectSummaryTypeDef
+
+def get_value() -> ProjectSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdTime": ...,
+        "lastUpdatedTime": ...,
+        "name": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProjectSummaryTypeDef(TypedDict):
+    arn: str,
+    createdTime: datetime,
+    lastUpdatedTime: datetime,
+    name: str,
+    status: ProjectStatusType,  # (1)
+    activeExperimentCount: NotRequired[int],
+    activeLaunchCount: NotRequired[int],
+    description: NotRequired[str],
+    experimentCount: NotRequired[int],
+    featureCount: NotRequired[int],
+    launchCount: NotRequired[int],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `arn`: `str`
-- `createdTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `name`: `str`
-- `status`: [ProjectStatusType](./literals.md#projectstatustype)
-
-Optional fields:
-
-- `activeExperimentCount`: `int`
-- `activeLaunchCount`: `int`
-- `description`: `str`
-- `experimentCount`: `int`
-- `featureCount`: `int`
-- `launchCount`: `int`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="projecttypedef"></a>
-
+1. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
 ## ProjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ProjectTypeDef
+
+def get_value() -> ProjectTypeDef:
+    return {
+        "arn": ...,
+        "createdTime": ...,
+        "lastUpdatedTime": ...,
+        "name": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProjectTypeDef(TypedDict):
+    arn: str,
+    createdTime: datetime,
+    lastUpdatedTime: datetime,
+    name: str,
+    status: ProjectStatusType,  # (2)
+    activeExperimentCount: NotRequired[int],
+    activeLaunchCount: NotRequired[int],
+    dataDelivery: NotRequired[ProjectDataDeliveryTypeDef],  # (1)
+    description: NotRequired[str],
+    experimentCount: NotRequired[int],
+    featureCount: NotRequired[int],
+    launchCount: NotRequired[int],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `arn`: `str`
-- `createdTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `name`: `str`
-- `status`: [ProjectStatusType](./literals.md#projectstatustype)
-
-Optional fields:
-
-- `activeExperimentCount`: `int`
-- `activeLaunchCount`: `int`
-- `dataDelivery`:
-  [ProjectDataDeliveryTypeDef](./type_defs.md#projectdatadeliverytypedef)
-- `description`: `str`
-- `experimentCount`: `int`
-- `featureCount`: `int`
-- `launchCount`: `int`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="putprojecteventsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectDataDeliveryTypeDef](./type_defs.md#projectdatadeliverytypedef) 
+2. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
 ## PutProjectEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import PutProjectEventsRequestRequestTypeDef
+
+def get_value() -> PutProjectEventsRequestRequestTypeDef:
+    return {
+        "events": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutProjectEventsRequestRequestTypeDef(TypedDict):
+    events: Sequence[EventTypeDef],  # (1)
+    project: str,
+```
 
-- `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-- `project`: `str`
-
-<a id="putprojecteventsresponsetypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
 ## PutProjectEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import PutProjectEventsResponseTypeDef
+
+def get_value() -> PutProjectEventsResponseTypeDef:
+    return {
+        "eventResults": ...,
+        "failedEventCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutProjectEventsResponseTypeDef(TypedDict):
+    eventResults: List[PutProjectEventsResultEntryTypeDef],  # (1)
+    failedEventCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `eventResults`:
-  `List`\[[PutProjectEventsResultEntryTypeDef](./type_defs.md#putprojecteventsresultentrytypedef)\]
-- `failedEventCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putprojecteventsresultentrytypedef"></a>
-
+1. See [:material-code-braces: PutProjectEventsResultEntryTypeDef](./type_defs.md#putprojecteventsresultentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutProjectEventsResultEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import PutProjectEventsResultEntryTypeDef
+
+def get_value() -> PutProjectEventsResultEntryTypeDef:
+    return {
+        "errorCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `errorCode`: `str`
-- `errorMessage`: `str`
-- `eventId`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PutProjectEventsResultEntryTypeDef(TypedDict):
+    errorCode: NotRequired[str],
+    errorMessage: NotRequired[str],
+    eventId: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3destinationconfigtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3DestinationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import S3DestinationConfigTypeDef
+
+def get_value() -> S3DestinationConfigTypeDef:
+    return {
+        "bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucket`: `str`
-- `prefix`: `str`
-
-<a id="s3destinationtypedef"></a>
+```python title="Definition"
+class S3DestinationConfigTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    prefix: NotRequired[str],
+```
 
 ## S3DestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import S3DestinationTypeDef
+
+def get_value() -> S3DestinationTypeDef:
+    return {
+        "bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucket`: `str`
-- `prefix`: `str`
-
-<a id="scheduledsplitconfigtypedef"></a>
+```python title="Definition"
+class S3DestinationTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    prefix: NotRequired[str],
+```
 
 ## ScheduledSplitConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ScheduledSplitConfigTypeDef
+
+def get_value() -> ScheduledSplitConfigTypeDef:
+    return {
+        "groupWeights": ...,
+        "startTime": ...,
+    }
 ```
 
-Required fields:
-
-- `groupWeights`: `Mapping`\[`str`, `int`\]
-- `startTime`: `Union`\[`datetime`, `str`\]
-
-<a id="scheduledsplittypedef"></a>
+```python title="Definition"
+class ScheduledSplitConfigTypeDef(TypedDict):
+    groupWeights: Mapping[str, int],
+    startTime: Union[datetime, str],
+```
 
 ## ScheduledSplitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ScheduledSplitTypeDef
+
+def get_value() -> ScheduledSplitTypeDef:
+    return {
+        "startTime": ...,
+    }
 ```
 
-Required fields:
-
-- `startTime`: `datetime`
-
-Optional fields:
-
-- `groupWeights`: `Dict`\[`str`, `int`\]
-
-<a id="scheduledsplitslaunchconfigtypedef"></a>
+```python title="Definition"
+class ScheduledSplitTypeDef(TypedDict):
+    startTime: datetime,
+    groupWeights: NotRequired[Dict[str, int]],
+```
 
 ## ScheduledSplitsLaunchConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ScheduledSplitsLaunchConfigTypeDef
+
+def get_value() -> ScheduledSplitsLaunchConfigTypeDef:
+    return {
+        "steps": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduledSplitsLaunchConfigTypeDef(TypedDict):
+    steps: Sequence[ScheduledSplitConfigTypeDef],  # (1)
+```
 
-- `steps`:
-  `Sequence`\[[ScheduledSplitConfigTypeDef](./type_defs.md#scheduledsplitconfigtypedef)\]
-
-<a id="scheduledsplitslaunchdefinitiontypedef"></a>
-
+1. See [:material-code-braces: ScheduledSplitConfigTypeDef](./type_defs.md#scheduledsplitconfigtypedef) 
 ## ScheduledSplitsLaunchDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import ScheduledSplitsLaunchDefinitionTypeDef
+
+def get_value() -> ScheduledSplitsLaunchDefinitionTypeDef:
+    return {
+        "steps": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScheduledSplitsLaunchDefinitionTypeDef(TypedDict):
+    steps: NotRequired[List[ScheduledSplitTypeDef]],  # (1)
+```
 
-- `steps`:
-  `List`\[[ScheduledSplitTypeDef](./type_defs.md#scheduledsplittypedef)\]
-
-<a id="startexperimentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ScheduledSplitTypeDef](./type_defs.md#scheduledsplittypedef) 
 ## StartExperimentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import StartExperimentRequestRequestTypeDef
+
+def get_value() -> StartExperimentRequestRequestTypeDef:
+    return {
+        "analysisCompleteTime": ...,
+        "experiment": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `analysisCompleteTime`: `Union`\[`datetime`, `str`\]
-- `experiment`: `str`
-- `project`: `str`
-
-<a id="startexperimentresponsetypedef"></a>
+```python title="Definition"
+class StartExperimentRequestRequestTypeDef(TypedDict):
+    analysisCompleteTime: Union[datetime, str],
+    experiment: str,
+    project: str,
+```
 
 ## StartExperimentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import StartExperimentResponseTypeDef
+
+def get_value() -> StartExperimentResponseTypeDef:
+    return {
+        "startedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartExperimentResponseTypeDef(TypedDict):
+    startedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `startedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startlaunchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartLaunchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import StartLaunchRequestRequestTypeDef
+
+def get_value() -> StartLaunchRequestRequestTypeDef:
+    return {
+        "launch": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `launch`: `str`
-- `project`: `str`
-
-<a id="startlaunchresponsetypedef"></a>
+```python title="Definition"
+class StartLaunchRequestRequestTypeDef(TypedDict):
+    launch: str,
+    project: str,
+```
 
 ## StartLaunchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import StartLaunchResponseTypeDef
+
+def get_value() -> StartLaunchResponseTypeDef:
+    return {
+        "launch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartLaunchResponseTypeDef(TypedDict):
+    launch: LaunchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `launch`: [LaunchTypeDef](./type_defs.md#launchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopexperimentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LaunchTypeDef](./type_defs.md#launchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopExperimentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import StopExperimentRequestRequestTypeDef
+
+def get_value() -> StopExperimentRequestRequestTypeDef:
+    return {
+        "experiment": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopExperimentRequestRequestTypeDef(TypedDict):
+    experiment: str,
+    project: str,
+    desiredState: NotRequired[ExperimentStopDesiredStateType],  # (1)
+    reason: NotRequired[str],
+```
 
-- `experiment`: `str`
-- `project`: `str`
-
-Optional fields:
-
-- `desiredState`:
-  [ExperimentStopDesiredStateType](./literals.md#experimentstopdesiredstatetype)
-- `reason`: `str`
-
-<a id="stopexperimentresponsetypedef"></a>
-
+1. See [:material-code-brackets: ExperimentStopDesiredStateType](./literals.md#experimentstopdesiredstatetype) 
 ## StopExperimentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import StopExperimentResponseTypeDef
+
+def get_value() -> StopExperimentResponseTypeDef:
+    return {
+        "endedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopExperimentResponseTypeDef(TypedDict):
+    endedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `endedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stoplaunchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopLaunchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import StopLaunchRequestRequestTypeDef
+
+def get_value() -> StopLaunchRequestRequestTypeDef:
+    return {
+        "launch": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopLaunchRequestRequestTypeDef(TypedDict):
+    launch: str,
+    project: str,
+    desiredState: NotRequired[LaunchStopDesiredStateType],  # (1)
+    reason: NotRequired[str],
+```
 
-- `launch`: `str`
-- `project`: `str`
-
-Optional fields:
-
-- `desiredState`:
-  [LaunchStopDesiredStateType](./literals.md#launchstopdesiredstatetype)
-- `reason`: `str`
-
-<a id="stoplaunchresponsetypedef"></a>
-
+1. See [:material-code-brackets: LaunchStopDesiredStateType](./literals.md#launchstopdesiredstatetype) 
 ## StopLaunchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import StopLaunchResponseTypeDef
+
+def get_value() -> StopLaunchResponseTypeDef:
+    return {
+        "endedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopLaunchResponseTypeDef(TypedDict):
+    endedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `endedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="treatmentconfigtypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TreatmentConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import TreatmentConfigTypeDef
+
+def get_value() -> TreatmentConfigTypeDef:
+    return {
+        "feature": ...,
+        "name": ...,
+        "variation": ...,
+    }
 ```
 
-Required fields:
-
-- `feature`: `str`
-- `name`: `str`
-- `variation`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="treatmenttypedef"></a>
+```python title="Definition"
+class TreatmentConfigTypeDef(TypedDict):
+    feature: str,
+    name: str,
+    variation: str,
+    description: NotRequired[str],
+```
 
 ## TreatmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import TreatmentTypeDef
+
+def get_value() -> TreatmentTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `featureVariations`: `Dict`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TreatmentTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    featureVariations: NotRequired[Dict[str, str]],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateexperimentrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateExperimentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateExperimentRequestRequestTypeDef
+
+def get_value() -> UpdateExperimentRequestRequestTypeDef:
+    return {
+        "experiment": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateExperimentRequestRequestTypeDef(TypedDict):
+    experiment: str,
+    project: str,
+    description: NotRequired[str],
+    metricGoals: NotRequired[Sequence[MetricGoalConfigTypeDef]],  # (1)
+    onlineAbConfig: NotRequired[OnlineAbConfigTypeDef],  # (2)
+    randomizationSalt: NotRequired[str],
+    samplingRate: NotRequired[int],
+    treatments: NotRequired[Sequence[TreatmentConfigTypeDef]],  # (3)
+```
 
-- `experiment`: `str`
-- `project`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `metricGoals`:
-  `Sequence`\[[MetricGoalConfigTypeDef](./type_defs.md#metricgoalconfigtypedef)\]
-- `onlineAbConfig`:
-  [OnlineAbConfigTypeDef](./type_defs.md#onlineabconfigtypedef)
-- `randomizationSalt`: `str`
-- `samplingRate`: `int`
-- `treatments`:
-  `Sequence`\[[TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef)\]
-
-<a id="updateexperimentresponsetypedef"></a>
-
+1. See [:material-code-braces: MetricGoalConfigTypeDef](./type_defs.md#metricgoalconfigtypedef) 
+2. See [:material-code-braces: OnlineAbConfigTypeDef](./type_defs.md#onlineabconfigtypedef) 
+3. See [:material-code-braces: TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef) 
 ## UpdateExperimentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateExperimentResponseTypeDef
+
+def get_value() -> UpdateExperimentResponseTypeDef:
+    return {
+        "experiment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateExperimentResponseTypeDef(TypedDict):
+    experiment: ExperimentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatefeaturerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTypeDef](./type_defs.md#experimenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFeatureRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateFeatureRequestRequestTypeDef
+
+def get_value() -> UpdateFeatureRequestRequestTypeDef:
+    return {
+        "feature": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFeatureRequestRequestTypeDef(TypedDict):
+    feature: str,
+    project: str,
+    addOrUpdateVariations: NotRequired[Sequence[VariationConfigTypeDef]],  # (1)
+    defaultVariation: NotRequired[str],
+    description: NotRequired[str],
+    entityOverrides: NotRequired[Mapping[str, str]],
+    evaluationStrategy: NotRequired[FeatureEvaluationStrategyType],  # (2)
+    removeVariations: NotRequired[Sequence[str]],
+```
 
-- `feature`: `str`
-- `project`: `str`
-
-Optional fields:
-
-- `addOrUpdateVariations`:
-  `Sequence`\[[VariationConfigTypeDef](./type_defs.md#variationconfigtypedef)\]
-- `defaultVariation`: `str`
-- `description`: `str`
-- `entityOverrides`: `Mapping`\[`str`, `str`\]
-- `evaluationStrategy`:
-  [FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype)
-- `removeVariations`: `Sequence`\[`str`\]
-
-<a id="updatefeatureresponsetypedef"></a>
-
+1. See [:material-code-braces: VariationConfigTypeDef](./type_defs.md#variationconfigtypedef) 
+2. See [:material-code-brackets: FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype) 
 ## UpdateFeatureResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateFeatureResponseTypeDef
+
+def get_value() -> UpdateFeatureResponseTypeDef:
+    return {
+        "feature": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFeatureResponseTypeDef(TypedDict):
+    feature: FeatureTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `feature`: [FeatureTypeDef](./type_defs.md#featuretypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatelaunchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FeatureTypeDef](./type_defs.md#featuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateLaunchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateLaunchRequestRequestTypeDef
+
+def get_value() -> UpdateLaunchRequestRequestTypeDef:
+    return {
+        "launch": ...,
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateLaunchRequestRequestTypeDef(TypedDict):
+    launch: str,
+    project: str,
+    description: NotRequired[str],
+    groups: NotRequired[Sequence[LaunchGroupConfigTypeDef]],  # (1)
+    metricMonitors: NotRequired[Sequence[MetricMonitorConfigTypeDef]],  # (2)
+    randomizationSalt: NotRequired[str],
+    scheduledSplitsConfig: NotRequired[ScheduledSplitsLaunchConfigTypeDef],  # (3)
+```
 
-- `launch`: `str`
-- `project`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `groups`:
-  `Sequence`\[[LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef)\]
-- `metricMonitors`:
-  `Sequence`\[[MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef)\]
-- `randomizationSalt`: `str`
-- `scheduledSplitsConfig`:
-  [ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef)
-
-<a id="updatelaunchresponsetypedef"></a>
-
+1. See [:material-code-braces: LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef) 
+2. See [:material-code-braces: MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef) 
+3. See [:material-code-braces: ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef) 
 ## UpdateLaunchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateLaunchResponseTypeDef
+
+def get_value() -> UpdateLaunchResponseTypeDef:
+    return {
+        "launch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateLaunchResponseTypeDef(TypedDict):
+    launch: LaunchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `launch`: [LaunchTypeDef](./type_defs.md#launchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateprojectdatadeliveryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LaunchTypeDef](./type_defs.md#launchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateProjectDataDeliveryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateProjectDataDeliveryRequestRequestTypeDef
+
+def get_value() -> UpdateProjectDataDeliveryRequestRequestTypeDef:
+    return {
+        "project": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectDataDeliveryRequestRequestTypeDef(TypedDict):
+    project: str,
+    cloudWatchLogs: NotRequired[CloudWatchLogsDestinationConfigTypeDef],  # (1)
+    s3Destination: NotRequired[S3DestinationConfigTypeDef],  # (2)
+```
 
-- `project`: `str`
-
-Optional fields:
-
-- `cloudWatchLogs`:
-  [CloudWatchLogsDestinationConfigTypeDef](./type_defs.md#cloudwatchlogsdestinationconfigtypedef)
-- `s3Destination`:
-  [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
-
-<a id="updateprojectdatadeliveryresponsetypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogsDestinationConfigTypeDef](./type_defs.md#cloudwatchlogsdestinationconfigtypedef) 
+2. See [:material-code-braces: S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef) 
 ## UpdateProjectDataDeliveryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateProjectDataDeliveryResponseTypeDef
+
+def get_value() -> UpdateProjectDataDeliveryResponseTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectDataDeliveryResponseTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateProjectRequestRequestTypeDef
+
+def get_value() -> UpdateProjectRequestRequestTypeDef:
+    return {
+        "project": ...,
+    }
 ```
 
-Required fields:
-
-- `project`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="updateprojectresponsetypedef"></a>
+```python title="Definition"
+class UpdateProjectRequestRequestTypeDef(TypedDict):
+    project: str,
+    description: NotRequired[str],
+```
 
 ## UpdateProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import UpdateProjectResponseTypeDef
+
+def get_value() -> UpdateProjectResponseTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectResponseTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="variablevaluetypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VariableValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import VariableValueTypeDef
+
+def get_value() -> VariableValueTypeDef:
+    return {
+        "boolValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `boolValue`: `bool`
-- `doubleValue`: `float`
-- `longValue`: `int`
-- `stringValue`: `str`
-
-<a id="variationconfigtypedef"></a>
+```python title="Definition"
+class VariableValueTypeDef(TypedDict):
+    boolValue: NotRequired[bool],
+    doubleValue: NotRequired[float],
+    longValue: NotRequired[int],
+    stringValue: NotRequired[str],
+```
 
 ## VariationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import VariationConfigTypeDef
+
+def get_value() -> VariationConfigTypeDef:
+    return {
+        "name": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VariationConfigTypeDef(TypedDict):
+    name: str,
+    value: VariableValueTypeDef,  # (1)
+```
 
-- `name`: `str`
-- `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
-
-<a id="variationtypedef"></a>
-
+1. See [:material-code-braces: VariableValueTypeDef](./type_defs.md#variablevaluetypedef) 
 ## VariationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_evidently.type_defs import VariationTypeDef
+
+def get_value() -> VariationTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VariationTypeDef(TypedDict):
+    name: NotRequired[str],
+    value: NotRequired[VariableValueTypeDef],  # (1)
+```
 
-- `name`: `str`
-- `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
+1. See [:material-code-braces: VariableValueTypeDef](./type_defs.md#variablevaluetypedef) 

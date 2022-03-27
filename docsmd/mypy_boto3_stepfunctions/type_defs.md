@@ -1,1426 +1,1782 @@
-<a id="typed-dictionaries-for-boto3-sfn-module"></a>
-
-# Typed dictionaries for boto3 SFN module
+# Typed dictionaries
 
 > [Index](../README.md) > [SFN](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
-type annotations stubs module
-[mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SFN module](#typed-dictionaries-for-boto3-sfn-module)
-  - [ActivityFailedEventDetailsTypeDef](#activityfailedeventdetailstypedef)
-  - [ActivityListItemTypeDef](#activitylistitemtypedef)
-  - [ActivityScheduleFailedEventDetailsTypeDef](#activityschedulefailedeventdetailstypedef)
-  - [ActivityScheduledEventDetailsTypeDef](#activityscheduledeventdetailstypedef)
-  - [ActivityStartedEventDetailsTypeDef](#activitystartedeventdetailstypedef)
-  - [ActivitySucceededEventDetailsTypeDef](#activitysucceededeventdetailstypedef)
-  - [ActivityTimedOutEventDetailsTypeDef](#activitytimedouteventdetailstypedef)
-  - [BillingDetailsTypeDef](#billingdetailstypedef)
-  - [CloudWatchEventsExecutionDataDetailsTypeDef](#cloudwatcheventsexecutiondatadetailstypedef)
-  - [CloudWatchLogsLogGroupTypeDef](#cloudwatchlogsloggrouptypedef)
-  - [CreateActivityInputRequestTypeDef](#createactivityinputrequesttypedef)
-  - [CreateActivityOutputTypeDef](#createactivityoutputtypedef)
-  - [CreateStateMachineInputRequestTypeDef](#createstatemachineinputrequesttypedef)
-  - [CreateStateMachineOutputTypeDef](#createstatemachineoutputtypedef)
-  - [DeleteActivityInputRequestTypeDef](#deleteactivityinputrequesttypedef)
-  - [DeleteStateMachineInputRequestTypeDef](#deletestatemachineinputrequesttypedef)
-  - [DescribeActivityInputRequestTypeDef](#describeactivityinputrequesttypedef)
-  - [DescribeActivityOutputTypeDef](#describeactivityoutputtypedef)
-  - [DescribeExecutionInputRequestTypeDef](#describeexecutioninputrequesttypedef)
-  - [DescribeExecutionOutputTypeDef](#describeexecutionoutputtypedef)
-  - [DescribeStateMachineForExecutionInputRequestTypeDef](#describestatemachineforexecutioninputrequesttypedef)
-  - [DescribeStateMachineForExecutionOutputTypeDef](#describestatemachineforexecutionoutputtypedef)
-  - [DescribeStateMachineInputRequestTypeDef](#describestatemachineinputrequesttypedef)
-  - [DescribeStateMachineOutputTypeDef](#describestatemachineoutputtypedef)
-  - [ExecutionAbortedEventDetailsTypeDef](#executionabortedeventdetailstypedef)
-  - [ExecutionFailedEventDetailsTypeDef](#executionfailedeventdetailstypedef)
-  - [ExecutionListItemTypeDef](#executionlistitemtypedef)
-  - [ExecutionStartedEventDetailsTypeDef](#executionstartedeventdetailstypedef)
-  - [ExecutionSucceededEventDetailsTypeDef](#executionsucceededeventdetailstypedef)
-  - [ExecutionTimedOutEventDetailsTypeDef](#executiontimedouteventdetailstypedef)
-  - [GetActivityTaskInputRequestTypeDef](#getactivitytaskinputrequesttypedef)
-  - [GetActivityTaskOutputTypeDef](#getactivitytaskoutputtypedef)
-  - [GetExecutionHistoryInputRequestTypeDef](#getexecutionhistoryinputrequesttypedef)
-  - [GetExecutionHistoryOutputTypeDef](#getexecutionhistoryoutputtypedef)
-  - [HistoryEventExecutionDataDetailsTypeDef](#historyeventexecutiondatadetailstypedef)
-  - [HistoryEventTypeDef](#historyeventtypedef)
-  - [LambdaFunctionFailedEventDetailsTypeDef](#lambdafunctionfailedeventdetailstypedef)
-  - [LambdaFunctionScheduleFailedEventDetailsTypeDef](#lambdafunctionschedulefailedeventdetailstypedef)
-  - [LambdaFunctionScheduledEventDetailsTypeDef](#lambdafunctionscheduledeventdetailstypedef)
-  - [LambdaFunctionStartFailedEventDetailsTypeDef](#lambdafunctionstartfailedeventdetailstypedef)
-  - [LambdaFunctionSucceededEventDetailsTypeDef](#lambdafunctionsucceededeventdetailstypedef)
-  - [LambdaFunctionTimedOutEventDetailsTypeDef](#lambdafunctiontimedouteventdetailstypedef)
-  - [ListActivitiesInputRequestTypeDef](#listactivitiesinputrequesttypedef)
-  - [ListActivitiesOutputTypeDef](#listactivitiesoutputtypedef)
-  - [ListExecutionsInputRequestTypeDef](#listexecutionsinputrequesttypedef)
-  - [ListExecutionsOutputTypeDef](#listexecutionsoutputtypedef)
-  - [ListStateMachinesInputRequestTypeDef](#liststatemachinesinputrequesttypedef)
-  - [ListStateMachinesOutputTypeDef](#liststatemachinesoutputtypedef)
-  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [LogDestinationTypeDef](#logdestinationtypedef)
-  - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
-  - [MapIterationEventDetailsTypeDef](#mapiterationeventdetailstypedef)
-  - [MapStateStartedEventDetailsTypeDef](#mapstatestartedeventdetailstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendTaskFailureInputRequestTypeDef](#sendtaskfailureinputrequesttypedef)
-  - [SendTaskHeartbeatInputRequestTypeDef](#sendtaskheartbeatinputrequesttypedef)
-  - [SendTaskSuccessInputRequestTypeDef](#sendtasksuccessinputrequesttypedef)
-  - [StartExecutionInputRequestTypeDef](#startexecutioninputrequesttypedef)
-  - [StartExecutionOutputTypeDef](#startexecutionoutputtypedef)
-  - [StartSyncExecutionInputRequestTypeDef](#startsyncexecutioninputrequesttypedef)
-  - [StartSyncExecutionOutputTypeDef](#startsyncexecutionoutputtypedef)
-  - [StateEnteredEventDetailsTypeDef](#stateenteredeventdetailstypedef)
-  - [StateExitedEventDetailsTypeDef](#stateexitedeventdetailstypedef)
-  - [StateMachineListItemTypeDef](#statemachinelistitemtypedef)
-  - [StopExecutionInputRequestTypeDef](#stopexecutioninputrequesttypedef)
-  - [StopExecutionOutputTypeDef](#stopexecutionoutputtypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TaskFailedEventDetailsTypeDef](#taskfailedeventdetailstypedef)
-  - [TaskScheduledEventDetailsTypeDef](#taskscheduledeventdetailstypedef)
-  - [TaskStartFailedEventDetailsTypeDef](#taskstartfailedeventdetailstypedef)
-  - [TaskStartedEventDetailsTypeDef](#taskstartedeventdetailstypedef)
-  - [TaskSubmitFailedEventDetailsTypeDef](#tasksubmitfailedeventdetailstypedef)
-  - [TaskSubmittedEventDetailsTypeDef](#tasksubmittedeventdetailstypedef)
-  - [TaskSucceededEventDetailsTypeDef](#tasksucceededeventdetailstypedef)
-  - [TaskTimedOutEventDetailsTypeDef](#tasktimedouteventdetailstypedef)
-  - [TracingConfigurationTypeDef](#tracingconfigurationtypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-  - [UpdateStateMachineInputRequestTypeDef](#updatestatemachineinputrequesttypedef)
-  - [UpdateStateMachineOutputTypeDef](#updatestatemachineoutputtypedef)
-
-<a id="activityfailedeventdetailstypedef"></a>
+    Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+    type annotations stubs module [mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 ## ActivityFailedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ActivityFailedEventDetailsTypeDef
+
+def get_value() -> ActivityFailedEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="activitylistitemtypedef"></a>
+```python title="Definition"
+class ActivityFailedEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## ActivityListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ActivityListItemTypeDef
+
+def get_value() -> ActivityListItemTypeDef:
+    return {
+        "activityArn": ...,
+        "name": ...,
+        "creationDate": ...,
+    }
 ```
 
-Required fields:
-
-- `activityArn`: `str`
-- `name`: `str`
-- `creationDate`: `datetime`
-
-<a id="activityschedulefailedeventdetailstypedef"></a>
+```python title="Definition"
+class ActivityListItemTypeDef(TypedDict):
+    activityArn: str,
+    name: str,
+    creationDate: datetime,
+```
 
 ## ActivityScheduleFailedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ActivityScheduleFailedEventDetailsTypeDef
+
+def get_value() -> ActivityScheduleFailedEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="activityscheduledeventdetailstypedef"></a>
+```python title="Definition"
+class ActivityScheduleFailedEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## ActivityScheduledEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ActivityScheduledEventDetailsTypeDef
+
+def get_value() -> ActivityScheduledEventDetailsTypeDef:
+    return {
+        "resource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActivityScheduledEventDetailsTypeDef(TypedDict):
+    resource: str,
+    input: NotRequired[str],
+    inputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+    timeoutInSeconds: NotRequired[int],
+    heartbeatInSeconds: NotRequired[int],
+```
 
-- `resource`: `str`
-
-Optional fields:
-
-- `input`: `str`
-- `inputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-- `timeoutInSeconds`: `int`
-- `heartbeatInSeconds`: `int`
-
-<a id="activitystartedeventdetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## ActivityStartedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ActivityStartedEventDetailsTypeDef
+
+def get_value() -> ActivityStartedEventDetailsTypeDef:
+    return {
+        "workerName": ...,
+    }
 ```
 
-Optional fields:
-
-- `workerName`: `str`
-
-<a id="activitysucceededeventdetailstypedef"></a>
+```python title="Definition"
+class ActivityStartedEventDetailsTypeDef(TypedDict):
+    workerName: NotRequired[str],
+```
 
 ## ActivitySucceededEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ActivitySucceededEventDetailsTypeDef
+
+def get_value() -> ActivitySucceededEventDetailsTypeDef:
+    return {
+        "output": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActivitySucceededEventDetailsTypeDef(TypedDict):
+    output: NotRequired[str],
+    outputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+```
 
-- `output`: `str`
-- `outputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-
-<a id="activitytimedouteventdetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## ActivityTimedOutEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ActivityTimedOutEventDetailsTypeDef
+
+def get_value() -> ActivityTimedOutEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="billingdetailstypedef"></a>
+```python title="Definition"
+class ActivityTimedOutEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## BillingDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import BillingDetailsTypeDef
+
+def get_value() -> BillingDetailsTypeDef:
+    return {
+        "billedMemoryUsedInMB": ...,
+    }
 ```
 
-Optional fields:
-
-- `billedMemoryUsedInMB`: `int`
-- `billedDurationInMilliseconds`: `int`
-
-<a id="cloudwatcheventsexecutiondatadetailstypedef"></a>
+```python title="Definition"
+class BillingDetailsTypeDef(TypedDict):
+    billedMemoryUsedInMB: NotRequired[int],
+    billedDurationInMilliseconds: NotRequired[int],
+```
 
 ## CloudWatchEventsExecutionDataDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import CloudWatchEventsExecutionDataDetailsTypeDef
+
+def get_value() -> CloudWatchEventsExecutionDataDetailsTypeDef:
+    return {
+        "included": ...,
+    }
 ```
 
-Optional fields:
-
-- `included`: `bool`
-
-<a id="cloudwatchlogsloggrouptypedef"></a>
+```python title="Definition"
+class CloudWatchEventsExecutionDataDetailsTypeDef(TypedDict):
+    included: NotRequired[bool],
+```
 
 ## CloudWatchLogsLogGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import CloudWatchLogsLogGroupTypeDef
+
+def get_value() -> CloudWatchLogsLogGroupTypeDef:
+    return {
+        "logGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `logGroupArn`: `str`
-
-<a id="createactivityinputrequesttypedef"></a>
+```python title="Definition"
+class CloudWatchLogsLogGroupTypeDef(TypedDict):
+    logGroupArn: NotRequired[str],
+```
 
 ## CreateActivityInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import CreateActivityInputRequestTypeDef
+
+def get_value() -> CreateActivityInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateActivityInputRequestTypeDef(TypedDict):
+    name: str,
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createactivityoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateActivityOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import CreateActivityOutputTypeDef
+
+def get_value() -> CreateActivityOutputTypeDef:
+    return {
+        "activityArn": ...,
+        "creationDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateActivityOutputTypeDef(TypedDict):
+    activityArn: str,
+    creationDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `activityArn`: `str`
-- `creationDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstatemachineinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStateMachineInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import CreateStateMachineInputRequestTypeDef
+
+def get_value() -> CreateStateMachineInputRequestTypeDef:
+    return {
+        "name": ...,
+        "definition": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStateMachineInputRequestTypeDef(TypedDict):
+    name: str,
+    definition: str,
+    roleArn: str,
+    type: NotRequired[StateMachineTypeType],  # (1)
+    loggingConfiguration: NotRequired[LoggingConfigurationTypeDef],  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    tracingConfiguration: NotRequired[TracingConfigurationTypeDef],  # (4)
+```
 
-- `name`: `str`
-- `definition`: `str`
-- `roleArn`: `str`
-
-Optional fields:
-
-- `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
-- `loggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `tracingConfiguration`:
-  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
-
-<a id="createstatemachineoutputtypedef"></a>
-
+1. See [:material-code-brackets: StateMachineTypeType](./literals.md#statemachinetypetype) 
+2. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef) 
 ## CreateStateMachineOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import CreateStateMachineOutputTypeDef
+
+def get_value() -> CreateStateMachineOutputTypeDef:
+    return {
+        "stateMachineArn": ...,
+        "creationDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStateMachineOutputTypeDef(TypedDict):
+    stateMachineArn: str,
+    creationDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `stateMachineArn`: `str`
-- `creationDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteactivityinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteActivityInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DeleteActivityInputRequestTypeDef
+
+def get_value() -> DeleteActivityInputRequestTypeDef:
+    return {
+        "activityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `activityArn`: `str`
-
-<a id="deletestatemachineinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteActivityInputRequestTypeDef(TypedDict):
+    activityArn: str,
+```
 
 ## DeleteStateMachineInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DeleteStateMachineInputRequestTypeDef
+
+def get_value() -> DeleteStateMachineInputRequestTypeDef:
+    return {
+        "stateMachineArn": ...,
+    }
 ```
 
-Required fields:
-
-- `stateMachineArn`: `str`
-
-<a id="describeactivityinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteStateMachineInputRequestTypeDef(TypedDict):
+    stateMachineArn: str,
+```
 
 ## DescribeActivityInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DescribeActivityInputRequestTypeDef
+
+def get_value() -> DescribeActivityInputRequestTypeDef:
+    return {
+        "activityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `activityArn`: `str`
-
-<a id="describeactivityoutputtypedef"></a>
+```python title="Definition"
+class DescribeActivityInputRequestTypeDef(TypedDict):
+    activityArn: str,
+```
 
 ## DescribeActivityOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DescribeActivityOutputTypeDef
+
+def get_value() -> DescribeActivityOutputTypeDef:
+    return {
+        "activityArn": ...,
+        "name": ...,
+        "creationDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeActivityOutputTypeDef(TypedDict):
+    activityArn: str,
+    name: str,
+    creationDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `activityArn`: `str`
-- `name`: `str`
-- `creationDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeexecutioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DescribeExecutionInputRequestTypeDef
+
+def get_value() -> DescribeExecutionInputRequestTypeDef:
+    return {
+        "executionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `executionArn`: `str`
-
-<a id="describeexecutionoutputtypedef"></a>
+```python title="Definition"
+class DescribeExecutionInputRequestTypeDef(TypedDict):
+    executionArn: str,
+```
 
 ## DescribeExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DescribeExecutionOutputTypeDef
+
+def get_value() -> DescribeExecutionOutputTypeDef:
+    return {
+        "executionArn": ...,
+        "stateMachineArn": ...,
+        "name": ...,
+        "status": ...,
+        "startDate": ...,
+        "stopDate": ...,
+        "input": ...,
+        "inputDetails": ...,
+        "output": ...,
+        "outputDetails": ...,
+        "traceHeader": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeExecutionOutputTypeDef(TypedDict):
+    executionArn: str,
+    stateMachineArn: str,
+    name: str,
+    status: ExecutionStatusType,  # (1)
+    startDate: datetime,
+    stopDate: datetime,
+    input: str,
+    inputDetails: CloudWatchEventsExecutionDataDetailsTypeDef,  # (2)
+    output: str,
+    outputDetails: CloudWatchEventsExecutionDataDetailsTypeDef,  # (2)
+    traceHeader: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `executionArn`: `str`
-- `stateMachineArn`: `str`
-- `name`: `str`
-- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `startDate`: `datetime`
-- `stopDate`: `datetime`
-- `input`: `str`
-- `inputDetails`:
-  [CloudWatchEventsExecutionDataDetailsTypeDef](./type_defs.md#cloudwatcheventsexecutiondatadetailstypedef)
-- `output`: `str`
-- `outputDetails`:
-  [CloudWatchEventsExecutionDataDetailsTypeDef](./type_defs.md#cloudwatcheventsexecutiondatadetailstypedef)
-- `traceHeader`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestatemachineforexecutioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+2. See [:material-code-braces: CloudWatchEventsExecutionDataDetailsTypeDef](./type_defs.md#cloudwatcheventsexecutiondatadetailstypedef) 
+3. See [:material-code-braces: CloudWatchEventsExecutionDataDetailsTypeDef](./type_defs.md#cloudwatcheventsexecutiondatadetailstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStateMachineForExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineForExecutionInputRequestTypeDef
+
+def get_value() -> DescribeStateMachineForExecutionInputRequestTypeDef:
+    return {
+        "executionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `executionArn`: `str`
-
-<a id="describestatemachineforexecutionoutputtypedef"></a>
+```python title="Definition"
+class DescribeStateMachineForExecutionInputRequestTypeDef(TypedDict):
+    executionArn: str,
+```
 
 ## DescribeStateMachineForExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineForExecutionOutputTypeDef
+
+def get_value() -> DescribeStateMachineForExecutionOutputTypeDef:
+    return {
+        "stateMachineArn": ...,
+        "name": ...,
+        "definition": ...,
+        "roleArn": ...,
+        "updateDate": ...,
+        "loggingConfiguration": ...,
+        "tracingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStateMachineForExecutionOutputTypeDef(TypedDict):
+    stateMachineArn: str,
+    name: str,
+    definition: str,
+    roleArn: str,
+    updateDate: datetime,
+    loggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+    tracingConfiguration: TracingConfigurationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `stateMachineArn`: `str`
-- `name`: `str`
-- `definition`: `str`
-- `roleArn`: `str`
-- `updateDate`: `datetime`
-- `loggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `tracingConfiguration`:
-  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestatemachineinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStateMachineInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineInputRequestTypeDef
+
+def get_value() -> DescribeStateMachineInputRequestTypeDef:
+    return {
+        "stateMachineArn": ...,
+    }
 ```
 
-Required fields:
-
-- `stateMachineArn`: `str`
-
-<a id="describestatemachineoutputtypedef"></a>
+```python title="Definition"
+class DescribeStateMachineInputRequestTypeDef(TypedDict):
+    stateMachineArn: str,
+```
 
 ## DescribeStateMachineOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineOutputTypeDef
+
+def get_value() -> DescribeStateMachineOutputTypeDef:
+    return {
+        "stateMachineArn": ...,
+        "name": ...,
+        "status": ...,
+        "definition": ...,
+        "roleArn": ...,
+        "type": ...,
+        "creationDate": ...,
+        "loggingConfiguration": ...,
+        "tracingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStateMachineOutputTypeDef(TypedDict):
+    stateMachineArn: str,
+    name: str,
+    status: StateMachineStatusType,  # (1)
+    definition: str,
+    roleArn: str,
+    type: StateMachineTypeType,  # (2)
+    creationDate: datetime,
+    loggingConfiguration: LoggingConfigurationTypeDef,  # (3)
+    tracingConfiguration: TracingConfigurationTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `stateMachineArn`: `str`
-- `name`: `str`
-- `status`: [StateMachineStatusType](./literals.md#statemachinestatustype)
-- `definition`: `str`
-- `roleArn`: `str`
-- `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
-- `creationDate`: `datetime`
-- `loggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `tracingConfiguration`:
-  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="executionabortedeventdetailstypedef"></a>
-
+1. See [:material-code-brackets: StateMachineStatusType](./literals.md#statemachinestatustype) 
+2. See [:material-code-brackets: StateMachineTypeType](./literals.md#statemachinetypetype) 
+3. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+4. See [:material-code-braces: TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExecutionAbortedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ExecutionAbortedEventDetailsTypeDef
+
+def get_value() -> ExecutionAbortedEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="executionfailedeventdetailstypedef"></a>
+```python title="Definition"
+class ExecutionAbortedEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## ExecutionFailedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ExecutionFailedEventDetailsTypeDef
+
+def get_value() -> ExecutionFailedEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="executionlistitemtypedef"></a>
+```python title="Definition"
+class ExecutionFailedEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## ExecutionListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ExecutionListItemTypeDef
+
+def get_value() -> ExecutionListItemTypeDef:
+    return {
+        "executionArn": ...,
+        "stateMachineArn": ...,
+        "name": ...,
+        "status": ...,
+        "startDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecutionListItemTypeDef(TypedDict):
+    executionArn: str,
+    stateMachineArn: str,
+    name: str,
+    status: ExecutionStatusType,  # (1)
+    startDate: datetime,
+    stopDate: NotRequired[datetime],
+```
 
-- `executionArn`: `str`
-- `stateMachineArn`: `str`
-- `name`: `str`
-- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `startDate`: `datetime`
-
-Optional fields:
-
-- `stopDate`: `datetime`
-
-<a id="executionstartedeventdetailstypedef"></a>
-
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
 ## ExecutionStartedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ExecutionStartedEventDetailsTypeDef
+
+def get_value() -> ExecutionStartedEventDetailsTypeDef:
+    return {
+        "input": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutionStartedEventDetailsTypeDef(TypedDict):
+    input: NotRequired[str],
+    inputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+    roleArn: NotRequired[str],
+```
 
-- `input`: `str`
-- `inputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-- `roleArn`: `str`
-
-<a id="executionsucceededeventdetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## ExecutionSucceededEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ExecutionSucceededEventDetailsTypeDef
+
+def get_value() -> ExecutionSucceededEventDetailsTypeDef:
+    return {
+        "output": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutionSucceededEventDetailsTypeDef(TypedDict):
+    output: NotRequired[str],
+    outputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+```
 
-- `output`: `str`
-- `outputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-
-<a id="executiontimedouteventdetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## ExecutionTimedOutEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ExecutionTimedOutEventDetailsTypeDef
+
+def get_value() -> ExecutionTimedOutEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="getactivitytaskinputrequesttypedef"></a>
+```python title="Definition"
+class ExecutionTimedOutEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## GetActivityTaskInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import GetActivityTaskInputRequestTypeDef
+
+def get_value() -> GetActivityTaskInputRequestTypeDef:
+    return {
+        "activityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `activityArn`: `str`
-
-Optional fields:
-
-- `workerName`: `str`
-
-<a id="getactivitytaskoutputtypedef"></a>
+```python title="Definition"
+class GetActivityTaskInputRequestTypeDef(TypedDict):
+    activityArn: str,
+    workerName: NotRequired[str],
+```
 
 ## GetActivityTaskOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import GetActivityTaskOutputTypeDef
+
+def get_value() -> GetActivityTaskOutputTypeDef:
+    return {
+        "taskToken": ...,
+        "input": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetActivityTaskOutputTypeDef(TypedDict):
+    taskToken: str,
+    input: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `taskToken`: `str`
-- `input`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetExecutionHistoryInputGetExecutionHistoryPaginateTypeDef
 
-<a id="getexecutionhistoryinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryInputGetExecutionHistoryPaginateTypeDef
 
+def get_value() -> GetExecutionHistoryInputGetExecutionHistoryPaginateTypeDef:
+    return {
+        "executionArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetExecutionHistoryInputGetExecutionHistoryPaginateTypeDef(TypedDict):
+    executionArn: str,
+    reverseOrder: NotRequired[bool],
+    includeExecutionData: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetExecutionHistoryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryInputRequestTypeDef
+
+def get_value() -> GetExecutionHistoryInputRequestTypeDef:
+    return {
+        "executionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `executionArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `reverseOrder`: `bool`
-- `nextToken`: `str`
-- `includeExecutionData`: `bool`
-
-<a id="getexecutionhistoryoutputtypedef"></a>
+```python title="Definition"
+class GetExecutionHistoryInputRequestTypeDef(TypedDict):
+    executionArn: str,
+    maxResults: NotRequired[int],
+    reverseOrder: NotRequired[bool],
+    nextToken: NotRequired[str],
+    includeExecutionData: NotRequired[bool],
+```
 
 ## GetExecutionHistoryOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import GetExecutionHistoryOutputTypeDef
+
+def get_value() -> GetExecutionHistoryOutputTypeDef:
+    return {
+        "events": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetExecutionHistoryOutputTypeDef(TypedDict):
+    events: List[HistoryEventTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `events`: `List`\[[HistoryEventTypeDef](./type_defs.md#historyeventtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="historyeventexecutiondatadetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventTypeDef](./type_defs.md#historyeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HistoryEventExecutionDataDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import HistoryEventExecutionDataDetailsTypeDef
+
+def get_value() -> HistoryEventExecutionDataDetailsTypeDef:
+    return {
+        "truncated": ...,
+    }
 ```
 
-Optional fields:
-
-- `truncated`: `bool`
-
-<a id="historyeventtypedef"></a>
+```python title="Definition"
+class HistoryEventExecutionDataDetailsTypeDef(TypedDict):
+    truncated: NotRequired[bool],
+```
 
 ## HistoryEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import HistoryEventTypeDef
+
+def get_value() -> HistoryEventTypeDef:
+    return {
+        "timestamp": ...,
+        "type": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HistoryEventTypeDef(TypedDict):
+    timestamp: datetime,
+    type: HistoryEventTypeType,  # (1)
+    id: int,
+    previousEventId: NotRequired[int],
+    activityFailedEventDetails: NotRequired[ActivityFailedEventDetailsTypeDef],  # (2)
+    activityScheduleFailedEventDetails: NotRequired[ActivityScheduleFailedEventDetailsTypeDef],  # (3)
+    activityScheduledEventDetails: NotRequired[ActivityScheduledEventDetailsTypeDef],  # (4)
+    activityStartedEventDetails: NotRequired[ActivityStartedEventDetailsTypeDef],  # (5)
+    activitySucceededEventDetails: NotRequired[ActivitySucceededEventDetailsTypeDef],  # (6)
+    activityTimedOutEventDetails: NotRequired[ActivityTimedOutEventDetailsTypeDef],  # (7)
+    taskFailedEventDetails: NotRequired[TaskFailedEventDetailsTypeDef],  # (8)
+    taskScheduledEventDetails: NotRequired[TaskScheduledEventDetailsTypeDef],  # (9)
+    taskStartFailedEventDetails: NotRequired[TaskStartFailedEventDetailsTypeDef],  # (10)
+    taskStartedEventDetails: NotRequired[TaskStartedEventDetailsTypeDef],  # (11)
+    taskSubmitFailedEventDetails: NotRequired[TaskSubmitFailedEventDetailsTypeDef],  # (12)
+    taskSubmittedEventDetails: NotRequired[TaskSubmittedEventDetailsTypeDef],  # (13)
+    taskSucceededEventDetails: NotRequired[TaskSucceededEventDetailsTypeDef],  # (14)
+    taskTimedOutEventDetails: NotRequired[TaskTimedOutEventDetailsTypeDef],  # (15)
+    executionFailedEventDetails: NotRequired[ExecutionFailedEventDetailsTypeDef],  # (16)
+    executionStartedEventDetails: NotRequired[ExecutionStartedEventDetailsTypeDef],  # (17)
+    executionSucceededEventDetails: NotRequired[ExecutionSucceededEventDetailsTypeDef],  # (18)
+    executionAbortedEventDetails: NotRequired[ExecutionAbortedEventDetailsTypeDef],  # (19)
+    executionTimedOutEventDetails: NotRequired[ExecutionTimedOutEventDetailsTypeDef],  # (20)
+    mapStateStartedEventDetails: NotRequired[MapStateStartedEventDetailsTypeDef],  # (21)
+    mapIterationStartedEventDetails: NotRequired[MapIterationEventDetailsTypeDef],  # (22)
+    mapIterationSucceededEventDetails: NotRequired[MapIterationEventDetailsTypeDef],  # (22)
+    mapIterationFailedEventDetails: NotRequired[MapIterationEventDetailsTypeDef],  # (22)
+    mapIterationAbortedEventDetails: NotRequired[MapIterationEventDetailsTypeDef],  # (22)
+    lambdaFunctionFailedEventDetails: NotRequired[LambdaFunctionFailedEventDetailsTypeDef],  # (26)
+    lambdaFunctionScheduleFailedEventDetails: NotRequired[LambdaFunctionScheduleFailedEventDetailsTypeDef],  # (27)
+    lambdaFunctionScheduledEventDetails: NotRequired[LambdaFunctionScheduledEventDetailsTypeDef],  # (28)
+    lambdaFunctionStartFailedEventDetails: NotRequired[LambdaFunctionStartFailedEventDetailsTypeDef],  # (29)
+    lambdaFunctionSucceededEventDetails: NotRequired[LambdaFunctionSucceededEventDetailsTypeDef],  # (30)
+    lambdaFunctionTimedOutEventDetails: NotRequired[LambdaFunctionTimedOutEventDetailsTypeDef],  # (31)
+    stateEnteredEventDetails: NotRequired[StateEnteredEventDetailsTypeDef],  # (32)
+    stateExitedEventDetails: NotRequired[StateExitedEventDetailsTypeDef],  # (33)
+```
 
-- `timestamp`: `datetime`
-- `type`: [HistoryEventTypeType](./literals.md#historyeventtypetype)
-- `id`: `int`
-
-Optional fields:
-
-- `previousEventId`: `int`
-- `activityFailedEventDetails`:
-  [ActivityFailedEventDetailsTypeDef](./type_defs.md#activityfailedeventdetailstypedef)
-- `activityScheduleFailedEventDetails`:
-  [ActivityScheduleFailedEventDetailsTypeDef](./type_defs.md#activityschedulefailedeventdetailstypedef)
-- `activityScheduledEventDetails`:
-  [ActivityScheduledEventDetailsTypeDef](./type_defs.md#activityscheduledeventdetailstypedef)
-- `activityStartedEventDetails`:
-  [ActivityStartedEventDetailsTypeDef](./type_defs.md#activitystartedeventdetailstypedef)
-- `activitySucceededEventDetails`:
-  [ActivitySucceededEventDetailsTypeDef](./type_defs.md#activitysucceededeventdetailstypedef)
-- `activityTimedOutEventDetails`:
-  [ActivityTimedOutEventDetailsTypeDef](./type_defs.md#activitytimedouteventdetailstypedef)
-- `taskFailedEventDetails`:
-  [TaskFailedEventDetailsTypeDef](./type_defs.md#taskfailedeventdetailstypedef)
-- `taskScheduledEventDetails`:
-  [TaskScheduledEventDetailsTypeDef](./type_defs.md#taskscheduledeventdetailstypedef)
-- `taskStartFailedEventDetails`:
-  [TaskStartFailedEventDetailsTypeDef](./type_defs.md#taskstartfailedeventdetailstypedef)
-- `taskStartedEventDetails`:
-  [TaskStartedEventDetailsTypeDef](./type_defs.md#taskstartedeventdetailstypedef)
-- `taskSubmitFailedEventDetails`:
-  [TaskSubmitFailedEventDetailsTypeDef](./type_defs.md#tasksubmitfailedeventdetailstypedef)
-- `taskSubmittedEventDetails`:
-  [TaskSubmittedEventDetailsTypeDef](./type_defs.md#tasksubmittedeventdetailstypedef)
-- `taskSucceededEventDetails`:
-  [TaskSucceededEventDetailsTypeDef](./type_defs.md#tasksucceededeventdetailstypedef)
-- `taskTimedOutEventDetails`:
-  [TaskTimedOutEventDetailsTypeDef](./type_defs.md#tasktimedouteventdetailstypedef)
-- `executionFailedEventDetails`:
-  [ExecutionFailedEventDetailsTypeDef](./type_defs.md#executionfailedeventdetailstypedef)
-- `executionStartedEventDetails`:
-  [ExecutionStartedEventDetailsTypeDef](./type_defs.md#executionstartedeventdetailstypedef)
-- `executionSucceededEventDetails`:
-  [ExecutionSucceededEventDetailsTypeDef](./type_defs.md#executionsucceededeventdetailstypedef)
-- `executionAbortedEventDetails`:
-  [ExecutionAbortedEventDetailsTypeDef](./type_defs.md#executionabortedeventdetailstypedef)
-- `executionTimedOutEventDetails`:
-  [ExecutionTimedOutEventDetailsTypeDef](./type_defs.md#executiontimedouteventdetailstypedef)
-- `mapStateStartedEventDetails`:
-  [MapStateStartedEventDetailsTypeDef](./type_defs.md#mapstatestartedeventdetailstypedef)
-- `mapIterationStartedEventDetails`:
-  [MapIterationEventDetailsTypeDef](./type_defs.md#mapiterationeventdetailstypedef)
-- `mapIterationSucceededEventDetails`:
-  [MapIterationEventDetailsTypeDef](./type_defs.md#mapiterationeventdetailstypedef)
-- `mapIterationFailedEventDetails`:
-  [MapIterationEventDetailsTypeDef](./type_defs.md#mapiterationeventdetailstypedef)
-- `mapIterationAbortedEventDetails`:
-  [MapIterationEventDetailsTypeDef](./type_defs.md#mapiterationeventdetailstypedef)
-- `lambdaFunctionFailedEventDetails`:
-  [LambdaFunctionFailedEventDetailsTypeDef](./type_defs.md#lambdafunctionfailedeventdetailstypedef)
-- `lambdaFunctionScheduleFailedEventDetails`:
-  [LambdaFunctionScheduleFailedEventDetailsTypeDef](./type_defs.md#lambdafunctionschedulefailedeventdetailstypedef)
-- `lambdaFunctionScheduledEventDetails`:
-  [LambdaFunctionScheduledEventDetailsTypeDef](./type_defs.md#lambdafunctionscheduledeventdetailstypedef)
-- `lambdaFunctionStartFailedEventDetails`:
-  [LambdaFunctionStartFailedEventDetailsTypeDef](./type_defs.md#lambdafunctionstartfailedeventdetailstypedef)
-- `lambdaFunctionSucceededEventDetails`:
-  [LambdaFunctionSucceededEventDetailsTypeDef](./type_defs.md#lambdafunctionsucceededeventdetailstypedef)
-- `lambdaFunctionTimedOutEventDetails`:
-  [LambdaFunctionTimedOutEventDetailsTypeDef](./type_defs.md#lambdafunctiontimedouteventdetailstypedef)
-- `stateEnteredEventDetails`:
-  [StateEnteredEventDetailsTypeDef](./type_defs.md#stateenteredeventdetailstypedef)
-- `stateExitedEventDetails`:
-  [StateExitedEventDetailsTypeDef](./type_defs.md#stateexitedeventdetailstypedef)
-
-<a id="lambdafunctionfailedeventdetailstypedef"></a>
-
+1. See [:material-code-brackets: HistoryEventTypeType](./literals.md#historyeventtypetype) 
+2. See [:material-code-braces: ActivityFailedEventDetailsTypeDef](./type_defs.md#activityfailedeventdetailstypedef) 
+3. See [:material-code-braces: ActivityScheduleFailedEventDetailsTypeDef](./type_defs.md#activityschedulefailedeventdetailstypedef) 
+4. See [:material-code-braces: ActivityScheduledEventDetailsTypeDef](./type_defs.md#activityscheduledeventdetailstypedef) 
+5. See [:material-code-braces: ActivityStartedEventDetailsTypeDef](./type_defs.md#activitystartedeventdetailstypedef) 
+6. See [:material-code-braces: ActivitySucceededEventDetailsTypeDef](./type_defs.md#activitysucceededeventdetailstypedef) 
+7. See [:material-code-braces: ActivityTimedOutEventDetailsTypeDef](./type_defs.md#activitytimedouteventdetailstypedef) 
+8. See [:material-code-braces: TaskFailedEventDetailsTypeDef](./type_defs.md#taskfailedeventdetailstypedef) 
+9. See [:material-code-braces: TaskScheduledEventDetailsTypeDef](./type_defs.md#taskscheduledeventdetailstypedef) 
+10. See [:material-code-braces: TaskStartFailedEventDetailsTypeDef](./type_defs.md#taskstartfailedeventdetailstypedef) 
+11. See [:material-code-braces: TaskStartedEventDetailsTypeDef](./type_defs.md#taskstartedeventdetailstypedef) 
+12. See [:material-code-braces: TaskSubmitFailedEventDetailsTypeDef](./type_defs.md#tasksubmitfailedeventdetailstypedef) 
+13. See [:material-code-braces: TaskSubmittedEventDetailsTypeDef](./type_defs.md#tasksubmittedeventdetailstypedef) 
+14. See [:material-code-braces: TaskSucceededEventDetailsTypeDef](./type_defs.md#tasksucceededeventdetailstypedef) 
+15. See [:material-code-braces: TaskTimedOutEventDetailsTypeDef](./type_defs.md#tasktimedouteventdetailstypedef) 
+16. See [:material-code-braces: ExecutionFailedEventDetailsTypeDef](./type_defs.md#executionfailedeventdetailstypedef) 
+17. See [:material-code-braces: ExecutionStartedEventDetailsTypeDef](./type_defs.md#executionstartedeventdetailstypedef) 
+18. See [:material-code-braces: ExecutionSucceededEventDetailsTypeDef](./type_defs.md#executionsucceededeventdetailstypedef) 
+19. See [:material-code-braces: ExecutionAbortedEventDetailsTypeDef](./type_defs.md#executionabortedeventdetailstypedef) 
+20. See [:material-code-braces: ExecutionTimedOutEventDetailsTypeDef](./type_defs.md#executiontimedouteventdetailstypedef) 
+21. See [:material-code-braces: MapStateStartedEventDetailsTypeDef](./type_defs.md#mapstatestartedeventdetailstypedef) 
+22. See [:material-code-braces: MapIterationEventDetailsTypeDef](./type_defs.md#mapiterationeventdetailstypedef) 
+23. See [:material-code-braces: MapIterationEventDetailsTypeDef](./type_defs.md#mapiterationeventdetailstypedef) 
+24. See [:material-code-braces: MapIterationEventDetailsTypeDef](./type_defs.md#mapiterationeventdetailstypedef) 
+25. See [:material-code-braces: MapIterationEventDetailsTypeDef](./type_defs.md#mapiterationeventdetailstypedef) 
+26. See [:material-code-braces: LambdaFunctionFailedEventDetailsTypeDef](./type_defs.md#lambdafunctionfailedeventdetailstypedef) 
+27. See [:material-code-braces: LambdaFunctionScheduleFailedEventDetailsTypeDef](./type_defs.md#lambdafunctionschedulefailedeventdetailstypedef) 
+28. See [:material-code-braces: LambdaFunctionScheduledEventDetailsTypeDef](./type_defs.md#lambdafunctionscheduledeventdetailstypedef) 
+29. See [:material-code-braces: LambdaFunctionStartFailedEventDetailsTypeDef](./type_defs.md#lambdafunctionstartfailedeventdetailstypedef) 
+30. See [:material-code-braces: LambdaFunctionSucceededEventDetailsTypeDef](./type_defs.md#lambdafunctionsucceededeventdetailstypedef) 
+31. See [:material-code-braces: LambdaFunctionTimedOutEventDetailsTypeDef](./type_defs.md#lambdafunctiontimedouteventdetailstypedef) 
+32. See [:material-code-braces: StateEnteredEventDetailsTypeDef](./type_defs.md#stateenteredeventdetailstypedef) 
+33. See [:material-code-braces: StateExitedEventDetailsTypeDef](./type_defs.md#stateexitedeventdetailstypedef) 
 ## LambdaFunctionFailedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionFailedEventDetailsTypeDef
+
+def get_value() -> LambdaFunctionFailedEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="lambdafunctionschedulefailedeventdetailstypedef"></a>
+```python title="Definition"
+class LambdaFunctionFailedEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## LambdaFunctionScheduleFailedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionScheduleFailedEventDetailsTypeDef
+
+def get_value() -> LambdaFunctionScheduleFailedEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="lambdafunctionscheduledeventdetailstypedef"></a>
+```python title="Definition"
+class LambdaFunctionScheduleFailedEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## LambdaFunctionScheduledEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionScheduledEventDetailsTypeDef
+
+def get_value() -> LambdaFunctionScheduledEventDetailsTypeDef:
+    return {
+        "resource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaFunctionScheduledEventDetailsTypeDef(TypedDict):
+    resource: str,
+    input: NotRequired[str],
+    inputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+    timeoutInSeconds: NotRequired[int],
+```
 
-- `resource`: `str`
-
-Optional fields:
-
-- `input`: `str`
-- `inputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-- `timeoutInSeconds`: `int`
-
-<a id="lambdafunctionstartfailedeventdetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## LambdaFunctionStartFailedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionStartFailedEventDetailsTypeDef
+
+def get_value() -> LambdaFunctionStartFailedEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="lambdafunctionsucceededeventdetailstypedef"></a>
+```python title="Definition"
+class LambdaFunctionStartFailedEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## LambdaFunctionSucceededEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionSucceededEventDetailsTypeDef
+
+def get_value() -> LambdaFunctionSucceededEventDetailsTypeDef:
+    return {
+        "output": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LambdaFunctionSucceededEventDetailsTypeDef(TypedDict):
+    output: NotRequired[str],
+    outputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+```
 
-- `output`: `str`
-- `outputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-
-<a id="lambdafunctiontimedouteventdetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## LambdaFunctionTimedOutEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import LambdaFunctionTimedOutEventDetailsTypeDef
+
+def get_value() -> LambdaFunctionTimedOutEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LambdaFunctionTimedOutEventDetailsTypeDef(TypedDict):
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
-- `error`: `str`
-- `cause`: `str`
+## ListActivitiesInputListActivitiesPaginateTypeDef
 
-<a id="listactivitiesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import ListActivitiesInputListActivitiesPaginateTypeDef
 
+def get_value() -> ListActivitiesInputListActivitiesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListActivitiesInputListActivitiesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListActivitiesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ListActivitiesInputRequestTypeDef
+
+def get_value() -> ListActivitiesInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listactivitiesoutputtypedef"></a>
+```python title="Definition"
+class ListActivitiesInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListActivitiesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ListActivitiesOutputTypeDef
+
+def get_value() -> ListActivitiesOutputTypeDef:
+    return {
+        "activities": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListActivitiesOutputTypeDef(TypedDict):
+    activities: List[ActivityListItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `activities`:
-  `List`\[[ActivityListItemTypeDef](./type_defs.md#activitylistitemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ActivityListItemTypeDef](./type_defs.md#activitylistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListExecutionsInputListExecutionsPaginateTypeDef
 
-<a id="listexecutionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import ListExecutionsInputListExecutionsPaginateTypeDef
 
+def get_value() -> ListExecutionsInputListExecutionsPaginateTypeDef:
+    return {
+        "stateMachineArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListExecutionsInputListExecutionsPaginateTypeDef(TypedDict):
+    stateMachineArn: str,
+    statusFilter: NotRequired[ExecutionStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListExecutionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ListExecutionsInputRequestTypeDef
+
+def get_value() -> ListExecutionsInputRequestTypeDef:
+    return {
+        "stateMachineArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExecutionsInputRequestTypeDef(TypedDict):
+    stateMachineArn: str,
+    statusFilter: NotRequired[ExecutionStatusType],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `stateMachineArn`: `str`
-
-Optional fields:
-
-- `statusFilter`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listexecutionsoutputtypedef"></a>
-
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
 ## ListExecutionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ListExecutionsOutputTypeDef
+
+def get_value() -> ListExecutionsOutputTypeDef:
+    return {
+        "executions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExecutionsOutputTypeDef(TypedDict):
+    executions: List[ExecutionListItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `executions`:
-  `List`\[[ExecutionListItemTypeDef](./type_defs.md#executionlistitemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ExecutionListItemTypeDef](./type_defs.md#executionlistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStateMachinesInputListStateMachinesPaginateTypeDef
 
-<a id="liststatemachinesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_stepfunctions.type_defs import ListStateMachinesInputListStateMachinesPaginateTypeDef
 
+def get_value() -> ListStateMachinesInputListStateMachinesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListStateMachinesInputListStateMachinesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStateMachinesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ListStateMachinesInputRequestTypeDef
+
+def get_value() -> ListStateMachinesInputRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="liststatemachinesoutputtypedef"></a>
+```python title="Definition"
+class ListStateMachinesInputRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListStateMachinesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ListStateMachinesOutputTypeDef
+
+def get_value() -> ListStateMachinesOutputTypeDef:
+    return {
+        "stateMachines": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStateMachinesOutputTypeDef(TypedDict):
+    stateMachines: List[StateMachineListItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `stateMachines`:
-  `List`\[[StateMachineListItemTypeDef](./type_defs.md#statemachinelistitemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StateMachineListItemTypeDef](./type_defs.md#statemachinelistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="logdestinationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import LogDestinationTypeDef
+
+def get_value() -> LogDestinationTypeDef:
+    return {
+        "cloudWatchLogsLogGroup": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LogDestinationTypeDef(TypedDict):
+    cloudWatchLogsLogGroup: NotRequired[CloudWatchLogsLogGroupTypeDef],  # (1)
+```
 
-- `cloudWatchLogsLogGroup`:
-  [CloudWatchLogsLogGroupTypeDef](./type_defs.md#cloudwatchlogsloggrouptypedef)
-
-<a id="loggingconfigurationtypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogsLogGroupTypeDef](./type_defs.md#cloudwatchlogsloggrouptypedef) 
 ## LoggingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import LoggingConfigurationTypeDef
+
+def get_value() -> LoggingConfigurationTypeDef:
+    return {
+        "level": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoggingConfigurationTypeDef(TypedDict):
+    level: NotRequired[LogLevelType],  # (1)
+    includeExecutionData: NotRequired[bool],
+    destinations: NotRequired[Sequence[LogDestinationTypeDef]],  # (2)
+```
 
-- `level`: [LogLevelType](./literals.md#logleveltype)
-- `includeExecutionData`: `bool`
-- `destinations`:
-  `Sequence`\[[LogDestinationTypeDef](./type_defs.md#logdestinationtypedef)\]
-
-<a id="mapiterationeventdetailstypedef"></a>
-
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+2. See [:material-code-braces: LogDestinationTypeDef](./type_defs.md#logdestinationtypedef) 
 ## MapIterationEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import MapIterationEventDetailsTypeDef
+
+def get_value() -> MapIterationEventDetailsTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `index`: `int`
-
-<a id="mapstatestartedeventdetailstypedef"></a>
+```python title="Definition"
+class MapIterationEventDetailsTypeDef(TypedDict):
+    name: NotRequired[str],
+    index: NotRequired[int],
+```
 
 ## MapStateStartedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import MapStateStartedEventDetailsTypeDef
+
+def get_value() -> MapStateStartedEventDetailsTypeDef:
+    return {
+        "length": ...,
+    }
 ```
 
-Optional fields:
-
-- `length`: `int`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class MapStateStartedEventDetailsTypeDef(TypedDict):
+    length: NotRequired[int],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sendtaskfailureinputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SendTaskFailureInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import SendTaskFailureInputRequestTypeDef
+
+def get_value() -> SendTaskFailureInputRequestTypeDef:
+    return {
+        "taskToken": ...,
+    }
 ```
 
-Required fields:
-
-- `taskToken`: `str`
-
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="sendtaskheartbeatinputrequesttypedef"></a>
+```python title="Definition"
+class SendTaskFailureInputRequestTypeDef(TypedDict):
+    taskToken: str,
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## SendTaskHeartbeatInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import SendTaskHeartbeatInputRequestTypeDef
+
+def get_value() -> SendTaskHeartbeatInputRequestTypeDef:
+    return {
+        "taskToken": ...,
+    }
 ```
 
-Required fields:
-
-- `taskToken`: `str`
-
-<a id="sendtasksuccessinputrequesttypedef"></a>
+```python title="Definition"
+class SendTaskHeartbeatInputRequestTypeDef(TypedDict):
+    taskToken: str,
+```
 
 ## SendTaskSuccessInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import SendTaskSuccessInputRequestTypeDef
+
+def get_value() -> SendTaskSuccessInputRequestTypeDef:
+    return {
+        "taskToken": ...,
+        "output": ...,
+    }
 ```
 
-Required fields:
-
-- `taskToken`: `str`
-- `output`: `str`
-
-<a id="startexecutioninputrequesttypedef"></a>
+```python title="Definition"
+class SendTaskSuccessInputRequestTypeDef(TypedDict):
+    taskToken: str,
+    output: str,
+```
 
 ## StartExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import StartExecutionInputRequestTypeDef
+
+def get_value() -> StartExecutionInputRequestTypeDef:
+    return {
+        "stateMachineArn": ...,
+    }
 ```
 
-Required fields:
-
-- `stateMachineArn`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `input`: `str`
-- `traceHeader`: `str`
-
-<a id="startexecutionoutputtypedef"></a>
+```python title="Definition"
+class StartExecutionInputRequestTypeDef(TypedDict):
+    stateMachineArn: str,
+    name: NotRequired[str],
+    input: NotRequired[str],
+    traceHeader: NotRequired[str],
+```
 
 ## StartExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import StartExecutionOutputTypeDef
+
+def get_value() -> StartExecutionOutputTypeDef:
+    return {
+        "executionArn": ...,
+        "startDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartExecutionOutputTypeDef(TypedDict):
+    executionArn: str,
+    startDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `executionArn`: `str`
-- `startDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startsyncexecutioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartSyncExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import StartSyncExecutionInputRequestTypeDef
+
+def get_value() -> StartSyncExecutionInputRequestTypeDef:
+    return {
+        "stateMachineArn": ...,
+    }
 ```
 
-Required fields:
-
-- `stateMachineArn`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `input`: `str`
-- `traceHeader`: `str`
-
-<a id="startsyncexecutionoutputtypedef"></a>
+```python title="Definition"
+class StartSyncExecutionInputRequestTypeDef(TypedDict):
+    stateMachineArn: str,
+    name: NotRequired[str],
+    input: NotRequired[str],
+    traceHeader: NotRequired[str],
+```
 
 ## StartSyncExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import StartSyncExecutionOutputTypeDef
+
+def get_value() -> StartSyncExecutionOutputTypeDef:
+    return {
+        "executionArn": ...,
+        "stateMachineArn": ...,
+        "name": ...,
+        "startDate": ...,
+        "stopDate": ...,
+        "status": ...,
+        "error": ...,
+        "cause": ...,
+        "input": ...,
+        "inputDetails": ...,
+        "output": ...,
+        "outputDetails": ...,
+        "traceHeader": ...,
+        "billingDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSyncExecutionOutputTypeDef(TypedDict):
+    executionArn: str,
+    stateMachineArn: str,
+    name: str,
+    startDate: datetime,
+    stopDate: datetime,
+    status: SyncExecutionStatusType,  # (1)
+    error: str,
+    cause: str,
+    input: str,
+    inputDetails: CloudWatchEventsExecutionDataDetailsTypeDef,  # (2)
+    output: str,
+    outputDetails: CloudWatchEventsExecutionDataDetailsTypeDef,  # (2)
+    traceHeader: str,
+    billingDetails: BillingDetailsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `executionArn`: `str`
-- `stateMachineArn`: `str`
-- `name`: `str`
-- `startDate`: `datetime`
-- `stopDate`: `datetime`
-- `status`: [SyncExecutionStatusType](./literals.md#syncexecutionstatustype)
-- `error`: `str`
-- `cause`: `str`
-- `input`: `str`
-- `inputDetails`:
-  [CloudWatchEventsExecutionDataDetailsTypeDef](./type_defs.md#cloudwatcheventsexecutiondatadetailstypedef)
-- `output`: `str`
-- `outputDetails`:
-  [CloudWatchEventsExecutionDataDetailsTypeDef](./type_defs.md#cloudwatcheventsexecutiondatadetailstypedef)
-- `traceHeader`: `str`
-- `billingDetails`:
-  [BillingDetailsTypeDef](./type_defs.md#billingdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stateenteredeventdetailstypedef"></a>
-
+1. See [:material-code-brackets: SyncExecutionStatusType](./literals.md#syncexecutionstatustype) 
+2. See [:material-code-braces: CloudWatchEventsExecutionDataDetailsTypeDef](./type_defs.md#cloudwatcheventsexecutiondatadetailstypedef) 
+3. See [:material-code-braces: CloudWatchEventsExecutionDataDetailsTypeDef](./type_defs.md#cloudwatcheventsexecutiondatadetailstypedef) 
+4. See [:material-code-braces: BillingDetailsTypeDef](./type_defs.md#billingdetailstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StateEnteredEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import StateEnteredEventDetailsTypeDef
+
+def get_value() -> StateEnteredEventDetailsTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StateEnteredEventDetailsTypeDef(TypedDict):
+    name: str,
+    input: NotRequired[str],
+    inputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `input`: `str`
-- `inputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-
-<a id="stateexitedeventdetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## StateExitedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import StateExitedEventDetailsTypeDef
+
+def get_value() -> StateExitedEventDetailsTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StateExitedEventDetailsTypeDef(TypedDict):
+    name: str,
+    output: NotRequired[str],
+    outputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `output`: `str`
-- `outputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-
-<a id="statemachinelistitemtypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## StateMachineListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import StateMachineListItemTypeDef
+
+def get_value() -> StateMachineListItemTypeDef:
+    return {
+        "stateMachineArn": ...,
+        "name": ...,
+        "type": ...,
+        "creationDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StateMachineListItemTypeDef(TypedDict):
+    stateMachineArn: str,
+    name: str,
+    type: StateMachineTypeType,  # (1)
+    creationDate: datetime,
+```
 
-- `stateMachineArn`: `str`
-- `name`: `str`
-- `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
-- `creationDate`: `datetime`
-
-<a id="stopexecutioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: StateMachineTypeType](./literals.md#statemachinetypetype) 
 ## StopExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import StopExecutionInputRequestTypeDef
+
+def get_value() -> StopExecutionInputRequestTypeDef:
+    return {
+        "executionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `executionArn`: `str`
-
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="stopexecutionoutputtypedef"></a>
+```python title="Definition"
+class StopExecutionInputRequestTypeDef(TypedDict):
+    executionArn: str,
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## StopExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import StopExecutionOutputTypeDef
+
+def get_value() -> StopExecutionOutputTypeDef:
+    return {
+        "stopDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopExecutionOutputTypeDef(TypedDict):
+    stopDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `stopDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `resourceArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="taskfailedeventdetailstypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## TaskFailedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TaskFailedEventDetailsTypeDef
+
+def get_value() -> TaskFailedEventDetailsTypeDef:
+    return {
+        "resourceType": ...,
+        "resource": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceType`: `str`
-- `resource`: `str`
-
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="taskscheduledeventdetailstypedef"></a>
+```python title="Definition"
+class TaskFailedEventDetailsTypeDef(TypedDict):
+    resourceType: str,
+    resource: str,
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## TaskScheduledEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TaskScheduledEventDetailsTypeDef
+
+def get_value() -> TaskScheduledEventDetailsTypeDef:
+    return {
+        "resourceType": ...,
+        "resource": ...,
+        "region": ...,
+        "parameters": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceType`: `str`
-- `resource`: `str`
-- `region`: `str`
-- `parameters`: `str`
-
-Optional fields:
-
-- `timeoutInSeconds`: `int`
-- `heartbeatInSeconds`: `int`
-
-<a id="taskstartfailedeventdetailstypedef"></a>
+```python title="Definition"
+class TaskScheduledEventDetailsTypeDef(TypedDict):
+    resourceType: str,
+    resource: str,
+    region: str,
+    parameters: str,
+    timeoutInSeconds: NotRequired[int],
+    heartbeatInSeconds: NotRequired[int],
+```
 
 ## TaskStartFailedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TaskStartFailedEventDetailsTypeDef
+
+def get_value() -> TaskStartFailedEventDetailsTypeDef:
+    return {
+        "resourceType": ...,
+        "resource": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceType`: `str`
-- `resource`: `str`
-
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="taskstartedeventdetailstypedef"></a>
+```python title="Definition"
+class TaskStartFailedEventDetailsTypeDef(TypedDict):
+    resourceType: str,
+    resource: str,
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## TaskStartedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TaskStartedEventDetailsTypeDef
+
+def get_value() -> TaskStartedEventDetailsTypeDef:
+    return {
+        "resourceType": ...,
+        "resource": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceType`: `str`
-- `resource`: `str`
-
-<a id="tasksubmitfailedeventdetailstypedef"></a>
+```python title="Definition"
+class TaskStartedEventDetailsTypeDef(TypedDict):
+    resourceType: str,
+    resource: str,
+```
 
 ## TaskSubmitFailedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TaskSubmitFailedEventDetailsTypeDef
+
+def get_value() -> TaskSubmitFailedEventDetailsTypeDef:
+    return {
+        "resourceType": ...,
+        "resource": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceType`: `str`
-- `resource`: `str`
-
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="tasksubmittedeventdetailstypedef"></a>
+```python title="Definition"
+class TaskSubmitFailedEventDetailsTypeDef(TypedDict):
+    resourceType: str,
+    resource: str,
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## TaskSubmittedEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TaskSubmittedEventDetailsTypeDef
+
+def get_value() -> TaskSubmittedEventDetailsTypeDef:
+    return {
+        "resourceType": ...,
+        "resource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TaskSubmittedEventDetailsTypeDef(TypedDict):
+    resourceType: str,
+    resource: str,
+    output: NotRequired[str],
+    outputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+```
 
-- `resourceType`: `str`
-- `resource`: `str`
-
-Optional fields:
-
-- `output`: `str`
-- `outputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-
-<a id="tasksucceededeventdetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## TaskSucceededEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TaskSucceededEventDetailsTypeDef
+
+def get_value() -> TaskSucceededEventDetailsTypeDef:
+    return {
+        "resourceType": ...,
+        "resource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TaskSucceededEventDetailsTypeDef(TypedDict):
+    resourceType: str,
+    resource: str,
+    output: NotRequired[str],
+    outputDetails: NotRequired[HistoryEventExecutionDataDetailsTypeDef],  # (1)
+```
 
-- `resourceType`: `str`
-- `resource`: `str`
-
-Optional fields:
-
-- `output`: `str`
-- `outputDetails`:
-  [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
-
-<a id="tasktimedouteventdetailstypedef"></a>
-
+1. See [:material-code-braces: HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef) 
 ## TaskTimedOutEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TaskTimedOutEventDetailsTypeDef
+
+def get_value() -> TaskTimedOutEventDetailsTypeDef:
+    return {
+        "resourceType": ...,
+        "resource": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceType`: `str`
-- `resource`: `str`
-
-Optional fields:
-
-- `error`: `str`
-- `cause`: `str`
-
-<a id="tracingconfigurationtypedef"></a>
+```python title="Definition"
+class TaskTimedOutEventDetailsTypeDef(TypedDict):
+    resourceType: str,
+    resource: str,
+    error: NotRequired[str],
+    cause: NotRequired[str],
+```
 
 ## TracingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import TracingConfigurationTypeDef
+
+def get_value() -> TracingConfigurationTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `enabled`: `bool`
-
-<a id="untagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class TracingConfigurationTypeDef(TypedDict):
+    enabled: NotRequired[bool],
+```
 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatestatemachineinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateStateMachineInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import UpdateStateMachineInputRequestTypeDef
+
+def get_value() -> UpdateStateMachineInputRequestTypeDef:
+    return {
+        "stateMachineArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStateMachineInputRequestTypeDef(TypedDict):
+    stateMachineArn: str,
+    definition: NotRequired[str],
+    roleArn: NotRequired[str],
+    loggingConfiguration: NotRequired[LoggingConfigurationTypeDef],  # (1)
+    tracingConfiguration: NotRequired[TracingConfigurationTypeDef],  # (2)
+```
 
-- `stateMachineArn`: `str`
-
-Optional fields:
-
-- `definition`: `str`
-- `roleArn`: `str`
-- `loggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `tracingConfiguration`:
-  [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
-
-<a id="updatestatemachineoutputtypedef"></a>
-
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef) 
 ## UpdateStateMachineOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_stepfunctions.type_defs import UpdateStateMachineOutputTypeDef
+
+def get_value() -> UpdateStateMachineOutputTypeDef:
+    return {
+        "updateDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStateMachineOutputTypeDef(TypedDict):
+    updateDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `updateDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

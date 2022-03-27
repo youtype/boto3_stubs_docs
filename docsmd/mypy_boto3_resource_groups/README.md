@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-resourcegroups-module"></a>
-
-# Type annotations for boto3 ResourceGroups module
+#  ResourceGroups module
 
 > [Index](../README.md) > ResourceGroups
 
-Auto-generated documentation for
-[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
-type annotations stubs module
-[mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
+!!! note ""
 
-- [Type annotations for boto3 ResourceGroups module](#type-annotations-for-boto3-resourcegroups-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ResourceGroupsClient](#resourcegroupsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
+    type annotations stubs module [mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ResourceGroups`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[resource-groups]'
 python -m pip install mypy-boto3-resource-groups
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,92 +42,60 @@ python -m pip install mypy-boto3-resource-groups
 python -m pip uninstall -y mypy-boto3-resource-groups
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="resourcegroupsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ResourceGroupsClient
 
-Type annotations for `boto3.client("resource-groups")` as
-[ResourceGroupsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("resource-groups")` as [ResourceGroupsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_resource_groups.client import ResourceGroupsClient
+
+def get_client() -> ResourceGroupsClient:
+    return Session().cleint("resource-groups")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_group](./client.md#create_group)
-- [delete_group](./client.md#delete_group)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_group](./client.md#get_group)
-- [get_group_configuration](./client.md#get_group_configuration)
-- [get_group_query](./client.md#get_group_query)
-- [get_paginator](./client.md#get_paginator)
-- [get_tags](./client.md#get_tags)
-- [group_resources](./client.md#group_resources)
-- [list_group_resources](./client.md#list_group_resources)
-- [list_groups](./client.md#list_groups)
-- [put_group_configuration](./client.md#put_group_configuration)
-- [search_resources](./client.md#search_resources)
-- [tag](./client.md#tag)
-- [ungroup_resources](./client.md#ungroup_resources)
-- [untag](./client.md#untag)
-- [update_group](./client.md#update_group)
-- [update_group_query](./client.md#update_group_query)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ResourceGroupsClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- ForbiddenException
-- InternalServerErrorException
-- MethodNotAllowedException
-- NotFoundException
-- TooManyRequestsException
-- UnauthorizedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("resource-groups").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("resource-groups").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_resource_groups.paginator import ListGroupResourcesPaginator, ...
+from mypy_boto3_resource_groups.paginator import ListGroupResourcesPaginator
+
+def get_list_group_resources_paginator() -> ListGroupResourcesPaginator:
+    return Session().client("resource-groups").get_paginator("list_group_resources"))
 ```
 
 - [ListGroupResourcesPaginator](./paginators.md#listgroupresourcespaginator)
 - [ListGroupsPaginator](./paginators.md#listgroupspaginator)
 - [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_resource_groups.literals import GroupConfigurationStatusType
 
-```python
-from mypy_boto3_resource_groups.literals import GroupConfigurationStatusType, ...
+def get_value() -> GroupConfigurationStatusType:
+    return "UPDATE_COMPLETE"
 ```
 
 - [GroupConfigurationStatusType](./literals.md#groupconfigurationstatustype)
@@ -165,18 +111,22 @@ from mypy_boto3_resource_groups.literals import GroupConfigurationStatusType, ..
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_resource_groups.type_defs import CreateGroupInputRequestTypeDef
 
-```python
-from mypy_boto3_resource_groups.type_defs import CreateGroupInputRequestTypeDef, ...
+def get_value() -> CreateGroupInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [CreateGroupInputRequestTypeDef](./type_defs.md#creategroupinputrequesttypedef)
@@ -201,9 +151,11 @@ from mypy_boto3_resource_groups.type_defs import CreateGroupInputRequestTypeDef,
 - [GroupResourcesInputRequestTypeDef](./type_defs.md#groupresourcesinputrequesttypedef)
 - [GroupResourcesOutputTypeDef](./type_defs.md#groupresourcesoutputtypedef)
 - [GroupTypeDef](./type_defs.md#grouptypedef)
+- [ListGroupResourcesInputListGroupResourcesPaginateTypeDef](./type_defs.md#listgroupresourcesinputlistgroupresourcespaginatetypedef)
 - [ListGroupResourcesInputRequestTypeDef](./type_defs.md#listgroupresourcesinputrequesttypedef)
 - [ListGroupResourcesItemTypeDef](./type_defs.md#listgroupresourcesitemtypedef)
 - [ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef)
+- [ListGroupsInputListGroupsPaginateTypeDef](./type_defs.md#listgroupsinputlistgroupspaginatetypedef)
 - [ListGroupsInputRequestTypeDef](./type_defs.md#listgroupsinputrequesttypedef)
 - [ListGroupsOutputTypeDef](./type_defs.md#listgroupsoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -216,6 +168,7 @@ from mypy_boto3_resource_groups.type_defs import CreateGroupInputRequestTypeDef,
 - [ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SearchResourcesInputRequestTypeDef](./type_defs.md#searchresourcesinputrequesttypedef)
+- [SearchResourcesInputSearchResourcesPaginateTypeDef](./type_defs.md#searchresourcesinputsearchresourcespaginatetypedef)
 - [SearchResourcesOutputTypeDef](./type_defs.md#searchresourcesoutputtypedef)
 - [TagInputRequestTypeDef](./type_defs.md#taginputrequesttypedef)
 - [TagOutputTypeDef](./type_defs.md#tagoutputtypedef)
@@ -227,3 +180,4 @@ from mypy_boto3_resource_groups.type_defs import CreateGroupInputRequestTypeDef,
 - [UpdateGroupOutputTypeDef](./type_defs.md#updategroupoutputtypedef)
 - [UpdateGroupQueryInputRequestTypeDef](./type_defs.md#updategroupqueryinputrequesttypedef)
 - [UpdateGroupQueryOutputTypeDef](./type_defs.md#updategroupqueryoutputtypedef)
+

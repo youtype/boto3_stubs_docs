@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-qldbsession-module"></a>
-
-# Type annotations for boto3 QLDBSession module
+#  QLDBSession module
 
 > [Index](../README.md) > QLDBSession
 
-Auto-generated documentation for
-[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
-type annotations stubs module
-[mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
+!!! note ""
 
-- [Type annotations for boto3 QLDBSession module](#type-annotations-for-boto3-qldbsession-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [QLDBSessionClient](#qldbsessionclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
+    type annotations stubs module [mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `QLDBSession`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[qldb-session]'
 python -m pip install mypy-boto3-qldb-session
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,75 +42,62 @@ python -m pip install mypy-boto3-qldb-session
 python -m pip uninstall -y mypy-boto3-qldb-session
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="qldbsessionclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## QLDBSessionClient
 
-Type annotations for `boto3.client("qldb-session")` as
-[QLDBSessionClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("qldb-session")` as [QLDBSessionClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_qldb_session.client import QLDBSessionClient
+
+def get_client() -> QLDBSessionClient:
+    return Session().cleint("qldb-session")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [send_command](./client.md#send_command)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-QLDBSessionClient [exceptions](./client.md#exceptions)
 
-- BadRequestException
-- CapacityExceededException
-- ClientError
-- InvalidSessionException
-- LimitExceededException
-- OccConflictException
-- RateExceededException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_qldb_session.literals import QLDBSessionServiceName
 
-```python
-from mypy_boto3_qldb_session.literals import QLDBSessionServiceName, ...
+def get_value() -> QLDBSessionServiceName:
+    return "qldb-session"
 ```
 
 - [QLDBSessionServiceName](./literals.md#qldbsessionservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_qldb_session.type_defs import AbortTransactionResultTypeDef
 
-```python
-from mypy_boto3_qldb_session.type_defs import AbortTransactionResultTypeDef, ...
+def get_value() -> AbortTransactionResultTypeDef:
+    return {
+        "TimingInformation": ...,
+    }
 ```
 
 - [AbortTransactionResultTypeDef](./type_defs.md#aborttransactionresulttypedef)
@@ -152,3 +118,4 @@ from mypy_boto3_qldb_session.type_defs import AbortTransactionResultTypeDef, ...
 - [StartTransactionResultTypeDef](./type_defs.md#starttransactionresulttypedef)
 - [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 - [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
+

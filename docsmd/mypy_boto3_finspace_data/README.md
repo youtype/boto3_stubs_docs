@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-finspacedata-module"></a>
-
-# Type annotations for boto3 FinSpaceData module
+#  FinSpaceData module
 
 > [Index](../README.md) > FinSpaceData
 
-Auto-generated documentation for
-[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
-type annotations stubs module
-[mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
+!!! note ""
 
-- [Type annotations for boto3 FinSpaceData module](#type-annotations-for-boto3-finspacedata-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [FinSpaceDataClient](#finspacedataclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
+    type annotations stubs module [mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `FinSpaceData`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[finspace-data]'
 python -m pip install mypy-boto3-finspace-data
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,85 +42,37 @@ python -m pip install mypy-boto3-finspace-data
 python -m pip uninstall -y mypy-boto3-finspace-data
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="finspacedataclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## FinSpaceDataClient
 
-Type annotations for `boto3.client("finspace-data")` as
-[FinSpaceDataClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("finspace-data")` as [FinSpaceDataClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_finspace_data.client import FinSpaceDataClient
+
+def get_client() -> FinSpaceDataClient:
+    return Session().cleint("finspace-data")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_changeset](./client.md#create_changeset)
-- [create_data_view](./client.md#create_data_view)
-- [create_dataset](./client.md#create_dataset)
-- [create_permission_group](./client.md#create_permission_group)
-- [create_user](./client.md#create_user)
-- [delete_dataset](./client.md#delete_dataset)
-- [delete_permission_group](./client.md#delete_permission_group)
-- [disable_user](./client.md#disable_user)
-- [enable_user](./client.md#enable_user)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_changeset](./client.md#get_changeset)
-- [get_data_view](./client.md#get_data_view)
-- [get_dataset](./client.md#get_dataset)
-- [get_paginator](./client.md#get_paginator)
-- [get_programmatic_access_credentials](./client.md#get_programmatic_access_credentials)
-- [get_user](./client.md#get_user)
-- [get_working_location](./client.md#get_working_location)
-- [list_changesets](./client.md#list_changesets)
-- [list_data_views](./client.md#list_data_views)
-- [list_datasets](./client.md#list_datasets)
-- [list_permission_groups](./client.md#list_permission_groups)
-- [list_users](./client.md#list_users)
-- [reset_user_password](./client.md#reset_user_password)
-- [update_changeset](./client.md#update_changeset)
-- [update_dataset](./client.md#update_dataset)
-- [update_permission_group](./client.md#update_permission_group)
-- [update_user](./client.md#update_user)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-FinSpaceDataClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- LimitExceededException
-- ResourceNotFoundException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("finspace-data").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("finspace-data").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_finspace_data.paginator import ListChangesetsPaginator, ...
+from mypy_boto3_finspace_data.paginator import ListChangesetsPaginator
+
+def get_list_changesets_paginator() -> ListChangesetsPaginator:
+    return Session().client("finspace-data").get_paginator("list_changesets"))
 ```
 
 - [ListChangesetsPaginator](./paginators.md#listchangesetspaginator)
@@ -151,16 +81,23 @@ from mypy_boto3_finspace_data.paginator import ListChangesetsPaginator, ...
 - [ListPermissionGroupsPaginator](./paginators.md#listpermissiongroupspaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_finspace_data.literals import ApiAccessType
 
-```python
-from mypy_boto3_finspace_data.literals import ApiAccessType, ...
+def get_value() -> ApiAccessType:
+    return "DISABLED"
 ```
 
 - [ApiAccessType](./literals.md#apiaccesstype)
@@ -185,18 +122,22 @@ from mypy_boto3_finspace_data.literals import ApiAccessType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_finspace_data.type_defs import ChangesetErrorInfoTypeDef
 
-```python
-from mypy_boto3_finspace_data.type_defs import ChangesetErrorInfoTypeDef, ...
+def get_value() -> ChangesetErrorInfoTypeDef:
+    return {
+        "errorMessage": ...,
+    }
 ```
 
 - [ChangesetErrorInfoTypeDef](./type_defs.md#changeseterrorinfotypedef)
@@ -238,14 +179,19 @@ from mypy_boto3_finspace_data.type_defs import ChangesetErrorInfoTypeDef, ...
 - [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef)
 - [GetWorkingLocationRequestRequestTypeDef](./type_defs.md#getworkinglocationrequestrequesttypedef)
 - [GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef)
+- [ListChangesetsRequestListChangesetsPaginateTypeDef](./type_defs.md#listchangesetsrequestlistchangesetspaginatetypedef)
 - [ListChangesetsRequestRequestTypeDef](./type_defs.md#listchangesetsrequestrequesttypedef)
 - [ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef)
+- [ListDataViewsRequestListDataViewsPaginateTypeDef](./type_defs.md#listdataviewsrequestlistdataviewspaginatetypedef)
 - [ListDataViewsRequestRequestTypeDef](./type_defs.md#listdataviewsrequestrequesttypedef)
 - [ListDataViewsResponseTypeDef](./type_defs.md#listdataviewsresponsetypedef)
+- [ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef)
 - [ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
 - [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)
+- [ListPermissionGroupsRequestListPermissionGroupsPaginateTypeDef](./type_defs.md#listpermissiongroupsrequestlistpermissiongroupspaginatetypedef)
 - [ListPermissionGroupsRequestRequestTypeDef](./type_defs.md#listpermissiongroupsrequestrequesttypedef)
 - [ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef)
+- [ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef)
 - [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
 - [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -266,3 +212,4 @@ from mypy_boto3_finspace_data.type_defs import ChangesetErrorInfoTypeDef, ...
 - [UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef)
 - [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
+

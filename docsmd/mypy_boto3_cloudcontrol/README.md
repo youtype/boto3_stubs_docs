@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-cloudcontrolapi-module"></a>
-
-# Type annotations for boto3 CloudControlApi module
+#  CloudControlApi module
 
 > [Index](../README.md) > CloudControlApi
 
-Auto-generated documentation for
-[CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
-type annotations stubs module
-[mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
+!!! note ""
 
-- [Type annotations for boto3 CloudControlApi module](#type-annotations-for-boto3-cloudcontrolapi-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudControlApiClient](#cloudcontrolapiclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
+    type annotations stubs module [mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudControlApi`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cloudcontrol]'
 python -m pip install mypy-boto3-cloudcontrol
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,96 +42,58 @@ python -m pip install mypy-boto3-cloudcontrol
 python -m pip uninstall -y mypy-boto3-cloudcontrol
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudcontrolapiclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudControlApiClient
 
-Type annotations for `boto3.client("cloudcontrol")` as
-[CloudControlApiClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cloudcontrol")` as [CloudControlApiClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cloudcontrol.client import CloudControlApiClient
+
+def get_client() -> CloudControlApiClient:
+    return Session().cleint("cloudcontrol")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [cancel_resource_request](./client.md#cancel_resource_request)
-- [create_resource](./client.md#create_resource)
-- [delete_resource](./client.md#delete_resource)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_resource](./client.md#get_resource)
-- [get_resource_request_status](./client.md#get_resource_request_status)
-- [get_waiter](./client.md#get_waiter)
-- [list_resource_requests](./client.md#list_resource_requests)
-- [list_resources](./client.md#list_resources)
-- [update_resource](./client.md#update_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CloudControlApiClient [exceptions](./client.md#exceptions)
-
-- AlreadyExistsException
-- ClientError
-- ClientTokenConflictException
-- ConcurrentModificationException
-- ConcurrentOperationException
-- GeneralServiceException
-- HandlerFailureException
-- HandlerInternalFailureException
-- InvalidCredentialsException
-- InvalidRequestException
-- NetworkFailureException
-- NotStabilizedException
-- NotUpdatableException
-- PrivateTypeException
-- RequestTokenNotFoundException
-- ResourceConflictException
-- ResourceNotFoundException
-- ServiceInternalErrorException
-- ServiceLimitExceededException
-- ThrottlingException
-- TypeNotFoundException
-- UnsupportedActionException
-
-<a id="waiters"></a>
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("cloudcontrol").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("cloudcontrol").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloudcontrol.waiter import ResourceRequestSuccessWaiter, ...
+from mypy_boto3_cloudcontrol.waiter import ResourceRequestSuccessWaiter
+
+def get_resource_request_success_waiter() -> ResourceRequestSuccessWaiter:
+    return Session().client("cloudcontrol").get_waiter("resource_request_success")
 ```
 
 - [ResourceRequestSuccessWaiter](./waiters.md#resourcerequestsuccesswaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudcontrol.literals import HandlerErrorCodeType
 
-```python
-from mypy_boto3_cloudcontrol.literals import HandlerErrorCodeType, ...
+def get_value() -> HandlerErrorCodeType:
+    return "AccessDenied"
 ```
 
 - [HandlerErrorCodeType](./literals.md#handlererrorcodetype)
@@ -164,18 +104,22 @@ from mypy_boto3_cloudcontrol.literals import HandlerErrorCodeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudcontrol.type_defs import CancelResourceRequestInputRequestTypeDef
 
-```python
-from mypy_boto3_cloudcontrol.type_defs import CancelResourceRequestInputRequestTypeDef, ...
+def get_value() -> CancelResourceRequestInputRequestTypeDef:
+    return {
+        "RequestToken": ...,
+    }
 ```
 
 - [CancelResourceRequestInputRequestTypeDef](./type_defs.md#cancelresourcerequestinputrequesttypedef)
@@ -187,6 +131,7 @@ from mypy_boto3_cloudcontrol.type_defs import CancelResourceRequestInputRequestT
 - [GetResourceInputRequestTypeDef](./type_defs.md#getresourceinputrequesttypedef)
 - [GetResourceOutputTypeDef](./type_defs.md#getresourceoutputtypedef)
 - [GetResourceRequestStatusInputRequestTypeDef](./type_defs.md#getresourcerequeststatusinputrequesttypedef)
+- [GetResourceRequestStatusInputResourceRequestSuccessWaitTypeDef](./type_defs.md#getresourcerequeststatusinputresourcerequestsuccesswaittypedef)
 - [GetResourceRequestStatusOutputTypeDef](./type_defs.md#getresourcerequeststatusoutputtypedef)
 - [ListResourceRequestsInputRequestTypeDef](./type_defs.md#listresourcerequestsinputrequesttypedef)
 - [ListResourceRequestsOutputTypeDef](./type_defs.md#listresourcerequestsoutputtypedef)
@@ -199,3 +144,4 @@ from mypy_boto3_cloudcontrol.type_defs import CancelResourceRequestInputRequestT
 - [UpdateResourceInputRequestTypeDef](./type_defs.md#updateresourceinputrequesttypedef)
 - [UpdateResourceOutputTypeDef](./type_defs.md#updateresourceoutputtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

@@ -1,70 +1,18 @@
-<a id="appmeshclient-for-boto3-appmesh-module"></a>
-
-# AppMeshClient for boto3 AppMesh module
+# AppMeshClient
 
 > [Index](../README.md) > [AppMesh](./README.md) > AppMeshClient
 
-Auto-generated documentation for
-[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
-type annotations stubs module
-[mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+!!! note ""
 
-- [AppMeshClient for boto3 AppMesh module](#appmeshclient-for-boto3-appmesh-module)
-  - [AppMeshClient](#appmeshclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_gateway_route](#create_gateway_route)
-    - [create_mesh](#create_mesh)
-    - [create_route](#create_route)
-    - [create_virtual_gateway](#create_virtual_gateway)
-    - [create_virtual_node](#create_virtual_node)
-    - [create_virtual_router](#create_virtual_router)
-    - [create_virtual_service](#create_virtual_service)
-    - [delete_gateway_route](#delete_gateway_route)
-    - [delete_mesh](#delete_mesh)
-    - [delete_route](#delete_route)
-    - [delete_virtual_gateway](#delete_virtual_gateway)
-    - [delete_virtual_node](#delete_virtual_node)
-    - [delete_virtual_router](#delete_virtual_router)
-    - [delete_virtual_service](#delete_virtual_service)
-    - [describe_gateway_route](#describe_gateway_route)
-    - [describe_mesh](#describe_mesh)
-    - [describe_route](#describe_route)
-    - [describe_virtual_gateway](#describe_virtual_gateway)
-    - [describe_virtual_node](#describe_virtual_node)
-    - [describe_virtual_router](#describe_virtual_router)
-    - [describe_virtual_service](#describe_virtual_service)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_gateway_routes](#list_gateway_routes)
-    - [list_meshes](#list_meshes)
-    - [list_routes](#list_routes)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_virtual_gateways](#list_virtual_gateways)
-    - [list_virtual_nodes](#list_virtual_nodes)
-    - [list_virtual_routers](#list_virtual_routers)
-    - [list_virtual_services](#list_virtual_services)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_gateway_route](#update_gateway_route)
-    - [update_mesh](#update_mesh)
-    - [update_route](#update_route)
-    - [update_virtual_gateway](#update_virtual_gateway)
-    - [update_virtual_node](#update_virtual_node)
-    - [update_virtual_router](#update_virtual_router)
-    - [update_virtual_service](#update_virtual_service)
-    - [get_paginator](#get_paginator)
-
-<a id="appmeshclient"></a>
+    Auto-generated documentation for [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+    type annotations stubs module [mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 ## AppMeshClient
 
-Type annotations for `boto3.client("appmesh")`
+Type annotations and code completion for `#!python boto3.client("appmesh")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_appmesh.client import AppMeshClient
 
@@ -72,1028 +20,1382 @@ def get_appmesh_client() -> AppMeshClient:
     return Session().client("appmesh")
 ```
 
-Boto3 documentation:
-[AppMesh.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("appmesh").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("appmesh")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.InternalServerErrorException,
+    client.LimitExceededException,
+    client.NotFoundException,
+    client.ResourceInUseException,
+    client.ServiceUnavailableException,
+    client.TooManyRequestsException,
+    client.TooManyTagsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_appmesh.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.TooManyTagsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AppMeshClient exceptions.
-
-Type annotations for `boto3.client("appmesh").exceptions` method.
-
-Boto3 documentation:
-[AppMesh.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("appmesh").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.can_paginate)
 
-Boto3 documentation:
-[AppMesh.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_gateway\_route"></a>
-
-### create_gateway_route
+### create\_gateway\_route
 
 Creates a gateway route.
 
-Type annotations for `boto3.client("appmesh").create_gateway_route` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").create_gateway_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_gateway_route)
 
-Boto3 documentation:
-[AppMesh.Client.create_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_gateway_route)
+```python title="Method definition"
+def create_gateway_route(
+    self,
+    *,
+    gatewayRouteName: str,
+    meshName: str,
+    spec: GatewayRouteSpecTypeDef,  # (1)
+    virtualGatewayName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+    tags: Sequence[TagRefTypeDef] = ...,  # (2)
+) -> CreateGatewayRouteOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateGatewayRouteInputRequestTypeDef](./type_defs.md#creategatewayrouteinputrequesttypedef).
+1. See [:material-code-braces: GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
+3. See [:material-code-braces: CreateGatewayRouteOutputTypeDef](./type_defs.md#creategatewayrouteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `gatewayRouteName`: `str` *(required)*
-- `meshName`: `str` *(required)*
-- `spec`: [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
-  *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateGatewayRouteInputRequestTypeDef = {  # (1)
+    "gatewayRouteName": ...,
+    "meshName": ...,
+    "spec": ...,
+    "virtualGatewayName": ...,
+}
 
-Returns
-[CreateGatewayRouteOutputTypeDef](./type_defs.md#creategatewayrouteoutputtypedef).
+parent.create_gateway_route(**kwargs)
+```
 
-<a id="create\_mesh"></a>
+1. See [:material-code-braces: CreateGatewayRouteInputRequestTypeDef](./type_defs.md#creategatewayrouteinputrequesttypedef) 
 
-### create_mesh
+### create\_mesh
 
 Creates a service mesh.
 
-Type annotations for `boto3.client("appmesh").create_mesh` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").create_mesh` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_mesh)
 
-Boto3 documentation:
-[AppMesh.Client.create_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_mesh)
+```python title="Method definition"
+def create_mesh(
+    self,
+    *,
+    meshName: str,
+    clientToken: str = ...,
+    spec: MeshSpecTypeDef = ...,  # (1)
+    tags: Sequence[TagRefTypeDef] = ...,  # (2)
+) -> CreateMeshOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateMeshInputRequestTypeDef](./type_defs.md#createmeshinputrequesttypedef).
+1. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
+3. See [:material-code-braces: CreateMeshOutputTypeDef](./type_defs.md#createmeshoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `clientToken`: `str`
-- `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateMeshInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+}
 
-Returns [CreateMeshOutputTypeDef](./type_defs.md#createmeshoutputtypedef).
+parent.create_mesh(**kwargs)
+```
 
-<a id="create\_route"></a>
+1. See [:material-code-braces: CreateMeshInputRequestTypeDef](./type_defs.md#createmeshinputrequesttypedef) 
 
-### create_route
+### create\_route
 
 Creates a route that is associated with a virtual router.
 
-Type annotations for `boto3.client("appmesh").create_route` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").create_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_route)
 
-Boto3 documentation:
-[AppMesh.Client.create_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_route)
+```python title="Method definition"
+def create_route(
+    self,
+    *,
+    meshName: str,
+    routeName: str,
+    spec: RouteSpecTypeDef,  # (1)
+    virtualRouterName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+    tags: Sequence[TagRefTypeDef] = ...,  # (2)
+) -> CreateRouteOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateRouteInputRequestTypeDef](./type_defs.md#createrouteinputrequesttypedef).
+1. See [:material-code-braces: RouteSpecTypeDef](./type_defs.md#routespectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
+3. See [:material-code-braces: CreateRouteOutputTypeDef](./type_defs.md#createrouteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `routeName`: `str` *(required)*
-- `spec`: [RouteSpecTypeDef](./type_defs.md#routespectypedef) *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRouteInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "routeName": ...,
+    "spec": ...,
+    "virtualRouterName": ...,
+}
 
-Returns [CreateRouteOutputTypeDef](./type_defs.md#createrouteoutputtypedef).
+parent.create_route(**kwargs)
+```
 
-<a id="create\_virtual\_gateway"></a>
+1. See [:material-code-braces: CreateRouteInputRequestTypeDef](./type_defs.md#createrouteinputrequesttypedef) 
 
-### create_virtual_gateway
+### create\_virtual\_gateway
 
 Creates a virtual gateway.
 
-Type annotations for `boto3.client("appmesh").create_virtual_gateway` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").create_virtual_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway)
 
-Boto3 documentation:
-[AppMesh.Client.create_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_gateway)
+```python title="Method definition"
+def create_virtual_gateway(
+    self,
+    *,
+    meshName: str,
+    spec: VirtualGatewaySpecTypeDef,  # (1)
+    virtualGatewayName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+    tags: Sequence[TagRefTypeDef] = ...,  # (2)
+) -> CreateVirtualGatewayOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateVirtualGatewayInputRequestTypeDef](./type_defs.md#createvirtualgatewayinputrequesttypedef).
+1. See [:material-code-braces: VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
+3. See [:material-code-braces: CreateVirtualGatewayOutputTypeDef](./type_defs.md#createvirtualgatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
-  *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVirtualGatewayInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "spec": ...,
+    "virtualGatewayName": ...,
+}
 
-Returns
-[CreateVirtualGatewayOutputTypeDef](./type_defs.md#createvirtualgatewayoutputtypedef).
+parent.create_virtual_gateway(**kwargs)
+```
 
-<a id="create\_virtual\_node"></a>
+1. See [:material-code-braces: CreateVirtualGatewayInputRequestTypeDef](./type_defs.md#createvirtualgatewayinputrequesttypedef) 
 
-### create_virtual_node
+### create\_virtual\_node
 
 Creates a virtual node within a service mesh.
 
-Type annotations for `boto3.client("appmesh").create_virtual_node` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").create_virtual_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_node)
 
-Boto3 documentation:
-[AppMesh.Client.create_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_node)
+```python title="Method definition"
+def create_virtual_node(
+    self,
+    *,
+    meshName: str,
+    spec: VirtualNodeSpecTypeDef,  # (1)
+    virtualNodeName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+    tags: Sequence[TagRefTypeDef] = ...,  # (2)
+) -> CreateVirtualNodeOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateVirtualNodeInputRequestTypeDef](./type_defs.md#createvirtualnodeinputrequesttypedef).
+1. See [:material-code-braces: VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
+3. See [:material-code-braces: CreateVirtualNodeOutputTypeDef](./type_defs.md#createvirtualnodeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
-  *(required)*
-- `virtualNodeName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVirtualNodeInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "spec": ...,
+    "virtualNodeName": ...,
+}
 
-Returns
-[CreateVirtualNodeOutputTypeDef](./type_defs.md#createvirtualnodeoutputtypedef).
+parent.create_virtual_node(**kwargs)
+```
 
-<a id="create\_virtual\_router"></a>
+1. See [:material-code-braces: CreateVirtualNodeInputRequestTypeDef](./type_defs.md#createvirtualnodeinputrequesttypedef) 
 
-### create_virtual_router
+### create\_virtual\_router
 
 Creates a virtual router within a service mesh.
 
-Type annotations for `boto3.client("appmesh").create_virtual_router` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").create_virtual_router` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_router)
 
-Boto3 documentation:
-[AppMesh.Client.create_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_router)
+```python title="Method definition"
+def create_virtual_router(
+    self,
+    *,
+    meshName: str,
+    spec: VirtualRouterSpecTypeDef,  # (1)
+    virtualRouterName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+    tags: Sequence[TagRefTypeDef] = ...,  # (2)
+) -> CreateVirtualRouterOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateVirtualRouterInputRequestTypeDef](./type_defs.md#createvirtualrouterinputrequesttypedef).
+1. See [:material-code-braces: VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
+3. See [:material-code-braces: CreateVirtualRouterOutputTypeDef](./type_defs.md#createvirtualrouteroutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
-  *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVirtualRouterInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "spec": ...,
+    "virtualRouterName": ...,
+}
 
-Returns
-[CreateVirtualRouterOutputTypeDef](./type_defs.md#createvirtualrouteroutputtypedef).
+parent.create_virtual_router(**kwargs)
+```
 
-<a id="create\_virtual\_service"></a>
+1. See [:material-code-braces: CreateVirtualRouterInputRequestTypeDef](./type_defs.md#createvirtualrouterinputrequesttypedef) 
 
-### create_virtual_service
+### create\_virtual\_service
 
 Creates a virtual service within a service mesh.
 
-Type annotations for `boto3.client("appmesh").create_virtual_service` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").create_virtual_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_service)
 
-Boto3 documentation:
-[AppMesh.Client.create_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.create_virtual_service)
+```python title="Method definition"
+def create_virtual_service(
+    self,
+    *,
+    meshName: str,
+    spec: VirtualServiceSpecTypeDef,  # (1)
+    virtualServiceName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+    tags: Sequence[TagRefTypeDef] = ...,  # (2)
+) -> CreateVirtualServiceOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateVirtualServiceInputRequestTypeDef](./type_defs.md#createvirtualserviceinputrequesttypedef).
+1. See [:material-code-braces: VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
+3. See [:material-code-braces: CreateVirtualServiceOutputTypeDef](./type_defs.md#createvirtualserviceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
-  *(required)*
-- `virtualServiceName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVirtualServiceInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "spec": ...,
+    "virtualServiceName": ...,
+}
 
-Returns
-[CreateVirtualServiceOutputTypeDef](./type_defs.md#createvirtualserviceoutputtypedef).
+parent.create_virtual_service(**kwargs)
+```
 
-<a id="delete\_gateway\_route"></a>
+1. See [:material-code-braces: CreateVirtualServiceInputRequestTypeDef](./type_defs.md#createvirtualserviceinputrequesttypedef) 
 
-### delete_gateway_route
+### delete\_gateway\_route
 
 Deletes an existing gateway route.
 
-Type annotations for `boto3.client("appmesh").delete_gateway_route` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").delete_gateway_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route)
 
-Boto3 documentation:
-[AppMesh.Client.delete_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_gateway_route)
+```python title="Method definition"
+def delete_gateway_route(
+    self,
+    *,
+    gatewayRouteName: str,
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: str = ...,
+) -> DeleteGatewayRouteOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGatewayRouteInputRequestTypeDef](./type_defs.md#deletegatewayrouteinputrequesttypedef).
+1. See [:material-code-braces: DeleteGatewayRouteOutputTypeDef](./type_defs.md#deletegatewayrouteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `gatewayRouteName`: `str` *(required)*
-- `meshName`: `str` *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteGatewayRouteInputRequestTypeDef = {  # (1)
+    "gatewayRouteName": ...,
+    "meshName": ...,
+    "virtualGatewayName": ...,
+}
 
-Returns
-[DeleteGatewayRouteOutputTypeDef](./type_defs.md#deletegatewayrouteoutputtypedef).
+parent.delete_gateway_route(**kwargs)
+```
 
-<a id="delete\_mesh"></a>
+1. See [:material-code-braces: DeleteGatewayRouteInputRequestTypeDef](./type_defs.md#deletegatewayrouteinputrequesttypedef) 
 
-### delete_mesh
+### delete\_mesh
 
 Deletes an existing service mesh.
 
-Type annotations for `boto3.client("appmesh").delete_mesh` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").delete_mesh` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_mesh)
 
-Boto3 documentation:
-[AppMesh.Client.delete_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_mesh)
+```python title="Method definition"
+def delete_mesh(
+    self,
+    *,
+    meshName: str,
+) -> DeleteMeshOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMeshInputRequestTypeDef](./type_defs.md#deletemeshinputrequesttypedef).
+1. See [:material-code-braces: DeleteMeshOutputTypeDef](./type_defs.md#deletemeshoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMeshInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+}
 
-Returns [DeleteMeshOutputTypeDef](./type_defs.md#deletemeshoutputtypedef).
+parent.delete_mesh(**kwargs)
+```
 
-<a id="delete\_route"></a>
+1. See [:material-code-braces: DeleteMeshInputRequestTypeDef](./type_defs.md#deletemeshinputrequesttypedef) 
 
-### delete_route
+### delete\_route
 
 Deletes an existing route.
 
-Type annotations for `boto3.client("appmesh").delete_route` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").delete_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_route)
 
-Boto3 documentation:
-[AppMesh.Client.delete_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_route)
+```python title="Method definition"
+def delete_route(
+    self,
+    *,
+    meshName: str,
+    routeName: str,
+    virtualRouterName: str,
+    meshOwner: str = ...,
+) -> DeleteRouteOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRouteInputRequestTypeDef](./type_defs.md#deleterouteinputrequesttypedef).
+1. See [:material-code-braces: DeleteRouteOutputTypeDef](./type_defs.md#deleterouteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `routeName`: `str` *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRouteInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "routeName": ...,
+    "virtualRouterName": ...,
+}
 
-Returns [DeleteRouteOutputTypeDef](./type_defs.md#deleterouteoutputtypedef).
+parent.delete_route(**kwargs)
+```
 
-<a id="delete\_virtual\_gateway"></a>
+1. See [:material-code-braces: DeleteRouteInputRequestTypeDef](./type_defs.md#deleterouteinputrequesttypedef) 
 
-### delete_virtual_gateway
+### delete\_virtual\_gateway
 
 Deletes an existing virtual gateway.
 
-Type annotations for `boto3.client("appmesh").delete_virtual_gateway` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").delete_virtual_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway)
 
-Boto3 documentation:
-[AppMesh.Client.delete_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_gateway)
+```python title="Method definition"
+def delete_virtual_gateway(
+    self,
+    *,
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: str = ...,
+) -> DeleteVirtualGatewayOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVirtualGatewayInputRequestTypeDef](./type_defs.md#deletevirtualgatewayinputrequesttypedef).
+1. See [:material-code-braces: DeleteVirtualGatewayOutputTypeDef](./type_defs.md#deletevirtualgatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteVirtualGatewayInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualGatewayName": ...,
+}
 
-Returns
-[DeleteVirtualGatewayOutputTypeDef](./type_defs.md#deletevirtualgatewayoutputtypedef).
+parent.delete_virtual_gateway(**kwargs)
+```
 
-<a id="delete\_virtual\_node"></a>
+1. See [:material-code-braces: DeleteVirtualGatewayInputRequestTypeDef](./type_defs.md#deletevirtualgatewayinputrequesttypedef) 
 
-### delete_virtual_node
+### delete\_virtual\_node
 
 Deletes an existing virtual node.
 
-Type annotations for `boto3.client("appmesh").delete_virtual_node` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").delete_virtual_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node)
 
-Boto3 documentation:
-[AppMesh.Client.delete_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_node)
+```python title="Method definition"
+def delete_virtual_node(
+    self,
+    *,
+    meshName: str,
+    virtualNodeName: str,
+    meshOwner: str = ...,
+) -> DeleteVirtualNodeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVirtualNodeInputRequestTypeDef](./type_defs.md#deletevirtualnodeinputrequesttypedef).
+1. See [:material-code-braces: DeleteVirtualNodeOutputTypeDef](./type_defs.md#deletevirtualnodeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualNodeName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteVirtualNodeInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualNodeName": ...,
+}
 
-Returns
-[DeleteVirtualNodeOutputTypeDef](./type_defs.md#deletevirtualnodeoutputtypedef).
+parent.delete_virtual_node(**kwargs)
+```
 
-<a id="delete\_virtual\_router"></a>
+1. See [:material-code-braces: DeleteVirtualNodeInputRequestTypeDef](./type_defs.md#deletevirtualnodeinputrequesttypedef) 
 
-### delete_virtual_router
+### delete\_virtual\_router
 
 Deletes an existing virtual router.
 
-Type annotations for `boto3.client("appmesh").delete_virtual_router` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").delete_virtual_router` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router)
 
-Boto3 documentation:
-[AppMesh.Client.delete_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_router)
+```python title="Method definition"
+def delete_virtual_router(
+    self,
+    *,
+    meshName: str,
+    virtualRouterName: str,
+    meshOwner: str = ...,
+) -> DeleteVirtualRouterOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVirtualRouterInputRequestTypeDef](./type_defs.md#deletevirtualrouterinputrequesttypedef).
+1. See [:material-code-braces: DeleteVirtualRouterOutputTypeDef](./type_defs.md#deletevirtualrouteroutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteVirtualRouterInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualRouterName": ...,
+}
 
-Returns
-[DeleteVirtualRouterOutputTypeDef](./type_defs.md#deletevirtualrouteroutputtypedef).
+parent.delete_virtual_router(**kwargs)
+```
 
-<a id="delete\_virtual\_service"></a>
+1. See [:material-code-braces: DeleteVirtualRouterInputRequestTypeDef](./type_defs.md#deletevirtualrouterinputrequesttypedef) 
 
-### delete_virtual_service
+### delete\_virtual\_service
 
 Deletes an existing virtual service.
 
-Type annotations for `boto3.client("appmesh").delete_virtual_service` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").delete_virtual_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service)
 
-Boto3 documentation:
-[AppMesh.Client.delete_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.delete_virtual_service)
+```python title="Method definition"
+def delete_virtual_service(
+    self,
+    *,
+    meshName: str,
+    virtualServiceName: str,
+    meshOwner: str = ...,
+) -> DeleteVirtualServiceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVirtualServiceInputRequestTypeDef](./type_defs.md#deletevirtualserviceinputrequesttypedef).
+1. See [:material-code-braces: DeleteVirtualServiceOutputTypeDef](./type_defs.md#deletevirtualserviceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualServiceName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteVirtualServiceInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualServiceName": ...,
+}
 
-Returns
-[DeleteVirtualServiceOutputTypeDef](./type_defs.md#deletevirtualserviceoutputtypedef).
+parent.delete_virtual_service(**kwargs)
+```
 
-<a id="describe\_gateway\_route"></a>
+1. See [:material-code-braces: DeleteVirtualServiceInputRequestTypeDef](./type_defs.md#deletevirtualserviceinputrequesttypedef) 
 
-### describe_gateway_route
+### describe\_gateway\_route
 
 Describes an existing gateway route.
 
-Type annotations for `boto3.client("appmesh").describe_gateway_route` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").describe_gateway_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route)
 
-Boto3 documentation:
-[AppMesh.Client.describe_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_gateway_route)
+```python title="Method definition"
+def describe_gateway_route(
+    self,
+    *,
+    gatewayRouteName: str,
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: str = ...,
+) -> DescribeGatewayRouteOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGatewayRouteInputRequestTypeDef](./type_defs.md#describegatewayrouteinputrequesttypedef).
+1. See [:material-code-braces: DescribeGatewayRouteOutputTypeDef](./type_defs.md#describegatewayrouteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `gatewayRouteName`: `str` *(required)*
-- `meshName`: `str` *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeGatewayRouteInputRequestTypeDef = {  # (1)
+    "gatewayRouteName": ...,
+    "meshName": ...,
+    "virtualGatewayName": ...,
+}
 
-Returns
-[DescribeGatewayRouteOutputTypeDef](./type_defs.md#describegatewayrouteoutputtypedef).
+parent.describe_gateway_route(**kwargs)
+```
 
-<a id="describe\_mesh"></a>
+1. See [:material-code-braces: DescribeGatewayRouteInputRequestTypeDef](./type_defs.md#describegatewayrouteinputrequesttypedef) 
 
-### describe_mesh
+### describe\_mesh
 
 Describes an existing service mesh.
 
-Type annotations for `boto3.client("appmesh").describe_mesh` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").describe_mesh` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_mesh)
 
-Boto3 documentation:
-[AppMesh.Client.describe_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_mesh)
+```python title="Method definition"
+def describe_mesh(
+    self,
+    *,
+    meshName: str,
+    meshOwner: str = ...,
+) -> DescribeMeshOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMeshInputRequestTypeDef](./type_defs.md#describemeshinputrequesttypedef).
+1. See [:material-code-braces: DescribeMeshOutputTypeDef](./type_defs.md#describemeshoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeMeshInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+}
 
-Returns [DescribeMeshOutputTypeDef](./type_defs.md#describemeshoutputtypedef).
+parent.describe_mesh(**kwargs)
+```
 
-<a id="describe\_route"></a>
+1. See [:material-code-braces: DescribeMeshInputRequestTypeDef](./type_defs.md#describemeshinputrequesttypedef) 
 
-### describe_route
+### describe\_route
 
 Describes an existing route.
 
-Type annotations for `boto3.client("appmesh").describe_route` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").describe_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_route)
 
-Boto3 documentation:
-[AppMesh.Client.describe_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_route)
+```python title="Method definition"
+def describe_route(
+    self,
+    *,
+    meshName: str,
+    routeName: str,
+    virtualRouterName: str,
+    meshOwner: str = ...,
+) -> DescribeRouteOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRouteInputRequestTypeDef](./type_defs.md#describerouteinputrequesttypedef).
+1. See [:material-code-braces: DescribeRouteOutputTypeDef](./type_defs.md#describerouteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `routeName`: `str` *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeRouteInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "routeName": ...,
+    "virtualRouterName": ...,
+}
 
-Returns
-[DescribeRouteOutputTypeDef](./type_defs.md#describerouteoutputtypedef).
+parent.describe_route(**kwargs)
+```
 
-<a id="describe\_virtual\_gateway"></a>
+1. See [:material-code-braces: DescribeRouteInputRequestTypeDef](./type_defs.md#describerouteinputrequesttypedef) 
 
-### describe_virtual_gateway
+### describe\_virtual\_gateway
 
 Describes an existing virtual gateway.
 
-Type annotations for `boto3.client("appmesh").describe_virtual_gateway` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").describe_virtual_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway)
 
-Boto3 documentation:
-[AppMesh.Client.describe_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_gateway)
+```python title="Method definition"
+def describe_virtual_gateway(
+    self,
+    *,
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: str = ...,
+) -> DescribeVirtualGatewayOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVirtualGatewayInputRequestTypeDef](./type_defs.md#describevirtualgatewayinputrequesttypedef).
+1. See [:material-code-braces: DescribeVirtualGatewayOutputTypeDef](./type_defs.md#describevirtualgatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeVirtualGatewayInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualGatewayName": ...,
+}
 
-Returns
-[DescribeVirtualGatewayOutputTypeDef](./type_defs.md#describevirtualgatewayoutputtypedef).
+parent.describe_virtual_gateway(**kwargs)
+```
 
-<a id="describe\_virtual\_node"></a>
+1. See [:material-code-braces: DescribeVirtualGatewayInputRequestTypeDef](./type_defs.md#describevirtualgatewayinputrequesttypedef) 
 
-### describe_virtual_node
+### describe\_virtual\_node
 
 Describes an existing virtual node.
 
-Type annotations for `boto3.client("appmesh").describe_virtual_node` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").describe_virtual_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node)
 
-Boto3 documentation:
-[AppMesh.Client.describe_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_node)
+```python title="Method definition"
+def describe_virtual_node(
+    self,
+    *,
+    meshName: str,
+    virtualNodeName: str,
+    meshOwner: str = ...,
+) -> DescribeVirtualNodeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVirtualNodeInputRequestTypeDef](./type_defs.md#describevirtualnodeinputrequesttypedef).
+1. See [:material-code-braces: DescribeVirtualNodeOutputTypeDef](./type_defs.md#describevirtualnodeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualNodeName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeVirtualNodeInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualNodeName": ...,
+}
 
-Returns
-[DescribeVirtualNodeOutputTypeDef](./type_defs.md#describevirtualnodeoutputtypedef).
+parent.describe_virtual_node(**kwargs)
+```
 
-<a id="describe\_virtual\_router"></a>
+1. See [:material-code-braces: DescribeVirtualNodeInputRequestTypeDef](./type_defs.md#describevirtualnodeinputrequesttypedef) 
 
-### describe_virtual_router
+### describe\_virtual\_router
 
 Describes an existing virtual router.
 
-Type annotations for `boto3.client("appmesh").describe_virtual_router` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").describe_virtual_router` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router)
 
-Boto3 documentation:
-[AppMesh.Client.describe_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_router)
+```python title="Method definition"
+def describe_virtual_router(
+    self,
+    *,
+    meshName: str,
+    virtualRouterName: str,
+    meshOwner: str = ...,
+) -> DescribeVirtualRouterOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVirtualRouterInputRequestTypeDef](./type_defs.md#describevirtualrouterinputrequesttypedef).
+1. See [:material-code-braces: DescribeVirtualRouterOutputTypeDef](./type_defs.md#describevirtualrouteroutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeVirtualRouterInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualRouterName": ...,
+}
 
-Returns
-[DescribeVirtualRouterOutputTypeDef](./type_defs.md#describevirtualrouteroutputtypedef).
+parent.describe_virtual_router(**kwargs)
+```
 
-<a id="describe\_virtual\_service"></a>
+1. See [:material-code-braces: DescribeVirtualRouterInputRequestTypeDef](./type_defs.md#describevirtualrouterinputrequesttypedef) 
 
-### describe_virtual_service
+### describe\_virtual\_service
 
 Describes an existing virtual service.
 
-Type annotations for `boto3.client("appmesh").describe_virtual_service` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").describe_virtual_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service)
 
-Boto3 documentation:
-[AppMesh.Client.describe_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.describe_virtual_service)
+```python title="Method definition"
+def describe_virtual_service(
+    self,
+    *,
+    meshName: str,
+    virtualServiceName: str,
+    meshOwner: str = ...,
+) -> DescribeVirtualServiceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVirtualServiceInputRequestTypeDef](./type_defs.md#describevirtualserviceinputrequesttypedef).
+1. See [:material-code-braces: DescribeVirtualServiceOutputTypeDef](./type_defs.md#describevirtualserviceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualServiceName`: `str` *(required)*
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeVirtualServiceInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualServiceName": ...,
+}
 
-Returns
-[DescribeVirtualServiceOutputTypeDef](./type_defs.md#describevirtualserviceoutputtypedef).
+parent.describe_virtual_service(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeVirtualServiceInputRequestTypeDef](./type_defs.md#describevirtualserviceinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("appmesh").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AppMesh.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_gateway\_routes"></a>
-
-### list_gateway_routes
+### list\_gateway\_routes
 
 Returns a list of existing gateway routes that are associated to a virtual
 gateway.
 
-Type annotations for `boto3.client("appmesh").list_gateway_routes` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").list_gateway_routes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes)
 
-Boto3 documentation:
-[AppMesh.Client.list_gateway_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_gateway_routes)
+```python title="Method definition"
+def list_gateway_routes(
+    self,
+    *,
+    meshName: str,
+    virtualGatewayName: str,
+    limit: int = ...,
+    meshOwner: str = ...,
+    nextToken: str = ...,
+) -> ListGatewayRoutesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGatewayRoutesInputRequestTypeDef](./type_defs.md#listgatewayroutesinputrequesttypedef).
+1. See [:material-code-braces: ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGatewayRoutesInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualGatewayName": ...,
+}
 
-Returns
-[ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef).
+parent.list_gateway_routes(**kwargs)
+```
 
-<a id="list\_meshes"></a>
+1. See [:material-code-braces: ListGatewayRoutesInputRequestTypeDef](./type_defs.md#listgatewayroutesinputrequesttypedef) 
 
-### list_meshes
+### list\_meshes
 
 Returns a list of existing service meshes.
 
-Type annotations for `boto3.client("appmesh").list_meshes` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").list_meshes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_meshes)
 
-Boto3 documentation:
-[AppMesh.Client.list_meshes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_meshes)
+```python title="Method definition"
+def list_meshes(
+    self,
+    *,
+    limit: int = ...,
+    nextToken: str = ...,
+) -> ListMeshesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMeshesInputRequestTypeDef](./type_defs.md#listmeshesinputrequesttypedef).
+1. See [:material-code-braces: ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `limit`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMeshesInputRequestTypeDef = {  # (1)
+    "limit": ...,
+}
 
-Returns [ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef).
+parent.list_meshes(**kwargs)
+```
 
-<a id="list\_routes"></a>
+1. See [:material-code-braces: ListMeshesInputRequestTypeDef](./type_defs.md#listmeshesinputrequesttypedef) 
 
-### list_routes
+### list\_routes
 
 Returns a list of existing routes in a service mesh.
 
-Type annotations for `boto3.client("appmesh").list_routes` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").list_routes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_routes)
 
-Boto3 documentation:
-[AppMesh.Client.list_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_routes)
+```python title="Method definition"
+def list_routes(
+    self,
+    *,
+    meshName: str,
+    virtualRouterName: str,
+    limit: int = ...,
+    meshOwner: str = ...,
+    nextToken: str = ...,
+) -> ListRoutesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRoutesInputRequestTypeDef](./type_defs.md#listroutesinputrequesttypedef).
+1. See [:material-code-braces: ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRoutesInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualRouterName": ...,
+}
 
-Returns [ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef).
+parent.list_routes(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListRoutesInputRequestTypeDef](./type_defs.md#listroutesinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List the tags for an App Mesh resource.
 
-Type annotations for `boto3.client("appmesh").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[AppMesh.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+    limit: int = ...,
+    nextToken: str = ...,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `limit`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_virtual\_gateways"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### list_virtual_gateways
+### list\_virtual\_gateways
 
 Returns a list of existing virtual gateways in a service mesh.
 
-Type annotations for `boto3.client("appmesh").list_virtual_gateways` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").list_virtual_gateways` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways)
 
-Boto3 documentation:
-[AppMesh.Client.list_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_gateways)
+```python title="Method definition"
+def list_virtual_gateways(
+    self,
+    *,
+    meshName: str,
+    limit: int = ...,
+    meshOwner: str = ...,
+    nextToken: str = ...,
+) -> ListVirtualGatewaysOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVirtualGatewaysInputRequestTypeDef](./type_defs.md#listvirtualgatewaysinputrequesttypedef).
+1. See [:material-code-braces: ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVirtualGatewaysInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+}
 
-Returns
-[ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef).
+parent.list_virtual_gateways(**kwargs)
+```
 
-<a id="list\_virtual\_nodes"></a>
+1. See [:material-code-braces: ListVirtualGatewaysInputRequestTypeDef](./type_defs.md#listvirtualgatewaysinputrequesttypedef) 
 
-### list_virtual_nodes
+### list\_virtual\_nodes
 
 Returns a list of existing virtual nodes.
 
-Type annotations for `boto3.client("appmesh").list_virtual_nodes` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").list_virtual_nodes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes)
 
-Boto3 documentation:
-[AppMesh.Client.list_virtual_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_nodes)
+```python title="Method definition"
+def list_virtual_nodes(
+    self,
+    *,
+    meshName: str,
+    limit: int = ...,
+    meshOwner: str = ...,
+    nextToken: str = ...,
+) -> ListVirtualNodesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVirtualNodesInputRequestTypeDef](./type_defs.md#listvirtualnodesinputrequesttypedef).
+1. See [:material-code-braces: ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVirtualNodesInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+}
 
-Returns
-[ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef).
+parent.list_virtual_nodes(**kwargs)
+```
 
-<a id="list\_virtual\_routers"></a>
+1. See [:material-code-braces: ListVirtualNodesInputRequestTypeDef](./type_defs.md#listvirtualnodesinputrequesttypedef) 
 
-### list_virtual_routers
+### list\_virtual\_routers
 
 Returns a list of existing virtual routers in a service mesh.
 
-Type annotations for `boto3.client("appmesh").list_virtual_routers` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").list_virtual_routers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers)
 
-Boto3 documentation:
-[AppMesh.Client.list_virtual_routers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_routers)
+```python title="Method definition"
+def list_virtual_routers(
+    self,
+    *,
+    meshName: str,
+    limit: int = ...,
+    meshOwner: str = ...,
+    nextToken: str = ...,
+) -> ListVirtualRoutersOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVirtualRoutersInputRequestTypeDef](./type_defs.md#listvirtualroutersinputrequesttypedef).
+1. See [:material-code-braces: ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVirtualRoutersInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+}
 
-Returns
-[ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef).
+parent.list_virtual_routers(**kwargs)
+```
 
-<a id="list\_virtual\_services"></a>
+1. See [:material-code-braces: ListVirtualRoutersInputRequestTypeDef](./type_defs.md#listvirtualroutersinputrequesttypedef) 
 
-### list_virtual_services
+### list\_virtual\_services
 
 Returns a list of existing virtual services in a service mesh.
 
-Type annotations for `boto3.client("appmesh").list_virtual_services` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").list_virtual_services` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_services)
 
-Boto3 documentation:
-[AppMesh.Client.list_virtual_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.list_virtual_services)
+```python title="Method definition"
+def list_virtual_services(
+    self,
+    *,
+    meshName: str,
+    limit: int = ...,
+    meshOwner: str = ...,
+    nextToken: str = ...,
+) -> ListVirtualServicesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVirtualServicesInputRequestTypeDef](./type_defs.md#listvirtualservicesinputrequesttypedef).
+1. See [:material-code-braces: ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVirtualServicesInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+}
 
-Returns
-[ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef).
+parent.list_virtual_services(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListVirtualServicesInputRequestTypeDef](./type_defs.md#listvirtualservicesinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
 
-Type annotations for `boto3.client("appmesh").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.tag_resource)
 
-Boto3 documentation:
-[AppMesh.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagRefTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
+1. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes specified tags from a resource.
 
-Type annotations for `boto3.client("appmesh").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.untag_resource)
 
-Boto3 documentation:
-[AppMesh.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_gateway\_route"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_gateway_route
+### update\_gateway\_route
 
 Updates an existing gateway route that is associated to a specified virtual
 gateway in a service mesh.
 
-Type annotations for `boto3.client("appmesh").update_gateway_route` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").update_gateway_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_gateway_route)
 
-Boto3 documentation:
-[AppMesh.Client.update_gateway_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_gateway_route)
+```python title="Method definition"
+def update_gateway_route(
+    self,
+    *,
+    gatewayRouteName: str,
+    meshName: str,
+    spec: GatewayRouteSpecTypeDef,  # (1)
+    virtualGatewayName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+) -> UpdateGatewayRouteOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGatewayRouteInputRequestTypeDef](./type_defs.md#updategatewayrouteinputrequesttypedef).
+1. See [:material-code-braces: GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef) 
+2. See [:material-code-braces: UpdateGatewayRouteOutputTypeDef](./type_defs.md#updategatewayrouteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `gatewayRouteName`: `str` *(required)*
-- `meshName`: `str` *(required)*
-- `spec`: [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
-  *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewayRouteInputRequestTypeDef = {  # (1)
+    "gatewayRouteName": ...,
+    "meshName": ...,
+    "spec": ...,
+    "virtualGatewayName": ...,
+}
 
-Returns
-[UpdateGatewayRouteOutputTypeDef](./type_defs.md#updategatewayrouteoutputtypedef).
+parent.update_gateway_route(**kwargs)
+```
 
-<a id="update\_mesh"></a>
+1. See [:material-code-braces: UpdateGatewayRouteInputRequestTypeDef](./type_defs.md#updategatewayrouteinputrequesttypedef) 
 
-### update_mesh
+### update\_mesh
 
 Updates an existing service mesh.
 
-Type annotations for `boto3.client("appmesh").update_mesh` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").update_mesh` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_mesh)
 
-Boto3 documentation:
-[AppMesh.Client.update_mesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_mesh)
+```python title="Method definition"
+def update_mesh(
+    self,
+    *,
+    meshName: str,
+    clientToken: str = ...,
+    spec: MeshSpecTypeDef = ...,  # (1)
+) -> UpdateMeshOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMeshInputRequestTypeDef](./type_defs.md#updatemeshinputrequesttypedef).
+1. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
+2. See [:material-code-braces: UpdateMeshOutputTypeDef](./type_defs.md#updatemeshoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `clientToken`: `str`
-- `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateMeshInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+}
 
-Returns [UpdateMeshOutputTypeDef](./type_defs.md#updatemeshoutputtypedef).
+parent.update_mesh(**kwargs)
+```
 
-<a id="update\_route"></a>
+1. See [:material-code-braces: UpdateMeshInputRequestTypeDef](./type_defs.md#updatemeshinputrequesttypedef) 
 
-### update_route
+### update\_route
 
 Updates an existing route for a specified service mesh and virtual router.
 
-Type annotations for `boto3.client("appmesh").update_route` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").update_route` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_route)
 
-Boto3 documentation:
-[AppMesh.Client.update_route](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_route)
+```python title="Method definition"
+def update_route(
+    self,
+    *,
+    meshName: str,
+    routeName: str,
+    spec: RouteSpecTypeDef,  # (1)
+    virtualRouterName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+) -> UpdateRouteOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRouteInputRequestTypeDef](./type_defs.md#updaterouteinputrequesttypedef).
+1. See [:material-code-braces: RouteSpecTypeDef](./type_defs.md#routespectypedef) 
+2. See [:material-code-braces: UpdateRouteOutputTypeDef](./type_defs.md#updaterouteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `routeName`: `str` *(required)*
-- `spec`: [RouteSpecTypeDef](./type_defs.md#routespectypedef) *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateRouteInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "routeName": ...,
+    "spec": ...,
+    "virtualRouterName": ...,
+}
 
-Returns [UpdateRouteOutputTypeDef](./type_defs.md#updaterouteoutputtypedef).
+parent.update_route(**kwargs)
+```
 
-<a id="update\_virtual\_gateway"></a>
+1. See [:material-code-braces: UpdateRouteInputRequestTypeDef](./type_defs.md#updaterouteinputrequesttypedef) 
 
-### update_virtual_gateway
+### update\_virtual\_gateway
 
 Updates an existing virtual gateway in a specified service mesh.
 
-Type annotations for `boto3.client("appmesh").update_virtual_gateway` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").update_virtual_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway)
 
-Boto3 documentation:
-[AppMesh.Client.update_virtual_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_gateway)
+```python title="Method definition"
+def update_virtual_gateway(
+    self,
+    *,
+    meshName: str,
+    spec: VirtualGatewaySpecTypeDef,  # (1)
+    virtualGatewayName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+) -> UpdateVirtualGatewayOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVirtualGatewayInputRequestTypeDef](./type_defs.md#updatevirtualgatewayinputrequesttypedef).
+1. See [:material-code-braces: VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef) 
+2. See [:material-code-braces: UpdateVirtualGatewayOutputTypeDef](./type_defs.md#updatevirtualgatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
-  *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateVirtualGatewayInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "spec": ...,
+    "virtualGatewayName": ...,
+}
 
-Returns
-[UpdateVirtualGatewayOutputTypeDef](./type_defs.md#updatevirtualgatewayoutputtypedef).
+parent.update_virtual_gateway(**kwargs)
+```
 
-<a id="update\_virtual\_node"></a>
+1. See [:material-code-braces: UpdateVirtualGatewayInputRequestTypeDef](./type_defs.md#updatevirtualgatewayinputrequesttypedef) 
 
-### update_virtual_node
+### update\_virtual\_node
 
 Updates an existing virtual node in a specified service mesh.
 
-Type annotations for `boto3.client("appmesh").update_virtual_node` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").update_virtual_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_node)
 
-Boto3 documentation:
-[AppMesh.Client.update_virtual_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_node)
+```python title="Method definition"
+def update_virtual_node(
+    self,
+    *,
+    meshName: str,
+    spec: VirtualNodeSpecTypeDef,  # (1)
+    virtualNodeName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+) -> UpdateVirtualNodeOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVirtualNodeInputRequestTypeDef](./type_defs.md#updatevirtualnodeinputrequesttypedef).
+1. See [:material-code-braces: VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef) 
+2. See [:material-code-braces: UpdateVirtualNodeOutputTypeDef](./type_defs.md#updatevirtualnodeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
-  *(required)*
-- `virtualNodeName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateVirtualNodeInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "spec": ...,
+    "virtualNodeName": ...,
+}
 
-Returns
-[UpdateVirtualNodeOutputTypeDef](./type_defs.md#updatevirtualnodeoutputtypedef).
+parent.update_virtual_node(**kwargs)
+```
 
-<a id="update\_virtual\_router"></a>
+1. See [:material-code-braces: UpdateVirtualNodeInputRequestTypeDef](./type_defs.md#updatevirtualnodeinputrequesttypedef) 
 
-### update_virtual_router
+### update\_virtual\_router
 
 Updates an existing virtual router in a specified service mesh.
 
-Type annotations for `boto3.client("appmesh").update_virtual_router` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").update_virtual_router` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_router)
 
-Boto3 documentation:
-[AppMesh.Client.update_virtual_router](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_router)
+```python title="Method definition"
+def update_virtual_router(
+    self,
+    *,
+    meshName: str,
+    spec: VirtualRouterSpecTypeDef,  # (1)
+    virtualRouterName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+) -> UpdateVirtualRouterOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVirtualRouterInputRequestTypeDef](./type_defs.md#updatevirtualrouterinputrequesttypedef).
+1. See [:material-code-braces: VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef) 
+2. See [:material-code-braces: UpdateVirtualRouterOutputTypeDef](./type_defs.md#updatevirtualrouteroutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
-  *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateVirtualRouterInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "spec": ...,
+    "virtualRouterName": ...,
+}
 
-Returns
-[UpdateVirtualRouterOutputTypeDef](./type_defs.md#updatevirtualrouteroutputtypedef).
+parent.update_virtual_router(**kwargs)
+```
 
-<a id="update\_virtual\_service"></a>
+1. See [:material-code-braces: UpdateVirtualRouterInputRequestTypeDef](./type_defs.md#updatevirtualrouterinputrequesttypedef) 
 
-### update_virtual_service
+### update\_virtual\_service
 
 Updates an existing virtual service in a specified service mesh.
 
-Type annotations for `boto3.client("appmesh").update_virtual_service` method.
+Type annotations and code completion for `#!python boto3.client("appmesh").update_virtual_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_service)
 
-Boto3 documentation:
-[AppMesh.Client.update_virtual_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.update_virtual_service)
+```python title="Method definition"
+def update_virtual_service(
+    self,
+    *,
+    meshName: str,
+    spec: VirtualServiceSpecTypeDef,  # (1)
+    virtualServiceName: str,
+    clientToken: str = ...,
+    meshOwner: str = ...,
+) -> UpdateVirtualServiceOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVirtualServiceInputRequestTypeDef](./type_defs.md#updatevirtualserviceinputrequesttypedef).
+1. See [:material-code-braces: VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef) 
+2. See [:material-code-braces: UpdateVirtualServiceOutputTypeDef](./type_defs.md#updatevirtualserviceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `meshName`: `str` *(required)*
-- `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
-  *(required)*
-- `virtualServiceName`: `str` *(required)*
-- `clientToken`: `str`
-- `meshOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateVirtualServiceInputRequestTypeDef = {  # (1)
+    "meshName": ...,
+    "spec": ...,
+    "virtualServiceName": ...,
+}
 
-Returns
-[UpdateVirtualServiceOutputTypeDef](./type_defs.md#updatevirtualserviceoutputtypedef).
+parent.update_virtual_service(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateVirtualServiceInputRequestTypeDef](./type_defs.md#updatevirtualserviceinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("appmesh").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("appmesh").get_paginator` method with overloads.
 
-- `client.get_paginator("list_gateway_routes")` ->
-  [ListGatewayRoutesPaginator](./paginators.md#listgatewayroutespaginator)
-- `client.get_paginator("list_meshes")` ->
-  [ListMeshesPaginator](./paginators.md#listmeshespaginator)
-- `client.get_paginator("list_routes")` ->
-  [ListRoutesPaginator](./paginators.md#listroutespaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_virtual_gateways")` ->
-  [ListVirtualGatewaysPaginator](./paginators.md#listvirtualgatewayspaginator)
-- `client.get_paginator("list_virtual_nodes")` ->
-  [ListVirtualNodesPaginator](./paginators.md#listvirtualnodespaginator)
-- `client.get_paginator("list_virtual_routers")` ->
-  [ListVirtualRoutersPaginator](./paginators.md#listvirtualrouterspaginator)
-- `client.get_paginator("list_virtual_services")` ->
-  [ListVirtualServicesPaginator](./paginators.md#listvirtualservicespaginator)
+- `client.get_paginator("list_gateway_routes")` -> [ListGatewayRoutesPaginator](./paginators.md#listgatewayroutespaginator)
+- `client.get_paginator("list_meshes")` -> [ListMeshesPaginator](./paginators.md#listmeshespaginator)
+- `client.get_paginator("list_routes")` -> [ListRoutesPaginator](./paginators.md#listroutespaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_virtual_gateways")` -> [ListVirtualGatewaysPaginator](./paginators.md#listvirtualgatewayspaginator)
+- `client.get_paginator("list_virtual_nodes")` -> [ListVirtualNodesPaginator](./paginators.md#listvirtualnodespaginator)
+- `client.get_paginator("list_virtual_routers")` -> [ListVirtualRoutersPaginator](./paginators.md#listvirtualrouterspaginator)
+- `client.get_paginator("list_virtual_services")` -> [ListVirtualServicesPaginator](./paginators.md#listvirtualservicespaginator)
+
+
+

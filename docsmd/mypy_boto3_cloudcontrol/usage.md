@@ -1,79 +1,102 @@
-<a id="examples-for-boto3-cloudcontrolapi-module"></a>
-
-# Examples for boto3 CloudControlApi module
+# Examples
 
 > [Index](../README.md) > [CloudControlApi](./README.md) > Examples
 
-- [Examples for boto3 CloudControlApi module](#examples-for-boto3-cloudcontrolapi-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
+    type annotations stubs module [mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[cloudcontrol]` package installed.
 
-Write your `CloudControlApi` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `CloudControlApi` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CloudControlApiClient
-# and provides type checking and code completion
-client = session.client("cloudcontrol")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# waiter has type ResourceRequestSuccessWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("resource_request_success")
-waiter.wait()
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("cloudcontrol")  # (1)
+    result = client.cancel_resource_request()  # (2)
+    ```
+
+    1. client: [CloudControlApiClient](./client.md)
+    2. result: [:material-code-braces: CancelResourceRequestOutputTypeDef](./type_defs.md#cancelresourcerequestoutputtypedef) 
+
+
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("cloudcontrol")  # (1)
+
+    waiter = client.get_waiter("resource_request_success")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [CloudControlApiClient](./client.md)
+    2. waiter: [ResourceRequestSuccessWaiter](./waiters.md#resourcerequestsuccesswaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[cloudcontrol]` or a standalone `mypy_boto3_cloudcontrol`
-package, you have to explicitly specify `client: CloudControlApiClient` type
-annotation.
+With `boto3-stubs-lite[cloudcontrol]`
+or a standalone `mypy_boto3_cloudcontrol` package, you have to explicitly specify `client: CloudControlApiClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_cloudcontrol.client import CloudControlApiClient
-
-from mypy_boto3_cloudcontrol.waiter import ResourceRequestSuccessWaiter
-
-from mypy_boto3_cloudcontrol.literals import WaiterName
-from mypy_boto3_cloudcontrol.type_defs import bool
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
 
-session = boto3.Session()
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-client: CloudControlApiClient = session.client("cloudcontrol")
+    from mypy_boto3_cloudcontrol.client import CloudControlApiClient
+    from mypy_boto3_cloudcontrol.type_defs import CancelResourceRequestOutputTypeDef
+    from mypy_boto3_cloudcontrol.type_defs import CancelResourceRequestInputRequestTypeDef
 
-result: bool = client.can_paginate()
 
-waiter_name: WaiterName = "resource_request_success"
-waiter: ResourceRequestSuccessWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: CloudControlApiClient = session.client("cloudcontrol")
+
+    kwargs: CancelResourceRequestInputRequestTypeDef = {...}
+    result: CancelResourceRequestOutputTypeDef = client.cancel_resource_request(**kwargs)
+    ```
+
+
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cloudcontrol.client import CloudControlApiClient
+    from mypy_boto3_cloudcontrol.waiter import ResourceRequestSuccessWaiter
+
+    session = Session()
+    client: CloudControlApiClient = session.client("cloudcontrol")
+
+    waiter: ResourceRequestSuccessWaiter = client.get_waiter("resource_request_success")
+    waiter.wait()
+    ```
+
+

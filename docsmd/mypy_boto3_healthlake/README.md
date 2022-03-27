@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-healthlake-module"></a>
-
-# Type annotations for boto3 HealthLake module
+#  HealthLake module
 
 > [Index](../README.md) > HealthLake
 
-Auto-generated documentation for
-[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
-type annotations stubs module
-[mypy-boto3-healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+!!! note ""
 
-- [Type annotations for boto3 HealthLake module](#type-annotations-for-boto3-healthlake-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [HealthLakeClient](#healthlakeclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
+    type annotations stubs module [mypy-boto3-healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `HealthLake`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[healthlake]'
 python -m pip install mypy-boto3-healthlake
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,70 +42,41 @@ python -m pip install mypy-boto3-healthlake
 python -m pip uninstall -y mypy-boto3-healthlake
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="healthlakeclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## HealthLakeClient
 
-Type annotations for `boto3.client("healthlake")` as
-[HealthLakeClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("healthlake")` as [HealthLakeClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_healthlake.client import HealthLakeClient
+
+def get_client() -> HealthLakeClient:
+    return Session().cleint("healthlake")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_fhir_datastore](./client.md#create_fhir_datastore)
-- [delete_fhir_datastore](./client.md#delete_fhir_datastore)
-- [describe_fhir_datastore](./client.md#describe_fhir_datastore)
-- [describe_fhir_export_job](./client.md#describe_fhir_export_job)
-- [describe_fhir_import_job](./client.md#describe_fhir_import_job)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_fhir_datastores](./client.md#list_fhir_datastores)
-- [list_fhir_export_jobs](./client.md#list_fhir_export_jobs)
-- [list_fhir_import_jobs](./client.md#list_fhir_import_jobs)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [start_fhir_export_job](./client.md#start_fhir_export_job)
-- [start_fhir_import_job](./client.md#start_fhir_import_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-HealthLakeClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ThrottlingException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_healthlake.literals import CmkTypeType
 
-```python
-from mypy_boto3_healthlake.literals import CmkTypeType, ...
+def get_value() -> CmkTypeType:
+    return "AWS_OWNED_KMS_KEY"
 ```
 
 - [CmkTypeType](./literals.md#cmktypetype)
@@ -137,18 +87,22 @@ from mypy_boto3_healthlake.literals import CmkTypeType, ...
 - [HealthLakeServiceName](./literals.md#healthlakeservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreRequestRequestTypeDef
 
-```python
-from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreRequestRequestTypeDef, ...
+def get_value() -> CreateFHIRDatastoreRequestRequestTypeDef:
+    return {
+        "DatastoreTypeVersion": ...,
+    }
 ```
 
 - [CreateFHIRDatastoreRequestRequestTypeDef](./type_defs.md#createfhirdatastorerequestrequesttypedef)
@@ -187,3 +141,4 @@ from mypy_boto3_healthlake.type_defs import CreateFHIRDatastoreRequestRequestTyp
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+

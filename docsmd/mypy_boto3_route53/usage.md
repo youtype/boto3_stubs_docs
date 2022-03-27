@@ -1,91 +1,139 @@
-<a id="examples-for-boto3-route53-module"></a>
-
-# Examples for boto3 Route53 module
+# Examples
 
 > [Index](../README.md) > [Route53](./README.md) > Examples
 
-- [Examples for boto3 Route53 module](#examples-for-boto3-route53-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+    type annotations stubs module [mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[route53]` package installed.
 
-Write your `Route53` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Route53` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type Route53Client
-# and provides type checking and code completion
-client = session.client("route53")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type ActivateKeySigningKeyResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.activate_key_signing_key()
 
-# paginator has type ListHealthChecksPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_health_checks")
-for item in paginator.paginate(...):
-    # item has type ListHealthChecksResponseTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type ResourceRecordSetsChangedWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("resource_record_sets_changed")
-waiter.wait()
-```
+    client = session.client("route53")  # (1)
+    result = client.activate_key_signing_key()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [Route53Client](./client.md)
+    2. result: [:material-code-braces: ActivateKeySigningKeyResponseTypeDef](./type_defs.md#activatekeysigningkeyresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("route53")  # (1)
+
+    paginator = client.get_paginator("list_health_checks")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [Route53Client](./client.md)
+    2. paginator: [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
+    3. item: [:material-code-braces: ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("route53")  # (1)
+
+    waiter = client.get_waiter("resource_record_sets_changed")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [Route53Client](./client.md)
+    2. waiter: [ResourceRecordSetsChangedWaiter](./waiters.md#resourcerecordsetschangedwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[route53]` or a standalone `mypy_boto3_route53` package,
-you have to explicitly specify `client: Route53Client` type annotation.
+With `boto3-stubs-lite[route53]`
+or a standalone `mypy_boto3_route53` package, you have to explicitly specify `client: Route53Client` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_route53.client import Route53Client
-from mypy_boto3_route53.paginator import ListHealthChecksPaginator
-from mypy_boto3_route53.waiter import ResourceRecordSetsChangedWaiter
-from mypy_boto3_route53.literals import PaginatorName
-from mypy_boto3_route53.literals import WaiterName
-from mypy_boto3_route53.type_defs import ActivateKeySigningKeyResponseTypeDef
-from mypy_boto3_route53.type_defs import ListHealthChecksResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: Route53Client = session.client("route53")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: ActivateKeySigningKeyResponseTypeDef = client.activate_key_signing_key()
+    from mypy_boto3_route53.client import Route53Client
+    from mypy_boto3_route53.type_defs import ActivateKeySigningKeyResponseTypeDef
+    from mypy_boto3_route53.type_defs import ActivateKeySigningKeyRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_health_checks"
-paginator: ListHealthChecksPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListHealthChecksResponseTypeDef
-    print(item)
 
-waiter_name: WaiterName = "resource_record_sets_changed"
-waiter: ResourceRecordSetsChangedWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: Route53Client = session.client("route53")
+
+    kwargs: ActivateKeySigningKeyRequestRequestTypeDef = {...}
+    result: ActivateKeySigningKeyResponseTypeDef = client.activate_key_signing_key(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_route53.client import Route53Client
+    from mypy_boto3_route53.paginator import ListHealthChecksPaginator
+    from mypy_boto3_route53.type_defs import ListHealthChecksResponseTypeDef
+
+
+    session = Session()
+    client: Route53Client = session.client("route53")
+
+    paginator: ListHealthChecksPaginator = client.get_paginator("list_health_checks")
+    for item in paginator.paginate(...):
+        item: ListHealthChecksResponseTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_route53.client import Route53Client
+    from mypy_boto3_route53.waiter import ResourceRecordSetsChangedWaiter
+
+    session = Session()
+    client: Route53Client = session.client("route53")
+
+    waiter: ResourceRecordSetsChangedWaiter = client.get_waiter("resource_record_sets_changed")
+    waiter.wait()
+    ```
+
+

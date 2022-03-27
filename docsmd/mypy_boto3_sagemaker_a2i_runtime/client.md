@@ -1,38 +1,18 @@
-<a id="augmentedairuntimeclient-for-boto3-augmentedairuntime-module"></a>
+# AugmentedAIRuntimeClient
 
-# AugmentedAIRuntimeClient for boto3 AugmentedAIRuntime module
+> [Index](../README.md) > [AugmentedAIRuntime](./README.md) > AugmentedAIRuntimeClient
 
-> [Index](../README.md) > [AugmentedAIRuntime](./README.md) >
-> AugmentedAIRuntimeClient
+!!! note ""
 
-Auto-generated documentation for
-[AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
-type annotations stubs module
-[mypy-boto3-sagemaker-a2i-runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
-
-- [AugmentedAIRuntimeClient for boto3 AugmentedAIRuntime module](#augmentedairuntimeclient-for-boto3-augmentedairuntime-module)
-  - [AugmentedAIRuntimeClient](#augmentedairuntimeclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [delete_human_loop](#delete_human_loop)
-    - [describe_human_loop](#describe_human_loop)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_human_loops](#list_human_loops)
-    - [start_human_loop](#start_human_loop)
-    - [stop_human_loop](#stop_human_loop)
-    - [get_paginator](#get_paginator)
-
-<a id="augmentedairuntimeclient"></a>
+    Auto-generated documentation for [AugmentedAIRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime)
+    type annotations stubs module [mypy-boto3-sagemaker-a2i-runtime](https://pypi.org/project/mypy-boto3-sagemaker-a2i-runtime/).
 
 ## AugmentedAIRuntimeClient
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime")`
+Type annotations and code completion for `#!python boto3.client("sagemaker-a2i-runtime")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sagemaker_a2i_runtime.client import AugmentedAIRuntimeClient
 
@@ -40,213 +20,238 @@ def get_sagemaker-a2i-runtime_client() -> AugmentedAIRuntimeClient:
     return Session().client("sagemaker-a2i-runtime")
 ```
 
-Boto3 documentation:
-[AugmentedAIRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sagemaker-a2i-runtime").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sagemaker-a2i-runtime")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sagemaker_a2i_runtime.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AugmentedAIRuntimeClient exceptions.
-
-Type annotations for `boto3.client("sagemaker-a2i-runtime").exceptions` method.
-
-Boto3 documentation:
-[AugmentedAIRuntime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("sagemaker-a2i-runtime").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.can_paginate)
 
-Boto3 documentation:
-[AugmentedAIRuntime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_human\_loop"></a>
-
-### delete_human_loop
+### delete\_human\_loop
 
 Deletes the specified human loop for a flow definition.
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").delete_human_loop`
-method.
+Type annotations and code completion for `#!python boto3.client("sagemaker-a2i-runtime").delete_human_loop` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop)
 
-Boto3 documentation:
-[AugmentedAIRuntime.Client.delete_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.delete_human_loop)
+```python title="Method definition"
+def delete_human_loop(
+    self,
+    *,
+    HumanLoopName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteHumanLoopRequestRequestTypeDef](./type_defs.md#deletehumanlooprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `HumanLoopName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteHumanLoopRequestRequestTypeDef = {  # (1)
+    "HumanLoopName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_human_loop(**kwargs)
+```
 
-<a id="describe\_human\_loop"></a>
+1. See [:material-code-braces: DeleteHumanLoopRequestRequestTypeDef](./type_defs.md#deletehumanlooprequestrequesttypedef) 
 
-### describe_human_loop
+### describe\_human\_loop
 
 Returns information about the specified human loop.
 
-Type annotations for
-`boto3.client("sagemaker-a2i-runtime").describe_human_loop` method.
+Type annotations and code completion for `#!python boto3.client("sagemaker-a2i-runtime").describe_human_loop` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop)
 
-Boto3 documentation:
-[AugmentedAIRuntime.Client.describe_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.describe_human_loop)
+```python title="Method definition"
+def describe_human_loop(
+    self,
+    *,
+    HumanLoopName: str,
+) -> DescribeHumanLoopResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeHumanLoopRequestRequestTypeDef](./type_defs.md#describehumanlooprequestrequesttypedef).
+1. See [:material-code-braces: DescribeHumanLoopResponseTypeDef](./type_defs.md#describehumanloopresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HumanLoopName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeHumanLoopRequestRequestTypeDef = {  # (1)
+    "HumanLoopName": ...,
+}
 
-Returns
-[DescribeHumanLoopResponseTypeDef](./type_defs.md#describehumanloopresponsetypedef).
+parent.describe_human_loop(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeHumanLoopRequestRequestTypeDef](./type_defs.md#describehumanlooprequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("sagemaker-a2i-runtime").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sagemaker-a2i-runtime").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AugmentedAIRuntime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_human\_loops"></a>
-
-### list_human_loops
+### list\_human\_loops
 
 Returns information about human loops, given the specified parameters.
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").list_human_loops`
-method.
+Type annotations and code completion for `#!python boto3.client("sagemaker-a2i-runtime").list_human_loops` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops)
 
-Boto3 documentation:
-[AugmentedAIRuntime.Client.list_human_loops](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.list_human_loops)
+```python title="Method definition"
+def list_human_loops(
+    self,
+    *,
+    FlowDefinitionArn: str,
+    CreationTimeAfter: Union[datetime, str] = ...,
+    CreationTimeBefore: Union[datetime, str] = ...,
+    SortOrder: SortOrderType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListHumanLoopsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListHumanLoopsRequestRequestTypeDef](./type_defs.md#listhumanloopsrequestrequesttypedef).
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-braces: ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowDefinitionArn`: `str` *(required)*
-- `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
-- `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListHumanLoopsRequestRequestTypeDef = {  # (1)
+    "FlowDefinitionArn": ...,
+}
 
-Returns
-[ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef).
+parent.list_human_loops(**kwargs)
+```
 
-<a id="start\_human\_loop"></a>
+1. See [:material-code-braces: ListHumanLoopsRequestRequestTypeDef](./type_defs.md#listhumanloopsrequestrequesttypedef) 
 
-### start_human_loop
+### start\_human\_loop
 
 Starts a human loop, provided that at least one activation condition is met.
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").start_human_loop`
-method.
+Type annotations and code completion for `#!python boto3.client("sagemaker-a2i-runtime").start_human_loop` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop)
 
-Boto3 documentation:
-[AugmentedAIRuntime.Client.start_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.start_human_loop)
+```python title="Method definition"
+def start_human_loop(
+    self,
+    *,
+    HumanLoopName: str,
+    FlowDefinitionArn: str,
+    HumanLoopInput: HumanLoopInputTypeDef,  # (1)
+    DataAttributes: HumanLoopDataAttributesTypeDef = ...,  # (2)
+) -> StartHumanLoopResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartHumanLoopRequestRequestTypeDef](./type_defs.md#starthumanlooprequestrequesttypedef).
+1. See [:material-code-braces: HumanLoopInputTypeDef](./type_defs.md#humanloopinputtypedef) 
+2. See [:material-code-braces: HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef) 
+3. See [:material-code-braces: StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HumanLoopName`: `str` *(required)*
-- `FlowDefinitionArn`: `str` *(required)*
-- `HumanLoopInput`:
-  [HumanLoopInputTypeDef](./type_defs.md#humanloopinputtypedef) *(required)*
-- `DataAttributes`:
-  [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
+```python title="Usage example with kwargs"
+kwargs: StartHumanLoopRequestRequestTypeDef = {  # (1)
+    "HumanLoopName": ...,
+    "FlowDefinitionArn": ...,
+    "HumanLoopInput": ...,
+}
 
-Returns
-[StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef).
+parent.start_human_loop(**kwargs)
+```
 
-<a id="stop\_human\_loop"></a>
+1. See [:material-code-braces: StartHumanLoopRequestRequestTypeDef](./type_defs.md#starthumanlooprequestrequesttypedef) 
 
-### stop_human_loop
+### stop\_human\_loop
 
 Stops the specified human loop.
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").stop_human_loop`
-method.
+Type annotations and code completion for `#!python boto3.client("sagemaker-a2i-runtime").stop_human_loop` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop)
 
-Boto3 documentation:
-[AugmentedAIRuntime.Client.stop_human_loop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-a2i-runtime.html#AugmentedAIRuntime.Client.stop_human_loop)
+```python title="Method definition"
+def stop_human_loop(
+    self,
+    *,
+    HumanLoopName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopHumanLoopRequestRequestTypeDef](./type_defs.md#stophumanlooprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `HumanLoopName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopHumanLoopRequestRequestTypeDef = {  # (1)
+    "HumanLoopName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_human_loop(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: StopHumanLoopRequestRequestTypeDef](./type_defs.md#stophumanlooprequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("sagemaker-a2i-runtime").get_paginator`
-method with overloads.
+Type annotations and code completion for `#!python boto3.client("sagemaker-a2i-runtime").get_paginator` method with overloads.
 
-- `client.get_paginator("list_human_loops")` ->
-  [ListHumanLoopsPaginator](./paginators.md#listhumanloopspaginator)
+- `client.get_paginator("list_human_loops")` -> [ListHumanLoopsPaginator](./paginators.md#listhumanloopspaginator)
+
+
+

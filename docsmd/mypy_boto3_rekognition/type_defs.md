@@ -1,3362 +1,4348 @@
-<a id="typed-dictionaries-for-boto3-rekognition-module"></a>
-
-# Typed dictionaries for boto3 Rekognition module
+# Typed dictionaries
 
 > [Index](../README.md) > [Rekognition](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
-type annotations stubs module
-[mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Rekognition module](#typed-dictionaries-for-boto3-rekognition-module)
-  - [AgeRangeTypeDef](#agerangetypedef)
-  - [AssetTypeDef](#assettypedef)
-  - [AudioMetadataTypeDef](#audiometadatatypedef)
-  - [BeardTypeDef](#beardtypedef)
-  - [BlackFrameTypeDef](#blackframetypedef)
-  - [BoundingBoxTypeDef](#boundingboxtypedef)
-  - [CelebrityDetailTypeDef](#celebritydetailtypedef)
-  - [CelebrityRecognitionTypeDef](#celebrityrecognitiontypedef)
-  - [CelebrityTypeDef](#celebritytypedef)
-  - [CompareFacesMatchTypeDef](#comparefacesmatchtypedef)
-  - [CompareFacesRequestRequestTypeDef](#comparefacesrequestrequesttypedef)
-  - [CompareFacesResponseTypeDef](#comparefacesresponsetypedef)
-  - [ComparedFaceTypeDef](#comparedfacetypedef)
-  - [ComparedSourceImageFaceTypeDef](#comparedsourceimagefacetypedef)
-  - [ContentModerationDetectionTypeDef](#contentmoderationdetectiontypedef)
-  - [CoversBodyPartTypeDef](#coversbodyparttypedef)
-  - [CreateCollectionRequestRequestTypeDef](#createcollectionrequestrequesttypedef)
-  - [CreateCollectionResponseTypeDef](#createcollectionresponsetypedef)
-  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
-  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
-  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
-  - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
-  - [CreateProjectVersionRequestRequestTypeDef](#createprojectversionrequestrequesttypedef)
-  - [CreateProjectVersionResponseTypeDef](#createprojectversionresponsetypedef)
-  - [CreateStreamProcessorRequestRequestTypeDef](#createstreamprocessorrequestrequesttypedef)
-  - [CreateStreamProcessorResponseTypeDef](#createstreamprocessorresponsetypedef)
-  - [CustomLabelTypeDef](#customlabeltypedef)
-  - [DatasetChangesTypeDef](#datasetchangestypedef)
-  - [DatasetDescriptionTypeDef](#datasetdescriptiontypedef)
-  - [DatasetLabelDescriptionTypeDef](#datasetlabeldescriptiontypedef)
-  - [DatasetLabelStatsTypeDef](#datasetlabelstatstypedef)
-  - [DatasetMetadataTypeDef](#datasetmetadatatypedef)
-  - [DatasetSourceTypeDef](#datasetsourcetypedef)
-  - [DatasetStatsTypeDef](#datasetstatstypedef)
-  - [DeleteCollectionRequestRequestTypeDef](#deletecollectionrequestrequesttypedef)
-  - [DeleteCollectionResponseTypeDef](#deletecollectionresponsetypedef)
-  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
-  - [DeleteFacesRequestRequestTypeDef](#deletefacesrequestrequesttypedef)
-  - [DeleteFacesResponseTypeDef](#deletefacesresponsetypedef)
-  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
-  - [DeleteProjectResponseTypeDef](#deleteprojectresponsetypedef)
-  - [DeleteProjectVersionRequestRequestTypeDef](#deleteprojectversionrequestrequesttypedef)
-  - [DeleteProjectVersionResponseTypeDef](#deleteprojectversionresponsetypedef)
-  - [DeleteStreamProcessorRequestRequestTypeDef](#deletestreamprocessorrequestrequesttypedef)
-  - [DescribeCollectionRequestRequestTypeDef](#describecollectionrequestrequesttypedef)
-  - [DescribeCollectionResponseTypeDef](#describecollectionresponsetypedef)
-  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
-  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
-  - [DescribeProjectVersionsRequestRequestTypeDef](#describeprojectversionsrequestrequesttypedef)
-  - [DescribeProjectVersionsResponseTypeDef](#describeprojectversionsresponsetypedef)
-  - [DescribeProjectsRequestRequestTypeDef](#describeprojectsrequestrequesttypedef)
-  - [DescribeProjectsResponseTypeDef](#describeprojectsresponsetypedef)
-  - [DescribeStreamProcessorRequestRequestTypeDef](#describestreamprocessorrequestrequesttypedef)
-  - [DescribeStreamProcessorResponseTypeDef](#describestreamprocessorresponsetypedef)
-  - [DetectCustomLabelsRequestRequestTypeDef](#detectcustomlabelsrequestrequesttypedef)
-  - [DetectCustomLabelsResponseTypeDef](#detectcustomlabelsresponsetypedef)
-  - [DetectFacesRequestRequestTypeDef](#detectfacesrequestrequesttypedef)
-  - [DetectFacesResponseTypeDef](#detectfacesresponsetypedef)
-  - [DetectLabelsRequestRequestTypeDef](#detectlabelsrequestrequesttypedef)
-  - [DetectLabelsResponseTypeDef](#detectlabelsresponsetypedef)
-  - [DetectModerationLabelsRequestRequestTypeDef](#detectmoderationlabelsrequestrequesttypedef)
-  - [DetectModerationLabelsResponseTypeDef](#detectmoderationlabelsresponsetypedef)
-  - [DetectProtectiveEquipmentRequestRequestTypeDef](#detectprotectiveequipmentrequestrequesttypedef)
-  - [DetectProtectiveEquipmentResponseTypeDef](#detectprotectiveequipmentresponsetypedef)
-  - [DetectTextFiltersTypeDef](#detecttextfilterstypedef)
-  - [DetectTextRequestRequestTypeDef](#detecttextrequestrequesttypedef)
-  - [DetectTextResponseTypeDef](#detecttextresponsetypedef)
-  - [DetectionFilterTypeDef](#detectionfiltertypedef)
-  - [DistributeDatasetEntriesRequestRequestTypeDef](#distributedatasetentriesrequestrequesttypedef)
-  - [DistributeDatasetTypeDef](#distributedatasettypedef)
-  - [EmotionTypeDef](#emotiontypedef)
-  - [EquipmentDetectionTypeDef](#equipmentdetectiontypedef)
-  - [EvaluationResultTypeDef](#evaluationresulttypedef)
-  - [EyeOpenTypeDef](#eyeopentypedef)
-  - [EyeglassesTypeDef](#eyeglassestypedef)
-  - [FaceDetailTypeDef](#facedetailtypedef)
-  - [FaceDetectionTypeDef](#facedetectiontypedef)
-  - [FaceMatchTypeDef](#facematchtypedef)
-  - [FaceRecordTypeDef](#facerecordtypedef)
-  - [FaceSearchSettingsTypeDef](#facesearchsettingstypedef)
-  - [FaceTypeDef](#facetypedef)
-  - [GenderTypeDef](#gendertypedef)
-  - [GeometryTypeDef](#geometrytypedef)
-  - [GetCelebrityInfoRequestRequestTypeDef](#getcelebrityinforequestrequesttypedef)
-  - [GetCelebrityInfoResponseTypeDef](#getcelebrityinforesponsetypedef)
-  - [GetCelebrityRecognitionRequestRequestTypeDef](#getcelebrityrecognitionrequestrequesttypedef)
-  - [GetCelebrityRecognitionResponseTypeDef](#getcelebrityrecognitionresponsetypedef)
-  - [GetContentModerationRequestRequestTypeDef](#getcontentmoderationrequestrequesttypedef)
-  - [GetContentModerationResponseTypeDef](#getcontentmoderationresponsetypedef)
-  - [GetFaceDetectionRequestRequestTypeDef](#getfacedetectionrequestrequesttypedef)
-  - [GetFaceDetectionResponseTypeDef](#getfacedetectionresponsetypedef)
-  - [GetFaceSearchRequestRequestTypeDef](#getfacesearchrequestrequesttypedef)
-  - [GetFaceSearchResponseTypeDef](#getfacesearchresponsetypedef)
-  - [GetLabelDetectionRequestRequestTypeDef](#getlabeldetectionrequestrequesttypedef)
-  - [GetLabelDetectionResponseTypeDef](#getlabeldetectionresponsetypedef)
-  - [GetPersonTrackingRequestRequestTypeDef](#getpersontrackingrequestrequesttypedef)
-  - [GetPersonTrackingResponseTypeDef](#getpersontrackingresponsetypedef)
-  - [GetSegmentDetectionRequestRequestTypeDef](#getsegmentdetectionrequestrequesttypedef)
-  - [GetSegmentDetectionResponseTypeDef](#getsegmentdetectionresponsetypedef)
-  - [GetTextDetectionRequestRequestTypeDef](#gettextdetectionrequestrequesttypedef)
-  - [GetTextDetectionResponseTypeDef](#gettextdetectionresponsetypedef)
-  - [GroundTruthManifestTypeDef](#groundtruthmanifesttypedef)
-  - [HumanLoopActivationOutputTypeDef](#humanloopactivationoutputtypedef)
-  - [HumanLoopConfigTypeDef](#humanloopconfigtypedef)
-  - [HumanLoopDataAttributesTypeDef](#humanloopdataattributestypedef)
-  - [ImageQualityTypeDef](#imagequalitytypedef)
-  - [ImageTypeDef](#imagetypedef)
-  - [IndexFacesRequestRequestTypeDef](#indexfacesrequestrequesttypedef)
-  - [IndexFacesResponseTypeDef](#indexfacesresponsetypedef)
-  - [InstanceTypeDef](#instancetypedef)
-  - [KinesisDataStreamTypeDef](#kinesisdatastreamtypedef)
-  - [KinesisVideoStreamTypeDef](#kinesisvideostreamtypedef)
-  - [KnownGenderTypeDef](#knowngendertypedef)
-  - [LabelDetectionTypeDef](#labeldetectiontypedef)
-  - [LabelTypeDef](#labeltypedef)
-  - [LandmarkTypeDef](#landmarktypedef)
-  - [ListCollectionsRequestRequestTypeDef](#listcollectionsrequestrequesttypedef)
-  - [ListCollectionsResponseTypeDef](#listcollectionsresponsetypedef)
-  - [ListDatasetEntriesRequestRequestTypeDef](#listdatasetentriesrequestrequesttypedef)
-  - [ListDatasetEntriesResponseTypeDef](#listdatasetentriesresponsetypedef)
-  - [ListDatasetLabelsRequestRequestTypeDef](#listdatasetlabelsrequestrequesttypedef)
-  - [ListDatasetLabelsResponseTypeDef](#listdatasetlabelsresponsetypedef)
-  - [ListFacesRequestRequestTypeDef](#listfacesrequestrequesttypedef)
-  - [ListFacesResponseTypeDef](#listfacesresponsetypedef)
-  - [ListStreamProcessorsRequestRequestTypeDef](#liststreamprocessorsrequestrequesttypedef)
-  - [ListStreamProcessorsResponseTypeDef](#liststreamprocessorsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ModerationLabelTypeDef](#moderationlabeltypedef)
-  - [MouthOpenTypeDef](#mouthopentypedef)
-  - [MustacheTypeDef](#mustachetypedef)
-  - [NotificationChannelTypeDef](#notificationchanneltypedef)
-  - [OutputConfigTypeDef](#outputconfigtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParentTypeDef](#parenttypedef)
-  - [PersonDetailTypeDef](#persondetailtypedef)
-  - [PersonDetectionTypeDef](#persondetectiontypedef)
-  - [PersonMatchTypeDef](#personmatchtypedef)
-  - [PointTypeDef](#pointtypedef)
-  - [PoseTypeDef](#posetypedef)
-  - [ProjectDescriptionTypeDef](#projectdescriptiontypedef)
-  - [ProjectVersionDescriptionTypeDef](#projectversiondescriptiontypedef)
-  - [ProtectiveEquipmentBodyPartTypeDef](#protectiveequipmentbodyparttypedef)
-  - [ProtectiveEquipmentPersonTypeDef](#protectiveequipmentpersontypedef)
-  - [ProtectiveEquipmentSummarizationAttributesTypeDef](#protectiveequipmentsummarizationattributestypedef)
-  - [ProtectiveEquipmentSummaryTypeDef](#protectiveequipmentsummarytypedef)
-  - [RecognizeCelebritiesRequestRequestTypeDef](#recognizecelebritiesrequestrequesttypedef)
-  - [RecognizeCelebritiesResponseTypeDef](#recognizecelebritiesresponsetypedef)
-  - [RegionOfInterestTypeDef](#regionofinteresttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3ObjectTypeDef](#s3objecttypedef)
-  - [SearchFacesByImageRequestRequestTypeDef](#searchfacesbyimagerequestrequesttypedef)
-  - [SearchFacesByImageResponseTypeDef](#searchfacesbyimageresponsetypedef)
-  - [SearchFacesRequestRequestTypeDef](#searchfacesrequestrequesttypedef)
-  - [SearchFacesResponseTypeDef](#searchfacesresponsetypedef)
-  - [SegmentDetectionTypeDef](#segmentdetectiontypedef)
-  - [SegmentTypeInfoTypeDef](#segmenttypeinfotypedef)
-  - [ShotSegmentTypeDef](#shotsegmenttypedef)
-  - [SmileTypeDef](#smiletypedef)
-  - [StartCelebrityRecognitionRequestRequestTypeDef](#startcelebrityrecognitionrequestrequesttypedef)
-  - [StartCelebrityRecognitionResponseTypeDef](#startcelebrityrecognitionresponsetypedef)
-  - [StartContentModerationRequestRequestTypeDef](#startcontentmoderationrequestrequesttypedef)
-  - [StartContentModerationResponseTypeDef](#startcontentmoderationresponsetypedef)
-  - [StartFaceDetectionRequestRequestTypeDef](#startfacedetectionrequestrequesttypedef)
-  - [StartFaceDetectionResponseTypeDef](#startfacedetectionresponsetypedef)
-  - [StartFaceSearchRequestRequestTypeDef](#startfacesearchrequestrequesttypedef)
-  - [StartFaceSearchResponseTypeDef](#startfacesearchresponsetypedef)
-  - [StartLabelDetectionRequestRequestTypeDef](#startlabeldetectionrequestrequesttypedef)
-  - [StartLabelDetectionResponseTypeDef](#startlabeldetectionresponsetypedef)
-  - [StartPersonTrackingRequestRequestTypeDef](#startpersontrackingrequestrequesttypedef)
-  - [StartPersonTrackingResponseTypeDef](#startpersontrackingresponsetypedef)
-  - [StartProjectVersionRequestRequestTypeDef](#startprojectversionrequestrequesttypedef)
-  - [StartProjectVersionResponseTypeDef](#startprojectversionresponsetypedef)
-  - [StartSegmentDetectionFiltersTypeDef](#startsegmentdetectionfilterstypedef)
-  - [StartSegmentDetectionRequestRequestTypeDef](#startsegmentdetectionrequestrequesttypedef)
-  - [StartSegmentDetectionResponseTypeDef](#startsegmentdetectionresponsetypedef)
-  - [StartShotDetectionFilterTypeDef](#startshotdetectionfiltertypedef)
-  - [StartStreamProcessorRequestRequestTypeDef](#startstreamprocessorrequestrequesttypedef)
-  - [StartTechnicalCueDetectionFilterTypeDef](#starttechnicalcuedetectionfiltertypedef)
-  - [StartTextDetectionFiltersTypeDef](#starttextdetectionfilterstypedef)
-  - [StartTextDetectionRequestRequestTypeDef](#starttextdetectionrequestrequesttypedef)
-  - [StartTextDetectionResponseTypeDef](#starttextdetectionresponsetypedef)
-  - [StopProjectVersionRequestRequestTypeDef](#stopprojectversionrequestrequesttypedef)
-  - [StopProjectVersionResponseTypeDef](#stopprojectversionresponsetypedef)
-  - [StopStreamProcessorRequestRequestTypeDef](#stopstreamprocessorrequestrequesttypedef)
-  - [StreamProcessorInputTypeDef](#streamprocessorinputtypedef)
-  - [StreamProcessorOutputTypeDef](#streamprocessoroutputtypedef)
-  - [StreamProcessorSettingsTypeDef](#streamprocessorsettingstypedef)
-  - [StreamProcessorTypeDef](#streamprocessortypedef)
-  - [SummaryTypeDef](#summarytypedef)
-  - [SunglassesTypeDef](#sunglassestypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TechnicalCueSegmentTypeDef](#technicalcuesegmenttypedef)
-  - [TestingDataResultTypeDef](#testingdataresulttypedef)
-  - [TestingDataTypeDef](#testingdatatypedef)
-  - [TextDetectionResultTypeDef](#textdetectionresulttypedef)
-  - [TextDetectionTypeDef](#textdetectiontypedef)
-  - [TrainingDataResultTypeDef](#trainingdataresulttypedef)
-  - [TrainingDataTypeDef](#trainingdatatypedef)
-  - [UnindexedFaceTypeDef](#unindexedfacetypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDatasetEntriesRequestRequestTypeDef](#updatedatasetentriesrequestrequesttypedef)
-  - [ValidationDataTypeDef](#validationdatatypedef)
-  - [VideoMetadataTypeDef](#videometadatatypedef)
-  - [VideoTypeDef](#videotypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="agerangetypedef"></a>
+    Auto-generated documentation for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
+    type annotations stubs module [mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 ## AgeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import AgeRangeTypeDef
+
+def get_value() -> AgeRangeTypeDef:
+    return {
+        "Low": ...,
+    }
 ```
 
-Optional fields:
-
-- `Low`: `int`
-- `High`: `int`
-
-<a id="assettypedef"></a>
+```python title="Definition"
+class AgeRangeTypeDef(TypedDict):
+    Low: NotRequired[int],
+    High: NotRequired[int],
+```
 
 ## AssetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import AssetTypeDef
+
+def get_value() -> AssetTypeDef:
+    return {
+        "GroundTruthManifest": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssetTypeDef(TypedDict):
+    GroundTruthManifest: NotRequired[GroundTruthManifestTypeDef],  # (1)
+```
 
-- `GroundTruthManifest`:
-  [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
-
-<a id="audiometadatatypedef"></a>
-
+1. See [:material-code-braces: GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef) 
 ## AudioMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import AudioMetadataTypeDef
+
+def get_value() -> AudioMetadataTypeDef:
+    return {
+        "Codec": ...,
+    }
 ```
 
-Optional fields:
-
-- `Codec`: `str`
-- `DurationMillis`: `int`
-- `SampleRate`: `int`
-- `NumberOfChannels`: `int`
-
-<a id="beardtypedef"></a>
+```python title="Definition"
+class AudioMetadataTypeDef(TypedDict):
+    Codec: NotRequired[str],
+    DurationMillis: NotRequired[int],
+    SampleRate: NotRequired[int],
+    NumberOfChannels: NotRequired[int],
+```
 
 ## BeardTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import BeardTypeDef
+
+def get_value() -> BeardTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `bool`
-- `Confidence`: `float`
-
-<a id="blackframetypedef"></a>
+```python title="Definition"
+class BeardTypeDef(TypedDict):
+    Value: NotRequired[bool],
+    Confidence: NotRequired[float],
+```
 
 ## BlackFrameTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import BlackFrameTypeDef
+
+def get_value() -> BlackFrameTypeDef:
+    return {
+        "MaxPixelThreshold": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxPixelThreshold`: `float`
-- `MinCoveragePercentage`: `float`
-
-<a id="boundingboxtypedef"></a>
+```python title="Definition"
+class BlackFrameTypeDef(TypedDict):
+    MaxPixelThreshold: NotRequired[float],
+    MinCoveragePercentage: NotRequired[float],
+```
 
 ## BoundingBoxTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import BoundingBoxTypeDef
+
+def get_value() -> BoundingBoxTypeDef:
+    return {
+        "Width": ...,
+    }
 ```
 
-Optional fields:
-
-- `Width`: `float`
-- `Height`: `float`
-- `Left`: `float`
-- `Top`: `float`
-
-<a id="celebritydetailtypedef"></a>
+```python title="Definition"
+class BoundingBoxTypeDef(TypedDict):
+    Width: NotRequired[float],
+    Height: NotRequired[float],
+    Left: NotRequired[float],
+    Top: NotRequired[float],
+```
 
 ## CelebrityDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CelebrityDetailTypeDef
+
+def get_value() -> CelebrityDetailTypeDef:
+    return {
+        "Urls": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CelebrityDetailTypeDef(TypedDict):
+    Urls: NotRequired[List[str]],
+    Name: NotRequired[str],
+    Id: NotRequired[str],
+    Confidence: NotRequired[float],
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    Face: NotRequired[FaceDetailTypeDef],  # (2)
+    KnownGender: NotRequired[KnownGenderTypeDef],  # (3)
+```
 
-- `Urls`: `List`\[`str`\]
-- `Name`: `str`
-- `Id`: `str`
-- `Confidence`: `float`
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
-- `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
-
-<a id="celebrityrecognitiontypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+2. See [:material-code-braces: FaceDetailTypeDef](./type_defs.md#facedetailtypedef) 
+3. See [:material-code-braces: KnownGenderTypeDef](./type_defs.md#knowngendertypedef) 
 ## CelebrityRecognitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CelebrityRecognitionTypeDef
+
+def get_value() -> CelebrityRecognitionTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CelebrityRecognitionTypeDef(TypedDict):
+    Timestamp: NotRequired[int],
+    Celebrity: NotRequired[CelebrityDetailTypeDef],  # (1)
+```
 
-- `Timestamp`: `int`
-- `Celebrity`: [CelebrityDetailTypeDef](./type_defs.md#celebritydetailtypedef)
-
-<a id="celebritytypedef"></a>
-
+1. See [:material-code-braces: CelebrityDetailTypeDef](./type_defs.md#celebritydetailtypedef) 
 ## CelebrityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CelebrityTypeDef
+
+def get_value() -> CelebrityTypeDef:
+    return {
+        "Urls": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CelebrityTypeDef(TypedDict):
+    Urls: NotRequired[List[str]],
+    Name: NotRequired[str],
+    Id: NotRequired[str],
+    Face: NotRequired[ComparedFaceTypeDef],  # (1)
+    MatchConfidence: NotRequired[float],
+    KnownGender: NotRequired[KnownGenderTypeDef],  # (2)
+```
 
-- `Urls`: `List`\[`str`\]
-- `Name`: `str`
-- `Id`: `str`
-- `Face`: [ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)
-- `MatchConfidence`: `float`
-- `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
-
-<a id="comparefacesmatchtypedef"></a>
-
+1. See [:material-code-braces: ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef) 
+2. See [:material-code-braces: KnownGenderTypeDef](./type_defs.md#knowngendertypedef) 
 ## CompareFacesMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CompareFacesMatchTypeDef
+
+def get_value() -> CompareFacesMatchTypeDef:
+    return {
+        "Similarity": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CompareFacesMatchTypeDef(TypedDict):
+    Similarity: NotRequired[float],
+    Face: NotRequired[ComparedFaceTypeDef],  # (1)
+```
 
-- `Similarity`: `float`
-- `Face`: [ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)
-
-<a id="comparefacesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef) 
 ## CompareFacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CompareFacesRequestRequestTypeDef
+
+def get_value() -> CompareFacesRequestRequestTypeDef:
+    return {
+        "SourceImage": ...,
+        "TargetImage": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CompareFacesRequestRequestTypeDef(TypedDict):
+    SourceImage: ImageTypeDef,  # (1)
+    TargetImage: ImageTypeDef,  # (1)
+    SimilarityThreshold: NotRequired[float],
+    QualityFilter: NotRequired[QualityFilterType],  # (3)
+```
 
-- `SourceImage`: [ImageTypeDef](./type_defs.md#imagetypedef)
-- `TargetImage`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-Optional fields:
-
-- `SimilarityThreshold`: `float`
-- `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
-
-<a id="comparefacesresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+3. See [:material-code-brackets: QualityFilterType](./literals.md#qualityfiltertype) 
 ## CompareFacesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CompareFacesResponseTypeDef
+
+def get_value() -> CompareFacesResponseTypeDef:
+    return {
+        "SourceImageFace": ...,
+        "FaceMatches": ...,
+        "UnmatchedFaces": ...,
+        "SourceImageOrientationCorrection": ...,
+        "TargetImageOrientationCorrection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CompareFacesResponseTypeDef(TypedDict):
+    SourceImageFace: ComparedSourceImageFaceTypeDef,  # (1)
+    FaceMatches: List[CompareFacesMatchTypeDef],  # (2)
+    UnmatchedFaces: List[ComparedFaceTypeDef],  # (3)
+    SourceImageOrientationCorrection: OrientationCorrectionType,  # (4)
+    TargetImageOrientationCorrection: OrientationCorrectionType,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `SourceImageFace`:
-  [ComparedSourceImageFaceTypeDef](./type_defs.md#comparedsourceimagefacetypedef)
-- `FaceMatches`:
-  `List`\[[CompareFacesMatchTypeDef](./type_defs.md#comparefacesmatchtypedef)\]
-- `UnmatchedFaces`:
-  `List`\[[ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)\]
-- `SourceImageOrientationCorrection`:
-  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
-- `TargetImageOrientationCorrection`:
-  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="comparedfacetypedef"></a>
-
+1. See [:material-code-braces: ComparedSourceImageFaceTypeDef](./type_defs.md#comparedsourceimagefacetypedef) 
+2. See [:material-code-braces: CompareFacesMatchTypeDef](./type_defs.md#comparefacesmatchtypedef) 
+3. See [:material-code-braces: ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef) 
+4. See [:material-code-brackets: OrientationCorrectionType](./literals.md#orientationcorrectiontype) 
+5. See [:material-code-brackets: OrientationCorrectionType](./literals.md#orientationcorrectiontype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ComparedFaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ComparedFaceTypeDef
+
+def get_value() -> ComparedFaceTypeDef:
+    return {
+        "BoundingBox": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComparedFaceTypeDef(TypedDict):
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    Confidence: NotRequired[float],
+    Landmarks: NotRequired[List[LandmarkTypeDef]],  # (2)
+    Pose: NotRequired[PoseTypeDef],  # (3)
+    Quality: NotRequired[ImageQualityTypeDef],  # (4)
+    Emotions: NotRequired[List[EmotionTypeDef]],  # (5)
+    Smile: NotRequired[SmileTypeDef],  # (6)
+```
 
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `Confidence`: `float`
-- `Landmarks`: `List`\[[LandmarkTypeDef](./type_defs.md#landmarktypedef)\]
-- `Pose`: [PoseTypeDef](./type_defs.md#posetypedef)
-- `Quality`: [ImageQualityTypeDef](./type_defs.md#imagequalitytypedef)
-- `Emotions`: `List`\[[EmotionTypeDef](./type_defs.md#emotiontypedef)\]
-- `Smile`: [SmileTypeDef](./type_defs.md#smiletypedef)
-
-<a id="comparedsourceimagefacetypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+2. See [:material-code-braces: LandmarkTypeDef](./type_defs.md#landmarktypedef) 
+3. See [:material-code-braces: PoseTypeDef](./type_defs.md#posetypedef) 
+4. See [:material-code-braces: ImageQualityTypeDef](./type_defs.md#imagequalitytypedef) 
+5. See [:material-code-braces: EmotionTypeDef](./type_defs.md#emotiontypedef) 
+6. See [:material-code-braces: SmileTypeDef](./type_defs.md#smiletypedef) 
 ## ComparedSourceImageFaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ComparedSourceImageFaceTypeDef
+
+def get_value() -> ComparedSourceImageFaceTypeDef:
+    return {
+        "BoundingBox": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComparedSourceImageFaceTypeDef(TypedDict):
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    Confidence: NotRequired[float],
+```
 
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `Confidence`: `float`
-
-<a id="contentmoderationdetectiontypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
 ## ContentModerationDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ContentModerationDetectionTypeDef
+
+def get_value() -> ContentModerationDetectionTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContentModerationDetectionTypeDef(TypedDict):
+    Timestamp: NotRequired[int],
+    ModerationLabel: NotRequired[ModerationLabelTypeDef],  # (1)
+```
 
-- `Timestamp`: `int`
-- `ModerationLabel`:
-  [ModerationLabelTypeDef](./type_defs.md#moderationlabeltypedef)
-
-<a id="coversbodyparttypedef"></a>
-
+1. See [:material-code-braces: ModerationLabelTypeDef](./type_defs.md#moderationlabeltypedef) 
 ## CoversBodyPartTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CoversBodyPartTypeDef
+
+def get_value() -> CoversBodyPartTypeDef:
+    return {
+        "Confidence": ...,
+    }
 ```
 
-Optional fields:
-
-- `Confidence`: `float`
-- `Value`: `bool`
-
-<a id="createcollectionrequestrequesttypedef"></a>
+```python title="Definition"
+class CoversBodyPartTypeDef(TypedDict):
+    Confidence: NotRequired[float],
+    Value: NotRequired[bool],
+```
 
 ## CreateCollectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateCollectionRequestRequestTypeDef
+
+def get_value() -> CreateCollectionRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionId`: `str`
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createcollectionresponsetypedef"></a>
+```python title="Definition"
+class CreateCollectionRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateCollectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateCollectionResponseTypeDef
+
+def get_value() -> CreateCollectionResponseTypeDef:
+    return {
+        "StatusCode": ...,
+        "CollectionArn": ...,
+        "FaceModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCollectionResponseTypeDef(TypedDict):
+    StatusCode: int,
+    CollectionArn: str,
+    FaceModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StatusCode`: `int`
-- `CollectionArn`: `str`
-- `FaceModelVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateDatasetRequestRequestTypeDef
+
+def get_value() -> CreateDatasetRequestRequestTypeDef:
+    return {
+        "DatasetType": ...,
+        "ProjectArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetRequestRequestTypeDef(TypedDict):
+    DatasetType: DatasetTypeType,  # (1)
+    ProjectArn: str,
+    DatasetSource: NotRequired[DatasetSourceTypeDef],  # (2)
+```
 
-- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
-- `ProjectArn`: `str`
-
-Optional fields:
-
-- `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
-
-<a id="createdatasetresponsetypedef"></a>
-
+1. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+2. See [:material-code-braces: DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef) 
 ## CreateDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateDatasetResponseTypeDef
+
+def get_value() -> CreateDatasetResponseTypeDef:
+    return {
+        "DatasetArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetResponseTypeDef(TypedDict):
+    DatasetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DatasetArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateProjectRequestRequestTypeDef
+
+def get_value() -> CreateProjectRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-
-<a id="createprojectresponsetypedef"></a>
+```python title="Definition"
+class CreateProjectRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+```
 
 ## CreateProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateProjectResponseTypeDef
+
+def get_value() -> CreateProjectResponseTypeDef:
+    return {
+        "ProjectArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectResponseTypeDef(TypedDict):
+    ProjectArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ProjectArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprojectversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProjectVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateProjectVersionRequestRequestTypeDef
+
+def get_value() -> CreateProjectVersionRequestRequestTypeDef:
+    return {
+        "ProjectArn": ...,
+        "VersionName": ...,
+        "OutputConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectVersionRequestRequestTypeDef(TypedDict):
+    ProjectArn: str,
+    VersionName: str,
+    OutputConfig: OutputConfigTypeDef,  # (1)
+    TrainingData: NotRequired[TrainingDataTypeDef],  # (2)
+    TestingData: NotRequired[TestingDataTypeDef],  # (3)
+    Tags: NotRequired[Mapping[str, str]],
+    KmsKeyId: NotRequired[str],
+```
 
-- `ProjectArn`: `str`
-- `VersionName`: `str`
-- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-
-Optional fields:
-
-- `TrainingData`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
-- `TestingData`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `KmsKeyId`: `str`
-
-<a id="createprojectversionresponsetypedef"></a>
-
+1. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+2. See [:material-code-braces: TrainingDataTypeDef](./type_defs.md#trainingdatatypedef) 
+3. See [:material-code-braces: TestingDataTypeDef](./type_defs.md#testingdatatypedef) 
 ## CreateProjectVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateProjectVersionResponseTypeDef
+
+def get_value() -> CreateProjectVersionResponseTypeDef:
+    return {
+        "ProjectVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectVersionResponseTypeDef(TypedDict):
+    ProjectVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ProjectVersionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstreamprocessorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStreamProcessorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateStreamProcessorRequestRequestTypeDef
+
+def get_value() -> CreateStreamProcessorRequestRequestTypeDef:
+    return {
+        "Input": ...,
+        "Output": ...,
+        "Name": ...,
+        "Settings": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStreamProcessorRequestRequestTypeDef(TypedDict):
+    Input: StreamProcessorInputTypeDef,  # (1)
+    Output: StreamProcessorOutputTypeDef,  # (2)
+    Name: str,
+    Settings: StreamProcessorSettingsTypeDef,  # (3)
+    RoleArn: str,
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Input`:
-  [StreamProcessorInputTypeDef](./type_defs.md#streamprocessorinputtypedef)
-- `Output`:
-  [StreamProcessorOutputTypeDef](./type_defs.md#streamprocessoroutputtypedef)
-- `Name`: `str`
-- `Settings`:
-  [StreamProcessorSettingsTypeDef](./type_defs.md#streamprocessorsettingstypedef)
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createstreamprocessorresponsetypedef"></a>
-
+1. See [:material-code-braces: StreamProcessorInputTypeDef](./type_defs.md#streamprocessorinputtypedef) 
+2. See [:material-code-braces: StreamProcessorOutputTypeDef](./type_defs.md#streamprocessoroutputtypedef) 
+3. See [:material-code-braces: StreamProcessorSettingsTypeDef](./type_defs.md#streamprocessorsettingstypedef) 
 ## CreateStreamProcessorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CreateStreamProcessorResponseTypeDef
+
+def get_value() -> CreateStreamProcessorResponseTypeDef:
+    return {
+        "StreamProcessorArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStreamProcessorResponseTypeDef(TypedDict):
+    StreamProcessorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StreamProcessorArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customlabeltypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomLabelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import CustomLabelTypeDef
+
+def get_value() -> CustomLabelTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomLabelTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Confidence: NotRequired[float],
+    Geometry: NotRequired[GeometryTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `Confidence`: `float`
-- `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
-
-<a id="datasetchangestypedef"></a>
-
+1. See [:material-code-braces: GeometryTypeDef](./type_defs.md#geometrytypedef) 
 ## DatasetChangesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DatasetChangesTypeDef
+
+def get_value() -> DatasetChangesTypeDef:
+    return {
+        "GroundTruth": ...,
+    }
 ```
 
-Required fields:
-
-- `GroundTruth`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="datasetdescriptiontypedef"></a>
+```python title="Definition"
+class DatasetChangesTypeDef(TypedDict):
+    GroundTruth: Union[bytes, IO[bytes], StreamingBody],
+```
 
 ## DatasetDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DatasetDescriptionTypeDef
+
+def get_value() -> DatasetDescriptionTypeDef:
+    return {
+        "CreationTimestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetDescriptionTypeDef(TypedDict):
+    CreationTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+    Status: NotRequired[DatasetStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    StatusMessageCode: NotRequired[DatasetStatusMessageCodeType],  # (2)
+    DatasetStats: NotRequired[DatasetStatsTypeDef],  # (3)
+```
 
-- `CreationTimestamp`: `datetime`
-- `LastUpdatedTimestamp`: `datetime`
-- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
-- `StatusMessage`: `str`
-- `StatusMessageCode`:
-  [DatasetStatusMessageCodeType](./literals.md#datasetstatusmessagecodetype)
-- `DatasetStats`: [DatasetStatsTypeDef](./type_defs.md#datasetstatstypedef)
-
-<a id="datasetlabeldescriptiontypedef"></a>
-
+1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
+2. See [:material-code-brackets: DatasetStatusMessageCodeType](./literals.md#datasetstatusmessagecodetype) 
+3. See [:material-code-braces: DatasetStatsTypeDef](./type_defs.md#datasetstatstypedef) 
 ## DatasetLabelDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DatasetLabelDescriptionTypeDef
+
+def get_value() -> DatasetLabelDescriptionTypeDef:
+    return {
+        "LabelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetLabelDescriptionTypeDef(TypedDict):
+    LabelName: NotRequired[str],
+    LabelStats: NotRequired[DatasetLabelStatsTypeDef],  # (1)
+```
 
-- `LabelName`: `str`
-- `LabelStats`:
-  [DatasetLabelStatsTypeDef](./type_defs.md#datasetlabelstatstypedef)
-
-<a id="datasetlabelstatstypedef"></a>
-
+1. See [:material-code-braces: DatasetLabelStatsTypeDef](./type_defs.md#datasetlabelstatstypedef) 
 ## DatasetLabelStatsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DatasetLabelStatsTypeDef
+
+def get_value() -> DatasetLabelStatsTypeDef:
+    return {
+        "EntryCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `EntryCount`: `int`
-- `BoundingBoxCount`: `int`
-
-<a id="datasetmetadatatypedef"></a>
+```python title="Definition"
+class DatasetLabelStatsTypeDef(TypedDict):
+    EntryCount: NotRequired[int],
+    BoundingBoxCount: NotRequired[int],
+```
 
 ## DatasetMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DatasetMetadataTypeDef
+
+def get_value() -> DatasetMetadataTypeDef:
+    return {
+        "CreationTimestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetMetadataTypeDef(TypedDict):
+    CreationTimestamp: NotRequired[datetime],
+    DatasetType: NotRequired[DatasetTypeType],  # (1)
+    DatasetArn: NotRequired[str],
+    Status: NotRequired[DatasetStatusType],  # (2)
+    StatusMessage: NotRequired[str],
+    StatusMessageCode: NotRequired[DatasetStatusMessageCodeType],  # (3)
+```
 
-- `CreationTimestamp`: `datetime`
-- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
-- `DatasetArn`: `str`
-- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
-- `StatusMessage`: `str`
-- `StatusMessageCode`:
-  [DatasetStatusMessageCodeType](./literals.md#datasetstatusmessagecodetype)
-
-<a id="datasetsourcetypedef"></a>
-
+1. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+2. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
+3. See [:material-code-brackets: DatasetStatusMessageCodeType](./literals.md#datasetstatusmessagecodetype) 
 ## DatasetSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DatasetSourceTypeDef
+
+def get_value() -> DatasetSourceTypeDef:
+    return {
+        "GroundTruthManifest": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetSourceTypeDef(TypedDict):
+    GroundTruthManifest: NotRequired[GroundTruthManifestTypeDef],  # (1)
+    DatasetArn: NotRequired[str],
+```
 
-- `GroundTruthManifest`:
-  [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
-- `DatasetArn`: `str`
-
-<a id="datasetstatstypedef"></a>
-
+1. See [:material-code-braces: GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef) 
 ## DatasetStatsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DatasetStatsTypeDef
+
+def get_value() -> DatasetStatsTypeDef:
+    return {
+        "LabeledEntries": ...,
+    }
 ```
 
-Optional fields:
-
-- `LabeledEntries`: `int`
-- `TotalEntries`: `int`
-- `TotalLabels`: `int`
-- `ErrorEntries`: `int`
-
-<a id="deletecollectionrequestrequesttypedef"></a>
+```python title="Definition"
+class DatasetStatsTypeDef(TypedDict):
+    LabeledEntries: NotRequired[int],
+    TotalEntries: NotRequired[int],
+    TotalLabels: NotRequired[int],
+    ErrorEntries: NotRequired[int],
+```
 
 ## DeleteCollectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteCollectionRequestRequestTypeDef
+
+def get_value() -> DeleteCollectionRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionId`: `str`
-
-<a id="deletecollectionresponsetypedef"></a>
+```python title="Definition"
+class DeleteCollectionRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+```
 
 ## DeleteCollectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteCollectionResponseTypeDef
+
+def get_value() -> DeleteCollectionResponseTypeDef:
+    return {
+        "StatusCode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteCollectionResponseTypeDef(TypedDict):
+    StatusCode: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StatusCode`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteDatasetRequestRequestTypeDef
+
+def get_value() -> DeleteDatasetRequestRequestTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetArn`: `str`
-
-<a id="deletefacesrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatasetRequestRequestTypeDef(TypedDict):
+    DatasetArn: str,
+```
 
 ## DeleteFacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteFacesRequestRequestTypeDef
+
+def get_value() -> DeleteFacesRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+        "FaceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionId`: `str`
-- `FaceIds`: `Sequence`\[`str`\]
-
-<a id="deletefacesresponsetypedef"></a>
+```python title="Definition"
+class DeleteFacesRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+    FaceIds: Sequence[str],
+```
 
 ## DeleteFacesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteFacesResponseTypeDef
+
+def get_value() -> DeleteFacesResponseTypeDef:
+    return {
+        "DeletedFaces": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteFacesResponseTypeDef(TypedDict):
+    DeletedFaces: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeletedFaces`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteProjectRequestRequestTypeDef
+
+def get_value() -> DeleteProjectRequestRequestTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectArn`: `str`
-
-<a id="deleteprojectresponsetypedef"></a>
+```python title="Definition"
+class DeleteProjectRequestRequestTypeDef(TypedDict):
+    ProjectArn: str,
+```
 
 ## DeleteProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteProjectResponseTypeDef
+
+def get_value() -> DeleteProjectResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteProjectResponseTypeDef(TypedDict):
+    Status: ProjectStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [ProjectStatusType](./literals.md#projectstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprojectversionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProjectVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteProjectVersionRequestRequestTypeDef
+
+def get_value() -> DeleteProjectVersionRequestRequestTypeDef:
+    return {
+        "ProjectVersionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectVersionArn`: `str`
-
-<a id="deleteprojectversionresponsetypedef"></a>
+```python title="Definition"
+class DeleteProjectVersionRequestRequestTypeDef(TypedDict):
+    ProjectVersionArn: str,
+```
 
 ## DeleteProjectVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteProjectVersionResponseTypeDef
+
+def get_value() -> DeleteProjectVersionResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteProjectVersionResponseTypeDef(TypedDict):
+    Status: ProjectVersionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [ProjectVersionStatusType](./literals.md#projectversionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletestreamprocessorrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProjectVersionStatusType](./literals.md#projectversionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteStreamProcessorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DeleteStreamProcessorRequestRequestTypeDef
+
+def get_value() -> DeleteStreamProcessorRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describecollectionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteStreamProcessorRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribeCollectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeCollectionRequestRequestTypeDef
+
+def get_value() -> DescribeCollectionRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionId`: `str`
-
-<a id="describecollectionresponsetypedef"></a>
+```python title="Definition"
+class DescribeCollectionRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+```
 
 ## DescribeCollectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeCollectionResponseTypeDef
+
+def get_value() -> DescribeCollectionResponseTypeDef:
+    return {
+        "FaceCount": ...,
+        "FaceModelVersion": ...,
+        "CollectionARN": ...,
+        "CreationTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCollectionResponseTypeDef(TypedDict):
+    FaceCount: int,
+    FaceModelVersion: str,
+    CollectionARN: str,
+    CreationTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FaceCount`: `int`
-- `FaceModelVersion`: `str`
-- `CollectionARN`: `str`
-- `CreationTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeDatasetRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetRequestRequestTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetArn`: `str`
-
-<a id="describedatasetresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetRequestRequestTypeDef(TypedDict):
+    DatasetArn: str,
+```
 
 ## DescribeDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeDatasetResponseTypeDef
+
+def get_value() -> DescribeDatasetResponseTypeDef:
+    return {
+        "DatasetDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetResponseTypeDef(TypedDict):
+    DatasetDescription: DatasetDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DatasetDescription`:
-  [DatasetDescriptionTypeDef](./type_defs.md#datasetdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatasetDescriptionTypeDef](./type_defs.md#datasetdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProjectVersionsRequestDescribeProjectVersionsPaginateTypeDef
 
-<a id="describeprojectversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsRequestDescribeProjectVersionsPaginateTypeDef
 
+def get_value() -> DescribeProjectVersionsRequestDescribeProjectVersionsPaginateTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProjectVersionsRequestDescribeProjectVersionsPaginateTypeDef(TypedDict):
+    ProjectArn: str,
+    VersionNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeProjectVersionsRequestProjectVersionRunningWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsRequestProjectVersionRunningWaitTypeDef
+
+def get_value() -> DescribeProjectVersionsRequestProjectVersionRunningWaitTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProjectVersionsRequestProjectVersionRunningWaitTypeDef(TypedDict):
+    ProjectArn: str,
+    VersionNames: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeProjectVersionsRequestProjectVersionTrainingCompletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsRequestProjectVersionTrainingCompletedWaitTypeDef
+
+def get_value() -> DescribeProjectVersionsRequestProjectVersionTrainingCompletedWaitTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProjectVersionsRequestProjectVersionTrainingCompletedWaitTypeDef(TypedDict):
+    ProjectArn: str,
+    VersionNames: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeProjectVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsRequestRequestTypeDef
+
+def get_value() -> DescribeProjectVersionsRequestRequestTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectArn`: `str`
-
-Optional fields:
-
-- `VersionNames`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeprojectversionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeProjectVersionsRequestRequestTypeDef(TypedDict):
+    ProjectArn: str,
+    VersionNames: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeProjectVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeProjectVersionsResponseTypeDef
+
+def get_value() -> DescribeProjectVersionsResponseTypeDef:
+    return {
+        "ProjectVersionDescriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProjectVersionsResponseTypeDef(TypedDict):
+    ProjectVersionDescriptions: List[ProjectVersionDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProjectVersionDescriptions`:
-  `List`\[[ProjectVersionDescriptionTypeDef](./type_defs.md#projectversiondescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ProjectVersionDescriptionTypeDef](./type_defs.md#projectversiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeProjectsRequestDescribeProjectsPaginateTypeDef
 
-<a id="describeprojectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import DescribeProjectsRequestDescribeProjectsPaginateTypeDef
 
+def get_value() -> DescribeProjectsRequestDescribeProjectsPaginateTypeDef:
+    return {
+        "ProjectNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeProjectsRequestDescribeProjectsPaginateTypeDef(TypedDict):
+    ProjectNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeProjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeProjectsRequestRequestTypeDef
+
+def get_value() -> DescribeProjectsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ProjectNames`: `Sequence`\[`str`\]
-
-<a id="describeprojectsresponsetypedef"></a>
+```python title="Definition"
+class DescribeProjectsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ProjectNames: NotRequired[Sequence[str]],
+```
 
 ## DescribeProjectsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeProjectsResponseTypeDef
+
+def get_value() -> DescribeProjectsResponseTypeDef:
+    return {
+        "ProjectDescriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProjectsResponseTypeDef(TypedDict):
+    ProjectDescriptions: List[ProjectDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProjectDescriptions`:
-  `List`\[[ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestreamprocessorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStreamProcessorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeStreamProcessorRequestRequestTypeDef
+
+def get_value() -> DescribeStreamProcessorRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describestreamprocessorresponsetypedef"></a>
+```python title="Definition"
+class DescribeStreamProcessorRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribeStreamProcessorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DescribeStreamProcessorResponseTypeDef
+
+def get_value() -> DescribeStreamProcessorResponseTypeDef:
+    return {
+        "Name": ...,
+        "StreamProcessorArn": ...,
+        "Status": ...,
+        "StatusMessage": ...,
+        "CreationTimestamp": ...,
+        "LastUpdateTimestamp": ...,
+        "Input": ...,
+        "Output": ...,
+        "RoleArn": ...,
+        "Settings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStreamProcessorResponseTypeDef(TypedDict):
+    Name: str,
+    StreamProcessorArn: str,
+    Status: StreamProcessorStatusType,  # (1)
+    StatusMessage: str,
+    CreationTimestamp: datetime,
+    LastUpdateTimestamp: datetime,
+    Input: StreamProcessorInputTypeDef,  # (2)
+    Output: StreamProcessorOutputTypeDef,  # (3)
+    RoleArn: str,
+    Settings: StreamProcessorSettingsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `Name`: `str`
-- `StreamProcessorArn`: `str`
-- `Status`:
-  [StreamProcessorStatusType](./literals.md#streamprocessorstatustype)
-- `StatusMessage`: `str`
-- `CreationTimestamp`: `datetime`
-- `LastUpdateTimestamp`: `datetime`
-- `Input`:
-  [StreamProcessorInputTypeDef](./type_defs.md#streamprocessorinputtypedef)
-- `Output`:
-  [StreamProcessorOutputTypeDef](./type_defs.md#streamprocessoroutputtypedef)
-- `RoleArn`: `str`
-- `Settings`:
-  [StreamProcessorSettingsTypeDef](./type_defs.md#streamprocessorsettingstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectcustomlabelsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StreamProcessorStatusType](./literals.md#streamprocessorstatustype) 
+2. See [:material-code-braces: StreamProcessorInputTypeDef](./type_defs.md#streamprocessorinputtypedef) 
+3. See [:material-code-braces: StreamProcessorOutputTypeDef](./type_defs.md#streamprocessoroutputtypedef) 
+4. See [:material-code-braces: StreamProcessorSettingsTypeDef](./type_defs.md#streamprocessorsettingstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectCustomLabelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectCustomLabelsRequestRequestTypeDef
+
+def get_value() -> DetectCustomLabelsRequestRequestTypeDef:
+    return {
+        "ProjectVersionArn": ...,
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectCustomLabelsRequestRequestTypeDef(TypedDict):
+    ProjectVersionArn: str,
+    Image: ImageTypeDef,  # (1)
+    MaxResults: NotRequired[int],
+    MinConfidence: NotRequired[float],
+```
 
-- `ProjectVersionArn`: `str`
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `MinConfidence`: `float`
-
-<a id="detectcustomlabelsresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
 ## DetectCustomLabelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectCustomLabelsResponseTypeDef
+
+def get_value() -> DetectCustomLabelsResponseTypeDef:
+    return {
+        "CustomLabels": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectCustomLabelsResponseTypeDef(TypedDict):
+    CustomLabels: List[CustomLabelTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CustomLabels`:
-  `List`\[[CustomLabelTypeDef](./type_defs.md#customlabeltypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectfacesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomLabelTypeDef](./type_defs.md#customlabeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectFacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectFacesRequestRequestTypeDef
+
+def get_value() -> DetectFacesRequestRequestTypeDef:
+    return {
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectFacesRequestRequestTypeDef(TypedDict):
+    Image: ImageTypeDef,  # (1)
+    Attributes: NotRequired[Sequence[AttributeType]],  # (2)
+```
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-Optional fields:
-
-- `Attributes`: `Sequence`\[[AttributeType](./literals.md#attributetype)\]
-
-<a id="detectfacesresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-brackets: AttributeType](./literals.md#attributetype) 
 ## DetectFacesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectFacesResponseTypeDef
+
+def get_value() -> DetectFacesResponseTypeDef:
+    return {
+        "FaceDetails": ...,
+        "OrientationCorrection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectFacesResponseTypeDef(TypedDict):
+    FaceDetails: List[FaceDetailTypeDef],  # (1)
+    OrientationCorrection: OrientationCorrectionType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `FaceDetails`:
-  `List`\[[FaceDetailTypeDef](./type_defs.md#facedetailtypedef)\]
-- `OrientationCorrection`:
-  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectlabelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FaceDetailTypeDef](./type_defs.md#facedetailtypedef) 
+2. See [:material-code-brackets: OrientationCorrectionType](./literals.md#orientationcorrectiontype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectLabelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectLabelsRequestRequestTypeDef
+
+def get_value() -> DetectLabelsRequestRequestTypeDef:
+    return {
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectLabelsRequestRequestTypeDef(TypedDict):
+    Image: ImageTypeDef,  # (1)
+    MaxLabels: NotRequired[int],
+    MinConfidence: NotRequired[float],
+```
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-Optional fields:
-
-- `MaxLabels`: `int`
-- `MinConfidence`: `float`
-
-<a id="detectlabelsresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
 ## DetectLabelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectLabelsResponseTypeDef
+
+def get_value() -> DetectLabelsResponseTypeDef:
+    return {
+        "Labels": ...,
+        "OrientationCorrection": ...,
+        "LabelModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectLabelsResponseTypeDef(TypedDict):
+    Labels: List[LabelTypeDef],  # (1)
+    OrientationCorrection: OrientationCorrectionType,  # (2)
+    LabelModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Labels`: `List`\[[LabelTypeDef](./type_defs.md#labeltypedef)\]
-- `OrientationCorrection`:
-  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
-- `LabelModelVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectmoderationlabelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
+2. See [:material-code-brackets: OrientationCorrectionType](./literals.md#orientationcorrectiontype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectModerationLabelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectModerationLabelsRequestRequestTypeDef
+
+def get_value() -> DetectModerationLabelsRequestRequestTypeDef:
+    return {
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectModerationLabelsRequestRequestTypeDef(TypedDict):
+    Image: ImageTypeDef,  # (1)
+    MinConfidence: NotRequired[float],
+    HumanLoopConfig: NotRequired[HumanLoopConfigTypeDef],  # (2)
+```
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-Optional fields:
-
-- `MinConfidence`: `float`
-- `HumanLoopConfig`:
-  [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
-
-<a id="detectmoderationlabelsresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef) 
 ## DetectModerationLabelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectModerationLabelsResponseTypeDef
+
+def get_value() -> DetectModerationLabelsResponseTypeDef:
+    return {
+        "ModerationLabels": ...,
+        "ModerationModelVersion": ...,
+        "HumanLoopActivationOutput": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectModerationLabelsResponseTypeDef(TypedDict):
+    ModerationLabels: List[ModerationLabelTypeDef],  # (1)
+    ModerationModelVersion: str,
+    HumanLoopActivationOutput: HumanLoopActivationOutputTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ModerationLabels`:
-  `List`\[[ModerationLabelTypeDef](./type_defs.md#moderationlabeltypedef)\]
-- `ModerationModelVersion`: `str`
-- `HumanLoopActivationOutput`:
-  [HumanLoopActivationOutputTypeDef](./type_defs.md#humanloopactivationoutputtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectprotectiveequipmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ModerationLabelTypeDef](./type_defs.md#moderationlabeltypedef) 
+2. See [:material-code-braces: HumanLoopActivationOutputTypeDef](./type_defs.md#humanloopactivationoutputtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectProtectiveEquipmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectProtectiveEquipmentRequestRequestTypeDef
+
+def get_value() -> DetectProtectiveEquipmentRequestRequestTypeDef:
+    return {
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectProtectiveEquipmentRequestRequestTypeDef(TypedDict):
+    Image: ImageTypeDef,  # (1)
+    SummarizationAttributes: NotRequired[ProtectiveEquipmentSummarizationAttributesTypeDef],  # (2)
+```
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-Optional fields:
-
-- `SummarizationAttributes`:
-  [ProtectiveEquipmentSummarizationAttributesTypeDef](./type_defs.md#protectiveequipmentsummarizationattributestypedef)
-
-<a id="detectprotectiveequipmentresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: ProtectiveEquipmentSummarizationAttributesTypeDef](./type_defs.md#protectiveequipmentsummarizationattributestypedef) 
 ## DetectProtectiveEquipmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectProtectiveEquipmentResponseTypeDef
+
+def get_value() -> DetectProtectiveEquipmentResponseTypeDef:
+    return {
+        "ProtectiveEquipmentModelVersion": ...,
+        "Persons": ...,
+        "Summary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectProtectiveEquipmentResponseTypeDef(TypedDict):
+    ProtectiveEquipmentModelVersion: str,
+    Persons: List[ProtectiveEquipmentPersonTypeDef],  # (1)
+    Summary: ProtectiveEquipmentSummaryTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ProtectiveEquipmentModelVersion`: `str`
-- `Persons`:
-  `List`\[[ProtectiveEquipmentPersonTypeDef](./type_defs.md#protectiveequipmentpersontypedef)\]
-- `Summary`:
-  [ProtectiveEquipmentSummaryTypeDef](./type_defs.md#protectiveequipmentsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detecttextfilterstypedef"></a>
-
+1. See [:material-code-braces: ProtectiveEquipmentPersonTypeDef](./type_defs.md#protectiveequipmentpersontypedef) 
+2. See [:material-code-braces: ProtectiveEquipmentSummaryTypeDef](./type_defs.md#protectiveequipmentsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectTextFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectTextFiltersTypeDef
+
+def get_value() -> DetectTextFiltersTypeDef:
+    return {
+        "WordFilter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DetectTextFiltersTypeDef(TypedDict):
+    WordFilter: NotRequired[DetectionFilterTypeDef],  # (1)
+    RegionsOfInterest: NotRequired[Sequence[RegionOfInterestTypeDef]],  # (2)
+```
 
-- `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
-- `RegionsOfInterest`:
-  `Sequence`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
-
-<a id="detecttextrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef) 
+2. See [:material-code-braces: RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef) 
 ## DetectTextRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectTextRequestRequestTypeDef
+
+def get_value() -> DetectTextRequestRequestTypeDef:
+    return {
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectTextRequestRequestTypeDef(TypedDict):
+    Image: ImageTypeDef,  # (1)
+    Filters: NotRequired[DetectTextFiltersTypeDef],  # (2)
+```
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-Optional fields:
-
-- `Filters`:
-  [DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef)
-
-<a id="detecttextresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef) 
 ## DetectTextResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectTextResponseTypeDef
+
+def get_value() -> DetectTextResponseTypeDef:
+    return {
+        "TextDetections": ...,
+        "TextModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectTextResponseTypeDef(TypedDict):
+    TextDetections: List[TextDetectionTypeDef],  # (1)
+    TextModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TextDetections`:
-  `List`\[[TextDetectionTypeDef](./type_defs.md#textdetectiontypedef)\]
-- `TextModelVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectionfiltertypedef"></a>
-
+1. See [:material-code-braces: TextDetectionTypeDef](./type_defs.md#textdetectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DetectionFilterTypeDef
+
+def get_value() -> DetectionFilterTypeDef:
+    return {
+        "MinConfidence": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinConfidence`: `float`
-- `MinBoundingBoxHeight`: `float`
-- `MinBoundingBoxWidth`: `float`
-
-<a id="distributedatasetentriesrequestrequesttypedef"></a>
+```python title="Definition"
+class DetectionFilterTypeDef(TypedDict):
+    MinConfidence: NotRequired[float],
+    MinBoundingBoxHeight: NotRequired[float],
+    MinBoundingBoxWidth: NotRequired[float],
+```
 
 ## DistributeDatasetEntriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DistributeDatasetEntriesRequestRequestTypeDef
+
+def get_value() -> DistributeDatasetEntriesRequestRequestTypeDef:
+    return {
+        "Datasets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DistributeDatasetEntriesRequestRequestTypeDef(TypedDict):
+    Datasets: Sequence[DistributeDatasetTypeDef],  # (1)
+```
 
-- `Datasets`:
-  `Sequence`\[[DistributeDatasetTypeDef](./type_defs.md#distributedatasettypedef)\]
-
-<a id="distributedatasettypedef"></a>
-
+1. See [:material-code-braces: DistributeDatasetTypeDef](./type_defs.md#distributedatasettypedef) 
 ## DistributeDatasetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import DistributeDatasetTypeDef
+
+def get_value() -> DistributeDatasetTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="emotiontypedef"></a>
+```python title="Definition"
+class DistributeDatasetTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## EmotionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import EmotionTypeDef
+
+def get_value() -> EmotionTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EmotionTypeDef(TypedDict):
+    Type: NotRequired[EmotionNameType],  # (1)
+    Confidence: NotRequired[float],
+```
 
-- `Type`: [EmotionNameType](./literals.md#emotionnametype)
-- `Confidence`: `float`
-
-<a id="equipmentdetectiontypedef"></a>
-
+1. See [:material-code-brackets: EmotionNameType](./literals.md#emotionnametype) 
 ## EquipmentDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import EquipmentDetectionTypeDef
+
+def get_value() -> EquipmentDetectionTypeDef:
+    return {
+        "BoundingBox": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EquipmentDetectionTypeDef(TypedDict):
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    Confidence: NotRequired[float],
+    Type: NotRequired[ProtectiveEquipmentTypeType],  # (2)
+    CoversBodyPart: NotRequired[CoversBodyPartTypeDef],  # (3)
+```
 
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `Confidence`: `float`
-- `Type`:
-  [ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)
-- `CoversBodyPart`:
-  [CoversBodyPartTypeDef](./type_defs.md#coversbodyparttypedef)
-
-<a id="evaluationresulttypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+2. See [:material-code-brackets: ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype) 
+3. See [:material-code-braces: CoversBodyPartTypeDef](./type_defs.md#coversbodyparttypedef) 
 ## EvaluationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import EvaluationResultTypeDef
+
+def get_value() -> EvaluationResultTypeDef:
+    return {
+        "F1Score": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EvaluationResultTypeDef(TypedDict):
+    F1Score: NotRequired[float],
+    Summary: NotRequired[SummaryTypeDef],  # (1)
+```
 
-- `F1Score`: `float`
-- `Summary`: [SummaryTypeDef](./type_defs.md#summarytypedef)
-
-<a id="eyeopentypedef"></a>
-
+1. See [:material-code-braces: SummaryTypeDef](./type_defs.md#summarytypedef) 
 ## EyeOpenTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import EyeOpenTypeDef
+
+def get_value() -> EyeOpenTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `bool`
-- `Confidence`: `float`
-
-<a id="eyeglassestypedef"></a>
+```python title="Definition"
+class EyeOpenTypeDef(TypedDict):
+    Value: NotRequired[bool],
+    Confidence: NotRequired[float],
+```
 
 ## EyeglassesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import EyeglassesTypeDef
+
+def get_value() -> EyeglassesTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `bool`
-- `Confidence`: `float`
-
-<a id="facedetailtypedef"></a>
+```python title="Definition"
+class EyeglassesTypeDef(TypedDict):
+    Value: NotRequired[bool],
+    Confidence: NotRequired[float],
+```
 
 ## FaceDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import FaceDetailTypeDef
+
+def get_value() -> FaceDetailTypeDef:
+    return {
+        "BoundingBox": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FaceDetailTypeDef(TypedDict):
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    AgeRange: NotRequired[AgeRangeTypeDef],  # (2)
+    Smile: NotRequired[SmileTypeDef],  # (3)
+    Eyeglasses: NotRequired[EyeglassesTypeDef],  # (4)
+    Sunglasses: NotRequired[SunglassesTypeDef],  # (5)
+    Gender: NotRequired[GenderTypeDef],  # (6)
+    Beard: NotRequired[BeardTypeDef],  # (7)
+    Mustache: NotRequired[MustacheTypeDef],  # (8)
+    EyesOpen: NotRequired[EyeOpenTypeDef],  # (9)
+    MouthOpen: NotRequired[MouthOpenTypeDef],  # (10)
+    Emotions: NotRequired[List[EmotionTypeDef]],  # (11)
+    Landmarks: NotRequired[List[LandmarkTypeDef]],  # (12)
+    Pose: NotRequired[PoseTypeDef],  # (13)
+    Quality: NotRequired[ImageQualityTypeDef],  # (14)
+    Confidence: NotRequired[float],
+```
 
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `AgeRange`: [AgeRangeTypeDef](./type_defs.md#agerangetypedef)
-- `Smile`: [SmileTypeDef](./type_defs.md#smiletypedef)
-- `Eyeglasses`: [EyeglassesTypeDef](./type_defs.md#eyeglassestypedef)
-- `Sunglasses`: [SunglassesTypeDef](./type_defs.md#sunglassestypedef)
-- `Gender`: [GenderTypeDef](./type_defs.md#gendertypedef)
-- `Beard`: [BeardTypeDef](./type_defs.md#beardtypedef)
-- `Mustache`: [MustacheTypeDef](./type_defs.md#mustachetypedef)
-- `EyesOpen`: [EyeOpenTypeDef](./type_defs.md#eyeopentypedef)
-- `MouthOpen`: [MouthOpenTypeDef](./type_defs.md#mouthopentypedef)
-- `Emotions`: `List`\[[EmotionTypeDef](./type_defs.md#emotiontypedef)\]
-- `Landmarks`: `List`\[[LandmarkTypeDef](./type_defs.md#landmarktypedef)\]
-- `Pose`: [PoseTypeDef](./type_defs.md#posetypedef)
-- `Quality`: [ImageQualityTypeDef](./type_defs.md#imagequalitytypedef)
-- `Confidence`: `float`
-
-<a id="facedetectiontypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+2. See [:material-code-braces: AgeRangeTypeDef](./type_defs.md#agerangetypedef) 
+3. See [:material-code-braces: SmileTypeDef](./type_defs.md#smiletypedef) 
+4. See [:material-code-braces: EyeglassesTypeDef](./type_defs.md#eyeglassestypedef) 
+5. See [:material-code-braces: SunglassesTypeDef](./type_defs.md#sunglassestypedef) 
+6. See [:material-code-braces: GenderTypeDef](./type_defs.md#gendertypedef) 
+7. See [:material-code-braces: BeardTypeDef](./type_defs.md#beardtypedef) 
+8. See [:material-code-braces: MustacheTypeDef](./type_defs.md#mustachetypedef) 
+9. See [:material-code-braces: EyeOpenTypeDef](./type_defs.md#eyeopentypedef) 
+10. See [:material-code-braces: MouthOpenTypeDef](./type_defs.md#mouthopentypedef) 
+11. See [:material-code-braces: EmotionTypeDef](./type_defs.md#emotiontypedef) 
+12. See [:material-code-braces: LandmarkTypeDef](./type_defs.md#landmarktypedef) 
+13. See [:material-code-braces: PoseTypeDef](./type_defs.md#posetypedef) 
+14. See [:material-code-braces: ImageQualityTypeDef](./type_defs.md#imagequalitytypedef) 
 ## FaceDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import FaceDetectionTypeDef
+
+def get_value() -> FaceDetectionTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FaceDetectionTypeDef(TypedDict):
+    Timestamp: NotRequired[int],
+    Face: NotRequired[FaceDetailTypeDef],  # (1)
+```
 
-- `Timestamp`: `int`
-- `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
-
-<a id="facematchtypedef"></a>
-
+1. See [:material-code-braces: FaceDetailTypeDef](./type_defs.md#facedetailtypedef) 
 ## FaceMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import FaceMatchTypeDef
+
+def get_value() -> FaceMatchTypeDef:
+    return {
+        "Similarity": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FaceMatchTypeDef(TypedDict):
+    Similarity: NotRequired[float],
+    Face: NotRequired[FaceTypeDef],  # (1)
+```
 
-- `Similarity`: `float`
-- `Face`: [FaceTypeDef](./type_defs.md#facetypedef)
-
-<a id="facerecordtypedef"></a>
-
+1. See [:material-code-braces: FaceTypeDef](./type_defs.md#facetypedef) 
 ## FaceRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import FaceRecordTypeDef
+
+def get_value() -> FaceRecordTypeDef:
+    return {
+        "Face": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FaceRecordTypeDef(TypedDict):
+    Face: NotRequired[FaceTypeDef],  # (1)
+    FaceDetail: NotRequired[FaceDetailTypeDef],  # (2)
+```
 
-- `Face`: [FaceTypeDef](./type_defs.md#facetypedef)
-- `FaceDetail`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
-
-<a id="facesearchsettingstypedef"></a>
-
+1. See [:material-code-braces: FaceTypeDef](./type_defs.md#facetypedef) 
+2. See [:material-code-braces: FaceDetailTypeDef](./type_defs.md#facedetailtypedef) 
 ## FaceSearchSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import FaceSearchSettingsTypeDef
+
+def get_value() -> FaceSearchSettingsTypeDef:
+    return {
+        "CollectionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CollectionId`: `str`
-- `FaceMatchThreshold`: `float`
-
-<a id="facetypedef"></a>
+```python title="Definition"
+class FaceSearchSettingsTypeDef(TypedDict):
+    CollectionId: NotRequired[str],
+    FaceMatchThreshold: NotRequired[float],
+```
 
 ## FaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import FaceTypeDef
+
+def get_value() -> FaceTypeDef:
+    return {
+        "FaceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FaceTypeDef(TypedDict):
+    FaceId: NotRequired[str],
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    ImageId: NotRequired[str],
+    ExternalImageId: NotRequired[str],
+    Confidence: NotRequired[float],
+    IndexFacesModelVersion: NotRequired[str],
+```
 
-- `FaceId`: `str`
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `ImageId`: `str`
-- `ExternalImageId`: `str`
-- `Confidence`: `float`
-- `IndexFacesModelVersion`: `str`
-
-<a id="gendertypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
 ## GenderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GenderTypeDef
+
+def get_value() -> GenderTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GenderTypeDef(TypedDict):
+    Value: NotRequired[GenderTypeType],  # (1)
+    Confidence: NotRequired[float],
+```
 
-- `Value`: [GenderTypeType](./literals.md#gendertypetype)
-- `Confidence`: `float`
-
-<a id="geometrytypedef"></a>
-
+1. See [:material-code-brackets: GenderTypeType](./literals.md#gendertypetype) 
 ## GeometryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GeometryTypeDef
+
+def get_value() -> GeometryTypeDef:
+    return {
+        "BoundingBox": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GeometryTypeDef(TypedDict):
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    Polygon: NotRequired[List[PointTypeDef]],  # (2)
+```
 
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `Polygon`: `List`\[[PointTypeDef](./type_defs.md#pointtypedef)\]
-
-<a id="getcelebrityinforequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+2. See [:material-code-braces: PointTypeDef](./type_defs.md#pointtypedef) 
 ## GetCelebrityInfoRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetCelebrityInfoRequestRequestTypeDef
+
+def get_value() -> GetCelebrityInfoRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getcelebrityinforesponsetypedef"></a>
+```python title="Definition"
+class GetCelebrityInfoRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetCelebrityInfoResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetCelebrityInfoResponseTypeDef
+
+def get_value() -> GetCelebrityInfoResponseTypeDef:
+    return {
+        "Urls": ...,
+        "Name": ...,
+        "KnownGender": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCelebrityInfoResponseTypeDef(TypedDict):
+    Urls: List[str],
+    Name: str,
+    KnownGender: KnownGenderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Urls`: `List`\[`str`\]
-- `Name`: `str`
-- `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcelebrityrecognitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: KnownGenderTypeDef](./type_defs.md#knowngendertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCelebrityRecognitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetCelebrityRecognitionRequestRequestTypeDef
+
+def get_value() -> GetCelebrityRecognitionRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCelebrityRecognitionRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    SortBy: NotRequired[CelebrityRecognitionSortByType],  # (1)
+```
 
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`:
-  [CelebrityRecognitionSortByType](./literals.md#celebrityrecognitionsortbytype)
-
-<a id="getcelebrityrecognitionresponsetypedef"></a>
-
+1. See [:material-code-brackets: CelebrityRecognitionSortByType](./literals.md#celebrityrecognitionsortbytype) 
 ## GetCelebrityRecognitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetCelebrityRecognitionResponseTypeDef
+
+def get_value() -> GetCelebrityRecognitionResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "StatusMessage": ...,
+        "VideoMetadata": ...,
+        "NextToken": ...,
+        "Celebrities": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCelebrityRecognitionResponseTypeDef(TypedDict):
+    JobStatus: VideoJobStatusType,  # (1)
+    StatusMessage: str,
+    VideoMetadata: VideoMetadataTypeDef,  # (2)
+    NextToken: str,
+    Celebrities: List[CelebrityRecognitionTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
-- `StatusMessage`: `str`
-- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
-- `NextToken`: `str`
-- `Celebrities`:
-  `List`\[[CelebrityRecognitionTypeDef](./type_defs.md#celebrityrecognitiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontentmoderationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VideoJobStatusType](./literals.md#videojobstatustype) 
+2. See [:material-code-braces: VideoMetadataTypeDef](./type_defs.md#videometadatatypedef) 
+3. See [:material-code-braces: CelebrityRecognitionTypeDef](./type_defs.md#celebrityrecognitiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContentModerationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetContentModerationRequestRequestTypeDef
+
+def get_value() -> GetContentModerationRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContentModerationRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    SortBy: NotRequired[ContentModerationSortByType],  # (1)
+```
 
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`:
-  [ContentModerationSortByType](./literals.md#contentmoderationsortbytype)
-
-<a id="getcontentmoderationresponsetypedef"></a>
-
+1. See [:material-code-brackets: ContentModerationSortByType](./literals.md#contentmoderationsortbytype) 
 ## GetContentModerationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetContentModerationResponseTypeDef
+
+def get_value() -> GetContentModerationResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "StatusMessage": ...,
+        "VideoMetadata": ...,
+        "ModerationLabels": ...,
+        "NextToken": ...,
+        "ModerationModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContentModerationResponseTypeDef(TypedDict):
+    JobStatus: VideoJobStatusType,  # (1)
+    StatusMessage: str,
+    VideoMetadata: VideoMetadataTypeDef,  # (2)
+    ModerationLabels: List[ContentModerationDetectionTypeDef],  # (3)
+    NextToken: str,
+    ModerationModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
-- `StatusMessage`: `str`
-- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
-- `ModerationLabels`:
-  `List`\[[ContentModerationDetectionTypeDef](./type_defs.md#contentmoderationdetectiontypedef)\]
-- `NextToken`: `str`
-- `ModerationModelVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfacedetectionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VideoJobStatusType](./literals.md#videojobstatustype) 
+2. See [:material-code-braces: VideoMetadataTypeDef](./type_defs.md#videometadatatypedef) 
+3. See [:material-code-braces: ContentModerationDetectionTypeDef](./type_defs.md#contentmoderationdetectiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFaceDetectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetFaceDetectionRequestRequestTypeDef
+
+def get_value() -> GetFaceDetectionRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getfacedetectionresponsetypedef"></a>
+```python title="Definition"
+class GetFaceDetectionRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetFaceDetectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetFaceDetectionResponseTypeDef
+
+def get_value() -> GetFaceDetectionResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "StatusMessage": ...,
+        "VideoMetadata": ...,
+        "NextToken": ...,
+        "Faces": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFaceDetectionResponseTypeDef(TypedDict):
+    JobStatus: VideoJobStatusType,  # (1)
+    StatusMessage: str,
+    VideoMetadata: VideoMetadataTypeDef,  # (2)
+    NextToken: str,
+    Faces: List[FaceDetectionTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
-- `StatusMessage`: `str`
-- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
-- `NextToken`: `str`
-- `Faces`:
-  `List`\[[FaceDetectionTypeDef](./type_defs.md#facedetectiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfacesearchrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VideoJobStatusType](./literals.md#videojobstatustype) 
+2. See [:material-code-braces: VideoMetadataTypeDef](./type_defs.md#videometadatatypedef) 
+3. See [:material-code-braces: FaceDetectionTypeDef](./type_defs.md#facedetectiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFaceSearchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetFaceSearchRequestRequestTypeDef
+
+def get_value() -> GetFaceSearchRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFaceSearchRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    SortBy: NotRequired[FaceSearchSortByType],  # (1)
+```
 
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`: [FaceSearchSortByType](./literals.md#facesearchsortbytype)
-
-<a id="getfacesearchresponsetypedef"></a>
-
+1. See [:material-code-brackets: FaceSearchSortByType](./literals.md#facesearchsortbytype) 
 ## GetFaceSearchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetFaceSearchResponseTypeDef
+
+def get_value() -> GetFaceSearchResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "StatusMessage": ...,
+        "NextToken": ...,
+        "VideoMetadata": ...,
+        "Persons": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFaceSearchResponseTypeDef(TypedDict):
+    JobStatus: VideoJobStatusType,  # (1)
+    StatusMessage: str,
+    NextToken: str,
+    VideoMetadata: VideoMetadataTypeDef,  # (2)
+    Persons: List[PersonMatchTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
-- `StatusMessage`: `str`
-- `NextToken`: `str`
-- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
-- `Persons`: `List`\[[PersonMatchTypeDef](./type_defs.md#personmatchtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlabeldetectionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VideoJobStatusType](./literals.md#videojobstatustype) 
+2. See [:material-code-braces: VideoMetadataTypeDef](./type_defs.md#videometadatatypedef) 
+3. See [:material-code-braces: PersonMatchTypeDef](./type_defs.md#personmatchtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLabelDetectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetLabelDetectionRequestRequestTypeDef
+
+def get_value() -> GetLabelDetectionRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLabelDetectionRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    SortBy: NotRequired[LabelDetectionSortByType],  # (1)
+```
 
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`: [LabelDetectionSortByType](./literals.md#labeldetectionsortbytype)
-
-<a id="getlabeldetectionresponsetypedef"></a>
-
+1. See [:material-code-brackets: LabelDetectionSortByType](./literals.md#labeldetectionsortbytype) 
 ## GetLabelDetectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetLabelDetectionResponseTypeDef
+
+def get_value() -> GetLabelDetectionResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "StatusMessage": ...,
+        "VideoMetadata": ...,
+        "NextToken": ...,
+        "Labels": ...,
+        "LabelModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLabelDetectionResponseTypeDef(TypedDict):
+    JobStatus: VideoJobStatusType,  # (1)
+    StatusMessage: str,
+    VideoMetadata: VideoMetadataTypeDef,  # (2)
+    NextToken: str,
+    Labels: List[LabelDetectionTypeDef],  # (3)
+    LabelModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
-- `StatusMessage`: `str`
-- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
-- `NextToken`: `str`
-- `Labels`:
-  `List`\[[LabelDetectionTypeDef](./type_defs.md#labeldetectiontypedef)\]
-- `LabelModelVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpersontrackingrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VideoJobStatusType](./literals.md#videojobstatustype) 
+2. See [:material-code-braces: VideoMetadataTypeDef](./type_defs.md#videometadatatypedef) 
+3. See [:material-code-braces: LabelDetectionTypeDef](./type_defs.md#labeldetectiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPersonTrackingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetPersonTrackingRequestRequestTypeDef
+
+def get_value() -> GetPersonTrackingRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPersonTrackingRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    SortBy: NotRequired[PersonTrackingSortByType],  # (1)
+```
 
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`: [PersonTrackingSortByType](./literals.md#persontrackingsortbytype)
-
-<a id="getpersontrackingresponsetypedef"></a>
-
+1. See [:material-code-brackets: PersonTrackingSortByType](./literals.md#persontrackingsortbytype) 
 ## GetPersonTrackingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetPersonTrackingResponseTypeDef
+
+def get_value() -> GetPersonTrackingResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "StatusMessage": ...,
+        "VideoMetadata": ...,
+        "NextToken": ...,
+        "Persons": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPersonTrackingResponseTypeDef(TypedDict):
+    JobStatus: VideoJobStatusType,  # (1)
+    StatusMessage: str,
+    VideoMetadata: VideoMetadataTypeDef,  # (2)
+    NextToken: str,
+    Persons: List[PersonDetectionTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
-- `StatusMessage`: `str`
-- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
-- `NextToken`: `str`
-- `Persons`:
-  `List`\[[PersonDetectionTypeDef](./type_defs.md#persondetectiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsegmentdetectionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VideoJobStatusType](./literals.md#videojobstatustype) 
+2. See [:material-code-braces: VideoMetadataTypeDef](./type_defs.md#videometadatatypedef) 
+3. See [:material-code-braces: PersonDetectionTypeDef](./type_defs.md#persondetectiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSegmentDetectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetSegmentDetectionRequestRequestTypeDef
+
+def get_value() -> GetSegmentDetectionRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getsegmentdetectionresponsetypedef"></a>
+```python title="Definition"
+class GetSegmentDetectionRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetSegmentDetectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetSegmentDetectionResponseTypeDef
+
+def get_value() -> GetSegmentDetectionResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "StatusMessage": ...,
+        "VideoMetadata": ...,
+        "AudioMetadata": ...,
+        "NextToken": ...,
+        "Segments": ...,
+        "SelectedSegmentTypes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSegmentDetectionResponseTypeDef(TypedDict):
+    JobStatus: VideoJobStatusType,  # (1)
+    StatusMessage: str,
+    VideoMetadata: List[VideoMetadataTypeDef],  # (2)
+    AudioMetadata: List[AudioMetadataTypeDef],  # (3)
+    NextToken: str,
+    Segments: List[SegmentDetectionTypeDef],  # (4)
+    SelectedSegmentTypes: List[SegmentTypeInfoTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
-- `StatusMessage`: `str`
-- `VideoMetadata`:
-  `List`\[[VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)\]
-- `AudioMetadata`:
-  `List`\[[AudioMetadataTypeDef](./type_defs.md#audiometadatatypedef)\]
-- `NextToken`: `str`
-- `Segments`:
-  `List`\[[SegmentDetectionTypeDef](./type_defs.md#segmentdetectiontypedef)\]
-- `SelectedSegmentTypes`:
-  `List`\[[SegmentTypeInfoTypeDef](./type_defs.md#segmenttypeinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettextdetectionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VideoJobStatusType](./literals.md#videojobstatustype) 
+2. See [:material-code-braces: VideoMetadataTypeDef](./type_defs.md#videometadatatypedef) 
+3. See [:material-code-braces: AudioMetadataTypeDef](./type_defs.md#audiometadatatypedef) 
+4. See [:material-code-braces: SegmentDetectionTypeDef](./type_defs.md#segmentdetectiontypedef) 
+5. See [:material-code-braces: SegmentTypeInfoTypeDef](./type_defs.md#segmenttypeinfotypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTextDetectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetTextDetectionRequestRequestTypeDef
+
+def get_value() -> GetTextDetectionRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="gettextdetectionresponsetypedef"></a>
+```python title="Definition"
+class GetTextDetectionRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetTextDetectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GetTextDetectionResponseTypeDef
+
+def get_value() -> GetTextDetectionResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "StatusMessage": ...,
+        "VideoMetadata": ...,
+        "TextDetections": ...,
+        "NextToken": ...,
+        "TextModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTextDetectionResponseTypeDef(TypedDict):
+    JobStatus: VideoJobStatusType,  # (1)
+    StatusMessage: str,
+    VideoMetadata: VideoMetadataTypeDef,  # (2)
+    TextDetections: List[TextDetectionResultTypeDef],  # (3)
+    NextToken: str,
+    TextModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `JobStatus`: [VideoJobStatusType](./literals.md#videojobstatustype)
-- `StatusMessage`: `str`
-- `VideoMetadata`: [VideoMetadataTypeDef](./type_defs.md#videometadatatypedef)
-- `TextDetections`:
-  `List`\[[TextDetectionResultTypeDef](./type_defs.md#textdetectionresulttypedef)\]
-- `NextToken`: `str`
-- `TextModelVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="groundtruthmanifesttypedef"></a>
-
+1. See [:material-code-brackets: VideoJobStatusType](./literals.md#videojobstatustype) 
+2. See [:material-code-braces: VideoMetadataTypeDef](./type_defs.md#videometadatatypedef) 
+3. See [:material-code-braces: TextDetectionResultTypeDef](./type_defs.md#textdetectionresulttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroundTruthManifestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import GroundTruthManifestTypeDef
+
+def get_value() -> GroundTruthManifestTypeDef:
+    return {
+        "S3Object": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GroundTruthManifestTypeDef(TypedDict):
+    S3Object: NotRequired[S3ObjectTypeDef],  # (1)
+```
 
-- `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-
-<a id="humanloopactivationoutputtypedef"></a>
-
+1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
 ## HumanLoopActivationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import HumanLoopActivationOutputTypeDef
+
+def get_value() -> HumanLoopActivationOutputTypeDef:
+    return {
+        "HumanLoopArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `HumanLoopArn`: `str`
-- `HumanLoopActivationReasons`: `List`\[`str`\]
-- `HumanLoopActivationConditionsEvaluationResults`: `str`
-
-<a id="humanloopconfigtypedef"></a>
+```python title="Definition"
+class HumanLoopActivationOutputTypeDef(TypedDict):
+    HumanLoopArn: NotRequired[str],
+    HumanLoopActivationReasons: NotRequired[List[str]],
+    HumanLoopActivationConditionsEvaluationResults: NotRequired[str],
+```
 
 ## HumanLoopConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import HumanLoopConfigTypeDef
+
+def get_value() -> HumanLoopConfigTypeDef:
+    return {
+        "HumanLoopName": ...,
+        "FlowDefinitionArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HumanLoopConfigTypeDef(TypedDict):
+    HumanLoopName: str,
+    FlowDefinitionArn: str,
+    DataAttributes: NotRequired[HumanLoopDataAttributesTypeDef],  # (1)
+```
 
-- `HumanLoopName`: `str`
-- `FlowDefinitionArn`: `str`
-
-Optional fields:
-
-- `DataAttributes`:
-  [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
-
-<a id="humanloopdataattributestypedef"></a>
-
+1. See [:material-code-braces: HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef) 
 ## HumanLoopDataAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import HumanLoopDataAttributesTypeDef
+
+def get_value() -> HumanLoopDataAttributesTypeDef:
+    return {
+        "ContentClassifiers": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HumanLoopDataAttributesTypeDef(TypedDict):
+    ContentClassifiers: NotRequired[Sequence[ContentClassifierType]],  # (1)
+```
 
-- `ContentClassifiers`:
-  `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
-
-<a id="imagequalitytypedef"></a>
-
+1. See [:material-code-brackets: ContentClassifierType](./literals.md#contentclassifiertype) 
 ## ImageQualityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ImageQualityTypeDef
+
+def get_value() -> ImageQualityTypeDef:
+    return {
+        "Brightness": ...,
+    }
 ```
 
-Optional fields:
-
-- `Brightness`: `float`
-- `Sharpness`: `float`
-
-<a id="imagetypedef"></a>
+```python title="Definition"
+class ImageQualityTypeDef(TypedDict):
+    Brightness: NotRequired[float],
+    Sharpness: NotRequired[float],
+```
 
 ## ImageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ImageTypeDef
+
+def get_value() -> ImageTypeDef:
+    return {
+        "Bytes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImageTypeDef(TypedDict):
+    Bytes: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    S3Object: NotRequired[S3ObjectTypeDef],  # (1)
+```
 
-- `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-
-<a id="indexfacesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
 ## IndexFacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import IndexFacesRequestRequestTypeDef
+
+def get_value() -> IndexFacesRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IndexFacesRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+    Image: ImageTypeDef,  # (1)
+    ExternalImageId: NotRequired[str],
+    DetectionAttributes: NotRequired[Sequence[AttributeType]],  # (2)
+    MaxFaces: NotRequired[int],
+    QualityFilter: NotRequired[QualityFilterType],  # (3)
+```
 
-- `CollectionId`: `str`
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-Optional fields:
-
-- `ExternalImageId`: `str`
-- `DetectionAttributes`:
-  `Sequence`\[[AttributeType](./literals.md#attributetype)\]
-- `MaxFaces`: `int`
-- `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
-
-<a id="indexfacesresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-brackets: AttributeType](./literals.md#attributetype) 
+3. See [:material-code-brackets: QualityFilterType](./literals.md#qualityfiltertype) 
 ## IndexFacesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import IndexFacesResponseTypeDef
+
+def get_value() -> IndexFacesResponseTypeDef:
+    return {
+        "FaceRecords": ...,
+        "OrientationCorrection": ...,
+        "FaceModelVersion": ...,
+        "UnindexedFaces": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IndexFacesResponseTypeDef(TypedDict):
+    FaceRecords: List[FaceRecordTypeDef],  # (1)
+    OrientationCorrection: OrientationCorrectionType,  # (2)
+    FaceModelVersion: str,
+    UnindexedFaces: List[UnindexedFaceTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `FaceRecords`:
-  `List`\[[FaceRecordTypeDef](./type_defs.md#facerecordtypedef)\]
-- `OrientationCorrection`:
-  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
-- `FaceModelVersion`: `str`
-- `UnindexedFaces`:
-  `List`\[[UnindexedFaceTypeDef](./type_defs.md#unindexedfacetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="instancetypedef"></a>
-
+1. See [:material-code-braces: FaceRecordTypeDef](./type_defs.md#facerecordtypedef) 
+2. See [:material-code-brackets: OrientationCorrectionType](./literals.md#orientationcorrectiontype) 
+3. See [:material-code-braces: UnindexedFaceTypeDef](./type_defs.md#unindexedfacetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import InstanceTypeDef
+
+def get_value() -> InstanceTypeDef:
+    return {
+        "BoundingBox": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceTypeDef(TypedDict):
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    Confidence: NotRequired[float],
+```
 
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `Confidence`: `float`
-
-<a id="kinesisdatastreamtypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
 ## KinesisDataStreamTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import KinesisDataStreamTypeDef
+
+def get_value() -> KinesisDataStreamTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-
-<a id="kinesisvideostreamtypedef"></a>
+```python title="Definition"
+class KinesisDataStreamTypeDef(TypedDict):
+    Arn: NotRequired[str],
+```
 
 ## KinesisVideoStreamTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import KinesisVideoStreamTypeDef
+
+def get_value() -> KinesisVideoStreamTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-
-<a id="knowngendertypedef"></a>
+```python title="Definition"
+class KinesisVideoStreamTypeDef(TypedDict):
+    Arn: NotRequired[str],
+```
 
 ## KnownGenderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import KnownGenderTypeDef
+
+def get_value() -> KnownGenderTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KnownGenderTypeDef(TypedDict):
+    Type: NotRequired[KnownGenderTypeType],  # (1)
+```
 
-- `Type`: [KnownGenderTypeType](./literals.md#knowngendertypetype)
-
-<a id="labeldetectiontypedef"></a>
-
+1. See [:material-code-brackets: KnownGenderTypeType](./literals.md#knowngendertypetype) 
 ## LabelDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import LabelDetectionTypeDef
+
+def get_value() -> LabelDetectionTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LabelDetectionTypeDef(TypedDict):
+    Timestamp: NotRequired[int],
+    Label: NotRequired[LabelTypeDef],  # (1)
+```
 
-- `Timestamp`: `int`
-- `Label`: [LabelTypeDef](./type_defs.md#labeltypedef)
-
-<a id="labeltypedef"></a>
-
+1. See [:material-code-braces: LabelTypeDef](./type_defs.md#labeltypedef) 
 ## LabelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import LabelTypeDef
+
+def get_value() -> LabelTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LabelTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Confidence: NotRequired[float],
+    Instances: NotRequired[List[InstanceTypeDef]],  # (1)
+    Parents: NotRequired[List[ParentTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-- `Confidence`: `float`
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
-- `Parents`: `List`\[[ParentTypeDef](./type_defs.md#parenttypedef)\]
-
-<a id="landmarktypedef"></a>
-
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: ParentTypeDef](./type_defs.md#parenttypedef) 
 ## LandmarkTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import LandmarkTypeDef
+
+def get_value() -> LandmarkTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LandmarkTypeDef(TypedDict):
+    Type: NotRequired[LandmarkTypeType],  # (1)
+    X: NotRequired[float],
+    Y: NotRequired[float],
+```
 
-- `Type`: [LandmarkTypeType](./literals.md#landmarktypetype)
-- `X`: `float`
-- `Y`: `float`
+1. See [:material-code-brackets: LandmarkTypeType](./literals.md#landmarktypetype) 
+## ListCollectionsRequestListCollectionsPaginateTypeDef
 
-<a id="listcollectionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import ListCollectionsRequestListCollectionsPaginateTypeDef
 
+def get_value() -> ListCollectionsRequestListCollectionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCollectionsRequestListCollectionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCollectionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListCollectionsRequestRequestTypeDef
+
+def get_value() -> ListCollectionsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcollectionsresponsetypedef"></a>
+```python title="Definition"
+class ListCollectionsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListCollectionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListCollectionsResponseTypeDef
+
+def get_value() -> ListCollectionsResponseTypeDef:
+    return {
+        "CollectionIds": ...,
+        "NextToken": ...,
+        "FaceModelVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCollectionsResponseTypeDef(TypedDict):
+    CollectionIds: List[str],
+    NextToken: str,
+    FaceModelVersions: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CollectionIds`: `List`\[`str`\]
-- `NextToken`: `str`
-- `FaceModelVersions`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef
 
-<a id="listdatasetentriesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef
 
+def get_value() -> ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef(TypedDict):
+    DatasetArn: str,
+    ContainsLabels: NotRequired[Sequence[str]],
+    Labeled: NotRequired[bool],
+    SourceRefContains: NotRequired[str],
+    HasErrors: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetEntriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListDatasetEntriesRequestRequestTypeDef
+
+def get_value() -> ListDatasetEntriesRequestRequestTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetArn`: `str`
-
-Optional fields:
-
-- `ContainsLabels`: `Sequence`\[`str`\]
-- `Labeled`: `bool`
-- `SourceRefContains`: `str`
-- `HasErrors`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdatasetentriesresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetEntriesRequestRequestTypeDef(TypedDict):
+    DatasetArn: str,
+    ContainsLabels: NotRequired[Sequence[str]],
+    Labeled: NotRequired[bool],
+    SourceRefContains: NotRequired[str],
+    HasErrors: NotRequired[bool],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDatasetEntriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListDatasetEntriesResponseTypeDef
+
+def get_value() -> ListDatasetEntriesResponseTypeDef:
+    return {
+        "DatasetEntries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetEntriesResponseTypeDef(TypedDict):
+    DatasetEntries: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DatasetEntries`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasetLabelsRequestListDatasetLabelsPaginateTypeDef
 
-<a id="listdatasetlabelsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import ListDatasetLabelsRequestListDatasetLabelsPaginateTypeDef
 
+def get_value() -> ListDatasetLabelsRequestListDatasetLabelsPaginateTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetLabelsRequestListDatasetLabelsPaginateTypeDef(TypedDict):
+    DatasetArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetLabelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListDatasetLabelsRequestRequestTypeDef
+
+def get_value() -> ListDatasetLabelsRequestRequestTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdatasetlabelsresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetLabelsRequestRequestTypeDef(TypedDict):
+    DatasetArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDatasetLabelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListDatasetLabelsResponseTypeDef
+
+def get_value() -> ListDatasetLabelsResponseTypeDef:
+    return {
+        "DatasetLabelDescriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetLabelsResponseTypeDef(TypedDict):
+    DatasetLabelDescriptions: List[DatasetLabelDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DatasetLabelDescriptions`:
-  `List`\[[DatasetLabelDescriptionTypeDef](./type_defs.md#datasetlabeldescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatasetLabelDescriptionTypeDef](./type_defs.md#datasetlabeldescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFacesRequestListFacesPaginateTypeDef
 
-<a id="listfacesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import ListFacesRequestListFacesPaginateTypeDef
 
+def get_value() -> ListFacesRequestListFacesPaginateTypeDef:
+    return {
+        "CollectionId": ...,
+    }
+```
+
+```python title="Definition"
+class ListFacesRequestListFacesPaginateTypeDef(TypedDict):
+    CollectionId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListFacesRequestRequestTypeDef
+
+def get_value() -> ListFacesRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listfacesresponsetypedef"></a>
+```python title="Definition"
+class ListFacesRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListFacesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListFacesResponseTypeDef
+
+def get_value() -> ListFacesResponseTypeDef:
+    return {
+        "Faces": ...,
+        "NextToken": ...,
+        "FaceModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFacesResponseTypeDef(TypedDict):
+    Faces: List[FaceTypeDef],  # (1)
+    NextToken: str,
+    FaceModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Faces`: `List`\[[FaceTypeDef](./type_defs.md#facetypedef)\]
-- `NextToken`: `str`
-- `FaceModelVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FaceTypeDef](./type_defs.md#facetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStreamProcessorsRequestListStreamProcessorsPaginateTypeDef
 
-<a id="liststreamprocessorsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_rekognition.type_defs import ListStreamProcessorsRequestListStreamProcessorsPaginateTypeDef
 
+def get_value() -> ListStreamProcessorsRequestListStreamProcessorsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListStreamProcessorsRequestListStreamProcessorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStreamProcessorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListStreamProcessorsRequestRequestTypeDef
+
+def get_value() -> ListStreamProcessorsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="liststreamprocessorsresponsetypedef"></a>
+```python title="Definition"
+class ListStreamProcessorsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListStreamProcessorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListStreamProcessorsResponseTypeDef
+
+def get_value() -> ListStreamProcessorsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "StreamProcessors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStreamProcessorsResponseTypeDef(TypedDict):
+    NextToken: str,
+    StreamProcessors: List[StreamProcessorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `StreamProcessors`:
-  `List`\[[StreamProcessorTypeDef](./type_defs.md#streamprocessortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StreamProcessorTypeDef](./type_defs.md#streamprocessortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="moderationlabeltypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModerationLabelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ModerationLabelTypeDef
+
+def get_value() -> ModerationLabelTypeDef:
+    return {
+        "Confidence": ...,
+    }
 ```
 
-Optional fields:
-
-- `Confidence`: `float`
-- `Name`: `str`
-- `ParentName`: `str`
-
-<a id="mouthopentypedef"></a>
+```python title="Definition"
+class ModerationLabelTypeDef(TypedDict):
+    Confidence: NotRequired[float],
+    Name: NotRequired[str],
+    ParentName: NotRequired[str],
+```
 
 ## MouthOpenTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import MouthOpenTypeDef
+
+def get_value() -> MouthOpenTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `bool`
-- `Confidence`: `float`
-
-<a id="mustachetypedef"></a>
+```python title="Definition"
+class MouthOpenTypeDef(TypedDict):
+    Value: NotRequired[bool],
+    Confidence: NotRequired[float],
+```
 
 ## MustacheTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import MustacheTypeDef
+
+def get_value() -> MustacheTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `bool`
-- `Confidence`: `float`
-
-<a id="notificationchanneltypedef"></a>
+```python title="Definition"
+class MustacheTypeDef(TypedDict):
+    Value: NotRequired[bool],
+    Confidence: NotRequired[float],
+```
 
 ## NotificationChannelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import NotificationChannelTypeDef
+
+def get_value() -> NotificationChannelTypeDef:
+    return {
+        "SNSTopicArn": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SNSTopicArn`: `str`
-- `RoleArn`: `str`
-
-<a id="outputconfigtypedef"></a>
+```python title="Definition"
+class NotificationChannelTypeDef(TypedDict):
+    SNSTopicArn: str,
+    RoleArn: str,
+```
 
 ## OutputConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import OutputConfigTypeDef
+
+def get_value() -> OutputConfigTypeDef:
+    return {
+        "S3Bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `S3Bucket`: `str`
-- `S3KeyPrefix`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OutputConfigTypeDef(TypedDict):
+    S3Bucket: NotRequired[str],
+    S3KeyPrefix: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parenttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ParentTypeDef
+
+def get_value() -> ParentTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="persondetailtypedef"></a>
+```python title="Definition"
+class ParentTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## PersonDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import PersonDetailTypeDef
+
+def get_value() -> PersonDetailTypeDef:
+    return {
+        "Index": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PersonDetailTypeDef(TypedDict):
+    Index: NotRequired[int],
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+    Face: NotRequired[FaceDetailTypeDef],  # (2)
+```
 
-- `Index`: `int`
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
-
-<a id="persondetectiontypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+2. See [:material-code-braces: FaceDetailTypeDef](./type_defs.md#facedetailtypedef) 
 ## PersonDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import PersonDetectionTypeDef
+
+def get_value() -> PersonDetectionTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PersonDetectionTypeDef(TypedDict):
+    Timestamp: NotRequired[int],
+    Person: NotRequired[PersonDetailTypeDef],  # (1)
+```
 
-- `Timestamp`: `int`
-- `Person`: [PersonDetailTypeDef](./type_defs.md#persondetailtypedef)
-
-<a id="personmatchtypedef"></a>
-
+1. See [:material-code-braces: PersonDetailTypeDef](./type_defs.md#persondetailtypedef) 
 ## PersonMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import PersonMatchTypeDef
+
+def get_value() -> PersonMatchTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PersonMatchTypeDef(TypedDict):
+    Timestamp: NotRequired[int],
+    Person: NotRequired[PersonDetailTypeDef],  # (1)
+    FaceMatches: NotRequired[List[FaceMatchTypeDef]],  # (2)
+```
 
-- `Timestamp`: `int`
-- `Person`: [PersonDetailTypeDef](./type_defs.md#persondetailtypedef)
-- `FaceMatches`: `List`\[[FaceMatchTypeDef](./type_defs.md#facematchtypedef)\]
-
-<a id="pointtypedef"></a>
-
+1. See [:material-code-braces: PersonDetailTypeDef](./type_defs.md#persondetailtypedef) 
+2. See [:material-code-braces: FaceMatchTypeDef](./type_defs.md#facematchtypedef) 
 ## PointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import PointTypeDef
+
+def get_value() -> PointTypeDef:
+    return {
+        "X": ...,
+    }
 ```
 
-Optional fields:
-
-- `X`: `float`
-- `Y`: `float`
-
-<a id="posetypedef"></a>
+```python title="Definition"
+class PointTypeDef(TypedDict):
+    X: NotRequired[float],
+    Y: NotRequired[float],
+```
 
 ## PoseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import PoseTypeDef
+
+def get_value() -> PoseTypeDef:
+    return {
+        "Roll": ...,
+    }
 ```
 
-Optional fields:
-
-- `Roll`: `float`
-- `Yaw`: `float`
-- `Pitch`: `float`
-
-<a id="projectdescriptiontypedef"></a>
+```python title="Definition"
+class PoseTypeDef(TypedDict):
+    Roll: NotRequired[float],
+    Yaw: NotRequired[float],
+    Pitch: NotRequired[float],
+```
 
 ## ProjectDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ProjectDescriptionTypeDef
+
+def get_value() -> ProjectDescriptionTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectDescriptionTypeDef(TypedDict):
+    ProjectArn: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    Status: NotRequired[ProjectStatusType],  # (1)
+    Datasets: NotRequired[List[DatasetMetadataTypeDef]],  # (2)
+```
 
-- `ProjectArn`: `str`
-- `CreationTimestamp`: `datetime`
-- `Status`: [ProjectStatusType](./literals.md#projectstatustype)
-- `Datasets`:
-  `List`\[[DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef)\]
-
-<a id="projectversiondescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ProjectStatusType](./literals.md#projectstatustype) 
+2. See [:material-code-braces: DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef) 
 ## ProjectVersionDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ProjectVersionDescriptionTypeDef
+
+def get_value() -> ProjectVersionDescriptionTypeDef:
+    return {
+        "ProjectVersionArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectVersionDescriptionTypeDef(TypedDict):
+    ProjectVersionArn: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    MinInferenceUnits: NotRequired[int],
+    Status: NotRequired[ProjectVersionStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    BillableTrainingTimeInSeconds: NotRequired[int],
+    TrainingEndTimestamp: NotRequired[datetime],
+    OutputConfig: NotRequired[OutputConfigTypeDef],  # (2)
+    TrainingDataResult: NotRequired[TrainingDataResultTypeDef],  # (3)
+    TestingDataResult: NotRequired[TestingDataResultTypeDef],  # (4)
+    EvaluationResult: NotRequired[EvaluationResultTypeDef],  # (5)
+    ManifestSummary: NotRequired[GroundTruthManifestTypeDef],  # (6)
+    KmsKeyId: NotRequired[str],
+```
 
-- `ProjectVersionArn`: `str`
-- `CreationTimestamp`: `datetime`
-- `MinInferenceUnits`: `int`
-- `Status`: [ProjectVersionStatusType](./literals.md#projectversionstatustype)
-- `StatusMessage`: `str`
-- `BillableTrainingTimeInSeconds`: `int`
-- `TrainingEndTimestamp`: `datetime`
-- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-- `TrainingDataResult`:
-  [TrainingDataResultTypeDef](./type_defs.md#trainingdataresulttypedef)
-- `TestingDataResult`:
-  [TestingDataResultTypeDef](./type_defs.md#testingdataresulttypedef)
-- `EvaluationResult`:
-  [EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)
-- `ManifestSummary`:
-  [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
-- `KmsKeyId`: `str`
-
-<a id="protectiveequipmentbodyparttypedef"></a>
-
+1. See [:material-code-brackets: ProjectVersionStatusType](./literals.md#projectversionstatustype) 
+2. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+3. See [:material-code-braces: TrainingDataResultTypeDef](./type_defs.md#trainingdataresulttypedef) 
+4. See [:material-code-braces: TestingDataResultTypeDef](./type_defs.md#testingdataresulttypedef) 
+5. See [:material-code-braces: EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef) 
+6. See [:material-code-braces: GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef) 
 ## ProtectiveEquipmentBodyPartTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ProtectiveEquipmentBodyPartTypeDef
+
+def get_value() -> ProtectiveEquipmentBodyPartTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProtectiveEquipmentBodyPartTypeDef(TypedDict):
+    Name: NotRequired[BodyPartType],  # (1)
+    Confidence: NotRequired[float],
+    EquipmentDetections: NotRequired[List[EquipmentDetectionTypeDef]],  # (2)
+```
 
-- `Name`: [BodyPartType](./literals.md#bodyparttype)
-- `Confidence`: `float`
-- `EquipmentDetections`:
-  `List`\[[EquipmentDetectionTypeDef](./type_defs.md#equipmentdetectiontypedef)\]
-
-<a id="protectiveequipmentpersontypedef"></a>
-
+1. See [:material-code-brackets: BodyPartType](./literals.md#bodyparttype) 
+2. See [:material-code-braces: EquipmentDetectionTypeDef](./type_defs.md#equipmentdetectiontypedef) 
 ## ProtectiveEquipmentPersonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ProtectiveEquipmentPersonTypeDef
+
+def get_value() -> ProtectiveEquipmentPersonTypeDef:
+    return {
+        "BodyParts": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProtectiveEquipmentPersonTypeDef(TypedDict):
+    BodyParts: NotRequired[List[ProtectiveEquipmentBodyPartTypeDef]],  # (1)
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (2)
+    Confidence: NotRequired[float],
+    Id: NotRequired[int],
+```
 
-- `BodyParts`:
-  `List`\[[ProtectiveEquipmentBodyPartTypeDef](./type_defs.md#protectiveequipmentbodyparttypedef)\]
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `Confidence`: `float`
-- `Id`: `int`
-
-<a id="protectiveequipmentsummarizationattributestypedef"></a>
-
+1. See [:material-code-braces: ProtectiveEquipmentBodyPartTypeDef](./type_defs.md#protectiveequipmentbodyparttypedef) 
+2. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
 ## ProtectiveEquipmentSummarizationAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ProtectiveEquipmentSummarizationAttributesTypeDef
+
+def get_value() -> ProtectiveEquipmentSummarizationAttributesTypeDef:
+    return {
+        "MinConfidence": ...,
+        "RequiredEquipmentTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProtectiveEquipmentSummarizationAttributesTypeDef(TypedDict):
+    MinConfidence: float,
+    RequiredEquipmentTypes: Sequence[ProtectiveEquipmentTypeType],  # (1)
+```
 
-- `MinConfidence`: `float`
-- `RequiredEquipmentTypes`:
-  `Sequence`\[[ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)\]
-
-<a id="protectiveequipmentsummarytypedef"></a>
-
+1. See [:material-code-brackets: ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype) 
 ## ProtectiveEquipmentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ProtectiveEquipmentSummaryTypeDef
+
+def get_value() -> ProtectiveEquipmentSummaryTypeDef:
+    return {
+        "PersonsWithRequiredEquipment": ...,
+    }
 ```
 
-Optional fields:
-
-- `PersonsWithRequiredEquipment`: `List`\[`int`\]
-- `PersonsWithoutRequiredEquipment`: `List`\[`int`\]
-- `PersonsIndeterminate`: `List`\[`int`\]
-
-<a id="recognizecelebritiesrequestrequesttypedef"></a>
+```python title="Definition"
+class ProtectiveEquipmentSummaryTypeDef(TypedDict):
+    PersonsWithRequiredEquipment: NotRequired[List[int]],
+    PersonsWithoutRequiredEquipment: NotRequired[List[int]],
+    PersonsIndeterminate: NotRequired[List[int]],
+```
 
 ## RecognizeCelebritiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import RecognizeCelebritiesRequestRequestTypeDef
+
+def get_value() -> RecognizeCelebritiesRequestRequestTypeDef:
+    return {
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecognizeCelebritiesRequestRequestTypeDef(TypedDict):
+    Image: ImageTypeDef,  # (1)
+```
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-<a id="recognizecelebritiesresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
 ## RecognizeCelebritiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import RecognizeCelebritiesResponseTypeDef
+
+def get_value() -> RecognizeCelebritiesResponseTypeDef:
+    return {
+        "CelebrityFaces": ...,
+        "UnrecognizedFaces": ...,
+        "OrientationCorrection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecognizeCelebritiesResponseTypeDef(TypedDict):
+    CelebrityFaces: List[CelebrityTypeDef],  # (1)
+    UnrecognizedFaces: List[ComparedFaceTypeDef],  # (2)
+    OrientationCorrection: OrientationCorrectionType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `CelebrityFaces`:
-  `List`\[[CelebrityTypeDef](./type_defs.md#celebritytypedef)\]
-- `UnrecognizedFaces`:
-  `List`\[[ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)\]
-- `OrientationCorrection`:
-  [OrientationCorrectionType](./literals.md#orientationcorrectiontype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="regionofinteresttypedef"></a>
-
+1. See [:material-code-braces: CelebrityTypeDef](./type_defs.md#celebritytypedef) 
+2. See [:material-code-braces: ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef) 
+3. See [:material-code-brackets: OrientationCorrectionType](./literals.md#orientationcorrectiontype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegionOfInterestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import RegionOfInterestTypeDef
+
+def get_value() -> RegionOfInterestTypeDef:
+    return {
+        "BoundingBox": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RegionOfInterestTypeDef(TypedDict):
+    BoundingBox: NotRequired[BoundingBoxTypeDef],  # (1)
+```
 
-- `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3objecttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3ObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import S3ObjectTypeDef
+
+def get_value() -> S3ObjectTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `Bucket`: `str`
-- `Name`: `str`
-- `Version`: `str`
-
-<a id="searchfacesbyimagerequestrequesttypedef"></a>
+```python title="Definition"
+class S3ObjectTypeDef(TypedDict):
+    Bucket: NotRequired[str],
+    Name: NotRequired[str],
+    Version: NotRequired[str],
+```
 
 ## SearchFacesByImageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import SearchFacesByImageRequestRequestTypeDef
+
+def get_value() -> SearchFacesByImageRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchFacesByImageRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+    Image: ImageTypeDef,  # (1)
+    MaxFaces: NotRequired[int],
+    FaceMatchThreshold: NotRequired[float],
+    QualityFilter: NotRequired[QualityFilterType],  # (2)
+```
 
-- `CollectionId`: `str`
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
-
-Optional fields:
-
-- `MaxFaces`: `int`
-- `FaceMatchThreshold`: `float`
-- `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
-
-<a id="searchfacesbyimageresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-brackets: QualityFilterType](./literals.md#qualityfiltertype) 
 ## SearchFacesByImageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import SearchFacesByImageResponseTypeDef
+
+def get_value() -> SearchFacesByImageResponseTypeDef:
+    return {
+        "SearchedFaceBoundingBox": ...,
+        "SearchedFaceConfidence": ...,
+        "FaceMatches": ...,
+        "FaceModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchFacesByImageResponseTypeDef(TypedDict):
+    SearchedFaceBoundingBox: BoundingBoxTypeDef,  # (1)
+    SearchedFaceConfidence: float,
+    FaceMatches: List[FaceMatchTypeDef],  # (2)
+    FaceModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `SearchedFaceBoundingBox`:
-  [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
-- `SearchedFaceConfidence`: `float`
-- `FaceMatches`: `List`\[[FaceMatchTypeDef](./type_defs.md#facematchtypedef)\]
-- `FaceModelVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchfacesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef) 
+2. See [:material-code-braces: FaceMatchTypeDef](./type_defs.md#facematchtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchFacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import SearchFacesRequestRequestTypeDef
+
+def get_value() -> SearchFacesRequestRequestTypeDef:
+    return {
+        "CollectionId": ...,
+        "FaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `CollectionId`: `str`
-- `FaceId`: `str`
-
-Optional fields:
-
-- `MaxFaces`: `int`
-- `FaceMatchThreshold`: `float`
-
-<a id="searchfacesresponsetypedef"></a>
+```python title="Definition"
+class SearchFacesRequestRequestTypeDef(TypedDict):
+    CollectionId: str,
+    FaceId: str,
+    MaxFaces: NotRequired[int],
+    FaceMatchThreshold: NotRequired[float],
+```
 
 ## SearchFacesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import SearchFacesResponseTypeDef
+
+def get_value() -> SearchFacesResponseTypeDef:
+    return {
+        "SearchedFaceId": ...,
+        "FaceMatches": ...,
+        "FaceModelVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchFacesResponseTypeDef(TypedDict):
+    SearchedFaceId: str,
+    FaceMatches: List[FaceMatchTypeDef],  # (1)
+    FaceModelVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SearchedFaceId`: `str`
-- `FaceMatches`: `List`\[[FaceMatchTypeDef](./type_defs.md#facematchtypedef)\]
-- `FaceModelVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="segmentdetectiontypedef"></a>
-
+1. See [:material-code-braces: FaceMatchTypeDef](./type_defs.md#facematchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SegmentDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import SegmentDetectionTypeDef
+
+def get_value() -> SegmentDetectionTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SegmentDetectionTypeDef(TypedDict):
+    Type: NotRequired[SegmentTypeType],  # (1)
+    StartTimestampMillis: NotRequired[int],
+    EndTimestampMillis: NotRequired[int],
+    DurationMillis: NotRequired[int],
+    StartTimecodeSMPTE: NotRequired[str],
+    EndTimecodeSMPTE: NotRequired[str],
+    DurationSMPTE: NotRequired[str],
+    TechnicalCueSegment: NotRequired[TechnicalCueSegmentTypeDef],  # (2)
+    ShotSegment: NotRequired[ShotSegmentTypeDef],  # (3)
+    StartFrameNumber: NotRequired[int],
+    EndFrameNumber: NotRequired[int],
+    DurationFrames: NotRequired[int],
+```
 
-- `Type`: [SegmentTypeType](./literals.md#segmenttypetype)
-- `StartTimestampMillis`: `int`
-- `EndTimestampMillis`: `int`
-- `DurationMillis`: `int`
-- `StartTimecodeSMPTE`: `str`
-- `EndTimecodeSMPTE`: `str`
-- `DurationSMPTE`: `str`
-- `TechnicalCueSegment`:
-  [TechnicalCueSegmentTypeDef](./type_defs.md#technicalcuesegmenttypedef)
-- `ShotSegment`: [ShotSegmentTypeDef](./type_defs.md#shotsegmenttypedef)
-- `StartFrameNumber`: `int`
-- `EndFrameNumber`: `int`
-- `DurationFrames`: `int`
-
-<a id="segmenttypeinfotypedef"></a>
-
+1. See [:material-code-brackets: SegmentTypeType](./literals.md#segmenttypetype) 
+2. See [:material-code-braces: TechnicalCueSegmentTypeDef](./type_defs.md#technicalcuesegmenttypedef) 
+3. See [:material-code-braces: ShotSegmentTypeDef](./type_defs.md#shotsegmenttypedef) 
 ## SegmentTypeInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import SegmentTypeInfoTypeDef
+
+def get_value() -> SegmentTypeInfoTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SegmentTypeInfoTypeDef(TypedDict):
+    Type: NotRequired[SegmentTypeType],  # (1)
+    ModelVersion: NotRequired[str],
+```
 
-- `Type`: [SegmentTypeType](./literals.md#segmenttypetype)
-- `ModelVersion`: `str`
-
-<a id="shotsegmenttypedef"></a>
-
+1. See [:material-code-brackets: SegmentTypeType](./literals.md#segmenttypetype) 
 ## ShotSegmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ShotSegmentTypeDef
+
+def get_value() -> ShotSegmentTypeDef:
+    return {
+        "Index": ...,
+    }
 ```
 
-Optional fields:
-
-- `Index`: `int`
-- `Confidence`: `float`
-
-<a id="smiletypedef"></a>
+```python title="Definition"
+class ShotSegmentTypeDef(TypedDict):
+    Index: NotRequired[int],
+    Confidence: NotRequired[float],
+```
 
 ## SmileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import SmileTypeDef
+
+def get_value() -> SmileTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `bool`
-- `Confidence`: `float`
-
-<a id="startcelebrityrecognitionrequestrequesttypedef"></a>
+```python title="Definition"
+class SmileTypeDef(TypedDict):
+    Value: NotRequired[bool],
+    Confidence: NotRequired[float],
+```
 
 ## StartCelebrityRecognitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartCelebrityRecognitionRequestRequestTypeDef
+
+def get_value() -> StartCelebrityRecognitionRequestRequestTypeDef:
+    return {
+        "Video": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartCelebrityRecognitionRequestRequestTypeDef(TypedDict):
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: NotRequired[str],
+    NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (2)
+    JobTag: NotRequired[str],
+```
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
-
-<a id="startcelebrityrecognitionresponsetypedef"></a>
-
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
 ## StartCelebrityRecognitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartCelebrityRecognitionResponseTypeDef
+
+def get_value() -> StartCelebrityRecognitionResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartCelebrityRecognitionResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startcontentmoderationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartContentModerationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartContentModerationRequestRequestTypeDef
+
+def get_value() -> StartContentModerationRequestRequestTypeDef:
+    return {
+        "Video": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartContentModerationRequestRequestTypeDef(TypedDict):
+    Video: VideoTypeDef,  # (1)
+    MinConfidence: NotRequired[float],
+    ClientRequestToken: NotRequired[str],
+    NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (2)
+    JobTag: NotRequired[str],
+```
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-
-Optional fields:
-
-- `MinConfidence`: `float`
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
-
-<a id="startcontentmoderationresponsetypedef"></a>
-
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
 ## StartContentModerationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartContentModerationResponseTypeDef
+
+def get_value() -> StartContentModerationResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartContentModerationResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startfacedetectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartFaceDetectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartFaceDetectionRequestRequestTypeDef
+
+def get_value() -> StartFaceDetectionRequestRequestTypeDef:
+    return {
+        "Video": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartFaceDetectionRequestRequestTypeDef(TypedDict):
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: NotRequired[str],
+    NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (2)
+    FaceAttributes: NotRequired[FaceAttributesType],  # (3)
+    JobTag: NotRequired[str],
+```
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `FaceAttributes`: [FaceAttributesType](./literals.md#faceattributestype)
-- `JobTag`: `str`
-
-<a id="startfacedetectionresponsetypedef"></a>
-
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-brackets: FaceAttributesType](./literals.md#faceattributestype) 
 ## StartFaceDetectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartFaceDetectionResponseTypeDef
+
+def get_value() -> StartFaceDetectionResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartFaceDetectionResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startfacesearchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartFaceSearchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartFaceSearchRequestRequestTypeDef
+
+def get_value() -> StartFaceSearchRequestRequestTypeDef:
+    return {
+        "Video": ...,
+        "CollectionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartFaceSearchRequestRequestTypeDef(TypedDict):
+    Video: VideoTypeDef,  # (1)
+    CollectionId: str,
+    ClientRequestToken: NotRequired[str],
+    FaceMatchThreshold: NotRequired[float],
+    NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (2)
+    JobTag: NotRequired[str],
+```
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-- `CollectionId`: `str`
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `FaceMatchThreshold`: `float`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
-
-<a id="startfacesearchresponsetypedef"></a>
-
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
 ## StartFaceSearchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartFaceSearchResponseTypeDef
+
+def get_value() -> StartFaceSearchResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartFaceSearchResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startlabeldetectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartLabelDetectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartLabelDetectionRequestRequestTypeDef
+
+def get_value() -> StartLabelDetectionRequestRequestTypeDef:
+    return {
+        "Video": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartLabelDetectionRequestRequestTypeDef(TypedDict):
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: NotRequired[str],
+    MinConfidence: NotRequired[float],
+    NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (2)
+    JobTag: NotRequired[str],
+```
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `MinConfidence`: `float`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
-
-<a id="startlabeldetectionresponsetypedef"></a>
-
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
 ## StartLabelDetectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartLabelDetectionResponseTypeDef
+
+def get_value() -> StartLabelDetectionResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartLabelDetectionResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startpersontrackingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartPersonTrackingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartPersonTrackingRequestRequestTypeDef
+
+def get_value() -> StartPersonTrackingRequestRequestTypeDef:
+    return {
+        "Video": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartPersonTrackingRequestRequestTypeDef(TypedDict):
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: NotRequired[str],
+    NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (2)
+    JobTag: NotRequired[str],
+```
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
-
-<a id="startpersontrackingresponsetypedef"></a>
-
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
 ## StartPersonTrackingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartPersonTrackingResponseTypeDef
+
+def get_value() -> StartPersonTrackingResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartPersonTrackingResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startprojectversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartProjectVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartProjectVersionRequestRequestTypeDef
+
+def get_value() -> StartProjectVersionRequestRequestTypeDef:
+    return {
+        "ProjectVersionArn": ...,
+        "MinInferenceUnits": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectVersionArn`: `str`
-- `MinInferenceUnits`: `int`
-
-<a id="startprojectversionresponsetypedef"></a>
+```python title="Definition"
+class StartProjectVersionRequestRequestTypeDef(TypedDict):
+    ProjectVersionArn: str,
+    MinInferenceUnits: int,
+```
 
 ## StartProjectVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartProjectVersionResponseTypeDef
+
+def get_value() -> StartProjectVersionResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartProjectVersionResponseTypeDef(TypedDict):
+    Status: ProjectVersionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [ProjectVersionStatusType](./literals.md#projectversionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startsegmentdetectionfilterstypedef"></a>
-
+1. See [:material-code-brackets: ProjectVersionStatusType](./literals.md#projectversionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartSegmentDetectionFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartSegmentDetectionFiltersTypeDef
+
+def get_value() -> StartSegmentDetectionFiltersTypeDef:
+    return {
+        "TechnicalCueFilter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StartSegmentDetectionFiltersTypeDef(TypedDict):
+    TechnicalCueFilter: NotRequired[StartTechnicalCueDetectionFilterTypeDef],  # (1)
+    ShotFilter: NotRequired[StartShotDetectionFilterTypeDef],  # (2)
+```
 
-- `TechnicalCueFilter`:
-  [StartTechnicalCueDetectionFilterTypeDef](./type_defs.md#starttechnicalcuedetectionfiltertypedef)
-- `ShotFilter`:
-  [StartShotDetectionFilterTypeDef](./type_defs.md#startshotdetectionfiltertypedef)
-
-<a id="startsegmentdetectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StartTechnicalCueDetectionFilterTypeDef](./type_defs.md#starttechnicalcuedetectionfiltertypedef) 
+2. See [:material-code-braces: StartShotDetectionFilterTypeDef](./type_defs.md#startshotdetectionfiltertypedef) 
 ## StartSegmentDetectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartSegmentDetectionRequestRequestTypeDef
+
+def get_value() -> StartSegmentDetectionRequestRequestTypeDef:
+    return {
+        "Video": ...,
+        "SegmentTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSegmentDetectionRequestRequestTypeDef(TypedDict):
+    Video: VideoTypeDef,  # (1)
+    SegmentTypes: Sequence[SegmentTypeType],  # (2)
+    ClientRequestToken: NotRequired[str],
+    NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (3)
+    JobTag: NotRequired[str],
+    Filters: NotRequired[StartSegmentDetectionFiltersTypeDef],  # (4)
+```
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-- `SegmentTypes`:
-  `Sequence`\[[SegmentTypeType](./literals.md#segmenttypetype)\]
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
-- `Filters`:
-  [StartSegmentDetectionFiltersTypeDef](./type_defs.md#startsegmentdetectionfilterstypedef)
-
-<a id="startsegmentdetectionresponsetypedef"></a>
-
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-brackets: SegmentTypeType](./literals.md#segmenttypetype) 
+3. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+4. See [:material-code-braces: StartSegmentDetectionFiltersTypeDef](./type_defs.md#startsegmentdetectionfilterstypedef) 
 ## StartSegmentDetectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartSegmentDetectionResponseTypeDef
+
+def get_value() -> StartSegmentDetectionResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSegmentDetectionResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startshotdetectionfiltertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartShotDetectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartShotDetectionFilterTypeDef
+
+def get_value() -> StartShotDetectionFilterTypeDef:
+    return {
+        "MinSegmentConfidence": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinSegmentConfidence`: `float`
-
-<a id="startstreamprocessorrequestrequesttypedef"></a>
+```python title="Definition"
+class StartShotDetectionFilterTypeDef(TypedDict):
+    MinSegmentConfidence: NotRequired[float],
+```
 
 ## StartStreamProcessorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartStreamProcessorRequestRequestTypeDef
+
+def get_value() -> StartStreamProcessorRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="starttechnicalcuedetectionfiltertypedef"></a>
+```python title="Definition"
+class StartStreamProcessorRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## StartTechnicalCueDetectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartTechnicalCueDetectionFilterTypeDef
+
+def get_value() -> StartTechnicalCueDetectionFilterTypeDef:
+    return {
+        "MinSegmentConfidence": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StartTechnicalCueDetectionFilterTypeDef(TypedDict):
+    MinSegmentConfidence: NotRequired[float],
+    BlackFrame: NotRequired[BlackFrameTypeDef],  # (1)
+```
 
-- `MinSegmentConfidence`: `float`
-- `BlackFrame`: [BlackFrameTypeDef](./type_defs.md#blackframetypedef)
-
-<a id="starttextdetectionfilterstypedef"></a>
-
+1. See [:material-code-braces: BlackFrameTypeDef](./type_defs.md#blackframetypedef) 
 ## StartTextDetectionFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartTextDetectionFiltersTypeDef
+
+def get_value() -> StartTextDetectionFiltersTypeDef:
+    return {
+        "WordFilter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StartTextDetectionFiltersTypeDef(TypedDict):
+    WordFilter: NotRequired[DetectionFilterTypeDef],  # (1)
+    RegionsOfInterest: NotRequired[Sequence[RegionOfInterestTypeDef]],  # (2)
+```
 
-- `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
-- `RegionsOfInterest`:
-  `Sequence`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
-
-<a id="starttextdetectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef) 
+2. See [:material-code-braces: RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef) 
 ## StartTextDetectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartTextDetectionRequestRequestTypeDef
+
+def get_value() -> StartTextDetectionRequestRequestTypeDef:
+    return {
+        "Video": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTextDetectionRequestRequestTypeDef(TypedDict):
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: NotRequired[str],
+    NotificationChannel: NotRequired[NotificationChannelTypeDef],  # (2)
+    JobTag: NotRequired[str],
+    Filters: NotRequired[StartTextDetectionFiltersTypeDef],  # (3)
+```
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef)
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
-- `Filters`:
-  [StartTextDetectionFiltersTypeDef](./type_defs.md#starttextdetectionfilterstypedef)
-
-<a id="starttextdetectionresponsetypedef"></a>
-
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: StartTextDetectionFiltersTypeDef](./type_defs.md#starttextdetectionfilterstypedef) 
 ## StartTextDetectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StartTextDetectionResponseTypeDef
+
+def get_value() -> StartTextDetectionResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTextDetectionResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopprojectversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopProjectVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StopProjectVersionRequestRequestTypeDef
+
+def get_value() -> StopProjectVersionRequestRequestTypeDef:
+    return {
+        "ProjectVersionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectVersionArn`: `str`
-
-<a id="stopprojectversionresponsetypedef"></a>
+```python title="Definition"
+class StopProjectVersionRequestRequestTypeDef(TypedDict):
+    ProjectVersionArn: str,
+```
 
 ## StopProjectVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StopProjectVersionResponseTypeDef
+
+def get_value() -> StopProjectVersionResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopProjectVersionResponseTypeDef(TypedDict):
+    Status: ProjectVersionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [ProjectVersionStatusType](./literals.md#projectversionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopstreamprocessorrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProjectVersionStatusType](./literals.md#projectversionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopStreamProcessorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StopStreamProcessorRequestRequestTypeDef
+
+def get_value() -> StopStreamProcessorRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="streamprocessorinputtypedef"></a>
+```python title="Definition"
+class StopStreamProcessorRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## StreamProcessorInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StreamProcessorInputTypeDef
+
+def get_value() -> StreamProcessorInputTypeDef:
+    return {
+        "KinesisVideoStream": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StreamProcessorInputTypeDef(TypedDict):
+    KinesisVideoStream: NotRequired[KinesisVideoStreamTypeDef],  # (1)
+```
 
-- `KinesisVideoStream`:
-  [KinesisVideoStreamTypeDef](./type_defs.md#kinesisvideostreamtypedef)
-
-<a id="streamprocessoroutputtypedef"></a>
-
+1. See [:material-code-braces: KinesisVideoStreamTypeDef](./type_defs.md#kinesisvideostreamtypedef) 
 ## StreamProcessorOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StreamProcessorOutputTypeDef
+
+def get_value() -> StreamProcessorOutputTypeDef:
+    return {
+        "KinesisDataStream": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StreamProcessorOutputTypeDef(TypedDict):
+    KinesisDataStream: NotRequired[KinesisDataStreamTypeDef],  # (1)
+```
 
-- `KinesisDataStream`:
-  [KinesisDataStreamTypeDef](./type_defs.md#kinesisdatastreamtypedef)
-
-<a id="streamprocessorsettingstypedef"></a>
-
+1. See [:material-code-braces: KinesisDataStreamTypeDef](./type_defs.md#kinesisdatastreamtypedef) 
 ## StreamProcessorSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StreamProcessorSettingsTypeDef
+
+def get_value() -> StreamProcessorSettingsTypeDef:
+    return {
+        "FaceSearch": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StreamProcessorSettingsTypeDef(TypedDict):
+    FaceSearch: NotRequired[FaceSearchSettingsTypeDef],  # (1)
+```
 
-- `FaceSearch`:
-  [FaceSearchSettingsTypeDef](./type_defs.md#facesearchsettingstypedef)
-
-<a id="streamprocessortypedef"></a>
-
+1. See [:material-code-braces: FaceSearchSettingsTypeDef](./type_defs.md#facesearchsettingstypedef) 
 ## StreamProcessorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import StreamProcessorTypeDef
+
+def get_value() -> StreamProcessorTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StreamProcessorTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Status: NotRequired[StreamProcessorStatusType],  # (1)
+```
 
-- `Name`: `str`
-- `Status`:
-  [StreamProcessorStatusType](./literals.md#streamprocessorstatustype)
-
-<a id="summarytypedef"></a>
-
+1. See [:material-code-brackets: StreamProcessorStatusType](./literals.md#streamprocessorstatustype) 
 ## SummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import SummaryTypeDef
+
+def get_value() -> SummaryTypeDef:
+    return {
+        "S3Object": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SummaryTypeDef(TypedDict):
+    S3Object: NotRequired[S3ObjectTypeDef],  # (1)
+```
 
-- `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-
-<a id="sunglassestypedef"></a>
-
+1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
 ## SunglassesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import SunglassesTypeDef
+
+def get_value() -> SunglassesTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `bool`
-- `Confidence`: `float`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SunglassesTypeDef(TypedDict):
+    Value: NotRequired[bool],
+    Confidence: NotRequired[float],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="technicalcuesegmenttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TechnicalCueSegmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import TechnicalCueSegmentTypeDef
+
+def get_value() -> TechnicalCueSegmentTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TechnicalCueSegmentTypeDef(TypedDict):
+    Type: NotRequired[TechnicalCueTypeType],  # (1)
+    Confidence: NotRequired[float],
+```
 
-- `Type`: [TechnicalCueTypeType](./literals.md#technicalcuetypetype)
-- `Confidence`: `float`
-
-<a id="testingdataresulttypedef"></a>
-
+1. See [:material-code-brackets: TechnicalCueTypeType](./literals.md#technicalcuetypetype) 
 ## TestingDataResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import TestingDataResultTypeDef
+
+def get_value() -> TestingDataResultTypeDef:
+    return {
+        "Input": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestingDataResultTypeDef(TypedDict):
+    Input: NotRequired[TestingDataTypeDef],  # (1)
+    Output: NotRequired[TestingDataTypeDef],  # (1)
+    Validation: NotRequired[ValidationDataTypeDef],  # (3)
+```
 
-- `Input`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
-- `Output`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
-- `Validation`: [ValidationDataTypeDef](./type_defs.md#validationdatatypedef)
-
-<a id="testingdatatypedef"></a>
-
+1. See [:material-code-braces: TestingDataTypeDef](./type_defs.md#testingdatatypedef) 
+2. See [:material-code-braces: TestingDataTypeDef](./type_defs.md#testingdatatypedef) 
+3. See [:material-code-braces: ValidationDataTypeDef](./type_defs.md#validationdatatypedef) 
 ## TestingDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import TestingDataTypeDef
+
+def get_value() -> TestingDataTypeDef:
+    return {
+        "Assets": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestingDataTypeDef(TypedDict):
+    Assets: NotRequired[Sequence[AssetTypeDef]],  # (1)
+    AutoCreate: NotRequired[bool],
+```
 
-- `Assets`: `Sequence`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
-- `AutoCreate`: `bool`
-
-<a id="textdetectionresulttypedef"></a>
-
+1. See [:material-code-braces: AssetTypeDef](./type_defs.md#assettypedef) 
 ## TextDetectionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import TextDetectionResultTypeDef
+
+def get_value() -> TextDetectionResultTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TextDetectionResultTypeDef(TypedDict):
+    Timestamp: NotRequired[int],
+    TextDetection: NotRequired[TextDetectionTypeDef],  # (1)
+```
 
-- `Timestamp`: `int`
-- `TextDetection`: [TextDetectionTypeDef](./type_defs.md#textdetectiontypedef)
-
-<a id="textdetectiontypedef"></a>
-
+1. See [:material-code-braces: TextDetectionTypeDef](./type_defs.md#textdetectiontypedef) 
 ## TextDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import TextDetectionTypeDef
+
+def get_value() -> TextDetectionTypeDef:
+    return {
+        "DetectedText": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TextDetectionTypeDef(TypedDict):
+    DetectedText: NotRequired[str],
+    Type: NotRequired[TextTypesType],  # (1)
+    Id: NotRequired[int],
+    ParentId: NotRequired[int],
+    Confidence: NotRequired[float],
+    Geometry: NotRequired[GeometryTypeDef],  # (2)
+```
 
-- `DetectedText`: `str`
-- `Type`: [TextTypesType](./literals.md#texttypestype)
-- `Id`: `int`
-- `ParentId`: `int`
-- `Confidence`: `float`
-- `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
-
-<a id="trainingdataresulttypedef"></a>
-
+1. See [:material-code-brackets: TextTypesType](./literals.md#texttypestype) 
+2. See [:material-code-braces: GeometryTypeDef](./type_defs.md#geometrytypedef) 
 ## TrainingDataResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import TrainingDataResultTypeDef
+
+def get_value() -> TrainingDataResultTypeDef:
+    return {
+        "Input": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TrainingDataResultTypeDef(TypedDict):
+    Input: NotRequired[TrainingDataTypeDef],  # (1)
+    Output: NotRequired[TrainingDataTypeDef],  # (1)
+    Validation: NotRequired[ValidationDataTypeDef],  # (3)
+```
 
-- `Input`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
-- `Output`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
-- `Validation`: [ValidationDataTypeDef](./type_defs.md#validationdatatypedef)
-
-<a id="trainingdatatypedef"></a>
-
+1. See [:material-code-braces: TrainingDataTypeDef](./type_defs.md#trainingdatatypedef) 
+2. See [:material-code-braces: TrainingDataTypeDef](./type_defs.md#trainingdatatypedef) 
+3. See [:material-code-braces: ValidationDataTypeDef](./type_defs.md#validationdatatypedef) 
 ## TrainingDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import TrainingDataTypeDef
+
+def get_value() -> TrainingDataTypeDef:
+    return {
+        "Assets": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TrainingDataTypeDef(TypedDict):
+    Assets: NotRequired[Sequence[AssetTypeDef]],  # (1)
+```
 
-- `Assets`: `Sequence`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
-
-<a id="unindexedfacetypedef"></a>
-
+1. See [:material-code-braces: AssetTypeDef](./type_defs.md#assettypedef) 
 ## UnindexedFaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import UnindexedFaceTypeDef
+
+def get_value() -> UnindexedFaceTypeDef:
+    return {
+        "Reasons": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UnindexedFaceTypeDef(TypedDict):
+    Reasons: NotRequired[List[ReasonType]],  # (1)
+    FaceDetail: NotRequired[FaceDetailTypeDef],  # (2)
+```
 
-- `Reasons`: `List`\[[ReasonType](./literals.md#reasontype)\]
-- `FaceDetail`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ReasonType](./literals.md#reasontype) 
+2. See [:material-code-braces: FaceDetailTypeDef](./type_defs.md#facedetailtypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedatasetentriesrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDatasetEntriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import UpdateDatasetEntriesRequestRequestTypeDef
+
+def get_value() -> UpdateDatasetEntriesRequestRequestTypeDef:
+    return {
+        "DatasetArn": ...,
+        "Changes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDatasetEntriesRequestRequestTypeDef(TypedDict):
+    DatasetArn: str,
+    Changes: DatasetChangesTypeDef,  # (1)
+```
 
-- `DatasetArn`: `str`
-- `Changes`: [DatasetChangesTypeDef](./type_defs.md#datasetchangestypedef)
-
-<a id="validationdatatypedef"></a>
-
+1. See [:material-code-braces: DatasetChangesTypeDef](./type_defs.md#datasetchangestypedef) 
 ## ValidationDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import ValidationDataTypeDef
+
+def get_value() -> ValidationDataTypeDef:
+    return {
+        "Assets": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ValidationDataTypeDef(TypedDict):
+    Assets: NotRequired[List[AssetTypeDef]],  # (1)
+```
 
-- `Assets`: `List`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
-
-<a id="videometadatatypedef"></a>
-
+1. See [:material-code-braces: AssetTypeDef](./type_defs.md#assettypedef) 
 ## VideoMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import VideoMetadataTypeDef
+
+def get_value() -> VideoMetadataTypeDef:
+    return {
+        "Codec": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VideoMetadataTypeDef(TypedDict):
+    Codec: NotRequired[str],
+    DurationMillis: NotRequired[int],
+    Format: NotRequired[str],
+    FrameRate: NotRequired[float],
+    FrameHeight: NotRequired[int],
+    FrameWidth: NotRequired[int],
+    ColorRange: NotRequired[VideoColorRangeType],  # (1)
+```
 
-- `Codec`: `str`
-- `DurationMillis`: `int`
-- `Format`: `str`
-- `FrameRate`: `float`
-- `FrameHeight`: `int`
-- `FrameWidth`: `int`
-- `ColorRange`: [VideoColorRangeType](./literals.md#videocolorrangetype)
-
-<a id="videotypedef"></a>
-
+1. See [:material-code-brackets: VideoColorRangeType](./literals.md#videocolorrangetype) 
 ## VideoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import VideoTypeDef
+
+def get_value() -> VideoTypeDef:
+    return {
+        "S3Object": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VideoTypeDef(TypedDict):
+    S3Object: NotRequired[S3ObjectTypeDef],  # (1)
+```
 
-- `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rekognition.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

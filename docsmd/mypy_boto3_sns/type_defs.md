@@ -1,1442 +1,1859 @@
-<a id="typed-dictionaries-for-boto3-sns-module"></a>
-
-# Typed dictionaries for boto3 SNS module
+# Typed dictionaries
 
 > [Index](../README.md) > [SNS](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module
-[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SNS module](#typed-dictionaries-for-boto3-sns-module)
-  - [AddPermissionInputRequestTypeDef](#addpermissioninputrequesttypedef)
-  - [AddPermissionInputTopicAddPermissionTypeDef](#addpermissioninputtopicaddpermissiontypedef)
-  - [BatchResultErrorEntryTypeDef](#batchresulterrorentrytypedef)
-  - [CheckIfPhoneNumberIsOptedOutInputRequestTypeDef](#checkifphonenumberisoptedoutinputrequesttypedef)
-  - [CheckIfPhoneNumberIsOptedOutResponseTypeDef](#checkifphonenumberisoptedoutresponsetypedef)
-  - [ConfirmSubscriptionInputRequestTypeDef](#confirmsubscriptioninputrequesttypedef)
-  - [ConfirmSubscriptionInputTopicConfirmSubscriptionTypeDef](#confirmsubscriptioninputtopicconfirmsubscriptiontypedef)
-  - [ConfirmSubscriptionResponseTypeDef](#confirmsubscriptionresponsetypedef)
-  - [CreateEndpointResponseTypeDef](#createendpointresponsetypedef)
-  - [CreatePlatformApplicationInputRequestTypeDef](#createplatformapplicationinputrequesttypedef)
-  - [CreatePlatformApplicationInputServiceResourceCreatePlatformApplicationTypeDef](#createplatformapplicationinputserviceresourcecreateplatformapplicationtypedef)
-  - [CreatePlatformApplicationResponseTypeDef](#createplatformapplicationresponsetypedef)
-  - [CreatePlatformEndpointInputPlatformApplicationCreatePlatformEndpointTypeDef](#createplatformendpointinputplatformapplicationcreateplatformendpointtypedef)
-  - [CreatePlatformEndpointInputRequestTypeDef](#createplatformendpointinputrequesttypedef)
-  - [CreateSMSSandboxPhoneNumberInputRequestTypeDef](#createsmssandboxphonenumberinputrequesttypedef)
-  - [CreateTopicInputRequestTypeDef](#createtopicinputrequesttypedef)
-  - [CreateTopicInputServiceResourceCreateTopicTypeDef](#createtopicinputserviceresourcecreatetopictypedef)
-  - [CreateTopicResponseTypeDef](#createtopicresponsetypedef)
-  - [DeleteEndpointInputRequestTypeDef](#deleteendpointinputrequesttypedef)
-  - [DeletePlatformApplicationInputRequestTypeDef](#deleteplatformapplicationinputrequesttypedef)
-  - [DeleteSMSSandboxPhoneNumberInputRequestTypeDef](#deletesmssandboxphonenumberinputrequesttypedef)
-  - [DeleteTopicInputRequestTypeDef](#deletetopicinputrequesttypedef)
-  - [EndpointTypeDef](#endpointtypedef)
-  - [GetEndpointAttributesInputRequestTypeDef](#getendpointattributesinputrequesttypedef)
-  - [GetEndpointAttributesResponseTypeDef](#getendpointattributesresponsetypedef)
-  - [GetPlatformApplicationAttributesInputRequestTypeDef](#getplatformapplicationattributesinputrequesttypedef)
-  - [GetPlatformApplicationAttributesResponseTypeDef](#getplatformapplicationattributesresponsetypedef)
-  - [GetSMSAttributesInputRequestTypeDef](#getsmsattributesinputrequesttypedef)
-  - [GetSMSAttributesResponseTypeDef](#getsmsattributesresponsetypedef)
-  - [GetSMSSandboxAccountStatusResultTypeDef](#getsmssandboxaccountstatusresulttypedef)
-  - [GetSubscriptionAttributesInputRequestTypeDef](#getsubscriptionattributesinputrequesttypedef)
-  - [GetSubscriptionAttributesResponseTypeDef](#getsubscriptionattributesresponsetypedef)
-  - [GetTopicAttributesInputRequestTypeDef](#gettopicattributesinputrequesttypedef)
-  - [GetTopicAttributesResponseTypeDef](#gettopicattributesresponsetypedef)
-  - [ListEndpointsByPlatformApplicationInputRequestTypeDef](#listendpointsbyplatformapplicationinputrequesttypedef)
-  - [ListEndpointsByPlatformApplicationResponseTypeDef](#listendpointsbyplatformapplicationresponsetypedef)
-  - [ListOriginationNumbersRequestRequestTypeDef](#listoriginationnumbersrequestrequesttypedef)
-  - [ListOriginationNumbersResultTypeDef](#listoriginationnumbersresulttypedef)
-  - [ListPhoneNumbersOptedOutInputRequestTypeDef](#listphonenumbersoptedoutinputrequesttypedef)
-  - [ListPhoneNumbersOptedOutResponseTypeDef](#listphonenumbersoptedoutresponsetypedef)
-  - [ListPlatformApplicationsInputRequestTypeDef](#listplatformapplicationsinputrequesttypedef)
-  - [ListPlatformApplicationsResponseTypeDef](#listplatformapplicationsresponsetypedef)
-  - [ListSMSSandboxPhoneNumbersInputRequestTypeDef](#listsmssandboxphonenumbersinputrequesttypedef)
-  - [ListSMSSandboxPhoneNumbersResultTypeDef](#listsmssandboxphonenumbersresulttypedef)
-  - [ListSubscriptionsByTopicInputRequestTypeDef](#listsubscriptionsbytopicinputrequesttypedef)
-  - [ListSubscriptionsByTopicResponseTypeDef](#listsubscriptionsbytopicresponsetypedef)
-  - [ListSubscriptionsInputRequestTypeDef](#listsubscriptionsinputrequesttypedef)
-  - [ListSubscriptionsResponseTypeDef](#listsubscriptionsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTopicsInputRequestTypeDef](#listtopicsinputrequesttypedef)
-  - [ListTopicsResponseTypeDef](#listtopicsresponsetypedef)
-  - [MessageAttributeValueTypeDef](#messageattributevaluetypedef)
-  - [OptInPhoneNumberInputRequestTypeDef](#optinphonenumberinputrequesttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PhoneNumberInformationTypeDef](#phonenumberinformationtypedef)
-  - [PlatformApplicationTypeDef](#platformapplicationtypedef)
-  - [PublishBatchInputRequestTypeDef](#publishbatchinputrequesttypedef)
-  - [PublishBatchRequestEntryTypeDef](#publishbatchrequestentrytypedef)
-  - [PublishBatchResponseTypeDef](#publishbatchresponsetypedef)
-  - [PublishBatchResultEntryTypeDef](#publishbatchresultentrytypedef)
-  - [PublishInputPlatformEndpointPublishTypeDef](#publishinputplatformendpointpublishtypedef)
-  - [PublishInputRequestTypeDef](#publishinputrequesttypedef)
-  - [PublishInputTopicPublishTypeDef](#publishinputtopicpublishtypedef)
-  - [PublishResponseTypeDef](#publishresponsetypedef)
-  - [RemovePermissionInputRequestTypeDef](#removepermissioninputrequesttypedef)
-  - [RemovePermissionInputTopicRemovePermissionTypeDef](#removepermissioninputtopicremovepermissiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SMSSandboxPhoneNumberTypeDef](#smssandboxphonenumbertypedef)
-  - [ServiceResourcePlatformApplicationRequestTypeDef](#serviceresourceplatformapplicationrequesttypedef)
-  - [ServiceResourcePlatformEndpointRequestTypeDef](#serviceresourceplatformendpointrequesttypedef)
-  - [ServiceResourceSubscriptionRequestTypeDef](#serviceresourcesubscriptionrequesttypedef)
-  - [ServiceResourceTopicRequestTypeDef](#serviceresourcetopicrequesttypedef)
-  - [SetEndpointAttributesInputPlatformEndpointSetAttributesTypeDef](#setendpointattributesinputplatformendpointsetattributestypedef)
-  - [SetEndpointAttributesInputRequestTypeDef](#setendpointattributesinputrequesttypedef)
-  - [SetPlatformApplicationAttributesInputPlatformApplicationSetAttributesTypeDef](#setplatformapplicationattributesinputplatformapplicationsetattributestypedef)
-  - [SetPlatformApplicationAttributesInputRequestTypeDef](#setplatformapplicationattributesinputrequesttypedef)
-  - [SetSMSAttributesInputRequestTypeDef](#setsmsattributesinputrequesttypedef)
-  - [SetSubscriptionAttributesInputRequestTypeDef](#setsubscriptionattributesinputrequesttypedef)
-  - [SetSubscriptionAttributesInputSubscriptionSetAttributesTypeDef](#setsubscriptionattributesinputsubscriptionsetattributestypedef)
-  - [SetTopicAttributesInputRequestTypeDef](#settopicattributesinputrequesttypedef)
-  - [SetTopicAttributesInputTopicSetAttributesTypeDef](#settopicattributesinputtopicsetattributestypedef)
-  - [SubscribeInputRequestTypeDef](#subscribeinputrequesttypedef)
-  - [SubscribeInputTopicSubscribeTypeDef](#subscribeinputtopicsubscribetypedef)
-  - [SubscribeResponseTypeDef](#subscriberesponsetypedef)
-  - [SubscriptionTypeDef](#subscriptiontypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TopicTypeDef](#topictypedef)
-  - [UnsubscribeInputRequestTypeDef](#unsubscribeinputrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [VerifySMSSandboxPhoneNumberInputRequestTypeDef](#verifysmssandboxphonenumberinputrequesttypedef)
-
-<a id="addpermissioninputrequesttypedef"></a>
+    Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+    type annotations stubs module [mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 ## AddPermissionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import AddPermissionInputRequestTypeDef
+
+def get_value() -> AddPermissionInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+        "Label": ...,
+        "AWSAccountId": ...,
+        "ActionName": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-- `Label`: `str`
-- `AWSAccountId`: `Sequence`\[`str`\]
-- `ActionName`: `Sequence`\[`str`\]
-
-<a id="addpermissioninputtopicaddpermissiontypedef"></a>
+```python title="Definition"
+class AddPermissionInputRequestTypeDef(TypedDict):
+    TopicArn: str,
+    Label: str,
+    AWSAccountId: Sequence[str],
+    ActionName: Sequence[str],
+```
 
 ## AddPermissionInputTopicAddPermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import AddPermissionInputTopicAddPermissionTypeDef
+
+def get_value() -> AddPermissionInputTopicAddPermissionTypeDef:
+    return {
+        "Label": ...,
+        "AWSAccountId": ...,
+        "ActionName": ...,
+    }
 ```
 
-Required fields:
-
-- `Label`: `str`
-- `AWSAccountId`: `Sequence`\[`str`\]
-- `ActionName`: `Sequence`\[`str`\]
-
-<a id="batchresulterrorentrytypedef"></a>
+```python title="Definition"
+class AddPermissionInputTopicAddPermissionTypeDef(TypedDict):
+    Label: str,
+    AWSAccountId: Sequence[str],
+    ActionName: Sequence[str],
+```
 
 ## BatchResultErrorEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import BatchResultErrorEntryTypeDef
+
+def get_value() -> BatchResultErrorEntryTypeDef:
+    return {
+        "Id": ...,
+        "Code": ...,
+        "SenderFault": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `Code`: `str`
-- `SenderFault`: `bool`
-
-Optional fields:
-
-- `Message`: `str`
-
-<a id="checkifphonenumberisoptedoutinputrequesttypedef"></a>
+```python title="Definition"
+class BatchResultErrorEntryTypeDef(TypedDict):
+    Id: str,
+    Code: str,
+    SenderFault: bool,
+    Message: NotRequired[str],
+```
 
 ## CheckIfPhoneNumberIsOptedOutInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CheckIfPhoneNumberIsOptedOutInputRequestTypeDef
+
+def get_value() -> CheckIfPhoneNumberIsOptedOutInputRequestTypeDef:
+    return {
+        "phoneNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `phoneNumber`: `str`
-
-<a id="checkifphonenumberisoptedoutresponsetypedef"></a>
+```python title="Definition"
+class CheckIfPhoneNumberIsOptedOutInputRequestTypeDef(TypedDict):
+    phoneNumber: str,
+```
 
 ## CheckIfPhoneNumberIsOptedOutResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CheckIfPhoneNumberIsOptedOutResponseTypeDef
+
+def get_value() -> CheckIfPhoneNumberIsOptedOutResponseTypeDef:
+    return {
+        "isOptedOut": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CheckIfPhoneNumberIsOptedOutResponseTypeDef(TypedDict):
+    isOptedOut: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `isOptedOut`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="confirmsubscriptioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfirmSubscriptionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ConfirmSubscriptionInputRequestTypeDef
+
+def get_value() -> ConfirmSubscriptionInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+        "Token": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-- `Token`: `str`
-
-Optional fields:
-
-- `AuthenticateOnUnsubscribe`: `str`
-
-<a id="confirmsubscriptioninputtopicconfirmsubscriptiontypedef"></a>
+```python title="Definition"
+class ConfirmSubscriptionInputRequestTypeDef(TypedDict):
+    TopicArn: str,
+    Token: str,
+    AuthenticateOnUnsubscribe: NotRequired[str],
+```
 
 ## ConfirmSubscriptionInputTopicConfirmSubscriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ConfirmSubscriptionInputTopicConfirmSubscriptionTypeDef
+
+def get_value() -> ConfirmSubscriptionInputTopicConfirmSubscriptionTypeDef:
+    return {
+        "Token": ...,
+    }
 ```
 
-Required fields:
-
-- `Token`: `str`
-
-Optional fields:
-
-- `AuthenticateOnUnsubscribe`: `str`
-
-<a id="confirmsubscriptionresponsetypedef"></a>
+```python title="Definition"
+class ConfirmSubscriptionInputTopicConfirmSubscriptionTypeDef(TypedDict):
+    Token: str,
+    AuthenticateOnUnsubscribe: NotRequired[str],
+```
 
 ## ConfirmSubscriptionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ConfirmSubscriptionResponseTypeDef
+
+def get_value() -> ConfirmSubscriptionResponseTypeDef:
+    return {
+        "SubscriptionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmSubscriptionResponseTypeDef(TypedDict):
+    SubscriptionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SubscriptionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createendpointresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreateEndpointResponseTypeDef
+
+def get_value() -> CreateEndpointResponseTypeDef:
+    return {
+        "EndpointArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEndpointResponseTypeDef(TypedDict):
+    EndpointArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EndpointArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createplatformapplicationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePlatformApplicationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreatePlatformApplicationInputRequestTypeDef
+
+def get_value() -> CreatePlatformApplicationInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "Platform": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Platform`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="createplatformapplicationinputserviceresourcecreateplatformapplicationtypedef"></a>
+```python title="Definition"
+class CreatePlatformApplicationInputRequestTypeDef(TypedDict):
+    Name: str,
+    Platform: str,
+    Attributes: Mapping[str, str],
+```
 
 ## CreatePlatformApplicationInputServiceResourceCreatePlatformApplicationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreatePlatformApplicationInputServiceResourceCreatePlatformApplicationTypeDef
+
+def get_value() -> CreatePlatformApplicationInputServiceResourceCreatePlatformApplicationTypeDef:
+    return {
+        "Name": ...,
+        "Platform": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Platform`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="createplatformapplicationresponsetypedef"></a>
+```python title="Definition"
+class CreatePlatformApplicationInputServiceResourceCreatePlatformApplicationTypeDef(TypedDict):
+    Name: str,
+    Platform: str,
+    Attributes: Mapping[str, str],
+```
 
 ## CreatePlatformApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreatePlatformApplicationResponseTypeDef
+
+def get_value() -> CreatePlatformApplicationResponseTypeDef:
+    return {
+        "PlatformApplicationArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePlatformApplicationResponseTypeDef(TypedDict):
+    PlatformApplicationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PlatformApplicationArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createplatformendpointinputplatformapplicationcreateplatformendpointtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePlatformEndpointInputPlatformApplicationCreatePlatformEndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreatePlatformEndpointInputPlatformApplicationCreatePlatformEndpointTypeDef
+
+def get_value() -> CreatePlatformEndpointInputPlatformApplicationCreatePlatformEndpointTypeDef:
+    return {
+        "Token": ...,
+    }
 ```
 
-Required fields:
-
-- `Token`: `str`
-
-Optional fields:
-
-- `CustomUserData`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="createplatformendpointinputrequesttypedef"></a>
+```python title="Definition"
+class CreatePlatformEndpointInputPlatformApplicationCreatePlatformEndpointTypeDef(TypedDict):
+    Token: str,
+    CustomUserData: NotRequired[str],
+    Attributes: NotRequired[Mapping[str, str]],
+```
 
 ## CreatePlatformEndpointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreatePlatformEndpointInputRequestTypeDef
+
+def get_value() -> CreatePlatformEndpointInputRequestTypeDef:
+    return {
+        "PlatformApplicationArn": ...,
+        "Token": ...,
+    }
 ```
 
-Required fields:
-
-- `PlatformApplicationArn`: `str`
-- `Token`: `str`
-
-Optional fields:
-
-- `CustomUserData`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="createsmssandboxphonenumberinputrequesttypedef"></a>
+```python title="Definition"
+class CreatePlatformEndpointInputRequestTypeDef(TypedDict):
+    PlatformApplicationArn: str,
+    Token: str,
+    CustomUserData: NotRequired[str],
+    Attributes: NotRequired[Mapping[str, str]],
+```
 
 ## CreateSMSSandboxPhoneNumberInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreateSMSSandboxPhoneNumberInputRequestTypeDef
+
+def get_value() -> CreateSMSSandboxPhoneNumberInputRequestTypeDef:
+    return {
+        "PhoneNumber": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSMSSandboxPhoneNumberInputRequestTypeDef(TypedDict):
+    PhoneNumber: str,
+    LanguageCode: NotRequired[LanguageCodeStringType],  # (1)
+```
 
-- `PhoneNumber`: `str`
-
-Optional fields:
-
-- `LanguageCode`:
-  [LanguageCodeStringType](./literals.md#languagecodestringtype)
-
-<a id="createtopicinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeStringType](./literals.md#languagecodestringtype) 
 ## CreateTopicInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreateTopicInputRequestTypeDef
+
+def get_value() -> CreateTopicInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTopicInputRequestTypeDef(TypedDict):
+    Name: str,
+    Attributes: NotRequired[Mapping[str, str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createtopicinputserviceresourcecreatetopictypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTopicInputServiceResourceCreateTopicTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreateTopicInputServiceResourceCreateTopicTypeDef
+
+def get_value() -> CreateTopicInputServiceResourceCreateTopicTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTopicInputServiceResourceCreateTopicTypeDef(TypedDict):
+    Name: str,
+    Attributes: NotRequired[Mapping[str, str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createtopicresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTopicResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import CreateTopicResponseTypeDef
+
+def get_value() -> CreateTopicResponseTypeDef:
+    return {
+        "TopicArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTopicResponseTypeDef(TypedDict):
+    TopicArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TopicArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteendpointinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEndpointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import DeleteEndpointInputRequestTypeDef
+
+def get_value() -> DeleteEndpointInputRequestTypeDef:
+    return {
+        "EndpointArn": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointArn`: `str`
-
-<a id="deleteplatformapplicationinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteEndpointInputRequestTypeDef(TypedDict):
+    EndpointArn: str,
+```
 
 ## DeletePlatformApplicationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import DeletePlatformApplicationInputRequestTypeDef
+
+def get_value() -> DeletePlatformApplicationInputRequestTypeDef:
+    return {
+        "PlatformApplicationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PlatformApplicationArn`: `str`
-
-<a id="deletesmssandboxphonenumberinputrequesttypedef"></a>
+```python title="Definition"
+class DeletePlatformApplicationInputRequestTypeDef(TypedDict):
+    PlatformApplicationArn: str,
+```
 
 ## DeleteSMSSandboxPhoneNumberInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import DeleteSMSSandboxPhoneNumberInputRequestTypeDef
+
+def get_value() -> DeleteSMSSandboxPhoneNumberInputRequestTypeDef:
+    return {
+        "PhoneNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `PhoneNumber`: `str`
-
-<a id="deletetopicinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteSMSSandboxPhoneNumberInputRequestTypeDef(TypedDict):
+    PhoneNumber: str,
+```
 
 ## DeleteTopicInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import DeleteTopicInputRequestTypeDef
+
+def get_value() -> DeleteTopicInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-
-<a id="endpointtypedef"></a>
+```python title="Definition"
+class DeleteTopicInputRequestTypeDef(TypedDict):
+    TopicArn: str,
+```
 
 ## EndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "EndpointArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `EndpointArn`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-
-<a id="getendpointattributesinputrequesttypedef"></a>
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    EndpointArn: NotRequired[str],
+    Attributes: NotRequired[Dict[str, str]],
+```
 
 ## GetEndpointAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetEndpointAttributesInputRequestTypeDef
+
+def get_value() -> GetEndpointAttributesInputRequestTypeDef:
+    return {
+        "EndpointArn": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointArn`: `str`
-
-<a id="getendpointattributesresponsetypedef"></a>
+```python title="Definition"
+class GetEndpointAttributesInputRequestTypeDef(TypedDict):
+    EndpointArn: str,
+```
 
 ## GetEndpointAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetEndpointAttributesResponseTypeDef
+
+def get_value() -> GetEndpointAttributesResponseTypeDef:
+    return {
+        "Attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEndpointAttributesResponseTypeDef(TypedDict):
+    Attributes: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getplatformapplicationattributesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPlatformApplicationAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetPlatformApplicationAttributesInputRequestTypeDef
+
+def get_value() -> GetPlatformApplicationAttributesInputRequestTypeDef:
+    return {
+        "PlatformApplicationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PlatformApplicationArn`: `str`
-
-<a id="getplatformapplicationattributesresponsetypedef"></a>
+```python title="Definition"
+class GetPlatformApplicationAttributesInputRequestTypeDef(TypedDict):
+    PlatformApplicationArn: str,
+```
 
 ## GetPlatformApplicationAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetPlatformApplicationAttributesResponseTypeDef
+
+def get_value() -> GetPlatformApplicationAttributesResponseTypeDef:
+    return {
+        "Attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPlatformApplicationAttributesResponseTypeDef(TypedDict):
+    Attributes: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsmsattributesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSMSAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetSMSAttributesInputRequestTypeDef
+
+def get_value() -> GetSMSAttributesInputRequestTypeDef:
+    return {
+        "attributes": ...,
+    }
 ```
 
-Optional fields:
-
-- `attributes`: `Sequence`\[`str`\]
-
-<a id="getsmsattributesresponsetypedef"></a>
+```python title="Definition"
+class GetSMSAttributesInputRequestTypeDef(TypedDict):
+    attributes: NotRequired[Sequence[str]],
+```
 
 ## GetSMSAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetSMSAttributesResponseTypeDef
+
+def get_value() -> GetSMSAttributesResponseTypeDef:
+    return {
+        "attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSMSAttributesResponseTypeDef(TypedDict):
+    attributes: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `attributes`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsmssandboxaccountstatusresulttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSMSSandboxAccountStatusResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetSMSSandboxAccountStatusResultTypeDef
+
+def get_value() -> GetSMSSandboxAccountStatusResultTypeDef:
+    return {
+        "IsInSandbox": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSMSSandboxAccountStatusResultTypeDef(TypedDict):
+    IsInSandbox: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `IsInSandbox`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsubscriptionattributesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSubscriptionAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetSubscriptionAttributesInputRequestTypeDef
+
+def get_value() -> GetSubscriptionAttributesInputRequestTypeDef:
+    return {
+        "SubscriptionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionArn`: `str`
-
-<a id="getsubscriptionattributesresponsetypedef"></a>
+```python title="Definition"
+class GetSubscriptionAttributesInputRequestTypeDef(TypedDict):
+    SubscriptionArn: str,
+```
 
 ## GetSubscriptionAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetSubscriptionAttributesResponseTypeDef
+
+def get_value() -> GetSubscriptionAttributesResponseTypeDef:
+    return {
+        "Attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSubscriptionAttributesResponseTypeDef(TypedDict):
+    Attributes: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettopicattributesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTopicAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetTopicAttributesInputRequestTypeDef
+
+def get_value() -> GetTopicAttributesInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-
-<a id="gettopicattributesresponsetypedef"></a>
+```python title="Definition"
+class GetTopicAttributesInputRequestTypeDef(TypedDict):
+    TopicArn: str,
+```
 
 ## GetTopicAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import GetTopicAttributesResponseTypeDef
+
+def get_value() -> GetTopicAttributesResponseTypeDef:
+    return {
+        "Attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTopicAttributesResponseTypeDef(TypedDict):
+    Attributes: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEndpointsByPlatformApplicationInputListEndpointsByPlatformApplicationPaginateTypeDef
 
-<a id="listendpointsbyplatformapplicationinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import ListEndpointsByPlatformApplicationInputListEndpointsByPlatformApplicationPaginateTypeDef
 
+def get_value() -> ListEndpointsByPlatformApplicationInputListEndpointsByPlatformApplicationPaginateTypeDef:
+    return {
+        "PlatformApplicationArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListEndpointsByPlatformApplicationInputListEndpointsByPlatformApplicationPaginateTypeDef(TypedDict):
+    PlatformApplicationArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEndpointsByPlatformApplicationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListEndpointsByPlatformApplicationInputRequestTypeDef
+
+def get_value() -> ListEndpointsByPlatformApplicationInputRequestTypeDef:
+    return {
+        "PlatformApplicationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PlatformApplicationArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listendpointsbyplatformapplicationresponsetypedef"></a>
+```python title="Definition"
+class ListEndpointsByPlatformApplicationInputRequestTypeDef(TypedDict):
+    PlatformApplicationArn: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListEndpointsByPlatformApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListEndpointsByPlatformApplicationResponseTypeDef
+
+def get_value() -> ListEndpointsByPlatformApplicationResponseTypeDef:
+    return {
+        "Endpoints": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEndpointsByPlatformApplicationResponseTypeDef(TypedDict):
+    Endpoints: List[EndpointTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOriginationNumbersRequestListOriginationNumbersPaginateTypeDef
 
-<a id="listoriginationnumbersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import ListOriginationNumbersRequestListOriginationNumbersPaginateTypeDef
 
+def get_value() -> ListOriginationNumbersRequestListOriginationNumbersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListOriginationNumbersRequestListOriginationNumbersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOriginationNumbersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListOriginationNumbersRequestRequestTypeDef
+
+def get_value() -> ListOriginationNumbersRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listoriginationnumbersresulttypedef"></a>
+```python title="Definition"
+class ListOriginationNumbersRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListOriginationNumbersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListOriginationNumbersResultTypeDef
+
+def get_value() -> ListOriginationNumbersResultTypeDef:
+    return {
+        "NextToken": ...,
+        "PhoneNumbers": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOriginationNumbersResultTypeDef(TypedDict):
+    NextToken: str,
+    PhoneNumbers: List[PhoneNumberInformationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `PhoneNumbers`:
-  `List`\[[PhoneNumberInformationTypeDef](./type_defs.md#phonenumberinformationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PhoneNumberInformationTypeDef](./type_defs.md#phonenumberinformationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPhoneNumbersOptedOutInputListPhoneNumbersOptedOutPaginateTypeDef
 
-<a id="listphonenumbersoptedoutinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import ListPhoneNumbersOptedOutInputListPhoneNumbersOptedOutPaginateTypeDef
 
+def get_value() -> ListPhoneNumbersOptedOutInputListPhoneNumbersOptedOutPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListPhoneNumbersOptedOutInputListPhoneNumbersOptedOutPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPhoneNumbersOptedOutInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListPhoneNumbersOptedOutInputRequestTypeDef
+
+def get_value() -> ListPhoneNumbersOptedOutInputRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listphonenumbersoptedoutresponsetypedef"></a>
+```python title="Definition"
+class ListPhoneNumbersOptedOutInputRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## ListPhoneNumbersOptedOutResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListPhoneNumbersOptedOutResponseTypeDef
+
+def get_value() -> ListPhoneNumbersOptedOutResponseTypeDef:
+    return {
+        "phoneNumbers": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPhoneNumbersOptedOutResponseTypeDef(TypedDict):
+    phoneNumbers: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `phoneNumbers`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPlatformApplicationsInputListPlatformApplicationsPaginateTypeDef
 
-<a id="listplatformapplicationsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import ListPlatformApplicationsInputListPlatformApplicationsPaginateTypeDef
 
+def get_value() -> ListPlatformApplicationsInputListPlatformApplicationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListPlatformApplicationsInputListPlatformApplicationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPlatformApplicationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListPlatformApplicationsInputRequestTypeDef
+
+def get_value() -> ListPlatformApplicationsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listplatformapplicationsresponsetypedef"></a>
+```python title="Definition"
+class ListPlatformApplicationsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListPlatformApplicationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListPlatformApplicationsResponseTypeDef
+
+def get_value() -> ListPlatformApplicationsResponseTypeDef:
+    return {
+        "PlatformApplications": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPlatformApplicationsResponseTypeDef(TypedDict):
+    PlatformApplications: List[PlatformApplicationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PlatformApplications`:
-  `List`\[[PlatformApplicationTypeDef](./type_defs.md#platformapplicationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PlatformApplicationTypeDef](./type_defs.md#platformapplicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSMSSandboxPhoneNumbersInputListSMSSandboxPhoneNumbersPaginateTypeDef
 
-<a id="listsmssandboxphonenumbersinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import ListSMSSandboxPhoneNumbersInputListSMSSandboxPhoneNumbersPaginateTypeDef
 
+def get_value() -> ListSMSSandboxPhoneNumbersInputListSMSSandboxPhoneNumbersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSMSSandboxPhoneNumbersInputListSMSSandboxPhoneNumbersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSMSSandboxPhoneNumbersInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListSMSSandboxPhoneNumbersInputRequestTypeDef
+
+def get_value() -> ListSMSSandboxPhoneNumbersInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listsmssandboxphonenumbersresulttypedef"></a>
+```python title="Definition"
+class ListSMSSandboxPhoneNumbersInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListSMSSandboxPhoneNumbersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListSMSSandboxPhoneNumbersResultTypeDef
+
+def get_value() -> ListSMSSandboxPhoneNumbersResultTypeDef:
+    return {
+        "PhoneNumbers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSMSSandboxPhoneNumbersResultTypeDef(TypedDict):
+    PhoneNumbers: List[SMSSandboxPhoneNumberTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PhoneNumbers`:
-  `List`\[[SMSSandboxPhoneNumberTypeDef](./type_defs.md#smssandboxphonenumbertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SMSSandboxPhoneNumberTypeDef](./type_defs.md#smssandboxphonenumbertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSubscriptionsByTopicInputListSubscriptionsByTopicPaginateTypeDef
 
-<a id="listsubscriptionsbytopicinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import ListSubscriptionsByTopicInputListSubscriptionsByTopicPaginateTypeDef
 
+def get_value() -> ListSubscriptionsByTopicInputListSubscriptionsByTopicPaginateTypeDef:
+    return {
+        "TopicArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSubscriptionsByTopicInputListSubscriptionsByTopicPaginateTypeDef(TypedDict):
+    TopicArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSubscriptionsByTopicInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListSubscriptionsByTopicInputRequestTypeDef
+
+def get_value() -> ListSubscriptionsByTopicInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listsubscriptionsbytopicresponsetypedef"></a>
+```python title="Definition"
+class ListSubscriptionsByTopicInputRequestTypeDef(TypedDict):
+    TopicArn: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListSubscriptionsByTopicResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListSubscriptionsByTopicResponseTypeDef
+
+def get_value() -> ListSubscriptionsByTopicResponseTypeDef:
+    return {
+        "Subscriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSubscriptionsByTopicResponseTypeDef(TypedDict):
+    Subscriptions: List[SubscriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SubscriptionTypeDef](./type_defs.md#subscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSubscriptionsInputListSubscriptionsPaginateTypeDef
 
-<a id="listsubscriptionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import ListSubscriptionsInputListSubscriptionsPaginateTypeDef
 
+def get_value() -> ListSubscriptionsInputListSubscriptionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSubscriptionsInputListSubscriptionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSubscriptionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListSubscriptionsInputRequestTypeDef
+
+def get_value() -> ListSubscriptionsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listsubscriptionsresponsetypedef"></a>
+```python title="Definition"
+class ListSubscriptionsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListSubscriptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListSubscriptionsResponseTypeDef
+
+def get_value() -> ListSubscriptionsResponseTypeDef:
+    return {
+        "Subscriptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSubscriptionsResponseTypeDef(TypedDict):
+    Subscriptions: List[SubscriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubscriptionTypeDef](./type_defs.md#subscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTopicsInputListTopicsPaginateTypeDef
 
-<a id="listtopicsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sns.type_defs import ListTopicsInputListTopicsPaginateTypeDef
 
+def get_value() -> ListTopicsInputListTopicsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListTopicsInputListTopicsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTopicsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListTopicsInputRequestTypeDef
+
+def get_value() -> ListTopicsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listtopicsresponsetypedef"></a>
+```python title="Definition"
+class ListTopicsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListTopicsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ListTopicsResponseTypeDef
+
+def get_value() -> ListTopicsResponseTypeDef:
+    return {
+        "Topics": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTopicsResponseTypeDef(TypedDict):
+    Topics: List[TopicTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Topics`: `List`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="messageattributevaluetypedef"></a>
-
+1. See [:material-code-braces: TopicTypeDef](./type_defs.md#topictypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MessageAttributeValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import MessageAttributeValueTypeDef
+
+def get_value() -> MessageAttributeValueTypeDef:
+    return {
+        "DataType": ...,
+    }
 ```
 
-Required fields:
-
-- `DataType`: `str`
-
-Optional fields:
-
-- `StringValue`: `str`
-- `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="optinphonenumberinputrequesttypedef"></a>
+```python title="Definition"
+class MessageAttributeValueTypeDef(TypedDict):
+    DataType: str,
+    StringValue: NotRequired[str],
+    BinaryValue: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## OptInPhoneNumberInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import OptInPhoneNumberInputRequestTypeDef
+
+def get_value() -> OptInPhoneNumberInputRequestTypeDef:
+    return {
+        "phoneNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `phoneNumber`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OptInPhoneNumberInputRequestTypeDef(TypedDict):
+    phoneNumber: str,
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="phonenumberinformationtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PhoneNumberInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PhoneNumberInformationTypeDef
+
+def get_value() -> PhoneNumberInformationTypeDef:
+    return {
+        "CreatedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PhoneNumberInformationTypeDef(TypedDict):
+    CreatedAt: NotRequired[datetime],
+    PhoneNumber: NotRequired[str],
+    Status: NotRequired[str],
+    Iso2CountryCode: NotRequired[str],
+    RouteType: NotRequired[RouteTypeType],  # (1)
+    NumberCapabilities: NotRequired[List[NumberCapabilityType]],  # (2)
+```
 
-- `CreatedAt`: `datetime`
-- `PhoneNumber`: `str`
-- `Status`: `str`
-- `Iso2CountryCode`: `str`
-- `RouteType`: [RouteTypeType](./literals.md#routetypetype)
-- `NumberCapabilities`:
-  `List`\[[NumberCapabilityType](./literals.md#numbercapabilitytype)\]
-
-<a id="platformapplicationtypedef"></a>
-
+1. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
+2. See [:material-code-brackets: NumberCapabilityType](./literals.md#numbercapabilitytype) 
 ## PlatformApplicationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PlatformApplicationTypeDef
+
+def get_value() -> PlatformApplicationTypeDef:
+    return {
+        "PlatformApplicationArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `PlatformApplicationArn`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-
-<a id="publishbatchinputrequesttypedef"></a>
+```python title="Definition"
+class PlatformApplicationTypeDef(TypedDict):
+    PlatformApplicationArn: NotRequired[str],
+    Attributes: NotRequired[Dict[str, str]],
+```
 
 ## PublishBatchInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PublishBatchInputRequestTypeDef
+
+def get_value() -> PublishBatchInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+        "PublishBatchRequestEntries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishBatchInputRequestTypeDef(TypedDict):
+    TopicArn: str,
+    PublishBatchRequestEntries: Sequence[PublishBatchRequestEntryTypeDef],  # (1)
+```
 
-- `TopicArn`: `str`
-- `PublishBatchRequestEntries`:
-  `Sequence`\[[PublishBatchRequestEntryTypeDef](./type_defs.md#publishbatchrequestentrytypedef)\]
-
-<a id="publishbatchrequestentrytypedef"></a>
-
+1. See [:material-code-braces: PublishBatchRequestEntryTypeDef](./type_defs.md#publishbatchrequestentrytypedef) 
 ## PublishBatchRequestEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PublishBatchRequestEntryTypeDef
+
+def get_value() -> PublishBatchRequestEntryTypeDef:
+    return {
+        "Id": ...,
+        "Message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishBatchRequestEntryTypeDef(TypedDict):
+    Id: str,
+    Message: str,
+    Subject: NotRequired[str],
+    MessageStructure: NotRequired[str],
+    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
+    MessageDeduplicationId: NotRequired[str],
+    MessageGroupId: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Message`: `str`
-
-Optional fields:
-
-- `Subject`: `str`
-- `MessageStructure`: `str`
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageDeduplicationId`: `str`
-- `MessageGroupId`: `str`
-
-<a id="publishbatchresponsetypedef"></a>
-
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
 ## PublishBatchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PublishBatchResponseTypeDef
+
+def get_value() -> PublishBatchResponseTypeDef:
+    return {
+        "Successful": ...,
+        "Failed": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishBatchResponseTypeDef(TypedDict):
+    Successful: List[PublishBatchResultEntryTypeDef],  # (1)
+    Failed: List[BatchResultErrorEntryTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Successful`:
-  `List`\[[PublishBatchResultEntryTypeDef](./type_defs.md#publishbatchresultentrytypedef)\]
-- `Failed`:
-  `List`\[[BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="publishbatchresultentrytypedef"></a>
-
+1. See [:material-code-braces: PublishBatchResultEntryTypeDef](./type_defs.md#publishbatchresultentrytypedef) 
+2. See [:material-code-braces: BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PublishBatchResultEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PublishBatchResultEntryTypeDef
+
+def get_value() -> PublishBatchResultEntryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `MessageId`: `str`
-- `SequenceNumber`: `str`
-
-<a id="publishinputplatformendpointpublishtypedef"></a>
+```python title="Definition"
+class PublishBatchResultEntryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    MessageId: NotRequired[str],
+    SequenceNumber: NotRequired[str],
+```
 
 ## PublishInputPlatformEndpointPublishTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PublishInputPlatformEndpointPublishTypeDef
+
+def get_value() -> PublishInputPlatformEndpointPublishTypeDef:
+    return {
+        "Message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishInputPlatformEndpointPublishTypeDef(TypedDict):
+    Message: str,
+    TopicArn: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    Subject: NotRequired[str],
+    MessageStructure: NotRequired[str],
+    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
+    MessageDeduplicationId: NotRequired[str],
+    MessageGroupId: NotRequired[str],
+```
 
-- `Message`: `str`
-
-Optional fields:
-
-- `TopicArn`: `str`
-- `PhoneNumber`: `str`
-- `Subject`: `str`
-- `MessageStructure`: `str`
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageDeduplicationId`: `str`
-- `MessageGroupId`: `str`
-
-<a id="publishinputrequesttypedef"></a>
-
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
 ## PublishInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PublishInputRequestTypeDef
+
+def get_value() -> PublishInputRequestTypeDef:
+    return {
+        "Message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishInputRequestTypeDef(TypedDict):
+    Message: str,
+    TopicArn: NotRequired[str],
+    TargetArn: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    Subject: NotRequired[str],
+    MessageStructure: NotRequired[str],
+    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
+    MessageDeduplicationId: NotRequired[str],
+    MessageGroupId: NotRequired[str],
+```
 
-- `Message`: `str`
-
-Optional fields:
-
-- `TopicArn`: `str`
-- `TargetArn`: `str`
-- `PhoneNumber`: `str`
-- `Subject`: `str`
-- `MessageStructure`: `str`
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageDeduplicationId`: `str`
-- `MessageGroupId`: `str`
-
-<a id="publishinputtopicpublishtypedef"></a>
-
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
 ## PublishInputTopicPublishTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PublishInputTopicPublishTypeDef
+
+def get_value() -> PublishInputTopicPublishTypeDef:
+    return {
+        "Message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishInputTopicPublishTypeDef(TypedDict):
+    Message: str,
+    TargetArn: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    Subject: NotRequired[str],
+    MessageStructure: NotRequired[str],
+    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (1)
+    MessageDeduplicationId: NotRequired[str],
+    MessageGroupId: NotRequired[str],
+```
 
-- `Message`: `str`
-
-Optional fields:
-
-- `TargetArn`: `str`
-- `PhoneNumber`: `str`
-- `Subject`: `str`
-- `MessageStructure`: `str`
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageDeduplicationId`: `str`
-- `MessageGroupId`: `str`
-
-<a id="publishresponsetypedef"></a>
-
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
 ## PublishResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import PublishResponseTypeDef
+
+def get_value() -> PublishResponseTypeDef:
+    return {
+        "MessageId": ...,
+        "SequenceNumber": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishResponseTypeDef(TypedDict):
+    MessageId: str,
+    SequenceNumber: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MessageId`: `str`
-- `SequenceNumber`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removepermissioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemovePermissionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import RemovePermissionInputRequestTypeDef
+
+def get_value() -> RemovePermissionInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+        "Label": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-- `Label`: `str`
-
-<a id="removepermissioninputtopicremovepermissiontypedef"></a>
+```python title="Definition"
+class RemovePermissionInputRequestTypeDef(TypedDict):
+    TopicArn: str,
+    Label: str,
+```
 
 ## RemovePermissionInputTopicRemovePermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import RemovePermissionInputTopicRemovePermissionTypeDef
+
+def get_value() -> RemovePermissionInputTopicRemovePermissionTypeDef:
+    return {
+        "Label": ...,
+    }
 ```
 
-Required fields:
-
-- `Label`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RemovePermissionInputTopicRemovePermissionTypeDef(TypedDict):
+    Label: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="smssandboxphonenumbertypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SMSSandboxPhoneNumberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SMSSandboxPhoneNumberTypeDef
+
+def get_value() -> SMSSandboxPhoneNumberTypeDef:
+    return {
+        "PhoneNumber": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SMSSandboxPhoneNumberTypeDef(TypedDict):
+    PhoneNumber: NotRequired[str],
+    Status: NotRequired[SMSSandboxPhoneNumberVerificationStatusType],  # (1)
+```
 
-- `PhoneNumber`: `str`
-- `Status`:
-  [SMSSandboxPhoneNumberVerificationStatusType](./literals.md#smssandboxphonenumberverificationstatustype)
-
-<a id="serviceresourceplatformapplicationrequesttypedef"></a>
-
+1. See [:material-code-brackets: SMSSandboxPhoneNumberVerificationStatusType](./literals.md#smssandboxphonenumberverificationstatustype) 
 ## ServiceResourcePlatformApplicationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ServiceResourcePlatformApplicationRequestTypeDef
+
+def get_value() -> ServiceResourcePlatformApplicationRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="serviceresourceplatformendpointrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourcePlatformApplicationRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## ServiceResourcePlatformEndpointRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ServiceResourcePlatformEndpointRequestTypeDef
+
+def get_value() -> ServiceResourcePlatformEndpointRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="serviceresourcesubscriptionrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourcePlatformEndpointRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## ServiceResourceSubscriptionRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ServiceResourceSubscriptionRequestTypeDef
+
+def get_value() -> ServiceResourceSubscriptionRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="serviceresourcetopicrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceSubscriptionRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## ServiceResourceTopicRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import ServiceResourceTopicRequestTypeDef
+
+def get_value() -> ServiceResourceTopicRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="setendpointattributesinputplatformendpointsetattributestypedef"></a>
+```python title="Definition"
+class ServiceResourceTopicRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## SetEndpointAttributesInputPlatformEndpointSetAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SetEndpointAttributesInputPlatformEndpointSetAttributesTypeDef
+
+def get_value() -> SetEndpointAttributesInputPlatformEndpointSetAttributesTypeDef:
+    return {
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
-
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="setendpointattributesinputrequesttypedef"></a>
+```python title="Definition"
+class SetEndpointAttributesInputPlatformEndpointSetAttributesTypeDef(TypedDict):
+    Attributes: Mapping[str, str],
+```
 
 ## SetEndpointAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SetEndpointAttributesInputRequestTypeDef
+
+def get_value() -> SetEndpointAttributesInputRequestTypeDef:
+    return {
+        "EndpointArn": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointArn`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="setplatformapplicationattributesinputplatformapplicationsetattributestypedef"></a>
+```python title="Definition"
+class SetEndpointAttributesInputRequestTypeDef(TypedDict):
+    EndpointArn: str,
+    Attributes: Mapping[str, str],
+```
 
 ## SetPlatformApplicationAttributesInputPlatformApplicationSetAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SetPlatformApplicationAttributesInputPlatformApplicationSetAttributesTypeDef
+
+def get_value() -> SetPlatformApplicationAttributesInputPlatformApplicationSetAttributesTypeDef:
+    return {
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
-
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="setplatformapplicationattributesinputrequesttypedef"></a>
+```python title="Definition"
+class SetPlatformApplicationAttributesInputPlatformApplicationSetAttributesTypeDef(TypedDict):
+    Attributes: Mapping[str, str],
+```
 
 ## SetPlatformApplicationAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SetPlatformApplicationAttributesInputRequestTypeDef
+
+def get_value() -> SetPlatformApplicationAttributesInputRequestTypeDef:
+    return {
+        "PlatformApplicationArn": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
-
-- `PlatformApplicationArn`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="setsmsattributesinputrequesttypedef"></a>
+```python title="Definition"
+class SetPlatformApplicationAttributesInputRequestTypeDef(TypedDict):
+    PlatformApplicationArn: str,
+    Attributes: Mapping[str, str],
+```
 
 ## SetSMSAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SetSMSAttributesInputRequestTypeDef
+
+def get_value() -> SetSMSAttributesInputRequestTypeDef:
+    return {
+        "attributes": ...,
+    }
 ```
 
-Required fields:
-
-- `attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="setsubscriptionattributesinputrequesttypedef"></a>
+```python title="Definition"
+class SetSMSAttributesInputRequestTypeDef(TypedDict):
+    attributes: Mapping[str, str],
+```
 
 ## SetSubscriptionAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SetSubscriptionAttributesInputRequestTypeDef
+
+def get_value() -> SetSubscriptionAttributesInputRequestTypeDef:
+    return {
+        "SubscriptionArn": ...,
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionArn`: `str`
-- `AttributeName`: `str`
-
-Optional fields:
-
-- `AttributeValue`: `str`
-
-<a id="setsubscriptionattributesinputsubscriptionsetattributestypedef"></a>
+```python title="Definition"
+class SetSubscriptionAttributesInputRequestTypeDef(TypedDict):
+    SubscriptionArn: str,
+    AttributeName: str,
+    AttributeValue: NotRequired[str],
+```
 
 ## SetSubscriptionAttributesInputSubscriptionSetAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SetSubscriptionAttributesInputSubscriptionSetAttributesTypeDef
+
+def get_value() -> SetSubscriptionAttributesInputSubscriptionSetAttributesTypeDef:
+    return {
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
-
-- `AttributeName`: `str`
-
-Optional fields:
-
-- `AttributeValue`: `str`
-
-<a id="settopicattributesinputrequesttypedef"></a>
+```python title="Definition"
+class SetSubscriptionAttributesInputSubscriptionSetAttributesTypeDef(TypedDict):
+    AttributeName: str,
+    AttributeValue: NotRequired[str],
+```
 
 ## SetTopicAttributesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SetTopicAttributesInputRequestTypeDef
+
+def get_value() -> SetTopicAttributesInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-- `AttributeName`: `str`
-
-Optional fields:
-
-- `AttributeValue`: `str`
-
-<a id="settopicattributesinputtopicsetattributestypedef"></a>
+```python title="Definition"
+class SetTopicAttributesInputRequestTypeDef(TypedDict):
+    TopicArn: str,
+    AttributeName: str,
+    AttributeValue: NotRequired[str],
+```
 
 ## SetTopicAttributesInputTopicSetAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SetTopicAttributesInputTopicSetAttributesTypeDef
+
+def get_value() -> SetTopicAttributesInputTopicSetAttributesTypeDef:
+    return {
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
-
-- `AttributeName`: `str`
-
-Optional fields:
-
-- `AttributeValue`: `str`
-
-<a id="subscribeinputrequesttypedef"></a>
+```python title="Definition"
+class SetTopicAttributesInputTopicSetAttributesTypeDef(TypedDict):
+    AttributeName: str,
+    AttributeValue: NotRequired[str],
+```
 
 ## SubscribeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SubscribeInputRequestTypeDef
+
+def get_value() -> SubscribeInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+        "Protocol": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-- `Protocol`: `str`
-
-Optional fields:
-
-- `Endpoint`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `ReturnSubscriptionArn`: `bool`
-
-<a id="subscribeinputtopicsubscribetypedef"></a>
+```python title="Definition"
+class SubscribeInputRequestTypeDef(TypedDict):
+    TopicArn: str,
+    Protocol: str,
+    Endpoint: NotRequired[str],
+    Attributes: NotRequired[Mapping[str, str]],
+    ReturnSubscriptionArn: NotRequired[bool],
+```
 
 ## SubscribeInputTopicSubscribeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SubscribeInputTopicSubscribeTypeDef
+
+def get_value() -> SubscribeInputTopicSubscribeTypeDef:
+    return {
+        "Protocol": ...,
+    }
 ```
 
-Required fields:
-
-- `Protocol`: `str`
-
-Optional fields:
-
-- `Endpoint`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `ReturnSubscriptionArn`: `bool`
-
-<a id="subscriberesponsetypedef"></a>
+```python title="Definition"
+class SubscribeInputTopicSubscribeTypeDef(TypedDict):
+    Protocol: str,
+    Endpoint: NotRequired[str],
+    Attributes: NotRequired[Mapping[str, str]],
+    ReturnSubscriptionArn: NotRequired[bool],
+```
 
 ## SubscribeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SubscribeResponseTypeDef
+
+def get_value() -> SubscribeResponseTypeDef:
+    return {
+        "SubscriptionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubscribeResponseTypeDef(TypedDict):
+    SubscriptionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SubscriptionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="subscriptiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SubscriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import SubscriptionTypeDef
+
+def get_value() -> SubscriptionTypeDef:
+    return {
+        "SubscriptionArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubscriptionArn`: `str`
-- `Owner`: `str`
-- `Protocol`: `str`
-- `Endpoint`: `str`
-- `TopicArn`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SubscriptionTypeDef(TypedDict):
+    SubscriptionArn: NotRequired[str],
+    Owner: NotRequired[str],
+    Protocol: NotRequired[str],
+    Endpoint: NotRequired[str],
+    TopicArn: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="topictypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TopicTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import TopicTypeDef
+
+def get_value() -> TopicTypeDef:
+    return {
+        "TopicArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `TopicArn`: `str`
-
-<a id="unsubscribeinputrequesttypedef"></a>
+```python title="Definition"
+class TopicTypeDef(TypedDict):
+    TopicArn: NotRequired[str],
+```
 
 ## UnsubscribeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import UnsubscribeInputRequestTypeDef
+
+def get_value() -> UnsubscribeInputRequestTypeDef:
+    return {
+        "SubscriptionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionArn`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class UnsubscribeInputRequestTypeDef(TypedDict):
+    SubscriptionArn: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="verifysmssandboxphonenumberinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## VerifySMSSandboxPhoneNumberInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.type_defs import VerifySMSSandboxPhoneNumberInputRequestTypeDef
+
+def get_value() -> VerifySMSSandboxPhoneNumberInputRequestTypeDef:
+    return {
+        "PhoneNumber": ...,
+        "OneTimePassword": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VerifySMSSandboxPhoneNumberInputRequestTypeDef(TypedDict):
+    PhoneNumber: str,
+    OneTimePassword: str,
+```
 
-- `PhoneNumber`: `str`
-- `OneTimePassword`: `str`

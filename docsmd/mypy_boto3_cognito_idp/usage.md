@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-cognitoidentityprovider-module"></a>
-
-# Examples for boto3 CognitoIdentityProvider module
+# Examples
 
 > [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Examples
 
-- [Examples for boto3 CognitoIdentityProvider module](#examples-for-boto3-cognitoidentityprovider-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+    type annotations stubs module [mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[cognito-idp]` package installed.
 
-Write your `CognitoIdentityProvider` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `CognitoIdentityProvider` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CognitoIdentityProviderClient
-# and provides type checking and code completion
-client = session.client("cognito-idp")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_custom_attributes()
 
-# paginator has type AdminListGroupsForUserPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("admin_list_groups_for_user")
-for item in paginator.paginate(...):
-    # item has type AdminListGroupsForUserResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("cognito-idp")  # (1)
+    result = client.admin_create_user()  # (2)
+    ```
+
+    1. client: [CognitoIdentityProviderClient](./client.md)
+    2. result: [:material-code-braces: AdminCreateUserResponseTypeDef](./type_defs.md#admincreateuserresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("cognito-idp")  # (1)
+
+    paginator = client.get_paginator("admin_list_groups_for_user")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CognitoIdentityProviderClient](./client.md)
+    2. paginator: [AdminListGroupsForUserPaginator](./paginators.md#adminlistgroupsforuserpaginator)
+    3. item: [:material-code-braces: AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[cognito-idp]` or a standalone `mypy_boto3_cognito_idp`
-package, you have to explicitly specify `client: CognitoIdentityProviderClient`
-type annotation.
+With `boto3-stubs-lite[cognito-idp]`
+or a standalone `mypy_boto3_cognito_idp` package, you have to explicitly specify `client: CognitoIdentityProviderClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
-from mypy_boto3_cognito_idp.paginator import AdminListGroupsForUserPaginator
-
-from mypy_boto3_cognito_idp.literals import PaginatorName
-
-from mypy_boto3_cognito_idp.type_defs import Dict[str, Any]
-from mypy_boto3_cognito_idp.type_defs import AdminListGroupsForUserResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CognitoIdentityProviderClient = session.client("cognito-idp")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.add_custom_attributes()
+    from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
+    from mypy_boto3_cognito_idp.type_defs import AdminCreateUserResponseTypeDef
+    from mypy_boto3_cognito_idp.type_defs import AdminCreateUserRequestRequestTypeDef
 
-paginator_name: PaginatorName = "admin_list_groups_for_user"
-paginator: AdminListGroupsForUserPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: AdminListGroupsForUserResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: CognitoIdentityProviderClient = session.client("cognito-idp")
+
+    kwargs: AdminCreateUserRequestRequestTypeDef = {...}
+    result: AdminCreateUserResponseTypeDef = client.admin_create_user(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
+    from mypy_boto3_cognito_idp.paginator import AdminListGroupsForUserPaginator
+    from mypy_boto3_cognito_idp.type_defs import AdminListGroupsForUserResponseTypeDef
+
+
+    session = Session()
+    client: CognitoIdentityProviderClient = session.client("cognito-idp")
+
+    paginator: AdminListGroupsForUserPaginator = client.get_paginator("admin_list_groups_for_user")
+    for item in paginator.paginate(...):
+        item: AdminListGroupsForUserResponseTypeDef
+        print(item)
+    ```
+
+
+
+

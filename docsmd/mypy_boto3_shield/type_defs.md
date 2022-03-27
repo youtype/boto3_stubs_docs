@@ -1,1083 +1,1357 @@
-<a id="typed-dictionaries-for-boto3-shield-module"></a>
-
-# Typed dictionaries for boto3 Shield module
+# Typed dictionaries
 
 > [Index](../README.md) > [Shield](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
-type annotations stubs module
-[mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Shield module](#typed-dictionaries-for-boto3-shield-module)
-  - [ApplicationLayerAutomaticResponseConfigurationTypeDef](#applicationlayerautomaticresponseconfigurationtypedef)
-  - [AssociateDRTLogBucketRequestRequestTypeDef](#associatedrtlogbucketrequestrequesttypedef)
-  - [AssociateDRTRoleRequestRequestTypeDef](#associatedrtrolerequestrequesttypedef)
-  - [AssociateHealthCheckRequestRequestTypeDef](#associatehealthcheckrequestrequesttypedef)
-  - [AssociateProactiveEngagementDetailsRequestRequestTypeDef](#associateproactiveengagementdetailsrequestrequesttypedef)
-  - [AttackDetailTypeDef](#attackdetailtypedef)
-  - [AttackPropertyTypeDef](#attackpropertytypedef)
-  - [AttackStatisticsDataItemTypeDef](#attackstatisticsdataitemtypedef)
-  - [AttackSummaryTypeDef](#attacksummarytypedef)
-  - [AttackVectorDescriptionTypeDef](#attackvectordescriptiontypedef)
-  - [AttackVolumeStatisticsTypeDef](#attackvolumestatisticstypedef)
-  - [AttackVolumeTypeDef](#attackvolumetypedef)
-  - [ContributorTypeDef](#contributortypedef)
-  - [CreateProtectionGroupRequestRequestTypeDef](#createprotectiongrouprequestrequesttypedef)
-  - [CreateProtectionRequestRequestTypeDef](#createprotectionrequestrequesttypedef)
-  - [CreateProtectionResponseTypeDef](#createprotectionresponsetypedef)
-  - [DeleteProtectionGroupRequestRequestTypeDef](#deleteprotectiongrouprequestrequesttypedef)
-  - [DeleteProtectionRequestRequestTypeDef](#deleteprotectionrequestrequesttypedef)
-  - [DescribeAttackRequestRequestTypeDef](#describeattackrequestrequesttypedef)
-  - [DescribeAttackResponseTypeDef](#describeattackresponsetypedef)
-  - [DescribeAttackStatisticsResponseTypeDef](#describeattackstatisticsresponsetypedef)
-  - [DescribeDRTAccessResponseTypeDef](#describedrtaccessresponsetypedef)
-  - [DescribeEmergencyContactSettingsResponseTypeDef](#describeemergencycontactsettingsresponsetypedef)
-  - [DescribeProtectionGroupRequestRequestTypeDef](#describeprotectiongrouprequestrequesttypedef)
-  - [DescribeProtectionGroupResponseTypeDef](#describeprotectiongroupresponsetypedef)
-  - [DescribeProtectionRequestRequestTypeDef](#describeprotectionrequestrequesttypedef)
-  - [DescribeProtectionResponseTypeDef](#describeprotectionresponsetypedef)
-  - [DescribeSubscriptionResponseTypeDef](#describesubscriptionresponsetypedef)
-  - [DisableApplicationLayerAutomaticResponseRequestRequestTypeDef](#disableapplicationlayerautomaticresponserequestrequesttypedef)
-  - [DisassociateDRTLogBucketRequestRequestTypeDef](#disassociatedrtlogbucketrequestrequesttypedef)
-  - [DisassociateHealthCheckRequestRequestTypeDef](#disassociatehealthcheckrequestrequesttypedef)
-  - [EmergencyContactTypeDef](#emergencycontacttypedef)
-  - [EnableApplicationLayerAutomaticResponseRequestRequestTypeDef](#enableapplicationlayerautomaticresponserequestrequesttypedef)
-  - [GetSubscriptionStateResponseTypeDef](#getsubscriptionstateresponsetypedef)
-  - [LimitTypeDef](#limittypedef)
-  - [ListAttacksRequestRequestTypeDef](#listattacksrequestrequesttypedef)
-  - [ListAttacksResponseTypeDef](#listattacksresponsetypedef)
-  - [ListProtectionGroupsRequestRequestTypeDef](#listprotectiongroupsrequestrequesttypedef)
-  - [ListProtectionGroupsResponseTypeDef](#listprotectiongroupsresponsetypedef)
-  - [ListProtectionsRequestRequestTypeDef](#listprotectionsrequestrequesttypedef)
-  - [ListProtectionsResponseTypeDef](#listprotectionsresponsetypedef)
-  - [ListResourcesInProtectionGroupRequestRequestTypeDef](#listresourcesinprotectiongrouprequestrequesttypedef)
-  - [ListResourcesInProtectionGroupResponseTypeDef](#listresourcesinprotectiongroupresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MitigationTypeDef](#mitigationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProtectionGroupArbitraryPatternLimitsTypeDef](#protectiongrouparbitrarypatternlimitstypedef)
-  - [ProtectionGroupLimitsTypeDef](#protectiongrouplimitstypedef)
-  - [ProtectionGroupPatternTypeLimitsTypeDef](#protectiongrouppatterntypelimitstypedef)
-  - [ProtectionGroupTypeDef](#protectiongrouptypedef)
-  - [ProtectionLimitsTypeDef](#protectionlimitstypedef)
-  - [ProtectionTypeDef](#protectiontypedef)
-  - [ResponseActionTypeDef](#responseactiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SubResourceSummaryTypeDef](#subresourcesummarytypedef)
-  - [SubscriptionLimitsTypeDef](#subscriptionlimitstypedef)
-  - [SubscriptionTypeDef](#subscriptiontypedef)
-  - [SummarizedAttackVectorTypeDef](#summarizedattackvectortypedef)
-  - [SummarizedCounterTypeDef](#summarizedcountertypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TimeRangeTypeDef](#timerangetypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef](#updateapplicationlayerautomaticresponserequestrequesttypedef)
-  - [UpdateEmergencyContactSettingsRequestRequestTypeDef](#updateemergencycontactsettingsrequestrequesttypedef)
-  - [UpdateProtectionGroupRequestRequestTypeDef](#updateprotectiongrouprequestrequesttypedef)
-  - [UpdateSubscriptionRequestRequestTypeDef](#updatesubscriptionrequestrequesttypedef)
-
-<a id="applicationlayerautomaticresponseconfigurationtypedef"></a>
+    Auto-generated documentation for [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
+    type annotations stubs module [mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
 
 ## ApplicationLayerAutomaticResponseConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ApplicationLayerAutomaticResponseConfigurationTypeDef
+
+def get_value() -> ApplicationLayerAutomaticResponseConfigurationTypeDef:
+    return {
+        "Status": ...,
+        "Action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationLayerAutomaticResponseConfigurationTypeDef(TypedDict):
+    Status: ApplicationLayerAutomaticResponseStatusType,  # (1)
+    Action: ResponseActionTypeDef,  # (2)
+```
 
-- `Status`:
-  [ApplicationLayerAutomaticResponseStatusType](./literals.md#applicationlayerautomaticresponsestatustype)
-- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
-
-<a id="associatedrtlogbucketrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApplicationLayerAutomaticResponseStatusType](./literals.md#applicationlayerautomaticresponsestatustype) 
+2. See [:material-code-braces: ResponseActionTypeDef](./type_defs.md#responseactiontypedef) 
 ## AssociateDRTLogBucketRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AssociateDRTLogBucketRequestRequestTypeDef
+
+def get_value() -> AssociateDRTLogBucketRequestRequestTypeDef:
+    return {
+        "LogBucket": ...,
+    }
 ```
 
-Required fields:
-
-- `LogBucket`: `str`
-
-<a id="associatedrtrolerequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateDRTLogBucketRequestRequestTypeDef(TypedDict):
+    LogBucket: str,
+```
 
 ## AssociateDRTRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AssociateDRTRoleRequestRequestTypeDef
+
+def get_value() -> AssociateDRTRoleRequestRequestTypeDef:
+    return {
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleArn`: `str`
-
-<a id="associatehealthcheckrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateDRTRoleRequestRequestTypeDef(TypedDict):
+    RoleArn: str,
+```
 
 ## AssociateHealthCheckRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AssociateHealthCheckRequestRequestTypeDef
+
+def get_value() -> AssociateHealthCheckRequestRequestTypeDef:
+    return {
+        "ProtectionId": ...,
+        "HealthCheckArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ProtectionId`: `str`
-- `HealthCheckArn`: `str`
-
-<a id="associateproactiveengagementdetailsrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateHealthCheckRequestRequestTypeDef(TypedDict):
+    ProtectionId: str,
+    HealthCheckArn: str,
+```
 
 ## AssociateProactiveEngagementDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AssociateProactiveEngagementDetailsRequestRequestTypeDef
+
+def get_value() -> AssociateProactiveEngagementDetailsRequestRequestTypeDef:
+    return {
+        "EmergencyContactList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateProactiveEngagementDetailsRequestRequestTypeDef(TypedDict):
+    EmergencyContactList: Sequence[EmergencyContactTypeDef],  # (1)
+```
 
-- `EmergencyContactList`:
-  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
-
-<a id="attackdetailtypedef"></a>
-
+1. See [:material-code-braces: EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef) 
 ## AttackDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AttackDetailTypeDef
+
+def get_value() -> AttackDetailTypeDef:
+    return {
+        "AttackId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttackDetailTypeDef(TypedDict):
+    AttackId: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    SubResources: NotRequired[List[SubResourceSummaryTypeDef]],  # (1)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    AttackCounters: NotRequired[List[SummarizedCounterTypeDef]],  # (2)
+    AttackProperties: NotRequired[List[AttackPropertyTypeDef]],  # (3)
+    Mitigations: NotRequired[List[MitigationTypeDef]],  # (4)
+```
 
-- `AttackId`: `str`
-- `ResourceArn`: `str`
-- `SubResources`:
-  `List`\[[SubResourceSummaryTypeDef](./type_defs.md#subresourcesummarytypedef)\]
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `AttackCounters`:
-  `List`\[[SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef)\]
-- `AttackProperties`:
-  `List`\[[AttackPropertyTypeDef](./type_defs.md#attackpropertytypedef)\]
-- `Mitigations`:
-  `List`\[[MitigationTypeDef](./type_defs.md#mitigationtypedef)\]
-
-<a id="attackpropertytypedef"></a>
-
+1. See [:material-code-braces: SubResourceSummaryTypeDef](./type_defs.md#subresourcesummarytypedef) 
+2. See [:material-code-braces: SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef) 
+3. See [:material-code-braces: AttackPropertyTypeDef](./type_defs.md#attackpropertytypedef) 
+4. See [:material-code-braces: MitigationTypeDef](./type_defs.md#mitigationtypedef) 
 ## AttackPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AttackPropertyTypeDef
+
+def get_value() -> AttackPropertyTypeDef:
+    return {
+        "AttackLayer": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttackPropertyTypeDef(TypedDict):
+    AttackLayer: NotRequired[AttackLayerType],  # (1)
+    AttackPropertyIdentifier: NotRequired[AttackPropertyIdentifierType],  # (2)
+    TopContributors: NotRequired[List[ContributorTypeDef]],  # (3)
+    Unit: NotRequired[UnitType],  # (4)
+    Total: NotRequired[int],
+```
 
-- `AttackLayer`: [AttackLayerType](./literals.md#attacklayertype)
-- `AttackPropertyIdentifier`:
-  [AttackPropertyIdentifierType](./literals.md#attackpropertyidentifiertype)
-- `TopContributors`:
-  `List`\[[ContributorTypeDef](./type_defs.md#contributortypedef)\]
-- `Unit`: [UnitType](./literals.md#unittype)
-- `Total`: `int`
-
-<a id="attackstatisticsdataitemtypedef"></a>
-
+1. See [:material-code-brackets: AttackLayerType](./literals.md#attacklayertype) 
+2. See [:material-code-brackets: AttackPropertyIdentifierType](./literals.md#attackpropertyidentifiertype) 
+3. See [:material-code-braces: ContributorTypeDef](./type_defs.md#contributortypedef) 
+4. See [:material-code-brackets: UnitType](./literals.md#unittype) 
 ## AttackStatisticsDataItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AttackStatisticsDataItemTypeDef
+
+def get_value() -> AttackStatisticsDataItemTypeDef:
+    return {
+        "AttackCount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AttackStatisticsDataItemTypeDef(TypedDict):
+    AttackCount: int,
+    AttackVolume: NotRequired[AttackVolumeTypeDef],  # (1)
+```
 
-- `AttackCount`: `int`
-
-Optional fields:
-
-- `AttackVolume`: [AttackVolumeTypeDef](./type_defs.md#attackvolumetypedef)
-
-<a id="attacksummarytypedef"></a>
-
+1. See [:material-code-braces: AttackVolumeTypeDef](./type_defs.md#attackvolumetypedef) 
 ## AttackSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AttackSummaryTypeDef
+
+def get_value() -> AttackSummaryTypeDef:
+    return {
+        "AttackId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttackSummaryTypeDef(TypedDict):
+    AttackId: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    AttackVectors: NotRequired[List[AttackVectorDescriptionTypeDef]],  # (1)
+```
 
-- `AttackId`: `str`
-- `ResourceArn`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `AttackVectors`:
-  `List`\[[AttackVectorDescriptionTypeDef](./type_defs.md#attackvectordescriptiontypedef)\]
-
-<a id="attackvectordescriptiontypedef"></a>
-
+1. See [:material-code-braces: AttackVectorDescriptionTypeDef](./type_defs.md#attackvectordescriptiontypedef) 
 ## AttackVectorDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AttackVectorDescriptionTypeDef
+
+def get_value() -> AttackVectorDescriptionTypeDef:
+    return {
+        "VectorType": ...,
+    }
 ```
 
-Required fields:
-
-- `VectorType`: `str`
-
-<a id="attackvolumestatisticstypedef"></a>
+```python title="Definition"
+class AttackVectorDescriptionTypeDef(TypedDict):
+    VectorType: str,
+```
 
 ## AttackVolumeStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AttackVolumeStatisticsTypeDef
+
+def get_value() -> AttackVolumeStatisticsTypeDef:
+    return {
+        "Max": ...,
+    }
 ```
 
-Required fields:
-
-- `Max`: `float`
-
-<a id="attackvolumetypedef"></a>
+```python title="Definition"
+class AttackVolumeStatisticsTypeDef(TypedDict):
+    Max: float,
+```
 
 ## AttackVolumeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import AttackVolumeTypeDef
+
+def get_value() -> AttackVolumeTypeDef:
+    return {
+        "BitsPerSecond": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttackVolumeTypeDef(TypedDict):
+    BitsPerSecond: NotRequired[AttackVolumeStatisticsTypeDef],  # (1)
+    PacketsPerSecond: NotRequired[AttackVolumeStatisticsTypeDef],  # (1)
+    RequestsPerSecond: NotRequired[AttackVolumeStatisticsTypeDef],  # (1)
+```
 
-- `BitsPerSecond`:
-  [AttackVolumeStatisticsTypeDef](./type_defs.md#attackvolumestatisticstypedef)
-- `PacketsPerSecond`:
-  [AttackVolumeStatisticsTypeDef](./type_defs.md#attackvolumestatisticstypedef)
-- `RequestsPerSecond`:
-  [AttackVolumeStatisticsTypeDef](./type_defs.md#attackvolumestatisticstypedef)
-
-<a id="contributortypedef"></a>
-
+1. See [:material-code-braces: AttackVolumeStatisticsTypeDef](./type_defs.md#attackvolumestatisticstypedef) 
+2. See [:material-code-braces: AttackVolumeStatisticsTypeDef](./type_defs.md#attackvolumestatisticstypedef) 
+3. See [:material-code-braces: AttackVolumeStatisticsTypeDef](./type_defs.md#attackvolumestatisticstypedef) 
 ## ContributorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ContributorTypeDef
+
+def get_value() -> ContributorTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Value`: `int`
-
-<a id="createprotectiongrouprequestrequesttypedef"></a>
+```python title="Definition"
+class ContributorTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[int],
+```
 
 ## CreateProtectionGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import CreateProtectionGroupRequestRequestTypeDef
+
+def get_value() -> CreateProtectionGroupRequestRequestTypeDef:
+    return {
+        "ProtectionGroupId": ...,
+        "Aggregation": ...,
+        "Pattern": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProtectionGroupRequestRequestTypeDef(TypedDict):
+    ProtectionGroupId: str,
+    Aggregation: ProtectionGroupAggregationType,  # (1)
+    Pattern: ProtectionGroupPatternType,  # (2)
+    ResourceType: NotRequired[ProtectedResourceTypeType],  # (3)
+    Members: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `ProtectionGroupId`: `str`
-- `Aggregation`:
-  [ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype)
-- `Pattern`:
-  [ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype)
-
-Optional fields:
-
-- `ResourceType`:
-  [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createprotectionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype) 
+2. See [:material-code-brackets: ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype) 
+3. See [:material-code-brackets: ProtectedResourceTypeType](./literals.md#protectedresourcetypetype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateProtectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import CreateProtectionRequestRequestTypeDef
+
+def get_value() -> CreateProtectionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProtectionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ResourceArn: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createprotectionresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateProtectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import CreateProtectionResponseTypeDef
+
+def get_value() -> CreateProtectionResponseTypeDef:
+    return {
+        "ProtectionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProtectionResponseTypeDef(TypedDict):
+    ProtectionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ProtectionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprotectiongrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProtectionGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DeleteProtectionGroupRequestRequestTypeDef
+
+def get_value() -> DeleteProtectionGroupRequestRequestTypeDef:
+    return {
+        "ProtectionGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `ProtectionGroupId`: `str`
-
-<a id="deleteprotectionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteProtectionGroupRequestRequestTypeDef(TypedDict):
+    ProtectionGroupId: str,
+```
 
 ## DeleteProtectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DeleteProtectionRequestRequestTypeDef
+
+def get_value() -> DeleteProtectionRequestRequestTypeDef:
+    return {
+        "ProtectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `ProtectionId`: `str`
-
-<a id="describeattackrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteProtectionRequestRequestTypeDef(TypedDict):
+    ProtectionId: str,
+```
 
 ## DescribeAttackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeAttackRequestRequestTypeDef
+
+def get_value() -> DescribeAttackRequestRequestTypeDef:
+    return {
+        "AttackId": ...,
+    }
 ```
 
-Required fields:
-
-- `AttackId`: `str`
-
-<a id="describeattackresponsetypedef"></a>
+```python title="Definition"
+class DescribeAttackRequestRequestTypeDef(TypedDict):
+    AttackId: str,
+```
 
 ## DescribeAttackResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeAttackResponseTypeDef
+
+def get_value() -> DescribeAttackResponseTypeDef:
+    return {
+        "Attack": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAttackResponseTypeDef(TypedDict):
+    Attack: AttackDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Attack`: [AttackDetailTypeDef](./type_defs.md#attackdetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeattackstatisticsresponsetypedef"></a>
-
+1. See [:material-code-braces: AttackDetailTypeDef](./type_defs.md#attackdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAttackStatisticsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeAttackStatisticsResponseTypeDef
+
+def get_value() -> DescribeAttackStatisticsResponseTypeDef:
+    return {
+        "TimeRange": ...,
+        "DataItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAttackStatisticsResponseTypeDef(TypedDict):
+    TimeRange: TimeRangeTypeDef,  # (1)
+    DataItems: List[AttackStatisticsDataItemTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `TimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
-- `DataItems`:
-  `List`\[[AttackStatisticsDataItemTypeDef](./type_defs.md#attackstatisticsdataitemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedrtaccessresponsetypedef"></a>
-
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+2. See [:material-code-braces: AttackStatisticsDataItemTypeDef](./type_defs.md#attackstatisticsdataitemtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDRTAccessResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeDRTAccessResponseTypeDef
+
+def get_value() -> DescribeDRTAccessResponseTypeDef:
+    return {
+        "RoleArn": ...,
+        "LogBucketList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDRTAccessResponseTypeDef(TypedDict):
+    RoleArn: str,
+    LogBucketList: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RoleArn`: `str`
-- `LogBucketList`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeemergencycontactsettingsresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEmergencyContactSettingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeEmergencyContactSettingsResponseTypeDef
+
+def get_value() -> DescribeEmergencyContactSettingsResponseTypeDef:
+    return {
+        "EmergencyContactList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEmergencyContactSettingsResponseTypeDef(TypedDict):
+    EmergencyContactList: List[EmergencyContactTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EmergencyContactList`:
-  `List`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeprotectiongrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProtectionGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeProtectionGroupRequestRequestTypeDef
+
+def get_value() -> DescribeProtectionGroupRequestRequestTypeDef:
+    return {
+        "ProtectionGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `ProtectionGroupId`: `str`
-
-<a id="describeprotectiongroupresponsetypedef"></a>
+```python title="Definition"
+class DescribeProtectionGroupRequestRequestTypeDef(TypedDict):
+    ProtectionGroupId: str,
+```
 
 ## DescribeProtectionGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeProtectionGroupResponseTypeDef
+
+def get_value() -> DescribeProtectionGroupResponseTypeDef:
+    return {
+        "ProtectionGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProtectionGroupResponseTypeDef(TypedDict):
+    ProtectionGroup: ProtectionGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProtectionGroup`:
-  [ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeprotectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProtectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeProtectionRequestRequestTypeDef
+
+def get_value() -> DescribeProtectionRequestRequestTypeDef:
+    return {
+        "ProtectionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProtectionId`: `str`
-- `ResourceArn`: `str`
-
-<a id="describeprotectionresponsetypedef"></a>
+```python title="Definition"
+class DescribeProtectionRequestRequestTypeDef(TypedDict):
+    ProtectionId: NotRequired[str],
+    ResourceArn: NotRequired[str],
+```
 
 ## DescribeProtectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeProtectionResponseTypeDef
+
+def get_value() -> DescribeProtectionResponseTypeDef:
+    return {
+        "Protection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProtectionResponseTypeDef(TypedDict):
+    Protection: ProtectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Protection`: [ProtectionTypeDef](./type_defs.md#protectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesubscriptionresponsetypedef"></a>
-
+1. See [:material-code-braces: ProtectionTypeDef](./type_defs.md#protectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSubscriptionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DescribeSubscriptionResponseTypeDef
+
+def get_value() -> DescribeSubscriptionResponseTypeDef:
+    return {
+        "Subscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSubscriptionResponseTypeDef(TypedDict):
+    Subscription: SubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Subscription`: [SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disableapplicationlayerautomaticresponserequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubscriptionTypeDef](./type_defs.md#subscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisableApplicationLayerAutomaticResponseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DisableApplicationLayerAutomaticResponseRequestRequestTypeDef
+
+def get_value() -> DisableApplicationLayerAutomaticResponseRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="disassociatedrtlogbucketrequestrequesttypedef"></a>
+```python title="Definition"
+class DisableApplicationLayerAutomaticResponseRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## DisassociateDRTLogBucketRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DisassociateDRTLogBucketRequestRequestTypeDef
+
+def get_value() -> DisassociateDRTLogBucketRequestRequestTypeDef:
+    return {
+        "LogBucket": ...,
+    }
 ```
 
-Required fields:
-
-- `LogBucket`: `str`
-
-<a id="disassociatehealthcheckrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateDRTLogBucketRequestRequestTypeDef(TypedDict):
+    LogBucket: str,
+```
 
 ## DisassociateHealthCheckRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import DisassociateHealthCheckRequestRequestTypeDef
+
+def get_value() -> DisassociateHealthCheckRequestRequestTypeDef:
+    return {
+        "ProtectionId": ...,
+        "HealthCheckArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ProtectionId`: `str`
-- `HealthCheckArn`: `str`
-
-<a id="emergencycontacttypedef"></a>
+```python title="Definition"
+class DisassociateHealthCheckRequestRequestTypeDef(TypedDict):
+    ProtectionId: str,
+    HealthCheckArn: str,
+```
 
 ## EmergencyContactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import EmergencyContactTypeDef
+
+def get_value() -> EmergencyContactTypeDef:
+    return {
+        "EmailAddress": ...,
+    }
 ```
 
-Required fields:
-
-- `EmailAddress`: `str`
-
-Optional fields:
-
-- `PhoneNumber`: `str`
-- `ContactNotes`: `str`
-
-<a id="enableapplicationlayerautomaticresponserequestrequesttypedef"></a>
+```python title="Definition"
+class EmergencyContactTypeDef(TypedDict):
+    EmailAddress: str,
+    PhoneNumber: NotRequired[str],
+    ContactNotes: NotRequired[str],
+```
 
 ## EnableApplicationLayerAutomaticResponseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import EnableApplicationLayerAutomaticResponseRequestRequestTypeDef
+
+def get_value() -> EnableApplicationLayerAutomaticResponseRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnableApplicationLayerAutomaticResponseRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Action: ResponseActionTypeDef,  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
-
-<a id="getsubscriptionstateresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseActionTypeDef](./type_defs.md#responseactiontypedef) 
 ## GetSubscriptionStateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import GetSubscriptionStateResponseTypeDef
+
+def get_value() -> GetSubscriptionStateResponseTypeDef:
+    return {
+        "SubscriptionState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSubscriptionStateResponseTypeDef(TypedDict):
+    SubscriptionState: SubscriptionStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SubscriptionState`:
-  [SubscriptionStateType](./literals.md#subscriptionstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="limittypedef"></a>
-
+1. See [:material-code-brackets: SubscriptionStateType](./literals.md#subscriptionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LimitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import LimitTypeDef
+
+def get_value() -> LimitTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LimitTypeDef(TypedDict):
+    Type: NotRequired[str],
+    Max: NotRequired[int],
+```
 
-- `Type`: `str`
-- `Max`: `int`
+## ListAttacksRequestListAttacksPaginateTypeDef
 
-<a id="listattacksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_shield.type_defs import ListAttacksRequestListAttacksPaginateTypeDef
 
+def get_value() -> ListAttacksRequestListAttacksPaginateTypeDef:
+    return {
+        "ResourceArns": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttacksRequestListAttacksPaginateTypeDef(TypedDict):
+    ResourceArns: NotRequired[Sequence[str]],
+    StartTime: NotRequired[TimeRangeTypeDef],  # (1)
+    EndTime: NotRequired[TimeRangeTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+2. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAttacksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListAttacksRequestRequestTypeDef
+
+def get_value() -> ListAttacksRequestRequestTypeDef:
+    return {
+        "ResourceArns": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListAttacksRequestRequestTypeDef(TypedDict):
+    ResourceArns: NotRequired[Sequence[str]],
+    StartTime: NotRequired[TimeRangeTypeDef],  # (1)
+    EndTime: NotRequired[TimeRangeTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `ResourceArns`: `Sequence`\[`str`\]
-- `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
-- `EndTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listattacksresponsetypedef"></a>
-
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+2. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
 ## ListAttacksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListAttacksResponseTypeDef
+
+def get_value() -> ListAttacksResponseTypeDef:
+    return {
+        "AttackSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAttacksResponseTypeDef(TypedDict):
+    AttackSummaries: List[AttackSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AttackSummaries`:
-  `List`\[[AttackSummaryTypeDef](./type_defs.md#attacksummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listprotectiongroupsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttackSummaryTypeDef](./type_defs.md#attacksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProtectionGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListProtectionGroupsRequestRequestTypeDef
+
+def get_value() -> ListProtectionGroupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listprotectiongroupsresponsetypedef"></a>
+```python title="Definition"
+class ListProtectionGroupsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListProtectionGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListProtectionGroupsResponseTypeDef
+
+def get_value() -> ListProtectionGroupsResponseTypeDef:
+    return {
+        "ProtectionGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProtectionGroupsResponseTypeDef(TypedDict):
+    ProtectionGroups: List[ProtectionGroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProtectionGroups`:
-  `List`\[[ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ProtectionGroupTypeDef](./type_defs.md#protectiongrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProtectionsRequestListProtectionsPaginateTypeDef
 
-<a id="listprotectionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_shield.type_defs import ListProtectionsRequestListProtectionsPaginateTypeDef
 
+def get_value() -> ListProtectionsRequestListProtectionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListProtectionsRequestListProtectionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProtectionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListProtectionsRequestRequestTypeDef
+
+def get_value() -> ListProtectionsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listprotectionsresponsetypedef"></a>
+```python title="Definition"
+class ListProtectionsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListProtectionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListProtectionsResponseTypeDef
+
+def get_value() -> ListProtectionsResponseTypeDef:
+    return {
+        "Protections": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProtectionsResponseTypeDef(TypedDict):
+    Protections: List[ProtectionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Protections`:
-  `List`\[[ProtectionTypeDef](./type_defs.md#protectiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listresourcesinprotectiongrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProtectionTypeDef](./type_defs.md#protectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResourcesInProtectionGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListResourcesInProtectionGroupRequestRequestTypeDef
+
+def get_value() -> ListResourcesInProtectionGroupRequestRequestTypeDef:
+    return {
+        "ProtectionGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `ProtectionGroupId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listresourcesinprotectiongroupresponsetypedef"></a>
+```python title="Definition"
+class ListResourcesInProtectionGroupRequestRequestTypeDef(TypedDict):
+    ProtectionGroupId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListResourcesInProtectionGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListResourcesInProtectionGroupResponseTypeDef
+
+def get_value() -> ListResourcesInProtectionGroupResponseTypeDef:
+    return {
+        "ResourceArns": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourcesInProtectionGroupResponseTypeDef(TypedDict):
+    ResourceArns: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ResourceArns`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mitigationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MitigationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import MitigationTypeDef
+
+def get_value() -> MitigationTypeDef:
+    return {
+        "MitigationName": ...,
+    }
 ```
 
-Optional fields:
-
-- `MitigationName`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class MitigationTypeDef(TypedDict):
+    MitigationName: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="protectiongrouparbitrarypatternlimitstypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProtectionGroupArbitraryPatternLimitsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ProtectionGroupArbitraryPatternLimitsTypeDef
+
+def get_value() -> ProtectionGroupArbitraryPatternLimitsTypeDef:
+    return {
+        "MaxMembers": ...,
+    }
 ```
 
-Required fields:
-
-- `MaxMembers`: `int`
-
-<a id="protectiongrouplimitstypedef"></a>
+```python title="Definition"
+class ProtectionGroupArbitraryPatternLimitsTypeDef(TypedDict):
+    MaxMembers: int,
+```
 
 ## ProtectionGroupLimitsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ProtectionGroupLimitsTypeDef
+
+def get_value() -> ProtectionGroupLimitsTypeDef:
+    return {
+        "MaxProtectionGroups": ...,
+        "PatternTypeLimits": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProtectionGroupLimitsTypeDef(TypedDict):
+    MaxProtectionGroups: int,
+    PatternTypeLimits: ProtectionGroupPatternTypeLimitsTypeDef,  # (1)
+```
 
-- `MaxProtectionGroups`: `int`
-- `PatternTypeLimits`:
-  [ProtectionGroupPatternTypeLimitsTypeDef](./type_defs.md#protectiongrouppatterntypelimitstypedef)
-
-<a id="protectiongrouppatterntypelimitstypedef"></a>
-
+1. See [:material-code-braces: ProtectionGroupPatternTypeLimitsTypeDef](./type_defs.md#protectiongrouppatterntypelimitstypedef) 
 ## ProtectionGroupPatternTypeLimitsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ProtectionGroupPatternTypeLimitsTypeDef
+
+def get_value() -> ProtectionGroupPatternTypeLimitsTypeDef:
+    return {
+        "ArbitraryPatternLimits": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProtectionGroupPatternTypeLimitsTypeDef(TypedDict):
+    ArbitraryPatternLimits: ProtectionGroupArbitraryPatternLimitsTypeDef,  # (1)
+```
 
-- `ArbitraryPatternLimits`:
-  [ProtectionGroupArbitraryPatternLimitsTypeDef](./type_defs.md#protectiongrouparbitrarypatternlimitstypedef)
-
-<a id="protectiongrouptypedef"></a>
-
+1. See [:material-code-braces: ProtectionGroupArbitraryPatternLimitsTypeDef](./type_defs.md#protectiongrouparbitrarypatternlimitstypedef) 
 ## ProtectionGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ProtectionGroupTypeDef
+
+def get_value() -> ProtectionGroupTypeDef:
+    return {
+        "ProtectionGroupId": ...,
+        "Aggregation": ...,
+        "Pattern": ...,
+        "Members": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProtectionGroupTypeDef(TypedDict):
+    ProtectionGroupId: str,
+    Aggregation: ProtectionGroupAggregationType,  # (1)
+    Pattern: ProtectionGroupPatternType,  # (2)
+    Members: List[str],
+    ResourceType: NotRequired[ProtectedResourceTypeType],  # (3)
+    ProtectionGroupArn: NotRequired[str],
+```
 
-- `ProtectionGroupId`: `str`
-- `Aggregation`:
-  [ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype)
-- `Pattern`:
-  [ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype)
-- `Members`: `List`\[`str`\]
-
-Optional fields:
-
-- `ResourceType`:
-  [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `ProtectionGroupArn`: `str`
-
-<a id="protectionlimitstypedef"></a>
-
+1. See [:material-code-brackets: ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype) 
+2. See [:material-code-brackets: ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype) 
+3. See [:material-code-brackets: ProtectedResourceTypeType](./literals.md#protectedresourcetypetype) 
 ## ProtectionLimitsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ProtectionLimitsTypeDef
+
+def get_value() -> ProtectionLimitsTypeDef:
+    return {
+        "ProtectedResourceTypeLimits": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProtectionLimitsTypeDef(TypedDict):
+    ProtectedResourceTypeLimits: List[LimitTypeDef],  # (1)
+```
 
-- `ProtectedResourceTypeLimits`:
-  `List`\[[LimitTypeDef](./type_defs.md#limittypedef)\]
-
-<a id="protectiontypedef"></a>
-
+1. See [:material-code-braces: LimitTypeDef](./type_defs.md#limittypedef) 
 ## ProtectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ProtectionTypeDef
+
+def get_value() -> ProtectionTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProtectionTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    HealthCheckIds: NotRequired[List[str]],
+    ProtectionArn: NotRequired[str],
+    ApplicationLayerAutomaticResponseConfiguration: NotRequired[ApplicationLayerAutomaticResponseConfigurationTypeDef],  # (1)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `ResourceArn`: `str`
-- `HealthCheckIds`: `List`\[`str`\]
-- `ProtectionArn`: `str`
-- `ApplicationLayerAutomaticResponseConfiguration`:
-  [ApplicationLayerAutomaticResponseConfigurationTypeDef](./type_defs.md#applicationlayerautomaticresponseconfigurationtypedef)
-
-<a id="responseactiontypedef"></a>
-
+1. See [:material-code-braces: ApplicationLayerAutomaticResponseConfigurationTypeDef](./type_defs.md#applicationlayerautomaticresponseconfigurationtypedef) 
 ## ResponseActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ResponseActionTypeDef
+
+def get_value() -> ResponseActionTypeDef:
+    return {
+        "Block": ...,
+    }
 ```
 
-Optional fields:
-
-- `Block`: `Dict`\[`str`, `Any`\]
-- `Count`: `Dict`\[`str`, `Any`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResponseActionTypeDef(TypedDict):
+    Block: NotRequired[Dict[str, Any]],
+    Count: NotRequired[Dict[str, Any]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="subresourcesummarytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SubResourceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import SubResourceSummaryTypeDef
+
+def get_value() -> SubResourceSummaryTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubResourceSummaryTypeDef(TypedDict):
+    Type: NotRequired[SubResourceTypeType],  # (1)
+    Id: NotRequired[str],
+    AttackVectors: NotRequired[List[SummarizedAttackVectorTypeDef]],  # (2)
+    Counters: NotRequired[List[SummarizedCounterTypeDef]],  # (3)
+```
 
-- `Type`: [SubResourceTypeType](./literals.md#subresourcetypetype)
-- `Id`: `str`
-- `AttackVectors`:
-  `List`\[[SummarizedAttackVectorTypeDef](./type_defs.md#summarizedattackvectortypedef)\]
-- `Counters`:
-  `List`\[[SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef)\]
-
-<a id="subscriptionlimitstypedef"></a>
-
+1. See [:material-code-brackets: SubResourceTypeType](./literals.md#subresourcetypetype) 
+2. See [:material-code-braces: SummarizedAttackVectorTypeDef](./type_defs.md#summarizedattackvectortypedef) 
+3. See [:material-code-braces: SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef) 
 ## SubscriptionLimitsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import SubscriptionLimitsTypeDef
+
+def get_value() -> SubscriptionLimitsTypeDef:
+    return {
+        "ProtectionLimits": ...,
+        "ProtectionGroupLimits": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubscriptionLimitsTypeDef(TypedDict):
+    ProtectionLimits: ProtectionLimitsTypeDef,  # (1)
+    ProtectionGroupLimits: ProtectionGroupLimitsTypeDef,  # (2)
+```
 
-- `ProtectionLimits`:
-  [ProtectionLimitsTypeDef](./type_defs.md#protectionlimitstypedef)
-- `ProtectionGroupLimits`:
-  [ProtectionGroupLimitsTypeDef](./type_defs.md#protectiongrouplimitstypedef)
-
-<a id="subscriptiontypedef"></a>
-
+1. See [:material-code-braces: ProtectionLimitsTypeDef](./type_defs.md#protectionlimitstypedef) 
+2. See [:material-code-braces: ProtectionGroupLimitsTypeDef](./type_defs.md#protectiongrouplimitstypedef) 
 ## SubscriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import SubscriptionTypeDef
+
+def get_value() -> SubscriptionTypeDef:
+    return {
+        "SubscriptionLimits": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubscriptionTypeDef(TypedDict):
+    SubscriptionLimits: SubscriptionLimitsTypeDef,  # (4)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    TimeCommitmentInSeconds: NotRequired[int],
+    AutoRenew: NotRequired[AutoRenewType],  # (1)
+    Limits: NotRequired[List[LimitTypeDef]],  # (2)
+    ProactiveEngagementStatus: NotRequired[ProactiveEngagementStatusType],  # (3)
+    SubscriptionArn: NotRequired[str],
+```
 
-- `SubscriptionLimits`:
-  [SubscriptionLimitsTypeDef](./type_defs.md#subscriptionlimitstypedef)
-
-Optional fields:
-
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `TimeCommitmentInSeconds`: `int`
-- `AutoRenew`: [AutoRenewType](./literals.md#autorenewtype)
-- `Limits`: `List`\[[LimitTypeDef](./type_defs.md#limittypedef)\]
-- `ProactiveEngagementStatus`:
-  [ProactiveEngagementStatusType](./literals.md#proactiveengagementstatustype)
-- `SubscriptionArn`: `str`
-
-<a id="summarizedattackvectortypedef"></a>
-
+1. See [:material-code-brackets: AutoRenewType](./literals.md#autorenewtype) 
+2. See [:material-code-braces: LimitTypeDef](./type_defs.md#limittypedef) 
+3. See [:material-code-brackets: ProactiveEngagementStatusType](./literals.md#proactiveengagementstatustype) 
+4. See [:material-code-braces: SubscriptionLimitsTypeDef](./type_defs.md#subscriptionlimitstypedef) 
 ## SummarizedAttackVectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import SummarizedAttackVectorTypeDef
+
+def get_value() -> SummarizedAttackVectorTypeDef:
+    return {
+        "VectorType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SummarizedAttackVectorTypeDef(TypedDict):
+    VectorType: str,
+    VectorCounters: NotRequired[List[SummarizedCounterTypeDef]],  # (1)
+```
 
-- `VectorType`: `str`
-
-Optional fields:
-
-- `VectorCounters`:
-  `List`\[[SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef)\]
-
-<a id="summarizedcountertypedef"></a>
-
+1. See [:material-code-braces: SummarizedCounterTypeDef](./type_defs.md#summarizedcountertypedef) 
 ## SummarizedCounterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import SummarizedCounterTypeDef
+
+def get_value() -> SummarizedCounterTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Max`: `float`
-- `Average`: `float`
-- `Sum`: `float`
-- `N`: `int`
-- `Unit`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SummarizedCounterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Max: NotRequired[float],
+    Average: NotRequired[float],
+    Sum: NotRequired[float],
+    N: NotRequired[int],
+    Unit: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="timerangetypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## TimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import TimeRangeTypeDef
+
+def get_value() -> TimeRangeTypeDef:
+    return {
+        "FromInclusive": ...,
+    }
 ```
 
-Optional fields:
-
-- `FromInclusive`: `datetime`
-- `ToExclusive`: `datetime`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TimeRangeTypeDef(TypedDict):
+    FromInclusive: NotRequired[datetime],
+    ToExclusive: NotRequired[datetime],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateapplicationlayerautomaticresponserequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef
+
+def get_value() -> UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Action: ResponseActionTypeDef,  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
-
-<a id="updateemergencycontactsettingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseActionTypeDef](./type_defs.md#responseactiontypedef) 
 ## UpdateEmergencyContactSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import UpdateEmergencyContactSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateEmergencyContactSettingsRequestRequestTypeDef:
+    return {
+        "EmergencyContactList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateEmergencyContactSettingsRequestRequestTypeDef(TypedDict):
+    EmergencyContactList: NotRequired[Sequence[EmergencyContactTypeDef]],  # (1)
+```
 
-- `EmergencyContactList`:
-  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
-
-<a id="updateprotectiongrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef) 
 ## UpdateProtectionGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import UpdateProtectionGroupRequestRequestTypeDef
+
+def get_value() -> UpdateProtectionGroupRequestRequestTypeDef:
+    return {
+        "ProtectionGroupId": ...,
+        "Aggregation": ...,
+        "Pattern": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProtectionGroupRequestRequestTypeDef(TypedDict):
+    ProtectionGroupId: str,
+    Aggregation: ProtectionGroupAggregationType,  # (1)
+    Pattern: ProtectionGroupPatternType,  # (2)
+    ResourceType: NotRequired[ProtectedResourceTypeType],  # (3)
+    Members: NotRequired[Sequence[str]],
+```
 
-- `ProtectionGroupId`: `str`
-- `Aggregation`:
-  [ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype)
-- `Pattern`:
-  [ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype)
-
-Optional fields:
-
-- `ResourceType`:
-  [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `Sequence`\[`str`\]
-
-<a id="updatesubscriptionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype) 
+2. See [:material-code-brackets: ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype) 
+3. See [:material-code-brackets: ProtectedResourceTypeType](./literals.md#protectedresourcetypetype) 
 ## UpdateSubscriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.type_defs import UpdateSubscriptionRequestRequestTypeDef
+
+def get_value() -> UpdateSubscriptionRequestRequestTypeDef:
+    return {
+        "AutoRenew": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateSubscriptionRequestRequestTypeDef(TypedDict):
+    AutoRenew: NotRequired[AutoRenewType],  # (1)
+```
 
-- `AutoRenew`: [AutoRenewType](./literals.md#autorenewtype)
+1. See [:material-code-brackets: AutoRenewType](./literals.md#autorenewtype) 

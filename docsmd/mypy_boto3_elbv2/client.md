@@ -1,68 +1,18 @@
-<a id="elasticloadbalancingv2client-for-boto3-elasticloadbalancingv2-module"></a>
+# ElasticLoadBalancingv2Client
 
-# ElasticLoadBalancingv2Client for boto3 ElasticLoadBalancingv2 module
+> [Index](../README.md) > [ElasticLoadBalancingv2](./README.md) > ElasticLoadBalancingv2Client
 
-> [Index](../README.md) > [ElasticLoadBalancingv2](./README.md) >
-> ElasticLoadBalancingv2Client
+!!! note ""
 
-Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
-type annotations stubs module
-[mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
-
-- [ElasticLoadBalancingv2Client for boto3 ElasticLoadBalancingv2 module](#elasticloadbalancingv2client-for-boto3-elasticloadbalancingv2-module)
-  - [ElasticLoadBalancingv2Client](#elasticloadbalancingv2client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_listener_certificates](#add_listener_certificates)
-    - [add_tags](#add_tags)
-    - [can_paginate](#can_paginate)
-    - [create_listener](#create_listener)
-    - [create_load_balancer](#create_load_balancer)
-    - [create_rule](#create_rule)
-    - [create_target_group](#create_target_group)
-    - [delete_listener](#delete_listener)
-    - [delete_load_balancer](#delete_load_balancer)
-    - [delete_rule](#delete_rule)
-    - [delete_target_group](#delete_target_group)
-    - [deregister_targets](#deregister_targets)
-    - [describe_account_limits](#describe_account_limits)
-    - [describe_listener_certificates](#describe_listener_certificates)
-    - [describe_listeners](#describe_listeners)
-    - [describe_load_balancer_attributes](#describe_load_balancer_attributes)
-    - [describe_load_balancers](#describe_load_balancers)
-    - [describe_rules](#describe_rules)
-    - [describe_ssl_policies](#describe_ssl_policies)
-    - [describe_tags](#describe_tags)
-    - [describe_target_group_attributes](#describe_target_group_attributes)
-    - [describe_target_groups](#describe_target_groups)
-    - [describe_target_health](#describe_target_health)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [modify_listener](#modify_listener)
-    - [modify_load_balancer_attributes](#modify_load_balancer_attributes)
-    - [modify_rule](#modify_rule)
-    - [modify_target_group](#modify_target_group)
-    - [modify_target_group_attributes](#modify_target_group_attributes)
-    - [register_targets](#register_targets)
-    - [remove_listener_certificates](#remove_listener_certificates)
-    - [remove_tags](#remove_tags)
-    - [set_ip_address_type](#set_ip_address_type)
-    - [set_rule_priorities](#set_rule_priorities)
-    - [set_security_groups](#set_security_groups)
-    - [set_subnets](#set_subnets)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="elasticloadbalancingv2client"></a>
+    Auto-generated documentation for [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
+    type annotations stubs module [mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 ## ElasticLoadBalancingv2Client
 
-Type annotations for `boto3.client("elbv2")`
+Type annotations and code completion for `#!python boto3.client("elbv2")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_elbv2.client import ElasticLoadBalancingv2Client
 
@@ -70,987 +20,1258 @@ def get_elbv2_client() -> ElasticLoadBalancingv2Client:
     return Session().client("elbv2")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("elbv2").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("elbv2")
+
+try:
+    do_something(client)
+except (
+    client.ALPNPolicyNotSupportedException,
+    client.AllocationIdNotFoundException,
+    client.AvailabilityZoneNotSupportedException,
+    client.CertificateNotFoundException,
+    client.ClientError,
+    client.DuplicateListenerException,
+    client.DuplicateLoadBalancerNameException,
+    client.DuplicateTagKeysException,
+    client.DuplicateTargetGroupNameException,
+    client.HealthUnavailableException,
+    client.IncompatibleProtocolsException,
+    client.InvalidConfigurationRequestException,
+    client.InvalidLoadBalancerActionException,
+    client.InvalidSchemeException,
+    client.InvalidSecurityGroupException,
+    client.InvalidSubnetException,
+    client.InvalidTargetException,
+    client.ListenerNotFoundException,
+    client.LoadBalancerNotFoundException,
+    client.OperationNotPermittedException,
+    client.PriorityInUseException,
+    client.ResourceInUseException,
+    client.RuleNotFoundException,
+    client.SSLPolicyNotFoundException,
+    client.SubnetNotFoundException,
+    client.TargetGroupAssociationLimitException,
+    client.TargetGroupNotFoundException,
+    client.TooManyActionsException,
+    client.TooManyCertificatesException,
+    client.TooManyListenersException,
+    client.TooManyLoadBalancersException,
+    client.TooManyRegistrationsForTargetIdException,
+    client.TooManyRulesException,
+    client.TooManyTagsException,
+    client.TooManyTargetGroupsException,
+    client.TooManyTargetsException,
+    client.TooManyUniqueTargetGroupsPerLoadBalancerException,
+    client.UnsupportedProtocolException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_elbv2.client import Exceptions
 
 def handle_error(exc: Exceptions.ALPNPolicyNotSupportedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ALPNPolicyNotSupportedException`
-- `Exceptions.AllocationIdNotFoundException`
-- `Exceptions.AvailabilityZoneNotSupportedException`
-- `Exceptions.CertificateNotFoundException`
-- `Exceptions.ClientError`
-- `Exceptions.DuplicateListenerException`
-- `Exceptions.DuplicateLoadBalancerNameException`
-- `Exceptions.DuplicateTagKeysException`
-- `Exceptions.DuplicateTargetGroupNameException`
-- `Exceptions.HealthUnavailableException`
-- `Exceptions.IncompatibleProtocolsException`
-- `Exceptions.InvalidConfigurationRequestException`
-- `Exceptions.InvalidLoadBalancerActionException`
-- `Exceptions.InvalidSchemeException`
-- `Exceptions.InvalidSecurityGroupException`
-- `Exceptions.InvalidSubnetException`
-- `Exceptions.InvalidTargetException`
-- `Exceptions.ListenerNotFoundException`
-- `Exceptions.LoadBalancerNotFoundException`
-- `Exceptions.OperationNotPermittedException`
-- `Exceptions.PriorityInUseException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.RuleNotFoundException`
-- `Exceptions.SSLPolicyNotFoundException`
-- `Exceptions.SubnetNotFoundException`
-- `Exceptions.TargetGroupAssociationLimitException`
-- `Exceptions.TargetGroupNotFoundException`
-- `Exceptions.TooManyActionsException`
-- `Exceptions.TooManyCertificatesException`
-- `Exceptions.TooManyListenersException`
-- `Exceptions.TooManyLoadBalancersException`
-- `Exceptions.TooManyRegistrationsForTargetIdException`
-- `Exceptions.TooManyRulesException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.TooManyTargetGroupsException`
-- `Exceptions.TooManyTargetsException`
-- `Exceptions.TooManyUniqueTargetGroupsPerLoadBalancerException`
-- `Exceptions.UnsupportedProtocolException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ElasticLoadBalancingv2Client exceptions.
-
-Type annotations for `boto3.client("elbv2").exceptions` method.
-
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_listener\_certificates"></a>
-
-### add_listener_certificates
+### add\_listener\_certificates
 
 Adds the specified SSL server certificate to the certificate list for the
 specified HTTPS or TLS listener.
 
-Type annotations for `boto3.client("elbv2").add_listener_certificates` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").add_listener_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_listener_certificates)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.add_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_listener_certificates)
+```python title="Method definition"
+def add_listener_certificates(
+    self,
+    *,
+    ListenerArn: str,
+    Certificates: Sequence[CertificateTypeDef],  # (1)
+) -> AddListenerCertificatesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddListenerCertificatesInputRequestTypeDef](./type_defs.md#addlistenercertificatesinputrequesttypedef).
+1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
+2. See [:material-code-braces: AddListenerCertificatesOutputTypeDef](./type_defs.md#addlistenercertificatesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `Certificates`:
-  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddListenerCertificatesInputRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+    "Certificates": ...,
+}
 
-Returns
-[AddListenerCertificatesOutputTypeDef](./type_defs.md#addlistenercertificatesoutputtypedef).
+parent.add_listener_certificates(**kwargs)
+```
 
-<a id="add\_tags"></a>
+1. See [:material-code-braces: AddListenerCertificatesInputRequestTypeDef](./type_defs.md#addlistenercertificatesinputrequesttypedef) 
 
-### add_tags
+### add\_tags
 
 Adds the specified tags to the specified Elastic Load Balancing resource.
 
-Type annotations for `boto3.client("elbv2").add_tags` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").add_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_tags)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.add_tags)
+```python title="Method definition"
+def add_tags(
+    self,
+    *,
+    ResourceArns: Sequence[str],
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArns`: `Sequence`\[`str`\] *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsInputRequestTypeDef = {  # (1)
+    "ResourceArns": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_tags(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("elbv2").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.can_paginate)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_listener"></a>
-
-### create_listener
+### create\_listener
 
 Creates a listener for the specified Application Load Balancer, Network Load
 Balancer, or Gateway Load Balancer.
 
-Type annotations for `boto3.client("elbv2").create_listener` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").create_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_listener)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_listener)
+```python title="Method definition"
+def create_listener(
+    self,
+    *,
+    LoadBalancerArn: str,
+    DefaultActions: Sequence[ActionTypeDef],  # (1)
+    Protocol: ProtocolEnumType = ...,  # (2)
+    Port: int = ...,
+    SslPolicy: str = ...,
+    Certificates: Sequence[CertificateTypeDef] = ...,  # (3)
+    AlpnPolicy: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateListenerOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateListenerInputRequestTypeDef](./type_defs.md#createlistenerinputrequesttypedef).
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-brackets: ProtocolEnumType](./literals.md#protocolenumtype) 
+3. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateListenerOutputTypeDef](./type_defs.md#createlisteneroutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerArn`: `str` *(required)*
-- `DefaultActions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-  *(required)*
-- `Protocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
-- `Port`: `int`
-- `SslPolicy`: `str`
-- `Certificates`:
-  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-- `AlpnPolicy`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateListenerInputRequestTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+    "DefaultActions": ...,
+}
 
-Returns
-[CreateListenerOutputTypeDef](./type_defs.md#createlisteneroutputtypedef).
+parent.create_listener(**kwargs)
+```
 
-<a id="create\_load\_balancer"></a>
+1. See [:material-code-braces: CreateListenerInputRequestTypeDef](./type_defs.md#createlistenerinputrequesttypedef) 
 
-### create_load_balancer
+### create\_load\_balancer
 
 Creates an Application Load Balancer, Network Load Balancer, or Gateway Load
 Balancer.
 
-Type annotations for `boto3.client("elbv2").create_load_balancer` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").create_load_balancer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_load_balancer)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_load_balancer)
+```python title="Method definition"
+def create_load_balancer(
+    self,
+    *,
+    Name: str,
+    Subnets: Sequence[str] = ...,
+    SubnetMappings: Sequence[SubnetMappingTypeDef] = ...,  # (1)
+    SecurityGroups: Sequence[str] = ...,
+    Scheme: LoadBalancerSchemeEnumType = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    Type: LoadBalancerTypeEnumType = ...,  # (4)
+    IpAddressType: IpAddressTypeType = ...,  # (5)
+    CustomerOwnedIpv4Pool: str = ...,
+) -> CreateLoadBalancerOutputTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateLoadBalancerInputRequestTypeDef](./type_defs.md#createloadbalancerinputrequesttypedef).
+1. See [:material-code-braces: SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef) 
+2. See [:material-code-brackets: LoadBalancerSchemeEnumType](./literals.md#loadbalancerschemeenumtype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-brackets: LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype) 
+5. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+6. See [:material-code-braces: CreateLoadBalancerOutputTypeDef](./type_defs.md#createloadbalanceroutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Subnets`: `Sequence`\[`str`\]
-- `SubnetMappings`:
-  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
-- `SecurityGroups`: `Sequence`\[`str`\]
-- `Scheme`:
-  [LoadBalancerSchemeEnumType](./literals.md#loadbalancerschemeenumtype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Type`: [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
-- `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
-- `CustomerOwnedIpv4Pool`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateLoadBalancerInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateLoadBalancerOutputTypeDef](./type_defs.md#createloadbalanceroutputtypedef).
+parent.create_load_balancer(**kwargs)
+```
 
-<a id="create\_rule"></a>
+1. See [:material-code-braces: CreateLoadBalancerInputRequestTypeDef](./type_defs.md#createloadbalancerinputrequesttypedef) 
 
-### create_rule
+### create\_rule
 
 Creates a rule for the specified listener.
 
-Type annotations for `boto3.client("elbv2").create_rule` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").create_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_rule)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_rule)
+```python title="Method definition"
+def create_rule(
+    self,
+    *,
+    ListenerArn: str,
+    Conditions: Sequence[RuleConditionTypeDef],  # (1)
+    Priority: int,
+    Actions: Sequence[ActionTypeDef],  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateRuleOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateRuleInputRequestTypeDef](./type_defs.md#createruleinputrequesttypedef).
+1. See [:material-code-braces: RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef) 
+2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateRuleOutputTypeDef](./type_defs.md#createruleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `Conditions`:
-  `Sequence`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
-  *(required)*
-- `Priority`: `int` *(required)*
-- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-  *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRuleInputRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+    "Conditions": ...,
+    "Priority": ...,
+    "Actions": ...,
+}
 
-Returns [CreateRuleOutputTypeDef](./type_defs.md#createruleoutputtypedef).
+parent.create_rule(**kwargs)
+```
 
-<a id="create\_target\_group"></a>
+1. See [:material-code-braces: CreateRuleInputRequestTypeDef](./type_defs.md#createruleinputrequesttypedef) 
 
-### create_target_group
+### create\_target\_group
 
 Creates a target group.
 
-Type annotations for `boto3.client("elbv2").create_target_group` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").create_target_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_target_group)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.create_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.create_target_group)
+```python title="Method definition"
+def create_target_group(
+    self,
+    *,
+    Name: str,
+    Protocol: ProtocolEnumType = ...,  # (1)
+    ProtocolVersion: str = ...,
+    Port: int = ...,
+    VpcId: str = ...,
+    HealthCheckProtocol: ProtocolEnumType = ...,  # (1)
+    HealthCheckPort: str = ...,
+    HealthCheckEnabled: bool = ...,
+    HealthCheckPath: str = ...,
+    HealthCheckIntervalSeconds: int = ...,
+    HealthCheckTimeoutSeconds: int = ...,
+    HealthyThresholdCount: int = ...,
+    UnhealthyThresholdCount: int = ...,
+    Matcher: MatcherTypeDef = ...,  # (3)
+    TargetType: TargetTypeEnumType = ...,  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+    IpAddressType: TargetGroupIpAddressTypeEnumType = ...,  # (6)
+) -> CreateTargetGroupOutputTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateTargetGroupInputRequestTypeDef](./type_defs.md#createtargetgroupinputrequesttypedef).
+1. See [:material-code-brackets: ProtocolEnumType](./literals.md#protocolenumtype) 
+2. See [:material-code-brackets: ProtocolEnumType](./literals.md#protocolenumtype) 
+3. See [:material-code-braces: MatcherTypeDef](./type_defs.md#matchertypedef) 
+4. See [:material-code-brackets: TargetTypeEnumType](./literals.md#targettypeenumtype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-brackets: TargetGroupIpAddressTypeEnumType](./literals.md#targetgroupipaddresstypeenumtype) 
+7. See [:material-code-braces: CreateTargetGroupOutputTypeDef](./type_defs.md#createtargetgroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Protocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
-- `ProtocolVersion`: `str`
-- `Port`: `int`
-- `VpcId`: `str`
-- `HealthCheckProtocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
-- `HealthCheckPort`: `str`
-- `HealthCheckEnabled`: `bool`
-- `HealthCheckPath`: `str`
-- `HealthCheckIntervalSeconds`: `int`
-- `HealthCheckTimeoutSeconds`: `int`
-- `HealthyThresholdCount`: `int`
-- `UnhealthyThresholdCount`: `int`
-- `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
-- `TargetType`: [TargetTypeEnumType](./literals.md#targettypeenumtype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IpAddressType`:
-  [TargetGroupIpAddressTypeEnumType](./literals.md#targetgroupipaddresstypeenumtype)
+```python title="Usage example with kwargs"
+kwargs: CreateTargetGroupInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateTargetGroupOutputTypeDef](./type_defs.md#createtargetgroupoutputtypedef).
+parent.create_target_group(**kwargs)
+```
 
-<a id="delete\_listener"></a>
+1. See [:material-code-braces: CreateTargetGroupInputRequestTypeDef](./type_defs.md#createtargetgroupinputrequesttypedef) 
 
-### delete_listener
+### delete\_listener
 
 Deletes the specified listener.
 
-Type annotations for `boto3.client("elbv2").delete_listener` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").delete_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_listener)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_listener)
+```python title="Method definition"
+def delete_listener(
+    self,
+    *,
+    ListenerArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteListenerInputRequestTypeDef](./type_defs.md#deletelistenerinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteListenerInputRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_listener(**kwargs)
+```
 
-<a id="delete\_load\_balancer"></a>
+1. See [:material-code-braces: DeleteListenerInputRequestTypeDef](./type_defs.md#deletelistenerinputrequesttypedef) 
 
-### delete_load_balancer
+### delete\_load\_balancer
 
 Deletes the specified Application Load Balancer, Network Load Balancer, or
 Gateway Load Balancer.
 
-Type annotations for `boto3.client("elbv2").delete_load_balancer` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").delete_load_balancer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_load_balancer)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_load_balancer)
+```python title="Method definition"
+def delete_load_balancer(
+    self,
+    *,
+    LoadBalancerArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLoadBalancerInputRequestTypeDef](./type_defs.md#deleteloadbalancerinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoadBalancerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLoadBalancerInputRequestTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_load_balancer(**kwargs)
+```
 
-<a id="delete\_rule"></a>
+1. See [:material-code-braces: DeleteLoadBalancerInputRequestTypeDef](./type_defs.md#deleteloadbalancerinputrequesttypedef) 
 
-### delete_rule
+### delete\_rule
 
 Deletes the specified rule.
 
-Type annotations for `boto3.client("elbv2").delete_rule` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").delete_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_rule)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_rule)
+```python title="Method definition"
+def delete_rule(
+    self,
+    *,
+    RuleArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRuleInputRequestTypeDef](./type_defs.md#deleteruleinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `RuleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRuleInputRequestTypeDef = {  # (1)
+    "RuleArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_rule(**kwargs)
+```
 
-<a id="delete\_target\_group"></a>
+1. See [:material-code-braces: DeleteRuleInputRequestTypeDef](./type_defs.md#deleteruleinputrequesttypedef) 
 
-### delete_target_group
+### delete\_target\_group
 
 Deletes the specified target group.
 
-Type annotations for `boto3.client("elbv2").delete_target_group` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").delete_target_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_target_group)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.delete_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.delete_target_group)
+```python title="Method definition"
+def delete_target_group(
+    self,
+    *,
+    TargetGroupArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTargetGroupInputRequestTypeDef](./type_defs.md#deletetargetgroupinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `TargetGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTargetGroupInputRequestTypeDef = {  # (1)
+    "TargetGroupArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_target_group(**kwargs)
+```
 
-<a id="deregister\_targets"></a>
+1. See [:material-code-braces: DeleteTargetGroupInputRequestTypeDef](./type_defs.md#deletetargetgroupinputrequesttypedef) 
 
-### deregister_targets
+### deregister\_targets
 
 Deregisters the specified targets from the specified target group.
 
-Type annotations for `boto3.client("elbv2").deregister_targets` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").deregister_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.deregister_targets)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.deregister_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.deregister_targets)
+```python title="Method definition"
+def deregister_targets(
+    self,
+    *,
+    TargetGroupArn: str,
+    Targets: Sequence[TargetDescriptionTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterTargetsInputRequestTypeDef](./type_defs.md#deregistertargetsinputrequesttypedef).
+1. See [:material-code-braces: TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef) 
 
-Keyword-only arguments:
 
-- `TargetGroupArn`: `str` *(required)*
-- `Targets`:
-  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterTargetsInputRequestTypeDef = {  # (1)
+    "TargetGroupArn": ...,
+    "Targets": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_targets(**kwargs)
+```
 
-<a id="describe\_account\_limits"></a>
+1. See [:material-code-braces: DeregisterTargetsInputRequestTypeDef](./type_defs.md#deregistertargetsinputrequesttypedef) 
 
-### describe_account_limits
+### describe\_account\_limits
 
-Describes the current Elastic Load Balancing resource limits for your Amazon
-Web Services account.
+Describes the current Elastic Load Balancing resource limits for your Amazon Web
+Services account.
 
-Type annotations for `boto3.client("elbv2").describe_account_limits` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_account_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_account_limits)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_account_limits)
+```python title="Method definition"
+def describe_account_limits(
+    self,
+    *,
+    Marker: str = ...,
+    PageSize: int = ...,
+) -> DescribeAccountLimitsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef).
+1. See [:material-code-braces: DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountLimitsInputRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
+parent.describe_account_limits(**kwargs)
+```
 
-<a id="describe\_listener\_certificates"></a>
+1. See [:material-code-braces: DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef) 
 
-### describe_listener_certificates
+### describe\_listener\_certificates
 
 Describes the default certificate and the certificate list for the specified
 HTTPS or TLS listener.
 
-Type annotations for `boto3.client("elbv2").describe_listener_certificates`
-method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_listener_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listener_certificates)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listener_certificates)
+```python title="Method definition"
+def describe_listener_certificates(
+    self,
+    *,
+    ListenerArn: str,
+    Marker: str = ...,
+    PageSize: int = ...,
+) -> DescribeListenerCertificatesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeListenerCertificatesInputRequestTypeDef](./type_defs.md#describelistenercertificatesinputrequesttypedef).
+1. See [:material-code-braces: DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `Marker`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeListenerCertificatesInputRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-Returns
-[DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef).
+parent.describe_listener_certificates(**kwargs)
+```
 
-<a id="describe\_listeners"></a>
+1. See [:material-code-braces: DescribeListenerCertificatesInputRequestTypeDef](./type_defs.md#describelistenercertificatesinputrequesttypedef) 
 
-### describe_listeners
+### describe\_listeners
 
-Describes the specified listeners or the listeners for the specified
-Application Load Balancer, Network Load Balancer, or Gateway Load Balancer.
+Describes the specified listeners or the listeners for the specified Application
+Load Balancer, Network Load Balancer, or Gateway Load Balancer.
 
-Type annotations for `boto3.client("elbv2").describe_listeners` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_listeners` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listeners)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_listeners)
+```python title="Method definition"
+def describe_listeners(
+    self,
+    *,
+    LoadBalancerArn: str = ...,
+    ListenerArns: Sequence[str] = ...,
+    Marker: str = ...,
+    PageSize: int = ...,
+) -> DescribeListenersOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeListenersInputRequestTypeDef](./type_defs.md#describelistenersinputrequesttypedef).
+1. See [:material-code-braces: DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerArn`: `str`
-- `ListenerArns`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeListenersInputRequestTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+}
 
-Returns
-[DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef).
+parent.describe_listeners(**kwargs)
+```
 
-<a id="describe\_load\_balancer\_attributes"></a>
+1. See [:material-code-braces: DescribeListenersInputRequestTypeDef](./type_defs.md#describelistenersinputrequesttypedef) 
 
-### describe_load_balancer_attributes
+### describe\_load\_balancer\_attributes
 
 Describes the attributes for the specified Application Load Balancer, Network
 Load Balancer, or Gateway Load Balancer.
 
-Type annotations for `boto3.client("elbv2").describe_load_balancer_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_load_balancer_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancer_attributes)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancer_attributes)
+```python title="Method definition"
+def describe_load_balancer_attributes(
+    self,
+    *,
+    LoadBalancerArn: str,
+) -> DescribeLoadBalancerAttributesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#describeloadbalancerattributesinputrequesttypedef).
+1. See [:material-code-braces: DescribeLoadBalancerAttributesOutputTypeDef](./type_defs.md#describeloadbalancerattributesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancerAttributesInputRequestTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+}
 
-Returns
-[DescribeLoadBalancerAttributesOutputTypeDef](./type_defs.md#describeloadbalancerattributesoutputtypedef).
+parent.describe_load_balancer_attributes(**kwargs)
+```
 
-<a id="describe\_load\_balancers"></a>
+1. See [:material-code-braces: DescribeLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#describeloadbalancerattributesinputrequesttypedef) 
 
-### describe_load_balancers
+### describe\_load\_balancers
 
 Describes the specified load balancers or all of your load balancers.
 
-Type annotations for `boto3.client("elbv2").describe_load_balancers` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_load_balancers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancers)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_load_balancers)
+```python title="Method definition"
+def describe_load_balancers(
+    self,
+    *,
+    LoadBalancerArns: Sequence[str] = ...,
+    Names: Sequence[str] = ...,
+    Marker: str = ...,
+    PageSize: int = ...,
+) -> DescribeLoadBalancersOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLoadBalancersInputRequestTypeDef](./type_defs.md#describeloadbalancersinputrequesttypedef).
+1. See [:material-code-braces: DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerArns`: `Sequence`\[`str`\]
-- `Names`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancersInputRequestTypeDef = {  # (1)
+    "LoadBalancerArns": ...,
+}
 
-Returns
-[DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef).
+parent.describe_load_balancers(**kwargs)
+```
 
-<a id="describe\_rules"></a>
+1. See [:material-code-braces: DescribeLoadBalancersInputRequestTypeDef](./type_defs.md#describeloadbalancersinputrequesttypedef) 
 
-### describe_rules
+### describe\_rules
 
 Describes the specified rules or the rules for the specified listener.
 
-Type annotations for `boto3.client("elbv2").describe_rules` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_rules)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_rules)
+```python title="Method definition"
+def describe_rules(
+    self,
+    *,
+    ListenerArn: str = ...,
+    RuleArns: Sequence[str] = ...,
+    Marker: str = ...,
+    PageSize: int = ...,
+) -> DescribeRulesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRulesInputRequestTypeDef](./type_defs.md#describerulesinputrequesttypedef).
+1. See [:material-code-braces: DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str`
-- `RuleArns`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeRulesInputRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-Returns
-[DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef).
+parent.describe_rules(**kwargs)
+```
 
-<a id="describe\_ssl\_policies"></a>
+1. See [:material-code-braces: DescribeRulesInputRequestTypeDef](./type_defs.md#describerulesinputrequesttypedef) 
 
-### describe_ssl_policies
+### describe\_ssl\_policies
 
 Describes the specified policies or all policies used for SSL negotiation.
 
-Type annotations for `boto3.client("elbv2").describe_ssl_policies` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_ssl_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_ssl_policies)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_ssl_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_ssl_policies)
+```python title="Method definition"
+def describe_ssl_policies(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    Marker: str = ...,
+    PageSize: int = ...,
+    LoadBalancerType: LoadBalancerTypeEnumType = ...,  # (1)
+) -> DescribeSSLPoliciesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSSLPoliciesInputRequestTypeDef](./type_defs.md#describesslpoliciesinputrequesttypedef).
+1. See [:material-code-brackets: LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype) 
+2. See [:material-code-braces: DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `PageSize`: `int`
-- `LoadBalancerType`:
-  [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
+```python title="Usage example with kwargs"
+kwargs: DescribeSSLPoliciesInputRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef).
+parent.describe_ssl_policies(**kwargs)
+```
 
-<a id="describe\_tags"></a>
+1. See [:material-code-braces: DescribeSSLPoliciesInputRequestTypeDef](./type_defs.md#describesslpoliciesinputrequesttypedef) 
 
-### describe_tags
+### describe\_tags
 
 Describes the tags for the specified Elastic Load Balancing resources.
 
-Type annotations for `boto3.client("elbv2").describe_tags` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_tags)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_tags)
+```python title="Method definition"
+def describe_tags(
+    self,
+    *,
+    ResourceArns: Sequence[str],
+) -> DescribeTagsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef).
+1. See [:material-code-braces: DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTagsInputRequestTypeDef = {  # (1)
+    "ResourceArns": ...,
+}
 
-Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
+parent.describe_tags(**kwargs)
+```
 
-<a id="describe\_target\_group\_attributes"></a>
+1. See [:material-code-braces: DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef) 
 
-### describe_target_group_attributes
+### describe\_target\_group\_attributes
 
 Describes the attributes for the specified target group.
 
-Type annotations for `boto3.client("elbv2").describe_target_group_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_target_group_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_group_attributes)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_group_attributes)
+```python title="Method definition"
+def describe_target_group_attributes(
+    self,
+    *,
+    TargetGroupArn: str,
+) -> DescribeTargetGroupAttributesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTargetGroupAttributesInputRequestTypeDef](./type_defs.md#describetargetgroupattributesinputrequesttypedef).
+1. See [:material-code-braces: DescribeTargetGroupAttributesOutputTypeDef](./type_defs.md#describetargetgroupattributesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTargetGroupAttributesInputRequestTypeDef = {  # (1)
+    "TargetGroupArn": ...,
+}
 
-Returns
-[DescribeTargetGroupAttributesOutputTypeDef](./type_defs.md#describetargetgroupattributesoutputtypedef).
+parent.describe_target_group_attributes(**kwargs)
+```
 
-<a id="describe\_target\_groups"></a>
+1. See [:material-code-braces: DescribeTargetGroupAttributesInputRequestTypeDef](./type_defs.md#describetargetgroupattributesinputrequesttypedef) 
 
-### describe_target_groups
+### describe\_target\_groups
 
 Describes the specified target groups or all of your target groups.
 
-Type annotations for `boto3.client("elbv2").describe_target_groups` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_target_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_groups)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_groups)
+```python title="Method definition"
+def describe_target_groups(
+    self,
+    *,
+    LoadBalancerArn: str = ...,
+    TargetGroupArns: Sequence[str] = ...,
+    Names: Sequence[str] = ...,
+    Marker: str = ...,
+    PageSize: int = ...,
+) -> DescribeTargetGroupsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTargetGroupsInputRequestTypeDef](./type_defs.md#describetargetgroupsinputrequesttypedef).
+1. See [:material-code-braces: DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerArn`: `str`
-- `TargetGroupArns`: `Sequence`\[`str`\]
-- `Names`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeTargetGroupsInputRequestTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+}
 
-Returns
-[DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef).
+parent.describe_target_groups(**kwargs)
+```
 
-<a id="describe\_target\_health"></a>
+1. See [:material-code-braces: DescribeTargetGroupsInputRequestTypeDef](./type_defs.md#describetargetgroupsinputrequesttypedef) 
 
-### describe_target_health
+### describe\_target\_health
 
 Describes the health of the specified targets or all of your targets.
 
-Type annotations for `boto3.client("elbv2").describe_target_health` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").describe_target_health` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_health)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.describe_target_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.describe_target_health)
+```python title="Method definition"
+def describe_target_health(
+    self,
+    *,
+    TargetGroupArn: str,
+    Targets: Sequence[TargetDescriptionTypeDef] = ...,  # (1)
+) -> DescribeTargetHealthOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTargetHealthInputRequestTypeDef](./type_defs.md#describetargethealthinputrequesttypedef).
+1. See [:material-code-braces: TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef) 
+2. See [:material-code-braces: DescribeTargetHealthOutputTypeDef](./type_defs.md#describetargethealthoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetGroupArn`: `str` *(required)*
-- `Targets`:
-  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeTargetHealthInputRequestTypeDef = {  # (1)
+    "TargetGroupArn": ...,
+}
 
-Returns
-[DescribeTargetHealthOutputTypeDef](./type_defs.md#describetargethealthoutputtypedef).
+parent.describe_target_health(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeTargetHealthInputRequestTypeDef](./type_defs.md#describetargethealthinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("elbv2").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="modify\_listener"></a>
-
-### modify_listener
+### modify\_listener
 
 Replaces the specified properties of the specified listener.
 
-Type annotations for `boto3.client("elbv2").modify_listener` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").modify_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_listener)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_listener)
+```python title="Method definition"
+def modify_listener(
+    self,
+    *,
+    ListenerArn: str,
+    Port: int = ...,
+    Protocol: ProtocolEnumType = ...,  # (1)
+    SslPolicy: str = ...,
+    Certificates: Sequence[CertificateTypeDef] = ...,  # (2)
+    DefaultActions: Sequence[ActionTypeDef] = ...,  # (3)
+    AlpnPolicy: Sequence[str] = ...,
+) -> ModifyListenerOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ModifyListenerInputRequestTypeDef](./type_defs.md#modifylistenerinputrequesttypedef).
+1. See [:material-code-brackets: ProtocolEnumType](./literals.md#protocolenumtype) 
+2. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
+3. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+4. See [:material-code-braces: ModifyListenerOutputTypeDef](./type_defs.md#modifylisteneroutputtypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `Port`: `int`
-- `Protocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
-- `SslPolicy`: `str`
-- `Certificates`:
-  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-- `DefaultActions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `AlpnPolicy`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ModifyListenerInputRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-Returns
-[ModifyListenerOutputTypeDef](./type_defs.md#modifylisteneroutputtypedef).
+parent.modify_listener(**kwargs)
+```
 
-<a id="modify\_load\_balancer\_attributes"></a>
+1. See [:material-code-braces: ModifyListenerInputRequestTypeDef](./type_defs.md#modifylistenerinputrequesttypedef) 
 
-### modify_load_balancer_attributes
+### modify\_load\_balancer\_attributes
 
 Modifies the specified attributes of the specified Application Load Balancer,
 Network Load Balancer, or Gateway Load Balancer.
 
-Type annotations for `boto3.client("elbv2").modify_load_balancer_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("elbv2").modify_load_balancer_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_load_balancer_attributes)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_load_balancer_attributes)
+```python title="Method definition"
+def modify_load_balancer_attributes(
+    self,
+    *,
+    LoadBalancerArn: str,
+    Attributes: Sequence[LoadBalancerAttributeTypeDef],  # (1)
+) -> ModifyLoadBalancerAttributesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ModifyLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#modifyloadbalancerattributesinputrequesttypedef).
+1. See [:material-code-braces: LoadBalancerAttributeTypeDef](./type_defs.md#loadbalancerattributetypedef) 
+2. See [:material-code-braces: ModifyLoadBalancerAttributesOutputTypeDef](./type_defs.md#modifyloadbalancerattributesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerArn`: `str` *(required)*
-- `Attributes`:
-  `Sequence`\[[LoadBalancerAttributeTypeDef](./type_defs.md#loadbalancerattributetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyLoadBalancerAttributesInputRequestTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+    "Attributes": ...,
+}
 
-Returns
-[ModifyLoadBalancerAttributesOutputTypeDef](./type_defs.md#modifyloadbalancerattributesoutputtypedef).
+parent.modify_load_balancer_attributes(**kwargs)
+```
 
-<a id="modify\_rule"></a>
+1. See [:material-code-braces: ModifyLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#modifyloadbalancerattributesinputrequesttypedef) 
 
-### modify_rule
+### modify\_rule
 
 Replaces the specified properties of the specified rule.
 
-Type annotations for `boto3.client("elbv2").modify_rule` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").modify_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_rule)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_rule)
+```python title="Method definition"
+def modify_rule(
+    self,
+    *,
+    RuleArn: str,
+    Conditions: Sequence[RuleConditionTypeDef] = ...,  # (1)
+    Actions: Sequence[ActionTypeDef] = ...,  # (2)
+) -> ModifyRuleOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ModifyRuleInputRequestTypeDef](./type_defs.md#modifyruleinputrequesttypedef).
+1. See [:material-code-braces: RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef) 
+2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+3. See [:material-code-braces: ModifyRuleOutputTypeDef](./type_defs.md#modifyruleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RuleArn`: `str` *(required)*
-- `Conditions`:
-  `Sequence`\[[RuleConditionTypeDef](./type_defs.md#ruleconditiontypedef)\]
-- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ModifyRuleInputRequestTypeDef = {  # (1)
+    "RuleArn": ...,
+}
 
-Returns [ModifyRuleOutputTypeDef](./type_defs.md#modifyruleoutputtypedef).
+parent.modify_rule(**kwargs)
+```
 
-<a id="modify\_target\_group"></a>
+1. See [:material-code-braces: ModifyRuleInputRequestTypeDef](./type_defs.md#modifyruleinputrequesttypedef) 
 
-### modify_target_group
+### modify\_target\_group
 
 Modifies the health checks used when evaluating the health state of the targets
 in the specified target group.
 
-Type annotations for `boto3.client("elbv2").modify_target_group` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").modify_target_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_target_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group)
+```python title="Method definition"
+def modify_target_group(
+    self,
+    *,
+    TargetGroupArn: str,
+    HealthCheckProtocol: ProtocolEnumType = ...,  # (1)
+    HealthCheckPort: str = ...,
+    HealthCheckPath: str = ...,
+    HealthCheckEnabled: bool = ...,
+    HealthCheckIntervalSeconds: int = ...,
+    HealthCheckTimeoutSeconds: int = ...,
+    HealthyThresholdCount: int = ...,
+    UnhealthyThresholdCount: int = ...,
+    Matcher: MatcherTypeDef = ...,  # (2)
+) -> ModifyTargetGroupOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ModifyTargetGroupInputRequestTypeDef](./type_defs.md#modifytargetgroupinputrequesttypedef).
+1. See [:material-code-brackets: ProtocolEnumType](./literals.md#protocolenumtype) 
+2. See [:material-code-braces: MatcherTypeDef](./type_defs.md#matchertypedef) 
+3. See [:material-code-braces: ModifyTargetGroupOutputTypeDef](./type_defs.md#modifytargetgroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetGroupArn`: `str` *(required)*
-- `HealthCheckProtocol`: [ProtocolEnumType](./literals.md#protocolenumtype)
-- `HealthCheckPort`: `str`
-- `HealthCheckPath`: `str`
-- `HealthCheckEnabled`: `bool`
-- `HealthCheckIntervalSeconds`: `int`
-- `HealthCheckTimeoutSeconds`: `int`
-- `HealthyThresholdCount`: `int`
-- `UnhealthyThresholdCount`: `int`
-- `Matcher`: [MatcherTypeDef](./type_defs.md#matchertypedef)
+```python title="Usage example with kwargs"
+kwargs: ModifyTargetGroupInputRequestTypeDef = {  # (1)
+    "TargetGroupArn": ...,
+}
 
-Returns
-[ModifyTargetGroupOutputTypeDef](./type_defs.md#modifytargetgroupoutputtypedef).
+parent.modify_target_group(**kwargs)
+```
 
-<a id="modify\_target\_group\_attributes"></a>
+1. See [:material-code-braces: ModifyTargetGroupInputRequestTypeDef](./type_defs.md#modifytargetgroupinputrequesttypedef) 
 
-### modify_target_group_attributes
+### modify\_target\_group\_attributes
 
 Modifies the specified attributes of the specified target group.
 
-Type annotations for `boto3.client("elbv2").modify_target_group_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("elbv2").modify_target_group_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group_attributes)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.modify_target_group_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.modify_target_group_attributes)
+```python title="Method definition"
+def modify_target_group_attributes(
+    self,
+    *,
+    TargetGroupArn: str,
+    Attributes: Sequence[TargetGroupAttributeTypeDef],  # (1)
+) -> ModifyTargetGroupAttributesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ModifyTargetGroupAttributesInputRequestTypeDef](./type_defs.md#modifytargetgroupattributesinputrequesttypedef).
+1. See [:material-code-braces: TargetGroupAttributeTypeDef](./type_defs.md#targetgroupattributetypedef) 
+2. See [:material-code-braces: ModifyTargetGroupAttributesOutputTypeDef](./type_defs.md#modifytargetgroupattributesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetGroupArn`: `str` *(required)*
-- `Attributes`:
-  `Sequence`\[[TargetGroupAttributeTypeDef](./type_defs.md#targetgroupattributetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyTargetGroupAttributesInputRequestTypeDef = {  # (1)
+    "TargetGroupArn": ...,
+    "Attributes": ...,
+}
 
-Returns
-[ModifyTargetGroupAttributesOutputTypeDef](./type_defs.md#modifytargetgroupattributesoutputtypedef).
+parent.modify_target_group_attributes(**kwargs)
+```
 
-<a id="register\_targets"></a>
+1. See [:material-code-braces: ModifyTargetGroupAttributesInputRequestTypeDef](./type_defs.md#modifytargetgroupattributesinputrequesttypedef) 
 
-### register_targets
+### register\_targets
 
 Registers the specified targets with the specified target group.
 
-Type annotations for `boto3.client("elbv2").register_targets` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").register_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.register_targets)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.register_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.register_targets)
+```python title="Method definition"
+def register_targets(
+    self,
+    *,
+    TargetGroupArn: str,
+    Targets: Sequence[TargetDescriptionTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RegisterTargetsInputRequestTypeDef](./type_defs.md#registertargetsinputrequesttypedef).
+1. See [:material-code-braces: TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef) 
 
-Keyword-only arguments:
 
-- `TargetGroupArn`: `str` *(required)*
-- `Targets`:
-  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterTargetsInputRequestTypeDef = {  # (1)
+    "TargetGroupArn": ...,
+    "Targets": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.register_targets(**kwargs)
+```
 
-<a id="remove\_listener\_certificates"></a>
+1. See [:material-code-braces: RegisterTargetsInputRequestTypeDef](./type_defs.md#registertargetsinputrequesttypedef) 
 
-### remove_listener_certificates
+### remove\_listener\_certificates
 
 Removes the specified certificate from the certificate list for the specified
 HTTPS or TLS listener.
 
-Type annotations for `boto3.client("elbv2").remove_listener_certificates`
-method.
+Type annotations and code completion for `#!python boto3.client("elbv2").remove_listener_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_listener_certificates)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.remove_listener_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_listener_certificates)
+```python title="Method definition"
+def remove_listener_certificates(
+    self,
+    *,
+    ListenerArn: str,
+    Certificates: Sequence[CertificateTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveListenerCertificatesInputRequestTypeDef](./type_defs.md#removelistenercertificatesinputrequesttypedef).
+1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `Certificates`:
-  `Sequence`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveListenerCertificatesInputRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+    "Certificates": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_listener_certificates(**kwargs)
+```
 
-<a id="remove\_tags"></a>
+1. See [:material-code-braces: RemoveListenerCertificatesInputRequestTypeDef](./type_defs.md#removelistenercertificatesinputrequesttypedef) 
 
-### remove_tags
+### remove\_tags
 
 Removes the specified tags from the specified Elastic Load Balancing resources.
 
-Type annotations for `boto3.client("elbv2").remove_tags` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").remove_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_tags)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.remove_tags)
+```python title="Method definition"
+def remove_tags(
+    self,
+    *,
+    ResourceArns: Sequence[str],
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArns`: `Sequence`\[`str`\] *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsInputRequestTypeDef = {  # (1)
+    "ResourceArns": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_tags(**kwargs)
+```
 
-<a id="set\_ip\_address\_type"></a>
+1. See [:material-code-braces: RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef) 
 
-### set_ip_address_type
+### set\_ip\_address\_type
 
 Sets the type of IP addresses used by the subnets of the specified Application
 Load Balancer or Network Load Balancer.
 
-Type annotations for `boto3.client("elbv2").set_ip_address_type` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").set_ip_address_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_ip_address_type)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.set_ip_address_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_ip_address_type)
+```python title="Method definition"
+def set_ip_address_type(
+    self,
+    *,
+    LoadBalancerArn: str,
+    IpAddressType: IpAddressTypeType,  # (1)
+) -> SetIpAddressTypeOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SetIpAddressTypeInputRequestTypeDef](./type_defs.md#setipaddresstypeinputrequesttypedef).
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: SetIpAddressTypeOutputTypeDef](./type_defs.md#setipaddresstypeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerArn`: `str` *(required)*
-- `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetIpAddressTypeInputRequestTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+    "IpAddressType": ...,
+}
 
-Returns
-[SetIpAddressTypeOutputTypeDef](./type_defs.md#setipaddresstypeoutputtypedef).
+parent.set_ip_address_type(**kwargs)
+```
 
-<a id="set\_rule\_priorities"></a>
+1. See [:material-code-braces: SetIpAddressTypeInputRequestTypeDef](./type_defs.md#setipaddresstypeinputrequesttypedef) 
 
-### set_rule_priorities
+### set\_rule\_priorities
 
 Sets the priorities of the specified rules.
 
-Type annotations for `boto3.client("elbv2").set_rule_priorities` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").set_rule_priorities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_rule_priorities)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.set_rule_priorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_rule_priorities)
+```python title="Method definition"
+def set_rule_priorities(
+    self,
+    *,
+    RulePriorities: Sequence[RulePriorityPairTypeDef],  # (1)
+) -> SetRulePrioritiesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SetRulePrioritiesInputRequestTypeDef](./type_defs.md#setruleprioritiesinputrequesttypedef).
+1. See [:material-code-braces: RulePriorityPairTypeDef](./type_defs.md#ruleprioritypairtypedef) 
+2. See [:material-code-braces: SetRulePrioritiesOutputTypeDef](./type_defs.md#setruleprioritiesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RulePriorities`:
-  `Sequence`\[[RulePriorityPairTypeDef](./type_defs.md#ruleprioritypairtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetRulePrioritiesInputRequestTypeDef = {  # (1)
+    "RulePriorities": ...,
+}
 
-Returns
-[SetRulePrioritiesOutputTypeDef](./type_defs.md#setruleprioritiesoutputtypedef).
+parent.set_rule_priorities(**kwargs)
+```
 
-<a id="set\_security\_groups"></a>
+1. See [:material-code-braces: SetRulePrioritiesInputRequestTypeDef](./type_defs.md#setruleprioritiesinputrequesttypedef) 
 
-### set_security_groups
+### set\_security\_groups
 
 Associates the specified security groups with the specified Application Load
 Balancer.
 
-Type annotations for `boto3.client("elbv2").set_security_groups` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").set_security_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_security_groups)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.set_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_security_groups)
+```python title="Method definition"
+def set_security_groups(
+    self,
+    *,
+    LoadBalancerArn: str,
+    SecurityGroups: Sequence[str],
+) -> SetSecurityGroupsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SetSecurityGroupsInputRequestTypeDef](./type_defs.md#setsecuritygroupsinputrequesttypedef).
+1. See [:material-code-braces: SetSecurityGroupsOutputTypeDef](./type_defs.md#setsecuritygroupsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerArn`: `str` *(required)*
-- `SecurityGroups`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetSecurityGroupsInputRequestTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+    "SecurityGroups": ...,
+}
 
-Returns
-[SetSecurityGroupsOutputTypeDef](./type_defs.md#setsecuritygroupsoutputtypedef).
+parent.set_security_groups(**kwargs)
+```
 
-<a id="set\_subnets"></a>
+1. See [:material-code-braces: SetSecurityGroupsInputRequestTypeDef](./type_defs.md#setsecuritygroupsinputrequesttypedef) 
 
-### set_subnets
+### set\_subnets
 
 Enables the Availability Zones for the specified public subnets for the
 specified Application Load Balancer or Network Load Balancer.
 
-Type annotations for `boto3.client("elbv2").set_subnets` method.
+Type annotations and code completion for `#!python boto3.client("elbv2").set_subnets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_subnets)
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Client.set_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client.set_subnets)
+```python title="Method definition"
+def set_subnets(
+    self,
+    *,
+    LoadBalancerArn: str,
+    Subnets: Sequence[str] = ...,
+    SubnetMappings: Sequence[SubnetMappingTypeDef] = ...,  # (1)
+    IpAddressType: IpAddressTypeType = ...,  # (2)
+) -> SetSubnetsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SetSubnetsInputRequestTypeDef](./type_defs.md#setsubnetsinputrequesttypedef).
+1. See [:material-code-braces: SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef) 
+2. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+3. See [:material-code-braces: SetSubnetsOutputTypeDef](./type_defs.md#setsubnetsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerArn`: `str` *(required)*
-- `Subnets`: `Sequence`\[`str`\]
-- `SubnetMappings`:
-  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
-- `IpAddressType`: [IpAddressTypeType](./literals.md#ipaddresstypetype)
+```python title="Usage example with kwargs"
+kwargs: SetSubnetsInputRequestTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+}
 
-Returns [SetSubnetsOutputTypeDef](./type_defs.md#setsubnetsoutputtypedef).
+parent.set_subnets(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: SetSubnetsInputRequestTypeDef](./type_defs.md#setsubnetsinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("elbv2").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_account_limits")` ->
-  [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
-- `client.get_paginator("describe_listener_certificates")` ->
-  [DescribeListenerCertificatesPaginator](./paginators.md#describelistenercertificatespaginator)
-- `client.get_paginator("describe_listeners")` ->
-  [DescribeListenersPaginator](./paginators.md#describelistenerspaginator)
-- `client.get_paginator("describe_load_balancers")` ->
-  [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
-- `client.get_paginator("describe_rules")` ->
-  [DescribeRulesPaginator](./paginators.md#describerulespaginator)
-- `client.get_paginator("describe_ssl_policies")` ->
-  [DescribeSSLPoliciesPaginator](./paginators.md#describesslpoliciespaginator)
-- `client.get_paginator("describe_target_groups")` ->
-  [DescribeTargetGroupsPaginator](./paginators.md#describetargetgroupspaginator)
+- `client.get_paginator("describe_account_limits")` -> [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
+- `client.get_paginator("describe_listener_certificates")` -> [DescribeListenerCertificatesPaginator](./paginators.md#describelistenercertificatespaginator)
+- `client.get_paginator("describe_listeners")` -> [DescribeListenersPaginator](./paginators.md#describelistenerspaginator)
+- `client.get_paginator("describe_load_balancers")` -> [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
+- `client.get_paginator("describe_rules")` -> [DescribeRulesPaginator](./paginators.md#describerulespaginator)
+- `client.get_paginator("describe_ssl_policies")` -> [DescribeSSLPoliciesPaginator](./paginators.md#describesslpoliciespaginator)
+- `client.get_paginator("describe_target_groups")` -> [DescribeTargetGroupsPaginator](./paginators.md#describetargetgroupspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("elbv2").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_waiter` method with overloads.
 
-- `client.get_waiter("load_balancer_available")` ->
-  [LoadBalancerAvailableWaiter](./waiters.md#loadbalanceravailablewaiter)
-- `client.get_waiter("load_balancer_exists")` ->
-  [LoadBalancerExistsWaiter](./waiters.md#loadbalancerexistswaiter)
-- `client.get_waiter("load_balancers_deleted")` ->
-  [LoadBalancersDeletedWaiter](./waiters.md#loadbalancersdeletedwaiter)
-- `client.get_waiter("target_deregistered")` ->
-  [TargetDeregisteredWaiter](./waiters.md#targetderegisteredwaiter)
-- `client.get_waiter("target_in_service")` ->
-  [TargetInServiceWaiter](./waiters.md#targetinservicewaiter)
+- `client.get_waiter("load_balancer_available")` -> [LoadBalancerAvailableWaiter](./waiters.md#loadbalanceravailablewaiter)
+- `client.get_waiter("load_balancer_exists")` -> [LoadBalancerExistsWaiter](./waiters.md#loadbalancerexistswaiter)
+- `client.get_waiter("load_balancers_deleted")` -> [LoadBalancersDeletedWaiter](./waiters.md#loadbalancersdeletedwaiter)
+- `client.get_waiter("target_deregistered")` -> [TargetDeregisteredWaiter](./waiters.md#targetderegisteredwaiter)
+- `client.get_waiter("target_in_service")` -> [TargetInServiceWaiter](./waiters.md#targetinservicewaiter)
+

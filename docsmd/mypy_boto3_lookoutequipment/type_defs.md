@@ -1,1013 +1,1271 @@
-<a id="typed-dictionaries-for-boto3-lookoutequipment-module"></a>
-
-# Typed dictionaries for boto3 LookoutEquipment module
+# Typed dictionaries
 
 > [Index](../README.md) > [LookoutEquipment](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
-type annotations stubs module
-[mypy-boto3-lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
+!!! note ""
 
-- [Typed dictionaries for boto3 LookoutEquipment module](#typed-dictionaries-for-boto3-lookoutequipment-module)
-  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
-  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
-  - [CreateInferenceSchedulerRequestRequestTypeDef](#createinferenceschedulerrequestrequesttypedef)
-  - [CreateInferenceSchedulerResponseTypeDef](#createinferenceschedulerresponsetypedef)
-  - [CreateModelRequestRequestTypeDef](#createmodelrequestrequesttypedef)
-  - [CreateModelResponseTypeDef](#createmodelresponsetypedef)
-  - [DataIngestionJobSummaryTypeDef](#dataingestionjobsummarytypedef)
-  - [DataPreProcessingConfigurationTypeDef](#datapreprocessingconfigurationtypedef)
-  - [DatasetSchemaTypeDef](#datasetschematypedef)
-  - [DatasetSummaryTypeDef](#datasetsummarytypedef)
-  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
-  - [DeleteInferenceSchedulerRequestRequestTypeDef](#deleteinferenceschedulerrequestrequesttypedef)
-  - [DeleteModelRequestRequestTypeDef](#deletemodelrequestrequesttypedef)
-  - [DescribeDataIngestionJobRequestRequestTypeDef](#describedataingestionjobrequestrequesttypedef)
-  - [DescribeDataIngestionJobResponseTypeDef](#describedataingestionjobresponsetypedef)
-  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
-  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
-  - [DescribeInferenceSchedulerRequestRequestTypeDef](#describeinferenceschedulerrequestrequesttypedef)
-  - [DescribeInferenceSchedulerResponseTypeDef](#describeinferenceschedulerresponsetypedef)
-  - [DescribeModelRequestRequestTypeDef](#describemodelrequestrequesttypedef)
-  - [DescribeModelResponseTypeDef](#describemodelresponsetypedef)
-  - [InferenceExecutionSummaryTypeDef](#inferenceexecutionsummarytypedef)
-  - [InferenceInputConfigurationTypeDef](#inferenceinputconfigurationtypedef)
-  - [InferenceInputNameConfigurationTypeDef](#inferenceinputnameconfigurationtypedef)
-  - [InferenceOutputConfigurationTypeDef](#inferenceoutputconfigurationtypedef)
-  - [InferenceS3InputConfigurationTypeDef](#inferences3inputconfigurationtypedef)
-  - [InferenceS3OutputConfigurationTypeDef](#inferences3outputconfigurationtypedef)
-  - [InferenceSchedulerSummaryTypeDef](#inferenceschedulersummarytypedef)
-  - [IngestionInputConfigurationTypeDef](#ingestioninputconfigurationtypedef)
-  - [IngestionS3InputConfigurationTypeDef](#ingestions3inputconfigurationtypedef)
-  - [LabelsInputConfigurationTypeDef](#labelsinputconfigurationtypedef)
-  - [LabelsS3InputConfigurationTypeDef](#labelss3inputconfigurationtypedef)
-  - [ListDataIngestionJobsRequestRequestTypeDef](#listdataingestionjobsrequestrequesttypedef)
-  - [ListDataIngestionJobsResponseTypeDef](#listdataingestionjobsresponsetypedef)
-  - [ListDatasetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
-  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
-  - [ListInferenceExecutionsRequestRequestTypeDef](#listinferenceexecutionsrequestrequesttypedef)
-  - [ListInferenceExecutionsResponseTypeDef](#listinferenceexecutionsresponsetypedef)
-  - [ListInferenceSchedulersRequestRequestTypeDef](#listinferenceschedulersrequestrequesttypedef)
-  - [ListInferenceSchedulersResponseTypeDef](#listinferenceschedulersresponsetypedef)
-  - [ListModelsRequestRequestTypeDef](#listmodelsrequestrequesttypedef)
-  - [ListModelsResponseTypeDef](#listmodelsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ModelSummaryTypeDef](#modelsummarytypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3ObjectTypeDef](#s3objecttypedef)
-  - [StartDataIngestionJobRequestRequestTypeDef](#startdataingestionjobrequestrequesttypedef)
-  - [StartDataIngestionJobResponseTypeDef](#startdataingestionjobresponsetypedef)
-  - [StartInferenceSchedulerRequestRequestTypeDef](#startinferenceschedulerrequestrequesttypedef)
-  - [StartInferenceSchedulerResponseTypeDef](#startinferenceschedulerresponsetypedef)
-  - [StopInferenceSchedulerRequestRequestTypeDef](#stopinferenceschedulerrequestrequesttypedef)
-  - [StopInferenceSchedulerResponseTypeDef](#stopinferenceschedulerresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateInferenceSchedulerRequestRequestTypeDef](#updateinferenceschedulerrequestrequesttypedef)
-
-<a id="createdatasetrequestrequesttypedef"></a>
+    Auto-generated documentation for [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
+    type annotations stubs module [mypy-boto3-lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 ## CreateDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import CreateDatasetRequestRequestTypeDef
+
+def get_value() -> CreateDatasetRequestRequestTypeDef:
+    return {
+        "DatasetName": ...,
+        "DatasetSchema": ...,
+        "ClientToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetRequestRequestTypeDef(TypedDict):
+    DatasetName: str,
+    DatasetSchema: DatasetSchemaTypeDef,  # (1)
+    ClientToken: str,
+    ServerSideKmsKeyId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `DatasetName`: `str`
-- `DatasetSchema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
-- `ClientToken`: `str`
-
-Optional fields:
-
-- `ServerSideKmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdatasetresponsetypedef"></a>
-
+1. See [:material-code-braces: DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import CreateDatasetResponseTypeDef
+
+def get_value() -> CreateDatasetResponseTypeDef:
+    return {
+        "DatasetName": ...,
+        "DatasetArn": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetResponseTypeDef(TypedDict):
+    DatasetName: str,
+    DatasetArn: str,
+    Status: DatasetStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DatasetName`: `str`
-- `DatasetArn`: `str`
-- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinferenceschedulerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInferenceSchedulerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import CreateInferenceSchedulerRequestRequestTypeDef
+
+def get_value() -> CreateInferenceSchedulerRequestRequestTypeDef:
+    return {
+        "ModelName": ...,
+        "InferenceSchedulerName": ...,
+        "DataUploadFrequency": ...,
+        "DataInputConfiguration": ...,
+        "DataOutputConfiguration": ...,
+        "RoleArn": ...,
+        "ClientToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInferenceSchedulerRequestRequestTypeDef(TypedDict):
+    ModelName: str,
+    InferenceSchedulerName: str,
+    DataUploadFrequency: DataUploadFrequencyType,  # (1)
+    DataInputConfiguration: InferenceInputConfigurationTypeDef,  # (2)
+    DataOutputConfiguration: InferenceOutputConfigurationTypeDef,  # (3)
+    RoleArn: str,
+    ClientToken: str,
+    DataDelayOffsetInMinutes: NotRequired[int],
+    ServerSideKmsKeyId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `ModelName`: `str`
-- `InferenceSchedulerName`: `str`
-- `DataUploadFrequency`:
-  [DataUploadFrequencyType](./literals.md#datauploadfrequencytype)
-- `DataInputConfiguration`:
-  [InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef)
-- `DataOutputConfiguration`:
-  [InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef)
-- `RoleArn`: `str`
-- `ClientToken`: `str`
-
-Optional fields:
-
-- `DataDelayOffsetInMinutes`: `int`
-- `ServerSideKmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createinferenceschedulerresponsetypedef"></a>
-
+1. See [:material-code-brackets: DataUploadFrequencyType](./literals.md#datauploadfrequencytype) 
+2. See [:material-code-braces: InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef) 
+3. See [:material-code-braces: InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateInferenceSchedulerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import CreateInferenceSchedulerResponseTypeDef
+
+def get_value() -> CreateInferenceSchedulerResponseTypeDef:
+    return {
+        "InferenceSchedulerArn": ...,
+        "InferenceSchedulerName": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInferenceSchedulerResponseTypeDef(TypedDict):
+    InferenceSchedulerArn: str,
+    InferenceSchedulerName: str,
+    Status: InferenceSchedulerStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InferenceSchedulerArn`: `str`
-- `InferenceSchedulerName`: `str`
-- `Status`:
-  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmodelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import CreateModelRequestRequestTypeDef
+
+def get_value() -> CreateModelRequestRequestTypeDef:
+    return {
+        "ModelName": ...,
+        "DatasetName": ...,
+        "ClientToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateModelRequestRequestTypeDef(TypedDict):
+    ModelName: str,
+    DatasetName: str,
+    ClientToken: str,
+    DatasetSchema: NotRequired[DatasetSchemaTypeDef],  # (1)
+    LabelsInputConfiguration: NotRequired[LabelsInputConfigurationTypeDef],  # (2)
+    TrainingDataStartTime: NotRequired[Union[datetime, str]],
+    TrainingDataEndTime: NotRequired[Union[datetime, str]],
+    EvaluationDataStartTime: NotRequired[Union[datetime, str]],
+    EvaluationDataEndTime: NotRequired[Union[datetime, str]],
+    RoleArn: NotRequired[str],
+    DataPreProcessingConfiguration: NotRequired[DataPreProcessingConfigurationTypeDef],  # (3)
+    ServerSideKmsKeyId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    OffCondition: NotRequired[str],
+```
 
-- `ModelName`: `str`
-- `DatasetName`: `str`
-- `ClientToken`: `str`
-
-Optional fields:
-
-- `DatasetSchema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
-- `LabelsInputConfiguration`:
-  [LabelsInputConfigurationTypeDef](./type_defs.md#labelsinputconfigurationtypedef)
-- `TrainingDataStartTime`: `Union`\[`datetime`, `str`\]
-- `TrainingDataEndTime`: `Union`\[`datetime`, `str`\]
-- `EvaluationDataStartTime`: `Union`\[`datetime`, `str`\]
-- `EvaluationDataEndTime`: `Union`\[`datetime`, `str`\]
-- `RoleArn`: `str`
-- `DataPreProcessingConfiguration`:
-  [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
-- `ServerSideKmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `OffCondition`: `str`
-
-<a id="createmodelresponsetypedef"></a>
-
+1. See [:material-code-braces: DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef) 
+2. See [:material-code-braces: LabelsInputConfigurationTypeDef](./type_defs.md#labelsinputconfigurationtypedef) 
+3. See [:material-code-braces: DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import CreateModelResponseTypeDef
+
+def get_value() -> CreateModelResponseTypeDef:
+    return {
+        "ModelArn": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateModelResponseTypeDef(TypedDict):
+    ModelArn: str,
+    Status: ModelStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ModelArn`: `str`
-- `Status`: [ModelStatusType](./literals.md#modelstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dataingestionjobsummarytypedef"></a>
-
+1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataIngestionJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DataIngestionJobSummaryTypeDef
+
+def get_value() -> DataIngestionJobSummaryTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataIngestionJobSummaryTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    DatasetName: NotRequired[str],
+    DatasetArn: NotRequired[str],
+    IngestionInputConfiguration: NotRequired[IngestionInputConfigurationTypeDef],  # (1)
+    Status: NotRequired[IngestionJobStatusType],  # (2)
+```
 
-- `JobId`: `str`
-- `DatasetName`: `str`
-- `DatasetArn`: `str`
-- `IngestionInputConfiguration`:
-  [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
-- `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
-
-<a id="datapreprocessingconfigurationtypedef"></a>
-
+1. See [:material-code-braces: IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef) 
+2. See [:material-code-brackets: IngestionJobStatusType](./literals.md#ingestionjobstatustype) 
 ## DataPreProcessingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DataPreProcessingConfigurationTypeDef
+
+def get_value() -> DataPreProcessingConfigurationTypeDef:
+    return {
+        "TargetSamplingRate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataPreProcessingConfigurationTypeDef(TypedDict):
+    TargetSamplingRate: NotRequired[TargetSamplingRateType],  # (1)
+```
 
-- `TargetSamplingRate`:
-  [TargetSamplingRateType](./literals.md#targetsamplingratetype)
-
-<a id="datasetschematypedef"></a>
-
+1. See [:material-code-brackets: TargetSamplingRateType](./literals.md#targetsamplingratetype) 
 ## DatasetSchemaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DatasetSchemaTypeDef
+
+def get_value() -> DatasetSchemaTypeDef:
+    return {
+        "InlineDataSchema": ...,
+    }
 ```
 
-Optional fields:
-
-- `InlineDataSchema`: `str`
-
-<a id="datasetsummarytypedef"></a>
+```python title="Definition"
+class DatasetSchemaTypeDef(TypedDict):
+    InlineDataSchema: NotRequired[str],
+```
 
 ## DatasetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DatasetSummaryTypeDef
+
+def get_value() -> DatasetSummaryTypeDef:
+    return {
+        "DatasetName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetSummaryTypeDef(TypedDict):
+    DatasetName: NotRequired[str],
+    DatasetArn: NotRequired[str],
+    Status: NotRequired[DatasetStatusType],  # (1)
+    CreatedAt: NotRequired[datetime],
+```
 
-- `DatasetName`: `str`
-- `DatasetArn`: `str`
-- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
-- `CreatedAt`: `datetime`
-
-<a id="deletedatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
 ## DeleteDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DeleteDatasetRequestRequestTypeDef
+
+def get_value() -> DeleteDatasetRequestRequestTypeDef:
+    return {
+        "DatasetName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetName`: `str`
-
-<a id="deleteinferenceschedulerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatasetRequestRequestTypeDef(TypedDict):
+    DatasetName: str,
+```
 
 ## DeleteInferenceSchedulerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DeleteInferenceSchedulerRequestRequestTypeDef
+
+def get_value() -> DeleteInferenceSchedulerRequestRequestTypeDef:
+    return {
+        "InferenceSchedulerName": ...,
+    }
 ```
 
-Required fields:
-
-- `InferenceSchedulerName`: `str`
-
-<a id="deletemodelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteInferenceSchedulerRequestRequestTypeDef(TypedDict):
+    InferenceSchedulerName: str,
+```
 
 ## DeleteModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DeleteModelRequestRequestTypeDef
+
+def get_value() -> DeleteModelRequestRequestTypeDef:
+    return {
+        "ModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ModelName`: `str`
-
-<a id="describedataingestionjobrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteModelRequestRequestTypeDef(TypedDict):
+    ModelName: str,
+```
 
 ## DescribeDataIngestionJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DescribeDataIngestionJobRequestRequestTypeDef
+
+def get_value() -> DescribeDataIngestionJobRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="describedataingestionjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeDataIngestionJobRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## DescribeDataIngestionJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DescribeDataIngestionJobResponseTypeDef
+
+def get_value() -> DescribeDataIngestionJobResponseTypeDef:
+    return {
+        "JobId": ...,
+        "DatasetArn": ...,
+        "IngestionInputConfiguration": ...,
+        "RoleArn": ...,
+        "CreatedAt": ...,
+        "Status": ...,
+        "FailedReason": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDataIngestionJobResponseTypeDef(TypedDict):
+    JobId: str,
+    DatasetArn: str,
+    IngestionInputConfiguration: IngestionInputConfigurationTypeDef,  # (1)
+    RoleArn: str,
+    CreatedAt: datetime,
+    Status: IngestionJobStatusType,  # (2)
+    FailedReason: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `JobId`: `str`
-- `DatasetArn`: `str`
-- `IngestionInputConfiguration`:
-  [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
-- `RoleArn`: `str`
-- `CreatedAt`: `datetime`
-- `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
-- `FailedReason`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef) 
+2. See [:material-code-brackets: IngestionJobStatusType](./literals.md#ingestionjobstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DescribeDatasetRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetRequestRequestTypeDef:
+    return {
+        "DatasetName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetName`: `str`
-
-<a id="describedatasetresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetRequestRequestTypeDef(TypedDict):
+    DatasetName: str,
+```
 
 ## DescribeDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DescribeDatasetResponseTypeDef
+
+def get_value() -> DescribeDatasetResponseTypeDef:
+    return {
+        "DatasetName": ...,
+        "DatasetArn": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Status": ...,
+        "Schema": ...,
+        "ServerSideKmsKeyId": ...,
+        "IngestionInputConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetResponseTypeDef(TypedDict):
+    DatasetName: str,
+    DatasetArn: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Status: DatasetStatusType,  # (1)
+    Schema: str,
+    ServerSideKmsKeyId: str,
+    IngestionInputConfiguration: IngestionInputConfigurationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `DatasetName`: `str`
-- `DatasetArn`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
-- `Schema`: `str`
-- `ServerSideKmsKeyId`: `str`
-- `IngestionInputConfiguration`:
-  [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeinferenceschedulerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
+2. See [:material-code-braces: IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInferenceSchedulerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DescribeInferenceSchedulerRequestRequestTypeDef
+
+def get_value() -> DescribeInferenceSchedulerRequestRequestTypeDef:
+    return {
+        "InferenceSchedulerName": ...,
+    }
 ```
 
-Required fields:
-
-- `InferenceSchedulerName`: `str`
-
-<a id="describeinferenceschedulerresponsetypedef"></a>
+```python title="Definition"
+class DescribeInferenceSchedulerRequestRequestTypeDef(TypedDict):
+    InferenceSchedulerName: str,
+```
 
 ## DescribeInferenceSchedulerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DescribeInferenceSchedulerResponseTypeDef
+
+def get_value() -> DescribeInferenceSchedulerResponseTypeDef:
+    return {
+        "ModelArn": ...,
+        "ModelName": ...,
+        "InferenceSchedulerName": ...,
+        "InferenceSchedulerArn": ...,
+        "Status": ...,
+        "DataDelayOffsetInMinutes": ...,
+        "DataUploadFrequency": ...,
+        "CreatedAt": ...,
+        "UpdatedAt": ...,
+        "DataInputConfiguration": ...,
+        "DataOutputConfiguration": ...,
+        "RoleArn": ...,
+        "ServerSideKmsKeyId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInferenceSchedulerResponseTypeDef(TypedDict):
+    ModelArn: str,
+    ModelName: str,
+    InferenceSchedulerName: str,
+    InferenceSchedulerArn: str,
+    Status: InferenceSchedulerStatusType,  # (1)
+    DataDelayOffsetInMinutes: int,
+    DataUploadFrequency: DataUploadFrequencyType,  # (2)
+    CreatedAt: datetime,
+    UpdatedAt: datetime,
+    DataInputConfiguration: InferenceInputConfigurationTypeDef,  # (3)
+    DataOutputConfiguration: InferenceOutputConfigurationTypeDef,  # (4)
+    RoleArn: str,
+    ServerSideKmsKeyId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `ModelArn`: `str`
-- `ModelName`: `str`
-- `InferenceSchedulerName`: `str`
-- `InferenceSchedulerArn`: `str`
-- `Status`:
-  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
-- `DataDelayOffsetInMinutes`: `int`
-- `DataUploadFrequency`:
-  [DataUploadFrequencyType](./literals.md#datauploadfrequencytype)
-- `CreatedAt`: `datetime`
-- `UpdatedAt`: `datetime`
-- `DataInputConfiguration`:
-  [InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef)
-- `DataOutputConfiguration`:
-  [InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef)
-- `RoleArn`: `str`
-- `ServerSideKmsKeyId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describemodelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
+2. See [:material-code-brackets: DataUploadFrequencyType](./literals.md#datauploadfrequencytype) 
+3. See [:material-code-braces: InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef) 
+4. See [:material-code-braces: InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DescribeModelRequestRequestTypeDef
+
+def get_value() -> DescribeModelRequestRequestTypeDef:
+    return {
+        "ModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ModelName`: `str`
-
-<a id="describemodelresponsetypedef"></a>
+```python title="Definition"
+class DescribeModelRequestRequestTypeDef(TypedDict):
+    ModelName: str,
+```
 
 ## DescribeModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import DescribeModelResponseTypeDef
+
+def get_value() -> DescribeModelResponseTypeDef:
+    return {
+        "ModelName": ...,
+        "ModelArn": ...,
+        "DatasetName": ...,
+        "DatasetArn": ...,
+        "Schema": ...,
+        "LabelsInputConfiguration": ...,
+        "TrainingDataStartTime": ...,
+        "TrainingDataEndTime": ...,
+        "EvaluationDataStartTime": ...,
+        "EvaluationDataEndTime": ...,
+        "RoleArn": ...,
+        "DataPreProcessingConfiguration": ...,
+        "Status": ...,
+        "TrainingExecutionStartTime": ...,
+        "TrainingExecutionEndTime": ...,
+        "FailedReason": ...,
+        "ModelMetrics": ...,
+        "LastUpdatedTime": ...,
+        "CreatedAt": ...,
+        "ServerSideKmsKeyId": ...,
+        "OffCondition": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeModelResponseTypeDef(TypedDict):
+    ModelName: str,
+    ModelArn: str,
+    DatasetName: str,
+    DatasetArn: str,
+    Schema: str,
+    LabelsInputConfiguration: LabelsInputConfigurationTypeDef,  # (1)
+    TrainingDataStartTime: datetime,
+    TrainingDataEndTime: datetime,
+    EvaluationDataStartTime: datetime,
+    EvaluationDataEndTime: datetime,
+    RoleArn: str,
+    DataPreProcessingConfiguration: DataPreProcessingConfigurationTypeDef,  # (2)
+    Status: ModelStatusType,  # (3)
+    TrainingExecutionStartTime: datetime,
+    TrainingExecutionEndTime: datetime,
+    FailedReason: str,
+    ModelMetrics: str,
+    LastUpdatedTime: datetime,
+    CreatedAt: datetime,
+    ServerSideKmsKeyId: str,
+    OffCondition: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `ModelName`: `str`
-- `ModelArn`: `str`
-- `DatasetName`: `str`
-- `DatasetArn`: `str`
-- `Schema`: `str`
-- `LabelsInputConfiguration`:
-  [LabelsInputConfigurationTypeDef](./type_defs.md#labelsinputconfigurationtypedef)
-- `TrainingDataStartTime`: `datetime`
-- `TrainingDataEndTime`: `datetime`
-- `EvaluationDataStartTime`: `datetime`
-- `EvaluationDataEndTime`: `datetime`
-- `RoleArn`: `str`
-- `DataPreProcessingConfiguration`:
-  [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
-- `Status`: [ModelStatusType](./literals.md#modelstatustype)
-- `TrainingExecutionStartTime`: `datetime`
-- `TrainingExecutionEndTime`: `datetime`
-- `FailedReason`: `str`
-- `ModelMetrics`: `str`
-- `LastUpdatedTime`: `datetime`
-- `CreatedAt`: `datetime`
-- `ServerSideKmsKeyId`: `str`
-- `OffCondition`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="inferenceexecutionsummarytypedef"></a>
-
+1. See [:material-code-braces: LabelsInputConfigurationTypeDef](./type_defs.md#labelsinputconfigurationtypedef) 
+2. See [:material-code-braces: DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef) 
+3. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InferenceExecutionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import InferenceExecutionSummaryTypeDef
+
+def get_value() -> InferenceExecutionSummaryTypeDef:
+    return {
+        "ModelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InferenceExecutionSummaryTypeDef(TypedDict):
+    ModelName: NotRequired[str],
+    ModelArn: NotRequired[str],
+    InferenceSchedulerName: NotRequired[str],
+    InferenceSchedulerArn: NotRequired[str],
+    ScheduledStartTime: NotRequired[datetime],
+    DataStartTime: NotRequired[datetime],
+    DataEndTime: NotRequired[datetime],
+    DataInputConfiguration: NotRequired[InferenceInputConfigurationTypeDef],  # (1)
+    DataOutputConfiguration: NotRequired[InferenceOutputConfigurationTypeDef],  # (2)
+    CustomerResultObject: NotRequired[S3ObjectTypeDef],  # (3)
+    Status: NotRequired[InferenceExecutionStatusType],  # (4)
+    FailedReason: NotRequired[str],
+```
 
-- `ModelName`: `str`
-- `ModelArn`: `str`
-- `InferenceSchedulerName`: `str`
-- `InferenceSchedulerArn`: `str`
-- `ScheduledStartTime`: `datetime`
-- `DataStartTime`: `datetime`
-- `DataEndTime`: `datetime`
-- `DataInputConfiguration`:
-  [InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef)
-- `DataOutputConfiguration`:
-  [InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef)
-- `CustomerResultObject`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-- `Status`:
-  [InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype)
-- `FailedReason`: `str`
-
-<a id="inferenceinputconfigurationtypedef"></a>
-
+1. See [:material-code-braces: InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef) 
+2. See [:material-code-braces: InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef) 
+3. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
+4. See [:material-code-brackets: InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype) 
 ## InferenceInputConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import InferenceInputConfigurationTypeDef
+
+def get_value() -> InferenceInputConfigurationTypeDef:
+    return {
+        "S3InputConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InferenceInputConfigurationTypeDef(TypedDict):
+    S3InputConfiguration: NotRequired[InferenceS3InputConfigurationTypeDef],  # (1)
+    InputTimeZoneOffset: NotRequired[str],
+    InferenceInputNameConfiguration: NotRequired[InferenceInputNameConfigurationTypeDef],  # (2)
+```
 
-- `S3InputConfiguration`:
-  [InferenceS3InputConfigurationTypeDef](./type_defs.md#inferences3inputconfigurationtypedef)
-- `InputTimeZoneOffset`: `str`
-- `InferenceInputNameConfiguration`:
-  [InferenceInputNameConfigurationTypeDef](./type_defs.md#inferenceinputnameconfigurationtypedef)
-
-<a id="inferenceinputnameconfigurationtypedef"></a>
-
+1. See [:material-code-braces: InferenceS3InputConfigurationTypeDef](./type_defs.md#inferences3inputconfigurationtypedef) 
+2. See [:material-code-braces: InferenceInputNameConfigurationTypeDef](./type_defs.md#inferenceinputnameconfigurationtypedef) 
 ## InferenceInputNameConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import InferenceInputNameConfigurationTypeDef
+
+def get_value() -> InferenceInputNameConfigurationTypeDef:
+    return {
+        "TimestampFormat": ...,
+    }
 ```
 
-Optional fields:
-
-- `TimestampFormat`: `str`
-- `ComponentTimestampDelimiter`: `str`
-
-<a id="inferenceoutputconfigurationtypedef"></a>
+```python title="Definition"
+class InferenceInputNameConfigurationTypeDef(TypedDict):
+    TimestampFormat: NotRequired[str],
+    ComponentTimestampDelimiter: NotRequired[str],
+```
 
 ## InferenceOutputConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import InferenceOutputConfigurationTypeDef
+
+def get_value() -> InferenceOutputConfigurationTypeDef:
+    return {
+        "S3OutputConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InferenceOutputConfigurationTypeDef(TypedDict):
+    S3OutputConfiguration: InferenceS3OutputConfigurationTypeDef,  # (1)
+    KmsKeyId: NotRequired[str],
+```
 
-- `S3OutputConfiguration`:
-  [InferenceS3OutputConfigurationTypeDef](./type_defs.md#inferences3outputconfigurationtypedef)
-
-Optional fields:
-
-- `KmsKeyId`: `str`
-
-<a id="inferences3inputconfigurationtypedef"></a>
-
+1. See [:material-code-braces: InferenceS3OutputConfigurationTypeDef](./type_defs.md#inferences3outputconfigurationtypedef) 
 ## InferenceS3InputConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import InferenceS3InputConfigurationTypeDef
+
+def get_value() -> InferenceS3InputConfigurationTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Prefix`: `str`
-
-<a id="inferences3outputconfigurationtypedef"></a>
+```python title="Definition"
+class InferenceS3InputConfigurationTypeDef(TypedDict):
+    Bucket: str,
+    Prefix: NotRequired[str],
+```
 
 ## InferenceS3OutputConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import InferenceS3OutputConfigurationTypeDef
+
+def get_value() -> InferenceS3OutputConfigurationTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Prefix`: `str`
-
-<a id="inferenceschedulersummarytypedef"></a>
+```python title="Definition"
+class InferenceS3OutputConfigurationTypeDef(TypedDict):
+    Bucket: str,
+    Prefix: NotRequired[str],
+```
 
 ## InferenceSchedulerSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import InferenceSchedulerSummaryTypeDef
+
+def get_value() -> InferenceSchedulerSummaryTypeDef:
+    return {
+        "ModelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InferenceSchedulerSummaryTypeDef(TypedDict):
+    ModelName: NotRequired[str],
+    ModelArn: NotRequired[str],
+    InferenceSchedulerName: NotRequired[str],
+    InferenceSchedulerArn: NotRequired[str],
+    Status: NotRequired[InferenceSchedulerStatusType],  # (1)
+    DataDelayOffsetInMinutes: NotRequired[int],
+    DataUploadFrequency: NotRequired[DataUploadFrequencyType],  # (2)
+```
 
-- `ModelName`: `str`
-- `ModelArn`: `str`
-- `InferenceSchedulerName`: `str`
-- `InferenceSchedulerArn`: `str`
-- `Status`:
-  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
-- `DataDelayOffsetInMinutes`: `int`
-- `DataUploadFrequency`:
-  [DataUploadFrequencyType](./literals.md#datauploadfrequencytype)
-
-<a id="ingestioninputconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
+2. See [:material-code-brackets: DataUploadFrequencyType](./literals.md#datauploadfrequencytype) 
 ## IngestionInputConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import IngestionInputConfigurationTypeDef
+
+def get_value() -> IngestionInputConfigurationTypeDef:
+    return {
+        "S3InputConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IngestionInputConfigurationTypeDef(TypedDict):
+    S3InputConfiguration: IngestionS3InputConfigurationTypeDef,  # (1)
+```
 
-- `S3InputConfiguration`:
-  [IngestionS3InputConfigurationTypeDef](./type_defs.md#ingestions3inputconfigurationtypedef)
-
-<a id="ingestions3inputconfigurationtypedef"></a>
-
+1. See [:material-code-braces: IngestionS3InputConfigurationTypeDef](./type_defs.md#ingestions3inputconfigurationtypedef) 
 ## IngestionS3InputConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import IngestionS3InputConfigurationTypeDef
+
+def get_value() -> IngestionS3InputConfigurationTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Prefix`: `str`
-
-<a id="labelsinputconfigurationtypedef"></a>
+```python title="Definition"
+class IngestionS3InputConfigurationTypeDef(TypedDict):
+    Bucket: str,
+    Prefix: NotRequired[str],
+```
 
 ## LabelsInputConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import LabelsInputConfigurationTypeDef
+
+def get_value() -> LabelsInputConfigurationTypeDef:
+    return {
+        "S3InputConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LabelsInputConfigurationTypeDef(TypedDict):
+    S3InputConfiguration: LabelsS3InputConfigurationTypeDef,  # (1)
+```
 
-- `S3InputConfiguration`:
-  [LabelsS3InputConfigurationTypeDef](./type_defs.md#labelss3inputconfigurationtypedef)
-
-<a id="labelss3inputconfigurationtypedef"></a>
-
+1. See [:material-code-braces: LabelsS3InputConfigurationTypeDef](./type_defs.md#labelss3inputconfigurationtypedef) 
 ## LabelsS3InputConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import LabelsS3InputConfigurationTypeDef
+
+def get_value() -> LabelsS3InputConfigurationTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Prefix`: `str`
-
-<a id="listdataingestionjobsrequestrequesttypedef"></a>
+```python title="Definition"
+class LabelsS3InputConfigurationTypeDef(TypedDict):
+    Bucket: str,
+    Prefix: NotRequired[str],
+```
 
 ## ListDataIngestionJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListDataIngestionJobsRequestRequestTypeDef
+
+def get_value() -> ListDataIngestionJobsRequestRequestTypeDef:
+    return {
+        "DatasetName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDataIngestionJobsRequestRequestTypeDef(TypedDict):
+    DatasetName: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Status: NotRequired[IngestionJobStatusType],  # (1)
+```
 
-- `DatasetName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
-
-<a id="listdataingestionjobsresponsetypedef"></a>
-
+1. See [:material-code-brackets: IngestionJobStatusType](./literals.md#ingestionjobstatustype) 
 ## ListDataIngestionJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListDataIngestionJobsResponseTypeDef
+
+def get_value() -> ListDataIngestionJobsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "DataIngestionJobSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDataIngestionJobsResponseTypeDef(TypedDict):
+    NextToken: str,
+    DataIngestionJobSummaries: List[DataIngestionJobSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `DataIngestionJobSummaries`:
-  `List`\[[DataIngestionJobSummaryTypeDef](./type_defs.md#dataingestionjobsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdatasetsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataIngestionJobSummaryTypeDef](./type_defs.md#dataingestionjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDatasetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListDatasetsRequestRequestTypeDef
+
+def get_value() -> ListDatasetsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `DatasetNameBeginsWith`: `str`
-
-<a id="listdatasetsresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    DatasetNameBeginsWith: NotRequired[str],
+```
 
 ## ListDatasetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListDatasetsResponseTypeDef
+
+def get_value() -> ListDatasetsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "DatasetSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetsResponseTypeDef(TypedDict):
+    NextToken: str,
+    DatasetSummaries: List[DatasetSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `DatasetSummaries`:
-  `List`\[[DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listinferenceexecutionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInferenceExecutionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListInferenceExecutionsRequestRequestTypeDef
+
+def get_value() -> ListInferenceExecutionsRequestRequestTypeDef:
+    return {
+        "InferenceSchedulerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInferenceExecutionsRequestRequestTypeDef(TypedDict):
+    InferenceSchedulerName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    DataStartTimeAfter: NotRequired[Union[datetime, str]],
+    DataEndTimeBefore: NotRequired[Union[datetime, str]],
+    Status: NotRequired[InferenceExecutionStatusType],  # (1)
+```
 
-- `InferenceSchedulerName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `DataStartTimeAfter`: `Union`\[`datetime`, `str`\]
-- `DataEndTimeBefore`: `Union`\[`datetime`, `str`\]
-- `Status`:
-  [InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype)
-
-<a id="listinferenceexecutionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype) 
 ## ListInferenceExecutionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListInferenceExecutionsResponseTypeDef
+
+def get_value() -> ListInferenceExecutionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "InferenceExecutionSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInferenceExecutionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    InferenceExecutionSummaries: List[InferenceExecutionSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `InferenceExecutionSummaries`:
-  `List`\[[InferenceExecutionSummaryTypeDef](./type_defs.md#inferenceexecutionsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listinferenceschedulersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InferenceExecutionSummaryTypeDef](./type_defs.md#inferenceexecutionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInferenceSchedulersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListInferenceSchedulersRequestRequestTypeDef
+
+def get_value() -> ListInferenceSchedulersRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `InferenceSchedulerNameBeginsWith`: `str`
-- `ModelName`: `str`
-
-<a id="listinferenceschedulersresponsetypedef"></a>
+```python title="Definition"
+class ListInferenceSchedulersRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    InferenceSchedulerNameBeginsWith: NotRequired[str],
+    ModelName: NotRequired[str],
+```
 
 ## ListInferenceSchedulersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListInferenceSchedulersResponseTypeDef
+
+def get_value() -> ListInferenceSchedulersResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "InferenceSchedulerSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInferenceSchedulersResponseTypeDef(TypedDict):
+    NextToken: str,
+    InferenceSchedulerSummaries: List[InferenceSchedulerSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `InferenceSchedulerSummaries`:
-  `List`\[[InferenceSchedulerSummaryTypeDef](./type_defs.md#inferenceschedulersummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmodelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InferenceSchedulerSummaryTypeDef](./type_defs.md#inferenceschedulersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListModelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListModelsRequestRequestTypeDef
+
+def get_value() -> ListModelsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListModelsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Status: NotRequired[ModelStatusType],  # (1)
+    ModelNameBeginsWith: NotRequired[str],
+    DatasetNameBeginsWith: NotRequired[str],
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Status`: [ModelStatusType](./literals.md#modelstatustype)
-- `ModelNameBeginsWith`: `str`
-- `DatasetNameBeginsWith`: `str`
-
-<a id="listmodelsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
 ## ListModelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListModelsResponseTypeDef
+
+def get_value() -> ListModelsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ModelSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListModelsResponseTypeDef(TypedDict):
+    NextToken: str,
+    ModelSummaries: List[ModelSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `ModelSummaries`:
-  `List`\[[ModelSummaryTypeDef](./type_defs.md#modelsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ModelSummaryTypeDef](./type_defs.md#modelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modelsummarytypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModelSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ModelSummaryTypeDef
+
+def get_value() -> ModelSummaryTypeDef:
+    return {
+        "ModelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModelSummaryTypeDef(TypedDict):
+    ModelName: NotRequired[str],
+    ModelArn: NotRequired[str],
+    DatasetName: NotRequired[str],
+    DatasetArn: NotRequired[str],
+    Status: NotRequired[ModelStatusType],  # (1)
+    CreatedAt: NotRequired[datetime],
+```
 
-- `ModelName`: `str`
-- `ModelArn`: `str`
-- `DatasetName`: `str`
-- `DatasetArn`: `str`
-- `Status`: [ModelStatusType](./literals.md#modelstatustype)
-- `CreatedAt`: `datetime`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3objecttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3ObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import S3ObjectTypeDef
+
+def get_value() -> S3ObjectTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Key`: `str`
-
-<a id="startdataingestionjobrequestrequesttypedef"></a>
+```python title="Definition"
+class S3ObjectTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+```
 
 ## StartDataIngestionJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import StartDataIngestionJobRequestRequestTypeDef
+
+def get_value() -> StartDataIngestionJobRequestRequestTypeDef:
+    return {
+        "DatasetName": ...,
+        "IngestionInputConfiguration": ...,
+        "RoleArn": ...,
+        "ClientToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDataIngestionJobRequestRequestTypeDef(TypedDict):
+    DatasetName: str,
+    IngestionInputConfiguration: IngestionInputConfigurationTypeDef,  # (1)
+    RoleArn: str,
+    ClientToken: str,
+```
 
-- `DatasetName`: `str`
-- `IngestionInputConfiguration`:
-  [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
-- `RoleArn`: `str`
-- `ClientToken`: `str`
-
-<a id="startdataingestionjobresponsetypedef"></a>
-
+1. See [:material-code-braces: IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef) 
 ## StartDataIngestionJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import StartDataIngestionJobResponseTypeDef
+
+def get_value() -> StartDataIngestionJobResponseTypeDef:
+    return {
+        "JobId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDataIngestionJobResponseTypeDef(TypedDict):
+    JobId: str,
+    Status: IngestionJobStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobId`: `str`
-- `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startinferenceschedulerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: IngestionJobStatusType](./literals.md#ingestionjobstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartInferenceSchedulerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import StartInferenceSchedulerRequestRequestTypeDef
+
+def get_value() -> StartInferenceSchedulerRequestRequestTypeDef:
+    return {
+        "InferenceSchedulerName": ...,
+    }
 ```
 
-Required fields:
-
-- `InferenceSchedulerName`: `str`
-
-<a id="startinferenceschedulerresponsetypedef"></a>
+```python title="Definition"
+class StartInferenceSchedulerRequestRequestTypeDef(TypedDict):
+    InferenceSchedulerName: str,
+```
 
 ## StartInferenceSchedulerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import StartInferenceSchedulerResponseTypeDef
+
+def get_value() -> StartInferenceSchedulerResponseTypeDef:
+    return {
+        "ModelArn": ...,
+        "ModelName": ...,
+        "InferenceSchedulerName": ...,
+        "InferenceSchedulerArn": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartInferenceSchedulerResponseTypeDef(TypedDict):
+    ModelArn: str,
+    ModelName: str,
+    InferenceSchedulerName: str,
+    InferenceSchedulerArn: str,
+    Status: InferenceSchedulerStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ModelArn`: `str`
-- `ModelName`: `str`
-- `InferenceSchedulerName`: `str`
-- `InferenceSchedulerArn`: `str`
-- `Status`:
-  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopinferenceschedulerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopInferenceSchedulerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import StopInferenceSchedulerRequestRequestTypeDef
+
+def get_value() -> StopInferenceSchedulerRequestRequestTypeDef:
+    return {
+        "InferenceSchedulerName": ...,
+    }
 ```
 
-Required fields:
-
-- `InferenceSchedulerName`: `str`
-
-<a id="stopinferenceschedulerresponsetypedef"></a>
+```python title="Definition"
+class StopInferenceSchedulerRequestRequestTypeDef(TypedDict):
+    InferenceSchedulerName: str,
+```
 
 ## StopInferenceSchedulerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import StopInferenceSchedulerResponseTypeDef
+
+def get_value() -> StopInferenceSchedulerResponseTypeDef:
+    return {
+        "ModelArn": ...,
+        "ModelName": ...,
+        "InferenceSchedulerName": ...,
+        "InferenceSchedulerArn": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopInferenceSchedulerResponseTypeDef(TypedDict):
+    ModelArn: str,
+    ModelName: str,
+    InferenceSchedulerName: str,
+    InferenceSchedulerArn: str,
+    Status: InferenceSchedulerStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ModelArn`: `str`
-- `ModelName`: `str`
-- `InferenceSchedulerName`: `str`
-- `InferenceSchedulerArn`: `str`
-- `Status`:
-  [InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InferenceSchedulerStatusType](./literals.md#inferenceschedulerstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateinferenceschedulerrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateInferenceSchedulerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutequipment.type_defs import UpdateInferenceSchedulerRequestRequestTypeDef
+
+def get_value() -> UpdateInferenceSchedulerRequestRequestTypeDef:
+    return {
+        "InferenceSchedulerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateInferenceSchedulerRequestRequestTypeDef(TypedDict):
+    InferenceSchedulerName: str,
+    DataDelayOffsetInMinutes: NotRequired[int],
+    DataUploadFrequency: NotRequired[DataUploadFrequencyType],  # (1)
+    DataInputConfiguration: NotRequired[InferenceInputConfigurationTypeDef],  # (2)
+    DataOutputConfiguration: NotRequired[InferenceOutputConfigurationTypeDef],  # (3)
+    RoleArn: NotRequired[str],
+```
 
-- `InferenceSchedulerName`: `str`
-
-Optional fields:
-
-- `DataDelayOffsetInMinutes`: `int`
-- `DataUploadFrequency`:
-  [DataUploadFrequencyType](./literals.md#datauploadfrequencytype)
-- `DataInputConfiguration`:
-  [InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef)
-- `DataOutputConfiguration`:
-  [InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef)
-- `RoleArn`: `str`
+1. See [:material-code-brackets: DataUploadFrequencyType](./literals.md#datauploadfrequencytype) 
+2. See [:material-code-braces: InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef) 
+3. See [:material-code-braces: InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef) 

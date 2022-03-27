@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-waf-module"></a>
-
-# Examples for boto3 WAF module
+# Examples
 
 > [Index](../README.md) > [WAF](./README.md) > Examples
 
-- [Examples for boto3 WAF module](#examples-for-boto3-waf-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
+    type annotations stubs module [mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[waf]` package installed.
 
-Write your `WAF` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `WAF` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type WAFClient
-# and provides type checking and code completion
-client = session.client("waf")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type GetRateBasedRuleManagedKeysPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_rate_based_rule_managed_keys")
-for item in paginator.paginate(...):
-    # item has type GetRateBasedRuleManagedKeysResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("waf")  # (1)
+    result = client.create_byte_match_set()  # (2)
+    ```
+
+    1. client: [WAFClient](./client.md)
+    2. result: [:material-code-braces: CreateByteMatchSetResponseTypeDef](./type_defs.md#createbytematchsetresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("waf")  # (1)
+
+    paginator = client.get_paginator("get_rate_based_rule_managed_keys")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [WAFClient](./client.md)
+    2. paginator: [GetRateBasedRuleManagedKeysPaginator](./paginators.md#getratebasedrulemanagedkeyspaginator)
+    3. item: [:material-code-braces: GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[waf]` or a standalone `mypy_boto3_waf` package, you have
-to explicitly specify `client: WAFClient` type annotation.
+With `boto3-stubs-lite[waf]`
+or a standalone `mypy_boto3_waf` package, you have to explicitly specify `client: WAFClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_waf.client import WAFClient
-from mypy_boto3_waf.paginator import GetRateBasedRuleManagedKeysPaginator
-
-from mypy_boto3_waf.literals import PaginatorName
-
-from mypy_boto3_waf.type_defs import bool
-from mypy_boto3_waf.type_defs import GetRateBasedRuleManagedKeysResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: WAFClient = session.client("waf")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_waf.client import WAFClient
+    from mypy_boto3_waf.type_defs import CreateByteMatchSetResponseTypeDef
+    from mypy_boto3_waf.type_defs import CreateByteMatchSetRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_rate_based_rule_managed_keys"
-paginator: GetRateBasedRuleManagedKeysPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetRateBasedRuleManagedKeysResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: WAFClient = session.client("waf")
+
+    kwargs: CreateByteMatchSetRequestRequestTypeDef = {...}
+    result: CreateByteMatchSetResponseTypeDef = client.create_byte_match_set(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_waf.client import WAFClient
+    from mypy_boto3_waf.paginator import GetRateBasedRuleManagedKeysPaginator
+    from mypy_boto3_waf.type_defs import GetRateBasedRuleManagedKeysResponseTypeDef
+
+
+    session = Session()
+    client: WAFClient = session.client("waf")
+
+    paginator: GetRateBasedRuleManagedKeysPaginator = client.get_paginator("get_rate_based_rule_managed_keys")
+    for item in paginator.paginate(...):
+        item: GetRateBasedRuleManagedKeysResponseTypeDef
+        print(item)
+    ```
+
+
+
+

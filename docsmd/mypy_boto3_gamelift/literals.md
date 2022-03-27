@@ -1,1441 +1,1535 @@
-<a id="literals-for-boto3-gamelift-module"></a>
-
-# Literals for boto3 GameLift module
+# Literals
 
 > [Index](../README.md) > [GameLift](./README.md) > Literals
 
-Auto-generated documentation for
-[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
-type annotations stubs module
-[mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+!!! note ""
 
-- [Literals for boto3 GameLift module](#literals-for-boto3-gamelift-module)
-  - [AcceptanceTypeType](#acceptancetypetype)
-  - [BackfillModeType](#backfillmodetype)
-  - [BalancingStrategyType](#balancingstrategytype)
-  - [BuildStatusType](#buildstatustype)
-  - [CertificateTypeType](#certificatetypetype)
-  - [ComparisonOperatorTypeType](#comparisonoperatortypetype)
-  - [DescribeFleetAttributesPaginatorName](#describefleetattributespaginatorname)
-  - [DescribeFleetCapacityPaginatorName](#describefleetcapacitypaginatorname)
-  - [DescribeFleetEventsPaginatorName](#describefleeteventspaginatorname)
-  - [DescribeFleetUtilizationPaginatorName](#describefleetutilizationpaginatorname)
-  - [DescribeGameServerInstancesPaginatorName](#describegameserverinstancespaginatorname)
-  - [DescribeGameSessionDetailsPaginatorName](#describegamesessiondetailspaginatorname)
-  - [DescribeGameSessionQueuesPaginatorName](#describegamesessionqueuespaginatorname)
-  - [DescribeGameSessionsPaginatorName](#describegamesessionspaginatorname)
-  - [DescribeInstancesPaginatorName](#describeinstancespaginatorname)
-  - [DescribeMatchmakingConfigurationsPaginatorName](#describematchmakingconfigurationspaginatorname)
-  - [DescribeMatchmakingRuleSetsPaginatorName](#describematchmakingrulesetspaginatorname)
-  - [DescribePlayerSessionsPaginatorName](#describeplayersessionspaginatorname)
-  - [DescribeScalingPoliciesPaginatorName](#describescalingpoliciespaginatorname)
-  - [EC2InstanceTypeType](#ec2instancetypetype)
-  - [EventCodeType](#eventcodetype)
-  - [FleetActionType](#fleetactiontype)
-  - [FleetStatusType](#fleetstatustype)
-  - [FleetTypeType](#fleettypetype)
-  - [FlexMatchModeType](#flexmatchmodetype)
-  - [GameServerClaimStatusType](#gameserverclaimstatustype)
-  - [GameServerGroupActionType](#gameservergroupactiontype)
-  - [GameServerGroupDeleteOptionType](#gameservergroupdeleteoptiontype)
-  - [GameServerGroupInstanceTypeType](#gameservergroupinstancetypetype)
-  - [GameServerGroupStatusType](#gameservergroupstatustype)
-  - [GameServerHealthCheckType](#gameserverhealthchecktype)
-  - [GameServerInstanceStatusType](#gameserverinstancestatustype)
-  - [GameServerProtectionPolicyType](#gameserverprotectionpolicytype)
-  - [GameServerUtilizationStatusType](#gameserverutilizationstatustype)
-  - [GameSessionPlacementStateType](#gamesessionplacementstatetype)
-  - [GameSessionStatusReasonType](#gamesessionstatusreasontype)
-  - [GameSessionStatusType](#gamesessionstatustype)
-  - [InstanceStatusType](#instancestatustype)
-  - [IpProtocolType](#ipprotocoltype)
-  - [ListAliasesPaginatorName](#listaliasespaginatorname)
-  - [ListBuildsPaginatorName](#listbuildspaginatorname)
-  - [ListFleetsPaginatorName](#listfleetspaginatorname)
-  - [ListGameServerGroupsPaginatorName](#listgameservergroupspaginatorname)
-  - [ListGameServersPaginatorName](#listgameserverspaginatorname)
-  - [ListScriptsPaginatorName](#listscriptspaginatorname)
-  - [LocationUpdateStatusType](#locationupdatestatustype)
-  - [MatchmakingConfigurationStatusType](#matchmakingconfigurationstatustype)
-  - [MetricNameType](#metricnametype)
-  - [OperatingSystemType](#operatingsystemtype)
-  - [PlayerSessionCreationPolicyType](#playersessioncreationpolicytype)
-  - [PlayerSessionStatusType](#playersessionstatustype)
-  - [PolicyTypeType](#policytypetype)
-  - [PriorityTypeType](#prioritytypetype)
-  - [ProtectionPolicyType](#protectionpolicytype)
-  - [RoutingStrategyTypeType](#routingstrategytypetype)
-  - [ScalingAdjustmentTypeType](#scalingadjustmenttypetype)
-  - [ScalingStatusTypeType](#scalingstatustypetype)
-  - [SearchGameSessionsPaginatorName](#searchgamesessionspaginatorname)
-  - [SortOrderType](#sortordertype)
-  - [GameLiftServiceName](#gameliftservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="acceptancetypetype"></a>
+    Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+    type annotations stubs module [mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 ## AcceptanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import AcceptanceTypeType
+
+def get_value() -> AcceptanceTypeType:
+    return "ACCEPT"
 ```
 
-Values:
-
-- `ACCEPT`
-- `REJECT`
-
-<a id="backfillmodetype"></a>
-
+```python title="Definition"
+AcceptanceTypeType = Literal[
+    "ACCEPT",
+    "REJECT",
+]
+```
 ## BackfillModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import BackfillModeType
+
+def get_value() -> BackfillModeType:
+    return "AUTOMATIC"
 ```
 
-Values:
-
-- `AUTOMATIC`
-- `MANUAL`
-
-<a id="balancingstrategytype"></a>
-
+```python title="Definition"
+BackfillModeType = Literal[
+    "AUTOMATIC",
+    "MANUAL",
+]
+```
 ## BalancingStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import BalancingStrategyType
+
+def get_value() -> BalancingStrategyType:
+    return "ON_DEMAND_ONLY"
 ```
 
-Values:
-
-- `ON_DEMAND_ONLY`
-- `SPOT_ONLY`
-- `SPOT_PREFERRED`
-
-<a id="buildstatustype"></a>
-
+```python title="Definition"
+BalancingStrategyType = Literal[
+    "ON_DEMAND_ONLY",
+    "SPOT_ONLY",
+    "SPOT_PREFERRED",
+]
+```
 ## BuildStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import BuildStatusType
+
+def get_value() -> BuildStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `INITIALIZED`
-- `READY`
-
-<a id="certificatetypetype"></a>
-
+```python title="Definition"
+BuildStatusType = Literal[
+    "FAILED",
+    "INITIALIZED",
+    "READY",
+]
+```
 ## CertificateTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import CertificateTypeType
+
+def get_value() -> CertificateTypeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `GENERATED`
-
-<a id="comparisonoperatortypetype"></a>
-
+```python title="Definition"
+CertificateTypeType = Literal[
+    "DISABLED",
+    "GENERATED",
+]
+```
 ## ComparisonOperatorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ComparisonOperatorTypeType
+
+def get_value() -> ComparisonOperatorTypeType:
+    return "GreaterThanOrEqualToThreshold"
 ```
 
-Values:
-
-- `GreaterThanOrEqualToThreshold`
-- `GreaterThanThreshold`
-- `LessThanOrEqualToThreshold`
-- `LessThanThreshold`
-
-<a id="describefleetattributespaginatorname"></a>
-
+```python title="Definition"
+ComparisonOperatorTypeType = Literal[
+    "GreaterThanOrEqualToThreshold",
+    "GreaterThanThreshold",
+    "LessThanOrEqualToThreshold",
+    "LessThanThreshold",
+]
+```
 ## DescribeFleetAttributesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeFleetAttributesPaginatorName
+
+def get_value() -> DescribeFleetAttributesPaginatorName:
+    return "describe_fleet_attributes"
 ```
 
-Values:
-
-- `describe_fleet_attributes`
-
-<a id="describefleetcapacitypaginatorname"></a>
-
+```python title="Definition"
+DescribeFleetAttributesPaginatorName = Literal[
+    "describe_fleet_attributes",
+]
+```
 ## DescribeFleetCapacityPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeFleetCapacityPaginatorName
+
+def get_value() -> DescribeFleetCapacityPaginatorName:
+    return "describe_fleet_capacity"
 ```
 
-Values:
-
-- `describe_fleet_capacity`
-
-<a id="describefleeteventspaginatorname"></a>
-
+```python title="Definition"
+DescribeFleetCapacityPaginatorName = Literal[
+    "describe_fleet_capacity",
+]
+```
 ## DescribeFleetEventsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeFleetEventsPaginatorName
+
+def get_value() -> DescribeFleetEventsPaginatorName:
+    return "describe_fleet_events"
 ```
 
-Values:
-
-- `describe_fleet_events`
-
-<a id="describefleetutilizationpaginatorname"></a>
-
+```python title="Definition"
+DescribeFleetEventsPaginatorName = Literal[
+    "describe_fleet_events",
+]
+```
 ## DescribeFleetUtilizationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeFleetUtilizationPaginatorName
+
+def get_value() -> DescribeFleetUtilizationPaginatorName:
+    return "describe_fleet_utilization"
 ```
 
-Values:
-
-- `describe_fleet_utilization`
-
-<a id="describegameserverinstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeFleetUtilizationPaginatorName = Literal[
+    "describe_fleet_utilization",
+]
+```
 ## DescribeGameServerInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeGameServerInstancesPaginatorName
+
+def get_value() -> DescribeGameServerInstancesPaginatorName:
+    return "describe_game_server_instances"
 ```
 
-Values:
-
-- `describe_game_server_instances`
-
-<a id="describegamesessiondetailspaginatorname"></a>
-
+```python title="Definition"
+DescribeGameServerInstancesPaginatorName = Literal[
+    "describe_game_server_instances",
+]
+```
 ## DescribeGameSessionDetailsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeGameSessionDetailsPaginatorName
+
+def get_value() -> DescribeGameSessionDetailsPaginatorName:
+    return "describe_game_session_details"
 ```
 
-Values:
-
-- `describe_game_session_details`
-
-<a id="describegamesessionqueuespaginatorname"></a>
-
+```python title="Definition"
+DescribeGameSessionDetailsPaginatorName = Literal[
+    "describe_game_session_details",
+]
+```
 ## DescribeGameSessionQueuesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeGameSessionQueuesPaginatorName
+
+def get_value() -> DescribeGameSessionQueuesPaginatorName:
+    return "describe_game_session_queues"
 ```
 
-Values:
-
-- `describe_game_session_queues`
-
-<a id="describegamesessionspaginatorname"></a>
-
+```python title="Definition"
+DescribeGameSessionQueuesPaginatorName = Literal[
+    "describe_game_session_queues",
+]
+```
 ## DescribeGameSessionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeGameSessionsPaginatorName
+
+def get_value() -> DescribeGameSessionsPaginatorName:
+    return "describe_game_sessions"
 ```
 
-Values:
-
-- `describe_game_sessions`
-
-<a id="describeinstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeGameSessionsPaginatorName = Literal[
+    "describe_game_sessions",
+]
+```
 ## DescribeInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeInstancesPaginatorName
+
+def get_value() -> DescribeInstancesPaginatorName:
+    return "describe_instances"
 ```
 
-Values:
-
-- `describe_instances`
-
-<a id="describematchmakingconfigurationspaginatorname"></a>
-
+```python title="Definition"
+DescribeInstancesPaginatorName = Literal[
+    "describe_instances",
+]
+```
 ## DescribeMatchmakingConfigurationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeMatchmakingConfigurationsPaginatorName
+
+def get_value() -> DescribeMatchmakingConfigurationsPaginatorName:
+    return "describe_matchmaking_configurations"
 ```
 
-Values:
-
-- `describe_matchmaking_configurations`
-
-<a id="describematchmakingrulesetspaginatorname"></a>
-
+```python title="Definition"
+DescribeMatchmakingConfigurationsPaginatorName = Literal[
+    "describe_matchmaking_configurations",
+]
+```
 ## DescribeMatchmakingRuleSetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeMatchmakingRuleSetsPaginatorName
+
+def get_value() -> DescribeMatchmakingRuleSetsPaginatorName:
+    return "describe_matchmaking_rule_sets"
 ```
 
-Values:
-
-- `describe_matchmaking_rule_sets`
-
-<a id="describeplayersessionspaginatorname"></a>
-
+```python title="Definition"
+DescribeMatchmakingRuleSetsPaginatorName = Literal[
+    "describe_matchmaking_rule_sets",
+]
+```
 ## DescribePlayerSessionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribePlayerSessionsPaginatorName
+
+def get_value() -> DescribePlayerSessionsPaginatorName:
+    return "describe_player_sessions"
 ```
 
-Values:
-
-- `describe_player_sessions`
-
-<a id="describescalingpoliciespaginatorname"></a>
-
+```python title="Definition"
+DescribePlayerSessionsPaginatorName = Literal[
+    "describe_player_sessions",
+]
+```
 ## DescribeScalingPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import DescribeScalingPoliciesPaginatorName
+
+def get_value() -> DescribeScalingPoliciesPaginatorName:
+    return "describe_scaling_policies"
 ```
 
-Values:
-
-- `describe_scaling_policies`
-
-<a id="ec2instancetypetype"></a>
-
+```python title="Definition"
+DescribeScalingPoliciesPaginatorName = Literal[
+    "describe_scaling_policies",
+]
+```
 ## EC2InstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import EC2InstanceTypeType
+
+def get_value() -> EC2InstanceTypeType:
+    return "c3.2xlarge"
 ```
 
-Values:
-
-- `c3.2xlarge`
-- `c3.4xlarge`
-- `c3.8xlarge`
-- `c3.large`
-- `c3.xlarge`
-- `c4.2xlarge`
-- `c4.4xlarge`
-- `c4.8xlarge`
-- `c4.large`
-- `c4.xlarge`
-- `c5.12xlarge`
-- `c5.18xlarge`
-- `c5.24xlarge`
-- `c5.2xlarge`
-- `c5.4xlarge`
-- `c5.9xlarge`
-- `c5.large`
-- `c5.xlarge`
-- `c5a.12xlarge`
-- `c5a.16xlarge`
-- `c5a.24xlarge`
-- `c5a.2xlarge`
-- `c5a.4xlarge`
-- `c5a.8xlarge`
-- `c5a.large`
-- `c5a.xlarge`
-- `m3.2xlarge`
-- `m3.large`
-- `m3.medium`
-- `m3.xlarge`
-- `m4.10xlarge`
-- `m4.2xlarge`
-- `m4.4xlarge`
-- `m4.large`
-- `m4.xlarge`
-- `m5.12xlarge`
-- `m5.16xlarge`
-- `m5.24xlarge`
-- `m5.2xlarge`
-- `m5.4xlarge`
-- `m5.8xlarge`
-- `m5.large`
-- `m5.xlarge`
-- `m5a.12xlarge`
-- `m5a.16xlarge`
-- `m5a.24xlarge`
-- `m5a.2xlarge`
-- `m5a.4xlarge`
-- `m5a.8xlarge`
-- `m5a.large`
-- `m5a.xlarge`
-- `r3.2xlarge`
-- `r3.4xlarge`
-- `r3.8xlarge`
-- `r3.large`
-- `r3.xlarge`
-- `r4.16xlarge`
-- `r4.2xlarge`
-- `r4.4xlarge`
-- `r4.8xlarge`
-- `r4.large`
-- `r4.xlarge`
-- `r5.12xlarge`
-- `r5.16xlarge`
-- `r5.24xlarge`
-- `r5.2xlarge`
-- `r5.4xlarge`
-- `r5.8xlarge`
-- `r5.large`
-- `r5.xlarge`
-- `r5a.12xlarge`
-- `r5a.16xlarge`
-- `r5a.24xlarge`
-- `r5a.2xlarge`
-- `r5a.4xlarge`
-- `r5a.8xlarge`
-- `r5a.large`
-- `r5a.xlarge`
-- `t2.large`
-- `t2.medium`
-- `t2.micro`
-- `t2.small`
-
-<a id="eventcodetype"></a>
-
+```python title="Definition"
+EC2InstanceTypeType = Literal[
+    "c3.2xlarge",
+    "c3.4xlarge",
+    "c3.8xlarge",
+    "c3.large",
+    "c3.xlarge",
+    "c4.2xlarge",
+    "c4.4xlarge",
+    "c4.8xlarge",
+    "c4.large",
+    "c4.xlarge",
+    "c5.12xlarge",
+    "c5.18xlarge",
+    "c5.24xlarge",
+    "c5.2xlarge",
+    "c5.4xlarge",
+    "c5.9xlarge",
+    "c5.large",
+    "c5.xlarge",
+    "c5a.12xlarge",
+    "c5a.16xlarge",
+    "c5a.24xlarge",
+    "c5a.2xlarge",
+    "c5a.4xlarge",
+    "c5a.8xlarge",
+    "c5a.large",
+    "c5a.xlarge",
+    "m3.2xlarge",
+    "m3.large",
+    "m3.medium",
+    "m3.xlarge",
+    "m4.10xlarge",
+    "m4.2xlarge",
+    "m4.4xlarge",
+    "m4.large",
+    "m4.xlarge",
+    "m5.12xlarge",
+    "m5.16xlarge",
+    "m5.24xlarge",
+    "m5.2xlarge",
+    "m5.4xlarge",
+    "m5.8xlarge",
+    "m5.large",
+    "m5.xlarge",
+    "m5a.12xlarge",
+    "m5a.16xlarge",
+    "m5a.24xlarge",
+    "m5a.2xlarge",
+    "m5a.4xlarge",
+    "m5a.8xlarge",
+    "m5a.large",
+    "m5a.xlarge",
+    "r3.2xlarge",
+    "r3.4xlarge",
+    "r3.8xlarge",
+    "r3.large",
+    "r3.xlarge",
+    "r4.16xlarge",
+    "r4.2xlarge",
+    "r4.4xlarge",
+    "r4.8xlarge",
+    "r4.large",
+    "r4.xlarge",
+    "r5.12xlarge",
+    "r5.16xlarge",
+    "r5.24xlarge",
+    "r5.2xlarge",
+    "r5.4xlarge",
+    "r5.8xlarge",
+    "r5.large",
+    "r5.xlarge",
+    "r5a.12xlarge",
+    "r5a.16xlarge",
+    "r5a.24xlarge",
+    "r5a.2xlarge",
+    "r5a.4xlarge",
+    "r5a.8xlarge",
+    "r5a.large",
+    "r5a.xlarge",
+    "t2.large",
+    "t2.medium",
+    "t2.micro",
+    "t2.small",
+]
+```
 ## EventCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import EventCodeType
+
+def get_value() -> EventCodeType:
+    return "FLEET_ACTIVATION_FAILED"
 ```
 
-Values:
-
-- `FLEET_ACTIVATION_FAILED`
-- `FLEET_ACTIVATION_FAILED_NO_INSTANCES`
-- `FLEET_BINARY_DOWNLOAD_FAILED`
-- `FLEET_CREATED`
-- `FLEET_CREATION_EXTRACTING_BUILD`
-- `FLEET_CREATION_RUNNING_INSTALLER`
-- `FLEET_CREATION_VALIDATING_RUNTIME_CONFIG`
-- `FLEET_DELETED`
-- `FLEET_INITIALIZATION_FAILED`
-- `FLEET_NEW_GAME_SESSION_PROTECTION_POLICY_UPDATED`
-- `FLEET_SCALING_EVENT`
-- `FLEET_STATE_ACTIVATING`
-- `FLEET_STATE_ACTIVE`
-- `FLEET_STATE_BUILDING`
-- `FLEET_STATE_DOWNLOADING`
-- `FLEET_STATE_ERROR`
-- `FLEET_STATE_VALIDATING`
-- `FLEET_VALIDATION_EXECUTABLE_RUNTIME_FAILURE`
-- `FLEET_VALIDATION_LAUNCH_PATH_NOT_FOUND`
-- `FLEET_VALIDATION_TIMED_OUT`
-- `FLEET_VPC_PEERING_DELETED`
-- `FLEET_VPC_PEERING_FAILED`
-- `FLEET_VPC_PEERING_SUCCEEDED`
-- `GAME_SESSION_ACTIVATION_TIMEOUT`
-- `GENERIC_EVENT`
-- `INSTANCE_INTERRUPTED`
-- `SERVER_PROCESS_CRASHED`
-- `SERVER_PROCESS_FORCE_TERMINATED`
-- `SERVER_PROCESS_INVALID_PATH`
-- `SERVER_PROCESS_PROCESS_EXIT_TIMEOUT`
-- `SERVER_PROCESS_PROCESS_READY_TIMEOUT`
-- `SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT`
-- `SERVER_PROCESS_TERMINATED_UNHEALTHY`
-
-<a id="fleetactiontype"></a>
-
+```python title="Definition"
+EventCodeType = Literal[
+    "FLEET_ACTIVATION_FAILED",
+    "FLEET_ACTIVATION_FAILED_NO_INSTANCES",
+    "FLEET_BINARY_DOWNLOAD_FAILED",
+    "FLEET_CREATED",
+    "FLEET_CREATION_EXTRACTING_BUILD",
+    "FLEET_CREATION_RUNNING_INSTALLER",
+    "FLEET_CREATION_VALIDATING_RUNTIME_CONFIG",
+    "FLEET_DELETED",
+    "FLEET_INITIALIZATION_FAILED",
+    "FLEET_NEW_GAME_SESSION_PROTECTION_POLICY_UPDATED",
+    "FLEET_SCALING_EVENT",
+    "FLEET_STATE_ACTIVATING",
+    "FLEET_STATE_ACTIVE",
+    "FLEET_STATE_BUILDING",
+    "FLEET_STATE_DOWNLOADING",
+    "FLEET_STATE_ERROR",
+    "FLEET_STATE_VALIDATING",
+    "FLEET_VALIDATION_EXECUTABLE_RUNTIME_FAILURE",
+    "FLEET_VALIDATION_LAUNCH_PATH_NOT_FOUND",
+    "FLEET_VALIDATION_TIMED_OUT",
+    "FLEET_VPC_PEERING_DELETED",
+    "FLEET_VPC_PEERING_FAILED",
+    "FLEET_VPC_PEERING_SUCCEEDED",
+    "GAME_SESSION_ACTIVATION_TIMEOUT",
+    "GENERIC_EVENT",
+    "INSTANCE_INTERRUPTED",
+    "SERVER_PROCESS_CRASHED",
+    "SERVER_PROCESS_FORCE_TERMINATED",
+    "SERVER_PROCESS_INVALID_PATH",
+    "SERVER_PROCESS_PROCESS_EXIT_TIMEOUT",
+    "SERVER_PROCESS_PROCESS_READY_TIMEOUT",
+    "SERVER_PROCESS_SDK_INITIALIZATION_TIMEOUT",
+    "SERVER_PROCESS_TERMINATED_UNHEALTHY",
+]
+```
 ## FleetActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import FleetActionType
+
+def get_value() -> FleetActionType:
+    return "AUTO_SCALING"
 ```
 
-Values:
-
-- `AUTO_SCALING`
-
-<a id="fleetstatustype"></a>
-
+```python title="Definition"
+FleetActionType = Literal[
+    "AUTO_SCALING",
+]
+```
 ## FleetStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import FleetStatusType
+
+def get_value() -> FleetStatusType:
+    return "ACTIVATING"
 ```
 
-Values:
-
-- `ACTIVATING`
-- `ACTIVE`
-- `BUILDING`
-- `DELETING`
-- `DOWNLOADING`
-- `ERROR`
-- `NEW`
-- `TERMINATED`
-- `VALIDATING`
-
-<a id="fleettypetype"></a>
-
+```python title="Definition"
+FleetStatusType = Literal[
+    "ACTIVATING",
+    "ACTIVE",
+    "BUILDING",
+    "DELETING",
+    "DOWNLOADING",
+    "ERROR",
+    "NEW",
+    "TERMINATED",
+    "VALIDATING",
+]
+```
 ## FleetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import FleetTypeType
+
+def get_value() -> FleetTypeType:
+    return "ON_DEMAND"
 ```
 
-Values:
-
-- `ON_DEMAND`
-- `SPOT`
-
-<a id="flexmatchmodetype"></a>
-
+```python title="Definition"
+FleetTypeType = Literal[
+    "ON_DEMAND",
+    "SPOT",
+]
+```
 ## FlexMatchModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import FlexMatchModeType
+
+def get_value() -> FlexMatchModeType:
+    return "STANDALONE"
 ```
 
-Values:
-
-- `STANDALONE`
-- `WITH_QUEUE`
-
-<a id="gameserverclaimstatustype"></a>
-
+```python title="Definition"
+FlexMatchModeType = Literal[
+    "STANDALONE",
+    "WITH_QUEUE",
+]
+```
 ## GameServerClaimStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameServerClaimStatusType
+
+def get_value() -> GameServerClaimStatusType:
+    return "CLAIMED"
 ```
 
-Values:
-
-- `CLAIMED`
-
-<a id="gameservergroupactiontype"></a>
-
+```python title="Definition"
+GameServerClaimStatusType = Literal[
+    "CLAIMED",
+]
+```
 ## GameServerGroupActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameServerGroupActionType
+
+def get_value() -> GameServerGroupActionType:
+    return "REPLACE_INSTANCE_TYPES"
 ```
 
-Values:
-
-- `REPLACE_INSTANCE_TYPES`
-
-<a id="gameservergroupdeleteoptiontype"></a>
-
+```python title="Definition"
+GameServerGroupActionType = Literal[
+    "REPLACE_INSTANCE_TYPES",
+]
+```
 ## GameServerGroupDeleteOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameServerGroupDeleteOptionType
+
+def get_value() -> GameServerGroupDeleteOptionType:
+    return "FORCE_DELETE"
 ```
 
-Values:
-
-- `FORCE_DELETE`
-- `RETAIN`
-- `SAFE_DELETE`
-
-<a id="gameservergroupinstancetypetype"></a>
-
+```python title="Definition"
+GameServerGroupDeleteOptionType = Literal[
+    "FORCE_DELETE",
+    "RETAIN",
+    "SAFE_DELETE",
+]
+```
 ## GameServerGroupInstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameServerGroupInstanceTypeType
+
+def get_value() -> GameServerGroupInstanceTypeType:
+    return "c4.2xlarge"
 ```
 
-Values:
-
-- `c4.2xlarge`
-- `c4.4xlarge`
-- `c4.8xlarge`
-- `c4.large`
-- `c4.xlarge`
-- `c5.12xlarge`
-- `c5.18xlarge`
-- `c5.24xlarge`
-- `c5.2xlarge`
-- `c5.4xlarge`
-- `c5.9xlarge`
-- `c5.large`
-- `c5.xlarge`
-- `c5a.12xlarge`
-- `c5a.16xlarge`
-- `c5a.24xlarge`
-- `c5a.2xlarge`
-- `c5a.4xlarge`
-- `c5a.8xlarge`
-- `c5a.large`
-- `c5a.xlarge`
-- `c6g.12xlarge`
-- `c6g.16xlarge`
-- `c6g.2xlarge`
-- `c6g.4xlarge`
-- `c6g.8xlarge`
-- `c6g.large`
-- `c6g.medium`
-- `c6g.xlarge`
-- `m4.10xlarge`
-- `m4.2xlarge`
-- `m4.4xlarge`
-- `m4.large`
-- `m4.xlarge`
-- `m5.12xlarge`
-- `m5.16xlarge`
-- `m5.24xlarge`
-- `m5.2xlarge`
-- `m5.4xlarge`
-- `m5.8xlarge`
-- `m5.large`
-- `m5.xlarge`
-- `m5a.12xlarge`
-- `m5a.16xlarge`
-- `m5a.24xlarge`
-- `m5a.2xlarge`
-- `m5a.4xlarge`
-- `m5a.8xlarge`
-- `m5a.large`
-- `m5a.xlarge`
-- `m6g.12xlarge`
-- `m6g.16xlarge`
-- `m6g.2xlarge`
-- `m6g.4xlarge`
-- `m6g.8xlarge`
-- `m6g.large`
-- `m6g.medium`
-- `m6g.xlarge`
-- `r4.16xlarge`
-- `r4.2xlarge`
-- `r4.4xlarge`
-- `r4.8xlarge`
-- `r4.large`
-- `r4.xlarge`
-- `r5.12xlarge`
-- `r5.16xlarge`
-- `r5.24xlarge`
-- `r5.2xlarge`
-- `r5.4xlarge`
-- `r5.8xlarge`
-- `r5.large`
-- `r5.xlarge`
-- `r5a.12xlarge`
-- `r5a.16xlarge`
-- `r5a.24xlarge`
-- `r5a.2xlarge`
-- `r5a.4xlarge`
-- `r5a.8xlarge`
-- `r5a.large`
-- `r5a.xlarge`
-- `r6g.12xlarge`
-- `r6g.16xlarge`
-- `r6g.2xlarge`
-- `r6g.4xlarge`
-- `r6g.8xlarge`
-- `r6g.large`
-- `r6g.medium`
-- `r6g.xlarge`
-
-<a id="gameservergroupstatustype"></a>
-
+```python title="Definition"
+GameServerGroupInstanceTypeType = Literal[
+    "c4.2xlarge",
+    "c4.4xlarge",
+    "c4.8xlarge",
+    "c4.large",
+    "c4.xlarge",
+    "c5.12xlarge",
+    "c5.18xlarge",
+    "c5.24xlarge",
+    "c5.2xlarge",
+    "c5.4xlarge",
+    "c5.9xlarge",
+    "c5.large",
+    "c5.xlarge",
+    "c5a.12xlarge",
+    "c5a.16xlarge",
+    "c5a.24xlarge",
+    "c5a.2xlarge",
+    "c5a.4xlarge",
+    "c5a.8xlarge",
+    "c5a.large",
+    "c5a.xlarge",
+    "c6g.12xlarge",
+    "c6g.16xlarge",
+    "c6g.2xlarge",
+    "c6g.4xlarge",
+    "c6g.8xlarge",
+    "c6g.large",
+    "c6g.medium",
+    "c6g.xlarge",
+    "m4.10xlarge",
+    "m4.2xlarge",
+    "m4.4xlarge",
+    "m4.large",
+    "m4.xlarge",
+    "m5.12xlarge",
+    "m5.16xlarge",
+    "m5.24xlarge",
+    "m5.2xlarge",
+    "m5.4xlarge",
+    "m5.8xlarge",
+    "m5.large",
+    "m5.xlarge",
+    "m5a.12xlarge",
+    "m5a.16xlarge",
+    "m5a.24xlarge",
+    "m5a.2xlarge",
+    "m5a.4xlarge",
+    "m5a.8xlarge",
+    "m5a.large",
+    "m5a.xlarge",
+    "m6g.12xlarge",
+    "m6g.16xlarge",
+    "m6g.2xlarge",
+    "m6g.4xlarge",
+    "m6g.8xlarge",
+    "m6g.large",
+    "m6g.medium",
+    "m6g.xlarge",
+    "r4.16xlarge",
+    "r4.2xlarge",
+    "r4.4xlarge",
+    "r4.8xlarge",
+    "r4.large",
+    "r4.xlarge",
+    "r5.12xlarge",
+    "r5.16xlarge",
+    "r5.24xlarge",
+    "r5.2xlarge",
+    "r5.4xlarge",
+    "r5.8xlarge",
+    "r5.large",
+    "r5.xlarge",
+    "r5a.12xlarge",
+    "r5a.16xlarge",
+    "r5a.24xlarge",
+    "r5a.2xlarge",
+    "r5a.4xlarge",
+    "r5a.8xlarge",
+    "r5a.large",
+    "r5a.xlarge",
+    "r6g.12xlarge",
+    "r6g.16xlarge",
+    "r6g.2xlarge",
+    "r6g.4xlarge",
+    "r6g.8xlarge",
+    "r6g.large",
+    "r6g.medium",
+    "r6g.xlarge",
+]
+```
 ## GameServerGroupStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameServerGroupStatusType
+
+def get_value() -> GameServerGroupStatusType:
+    return "ACTIVATING"
 ```
 
-Values:
-
-- `ACTIVATING`
-- `ACTIVE`
-- `DELETE_SCHEDULED`
-- `DELETED`
-- `DELETING`
-- `ERROR`
-- `NEW`
-
-<a id="gameserverhealthchecktype"></a>
-
+```python title="Definition"
+GameServerGroupStatusType = Literal[
+    "ACTIVATING",
+    "ACTIVE",
+    "DELETE_SCHEDULED",
+    "DELETED",
+    "DELETING",
+    "ERROR",
+    "NEW",
+]
+```
 ## GameServerHealthCheckType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameServerHealthCheckType
+
+def get_value() -> GameServerHealthCheckType:
+    return "HEALTHY"
 ```
 
-Values:
-
-- `HEALTHY`
-
-<a id="gameserverinstancestatustype"></a>
-
+```python title="Definition"
+GameServerHealthCheckType = Literal[
+    "HEALTHY",
+]
+```
 ## GameServerInstanceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameServerInstanceStatusType
+
+def get_value() -> GameServerInstanceStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DRAINING`
-- `SPOT_TERMINATING`
-
-<a id="gameserverprotectionpolicytype"></a>
-
+```python title="Definition"
+GameServerInstanceStatusType = Literal[
+    "ACTIVE",
+    "DRAINING",
+    "SPOT_TERMINATING",
+]
+```
 ## GameServerProtectionPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameServerProtectionPolicyType
+
+def get_value() -> GameServerProtectionPolicyType:
+    return "FULL_PROTECTION"
 ```
 
-Values:
-
-- `FULL_PROTECTION`
-- `NO_PROTECTION`
-
-<a id="gameserverutilizationstatustype"></a>
-
+```python title="Definition"
+GameServerProtectionPolicyType = Literal[
+    "FULL_PROTECTION",
+    "NO_PROTECTION",
+]
+```
 ## GameServerUtilizationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameServerUtilizationStatusType
+
+def get_value() -> GameServerUtilizationStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `UTILIZED`
-
-<a id="gamesessionplacementstatetype"></a>
-
+```python title="Definition"
+GameServerUtilizationStatusType = Literal[
+    "AVAILABLE",
+    "UTILIZED",
+]
+```
 ## GameSessionPlacementStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameSessionPlacementStateType
+
+def get_value() -> GameSessionPlacementStateType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `FAILED`
-- `FULFILLED`
-- `PENDING`
-- `TIMED_OUT`
-
-<a id="gamesessionstatusreasontype"></a>
-
+```python title="Definition"
+GameSessionPlacementStateType = Literal[
+    "CANCELLED",
+    "FAILED",
+    "FULFILLED",
+    "PENDING",
+    "TIMED_OUT",
+]
+```
 ## GameSessionStatusReasonType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameSessionStatusReasonType
+
+def get_value() -> GameSessionStatusReasonType:
+    return "INTERRUPTED"
 ```
 
-Values:
-
-- `INTERRUPTED`
-
-<a id="gamesessionstatustype"></a>
-
+```python title="Definition"
+GameSessionStatusReasonType = Literal[
+    "INTERRUPTED",
+]
+```
 ## GameSessionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameSessionStatusType
+
+def get_value() -> GameSessionStatusType:
+    return "ACTIVATING"
 ```
 
-Values:
-
-- `ACTIVATING`
-- `ACTIVE`
-- `ERROR`
-- `TERMINATED`
-- `TERMINATING`
-
-<a id="instancestatustype"></a>
-
+```python title="Definition"
+GameSessionStatusType = Literal[
+    "ACTIVATING",
+    "ACTIVE",
+    "ERROR",
+    "TERMINATED",
+    "TERMINATING",
+]
+```
 ## InstanceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import InstanceStatusType
+
+def get_value() -> InstanceStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `PENDING`
-- `TERMINATING`
-
-<a id="ipprotocoltype"></a>
-
+```python title="Definition"
+InstanceStatusType = Literal[
+    "ACTIVE",
+    "PENDING",
+    "TERMINATING",
+]
+```
 ## IpProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import IpProtocolType
+
+def get_value() -> IpProtocolType:
+    return "TCP"
 ```
 
-Values:
-
-- `TCP`
-- `UDP`
-
-<a id="listaliasespaginatorname"></a>
-
+```python title="Definition"
+IpProtocolType = Literal[
+    "TCP",
+    "UDP",
+]
+```
 ## ListAliasesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ListAliasesPaginatorName
+
+def get_value() -> ListAliasesPaginatorName:
+    return "list_aliases"
 ```
 
-Values:
-
-- `list_aliases`
-
-<a id="listbuildspaginatorname"></a>
-
+```python title="Definition"
+ListAliasesPaginatorName = Literal[
+    "list_aliases",
+]
+```
 ## ListBuildsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ListBuildsPaginatorName
+
+def get_value() -> ListBuildsPaginatorName:
+    return "list_builds"
 ```
 
-Values:
-
-- `list_builds`
-
-<a id="listfleetspaginatorname"></a>
-
+```python title="Definition"
+ListBuildsPaginatorName = Literal[
+    "list_builds",
+]
+```
 ## ListFleetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ListFleetsPaginatorName
+
+def get_value() -> ListFleetsPaginatorName:
+    return "list_fleets"
 ```
 
-Values:
-
-- `list_fleets`
-
-<a id="listgameservergroupspaginatorname"></a>
-
+```python title="Definition"
+ListFleetsPaginatorName = Literal[
+    "list_fleets",
+]
+```
 ## ListGameServerGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ListGameServerGroupsPaginatorName
+
+def get_value() -> ListGameServerGroupsPaginatorName:
+    return "list_game_server_groups"
 ```
 
-Values:
-
-- `list_game_server_groups`
-
-<a id="listgameserverspaginatorname"></a>
-
+```python title="Definition"
+ListGameServerGroupsPaginatorName = Literal[
+    "list_game_server_groups",
+]
+```
 ## ListGameServersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ListGameServersPaginatorName
+
+def get_value() -> ListGameServersPaginatorName:
+    return "list_game_servers"
 ```
 
-Values:
-
-- `list_game_servers`
-
-<a id="listscriptspaginatorname"></a>
-
+```python title="Definition"
+ListGameServersPaginatorName = Literal[
+    "list_game_servers",
+]
+```
 ## ListScriptsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ListScriptsPaginatorName
+
+def get_value() -> ListScriptsPaginatorName:
+    return "list_scripts"
 ```
 
-Values:
-
-- `list_scripts`
-
-<a id="locationupdatestatustype"></a>
-
+```python title="Definition"
+ListScriptsPaginatorName = Literal[
+    "list_scripts",
+]
+```
 ## LocationUpdateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import LocationUpdateStatusType
+
+def get_value() -> LocationUpdateStatusType:
+    return "PENDING_UPDATE"
 ```
 
-Values:
-
-- `PENDING_UPDATE`
-
-<a id="matchmakingconfigurationstatustype"></a>
-
+```python title="Definition"
+LocationUpdateStatusType = Literal[
+    "PENDING_UPDATE",
+]
+```
 ## MatchmakingConfigurationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import MatchmakingConfigurationStatusType
+
+def get_value() -> MatchmakingConfigurationStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `COMPLETED`
-- `FAILED`
-- `PLACING`
-- `QUEUED`
-- `REQUIRES_ACCEPTANCE`
-- `SEARCHING`
-- `TIMED_OUT`
-
-<a id="metricnametype"></a>
-
+```python title="Definition"
+MatchmakingConfigurationStatusType = Literal[
+    "CANCELLED",
+    "COMPLETED",
+    "FAILED",
+    "PLACING",
+    "QUEUED",
+    "REQUIRES_ACCEPTANCE",
+    "SEARCHING",
+    "TIMED_OUT",
+]
+```
 ## MetricNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import MetricNameType
+
+def get_value() -> MetricNameType:
+    return "ActivatingGameSessions"
 ```
 
-Values:
-
-- `ActivatingGameSessions`
-- `ActiveGameSessions`
-- `ActiveInstances`
-- `AvailableGameSessions`
-- `AvailablePlayerSessions`
-- `CurrentPlayerSessions`
-- `IdleInstances`
-- `PercentAvailableGameSessions`
-- `PercentIdleInstances`
-- `QueueDepth`
-- `WaitTime`
-
-<a id="operatingsystemtype"></a>
-
+```python title="Definition"
+MetricNameType = Literal[
+    "ActivatingGameSessions",
+    "ActiveGameSessions",
+    "ActiveInstances",
+    "AvailableGameSessions",
+    "AvailablePlayerSessions",
+    "CurrentPlayerSessions",
+    "IdleInstances",
+    "PercentAvailableGameSessions",
+    "PercentIdleInstances",
+    "QueueDepth",
+    "WaitTime",
+]
+```
 ## OperatingSystemType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import OperatingSystemType
+
+def get_value() -> OperatingSystemType:
+    return "AMAZON_LINUX"
 ```
 
-Values:
-
-- `AMAZON_LINUX`
-- `AMAZON_LINUX_2`
-- `WINDOWS_2012`
-
-<a id="playersessioncreationpolicytype"></a>
-
+```python title="Definition"
+OperatingSystemType = Literal[
+    "AMAZON_LINUX",
+    "AMAZON_LINUX_2",
+    "WINDOWS_2012",
+]
+```
 ## PlayerSessionCreationPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import PlayerSessionCreationPolicyType
+
+def get_value() -> PlayerSessionCreationPolicyType:
+    return "ACCEPT_ALL"
 ```
 
-Values:
-
-- `ACCEPT_ALL`
-- `DENY_ALL`
-
-<a id="playersessionstatustype"></a>
-
+```python title="Definition"
+PlayerSessionCreationPolicyType = Literal[
+    "ACCEPT_ALL",
+    "DENY_ALL",
+]
+```
 ## PlayerSessionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import PlayerSessionStatusType
+
+def get_value() -> PlayerSessionStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `COMPLETED`
-- `RESERVED`
-- `TIMEDOUT`
-
-<a id="policytypetype"></a>
-
+```python title="Definition"
+PlayerSessionStatusType = Literal[
+    "ACTIVE",
+    "COMPLETED",
+    "RESERVED",
+    "TIMEDOUT",
+]
+```
 ## PolicyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import PolicyTypeType
+
+def get_value() -> PolicyTypeType:
+    return "RuleBased"
 ```
 
-Values:
-
-- `RuleBased`
-- `TargetBased`
-
-<a id="prioritytypetype"></a>
-
+```python title="Definition"
+PolicyTypeType = Literal[
+    "RuleBased",
+    "TargetBased",
+]
+```
 ## PriorityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import PriorityTypeType
+
+def get_value() -> PriorityTypeType:
+    return "COST"
 ```
 
-Values:
-
-- `COST`
-- `DESTINATION`
-- `LATENCY`
-- `LOCATION`
-
-<a id="protectionpolicytype"></a>
-
+```python title="Definition"
+PriorityTypeType = Literal[
+    "COST",
+    "DESTINATION",
+    "LATENCY",
+    "LOCATION",
+]
+```
 ## ProtectionPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ProtectionPolicyType
+
+def get_value() -> ProtectionPolicyType:
+    return "FullProtection"
 ```
 
-Values:
-
-- `FullProtection`
-- `NoProtection`
-
-<a id="routingstrategytypetype"></a>
-
+```python title="Definition"
+ProtectionPolicyType = Literal[
+    "FullProtection",
+    "NoProtection",
+]
+```
 ## RoutingStrategyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import RoutingStrategyTypeType
+
+def get_value() -> RoutingStrategyTypeType:
+    return "SIMPLE"
 ```
 
-Values:
-
-- `SIMPLE`
-- `TERMINAL`
-
-<a id="scalingadjustmenttypetype"></a>
-
+```python title="Definition"
+RoutingStrategyTypeType = Literal[
+    "SIMPLE",
+    "TERMINAL",
+]
+```
 ## ScalingAdjustmentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ScalingAdjustmentTypeType
+
+def get_value() -> ScalingAdjustmentTypeType:
+    return "ChangeInCapacity"
 ```
 
-Values:
-
-- `ChangeInCapacity`
-- `ExactCapacity`
-- `PercentChangeInCapacity`
-
-<a id="scalingstatustypetype"></a>
-
+```python title="Definition"
+ScalingAdjustmentTypeType = Literal[
+    "ChangeInCapacity",
+    "ExactCapacity",
+    "PercentChangeInCapacity",
+]
+```
 ## ScalingStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ScalingStatusTypeType
+
+def get_value() -> ScalingStatusTypeType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DELETE_REQUESTED`
-- `DELETED`
-- `DELETING`
-- `ERROR`
-- `UPDATE_REQUESTED`
-- `UPDATING`
-
-<a id="searchgamesessionspaginatorname"></a>
-
+```python title="Definition"
+ScalingStatusTypeType = Literal[
+    "ACTIVE",
+    "DELETE_REQUESTED",
+    "DELETED",
+    "DELETING",
+    "ERROR",
+    "UPDATE_REQUESTED",
+    "UPDATING",
+]
+```
 ## SearchGameSessionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import SearchGameSessionsPaginatorName
+
+def get_value() -> SearchGameSessionsPaginatorName:
+    return "search_game_sessions"
 ```
 
-Values:
-
-- `search_game_sessions`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+SearchGameSessionsPaginatorName = Literal[
+    "search_game_sessions",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="gameliftservicename"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## GameLiftServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import GameLiftServiceName
+
+def get_value() -> GameLiftServiceName:
+    return "gamelift"
 ```
 
-Values:
-
-- `gamelift`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+GameLiftServiceName = Literal[
+    "gamelift",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamelift.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_fleet_attributes"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_fleet_attributes",
+    "describe_fleet_capacity",
+    "describe_fleet_events",
+    "describe_fleet_utilization",
+    "describe_game_server_instances",
+    "describe_game_session_details",
+    "describe_game_session_queues",
+    "describe_game_sessions",
+    "describe_instances",
+    "describe_matchmaking_configurations",
+    "describe_matchmaking_rule_sets",
+    "describe_player_sessions",
+    "describe_scaling_policies",
+    "list_aliases",
+    "list_builds",
+    "list_fleets",
+    "list_game_server_groups",
+    "list_game_servers",
+    "list_scripts",
+    "search_game_sessions",
+]
+```
+## RegionName
 
-- `describe_fleet_attributes`
-- `describe_fleet_capacity`
-- `describe_fleet_events`
-- `describe_fleet_utilization`
-- `describe_game_server_instances`
-- `describe_game_session_details`
-- `describe_game_session_queues`
-- `describe_game_sessions`
-- `describe_instances`
-- `describe_matchmaking_configurations`
-- `describe_matchmaking_rule_sets`
-- `describe_player_sessions`
-- `describe_scaling_policies`
-- `list_aliases`
-- `list_builds`
-- `list_fleets`
-- `list_game_server_groups`
-- `list_game_servers`
-- `list_scripts`
-- `search_game_sessions`
+```python title="Usage Example"
+from mypy_boto3_gamelift.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

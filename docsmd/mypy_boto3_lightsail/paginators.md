@@ -1,46 +1,18 @@
-<a id="paginators-for-boto3-lightsail-module"></a>
-
-# Paginators for boto3 Lightsail module
+# Paginators
 
 > [Index](../README.md) > [Lightsail](./README.md) > Paginators
 
-Auto-generated documentation for
-[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
-type annotations stubs module
-[mypy-boto3-lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
+!!! note ""
 
-- [Paginators for boto3 Lightsail module](#paginators-for-boto3-lightsail-module)
-  - [GetActiveNamesPaginator](#getactivenamespaginator)
-  - [GetBlueprintsPaginator](#getblueprintspaginator)
-  - [GetBundlesPaginator](#getbundlespaginator)
-  - [GetCloudFormationStackRecordsPaginator](#getcloudformationstackrecordspaginator)
-  - [GetDiskSnapshotsPaginator](#getdisksnapshotspaginator)
-  - [GetDisksPaginator](#getdiskspaginator)
-  - [GetDomainsPaginator](#getdomainspaginator)
-  - [GetExportSnapshotRecordsPaginator](#getexportsnapshotrecordspaginator)
-  - [GetInstanceSnapshotsPaginator](#getinstancesnapshotspaginator)
-  - [GetInstancesPaginator](#getinstancespaginator)
-  - [GetKeyPairsPaginator](#getkeypairspaginator)
-  - [GetLoadBalancersPaginator](#getloadbalancerspaginator)
-  - [GetOperationsPaginator](#getoperationspaginator)
-  - [GetRelationalDatabaseBlueprintsPaginator](#getrelationaldatabaseblueprintspaginator)
-  - [GetRelationalDatabaseBundlesPaginator](#getrelationaldatabasebundlespaginator)
-  - [GetRelationalDatabaseEventsPaginator](#getrelationaldatabaseeventspaginator)
-  - [GetRelationalDatabaseParametersPaginator](#getrelationaldatabaseparameterspaginator)
-  - [GetRelationalDatabaseSnapshotsPaginator](#getrelationaldatabasesnapshotspaginator)
-  - [GetRelationalDatabasesPaginator](#getrelationaldatabasespaginator)
-  - [GetStaticIpsPaginator](#getstaticipspaginator)
-
-<a id="getactivenamespaginator"></a>
+    Auto-generated documentation for [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
+    type annotations stubs module [mypy-boto3-lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 ## GetActiveNamesPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_active_names")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_active_names")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetActiveNames)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetActiveNamesPaginator
@@ -49,27 +21,39 @@ def get_get_active_names_paginator() -> GetActiveNamesPaginator:
     return Session().client("lightsail").get_paginator("get_active_names")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetActiveNames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetActiveNames)
 
-Arguments for `GetActiveNamesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetActiveNamesPaginator.paginate` method.
 
-`GetActiveNamesPaginator.paginate` returns
-`_PageIterator`\[[GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetActiveNamesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getblueprintspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetActiveNamesRequestGetActiveNamesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetActiveNamesRequestGetActiveNamesPaginateTypeDef](./type_defs.md#getactivenamesrequestgetactivenamespaginatetypedef) 
 ## GetBlueprintsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_blueprints")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_blueprints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBlueprints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetBlueprintsPaginator
@@ -78,27 +62,40 @@ def get_get_blueprints_paginator() -> GetBlueprintsPaginator:
     return Session().client("lightsail").get_paginator("get_blueprints")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetBlueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBlueprints)
 
-Arguments for `GetBlueprintsPaginator.paginate` method:
+### paginate
 
-- `includeInactive`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetBlueprintsPaginator.paginate` method.
 
-`GetBlueprintsPaginator.paginate` returns
-`_PageIterator`\[[GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    includeInactive: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetBlueprintsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getbundlespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetBlueprintsRequestGetBlueprintsPaginateTypeDef = {  # (1)
+    "includeInactive": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetBlueprintsRequestGetBlueprintsPaginateTypeDef](./type_defs.md#getblueprintsrequestgetblueprintspaginatetypedef) 
 ## GetBundlesPaginator
 
-Type annotations for `boto3.client("lightsail").get_paginator("get_bundles")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_bundles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBundles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetBundlesPaginator
@@ -107,28 +104,40 @@ def get_get_bundles_paginator() -> GetBundlesPaginator:
     return Session().client("lightsail").get_paginator("get_bundles")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetBundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetBundles)
 
-Arguments for `GetBundlesPaginator.paginate` method:
+### paginate
 
-- `includeInactive`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetBundlesPaginator.paginate` method.
 
-`GetBundlesPaginator.paginate` returns
-`_PageIterator`\[[GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    includeInactive: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetBundlesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getcloudformationstackrecordspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetBundlesRequestGetBundlesPaginateTypeDef = {  # (1)
+    "includeInactive": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetBundlesRequestGetBundlesPaginateTypeDef](./type_defs.md#getbundlesrequestgetbundlespaginatetypedef) 
 ## GetCloudFormationStackRecordsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_cloud_formation_stack_records")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_cloud_formation_stack_records")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetCloudFormationStackRecords)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetCloudFormationStackRecordsPaginator
@@ -137,27 +146,39 @@ def get_get_cloud_formation_stack_records_paginator() -> GetCloudFormationStackR
     return Session().client("lightsail").get_paginator("get_cloud_formation_stack_records")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetCloudFormationStackRecords](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetCloudFormationStackRecords)
 
-Arguments for `GetCloudFormationStackRecordsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetCloudFormationStackRecordsPaginator.paginate` method.
 
-`GetCloudFormationStackRecordsPaginator.paginate` returns
-`_PageIterator`\[[GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetCloudFormationStackRecordsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getdisksnapshotspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetCloudFormationStackRecordsRequestGetCloudFormationStackRecordsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetCloudFormationStackRecordsRequestGetCloudFormationStackRecordsPaginateTypeDef](./type_defs.md#getcloudformationstackrecordsrequestgetcloudformationstackrecordspaginatetypedef) 
 ## GetDiskSnapshotsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_disk_snapshots")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_disk_snapshots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDiskSnapshots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetDiskSnapshotsPaginator
@@ -166,26 +187,39 @@ def get_get_disk_snapshots_paginator() -> GetDiskSnapshotsPaginator:
     return Session().client("lightsail").get_paginator("get_disk_snapshots")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetDiskSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDiskSnapshots)
 
-Arguments for `GetDiskSnapshotsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDiskSnapshotsPaginator.paginate` method.
 
-`GetDiskSnapshotsPaginator.paginate` returns
-`_PageIterator`\[[GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetDiskSnapshotsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getdiskspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDiskSnapshotsRequestGetDiskSnapshotsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDiskSnapshotsRequestGetDiskSnapshotsPaginateTypeDef](./type_defs.md#getdisksnapshotsrequestgetdisksnapshotspaginatetypedef) 
 ## GetDisksPaginator
 
-Type annotations for `boto3.client("lightsail").get_paginator("get_disks")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_disks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDisks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetDisksPaginator
@@ -194,26 +228,39 @@ def get_get_disks_paginator() -> GetDisksPaginator:
     return Session().client("lightsail").get_paginator("get_disks")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetDisks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDisks)
 
-Arguments for `GetDisksPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDisksPaginator.paginate` method.
 
-`GetDisksPaginator.paginate` returns
-`_PageIterator`\[[GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetDisksResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getdomainspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDisksRequestGetDisksPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDisksRequestGetDisksPaginateTypeDef](./type_defs.md#getdisksrequestgetdiskspaginatetypedef) 
 ## GetDomainsPaginator
 
-Type annotations for `boto3.client("lightsail").get_paginator("get_domains")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_domains")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDomains)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetDomainsPaginator
@@ -222,27 +269,39 @@ def get_get_domains_paginator() -> GetDomainsPaginator:
     return Session().client("lightsail").get_paginator("get_domains")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetDomains)
 
-Arguments for `GetDomainsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDomainsPaginator.paginate` method.
 
-`GetDomainsPaginator.paginate` returns
-`_PageIterator`\[[GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetDomainsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getexportsnapshotrecordspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDomainsRequestGetDomainsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDomainsRequestGetDomainsPaginateTypeDef](./type_defs.md#getdomainsrequestgetdomainspaginatetypedef) 
 ## GetExportSnapshotRecordsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_export_snapshot_records")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_export_snapshot_records")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetExportSnapshotRecords)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetExportSnapshotRecordsPaginator
@@ -251,27 +310,39 @@ def get_get_export_snapshot_records_paginator() -> GetExportSnapshotRecordsPagin
     return Session().client("lightsail").get_paginator("get_export_snapshot_records")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetExportSnapshotRecords](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetExportSnapshotRecords)
 
-Arguments for `GetExportSnapshotRecordsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetExportSnapshotRecordsPaginator.paginate` method.
 
-`GetExportSnapshotRecordsPaginator.paginate` returns
-`_PageIterator`\[[GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetExportSnapshotRecordsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getinstancesnapshotspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetExportSnapshotRecordsRequestGetExportSnapshotRecordsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetExportSnapshotRecordsRequestGetExportSnapshotRecordsPaginateTypeDef](./type_defs.md#getexportsnapshotrecordsrequestgetexportsnapshotrecordspaginatetypedef) 
 ## GetInstanceSnapshotsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_instance_snapshots")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_instance_snapshots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstanceSnapshots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetInstanceSnapshotsPaginator
@@ -280,27 +351,39 @@ def get_get_instance_snapshots_paginator() -> GetInstanceSnapshotsPaginator:
     return Session().client("lightsail").get_paginator("get_instance_snapshots")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetInstanceSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstanceSnapshots)
 
-Arguments for `GetInstanceSnapshotsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetInstanceSnapshotsPaginator.paginate` method.
 
-`GetInstanceSnapshotsPaginator.paginate` returns
-`_PageIterator`\[[GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetInstanceSnapshotsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getinstancespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetInstanceSnapshotsRequestGetInstanceSnapshotsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetInstanceSnapshotsRequestGetInstanceSnapshotsPaginateTypeDef](./type_defs.md#getinstancesnapshotsrequestgetinstancesnapshotspaginatetypedef) 
 ## GetInstancesPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_instances")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetInstancesPaginator
@@ -309,27 +392,39 @@ def get_get_instances_paginator() -> GetInstancesPaginator:
     return Session().client("lightsail").get_paginator("get_instances")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetInstances)
 
-Arguments for `GetInstancesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetInstancesPaginator.paginate` method.
 
-`GetInstancesPaginator.paginate` returns
-`_PageIterator`\[[GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetInstancesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getkeypairspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetInstancesRequestGetInstancesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetInstancesRequestGetInstancesPaginateTypeDef](./type_defs.md#getinstancesrequestgetinstancespaginatetypedef) 
 ## GetKeyPairsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_key_pairs")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_key_pairs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetKeyPairs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetKeyPairsPaginator
@@ -338,28 +433,40 @@ def get_get_key_pairs_paginator() -> GetKeyPairsPaginator:
     return Session().client("lightsail").get_paginator("get_key_pairs")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetKeyPairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetKeyPairs)
 
-Arguments for `GetKeyPairsPaginator.paginate` method:
+### paginate
 
-- `includeDefaultKeyPair`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetKeyPairsPaginator.paginate` method.
 
-`GetKeyPairsPaginator.paginate` returns
-`_PageIterator`\[[GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    includeDefaultKeyPair: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetKeyPairsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getloadbalancerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetKeyPairsRequestGetKeyPairsPaginateTypeDef = {  # (1)
+    "includeDefaultKeyPair": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetKeyPairsRequestGetKeyPairsPaginateTypeDef](./type_defs.md#getkeypairsrequestgetkeypairspaginatetypedef) 
 ## GetLoadBalancersPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_load_balancers")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_load_balancers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetLoadBalancers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetLoadBalancersPaginator
@@ -368,27 +475,39 @@ def get_get_load_balancers_paginator() -> GetLoadBalancersPaginator:
     return Session().client("lightsail").get_paginator("get_load_balancers")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetLoadBalancers)
 
-Arguments for `GetLoadBalancersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetLoadBalancersPaginator.paginate` method.
 
-`GetLoadBalancersPaginator.paginate` returns
-`_PageIterator`\[[GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetLoadBalancersResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getoperationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetLoadBalancersRequestGetLoadBalancersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetLoadBalancersRequestGetLoadBalancersPaginateTypeDef](./type_defs.md#getloadbalancersrequestgetloadbalancerspaginatetypedef) 
 ## GetOperationsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_operations")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_operations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetOperations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetOperationsPaginator
@@ -397,27 +516,39 @@ def get_get_operations_paginator() -> GetOperationsPaginator:
     return Session().client("lightsail").get_paginator("get_operations")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetOperations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetOperations)
 
-Arguments for `GetOperationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetOperationsPaginator.paginate` method.
 
-`GetOperationsPaginator.paginate` returns
-`_PageIterator`\[[GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetOperationsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getrelationaldatabaseblueprintspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetOperationsRequestGetOperationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetOperationsRequestGetOperationsPaginateTypeDef](./type_defs.md#getoperationsrequestgetoperationspaginatetypedef) 
 ## GetRelationalDatabaseBlueprintsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_relational_database_blueprints")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_relational_database_blueprints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBlueprints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseBlueprintsPaginator
@@ -426,27 +557,39 @@ def get_get_relational_database_blueprints_paginator() -> GetRelationalDatabaseB
     return Session().client("lightsail").get_paginator("get_relational_database_blueprints")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseBlueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBlueprints)
 
-Arguments for `GetRelationalDatabaseBlueprintsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetRelationalDatabaseBlueprintsPaginator.paginate` method.
 
-`GetRelationalDatabaseBlueprintsPaginator.paginate` returns
-`_PageIterator`\[[GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetRelationalDatabaseBlueprintsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getrelationaldatabasebundlespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetRelationalDatabaseBlueprintsRequestGetRelationalDatabaseBlueprintsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetRelationalDatabaseBlueprintsRequestGetRelationalDatabaseBlueprintsPaginateTypeDef](./type_defs.md#getrelationaldatabaseblueprintsrequestgetrelationaldatabaseblueprintspaginatetypedef) 
 ## GetRelationalDatabaseBundlesPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_relational_database_bundles")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_relational_database_bundles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBundles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseBundlesPaginator
@@ -455,27 +598,39 @@ def get_get_relational_database_bundles_paginator() -> GetRelationalDatabaseBund
     return Session().client("lightsail").get_paginator("get_relational_database_bundles")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseBundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseBundles)
 
-Arguments for `GetRelationalDatabaseBundlesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetRelationalDatabaseBundlesPaginator.paginate` method.
 
-`GetRelationalDatabaseBundlesPaginator.paginate` returns
-`_PageIterator`\[[GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetRelationalDatabaseBundlesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getrelationaldatabaseeventspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetRelationalDatabaseBundlesRequestGetRelationalDatabaseBundlesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetRelationalDatabaseBundlesRequestGetRelationalDatabaseBundlesPaginateTypeDef](./type_defs.md#getrelationaldatabasebundlesrequestgetrelationaldatabasebundlespaginatetypedef) 
 ## GetRelationalDatabaseEventsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_relational_database_events")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_relational_database_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseEventsPaginator
@@ -484,29 +639,41 @@ def get_get_relational_database_events_paginator() -> GetRelationalDatabaseEvent
     return Session().client("lightsail").get_paginator("get_relational_database_events")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseEvents)
 
-Arguments for `GetRelationalDatabaseEventsPaginator.paginate` method:
+### paginate
 
-- `relationalDatabaseName`: `str` *(required)*
-- `durationInMinutes`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetRelationalDatabaseEventsPaginator.paginate` method.
 
-`GetRelationalDatabaseEventsPaginator.paginate` returns
-`_PageIterator`\[[GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    relationalDatabaseName: str,
+    durationInMinutes: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetRelationalDatabaseEventsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getrelationaldatabaseparameterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetRelationalDatabaseEventsRequestGetRelationalDatabaseEventsPaginateTypeDef = {  # (1)
+    "relationalDatabaseName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetRelationalDatabaseEventsRequestGetRelationalDatabaseEventsPaginateTypeDef](./type_defs.md#getrelationaldatabaseeventsrequestgetrelationaldatabaseeventspaginatetypedef) 
 ## GetRelationalDatabaseParametersPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_relational_database_parameters")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_relational_database_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseParametersPaginator
@@ -515,28 +682,40 @@ def get_get_relational_database_parameters_paginator() -> GetRelationalDatabaseP
     return Session().client("lightsail").get_paginator("get_relational_database_parameters")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseParameters)
 
-Arguments for `GetRelationalDatabaseParametersPaginator.paginate` method:
+### paginate
 
-- `relationalDatabaseName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetRelationalDatabaseParametersPaginator.paginate` method.
 
-`GetRelationalDatabaseParametersPaginator.paginate` returns
-`_PageIterator`\[[GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    relationalDatabaseName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetRelationalDatabaseParametersResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getrelationaldatabasesnapshotspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetRelationalDatabaseParametersRequestGetRelationalDatabaseParametersPaginateTypeDef = {  # (1)
+    "relationalDatabaseName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetRelationalDatabaseParametersRequestGetRelationalDatabaseParametersPaginateTypeDef](./type_defs.md#getrelationaldatabaseparametersrequestgetrelationaldatabaseparameterspaginatetypedef) 
 ## GetRelationalDatabaseSnapshotsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_relational_database_snapshots")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_relational_database_snapshots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseSnapshots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetRelationalDatabaseSnapshotsPaginator
@@ -545,27 +724,39 @@ def get_get_relational_database_snapshots_paginator() -> GetRelationalDatabaseSn
     return Session().client("lightsail").get_paginator("get_relational_database_snapshots")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabaseSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabaseSnapshots)
 
-Arguments for `GetRelationalDatabaseSnapshotsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetRelationalDatabaseSnapshotsPaginator.paginate` method.
 
-`GetRelationalDatabaseSnapshotsPaginator.paginate` returns
-`_PageIterator`\[[GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetRelationalDatabaseSnapshotsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getrelationaldatabasespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetRelationalDatabaseSnapshotsRequestGetRelationalDatabaseSnapshotsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetRelationalDatabaseSnapshotsRequestGetRelationalDatabaseSnapshotsPaginateTypeDef](./type_defs.md#getrelationaldatabasesnapshotsrequestgetrelationaldatabasesnapshotspaginatetypedef) 
 ## GetRelationalDatabasesPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_relational_databases")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_relational_databases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetRelationalDatabasesPaginator
@@ -574,27 +765,39 @@ def get_get_relational_databases_paginator() -> GetRelationalDatabasesPaginator:
     return Session().client("lightsail").get_paginator("get_relational_databases")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetRelationalDatabases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetRelationalDatabases)
 
-Arguments for `GetRelationalDatabasesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetRelationalDatabasesPaginator.paginate` method.
 
-`GetRelationalDatabasesPaginator.paginate` returns
-`_PageIterator`\[[GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetRelationalDatabasesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getstaticipspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetRelationalDatabasesRequestGetRelationalDatabasesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetRelationalDatabasesRequestGetRelationalDatabasesPaginateTypeDef](./type_defs.md#getrelationaldatabasesrequestgetrelationaldatabasespaginatetypedef) 
 ## GetStaticIpsPaginator
 
-Type annotations for
-`boto3.client("lightsail").get_paginator("get_static_ips")`.
+Type annotations and code completion for `#!python boto3.client("lightsail").get_paginator("get_static_ips")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetStaticIps)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lightsail.paginator import GetStaticIpsPaginator
@@ -603,13 +806,30 @@ def get_get_static_ips_paginator() -> GetStaticIpsPaginator:
     return Session().client("lightsail").get_paginator("get_static_ips")
 ```
 
-Boto3 documentation:
-[Lightsail.Paginator.GetStaticIps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Paginator.GetStaticIps)
 
-Arguments for `GetStaticIpsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetStaticIpsPaginator.paginate` method.
 
-`GetStaticIpsPaginator.paginate` returns
-`_PageIterator`\[[GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetStaticIpsResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStaticIpsRequestGetStaticIpsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetStaticIpsRequestGetStaticIpsPaginateTypeDef](./type_defs.md#getstaticipsrequestgetstaticipspaginatetypedef) 

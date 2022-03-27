@@ -1,45 +1,20 @@
-<a id="type-annotations-for-boto3-sns-module"></a>
-
-# Type annotations for boto3 SNS module
+#  SNS module
 
 > [Index](../README.md) > SNS
 
-Auto-generated documentation for
-[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module
-[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
+!!! note ""
 
-- [Type annotations for boto3 SNS module](#type-annotations-for-boto3-sns-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SNSClient](#snsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [SNSServiceResource](#snsserviceresource)
-    - [Collections](#collections)
-    - [Resources](#resources)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+    type annotations stubs module [mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SNS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -59,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[sns]'
 python -m pip install mypy-boto3-sns
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -67,170 +42,37 @@ python -m pip install mypy-boto3-sns
 python -m pip uninstall -y mypy-boto3-sns
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="snsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SNSClient
 
-Type annotations for `boto3.client("sns")` as [SNSClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("sns")` as [SNSClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_sns.client import SNSClient
+
+def get_client() -> SNSClient:
+    return Session().cleint("sns")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_permission](./client.md#add_permission)
-- [can_paginate](./client.md#can_paginate)
-- [check_if_phone_number_is_opted_out](./client.md#check_if_phone_number_is_opted_out)
-- [confirm_subscription](./client.md#confirm_subscription)
-- [create_platform_application](./client.md#create_platform_application)
-- [create_platform_endpoint](./client.md#create_platform_endpoint)
-- [create_sms_sandbox_phone_number](./client.md#create_sms_sandbox_phone_number)
-- [create_topic](./client.md#create_topic)
-- [delete_endpoint](./client.md#delete_endpoint)
-- [delete_platform_application](./client.md#delete_platform_application)
-- [delete_sms_sandbox_phone_number](./client.md#delete_sms_sandbox_phone_number)
-- [delete_topic](./client.md#delete_topic)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_endpoint_attributes](./client.md#get_endpoint_attributes)
-- [get_paginator](./client.md#get_paginator)
-- [get_platform_application_attributes](./client.md#get_platform_application_attributes)
-- [get_sms_attributes](./client.md#get_sms_attributes)
-- [get_sms_sandbox_account_status](./client.md#get_sms_sandbox_account_status)
-- [get_subscription_attributes](./client.md#get_subscription_attributes)
-- [get_topic_attributes](./client.md#get_topic_attributes)
-- [list_endpoints_by_platform_application](./client.md#list_endpoints_by_platform_application)
-- [list_origination_numbers](./client.md#list_origination_numbers)
-- [list_phone_numbers_opted_out](./client.md#list_phone_numbers_opted_out)
-- [list_platform_applications](./client.md#list_platform_applications)
-- [list_sms_sandbox_phone_numbers](./client.md#list_sms_sandbox_phone_numbers)
-- [list_subscriptions](./client.md#list_subscriptions)
-- [list_subscriptions_by_topic](./client.md#list_subscriptions_by_topic)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_topics](./client.md#list_topics)
-- [opt_in_phone_number](./client.md#opt_in_phone_number)
-- [publish](./client.md#publish)
-- [publish_batch](./client.md#publish_batch)
-- [remove_permission](./client.md#remove_permission)
-- [set_endpoint_attributes](./client.md#set_endpoint_attributes)
-- [set_platform_application_attributes](./client.md#set_platform_application_attributes)
-- [set_sms_attributes](./client.md#set_sms_attributes)
-- [set_subscription_attributes](./client.md#set_subscription_attributes)
-- [set_topic_attributes](./client.md#set_topic_attributes)
-- [subscribe](./client.md#subscribe)
-- [tag_resource](./client.md#tag_resource)
-- [unsubscribe](./client.md#unsubscribe)
-- [untag_resource](./client.md#untag_resource)
-- [verify_sms_sandbox_phone_number](./client.md#verify_sms_sandbox_phone_number)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SNSClient [exceptions](./client.md#exceptions)
-
-- AuthorizationErrorException
-- BatchEntryIdsNotDistinctException
-- BatchRequestTooLongException
-- ClientError
-- ConcurrentAccessException
-- EmptyBatchRequestException
-- EndpointDisabledException
-- FilterPolicyLimitExceededException
-- InternalErrorException
-- InvalidBatchEntryIdException
-- InvalidParameterException
-- InvalidParameterValueException
-- InvalidSecurityException
-- KMSAccessDeniedException
-- KMSDisabledException
-- KMSInvalidStateException
-- KMSNotFoundException
-- KMSOptInRequired
-- KMSThrottlingException
-- NotFoundException
-- OptedOutException
-- PlatformApplicationDisabledException
-- ResourceNotFoundException
-- StaleTagException
-- SubscriptionLimitExceededException
-- TagLimitExceededException
-- TagPolicyException
-- ThrottledException
-- TooManyEntriesInBatchRequestException
-- TopicLimitExceededException
-- UserErrorException
-- ValidationException
-- VerificationException
-
-<a id="snsserviceresource"></a>
-
-## SNSServiceResource
-
-Type annotations for `boto3.resource("sns")` as
-[SNSServiceResource](./service_resource.md#snsserviceresource)
-
-Can be used directly:
-
-```python
-from mypy_boto3_sns.service_resource import SNSServiceResource
-```
-
-<a id="collections"></a>
-
-### Collections
-
-Type annotations for collections from `boto3.resource("sns").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsCollection, ...
-```
-
-- [ServiceResourcePlatformApplicationsCollection](./service_resource.md#snsserviceresourceplatform_applications)
-- [ServiceResourceSubscriptionsCollection](./service_resource.md#snsserviceresourcesubscriptions)
-- [ServiceResourceTopicsCollection](./service_resource.md#snsserviceresourcetopics)
-
-<a id="resources"></a>
-
-### Resources
-
-Type annotations for additional resources from `boto3.resource("sns").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_sns.service_resource import PlatformApplication, ...
-```
-
-- [PlatformApplication](./service_resource.md#platformapplication)
-- [PlatformEndpoint](./service_resource.md#platformendpoint)
-- [Subscription](./service_resource.md#subscription)
-- [Topic](./service_resource.md#topic)
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("sns").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("sns").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator, ...
+from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator
+
+def get_list_endpoints_by_platform_application_paginator() -> ListEndpointsByPlatformApplicationPaginator:
+    return Session().client("sns").get_paginator("list_endpoints_by_platform_application"))
 ```
 
 - [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
@@ -242,16 +84,81 @@ from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator
 - [ListSubscriptionsByTopicPaginator](./paginators.md#listsubscriptionsbytopicpaginator)
 - [ListTopicsPaginator](./paginators.md#listtopicspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+## SNSServiceResource
+
+Type annotations and code completion for `#!python boto3.resource("sns")` as
+[SNSServiceResource](./service_resource.md#snsserviceresource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.service_resource import SNSServiceResource
+
+def get_sns_resource() -> SNSServiceResource:
+    return Session().resource("sns")
+```
+
+
+### Collections
+
+Type annotations and code completion for collections
+from `#!python boto3.resource("sns").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsCollection
+
+def get_collection() -> ServiceResourcePlatformApplicationsCollection:
+    return Session().resource("sns").platform_applications
+```
+
+- [ServiceResourcePlatformApplicationsCollection](./service_resource.md#snsserviceresourceplatform_applications)
+- [ServiceResourceSubscriptionsCollection](./service_resource.md#snsserviceresourcesubscriptions)
+- [ServiceResourceTopicsCollection](./service_resource.md#snsserviceresourcetopics)
+
+
+
+
+### Resources
+
+Type annotations and code completion for additional resources
+from `#!python boto3.resource("sns").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_sns.service_resource import PlatformApplication
+
+def get_resource() -> PlatformApplication:
+    return Session().resource("sns").PlatformApplication(...)
+```
+
+- [PlatformApplication](./service_resource.md#platformapplication)
+- [PlatformEndpoint](./service_resource.md#platformendpoint)
+- [Subscription](./service_resource.md#subscription)
+- [Topic](./service_resource.md#topic)
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sns.literals import LanguageCodeStringType
 
-```python
-from mypy_boto3_sns.literals import LanguageCodeStringType, ...
+def get_value() -> LanguageCodeStringType:
+    return "de-DE"
 ```
 
 - [LanguageCodeStringType](./literals.md#languagecodestringtype)
@@ -270,18 +177,25 @@ from mypy_boto3_sns.literals import LanguageCodeStringType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sns.type_defs import AddPermissionInputRequestTypeDef
 
-```python
-from mypy_boto3_sns.type_defs import AddPermissionInputRequestTypeDef, ...
+def get_value() -> AddPermissionInputRequestTypeDef:
+    return {
+        "TopicArn": ...,
+        "Label": ...,
+        "AWSAccountId": ...,
+        "ActionName": ...,
+    }
 ```
 
 - [AddPermissionInputRequestTypeDef](./type_defs.md#addpermissioninputrequesttypedef)
@@ -318,22 +232,30 @@ from mypy_boto3_sns.type_defs import AddPermissionInputRequestTypeDef, ...
 - [GetSubscriptionAttributesResponseTypeDef](./type_defs.md#getsubscriptionattributesresponsetypedef)
 - [GetTopicAttributesInputRequestTypeDef](./type_defs.md#gettopicattributesinputrequesttypedef)
 - [GetTopicAttributesResponseTypeDef](./type_defs.md#gettopicattributesresponsetypedef)
+- [ListEndpointsByPlatformApplicationInputListEndpointsByPlatformApplicationPaginateTypeDef](./type_defs.md#listendpointsbyplatformapplicationinputlistendpointsbyplatformapplicationpaginatetypedef)
 - [ListEndpointsByPlatformApplicationInputRequestTypeDef](./type_defs.md#listendpointsbyplatformapplicationinputrequesttypedef)
 - [ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef)
+- [ListOriginationNumbersRequestListOriginationNumbersPaginateTypeDef](./type_defs.md#listoriginationnumbersrequestlistoriginationnumberspaginatetypedef)
 - [ListOriginationNumbersRequestRequestTypeDef](./type_defs.md#listoriginationnumbersrequestrequesttypedef)
 - [ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef)
+- [ListPhoneNumbersOptedOutInputListPhoneNumbersOptedOutPaginateTypeDef](./type_defs.md#listphonenumbersoptedoutinputlistphonenumbersoptedoutpaginatetypedef)
 - [ListPhoneNumbersOptedOutInputRequestTypeDef](./type_defs.md#listphonenumbersoptedoutinputrequesttypedef)
 - [ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef)
+- [ListPlatformApplicationsInputListPlatformApplicationsPaginateTypeDef](./type_defs.md#listplatformapplicationsinputlistplatformapplicationspaginatetypedef)
 - [ListPlatformApplicationsInputRequestTypeDef](./type_defs.md#listplatformapplicationsinputrequesttypedef)
 - [ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef)
+- [ListSMSSandboxPhoneNumbersInputListSMSSandboxPhoneNumbersPaginateTypeDef](./type_defs.md#listsmssandboxphonenumbersinputlistsmssandboxphonenumberspaginatetypedef)
 - [ListSMSSandboxPhoneNumbersInputRequestTypeDef](./type_defs.md#listsmssandboxphonenumbersinputrequesttypedef)
 - [ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef)
+- [ListSubscriptionsByTopicInputListSubscriptionsByTopicPaginateTypeDef](./type_defs.md#listsubscriptionsbytopicinputlistsubscriptionsbytopicpaginatetypedef)
 - [ListSubscriptionsByTopicInputRequestTypeDef](./type_defs.md#listsubscriptionsbytopicinputrequesttypedef)
 - [ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef)
+- [ListSubscriptionsInputListSubscriptionsPaginateTypeDef](./type_defs.md#listsubscriptionsinputlistsubscriptionspaginatetypedef)
 - [ListSubscriptionsInputRequestTypeDef](./type_defs.md#listsubscriptionsinputrequesttypedef)
 - [ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTopicsInputListTopicsPaginateTypeDef](./type_defs.md#listtopicsinputlisttopicspaginatetypedef)
 - [ListTopicsInputRequestTypeDef](./type_defs.md#listtopicsinputrequesttypedef)
 - [ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef)
 - [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)
@@ -376,3 +298,4 @@ from mypy_boto3_sns.type_defs import AddPermissionInputRequestTypeDef, ...
 - [UnsubscribeInputRequestTypeDef](./type_defs.md#unsubscribeinputrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [VerifySMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#verifysmssandboxphonenumberinputrequesttypedef)
+

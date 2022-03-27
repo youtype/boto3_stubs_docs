@@ -1,907 +1,1231 @@
-<a id="typed-dictionaries-for-boto3-signer-module"></a>
-
-# Typed dictionaries for boto3 signer module
+# Typed dictionaries
 
 > [Index](../README.md) > [signer](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
-type annotations stubs module
-[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
+!!! note ""
 
-- [Typed dictionaries for boto3 signer module](#typed-dictionaries-for-boto3-signer-module)
-  - [AddProfilePermissionRequestRequestTypeDef](#addprofilepermissionrequestrequesttypedef)
-  - [AddProfilePermissionResponseTypeDef](#addprofilepermissionresponsetypedef)
-  - [CancelSigningProfileRequestRequestTypeDef](#cancelsigningprofilerequestrequesttypedef)
-  - [DescribeSigningJobRequestRequestTypeDef](#describesigningjobrequestrequesttypedef)
-  - [DescribeSigningJobResponseTypeDef](#describesigningjobresponsetypedef)
-  - [DestinationTypeDef](#destinationtypedef)
-  - [EncryptionAlgorithmOptionsTypeDef](#encryptionalgorithmoptionstypedef)
-  - [GetSigningPlatformRequestRequestTypeDef](#getsigningplatformrequestrequesttypedef)
-  - [GetSigningPlatformResponseTypeDef](#getsigningplatformresponsetypedef)
-  - [GetSigningProfileRequestRequestTypeDef](#getsigningprofilerequestrequesttypedef)
-  - [GetSigningProfileResponseTypeDef](#getsigningprofileresponsetypedef)
-  - [HashAlgorithmOptionsTypeDef](#hashalgorithmoptionstypedef)
-  - [ListProfilePermissionsRequestRequestTypeDef](#listprofilepermissionsrequestrequesttypedef)
-  - [ListProfilePermissionsResponseTypeDef](#listprofilepermissionsresponsetypedef)
-  - [ListSigningJobsRequestRequestTypeDef](#listsigningjobsrequestrequesttypedef)
-  - [ListSigningJobsResponseTypeDef](#listsigningjobsresponsetypedef)
-  - [ListSigningPlatformsRequestRequestTypeDef](#listsigningplatformsrequestrequesttypedef)
-  - [ListSigningPlatformsResponseTypeDef](#listsigningplatformsresponsetypedef)
-  - [ListSigningProfilesRequestRequestTypeDef](#listsigningprofilesrequestrequesttypedef)
-  - [ListSigningProfilesResponseTypeDef](#listsigningprofilesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PermissionTypeDef](#permissiontypedef)
-  - [PutSigningProfileRequestRequestTypeDef](#putsigningprofilerequestrequesttypedef)
-  - [PutSigningProfileResponseTypeDef](#putsigningprofileresponsetypedef)
-  - [RemoveProfilePermissionRequestRequestTypeDef](#removeprofilepermissionrequestrequesttypedef)
-  - [RemoveProfilePermissionResponseTypeDef](#removeprofilepermissionresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RevokeSignatureRequestRequestTypeDef](#revokesignaturerequestrequesttypedef)
-  - [RevokeSigningProfileRequestRequestTypeDef](#revokesigningprofilerequestrequesttypedef)
-  - [S3DestinationTypeDef](#s3destinationtypedef)
-  - [S3SignedObjectTypeDef](#s3signedobjecttypedef)
-  - [S3SourceTypeDef](#s3sourcetypedef)
-  - [SignatureValidityPeriodTypeDef](#signaturevalidityperiodtypedef)
-  - [SignedObjectTypeDef](#signedobjecttypedef)
-  - [SigningConfigurationOverridesTypeDef](#signingconfigurationoverridestypedef)
-  - [SigningConfigurationTypeDef](#signingconfigurationtypedef)
-  - [SigningImageFormatTypeDef](#signingimageformattypedef)
-  - [SigningJobRevocationRecordTypeDef](#signingjobrevocationrecordtypedef)
-  - [SigningJobTypeDef](#signingjobtypedef)
-  - [SigningMaterialTypeDef](#signingmaterialtypedef)
-  - [SigningPlatformOverridesTypeDef](#signingplatformoverridestypedef)
-  - [SigningPlatformTypeDef](#signingplatformtypedef)
-  - [SigningProfileRevocationRecordTypeDef](#signingprofilerevocationrecordtypedef)
-  - [SigningProfileTypeDef](#signingprofiletypedef)
-  - [SourceTypeDef](#sourcetypedef)
-  - [StartSigningJobRequestRequestTypeDef](#startsigningjobrequestrequesttypedef)
-  - [StartSigningJobResponseTypeDef](#startsigningjobresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="addprofilepermissionrequestrequesttypedef"></a>
+    Auto-generated documentation for [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
+    type annotations stubs module [mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 ## AddProfilePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import AddProfilePermissionRequestRequestTypeDef
+
+def get_value() -> AddProfilePermissionRequestRequestTypeDef:
+    return {
+        "profileName": ...,
+        "action": ...,
+        "principal": ...,
+        "statementId": ...,
+    }
 ```
 
-Required fields:
-
-- `profileName`: `str`
-- `action`: `str`
-- `principal`: `str`
-- `statementId`: `str`
-
-Optional fields:
-
-- `profileVersion`: `str`
-- `revisionId`: `str`
-
-<a id="addprofilepermissionresponsetypedef"></a>
+```python title="Definition"
+class AddProfilePermissionRequestRequestTypeDef(TypedDict):
+    profileName: str,
+    action: str,
+    principal: str,
+    statementId: str,
+    profileVersion: NotRequired[str],
+    revisionId: NotRequired[str],
+```
 
 ## AddProfilePermissionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import AddProfilePermissionResponseTypeDef
+
+def get_value() -> AddProfilePermissionResponseTypeDef:
+    return {
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddProfilePermissionResponseTypeDef(TypedDict):
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `revisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cancelsigningprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelSigningProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import CancelSigningProfileRequestRequestTypeDef
+
+def get_value() -> CancelSigningProfileRequestRequestTypeDef:
+    return {
+        "profileName": ...,
+    }
 ```
 
-Required fields:
-
-- `profileName`: `str`
-
-<a id="describesigningjobrequestrequesttypedef"></a>
+```python title="Definition"
+class CancelSigningProfileRequestRequestTypeDef(TypedDict):
+    profileName: str,
+```
 
 ## DescribeSigningJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import DescribeSigningJobRequestRequestTypeDef
+
+def get_value() -> DescribeSigningJobRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSigningJobRequestRequestTypeDef(TypedDict):
+    jobId: str,
+```
 
-- `jobId`: `str`
+## DescribeSigningJobRequestSuccessfulSigningJobWaitTypeDef
 
-<a id="describesigningjobresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_signer.type_defs import DescribeSigningJobRequestSuccessfulSigningJobWaitTypeDef
 
+def get_value() -> DescribeSigningJobRequestSuccessfulSigningJobWaitTypeDef:
+    return {
+        "jobId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSigningJobRequestSuccessfulSigningJobWaitTypeDef(TypedDict):
+    jobId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeSigningJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import DescribeSigningJobResponseTypeDef
+
+def get_value() -> DescribeSigningJobResponseTypeDef:
+    return {
+        "jobId": ...,
+        "source": ...,
+        "signingMaterial": ...,
+        "platformId": ...,
+        "platformDisplayName": ...,
+        "profileName": ...,
+        "profileVersion": ...,
+        "overrides": ...,
+        "signingParameters": ...,
+        "createdAt": ...,
+        "completedAt": ...,
+        "signatureExpiresAt": ...,
+        "requestedBy": ...,
+        "status": ...,
+        "statusReason": ...,
+        "revocationRecord": ...,
+        "signedObject": ...,
+        "jobOwner": ...,
+        "jobInvoker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSigningJobResponseTypeDef(TypedDict):
+    jobId: str,
+    source: SourceTypeDef,  # (1)
+    signingMaterial: SigningMaterialTypeDef,  # (2)
+    platformId: str,
+    platformDisplayName: str,
+    profileName: str,
+    profileVersion: str,
+    overrides: SigningPlatformOverridesTypeDef,  # (3)
+    signingParameters: Dict[str, str],
+    createdAt: datetime,
+    completedAt: datetime,
+    signatureExpiresAt: datetime,
+    requestedBy: str,
+    status: SigningStatusType,  # (4)
+    statusReason: str,
+    revocationRecord: SigningJobRevocationRecordTypeDef,  # (5)
+    signedObject: SignedObjectTypeDef,  # (6)
+    jobOwner: str,
+    jobInvoker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `jobId`: `str`
-- `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `signingMaterial`:
-  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
-- `platformId`: `str`
-- `platformDisplayName`: `str`
-- `profileName`: `str`
-- `profileVersion`: `str`
-- `overrides`:
-  [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
-- `signingParameters`: `Dict`\[`str`, `str`\]
-- `createdAt`: `datetime`
-- `completedAt`: `datetime`
-- `signatureExpiresAt`: `datetime`
-- `requestedBy`: `str`
-- `status`: [SigningStatusType](./literals.md#signingstatustype)
-- `statusReason`: `str`
-- `revocationRecord`:
-  [SigningJobRevocationRecordTypeDef](./type_defs.md#signingjobrevocationrecordtypedef)
-- `signedObject`: [SignedObjectTypeDef](./type_defs.md#signedobjecttypedef)
-- `jobOwner`: `str`
-- `jobInvoker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="destinationtypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef) 
+3. See [:material-code-braces: SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef) 
+4. See [:material-code-brackets: SigningStatusType](./literals.md#signingstatustype) 
+5. See [:material-code-braces: SigningJobRevocationRecordTypeDef](./type_defs.md#signingjobrevocationrecordtypedef) 
+6. See [:material-code-braces: SignedObjectTypeDef](./type_defs.md#signedobjecttypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import DestinationTypeDef
+
+def get_value() -> DestinationTypeDef:
+    return {
+        "s3": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DestinationTypeDef(TypedDict):
+    s3: NotRequired[S3DestinationTypeDef],  # (1)
+```
 
-- `s3`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
-
-<a id="encryptionalgorithmoptionstypedef"></a>
-
+1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
 ## EncryptionAlgorithmOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import EncryptionAlgorithmOptionsTypeDef
+
+def get_value() -> EncryptionAlgorithmOptionsTypeDef:
+    return {
+        "allowedValues": ...,
+        "defaultValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EncryptionAlgorithmOptionsTypeDef(TypedDict):
+    allowedValues: List[EncryptionAlgorithmType],  # (1)
+    defaultValue: EncryptionAlgorithmType,  # (2)
+```
 
-- `allowedValues`:
-  `List`\[[EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype)\]
-- `defaultValue`:
-  [EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype)
-
-<a id="getsigningplatformrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype) 
+2. See [:material-code-brackets: EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype) 
 ## GetSigningPlatformRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import GetSigningPlatformRequestRequestTypeDef
+
+def get_value() -> GetSigningPlatformRequestRequestTypeDef:
+    return {
+        "platformId": ...,
+    }
 ```
 
-Required fields:
-
-- `platformId`: `str`
-
-<a id="getsigningplatformresponsetypedef"></a>
+```python title="Definition"
+class GetSigningPlatformRequestRequestTypeDef(TypedDict):
+    platformId: str,
+```
 
 ## GetSigningPlatformResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import GetSigningPlatformResponseTypeDef
+
+def get_value() -> GetSigningPlatformResponseTypeDef:
+    return {
+        "platformId": ...,
+        "displayName": ...,
+        "partner": ...,
+        "target": ...,
+        "category": ...,
+        "signingConfiguration": ...,
+        "signingImageFormat": ...,
+        "maxSizeInMB": ...,
+        "revocationSupported": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSigningPlatformResponseTypeDef(TypedDict):
+    platformId: str,
+    displayName: str,
+    partner: str,
+    target: str,
+    category: CategoryType,  # (1)
+    signingConfiguration: SigningConfigurationTypeDef,  # (2)
+    signingImageFormat: SigningImageFormatTypeDef,  # (3)
+    maxSizeInMB: int,
+    revocationSupported: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `platformId`: `str`
-- `displayName`: `str`
-- `partner`: `str`
-- `target`: `str`
-- `category`: `Literal['AWSIoT']` (see
-  [CategoryType](./literals.md#categorytype))
-- `signingConfiguration`:
-  [SigningConfigurationTypeDef](./type_defs.md#signingconfigurationtypedef)
-- `signingImageFormat`:
-  [SigningImageFormatTypeDef](./type_defs.md#signingimageformattypedef)
-- `maxSizeInMB`: `int`
-- `revocationSupported`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsigningprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CategoryType](./literals.md#categorytype) 
+2. See [:material-code-braces: SigningConfigurationTypeDef](./type_defs.md#signingconfigurationtypedef) 
+3. See [:material-code-braces: SigningImageFormatTypeDef](./type_defs.md#signingimageformattypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSigningProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import GetSigningProfileRequestRequestTypeDef
+
+def get_value() -> GetSigningProfileRequestRequestTypeDef:
+    return {
+        "profileName": ...,
+    }
 ```
 
-Required fields:
-
-- `profileName`: `str`
-
-Optional fields:
-
-- `profileOwner`: `str`
-
-<a id="getsigningprofileresponsetypedef"></a>
+```python title="Definition"
+class GetSigningProfileRequestRequestTypeDef(TypedDict):
+    profileName: str,
+    profileOwner: NotRequired[str],
+```
 
 ## GetSigningProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import GetSigningProfileResponseTypeDef
+
+def get_value() -> GetSigningProfileResponseTypeDef:
+    return {
+        "profileName": ...,
+        "profileVersion": ...,
+        "profileVersionArn": ...,
+        "revocationRecord": ...,
+        "signingMaterial": ...,
+        "platformId": ...,
+        "platformDisplayName": ...,
+        "signatureValidityPeriod": ...,
+        "overrides": ...,
+        "signingParameters": ...,
+        "status": ...,
+        "statusReason": ...,
+        "arn": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSigningProfileResponseTypeDef(TypedDict):
+    profileName: str,
+    profileVersion: str,
+    profileVersionArn: str,
+    revocationRecord: SigningProfileRevocationRecordTypeDef,  # (1)
+    signingMaterial: SigningMaterialTypeDef,  # (2)
+    platformId: str,
+    platformDisplayName: str,
+    signatureValidityPeriod: SignatureValidityPeriodTypeDef,  # (3)
+    overrides: SigningPlatformOverridesTypeDef,  # (4)
+    signingParameters: Dict[str, str],
+    status: SigningProfileStatusType,  # (5)
+    statusReason: str,
+    arn: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `profileName`: `str`
-- `profileVersion`: `str`
-- `profileVersionArn`: `str`
-- `revocationRecord`:
-  [SigningProfileRevocationRecordTypeDef](./type_defs.md#signingprofilerevocationrecordtypedef)
-- `signingMaterial`:
-  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
-- `platformId`: `str`
-- `platformDisplayName`: `str`
-- `signatureValidityPeriod`:
-  [SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef)
-- `overrides`:
-  [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
-- `signingParameters`: `Dict`\[`str`, `str`\]
-- `status`: [SigningProfileStatusType](./literals.md#signingprofilestatustype)
-- `statusReason`: `str`
-- `arn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hashalgorithmoptionstypedef"></a>
-
+1. See [:material-code-braces: SigningProfileRevocationRecordTypeDef](./type_defs.md#signingprofilerevocationrecordtypedef) 
+2. See [:material-code-braces: SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef) 
+3. See [:material-code-braces: SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef) 
+4. See [:material-code-braces: SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef) 
+5. See [:material-code-brackets: SigningProfileStatusType](./literals.md#signingprofilestatustype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HashAlgorithmOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import HashAlgorithmOptionsTypeDef
+
+def get_value() -> HashAlgorithmOptionsTypeDef:
+    return {
+        "allowedValues": ...,
+        "defaultValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HashAlgorithmOptionsTypeDef(TypedDict):
+    allowedValues: List[HashAlgorithmType],  # (1)
+    defaultValue: HashAlgorithmType,  # (2)
+```
 
-- `allowedValues`:
-  `List`\[[HashAlgorithmType](./literals.md#hashalgorithmtype)\]
-- `defaultValue`: [HashAlgorithmType](./literals.md#hashalgorithmtype)
-
-<a id="listprofilepermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: HashAlgorithmType](./literals.md#hashalgorithmtype) 
+2. See [:material-code-brackets: HashAlgorithmType](./literals.md#hashalgorithmtype) 
 ## ListProfilePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListProfilePermissionsRequestRequestTypeDef
+
+def get_value() -> ListProfilePermissionsRequestRequestTypeDef:
+    return {
+        "profileName": ...,
+    }
 ```
 
-Required fields:
-
-- `profileName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listprofilepermissionsresponsetypedef"></a>
+```python title="Definition"
+class ListProfilePermissionsRequestRequestTypeDef(TypedDict):
+    profileName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListProfilePermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListProfilePermissionsResponseTypeDef
+
+def get_value() -> ListProfilePermissionsResponseTypeDef:
+    return {
+        "revisionId": ...,
+        "policySizeBytes": ...,
+        "permissions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProfilePermissionsResponseTypeDef(TypedDict):
+    revisionId: str,
+    policySizeBytes: int,
+    permissions: List[PermissionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `revisionId`: `str`
-- `policySizeBytes`: `int`
-- `permissions`:
-  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PermissionTypeDef](./type_defs.md#permissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSigningJobsRequestListSigningJobsPaginateTypeDef
 
-<a id="listsigningjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_signer.type_defs import ListSigningJobsRequestListSigningJobsPaginateTypeDef
 
+def get_value() -> ListSigningJobsRequestListSigningJobsPaginateTypeDef:
+    return {
+        "status": ...,
+    }
+```
+
+```python title="Definition"
+class ListSigningJobsRequestListSigningJobsPaginateTypeDef(TypedDict):
+    status: NotRequired[SigningStatusType],  # (1)
+    platformId: NotRequired[str],
+    requestedBy: NotRequired[str],
+    isRevoked: NotRequired[bool],
+    signatureExpiresBefore: NotRequired[Union[datetime, str]],
+    signatureExpiresAfter: NotRequired[Union[datetime, str]],
+    jobInvoker: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SigningStatusType](./literals.md#signingstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSigningJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListSigningJobsRequestRequestTypeDef
+
+def get_value() -> ListSigningJobsRequestRequestTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSigningJobsRequestRequestTypeDef(TypedDict):
+    status: NotRequired[SigningStatusType],  # (1)
+    platformId: NotRequired[str],
+    requestedBy: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    isRevoked: NotRequired[bool],
+    signatureExpiresBefore: NotRequired[Union[datetime, str]],
+    signatureExpiresAfter: NotRequired[Union[datetime, str]],
+    jobInvoker: NotRequired[str],
+```
 
-- `status`: [SigningStatusType](./literals.md#signingstatustype)
-- `platformId`: `str`
-- `requestedBy`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `isRevoked`: `bool`
-- `signatureExpiresBefore`: `Union`\[`datetime`, `str`\]
-- `signatureExpiresAfter`: `Union`\[`datetime`, `str`\]
-- `jobInvoker`: `str`
-
-<a id="listsigningjobsresponsetypedef"></a>
-
+1. See [:material-code-brackets: SigningStatusType](./literals.md#signingstatustype) 
 ## ListSigningJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListSigningJobsResponseTypeDef
+
+def get_value() -> ListSigningJobsResponseTypeDef:
+    return {
+        "jobs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSigningJobsResponseTypeDef(TypedDict):
+    jobs: List[SigningJobTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobs`: `List`\[[SigningJobTypeDef](./type_defs.md#signingjobtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SigningJobTypeDef](./type_defs.md#signingjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSigningPlatformsRequestListSigningPlatformsPaginateTypeDef
 
-<a id="listsigningplatformsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_signer.type_defs import ListSigningPlatformsRequestListSigningPlatformsPaginateTypeDef
 
+def get_value() -> ListSigningPlatformsRequestListSigningPlatformsPaginateTypeDef:
+    return {
+        "category": ...,
+    }
+```
+
+```python title="Definition"
+class ListSigningPlatformsRequestListSigningPlatformsPaginateTypeDef(TypedDict):
+    category: NotRequired[str],
+    partner: NotRequired[str],
+    target: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSigningPlatformsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListSigningPlatformsRequestRequestTypeDef
+
+def get_value() -> ListSigningPlatformsRequestRequestTypeDef:
+    return {
+        "category": ...,
+    }
 ```
 
-Optional fields:
-
-- `category`: `str`
-- `partner`: `str`
-- `target`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listsigningplatformsresponsetypedef"></a>
+```python title="Definition"
+class ListSigningPlatformsRequestRequestTypeDef(TypedDict):
+    category: NotRequired[str],
+    partner: NotRequired[str],
+    target: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListSigningPlatformsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListSigningPlatformsResponseTypeDef
+
+def get_value() -> ListSigningPlatformsResponseTypeDef:
+    return {
+        "platforms": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSigningPlatformsResponseTypeDef(TypedDict):
+    platforms: List[SigningPlatformTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `platforms`:
-  `List`\[[SigningPlatformTypeDef](./type_defs.md#signingplatformtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SigningPlatformTypeDef](./type_defs.md#signingplatformtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSigningProfilesRequestListSigningProfilesPaginateTypeDef
 
-<a id="listsigningprofilesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_signer.type_defs import ListSigningProfilesRequestListSigningProfilesPaginateTypeDef
 
+def get_value() -> ListSigningProfilesRequestListSigningProfilesPaginateTypeDef:
+    return {
+        "includeCanceled": ...,
+    }
+```
+
+```python title="Definition"
+class ListSigningProfilesRequestListSigningProfilesPaginateTypeDef(TypedDict):
+    includeCanceled: NotRequired[bool],
+    platformId: NotRequired[str],
+    statuses: NotRequired[Sequence[SigningProfileStatusType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SigningProfileStatusType](./literals.md#signingprofilestatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSigningProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListSigningProfilesRequestRequestTypeDef
+
+def get_value() -> ListSigningProfilesRequestRequestTypeDef:
+    return {
+        "includeCanceled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSigningProfilesRequestRequestTypeDef(TypedDict):
+    includeCanceled: NotRequired[bool],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    platformId: NotRequired[str],
+    statuses: NotRequired[Sequence[SigningProfileStatusType]],  # (1)
+```
 
-- `includeCanceled`: `bool`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `platformId`: `str`
-- `statuses`:
-  `Sequence`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
-
-<a id="listsigningprofilesresponsetypedef"></a>
-
+1. See [:material-code-brackets: SigningProfileStatusType](./literals.md#signingprofilestatustype) 
 ## ListSigningProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListSigningProfilesResponseTypeDef
+
+def get_value() -> ListSigningProfilesResponseTypeDef:
+    return {
+        "profiles": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSigningProfilesResponseTypeDef(TypedDict):
+    profiles: List[SigningProfileTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `profiles`:
-  `List`\[[SigningProfileTypeDef](./type_defs.md#signingprofiletypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SigningProfileTypeDef](./type_defs.md#signingprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="permissiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import PermissionTypeDef
+
+def get_value() -> PermissionTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Optional fields:
-
-- `action`: `str`
-- `principal`: `str`
-- `statementId`: `str`
-- `profileVersion`: `str`
-
-<a id="putsigningprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class PermissionTypeDef(TypedDict):
+    action: NotRequired[str],
+    principal: NotRequired[str],
+    statementId: NotRequired[str],
+    profileVersion: NotRequired[str],
+```
 
 ## PutSigningProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import PutSigningProfileRequestRequestTypeDef
+
+def get_value() -> PutSigningProfileRequestRequestTypeDef:
+    return {
+        "profileName": ...,
+        "platformId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutSigningProfileRequestRequestTypeDef(TypedDict):
+    profileName: str,
+    platformId: str,
+    signingMaterial: NotRequired[SigningMaterialTypeDef],  # (1)
+    signatureValidityPeriod: NotRequired[SignatureValidityPeriodTypeDef],  # (2)
+    overrides: NotRequired[SigningPlatformOverridesTypeDef],  # (3)
+    signingParameters: NotRequired[Mapping[str, str]],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `profileName`: `str`
-- `platformId`: `str`
-
-Optional fields:
-
-- `signingMaterial`:
-  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
-- `signatureValidityPeriod`:
-  [SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef)
-- `overrides`:
-  [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
-- `signingParameters`: `Mapping`\[`str`, `str`\]
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="putsigningprofileresponsetypedef"></a>
-
+1. See [:material-code-braces: SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef) 
+2. See [:material-code-braces: SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef) 
+3. See [:material-code-braces: SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef) 
 ## PutSigningProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import PutSigningProfileResponseTypeDef
+
+def get_value() -> PutSigningProfileResponseTypeDef:
+    return {
+        "arn": ...,
+        "profileVersion": ...,
+        "profileVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutSigningProfileResponseTypeDef(TypedDict):
+    arn: str,
+    profileVersion: str,
+    profileVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `profileVersion`: `str`
-- `profileVersionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removeprofilepermissionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveProfilePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import RemoveProfilePermissionRequestRequestTypeDef
+
+def get_value() -> RemoveProfilePermissionRequestRequestTypeDef:
+    return {
+        "profileName": ...,
+        "revisionId": ...,
+        "statementId": ...,
+    }
 ```
 
-Required fields:
-
-- `profileName`: `str`
-- `revisionId`: `str`
-- `statementId`: `str`
-
-<a id="removeprofilepermissionresponsetypedef"></a>
+```python title="Definition"
+class RemoveProfilePermissionRequestRequestTypeDef(TypedDict):
+    profileName: str,
+    revisionId: str,
+    statementId: str,
+```
 
 ## RemoveProfilePermissionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import RemoveProfilePermissionResponseTypeDef
+
+def get_value() -> RemoveProfilePermissionResponseTypeDef:
+    return {
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveProfilePermissionResponseTypeDef(TypedDict):
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `revisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="revokesignaturerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RevokeSignatureRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import RevokeSignatureRequestRequestTypeDef
+
+def get_value() -> RevokeSignatureRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+        "reason": ...,
+    }
 ```
 
-Required fields:
-
-- `jobId`: `str`
-- `reason`: `str`
-
-Optional fields:
-
-- `jobOwner`: `str`
-
-<a id="revokesigningprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class RevokeSignatureRequestRequestTypeDef(TypedDict):
+    jobId: str,
+    reason: str,
+    jobOwner: NotRequired[str],
+```
 
 ## RevokeSigningProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import RevokeSigningProfileRequestRequestTypeDef
+
+def get_value() -> RevokeSigningProfileRequestRequestTypeDef:
+    return {
+        "profileName": ...,
+        "profileVersion": ...,
+        "reason": ...,
+        "effectiveTime": ...,
+    }
 ```
 
-Required fields:
-
-- `profileName`: `str`
-- `profileVersion`: `str`
-- `reason`: `str`
-- `effectiveTime`: `Union`\[`datetime`, `str`\]
-
-<a id="s3destinationtypedef"></a>
+```python title="Definition"
+class RevokeSigningProfileRequestRequestTypeDef(TypedDict):
+    profileName: str,
+    profileVersion: str,
+    reason: str,
+    effectiveTime: Union[datetime, str],
+```
 
 ## S3DestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import S3DestinationTypeDef
+
+def get_value() -> S3DestinationTypeDef:
+    return {
+        "bucketName": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucketName`: `str`
-- `prefix`: `str`
-
-<a id="s3signedobjecttypedef"></a>
+```python title="Definition"
+class S3DestinationTypeDef(TypedDict):
+    bucketName: NotRequired[str],
+    prefix: NotRequired[str],
+```
 
 ## S3SignedObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import S3SignedObjectTypeDef
+
+def get_value() -> S3SignedObjectTypeDef:
+    return {
+        "bucketName": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucketName`: `str`
-- `key`: `str`
-
-<a id="s3sourcetypedef"></a>
+```python title="Definition"
+class S3SignedObjectTypeDef(TypedDict):
+    bucketName: NotRequired[str],
+    key: NotRequired[str],
+```
 
 ## S3SourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import S3SourceTypeDef
+
+def get_value() -> S3SourceTypeDef:
+    return {
+        "bucketName": ...,
+        "key": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
-
-- `bucketName`: `str`
-- `key`: `str`
-- `version`: `str`
-
-<a id="signaturevalidityperiodtypedef"></a>
+```python title="Definition"
+class S3SourceTypeDef(TypedDict):
+    bucketName: str,
+    key: str,
+    version: str,
+```
 
 ## SignatureValidityPeriodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SignatureValidityPeriodTypeDef
+
+def get_value() -> SignatureValidityPeriodTypeDef:
+    return {
+        "value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SignatureValidityPeriodTypeDef(TypedDict):
+    value: NotRequired[int],
+    type: NotRequired[ValidityTypeType],  # (1)
+```
 
-- `value`: `int`
-- `type`: [ValidityTypeType](./literals.md#validitytypetype)
-
-<a id="signedobjecttypedef"></a>
-
+1. See [:material-code-brackets: ValidityTypeType](./literals.md#validitytypetype) 
 ## SignedObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SignedObjectTypeDef
+
+def get_value() -> SignedObjectTypeDef:
+    return {
+        "s3": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SignedObjectTypeDef(TypedDict):
+    s3: NotRequired[S3SignedObjectTypeDef],  # (1)
+```
 
-- `s3`: [S3SignedObjectTypeDef](./type_defs.md#s3signedobjecttypedef)
-
-<a id="signingconfigurationoverridestypedef"></a>
-
+1. See [:material-code-braces: S3SignedObjectTypeDef](./type_defs.md#s3signedobjecttypedef) 
 ## SigningConfigurationOverridesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningConfigurationOverridesTypeDef
+
+def get_value() -> SigningConfigurationOverridesTypeDef:
+    return {
+        "encryptionAlgorithm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SigningConfigurationOverridesTypeDef(TypedDict):
+    encryptionAlgorithm: NotRequired[EncryptionAlgorithmType],  # (1)
+    hashAlgorithm: NotRequired[HashAlgorithmType],  # (2)
+```
 
-- `encryptionAlgorithm`:
-  [EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype)
-- `hashAlgorithm`: [HashAlgorithmType](./literals.md#hashalgorithmtype)
-
-<a id="signingconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: EncryptionAlgorithmType](./literals.md#encryptionalgorithmtype) 
+2. See [:material-code-brackets: HashAlgorithmType](./literals.md#hashalgorithmtype) 
 ## SigningConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningConfigurationTypeDef
+
+def get_value() -> SigningConfigurationTypeDef:
+    return {
+        "encryptionAlgorithmOptions": ...,
+        "hashAlgorithmOptions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SigningConfigurationTypeDef(TypedDict):
+    encryptionAlgorithmOptions: EncryptionAlgorithmOptionsTypeDef,  # (1)
+    hashAlgorithmOptions: HashAlgorithmOptionsTypeDef,  # (2)
+```
 
-- `encryptionAlgorithmOptions`:
-  [EncryptionAlgorithmOptionsTypeDef](./type_defs.md#encryptionalgorithmoptionstypedef)
-- `hashAlgorithmOptions`:
-  [HashAlgorithmOptionsTypeDef](./type_defs.md#hashalgorithmoptionstypedef)
-
-<a id="signingimageformattypedef"></a>
-
+1. See [:material-code-braces: EncryptionAlgorithmOptionsTypeDef](./type_defs.md#encryptionalgorithmoptionstypedef) 
+2. See [:material-code-braces: HashAlgorithmOptionsTypeDef](./type_defs.md#hashalgorithmoptionstypedef) 
 ## SigningImageFormatTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningImageFormatTypeDef
+
+def get_value() -> SigningImageFormatTypeDef:
+    return {
+        "supportedFormats": ...,
+        "defaultFormat": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SigningImageFormatTypeDef(TypedDict):
+    supportedFormats: List[ImageFormatType],  # (1)
+    defaultFormat: ImageFormatType,  # (2)
+```
 
-- `supportedFormats`:
-  `List`\[[ImageFormatType](./literals.md#imageformattype)\]
-- `defaultFormat`: [ImageFormatType](./literals.md#imageformattype)
-
-<a id="signingjobrevocationrecordtypedef"></a>
-
+1. See [:material-code-brackets: ImageFormatType](./literals.md#imageformattype) 
+2. See [:material-code-brackets: ImageFormatType](./literals.md#imageformattype) 
 ## SigningJobRevocationRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningJobRevocationRecordTypeDef
+
+def get_value() -> SigningJobRevocationRecordTypeDef:
+    return {
+        "reason": ...,
+    }
 ```
 
-Optional fields:
-
-- `reason`: `str`
-- `revokedAt`: `datetime`
-- `revokedBy`: `str`
-
-<a id="signingjobtypedef"></a>
+```python title="Definition"
+class SigningJobRevocationRecordTypeDef(TypedDict):
+    reason: NotRequired[str],
+    revokedAt: NotRequired[datetime],
+    revokedBy: NotRequired[str],
+```
 
 ## SigningJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningJobTypeDef
+
+def get_value() -> SigningJobTypeDef:
+    return {
+        "jobId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SigningJobTypeDef(TypedDict):
+    jobId: NotRequired[str],
+    source: NotRequired[SourceTypeDef],  # (1)
+    signedObject: NotRequired[SignedObjectTypeDef],  # (2)
+    signingMaterial: NotRequired[SigningMaterialTypeDef],  # (3)
+    createdAt: NotRequired[datetime],
+    status: NotRequired[SigningStatusType],  # (4)
+    isRevoked: NotRequired[bool],
+    profileName: NotRequired[str],
+    profileVersion: NotRequired[str],
+    platformId: NotRequired[str],
+    platformDisplayName: NotRequired[str],
+    signatureExpiresAt: NotRequired[datetime],
+    jobOwner: NotRequired[str],
+    jobInvoker: NotRequired[str],
+```
 
-- `jobId`: `str`
-- `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `signedObject`: [SignedObjectTypeDef](./type_defs.md#signedobjecttypedef)
-- `signingMaterial`:
-  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
-- `createdAt`: `datetime`
-- `status`: [SigningStatusType](./literals.md#signingstatustype)
-- `isRevoked`: `bool`
-- `profileName`: `str`
-- `profileVersion`: `str`
-- `platformId`: `str`
-- `platformDisplayName`: `str`
-- `signatureExpiresAt`: `datetime`
-- `jobOwner`: `str`
-- `jobInvoker`: `str`
-
-<a id="signingmaterialtypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: SignedObjectTypeDef](./type_defs.md#signedobjecttypedef) 
+3. See [:material-code-braces: SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef) 
+4. See [:material-code-brackets: SigningStatusType](./literals.md#signingstatustype) 
 ## SigningMaterialTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningMaterialTypeDef
+
+def get_value() -> SigningMaterialTypeDef:
+    return {
+        "certificateArn": ...,
+    }
 ```
 
-Required fields:
-
-- `certificateArn`: `str`
-
-<a id="signingplatformoverridestypedef"></a>
+```python title="Definition"
+class SigningMaterialTypeDef(TypedDict):
+    certificateArn: str,
+```
 
 ## SigningPlatformOverridesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningPlatformOverridesTypeDef
+
+def get_value() -> SigningPlatformOverridesTypeDef:
+    return {
+        "signingConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SigningPlatformOverridesTypeDef(TypedDict):
+    signingConfiguration: NotRequired[SigningConfigurationOverridesTypeDef],  # (1)
+    signingImageFormat: NotRequired[ImageFormatType],  # (2)
+```
 
-- `signingConfiguration`:
-  [SigningConfigurationOverridesTypeDef](./type_defs.md#signingconfigurationoverridestypedef)
-- `signingImageFormat`: [ImageFormatType](./literals.md#imageformattype)
-
-<a id="signingplatformtypedef"></a>
-
+1. See [:material-code-braces: SigningConfigurationOverridesTypeDef](./type_defs.md#signingconfigurationoverridestypedef) 
+2. See [:material-code-brackets: ImageFormatType](./literals.md#imageformattype) 
 ## SigningPlatformTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningPlatformTypeDef
+
+def get_value() -> SigningPlatformTypeDef:
+    return {
+        "platformId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SigningPlatformTypeDef(TypedDict):
+    platformId: NotRequired[str],
+    displayName: NotRequired[str],
+    partner: NotRequired[str],
+    target: NotRequired[str],
+    category: NotRequired[CategoryType],  # (1)
+    signingConfiguration: NotRequired[SigningConfigurationTypeDef],  # (2)
+    signingImageFormat: NotRequired[SigningImageFormatTypeDef],  # (3)
+    maxSizeInMB: NotRequired[int],
+    revocationSupported: NotRequired[bool],
+```
 
-- `platformId`: `str`
-- `displayName`: `str`
-- `partner`: `str`
-- `target`: `str`
-- `category`: `Literal['AWSIoT']` (see
-  [CategoryType](./literals.md#categorytype))
-- `signingConfiguration`:
-  [SigningConfigurationTypeDef](./type_defs.md#signingconfigurationtypedef)
-- `signingImageFormat`:
-  [SigningImageFormatTypeDef](./type_defs.md#signingimageformattypedef)
-- `maxSizeInMB`: `int`
-- `revocationSupported`: `bool`
-
-<a id="signingprofilerevocationrecordtypedef"></a>
-
+1. See [:material-code-brackets: CategoryType](./literals.md#categorytype) 
+2. See [:material-code-braces: SigningConfigurationTypeDef](./type_defs.md#signingconfigurationtypedef) 
+3. See [:material-code-braces: SigningImageFormatTypeDef](./type_defs.md#signingimageformattypedef) 
 ## SigningProfileRevocationRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningProfileRevocationRecordTypeDef
+
+def get_value() -> SigningProfileRevocationRecordTypeDef:
+    return {
+        "revocationEffectiveFrom": ...,
+    }
 ```
 
-Optional fields:
-
-- `revocationEffectiveFrom`: `datetime`
-- `revokedAt`: `datetime`
-- `revokedBy`: `str`
-
-<a id="signingprofiletypedef"></a>
+```python title="Definition"
+class SigningProfileRevocationRecordTypeDef(TypedDict):
+    revocationEffectiveFrom: NotRequired[datetime],
+    revokedAt: NotRequired[datetime],
+    revokedBy: NotRequired[str],
+```
 
 ## SigningProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SigningProfileTypeDef
+
+def get_value() -> SigningProfileTypeDef:
+    return {
+        "profileName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SigningProfileTypeDef(TypedDict):
+    profileName: NotRequired[str],
+    profileVersion: NotRequired[str],
+    profileVersionArn: NotRequired[str],
+    signingMaterial: NotRequired[SigningMaterialTypeDef],  # (1)
+    signatureValidityPeriod: NotRequired[SignatureValidityPeriodTypeDef],  # (2)
+    platformId: NotRequired[str],
+    platformDisplayName: NotRequired[str],
+    signingParameters: NotRequired[Dict[str, str]],
+    status: NotRequired[SigningProfileStatusType],  # (3)
+    arn: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `profileName`: `str`
-- `profileVersion`: `str`
-- `profileVersionArn`: `str`
-- `signingMaterial`:
-  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
-- `signatureValidityPeriod`:
-  [SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef)
-- `platformId`: `str`
-- `platformDisplayName`: `str`
-- `signingParameters`: `Dict`\[`str`, `str`\]
-- `status`: [SigningProfileStatusType](./literals.md#signingprofilestatustype)
-- `arn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="sourcetypedef"></a>
-
+1. See [:material-code-braces: SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef) 
+2. See [:material-code-braces: SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef) 
+3. See [:material-code-brackets: SigningProfileStatusType](./literals.md#signingprofilestatustype) 
 ## SourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import SourceTypeDef
+
+def get_value() -> SourceTypeDef:
+    return {
+        "s3": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceTypeDef(TypedDict):
+    s3: NotRequired[S3SourceTypeDef],  # (1)
+```
 
-- `s3`: [S3SourceTypeDef](./type_defs.md#s3sourcetypedef)
-
-<a id="startsigningjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3SourceTypeDef](./type_defs.md#s3sourcetypedef) 
 ## StartSigningJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import StartSigningJobRequestRequestTypeDef
+
+def get_value() -> StartSigningJobRequestRequestTypeDef:
+    return {
+        "source": ...,
+        "destination": ...,
+        "profileName": ...,
+        "clientRequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSigningJobRequestRequestTypeDef(TypedDict):
+    source: SourceTypeDef,  # (1)
+    destination: DestinationTypeDef,  # (2)
+    profileName: str,
+    clientRequestToken: str,
+    profileOwner: NotRequired[str],
+```
 
-- `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-- `profileName`: `str`
-- `clientRequestToken`: `str`
-
-Optional fields:
-
-- `profileOwner`: `str`
-
-<a id="startsigningjobresponsetypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
 ## StartSigningJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import StartSigningJobResponseTypeDef
+
+def get_value() -> StartSigningJobResponseTypeDef:
+    return {
+        "jobId": ...,
+        "jobOwner": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSigningJobResponseTypeDef(TypedDict):
+    jobId: str,
+    jobOwner: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `jobId`: `str`
-- `jobOwner`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

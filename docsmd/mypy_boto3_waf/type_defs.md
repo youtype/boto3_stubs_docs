@@ -1,3165 +1,4275 @@
-<a id="typed-dictionaries-for-boto3-waf-module"></a>
-
-# Typed dictionaries for boto3 WAF module
+# Typed dictionaries
 
 > [Index](../README.md) > [WAF](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
-type annotations stubs module
-[mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
+!!! note ""
 
-- [Typed dictionaries for boto3 WAF module](#typed-dictionaries-for-boto3-waf-module)
-  - [ActivatedRuleTypeDef](#activatedruletypedef)
-  - [ByteMatchSetSummaryTypeDef](#bytematchsetsummarytypedef)
-  - [ByteMatchSetTypeDef](#bytematchsettypedef)
-  - [ByteMatchSetUpdateTypeDef](#bytematchsetupdatetypedef)
-  - [ByteMatchTupleTypeDef](#bytematchtupletypedef)
-  - [CreateByteMatchSetRequestRequestTypeDef](#createbytematchsetrequestrequesttypedef)
-  - [CreateByteMatchSetResponseTypeDef](#createbytematchsetresponsetypedef)
-  - [CreateGeoMatchSetRequestRequestTypeDef](#creategeomatchsetrequestrequesttypedef)
-  - [CreateGeoMatchSetResponseTypeDef](#creategeomatchsetresponsetypedef)
-  - [CreateIPSetRequestRequestTypeDef](#createipsetrequestrequesttypedef)
-  - [CreateIPSetResponseTypeDef](#createipsetresponsetypedef)
-  - [CreateRateBasedRuleRequestRequestTypeDef](#createratebasedrulerequestrequesttypedef)
-  - [CreateRateBasedRuleResponseTypeDef](#createratebasedruleresponsetypedef)
-  - [CreateRegexMatchSetRequestRequestTypeDef](#createregexmatchsetrequestrequesttypedef)
-  - [CreateRegexMatchSetResponseTypeDef](#createregexmatchsetresponsetypedef)
-  - [CreateRegexPatternSetRequestRequestTypeDef](#createregexpatternsetrequestrequesttypedef)
-  - [CreateRegexPatternSetResponseTypeDef](#createregexpatternsetresponsetypedef)
-  - [CreateRuleGroupRequestRequestTypeDef](#createrulegrouprequestrequesttypedef)
-  - [CreateRuleGroupResponseTypeDef](#createrulegroupresponsetypedef)
-  - [CreateRuleRequestRequestTypeDef](#createrulerequestrequesttypedef)
-  - [CreateRuleResponseTypeDef](#createruleresponsetypedef)
-  - [CreateSizeConstraintSetRequestRequestTypeDef](#createsizeconstraintsetrequestrequesttypedef)
-  - [CreateSizeConstraintSetResponseTypeDef](#createsizeconstraintsetresponsetypedef)
-  - [CreateSqlInjectionMatchSetRequestRequestTypeDef](#createsqlinjectionmatchsetrequestrequesttypedef)
-  - [CreateSqlInjectionMatchSetResponseTypeDef](#createsqlinjectionmatchsetresponsetypedef)
-  - [CreateWebACLMigrationStackRequestRequestTypeDef](#createwebaclmigrationstackrequestrequesttypedef)
-  - [CreateWebACLMigrationStackResponseTypeDef](#createwebaclmigrationstackresponsetypedef)
-  - [CreateWebACLRequestRequestTypeDef](#createwebaclrequestrequesttypedef)
-  - [CreateWebACLResponseTypeDef](#createwebaclresponsetypedef)
-  - [CreateXssMatchSetRequestRequestTypeDef](#createxssmatchsetrequestrequesttypedef)
-  - [CreateXssMatchSetResponseTypeDef](#createxssmatchsetresponsetypedef)
-  - [DeleteByteMatchSetRequestRequestTypeDef](#deletebytematchsetrequestrequesttypedef)
-  - [DeleteByteMatchSetResponseTypeDef](#deletebytematchsetresponsetypedef)
-  - [DeleteGeoMatchSetRequestRequestTypeDef](#deletegeomatchsetrequestrequesttypedef)
-  - [DeleteGeoMatchSetResponseTypeDef](#deletegeomatchsetresponsetypedef)
-  - [DeleteIPSetRequestRequestTypeDef](#deleteipsetrequestrequesttypedef)
-  - [DeleteIPSetResponseTypeDef](#deleteipsetresponsetypedef)
-  - [DeleteLoggingConfigurationRequestRequestTypeDef](#deleteloggingconfigurationrequestrequesttypedef)
-  - [DeletePermissionPolicyRequestRequestTypeDef](#deletepermissionpolicyrequestrequesttypedef)
-  - [DeleteRateBasedRuleRequestRequestTypeDef](#deleteratebasedrulerequestrequesttypedef)
-  - [DeleteRateBasedRuleResponseTypeDef](#deleteratebasedruleresponsetypedef)
-  - [DeleteRegexMatchSetRequestRequestTypeDef](#deleteregexmatchsetrequestrequesttypedef)
-  - [DeleteRegexMatchSetResponseTypeDef](#deleteregexmatchsetresponsetypedef)
-  - [DeleteRegexPatternSetRequestRequestTypeDef](#deleteregexpatternsetrequestrequesttypedef)
-  - [DeleteRegexPatternSetResponseTypeDef](#deleteregexpatternsetresponsetypedef)
-  - [DeleteRuleGroupRequestRequestTypeDef](#deleterulegrouprequestrequesttypedef)
-  - [DeleteRuleGroupResponseTypeDef](#deleterulegroupresponsetypedef)
-  - [DeleteRuleRequestRequestTypeDef](#deleterulerequestrequesttypedef)
-  - [DeleteRuleResponseTypeDef](#deleteruleresponsetypedef)
-  - [DeleteSizeConstraintSetRequestRequestTypeDef](#deletesizeconstraintsetrequestrequesttypedef)
-  - [DeleteSizeConstraintSetResponseTypeDef](#deletesizeconstraintsetresponsetypedef)
-  - [DeleteSqlInjectionMatchSetRequestRequestTypeDef](#deletesqlinjectionmatchsetrequestrequesttypedef)
-  - [DeleteSqlInjectionMatchSetResponseTypeDef](#deletesqlinjectionmatchsetresponsetypedef)
-  - [DeleteWebACLRequestRequestTypeDef](#deletewebaclrequestrequesttypedef)
-  - [DeleteWebACLResponseTypeDef](#deletewebaclresponsetypedef)
-  - [DeleteXssMatchSetRequestRequestTypeDef](#deletexssmatchsetrequestrequesttypedef)
-  - [DeleteXssMatchSetResponseTypeDef](#deletexssmatchsetresponsetypedef)
-  - [ExcludedRuleTypeDef](#excludedruletypedef)
-  - [FieldToMatchTypeDef](#fieldtomatchtypedef)
-  - [GeoMatchConstraintTypeDef](#geomatchconstrainttypedef)
-  - [GeoMatchSetSummaryTypeDef](#geomatchsetsummarytypedef)
-  - [GeoMatchSetTypeDef](#geomatchsettypedef)
-  - [GeoMatchSetUpdateTypeDef](#geomatchsetupdatetypedef)
-  - [GetByteMatchSetRequestRequestTypeDef](#getbytematchsetrequestrequesttypedef)
-  - [GetByteMatchSetResponseTypeDef](#getbytematchsetresponsetypedef)
-  - [GetChangeTokenResponseTypeDef](#getchangetokenresponsetypedef)
-  - [GetChangeTokenStatusRequestRequestTypeDef](#getchangetokenstatusrequestrequesttypedef)
-  - [GetChangeTokenStatusResponseTypeDef](#getchangetokenstatusresponsetypedef)
-  - [GetGeoMatchSetRequestRequestTypeDef](#getgeomatchsetrequestrequesttypedef)
-  - [GetGeoMatchSetResponseTypeDef](#getgeomatchsetresponsetypedef)
-  - [GetIPSetRequestRequestTypeDef](#getipsetrequestrequesttypedef)
-  - [GetIPSetResponseTypeDef](#getipsetresponsetypedef)
-  - [GetLoggingConfigurationRequestRequestTypeDef](#getloggingconfigurationrequestrequesttypedef)
-  - [GetLoggingConfigurationResponseTypeDef](#getloggingconfigurationresponsetypedef)
-  - [GetPermissionPolicyRequestRequestTypeDef](#getpermissionpolicyrequestrequesttypedef)
-  - [GetPermissionPolicyResponseTypeDef](#getpermissionpolicyresponsetypedef)
-  - [GetRateBasedRuleManagedKeysRequestRequestTypeDef](#getratebasedrulemanagedkeysrequestrequesttypedef)
-  - [GetRateBasedRuleManagedKeysResponseTypeDef](#getratebasedrulemanagedkeysresponsetypedef)
-  - [GetRateBasedRuleRequestRequestTypeDef](#getratebasedrulerequestrequesttypedef)
-  - [GetRateBasedRuleResponseTypeDef](#getratebasedruleresponsetypedef)
-  - [GetRegexMatchSetRequestRequestTypeDef](#getregexmatchsetrequestrequesttypedef)
-  - [GetRegexMatchSetResponseTypeDef](#getregexmatchsetresponsetypedef)
-  - [GetRegexPatternSetRequestRequestTypeDef](#getregexpatternsetrequestrequesttypedef)
-  - [GetRegexPatternSetResponseTypeDef](#getregexpatternsetresponsetypedef)
-  - [GetRuleGroupRequestRequestTypeDef](#getrulegrouprequestrequesttypedef)
-  - [GetRuleGroupResponseTypeDef](#getrulegroupresponsetypedef)
-  - [GetRuleRequestRequestTypeDef](#getrulerequestrequesttypedef)
-  - [GetRuleResponseTypeDef](#getruleresponsetypedef)
-  - [GetSampledRequestsRequestRequestTypeDef](#getsampledrequestsrequestrequesttypedef)
-  - [GetSampledRequestsResponseTypeDef](#getsampledrequestsresponsetypedef)
-  - [GetSizeConstraintSetRequestRequestTypeDef](#getsizeconstraintsetrequestrequesttypedef)
-  - [GetSizeConstraintSetResponseTypeDef](#getsizeconstraintsetresponsetypedef)
-  - [GetSqlInjectionMatchSetRequestRequestTypeDef](#getsqlinjectionmatchsetrequestrequesttypedef)
-  - [GetSqlInjectionMatchSetResponseTypeDef](#getsqlinjectionmatchsetresponsetypedef)
-  - [GetWebACLRequestRequestTypeDef](#getwebaclrequestrequesttypedef)
-  - [GetWebACLResponseTypeDef](#getwebaclresponsetypedef)
-  - [GetXssMatchSetRequestRequestTypeDef](#getxssmatchsetrequestrequesttypedef)
-  - [GetXssMatchSetResponseTypeDef](#getxssmatchsetresponsetypedef)
-  - [HTTPHeaderTypeDef](#httpheadertypedef)
-  - [HTTPRequestTypeDef](#httprequesttypedef)
-  - [IPSetDescriptorTypeDef](#ipsetdescriptortypedef)
-  - [IPSetSummaryTypeDef](#ipsetsummarytypedef)
-  - [IPSetTypeDef](#ipsettypedef)
-  - [IPSetUpdateTypeDef](#ipsetupdatetypedef)
-  - [ListActivatedRulesInRuleGroupRequestRequestTypeDef](#listactivatedrulesinrulegrouprequestrequesttypedef)
-  - [ListActivatedRulesInRuleGroupResponseTypeDef](#listactivatedrulesinrulegroupresponsetypedef)
-  - [ListByteMatchSetsRequestRequestTypeDef](#listbytematchsetsrequestrequesttypedef)
-  - [ListByteMatchSetsResponseTypeDef](#listbytematchsetsresponsetypedef)
-  - [ListGeoMatchSetsRequestRequestTypeDef](#listgeomatchsetsrequestrequesttypedef)
-  - [ListGeoMatchSetsResponseTypeDef](#listgeomatchsetsresponsetypedef)
-  - [ListIPSetsRequestRequestTypeDef](#listipsetsrequestrequesttypedef)
-  - [ListIPSetsResponseTypeDef](#listipsetsresponsetypedef)
-  - [ListLoggingConfigurationsRequestRequestTypeDef](#listloggingconfigurationsrequestrequesttypedef)
-  - [ListLoggingConfigurationsResponseTypeDef](#listloggingconfigurationsresponsetypedef)
-  - [ListRateBasedRulesRequestRequestTypeDef](#listratebasedrulesrequestrequesttypedef)
-  - [ListRateBasedRulesResponseTypeDef](#listratebasedrulesresponsetypedef)
-  - [ListRegexMatchSetsRequestRequestTypeDef](#listregexmatchsetsrequestrequesttypedef)
-  - [ListRegexMatchSetsResponseTypeDef](#listregexmatchsetsresponsetypedef)
-  - [ListRegexPatternSetsRequestRequestTypeDef](#listregexpatternsetsrequestrequesttypedef)
-  - [ListRegexPatternSetsResponseTypeDef](#listregexpatternsetsresponsetypedef)
-  - [ListRuleGroupsRequestRequestTypeDef](#listrulegroupsrequestrequesttypedef)
-  - [ListRuleGroupsResponseTypeDef](#listrulegroupsresponsetypedef)
-  - [ListRulesRequestRequestTypeDef](#listrulesrequestrequesttypedef)
-  - [ListRulesResponseTypeDef](#listrulesresponsetypedef)
-  - [ListSizeConstraintSetsRequestRequestTypeDef](#listsizeconstraintsetsrequestrequesttypedef)
-  - [ListSizeConstraintSetsResponseTypeDef](#listsizeconstraintsetsresponsetypedef)
-  - [ListSqlInjectionMatchSetsRequestRequestTypeDef](#listsqlinjectionmatchsetsrequestrequesttypedef)
-  - [ListSqlInjectionMatchSetsResponseTypeDef](#listsqlinjectionmatchsetsresponsetypedef)
-  - [ListSubscribedRuleGroupsRequestRequestTypeDef](#listsubscribedrulegroupsrequestrequesttypedef)
-  - [ListSubscribedRuleGroupsResponseTypeDef](#listsubscribedrulegroupsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListWebACLsRequestRequestTypeDef](#listwebaclsrequestrequesttypedef)
-  - [ListWebACLsResponseTypeDef](#listwebaclsresponsetypedef)
-  - [ListXssMatchSetsRequestRequestTypeDef](#listxssmatchsetsrequestrequesttypedef)
-  - [ListXssMatchSetsResponseTypeDef](#listxssmatchsetsresponsetypedef)
-  - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PredicateTypeDef](#predicatetypedef)
-  - [PutLoggingConfigurationRequestRequestTypeDef](#putloggingconfigurationrequestrequesttypedef)
-  - [PutLoggingConfigurationResponseTypeDef](#putloggingconfigurationresponsetypedef)
-  - [PutPermissionPolicyRequestRequestTypeDef](#putpermissionpolicyrequestrequesttypedef)
-  - [RateBasedRuleTypeDef](#ratebasedruletypedef)
-  - [RegexMatchSetSummaryTypeDef](#regexmatchsetsummarytypedef)
-  - [RegexMatchSetTypeDef](#regexmatchsettypedef)
-  - [RegexMatchSetUpdateTypeDef](#regexmatchsetupdatetypedef)
-  - [RegexMatchTupleTypeDef](#regexmatchtupletypedef)
-  - [RegexPatternSetSummaryTypeDef](#regexpatternsetsummarytypedef)
-  - [RegexPatternSetTypeDef](#regexpatternsettypedef)
-  - [RegexPatternSetUpdateTypeDef](#regexpatternsetupdatetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RuleGroupSummaryTypeDef](#rulegroupsummarytypedef)
-  - [RuleGroupTypeDef](#rulegrouptypedef)
-  - [RuleGroupUpdateTypeDef](#rulegroupupdatetypedef)
-  - [RuleSummaryTypeDef](#rulesummarytypedef)
-  - [RuleTypeDef](#ruletypedef)
-  - [RuleUpdateTypeDef](#ruleupdatetypedef)
-  - [SampledHTTPRequestTypeDef](#sampledhttprequesttypedef)
-  - [SizeConstraintSetSummaryTypeDef](#sizeconstraintsetsummarytypedef)
-  - [SizeConstraintSetTypeDef](#sizeconstraintsettypedef)
-  - [SizeConstraintSetUpdateTypeDef](#sizeconstraintsetupdatetypedef)
-  - [SizeConstraintTypeDef](#sizeconstrainttypedef)
-  - [SqlInjectionMatchSetSummaryTypeDef](#sqlinjectionmatchsetsummarytypedef)
-  - [SqlInjectionMatchSetTypeDef](#sqlinjectionmatchsettypedef)
-  - [SqlInjectionMatchSetUpdateTypeDef](#sqlinjectionmatchsetupdatetypedef)
-  - [SqlInjectionMatchTupleTypeDef](#sqlinjectionmatchtupletypedef)
-  - [SubscribedRuleGroupSummaryTypeDef](#subscribedrulegroupsummarytypedef)
-  - [TagInfoForResourceTypeDef](#taginfoforresourcetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TimeWindowTypeDef](#timewindowtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateByteMatchSetRequestRequestTypeDef](#updatebytematchsetrequestrequesttypedef)
-  - [UpdateByteMatchSetResponseTypeDef](#updatebytematchsetresponsetypedef)
-  - [UpdateGeoMatchSetRequestRequestTypeDef](#updategeomatchsetrequestrequesttypedef)
-  - [UpdateGeoMatchSetResponseTypeDef](#updategeomatchsetresponsetypedef)
-  - [UpdateIPSetRequestRequestTypeDef](#updateipsetrequestrequesttypedef)
-  - [UpdateIPSetResponseTypeDef](#updateipsetresponsetypedef)
-  - [UpdateRateBasedRuleRequestRequestTypeDef](#updateratebasedrulerequestrequesttypedef)
-  - [UpdateRateBasedRuleResponseTypeDef](#updateratebasedruleresponsetypedef)
-  - [UpdateRegexMatchSetRequestRequestTypeDef](#updateregexmatchsetrequestrequesttypedef)
-  - [UpdateRegexMatchSetResponseTypeDef](#updateregexmatchsetresponsetypedef)
-  - [UpdateRegexPatternSetRequestRequestTypeDef](#updateregexpatternsetrequestrequesttypedef)
-  - [UpdateRegexPatternSetResponseTypeDef](#updateregexpatternsetresponsetypedef)
-  - [UpdateRuleGroupRequestRequestTypeDef](#updaterulegrouprequestrequesttypedef)
-  - [UpdateRuleGroupResponseTypeDef](#updaterulegroupresponsetypedef)
-  - [UpdateRuleRequestRequestTypeDef](#updaterulerequestrequesttypedef)
-  - [UpdateRuleResponseTypeDef](#updateruleresponsetypedef)
-  - [UpdateSizeConstraintSetRequestRequestTypeDef](#updatesizeconstraintsetrequestrequesttypedef)
-  - [UpdateSizeConstraintSetResponseTypeDef](#updatesizeconstraintsetresponsetypedef)
-  - [UpdateSqlInjectionMatchSetRequestRequestTypeDef](#updatesqlinjectionmatchsetrequestrequesttypedef)
-  - [UpdateSqlInjectionMatchSetResponseTypeDef](#updatesqlinjectionmatchsetresponsetypedef)
-  - [UpdateWebACLRequestRequestTypeDef](#updatewebaclrequestrequesttypedef)
-  - [UpdateWebACLResponseTypeDef](#updatewebaclresponsetypedef)
-  - [UpdateXssMatchSetRequestRequestTypeDef](#updatexssmatchsetrequestrequesttypedef)
-  - [UpdateXssMatchSetResponseTypeDef](#updatexssmatchsetresponsetypedef)
-  - [WafActionTypeDef](#wafactiontypedef)
-  - [WafOverrideActionTypeDef](#wafoverrideactiontypedef)
-  - [WebACLSummaryTypeDef](#webaclsummarytypedef)
-  - [WebACLTypeDef](#webacltypedef)
-  - [WebACLUpdateTypeDef](#webaclupdatetypedef)
-  - [XssMatchSetSummaryTypeDef](#xssmatchsetsummarytypedef)
-  - [XssMatchSetTypeDef](#xssmatchsettypedef)
-  - [XssMatchSetUpdateTypeDef](#xssmatchsetupdatetypedef)
-  - [XssMatchTupleTypeDef](#xssmatchtupletypedef)
-
-<a id="activatedruletypedef"></a>
+    Auto-generated documentation for [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
+    type annotations stubs module [mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
 
 ## ActivatedRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ActivatedRuleTypeDef
+
+def get_value() -> ActivatedRuleTypeDef:
+    return {
+        "Priority": ...,
+        "RuleId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActivatedRuleTypeDef(TypedDict):
+    Priority: int,
+    RuleId: str,
+    Action: NotRequired[WafActionTypeDef],  # (1)
+    OverrideAction: NotRequired[WafOverrideActionTypeDef],  # (2)
+    Type: NotRequired[WafRuleTypeType],  # (3)
+    ExcludedRules: NotRequired[List[ExcludedRuleTypeDef]],  # (4)
+```
 
-- `Priority`: `int`
-- `RuleId`: `str`
-
-Optional fields:
-
-- `Action`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
-- `OverrideAction`:
-  [WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef)
-- `Type`: [WafRuleTypeType](./literals.md#wafruletypetype)
-- `ExcludedRules`:
-  `List`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
-
-<a id="bytematchsetsummarytypedef"></a>
-
+1. See [:material-code-braces: WafActionTypeDef](./type_defs.md#wafactiontypedef) 
+2. See [:material-code-braces: WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef) 
+3. See [:material-code-brackets: WafRuleTypeType](./literals.md#wafruletypetype) 
+4. See [:material-code-braces: ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef) 
 ## ByteMatchSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ByteMatchSetSummaryTypeDef
+
+def get_value() -> ByteMatchSetSummaryTypeDef:
+    return {
+        "ByteMatchSetId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `ByteMatchSetId`: `str`
-- `Name`: `str`
-
-<a id="bytematchsettypedef"></a>
+```python title="Definition"
+class ByteMatchSetSummaryTypeDef(TypedDict):
+    ByteMatchSetId: str,
+    Name: str,
+```
 
 ## ByteMatchSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ByteMatchSetTypeDef
+
+def get_value() -> ByteMatchSetTypeDef:
+    return {
+        "ByteMatchSetId": ...,
+        "ByteMatchTuples": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ByteMatchSetTypeDef(TypedDict):
+    ByteMatchSetId: str,
+    ByteMatchTuples: List[ByteMatchTupleTypeDef],  # (1)
+    Name: NotRequired[str],
+```
 
-- `ByteMatchSetId`: `str`
-- `ByteMatchTuples`:
-  `List`\[[ByteMatchTupleTypeDef](./type_defs.md#bytematchtupletypedef)\]
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="bytematchsetupdatetypedef"></a>
-
+1. See [:material-code-braces: ByteMatchTupleTypeDef](./type_defs.md#bytematchtupletypedef) 
 ## ByteMatchSetUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ByteMatchSetUpdateTypeDef
+
+def get_value() -> ByteMatchSetUpdateTypeDef:
+    return {
+        "Action": ...,
+        "ByteMatchTuple": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ByteMatchSetUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    ByteMatchTuple: ByteMatchTupleTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `ByteMatchTuple`:
-  [ByteMatchTupleTypeDef](./type_defs.md#bytematchtupletypedef)
-
-<a id="bytematchtupletypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: ByteMatchTupleTypeDef](./type_defs.md#bytematchtupletypedef) 
 ## ByteMatchTupleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ByteMatchTupleTypeDef
+
+def get_value() -> ByteMatchTupleTypeDef:
+    return {
+        "FieldToMatch": ...,
+        "TargetString": ...,
+        "TextTransformation": ...,
+        "PositionalConstraint": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ByteMatchTupleTypeDef(TypedDict):
+    FieldToMatch: FieldToMatchTypeDef,  # (1)
+    TargetString: bytes,
+    TextTransformation: TextTransformationType,  # (2)
+    PositionalConstraint: PositionalConstraintType,  # (3)
+```
 
-- `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TargetString`: `bytes`
-- `TextTransformation`:
-  [TextTransformationType](./literals.md#texttransformationtype)
-- `PositionalConstraint`:
-  [PositionalConstraintType](./literals.md#positionalconstrainttype)
-
-<a id="createbytematchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
+2. See [:material-code-brackets: TextTransformationType](./literals.md#texttransformationtype) 
+3. See [:material-code-brackets: PositionalConstraintType](./literals.md#positionalconstrainttype) 
 ## CreateByteMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateByteMatchSetRequestRequestTypeDef
+
+def get_value() -> CreateByteMatchSetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ChangeToken`: `str`
-
-<a id="createbytematchsetresponsetypedef"></a>
+```python title="Definition"
+class CreateByteMatchSetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ChangeToken: str,
+```
 
 ## CreateByteMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateByteMatchSetResponseTypeDef
+
+def get_value() -> CreateByteMatchSetResponseTypeDef:
+    return {
+        "ByteMatchSet": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateByteMatchSetResponseTypeDef(TypedDict):
+    ByteMatchSet: ByteMatchSetTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ByteMatchSet`: [ByteMatchSetTypeDef](./type_defs.md#bytematchsettypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="creategeomatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ByteMatchSetTypeDef](./type_defs.md#bytematchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateGeoMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateGeoMatchSetRequestRequestTypeDef
+
+def get_value() -> CreateGeoMatchSetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ChangeToken`: `str`
-
-<a id="creategeomatchsetresponsetypedef"></a>
+```python title="Definition"
+class CreateGeoMatchSetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ChangeToken: str,
+```
 
 ## CreateGeoMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateGeoMatchSetResponseTypeDef
+
+def get_value() -> CreateGeoMatchSetResponseTypeDef:
+    return {
+        "GeoMatchSet": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGeoMatchSetResponseTypeDef(TypedDict):
+    GeoMatchSet: GeoMatchSetTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GeoMatchSet`: [GeoMatchSetTypeDef](./type_defs.md#geomatchsettypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createipsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GeoMatchSetTypeDef](./type_defs.md#geomatchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIPSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateIPSetRequestRequestTypeDef
+
+def get_value() -> CreateIPSetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ChangeToken`: `str`
-
-<a id="createipsetresponsetypedef"></a>
+```python title="Definition"
+class CreateIPSetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ChangeToken: str,
+```
 
 ## CreateIPSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateIPSetResponseTypeDef
+
+def get_value() -> CreateIPSetResponseTypeDef:
+    return {
+        "IPSet": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIPSetResponseTypeDef(TypedDict):
+    IPSet: IPSetTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IPSet`: [IPSetTypeDef](./type_defs.md#ipsettypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createratebasedrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IPSetTypeDef](./type_defs.md#ipsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRateBasedRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRateBasedRuleRequestRequestTypeDef
+
+def get_value() -> CreateRateBasedRuleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "MetricName": ...,
+        "RateKey": ...,
+        "RateLimit": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRateBasedRuleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    MetricName: str,
+    RateKey: RateKeyType,  # (1)
+    RateLimit: int,
+    ChangeToken: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-- `MetricName`: `str`
-- `RateKey`: `Literal['IP']` (see [RateKeyType](./literals.md#ratekeytype))
-- `RateLimit`: `int`
-- `ChangeToken`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createratebasedruleresponsetypedef"></a>
-
+1. See [:material-code-brackets: RateKeyType](./literals.md#ratekeytype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateRateBasedRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRateBasedRuleResponseTypeDef
+
+def get_value() -> CreateRateBasedRuleResponseTypeDef:
+    return {
+        "Rule": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRateBasedRuleResponseTypeDef(TypedDict):
+    Rule: RateBasedRuleTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Rule`: [RateBasedRuleTypeDef](./type_defs.md#ratebasedruletypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createregexmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RateBasedRuleTypeDef](./type_defs.md#ratebasedruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRegexMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRegexMatchSetRequestRequestTypeDef
+
+def get_value() -> CreateRegexMatchSetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ChangeToken`: `str`
-
-<a id="createregexmatchsetresponsetypedef"></a>
+```python title="Definition"
+class CreateRegexMatchSetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ChangeToken: str,
+```
 
 ## CreateRegexMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRegexMatchSetResponseTypeDef
+
+def get_value() -> CreateRegexMatchSetResponseTypeDef:
+    return {
+        "RegexMatchSet": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRegexMatchSetResponseTypeDef(TypedDict):
+    RegexMatchSet: RegexMatchSetTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RegexMatchSet`: [RegexMatchSetTypeDef](./type_defs.md#regexmatchsettypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createregexpatternsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RegexMatchSetTypeDef](./type_defs.md#regexmatchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRegexPatternSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRegexPatternSetRequestRequestTypeDef
+
+def get_value() -> CreateRegexPatternSetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ChangeToken`: `str`
-
-<a id="createregexpatternsetresponsetypedef"></a>
+```python title="Definition"
+class CreateRegexPatternSetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ChangeToken: str,
+```
 
 ## CreateRegexPatternSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRegexPatternSetResponseTypeDef
+
+def get_value() -> CreateRegexPatternSetResponseTypeDef:
+    return {
+        "RegexPatternSet": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRegexPatternSetResponseTypeDef(TypedDict):
+    RegexPatternSet: RegexPatternSetTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RegexPatternSet`:
-  [RegexPatternSetTypeDef](./type_defs.md#regexpatternsettypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrulegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RegexPatternSetTypeDef](./type_defs.md#regexpatternsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRuleGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRuleGroupRequestRequestTypeDef
+
+def get_value() -> CreateRuleGroupRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "MetricName": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRuleGroupRequestRequestTypeDef(TypedDict):
+    Name: str,
+    MetricName: str,
+    ChangeToken: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `MetricName`: `str`
-- `ChangeToken`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createrulegroupresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateRuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRuleGroupResponseTypeDef
+
+def get_value() -> CreateRuleGroupResponseTypeDef:
+    return {
+        "RuleGroup": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRuleGroupResponseTypeDef(TypedDict):
+    RuleGroup: RuleGroupTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRuleRequestRequestTypeDef
+
+def get_value() -> CreateRuleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "MetricName": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRuleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    MetricName: str,
+    ChangeToken: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `MetricName`: `str`
-- `ChangeToken`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createruleresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateRuleResponseTypeDef
+
+def get_value() -> CreateRuleResponseTypeDef:
+    return {
+        "Rule": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRuleResponseTypeDef(TypedDict):
+    Rule: RuleTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Rule`: [RuleTypeDef](./type_defs.md#ruletypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsizeconstraintsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSizeConstraintSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateSizeConstraintSetRequestRequestTypeDef
+
+def get_value() -> CreateSizeConstraintSetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ChangeToken`: `str`
-
-<a id="createsizeconstraintsetresponsetypedef"></a>
+```python title="Definition"
+class CreateSizeConstraintSetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ChangeToken: str,
+```
 
 ## CreateSizeConstraintSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateSizeConstraintSetResponseTypeDef
+
+def get_value() -> CreateSizeConstraintSetResponseTypeDef:
+    return {
+        "SizeConstraintSet": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSizeConstraintSetResponseTypeDef(TypedDict):
+    SizeConstraintSet: SizeConstraintSetTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SizeConstraintSet`:
-  [SizeConstraintSetTypeDef](./type_defs.md#sizeconstraintsettypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsqlinjectionmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SizeConstraintSetTypeDef](./type_defs.md#sizeconstraintsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSqlInjectionMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateSqlInjectionMatchSetRequestRequestTypeDef
+
+def get_value() -> CreateSqlInjectionMatchSetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ChangeToken`: `str`
-
-<a id="createsqlinjectionmatchsetresponsetypedef"></a>
+```python title="Definition"
+class CreateSqlInjectionMatchSetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ChangeToken: str,
+```
 
 ## CreateSqlInjectionMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateSqlInjectionMatchSetResponseTypeDef
+
+def get_value() -> CreateSqlInjectionMatchSetResponseTypeDef:
+    return {
+        "SqlInjectionMatchSet": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSqlInjectionMatchSetResponseTypeDef(TypedDict):
+    SqlInjectionMatchSet: SqlInjectionMatchSetTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SqlInjectionMatchSet`:
-  [SqlInjectionMatchSetTypeDef](./type_defs.md#sqlinjectionmatchsettypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createwebaclmigrationstackrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SqlInjectionMatchSetTypeDef](./type_defs.md#sqlinjectionmatchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWebACLMigrationStackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateWebACLMigrationStackRequestRequestTypeDef
+
+def get_value() -> CreateWebACLMigrationStackRequestRequestTypeDef:
+    return {
+        "WebACLId": ...,
+        "S3BucketName": ...,
+        "IgnoreUnsupportedType": ...,
+    }
 ```
 
-Required fields:
-
-- `WebACLId`: `str`
-- `S3BucketName`: `str`
-- `IgnoreUnsupportedType`: `bool`
-
-<a id="createwebaclmigrationstackresponsetypedef"></a>
+```python title="Definition"
+class CreateWebACLMigrationStackRequestRequestTypeDef(TypedDict):
+    WebACLId: str,
+    S3BucketName: str,
+    IgnoreUnsupportedType: bool,
+```
 
 ## CreateWebACLMigrationStackResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateWebACLMigrationStackResponseTypeDef
+
+def get_value() -> CreateWebACLMigrationStackResponseTypeDef:
+    return {
+        "S3ObjectUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWebACLMigrationStackResponseTypeDef(TypedDict):
+    S3ObjectUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `S3ObjectUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createwebaclrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWebACLRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateWebACLRequestRequestTypeDef
+
+def get_value() -> CreateWebACLRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "MetricName": ...,
+        "DefaultAction": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWebACLRequestRequestTypeDef(TypedDict):
+    Name: str,
+    MetricName: str,
+    DefaultAction: WafActionTypeDef,  # (1)
+    ChangeToken: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-- `MetricName`: `str`
-- `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
-- `ChangeToken`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createwebaclresponsetypedef"></a>
-
+1. See [:material-code-braces: WafActionTypeDef](./type_defs.md#wafactiontypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateWebACLResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateWebACLResponseTypeDef
+
+def get_value() -> CreateWebACLResponseTypeDef:
+    return {
+        "WebACL": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWebACLResponseTypeDef(TypedDict):
+    WebACL: WebACLTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WebACL`: [WebACLTypeDef](./type_defs.md#webacltypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createxssmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WebACLTypeDef](./type_defs.md#webacltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateXssMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateXssMatchSetRequestRequestTypeDef
+
+def get_value() -> CreateXssMatchSetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ChangeToken`: `str`
-
-<a id="createxssmatchsetresponsetypedef"></a>
+```python title="Definition"
+class CreateXssMatchSetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ChangeToken: str,
+```
 
 ## CreateXssMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import CreateXssMatchSetResponseTypeDef
+
+def get_value() -> CreateXssMatchSetResponseTypeDef:
+    return {
+        "XssMatchSet": ...,
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateXssMatchSetResponseTypeDef(TypedDict):
+    XssMatchSet: XssMatchSetTypeDef,  # (1)
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `XssMatchSet`: [XssMatchSetTypeDef](./type_defs.md#xssmatchsettypedef)
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebytematchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: XssMatchSetTypeDef](./type_defs.md#xssmatchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteByteMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteByteMatchSetRequestRequestTypeDef
+
+def get_value() -> DeleteByteMatchSetRequestRequestTypeDef:
+    return {
+        "ByteMatchSetId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `ByteMatchSetId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deletebytematchsetresponsetypedef"></a>
+```python title="Definition"
+class DeleteByteMatchSetRequestRequestTypeDef(TypedDict):
+    ByteMatchSetId: str,
+    ChangeToken: str,
+```
 
 ## DeleteByteMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteByteMatchSetResponseTypeDef
+
+def get_value() -> DeleteByteMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteByteMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletegeomatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGeoMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteGeoMatchSetRequestRequestTypeDef
+
+def get_value() -> DeleteGeoMatchSetRequestRequestTypeDef:
+    return {
+        "GeoMatchSetId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `GeoMatchSetId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deletegeomatchsetresponsetypedef"></a>
+```python title="Definition"
+class DeleteGeoMatchSetRequestRequestTypeDef(TypedDict):
+    GeoMatchSetId: str,
+    ChangeToken: str,
+```
 
 ## DeleteGeoMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteGeoMatchSetResponseTypeDef
+
+def get_value() -> DeleteGeoMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteGeoMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteipsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteIPSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteIPSetRequestRequestTypeDef
+
+def get_value() -> DeleteIPSetRequestRequestTypeDef:
+    return {
+        "IPSetId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `IPSetId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deleteipsetresponsetypedef"></a>
+```python title="Definition"
+class DeleteIPSetRequestRequestTypeDef(TypedDict):
+    IPSetId: str,
+    ChangeToken: str,
+```
 
 ## DeleteIPSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteIPSetResponseTypeDef
+
+def get_value() -> DeleteIPSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteIPSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteloggingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteLoggingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="deletepermissionpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## DeletePermissionPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeletePermissionPolicyRequestRequestTypeDef
+
+def get_value() -> DeletePermissionPolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="deleteratebasedrulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePermissionPolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## DeleteRateBasedRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRateBasedRuleRequestRequestTypeDef
+
+def get_value() -> DeleteRateBasedRuleRequestRequestTypeDef:
+    return {
+        "RuleId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deleteratebasedruleresponsetypedef"></a>
+```python title="Definition"
+class DeleteRateBasedRuleRequestRequestTypeDef(TypedDict):
+    RuleId: str,
+    ChangeToken: str,
+```
 
 ## DeleteRateBasedRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRateBasedRuleResponseTypeDef
+
+def get_value() -> DeleteRateBasedRuleResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRateBasedRuleResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteregexmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRegexMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRegexMatchSetRequestRequestTypeDef
+
+def get_value() -> DeleteRegexMatchSetRequestRequestTypeDef:
+    return {
+        "RegexMatchSetId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `RegexMatchSetId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deleteregexmatchsetresponsetypedef"></a>
+```python title="Definition"
+class DeleteRegexMatchSetRequestRequestTypeDef(TypedDict):
+    RegexMatchSetId: str,
+    ChangeToken: str,
+```
 
 ## DeleteRegexMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRegexMatchSetResponseTypeDef
+
+def get_value() -> DeleteRegexMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRegexMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteregexpatternsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRegexPatternSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRegexPatternSetRequestRequestTypeDef
+
+def get_value() -> DeleteRegexPatternSetRequestRequestTypeDef:
+    return {
+        "RegexPatternSetId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `RegexPatternSetId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deleteregexpatternsetresponsetypedef"></a>
+```python title="Definition"
+class DeleteRegexPatternSetRequestRequestTypeDef(TypedDict):
+    RegexPatternSetId: str,
+    ChangeToken: str,
+```
 
 ## DeleteRegexPatternSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRegexPatternSetResponseTypeDef
+
+def get_value() -> DeleteRegexPatternSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRegexPatternSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleterulegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRuleGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRuleGroupRequestRequestTypeDef
+
+def get_value() -> DeleteRuleGroupRequestRequestTypeDef:
+    return {
+        "RuleGroupId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleGroupId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deleterulegroupresponsetypedef"></a>
+```python title="Definition"
+class DeleteRuleGroupRequestRequestTypeDef(TypedDict):
+    RuleGroupId: str,
+    ChangeToken: str,
+```
 
 ## DeleteRuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRuleGroupResponseTypeDef
+
+def get_value() -> DeleteRuleGroupResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRuleGroupResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleterulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRuleRequestRequestTypeDef
+
+def get_value() -> DeleteRuleRequestRequestTypeDef:
+    return {
+        "RuleId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deleteruleresponsetypedef"></a>
+```python title="Definition"
+class DeleteRuleRequestRequestTypeDef(TypedDict):
+    RuleId: str,
+    ChangeToken: str,
+```
 
 ## DeleteRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteRuleResponseTypeDef
+
+def get_value() -> DeleteRuleResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRuleResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesizeconstraintsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSizeConstraintSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteSizeConstraintSetRequestRequestTypeDef
+
+def get_value() -> DeleteSizeConstraintSetRequestRequestTypeDef:
+    return {
+        "SizeConstraintSetId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `SizeConstraintSetId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deletesizeconstraintsetresponsetypedef"></a>
+```python title="Definition"
+class DeleteSizeConstraintSetRequestRequestTypeDef(TypedDict):
+    SizeConstraintSetId: str,
+    ChangeToken: str,
+```
 
 ## DeleteSizeConstraintSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteSizeConstraintSetResponseTypeDef
+
+def get_value() -> DeleteSizeConstraintSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSizeConstraintSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesqlinjectionmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSqlInjectionMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteSqlInjectionMatchSetRequestRequestTypeDef
+
+def get_value() -> DeleteSqlInjectionMatchSetRequestRequestTypeDef:
+    return {
+        "SqlInjectionMatchSetId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `SqlInjectionMatchSetId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deletesqlinjectionmatchsetresponsetypedef"></a>
+```python title="Definition"
+class DeleteSqlInjectionMatchSetRequestRequestTypeDef(TypedDict):
+    SqlInjectionMatchSetId: str,
+    ChangeToken: str,
+```
 
 ## DeleteSqlInjectionMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteSqlInjectionMatchSetResponseTypeDef
+
+def get_value() -> DeleteSqlInjectionMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSqlInjectionMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletewebaclrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteWebACLRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteWebACLRequestRequestTypeDef
+
+def get_value() -> DeleteWebACLRequestRequestTypeDef:
+    return {
+        "WebACLId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `WebACLId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deletewebaclresponsetypedef"></a>
+```python title="Definition"
+class DeleteWebACLRequestRequestTypeDef(TypedDict):
+    WebACLId: str,
+    ChangeToken: str,
+```
 
 ## DeleteWebACLResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteWebACLResponseTypeDef
+
+def get_value() -> DeleteWebACLResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteWebACLResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletexssmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteXssMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteXssMatchSetRequestRequestTypeDef
+
+def get_value() -> DeleteXssMatchSetRequestRequestTypeDef:
+    return {
+        "XssMatchSetId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `XssMatchSetId`: `str`
-- `ChangeToken`: `str`
-
-<a id="deletexssmatchsetresponsetypedef"></a>
+```python title="Definition"
+class DeleteXssMatchSetRequestRequestTypeDef(TypedDict):
+    XssMatchSetId: str,
+    ChangeToken: str,
+```
 
 ## DeleteXssMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import DeleteXssMatchSetResponseTypeDef
+
+def get_value() -> DeleteXssMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteXssMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="excludedruletypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExcludedRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ExcludedRuleTypeDef
+
+def get_value() -> ExcludedRuleTypeDef:
+    return {
+        "RuleId": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleId`: `str`
-
-<a id="fieldtomatchtypedef"></a>
+```python title="Definition"
+class ExcludedRuleTypeDef(TypedDict):
+    RuleId: str,
+```
 
 ## FieldToMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import FieldToMatchTypeDef
+
+def get_value() -> FieldToMatchTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldToMatchTypeDef(TypedDict):
+    Type: MatchFieldTypeType,  # (1)
+    Data: NotRequired[str],
+```
 
-- `Type`: [MatchFieldTypeType](./literals.md#matchfieldtypetype)
-
-Optional fields:
-
-- `Data`: `str`
-
-<a id="geomatchconstrainttypedef"></a>
-
+1. See [:material-code-brackets: MatchFieldTypeType](./literals.md#matchfieldtypetype) 
 ## GeoMatchConstraintTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GeoMatchConstraintTypeDef
+
+def get_value() -> GeoMatchConstraintTypeDef:
+    return {
+        "Type": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GeoMatchConstraintTypeDef(TypedDict):
+    Type: GeoMatchConstraintTypeType,  # (1)
+    Value: GeoMatchConstraintValueType,  # (2)
+```
 
-- `Type`: `Literal['Country']` (see
-  [GeoMatchConstraintTypeType](./literals.md#geomatchconstrainttypetype))
-- `Value`:
-  [GeoMatchConstraintValueType](./literals.md#geomatchconstraintvaluetype)
-
-<a id="geomatchsetsummarytypedef"></a>
-
+1. See [:material-code-brackets: GeoMatchConstraintTypeType](./literals.md#geomatchconstrainttypetype) 
+2. See [:material-code-brackets: GeoMatchConstraintValueType](./literals.md#geomatchconstraintvaluetype) 
 ## GeoMatchSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GeoMatchSetSummaryTypeDef
+
+def get_value() -> GeoMatchSetSummaryTypeDef:
+    return {
+        "GeoMatchSetId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `GeoMatchSetId`: `str`
-- `Name`: `str`
-
-<a id="geomatchsettypedef"></a>
+```python title="Definition"
+class GeoMatchSetSummaryTypeDef(TypedDict):
+    GeoMatchSetId: str,
+    Name: str,
+```
 
 ## GeoMatchSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GeoMatchSetTypeDef
+
+def get_value() -> GeoMatchSetTypeDef:
+    return {
+        "GeoMatchSetId": ...,
+        "GeoMatchConstraints": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GeoMatchSetTypeDef(TypedDict):
+    GeoMatchSetId: str,
+    GeoMatchConstraints: List[GeoMatchConstraintTypeDef],  # (1)
+    Name: NotRequired[str],
+```
 
-- `GeoMatchSetId`: `str`
-- `GeoMatchConstraints`:
-  `List`\[[GeoMatchConstraintTypeDef](./type_defs.md#geomatchconstrainttypedef)\]
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="geomatchsetupdatetypedef"></a>
-
+1. See [:material-code-braces: GeoMatchConstraintTypeDef](./type_defs.md#geomatchconstrainttypedef) 
 ## GeoMatchSetUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GeoMatchSetUpdateTypeDef
+
+def get_value() -> GeoMatchSetUpdateTypeDef:
+    return {
+        "Action": ...,
+        "GeoMatchConstraint": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GeoMatchSetUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    GeoMatchConstraint: GeoMatchConstraintTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `GeoMatchConstraint`:
-  [GeoMatchConstraintTypeDef](./type_defs.md#geomatchconstrainttypedef)
-
-<a id="getbytematchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: GeoMatchConstraintTypeDef](./type_defs.md#geomatchconstrainttypedef) 
 ## GetByteMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetByteMatchSetRequestRequestTypeDef
+
+def get_value() -> GetByteMatchSetRequestRequestTypeDef:
+    return {
+        "ByteMatchSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `ByteMatchSetId`: `str`
-
-<a id="getbytematchsetresponsetypedef"></a>
+```python title="Definition"
+class GetByteMatchSetRequestRequestTypeDef(TypedDict):
+    ByteMatchSetId: str,
+```
 
 ## GetByteMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetByteMatchSetResponseTypeDef
+
+def get_value() -> GetByteMatchSetResponseTypeDef:
+    return {
+        "ByteMatchSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetByteMatchSetResponseTypeDef(TypedDict):
+    ByteMatchSet: ByteMatchSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ByteMatchSet`: [ByteMatchSetTypeDef](./type_defs.md#bytematchsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getchangetokenresponsetypedef"></a>
-
+1. See [:material-code-braces: ByteMatchSetTypeDef](./type_defs.md#bytematchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetChangeTokenResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetChangeTokenResponseTypeDef
+
+def get_value() -> GetChangeTokenResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChangeTokenResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getchangetokenstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetChangeTokenStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetChangeTokenStatusRequestRequestTypeDef
+
+def get_value() -> GetChangeTokenStatusRequestRequestTypeDef:
+    return {
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
-
-- `ChangeToken`: `str`
-
-<a id="getchangetokenstatusresponsetypedef"></a>
+```python title="Definition"
+class GetChangeTokenStatusRequestRequestTypeDef(TypedDict):
+    ChangeToken: str,
+```
 
 ## GetChangeTokenStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetChangeTokenStatusResponseTypeDef
+
+def get_value() -> GetChangeTokenStatusResponseTypeDef:
+    return {
+        "ChangeTokenStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChangeTokenStatusResponseTypeDef(TypedDict):
+    ChangeTokenStatus: ChangeTokenStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeTokenStatus`:
-  [ChangeTokenStatusType](./literals.md#changetokenstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgeomatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChangeTokenStatusType](./literals.md#changetokenstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGeoMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetGeoMatchSetRequestRequestTypeDef
+
+def get_value() -> GetGeoMatchSetRequestRequestTypeDef:
+    return {
+        "GeoMatchSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `GeoMatchSetId`: `str`
-
-<a id="getgeomatchsetresponsetypedef"></a>
+```python title="Definition"
+class GetGeoMatchSetRequestRequestTypeDef(TypedDict):
+    GeoMatchSetId: str,
+```
 
 ## GetGeoMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetGeoMatchSetResponseTypeDef
+
+def get_value() -> GetGeoMatchSetResponseTypeDef:
+    return {
+        "GeoMatchSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGeoMatchSetResponseTypeDef(TypedDict):
+    GeoMatchSet: GeoMatchSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GeoMatchSet`: [GeoMatchSetTypeDef](./type_defs.md#geomatchsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getipsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GeoMatchSetTypeDef](./type_defs.md#geomatchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetIPSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetIPSetRequestRequestTypeDef
+
+def get_value() -> GetIPSetRequestRequestTypeDef:
+    return {
+        "IPSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `IPSetId`: `str`
-
-<a id="getipsetresponsetypedef"></a>
+```python title="Definition"
+class GetIPSetRequestRequestTypeDef(TypedDict):
+    IPSetId: str,
+```
 
 ## GetIPSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetIPSetResponseTypeDef
+
+def get_value() -> GetIPSetResponseTypeDef:
+    return {
+        "IPSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetIPSetResponseTypeDef(TypedDict):
+    IPSet: IPSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IPSet`: [IPSetTypeDef](./type_defs.md#ipsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getloggingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IPSetTypeDef](./type_defs.md#ipsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLoggingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> GetLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="getloggingconfigurationresponsetypedef"></a>
+```python title="Definition"
+class GetLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## GetLoggingConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetLoggingConfigurationResponseTypeDef
+
+def get_value() -> GetLoggingConfigurationResponseTypeDef:
+    return {
+        "LoggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLoggingConfigurationResponseTypeDef(TypedDict):
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpermissionpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPermissionPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetPermissionPolicyRequestRequestTypeDef
+
+def get_value() -> GetPermissionPolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="getpermissionpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetPermissionPolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## GetPermissionPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetPermissionPolicyResponseTypeDef
+
+def get_value() -> GetPermissionPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPermissionPolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetRateBasedRuleManagedKeysRequestGetRateBasedRuleManagedKeysPaginateTypeDef
 
-<a id="getratebasedrulemanagedkeysrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import GetRateBasedRuleManagedKeysRequestGetRateBasedRuleManagedKeysPaginateTypeDef
 
+def get_value() -> GetRateBasedRuleManagedKeysRequestGetRateBasedRuleManagedKeysPaginateTypeDef:
+    return {
+        "RuleId": ...,
+    }
+```
+
+```python title="Definition"
+class GetRateBasedRuleManagedKeysRequestGetRateBasedRuleManagedKeysPaginateTypeDef(TypedDict):
+    RuleId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetRateBasedRuleManagedKeysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRateBasedRuleManagedKeysRequestRequestTypeDef
+
+def get_value() -> GetRateBasedRuleManagedKeysRequestRequestTypeDef:
+    return {
+        "RuleId": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleId`: `str`
-
-Optional fields:
-
-- `NextMarker`: `str`
-
-<a id="getratebasedrulemanagedkeysresponsetypedef"></a>
+```python title="Definition"
+class GetRateBasedRuleManagedKeysRequestRequestTypeDef(TypedDict):
+    RuleId: str,
+    NextMarker: NotRequired[str],
+```
 
 ## GetRateBasedRuleManagedKeysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRateBasedRuleManagedKeysResponseTypeDef
+
+def get_value() -> GetRateBasedRuleManagedKeysResponseTypeDef:
+    return {
+        "ManagedKeys": ...,
+        "NextMarker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRateBasedRuleManagedKeysResponseTypeDef(TypedDict):
+    ManagedKeys: List[str],
+    NextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ManagedKeys`: `List`\[`str`\]
-- `NextMarker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getratebasedrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRateBasedRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRateBasedRuleRequestRequestTypeDef
+
+def get_value() -> GetRateBasedRuleRequestRequestTypeDef:
+    return {
+        "RuleId": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleId`: `str`
-
-<a id="getratebasedruleresponsetypedef"></a>
+```python title="Definition"
+class GetRateBasedRuleRequestRequestTypeDef(TypedDict):
+    RuleId: str,
+```
 
 ## GetRateBasedRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRateBasedRuleResponseTypeDef
+
+def get_value() -> GetRateBasedRuleResponseTypeDef:
+    return {
+        "Rule": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRateBasedRuleResponseTypeDef(TypedDict):
+    Rule: RateBasedRuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Rule`: [RateBasedRuleTypeDef](./type_defs.md#ratebasedruletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getregexmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RateBasedRuleTypeDef](./type_defs.md#ratebasedruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRegexMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRegexMatchSetRequestRequestTypeDef
+
+def get_value() -> GetRegexMatchSetRequestRequestTypeDef:
+    return {
+        "RegexMatchSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `RegexMatchSetId`: `str`
-
-<a id="getregexmatchsetresponsetypedef"></a>
+```python title="Definition"
+class GetRegexMatchSetRequestRequestTypeDef(TypedDict):
+    RegexMatchSetId: str,
+```
 
 ## GetRegexMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRegexMatchSetResponseTypeDef
+
+def get_value() -> GetRegexMatchSetResponseTypeDef:
+    return {
+        "RegexMatchSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRegexMatchSetResponseTypeDef(TypedDict):
+    RegexMatchSet: RegexMatchSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RegexMatchSet`: [RegexMatchSetTypeDef](./type_defs.md#regexmatchsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getregexpatternsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RegexMatchSetTypeDef](./type_defs.md#regexmatchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRegexPatternSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRegexPatternSetRequestRequestTypeDef
+
+def get_value() -> GetRegexPatternSetRequestRequestTypeDef:
+    return {
+        "RegexPatternSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `RegexPatternSetId`: `str`
-
-<a id="getregexpatternsetresponsetypedef"></a>
+```python title="Definition"
+class GetRegexPatternSetRequestRequestTypeDef(TypedDict):
+    RegexPatternSetId: str,
+```
 
 ## GetRegexPatternSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRegexPatternSetResponseTypeDef
+
+def get_value() -> GetRegexPatternSetResponseTypeDef:
+    return {
+        "RegexPatternSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRegexPatternSetResponseTypeDef(TypedDict):
+    RegexPatternSet: RegexPatternSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RegexPatternSet`:
-  [RegexPatternSetTypeDef](./type_defs.md#regexpatternsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrulegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RegexPatternSetTypeDef](./type_defs.md#regexpatternsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRuleGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRuleGroupRequestRequestTypeDef
+
+def get_value() -> GetRuleGroupRequestRequestTypeDef:
+    return {
+        "RuleGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleGroupId`: `str`
-
-<a id="getrulegroupresponsetypedef"></a>
+```python title="Definition"
+class GetRuleGroupRequestRequestTypeDef(TypedDict):
+    RuleGroupId: str,
+```
 
 ## GetRuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRuleGroupResponseTypeDef
+
+def get_value() -> GetRuleGroupResponseTypeDef:
+    return {
+        "RuleGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRuleGroupResponseTypeDef(TypedDict):
+    RuleGroup: RuleGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRuleRequestRequestTypeDef
+
+def get_value() -> GetRuleRequestRequestTypeDef:
+    return {
+        "RuleId": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleId`: `str`
-
-<a id="getruleresponsetypedef"></a>
+```python title="Definition"
+class GetRuleRequestRequestTypeDef(TypedDict):
+    RuleId: str,
+```
 
 ## GetRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetRuleResponseTypeDef
+
+def get_value() -> GetRuleResponseTypeDef:
+    return {
+        "Rule": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRuleResponseTypeDef(TypedDict):
+    Rule: RuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Rule`: [RuleTypeDef](./type_defs.md#ruletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsampledrequestsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSampledRequestsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetSampledRequestsRequestRequestTypeDef
+
+def get_value() -> GetSampledRequestsRequestRequestTypeDef:
+    return {
+        "WebAclId": ...,
+        "RuleId": ...,
+        "TimeWindow": ...,
+        "MaxItems": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSampledRequestsRequestRequestTypeDef(TypedDict):
+    WebAclId: str,
+    RuleId: str,
+    TimeWindow: TimeWindowTypeDef,  # (1)
+    MaxItems: int,
+```
 
-- `WebAclId`: `str`
-- `RuleId`: `str`
-- `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
-- `MaxItems`: `int`
-
-<a id="getsampledrequestsresponsetypedef"></a>
-
+1. See [:material-code-braces: TimeWindowTypeDef](./type_defs.md#timewindowtypedef) 
 ## GetSampledRequestsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetSampledRequestsResponseTypeDef
+
+def get_value() -> GetSampledRequestsResponseTypeDef:
+    return {
+        "SampledRequests": ...,
+        "PopulationSize": ...,
+        "TimeWindow": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSampledRequestsResponseTypeDef(TypedDict):
+    SampledRequests: List[SampledHTTPRequestTypeDef],  # (1)
+    PopulationSize: int,
+    TimeWindow: TimeWindowTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `SampledRequests`:
-  `List`\[[SampledHTTPRequestTypeDef](./type_defs.md#sampledhttprequesttypedef)\]
-- `PopulationSize`: `int`
-- `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsizeconstraintsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SampledHTTPRequestTypeDef](./type_defs.md#sampledhttprequesttypedef) 
+2. See [:material-code-braces: TimeWindowTypeDef](./type_defs.md#timewindowtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSizeConstraintSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetSizeConstraintSetRequestRequestTypeDef
+
+def get_value() -> GetSizeConstraintSetRequestRequestTypeDef:
+    return {
+        "SizeConstraintSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `SizeConstraintSetId`: `str`
-
-<a id="getsizeconstraintsetresponsetypedef"></a>
+```python title="Definition"
+class GetSizeConstraintSetRequestRequestTypeDef(TypedDict):
+    SizeConstraintSetId: str,
+```
 
 ## GetSizeConstraintSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetSizeConstraintSetResponseTypeDef
+
+def get_value() -> GetSizeConstraintSetResponseTypeDef:
+    return {
+        "SizeConstraintSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSizeConstraintSetResponseTypeDef(TypedDict):
+    SizeConstraintSet: SizeConstraintSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SizeConstraintSet`:
-  [SizeConstraintSetTypeDef](./type_defs.md#sizeconstraintsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsqlinjectionmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SizeConstraintSetTypeDef](./type_defs.md#sizeconstraintsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSqlInjectionMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetSqlInjectionMatchSetRequestRequestTypeDef
+
+def get_value() -> GetSqlInjectionMatchSetRequestRequestTypeDef:
+    return {
+        "SqlInjectionMatchSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `SqlInjectionMatchSetId`: `str`
-
-<a id="getsqlinjectionmatchsetresponsetypedef"></a>
+```python title="Definition"
+class GetSqlInjectionMatchSetRequestRequestTypeDef(TypedDict):
+    SqlInjectionMatchSetId: str,
+```
 
 ## GetSqlInjectionMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetSqlInjectionMatchSetResponseTypeDef
+
+def get_value() -> GetSqlInjectionMatchSetResponseTypeDef:
+    return {
+        "SqlInjectionMatchSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSqlInjectionMatchSetResponseTypeDef(TypedDict):
+    SqlInjectionMatchSet: SqlInjectionMatchSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SqlInjectionMatchSet`:
-  [SqlInjectionMatchSetTypeDef](./type_defs.md#sqlinjectionmatchsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwebaclrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SqlInjectionMatchSetTypeDef](./type_defs.md#sqlinjectionmatchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWebACLRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetWebACLRequestRequestTypeDef
+
+def get_value() -> GetWebACLRequestRequestTypeDef:
+    return {
+        "WebACLId": ...,
+    }
 ```
 
-Required fields:
-
-- `WebACLId`: `str`
-
-<a id="getwebaclresponsetypedef"></a>
+```python title="Definition"
+class GetWebACLRequestRequestTypeDef(TypedDict):
+    WebACLId: str,
+```
 
 ## GetWebACLResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetWebACLResponseTypeDef
+
+def get_value() -> GetWebACLResponseTypeDef:
+    return {
+        "WebACL": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWebACLResponseTypeDef(TypedDict):
+    WebACL: WebACLTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WebACL`: [WebACLTypeDef](./type_defs.md#webacltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getxssmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WebACLTypeDef](./type_defs.md#webacltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetXssMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetXssMatchSetRequestRequestTypeDef
+
+def get_value() -> GetXssMatchSetRequestRequestTypeDef:
+    return {
+        "XssMatchSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `XssMatchSetId`: `str`
-
-<a id="getxssmatchsetresponsetypedef"></a>
+```python title="Definition"
+class GetXssMatchSetRequestRequestTypeDef(TypedDict):
+    XssMatchSetId: str,
+```
 
 ## GetXssMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import GetXssMatchSetResponseTypeDef
+
+def get_value() -> GetXssMatchSetResponseTypeDef:
+    return {
+        "XssMatchSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetXssMatchSetResponseTypeDef(TypedDict):
+    XssMatchSet: XssMatchSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `XssMatchSet`: [XssMatchSetTypeDef](./type_defs.md#xssmatchsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="httpheadertypedef"></a>
-
+1. See [:material-code-braces: XssMatchSetTypeDef](./type_defs.md#xssmatchsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HTTPHeaderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import HTTPHeaderTypeDef
+
+def get_value() -> HTTPHeaderTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="httprequesttypedef"></a>
+```python title="Definition"
+class HTTPHeaderTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## HTTPRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import HTTPRequestTypeDef
+
+def get_value() -> HTTPRequestTypeDef:
+    return {
+        "ClientIP": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HTTPRequestTypeDef(TypedDict):
+    ClientIP: NotRequired[str],
+    Country: NotRequired[str],
+    URI: NotRequired[str],
+    Method: NotRequired[str],
+    HTTPVersion: NotRequired[str],
+    Headers: NotRequired[List[HTTPHeaderTypeDef]],  # (1)
+```
 
-- `ClientIP`: `str`
-- `Country`: `str`
-- `URI`: `str`
-- `Method`: `str`
-- `HTTPVersion`: `str`
-- `Headers`: `List`\[[HTTPHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
-
-<a id="ipsetdescriptortypedef"></a>
-
+1. See [:material-code-braces: HTTPHeaderTypeDef](./type_defs.md#httpheadertypedef) 
 ## IPSetDescriptorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import IPSetDescriptorTypeDef
+
+def get_value() -> IPSetDescriptorTypeDef:
+    return {
+        "Type": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IPSetDescriptorTypeDef(TypedDict):
+    Type: IPSetDescriptorTypeType,  # (1)
+    Value: str,
+```
 
-- `Type`: [IPSetDescriptorTypeType](./literals.md#ipsetdescriptortypetype)
-- `Value`: `str`
-
-<a id="ipsetsummarytypedef"></a>
-
+1. See [:material-code-brackets: IPSetDescriptorTypeType](./literals.md#ipsetdescriptortypetype) 
 ## IPSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import IPSetSummaryTypeDef
+
+def get_value() -> IPSetSummaryTypeDef:
+    return {
+        "IPSetId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `IPSetId`: `str`
-- `Name`: `str`
-
-<a id="ipsettypedef"></a>
+```python title="Definition"
+class IPSetSummaryTypeDef(TypedDict):
+    IPSetId: str,
+    Name: str,
+```
 
 ## IPSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import IPSetTypeDef
+
+def get_value() -> IPSetTypeDef:
+    return {
+        "IPSetId": ...,
+        "IPSetDescriptors": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IPSetTypeDef(TypedDict):
+    IPSetId: str,
+    IPSetDescriptors: List[IPSetDescriptorTypeDef],  # (1)
+    Name: NotRequired[str],
+```
 
-- `IPSetId`: `str`
-- `IPSetDescriptors`:
-  `List`\[[IPSetDescriptorTypeDef](./type_defs.md#ipsetdescriptortypedef)\]
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="ipsetupdatetypedef"></a>
-
+1. See [:material-code-braces: IPSetDescriptorTypeDef](./type_defs.md#ipsetdescriptortypedef) 
 ## IPSetUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import IPSetUpdateTypeDef
+
+def get_value() -> IPSetUpdateTypeDef:
+    return {
+        "Action": ...,
+        "IPSetDescriptor": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IPSetUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    IPSetDescriptor: IPSetDescriptorTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `IPSetDescriptor`:
-  [IPSetDescriptorTypeDef](./type_defs.md#ipsetdescriptortypedef)
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: IPSetDescriptorTypeDef](./type_defs.md#ipsetdescriptortypedef) 
+## ListActivatedRulesInRuleGroupRequestListActivatedRulesInRuleGroupPaginateTypeDef
 
-<a id="listactivatedrulesinrulegrouprequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListActivatedRulesInRuleGroupRequestListActivatedRulesInRuleGroupPaginateTypeDef
 
+def get_value() -> ListActivatedRulesInRuleGroupRequestListActivatedRulesInRuleGroupPaginateTypeDef:
+    return {
+        "RuleGroupId": ...,
+    }
+```
+
+```python title="Definition"
+class ListActivatedRulesInRuleGroupRequestListActivatedRulesInRuleGroupPaginateTypeDef(TypedDict):
+    RuleGroupId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListActivatedRulesInRuleGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListActivatedRulesInRuleGroupRequestRequestTypeDef
+
+def get_value() -> ListActivatedRulesInRuleGroupRequestRequestTypeDef:
+    return {
+        "RuleGroupId": ...,
+    }
 ```
 
-Optional fields:
-
-- `RuleGroupId`: `str`
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listactivatedrulesinrulegroupresponsetypedef"></a>
+```python title="Definition"
+class ListActivatedRulesInRuleGroupRequestRequestTypeDef(TypedDict):
+    RuleGroupId: NotRequired[str],
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListActivatedRulesInRuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListActivatedRulesInRuleGroupResponseTypeDef
+
+def get_value() -> ListActivatedRulesInRuleGroupResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "ActivatedRules": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListActivatedRulesInRuleGroupResponseTypeDef(TypedDict):
+    NextMarker: str,
+    ActivatedRules: List[ActivatedRuleTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `ActivatedRules`:
-  `List`\[[ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListByteMatchSetsRequestListByteMatchSetsPaginateTypeDef
 
-<a id="listbytematchsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListByteMatchSetsRequestListByteMatchSetsPaginateTypeDef
 
+def get_value() -> ListByteMatchSetsRequestListByteMatchSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListByteMatchSetsRequestListByteMatchSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListByteMatchSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListByteMatchSetsRequestRequestTypeDef
+
+def get_value() -> ListByteMatchSetsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listbytematchsetsresponsetypedef"></a>
+```python title="Definition"
+class ListByteMatchSetsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListByteMatchSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListByteMatchSetsResponseTypeDef
+
+def get_value() -> ListByteMatchSetsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "ByteMatchSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListByteMatchSetsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    ByteMatchSets: List[ByteMatchSetSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `ByteMatchSets`:
-  `List`\[[ByteMatchSetSummaryTypeDef](./type_defs.md#bytematchsetsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ByteMatchSetSummaryTypeDef](./type_defs.md#bytematchsetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGeoMatchSetsRequestListGeoMatchSetsPaginateTypeDef
 
-<a id="listgeomatchsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListGeoMatchSetsRequestListGeoMatchSetsPaginateTypeDef
 
+def get_value() -> ListGeoMatchSetsRequestListGeoMatchSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListGeoMatchSetsRequestListGeoMatchSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGeoMatchSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListGeoMatchSetsRequestRequestTypeDef
+
+def get_value() -> ListGeoMatchSetsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listgeomatchsetsresponsetypedef"></a>
+```python title="Definition"
+class ListGeoMatchSetsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListGeoMatchSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListGeoMatchSetsResponseTypeDef
+
+def get_value() -> ListGeoMatchSetsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "GeoMatchSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGeoMatchSetsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    GeoMatchSets: List[GeoMatchSetSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `GeoMatchSets`:
-  `List`\[[GeoMatchSetSummaryTypeDef](./type_defs.md#geomatchsetsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GeoMatchSetSummaryTypeDef](./type_defs.md#geomatchsetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIPSetsRequestListIPSetsPaginateTypeDef
 
-<a id="listipsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListIPSetsRequestListIPSetsPaginateTypeDef
 
+def get_value() -> ListIPSetsRequestListIPSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListIPSetsRequestListIPSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListIPSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListIPSetsRequestRequestTypeDef
+
+def get_value() -> ListIPSetsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listipsetsresponsetypedef"></a>
+```python title="Definition"
+class ListIPSetsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListIPSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListIPSetsResponseTypeDef
+
+def get_value() -> ListIPSetsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "IPSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIPSetsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    IPSets: List[IPSetSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `IPSets`: `List`\[[IPSetSummaryTypeDef](./type_defs.md#ipsetsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: IPSetSummaryTypeDef](./type_defs.md#ipsetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLoggingConfigurationsRequestListLoggingConfigurationsPaginateTypeDef
 
-<a id="listloggingconfigurationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListLoggingConfigurationsRequestListLoggingConfigurationsPaginateTypeDef
 
+def get_value() -> ListLoggingConfigurationsRequestListLoggingConfigurationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListLoggingConfigurationsRequestListLoggingConfigurationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLoggingConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListLoggingConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListLoggingConfigurationsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listloggingconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class ListLoggingConfigurationsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListLoggingConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListLoggingConfigurationsResponseTypeDef
+
+def get_value() -> ListLoggingConfigurationsResponseTypeDef:
+    return {
+        "LoggingConfigurations": ...,
+        "NextMarker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLoggingConfigurationsResponseTypeDef(TypedDict):
+    LoggingConfigurations: List[LoggingConfigurationTypeDef],  # (1)
+    NextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LoggingConfigurations`:
-  `List`\[[LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)\]
-- `NextMarker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRateBasedRulesRequestListRateBasedRulesPaginateTypeDef
 
-<a id="listratebasedrulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListRateBasedRulesRequestListRateBasedRulesPaginateTypeDef
 
+def get_value() -> ListRateBasedRulesRequestListRateBasedRulesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListRateBasedRulesRequestListRateBasedRulesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRateBasedRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRateBasedRulesRequestRequestTypeDef
+
+def get_value() -> ListRateBasedRulesRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listratebasedrulesresponsetypedef"></a>
+```python title="Definition"
+class ListRateBasedRulesRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListRateBasedRulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRateBasedRulesResponseTypeDef
+
+def get_value() -> ListRateBasedRulesResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "Rules": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRateBasedRulesResponseTypeDef(TypedDict):
+    NextMarker: str,
+    Rules: List[RuleSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `Rules`: `List`\[[RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRegexMatchSetsRequestListRegexMatchSetsPaginateTypeDef
 
-<a id="listregexmatchsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListRegexMatchSetsRequestListRegexMatchSetsPaginateTypeDef
 
+def get_value() -> ListRegexMatchSetsRequestListRegexMatchSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListRegexMatchSetsRequestListRegexMatchSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRegexMatchSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRegexMatchSetsRequestRequestTypeDef
+
+def get_value() -> ListRegexMatchSetsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listregexmatchsetsresponsetypedef"></a>
+```python title="Definition"
+class ListRegexMatchSetsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListRegexMatchSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRegexMatchSetsResponseTypeDef
+
+def get_value() -> ListRegexMatchSetsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "RegexMatchSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRegexMatchSetsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    RegexMatchSets: List[RegexMatchSetSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `RegexMatchSets`:
-  `List`\[[RegexMatchSetSummaryTypeDef](./type_defs.md#regexmatchsetsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RegexMatchSetSummaryTypeDef](./type_defs.md#regexmatchsetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRegexPatternSetsRequestListRegexPatternSetsPaginateTypeDef
 
-<a id="listregexpatternsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListRegexPatternSetsRequestListRegexPatternSetsPaginateTypeDef
 
+def get_value() -> ListRegexPatternSetsRequestListRegexPatternSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListRegexPatternSetsRequestListRegexPatternSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRegexPatternSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRegexPatternSetsRequestRequestTypeDef
+
+def get_value() -> ListRegexPatternSetsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listregexpatternsetsresponsetypedef"></a>
+```python title="Definition"
+class ListRegexPatternSetsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListRegexPatternSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRegexPatternSetsResponseTypeDef
+
+def get_value() -> ListRegexPatternSetsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "RegexPatternSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRegexPatternSetsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    RegexPatternSets: List[RegexPatternSetSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `RegexPatternSets`:
-  `List`\[[RegexPatternSetSummaryTypeDef](./type_defs.md#regexpatternsetsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RegexPatternSetSummaryTypeDef](./type_defs.md#regexpatternsetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRuleGroupsRequestListRuleGroupsPaginateTypeDef
 
-<a id="listrulegroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListRuleGroupsRequestListRuleGroupsPaginateTypeDef
 
+def get_value() -> ListRuleGroupsRequestListRuleGroupsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListRuleGroupsRequestListRuleGroupsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRuleGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRuleGroupsRequestRequestTypeDef
+
+def get_value() -> ListRuleGroupsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listrulegroupsresponsetypedef"></a>
+```python title="Definition"
+class ListRuleGroupsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListRuleGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRuleGroupsResponseTypeDef
+
+def get_value() -> ListRuleGroupsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "RuleGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRuleGroupsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    RuleGroups: List[RuleGroupSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `RuleGroups`:
-  `List`\[[RuleGroupSummaryTypeDef](./type_defs.md#rulegroupsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RuleGroupSummaryTypeDef](./type_defs.md#rulegroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRulesRequestListRulesPaginateTypeDef
 
-<a id="listrulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListRulesRequestListRulesPaginateTypeDef
 
+def get_value() -> ListRulesRequestListRulesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListRulesRequestListRulesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRulesRequestRequestTypeDef
+
+def get_value() -> ListRulesRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listrulesresponsetypedef"></a>
+```python title="Definition"
+class ListRulesRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListRulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListRulesResponseTypeDef
+
+def get_value() -> ListRulesResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "Rules": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRulesResponseTypeDef(TypedDict):
+    NextMarker: str,
+    Rules: List[RuleSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `Rules`: `List`\[[RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSizeConstraintSetsRequestListSizeConstraintSetsPaginateTypeDef
 
-<a id="listsizeconstraintsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListSizeConstraintSetsRequestListSizeConstraintSetsPaginateTypeDef
 
+def get_value() -> ListSizeConstraintSetsRequestListSizeConstraintSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSizeConstraintSetsRequestListSizeConstraintSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSizeConstraintSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListSizeConstraintSetsRequestRequestTypeDef
+
+def get_value() -> ListSizeConstraintSetsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listsizeconstraintsetsresponsetypedef"></a>
+```python title="Definition"
+class ListSizeConstraintSetsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListSizeConstraintSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListSizeConstraintSetsResponseTypeDef
+
+def get_value() -> ListSizeConstraintSetsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "SizeConstraintSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSizeConstraintSetsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    SizeConstraintSets: List[SizeConstraintSetSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `SizeConstraintSets`:
-  `List`\[[SizeConstraintSetSummaryTypeDef](./type_defs.md#sizeconstraintsetsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SizeConstraintSetSummaryTypeDef](./type_defs.md#sizeconstraintsetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSqlInjectionMatchSetsRequestListSqlInjectionMatchSetsPaginateTypeDef
 
-<a id="listsqlinjectionmatchsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListSqlInjectionMatchSetsRequestListSqlInjectionMatchSetsPaginateTypeDef
 
+def get_value() -> ListSqlInjectionMatchSetsRequestListSqlInjectionMatchSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSqlInjectionMatchSetsRequestListSqlInjectionMatchSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSqlInjectionMatchSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListSqlInjectionMatchSetsRequestRequestTypeDef
+
+def get_value() -> ListSqlInjectionMatchSetsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listsqlinjectionmatchsetsresponsetypedef"></a>
+```python title="Definition"
+class ListSqlInjectionMatchSetsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListSqlInjectionMatchSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListSqlInjectionMatchSetsResponseTypeDef
+
+def get_value() -> ListSqlInjectionMatchSetsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "SqlInjectionMatchSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSqlInjectionMatchSetsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    SqlInjectionMatchSets: List[SqlInjectionMatchSetSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `SqlInjectionMatchSets`:
-  `List`\[[SqlInjectionMatchSetSummaryTypeDef](./type_defs.md#sqlinjectionmatchsetsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SqlInjectionMatchSetSummaryTypeDef](./type_defs.md#sqlinjectionmatchsetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSubscribedRuleGroupsRequestListSubscribedRuleGroupsPaginateTypeDef
 
-<a id="listsubscribedrulegroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListSubscribedRuleGroupsRequestListSubscribedRuleGroupsPaginateTypeDef
 
+def get_value() -> ListSubscribedRuleGroupsRequestListSubscribedRuleGroupsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSubscribedRuleGroupsRequestListSubscribedRuleGroupsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSubscribedRuleGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListSubscribedRuleGroupsRequestRequestTypeDef
+
+def get_value() -> ListSubscribedRuleGroupsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listsubscribedrulegroupsresponsetypedef"></a>
+```python title="Definition"
+class ListSubscribedRuleGroupsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListSubscribedRuleGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListSubscribedRuleGroupsResponseTypeDef
+
+def get_value() -> ListSubscribedRuleGroupsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "RuleGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSubscribedRuleGroupsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    RuleGroups: List[SubscribedRuleGroupSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `RuleGroups`:
-  `List`\[[SubscribedRuleGroupSummaryTypeDef](./type_defs.md#subscribedrulegroupsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubscribedRuleGroupSummaryTypeDef](./type_defs.md#subscribedrulegroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "TagInfoForResource": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    NextMarker: str,
+    TagInfoForResource: TagInfoForResourceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `TagInfoForResource`:
-  [TagInfoForResourceTypeDef](./type_defs.md#taginfoforresourcetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagInfoForResourceTypeDef](./type_defs.md#taginfoforresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWebACLsRequestListWebACLsPaginateTypeDef
 
-<a id="listwebaclsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListWebACLsRequestListWebACLsPaginateTypeDef
 
+def get_value() -> ListWebACLsRequestListWebACLsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListWebACLsRequestListWebACLsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWebACLsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListWebACLsRequestRequestTypeDef
+
+def get_value() -> ListWebACLsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listwebaclsresponsetypedef"></a>
+```python title="Definition"
+class ListWebACLsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListWebACLsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListWebACLsResponseTypeDef
+
+def get_value() -> ListWebACLsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "WebACLs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWebACLsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    WebACLs: List[WebACLSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `WebACLs`:
-  `List`\[[WebACLSummaryTypeDef](./type_defs.md#webaclsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: WebACLSummaryTypeDef](./type_defs.md#webaclsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListXssMatchSetsRequestListXssMatchSetsPaginateTypeDef
 
-<a id="listxssmatchsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_waf.type_defs import ListXssMatchSetsRequestListXssMatchSetsPaginateTypeDef
 
+def get_value() -> ListXssMatchSetsRequestListXssMatchSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListXssMatchSetsRequestListXssMatchSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListXssMatchSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListXssMatchSetsRequestRequestTypeDef
+
+def get_value() -> ListXssMatchSetsRequestRequestTypeDef:
+    return {
+        "NextMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-<a id="listxssmatchsetsresponsetypedef"></a>
+```python title="Definition"
+class ListXssMatchSetsRequestRequestTypeDef(TypedDict):
+    NextMarker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListXssMatchSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ListXssMatchSetsResponseTypeDef
+
+def get_value() -> ListXssMatchSetsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "XssMatchSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListXssMatchSetsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    XssMatchSets: List[XssMatchSetSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `XssMatchSets`:
-  `List`\[[XssMatchSetSummaryTypeDef](./type_defs.md#xssmatchsetsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loggingconfigurationtypedef"></a>
-
+1. See [:material-code-braces: XssMatchSetSummaryTypeDef](./type_defs.md#xssmatchsetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import LoggingConfigurationTypeDef
+
+def get_value() -> LoggingConfigurationTypeDef:
+    return {
+        "ResourceArn": ...,
+        "LogDestinationConfigs": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LoggingConfigurationTypeDef(TypedDict):
+    ResourceArn: str,
+    LogDestinationConfigs: List[str],
+    RedactedFields: NotRequired[List[FieldToMatchTypeDef]],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `LogDestinationConfigs`: `List`\[`str`\]
-
-Optional fields:
-
-- `RedactedFields`:
-  `List`\[[FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="predicatetypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PredicateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import PredicateTypeDef
+
+def get_value() -> PredicateTypeDef:
+    return {
+        "Negated": ...,
+        "Type": ...,
+        "DataId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PredicateTypeDef(TypedDict):
+    Negated: bool,
+    Type: PredicateTypeType,  # (1)
+    DataId: str,
+```
 
-- `Negated`: `bool`
-- `Type`: [PredicateTypeType](./literals.md#predicatetypetype)
-- `DataId`: `str`
-
-<a id="putloggingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PredicateTypeType](./literals.md#predicatetypetype) 
 ## PutLoggingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import PutLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> PutLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "LoggingConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+```
 
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-
-<a id="putloggingconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
 ## PutLoggingConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import PutLoggingConfigurationResponseTypeDef
+
+def get_value() -> PutLoggingConfigurationResponseTypeDef:
+    return {
+        "LoggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutLoggingConfigurationResponseTypeDef(TypedDict):
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putpermissionpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutPermissionPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import PutPermissionPolicyRequestRequestTypeDef
+
+def get_value() -> PutPermissionPolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Policy": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Policy`: `str`
-
-<a id="ratebasedruletypedef"></a>
+```python title="Definition"
+class PutPermissionPolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Policy: str,
+```
 
 ## RateBasedRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RateBasedRuleTypeDef
+
+def get_value() -> RateBasedRuleTypeDef:
+    return {
+        "RuleId": ...,
+        "MatchPredicates": ...,
+        "RateKey": ...,
+        "RateLimit": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RateBasedRuleTypeDef(TypedDict):
+    RuleId: str,
+    MatchPredicates: List[PredicateTypeDef],  # (1)
+    RateKey: RateKeyType,  # (2)
+    RateLimit: int,
+    Name: NotRequired[str],
+    MetricName: NotRequired[str],
+```
 
-- `RuleId`: `str`
-- `MatchPredicates`:
-  `List`\[[PredicateTypeDef](./type_defs.md#predicatetypedef)\]
-- `RateKey`: `Literal['IP']` (see [RateKeyType](./literals.md#ratekeytype))
-- `RateLimit`: `int`
-
-Optional fields:
-
-- `Name`: `str`
-- `MetricName`: `str`
-
-<a id="regexmatchsetsummarytypedef"></a>
-
+1. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
+2. See [:material-code-brackets: RateKeyType](./literals.md#ratekeytype) 
 ## RegexMatchSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RegexMatchSetSummaryTypeDef
+
+def get_value() -> RegexMatchSetSummaryTypeDef:
+    return {
+        "RegexMatchSetId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `RegexMatchSetId`: `str`
-- `Name`: `str`
-
-<a id="regexmatchsettypedef"></a>
+```python title="Definition"
+class RegexMatchSetSummaryTypeDef(TypedDict):
+    RegexMatchSetId: str,
+    Name: str,
+```
 
 ## RegexMatchSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RegexMatchSetTypeDef
+
+def get_value() -> RegexMatchSetTypeDef:
+    return {
+        "RegexMatchSetId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RegexMatchSetTypeDef(TypedDict):
+    RegexMatchSetId: NotRequired[str],
+    Name: NotRequired[str],
+    RegexMatchTuples: NotRequired[List[RegexMatchTupleTypeDef]],  # (1)
+```
 
-- `RegexMatchSetId`: `str`
-- `Name`: `str`
-- `RegexMatchTuples`:
-  `List`\[[RegexMatchTupleTypeDef](./type_defs.md#regexmatchtupletypedef)\]
-
-<a id="regexmatchsetupdatetypedef"></a>
-
+1. See [:material-code-braces: RegexMatchTupleTypeDef](./type_defs.md#regexmatchtupletypedef) 
 ## RegexMatchSetUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RegexMatchSetUpdateTypeDef
+
+def get_value() -> RegexMatchSetUpdateTypeDef:
+    return {
+        "Action": ...,
+        "RegexMatchTuple": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegexMatchSetUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    RegexMatchTuple: RegexMatchTupleTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `RegexMatchTuple`:
-  [RegexMatchTupleTypeDef](./type_defs.md#regexmatchtupletypedef)
-
-<a id="regexmatchtupletypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: RegexMatchTupleTypeDef](./type_defs.md#regexmatchtupletypedef) 
 ## RegexMatchTupleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RegexMatchTupleTypeDef
+
+def get_value() -> RegexMatchTupleTypeDef:
+    return {
+        "FieldToMatch": ...,
+        "TextTransformation": ...,
+        "RegexPatternSetId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegexMatchTupleTypeDef(TypedDict):
+    FieldToMatch: FieldToMatchTypeDef,  # (1)
+    TextTransformation: TextTransformationType,  # (2)
+    RegexPatternSetId: str,
+```
 
-- `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TextTransformation`:
-  [TextTransformationType](./literals.md#texttransformationtype)
-- `RegexPatternSetId`: `str`
-
-<a id="regexpatternsetsummarytypedef"></a>
-
+1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
+2. See [:material-code-brackets: TextTransformationType](./literals.md#texttransformationtype) 
 ## RegexPatternSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RegexPatternSetSummaryTypeDef
+
+def get_value() -> RegexPatternSetSummaryTypeDef:
+    return {
+        "RegexPatternSetId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `RegexPatternSetId`: `str`
-- `Name`: `str`
-
-<a id="regexpatternsettypedef"></a>
+```python title="Definition"
+class RegexPatternSetSummaryTypeDef(TypedDict):
+    RegexPatternSetId: str,
+    Name: str,
+```
 
 ## RegexPatternSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RegexPatternSetTypeDef
+
+def get_value() -> RegexPatternSetTypeDef:
+    return {
+        "RegexPatternSetId": ...,
+        "RegexPatternStrings": ...,
+    }
 ```
 
-Required fields:
-
-- `RegexPatternSetId`: `str`
-- `RegexPatternStrings`: `List`\[`str`\]
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="regexpatternsetupdatetypedef"></a>
+```python title="Definition"
+class RegexPatternSetTypeDef(TypedDict):
+    RegexPatternSetId: str,
+    RegexPatternStrings: List[str],
+    Name: NotRequired[str],
+```
 
 ## RegexPatternSetUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RegexPatternSetUpdateTypeDef
+
+def get_value() -> RegexPatternSetUpdateTypeDef:
+    return {
+        "Action": ...,
+        "RegexPatternString": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegexPatternSetUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    RegexPatternString: str,
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `RegexPatternString`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="rulegroupsummarytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RuleGroupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RuleGroupSummaryTypeDef
+
+def get_value() -> RuleGroupSummaryTypeDef:
+    return {
+        "RuleGroupId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleGroupId`: `str`
-- `Name`: `str`
-
-<a id="rulegrouptypedef"></a>
+```python title="Definition"
+class RuleGroupSummaryTypeDef(TypedDict):
+    RuleGroupId: str,
+    Name: str,
+```
 
 ## RuleGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RuleGroupTypeDef
+
+def get_value() -> RuleGroupTypeDef:
+    return {
+        "RuleGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleGroupId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `MetricName`: `str`
-
-<a id="rulegroupupdatetypedef"></a>
+```python title="Definition"
+class RuleGroupTypeDef(TypedDict):
+    RuleGroupId: str,
+    Name: NotRequired[str],
+    MetricName: NotRequired[str],
+```
 
 ## RuleGroupUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RuleGroupUpdateTypeDef
+
+def get_value() -> RuleGroupUpdateTypeDef:
+    return {
+        "Action": ...,
+        "ActivatedRule": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RuleGroupUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    ActivatedRule: ActivatedRuleTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `ActivatedRule`: [ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)
-
-<a id="rulesummarytypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef) 
 ## RuleSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RuleSummaryTypeDef
+
+def get_value() -> RuleSummaryTypeDef:
+    return {
+        "RuleId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleId`: `str`
-- `Name`: `str`
-
-<a id="ruletypedef"></a>
+```python title="Definition"
+class RuleSummaryTypeDef(TypedDict):
+    RuleId: str,
+    Name: str,
+```
 
 ## RuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RuleTypeDef
+
+def get_value() -> RuleTypeDef:
+    return {
+        "RuleId": ...,
+        "Predicates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RuleTypeDef(TypedDict):
+    RuleId: str,
+    Predicates: List[PredicateTypeDef],  # (1)
+    Name: NotRequired[str],
+    MetricName: NotRequired[str],
+```
 
-- `RuleId`: `str`
-- `Predicates`: `List`\[[PredicateTypeDef](./type_defs.md#predicatetypedef)\]
-
-Optional fields:
-
-- `Name`: `str`
-- `MetricName`: `str`
-
-<a id="ruleupdatetypedef"></a>
-
+1. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
 ## RuleUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import RuleUpdateTypeDef
+
+def get_value() -> RuleUpdateTypeDef:
+    return {
+        "Action": ...,
+        "Predicate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RuleUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    Predicate: PredicateTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
-
-<a id="sampledhttprequesttypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
 ## SampledHTTPRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SampledHTTPRequestTypeDef
+
+def get_value() -> SampledHTTPRequestTypeDef:
+    return {
+        "Request": ...,
+        "Weight": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SampledHTTPRequestTypeDef(TypedDict):
+    Request: HTTPRequestTypeDef,  # (1)
+    Weight: int,
+    Timestamp: NotRequired[datetime],
+    Action: NotRequired[str],
+    RuleWithinRuleGroup: NotRequired[str],
+```
 
-- `Request`: [HTTPRequestTypeDef](./type_defs.md#httprequesttypedef)
-- `Weight`: `int`
-
-Optional fields:
-
-- `Timestamp`: `datetime`
-- `Action`: `str`
-- `RuleWithinRuleGroup`: `str`
-
-<a id="sizeconstraintsetsummarytypedef"></a>
-
+1. See [:material-code-braces: HTTPRequestTypeDef](./type_defs.md#httprequesttypedef) 
 ## SizeConstraintSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SizeConstraintSetSummaryTypeDef
+
+def get_value() -> SizeConstraintSetSummaryTypeDef:
+    return {
+        "SizeConstraintSetId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `SizeConstraintSetId`: `str`
-- `Name`: `str`
-
-<a id="sizeconstraintsettypedef"></a>
+```python title="Definition"
+class SizeConstraintSetSummaryTypeDef(TypedDict):
+    SizeConstraintSetId: str,
+    Name: str,
+```
 
 ## SizeConstraintSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SizeConstraintSetTypeDef
+
+def get_value() -> SizeConstraintSetTypeDef:
+    return {
+        "SizeConstraintSetId": ...,
+        "SizeConstraints": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SizeConstraintSetTypeDef(TypedDict):
+    SizeConstraintSetId: str,
+    SizeConstraints: List[SizeConstraintTypeDef],  # (1)
+    Name: NotRequired[str],
+```
 
-- `SizeConstraintSetId`: `str`
-- `SizeConstraints`:
-  `List`\[[SizeConstraintTypeDef](./type_defs.md#sizeconstrainttypedef)\]
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="sizeconstraintsetupdatetypedef"></a>
-
+1. See [:material-code-braces: SizeConstraintTypeDef](./type_defs.md#sizeconstrainttypedef) 
 ## SizeConstraintSetUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SizeConstraintSetUpdateTypeDef
+
+def get_value() -> SizeConstraintSetUpdateTypeDef:
+    return {
+        "Action": ...,
+        "SizeConstraint": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SizeConstraintSetUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    SizeConstraint: SizeConstraintTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `SizeConstraint`:
-  [SizeConstraintTypeDef](./type_defs.md#sizeconstrainttypedef)
-
-<a id="sizeconstrainttypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: SizeConstraintTypeDef](./type_defs.md#sizeconstrainttypedef) 
 ## SizeConstraintTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SizeConstraintTypeDef
+
+def get_value() -> SizeConstraintTypeDef:
+    return {
+        "FieldToMatch": ...,
+        "TextTransformation": ...,
+        "ComparisonOperator": ...,
+        "Size": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SizeConstraintTypeDef(TypedDict):
+    FieldToMatch: FieldToMatchTypeDef,  # (1)
+    TextTransformation: TextTransformationType,  # (2)
+    ComparisonOperator: ComparisonOperatorType,  # (3)
+    Size: int,
+```
 
-- `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TextTransformation`:
-  [TextTransformationType](./literals.md#texttransformationtype)
-- `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-- `Size`: `int`
-
-<a id="sqlinjectionmatchsetsummarytypedef"></a>
-
+1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
+2. See [:material-code-brackets: TextTransformationType](./literals.md#texttransformationtype) 
+3. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 ## SqlInjectionMatchSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SqlInjectionMatchSetSummaryTypeDef
+
+def get_value() -> SqlInjectionMatchSetSummaryTypeDef:
+    return {
+        "SqlInjectionMatchSetId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `SqlInjectionMatchSetId`: `str`
-- `Name`: `str`
-
-<a id="sqlinjectionmatchsettypedef"></a>
+```python title="Definition"
+class SqlInjectionMatchSetSummaryTypeDef(TypedDict):
+    SqlInjectionMatchSetId: str,
+    Name: str,
+```
 
 ## SqlInjectionMatchSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SqlInjectionMatchSetTypeDef
+
+def get_value() -> SqlInjectionMatchSetTypeDef:
+    return {
+        "SqlInjectionMatchSetId": ...,
+        "SqlInjectionMatchTuples": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SqlInjectionMatchSetTypeDef(TypedDict):
+    SqlInjectionMatchSetId: str,
+    SqlInjectionMatchTuples: List[SqlInjectionMatchTupleTypeDef],  # (1)
+    Name: NotRequired[str],
+```
 
-- `SqlInjectionMatchSetId`: `str`
-- `SqlInjectionMatchTuples`:
-  `List`\[[SqlInjectionMatchTupleTypeDef](./type_defs.md#sqlinjectionmatchtupletypedef)\]
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="sqlinjectionmatchsetupdatetypedef"></a>
-
+1. See [:material-code-braces: SqlInjectionMatchTupleTypeDef](./type_defs.md#sqlinjectionmatchtupletypedef) 
 ## SqlInjectionMatchSetUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SqlInjectionMatchSetUpdateTypeDef
+
+def get_value() -> SqlInjectionMatchSetUpdateTypeDef:
+    return {
+        "Action": ...,
+        "SqlInjectionMatchTuple": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SqlInjectionMatchSetUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    SqlInjectionMatchTuple: SqlInjectionMatchTupleTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `SqlInjectionMatchTuple`:
-  [SqlInjectionMatchTupleTypeDef](./type_defs.md#sqlinjectionmatchtupletypedef)
-
-<a id="sqlinjectionmatchtupletypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: SqlInjectionMatchTupleTypeDef](./type_defs.md#sqlinjectionmatchtupletypedef) 
 ## SqlInjectionMatchTupleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SqlInjectionMatchTupleTypeDef
+
+def get_value() -> SqlInjectionMatchTupleTypeDef:
+    return {
+        "FieldToMatch": ...,
+        "TextTransformation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SqlInjectionMatchTupleTypeDef(TypedDict):
+    FieldToMatch: FieldToMatchTypeDef,  # (1)
+    TextTransformation: TextTransformationType,  # (2)
+```
 
-- `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TextTransformation`:
-  [TextTransformationType](./literals.md#texttransformationtype)
-
-<a id="subscribedrulegroupsummarytypedef"></a>
-
+1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
+2. See [:material-code-brackets: TextTransformationType](./literals.md#texttransformationtype) 
 ## SubscribedRuleGroupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import SubscribedRuleGroupSummaryTypeDef
+
+def get_value() -> SubscribedRuleGroupSummaryTypeDef:
+    return {
+        "RuleGroupId": ...,
+        "Name": ...,
+        "MetricName": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleGroupId`: `str`
-- `Name`: `str`
-- `MetricName`: `str`
-
-<a id="taginfoforresourcetypedef"></a>
+```python title="Definition"
+class SubscribedRuleGroupSummaryTypeDef(TypedDict):
+    RuleGroupId: str,
+    Name: str,
+    MetricName: str,
+```
 
 ## TagInfoForResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import TagInfoForResourceTypeDef
+
+def get_value() -> TagInfoForResourceTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TagInfoForResourceTypeDef(TypedDict):
+    ResourceARN: NotRequired[str],
+    TagList: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="timewindowtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TimeWindowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import TimeWindowTypeDef
+
+def get_value() -> TimeWindowTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
-
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TimeWindowTypeDef(TypedDict):
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatebytematchsetrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateByteMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateByteMatchSetRequestRequestTypeDef
+
+def get_value() -> UpdateByteMatchSetRequestRequestTypeDef:
+    return {
+        "ByteMatchSetId": ...,
+        "ChangeToken": ...,
+        "Updates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateByteMatchSetRequestRequestTypeDef(TypedDict):
+    ByteMatchSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[ByteMatchSetUpdateTypeDef],  # (1)
+```
 
-- `ByteMatchSetId`: `str`
-- `ChangeToken`: `str`
-- `Updates`:
-  `Sequence`\[[ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef)\]
-
-<a id="updatebytematchsetresponsetypedef"></a>
-
+1. See [:material-code-braces: ByteMatchSetUpdateTypeDef](./type_defs.md#bytematchsetupdatetypedef) 
 ## UpdateByteMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateByteMatchSetResponseTypeDef
+
+def get_value() -> UpdateByteMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateByteMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updategeomatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGeoMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateGeoMatchSetRequestRequestTypeDef
+
+def get_value() -> UpdateGeoMatchSetRequestRequestTypeDef:
+    return {
+        "GeoMatchSetId": ...,
+        "ChangeToken": ...,
+        "Updates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGeoMatchSetRequestRequestTypeDef(TypedDict):
+    GeoMatchSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[GeoMatchSetUpdateTypeDef],  # (1)
+```
 
-- `GeoMatchSetId`: `str`
-- `ChangeToken`: `str`
-- `Updates`:
-  `Sequence`\[[GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef)\]
-
-<a id="updategeomatchsetresponsetypedef"></a>
-
+1. See [:material-code-braces: GeoMatchSetUpdateTypeDef](./type_defs.md#geomatchsetupdatetypedef) 
 ## UpdateGeoMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateGeoMatchSetResponseTypeDef
+
+def get_value() -> UpdateGeoMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGeoMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateipsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateIPSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateIPSetRequestRequestTypeDef
+
+def get_value() -> UpdateIPSetRequestRequestTypeDef:
+    return {
+        "IPSetId": ...,
+        "ChangeToken": ...,
+        "Updates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateIPSetRequestRequestTypeDef(TypedDict):
+    IPSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[IPSetUpdateTypeDef],  # (1)
+```
 
-- `IPSetId`: `str`
-- `ChangeToken`: `str`
-- `Updates`:
-  `Sequence`\[[IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef)\]
-
-<a id="updateipsetresponsetypedef"></a>
-
+1. See [:material-code-braces: IPSetUpdateTypeDef](./type_defs.md#ipsetupdatetypedef) 
 ## UpdateIPSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateIPSetResponseTypeDef
+
+def get_value() -> UpdateIPSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateIPSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateratebasedrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRateBasedRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRateBasedRuleRequestRequestTypeDef
+
+def get_value() -> UpdateRateBasedRuleRequestRequestTypeDef:
+    return {
+        "RuleId": ...,
+        "ChangeToken": ...,
+        "Updates": ...,
+        "RateLimit": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRateBasedRuleRequestRequestTypeDef(TypedDict):
+    RuleId: str,
+    ChangeToken: str,
+    Updates: Sequence[RuleUpdateTypeDef],  # (1)
+    RateLimit: int,
+```
 
-- `RuleId`: `str`
-- `ChangeToken`: `str`
-- `Updates`:
-  `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
-- `RateLimit`: `int`
-
-<a id="updateratebasedruleresponsetypedef"></a>
-
+1. See [:material-code-braces: RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef) 
 ## UpdateRateBasedRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRateBasedRuleResponseTypeDef
+
+def get_value() -> UpdateRateBasedRuleResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRateBasedRuleResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateregexmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRegexMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRegexMatchSetRequestRequestTypeDef
+
+def get_value() -> UpdateRegexMatchSetRequestRequestTypeDef:
+    return {
+        "RegexMatchSetId": ...,
+        "Updates": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRegexMatchSetRequestRequestTypeDef(TypedDict):
+    RegexMatchSetId: str,
+    Updates: Sequence[RegexMatchSetUpdateTypeDef],  # (1)
+    ChangeToken: str,
+```
 
-- `RegexMatchSetId`: `str`
-- `Updates`:
-  `Sequence`\[[RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef)\]
-- `ChangeToken`: `str`
-
-<a id="updateregexmatchsetresponsetypedef"></a>
-
+1. See [:material-code-braces: RegexMatchSetUpdateTypeDef](./type_defs.md#regexmatchsetupdatetypedef) 
 ## UpdateRegexMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRegexMatchSetResponseTypeDef
+
+def get_value() -> UpdateRegexMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRegexMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateregexpatternsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRegexPatternSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRegexPatternSetRequestRequestTypeDef
+
+def get_value() -> UpdateRegexPatternSetRequestRequestTypeDef:
+    return {
+        "RegexPatternSetId": ...,
+        "Updates": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRegexPatternSetRequestRequestTypeDef(TypedDict):
+    RegexPatternSetId: str,
+    Updates: Sequence[RegexPatternSetUpdateTypeDef],  # (1)
+    ChangeToken: str,
+```
 
-- `RegexPatternSetId`: `str`
-- `Updates`:
-  `Sequence`\[[RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef)\]
-- `ChangeToken`: `str`
-
-<a id="updateregexpatternsetresponsetypedef"></a>
-
+1. See [:material-code-braces: RegexPatternSetUpdateTypeDef](./type_defs.md#regexpatternsetupdatetypedef) 
 ## UpdateRegexPatternSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRegexPatternSetResponseTypeDef
+
+def get_value() -> UpdateRegexPatternSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRegexPatternSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updaterulegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRuleGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRuleGroupRequestRequestTypeDef
+
+def get_value() -> UpdateRuleGroupRequestRequestTypeDef:
+    return {
+        "RuleGroupId": ...,
+        "Updates": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRuleGroupRequestRequestTypeDef(TypedDict):
+    RuleGroupId: str,
+    Updates: Sequence[RuleGroupUpdateTypeDef],  # (1)
+    ChangeToken: str,
+```
 
-- `RuleGroupId`: `str`
-- `Updates`:
-  `Sequence`\[[RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef)\]
-- `ChangeToken`: `str`
-
-<a id="updaterulegroupresponsetypedef"></a>
-
+1. See [:material-code-braces: RuleGroupUpdateTypeDef](./type_defs.md#rulegroupupdatetypedef) 
 ## UpdateRuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRuleGroupResponseTypeDef
+
+def get_value() -> UpdateRuleGroupResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRuleGroupResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updaterulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRuleRequestRequestTypeDef
+
+def get_value() -> UpdateRuleRequestRequestTypeDef:
+    return {
+        "RuleId": ...,
+        "ChangeToken": ...,
+        "Updates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRuleRequestRequestTypeDef(TypedDict):
+    RuleId: str,
+    ChangeToken: str,
+    Updates: Sequence[RuleUpdateTypeDef],  # (1)
+```
 
-- `RuleId`: `str`
-- `ChangeToken`: `str`
-- `Updates`:
-  `Sequence`\[[RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef)\]
-
-<a id="updateruleresponsetypedef"></a>
-
+1. See [:material-code-braces: RuleUpdateTypeDef](./type_defs.md#ruleupdatetypedef) 
 ## UpdateRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateRuleResponseTypeDef
+
+def get_value() -> UpdateRuleResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRuleResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesizeconstraintsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSizeConstraintSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateSizeConstraintSetRequestRequestTypeDef
+
+def get_value() -> UpdateSizeConstraintSetRequestRequestTypeDef:
+    return {
+        "SizeConstraintSetId": ...,
+        "ChangeToken": ...,
+        "Updates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSizeConstraintSetRequestRequestTypeDef(TypedDict):
+    SizeConstraintSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[SizeConstraintSetUpdateTypeDef],  # (1)
+```
 
-- `SizeConstraintSetId`: `str`
-- `ChangeToken`: `str`
-- `Updates`:
-  `Sequence`\[[SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef)\]
-
-<a id="updatesizeconstraintsetresponsetypedef"></a>
-
+1. See [:material-code-braces: SizeConstraintSetUpdateTypeDef](./type_defs.md#sizeconstraintsetupdatetypedef) 
 ## UpdateSizeConstraintSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateSizeConstraintSetResponseTypeDef
+
+def get_value() -> UpdateSizeConstraintSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSizeConstraintSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesqlinjectionmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSqlInjectionMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateSqlInjectionMatchSetRequestRequestTypeDef
+
+def get_value() -> UpdateSqlInjectionMatchSetRequestRequestTypeDef:
+    return {
+        "SqlInjectionMatchSetId": ...,
+        "ChangeToken": ...,
+        "Updates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSqlInjectionMatchSetRequestRequestTypeDef(TypedDict):
+    SqlInjectionMatchSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[SqlInjectionMatchSetUpdateTypeDef],  # (1)
+```
 
-- `SqlInjectionMatchSetId`: `str`
-- `ChangeToken`: `str`
-- `Updates`:
-  `Sequence`\[[SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef)\]
-
-<a id="updatesqlinjectionmatchsetresponsetypedef"></a>
-
+1. See [:material-code-braces: SqlInjectionMatchSetUpdateTypeDef](./type_defs.md#sqlinjectionmatchsetupdatetypedef) 
 ## UpdateSqlInjectionMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateSqlInjectionMatchSetResponseTypeDef
+
+def get_value() -> UpdateSqlInjectionMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSqlInjectionMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatewebaclrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateWebACLRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateWebACLRequestRequestTypeDef
+
+def get_value() -> UpdateWebACLRequestRequestTypeDef:
+    return {
+        "WebACLId": ...,
+        "ChangeToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWebACLRequestRequestTypeDef(TypedDict):
+    WebACLId: str,
+    ChangeToken: str,
+    Updates: NotRequired[Sequence[WebACLUpdateTypeDef]],  # (1)
+    DefaultAction: NotRequired[WafActionTypeDef],  # (2)
+```
 
-- `WebACLId`: `str`
-- `ChangeToken`: `str`
-
-Optional fields:
-
-- `Updates`:
-  `Sequence`\[[WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef)\]
-- `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
-
-<a id="updatewebaclresponsetypedef"></a>
-
+1. See [:material-code-braces: WebACLUpdateTypeDef](./type_defs.md#webaclupdatetypedef) 
+2. See [:material-code-braces: WafActionTypeDef](./type_defs.md#wafactiontypedef) 
 ## UpdateWebACLResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateWebACLResponseTypeDef
+
+def get_value() -> UpdateWebACLResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWebACLResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatexssmatchsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateXssMatchSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateXssMatchSetRequestRequestTypeDef
+
+def get_value() -> UpdateXssMatchSetRequestRequestTypeDef:
+    return {
+        "XssMatchSetId": ...,
+        "ChangeToken": ...,
+        "Updates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateXssMatchSetRequestRequestTypeDef(TypedDict):
+    XssMatchSetId: str,
+    ChangeToken: str,
+    Updates: Sequence[XssMatchSetUpdateTypeDef],  # (1)
+```
 
-- `XssMatchSetId`: `str`
-- `ChangeToken`: `str`
-- `Updates`:
-  `Sequence`\[[XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef)\]
-
-<a id="updatexssmatchsetresponsetypedef"></a>
-
+1. See [:material-code-braces: XssMatchSetUpdateTypeDef](./type_defs.md#xssmatchsetupdatetypedef) 
 ## UpdateXssMatchSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import UpdateXssMatchSetResponseTypeDef
+
+def get_value() -> UpdateXssMatchSetResponseTypeDef:
+    return {
+        "ChangeToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateXssMatchSetResponseTypeDef(TypedDict):
+    ChangeToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="wafactiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WafActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import WafActionTypeDef
+
+def get_value() -> WafActionTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WafActionTypeDef(TypedDict):
+    Type: WafActionTypeType,  # (1)
+```
 
-- `Type`: [WafActionTypeType](./literals.md#wafactiontypetype)
-
-<a id="wafoverrideactiontypedef"></a>
-
+1. See [:material-code-brackets: WafActionTypeType](./literals.md#wafactiontypetype) 
 ## WafOverrideActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import WafOverrideActionTypeDef
+
+def get_value() -> WafOverrideActionTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WafOverrideActionTypeDef(TypedDict):
+    Type: WafOverrideActionTypeType,  # (1)
+```
 
-- `Type`: [WafOverrideActionTypeType](./literals.md#wafoverrideactiontypetype)
-
-<a id="webaclsummarytypedef"></a>
-
+1. See [:material-code-brackets: WafOverrideActionTypeType](./literals.md#wafoverrideactiontypetype) 
 ## WebACLSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import WebACLSummaryTypeDef
+
+def get_value() -> WebACLSummaryTypeDef:
+    return {
+        "WebACLId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `WebACLId`: `str`
-- `Name`: `str`
-
-<a id="webacltypedef"></a>
+```python title="Definition"
+class WebACLSummaryTypeDef(TypedDict):
+    WebACLId: str,
+    Name: str,
+```
 
 ## WebACLTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import WebACLTypeDef
+
+def get_value() -> WebACLTypeDef:
+    return {
+        "WebACLId": ...,
+        "DefaultAction": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WebACLTypeDef(TypedDict):
+    WebACLId: str,
+    DefaultAction: WafActionTypeDef,  # (1)
+    Rules: List[ActivatedRuleTypeDef],  # (2)
+    Name: NotRequired[str],
+    MetricName: NotRequired[str],
+    WebACLArn: NotRequired[str],
+```
 
-- `WebACLId`: `str`
-- `DefaultAction`: [WafActionTypeDef](./type_defs.md#wafactiontypedef)
-- `Rules`:
-  `List`\[[ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)\]
-
-Optional fields:
-
-- `Name`: `str`
-- `MetricName`: `str`
-- `WebACLArn`: `str`
-
-<a id="webaclupdatetypedef"></a>
-
+1. See [:material-code-braces: WafActionTypeDef](./type_defs.md#wafactiontypedef) 
+2. See [:material-code-braces: ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef) 
 ## WebACLUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import WebACLUpdateTypeDef
+
+def get_value() -> WebACLUpdateTypeDef:
+    return {
+        "Action": ...,
+        "ActivatedRule": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WebACLUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    ActivatedRule: ActivatedRuleTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `ActivatedRule`: [ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef)
-
-<a id="xssmatchsetsummarytypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: ActivatedRuleTypeDef](./type_defs.md#activatedruletypedef) 
 ## XssMatchSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import XssMatchSetSummaryTypeDef
+
+def get_value() -> XssMatchSetSummaryTypeDef:
+    return {
+        "XssMatchSetId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `XssMatchSetId`: `str`
-- `Name`: `str`
-
-<a id="xssmatchsettypedef"></a>
+```python title="Definition"
+class XssMatchSetSummaryTypeDef(TypedDict):
+    XssMatchSetId: str,
+    Name: str,
+```
 
 ## XssMatchSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import XssMatchSetTypeDef
+
+def get_value() -> XssMatchSetTypeDef:
+    return {
+        "XssMatchSetId": ...,
+        "XssMatchTuples": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class XssMatchSetTypeDef(TypedDict):
+    XssMatchSetId: str,
+    XssMatchTuples: List[XssMatchTupleTypeDef],  # (1)
+    Name: NotRequired[str],
+```
 
-- `XssMatchSetId`: `str`
-- `XssMatchTuples`:
-  `List`\[[XssMatchTupleTypeDef](./type_defs.md#xssmatchtupletypedef)\]
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="xssmatchsetupdatetypedef"></a>
-
+1. See [:material-code-braces: XssMatchTupleTypeDef](./type_defs.md#xssmatchtupletypedef) 
 ## XssMatchSetUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import XssMatchSetUpdateTypeDef
+
+def get_value() -> XssMatchSetUpdateTypeDef:
+    return {
+        "Action": ...,
+        "XssMatchTuple": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class XssMatchSetUpdateTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    XssMatchTuple: XssMatchTupleTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `XssMatchTuple`: [XssMatchTupleTypeDef](./type_defs.md#xssmatchtupletypedef)
-
-<a id="xssmatchtupletypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: XssMatchTupleTypeDef](./type_defs.md#xssmatchtupletypedef) 
 ## XssMatchTupleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_waf.type_defs import XssMatchTupleTypeDef
+
+def get_value() -> XssMatchTupleTypeDef:
+    return {
+        "FieldToMatch": ...,
+        "TextTransformation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class XssMatchTupleTypeDef(TypedDict):
+    FieldToMatch: FieldToMatchTypeDef,  # (1)
+    TextTransformation: TextTransformationType,  # (2)
+```
 
-- `FieldToMatch`: [FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef)
-- `TextTransformation`:
-  [TextTransformationType](./literals.md#texttransformationtype)
+1. See [:material-code-braces: FieldToMatchTypeDef](./type_defs.md#fieldtomatchtypedef) 
+2. See [:material-code-brackets: TextTransformationType](./literals.md#texttransformationtype) 

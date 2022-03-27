@@ -1,2392 +1,3020 @@
-<a id="typed-dictionaries-for-boto3-directconnect-module"></a>
-
-# Typed dictionaries for boto3 DirectConnect module
+# Typed dictionaries
 
 > [Index](../README.md) > [DirectConnect](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
-type annotations stubs module
-[mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
+!!! note ""
 
-- [Typed dictionaries for boto3 DirectConnect module](#typed-dictionaries-for-boto3-directconnect-module)
-  - [AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef](#acceptdirectconnectgatewayassociationproposalrequestrequesttypedef)
-  - [AcceptDirectConnectGatewayAssociationProposalResultTypeDef](#acceptdirectconnectgatewayassociationproposalresulttypedef)
-  - [AllocateConnectionOnInterconnectRequestRequestTypeDef](#allocateconnectiononinterconnectrequestrequesttypedef)
-  - [AllocateHostedConnectionRequestRequestTypeDef](#allocatehostedconnectionrequestrequesttypedef)
-  - [AllocatePrivateVirtualInterfaceRequestRequestTypeDef](#allocateprivatevirtualinterfacerequestrequesttypedef)
-  - [AllocatePublicVirtualInterfaceRequestRequestTypeDef](#allocatepublicvirtualinterfacerequestrequesttypedef)
-  - [AllocateTransitVirtualInterfaceRequestRequestTypeDef](#allocatetransitvirtualinterfacerequestrequesttypedef)
-  - [AllocateTransitVirtualInterfaceResultTypeDef](#allocatetransitvirtualinterfaceresulttypedef)
-  - [AssociateConnectionWithLagRequestRequestTypeDef](#associateconnectionwithlagrequestrequesttypedef)
-  - [AssociateHostedConnectionRequestRequestTypeDef](#associatehostedconnectionrequestrequesttypedef)
-  - [AssociateMacSecKeyRequestRequestTypeDef](#associatemacseckeyrequestrequesttypedef)
-  - [AssociateMacSecKeyResponseTypeDef](#associatemacseckeyresponsetypedef)
-  - [AssociateVirtualInterfaceRequestRequestTypeDef](#associatevirtualinterfacerequestrequesttypedef)
-  - [AssociatedGatewayTypeDef](#associatedgatewaytypedef)
-  - [BGPPeerTypeDef](#bgppeertypedef)
-  - [ConfirmConnectionRequestRequestTypeDef](#confirmconnectionrequestrequesttypedef)
-  - [ConfirmConnectionResponseTypeDef](#confirmconnectionresponsetypedef)
-  - [ConfirmCustomerAgreementRequestRequestTypeDef](#confirmcustomeragreementrequestrequesttypedef)
-  - [ConfirmCustomerAgreementResponseTypeDef](#confirmcustomeragreementresponsetypedef)
-  - [ConfirmPrivateVirtualInterfaceRequestRequestTypeDef](#confirmprivatevirtualinterfacerequestrequesttypedef)
-  - [ConfirmPrivateVirtualInterfaceResponseTypeDef](#confirmprivatevirtualinterfaceresponsetypedef)
-  - [ConfirmPublicVirtualInterfaceRequestRequestTypeDef](#confirmpublicvirtualinterfacerequestrequesttypedef)
-  - [ConfirmPublicVirtualInterfaceResponseTypeDef](#confirmpublicvirtualinterfaceresponsetypedef)
-  - [ConfirmTransitVirtualInterfaceRequestRequestTypeDef](#confirmtransitvirtualinterfacerequestrequesttypedef)
-  - [ConfirmTransitVirtualInterfaceResponseTypeDef](#confirmtransitvirtualinterfaceresponsetypedef)
-  - [ConnectionResponseMetadataTypeDef](#connectionresponsemetadatatypedef)
-  - [ConnectionTypeDef](#connectiontypedef)
-  - [ConnectionsTypeDef](#connectionstypedef)
-  - [CreateBGPPeerRequestRequestTypeDef](#createbgppeerrequestrequesttypedef)
-  - [CreateBGPPeerResponseTypeDef](#createbgppeerresponsetypedef)
-  - [CreateConnectionRequestRequestTypeDef](#createconnectionrequestrequesttypedef)
-  - [CreateDirectConnectGatewayAssociationProposalRequestRequestTypeDef](#createdirectconnectgatewayassociationproposalrequestrequesttypedef)
-  - [CreateDirectConnectGatewayAssociationProposalResultTypeDef](#createdirectconnectgatewayassociationproposalresulttypedef)
-  - [CreateDirectConnectGatewayAssociationRequestRequestTypeDef](#createdirectconnectgatewayassociationrequestrequesttypedef)
-  - [CreateDirectConnectGatewayAssociationResultTypeDef](#createdirectconnectgatewayassociationresulttypedef)
-  - [CreateDirectConnectGatewayRequestRequestTypeDef](#createdirectconnectgatewayrequestrequesttypedef)
-  - [CreateDirectConnectGatewayResultTypeDef](#createdirectconnectgatewayresulttypedef)
-  - [CreateInterconnectRequestRequestTypeDef](#createinterconnectrequestrequesttypedef)
-  - [CreateLagRequestRequestTypeDef](#createlagrequestrequesttypedef)
-  - [CreatePrivateVirtualInterfaceRequestRequestTypeDef](#createprivatevirtualinterfacerequestrequesttypedef)
-  - [CreatePublicVirtualInterfaceRequestRequestTypeDef](#createpublicvirtualinterfacerequestrequesttypedef)
-  - [CreateTransitVirtualInterfaceRequestRequestTypeDef](#createtransitvirtualinterfacerequestrequesttypedef)
-  - [CreateTransitVirtualInterfaceResultTypeDef](#createtransitvirtualinterfaceresulttypedef)
-  - [CustomerAgreementTypeDef](#customeragreementtypedef)
-  - [DeleteBGPPeerRequestRequestTypeDef](#deletebgppeerrequestrequesttypedef)
-  - [DeleteBGPPeerResponseTypeDef](#deletebgppeerresponsetypedef)
-  - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
-  - [DeleteDirectConnectGatewayAssociationProposalRequestRequestTypeDef](#deletedirectconnectgatewayassociationproposalrequestrequesttypedef)
-  - [DeleteDirectConnectGatewayAssociationProposalResultTypeDef](#deletedirectconnectgatewayassociationproposalresulttypedef)
-  - [DeleteDirectConnectGatewayAssociationRequestRequestTypeDef](#deletedirectconnectgatewayassociationrequestrequesttypedef)
-  - [DeleteDirectConnectGatewayAssociationResultTypeDef](#deletedirectconnectgatewayassociationresulttypedef)
-  - [DeleteDirectConnectGatewayRequestRequestTypeDef](#deletedirectconnectgatewayrequestrequesttypedef)
-  - [DeleteDirectConnectGatewayResultTypeDef](#deletedirectconnectgatewayresulttypedef)
-  - [DeleteInterconnectRequestRequestTypeDef](#deleteinterconnectrequestrequesttypedef)
-  - [DeleteInterconnectResponseTypeDef](#deleteinterconnectresponsetypedef)
-  - [DeleteLagRequestRequestTypeDef](#deletelagrequestrequesttypedef)
-  - [DeleteVirtualInterfaceRequestRequestTypeDef](#deletevirtualinterfacerequestrequesttypedef)
-  - [DeleteVirtualInterfaceResponseTypeDef](#deletevirtualinterfaceresponsetypedef)
-  - [DescribeConnectionLoaRequestRequestTypeDef](#describeconnectionloarequestrequesttypedef)
-  - [DescribeConnectionLoaResponseTypeDef](#describeconnectionloaresponsetypedef)
-  - [DescribeConnectionsOnInterconnectRequestRequestTypeDef](#describeconnectionsoninterconnectrequestrequesttypedef)
-  - [DescribeConnectionsRequestRequestTypeDef](#describeconnectionsrequestrequesttypedef)
-  - [DescribeCustomerMetadataResponseTypeDef](#describecustomermetadataresponsetypedef)
-  - [DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef](#describedirectconnectgatewayassociationproposalsrequestrequesttypedef)
-  - [DescribeDirectConnectGatewayAssociationProposalsResultTypeDef](#describedirectconnectgatewayassociationproposalsresulttypedef)
-  - [DescribeDirectConnectGatewayAssociationsRequestRequestTypeDef](#describedirectconnectgatewayassociationsrequestrequesttypedef)
-  - [DescribeDirectConnectGatewayAssociationsResultTypeDef](#describedirectconnectgatewayassociationsresulttypedef)
-  - [DescribeDirectConnectGatewayAttachmentsRequestRequestTypeDef](#describedirectconnectgatewayattachmentsrequestrequesttypedef)
-  - [DescribeDirectConnectGatewayAttachmentsResultTypeDef](#describedirectconnectgatewayattachmentsresulttypedef)
-  - [DescribeDirectConnectGatewaysRequestRequestTypeDef](#describedirectconnectgatewaysrequestrequesttypedef)
-  - [DescribeDirectConnectGatewaysResultTypeDef](#describedirectconnectgatewaysresulttypedef)
-  - [DescribeHostedConnectionsRequestRequestTypeDef](#describehostedconnectionsrequestrequesttypedef)
-  - [DescribeInterconnectLoaRequestRequestTypeDef](#describeinterconnectloarequestrequesttypedef)
-  - [DescribeInterconnectLoaResponseTypeDef](#describeinterconnectloaresponsetypedef)
-  - [DescribeInterconnectsRequestRequestTypeDef](#describeinterconnectsrequestrequesttypedef)
-  - [DescribeLagsRequestRequestTypeDef](#describelagsrequestrequesttypedef)
-  - [DescribeLoaRequestRequestTypeDef](#describeloarequestrequesttypedef)
-  - [DescribeRouterConfigurationRequestRequestTypeDef](#describerouterconfigurationrequestrequesttypedef)
-  - [DescribeRouterConfigurationResponseTypeDef](#describerouterconfigurationresponsetypedef)
-  - [DescribeTagsRequestRequestTypeDef](#describetagsrequestrequesttypedef)
-  - [DescribeTagsResponseTypeDef](#describetagsresponsetypedef)
-  - [DescribeVirtualInterfacesRequestRequestTypeDef](#describevirtualinterfacesrequestrequesttypedef)
-  - [DirectConnectGatewayAssociationProposalTypeDef](#directconnectgatewayassociationproposaltypedef)
-  - [DirectConnectGatewayAssociationTypeDef](#directconnectgatewayassociationtypedef)
-  - [DirectConnectGatewayAttachmentTypeDef](#directconnectgatewayattachmenttypedef)
-  - [DirectConnectGatewayTypeDef](#directconnectgatewaytypedef)
-  - [DisassociateConnectionFromLagRequestRequestTypeDef](#disassociateconnectionfromlagrequestrequesttypedef)
-  - [DisassociateMacSecKeyRequestRequestTypeDef](#disassociatemacseckeyrequestrequesttypedef)
-  - [DisassociateMacSecKeyResponseTypeDef](#disassociatemacseckeyresponsetypedef)
-  - [InterconnectResponseMetadataTypeDef](#interconnectresponsemetadatatypedef)
-  - [InterconnectTypeDef](#interconnecttypedef)
-  - [InterconnectsTypeDef](#interconnectstypedef)
-  - [LagResponseMetadataTypeDef](#lagresponsemetadatatypedef)
-  - [LagTypeDef](#lagtypedef)
-  - [LagsTypeDef](#lagstypedef)
-  - [ListVirtualInterfaceTestHistoryRequestRequestTypeDef](#listvirtualinterfacetesthistoryrequestrequesttypedef)
-  - [ListVirtualInterfaceTestHistoryResponseTypeDef](#listvirtualinterfacetesthistoryresponsetypedef)
-  - [LoaResponseMetadataTypeDef](#loaresponsemetadatatypedef)
-  - [LoaTypeDef](#loatypedef)
-  - [LocationTypeDef](#locationtypedef)
-  - [LocationsTypeDef](#locationstypedef)
-  - [MacSecKeyTypeDef](#macseckeytypedef)
-  - [NewBGPPeerTypeDef](#newbgppeertypedef)
-  - [NewPrivateVirtualInterfaceAllocationTypeDef](#newprivatevirtualinterfaceallocationtypedef)
-  - [NewPrivateVirtualInterfaceTypeDef](#newprivatevirtualinterfacetypedef)
-  - [NewPublicVirtualInterfaceAllocationTypeDef](#newpublicvirtualinterfaceallocationtypedef)
-  - [NewPublicVirtualInterfaceTypeDef](#newpublicvirtualinterfacetypedef)
-  - [NewTransitVirtualInterfaceAllocationTypeDef](#newtransitvirtualinterfaceallocationtypedef)
-  - [NewTransitVirtualInterfaceTypeDef](#newtransitvirtualinterfacetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResourceTagTypeDef](#resourcetagtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RouteFilterPrefixTypeDef](#routefilterprefixtypedef)
-  - [RouterTypeTypeDef](#routertypetypedef)
-  - [StartBgpFailoverTestRequestRequestTypeDef](#startbgpfailovertestrequestrequesttypedef)
-  - [StartBgpFailoverTestResponseTypeDef](#startbgpfailovertestresponsetypedef)
-  - [StopBgpFailoverTestRequestRequestTypeDef](#stopbgpfailovertestrequestrequesttypedef)
-  - [StopBgpFailoverTestResponseTypeDef](#stopbgpfailovertestresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateConnectionRequestRequestTypeDef](#updateconnectionrequestrequesttypedef)
-  - [UpdateDirectConnectGatewayAssociationRequestRequestTypeDef](#updatedirectconnectgatewayassociationrequestrequesttypedef)
-  - [UpdateDirectConnectGatewayAssociationResultTypeDef](#updatedirectconnectgatewayassociationresulttypedef)
-  - [UpdateDirectConnectGatewayRequestRequestTypeDef](#updatedirectconnectgatewayrequestrequesttypedef)
-  - [UpdateDirectConnectGatewayResponseTypeDef](#updatedirectconnectgatewayresponsetypedef)
-  - [UpdateLagRequestRequestTypeDef](#updatelagrequestrequesttypedef)
-  - [UpdateVirtualInterfaceAttributesRequestRequestTypeDef](#updatevirtualinterfaceattributesrequestrequesttypedef)
-  - [VirtualGatewayTypeDef](#virtualgatewaytypedef)
-  - [VirtualGatewaysTypeDef](#virtualgatewaystypedef)
-  - [VirtualInterfaceResponseMetadataTypeDef](#virtualinterfaceresponsemetadatatypedef)
-  - [VirtualInterfaceTestHistoryTypeDef](#virtualinterfacetesthistorytypedef)
-  - [VirtualInterfaceTypeDef](#virtualinterfacetypedef)
-  - [VirtualInterfacesTypeDef](#virtualinterfacestypedef)
-
-<a id="acceptdirectconnectgatewayassociationproposalrequestrequesttypedef"></a>
+    Auto-generated documentation for [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
+    type annotations stubs module [mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 ## AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef
+
+def get_value() -> AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+        "proposalId": ...,
+        "associatedGatewayOwnerAccount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef(TypedDict):
+    directConnectGatewayId: str,
+    proposalId: str,
+    associatedGatewayOwnerAccount: str,
+    overrideAllowedPrefixesToDirectConnectGateway: NotRequired[Sequence[RouteFilterPrefixTypeDef]],  # (1)
+```
 
-- `directConnectGatewayId`: `str`
-- `proposalId`: `str`
-- `associatedGatewayOwnerAccount`: `str`
-
-Optional fields:
-
-- `overrideAllowedPrefixesToDirectConnectGateway`:
-  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-
-<a id="acceptdirectconnectgatewayassociationproposalresulttypedef"></a>
-
+1. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
 ## AcceptDirectConnectGatewayAssociationProposalResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssociationProposalResultTypeDef
+
+def get_value() -> AcceptDirectConnectGatewayAssociationProposalResultTypeDef:
+    return {
+        "directConnectGatewayAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AcceptDirectConnectGatewayAssociationProposalResultTypeDef(TypedDict):
+    directConnectGatewayAssociation: DirectConnectGatewayAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGatewayAssociation`:
-  [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="allocateconnectiononinterconnectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AllocateConnectionOnInterconnectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AllocateConnectionOnInterconnectRequestRequestTypeDef
+
+def get_value() -> AllocateConnectionOnInterconnectRequestRequestTypeDef:
+    return {
+        "bandwidth": ...,
+        "connectionName": ...,
+        "ownerAccount": ...,
+        "interconnectId": ...,
+        "vlan": ...,
+    }
 ```
 
-Required fields:
-
-- `bandwidth`: `str`
-- `connectionName`: `str`
-- `ownerAccount`: `str`
-- `interconnectId`: `str`
-- `vlan`: `int`
-
-<a id="allocatehostedconnectionrequestrequesttypedef"></a>
+```python title="Definition"
+class AllocateConnectionOnInterconnectRequestRequestTypeDef(TypedDict):
+    bandwidth: str,
+    connectionName: str,
+    ownerAccount: str,
+    interconnectId: str,
+    vlan: int,
+```
 
 ## AllocateHostedConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AllocateHostedConnectionRequestRequestTypeDef
+
+def get_value() -> AllocateHostedConnectionRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "ownerAccount": ...,
+        "bandwidth": ...,
+        "connectionName": ...,
+        "vlan": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AllocateHostedConnectionRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    ownerAccount: str,
+    bandwidth: str,
+    connectionName: str,
+    vlan: int,
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `connectionId`: `str`
-- `ownerAccount`: `str`
-- `bandwidth`: `str`
-- `connectionName`: `str`
-- `vlan`: `int`
-
-Optional fields:
-
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="allocateprivatevirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AllocatePrivateVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AllocatePrivateVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> AllocatePrivateVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "ownerAccount": ...,
+        "newPrivateVirtualInterfaceAllocation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AllocatePrivateVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    ownerAccount: str,
+    newPrivateVirtualInterfaceAllocation: NewPrivateVirtualInterfaceAllocationTypeDef,  # (1)
+```
 
-- `connectionId`: `str`
-- `ownerAccount`: `str`
-- `newPrivateVirtualInterfaceAllocation`:
-  [NewPrivateVirtualInterfaceAllocationTypeDef](./type_defs.md#newprivatevirtualinterfaceallocationtypedef)
-
-<a id="allocatepublicvirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NewPrivateVirtualInterfaceAllocationTypeDef](./type_defs.md#newprivatevirtualinterfaceallocationtypedef) 
 ## AllocatePublicVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AllocatePublicVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> AllocatePublicVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "ownerAccount": ...,
+        "newPublicVirtualInterfaceAllocation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AllocatePublicVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    ownerAccount: str,
+    newPublicVirtualInterfaceAllocation: NewPublicVirtualInterfaceAllocationTypeDef,  # (1)
+```
 
-- `connectionId`: `str`
-- `ownerAccount`: `str`
-- `newPublicVirtualInterfaceAllocation`:
-  [NewPublicVirtualInterfaceAllocationTypeDef](./type_defs.md#newpublicvirtualinterfaceallocationtypedef)
-
-<a id="allocatetransitvirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NewPublicVirtualInterfaceAllocationTypeDef](./type_defs.md#newpublicvirtualinterfaceallocationtypedef) 
 ## AllocateTransitVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AllocateTransitVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> AllocateTransitVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "ownerAccount": ...,
+        "newTransitVirtualInterfaceAllocation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AllocateTransitVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    ownerAccount: str,
+    newTransitVirtualInterfaceAllocation: NewTransitVirtualInterfaceAllocationTypeDef,  # (1)
+```
 
-- `connectionId`: `str`
-- `ownerAccount`: `str`
-- `newTransitVirtualInterfaceAllocation`:
-  [NewTransitVirtualInterfaceAllocationTypeDef](./type_defs.md#newtransitvirtualinterfaceallocationtypedef)
-
-<a id="allocatetransitvirtualinterfaceresulttypedef"></a>
-
+1. See [:material-code-braces: NewTransitVirtualInterfaceAllocationTypeDef](./type_defs.md#newtransitvirtualinterfaceallocationtypedef) 
 ## AllocateTransitVirtualInterfaceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AllocateTransitVirtualInterfaceResultTypeDef
+
+def get_value() -> AllocateTransitVirtualInterfaceResultTypeDef:
+    return {
+        "virtualInterface": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AllocateTransitVirtualInterfaceResultTypeDef(TypedDict):
+    virtualInterface: VirtualInterfaceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterface`:
-  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associateconnectionwithlagrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateConnectionWithLagRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AssociateConnectionWithLagRequestRequestTypeDef
+
+def get_value() -> AssociateConnectionWithLagRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "lagId": ...,
+    }
 ```
 
-Required fields:
-
-- `connectionId`: `str`
-- `lagId`: `str`
-
-<a id="associatehostedconnectionrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateConnectionWithLagRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    lagId: str,
+```
 
 ## AssociateHostedConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AssociateHostedConnectionRequestRequestTypeDef
+
+def get_value() -> AssociateHostedConnectionRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "parentConnectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `connectionId`: `str`
-- `parentConnectionId`: `str`
-
-<a id="associatemacseckeyrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateHostedConnectionRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    parentConnectionId: str,
+```
 
 ## AssociateMacSecKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AssociateMacSecKeyRequestRequestTypeDef
+
+def get_value() -> AssociateMacSecKeyRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `connectionId`: `str`
-
-Optional fields:
-
-- `secretARN`: `str`
-- `ckn`: `str`
-- `cak`: `str`
-
-<a id="associatemacseckeyresponsetypedef"></a>
+```python title="Definition"
+class AssociateMacSecKeyRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    secretARN: NotRequired[str],
+    ckn: NotRequired[str],
+    cak: NotRequired[str],
+```
 
 ## AssociateMacSecKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AssociateMacSecKeyResponseTypeDef
+
+def get_value() -> AssociateMacSecKeyResponseTypeDef:
+    return {
+        "connectionId": ...,
+        "macSecKeys": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateMacSecKeyResponseTypeDef(TypedDict):
+    connectionId: str,
+    macSecKeys: List[MacSecKeyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectionId`: `str`
-- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associatevirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MacSecKeyTypeDef](./type_defs.md#macseckeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AssociateVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> AssociateVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+        "connectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualInterfaceId`: `str`
-- `connectionId`: `str`
-
-<a id="associatedgatewaytypedef"></a>
+```python title="Definition"
+class AssociateVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: str,
+    connectionId: str,
+```
 
 ## AssociatedGatewayTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import AssociatedGatewayTypeDef
+
+def get_value() -> AssociatedGatewayTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssociatedGatewayTypeDef(TypedDict):
+    id: NotRequired[str],
+    type: NotRequired[GatewayTypeType],  # (1)
+    ownerAccount: NotRequired[str],
+    region: NotRequired[str],
+```
 
-- `id`: `str`
-- `type`: [GatewayTypeType](./literals.md#gatewaytypetype)
-- `ownerAccount`: `str`
-- `region`: `str`
-
-<a id="bgppeertypedef"></a>
-
+1. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
 ## BGPPeerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import BGPPeerTypeDef
+
+def get_value() -> BGPPeerTypeDef:
+    return {
+        "bgpPeerId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BGPPeerTypeDef(TypedDict):
+    bgpPeerId: NotRequired[str],
+    asn: NotRequired[int],
+    authKey: NotRequired[str],
+    addressFamily: NotRequired[AddressFamilyType],  # (1)
+    amazonAddress: NotRequired[str],
+    customerAddress: NotRequired[str],
+    bgpPeerState: NotRequired[BGPPeerStateType],  # (2)
+    bgpStatus: NotRequired[BGPStatusType],  # (3)
+    awsDeviceV2: NotRequired[str],
+    awsLogicalDeviceId: NotRequired[str],
+```
 
-- `bgpPeerId`: `str`
-- `asn`: `int`
-- `authKey`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `amazonAddress`: `str`
-- `customerAddress`: `str`
-- `bgpPeerState`: [BGPPeerStateType](./literals.md#bgppeerstatetype)
-- `bgpStatus`: [BGPStatusType](./literals.md#bgpstatustype)
-- `awsDeviceV2`: `str`
-- `awsLogicalDeviceId`: `str`
-
-<a id="confirmconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
+2. See [:material-code-brackets: BGPPeerStateType](./literals.md#bgppeerstatetype) 
+3. See [:material-code-brackets: BGPStatusType](./literals.md#bgpstatustype) 
 ## ConfirmConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmConnectionRequestRequestTypeDef
+
+def get_value() -> ConfirmConnectionRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `connectionId`: `str`
-
-<a id="confirmconnectionresponsetypedef"></a>
+```python title="Definition"
+class ConfirmConnectionRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+```
 
 ## ConfirmConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmConnectionResponseTypeDef
+
+def get_value() -> ConfirmConnectionResponseTypeDef:
+    return {
+        "connectionState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmConnectionResponseTypeDef(TypedDict):
+    connectionState: ConnectionStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="confirmcustomeragreementrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfirmCustomerAgreementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmCustomerAgreementRequestRequestTypeDef
+
+def get_value() -> ConfirmCustomerAgreementRequestRequestTypeDef:
+    return {
+        "agreementName": ...,
+    }
 ```
 
-Optional fields:
-
-- `agreementName`: `str`
-
-<a id="confirmcustomeragreementresponsetypedef"></a>
+```python title="Definition"
+class ConfirmCustomerAgreementRequestRequestTypeDef(TypedDict):
+    agreementName: NotRequired[str],
+```
 
 ## ConfirmCustomerAgreementResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmCustomerAgreementResponseTypeDef
+
+def get_value() -> ConfirmCustomerAgreementResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmCustomerAgreementResponseTypeDef(TypedDict):
+    status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `status`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="confirmprivatevirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfirmPrivateVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmPrivateVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> ConfirmPrivateVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualInterfaceId`: `str`
-
-Optional fields:
-
-- `virtualGatewayId`: `str`
-- `directConnectGatewayId`: `str`
-
-<a id="confirmprivatevirtualinterfaceresponsetypedef"></a>
+```python title="Definition"
+class ConfirmPrivateVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: str,
+    virtualGatewayId: NotRequired[str],
+    directConnectGatewayId: NotRequired[str],
+```
 
 ## ConfirmPrivateVirtualInterfaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmPrivateVirtualInterfaceResponseTypeDef
+
+def get_value() -> ConfirmPrivateVirtualInterfaceResponseTypeDef:
+    return {
+        "virtualInterfaceState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmPrivateVirtualInterfaceResponseTypeDef(TypedDict):
+    virtualInterfaceState: VirtualInterfaceStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterfaceState`:
-  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="confirmpublicvirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfirmPublicVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmPublicVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> ConfirmPublicVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualInterfaceId`: `str`
-
-<a id="confirmpublicvirtualinterfaceresponsetypedef"></a>
+```python title="Definition"
+class ConfirmPublicVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: str,
+```
 
 ## ConfirmPublicVirtualInterfaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmPublicVirtualInterfaceResponseTypeDef
+
+def get_value() -> ConfirmPublicVirtualInterfaceResponseTypeDef:
+    return {
+        "virtualInterfaceState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmPublicVirtualInterfaceResponseTypeDef(TypedDict):
+    virtualInterfaceState: VirtualInterfaceStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterfaceState`:
-  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="confirmtransitvirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfirmTransitVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmTransitVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> ConfirmTransitVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+        "directConnectGatewayId": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualInterfaceId`: `str`
-- `directConnectGatewayId`: `str`
-
-<a id="confirmtransitvirtualinterfaceresponsetypedef"></a>
+```python title="Definition"
+class ConfirmTransitVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: str,
+    directConnectGatewayId: str,
+```
 
 ## ConfirmTransitVirtualInterfaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConfirmTransitVirtualInterfaceResponseTypeDef
+
+def get_value() -> ConfirmTransitVirtualInterfaceResponseTypeDef:
+    return {
+        "virtualInterfaceState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmTransitVirtualInterfaceResponseTypeDef(TypedDict):
+    virtualInterfaceState: VirtualInterfaceStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterfaceState`:
-  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="connectionresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConnectionResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConnectionResponseMetadataTypeDef
+
+def get_value() -> ConnectionResponseMetadataTypeDef:
+    return {
+        "ownerAccount": ...,
+        "connectionId": ...,
+        "connectionName": ...,
+        "connectionState": ...,
+        "region": ...,
+        "location": ...,
+        "bandwidth": ...,
+        "vlan": ...,
+        "partnerName": ...,
+        "loaIssueTime": ...,
+        "lagId": ...,
+        "awsDevice": ...,
+        "jumboFrameCapable": ...,
+        "awsDeviceV2": ...,
+        "awsLogicalDeviceId": ...,
+        "hasLogicalRedundancy": ...,
+        "tags": ...,
+        "providerName": ...,
+        "macSecCapable": ...,
+        "portEncryptionStatus": ...,
+        "encryptionMode": ...,
+        "macSecKeys": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConnectionResponseMetadataTypeDef(TypedDict):
+    ownerAccount: str,
+    connectionId: str,
+    connectionName: str,
+    connectionState: ConnectionStateType,  # (1)
+    region: str,
+    location: str,
+    bandwidth: str,
+    vlan: int,
+    partnerName: str,
+    loaIssueTime: datetime,
+    lagId: str,
+    awsDevice: str,
+    jumboFrameCapable: bool,
+    awsDeviceV2: str,
+    awsLogicalDeviceId: str,
+    hasLogicalRedundancy: HasLogicalRedundancyType,  # (2)
+    tags: List[TagTypeDef],  # (3)
+    providerName: str,
+    macSecCapable: bool,
+    portEncryptionStatus: str,
+    encryptionMode: str,
+    macSecKeys: List[MacSecKeyTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `ownerAccount`: `str`
-- `connectionId`: `str`
-- `connectionName`: `str`
-- `connectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `region`: `str`
-- `location`: `str`
-- `bandwidth`: `str`
-- `vlan`: `int`
-- `partnerName`: `str`
-- `loaIssueTime`: `datetime`
-- `lagId`: `str`
-- `awsDevice`: `str`
-- `jumboFrameCapable`: `bool`
-- `awsDeviceV2`: `str`
-- `awsLogicalDeviceId`: `str`
-- `hasLogicalRedundancy`:
-  [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `providerName`: `str`
-- `macSecCapable`: `bool`
-- `portEncryptionStatus`: `str`
-- `encryptionMode`: `str`
-- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="connectiontypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-brackets: HasLogicalRedundancyType](./literals.md#haslogicalredundancytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: MacSecKeyTypeDef](./type_defs.md#macseckeytypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConnectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConnectionTypeDef
+
+def get_value() -> ConnectionTypeDef:
+    return {
+        "ownerAccount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionTypeDef(TypedDict):
+    ownerAccount: NotRequired[str],
+    connectionId: NotRequired[str],
+    connectionName: NotRequired[str],
+    connectionState: NotRequired[ConnectionStateType],  # (1)
+    region: NotRequired[str],
+    location: NotRequired[str],
+    bandwidth: NotRequired[str],
+    vlan: NotRequired[int],
+    partnerName: NotRequired[str],
+    loaIssueTime: NotRequired[datetime],
+    lagId: NotRequired[str],
+    awsDevice: NotRequired[str],
+    jumboFrameCapable: NotRequired[bool],
+    awsDeviceV2: NotRequired[str],
+    awsLogicalDeviceId: NotRequired[str],
+    hasLogicalRedundancy: NotRequired[HasLogicalRedundancyType],  # (2)
+    tags: NotRequired[List[TagTypeDef]],  # (3)
+    providerName: NotRequired[str],
+    macSecCapable: NotRequired[bool],
+    portEncryptionStatus: NotRequired[str],
+    encryptionMode: NotRequired[str],
+    macSecKeys: NotRequired[List[MacSecKeyTypeDef]],  # (4)
+```
 
-- `ownerAccount`: `str`
-- `connectionId`: `str`
-- `connectionName`: `str`
-- `connectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `region`: `str`
-- `location`: `str`
-- `bandwidth`: `str`
-- `vlan`: `int`
-- `partnerName`: `str`
-- `loaIssueTime`: `datetime`
-- `lagId`: `str`
-- `awsDevice`: `str`
-- `jumboFrameCapable`: `bool`
-- `awsDeviceV2`: `str`
-- `awsLogicalDeviceId`: `str`
-- `hasLogicalRedundancy`:
-  [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `providerName`: `str`
-- `macSecCapable`: `bool`
-- `portEncryptionStatus`: `str`
-- `encryptionMode`: `str`
-- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
-
-<a id="connectionstypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-brackets: HasLogicalRedundancyType](./literals.md#haslogicalredundancytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: MacSecKeyTypeDef](./type_defs.md#macseckeytypedef) 
 ## ConnectionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ConnectionsTypeDef
+
+def get_value() -> ConnectionsTypeDef:
+    return {
+        "connections": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConnectionsTypeDef(TypedDict):
+    connections: List[ConnectionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connections`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbgppeerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBGPPeerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateBGPPeerRequestRequestTypeDef
+
+def get_value() -> CreateBGPPeerRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateBGPPeerRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: NotRequired[str],
+    newBGPPeer: NotRequired[NewBGPPeerTypeDef],  # (1)
+```
 
-- `virtualInterfaceId`: `str`
-- `newBGPPeer`: [NewBGPPeerTypeDef](./type_defs.md#newbgppeertypedef)
-
-<a id="createbgppeerresponsetypedef"></a>
-
+1. See [:material-code-braces: NewBGPPeerTypeDef](./type_defs.md#newbgppeertypedef) 
 ## CreateBGPPeerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateBGPPeerResponseTypeDef
+
+def get_value() -> CreateBGPPeerResponseTypeDef:
+    return {
+        "virtualInterface": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBGPPeerResponseTypeDef(TypedDict):
+    virtualInterface: VirtualInterfaceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterface`:
-  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateConnectionRequestRequestTypeDef
+
+def get_value() -> CreateConnectionRequestRequestTypeDef:
+    return {
+        "location": ...,
+        "bandwidth": ...,
+        "connectionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionRequestRequestTypeDef(TypedDict):
+    location: str,
+    bandwidth: str,
+    connectionName: str,
+    lagId: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    providerName: NotRequired[str],
+    requestMACSec: NotRequired[bool],
+```
 
-- `location`: `str`
-- `bandwidth`: `str`
-- `connectionName`: `str`
-
-Optional fields:
-
-- `lagId`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `providerName`: `str`
-- `requestMACSec`: `bool`
-
-<a id="createdirectconnectgatewayassociationproposalrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDirectConnectGatewayAssociationProposalRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationProposalRequestRequestTypeDef
+
+def get_value() -> CreateDirectConnectGatewayAssociationProposalRequestRequestTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+        "directConnectGatewayOwnerAccount": ...,
+        "gatewayId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDirectConnectGatewayAssociationProposalRequestRequestTypeDef(TypedDict):
+    directConnectGatewayId: str,
+    directConnectGatewayOwnerAccount: str,
+    gatewayId: str,
+    addAllowedPrefixesToDirectConnectGateway: NotRequired[Sequence[RouteFilterPrefixTypeDef]],  # (1)
+    removeAllowedPrefixesToDirectConnectGateway: NotRequired[Sequence[RouteFilterPrefixTypeDef]],  # (1)
+```
 
-- `directConnectGatewayId`: `str`
-- `directConnectGatewayOwnerAccount`: `str`
-- `gatewayId`: `str`
-
-Optional fields:
-
-- `addAllowedPrefixesToDirectConnectGateway`:
-  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `removeAllowedPrefixesToDirectConnectGateway`:
-  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-
-<a id="createdirectconnectgatewayassociationproposalresulttypedef"></a>
-
+1. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
+2. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
 ## CreateDirectConnectGatewayAssociationProposalResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationProposalResultTypeDef
+
+def get_value() -> CreateDirectConnectGatewayAssociationProposalResultTypeDef:
+    return {
+        "directConnectGatewayAssociationProposal": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDirectConnectGatewayAssociationProposalResultTypeDef(TypedDict):
+    directConnectGatewayAssociationProposal: DirectConnectGatewayAssociationProposalTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGatewayAssociationProposal`:
-  [DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdirectconnectgatewayassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDirectConnectGatewayAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationRequestRequestTypeDef
+
+def get_value() -> CreateDirectConnectGatewayAssociationRequestRequestTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDirectConnectGatewayAssociationRequestRequestTypeDef(TypedDict):
+    directConnectGatewayId: str,
+    gatewayId: NotRequired[str],
+    addAllowedPrefixesToDirectConnectGateway: NotRequired[Sequence[RouteFilterPrefixTypeDef]],  # (1)
+    virtualGatewayId: NotRequired[str],
+```
 
-- `directConnectGatewayId`: `str`
-
-Optional fields:
-
-- `gatewayId`: `str`
-- `addAllowedPrefixesToDirectConnectGateway`:
-  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `virtualGatewayId`: `str`
-
-<a id="createdirectconnectgatewayassociationresulttypedef"></a>
-
+1. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
 ## CreateDirectConnectGatewayAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayAssociationResultTypeDef
+
+def get_value() -> CreateDirectConnectGatewayAssociationResultTypeDef:
+    return {
+        "directConnectGatewayAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDirectConnectGatewayAssociationResultTypeDef(TypedDict):
+    directConnectGatewayAssociation: DirectConnectGatewayAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGatewayAssociation`:
-  [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdirectconnectgatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDirectConnectGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayRequestRequestTypeDef
+
+def get_value() -> CreateDirectConnectGatewayRequestRequestTypeDef:
+    return {
+        "directConnectGatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `directConnectGatewayName`: `str`
-
-Optional fields:
-
-- `amazonSideAsn`: `int`
-
-<a id="createdirectconnectgatewayresulttypedef"></a>
+```python title="Definition"
+class CreateDirectConnectGatewayRequestRequestTypeDef(TypedDict):
+    directConnectGatewayName: str,
+    amazonSideAsn: NotRequired[int],
+```
 
 ## CreateDirectConnectGatewayResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateDirectConnectGatewayResultTypeDef
+
+def get_value() -> CreateDirectConnectGatewayResultTypeDef:
+    return {
+        "directConnectGateway": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDirectConnectGatewayResultTypeDef(TypedDict):
+    directConnectGateway: DirectConnectGatewayTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGateway`:
-  [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinterconnectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInterconnectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateInterconnectRequestRequestTypeDef
+
+def get_value() -> CreateInterconnectRequestRequestTypeDef:
+    return {
+        "interconnectName": ...,
+        "bandwidth": ...,
+        "location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInterconnectRequestRequestTypeDef(TypedDict):
+    interconnectName: str,
+    bandwidth: str,
+    location: str,
+    lagId: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    providerName: NotRequired[str],
+```
 
-- `interconnectName`: `str`
-- `bandwidth`: `str`
-- `location`: `str`
-
-Optional fields:
-
-- `lagId`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `providerName`: `str`
-
-<a id="createlagrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateLagRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateLagRequestRequestTypeDef
+
+def get_value() -> CreateLagRequestRequestTypeDef:
+    return {
+        "numberOfConnections": ...,
+        "location": ...,
+        "connectionsBandwidth": ...,
+        "lagName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLagRequestRequestTypeDef(TypedDict):
+    numberOfConnections: int,
+    location: str,
+    connectionsBandwidth: str,
+    lagName: str,
+    connectionId: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    childConnectionTags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    providerName: NotRequired[str],
+    requestMACSec: NotRequired[bool],
+```
 
-- `numberOfConnections`: `int`
-- `location`: `str`
-- `connectionsBandwidth`: `str`
-- `lagName`: `str`
-
-Optional fields:
-
-- `connectionId`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `childConnectionTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `providerName`: `str`
-- `requestMACSec`: `bool`
-
-<a id="createprivatevirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreatePrivateVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreatePrivateVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> CreatePrivateVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "newPrivateVirtualInterface": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePrivateVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    newPrivateVirtualInterface: NewPrivateVirtualInterfaceTypeDef,  # (1)
+```
 
-- `connectionId`: `str`
-- `newPrivateVirtualInterface`:
-  [NewPrivateVirtualInterfaceTypeDef](./type_defs.md#newprivatevirtualinterfacetypedef)
-
-<a id="createpublicvirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NewPrivateVirtualInterfaceTypeDef](./type_defs.md#newprivatevirtualinterfacetypedef) 
 ## CreatePublicVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreatePublicVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> CreatePublicVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "newPublicVirtualInterface": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePublicVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    newPublicVirtualInterface: NewPublicVirtualInterfaceTypeDef,  # (1)
+```
 
-- `connectionId`: `str`
-- `newPublicVirtualInterface`:
-  [NewPublicVirtualInterfaceTypeDef](./type_defs.md#newpublicvirtualinterfacetypedef)
-
-<a id="createtransitvirtualinterfacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NewPublicVirtualInterfaceTypeDef](./type_defs.md#newpublicvirtualinterfacetypedef) 
 ## CreateTransitVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateTransitVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> CreateTransitVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "newTransitVirtualInterface": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTransitVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    newTransitVirtualInterface: NewTransitVirtualInterfaceTypeDef,  # (1)
+```
 
-- `connectionId`: `str`
-- `newTransitVirtualInterface`:
-  [NewTransitVirtualInterfaceTypeDef](./type_defs.md#newtransitvirtualinterfacetypedef)
-
-<a id="createtransitvirtualinterfaceresulttypedef"></a>
-
+1. See [:material-code-braces: NewTransitVirtualInterfaceTypeDef](./type_defs.md#newtransitvirtualinterfacetypedef) 
 ## CreateTransitVirtualInterfaceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CreateTransitVirtualInterfaceResultTypeDef
+
+def get_value() -> CreateTransitVirtualInterfaceResultTypeDef:
+    return {
+        "virtualInterface": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTransitVirtualInterfaceResultTypeDef(TypedDict):
+    virtualInterface: VirtualInterfaceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterface`:
-  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customeragreementtypedef"></a>
-
+1. See [:material-code-braces: VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomerAgreementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import CustomerAgreementTypeDef
+
+def get_value() -> CustomerAgreementTypeDef:
+    return {
+        "agreementName": ...,
+    }
 ```
 
-Optional fields:
-
-- `agreementName`: `str`
-- `status`: `str`
-
-<a id="deletebgppeerrequestrequesttypedef"></a>
+```python title="Definition"
+class CustomerAgreementTypeDef(TypedDict):
+    agreementName: NotRequired[str],
+    status: NotRequired[str],
+```
 
 ## DeleteBGPPeerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteBGPPeerRequestRequestTypeDef
+
+def get_value() -> DeleteBGPPeerRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `virtualInterfaceId`: `str`
-- `asn`: `int`
-- `customerAddress`: `str`
-- `bgpPeerId`: `str`
-
-<a id="deletebgppeerresponsetypedef"></a>
+```python title="Definition"
+class DeleteBGPPeerRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: NotRequired[str],
+    asn: NotRequired[int],
+    customerAddress: NotRequired[str],
+    bgpPeerId: NotRequired[str],
+```
 
 ## DeleteBGPPeerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteBGPPeerResponseTypeDef
+
+def get_value() -> DeleteBGPPeerResponseTypeDef:
+    return {
+        "virtualInterface": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBGPPeerResponseTypeDef(TypedDict):
+    virtualInterface: VirtualInterfaceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterface`:
-  [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteConnectionRequestRequestTypeDef
+
+def get_value() -> DeleteConnectionRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `connectionId`: `str`
-
-<a id="deletedirectconnectgatewayassociationproposalrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConnectionRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+```
 
 ## DeleteDirectConnectGatewayAssociationProposalRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationProposalRequestRequestTypeDef
+
+def get_value() -> DeleteDirectConnectGatewayAssociationProposalRequestRequestTypeDef:
+    return {
+        "proposalId": ...,
+    }
 ```
 
-Required fields:
-
-- `proposalId`: `str`
-
-<a id="deletedirectconnectgatewayassociationproposalresulttypedef"></a>
+```python title="Definition"
+class DeleteDirectConnectGatewayAssociationProposalRequestRequestTypeDef(TypedDict):
+    proposalId: str,
+```
 
 ## DeleteDirectConnectGatewayAssociationProposalResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationProposalResultTypeDef
+
+def get_value() -> DeleteDirectConnectGatewayAssociationProposalResultTypeDef:
+    return {
+        "directConnectGatewayAssociationProposal": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDirectConnectGatewayAssociationProposalResultTypeDef(TypedDict):
+    directConnectGatewayAssociationProposal: DirectConnectGatewayAssociationProposalTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGatewayAssociationProposal`:
-  [DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedirectconnectgatewayassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDirectConnectGatewayAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationRequestRequestTypeDef
+
+def get_value() -> DeleteDirectConnectGatewayAssociationRequestRequestTypeDef:
+    return {
+        "associationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `associationId`: `str`
-- `directConnectGatewayId`: `str`
-- `virtualGatewayId`: `str`
-
-<a id="deletedirectconnectgatewayassociationresulttypedef"></a>
+```python title="Definition"
+class DeleteDirectConnectGatewayAssociationRequestRequestTypeDef(TypedDict):
+    associationId: NotRequired[str],
+    directConnectGatewayId: NotRequired[str],
+    virtualGatewayId: NotRequired[str],
+```
 
 ## DeleteDirectConnectGatewayAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayAssociationResultTypeDef
+
+def get_value() -> DeleteDirectConnectGatewayAssociationResultTypeDef:
+    return {
+        "directConnectGatewayAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDirectConnectGatewayAssociationResultTypeDef(TypedDict):
+    directConnectGatewayAssociation: DirectConnectGatewayAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGatewayAssociation`:
-  [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedirectconnectgatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDirectConnectGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayRequestRequestTypeDef
+
+def get_value() -> DeleteDirectConnectGatewayRequestRequestTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
 ```
 
-Required fields:
-
-- `directConnectGatewayId`: `str`
-
-<a id="deletedirectconnectgatewayresulttypedef"></a>
+```python title="Definition"
+class DeleteDirectConnectGatewayRequestRequestTypeDef(TypedDict):
+    directConnectGatewayId: str,
+```
 
 ## DeleteDirectConnectGatewayResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteDirectConnectGatewayResultTypeDef
+
+def get_value() -> DeleteDirectConnectGatewayResultTypeDef:
+    return {
+        "directConnectGateway": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDirectConnectGatewayResultTypeDef(TypedDict):
+    directConnectGateway: DirectConnectGatewayTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGateway`:
-  [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteinterconnectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteInterconnectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteInterconnectRequestRequestTypeDef
+
+def get_value() -> DeleteInterconnectRequestRequestTypeDef:
+    return {
+        "interconnectId": ...,
+    }
 ```
 
-Required fields:
-
-- `interconnectId`: `str`
-
-<a id="deleteinterconnectresponsetypedef"></a>
+```python title="Definition"
+class DeleteInterconnectRequestRequestTypeDef(TypedDict):
+    interconnectId: str,
+```
 
 ## DeleteInterconnectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteInterconnectResponseTypeDef
+
+def get_value() -> DeleteInterconnectResponseTypeDef:
+    return {
+        "interconnectState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteInterconnectResponseTypeDef(TypedDict):
+    interconnectState: InterconnectStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `interconnectState`:
-  [InterconnectStateType](./literals.md#interconnectstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletelagrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InterconnectStateType](./literals.md#interconnectstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteLagRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteLagRequestRequestTypeDef
+
+def get_value() -> DeleteLagRequestRequestTypeDef:
+    return {
+        "lagId": ...,
+    }
 ```
 
-Required fields:
-
-- `lagId`: `str`
-
-<a id="deletevirtualinterfacerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteLagRequestRequestTypeDef(TypedDict):
+    lagId: str,
+```
 
 ## DeleteVirtualInterfaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteVirtualInterfaceRequestRequestTypeDef
+
+def get_value() -> DeleteVirtualInterfaceRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualInterfaceId`: `str`
-
-<a id="deletevirtualinterfaceresponsetypedef"></a>
+```python title="Definition"
+class DeleteVirtualInterfaceRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: str,
+```
 
 ## DeleteVirtualInterfaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DeleteVirtualInterfaceResponseTypeDef
+
+def get_value() -> DeleteVirtualInterfaceResponseTypeDef:
+    return {
+        "virtualInterfaceState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteVirtualInterfaceResponseTypeDef(TypedDict):
+    virtualInterfaceState: VirtualInterfaceStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterfaceState`:
-  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectionloarequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectionLoaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeConnectionLoaRequestRequestTypeDef
+
+def get_value() -> DescribeConnectionLoaRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectionLoaRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    providerName: NotRequired[str],
+    loaContentType: NotRequired[LoaContentTypeType],  # (1)
+```
 
-- `connectionId`: `str`
-
-Optional fields:
-
-- `providerName`: `str`
-- `loaContentType`: `Literal['application/pdf']` (see
-  [LoaContentTypeType](./literals.md#loacontenttypetype))
-
-<a id="describeconnectionloaresponsetypedef"></a>
-
+1. See [:material-code-brackets: LoaContentTypeType](./literals.md#loacontenttypetype) 
 ## DescribeConnectionLoaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeConnectionLoaResponseTypeDef
+
+def get_value() -> DescribeConnectionLoaResponseTypeDef:
+    return {
+        "loa": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectionLoaResponseTypeDef(TypedDict):
+    loa: LoaTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `loa`: [LoaTypeDef](./type_defs.md#loatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectionsoninterconnectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoaTypeDef](./type_defs.md#loatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectionsOnInterconnectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeConnectionsOnInterconnectRequestRequestTypeDef
+
+def get_value() -> DescribeConnectionsOnInterconnectRequestRequestTypeDef:
+    return {
+        "interconnectId": ...,
+    }
 ```
 
-Required fields:
-
-- `interconnectId`: `str`
-
-<a id="describeconnectionsrequestrequesttypedef"></a>
+```python title="Definition"
+class DescribeConnectionsOnInterconnectRequestRequestTypeDef(TypedDict):
+    interconnectId: str,
+```
 
 ## DescribeConnectionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeConnectionsRequestRequestTypeDef
+
+def get_value() -> DescribeConnectionsRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `connectionId`: `str`
-
-<a id="describecustomermetadataresponsetypedef"></a>
+```python title="Definition"
+class DescribeConnectionsRequestRequestTypeDef(TypedDict):
+    connectionId: NotRequired[str],
+```
 
 ## DescribeCustomerMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeCustomerMetadataResponseTypeDef
+
+def get_value() -> DescribeCustomerMetadataResponseTypeDef:
+    return {
+        "agreements": ...,
+        "nniPartnerType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCustomerMetadataResponseTypeDef(TypedDict):
+    agreements: List[CustomerAgreementTypeDef],  # (1)
+    nniPartnerType: NniPartnerTypeType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `agreements`:
-  `List`\[[CustomerAgreementTypeDef](./type_defs.md#customeragreementtypedef)\]
-- `nniPartnerType`: [NniPartnerTypeType](./literals.md#nnipartnertypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedirectconnectgatewayassociationproposalsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomerAgreementTypeDef](./type_defs.md#customeragreementtypedef) 
+2. See [:material-code-brackets: NniPartnerTypeType](./literals.md#nnipartnertypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef
+
+def get_value() -> DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
 ```
 
-Optional fields:
-
-- `directConnectGatewayId`: `str`
-- `proposalId`: `str`
-- `associatedGatewayId`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describedirectconnectgatewayassociationproposalsresulttypedef"></a>
+```python title="Definition"
+class DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef(TypedDict):
+    directConnectGatewayId: NotRequired[str],
+    proposalId: NotRequired[str],
+    associatedGatewayId: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## DescribeDirectConnectGatewayAssociationProposalsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationProposalsResultTypeDef
+
+def get_value() -> DescribeDirectConnectGatewayAssociationProposalsResultTypeDef:
+    return {
+        "directConnectGatewayAssociationProposals": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDirectConnectGatewayAssociationProposalsResultTypeDef(TypedDict):
+    directConnectGatewayAssociationProposals: List[DirectConnectGatewayAssociationProposalTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGatewayAssociationProposals`:
-  `List`\[[DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DirectConnectGatewayAssociationProposalTypeDef](./type_defs.md#directconnectgatewayassociationproposaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDirectConnectGatewayAssociationsRequestDescribeDirectConnectGatewayAssociationsPaginateTypeDef
 
-<a id="describedirectconnectgatewayassociationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationsRequestDescribeDirectConnectGatewayAssociationsPaginateTypeDef
 
+def get_value() -> DescribeDirectConnectGatewayAssociationsRequestDescribeDirectConnectGatewayAssociationsPaginateTypeDef:
+    return {
+        "associationId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDirectConnectGatewayAssociationsRequestDescribeDirectConnectGatewayAssociationsPaginateTypeDef(TypedDict):
+    associationId: NotRequired[str],
+    associatedGatewayId: NotRequired[str],
+    directConnectGatewayId: NotRequired[str],
+    virtualGatewayId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDirectConnectGatewayAssociationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationsRequestRequestTypeDef
+
+def get_value() -> DescribeDirectConnectGatewayAssociationsRequestRequestTypeDef:
+    return {
+        "associationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `associationId`: `str`
-- `associatedGatewayId`: `str`
-- `directConnectGatewayId`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `virtualGatewayId`: `str`
-
-<a id="describedirectconnectgatewayassociationsresulttypedef"></a>
+```python title="Definition"
+class DescribeDirectConnectGatewayAssociationsRequestRequestTypeDef(TypedDict):
+    associationId: NotRequired[str],
+    associatedGatewayId: NotRequired[str],
+    directConnectGatewayId: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    virtualGatewayId: NotRequired[str],
+```
 
 ## DescribeDirectConnectGatewayAssociationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAssociationsResultTypeDef
+
+def get_value() -> DescribeDirectConnectGatewayAssociationsResultTypeDef:
+    return {
+        "directConnectGatewayAssociations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDirectConnectGatewayAssociationsResultTypeDef(TypedDict):
+    directConnectGatewayAssociations: List[DirectConnectGatewayAssociationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGatewayAssociations`:
-  `List`\[[DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDirectConnectGatewayAttachmentsRequestDescribeDirectConnectGatewayAttachmentsPaginateTypeDef
 
-<a id="describedirectconnectgatewayattachmentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAttachmentsRequestDescribeDirectConnectGatewayAttachmentsPaginateTypeDef
 
+def get_value() -> DescribeDirectConnectGatewayAttachmentsRequestDescribeDirectConnectGatewayAttachmentsPaginateTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDirectConnectGatewayAttachmentsRequestDescribeDirectConnectGatewayAttachmentsPaginateTypeDef(TypedDict):
+    directConnectGatewayId: NotRequired[str],
+    virtualInterfaceId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDirectConnectGatewayAttachmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAttachmentsRequestRequestTypeDef
+
+def get_value() -> DescribeDirectConnectGatewayAttachmentsRequestRequestTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
 ```
 
-Optional fields:
-
-- `directConnectGatewayId`: `str`
-- `virtualInterfaceId`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describedirectconnectgatewayattachmentsresulttypedef"></a>
+```python title="Definition"
+class DescribeDirectConnectGatewayAttachmentsRequestRequestTypeDef(TypedDict):
+    directConnectGatewayId: NotRequired[str],
+    virtualInterfaceId: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## DescribeDirectConnectGatewayAttachmentsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewayAttachmentsResultTypeDef
+
+def get_value() -> DescribeDirectConnectGatewayAttachmentsResultTypeDef:
+    return {
+        "directConnectGatewayAttachments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDirectConnectGatewayAttachmentsResultTypeDef(TypedDict):
+    directConnectGatewayAttachments: List[DirectConnectGatewayAttachmentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGatewayAttachments`:
-  `List`\[[DirectConnectGatewayAttachmentTypeDef](./type_defs.md#directconnectgatewayattachmenttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DirectConnectGatewayAttachmentTypeDef](./type_defs.md#directconnectgatewayattachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDirectConnectGatewaysRequestDescribeDirectConnectGatewaysPaginateTypeDef
 
-<a id="describedirectconnectgatewaysrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewaysRequestDescribeDirectConnectGatewaysPaginateTypeDef
 
+def get_value() -> DescribeDirectConnectGatewaysRequestDescribeDirectConnectGatewaysPaginateTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDirectConnectGatewaysRequestDescribeDirectConnectGatewaysPaginateTypeDef(TypedDict):
+    directConnectGatewayId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDirectConnectGatewaysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewaysRequestRequestTypeDef
+
+def get_value() -> DescribeDirectConnectGatewaysRequestRequestTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
 ```
 
-Optional fields:
-
-- `directConnectGatewayId`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describedirectconnectgatewaysresulttypedef"></a>
+```python title="Definition"
+class DescribeDirectConnectGatewaysRequestRequestTypeDef(TypedDict):
+    directConnectGatewayId: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## DescribeDirectConnectGatewaysResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeDirectConnectGatewaysResultTypeDef
+
+def get_value() -> DescribeDirectConnectGatewaysResultTypeDef:
+    return {
+        "directConnectGateways": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDirectConnectGatewaysResultTypeDef(TypedDict):
+    directConnectGateways: List[DirectConnectGatewayTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGateways`:
-  `List`\[[DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describehostedconnectionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeHostedConnectionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeHostedConnectionsRequestRequestTypeDef
+
+def get_value() -> DescribeHostedConnectionsRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `connectionId`: `str`
-
-<a id="describeinterconnectloarequestrequesttypedef"></a>
+```python title="Definition"
+class DescribeHostedConnectionsRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+```
 
 ## DescribeInterconnectLoaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeInterconnectLoaRequestRequestTypeDef
+
+def get_value() -> DescribeInterconnectLoaRequestRequestTypeDef:
+    return {
+        "interconnectId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInterconnectLoaRequestRequestTypeDef(TypedDict):
+    interconnectId: str,
+    providerName: NotRequired[str],
+    loaContentType: NotRequired[LoaContentTypeType],  # (1)
+```
 
-- `interconnectId`: `str`
-
-Optional fields:
-
-- `providerName`: `str`
-- `loaContentType`: `Literal['application/pdf']` (see
-  [LoaContentTypeType](./literals.md#loacontenttypetype))
-
-<a id="describeinterconnectloaresponsetypedef"></a>
-
+1. See [:material-code-brackets: LoaContentTypeType](./literals.md#loacontenttypetype) 
 ## DescribeInterconnectLoaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeInterconnectLoaResponseTypeDef
+
+def get_value() -> DescribeInterconnectLoaResponseTypeDef:
+    return {
+        "loa": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInterconnectLoaResponseTypeDef(TypedDict):
+    loa: LoaTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `loa`: [LoaTypeDef](./type_defs.md#loatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeinterconnectsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoaTypeDef](./type_defs.md#loatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInterconnectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeInterconnectsRequestRequestTypeDef
+
+def get_value() -> DescribeInterconnectsRequestRequestTypeDef:
+    return {
+        "interconnectId": ...,
+    }
 ```
 
-Optional fields:
-
-- `interconnectId`: `str`
-
-<a id="describelagsrequestrequesttypedef"></a>
+```python title="Definition"
+class DescribeInterconnectsRequestRequestTypeDef(TypedDict):
+    interconnectId: NotRequired[str],
+```
 
 ## DescribeLagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeLagsRequestRequestTypeDef
+
+def get_value() -> DescribeLagsRequestRequestTypeDef:
+    return {
+        "lagId": ...,
+    }
 ```
 
-Optional fields:
-
-- `lagId`: `str`
-
-<a id="describeloarequestrequesttypedef"></a>
+```python title="Definition"
+class DescribeLagsRequestRequestTypeDef(TypedDict):
+    lagId: NotRequired[str],
+```
 
 ## DescribeLoaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeLoaRequestRequestTypeDef
+
+def get_value() -> DescribeLoaRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLoaRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    providerName: NotRequired[str],
+    loaContentType: NotRequired[LoaContentTypeType],  # (1)
+```
 
-- `connectionId`: `str`
-
-Optional fields:
-
-- `providerName`: `str`
-- `loaContentType`: `Literal['application/pdf']` (see
-  [LoaContentTypeType](./literals.md#loacontenttypetype))
-
-<a id="describerouterconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LoaContentTypeType](./literals.md#loacontenttypetype) 
 ## DescribeRouterConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeRouterConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeRouterConfigurationRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualInterfaceId`: `str`
-
-Optional fields:
-
-- `routerTypeIdentifier`: `str`
-
-<a id="describerouterconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DescribeRouterConfigurationRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: str,
+    routerTypeIdentifier: NotRequired[str],
+```
 
 ## DescribeRouterConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeRouterConfigurationResponseTypeDef
+
+def get_value() -> DescribeRouterConfigurationResponseTypeDef:
+    return {
+        "customerRouterConfig": ...,
+        "router": ...,
+        "virtualInterfaceId": ...,
+        "virtualInterfaceName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRouterConfigurationResponseTypeDef(TypedDict):
+    customerRouterConfig: str,
+    router: RouterTypeTypeDef,  # (1)
+    virtualInterfaceId: str,
+    virtualInterfaceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `customerRouterConfig`: `str`
-- `router`: [RouterTypeTypeDef](./type_defs.md#routertypetypedef)
-- `virtualInterfaceId`: `str`
-- `virtualInterfaceName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RouterTypeTypeDef](./type_defs.md#routertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeTagsRequestRequestTypeDef
+
+def get_value() -> DescribeTagsRequestRequestTypeDef:
+    return {
+        "resourceArns": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArns`: `Sequence`\[`str`\]
-
-<a id="describetagsresponsetypedef"></a>
+```python title="Definition"
+class DescribeTagsRequestRequestTypeDef(TypedDict):
+    resourceArns: Sequence[str],
+```
 
 ## DescribeTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeTagsResponseTypeDef
+
+def get_value() -> DescribeTagsResponseTypeDef:
+    return {
+        "resourceTags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTagsResponseTypeDef(TypedDict):
+    resourceTags: List[ResourceTagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceTags`:
-  `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevirtualinterfacesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVirtualInterfacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DescribeVirtualInterfacesRequestRequestTypeDef
+
+def get_value() -> DescribeVirtualInterfacesRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `connectionId`: `str`
-- `virtualInterfaceId`: `str`
-
-<a id="directconnectgatewayassociationproposaltypedef"></a>
+```python title="Definition"
+class DescribeVirtualInterfacesRequestRequestTypeDef(TypedDict):
+    connectionId: NotRequired[str],
+    virtualInterfaceId: NotRequired[str],
+```
 
 ## DirectConnectGatewayAssociationProposalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DirectConnectGatewayAssociationProposalTypeDef
+
+def get_value() -> DirectConnectGatewayAssociationProposalTypeDef:
+    return {
+        "proposalId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DirectConnectGatewayAssociationProposalTypeDef(TypedDict):
+    proposalId: NotRequired[str],
+    directConnectGatewayId: NotRequired[str],
+    directConnectGatewayOwnerAccount: NotRequired[str],
+    proposalState: NotRequired[DirectConnectGatewayAssociationProposalStateType],  # (1)
+    associatedGateway: NotRequired[AssociatedGatewayTypeDef],  # (2)
+    existingAllowedPrefixesToDirectConnectGateway: NotRequired[List[RouteFilterPrefixTypeDef]],  # (3)
+    requestedAllowedPrefixesToDirectConnectGateway: NotRequired[List[RouteFilterPrefixTypeDef]],  # (3)
+```
 
-- `proposalId`: `str`
-- `directConnectGatewayId`: `str`
-- `directConnectGatewayOwnerAccount`: `str`
-- `proposalState`:
-  [DirectConnectGatewayAssociationProposalStateType](./literals.md#directconnectgatewayassociationproposalstatetype)
-- `associatedGateway`:
-  [AssociatedGatewayTypeDef](./type_defs.md#associatedgatewaytypedef)
-- `existingAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `requestedAllowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-
-<a id="directconnectgatewayassociationtypedef"></a>
-
+1. See [:material-code-brackets: DirectConnectGatewayAssociationProposalStateType](./literals.md#directconnectgatewayassociationproposalstatetype) 
+2. See [:material-code-braces: AssociatedGatewayTypeDef](./type_defs.md#associatedgatewaytypedef) 
+3. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
+4. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
 ## DirectConnectGatewayAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DirectConnectGatewayAssociationTypeDef
+
+def get_value() -> DirectConnectGatewayAssociationTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DirectConnectGatewayAssociationTypeDef(TypedDict):
+    directConnectGatewayId: NotRequired[str],
+    directConnectGatewayOwnerAccount: NotRequired[str],
+    associationState: NotRequired[DirectConnectGatewayAssociationStateType],  # (1)
+    stateChangeError: NotRequired[str],
+    associatedGateway: NotRequired[AssociatedGatewayTypeDef],  # (2)
+    associationId: NotRequired[str],
+    allowedPrefixesToDirectConnectGateway: NotRequired[List[RouteFilterPrefixTypeDef]],  # (3)
+    virtualGatewayId: NotRequired[str],
+    virtualGatewayRegion: NotRequired[str],
+    virtualGatewayOwnerAccount: NotRequired[str],
+```
 
-- `directConnectGatewayId`: `str`
-- `directConnectGatewayOwnerAccount`: `str`
-- `associationState`:
-  [DirectConnectGatewayAssociationStateType](./literals.md#directconnectgatewayassociationstatetype)
-- `stateChangeError`: `str`
-- `associatedGateway`:
-  [AssociatedGatewayTypeDef](./type_defs.md#associatedgatewaytypedef)
-- `associationId`: `str`
-- `allowedPrefixesToDirectConnectGateway`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `virtualGatewayId`: `str`
-- `virtualGatewayRegion`: `str`
-- `virtualGatewayOwnerAccount`: `str`
-
-<a id="directconnectgatewayattachmenttypedef"></a>
-
+1. See [:material-code-brackets: DirectConnectGatewayAssociationStateType](./literals.md#directconnectgatewayassociationstatetype) 
+2. See [:material-code-braces: AssociatedGatewayTypeDef](./type_defs.md#associatedgatewaytypedef) 
+3. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
 ## DirectConnectGatewayAttachmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DirectConnectGatewayAttachmentTypeDef
+
+def get_value() -> DirectConnectGatewayAttachmentTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DirectConnectGatewayAttachmentTypeDef(TypedDict):
+    directConnectGatewayId: NotRequired[str],
+    virtualInterfaceId: NotRequired[str],
+    virtualInterfaceRegion: NotRequired[str],
+    virtualInterfaceOwnerAccount: NotRequired[str],
+    attachmentState: NotRequired[DirectConnectGatewayAttachmentStateType],  # (1)
+    attachmentType: NotRequired[DirectConnectGatewayAttachmentTypeType],  # (2)
+    stateChangeError: NotRequired[str],
+```
 
-- `directConnectGatewayId`: `str`
-- `virtualInterfaceId`: `str`
-- `virtualInterfaceRegion`: `str`
-- `virtualInterfaceOwnerAccount`: `str`
-- `attachmentState`:
-  [DirectConnectGatewayAttachmentStateType](./literals.md#directconnectgatewayattachmentstatetype)
-- `attachmentType`:
-  [DirectConnectGatewayAttachmentTypeType](./literals.md#directconnectgatewayattachmenttypetype)
-- `stateChangeError`: `str`
-
-<a id="directconnectgatewaytypedef"></a>
-
+1. See [:material-code-brackets: DirectConnectGatewayAttachmentStateType](./literals.md#directconnectgatewayattachmentstatetype) 
+2. See [:material-code-brackets: DirectConnectGatewayAttachmentTypeType](./literals.md#directconnectgatewayattachmenttypetype) 
 ## DirectConnectGatewayTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DirectConnectGatewayTypeDef
+
+def get_value() -> DirectConnectGatewayTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DirectConnectGatewayTypeDef(TypedDict):
+    directConnectGatewayId: NotRequired[str],
+    directConnectGatewayName: NotRequired[str],
+    amazonSideAsn: NotRequired[int],
+    ownerAccount: NotRequired[str],
+    directConnectGatewayState: NotRequired[DirectConnectGatewayStateType],  # (1)
+    stateChangeError: NotRequired[str],
+```
 
-- `directConnectGatewayId`: `str`
-- `directConnectGatewayName`: `str`
-- `amazonSideAsn`: `int`
-- `ownerAccount`: `str`
-- `directConnectGatewayState`:
-  [DirectConnectGatewayStateType](./literals.md#directconnectgatewaystatetype)
-- `stateChangeError`: `str`
-
-<a id="disassociateconnectionfromlagrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DirectConnectGatewayStateType](./literals.md#directconnectgatewaystatetype) 
 ## DisassociateConnectionFromLagRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DisassociateConnectionFromLagRequestRequestTypeDef
+
+def get_value() -> DisassociateConnectionFromLagRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "lagId": ...,
+    }
 ```
 
-Required fields:
-
-- `connectionId`: `str`
-- `lagId`: `str`
-
-<a id="disassociatemacseckeyrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateConnectionFromLagRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    lagId: str,
+```
 
 ## DisassociateMacSecKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DisassociateMacSecKeyRequestRequestTypeDef
+
+def get_value() -> DisassociateMacSecKeyRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+        "secretARN": ...,
+    }
 ```
 
-Required fields:
-
-- `connectionId`: `str`
-- `secretARN`: `str`
-
-<a id="disassociatemacseckeyresponsetypedef"></a>
+```python title="Definition"
+class DisassociateMacSecKeyRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    secretARN: str,
+```
 
 ## DisassociateMacSecKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import DisassociateMacSecKeyResponseTypeDef
+
+def get_value() -> DisassociateMacSecKeyResponseTypeDef:
+    return {
+        "connectionId": ...,
+        "macSecKeys": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateMacSecKeyResponseTypeDef(TypedDict):
+    connectionId: str,
+    macSecKeys: List[MacSecKeyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectionId`: `str`
-- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="interconnectresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: MacSecKeyTypeDef](./type_defs.md#macseckeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InterconnectResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import InterconnectResponseMetadataTypeDef
+
+def get_value() -> InterconnectResponseMetadataTypeDef:
+    return {
+        "interconnectId": ...,
+        "interconnectName": ...,
+        "interconnectState": ...,
+        "region": ...,
+        "location": ...,
+        "bandwidth": ...,
+        "loaIssueTime": ...,
+        "lagId": ...,
+        "awsDevice": ...,
+        "jumboFrameCapable": ...,
+        "awsDeviceV2": ...,
+        "awsLogicalDeviceId": ...,
+        "hasLogicalRedundancy": ...,
+        "tags": ...,
+        "providerName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InterconnectResponseMetadataTypeDef(TypedDict):
+    interconnectId: str,
+    interconnectName: str,
+    interconnectState: InterconnectStateType,  # (1)
+    region: str,
+    location: str,
+    bandwidth: str,
+    loaIssueTime: datetime,
+    lagId: str,
+    awsDevice: str,
+    jumboFrameCapable: bool,
+    awsDeviceV2: str,
+    awsLogicalDeviceId: str,
+    hasLogicalRedundancy: HasLogicalRedundancyType,  # (2)
+    tags: List[TagTypeDef],  # (3)
+    providerName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `interconnectId`: `str`
-- `interconnectName`: `str`
-- `interconnectState`:
-  [InterconnectStateType](./literals.md#interconnectstatetype)
-- `region`: `str`
-- `location`: `str`
-- `bandwidth`: `str`
-- `loaIssueTime`: `datetime`
-- `lagId`: `str`
-- `awsDevice`: `str`
-- `jumboFrameCapable`: `bool`
-- `awsDeviceV2`: `str`
-- `awsLogicalDeviceId`: `str`
-- `hasLogicalRedundancy`:
-  [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `providerName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="interconnecttypedef"></a>
-
+1. See [:material-code-brackets: InterconnectStateType](./literals.md#interconnectstatetype) 
+2. See [:material-code-brackets: HasLogicalRedundancyType](./literals.md#haslogicalredundancytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InterconnectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import InterconnectTypeDef
+
+def get_value() -> InterconnectTypeDef:
+    return {
+        "interconnectId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InterconnectTypeDef(TypedDict):
+    interconnectId: NotRequired[str],
+    interconnectName: NotRequired[str],
+    interconnectState: NotRequired[InterconnectStateType],  # (1)
+    region: NotRequired[str],
+    location: NotRequired[str],
+    bandwidth: NotRequired[str],
+    loaIssueTime: NotRequired[datetime],
+    lagId: NotRequired[str],
+    awsDevice: NotRequired[str],
+    jumboFrameCapable: NotRequired[bool],
+    awsDeviceV2: NotRequired[str],
+    awsLogicalDeviceId: NotRequired[str],
+    hasLogicalRedundancy: NotRequired[HasLogicalRedundancyType],  # (2)
+    tags: NotRequired[List[TagTypeDef]],  # (3)
+    providerName: NotRequired[str],
+```
 
-- `interconnectId`: `str`
-- `interconnectName`: `str`
-- `interconnectState`:
-  [InterconnectStateType](./literals.md#interconnectstatetype)
-- `region`: `str`
-- `location`: `str`
-- `bandwidth`: `str`
-- `loaIssueTime`: `datetime`
-- `lagId`: `str`
-- `awsDevice`: `str`
-- `jumboFrameCapable`: `bool`
-- `awsDeviceV2`: `str`
-- `awsLogicalDeviceId`: `str`
-- `hasLogicalRedundancy`:
-  [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `providerName`: `str`
-
-<a id="interconnectstypedef"></a>
-
+1. See [:material-code-brackets: InterconnectStateType](./literals.md#interconnectstatetype) 
+2. See [:material-code-brackets: HasLogicalRedundancyType](./literals.md#haslogicalredundancytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## InterconnectsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import InterconnectsTypeDef
+
+def get_value() -> InterconnectsTypeDef:
+    return {
+        "interconnects": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InterconnectsTypeDef(TypedDict):
+    interconnects: List[InterconnectTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `interconnects`:
-  `List`\[[InterconnectTypeDef](./type_defs.md#interconnecttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lagresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: InterconnectTypeDef](./type_defs.md#interconnecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LagResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import LagResponseMetadataTypeDef
+
+def get_value() -> LagResponseMetadataTypeDef:
+    return {
+        "connectionsBandwidth": ...,
+        "numberOfConnections": ...,
+        "lagId": ...,
+        "ownerAccount": ...,
+        "lagName": ...,
+        "lagState": ...,
+        "location": ...,
+        "region": ...,
+        "minimumLinks": ...,
+        "awsDevice": ...,
+        "awsDeviceV2": ...,
+        "awsLogicalDeviceId": ...,
+        "connections": ...,
+        "allowsHostedConnections": ...,
+        "jumboFrameCapable": ...,
+        "hasLogicalRedundancy": ...,
+        "tags": ...,
+        "providerName": ...,
+        "macSecCapable": ...,
+        "encryptionMode": ...,
+        "macSecKeys": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LagResponseMetadataTypeDef(TypedDict):
+    connectionsBandwidth: str,
+    numberOfConnections: int,
+    lagId: str,
+    ownerAccount: str,
+    lagName: str,
+    lagState: LagStateType,  # (1)
+    location: str,
+    region: str,
+    minimumLinks: int,
+    awsDevice: str,
+    awsDeviceV2: str,
+    awsLogicalDeviceId: str,
+    connections: List[ConnectionTypeDef],  # (2)
+    allowsHostedConnections: bool,
+    jumboFrameCapable: bool,
+    hasLogicalRedundancy: HasLogicalRedundancyType,  # (3)
+    tags: List[TagTypeDef],  # (4)
+    providerName: str,
+    macSecCapable: bool,
+    encryptionMode: str,
+    macSecKeys: List[MacSecKeyTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `connectionsBandwidth`: `str`
-- `numberOfConnections`: `int`
-- `lagId`: `str`
-- `ownerAccount`: `str`
-- `lagName`: `str`
-- `lagState`: [LagStateType](./literals.md#lagstatetype)
-- `location`: `str`
-- `region`: `str`
-- `minimumLinks`: `int`
-- `awsDevice`: `str`
-- `awsDeviceV2`: `str`
-- `awsLogicalDeviceId`: `str`
-- `connections`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
-- `allowsHostedConnections`: `bool`
-- `jumboFrameCapable`: `bool`
-- `hasLogicalRedundancy`:
-  [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `providerName`: `str`
-- `macSecCapable`: `bool`
-- `encryptionMode`: `str`
-- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lagtypedef"></a>
-
+1. See [:material-code-brackets: LagStateType](./literals.md#lagstatetype) 
+2. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+3. See [:material-code-brackets: HasLogicalRedundancyType](./literals.md#haslogicalredundancytype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: MacSecKeyTypeDef](./type_defs.md#macseckeytypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import LagTypeDef
+
+def get_value() -> LagTypeDef:
+    return {
+        "connectionsBandwidth": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LagTypeDef(TypedDict):
+    connectionsBandwidth: NotRequired[str],
+    numberOfConnections: NotRequired[int],
+    lagId: NotRequired[str],
+    ownerAccount: NotRequired[str],
+    lagName: NotRequired[str],
+    lagState: NotRequired[LagStateType],  # (1)
+    location: NotRequired[str],
+    region: NotRequired[str],
+    minimumLinks: NotRequired[int],
+    awsDevice: NotRequired[str],
+    awsDeviceV2: NotRequired[str],
+    awsLogicalDeviceId: NotRequired[str],
+    connections: NotRequired[List[ConnectionTypeDef]],  # (2)
+    allowsHostedConnections: NotRequired[bool],
+    jumboFrameCapable: NotRequired[bool],
+    hasLogicalRedundancy: NotRequired[HasLogicalRedundancyType],  # (3)
+    tags: NotRequired[List[TagTypeDef]],  # (4)
+    providerName: NotRequired[str],
+    macSecCapable: NotRequired[bool],
+    encryptionMode: NotRequired[str],
+    macSecKeys: NotRequired[List[MacSecKeyTypeDef]],  # (5)
+```
 
-- `connectionsBandwidth`: `str`
-- `numberOfConnections`: `int`
-- `lagId`: `str`
-- `ownerAccount`: `str`
-- `lagName`: `str`
-- `lagState`: [LagStateType](./literals.md#lagstatetype)
-- `location`: `str`
-- `region`: `str`
-- `minimumLinks`: `int`
-- `awsDevice`: `str`
-- `awsDeviceV2`: `str`
-- `awsLogicalDeviceId`: `str`
-- `connections`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
-- `allowsHostedConnections`: `bool`
-- `jumboFrameCapable`: `bool`
-- `hasLogicalRedundancy`:
-  [HasLogicalRedundancyType](./literals.md#haslogicalredundancytype)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `providerName`: `str`
-- `macSecCapable`: `bool`
-- `encryptionMode`: `str`
-- `macSecKeys`: `List`\[[MacSecKeyTypeDef](./type_defs.md#macseckeytypedef)\]
-
-<a id="lagstypedef"></a>
-
+1. See [:material-code-brackets: LagStateType](./literals.md#lagstatetype) 
+2. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+3. See [:material-code-brackets: HasLogicalRedundancyType](./literals.md#haslogicalredundancytype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: MacSecKeyTypeDef](./type_defs.md#macseckeytypedef) 
 ## LagsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import LagsTypeDef
+
+def get_value() -> LagsTypeDef:
+    return {
+        "lags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LagsTypeDef(TypedDict):
+    lags: List[LagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `lags`: `List`\[[LagTypeDef](./type_defs.md#lagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listvirtualinterfacetesthistoryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LagTypeDef](./type_defs.md#lagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListVirtualInterfaceTestHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ListVirtualInterfaceTestHistoryRequestRequestTypeDef
+
+def get_value() -> ListVirtualInterfaceTestHistoryRequestRequestTypeDef:
+    return {
+        "testId": ...,
+    }
 ```
 
-Optional fields:
-
-- `testId`: `str`
-- `virtualInterfaceId`: `str`
-- `bgpPeers`: `Sequence`\[`str`\]
-- `status`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listvirtualinterfacetesthistoryresponsetypedef"></a>
+```python title="Definition"
+class ListVirtualInterfaceTestHistoryRequestRequestTypeDef(TypedDict):
+    testId: NotRequired[str],
+    virtualInterfaceId: NotRequired[str],
+    bgpPeers: NotRequired[Sequence[str]],
+    status: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListVirtualInterfaceTestHistoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ListVirtualInterfaceTestHistoryResponseTypeDef
+
+def get_value() -> ListVirtualInterfaceTestHistoryResponseTypeDef:
+    return {
+        "virtualInterfaceTestHistory": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVirtualInterfaceTestHistoryResponseTypeDef(TypedDict):
+    virtualInterfaceTestHistory: List[VirtualInterfaceTestHistoryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterfaceTestHistory`:
-  `List`\[[VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loaresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoaResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import LoaResponseMetadataTypeDef
+
+def get_value() -> LoaResponseMetadataTypeDef:
+    return {
+        "loaContent": ...,
+        "loaContentType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LoaResponseMetadataTypeDef(TypedDict):
+    loaContent: bytes,
+    loaContentType: LoaContentTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `loaContent`: `bytes`
-- `loaContentType`: `Literal['application/pdf']` (see
-  [LoaContentTypeType](./literals.md#loacontenttypetype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loatypedef"></a>
-
+1. See [:material-code-brackets: LoaContentTypeType](./literals.md#loacontenttypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import LoaTypeDef
+
+def get_value() -> LoaTypeDef:
+    return {
+        "loaContent": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoaTypeDef(TypedDict):
+    loaContent: NotRequired[bytes],
+    loaContentType: NotRequired[LoaContentTypeType],  # (1)
+```
 
-- `loaContent`: `bytes`
-- `loaContentType`: `Literal['application/pdf']` (see
-  [LoaContentTypeType](./literals.md#loacontenttypetype))
-
-<a id="locationtypedef"></a>
-
+1. See [:material-code-brackets: LoaContentTypeType](./literals.md#loacontenttypetype) 
 ## LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import LocationTypeDef
+
+def get_value() -> LocationTypeDef:
+    return {
+        "locationCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `locationCode`: `str`
-- `locationName`: `str`
-- `region`: `str`
-- `availablePortSpeeds`: `List`\[`str`\]
-- `availableProviders`: `List`\[`str`\]
-- `availableMacSecPortSpeeds`: `List`\[`str`\]
-
-<a id="locationstypedef"></a>
+```python title="Definition"
+class LocationTypeDef(TypedDict):
+    locationCode: NotRequired[str],
+    locationName: NotRequired[str],
+    region: NotRequired[str],
+    availablePortSpeeds: NotRequired[List[str]],
+    availableProviders: NotRequired[List[str]],
+    availableMacSecPortSpeeds: NotRequired[List[str]],
+```
 
 ## LocationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import LocationsTypeDef
+
+def get_value() -> LocationsTypeDef:
+    return {
+        "locations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LocationsTypeDef(TypedDict):
+    locations: List[LocationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `locations`: `List`\[[LocationTypeDef](./type_defs.md#locationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="macseckeytypedef"></a>
-
+1. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MacSecKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import MacSecKeyTypeDef
+
+def get_value() -> MacSecKeyTypeDef:
+    return {
+        "secretARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `secretARN`: `str`
-- `ckn`: `str`
-- `state`: `str`
-- `startOn`: `str`
-
-<a id="newbgppeertypedef"></a>
+```python title="Definition"
+class MacSecKeyTypeDef(TypedDict):
+    secretARN: NotRequired[str],
+    ckn: NotRequired[str],
+    state: NotRequired[str],
+    startOn: NotRequired[str],
+```
 
 ## NewBGPPeerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import NewBGPPeerTypeDef
+
+def get_value() -> NewBGPPeerTypeDef:
+    return {
+        "asn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NewBGPPeerTypeDef(TypedDict):
+    asn: NotRequired[int],
+    authKey: NotRequired[str],
+    addressFamily: NotRequired[AddressFamilyType],  # (1)
+    amazonAddress: NotRequired[str],
+    customerAddress: NotRequired[str],
+```
 
-- `asn`: `int`
-- `authKey`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `amazonAddress`: `str`
-- `customerAddress`: `str`
-
-<a id="newprivatevirtualinterfaceallocationtypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
 ## NewPrivateVirtualInterfaceAllocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import NewPrivateVirtualInterfaceAllocationTypeDef
+
+def get_value() -> NewPrivateVirtualInterfaceAllocationTypeDef:
+    return {
+        "virtualInterfaceName": ...,
+        "vlan": ...,
+        "asn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NewPrivateVirtualInterfaceAllocationTypeDef(TypedDict):
+    virtualInterfaceName: str,
+    vlan: int,
+    asn: int,
+    mtu: NotRequired[int],
+    authKey: NotRequired[str],
+    amazonAddress: NotRequired[str],
+    addressFamily: NotRequired[AddressFamilyType],  # (1)
+    customerAddress: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `virtualInterfaceName`: `str`
-- `vlan`: `int`
-- `asn`: `int`
-
-Optional fields:
-
-- `mtu`: `int`
-- `authKey`: `str`
-- `amazonAddress`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `customerAddress`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="newprivatevirtualinterfacetypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## NewPrivateVirtualInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import NewPrivateVirtualInterfaceTypeDef
+
+def get_value() -> NewPrivateVirtualInterfaceTypeDef:
+    return {
+        "virtualInterfaceName": ...,
+        "vlan": ...,
+        "asn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NewPrivateVirtualInterfaceTypeDef(TypedDict):
+    virtualInterfaceName: str,
+    vlan: int,
+    asn: int,
+    mtu: NotRequired[int],
+    authKey: NotRequired[str],
+    amazonAddress: NotRequired[str],
+    customerAddress: NotRequired[str],
+    addressFamily: NotRequired[AddressFamilyType],  # (1)
+    virtualGatewayId: NotRequired[str],
+    directConnectGatewayId: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    enableSiteLink: NotRequired[bool],
+```
 
-- `virtualInterfaceName`: `str`
-- `vlan`: `int`
-- `asn`: `int`
-
-Optional fields:
-
-- `mtu`: `int`
-- `authKey`: `str`
-- `amazonAddress`: `str`
-- `customerAddress`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `virtualGatewayId`: `str`
-- `directConnectGatewayId`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `enableSiteLink`: `bool`
-
-<a id="newpublicvirtualinterfaceallocationtypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## NewPublicVirtualInterfaceAllocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import NewPublicVirtualInterfaceAllocationTypeDef
+
+def get_value() -> NewPublicVirtualInterfaceAllocationTypeDef:
+    return {
+        "virtualInterfaceName": ...,
+        "vlan": ...,
+        "asn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NewPublicVirtualInterfaceAllocationTypeDef(TypedDict):
+    virtualInterfaceName: str,
+    vlan: int,
+    asn: int,
+    authKey: NotRequired[str],
+    amazonAddress: NotRequired[str],
+    customerAddress: NotRequired[str],
+    addressFamily: NotRequired[AddressFamilyType],  # (1)
+    routeFilterPrefixes: NotRequired[Sequence[RouteFilterPrefixTypeDef]],  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `virtualInterfaceName`: `str`
-- `vlan`: `int`
-- `asn`: `int`
-
-Optional fields:
-
-- `authKey`: `str`
-- `amazonAddress`: `str`
-- `customerAddress`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `routeFilterPrefixes`:
-  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="newpublicvirtualinterfacetypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
+2. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## NewPublicVirtualInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import NewPublicVirtualInterfaceTypeDef
+
+def get_value() -> NewPublicVirtualInterfaceTypeDef:
+    return {
+        "virtualInterfaceName": ...,
+        "vlan": ...,
+        "asn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NewPublicVirtualInterfaceTypeDef(TypedDict):
+    virtualInterfaceName: str,
+    vlan: int,
+    asn: int,
+    authKey: NotRequired[str],
+    amazonAddress: NotRequired[str],
+    customerAddress: NotRequired[str],
+    addressFamily: NotRequired[AddressFamilyType],  # (1)
+    routeFilterPrefixes: NotRequired[Sequence[RouteFilterPrefixTypeDef]],  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `virtualInterfaceName`: `str`
-- `vlan`: `int`
-- `asn`: `int`
-
-Optional fields:
-
-- `authKey`: `str`
-- `amazonAddress`: `str`
-- `customerAddress`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `routeFilterPrefixes`:
-  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="newtransitvirtualinterfaceallocationtypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
+2. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## NewTransitVirtualInterfaceAllocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import NewTransitVirtualInterfaceAllocationTypeDef
+
+def get_value() -> NewTransitVirtualInterfaceAllocationTypeDef:
+    return {
+        "virtualInterfaceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NewTransitVirtualInterfaceAllocationTypeDef(TypedDict):
+    virtualInterfaceName: NotRequired[str],
+    vlan: NotRequired[int],
+    asn: NotRequired[int],
+    mtu: NotRequired[int],
+    authKey: NotRequired[str],
+    amazonAddress: NotRequired[str],
+    customerAddress: NotRequired[str],
+    addressFamily: NotRequired[AddressFamilyType],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `virtualInterfaceName`: `str`
-- `vlan`: `int`
-- `asn`: `int`
-- `mtu`: `int`
-- `authKey`: `str`
-- `amazonAddress`: `str`
-- `customerAddress`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="newtransitvirtualinterfacetypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## NewTransitVirtualInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import NewTransitVirtualInterfaceTypeDef
+
+def get_value() -> NewTransitVirtualInterfaceTypeDef:
+    return {
+        "virtualInterfaceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NewTransitVirtualInterfaceTypeDef(TypedDict):
+    virtualInterfaceName: NotRequired[str],
+    vlan: NotRequired[int],
+    asn: NotRequired[int],
+    mtu: NotRequired[int],
+    authKey: NotRequired[str],
+    amazonAddress: NotRequired[str],
+    customerAddress: NotRequired[str],
+    addressFamily: NotRequired[AddressFamilyType],  # (1)
+    directConnectGatewayId: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    enableSiteLink: NotRequired[bool],
+```
 
-- `virtualInterfaceName`: `str`
-- `vlan`: `int`
-- `asn`: `int`
-- `mtu`: `int`
-- `authKey`: `str`
-- `amazonAddress`: `str`
-- `customerAddress`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `directConnectGatewayId`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `enableSiteLink`: `bool`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="resourcetagtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResourceTagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ResourceTagTypeDef
+
+def get_value() -> ResourceTagTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceTagTypeDef(TypedDict):
+    resourceArn: NotRequired[str],
+    tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `resourceArn`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="routefilterprefixtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RouteFilterPrefixTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import RouteFilterPrefixTypeDef
+
+def get_value() -> RouteFilterPrefixTypeDef:
+    return {
+        "cidr": ...,
+    }
 ```
 
-Optional fields:
-
-- `cidr`: `str`
-
-<a id="routertypetypedef"></a>
+```python title="Definition"
+class RouteFilterPrefixTypeDef(TypedDict):
+    cidr: NotRequired[str],
+```
 
 ## RouterTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import RouterTypeTypeDef
+
+def get_value() -> RouterTypeTypeDef:
+    return {
+        "vendor": ...,
+    }
 ```
 
-Optional fields:
-
-- `vendor`: `str`
-- `platform`: `str`
-- `software`: `str`
-- `xsltTemplateName`: `str`
-- `xsltTemplateNameForMacSec`: `str`
-- `routerTypeIdentifier`: `str`
-
-<a id="startbgpfailovertestrequestrequesttypedef"></a>
+```python title="Definition"
+class RouterTypeTypeDef(TypedDict):
+    vendor: NotRequired[str],
+    platform: NotRequired[str],
+    software: NotRequired[str],
+    xsltTemplateName: NotRequired[str],
+    xsltTemplateNameForMacSec: NotRequired[str],
+    routerTypeIdentifier: NotRequired[str],
+```
 
 ## StartBgpFailoverTestRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import StartBgpFailoverTestRequestRequestTypeDef
+
+def get_value() -> StartBgpFailoverTestRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualInterfaceId`: `str`
-
-Optional fields:
-
-- `bgpPeers`: `Sequence`\[`str`\]
-- `testDurationInMinutes`: `int`
-
-<a id="startbgpfailovertestresponsetypedef"></a>
+```python title="Definition"
+class StartBgpFailoverTestRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: str,
+    bgpPeers: NotRequired[Sequence[str]],
+    testDurationInMinutes: NotRequired[int],
+```
 
 ## StartBgpFailoverTestResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import StartBgpFailoverTestResponseTypeDef
+
+def get_value() -> StartBgpFailoverTestResponseTypeDef:
+    return {
+        "virtualInterfaceTest": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBgpFailoverTestResponseTypeDef(TypedDict):
+    virtualInterfaceTest: VirtualInterfaceTestHistoryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterfaceTest`:
-  [VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopbgpfailovertestrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopBgpFailoverTestRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import StopBgpFailoverTestRequestRequestTypeDef
+
+def get_value() -> StopBgpFailoverTestRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualInterfaceId`: `str`
-
-<a id="stopbgpfailovertestresponsetypedef"></a>
+```python title="Definition"
+class StopBgpFailoverTestRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: str,
+```
 
 ## StopBgpFailoverTestResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import StopBgpFailoverTestResponseTypeDef
+
+def get_value() -> StopBgpFailoverTestResponseTypeDef:
+    return {
+        "virtualInterfaceTest": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopBgpFailoverTestResponseTypeDef(TypedDict):
+    virtualInterfaceTest: VirtualInterfaceTestHistoryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterfaceTest`:
-  [VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `resourceArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Required fields:
-
-- `key`: `str`
-
-Optional fields:
-
-- `value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: str,
+    value: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateconnectionrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import UpdateConnectionRequestRequestTypeDef
+
+def get_value() -> UpdateConnectionRequestRequestTypeDef:
+    return {
+        "connectionId": ...,
+    }
 ```
 
-Required fields:
-
-- `connectionId`: `str`
-
-Optional fields:
-
-- `connectionName`: `str`
-- `encryptionMode`: `str`
-
-<a id="updatedirectconnectgatewayassociationrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateConnectionRequestRequestTypeDef(TypedDict):
+    connectionId: str,
+    connectionName: NotRequired[str],
+    encryptionMode: NotRequired[str],
+```
 
 ## UpdateDirectConnectGatewayAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayAssociationRequestRequestTypeDef
+
+def get_value() -> UpdateDirectConnectGatewayAssociationRequestRequestTypeDef:
+    return {
+        "associationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateDirectConnectGatewayAssociationRequestRequestTypeDef(TypedDict):
+    associationId: NotRequired[str],
+    addAllowedPrefixesToDirectConnectGateway: NotRequired[Sequence[RouteFilterPrefixTypeDef]],  # (1)
+    removeAllowedPrefixesToDirectConnectGateway: NotRequired[Sequence[RouteFilterPrefixTypeDef]],  # (1)
+```
 
-- `associationId`: `str`
-- `addAllowedPrefixesToDirectConnectGateway`:
-  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `removeAllowedPrefixesToDirectConnectGateway`:
-  `Sequence`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-
-<a id="updatedirectconnectgatewayassociationresulttypedef"></a>
-
+1. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
+2. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
 ## UpdateDirectConnectGatewayAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayAssociationResultTypeDef
+
+def get_value() -> UpdateDirectConnectGatewayAssociationResultTypeDef:
+    return {
+        "directConnectGatewayAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDirectConnectGatewayAssociationResultTypeDef(TypedDict):
+    directConnectGatewayAssociation: DirectConnectGatewayAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGatewayAssociation`:
-  [DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedirectconnectgatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayAssociationTypeDef](./type_defs.md#directconnectgatewayassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDirectConnectGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayRequestRequestTypeDef
+
+def get_value() -> UpdateDirectConnectGatewayRequestRequestTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+        "newDirectConnectGatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `directConnectGatewayId`: `str`
-- `newDirectConnectGatewayName`: `str`
-
-<a id="updatedirectconnectgatewayresponsetypedef"></a>
+```python title="Definition"
+class UpdateDirectConnectGatewayRequestRequestTypeDef(TypedDict):
+    directConnectGatewayId: str,
+    newDirectConnectGatewayName: str,
+```
 
 ## UpdateDirectConnectGatewayResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import UpdateDirectConnectGatewayResponseTypeDef
+
+def get_value() -> UpdateDirectConnectGatewayResponseTypeDef:
+    return {
+        "directConnectGateway": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDirectConnectGatewayResponseTypeDef(TypedDict):
+    directConnectGateway: DirectConnectGatewayTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `directConnectGateway`:
-  [DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatelagrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DirectConnectGatewayTypeDef](./type_defs.md#directconnectgatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateLagRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import UpdateLagRequestRequestTypeDef
+
+def get_value() -> UpdateLagRequestRequestTypeDef:
+    return {
+        "lagId": ...,
+    }
 ```
 
-Required fields:
-
-- `lagId`: `str`
-
-Optional fields:
-
-- `lagName`: `str`
-- `minimumLinks`: `int`
-- `encryptionMode`: `str`
-
-<a id="updatevirtualinterfaceattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateLagRequestRequestTypeDef(TypedDict):
+    lagId: str,
+    lagName: NotRequired[str],
+    minimumLinks: NotRequired[int],
+    encryptionMode: NotRequired[str],
+```
 
 ## UpdateVirtualInterfaceAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import UpdateVirtualInterfaceAttributesRequestRequestTypeDef
+
+def get_value() -> UpdateVirtualInterfaceAttributesRequestRequestTypeDef:
+    return {
+        "virtualInterfaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualInterfaceId`: `str`
-
-Optional fields:
-
-- `mtu`: `int`
-- `enableSiteLink`: `bool`
-- `virtualInterfaceName`: `str`
-
-<a id="virtualgatewaytypedef"></a>
+```python title="Definition"
+class UpdateVirtualInterfaceAttributesRequestRequestTypeDef(TypedDict):
+    virtualInterfaceId: str,
+    mtu: NotRequired[int],
+    enableSiteLink: NotRequired[bool],
+    virtualInterfaceName: NotRequired[str],
+```
 
 ## VirtualGatewayTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import VirtualGatewayTypeDef
+
+def get_value() -> VirtualGatewayTypeDef:
+    return {
+        "virtualGatewayId": ...,
+    }
 ```
 
-Optional fields:
-
-- `virtualGatewayId`: `str`
-- `virtualGatewayState`: `str`
-
-<a id="virtualgatewaystypedef"></a>
+```python title="Definition"
+class VirtualGatewayTypeDef(TypedDict):
+    virtualGatewayId: NotRequired[str],
+    virtualGatewayState: NotRequired[str],
+```
 
 ## VirtualGatewaysTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import VirtualGatewaysTypeDef
+
+def get_value() -> VirtualGatewaysTypeDef:
+    return {
+        "virtualGateways": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewaysTypeDef(TypedDict):
+    virtualGateways: List[VirtualGatewayTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualGateways`:
-  `List`\[[VirtualGatewayTypeDef](./type_defs.md#virtualgatewaytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="virtualinterfaceresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayTypeDef](./type_defs.md#virtualgatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VirtualInterfaceResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import VirtualInterfaceResponseMetadataTypeDef
+
+def get_value() -> VirtualInterfaceResponseMetadataTypeDef:
+    return {
+        "ownerAccount": ...,
+        "virtualInterfaceId": ...,
+        "location": ...,
+        "connectionId": ...,
+        "virtualInterfaceType": ...,
+        "virtualInterfaceName": ...,
+        "vlan": ...,
+        "asn": ...,
+        "amazonSideAsn": ...,
+        "authKey": ...,
+        "amazonAddress": ...,
+        "customerAddress": ...,
+        "addressFamily": ...,
+        "virtualInterfaceState": ...,
+        "customerRouterConfig": ...,
+        "mtu": ...,
+        "jumboFrameCapable": ...,
+        "virtualGatewayId": ...,
+        "directConnectGatewayId": ...,
+        "routeFilterPrefixes": ...,
+        "bgpPeers": ...,
+        "region": ...,
+        "awsDeviceV2": ...,
+        "awsLogicalDeviceId": ...,
+        "tags": ...,
+        "siteLinkEnabled": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualInterfaceResponseMetadataTypeDef(TypedDict):
+    ownerAccount: str,
+    virtualInterfaceId: str,
+    location: str,
+    connectionId: str,
+    virtualInterfaceType: str,
+    virtualInterfaceName: str,
+    vlan: int,
+    asn: int,
+    amazonSideAsn: int,
+    authKey: str,
+    amazonAddress: str,
+    customerAddress: str,
+    addressFamily: AddressFamilyType,  # (1)
+    virtualInterfaceState: VirtualInterfaceStateType,  # (2)
+    customerRouterConfig: str,
+    mtu: int,
+    jumboFrameCapable: bool,
+    virtualGatewayId: str,
+    directConnectGatewayId: str,
+    routeFilterPrefixes: List[RouteFilterPrefixTypeDef],  # (3)
+    bgpPeers: List[BGPPeerTypeDef],  # (4)
+    region: str,
+    awsDeviceV2: str,
+    awsLogicalDeviceId: str,
+    tags: List[TagTypeDef],  # (5)
+    siteLinkEnabled: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `ownerAccount`: `str`
-- `virtualInterfaceId`: `str`
-- `location`: `str`
-- `connectionId`: `str`
-- `virtualInterfaceType`: `str`
-- `virtualInterfaceName`: `str`
-- `vlan`: `int`
-- `asn`: `int`
-- `amazonSideAsn`: `int`
-- `authKey`: `str`
-- `amazonAddress`: `str`
-- `customerAddress`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `virtualInterfaceState`:
-  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
-- `customerRouterConfig`: `str`
-- `mtu`: `int`
-- `jumboFrameCapable`: `bool`
-- `virtualGatewayId`: `str`
-- `directConnectGatewayId`: `str`
-- `routeFilterPrefixes`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `bgpPeers`: `List`\[[BGPPeerTypeDef](./type_defs.md#bgppeertypedef)\]
-- `region`: `str`
-- `awsDeviceV2`: `str`
-- `awsLogicalDeviceId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `siteLinkEnabled`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="virtualinterfacetesthistorytypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
+2. See [:material-code-brackets: VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype) 
+3. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
+4. See [:material-code-braces: BGPPeerTypeDef](./type_defs.md#bgppeertypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VirtualInterfaceTestHistoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import VirtualInterfaceTestHistoryTypeDef
+
+def get_value() -> VirtualInterfaceTestHistoryTypeDef:
+    return {
+        "testId": ...,
+    }
 ```
 
-Optional fields:
-
-- `testId`: `str`
-- `virtualInterfaceId`: `str`
-- `bgpPeers`: `List`\[`str`\]
-- `status`: `str`
-- `ownerAccount`: `str`
-- `testDurationInMinutes`: `int`
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-
-<a id="virtualinterfacetypedef"></a>
+```python title="Definition"
+class VirtualInterfaceTestHistoryTypeDef(TypedDict):
+    testId: NotRequired[str],
+    virtualInterfaceId: NotRequired[str],
+    bgpPeers: NotRequired[List[str]],
+    status: NotRequired[str],
+    ownerAccount: NotRequired[str],
+    testDurationInMinutes: NotRequired[int],
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+```
 
 ## VirtualInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import VirtualInterfaceTypeDef
+
+def get_value() -> VirtualInterfaceTypeDef:
+    return {
+        "ownerAccount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualInterfaceTypeDef(TypedDict):
+    ownerAccount: NotRequired[str],
+    virtualInterfaceId: NotRequired[str],
+    location: NotRequired[str],
+    connectionId: NotRequired[str],
+    virtualInterfaceType: NotRequired[str],
+    virtualInterfaceName: NotRequired[str],
+    vlan: NotRequired[int],
+    asn: NotRequired[int],
+    amazonSideAsn: NotRequired[int],
+    authKey: NotRequired[str],
+    amazonAddress: NotRequired[str],
+    customerAddress: NotRequired[str],
+    addressFamily: NotRequired[AddressFamilyType],  # (1)
+    virtualInterfaceState: NotRequired[VirtualInterfaceStateType],  # (2)
+    customerRouterConfig: NotRequired[str],
+    mtu: NotRequired[int],
+    jumboFrameCapable: NotRequired[bool],
+    virtualGatewayId: NotRequired[str],
+    directConnectGatewayId: NotRequired[str],
+    routeFilterPrefixes: NotRequired[List[RouteFilterPrefixTypeDef]],  # (3)
+    bgpPeers: NotRequired[List[BGPPeerTypeDef]],  # (4)
+    region: NotRequired[str],
+    awsDeviceV2: NotRequired[str],
+    awsLogicalDeviceId: NotRequired[str],
+    tags: NotRequired[List[TagTypeDef]],  # (5)
+    siteLinkEnabled: NotRequired[bool],
+```
 
-- `ownerAccount`: `str`
-- `virtualInterfaceId`: `str`
-- `location`: `str`
-- `connectionId`: `str`
-- `virtualInterfaceType`: `str`
-- `virtualInterfaceName`: `str`
-- `vlan`: `int`
-- `asn`: `int`
-- `amazonSideAsn`: `int`
-- `authKey`: `str`
-- `amazonAddress`: `str`
-- `customerAddress`: `str`
-- `addressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
-- `virtualInterfaceState`:
-  [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
-- `customerRouterConfig`: `str`
-- `mtu`: `int`
-- `jumboFrameCapable`: `bool`
-- `virtualGatewayId`: `str`
-- `directConnectGatewayId`: `str`
-- `routeFilterPrefixes`:
-  `List`\[[RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef)\]
-- `bgpPeers`: `List`\[[BGPPeerTypeDef](./type_defs.md#bgppeertypedef)\]
-- `region`: `str`
-- `awsDeviceV2`: `str`
-- `awsLogicalDeviceId`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `siteLinkEnabled`: `bool`
-
-<a id="virtualinterfacestypedef"></a>
-
+1. See [:material-code-brackets: AddressFamilyType](./literals.md#addressfamilytype) 
+2. See [:material-code-brackets: VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype) 
+3. See [:material-code-braces: RouteFilterPrefixTypeDef](./type_defs.md#routefilterprefixtypedef) 
+4. See [:material-code-braces: BGPPeerTypeDef](./type_defs.md#bgppeertypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## VirtualInterfacesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_directconnect.type_defs import VirtualInterfacesTypeDef
+
+def get_value() -> VirtualInterfacesTypeDef:
+    return {
+        "virtualInterfaces": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualInterfacesTypeDef(TypedDict):
+    virtualInterfaces: List[VirtualInterfaceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualInterfaces`:
-  `List`\[[VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

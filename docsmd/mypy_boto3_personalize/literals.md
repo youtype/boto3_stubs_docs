@@ -1,641 +1,685 @@
-<a id="literals-for-boto3-personalize-module"></a>
-
-# Literals for boto3 Personalize module
+# Literals
 
 > [Index](../README.md) > [Personalize](./README.md) > Literals
 
-Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
-type annotations stubs module
-[mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
+!!! note ""
 
-- [Literals for boto3 Personalize module](#literals-for-boto3-personalize-module)
-  - [DomainType](#domaintype)
-  - [IngestionModeType](#ingestionmodetype)
-  - [ListBatchInferenceJobsPaginatorName](#listbatchinferencejobspaginatorname)
-  - [ListBatchSegmentJobsPaginatorName](#listbatchsegmentjobspaginatorname)
-  - [ListCampaignsPaginatorName](#listcampaignspaginatorname)
-  - [ListDatasetExportJobsPaginatorName](#listdatasetexportjobspaginatorname)
-  - [ListDatasetGroupsPaginatorName](#listdatasetgroupspaginatorname)
-  - [ListDatasetImportJobsPaginatorName](#listdatasetimportjobspaginatorname)
-  - [ListDatasetsPaginatorName](#listdatasetspaginatorname)
-  - [ListEventTrackersPaginatorName](#listeventtrackerspaginatorname)
-  - [ListFiltersPaginatorName](#listfilterspaginatorname)
-  - [ListRecipesPaginatorName](#listrecipespaginatorname)
-  - [ListRecommendersPaginatorName](#listrecommenderspaginatorname)
-  - [ListSchemasPaginatorName](#listschemaspaginatorname)
-  - [ListSolutionVersionsPaginatorName](#listsolutionversionspaginatorname)
-  - [ListSolutionsPaginatorName](#listsolutionspaginatorname)
-  - [ObjectiveSensitivityType](#objectivesensitivitytype)
-  - [RecipeProviderType](#recipeprovidertype)
-  - [TrainingModeType](#trainingmodetype)
-  - [PersonalizeServiceName](#personalizeservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="domaintype"></a>
+    Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+    type annotations stubs module [mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 ## DomainType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import DomainType
+
+def get_value() -> DomainType:
+    return "ECOMMERCE"
 ```
 
-Values:
-
-- `ECOMMERCE`
-- `VIDEO_ON_DEMAND`
-
-<a id="ingestionmodetype"></a>
-
+```python title="Definition"
+DomainType = Literal[
+    "ECOMMERCE",
+    "VIDEO_ON_DEMAND",
+]
+```
 ## IngestionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import IngestionModeType
+
+def get_value() -> IngestionModeType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `BULK`
-- `PUT`
-
-<a id="listbatchinferencejobspaginatorname"></a>
-
+```python title="Definition"
+IngestionModeType = Literal[
+    "ALL",
+    "BULK",
+    "PUT",
+]
+```
 ## ListBatchInferenceJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListBatchInferenceJobsPaginatorName
+
+def get_value() -> ListBatchInferenceJobsPaginatorName:
+    return "list_batch_inference_jobs"
 ```
 
-Values:
-
-- `list_batch_inference_jobs`
-
-<a id="listbatchsegmentjobspaginatorname"></a>
-
+```python title="Definition"
+ListBatchInferenceJobsPaginatorName = Literal[
+    "list_batch_inference_jobs",
+]
+```
 ## ListBatchSegmentJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListBatchSegmentJobsPaginatorName
+
+def get_value() -> ListBatchSegmentJobsPaginatorName:
+    return "list_batch_segment_jobs"
 ```
 
-Values:
-
-- `list_batch_segment_jobs`
-
-<a id="listcampaignspaginatorname"></a>
-
+```python title="Definition"
+ListBatchSegmentJobsPaginatorName = Literal[
+    "list_batch_segment_jobs",
+]
+```
 ## ListCampaignsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListCampaignsPaginatorName
+
+def get_value() -> ListCampaignsPaginatorName:
+    return "list_campaigns"
 ```
 
-Values:
-
-- `list_campaigns`
-
-<a id="listdatasetexportjobspaginatorname"></a>
-
+```python title="Definition"
+ListCampaignsPaginatorName = Literal[
+    "list_campaigns",
+]
+```
 ## ListDatasetExportJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListDatasetExportJobsPaginatorName
+
+def get_value() -> ListDatasetExportJobsPaginatorName:
+    return "list_dataset_export_jobs"
 ```
 
-Values:
-
-- `list_dataset_export_jobs`
-
-<a id="listdatasetgroupspaginatorname"></a>
-
+```python title="Definition"
+ListDatasetExportJobsPaginatorName = Literal[
+    "list_dataset_export_jobs",
+]
+```
 ## ListDatasetGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListDatasetGroupsPaginatorName
+
+def get_value() -> ListDatasetGroupsPaginatorName:
+    return "list_dataset_groups"
 ```
 
-Values:
-
-- `list_dataset_groups`
-
-<a id="listdatasetimportjobspaginatorname"></a>
-
+```python title="Definition"
+ListDatasetGroupsPaginatorName = Literal[
+    "list_dataset_groups",
+]
+```
 ## ListDatasetImportJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListDatasetImportJobsPaginatorName
+
+def get_value() -> ListDatasetImportJobsPaginatorName:
+    return "list_dataset_import_jobs"
 ```
 
-Values:
-
-- `list_dataset_import_jobs`
-
-<a id="listdatasetspaginatorname"></a>
-
+```python title="Definition"
+ListDatasetImportJobsPaginatorName = Literal[
+    "list_dataset_import_jobs",
+]
+```
 ## ListDatasetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListDatasetsPaginatorName
+
+def get_value() -> ListDatasetsPaginatorName:
+    return "list_datasets"
 ```
 
-Values:
-
-- `list_datasets`
-
-<a id="listeventtrackerspaginatorname"></a>
-
+```python title="Definition"
+ListDatasetsPaginatorName = Literal[
+    "list_datasets",
+]
+```
 ## ListEventTrackersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListEventTrackersPaginatorName
+
+def get_value() -> ListEventTrackersPaginatorName:
+    return "list_event_trackers"
 ```
 
-Values:
-
-- `list_event_trackers`
-
-<a id="listfilterspaginatorname"></a>
-
+```python title="Definition"
+ListEventTrackersPaginatorName = Literal[
+    "list_event_trackers",
+]
+```
 ## ListFiltersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListFiltersPaginatorName
+
+def get_value() -> ListFiltersPaginatorName:
+    return "list_filters"
 ```
 
-Values:
-
-- `list_filters`
-
-<a id="listrecipespaginatorname"></a>
-
+```python title="Definition"
+ListFiltersPaginatorName = Literal[
+    "list_filters",
+]
+```
 ## ListRecipesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListRecipesPaginatorName
+
+def get_value() -> ListRecipesPaginatorName:
+    return "list_recipes"
 ```
 
-Values:
-
-- `list_recipes`
-
-<a id="listrecommenderspaginatorname"></a>
-
+```python title="Definition"
+ListRecipesPaginatorName = Literal[
+    "list_recipes",
+]
+```
 ## ListRecommendersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListRecommendersPaginatorName
+
+def get_value() -> ListRecommendersPaginatorName:
+    return "list_recommenders"
 ```
 
-Values:
-
-- `list_recommenders`
-
-<a id="listschemaspaginatorname"></a>
-
+```python title="Definition"
+ListRecommendersPaginatorName = Literal[
+    "list_recommenders",
+]
+```
 ## ListSchemasPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListSchemasPaginatorName
+
+def get_value() -> ListSchemasPaginatorName:
+    return "list_schemas"
 ```
 
-Values:
-
-- `list_schemas`
-
-<a id="listsolutionversionspaginatorname"></a>
-
+```python title="Definition"
+ListSchemasPaginatorName = Literal[
+    "list_schemas",
+]
+```
 ## ListSolutionVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListSolutionVersionsPaginatorName
+
+def get_value() -> ListSolutionVersionsPaginatorName:
+    return "list_solution_versions"
 ```
 
-Values:
-
-- `list_solution_versions`
-
-<a id="listsolutionspaginatorname"></a>
-
+```python title="Definition"
+ListSolutionVersionsPaginatorName = Literal[
+    "list_solution_versions",
+]
+```
 ## ListSolutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ListSolutionsPaginatorName
+
+def get_value() -> ListSolutionsPaginatorName:
+    return "list_solutions"
 ```
 
-Values:
-
-- `list_solutions`
-
-<a id="objectivesensitivitytype"></a>
-
+```python title="Definition"
+ListSolutionsPaginatorName = Literal[
+    "list_solutions",
+]
+```
 ## ObjectiveSensitivityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ObjectiveSensitivityType
+
+def get_value() -> ObjectiveSensitivityType:
+    return "HIGH"
 ```
 
-Values:
-
-- `HIGH`
-- `LOW`
-- `MEDIUM`
-- `OFF`
-
-<a id="recipeprovidertype"></a>
-
+```python title="Definition"
+ObjectiveSensitivityType = Literal[
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+    "OFF",
+]
+```
 ## RecipeProviderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import RecipeProviderType
+
+def get_value() -> RecipeProviderType:
+    return "SERVICE"
 ```
 
-Values:
-
-- `SERVICE`
-
-<a id="trainingmodetype"></a>
-
+```python title="Definition"
+RecipeProviderType = Literal[
+    "SERVICE",
+]
+```
 ## TrainingModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import TrainingModeType
+
+def get_value() -> TrainingModeType:
+    return "FULL"
 ```
 
-Values:
-
-- `FULL`
-- `UPDATE`
-
-<a id="personalizeservicename"></a>
-
+```python title="Definition"
+TrainingModeType = Literal[
+    "FULL",
+    "UPDATE",
+]
+```
 ## PersonalizeServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import PersonalizeServiceName
+
+def get_value() -> PersonalizeServiceName:
+    return "personalize"
 ```
 
-Values:
-
-- `personalize`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+PersonalizeServiceName = Literal[
+    "personalize",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_batch_inference_jobs"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_batch_inference_jobs",
+    "list_batch_segment_jobs",
+    "list_campaigns",
+    "list_dataset_export_jobs",
+    "list_dataset_groups",
+    "list_dataset_import_jobs",
+    "list_datasets",
+    "list_event_trackers",
+    "list_filters",
+    "list_recipes",
+    "list_recommenders",
+    "list_schemas",
+    "list_solution_versions",
+    "list_solutions",
+]
+```
+## RegionName
 
-- `list_batch_inference_jobs`
-- `list_batch_segment_jobs`
-- `list_campaigns`
-- `list_dataset_export_jobs`
-- `list_dataset_groups`
-- `list_dataset_import_jobs`
-- `list_datasets`
-- `list_event_trackers`
-- `list_filters`
-- `list_recipes`
-- `list_recommenders`
-- `list_schemas`
-- `list_solution_versions`
-- `list_solutions`
+```python title="Usage Example"
+from mypy_boto3_personalize.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```

@@ -1,97 +1,18 @@
-<a id="backupclient-for-boto3-backup-module"></a>
-
-# BackupClient for boto3 Backup module
+# BackupClient
 
 > [Index](../README.md) > [Backup](./README.md) > BackupClient
 
-Auto-generated documentation for
-[Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
-type annotations stubs module
-[mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
+!!! note ""
 
-- [BackupClient for boto3 Backup module](#backupclient-for-boto3-backup-module)
-  - [BackupClient](#backupclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_backup_plan](#create_backup_plan)
-    - [create_backup_selection](#create_backup_selection)
-    - [create_backup_vault](#create_backup_vault)
-    - [create_framework](#create_framework)
-    - [create_report_plan](#create_report_plan)
-    - [delete_backup_plan](#delete_backup_plan)
-    - [delete_backup_selection](#delete_backup_selection)
-    - [delete_backup_vault](#delete_backup_vault)
-    - [delete_backup_vault_access_policy](#delete_backup_vault_access_policy)
-    - [delete_backup_vault_lock_configuration](#delete_backup_vault_lock_configuration)
-    - [delete_backup_vault_notifications](#delete_backup_vault_notifications)
-    - [delete_framework](#delete_framework)
-    - [delete_recovery_point](#delete_recovery_point)
-    - [delete_report_plan](#delete_report_plan)
-    - [describe_backup_job](#describe_backup_job)
-    - [describe_backup_vault](#describe_backup_vault)
-    - [describe_copy_job](#describe_copy_job)
-    - [describe_framework](#describe_framework)
-    - [describe_global_settings](#describe_global_settings)
-    - [describe_protected_resource](#describe_protected_resource)
-    - [describe_recovery_point](#describe_recovery_point)
-    - [describe_region_settings](#describe_region_settings)
-    - [describe_report_job](#describe_report_job)
-    - [describe_report_plan](#describe_report_plan)
-    - [describe_restore_job](#describe_restore_job)
-    - [disassociate_recovery_point](#disassociate_recovery_point)
-    - [export_backup_plan_template](#export_backup_plan_template)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_backup_plan](#get_backup_plan)
-    - [get_backup_plan_from_json](#get_backup_plan_from_json)
-    - [get_backup_plan_from_template](#get_backup_plan_from_template)
-    - [get_backup_selection](#get_backup_selection)
-    - [get_backup_vault_access_policy](#get_backup_vault_access_policy)
-    - [get_backup_vault_notifications](#get_backup_vault_notifications)
-    - [get_recovery_point_restore_metadata](#get_recovery_point_restore_metadata)
-    - [get_supported_resource_types](#get_supported_resource_types)
-    - [list_backup_jobs](#list_backup_jobs)
-    - [list_backup_plan_templates](#list_backup_plan_templates)
-    - [list_backup_plan_versions](#list_backup_plan_versions)
-    - [list_backup_plans](#list_backup_plans)
-    - [list_backup_selections](#list_backup_selections)
-    - [list_backup_vaults](#list_backup_vaults)
-    - [list_copy_jobs](#list_copy_jobs)
-    - [list_frameworks](#list_frameworks)
-    - [list_protected_resources](#list_protected_resources)
-    - [list_recovery_points_by_backup_vault](#list_recovery_points_by_backup_vault)
-    - [list_recovery_points_by_resource](#list_recovery_points_by_resource)
-    - [list_report_jobs](#list_report_jobs)
-    - [list_report_plans](#list_report_plans)
-    - [list_restore_jobs](#list_restore_jobs)
-    - [list_tags](#list_tags)
-    - [put_backup_vault_access_policy](#put_backup_vault_access_policy)
-    - [put_backup_vault_lock_configuration](#put_backup_vault_lock_configuration)
-    - [put_backup_vault_notifications](#put_backup_vault_notifications)
-    - [start_backup_job](#start_backup_job)
-    - [start_copy_job](#start_copy_job)
-    - [start_report_job](#start_report_job)
-    - [start_restore_job](#start_restore_job)
-    - [stop_backup_job](#stop_backup_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_backup_plan](#update_backup_plan)
-    - [update_framework](#update_framework)
-    - [update_global_settings](#update_global_settings)
-    - [update_recovery_point_lifecycle](#update_recovery_point_lifecycle)
-    - [update_region_settings](#update_region_settings)
-    - [update_report_plan](#update_report_plan)
-
-<a id="backupclient"></a>
+    Auto-generated documentation for [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
+    type annotations stubs module [mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
 
 ## BackupClient
 
-Type annotations for `boto3.client("backup")`
+Type annotations and code completion for `#!python boto3.client("backup")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_backup.client import BackupClient
 
@@ -99,1567 +20,2114 @@ def get_backup_client() -> BackupClient:
     return Session().client("backup")
 ```
 
-Boto3 documentation:
-[Backup.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("backup").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("backup")
+
+try:
+    do_something(client)
+except (
+    client.AlreadyExistsException,
+    client.ClientError,
+    client.ConflictException,
+    client.DependencyFailureException,
+    client.InvalidParameterValueException,
+    client.InvalidRequestException,
+    client.InvalidResourceStateException,
+    client.LimitExceededException,
+    client.MissingParameterValueException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_backup.client import Exceptions
 
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AlreadyExistsException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.DependencyFailureException`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.InvalidResourceStateException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.MissingParameterValueException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-BackupClient exceptions.
-
-Type annotations for `boto3.client("backup").exceptions` method.
-
-Boto3 documentation:
-[Backup.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("backup").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("backup").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.can_paginate)
 
-Boto3 documentation:
-[Backup.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_backup\_plan"></a>
-
-### create_backup_plan
+### create\_backup\_plan
 
 Creates a backup plan using a backup plan name and backup rules.
 
-Type annotations for `boto3.client("backup").create_backup_plan` method.
+Type annotations and code completion for `#!python boto3.client("backup").create_backup_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_plan)
 
-Boto3 documentation:
-[Backup.Client.create_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_plan)
+```python title="Method definition"
+def create_backup_plan(
+    self,
+    *,
+    BackupPlan: BackupPlanInputTypeDef,  # (1)
+    BackupPlanTags: Mapping[str, str] = ...,
+    CreatorRequestId: str = ...,
+) -> CreateBackupPlanOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBackupPlanInputRequestTypeDef](./type_defs.md#createbackupplaninputrequesttypedef).
+1. See [:material-code-braces: BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef) 
+2. See [:material-code-braces: CreateBackupPlanOutputTypeDef](./type_defs.md#createbackupplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlan`: [BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef)
-  *(required)*
-- `BackupPlanTags`: `Mapping`\[`str`, `str`\]
-- `CreatorRequestId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBackupPlanInputRequestTypeDef = {  # (1)
+    "BackupPlan": ...,
+}
 
-Returns
-[CreateBackupPlanOutputTypeDef](./type_defs.md#createbackupplanoutputtypedef).
+parent.create_backup_plan(**kwargs)
+```
 
-<a id="create\_backup\_selection"></a>
+1. See [:material-code-braces: CreateBackupPlanInputRequestTypeDef](./type_defs.md#createbackupplaninputrequesttypedef) 
 
-### create_backup_selection
+### create\_backup\_selection
 
 .
 
-Type annotations for `boto3.client("backup").create_backup_selection` method.
+Type annotations and code completion for `#!python boto3.client("backup").create_backup_selection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection)
 
-Boto3 documentation:
-[Backup.Client.create_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_selection)
+```python title="Method definition"
+def create_backup_selection(
+    self,
+    *,
+    BackupPlanId: str,
+    BackupSelection: BackupSelectionTypeDef,  # (1)
+    CreatorRequestId: str = ...,
+) -> CreateBackupSelectionOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBackupSelectionInputRequestTypeDef](./type_defs.md#createbackupselectioninputrequesttypedef).
+1. See [:material-code-braces: BackupSelectionTypeDef](./type_defs.md#backupselectiontypedef) 
+2. See [:material-code-braces: CreateBackupSelectionOutputTypeDef](./type_defs.md#createbackupselectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanId`: `str` *(required)*
-- `BackupSelection`:
-  [BackupSelectionTypeDef](./type_defs.md#backupselectiontypedef) *(required)*
-- `CreatorRequestId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBackupSelectionInputRequestTypeDef = {  # (1)
+    "BackupPlanId": ...,
+    "BackupSelection": ...,
+}
 
-Returns
-[CreateBackupSelectionOutputTypeDef](./type_defs.md#createbackupselectionoutputtypedef).
+parent.create_backup_selection(**kwargs)
+```
 
-<a id="create\_backup\_vault"></a>
+1. See [:material-code-braces: CreateBackupSelectionInputRequestTypeDef](./type_defs.md#createbackupselectioninputrequesttypedef) 
 
-### create_backup_vault
+### create\_backup\_vault
 
 Creates a logical container where backups are stored.
 
-Type annotations for `boto3.client("backup").create_backup_vault` method.
+Type annotations and code completion for `#!python boto3.client("backup").create_backup_vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_vault)
 
-Boto3 documentation:
-[Backup.Client.create_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_backup_vault)
+```python title="Method definition"
+def create_backup_vault(
+    self,
+    *,
+    BackupVaultName: str,
+    BackupVaultTags: Mapping[str, str] = ...,
+    EncryptionKeyArn: str = ...,
+    CreatorRequestId: str = ...,
+) -> CreateBackupVaultOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateBackupVaultInputRequestTypeDef](./type_defs.md#createbackupvaultinputrequesttypedef).
+1. See [:material-code-braces: CreateBackupVaultOutputTypeDef](./type_defs.md#createbackupvaultoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `BackupVaultTags`: `Mapping`\[`str`, `str`\]
-- `EncryptionKeyArn`: `str`
-- `CreatorRequestId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBackupVaultInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-Returns
-[CreateBackupVaultOutputTypeDef](./type_defs.md#createbackupvaultoutputtypedef).
+parent.create_backup_vault(**kwargs)
+```
 
-<a id="create\_framework"></a>
+1. See [:material-code-braces: CreateBackupVaultInputRequestTypeDef](./type_defs.md#createbackupvaultinputrequesttypedef) 
 
-### create_framework
+### create\_framework
 
 Creates a framework with one or more controls.
 
-Type annotations for `boto3.client("backup").create_framework` method.
+Type annotations and code completion for `#!python boto3.client("backup").create_framework` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_framework)
 
-Boto3 documentation:
-[Backup.Client.create_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_framework)
+```python title="Method definition"
+def create_framework(
+    self,
+    *,
+    FrameworkName: str,
+    FrameworkControls: Sequence[FrameworkControlTypeDef],  # (1)
+    FrameworkDescription: str = ...,
+    IdempotencyToken: str = ...,
+    FrameworkTags: Mapping[str, str] = ...,
+) -> CreateFrameworkOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFrameworkInputRequestTypeDef](./type_defs.md#createframeworkinputrequesttypedef).
+1. See [:material-code-braces: FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef) 
+2. See [:material-code-braces: CreateFrameworkOutputTypeDef](./type_defs.md#createframeworkoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FrameworkName`: `str` *(required)*
-- `FrameworkControls`:
-  `Sequence`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
-  *(required)*
-- `FrameworkDescription`: `str`
-- `IdempotencyToken`: `str`
-- `FrameworkTags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFrameworkInputRequestTypeDef = {  # (1)
+    "FrameworkName": ...,
+    "FrameworkControls": ...,
+}
 
-Returns
-[CreateFrameworkOutputTypeDef](./type_defs.md#createframeworkoutputtypedef).
+parent.create_framework(**kwargs)
+```
 
-<a id="create\_report\_plan"></a>
+1. See [:material-code-braces: CreateFrameworkInputRequestTypeDef](./type_defs.md#createframeworkinputrequesttypedef) 
 
-### create_report_plan
+### create\_report\_plan
 
 Creates a report plan.
 
-Type annotations for `boto3.client("backup").create_report_plan` method.
+Type annotations and code completion for `#!python boto3.client("backup").create_report_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_report_plan)
 
-Boto3 documentation:
-[Backup.Client.create_report_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.create_report_plan)
+```python title="Method definition"
+def create_report_plan(
+    self,
+    *,
+    ReportPlanName: str,
+    ReportDeliveryChannel: ReportDeliveryChannelTypeDef,  # (1)
+    ReportSetting: ReportSettingTypeDef,  # (2)
+    ReportPlanDescription: str = ...,
+    ReportPlanTags: Mapping[str, str] = ...,
+    IdempotencyToken: str = ...,
+) -> CreateReportPlanOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateReportPlanInputRequestTypeDef](./type_defs.md#createreportplaninputrequesttypedef).
+1. See [:material-code-braces: ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef) 
+2. See [:material-code-braces: ReportSettingTypeDef](./type_defs.md#reportsettingtypedef) 
+3. See [:material-code-braces: CreateReportPlanOutputTypeDef](./type_defs.md#createreportplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ReportPlanName`: `str` *(required)*
-- `ReportDeliveryChannel`:
-  [ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef)
-  *(required)*
-- `ReportSetting`: [ReportSettingTypeDef](./type_defs.md#reportsettingtypedef)
-  *(required)*
-- `ReportPlanDescription`: `str`
-- `ReportPlanTags`: `Mapping`\[`str`, `str`\]
-- `IdempotencyToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateReportPlanInputRequestTypeDef = {  # (1)
+    "ReportPlanName": ...,
+    "ReportDeliveryChannel": ...,
+    "ReportSetting": ...,
+}
 
-Returns
-[CreateReportPlanOutputTypeDef](./type_defs.md#createreportplanoutputtypedef).
+parent.create_report_plan(**kwargs)
+```
 
-<a id="delete\_backup\_plan"></a>
+1. See [:material-code-braces: CreateReportPlanInputRequestTypeDef](./type_defs.md#createreportplaninputrequesttypedef) 
 
-### delete_backup_plan
+### delete\_backup\_plan
 
 Deletes a backup plan.
 
-Type annotations for `boto3.client("backup").delete_backup_plan` method.
+Type annotations and code completion for `#!python boto3.client("backup").delete_backup_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_plan)
 
-Boto3 documentation:
-[Backup.Client.delete_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_plan)
+```python title="Method definition"
+def delete_backup_plan(
+    self,
+    *,
+    BackupPlanId: str,
+) -> DeleteBackupPlanOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackupPlanInputRequestTypeDef](./type_defs.md#deletebackupplaninputrequesttypedef).
+1. See [:material-code-braces: DeleteBackupPlanOutputTypeDef](./type_defs.md#deletebackupplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBackupPlanInputRequestTypeDef = {  # (1)
+    "BackupPlanId": ...,
+}
 
-Returns
-[DeleteBackupPlanOutputTypeDef](./type_defs.md#deletebackupplanoutputtypedef).
+parent.delete_backup_plan(**kwargs)
+```
 
-<a id="delete\_backup\_selection"></a>
+1. See [:material-code-braces: DeleteBackupPlanInputRequestTypeDef](./type_defs.md#deletebackupplaninputrequesttypedef) 
 
-### delete_backup_selection
+### delete\_backup\_selection
 
 Deletes the resource selection associated with a backup plan that is specified
 by the `SelectionId` .
 
-Type annotations for `boto3.client("backup").delete_backup_selection` method.
+Type annotations and code completion for `#!python boto3.client("backup").delete_backup_selection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_selection)
 
-Boto3 documentation:
-[Backup.Client.delete_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_selection)
+```python title="Method definition"
+def delete_backup_selection(
+    self,
+    *,
+    BackupPlanId: str,
+    SelectionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackupSelectionInputRequestTypeDef](./type_defs.md#deletebackupselectioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupPlanId`: `str` *(required)*
-- `SelectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBackupSelectionInputRequestTypeDef = {  # (1)
+    "BackupPlanId": ...,
+    "SelectionId": ...,
+}
 
-<a id="delete\_backup\_vault"></a>
+parent.delete_backup_selection(**kwargs)
+```
 
-### delete_backup_vault
+1. See [:material-code-braces: DeleteBackupSelectionInputRequestTypeDef](./type_defs.md#deletebackupselectioninputrequesttypedef) 
+
+### delete\_backup\_vault
 
 Deletes the backup vault identified by its name.
 
-Type annotations for `boto3.client("backup").delete_backup_vault` method.
+Type annotations and code completion for `#!python boto3.client("backup").delete_backup_vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault)
 
-Boto3 documentation:
-[Backup.Client.delete_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault)
+```python title="Method definition"
+def delete_backup_vault(
+    self,
+    *,
+    BackupVaultName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackupVaultInputRequestTypeDef](./type_defs.md#deletebackupvaultinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBackupVaultInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-<a id="delete\_backup\_vault\_access\_policy"></a>
+parent.delete_backup_vault(**kwargs)
+```
 
-### delete_backup_vault_access_policy
+1. See [:material-code-braces: DeleteBackupVaultInputRequestTypeDef](./type_defs.md#deletebackupvaultinputrequesttypedef) 
+
+### delete\_backup\_vault\_access\_policy
 
 Deletes the policy document that manages permissions on a backup vault.
 
-Type annotations for `boto3.client("backup").delete_backup_vault_access_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").delete_backup_vault_access_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy)
 
-Boto3 documentation:
-[Backup.Client.delete_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_access_policy)
+```python title="Method definition"
+def delete_backup_vault_access_policy(
+    self,
+    *,
+    BackupVaultName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#deletebackupvaultaccesspolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBackupVaultAccessPolicyInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-<a id="delete\_backup\_vault\_lock\_configuration"></a>
+parent.delete_backup_vault_access_policy(**kwargs)
+```
 
-### delete_backup_vault_lock_configuration
+1. See [:material-code-braces: DeleteBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#deletebackupvaultaccesspolicyinputrequesttypedef) 
+
+### delete\_backup\_vault\_lock\_configuration
 
 Deletes Backup Vault Lock from a backup vault specified by a backup vault name.
 
-Type annotations for
-`boto3.client("backup").delete_backup_vault_lock_configuration` method.
+Type annotations and code completion for `#!python boto3.client("backup").delete_backup_vault_lock_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_lock_configuration)
 
-Boto3 documentation:
-[Backup.Client.delete_backup_vault_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_lock_configuration)
+```python title="Method definition"
+def delete_backup_vault_lock_configuration(
+    self,
+    *,
+    BackupVaultName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackupVaultLockConfigurationInputRequestTypeDef](./type_defs.md#deletebackupvaultlockconfigurationinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBackupVaultLockConfigurationInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-<a id="delete\_backup\_vault\_notifications"></a>
+parent.delete_backup_vault_lock_configuration(**kwargs)
+```
 
-### delete_backup_vault_notifications
+1. See [:material-code-braces: DeleteBackupVaultLockConfigurationInputRequestTypeDef](./type_defs.md#deletebackupvaultlockconfigurationinputrequesttypedef) 
+
+### delete\_backup\_vault\_notifications
 
 Deletes event notifications for the specified backup vault.
 
-Type annotations for `boto3.client("backup").delete_backup_vault_notifications`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").delete_backup_vault_notifications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications)
 
-Boto3 documentation:
-[Backup.Client.delete_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_backup_vault_notifications)
+```python title="Method definition"
+def delete_backup_vault_notifications(
+    self,
+    *,
+    BackupVaultName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#deletebackupvaultnotificationsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBackupVaultNotificationsInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-<a id="delete\_framework"></a>
+parent.delete_backup_vault_notifications(**kwargs)
+```
 
-### delete_framework
+1. See [:material-code-braces: DeleteBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#deletebackupvaultnotificationsinputrequesttypedef) 
+
+### delete\_framework
 
 Deletes the framework specified by a framework name.
 
-Type annotations for `boto3.client("backup").delete_framework` method.
+Type annotations and code completion for `#!python boto3.client("backup").delete_framework` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_framework)
 
-Boto3 documentation:
-[Backup.Client.delete_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_framework)
+```python title="Method definition"
+def delete_framework(
+    self,
+    *,
+    FrameworkName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFrameworkInputRequestTypeDef](./type_defs.md#deleteframeworkinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `FrameworkName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFrameworkInputRequestTypeDef = {  # (1)
+    "FrameworkName": ...,
+}
 
-<a id="delete\_recovery\_point"></a>
+parent.delete_framework(**kwargs)
+```
 
-### delete_recovery_point
+1. See [:material-code-braces: DeleteFrameworkInputRequestTypeDef](./type_defs.md#deleteframeworkinputrequesttypedef) 
+
+### delete\_recovery\_point
 
 Deletes the recovery point specified by a recovery point ID.
 
-Type annotations for `boto3.client("backup").delete_recovery_point` method.
+Type annotations and code completion for `#!python boto3.client("backup").delete_recovery_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_recovery_point)
 
-Boto3 documentation:
-[Backup.Client.delete_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_recovery_point)
+```python title="Method definition"
+def delete_recovery_point(
+    self,
+    *,
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRecoveryPointInputRequestTypeDef](./type_defs.md#deleterecoverypointinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `RecoveryPointArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRecoveryPointInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+    "RecoveryPointArn": ...,
+}
 
-<a id="delete\_report\_plan"></a>
+parent.delete_recovery_point(**kwargs)
+```
 
-### delete_report_plan
+1. See [:material-code-braces: DeleteRecoveryPointInputRequestTypeDef](./type_defs.md#deleterecoverypointinputrequesttypedef) 
+
+### delete\_report\_plan
 
 Deletes the report plan specified by a report plan name.
 
-Type annotations for `boto3.client("backup").delete_report_plan` method.
+Type annotations and code completion for `#!python boto3.client("backup").delete_report_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_report_plan)
 
-Boto3 documentation:
-[Backup.Client.delete_report_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.delete_report_plan)
+```python title="Method definition"
+def delete_report_plan(
+    self,
+    *,
+    ReportPlanName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteReportPlanInputRequestTypeDef](./type_defs.md#deletereportplaninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ReportPlanName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReportPlanInputRequestTypeDef = {  # (1)
+    "ReportPlanName": ...,
+}
 
-<a id="describe\_backup\_job"></a>
+parent.delete_report_plan(**kwargs)
+```
 
-### describe_backup_job
+1. See [:material-code-braces: DeleteReportPlanInputRequestTypeDef](./type_defs.md#deletereportplaninputrequesttypedef) 
+
+### describe\_backup\_job
 
 Returns backup job details for the specified `BackupJobId` .
 
-Type annotations for `boto3.client("backup").describe_backup_job` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_backup_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_job)
 
-Boto3 documentation:
-[Backup.Client.describe_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_job)
+```python title="Method definition"
+def describe_backup_job(
+    self,
+    *,
+    BackupJobId: str,
+) -> DescribeBackupJobOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBackupJobInputRequestTypeDef](./type_defs.md#describebackupjobinputrequesttypedef).
+1. See [:material-code-braces: DescribeBackupJobOutputTypeDef](./type_defs.md#describebackupjoboutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupJobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBackupJobInputRequestTypeDef = {  # (1)
+    "BackupJobId": ...,
+}
 
-Returns
-[DescribeBackupJobOutputTypeDef](./type_defs.md#describebackupjoboutputtypedef).
+parent.describe_backup_job(**kwargs)
+```
 
-<a id="describe\_backup\_vault"></a>
+1. See [:material-code-braces: DescribeBackupJobInputRequestTypeDef](./type_defs.md#describebackupjobinputrequesttypedef) 
 
-### describe_backup_vault
+### describe\_backup\_vault
 
 Returns metadata about a backup vault specified by its name.
 
-Type annotations for `boto3.client("backup").describe_backup_vault` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_backup_vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_vault)
 
-Boto3 documentation:
-[Backup.Client.describe_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_backup_vault)
+```python title="Method definition"
+def describe_backup_vault(
+    self,
+    *,
+    BackupVaultName: str,
+) -> DescribeBackupVaultOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBackupVaultInputRequestTypeDef](./type_defs.md#describebackupvaultinputrequesttypedef).
+1. See [:material-code-braces: DescribeBackupVaultOutputTypeDef](./type_defs.md#describebackupvaultoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBackupVaultInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-Returns
-[DescribeBackupVaultOutputTypeDef](./type_defs.md#describebackupvaultoutputtypedef).
+parent.describe_backup_vault(**kwargs)
+```
 
-<a id="describe\_copy\_job"></a>
+1. See [:material-code-braces: DescribeBackupVaultInputRequestTypeDef](./type_defs.md#describebackupvaultinputrequesttypedef) 
 
-### describe_copy_job
+### describe\_copy\_job
 
 Returns metadata associated with creating a copy of a resource.
 
-Type annotations for `boto3.client("backup").describe_copy_job` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_copy_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_copy_job)
 
-Boto3 documentation:
-[Backup.Client.describe_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_copy_job)
+```python title="Method definition"
+def describe_copy_job(
+    self,
+    *,
+    CopyJobId: str,
+) -> DescribeCopyJobOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCopyJobInputRequestTypeDef](./type_defs.md#describecopyjobinputrequesttypedef).
+1. See [:material-code-braces: DescribeCopyJobOutputTypeDef](./type_defs.md#describecopyjoboutputtypedef) 
 
-Keyword-only arguments:
 
-- `CopyJobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCopyJobInputRequestTypeDef = {  # (1)
+    "CopyJobId": ...,
+}
 
-Returns
-[DescribeCopyJobOutputTypeDef](./type_defs.md#describecopyjoboutputtypedef).
+parent.describe_copy_job(**kwargs)
+```
 
-<a id="describe\_framework"></a>
+1. See [:material-code-braces: DescribeCopyJobInputRequestTypeDef](./type_defs.md#describecopyjobinputrequesttypedef) 
 
-### describe_framework
+### describe\_framework
 
 Returns the framework details for the specified `FrameworkName` .
 
-Type annotations for `boto3.client("backup").describe_framework` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_framework` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_framework)
 
-Boto3 documentation:
-[Backup.Client.describe_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_framework)
+```python title="Method definition"
+def describe_framework(
+    self,
+    *,
+    FrameworkName: str,
+) -> DescribeFrameworkOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFrameworkInputRequestTypeDef](./type_defs.md#describeframeworkinputrequesttypedef).
+1. See [:material-code-braces: DescribeFrameworkOutputTypeDef](./type_defs.md#describeframeworkoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FrameworkName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFrameworkInputRequestTypeDef = {  # (1)
+    "FrameworkName": ...,
+}
 
-Returns
-[DescribeFrameworkOutputTypeDef](./type_defs.md#describeframeworkoutputtypedef).
+parent.describe_framework(**kwargs)
+```
 
-<a id="describe\_global\_settings"></a>
+1. See [:material-code-braces: DescribeFrameworkInputRequestTypeDef](./type_defs.md#describeframeworkinputrequesttypedef) 
 
-### describe_global_settings
+### describe\_global\_settings
 
 Describes whether the Amazon Web Services account is opted in to cross-account
 backup.
 
-Type annotations for `boto3.client("backup").describe_global_settings` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_global_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_global_settings)
 
-Boto3 documentation:
-[Backup.Client.describe_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_global_settings)
+```python title="Method definition"
+def describe_global_settings(
+    self,
+) -> DescribeGlobalSettingsOutputTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeGlobalSettingsOutputTypeDef](./type_defs.md#describeglobalsettingsoutputtypedef).
+1. See [:material-code-braces: DescribeGlobalSettingsOutputTypeDef](./type_defs.md#describeglobalsettingsoutputtypedef) 
 
-<a id="describe\_protected\_resource"></a>
-
-### describe_protected_resource
+### describe\_protected\_resource
 
 Returns information about a saved resource, including the last time it was
 backed up, its Amazon Resource Name (ARN), and the Amazon Web Services service
 type of the saved resource.
 
-Type annotations for `boto3.client("backup").describe_protected_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_protected_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_protected_resource)
 
-Boto3 documentation:
-[Backup.Client.describe_protected_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_protected_resource)
+```python title="Method definition"
+def describe_protected_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> DescribeProtectedResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProtectedResourceInputRequestTypeDef](./type_defs.md#describeprotectedresourceinputrequesttypedef).
+1. See [:material-code-braces: DescribeProtectedResourceOutputTypeDef](./type_defs.md#describeprotectedresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProtectedResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[DescribeProtectedResourceOutputTypeDef](./type_defs.md#describeprotectedresourceoutputtypedef).
+parent.describe_protected_resource(**kwargs)
+```
 
-<a id="describe\_recovery\_point"></a>
+1. See [:material-code-braces: DescribeProtectedResourceInputRequestTypeDef](./type_defs.md#describeprotectedresourceinputrequesttypedef) 
 
-### describe_recovery_point
+### describe\_recovery\_point
 
 Returns metadata associated with a recovery point, including ID, status,
 encryption, and lifecycle.
 
-Type annotations for `boto3.client("backup").describe_recovery_point` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_recovery_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_recovery_point)
 
-Boto3 documentation:
-[Backup.Client.describe_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_recovery_point)
+```python title="Method definition"
+def describe_recovery_point(
+    self,
+    *,
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+) -> DescribeRecoveryPointOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRecoveryPointInputRequestTypeDef](./type_defs.md#describerecoverypointinputrequesttypedef).
+1. See [:material-code-braces: DescribeRecoveryPointOutputTypeDef](./type_defs.md#describerecoverypointoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `RecoveryPointArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRecoveryPointInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+    "RecoveryPointArn": ...,
+}
 
-Returns
-[DescribeRecoveryPointOutputTypeDef](./type_defs.md#describerecoverypointoutputtypedef).
+parent.describe_recovery_point(**kwargs)
+```
 
-<a id="describe\_region\_settings"></a>
+1. See [:material-code-braces: DescribeRecoveryPointInputRequestTypeDef](./type_defs.md#describerecoverypointinputrequesttypedef) 
 
-### describe_region_settings
+### describe\_region\_settings
 
 Returns the current service opt-in settings for the Region.
 
-Type annotations for `boto3.client("backup").describe_region_settings` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_region_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_region_settings)
 
-Boto3 documentation:
-[Backup.Client.describe_region_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_region_settings)
+```python title="Method definition"
+def describe_region_settings(
+    self,
+) -> DescribeRegionSettingsOutputTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeRegionSettingsOutputTypeDef](./type_defs.md#describeregionsettingsoutputtypedef).
+1. See [:material-code-braces: DescribeRegionSettingsOutputTypeDef](./type_defs.md#describeregionsettingsoutputtypedef) 
 
-<a id="describe\_report\_job"></a>
-
-### describe_report_job
+### describe\_report\_job
 
 Returns the details associated with creating a report as specified by its
 `ReportJobId` .
 
-Type annotations for `boto3.client("backup").describe_report_job` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_report_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_report_job)
 
-Boto3 documentation:
-[Backup.Client.describe_report_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_report_job)
+```python title="Method definition"
+def describe_report_job(
+    self,
+    *,
+    ReportJobId: str,
+) -> DescribeReportJobOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReportJobInputRequestTypeDef](./type_defs.md#describereportjobinputrequesttypedef).
+1. See [:material-code-braces: DescribeReportJobOutputTypeDef](./type_defs.md#describereportjoboutputtypedef) 
 
-Keyword-only arguments:
 
-- `ReportJobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeReportJobInputRequestTypeDef = {  # (1)
+    "ReportJobId": ...,
+}
 
-Returns
-[DescribeReportJobOutputTypeDef](./type_defs.md#describereportjoboutputtypedef).
+parent.describe_report_job(**kwargs)
+```
 
-<a id="describe\_report\_plan"></a>
+1. See [:material-code-braces: DescribeReportJobInputRequestTypeDef](./type_defs.md#describereportjobinputrequesttypedef) 
 
-### describe_report_plan
+### describe\_report\_plan
 
-Returns a list of all report plans for an Amazon Web Services account and
-Amazon Web Services Region.
+Returns a list of all report plans for an Amazon Web Services account and Amazon
+Web Services Region.
 
-Type annotations for `boto3.client("backup").describe_report_plan` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_report_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_report_plan)
 
-Boto3 documentation:
-[Backup.Client.describe_report_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_report_plan)
+```python title="Method definition"
+def describe_report_plan(
+    self,
+    *,
+    ReportPlanName: str,
+) -> DescribeReportPlanOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReportPlanInputRequestTypeDef](./type_defs.md#describereportplaninputrequesttypedef).
+1. See [:material-code-braces: DescribeReportPlanOutputTypeDef](./type_defs.md#describereportplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ReportPlanName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeReportPlanInputRequestTypeDef = {  # (1)
+    "ReportPlanName": ...,
+}
 
-Returns
-[DescribeReportPlanOutputTypeDef](./type_defs.md#describereportplanoutputtypedef).
+parent.describe_report_plan(**kwargs)
+```
 
-<a id="describe\_restore\_job"></a>
+1. See [:material-code-braces: DescribeReportPlanInputRequestTypeDef](./type_defs.md#describereportplaninputrequesttypedef) 
 
-### describe_restore_job
+### describe\_restore\_job
 
 Returns metadata associated with a restore job that is specified by a job ID.
 
-Type annotations for `boto3.client("backup").describe_restore_job` method.
+Type annotations and code completion for `#!python boto3.client("backup").describe_restore_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_restore_job)
 
-Boto3 documentation:
-[Backup.Client.describe_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.describe_restore_job)
+```python title="Method definition"
+def describe_restore_job(
+    self,
+    *,
+    RestoreJobId: str,
+) -> DescribeRestoreJobOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRestoreJobInputRequestTypeDef](./type_defs.md#describerestorejobinputrequesttypedef).
+1. See [:material-code-braces: DescribeRestoreJobOutputTypeDef](./type_defs.md#describerestorejoboutputtypedef) 
 
-Keyword-only arguments:
 
-- `RestoreJobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRestoreJobInputRequestTypeDef = {  # (1)
+    "RestoreJobId": ...,
+}
 
-Returns
-[DescribeRestoreJobOutputTypeDef](./type_defs.md#describerestorejoboutputtypedef).
+parent.describe_restore_job(**kwargs)
+```
 
-<a id="disassociate\_recovery\_point"></a>
+1. See [:material-code-braces: DescribeRestoreJobInputRequestTypeDef](./type_defs.md#describerestorejobinputrequesttypedef) 
 
-### disassociate_recovery_point
+### disassociate\_recovery\_point
 
 Deletes the specified continuous backup recovery point from Backup and releases
 control of that continuous backup to the source service, such as Amazon RDS.
 
-Type annotations for `boto3.client("backup").disassociate_recovery_point`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").disassociate_recovery_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point)
 
-Boto3 documentation:
-[Backup.Client.disassociate_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.disassociate_recovery_point)
+```python title="Method definition"
+def disassociate_recovery_point(
+    self,
+    *,
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateRecoveryPointInputRequestTypeDef](./type_defs.md#disassociaterecoverypointinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `RecoveryPointArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateRecoveryPointInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+    "RecoveryPointArn": ...,
+}
 
-<a id="export\_backup\_plan\_template"></a>
+parent.disassociate_recovery_point(**kwargs)
+```
 
-### export_backup_plan_template
+1. See [:material-code-braces: DisassociateRecoveryPointInputRequestTypeDef](./type_defs.md#disassociaterecoverypointinputrequesttypedef) 
+
+### export\_backup\_plan\_template
 
 Returns the backup plan that is specified by the plan ID as a backup template.
 
-Type annotations for `boto3.client("backup").export_backup_plan_template`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").export_backup_plan_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.export_backup_plan_template)
 
-Boto3 documentation:
-[Backup.Client.export_backup_plan_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.export_backup_plan_template)
+```python title="Method definition"
+def export_backup_plan_template(
+    self,
+    *,
+    BackupPlanId: str,
+) -> ExportBackupPlanTemplateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExportBackupPlanTemplateInputRequestTypeDef](./type_defs.md#exportbackupplantemplateinputrequesttypedef).
+1. See [:material-code-braces: ExportBackupPlanTemplateOutputTypeDef](./type_defs.md#exportbackupplantemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ExportBackupPlanTemplateInputRequestTypeDef = {  # (1)
+    "BackupPlanId": ...,
+}
 
-Returns
-[ExportBackupPlanTemplateOutputTypeDef](./type_defs.md#exportbackupplantemplateoutputtypedef).
+parent.export_backup_plan_template(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExportBackupPlanTemplateInputRequestTypeDef](./type_defs.md#exportbackupplantemplateinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("backup").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("backup").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Backup.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_backup\_plan"></a>
-
-### get_backup_plan
+### get\_backup\_plan
 
 Returns `BackupPlan` details for the specified `BackupPlanId`.
 
-Type annotations for `boto3.client("backup").get_backup_plan` method.
+Type annotations and code completion for `#!python boto3.client("backup").get_backup_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan)
 
-Boto3 documentation:
-[Backup.Client.get_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan)
+```python title="Method definition"
+def get_backup_plan(
+    self,
+    *,
+    BackupPlanId: str,
+    VersionId: str = ...,
+) -> GetBackupPlanOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackupPlanInputRequestTypeDef](./type_defs.md#getbackupplaninputrequesttypedef).
+1. See [:material-code-braces: GetBackupPlanOutputTypeDef](./type_defs.md#getbackupplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanId`: `str` *(required)*
-- `VersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetBackupPlanInputRequestTypeDef = {  # (1)
+    "BackupPlanId": ...,
+}
 
-Returns
-[GetBackupPlanOutputTypeDef](./type_defs.md#getbackupplanoutputtypedef).
+parent.get_backup_plan(**kwargs)
+```
 
-<a id="get\_backup\_plan\_from\_json"></a>
+1. See [:material-code-braces: GetBackupPlanInputRequestTypeDef](./type_defs.md#getbackupplaninputrequesttypedef) 
 
-### get_backup_plan_from_json
+### get\_backup\_plan\_from\_json
 
 Returns a valid JSON document specifying a backup plan or an error.
 
-Type annotations for `boto3.client("backup").get_backup_plan_from_json` method.
+Type annotations and code completion for `#!python boto3.client("backup").get_backup_plan_from_json` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_json)
 
-Boto3 documentation:
-[Backup.Client.get_backup_plan_from_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_json)
+```python title="Method definition"
+def get_backup_plan_from_json(
+    self,
+    *,
+    BackupPlanTemplateJson: str,
+) -> GetBackupPlanFromJSONOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackupPlanFromJSONInputRequestTypeDef](./type_defs.md#getbackupplanfromjsoninputrequesttypedef).
+1. See [:material-code-braces: GetBackupPlanFromJSONOutputTypeDef](./type_defs.md#getbackupplanfromjsonoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanTemplateJson`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBackupPlanFromJSONInputRequestTypeDef = {  # (1)
+    "BackupPlanTemplateJson": ...,
+}
 
-Returns
-[GetBackupPlanFromJSONOutputTypeDef](./type_defs.md#getbackupplanfromjsonoutputtypedef).
+parent.get_backup_plan_from_json(**kwargs)
+```
 
-<a id="get\_backup\_plan\_from\_template"></a>
+1. See [:material-code-braces: GetBackupPlanFromJSONInputRequestTypeDef](./type_defs.md#getbackupplanfromjsoninputrequesttypedef) 
 
-### get_backup_plan_from_template
+### get\_backup\_plan\_from\_template
 
 Returns the template specified by its `templateId` as a backup plan.
 
-Type annotations for `boto3.client("backup").get_backup_plan_from_template`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").get_backup_plan_from_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_template)
 
-Boto3 documentation:
-[Backup.Client.get_backup_plan_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_plan_from_template)
+```python title="Method definition"
+def get_backup_plan_from_template(
+    self,
+    *,
+    BackupPlanTemplateId: str,
+) -> GetBackupPlanFromTemplateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackupPlanFromTemplateInputRequestTypeDef](./type_defs.md#getbackupplanfromtemplateinputrequesttypedef).
+1. See [:material-code-braces: GetBackupPlanFromTemplateOutputTypeDef](./type_defs.md#getbackupplanfromtemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanTemplateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBackupPlanFromTemplateInputRequestTypeDef = {  # (1)
+    "BackupPlanTemplateId": ...,
+}
 
-Returns
-[GetBackupPlanFromTemplateOutputTypeDef](./type_defs.md#getbackupplanfromtemplateoutputtypedef).
+parent.get_backup_plan_from_template(**kwargs)
+```
 
-<a id="get\_backup\_selection"></a>
+1. See [:material-code-braces: GetBackupPlanFromTemplateInputRequestTypeDef](./type_defs.md#getbackupplanfromtemplateinputrequesttypedef) 
 
-### get_backup_selection
+### get\_backup\_selection
 
 .
 
-Type annotations for `boto3.client("backup").get_backup_selection` method.
+Type annotations and code completion for `#!python boto3.client("backup").get_backup_selection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection)
 
-Boto3 documentation:
-[Backup.Client.get_backup_selection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_selection)
+```python title="Method definition"
+def get_backup_selection(
+    self,
+    *,
+    BackupPlanId: str,
+    SelectionId: str,
+) -> GetBackupSelectionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackupSelectionInputRequestTypeDef](./type_defs.md#getbackupselectioninputrequesttypedef).
+1. See [:material-code-braces: GetBackupSelectionOutputTypeDef](./type_defs.md#getbackupselectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanId`: `str` *(required)*
-- `SelectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBackupSelectionInputRequestTypeDef = {  # (1)
+    "BackupPlanId": ...,
+    "SelectionId": ...,
+}
 
-Returns
-[GetBackupSelectionOutputTypeDef](./type_defs.md#getbackupselectionoutputtypedef).
+parent.get_backup_selection(**kwargs)
+```
 
-<a id="get\_backup\_vault\_access\_policy"></a>
+1. See [:material-code-braces: GetBackupSelectionInputRequestTypeDef](./type_defs.md#getbackupselectioninputrequesttypedef) 
 
-### get_backup_vault_access_policy
+### get\_backup\_vault\_access\_policy
 
 Returns the access policy document that is associated with the named backup
 vault.
 
-Type annotations for `boto3.client("backup").get_backup_vault_access_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").get_backup_vault_access_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy)
 
-Boto3 documentation:
-[Backup.Client.get_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_access_policy)
+```python title="Method definition"
+def get_backup_vault_access_policy(
+    self,
+    *,
+    BackupVaultName: str,
+) -> GetBackupVaultAccessPolicyOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#getbackupvaultaccesspolicyinputrequesttypedef).
+1. See [:material-code-braces: GetBackupVaultAccessPolicyOutputTypeDef](./type_defs.md#getbackupvaultaccesspolicyoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBackupVaultAccessPolicyInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-Returns
-[GetBackupVaultAccessPolicyOutputTypeDef](./type_defs.md#getbackupvaultaccesspolicyoutputtypedef).
+parent.get_backup_vault_access_policy(**kwargs)
+```
 
-<a id="get\_backup\_vault\_notifications"></a>
+1. See [:material-code-braces: GetBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#getbackupvaultaccesspolicyinputrequesttypedef) 
 
-### get_backup_vault_notifications
+### get\_backup\_vault\_notifications
 
 Returns event notifications for the specified backup vault.
 
-Type annotations for `boto3.client("backup").get_backup_vault_notifications`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").get_backup_vault_notifications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_notifications)
 
-Boto3 documentation:
-[Backup.Client.get_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_backup_vault_notifications)
+```python title="Method definition"
+def get_backup_vault_notifications(
+    self,
+    *,
+    BackupVaultName: str,
+) -> GetBackupVaultNotificationsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#getbackupvaultnotificationsinputrequesttypedef).
+1. See [:material-code-braces: GetBackupVaultNotificationsOutputTypeDef](./type_defs.md#getbackupvaultnotificationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBackupVaultNotificationsInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-Returns
-[GetBackupVaultNotificationsOutputTypeDef](./type_defs.md#getbackupvaultnotificationsoutputtypedef).
+parent.get_backup_vault_notifications(**kwargs)
+```
 
-<a id="get\_recovery\_point\_restore\_metadata"></a>
+1. See [:material-code-braces: GetBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#getbackupvaultnotificationsinputrequesttypedef) 
 
-### get_recovery_point_restore_metadata
+### get\_recovery\_point\_restore\_metadata
 
 Returns a set of metadata key-value pairs that were used to create the backup.
 
-Type annotations for
-`boto3.client("backup").get_recovery_point_restore_metadata` method.
+Type annotations and code completion for `#!python boto3.client("backup").get_recovery_point_restore_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata)
 
-Boto3 documentation:
-[Backup.Client.get_recovery_point_restore_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_recovery_point_restore_metadata)
+```python title="Method definition"
+def get_recovery_point_restore_metadata(
+    self,
+    *,
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+) -> GetRecoveryPointRestoreMetadataOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecoveryPointRestoreMetadataInputRequestTypeDef](./type_defs.md#getrecoverypointrestoremetadatainputrequesttypedef).
+1. See [:material-code-braces: GetRecoveryPointRestoreMetadataOutputTypeDef](./type_defs.md#getrecoverypointrestoremetadataoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `RecoveryPointArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRecoveryPointRestoreMetadataInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+    "RecoveryPointArn": ...,
+}
 
-Returns
-[GetRecoveryPointRestoreMetadataOutputTypeDef](./type_defs.md#getrecoverypointrestoremetadataoutputtypedef).
+parent.get_recovery_point_restore_metadata(**kwargs)
+```
 
-<a id="get\_supported\_resource\_types"></a>
+1. See [:material-code-braces: GetRecoveryPointRestoreMetadataInputRequestTypeDef](./type_defs.md#getrecoverypointrestoremetadatainputrequesttypedef) 
 
-### get_supported_resource_types
+### get\_supported\_resource\_types
 
 Returns the Amazon Web Services resource types supported by Backup.
 
-Type annotations for `boto3.client("backup").get_supported_resource_types`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").get_supported_resource_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_supported_resource_types)
 
-Boto3 documentation:
-[Backup.Client.get_supported_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.get_supported_resource_types)
+```python title="Method definition"
+def get_supported_resource_types(
+    self,
+) -> GetSupportedResourceTypesOutputTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetSupportedResourceTypesOutputTypeDef](./type_defs.md#getsupportedresourcetypesoutputtypedef).
+1. See [:material-code-braces: GetSupportedResourceTypesOutputTypeDef](./type_defs.md#getsupportedresourcetypesoutputtypedef) 
 
-<a id="list\_backup\_jobs"></a>
+### list\_backup\_jobs
 
-### list_backup_jobs
+Returns a list of existing backup jobs for an authenticated account for the last
+30 days.
 
-Returns a list of existing backup jobs for an authenticated account for the
-last 30 days.
+Type annotations and code completion for `#!python boto3.client("backup").list_backup_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_jobs)
 
-Type annotations for `boto3.client("backup").list_backup_jobs` method.
+```python title="Method definition"
+def list_backup_jobs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ByResourceArn: str = ...,
+    ByState: BackupJobStateType = ...,  # (1)
+    ByBackupVaultName: str = ...,
+    ByCreatedBefore: Union[datetime, str] = ...,
+    ByCreatedAfter: Union[datetime, str] = ...,
+    ByResourceType: str = ...,
+    ByAccountId: str = ...,
+) -> ListBackupJobsOutputTypeDef:  # (2)
+    ...
+```
 
-Boto3 documentation:
-[Backup.Client.list_backup_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_jobs)
+1. See [:material-code-brackets: BackupJobStateType](./literals.md#backupjobstatetype) 
+2. See [:material-code-braces: ListBackupJobsOutputTypeDef](./type_defs.md#listbackupjobsoutputtypedef) 
 
-Arguments mapping described in
-[ListBackupJobsInputRequestTypeDef](./type_defs.md#listbackupjobsinputrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: ListBackupJobsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ByResourceArn`: `str`
-- `ByState`: [BackupJobStateType](./literals.md#backupjobstatetype)
-- `ByBackupVaultName`: `str`
-- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
-- `ByResourceType`: `str`
-- `ByAccountId`: `str`
+parent.list_backup_jobs(**kwargs)
+```
 
-Returns
-[ListBackupJobsOutputTypeDef](./type_defs.md#listbackupjobsoutputtypedef).
+1. See [:material-code-braces: ListBackupJobsInputRequestTypeDef](./type_defs.md#listbackupjobsinputrequesttypedef) 
 
-<a id="list\_backup\_plan\_templates"></a>
+### list\_backup\_plan\_templates
 
-### list_backup_plan_templates
+Returns metadata of your saved backup plan templates, including the template ID,
+name, and the creation and deletion dates.
 
-Returns metadata of your saved backup plan templates, including the template
-ID, name, and the creation and deletion dates.
+Type annotations and code completion for `#!python boto3.client("backup").list_backup_plan_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_templates)
 
-Type annotations for `boto3.client("backup").list_backup_plan_templates`
-method.
+```python title="Method definition"
+def list_backup_plan_templates(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListBackupPlanTemplatesOutputTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[Backup.Client.list_backup_plan_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_templates)
+1. See [:material-code-braces: ListBackupPlanTemplatesOutputTypeDef](./type_defs.md#listbackupplantemplatesoutputtypedef) 
 
-Arguments mapping described in
-[ListBackupPlanTemplatesInputRequestTypeDef](./type_defs.md#listbackupplantemplatesinputrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: ListBackupPlanTemplatesInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+parent.list_backup_plan_templates(**kwargs)
+```
 
-Returns
-[ListBackupPlanTemplatesOutputTypeDef](./type_defs.md#listbackupplantemplatesoutputtypedef).
+1. See [:material-code-braces: ListBackupPlanTemplatesInputRequestTypeDef](./type_defs.md#listbackupplantemplatesinputrequesttypedef) 
 
-<a id="list\_backup\_plan\_versions"></a>
-
-### list_backup_plan_versions
+### list\_backup\_plan\_versions
 
 Returns version metadata of your backup plans, including Amazon Resource Names
 (ARNs), backup plan IDs, creation and deletion dates, plan names, and version
 IDs.
 
-Type annotations for `boto3.client("backup").list_backup_plan_versions` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_backup_plan_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_versions)
 
-Boto3 documentation:
-[Backup.Client.list_backup_plan_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plan_versions)
+```python title="Method definition"
+def list_backup_plan_versions(
+    self,
+    *,
+    BackupPlanId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListBackupPlanVersionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBackupPlanVersionsInputRequestTypeDef](./type_defs.md#listbackupplanversionsinputrequesttypedef).
+1. See [:material-code-braces: ListBackupPlanVersionsOutputTypeDef](./type_defs.md#listbackupplanversionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListBackupPlanVersionsInputRequestTypeDef = {  # (1)
+    "BackupPlanId": ...,
+}
 
-Returns
-[ListBackupPlanVersionsOutputTypeDef](./type_defs.md#listbackupplanversionsoutputtypedef).
+parent.list_backup_plan_versions(**kwargs)
+```
 
-<a id="list\_backup\_plans"></a>
+1. See [:material-code-braces: ListBackupPlanVersionsInputRequestTypeDef](./type_defs.md#listbackupplanversionsinputrequesttypedef) 
 
-### list_backup_plans
+### list\_backup\_plans
 
 Returns a list of all active backup plans for an authenticated account.
 
-Type annotations for `boto3.client("backup").list_backup_plans` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_backup_plans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plans)
 
-Boto3 documentation:
-[Backup.Client.list_backup_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_plans)
+```python title="Method definition"
+def list_backup_plans(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    IncludeDeleted: bool = ...,
+) -> ListBackupPlansOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBackupPlansInputRequestTypeDef](./type_defs.md#listbackupplansinputrequesttypedef).
+1. See [:material-code-braces: ListBackupPlansOutputTypeDef](./type_defs.md#listbackupplansoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `IncludeDeleted`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListBackupPlansInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListBackupPlansOutputTypeDef](./type_defs.md#listbackupplansoutputtypedef).
+parent.list_backup_plans(**kwargs)
+```
 
-<a id="list\_backup\_selections"></a>
+1. See [:material-code-braces: ListBackupPlansInputRequestTypeDef](./type_defs.md#listbackupplansinputrequesttypedef) 
 
-### list_backup_selections
+### list\_backup\_selections
 
-Returns an array containing metadata of the resources associated with the
-target backup plan.
+Returns an array containing metadata of the resources associated with the target
+backup plan.
 
-Type annotations for `boto3.client("backup").list_backup_selections` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_backup_selections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_selections)
 
-Boto3 documentation:
-[Backup.Client.list_backup_selections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_selections)
+```python title="Method definition"
+def list_backup_selections(
+    self,
+    *,
+    BackupPlanId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListBackupSelectionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBackupSelectionsInputRequestTypeDef](./type_defs.md#listbackupselectionsinputrequesttypedef).
+1. See [:material-code-braces: ListBackupSelectionsOutputTypeDef](./type_defs.md#listbackupselectionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListBackupSelectionsInputRequestTypeDef = {  # (1)
+    "BackupPlanId": ...,
+}
 
-Returns
-[ListBackupSelectionsOutputTypeDef](./type_defs.md#listbackupselectionsoutputtypedef).
+parent.list_backup_selections(**kwargs)
+```
 
-<a id="list\_backup\_vaults"></a>
+1. See [:material-code-braces: ListBackupSelectionsInputRequestTypeDef](./type_defs.md#listbackupselectionsinputrequesttypedef) 
 
-### list_backup_vaults
+### list\_backup\_vaults
 
-Returns a list of recovery point storage containers along with information
-about them.
+Returns a list of recovery point storage containers along with information about
+them.
 
-Type annotations for `boto3.client("backup").list_backup_vaults` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_backup_vaults` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_vaults)
 
-Boto3 documentation:
-[Backup.Client.list_backup_vaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_backup_vaults)
+```python title="Method definition"
+def list_backup_vaults(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListBackupVaultsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBackupVaultsInputRequestTypeDef](./type_defs.md#listbackupvaultsinputrequesttypedef).
+1. See [:material-code-braces: ListBackupVaultsOutputTypeDef](./type_defs.md#listbackupvaultsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListBackupVaultsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListBackupVaultsOutputTypeDef](./type_defs.md#listbackupvaultsoutputtypedef).
+parent.list_backup_vaults(**kwargs)
+```
 
-<a id="list\_copy\_jobs"></a>
+1. See [:material-code-braces: ListBackupVaultsInputRequestTypeDef](./type_defs.md#listbackupvaultsinputrequesttypedef) 
 
-### list_copy_jobs
+### list\_copy\_jobs
 
 Returns metadata about your copy jobs.
 
-Type annotations for `boto3.client("backup").list_copy_jobs` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_copy_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_copy_jobs)
 
-Boto3 documentation:
-[Backup.Client.list_copy_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_copy_jobs)
+```python title="Method definition"
+def list_copy_jobs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ByResourceArn: str = ...,
+    ByState: CopyJobStateType = ...,  # (1)
+    ByCreatedBefore: Union[datetime, str] = ...,
+    ByCreatedAfter: Union[datetime, str] = ...,
+    ByResourceType: str = ...,
+    ByDestinationVaultArn: str = ...,
+    ByAccountId: str = ...,
+) -> ListCopyJobsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListCopyJobsInputRequestTypeDef](./type_defs.md#listcopyjobsinputrequesttypedef).
+1. See [:material-code-brackets: CopyJobStateType](./literals.md#copyjobstatetype) 
+2. See [:material-code-braces: ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ByResourceArn`: `str`
-- `ByState`: [CopyJobStateType](./literals.md#copyjobstatetype)
-- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
-- `ByResourceType`: `str`
-- `ByDestinationVaultArn`: `str`
-- `ByAccountId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCopyJobsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef).
+parent.list_copy_jobs(**kwargs)
+```
 
-<a id="list\_frameworks"></a>
+1. See [:material-code-braces: ListCopyJobsInputRequestTypeDef](./type_defs.md#listcopyjobsinputrequesttypedef) 
 
-### list_frameworks
+### list\_frameworks
 
 Returns a list of all frameworks for an Amazon Web Services account and Amazon
 Web Services Region.
 
-Type annotations for `boto3.client("backup").list_frameworks` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_frameworks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_frameworks)
 
-Boto3 documentation:
-[Backup.Client.list_frameworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_frameworks)
+```python title="Method definition"
+def list_frameworks(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFrameworksOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFrameworksInputRequestTypeDef](./type_defs.md#listframeworksinputrequesttypedef).
+1. See [:material-code-braces: ListFrameworksOutputTypeDef](./type_defs.md#listframeworksoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFrameworksInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListFrameworksOutputTypeDef](./type_defs.md#listframeworksoutputtypedef).
+parent.list_frameworks(**kwargs)
+```
 
-<a id="list\_protected\_resources"></a>
+1. See [:material-code-braces: ListFrameworksInputRequestTypeDef](./type_defs.md#listframeworksinputrequesttypedef) 
 
-### list_protected_resources
+### list\_protected\_resources
 
 Returns an array of resources successfully backed up by Backup, including the
 time the resource was saved, an Amazon Resource Name (ARN) of the resource, and
 a resource type.
 
-Type annotations for `boto3.client("backup").list_protected_resources` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_protected_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_protected_resources)
 
-Boto3 documentation:
-[Backup.Client.list_protected_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_protected_resources)
+```python title="Method definition"
+def list_protected_resources(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListProtectedResourcesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProtectedResourcesInputRequestTypeDef](./type_defs.md#listprotectedresourcesinputrequesttypedef).
+1. See [:material-code-braces: ListProtectedResourcesOutputTypeDef](./type_defs.md#listprotectedresourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProtectedResourcesInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListProtectedResourcesOutputTypeDef](./type_defs.md#listprotectedresourcesoutputtypedef).
+parent.list_protected_resources(**kwargs)
+```
 
-<a id="list\_recovery\_points\_by\_backup\_vault"></a>
+1. See [:material-code-braces: ListProtectedResourcesInputRequestTypeDef](./type_defs.md#listprotectedresourcesinputrequesttypedef) 
 
-### list_recovery_points_by_backup_vault
+### list\_recovery\_points\_by\_backup\_vault
 
-Returns detailed information about the recovery points stored in a backup
-vault.
+Returns detailed information about the recovery points stored in a backup vault.
 
-Type annotations for
-`boto3.client("backup").list_recovery_points_by_backup_vault` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_recovery_points_by_backup_vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault)
 
-Boto3 documentation:
-[Backup.Client.list_recovery_points_by_backup_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_backup_vault)
+```python title="Method definition"
+def list_recovery_points_by_backup_vault(
+    self,
+    *,
+    BackupVaultName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ByResourceArn: str = ...,
+    ByResourceType: str = ...,
+    ByBackupPlanId: str = ...,
+    ByCreatedBefore: Union[datetime, str] = ...,
+    ByCreatedAfter: Union[datetime, str] = ...,
+) -> ListRecoveryPointsByBackupVaultOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecoveryPointsByBackupVaultInputRequestTypeDef](./type_defs.md#listrecoverypointsbybackupvaultinputrequesttypedef).
+1. See [:material-code-braces: ListRecoveryPointsByBackupVaultOutputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ByResourceArn`: `str`
-- `ByResourceType`: `str`
-- `ByBackupPlanId`: `str`
-- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListRecoveryPointsByBackupVaultInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-Returns
-[ListRecoveryPointsByBackupVaultOutputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputtypedef).
+parent.list_recovery_points_by_backup_vault(**kwargs)
+```
 
-<a id="list\_recovery\_points\_by\_resource"></a>
+1. See [:material-code-braces: ListRecoveryPointsByBackupVaultInputRequestTypeDef](./type_defs.md#listrecoverypointsbybackupvaultinputrequesttypedef) 
 
-### list_recovery_points_by_resource
+### list\_recovery\_points\_by\_resource
 
-Returns detailed information about all the recovery points of the type
-specified by a resource Amazon Resource Name (ARN).
+Returns detailed information about all the recovery points of the type specified
+by a resource Amazon Resource Name (ARN).
 
-Type annotations for `boto3.client("backup").list_recovery_points_by_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").list_recovery_points_by_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource)
 
-Boto3 documentation:
-[Backup.Client.list_recovery_points_by_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_recovery_points_by_resource)
+```python title="Method definition"
+def list_recovery_points_by_resource(
+    self,
+    *,
+    ResourceArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListRecoveryPointsByResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecoveryPointsByResourceInputRequestTypeDef](./type_defs.md#listrecoverypointsbyresourceinputrequesttypedef).
+1. See [:material-code-braces: ListRecoveryPointsByResourceOutputTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRecoveryPointsByResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListRecoveryPointsByResourceOutputTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputtypedef).
+parent.list_recovery_points_by_resource(**kwargs)
+```
 
-<a id="list\_report\_jobs"></a>
+1. See [:material-code-braces: ListRecoveryPointsByResourceInputRequestTypeDef](./type_defs.md#listrecoverypointsbyresourceinputrequesttypedef) 
 
-### list_report_jobs
+### list\_report\_jobs
 
 Returns details about your report jobs.
 
-Type annotations for `boto3.client("backup").list_report_jobs` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_report_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_report_jobs)
 
-Boto3 documentation:
-[Backup.Client.list_report_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_report_jobs)
+```python title="Method definition"
+def list_report_jobs(
+    self,
+    *,
+    ByReportPlanName: str = ...,
+    ByCreationBefore: Union[datetime, str] = ...,
+    ByCreationAfter: Union[datetime, str] = ...,
+    ByStatus: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListReportJobsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListReportJobsInputRequestTypeDef](./type_defs.md#listreportjobsinputrequesttypedef).
+1. See [:material-code-braces: ListReportJobsOutputTypeDef](./type_defs.md#listreportjobsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ByReportPlanName`: `str`
-- `ByCreationBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreationAfter`: `Union`\[`datetime`, `str`\]
-- `ByStatus`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListReportJobsInputRequestTypeDef = {  # (1)
+    "ByReportPlanName": ...,
+}
 
-Returns
-[ListReportJobsOutputTypeDef](./type_defs.md#listreportjobsoutputtypedef).
+parent.list_report_jobs(**kwargs)
+```
 
-<a id="list\_report\_plans"></a>
+1. See [:material-code-braces: ListReportJobsInputRequestTypeDef](./type_defs.md#listreportjobsinputrequesttypedef) 
 
-### list_report_plans
+### list\_report\_plans
 
 Returns a list of your report plans.
 
-Type annotations for `boto3.client("backup").list_report_plans` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_report_plans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_report_plans)
 
-Boto3 documentation:
-[Backup.Client.list_report_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_report_plans)
+```python title="Method definition"
+def list_report_plans(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListReportPlansOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListReportPlansInputRequestTypeDef](./type_defs.md#listreportplansinputrequesttypedef).
+1. See [:material-code-braces: ListReportPlansOutputTypeDef](./type_defs.md#listreportplansoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListReportPlansInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListReportPlansOutputTypeDef](./type_defs.md#listreportplansoutputtypedef).
+parent.list_report_plans(**kwargs)
+```
 
-<a id="list\_restore\_jobs"></a>
+1. See [:material-code-braces: ListReportPlansInputRequestTypeDef](./type_defs.md#listreportplansinputrequesttypedef) 
 
-### list_restore_jobs
+### list\_restore\_jobs
 
 Returns a list of jobs that Backup initiated to restore a saved resource,
 including details about the recovery process.
 
-Type annotations for `boto3.client("backup").list_restore_jobs` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_restore_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_restore_jobs)
 
-Boto3 documentation:
-[Backup.Client.list_restore_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_restore_jobs)
+```python title="Method definition"
+def list_restore_jobs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ByAccountId: str = ...,
+    ByCreatedBefore: Union[datetime, str] = ...,
+    ByCreatedAfter: Union[datetime, str] = ...,
+    ByStatus: RestoreJobStatusType = ...,  # (1)
+) -> ListRestoreJobsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRestoreJobsInputRequestTypeDef](./type_defs.md#listrestorejobsinputrequesttypedef).
+1. See [:material-code-brackets: RestoreJobStatusType](./literals.md#restorejobstatustype) 
+2. See [:material-code-braces: ListRestoreJobsOutputTypeDef](./type_defs.md#listrestorejobsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ByAccountId`: `str`
-- `ByCreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ByCreatedAfter`: `Union`\[`datetime`, `str`\]
-- `ByStatus`: [RestoreJobStatusType](./literals.md#restorejobstatustype)
+```python title="Usage example with kwargs"
+kwargs: ListRestoreJobsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListRestoreJobsOutputTypeDef](./type_defs.md#listrestorejobsoutputtypedef).
+parent.list_restore_jobs(**kwargs)
+```
 
-<a id="list\_tags"></a>
+1. See [:material-code-braces: ListRestoreJobsInputRequestTypeDef](./type_defs.md#listrestorejobsinputrequesttypedef) 
 
-### list_tags
+### list\_tags
 
 Returns a list of key-value pairs assigned to a target recovery point, backup
 plan, or backup vault.
 
-Type annotations for `boto3.client("backup").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("backup").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_tags)
 
-Boto3 documentation:
-[Backup.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    ResourceArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTagsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsInputRequestTypeDef](./type_defs.md#listtagsinputrequesttypedef).
+1. See [:material-code-braces: ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="put\_backup\_vault\_access\_policy"></a>
+1. See [:material-code-braces: ListTagsInputRequestTypeDef](./type_defs.md#listtagsinputrequesttypedef) 
 
-### put_backup_vault_access_policy
+### put\_backup\_vault\_access\_policy
 
 Sets a resource-based policy that is used to manage access permissions on the
 target backup vault.
 
-Type annotations for `boto3.client("backup").put_backup_vault_access_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").put_backup_vault_access_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy)
 
-Boto3 documentation:
-[Backup.Client.put_backup_vault_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_access_policy)
+```python title="Method definition"
+def put_backup_vault_access_policy(
+    self,
+    *,
+    BackupVaultName: str,
+    Policy: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#putbackupvaultaccesspolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `Policy`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBackupVaultAccessPolicyInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-<a id="put\_backup\_vault\_lock\_configuration"></a>
+parent.put_backup_vault_access_policy(**kwargs)
+```
 
-### put_backup_vault_lock_configuration
+1. See [:material-code-braces: PutBackupVaultAccessPolicyInputRequestTypeDef](./type_defs.md#putbackupvaultaccesspolicyinputrequesttypedef) 
+
+### put\_backup\_vault\_lock\_configuration
 
 Applies Backup Vault Lock to a backup vault, preventing attempts to delete any
 recovery point stored in or created in a backup vault.
 
-Type annotations for
-`boto3.client("backup").put_backup_vault_lock_configuration` method.
+Type annotations and code completion for `#!python boto3.client("backup").put_backup_vault_lock_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_lock_configuration)
 
-Boto3 documentation:
-[Backup.Client.put_backup_vault_lock_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_lock_configuration)
+```python title="Method definition"
+def put_backup_vault_lock_configuration(
+    self,
+    *,
+    BackupVaultName: str,
+    MinRetentionDays: int = ...,
+    MaxRetentionDays: int = ...,
+    ChangeableForDays: int = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBackupVaultLockConfigurationInputRequestTypeDef](./type_defs.md#putbackupvaultlockconfigurationinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `MinRetentionDays`: `int`
-- `MaxRetentionDays`: `int`
-- `ChangeableForDays`: `int`
+```python title="Usage example with kwargs"
+kwargs: PutBackupVaultLockConfigurationInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+}
 
-<a id="put\_backup\_vault\_notifications"></a>
+parent.put_backup_vault_lock_configuration(**kwargs)
+```
 
-### put_backup_vault_notifications
+1. See [:material-code-braces: PutBackupVaultLockConfigurationInputRequestTypeDef](./type_defs.md#putbackupvaultlockconfigurationinputrequesttypedef) 
+
+### put\_backup\_vault\_notifications
 
 Turns on notifications on a backup vault for the specified topic and events.
 
-Type annotations for `boto3.client("backup").put_backup_vault_notifications`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").put_backup_vault_notifications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_notifications)
 
-Boto3 documentation:
-[Backup.Client.put_backup_vault_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.put_backup_vault_notifications)
+```python title="Method definition"
+def put_backup_vault_notifications(
+    self,
+    *,
+    BackupVaultName: str,
+    SNSTopicArn: str,
+    BackupVaultEvents: Sequence[BackupVaultEventType],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#putbackupvaultnotificationsinputrequesttypedef).
+1. See [:material-code-brackets: BackupVaultEventType](./literals.md#backupvaulteventtype) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `SNSTopicArn`: `str` *(required)*
-- `BackupVaultEvents`:
-  `Sequence`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutBackupVaultNotificationsInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+    "SNSTopicArn": ...,
+    "BackupVaultEvents": ...,
+}
 
-<a id="start\_backup\_job"></a>
+parent.put_backup_vault_notifications(**kwargs)
+```
 
-### start_backup_job
+1. See [:material-code-braces: PutBackupVaultNotificationsInputRequestTypeDef](./type_defs.md#putbackupvaultnotificationsinputrequesttypedef) 
+
+### start\_backup\_job
 
 Starts an on-demand backup job for the specified resource.
 
-Type annotations for `boto3.client("backup").start_backup_job` method.
+Type annotations and code completion for `#!python boto3.client("backup").start_backup_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_backup_job)
 
-Boto3 documentation:
-[Backup.Client.start_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_backup_job)
+```python title="Method definition"
+def start_backup_job(
+    self,
+    *,
+    BackupVaultName: str,
+    ResourceArn: str,
+    IamRoleArn: str,
+    IdempotencyToken: str = ...,
+    StartWindowMinutes: int = ...,
+    CompleteWindowMinutes: int = ...,
+    Lifecycle: LifecycleTypeDef = ...,  # (1)
+    RecoveryPointTags: Mapping[str, str] = ...,
+    BackupOptions: Mapping[str, str] = ...,
+) -> StartBackupJobOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartBackupJobInputRequestTypeDef](./type_defs.md#startbackupjobinputrequesttypedef).
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
+2. See [:material-code-braces: StartBackupJobOutputTypeDef](./type_defs.md#startbackupjoboutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
-- `IamRoleArn`: `str` *(required)*
-- `IdempotencyToken`: `str`
-- `StartWindowMinutes`: `int`
-- `CompleteWindowMinutes`: `int`
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
-- `RecoveryPointTags`: `Mapping`\[`str`, `str`\]
-- `BackupOptions`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartBackupJobInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+    "ResourceArn": ...,
+    "IamRoleArn": ...,
+}
 
-Returns
-[StartBackupJobOutputTypeDef](./type_defs.md#startbackupjoboutputtypedef).
+parent.start_backup_job(**kwargs)
+```
 
-<a id="start\_copy\_job"></a>
+1. See [:material-code-braces: StartBackupJobInputRequestTypeDef](./type_defs.md#startbackupjobinputrequesttypedef) 
 
-### start_copy_job
+### start\_copy\_job
 
 Starts a job to create a one-time copy of the specified resource.
 
-Type annotations for `boto3.client("backup").start_copy_job` method.
+Type annotations and code completion for `#!python boto3.client("backup").start_copy_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_copy_job)
 
-Boto3 documentation:
-[Backup.Client.start_copy_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_copy_job)
+```python title="Method definition"
+def start_copy_job(
+    self,
+    *,
+    RecoveryPointArn: str,
+    SourceBackupVaultName: str,
+    DestinationBackupVaultArn: str,
+    IamRoleArn: str,
+    IdempotencyToken: str = ...,
+    Lifecycle: LifecycleTypeDef = ...,  # (1)
+) -> StartCopyJobOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartCopyJobInputRequestTypeDef](./type_defs.md#startcopyjobinputrequesttypedef).
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
+2. See [:material-code-braces: StartCopyJobOutputTypeDef](./type_defs.md#startcopyjoboutputtypedef) 
 
-Keyword-only arguments:
 
-- `RecoveryPointArn`: `str` *(required)*
-- `SourceBackupVaultName`: `str` *(required)*
-- `DestinationBackupVaultArn`: `str` *(required)*
-- `IamRoleArn`: `str` *(required)*
-- `IdempotencyToken`: `str`
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
+```python title="Usage example with kwargs"
+kwargs: StartCopyJobInputRequestTypeDef = {  # (1)
+    "RecoveryPointArn": ...,
+    "SourceBackupVaultName": ...,
+    "DestinationBackupVaultArn": ...,
+    "IamRoleArn": ...,
+}
 
-Returns [StartCopyJobOutputTypeDef](./type_defs.md#startcopyjoboutputtypedef).
+parent.start_copy_job(**kwargs)
+```
 
-<a id="start\_report\_job"></a>
+1. See [:material-code-braces: StartCopyJobInputRequestTypeDef](./type_defs.md#startcopyjobinputrequesttypedef) 
 
-### start_report_job
+### start\_report\_job
 
 Starts an on-demand report job for the specified report plan.
 
-Type annotations for `boto3.client("backup").start_report_job` method.
+Type annotations and code completion for `#!python boto3.client("backup").start_report_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_report_job)
 
-Boto3 documentation:
-[Backup.Client.start_report_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_report_job)
+```python title="Method definition"
+def start_report_job(
+    self,
+    *,
+    ReportPlanName: str,
+    IdempotencyToken: str = ...,
+) -> StartReportJobOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartReportJobInputRequestTypeDef](./type_defs.md#startreportjobinputrequesttypedef).
+1. See [:material-code-braces: StartReportJobOutputTypeDef](./type_defs.md#startreportjoboutputtypedef) 
 
-Keyword-only arguments:
 
-- `ReportPlanName`: `str` *(required)*
-- `IdempotencyToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartReportJobInputRequestTypeDef = {  # (1)
+    "ReportPlanName": ...,
+}
 
-Returns
-[StartReportJobOutputTypeDef](./type_defs.md#startreportjoboutputtypedef).
+parent.start_report_job(**kwargs)
+```
 
-<a id="start\_restore\_job"></a>
+1. See [:material-code-braces: StartReportJobInputRequestTypeDef](./type_defs.md#startreportjobinputrequesttypedef) 
 
-### start_restore_job
+### start\_restore\_job
 
 Recovers the saved resource identified by an Amazon Resource Name (ARN).
 
-Type annotations for `boto3.client("backup").start_restore_job` method.
+Type annotations and code completion for `#!python boto3.client("backup").start_restore_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_restore_job)
 
-Boto3 documentation:
-[Backup.Client.start_restore_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.start_restore_job)
+```python title="Method definition"
+def start_restore_job(
+    self,
+    *,
+    RecoveryPointArn: str,
+    Metadata: Mapping[str, str],
+    IamRoleArn: str,
+    IdempotencyToken: str = ...,
+    ResourceType: str = ...,
+) -> StartRestoreJobOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartRestoreJobInputRequestTypeDef](./type_defs.md#startrestorejobinputrequesttypedef).
+1. See [:material-code-braces: StartRestoreJobOutputTypeDef](./type_defs.md#startrestorejoboutputtypedef) 
 
-Keyword-only arguments:
 
-- `RecoveryPointArn`: `str` *(required)*
-- `Metadata`: `Mapping`\[`str`, `str`\] *(required)*
-- `IamRoleArn`: `str` *(required)*
-- `IdempotencyToken`: `str`
-- `ResourceType`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartRestoreJobInputRequestTypeDef = {  # (1)
+    "RecoveryPointArn": ...,
+    "Metadata": ...,
+    "IamRoleArn": ...,
+}
 
-Returns
-[StartRestoreJobOutputTypeDef](./type_defs.md#startrestorejoboutputtypedef).
+parent.start_restore_job(**kwargs)
+```
 
-<a id="stop\_backup\_job"></a>
+1. See [:material-code-braces: StartRestoreJobInputRequestTypeDef](./type_defs.md#startrestorejobinputrequesttypedef) 
 
-### stop_backup_job
+### stop\_backup\_job
 
 Attempts to cancel a job to create a one-time backup of a resource.
 
-Type annotations for `boto3.client("backup").stop_backup_job` method.
+Type annotations and code completion for `#!python boto3.client("backup").stop_backup_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.stop_backup_job)
 
-Boto3 documentation:
-[Backup.Client.stop_backup_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.stop_backup_job)
+```python title="Method definition"
+def stop_backup_job(
+    self,
+    *,
+    BackupJobId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopBackupJobInputRequestTypeDef](./type_defs.md#stopbackupjobinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BackupJobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopBackupJobInputRequestTypeDef = {  # (1)
+    "BackupJobId": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.stop_backup_job(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: StopBackupJobInputRequestTypeDef](./type_defs.md#stopbackupjobinputrequesttypedef) 
+
+### tag\_resource
 
 Assigns a set of key-value pairs to a recovery point, backup plan, or backup
 vault identified by an Amazon Resource Name (ARN).
 
-Type annotations for `boto3.client("backup").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("backup").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.tag_resource)
 
-Boto3 documentation:
-[Backup.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
+
+### untag\_resource
 
 Removes a set of key-value pairs from a recovery point, backup plan, or backup
-vault identified by an Amazon Resource Name (ARN) See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/backup-2018-11-15/UntagResource).
+vault identified by an Amazon Resource Name (ARN) See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/backup-2018-11-15/UntagResource).
 
-Type annotations for `boto3.client("backup").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("backup").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.untag_resource)
 
-Boto3 documentation:
-[Backup.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeyList: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeyList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeyList": ...,
+}
 
-<a id="update\_backup\_plan"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_backup_plan
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
+
+### update\_backup\_plan
 
 Updates an existing backup plan identified by its `backupPlanId` with the input
 document in JSON format.
 
-Type annotations for `boto3.client("backup").update_backup_plan` method.
+Type annotations and code completion for `#!python boto3.client("backup").update_backup_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_backup_plan)
 
-Boto3 documentation:
-[Backup.Client.update_backup_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_backup_plan)
+```python title="Method definition"
+def update_backup_plan(
+    self,
+    *,
+    BackupPlanId: str,
+    BackupPlan: BackupPlanInputTypeDef,  # (1)
+) -> UpdateBackupPlanOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBackupPlanInputRequestTypeDef](./type_defs.md#updatebackupplaninputrequesttypedef).
+1. See [:material-code-braces: BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef) 
+2. See [:material-code-braces: UpdateBackupPlanOutputTypeDef](./type_defs.md#updatebackupplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupPlanId`: `str` *(required)*
-- `BackupPlan`: [BackupPlanInputTypeDef](./type_defs.md#backupplaninputtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateBackupPlanInputRequestTypeDef = {  # (1)
+    "BackupPlanId": ...,
+    "BackupPlan": ...,
+}
 
-Returns
-[UpdateBackupPlanOutputTypeDef](./type_defs.md#updatebackupplanoutputtypedef).
+parent.update_backup_plan(**kwargs)
+```
 
-<a id="update\_framework"></a>
+1. See [:material-code-braces: UpdateBackupPlanInputRequestTypeDef](./type_defs.md#updatebackupplaninputrequesttypedef) 
 
-### update_framework
+### update\_framework
 
 Updates an existing framework identified by its `FrameworkName` with the input
 document in JSON format.
 
-Type annotations for `boto3.client("backup").update_framework` method.
+Type annotations and code completion for `#!python boto3.client("backup").update_framework` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_framework)
 
-Boto3 documentation:
-[Backup.Client.update_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_framework)
+```python title="Method definition"
+def update_framework(
+    self,
+    *,
+    FrameworkName: str,
+    FrameworkDescription: str = ...,
+    FrameworkControls: Sequence[FrameworkControlTypeDef] = ...,  # (1)
+    IdempotencyToken: str = ...,
+) -> UpdateFrameworkOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFrameworkInputRequestTypeDef](./type_defs.md#updateframeworkinputrequesttypedef).
+1. See [:material-code-braces: FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef) 
+2. See [:material-code-braces: UpdateFrameworkOutputTypeDef](./type_defs.md#updateframeworkoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FrameworkName`: `str` *(required)*
-- `FrameworkDescription`: `str`
-- `FrameworkControls`:
-  `Sequence`\[[FrameworkControlTypeDef](./type_defs.md#frameworkcontroltypedef)\]
-- `IdempotencyToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFrameworkInputRequestTypeDef = {  # (1)
+    "FrameworkName": ...,
+}
 
-Returns
-[UpdateFrameworkOutputTypeDef](./type_defs.md#updateframeworkoutputtypedef).
+parent.update_framework(**kwargs)
+```
 
-<a id="update\_global\_settings"></a>
+1. See [:material-code-braces: UpdateFrameworkInputRequestTypeDef](./type_defs.md#updateframeworkinputrequesttypedef) 
 
-### update_global_settings
+### update\_global\_settings
 
 Updates whether the Amazon Web Services account is opted in to cross-account
 backup.
 
-Type annotations for `boto3.client("backup").update_global_settings` method.
+Type annotations and code completion for `#!python boto3.client("backup").update_global_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_global_settings)
 
-Boto3 documentation:
-[Backup.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_global_settings)
+```python title="Method definition"
+def update_global_settings(
+    self,
+    *,
+    GlobalSettings: Mapping[str, str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateGlobalSettingsInputRequestTypeDef](./type_defs.md#updateglobalsettingsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `GlobalSettings`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateGlobalSettingsInputRequestTypeDef = {  # (1)
+    "GlobalSettings": ...,
+}
 
-<a id="update\_recovery\_point\_lifecycle"></a>
+parent.update_global_settings(**kwargs)
+```
 
-### update_recovery_point_lifecycle
+1. See [:material-code-braces: UpdateGlobalSettingsInputRequestTypeDef](./type_defs.md#updateglobalsettingsinputrequesttypedef) 
+
+### update\_recovery\_point\_lifecycle
 
 Sets the transition lifecycle of a recovery point.
 
-Type annotations for `boto3.client("backup").update_recovery_point_lifecycle`
-method.
+Type annotations and code completion for `#!python boto3.client("backup").update_recovery_point_lifecycle` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle)
 
-Boto3 documentation:
-[Backup.Client.update_recovery_point_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_recovery_point_lifecycle)
+```python title="Method definition"
+def update_recovery_point_lifecycle(
+    self,
+    *,
+    BackupVaultName: str,
+    RecoveryPointArn: str,
+    Lifecycle: LifecycleTypeDef = ...,  # (1)
+) -> UpdateRecoveryPointLifecycleOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRecoveryPointLifecycleInputRequestTypeDef](./type_defs.md#updaterecoverypointlifecycleinputrequesttypedef).
+1. See [:material-code-braces: LifecycleTypeDef](./type_defs.md#lifecycletypedef) 
+2. See [:material-code-braces: UpdateRecoveryPointLifecycleOutputTypeDef](./type_defs.md#updaterecoverypointlifecycleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BackupVaultName`: `str` *(required)*
-- `RecoveryPointArn`: `str` *(required)*
-- `Lifecycle`: [LifecycleTypeDef](./type_defs.md#lifecycletypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateRecoveryPointLifecycleInputRequestTypeDef = {  # (1)
+    "BackupVaultName": ...,
+    "RecoveryPointArn": ...,
+}
 
-Returns
-[UpdateRecoveryPointLifecycleOutputTypeDef](./type_defs.md#updaterecoverypointlifecycleoutputtypedef).
+parent.update_recovery_point_lifecycle(**kwargs)
+```
 
-<a id="update\_region\_settings"></a>
+1. See [:material-code-braces: UpdateRecoveryPointLifecycleInputRequestTypeDef](./type_defs.md#updaterecoverypointlifecycleinputrequesttypedef) 
 
-### update_region_settings
+### update\_region\_settings
 
 Updates the current service opt-in settings for the Region.
 
-Type annotations for `boto3.client("backup").update_region_settings` method.
+Type annotations and code completion for `#!python boto3.client("backup").update_region_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_region_settings)
 
-Boto3 documentation:
-[Backup.Client.update_region_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_region_settings)
+```python title="Method definition"
+def update_region_settings(
+    self,
+    *,
+    ResourceTypeOptInPreference: Mapping[str, bool] = ...,
+    ResourceTypeManagementPreference: Mapping[str, bool] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRegionSettingsInputRequestTypeDef](./type_defs.md#updateregionsettingsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceTypeOptInPreference`: `Mapping`\[`str`, `bool`\]
-- `ResourceTypeManagementPreference`: `Mapping`\[`str`, `bool`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateRegionSettingsInputRequestTypeDef = {  # (1)
+    "ResourceTypeOptInPreference": ...,
+}
 
-<a id="update\_report\_plan"></a>
+parent.update_region_settings(**kwargs)
+```
 
-### update_report_plan
+1. See [:material-code-braces: UpdateRegionSettingsInputRequestTypeDef](./type_defs.md#updateregionsettingsinputrequesttypedef) 
+
+### update\_report\_plan
 
 Updates an existing report plan identified by its `ReportPlanName` with the
 input document in JSON format.
 
-Type annotations for `boto3.client("backup").update_report_plan` method.
+Type annotations and code completion for `#!python boto3.client("backup").update_report_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_report_plan)
 
-Boto3 documentation:
-[Backup.Client.update_report_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.update_report_plan)
+```python title="Method definition"
+def update_report_plan(
+    self,
+    *,
+    ReportPlanName: str,
+    ReportPlanDescription: str = ...,
+    ReportDeliveryChannel: ReportDeliveryChannelTypeDef = ...,  # (1)
+    ReportSetting: ReportSettingTypeDef = ...,  # (2)
+    IdempotencyToken: str = ...,
+) -> UpdateReportPlanOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateReportPlanInputRequestTypeDef](./type_defs.md#updatereportplaninputrequesttypedef).
+1. See [:material-code-braces: ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef) 
+2. See [:material-code-braces: ReportSettingTypeDef](./type_defs.md#reportsettingtypedef) 
+3. See [:material-code-braces: UpdateReportPlanOutputTypeDef](./type_defs.md#updatereportplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ReportPlanName`: `str` *(required)*
-- `ReportPlanDescription`: `str`
-- `ReportDeliveryChannel`:
-  [ReportDeliveryChannelTypeDef](./type_defs.md#reportdeliverychanneltypedef)
-- `ReportSetting`: [ReportSettingTypeDef](./type_defs.md#reportsettingtypedef)
-- `IdempotencyToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateReportPlanInputRequestTypeDef = {  # (1)
+    "ReportPlanName": ...,
+}
 
-Returns
-[UpdateReportPlanOutputTypeDef](./type_defs.md#updatereportplanoutputtypedef).
+parent.update_report_plan(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateReportPlanInputRequestTypeDef](./type_defs.md#updatereportplaninputrequesttypedef) 
+
+
+
+

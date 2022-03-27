@@ -1,2573 +1,3104 @@
-<a id="typed-dictionaries-for-boto3-costexplorer-module"></a>
-
-# Typed dictionaries for boto3 CostExplorer module
+# Typed dictionaries
 
 > [Index](../README.md) > [CostExplorer](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
-type annotations stubs module
-[mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CostExplorer module](#typed-dictionaries-for-boto3-costexplorer-module)
-  - [AnomalyDateIntervalTypeDef](#anomalydateintervaltypedef)
-  - [AnomalyMonitorTypeDef](#anomalymonitortypedef)
-  - [AnomalyScoreTypeDef](#anomalyscoretypedef)
-  - [AnomalySubscriptionTypeDef](#anomalysubscriptiontypedef)
-  - [AnomalyTypeDef](#anomalytypedef)
-  - [CostCategoryInheritedValueDimensionTypeDef](#costcategoryinheritedvaluedimensiontypedef)
-  - [CostCategoryProcessingStatusTypeDef](#costcategoryprocessingstatustypedef)
-  - [CostCategoryReferenceTypeDef](#costcategoryreferencetypedef)
-  - [CostCategoryRuleTypeDef](#costcategoryruletypedef)
-  - [CostCategorySplitChargeRuleParameterTypeDef](#costcategorysplitchargeruleparametertypedef)
-  - [CostCategorySplitChargeRuleTypeDef](#costcategorysplitchargeruletypedef)
-  - [CostCategoryTypeDef](#costcategorytypedef)
-  - [CostCategoryValuesTypeDef](#costcategoryvaluestypedef)
-  - [CoverageByTimeTypeDef](#coveragebytimetypedef)
-  - [CoverageCostTypeDef](#coveragecosttypedef)
-  - [CoverageHoursTypeDef](#coveragehourstypedef)
-  - [CoverageNormalizedUnitsTypeDef](#coveragenormalizedunitstypedef)
-  - [CoverageTypeDef](#coveragetypedef)
-  - [CreateAnomalyMonitorRequestRequestTypeDef](#createanomalymonitorrequestrequesttypedef)
-  - [CreateAnomalyMonitorResponseTypeDef](#createanomalymonitorresponsetypedef)
-  - [CreateAnomalySubscriptionRequestRequestTypeDef](#createanomalysubscriptionrequestrequesttypedef)
-  - [CreateAnomalySubscriptionResponseTypeDef](#createanomalysubscriptionresponsetypedef)
-  - [CreateCostCategoryDefinitionRequestRequestTypeDef](#createcostcategorydefinitionrequestrequesttypedef)
-  - [CreateCostCategoryDefinitionResponseTypeDef](#createcostcategorydefinitionresponsetypedef)
-  - [CurrentInstanceTypeDef](#currentinstancetypedef)
-  - [DateIntervalTypeDef](#dateintervaltypedef)
-  - [DeleteAnomalyMonitorRequestRequestTypeDef](#deleteanomalymonitorrequestrequesttypedef)
-  - [DeleteAnomalySubscriptionRequestRequestTypeDef](#deleteanomalysubscriptionrequestrequesttypedef)
-  - [DeleteCostCategoryDefinitionRequestRequestTypeDef](#deletecostcategorydefinitionrequestrequesttypedef)
-  - [DeleteCostCategoryDefinitionResponseTypeDef](#deletecostcategorydefinitionresponsetypedef)
-  - [DescribeCostCategoryDefinitionRequestRequestTypeDef](#describecostcategorydefinitionrequestrequesttypedef)
-  - [DescribeCostCategoryDefinitionResponseTypeDef](#describecostcategorydefinitionresponsetypedef)
-  - [DimensionValuesTypeDef](#dimensionvaluestypedef)
-  - [DimensionValuesWithAttributesTypeDef](#dimensionvalueswithattributestypedef)
-  - [DiskResourceUtilizationTypeDef](#diskresourceutilizationtypedef)
-  - [EBSResourceUtilizationTypeDef](#ebsresourceutilizationtypedef)
-  - [EC2InstanceDetailsTypeDef](#ec2instancedetailstypedef)
-  - [EC2ResourceDetailsTypeDef](#ec2resourcedetailstypedef)
-  - [EC2ResourceUtilizationTypeDef](#ec2resourceutilizationtypedef)
-  - [EC2SpecificationTypeDef](#ec2specificationtypedef)
-  - [ESInstanceDetailsTypeDef](#esinstancedetailstypedef)
-  - [ElastiCacheInstanceDetailsTypeDef](#elasticacheinstancedetailstypedef)
-  - [ExpressionTypeDef](#expressiontypedef)
-  - [ForecastResultTypeDef](#forecastresulttypedef)
-  - [GetAnomaliesRequestRequestTypeDef](#getanomaliesrequestrequesttypedef)
-  - [GetAnomaliesResponseTypeDef](#getanomaliesresponsetypedef)
-  - [GetAnomalyMonitorsRequestRequestTypeDef](#getanomalymonitorsrequestrequesttypedef)
-  - [GetAnomalyMonitorsResponseTypeDef](#getanomalymonitorsresponsetypedef)
-  - [GetAnomalySubscriptionsRequestRequestTypeDef](#getanomalysubscriptionsrequestrequesttypedef)
-  - [GetAnomalySubscriptionsResponseTypeDef](#getanomalysubscriptionsresponsetypedef)
-  - [GetCostAndUsageRequestRequestTypeDef](#getcostandusagerequestrequesttypedef)
-  - [GetCostAndUsageResponseTypeDef](#getcostandusageresponsetypedef)
-  - [GetCostAndUsageWithResourcesRequestRequestTypeDef](#getcostandusagewithresourcesrequestrequesttypedef)
-  - [GetCostAndUsageWithResourcesResponseTypeDef](#getcostandusagewithresourcesresponsetypedef)
-  - [GetCostCategoriesRequestRequestTypeDef](#getcostcategoriesrequestrequesttypedef)
-  - [GetCostCategoriesResponseTypeDef](#getcostcategoriesresponsetypedef)
-  - [GetCostForecastRequestRequestTypeDef](#getcostforecastrequestrequesttypedef)
-  - [GetCostForecastResponseTypeDef](#getcostforecastresponsetypedef)
-  - [GetDimensionValuesRequestRequestTypeDef](#getdimensionvaluesrequestrequesttypedef)
-  - [GetDimensionValuesResponseTypeDef](#getdimensionvaluesresponsetypedef)
-  - [GetReservationCoverageRequestRequestTypeDef](#getreservationcoveragerequestrequesttypedef)
-  - [GetReservationCoverageResponseTypeDef](#getreservationcoverageresponsetypedef)
-  - [GetReservationPurchaseRecommendationRequestRequestTypeDef](#getreservationpurchaserecommendationrequestrequesttypedef)
-  - [GetReservationPurchaseRecommendationResponseTypeDef](#getreservationpurchaserecommendationresponsetypedef)
-  - [GetReservationUtilizationRequestRequestTypeDef](#getreservationutilizationrequestrequesttypedef)
-  - [GetReservationUtilizationResponseTypeDef](#getreservationutilizationresponsetypedef)
-  - [GetRightsizingRecommendationRequestRequestTypeDef](#getrightsizingrecommendationrequestrequesttypedef)
-  - [GetRightsizingRecommendationResponseTypeDef](#getrightsizingrecommendationresponsetypedef)
-  - [GetSavingsPlansCoverageRequestRequestTypeDef](#getsavingsplanscoveragerequestrequesttypedef)
-  - [GetSavingsPlansCoverageResponseTypeDef](#getsavingsplanscoverageresponsetypedef)
-  - [GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef](#getsavingsplanspurchaserecommendationrequestrequesttypedef)
-  - [GetSavingsPlansPurchaseRecommendationResponseTypeDef](#getsavingsplanspurchaserecommendationresponsetypedef)
-  - [GetSavingsPlansUtilizationDetailsRequestRequestTypeDef](#getsavingsplansutilizationdetailsrequestrequesttypedef)
-  - [GetSavingsPlansUtilizationDetailsResponseTypeDef](#getsavingsplansutilizationdetailsresponsetypedef)
-  - [GetSavingsPlansUtilizationRequestRequestTypeDef](#getsavingsplansutilizationrequestrequesttypedef)
-  - [GetSavingsPlansUtilizationResponseTypeDef](#getsavingsplansutilizationresponsetypedef)
-  - [GetTagsRequestRequestTypeDef](#gettagsrequestrequesttypedef)
-  - [GetTagsResponseTypeDef](#gettagsresponsetypedef)
-  - [GetUsageForecastRequestRequestTypeDef](#getusageforecastrequestrequesttypedef)
-  - [GetUsageForecastResponseTypeDef](#getusageforecastresponsetypedef)
-  - [GroupDefinitionTypeDef](#groupdefinitiontypedef)
-  - [GroupTypeDef](#grouptypedef)
-  - [ImpactTypeDef](#impacttypedef)
-  - [InstanceDetailsTypeDef](#instancedetailstypedef)
-  - [ListCostCategoryDefinitionsRequestRequestTypeDef](#listcostcategorydefinitionsrequestrequesttypedef)
-  - [ListCostCategoryDefinitionsResponseTypeDef](#listcostcategorydefinitionsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MetricValueTypeDef](#metricvaluetypedef)
-  - [ModifyRecommendationDetailTypeDef](#modifyrecommendationdetailtypedef)
-  - [NetworkResourceUtilizationTypeDef](#networkresourceutilizationtypedef)
-  - [ProvideAnomalyFeedbackRequestRequestTypeDef](#provideanomalyfeedbackrequestrequesttypedef)
-  - [ProvideAnomalyFeedbackResponseTypeDef](#provideanomalyfeedbackresponsetypedef)
-  - [RDSInstanceDetailsTypeDef](#rdsinstancedetailstypedef)
-  - [RedshiftInstanceDetailsTypeDef](#redshiftinstancedetailstypedef)
-  - [ReservationAggregatesTypeDef](#reservationaggregatestypedef)
-  - [ReservationCoverageGroupTypeDef](#reservationcoveragegrouptypedef)
-  - [ReservationPurchaseRecommendationDetailTypeDef](#reservationpurchaserecommendationdetailtypedef)
-  - [ReservationPurchaseRecommendationMetadataTypeDef](#reservationpurchaserecommendationmetadatatypedef)
-  - [ReservationPurchaseRecommendationSummaryTypeDef](#reservationpurchaserecommendationsummarytypedef)
-  - [ReservationPurchaseRecommendationTypeDef](#reservationpurchaserecommendationtypedef)
-  - [ReservationUtilizationGroupTypeDef](#reservationutilizationgrouptypedef)
-  - [ResourceDetailsTypeDef](#resourcedetailstypedef)
-  - [ResourceTagTypeDef](#resourcetagtypedef)
-  - [ResourceUtilizationTypeDef](#resourceutilizationtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResultByTimeTypeDef](#resultbytimetypedef)
-  - [RightsizingRecommendationConfigurationTypeDef](#rightsizingrecommendationconfigurationtypedef)
-  - [RightsizingRecommendationMetadataTypeDef](#rightsizingrecommendationmetadatatypedef)
-  - [RightsizingRecommendationSummaryTypeDef](#rightsizingrecommendationsummarytypedef)
-  - [RightsizingRecommendationTypeDef](#rightsizingrecommendationtypedef)
-  - [RootCauseTypeDef](#rootcausetypedef)
-  - [SavingsPlansAmortizedCommitmentTypeDef](#savingsplansamortizedcommitmenttypedef)
-  - [SavingsPlansCoverageDataTypeDef](#savingsplanscoveragedatatypedef)
-  - [SavingsPlansCoverageTypeDef](#savingsplanscoveragetypedef)
-  - [SavingsPlansDetailsTypeDef](#savingsplansdetailstypedef)
-  - [SavingsPlansPurchaseRecommendationDetailTypeDef](#savingsplanspurchaserecommendationdetailtypedef)
-  - [SavingsPlansPurchaseRecommendationMetadataTypeDef](#savingsplanspurchaserecommendationmetadatatypedef)
-  - [SavingsPlansPurchaseRecommendationSummaryTypeDef](#savingsplanspurchaserecommendationsummarytypedef)
-  - [SavingsPlansPurchaseRecommendationTypeDef](#savingsplanspurchaserecommendationtypedef)
-  - [SavingsPlansSavingsTypeDef](#savingsplanssavingstypedef)
-  - [SavingsPlansUtilizationAggregatesTypeDef](#savingsplansutilizationaggregatestypedef)
-  - [SavingsPlansUtilizationByTimeTypeDef](#savingsplansutilizationbytimetypedef)
-  - [SavingsPlansUtilizationDetailTypeDef](#savingsplansutilizationdetailtypedef)
-  - [SavingsPlansUtilizationTypeDef](#savingsplansutilizationtypedef)
-  - [ServiceSpecificationTypeDef](#servicespecificationtypedef)
-  - [SortDefinitionTypeDef](#sortdefinitiontypedef)
-  - [SubscriberTypeDef](#subscribertypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagValuesTypeDef](#tagvaluestypedef)
-  - [TargetInstanceTypeDef](#targetinstancetypedef)
-  - [TerminateRecommendationDetailTypeDef](#terminaterecommendationdetailtypedef)
-  - [TotalImpactFilterTypeDef](#totalimpactfiltertypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAnomalyMonitorRequestRequestTypeDef](#updateanomalymonitorrequestrequesttypedef)
-  - [UpdateAnomalyMonitorResponseTypeDef](#updateanomalymonitorresponsetypedef)
-  - [UpdateAnomalySubscriptionRequestRequestTypeDef](#updateanomalysubscriptionrequestrequesttypedef)
-  - [UpdateAnomalySubscriptionResponseTypeDef](#updateanomalysubscriptionresponsetypedef)
-  - [UpdateCostCategoryDefinitionRequestRequestTypeDef](#updatecostcategorydefinitionrequestrequesttypedef)
-  - [UpdateCostCategoryDefinitionResponseTypeDef](#updatecostcategorydefinitionresponsetypedef)
-  - [UtilizationByTimeTypeDef](#utilizationbytimetypedef)
-
-<a id="anomalydateintervaltypedef"></a>
+    Auto-generated documentation for [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+    type annotations stubs module [mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
 
 ## AnomalyDateIntervalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef
+
+def get_value() -> AnomalyDateIntervalTypeDef:
+    return {
+        "StartDate": ...,
+    }
 ```
 
-Required fields:
-
-- `StartDate`: `str`
-
-Optional fields:
-
-- `EndDate`: `str`
-
-<a id="anomalymonitortypedef"></a>
+```python title="Definition"
+class AnomalyDateIntervalTypeDef(TypedDict):
+    StartDate: str,
+    EndDate: NotRequired[str],
+```
 
 ## AnomalyMonitorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import AnomalyMonitorTypeDef
+
+def get_value() -> AnomalyMonitorTypeDef:
+    return {
+        "MonitorName": ...,
+        "MonitorType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnomalyMonitorTypeDef(TypedDict):
+    MonitorName: str,
+    MonitorType: MonitorTypeType,  # (1)
+    MonitorArn: NotRequired[str],
+    CreationDate: NotRequired[str],
+    LastUpdatedDate: NotRequired[str],
+    LastEvaluatedDate: NotRequired[str],
+    MonitorDimension: NotRequired[MonitorDimensionType],  # (2)
+    MonitorSpecification: NotRequired[ExpressionTypeDef],  # (3)
+    DimensionalValueCount: NotRequired[int],
+```
 
-- `MonitorName`: `str`
-- `MonitorType`: [MonitorTypeType](./literals.md#monitortypetype)
-
-Optional fields:
-
-- `MonitorArn`: `str`
-- `CreationDate`: `str`
-- `LastUpdatedDate`: `str`
-- `LastEvaluatedDate`: `str`
-- `MonitorDimension`: `Literal['SERVICE']` (see
-  [MonitorDimensionType](./literals.md#monitordimensiontype))
-- `MonitorSpecification`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `DimensionalValueCount`: `int`
-
-<a id="anomalyscoretypedef"></a>
-
+1. See [:material-code-brackets: MonitorTypeType](./literals.md#monitortypetype) 
+2. See [:material-code-brackets: MonitorDimensionType](./literals.md#monitordimensiontype) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
 ## AnomalyScoreTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import AnomalyScoreTypeDef
+
+def get_value() -> AnomalyScoreTypeDef:
+    return {
+        "MaxScore": ...,
+        "CurrentScore": ...,
+    }
 ```
 
-Required fields:
-
-- `MaxScore`: `float`
-- `CurrentScore`: `float`
-
-<a id="anomalysubscriptiontypedef"></a>
+```python title="Definition"
+class AnomalyScoreTypeDef(TypedDict):
+    MaxScore: float,
+    CurrentScore: float,
+```
 
 ## AnomalySubscriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import AnomalySubscriptionTypeDef
+
+def get_value() -> AnomalySubscriptionTypeDef:
+    return {
+        "MonitorArnList": ...,
+        "Subscribers": ...,
+        "Threshold": ...,
+        "Frequency": ...,
+        "SubscriptionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnomalySubscriptionTypeDef(TypedDict):
+    MonitorArnList: Sequence[str],
+    Subscribers: Sequence[SubscriberTypeDef],  # (1)
+    Threshold: float,
+    Frequency: AnomalySubscriptionFrequencyType,  # (2)
+    SubscriptionName: str,
+    SubscriptionArn: NotRequired[str],
+    AccountId: NotRequired[str],
+```
 
-- `MonitorArnList`: `Sequence`\[`str`\]
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-- `Threshold`: `float`
-- `Frequency`:
-  [AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype)
-- `SubscriptionName`: `str`
-
-Optional fields:
-
-- `SubscriptionArn`: `str`
-- `AccountId`: `str`
-
-<a id="anomalytypedef"></a>
-
+1. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
+2. See [:material-code-brackets: AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype) 
 ## AnomalyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import AnomalyTypeDef
+
+def get_value() -> AnomalyTypeDef:
+    return {
+        "AnomalyId": ...,
+        "AnomalyScore": ...,
+        "Impact": ...,
+        "MonitorArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnomalyTypeDef(TypedDict):
+    AnomalyId: str,
+    AnomalyScore: AnomalyScoreTypeDef,  # (2)
+    Impact: ImpactTypeDef,  # (3)
+    MonitorArn: str,
+    AnomalyStartDate: NotRequired[str],
+    AnomalyEndDate: NotRequired[str],
+    DimensionValue: NotRequired[str],
+    RootCauses: NotRequired[List[RootCauseTypeDef]],  # (1)
+    Feedback: NotRequired[AnomalyFeedbackTypeType],  # (4)
+```
 
-- `AnomalyId`: `str`
-- `AnomalyScore`: [AnomalyScoreTypeDef](./type_defs.md#anomalyscoretypedef)
-- `Impact`: [ImpactTypeDef](./type_defs.md#impacttypedef)
-- `MonitorArn`: `str`
-
-Optional fields:
-
-- `AnomalyStartDate`: `str`
-- `AnomalyEndDate`: `str`
-- `DimensionValue`: `str`
-- `RootCauses`: `List`\[[RootCauseTypeDef](./type_defs.md#rootcausetypedef)\]
-- `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
-
-<a id="costcategoryinheritedvaluedimensiontypedef"></a>
-
+1. See [:material-code-braces: RootCauseTypeDef](./type_defs.md#rootcausetypedef) 
+2. See [:material-code-braces: AnomalyScoreTypeDef](./type_defs.md#anomalyscoretypedef) 
+3. See [:material-code-braces: ImpactTypeDef](./type_defs.md#impacttypedef) 
+4. See [:material-code-brackets: AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype) 
 ## CostCategoryInheritedValueDimensionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CostCategoryInheritedValueDimensionTypeDef
+
+def get_value() -> CostCategoryInheritedValueDimensionTypeDef:
+    return {
+        "DimensionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CostCategoryInheritedValueDimensionTypeDef(TypedDict):
+    DimensionName: NotRequired[CostCategoryInheritedValueDimensionNameType],  # (1)
+    DimensionKey: NotRequired[str],
+```
 
-- `DimensionName`:
-  [CostCategoryInheritedValueDimensionNameType](./literals.md#costcategoryinheritedvaluedimensionnametype)
-- `DimensionKey`: `str`
-
-<a id="costcategoryprocessingstatustypedef"></a>
-
+1. See [:material-code-brackets: CostCategoryInheritedValueDimensionNameType](./literals.md#costcategoryinheritedvaluedimensionnametype) 
 ## CostCategoryProcessingStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CostCategoryProcessingStatusTypeDef
+
+def get_value() -> CostCategoryProcessingStatusTypeDef:
+    return {
+        "Component": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CostCategoryProcessingStatusTypeDef(TypedDict):
+    Component: NotRequired[CostCategoryStatusComponentType],  # (1)
+    Status: NotRequired[CostCategoryStatusType],  # (2)
+```
 
-- `Component`: `Literal['COST_EXPLORER']` (see
-  [CostCategoryStatusComponentType](./literals.md#costcategorystatuscomponenttype))
-- `Status`: [CostCategoryStatusType](./literals.md#costcategorystatustype)
-
-<a id="costcategoryreferencetypedef"></a>
-
+1. See [:material-code-brackets: CostCategoryStatusComponentType](./literals.md#costcategorystatuscomponenttype) 
+2. See [:material-code-brackets: CostCategoryStatusType](./literals.md#costcategorystatustype) 
 ## CostCategoryReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CostCategoryReferenceTypeDef
+
+def get_value() -> CostCategoryReferenceTypeDef:
+    return {
+        "CostCategoryArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CostCategoryReferenceTypeDef(TypedDict):
+    CostCategoryArn: NotRequired[str],
+    Name: NotRequired[str],
+    EffectiveStart: NotRequired[str],
+    EffectiveEnd: NotRequired[str],
+    NumberOfRules: NotRequired[int],
+    ProcessingStatus: NotRequired[List[CostCategoryProcessingStatusTypeDef]],  # (1)
+    Values: NotRequired[List[str]],
+    DefaultValue: NotRequired[str],
+```
 
-- `CostCategoryArn`: `str`
-- `Name`: `str`
-- `EffectiveStart`: `str`
-- `EffectiveEnd`: `str`
-- `NumberOfRules`: `int`
-- `ProcessingStatus`:
-  `List`\[[CostCategoryProcessingStatusTypeDef](./type_defs.md#costcategoryprocessingstatustypedef)\]
-- `Values`: `List`\[`str`\]
-- `DefaultValue`: `str`
-
-<a id="costcategoryruletypedef"></a>
-
+1. See [:material-code-braces: CostCategoryProcessingStatusTypeDef](./type_defs.md#costcategoryprocessingstatustypedef) 
 ## CostCategoryRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CostCategoryRuleTypeDef
+
+def get_value() -> CostCategoryRuleTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CostCategoryRuleTypeDef(TypedDict):
+    Value: NotRequired[str],
+    Rule: NotRequired[ExpressionTypeDef],  # (1)
+    InheritedValue: NotRequired[CostCategoryInheritedValueDimensionTypeDef],  # (2)
+    Type: NotRequired[CostCategoryRuleTypeType],  # (3)
+```
 
-- `Value`: `str`
-- `Rule`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `InheritedValue`:
-  [CostCategoryInheritedValueDimensionTypeDef](./type_defs.md#costcategoryinheritedvaluedimensiontypedef)
-- `Type`: [CostCategoryRuleTypeType](./literals.md#costcategoryruletypetype)
-
-<a id="costcategorysplitchargeruleparametertypedef"></a>
-
+1. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+2. See [:material-code-braces: CostCategoryInheritedValueDimensionTypeDef](./type_defs.md#costcategoryinheritedvaluedimensiontypedef) 
+3. See [:material-code-brackets: CostCategoryRuleTypeType](./literals.md#costcategoryruletypetype) 
 ## CostCategorySplitChargeRuleParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CostCategorySplitChargeRuleParameterTypeDef
+
+def get_value() -> CostCategorySplitChargeRuleParameterTypeDef:
+    return {
+        "Type": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CostCategorySplitChargeRuleParameterTypeDef(TypedDict):
+    Type: CostCategorySplitChargeRuleParameterTypeType,  # (1)
+    Values: Sequence[str],
+```
 
-- `Type`: `Literal['ALLOCATION_PERCENTAGES']` (see
-  [CostCategorySplitChargeRuleParameterTypeType](./literals.md#costcategorysplitchargeruleparametertypetype))
-- `Values`: `Sequence`\[`str`\]
-
-<a id="costcategorysplitchargeruletypedef"></a>
-
+1. See [:material-code-brackets: CostCategorySplitChargeRuleParameterTypeType](./literals.md#costcategorysplitchargeruleparametertypetype) 
 ## CostCategorySplitChargeRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CostCategorySplitChargeRuleTypeDef
+
+def get_value() -> CostCategorySplitChargeRuleTypeDef:
+    return {
+        "Source": ...,
+        "Targets": ...,
+        "Method": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CostCategorySplitChargeRuleTypeDef(TypedDict):
+    Source: str,
+    Targets: Sequence[str],
+    Method: CostCategorySplitChargeMethodType,  # (1)
+    Parameters: NotRequired[Sequence[CostCategorySplitChargeRuleParameterTypeDef]],  # (2)
+```
 
-- `Source`: `str`
-- `Targets`: `Sequence`\[`str`\]
-- `Method`:
-  [CostCategorySplitChargeMethodType](./literals.md#costcategorysplitchargemethodtype)
-
-Optional fields:
-
-- `Parameters`:
-  `Sequence`\[[CostCategorySplitChargeRuleParameterTypeDef](./type_defs.md#costcategorysplitchargeruleparametertypedef)\]
-
-<a id="costcategorytypedef"></a>
-
+1. See [:material-code-brackets: CostCategorySplitChargeMethodType](./literals.md#costcategorysplitchargemethodtype) 
+2. See [:material-code-braces: CostCategorySplitChargeRuleParameterTypeDef](./type_defs.md#costcategorysplitchargeruleparametertypedef) 
 ## CostCategoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CostCategoryTypeDef
+
+def get_value() -> CostCategoryTypeDef:
+    return {
+        "CostCategoryArn": ...,
+        "EffectiveStart": ...,
+        "Name": ...,
+        "RuleVersion": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CostCategoryTypeDef(TypedDict):
+    CostCategoryArn: str,
+    EffectiveStart: str,
+    Name: str,
+    RuleVersion: CostCategoryRuleVersionType,  # (1)
+    Rules: List[CostCategoryRuleTypeDef],  # (2)
+    EffectiveEnd: NotRequired[str],
+    SplitChargeRules: NotRequired[List[CostCategorySplitChargeRuleTypeDef]],  # (3)
+    ProcessingStatus: NotRequired[List[CostCategoryProcessingStatusTypeDef]],  # (4)
+    DefaultValue: NotRequired[str],
+```
 
-- `CostCategoryArn`: `str`
-- `EffectiveStart`: `str`
-- `Name`: `str`
-- `RuleVersion`: `Literal['CostCategoryExpression.v1']` (see
-  [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
-- `Rules`:
-  `List`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
-
-Optional fields:
-
-- `EffectiveEnd`: `str`
-- `SplitChargeRules`:
-  `List`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
-- `ProcessingStatus`:
-  `List`\[[CostCategoryProcessingStatusTypeDef](./type_defs.md#costcategoryprocessingstatustypedef)\]
-- `DefaultValue`: `str`
-
-<a id="costcategoryvaluestypedef"></a>
-
+1. See [:material-code-brackets: CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype) 
+2. See [:material-code-braces: CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef) 
+3. See [:material-code-braces: CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef) 
+4. See [:material-code-braces: CostCategoryProcessingStatusTypeDef](./type_defs.md#costcategoryprocessingstatustypedef) 
 ## CostCategoryValuesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CostCategoryValuesTypeDef
+
+def get_value() -> CostCategoryValuesTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CostCategoryValuesTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+    MatchOptions: NotRequired[Sequence[MatchOptionType]],  # (1)
+```
 
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-- `MatchOptions`:
-  `Sequence`\[[MatchOptionType](./literals.md#matchoptiontype)\]
-
-<a id="coveragebytimetypedef"></a>
-
+1. See [:material-code-brackets: MatchOptionType](./literals.md#matchoptiontype) 
 ## CoverageByTimeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CoverageByTimeTypeDef
+
+def get_value() -> CoverageByTimeTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CoverageByTimeTypeDef(TypedDict):
+    TimePeriod: NotRequired[DateIntervalTypeDef],  # (1)
+    Groups: NotRequired[List[ReservationCoverageGroupTypeDef]],  # (2)
+    Total: NotRequired[CoverageTypeDef],  # (3)
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `Groups`:
-  `List`\[[ReservationCoverageGroupTypeDef](./type_defs.md#reservationcoveragegrouptypedef)\]
-- `Total`: [CoverageTypeDef](./type_defs.md#coveragetypedef)
-
-<a id="coveragecosttypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: ReservationCoverageGroupTypeDef](./type_defs.md#reservationcoveragegrouptypedef) 
+3. See [:material-code-braces: CoverageTypeDef](./type_defs.md#coveragetypedef) 
 ## CoverageCostTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CoverageCostTypeDef
+
+def get_value() -> CoverageCostTypeDef:
+    return {
+        "OnDemandCost": ...,
+    }
 ```
 
-Optional fields:
-
-- `OnDemandCost`: `str`
-
-<a id="coveragehourstypedef"></a>
+```python title="Definition"
+class CoverageCostTypeDef(TypedDict):
+    OnDemandCost: NotRequired[str],
+```
 
 ## CoverageHoursTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CoverageHoursTypeDef
+
+def get_value() -> CoverageHoursTypeDef:
+    return {
+        "OnDemandHours": ...,
+    }
 ```
 
-Optional fields:
-
-- `OnDemandHours`: `str`
-- `ReservedHours`: `str`
-- `TotalRunningHours`: `str`
-- `CoverageHoursPercentage`: `str`
-
-<a id="coveragenormalizedunitstypedef"></a>
+```python title="Definition"
+class CoverageHoursTypeDef(TypedDict):
+    OnDemandHours: NotRequired[str],
+    ReservedHours: NotRequired[str],
+    TotalRunningHours: NotRequired[str],
+    CoverageHoursPercentage: NotRequired[str],
+```
 
 ## CoverageNormalizedUnitsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CoverageNormalizedUnitsTypeDef
+
+def get_value() -> CoverageNormalizedUnitsTypeDef:
+    return {
+        "OnDemandNormalizedUnits": ...,
+    }
 ```
 
-Optional fields:
-
-- `OnDemandNormalizedUnits`: `str`
-- `ReservedNormalizedUnits`: `str`
-- `TotalRunningNormalizedUnits`: `str`
-- `CoverageNormalizedUnitsPercentage`: `str`
-
-<a id="coveragetypedef"></a>
+```python title="Definition"
+class CoverageNormalizedUnitsTypeDef(TypedDict):
+    OnDemandNormalizedUnits: NotRequired[str],
+    ReservedNormalizedUnits: NotRequired[str],
+    TotalRunningNormalizedUnits: NotRequired[str],
+    CoverageNormalizedUnitsPercentage: NotRequired[str],
+```
 
 ## CoverageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CoverageTypeDef
+
+def get_value() -> CoverageTypeDef:
+    return {
+        "CoverageHours": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CoverageTypeDef(TypedDict):
+    CoverageHours: NotRequired[CoverageHoursTypeDef],  # (1)
+    CoverageNormalizedUnits: NotRequired[CoverageNormalizedUnitsTypeDef],  # (2)
+    CoverageCost: NotRequired[CoverageCostTypeDef],  # (3)
+```
 
-- `CoverageHours`: [CoverageHoursTypeDef](./type_defs.md#coveragehourstypedef)
-- `CoverageNormalizedUnits`:
-  [CoverageNormalizedUnitsTypeDef](./type_defs.md#coveragenormalizedunitstypedef)
-- `CoverageCost`: [CoverageCostTypeDef](./type_defs.md#coveragecosttypedef)
-
-<a id="createanomalymonitorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CoverageHoursTypeDef](./type_defs.md#coveragehourstypedef) 
+2. See [:material-code-braces: CoverageNormalizedUnitsTypeDef](./type_defs.md#coveragenormalizedunitstypedef) 
+3. See [:material-code-braces: CoverageCostTypeDef](./type_defs.md#coveragecosttypedef) 
 ## CreateAnomalyMonitorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CreateAnomalyMonitorRequestRequestTypeDef
+
+def get_value() -> CreateAnomalyMonitorRequestRequestTypeDef:
+    return {
+        "AnomalyMonitor": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAnomalyMonitorRequestRequestTypeDef(TypedDict):
+    AnomalyMonitor: AnomalyMonitorTypeDef,  # (1)
+    ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (2)
+```
 
-- `AnomalyMonitor`:
-  [AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef)
-
-Optional fields:
-
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-
-<a id="createanomalymonitorresponsetypedef"></a>
-
+1. See [:material-code-braces: AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef) 
+2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 ## CreateAnomalyMonitorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CreateAnomalyMonitorResponseTypeDef
+
+def get_value() -> CreateAnomalyMonitorResponseTypeDef:
+    return {
+        "MonitorArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAnomalyMonitorResponseTypeDef(TypedDict):
+    MonitorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MonitorArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createanomalysubscriptionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAnomalySubscriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CreateAnomalySubscriptionRequestRequestTypeDef
+
+def get_value() -> CreateAnomalySubscriptionRequestRequestTypeDef:
+    return {
+        "AnomalySubscription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAnomalySubscriptionRequestRequestTypeDef(TypedDict):
+    AnomalySubscription: AnomalySubscriptionTypeDef,  # (1)
+    ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (2)
+```
 
-- `AnomalySubscription`:
-  [AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef)
-
-Optional fields:
-
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-
-<a id="createanomalysubscriptionresponsetypedef"></a>
-
+1. See [:material-code-braces: AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef) 
+2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 ## CreateAnomalySubscriptionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CreateAnomalySubscriptionResponseTypeDef
+
+def get_value() -> CreateAnomalySubscriptionResponseTypeDef:
+    return {
+        "SubscriptionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAnomalySubscriptionResponseTypeDef(TypedDict):
+    SubscriptionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SubscriptionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcostcategorydefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCostCategoryDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CreateCostCategoryDefinitionRequestRequestTypeDef
+
+def get_value() -> CreateCostCategoryDefinitionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "RuleVersion": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCostCategoryDefinitionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    RuleVersion: CostCategoryRuleVersionType,  # (1)
+    Rules: Sequence[CostCategoryRuleTypeDef],  # (2)
+    DefaultValue: NotRequired[str],
+    SplitChargeRules: NotRequired[Sequence[CostCategorySplitChargeRuleTypeDef]],  # (3)
+    ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (4)
+```
 
-- `Name`: `str`
-- `RuleVersion`: `Literal['CostCategoryExpression.v1']` (see
-  [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
-- `Rules`:
-  `Sequence`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
-
-Optional fields:
-
-- `DefaultValue`: `str`
-- `SplitChargeRules`:
-  `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-
-<a id="createcostcategorydefinitionresponsetypedef"></a>
-
+1. See [:material-code-brackets: CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype) 
+2. See [:material-code-braces: CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef) 
+3. See [:material-code-braces: CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef) 
+4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 ## CreateCostCategoryDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CreateCostCategoryDefinitionResponseTypeDef
+
+def get_value() -> CreateCostCategoryDefinitionResponseTypeDef:
+    return {
+        "CostCategoryArn": ...,
+        "EffectiveStart": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCostCategoryDefinitionResponseTypeDef(TypedDict):
+    CostCategoryArn: str,
+    EffectiveStart: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CostCategoryArn`: `str`
-- `EffectiveStart`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="currentinstancetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CurrentInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import CurrentInstanceTypeDef
+
+def get_value() -> CurrentInstanceTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CurrentInstanceTypeDef(TypedDict):
+    ResourceId: NotRequired[str],
+    InstanceName: NotRequired[str],
+    Tags: NotRequired[List[TagValuesTypeDef]],  # (1)
+    ResourceDetails: NotRequired[ResourceDetailsTypeDef],  # (2)
+    ResourceUtilization: NotRequired[ResourceUtilizationTypeDef],  # (3)
+    ReservationCoveredHoursInLookbackPeriod: NotRequired[str],
+    SavingsPlansCoveredHoursInLookbackPeriod: NotRequired[str],
+    OnDemandHoursInLookbackPeriod: NotRequired[str],
+    TotalRunningHoursInLookbackPeriod: NotRequired[str],
+    MonthlyCost: NotRequired[str],
+    CurrencyCode: NotRequired[str],
+```
 
-- `ResourceId`: `str`
-- `InstanceName`: `str`
-- `Tags`: `List`\[[TagValuesTypeDef](./type_defs.md#tagvaluestypedef)\]
-- `ResourceDetails`:
-  [ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef)
-- `ResourceUtilization`:
-  [ResourceUtilizationTypeDef](./type_defs.md#resourceutilizationtypedef)
-- `ReservationCoveredHoursInLookbackPeriod`: `str`
-- `SavingsPlansCoveredHoursInLookbackPeriod`: `str`
-- `OnDemandHoursInLookbackPeriod`: `str`
-- `TotalRunningHoursInLookbackPeriod`: `str`
-- `MonthlyCost`: `str`
-- `CurrencyCode`: `str`
-
-<a id="dateintervaltypedef"></a>
-
+1. See [:material-code-braces: TagValuesTypeDef](./type_defs.md#tagvaluestypedef) 
+2. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
+3. See [:material-code-braces: ResourceUtilizationTypeDef](./type_defs.md#resourceutilizationtypedef) 
 ## DateIntervalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DateIntervalTypeDef
+
+def get_value() -> DateIntervalTypeDef:
+    return {
+        "Start": ...,
+        "End": ...,
+    }
 ```
 
-Required fields:
-
-- `Start`: `str`
-- `End`: `str`
-
-<a id="deleteanomalymonitorrequestrequesttypedef"></a>
+```python title="Definition"
+class DateIntervalTypeDef(TypedDict):
+    Start: str,
+    End: str,
+```
 
 ## DeleteAnomalyMonitorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DeleteAnomalyMonitorRequestRequestTypeDef
+
+def get_value() -> DeleteAnomalyMonitorRequestRequestTypeDef:
+    return {
+        "MonitorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `MonitorArn`: `str`
-
-<a id="deleteanomalysubscriptionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAnomalyMonitorRequestRequestTypeDef(TypedDict):
+    MonitorArn: str,
+```
 
 ## DeleteAnomalySubscriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DeleteAnomalySubscriptionRequestRequestTypeDef
+
+def get_value() -> DeleteAnomalySubscriptionRequestRequestTypeDef:
+    return {
+        "SubscriptionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionArn`: `str`
-
-<a id="deletecostcategorydefinitionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAnomalySubscriptionRequestRequestTypeDef(TypedDict):
+    SubscriptionArn: str,
+```
 
 ## DeleteCostCategoryDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DeleteCostCategoryDefinitionRequestRequestTypeDef
+
+def get_value() -> DeleteCostCategoryDefinitionRequestRequestTypeDef:
+    return {
+        "CostCategoryArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CostCategoryArn`: `str`
-
-<a id="deletecostcategorydefinitionresponsetypedef"></a>
+```python title="Definition"
+class DeleteCostCategoryDefinitionRequestRequestTypeDef(TypedDict):
+    CostCategoryArn: str,
+```
 
 ## DeleteCostCategoryDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DeleteCostCategoryDefinitionResponseTypeDef
+
+def get_value() -> DeleteCostCategoryDefinitionResponseTypeDef:
+    return {
+        "CostCategoryArn": ...,
+        "EffectiveEnd": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteCostCategoryDefinitionResponseTypeDef(TypedDict):
+    CostCategoryArn: str,
+    EffectiveEnd: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CostCategoryArn`: `str`
-- `EffectiveEnd`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecostcategorydefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCostCategoryDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DescribeCostCategoryDefinitionRequestRequestTypeDef
+
+def get_value() -> DescribeCostCategoryDefinitionRequestRequestTypeDef:
+    return {
+        "CostCategoryArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CostCategoryArn`: `str`
-
-Optional fields:
-
-- `EffectiveOn`: `str`
-
-<a id="describecostcategorydefinitionresponsetypedef"></a>
+```python title="Definition"
+class DescribeCostCategoryDefinitionRequestRequestTypeDef(TypedDict):
+    CostCategoryArn: str,
+    EffectiveOn: NotRequired[str],
+```
 
 ## DescribeCostCategoryDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DescribeCostCategoryDefinitionResponseTypeDef
+
+def get_value() -> DescribeCostCategoryDefinitionResponseTypeDef:
+    return {
+        "CostCategory": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCostCategoryDefinitionResponseTypeDef(TypedDict):
+    CostCategory: CostCategoryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CostCategory`: [CostCategoryTypeDef](./type_defs.md#costcategorytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dimensionvaluestypedef"></a>
-
+1. See [:material-code-braces: CostCategoryTypeDef](./type_defs.md#costcategorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DimensionValuesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DimensionValuesTypeDef
+
+def get_value() -> DimensionValuesTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DimensionValuesTypeDef(TypedDict):
+    Key: NotRequired[DimensionType],  # (1)
+    Values: NotRequired[Sequence[str]],
+    MatchOptions: NotRequired[Sequence[MatchOptionType]],  # (2)
+```
 
-- `Key`: [DimensionType](./literals.md#dimensiontype)
-- `Values`: `Sequence`\[`str`\]
-- `MatchOptions`:
-  `Sequence`\[[MatchOptionType](./literals.md#matchoptiontype)\]
-
-<a id="dimensionvalueswithattributestypedef"></a>
-
+1. See [:material-code-brackets: DimensionType](./literals.md#dimensiontype) 
+2. See [:material-code-brackets: MatchOptionType](./literals.md#matchoptiontype) 
 ## DimensionValuesWithAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DimensionValuesWithAttributesTypeDef
+
+def get_value() -> DimensionValuesWithAttributesTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-
-<a id="diskresourceutilizationtypedef"></a>
+```python title="Definition"
+class DimensionValuesWithAttributesTypeDef(TypedDict):
+    Value: NotRequired[str],
+    Attributes: NotRequired[Dict[str, str]],
+```
 
 ## DiskResourceUtilizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import DiskResourceUtilizationTypeDef
+
+def get_value() -> DiskResourceUtilizationTypeDef:
+    return {
+        "DiskReadOpsPerSecond": ...,
+    }
 ```
 
-Optional fields:
-
-- `DiskReadOpsPerSecond`: `str`
-- `DiskWriteOpsPerSecond`: `str`
-- `DiskReadBytesPerSecond`: `str`
-- `DiskWriteBytesPerSecond`: `str`
-
-<a id="ebsresourceutilizationtypedef"></a>
+```python title="Definition"
+class DiskResourceUtilizationTypeDef(TypedDict):
+    DiskReadOpsPerSecond: NotRequired[str],
+    DiskWriteOpsPerSecond: NotRequired[str],
+    DiskReadBytesPerSecond: NotRequired[str],
+    DiskWriteBytesPerSecond: NotRequired[str],
+```
 
 ## EBSResourceUtilizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import EBSResourceUtilizationTypeDef
+
+def get_value() -> EBSResourceUtilizationTypeDef:
+    return {
+        "EbsReadOpsPerSecond": ...,
+    }
 ```
 
-Optional fields:
-
-- `EbsReadOpsPerSecond`: `str`
-- `EbsWriteOpsPerSecond`: `str`
-- `EbsReadBytesPerSecond`: `str`
-- `EbsWriteBytesPerSecond`: `str`
-
-<a id="ec2instancedetailstypedef"></a>
+```python title="Definition"
+class EBSResourceUtilizationTypeDef(TypedDict):
+    EbsReadOpsPerSecond: NotRequired[str],
+    EbsWriteOpsPerSecond: NotRequired[str],
+    EbsReadBytesPerSecond: NotRequired[str],
+    EbsWriteBytesPerSecond: NotRequired[str],
+```
 
 ## EC2InstanceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import EC2InstanceDetailsTypeDef
+
+def get_value() -> EC2InstanceDetailsTypeDef:
+    return {
+        "Family": ...,
+    }
 ```
 
-Optional fields:
-
-- `Family`: `str`
-- `InstanceType`: `str`
-- `Region`: `str`
-- `AvailabilityZone`: `str`
-- `Platform`: `str`
-- `Tenancy`: `str`
-- `CurrentGeneration`: `bool`
-- `SizeFlexEligible`: `bool`
-
-<a id="ec2resourcedetailstypedef"></a>
+```python title="Definition"
+class EC2InstanceDetailsTypeDef(TypedDict):
+    Family: NotRequired[str],
+    InstanceType: NotRequired[str],
+    Region: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    Platform: NotRequired[str],
+    Tenancy: NotRequired[str],
+    CurrentGeneration: NotRequired[bool],
+    SizeFlexEligible: NotRequired[bool],
+```
 
 ## EC2ResourceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import EC2ResourceDetailsTypeDef
+
+def get_value() -> EC2ResourceDetailsTypeDef:
+    return {
+        "HourlyOnDemandRate": ...,
+    }
 ```
 
-Optional fields:
-
-- `HourlyOnDemandRate`: `str`
-- `InstanceType`: `str`
-- `Platform`: `str`
-- `Region`: `str`
-- `Sku`: `str`
-- `Memory`: `str`
-- `NetworkPerformance`: `str`
-- `Storage`: `str`
-- `Vcpu`: `str`
-
-<a id="ec2resourceutilizationtypedef"></a>
+```python title="Definition"
+class EC2ResourceDetailsTypeDef(TypedDict):
+    HourlyOnDemandRate: NotRequired[str],
+    InstanceType: NotRequired[str],
+    Platform: NotRequired[str],
+    Region: NotRequired[str],
+    Sku: NotRequired[str],
+    Memory: NotRequired[str],
+    NetworkPerformance: NotRequired[str],
+    Storage: NotRequired[str],
+    Vcpu: NotRequired[str],
+```
 
 ## EC2ResourceUtilizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import EC2ResourceUtilizationTypeDef
+
+def get_value() -> EC2ResourceUtilizationTypeDef:
+    return {
+        "MaxCpuUtilizationPercentage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EC2ResourceUtilizationTypeDef(TypedDict):
+    MaxCpuUtilizationPercentage: NotRequired[str],
+    MaxMemoryUtilizationPercentage: NotRequired[str],
+    MaxStorageUtilizationPercentage: NotRequired[str],
+    EBSResourceUtilization: NotRequired[EBSResourceUtilizationTypeDef],  # (1)
+    DiskResourceUtilization: NotRequired[DiskResourceUtilizationTypeDef],  # (2)
+    NetworkResourceUtilization: NotRequired[NetworkResourceUtilizationTypeDef],  # (3)
+```
 
-- `MaxCpuUtilizationPercentage`: `str`
-- `MaxMemoryUtilizationPercentage`: `str`
-- `MaxStorageUtilizationPercentage`: `str`
-- `EBSResourceUtilization`:
-  [EBSResourceUtilizationTypeDef](./type_defs.md#ebsresourceutilizationtypedef)
-- `DiskResourceUtilization`:
-  [DiskResourceUtilizationTypeDef](./type_defs.md#diskresourceutilizationtypedef)
-- `NetworkResourceUtilization`:
-  [NetworkResourceUtilizationTypeDef](./type_defs.md#networkresourceutilizationtypedef)
-
-<a id="ec2specificationtypedef"></a>
-
+1. See [:material-code-braces: EBSResourceUtilizationTypeDef](./type_defs.md#ebsresourceutilizationtypedef) 
+2. See [:material-code-braces: DiskResourceUtilizationTypeDef](./type_defs.md#diskresourceutilizationtypedef) 
+3. See [:material-code-braces: NetworkResourceUtilizationTypeDef](./type_defs.md#networkresourceutilizationtypedef) 
 ## EC2SpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import EC2SpecificationTypeDef
+
+def get_value() -> EC2SpecificationTypeDef:
+    return {
+        "OfferingClass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EC2SpecificationTypeDef(TypedDict):
+    OfferingClass: NotRequired[OfferingClassType],  # (1)
+```
 
-- `OfferingClass`: [OfferingClassType](./literals.md#offeringclasstype)
-
-<a id="esinstancedetailstypedef"></a>
-
+1. See [:material-code-brackets: OfferingClassType](./literals.md#offeringclasstype) 
 ## ESInstanceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ESInstanceDetailsTypeDef
+
+def get_value() -> ESInstanceDetailsTypeDef:
+    return {
+        "InstanceClass": ...,
+    }
 ```
 
-Optional fields:
-
-- `InstanceClass`: `str`
-- `InstanceSize`: `str`
-- `Region`: `str`
-- `CurrentGeneration`: `bool`
-- `SizeFlexEligible`: `bool`
-
-<a id="elasticacheinstancedetailstypedef"></a>
+```python title="Definition"
+class ESInstanceDetailsTypeDef(TypedDict):
+    InstanceClass: NotRequired[str],
+    InstanceSize: NotRequired[str],
+    Region: NotRequired[str],
+    CurrentGeneration: NotRequired[bool],
+    SizeFlexEligible: NotRequired[bool],
+```
 
 ## ElastiCacheInstanceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ElastiCacheInstanceDetailsTypeDef
+
+def get_value() -> ElastiCacheInstanceDetailsTypeDef:
+    return {
+        "Family": ...,
+    }
 ```
 
-Optional fields:
-
-- `Family`: `str`
-- `NodeType`: `str`
-- `Region`: `str`
-- `ProductDescription`: `str`
-- `CurrentGeneration`: `bool`
-- `SizeFlexEligible`: `bool`
-
-<a id="expressiontypedef"></a>
+```python title="Definition"
+class ElastiCacheInstanceDetailsTypeDef(TypedDict):
+    Family: NotRequired[str],
+    NodeType: NotRequired[str],
+    Region: NotRequired[str],
+    ProductDescription: NotRequired[str],
+    CurrentGeneration: NotRequired[bool],
+    SizeFlexEligible: NotRequired[bool],
+```
 
 ## ExpressionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ExpressionTypeDef
+
+def get_value() -> ExpressionTypeDef:
+    return {
+        "Or": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExpressionTypeDef(TypedDict):
+    Or: NotRequired[Sequence[ExpressionTypeDef]],  # (1)
+    And: NotRequired[Sequence[ExpressionTypeDef]],  # (1)
+    Not: NotRequired[ExpressionTypeDef],  # (3)
+    Dimensions: NotRequired[DimensionValuesTypeDef],  # (4)
+    Tags: NotRequired[TagValuesTypeDef],  # (5)
+    CostCategories: NotRequired[CostCategoryValuesTypeDef],  # (6)
+```
 
-- `Or`: `Sequence`\[[ExpressionTypeDef](./type_defs.md#expressiontypedef)\]
-- `And`: `Sequence`\[[ExpressionTypeDef](./type_defs.md#expressiontypedef)\]
-- `Not`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Dimensions`: [DimensionValuesTypeDef](./type_defs.md#dimensionvaluestypedef)
-- `Tags`: [TagValuesTypeDef](./type_defs.md#tagvaluestypedef)
-- `CostCategories`:
-  [CostCategoryValuesTypeDef](./type_defs.md#costcategoryvaluestypedef)
-
-<a id="forecastresulttypedef"></a>
-
+1. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+2. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+4. See [:material-code-braces: DimensionValuesTypeDef](./type_defs.md#dimensionvaluestypedef) 
+5. See [:material-code-braces: TagValuesTypeDef](./type_defs.md#tagvaluestypedef) 
+6. See [:material-code-braces: CostCategoryValuesTypeDef](./type_defs.md#costcategoryvaluestypedef) 
 ## ForecastResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ForecastResultTypeDef
+
+def get_value() -> ForecastResultTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ForecastResultTypeDef(TypedDict):
+    TimePeriod: NotRequired[DateIntervalTypeDef],  # (1)
+    MeanValue: NotRequired[str],
+    PredictionIntervalLowerBound: NotRequired[str],
+    PredictionIntervalUpperBound: NotRequired[str],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `MeanValue`: `str`
-- `PredictionIntervalLowerBound`: `str`
-- `PredictionIntervalUpperBound`: `str`
-
-<a id="getanomaliesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
 ## GetAnomaliesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetAnomaliesRequestRequestTypeDef
+
+def get_value() -> GetAnomaliesRequestRequestTypeDef:
+    return {
+        "DateInterval": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAnomaliesRequestRequestTypeDef(TypedDict):
+    DateInterval: AnomalyDateIntervalTypeDef,  # (1)
+    MonitorArn: NotRequired[str],
+    Feedback: NotRequired[AnomalyFeedbackTypeType],  # (2)
+    TotalImpact: NotRequired[TotalImpactFilterTypeDef],  # (3)
+    NextPageToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `DateInterval`:
-  [AnomalyDateIntervalTypeDef](./type_defs.md#anomalydateintervaltypedef)
-
-Optional fields:
-
-- `MonitorArn`: `str`
-- `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
-- `TotalImpact`:
-  [TotalImpactFilterTypeDef](./type_defs.md#totalimpactfiltertypedef)
-- `NextPageToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getanomaliesresponsetypedef"></a>
-
+1. See [:material-code-braces: AnomalyDateIntervalTypeDef](./type_defs.md#anomalydateintervaltypedef) 
+2. See [:material-code-brackets: AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype) 
+3. See [:material-code-braces: TotalImpactFilterTypeDef](./type_defs.md#totalimpactfiltertypedef) 
 ## GetAnomaliesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetAnomaliesResponseTypeDef
+
+def get_value() -> GetAnomaliesResponseTypeDef:
+    return {
+        "Anomalies": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAnomaliesResponseTypeDef(TypedDict):
+    Anomalies: List[AnomalyTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Anomalies`: `List`\[[AnomalyTypeDef](./type_defs.md#anomalytypedef)\]
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getanomalymonitorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnomalyTypeDef](./type_defs.md#anomalytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAnomalyMonitorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetAnomalyMonitorsRequestRequestTypeDef
+
+def get_value() -> GetAnomalyMonitorsRequestRequestTypeDef:
+    return {
+        "MonitorArnList": ...,
+    }
 ```
 
-Optional fields:
-
-- `MonitorArnList`: `Sequence`\[`str`\]
-- `NextPageToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getanomalymonitorsresponsetypedef"></a>
+```python title="Definition"
+class GetAnomalyMonitorsRequestRequestTypeDef(TypedDict):
+    MonitorArnList: NotRequired[Sequence[str]],
+    NextPageToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetAnomalyMonitorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetAnomalyMonitorsResponseTypeDef
+
+def get_value() -> GetAnomalyMonitorsResponseTypeDef:
+    return {
+        "AnomalyMonitors": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAnomalyMonitorsResponseTypeDef(TypedDict):
+    AnomalyMonitors: List[AnomalyMonitorTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnomalyMonitors`:
-  `List`\[[AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef)\]
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getanomalysubscriptionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAnomalySubscriptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetAnomalySubscriptionsRequestRequestTypeDef
+
+def get_value() -> GetAnomalySubscriptionsRequestRequestTypeDef:
+    return {
+        "SubscriptionArnList": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubscriptionArnList`: `Sequence`\[`str`\]
-- `MonitorArn`: `str`
-- `NextPageToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getanomalysubscriptionsresponsetypedef"></a>
+```python title="Definition"
+class GetAnomalySubscriptionsRequestRequestTypeDef(TypedDict):
+    SubscriptionArnList: NotRequired[Sequence[str]],
+    MonitorArn: NotRequired[str],
+    NextPageToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetAnomalySubscriptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetAnomalySubscriptionsResponseTypeDef
+
+def get_value() -> GetAnomalySubscriptionsResponseTypeDef:
+    return {
+        "AnomalySubscriptions": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAnomalySubscriptionsResponseTypeDef(TypedDict):
+    AnomalySubscriptions: List[AnomalySubscriptionTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnomalySubscriptions`:
-  `List`\[[AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef)\]
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcostandusagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCostAndUsageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetCostAndUsageRequestRequestTypeDef
+
+def get_value() -> GetCostAndUsageRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+        "Granularity": ...,
+        "Metrics": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCostAndUsageRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Granularity: GranularityType,  # (2)
+    Metrics: Sequence[str],
+    Filter: NotRequired[ExpressionTypeDef],  # (3)
+    GroupBy: NotRequired[Sequence[GroupDefinitionTypeDef]],  # (4)
+    NextPageToken: NotRequired[str],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Metrics`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `NextPageToken`: `str`
-
-<a id="getcostandusageresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+4. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
 ## GetCostAndUsageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetCostAndUsageResponseTypeDef
+
+def get_value() -> GetCostAndUsageResponseTypeDef:
+    return {
+        "NextPageToken": ...,
+        "GroupDefinitions": ...,
+        "ResultsByTime": ...,
+        "DimensionValueAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCostAndUsageResponseTypeDef(TypedDict):
+    NextPageToken: str,
+    GroupDefinitions: List[GroupDefinitionTypeDef],  # (1)
+    ResultsByTime: List[ResultByTimeTypeDef],  # (2)
+    DimensionValueAttributes: List[DimensionValuesWithAttributesTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `NextPageToken`: `str`
-- `GroupDefinitions`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `ResultsByTime`:
-  `List`\[[ResultByTimeTypeDef](./type_defs.md#resultbytimetypedef)\]
-- `DimensionValueAttributes`:
-  `List`\[[DimensionValuesWithAttributesTypeDef](./type_defs.md#dimensionvalueswithattributestypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcostandusagewithresourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+2. See [:material-code-braces: ResultByTimeTypeDef](./type_defs.md#resultbytimetypedef) 
+3. See [:material-code-braces: DimensionValuesWithAttributesTypeDef](./type_defs.md#dimensionvalueswithattributestypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCostAndUsageWithResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetCostAndUsageWithResourcesRequestRequestTypeDef
+
+def get_value() -> GetCostAndUsageWithResourcesRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+        "Granularity": ...,
+        "Filter": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCostAndUsageWithResourcesRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Granularity: GranularityType,  # (2)
+    Filter: ExpressionTypeDef,  # (3)
+    Metrics: NotRequired[Sequence[str]],
+    GroupBy: NotRequired[Sequence[GroupDefinitionTypeDef]],  # (4)
+    NextPageToken: NotRequired[str],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-
-Optional fields:
-
-- `Metrics`: `Sequence`\[`str`\]
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `NextPageToken`: `str`
-
-<a id="getcostandusagewithresourcesresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+4. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
 ## GetCostAndUsageWithResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetCostAndUsageWithResourcesResponseTypeDef
+
+def get_value() -> GetCostAndUsageWithResourcesResponseTypeDef:
+    return {
+        "NextPageToken": ...,
+        "GroupDefinitions": ...,
+        "ResultsByTime": ...,
+        "DimensionValueAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCostAndUsageWithResourcesResponseTypeDef(TypedDict):
+    NextPageToken: str,
+    GroupDefinitions: List[GroupDefinitionTypeDef],  # (1)
+    ResultsByTime: List[ResultByTimeTypeDef],  # (2)
+    DimensionValueAttributes: List[DimensionValuesWithAttributesTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `NextPageToken`: `str`
-- `GroupDefinitions`:
-  `List`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `ResultsByTime`:
-  `List`\[[ResultByTimeTypeDef](./type_defs.md#resultbytimetypedef)\]
-- `DimensionValueAttributes`:
-  `List`\[[DimensionValuesWithAttributesTypeDef](./type_defs.md#dimensionvalueswithattributestypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcostcategoriesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+2. See [:material-code-braces: ResultByTimeTypeDef](./type_defs.md#resultbytimetypedef) 
+3. See [:material-code-braces: DimensionValuesWithAttributesTypeDef](./type_defs.md#dimensionvalueswithattributestypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCostCategoriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetCostCategoriesRequestRequestTypeDef
+
+def get_value() -> GetCostCategoriesRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCostCategoriesRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    SearchString: NotRequired[str],
+    CostCategoryName: NotRequired[str],
+    Filter: NotRequired[ExpressionTypeDef],  # (2)
+    SortBy: NotRequired[Sequence[SortDefinitionTypeDef]],  # (3)
+    MaxResults: NotRequired[int],
+    NextPageToken: NotRequired[str],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-
-Optional fields:
-
-- `SearchString`: `str`
-- `CostCategoryName`: `str`
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`:
-  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
-- `MaxResults`: `int`
-- `NextPageToken`: `str`
-
-<a id="getcostcategoriesresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+3. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
 ## GetCostCategoriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetCostCategoriesResponseTypeDef
+
+def get_value() -> GetCostCategoriesResponseTypeDef:
+    return {
+        "NextPageToken": ...,
+        "CostCategoryNames": ...,
+        "CostCategoryValues": ...,
+        "ReturnSize": ...,
+        "TotalSize": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCostCategoriesResponseTypeDef(TypedDict):
+    NextPageToken: str,
+    CostCategoryNames: List[str],
+    CostCategoryValues: List[str],
+    ReturnSize: int,
+    TotalSize: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NextPageToken`: `str`
-- `CostCategoryNames`: `List`\[`str`\]
-- `CostCategoryValues`: `List`\[`str`\]
-- `ReturnSize`: `int`
-- `TotalSize`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcostforecastrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCostForecastRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetCostForecastRequestRequestTypeDef
+
+def get_value() -> GetCostForecastRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+        "Metric": ...,
+        "Granularity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCostForecastRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Metric: MetricType,  # (2)
+    Granularity: GranularityType,  # (3)
+    Filter: NotRequired[ExpressionTypeDef],  # (4)
+    PredictionIntervalLevel: NotRequired[int],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `Metric`: [MetricType](./literals.md#metrictype)
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-
-Optional fields:
-
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `PredictionIntervalLevel`: `int`
-
-<a id="getcostforecastresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: MetricType](./literals.md#metrictype) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
 ## GetCostForecastResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetCostForecastResponseTypeDef
+
+def get_value() -> GetCostForecastResponseTypeDef:
+    return {
+        "Total": ...,
+        "ForecastResultsByTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCostForecastResponseTypeDef(TypedDict):
+    Total: MetricValueTypeDef,  # (1)
+    ForecastResultsByTime: List[ForecastResultTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Total`: [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
-- `ForecastResultsByTime`:
-  `List`\[[ForecastResultTypeDef](./type_defs.md#forecastresulttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdimensionvaluesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
+2. See [:material-code-braces: ForecastResultTypeDef](./type_defs.md#forecastresulttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDimensionValuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetDimensionValuesRequestRequestTypeDef
+
+def get_value() -> GetDimensionValuesRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+        "Dimension": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDimensionValuesRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Dimension: DimensionType,  # (2)
+    SearchString: NotRequired[str],
+    Context: NotRequired[ContextType],  # (3)
+    Filter: NotRequired[ExpressionTypeDef],  # (4)
+    SortBy: NotRequired[Sequence[SortDefinitionTypeDef]],  # (5)
+    MaxResults: NotRequired[int],
+    NextPageToken: NotRequired[str],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `Dimension`: [DimensionType](./literals.md#dimensiontype)
-
-Optional fields:
-
-- `SearchString`: `str`
-- `Context`: [ContextType](./literals.md#contexttype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`:
-  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
-- `MaxResults`: `int`
-- `NextPageToken`: `str`
-
-<a id="getdimensionvaluesresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: DimensionType](./literals.md#dimensiontype) 
+3. See [:material-code-brackets: ContextType](./literals.md#contexttype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
 ## GetDimensionValuesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetDimensionValuesResponseTypeDef
+
+def get_value() -> GetDimensionValuesResponseTypeDef:
+    return {
+        "DimensionValues": ...,
+        "ReturnSize": ...,
+        "TotalSize": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDimensionValuesResponseTypeDef(TypedDict):
+    DimensionValues: List[DimensionValuesWithAttributesTypeDef],  # (1)
+    ReturnSize: int,
+    TotalSize: int,
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DimensionValues`:
-  `List`\[[DimensionValuesWithAttributesTypeDef](./type_defs.md#dimensionvalueswithattributestypedef)\]
-- `ReturnSize`: `int`
-- `TotalSize`: `int`
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getreservationcoveragerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DimensionValuesWithAttributesTypeDef](./type_defs.md#dimensionvalueswithattributestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetReservationCoverageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetReservationCoverageRequestRequestTypeDef
+
+def get_value() -> GetReservationCoverageRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReservationCoverageRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    GroupBy: NotRequired[Sequence[GroupDefinitionTypeDef]],  # (2)
+    Granularity: NotRequired[GranularityType],  # (3)
+    Filter: NotRequired[ExpressionTypeDef],  # (4)
+    Metrics: NotRequired[Sequence[str]],
+    NextPageToken: NotRequired[str],
+    SortBy: NotRequired[SortDefinitionTypeDef],  # (5)
+    MaxResults: NotRequired[int],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-
-Optional fields:
-
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Metrics`: `Sequence`\[`str`\]
-- `NextPageToken`: `str`
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
-- `MaxResults`: `int`
-
-<a id="getreservationcoverageresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
 ## GetReservationCoverageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetReservationCoverageResponseTypeDef
+
+def get_value() -> GetReservationCoverageResponseTypeDef:
+    return {
+        "CoveragesByTime": ...,
+        "Total": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReservationCoverageResponseTypeDef(TypedDict):
+    CoveragesByTime: List[CoverageByTimeTypeDef],  # (1)
+    Total: CoverageTypeDef,  # (2)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `CoveragesByTime`:
-  `List`\[[CoverageByTimeTypeDef](./type_defs.md#coveragebytimetypedef)\]
-- `Total`: [CoverageTypeDef](./type_defs.md#coveragetypedef)
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getreservationpurchaserecommendationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CoverageByTimeTypeDef](./type_defs.md#coveragebytimetypedef) 
+2. See [:material-code-braces: CoverageTypeDef](./type_defs.md#coveragetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetReservationPurchaseRecommendationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetReservationPurchaseRecommendationRequestRequestTypeDef
+
+def get_value() -> GetReservationPurchaseRecommendationRequestRequestTypeDef:
+    return {
+        "Service": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReservationPurchaseRecommendationRequestRequestTypeDef(TypedDict):
+    Service: str,
+    AccountId: NotRequired[str],
+    Filter: NotRequired[ExpressionTypeDef],  # (1)
+    AccountScope: NotRequired[AccountScopeType],  # (2)
+    LookbackPeriodInDays: NotRequired[LookbackPeriodInDaysType],  # (3)
+    TermInYears: NotRequired[TermInYearsType],  # (4)
+    PaymentOption: NotRequired[PaymentOptionType],  # (5)
+    ServiceSpecification: NotRequired[ServiceSpecificationTypeDef],  # (6)
+    PageSize: NotRequired[int],
+    NextPageToken: NotRequired[str],
+```
 
-- `Service`: `str`
-
-Optional fields:
-
-- `AccountId`: `str`
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `AccountScope`: [AccountScopeType](./literals.md#accountscopetype)
-- `LookbackPeriodInDays`:
-  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
-- `TermInYears`: [TermInYearsType](./literals.md#terminyearstype)
-- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
-- `ServiceSpecification`:
-  [ServiceSpecificationTypeDef](./type_defs.md#servicespecificationtypedef)
-- `PageSize`: `int`
-- `NextPageToken`: `str`
-
-<a id="getreservationpurchaserecommendationresponsetypedef"></a>
-
+1. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+2. See [:material-code-brackets: AccountScopeType](./literals.md#accountscopetype) 
+3. See [:material-code-brackets: LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype) 
+4. See [:material-code-brackets: TermInYearsType](./literals.md#terminyearstype) 
+5. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+6. See [:material-code-braces: ServiceSpecificationTypeDef](./type_defs.md#servicespecificationtypedef) 
 ## GetReservationPurchaseRecommendationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetReservationPurchaseRecommendationResponseTypeDef
+
+def get_value() -> GetReservationPurchaseRecommendationResponseTypeDef:
+    return {
+        "Metadata": ...,
+        "Recommendations": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReservationPurchaseRecommendationResponseTypeDef(TypedDict):
+    Metadata: ReservationPurchaseRecommendationMetadataTypeDef,  # (1)
+    Recommendations: List[ReservationPurchaseRecommendationTypeDef],  # (2)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Metadata`:
-  [ReservationPurchaseRecommendationMetadataTypeDef](./type_defs.md#reservationpurchaserecommendationmetadatatypedef)
-- `Recommendations`:
-  `List`\[[ReservationPurchaseRecommendationTypeDef](./type_defs.md#reservationpurchaserecommendationtypedef)\]
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getreservationutilizationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ReservationPurchaseRecommendationMetadataTypeDef](./type_defs.md#reservationpurchaserecommendationmetadatatypedef) 
+2. See [:material-code-braces: ReservationPurchaseRecommendationTypeDef](./type_defs.md#reservationpurchaserecommendationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetReservationUtilizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetReservationUtilizationRequestRequestTypeDef
+
+def get_value() -> GetReservationUtilizationRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReservationUtilizationRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    GroupBy: NotRequired[Sequence[GroupDefinitionTypeDef]],  # (2)
+    Granularity: NotRequired[GranularityType],  # (3)
+    Filter: NotRequired[ExpressionTypeDef],  # (4)
+    SortBy: NotRequired[SortDefinitionTypeDef],  # (5)
+    NextPageToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-
-Optional fields:
-
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
-- `NextPageToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getreservationutilizationresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
 ## GetReservationUtilizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetReservationUtilizationResponseTypeDef
+
+def get_value() -> GetReservationUtilizationResponseTypeDef:
+    return {
+        "UtilizationsByTime": ...,
+        "Total": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReservationUtilizationResponseTypeDef(TypedDict):
+    UtilizationsByTime: List[UtilizationByTimeTypeDef],  # (1)
+    Total: ReservationAggregatesTypeDef,  # (2)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `UtilizationsByTime`:
-  `List`\[[UtilizationByTimeTypeDef](./type_defs.md#utilizationbytimetypedef)\]
-- `Total`:
-  [ReservationAggregatesTypeDef](./type_defs.md#reservationaggregatestypedef)
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrightsizingrecommendationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UtilizationByTimeTypeDef](./type_defs.md#utilizationbytimetypedef) 
+2. See [:material-code-braces: ReservationAggregatesTypeDef](./type_defs.md#reservationaggregatestypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRightsizingRecommendationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetRightsizingRecommendationRequestRequestTypeDef
+
+def get_value() -> GetRightsizingRecommendationRequestRequestTypeDef:
+    return {
+        "Service": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRightsizingRecommendationRequestRequestTypeDef(TypedDict):
+    Service: str,
+    Filter: NotRequired[ExpressionTypeDef],  # (1)
+    Configuration: NotRequired[RightsizingRecommendationConfigurationTypeDef],  # (2)
+    PageSize: NotRequired[int],
+    NextPageToken: NotRequired[str],
+```
 
-- `Service`: `str`
-
-Optional fields:
-
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Configuration`:
-  [RightsizingRecommendationConfigurationTypeDef](./type_defs.md#rightsizingrecommendationconfigurationtypedef)
-- `PageSize`: `int`
-- `NextPageToken`: `str`
-
-<a id="getrightsizingrecommendationresponsetypedef"></a>
-
+1. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+2. See [:material-code-braces: RightsizingRecommendationConfigurationTypeDef](./type_defs.md#rightsizingrecommendationconfigurationtypedef) 
 ## GetRightsizingRecommendationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetRightsizingRecommendationResponseTypeDef
+
+def get_value() -> GetRightsizingRecommendationResponseTypeDef:
+    return {
+        "Metadata": ...,
+        "Summary": ...,
+        "RightsizingRecommendations": ...,
+        "NextPageToken": ...,
+        "Configuration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRightsizingRecommendationResponseTypeDef(TypedDict):
+    Metadata: RightsizingRecommendationMetadataTypeDef,  # (1)
+    Summary: RightsizingRecommendationSummaryTypeDef,  # (2)
+    RightsizingRecommendations: List[RightsizingRecommendationTypeDef],  # (3)
+    NextPageToken: str,
+    Configuration: RightsizingRecommendationConfigurationTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `Metadata`:
-  [RightsizingRecommendationMetadataTypeDef](./type_defs.md#rightsizingrecommendationmetadatatypedef)
-- `Summary`:
-  [RightsizingRecommendationSummaryTypeDef](./type_defs.md#rightsizingrecommendationsummarytypedef)
-- `RightsizingRecommendations`:
-  `List`\[[RightsizingRecommendationTypeDef](./type_defs.md#rightsizingrecommendationtypedef)\]
-- `NextPageToken`: `str`
-- `Configuration`:
-  [RightsizingRecommendationConfigurationTypeDef](./type_defs.md#rightsizingrecommendationconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsavingsplanscoveragerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RightsizingRecommendationMetadataTypeDef](./type_defs.md#rightsizingrecommendationmetadatatypedef) 
+2. See [:material-code-braces: RightsizingRecommendationSummaryTypeDef](./type_defs.md#rightsizingrecommendationsummarytypedef) 
+3. See [:material-code-braces: RightsizingRecommendationTypeDef](./type_defs.md#rightsizingrecommendationtypedef) 
+4. See [:material-code-braces: RightsizingRecommendationConfigurationTypeDef](./type_defs.md#rightsizingrecommendationconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSavingsPlansCoverageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetSavingsPlansCoverageRequestRequestTypeDef
+
+def get_value() -> GetSavingsPlansCoverageRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSavingsPlansCoverageRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    GroupBy: NotRequired[Sequence[GroupDefinitionTypeDef]],  # (2)
+    Granularity: NotRequired[GranularityType],  # (3)
+    Filter: NotRequired[ExpressionTypeDef],  # (4)
+    Metrics: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    SortBy: NotRequired[SortDefinitionTypeDef],  # (5)
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-
-Optional fields:
-
-- `GroupBy`:
-  `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Metrics`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
-
-<a id="getsavingsplanscoverageresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+5. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
 ## GetSavingsPlansCoverageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetSavingsPlansCoverageResponseTypeDef
+
+def get_value() -> GetSavingsPlansCoverageResponseTypeDef:
+    return {
+        "SavingsPlansCoverages": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSavingsPlansCoverageResponseTypeDef(TypedDict):
+    SavingsPlansCoverages: List[SavingsPlansCoverageTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SavingsPlansCoverages`:
-  `List`\[[SavingsPlansCoverageTypeDef](./type_defs.md#savingsplanscoveragetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsavingsplanspurchaserecommendationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SavingsPlansCoverageTypeDef](./type_defs.md#savingsplanscoveragetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef
+
+def get_value() -> GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef:
+    return {
+        "SavingsPlansType": ...,
+        "TermInYears": ...,
+        "PaymentOption": ...,
+        "LookbackPeriodInDays": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef(TypedDict):
+    SavingsPlansType: SupportedSavingsPlansTypeType,  # (1)
+    TermInYears: TermInYearsType,  # (2)
+    PaymentOption: PaymentOptionType,  # (3)
+    LookbackPeriodInDays: LookbackPeriodInDaysType,  # (4)
+    AccountScope: NotRequired[AccountScopeType],  # (5)
+    NextPageToken: NotRequired[str],
+    PageSize: NotRequired[int],
+    Filter: NotRequired[ExpressionTypeDef],  # (6)
+```
 
-- `SavingsPlansType`:
-  [SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype)
-- `TermInYears`: [TermInYearsType](./literals.md#terminyearstype)
-- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
-- `LookbackPeriodInDays`:
-  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
-
-Optional fields:
-
-- `AccountScope`: [AccountScopeType](./literals.md#accountscopetype)
-- `NextPageToken`: `str`
-- `PageSize`: `int`
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-
-<a id="getsavingsplanspurchaserecommendationresponsetypedef"></a>
-
+1. See [:material-code-brackets: SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype) 
+2. See [:material-code-brackets: TermInYearsType](./literals.md#terminyearstype) 
+3. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+4. See [:material-code-brackets: LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype) 
+5. See [:material-code-brackets: AccountScopeType](./literals.md#accountscopetype) 
+6. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
 ## GetSavingsPlansPurchaseRecommendationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetSavingsPlansPurchaseRecommendationResponseTypeDef
+
+def get_value() -> GetSavingsPlansPurchaseRecommendationResponseTypeDef:
+    return {
+        "Metadata": ...,
+        "SavingsPlansPurchaseRecommendation": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSavingsPlansPurchaseRecommendationResponseTypeDef(TypedDict):
+    Metadata: SavingsPlansPurchaseRecommendationMetadataTypeDef,  # (1)
+    SavingsPlansPurchaseRecommendation: SavingsPlansPurchaseRecommendationTypeDef,  # (2)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Metadata`:
-  [SavingsPlansPurchaseRecommendationMetadataTypeDef](./type_defs.md#savingsplanspurchaserecommendationmetadatatypedef)
-- `SavingsPlansPurchaseRecommendation`:
-  [SavingsPlansPurchaseRecommendationTypeDef](./type_defs.md#savingsplanspurchaserecommendationtypedef)
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsavingsplansutilizationdetailsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SavingsPlansPurchaseRecommendationMetadataTypeDef](./type_defs.md#savingsplanspurchaserecommendationmetadatatypedef) 
+2. See [:material-code-braces: SavingsPlansPurchaseRecommendationTypeDef](./type_defs.md#savingsplanspurchaserecommendationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSavingsPlansUtilizationDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationDetailsRequestRequestTypeDef
+
+def get_value() -> GetSavingsPlansUtilizationDetailsRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSavingsPlansUtilizationDetailsRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Filter: NotRequired[ExpressionTypeDef],  # (2)
+    DataType: NotRequired[Sequence[SavingsPlansDataTypeType]],  # (3)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    SortBy: NotRequired[SortDefinitionTypeDef],  # (4)
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-
-Optional fields:
-
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `DataType`:
-  `Sequence`\[[SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
-
-<a id="getsavingsplansutilizationdetailsresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+3. See [:material-code-brackets: SavingsPlansDataTypeType](./literals.md#savingsplansdatatypetype) 
+4. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
 ## GetSavingsPlansUtilizationDetailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationDetailsResponseTypeDef
+
+def get_value() -> GetSavingsPlansUtilizationDetailsResponseTypeDef:
+    return {
+        "SavingsPlansUtilizationDetails": ...,
+        "Total": ...,
+        "TimePeriod": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSavingsPlansUtilizationDetailsResponseTypeDef(TypedDict):
+    SavingsPlansUtilizationDetails: List[SavingsPlansUtilizationDetailTypeDef],  # (1)
+    Total: SavingsPlansUtilizationAggregatesTypeDef,  # (2)
+    TimePeriod: DateIntervalTypeDef,  # (3)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `SavingsPlansUtilizationDetails`:
-  `List`\[[SavingsPlansUtilizationDetailTypeDef](./type_defs.md#savingsplansutilizationdetailtypedef)\]
-- `Total`:
-  [SavingsPlansUtilizationAggregatesTypeDef](./type_defs.md#savingsplansutilizationaggregatestypedef)
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsavingsplansutilizationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SavingsPlansUtilizationDetailTypeDef](./type_defs.md#savingsplansutilizationdetailtypedef) 
+2. See [:material-code-braces: SavingsPlansUtilizationAggregatesTypeDef](./type_defs.md#savingsplansutilizationaggregatestypedef) 
+3. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSavingsPlansUtilizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationRequestRequestTypeDef
+
+def get_value() -> GetSavingsPlansUtilizationRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSavingsPlansUtilizationRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Granularity: NotRequired[GranularityType],  # (2)
+    Filter: NotRequired[ExpressionTypeDef],  # (3)
+    SortBy: NotRequired[SortDefinitionTypeDef],  # (4)
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-
-Optional fields:
-
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
-
-<a id="getsavingsplansutilizationresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+3. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+4. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
 ## GetSavingsPlansUtilizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetSavingsPlansUtilizationResponseTypeDef
+
+def get_value() -> GetSavingsPlansUtilizationResponseTypeDef:
+    return {
+        "SavingsPlansUtilizationsByTime": ...,
+        "Total": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSavingsPlansUtilizationResponseTypeDef(TypedDict):
+    SavingsPlansUtilizationsByTime: List[SavingsPlansUtilizationByTimeTypeDef],  # (1)
+    Total: SavingsPlansUtilizationAggregatesTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `SavingsPlansUtilizationsByTime`:
-  `List`\[[SavingsPlansUtilizationByTimeTypeDef](./type_defs.md#savingsplansutilizationbytimetypedef)\]
-- `Total`:
-  [SavingsPlansUtilizationAggregatesTypeDef](./type_defs.md#savingsplansutilizationaggregatestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SavingsPlansUtilizationByTimeTypeDef](./type_defs.md#savingsplansutilizationbytimetypedef) 
+2. See [:material-code-braces: SavingsPlansUtilizationAggregatesTypeDef](./type_defs.md#savingsplansutilizationaggregatestypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetTagsRequestRequestTypeDef
+
+def get_value() -> GetTagsRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTagsRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    SearchString: NotRequired[str],
+    TagKey: NotRequired[str],
+    Filter: NotRequired[ExpressionTypeDef],  # (2)
+    SortBy: NotRequired[Sequence[SortDefinitionTypeDef]],  # (3)
+    MaxResults: NotRequired[int],
+    NextPageToken: NotRequired[str],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-
-Optional fields:
-
-- `SearchString`: `str`
-- `TagKey`: `str`
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `SortBy`:
-  `Sequence`\[[SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)\]
-- `MaxResults`: `int`
-- `NextPageToken`: `str`
-
-<a id="gettagsresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+3. See [:material-code-braces: SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef) 
 ## GetTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetTagsResponseTypeDef
+
+def get_value() -> GetTagsResponseTypeDef:
+    return {
+        "NextPageToken": ...,
+        "Tags": ...,
+        "ReturnSize": ...,
+        "TotalSize": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTagsResponseTypeDef(TypedDict):
+    NextPageToken: str,
+    Tags: List[str],
+    ReturnSize: int,
+    TotalSize: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NextPageToken`: `str`
-- `Tags`: `List`\[`str`\]
-- `ReturnSize`: `int`
-- `TotalSize`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getusageforecastrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUsageForecastRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetUsageForecastRequestRequestTypeDef
+
+def get_value() -> GetUsageForecastRequestRequestTypeDef:
+    return {
+        "TimePeriod": ...,
+        "Metric": ...,
+        "Granularity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUsageForecastRequestRequestTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Metric: MetricType,  # (2)
+    Granularity: GranularityType,  # (3)
+    Filter: NotRequired[ExpressionTypeDef],  # (4)
+    PredictionIntervalLevel: NotRequired[int],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `Metric`: [MetricType](./literals.md#metrictype)
-- `Granularity`: [GranularityType](./literals.md#granularitytype)
-
-Optional fields:
-
-- `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `PredictionIntervalLevel`: `int`
-
-<a id="getusageforecastresponsetypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-brackets: MetricType](./literals.md#metrictype) 
+3. See [:material-code-brackets: GranularityType](./literals.md#granularitytype) 
+4. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
 ## GetUsageForecastResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GetUsageForecastResponseTypeDef
+
+def get_value() -> GetUsageForecastResponseTypeDef:
+    return {
+        "Total": ...,
+        "ForecastResultsByTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUsageForecastResponseTypeDef(TypedDict):
+    Total: MetricValueTypeDef,  # (1)
+    ForecastResultsByTime: List[ForecastResultTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Total`: [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
-- `ForecastResultsByTime`:
-  `List`\[[ForecastResultTypeDef](./type_defs.md#forecastresulttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="groupdefinitiontypedef"></a>
-
+1. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
+2. See [:material-code-braces: ForecastResultTypeDef](./type_defs.md#forecastresulttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GroupDefinitionTypeDef
+
+def get_value() -> GroupDefinitionTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GroupDefinitionTypeDef(TypedDict):
+    Type: NotRequired[GroupDefinitionTypeType],  # (1)
+    Key: NotRequired[str],
+```
 
-- `Type`: [GroupDefinitionTypeType](./literals.md#groupdefinitiontypetype)
-- `Key`: `str`
-
-<a id="grouptypedef"></a>
-
+1. See [:material-code-brackets: GroupDefinitionTypeType](./literals.md#groupdefinitiontypetype) 
 ## GroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import GroupTypeDef
+
+def get_value() -> GroupTypeDef:
+    return {
+        "Keys": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GroupTypeDef(TypedDict):
+    Keys: NotRequired[List[str]],
+    Metrics: NotRequired[Dict[str, MetricValueTypeDef]],  # (1)
+```
 
-- `Keys`: `List`\[`str`\]
-- `Metrics`: `Dict`\[`str`,
-  [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)\]
-
-<a id="impacttypedef"></a>
-
+1. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
 ## ImpactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ImpactTypeDef
+
+def get_value() -> ImpactTypeDef:
+    return {
+        "MaxImpact": ...,
+    }
 ```
 
-Required fields:
-
-- `MaxImpact`: `float`
-
-Optional fields:
-
-- `TotalImpact`: `float`
-
-<a id="instancedetailstypedef"></a>
+```python title="Definition"
+class ImpactTypeDef(TypedDict):
+    MaxImpact: float,
+    TotalImpact: NotRequired[float],
+```
 
 ## InstanceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import InstanceDetailsTypeDef
+
+def get_value() -> InstanceDetailsTypeDef:
+    return {
+        "EC2InstanceDetails": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceDetailsTypeDef(TypedDict):
+    EC2InstanceDetails: NotRequired[EC2InstanceDetailsTypeDef],  # (1)
+    RDSInstanceDetails: NotRequired[RDSInstanceDetailsTypeDef],  # (2)
+    RedshiftInstanceDetails: NotRequired[RedshiftInstanceDetailsTypeDef],  # (3)
+    ElastiCacheInstanceDetails: NotRequired[ElastiCacheInstanceDetailsTypeDef],  # (4)
+    ESInstanceDetails: NotRequired[ESInstanceDetailsTypeDef],  # (5)
+```
 
-- `EC2InstanceDetails`:
-  [EC2InstanceDetailsTypeDef](./type_defs.md#ec2instancedetailstypedef)
-- `RDSInstanceDetails`:
-  [RDSInstanceDetailsTypeDef](./type_defs.md#rdsinstancedetailstypedef)
-- `RedshiftInstanceDetails`:
-  [RedshiftInstanceDetailsTypeDef](./type_defs.md#redshiftinstancedetailstypedef)
-- `ElastiCacheInstanceDetails`:
-  [ElastiCacheInstanceDetailsTypeDef](./type_defs.md#elasticacheinstancedetailstypedef)
-- `ESInstanceDetails`:
-  [ESInstanceDetailsTypeDef](./type_defs.md#esinstancedetailstypedef)
-
-<a id="listcostcategorydefinitionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EC2InstanceDetailsTypeDef](./type_defs.md#ec2instancedetailstypedef) 
+2. See [:material-code-braces: RDSInstanceDetailsTypeDef](./type_defs.md#rdsinstancedetailstypedef) 
+3. See [:material-code-braces: RedshiftInstanceDetailsTypeDef](./type_defs.md#redshiftinstancedetailstypedef) 
+4. See [:material-code-braces: ElastiCacheInstanceDetailsTypeDef](./type_defs.md#elasticacheinstancedetailstypedef) 
+5. See [:material-code-braces: ESInstanceDetailsTypeDef](./type_defs.md#esinstancedetailstypedef) 
 ## ListCostCategoryDefinitionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ListCostCategoryDefinitionsRequestRequestTypeDef
+
+def get_value() -> ListCostCategoryDefinitionsRequestRequestTypeDef:
+    return {
+        "EffectiveOn": ...,
+    }
 ```
 
-Optional fields:
-
-- `EffectiveOn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcostcategorydefinitionsresponsetypedef"></a>
+```python title="Definition"
+class ListCostCategoryDefinitionsRequestRequestTypeDef(TypedDict):
+    EffectiveOn: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListCostCategoryDefinitionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ListCostCategoryDefinitionsResponseTypeDef
+
+def get_value() -> ListCostCategoryDefinitionsResponseTypeDef:
+    return {
+        "CostCategoryReferences": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCostCategoryDefinitionsResponseTypeDef(TypedDict):
+    CostCategoryReferences: List[CostCategoryReferenceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CostCategoryReferences`:
-  `List`\[[CostCategoryReferenceTypeDef](./type_defs.md#costcategoryreferencetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CostCategoryReferenceTypeDef](./type_defs.md#costcategoryreferencetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "ResourceTags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    ResourceTags: List[ResourceTagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceTags`:
-  `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="metricvaluetypedef"></a>
-
+1. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import MetricValueTypeDef
+
+def get_value() -> MetricValueTypeDef:
+    return {
+        "Amount": ...,
+    }
 ```
 
-Optional fields:
-
-- `Amount`: `str`
-- `Unit`: `str`
-
-<a id="modifyrecommendationdetailtypedef"></a>
+```python title="Definition"
+class MetricValueTypeDef(TypedDict):
+    Amount: NotRequired[str],
+    Unit: NotRequired[str],
+```
 
 ## ModifyRecommendationDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ModifyRecommendationDetailTypeDef
+
+def get_value() -> ModifyRecommendationDetailTypeDef:
+    return {
+        "TargetInstances": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModifyRecommendationDetailTypeDef(TypedDict):
+    TargetInstances: NotRequired[List[TargetInstanceTypeDef]],  # (1)
+```
 
-- `TargetInstances`:
-  `List`\[[TargetInstanceTypeDef](./type_defs.md#targetinstancetypedef)\]
-
-<a id="networkresourceutilizationtypedef"></a>
-
+1. See [:material-code-braces: TargetInstanceTypeDef](./type_defs.md#targetinstancetypedef) 
 ## NetworkResourceUtilizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import NetworkResourceUtilizationTypeDef
+
+def get_value() -> NetworkResourceUtilizationTypeDef:
+    return {
+        "NetworkInBytesPerSecond": ...,
+    }
 ```
 
-Optional fields:
-
-- `NetworkInBytesPerSecond`: `str`
-- `NetworkOutBytesPerSecond`: `str`
-- `NetworkPacketsInPerSecond`: `str`
-- `NetworkPacketsOutPerSecond`: `str`
-
-<a id="provideanomalyfeedbackrequestrequesttypedef"></a>
+```python title="Definition"
+class NetworkResourceUtilizationTypeDef(TypedDict):
+    NetworkInBytesPerSecond: NotRequired[str],
+    NetworkOutBytesPerSecond: NotRequired[str],
+    NetworkPacketsInPerSecond: NotRequired[str],
+    NetworkPacketsOutPerSecond: NotRequired[str],
+```
 
 ## ProvideAnomalyFeedbackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ProvideAnomalyFeedbackRequestRequestTypeDef
+
+def get_value() -> ProvideAnomalyFeedbackRequestRequestTypeDef:
+    return {
+        "AnomalyId": ...,
+        "Feedback": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProvideAnomalyFeedbackRequestRequestTypeDef(TypedDict):
+    AnomalyId: str,
+    Feedback: AnomalyFeedbackTypeType,  # (1)
+```
 
-- `AnomalyId`: `str`
-- `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
-
-<a id="provideanomalyfeedbackresponsetypedef"></a>
-
+1. See [:material-code-brackets: AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype) 
 ## ProvideAnomalyFeedbackResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ProvideAnomalyFeedbackResponseTypeDef
+
+def get_value() -> ProvideAnomalyFeedbackResponseTypeDef:
+    return {
+        "AnomalyId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProvideAnomalyFeedbackResponseTypeDef(TypedDict):
+    AnomalyId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AnomalyId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rdsinstancedetailstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RDSInstanceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import RDSInstanceDetailsTypeDef
+
+def get_value() -> RDSInstanceDetailsTypeDef:
+    return {
+        "Family": ...,
+    }
 ```
 
-Optional fields:
-
-- `Family`: `str`
-- `InstanceType`: `str`
-- `Region`: `str`
-- `DatabaseEngine`: `str`
-- `DatabaseEdition`: `str`
-- `DeploymentOption`: `str`
-- `LicenseModel`: `str`
-- `CurrentGeneration`: `bool`
-- `SizeFlexEligible`: `bool`
-
-<a id="redshiftinstancedetailstypedef"></a>
+```python title="Definition"
+class RDSInstanceDetailsTypeDef(TypedDict):
+    Family: NotRequired[str],
+    InstanceType: NotRequired[str],
+    Region: NotRequired[str],
+    DatabaseEngine: NotRequired[str],
+    DatabaseEdition: NotRequired[str],
+    DeploymentOption: NotRequired[str],
+    LicenseModel: NotRequired[str],
+    CurrentGeneration: NotRequired[bool],
+    SizeFlexEligible: NotRequired[bool],
+```
 
 ## RedshiftInstanceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import RedshiftInstanceDetailsTypeDef
+
+def get_value() -> RedshiftInstanceDetailsTypeDef:
+    return {
+        "Family": ...,
+    }
 ```
 
-Optional fields:
-
-- `Family`: `str`
-- `NodeType`: `str`
-- `Region`: `str`
-- `CurrentGeneration`: `bool`
-- `SizeFlexEligible`: `bool`
-
-<a id="reservationaggregatestypedef"></a>
+```python title="Definition"
+class RedshiftInstanceDetailsTypeDef(TypedDict):
+    Family: NotRequired[str],
+    NodeType: NotRequired[str],
+    Region: NotRequired[str],
+    CurrentGeneration: NotRequired[bool],
+    SizeFlexEligible: NotRequired[bool],
+```
 
 ## ReservationAggregatesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ReservationAggregatesTypeDef
+
+def get_value() -> ReservationAggregatesTypeDef:
+    return {
+        "UtilizationPercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `UtilizationPercentage`: `str`
-- `UtilizationPercentageInUnits`: `str`
-- `PurchasedHours`: `str`
-- `PurchasedUnits`: `str`
-- `TotalActualHours`: `str`
-- `TotalActualUnits`: `str`
-- `UnusedHours`: `str`
-- `UnusedUnits`: `str`
-- `OnDemandCostOfRIHoursUsed`: `str`
-- `NetRISavings`: `str`
-- `TotalPotentialRISavings`: `str`
-- `AmortizedUpfrontFee`: `str`
-- `AmortizedRecurringFee`: `str`
-- `TotalAmortizedFee`: `str`
-- `RICostForUnusedHours`: `str`
-- `RealizedSavings`: `str`
-- `UnrealizedSavings`: `str`
-
-<a id="reservationcoveragegrouptypedef"></a>
+```python title="Definition"
+class ReservationAggregatesTypeDef(TypedDict):
+    UtilizationPercentage: NotRequired[str],
+    UtilizationPercentageInUnits: NotRequired[str],
+    PurchasedHours: NotRequired[str],
+    PurchasedUnits: NotRequired[str],
+    TotalActualHours: NotRequired[str],
+    TotalActualUnits: NotRequired[str],
+    UnusedHours: NotRequired[str],
+    UnusedUnits: NotRequired[str],
+    OnDemandCostOfRIHoursUsed: NotRequired[str],
+    NetRISavings: NotRequired[str],
+    TotalPotentialRISavings: NotRequired[str],
+    AmortizedUpfrontFee: NotRequired[str],
+    AmortizedRecurringFee: NotRequired[str],
+    TotalAmortizedFee: NotRequired[str],
+    RICostForUnusedHours: NotRequired[str],
+    RealizedSavings: NotRequired[str],
+    UnrealizedSavings: NotRequired[str],
+```
 
 ## ReservationCoverageGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ReservationCoverageGroupTypeDef
+
+def get_value() -> ReservationCoverageGroupTypeDef:
+    return {
+        "Attributes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReservationCoverageGroupTypeDef(TypedDict):
+    Attributes: NotRequired[Dict[str, str]],
+    Coverage: NotRequired[CoverageTypeDef],  # (1)
+```
 
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `Coverage`: [CoverageTypeDef](./type_defs.md#coveragetypedef)
-
-<a id="reservationpurchaserecommendationdetailtypedef"></a>
-
+1. See [:material-code-braces: CoverageTypeDef](./type_defs.md#coveragetypedef) 
 ## ReservationPurchaseRecommendationDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ReservationPurchaseRecommendationDetailTypeDef
+
+def get_value() -> ReservationPurchaseRecommendationDetailTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReservationPurchaseRecommendationDetailTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    InstanceDetails: NotRequired[InstanceDetailsTypeDef],  # (1)
+    RecommendedNumberOfInstancesToPurchase: NotRequired[str],
+    RecommendedNormalizedUnitsToPurchase: NotRequired[str],
+    MinimumNumberOfInstancesUsedPerHour: NotRequired[str],
+    MinimumNormalizedUnitsUsedPerHour: NotRequired[str],
+    MaximumNumberOfInstancesUsedPerHour: NotRequired[str],
+    MaximumNormalizedUnitsUsedPerHour: NotRequired[str],
+    AverageNumberOfInstancesUsedPerHour: NotRequired[str],
+    AverageNormalizedUnitsUsedPerHour: NotRequired[str],
+    AverageUtilization: NotRequired[str],
+    EstimatedBreakEvenInMonths: NotRequired[str],
+    CurrencyCode: NotRequired[str],
+    EstimatedMonthlySavingsAmount: NotRequired[str],
+    EstimatedMonthlySavingsPercentage: NotRequired[str],
+    EstimatedMonthlyOnDemandCost: NotRequired[str],
+    EstimatedReservationCostForLookbackPeriod: NotRequired[str],
+    UpfrontCost: NotRequired[str],
+    RecurringStandardMonthlyCost: NotRequired[str],
+```
 
-- `AccountId`: `str`
-- `InstanceDetails`:
-  [InstanceDetailsTypeDef](./type_defs.md#instancedetailstypedef)
-- `RecommendedNumberOfInstancesToPurchase`: `str`
-- `RecommendedNormalizedUnitsToPurchase`: `str`
-- `MinimumNumberOfInstancesUsedPerHour`: `str`
-- `MinimumNormalizedUnitsUsedPerHour`: `str`
-- `MaximumNumberOfInstancesUsedPerHour`: `str`
-- `MaximumNormalizedUnitsUsedPerHour`: `str`
-- `AverageNumberOfInstancesUsedPerHour`: `str`
-- `AverageNormalizedUnitsUsedPerHour`: `str`
-- `AverageUtilization`: `str`
-- `EstimatedBreakEvenInMonths`: `str`
-- `CurrencyCode`: `str`
-- `EstimatedMonthlySavingsAmount`: `str`
-- `EstimatedMonthlySavingsPercentage`: `str`
-- `EstimatedMonthlyOnDemandCost`: `str`
-- `EstimatedReservationCostForLookbackPeriod`: `str`
-- `UpfrontCost`: `str`
-- `RecurringStandardMonthlyCost`: `str`
-
-<a id="reservationpurchaserecommendationmetadatatypedef"></a>
-
+1. See [:material-code-braces: InstanceDetailsTypeDef](./type_defs.md#instancedetailstypedef) 
 ## ReservationPurchaseRecommendationMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ReservationPurchaseRecommendationMetadataTypeDef
+
+def get_value() -> ReservationPurchaseRecommendationMetadataTypeDef:
+    return {
+        "RecommendationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `RecommendationId`: `str`
-- `GenerationTimestamp`: `str`
-
-<a id="reservationpurchaserecommendationsummarytypedef"></a>
+```python title="Definition"
+class ReservationPurchaseRecommendationMetadataTypeDef(TypedDict):
+    RecommendationId: NotRequired[str],
+    GenerationTimestamp: NotRequired[str],
+```
 
 ## ReservationPurchaseRecommendationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ReservationPurchaseRecommendationSummaryTypeDef
+
+def get_value() -> ReservationPurchaseRecommendationSummaryTypeDef:
+    return {
+        "TotalEstimatedMonthlySavingsAmount": ...,
+    }
 ```
 
-Optional fields:
-
-- `TotalEstimatedMonthlySavingsAmount`: `str`
-- `TotalEstimatedMonthlySavingsPercentage`: `str`
-- `CurrencyCode`: `str`
-
-<a id="reservationpurchaserecommendationtypedef"></a>
+```python title="Definition"
+class ReservationPurchaseRecommendationSummaryTypeDef(TypedDict):
+    TotalEstimatedMonthlySavingsAmount: NotRequired[str],
+    TotalEstimatedMonthlySavingsPercentage: NotRequired[str],
+    CurrencyCode: NotRequired[str],
+```
 
 ## ReservationPurchaseRecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ReservationPurchaseRecommendationTypeDef
+
+def get_value() -> ReservationPurchaseRecommendationTypeDef:
+    return {
+        "AccountScope": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReservationPurchaseRecommendationTypeDef(TypedDict):
+    AccountScope: NotRequired[AccountScopeType],  # (1)
+    LookbackPeriodInDays: NotRequired[LookbackPeriodInDaysType],  # (2)
+    TermInYears: NotRequired[TermInYearsType],  # (3)
+    PaymentOption: NotRequired[PaymentOptionType],  # (4)
+    ServiceSpecification: NotRequired[ServiceSpecificationTypeDef],  # (5)
+    RecommendationDetails: NotRequired[List[ReservationPurchaseRecommendationDetailTypeDef]],  # (6)
+    RecommendationSummary: NotRequired[ReservationPurchaseRecommendationSummaryTypeDef],  # (7)
+```
 
-- `AccountScope`: [AccountScopeType](./literals.md#accountscopetype)
-- `LookbackPeriodInDays`:
-  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
-- `TermInYears`: [TermInYearsType](./literals.md#terminyearstype)
-- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
-- `ServiceSpecification`:
-  [ServiceSpecificationTypeDef](./type_defs.md#servicespecificationtypedef)
-- `RecommendationDetails`:
-  `List`\[[ReservationPurchaseRecommendationDetailTypeDef](./type_defs.md#reservationpurchaserecommendationdetailtypedef)\]
-- `RecommendationSummary`:
-  [ReservationPurchaseRecommendationSummaryTypeDef](./type_defs.md#reservationpurchaserecommendationsummarytypedef)
-
-<a id="reservationutilizationgrouptypedef"></a>
-
+1. See [:material-code-brackets: AccountScopeType](./literals.md#accountscopetype) 
+2. See [:material-code-brackets: LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype) 
+3. See [:material-code-brackets: TermInYearsType](./literals.md#terminyearstype) 
+4. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+5. See [:material-code-braces: ServiceSpecificationTypeDef](./type_defs.md#servicespecificationtypedef) 
+6. See [:material-code-braces: ReservationPurchaseRecommendationDetailTypeDef](./type_defs.md#reservationpurchaserecommendationdetailtypedef) 
+7. See [:material-code-braces: ReservationPurchaseRecommendationSummaryTypeDef](./type_defs.md#reservationpurchaserecommendationsummarytypedef) 
 ## ReservationUtilizationGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ReservationUtilizationGroupTypeDef
+
+def get_value() -> ReservationUtilizationGroupTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReservationUtilizationGroupTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    Attributes: NotRequired[Dict[str, str]],
+    Utilization: NotRequired[ReservationAggregatesTypeDef],  # (1)
+```
 
-- `Key`: `str`
-- `Value`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `Utilization`:
-  [ReservationAggregatesTypeDef](./type_defs.md#reservationaggregatestypedef)
-
-<a id="resourcedetailstypedef"></a>
-
+1. See [:material-code-braces: ReservationAggregatesTypeDef](./type_defs.md#reservationaggregatestypedef) 
 ## ResourceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ResourceDetailsTypeDef
+
+def get_value() -> ResourceDetailsTypeDef:
+    return {
+        "EC2ResourceDetails": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceDetailsTypeDef(TypedDict):
+    EC2ResourceDetails: NotRequired[EC2ResourceDetailsTypeDef],  # (1)
+```
 
-- `EC2ResourceDetails`:
-  [EC2ResourceDetailsTypeDef](./type_defs.md#ec2resourcedetailstypedef)
-
-<a id="resourcetagtypedef"></a>
-
+1. See [:material-code-braces: EC2ResourceDetailsTypeDef](./type_defs.md#ec2resourcedetailstypedef) 
 ## ResourceTagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ResourceTagTypeDef
+
+def get_value() -> ResourceTagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="resourceutilizationtypedef"></a>
+```python title="Definition"
+class ResourceTagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## ResourceUtilizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ResourceUtilizationTypeDef
+
+def get_value() -> ResourceUtilizationTypeDef:
+    return {
+        "EC2ResourceUtilization": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceUtilizationTypeDef(TypedDict):
+    EC2ResourceUtilization: NotRequired[EC2ResourceUtilizationTypeDef],  # (1)
+```
 
-- `EC2ResourceUtilization`:
-  [EC2ResourceUtilizationTypeDef](./type_defs.md#ec2resourceutilizationtypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: EC2ResourceUtilizationTypeDef](./type_defs.md#ec2resourceutilizationtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="resultbytimetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResultByTimeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ResultByTimeTypeDef
+
+def get_value() -> ResultByTimeTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResultByTimeTypeDef(TypedDict):
+    TimePeriod: NotRequired[DateIntervalTypeDef],  # (1)
+    Total: NotRequired[Dict[str, MetricValueTypeDef]],  # (2)
+    Groups: NotRequired[List[GroupTypeDef]],  # (3)
+    Estimated: NotRequired[bool],
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `Total`: `Dict`\[`str`,
-  [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)\]
-- `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `Estimated`: `bool`
-
-<a id="rightsizingrecommendationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: MetricValueTypeDef](./type_defs.md#metricvaluetypedef) 
+3. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
 ## RightsizingRecommendationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import RightsizingRecommendationConfigurationTypeDef
+
+def get_value() -> RightsizingRecommendationConfigurationTypeDef:
+    return {
+        "RecommendationTarget": ...,
+        "BenefitsConsidered": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RightsizingRecommendationConfigurationTypeDef(TypedDict):
+    RecommendationTarget: RecommendationTargetType,  # (1)
+    BenefitsConsidered: bool,
+```
 
-- `RecommendationTarget`:
-  [RecommendationTargetType](./literals.md#recommendationtargettype)
-- `BenefitsConsidered`: `bool`
-
-<a id="rightsizingrecommendationmetadatatypedef"></a>
-
+1. See [:material-code-brackets: RecommendationTargetType](./literals.md#recommendationtargettype) 
 ## RightsizingRecommendationMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import RightsizingRecommendationMetadataTypeDef
+
+def get_value() -> RightsizingRecommendationMetadataTypeDef:
+    return {
+        "RecommendationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RightsizingRecommendationMetadataTypeDef(TypedDict):
+    RecommendationId: NotRequired[str],
+    GenerationTimestamp: NotRequired[str],
+    LookbackPeriodInDays: NotRequired[LookbackPeriodInDaysType],  # (1)
+    AdditionalMetadata: NotRequired[str],
+```
 
-- `RecommendationId`: `str`
-- `GenerationTimestamp`: `str`
-- `LookbackPeriodInDays`:
-  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
-- `AdditionalMetadata`: `str`
-
-<a id="rightsizingrecommendationsummarytypedef"></a>
-
+1. See [:material-code-brackets: LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype) 
 ## RightsizingRecommendationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import RightsizingRecommendationSummaryTypeDef
+
+def get_value() -> RightsizingRecommendationSummaryTypeDef:
+    return {
+        "TotalRecommendationCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `TotalRecommendationCount`: `str`
-- `EstimatedTotalMonthlySavingsAmount`: `str`
-- `SavingsCurrencyCode`: `str`
-- `SavingsPercentage`: `str`
-
-<a id="rightsizingrecommendationtypedef"></a>
+```python title="Definition"
+class RightsizingRecommendationSummaryTypeDef(TypedDict):
+    TotalRecommendationCount: NotRequired[str],
+    EstimatedTotalMonthlySavingsAmount: NotRequired[str],
+    SavingsCurrencyCode: NotRequired[str],
+    SavingsPercentage: NotRequired[str],
+```
 
 ## RightsizingRecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import RightsizingRecommendationTypeDef
+
+def get_value() -> RightsizingRecommendationTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RightsizingRecommendationTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    CurrentInstance: NotRequired[CurrentInstanceTypeDef],  # (1)
+    RightsizingType: NotRequired[RightsizingTypeType],  # (2)
+    ModifyRecommendationDetail: NotRequired[ModifyRecommendationDetailTypeDef],  # (3)
+    TerminateRecommendationDetail: NotRequired[TerminateRecommendationDetailTypeDef],  # (4)
+    FindingReasonCodes: NotRequired[List[FindingReasonCodeType]],  # (5)
+```
 
-- `AccountId`: `str`
-- `CurrentInstance`:
-  [CurrentInstanceTypeDef](./type_defs.md#currentinstancetypedef)
-- `RightsizingType`: [RightsizingTypeType](./literals.md#rightsizingtypetype)
-- `ModifyRecommendationDetail`:
-  [ModifyRecommendationDetailTypeDef](./type_defs.md#modifyrecommendationdetailtypedef)
-- `TerminateRecommendationDetail`:
-  [TerminateRecommendationDetailTypeDef](./type_defs.md#terminaterecommendationdetailtypedef)
-- `FindingReasonCodes`:
-  `List`\[[FindingReasonCodeType](./literals.md#findingreasoncodetype)\]
-
-<a id="rootcausetypedef"></a>
-
+1. See [:material-code-braces: CurrentInstanceTypeDef](./type_defs.md#currentinstancetypedef) 
+2. See [:material-code-brackets: RightsizingTypeType](./literals.md#rightsizingtypetype) 
+3. See [:material-code-braces: ModifyRecommendationDetailTypeDef](./type_defs.md#modifyrecommendationdetailtypedef) 
+4. See [:material-code-braces: TerminateRecommendationDetailTypeDef](./type_defs.md#terminaterecommendationdetailtypedef) 
+5. See [:material-code-brackets: FindingReasonCodeType](./literals.md#findingreasoncodetype) 
 ## RootCauseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import RootCauseTypeDef
+
+def get_value() -> RootCauseTypeDef:
+    return {
+        "Service": ...,
+    }
 ```
 
-Optional fields:
-
-- `Service`: `str`
-- `Region`: `str`
-- `LinkedAccount`: `str`
-- `UsageType`: `str`
-
-<a id="savingsplansamortizedcommitmenttypedef"></a>
+```python title="Definition"
+class RootCauseTypeDef(TypedDict):
+    Service: NotRequired[str],
+    Region: NotRequired[str],
+    LinkedAccount: NotRequired[str],
+    UsageType: NotRequired[str],
+```
 
 ## SavingsPlansAmortizedCommitmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansAmortizedCommitmentTypeDef
+
+def get_value() -> SavingsPlansAmortizedCommitmentTypeDef:
+    return {
+        "AmortizedRecurringCommitment": ...,
+    }
 ```
 
-Optional fields:
-
-- `AmortizedRecurringCommitment`: `str`
-- `AmortizedUpfrontCommitment`: `str`
-- `TotalAmortizedCommitment`: `str`
-
-<a id="savingsplanscoveragedatatypedef"></a>
+```python title="Definition"
+class SavingsPlansAmortizedCommitmentTypeDef(TypedDict):
+    AmortizedRecurringCommitment: NotRequired[str],
+    AmortizedUpfrontCommitment: NotRequired[str],
+    TotalAmortizedCommitment: NotRequired[str],
+```
 
 ## SavingsPlansCoverageDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansCoverageDataTypeDef
+
+def get_value() -> SavingsPlansCoverageDataTypeDef:
+    return {
+        "SpendCoveredBySavingsPlans": ...,
+    }
 ```
 
-Optional fields:
-
-- `SpendCoveredBySavingsPlans`: `str`
-- `OnDemandCost`: `str`
-- `TotalCost`: `str`
-- `CoveragePercentage`: `str`
-
-<a id="savingsplanscoveragetypedef"></a>
+```python title="Definition"
+class SavingsPlansCoverageDataTypeDef(TypedDict):
+    SpendCoveredBySavingsPlans: NotRequired[str],
+    OnDemandCost: NotRequired[str],
+    TotalCost: NotRequired[str],
+    CoveragePercentage: NotRequired[str],
+```
 
 ## SavingsPlansCoverageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansCoverageTypeDef
+
+def get_value() -> SavingsPlansCoverageTypeDef:
+    return {
+        "Attributes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SavingsPlansCoverageTypeDef(TypedDict):
+    Attributes: NotRequired[Dict[str, str]],
+    Coverage: NotRequired[SavingsPlansCoverageDataTypeDef],  # (1)
+    TimePeriod: NotRequired[DateIntervalTypeDef],  # (2)
+```
 
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `Coverage`:
-  [SavingsPlansCoverageDataTypeDef](./type_defs.md#savingsplanscoveragedatatypedef)
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-
-<a id="savingsplansdetailstypedef"></a>
-
+1. See [:material-code-braces: SavingsPlansCoverageDataTypeDef](./type_defs.md#savingsplanscoveragedatatypedef) 
+2. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
 ## SavingsPlansDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansDetailsTypeDef
+
+def get_value() -> SavingsPlansDetailsTypeDef:
+    return {
+        "Region": ...,
+    }
 ```
 
-Optional fields:
-
-- `Region`: `str`
-- `InstanceFamily`: `str`
-- `OfferingId`: `str`
-
-<a id="savingsplanspurchaserecommendationdetailtypedef"></a>
+```python title="Definition"
+class SavingsPlansDetailsTypeDef(TypedDict):
+    Region: NotRequired[str],
+    InstanceFamily: NotRequired[str],
+    OfferingId: NotRequired[str],
+```
 
 ## SavingsPlansPurchaseRecommendationDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansPurchaseRecommendationDetailTypeDef
+
+def get_value() -> SavingsPlansPurchaseRecommendationDetailTypeDef:
+    return {
+        "SavingsPlansDetails": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SavingsPlansPurchaseRecommendationDetailTypeDef(TypedDict):
+    SavingsPlansDetails: NotRequired[SavingsPlansDetailsTypeDef],  # (1)
+    AccountId: NotRequired[str],
+    UpfrontCost: NotRequired[str],
+    EstimatedROI: NotRequired[str],
+    CurrencyCode: NotRequired[str],
+    EstimatedSPCost: NotRequired[str],
+    EstimatedOnDemandCost: NotRequired[str],
+    EstimatedOnDemandCostWithCurrentCommitment: NotRequired[str],
+    EstimatedSavingsAmount: NotRequired[str],
+    EstimatedSavingsPercentage: NotRequired[str],
+    HourlyCommitmentToPurchase: NotRequired[str],
+    EstimatedAverageUtilization: NotRequired[str],
+    EstimatedMonthlySavingsAmount: NotRequired[str],
+    CurrentMinimumHourlyOnDemandSpend: NotRequired[str],
+    CurrentMaximumHourlyOnDemandSpend: NotRequired[str],
+    CurrentAverageHourlyOnDemandSpend: NotRequired[str],
+```
 
-- `SavingsPlansDetails`:
-  [SavingsPlansDetailsTypeDef](./type_defs.md#savingsplansdetailstypedef)
-- `AccountId`: `str`
-- `UpfrontCost`: `str`
-- `EstimatedROI`: `str`
-- `CurrencyCode`: `str`
-- `EstimatedSPCost`: `str`
-- `EstimatedOnDemandCost`: `str`
-- `EstimatedOnDemandCostWithCurrentCommitment`: `str`
-- `EstimatedSavingsAmount`: `str`
-- `EstimatedSavingsPercentage`: `str`
-- `HourlyCommitmentToPurchase`: `str`
-- `EstimatedAverageUtilization`: `str`
-- `EstimatedMonthlySavingsAmount`: `str`
-- `CurrentMinimumHourlyOnDemandSpend`: `str`
-- `CurrentMaximumHourlyOnDemandSpend`: `str`
-- `CurrentAverageHourlyOnDemandSpend`: `str`
-
-<a id="savingsplanspurchaserecommendationmetadatatypedef"></a>
-
+1. See [:material-code-braces: SavingsPlansDetailsTypeDef](./type_defs.md#savingsplansdetailstypedef) 
 ## SavingsPlansPurchaseRecommendationMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansPurchaseRecommendationMetadataTypeDef
+
+def get_value() -> SavingsPlansPurchaseRecommendationMetadataTypeDef:
+    return {
+        "RecommendationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `RecommendationId`: `str`
-- `GenerationTimestamp`: `str`
-- `AdditionalMetadata`: `str`
-
-<a id="savingsplanspurchaserecommendationsummarytypedef"></a>
+```python title="Definition"
+class SavingsPlansPurchaseRecommendationMetadataTypeDef(TypedDict):
+    RecommendationId: NotRequired[str],
+    GenerationTimestamp: NotRequired[str],
+    AdditionalMetadata: NotRequired[str],
+```
 
 ## SavingsPlansPurchaseRecommendationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansPurchaseRecommendationSummaryTypeDef
+
+def get_value() -> SavingsPlansPurchaseRecommendationSummaryTypeDef:
+    return {
+        "EstimatedROI": ...,
+    }
 ```
 
-Optional fields:
-
-- `EstimatedROI`: `str`
-- `CurrencyCode`: `str`
-- `EstimatedTotalCost`: `str`
-- `CurrentOnDemandSpend`: `str`
-- `EstimatedSavingsAmount`: `str`
-- `TotalRecommendationCount`: `str`
-- `DailyCommitmentToPurchase`: `str`
-- `HourlyCommitmentToPurchase`: `str`
-- `EstimatedSavingsPercentage`: `str`
-- `EstimatedMonthlySavingsAmount`: `str`
-- `EstimatedOnDemandCostWithCurrentCommitment`: `str`
-
-<a id="savingsplanspurchaserecommendationtypedef"></a>
+```python title="Definition"
+class SavingsPlansPurchaseRecommendationSummaryTypeDef(TypedDict):
+    EstimatedROI: NotRequired[str],
+    CurrencyCode: NotRequired[str],
+    EstimatedTotalCost: NotRequired[str],
+    CurrentOnDemandSpend: NotRequired[str],
+    EstimatedSavingsAmount: NotRequired[str],
+    TotalRecommendationCount: NotRequired[str],
+    DailyCommitmentToPurchase: NotRequired[str],
+    HourlyCommitmentToPurchase: NotRequired[str],
+    EstimatedSavingsPercentage: NotRequired[str],
+    EstimatedMonthlySavingsAmount: NotRequired[str],
+    EstimatedOnDemandCostWithCurrentCommitment: NotRequired[str],
+```
 
 ## SavingsPlansPurchaseRecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansPurchaseRecommendationTypeDef
+
+def get_value() -> SavingsPlansPurchaseRecommendationTypeDef:
+    return {
+        "AccountScope": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SavingsPlansPurchaseRecommendationTypeDef(TypedDict):
+    AccountScope: NotRequired[AccountScopeType],  # (1)
+    SavingsPlansType: NotRequired[SupportedSavingsPlansTypeType],  # (2)
+    TermInYears: NotRequired[TermInYearsType],  # (3)
+    PaymentOption: NotRequired[PaymentOptionType],  # (4)
+    LookbackPeriodInDays: NotRequired[LookbackPeriodInDaysType],  # (5)
+    SavingsPlansPurchaseRecommendationDetails: NotRequired[List[SavingsPlansPurchaseRecommendationDetailTypeDef]],  # (6)
+    SavingsPlansPurchaseRecommendationSummary: NotRequired[SavingsPlansPurchaseRecommendationSummaryTypeDef],  # (7)
+```
 
-- `AccountScope`: [AccountScopeType](./literals.md#accountscopetype)
-- `SavingsPlansType`:
-  [SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype)
-- `TermInYears`: [TermInYearsType](./literals.md#terminyearstype)
-- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
-- `LookbackPeriodInDays`:
-  [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
-- `SavingsPlansPurchaseRecommendationDetails`:
-  `List`\[[SavingsPlansPurchaseRecommendationDetailTypeDef](./type_defs.md#savingsplanspurchaserecommendationdetailtypedef)\]
-- `SavingsPlansPurchaseRecommendationSummary`:
-  [SavingsPlansPurchaseRecommendationSummaryTypeDef](./type_defs.md#savingsplanspurchaserecommendationsummarytypedef)
-
-<a id="savingsplanssavingstypedef"></a>
-
+1. See [:material-code-brackets: AccountScopeType](./literals.md#accountscopetype) 
+2. See [:material-code-brackets: SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype) 
+3. See [:material-code-brackets: TermInYearsType](./literals.md#terminyearstype) 
+4. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+5. See [:material-code-brackets: LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype) 
+6. See [:material-code-braces: SavingsPlansPurchaseRecommendationDetailTypeDef](./type_defs.md#savingsplanspurchaserecommendationdetailtypedef) 
+7. See [:material-code-braces: SavingsPlansPurchaseRecommendationSummaryTypeDef](./type_defs.md#savingsplanspurchaserecommendationsummarytypedef) 
 ## SavingsPlansSavingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansSavingsTypeDef
+
+def get_value() -> SavingsPlansSavingsTypeDef:
+    return {
+        "NetSavings": ...,
+    }
 ```
 
-Optional fields:
-
-- `NetSavings`: `str`
-- `OnDemandCostEquivalent`: `str`
-
-<a id="savingsplansutilizationaggregatestypedef"></a>
+```python title="Definition"
+class SavingsPlansSavingsTypeDef(TypedDict):
+    NetSavings: NotRequired[str],
+    OnDemandCostEquivalent: NotRequired[str],
+```
 
 ## SavingsPlansUtilizationAggregatesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansUtilizationAggregatesTypeDef
+
+def get_value() -> SavingsPlansUtilizationAggregatesTypeDef:
+    return {
+        "Utilization": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SavingsPlansUtilizationAggregatesTypeDef(TypedDict):
+    Utilization: SavingsPlansUtilizationTypeDef,  # (1)
+    Savings: NotRequired[SavingsPlansSavingsTypeDef],  # (2)
+    AmortizedCommitment: NotRequired[SavingsPlansAmortizedCommitmentTypeDef],  # (3)
+```
 
-- `Utilization`:
-  [SavingsPlansUtilizationTypeDef](./type_defs.md#savingsplansutilizationtypedef)
-
-Optional fields:
-
-- `Savings`:
-  [SavingsPlansSavingsTypeDef](./type_defs.md#savingsplanssavingstypedef)
-- `AmortizedCommitment`:
-  [SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef)
-
-<a id="savingsplansutilizationbytimetypedef"></a>
-
+1. See [:material-code-braces: SavingsPlansUtilizationTypeDef](./type_defs.md#savingsplansutilizationtypedef) 
+2. See [:material-code-braces: SavingsPlansSavingsTypeDef](./type_defs.md#savingsplanssavingstypedef) 
+3. See [:material-code-braces: SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef) 
 ## SavingsPlansUtilizationByTimeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansUtilizationByTimeTypeDef
+
+def get_value() -> SavingsPlansUtilizationByTimeTypeDef:
+    return {
+        "TimePeriod": ...,
+        "Utilization": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SavingsPlansUtilizationByTimeTypeDef(TypedDict):
+    TimePeriod: DateIntervalTypeDef,  # (1)
+    Utilization: SavingsPlansUtilizationTypeDef,  # (2)
+    Savings: NotRequired[SavingsPlansSavingsTypeDef],  # (3)
+    AmortizedCommitment: NotRequired[SavingsPlansAmortizedCommitmentTypeDef],  # (4)
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `Utilization`:
-  [SavingsPlansUtilizationTypeDef](./type_defs.md#savingsplansutilizationtypedef)
-
-Optional fields:
-
-- `Savings`:
-  [SavingsPlansSavingsTypeDef](./type_defs.md#savingsplanssavingstypedef)
-- `AmortizedCommitment`:
-  [SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef)
-
-<a id="savingsplansutilizationdetailtypedef"></a>
-
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: SavingsPlansUtilizationTypeDef](./type_defs.md#savingsplansutilizationtypedef) 
+3. See [:material-code-braces: SavingsPlansSavingsTypeDef](./type_defs.md#savingsplanssavingstypedef) 
+4. See [:material-code-braces: SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef) 
 ## SavingsPlansUtilizationDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansUtilizationDetailTypeDef
+
+def get_value() -> SavingsPlansUtilizationDetailTypeDef:
+    return {
+        "SavingsPlanArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SavingsPlansUtilizationDetailTypeDef(TypedDict):
+    SavingsPlanArn: NotRequired[str],
+    Attributes: NotRequired[Dict[str, str]],
+    Utilization: NotRequired[SavingsPlansUtilizationTypeDef],  # (1)
+    Savings: NotRequired[SavingsPlansSavingsTypeDef],  # (2)
+    AmortizedCommitment: NotRequired[SavingsPlansAmortizedCommitmentTypeDef],  # (3)
+```
 
-- `SavingsPlanArn`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `Utilization`:
-  [SavingsPlansUtilizationTypeDef](./type_defs.md#savingsplansutilizationtypedef)
-- `Savings`:
-  [SavingsPlansSavingsTypeDef](./type_defs.md#savingsplanssavingstypedef)
-- `AmortizedCommitment`:
-  [SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef)
-
-<a id="savingsplansutilizationtypedef"></a>
-
+1. See [:material-code-braces: SavingsPlansUtilizationTypeDef](./type_defs.md#savingsplansutilizationtypedef) 
+2. See [:material-code-braces: SavingsPlansSavingsTypeDef](./type_defs.md#savingsplanssavingstypedef) 
+3. See [:material-code-braces: SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef) 
 ## SavingsPlansUtilizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SavingsPlansUtilizationTypeDef
+
+def get_value() -> SavingsPlansUtilizationTypeDef:
+    return {
+        "TotalCommitment": ...,
+    }
 ```
 
-Optional fields:
-
-- `TotalCommitment`: `str`
-- `UsedCommitment`: `str`
-- `UnusedCommitment`: `str`
-- `UtilizationPercentage`: `str`
-
-<a id="servicespecificationtypedef"></a>
+```python title="Definition"
+class SavingsPlansUtilizationTypeDef(TypedDict):
+    TotalCommitment: NotRequired[str],
+    UsedCommitment: NotRequired[str],
+    UnusedCommitment: NotRequired[str],
+    UtilizationPercentage: NotRequired[str],
+```
 
 ## ServiceSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import ServiceSpecificationTypeDef
+
+def get_value() -> ServiceSpecificationTypeDef:
+    return {
+        "EC2Specification": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceSpecificationTypeDef(TypedDict):
+    EC2Specification: NotRequired[EC2SpecificationTypeDef],  # (1)
+```
 
-- `EC2Specification`:
-  [EC2SpecificationTypeDef](./type_defs.md#ec2specificationtypedef)
-
-<a id="sortdefinitiontypedef"></a>
-
+1. See [:material-code-braces: EC2SpecificationTypeDef](./type_defs.md#ec2specificationtypedef) 
 ## SortDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SortDefinitionTypeDef
+
+def get_value() -> SortDefinitionTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SortDefinitionTypeDef(TypedDict):
+    Key: str,
+    SortOrder: NotRequired[SortOrderType],  # (1)
+```
 
-- `Key`: `str`
-
-Optional fields:
-
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="subscribertypedef"></a>
-
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## SubscriberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import SubscriberTypeDef
+
+def get_value() -> SubscriberTypeDef:
+    return {
+        "Address": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubscriberTypeDef(TypedDict):
+    Address: NotRequired[str],
+    Type: NotRequired[SubscriberTypeType],  # (1)
+    Status: NotRequired[SubscriberStatusType],  # (2)
+```
 
-- `Address`: `str`
-- `Type`: [SubscriberTypeType](./literals.md#subscribertypetype)
-- `Status`: [SubscriberStatusType](./literals.md#subscriberstatustype)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SubscriberTypeType](./literals.md#subscribertypetype) 
+2. See [:material-code-brackets: SubscriberStatusType](./literals.md#subscriberstatustype) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "ResourceTags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    ResourceTags: Sequence[ResourceTagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-
-<a id="tagvaluestypedef"></a>
-
+1. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 ## TagValuesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import TagValuesTypeDef
+
+def get_value() -> TagValuesTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TagValuesTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+    MatchOptions: NotRequired[Sequence[MatchOptionType]],  # (1)
+```
 
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-- `MatchOptions`:
-  `Sequence`\[[MatchOptionType](./literals.md#matchoptiontype)\]
-
-<a id="targetinstancetypedef"></a>
-
+1. See [:material-code-brackets: MatchOptionType](./literals.md#matchoptiontype) 
 ## TargetInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import TargetInstanceTypeDef
+
+def get_value() -> TargetInstanceTypeDef:
+    return {
+        "EstimatedMonthlyCost": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TargetInstanceTypeDef(TypedDict):
+    EstimatedMonthlyCost: NotRequired[str],
+    EstimatedMonthlySavings: NotRequired[str],
+    CurrencyCode: NotRequired[str],
+    DefaultTargetInstance: NotRequired[bool],
+    ResourceDetails: NotRequired[ResourceDetailsTypeDef],  # (1)
+    ExpectedResourceUtilization: NotRequired[ResourceUtilizationTypeDef],  # (2)
+    PlatformDifferences: NotRequired[List[PlatformDifferenceType]],  # (3)
+```
 
-- `EstimatedMonthlyCost`: `str`
-- `EstimatedMonthlySavings`: `str`
-- `CurrencyCode`: `str`
-- `DefaultTargetInstance`: `bool`
-- `ResourceDetails`:
-  [ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef)
-- `ExpectedResourceUtilization`:
-  [ResourceUtilizationTypeDef](./type_defs.md#resourceutilizationtypedef)
-- `PlatformDifferences`:
-  `List`\[[PlatformDifferenceType](./literals.md#platformdifferencetype)\]
-
-<a id="terminaterecommendationdetailtypedef"></a>
-
+1. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
+2. See [:material-code-braces: ResourceUtilizationTypeDef](./type_defs.md#resourceutilizationtypedef) 
+3. See [:material-code-brackets: PlatformDifferenceType](./literals.md#platformdifferencetype) 
 ## TerminateRecommendationDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import TerminateRecommendationDetailTypeDef
+
+def get_value() -> TerminateRecommendationDetailTypeDef:
+    return {
+        "EstimatedMonthlySavings": ...,
+    }
 ```
 
-Optional fields:
-
-- `EstimatedMonthlySavings`: `str`
-- `CurrencyCode`: `str`
-
-<a id="totalimpactfiltertypedef"></a>
+```python title="Definition"
+class TerminateRecommendationDetailTypeDef(TypedDict):
+    EstimatedMonthlySavings: NotRequired[str],
+    CurrencyCode: NotRequired[str],
+```
 
 ## TotalImpactFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import TotalImpactFilterTypeDef
+
+def get_value() -> TotalImpactFilterTypeDef:
+    return {
+        "NumericOperator": ...,
+        "StartValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TotalImpactFilterTypeDef(TypedDict):
+    NumericOperator: NumericOperatorType,  # (1)
+    StartValue: float,
+    EndValue: NotRequired[float],
+```
 
-- `NumericOperator`: [NumericOperatorType](./literals.md#numericoperatortype)
-- `StartValue`: `float`
-
-Optional fields:
-
-- `EndValue`: `float`
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: NumericOperatorType](./literals.md#numericoperatortype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "ResourceTagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `ResourceTagKeys`: `Sequence`\[`str`\]
-
-<a id="updateanomalymonitorrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    ResourceTagKeys: Sequence[str],
+```
 
 ## UpdateAnomalyMonitorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import UpdateAnomalyMonitorRequestRequestTypeDef
+
+def get_value() -> UpdateAnomalyMonitorRequestRequestTypeDef:
+    return {
+        "MonitorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `MonitorArn`: `str`
-
-Optional fields:
-
-- `MonitorName`: `str`
-
-<a id="updateanomalymonitorresponsetypedef"></a>
+```python title="Definition"
+class UpdateAnomalyMonitorRequestRequestTypeDef(TypedDict):
+    MonitorArn: str,
+    MonitorName: NotRequired[str],
+```
 
 ## UpdateAnomalyMonitorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import UpdateAnomalyMonitorResponseTypeDef
+
+def get_value() -> UpdateAnomalyMonitorResponseTypeDef:
+    return {
+        "MonitorArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAnomalyMonitorResponseTypeDef(TypedDict):
+    MonitorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MonitorArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateanomalysubscriptionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAnomalySubscriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import UpdateAnomalySubscriptionRequestRequestTypeDef
+
+def get_value() -> UpdateAnomalySubscriptionRequestRequestTypeDef:
+    return {
+        "SubscriptionArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAnomalySubscriptionRequestRequestTypeDef(TypedDict):
+    SubscriptionArn: str,
+    Threshold: NotRequired[float],
+    Frequency: NotRequired[AnomalySubscriptionFrequencyType],  # (1)
+    MonitorArnList: NotRequired[Sequence[str]],
+    Subscribers: NotRequired[Sequence[SubscriberTypeDef]],  # (2)
+    SubscriptionName: NotRequired[str],
+```
 
-- `SubscriptionArn`: `str`
-
-Optional fields:
-
-- `Threshold`: `float`
-- `Frequency`:
-  [AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype)
-- `MonitorArnList`: `Sequence`\[`str`\]
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-- `SubscriptionName`: `str`
-
-<a id="updateanomalysubscriptionresponsetypedef"></a>
-
+1. See [:material-code-brackets: AnomalySubscriptionFrequencyType](./literals.md#anomalysubscriptionfrequencytype) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 ## UpdateAnomalySubscriptionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import UpdateAnomalySubscriptionResponseTypeDef
+
+def get_value() -> UpdateAnomalySubscriptionResponseTypeDef:
+    return {
+        "SubscriptionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAnomalySubscriptionResponseTypeDef(TypedDict):
+    SubscriptionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SubscriptionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecostcategorydefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateCostCategoryDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import UpdateCostCategoryDefinitionRequestRequestTypeDef
+
+def get_value() -> UpdateCostCategoryDefinitionRequestRequestTypeDef:
+    return {
+        "CostCategoryArn": ...,
+        "RuleVersion": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCostCategoryDefinitionRequestRequestTypeDef(TypedDict):
+    CostCategoryArn: str,
+    RuleVersion: CostCategoryRuleVersionType,  # (1)
+    Rules: Sequence[CostCategoryRuleTypeDef],  # (2)
+    DefaultValue: NotRequired[str],
+    SplitChargeRules: NotRequired[Sequence[CostCategorySplitChargeRuleTypeDef]],  # (3)
+```
 
-- `CostCategoryArn`: `str`
-- `RuleVersion`: `Literal['CostCategoryExpression.v1']` (see
-  [CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype))
-- `Rules`:
-  `Sequence`\[[CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef)\]
-
-Optional fields:
-
-- `DefaultValue`: `str`
-- `SplitChargeRules`:
-  `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
-
-<a id="updatecostcategorydefinitionresponsetypedef"></a>
-
+1. See [:material-code-brackets: CostCategoryRuleVersionType](./literals.md#costcategoryruleversiontype) 
+2. See [:material-code-braces: CostCategoryRuleTypeDef](./type_defs.md#costcategoryruletypedef) 
+3. See [:material-code-braces: CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef) 
 ## UpdateCostCategoryDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import UpdateCostCategoryDefinitionResponseTypeDef
+
+def get_value() -> UpdateCostCategoryDefinitionResponseTypeDef:
+    return {
+        "CostCategoryArn": ...,
+        "EffectiveStart": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCostCategoryDefinitionResponseTypeDef(TypedDict):
+    CostCategoryArn: str,
+    EffectiveStart: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CostCategoryArn`: `str`
-- `EffectiveStart`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="utilizationbytimetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UtilizationByTimeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.type_defs import UtilizationByTimeTypeDef
+
+def get_value() -> UtilizationByTimeTypeDef:
+    return {
+        "TimePeriod": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UtilizationByTimeTypeDef(TypedDict):
+    TimePeriod: NotRequired[DateIntervalTypeDef],  # (1)
+    Groups: NotRequired[List[ReservationUtilizationGroupTypeDef]],  # (2)
+    Total: NotRequired[ReservationAggregatesTypeDef],  # (3)
+```
 
-- `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
-- `Groups`:
-  `List`\[[ReservationUtilizationGroupTypeDef](./type_defs.md#reservationutilizationgrouptypedef)\]
-- `Total`:
-  [ReservationAggregatesTypeDef](./type_defs.md#reservationaggregatestypedef)
+1. See [:material-code-braces: DateIntervalTypeDef](./type_defs.md#dateintervaltypedef) 
+2. See [:material-code-braces: ReservationUtilizationGroupTypeDef](./type_defs.md#reservationutilizationgrouptypedef) 
+3. See [:material-code-braces: ReservationAggregatesTypeDef](./type_defs.md#reservationaggregatestypedef) 

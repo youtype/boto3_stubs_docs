@@ -1,350 +1,442 @@
-<a id="typed-dictionaries-for-boto3-macie-module"></a>
-
-# Typed dictionaries for boto3 Macie module
+# Typed dictionaries
 
 > [Index](../README.md) > [Macie](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
-type annotations stubs module
-[mypy-boto3-macie](https://pypi.org/project/mypy-boto3-macie/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Macie module](#typed-dictionaries-for-boto3-macie-module)
-  - [AssociateMemberAccountRequestRequestTypeDef](#associatememberaccountrequestrequesttypedef)
-  - [AssociateS3ResourcesRequestRequestTypeDef](#associates3resourcesrequestrequesttypedef)
-  - [AssociateS3ResourcesResultTypeDef](#associates3resourcesresulttypedef)
-  - [ClassificationTypeTypeDef](#classificationtypetypedef)
-  - [ClassificationTypeUpdateTypeDef](#classificationtypeupdatetypedef)
-  - [DisassociateMemberAccountRequestRequestTypeDef](#disassociatememberaccountrequestrequesttypedef)
-  - [DisassociateS3ResourcesRequestRequestTypeDef](#disassociates3resourcesrequestrequesttypedef)
-  - [DisassociateS3ResourcesResultTypeDef](#disassociates3resourcesresulttypedef)
-  - [FailedS3ResourceTypeDef](#faileds3resourcetypedef)
-  - [ListMemberAccountsRequestRequestTypeDef](#listmemberaccountsrequestrequesttypedef)
-  - [ListMemberAccountsResultTypeDef](#listmemberaccountsresulttypedef)
-  - [ListS3ResourcesRequestRequestTypeDef](#lists3resourcesrequestrequesttypedef)
-  - [ListS3ResourcesResultTypeDef](#lists3resourcesresulttypedef)
-  - [MemberAccountTypeDef](#memberaccounttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3ResourceClassificationTypeDef](#s3resourceclassificationtypedef)
-  - [S3ResourceClassificationUpdateTypeDef](#s3resourceclassificationupdatetypedef)
-  - [S3ResourceTypeDef](#s3resourcetypedef)
-  - [UpdateS3ResourcesRequestRequestTypeDef](#updates3resourcesrequestrequesttypedef)
-  - [UpdateS3ResourcesResultTypeDef](#updates3resourcesresulttypedef)
-
-<a id="associatememberaccountrequestrequesttypedef"></a>
+    Auto-generated documentation for [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
+    type annotations stubs module [mypy-boto3-macie](https://pypi.org/project/mypy-boto3-macie/).
 
 ## AssociateMemberAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import AssociateMemberAccountRequestRequestTypeDef
+
+def get_value() -> AssociateMemberAccountRequestRequestTypeDef:
+    return {
+        "memberAccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `memberAccountId`: `str`
-
-<a id="associates3resourcesrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateMemberAccountRequestRequestTypeDef(TypedDict):
+    memberAccountId: str,
+```
 
 ## AssociateS3ResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import AssociateS3ResourcesRequestRequestTypeDef
+
+def get_value() -> AssociateS3ResourcesRequestRequestTypeDef:
+    return {
+        "s3Resources": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateS3ResourcesRequestRequestTypeDef(TypedDict):
+    s3Resources: Sequence[S3ResourceClassificationTypeDef],  # (1)
+    memberAccountId: NotRequired[str],
+```
 
-- `s3Resources`:
-  `Sequence`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
-
-Optional fields:
-
-- `memberAccountId`: `str`
-
-<a id="associates3resourcesresulttypedef"></a>
-
+1. See [:material-code-braces: S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef) 
 ## AssociateS3ResourcesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import AssociateS3ResourcesResultTypeDef
+
+def get_value() -> AssociateS3ResourcesResultTypeDef:
+    return {
+        "failedS3Resources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateS3ResourcesResultTypeDef(TypedDict):
+    failedS3Resources: List[FailedS3ResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `failedS3Resources`:
-  `List`\[[FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="classificationtypetypedef"></a>
-
+1. See [:material-code-braces: FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClassificationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import ClassificationTypeTypeDef
+
+def get_value() -> ClassificationTypeTypeDef:
+    return {
+        "oneTime": ...,
+        "continuous": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClassificationTypeTypeDef(TypedDict):
+    oneTime: S3OneTimeClassificationTypeType,  # (1)
+    continuous: S3ContinuousClassificationTypeType,  # (2)
+```
 
-- `oneTime`:
-  [S3OneTimeClassificationTypeType](./literals.md#s3onetimeclassificationtypetype)
-- `continuous`: `Literal['FULL']` (see
-  [S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype))
-
-<a id="classificationtypeupdatetypedef"></a>
-
+1. See [:material-code-brackets: S3OneTimeClassificationTypeType](./literals.md#s3onetimeclassificationtypetype) 
+2. See [:material-code-brackets: S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype) 
 ## ClassificationTypeUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import ClassificationTypeUpdateTypeDef
+
+def get_value() -> ClassificationTypeUpdateTypeDef:
+    return {
+        "oneTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClassificationTypeUpdateTypeDef(TypedDict):
+    oneTime: NotRequired[S3OneTimeClassificationTypeType],  # (1)
+    continuous: NotRequired[S3ContinuousClassificationTypeType],  # (2)
+```
 
-- `oneTime`:
-  [S3OneTimeClassificationTypeType](./literals.md#s3onetimeclassificationtypetype)
-- `continuous`: `Literal['FULL']` (see
-  [S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype))
-
-<a id="disassociatememberaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: S3OneTimeClassificationTypeType](./literals.md#s3onetimeclassificationtypetype) 
+2. See [:material-code-brackets: S3ContinuousClassificationTypeType](./literals.md#s3continuousclassificationtypetype) 
 ## DisassociateMemberAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import DisassociateMemberAccountRequestRequestTypeDef
+
+def get_value() -> DisassociateMemberAccountRequestRequestTypeDef:
+    return {
+        "memberAccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `memberAccountId`: `str`
-
-<a id="disassociates3resourcesrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateMemberAccountRequestRequestTypeDef(TypedDict):
+    memberAccountId: str,
+```
 
 ## DisassociateS3ResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import DisassociateS3ResourcesRequestRequestTypeDef
+
+def get_value() -> DisassociateS3ResourcesRequestRequestTypeDef:
+    return {
+        "associatedS3Resources": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateS3ResourcesRequestRequestTypeDef(TypedDict):
+    associatedS3Resources: Sequence[S3ResourceTypeDef],  # (1)
+    memberAccountId: NotRequired[str],
+```
 
-- `associatedS3Resources`:
-  `Sequence`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
-
-Optional fields:
-
-- `memberAccountId`: `str`
-
-<a id="disassociates3resourcesresulttypedef"></a>
-
+1. See [:material-code-braces: S3ResourceTypeDef](./type_defs.md#s3resourcetypedef) 
 ## DisassociateS3ResourcesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import DisassociateS3ResourcesResultTypeDef
+
+def get_value() -> DisassociateS3ResourcesResultTypeDef:
+    return {
+        "failedS3Resources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateS3ResourcesResultTypeDef(TypedDict):
+    failedS3Resources: List[FailedS3ResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `failedS3Resources`:
-  `List`\[[FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="faileds3resourcetypedef"></a>
-
+1. See [:material-code-braces: FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FailedS3ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import FailedS3ResourceTypeDef
+
+def get_value() -> FailedS3ResourceTypeDef:
+    return {
+        "failedItem": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FailedS3ResourceTypeDef(TypedDict):
+    failedItem: NotRequired[S3ResourceTypeDef],  # (1)
+    errorCode: NotRequired[str],
+    errorMessage: NotRequired[str],
+```
 
-- `failedItem`: [S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)
-- `errorCode`: `str`
-- `errorMessage`: `str`
+1. See [:material-code-braces: S3ResourceTypeDef](./type_defs.md#s3resourcetypedef) 
+## ListMemberAccountsRequestListMemberAccountsPaginateTypeDef
 
-<a id="listmemberaccountsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie.type_defs import ListMemberAccountsRequestListMemberAccountsPaginateTypeDef
 
+def get_value() -> ListMemberAccountsRequestListMemberAccountsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListMemberAccountsRequestListMemberAccountsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMemberAccountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import ListMemberAccountsRequestRequestTypeDef
+
+def get_value() -> ListMemberAccountsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listmemberaccountsresulttypedef"></a>
+```python title="Definition"
+class ListMemberAccountsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListMemberAccountsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import ListMemberAccountsResultTypeDef
+
+def get_value() -> ListMemberAccountsResultTypeDef:
+    return {
+        "memberAccounts": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMemberAccountsResultTypeDef(TypedDict):
+    memberAccounts: List[MemberAccountTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `memberAccounts`:
-  `List`\[[MemberAccountTypeDef](./type_defs.md#memberaccounttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MemberAccountTypeDef](./type_defs.md#memberaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListS3ResourcesRequestListS3ResourcesPaginateTypeDef
 
-<a id="lists3resourcesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie.type_defs import ListS3ResourcesRequestListS3ResourcesPaginateTypeDef
 
+def get_value() -> ListS3ResourcesRequestListS3ResourcesPaginateTypeDef:
+    return {
+        "memberAccountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListS3ResourcesRequestListS3ResourcesPaginateTypeDef(TypedDict):
+    memberAccountId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListS3ResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import ListS3ResourcesRequestRequestTypeDef
+
+def get_value() -> ListS3ResourcesRequestRequestTypeDef:
+    return {
+        "memberAccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `memberAccountId`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="lists3resourcesresulttypedef"></a>
+```python title="Definition"
+class ListS3ResourcesRequestRequestTypeDef(TypedDict):
+    memberAccountId: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListS3ResourcesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import ListS3ResourcesResultTypeDef
+
+def get_value() -> ListS3ResourcesResultTypeDef:
+    return {
+        "s3Resources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListS3ResourcesResultTypeDef(TypedDict):
+    s3Resources: List[S3ResourceClassificationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `s3Resources`:
-  `List`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="memberaccounttypedef"></a>
-
+1. See [:material-code-braces: S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MemberAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import MemberAccountTypeDef
+
+def get_value() -> MemberAccountTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class MemberAccountTypeDef(TypedDict):
+    accountId: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3resourceclassificationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3ResourceClassificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import S3ResourceClassificationTypeDef
+
+def get_value() -> S3ResourceClassificationTypeDef:
+    return {
+        "bucketName": ...,
+        "classificationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3ResourceClassificationTypeDef(TypedDict):
+    bucketName: str,
+    classificationType: ClassificationTypeTypeDef,  # (1)
+    prefix: NotRequired[str],
+```
 
-- `bucketName`: `str`
-- `classificationType`:
-  [ClassificationTypeTypeDef](./type_defs.md#classificationtypetypedef)
-
-Optional fields:
-
-- `prefix`: `str`
-
-<a id="s3resourceclassificationupdatetypedef"></a>
-
+1. See [:material-code-braces: ClassificationTypeTypeDef](./type_defs.md#classificationtypetypedef) 
 ## S3ResourceClassificationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import S3ResourceClassificationUpdateTypeDef
+
+def get_value() -> S3ResourceClassificationUpdateTypeDef:
+    return {
+        "bucketName": ...,
+        "classificationTypeUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3ResourceClassificationUpdateTypeDef(TypedDict):
+    bucketName: str,
+    classificationTypeUpdate: ClassificationTypeUpdateTypeDef,  # (1)
+    prefix: NotRequired[str],
+```
 
-- `bucketName`: `str`
-- `classificationTypeUpdate`:
-  [ClassificationTypeUpdateTypeDef](./type_defs.md#classificationtypeupdatetypedef)
-
-Optional fields:
-
-- `prefix`: `str`
-
-<a id="s3resourcetypedef"></a>
-
+1. See [:material-code-braces: ClassificationTypeUpdateTypeDef](./type_defs.md#classificationtypeupdatetypedef) 
 ## S3ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import S3ResourceTypeDef
+
+def get_value() -> S3ResourceTypeDef:
+    return {
+        "bucketName": ...,
+    }
 ```
 
-Required fields:
-
-- `bucketName`: `str`
-
-Optional fields:
-
-- `prefix`: `str`
-
-<a id="updates3resourcesrequestrequesttypedef"></a>
+```python title="Definition"
+class S3ResourceTypeDef(TypedDict):
+    bucketName: str,
+    prefix: NotRequired[str],
+```
 
 ## UpdateS3ResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import UpdateS3ResourcesRequestRequestTypeDef
+
+def get_value() -> UpdateS3ResourcesRequestRequestTypeDef:
+    return {
+        "s3ResourcesUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateS3ResourcesRequestRequestTypeDef(TypedDict):
+    s3ResourcesUpdate: Sequence[S3ResourceClassificationUpdateTypeDef],  # (1)
+    memberAccountId: NotRequired[str],
+```
 
-- `s3ResourcesUpdate`:
-  `Sequence`\[[S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)\]
-
-Optional fields:
-
-- `memberAccountId`: `str`
-
-<a id="updates3resourcesresulttypedef"></a>
-
+1. See [:material-code-braces: S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef) 
 ## UpdateS3ResourcesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie.type_defs import UpdateS3ResourcesResultTypeDef
+
+def get_value() -> UpdateS3ResourcesResultTypeDef:
+    return {
+        "failedS3Resources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateS3ResourcesResultTypeDef(TypedDict):
+    failedS3Resources: List[FailedS3ResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `failedS3Resources`:
-  `List`\[[FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FailedS3ResourceTypeDef](./type_defs.md#faileds3resourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-dataexchange-module"></a>
-
-# Paginators for boto3 DataExchange module
+# Paginators
 
 > [Index](../README.md) > [DataExchange](./README.md) > Paginators
 
-Auto-generated documentation for
-[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
-type annotations stubs module
-[mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+!!! note ""
 
-- [Paginators for boto3 DataExchange module](#paginators-for-boto3-dataexchange-module)
-  - [ListDataSetRevisionsPaginator](#listdatasetrevisionspaginator)
-  - [ListDataSetsPaginator](#listdatasetspaginator)
-  - [ListEventActionsPaginator](#listeventactionspaginator)
-  - [ListJobsPaginator](#listjobspaginator)
-  - [ListRevisionAssetsPaginator](#listrevisionassetspaginator)
-
-<a id="listdatasetrevisionspaginator"></a>
+    Auto-generated documentation for [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
+    type annotations stubs module [mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 ## ListDataSetRevisionsPaginator
 
-Type annotations for
-`boto3.client("dataexchange").get_paginator("list_data_set_revisions")`.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_paginator("list_data_set_revisions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSetRevisions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator
@@ -34,28 +21,40 @@ def get_list_data_set_revisions_paginator() -> ListDataSetRevisionsPaginator:
     return Session().client("dataexchange").get_paginator("list_data_set_revisions")
 ```
 
-Boto3 documentation:
-[DataExchange.Paginator.ListDataSetRevisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSetRevisions)
 
-Arguments for `ListDataSetRevisionsPaginator.paginate` method:
+### paginate
 
-- `DataSetId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDataSetRevisionsPaginator.paginate` method.
 
-`ListDataSetRevisionsPaginator.paginate` returns
-`_PageIterator`\[[ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DataSetId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDataSetRevisionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatasetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDataSetRevisionsRequestListDataSetRevisionsPaginateTypeDef = {  # (1)
+    "DataSetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataSetRevisionsRequestListDataSetRevisionsPaginateTypeDef](./type_defs.md#listdatasetrevisionsrequestlistdatasetrevisionspaginatetypedef) 
 ## ListDataSetsPaginator
 
-Type annotations for
-`boto3.client("dataexchange").get_paginator("list_data_sets")`.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_paginator("list_data_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dataexchange.paginator import ListDataSetsPaginator
@@ -64,28 +63,40 @@ def get_list_data_sets_paginator() -> ListDataSetsPaginator:
     return Session().client("dataexchange").get_paginator("list_data_sets")
 ```
 
-Boto3 documentation:
-[DataExchange.Paginator.ListDataSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListDataSets)
 
-Arguments for `ListDataSetsPaginator.paginate` method:
+### paginate
 
-- `Origin`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDataSetsPaginator.paginate` method.
 
-`ListDataSetsPaginator.paginate` returns
-`_PageIterator`\[[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Origin: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDataSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listeventactionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDataSetsRequestListDataSetsPaginateTypeDef = {  # (1)
+    "Origin": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataSetsRequestListDataSetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef) 
 ## ListEventActionsPaginator
 
-Type annotations for
-`boto3.client("dataexchange").get_paginator("list_event_actions")`.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_paginator("list_event_actions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListEventActions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dataexchange.paginator import ListEventActionsPaginator
@@ -94,27 +105,40 @@ def get_list_event_actions_paginator() -> ListEventActionsPaginator:
     return Session().client("dataexchange").get_paginator("list_event_actions")
 ```
 
-Boto3 documentation:
-[DataExchange.Paginator.ListEventActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListEventActions)
 
-Arguments for `ListEventActionsPaginator.paginate` method:
+### paginate
 
-- `EventSourceId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEventActionsPaginator.paginate` method.
 
-`ListEventActionsPaginator.paginate` returns
-`_PageIterator`\[[ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    EventSourceId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEventActionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listjobspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEventActionsRequestListEventActionsPaginateTypeDef = {  # (1)
+    "EventSourceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEventActionsRequestListEventActionsPaginateTypeDef](./type_defs.md#listeventactionsrequestlisteventactionspaginatetypedef) 
 ## ListJobsPaginator
 
-Type annotations for `boto3.client("dataexchange").get_paginator("list_jobs")`.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_paginator("list_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dataexchange.paginator import ListJobsPaginator
@@ -123,29 +147,41 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("dataexchange").get_paginator("list_jobs")
 ```
 
-Boto3 documentation:
-[DataExchange.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListJobs)
 
-Arguments for `ListJobsPaginator.paginate` method:
+### paginate
 
-- `DataSetId`: `str`
-- `RevisionId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobsPaginator.paginate` method.
 
-`ListJobsPaginator.paginate` returns
-`_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DataSetId: str = ...,
+    RevisionId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListJobsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrevisionassetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestListJobsPaginateTypeDef = {  # (1)
+    "DataSetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef) 
 ## ListRevisionAssetsPaginator
 
-Type annotations for
-`boto3.client("dataexchange").get_paginator("list_revision_assets")`.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_paginator("list_revision_assets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListRevisionAssets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dataexchange.paginator import ListRevisionAssetsPaginator
@@ -154,15 +190,33 @@ def get_list_revision_assets_paginator() -> ListRevisionAssetsPaginator:
     return Session().client("dataexchange").get_paginator("list_revision_assets")
 ```
 
-Boto3 documentation:
-[DataExchange.Paginator.ListRevisionAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Paginator.ListRevisionAssets)
 
-Arguments for `ListRevisionAssetsPaginator.paginate` method:
+### paginate
 
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRevisionAssetsPaginator.paginate` method.
 
-`ListRevisionAssetsPaginator.paginate` returns
-`_PageIterator`\[[ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DataSetId: str,
+    RevisionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRevisionAssetsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRevisionAssetsRequestListRevisionAssetsPaginateTypeDef = {  # (1)
+    "DataSetId": ...,
+    "RevisionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRevisionAssetsRequestListRevisionAssetsPaginateTypeDef](./type_defs.md#listrevisionassetsrequestlistrevisionassetspaginatetypedef) 

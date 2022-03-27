@@ -1,27 +1,18 @@
-<a id="waiters-for-boto3-schemas-module"></a>
-
-# Waiters for boto3 Schemas module
+# Waiters
 
 > [Index](../README.md) > [Schemas](./README.md) > Waiters
 
-Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
-type annotations stubs module
-[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
+!!! note ""
 
-- [Waiters for boto3 Schemas module](#waiters-for-boto3-schemas-module)
-  - [CodeBindingExistsWaiter](#codebindingexistswaiter)
-
-<a id="codebindingexistswaiter"></a>
+    Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+    type annotations stubs module [mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 ## CodeBindingExistsWaiter
 
-Type annotations for
-`boto3.client("schemas").get_waiter("code_binding_exists")`.
+Type annotations and code completion for `#!python boto3.client("schemas").get_waiter("code_binding_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Waiter.CodeBindingExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_schemas.waiter import CodeBindingExistsWaiter
@@ -30,13 +21,35 @@ def get_code_binding_exists_waiter() -> CodeBindingExistsWaiter:
     return Session().client("schemas").get_waiter("code_binding_exists")
 ```
 
-Boto3 documentation:
-[Schemas.Waiter.code_binding_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Waiter.CodeBindingExists)
 
-Arguments for `CodeBindingExistsWaiter.wait` method:
+### wait
 
-- `Language`: `str` *(required)*
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `SchemaVersion`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python CodeBindingExistsWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Language: str,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCodeBindingRequestCodeBindingExistsWaitTypeDef = {  # (1)
+    "Language": ...,
+    "RegistryName": ...,
+    "SchemaName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCodeBindingRequestCodeBindingExistsWaitTypeDef](./type_defs.md#describecodebindingrequestcodebindingexistswaittypedef) 

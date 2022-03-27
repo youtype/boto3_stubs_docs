@@ -1,61 +1,18 @@
-<a id="mgnclient-for-boto3-mgn-module"></a>
-
-# mgnClient for boto3 mgn module
+# mgnClient
 
 > [Index](../README.md) > [mgn](./README.md) > mgnClient
 
-Auto-generated documentation for
-[mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
-type annotations stubs module
-[mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
+!!! note ""
 
-- [mgnClient for boto3 mgn module](#mgnclient-for-boto3-mgn-module)
-  - [mgnClient](#mgnclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [change_server_life_cycle_state](#change_server_life_cycle_state)
-    - [create_replication_configuration_template](#create_replication_configuration_template)
-    - [delete_job](#delete_job)
-    - [delete_replication_configuration_template](#delete_replication_configuration_template)
-    - [delete_source_server](#delete_source_server)
-    - [delete_vcenter_client](#delete_vcenter_client)
-    - [describe_job_log_items](#describe_job_log_items)
-    - [describe_jobs](#describe_jobs)
-    - [describe_replication_configuration_templates](#describe_replication_configuration_templates)
-    - [describe_source_servers](#describe_source_servers)
-    - [describe_vcenter_clients](#describe_vcenter_clients)
-    - [disconnect_from_service](#disconnect_from_service)
-    - [finalize_cutover](#finalize_cutover)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_launch_configuration](#get_launch_configuration)
-    - [get_replication_configuration](#get_replication_configuration)
-    - [initialize_service](#initialize_service)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [mark_as_archived](#mark_as_archived)
-    - [retry_data_replication](#retry_data_replication)
-    - [start_cutover](#start_cutover)
-    - [start_replication](#start_replication)
-    - [start_test](#start_test)
-    - [tag_resource](#tag_resource)
-    - [terminate_target_instances](#terminate_target_instances)
-    - [untag_resource](#untag_resource)
-    - [update_launch_configuration](#update_launch_configuration)
-    - [update_replication_configuration](#update_replication_configuration)
-    - [update_replication_configuration_template](#update_replication_configuration_template)
-    - [update_source_server_replication_type](#update_source_server_replication_type)
-    - [get_paginator](#get_paginator)
-
-<a id="mgnclient"></a>
+    Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
+    type annotations stubs module [mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 ## mgnClient
 
-Type annotations for `boto3.client("mgn")`
+Type annotations and code completion for `#!python boto3.client("mgn")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mgn.client import mgnClient
 
@@ -63,790 +20,1011 @@ def get_mgn_client() -> mgnClient:
     return Session().client("mgn")
 ```
 
-Boto3 documentation:
-[mgn.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mgn").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mgn")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.UninitializedAccountException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mgn.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.UninitializedAccountException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-mgnClient exceptions.
-
-Type annotations for `boto3.client("mgn").exceptions` method.
-
-Boto3 documentation:
-[mgn.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mgn").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mgn").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.can_paginate)
 
-Boto3 documentation:
-[mgn.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="change\_server\_life\_cycle\_state"></a>
-
-### change_server_life_cycle_state
+### change\_server\_life\_cycle\_state
 
 Allows the user to set the SourceServer.LifeCycle.state property for specific
 Source Server IDs to one of the following: READY_FOR_TEST or READY_FOR_CUTOVER.
 
-Type annotations for `boto3.client("mgn").change_server_life_cycle_state`
-method.
+Type annotations and code completion for `#!python boto3.client("mgn").change_server_life_cycle_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state)
 
-Boto3 documentation:
-[mgn.Client.change_server_life_cycle_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.change_server_life_cycle_state)
+```python title="Method definition"
+def change_server_life_cycle_state(
+    self,
+    *,
+    lifeCycle: ChangeServerLifeCycleStateSourceServerLifecycleTypeDef,  # (1)
+    sourceServerID: str,
+) -> SourceServerResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ChangeServerLifeCycleStateRequestRequestTypeDef](./type_defs.md#changeserverlifecyclestaterequestrequesttypedef).
+1. See [:material-code-braces: ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](./type_defs.md#changeserverlifecyclestatesourceserverlifecycletypedef) 
+2. See [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `lifeCycle`:
-  [ChangeServerLifeCycleStateSourceServerLifecycleTypeDef](./type_defs.md#changeserverlifecyclestatesourceserverlifecycletypedef)
-  *(required)*
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ChangeServerLifeCycleStateRequestRequestTypeDef = {  # (1)
+    "lifeCycle": ...,
+    "sourceServerID": ...,
+}
 
-Returns
-[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+parent.change_server_life_cycle_state(**kwargs)
+```
 
-<a id="create\_replication\_configuration\_template"></a>
+1. See [:material-code-braces: ChangeServerLifeCycleStateRequestRequestTypeDef](./type_defs.md#changeserverlifecyclestaterequestrequesttypedef) 
 
-### create_replication_configuration_template
+### create\_replication\_configuration\_template
 
 Creates a new ReplicationConfigurationTemplate.
 
-Type annotations for
-`boto3.client("mgn").create_replication_configuration_template` method.
+Type annotations and code completion for `#!python boto3.client("mgn").create_replication_configuration_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_replication_configuration_template)
 
-Boto3 documentation:
-[mgn.Client.create_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.create_replication_configuration_template)
+```python title="Method definition"
+def create_replication_configuration_template(
+    self,
+    *,
+    associateDefaultSecurityGroup: bool,
+    bandwidthThrottling: int,
+    createPublicIP: bool,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
+    replicationServerInstanceType: str,
+    replicationServersSecurityGroupsIDs: Sequence[str],
+    stagingAreaSubnetId: str,
+    stagingAreaTags: Mapping[str, str],
+    useDedicatedReplicationServer: bool,
+    ebsEncryptionKeyArn: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> ReplicationConfigurationTemplateResponseMetadataTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationtemplaterequestrequesttypedef).
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `associateDefaultSecurityGroup`: `bool` *(required)*
-- `bandwidthThrottling`: `int` *(required)*
-- `createPublicIP`: `bool` *(required)*
-- `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
-  *(required)*
-- `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
-  *(required)*
-- `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
-  *(required)*
-- `replicationServerInstanceType`: `str` *(required)*
-- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\] *(required)*
-- `stagingAreaSubnetId`: `str` *(required)*
-- `stagingAreaTags`: `Mapping`\[`str`, `str`\] *(required)*
-- `useDedicatedReplicationServer`: `bool` *(required)*
-- `ebsEncryptionKeyArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateReplicationConfigurationTemplateRequestRequestTypeDef = {  # (1)
+    "associateDefaultSecurityGroup": ...,
+    "bandwidthThrottling": ...,
+    "createPublicIP": ...,
+    "dataPlaneRouting": ...,
+    "defaultLargeStagingDiskType": ...,
+    "ebsEncryption": ...,
+    "replicationServerInstanceType": ...,
+    "replicationServersSecurityGroupsIDs": ...,
+    "stagingAreaSubnetId": ...,
+    "stagingAreaTags": ...,
+    "useDedicatedReplicationServer": ...,
+}
 
-Returns
-[ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
+parent.create_replication_configuration_template(**kwargs)
+```
 
-<a id="delete\_job"></a>
+1. See [:material-code-braces: CreateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationtemplaterequestrequesttypedef) 
 
-### delete_job
+### delete\_job
 
 Deletes a single Job by ID.
 
-Type annotations for `boto3.client("mgn").delete_job` method.
+Type annotations and code completion for `#!python boto3.client("mgn").delete_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_job)
 
-Boto3 documentation:
-[mgn.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_job)
+```python title="Method definition"
+def delete_job(
+    self,
+    *,
+    jobID: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteJobRequestRequestTypeDef = {  # (1)
+    "jobID": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_job(**kwargs)
+```
 
-<a id="delete\_replication\_configuration\_template"></a>
+1. See [:material-code-braces: DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef) 
 
-### delete_replication_configuration_template
+### delete\_replication\_configuration\_template
 
-Deletes a single Replication Configuration Template by ID See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mgn-2020-02-26/DeleteReplicationConfigurationTemplate).
+Deletes a single Replication Configuration Template by ID See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/mgn-2020-02-26/DeleteReplicationConfigurationTemplate).
 
-Type annotations for
-`boto3.client("mgn").delete_replication_configuration_template` method.
+Type annotations and code completion for `#!python boto3.client("mgn").delete_replication_configuration_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template)
 
-Boto3 documentation:
-[mgn.Client.delete_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_replication_configuration_template)
+```python title="Method definition"
+def delete_replication_configuration_template(
+    self,
+    *,
+    replicationConfigurationTemplateID: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `replicationConfigurationTemplateID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReplicationConfigurationTemplateRequestRequestTypeDef = {  # (1)
+    "replicationConfigurationTemplateID": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_replication_configuration_template(**kwargs)
+```
 
-<a id="delete\_source\_server"></a>
+1. See [:material-code-braces: DeleteReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationtemplaterequestrequesttypedef) 
 
-### delete_source_server
+### delete\_source\_server
 
 Deletes a single source server by ID.
 
-Type annotations for `boto3.client("mgn").delete_source_server` method.
+Type annotations and code completion for `#!python boto3.client("mgn").delete_source_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_source_server)
 
-Boto3 documentation:
-[mgn.Client.delete_source_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_source_server)
+```python title="Method definition"
+def delete_source_server(
+    self,
+    *,
+    sourceServerID: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSourceServerRequestRequestTypeDef](./type_defs.md#deletesourceserverrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSourceServerRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_source_server(**kwargs)
+```
 
-<a id="delete\_vcenter\_client"></a>
+1. See [:material-code-braces: DeleteSourceServerRequestRequestTypeDef](./type_defs.md#deletesourceserverrequestrequesttypedef) 
 
-### delete_vcenter_client
+### delete\_vcenter\_client
 
 Deletes a given vCenter client by ID.
 
-Type annotations for `boto3.client("mgn").delete_vcenter_client` method.
+Type annotations and code completion for `#!python boto3.client("mgn").delete_vcenter_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_vcenter_client)
 
-Boto3 documentation:
-[mgn.Client.delete_vcenter_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.delete_vcenter_client)
+```python title="Method definition"
+def delete_vcenter_client(
+    self,
+    *,
+    vcenterClientID: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVcenterClientRequestRequestTypeDef](./type_defs.md#deletevcenterclientrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `vcenterClientID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVcenterClientRequestRequestTypeDef = {  # (1)
+    "vcenterClientID": ...,
+}
 
-<a id="describe\_job\_log\_items"></a>
+parent.delete_vcenter_client(**kwargs)
+```
 
-### describe_job_log_items
+1. See [:material-code-braces: DeleteVcenterClientRequestRequestTypeDef](./type_defs.md#deletevcenterclientrequestrequesttypedef) 
+
+### describe\_job\_log\_items
 
 Retrieves detailed job log items with paging.
 
-Type annotations for `boto3.client("mgn").describe_job_log_items` method.
+Type annotations and code completion for `#!python boto3.client("mgn").describe_job_log_items` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_job_log_items)
 
-Boto3 documentation:
-[mgn.Client.describe_job_log_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_job_log_items)
+```python title="Method definition"
+def describe_job_log_items(
+    self,
+    *,
+    jobID: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeJobLogItemsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobLogItemsRequestRequestTypeDef](./type_defs.md#describejoblogitemsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobID`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeJobLogItemsRequestRequestTypeDef = {  # (1)
+    "jobID": ...,
+}
 
-Returns
-[DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef).
+parent.describe_job_log_items(**kwargs)
+```
 
-<a id="describe\_jobs"></a>
+1. See [:material-code-braces: DescribeJobLogItemsRequestRequestTypeDef](./type_defs.md#describejoblogitemsrequestrequesttypedef) 
 
-### describe_jobs
+### describe\_jobs
 
 Returns a list of Jobs.
 
-Type annotations for `boto3.client("mgn").describe_jobs` method.
+Type annotations and code completion for `#!python boto3.client("mgn").describe_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_jobs)
 
-Boto3 documentation:
-[mgn.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_jobs)
+```python title="Method definition"
+def describe_jobs(
+    self,
+    *,
+    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
+2. See [:material-code-braces: DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`:
-  [DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef)
-  *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeJobsRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
+parent.describe_jobs(**kwargs)
+```
 
-<a id="describe\_replication\_configuration\_templates"></a>
+1. See [:material-code-braces: DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef) 
 
-### describe_replication_configuration_templates
+### describe\_replication\_configuration\_templates
 
 Lists all ReplicationConfigurationTemplates, filtered by Source Server IDs.
 
-Type annotations for
-`boto3.client("mgn").describe_replication_configuration_templates` method.
+Type annotations and code completion for `#!python boto3.client("mgn").describe_replication_configuration_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates)
 
-Boto3 documentation:
-[mgn.Client.describe_replication_configuration_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_replication_configuration_templates)
+```python title="Method definition"
+def describe_replication_configuration_templates(
+    self,
+    *,
+    replicationConfigurationTemplateIDs: Sequence[str],
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeReplicationConfigurationTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationConfigurationTemplatesRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `replicationConfigurationTemplateIDs`: `Sequence`\[`str`\] *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationConfigurationTemplatesRequestRequestTypeDef = {  # (1)
+    "replicationConfigurationTemplateIDs": ...,
+}
 
-Returns
-[DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef).
+parent.describe_replication_configuration_templates(**kwargs)
+```
 
-<a id="describe\_source\_servers"></a>
+1. See [:material-code-braces: DescribeReplicationConfigurationTemplatesRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestrequesttypedef) 
 
-### describe_source_servers
+### describe\_source\_servers
 
 Retrieves all SourceServers or multiple SourceServers by ID.
 
-Type annotations for `boto3.client("mgn").describe_source_servers` method.
+Type annotations and code completion for `#!python boto3.client("mgn").describe_source_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_source_servers)
 
-Boto3 documentation:
-[mgn.Client.describe_source_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_source_servers)
+```python title="Method definition"
+def describe_source_servers(
+    self,
+    *,
+    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeSourceServersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSourceServersRequestRequestTypeDef](./type_defs.md#describesourceserversrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
+2. See [:material-code-braces: DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`:
-  [DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef)
-  *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSourceServersRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef).
+parent.describe_source_servers(**kwargs)
+```
 
-<a id="describe\_vcenter\_clients"></a>
+1. See [:material-code-braces: DescribeSourceServersRequestRequestTypeDef](./type_defs.md#describesourceserversrequestrequesttypedef) 
 
-### describe_vcenter_clients
+### describe\_vcenter\_clients
 
 Returns a list of the installed vCenter clients.
 
-Type annotations for `boto3.client("mgn").describe_vcenter_clients` method.
+Type annotations and code completion for `#!python boto3.client("mgn").describe_vcenter_clients` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_vcenter_clients)
 
-Boto3 documentation:
-[mgn.Client.describe_vcenter_clients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.describe_vcenter_clients)
+```python title="Method definition"
+def describe_vcenter_clients(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeVcenterClientsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVcenterClientsRequestRequestTypeDef](./type_defs.md#describevcenterclientsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeVcenterClientsResponseTypeDef](./type_defs.md#describevcenterclientsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeVcenterClientsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[DescribeVcenterClientsResponseTypeDef](./type_defs.md#describevcenterclientsresponsetypedef).
+parent.describe_vcenter_clients(**kwargs)
+```
 
-<a id="disconnect\_from\_service"></a>
+1. See [:material-code-braces: DescribeVcenterClientsRequestRequestTypeDef](./type_defs.md#describevcenterclientsrequestrequesttypedef) 
 
-### disconnect_from_service
+### disconnect\_from\_service
 
 Disconnects specific Source Servers from Application Migration Service.
 
-Type annotations for `boto3.client("mgn").disconnect_from_service` method.
+Type annotations and code completion for `#!python boto3.client("mgn").disconnect_from_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disconnect_from_service)
 
-Boto3 documentation:
-[mgn.Client.disconnect_from_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.disconnect_from_service)
+```python title="Method definition"
+def disconnect_from_service(
+    self,
+    *,
+    sourceServerID: str,
+) -> SourceServerResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisconnectFromServiceRequestRequestTypeDef](./type_defs.md#disconnectfromservicerequestrequesttypedef).
+1. See [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisconnectFromServiceRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+parent.disconnect_from_service(**kwargs)
+```
 
-<a id="finalize\_cutover"></a>
+1. See [:material-code-braces: DisconnectFromServiceRequestRequestTypeDef](./type_defs.md#disconnectfromservicerequestrequesttypedef) 
 
-### finalize_cutover
+### finalize\_cutover
 
 Finalizes the cutover immediately for specific Source Servers.
 
-Type annotations for `boto3.client("mgn").finalize_cutover` method.
+Type annotations and code completion for `#!python boto3.client("mgn").finalize_cutover` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.finalize_cutover)
 
-Boto3 documentation:
-[mgn.Client.finalize_cutover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.finalize_cutover)
+```python title="Method definition"
+def finalize_cutover(
+    self,
+    *,
+    sourceServerID: str,
+) -> SourceServerResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[FinalizeCutoverRequestRequestTypeDef](./type_defs.md#finalizecutoverrequestrequesttypedef).
+1. See [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: FinalizeCutoverRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+parent.finalize_cutover(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: FinalizeCutoverRequestRequestTypeDef](./type_defs.md#finalizecutoverrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mgn").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("mgn").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.generate_presigned_url)
 
-Boto3 documentation:
-[mgn.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_launch\_configuration"></a>
-
-### get_launch_configuration
+### get\_launch\_configuration
 
 Lists all LaunchConfigurations available, filtered by Source Server IDs.
 
-Type annotations for `boto3.client("mgn").get_launch_configuration` method.
+Type annotations and code completion for `#!python boto3.client("mgn").get_launch_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_launch_configuration)
 
-Boto3 documentation:
-[mgn.Client.get_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_launch_configuration)
+```python title="Method definition"
+def get_launch_configuration(
+    self,
+    *,
+    sourceServerID: str,
+) -> LaunchConfigurationTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLaunchConfigurationRequestRequestTypeDef](./type_defs.md#getlaunchconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLaunchConfigurationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
+parent.get_launch_configuration(**kwargs)
+```
 
-<a id="get\_replication\_configuration"></a>
+1. See [:material-code-braces: GetLaunchConfigurationRequestRequestTypeDef](./type_defs.md#getlaunchconfigurationrequestrequesttypedef) 
 
-### get_replication_configuration
+### get\_replication\_configuration
 
 Lists all ReplicationConfigurations, filtered by Source Server ID.
 
-Type annotations for `boto3.client("mgn").get_replication_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("mgn").get_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_replication_configuration)
 
-Boto3 documentation:
-[mgn.Client.get_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.get_replication_configuration)
+```python title="Method definition"
+def get_replication_configuration(
+    self,
+    *,
+    sourceServerID: str,
+) -> ReplicationConfigurationTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getreplicationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
+parent.get_replication_configuration(**kwargs)
+```
 
-<a id="initialize\_service"></a>
+1. See [:material-code-braces: GetReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getreplicationconfigurationrequestrequesttypedef) 
 
-### initialize_service
+### initialize\_service
 
 Initialize Application Migration Service.
 
-Type annotations for `boto3.client("mgn").initialize_service` method.
+Type annotations and code completion for `#!python boto3.client("mgn").initialize_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.initialize_service)
 
-Boto3 documentation:
-[mgn.Client.initialize_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.initialize_service)
+```python title="Method definition"
+def initialize_service(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="list\_tags\_for\_resource"></a>
-
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List all tags for your Application Migration Service resources.
 
-Type annotations for `boto3.client("mgn").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("mgn").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[mgn.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="mark\_as\_archived"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### mark_as_archived
+### mark\_as\_archived
 
-Archives specific Source Servers by setting the SourceServer.isArchived
-property to true for specified SourceServers by ID.
+Archives specific Source Servers by setting the SourceServer.isArchived property
+to true for specified SourceServers by ID.
 
-Type annotations for `boto3.client("mgn").mark_as_archived` method.
+Type annotations and code completion for `#!python boto3.client("mgn").mark_as_archived` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.mark_as_archived)
 
-Boto3 documentation:
-[mgn.Client.mark_as_archived](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.mark_as_archived)
+```python title="Method definition"
+def mark_as_archived(
+    self,
+    *,
+    sourceServerID: str,
+) -> SourceServerResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[MarkAsArchivedRequestRequestTypeDef](./type_defs.md#markasarchivedrequestrequesttypedef).
+1. See [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: MarkAsArchivedRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+parent.mark_as_archived(**kwargs)
+```
 
-<a id="retry\_data\_replication"></a>
+1. See [:material-code-braces: MarkAsArchivedRequestRequestTypeDef](./type_defs.md#markasarchivedrequestrequesttypedef) 
 
-### retry_data_replication
+### retry\_data\_replication
 
 Causes the data replication initiation sequence to begin immediately upon next
 Handshake for specified SourceServer IDs, regardless of when the previous
 initiation started.
 
-Type annotations for `boto3.client("mgn").retry_data_replication` method.
+Type annotations and code completion for `#!python boto3.client("mgn").retry_data_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.retry_data_replication)
 
-Boto3 documentation:
-[mgn.Client.retry_data_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.retry_data_replication)
+```python title="Method definition"
+def retry_data_replication(
+    self,
+    *,
+    sourceServerID: str,
+) -> SourceServerResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RetryDataReplicationRequestRequestTypeDef](./type_defs.md#retrydatareplicationrequestrequesttypedef).
+1. See [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RetryDataReplicationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+parent.retry_data_replication(**kwargs)
+```
 
-<a id="start\_cutover"></a>
+1. See [:material-code-braces: RetryDataReplicationRequestRequestTypeDef](./type_defs.md#retrydatareplicationrequestrequesttypedef) 
 
-### start_cutover
+### start\_cutover
 
 Launches a Cutover Instance for specific Source Servers.
 
-Type annotations for `boto3.client("mgn").start_cutover` method.
+Type annotations and code completion for `#!python boto3.client("mgn").start_cutover` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_cutover)
 
-Boto3 documentation:
-[mgn.Client.start_cutover](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_cutover)
+```python title="Method definition"
+def start_cutover(
+    self,
+    *,
+    sourceServerIDs: Sequence[str],
+    tags: Mapping[str, str] = ...,
+) -> StartCutoverResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartCutoverRequestRequestTypeDef](./type_defs.md#startcutoverrequestrequesttypedef).
+1. See [:material-code-braces: StartCutoverResponseTypeDef](./type_defs.md#startcutoverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerIDs`: `Sequence`\[`str`\] *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartCutoverRequestRequestTypeDef = {  # (1)
+    "sourceServerIDs": ...,
+}
 
-Returns
-[StartCutoverResponseTypeDef](./type_defs.md#startcutoverresponsetypedef).
+parent.start_cutover(**kwargs)
+```
 
-<a id="start\_replication"></a>
+1. See [:material-code-braces: StartCutoverRequestRequestTypeDef](./type_defs.md#startcutoverrequestrequesttypedef) 
 
-### start_replication
+### start\_replication
 
 Starts replication for SNAPSHOT_SHIPPING agents.
 
-Type annotations for `boto3.client("mgn").start_replication` method.
+Type annotations and code completion for `#!python boto3.client("mgn").start_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_replication)
 
-Boto3 documentation:
-[mgn.Client.start_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_replication)
+```python title="Method definition"
+def start_replication(
+    self,
+    *,
+    sourceServerID: str,
+) -> SourceServerResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartReplicationRequestRequestTypeDef](./type_defs.md#startreplicationrequestrequesttypedef).
+1. See [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartReplicationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+parent.start_replication(**kwargs)
+```
 
-<a id="start\_test"></a>
+1. See [:material-code-braces: StartReplicationRequestRequestTypeDef](./type_defs.md#startreplicationrequestrequesttypedef) 
 
-### start_test
+### start\_test
 
 Launches a Test Instance for specific Source Servers.
 
-Type annotations for `boto3.client("mgn").start_test` method.
+Type annotations and code completion for `#!python boto3.client("mgn").start_test` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_test)
 
-Boto3 documentation:
-[mgn.Client.start_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.start_test)
+```python title="Method definition"
+def start_test(
+    self,
+    *,
+    sourceServerIDs: Sequence[str],
+    tags: Mapping[str, str] = ...,
+) -> StartTestResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartTestRequestRequestTypeDef](./type_defs.md#starttestrequestrequesttypedef).
+1. See [:material-code-braces: StartTestResponseTypeDef](./type_defs.md#starttestresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerIDs`: `Sequence`\[`str`\] *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartTestRequestRequestTypeDef = {  # (1)
+    "sourceServerIDs": ...,
+}
 
-Returns [StartTestResponseTypeDef](./type_defs.md#starttestresponsetypedef).
+parent.start_test(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartTestRequestRequestTypeDef](./type_defs.md#starttestrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or overwrites only the specified tags for the specified Application
 Migration Service resource or resources.
 
-Type annotations for `boto3.client("mgn").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mgn").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.tag_resource)
 
-Boto3 documentation:
-[mgn.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-<a id="terminate\_target\_instances"></a>
+parent.tag_resource(**kwargs)
+```
 
-### terminate_target_instances
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### terminate\_target\_instances
 
 Starts a job that terminates specific launched EC2 Test and Cutover instances.
 
-Type annotations for `boto3.client("mgn").terminate_target_instances` method.
+Type annotations and code completion for `#!python boto3.client("mgn").terminate_target_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.terminate_target_instances)
 
-Boto3 documentation:
-[mgn.Client.terminate_target_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.terminate_target_instances)
+```python title="Method definition"
+def terminate_target_instances(
+    self,
+    *,
+    sourceServerIDs: Sequence[str],
+    tags: Mapping[str, str] = ...,
+) -> TerminateTargetInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TerminateTargetInstancesRequestRequestTypeDef](./type_defs.md#terminatetargetinstancesrequestrequesttypedef).
+1. See [:material-code-braces: TerminateTargetInstancesResponseTypeDef](./type_defs.md#terminatetargetinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerIDs`: `Sequence`\[`str`\] *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: TerminateTargetInstancesRequestRequestTypeDef = {  # (1)
+    "sourceServerIDs": ...,
+}
 
-Returns
-[TerminateTargetInstancesResponseTypeDef](./type_defs.md#terminatetargetinstancesresponsetypedef).
+parent.terminate_target_instances(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TerminateTargetInstancesRequestRequestTypeDef](./type_defs.md#terminatetargetinstancesrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes the specified set of tags from the specified set of Application
 Migration Service resources.
 
-Type annotations for `boto3.client("mgn").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mgn").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.untag_resource)
 
-Boto3 documentation:
-[mgn.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-<a id="update\_launch\_configuration"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_launch_configuration
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_launch\_configuration
 
 Updates multiple LaunchConfigurations by Source Server ID.
 
-Type annotations for `boto3.client("mgn").update_launch_configuration` method.
+Type annotations and code completion for `#!python boto3.client("mgn").update_launch_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_launch_configuration)
 
-Boto3 documentation:
-[mgn.Client.update_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_launch_configuration)
+```python title="Method definition"
+def update_launch_configuration(
+    self,
+    *,
+    sourceServerID: str,
+    bootMode: BootModeType = ...,  # (1)
+    copyPrivateIp: bool = ...,
+    copyTags: bool = ...,
+    launchDisposition: LaunchDispositionType = ...,  # (2)
+    licensing: LicensingTypeDef = ...,  # (3)
+    name: str = ...,
+    targetInstanceTypeRightSizingMethod: TargetInstanceTypeRightSizingMethodType = ...,  # (4)
+) -> LaunchConfigurationTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLaunchConfigurationRequestRequestTypeDef](./type_defs.md#updatelaunchconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: BootModeType](./literals.md#bootmodetype) 
+2. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+3. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+4. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
+5. See [:material-code-braces: LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
-- `bootMode`: [BootModeType](./literals.md#bootmodetype)
-- `copyPrivateIp`: `bool`
-- `copyTags`: `bool`
-- `launchDisposition`:
-  [LaunchDispositionType](./literals.md#launchdispositiontype)
-- `licensing`: [LicensingTypeDef](./type_defs.md#licensingtypedef)
-- `name`: `str`
-- `targetInstanceTypeRightSizingMethod`:
-  [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
+```python title="Usage example with kwargs"
+kwargs: UpdateLaunchConfigurationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
+parent.update_launch_configuration(**kwargs)
+```
 
-<a id="update\_replication\_configuration"></a>
+1. See [:material-code-braces: UpdateLaunchConfigurationRequestRequestTypeDef](./type_defs.md#updatelaunchconfigurationrequestrequesttypedef) 
 
-### update_replication_configuration
+### update\_replication\_configuration
 
 Allows you to update multiple ReplicationConfigurations by Source Server ID.
 
-Type annotations for `boto3.client("mgn").update_replication_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("mgn").update_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration)
 
-Boto3 documentation:
-[mgn.Client.update_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration)
+```python title="Method definition"
+def update_replication_configuration(
+    self,
+    *,
+    sourceServerID: str,
+    associateDefaultSecurityGroup: bool = ...,
+    bandwidthThrottling: int = ...,
+    createPublicIP: bool = ...,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType = ...,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType = ...,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType = ...,  # (3)
+    ebsEncryptionKeyArn: str = ...,
+    name: str = ...,
+    replicatedDisks: Sequence[ReplicationConfigurationReplicatedDiskTypeDef] = ...,  # (4)
+    replicationServerInstanceType: str = ...,
+    replicationServersSecurityGroupsIDs: Sequence[str] = ...,
+    stagingAreaSubnetId: str = ...,
+    stagingAreaTags: Mapping[str, str] = ...,
+    useDedicatedReplicationServer: bool = ...,
+) -> ReplicationConfigurationTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef) 
+5. See [:material-code-braces: ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
-- `associateDefaultSecurityGroup`: `bool`
-- `bandwidthThrottling`: `int`
-- `createPublicIP`: `bool`
-- `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
-- `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
-- `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
-- `ebsEncryptionKeyArn`: `str`
-- `name`: `str`
-- `replicatedDisks`:
-  `Sequence`\[[ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)\]
-- `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\]
-- `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Mapping`\[`str`, `str`\]
-- `useDedicatedReplicationServer`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
+parent.update_replication_configuration(**kwargs)
+```
 
-<a id="update\_replication\_configuration\_template"></a>
+1. See [:material-code-braces: UpdateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationrequestrequesttypedef) 
 
-### update_replication_configuration_template
+### update\_replication\_configuration\_template
 
 Updates multiple ReplicationConfigurationTemplates by ID.
 
-Type annotations for
-`boto3.client("mgn").update_replication_configuration_template` method.
+Type annotations and code completion for `#!python boto3.client("mgn").update_replication_configuration_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration_template)
 
-Boto3 documentation:
-[mgn.Client.update_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_replication_configuration_template)
+```python title="Method definition"
+def update_replication_configuration_template(
+    self,
+    *,
+    replicationConfigurationTemplateID: str,
+    arn: str = ...,
+    associateDefaultSecurityGroup: bool = ...,
+    bandwidthThrottling: int = ...,
+    createPublicIP: bool = ...,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType = ...,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType = ...,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType = ...,  # (3)
+    ebsEncryptionKeyArn: str = ...,
+    replicationServerInstanceType: str = ...,
+    replicationServersSecurityGroupsIDs: Sequence[str] = ...,
+    stagingAreaSubnetId: str = ...,
+    stagingAreaTags: Mapping[str, str] = ...,
+    useDedicatedReplicationServer: bool = ...,
+) -> ReplicationConfigurationTemplateResponseMetadataTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequestrequesttypedef).
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `replicationConfigurationTemplateID`: `str` *(required)*
-- `arn`: `str`
-- `associateDefaultSecurityGroup`: `bool`
-- `bandwidthThrottling`: `int`
-- `createPublicIP`: `bool`
-- `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
-- `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
-- `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
-- `ebsEncryptionKeyArn`: `str`
-- `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\]
-- `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Mapping`\[`str`, `str`\]
-- `useDedicatedReplicationServer`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateReplicationConfigurationTemplateRequestRequestTypeDef = {  # (1)
+    "replicationConfigurationTemplateID": ...,
+}
 
-Returns
-[ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
+parent.update_replication_configuration_template(**kwargs)
+```
 
-<a id="update\_source\_server\_replication\_type"></a>
+1. See [:material-code-braces: UpdateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequestrequesttypedef) 
 
-### update_source_server_replication_type
+### update\_source\_server\_replication\_type
 
 Allows you to change between the AGENT_BASED replication type and the
 SNAPSHOT_SHIPPING replication type.
 
-Type annotations for
-`boto3.client("mgn").update_source_server_replication_type` method.
+Type annotations and code completion for `#!python boto3.client("mgn").update_source_server_replication_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_source_server_replication_type)
 
-Boto3 documentation:
-[mgn.Client.update_source_server_replication_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client.update_source_server_replication_type)
+```python title="Method definition"
+def update_source_server_replication_type(
+    self,
+    *,
+    replicationType: ReplicationTypeType,  # (1)
+    sourceServerID: str,
+) -> SourceServerResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSourceServerReplicationTypeRequestRequestTypeDef](./type_defs.md#updatesourceserverreplicationtyperequestrequesttypedef).
+1. See [:material-code-brackets: ReplicationTypeType](./literals.md#replicationtypetype) 
+2. See [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `replicationType`: [ReplicationTypeType](./literals.md#replicationtypetype)
-  *(required)*
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSourceServerReplicationTypeRequestRequestTypeDef = {  # (1)
+    "replicationType": ...,
+    "sourceServerID": ...,
+}
 
-Returns
-[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+parent.update_source_server_replication_type(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateSourceServerReplicationTypeRequestRequestTypeDef](./type_defs.md#updatesourceserverreplicationtyperequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mgn").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("mgn").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_job_log_items")` ->
-  [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
-- `client.get_paginator("describe_jobs")` ->
-  [DescribeJobsPaginator](./paginators.md#describejobspaginator)
-- `client.get_paginator("describe_replication_configuration_templates")` ->
-  [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
-- `client.get_paginator("describe_source_servers")` ->
-  [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
-- `client.get_paginator("describe_vcenter_clients")` ->
-  [DescribeVcenterClientsPaginator](./paginators.md#describevcenterclientspaginator)
+- `client.get_paginator("describe_job_log_items")` -> [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
+- `client.get_paginator("describe_jobs")` -> [DescribeJobsPaginator](./paginators.md#describejobspaginator)
+- `client.get_paginator("describe_replication_configuration_templates")` -> [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
+- `client.get_paginator("describe_source_servers")` -> [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+- `client.get_paginator("describe_vcenter_clients")` -> [DescribeVcenterClientsPaginator](./paginators.md#describevcenterclientspaginator)
+
+
+

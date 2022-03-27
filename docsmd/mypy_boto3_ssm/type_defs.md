@@ -1,7419 +1,9919 @@
-<a id="typed-dictionaries-for-boto3-ssm-module"></a>
-
-# Typed dictionaries for boto3 SSM module
+# Typed dictionaries
 
 > [Index](../README.md) > [SSM](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
-type annotations stubs module
-[mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SSM module](#typed-dictionaries-for-boto3-ssm-module)
-  - [AccountSharingInfoTypeDef](#accountsharinginfotypedef)
-  - [ActivationTypeDef](#activationtypedef)
-  - [AddTagsToResourceRequestRequestTypeDef](#addtagstoresourcerequestrequesttypedef)
-  - [AssociateOpsItemRelatedItemRequestRequestTypeDef](#associateopsitemrelateditemrequestrequesttypedef)
-  - [AssociateOpsItemRelatedItemResponseTypeDef](#associateopsitemrelateditemresponsetypedef)
-  - [AssociationDescriptionTypeDef](#associationdescriptiontypedef)
-  - [AssociationExecutionFilterTypeDef](#associationexecutionfiltertypedef)
-  - [AssociationExecutionTargetTypeDef](#associationexecutiontargettypedef)
-  - [AssociationExecutionTargetsFilterTypeDef](#associationexecutiontargetsfiltertypedef)
-  - [AssociationExecutionTypeDef](#associationexecutiontypedef)
-  - [AssociationFilterTypeDef](#associationfiltertypedef)
-  - [AssociationOverviewTypeDef](#associationoverviewtypedef)
-  - [AssociationStatusTypeDef](#associationstatustypedef)
-  - [AssociationTypeDef](#associationtypedef)
-  - [AssociationVersionInfoTypeDef](#associationversioninfotypedef)
-  - [AttachmentContentTypeDef](#attachmentcontenttypedef)
-  - [AttachmentInformationTypeDef](#attachmentinformationtypedef)
-  - [AttachmentsSourceTypeDef](#attachmentssourcetypedef)
-  - [AutomationExecutionFilterTypeDef](#automationexecutionfiltertypedef)
-  - [AutomationExecutionMetadataTypeDef](#automationexecutionmetadatatypedef)
-  - [AutomationExecutionTypeDef](#automationexecutiontypedef)
-  - [BaselineOverrideTypeDef](#baselineoverridetypedef)
-  - [CancelCommandRequestRequestTypeDef](#cancelcommandrequestrequesttypedef)
-  - [CancelMaintenanceWindowExecutionRequestRequestTypeDef](#cancelmaintenancewindowexecutionrequestrequesttypedef)
-  - [CancelMaintenanceWindowExecutionResultTypeDef](#cancelmaintenancewindowexecutionresulttypedef)
-  - [CloudWatchOutputConfigTypeDef](#cloudwatchoutputconfigtypedef)
-  - [CommandFilterTypeDef](#commandfiltertypedef)
-  - [CommandInvocationTypeDef](#commandinvocationtypedef)
-  - [CommandPluginTypeDef](#commandplugintypedef)
-  - [CommandTypeDef](#commandtypedef)
-  - [ComplianceExecutionSummaryTypeDef](#complianceexecutionsummarytypedef)
-  - [ComplianceItemEntryTypeDef](#complianceitementrytypedef)
-  - [ComplianceItemTypeDef](#complianceitemtypedef)
-  - [ComplianceStringFilterTypeDef](#compliancestringfiltertypedef)
-  - [ComplianceSummaryItemTypeDef](#compliancesummaryitemtypedef)
-  - [CompliantSummaryTypeDef](#compliantsummarytypedef)
-  - [CreateActivationRequestRequestTypeDef](#createactivationrequestrequesttypedef)
-  - [CreateActivationResultTypeDef](#createactivationresulttypedef)
-  - [CreateAssociationBatchRequestEntryTypeDef](#createassociationbatchrequestentrytypedef)
-  - [CreateAssociationBatchRequestRequestTypeDef](#createassociationbatchrequestrequesttypedef)
-  - [CreateAssociationBatchResultTypeDef](#createassociationbatchresulttypedef)
-  - [CreateAssociationRequestRequestTypeDef](#createassociationrequestrequesttypedef)
-  - [CreateAssociationResultTypeDef](#createassociationresulttypedef)
-  - [CreateDocumentRequestRequestTypeDef](#createdocumentrequestrequesttypedef)
-  - [CreateDocumentResultTypeDef](#createdocumentresulttypedef)
-  - [CreateMaintenanceWindowRequestRequestTypeDef](#createmaintenancewindowrequestrequesttypedef)
-  - [CreateMaintenanceWindowResultTypeDef](#createmaintenancewindowresulttypedef)
-  - [CreateOpsItemRequestRequestTypeDef](#createopsitemrequestrequesttypedef)
-  - [CreateOpsItemResponseTypeDef](#createopsitemresponsetypedef)
-  - [CreateOpsMetadataRequestRequestTypeDef](#createopsmetadatarequestrequesttypedef)
-  - [CreateOpsMetadataResultTypeDef](#createopsmetadataresulttypedef)
-  - [CreatePatchBaselineRequestRequestTypeDef](#createpatchbaselinerequestrequesttypedef)
-  - [CreatePatchBaselineResultTypeDef](#createpatchbaselineresulttypedef)
-  - [CreateResourceDataSyncRequestRequestTypeDef](#createresourcedatasyncrequestrequesttypedef)
-  - [DeleteActivationRequestRequestTypeDef](#deleteactivationrequestrequesttypedef)
-  - [DeleteAssociationRequestRequestTypeDef](#deleteassociationrequestrequesttypedef)
-  - [DeleteDocumentRequestRequestTypeDef](#deletedocumentrequestrequesttypedef)
-  - [DeleteInventoryRequestRequestTypeDef](#deleteinventoryrequestrequesttypedef)
-  - [DeleteInventoryResultTypeDef](#deleteinventoryresulttypedef)
-  - [DeleteMaintenanceWindowRequestRequestTypeDef](#deletemaintenancewindowrequestrequesttypedef)
-  - [DeleteMaintenanceWindowResultTypeDef](#deletemaintenancewindowresulttypedef)
-  - [DeleteOpsMetadataRequestRequestTypeDef](#deleteopsmetadatarequestrequesttypedef)
-  - [DeleteParameterRequestRequestTypeDef](#deleteparameterrequestrequesttypedef)
-  - [DeleteParametersRequestRequestTypeDef](#deleteparametersrequestrequesttypedef)
-  - [DeleteParametersResultTypeDef](#deleteparametersresulttypedef)
-  - [DeletePatchBaselineRequestRequestTypeDef](#deletepatchbaselinerequestrequesttypedef)
-  - [DeletePatchBaselineResultTypeDef](#deletepatchbaselineresulttypedef)
-  - [DeleteResourceDataSyncRequestRequestTypeDef](#deleteresourcedatasyncrequestrequesttypedef)
-  - [DeregisterManagedInstanceRequestRequestTypeDef](#deregistermanagedinstancerequestrequesttypedef)
-  - [DeregisterPatchBaselineForPatchGroupRequestRequestTypeDef](#deregisterpatchbaselineforpatchgrouprequestrequesttypedef)
-  - [DeregisterPatchBaselineForPatchGroupResultTypeDef](#deregisterpatchbaselineforpatchgroupresulttypedef)
-  - [DeregisterTargetFromMaintenanceWindowRequestRequestTypeDef](#deregistertargetfrommaintenancewindowrequestrequesttypedef)
-  - [DeregisterTargetFromMaintenanceWindowResultTypeDef](#deregistertargetfrommaintenancewindowresulttypedef)
-  - [DeregisterTaskFromMaintenanceWindowRequestRequestTypeDef](#deregistertaskfrommaintenancewindowrequestrequesttypedef)
-  - [DeregisterTaskFromMaintenanceWindowResultTypeDef](#deregistertaskfrommaintenancewindowresulttypedef)
-  - [DescribeActivationsFilterTypeDef](#describeactivationsfiltertypedef)
-  - [DescribeActivationsRequestRequestTypeDef](#describeactivationsrequestrequesttypedef)
-  - [DescribeActivationsResultTypeDef](#describeactivationsresulttypedef)
-  - [DescribeAssociationExecutionTargetsRequestRequestTypeDef](#describeassociationexecutiontargetsrequestrequesttypedef)
-  - [DescribeAssociationExecutionTargetsResultTypeDef](#describeassociationexecutiontargetsresulttypedef)
-  - [DescribeAssociationExecutionsRequestRequestTypeDef](#describeassociationexecutionsrequestrequesttypedef)
-  - [DescribeAssociationExecutionsResultTypeDef](#describeassociationexecutionsresulttypedef)
-  - [DescribeAssociationRequestRequestTypeDef](#describeassociationrequestrequesttypedef)
-  - [DescribeAssociationResultTypeDef](#describeassociationresulttypedef)
-  - [DescribeAutomationExecutionsRequestRequestTypeDef](#describeautomationexecutionsrequestrequesttypedef)
-  - [DescribeAutomationExecutionsResultTypeDef](#describeautomationexecutionsresulttypedef)
-  - [DescribeAutomationStepExecutionsRequestRequestTypeDef](#describeautomationstepexecutionsrequestrequesttypedef)
-  - [DescribeAutomationStepExecutionsResultTypeDef](#describeautomationstepexecutionsresulttypedef)
-  - [DescribeAvailablePatchesRequestRequestTypeDef](#describeavailablepatchesrequestrequesttypedef)
-  - [DescribeAvailablePatchesResultTypeDef](#describeavailablepatchesresulttypedef)
-  - [DescribeDocumentPermissionRequestRequestTypeDef](#describedocumentpermissionrequestrequesttypedef)
-  - [DescribeDocumentPermissionResponseTypeDef](#describedocumentpermissionresponsetypedef)
-  - [DescribeDocumentRequestRequestTypeDef](#describedocumentrequestrequesttypedef)
-  - [DescribeDocumentResultTypeDef](#describedocumentresulttypedef)
-  - [DescribeEffectiveInstanceAssociationsRequestRequestTypeDef](#describeeffectiveinstanceassociationsrequestrequesttypedef)
-  - [DescribeEffectiveInstanceAssociationsResultTypeDef](#describeeffectiveinstanceassociationsresulttypedef)
-  - [DescribeEffectivePatchesForPatchBaselineRequestRequestTypeDef](#describeeffectivepatchesforpatchbaselinerequestrequesttypedef)
-  - [DescribeEffectivePatchesForPatchBaselineResultTypeDef](#describeeffectivepatchesforpatchbaselineresulttypedef)
-  - [DescribeInstanceAssociationsStatusRequestRequestTypeDef](#describeinstanceassociationsstatusrequestrequesttypedef)
-  - [DescribeInstanceAssociationsStatusResultTypeDef](#describeinstanceassociationsstatusresulttypedef)
-  - [DescribeInstanceInformationRequestRequestTypeDef](#describeinstanceinformationrequestrequesttypedef)
-  - [DescribeInstanceInformationResultTypeDef](#describeinstanceinformationresulttypedef)
-  - [DescribeInstancePatchStatesForPatchGroupRequestRequestTypeDef](#describeinstancepatchstatesforpatchgrouprequestrequesttypedef)
-  - [DescribeInstancePatchStatesForPatchGroupResultTypeDef](#describeinstancepatchstatesforpatchgroupresulttypedef)
-  - [DescribeInstancePatchStatesRequestRequestTypeDef](#describeinstancepatchstatesrequestrequesttypedef)
-  - [DescribeInstancePatchStatesResultTypeDef](#describeinstancepatchstatesresulttypedef)
-  - [DescribeInstancePatchesRequestRequestTypeDef](#describeinstancepatchesrequestrequesttypedef)
-  - [DescribeInstancePatchesResultTypeDef](#describeinstancepatchesresulttypedef)
-  - [DescribeInventoryDeletionsRequestRequestTypeDef](#describeinventorydeletionsrequestrequesttypedef)
-  - [DescribeInventoryDeletionsResultTypeDef](#describeinventorydeletionsresulttypedef)
-  - [DescribeMaintenanceWindowExecutionTaskInvocationsRequestRequestTypeDef](#describemaintenancewindowexecutiontaskinvocationsrequestrequesttypedef)
-  - [DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](#describemaintenancewindowexecutiontaskinvocationsresulttypedef)
-  - [DescribeMaintenanceWindowExecutionTasksRequestRequestTypeDef](#describemaintenancewindowexecutiontasksrequestrequesttypedef)
-  - [DescribeMaintenanceWindowExecutionTasksResultTypeDef](#describemaintenancewindowexecutiontasksresulttypedef)
-  - [DescribeMaintenanceWindowExecutionsRequestRequestTypeDef](#describemaintenancewindowexecutionsrequestrequesttypedef)
-  - [DescribeMaintenanceWindowExecutionsResultTypeDef](#describemaintenancewindowexecutionsresulttypedef)
-  - [DescribeMaintenanceWindowScheduleRequestRequestTypeDef](#describemaintenancewindowschedulerequestrequesttypedef)
-  - [DescribeMaintenanceWindowScheduleResultTypeDef](#describemaintenancewindowscheduleresulttypedef)
-  - [DescribeMaintenanceWindowTargetsRequestRequestTypeDef](#describemaintenancewindowtargetsrequestrequesttypedef)
-  - [DescribeMaintenanceWindowTargetsResultTypeDef](#describemaintenancewindowtargetsresulttypedef)
-  - [DescribeMaintenanceWindowTasksRequestRequestTypeDef](#describemaintenancewindowtasksrequestrequesttypedef)
-  - [DescribeMaintenanceWindowTasksResultTypeDef](#describemaintenancewindowtasksresulttypedef)
-  - [DescribeMaintenanceWindowsForTargetRequestRequestTypeDef](#describemaintenancewindowsfortargetrequestrequesttypedef)
-  - [DescribeMaintenanceWindowsForTargetResultTypeDef](#describemaintenancewindowsfortargetresulttypedef)
-  - [DescribeMaintenanceWindowsRequestRequestTypeDef](#describemaintenancewindowsrequestrequesttypedef)
-  - [DescribeMaintenanceWindowsResultTypeDef](#describemaintenancewindowsresulttypedef)
-  - [DescribeOpsItemsRequestRequestTypeDef](#describeopsitemsrequestrequesttypedef)
-  - [DescribeOpsItemsResponseTypeDef](#describeopsitemsresponsetypedef)
-  - [DescribeParametersRequestRequestTypeDef](#describeparametersrequestrequesttypedef)
-  - [DescribeParametersResultTypeDef](#describeparametersresulttypedef)
-  - [DescribePatchBaselinesRequestRequestTypeDef](#describepatchbaselinesrequestrequesttypedef)
-  - [DescribePatchBaselinesResultTypeDef](#describepatchbaselinesresulttypedef)
-  - [DescribePatchGroupStateRequestRequestTypeDef](#describepatchgroupstaterequestrequesttypedef)
-  - [DescribePatchGroupStateResultTypeDef](#describepatchgroupstateresulttypedef)
-  - [DescribePatchGroupsRequestRequestTypeDef](#describepatchgroupsrequestrequesttypedef)
-  - [DescribePatchGroupsResultTypeDef](#describepatchgroupsresulttypedef)
-  - [DescribePatchPropertiesRequestRequestTypeDef](#describepatchpropertiesrequestrequesttypedef)
-  - [DescribePatchPropertiesResultTypeDef](#describepatchpropertiesresulttypedef)
-  - [DescribeSessionsRequestRequestTypeDef](#describesessionsrequestrequesttypedef)
-  - [DescribeSessionsResponseTypeDef](#describesessionsresponsetypedef)
-  - [DisassociateOpsItemRelatedItemRequestRequestTypeDef](#disassociateopsitemrelateditemrequestrequesttypedef)
-  - [DocumentDefaultVersionDescriptionTypeDef](#documentdefaultversiondescriptiontypedef)
-  - [DocumentDescriptionTypeDef](#documentdescriptiontypedef)
-  - [DocumentFilterTypeDef](#documentfiltertypedef)
-  - [DocumentIdentifierTypeDef](#documentidentifiertypedef)
-  - [DocumentKeyValuesFilterTypeDef](#documentkeyvaluesfiltertypedef)
-  - [DocumentMetadataResponseInfoTypeDef](#documentmetadataresponseinfotypedef)
-  - [DocumentParameterTypeDef](#documentparametertypedef)
-  - [DocumentRequiresTypeDef](#documentrequirestypedef)
-  - [DocumentReviewCommentSourceTypeDef](#documentreviewcommentsourcetypedef)
-  - [DocumentReviewerResponseSourceTypeDef](#documentreviewerresponsesourcetypedef)
-  - [DocumentReviewsTypeDef](#documentreviewstypedef)
-  - [DocumentVersionInfoTypeDef](#documentversioninfotypedef)
-  - [EffectivePatchTypeDef](#effectivepatchtypedef)
-  - [FailedCreateAssociationTypeDef](#failedcreateassociationtypedef)
-  - [FailureDetailsTypeDef](#failuredetailstypedef)
-  - [GetAutomationExecutionRequestRequestTypeDef](#getautomationexecutionrequestrequesttypedef)
-  - [GetAutomationExecutionResultTypeDef](#getautomationexecutionresulttypedef)
-  - [GetCalendarStateRequestRequestTypeDef](#getcalendarstaterequestrequesttypedef)
-  - [GetCalendarStateResponseTypeDef](#getcalendarstateresponsetypedef)
-  - [GetCommandInvocationRequestRequestTypeDef](#getcommandinvocationrequestrequesttypedef)
-  - [GetCommandInvocationResultTypeDef](#getcommandinvocationresulttypedef)
-  - [GetConnectionStatusRequestRequestTypeDef](#getconnectionstatusrequestrequesttypedef)
-  - [GetConnectionStatusResponseTypeDef](#getconnectionstatusresponsetypedef)
-  - [GetDefaultPatchBaselineRequestRequestTypeDef](#getdefaultpatchbaselinerequestrequesttypedef)
-  - [GetDefaultPatchBaselineResultTypeDef](#getdefaultpatchbaselineresulttypedef)
-  - [GetDeployablePatchSnapshotForInstanceRequestRequestTypeDef](#getdeployablepatchsnapshotforinstancerequestrequesttypedef)
-  - [GetDeployablePatchSnapshotForInstanceResultTypeDef](#getdeployablepatchsnapshotforinstanceresulttypedef)
-  - [GetDocumentRequestRequestTypeDef](#getdocumentrequestrequesttypedef)
-  - [GetDocumentResultTypeDef](#getdocumentresulttypedef)
-  - [GetInventoryRequestRequestTypeDef](#getinventoryrequestrequesttypedef)
-  - [GetInventoryResultTypeDef](#getinventoryresulttypedef)
-  - [GetInventorySchemaRequestRequestTypeDef](#getinventoryschemarequestrequesttypedef)
-  - [GetInventorySchemaResultTypeDef](#getinventoryschemaresulttypedef)
-  - [GetMaintenanceWindowExecutionRequestRequestTypeDef](#getmaintenancewindowexecutionrequestrequesttypedef)
-  - [GetMaintenanceWindowExecutionResultTypeDef](#getmaintenancewindowexecutionresulttypedef)
-  - [GetMaintenanceWindowExecutionTaskInvocationRequestRequestTypeDef](#getmaintenancewindowexecutiontaskinvocationrequestrequesttypedef)
-  - [GetMaintenanceWindowExecutionTaskInvocationResultTypeDef](#getmaintenancewindowexecutiontaskinvocationresulttypedef)
-  - [GetMaintenanceWindowExecutionTaskRequestRequestTypeDef](#getmaintenancewindowexecutiontaskrequestrequesttypedef)
-  - [GetMaintenanceWindowExecutionTaskResultTypeDef](#getmaintenancewindowexecutiontaskresulttypedef)
-  - [GetMaintenanceWindowRequestRequestTypeDef](#getmaintenancewindowrequestrequesttypedef)
-  - [GetMaintenanceWindowResultTypeDef](#getmaintenancewindowresulttypedef)
-  - [GetMaintenanceWindowTaskRequestRequestTypeDef](#getmaintenancewindowtaskrequestrequesttypedef)
-  - [GetMaintenanceWindowTaskResultTypeDef](#getmaintenancewindowtaskresulttypedef)
-  - [GetOpsItemRequestRequestTypeDef](#getopsitemrequestrequesttypedef)
-  - [GetOpsItemResponseTypeDef](#getopsitemresponsetypedef)
-  - [GetOpsMetadataRequestRequestTypeDef](#getopsmetadatarequestrequesttypedef)
-  - [GetOpsMetadataResultTypeDef](#getopsmetadataresulttypedef)
-  - [GetOpsSummaryRequestRequestTypeDef](#getopssummaryrequestrequesttypedef)
-  - [GetOpsSummaryResultTypeDef](#getopssummaryresulttypedef)
-  - [GetParameterHistoryRequestRequestTypeDef](#getparameterhistoryrequestrequesttypedef)
-  - [GetParameterHistoryResultTypeDef](#getparameterhistoryresulttypedef)
-  - [GetParameterRequestRequestTypeDef](#getparameterrequestrequesttypedef)
-  - [GetParameterResultTypeDef](#getparameterresulttypedef)
-  - [GetParametersByPathRequestRequestTypeDef](#getparametersbypathrequestrequesttypedef)
-  - [GetParametersByPathResultTypeDef](#getparametersbypathresulttypedef)
-  - [GetParametersRequestRequestTypeDef](#getparametersrequestrequesttypedef)
-  - [GetParametersResultTypeDef](#getparametersresulttypedef)
-  - [GetPatchBaselineForPatchGroupRequestRequestTypeDef](#getpatchbaselineforpatchgrouprequestrequesttypedef)
-  - [GetPatchBaselineForPatchGroupResultTypeDef](#getpatchbaselineforpatchgroupresulttypedef)
-  - [GetPatchBaselineRequestRequestTypeDef](#getpatchbaselinerequestrequesttypedef)
-  - [GetPatchBaselineResultTypeDef](#getpatchbaselineresulttypedef)
-  - [GetServiceSettingRequestRequestTypeDef](#getservicesettingrequestrequesttypedef)
-  - [GetServiceSettingResultTypeDef](#getservicesettingresulttypedef)
-  - [InstanceAggregatedAssociationOverviewTypeDef](#instanceaggregatedassociationoverviewtypedef)
-  - [InstanceAssociationOutputLocationTypeDef](#instanceassociationoutputlocationtypedef)
-  - [InstanceAssociationOutputUrlTypeDef](#instanceassociationoutputurltypedef)
-  - [InstanceAssociationStatusInfoTypeDef](#instanceassociationstatusinfotypedef)
-  - [InstanceAssociationTypeDef](#instanceassociationtypedef)
-  - [InstanceInformationFilterTypeDef](#instanceinformationfiltertypedef)
-  - [InstanceInformationStringFilterTypeDef](#instanceinformationstringfiltertypedef)
-  - [InstanceInformationTypeDef](#instanceinformationtypedef)
-  - [InstancePatchStateFilterTypeDef](#instancepatchstatefiltertypedef)
-  - [InstancePatchStateTypeDef](#instancepatchstatetypedef)
-  - [InventoryAggregatorTypeDef](#inventoryaggregatortypedef)
-  - [InventoryDeletionStatusItemTypeDef](#inventorydeletionstatusitemtypedef)
-  - [InventoryDeletionSummaryItemTypeDef](#inventorydeletionsummaryitemtypedef)
-  - [InventoryDeletionSummaryTypeDef](#inventorydeletionsummarytypedef)
-  - [InventoryFilterTypeDef](#inventoryfiltertypedef)
-  - [InventoryGroupTypeDef](#inventorygrouptypedef)
-  - [InventoryItemAttributeTypeDef](#inventoryitemattributetypedef)
-  - [InventoryItemSchemaTypeDef](#inventoryitemschematypedef)
-  - [InventoryItemTypeDef](#inventoryitemtypedef)
-  - [InventoryResultEntityTypeDef](#inventoryresultentitytypedef)
-  - [InventoryResultItemTypeDef](#inventoryresultitemtypedef)
-  - [LabelParameterVersionRequestRequestTypeDef](#labelparameterversionrequestrequesttypedef)
-  - [LabelParameterVersionResultTypeDef](#labelparameterversionresulttypedef)
-  - [ListAssociationVersionsRequestRequestTypeDef](#listassociationversionsrequestrequesttypedef)
-  - [ListAssociationVersionsResultTypeDef](#listassociationversionsresulttypedef)
-  - [ListAssociationsRequestRequestTypeDef](#listassociationsrequestrequesttypedef)
-  - [ListAssociationsResultTypeDef](#listassociationsresulttypedef)
-  - [ListCommandInvocationsRequestRequestTypeDef](#listcommandinvocationsrequestrequesttypedef)
-  - [ListCommandInvocationsResultTypeDef](#listcommandinvocationsresulttypedef)
-  - [ListCommandsRequestRequestTypeDef](#listcommandsrequestrequesttypedef)
-  - [ListCommandsResultTypeDef](#listcommandsresulttypedef)
-  - [ListComplianceItemsRequestRequestTypeDef](#listcomplianceitemsrequestrequesttypedef)
-  - [ListComplianceItemsResultTypeDef](#listcomplianceitemsresulttypedef)
-  - [ListComplianceSummariesRequestRequestTypeDef](#listcompliancesummariesrequestrequesttypedef)
-  - [ListComplianceSummariesResultTypeDef](#listcompliancesummariesresulttypedef)
-  - [ListDocumentMetadataHistoryRequestRequestTypeDef](#listdocumentmetadatahistoryrequestrequesttypedef)
-  - [ListDocumentMetadataHistoryResponseTypeDef](#listdocumentmetadatahistoryresponsetypedef)
-  - [ListDocumentVersionsRequestRequestTypeDef](#listdocumentversionsrequestrequesttypedef)
-  - [ListDocumentVersionsResultTypeDef](#listdocumentversionsresulttypedef)
-  - [ListDocumentsRequestRequestTypeDef](#listdocumentsrequestrequesttypedef)
-  - [ListDocumentsResultTypeDef](#listdocumentsresulttypedef)
-  - [ListInventoryEntriesRequestRequestTypeDef](#listinventoryentriesrequestrequesttypedef)
-  - [ListInventoryEntriesResultTypeDef](#listinventoryentriesresulttypedef)
-  - [ListOpsItemEventsRequestRequestTypeDef](#listopsitemeventsrequestrequesttypedef)
-  - [ListOpsItemEventsResponseTypeDef](#listopsitemeventsresponsetypedef)
-  - [ListOpsItemRelatedItemsRequestRequestTypeDef](#listopsitemrelateditemsrequestrequesttypedef)
-  - [ListOpsItemRelatedItemsResponseTypeDef](#listopsitemrelateditemsresponsetypedef)
-  - [ListOpsMetadataRequestRequestTypeDef](#listopsmetadatarequestrequesttypedef)
-  - [ListOpsMetadataResultTypeDef](#listopsmetadataresulttypedef)
-  - [ListResourceComplianceSummariesRequestRequestTypeDef](#listresourcecompliancesummariesrequestrequesttypedef)
-  - [ListResourceComplianceSummariesResultTypeDef](#listresourcecompliancesummariesresulttypedef)
-  - [ListResourceDataSyncRequestRequestTypeDef](#listresourcedatasyncrequestrequesttypedef)
-  - [ListResourceDataSyncResultTypeDef](#listresourcedatasyncresulttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
-  - [LoggingInfoTypeDef](#logginginfotypedef)
-  - [MaintenanceWindowAutomationParametersTypeDef](#maintenancewindowautomationparameterstypedef)
-  - [MaintenanceWindowExecutionTaskIdentityTypeDef](#maintenancewindowexecutiontaskidentitytypedef)
-  - [MaintenanceWindowExecutionTaskInvocationIdentityTypeDef](#maintenancewindowexecutiontaskinvocationidentitytypedef)
-  - [MaintenanceWindowExecutionTypeDef](#maintenancewindowexecutiontypedef)
-  - [MaintenanceWindowFilterTypeDef](#maintenancewindowfiltertypedef)
-  - [MaintenanceWindowIdentityForTargetTypeDef](#maintenancewindowidentityfortargettypedef)
-  - [MaintenanceWindowIdentityTypeDef](#maintenancewindowidentitytypedef)
-  - [MaintenanceWindowLambdaParametersTypeDef](#maintenancewindowlambdaparameterstypedef)
-  - [MaintenanceWindowRunCommandParametersTypeDef](#maintenancewindowruncommandparameterstypedef)
-  - [MaintenanceWindowStepFunctionsParametersTypeDef](#maintenancewindowstepfunctionsparameterstypedef)
-  - [MaintenanceWindowTargetTypeDef](#maintenancewindowtargettypedef)
-  - [MaintenanceWindowTaskInvocationParametersTypeDef](#maintenancewindowtaskinvocationparameterstypedef)
-  - [MaintenanceWindowTaskParameterValueExpressionTypeDef](#maintenancewindowtaskparametervalueexpressiontypedef)
-  - [MaintenanceWindowTaskTypeDef](#maintenancewindowtasktypedef)
-  - [MetadataValueTypeDef](#metadatavaluetypedef)
-  - [ModifyDocumentPermissionRequestRequestTypeDef](#modifydocumentpermissionrequestrequesttypedef)
-  - [NonCompliantSummaryTypeDef](#noncompliantsummarytypedef)
-  - [NotificationConfigTypeDef](#notificationconfigtypedef)
-  - [OpsAggregatorTypeDef](#opsaggregatortypedef)
-  - [OpsEntityItemTypeDef](#opsentityitemtypedef)
-  - [OpsEntityTypeDef](#opsentitytypedef)
-  - [OpsFilterTypeDef](#opsfiltertypedef)
-  - [OpsItemDataValueTypeDef](#opsitemdatavaluetypedef)
-  - [OpsItemEventFilterTypeDef](#opsitemeventfiltertypedef)
-  - [OpsItemEventSummaryTypeDef](#opsitemeventsummarytypedef)
-  - [OpsItemFilterTypeDef](#opsitemfiltertypedef)
-  - [OpsItemIdentityTypeDef](#opsitemidentitytypedef)
-  - [OpsItemNotificationTypeDef](#opsitemnotificationtypedef)
-  - [OpsItemRelatedItemSummaryTypeDef](#opsitemrelateditemsummarytypedef)
-  - [OpsItemRelatedItemsFilterTypeDef](#opsitemrelateditemsfiltertypedef)
-  - [OpsItemSummaryTypeDef](#opsitemsummarytypedef)
-  - [OpsItemTypeDef](#opsitemtypedef)
-  - [OpsMetadataFilterTypeDef](#opsmetadatafiltertypedef)
-  - [OpsMetadataTypeDef](#opsmetadatatypedef)
-  - [OpsResultAttributeTypeDef](#opsresultattributetypedef)
-  - [OutputSourceTypeDef](#outputsourcetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterHistoryTypeDef](#parameterhistorytypedef)
-  - [ParameterInlinePolicyTypeDef](#parameterinlinepolicytypedef)
-  - [ParameterMetadataTypeDef](#parametermetadatatypedef)
-  - [ParameterStringFilterTypeDef](#parameterstringfiltertypedef)
-  - [ParameterTypeDef](#parametertypedef)
-  - [ParametersFilterTypeDef](#parametersfiltertypedef)
-  - [PatchBaselineIdentityTypeDef](#patchbaselineidentitytypedef)
-  - [PatchComplianceDataTypeDef](#patchcompliancedatatypedef)
-  - [PatchFilterGroupTypeDef](#patchfiltergrouptypedef)
-  - [PatchFilterTypeDef](#patchfiltertypedef)
-  - [PatchGroupPatchBaselineMappingTypeDef](#patchgrouppatchbaselinemappingtypedef)
-  - [PatchOrchestratorFilterTypeDef](#patchorchestratorfiltertypedef)
-  - [PatchRuleGroupTypeDef](#patchrulegrouptypedef)
-  - [PatchRuleTypeDef](#patchruletypedef)
-  - [PatchSourceTypeDef](#patchsourcetypedef)
-  - [PatchStatusTypeDef](#patchstatustypedef)
-  - [PatchTypeDef](#patchtypedef)
-  - [ProgressCountersTypeDef](#progresscounterstypedef)
-  - [PutComplianceItemsRequestRequestTypeDef](#putcomplianceitemsrequestrequesttypedef)
-  - [PutInventoryRequestRequestTypeDef](#putinventoryrequestrequesttypedef)
-  - [PutInventoryResultTypeDef](#putinventoryresulttypedef)
-  - [PutParameterRequestRequestTypeDef](#putparameterrequestrequesttypedef)
-  - [PutParameterResultTypeDef](#putparameterresulttypedef)
-  - [RegisterDefaultPatchBaselineRequestRequestTypeDef](#registerdefaultpatchbaselinerequestrequesttypedef)
-  - [RegisterDefaultPatchBaselineResultTypeDef](#registerdefaultpatchbaselineresulttypedef)
-  - [RegisterPatchBaselineForPatchGroupRequestRequestTypeDef](#registerpatchbaselineforpatchgrouprequestrequesttypedef)
-  - [RegisterPatchBaselineForPatchGroupResultTypeDef](#registerpatchbaselineforpatchgroupresulttypedef)
-  - [RegisterTargetWithMaintenanceWindowRequestRequestTypeDef](#registertargetwithmaintenancewindowrequestrequesttypedef)
-  - [RegisterTargetWithMaintenanceWindowResultTypeDef](#registertargetwithmaintenancewindowresulttypedef)
-  - [RegisterTaskWithMaintenanceWindowRequestRequestTypeDef](#registertaskwithmaintenancewindowrequestrequesttypedef)
-  - [RegisterTaskWithMaintenanceWindowResultTypeDef](#registertaskwithmaintenancewindowresulttypedef)
-  - [RegistrationMetadataItemTypeDef](#registrationmetadataitemtypedef)
-  - [RelatedOpsItemTypeDef](#relatedopsitemtypedef)
-  - [RemoveTagsFromResourceRequestRequestTypeDef](#removetagsfromresourcerequestrequesttypedef)
-  - [ResetServiceSettingRequestRequestTypeDef](#resetservicesettingrequestrequesttypedef)
-  - [ResetServiceSettingResultTypeDef](#resetservicesettingresulttypedef)
-  - [ResolvedTargetsTypeDef](#resolvedtargetstypedef)
-  - [ResourceComplianceSummaryItemTypeDef](#resourcecompliancesummaryitemtypedef)
-  - [ResourceDataSyncAwsOrganizationsSourceTypeDef](#resourcedatasyncawsorganizationssourcetypedef)
-  - [ResourceDataSyncDestinationDataSharingTypeDef](#resourcedatasyncdestinationdatasharingtypedef)
-  - [ResourceDataSyncItemTypeDef](#resourcedatasyncitemtypedef)
-  - [ResourceDataSyncOrganizationalUnitTypeDef](#resourcedatasyncorganizationalunittypedef)
-  - [ResourceDataSyncS3DestinationTypeDef](#resourcedatasyncs3destinationtypedef)
-  - [ResourceDataSyncSourceTypeDef](#resourcedatasyncsourcetypedef)
-  - [ResourceDataSyncSourceWithStateTypeDef](#resourcedatasyncsourcewithstatetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResultAttributeTypeDef](#resultattributetypedef)
-  - [ResumeSessionRequestRequestTypeDef](#resumesessionrequestrequesttypedef)
-  - [ResumeSessionResponseTypeDef](#resumesessionresponsetypedef)
-  - [ReviewInformationTypeDef](#reviewinformationtypedef)
-  - [RunbookTypeDef](#runbooktypedef)
-  - [S3OutputLocationTypeDef](#s3outputlocationtypedef)
-  - [S3OutputUrlTypeDef](#s3outputurltypedef)
-  - [ScheduledWindowExecutionTypeDef](#scheduledwindowexecutiontypedef)
-  - [SendAutomationSignalRequestRequestTypeDef](#sendautomationsignalrequestrequesttypedef)
-  - [SendCommandRequestRequestTypeDef](#sendcommandrequestrequesttypedef)
-  - [SendCommandResultTypeDef](#sendcommandresulttypedef)
-  - [ServiceSettingTypeDef](#servicesettingtypedef)
-  - [SessionFilterTypeDef](#sessionfiltertypedef)
-  - [SessionManagerOutputUrlTypeDef](#sessionmanageroutputurltypedef)
-  - [SessionTypeDef](#sessiontypedef)
-  - [SeveritySummaryTypeDef](#severitysummarytypedef)
-  - [StartAssociationsOnceRequestRequestTypeDef](#startassociationsoncerequestrequesttypedef)
-  - [StartAutomationExecutionRequestRequestTypeDef](#startautomationexecutionrequestrequesttypedef)
-  - [StartAutomationExecutionResultTypeDef](#startautomationexecutionresulttypedef)
-  - [StartChangeRequestExecutionRequestRequestTypeDef](#startchangerequestexecutionrequestrequesttypedef)
-  - [StartChangeRequestExecutionResultTypeDef](#startchangerequestexecutionresulttypedef)
-  - [StartSessionRequestRequestTypeDef](#startsessionrequestrequesttypedef)
-  - [StartSessionResponseTypeDef](#startsessionresponsetypedef)
-  - [StepExecutionFilterTypeDef](#stepexecutionfiltertypedef)
-  - [StepExecutionTypeDef](#stepexecutiontypedef)
-  - [StopAutomationExecutionRequestRequestTypeDef](#stopautomationexecutionrequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TargetLocationTypeDef](#targetlocationtypedef)
-  - [TargetTypeDef](#targettypedef)
-  - [TerminateSessionRequestRequestTypeDef](#terminatesessionrequestrequesttypedef)
-  - [TerminateSessionResponseTypeDef](#terminatesessionresponsetypedef)
-  - [UnlabelParameterVersionRequestRequestTypeDef](#unlabelparameterversionrequestrequesttypedef)
-  - [UnlabelParameterVersionResultTypeDef](#unlabelparameterversionresulttypedef)
-  - [UpdateAssociationRequestRequestTypeDef](#updateassociationrequestrequesttypedef)
-  - [UpdateAssociationResultTypeDef](#updateassociationresulttypedef)
-  - [UpdateAssociationStatusRequestRequestTypeDef](#updateassociationstatusrequestrequesttypedef)
-  - [UpdateAssociationStatusResultTypeDef](#updateassociationstatusresulttypedef)
-  - [UpdateDocumentDefaultVersionRequestRequestTypeDef](#updatedocumentdefaultversionrequestrequesttypedef)
-  - [UpdateDocumentDefaultVersionResultTypeDef](#updatedocumentdefaultversionresulttypedef)
-  - [UpdateDocumentMetadataRequestRequestTypeDef](#updatedocumentmetadatarequestrequesttypedef)
-  - [UpdateDocumentRequestRequestTypeDef](#updatedocumentrequestrequesttypedef)
-  - [UpdateDocumentResultTypeDef](#updatedocumentresulttypedef)
-  - [UpdateMaintenanceWindowRequestRequestTypeDef](#updatemaintenancewindowrequestrequesttypedef)
-  - [UpdateMaintenanceWindowResultTypeDef](#updatemaintenancewindowresulttypedef)
-  - [UpdateMaintenanceWindowTargetRequestRequestTypeDef](#updatemaintenancewindowtargetrequestrequesttypedef)
-  - [UpdateMaintenanceWindowTargetResultTypeDef](#updatemaintenancewindowtargetresulttypedef)
-  - [UpdateMaintenanceWindowTaskRequestRequestTypeDef](#updatemaintenancewindowtaskrequestrequesttypedef)
-  - [UpdateMaintenanceWindowTaskResultTypeDef](#updatemaintenancewindowtaskresulttypedef)
-  - [UpdateManagedInstanceRoleRequestRequestTypeDef](#updatemanagedinstancerolerequestrequesttypedef)
-  - [UpdateOpsItemRequestRequestTypeDef](#updateopsitemrequestrequesttypedef)
-  - [UpdateOpsMetadataRequestRequestTypeDef](#updateopsmetadatarequestrequesttypedef)
-  - [UpdateOpsMetadataResultTypeDef](#updateopsmetadataresulttypedef)
-  - [UpdatePatchBaselineRequestRequestTypeDef](#updatepatchbaselinerequestrequesttypedef)
-  - [UpdatePatchBaselineResultTypeDef](#updatepatchbaselineresulttypedef)
-  - [UpdateResourceDataSyncRequestRequestTypeDef](#updateresourcedatasyncrequestrequesttypedef)
-  - [UpdateServiceSettingRequestRequestTypeDef](#updateservicesettingrequestrequesttypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="accountsharinginfotypedef"></a>
+    Auto-generated documentation for [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+    type annotations stubs module [mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 ## AccountSharingInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef
+
+def get_value() -> AccountSharingInfoTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountId`: `str`
-- `SharedDocumentVersion`: `str`
-
-<a id="activationtypedef"></a>
+```python title="Definition"
+class AccountSharingInfoTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    SharedDocumentVersion: NotRequired[str],
+```
 
 ## ActivationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ActivationTypeDef
+
+def get_value() -> ActivationTypeDef:
+    return {
+        "ActivationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActivationTypeDef(TypedDict):
+    ActivationId: NotRequired[str],
+    Description: NotRequired[str],
+    DefaultInstanceName: NotRequired[str],
+    IamRole: NotRequired[str],
+    RegistrationLimit: NotRequired[int],
+    RegistrationsCount: NotRequired[int],
+    ExpirationDate: NotRequired[datetime],
+    Expired: NotRequired[bool],
+    CreatedDate: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `ActivationId`: `str`
-- `Description`: `str`
-- `DefaultInstanceName`: `str`
-- `IamRole`: `str`
-- `RegistrationLimit`: `int`
-- `RegistrationsCount`: `int`
-- `ExpirationDate`: `datetime`
-- `Expired`: `bool`
-- `CreatedDate`: `datetime`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="addtagstoresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AddTagsToResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AddTagsToResourceRequestRequestTypeDef
+
+def get_value() -> AddTagsToResourceRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+        "ResourceId": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsToResourceRequestRequestTypeDef(TypedDict):
+    ResourceType: ResourceTypeForTaggingType,  # (1)
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (2)
+```
 
-- `ResourceType`:
-  [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
-- `ResourceId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="associateopsitemrelateditemrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AssociateOpsItemRelatedItemRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociateOpsItemRelatedItemRequestRequestTypeDef
+
+def get_value() -> AssociateOpsItemRelatedItemRequestRequestTypeDef:
+    return {
+        "OpsItemId": ...,
+        "AssociationType": ...,
+        "ResourceType": ...,
+        "ResourceUri": ...,
+    }
 ```
 
-Required fields:
-
-- `OpsItemId`: `str`
-- `AssociationType`: `str`
-- `ResourceType`: `str`
-- `ResourceUri`: `str`
-
-<a id="associateopsitemrelateditemresponsetypedef"></a>
+```python title="Definition"
+class AssociateOpsItemRelatedItemRequestRequestTypeDef(TypedDict):
+    OpsItemId: str,
+    AssociationType: str,
+    ResourceType: str,
+    ResourceUri: str,
+```
 
 ## AssociateOpsItemRelatedItemResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociateOpsItemRelatedItemResponseTypeDef
+
+def get_value() -> AssociateOpsItemRelatedItemResponseTypeDef:
+    return {
+        "AssociationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateOpsItemRelatedItemResponseTypeDef(TypedDict):
+    AssociationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AssociationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationDescriptionTypeDef
+
+def get_value() -> AssociationDescriptionTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssociationDescriptionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    InstanceId: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    Date: NotRequired[datetime],
+    LastUpdateAssociationDate: NotRequired[datetime],
+    Status: NotRequired[AssociationStatusTypeDef],  # (1)
+    Overview: NotRequired[AssociationOverviewTypeDef],  # (2)
+    DocumentVersion: NotRequired[str],
+    AutomationTargetParameterName: NotRequired[str],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    AssociationId: NotRequired[str],
+    Targets: NotRequired[List[TargetTypeDef]],  # (3)
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (4)
+    LastExecutionDate: NotRequired[datetime],
+    LastSuccessfulExecutionDate: NotRequired[datetime],
+    AssociationName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (5)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (6)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[List[str]],
+    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (7)
+```
 
-- `Name`: `str`
-- `InstanceId`: `str`
-- `AssociationVersion`: `str`
-- `Date`: `datetime`
-- `LastUpdateAssociationDate`: `datetime`
-- `Status`: [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
-- `Overview`:
-  [AssociationOverviewTypeDef](./type_defs.md#associationoverviewtypedef)
-- `DocumentVersion`: `str`
-- `AutomationTargetParameterName`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `AssociationId`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `ScheduleExpression`: `str`
-- `OutputLocation`:
-  [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
-- `LastExecutionDate`: `datetime`
-- `LastSuccessfulExecutionDate`: `datetime`
-- `AssociationName`: `str`
-- `MaxErrors`: `str`
-- `MaxConcurrency`: `str`
-- `ComplianceSeverity`:
-  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
-- `SyncCompliance`:
-  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
-- `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `List`\[`str`\]
-- `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-
-<a id="associationexecutionfiltertypedef"></a>
-
+1. See [:material-code-braces: AssociationStatusTypeDef](./type_defs.md#associationstatustypedef) 
+2. See [:material-code-braces: AssociationOverviewTypeDef](./type_defs.md#associationoverviewtypedef) 
+3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+4. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+5. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+6. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+7. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 ## AssociationExecutionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationExecutionFilterTypeDef
+
+def get_value() -> AssociationExecutionFilterTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociationExecutionFilterTypeDef(TypedDict):
+    Key: AssociationExecutionFilterKeyType,  # (1)
+    Value: str,
+    Type: AssociationFilterOperatorTypeType,  # (2)
+```
 
-- `Key`:
-  [AssociationExecutionFilterKeyType](./literals.md#associationexecutionfilterkeytype)
-- `Value`: `str`
-- `Type`:
-  [AssociationFilterOperatorTypeType](./literals.md#associationfilteroperatortypetype)
-
-<a id="associationexecutiontargettypedef"></a>
-
+1. See [:material-code-brackets: AssociationExecutionFilterKeyType](./literals.md#associationexecutionfilterkeytype) 
+2. See [:material-code-brackets: AssociationFilterOperatorTypeType](./literals.md#associationfilteroperatortypetype) 
 ## AssociationExecutionTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationExecutionTargetTypeDef
+
+def get_value() -> AssociationExecutionTargetTypeDef:
+    return {
+        "AssociationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssociationExecutionTargetTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    ExecutionId: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    Status: NotRequired[str],
+    DetailedStatus: NotRequired[str],
+    LastExecutionDate: NotRequired[datetime],
+    OutputSource: NotRequired[OutputSourceTypeDef],  # (1)
+```
 
-- `AssociationId`: `str`
-- `AssociationVersion`: `str`
-- `ExecutionId`: `str`
-- `ResourceId`: `str`
-- `ResourceType`: `str`
-- `Status`: `str`
-- `DetailedStatus`: `str`
-- `LastExecutionDate`: `datetime`
-- `OutputSource`: [OutputSourceTypeDef](./type_defs.md#outputsourcetypedef)
-
-<a id="associationexecutiontargetsfiltertypedef"></a>
-
+1. See [:material-code-braces: OutputSourceTypeDef](./type_defs.md#outputsourcetypedef) 
 ## AssociationExecutionTargetsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationExecutionTargetsFilterTypeDef
+
+def get_value() -> AssociationExecutionTargetsFilterTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociationExecutionTargetsFilterTypeDef(TypedDict):
+    Key: AssociationExecutionTargetsFilterKeyType,  # (1)
+    Value: str,
+```
 
-- `Key`:
-  [AssociationExecutionTargetsFilterKeyType](./literals.md#associationexecutiontargetsfilterkeytype)
-- `Value`: `str`
-
-<a id="associationexecutiontypedef"></a>
-
+1. See [:material-code-brackets: AssociationExecutionTargetsFilterKeyType](./literals.md#associationexecutiontargetsfilterkeytype) 
 ## AssociationExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationExecutionTypeDef
+
+def get_value() -> AssociationExecutionTypeDef:
+    return {
+        "AssociationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AssociationId`: `str`
-- `AssociationVersion`: `str`
-- `ExecutionId`: `str`
-- `Status`: `str`
-- `DetailedStatus`: `str`
-- `CreatedTime`: `datetime`
-- `LastExecutionDate`: `datetime`
-- `ResourceCountByStatus`: `str`
-
-<a id="associationfiltertypedef"></a>
+```python title="Definition"
+class AssociationExecutionTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    ExecutionId: NotRequired[str],
+    Status: NotRequired[str],
+    DetailedStatus: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    LastExecutionDate: NotRequired[datetime],
+    ResourceCountByStatus: NotRequired[str],
+```
 
 ## AssociationFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationFilterTypeDef
+
+def get_value() -> AssociationFilterTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociationFilterTypeDef(TypedDict):
+    key: AssociationFilterKeyType,  # (1)
+    value: str,
+```
 
-- `key`: [AssociationFilterKeyType](./literals.md#associationfilterkeytype)
-- `value`: `str`
-
-<a id="associationoverviewtypedef"></a>
-
+1. See [:material-code-brackets: AssociationFilterKeyType](./literals.md#associationfilterkeytype) 
 ## AssociationOverviewTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationOverviewTypeDef
+
+def get_value() -> AssociationOverviewTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
-
-- `Status`: `str`
-- `DetailedStatus`: `str`
-- `AssociationStatusAggregatedCount`: `Dict`\[`str`, `int`\]
-
-<a id="associationstatustypedef"></a>
+```python title="Definition"
+class AssociationOverviewTypeDef(TypedDict):
+    Status: NotRequired[str],
+    DetailedStatus: NotRequired[str],
+    AssociationStatusAggregatedCount: NotRequired[Dict[str, int]],
+```
 
 ## AssociationStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationStatusTypeDef
+
+def get_value() -> AssociationStatusTypeDef:
+    return {
+        "Date": ...,
+        "Name": ...,
+        "Message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociationStatusTypeDef(TypedDict):
+    Date: datetime,
+    Name: AssociationStatusNameType,  # (1)
+    Message: str,
+    AdditionalInfo: NotRequired[str],
+```
 
-- `Date`: `datetime`
-- `Name`: [AssociationStatusNameType](./literals.md#associationstatusnametype)
-- `Message`: `str`
-
-Optional fields:
-
-- `AdditionalInfo`: `str`
-
-<a id="associationtypedef"></a>
-
+1. See [:material-code-brackets: AssociationStatusNameType](./literals.md#associationstatusnametype) 
 ## AssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationTypeDef
+
+def get_value() -> AssociationTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssociationTypeDef(TypedDict):
+    Name: NotRequired[str],
+    InstanceId: NotRequired[str],
+    AssociationId: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    Targets: NotRequired[List[TargetTypeDef]],  # (1)
+    LastExecutionDate: NotRequired[datetime],
+    Overview: NotRequired[AssociationOverviewTypeDef],  # (2)
+    ScheduleExpression: NotRequired[str],
+    AssociationName: NotRequired[str],
+```
 
-- `Name`: `str`
-- `InstanceId`: `str`
-- `AssociationId`: `str`
-- `AssociationVersion`: `str`
-- `DocumentVersion`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `LastExecutionDate`: `datetime`
-- `Overview`:
-  [AssociationOverviewTypeDef](./type_defs.md#associationoverviewtypedef)
-- `ScheduleExpression`: `str`
-- `AssociationName`: `str`
-
-<a id="associationversioninfotypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: AssociationOverviewTypeDef](./type_defs.md#associationoverviewtypedef) 
 ## AssociationVersionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AssociationVersionInfoTypeDef
+
+def get_value() -> AssociationVersionInfoTypeDef:
+    return {
+        "AssociationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssociationVersionInfoTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+    Name: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    Targets: NotRequired[List[TargetTypeDef]],  # (1)
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (2)
+    AssociationName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[List[str]],
+    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (5)
+```
 
-- `AssociationId`: `str`
-- `AssociationVersion`: `str`
-- `CreatedDate`: `datetime`
-- `Name`: `str`
-- `DocumentVersion`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `ScheduleExpression`: `str`
-- `OutputLocation`:
-  [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
-- `AssociationName`: `str`
-- `MaxErrors`: `str`
-- `MaxConcurrency`: `str`
-- `ComplianceSeverity`:
-  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
-- `SyncCompliance`:
-  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
-- `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `List`\[`str`\]
-- `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-
-<a id="attachmentcontenttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 ## AttachmentContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AttachmentContentTypeDef
+
+def get_value() -> AttachmentContentTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttachmentContentTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Size: NotRequired[int],
+    Hash: NotRequired[str],
+    HashType: NotRequired[AttachmentHashTypeType],  # (1)
+    Url: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Size`: `int`
-- `Hash`: `str`
-- `HashType`: `Literal['Sha256']` (see
-  [AttachmentHashTypeType](./literals.md#attachmenthashtypetype))
-- `Url`: `str`
-
-<a id="attachmentinformationtypedef"></a>
-
+1. See [:material-code-brackets: AttachmentHashTypeType](./literals.md#attachmenthashtypetype) 
 ## AttachmentInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AttachmentInformationTypeDef
+
+def get_value() -> AttachmentInformationTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="attachmentssourcetypedef"></a>
+```python title="Definition"
+class AttachmentInformationTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## AttachmentsSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AttachmentsSourceTypeDef
+
+def get_value() -> AttachmentsSourceTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttachmentsSourceTypeDef(TypedDict):
+    Key: NotRequired[AttachmentsSourceKeyType],  # (1)
+    Values: NotRequired[Sequence[str]],
+    Name: NotRequired[str],
+```
 
-- `Key`: [AttachmentsSourceKeyType](./literals.md#attachmentssourcekeytype)
-- `Values`: `Sequence`\[`str`\]
-- `Name`: `str`
-
-<a id="automationexecutionfiltertypedef"></a>
-
+1. See [:material-code-brackets: AttachmentsSourceKeyType](./literals.md#attachmentssourcekeytype) 
 ## AutomationExecutionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AutomationExecutionFilterTypeDef
+
+def get_value() -> AutomationExecutionFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AutomationExecutionFilterTypeDef(TypedDict):
+    Key: AutomationExecutionFilterKeyType,  # (1)
+    Values: Sequence[str],
+```
 
-- `Key`:
-  [AutomationExecutionFilterKeyType](./literals.md#automationexecutionfilterkeytype)
-- `Values`: `Sequence`\[`str`\]
-
-<a id="automationexecutionmetadatatypedef"></a>
-
+1. See [:material-code-brackets: AutomationExecutionFilterKeyType](./literals.md#automationexecutionfilterkeytype) 
 ## AutomationExecutionMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AutomationExecutionMetadataTypeDef
+
+def get_value() -> AutomationExecutionMetadataTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutomationExecutionMetadataTypeDef(TypedDict):
+    AutomationExecutionId: NotRequired[str],
+    DocumentName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    AutomationExecutionStatus: NotRequired[AutomationExecutionStatusType],  # (1)
+    ExecutionStartTime: NotRequired[datetime],
+    ExecutionEndTime: NotRequired[datetime],
+    ExecutedBy: NotRequired[str],
+    LogFile: NotRequired[str],
+    Outputs: NotRequired[Dict[str, List[str]]],
+    Mode: NotRequired[ExecutionModeType],  # (2)
+    ParentAutomationExecutionId: NotRequired[str],
+    CurrentStepName: NotRequired[str],
+    CurrentAction: NotRequired[str],
+    FailureMessage: NotRequired[str],
+    TargetParameterName: NotRequired[str],
+    Targets: NotRequired[List[TargetTypeDef]],  # (3)
+    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
+    ResolvedTargets: NotRequired[ResolvedTargetsTypeDef],  # (4)
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    Target: NotRequired[str],
+    AutomationType: NotRequired[AutomationTypeType],  # (5)
+    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (6)
+    ScheduledTime: NotRequired[datetime],
+    Runbooks: NotRequired[List[RunbookTypeDef]],  # (7)
+    OpsItemId: NotRequired[str],
+    AssociationId: NotRequired[str],
+    ChangeRequestName: NotRequired[str],
+```
 
-- `AutomationExecutionId`: `str`
-- `DocumentName`: `str`
-- `DocumentVersion`: `str`
-- `AutomationExecutionStatus`:
-  [AutomationExecutionStatusType](./literals.md#automationexecutionstatustype)
-- `ExecutionStartTime`: `datetime`
-- `ExecutionEndTime`: `datetime`
-- `ExecutedBy`: `str`
-- `LogFile`: `str`
-- `Outputs`: `Dict`\[`str`, `List`\[`str`\]\]
-- `Mode`: [ExecutionModeType](./literals.md#executionmodetype)
-- `ParentAutomationExecutionId`: `str`
-- `CurrentStepName`: `str`
-- `CurrentAction`: `str`
-- `FailureMessage`: `str`
-- `TargetParameterName`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TargetMaps`: `List`\[`Dict`\[`str`, `List`\[`str`\]\]\]
-- `ResolvedTargets`:
-  [ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef)
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `Target`: `str`
-- `AutomationType`: [AutomationTypeType](./literals.md#automationtypetype)
-- `AutomationSubtype`: `Literal['ChangeRequest']` (see
-  [AutomationSubtypeType](./literals.md#automationsubtypetype))
-- `ScheduledTime`: `datetime`
-- `Runbooks`: `List`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
-- `OpsItemId`: `str`
-- `AssociationId`: `str`
-- `ChangeRequestName`: `str`
-
-<a id="automationexecutiontypedef"></a>
-
+1. See [:material-code-brackets: AutomationExecutionStatusType](./literals.md#automationexecutionstatustype) 
+2. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
+3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+4. See [:material-code-braces: ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef) 
+5. See [:material-code-brackets: AutomationTypeType](./literals.md#automationtypetype) 
+6. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
+7. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
 ## AutomationExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import AutomationExecutionTypeDef
+
+def get_value() -> AutomationExecutionTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutomationExecutionTypeDef(TypedDict):
+    AutomationExecutionId: NotRequired[str],
+    DocumentName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    ExecutionStartTime: NotRequired[datetime],
+    ExecutionEndTime: NotRequired[datetime],
+    AutomationExecutionStatus: NotRequired[AutomationExecutionStatusType],  # (1)
+    StepExecutions: NotRequired[List[StepExecutionTypeDef]],  # (2)
+    StepExecutionsTruncated: NotRequired[bool],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    Outputs: NotRequired[Dict[str, List[str]]],
+    FailureMessage: NotRequired[str],
+    Mode: NotRequired[ExecutionModeType],  # (3)
+    ParentAutomationExecutionId: NotRequired[str],
+    ExecutedBy: NotRequired[str],
+    CurrentStepName: NotRequired[str],
+    CurrentAction: NotRequired[str],
+    TargetParameterName: NotRequired[str],
+    Targets: NotRequired[List[TargetTypeDef]],  # (4)
+    TargetMaps: NotRequired[List[Dict[str, List[str]]]],
+    ResolvedTargets: NotRequired[ResolvedTargetsTypeDef],  # (5)
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    Target: NotRequired[str],
+    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (6)
+    ProgressCounters: NotRequired[ProgressCountersTypeDef],  # (7)
+    AutomationSubtype: NotRequired[AutomationSubtypeType],  # (8)
+    ScheduledTime: NotRequired[datetime],
+    Runbooks: NotRequired[List[RunbookTypeDef]],  # (9)
+    OpsItemId: NotRequired[str],
+    AssociationId: NotRequired[str],
+    ChangeRequestName: NotRequired[str],
+```
 
-- `AutomationExecutionId`: `str`
-- `DocumentName`: `str`
-- `DocumentVersion`: `str`
-- `ExecutionStartTime`: `datetime`
-- `ExecutionEndTime`: `datetime`
-- `AutomationExecutionStatus`:
-  [AutomationExecutionStatusType](./literals.md#automationexecutionstatustype)
-- `StepExecutions`:
-  `List`\[[StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef)\]
-- `StepExecutionsTruncated`: `bool`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `Outputs`: `Dict`\[`str`, `List`\[`str`\]\]
-- `FailureMessage`: `str`
-- `Mode`: [ExecutionModeType](./literals.md#executionmodetype)
-- `ParentAutomationExecutionId`: `str`
-- `ExecutedBy`: `str`
-- `CurrentStepName`: `str`
-- `CurrentAction`: `str`
-- `TargetParameterName`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TargetMaps`: `List`\[`Dict`\[`str`, `List`\[`str`\]\]\]
-- `ResolvedTargets`:
-  [ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef)
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `Target`: `str`
-- `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-- `ProgressCounters`:
-  [ProgressCountersTypeDef](./type_defs.md#progresscounterstypedef)
-- `AutomationSubtype`: `Literal['ChangeRequest']` (see
-  [AutomationSubtypeType](./literals.md#automationsubtypetype))
-- `ScheduledTime`: `datetime`
-- `Runbooks`: `List`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
-- `OpsItemId`: `str`
-- `AssociationId`: `str`
-- `ChangeRequestName`: `str`
-
-<a id="baselineoverridetypedef"></a>
-
+1. See [:material-code-brackets: AutomationExecutionStatusType](./literals.md#automationexecutionstatustype) 
+2. See [:material-code-braces: StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef) 
+3. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
+4. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+5. See [:material-code-braces: ResolvedTargetsTypeDef](./type_defs.md#resolvedtargetstypedef) 
+6. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+7. See [:material-code-braces: ProgressCountersTypeDef](./type_defs.md#progresscounterstypedef) 
+8. See [:material-code-brackets: AutomationSubtypeType](./literals.md#automationsubtypetype) 
+9. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
 ## BaselineOverrideTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import BaselineOverrideTypeDef
+
+def get_value() -> BaselineOverrideTypeDef:
+    return {
+        "OperatingSystem": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BaselineOverrideTypeDef(TypedDict):
+    OperatingSystem: NotRequired[OperatingSystemType],  # (1)
+    GlobalFilters: NotRequired[PatchFilterGroupTypeDef],  # (2)
+    ApprovalRules: NotRequired[PatchRuleGroupTypeDef],  # (3)
+    ApprovedPatches: NotRequired[Sequence[str]],
+    ApprovedPatchesComplianceLevel: NotRequired[PatchComplianceLevelType],  # (4)
+    RejectedPatches: NotRequired[Sequence[str]],
+    RejectedPatchesAction: NotRequired[PatchActionType],  # (5)
+    ApprovedPatchesEnableNonSecurity: NotRequired[bool],
+    Sources: NotRequired[Sequence[PatchSourceTypeDef]],  # (6)
+```
 
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `GlobalFilters`:
-  [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
-- `ApprovalRules`:
-  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `Sequence`\[`str`\]
-- `ApprovedPatchesComplianceLevel`:
-  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
-- `RejectedPatches`: `Sequence`\[`str`\]
-- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
-- `ApprovedPatchesEnableNonSecurity`: `bool`
-- `Sources`:
-  `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
-
-<a id="cancelcommandrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+2. See [:material-code-braces: PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef) 
+3. See [:material-code-braces: PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef) 
+4. See [:material-code-brackets: PatchComplianceLevelType](./literals.md#patchcomplianceleveltype) 
+5. See [:material-code-brackets: PatchActionType](./literals.md#patchactiontype) 
+6. See [:material-code-braces: PatchSourceTypeDef](./type_defs.md#patchsourcetypedef) 
 ## CancelCommandRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CancelCommandRequestRequestTypeDef
+
+def get_value() -> CancelCommandRequestRequestTypeDef:
+    return {
+        "CommandId": ...,
+    }
 ```
 
-Required fields:
-
-- `CommandId`: `str`
-
-Optional fields:
-
-- `InstanceIds`: `Sequence`\[`str`\]
-
-<a id="cancelmaintenancewindowexecutionrequestrequesttypedef"></a>
+```python title="Definition"
+class CancelCommandRequestRequestTypeDef(TypedDict):
+    CommandId: str,
+    InstanceIds: NotRequired[Sequence[str]],
+```
 
 ## CancelMaintenanceWindowExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CancelMaintenanceWindowExecutionRequestRequestTypeDef
+
+def get_value() -> CancelMaintenanceWindowExecutionRequestRequestTypeDef:
+    return {
+        "WindowExecutionId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowExecutionId`: `str`
-
-<a id="cancelmaintenancewindowexecutionresulttypedef"></a>
+```python title="Definition"
+class CancelMaintenanceWindowExecutionRequestRequestTypeDef(TypedDict):
+    WindowExecutionId: str,
+```
 
 ## CancelMaintenanceWindowExecutionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CancelMaintenanceWindowExecutionResultTypeDef
+
+def get_value() -> CancelMaintenanceWindowExecutionResultTypeDef:
+    return {
+        "WindowExecutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelMaintenanceWindowExecutionResultTypeDef(TypedDict):
+    WindowExecutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WindowExecutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cloudwatchoutputconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CloudWatchOutputConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CloudWatchOutputConfigTypeDef
+
+def get_value() -> CloudWatchOutputConfigTypeDef:
+    return {
+        "CloudWatchLogGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `CloudWatchLogGroupName`: `str`
-- `CloudWatchOutputEnabled`: `bool`
-
-<a id="commandfiltertypedef"></a>
+```python title="Definition"
+class CloudWatchOutputConfigTypeDef(TypedDict):
+    CloudWatchLogGroupName: NotRequired[str],
+    CloudWatchOutputEnabled: NotRequired[bool],
+```
 
 ## CommandFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CommandFilterTypeDef
+
+def get_value() -> CommandFilterTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CommandFilterTypeDef(TypedDict):
+    key: CommandFilterKeyType,  # (1)
+    value: str,
+```
 
-- `key`: [CommandFilterKeyType](./literals.md#commandfilterkeytype)
-- `value`: `str`
-
-<a id="commandinvocationtypedef"></a>
-
+1. See [:material-code-brackets: CommandFilterKeyType](./literals.md#commandfilterkeytype) 
 ## CommandInvocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CommandInvocationTypeDef
+
+def get_value() -> CommandInvocationTypeDef:
+    return {
+        "CommandId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CommandInvocationTypeDef(TypedDict):
+    CommandId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    InstanceName: NotRequired[str],
+    Comment: NotRequired[str],
+    DocumentName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    RequestedDateTime: NotRequired[datetime],
+    Status: NotRequired[CommandInvocationStatusType],  # (1)
+    StatusDetails: NotRequired[str],
+    TraceOutput: NotRequired[str],
+    StandardOutputUrl: NotRequired[str],
+    StandardErrorUrl: NotRequired[str],
+    CommandPlugins: NotRequired[List[CommandPluginTypeDef]],  # (2)
+    ServiceRole: NotRequired[str],
+    NotificationConfig: NotRequired[NotificationConfigTypeDef],  # (3)
+    CloudWatchOutputConfig: NotRequired[CloudWatchOutputConfigTypeDef],  # (4)
+```
 
-- `CommandId`: `str`
-- `InstanceId`: `str`
-- `InstanceName`: `str`
-- `Comment`: `str`
-- `DocumentName`: `str`
-- `DocumentVersion`: `str`
-- `RequestedDateTime`: `datetime`
-- `Status`:
-  [CommandInvocationStatusType](./literals.md#commandinvocationstatustype)
-- `StatusDetails`: `str`
-- `TraceOutput`: `str`
-- `StandardOutputUrl`: `str`
-- `StandardErrorUrl`: `str`
-- `CommandPlugins`:
-  `List`\[[CommandPluginTypeDef](./type_defs.md#commandplugintypedef)\]
-- `ServiceRole`: `str`
-- `NotificationConfig`:
-  [NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef)
-- `CloudWatchOutputConfig`:
-  [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
-
-<a id="commandplugintypedef"></a>
-
+1. See [:material-code-brackets: CommandInvocationStatusType](./literals.md#commandinvocationstatustype) 
+2. See [:material-code-braces: CommandPluginTypeDef](./type_defs.md#commandplugintypedef) 
+3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
+4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
 ## CommandPluginTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CommandPluginTypeDef
+
+def get_value() -> CommandPluginTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CommandPluginTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Status: NotRequired[CommandPluginStatusType],  # (1)
+    StatusDetails: NotRequired[str],
+    ResponseCode: NotRequired[int],
+    ResponseStartDateTime: NotRequired[datetime],
+    ResponseFinishDateTime: NotRequired[datetime],
+    Output: NotRequired[str],
+    StandardOutputUrl: NotRequired[str],
+    StandardErrorUrl: NotRequired[str],
+    OutputS3Region: NotRequired[str],
+    OutputS3BucketName: NotRequired[str],
+    OutputS3KeyPrefix: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Status`: [CommandPluginStatusType](./literals.md#commandpluginstatustype)
-- `StatusDetails`: `str`
-- `ResponseCode`: `int`
-- `ResponseStartDateTime`: `datetime`
-- `ResponseFinishDateTime`: `datetime`
-- `Output`: `str`
-- `StandardOutputUrl`: `str`
-- `StandardErrorUrl`: `str`
-- `OutputS3Region`: `str`
-- `OutputS3BucketName`: `str`
-- `OutputS3KeyPrefix`: `str`
-
-<a id="commandtypedef"></a>
-
+1. See [:material-code-brackets: CommandPluginStatusType](./literals.md#commandpluginstatustype) 
 ## CommandTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CommandTypeDef
+
+def get_value() -> CommandTypeDef:
+    return {
+        "CommandId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CommandTypeDef(TypedDict):
+    CommandId: NotRequired[str],
+    DocumentName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    Comment: NotRequired[str],
+    ExpiresAfter: NotRequired[datetime],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    InstanceIds: NotRequired[List[str]],
+    Targets: NotRequired[List[TargetTypeDef]],  # (1)
+    RequestedDateTime: NotRequired[datetime],
+    Status: NotRequired[CommandStatusType],  # (2)
+    StatusDetails: NotRequired[str],
+    OutputS3Region: NotRequired[str],
+    OutputS3BucketName: NotRequired[str],
+    OutputS3KeyPrefix: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    TargetCount: NotRequired[int],
+    CompletedCount: NotRequired[int],
+    ErrorCount: NotRequired[int],
+    DeliveryTimedOutCount: NotRequired[int],
+    ServiceRole: NotRequired[str],
+    NotificationConfig: NotRequired[NotificationConfigTypeDef],  # (3)
+    CloudWatchOutputConfig: NotRequired[CloudWatchOutputConfigTypeDef],  # (4)
+    TimeoutSeconds: NotRequired[int],
+```
 
-- `CommandId`: `str`
-- `DocumentName`: `str`
-- `DocumentVersion`: `str`
-- `Comment`: `str`
-- `ExpiresAfter`: `datetime`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `InstanceIds`: `List`\[`str`\]
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `RequestedDateTime`: `datetime`
-- `Status`: [CommandStatusType](./literals.md#commandstatustype)
-- `StatusDetails`: `str`
-- `OutputS3Region`: `str`
-- `OutputS3BucketName`: `str`
-- `OutputS3KeyPrefix`: `str`
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `TargetCount`: `int`
-- `CompletedCount`: `int`
-- `ErrorCount`: `int`
-- `DeliveryTimedOutCount`: `int`
-- `ServiceRole`: `str`
-- `NotificationConfig`:
-  [NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef)
-- `CloudWatchOutputConfig`:
-  [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
-- `TimeoutSeconds`: `int`
-
-<a id="complianceexecutionsummarytypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: CommandStatusType](./literals.md#commandstatustype) 
+3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
+4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
 ## ComplianceExecutionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ComplianceExecutionSummaryTypeDef
+
+def get_value() -> ComplianceExecutionSummaryTypeDef:
+    return {
+        "ExecutionTime": ...,
+    }
 ```
 
-Required fields:
-
-- `ExecutionTime`: `datetime`
-
-Optional fields:
-
-- `ExecutionId`: `str`
-- `ExecutionType`: `str`
-
-<a id="complianceitementrytypedef"></a>
+```python title="Definition"
+class ComplianceExecutionSummaryTypeDef(TypedDict):
+    ExecutionTime: datetime,
+    ExecutionId: NotRequired[str],
+    ExecutionType: NotRequired[str],
+```
 
 ## ComplianceItemEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ComplianceItemEntryTypeDef
+
+def get_value() -> ComplianceItemEntryTypeDef:
+    return {
+        "Severity": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ComplianceItemEntryTypeDef(TypedDict):
+    Severity: ComplianceSeverityType,  # (1)
+    Status: ComplianceStatusType,  # (2)
+    Id: NotRequired[str],
+    Title: NotRequired[str],
+    Details: NotRequired[Mapping[str, str]],
+```
 
-- `Severity`: [ComplianceSeverityType](./literals.md#complianceseveritytype)
-- `Status`: [ComplianceStatusType](./literals.md#compliancestatustype)
-
-Optional fields:
-
-- `Id`: `str`
-- `Title`: `str`
-- `Details`: `Mapping`\[`str`, `str`\]
-
-<a id="complianceitemtypedef"></a>
-
+1. See [:material-code-brackets: ComplianceSeverityType](./literals.md#complianceseveritytype) 
+2. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
 ## ComplianceItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ComplianceItemTypeDef
+
+def get_value() -> ComplianceItemTypeDef:
+    return {
+        "ComplianceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComplianceItemTypeDef(TypedDict):
+    ComplianceType: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
+    Id: NotRequired[str],
+    Title: NotRequired[str],
+    Status: NotRequired[ComplianceStatusType],  # (1)
+    Severity: NotRequired[ComplianceSeverityType],  # (2)
+    ExecutionSummary: NotRequired[ComplianceExecutionSummaryTypeDef],  # (3)
+    Details: NotRequired[Dict[str, str]],
+```
 
-- `ComplianceType`: `str`
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-- `Id`: `str`
-- `Title`: `str`
-- `Status`: [ComplianceStatusType](./literals.md#compliancestatustype)
-- `Severity`: [ComplianceSeverityType](./literals.md#complianceseveritytype)
-- `ExecutionSummary`:
-  [ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef)
-- `Details`: `Dict`\[`str`, `str`\]
-
-<a id="compliancestringfiltertypedef"></a>
-
+1. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
+2. See [:material-code-brackets: ComplianceSeverityType](./literals.md#complianceseveritytype) 
+3. See [:material-code-braces: ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef) 
 ## ComplianceStringFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ComplianceStringFilterTypeDef
+
+def get_value() -> ComplianceStringFilterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComplianceStringFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+    Type: NotRequired[ComplianceQueryOperatorTypeType],  # (1)
+```
 
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-- `Type`:
-  [ComplianceQueryOperatorTypeType](./literals.md#compliancequeryoperatortypetype)
-
-<a id="compliancesummaryitemtypedef"></a>
-
+1. See [:material-code-brackets: ComplianceQueryOperatorTypeType](./literals.md#compliancequeryoperatortypetype) 
 ## ComplianceSummaryItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ComplianceSummaryItemTypeDef
+
+def get_value() -> ComplianceSummaryItemTypeDef:
+    return {
+        "ComplianceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComplianceSummaryItemTypeDef(TypedDict):
+    ComplianceType: NotRequired[str],
+    CompliantSummary: NotRequired[CompliantSummaryTypeDef],  # (1)
+    NonCompliantSummary: NotRequired[NonCompliantSummaryTypeDef],  # (2)
+```
 
-- `ComplianceType`: `str`
-- `CompliantSummary`:
-  [CompliantSummaryTypeDef](./type_defs.md#compliantsummarytypedef)
-- `NonCompliantSummary`:
-  [NonCompliantSummaryTypeDef](./type_defs.md#noncompliantsummarytypedef)
-
-<a id="compliantsummarytypedef"></a>
-
+1. See [:material-code-braces: CompliantSummaryTypeDef](./type_defs.md#compliantsummarytypedef) 
+2. See [:material-code-braces: NonCompliantSummaryTypeDef](./type_defs.md#noncompliantsummarytypedef) 
 ## CompliantSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CompliantSummaryTypeDef
+
+def get_value() -> CompliantSummaryTypeDef:
+    return {
+        "CompliantCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CompliantSummaryTypeDef(TypedDict):
+    CompliantCount: NotRequired[int],
+    SeveritySummary: NotRequired[SeveritySummaryTypeDef],  # (1)
+```
 
-- `CompliantCount`: `int`
-- `SeveritySummary`:
-  [SeveritySummaryTypeDef](./type_defs.md#severitysummarytypedef)
-
-<a id="createactivationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SeveritySummaryTypeDef](./type_defs.md#severitysummarytypedef) 
 ## CreateActivationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateActivationRequestRequestTypeDef
+
+def get_value() -> CreateActivationRequestRequestTypeDef:
+    return {
+        "IamRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateActivationRequestRequestTypeDef(TypedDict):
+    IamRole: str,
+    Description: NotRequired[str],
+    DefaultInstanceName: NotRequired[str],
+    RegistrationLimit: NotRequired[int],
+    ExpirationDate: NotRequired[Union[datetime, str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    RegistrationMetadata: NotRequired[Sequence[RegistrationMetadataItemTypeDef]],  # (2)
+```
 
-- `IamRole`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `DefaultInstanceName`: `str`
-- `RegistrationLimit`: `int`
-- `ExpirationDate`: `Union`\[`datetime`, `str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RegistrationMetadata`:
-  `Sequence`\[[RegistrationMetadataItemTypeDef](./type_defs.md#registrationmetadataitemtypedef)\]
-
-<a id="createactivationresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: RegistrationMetadataItemTypeDef](./type_defs.md#registrationmetadataitemtypedef) 
 ## CreateActivationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateActivationResultTypeDef
+
+def get_value() -> CreateActivationResultTypeDef:
+    return {
+        "ActivationId": ...,
+        "ActivationCode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateActivationResultTypeDef(TypedDict):
+    ActivationId: str,
+    ActivationCode: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ActivationId`: `str`
-- `ActivationCode`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createassociationbatchrequestentrytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAssociationBatchRequestEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateAssociationBatchRequestEntryTypeDef
+
+def get_value() -> CreateAssociationBatchRequestEntryTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssociationBatchRequestEntryTypeDef(TypedDict):
+    Name: str,
+    InstanceId: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    AutomationTargetParameterName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (2)
+    AssociationName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[Sequence[str]],
+    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `InstanceId`: `str`
-- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `AutomationTargetParameterName`: `str`
-- `DocumentVersion`: `str`
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `ScheduleExpression`: `str`
-- `OutputLocation`:
-  [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
-- `AssociationName`: `str`
-- `MaxErrors`: `str`
-- `MaxConcurrency`: `str`
-- `ComplianceSeverity`:
-  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
-- `SyncCompliance`:
-  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
-- `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `Sequence`\[`str`\]
-- `TargetLocations`:
-  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-
-<a id="createassociationbatchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 ## CreateAssociationBatchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateAssociationBatchRequestRequestTypeDef
+
+def get_value() -> CreateAssociationBatchRequestRequestTypeDef:
+    return {
+        "Entries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssociationBatchRequestRequestTypeDef(TypedDict):
+    Entries: Sequence[CreateAssociationBatchRequestEntryTypeDef],  # (1)
+```
 
-- `Entries`:
-  `Sequence`\[[CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef)\]
-
-<a id="createassociationbatchresulttypedef"></a>
-
+1. See [:material-code-braces: CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef) 
 ## CreateAssociationBatchResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateAssociationBatchResultTypeDef
+
+def get_value() -> CreateAssociationBatchResultTypeDef:
+    return {
+        "Successful": ...,
+        "Failed": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssociationBatchResultTypeDef(TypedDict):
+    Successful: List[AssociationDescriptionTypeDef],  # (1)
+    Failed: List[FailedCreateAssociationTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Successful`:
-  `List`\[[AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)\]
-- `Failed`:
-  `List`\[[FailedCreateAssociationTypeDef](./type_defs.md#failedcreateassociationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef) 
+2. See [:material-code-braces: FailedCreateAssociationTypeDef](./type_defs.md#failedcreateassociationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateAssociationRequestRequestTypeDef
+
+def get_value() -> CreateAssociationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssociationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DocumentVersion: NotRequired[str],
+    InstanceId: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (2)
+    AssociationName: NotRequired[str],
+    AutomationTargetParameterName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[Sequence[str]],
+    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `DocumentVersion`: `str`
-- `InstanceId`: `str`
-- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `ScheduleExpression`: `str`
-- `OutputLocation`:
-  [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
-- `AssociationName`: `str`
-- `AutomationTargetParameterName`: `str`
-- `MaxErrors`: `str`
-- `MaxConcurrency`: `str`
-- `ComplianceSeverity`:
-  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
-- `SyncCompliance`:
-  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
-- `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `Sequence`\[`str`\]
-- `TargetLocations`:
-  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-
-<a id="createassociationresulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 ## CreateAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateAssociationResultTypeDef
+
+def get_value() -> CreateAssociationResultTypeDef:
+    return {
+        "AssociationDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssociationResultTypeDef(TypedDict):
+    AssociationDescription: AssociationDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AssociationDescription`:
-  [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdocumentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDocumentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateDocumentRequestRequestTypeDef
+
+def get_value() -> CreateDocumentRequestRequestTypeDef:
+    return {
+        "Content": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDocumentRequestRequestTypeDef(TypedDict):
+    Content: str,
+    Name: str,
+    Requires: NotRequired[Sequence[DocumentRequiresTypeDef]],  # (1)
+    Attachments: NotRequired[Sequence[AttachmentsSourceTypeDef]],  # (2)
+    DisplayName: NotRequired[str],
+    VersionName: NotRequired[str],
+    DocumentType: NotRequired[DocumentTypeType],  # (3)
+    DocumentFormat: NotRequired[DocumentFormatType],  # (4)
+    TargetType: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+```
 
-- `Content`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `Requires`:
-  `Sequence`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
-- `Attachments`:
-  `Sequence`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
-- `DisplayName`: `str`
-- `VersionName`: `str`
-- `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
-- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
-- `TargetType`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdocumentresulttypedef"></a>
-
+1. See [:material-code-braces: DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef) 
+2. See [:material-code-braces: AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef) 
+3. See [:material-code-brackets: DocumentTypeType](./literals.md#documenttypetype) 
+4. See [:material-code-brackets: DocumentFormatType](./literals.md#documentformattype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDocumentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateDocumentResultTypeDef
+
+def get_value() -> CreateDocumentResultTypeDef:
+    return {
+        "DocumentDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDocumentResultTypeDef(TypedDict):
+    DocumentDescription: DocumentDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DocumentDescription`:
-  [DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmaintenancewindowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMaintenanceWindowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateMaintenanceWindowRequestRequestTypeDef
+
+def get_value() -> CreateMaintenanceWindowRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Schedule": ...,
+        "Duration": ...,
+        "Cutoff": ...,
+        "AllowUnassociatedTargets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMaintenanceWindowRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Schedule: str,
+    Duration: int,
+    Cutoff: int,
+    AllowUnassociatedTargets: bool,
+    Description: NotRequired[str],
+    StartDate: NotRequired[str],
+    EndDate: NotRequired[str],
+    ScheduleTimezone: NotRequired[str],
+    ScheduleOffset: NotRequired[int],
+    ClientToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `Schedule`: `str`
-- `Duration`: `int`
-- `Cutoff`: `int`
-- `AllowUnassociatedTargets`: `bool`
-
-Optional fields:
-
-- `Description`: `str`
-- `StartDate`: `str`
-- `EndDate`: `str`
-- `ScheduleTimezone`: `str`
-- `ScheduleOffset`: `int`
-- `ClientToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createmaintenancewindowresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateMaintenanceWindowResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateMaintenanceWindowResultTypeDef
+
+def get_value() -> CreateMaintenanceWindowResultTypeDef:
+    return {
+        "WindowId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMaintenanceWindowResultTypeDef(TypedDict):
+    WindowId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WindowId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createopsitemrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateOpsItemRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateOpsItemRequestRequestTypeDef
+
+def get_value() -> CreateOpsItemRequestRequestTypeDef:
+    return {
+        "Description": ...,
+        "Source": ...,
+        "Title": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOpsItemRequestRequestTypeDef(TypedDict):
+    Description: str,
+    Source: str,
+    Title: str,
+    OpsItemType: NotRequired[str],
+    OperationalData: NotRequired[Mapping[str, OpsItemDataValueTypeDef]],  # (1)
+    Notifications: NotRequired[Sequence[OpsItemNotificationTypeDef]],  # (2)
+    Priority: NotRequired[int],
+    RelatedOpsItems: NotRequired[Sequence[RelatedOpsItemTypeDef]],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    Category: NotRequired[str],
+    Severity: NotRequired[str],
+    ActualStartTime: NotRequired[Union[datetime, str]],
+    ActualEndTime: NotRequired[Union[datetime, str]],
+    PlannedStartTime: NotRequired[Union[datetime, str]],
+    PlannedEndTime: NotRequired[Union[datetime, str]],
+```
 
-- `Description`: `str`
-- `Source`: `str`
-- `Title`: `str`
-
-Optional fields:
-
-- `OpsItemType`: `str`
-- `OperationalData`: `Mapping`\[`str`,
-  [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
-- `Notifications`:
-  `Sequence`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
-- `Priority`: `int`
-- `RelatedOpsItems`:
-  `Sequence`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Category`: `str`
-- `Severity`: `str`
-- `ActualStartTime`: `Union`\[`datetime`, `str`\]
-- `ActualEndTime`: `Union`\[`datetime`, `str`\]
-- `PlannedStartTime`: `Union`\[`datetime`, `str`\]
-- `PlannedEndTime`: `Union`\[`datetime`, `str`\]
-
-<a id="createopsitemresponsetypedef"></a>
-
+1. See [:material-code-braces: OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef) 
+2. See [:material-code-braces: OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef) 
+3. See [:material-code-braces: RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateOpsItemResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateOpsItemResponseTypeDef
+
+def get_value() -> CreateOpsItemResponseTypeDef:
+    return {
+        "OpsItemId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOpsItemResponseTypeDef(TypedDict):
+    OpsItemId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OpsItemId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createopsmetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateOpsMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateOpsMetadataRequestRequestTypeDef
+
+def get_value() -> CreateOpsMetadataRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOpsMetadataRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Metadata: NotRequired[Mapping[str, MetadataValueTypeDef]],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `Metadata`: `Mapping`\[`str`,
-  [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createopsmetadataresulttypedef"></a>
-
+1. See [:material-code-braces: MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateOpsMetadataResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateOpsMetadataResultTypeDef
+
+def get_value() -> CreateOpsMetadataResultTypeDef:
+    return {
+        "OpsMetadataArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOpsMetadataResultTypeDef(TypedDict):
+    OpsMetadataArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OpsMetadataArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpatchbaselinerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePatchBaselineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreatePatchBaselineRequestRequestTypeDef
+
+def get_value() -> CreatePatchBaselineRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePatchBaselineRequestRequestTypeDef(TypedDict):
+    Name: str,
+    OperatingSystem: NotRequired[OperatingSystemType],  # (1)
+    GlobalFilters: NotRequired[PatchFilterGroupTypeDef],  # (2)
+    ApprovalRules: NotRequired[PatchRuleGroupTypeDef],  # (3)
+    ApprovedPatches: NotRequired[Sequence[str]],
+    ApprovedPatchesComplianceLevel: NotRequired[PatchComplianceLevelType],  # (4)
+    ApprovedPatchesEnableNonSecurity: NotRequired[bool],
+    RejectedPatches: NotRequired[Sequence[str]],
+    RejectedPatchesAction: NotRequired[PatchActionType],  # (5)
+    Description: NotRequired[str],
+    Sources: NotRequired[Sequence[PatchSourceTypeDef]],  # (6)
+    ClientToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (7)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `GlobalFilters`:
-  [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
-- `ApprovalRules`:
-  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `Sequence`\[`str`\]
-- `ApprovedPatchesComplianceLevel`:
-  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
-- `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `Sequence`\[`str`\]
-- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
-- `Description`: `str`
-- `Sources`:
-  `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
-- `ClientToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createpatchbaselineresulttypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+2. See [:material-code-braces: PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef) 
+3. See [:material-code-braces: PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef) 
+4. See [:material-code-brackets: PatchComplianceLevelType](./literals.md#patchcomplianceleveltype) 
+5. See [:material-code-brackets: PatchActionType](./literals.md#patchactiontype) 
+6. See [:material-code-braces: PatchSourceTypeDef](./type_defs.md#patchsourcetypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreatePatchBaselineResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreatePatchBaselineResultTypeDef
+
+def get_value() -> CreatePatchBaselineResultTypeDef:
+    return {
+        "BaselineId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePatchBaselineResultTypeDef(TypedDict):
+    BaselineId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BaselineId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createresourcedatasyncrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResourceDataSyncRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import CreateResourceDataSyncRequestRequestTypeDef
+
+def get_value() -> CreateResourceDataSyncRequestRequestTypeDef:
+    return {
+        "SyncName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResourceDataSyncRequestRequestTypeDef(TypedDict):
+    SyncName: str,
+    S3Destination: NotRequired[ResourceDataSyncS3DestinationTypeDef],  # (1)
+    SyncType: NotRequired[str],
+    SyncSource: NotRequired[ResourceDataSyncSourceTypeDef],  # (2)
+```
 
-- `SyncName`: `str`
-
-Optional fields:
-
-- `S3Destination`:
-  [ResourceDataSyncS3DestinationTypeDef](./type_defs.md#resourcedatasyncs3destinationtypedef)
-- `SyncType`: `str`
-- `SyncSource`:
-  [ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef)
-
-<a id="deleteactivationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceDataSyncS3DestinationTypeDef](./type_defs.md#resourcedatasyncs3destinationtypedef) 
+2. See [:material-code-braces: ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef) 
 ## DeleteActivationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteActivationRequestRequestTypeDef
+
+def get_value() -> DeleteActivationRequestRequestTypeDef:
+    return {
+        "ActivationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ActivationId`: `str`
-
-<a id="deleteassociationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteActivationRequestRequestTypeDef(TypedDict):
+    ActivationId: str,
+```
 
 ## DeleteAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteAssociationRequestRequestTypeDef
+
+def get_value() -> DeleteAssociationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `InstanceId`: `str`
-- `AssociationId`: `str`
-
-<a id="deletedocumentrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAssociationRequestRequestTypeDef(TypedDict):
+    Name: NotRequired[str],
+    InstanceId: NotRequired[str],
+    AssociationId: NotRequired[str],
+```
 
 ## DeleteDocumentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteDocumentRequestRequestTypeDef
+
+def get_value() -> DeleteDocumentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `DocumentVersion`: `str`
-- `VersionName`: `str`
-- `Force`: `bool`
-
-<a id="deleteinventoryrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDocumentRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DocumentVersion: NotRequired[str],
+    VersionName: NotRequired[str],
+    Force: NotRequired[bool],
+```
 
 ## DeleteInventoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteInventoryRequestRequestTypeDef
+
+def get_value() -> DeleteInventoryRequestRequestTypeDef:
+    return {
+        "TypeName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteInventoryRequestRequestTypeDef(TypedDict):
+    TypeName: str,
+    SchemaDeleteOption: NotRequired[InventorySchemaDeleteOptionType],  # (1)
+    DryRun: NotRequired[bool],
+    ClientToken: NotRequired[str],
+```
 
-- `TypeName`: `str`
-
-Optional fields:
-
-- `SchemaDeleteOption`:
-  [InventorySchemaDeleteOptionType](./literals.md#inventoryschemadeleteoptiontype)
-- `DryRun`: `bool`
-- `ClientToken`: `str`
-
-<a id="deleteinventoryresulttypedef"></a>
-
+1. See [:material-code-brackets: InventorySchemaDeleteOptionType](./literals.md#inventoryschemadeleteoptiontype) 
 ## DeleteInventoryResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteInventoryResultTypeDef
+
+def get_value() -> DeleteInventoryResultTypeDef:
+    return {
+        "DeletionId": ...,
+        "TypeName": ...,
+        "DeletionSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteInventoryResultTypeDef(TypedDict):
+    DeletionId: str,
+    TypeName: str,
+    DeletionSummary: InventoryDeletionSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeletionId`: `str`
-- `TypeName`: `str`
-- `DeletionSummary`:
-  [InventoryDeletionSummaryTypeDef](./type_defs.md#inventorydeletionsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletemaintenancewindowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InventoryDeletionSummaryTypeDef](./type_defs.md#inventorydeletionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteMaintenanceWindowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteMaintenanceWindowRequestRequestTypeDef
+
+def get_value() -> DeleteMaintenanceWindowRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowId`: `str`
-
-<a id="deletemaintenancewindowresulttypedef"></a>
+```python title="Definition"
+class DeleteMaintenanceWindowRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+```
 
 ## DeleteMaintenanceWindowResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteMaintenanceWindowResultTypeDef
+
+def get_value() -> DeleteMaintenanceWindowResultTypeDef:
+    return {
+        "WindowId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteMaintenanceWindowResultTypeDef(TypedDict):
+    WindowId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WindowId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteopsmetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteOpsMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteOpsMetadataRequestRequestTypeDef
+
+def get_value() -> DeleteOpsMetadataRequestRequestTypeDef:
+    return {
+        "OpsMetadataArn": ...,
+    }
 ```
 
-Required fields:
-
-- `OpsMetadataArn`: `str`
-
-<a id="deleteparameterrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteOpsMetadataRequestRequestTypeDef(TypedDict):
+    OpsMetadataArn: str,
+```
 
 ## DeleteParameterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteParameterRequestRequestTypeDef
+
+def get_value() -> DeleteParameterRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deleteparametersrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteParameterRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteParametersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteParametersRequestRequestTypeDef
+
+def get_value() -> DeleteParametersRequestRequestTypeDef:
+    return {
+        "Names": ...,
+    }
 ```
 
-Required fields:
-
-- `Names`: `Sequence`\[`str`\]
-
-<a id="deleteparametersresulttypedef"></a>
+```python title="Definition"
+class DeleteParametersRequestRequestTypeDef(TypedDict):
+    Names: Sequence[str],
+```
 
 ## DeleteParametersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteParametersResultTypeDef
+
+def get_value() -> DeleteParametersResultTypeDef:
+    return {
+        "DeletedParameters": ...,
+        "InvalidParameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteParametersResultTypeDef(TypedDict):
+    DeletedParameters: List[str],
+    InvalidParameters: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeletedParameters`: `List`\[`str`\]
-- `InvalidParameters`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletepatchbaselinerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeletePatchBaselineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeletePatchBaselineRequestRequestTypeDef
+
+def get_value() -> DeletePatchBaselineRequestRequestTypeDef:
+    return {
+        "BaselineId": ...,
+    }
 ```
 
-Required fields:
-
-- `BaselineId`: `str`
-
-<a id="deletepatchbaselineresulttypedef"></a>
+```python title="Definition"
+class DeletePatchBaselineRequestRequestTypeDef(TypedDict):
+    BaselineId: str,
+```
 
 ## DeletePatchBaselineResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeletePatchBaselineResultTypeDef
+
+def get_value() -> DeletePatchBaselineResultTypeDef:
+    return {
+        "BaselineId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeletePatchBaselineResultTypeDef(TypedDict):
+    BaselineId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BaselineId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourcedatasyncrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourceDataSyncRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeleteResourceDataSyncRequestRequestTypeDef
+
+def get_value() -> DeleteResourceDataSyncRequestRequestTypeDef:
+    return {
+        "SyncName": ...,
+    }
 ```
 
-Required fields:
-
-- `SyncName`: `str`
-
-Optional fields:
-
-- `SyncType`: `str`
-
-<a id="deregistermanagedinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourceDataSyncRequestRequestTypeDef(TypedDict):
+    SyncName: str,
+    SyncType: NotRequired[str],
+```
 
 ## DeregisterManagedInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeregisterManagedInstanceRequestRequestTypeDef
+
+def get_value() -> DeregisterManagedInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-<a id="deregisterpatchbaselineforpatchgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeregisterManagedInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+```
 
 ## DeregisterPatchBaselineForPatchGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeregisterPatchBaselineForPatchGroupRequestRequestTypeDef
+
+def get_value() -> DeregisterPatchBaselineForPatchGroupRequestRequestTypeDef:
+    return {
+        "BaselineId": ...,
+        "PatchGroup": ...,
+    }
 ```
 
-Required fields:
-
-- `BaselineId`: `str`
-- `PatchGroup`: `str`
-
-<a id="deregisterpatchbaselineforpatchgroupresulttypedef"></a>
+```python title="Definition"
+class DeregisterPatchBaselineForPatchGroupRequestRequestTypeDef(TypedDict):
+    BaselineId: str,
+    PatchGroup: str,
+```
 
 ## DeregisterPatchBaselineForPatchGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeregisterPatchBaselineForPatchGroupResultTypeDef
+
+def get_value() -> DeregisterPatchBaselineForPatchGroupResultTypeDef:
+    return {
+        "BaselineId": ...,
+        "PatchGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterPatchBaselineForPatchGroupResultTypeDef(TypedDict):
+    BaselineId: str,
+    PatchGroup: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BaselineId`: `str`
-- `PatchGroup`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deregistertargetfrommaintenancewindowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeregisterTargetFromMaintenanceWindowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeregisterTargetFromMaintenanceWindowRequestRequestTypeDef
+
+def get_value() -> DeregisterTargetFromMaintenanceWindowRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTargetId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowId`: `str`
-- `WindowTargetId`: `str`
-
-Optional fields:
-
-- `Safe`: `bool`
-
-<a id="deregistertargetfrommaintenancewindowresulttypedef"></a>
+```python title="Definition"
+class DeregisterTargetFromMaintenanceWindowRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    WindowTargetId: str,
+    Safe: NotRequired[bool],
+```
 
 ## DeregisterTargetFromMaintenanceWindowResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeregisterTargetFromMaintenanceWindowResultTypeDef
+
+def get_value() -> DeregisterTargetFromMaintenanceWindowResultTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTargetId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterTargetFromMaintenanceWindowResultTypeDef(TypedDict):
+    WindowId: str,
+    WindowTargetId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WindowId`: `str`
-- `WindowTargetId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deregistertaskfrommaintenancewindowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeregisterTaskFromMaintenanceWindowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeregisterTaskFromMaintenanceWindowRequestRequestTypeDef
+
+def get_value() -> DeregisterTaskFromMaintenanceWindowRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTaskId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowId`: `str`
-- `WindowTaskId`: `str`
-
-<a id="deregistertaskfrommaintenancewindowresulttypedef"></a>
+```python title="Definition"
+class DeregisterTaskFromMaintenanceWindowRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    WindowTaskId: str,
+```
 
 ## DeregisterTaskFromMaintenanceWindowResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DeregisterTaskFromMaintenanceWindowResultTypeDef
+
+def get_value() -> DeregisterTaskFromMaintenanceWindowResultTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTaskId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterTaskFromMaintenanceWindowResultTypeDef(TypedDict):
+    WindowId: str,
+    WindowTaskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WindowId`: `str`
-- `WindowTaskId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeactivationsfiltertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeActivationsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeActivationsFilterTypeDef
+
+def get_value() -> DescribeActivationsFilterTypeDef:
+    return {
+        "FilterKey": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeActivationsFilterTypeDef(TypedDict):
+    FilterKey: NotRequired[DescribeActivationsFilterKeysType],  # (1)
+    FilterValues: NotRequired[Sequence[str]],
+```
 
-- `FilterKey`:
-  [DescribeActivationsFilterKeysType](./literals.md#describeactivationsfilterkeystype)
-- `FilterValues`: `Sequence`\[`str`\]
+1. See [:material-code-brackets: DescribeActivationsFilterKeysType](./literals.md#describeactivationsfilterkeystype) 
+## DescribeActivationsRequestDescribeActivationsPaginateTypeDef
 
-<a id="describeactivationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeActivationsRequestDescribeActivationsPaginateTypeDef
 
+def get_value() -> DescribeActivationsRequestDescribeActivationsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeActivationsRequestDescribeActivationsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[DescribeActivationsFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeActivationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeActivationsRequestRequestTypeDef
+
+def get_value() -> DescribeActivationsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeActivationsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[DescribeActivationsFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeactivationsresulttypedef"></a>
-
+1. See [:material-code-braces: DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef) 
 ## DescribeActivationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeActivationsResultTypeDef
+
+def get_value() -> DescribeActivationsResultTypeDef:
+    return {
+        "ActivationList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeActivationsResultTypeDef(TypedDict):
+    ActivationList: List[ActivationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ActivationList`:
-  `List`\[[ActivationTypeDef](./type_defs.md#activationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ActivationTypeDef](./type_defs.md#activationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAssociationExecutionTargetsRequestDescribeAssociationExecutionTargetsPaginateTypeDef
 
-<a id="describeassociationexecutiontargetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionTargetsRequestDescribeAssociationExecutionTargetsPaginateTypeDef
 
+def get_value() -> DescribeAssociationExecutionTargetsRequestDescribeAssociationExecutionTargetsPaginateTypeDef:
+    return {
+        "AssociationId": ...,
+        "ExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAssociationExecutionTargetsRequestDescribeAssociationExecutionTargetsPaginateTypeDef(TypedDict):
+    AssociationId: str,
+    ExecutionId: str,
+    Filters: NotRequired[Sequence[AssociationExecutionTargetsFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAssociationExecutionTargetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionTargetsRequestRequestTypeDef
+
+def get_value() -> DescribeAssociationExecutionTargetsRequestRequestTypeDef:
+    return {
+        "AssociationId": ...,
+        "ExecutionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAssociationExecutionTargetsRequestRequestTypeDef(TypedDict):
+    AssociationId: str,
+    ExecutionId: str,
+    Filters: NotRequired[Sequence[AssociationExecutionTargetsFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AssociationId`: `str`
-- `ExecutionId`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeassociationexecutiontargetsresulttypedef"></a>
-
+1. See [:material-code-braces: AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef) 
 ## DescribeAssociationExecutionTargetsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionTargetsResultTypeDef
+
+def get_value() -> DescribeAssociationExecutionTargetsResultTypeDef:
+    return {
+        "AssociationExecutionTargets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAssociationExecutionTargetsResultTypeDef(TypedDict):
+    AssociationExecutionTargets: List[AssociationExecutionTargetTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AssociationExecutionTargets`:
-  `List`\[[AssociationExecutionTargetTypeDef](./type_defs.md#associationexecutiontargettypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssociationExecutionTargetTypeDef](./type_defs.md#associationexecutiontargettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAssociationExecutionsRequestDescribeAssociationExecutionsPaginateTypeDef
 
-<a id="describeassociationexecutionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionsRequestDescribeAssociationExecutionsPaginateTypeDef
 
+def get_value() -> DescribeAssociationExecutionsRequestDescribeAssociationExecutionsPaginateTypeDef:
+    return {
+        "AssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAssociationExecutionsRequestDescribeAssociationExecutionsPaginateTypeDef(TypedDict):
+    AssociationId: str,
+    Filters: NotRequired[Sequence[AssociationExecutionFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAssociationExecutionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionsRequestRequestTypeDef
+
+def get_value() -> DescribeAssociationExecutionsRequestRequestTypeDef:
+    return {
+        "AssociationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAssociationExecutionsRequestRequestTypeDef(TypedDict):
+    AssociationId: str,
+    Filters: NotRequired[Sequence[AssociationExecutionFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AssociationId`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeassociationexecutionsresulttypedef"></a>
-
+1. See [:material-code-braces: AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef) 
 ## DescribeAssociationExecutionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAssociationExecutionsResultTypeDef
+
+def get_value() -> DescribeAssociationExecutionsResultTypeDef:
+    return {
+        "AssociationExecutions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAssociationExecutionsResultTypeDef(TypedDict):
+    AssociationExecutions: List[AssociationExecutionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AssociationExecutions`:
-  `List`\[[AssociationExecutionTypeDef](./type_defs.md#associationexecutiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssociationExecutionTypeDef](./type_defs.md#associationexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAssociationRequestRequestTypeDef
+
+def get_value() -> DescribeAssociationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `InstanceId`: `str`
-- `AssociationId`: `str`
-- `AssociationVersion`: `str`
-
-<a id="describeassociationresulttypedef"></a>
+```python title="Definition"
+class DescribeAssociationRequestRequestTypeDef(TypedDict):
+    Name: NotRequired[str],
+    InstanceId: NotRequired[str],
+    AssociationId: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+```
 
 ## DescribeAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAssociationResultTypeDef
+
+def get_value() -> DescribeAssociationResultTypeDef:
+    return {
+        "AssociationDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAssociationResultTypeDef(TypedDict):
+    AssociationDescription: AssociationDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AssociationDescription`:
-  [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAutomationExecutionsRequestDescribeAutomationExecutionsPaginateTypeDef
 
-<a id="describeautomationexecutionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsRequestDescribeAutomationExecutionsPaginateTypeDef
 
+def get_value() -> DescribeAutomationExecutionsRequestDescribeAutomationExecutionsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAutomationExecutionsRequestDescribeAutomationExecutionsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[AutomationExecutionFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAutomationExecutionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsRequestRequestTypeDef
+
+def get_value() -> DescribeAutomationExecutionsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeAutomationExecutionsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[AutomationExecutionFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeautomationexecutionsresulttypedef"></a>
-
+1. See [:material-code-braces: AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef) 
 ## DescribeAutomationExecutionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAutomationExecutionsResultTypeDef
+
+def get_value() -> DescribeAutomationExecutionsResultTypeDef:
+    return {
+        "AutomationExecutionMetadataList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAutomationExecutionsResultTypeDef(TypedDict):
+    AutomationExecutionMetadataList: List[AutomationExecutionMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AutomationExecutionMetadataList`:
-  `List`\[[AutomationExecutionMetadataTypeDef](./type_defs.md#automationexecutionmetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AutomationExecutionMetadataTypeDef](./type_defs.md#automationexecutionmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAutomationStepExecutionsRequestDescribeAutomationStepExecutionsPaginateTypeDef
 
-<a id="describeautomationstepexecutionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeAutomationStepExecutionsRequestDescribeAutomationStepExecutionsPaginateTypeDef
 
+def get_value() -> DescribeAutomationStepExecutionsRequestDescribeAutomationStepExecutionsPaginateTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAutomationStepExecutionsRequestDescribeAutomationStepExecutionsPaginateTypeDef(TypedDict):
+    AutomationExecutionId: str,
+    Filters: NotRequired[Sequence[StepExecutionFilterTypeDef]],  # (1)
+    ReverseOrder: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAutomationStepExecutionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAutomationStepExecutionsRequestRequestTypeDef
+
+def get_value() -> DescribeAutomationStepExecutionsRequestRequestTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAutomationStepExecutionsRequestRequestTypeDef(TypedDict):
+    AutomationExecutionId: str,
+    Filters: NotRequired[Sequence[StepExecutionFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ReverseOrder: NotRequired[bool],
+```
 
-- `AutomationExecutionId`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ReverseOrder`: `bool`
-
-<a id="describeautomationstepexecutionsresulttypedef"></a>
-
+1. See [:material-code-braces: StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef) 
 ## DescribeAutomationStepExecutionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAutomationStepExecutionsResultTypeDef
+
+def get_value() -> DescribeAutomationStepExecutionsResultTypeDef:
+    return {
+        "StepExecutions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAutomationStepExecutionsResultTypeDef(TypedDict):
+    StepExecutions: List[StepExecutionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StepExecutions`:
-  `List`\[[StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StepExecutionTypeDef](./type_defs.md#stepexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAvailablePatchesRequestDescribeAvailablePatchesPaginateTypeDef
 
-<a id="describeavailablepatchesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeAvailablePatchesRequestDescribeAvailablePatchesPaginateTypeDef
 
+def get_value() -> DescribeAvailablePatchesRequestDescribeAvailablePatchesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAvailablePatchesRequestDescribeAvailablePatchesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAvailablePatchesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAvailablePatchesRequestRequestTypeDef
+
+def get_value() -> DescribeAvailablePatchesRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeAvailablePatchesRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeavailablepatchesresulttypedef"></a>
-
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
 ## DescribeAvailablePatchesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeAvailablePatchesResultTypeDef
+
+def get_value() -> DescribeAvailablePatchesResultTypeDef:
+    return {
+        "Patches": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAvailablePatchesResultTypeDef(TypedDict):
+    Patches: List[PatchTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Patches`: `List`\[[PatchTypeDef](./type_defs.md#patchtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedocumentpermissionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PatchTypeDef](./type_defs.md#patchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDocumentPermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeDocumentPermissionRequestRequestTypeDef
+
+def get_value() -> DescribeDocumentPermissionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "PermissionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDocumentPermissionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    PermissionType: DocumentPermissionTypeType,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Name`: `str`
-- `PermissionType`: `Literal['Share']` (see
-  [DocumentPermissionTypeType](./literals.md#documentpermissiontypetype))
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describedocumentpermissionresponsetypedef"></a>
-
+1. See [:material-code-brackets: DocumentPermissionTypeType](./literals.md#documentpermissiontypetype) 
 ## DescribeDocumentPermissionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeDocumentPermissionResponseTypeDef
+
+def get_value() -> DescribeDocumentPermissionResponseTypeDef:
+    return {
+        "AccountIds": ...,
+        "AccountSharingInfoList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDocumentPermissionResponseTypeDef(TypedDict):
+    AccountIds: List[str],
+    AccountSharingInfoList: List[AccountSharingInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountIds`: `List`\[`str`\]
-- `AccountSharingInfoList`:
-  `List`\[[AccountSharingInfoTypeDef](./type_defs.md#accountsharinginfotypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedocumentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountSharingInfoTypeDef](./type_defs.md#accountsharinginfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDocumentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeDocumentRequestRequestTypeDef
+
+def get_value() -> DescribeDocumentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `DocumentVersion`: `str`
-- `VersionName`: `str`
-
-<a id="describedocumentresulttypedef"></a>
+```python title="Definition"
+class DescribeDocumentRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DocumentVersion: NotRequired[str],
+    VersionName: NotRequired[str],
+```
 
 ## DescribeDocumentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeDocumentResultTypeDef
+
+def get_value() -> DescribeDocumentResultTypeDef:
+    return {
+        "Document": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDocumentResultTypeDef(TypedDict):
+    Document: DocumentDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Document`:
-  [DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEffectiveInstanceAssociationsRequestDescribeEffectiveInstanceAssociationsPaginateTypeDef
 
-<a id="describeeffectiveinstanceassociationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeEffectiveInstanceAssociationsRequestDescribeEffectiveInstanceAssociationsPaginateTypeDef
 
+def get_value() -> DescribeEffectiveInstanceAssociationsRequestDescribeEffectiveInstanceAssociationsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEffectiveInstanceAssociationsRequestDescribeEffectiveInstanceAssociationsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEffectiveInstanceAssociationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeEffectiveInstanceAssociationsRequestRequestTypeDef
+
+def get_value() -> DescribeEffectiveInstanceAssociationsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeeffectiveinstanceassociationsresulttypedef"></a>
+```python title="Definition"
+class DescribeEffectiveInstanceAssociationsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeEffectiveInstanceAssociationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeEffectiveInstanceAssociationsResultTypeDef
+
+def get_value() -> DescribeEffectiveInstanceAssociationsResultTypeDef:
+    return {
+        "Associations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEffectiveInstanceAssociationsResultTypeDef(TypedDict):
+    Associations: List[InstanceAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Associations`:
-  `List`\[[InstanceAssociationTypeDef](./type_defs.md#instanceassociationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceAssociationTypeDef](./type_defs.md#instanceassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEffectivePatchesForPatchBaselineRequestDescribeEffectivePatchesForPatchBaselinePaginateTypeDef
 
-<a id="describeeffectivepatchesforpatchbaselinerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeEffectivePatchesForPatchBaselineRequestDescribeEffectivePatchesForPatchBaselinePaginateTypeDef
 
+def get_value() -> DescribeEffectivePatchesForPatchBaselineRequestDescribeEffectivePatchesForPatchBaselinePaginateTypeDef:
+    return {
+        "BaselineId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEffectivePatchesForPatchBaselineRequestDescribeEffectivePatchesForPatchBaselinePaginateTypeDef(TypedDict):
+    BaselineId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEffectivePatchesForPatchBaselineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeEffectivePatchesForPatchBaselineRequestRequestTypeDef
+
+def get_value() -> DescribeEffectivePatchesForPatchBaselineRequestRequestTypeDef:
+    return {
+        "BaselineId": ...,
+    }
 ```
 
-Required fields:
-
-- `BaselineId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeeffectivepatchesforpatchbaselineresulttypedef"></a>
+```python title="Definition"
+class DescribeEffectivePatchesForPatchBaselineRequestRequestTypeDef(TypedDict):
+    BaselineId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeEffectivePatchesForPatchBaselineResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeEffectivePatchesForPatchBaselineResultTypeDef
+
+def get_value() -> DescribeEffectivePatchesForPatchBaselineResultTypeDef:
+    return {
+        "EffectivePatches": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEffectivePatchesForPatchBaselineResultTypeDef(TypedDict):
+    EffectivePatches: List[EffectivePatchTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EffectivePatches`:
-  `List`\[[EffectivePatchTypeDef](./type_defs.md#effectivepatchtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EffectivePatchTypeDef](./type_defs.md#effectivepatchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInstanceAssociationsStatusRequestDescribeInstanceAssociationsStatusPaginateTypeDef
 
-<a id="describeinstanceassociationsstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeInstanceAssociationsStatusRequestDescribeInstanceAssociationsStatusPaginateTypeDef
 
+def get_value() -> DescribeInstanceAssociationsStatusRequestDescribeInstanceAssociationsStatusPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstanceAssociationsStatusRequestDescribeInstanceAssociationsStatusPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeInstanceAssociationsStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstanceAssociationsStatusRequestRequestTypeDef
+
+def get_value() -> DescribeInstanceAssociationsStatusRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeinstanceassociationsstatusresulttypedef"></a>
+```python title="Definition"
+class DescribeInstanceAssociationsStatusRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeInstanceAssociationsStatusResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstanceAssociationsStatusResultTypeDef
+
+def get_value() -> DescribeInstanceAssociationsStatusResultTypeDef:
+    return {
+        "InstanceAssociationStatusInfos": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstanceAssociationsStatusResultTypeDef(TypedDict):
+    InstanceAssociationStatusInfos: List[InstanceAssociationStatusInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceAssociationStatusInfos`:
-  `List`\[[InstanceAssociationStatusInfoTypeDef](./type_defs.md#instanceassociationstatusinfotypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceAssociationStatusInfoTypeDef](./type_defs.md#instanceassociationstatusinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInstanceInformationRequestDescribeInstanceInformationPaginateTypeDef
 
-<a id="describeinstanceinformationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeInstanceInformationRequestDescribeInstanceInformationPaginateTypeDef
 
+def get_value() -> DescribeInstanceInformationRequestDescribeInstanceInformationPaginateTypeDef:
+    return {
+        "InstanceInformationFilterList": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstanceInformationRequestDescribeInstanceInformationPaginateTypeDef(TypedDict):
+    InstanceInformationFilterList: NotRequired[Sequence[InstanceInformationFilterTypeDef]],  # (1)
+    Filters: NotRequired[Sequence[InstanceInformationStringFilterTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef) 
+2. See [:material-code-braces: InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeInstanceInformationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstanceInformationRequestRequestTypeDef
+
+def get_value() -> DescribeInstanceInformationRequestRequestTypeDef:
+    return {
+        "InstanceInformationFilterList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeInstanceInformationRequestRequestTypeDef(TypedDict):
+    InstanceInformationFilterList: NotRequired[Sequence[InstanceInformationFilterTypeDef]],  # (1)
+    Filters: NotRequired[Sequence[InstanceInformationStringFilterTypeDef]],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `InstanceInformationFilterList`:
-  `Sequence`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
-- `Filters`:
-  `Sequence`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeinstanceinformationresulttypedef"></a>
-
+1. See [:material-code-braces: InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef) 
+2. See [:material-code-braces: InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef) 
 ## DescribeInstanceInformationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstanceInformationResultTypeDef
+
+def get_value() -> DescribeInstanceInformationResultTypeDef:
+    return {
+        "InstanceInformationList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstanceInformationResultTypeDef(TypedDict):
+    InstanceInformationList: List[InstanceInformationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceInformationList`:
-  `List`\[[InstanceInformationTypeDef](./type_defs.md#instanceinformationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceInformationTypeDef](./type_defs.md#instanceinformationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInstancePatchStatesForPatchGroupRequestDescribeInstancePatchStatesForPatchGroupPaginateTypeDef
 
-<a id="describeinstancepatchstatesforpatchgrouprequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesForPatchGroupRequestDescribeInstancePatchStatesForPatchGroupPaginateTypeDef
 
+def get_value() -> DescribeInstancePatchStatesForPatchGroupRequestDescribeInstancePatchStatesForPatchGroupPaginateTypeDef:
+    return {
+        "PatchGroup": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstancePatchStatesForPatchGroupRequestDescribeInstancePatchStatesForPatchGroupPaginateTypeDef(TypedDict):
+    PatchGroup: str,
+    Filters: NotRequired[Sequence[InstancePatchStateFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeInstancePatchStatesForPatchGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesForPatchGroupRequestRequestTypeDef
+
+def get_value() -> DescribeInstancePatchStatesForPatchGroupRequestRequestTypeDef:
+    return {
+        "PatchGroup": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstancePatchStatesForPatchGroupRequestRequestTypeDef(TypedDict):
+    PatchGroup: str,
+    Filters: NotRequired[Sequence[InstancePatchStateFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `PatchGroup`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeinstancepatchstatesforpatchgroupresulttypedef"></a>
-
+1. See [:material-code-braces: InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef) 
 ## DescribeInstancePatchStatesForPatchGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesForPatchGroupResultTypeDef
+
+def get_value() -> DescribeInstancePatchStatesForPatchGroupResultTypeDef:
+    return {
+        "InstancePatchStates": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstancePatchStatesForPatchGroupResultTypeDef(TypedDict):
+    InstancePatchStates: List[InstancePatchStateTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstancePatchStates`:
-  `List`\[[InstancePatchStateTypeDef](./type_defs.md#instancepatchstatetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstancePatchStateTypeDef](./type_defs.md#instancepatchstatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInstancePatchStatesRequestDescribeInstancePatchStatesPaginateTypeDef
 
-<a id="describeinstancepatchstatesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesRequestDescribeInstancePatchStatesPaginateTypeDef
 
+def get_value() -> DescribeInstancePatchStatesRequestDescribeInstancePatchStatesPaginateTypeDef:
+    return {
+        "InstanceIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstancePatchStatesRequestDescribeInstancePatchStatesPaginateTypeDef(TypedDict):
+    InstanceIds: Sequence[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeInstancePatchStatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesRequestRequestTypeDef
+
+def get_value() -> DescribeInstancePatchStatesRequestRequestTypeDef:
+    return {
+        "InstanceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeinstancepatchstatesresulttypedef"></a>
+```python title="Definition"
+class DescribeInstancePatchStatesRequestRequestTypeDef(TypedDict):
+    InstanceIds: Sequence[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeInstancePatchStatesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstancePatchStatesResultTypeDef
+
+def get_value() -> DescribeInstancePatchStatesResultTypeDef:
+    return {
+        "InstancePatchStates": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstancePatchStatesResultTypeDef(TypedDict):
+    InstancePatchStates: List[InstancePatchStateTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstancePatchStates`:
-  `List`\[[InstancePatchStateTypeDef](./type_defs.md#instancepatchstatetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstancePatchStateTypeDef](./type_defs.md#instancepatchstatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInstancePatchesRequestDescribeInstancePatchesPaginateTypeDef
 
-<a id="describeinstancepatchesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeInstancePatchesRequestDescribeInstancePatchesPaginateTypeDef
 
+def get_value() -> DescribeInstancePatchesRequestDescribeInstancePatchesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstancePatchesRequestDescribeInstancePatchesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeInstancePatchesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstancePatchesRequestRequestTypeDef
+
+def get_value() -> DescribeInstancePatchesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstancePatchesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeinstancepatchesresulttypedef"></a>
-
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
 ## DescribeInstancePatchesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInstancePatchesResultTypeDef
+
+def get_value() -> DescribeInstancePatchesResultTypeDef:
+    return {
+        "Patches": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstancePatchesResultTypeDef(TypedDict):
+    Patches: List[PatchComplianceDataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Patches`:
-  `List`\[[PatchComplianceDataTypeDef](./type_defs.md#patchcompliancedatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PatchComplianceDataTypeDef](./type_defs.md#patchcompliancedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInventoryDeletionsRequestDescribeInventoryDeletionsPaginateTypeDef
 
-<a id="describeinventorydeletionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeInventoryDeletionsRequestDescribeInventoryDeletionsPaginateTypeDef
 
+def get_value() -> DescribeInventoryDeletionsRequestDescribeInventoryDeletionsPaginateTypeDef:
+    return {
+        "DeletionId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInventoryDeletionsRequestDescribeInventoryDeletionsPaginateTypeDef(TypedDict):
+    DeletionId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeInventoryDeletionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInventoryDeletionsRequestRequestTypeDef
+
+def get_value() -> DescribeInventoryDeletionsRequestRequestTypeDef:
+    return {
+        "DeletionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeletionId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeinventorydeletionsresulttypedef"></a>
+```python title="Definition"
+class DescribeInventoryDeletionsRequestRequestTypeDef(TypedDict):
+    DeletionId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeInventoryDeletionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeInventoryDeletionsResultTypeDef
+
+def get_value() -> DescribeInventoryDeletionsResultTypeDef:
+    return {
+        "InventoryDeletions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInventoryDeletionsResultTypeDef(TypedDict):
+    InventoryDeletions: List[InventoryDeletionStatusItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InventoryDeletions`:
-  `List`\[[InventoryDeletionStatusItemTypeDef](./type_defs.md#inventorydeletionstatusitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InventoryDeletionStatusItemTypeDef](./type_defs.md#inventorydeletionstatusitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowExecutionTaskInvocationsRequestDescribeMaintenanceWindowExecutionTaskInvocationsPaginateTypeDef
 
-<a id="describemaintenancewindowexecutiontaskinvocationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTaskInvocationsRequestDescribeMaintenanceWindowExecutionTaskInvocationsPaginateTypeDef
 
+def get_value() -> DescribeMaintenanceWindowExecutionTaskInvocationsRequestDescribeMaintenanceWindowExecutionTaskInvocationsPaginateTypeDef:
+    return {
+        "WindowExecutionId": ...,
+        "TaskId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionTaskInvocationsRequestDescribeMaintenanceWindowExecutionTaskInvocationsPaginateTypeDef(TypedDict):
+    WindowExecutionId: str,
+    TaskId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMaintenanceWindowExecutionTaskInvocationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTaskInvocationsRequestRequestTypeDef
+
+def get_value() -> DescribeMaintenanceWindowExecutionTaskInvocationsRequestRequestTypeDef:
+    return {
+        "WindowExecutionId": ...,
+        "TaskId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionTaskInvocationsRequestRequestTypeDef(TypedDict):
+    WindowExecutionId: str,
+    TaskId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `WindowExecutionId`: `str`
-- `TaskId`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describemaintenancewindowexecutiontaskinvocationsresulttypedef"></a>
-
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
 ## DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef:
+    return {
+        "WindowExecutionTaskInvocationIdentities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef(TypedDict):
+    WindowExecutionTaskInvocationIdentities: List[MaintenanceWindowExecutionTaskInvocationIdentityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WindowExecutionTaskInvocationIdentities`:
-  `List`\[[MaintenanceWindowExecutionTaskInvocationIdentityTypeDef](./type_defs.md#maintenancewindowexecutiontaskinvocationidentitytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MaintenanceWindowExecutionTaskInvocationIdentityTypeDef](./type_defs.md#maintenancewindowexecutiontaskinvocationidentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowExecutionTasksRequestDescribeMaintenanceWindowExecutionTasksPaginateTypeDef
 
-<a id="describemaintenancewindowexecutiontasksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTasksRequestDescribeMaintenanceWindowExecutionTasksPaginateTypeDef
 
+def get_value() -> DescribeMaintenanceWindowExecutionTasksRequestDescribeMaintenanceWindowExecutionTasksPaginateTypeDef:
+    return {
+        "WindowExecutionId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionTasksRequestDescribeMaintenanceWindowExecutionTasksPaginateTypeDef(TypedDict):
+    WindowExecutionId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMaintenanceWindowExecutionTasksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTasksRequestRequestTypeDef
+
+def get_value() -> DescribeMaintenanceWindowExecutionTasksRequestRequestTypeDef:
+    return {
+        "WindowExecutionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionTasksRequestRequestTypeDef(TypedDict):
+    WindowExecutionId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `WindowExecutionId`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describemaintenancewindowexecutiontasksresulttypedef"></a>
-
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
 ## DescribeMaintenanceWindowExecutionTasksResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionTasksResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowExecutionTasksResultTypeDef:
+    return {
+        "WindowExecutionTaskIdentities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionTasksResultTypeDef(TypedDict):
+    WindowExecutionTaskIdentities: List[MaintenanceWindowExecutionTaskIdentityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WindowExecutionTaskIdentities`:
-  `List`\[[MaintenanceWindowExecutionTaskIdentityTypeDef](./type_defs.md#maintenancewindowexecutiontaskidentitytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MaintenanceWindowExecutionTaskIdentityTypeDef](./type_defs.md#maintenancewindowexecutiontaskidentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowExecutionsRequestDescribeMaintenanceWindowExecutionsPaginateTypeDef
 
-<a id="describemaintenancewindowexecutionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionsRequestDescribeMaintenanceWindowExecutionsPaginateTypeDef
 
+def get_value() -> DescribeMaintenanceWindowExecutionsRequestDescribeMaintenanceWindowExecutionsPaginateTypeDef:
+    return {
+        "WindowId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionsRequestDescribeMaintenanceWindowExecutionsPaginateTypeDef(TypedDict):
+    WindowId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMaintenanceWindowExecutionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionsRequestRequestTypeDef
+
+def get_value() -> DescribeMaintenanceWindowExecutionsRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionsRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `WindowId`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describemaintenancewindowexecutionsresulttypedef"></a>
-
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
 ## DescribeMaintenanceWindowExecutionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowExecutionsResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowExecutionsResultTypeDef:
+    return {
+        "WindowExecutions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowExecutionsResultTypeDef(TypedDict):
+    WindowExecutions: List[MaintenanceWindowExecutionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WindowExecutions`:
-  `List`\[[MaintenanceWindowExecutionTypeDef](./type_defs.md#maintenancewindowexecutiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MaintenanceWindowExecutionTypeDef](./type_defs.md#maintenancewindowexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowScheduleRequestDescribeMaintenanceWindowSchedulePaginateTypeDef
 
-<a id="describemaintenancewindowschedulerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowScheduleRequestDescribeMaintenanceWindowSchedulePaginateTypeDef
 
+def get_value() -> DescribeMaintenanceWindowScheduleRequestDescribeMaintenanceWindowSchedulePaginateTypeDef:
+    return {
+        "WindowId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowScheduleRequestDescribeMaintenanceWindowSchedulePaginateTypeDef(TypedDict):
+    WindowId: NotRequired[str],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    ResourceType: NotRequired[MaintenanceWindowResourceTypeType],  # (2)
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype) 
+3. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMaintenanceWindowScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowScheduleRequestRequestTypeDef
+
+def get_value() -> DescribeMaintenanceWindowScheduleRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeMaintenanceWindowScheduleRequestRequestTypeDef(TypedDict):
+    WindowId: NotRequired[str],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    ResourceType: NotRequired[MaintenanceWindowResourceTypeType],  # (2)
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (3)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `WindowId`: `str`
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `ResourceType`:
-  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describemaintenancewindowscheduleresulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype) 
+3. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
 ## DescribeMaintenanceWindowScheduleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowScheduleResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowScheduleResultTypeDef:
+    return {
+        "ScheduledWindowExecutions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowScheduleResultTypeDef(TypedDict):
+    ScheduledWindowExecutions: List[ScheduledWindowExecutionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ScheduledWindowExecutions`:
-  `List`\[[ScheduledWindowExecutionTypeDef](./type_defs.md#scheduledwindowexecutiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ScheduledWindowExecutionTypeDef](./type_defs.md#scheduledwindowexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowTargetsRequestDescribeMaintenanceWindowTargetsPaginateTypeDef
 
-<a id="describemaintenancewindowtargetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTargetsRequestDescribeMaintenanceWindowTargetsPaginateTypeDef
 
+def get_value() -> DescribeMaintenanceWindowTargetsRequestDescribeMaintenanceWindowTargetsPaginateTypeDef:
+    return {
+        "WindowId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowTargetsRequestDescribeMaintenanceWindowTargetsPaginateTypeDef(TypedDict):
+    WindowId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMaintenanceWindowTargetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTargetsRequestRequestTypeDef
+
+def get_value() -> DescribeMaintenanceWindowTargetsRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowTargetsRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `WindowId`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describemaintenancewindowtargetsresulttypedef"></a>
-
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
 ## DescribeMaintenanceWindowTargetsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTargetsResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowTargetsResultTypeDef:
+    return {
+        "Targets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowTargetsResultTypeDef(TypedDict):
+    Targets: List[MaintenanceWindowTargetTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Targets`:
-  `List`\[[MaintenanceWindowTargetTypeDef](./type_defs.md#maintenancewindowtargettypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MaintenanceWindowTargetTypeDef](./type_defs.md#maintenancewindowtargettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowTasksRequestDescribeMaintenanceWindowTasksPaginateTypeDef
 
-<a id="describemaintenancewindowtasksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTasksRequestDescribeMaintenanceWindowTasksPaginateTypeDef
 
+def get_value() -> DescribeMaintenanceWindowTasksRequestDescribeMaintenanceWindowTasksPaginateTypeDef:
+    return {
+        "WindowId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowTasksRequestDescribeMaintenanceWindowTasksPaginateTypeDef(TypedDict):
+    WindowId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMaintenanceWindowTasksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTasksRequestRequestTypeDef
+
+def get_value() -> DescribeMaintenanceWindowTasksRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowTasksRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `WindowId`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describemaintenancewindowtasksresulttypedef"></a>
-
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
 ## DescribeMaintenanceWindowTasksResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowTasksResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowTasksResultTypeDef:
+    return {
+        "Tasks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowTasksResultTypeDef(TypedDict):
+    Tasks: List[MaintenanceWindowTaskTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tasks`:
-  `List`\[[MaintenanceWindowTaskTypeDef](./type_defs.md#maintenancewindowtasktypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MaintenanceWindowTaskTypeDef](./type_defs.md#maintenancewindowtasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowsForTargetRequestDescribeMaintenanceWindowsForTargetPaginateTypeDef
 
-<a id="describemaintenancewindowsfortargetrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsForTargetRequestDescribeMaintenanceWindowsForTargetPaginateTypeDef
 
+def get_value() -> DescribeMaintenanceWindowsForTargetRequestDescribeMaintenanceWindowsForTargetPaginateTypeDef:
+    return {
+        "Targets": ...,
+        "ResourceType": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowsForTargetRequestDescribeMaintenanceWindowsForTargetPaginateTypeDef(TypedDict):
+    Targets: Sequence[TargetTypeDef],  # (1)
+    ResourceType: MaintenanceWindowResourceTypeType,  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMaintenanceWindowsForTargetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsForTargetRequestRequestTypeDef
+
+def get_value() -> DescribeMaintenanceWindowsForTargetRequestRequestTypeDef:
+    return {
+        "Targets": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowsForTargetRequestRequestTypeDef(TypedDict):
+    Targets: Sequence[TargetTypeDef],  # (1)
+    ResourceType: MaintenanceWindowResourceTypeType,  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `ResourceType`:
-  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describemaintenancewindowsfortargetresulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype) 
 ## DescribeMaintenanceWindowsForTargetResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsForTargetResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowsForTargetResultTypeDef:
+    return {
+        "WindowIdentities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowsForTargetResultTypeDef(TypedDict):
+    WindowIdentities: List[MaintenanceWindowIdentityForTargetTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WindowIdentities`:
-  `List`\[[MaintenanceWindowIdentityForTargetTypeDef](./type_defs.md#maintenancewindowidentityfortargettypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MaintenanceWindowIdentityForTargetTypeDef](./type_defs.md#maintenancewindowidentityfortargettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMaintenanceWindowsRequestDescribeMaintenanceWindowsPaginateTypeDef
 
-<a id="describemaintenancewindowsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsRequestDescribeMaintenanceWindowsPaginateTypeDef
 
+def get_value() -> DescribeMaintenanceWindowsRequestDescribeMaintenanceWindowsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMaintenanceWindowsRequestDescribeMaintenanceWindowsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeMaintenanceWindowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsRequestRequestTypeDef
+
+def get_value() -> DescribeMaintenanceWindowsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeMaintenanceWindowsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[MaintenanceWindowFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describemaintenancewindowsresulttypedef"></a>
-
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
 ## DescribeMaintenanceWindowsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeMaintenanceWindowsResultTypeDef
+
+def get_value() -> DescribeMaintenanceWindowsResultTypeDef:
+    return {
+        "WindowIdentities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceWindowsResultTypeDef(TypedDict):
+    WindowIdentities: List[MaintenanceWindowIdentityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WindowIdentities`:
-  `List`\[[MaintenanceWindowIdentityTypeDef](./type_defs.md#maintenancewindowidentitytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MaintenanceWindowIdentityTypeDef](./type_defs.md#maintenancewindowidentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeOpsItemsRequestDescribeOpsItemsPaginateTypeDef
 
-<a id="describeopsitemsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeOpsItemsRequestDescribeOpsItemsPaginateTypeDef
 
+def get_value() -> DescribeOpsItemsRequestDescribeOpsItemsPaginateTypeDef:
+    return {
+        "OpsItemFilters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOpsItemsRequestDescribeOpsItemsPaginateTypeDef(TypedDict):
+    OpsItemFilters: NotRequired[Sequence[OpsItemFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeOpsItemsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeOpsItemsRequestRequestTypeDef
+
+def get_value() -> DescribeOpsItemsRequestRequestTypeDef:
+    return {
+        "OpsItemFilters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeOpsItemsRequestRequestTypeDef(TypedDict):
+    OpsItemFilters: NotRequired[Sequence[OpsItemFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `OpsItemFilters`:
-  `Sequence`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeopsitemsresponsetypedef"></a>
-
+1. See [:material-code-braces: OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef) 
 ## DescribeOpsItemsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeOpsItemsResponseTypeDef
+
+def get_value() -> DescribeOpsItemsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "OpsItemSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOpsItemsResponseTypeDef(TypedDict):
+    NextToken: str,
+    OpsItemSummaries: List[OpsItemSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `OpsItemSummaries`:
-  `List`\[[OpsItemSummaryTypeDef](./type_defs.md#opsitemsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OpsItemSummaryTypeDef](./type_defs.md#opsitemsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeParametersRequestDescribeParametersPaginateTypeDef
 
-<a id="describeparametersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeParametersRequestDescribeParametersPaginateTypeDef
 
+def get_value() -> DescribeParametersRequestDescribeParametersPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeParametersRequestDescribeParametersPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ParametersFilterTypeDef]],  # (1)
+    ParameterFilters: NotRequired[Sequence[ParameterStringFilterTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef) 
+2. See [:material-code-braces: ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeParametersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeParametersRequestRequestTypeDef
+
+def get_value() -> DescribeParametersRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeParametersRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ParametersFilterTypeDef]],  # (1)
+    ParameterFilters: NotRequired[Sequence[ParameterStringFilterTypeDef]],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
-- `ParameterFilters`:
-  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeparametersresulttypedef"></a>
-
+1. See [:material-code-braces: ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef) 
+2. See [:material-code-braces: ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef) 
 ## DescribeParametersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeParametersResultTypeDef
+
+def get_value() -> DescribeParametersResultTypeDef:
+    return {
+        "Parameters": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeParametersResultTypeDef(TypedDict):
+    Parameters: List[ParameterMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Parameters`:
-  `List`\[[ParameterMetadataTypeDef](./type_defs.md#parametermetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ParameterMetadataTypeDef](./type_defs.md#parametermetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePatchBaselinesRequestDescribePatchBaselinesPaginateTypeDef
 
-<a id="describepatchbaselinesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribePatchBaselinesRequestDescribePatchBaselinesPaginateTypeDef
 
+def get_value() -> DescribePatchBaselinesRequestDescribePatchBaselinesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePatchBaselinesRequestDescribePatchBaselinesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribePatchBaselinesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribePatchBaselinesRequestRequestTypeDef
+
+def get_value() -> DescribePatchBaselinesRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribePatchBaselinesRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describepatchbaselinesresulttypedef"></a>
-
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
 ## DescribePatchBaselinesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribePatchBaselinesResultTypeDef
+
+def get_value() -> DescribePatchBaselinesResultTypeDef:
+    return {
+        "BaselineIdentities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePatchBaselinesResultTypeDef(TypedDict):
+    BaselineIdentities: List[PatchBaselineIdentityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BaselineIdentities`:
-  `List`\[[PatchBaselineIdentityTypeDef](./type_defs.md#patchbaselineidentitytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepatchgroupstaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PatchBaselineIdentityTypeDef](./type_defs.md#patchbaselineidentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePatchGroupStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribePatchGroupStateRequestRequestTypeDef
+
+def get_value() -> DescribePatchGroupStateRequestRequestTypeDef:
+    return {
+        "PatchGroup": ...,
+    }
 ```
 
-Required fields:
-
-- `PatchGroup`: `str`
-
-<a id="describepatchgroupstateresulttypedef"></a>
+```python title="Definition"
+class DescribePatchGroupStateRequestRequestTypeDef(TypedDict):
+    PatchGroup: str,
+```
 
 ## DescribePatchGroupStateResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribePatchGroupStateResultTypeDef
+
+def get_value() -> DescribePatchGroupStateResultTypeDef:
+    return {
+        "Instances": ...,
+        "InstancesWithInstalledPatches": ...,
+        "InstancesWithInstalledOtherPatches": ...,
+        "InstancesWithInstalledPendingRebootPatches": ...,
+        "InstancesWithInstalledRejectedPatches": ...,
+        "InstancesWithMissingPatches": ...,
+        "InstancesWithFailedPatches": ...,
+        "InstancesWithNotApplicablePatches": ...,
+        "InstancesWithUnreportedNotApplicablePatches": ...,
+        "InstancesWithCriticalNonCompliantPatches": ...,
+        "InstancesWithSecurityNonCompliantPatches": ...,
+        "InstancesWithOtherNonCompliantPatches": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePatchGroupStateResultTypeDef(TypedDict):
+    Instances: int,
+    InstancesWithInstalledPatches: int,
+    InstancesWithInstalledOtherPatches: int,
+    InstancesWithInstalledPendingRebootPatches: int,
+    InstancesWithInstalledRejectedPatches: int,
+    InstancesWithMissingPatches: int,
+    InstancesWithFailedPatches: int,
+    InstancesWithNotApplicablePatches: int,
+    InstancesWithUnreportedNotApplicablePatches: int,
+    InstancesWithCriticalNonCompliantPatches: int,
+    InstancesWithSecurityNonCompliantPatches: int,
+    InstancesWithOtherNonCompliantPatches: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Instances`: `int`
-- `InstancesWithInstalledPatches`: `int`
-- `InstancesWithInstalledOtherPatches`: `int`
-- `InstancesWithInstalledPendingRebootPatches`: `int`
-- `InstancesWithInstalledRejectedPatches`: `int`
-- `InstancesWithMissingPatches`: `int`
-- `InstancesWithFailedPatches`: `int`
-- `InstancesWithNotApplicablePatches`: `int`
-- `InstancesWithUnreportedNotApplicablePatches`: `int`
-- `InstancesWithCriticalNonCompliantPatches`: `int`
-- `InstancesWithSecurityNonCompliantPatches`: `int`
-- `InstancesWithOtherNonCompliantPatches`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePatchGroupsRequestDescribePatchGroupsPaginateTypeDef
 
-<a id="describepatchgroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribePatchGroupsRequestDescribePatchGroupsPaginateTypeDef
 
+def get_value() -> DescribePatchGroupsRequestDescribePatchGroupsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePatchGroupsRequestDescribePatchGroupsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribePatchGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribePatchGroupsRequestRequestTypeDef
+
+def get_value() -> DescribePatchGroupsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribePatchGroupsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[PatchOrchestratorFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+```
 
-- `MaxResults`: `int`
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `NextToken`: `str`
-
-<a id="describepatchgroupsresulttypedef"></a>
-
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
 ## DescribePatchGroupsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribePatchGroupsResultTypeDef
+
+def get_value() -> DescribePatchGroupsResultTypeDef:
+    return {
+        "Mappings": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePatchGroupsResultTypeDef(TypedDict):
+    Mappings: List[PatchGroupPatchBaselineMappingTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Mappings`:
-  `List`\[[PatchGroupPatchBaselineMappingTypeDef](./type_defs.md#patchgrouppatchbaselinemappingtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PatchGroupPatchBaselineMappingTypeDef](./type_defs.md#patchgrouppatchbaselinemappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePatchPropertiesRequestDescribePatchPropertiesPaginateTypeDef
 
-<a id="describepatchpropertiesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribePatchPropertiesRequestDescribePatchPropertiesPaginateTypeDef
 
+def get_value() -> DescribePatchPropertiesRequestDescribePatchPropertiesPaginateTypeDef:
+    return {
+        "OperatingSystem": ...,
+        "Property": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePatchPropertiesRequestDescribePatchPropertiesPaginateTypeDef(TypedDict):
+    OperatingSystem: OperatingSystemType,  # (1)
+    Property: PatchPropertyType,  # (2)
+    PatchSet: NotRequired[PatchSetType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+2. See [:material-code-brackets: PatchPropertyType](./literals.md#patchpropertytype) 
+3. See [:material-code-brackets: PatchSetType](./literals.md#patchsettype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribePatchPropertiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribePatchPropertiesRequestRequestTypeDef
+
+def get_value() -> DescribePatchPropertiesRequestRequestTypeDef:
+    return {
+        "OperatingSystem": ...,
+        "Property": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePatchPropertiesRequestRequestTypeDef(TypedDict):
+    OperatingSystem: OperatingSystemType,  # (1)
+    Property: PatchPropertyType,  # (2)
+    PatchSet: NotRequired[PatchSetType],  # (3)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `Property`: [PatchPropertyType](./literals.md#patchpropertytype)
-
-Optional fields:
-
-- `PatchSet`: [PatchSetType](./literals.md#patchsettype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describepatchpropertiesresulttypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+2. See [:material-code-brackets: PatchPropertyType](./literals.md#patchpropertytype) 
+3. See [:material-code-brackets: PatchSetType](./literals.md#patchsettype) 
 ## DescribePatchPropertiesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribePatchPropertiesResultTypeDef
+
+def get_value() -> DescribePatchPropertiesResultTypeDef:
+    return {
+        "Properties": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePatchPropertiesResultTypeDef(TypedDict):
+    Properties: List[Dict[str, str]],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Properties`: `List`\[`Dict`\[`str`, `str`\]\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSessionsRequestDescribeSessionsPaginateTypeDef
 
-<a id="describesessionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import DescribeSessionsRequestDescribeSessionsPaginateTypeDef
 
+def get_value() -> DescribeSessionsRequestDescribeSessionsPaginateTypeDef:
+    return {
+        "State": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSessionsRequestDescribeSessionsPaginateTypeDef(TypedDict):
+    State: SessionStateType,  # (1)
+    Filters: NotRequired[Sequence[SessionFilterTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
+2. See [:material-code-braces: SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSessionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeSessionsRequestRequestTypeDef
+
+def get_value() -> DescribeSessionsRequestRequestTypeDef:
+    return {
+        "State": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSessionsRequestRequestTypeDef(TypedDict):
+    State: SessionStateType,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[SessionFilterTypeDef]],  # (2)
+```
 
-- `State`: [SessionStateType](./literals.md#sessionstatetype)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  `Sequence`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
-
-<a id="describesessionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
+2. See [:material-code-braces: SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef) 
 ## DescribeSessionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DescribeSessionsResponseTypeDef
+
+def get_value() -> DescribeSessionsResponseTypeDef:
+    return {
+        "Sessions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSessionsResponseTypeDef(TypedDict):
+    Sessions: List[SessionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Sessions`: `List`\[[SessionTypeDef](./type_defs.md#sessiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociateopsitemrelateditemrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SessionTypeDef](./type_defs.md#sessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateOpsItemRelatedItemRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DisassociateOpsItemRelatedItemRequestRequestTypeDef
+
+def get_value() -> DisassociateOpsItemRelatedItemRequestRequestTypeDef:
+    return {
+        "OpsItemId": ...,
+        "AssociationId": ...,
+    }
 ```
 
-Required fields:
-
-- `OpsItemId`: `str`
-- `AssociationId`: `str`
-
-<a id="documentdefaultversiondescriptiontypedef"></a>
+```python title="Definition"
+class DisassociateOpsItemRelatedItemRequestRequestTypeDef(TypedDict):
+    OpsItemId: str,
+    AssociationId: str,
+```
 
 ## DocumentDefaultVersionDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentDefaultVersionDescriptionTypeDef
+
+def get_value() -> DocumentDefaultVersionDescriptionTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `DefaultVersion`: `str`
-- `DefaultVersionName`: `str`
-
-<a id="documentdescriptiontypedef"></a>
+```python title="Definition"
+class DocumentDefaultVersionDescriptionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    DefaultVersion: NotRequired[str],
+    DefaultVersionName: NotRequired[str],
+```
 
 ## DocumentDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentDescriptionTypeDef
+
+def get_value() -> DocumentDescriptionTypeDef:
+    return {
+        "Sha1": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentDescriptionTypeDef(TypedDict):
+    Sha1: NotRequired[str],
+    Hash: NotRequired[str],
+    HashType: NotRequired[DocumentHashTypeType],  # (1)
+    Name: NotRequired[str],
+    DisplayName: NotRequired[str],
+    VersionName: NotRequired[str],
+    Owner: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+    Status: NotRequired[DocumentStatusType],  # (2)
+    StatusInformation: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    Description: NotRequired[str],
+    Parameters: NotRequired[List[DocumentParameterTypeDef]],  # (3)
+    PlatformTypes: NotRequired[List[PlatformTypeType]],  # (4)
+    DocumentType: NotRequired[DocumentTypeType],  # (5)
+    SchemaVersion: NotRequired[str],
+    LatestVersion: NotRequired[str],
+    DefaultVersion: NotRequired[str],
+    DocumentFormat: NotRequired[DocumentFormatType],  # (6)
+    TargetType: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (7)
+    AttachmentsInformation: NotRequired[List[AttachmentInformationTypeDef]],  # (8)
+    Requires: NotRequired[List[DocumentRequiresTypeDef]],  # (9)
+    Author: NotRequired[str],
+    ReviewInformation: NotRequired[List[ReviewInformationTypeDef]],  # (10)
+    ApprovedVersion: NotRequired[str],
+    PendingReviewVersion: NotRequired[str],
+    ReviewStatus: NotRequired[ReviewStatusType],  # (11)
+    Category: NotRequired[List[str]],
+    CategoryEnum: NotRequired[List[str]],
+```
 
-- `Sha1`: `str`
-- `Hash`: `str`
-- `HashType`: [DocumentHashTypeType](./literals.md#documenthashtypetype)
-- `Name`: `str`
-- `DisplayName`: `str`
-- `VersionName`: `str`
-- `Owner`: `str`
-- `CreatedDate`: `datetime`
-- `Status`: [DocumentStatusType](./literals.md#documentstatustype)
-- `StatusInformation`: `str`
-- `DocumentVersion`: `str`
-- `Description`: `str`
-- `Parameters`:
-  `List`\[[DocumentParameterTypeDef](./type_defs.md#documentparametertypedef)\]
-- `PlatformTypes`: `List`\[[PlatformTypeType](./literals.md#platformtypetype)\]
-- `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
-- `SchemaVersion`: `str`
-- `LatestVersion`: `str`
-- `DefaultVersion`: `str`
-- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
-- `TargetType`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AttachmentsInformation`:
-  `List`\[[AttachmentInformationTypeDef](./type_defs.md#attachmentinformationtypedef)\]
-- `Requires`:
-  `List`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
-- `Author`: `str`
-- `ReviewInformation`:
-  `List`\[[ReviewInformationTypeDef](./type_defs.md#reviewinformationtypedef)\]
-- `ApprovedVersion`: `str`
-- `PendingReviewVersion`: `str`
-- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
-- `Category`: `List`\[`str`\]
-- `CategoryEnum`: `List`\[`str`\]
-
-<a id="documentfiltertypedef"></a>
-
+1. See [:material-code-brackets: DocumentHashTypeType](./literals.md#documenthashtypetype) 
+2. See [:material-code-brackets: DocumentStatusType](./literals.md#documentstatustype) 
+3. See [:material-code-braces: DocumentParameterTypeDef](./type_defs.md#documentparametertypedef) 
+4. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+5. See [:material-code-brackets: DocumentTypeType](./literals.md#documenttypetype) 
+6. See [:material-code-brackets: DocumentFormatType](./literals.md#documentformattype) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-braces: AttachmentInformationTypeDef](./type_defs.md#attachmentinformationtypedef) 
+9. See [:material-code-braces: DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef) 
+10. See [:material-code-braces: ReviewInformationTypeDef](./type_defs.md#reviewinformationtypedef) 
+11. See [:material-code-brackets: ReviewStatusType](./literals.md#reviewstatustype) 
 ## DocumentFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentFilterTypeDef
+
+def get_value() -> DocumentFilterTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DocumentFilterTypeDef(TypedDict):
+    key: DocumentFilterKeyType,  # (1)
+    value: str,
+```
 
-- `key`: [DocumentFilterKeyType](./literals.md#documentfilterkeytype)
-- `value`: `str`
-
-<a id="documentidentifiertypedef"></a>
-
+1. See [:material-code-brackets: DocumentFilterKeyType](./literals.md#documentfilterkeytype) 
 ## DocumentIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentIdentifierTypeDef
+
+def get_value() -> DocumentIdentifierTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentIdentifierTypeDef(TypedDict):
+    Name: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+    DisplayName: NotRequired[str],
+    Owner: NotRequired[str],
+    VersionName: NotRequired[str],
+    PlatformTypes: NotRequired[List[PlatformTypeType]],  # (1)
+    DocumentVersion: NotRequired[str],
+    DocumentType: NotRequired[DocumentTypeType],  # (2)
+    SchemaVersion: NotRequired[str],
+    DocumentFormat: NotRequired[DocumentFormatType],  # (3)
+    TargetType: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+    Requires: NotRequired[List[DocumentRequiresTypeDef]],  # (5)
+    ReviewStatus: NotRequired[ReviewStatusType],  # (6)
+    Author: NotRequired[str],
+```
 
-- `Name`: `str`
-- `CreatedDate`: `datetime`
-- `DisplayName`: `str`
-- `Owner`: `str`
-- `VersionName`: `str`
-- `PlatformTypes`: `List`\[[PlatformTypeType](./literals.md#platformtypetype)\]
-- `DocumentVersion`: `str`
-- `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
-- `SchemaVersion`: `str`
-- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
-- `TargetType`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Requires`:
-  `List`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
-- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
-- `Author`: `str`
-
-<a id="documentkeyvaluesfiltertypedef"></a>
-
+1. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+2. See [:material-code-brackets: DocumentTypeType](./literals.md#documenttypetype) 
+3. See [:material-code-brackets: DocumentFormatType](./literals.md#documentformattype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef) 
+6. See [:material-code-brackets: ReviewStatusType](./literals.md#reviewstatustype) 
 ## DocumentKeyValuesFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentKeyValuesFilterTypeDef
+
+def get_value() -> DocumentKeyValuesFilterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="documentmetadataresponseinfotypedef"></a>
+```python title="Definition"
+class DocumentKeyValuesFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
 
 ## DocumentMetadataResponseInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentMetadataResponseInfoTypeDef
+
+def get_value() -> DocumentMetadataResponseInfoTypeDef:
+    return {
+        "ReviewerResponse": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentMetadataResponseInfoTypeDef(TypedDict):
+    ReviewerResponse: NotRequired[List[DocumentReviewerResponseSourceTypeDef]],  # (1)
+```
 
-- `ReviewerResponse`:
-  `List`\[[DocumentReviewerResponseSourceTypeDef](./type_defs.md#documentreviewerresponsesourcetypedef)\]
-
-<a id="documentparametertypedef"></a>
-
+1. See [:material-code-braces: DocumentReviewerResponseSourceTypeDef](./type_defs.md#documentreviewerresponsesourcetypedef) 
 ## DocumentParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentParameterTypeDef
+
+def get_value() -> DocumentParameterTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentParameterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[DocumentParameterTypeType],  # (1)
+    Description: NotRequired[str],
+    DefaultValue: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Type`: [DocumentParameterTypeType](./literals.md#documentparametertypetype)
-- `Description`: `str`
-- `DefaultValue`: `str`
-
-<a id="documentrequirestypedef"></a>
-
+1. See [:material-code-brackets: DocumentParameterTypeType](./literals.md#documentparametertypetype) 
 ## DocumentRequiresTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentRequiresTypeDef
+
+def get_value() -> DocumentRequiresTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Version`: `str`
-
-<a id="documentreviewcommentsourcetypedef"></a>
+```python title="Definition"
+class DocumentRequiresTypeDef(TypedDict):
+    Name: str,
+    Version: NotRequired[str],
+```
 
 ## DocumentReviewCommentSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentReviewCommentSourceTypeDef
+
+def get_value() -> DocumentReviewCommentSourceTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentReviewCommentSourceTypeDef(TypedDict):
+    Type: NotRequired[DocumentReviewCommentTypeType],  # (1)
+    Content: NotRequired[str],
+```
 
-- `Type`: `Literal['Comment']` (see
-  [DocumentReviewCommentTypeType](./literals.md#documentreviewcommenttypetype))
-- `Content`: `str`
-
-<a id="documentreviewerresponsesourcetypedef"></a>
-
+1. See [:material-code-brackets: DocumentReviewCommentTypeType](./literals.md#documentreviewcommenttypetype) 
 ## DocumentReviewerResponseSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentReviewerResponseSourceTypeDef
+
+def get_value() -> DocumentReviewerResponseSourceTypeDef:
+    return {
+        "CreateTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentReviewerResponseSourceTypeDef(TypedDict):
+    CreateTime: NotRequired[datetime],
+    UpdatedTime: NotRequired[datetime],
+    ReviewStatus: NotRequired[ReviewStatusType],  # (1)
+    Comment: NotRequired[List[DocumentReviewCommentSourceTypeDef]],  # (2)
+    Reviewer: NotRequired[str],
+```
 
-- `CreateTime`: `datetime`
-- `UpdatedTime`: `datetime`
-- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
-- `Comment`:
-  `List`\[[DocumentReviewCommentSourceTypeDef](./type_defs.md#documentreviewcommentsourcetypedef)\]
-- `Reviewer`: `str`
-
-<a id="documentreviewstypedef"></a>
-
+1. See [:material-code-brackets: ReviewStatusType](./literals.md#reviewstatustype) 
+2. See [:material-code-braces: DocumentReviewCommentSourceTypeDef](./type_defs.md#documentreviewcommentsourcetypedef) 
 ## DocumentReviewsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentReviewsTypeDef
+
+def get_value() -> DocumentReviewsTypeDef:
+    return {
+        "Action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DocumentReviewsTypeDef(TypedDict):
+    Action: DocumentReviewActionType,  # (1)
+    Comment: NotRequired[Sequence[DocumentReviewCommentSourceTypeDef]],  # (2)
+```
 
-- `Action`: [DocumentReviewActionType](./literals.md#documentreviewactiontype)
-
-Optional fields:
-
-- `Comment`:
-  `Sequence`\[[DocumentReviewCommentSourceTypeDef](./type_defs.md#documentreviewcommentsourcetypedef)\]
-
-<a id="documentversioninfotypedef"></a>
-
+1. See [:material-code-brackets: DocumentReviewActionType](./literals.md#documentreviewactiontype) 
+2. See [:material-code-braces: DocumentReviewCommentSourceTypeDef](./type_defs.md#documentreviewcommentsourcetypedef) 
 ## DocumentVersionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import DocumentVersionInfoTypeDef
+
+def get_value() -> DocumentVersionInfoTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentVersionInfoTypeDef(TypedDict):
+    Name: NotRequired[str],
+    DisplayName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    VersionName: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+    IsDefaultVersion: NotRequired[bool],
+    DocumentFormat: NotRequired[DocumentFormatType],  # (1)
+    Status: NotRequired[DocumentStatusType],  # (2)
+    StatusInformation: NotRequired[str],
+    ReviewStatus: NotRequired[ReviewStatusType],  # (3)
+```
 
-- `Name`: `str`
-- `DisplayName`: `str`
-- `DocumentVersion`: `str`
-- `VersionName`: `str`
-- `CreatedDate`: `datetime`
-- `IsDefaultVersion`: `bool`
-- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
-- `Status`: [DocumentStatusType](./literals.md#documentstatustype)
-- `StatusInformation`: `str`
-- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
-
-<a id="effectivepatchtypedef"></a>
-
+1. See [:material-code-brackets: DocumentFormatType](./literals.md#documentformattype) 
+2. See [:material-code-brackets: DocumentStatusType](./literals.md#documentstatustype) 
+3. See [:material-code-brackets: ReviewStatusType](./literals.md#reviewstatustype) 
 ## EffectivePatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import EffectivePatchTypeDef
+
+def get_value() -> EffectivePatchTypeDef:
+    return {
+        "Patch": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EffectivePatchTypeDef(TypedDict):
+    Patch: NotRequired[PatchTypeDef],  # (1)
+    PatchStatus: NotRequired[PatchStatusTypeDef],  # (2)
+```
 
-- `Patch`: [PatchTypeDef](./type_defs.md#patchtypedef)
-- `PatchStatus`: [PatchStatusTypeDef](./type_defs.md#patchstatustypedef)
-
-<a id="failedcreateassociationtypedef"></a>
-
+1. See [:material-code-braces: PatchTypeDef](./type_defs.md#patchtypedef) 
+2. See [:material-code-braces: PatchStatusTypeDef](./type_defs.md#patchstatustypedef) 
 ## FailedCreateAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import FailedCreateAssociationTypeDef
+
+def get_value() -> FailedCreateAssociationTypeDef:
+    return {
+        "Entry": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FailedCreateAssociationTypeDef(TypedDict):
+    Entry: NotRequired[CreateAssociationBatchRequestEntryTypeDef],  # (1)
+    Message: NotRequired[str],
+    Fault: NotRequired[FaultType],  # (2)
+```
 
-- `Entry`:
-  [CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef)
-- `Message`: `str`
-- `Fault`: [FaultType](./literals.md#faulttype)
-
-<a id="failuredetailstypedef"></a>
-
+1. See [:material-code-braces: CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef) 
+2. See [:material-code-brackets: FaultType](./literals.md#faulttype) 
 ## FailureDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import FailureDetailsTypeDef
+
+def get_value() -> FailureDetailsTypeDef:
+    return {
+        "FailureStage": ...,
+    }
 ```
 
-Optional fields:
-
-- `FailureStage`: `str`
-- `FailureType`: `str`
-- `Details`: `Dict`\[`str`, `List`\[`str`\]\]
-
-<a id="getautomationexecutionrequestrequesttypedef"></a>
+```python title="Definition"
+class FailureDetailsTypeDef(TypedDict):
+    FailureStage: NotRequired[str],
+    FailureType: NotRequired[str],
+    Details: NotRequired[Dict[str, List[str]]],
+```
 
 ## GetAutomationExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetAutomationExecutionRequestRequestTypeDef
+
+def get_value() -> GetAutomationExecutionRequestRequestTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+    }
 ```
 
-Required fields:
-
-- `AutomationExecutionId`: `str`
-
-<a id="getautomationexecutionresulttypedef"></a>
+```python title="Definition"
+class GetAutomationExecutionRequestRequestTypeDef(TypedDict):
+    AutomationExecutionId: str,
+```
 
 ## GetAutomationExecutionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetAutomationExecutionResultTypeDef
+
+def get_value() -> GetAutomationExecutionResultTypeDef:
+    return {
+        "AutomationExecution": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAutomationExecutionResultTypeDef(TypedDict):
+    AutomationExecution: AutomationExecutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AutomationExecution`:
-  [AutomationExecutionTypeDef](./type_defs.md#automationexecutiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcalendarstaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AutomationExecutionTypeDef](./type_defs.md#automationexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCalendarStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetCalendarStateRequestRequestTypeDef
+
+def get_value() -> GetCalendarStateRequestRequestTypeDef:
+    return {
+        "CalendarNames": ...,
+    }
 ```
 
-Required fields:
-
-- `CalendarNames`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `AtTime`: `str`
-
-<a id="getcalendarstateresponsetypedef"></a>
+```python title="Definition"
+class GetCalendarStateRequestRequestTypeDef(TypedDict):
+    CalendarNames: Sequence[str],
+    AtTime: NotRequired[str],
+```
 
 ## GetCalendarStateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetCalendarStateResponseTypeDef
+
+def get_value() -> GetCalendarStateResponseTypeDef:
+    return {
+        "State": ...,
+        "AtTime": ...,
+        "NextTransitionTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCalendarStateResponseTypeDef(TypedDict):
+    State: CalendarStateType,  # (1)
+    AtTime: str,
+    NextTransitionTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `State`: [CalendarStateType](./literals.md#calendarstatetype)
-- `AtTime`: `str`
-- `NextTransitionTime`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: CalendarStateType](./literals.md#calendarstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCommandInvocationRequestCommandExecutedWaitTypeDef
 
-<a id="getcommandinvocationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetCommandInvocationRequestCommandExecutedWaitTypeDef
 
+def get_value() -> GetCommandInvocationRequestCommandExecutedWaitTypeDef:
+    return {
+        "CommandId": ...,
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class GetCommandInvocationRequestCommandExecutedWaitTypeDef(TypedDict):
+    CommandId: str,
+    InstanceId: str,
+    PluginName: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetCommandInvocationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetCommandInvocationRequestRequestTypeDef
+
+def get_value() -> GetCommandInvocationRequestRequestTypeDef:
+    return {
+        "CommandId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `CommandId`: `str`
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `PluginName`: `str`
-
-<a id="getcommandinvocationresulttypedef"></a>
+```python title="Definition"
+class GetCommandInvocationRequestRequestTypeDef(TypedDict):
+    CommandId: str,
+    InstanceId: str,
+    PluginName: NotRequired[str],
+```
 
 ## GetCommandInvocationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetCommandInvocationResultTypeDef
+
+def get_value() -> GetCommandInvocationResultTypeDef:
+    return {
+        "CommandId": ...,
+        "InstanceId": ...,
+        "Comment": ...,
+        "DocumentName": ...,
+        "DocumentVersion": ...,
+        "PluginName": ...,
+        "ResponseCode": ...,
+        "ExecutionStartDateTime": ...,
+        "ExecutionElapsedTime": ...,
+        "ExecutionEndDateTime": ...,
+        "Status": ...,
+        "StatusDetails": ...,
+        "StandardOutputContent": ...,
+        "StandardOutputUrl": ...,
+        "StandardErrorContent": ...,
+        "StandardErrorUrl": ...,
+        "CloudWatchOutputConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCommandInvocationResultTypeDef(TypedDict):
+    CommandId: str,
+    InstanceId: str,
+    Comment: str,
+    DocumentName: str,
+    DocumentVersion: str,
+    PluginName: str,
+    ResponseCode: int,
+    ExecutionStartDateTime: str,
+    ExecutionElapsedTime: str,
+    ExecutionEndDateTime: str,
+    Status: CommandInvocationStatusType,  # (1)
+    StatusDetails: str,
+    StandardOutputContent: str,
+    StandardOutputUrl: str,
+    StandardErrorContent: str,
+    StandardErrorUrl: str,
+    CloudWatchOutputConfig: CloudWatchOutputConfigTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `CommandId`: `str`
-- `InstanceId`: `str`
-- `Comment`: `str`
-- `DocumentName`: `str`
-- `DocumentVersion`: `str`
-- `PluginName`: `str`
-- `ResponseCode`: `int`
-- `ExecutionStartDateTime`: `str`
-- `ExecutionElapsedTime`: `str`
-- `ExecutionEndDateTime`: `str`
-- `Status`:
-  [CommandInvocationStatusType](./literals.md#commandinvocationstatustype)
-- `StatusDetails`: `str`
-- `StandardOutputContent`: `str`
-- `StandardOutputUrl`: `str`
-- `StandardErrorContent`: `str`
-- `StandardErrorUrl`: `str`
-- `CloudWatchOutputConfig`:
-  [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconnectionstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CommandInvocationStatusType](./literals.md#commandinvocationstatustype) 
+2. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConnectionStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetConnectionStatusRequestRequestTypeDef
+
+def get_value() -> GetConnectionStatusRequestRequestTypeDef:
+    return {
+        "Target": ...,
+    }
 ```
 
-Required fields:
-
-- `Target`: `str`
-
-<a id="getconnectionstatusresponsetypedef"></a>
+```python title="Definition"
+class GetConnectionStatusRequestRequestTypeDef(TypedDict):
+    Target: str,
+```
 
 ## GetConnectionStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetConnectionStatusResponseTypeDef
+
+def get_value() -> GetConnectionStatusResponseTypeDef:
+    return {
+        "Target": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConnectionStatusResponseTypeDef(TypedDict):
+    Target: str,
+    Status: ConnectionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Target`: `str`
-- `Status`: [ConnectionStatusType](./literals.md#connectionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdefaultpatchbaselinerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStatusType](./literals.md#connectionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDefaultPatchBaselineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetDefaultPatchBaselineRequestRequestTypeDef
+
+def get_value() -> GetDefaultPatchBaselineRequestRequestTypeDef:
+    return {
+        "OperatingSystem": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetDefaultPatchBaselineRequestRequestTypeDef(TypedDict):
+    OperatingSystem: NotRequired[OperatingSystemType],  # (1)
+```
 
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-
-<a id="getdefaultpatchbaselineresulttypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
 ## GetDefaultPatchBaselineResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetDefaultPatchBaselineResultTypeDef
+
+def get_value() -> GetDefaultPatchBaselineResultTypeDef:
+    return {
+        "BaselineId": ...,
+        "OperatingSystem": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDefaultPatchBaselineResultTypeDef(TypedDict):
+    BaselineId: str,
+    OperatingSystem: OperatingSystemType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BaselineId`: `str`
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeployablepatchsnapshotforinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeployablePatchSnapshotForInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetDeployablePatchSnapshotForInstanceRequestRequestTypeDef
+
+def get_value() -> GetDeployablePatchSnapshotForInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "SnapshotId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeployablePatchSnapshotForInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    SnapshotId: str,
+    BaselineOverride: NotRequired[BaselineOverrideTypeDef],  # (1)
+```
 
-- `InstanceId`: `str`
-- `SnapshotId`: `str`
-
-Optional fields:
-
-- `BaselineOverride`:
-  [BaselineOverrideTypeDef](./type_defs.md#baselineoverridetypedef)
-
-<a id="getdeployablepatchsnapshotforinstanceresulttypedef"></a>
-
+1. See [:material-code-braces: BaselineOverrideTypeDef](./type_defs.md#baselineoverridetypedef) 
 ## GetDeployablePatchSnapshotForInstanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetDeployablePatchSnapshotForInstanceResultTypeDef
+
+def get_value() -> GetDeployablePatchSnapshotForInstanceResultTypeDef:
+    return {
+        "InstanceId": ...,
+        "SnapshotId": ...,
+        "SnapshotDownloadUrl": ...,
+        "Product": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeployablePatchSnapshotForInstanceResultTypeDef(TypedDict):
+    InstanceId: str,
+    SnapshotId: str,
+    SnapshotDownloadUrl: str,
+    Product: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `InstanceId`: `str`
-- `SnapshotId`: `str`
-- `SnapshotDownloadUrl`: `str`
-- `Product`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdocumentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDocumentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetDocumentRequestRequestTypeDef
+
+def get_value() -> GetDocumentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDocumentRequestRequestTypeDef(TypedDict):
+    Name: str,
+    VersionName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    DocumentFormat: NotRequired[DocumentFormatType],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `VersionName`: `str`
-- `DocumentVersion`: `str`
-- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
-
-<a id="getdocumentresulttypedef"></a>
-
+1. See [:material-code-brackets: DocumentFormatType](./literals.md#documentformattype) 
 ## GetDocumentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetDocumentResultTypeDef
+
+def get_value() -> GetDocumentResultTypeDef:
+    return {
+        "Name": ...,
+        "CreatedDate": ...,
+        "DisplayName": ...,
+        "VersionName": ...,
+        "DocumentVersion": ...,
+        "Status": ...,
+        "StatusInformation": ...,
+        "Content": ...,
+        "DocumentType": ...,
+        "DocumentFormat": ...,
+        "Requires": ...,
+        "AttachmentsContent": ...,
+        "ReviewStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDocumentResultTypeDef(TypedDict):
+    Name: str,
+    CreatedDate: datetime,
+    DisplayName: str,
+    VersionName: str,
+    DocumentVersion: str,
+    Status: DocumentStatusType,  # (1)
+    StatusInformation: str,
+    Content: str,
+    DocumentType: DocumentTypeType,  # (2)
+    DocumentFormat: DocumentFormatType,  # (3)
+    Requires: List[DocumentRequiresTypeDef],  # (4)
+    AttachmentsContent: List[AttachmentContentTypeDef],  # (5)
+    ReviewStatus: ReviewStatusType,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `Name`: `str`
-- `CreatedDate`: `datetime`
-- `DisplayName`: `str`
-- `VersionName`: `str`
-- `DocumentVersion`: `str`
-- `Status`: [DocumentStatusType](./literals.md#documentstatustype)
-- `StatusInformation`: `str`
-- `Content`: `str`
-- `DocumentType`: [DocumentTypeType](./literals.md#documenttypetype)
-- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
-- `Requires`:
-  `List`\[[DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef)\]
-- `AttachmentsContent`:
-  `List`\[[AttachmentContentTypeDef](./type_defs.md#attachmentcontenttypedef)\]
-- `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: DocumentStatusType](./literals.md#documentstatustype) 
+2. See [:material-code-brackets: DocumentTypeType](./literals.md#documenttypetype) 
+3. See [:material-code-brackets: DocumentFormatType](./literals.md#documentformattype) 
+4. See [:material-code-braces: DocumentRequiresTypeDef](./type_defs.md#documentrequirestypedef) 
+5. See [:material-code-braces: AttachmentContentTypeDef](./type_defs.md#attachmentcontenttypedef) 
+6. See [:material-code-brackets: ReviewStatusType](./literals.md#reviewstatustype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetInventoryRequestGetInventoryPaginateTypeDef
 
-<a id="getinventoryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetInventoryRequestGetInventoryPaginateTypeDef
 
+def get_value() -> GetInventoryRequestGetInventoryPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class GetInventoryRequestGetInventoryPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[InventoryFilterTypeDef]],  # (1)
+    Aggregators: NotRequired[Sequence[InventoryAggregatorTypeDef]],  # (2)
+    ResultAttributes: NotRequired[Sequence[ResultAttributeTypeDef]],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef) 
+2. See [:material-code-braces: InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef) 
+3. See [:material-code-braces: ResultAttributeTypeDef](./type_defs.md#resultattributetypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetInventoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetInventoryRequestRequestTypeDef
+
+def get_value() -> GetInventoryRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetInventoryRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[InventoryFilterTypeDef]],  # (1)
+    Aggregators: NotRequired[Sequence[InventoryAggregatorTypeDef]],  # (2)
+    ResultAttributes: NotRequired[Sequence[ResultAttributeTypeDef]],  # (3)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`:
-  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
-- `Aggregators`:
-  `Sequence`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
-- `ResultAttributes`:
-  `Sequence`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getinventoryresulttypedef"></a>
-
+1. See [:material-code-braces: InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef) 
+2. See [:material-code-braces: InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef) 
+3. See [:material-code-braces: ResultAttributeTypeDef](./type_defs.md#resultattributetypedef) 
 ## GetInventoryResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetInventoryResultTypeDef
+
+def get_value() -> GetInventoryResultTypeDef:
+    return {
+        "Entities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInventoryResultTypeDef(TypedDict):
+    Entities: List[InventoryResultEntityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entities`:
-  `List`\[[InventoryResultEntityTypeDef](./type_defs.md#inventoryresultentitytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InventoryResultEntityTypeDef](./type_defs.md#inventoryresultentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetInventorySchemaRequestGetInventorySchemaPaginateTypeDef
 
-<a id="getinventoryschemarequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetInventorySchemaRequestGetInventorySchemaPaginateTypeDef
 
+def get_value() -> GetInventorySchemaRequestGetInventorySchemaPaginateTypeDef:
+    return {
+        "TypeName": ...,
+    }
+```
+
+```python title="Definition"
+class GetInventorySchemaRequestGetInventorySchemaPaginateTypeDef(TypedDict):
+    TypeName: NotRequired[str],
+    Aggregator: NotRequired[bool],
+    SubType: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetInventorySchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetInventorySchemaRequestRequestTypeDef
+
+def get_value() -> GetInventorySchemaRequestRequestTypeDef:
+    return {
+        "TypeName": ...,
+    }
 ```
 
-Optional fields:
-
-- `TypeName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Aggregator`: `bool`
-- `SubType`: `bool`
-
-<a id="getinventoryschemaresulttypedef"></a>
+```python title="Definition"
+class GetInventorySchemaRequestRequestTypeDef(TypedDict):
+    TypeName: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Aggregator: NotRequired[bool],
+    SubType: NotRequired[bool],
+```
 
 ## GetInventorySchemaResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetInventorySchemaResultTypeDef
+
+def get_value() -> GetInventorySchemaResultTypeDef:
+    return {
+        "Schemas": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInventorySchemaResultTypeDef(TypedDict):
+    Schemas: List[InventoryItemSchemaTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Schemas`:
-  `List`\[[InventoryItemSchemaTypeDef](./type_defs.md#inventoryitemschematypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmaintenancewindowexecutionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InventoryItemSchemaTypeDef](./type_defs.md#inventoryitemschematypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMaintenanceWindowExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionRequestRequestTypeDef
+
+def get_value() -> GetMaintenanceWindowExecutionRequestRequestTypeDef:
+    return {
+        "WindowExecutionId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowExecutionId`: `str`
-
-<a id="getmaintenancewindowexecutionresulttypedef"></a>
+```python title="Definition"
+class GetMaintenanceWindowExecutionRequestRequestTypeDef(TypedDict):
+    WindowExecutionId: str,
+```
 
 ## GetMaintenanceWindowExecutionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionResultTypeDef
+
+def get_value() -> GetMaintenanceWindowExecutionResultTypeDef:
+    return {
+        "WindowExecutionId": ...,
+        "TaskIds": ...,
+        "Status": ...,
+        "StatusDetails": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMaintenanceWindowExecutionResultTypeDef(TypedDict):
+    WindowExecutionId: str,
+    TaskIds: List[str],
+    Status: MaintenanceWindowExecutionStatusType,  # (1)
+    StatusDetails: str,
+    StartTime: datetime,
+    EndTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WindowExecutionId`: `str`
-- `TaskIds`: `List`\[`str`\]
-- `Status`:
-  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
-- `StatusDetails`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmaintenancewindowexecutiontaskinvocationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMaintenanceWindowExecutionTaskInvocationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskInvocationRequestRequestTypeDef
+
+def get_value() -> GetMaintenanceWindowExecutionTaskInvocationRequestRequestTypeDef:
+    return {
+        "WindowExecutionId": ...,
+        "TaskId": ...,
+        "InvocationId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowExecutionId`: `str`
-- `TaskId`: `str`
-- `InvocationId`: `str`
-
-<a id="getmaintenancewindowexecutiontaskinvocationresulttypedef"></a>
+```python title="Definition"
+class GetMaintenanceWindowExecutionTaskInvocationRequestRequestTypeDef(TypedDict):
+    WindowExecutionId: str,
+    TaskId: str,
+    InvocationId: str,
+```
 
 ## GetMaintenanceWindowExecutionTaskInvocationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskInvocationResultTypeDef
+
+def get_value() -> GetMaintenanceWindowExecutionTaskInvocationResultTypeDef:
+    return {
+        "WindowExecutionId": ...,
+        "TaskExecutionId": ...,
+        "InvocationId": ...,
+        "ExecutionId": ...,
+        "TaskType": ...,
+        "Parameters": ...,
+        "Status": ...,
+        "StatusDetails": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "OwnerInformation": ...,
+        "WindowTargetId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMaintenanceWindowExecutionTaskInvocationResultTypeDef(TypedDict):
+    WindowExecutionId: str,
+    TaskExecutionId: str,
+    InvocationId: str,
+    ExecutionId: str,
+    TaskType: MaintenanceWindowTaskTypeType,  # (1)
+    Parameters: str,
+    Status: MaintenanceWindowExecutionStatusType,  # (2)
+    StatusDetails: str,
+    StartTime: datetime,
+    EndTime: datetime,
+    OwnerInformation: str,
+    WindowTargetId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `WindowExecutionId`: `str`
-- `TaskExecutionId`: `str`
-- `InvocationId`: `str`
-- `ExecutionId`: `str`
-- `TaskType`:
-  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
-- `Parameters`: `str`
-- `Status`:
-  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
-- `StatusDetails`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `OwnerInformation`: `str`
-- `WindowTargetId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmaintenancewindowexecutiontaskrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
+2. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMaintenanceWindowExecutionTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskRequestRequestTypeDef
+
+def get_value() -> GetMaintenanceWindowExecutionTaskRequestRequestTypeDef:
+    return {
+        "WindowExecutionId": ...,
+        "TaskId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowExecutionId`: `str`
-- `TaskId`: `str`
-
-<a id="getmaintenancewindowexecutiontaskresulttypedef"></a>
+```python title="Definition"
+class GetMaintenanceWindowExecutionTaskRequestRequestTypeDef(TypedDict):
+    WindowExecutionId: str,
+    TaskId: str,
+```
 
 ## GetMaintenanceWindowExecutionTaskResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionTaskResultTypeDef
+
+def get_value() -> GetMaintenanceWindowExecutionTaskResultTypeDef:
+    return {
+        "WindowExecutionId": ...,
+        "TaskExecutionId": ...,
+        "TaskArn": ...,
+        "ServiceRole": ...,
+        "Type": ...,
+        "TaskParameters": ...,
+        "Priority": ...,
+        "MaxConcurrency": ...,
+        "MaxErrors": ...,
+        "Status": ...,
+        "StatusDetails": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMaintenanceWindowExecutionTaskResultTypeDef(TypedDict):
+    WindowExecutionId: str,
+    TaskExecutionId: str,
+    TaskArn: str,
+    ServiceRole: str,
+    Type: MaintenanceWindowTaskTypeType,  # (1)
+    TaskParameters: List[Dict[str, MaintenanceWindowTaskParameterValueExpressionTypeDef]],  # (2)
+    Priority: int,
+    MaxConcurrency: str,
+    MaxErrors: str,
+    Status: MaintenanceWindowExecutionStatusType,  # (3)
+    StatusDetails: str,
+    StartTime: datetime,
+    EndTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `WindowExecutionId`: `str`
-- `TaskExecutionId`: `str`
-- `TaskArn`: `str`
-- `ServiceRole`: `str`
-- `Type`:
-  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
-- `TaskParameters`: `List`\[`Dict`\[`str`,
-  [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]\]
-- `Priority`: `int`
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `Status`:
-  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
-- `StatusDetails`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmaintenancewindowrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
+2. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
+3. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMaintenanceWindowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowRequestRequestTypeDef
+
+def get_value() -> GetMaintenanceWindowRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowId`: `str`
-
-<a id="getmaintenancewindowresulttypedef"></a>
+```python title="Definition"
+class GetMaintenanceWindowRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+```
 
 ## GetMaintenanceWindowResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowResultTypeDef
+
+def get_value() -> GetMaintenanceWindowResultTypeDef:
+    return {
+        "WindowId": ...,
+        "Name": ...,
+        "Description": ...,
+        "StartDate": ...,
+        "EndDate": ...,
+        "Schedule": ...,
+        "ScheduleTimezone": ...,
+        "ScheduleOffset": ...,
+        "NextExecutionTime": ...,
+        "Duration": ...,
+        "Cutoff": ...,
+        "AllowUnassociatedTargets": ...,
+        "Enabled": ...,
+        "CreatedDate": ...,
+        "ModifiedDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMaintenanceWindowResultTypeDef(TypedDict):
+    WindowId: str,
+    Name: str,
+    Description: str,
+    StartDate: str,
+    EndDate: str,
+    Schedule: str,
+    ScheduleTimezone: str,
+    ScheduleOffset: int,
+    NextExecutionTime: str,
+    Duration: int,
+    Cutoff: int,
+    AllowUnassociatedTargets: bool,
+    Enabled: bool,
+    CreatedDate: datetime,
+    ModifiedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WindowId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `StartDate`: `str`
-- `EndDate`: `str`
-- `Schedule`: `str`
-- `ScheduleTimezone`: `str`
-- `ScheduleOffset`: `int`
-- `NextExecutionTime`: `str`
-- `Duration`: `int`
-- `Cutoff`: `int`
-- `AllowUnassociatedTargets`: `bool`
-- `Enabled`: `bool`
-- `CreatedDate`: `datetime`
-- `ModifiedDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmaintenancewindowtaskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMaintenanceWindowTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowTaskRequestRequestTypeDef
+
+def get_value() -> GetMaintenanceWindowTaskRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTaskId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowId`: `str`
-- `WindowTaskId`: `str`
-
-<a id="getmaintenancewindowtaskresulttypedef"></a>
+```python title="Definition"
+class GetMaintenanceWindowTaskRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    WindowTaskId: str,
+```
 
 ## GetMaintenanceWindowTaskResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetMaintenanceWindowTaskResultTypeDef
+
+def get_value() -> GetMaintenanceWindowTaskResultTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTaskId": ...,
+        "Targets": ...,
+        "TaskArn": ...,
+        "ServiceRoleArn": ...,
+        "TaskType": ...,
+        "TaskParameters": ...,
+        "TaskInvocationParameters": ...,
+        "Priority": ...,
+        "MaxConcurrency": ...,
+        "MaxErrors": ...,
+        "LoggingInfo": ...,
+        "Name": ...,
+        "Description": ...,
+        "CutoffBehavior": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMaintenanceWindowTaskResultTypeDef(TypedDict):
+    WindowId: str,
+    WindowTaskId: str,
+    Targets: List[TargetTypeDef],  # (1)
+    TaskArn: str,
+    ServiceRoleArn: str,
+    TaskType: MaintenanceWindowTaskTypeType,  # (2)
+    TaskParameters: Dict[str, MaintenanceWindowTaskParameterValueExpressionTypeDef],  # (3)
+    TaskInvocationParameters: MaintenanceWindowTaskInvocationParametersTypeDef,  # (4)
+    Priority: int,
+    MaxConcurrency: str,
+    MaxErrors: str,
+    LoggingInfo: LoggingInfoTypeDef,  # (5)
+    Name: str,
+    Description: str,
+    CutoffBehavior: MaintenanceWindowTaskCutoffBehaviorType,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `WindowId`: `str`
-- `WindowTaskId`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TaskArn`: `str`
-- `ServiceRoleArn`: `str`
-- `TaskType`:
-  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
-- `TaskParameters`: `Dict`\[`str`,
-  [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
-- `TaskInvocationParameters`:
-  [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
-- `Priority`: `int`
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
-- `Name`: `str`
-- `Description`: `str`
-- `CutoffBehavior`:
-  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getopsitemrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
+3. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
+4. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
+5. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
+6. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOpsItemRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetOpsItemRequestRequestTypeDef
+
+def get_value() -> GetOpsItemRequestRequestTypeDef:
+    return {
+        "OpsItemId": ...,
+    }
 ```
 
-Required fields:
-
-- `OpsItemId`: `str`
-
-<a id="getopsitemresponsetypedef"></a>
+```python title="Definition"
+class GetOpsItemRequestRequestTypeDef(TypedDict):
+    OpsItemId: str,
+```
 
 ## GetOpsItemResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetOpsItemResponseTypeDef
+
+def get_value() -> GetOpsItemResponseTypeDef:
+    return {
+        "OpsItem": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOpsItemResponseTypeDef(TypedDict):
+    OpsItem: OpsItemTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OpsItem`: [OpsItemTypeDef](./type_defs.md#opsitemtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getopsmetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OpsItemTypeDef](./type_defs.md#opsitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOpsMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetOpsMetadataRequestRequestTypeDef
+
+def get_value() -> GetOpsMetadataRequestRequestTypeDef:
+    return {
+        "OpsMetadataArn": ...,
+    }
 ```
 
-Required fields:
-
-- `OpsMetadataArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getopsmetadataresulttypedef"></a>
+```python title="Definition"
+class GetOpsMetadataRequestRequestTypeDef(TypedDict):
+    OpsMetadataArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetOpsMetadataResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetOpsMetadataResultTypeDef
+
+def get_value() -> GetOpsMetadataResultTypeDef:
+    return {
+        "ResourceId": ...,
+        "Metadata": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOpsMetadataResultTypeDef(TypedDict):
+    ResourceId: str,
+    Metadata: Dict[str, MetadataValueTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceId`: `str`
-- `Metadata`: `Dict`\[`str`,
-  [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOpsSummaryRequestGetOpsSummaryPaginateTypeDef
 
-<a id="getopssummaryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetOpsSummaryRequestGetOpsSummaryPaginateTypeDef
 
+def get_value() -> GetOpsSummaryRequestGetOpsSummaryPaginateTypeDef:
+    return {
+        "SyncName": ...,
+    }
+```
+
+```python title="Definition"
+class GetOpsSummaryRequestGetOpsSummaryPaginateTypeDef(TypedDict):
+    SyncName: NotRequired[str],
+    Filters: NotRequired[Sequence[OpsFilterTypeDef]],  # (1)
+    Aggregators: NotRequired[Sequence[OpsAggregatorTypeDef]],  # (2)
+    ResultAttributes: NotRequired[Sequence[OpsResultAttributeTypeDef]],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: OpsFilterTypeDef](./type_defs.md#opsfiltertypedef) 
+2. See [:material-code-braces: OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef) 
+3. See [:material-code-braces: OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetOpsSummaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetOpsSummaryRequestRequestTypeDef
+
+def get_value() -> GetOpsSummaryRequestRequestTypeDef:
+    return {
+        "SyncName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetOpsSummaryRequestRequestTypeDef(TypedDict):
+    SyncName: NotRequired[str],
+    Filters: NotRequired[Sequence[OpsFilterTypeDef]],  # (1)
+    Aggregators: NotRequired[Sequence[OpsAggregatorTypeDef]],  # (2)
+    ResultAttributes: NotRequired[Sequence[OpsResultAttributeTypeDef]],  # (3)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `SyncName`: `str`
-- `Filters`: `Sequence`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
-- `Aggregators`:
-  `Sequence`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
-- `ResultAttributes`:
-  `Sequence`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getopssummaryresulttypedef"></a>
-
+1. See [:material-code-braces: OpsFilterTypeDef](./type_defs.md#opsfiltertypedef) 
+2. See [:material-code-braces: OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef) 
+3. See [:material-code-braces: OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef) 
 ## GetOpsSummaryResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetOpsSummaryResultTypeDef
+
+def get_value() -> GetOpsSummaryResultTypeDef:
+    return {
+        "Entities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOpsSummaryResultTypeDef(TypedDict):
+    Entities: List[OpsEntityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entities`: `List`\[[OpsEntityTypeDef](./type_defs.md#opsentitytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OpsEntityTypeDef](./type_defs.md#opsentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef
 
-<a id="getparameterhistoryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef
 
+def get_value() -> GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef(TypedDict):
+    Name: str,
+    WithDecryption: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetParameterHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetParameterHistoryRequestRequestTypeDef
+
+def get_value() -> GetParameterHistoryRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `WithDecryption`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getparameterhistoryresulttypedef"></a>
+```python title="Definition"
+class GetParameterHistoryRequestRequestTypeDef(TypedDict):
+    Name: str,
+    WithDecryption: NotRequired[bool],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetParameterHistoryResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetParameterHistoryResultTypeDef
+
+def get_value() -> GetParameterHistoryResultTypeDef:
+    return {
+        "Parameters": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetParameterHistoryResultTypeDef(TypedDict):
+    Parameters: List[ParameterHistoryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Parameters`:
-  `List`\[[ParameterHistoryTypeDef](./type_defs.md#parameterhistorytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getparameterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterHistoryTypeDef](./type_defs.md#parameterhistorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetParameterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetParameterRequestRequestTypeDef
+
+def get_value() -> GetParameterRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `WithDecryption`: `bool`
-
-<a id="getparameterresulttypedef"></a>
+```python title="Definition"
+class GetParameterRequestRequestTypeDef(TypedDict):
+    Name: str,
+    WithDecryption: NotRequired[bool],
+```
 
 ## GetParameterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetParameterResultTypeDef
+
+def get_value() -> GetParameterResultTypeDef:
+    return {
+        "Parameter": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetParameterResultTypeDef(TypedDict):
+    Parameter: ParameterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Parameter`: [ParameterTypeDef](./type_defs.md#parametertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetParametersByPathRequestGetParametersByPathPaginateTypeDef
 
-<a id="getparametersbypathrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import GetParametersByPathRequestGetParametersByPathPaginateTypeDef
 
+def get_value() -> GetParametersByPathRequestGetParametersByPathPaginateTypeDef:
+    return {
+        "Path": ...,
+    }
+```
+
+```python title="Definition"
+class GetParametersByPathRequestGetParametersByPathPaginateTypeDef(TypedDict):
+    Path: str,
+    Recursive: NotRequired[bool],
+    ParameterFilters: NotRequired[Sequence[ParameterStringFilterTypeDef]],  # (1)
+    WithDecryption: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetParametersByPathRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetParametersByPathRequestRequestTypeDef
+
+def get_value() -> GetParametersByPathRequestRequestTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetParametersByPathRequestRequestTypeDef(TypedDict):
+    Path: str,
+    Recursive: NotRequired[bool],
+    ParameterFilters: NotRequired[Sequence[ParameterStringFilterTypeDef]],  # (1)
+    WithDecryption: NotRequired[bool],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Path`: `str`
-
-Optional fields:
-
-- `Recursive`: `bool`
-- `ParameterFilters`:
-  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
-- `WithDecryption`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getparametersbypathresulttypedef"></a>
-
+1. See [:material-code-braces: ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef) 
 ## GetParametersByPathResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetParametersByPathResultTypeDef
+
+def get_value() -> GetParametersByPathResultTypeDef:
+    return {
+        "Parameters": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetParametersByPathResultTypeDef(TypedDict):
+    Parameters: List[ParameterTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getparametersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetParametersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetParametersRequestRequestTypeDef
+
+def get_value() -> GetParametersRequestRequestTypeDef:
+    return {
+        "Names": ...,
+    }
 ```
 
-Required fields:
-
-- `Names`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `WithDecryption`: `bool`
-
-<a id="getparametersresulttypedef"></a>
+```python title="Definition"
+class GetParametersRequestRequestTypeDef(TypedDict):
+    Names: Sequence[str],
+    WithDecryption: NotRequired[bool],
+```
 
 ## GetParametersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetParametersResultTypeDef
+
+def get_value() -> GetParametersResultTypeDef:
+    return {
+        "Parameters": ...,
+        "InvalidParameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetParametersResultTypeDef(TypedDict):
+    Parameters: List[ParameterTypeDef],  # (1)
+    InvalidParameters: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `InvalidParameters`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpatchbaselineforpatchgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPatchBaselineForPatchGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetPatchBaselineForPatchGroupRequestRequestTypeDef
+
+def get_value() -> GetPatchBaselineForPatchGroupRequestRequestTypeDef:
+    return {
+        "PatchGroup": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPatchBaselineForPatchGroupRequestRequestTypeDef(TypedDict):
+    PatchGroup: str,
+    OperatingSystem: NotRequired[OperatingSystemType],  # (1)
+```
 
-- `PatchGroup`: `str`
-
-Optional fields:
-
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-
-<a id="getpatchbaselineforpatchgroupresulttypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
 ## GetPatchBaselineForPatchGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetPatchBaselineForPatchGroupResultTypeDef
+
+def get_value() -> GetPatchBaselineForPatchGroupResultTypeDef:
+    return {
+        "BaselineId": ...,
+        "PatchGroup": ...,
+        "OperatingSystem": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPatchBaselineForPatchGroupResultTypeDef(TypedDict):
+    BaselineId: str,
+    PatchGroup: str,
+    OperatingSystem: OperatingSystemType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BaselineId`: `str`
-- `PatchGroup`: `str`
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpatchbaselinerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPatchBaselineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetPatchBaselineRequestRequestTypeDef
+
+def get_value() -> GetPatchBaselineRequestRequestTypeDef:
+    return {
+        "BaselineId": ...,
+    }
 ```
 
-Required fields:
-
-- `BaselineId`: `str`
-
-<a id="getpatchbaselineresulttypedef"></a>
+```python title="Definition"
+class GetPatchBaselineRequestRequestTypeDef(TypedDict):
+    BaselineId: str,
+```
 
 ## GetPatchBaselineResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetPatchBaselineResultTypeDef
+
+def get_value() -> GetPatchBaselineResultTypeDef:
+    return {
+        "BaselineId": ...,
+        "Name": ...,
+        "OperatingSystem": ...,
+        "GlobalFilters": ...,
+        "ApprovalRules": ...,
+        "ApprovedPatches": ...,
+        "ApprovedPatchesComplianceLevel": ...,
+        "ApprovedPatchesEnableNonSecurity": ...,
+        "RejectedPatches": ...,
+        "RejectedPatchesAction": ...,
+        "PatchGroups": ...,
+        "CreatedDate": ...,
+        "ModifiedDate": ...,
+        "Description": ...,
+        "Sources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPatchBaselineResultTypeDef(TypedDict):
+    BaselineId: str,
+    Name: str,
+    OperatingSystem: OperatingSystemType,  # (1)
+    GlobalFilters: PatchFilterGroupTypeDef,  # (2)
+    ApprovalRules: PatchRuleGroupTypeDef,  # (3)
+    ApprovedPatches: List[str],
+    ApprovedPatchesComplianceLevel: PatchComplianceLevelType,  # (4)
+    ApprovedPatchesEnableNonSecurity: bool,
+    RejectedPatches: List[str],
+    RejectedPatchesAction: PatchActionType,  # (5)
+    PatchGroups: List[str],
+    CreatedDate: datetime,
+    ModifiedDate: datetime,
+    Description: str,
+    Sources: List[PatchSourceTypeDef],  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `BaselineId`: `str`
-- `Name`: `str`
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `GlobalFilters`:
-  [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
-- `ApprovalRules`:
-  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `List`\[`str`\]
-- `ApprovedPatchesComplianceLevel`:
-  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
-- `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `List`\[`str`\]
-- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
-- `PatchGroups`: `List`\[`str`\]
-- `CreatedDate`: `datetime`
-- `ModifiedDate`: `datetime`
-- `Description`: `str`
-- `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservicesettingrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+2. See [:material-code-braces: PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef) 
+3. See [:material-code-braces: PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef) 
+4. See [:material-code-brackets: PatchComplianceLevelType](./literals.md#patchcomplianceleveltype) 
+5. See [:material-code-brackets: PatchActionType](./literals.md#patchactiontype) 
+6. See [:material-code-braces: PatchSourceTypeDef](./type_defs.md#patchsourcetypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceSettingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetServiceSettingRequestRequestTypeDef
+
+def get_value() -> GetServiceSettingRequestRequestTypeDef:
+    return {
+        "SettingId": ...,
+    }
 ```
 
-Required fields:
-
-- `SettingId`: `str`
-
-<a id="getservicesettingresulttypedef"></a>
+```python title="Definition"
+class GetServiceSettingRequestRequestTypeDef(TypedDict):
+    SettingId: str,
+```
 
 ## GetServiceSettingResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import GetServiceSettingResultTypeDef
+
+def get_value() -> GetServiceSettingResultTypeDef:
+    return {
+        "ServiceSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceSettingResultTypeDef(TypedDict):
+    ServiceSetting: ServiceSettingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServiceSetting`:
-  [ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="instanceaggregatedassociationoverviewtypedef"></a>
-
+1. See [:material-code-braces: ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceAggregatedAssociationOverviewTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstanceAggregatedAssociationOverviewTypeDef
+
+def get_value() -> InstanceAggregatedAssociationOverviewTypeDef:
+    return {
+        "DetailedStatus": ...,
+    }
 ```
 
-Optional fields:
-
-- `DetailedStatus`: `str`
-- `InstanceAssociationStatusAggregatedCount`: `Dict`\[`str`, `int`\]
-
-<a id="instanceassociationoutputlocationtypedef"></a>
+```python title="Definition"
+class InstanceAggregatedAssociationOverviewTypeDef(TypedDict):
+    DetailedStatus: NotRequired[str],
+    InstanceAssociationStatusAggregatedCount: NotRequired[Dict[str, int]],
+```
 
 ## InstanceAssociationOutputLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstanceAssociationOutputLocationTypeDef
+
+def get_value() -> InstanceAssociationOutputLocationTypeDef:
+    return {
+        "S3Location": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceAssociationOutputLocationTypeDef(TypedDict):
+    S3Location: NotRequired[S3OutputLocationTypeDef],  # (1)
+```
 
-- `S3Location`:
-  [S3OutputLocationTypeDef](./type_defs.md#s3outputlocationtypedef)
-
-<a id="instanceassociationoutputurltypedef"></a>
-
+1. See [:material-code-braces: S3OutputLocationTypeDef](./type_defs.md#s3outputlocationtypedef) 
 ## InstanceAssociationOutputUrlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstanceAssociationOutputUrlTypeDef
+
+def get_value() -> InstanceAssociationOutputUrlTypeDef:
+    return {
+        "S3OutputUrl": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceAssociationOutputUrlTypeDef(TypedDict):
+    S3OutputUrl: NotRequired[S3OutputUrlTypeDef],  # (1)
+```
 
-- `S3OutputUrl`: [S3OutputUrlTypeDef](./type_defs.md#s3outputurltypedef)
-
-<a id="instanceassociationstatusinfotypedef"></a>
-
+1. See [:material-code-braces: S3OutputUrlTypeDef](./type_defs.md#s3outputurltypedef) 
 ## InstanceAssociationStatusInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstanceAssociationStatusInfoTypeDef
+
+def get_value() -> InstanceAssociationStatusInfoTypeDef:
+    return {
+        "AssociationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceAssociationStatusInfoTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    Name: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    InstanceId: NotRequired[str],
+    ExecutionDate: NotRequired[datetime],
+    Status: NotRequired[str],
+    DetailedStatus: NotRequired[str],
+    ExecutionSummary: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    OutputUrl: NotRequired[InstanceAssociationOutputUrlTypeDef],  # (1)
+    AssociationName: NotRequired[str],
+```
 
-- `AssociationId`: `str`
-- `Name`: `str`
-- `DocumentVersion`: `str`
-- `AssociationVersion`: `str`
-- `InstanceId`: `str`
-- `ExecutionDate`: `datetime`
-- `Status`: `str`
-- `DetailedStatus`: `str`
-- `ExecutionSummary`: `str`
-- `ErrorCode`: `str`
-- `OutputUrl`:
-  [InstanceAssociationOutputUrlTypeDef](./type_defs.md#instanceassociationoutputurltypedef)
-- `AssociationName`: `str`
-
-<a id="instanceassociationtypedef"></a>
-
+1. See [:material-code-braces: InstanceAssociationOutputUrlTypeDef](./type_defs.md#instanceassociationoutputurltypedef) 
 ## InstanceAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstanceAssociationTypeDef
+
+def get_value() -> InstanceAssociationTypeDef:
+    return {
+        "AssociationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AssociationId`: `str`
-- `InstanceId`: `str`
-- `Content`: `str`
-- `AssociationVersion`: `str`
-
-<a id="instanceinformationfiltertypedef"></a>
+```python title="Definition"
+class InstanceAssociationTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    Content: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+```
 
 ## InstanceInformationFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstanceInformationFilterTypeDef
+
+def get_value() -> InstanceInformationFilterTypeDef:
+    return {
+        "key": ...,
+        "valueSet": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceInformationFilterTypeDef(TypedDict):
+    key: InstanceInformationFilterKeyType,  # (1)
+    valueSet: Sequence[str],
+```
 
-- `key`:
-  [InstanceInformationFilterKeyType](./literals.md#instanceinformationfilterkeytype)
-- `valueSet`: `Sequence`\[`str`\]
-
-<a id="instanceinformationstringfiltertypedef"></a>
-
+1. See [:material-code-brackets: InstanceInformationFilterKeyType](./literals.md#instanceinformationfilterkeytype) 
 ## InstanceInformationStringFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstanceInformationStringFilterTypeDef
+
+def get_value() -> InstanceInformationStringFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="instanceinformationtypedef"></a>
+```python title="Definition"
+class InstanceInformationStringFilterTypeDef(TypedDict):
+    Key: str,
+    Values: Sequence[str],
+```
 
 ## InstanceInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstanceInformationTypeDef
+
+def get_value() -> InstanceInformationTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceInformationTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    PingStatus: NotRequired[PingStatusType],  # (1)
+    LastPingDateTime: NotRequired[datetime],
+    AgentVersion: NotRequired[str],
+    IsLatestVersion: NotRequired[bool],
+    PlatformType: NotRequired[PlatformTypeType],  # (2)
+    PlatformName: NotRequired[str],
+    PlatformVersion: NotRequired[str],
+    ActivationId: NotRequired[str],
+    IamRole: NotRequired[str],
+    RegistrationDate: NotRequired[datetime],
+    ResourceType: NotRequired[ResourceTypeType],  # (3)
+    Name: NotRequired[str],
+    IPAddress: NotRequired[str],
+    ComputerName: NotRequired[str],
+    AssociationStatus: NotRequired[str],
+    LastAssociationExecutionDate: NotRequired[datetime],
+    LastSuccessfulAssociationExecutionDate: NotRequired[datetime],
+    AssociationOverview: NotRequired[InstanceAggregatedAssociationOverviewTypeDef],  # (4)
+    SourceId: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (5)
+```
 
-- `InstanceId`: `str`
-- `PingStatus`: [PingStatusType](./literals.md#pingstatustype)
-- `LastPingDateTime`: `datetime`
-- `AgentVersion`: `str`
-- `IsLatestVersion`: `bool`
-- `PlatformType`: [PlatformTypeType](./literals.md#platformtypetype)
-- `PlatformName`: `str`
-- `PlatformVersion`: `str`
-- `ActivationId`: `str`
-- `IamRole`: `str`
-- `RegistrationDate`: `datetime`
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `Name`: `str`
-- `IPAddress`: `str`
-- `ComputerName`: `str`
-- `AssociationStatus`: `str`
-- `LastAssociationExecutionDate`: `datetime`
-- `LastSuccessfulAssociationExecutionDate`: `datetime`
-- `AssociationOverview`:
-  [InstanceAggregatedAssociationOverviewTypeDef](./type_defs.md#instanceaggregatedassociationoverviewtypedef)
-- `SourceId`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-
-<a id="instancepatchstatefiltertypedef"></a>
-
+1. See [:material-code-brackets: PingStatusType](./literals.md#pingstatustype) 
+2. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+3. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+4. See [:material-code-braces: InstanceAggregatedAssociationOverviewTypeDef](./type_defs.md#instanceaggregatedassociationoverviewtypedef) 
+5. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## InstancePatchStateFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstancePatchStateFilterTypeDef
+
+def get_value() -> InstancePatchStateFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstancePatchStateFilterTypeDef(TypedDict):
+    Key: str,
+    Values: Sequence[str],
+    Type: InstancePatchStateOperatorTypeType,  # (1)
+```
 
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-- `Type`:
-  [InstancePatchStateOperatorTypeType](./literals.md#instancepatchstateoperatortypetype)
-
-<a id="instancepatchstatetypedef"></a>
-
+1. See [:material-code-brackets: InstancePatchStateOperatorTypeType](./literals.md#instancepatchstateoperatortypetype) 
 ## InstancePatchStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InstancePatchStateTypeDef
+
+def get_value() -> InstancePatchStateTypeDef:
+    return {
+        "InstanceId": ...,
+        "PatchGroup": ...,
+        "BaselineId": ...,
+        "OperationStartTime": ...,
+        "OperationEndTime": ...,
+        "Operation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstancePatchStateTypeDef(TypedDict):
+    InstanceId: str,
+    PatchGroup: str,
+    BaselineId: str,
+    OperationStartTime: datetime,
+    OperationEndTime: datetime,
+    Operation: PatchOperationTypeType,  # (1)
+    SnapshotId: NotRequired[str],
+    InstallOverrideList: NotRequired[str],
+    OwnerInformation: NotRequired[str],
+    InstalledCount: NotRequired[int],
+    InstalledOtherCount: NotRequired[int],
+    InstalledPendingRebootCount: NotRequired[int],
+    InstalledRejectedCount: NotRequired[int],
+    MissingCount: NotRequired[int],
+    FailedCount: NotRequired[int],
+    UnreportedNotApplicableCount: NotRequired[int],
+    NotApplicableCount: NotRequired[int],
+    LastNoRebootInstallOperationTime: NotRequired[datetime],
+    RebootOption: NotRequired[RebootOptionType],  # (2)
+    CriticalNonCompliantCount: NotRequired[int],
+    SecurityNonCompliantCount: NotRequired[int],
+    OtherNonCompliantCount: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-- `PatchGroup`: `str`
-- `BaselineId`: `str`
-- `OperationStartTime`: `datetime`
-- `OperationEndTime`: `datetime`
-- `Operation`: [PatchOperationTypeType](./literals.md#patchoperationtypetype)
-
-Optional fields:
-
-- `SnapshotId`: `str`
-- `InstallOverrideList`: `str`
-- `OwnerInformation`: `str`
-- `InstalledCount`: `int`
-- `InstalledOtherCount`: `int`
-- `InstalledPendingRebootCount`: `int`
-- `InstalledRejectedCount`: `int`
-- `MissingCount`: `int`
-- `FailedCount`: `int`
-- `UnreportedNotApplicableCount`: `int`
-- `NotApplicableCount`: `int`
-- `LastNoRebootInstallOperationTime`: `datetime`
-- `RebootOption`: [RebootOptionType](./literals.md#rebootoptiontype)
-- `CriticalNonCompliantCount`: `int`
-- `SecurityNonCompliantCount`: `int`
-- `OtherNonCompliantCount`: `int`
-
-<a id="inventoryaggregatortypedef"></a>
-
+1. See [:material-code-brackets: PatchOperationTypeType](./literals.md#patchoperationtypetype) 
+2. See [:material-code-brackets: RebootOptionType](./literals.md#rebootoptiontype) 
 ## InventoryAggregatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryAggregatorTypeDef
+
+def get_value() -> InventoryAggregatorTypeDef:
+    return {
+        "Expression": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InventoryAggregatorTypeDef(TypedDict):
+    Expression: NotRequired[str],
+    Aggregators: NotRequired[Sequence[InventoryAggregatorTypeDef]],  # (1)
+    Groups: NotRequired[Sequence[InventoryGroupTypeDef]],  # (2)
+```
 
-- `Expression`: `str`
-- `Aggregators`:
-  `Sequence`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
-- `Groups`:
-  `Sequence`\[[InventoryGroupTypeDef](./type_defs.md#inventorygrouptypedef)\]
-
-<a id="inventorydeletionstatusitemtypedef"></a>
-
+1. See [:material-code-braces: InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef) 
+2. See [:material-code-braces: InventoryGroupTypeDef](./type_defs.md#inventorygrouptypedef) 
 ## InventoryDeletionStatusItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryDeletionStatusItemTypeDef
+
+def get_value() -> InventoryDeletionStatusItemTypeDef:
+    return {
+        "DeletionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InventoryDeletionStatusItemTypeDef(TypedDict):
+    DeletionId: NotRequired[str],
+    TypeName: NotRequired[str],
+    DeletionStartTime: NotRequired[datetime],
+    LastStatus: NotRequired[InventoryDeletionStatusType],  # (1)
+    LastStatusMessage: NotRequired[str],
+    DeletionSummary: NotRequired[InventoryDeletionSummaryTypeDef],  # (2)
+    LastStatusUpdateTime: NotRequired[datetime],
+```
 
-- `DeletionId`: `str`
-- `TypeName`: `str`
-- `DeletionStartTime`: `datetime`
-- `LastStatus`:
-  [InventoryDeletionStatusType](./literals.md#inventorydeletionstatustype)
-- `LastStatusMessage`: `str`
-- `DeletionSummary`:
-  [InventoryDeletionSummaryTypeDef](./type_defs.md#inventorydeletionsummarytypedef)
-- `LastStatusUpdateTime`: `datetime`
-
-<a id="inventorydeletionsummaryitemtypedef"></a>
-
+1. See [:material-code-brackets: InventoryDeletionStatusType](./literals.md#inventorydeletionstatustype) 
+2. See [:material-code-braces: InventoryDeletionSummaryTypeDef](./type_defs.md#inventorydeletionsummarytypedef) 
 ## InventoryDeletionSummaryItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryDeletionSummaryItemTypeDef
+
+def get_value() -> InventoryDeletionSummaryItemTypeDef:
+    return {
+        "Version": ...,
+    }
 ```
 
-Optional fields:
-
-- `Version`: `str`
-- `Count`: `int`
-- `RemainingCount`: `int`
-
-<a id="inventorydeletionsummarytypedef"></a>
+```python title="Definition"
+class InventoryDeletionSummaryItemTypeDef(TypedDict):
+    Version: NotRequired[str],
+    Count: NotRequired[int],
+    RemainingCount: NotRequired[int],
+```
 
 ## InventoryDeletionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryDeletionSummaryTypeDef
+
+def get_value() -> InventoryDeletionSummaryTypeDef:
+    return {
+        "TotalCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InventoryDeletionSummaryTypeDef(TypedDict):
+    TotalCount: NotRequired[int],
+    RemainingCount: NotRequired[int],
+    SummaryItems: NotRequired[List[InventoryDeletionSummaryItemTypeDef]],  # (1)
+```
 
-- `TotalCount`: `int`
-- `RemainingCount`: `int`
-- `SummaryItems`:
-  `List`\[[InventoryDeletionSummaryItemTypeDef](./type_defs.md#inventorydeletionsummaryitemtypedef)\]
-
-<a id="inventoryfiltertypedef"></a>
-
+1. See [:material-code-braces: InventoryDeletionSummaryItemTypeDef](./type_defs.md#inventorydeletionsummaryitemtypedef) 
 ## InventoryFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryFilterTypeDef
+
+def get_value() -> InventoryFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InventoryFilterTypeDef(TypedDict):
+    Key: str,
+    Values: Sequence[str],
+    Type: NotRequired[InventoryQueryOperatorTypeType],  # (1)
+```
 
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Type`:
-  [InventoryQueryOperatorTypeType](./literals.md#inventoryqueryoperatortypetype)
-
-<a id="inventorygrouptypedef"></a>
-
+1. See [:material-code-brackets: InventoryQueryOperatorTypeType](./literals.md#inventoryqueryoperatortypetype) 
 ## InventoryGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryGroupTypeDef
+
+def get_value() -> InventoryGroupTypeDef:
+    return {
+        "Name": ...,
+        "Filters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InventoryGroupTypeDef(TypedDict):
+    Name: str,
+    Filters: Sequence[InventoryFilterTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `Filters`:
-  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
-
-<a id="inventoryitemattributetypedef"></a>
-
+1. See [:material-code-braces: InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef) 
 ## InventoryItemAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryItemAttributeTypeDef
+
+def get_value() -> InventoryItemAttributeTypeDef:
+    return {
+        "Name": ...,
+        "DataType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InventoryItemAttributeTypeDef(TypedDict):
+    Name: str,
+    DataType: InventoryAttributeDataTypeType,  # (1)
+```
 
-- `Name`: `str`
-- `DataType`:
-  [InventoryAttributeDataTypeType](./literals.md#inventoryattributedatatypetype)
-
-<a id="inventoryitemschematypedef"></a>
-
+1. See [:material-code-brackets: InventoryAttributeDataTypeType](./literals.md#inventoryattributedatatypetype) 
 ## InventoryItemSchemaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryItemSchemaTypeDef
+
+def get_value() -> InventoryItemSchemaTypeDef:
+    return {
+        "TypeName": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InventoryItemSchemaTypeDef(TypedDict):
+    TypeName: str,
+    Attributes: List[InventoryItemAttributeTypeDef],  # (1)
+    Version: NotRequired[str],
+    DisplayName: NotRequired[str],
+```
 
-- `TypeName`: `str`
-- `Attributes`:
-  `List`\[[InventoryItemAttributeTypeDef](./type_defs.md#inventoryitemattributetypedef)\]
-
-Optional fields:
-
-- `Version`: `str`
-- `DisplayName`: `str`
-
-<a id="inventoryitemtypedef"></a>
-
+1. See [:material-code-braces: InventoryItemAttributeTypeDef](./type_defs.md#inventoryitemattributetypedef) 
 ## InventoryItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryItemTypeDef
+
+def get_value() -> InventoryItemTypeDef:
+    return {
+        "TypeName": ...,
+        "SchemaVersion": ...,
+        "CaptureTime": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeName`: `str`
-- `SchemaVersion`: `str`
-- `CaptureTime`: `str`
-
-Optional fields:
-
-- `ContentHash`: `str`
-- `Content`: `Sequence`\[`Mapping`\[`str`, `str`\]\]
-- `Context`: `Mapping`\[`str`, `str`\]
-
-<a id="inventoryresultentitytypedef"></a>
+```python title="Definition"
+class InventoryItemTypeDef(TypedDict):
+    TypeName: str,
+    SchemaVersion: str,
+    CaptureTime: str,
+    ContentHash: NotRequired[str],
+    Content: NotRequired[Sequence[Mapping[str, str]]],
+    Context: NotRequired[Mapping[str, str]],
+```
 
 ## InventoryResultEntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryResultEntityTypeDef
+
+def get_value() -> InventoryResultEntityTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InventoryResultEntityTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Data: NotRequired[Dict[str, InventoryResultItemTypeDef]],  # (1)
+```
 
-- `Id`: `str`
-- `Data`: `Dict`\[`str`,
-  [InventoryResultItemTypeDef](./type_defs.md#inventoryresultitemtypedef)\]
-
-<a id="inventoryresultitemtypedef"></a>
-
+1. See [:material-code-braces: InventoryResultItemTypeDef](./type_defs.md#inventoryresultitemtypedef) 
 ## InventoryResultItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import InventoryResultItemTypeDef
+
+def get_value() -> InventoryResultItemTypeDef:
+    return {
+        "TypeName": ...,
+        "SchemaVersion": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeName`: `str`
-- `SchemaVersion`: `str`
-- `Content`: `List`\[`Dict`\[`str`, `str`\]\]
-
-Optional fields:
-
-- `CaptureTime`: `str`
-- `ContentHash`: `str`
-
-<a id="labelparameterversionrequestrequesttypedef"></a>
+```python title="Definition"
+class InventoryResultItemTypeDef(TypedDict):
+    TypeName: str,
+    SchemaVersion: str,
+    Content: List[Dict[str, str]],
+    CaptureTime: NotRequired[str],
+    ContentHash: NotRequired[str],
+```
 
 ## LabelParameterVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import LabelParameterVersionRequestRequestTypeDef
+
+def get_value() -> LabelParameterVersionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Labels": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Labels`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `ParameterVersion`: `int`
-
-<a id="labelparameterversionresulttypedef"></a>
+```python title="Definition"
+class LabelParameterVersionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Labels: Sequence[str],
+    ParameterVersion: NotRequired[int],
+```
 
 ## LabelParameterVersionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import LabelParameterVersionResultTypeDef
+
+def get_value() -> LabelParameterVersionResultTypeDef:
+    return {
+        "InvalidLabels": ...,
+        "ParameterVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LabelParameterVersionResultTypeDef(TypedDict):
+    InvalidLabels: List[str],
+    ParameterVersion: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `InvalidLabels`: `List`\[`str`\]
-- `ParameterVersion`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssociationVersionsRequestListAssociationVersionsPaginateTypeDef
 
-<a id="listassociationversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListAssociationVersionsRequestListAssociationVersionsPaginateTypeDef
 
+def get_value() -> ListAssociationVersionsRequestListAssociationVersionsPaginateTypeDef:
+    return {
+        "AssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociationVersionsRequestListAssociationVersionsPaginateTypeDef(TypedDict):
+    AssociationId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssociationVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListAssociationVersionsRequestRequestTypeDef
+
+def get_value() -> ListAssociationVersionsRequestRequestTypeDef:
+    return {
+        "AssociationId": ...,
+    }
 ```
 
-Required fields:
-
-- `AssociationId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listassociationversionsresulttypedef"></a>
+```python title="Definition"
+class ListAssociationVersionsRequestRequestTypeDef(TypedDict):
+    AssociationId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListAssociationVersionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListAssociationVersionsResultTypeDef
+
+def get_value() -> ListAssociationVersionsResultTypeDef:
+    return {
+        "AssociationVersions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssociationVersionsResultTypeDef(TypedDict):
+    AssociationVersions: List[AssociationVersionInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AssociationVersions`:
-  `List`\[[AssociationVersionInfoTypeDef](./type_defs.md#associationversioninfotypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssociationVersionInfoTypeDef](./type_defs.md#associationversioninfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssociationsRequestListAssociationsPaginateTypeDef
 
-<a id="listassociationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListAssociationsRequestListAssociationsPaginateTypeDef
 
+def get_value() -> ListAssociationsRequestListAssociationsPaginateTypeDef:
+    return {
+        "AssociationFilterList": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociationsRequestListAssociationsPaginateTypeDef(TypedDict):
+    AssociationFilterList: NotRequired[Sequence[AssociationFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssociationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListAssociationsRequestRequestTypeDef
+
+def get_value() -> ListAssociationsRequestRequestTypeDef:
+    return {
+        "AssociationFilterList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListAssociationsRequestRequestTypeDef(TypedDict):
+    AssociationFilterList: NotRequired[Sequence[AssociationFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AssociationFilterList`:
-  `Sequence`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listassociationsresulttypedef"></a>
-
+1. See [:material-code-braces: AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef) 
 ## ListAssociationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListAssociationsResultTypeDef
+
+def get_value() -> ListAssociationsResultTypeDef:
+    return {
+        "Associations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssociationsResultTypeDef(TypedDict):
+    Associations: List[AssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Associations`:
-  `List`\[[AssociationTypeDef](./type_defs.md#associationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssociationTypeDef](./type_defs.md#associationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCommandInvocationsRequestListCommandInvocationsPaginateTypeDef
 
-<a id="listcommandinvocationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListCommandInvocationsRequestListCommandInvocationsPaginateTypeDef
 
+def get_value() -> ListCommandInvocationsRequestListCommandInvocationsPaginateTypeDef:
+    return {
+        "CommandId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCommandInvocationsRequestListCommandInvocationsPaginateTypeDef(TypedDict):
+    CommandId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    Filters: NotRequired[Sequence[CommandFilterTypeDef]],  # (1)
+    Details: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: CommandFilterTypeDef](./type_defs.md#commandfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCommandInvocationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListCommandInvocationsRequestRequestTypeDef
+
+def get_value() -> ListCommandInvocationsRequestRequestTypeDef:
+    return {
+        "CommandId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCommandInvocationsRequestRequestTypeDef(TypedDict):
+    CommandId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[CommandFilterTypeDef]],  # (1)
+    Details: NotRequired[bool],
+```
 
-- `CommandId`: `str`
-- `InstanceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
-- `Details`: `bool`
-
-<a id="listcommandinvocationsresulttypedef"></a>
-
+1. See [:material-code-braces: CommandFilterTypeDef](./type_defs.md#commandfiltertypedef) 
 ## ListCommandInvocationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListCommandInvocationsResultTypeDef
+
+def get_value() -> ListCommandInvocationsResultTypeDef:
+    return {
+        "CommandInvocations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCommandInvocationsResultTypeDef(TypedDict):
+    CommandInvocations: List[CommandInvocationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CommandInvocations`:
-  `List`\[[CommandInvocationTypeDef](./type_defs.md#commandinvocationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CommandInvocationTypeDef](./type_defs.md#commandinvocationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCommandsRequestListCommandsPaginateTypeDef
 
-<a id="listcommandsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListCommandsRequestListCommandsPaginateTypeDef
 
+def get_value() -> ListCommandsRequestListCommandsPaginateTypeDef:
+    return {
+        "CommandId": ...,
+    }
+```
+
+```python title="Definition"
+class ListCommandsRequestListCommandsPaginateTypeDef(TypedDict):
+    CommandId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    Filters: NotRequired[Sequence[CommandFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: CommandFilterTypeDef](./type_defs.md#commandfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCommandsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListCommandsRequestRequestTypeDef
+
+def get_value() -> ListCommandsRequestRequestTypeDef:
+    return {
+        "CommandId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCommandsRequestRequestTypeDef(TypedDict):
+    CommandId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[CommandFilterTypeDef]],  # (1)
+```
 
-- `CommandId`: `str`
-- `InstanceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
-
-<a id="listcommandsresulttypedef"></a>
-
+1. See [:material-code-braces: CommandFilterTypeDef](./type_defs.md#commandfiltertypedef) 
 ## ListCommandsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListCommandsResultTypeDef
+
+def get_value() -> ListCommandsResultTypeDef:
+    return {
+        "Commands": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCommandsResultTypeDef(TypedDict):
+    Commands: List[CommandTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Commands`: `List`\[[CommandTypeDef](./type_defs.md#commandtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListComplianceItemsRequestListComplianceItemsPaginateTypeDef
 
-<a id="listcomplianceitemsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListComplianceItemsRequestListComplianceItemsPaginateTypeDef
 
+def get_value() -> ListComplianceItemsRequestListComplianceItemsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListComplianceItemsRequestListComplianceItemsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ComplianceStringFilterTypeDef]],  # (1)
+    ResourceIds: NotRequired[Sequence[str]],
+    ResourceTypes: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListComplianceItemsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListComplianceItemsRequestRequestTypeDef
+
+def get_value() -> ListComplianceItemsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListComplianceItemsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ComplianceStringFilterTypeDef]],  # (1)
+    ResourceIds: NotRequired[Sequence[str]],
+    ResourceTypes: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`:
-  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
-- `ResourceIds`: `Sequence`\[`str`\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcomplianceitemsresulttypedef"></a>
-
+1. See [:material-code-braces: ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef) 
 ## ListComplianceItemsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListComplianceItemsResultTypeDef
+
+def get_value() -> ListComplianceItemsResultTypeDef:
+    return {
+        "ComplianceItems": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListComplianceItemsResultTypeDef(TypedDict):
+    ComplianceItems: List[ComplianceItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ComplianceItems`:
-  `List`\[[ComplianceItemTypeDef](./type_defs.md#complianceitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ComplianceItemTypeDef](./type_defs.md#complianceitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListComplianceSummariesRequestListComplianceSummariesPaginateTypeDef
 
-<a id="listcompliancesummariesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListComplianceSummariesRequestListComplianceSummariesPaginateTypeDef
 
+def get_value() -> ListComplianceSummariesRequestListComplianceSummariesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListComplianceSummariesRequestListComplianceSummariesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ComplianceStringFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListComplianceSummariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListComplianceSummariesRequestRequestTypeDef
+
+def get_value() -> ListComplianceSummariesRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListComplianceSummariesRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ComplianceStringFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`:
-  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcompliancesummariesresulttypedef"></a>
-
+1. See [:material-code-braces: ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef) 
 ## ListComplianceSummariesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListComplianceSummariesResultTypeDef
+
+def get_value() -> ListComplianceSummariesResultTypeDef:
+    return {
+        "ComplianceSummaryItems": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListComplianceSummariesResultTypeDef(TypedDict):
+    ComplianceSummaryItems: List[ComplianceSummaryItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ComplianceSummaryItems`:
-  `List`\[[ComplianceSummaryItemTypeDef](./type_defs.md#compliancesummaryitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdocumentmetadatahistoryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComplianceSummaryItemTypeDef](./type_defs.md#compliancesummaryitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDocumentMetadataHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListDocumentMetadataHistoryRequestRequestTypeDef
+
+def get_value() -> ListDocumentMetadataHistoryRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Metadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDocumentMetadataHistoryRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Metadata: DocumentMetadataEnumType,  # (1)
+    DocumentVersion: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Name`: `str`
-- `Metadata`: `Literal['DocumentReviews']` (see
-  [DocumentMetadataEnumType](./literals.md#documentmetadataenumtype))
-
-Optional fields:
-
-- `DocumentVersion`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdocumentmetadatahistoryresponsetypedef"></a>
-
+1. See [:material-code-brackets: DocumentMetadataEnumType](./literals.md#documentmetadataenumtype) 
 ## ListDocumentMetadataHistoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListDocumentMetadataHistoryResponseTypeDef
+
+def get_value() -> ListDocumentMetadataHistoryResponseTypeDef:
+    return {
+        "Name": ...,
+        "DocumentVersion": ...,
+        "Author": ...,
+        "Metadata": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDocumentMetadataHistoryResponseTypeDef(TypedDict):
+    Name: str,
+    DocumentVersion: str,
+    Author: str,
+    Metadata: DocumentMetadataResponseInfoTypeDef,  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Name`: `str`
-- `DocumentVersion`: `str`
-- `Author`: `str`
-- `Metadata`:
-  [DocumentMetadataResponseInfoTypeDef](./type_defs.md#documentmetadataresponseinfotypedef)
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DocumentMetadataResponseInfoTypeDef](./type_defs.md#documentmetadataresponseinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDocumentVersionsRequestListDocumentVersionsPaginateTypeDef
 
-<a id="listdocumentversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListDocumentVersionsRequestListDocumentVersionsPaginateTypeDef
 
+def get_value() -> ListDocumentVersionsRequestListDocumentVersionsPaginateTypeDef:
+    return {
+        "Name": ...,
+    }
+```
+
+```python title="Definition"
+class ListDocumentVersionsRequestListDocumentVersionsPaginateTypeDef(TypedDict):
+    Name: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDocumentVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListDocumentVersionsRequestRequestTypeDef
+
+def get_value() -> ListDocumentVersionsRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdocumentversionsresulttypedef"></a>
+```python title="Definition"
+class ListDocumentVersionsRequestRequestTypeDef(TypedDict):
+    Name: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDocumentVersionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListDocumentVersionsResultTypeDef
+
+def get_value() -> ListDocumentVersionsResultTypeDef:
+    return {
+        "DocumentVersions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDocumentVersionsResultTypeDef(TypedDict):
+    DocumentVersions: List[DocumentVersionInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DocumentVersions`:
-  `List`\[[DocumentVersionInfoTypeDef](./type_defs.md#documentversioninfotypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DocumentVersionInfoTypeDef](./type_defs.md#documentversioninfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDocumentsRequestListDocumentsPaginateTypeDef
 
-<a id="listdocumentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListDocumentsRequestListDocumentsPaginateTypeDef
 
+def get_value() -> ListDocumentsRequestListDocumentsPaginateTypeDef:
+    return {
+        "DocumentFilterList": ...,
+    }
+```
+
+```python title="Definition"
+class ListDocumentsRequestListDocumentsPaginateTypeDef(TypedDict):
+    DocumentFilterList: NotRequired[Sequence[DocumentFilterTypeDef]],  # (1)
+    Filters: NotRequired[Sequence[DocumentKeyValuesFilterTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef) 
+2. See [:material-code-braces: DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDocumentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListDocumentsRequestRequestTypeDef
+
+def get_value() -> ListDocumentsRequestRequestTypeDef:
+    return {
+        "DocumentFilterList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDocumentsRequestRequestTypeDef(TypedDict):
+    DocumentFilterList: NotRequired[Sequence[DocumentFilterTypeDef]],  # (1)
+    Filters: NotRequired[Sequence[DocumentKeyValuesFilterTypeDef]],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `DocumentFilterList`:
-  `Sequence`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
-- `Filters`:
-  `Sequence`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdocumentsresulttypedef"></a>
-
+1. See [:material-code-braces: DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef) 
+2. See [:material-code-braces: DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef) 
 ## ListDocumentsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListDocumentsResultTypeDef
+
+def get_value() -> ListDocumentsResultTypeDef:
+    return {
+        "DocumentIdentifiers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDocumentsResultTypeDef(TypedDict):
+    DocumentIdentifiers: List[DocumentIdentifierTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DocumentIdentifiers`:
-  `List`\[[DocumentIdentifierTypeDef](./type_defs.md#documentidentifiertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listinventoryentriesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DocumentIdentifierTypeDef](./type_defs.md#documentidentifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInventoryEntriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListInventoryEntriesRequestRequestTypeDef
+
+def get_value() -> ListInventoryEntriesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "TypeName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInventoryEntriesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    TypeName: str,
+    Filters: NotRequired[Sequence[InventoryFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-- `TypeName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listinventoryentriesresulttypedef"></a>
-
+1. See [:material-code-braces: InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef) 
 ## ListInventoryEntriesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListInventoryEntriesResultTypeDef
+
+def get_value() -> ListInventoryEntriesResultTypeDef:
+    return {
+        "TypeName": ...,
+        "InstanceId": ...,
+        "SchemaVersion": ...,
+        "CaptureTime": ...,
+        "Entries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInventoryEntriesResultTypeDef(TypedDict):
+    TypeName: str,
+    InstanceId: str,
+    SchemaVersion: str,
+    CaptureTime: str,
+    Entries: List[Dict[str, str]],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TypeName`: `str`
-- `InstanceId`: `str`
-- `SchemaVersion`: `str`
-- `CaptureTime`: `str`
-- `Entries`: `List`\[`Dict`\[`str`, `str`\]\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOpsItemEventsRequestListOpsItemEventsPaginateTypeDef
 
-<a id="listopsitemeventsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListOpsItemEventsRequestListOpsItemEventsPaginateTypeDef
 
+def get_value() -> ListOpsItemEventsRequestListOpsItemEventsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListOpsItemEventsRequestListOpsItemEventsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[OpsItemEventFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOpsItemEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListOpsItemEventsRequestRequestTypeDef
+
+def get_value() -> ListOpsItemEventsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListOpsItemEventsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[OpsItemEventFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listopsitemeventsresponsetypedef"></a>
-
+1. See [:material-code-braces: OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef) 
 ## ListOpsItemEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListOpsItemEventsResponseTypeDef
+
+def get_value() -> ListOpsItemEventsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Summaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOpsItemEventsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Summaries: List[OpsItemEventSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Summaries`:
-  `List`\[[OpsItemEventSummaryTypeDef](./type_defs.md#opsitemeventsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OpsItemEventSummaryTypeDef](./type_defs.md#opsitemeventsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOpsItemRelatedItemsRequestListOpsItemRelatedItemsPaginateTypeDef
 
-<a id="listopsitemrelateditemsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListOpsItemRelatedItemsRequestListOpsItemRelatedItemsPaginateTypeDef
 
+def get_value() -> ListOpsItemRelatedItemsRequestListOpsItemRelatedItemsPaginateTypeDef:
+    return {
+        "OpsItemId": ...,
+    }
+```
+
+```python title="Definition"
+class ListOpsItemRelatedItemsRequestListOpsItemRelatedItemsPaginateTypeDef(TypedDict):
+    OpsItemId: NotRequired[str],
+    Filters: NotRequired[Sequence[OpsItemRelatedItemsFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOpsItemRelatedItemsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListOpsItemRelatedItemsRequestRequestTypeDef
+
+def get_value() -> ListOpsItemRelatedItemsRequestRequestTypeDef:
+    return {
+        "OpsItemId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListOpsItemRelatedItemsRequestRequestTypeDef(TypedDict):
+    OpsItemId: NotRequired[str],
+    Filters: NotRequired[Sequence[OpsItemRelatedItemsFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `OpsItemId`: `str`
-- `Filters`:
-  `Sequence`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listopsitemrelateditemsresponsetypedef"></a>
-
+1. See [:material-code-braces: OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef) 
 ## ListOpsItemRelatedItemsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListOpsItemRelatedItemsResponseTypeDef
+
+def get_value() -> ListOpsItemRelatedItemsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Summaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOpsItemRelatedItemsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Summaries: List[OpsItemRelatedItemSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Summaries`:
-  `List`\[[OpsItemRelatedItemSummaryTypeDef](./type_defs.md#opsitemrelateditemsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OpsItemRelatedItemSummaryTypeDef](./type_defs.md#opsitemrelateditemsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOpsMetadataRequestListOpsMetadataPaginateTypeDef
 
-<a id="listopsmetadatarequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListOpsMetadataRequestListOpsMetadataPaginateTypeDef
 
+def get_value() -> ListOpsMetadataRequestListOpsMetadataPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListOpsMetadataRequestListOpsMetadataPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[OpsMetadataFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOpsMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListOpsMetadataRequestRequestTypeDef
+
+def get_value() -> ListOpsMetadataRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListOpsMetadataRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[OpsMetadataFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listopsmetadataresulttypedef"></a>
-
+1. See [:material-code-braces: OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef) 
 ## ListOpsMetadataResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListOpsMetadataResultTypeDef
+
+def get_value() -> ListOpsMetadataResultTypeDef:
+    return {
+        "OpsMetadataList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOpsMetadataResultTypeDef(TypedDict):
+    OpsMetadataList: List[OpsMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OpsMetadataList`:
-  `List`\[[OpsMetadataTypeDef](./type_defs.md#opsmetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OpsMetadataTypeDef](./type_defs.md#opsmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceComplianceSummariesRequestListResourceComplianceSummariesPaginateTypeDef
 
-<a id="listresourcecompliancesummariesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListResourceComplianceSummariesRequestListResourceComplianceSummariesPaginateTypeDef
 
+def get_value() -> ListResourceComplianceSummariesRequestListResourceComplianceSummariesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceComplianceSummariesRequestListResourceComplianceSummariesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ComplianceStringFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListResourceComplianceSummariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListResourceComplianceSummariesRequestRequestTypeDef
+
+def get_value() -> ListResourceComplianceSummariesRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListResourceComplianceSummariesRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ComplianceStringFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`:
-  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listresourcecompliancesummariesresulttypedef"></a>
-
+1. See [:material-code-braces: ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef) 
 ## ListResourceComplianceSummariesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListResourceComplianceSummariesResultTypeDef
+
+def get_value() -> ListResourceComplianceSummariesResultTypeDef:
+    return {
+        "ResourceComplianceSummaryItems": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourceComplianceSummariesResultTypeDef(TypedDict):
+    ResourceComplianceSummaryItems: List[ResourceComplianceSummaryItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceComplianceSummaryItems`:
-  `List`\[[ResourceComplianceSummaryItemTypeDef](./type_defs.md#resourcecompliancesummaryitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResourceComplianceSummaryItemTypeDef](./type_defs.md#resourcecompliancesummaryitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceDataSyncRequestListResourceDataSyncPaginateTypeDef
 
-<a id="listresourcedatasyncrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm.type_defs import ListResourceDataSyncRequestListResourceDataSyncPaginateTypeDef
 
+def get_value() -> ListResourceDataSyncRequestListResourceDataSyncPaginateTypeDef:
+    return {
+        "SyncType": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceDataSyncRequestListResourceDataSyncPaginateTypeDef(TypedDict):
+    SyncType: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListResourceDataSyncRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListResourceDataSyncRequestRequestTypeDef
+
+def get_value() -> ListResourceDataSyncRequestRequestTypeDef:
+    return {
+        "SyncType": ...,
+    }
 ```
 
-Optional fields:
-
-- `SyncType`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listresourcedatasyncresulttypedef"></a>
+```python title="Definition"
+class ListResourceDataSyncRequestRequestTypeDef(TypedDict):
+    SyncType: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListResourceDataSyncResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListResourceDataSyncResultTypeDef
+
+def get_value() -> ListResourceDataSyncResultTypeDef:
+    return {
+        "ResourceDataSyncItems": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourceDataSyncResultTypeDef(TypedDict):
+    ResourceDataSyncItems: List[ResourceDataSyncItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceDataSyncItems`:
-  `List`\[[ResourceDataSyncItemTypeDef](./type_defs.md#resourcedatasyncitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceDataSyncItemTypeDef](./type_defs.md#resourcedatasyncitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceType: ResourceTypeForTaggingType,  # (1)
+    ResourceId: str,
+```
 
-- `ResourceType`:
-  [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
-- `ResourceId`: `str`
-
-<a id="listtagsforresourceresulttypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype) 
 ## ListTagsForResourceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ListTagsForResourceResultTypeDef
+
+def get_value() -> ListTagsForResourceResultTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResultTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="logginginfotypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import LoggingInfoTypeDef
+
+def get_value() -> LoggingInfoTypeDef:
+    return {
+        "S3BucketName": ...,
+        "S3Region": ...,
+    }
 ```
 
-Required fields:
-
-- `S3BucketName`: `str`
-- `S3Region`: `str`
-
-Optional fields:
-
-- `S3KeyPrefix`: `str`
-
-<a id="maintenancewindowautomationparameterstypedef"></a>
+```python title="Definition"
+class LoggingInfoTypeDef(TypedDict):
+    S3BucketName: str,
+    S3Region: str,
+    S3KeyPrefix: NotRequired[str],
+```
 
 ## MaintenanceWindowAutomationParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowAutomationParametersTypeDef
+
+def get_value() -> MaintenanceWindowAutomationParametersTypeDef:
+    return {
+        "DocumentVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `DocumentVersion`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
-
-<a id="maintenancewindowexecutiontaskidentitytypedef"></a>
+```python title="Definition"
+class MaintenanceWindowAutomationParametersTypeDef(TypedDict):
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Dict[str, List[str]]],
+```
 
 ## MaintenanceWindowExecutionTaskIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowExecutionTaskIdentityTypeDef
+
+def get_value() -> MaintenanceWindowExecutionTaskIdentityTypeDef:
+    return {
+        "WindowExecutionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MaintenanceWindowExecutionTaskIdentityTypeDef(TypedDict):
+    WindowExecutionId: NotRequired[str],
+    TaskExecutionId: NotRequired[str],
+    Status: NotRequired[MaintenanceWindowExecutionStatusType],  # (1)
+    StatusDetails: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    TaskArn: NotRequired[str],
+    TaskType: NotRequired[MaintenanceWindowTaskTypeType],  # (2)
+```
 
-- `WindowExecutionId`: `str`
-- `TaskExecutionId`: `str`
-- `Status`:
-  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
-- `StatusDetails`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `TaskArn`: `str`
-- `TaskType`:
-  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
-
-<a id="maintenancewindowexecutiontaskinvocationidentitytypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
+2. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
 ## MaintenanceWindowExecutionTaskInvocationIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowExecutionTaskInvocationIdentityTypeDef
+
+def get_value() -> MaintenanceWindowExecutionTaskInvocationIdentityTypeDef:
+    return {
+        "WindowExecutionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MaintenanceWindowExecutionTaskInvocationIdentityTypeDef(TypedDict):
+    WindowExecutionId: NotRequired[str],
+    TaskExecutionId: NotRequired[str],
+    InvocationId: NotRequired[str],
+    ExecutionId: NotRequired[str],
+    TaskType: NotRequired[MaintenanceWindowTaskTypeType],  # (1)
+    Parameters: NotRequired[str],
+    Status: NotRequired[MaintenanceWindowExecutionStatusType],  # (2)
+    StatusDetails: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    OwnerInformation: NotRequired[str],
+    WindowTargetId: NotRequired[str],
+```
 
-- `WindowExecutionId`: `str`
-- `TaskExecutionId`: `str`
-- `InvocationId`: `str`
-- `ExecutionId`: `str`
-- `TaskType`:
-  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
-- `Parameters`: `str`
-- `Status`:
-  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
-- `StatusDetails`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `OwnerInformation`: `str`
-- `WindowTargetId`: `str`
-
-<a id="maintenancewindowexecutiontypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
+2. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
 ## MaintenanceWindowExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowExecutionTypeDef
+
+def get_value() -> MaintenanceWindowExecutionTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MaintenanceWindowExecutionTypeDef(TypedDict):
+    WindowId: NotRequired[str],
+    WindowExecutionId: NotRequired[str],
+    Status: NotRequired[MaintenanceWindowExecutionStatusType],  # (1)
+    StatusDetails: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+```
 
-- `WindowId`: `str`
-- `WindowExecutionId`: `str`
-- `Status`:
-  [MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype)
-- `StatusDetails`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-
-<a id="maintenancewindowfiltertypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowExecutionStatusType](./literals.md#maintenancewindowexecutionstatustype) 
 ## MaintenanceWindowFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowFilterTypeDef
+
+def get_value() -> MaintenanceWindowFilterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="maintenancewindowidentityfortargettypedef"></a>
+```python title="Definition"
+class MaintenanceWindowFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
 
 ## MaintenanceWindowIdentityForTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowIdentityForTargetTypeDef
+
+def get_value() -> MaintenanceWindowIdentityForTargetTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Optional fields:
-
-- `WindowId`: `str`
-- `Name`: `str`
-
-<a id="maintenancewindowidentitytypedef"></a>
+```python title="Definition"
+class MaintenanceWindowIdentityForTargetTypeDef(TypedDict):
+    WindowId: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## MaintenanceWindowIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowIdentityTypeDef
+
+def get_value() -> MaintenanceWindowIdentityTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Optional fields:
-
-- `WindowId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Enabled`: `bool`
-- `Duration`: `int`
-- `Cutoff`: `int`
-- `Schedule`: `str`
-- `ScheduleTimezone`: `str`
-- `ScheduleOffset`: `int`
-- `EndDate`: `str`
-- `StartDate`: `str`
-- `NextExecutionTime`: `str`
-
-<a id="maintenancewindowlambdaparameterstypedef"></a>
+```python title="Definition"
+class MaintenanceWindowIdentityTypeDef(TypedDict):
+    WindowId: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Enabled: NotRequired[bool],
+    Duration: NotRequired[int],
+    Cutoff: NotRequired[int],
+    Schedule: NotRequired[str],
+    ScheduleTimezone: NotRequired[str],
+    ScheduleOffset: NotRequired[int],
+    EndDate: NotRequired[str],
+    StartDate: NotRequired[str],
+    NextExecutionTime: NotRequired[str],
+```
 
 ## MaintenanceWindowLambdaParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowLambdaParametersTypeDef
+
+def get_value() -> MaintenanceWindowLambdaParametersTypeDef:
+    return {
+        "ClientContext": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClientContext`: `str`
-- `Qualifier`: `str`
-- `Payload`: `bytes`
-
-<a id="maintenancewindowruncommandparameterstypedef"></a>
+```python title="Definition"
+class MaintenanceWindowLambdaParametersTypeDef(TypedDict):
+    ClientContext: NotRequired[str],
+    Qualifier: NotRequired[str],
+    Payload: NotRequired[bytes],
+```
 
 ## MaintenanceWindowRunCommandParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowRunCommandParametersTypeDef
+
+def get_value() -> MaintenanceWindowRunCommandParametersTypeDef:
+    return {
+        "Comment": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MaintenanceWindowRunCommandParametersTypeDef(TypedDict):
+    Comment: NotRequired[str],
+    CloudWatchOutputConfig: NotRequired[CloudWatchOutputConfigTypeDef],  # (1)
+    DocumentHash: NotRequired[str],
+    DocumentHashType: NotRequired[DocumentHashTypeType],  # (2)
+    DocumentVersion: NotRequired[str],
+    NotificationConfig: NotRequired[NotificationConfigTypeDef],  # (3)
+    OutputS3BucketName: NotRequired[str],
+    OutputS3KeyPrefix: NotRequired[str],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    ServiceRoleArn: NotRequired[str],
+    TimeoutSeconds: NotRequired[int],
+```
 
-- `Comment`: `str`
-- `CloudWatchOutputConfig`:
-  [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
-- `DocumentHash`: `str`
-- `DocumentHashType`:
-  [DocumentHashTypeType](./literals.md#documenthashtypetype)
-- `DocumentVersion`: `str`
-- `NotificationConfig`:
-  [NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef)
-- `OutputS3BucketName`: `str`
-- `OutputS3KeyPrefix`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `ServiceRoleArn`: `str`
-- `TimeoutSeconds`: `int`
-
-<a id="maintenancewindowstepfunctionsparameterstypedef"></a>
-
+1. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
+2. See [:material-code-brackets: DocumentHashTypeType](./literals.md#documenthashtypetype) 
+3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
 ## MaintenanceWindowStepFunctionsParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowStepFunctionsParametersTypeDef
+
+def get_value() -> MaintenanceWindowStepFunctionsParametersTypeDef:
+    return {
+        "Input": ...,
+    }
 ```
 
-Optional fields:
-
-- `Input`: `str`
-- `Name`: `str`
-
-<a id="maintenancewindowtargettypedef"></a>
+```python title="Definition"
+class MaintenanceWindowStepFunctionsParametersTypeDef(TypedDict):
+    Input: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## MaintenanceWindowTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowTargetTypeDef
+
+def get_value() -> MaintenanceWindowTargetTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MaintenanceWindowTargetTypeDef(TypedDict):
+    WindowId: NotRequired[str],
+    WindowTargetId: NotRequired[str],
+    ResourceType: NotRequired[MaintenanceWindowResourceTypeType],  # (1)
+    Targets: NotRequired[List[TargetTypeDef]],  # (2)
+    OwnerInformation: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
-- `WindowId`: `str`
-- `WindowTargetId`: `str`
-- `ResourceType`:
-  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `OwnerInformation`: `str`
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="maintenancewindowtaskinvocationparameterstypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 ## MaintenanceWindowTaskInvocationParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowTaskInvocationParametersTypeDef
+
+def get_value() -> MaintenanceWindowTaskInvocationParametersTypeDef:
+    return {
+        "RunCommand": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MaintenanceWindowTaskInvocationParametersTypeDef(TypedDict):
+    RunCommand: NotRequired[MaintenanceWindowRunCommandParametersTypeDef],  # (1)
+    Automation: NotRequired[MaintenanceWindowAutomationParametersTypeDef],  # (2)
+    StepFunctions: NotRequired[MaintenanceWindowStepFunctionsParametersTypeDef],  # (3)
+    Lambda: NotRequired[MaintenanceWindowLambdaParametersTypeDef],  # (4)
+```
 
-- `RunCommand`:
-  [MaintenanceWindowRunCommandParametersTypeDef](./type_defs.md#maintenancewindowruncommandparameterstypedef)
-- `Automation`:
-  [MaintenanceWindowAutomationParametersTypeDef](./type_defs.md#maintenancewindowautomationparameterstypedef)
-- `StepFunctions`:
-  [MaintenanceWindowStepFunctionsParametersTypeDef](./type_defs.md#maintenancewindowstepfunctionsparameterstypedef)
-- `Lambda`:
-  [MaintenanceWindowLambdaParametersTypeDef](./type_defs.md#maintenancewindowlambdaparameterstypedef)
-
-<a id="maintenancewindowtaskparametervalueexpressiontypedef"></a>
-
+1. See [:material-code-braces: MaintenanceWindowRunCommandParametersTypeDef](./type_defs.md#maintenancewindowruncommandparameterstypedef) 
+2. See [:material-code-braces: MaintenanceWindowAutomationParametersTypeDef](./type_defs.md#maintenancewindowautomationparameterstypedef) 
+3. See [:material-code-braces: MaintenanceWindowStepFunctionsParametersTypeDef](./type_defs.md#maintenancewindowstepfunctionsparameterstypedef) 
+4. See [:material-code-braces: MaintenanceWindowLambdaParametersTypeDef](./type_defs.md#maintenancewindowlambdaparameterstypedef) 
 ## MaintenanceWindowTaskParameterValueExpressionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowTaskParameterValueExpressionTypeDef
+
+def get_value() -> MaintenanceWindowTaskParameterValueExpressionTypeDef:
+    return {
+        "Values": ...,
+    }
 ```
 
-Optional fields:
-
-- `Values`: `List`\[`str`\]
-
-<a id="maintenancewindowtasktypedef"></a>
+```python title="Definition"
+class MaintenanceWindowTaskParameterValueExpressionTypeDef(TypedDict):
+    Values: NotRequired[List[str]],
+```
 
 ## MaintenanceWindowTaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MaintenanceWindowTaskTypeDef
+
+def get_value() -> MaintenanceWindowTaskTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MaintenanceWindowTaskTypeDef(TypedDict):
+    WindowId: NotRequired[str],
+    WindowTaskId: NotRequired[str],
+    TaskArn: NotRequired[str],
+    Type: NotRequired[MaintenanceWindowTaskTypeType],  # (1)
+    Targets: NotRequired[List[TargetTypeDef]],  # (2)
+    TaskParameters: NotRequired[Dict[str, MaintenanceWindowTaskParameterValueExpressionTypeDef]],  # (3)
+    Priority: NotRequired[int],
+    LoggingInfo: NotRequired[LoggingInfoTypeDef],  # (4)
+    ServiceRoleArn: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CutoffBehavior: NotRequired[MaintenanceWindowTaskCutoffBehaviorType],  # (5)
+```
 
-- `WindowId`: `str`
-- `WindowTaskId`: `str`
-- `TaskArn`: `str`
-- `Type`:
-  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TaskParameters`: `Dict`\[`str`,
-  [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
-- `Priority`: `int`
-- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
-- `ServiceRoleArn`: `str`
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `CutoffBehavior`:
-  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
-
-<a id="metadatavaluetypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
+4. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
+5. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
 ## MetadataValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import MetadataValueTypeDef
+
+def get_value() -> MetadataValueTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `str`
-
-<a id="modifydocumentpermissionrequestrequesttypedef"></a>
+```python title="Definition"
+class MetadataValueTypeDef(TypedDict):
+    Value: NotRequired[str],
+```
 
 ## ModifyDocumentPermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ModifyDocumentPermissionRequestRequestTypeDef
+
+def get_value() -> ModifyDocumentPermissionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "PermissionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyDocumentPermissionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    PermissionType: DocumentPermissionTypeType,  # (1)
+    AccountIdsToAdd: NotRequired[Sequence[str]],
+    AccountIdsToRemove: NotRequired[Sequence[str]],
+    SharedDocumentVersion: NotRequired[str],
+```
 
-- `Name`: `str`
-- `PermissionType`: `Literal['Share']` (see
-  [DocumentPermissionTypeType](./literals.md#documentpermissiontypetype))
-
-Optional fields:
-
-- `AccountIdsToAdd`: `Sequence`\[`str`\]
-- `AccountIdsToRemove`: `Sequence`\[`str`\]
-- `SharedDocumentVersion`: `str`
-
-<a id="noncompliantsummarytypedef"></a>
-
+1. See [:material-code-brackets: DocumentPermissionTypeType](./literals.md#documentpermissiontypetype) 
 ## NonCompliantSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import NonCompliantSummaryTypeDef
+
+def get_value() -> NonCompliantSummaryTypeDef:
+    return {
+        "NonCompliantCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NonCompliantSummaryTypeDef(TypedDict):
+    NonCompliantCount: NotRequired[int],
+    SeveritySummary: NotRequired[SeveritySummaryTypeDef],  # (1)
+```
 
-- `NonCompliantCount`: `int`
-- `SeveritySummary`:
-  [SeveritySummaryTypeDef](./type_defs.md#severitysummarytypedef)
-
-<a id="notificationconfigtypedef"></a>
-
+1. See [:material-code-braces: SeveritySummaryTypeDef](./type_defs.md#severitysummarytypedef) 
 ## NotificationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import NotificationConfigTypeDef
+
+def get_value() -> NotificationConfigTypeDef:
+    return {
+        "NotificationArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotificationConfigTypeDef(TypedDict):
+    NotificationArn: NotRequired[str],
+    NotificationEvents: NotRequired[List[NotificationEventType]],  # (1)
+    NotificationType: NotRequired[NotificationTypeType],  # (2)
+```
 
-- `NotificationArn`: `str`
-- `NotificationEvents`:
-  `List`\[[NotificationEventType](./literals.md#notificationeventtype)\]
-- `NotificationType`:
-  [NotificationTypeType](./literals.md#notificationtypetype)
-
-<a id="opsaggregatortypedef"></a>
-
+1. See [:material-code-brackets: NotificationEventType](./literals.md#notificationeventtype) 
+2. See [:material-code-brackets: NotificationTypeType](./literals.md#notificationtypetype) 
 ## OpsAggregatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsAggregatorTypeDef
+
+def get_value() -> OpsAggregatorTypeDef:
+    return {
+        "AggregatorType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpsAggregatorTypeDef(TypedDict):
+    AggregatorType: NotRequired[str],
+    TypeName: NotRequired[str],
+    AttributeName: NotRequired[str],
+    Values: NotRequired[Mapping[str, str]],
+    Filters: NotRequired[Sequence[OpsFilterTypeDef]],  # (1)
+    Aggregators: NotRequired[Sequence[OpsAggregatorTypeDef]],  # (2)
+```
 
-- `AggregatorType`: `str`
-- `TypeName`: `str`
-- `AttributeName`: `str`
-- `Values`: `Mapping`\[`str`, `str`\]
-- `Filters`: `Sequence`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
-- `Aggregators`:
-  `Sequence`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
-
-<a id="opsentityitemtypedef"></a>
-
+1. See [:material-code-braces: OpsFilterTypeDef](./type_defs.md#opsfiltertypedef) 
+2. See [:material-code-braces: OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef) 
 ## OpsEntityItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsEntityItemTypeDef
+
+def get_value() -> OpsEntityItemTypeDef:
+    return {
+        "CaptureTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `CaptureTime`: `str`
-- `Content`: `List`\[`Dict`\[`str`, `str`\]\]
-
-<a id="opsentitytypedef"></a>
+```python title="Definition"
+class OpsEntityItemTypeDef(TypedDict):
+    CaptureTime: NotRequired[str],
+    Content: NotRequired[List[Dict[str, str]]],
+```
 
 ## OpsEntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsEntityTypeDef
+
+def get_value() -> OpsEntityTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpsEntityTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Data: NotRequired[Dict[str, OpsEntityItemTypeDef]],  # (1)
+```
 
-- `Id`: `str`
-- `Data`: `Dict`\[`str`,
-  [OpsEntityItemTypeDef](./type_defs.md#opsentityitemtypedef)\]
-
-<a id="opsfiltertypedef"></a>
-
+1. See [:material-code-braces: OpsEntityItemTypeDef](./type_defs.md#opsentityitemtypedef) 
 ## OpsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsFilterTypeDef
+
+def get_value() -> OpsFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OpsFilterTypeDef(TypedDict):
+    Key: str,
+    Values: Sequence[str],
+    Type: NotRequired[OpsFilterOperatorTypeType],  # (1)
+```
 
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Type`: [OpsFilterOperatorTypeType](./literals.md#opsfilteroperatortypetype)
-
-<a id="opsitemdatavaluetypedef"></a>
-
+1. See [:material-code-brackets: OpsFilterOperatorTypeType](./literals.md#opsfilteroperatortypetype) 
 ## OpsItemDataValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemDataValueTypeDef
+
+def get_value() -> OpsItemDataValueTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpsItemDataValueTypeDef(TypedDict):
+    Value: NotRequired[str],
+    Type: NotRequired[OpsItemDataTypeType],  # (1)
+```
 
-- `Value`: `str`
-- `Type`: [OpsItemDataTypeType](./literals.md#opsitemdatatypetype)
-
-<a id="opsitemeventfiltertypedef"></a>
-
+1. See [:material-code-brackets: OpsItemDataTypeType](./literals.md#opsitemdatatypetype) 
 ## OpsItemEventFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemEventFilterTypeDef
+
+def get_value() -> OpsItemEventFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+        "Operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OpsItemEventFilterTypeDef(TypedDict):
+    Key: OpsItemEventFilterKeyType,  # (1)
+    Values: Sequence[str],
+    Operator: OpsItemEventFilterOperatorType,  # (2)
+```
 
-- `Key`: `Literal['OpsItemId']` (see
-  [OpsItemEventFilterKeyType](./literals.md#opsitemeventfilterkeytype))
-- `Values`: `Sequence`\[`str`\]
-- `Operator`: `Literal['Equal']` (see
-  [OpsItemEventFilterOperatorType](./literals.md#opsitemeventfilteroperatortype))
-
-<a id="opsitemeventsummarytypedef"></a>
-
+1. See [:material-code-brackets: OpsItemEventFilterKeyType](./literals.md#opsitemeventfilterkeytype) 
+2. See [:material-code-brackets: OpsItemEventFilterOperatorType](./literals.md#opsitemeventfilteroperatortype) 
 ## OpsItemEventSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemEventSummaryTypeDef
+
+def get_value() -> OpsItemEventSummaryTypeDef:
+    return {
+        "OpsItemId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpsItemEventSummaryTypeDef(TypedDict):
+    OpsItemId: NotRequired[str],
+    EventId: NotRequired[str],
+    Source: NotRequired[str],
+    DetailType: NotRequired[str],
+    Detail: NotRequired[str],
+    CreatedBy: NotRequired[OpsItemIdentityTypeDef],  # (1)
+    CreatedTime: NotRequired[datetime],
+```
 
-- `OpsItemId`: `str`
-- `EventId`: `str`
-- `Source`: `str`
-- `DetailType`: `str`
-- `Detail`: `str`
-- `CreatedBy`: [OpsItemIdentityTypeDef](./type_defs.md#opsitemidentitytypedef)
-- `CreatedTime`: `datetime`
-
-<a id="opsitemfiltertypedef"></a>
-
+1. See [:material-code-braces: OpsItemIdentityTypeDef](./type_defs.md#opsitemidentitytypedef) 
 ## OpsItemFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemFilterTypeDef
+
+def get_value() -> OpsItemFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+        "Operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OpsItemFilterTypeDef(TypedDict):
+    Key: OpsItemFilterKeyType,  # (1)
+    Values: Sequence[str],
+    Operator: OpsItemFilterOperatorType,  # (2)
+```
 
-- `Key`: [OpsItemFilterKeyType](./literals.md#opsitemfilterkeytype)
-- `Values`: `Sequence`\[`str`\]
-- `Operator`:
-  [OpsItemFilterOperatorType](./literals.md#opsitemfilteroperatortype)
-
-<a id="opsitemidentitytypedef"></a>
-
+1. See [:material-code-brackets: OpsItemFilterKeyType](./literals.md#opsitemfilterkeytype) 
+2. See [:material-code-brackets: OpsItemFilterOperatorType](./literals.md#opsitemfilteroperatortype) 
 ## OpsItemIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemIdentityTypeDef
+
+def get_value() -> OpsItemIdentityTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-
-<a id="opsitemnotificationtypedef"></a>
+```python title="Definition"
+class OpsItemIdentityTypeDef(TypedDict):
+    Arn: NotRequired[str],
+```
 
 ## OpsItemNotificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemNotificationTypeDef
+
+def get_value() -> OpsItemNotificationTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-
-<a id="opsitemrelateditemsummarytypedef"></a>
+```python title="Definition"
+class OpsItemNotificationTypeDef(TypedDict):
+    Arn: NotRequired[str],
+```
 
 ## OpsItemRelatedItemSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemRelatedItemSummaryTypeDef
+
+def get_value() -> OpsItemRelatedItemSummaryTypeDef:
+    return {
+        "OpsItemId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpsItemRelatedItemSummaryTypeDef(TypedDict):
+    OpsItemId: NotRequired[str],
+    AssociationId: NotRequired[str],
+    ResourceType: NotRequired[str],
+    AssociationType: NotRequired[str],
+    ResourceUri: NotRequired[str],
+    CreatedBy: NotRequired[OpsItemIdentityTypeDef],  # (1)
+    CreatedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[OpsItemIdentityTypeDef],  # (1)
+    LastModifiedTime: NotRequired[datetime],
+```
 
-- `OpsItemId`: `str`
-- `AssociationId`: `str`
-- `ResourceType`: `str`
-- `AssociationType`: `str`
-- `ResourceUri`: `str`
-- `CreatedBy`: [OpsItemIdentityTypeDef](./type_defs.md#opsitemidentitytypedef)
-- `CreatedTime`: `datetime`
-- `LastModifiedBy`:
-  [OpsItemIdentityTypeDef](./type_defs.md#opsitemidentitytypedef)
-- `LastModifiedTime`: `datetime`
-
-<a id="opsitemrelateditemsfiltertypedef"></a>
-
+1. See [:material-code-braces: OpsItemIdentityTypeDef](./type_defs.md#opsitemidentitytypedef) 
+2. See [:material-code-braces: OpsItemIdentityTypeDef](./type_defs.md#opsitemidentitytypedef) 
 ## OpsItemRelatedItemsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemRelatedItemsFilterTypeDef
+
+def get_value() -> OpsItemRelatedItemsFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+        "Operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OpsItemRelatedItemsFilterTypeDef(TypedDict):
+    Key: OpsItemRelatedItemsFilterKeyType,  # (1)
+    Values: Sequence[str],
+    Operator: OpsItemRelatedItemsFilterOperatorType,  # (2)
+```
 
-- `Key`:
-  [OpsItemRelatedItemsFilterKeyType](./literals.md#opsitemrelateditemsfilterkeytype)
-- `Values`: `Sequence`\[`str`\]
-- `Operator`: `Literal['Equal']` (see
-  [OpsItemRelatedItemsFilterOperatorType](./literals.md#opsitemrelateditemsfilteroperatortype))
-
-<a id="opsitemsummarytypedef"></a>
-
+1. See [:material-code-brackets: OpsItemRelatedItemsFilterKeyType](./literals.md#opsitemrelateditemsfilterkeytype) 
+2. See [:material-code-brackets: OpsItemRelatedItemsFilterOperatorType](./literals.md#opsitemrelateditemsfilteroperatortype) 
 ## OpsItemSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemSummaryTypeDef
+
+def get_value() -> OpsItemSummaryTypeDef:
+    return {
+        "CreatedBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpsItemSummaryTypeDef(TypedDict):
+    CreatedBy: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    LastModifiedBy: NotRequired[str],
+    LastModifiedTime: NotRequired[datetime],
+    Priority: NotRequired[int],
+    Source: NotRequired[str],
+    Status: NotRequired[OpsItemStatusType],  # (1)
+    OpsItemId: NotRequired[str],
+    Title: NotRequired[str],
+    OperationalData: NotRequired[Dict[str, OpsItemDataValueTypeDef]],  # (2)
+    Category: NotRequired[str],
+    Severity: NotRequired[str],
+    OpsItemType: NotRequired[str],
+    ActualStartTime: NotRequired[datetime],
+    ActualEndTime: NotRequired[datetime],
+    PlannedStartTime: NotRequired[datetime],
+    PlannedEndTime: NotRequired[datetime],
+```
 
-- `CreatedBy`: `str`
-- `CreatedTime`: `datetime`
-- `LastModifiedBy`: `str`
-- `LastModifiedTime`: `datetime`
-- `Priority`: `int`
-- `Source`: `str`
-- `Status`: [OpsItemStatusType](./literals.md#opsitemstatustype)
-- `OpsItemId`: `str`
-- `Title`: `str`
-- `OperationalData`: `Dict`\[`str`,
-  [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
-- `Category`: `str`
-- `Severity`: `str`
-- `OpsItemType`: `str`
-- `ActualStartTime`: `datetime`
-- `ActualEndTime`: `datetime`
-- `PlannedStartTime`: `datetime`
-- `PlannedEndTime`: `datetime`
-
-<a id="opsitemtypedef"></a>
-
+1. See [:material-code-brackets: OpsItemStatusType](./literals.md#opsitemstatustype) 
+2. See [:material-code-braces: OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef) 
 ## OpsItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsItemTypeDef
+
+def get_value() -> OpsItemTypeDef:
+    return {
+        "CreatedBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpsItemTypeDef(TypedDict):
+    CreatedBy: NotRequired[str],
+    OpsItemType: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    Description: NotRequired[str],
+    LastModifiedBy: NotRequired[str],
+    LastModifiedTime: NotRequired[datetime],
+    Notifications: NotRequired[List[OpsItemNotificationTypeDef]],  # (1)
+    Priority: NotRequired[int],
+    RelatedOpsItems: NotRequired[List[RelatedOpsItemTypeDef]],  # (2)
+    Status: NotRequired[OpsItemStatusType],  # (3)
+    OpsItemId: NotRequired[str],
+    Version: NotRequired[str],
+    Title: NotRequired[str],
+    Source: NotRequired[str],
+    OperationalData: NotRequired[Dict[str, OpsItemDataValueTypeDef]],  # (4)
+    Category: NotRequired[str],
+    Severity: NotRequired[str],
+    ActualStartTime: NotRequired[datetime],
+    ActualEndTime: NotRequired[datetime],
+    PlannedStartTime: NotRequired[datetime],
+    PlannedEndTime: NotRequired[datetime],
+```
 
-- `CreatedBy`: `str`
-- `OpsItemType`: `str`
-- `CreatedTime`: `datetime`
-- `Description`: `str`
-- `LastModifiedBy`: `str`
-- `LastModifiedTime`: `datetime`
-- `Notifications`:
-  `List`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
-- `Priority`: `int`
-- `RelatedOpsItems`:
-  `List`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
-- `Status`: [OpsItemStatusType](./literals.md#opsitemstatustype)
-- `OpsItemId`: `str`
-- `Version`: `str`
-- `Title`: `str`
-- `Source`: `str`
-- `OperationalData`: `Dict`\[`str`,
-  [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
-- `Category`: `str`
-- `Severity`: `str`
-- `ActualStartTime`: `datetime`
-- `ActualEndTime`: `datetime`
-- `PlannedStartTime`: `datetime`
-- `PlannedEndTime`: `datetime`
-
-<a id="opsmetadatafiltertypedef"></a>
-
+1. See [:material-code-braces: OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef) 
+2. See [:material-code-braces: RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef) 
+3. See [:material-code-brackets: OpsItemStatusType](./literals.md#opsitemstatustype) 
+4. See [:material-code-braces: OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef) 
 ## OpsMetadataFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsMetadataFilterTypeDef
+
+def get_value() -> OpsMetadataFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="opsmetadatatypedef"></a>
+```python title="Definition"
+class OpsMetadataFilterTypeDef(TypedDict):
+    Key: str,
+    Values: Sequence[str],
+```
 
 ## OpsMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsMetadataTypeDef
+
+def get_value() -> OpsMetadataTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceId`: `str`
-- `OpsMetadataArn`: `str`
-- `LastModifiedDate`: `datetime`
-- `LastModifiedUser`: `str`
-- `CreationDate`: `datetime`
-
-<a id="opsresultattributetypedef"></a>
+```python title="Definition"
+class OpsMetadataTypeDef(TypedDict):
+    ResourceId: NotRequired[str],
+    OpsMetadataArn: NotRequired[str],
+    LastModifiedDate: NotRequired[datetime],
+    LastModifiedUser: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+```
 
 ## OpsResultAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OpsResultAttributeTypeDef
+
+def get_value() -> OpsResultAttributeTypeDef:
+    return {
+        "TypeName": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeName`: `str`
-
-<a id="outputsourcetypedef"></a>
+```python title="Definition"
+class OpsResultAttributeTypeDef(TypedDict):
+    TypeName: str,
+```
 
 ## OutputSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import OutputSourceTypeDef
+
+def get_value() -> OutputSourceTypeDef:
+    return {
+        "OutputSourceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `OutputSourceId`: `str`
-- `OutputSourceType`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OutputSourceTypeDef(TypedDict):
+    OutputSourceId: NotRequired[str],
+    OutputSourceType: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parameterhistorytypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterHistoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ParameterHistoryTypeDef
+
+def get_value() -> ParameterHistoryTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParameterHistoryTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[ParameterTypeType],  # (1)
+    KeyId: NotRequired[str],
+    LastModifiedDate: NotRequired[datetime],
+    LastModifiedUser: NotRequired[str],
+    Description: NotRequired[str],
+    Value: NotRequired[str],
+    AllowedPattern: NotRequired[str],
+    Version: NotRequired[int],
+    Labels: NotRequired[List[str]],
+    Tier: NotRequired[ParameterTierType],  # (2)
+    Policies: NotRequired[List[ParameterInlinePolicyTypeDef]],  # (3)
+    DataType: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
-- `KeyId`: `str`
-- `LastModifiedDate`: `datetime`
-- `LastModifiedUser`: `str`
-- `Description`: `str`
-- `Value`: `str`
-- `AllowedPattern`: `str`
-- `Version`: `int`
-- `Labels`: `List`\[`str`\]
-- `Tier`: [ParameterTierType](./literals.md#parametertiertype)
-- `Policies`:
-  `List`\[[ParameterInlinePolicyTypeDef](./type_defs.md#parameterinlinepolicytypedef)\]
-- `DataType`: `str`
-
-<a id="parameterinlinepolicytypedef"></a>
-
+1. See [:material-code-brackets: ParameterTypeType](./literals.md#parametertypetype) 
+2. See [:material-code-brackets: ParameterTierType](./literals.md#parametertiertype) 
+3. See [:material-code-braces: ParameterInlinePolicyTypeDef](./type_defs.md#parameterinlinepolicytypedef) 
 ## ParameterInlinePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ParameterInlinePolicyTypeDef
+
+def get_value() -> ParameterInlinePolicyTypeDef:
+    return {
+        "PolicyText": ...,
+    }
 ```
 
-Optional fields:
-
-- `PolicyText`: `str`
-- `PolicyType`: `str`
-- `PolicyStatus`: `str`
-
-<a id="parametermetadatatypedef"></a>
+```python title="Definition"
+class ParameterInlinePolicyTypeDef(TypedDict):
+    PolicyText: NotRequired[str],
+    PolicyType: NotRequired[str],
+    PolicyStatus: NotRequired[str],
+```
 
 ## ParameterMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ParameterMetadataTypeDef
+
+def get_value() -> ParameterMetadataTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParameterMetadataTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[ParameterTypeType],  # (1)
+    KeyId: NotRequired[str],
+    LastModifiedDate: NotRequired[datetime],
+    LastModifiedUser: NotRequired[str],
+    Description: NotRequired[str],
+    AllowedPattern: NotRequired[str],
+    Version: NotRequired[int],
+    Tier: NotRequired[ParameterTierType],  # (2)
+    Policies: NotRequired[List[ParameterInlinePolicyTypeDef]],  # (3)
+    DataType: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
-- `KeyId`: `str`
-- `LastModifiedDate`: `datetime`
-- `LastModifiedUser`: `str`
-- `Description`: `str`
-- `AllowedPattern`: `str`
-- `Version`: `int`
-- `Tier`: [ParameterTierType](./literals.md#parametertiertype)
-- `Policies`:
-  `List`\[[ParameterInlinePolicyTypeDef](./type_defs.md#parameterinlinepolicytypedef)\]
-- `DataType`: `str`
-
-<a id="parameterstringfiltertypedef"></a>
-
+1. See [:material-code-brackets: ParameterTypeType](./literals.md#parametertypetype) 
+2. See [:material-code-brackets: ParameterTierType](./literals.md#parametertiertype) 
+3. See [:material-code-braces: ParameterInlinePolicyTypeDef](./type_defs.md#parameterinlinepolicytypedef) 
 ## ParameterStringFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ParameterStringFilterTypeDef
+
+def get_value() -> ParameterStringFilterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `Option`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="parametertypedef"></a>
+```python title="Definition"
+class ParameterStringFilterTypeDef(TypedDict):
+    Key: str,
+    Option: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
 
 ## ParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ParameterTypeDef
+
+def get_value() -> ParameterTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParameterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[ParameterTypeType],  # (1)
+    Value: NotRequired[str],
+    Version: NotRequired[int],
+    Selector: NotRequired[str],
+    SourceResult: NotRequired[str],
+    LastModifiedDate: NotRequired[datetime],
+    ARN: NotRequired[str],
+    DataType: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
-- `Value`: `str`
-- `Version`: `int`
-- `Selector`: `str`
-- `SourceResult`: `str`
-- `LastModifiedDate`: `datetime`
-- `ARN`: `str`
-- `DataType`: `str`
-
-<a id="parametersfiltertypedef"></a>
-
+1. See [:material-code-brackets: ParameterTypeType](./literals.md#parametertypetype) 
 ## ParametersFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ParametersFilterTypeDef
+
+def get_value() -> ParametersFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ParametersFilterTypeDef(TypedDict):
+    Key: ParametersFilterKeyType,  # (1)
+    Values: Sequence[str],
+```
 
-- `Key`: [ParametersFilterKeyType](./literals.md#parametersfilterkeytype)
-- `Values`: `Sequence`\[`str`\]
-
-<a id="patchbaselineidentitytypedef"></a>
-
+1. See [:material-code-brackets: ParametersFilterKeyType](./literals.md#parametersfilterkeytype) 
 ## PatchBaselineIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchBaselineIdentityTypeDef
+
+def get_value() -> PatchBaselineIdentityTypeDef:
+    return {
+        "BaselineId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PatchBaselineIdentityTypeDef(TypedDict):
+    BaselineId: NotRequired[str],
+    BaselineName: NotRequired[str],
+    OperatingSystem: NotRequired[OperatingSystemType],  # (1)
+    BaselineDescription: NotRequired[str],
+    DefaultBaseline: NotRequired[bool],
+```
 
-- `BaselineId`: `str`
-- `BaselineName`: `str`
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `BaselineDescription`: `str`
-- `DefaultBaseline`: `bool`
-
-<a id="patchcompliancedatatypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
 ## PatchComplianceDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchComplianceDataTypeDef
+
+def get_value() -> PatchComplianceDataTypeDef:
+    return {
+        "Title": ...,
+        "KBId": ...,
+        "Classification": ...,
+        "Severity": ...,
+        "State": ...,
+        "InstalledTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PatchComplianceDataTypeDef(TypedDict):
+    Title: str,
+    KBId: str,
+    Classification: str,
+    Severity: str,
+    State: PatchComplianceDataStateType,  # (1)
+    InstalledTime: datetime,
+    CVEIds: NotRequired[str],
+```
 
-- `Title`: `str`
-- `KBId`: `str`
-- `Classification`: `str`
-- `Severity`: `str`
-- `State`:
-  [PatchComplianceDataStateType](./literals.md#patchcompliancedatastatetype)
-- `InstalledTime`: `datetime`
-
-Optional fields:
-
-- `CVEIds`: `str`
-
-<a id="patchfiltergrouptypedef"></a>
-
+1. See [:material-code-brackets: PatchComplianceDataStateType](./literals.md#patchcompliancedatastatetype) 
 ## PatchFilterGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchFilterGroupTypeDef
+
+def get_value() -> PatchFilterGroupTypeDef:
+    return {
+        "PatchFilters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PatchFilterGroupTypeDef(TypedDict):
+    PatchFilters: Sequence[PatchFilterTypeDef],  # (1)
+```
 
-- `PatchFilters`:
-  `Sequence`\[[PatchFilterTypeDef](./type_defs.md#patchfiltertypedef)\]
-
-<a id="patchfiltertypedef"></a>
-
+1. See [:material-code-braces: PatchFilterTypeDef](./type_defs.md#patchfiltertypedef) 
 ## PatchFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchFilterTypeDef
+
+def get_value() -> PatchFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PatchFilterTypeDef(TypedDict):
+    Key: PatchFilterKeyType,  # (1)
+    Values: Sequence[str],
+```
 
-- `Key`: [PatchFilterKeyType](./literals.md#patchfilterkeytype)
-- `Values`: `Sequence`\[`str`\]
-
-<a id="patchgrouppatchbaselinemappingtypedef"></a>
-
+1. See [:material-code-brackets: PatchFilterKeyType](./literals.md#patchfilterkeytype) 
 ## PatchGroupPatchBaselineMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchGroupPatchBaselineMappingTypeDef
+
+def get_value() -> PatchGroupPatchBaselineMappingTypeDef:
+    return {
+        "PatchGroup": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PatchGroupPatchBaselineMappingTypeDef(TypedDict):
+    PatchGroup: NotRequired[str],
+    BaselineIdentity: NotRequired[PatchBaselineIdentityTypeDef],  # (1)
+```
 
-- `PatchGroup`: `str`
-- `BaselineIdentity`:
-  [PatchBaselineIdentityTypeDef](./type_defs.md#patchbaselineidentitytypedef)
-
-<a id="patchorchestratorfiltertypedef"></a>
-
+1. See [:material-code-braces: PatchBaselineIdentityTypeDef](./type_defs.md#patchbaselineidentitytypedef) 
 ## PatchOrchestratorFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchOrchestratorFilterTypeDef
+
+def get_value() -> PatchOrchestratorFilterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="patchrulegrouptypedef"></a>
+```python title="Definition"
+class PatchOrchestratorFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
 
 ## PatchRuleGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchRuleGroupTypeDef
+
+def get_value() -> PatchRuleGroupTypeDef:
+    return {
+        "PatchRules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PatchRuleGroupTypeDef(TypedDict):
+    PatchRules: Sequence[PatchRuleTypeDef],  # (1)
+```
 
-- `PatchRules`:
-  `Sequence`\[[PatchRuleTypeDef](./type_defs.md#patchruletypedef)\]
-
-<a id="patchruletypedef"></a>
-
+1. See [:material-code-braces: PatchRuleTypeDef](./type_defs.md#patchruletypedef) 
 ## PatchRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchRuleTypeDef
+
+def get_value() -> PatchRuleTypeDef:
+    return {
+        "PatchFilterGroup": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PatchRuleTypeDef(TypedDict):
+    PatchFilterGroup: PatchFilterGroupTypeDef,  # (1)
+    ComplianceLevel: NotRequired[PatchComplianceLevelType],  # (2)
+    ApproveAfterDays: NotRequired[int],
+    ApproveUntilDate: NotRequired[str],
+    EnableNonSecurity: NotRequired[bool],
+```
 
-- `PatchFilterGroup`:
-  [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
-
-Optional fields:
-
-- `ComplianceLevel`:
-  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
-- `ApproveAfterDays`: `int`
-- `ApproveUntilDate`: `str`
-- `EnableNonSecurity`: `bool`
-
-<a id="patchsourcetypedef"></a>
-
+1. See [:material-code-braces: PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef) 
+2. See [:material-code-brackets: PatchComplianceLevelType](./literals.md#patchcomplianceleveltype) 
 ## PatchSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchSourceTypeDef
+
+def get_value() -> PatchSourceTypeDef:
+    return {
+        "Name": ...,
+        "Products": ...,
+        "Configuration": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Products`: `Sequence`\[`str`\]
-- `Configuration`: `str`
-
-<a id="patchstatustypedef"></a>
+```python title="Definition"
+class PatchSourceTypeDef(TypedDict):
+    Name: str,
+    Products: Sequence[str],
+    Configuration: str,
+```
 
 ## PatchStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchStatusTypeDef
+
+def get_value() -> PatchStatusTypeDef:
+    return {
+        "DeploymentStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PatchStatusTypeDef(TypedDict):
+    DeploymentStatus: NotRequired[PatchDeploymentStatusType],  # (1)
+    ComplianceLevel: NotRequired[PatchComplianceLevelType],  # (2)
+    ApprovalDate: NotRequired[datetime],
+```
 
-- `DeploymentStatus`:
-  [PatchDeploymentStatusType](./literals.md#patchdeploymentstatustype)
-- `ComplianceLevel`:
-  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
-- `ApprovalDate`: `datetime`
-
-<a id="patchtypedef"></a>
-
+1. See [:material-code-brackets: PatchDeploymentStatusType](./literals.md#patchdeploymentstatustype) 
+2. See [:material-code-brackets: PatchComplianceLevelType](./literals.md#patchcomplianceleveltype) 
 ## PatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PatchTypeDef
+
+def get_value() -> PatchTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `ReleaseDate`: `datetime`
-- `Title`: `str`
-- `Description`: `str`
-- `ContentUrl`: `str`
-- `Vendor`: `str`
-- `ProductFamily`: `str`
-- `Product`: `str`
-- `Classification`: `str`
-- `MsrcSeverity`: `str`
-- `KbNumber`: `str`
-- `MsrcNumber`: `str`
-- `Language`: `str`
-- `AdvisoryIds`: `List`\[`str`\]
-- `BugzillaIds`: `List`\[`str`\]
-- `CVEIds`: `List`\[`str`\]
-- `Name`: `str`
-- `Epoch`: `int`
-- `Version`: `str`
-- `Release`: `str`
-- `Arch`: `str`
-- `Severity`: `str`
-- `Repository`: `str`
-
-<a id="progresscounterstypedef"></a>
+```python title="Definition"
+class PatchTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ReleaseDate: NotRequired[datetime],
+    Title: NotRequired[str],
+    Description: NotRequired[str],
+    ContentUrl: NotRequired[str],
+    Vendor: NotRequired[str],
+    ProductFamily: NotRequired[str],
+    Product: NotRequired[str],
+    Classification: NotRequired[str],
+    MsrcSeverity: NotRequired[str],
+    KbNumber: NotRequired[str],
+    MsrcNumber: NotRequired[str],
+    Language: NotRequired[str],
+    AdvisoryIds: NotRequired[List[str]],
+    BugzillaIds: NotRequired[List[str]],
+    CVEIds: NotRequired[List[str]],
+    Name: NotRequired[str],
+    Epoch: NotRequired[int],
+    Version: NotRequired[str],
+    Release: NotRequired[str],
+    Arch: NotRequired[str],
+    Severity: NotRequired[str],
+    Repository: NotRequired[str],
+```
 
 ## ProgressCountersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ProgressCountersTypeDef
+
+def get_value() -> ProgressCountersTypeDef:
+    return {
+        "TotalSteps": ...,
+    }
 ```
 
-Optional fields:
-
-- `TotalSteps`: `int`
-- `SuccessSteps`: `int`
-- `FailedSteps`: `int`
-- `CancelledSteps`: `int`
-- `TimedOutSteps`: `int`
-
-<a id="putcomplianceitemsrequestrequesttypedef"></a>
+```python title="Definition"
+class ProgressCountersTypeDef(TypedDict):
+    TotalSteps: NotRequired[int],
+    SuccessSteps: NotRequired[int],
+    FailedSteps: NotRequired[int],
+    CancelledSteps: NotRequired[int],
+    TimedOutSteps: NotRequired[int],
+```
 
 ## PutComplianceItemsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PutComplianceItemsRequestRequestTypeDef
+
+def get_value() -> PutComplianceItemsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "ResourceType": ...,
+        "ComplianceType": ...,
+        "ExecutionSummary": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutComplianceItemsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    ResourceType: str,
+    ComplianceType: str,
+    ExecutionSummary: ComplianceExecutionSummaryTypeDef,  # (1)
+    Items: Sequence[ComplianceItemEntryTypeDef],  # (2)
+    ItemContentHash: NotRequired[str],
+    UploadType: NotRequired[ComplianceUploadTypeType],  # (3)
+```
 
-- `ResourceId`: `str`
-- `ResourceType`: `str`
-- `ComplianceType`: `str`
-- `ExecutionSummary`:
-  [ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef)
-- `Items`:
-  `Sequence`\[[ComplianceItemEntryTypeDef](./type_defs.md#complianceitementrytypedef)\]
-
-Optional fields:
-
-- `ItemContentHash`: `str`
-- `UploadType`:
-  [ComplianceUploadTypeType](./literals.md#complianceuploadtypetype)
-
-<a id="putinventoryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef) 
+2. See [:material-code-braces: ComplianceItemEntryTypeDef](./type_defs.md#complianceitementrytypedef) 
+3. See [:material-code-brackets: ComplianceUploadTypeType](./literals.md#complianceuploadtypetype) 
 ## PutInventoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PutInventoryRequestRequestTypeDef
+
+def get_value() -> PutInventoryRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutInventoryRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Items: Sequence[InventoryItemTypeDef],  # (1)
+```
 
-- `InstanceId`: `str`
-- `Items`:
-  `Sequence`\[[InventoryItemTypeDef](./type_defs.md#inventoryitemtypedef)\]
-
-<a id="putinventoryresulttypedef"></a>
-
+1. See [:material-code-braces: InventoryItemTypeDef](./type_defs.md#inventoryitemtypedef) 
 ## PutInventoryResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PutInventoryResultTypeDef
+
+def get_value() -> PutInventoryResultTypeDef:
+    return {
+        "Message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutInventoryResultTypeDef(TypedDict):
+    Message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putparameterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutParameterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PutParameterRequestRequestTypeDef
+
+def get_value() -> PutParameterRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutParameterRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+    Description: NotRequired[str],
+    Type: NotRequired[ParameterTypeType],  # (1)
+    KeyId: NotRequired[str],
+    Overwrite: NotRequired[bool],
+    AllowedPattern: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    Tier: NotRequired[ParameterTierType],  # (3)
+    Policies: NotRequired[str],
+    DataType: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Value`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Type`: [ParameterTypeType](./literals.md#parametertypetype)
-- `KeyId`: `str`
-- `Overwrite`: `bool`
-- `AllowedPattern`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Tier`: [ParameterTierType](./literals.md#parametertiertype)
-- `Policies`: `str`
-- `DataType`: `str`
-
-<a id="putparameterresulttypedef"></a>
-
+1. See [:material-code-brackets: ParameterTypeType](./literals.md#parametertypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ParameterTierType](./literals.md#parametertiertype) 
 ## PutParameterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import PutParameterResultTypeDef
+
+def get_value() -> PutParameterResultTypeDef:
+    return {
+        "Version": ...,
+        "Tier": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutParameterResultTypeDef(TypedDict):
+    Version: int,
+    Tier: ParameterTierType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Version`: `int`
-- `Tier`: [ParameterTierType](./literals.md#parametertiertype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerdefaultpatchbaselinerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ParameterTierType](./literals.md#parametertiertype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterDefaultPatchBaselineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RegisterDefaultPatchBaselineRequestRequestTypeDef
+
+def get_value() -> RegisterDefaultPatchBaselineRequestRequestTypeDef:
+    return {
+        "BaselineId": ...,
+    }
 ```
 
-Required fields:
-
-- `BaselineId`: `str`
-
-<a id="registerdefaultpatchbaselineresulttypedef"></a>
+```python title="Definition"
+class RegisterDefaultPatchBaselineRequestRequestTypeDef(TypedDict):
+    BaselineId: str,
+```
 
 ## RegisterDefaultPatchBaselineResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RegisterDefaultPatchBaselineResultTypeDef
+
+def get_value() -> RegisterDefaultPatchBaselineResultTypeDef:
+    return {
+        "BaselineId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterDefaultPatchBaselineResultTypeDef(TypedDict):
+    BaselineId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BaselineId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerpatchbaselineforpatchgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterPatchBaselineForPatchGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RegisterPatchBaselineForPatchGroupRequestRequestTypeDef
+
+def get_value() -> RegisterPatchBaselineForPatchGroupRequestRequestTypeDef:
+    return {
+        "BaselineId": ...,
+        "PatchGroup": ...,
+    }
 ```
 
-Required fields:
-
-- `BaselineId`: `str`
-- `PatchGroup`: `str`
-
-<a id="registerpatchbaselineforpatchgroupresulttypedef"></a>
+```python title="Definition"
+class RegisterPatchBaselineForPatchGroupRequestRequestTypeDef(TypedDict):
+    BaselineId: str,
+    PatchGroup: str,
+```
 
 ## RegisterPatchBaselineForPatchGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RegisterPatchBaselineForPatchGroupResultTypeDef
+
+def get_value() -> RegisterPatchBaselineForPatchGroupResultTypeDef:
+    return {
+        "BaselineId": ...,
+        "PatchGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterPatchBaselineForPatchGroupResultTypeDef(TypedDict):
+    BaselineId: str,
+    PatchGroup: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BaselineId`: `str`
-- `PatchGroup`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registertargetwithmaintenancewindowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterTargetWithMaintenanceWindowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RegisterTargetWithMaintenanceWindowRequestRequestTypeDef
+
+def get_value() -> RegisterTargetWithMaintenanceWindowRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+        "ResourceType": ...,
+        "Targets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterTargetWithMaintenanceWindowRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    ResourceType: MaintenanceWindowResourceTypeType,  # (1)
+    Targets: Sequence[TargetTypeDef],  # (2)
+    OwnerInformation: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+```
 
-- `WindowId`: `str`
-- `ResourceType`:
-  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-
-Optional fields:
-
-- `OwnerInformation`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `ClientToken`: `str`
-
-<a id="registertargetwithmaintenancewindowresulttypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 ## RegisterTargetWithMaintenanceWindowResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RegisterTargetWithMaintenanceWindowResultTypeDef
+
+def get_value() -> RegisterTargetWithMaintenanceWindowResultTypeDef:
+    return {
+        "WindowTargetId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterTargetWithMaintenanceWindowResultTypeDef(TypedDict):
+    WindowTargetId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WindowTargetId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registertaskwithmaintenancewindowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterTaskWithMaintenanceWindowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RegisterTaskWithMaintenanceWindowRequestRequestTypeDef
+
+def get_value() -> RegisterTaskWithMaintenanceWindowRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+        "TaskArn": ...,
+        "TaskType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterTaskWithMaintenanceWindowRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    TaskArn: str,
+    TaskType: MaintenanceWindowTaskTypeType,  # (1)
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
+    ServiceRoleArn: NotRequired[str],
+    TaskParameters: NotRequired[Mapping[str, MaintenanceWindowTaskParameterValueExpressionTypeDef]],  # (3)
+    TaskInvocationParameters: NotRequired[MaintenanceWindowTaskInvocationParametersTypeDef],  # (4)
+    Priority: NotRequired[int],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    LoggingInfo: NotRequired[LoggingInfoTypeDef],  # (5)
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+    CutoffBehavior: NotRequired[MaintenanceWindowTaskCutoffBehaviorType],  # (6)
+```
 
-- `WindowId`: `str`
-- `TaskArn`: `str`
-- `TaskType`:
-  [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
-
-Optional fields:
-
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `ServiceRoleArn`: `str`
-- `TaskParameters`: `Mapping`\[`str`,
-  [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
-- `TaskInvocationParameters`:
-  [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
-- `Priority`: `int`
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
-- `Name`: `str`
-- `Description`: `str`
-- `ClientToken`: `str`
-- `CutoffBehavior`:
-  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
-
-<a id="registertaskwithmaintenancewindowresulttypedef"></a>
-
+1. See [:material-code-brackets: MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
+4. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
+5. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
+6. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
 ## RegisterTaskWithMaintenanceWindowResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RegisterTaskWithMaintenanceWindowResultTypeDef
+
+def get_value() -> RegisterTaskWithMaintenanceWindowResultTypeDef:
+    return {
+        "WindowTaskId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterTaskWithMaintenanceWindowResultTypeDef(TypedDict):
+    WindowTaskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WindowTaskId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registrationmetadataitemtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegistrationMetadataItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RegistrationMetadataItemTypeDef
+
+def get_value() -> RegistrationMetadataItemTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="relatedopsitemtypedef"></a>
+```python title="Definition"
+class RegistrationMetadataItemTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## RelatedOpsItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RelatedOpsItemTypeDef
+
+def get_value() -> RelatedOpsItemTypeDef:
+    return {
+        "OpsItemId": ...,
+    }
 ```
 
-Required fields:
-
-- `OpsItemId`: `str`
-
-<a id="removetagsfromresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class RelatedOpsItemTypeDef(TypedDict):
+    OpsItemId: str,
+```
 
 ## RemoveTagsFromResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RemoveTagsFromResourceRequestRequestTypeDef
+
+def get_value() -> RemoveTagsFromResourceRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+        "ResourceId": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveTagsFromResourceRequestRequestTypeDef(TypedDict):
+    ResourceType: ResourceTypeForTaggingType,  # (1)
+    ResourceId: str,
+    TagKeys: Sequence[str],
+```
 
-- `ResourceType`:
-  [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
-- `ResourceId`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="resetservicesettingrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype) 
 ## ResetServiceSettingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResetServiceSettingRequestRequestTypeDef
+
+def get_value() -> ResetServiceSettingRequestRequestTypeDef:
+    return {
+        "SettingId": ...,
+    }
 ```
 
-Required fields:
-
-- `SettingId`: `str`
-
-<a id="resetservicesettingresulttypedef"></a>
+```python title="Definition"
+class ResetServiceSettingRequestRequestTypeDef(TypedDict):
+    SettingId: str,
+```
 
 ## ResetServiceSettingResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResetServiceSettingResultTypeDef
+
+def get_value() -> ResetServiceSettingResultTypeDef:
+    return {
+        "ServiceSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResetServiceSettingResultTypeDef(TypedDict):
+    ServiceSetting: ServiceSettingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServiceSetting`:
-  [ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resolvedtargetstypedef"></a>
-
+1. See [:material-code-braces: ServiceSettingTypeDef](./type_defs.md#servicesettingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResolvedTargetsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResolvedTargetsTypeDef
+
+def get_value() -> ResolvedTargetsTypeDef:
+    return {
+        "ParameterValues": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterValues`: `List`\[`str`\]
-- `Truncated`: `bool`
-
-<a id="resourcecompliancesummaryitemtypedef"></a>
+```python title="Definition"
+class ResolvedTargetsTypeDef(TypedDict):
+    ParameterValues: NotRequired[List[str]],
+    Truncated: NotRequired[bool],
+```
 
 ## ResourceComplianceSummaryItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResourceComplianceSummaryItemTypeDef
+
+def get_value() -> ResourceComplianceSummaryItemTypeDef:
+    return {
+        "ComplianceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceComplianceSummaryItemTypeDef(TypedDict):
+    ComplianceType: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
+    Status: NotRequired[ComplianceStatusType],  # (1)
+    OverallSeverity: NotRequired[ComplianceSeverityType],  # (2)
+    ExecutionSummary: NotRequired[ComplianceExecutionSummaryTypeDef],  # (3)
+    CompliantSummary: NotRequired[CompliantSummaryTypeDef],  # (4)
+    NonCompliantSummary: NotRequired[NonCompliantSummaryTypeDef],  # (5)
+```
 
-- `ComplianceType`: `str`
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-- `Status`: [ComplianceStatusType](./literals.md#compliancestatustype)
-- `OverallSeverity`:
-  [ComplianceSeverityType](./literals.md#complianceseveritytype)
-- `ExecutionSummary`:
-  [ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef)
-- `CompliantSummary`:
-  [CompliantSummaryTypeDef](./type_defs.md#compliantsummarytypedef)
-- `NonCompliantSummary`:
-  [NonCompliantSummaryTypeDef](./type_defs.md#noncompliantsummarytypedef)
-
-<a id="resourcedatasyncawsorganizationssourcetypedef"></a>
-
+1. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
+2. See [:material-code-brackets: ComplianceSeverityType](./literals.md#complianceseveritytype) 
+3. See [:material-code-braces: ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef) 
+4. See [:material-code-braces: CompliantSummaryTypeDef](./type_defs.md#compliantsummarytypedef) 
+5. See [:material-code-braces: NonCompliantSummaryTypeDef](./type_defs.md#noncompliantsummarytypedef) 
 ## ResourceDataSyncAwsOrganizationsSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResourceDataSyncAwsOrganizationsSourceTypeDef
+
+def get_value() -> ResourceDataSyncAwsOrganizationsSourceTypeDef:
+    return {
+        "OrganizationSourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceDataSyncAwsOrganizationsSourceTypeDef(TypedDict):
+    OrganizationSourceType: str,
+    OrganizationalUnits: NotRequired[Sequence[ResourceDataSyncOrganizationalUnitTypeDef]],  # (1)
+```
 
-- `OrganizationSourceType`: `str`
-
-Optional fields:
-
-- `OrganizationalUnits`:
-  `Sequence`\[[ResourceDataSyncOrganizationalUnitTypeDef](./type_defs.md#resourcedatasyncorganizationalunittypedef)\]
-
-<a id="resourcedatasyncdestinationdatasharingtypedef"></a>
-
+1. See [:material-code-braces: ResourceDataSyncOrganizationalUnitTypeDef](./type_defs.md#resourcedatasyncorganizationalunittypedef) 
 ## ResourceDataSyncDestinationDataSharingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResourceDataSyncDestinationDataSharingTypeDef
+
+def get_value() -> ResourceDataSyncDestinationDataSharingTypeDef:
+    return {
+        "DestinationDataSharingType": ...,
+    }
 ```
 
-Optional fields:
-
-- `DestinationDataSharingType`: `str`
-
-<a id="resourcedatasyncitemtypedef"></a>
+```python title="Definition"
+class ResourceDataSyncDestinationDataSharingTypeDef(TypedDict):
+    DestinationDataSharingType: NotRequired[str],
+```
 
 ## ResourceDataSyncItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResourceDataSyncItemTypeDef
+
+def get_value() -> ResourceDataSyncItemTypeDef:
+    return {
+        "SyncName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceDataSyncItemTypeDef(TypedDict):
+    SyncName: NotRequired[str],
+    SyncType: NotRequired[str],
+    SyncSource: NotRequired[ResourceDataSyncSourceWithStateTypeDef],  # (1)
+    S3Destination: NotRequired[ResourceDataSyncS3DestinationTypeDef],  # (2)
+    LastSyncTime: NotRequired[datetime],
+    LastSuccessfulSyncTime: NotRequired[datetime],
+    SyncLastModifiedTime: NotRequired[datetime],
+    LastStatus: NotRequired[LastResourceDataSyncStatusType],  # (3)
+    SyncCreatedTime: NotRequired[datetime],
+    LastSyncStatusMessage: NotRequired[str],
+```
 
-- `SyncName`: `str`
-- `SyncType`: `str`
-- `SyncSource`:
-  [ResourceDataSyncSourceWithStateTypeDef](./type_defs.md#resourcedatasyncsourcewithstatetypedef)
-- `S3Destination`:
-  [ResourceDataSyncS3DestinationTypeDef](./type_defs.md#resourcedatasyncs3destinationtypedef)
-- `LastSyncTime`: `datetime`
-- `LastSuccessfulSyncTime`: `datetime`
-- `SyncLastModifiedTime`: `datetime`
-- `LastStatus`:
-  [LastResourceDataSyncStatusType](./literals.md#lastresourcedatasyncstatustype)
-- `SyncCreatedTime`: `datetime`
-- `LastSyncStatusMessage`: `str`
-
-<a id="resourcedatasyncorganizationalunittypedef"></a>
-
+1. See [:material-code-braces: ResourceDataSyncSourceWithStateTypeDef](./type_defs.md#resourcedatasyncsourcewithstatetypedef) 
+2. See [:material-code-braces: ResourceDataSyncS3DestinationTypeDef](./type_defs.md#resourcedatasyncs3destinationtypedef) 
+3. See [:material-code-brackets: LastResourceDataSyncStatusType](./literals.md#lastresourcedatasyncstatustype) 
 ## ResourceDataSyncOrganizationalUnitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResourceDataSyncOrganizationalUnitTypeDef
+
+def get_value() -> ResourceDataSyncOrganizationalUnitTypeDef:
+    return {
+        "OrganizationalUnitId": ...,
+    }
 ```
 
-Optional fields:
-
-- `OrganizationalUnitId`: `str`
-
-<a id="resourcedatasyncs3destinationtypedef"></a>
+```python title="Definition"
+class ResourceDataSyncOrganizationalUnitTypeDef(TypedDict):
+    OrganizationalUnitId: NotRequired[str],
+```
 
 ## ResourceDataSyncS3DestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResourceDataSyncS3DestinationTypeDef
+
+def get_value() -> ResourceDataSyncS3DestinationTypeDef:
+    return {
+        "BucketName": ...,
+        "SyncFormat": ...,
+        "Region": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceDataSyncS3DestinationTypeDef(TypedDict):
+    BucketName: str,
+    SyncFormat: ResourceDataSyncS3FormatType,  # (1)
+    Region: str,
+    Prefix: NotRequired[str],
+    AWSKMSKeyARN: NotRequired[str],
+    DestinationDataSharing: NotRequired[ResourceDataSyncDestinationDataSharingTypeDef],  # (2)
+```
 
-- `BucketName`: `str`
-- `SyncFormat`: `Literal['JsonSerDe']` (see
-  [ResourceDataSyncS3FormatType](./literals.md#resourcedatasyncs3formattype))
-- `Region`: `str`
-
-Optional fields:
-
-- `Prefix`: `str`
-- `AWSKMSKeyARN`: `str`
-- `DestinationDataSharing`:
-  [ResourceDataSyncDestinationDataSharingTypeDef](./type_defs.md#resourcedatasyncdestinationdatasharingtypedef)
-
-<a id="resourcedatasyncsourcetypedef"></a>
-
+1. See [:material-code-brackets: ResourceDataSyncS3FormatType](./literals.md#resourcedatasyncs3formattype) 
+2. See [:material-code-braces: ResourceDataSyncDestinationDataSharingTypeDef](./type_defs.md#resourcedatasyncdestinationdatasharingtypedef) 
 ## ResourceDataSyncSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResourceDataSyncSourceTypeDef
+
+def get_value() -> ResourceDataSyncSourceTypeDef:
+    return {
+        "SourceType": ...,
+        "SourceRegions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceDataSyncSourceTypeDef(TypedDict):
+    SourceType: str,
+    SourceRegions: Sequence[str],
+    AwsOrganizationsSource: NotRequired[ResourceDataSyncAwsOrganizationsSourceTypeDef],  # (1)
+    IncludeFutureRegions: NotRequired[bool],
+    EnableAllOpsDataSources: NotRequired[bool],
+```
 
-- `SourceType`: `str`
-- `SourceRegions`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `AwsOrganizationsSource`:
-  [ResourceDataSyncAwsOrganizationsSourceTypeDef](./type_defs.md#resourcedatasyncawsorganizationssourcetypedef)
-- `IncludeFutureRegions`: `bool`
-- `EnableAllOpsDataSources`: `bool`
-
-<a id="resourcedatasyncsourcewithstatetypedef"></a>
-
+1. See [:material-code-braces: ResourceDataSyncAwsOrganizationsSourceTypeDef](./type_defs.md#resourcedatasyncawsorganizationssourcetypedef) 
 ## ResourceDataSyncSourceWithStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResourceDataSyncSourceWithStateTypeDef
+
+def get_value() -> ResourceDataSyncSourceWithStateTypeDef:
+    return {
+        "SourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceDataSyncSourceWithStateTypeDef(TypedDict):
+    SourceType: NotRequired[str],
+    AwsOrganizationsSource: NotRequired[ResourceDataSyncAwsOrganizationsSourceTypeDef],  # (1)
+    SourceRegions: NotRequired[List[str]],
+    IncludeFutureRegions: NotRequired[bool],
+    State: NotRequired[str],
+    EnableAllOpsDataSources: NotRequired[bool],
+```
 
-- `SourceType`: `str`
-- `AwsOrganizationsSource`:
-  [ResourceDataSyncAwsOrganizationsSourceTypeDef](./type_defs.md#resourcedatasyncawsorganizationssourcetypedef)
-- `SourceRegions`: `List`\[`str`\]
-- `IncludeFutureRegions`: `bool`
-- `State`: `str`
-- `EnableAllOpsDataSources`: `bool`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResourceDataSyncAwsOrganizationsSourceTypeDef](./type_defs.md#resourcedatasyncawsorganizationssourcetypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="resultattributetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResultAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResultAttributeTypeDef
+
+def get_value() -> ResultAttributeTypeDef:
+    return {
+        "TypeName": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeName`: `str`
-
-<a id="resumesessionrequestrequesttypedef"></a>
+```python title="Definition"
+class ResultAttributeTypeDef(TypedDict):
+    TypeName: str,
+```
 
 ## ResumeSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResumeSessionRequestRequestTypeDef
+
+def get_value() -> ResumeSessionRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `SessionId`: `str`
-
-<a id="resumesessionresponsetypedef"></a>
+```python title="Definition"
+class ResumeSessionRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+```
 
 ## ResumeSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ResumeSessionResponseTypeDef
+
+def get_value() -> ResumeSessionResponseTypeDef:
+    return {
+        "SessionId": ...,
+        "TokenValue": ...,
+        "StreamUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResumeSessionResponseTypeDef(TypedDict):
+    SessionId: str,
+    TokenValue: str,
+    StreamUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SessionId`: `str`
-- `TokenValue`: `str`
-- `StreamUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="reviewinformationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReviewInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ReviewInformationTypeDef
+
+def get_value() -> ReviewInformationTypeDef:
+    return {
+        "ReviewedTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReviewInformationTypeDef(TypedDict):
+    ReviewedTime: NotRequired[datetime],
+    Status: NotRequired[ReviewStatusType],  # (1)
+    Reviewer: NotRequired[str],
+```
 
-- `ReviewedTime`: `datetime`
-- `Status`: [ReviewStatusType](./literals.md#reviewstatustype)
-- `Reviewer`: `str`
-
-<a id="runbooktypedef"></a>
-
+1. See [:material-code-brackets: ReviewStatusType](./literals.md#reviewstatustype) 
 ## RunbookTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import RunbookTypeDef
+
+def get_value() -> RunbookTypeDef:
+    return {
+        "DocumentName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RunbookTypeDef(TypedDict):
+    DocumentName: str,
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Dict[str, List[str]]],
+    TargetParameterName: NotRequired[str],
+    Targets: NotRequired[List[TargetTypeDef]],  # (1)
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    TargetLocations: NotRequired[List[TargetLocationTypeDef]],  # (2)
+```
 
-- `DocumentName`: `str`
-
-Optional fields:
-
-- `DocumentVersion`: `str`
-- `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `TargetParameterName`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `TargetLocations`:
-  `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-
-<a id="s3outputlocationtypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 ## S3OutputLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import S3OutputLocationTypeDef
+
+def get_value() -> S3OutputLocationTypeDef:
+    return {
+        "OutputS3Region": ...,
+    }
 ```
 
-Optional fields:
-
-- `OutputS3Region`: `str`
-- `OutputS3BucketName`: `str`
-- `OutputS3KeyPrefix`: `str`
-
-<a id="s3outputurltypedef"></a>
+```python title="Definition"
+class S3OutputLocationTypeDef(TypedDict):
+    OutputS3Region: NotRequired[str],
+    OutputS3BucketName: NotRequired[str],
+    OutputS3KeyPrefix: NotRequired[str],
+```
 
 ## S3OutputUrlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import S3OutputUrlTypeDef
+
+def get_value() -> S3OutputUrlTypeDef:
+    return {
+        "OutputUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `OutputUrl`: `str`
-
-<a id="scheduledwindowexecutiontypedef"></a>
+```python title="Definition"
+class S3OutputUrlTypeDef(TypedDict):
+    OutputUrl: NotRequired[str],
+```
 
 ## ScheduledWindowExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ScheduledWindowExecutionTypeDef
+
+def get_value() -> ScheduledWindowExecutionTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Optional fields:
-
-- `WindowId`: `str`
-- `Name`: `str`
-- `ExecutionTime`: `str`
-
-<a id="sendautomationsignalrequestrequesttypedef"></a>
+```python title="Definition"
+class ScheduledWindowExecutionTypeDef(TypedDict):
+    WindowId: NotRequired[str],
+    Name: NotRequired[str],
+    ExecutionTime: NotRequired[str],
+```
 
 ## SendAutomationSignalRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import SendAutomationSignalRequestRequestTypeDef
+
+def get_value() -> SendAutomationSignalRequestRequestTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+        "SignalType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendAutomationSignalRequestRequestTypeDef(TypedDict):
+    AutomationExecutionId: str,
+    SignalType: SignalTypeType,  # (1)
+    Payload: NotRequired[Mapping[str, Sequence[str]]],
+```
 
-- `AutomationExecutionId`: `str`
-- `SignalType`: [SignalTypeType](./literals.md#signaltypetype)
-
-Optional fields:
-
-- `Payload`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-
-<a id="sendcommandrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SignalTypeType](./literals.md#signaltypetype) 
 ## SendCommandRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import SendCommandRequestRequestTypeDef
+
+def get_value() -> SendCommandRequestRequestTypeDef:
+    return {
+        "DocumentName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendCommandRequestRequestTypeDef(TypedDict):
+    DocumentName: str,
+    InstanceIds: NotRequired[Sequence[str]],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    DocumentVersion: NotRequired[str],
+    DocumentHash: NotRequired[str],
+    DocumentHashType: NotRequired[DocumentHashTypeType],  # (2)
+    TimeoutSeconds: NotRequired[int],
+    Comment: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    OutputS3Region: NotRequired[str],
+    OutputS3BucketName: NotRequired[str],
+    OutputS3KeyPrefix: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    ServiceRoleArn: NotRequired[str],
+    NotificationConfig: NotRequired[NotificationConfigTypeDef],  # (3)
+    CloudWatchOutputConfig: NotRequired[CloudWatchOutputConfigTypeDef],  # (4)
+```
 
-- `DocumentName`: `str`
-
-Optional fields:
-
-- `InstanceIds`: `Sequence`\[`str`\]
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `DocumentVersion`: `str`
-- `DocumentHash`: `str`
-- `DocumentHashType`:
-  [DocumentHashTypeType](./literals.md#documenthashtypetype)
-- `TimeoutSeconds`: `int`
-- `Comment`: `str`
-- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `OutputS3Region`: `str`
-- `OutputS3BucketName`: `str`
-- `OutputS3KeyPrefix`: `str`
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `ServiceRoleArn`: `str`
-- `NotificationConfig`:
-  [NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef)
-- `CloudWatchOutputConfig`:
-  [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
-
-<a id="sendcommandresulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: DocumentHashTypeType](./literals.md#documenthashtypetype) 
+3. See [:material-code-braces: NotificationConfigTypeDef](./type_defs.md#notificationconfigtypedef) 
+4. See [:material-code-braces: CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef) 
 ## SendCommandResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import SendCommandResultTypeDef
+
+def get_value() -> SendCommandResultTypeDef:
+    return {
+        "Command": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendCommandResultTypeDef(TypedDict):
+    Command: CommandTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Command`: [CommandTypeDef](./type_defs.md#commandtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="servicesettingtypedef"></a>
-
+1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import ServiceSettingTypeDef
+
+def get_value() -> ServiceSettingTypeDef:
+    return {
+        "SettingId": ...,
+    }
 ```
 
-Optional fields:
-
-- `SettingId`: `str`
-- `SettingValue`: `str`
-- `LastModifiedDate`: `datetime`
-- `LastModifiedUser`: `str`
-- `ARN`: `str`
-- `Status`: `str`
-
-<a id="sessionfiltertypedef"></a>
+```python title="Definition"
+class ServiceSettingTypeDef(TypedDict):
+    SettingId: NotRequired[str],
+    SettingValue: NotRequired[str],
+    LastModifiedDate: NotRequired[datetime],
+    LastModifiedUser: NotRequired[str],
+    ARN: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## SessionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import SessionFilterTypeDef
+
+def get_value() -> SessionFilterTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SessionFilterTypeDef(TypedDict):
+    key: SessionFilterKeyType,  # (1)
+    value: str,
+```
 
-- `key`: [SessionFilterKeyType](./literals.md#sessionfilterkeytype)
-- `value`: `str`
-
-<a id="sessionmanageroutputurltypedef"></a>
-
+1. See [:material-code-brackets: SessionFilterKeyType](./literals.md#sessionfilterkeytype) 
 ## SessionManagerOutputUrlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import SessionManagerOutputUrlTypeDef
+
+def get_value() -> SessionManagerOutputUrlTypeDef:
+    return {
+        "S3OutputUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `S3OutputUrl`: `str`
-- `CloudWatchOutputUrl`: `str`
-
-<a id="sessiontypedef"></a>
+```python title="Definition"
+class SessionManagerOutputUrlTypeDef(TypedDict):
+    S3OutputUrl: NotRequired[str],
+    CloudWatchOutputUrl: NotRequired[str],
+```
 
 ## SessionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import SessionTypeDef
+
+def get_value() -> SessionTypeDef:
+    return {
+        "SessionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SessionTypeDef(TypedDict):
+    SessionId: NotRequired[str],
+    Target: NotRequired[str],
+    Status: NotRequired[SessionStatusType],  # (1)
+    StartDate: NotRequired[datetime],
+    EndDate: NotRequired[datetime],
+    DocumentName: NotRequired[str],
+    Owner: NotRequired[str],
+    Reason: NotRequired[str],
+    Details: NotRequired[str],
+    OutputUrl: NotRequired[SessionManagerOutputUrlTypeDef],  # (2)
+    MaxSessionDuration: NotRequired[str],
+```
 
-- `SessionId`: `str`
-- `Target`: `str`
-- `Status`: [SessionStatusType](./literals.md#sessionstatustype)
-- `StartDate`: `datetime`
-- `EndDate`: `datetime`
-- `DocumentName`: `str`
-- `Owner`: `str`
-- `Reason`: `str`
-- `Details`: `str`
-- `OutputUrl`:
-  [SessionManagerOutputUrlTypeDef](./type_defs.md#sessionmanageroutputurltypedef)
-- `MaxSessionDuration`: `str`
-
-<a id="severitysummarytypedef"></a>
-
+1. See [:material-code-brackets: SessionStatusType](./literals.md#sessionstatustype) 
+2. See [:material-code-braces: SessionManagerOutputUrlTypeDef](./type_defs.md#sessionmanageroutputurltypedef) 
 ## SeveritySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import SeveritySummaryTypeDef
+
+def get_value() -> SeveritySummaryTypeDef:
+    return {
+        "CriticalCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `CriticalCount`: `int`
-- `HighCount`: `int`
-- `MediumCount`: `int`
-- `LowCount`: `int`
-- `InformationalCount`: `int`
-- `UnspecifiedCount`: `int`
-
-<a id="startassociationsoncerequestrequesttypedef"></a>
+```python title="Definition"
+class SeveritySummaryTypeDef(TypedDict):
+    CriticalCount: NotRequired[int],
+    HighCount: NotRequired[int],
+    MediumCount: NotRequired[int],
+    LowCount: NotRequired[int],
+    InformationalCount: NotRequired[int],
+    UnspecifiedCount: NotRequired[int],
+```
 
 ## StartAssociationsOnceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StartAssociationsOnceRequestRequestTypeDef
+
+def get_value() -> StartAssociationsOnceRequestRequestTypeDef:
+    return {
+        "AssociationIds": ...,
+    }
 ```
 
-Required fields:
-
-- `AssociationIds`: `Sequence`\[`str`\]
-
-<a id="startautomationexecutionrequestrequesttypedef"></a>
+```python title="Definition"
+class StartAssociationsOnceRequestRequestTypeDef(TypedDict):
+    AssociationIds: Sequence[str],
+```
 
 ## StartAutomationExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StartAutomationExecutionRequestRequestTypeDef
+
+def get_value() -> StartAutomationExecutionRequestRequestTypeDef:
+    return {
+        "DocumentName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartAutomationExecutionRequestRequestTypeDef(TypedDict):
+    DocumentName: str,
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    ClientToken: NotRequired[str],
+    Mode: NotRequired[ExecutionModeType],  # (1)
+    TargetParameterName: NotRequired[str],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
+    TargetMaps: NotRequired[Sequence[Mapping[str, Sequence[str]]]],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `DocumentName`: `str`
-
-Optional fields:
-
-- `DocumentVersion`: `str`
-- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `ClientToken`: `str`
-- `Mode`: [ExecutionModeType](./literals.md#executionmodetype)
-- `TargetParameterName`: `str`
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TargetMaps`: `Sequence`\[`Mapping`\[`str`, `Sequence`\[`str`\]\]\]
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `TargetLocations`:
-  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="startautomationexecutionresulttypedef"></a>
-
+1. See [:material-code-brackets: ExecutionModeType](./literals.md#executionmodetype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## StartAutomationExecutionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StartAutomationExecutionResultTypeDef
+
+def get_value() -> StartAutomationExecutionResultTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartAutomationExecutionResultTypeDef(TypedDict):
+    AutomationExecutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AutomationExecutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startchangerequestexecutionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartChangeRequestExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StartChangeRequestExecutionRequestRequestTypeDef
+
+def get_value() -> StartChangeRequestExecutionRequestRequestTypeDef:
+    return {
+        "DocumentName": ...,
+        "Runbooks": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartChangeRequestExecutionRequestRequestTypeDef(TypedDict):
+    DocumentName: str,
+    Runbooks: Sequence[RunbookTypeDef],  # (1)
+    ScheduledTime: NotRequired[Union[datetime, str]],
+    DocumentVersion: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    ChangeRequestName: NotRequired[str],
+    ClientToken: NotRequired[str],
+    AutoApprove: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ScheduledEndTime: NotRequired[Union[datetime, str]],
+    ChangeDetails: NotRequired[str],
+```
 
-- `DocumentName`: `str`
-- `Runbooks`: `Sequence`\[[RunbookTypeDef](./type_defs.md#runbooktypedef)\]
-
-Optional fields:
-
-- `ScheduledTime`: `Union`\[`datetime`, `str`\]
-- `DocumentVersion`: `str`
-- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `ChangeRequestName`: `str`
-- `ClientToken`: `str`
-- `AutoApprove`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ScheduledEndTime`: `Union`\[`datetime`, `str`\]
-- `ChangeDetails`: `str`
-
-<a id="startchangerequestexecutionresulttypedef"></a>
-
+1. See [:material-code-braces: RunbookTypeDef](./type_defs.md#runbooktypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## StartChangeRequestExecutionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StartChangeRequestExecutionResultTypeDef
+
+def get_value() -> StartChangeRequestExecutionResultTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartChangeRequestExecutionResultTypeDef(TypedDict):
+    AutomationExecutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AutomationExecutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StartSessionRequestRequestTypeDef
+
+def get_value() -> StartSessionRequestRequestTypeDef:
+    return {
+        "Target": ...,
+    }
 ```
 
-Required fields:
-
-- `Target`: `str`
-
-Optional fields:
-
-- `DocumentName`: `str`
-- `Reason`: `str`
-- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-
-<a id="startsessionresponsetypedef"></a>
+```python title="Definition"
+class StartSessionRequestRequestTypeDef(TypedDict):
+    Target: str,
+    DocumentName: NotRequired[str],
+    Reason: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+```
 
 ## StartSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StartSessionResponseTypeDef
+
+def get_value() -> StartSessionResponseTypeDef:
+    return {
+        "SessionId": ...,
+        "TokenValue": ...,
+        "StreamUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSessionResponseTypeDef(TypedDict):
+    SessionId: str,
+    TokenValue: str,
+    StreamUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SessionId`: `str`
-- `TokenValue`: `str`
-- `StreamUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stepexecutionfiltertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StepExecutionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StepExecutionFilterTypeDef
+
+def get_value() -> StepExecutionFilterTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StepExecutionFilterTypeDef(TypedDict):
+    Key: StepExecutionFilterKeyType,  # (1)
+    Values: Sequence[str],
+```
 
-- `Key`: [StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype)
-- `Values`: `Sequence`\[`str`\]
-
-<a id="stepexecutiontypedef"></a>
-
+1. See [:material-code-brackets: StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype) 
 ## StepExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StepExecutionTypeDef
+
+def get_value() -> StepExecutionTypeDef:
+    return {
+        "StepName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StepExecutionTypeDef(TypedDict):
+    StepName: NotRequired[str],
+    Action: NotRequired[str],
+    TimeoutSeconds: NotRequired[int],
+    OnFailure: NotRequired[str],
+    MaxAttempts: NotRequired[int],
+    ExecutionStartTime: NotRequired[datetime],
+    ExecutionEndTime: NotRequired[datetime],
+    StepStatus: NotRequired[AutomationExecutionStatusType],  # (1)
+    ResponseCode: NotRequired[str],
+    Inputs: NotRequired[Dict[str, str]],
+    Outputs: NotRequired[Dict[str, List[str]]],
+    Response: NotRequired[str],
+    FailureMessage: NotRequired[str],
+    FailureDetails: NotRequired[FailureDetailsTypeDef],  # (2)
+    StepExecutionId: NotRequired[str],
+    OverriddenParameters: NotRequired[Dict[str, List[str]]],
+    IsEnd: NotRequired[bool],
+    NextStep: NotRequired[str],
+    IsCritical: NotRequired[bool],
+    ValidNextSteps: NotRequired[List[str]],
+    Targets: NotRequired[List[TargetTypeDef]],  # (3)
+    TargetLocation: NotRequired[TargetLocationTypeDef],  # (4)
+```
 
-- `StepName`: `str`
-- `Action`: `str`
-- `TimeoutSeconds`: `int`
-- `OnFailure`: `str`
-- `MaxAttempts`: `int`
-- `ExecutionStartTime`: `datetime`
-- `ExecutionEndTime`: `datetime`
-- `StepStatus`:
-  [AutomationExecutionStatusType](./literals.md#automationexecutionstatustype)
-- `ResponseCode`: `str`
-- `Inputs`: `Dict`\[`str`, `str`\]
-- `Outputs`: `Dict`\[`str`, `List`\[`str`\]\]
-- `Response`: `str`
-- `FailureMessage`: `str`
-- `FailureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-- `StepExecutionId`: `str`
-- `OverriddenParameters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `IsEnd`: `bool`
-- `NextStep`: `str`
-- `IsCritical`: `bool`
-- `ValidNextSteps`: `List`\[`str`\]
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TargetLocation`:
-  [TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)
-
-<a id="stopautomationexecutionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AutomationExecutionStatusType](./literals.md#automationexecutionstatustype) 
+2. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
+3. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+4. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 ## StopAutomationExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import StopAutomationExecutionRequestRequestTypeDef
+
+def get_value() -> StopAutomationExecutionRequestRequestTypeDef:
+    return {
+        "AutomationExecutionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopAutomationExecutionRequestRequestTypeDef(TypedDict):
+    AutomationExecutionId: str,
+    Type: NotRequired[StopTypeType],  # (1)
+```
 
-- `AutomationExecutionId`: `str`
-
-Optional fields:
-
-- `Type`: [StopTypeType](./literals.md#stoptypetype)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-brackets: StopTypeType](./literals.md#stoptypetype) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="targetlocationtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TargetLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import TargetLocationTypeDef
+
+def get_value() -> TargetLocationTypeDef:
+    return {
+        "Accounts": ...,
+    }
 ```
 
-Optional fields:
-
-- `Accounts`: `Sequence`\[`str`\]
-- `Regions`: `Sequence`\[`str`\]
-- `TargetLocationMaxConcurrency`: `str`
-- `TargetLocationMaxErrors`: `str`
-- `ExecutionRoleName`: `str`
-
-<a id="targettypedef"></a>
+```python title="Definition"
+class TargetLocationTypeDef(TypedDict):
+    Accounts: NotRequired[Sequence[str]],
+    Regions: NotRequired[Sequence[str]],
+    TargetLocationMaxConcurrency: NotRequired[str],
+    TargetLocationMaxErrors: NotRequired[str],
+    ExecutionRoleName: NotRequired[str],
+```
 
 ## TargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import TargetTypeDef
+
+def get_value() -> TargetTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="terminatesessionrequestrequesttypedef"></a>
+```python title="Definition"
+class TargetTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
 
 ## TerminateSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import TerminateSessionRequestRequestTypeDef
+
+def get_value() -> TerminateSessionRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `SessionId`: `str`
-
-<a id="terminatesessionresponsetypedef"></a>
+```python title="Definition"
+class TerminateSessionRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+```
 
 ## TerminateSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import TerminateSessionResponseTypeDef
+
+def get_value() -> TerminateSessionResponseTypeDef:
+    return {
+        "SessionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TerminateSessionResponseTypeDef(TypedDict):
+    SessionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SessionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="unlabelparameterversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UnlabelParameterVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UnlabelParameterVersionRequestRequestTypeDef
+
+def get_value() -> UnlabelParameterVersionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ParameterVersion": ...,
+        "Labels": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ParameterVersion`: `int`
-- `Labels`: `Sequence`\[`str`\]
-
-<a id="unlabelparameterversionresulttypedef"></a>
+```python title="Definition"
+class UnlabelParameterVersionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ParameterVersion: int,
+    Labels: Sequence[str],
+```
 
 ## UnlabelParameterVersionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UnlabelParameterVersionResultTypeDef
+
+def get_value() -> UnlabelParameterVersionResultTypeDef:
+    return {
+        "RemovedLabels": ...,
+        "InvalidLabels": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UnlabelParameterVersionResultTypeDef(TypedDict):
+    RemovedLabels: List[str],
+    InvalidLabels: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RemovedLabels`: `List`\[`str`\]
-- `InvalidLabels`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateAssociationRequestRequestTypeDef
+
+def get_value() -> UpdateAssociationRequestRequestTypeDef:
+    return {
+        "AssociationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssociationRequestRequestTypeDef(TypedDict):
+    AssociationId: str,
+    Parameters: NotRequired[Mapping[str, Sequence[str]]],
+    DocumentVersion: NotRequired[str],
+    ScheduleExpression: NotRequired[str],
+    OutputLocation: NotRequired[InstanceAssociationOutputLocationTypeDef],  # (1)
+    Name: NotRequired[str],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
+    AssociationName: NotRequired[str],
+    AssociationVersion: NotRequired[str],
+    AutomationTargetParameterName: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    MaxConcurrency: NotRequired[str],
+    ComplianceSeverity: NotRequired[AssociationComplianceSeverityType],  # (3)
+    SyncCompliance: NotRequired[AssociationSyncComplianceType],  # (4)
+    ApplyOnlyAtCronInterval: NotRequired[bool],
+    CalendarNames: NotRequired[Sequence[str]],
+    TargetLocations: NotRequired[Sequence[TargetLocationTypeDef]],  # (5)
+```
 
-- `AssociationId`: `str`
-
-Optional fields:
-
-- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `DocumentVersion`: `str`
-- `ScheduleExpression`: `str`
-- `OutputLocation`:
-  [InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef)
-- `Name`: `str`
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `AssociationName`: `str`
-- `AssociationVersion`: `str`
-- `AutomationTargetParameterName`: `str`
-- `MaxErrors`: `str`
-- `MaxConcurrency`: `str`
-- `ComplianceSeverity`:
-  [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
-- `SyncCompliance`:
-  [AssociationSyncComplianceType](./literals.md#associationsynccompliancetype)
-- `ApplyOnlyAtCronInterval`: `bool`
-- `CalendarNames`: `Sequence`\[`str`\]
-- `TargetLocations`:
-  `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
-
-<a id="updateassociationresulttypedef"></a>
-
+1. See [:material-code-braces: InstanceAssociationOutputLocationTypeDef](./type_defs.md#instanceassociationoutputlocationtypedef) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-brackets: AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype) 
+4. See [:material-code-brackets: AssociationSyncComplianceType](./literals.md#associationsynccompliancetype) 
+5. See [:material-code-braces: TargetLocationTypeDef](./type_defs.md#targetlocationtypedef) 
 ## UpdateAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateAssociationResultTypeDef
+
+def get_value() -> UpdateAssociationResultTypeDef:
+    return {
+        "AssociationDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssociationResultTypeDef(TypedDict):
+    AssociationDescription: AssociationDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AssociationDescription`:
-  [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateassociationstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAssociationStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateAssociationStatusRequestRequestTypeDef
+
+def get_value() -> UpdateAssociationStatusRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "InstanceId": ...,
+        "AssociationStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssociationStatusRequestRequestTypeDef(TypedDict):
+    Name: str,
+    InstanceId: str,
+    AssociationStatus: AssociationStatusTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `InstanceId`: `str`
-- `AssociationStatus`:
-  [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
-
-<a id="updateassociationstatusresulttypedef"></a>
-
+1. See [:material-code-braces: AssociationStatusTypeDef](./type_defs.md#associationstatustypedef) 
 ## UpdateAssociationStatusResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateAssociationStatusResultTypeDef
+
+def get_value() -> UpdateAssociationStatusResultTypeDef:
+    return {
+        "AssociationDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssociationStatusResultTypeDef(TypedDict):
+    AssociationDescription: AssociationDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AssociationDescription`:
-  [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedocumentdefaultversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDocumentDefaultVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateDocumentDefaultVersionRequestRequestTypeDef
+
+def get_value() -> UpdateDocumentDefaultVersionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "DocumentVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `DocumentVersion`: `str`
-
-<a id="updatedocumentdefaultversionresulttypedef"></a>
+```python title="Definition"
+class UpdateDocumentDefaultVersionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DocumentVersion: str,
+```
 
 ## UpdateDocumentDefaultVersionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateDocumentDefaultVersionResultTypeDef
+
+def get_value() -> UpdateDocumentDefaultVersionResultTypeDef:
+    return {
+        "Description": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDocumentDefaultVersionResultTypeDef(TypedDict):
+    Description: DocumentDefaultVersionDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Description`:
-  [DocumentDefaultVersionDescriptionTypeDef](./type_defs.md#documentdefaultversiondescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedocumentmetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DocumentDefaultVersionDescriptionTypeDef](./type_defs.md#documentdefaultversiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDocumentMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateDocumentMetadataRequestRequestTypeDef
+
+def get_value() -> UpdateDocumentMetadataRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "DocumentReviews": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDocumentMetadataRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DocumentReviews: DocumentReviewsTypeDef,  # (1)
+    DocumentVersion: NotRequired[str],
+```
 
-- `Name`: `str`
-- `DocumentReviews`:
-  [DocumentReviewsTypeDef](./type_defs.md#documentreviewstypedef)
-
-Optional fields:
-
-- `DocumentVersion`: `str`
-
-<a id="updatedocumentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DocumentReviewsTypeDef](./type_defs.md#documentreviewstypedef) 
 ## UpdateDocumentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateDocumentRequestRequestTypeDef
+
+def get_value() -> UpdateDocumentRequestRequestTypeDef:
+    return {
+        "Content": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDocumentRequestRequestTypeDef(TypedDict):
+    Content: str,
+    Name: str,
+    Attachments: NotRequired[Sequence[AttachmentsSourceTypeDef]],  # (1)
+    DisplayName: NotRequired[str],
+    VersionName: NotRequired[str],
+    DocumentVersion: NotRequired[str],
+    DocumentFormat: NotRequired[DocumentFormatType],  # (2)
+    TargetType: NotRequired[str],
+```
 
-- `Content`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `Attachments`:
-  `Sequence`\[[AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef)\]
-- `DisplayName`: `str`
-- `VersionName`: `str`
-- `DocumentVersion`: `str`
-- `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
-- `TargetType`: `str`
-
-<a id="updatedocumentresulttypedef"></a>
-
+1. See [:material-code-braces: AttachmentsSourceTypeDef](./type_defs.md#attachmentssourcetypedef) 
+2. See [:material-code-brackets: DocumentFormatType](./literals.md#documentformattype) 
 ## UpdateDocumentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateDocumentResultTypeDef
+
+def get_value() -> UpdateDocumentResultTypeDef:
+    return {
+        "DocumentDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDocumentResultTypeDef(TypedDict):
+    DocumentDescription: DocumentDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DocumentDescription`:
-  [DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemaintenancewindowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMaintenanceWindowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowRequestRequestTypeDef
+
+def get_value() -> UpdateMaintenanceWindowRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+    }
 ```
 
-Required fields:
-
-- `WindowId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `StartDate`: `str`
-- `EndDate`: `str`
-- `Schedule`: `str`
-- `ScheduleTimezone`: `str`
-- `ScheduleOffset`: `int`
-- `Duration`: `int`
-- `Cutoff`: `int`
-- `AllowUnassociatedTargets`: `bool`
-- `Enabled`: `bool`
-- `Replace`: `bool`
-
-<a id="updatemaintenancewindowresulttypedef"></a>
+```python title="Definition"
+class UpdateMaintenanceWindowRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    StartDate: NotRequired[str],
+    EndDate: NotRequired[str],
+    Schedule: NotRequired[str],
+    ScheduleTimezone: NotRequired[str],
+    ScheduleOffset: NotRequired[int],
+    Duration: NotRequired[int],
+    Cutoff: NotRequired[int],
+    AllowUnassociatedTargets: NotRequired[bool],
+    Enabled: NotRequired[bool],
+    Replace: NotRequired[bool],
+```
 
 ## UpdateMaintenanceWindowResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowResultTypeDef
+
+def get_value() -> UpdateMaintenanceWindowResultTypeDef:
+    return {
+        "WindowId": ...,
+        "Name": ...,
+        "Description": ...,
+        "StartDate": ...,
+        "EndDate": ...,
+        "Schedule": ...,
+        "ScheduleTimezone": ...,
+        "ScheduleOffset": ...,
+        "Duration": ...,
+        "Cutoff": ...,
+        "AllowUnassociatedTargets": ...,
+        "Enabled": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMaintenanceWindowResultTypeDef(TypedDict):
+    WindowId: str,
+    Name: str,
+    Description: str,
+    StartDate: str,
+    EndDate: str,
+    Schedule: str,
+    ScheduleTimezone: str,
+    ScheduleOffset: int,
+    Duration: int,
+    Cutoff: int,
+    AllowUnassociatedTargets: bool,
+    Enabled: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WindowId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `StartDate`: `str`
-- `EndDate`: `str`
-- `Schedule`: `str`
-- `ScheduleTimezone`: `str`
-- `ScheduleOffset`: `int`
-- `Duration`: `int`
-- `Cutoff`: `int`
-- `AllowUnassociatedTargets`: `bool`
-- `Enabled`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemaintenancewindowtargetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMaintenanceWindowTargetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTargetRequestRequestTypeDef
+
+def get_value() -> UpdateMaintenanceWindowTargetRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTargetId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMaintenanceWindowTargetRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    WindowTargetId: str,
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    OwnerInformation: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Replace: NotRequired[bool],
+```
 
-- `WindowId`: `str`
-- `WindowTargetId`: `str`
-
-Optional fields:
-
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `OwnerInformation`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Replace`: `bool`
-
-<a id="updatemaintenancewindowtargetresulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 ## UpdateMaintenanceWindowTargetResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTargetResultTypeDef
+
+def get_value() -> UpdateMaintenanceWindowTargetResultTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTargetId": ...,
+        "Targets": ...,
+        "OwnerInformation": ...,
+        "Name": ...,
+        "Description": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMaintenanceWindowTargetResultTypeDef(TypedDict):
+    WindowId: str,
+    WindowTargetId: str,
+    Targets: List[TargetTypeDef],  # (1)
+    OwnerInformation: str,
+    Name: str,
+    Description: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WindowId`: `str`
-- `WindowTargetId`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `OwnerInformation`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemaintenancewindowtaskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMaintenanceWindowTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTaskRequestRequestTypeDef
+
+def get_value() -> UpdateMaintenanceWindowTaskRequestRequestTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTaskId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMaintenanceWindowTaskRequestRequestTypeDef(TypedDict):
+    WindowId: str,
+    WindowTaskId: str,
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (1)
+    TaskArn: NotRequired[str],
+    ServiceRoleArn: NotRequired[str],
+    TaskParameters: NotRequired[Mapping[str, MaintenanceWindowTaskParameterValueExpressionTypeDef]],  # (2)
+    TaskInvocationParameters: NotRequired[MaintenanceWindowTaskInvocationParametersTypeDef],  # (3)
+    Priority: NotRequired[int],
+    MaxConcurrency: NotRequired[str],
+    MaxErrors: NotRequired[str],
+    LoggingInfo: NotRequired[LoggingInfoTypeDef],  # (4)
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Replace: NotRequired[bool],
+    CutoffBehavior: NotRequired[MaintenanceWindowTaskCutoffBehaviorType],  # (5)
+```
 
-- `WindowId`: `str`
-- `WindowTaskId`: `str`
-
-Optional fields:
-
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TaskArn`: `str`
-- `ServiceRoleArn`: `str`
-- `TaskParameters`: `Mapping`\[`str`,
-  [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
-- `TaskInvocationParameters`:
-  [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
-- `Priority`: `int`
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
-- `Name`: `str`
-- `Description`: `str`
-- `Replace`: `bool`
-- `CutoffBehavior`:
-  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
-
-<a id="updatemaintenancewindowtaskresulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
+3. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
+4. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
+5. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
 ## UpdateMaintenanceWindowTaskResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateMaintenanceWindowTaskResultTypeDef
+
+def get_value() -> UpdateMaintenanceWindowTaskResultTypeDef:
+    return {
+        "WindowId": ...,
+        "WindowTaskId": ...,
+        "Targets": ...,
+        "TaskArn": ...,
+        "ServiceRoleArn": ...,
+        "TaskParameters": ...,
+        "TaskInvocationParameters": ...,
+        "Priority": ...,
+        "MaxConcurrency": ...,
+        "MaxErrors": ...,
+        "LoggingInfo": ...,
+        "Name": ...,
+        "Description": ...,
+        "CutoffBehavior": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMaintenanceWindowTaskResultTypeDef(TypedDict):
+    WindowId: str,
+    WindowTaskId: str,
+    Targets: List[TargetTypeDef],  # (1)
+    TaskArn: str,
+    ServiceRoleArn: str,
+    TaskParameters: Dict[str, MaintenanceWindowTaskParameterValueExpressionTypeDef],  # (2)
+    TaskInvocationParameters: MaintenanceWindowTaskInvocationParametersTypeDef,  # (3)
+    Priority: int,
+    MaxConcurrency: str,
+    MaxErrors: str,
+    LoggingInfo: LoggingInfoTypeDef,  # (4)
+    Name: str,
+    Description: str,
+    CutoffBehavior: MaintenanceWindowTaskCutoffBehaviorType,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `WindowId`: `str`
-- `WindowTaskId`: `str`
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `TaskArn`: `str`
-- `ServiceRoleArn`: `str`
-- `TaskParameters`: `Dict`\[`str`,
-  [MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef)\]
-- `TaskInvocationParameters`:
-  [MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef)
-- `Priority`: `int`
-- `MaxConcurrency`: `str`
-- `MaxErrors`: `str`
-- `LoggingInfo`: [LoggingInfoTypeDef](./type_defs.md#logginginfotypedef)
-- `Name`: `str`
-- `Description`: `str`
-- `CutoffBehavior`:
-  [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemanagedinstancerolerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: MaintenanceWindowTaskParameterValueExpressionTypeDef](./type_defs.md#maintenancewindowtaskparametervalueexpressiontypedef) 
+3. See [:material-code-braces: MaintenanceWindowTaskInvocationParametersTypeDef](./type_defs.md#maintenancewindowtaskinvocationparameterstypedef) 
+4. See [:material-code-braces: LoggingInfoTypeDef](./type_defs.md#logginginfotypedef) 
+5. See [:material-code-brackets: MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateManagedInstanceRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateManagedInstanceRoleRequestRequestTypeDef
+
+def get_value() -> UpdateManagedInstanceRoleRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "IamRole": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `IamRole`: `str`
-
-<a id="updateopsitemrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateManagedInstanceRoleRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    IamRole: str,
+```
 
 ## UpdateOpsItemRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateOpsItemRequestRequestTypeDef
+
+def get_value() -> UpdateOpsItemRequestRequestTypeDef:
+    return {
+        "OpsItemId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOpsItemRequestRequestTypeDef(TypedDict):
+    OpsItemId: str,
+    Description: NotRequired[str],
+    OperationalData: NotRequired[Mapping[str, OpsItemDataValueTypeDef]],  # (1)
+    OperationalDataToDelete: NotRequired[Sequence[str]],
+    Notifications: NotRequired[Sequence[OpsItemNotificationTypeDef]],  # (2)
+    Priority: NotRequired[int],
+    RelatedOpsItems: NotRequired[Sequence[RelatedOpsItemTypeDef]],  # (3)
+    Status: NotRequired[OpsItemStatusType],  # (4)
+    Title: NotRequired[str],
+    Category: NotRequired[str],
+    Severity: NotRequired[str],
+    ActualStartTime: NotRequired[Union[datetime, str]],
+    ActualEndTime: NotRequired[Union[datetime, str]],
+    PlannedStartTime: NotRequired[Union[datetime, str]],
+    PlannedEndTime: NotRequired[Union[datetime, str]],
+```
 
-- `OpsItemId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `OperationalData`: `Mapping`\[`str`,
-  [OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef)\]
-- `OperationalDataToDelete`: `Sequence`\[`str`\]
-- `Notifications`:
-  `Sequence`\[[OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef)\]
-- `Priority`: `int`
-- `RelatedOpsItems`:
-  `Sequence`\[[RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef)\]
-- `Status`: [OpsItemStatusType](./literals.md#opsitemstatustype)
-- `Title`: `str`
-- `Category`: `str`
-- `Severity`: `str`
-- `ActualStartTime`: `Union`\[`datetime`, `str`\]
-- `ActualEndTime`: `Union`\[`datetime`, `str`\]
-- `PlannedStartTime`: `Union`\[`datetime`, `str`\]
-- `PlannedEndTime`: `Union`\[`datetime`, `str`\]
-
-<a id="updateopsmetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OpsItemDataValueTypeDef](./type_defs.md#opsitemdatavaluetypedef) 
+2. See [:material-code-braces: OpsItemNotificationTypeDef](./type_defs.md#opsitemnotificationtypedef) 
+3. See [:material-code-braces: RelatedOpsItemTypeDef](./type_defs.md#relatedopsitemtypedef) 
+4. See [:material-code-brackets: OpsItemStatusType](./literals.md#opsitemstatustype) 
 ## UpdateOpsMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateOpsMetadataRequestRequestTypeDef
+
+def get_value() -> UpdateOpsMetadataRequestRequestTypeDef:
+    return {
+        "OpsMetadataArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOpsMetadataRequestRequestTypeDef(TypedDict):
+    OpsMetadataArn: str,
+    MetadataToUpdate: NotRequired[Mapping[str, MetadataValueTypeDef]],  # (1)
+    KeysToDelete: NotRequired[Sequence[str]],
+```
 
-- `OpsMetadataArn`: `str`
-
-Optional fields:
-
-- `MetadataToUpdate`: `Mapping`\[`str`,
-  [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
-- `KeysToDelete`: `Sequence`\[`str`\]
-
-<a id="updateopsmetadataresulttypedef"></a>
-
+1. See [:material-code-braces: MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef) 
 ## UpdateOpsMetadataResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateOpsMetadataResultTypeDef
+
+def get_value() -> UpdateOpsMetadataResultTypeDef:
+    return {
+        "OpsMetadataArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOpsMetadataResultTypeDef(TypedDict):
+    OpsMetadataArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OpsMetadataArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatepatchbaselinerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePatchBaselineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdatePatchBaselineRequestRequestTypeDef
+
+def get_value() -> UpdatePatchBaselineRequestRequestTypeDef:
+    return {
+        "BaselineId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePatchBaselineRequestRequestTypeDef(TypedDict):
+    BaselineId: str,
+    Name: NotRequired[str],
+    GlobalFilters: NotRequired[PatchFilterGroupTypeDef],  # (1)
+    ApprovalRules: NotRequired[PatchRuleGroupTypeDef],  # (2)
+    ApprovedPatches: NotRequired[Sequence[str]],
+    ApprovedPatchesComplianceLevel: NotRequired[PatchComplianceLevelType],  # (3)
+    ApprovedPatchesEnableNonSecurity: NotRequired[bool],
+    RejectedPatches: NotRequired[Sequence[str]],
+    RejectedPatchesAction: NotRequired[PatchActionType],  # (4)
+    Description: NotRequired[str],
+    Sources: NotRequired[Sequence[PatchSourceTypeDef]],  # (5)
+    Replace: NotRequired[bool],
+```
 
-- `BaselineId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `GlobalFilters`:
-  [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
-- `ApprovalRules`:
-  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `Sequence`\[`str`\]
-- `ApprovedPatchesComplianceLevel`:
-  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
-- `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `Sequence`\[`str`\]
-- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
-- `Description`: `str`
-- `Sources`:
-  `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
-- `Replace`: `bool`
-
-<a id="updatepatchbaselineresulttypedef"></a>
-
+1. See [:material-code-braces: PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef) 
+2. See [:material-code-braces: PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef) 
+3. See [:material-code-brackets: PatchComplianceLevelType](./literals.md#patchcomplianceleveltype) 
+4. See [:material-code-brackets: PatchActionType](./literals.md#patchactiontype) 
+5. See [:material-code-braces: PatchSourceTypeDef](./type_defs.md#patchsourcetypedef) 
 ## UpdatePatchBaselineResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdatePatchBaselineResultTypeDef
+
+def get_value() -> UpdatePatchBaselineResultTypeDef:
+    return {
+        "BaselineId": ...,
+        "Name": ...,
+        "OperatingSystem": ...,
+        "GlobalFilters": ...,
+        "ApprovalRules": ...,
+        "ApprovedPatches": ...,
+        "ApprovedPatchesComplianceLevel": ...,
+        "ApprovedPatchesEnableNonSecurity": ...,
+        "RejectedPatches": ...,
+        "RejectedPatchesAction": ...,
+        "CreatedDate": ...,
+        "ModifiedDate": ...,
+        "Description": ...,
+        "Sources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePatchBaselineResultTypeDef(TypedDict):
+    BaselineId: str,
+    Name: str,
+    OperatingSystem: OperatingSystemType,  # (1)
+    GlobalFilters: PatchFilterGroupTypeDef,  # (2)
+    ApprovalRules: PatchRuleGroupTypeDef,  # (3)
+    ApprovedPatches: List[str],
+    ApprovedPatchesComplianceLevel: PatchComplianceLevelType,  # (4)
+    ApprovedPatchesEnableNonSecurity: bool,
+    RejectedPatches: List[str],
+    RejectedPatchesAction: PatchActionType,  # (5)
+    CreatedDate: datetime,
+    ModifiedDate: datetime,
+    Description: str,
+    Sources: List[PatchSourceTypeDef],  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `BaselineId`: `str`
-- `Name`: `str`
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-- `GlobalFilters`:
-  [PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef)
-- `ApprovalRules`:
-  [PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef)
-- `ApprovedPatches`: `List`\[`str`\]
-- `ApprovedPatchesComplianceLevel`:
-  [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
-- `ApprovedPatchesEnableNonSecurity`: `bool`
-- `RejectedPatches`: `List`\[`str`\]
-- `RejectedPatchesAction`: [PatchActionType](./literals.md#patchactiontype)
-- `CreatedDate`: `datetime`
-- `ModifiedDate`: `datetime`
-- `Description`: `str`
-- `Sources`: `List`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateresourcedatasyncrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+2. See [:material-code-braces: PatchFilterGroupTypeDef](./type_defs.md#patchfiltergrouptypedef) 
+3. See [:material-code-braces: PatchRuleGroupTypeDef](./type_defs.md#patchrulegrouptypedef) 
+4. See [:material-code-brackets: PatchComplianceLevelType](./literals.md#patchcomplianceleveltype) 
+5. See [:material-code-brackets: PatchActionType](./literals.md#patchactiontype) 
+6. See [:material-code-braces: PatchSourceTypeDef](./type_defs.md#patchsourcetypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResourceDataSyncRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateResourceDataSyncRequestRequestTypeDef
+
+def get_value() -> UpdateResourceDataSyncRequestRequestTypeDef:
+    return {
+        "SyncName": ...,
+        "SyncType": ...,
+        "SyncSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResourceDataSyncRequestRequestTypeDef(TypedDict):
+    SyncName: str,
+    SyncType: str,
+    SyncSource: ResourceDataSyncSourceTypeDef,  # (1)
+```
 
-- `SyncName`: `str`
-- `SyncType`: `str`
-- `SyncSource`:
-  [ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef)
-
-<a id="updateservicesettingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef) 
 ## UpdateServiceSettingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import UpdateServiceSettingRequestRequestTypeDef
+
+def get_value() -> UpdateServiceSettingRequestRequestTypeDef:
+    return {
+        "SettingId": ...,
+        "SettingValue": ...,
+    }
 ```
 
-Required fields:
-
-- `SettingId`: `str`
-- `SettingValue`: `str`
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class UpdateServiceSettingRequestRequestTypeDef(TypedDict):
+    SettingId: str,
+    SettingValue: str,
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

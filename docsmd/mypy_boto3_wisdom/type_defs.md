@@ -1,1430 +1,1875 @@
-<a id="typed-dictionaries-for-boto3-connectwisdomservice-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 ConnectWisdomService module
+> [Index](../README.md) > [ConnectWisdomService](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [ConnectWisdomService](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
-type annotations stubs module
-[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
-
-- [Typed dictionaries for boto3 ConnectWisdomService module](#typed-dictionaries-for-boto3-connectwisdomservice-module)
-  - [AppIntegrationsConfigurationTypeDef](#appintegrationsconfigurationtypedef)
-  - [AssistantAssociationDataTypeDef](#assistantassociationdatatypedef)
-  - [AssistantAssociationInputDataTypeDef](#assistantassociationinputdatatypedef)
-  - [AssistantAssociationOutputDataTypeDef](#assistantassociationoutputdatatypedef)
-  - [AssistantAssociationSummaryTypeDef](#assistantassociationsummarytypedef)
-  - [AssistantDataTypeDef](#assistantdatatypedef)
-  - [AssistantSummaryTypeDef](#assistantsummarytypedef)
-  - [ContentDataTypeDef](#contentdatatypedef)
-  - [ContentReferenceTypeDef](#contentreferencetypedef)
-  - [ContentSummaryTypeDef](#contentsummarytypedef)
-  - [CreateAssistantAssociationRequestRequestTypeDef](#createassistantassociationrequestrequesttypedef)
-  - [CreateAssistantAssociationResponseTypeDef](#createassistantassociationresponsetypedef)
-  - [CreateAssistantRequestRequestTypeDef](#createassistantrequestrequesttypedef)
-  - [CreateAssistantResponseTypeDef](#createassistantresponsetypedef)
-  - [CreateContentRequestRequestTypeDef](#createcontentrequestrequesttypedef)
-  - [CreateContentResponseTypeDef](#createcontentresponsetypedef)
-  - [CreateKnowledgeBaseRequestRequestTypeDef](#createknowledgebaserequestrequesttypedef)
-  - [CreateKnowledgeBaseResponseTypeDef](#createknowledgebaseresponsetypedef)
-  - [CreateSessionRequestRequestTypeDef](#createsessionrequestrequesttypedef)
-  - [CreateSessionResponseTypeDef](#createsessionresponsetypedef)
-  - [DeleteAssistantAssociationRequestRequestTypeDef](#deleteassistantassociationrequestrequesttypedef)
-  - [DeleteAssistantRequestRequestTypeDef](#deleteassistantrequestrequesttypedef)
-  - [DeleteContentRequestRequestTypeDef](#deletecontentrequestrequesttypedef)
-  - [DeleteKnowledgeBaseRequestRequestTypeDef](#deleteknowledgebaserequestrequesttypedef)
-  - [DocumentTextTypeDef](#documenttexttypedef)
-  - [DocumentTypeDef](#documenttypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [GetAssistantAssociationRequestRequestTypeDef](#getassistantassociationrequestrequesttypedef)
-  - [GetAssistantAssociationResponseTypeDef](#getassistantassociationresponsetypedef)
-  - [GetAssistantRequestRequestTypeDef](#getassistantrequestrequesttypedef)
-  - [GetAssistantResponseTypeDef](#getassistantresponsetypedef)
-  - [GetContentRequestRequestTypeDef](#getcontentrequestrequesttypedef)
-  - [GetContentResponseTypeDef](#getcontentresponsetypedef)
-  - [GetContentSummaryRequestRequestTypeDef](#getcontentsummaryrequestrequesttypedef)
-  - [GetContentSummaryResponseTypeDef](#getcontentsummaryresponsetypedef)
-  - [GetKnowledgeBaseRequestRequestTypeDef](#getknowledgebaserequestrequesttypedef)
-  - [GetKnowledgeBaseResponseTypeDef](#getknowledgebaseresponsetypedef)
-  - [GetRecommendationsRequestRequestTypeDef](#getrecommendationsrequestrequesttypedef)
-  - [GetRecommendationsResponseTypeDef](#getrecommendationsresponsetypedef)
-  - [GetSessionRequestRequestTypeDef](#getsessionrequestrequesttypedef)
-  - [GetSessionResponseTypeDef](#getsessionresponsetypedef)
-  - [HighlightTypeDef](#highlighttypedef)
-  - [KnowledgeBaseAssociationDataTypeDef](#knowledgebaseassociationdatatypedef)
-  - [KnowledgeBaseDataTypeDef](#knowledgebasedatatypedef)
-  - [KnowledgeBaseSummaryTypeDef](#knowledgebasesummarytypedef)
-  - [ListAssistantAssociationsRequestRequestTypeDef](#listassistantassociationsrequestrequesttypedef)
-  - [ListAssistantAssociationsResponseTypeDef](#listassistantassociationsresponsetypedef)
-  - [ListAssistantsRequestRequestTypeDef](#listassistantsrequestrequesttypedef)
-  - [ListAssistantsResponseTypeDef](#listassistantsresponsetypedef)
-  - [ListContentsRequestRequestTypeDef](#listcontentsrequestrequesttypedef)
-  - [ListContentsResponseTypeDef](#listcontentsresponsetypedef)
-  - [ListKnowledgeBasesRequestRequestTypeDef](#listknowledgebasesrequestrequesttypedef)
-  - [ListKnowledgeBasesResponseTypeDef](#listknowledgebasesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [NotifyRecommendationsReceivedErrorTypeDef](#notifyrecommendationsreceivederrortypedef)
-  - [NotifyRecommendationsReceivedRequestRequestTypeDef](#notifyrecommendationsreceivedrequestrequesttypedef)
-  - [NotifyRecommendationsReceivedResponseTypeDef](#notifyrecommendationsreceivedresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [QueryAssistantRequestRequestTypeDef](#queryassistantrequestrequesttypedef)
-  - [QueryAssistantResponseTypeDef](#queryassistantresponsetypedef)
-  - [RecommendationDataTypeDef](#recommendationdatatypedef)
-  - [RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef](#removeknowledgebasetemplateurirequestrequesttypedef)
-  - [RenderingConfigurationTypeDef](#renderingconfigurationtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResultDataTypeDef](#resultdatatypedef)
-  - [SearchContentRequestRequestTypeDef](#searchcontentrequestrequesttypedef)
-  - [SearchContentResponseTypeDef](#searchcontentresponsetypedef)
-  - [SearchExpressionTypeDef](#searchexpressiontypedef)
-  - [SearchSessionsRequestRequestTypeDef](#searchsessionsrequestrequesttypedef)
-  - [SearchSessionsResponseTypeDef](#searchsessionsresponsetypedef)
-  - [ServerSideEncryptionConfigurationTypeDef](#serversideencryptionconfigurationtypedef)
-  - [SessionDataTypeDef](#sessiondatatypedef)
-  - [SessionSummaryTypeDef](#sessionsummarytypedef)
-  - [SourceConfigurationTypeDef](#sourceconfigurationtypedef)
-  - [StartContentUploadRequestRequestTypeDef](#startcontentuploadrequestrequesttypedef)
-  - [StartContentUploadResponseTypeDef](#startcontentuploadresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateContentRequestRequestTypeDef](#updatecontentrequestrequesttypedef)
-  - [UpdateContentResponseTypeDef](#updatecontentresponsetypedef)
-  - [UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef](#updateknowledgebasetemplateurirequestrequesttypedef)
-  - [UpdateKnowledgeBaseTemplateUriResponseTypeDef](#updateknowledgebasetemplateuriresponsetypedef)
-
-<a id="appintegrationsconfigurationtypedef"></a>
+    Auto-generated documentation for [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
+    type annotations stubs module [mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 ## AppIntegrationsConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import AppIntegrationsConfigurationTypeDef
+
+def get_value() -> AppIntegrationsConfigurationTypeDef:
+    return {
+        "appIntegrationArn": ...,
+        "objectFields": ...,
+    }
 ```
 
-Required fields:
-
-- `appIntegrationArn`: `str`
-- `objectFields`: `Sequence`\[`str`\]
-
-<a id="assistantassociationdatatypedef"></a>
+```python title="Definition"
+class AppIntegrationsConfigurationTypeDef(TypedDict):
+    appIntegrationArn: str,
+    objectFields: Sequence[str],
+```
 
 ## AssistantAssociationDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import AssistantAssociationDataTypeDef
+
+def get_value() -> AssistantAssociationDataTypeDef:
+    return {
+        "assistantArn": ...,
+        "assistantAssociationArn": ...,
+        "assistantAssociationId": ...,
+        "assistantId": ...,
+        "associationData": ...,
+        "associationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssistantAssociationDataTypeDef(TypedDict):
+    assistantArn: str,
+    assistantAssociationArn: str,
+    assistantAssociationId: str,
+    assistantId: str,
+    associationData: AssistantAssociationOutputDataTypeDef,  # (1)
+    associationType: AssociationTypeType,  # (2)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `assistantArn`: `str`
-- `assistantAssociationArn`: `str`
-- `assistantAssociationId`: `str`
-- `assistantId`: `str`
-- `associationData`:
-  [AssistantAssociationOutputDataTypeDef](./type_defs.md#assistantassociationoutputdatatypedef)
-- `associationType`: `Literal['KNOWLEDGE_BASE']` (see
-  [AssociationTypeType](./literals.md#associationtypetype))
-
-Optional fields:
-
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="assistantassociationinputdatatypedef"></a>
-
+1. See [:material-code-braces: AssistantAssociationOutputDataTypeDef](./type_defs.md#assistantassociationoutputdatatypedef) 
+2. See [:material-code-brackets: AssociationTypeType](./literals.md#associationtypetype) 
 ## AssistantAssociationInputDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import AssistantAssociationInputDataTypeDef
+
+def get_value() -> AssistantAssociationInputDataTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Optional fields:
-
-- `knowledgeBaseId`: `str`
-
-<a id="assistantassociationoutputdatatypedef"></a>
+```python title="Definition"
+class AssistantAssociationInputDataTypeDef(TypedDict):
+    knowledgeBaseId: NotRequired[str],
+```
 
 ## AssistantAssociationOutputDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import AssistantAssociationOutputDataTypeDef
+
+def get_value() -> AssistantAssociationOutputDataTypeDef:
+    return {
+        "knowledgeBaseAssociation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssistantAssociationOutputDataTypeDef(TypedDict):
+    knowledgeBaseAssociation: NotRequired[KnowledgeBaseAssociationDataTypeDef],  # (1)
+```
 
-- `knowledgeBaseAssociation`:
-  [KnowledgeBaseAssociationDataTypeDef](./type_defs.md#knowledgebaseassociationdatatypedef)
-
-<a id="assistantassociationsummarytypedef"></a>
-
+1. See [:material-code-braces: KnowledgeBaseAssociationDataTypeDef](./type_defs.md#knowledgebaseassociationdatatypedef) 
 ## AssistantAssociationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import AssistantAssociationSummaryTypeDef
+
+def get_value() -> AssistantAssociationSummaryTypeDef:
+    return {
+        "assistantArn": ...,
+        "assistantAssociationArn": ...,
+        "assistantAssociationId": ...,
+        "assistantId": ...,
+        "associationData": ...,
+        "associationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssistantAssociationSummaryTypeDef(TypedDict):
+    assistantArn: str,
+    assistantAssociationArn: str,
+    assistantAssociationId: str,
+    assistantId: str,
+    associationData: AssistantAssociationOutputDataTypeDef,  # (1)
+    associationType: AssociationTypeType,  # (2)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `assistantArn`: `str`
-- `assistantAssociationArn`: `str`
-- `assistantAssociationId`: `str`
-- `assistantId`: `str`
-- `associationData`:
-  [AssistantAssociationOutputDataTypeDef](./type_defs.md#assistantassociationoutputdatatypedef)
-- `associationType`: `Literal['KNOWLEDGE_BASE']` (see
-  [AssociationTypeType](./literals.md#associationtypetype))
-
-Optional fields:
-
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="assistantdatatypedef"></a>
-
+1. See [:material-code-braces: AssistantAssociationOutputDataTypeDef](./type_defs.md#assistantassociationoutputdatatypedef) 
+2. See [:material-code-brackets: AssociationTypeType](./literals.md#associationtypetype) 
 ## AssistantDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import AssistantDataTypeDef
+
+def get_value() -> AssistantDataTypeDef:
+    return {
+        "assistantArn": ...,
+        "assistantId": ...,
+        "name": ...,
+        "status": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssistantDataTypeDef(TypedDict):
+    assistantArn: str,
+    assistantId: str,
+    name: str,
+    status: AssistantStatusType,  # (2)
+    type: AssistantTypeType,  # (3)
+    description: NotRequired[str],
+    serverSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `assistantArn`: `str`
-- `assistantId`: `str`
-- `name`: `str`
-- `status`: [AssistantStatusType](./literals.md#assistantstatustype)
-- `type`: `Literal['AGENT']` (see
-  [AssistantTypeType](./literals.md#assistanttypetype))
-
-Optional fields:
-
-- `description`: `str`
-- `serverSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="assistantsummarytypedef"></a>
-
+1. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+2. See [:material-code-brackets: AssistantStatusType](./literals.md#assistantstatustype) 
+3. See [:material-code-brackets: AssistantTypeType](./literals.md#assistanttypetype) 
 ## AssistantSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import AssistantSummaryTypeDef
+
+def get_value() -> AssistantSummaryTypeDef:
+    return {
+        "assistantArn": ...,
+        "assistantId": ...,
+        "name": ...,
+        "status": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssistantSummaryTypeDef(TypedDict):
+    assistantArn: str,
+    assistantId: str,
+    name: str,
+    status: AssistantStatusType,  # (2)
+    type: AssistantTypeType,  # (3)
+    description: NotRequired[str],
+    serverSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `assistantArn`: `str`
-- `assistantId`: `str`
-- `name`: `str`
-- `status`: [AssistantStatusType](./literals.md#assistantstatustype)
-- `type`: `Literal['AGENT']` (see
-  [AssistantTypeType](./literals.md#assistanttypetype))
-
-Optional fields:
-
-- `description`: `str`
-- `serverSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="contentdatatypedef"></a>
-
+1. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+2. See [:material-code-brackets: AssistantStatusType](./literals.md#assistantstatustype) 
+3. See [:material-code-brackets: AssistantTypeType](./literals.md#assistanttypetype) 
 ## ContentDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ContentDataTypeDef
+
+def get_value() -> ContentDataTypeDef:
+    return {
+        "contentArn": ...,
+        "contentId": ...,
+        "contentType": ...,
+        "knowledgeBaseArn": ...,
+        "knowledgeBaseId": ...,
+        "metadata": ...,
+        "name": ...,
+        "revisionId": ...,
+        "status": ...,
+        "title": ...,
+        "url": ...,
+        "urlExpiry": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContentDataTypeDef(TypedDict):
+    contentArn: str,
+    contentId: str,
+    contentType: str,
+    knowledgeBaseArn: str,
+    knowledgeBaseId: str,
+    metadata: Dict[str, str],
+    name: str,
+    revisionId: str,
+    status: ContentStatusType,  # (1)
+    title: str,
+    url: str,
+    urlExpiry: datetime,
+    linkOutUri: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `contentArn`: `str`
-- `contentId`: `str`
-- `contentType`: `str`
-- `knowledgeBaseArn`: `str`
-- `knowledgeBaseId`: `str`
-- `metadata`: `Dict`\[`str`, `str`\]
-- `name`: `str`
-- `revisionId`: `str`
-- `status`: [ContentStatusType](./literals.md#contentstatustype)
-- `title`: `str`
-- `url`: `str`
-- `urlExpiry`: `datetime`
-
-Optional fields:
-
-- `linkOutUri`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="contentreferencetypedef"></a>
-
+1. See [:material-code-brackets: ContentStatusType](./literals.md#contentstatustype) 
 ## ContentReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ContentReferenceTypeDef
+
+def get_value() -> ContentReferenceTypeDef:
+    return {
+        "contentArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `contentArn`: `str`
-- `contentId`: `str`
-- `knowledgeBaseArn`: `str`
-- `knowledgeBaseId`: `str`
-
-<a id="contentsummarytypedef"></a>
+```python title="Definition"
+class ContentReferenceTypeDef(TypedDict):
+    contentArn: NotRequired[str],
+    contentId: NotRequired[str],
+    knowledgeBaseArn: NotRequired[str],
+    knowledgeBaseId: NotRequired[str],
+```
 
 ## ContentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ContentSummaryTypeDef
+
+def get_value() -> ContentSummaryTypeDef:
+    return {
+        "contentArn": ...,
+        "contentId": ...,
+        "contentType": ...,
+        "knowledgeBaseArn": ...,
+        "knowledgeBaseId": ...,
+        "metadata": ...,
+        "name": ...,
+        "revisionId": ...,
+        "status": ...,
+        "title": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContentSummaryTypeDef(TypedDict):
+    contentArn: str,
+    contentId: str,
+    contentType: str,
+    knowledgeBaseArn: str,
+    knowledgeBaseId: str,
+    metadata: Dict[str, str],
+    name: str,
+    revisionId: str,
+    status: ContentStatusType,  # (1)
+    title: str,
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `contentArn`: `str`
-- `contentId`: `str`
-- `contentType`: `str`
-- `knowledgeBaseArn`: `str`
-- `knowledgeBaseId`: `str`
-- `metadata`: `Dict`\[`str`, `str`\]
-- `name`: `str`
-- `revisionId`: `str`
-- `status`: [ContentStatusType](./literals.md#contentstatustype)
-- `title`: `str`
-
-Optional fields:
-
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="createassistantassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ContentStatusType](./literals.md#contentstatustype) 
 ## CreateAssistantAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateAssistantAssociationRequestRequestTypeDef
+
+def get_value() -> CreateAssistantAssociationRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+        "association": ...,
+        "associationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssistantAssociationRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+    association: AssistantAssociationInputDataTypeDef,  # (1)
+    associationType: AssociationTypeType,  # (2)
+    clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `assistantId`: `str`
-- `association`:
-  [AssistantAssociationInputDataTypeDef](./type_defs.md#assistantassociationinputdatatypedef)
-- `associationType`: `Literal['KNOWLEDGE_BASE']` (see
-  [AssociationTypeType](./literals.md#associationtypetype))
-
-Optional fields:
-
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createassistantassociationresponsetypedef"></a>
-
+1. See [:material-code-braces: AssistantAssociationInputDataTypeDef](./type_defs.md#assistantassociationinputdatatypedef) 
+2. See [:material-code-brackets: AssociationTypeType](./literals.md#associationtypetype) 
 ## CreateAssistantAssociationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateAssistantAssociationResponseTypeDef
+
+def get_value() -> CreateAssistantAssociationResponseTypeDef:
+    return {
+        "assistantAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssistantAssociationResponseTypeDef(TypedDict):
+    assistantAssociation: AssistantAssociationDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assistantAssociation`:
-  [AssistantAssociationDataTypeDef](./type_defs.md#assistantassociationdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createassistantrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssistantAssociationDataTypeDef](./type_defs.md#assistantassociationdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAssistantRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateAssistantRequestRequestTypeDef
+
+def get_value() -> CreateAssistantRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssistantRequestRequestTypeDef(TypedDict):
+    name: str,
+    type: AssistantTypeType,  # (1)
+    clientToken: NotRequired[str],
+    description: NotRequired[str],
+    serverSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (2)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-- `type`: `Literal['AGENT']` (see
-  [AssistantTypeType](./literals.md#assistanttypetype))
-
-Optional fields:
-
-- `clientToken`: `str`
-- `description`: `str`
-- `serverSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createassistantresponsetypedef"></a>
-
+1. See [:material-code-brackets: AssistantTypeType](./literals.md#assistanttypetype) 
+2. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
 ## CreateAssistantResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateAssistantResponseTypeDef
+
+def get_value() -> CreateAssistantResponseTypeDef:
+    return {
+        "assistant": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssistantResponseTypeDef(TypedDict):
+    assistant: AssistantDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assistant`: [AssistantDataTypeDef](./type_defs.md#assistantdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcontentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssistantDataTypeDef](./type_defs.md#assistantdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateContentRequestRequestTypeDef
+
+def get_value() -> CreateContentRequestRequestTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+        "name": ...,
+        "uploadId": ...,
+    }
 ```
 
-Required fields:
-
-- `knowledgeBaseId`: `str`
-- `name`: `str`
-- `uploadId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `metadata`: `Mapping`\[`str`, `str`\]
-- `overrideLinkOutUri`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `title`: `str`
-
-<a id="createcontentresponsetypedef"></a>
+```python title="Definition"
+class CreateContentRequestRequestTypeDef(TypedDict):
+    knowledgeBaseId: str,
+    name: str,
+    uploadId: str,
+    clientToken: NotRequired[str],
+    metadata: NotRequired[Mapping[str, str]],
+    overrideLinkOutUri: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+    title: NotRequired[str],
+```
 
 ## CreateContentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateContentResponseTypeDef
+
+def get_value() -> CreateContentResponseTypeDef:
+    return {
+        "content": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContentResponseTypeDef(TypedDict):
+    content: ContentDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `content`: [ContentDataTypeDef](./type_defs.md#contentdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createknowledgebaserequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContentDataTypeDef](./type_defs.md#contentdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateKnowledgeBaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateKnowledgeBaseRequestRequestTypeDef
+
+def get_value() -> CreateKnowledgeBaseRequestRequestTypeDef:
+    return {
+        "knowledgeBaseType": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateKnowledgeBaseRequestRequestTypeDef(TypedDict):
+    knowledgeBaseType: KnowledgeBaseTypeType,  # (1)
+    name: str,
+    clientToken: NotRequired[str],
+    description: NotRequired[str],
+    renderingConfiguration: NotRequired[RenderingConfigurationTypeDef],  # (2)
+    serverSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (3)
+    sourceConfiguration: NotRequired[SourceConfigurationTypeDef],  # (4)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `knowledgeBaseType`:
-  [KnowledgeBaseTypeType](./literals.md#knowledgebasetypetype)
-- `name`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `description`: `str`
-- `renderingConfiguration`:
-  [RenderingConfigurationTypeDef](./type_defs.md#renderingconfigurationtypedef)
-- `serverSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `sourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createknowledgebaseresponsetypedef"></a>
-
+1. See [:material-code-brackets: KnowledgeBaseTypeType](./literals.md#knowledgebasetypetype) 
+2. See [:material-code-braces: RenderingConfigurationTypeDef](./type_defs.md#renderingconfigurationtypedef) 
+3. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+4. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
 ## CreateKnowledgeBaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateKnowledgeBaseResponseTypeDef
+
+def get_value() -> CreateKnowledgeBaseResponseTypeDef:
+    return {
+        "knowledgeBase": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateKnowledgeBaseResponseTypeDef(TypedDict):
+    knowledgeBase: KnowledgeBaseDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `knowledgeBase`:
-  [KnowledgeBaseDataTypeDef](./type_defs.md#knowledgebasedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: KnowledgeBaseDataTypeDef](./type_defs.md#knowledgebasedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateSessionRequestRequestTypeDef
+
+def get_value() -> CreateSessionRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantId`: `str`
-- `name`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createsessionresponsetypedef"></a>
+```python title="Definition"
+class CreateSessionRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+    name: str,
+    clientToken: NotRequired[str],
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import CreateSessionResponseTypeDef
+
+def get_value() -> CreateSessionResponseTypeDef:
+    return {
+        "session": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSessionResponseTypeDef(TypedDict):
+    session: SessionDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `session`: [SessionDataTypeDef](./type_defs.md#sessiondatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteassistantassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SessionDataTypeDef](./type_defs.md#sessiondatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAssistantAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import DeleteAssistantAssociationRequestRequestTypeDef
+
+def get_value() -> DeleteAssistantAssociationRequestRequestTypeDef:
+    return {
+        "assistantAssociationId": ...,
+        "assistantId": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantAssociationId`: `str`
-- `assistantId`: `str`
-
-<a id="deleteassistantrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAssistantAssociationRequestRequestTypeDef(TypedDict):
+    assistantAssociationId: str,
+    assistantId: str,
+```
 
 ## DeleteAssistantRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import DeleteAssistantRequestRequestTypeDef
+
+def get_value() -> DeleteAssistantRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantId`: `str`
-
-<a id="deletecontentrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAssistantRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+```
 
 ## DeleteContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import DeleteContentRequestRequestTypeDef
+
+def get_value() -> DeleteContentRequestRequestTypeDef:
+    return {
+        "contentId": ...,
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `contentId`: `str`
-- `knowledgeBaseId`: `str`
-
-<a id="deleteknowledgebaserequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteContentRequestRequestTypeDef(TypedDict):
+    contentId: str,
+    knowledgeBaseId: str,
+```
 
 ## DeleteKnowledgeBaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import DeleteKnowledgeBaseRequestRequestTypeDef
+
+def get_value() -> DeleteKnowledgeBaseRequestRequestTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `knowledgeBaseId`: `str`
-
-<a id="documenttexttypedef"></a>
+```python title="Definition"
+class DeleteKnowledgeBaseRequestRequestTypeDef(TypedDict):
+    knowledgeBaseId: str,
+```
 
 ## DocumentTextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import DocumentTextTypeDef
+
+def get_value() -> DocumentTextTypeDef:
+    return {
+        "highlights": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentTextTypeDef(TypedDict):
+    highlights: NotRequired[List[HighlightTypeDef]],  # (1)
+    text: NotRequired[str],
+```
 
-- `highlights`: `List`\[[HighlightTypeDef](./type_defs.md#highlighttypedef)\]
-- `text`: `str`
-
-<a id="documenttypedef"></a>
-
+1. See [:material-code-braces: HighlightTypeDef](./type_defs.md#highlighttypedef) 
 ## DocumentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import DocumentTypeDef
+
+def get_value() -> DocumentTypeDef:
+    return {
+        "contentReference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DocumentTypeDef(TypedDict):
+    contentReference: ContentReferenceTypeDef,  # (1)
+    excerpt: NotRequired[DocumentTextTypeDef],  # (2)
+    title: NotRequired[DocumentTextTypeDef],  # (2)
+```
 
-- `contentReference`:
-  [ContentReferenceTypeDef](./type_defs.md#contentreferencetypedef)
-
-Optional fields:
-
-- `excerpt`: [DocumentTextTypeDef](./type_defs.md#documenttexttypedef)
-- `title`: [DocumentTextTypeDef](./type_defs.md#documenttexttypedef)
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: ContentReferenceTypeDef](./type_defs.md#contentreferencetypedef) 
+2. See [:material-code-braces: DocumentTextTypeDef](./type_defs.md#documenttexttypedef) 
+3. See [:material-code-braces: DocumentTextTypeDef](./type_defs.md#documenttexttypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "field": ...,
+        "operator": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    field: FilterFieldType,  # (1)
+    operator: FilterOperatorType,  # (2)
+    value: str,
+```
 
-- `field`: `Literal['NAME']` (see
-  [FilterFieldType](./literals.md#filterfieldtype))
-- `operator`: `Literal['EQUALS']` (see
-  [FilterOperatorType](./literals.md#filteroperatortype))
-- `value`: `str`
-
-<a id="getassistantassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FilterFieldType](./literals.md#filterfieldtype) 
+2. See [:material-code-brackets: FilterOperatorType](./literals.md#filteroperatortype) 
 ## GetAssistantAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetAssistantAssociationRequestRequestTypeDef
+
+def get_value() -> GetAssistantAssociationRequestRequestTypeDef:
+    return {
+        "assistantAssociationId": ...,
+        "assistantId": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantAssociationId`: `str`
-- `assistantId`: `str`
-
-<a id="getassistantassociationresponsetypedef"></a>
+```python title="Definition"
+class GetAssistantAssociationRequestRequestTypeDef(TypedDict):
+    assistantAssociationId: str,
+    assistantId: str,
+```
 
 ## GetAssistantAssociationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetAssistantAssociationResponseTypeDef
+
+def get_value() -> GetAssistantAssociationResponseTypeDef:
+    return {
+        "assistantAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssistantAssociationResponseTypeDef(TypedDict):
+    assistantAssociation: AssistantAssociationDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assistantAssociation`:
-  [AssistantAssociationDataTypeDef](./type_defs.md#assistantassociationdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getassistantrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssistantAssociationDataTypeDef](./type_defs.md#assistantassociationdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAssistantRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetAssistantRequestRequestTypeDef
+
+def get_value() -> GetAssistantRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantId`: `str`
-
-<a id="getassistantresponsetypedef"></a>
+```python title="Definition"
+class GetAssistantRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+```
 
 ## GetAssistantResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetAssistantResponseTypeDef
+
+def get_value() -> GetAssistantResponseTypeDef:
+    return {
+        "assistant": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssistantResponseTypeDef(TypedDict):
+    assistant: AssistantDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assistant`: [AssistantDataTypeDef](./type_defs.md#assistantdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssistantDataTypeDef](./type_defs.md#assistantdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetContentRequestRequestTypeDef
+
+def get_value() -> GetContentRequestRequestTypeDef:
+    return {
+        "contentId": ...,
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `contentId`: `str`
-- `knowledgeBaseId`: `str`
-
-<a id="getcontentresponsetypedef"></a>
+```python title="Definition"
+class GetContentRequestRequestTypeDef(TypedDict):
+    contentId: str,
+    knowledgeBaseId: str,
+```
 
 ## GetContentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetContentResponseTypeDef
+
+def get_value() -> GetContentResponseTypeDef:
+    return {
+        "content": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContentResponseTypeDef(TypedDict):
+    content: ContentDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `content`: [ContentDataTypeDef](./type_defs.md#contentdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontentsummaryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContentDataTypeDef](./type_defs.md#contentdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContentSummaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetContentSummaryRequestRequestTypeDef
+
+def get_value() -> GetContentSummaryRequestRequestTypeDef:
+    return {
+        "contentId": ...,
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `contentId`: `str`
-- `knowledgeBaseId`: `str`
-
-<a id="getcontentsummaryresponsetypedef"></a>
+```python title="Definition"
+class GetContentSummaryRequestRequestTypeDef(TypedDict):
+    contentId: str,
+    knowledgeBaseId: str,
+```
 
 ## GetContentSummaryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetContentSummaryResponseTypeDef
+
+def get_value() -> GetContentSummaryResponseTypeDef:
+    return {
+        "contentSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContentSummaryResponseTypeDef(TypedDict):
+    contentSummary: ContentSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `contentSummary`:
-  [ContentSummaryTypeDef](./type_defs.md#contentsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getknowledgebaserequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContentSummaryTypeDef](./type_defs.md#contentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetKnowledgeBaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetKnowledgeBaseRequestRequestTypeDef
+
+def get_value() -> GetKnowledgeBaseRequestRequestTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `knowledgeBaseId`: `str`
-
-<a id="getknowledgebaseresponsetypedef"></a>
+```python title="Definition"
+class GetKnowledgeBaseRequestRequestTypeDef(TypedDict):
+    knowledgeBaseId: str,
+```
 
 ## GetKnowledgeBaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetKnowledgeBaseResponseTypeDef
+
+def get_value() -> GetKnowledgeBaseResponseTypeDef:
+    return {
+        "knowledgeBase": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetKnowledgeBaseResponseTypeDef(TypedDict):
+    knowledgeBase: KnowledgeBaseDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `knowledgeBase`:
-  [KnowledgeBaseDataTypeDef](./type_defs.md#knowledgebasedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrecommendationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: KnowledgeBaseDataTypeDef](./type_defs.md#knowledgebasedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRecommendationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetRecommendationsRequestRequestTypeDef
+
+def get_value() -> GetRecommendationsRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+        "sessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantId`: `str`
-- `sessionId`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `waitTimeSeconds`: `int`
-
-<a id="getrecommendationsresponsetypedef"></a>
+```python title="Definition"
+class GetRecommendationsRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+    sessionId: str,
+    maxResults: NotRequired[int],
+    waitTimeSeconds: NotRequired[int],
+```
 
 ## GetRecommendationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetRecommendationsResponseTypeDef
+
+def get_value() -> GetRecommendationsResponseTypeDef:
+    return {
+        "recommendations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRecommendationsResponseTypeDef(TypedDict):
+    recommendations: List[RecommendationDataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `recommendations`:
-  `List`\[[RecommendationDataTypeDef](./type_defs.md#recommendationdatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RecommendationDataTypeDef](./type_defs.md#recommendationdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetSessionRequestRequestTypeDef
+
+def get_value() -> GetSessionRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+        "sessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantId`: `str`
-- `sessionId`: `str`
-
-<a id="getsessionresponsetypedef"></a>
+```python title="Definition"
+class GetSessionRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+    sessionId: str,
+```
 
 ## GetSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import GetSessionResponseTypeDef
+
+def get_value() -> GetSessionResponseTypeDef:
+    return {
+        "session": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSessionResponseTypeDef(TypedDict):
+    session: SessionDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `session`: [SessionDataTypeDef](./type_defs.md#sessiondatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="highlighttypedef"></a>
-
+1. See [:material-code-braces: SessionDataTypeDef](./type_defs.md#sessiondatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HighlightTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import HighlightTypeDef
+
+def get_value() -> HighlightTypeDef:
+    return {
+        "beginOffsetInclusive": ...,
+    }
 ```
 
-Optional fields:
-
-- `beginOffsetInclusive`: `int`
-- `endOffsetExclusive`: `int`
-
-<a id="knowledgebaseassociationdatatypedef"></a>
+```python title="Definition"
+class HighlightTypeDef(TypedDict):
+    beginOffsetInclusive: NotRequired[int],
+    endOffsetExclusive: NotRequired[int],
+```
 
 ## KnowledgeBaseAssociationDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import KnowledgeBaseAssociationDataTypeDef
+
+def get_value() -> KnowledgeBaseAssociationDataTypeDef:
+    return {
+        "knowledgeBaseArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `knowledgeBaseArn`: `str`
-- `knowledgeBaseId`: `str`
-
-<a id="knowledgebasedatatypedef"></a>
+```python title="Definition"
+class KnowledgeBaseAssociationDataTypeDef(TypedDict):
+    knowledgeBaseArn: NotRequired[str],
+    knowledgeBaseId: NotRequired[str],
+```
 
 ## KnowledgeBaseDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import KnowledgeBaseDataTypeDef
+
+def get_value() -> KnowledgeBaseDataTypeDef:
+    return {
+        "knowledgeBaseArn": ...,
+        "knowledgeBaseId": ...,
+        "knowledgeBaseType": ...,
+        "name": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KnowledgeBaseDataTypeDef(TypedDict):
+    knowledgeBaseArn: str,
+    knowledgeBaseId: str,
+    knowledgeBaseType: KnowledgeBaseTypeType,  # (1)
+    name: str,
+    status: KnowledgeBaseStatusType,  # (5)
+    description: NotRequired[str],
+    lastContentModificationTime: NotRequired[datetime],
+    renderingConfiguration: NotRequired[RenderingConfigurationTypeDef],  # (2)
+    serverSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (3)
+    sourceConfiguration: NotRequired[SourceConfigurationTypeDef],  # (4)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `knowledgeBaseArn`: `str`
-- `knowledgeBaseId`: `str`
-- `knowledgeBaseType`:
-  [KnowledgeBaseTypeType](./literals.md#knowledgebasetypetype)
-- `name`: `str`
-- `status`: [KnowledgeBaseStatusType](./literals.md#knowledgebasestatustype)
-
-Optional fields:
-
-- `description`: `str`
-- `lastContentModificationTime`: `datetime`
-- `renderingConfiguration`:
-  [RenderingConfigurationTypeDef](./type_defs.md#renderingconfigurationtypedef)
-- `serverSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `sourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="knowledgebasesummarytypedef"></a>
-
+1. See [:material-code-brackets: KnowledgeBaseTypeType](./literals.md#knowledgebasetypetype) 
+2. See [:material-code-braces: RenderingConfigurationTypeDef](./type_defs.md#renderingconfigurationtypedef) 
+3. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+4. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+5. See [:material-code-brackets: KnowledgeBaseStatusType](./literals.md#knowledgebasestatustype) 
 ## KnowledgeBaseSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import KnowledgeBaseSummaryTypeDef
+
+def get_value() -> KnowledgeBaseSummaryTypeDef:
+    return {
+        "knowledgeBaseArn": ...,
+        "knowledgeBaseId": ...,
+        "knowledgeBaseType": ...,
+        "name": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KnowledgeBaseSummaryTypeDef(TypedDict):
+    knowledgeBaseArn: str,
+    knowledgeBaseId: str,
+    knowledgeBaseType: KnowledgeBaseTypeType,  # (1)
+    name: str,
+    status: KnowledgeBaseStatusType,  # (5)
+    description: NotRequired[str],
+    renderingConfiguration: NotRequired[RenderingConfigurationTypeDef],  # (2)
+    serverSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (3)
+    sourceConfiguration: NotRequired[SourceConfigurationTypeDef],  # (4)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `knowledgeBaseArn`: `str`
-- `knowledgeBaseId`: `str`
-- `knowledgeBaseType`:
-  [KnowledgeBaseTypeType](./literals.md#knowledgebasetypetype)
-- `name`: `str`
-- `status`: [KnowledgeBaseStatusType](./literals.md#knowledgebasestatustype)
+1. See [:material-code-brackets: KnowledgeBaseTypeType](./literals.md#knowledgebasetypetype) 
+2. See [:material-code-braces: RenderingConfigurationTypeDef](./type_defs.md#renderingconfigurationtypedef) 
+3. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+4. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+5. See [:material-code-brackets: KnowledgeBaseStatusType](./literals.md#knowledgebasestatustype) 
+## ListAssistantAssociationsRequestListAssistantAssociationsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import ListAssistantAssociationsRequestListAssistantAssociationsPaginateTypeDef
 
-- `description`: `str`
-- `renderingConfiguration`:
-  [RenderingConfigurationTypeDef](./type_defs.md#renderingconfigurationtypedef)
-- `serverSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `sourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
+def get_value() -> ListAssistantAssociationsRequestListAssistantAssociationsPaginateTypeDef:
+    return {
+        "assistantId": ...,
+    }
+```
 
-<a id="listassistantassociationsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListAssistantAssociationsRequestListAssistantAssociationsPaginateTypeDef(TypedDict):
+    assistantId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssistantAssociationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListAssistantAssociationsRequestRequestTypeDef
+
+def get_value() -> ListAssistantAssociationsRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantId`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listassistantassociationsresponsetypedef"></a>
+```python title="Definition"
+class ListAssistantAssociationsRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListAssistantAssociationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListAssistantAssociationsResponseTypeDef
+
+def get_value() -> ListAssistantAssociationsResponseTypeDef:
+    return {
+        "assistantAssociationSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssistantAssociationsResponseTypeDef(TypedDict):
+    assistantAssociationSummaries: List[AssistantAssociationSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assistantAssociationSummaries`:
-  `List`\[[AssistantAssociationSummaryTypeDef](./type_defs.md#assistantassociationsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssistantAssociationSummaryTypeDef](./type_defs.md#assistantassociationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssistantsRequestListAssistantsPaginateTypeDef
 
-<a id="listassistantsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import ListAssistantsRequestListAssistantsPaginateTypeDef
 
+def get_value() -> ListAssistantsRequestListAssistantsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssistantsRequestListAssistantsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssistantsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListAssistantsRequestRequestTypeDef
+
+def get_value() -> ListAssistantsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listassistantsresponsetypedef"></a>
+```python title="Definition"
+class ListAssistantsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListAssistantsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListAssistantsResponseTypeDef
+
+def get_value() -> ListAssistantsResponseTypeDef:
+    return {
+        "assistantSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssistantsResponseTypeDef(TypedDict):
+    assistantSummaries: List[AssistantSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assistantSummaries`:
-  `List`\[[AssistantSummaryTypeDef](./type_defs.md#assistantsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssistantSummaryTypeDef](./type_defs.md#assistantsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContentsRequestListContentsPaginateTypeDef
 
-<a id="listcontentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import ListContentsRequestListContentsPaginateTypeDef
 
+def get_value() -> ListContentsRequestListContentsPaginateTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+    }
+```
+
+```python title="Definition"
+class ListContentsRequestListContentsPaginateTypeDef(TypedDict):
+    knowledgeBaseId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListContentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListContentsRequestRequestTypeDef
+
+def get_value() -> ListContentsRequestRequestTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `knowledgeBaseId`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listcontentsresponsetypedef"></a>
+```python title="Definition"
+class ListContentsRequestRequestTypeDef(TypedDict):
+    knowledgeBaseId: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListContentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListContentsResponseTypeDef
+
+def get_value() -> ListContentsResponseTypeDef:
+    return {
+        "contentSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContentsResponseTypeDef(TypedDict):
+    contentSummaries: List[ContentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `contentSummaries`:
-  `List`\[[ContentSummaryTypeDef](./type_defs.md#contentsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ContentSummaryTypeDef](./type_defs.md#contentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListKnowledgeBasesRequestListKnowledgeBasesPaginateTypeDef
 
-<a id="listknowledgebasesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import ListKnowledgeBasesRequestListKnowledgeBasesPaginateTypeDef
 
+def get_value() -> ListKnowledgeBasesRequestListKnowledgeBasesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListKnowledgeBasesRequestListKnowledgeBasesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListKnowledgeBasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListKnowledgeBasesRequestRequestTypeDef
+
+def get_value() -> ListKnowledgeBasesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listknowledgebasesresponsetypedef"></a>
+```python title="Definition"
+class ListKnowledgeBasesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListKnowledgeBasesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListKnowledgeBasesResponseTypeDef
+
+def get_value() -> ListKnowledgeBasesResponseTypeDef:
+    return {
+        "knowledgeBaseSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListKnowledgeBasesResponseTypeDef(TypedDict):
+    knowledgeBaseSummaries: List[KnowledgeBaseSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `knowledgeBaseSummaries`:
-  `List`\[[KnowledgeBaseSummaryTypeDef](./type_defs.md#knowledgebasesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: KnowledgeBaseSummaryTypeDef](./type_defs.md#knowledgebasesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notifyrecommendationsreceivederrortypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotifyRecommendationsReceivedErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import NotifyRecommendationsReceivedErrorTypeDef
+
+def get_value() -> NotifyRecommendationsReceivedErrorTypeDef:
+    return {
+        "message": ...,
+    }
 ```
 
-Optional fields:
-
-- `message`: `str`
-- `recommendationId`: `str`
-
-<a id="notifyrecommendationsreceivedrequestrequesttypedef"></a>
+```python title="Definition"
+class NotifyRecommendationsReceivedErrorTypeDef(TypedDict):
+    message: NotRequired[str],
+    recommendationId: NotRequired[str],
+```
 
 ## NotifyRecommendationsReceivedRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import NotifyRecommendationsReceivedRequestRequestTypeDef
+
+def get_value() -> NotifyRecommendationsReceivedRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+        "recommendationIds": ...,
+        "sessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantId`: `str`
-- `recommendationIds`: `Sequence`\[`str`\]
-- `sessionId`: `str`
-
-<a id="notifyrecommendationsreceivedresponsetypedef"></a>
+```python title="Definition"
+class NotifyRecommendationsReceivedRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+    recommendationIds: Sequence[str],
+    sessionId: str,
+```
 
 ## NotifyRecommendationsReceivedResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import NotifyRecommendationsReceivedResponseTypeDef
+
+def get_value() -> NotifyRecommendationsReceivedResponseTypeDef:
+    return {
+        "errors": ...,
+        "recommendationIds": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotifyRecommendationsReceivedResponseTypeDef(TypedDict):
+    errors: List[NotifyRecommendationsReceivedErrorTypeDef],  # (1)
+    recommendationIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errors`:
-  `List`\[[NotifyRecommendationsReceivedErrorTypeDef](./type_defs.md#notifyrecommendationsreceivederrortypedef)\]
-- `recommendationIds`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: NotifyRecommendationsReceivedErrorTypeDef](./type_defs.md#notifyrecommendationsreceivederrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
+## QueryAssistantRequestQueryAssistantPaginateTypeDef
 
-<a id="queryassistantrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import QueryAssistantRequestQueryAssistantPaginateTypeDef
 
+def get_value() -> QueryAssistantRequestQueryAssistantPaginateTypeDef:
+    return {
+        "assistantId": ...,
+        "queryText": ...,
+    }
+```
+
+```python title="Definition"
+class QueryAssistantRequestQueryAssistantPaginateTypeDef(TypedDict):
+    assistantId: str,
+    queryText: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## QueryAssistantRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import QueryAssistantRequestRequestTypeDef
+
+def get_value() -> QueryAssistantRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+        "queryText": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantId`: `str`
-- `queryText`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="queryassistantresponsetypedef"></a>
+```python title="Definition"
+class QueryAssistantRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+    queryText: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## QueryAssistantResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import QueryAssistantResponseTypeDef
+
+def get_value() -> QueryAssistantResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "results": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueryAssistantResponseTypeDef(TypedDict):
+    nextToken: str,
+    results: List[ResultDataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `results`: `List`\[[ResultDataTypeDef](./type_defs.md#resultdatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="recommendationdatatypedef"></a>
-
+1. See [:material-code-braces: ResultDataTypeDef](./type_defs.md#resultdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecommendationDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import RecommendationDataTypeDef
+
+def get_value() -> RecommendationDataTypeDef:
+    return {
+        "document": ...,
+        "recommendationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecommendationDataTypeDef(TypedDict):
+    document: DocumentTypeDef,  # (1)
+    recommendationId: str,
+    relevanceLevel: NotRequired[RelevanceLevelType],  # (2)
+    relevanceScore: NotRequired[float],
+```
 
-- `document`: [DocumentTypeDef](./type_defs.md#documenttypedef)
-- `recommendationId`: `str`
-
-Optional fields:
-
-- `relevanceLevel`: [RelevanceLevelType](./literals.md#relevanceleveltype)
-- `relevanceScore`: `float`
-
-<a id="removeknowledgebasetemplateurirequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DocumentTypeDef](./type_defs.md#documenttypedef) 
+2. See [:material-code-brackets: RelevanceLevelType](./literals.md#relevanceleveltype) 
 ## RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef
+
+def get_value() -> RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `knowledgeBaseId`: `str`
-
-<a id="renderingconfigurationtypedef"></a>
+```python title="Definition"
+class RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef(TypedDict):
+    knowledgeBaseId: str,
+```
 
 ## RenderingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import RenderingConfigurationTypeDef
+
+def get_value() -> RenderingConfigurationTypeDef:
+    return {
+        "templateUri": ...,
+    }
 ```
 
-Optional fields:
-
-- `templateUri`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RenderingConfigurationTypeDef(TypedDict):
+    templateUri: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="resultdatatypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResultDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ResultDataTypeDef
+
+def get_value() -> ResultDataTypeDef:
+    return {
+        "document": ...,
+        "resultId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResultDataTypeDef(TypedDict):
+    document: DocumentTypeDef,  # (1)
+    resultId: str,
+    relevanceScore: NotRequired[float],
+```
 
-- `document`: [DocumentTypeDef](./type_defs.md#documenttypedef)
-- `resultId`: `str`
-
-Optional fields:
-
-- `relevanceScore`: `float`
-
-<a id="searchcontentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DocumentTypeDef](./type_defs.md#documenttypedef) 
 ## SearchContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import SearchContentRequestRequestTypeDef
+
+def get_value() -> SearchContentRequestRequestTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+        "searchExpression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchContentRequestRequestTypeDef(TypedDict):
+    knowledgeBaseId: str,
+    searchExpression: SearchExpressionTypeDef,  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `knowledgeBaseId`: `str`
-- `searchExpression`:
-  [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
+1. See [:material-code-braces: SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef) 
+## SearchContentRequestSearchContentPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import SearchContentRequestSearchContentPaginateTypeDef
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+def get_value() -> SearchContentRequestSearchContentPaginateTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+        "searchExpression": ...,
+    }
+```
 
-<a id="searchcontentresponsetypedef"></a>
+```python title="Definition"
+class SearchContentRequestSearchContentPaginateTypeDef(TypedDict):
+    knowledgeBaseId: str,
+    searchExpression: SearchExpressionTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchContentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import SearchContentResponseTypeDef
+
+def get_value() -> SearchContentResponseTypeDef:
+    return {
+        "contentSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchContentResponseTypeDef(TypedDict):
+    contentSummaries: List[ContentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `contentSummaries`:
-  `List`\[[ContentSummaryTypeDef](./type_defs.md#contentsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchexpressiontypedef"></a>
-
+1. See [:material-code-braces: ContentSummaryTypeDef](./type_defs.md#contentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchExpressionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import SearchExpressionTypeDef
+
+def get_value() -> SearchExpressionTypeDef:
+    return {
+        "filters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchExpressionTypeDef(TypedDict):
+    filters: Sequence[FilterTypeDef],  # (1)
+```
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="searchsessionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## SearchSessionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import SearchSessionsRequestRequestTypeDef
+
+def get_value() -> SearchSessionsRequestRequestTypeDef:
+    return {
+        "assistantId": ...,
+        "searchExpression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchSessionsRequestRequestTypeDef(TypedDict):
+    assistantId: str,
+    searchExpression: SearchExpressionTypeDef,  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `assistantId`: `str`
-- `searchExpression`:
-  [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
+1. See [:material-code-braces: SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef) 
+## SearchSessionsRequestSearchSessionsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_wisdom.type_defs import SearchSessionsRequestSearchSessionsPaginateTypeDef
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+def get_value() -> SearchSessionsRequestSearchSessionsPaginateTypeDef:
+    return {
+        "assistantId": ...,
+        "searchExpression": ...,
+    }
+```
 
-<a id="searchsessionsresponsetypedef"></a>
+```python title="Definition"
+class SearchSessionsRequestSearchSessionsPaginateTypeDef(TypedDict):
+    assistantId: str,
+    searchExpression: SearchExpressionTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchSessionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import SearchSessionsResponseTypeDef
+
+def get_value() -> SearchSessionsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "sessionSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchSessionsResponseTypeDef(TypedDict):
+    nextToken: str,
+    sessionSummaries: List[SessionSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `sessionSummaries`:
-  `List`\[[SessionSummaryTypeDef](./type_defs.md#sessionsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="serversideencryptionconfigurationtypedef"></a>
-
+1. See [:material-code-braces: SessionSummaryTypeDef](./type_defs.md#sessionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServerSideEncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import ServerSideEncryptionConfigurationTypeDef
+
+def get_value() -> ServerSideEncryptionConfigurationTypeDef:
+    return {
+        "kmsKeyId": ...,
+    }
 ```
 
-Optional fields:
-
-- `kmsKeyId`: `str`
-
-<a id="sessiondatatypedef"></a>
+```python title="Definition"
+class ServerSideEncryptionConfigurationTypeDef(TypedDict):
+    kmsKeyId: NotRequired[str],
+```
 
 ## SessionDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import SessionDataTypeDef
+
+def get_value() -> SessionDataTypeDef:
+    return {
+        "name": ...,
+        "sessionArn": ...,
+        "sessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `sessionArn`: `str`
-- `sessionId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="sessionsummarytypedef"></a>
+```python title="Definition"
+class SessionDataTypeDef(TypedDict):
+    name: str,
+    sessionArn: str,
+    sessionId: str,
+    description: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
 ## SessionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import SessionSummaryTypeDef
+
+def get_value() -> SessionSummaryTypeDef:
+    return {
+        "assistantArn": ...,
+        "assistantId": ...,
+        "sessionArn": ...,
+        "sessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `assistantArn`: `str`
-- `assistantId`: `str`
-- `sessionArn`: `str`
-- `sessionId`: `str`
-
-<a id="sourceconfigurationtypedef"></a>
+```python title="Definition"
+class SessionSummaryTypeDef(TypedDict):
+    assistantArn: str,
+    assistantId: str,
+    sessionArn: str,
+    sessionId: str,
+```
 
 ## SourceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import SourceConfigurationTypeDef
+
+def get_value() -> SourceConfigurationTypeDef:
+    return {
+        "appIntegrations": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceConfigurationTypeDef(TypedDict):
+    appIntegrations: NotRequired[AppIntegrationsConfigurationTypeDef],  # (1)
+```
 
-- `appIntegrations`:
-  [AppIntegrationsConfigurationTypeDef](./type_defs.md#appintegrationsconfigurationtypedef)
-
-<a id="startcontentuploadrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppIntegrationsConfigurationTypeDef](./type_defs.md#appintegrationsconfigurationtypedef) 
 ## StartContentUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import StartContentUploadRequestRequestTypeDef
+
+def get_value() -> StartContentUploadRequestRequestTypeDef:
+    return {
+        "contentType": ...,
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `contentType`: `str`
-- `knowledgeBaseId`: `str`
-
-<a id="startcontentuploadresponsetypedef"></a>
+```python title="Definition"
+class StartContentUploadRequestRequestTypeDef(TypedDict):
+    contentType: str,
+    knowledgeBaseId: str,
+```
 
 ## StartContentUploadResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import StartContentUploadResponseTypeDef
+
+def get_value() -> StartContentUploadResponseTypeDef:
+    return {
+        "headersToInclude": ...,
+        "uploadId": ...,
+        "url": ...,
+        "urlExpiry": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartContentUploadResponseTypeDef(TypedDict):
+    headersToInclude: Dict[str, str],
+    uploadId: str,
+    url: str,
+    urlExpiry: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `headersToInclude`: `Dict`\[`str`, `str`\]
-- `uploadId`: `str`
-- `url`: `str`
-- `urlExpiry`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatecontentrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import UpdateContentRequestRequestTypeDef
+
+def get_value() -> UpdateContentRequestRequestTypeDef:
+    return {
+        "contentId": ...,
+        "knowledgeBaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `contentId`: `str`
-- `knowledgeBaseId`: `str`
-
-Optional fields:
-
-- `metadata`: `Mapping`\[`str`, `str`\]
-- `overrideLinkOutUri`: `str`
-- `removeOverrideLinkOutUri`: `bool`
-- `revisionId`: `str`
-- `title`: `str`
-- `uploadId`: `str`
-
-<a id="updatecontentresponsetypedef"></a>
+```python title="Definition"
+class UpdateContentRequestRequestTypeDef(TypedDict):
+    contentId: str,
+    knowledgeBaseId: str,
+    metadata: NotRequired[Mapping[str, str]],
+    overrideLinkOutUri: NotRequired[str],
+    removeOverrideLinkOutUri: NotRequired[bool],
+    revisionId: NotRequired[str],
+    title: NotRequired[str],
+    uploadId: NotRequired[str],
+```
 
 ## UpdateContentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import UpdateContentResponseTypeDef
+
+def get_value() -> UpdateContentResponseTypeDef:
+    return {
+        "content": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContentResponseTypeDef(TypedDict):
+    content: ContentDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `content`: [ContentDataTypeDef](./type_defs.md#contentdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateknowledgebasetemplateurirequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContentDataTypeDef](./type_defs.md#contentdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef
+
+def get_value() -> UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef:
+    return {
+        "knowledgeBaseId": ...,
+        "templateUri": ...,
+    }
 ```
 
-Required fields:
-
-- `knowledgeBaseId`: `str`
-- `templateUri`: `str`
-
-<a id="updateknowledgebasetemplateuriresponsetypedef"></a>
+```python title="Definition"
+class UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef(TypedDict):
+    knowledgeBaseId: str,
+    templateUri: str,
+```
 
 ## UpdateKnowledgeBaseTemplateUriResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.type_defs import UpdateKnowledgeBaseTemplateUriResponseTypeDef
+
+def get_value() -> UpdateKnowledgeBaseTemplateUriResponseTypeDef:
+    return {
+        "knowledgeBase": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateKnowledgeBaseTemplateUriResponseTypeDef(TypedDict):
+    knowledgeBase: KnowledgeBaseDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `knowledgeBase`:
-  [KnowledgeBaseDataTypeDef](./type_defs.md#knowledgebasedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: KnowledgeBaseDataTypeDef](./type_defs.md#knowledgebasedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

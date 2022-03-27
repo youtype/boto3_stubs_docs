@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-workspacesweb-module"></a>
-
-# Type annotations for boto3 WorkSpacesWeb module
+#  WorkSpacesWeb module
 
 > [Index](../README.md) > WorkSpacesWeb
 
-Auto-generated documentation for
-[WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
-type annotations stubs module
-[mypy-boto3-workspaces-web](https://pypi.org/project/mypy-boto3-workspaces-web/).
+!!! note ""
 
-- [Type annotations for boto3 WorkSpacesWeb module](#type-annotations-for-boto3-workspacesweb-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [WorkSpacesWebClient](#workspaceswebclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
+    type annotations stubs module [mypy-boto3-workspaces-web](https://pypi.org/project/mypy-boto3-workspaces-web/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `WorkSpacesWeb`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[workspaces-web]'
 python -m pip install mypy-boto3-workspaces-web
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,103 +42,41 @@ python -m pip install mypy-boto3-workspaces-web
 python -m pip uninstall -y mypy-boto3-workspaces-web
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="workspaceswebclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## WorkSpacesWebClient
 
-Type annotations for `boto3.client("workspaces-web")` as
-[WorkSpacesWebClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("workspaces-web")` as [WorkSpacesWebClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_workspaces_web.client import WorkSpacesWebClient
+
+def get_client() -> WorkSpacesWebClient:
+    return Session().cleint("workspaces-web")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [associate_browser_settings](./client.md#associate_browser_settings)
-- [associate_network_settings](./client.md#associate_network_settings)
-- [associate_trust_store](./client.md#associate_trust_store)
-- [associate_user_settings](./client.md#associate_user_settings)
-- [can_paginate](./client.md#can_paginate)
-- [create_browser_settings](./client.md#create_browser_settings)
-- [create_identity_provider](./client.md#create_identity_provider)
-- [create_network_settings](./client.md#create_network_settings)
-- [create_portal](./client.md#create_portal)
-- [create_trust_store](./client.md#create_trust_store)
-- [create_user_settings](./client.md#create_user_settings)
-- [delete_browser_settings](./client.md#delete_browser_settings)
-- [delete_identity_provider](./client.md#delete_identity_provider)
-- [delete_network_settings](./client.md#delete_network_settings)
-- [delete_portal](./client.md#delete_portal)
-- [delete_trust_store](./client.md#delete_trust_store)
-- [delete_user_settings](./client.md#delete_user_settings)
-- [disassociate_browser_settings](./client.md#disassociate_browser_settings)
-- [disassociate_network_settings](./client.md#disassociate_network_settings)
-- [disassociate_trust_store](./client.md#disassociate_trust_store)
-- [disassociate_user_settings](./client.md#disassociate_user_settings)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_browser_settings](./client.md#get_browser_settings)
-- [get_identity_provider](./client.md#get_identity_provider)
-- [get_network_settings](./client.md#get_network_settings)
-- [get_portal](./client.md#get_portal)
-- [get_portal_service_provider_metadata](./client.md#get_portal_service_provider_metadata)
-- [get_trust_store](./client.md#get_trust_store)
-- [get_trust_store_certificate](./client.md#get_trust_store_certificate)
-- [get_user_settings](./client.md#get_user_settings)
-- [list_browser_settings](./client.md#list_browser_settings)
-- [list_identity_providers](./client.md#list_identity_providers)
-- [list_network_settings](./client.md#list_network_settings)
-- [list_portals](./client.md#list_portals)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_trust_store_certificates](./client.md#list_trust_store_certificates)
-- [list_trust_stores](./client.md#list_trust_stores)
-- [list_user_settings](./client.md#list_user_settings)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_browser_settings](./client.md#update_browser_settings)
-- [update_identity_provider](./client.md#update_identity_provider)
-- [update_network_settings](./client.md#update_network_settings)
-- [update_portal](./client.md#update_portal)
-- [update_trust_store](./client.md#update_trust_store)
-- [update_user_settings](./client.md#update_user_settings)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-WorkSpacesWebClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- TooManyTagsException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_workspaces_web.literals import BrowserTypeType
 
-```python
-from mypy_boto3_workspaces_web.literals import BrowserTypeType, ...
+def get_value() -> BrowserTypeType:
+    return "Chrome"
 ```
 
 - [BrowserTypeType](./literals.md#browsertypetype)
@@ -170,18 +87,23 @@ from mypy_boto3_workspaces_web.literals import BrowserTypeType, ...
 - [WorkSpacesWebServiceName](./literals.md#workspaceswebservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_workspaces_web.type_defs import AssociateBrowserSettingsRequestRequestTypeDef
 
-```python
-from mypy_boto3_workspaces_web.type_defs import AssociateBrowserSettingsRequestRequestTypeDef, ...
+def get_value() -> AssociateBrowserSettingsRequestRequestTypeDef:
+    return {
+        "browserSettingsArn": ...,
+        "portalArn": ...,
+    }
 ```
 
 - [AssociateBrowserSettingsRequestRequestTypeDef](./type_defs.md#associatebrowsersettingsrequestrequesttypedef)
@@ -276,3 +198,4 @@ from mypy_boto3_workspaces_web.type_defs import AssociateBrowserSettingsRequestR
 - [UpdateUserSettingsResponseTypeDef](./type_defs.md#updateusersettingsresponsetypedef)
 - [UserSettingsSummaryTypeDef](./type_defs.md#usersettingssummarytypedef)
 - [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
+

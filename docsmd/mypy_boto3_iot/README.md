@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-iot-module"></a>
-
-# Type annotations for boto3 IoT module
+#  IoT module
 
 > [Index](../README.md) > IoT
 
-Auto-generated documentation for
-[IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
-type annotations stubs module
-[mypy-boto3-iot](https://pypi.org/project/mypy-boto3-iot/).
+!!! note ""
 
-- [Type annotations for boto3 IoT module](#type-annotations-for-boto3-iot-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoTClient](#iotclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
+    type annotations stubs module [mypy-boto3-iot](https://pypi.org/project/mypy-boto3-iot/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoT`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iot]'
 python -m pip install mypy-boto3-iot
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,319 +42,37 @@ python -m pip install mypy-boto3-iot
 python -m pip uninstall -y mypy-boto3-iot
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="iotclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoTClient
 
-Type annotations for `boto3.client("iot")` as [IoTClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iot")` as [IoTClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iot.client import IoTClient
+
+def get_client() -> IoTClient:
+    return Session().cleint("iot")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_certificate_transfer](./client.md#accept_certificate_transfer)
-- [add_thing_to_billing_group](./client.md#add_thing_to_billing_group)
-- [add_thing_to_thing_group](./client.md#add_thing_to_thing_group)
-- [associate_targets_with_job](./client.md#associate_targets_with_job)
-- [attach_policy](./client.md#attach_policy)
-- [attach_principal_policy](./client.md#attach_principal_policy)
-- [attach_security_profile](./client.md#attach_security_profile)
-- [attach_thing_principal](./client.md#attach_thing_principal)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_audit_mitigation_actions_task](./client.md#cancel_audit_mitigation_actions_task)
-- [cancel_audit_task](./client.md#cancel_audit_task)
-- [cancel_certificate_transfer](./client.md#cancel_certificate_transfer)
-- [cancel_detect_mitigation_actions_task](./client.md#cancel_detect_mitigation_actions_task)
-- [cancel_job](./client.md#cancel_job)
-- [cancel_job_execution](./client.md#cancel_job_execution)
-- [clear_default_authorizer](./client.md#clear_default_authorizer)
-- [confirm_topic_rule_destination](./client.md#confirm_topic_rule_destination)
-- [create_audit_suppression](./client.md#create_audit_suppression)
-- [create_authorizer](./client.md#create_authorizer)
-- [create_billing_group](./client.md#create_billing_group)
-- [create_certificate_from_csr](./client.md#create_certificate_from_csr)
-- [create_custom_metric](./client.md#create_custom_metric)
-- [create_dimension](./client.md#create_dimension)
-- [create_domain_configuration](./client.md#create_domain_configuration)
-- [create_dynamic_thing_group](./client.md#create_dynamic_thing_group)
-- [create_fleet_metric](./client.md#create_fleet_metric)
-- [create_job](./client.md#create_job)
-- [create_job_template](./client.md#create_job_template)
-- [create_keys_and_certificate](./client.md#create_keys_and_certificate)
-- [create_mitigation_action](./client.md#create_mitigation_action)
-- [create_ota_update](./client.md#create_ota_update)
-- [create_policy](./client.md#create_policy)
-- [create_policy_version](./client.md#create_policy_version)
-- [create_provisioning_claim](./client.md#create_provisioning_claim)
-- [create_provisioning_template](./client.md#create_provisioning_template)
-- [create_provisioning_template_version](./client.md#create_provisioning_template_version)
-- [create_role_alias](./client.md#create_role_alias)
-- [create_scheduled_audit](./client.md#create_scheduled_audit)
-- [create_security_profile](./client.md#create_security_profile)
-- [create_stream](./client.md#create_stream)
-- [create_thing](./client.md#create_thing)
-- [create_thing_group](./client.md#create_thing_group)
-- [create_thing_type](./client.md#create_thing_type)
-- [create_topic_rule](./client.md#create_topic_rule)
-- [create_topic_rule_destination](./client.md#create_topic_rule_destination)
-- [delete_account_audit_configuration](./client.md#delete_account_audit_configuration)
-- [delete_audit_suppression](./client.md#delete_audit_suppression)
-- [delete_authorizer](./client.md#delete_authorizer)
-- [delete_billing_group](./client.md#delete_billing_group)
-- [delete_ca_certificate](./client.md#delete_ca_certificate)
-- [delete_certificate](./client.md#delete_certificate)
-- [delete_custom_metric](./client.md#delete_custom_metric)
-- [delete_dimension](./client.md#delete_dimension)
-- [delete_domain_configuration](./client.md#delete_domain_configuration)
-- [delete_dynamic_thing_group](./client.md#delete_dynamic_thing_group)
-- [delete_fleet_metric](./client.md#delete_fleet_metric)
-- [delete_job](./client.md#delete_job)
-- [delete_job_execution](./client.md#delete_job_execution)
-- [delete_job_template](./client.md#delete_job_template)
-- [delete_mitigation_action](./client.md#delete_mitigation_action)
-- [delete_ota_update](./client.md#delete_ota_update)
-- [delete_policy](./client.md#delete_policy)
-- [delete_policy_version](./client.md#delete_policy_version)
-- [delete_provisioning_template](./client.md#delete_provisioning_template)
-- [delete_provisioning_template_version](./client.md#delete_provisioning_template_version)
-- [delete_registration_code](./client.md#delete_registration_code)
-- [delete_role_alias](./client.md#delete_role_alias)
-- [delete_scheduled_audit](./client.md#delete_scheduled_audit)
-- [delete_security_profile](./client.md#delete_security_profile)
-- [delete_stream](./client.md#delete_stream)
-- [delete_thing](./client.md#delete_thing)
-- [delete_thing_group](./client.md#delete_thing_group)
-- [delete_thing_type](./client.md#delete_thing_type)
-- [delete_topic_rule](./client.md#delete_topic_rule)
-- [delete_topic_rule_destination](./client.md#delete_topic_rule_destination)
-- [delete_v2_logging_level](./client.md#delete_v2_logging_level)
-- [deprecate_thing_type](./client.md#deprecate_thing_type)
-- [describe_account_audit_configuration](./client.md#describe_account_audit_configuration)
-- [describe_audit_finding](./client.md#describe_audit_finding)
-- [describe_audit_mitigation_actions_task](./client.md#describe_audit_mitigation_actions_task)
-- [describe_audit_suppression](./client.md#describe_audit_suppression)
-- [describe_audit_task](./client.md#describe_audit_task)
-- [describe_authorizer](./client.md#describe_authorizer)
-- [describe_billing_group](./client.md#describe_billing_group)
-- [describe_ca_certificate](./client.md#describe_ca_certificate)
-- [describe_certificate](./client.md#describe_certificate)
-- [describe_custom_metric](./client.md#describe_custom_metric)
-- [describe_default_authorizer](./client.md#describe_default_authorizer)
-- [describe_detect_mitigation_actions_task](./client.md#describe_detect_mitigation_actions_task)
-- [describe_dimension](./client.md#describe_dimension)
-- [describe_domain_configuration](./client.md#describe_domain_configuration)
-- [describe_endpoint](./client.md#describe_endpoint)
-- [describe_event_configurations](./client.md#describe_event_configurations)
-- [describe_fleet_metric](./client.md#describe_fleet_metric)
-- [describe_index](./client.md#describe_index)
-- [describe_job](./client.md#describe_job)
-- [describe_job_execution](./client.md#describe_job_execution)
-- [describe_job_template](./client.md#describe_job_template)
-- [describe_managed_job_template](./client.md#describe_managed_job_template)
-- [describe_mitigation_action](./client.md#describe_mitigation_action)
-- [describe_provisioning_template](./client.md#describe_provisioning_template)
-- [describe_provisioning_template_version](./client.md#describe_provisioning_template_version)
-- [describe_role_alias](./client.md#describe_role_alias)
-- [describe_scheduled_audit](./client.md#describe_scheduled_audit)
-- [describe_security_profile](./client.md#describe_security_profile)
-- [describe_stream](./client.md#describe_stream)
-- [describe_thing](./client.md#describe_thing)
-- [describe_thing_group](./client.md#describe_thing_group)
-- [describe_thing_registration_task](./client.md#describe_thing_registration_task)
-- [describe_thing_type](./client.md#describe_thing_type)
-- [detach_policy](./client.md#detach_policy)
-- [detach_principal_policy](./client.md#detach_principal_policy)
-- [detach_security_profile](./client.md#detach_security_profile)
-- [detach_thing_principal](./client.md#detach_thing_principal)
-- [disable_topic_rule](./client.md#disable_topic_rule)
-- [enable_topic_rule](./client.md#enable_topic_rule)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_behavior_model_training_summaries](./client.md#get_behavior_model_training_summaries)
-- [get_buckets_aggregation](./client.md#get_buckets_aggregation)
-- [get_cardinality](./client.md#get_cardinality)
-- [get_effective_policies](./client.md#get_effective_policies)
-- [get_indexing_configuration](./client.md#get_indexing_configuration)
-- [get_job_document](./client.md#get_job_document)
-- [get_logging_options](./client.md#get_logging_options)
-- [get_ota_update](./client.md#get_ota_update)
-- [get_paginator](./client.md#get_paginator)
-- [get_percentiles](./client.md#get_percentiles)
-- [get_policy](./client.md#get_policy)
-- [get_policy_version](./client.md#get_policy_version)
-- [get_registration_code](./client.md#get_registration_code)
-- [get_statistics](./client.md#get_statistics)
-- [get_topic_rule](./client.md#get_topic_rule)
-- [get_topic_rule_destination](./client.md#get_topic_rule_destination)
-- [get_v2_logging_options](./client.md#get_v2_logging_options)
-- [list_active_violations](./client.md#list_active_violations)
-- [list_attached_policies](./client.md#list_attached_policies)
-- [list_audit_findings](./client.md#list_audit_findings)
-- [list_audit_mitigation_actions_executions](./client.md#list_audit_mitigation_actions_executions)
-- [list_audit_mitigation_actions_tasks](./client.md#list_audit_mitigation_actions_tasks)
-- [list_audit_suppressions](./client.md#list_audit_suppressions)
-- [list_audit_tasks](./client.md#list_audit_tasks)
-- [list_authorizers](./client.md#list_authorizers)
-- [list_billing_groups](./client.md#list_billing_groups)
-- [list_ca_certificates](./client.md#list_ca_certificates)
-- [list_certificates](./client.md#list_certificates)
-- [list_certificates_by_ca](./client.md#list_certificates_by_ca)
-- [list_custom_metrics](./client.md#list_custom_metrics)
-- [list_detect_mitigation_actions_executions](./client.md#list_detect_mitigation_actions_executions)
-- [list_detect_mitigation_actions_tasks](./client.md#list_detect_mitigation_actions_tasks)
-- [list_dimensions](./client.md#list_dimensions)
-- [list_domain_configurations](./client.md#list_domain_configurations)
-- [list_fleet_metrics](./client.md#list_fleet_metrics)
-- [list_indices](./client.md#list_indices)
-- [list_job_executions_for_job](./client.md#list_job_executions_for_job)
-- [list_job_executions_for_thing](./client.md#list_job_executions_for_thing)
-- [list_job_templates](./client.md#list_job_templates)
-- [list_jobs](./client.md#list_jobs)
-- [list_managed_job_templates](./client.md#list_managed_job_templates)
-- [list_mitigation_actions](./client.md#list_mitigation_actions)
-- [list_ota_updates](./client.md#list_ota_updates)
-- [list_outgoing_certificates](./client.md#list_outgoing_certificates)
-- [list_policies](./client.md#list_policies)
-- [list_policy_principals](./client.md#list_policy_principals)
-- [list_policy_versions](./client.md#list_policy_versions)
-- [list_principal_policies](./client.md#list_principal_policies)
-- [list_principal_things](./client.md#list_principal_things)
-- [list_provisioning_template_versions](./client.md#list_provisioning_template_versions)
-- [list_provisioning_templates](./client.md#list_provisioning_templates)
-- [list_role_aliases](./client.md#list_role_aliases)
-- [list_scheduled_audits](./client.md#list_scheduled_audits)
-- [list_security_profiles](./client.md#list_security_profiles)
-- [list_security_profiles_for_target](./client.md#list_security_profiles_for_target)
-- [list_streams](./client.md#list_streams)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_targets_for_policy](./client.md#list_targets_for_policy)
-- [list_targets_for_security_profile](./client.md#list_targets_for_security_profile)
-- [list_thing_groups](./client.md#list_thing_groups)
-- [list_thing_groups_for_thing](./client.md#list_thing_groups_for_thing)
-- [list_thing_principals](./client.md#list_thing_principals)
-- [list_thing_registration_task_reports](./client.md#list_thing_registration_task_reports)
-- [list_thing_registration_tasks](./client.md#list_thing_registration_tasks)
-- [list_thing_types](./client.md#list_thing_types)
-- [list_things](./client.md#list_things)
-- [list_things_in_billing_group](./client.md#list_things_in_billing_group)
-- [list_things_in_thing_group](./client.md#list_things_in_thing_group)
-- [list_topic_rule_destinations](./client.md#list_topic_rule_destinations)
-- [list_topic_rules](./client.md#list_topic_rules)
-- [list_v2_logging_levels](./client.md#list_v2_logging_levels)
-- [list_violation_events](./client.md#list_violation_events)
-- [put_verification_state_on_violation](./client.md#put_verification_state_on_violation)
-- [register_ca_certificate](./client.md#register_ca_certificate)
-- [register_certificate](./client.md#register_certificate)
-- [register_certificate_without_ca](./client.md#register_certificate_without_ca)
-- [register_thing](./client.md#register_thing)
-- [reject_certificate_transfer](./client.md#reject_certificate_transfer)
-- [remove_thing_from_billing_group](./client.md#remove_thing_from_billing_group)
-- [remove_thing_from_thing_group](./client.md#remove_thing_from_thing_group)
-- [replace_topic_rule](./client.md#replace_topic_rule)
-- [search_index](./client.md#search_index)
-- [set_default_authorizer](./client.md#set_default_authorizer)
-- [set_default_policy_version](./client.md#set_default_policy_version)
-- [set_logging_options](./client.md#set_logging_options)
-- [set_v2_logging_level](./client.md#set_v2_logging_level)
-- [set_v2_logging_options](./client.md#set_v2_logging_options)
-- [start_audit_mitigation_actions_task](./client.md#start_audit_mitigation_actions_task)
-- [start_detect_mitigation_actions_task](./client.md#start_detect_mitigation_actions_task)
-- [start_on_demand_audit_task](./client.md#start_on_demand_audit_task)
-- [start_thing_registration_task](./client.md#start_thing_registration_task)
-- [stop_thing_registration_task](./client.md#stop_thing_registration_task)
-- [tag_resource](./client.md#tag_resource)
-- [test_authorization](./client.md#test_authorization)
-- [test_invoke_authorizer](./client.md#test_invoke_authorizer)
-- [transfer_certificate](./client.md#transfer_certificate)
-- [untag_resource](./client.md#untag_resource)
-- [update_account_audit_configuration](./client.md#update_account_audit_configuration)
-- [update_audit_suppression](./client.md#update_audit_suppression)
-- [update_authorizer](./client.md#update_authorizer)
-- [update_billing_group](./client.md#update_billing_group)
-- [update_ca_certificate](./client.md#update_ca_certificate)
-- [update_certificate](./client.md#update_certificate)
-- [update_custom_metric](./client.md#update_custom_metric)
-- [update_dimension](./client.md#update_dimension)
-- [update_domain_configuration](./client.md#update_domain_configuration)
-- [update_dynamic_thing_group](./client.md#update_dynamic_thing_group)
-- [update_event_configurations](./client.md#update_event_configurations)
-- [update_fleet_metric](./client.md#update_fleet_metric)
-- [update_indexing_configuration](./client.md#update_indexing_configuration)
-- [update_job](./client.md#update_job)
-- [update_mitigation_action](./client.md#update_mitigation_action)
-- [update_provisioning_template](./client.md#update_provisioning_template)
-- [update_role_alias](./client.md#update_role_alias)
-- [update_scheduled_audit](./client.md#update_scheduled_audit)
-- [update_security_profile](./client.md#update_security_profile)
-- [update_stream](./client.md#update_stream)
-- [update_thing](./client.md#update_thing)
-- [update_thing_group](./client.md#update_thing_group)
-- [update_thing_groups_for_thing](./client.md#update_thing_groups_for_thing)
-- [update_topic_rule_destination](./client.md#update_topic_rule_destination)
-- [validate_security_profile_behaviors](./client.md#validate_security_profile_behaviors)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-IoTClient [exceptions](./client.md#exceptions)
-
-- CertificateConflictException
-- CertificateStateException
-- CertificateValidationException
-- ClientError
-- ConflictException
-- ConflictingResourceUpdateException
-- DeleteConflictException
-- IndexNotReadyException
-- InternalException
-- InternalFailureException
-- InternalServerException
-- InvalidAggregationException
-- InvalidQueryException
-- InvalidRequestException
-- InvalidResponseException
-- InvalidStateTransitionException
-- LimitExceededException
-- MalformedPolicyException
-- NotConfiguredException
-- RegistrationCodeValidationException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-- ResourceRegistrationFailureException
-- ServiceUnavailableException
-- SqlParseException
-- TaskAlreadyExistsException
-- ThrottlingException
-- TransferAlreadyCompletedException
-- TransferConflictException
-- UnauthorizedException
-- VersionConflictException
-- VersionsLimitExceededException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("iot").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("iot").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_iot.paginator import GetBehaviorModelTrainingSummariesPaginator, ...
+from mypy_boto3_iot.paginator import GetBehaviorModelTrainingSummariesPaginator
+
+def get_get_behavior_model_training_summaries_paginator() -> GetBehaviorModelTrainingSummariesPaginator:
+    return Session().client("iot").get_paginator("get_behavior_model_training_summaries"))
 ```
 
 - [GetBehaviorModelTrainingSummariesPaginator](./paginators.md#getbehaviormodeltrainingsummariespaginator)
@@ -434,16 +130,23 @@ from mypy_boto3_iot.paginator import GetBehaviorModelTrainingSummariesPaginator,
 - [ListV2LoggingLevelsPaginator](./paginators.md#listv2logginglevelspaginator)
 - [ListViolationEventsPaginator](./paginators.md#listviolationeventspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iot.literals import AbortActionType
 
-```python
-from mypy_boto3_iot.literals import AbortActionType, ...
+def get_value() -> AbortActionType:
+    return "CANCEL"
 ```
 
 - [AbortActionType](./literals.md#abortactiontype)
@@ -570,18 +273,22 @@ from mypy_boto3_iot.literals import AbortActionType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iot.type_defs import AbortConfigTypeDef
 
-```python
-from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
+def get_value() -> AbortConfigTypeDef:
+    return {
+        "criteriaList": ...,
+    }
 ```
 
 - [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
@@ -828,6 +535,7 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [FileLocationTypeDef](./type_defs.md#filelocationtypedef)
 - [FirehoseActionTypeDef](./type_defs.md#firehoseactiontypedef)
 - [FleetMetricNameAndArnTypeDef](./type_defs.md#fleetmetricnameandarntypedef)
+- [GetBehaviorModelTrainingSummariesRequestGetBehaviorModelTrainingSummariesPaginateTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesrequestgetbehaviormodeltrainingsummariespaginatetypedef)
 - [GetBehaviorModelTrainingSummariesRequestRequestTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesrequestrequesttypedef)
 - [GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef)
 - [GetBucketsAggregationRequestRequestTypeDef](./type_defs.md#getbucketsaggregationrequestrequesttypedef)
@@ -883,114 +591,167 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [KeyPairTypeDef](./type_defs.md#keypairtypedef)
 - [KinesisActionTypeDef](./type_defs.md#kinesisactiontypedef)
 - [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
+- [ListActiveViolationsRequestListActiveViolationsPaginateTypeDef](./type_defs.md#listactiveviolationsrequestlistactiveviolationspaginatetypedef)
 - [ListActiveViolationsRequestRequestTypeDef](./type_defs.md#listactiveviolationsrequestrequesttypedef)
 - [ListActiveViolationsResponseTypeDef](./type_defs.md#listactiveviolationsresponsetypedef)
+- [ListAttachedPoliciesRequestListAttachedPoliciesPaginateTypeDef](./type_defs.md#listattachedpoliciesrequestlistattachedpoliciespaginatetypedef)
 - [ListAttachedPoliciesRequestRequestTypeDef](./type_defs.md#listattachedpoliciesrequestrequesttypedef)
 - [ListAttachedPoliciesResponseTypeDef](./type_defs.md#listattachedpoliciesresponsetypedef)
+- [ListAuditFindingsRequestListAuditFindingsPaginateTypeDef](./type_defs.md#listauditfindingsrequestlistauditfindingspaginatetypedef)
 - [ListAuditFindingsRequestRequestTypeDef](./type_defs.md#listauditfindingsrequestrequesttypedef)
 - [ListAuditFindingsResponseTypeDef](./type_defs.md#listauditfindingsresponsetypedef)
+- [ListAuditMitigationActionsExecutionsRequestListAuditMitigationActionsExecutionsPaginateTypeDef](./type_defs.md#listauditmitigationactionsexecutionsrequestlistauditmitigationactionsexecutionspaginatetypedef)
 - [ListAuditMitigationActionsExecutionsRequestRequestTypeDef](./type_defs.md#listauditmitigationactionsexecutionsrequestrequesttypedef)
 - [ListAuditMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponsetypedef)
+- [ListAuditMitigationActionsTasksRequestListAuditMitigationActionsTasksPaginateTypeDef](./type_defs.md#listauditmitigationactionstasksrequestlistauditmitigationactionstaskspaginatetypedef)
 - [ListAuditMitigationActionsTasksRequestRequestTypeDef](./type_defs.md#listauditmitigationactionstasksrequestrequesttypedef)
 - [ListAuditMitigationActionsTasksResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponsetypedef)
+- [ListAuditSuppressionsRequestListAuditSuppressionsPaginateTypeDef](./type_defs.md#listauditsuppressionsrequestlistauditsuppressionspaginatetypedef)
 - [ListAuditSuppressionsRequestRequestTypeDef](./type_defs.md#listauditsuppressionsrequestrequesttypedef)
 - [ListAuditSuppressionsResponseTypeDef](./type_defs.md#listauditsuppressionsresponsetypedef)
+- [ListAuditTasksRequestListAuditTasksPaginateTypeDef](./type_defs.md#listaudittasksrequestlistaudittaskspaginatetypedef)
 - [ListAuditTasksRequestRequestTypeDef](./type_defs.md#listaudittasksrequestrequesttypedef)
 - [ListAuditTasksResponseTypeDef](./type_defs.md#listaudittasksresponsetypedef)
+- [ListAuthorizersRequestListAuthorizersPaginateTypeDef](./type_defs.md#listauthorizersrequestlistauthorizerspaginatetypedef)
 - [ListAuthorizersRequestRequestTypeDef](./type_defs.md#listauthorizersrequestrequesttypedef)
 - [ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef)
+- [ListBillingGroupsRequestListBillingGroupsPaginateTypeDef](./type_defs.md#listbillinggroupsrequestlistbillinggroupspaginatetypedef)
 - [ListBillingGroupsRequestRequestTypeDef](./type_defs.md#listbillinggroupsrequestrequesttypedef)
 - [ListBillingGroupsResponseTypeDef](./type_defs.md#listbillinggroupsresponsetypedef)
+- [ListCACertificatesRequestListCACertificatesPaginateTypeDef](./type_defs.md#listcacertificatesrequestlistcacertificatespaginatetypedef)
 - [ListCACertificatesRequestRequestTypeDef](./type_defs.md#listcacertificatesrequestrequesttypedef)
 - [ListCACertificatesResponseTypeDef](./type_defs.md#listcacertificatesresponsetypedef)
+- [ListCertificatesByCARequestListCertificatesByCAPaginateTypeDef](./type_defs.md#listcertificatesbycarequestlistcertificatesbycapaginatetypedef)
 - [ListCertificatesByCARequestRequestTypeDef](./type_defs.md#listcertificatesbycarequestrequesttypedef)
 - [ListCertificatesByCAResponseTypeDef](./type_defs.md#listcertificatesbycaresponsetypedef)
+- [ListCertificatesRequestListCertificatesPaginateTypeDef](./type_defs.md#listcertificatesrequestlistcertificatespaginatetypedef)
 - [ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef)
 - [ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef)
+- [ListCustomMetricsRequestListCustomMetricsPaginateTypeDef](./type_defs.md#listcustommetricsrequestlistcustommetricspaginatetypedef)
 - [ListCustomMetricsRequestRequestTypeDef](./type_defs.md#listcustommetricsrequestrequesttypedef)
 - [ListCustomMetricsResponseTypeDef](./type_defs.md#listcustommetricsresponsetypedef)
+- [ListDetectMitigationActionsExecutionsRequestListDetectMitigationActionsExecutionsPaginateTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsrequestlistdetectmitigationactionsexecutionspaginatetypedef)
 - [ListDetectMitigationActionsExecutionsRequestRequestTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsrequestrequesttypedef)
 - [ListDetectMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponsetypedef)
+- [ListDetectMitigationActionsTasksRequestListDetectMitigationActionsTasksPaginateTypeDef](./type_defs.md#listdetectmitigationactionstasksrequestlistdetectmitigationactionstaskspaginatetypedef)
 - [ListDetectMitigationActionsTasksRequestRequestTypeDef](./type_defs.md#listdetectmitigationactionstasksrequestrequesttypedef)
 - [ListDetectMitigationActionsTasksResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponsetypedef)
+- [ListDimensionsRequestListDimensionsPaginateTypeDef](./type_defs.md#listdimensionsrequestlistdimensionspaginatetypedef)
 - [ListDimensionsRequestRequestTypeDef](./type_defs.md#listdimensionsrequestrequesttypedef)
 - [ListDimensionsResponseTypeDef](./type_defs.md#listdimensionsresponsetypedef)
+- [ListDomainConfigurationsRequestListDomainConfigurationsPaginateTypeDef](./type_defs.md#listdomainconfigurationsrequestlistdomainconfigurationspaginatetypedef)
 - [ListDomainConfigurationsRequestRequestTypeDef](./type_defs.md#listdomainconfigurationsrequestrequesttypedef)
 - [ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef)
+- [ListFleetMetricsRequestListFleetMetricsPaginateTypeDef](./type_defs.md#listfleetmetricsrequestlistfleetmetricspaginatetypedef)
 - [ListFleetMetricsRequestRequestTypeDef](./type_defs.md#listfleetmetricsrequestrequesttypedef)
 - [ListFleetMetricsResponseTypeDef](./type_defs.md#listfleetmetricsresponsetypedef)
+- [ListIndicesRequestListIndicesPaginateTypeDef](./type_defs.md#listindicesrequestlistindicespaginatetypedef)
 - [ListIndicesRequestRequestTypeDef](./type_defs.md#listindicesrequestrequesttypedef)
 - [ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef)
+- [ListJobExecutionsForJobRequestListJobExecutionsForJobPaginateTypeDef](./type_defs.md#listjobexecutionsforjobrequestlistjobexecutionsforjobpaginatetypedef)
 - [ListJobExecutionsForJobRequestRequestTypeDef](./type_defs.md#listjobexecutionsforjobrequestrequesttypedef)
 - [ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef)
+- [ListJobExecutionsForThingRequestListJobExecutionsForThingPaginateTypeDef](./type_defs.md#listjobexecutionsforthingrequestlistjobexecutionsforthingpaginatetypedef)
 - [ListJobExecutionsForThingRequestRequestTypeDef](./type_defs.md#listjobexecutionsforthingrequestrequesttypedef)
 - [ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef)
+- [ListJobTemplatesRequestListJobTemplatesPaginateTypeDef](./type_defs.md#listjobtemplatesrequestlistjobtemplatespaginatetypedef)
 - [ListJobTemplatesRequestRequestTypeDef](./type_defs.md#listjobtemplatesrequestrequesttypedef)
 - [ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)
+- [ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef)
 - [ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef)
 - [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)
 - [ListManagedJobTemplatesRequestRequestTypeDef](./type_defs.md#listmanagedjobtemplatesrequestrequesttypedef)
 - [ListManagedJobTemplatesResponseTypeDef](./type_defs.md#listmanagedjobtemplatesresponsetypedef)
+- [ListMitigationActionsRequestListMitigationActionsPaginateTypeDef](./type_defs.md#listmitigationactionsrequestlistmitigationactionspaginatetypedef)
 - [ListMitigationActionsRequestRequestTypeDef](./type_defs.md#listmitigationactionsrequestrequesttypedef)
 - [ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef)
+- [ListOTAUpdatesRequestListOTAUpdatesPaginateTypeDef](./type_defs.md#listotaupdatesrequestlistotaupdatespaginatetypedef)
 - [ListOTAUpdatesRequestRequestTypeDef](./type_defs.md#listotaupdatesrequestrequesttypedef)
 - [ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef)
+- [ListOutgoingCertificatesRequestListOutgoingCertificatesPaginateTypeDef](./type_defs.md#listoutgoingcertificatesrequestlistoutgoingcertificatespaginatetypedef)
 - [ListOutgoingCertificatesRequestRequestTypeDef](./type_defs.md#listoutgoingcertificatesrequestrequesttypedef)
 - [ListOutgoingCertificatesResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponsetypedef)
+- [ListPoliciesRequestListPoliciesPaginateTypeDef](./type_defs.md#listpoliciesrequestlistpoliciespaginatetypedef)
 - [ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef)
 - [ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)
+- [ListPolicyPrincipalsRequestListPolicyPrincipalsPaginateTypeDef](./type_defs.md#listpolicyprincipalsrequestlistpolicyprincipalspaginatetypedef)
 - [ListPolicyPrincipalsRequestRequestTypeDef](./type_defs.md#listpolicyprincipalsrequestrequesttypedef)
 - [ListPolicyPrincipalsResponseTypeDef](./type_defs.md#listpolicyprincipalsresponsetypedef)
 - [ListPolicyVersionsRequestRequestTypeDef](./type_defs.md#listpolicyversionsrequestrequesttypedef)
 - [ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef)
+- [ListPrincipalPoliciesRequestListPrincipalPoliciesPaginateTypeDef](./type_defs.md#listprincipalpoliciesrequestlistprincipalpoliciespaginatetypedef)
 - [ListPrincipalPoliciesRequestRequestTypeDef](./type_defs.md#listprincipalpoliciesrequestrequesttypedef)
 - [ListPrincipalPoliciesResponseTypeDef](./type_defs.md#listprincipalpoliciesresponsetypedef)
+- [ListPrincipalThingsRequestListPrincipalThingsPaginateTypeDef](./type_defs.md#listprincipalthingsrequestlistprincipalthingspaginatetypedef)
 - [ListPrincipalThingsRequestRequestTypeDef](./type_defs.md#listprincipalthingsrequestrequesttypedef)
 - [ListPrincipalThingsResponseTypeDef](./type_defs.md#listprincipalthingsresponsetypedef)
+- [ListProvisioningTemplateVersionsRequestListProvisioningTemplateVersionsPaginateTypeDef](./type_defs.md#listprovisioningtemplateversionsrequestlistprovisioningtemplateversionspaginatetypedef)
 - [ListProvisioningTemplateVersionsRequestRequestTypeDef](./type_defs.md#listprovisioningtemplateversionsrequestrequesttypedef)
 - [ListProvisioningTemplateVersionsResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponsetypedef)
+- [ListProvisioningTemplatesRequestListProvisioningTemplatesPaginateTypeDef](./type_defs.md#listprovisioningtemplatesrequestlistprovisioningtemplatespaginatetypedef)
 - [ListProvisioningTemplatesRequestRequestTypeDef](./type_defs.md#listprovisioningtemplatesrequestrequesttypedef)
 - [ListProvisioningTemplatesResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponsetypedef)
+- [ListRoleAliasesRequestListRoleAliasesPaginateTypeDef](./type_defs.md#listrolealiasesrequestlistrolealiasespaginatetypedef)
 - [ListRoleAliasesRequestRequestTypeDef](./type_defs.md#listrolealiasesrequestrequesttypedef)
 - [ListRoleAliasesResponseTypeDef](./type_defs.md#listrolealiasesresponsetypedef)
+- [ListScheduledAuditsRequestListScheduledAuditsPaginateTypeDef](./type_defs.md#listscheduledauditsrequestlistscheduledauditspaginatetypedef)
 - [ListScheduledAuditsRequestRequestTypeDef](./type_defs.md#listscheduledauditsrequestrequesttypedef)
 - [ListScheduledAuditsResponseTypeDef](./type_defs.md#listscheduledauditsresponsetypedef)
+- [ListSecurityProfilesForTargetRequestListSecurityProfilesForTargetPaginateTypeDef](./type_defs.md#listsecurityprofilesfortargetrequestlistsecurityprofilesfortargetpaginatetypedef)
 - [ListSecurityProfilesForTargetRequestRequestTypeDef](./type_defs.md#listsecurityprofilesfortargetrequestrequesttypedef)
 - [ListSecurityProfilesForTargetResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponsetypedef)
+- [ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef](./type_defs.md#listsecurityprofilesrequestlistsecurityprofilespaginatetypedef)
 - [ListSecurityProfilesRequestRequestTypeDef](./type_defs.md#listsecurityprofilesrequestrequesttypedef)
 - [ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef)
+- [ListStreamsRequestListStreamsPaginateTypeDef](./type_defs.md#liststreamsrequestliststreamspaginatetypedef)
 - [ListStreamsRequestRequestTypeDef](./type_defs.md#liststreamsrequestrequesttypedef)
 - [ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef](./type_defs.md#listtargetsforpolicyrequestlisttargetsforpolicypaginatetypedef)
 - [ListTargetsForPolicyRequestRequestTypeDef](./type_defs.md#listtargetsforpolicyrequestrequesttypedef)
 - [ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef)
+- [ListTargetsForSecurityProfileRequestListTargetsForSecurityProfilePaginateTypeDef](./type_defs.md#listtargetsforsecurityprofilerequestlisttargetsforsecurityprofilepaginatetypedef)
 - [ListTargetsForSecurityProfileRequestRequestTypeDef](./type_defs.md#listtargetsforsecurityprofilerequestrequesttypedef)
 - [ListTargetsForSecurityProfileResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponsetypedef)
+- [ListThingGroupsForThingRequestListThingGroupsForThingPaginateTypeDef](./type_defs.md#listthinggroupsforthingrequestlistthinggroupsforthingpaginatetypedef)
 - [ListThingGroupsForThingRequestRequestTypeDef](./type_defs.md#listthinggroupsforthingrequestrequesttypedef)
 - [ListThingGroupsForThingResponseTypeDef](./type_defs.md#listthinggroupsforthingresponsetypedef)
+- [ListThingGroupsRequestListThingGroupsPaginateTypeDef](./type_defs.md#listthinggroupsrequestlistthinggroupspaginatetypedef)
 - [ListThingGroupsRequestRequestTypeDef](./type_defs.md#listthinggroupsrequestrequesttypedef)
 - [ListThingGroupsResponseTypeDef](./type_defs.md#listthinggroupsresponsetypedef)
+- [ListThingPrincipalsRequestListThingPrincipalsPaginateTypeDef](./type_defs.md#listthingprincipalsrequestlistthingprincipalspaginatetypedef)
 - [ListThingPrincipalsRequestRequestTypeDef](./type_defs.md#listthingprincipalsrequestrequesttypedef)
 - [ListThingPrincipalsResponseTypeDef](./type_defs.md#listthingprincipalsresponsetypedef)
+- [ListThingRegistrationTaskReportsRequestListThingRegistrationTaskReportsPaginateTypeDef](./type_defs.md#listthingregistrationtaskreportsrequestlistthingregistrationtaskreportspaginatetypedef)
 - [ListThingRegistrationTaskReportsRequestRequestTypeDef](./type_defs.md#listthingregistrationtaskreportsrequestrequesttypedef)
 - [ListThingRegistrationTaskReportsResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponsetypedef)
+- [ListThingRegistrationTasksRequestListThingRegistrationTasksPaginateTypeDef](./type_defs.md#listthingregistrationtasksrequestlistthingregistrationtaskspaginatetypedef)
 - [ListThingRegistrationTasksRequestRequestTypeDef](./type_defs.md#listthingregistrationtasksrequestrequesttypedef)
 - [ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef)
+- [ListThingTypesRequestListThingTypesPaginateTypeDef](./type_defs.md#listthingtypesrequestlistthingtypespaginatetypedef)
 - [ListThingTypesRequestRequestTypeDef](./type_defs.md#listthingtypesrequestrequesttypedef)
 - [ListThingTypesResponseTypeDef](./type_defs.md#listthingtypesresponsetypedef)
+- [ListThingsInBillingGroupRequestListThingsInBillingGroupPaginateTypeDef](./type_defs.md#listthingsinbillinggrouprequestlistthingsinbillinggrouppaginatetypedef)
 - [ListThingsInBillingGroupRequestRequestTypeDef](./type_defs.md#listthingsinbillinggrouprequestrequesttypedef)
 - [ListThingsInBillingGroupResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponsetypedef)
+- [ListThingsInThingGroupRequestListThingsInThingGroupPaginateTypeDef](./type_defs.md#listthingsinthinggrouprequestlistthingsinthinggrouppaginatetypedef)
 - [ListThingsInThingGroupRequestRequestTypeDef](./type_defs.md#listthingsinthinggrouprequestrequesttypedef)
 - [ListThingsInThingGroupResponseTypeDef](./type_defs.md#listthingsinthinggroupresponsetypedef)
+- [ListThingsRequestListThingsPaginateTypeDef](./type_defs.md#listthingsrequestlistthingspaginatetypedef)
 - [ListThingsRequestRequestTypeDef](./type_defs.md#listthingsrequestrequesttypedef)
 - [ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef)
+- [ListTopicRuleDestinationsRequestListTopicRuleDestinationsPaginateTypeDef](./type_defs.md#listtopicruledestinationsrequestlisttopicruledestinationspaginatetypedef)
 - [ListTopicRuleDestinationsRequestRequestTypeDef](./type_defs.md#listtopicruledestinationsrequestrequesttypedef)
 - [ListTopicRuleDestinationsResponseTypeDef](./type_defs.md#listtopicruledestinationsresponsetypedef)
+- [ListTopicRulesRequestListTopicRulesPaginateTypeDef](./type_defs.md#listtopicrulesrequestlisttopicrulespaginatetypedef)
 - [ListTopicRulesRequestRequestTypeDef](./type_defs.md#listtopicrulesrequestrequesttypedef)
 - [ListTopicRulesResponseTypeDef](./type_defs.md#listtopicrulesresponsetypedef)
+- [ListV2LoggingLevelsRequestListV2LoggingLevelsPaginateTypeDef](./type_defs.md#listv2logginglevelsrequestlistv2logginglevelspaginatetypedef)
 - [ListV2LoggingLevelsRequestRequestTypeDef](./type_defs.md#listv2logginglevelsrequestrequesttypedef)
 - [ListV2LoggingLevelsResponseTypeDef](./type_defs.md#listv2logginglevelsresponsetypedef)
+- [ListViolationEventsRequestListViolationEventsPaginateTypeDef](./type_defs.md#listviolationeventsrequestlistviolationeventspaginatetypedef)
 - [ListViolationEventsRequestRequestTypeDef](./type_defs.md#listviolationeventsrequestrequesttypedef)
 - [ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef)
 - [LogTargetConfigurationTypeDef](./type_defs.md#logtargetconfigurationtypedef)
@@ -1165,3 +926,4 @@ from mypy_boto3_iot.type_defs import AbortConfigTypeDef, ...
 - [VpcDestinationConfigurationTypeDef](./type_defs.md#vpcdestinationconfigurationtypedef)
 - [VpcDestinationPropertiesTypeDef](./type_defs.md#vpcdestinationpropertiestypedef)
 - [VpcDestinationSummaryTypeDef](./type_defs.md#vpcdestinationsummarytypedef)
+

@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-ses-module"></a>
-
-# Type annotations for boto3 SES module
+#  SES module
 
 > [Index](../README.md) > SES
 
-Auto-generated documentation for
-[SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
-type annotations stubs module
-[mypy-boto3-ses](https://pypi.org/project/mypy-boto3-ses/).
+!!! note ""
 
-- [Type annotations for boto3 SES module](#type-annotations-for-boto3-ses-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SESClient](#sesclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
+    type annotations stubs module [mypy-boto3-ses](https://pypi.org/project/mypy-boto3-ses/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SES`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ses]'
 python -m pip install mypy-boto3-ses
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,158 +42,37 @@ python -m pip install mypy-boto3-ses
 python -m pip uninstall -y mypy-boto3-ses
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="sesclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SESClient
 
-Type annotations for `boto3.client("ses")` as [SESClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ses")` as [SESClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ses.client import SESClient
+
+def get_client() -> SESClient:
+    return Session().cleint("ses")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [clone_receipt_rule_set](./client.md#clone_receipt_rule_set)
-- [create_configuration_set](./client.md#create_configuration_set)
-- [create_configuration_set_event_destination](./client.md#create_configuration_set_event_destination)
-- [create_configuration_set_tracking_options](./client.md#create_configuration_set_tracking_options)
-- [create_custom_verification_email_template](./client.md#create_custom_verification_email_template)
-- [create_receipt_filter](./client.md#create_receipt_filter)
-- [create_receipt_rule](./client.md#create_receipt_rule)
-- [create_receipt_rule_set](./client.md#create_receipt_rule_set)
-- [create_template](./client.md#create_template)
-- [delete_configuration_set](./client.md#delete_configuration_set)
-- [delete_configuration_set_event_destination](./client.md#delete_configuration_set_event_destination)
-- [delete_configuration_set_tracking_options](./client.md#delete_configuration_set_tracking_options)
-- [delete_custom_verification_email_template](./client.md#delete_custom_verification_email_template)
-- [delete_identity](./client.md#delete_identity)
-- [delete_identity_policy](./client.md#delete_identity_policy)
-- [delete_receipt_filter](./client.md#delete_receipt_filter)
-- [delete_receipt_rule](./client.md#delete_receipt_rule)
-- [delete_receipt_rule_set](./client.md#delete_receipt_rule_set)
-- [delete_template](./client.md#delete_template)
-- [delete_verified_email_address](./client.md#delete_verified_email_address)
-- [describe_active_receipt_rule_set](./client.md#describe_active_receipt_rule_set)
-- [describe_configuration_set](./client.md#describe_configuration_set)
-- [describe_receipt_rule](./client.md#describe_receipt_rule)
-- [describe_receipt_rule_set](./client.md#describe_receipt_rule_set)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_account_sending_enabled](./client.md#get_account_sending_enabled)
-- [get_custom_verification_email_template](./client.md#get_custom_verification_email_template)
-- [get_identity_dkim_attributes](./client.md#get_identity_dkim_attributes)
-- [get_identity_mail_from_domain_attributes](./client.md#get_identity_mail_from_domain_attributes)
-- [get_identity_notification_attributes](./client.md#get_identity_notification_attributes)
-- [get_identity_policies](./client.md#get_identity_policies)
-- [get_identity_verification_attributes](./client.md#get_identity_verification_attributes)
-- [get_paginator](./client.md#get_paginator)
-- [get_send_quota](./client.md#get_send_quota)
-- [get_send_statistics](./client.md#get_send_statistics)
-- [get_template](./client.md#get_template)
-- [get_waiter](./client.md#get_waiter)
-- [list_configuration_sets](./client.md#list_configuration_sets)
-- [list_custom_verification_email_templates](./client.md#list_custom_verification_email_templates)
-- [list_identities](./client.md#list_identities)
-- [list_identity_policies](./client.md#list_identity_policies)
-- [list_receipt_filters](./client.md#list_receipt_filters)
-- [list_receipt_rule_sets](./client.md#list_receipt_rule_sets)
-- [list_templates](./client.md#list_templates)
-- [list_verified_email_addresses](./client.md#list_verified_email_addresses)
-- [put_configuration_set_delivery_options](./client.md#put_configuration_set_delivery_options)
-- [put_identity_policy](./client.md#put_identity_policy)
-- [reorder_receipt_rule_set](./client.md#reorder_receipt_rule_set)
-- [send_bounce](./client.md#send_bounce)
-- [send_bulk_templated_email](./client.md#send_bulk_templated_email)
-- [send_custom_verification_email](./client.md#send_custom_verification_email)
-- [send_email](./client.md#send_email)
-- [send_raw_email](./client.md#send_raw_email)
-- [send_templated_email](./client.md#send_templated_email)
-- [set_active_receipt_rule_set](./client.md#set_active_receipt_rule_set)
-- [set_identity_dkim_enabled](./client.md#set_identity_dkim_enabled)
-- [set_identity_feedback_forwarding_enabled](./client.md#set_identity_feedback_forwarding_enabled)
-- [set_identity_headers_in_notifications_enabled](./client.md#set_identity_headers_in_notifications_enabled)
-- [set_identity_mail_from_domain](./client.md#set_identity_mail_from_domain)
-- [set_identity_notification_topic](./client.md#set_identity_notification_topic)
-- [set_receipt_rule_position](./client.md#set_receipt_rule_position)
-- [test_render_template](./client.md#test_render_template)
-- [update_account_sending_enabled](./client.md#update_account_sending_enabled)
-- [update_configuration_set_event_destination](./client.md#update_configuration_set_event_destination)
-- [update_configuration_set_reputation_metrics_enabled](./client.md#update_configuration_set_reputation_metrics_enabled)
-- [update_configuration_set_sending_enabled](./client.md#update_configuration_set_sending_enabled)
-- [update_configuration_set_tracking_options](./client.md#update_configuration_set_tracking_options)
-- [update_custom_verification_email_template](./client.md#update_custom_verification_email_template)
-- [update_receipt_rule](./client.md#update_receipt_rule)
-- [update_template](./client.md#update_template)
-- [verify_domain_dkim](./client.md#verify_domain_dkim)
-- [verify_domain_identity](./client.md#verify_domain_identity)
-- [verify_email_address](./client.md#verify_email_address)
-- [verify_email_identity](./client.md#verify_email_identity)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SESClient [exceptions](./client.md#exceptions)
-
-- AccountSendingPausedException
-- AlreadyExistsException
-- CannotDeleteException
-- ClientError
-- ConfigurationSetAlreadyExistsException
-- ConfigurationSetDoesNotExistException
-- ConfigurationSetSendingPausedException
-- CustomVerificationEmailInvalidContentException
-- CustomVerificationEmailTemplateAlreadyExistsException
-- CustomVerificationEmailTemplateDoesNotExistException
-- EventDestinationAlreadyExistsException
-- EventDestinationDoesNotExistException
-- FromEmailAddressNotVerifiedException
-- InvalidCloudWatchDestinationException
-- InvalidConfigurationSetException
-- InvalidDeliveryOptionsException
-- InvalidFirehoseDestinationException
-- InvalidLambdaFunctionException
-- InvalidPolicyException
-- InvalidRenderingParameterException
-- InvalidS3ConfigurationException
-- InvalidSNSDestinationException
-- InvalidSnsTopicException
-- InvalidTemplateException
-- InvalidTrackingOptionsException
-- LimitExceededException
-- MailFromDomainNotVerifiedException
-- MessageRejected
-- MissingRenderingAttributeException
-- ProductionAccessNotGrantedException
-- RuleDoesNotExistException
-- RuleSetDoesNotExistException
-- TemplateDoesNotExistException
-- TrackingOptionsAlreadyExistsException
-- TrackingOptionsDoesNotExistException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("ses").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("ses").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ses.paginator import ListConfigurationSetsPaginator, ...
+from mypy_boto3_ses.paginator import ListConfigurationSetsPaginator
+
+def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
+    return Session().client("ses").get_paginator("list_configuration_sets"))
 ```
 
 - [ListConfigurationSetsPaginator](./paginators.md#listconfigurationsetspaginator)
@@ -225,31 +81,40 @@ from mypy_boto3_ses.paginator import ListConfigurationSetsPaginator, ...
 - [ListReceiptRuleSetsPaginator](./paginators.md#listreceiptrulesetspaginator)
 - [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("ses").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("ses").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ses.waiter import IdentityExistsWaiter, ...
+from mypy_boto3_ses.waiter import IdentityExistsWaiter
+
+def get_identity_exists_waiter() -> IdentityExistsWaiter:
+    return Session().client("ses").get_waiter("identity_exists")
 ```
 
 - [IdentityExistsWaiter](./waiters.md#identityexistswaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ses.literals import BehaviorOnMXFailureType
 
-```python
-from mypy_boto3_ses.literals import BehaviorOnMXFailureType, ...
+def get_value() -> BehaviorOnMXFailureType:
+    return "RejectMessage"
 ```
 
 - [BehaviorOnMXFailureType](./literals.md#behavioronmxfailuretype)
@@ -279,18 +144,23 @@ from mypy_boto3_ses.literals import BehaviorOnMXFailureType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ses.type_defs import AddHeaderActionTypeDef
 
-```python
-from mypy_boto3_ses.type_defs import AddHeaderActionTypeDef, ...
+def get_value() -> AddHeaderActionTypeDef:
+    return {
+        "HeaderName": ...,
+        "HeaderValue": ...,
+    }
 ```
 
 - [AddHeaderActionTypeDef](./type_defs.md#addheaderactiontypedef)
@@ -346,6 +216,7 @@ from mypy_boto3_ses.type_defs import AddHeaderActionTypeDef, ...
 - [GetIdentityNotificationAttributesResponseTypeDef](./type_defs.md#getidentitynotificationattributesresponsetypedef)
 - [GetIdentityPoliciesRequestRequestTypeDef](./type_defs.md#getidentitypoliciesrequestrequesttypedef)
 - [GetIdentityPoliciesResponseTypeDef](./type_defs.md#getidentitypoliciesresponsetypedef)
+- [GetIdentityVerificationAttributesRequestIdentityExistsWaitTypeDef](./type_defs.md#getidentityverificationattributesrequestidentityexistswaittypedef)
 - [GetIdentityVerificationAttributesRequestRequestTypeDef](./type_defs.md#getidentityverificationattributesrequestrequesttypedef)
 - [GetIdentityVerificationAttributesResponseTypeDef](./type_defs.md#getidentityverificationattributesresponsetypedef)
 - [GetSendQuotaResponseTypeDef](./type_defs.md#getsendquotaresponsetypedef)
@@ -358,17 +229,22 @@ from mypy_boto3_ses.type_defs import AddHeaderActionTypeDef, ...
 - [IdentityVerificationAttributesTypeDef](./type_defs.md#identityverificationattributestypedef)
 - [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
 - [LambdaActionTypeDef](./type_defs.md#lambdaactiontypedef)
+- [ListConfigurationSetsRequestListConfigurationSetsPaginateTypeDef](./type_defs.md#listconfigurationsetsrequestlistconfigurationsetspaginatetypedef)
 - [ListConfigurationSetsRequestRequestTypeDef](./type_defs.md#listconfigurationsetsrequestrequesttypedef)
 - [ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef)
+- [ListCustomVerificationEmailTemplatesRequestListCustomVerificationEmailTemplatesPaginateTypeDef](./type_defs.md#listcustomverificationemailtemplatesrequestlistcustomverificationemailtemplatespaginatetypedef)
 - [ListCustomVerificationEmailTemplatesRequestRequestTypeDef](./type_defs.md#listcustomverificationemailtemplatesrequestrequesttypedef)
 - [ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef)
+- [ListIdentitiesRequestListIdentitiesPaginateTypeDef](./type_defs.md#listidentitiesrequestlistidentitiespaginatetypedef)
 - [ListIdentitiesRequestRequestTypeDef](./type_defs.md#listidentitiesrequestrequesttypedef)
 - [ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef)
 - [ListIdentityPoliciesRequestRequestTypeDef](./type_defs.md#listidentitypoliciesrequestrequesttypedef)
 - [ListIdentityPoliciesResponseTypeDef](./type_defs.md#listidentitypoliciesresponsetypedef)
 - [ListReceiptFiltersResponseTypeDef](./type_defs.md#listreceiptfiltersresponsetypedef)
+- [ListReceiptRuleSetsRequestListReceiptRuleSetsPaginateTypeDef](./type_defs.md#listreceiptrulesetsrequestlistreceiptrulesetspaginatetypedef)
 - [ListReceiptRuleSetsRequestRequestTypeDef](./type_defs.md#listreceiptrulesetsrequestrequesttypedef)
 - [ListReceiptRuleSetsResponseTypeDef](./type_defs.md#listreceiptrulesetsresponsetypedef)
+- [ListTemplatesRequestListTemplatesPaginateTypeDef](./type_defs.md#listtemplatesrequestlisttemplatespaginatetypedef)
 - [ListTemplatesRequestRequestTypeDef](./type_defs.md#listtemplatesrequestrequesttypedef)
 - [ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef)
 - [ListVerifiedEmailAddressesResponseTypeDef](./type_defs.md#listverifiedemailaddressesresponsetypedef)
@@ -433,3 +309,4 @@ from mypy_boto3_ses.type_defs import AddHeaderActionTypeDef, ...
 - [VerifyEmailIdentityRequestRequestTypeDef](./type_defs.md#verifyemailidentityrequestrequesttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WorkmailActionTypeDef](./type_defs.md#workmailactiontypedef)
+

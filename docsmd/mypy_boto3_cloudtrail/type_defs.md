@@ -1,1262 +1,1673 @@
-<a id="typed-dictionaries-for-boto3-cloudtrail-module"></a>
-
-# Typed dictionaries for boto3 CloudTrail module
+# Typed dictionaries
 
 > [Index](../README.md) > [CloudTrail](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
-type annotations stubs module
-[mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CloudTrail module](#typed-dictionaries-for-boto3-cloudtrail-module)
-  - [AddTagsRequestRequestTypeDef](#addtagsrequestrequesttypedef)
-  - [AdvancedEventSelectorTypeDef](#advancedeventselectortypedef)
-  - [AdvancedFieldSelectorTypeDef](#advancedfieldselectortypedef)
-  - [CancelQueryRequestRequestTypeDef](#cancelqueryrequestrequesttypedef)
-  - [CancelQueryResponseTypeDef](#cancelqueryresponsetypedef)
-  - [CreateEventDataStoreRequestRequestTypeDef](#createeventdatastorerequestrequesttypedef)
-  - [CreateEventDataStoreResponseTypeDef](#createeventdatastoreresponsetypedef)
-  - [CreateTrailRequestRequestTypeDef](#createtrailrequestrequesttypedef)
-  - [CreateTrailResponseTypeDef](#createtrailresponsetypedef)
-  - [DataResourceTypeDef](#dataresourcetypedef)
-  - [DeleteEventDataStoreRequestRequestTypeDef](#deleteeventdatastorerequestrequesttypedef)
-  - [DeleteTrailRequestRequestTypeDef](#deletetrailrequestrequesttypedef)
-  - [DescribeQueryRequestRequestTypeDef](#describequeryrequestrequesttypedef)
-  - [DescribeQueryResponseTypeDef](#describequeryresponsetypedef)
-  - [DescribeTrailsRequestRequestTypeDef](#describetrailsrequestrequesttypedef)
-  - [DescribeTrailsResponseTypeDef](#describetrailsresponsetypedef)
-  - [EventDataStoreTypeDef](#eventdatastoretypedef)
-  - [EventSelectorTypeDef](#eventselectortypedef)
-  - [EventTypeDef](#eventtypedef)
-  - [GetEventDataStoreRequestRequestTypeDef](#geteventdatastorerequestrequesttypedef)
-  - [GetEventDataStoreResponseTypeDef](#geteventdatastoreresponsetypedef)
-  - [GetEventSelectorsRequestRequestTypeDef](#geteventselectorsrequestrequesttypedef)
-  - [GetEventSelectorsResponseTypeDef](#geteventselectorsresponsetypedef)
-  - [GetInsightSelectorsRequestRequestTypeDef](#getinsightselectorsrequestrequesttypedef)
-  - [GetInsightSelectorsResponseTypeDef](#getinsightselectorsresponsetypedef)
-  - [GetQueryResultsRequestRequestTypeDef](#getqueryresultsrequestrequesttypedef)
-  - [GetQueryResultsResponseTypeDef](#getqueryresultsresponsetypedef)
-  - [GetTrailRequestRequestTypeDef](#gettrailrequestrequesttypedef)
-  - [GetTrailResponseTypeDef](#gettrailresponsetypedef)
-  - [GetTrailStatusRequestRequestTypeDef](#gettrailstatusrequestrequesttypedef)
-  - [GetTrailStatusResponseTypeDef](#gettrailstatusresponsetypedef)
-  - [InsightSelectorTypeDef](#insightselectortypedef)
-  - [ListEventDataStoresRequestRequestTypeDef](#listeventdatastoresrequestrequesttypedef)
-  - [ListEventDataStoresResponseTypeDef](#listeventdatastoresresponsetypedef)
-  - [ListPublicKeysRequestRequestTypeDef](#listpublickeysrequestrequesttypedef)
-  - [ListPublicKeysResponseTypeDef](#listpublickeysresponsetypedef)
-  - [ListQueriesRequestRequestTypeDef](#listqueriesrequestrequesttypedef)
-  - [ListQueriesResponseTypeDef](#listqueriesresponsetypedef)
-  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
-  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
-  - [ListTrailsRequestRequestTypeDef](#listtrailsrequestrequesttypedef)
-  - [ListTrailsResponseTypeDef](#listtrailsresponsetypedef)
-  - [LookupAttributeTypeDef](#lookupattributetypedef)
-  - [LookupEventsRequestRequestTypeDef](#lookupeventsrequestrequesttypedef)
-  - [LookupEventsResponseTypeDef](#lookupeventsresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PublicKeyTypeDef](#publickeytypedef)
-  - [PutEventSelectorsRequestRequestTypeDef](#puteventselectorsrequestrequesttypedef)
-  - [PutEventSelectorsResponseTypeDef](#puteventselectorsresponsetypedef)
-  - [PutInsightSelectorsRequestRequestTypeDef](#putinsightselectorsrequestrequesttypedef)
-  - [PutInsightSelectorsResponseTypeDef](#putinsightselectorsresponsetypedef)
-  - [QueryStatisticsForDescribeQueryTypeDef](#querystatisticsfordescribequerytypedef)
-  - [QueryStatisticsTypeDef](#querystatisticstypedef)
-  - [QueryTypeDef](#querytypedef)
-  - [RemoveTagsRequestRequestTypeDef](#removetagsrequestrequesttypedef)
-  - [ResourceTagTypeDef](#resourcetagtypedef)
-  - [ResourceTypeDef](#resourcetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreEventDataStoreRequestRequestTypeDef](#restoreeventdatastorerequestrequesttypedef)
-  - [RestoreEventDataStoreResponseTypeDef](#restoreeventdatastoreresponsetypedef)
-  - [StartLoggingRequestRequestTypeDef](#startloggingrequestrequesttypedef)
-  - [StartQueryRequestRequestTypeDef](#startqueryrequestrequesttypedef)
-  - [StartQueryResponseTypeDef](#startqueryresponsetypedef)
-  - [StopLoggingRequestRequestTypeDef](#stoploggingrequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TrailInfoTypeDef](#trailinfotypedef)
-  - [TrailTypeDef](#trailtypedef)
-  - [UpdateEventDataStoreRequestRequestTypeDef](#updateeventdatastorerequestrequesttypedef)
-  - [UpdateEventDataStoreResponseTypeDef](#updateeventdatastoreresponsetypedef)
-  - [UpdateTrailRequestRequestTypeDef](#updatetrailrequestrequesttypedef)
-  - [UpdateTrailResponseTypeDef](#updatetrailresponsetypedef)
-
-<a id="addtagsrequestrequesttypedef"></a>
+    Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+    type annotations stubs module [mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 ## AddTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import AddTagsRequestRequestTypeDef
+
+def get_value() -> AddTagsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "TagsList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    TagsList: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceId`: `str`
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="advancedeventselectortypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AdvancedEventSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import AdvancedEventSelectorTypeDef
+
+def get_value() -> AdvancedEventSelectorTypeDef:
+    return {
+        "FieldSelectors": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdvancedEventSelectorTypeDef(TypedDict):
+    FieldSelectors: Sequence[AdvancedFieldSelectorTypeDef],  # (1)
+    Name: NotRequired[str],
+```
 
-- `FieldSelectors`:
-  `Sequence`\[[AdvancedFieldSelectorTypeDef](./type_defs.md#advancedfieldselectortypedef)\]
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="advancedfieldselectortypedef"></a>
-
+1. See [:material-code-braces: AdvancedFieldSelectorTypeDef](./type_defs.md#advancedfieldselectortypedef) 
 ## AdvancedFieldSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import AdvancedFieldSelectorTypeDef
+
+def get_value() -> AdvancedFieldSelectorTypeDef:
+    return {
+        "Field": ...,
+    }
 ```
 
-Required fields:
-
-- `Field`: `str`
-
-Optional fields:
-
-- `Equals`: `Sequence`\[`str`\]
-- `StartsWith`: `Sequence`\[`str`\]
-- `EndsWith`: `Sequence`\[`str`\]
-- `NotEquals`: `Sequence`\[`str`\]
-- `NotStartsWith`: `Sequence`\[`str`\]
-- `NotEndsWith`: `Sequence`\[`str`\]
-
-<a id="cancelqueryrequestrequesttypedef"></a>
+```python title="Definition"
+class AdvancedFieldSelectorTypeDef(TypedDict):
+    Field: str,
+    Equals: NotRequired[Sequence[str]],
+    StartsWith: NotRequired[Sequence[str]],
+    EndsWith: NotRequired[Sequence[str]],
+    NotEquals: NotRequired[Sequence[str]],
+    NotStartsWith: NotRequired[Sequence[str]],
+    NotEndsWith: NotRequired[Sequence[str]],
+```
 
 ## CancelQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import CancelQueryRequestRequestTypeDef
+
+def get_value() -> CancelQueryRequestRequestTypeDef:
+    return {
+        "EventDataStore": ...,
+        "QueryId": ...,
+    }
 ```
 
-Required fields:
-
-- `EventDataStore`: `str`
-- `QueryId`: `str`
-
-<a id="cancelqueryresponsetypedef"></a>
+```python title="Definition"
+class CancelQueryRequestRequestTypeDef(TypedDict):
+    EventDataStore: str,
+    QueryId: str,
+```
 
 ## CancelQueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import CancelQueryResponseTypeDef
+
+def get_value() -> CancelQueryResponseTypeDef:
+    return {
+        "QueryId": ...,
+        "QueryStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelQueryResponseTypeDef(TypedDict):
+    QueryId: str,
+    QueryStatus: QueryStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QueryId`: `str`
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createeventdatastorerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEventDataStoreRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import CreateEventDataStoreRequestRequestTypeDef
+
+def get_value() -> CreateEventDataStoreRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventDataStoreRequestRequestTypeDef(TypedDict):
+    Name: str,
+    AdvancedEventSelectors: NotRequired[Sequence[AdvancedEventSelectorTypeDef]],  # (1)
+    MultiRegionEnabled: NotRequired[bool],
+    OrganizationEnabled: NotRequired[bool],
+    RetentionPeriod: NotRequired[int],
+    TerminationProtectionEnabled: NotRequired[bool],
+    TagsList: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createeventdatastoreresponsetypedef"></a>
-
+1. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEventDataStoreResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import CreateEventDataStoreResponseTypeDef
+
+def get_value() -> CreateEventDataStoreResponseTypeDef:
+    return {
+        "EventDataStoreArn": ...,
+        "Name": ...,
+        "Status": ...,
+        "AdvancedEventSelectors": ...,
+        "MultiRegionEnabled": ...,
+        "OrganizationEnabled": ...,
+        "RetentionPeriod": ...,
+        "TerminationProtectionEnabled": ...,
+        "TagsList": ...,
+        "CreatedTimestamp": ...,
+        "UpdatedTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventDataStoreResponseTypeDef(TypedDict):
+    EventDataStoreArn: str,
+    Name: str,
+    Status: EventDataStoreStatusType,  # (1)
+    AdvancedEventSelectors: List[AdvancedEventSelectorTypeDef],  # (2)
+    MultiRegionEnabled: bool,
+    OrganizationEnabled: bool,
+    RetentionPeriod: int,
+    TerminationProtectionEnabled: bool,
+    TagsList: List[TagTypeDef],  # (3)
+    CreatedTimestamp: datetime,
+    UpdatedTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtrailrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EventDataStoreStatusType](./literals.md#eventdatastorestatustype) 
+2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTrailRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import CreateTrailRequestRequestTypeDef
+
+def get_value() -> CreateTrailRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "S3BucketName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTrailRequestRequestTypeDef(TypedDict):
+    Name: str,
+    S3BucketName: str,
+    S3KeyPrefix: NotRequired[str],
+    SnsTopicName: NotRequired[str],
+    IncludeGlobalServiceEvents: NotRequired[bool],
+    IsMultiRegionTrail: NotRequired[bool],
+    EnableLogFileValidation: NotRequired[bool],
+    CloudWatchLogsLogGroupArn: NotRequired[str],
+    CloudWatchLogsRoleArn: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    IsOrganizationTrail: NotRequired[bool],
+    TagsList: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `S3BucketName`: `str`
-
-Optional fields:
-
-- `S3KeyPrefix`: `str`
-- `SnsTopicName`: `str`
-- `IncludeGlobalServiceEvents`: `bool`
-- `IsMultiRegionTrail`: `bool`
-- `EnableLogFileValidation`: `bool`
-- `CloudWatchLogsLogGroupArn`: `str`
-- `CloudWatchLogsRoleArn`: `str`
-- `KmsKeyId`: `str`
-- `IsOrganizationTrail`: `bool`
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createtrailresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTrailResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import CreateTrailResponseTypeDef
+
+def get_value() -> CreateTrailResponseTypeDef:
+    return {
+        "Name": ...,
+        "S3BucketName": ...,
+        "S3KeyPrefix": ...,
+        "SnsTopicName": ...,
+        "SnsTopicARN": ...,
+        "IncludeGlobalServiceEvents": ...,
+        "IsMultiRegionTrail": ...,
+        "TrailARN": ...,
+        "LogFileValidationEnabled": ...,
+        "CloudWatchLogsLogGroupArn": ...,
+        "CloudWatchLogsRoleArn": ...,
+        "KmsKeyId": ...,
+        "IsOrganizationTrail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTrailResponseTypeDef(TypedDict):
+    Name: str,
+    S3BucketName: str,
+    S3KeyPrefix: str,
+    SnsTopicName: str,
+    SnsTopicARN: str,
+    IncludeGlobalServiceEvents: bool,
+    IsMultiRegionTrail: bool,
+    TrailARN: str,
+    LogFileValidationEnabled: bool,
+    CloudWatchLogsLogGroupArn: str,
+    CloudWatchLogsRoleArn: str,
+    KmsKeyId: str,
+    IsOrganizationTrail: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `SnsTopicName`: `str`
-- `SnsTopicARN`: `str`
-- `IncludeGlobalServiceEvents`: `bool`
-- `IsMultiRegionTrail`: `bool`
-- `TrailARN`: `str`
-- `LogFileValidationEnabled`: `bool`
-- `CloudWatchLogsLogGroupArn`: `str`
-- `CloudWatchLogsRoleArn`: `str`
-- `KmsKeyId`: `str`
-- `IsOrganizationTrail`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dataresourcetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import DataResourceTypeDef
+
+def get_value() -> DataResourceTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
-
-- `Type`: `str`
-- `Values`: `List`\[`str`\]
-
-<a id="deleteeventdatastorerequestrequesttypedef"></a>
+```python title="Definition"
+class DataResourceTypeDef(TypedDict):
+    Type: NotRequired[str],
+    Values: NotRequired[List[str]],
+```
 
 ## DeleteEventDataStoreRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import DeleteEventDataStoreRequestRequestTypeDef
+
+def get_value() -> DeleteEventDataStoreRequestRequestTypeDef:
+    return {
+        "EventDataStore": ...,
+    }
 ```
 
-Required fields:
-
-- `EventDataStore`: `str`
-
-<a id="deletetrailrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteEventDataStoreRequestRequestTypeDef(TypedDict):
+    EventDataStore: str,
+```
 
 ## DeleteTrailRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import DeleteTrailRequestRequestTypeDef
+
+def get_value() -> DeleteTrailRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describequeryrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTrailRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribeQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import DescribeQueryRequestRequestTypeDef
+
+def get_value() -> DescribeQueryRequestRequestTypeDef:
+    return {
+        "EventDataStore": ...,
+        "QueryId": ...,
+    }
 ```
 
-Required fields:
-
-- `EventDataStore`: `str`
-- `QueryId`: `str`
-
-<a id="describequeryresponsetypedef"></a>
+```python title="Definition"
+class DescribeQueryRequestRequestTypeDef(TypedDict):
+    EventDataStore: str,
+    QueryId: str,
+```
 
 ## DescribeQueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import DescribeQueryResponseTypeDef
+
+def get_value() -> DescribeQueryResponseTypeDef:
+    return {
+        "QueryId": ...,
+        "QueryString": ...,
+        "QueryStatus": ...,
+        "QueryStatistics": ...,
+        "ErrorMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeQueryResponseTypeDef(TypedDict):
+    QueryId: str,
+    QueryString: str,
+    QueryStatus: QueryStatusType,  # (1)
+    QueryStatistics: QueryStatisticsForDescribeQueryTypeDef,  # (2)
+    ErrorMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `QueryId`: `str`
-- `QueryString`: `str`
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-- `QueryStatistics`:
-  [QueryStatisticsForDescribeQueryTypeDef](./type_defs.md#querystatisticsfordescribequerytypedef)
-- `ErrorMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetrailsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
+2. See [:material-code-braces: QueryStatisticsForDescribeQueryTypeDef](./type_defs.md#querystatisticsfordescribequerytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTrailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import DescribeTrailsRequestRequestTypeDef
+
+def get_value() -> DescribeTrailsRequestRequestTypeDef:
+    return {
+        "trailNameList": ...,
+    }
 ```
 
-Optional fields:
-
-- `trailNameList`: `Sequence`\[`str`\]
-- `includeShadowTrails`: `bool`
-
-<a id="describetrailsresponsetypedef"></a>
+```python title="Definition"
+class DescribeTrailsRequestRequestTypeDef(TypedDict):
+    trailNameList: NotRequired[Sequence[str]],
+    includeShadowTrails: NotRequired[bool],
+```
 
 ## DescribeTrailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import DescribeTrailsResponseTypeDef
+
+def get_value() -> DescribeTrailsResponseTypeDef:
+    return {
+        "trailList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTrailsResponseTypeDef(TypedDict):
+    trailList: List[TrailTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `trailList`: `List`\[[TrailTypeDef](./type_defs.md#trailtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="eventdatastoretypedef"></a>
-
+1. See [:material-code-braces: TrailTypeDef](./type_defs.md#trailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventDataStoreTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import EventDataStoreTypeDef
+
+def get_value() -> EventDataStoreTypeDef:
+    return {
+        "EventDataStoreArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventDataStoreTypeDef(TypedDict):
+    EventDataStoreArn: NotRequired[str],
+    Name: NotRequired[str],
+    TerminationProtectionEnabled: NotRequired[bool],
+    Status: NotRequired[EventDataStoreStatusType],  # (1)
+    AdvancedEventSelectors: NotRequired[List[AdvancedEventSelectorTypeDef]],  # (2)
+    MultiRegionEnabled: NotRequired[bool],
+    OrganizationEnabled: NotRequired[bool],
+    RetentionPeriod: NotRequired[int],
+    CreatedTimestamp: NotRequired[datetime],
+    UpdatedTimestamp: NotRequired[datetime],
+```
 
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `TerminationProtectionEnabled`: `bool`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
-
-<a id="eventselectortypedef"></a>
-
+1. See [:material-code-brackets: EventDataStoreStatusType](./literals.md#eventdatastorestatustype) 
+2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
 ## EventSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import EventSelectorTypeDef
+
+def get_value() -> EventSelectorTypeDef:
+    return {
+        "ReadWriteType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventSelectorTypeDef(TypedDict):
+    ReadWriteType: NotRequired[ReadWriteTypeType],  # (1)
+    IncludeManagementEvents: NotRequired[bool],
+    DataResources: NotRequired[List[DataResourceTypeDef]],  # (2)
+    ExcludeManagementEventSources: NotRequired[List[str]],
+```
 
-- `ReadWriteType`: [ReadWriteTypeType](./literals.md#readwritetypetype)
-- `IncludeManagementEvents`: `bool`
-- `DataResources`:
-  `List`\[[DataResourceTypeDef](./type_defs.md#dataresourcetypedef)\]
-- `ExcludeManagementEventSources`: `List`\[`str`\]
-
-<a id="eventtypedef"></a>
-
+1. See [:material-code-brackets: ReadWriteTypeType](./literals.md#readwritetypetype) 
+2. See [:material-code-braces: DataResourceTypeDef](./type_defs.md#dataresourcetypedef) 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "EventId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    EventId: NotRequired[str],
+    EventName: NotRequired[str],
+    ReadOnly: NotRequired[str],
+    AccessKeyId: NotRequired[str],
+    EventTime: NotRequired[datetime],
+    EventSource: NotRequired[str],
+    Username: NotRequired[str],
+    Resources: NotRequired[List[ResourceTypeDef]],  # (1)
+    CloudTrailEvent: NotRequired[str],
+```
 
-- `EventId`: `str`
-- `EventName`: `str`
-- `ReadOnly`: `str`
-- `AccessKeyId`: `str`
-- `EventTime`: `datetime`
-- `EventSource`: `str`
-- `Username`: `str`
-- `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `CloudTrailEvent`: `str`
-
-<a id="geteventdatastorerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
 ## GetEventDataStoreRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetEventDataStoreRequestRequestTypeDef
+
+def get_value() -> GetEventDataStoreRequestRequestTypeDef:
+    return {
+        "EventDataStore": ...,
+    }
 ```
 
-Required fields:
-
-- `EventDataStore`: `str`
-
-<a id="geteventdatastoreresponsetypedef"></a>
+```python title="Definition"
+class GetEventDataStoreRequestRequestTypeDef(TypedDict):
+    EventDataStore: str,
+```
 
 ## GetEventDataStoreResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetEventDataStoreResponseTypeDef
+
+def get_value() -> GetEventDataStoreResponseTypeDef:
+    return {
+        "EventDataStoreArn": ...,
+        "Name": ...,
+        "Status": ...,
+        "AdvancedEventSelectors": ...,
+        "MultiRegionEnabled": ...,
+        "OrganizationEnabled": ...,
+        "RetentionPeriod": ...,
+        "TerminationProtectionEnabled": ...,
+        "CreatedTimestamp": ...,
+        "UpdatedTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEventDataStoreResponseTypeDef(TypedDict):
+    EventDataStoreArn: str,
+    Name: str,
+    Status: EventDataStoreStatusType,  # (1)
+    AdvancedEventSelectors: List[AdvancedEventSelectorTypeDef],  # (2)
+    MultiRegionEnabled: bool,
+    OrganizationEnabled: bool,
+    RetentionPeriod: int,
+    TerminationProtectionEnabled: bool,
+    CreatedTimestamp: datetime,
+    UpdatedTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="geteventselectorsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EventDataStoreStatusType](./literals.md#eventdatastorestatustype) 
+2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEventSelectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetEventSelectorsRequestRequestTypeDef
+
+def get_value() -> GetEventSelectorsRequestRequestTypeDef:
+    return {
+        "TrailName": ...,
+    }
 ```
 
-Required fields:
-
-- `TrailName`: `str`
-
-<a id="geteventselectorsresponsetypedef"></a>
+```python title="Definition"
+class GetEventSelectorsRequestRequestTypeDef(TypedDict):
+    TrailName: str,
+```
 
 ## GetEventSelectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetEventSelectorsResponseTypeDef
+
+def get_value() -> GetEventSelectorsResponseTypeDef:
+    return {
+        "TrailARN": ...,
+        "EventSelectors": ...,
+        "AdvancedEventSelectors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEventSelectorsResponseTypeDef(TypedDict):
+    TrailARN: str,
+    EventSelectors: List[EventSelectorTypeDef],  # (1)
+    AdvancedEventSelectors: List[AdvancedEventSelectorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `TrailARN`: `str`
-- `EventSelectors`:
-  `List`\[[EventSelectorTypeDef](./type_defs.md#eventselectortypedef)\]
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinsightselectorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventSelectorTypeDef](./type_defs.md#eventselectortypedef) 
+2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInsightSelectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetInsightSelectorsRequestRequestTypeDef
+
+def get_value() -> GetInsightSelectorsRequestRequestTypeDef:
+    return {
+        "TrailName": ...,
+    }
 ```
 
-Required fields:
-
-- `TrailName`: `str`
-
-<a id="getinsightselectorsresponsetypedef"></a>
+```python title="Definition"
+class GetInsightSelectorsRequestRequestTypeDef(TypedDict):
+    TrailName: str,
+```
 
 ## GetInsightSelectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetInsightSelectorsResponseTypeDef
+
+def get_value() -> GetInsightSelectorsResponseTypeDef:
+    return {
+        "TrailARN": ...,
+        "InsightSelectors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInsightSelectorsResponseTypeDef(TypedDict):
+    TrailARN: str,
+    InsightSelectors: List[InsightSelectorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrailARN`: `str`
-- `InsightSelectors`:
-  `List`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getqueryresultsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InsightSelectorTypeDef](./type_defs.md#insightselectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQueryResultsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetQueryResultsRequestRequestTypeDef
+
+def get_value() -> GetQueryResultsRequestRequestTypeDef:
+    return {
+        "EventDataStore": ...,
+        "QueryId": ...,
+    }
 ```
 
-Required fields:
-
-- `EventDataStore`: `str`
-- `QueryId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxQueryResults`: `int`
-
-<a id="getqueryresultsresponsetypedef"></a>
+```python title="Definition"
+class GetQueryResultsRequestRequestTypeDef(TypedDict):
+    EventDataStore: str,
+    QueryId: str,
+    NextToken: NotRequired[str],
+    MaxQueryResults: NotRequired[int],
+```
 
 ## GetQueryResultsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetQueryResultsResponseTypeDef
+
+def get_value() -> GetQueryResultsResponseTypeDef:
+    return {
+        "QueryStatus": ...,
+        "QueryStatistics": ...,
+        "QueryResultRows": ...,
+        "NextToken": ...,
+        "ErrorMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetQueryResultsResponseTypeDef(TypedDict):
+    QueryStatus: QueryStatusType,  # (1)
+    QueryStatistics: QueryStatisticsTypeDef,  # (2)
+    QueryResultRows: List[List[Dict[str, str]]],
+    NextToken: str,
+    ErrorMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-- `QueryStatistics`:
-  [QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef)
-- `QueryResultRows`: `List`\[`List`\[`Dict`\[`str`, `str`\]\]\]
-- `NextToken`: `str`
-- `ErrorMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettrailrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
+2. See [:material-code-braces: QueryStatisticsTypeDef](./type_defs.md#querystatisticstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTrailRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetTrailRequestRequestTypeDef
+
+def get_value() -> GetTrailRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="gettrailresponsetypedef"></a>
+```python title="Definition"
+class GetTrailRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetTrailResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetTrailResponseTypeDef
+
+def get_value() -> GetTrailResponseTypeDef:
+    return {
+        "Trail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTrailResponseTypeDef(TypedDict):
+    Trail: TrailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Trail`: [TrailTypeDef](./type_defs.md#trailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettrailstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrailTypeDef](./type_defs.md#trailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTrailStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetTrailStatusRequestRequestTypeDef
+
+def get_value() -> GetTrailStatusRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="gettrailstatusresponsetypedef"></a>
+```python title="Definition"
+class GetTrailStatusRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetTrailStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import GetTrailStatusResponseTypeDef
+
+def get_value() -> GetTrailStatusResponseTypeDef:
+    return {
+        "IsLogging": ...,
+        "LatestDeliveryError": ...,
+        "LatestNotificationError": ...,
+        "LatestDeliveryTime": ...,
+        "LatestNotificationTime": ...,
+        "StartLoggingTime": ...,
+        "StopLoggingTime": ...,
+        "LatestCloudWatchLogsDeliveryError": ...,
+        "LatestCloudWatchLogsDeliveryTime": ...,
+        "LatestDigestDeliveryTime": ...,
+        "LatestDigestDeliveryError": ...,
+        "LatestDeliveryAttemptTime": ...,
+        "LatestNotificationAttemptTime": ...,
+        "LatestNotificationAttemptSucceeded": ...,
+        "LatestDeliveryAttemptSucceeded": ...,
+        "TimeLoggingStarted": ...,
+        "TimeLoggingStopped": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTrailStatusResponseTypeDef(TypedDict):
+    IsLogging: bool,
+    LatestDeliveryError: str,
+    LatestNotificationError: str,
+    LatestDeliveryTime: datetime,
+    LatestNotificationTime: datetime,
+    StartLoggingTime: datetime,
+    StopLoggingTime: datetime,
+    LatestCloudWatchLogsDeliveryError: str,
+    LatestCloudWatchLogsDeliveryTime: datetime,
+    LatestDigestDeliveryTime: datetime,
+    LatestDigestDeliveryError: str,
+    LatestDeliveryAttemptTime: str,
+    LatestNotificationAttemptTime: str,
+    LatestNotificationAttemptSucceeded: str,
+    LatestDeliveryAttemptSucceeded: str,
+    TimeLoggingStarted: str,
+    TimeLoggingStopped: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `IsLogging`: `bool`
-- `LatestDeliveryError`: `str`
-- `LatestNotificationError`: `str`
-- `LatestDeliveryTime`: `datetime`
-- `LatestNotificationTime`: `datetime`
-- `StartLoggingTime`: `datetime`
-- `StopLoggingTime`: `datetime`
-- `LatestCloudWatchLogsDeliveryError`: `str`
-- `LatestCloudWatchLogsDeliveryTime`: `datetime`
-- `LatestDigestDeliveryTime`: `datetime`
-- `LatestDigestDeliveryError`: `str`
-- `LatestDeliveryAttemptTime`: `str`
-- `LatestNotificationAttemptTime`: `str`
-- `LatestNotificationAttemptSucceeded`: `str`
-- `LatestDeliveryAttemptSucceeded`: `str`
-- `TimeLoggingStarted`: `str`
-- `TimeLoggingStopped`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="insightselectortypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InsightSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import InsightSelectorTypeDef
+
+def get_value() -> InsightSelectorTypeDef:
+    return {
+        "InsightType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InsightSelectorTypeDef(TypedDict):
+    InsightType: NotRequired[InsightTypeType],  # (1)
+```
 
-- `InsightType`: [InsightTypeType](./literals.md#insighttypetype)
-
-<a id="listeventdatastoresrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
 ## ListEventDataStoresRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListEventDataStoresRequestRequestTypeDef
+
+def get_value() -> ListEventDataStoresRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listeventdatastoresresponsetypedef"></a>
+```python title="Definition"
+class ListEventDataStoresRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListEventDataStoresResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListEventDataStoresResponseTypeDef
+
+def get_value() -> ListEventDataStoresResponseTypeDef:
+    return {
+        "EventDataStores": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventDataStoresResponseTypeDef(TypedDict):
+    EventDataStores: List[EventDataStoreTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventDataStores`:
-  `List`\[[EventDataStoreTypeDef](./type_defs.md#eventdatastoretypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EventDataStoreTypeDef](./type_defs.md#eventdatastoretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPublicKeysRequestListPublicKeysPaginateTypeDef
 
-<a id="listpublickeysrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListPublicKeysRequestListPublicKeysPaginateTypeDef
 
+def get_value() -> ListPublicKeysRequestListPublicKeysPaginateTypeDef:
+    return {
+        "StartTime": ...,
+    }
+```
+
+```python title="Definition"
+class ListPublicKeysRequestListPublicKeysPaginateTypeDef(TypedDict):
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPublicKeysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListPublicKeysRequestRequestTypeDef
+
+def get_value() -> ListPublicKeysRequestRequestTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-
-<a id="listpublickeysresponsetypedef"></a>
+```python title="Definition"
+class ListPublicKeysRequestRequestTypeDef(TypedDict):
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    NextToken: NotRequired[str],
+```
 
 ## ListPublicKeysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListPublicKeysResponseTypeDef
+
+def get_value() -> ListPublicKeysResponseTypeDef:
+    return {
+        "PublicKeyList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPublicKeysResponseTypeDef(TypedDict):
+    PublicKeyList: List[PublicKeyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PublicKeyList`:
-  `List`\[[PublicKeyTypeDef](./type_defs.md#publickeytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listqueriesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PublicKeyTypeDef](./type_defs.md#publickeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListQueriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListQueriesRequestRequestTypeDef
+
+def get_value() -> ListQueriesRequestRequestTypeDef:
+    return {
+        "EventDataStore": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQueriesRequestRequestTypeDef(TypedDict):
+    EventDataStore: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    QueryStatus: NotRequired[QueryStatusType],  # (1)
+```
 
-- `EventDataStore`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-
-<a id="listqueriesresponsetypedef"></a>
-
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
 ## ListQueriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListQueriesResponseTypeDef
+
+def get_value() -> ListQueriesResponseTypeDef:
+    return {
+        "Queries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQueriesResponseTypeDef(TypedDict):
+    Queries: List[QueryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Queries`: `List`\[[QueryTypeDef](./type_defs.md#querytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: QueryTypeDef](./type_defs.md#querytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsRequestListTagsPaginateTypeDef
 
-<a id="listtagsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListTagsRequestListTagsPaginateTypeDef
 
+def get_value() -> ListTagsRequestListTagsPaginateTypeDef:
+    return {
+        "ResourceIdList": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsRequestListTagsPaginateTypeDef(TypedDict):
+    ResourceIdList: Sequence[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListTagsRequestRequestTypeDef
+
+def get_value() -> ListTagsRequestRequestTypeDef:
+    return {
+        "ResourceIdList": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceIdList`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listtagsresponsetypedef"></a>
+```python title="Definition"
+class ListTagsRequestRequestTypeDef(TypedDict):
+    ResourceIdList: Sequence[str],
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListTagsResponseTypeDef
+
+def get_value() -> ListTagsResponseTypeDef:
+    return {
+        "ResourceTagList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsResponseTypeDef(TypedDict):
+    ResourceTagList: List[ResourceTagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceTagList`:
-  `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTrailsRequestListTrailsPaginateTypeDef
 
-<a id="listtrailsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import ListTrailsRequestListTrailsPaginateTypeDef
 
+def get_value() -> ListTrailsRequestListTrailsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListTrailsRequestListTrailsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTrailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListTrailsRequestRequestTypeDef
+
+def get_value() -> ListTrailsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listtrailsresponsetypedef"></a>
+```python title="Definition"
+class ListTrailsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListTrailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ListTrailsResponseTypeDef
+
+def get_value() -> ListTrailsResponseTypeDef:
+    return {
+        "Trails": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrailsResponseTypeDef(TypedDict):
+    Trails: List[TrailInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Trails`: `List`\[[TrailInfoTypeDef](./type_defs.md#trailinfotypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lookupattributetypedef"></a>
-
+1. See [:material-code-braces: TrailInfoTypeDef](./type_defs.md#trailinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LookupAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import LookupAttributeTypeDef
+
+def get_value() -> LookupAttributeTypeDef:
+    return {
+        "AttributeKey": ...,
+        "AttributeValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LookupAttributeTypeDef(TypedDict):
+    AttributeKey: LookupAttributeKeyType,  # (1)
+    AttributeValue: str,
+```
 
-- `AttributeKey`:
-  [LookupAttributeKeyType](./literals.md#lookupattributekeytype)
-- `AttributeValue`: `str`
+1. See [:material-code-brackets: LookupAttributeKeyType](./literals.md#lookupattributekeytype) 
+## LookupEventsRequestLookupEventsPaginateTypeDef
 
-<a id="lookupeventsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudtrail.type_defs import LookupEventsRequestLookupEventsPaginateTypeDef
 
+def get_value() -> LookupEventsRequestLookupEventsPaginateTypeDef:
+    return {
+        "LookupAttributes": ...,
+    }
+```
+
+```python title="Definition"
+class LookupEventsRequestLookupEventsPaginateTypeDef(TypedDict):
+    LookupAttributes: NotRequired[Sequence[LookupAttributeTypeDef]],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    EventCategory: NotRequired[EventCategoryType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef) 
+2. See [:material-code-brackets: EventCategoryType](./literals.md#eventcategorytype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## LookupEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import LookupEventsRequestRequestTypeDef
+
+def get_value() -> LookupEventsRequestRequestTypeDef:
+    return {
+        "LookupAttributes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LookupEventsRequestRequestTypeDef(TypedDict):
+    LookupAttributes: NotRequired[Sequence[LookupAttributeTypeDef]],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    EventCategory: NotRequired[EventCategoryType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `LookupAttributes`:
-  `Sequence`\[[LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)\]
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `EventCategory`: `Literal['insight']` (see
-  [EventCategoryType](./literals.md#eventcategorytype))
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="lookupeventsresponsetypedef"></a>
-
+1. See [:material-code-braces: LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef) 
+2. See [:material-code-brackets: EventCategoryType](./literals.md#eventcategorytype) 
 ## LookupEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import LookupEventsResponseTypeDef
+
+def get_value() -> LookupEventsResponseTypeDef:
+    return {
+        "Events": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LookupEventsResponseTypeDef(TypedDict):
+    Events: List[EventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="publickeytypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PublicKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import PublicKeyTypeDef
+
+def get_value() -> PublicKeyTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `bytes`
-- `ValidityStartTime`: `datetime`
-- `ValidityEndTime`: `datetime`
-- `Fingerprint`: `str`
-
-<a id="puteventselectorsrequestrequesttypedef"></a>
+```python title="Definition"
+class PublicKeyTypeDef(TypedDict):
+    Value: NotRequired[bytes],
+    ValidityStartTime: NotRequired[datetime],
+    ValidityEndTime: NotRequired[datetime],
+    Fingerprint: NotRequired[str],
+```
 
 ## PutEventSelectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import PutEventSelectorsRequestRequestTypeDef
+
+def get_value() -> PutEventSelectorsRequestRequestTypeDef:
+    return {
+        "TrailName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEventSelectorsRequestRequestTypeDef(TypedDict):
+    TrailName: str,
+    EventSelectors: NotRequired[Sequence[EventSelectorTypeDef]],  # (1)
+    AdvancedEventSelectors: NotRequired[Sequence[AdvancedEventSelectorTypeDef]],  # (2)
+```
 
-- `TrailName`: `str`
-
-Optional fields:
-
-- `EventSelectors`:
-  `Sequence`\[[EventSelectorTypeDef](./type_defs.md#eventselectortypedef)\]
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-
-<a id="puteventselectorsresponsetypedef"></a>
-
+1. See [:material-code-braces: EventSelectorTypeDef](./type_defs.md#eventselectortypedef) 
+2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
 ## PutEventSelectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import PutEventSelectorsResponseTypeDef
+
+def get_value() -> PutEventSelectorsResponseTypeDef:
+    return {
+        "TrailARN": ...,
+        "EventSelectors": ...,
+        "AdvancedEventSelectors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEventSelectorsResponseTypeDef(TypedDict):
+    TrailARN: str,
+    EventSelectors: List[EventSelectorTypeDef],  # (1)
+    AdvancedEventSelectors: List[AdvancedEventSelectorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `TrailARN`: `str`
-- `EventSelectors`:
-  `List`\[[EventSelectorTypeDef](./type_defs.md#eventselectortypedef)\]
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putinsightselectorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventSelectorTypeDef](./type_defs.md#eventselectortypedef) 
+2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutInsightSelectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import PutInsightSelectorsRequestRequestTypeDef
+
+def get_value() -> PutInsightSelectorsRequestRequestTypeDef:
+    return {
+        "TrailName": ...,
+        "InsightSelectors": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutInsightSelectorsRequestRequestTypeDef(TypedDict):
+    TrailName: str,
+    InsightSelectors: Sequence[InsightSelectorTypeDef],  # (1)
+```
 
-- `TrailName`: `str`
-- `InsightSelectors`:
-  `Sequence`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
-
-<a id="putinsightselectorsresponsetypedef"></a>
-
+1. See [:material-code-braces: InsightSelectorTypeDef](./type_defs.md#insightselectortypedef) 
 ## PutInsightSelectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import PutInsightSelectorsResponseTypeDef
+
+def get_value() -> PutInsightSelectorsResponseTypeDef:
+    return {
+        "TrailARN": ...,
+        "InsightSelectors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutInsightSelectorsResponseTypeDef(TypedDict):
+    TrailARN: str,
+    InsightSelectors: List[InsightSelectorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrailARN`: `str`
-- `InsightSelectors`:
-  `List`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="querystatisticsfordescribequerytypedef"></a>
-
+1. See [:material-code-braces: InsightSelectorTypeDef](./type_defs.md#insightselectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## QueryStatisticsForDescribeQueryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import QueryStatisticsForDescribeQueryTypeDef
+
+def get_value() -> QueryStatisticsForDescribeQueryTypeDef:
+    return {
+        "EventsMatched": ...,
+    }
 ```
 
-Optional fields:
-
-- `EventsMatched`: `int`
-- `EventsScanned`: `int`
-- `BytesScanned`: `int`
-- `ExecutionTimeInMillis`: `int`
-- `CreationTime`: `datetime`
-
-<a id="querystatisticstypedef"></a>
+```python title="Definition"
+class QueryStatisticsForDescribeQueryTypeDef(TypedDict):
+    EventsMatched: NotRequired[int],
+    EventsScanned: NotRequired[int],
+    BytesScanned: NotRequired[int],
+    ExecutionTimeInMillis: NotRequired[int],
+    CreationTime: NotRequired[datetime],
+```
 
 ## QueryStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import QueryStatisticsTypeDef
+
+def get_value() -> QueryStatisticsTypeDef:
+    return {
+        "ResultsCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResultsCount`: `int`
-- `TotalResultsCount`: `int`
-- `BytesScanned`: `int`
-
-<a id="querytypedef"></a>
+```python title="Definition"
+class QueryStatisticsTypeDef(TypedDict):
+    ResultsCount: NotRequired[int],
+    TotalResultsCount: NotRequired[int],
+    BytesScanned: NotRequired[int],
+```
 
 ## QueryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import QueryTypeDef
+
+def get_value() -> QueryTypeDef:
+    return {
+        "QueryId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QueryTypeDef(TypedDict):
+    QueryId: NotRequired[str],
+    QueryStatus: NotRequired[QueryStatusType],  # (1)
+    CreationTime: NotRequired[datetime],
+```
 
-- `QueryId`: `str`
-- `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
-- `CreationTime`: `datetime`
-
-<a id="removetagsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
 ## RemoveTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import RemoveTagsRequestRequestTypeDef
+
+def get_value() -> RemoveTagsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "TagsList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveTagsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    TagsList: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceId`: `str`
-- `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="resourcetagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ResourceTagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ResourceTagTypeDef
+
+def get_value() -> ResourceTagTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceTagTypeDef(TypedDict):
+    ResourceId: NotRequired[str],
+    TagsList: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `ResourceId`: `str`
-- `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="resourcetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceType`: `str`
-- `ResourceName`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    ResourceType: NotRequired[str],
+    ResourceName: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restoreeventdatastorerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreEventDataStoreRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import RestoreEventDataStoreRequestRequestTypeDef
+
+def get_value() -> RestoreEventDataStoreRequestRequestTypeDef:
+    return {
+        "EventDataStore": ...,
+    }
 ```
 
-Required fields:
-
-- `EventDataStore`: `str`
-
-<a id="restoreeventdatastoreresponsetypedef"></a>
+```python title="Definition"
+class RestoreEventDataStoreRequestRequestTypeDef(TypedDict):
+    EventDataStore: str,
+```
 
 ## RestoreEventDataStoreResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import RestoreEventDataStoreResponseTypeDef
+
+def get_value() -> RestoreEventDataStoreResponseTypeDef:
+    return {
+        "EventDataStoreArn": ...,
+        "Name": ...,
+        "Status": ...,
+        "AdvancedEventSelectors": ...,
+        "MultiRegionEnabled": ...,
+        "OrganizationEnabled": ...,
+        "RetentionPeriod": ...,
+        "TerminationProtectionEnabled": ...,
+        "CreatedTimestamp": ...,
+        "UpdatedTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreEventDataStoreResponseTypeDef(TypedDict):
+    EventDataStoreArn: str,
+    Name: str,
+    Status: EventDataStoreStatusType,  # (1)
+    AdvancedEventSelectors: List[AdvancedEventSelectorTypeDef],  # (2)
+    MultiRegionEnabled: bool,
+    OrganizationEnabled: bool,
+    RetentionPeriod: int,
+    TerminationProtectionEnabled: bool,
+    CreatedTimestamp: datetime,
+    UpdatedTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startloggingrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EventDataStoreStatusType](./literals.md#eventdatastorestatustype) 
+2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartLoggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import StartLoggingRequestRequestTypeDef
+
+def get_value() -> StartLoggingRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="startqueryrequestrequesttypedef"></a>
+```python title="Definition"
+class StartLoggingRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## StartQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import StartQueryRequestRequestTypeDef
+
+def get_value() -> StartQueryRequestRequestTypeDef:
+    return {
+        "QueryStatement": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryStatement`: `str`
-
-<a id="startqueryresponsetypedef"></a>
+```python title="Definition"
+class StartQueryRequestRequestTypeDef(TypedDict):
+    QueryStatement: str,
+```
 
 ## StartQueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import StartQueryResponseTypeDef
+
+def get_value() -> StartQueryResponseTypeDef:
+    return {
+        "QueryId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartQueryResponseTypeDef(TypedDict):
+    QueryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `QueryId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stoploggingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopLoggingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import StopLoggingRequestRequestTypeDef
+
+def get_value() -> StopLoggingRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class StopLoggingRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `Value`: `str`
-
-<a id="trailinfotypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
+```
 
 ## TrailInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import TrailInfoTypeDef
+
+def get_value() -> TrailInfoTypeDef:
+    return {
+        "TrailARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `TrailARN`: `str`
-- `Name`: `str`
-- `HomeRegion`: `str`
-
-<a id="trailtypedef"></a>
+```python title="Definition"
+class TrailInfoTypeDef(TypedDict):
+    TrailARN: NotRequired[str],
+    Name: NotRequired[str],
+    HomeRegion: NotRequired[str],
+```
 
 ## TrailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import TrailTypeDef
+
+def get_value() -> TrailTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `SnsTopicName`: `str`
-- `SnsTopicARN`: `str`
-- `IncludeGlobalServiceEvents`: `bool`
-- `IsMultiRegionTrail`: `bool`
-- `HomeRegion`: `str`
-- `TrailARN`: `str`
-- `LogFileValidationEnabled`: `bool`
-- `CloudWatchLogsLogGroupArn`: `str`
-- `CloudWatchLogsRoleArn`: `str`
-- `KmsKeyId`: `str`
-- `HasCustomEventSelectors`: `bool`
-- `HasInsightSelectors`: `bool`
-- `IsOrganizationTrail`: `bool`
-
-<a id="updateeventdatastorerequestrequesttypedef"></a>
+```python title="Definition"
+class TrailTypeDef(TypedDict):
+    Name: NotRequired[str],
+    S3BucketName: NotRequired[str],
+    S3KeyPrefix: NotRequired[str],
+    SnsTopicName: NotRequired[str],
+    SnsTopicARN: NotRequired[str],
+    IncludeGlobalServiceEvents: NotRequired[bool],
+    IsMultiRegionTrail: NotRequired[bool],
+    HomeRegion: NotRequired[str],
+    TrailARN: NotRequired[str],
+    LogFileValidationEnabled: NotRequired[bool],
+    CloudWatchLogsLogGroupArn: NotRequired[str],
+    CloudWatchLogsRoleArn: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    HasCustomEventSelectors: NotRequired[bool],
+    HasInsightSelectors: NotRequired[bool],
+    IsOrganizationTrail: NotRequired[bool],
+```
 
 ## UpdateEventDataStoreRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import UpdateEventDataStoreRequestRequestTypeDef
+
+def get_value() -> UpdateEventDataStoreRequestRequestTypeDef:
+    return {
+        "EventDataStore": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEventDataStoreRequestRequestTypeDef(TypedDict):
+    EventDataStore: str,
+    Name: NotRequired[str],
+    AdvancedEventSelectors: NotRequired[Sequence[AdvancedEventSelectorTypeDef]],  # (1)
+    MultiRegionEnabled: NotRequired[bool],
+    OrganizationEnabled: NotRequired[bool],
+    RetentionPeriod: NotRequired[int],
+    TerminationProtectionEnabled: NotRequired[bool],
+```
 
-- `EventDataStore`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `AdvancedEventSelectors`:
-  `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-
-<a id="updateeventdatastoreresponsetypedef"></a>
-
+1. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
 ## UpdateEventDataStoreResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import UpdateEventDataStoreResponseTypeDef
+
+def get_value() -> UpdateEventDataStoreResponseTypeDef:
+    return {
+        "EventDataStoreArn": ...,
+        "Name": ...,
+        "Status": ...,
+        "AdvancedEventSelectors": ...,
+        "MultiRegionEnabled": ...,
+        "OrganizationEnabled": ...,
+        "RetentionPeriod": ...,
+        "TerminationProtectionEnabled": ...,
+        "CreatedTimestamp": ...,
+        "UpdatedTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEventDataStoreResponseTypeDef(TypedDict):
+    EventDataStoreArn: str,
+    Name: str,
+    Status: EventDataStoreStatusType,  # (1)
+    AdvancedEventSelectors: List[AdvancedEventSelectorTypeDef],  # (2)
+    MultiRegionEnabled: bool,
+    OrganizationEnabled: bool,
+    RetentionPeriod: int,
+    TerminationProtectionEnabled: bool,
+    CreatedTimestamp: datetime,
+    UpdatedTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `EventDataStoreArn`: `str`
-- `Name`: `str`
-- `Status`: [EventDataStoreStatusType](./literals.md#eventdatastorestatustype)
-- `AdvancedEventSelectors`:
-  `List`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
-- `MultiRegionEnabled`: `bool`
-- `OrganizationEnabled`: `bool`
-- `RetentionPeriod`: `int`
-- `TerminationProtectionEnabled`: `bool`
-- `CreatedTimestamp`: `datetime`
-- `UpdatedTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetrailrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EventDataStoreStatusType](./literals.md#eventdatastorestatustype) 
+2. See [:material-code-braces: AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTrailRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import UpdateTrailRequestRequestTypeDef
+
+def get_value() -> UpdateTrailRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `SnsTopicName`: `str`
-- `IncludeGlobalServiceEvents`: `bool`
-- `IsMultiRegionTrail`: `bool`
-- `EnableLogFileValidation`: `bool`
-- `CloudWatchLogsLogGroupArn`: `str`
-- `CloudWatchLogsRoleArn`: `str`
-- `KmsKeyId`: `str`
-- `IsOrganizationTrail`: `bool`
-
-<a id="updatetrailresponsetypedef"></a>
+```python title="Definition"
+class UpdateTrailRequestRequestTypeDef(TypedDict):
+    Name: str,
+    S3BucketName: NotRequired[str],
+    S3KeyPrefix: NotRequired[str],
+    SnsTopicName: NotRequired[str],
+    IncludeGlobalServiceEvents: NotRequired[bool],
+    IsMultiRegionTrail: NotRequired[bool],
+    EnableLogFileValidation: NotRequired[bool],
+    CloudWatchLogsLogGroupArn: NotRequired[str],
+    CloudWatchLogsRoleArn: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    IsOrganizationTrail: NotRequired[bool],
+```
 
 ## UpdateTrailResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudtrail.type_defs import UpdateTrailResponseTypeDef
+
+def get_value() -> UpdateTrailResponseTypeDef:
+    return {
+        "Name": ...,
+        "S3BucketName": ...,
+        "S3KeyPrefix": ...,
+        "SnsTopicName": ...,
+        "SnsTopicARN": ...,
+        "IncludeGlobalServiceEvents": ...,
+        "IsMultiRegionTrail": ...,
+        "TrailARN": ...,
+        "LogFileValidationEnabled": ...,
+        "CloudWatchLogsLogGroupArn": ...,
+        "CloudWatchLogsRoleArn": ...,
+        "KmsKeyId": ...,
+        "IsOrganizationTrail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTrailResponseTypeDef(TypedDict):
+    Name: str,
+    S3BucketName: str,
+    S3KeyPrefix: str,
+    SnsTopicName: str,
+    SnsTopicARN: str,
+    IncludeGlobalServiceEvents: bool,
+    IsMultiRegionTrail: bool,
+    TrailARN: str,
+    LogFileValidationEnabled: bool,
+    CloudWatchLogsLogGroupArn: str,
+    CloudWatchLogsRoleArn: str,
+    KmsKeyId: str,
+    IsOrganizationTrail: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `SnsTopicName`: `str`
-- `SnsTopicARN`: `str`
-- `IncludeGlobalServiceEvents`: `bool`
-- `IsMultiRegionTrail`: `bool`
-- `TrailARN`: `str`
-- `LogFileValidationEnabled`: `bool`
-- `CloudWatchLogsLogGroupArn`: `str`
-- `CloudWatchLogsRoleArn`: `str`
-- `KmsKeyId`: `str`
-- `IsOrganizationTrail`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

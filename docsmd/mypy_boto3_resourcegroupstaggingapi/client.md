@@ -1,41 +1,18 @@
-<a id="resourcegroupstaggingapiclient-for-boto3-resourcegroupstaggingapi-module"></a>
+# ResourceGroupsTaggingAPIClient
 
-# ResourceGroupsTaggingAPIClient for boto3 ResourceGroupsTaggingAPI module
+> [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) > ResourceGroupsTaggingAPIClient
 
-> [Index](../README.md) > [ResourceGroupsTaggingAPI](./README.md) >
-> ResourceGroupsTaggingAPIClient
+!!! note ""
 
-Auto-generated documentation for
-[ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
-type annotations stubs module
-[mypy-boto3-resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
-
-- [ResourceGroupsTaggingAPIClient for boto3 ResourceGroupsTaggingAPI module](#resourcegroupstaggingapiclient-for-boto3-resourcegroupstaggingapi-module)
-  - [ResourceGroupsTaggingAPIClient](#resourcegroupstaggingapiclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [describe_report_creation](#describe_report_creation)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_compliance_summary](#get_compliance_summary)
-    - [get_resources](#get_resources)
-    - [get_tag_keys](#get_tag_keys)
-    - [get_tag_values](#get_tag_values)
-    - [start_report_creation](#start_report_creation)
-    - [tag_resources](#tag_resources)
-    - [untag_resources](#untag_resources)
-    - [get_paginator](#get_paginator)
-
-<a id="resourcegroupstaggingapiclient"></a>
+    Auto-generated documentation for [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
+    type annotations stubs module [mypy-boto3-resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 ## ResourceGroupsTaggingAPIClient
 
-Type annotations for `boto3.client("resourcegroupstaggingapi")`
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
 
@@ -43,290 +20,329 @@ def get_resourcegroupstaggingapi_client() -> ResourceGroupsTaggingAPIClient:
     return Session().client("resourcegroupstaggingapi")
 ```
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("resourcegroupstaggingapi").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("resourcegroupstaggingapi")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.ConstraintViolationException,
+    client.InternalServiceException,
+    client.InvalidParameterException,
+    client.PaginationTokenExpiredException,
+    client.ThrottledException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_resourcegroupstaggingapi.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.ConstraintViolationException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.PaginationTokenExpiredException`
-- `Exceptions.ThrottledException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ResourceGroupsTaggingAPIClient exceptions.
-
-Type annotations for `boto3.client("resourcegroupstaggingapi").exceptions`
-method.
-
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.can_paginate)
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="describe\_report\_creation"></a>
-
-### describe_report_creation
+### describe\_report\_creation
 
 Describes the status of the `StartReportCreation` operation.
 
-Type annotations for
-`boto3.client("resourcegroupstaggingapi").describe_report_creation` method.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").describe_report_creation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation)
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.describe_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.describe_report_creation)
+```python title="Method definition"
+def describe_report_creation(
+    self,
+) -> DescribeReportCreationOutputTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeReportCreationOutputTypeDef](./type_defs.md#describereportcreationoutputtypedef).
+1. See [:material-code-braces: DescribeReportCreationOutputTypeDef](./type_defs.md#describereportcreationoutputtypedef) 
 
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("resourcegroupstaggingapi").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_compliance\_summary"></a>
-
-### get_compliance_summary
+### get\_compliance\_summary
 
 Returns a table that shows counts of resources that are noncompliant with their
 tag policies.
 
-Type annotations for
-`boto3.client("resourcegroupstaggingapi").get_compliance_summary` method.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").get_compliance_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary)
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.get_compliance_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_compliance_summary)
+```python title="Method definition"
+def get_compliance_summary(
+    self,
+    *,
+    TargetIdFilters: Sequence[str] = ...,
+    RegionFilters: Sequence[str] = ...,
+    ResourceTypeFilters: Sequence[str] = ...,
+    TagKeyFilters: Sequence[str] = ...,
+    GroupBy: Sequence[GroupByAttributeType] = ...,  # (1)
+    MaxResults: int = ...,
+    PaginationToken: str = ...,
+) -> GetComplianceSummaryOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetComplianceSummaryInputRequestTypeDef](./type_defs.md#getcompliancesummaryinputrequesttypedef).
+1. See [:material-code-brackets: GroupByAttributeType](./literals.md#groupbyattributetype) 
+2. See [:material-code-braces: GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetIdFilters`: `Sequence`\[`str`\]
-- `RegionFilters`: `Sequence`\[`str`\]
-- `ResourceTypeFilters`: `Sequence`\[`str`\]
-- `TagKeyFilters`: `Sequence`\[`str`\]
-- `GroupBy`:
-  `Sequence`\[[GroupByAttributeType](./literals.md#groupbyattributetype)\]
-- `MaxResults`: `int`
-- `PaginationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetComplianceSummaryInputRequestTypeDef = {  # (1)
+    "TargetIdFilters": ...,
+}
 
-Returns
-[GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef).
+parent.get_compliance_summary(**kwargs)
+```
 
-<a id="get\_resources"></a>
+1. See [:material-code-braces: GetComplianceSummaryInputRequestTypeDef](./type_defs.md#getcompliancesummaryinputrequesttypedef) 
 
-### get_resources
+### get\_resources
 
 Returns all the tagged or previously tagged resources that are located in the
 specified Amazon Web Services Region for the account.
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_resources`
-method.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").get_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources)
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_resources)
+```python title="Method definition"
+def get_resources(
+    self,
+    *,
+    PaginationToken: str = ...,
+    TagFilters: Sequence[TagFilterTypeDef] = ...,  # (1)
+    ResourcesPerPage: int = ...,
+    TagsPerPage: int = ...,
+    ResourceTypeFilters: Sequence[str] = ...,
+    IncludeComplianceDetails: bool = ...,
+    ExcludeCompliantResources: bool = ...,
+    ResourceARNList: Sequence[str] = ...,
+) -> GetResourcesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetResourcesInputRequestTypeDef](./type_defs.md#getresourcesinputrequesttypedef).
+1. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+2. See [:material-code-braces: GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PaginationToken`: `str`
-- `TagFilters`:
-  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `ResourcesPerPage`: `int`
-- `TagsPerPage`: `int`
-- `ResourceTypeFilters`: `Sequence`\[`str`\]
-- `IncludeComplianceDetails`: `bool`
-- `ExcludeCompliantResources`: `bool`
-- `ResourceARNList`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetResourcesInputRequestTypeDef = {  # (1)
+    "PaginationToken": ...,
+}
 
-Returns [GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef).
+parent.get_resources(**kwargs)
+```
 
-<a id="get\_tag\_keys"></a>
+1. See [:material-code-braces: GetResourcesInputRequestTypeDef](./type_defs.md#getresourcesinputrequesttypedef) 
 
-### get_tag_keys
+### get\_tag\_keys
 
 Returns all tag keys currently in use in the specified Amazon Web Services
 Region for the calling account.
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_keys`
-method.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").get_tag_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys)
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.get_tag_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_keys)
+```python title="Method definition"
+def get_tag_keys(
+    self,
+    *,
+    PaginationToken: str = ...,
+) -> GetTagKeysOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTagKeysInputRequestTypeDef](./type_defs.md#gettagkeysinputrequesttypedef).
+1. See [:material-code-braces: GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PaginationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTagKeysInputRequestTypeDef = {  # (1)
+    "PaginationToken": ...,
+}
 
-Returns [GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef).
+parent.get_tag_keys(**kwargs)
+```
 
-<a id="get\_tag\_values"></a>
+1. See [:material-code-braces: GetTagKeysInputRequestTypeDef](./type_defs.md#gettagkeysinputrequesttypedef) 
 
-### get_tag_values
+### get\_tag\_values
 
 Returns all tag values for the specified key that are used in the specified
 Amazon Web Services Region for the calling account.
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_tag_values`
-method.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").get_tag_values` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values)
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.get_tag_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.get_tag_values)
+```python title="Method definition"
+def get_tag_values(
+    self,
+    *,
+    Key: str,
+    PaginationToken: str = ...,
+) -> GetTagValuesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTagValuesInputRequestTypeDef](./type_defs.md#gettagvaluesinputrequesttypedef).
+1. See [:material-code-braces: GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Key`: `str` *(required)*
-- `PaginationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTagValuesInputRequestTypeDef = {  # (1)
+    "Key": ...,
+}
 
-Returns [GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef).
+parent.get_tag_values(**kwargs)
+```
 
-<a id="start\_report\_creation"></a>
+1. See [:material-code-braces: GetTagValuesInputRequestTypeDef](./type_defs.md#gettagvaluesinputrequesttypedef) 
 
-### start_report_creation
+### start\_report\_creation
 
 Generates a report that lists all tagged resources in the accounts across your
-organization and tells whether each resource is compliant with the effective
-tag policy.
+organization and tells whether each resource is compliant with the effective tag
+policy.
 
-Type annotations for
-`boto3.client("resourcegroupstaggingapi").start_report_creation` method.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").start_report_creation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation)
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.start_report_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.start_report_creation)
+```python title="Method definition"
+def start_report_creation(
+    self,
+    *,
+    S3Bucket: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartReportCreationInputRequestTypeDef](./type_defs.md#startreportcreationinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `S3Bucket`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartReportCreationInputRequestTypeDef = {  # (1)
+    "S3Bucket": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_report_creation(**kwargs)
+```
 
-<a id="tag\_resources"></a>
+1. See [:material-code-braces: StartReportCreationInputRequestTypeDef](./type_defs.md#startreportcreationinputrequesttypedef) 
 
-### tag_resources
-
-.
-
-Type annotations for `boto3.client("resourcegroupstaggingapi").tag_resources`
-method.
-
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.tag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
-
-Arguments mapping described in
-[TagResourcesInputRequestTypeDef](./type_defs.md#tagresourcesinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceARNList`: `Sequence`\[`str`\] *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
-
-Returns [TagResourcesOutputTypeDef](./type_defs.md#tagresourcesoutputtypedef).
-
-<a id="untag\_resources"></a>
-
-### untag_resources
+### tag\_resources
 
 .
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").untag_resources`
-method.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").tag_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.tag_resources)
 
-Boto3 documentation:
-[ResourceGroupsTaggingAPI.Client.untag_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)
+```python title="Method definition"
+def tag_resources(
+    self,
+    *,
+    ResourceARNList: Sequence[str],
+    Tags: Mapping[str, str],
+) -> TagResourcesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UntagResourcesInputRequestTypeDef](./type_defs.md#untagresourcesinputrequesttypedef).
+1. See [:material-code-braces: TagResourcesOutputTypeDef](./type_defs.md#tagresourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARNList`: `Sequence`\[`str`\] *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourcesInputRequestTypeDef = {  # (1)
+    "ResourceARNList": ...,
+    "Tags": ...,
+}
 
-Returns
-[UntagResourcesOutputTypeDef](./type_defs.md#untagresourcesoutputtypedef).
+parent.tag_resources(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: TagResourcesInputRequestTypeDef](./type_defs.md#tagresourcesinputrequesttypedef) 
+
+### untag\_resources
+
+.
+
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").untag_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI.Client.untag_resources)
+
+```python title="Method definition"
+def untag_resources(
+    self,
+    *,
+    ResourceARNList: Sequence[str],
+    TagKeys: Sequence[str],
+) -> UntagResourcesOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: UntagResourcesOutputTypeDef](./type_defs.md#untagresourcesoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UntagResourcesInputRequestTypeDef = {  # (1)
+    "ResourceARNList": ...,
+    "TagKeys": ...,
+}
+
+parent.untag_resources(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourcesInputRequestTypeDef](./type_defs.md#untagresourcesinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("resourcegroupstaggingapi").get_paginator`
-method with overloads.
+Type annotations and code completion for `#!python boto3.client("resourcegroupstaggingapi").get_paginator` method with overloads.
 
-- `client.get_paginator("get_compliance_summary")` ->
-  [GetComplianceSummaryPaginator](./paginators.md#getcompliancesummarypaginator)
-- `client.get_paginator("get_resources")` ->
-  [GetResourcesPaginator](./paginators.md#getresourcespaginator)
-- `client.get_paginator("get_tag_keys")` ->
-  [GetTagKeysPaginator](./paginators.md#gettagkeyspaginator)
-- `client.get_paginator("get_tag_values")` ->
-  [GetTagValuesPaginator](./paginators.md#gettagvaluespaginator)
+- `client.get_paginator("get_compliance_summary")` -> [GetComplianceSummaryPaginator](./paginators.md#getcompliancesummarypaginator)
+- `client.get_paginator("get_resources")` -> [GetResourcesPaginator](./paginators.md#getresourcespaginator)
+- `client.get_paginator("get_tag_keys")` -> [GetTagKeysPaginator](./paginators.md#gettagkeyspaginator)
+- `client.get_paginator("get_tag_values")` -> [GetTagValuesPaginator](./paginators.md#gettagvaluespaginator)
+
+
+

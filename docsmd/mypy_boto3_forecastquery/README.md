@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-forecastqueryservice-module"></a>
-
-# Type annotations for boto3 ForecastQueryService module
+#  ForecastQueryService module
 
 > [Index](../README.md) > ForecastQueryService
 
-Auto-generated documentation for
-[ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
-type annotations stubs module
-[mypy-boto3-forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
+!!! note ""
 
-- [Type annotations for boto3 ForecastQueryService module](#type-annotations-for-boto3-forecastqueryservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ForecastQueryServiceClient](#forecastqueryserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
+    type annotations stubs module [mypy-boto3-forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ForecastQueryService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[forecastquery]'
 python -m pip install mypy-boto3-forecastquery
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,74 +42,62 @@ python -m pip install mypy-boto3-forecastquery
 python -m pip uninstall -y mypy-boto3-forecastquery
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="forecastqueryserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ForecastQueryServiceClient
 
-Type annotations for `boto3.client("forecastquery")` as
-[ForecastQueryServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("forecastquery")` as [ForecastQueryServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_forecastquery.client import ForecastQueryServiceClient
+
+def get_client() -> ForecastQueryServiceClient:
+    return Session().cleint("forecastquery")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [query_forecast](./client.md#query_forecast)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-ForecastQueryServiceClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- InvalidInputException
-- InvalidNextTokenException
-- LimitExceededException
-- ResourceInUseException
-- ResourceNotFoundException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_forecastquery.literals import ForecastQueryServiceServiceName
 
-```python
-from mypy_boto3_forecastquery.literals import ForecastQueryServiceServiceName, ...
+def get_value() -> ForecastQueryServiceServiceName:
+    return "forecastquery"
 ```
 
 - [ForecastQueryServiceServiceName](./literals.md#forecastqueryserviceservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_forecastquery.type_defs import DataPointTypeDef
 
-```python
-from mypy_boto3_forecastquery.type_defs import DataPointTypeDef, ...
+def get_value() -> DataPointTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
 - [DataPointTypeDef](./type_defs.md#datapointtypedef)
@@ -138,3 +105,4 @@ from mypy_boto3_forecastquery.type_defs import DataPointTypeDef, ...
 - [QueryForecastRequestRequestTypeDef](./type_defs.md#queryforecastrequestrequesttypedef)
 - [QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+

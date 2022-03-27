@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-costandusagereportservice-module"></a>
-
-# Type annotations for boto3 CostandUsageReportService module
+#  CostandUsageReportService module
 
 > [Index](../README.md) > CostandUsageReportService
 
-Auto-generated documentation for
-[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
-type annotations stubs module
-[mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
+!!! note ""
 
-- [Type annotations for boto3 CostandUsageReportService module](#type-annotations-for-boto3-costandusagereportservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CostandUsageReportServiceClient](#costandusagereportserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
+    type annotations stubs module [mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CostandUsageReportService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cur]'
 python -m pip install mypy-boto3-cur
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,75 +42,58 @@ python -m pip install mypy-boto3-cur
 python -m pip uninstall -y mypy-boto3-cur
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="costandusagereportserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CostandUsageReportServiceClient
 
-Type annotations for `boto3.client("cur")` as
-[CostandUsageReportServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cur")` as [CostandUsageReportServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cur.client import CostandUsageReportServiceClient
+
+def get_client() -> CostandUsageReportServiceClient:
+    return Session().cleint("cur")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [delete_report_definition](./client.md#delete_report_definition)
-- [describe_report_definitions](./client.md#describe_report_definitions)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [modify_report_definition](./client.md#modify_report_definition)
-- [put_report_definition](./client.md#put_report_definition)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CostandUsageReportServiceClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- DuplicateReportNameException
-- InternalErrorException
-- ReportLimitReachedException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("cur").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cur").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cur.paginator import DescribeReportDefinitionsPaginator, ...
+from mypy_boto3_cur.paginator import DescribeReportDefinitionsPaginator
+
+def get_describe_report_definitions_paginator() -> DescribeReportDefinitionsPaginator:
+    return Session().client("cur").get_paginator("describe_report_definitions"))
 ```
 
 - [DescribeReportDefinitionsPaginator](./paginators.md#describereportdefinitionspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cur.literals import AWSRegionType
 
-```python
-from mypy_boto3_cur.literals import AWSRegionType, ...
+def get_value() -> AWSRegionType:
+    return "af-south-1"
 ```
 
 - [AWSRegionType](./literals.md#awsregiontype)
@@ -147,22 +108,27 @@ from mypy_boto3_cur.literals import AWSRegionType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestRequestTypeDef
 
-```python
-from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestRequestTypeDef, ...
+def get_value() -> DeleteReportDefinitionRequestRequestTypeDef:
+    return {
+        "ReportName": ...,
+    }
 ```
 
 - [DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef)
 - [DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef)
+- [DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef](./type_defs.md#describereportdefinitionsrequestdescribereportdefinitionspaginatetypedef)
 - [DescribeReportDefinitionsRequestRequestTypeDef](./type_defs.md#describereportdefinitionsrequestrequesttypedef)
 - [DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef)
 - [ModifyReportDefinitionRequestRequestTypeDef](./type_defs.md#modifyreportdefinitionrequestrequesttypedef)
@@ -170,3 +136,4 @@ from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestRequestTypeDef
 - [PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef)
 - [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-sms-module"></a>
-
-# Type annotations for boto3 SMS module
+#  SMS module
 
 > [Index](../README.md) > SMS
 
-Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
-type annotations stubs module
-[mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
+!!! note ""
 
-- [Type annotations for boto3 SMS module](#type-annotations-for-boto3-sms-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SMSClient](#smsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
+    type annotations stubs module [mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SMS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[sms]'
 python -m pip install mypy-boto3-sms
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,99 +42,37 @@ python -m pip install mypy-boto3-sms
 python -m pip uninstall -y mypy-boto3-sms
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="smsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SMSClient
 
-Type annotations for `boto3.client("sms")` as [SMSClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("sms")` as [SMSClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_sms.client import SMSClient
+
+def get_client() -> SMSClient:
+    return Session().cleint("sms")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_app](./client.md#create_app)
-- [create_replication_job](./client.md#create_replication_job)
-- [delete_app](./client.md#delete_app)
-- [delete_app_launch_configuration](./client.md#delete_app_launch_configuration)
-- [delete_app_replication_configuration](./client.md#delete_app_replication_configuration)
-- [delete_app_validation_configuration](./client.md#delete_app_validation_configuration)
-- [delete_replication_job](./client.md#delete_replication_job)
-- [delete_server_catalog](./client.md#delete_server_catalog)
-- [disassociate_connector](./client.md#disassociate_connector)
-- [exceptions](./client.md#exceptions)
-- [generate_change_set](./client.md#generate_change_set)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [generate_template](./client.md#generate_template)
-- [get_app](./client.md#get_app)
-- [get_app_launch_configuration](./client.md#get_app_launch_configuration)
-- [get_app_replication_configuration](./client.md#get_app_replication_configuration)
-- [get_app_validation_configuration](./client.md#get_app_validation_configuration)
-- [get_app_validation_output](./client.md#get_app_validation_output)
-- [get_connectors](./client.md#get_connectors)
-- [get_paginator](./client.md#get_paginator)
-- [get_replication_jobs](./client.md#get_replication_jobs)
-- [get_replication_runs](./client.md#get_replication_runs)
-- [get_servers](./client.md#get_servers)
-- [import_app_catalog](./client.md#import_app_catalog)
-- [import_server_catalog](./client.md#import_server_catalog)
-- [launch_app](./client.md#launch_app)
-- [list_apps](./client.md#list_apps)
-- [notify_app_validation_output](./client.md#notify_app_validation_output)
-- [put_app_launch_configuration](./client.md#put_app_launch_configuration)
-- [put_app_replication_configuration](./client.md#put_app_replication_configuration)
-- [put_app_validation_configuration](./client.md#put_app_validation_configuration)
-- [start_app_replication](./client.md#start_app_replication)
-- [start_on_demand_app_replication](./client.md#start_on_demand_app_replication)
-- [start_on_demand_replication_run](./client.md#start_on_demand_replication_run)
-- [stop_app_replication](./client.md#stop_app_replication)
-- [terminate_app](./client.md#terminate_app)
-- [update_app](./client.md#update_app)
-- [update_replication_job](./client.md#update_replication_job)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SMSClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- DryRunOperationException
-- InternalError
-- InvalidParameterException
-- MissingRequiredParameterException
-- NoConnectorsAvailableException
-- OperationNotPermittedException
-- ReplicationJobAlreadyExistsException
-- ReplicationJobNotFoundException
-- ReplicationRunLimitExceededException
-- ServerCannotBeReplicatedException
-- TemporarilyUnavailableException
-- UnauthorizedOperationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("sms").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("sms").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_sms.paginator import GetConnectorsPaginator, ...
+from mypy_boto3_sms.paginator import GetConnectorsPaginator
+
+def get_get_connectors_paginator() -> GetConnectorsPaginator:
+    return Session().client("sms").get_paginator("get_connectors"))
 ```
 
 - [GetConnectorsPaginator](./paginators.md#getconnectorspaginator)
@@ -165,16 +81,23 @@ from mypy_boto3_sms.paginator import GetConnectorsPaginator, ...
 - [GetServersPaginator](./paginators.md#getserverspaginator)
 - [ListAppsPaginator](./paginators.md#listappspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sms.literals import AppLaunchConfigurationStatusType
 
-```python
-from mypy_boto3_sms.literals import AppLaunchConfigurationStatusType, ...
+def get_value() -> AppLaunchConfigurationStatusType:
+    return "CONFIGURED"
 ```
 
 - [AppLaunchConfigurationStatusType](./literals.md#applaunchconfigurationstatustype)
@@ -205,18 +128,22 @@ from mypy_boto3_sms.literals import AppLaunchConfigurationStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sms.type_defs import AppSummaryTypeDef
 
-```python
-from mypy_boto3_sms.type_defs import AppSummaryTypeDef, ...
+def get_value() -> AppSummaryTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
 - [AppSummaryTypeDef](./type_defs.md#appsummarytypedef)
@@ -247,17 +174,22 @@ from mypy_boto3_sms.type_defs import AppSummaryTypeDef, ...
 - [GetAppValidationConfigurationResponseTypeDef](./type_defs.md#getappvalidationconfigurationresponsetypedef)
 - [GetAppValidationOutputRequestRequestTypeDef](./type_defs.md#getappvalidationoutputrequestrequesttypedef)
 - [GetAppValidationOutputResponseTypeDef](./type_defs.md#getappvalidationoutputresponsetypedef)
+- [GetConnectorsRequestGetConnectorsPaginateTypeDef](./type_defs.md#getconnectorsrequestgetconnectorspaginatetypedef)
 - [GetConnectorsRequestRequestTypeDef](./type_defs.md#getconnectorsrequestrequesttypedef)
 - [GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef)
+- [GetReplicationJobsRequestGetReplicationJobsPaginateTypeDef](./type_defs.md#getreplicationjobsrequestgetreplicationjobspaginatetypedef)
 - [GetReplicationJobsRequestRequestTypeDef](./type_defs.md#getreplicationjobsrequestrequesttypedef)
 - [GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef)
+- [GetReplicationRunsRequestGetReplicationRunsPaginateTypeDef](./type_defs.md#getreplicationrunsrequestgetreplicationrunspaginatetypedef)
 - [GetReplicationRunsRequestRequestTypeDef](./type_defs.md#getreplicationrunsrequestrequesttypedef)
 - [GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef)
+- [GetServersRequestGetServersPaginateTypeDef](./type_defs.md#getserversrequestgetserverspaginatetypedef)
 - [GetServersRequestRequestTypeDef](./type_defs.md#getserversrequestrequesttypedef)
 - [GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef)
 - [ImportAppCatalogRequestRequestTypeDef](./type_defs.md#importappcatalogrequestrequesttypedef)
 - [LaunchAppRequestRequestTypeDef](./type_defs.md#launchapprequestrequesttypedef)
 - [LaunchDetailsTypeDef](./type_defs.md#launchdetailstypedef)
+- [ListAppsRequestListAppsPaginateTypeDef](./type_defs.md#listappsrequestlistappspaginatetypedef)
 - [ListAppsRequestRequestTypeDef](./type_defs.md#listappsrequestrequesttypedef)
 - [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)
 - [NotificationContextTypeDef](./type_defs.md#notificationcontexttypedef)
@@ -299,3 +231,4 @@ from mypy_boto3_sms.type_defs import AppSummaryTypeDef, ...
 - [ValidationOutputTypeDef](./type_defs.md#validationoutputtypedef)
 - [VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)
 - [VmServerTypeDef](./type_defs.md#vmservertypedef)
+

@@ -1,91 +1,139 @@
-<a id="examples-for-boto3-ecr-module"></a>
-
-# Examples for boto3 ECR module
+# Examples
 
 > [Index](../README.md) > [ECR](./README.md) > Examples
 
-- [Examples for boto3 ECR module](#examples-for-boto3-ecr-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
+    type annotations stubs module [mypy-boto3-ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[ecr]` package installed.
 
-Write your `ECR` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `ECR` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ECRClient
-# and provides type checking and code completion
-client = session.client("ecr")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BatchCheckLayerAvailabilityResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_check_layer_availability()
 
-# paginator has type DescribeImageScanFindingsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_image_scan_findings")
-for item in paginator.paginate(...):
-    # item has type DescribeImageScanFindingsResponseTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type ImageScanCompleteWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("image_scan_complete")
-waiter.wait()
-```
+    client = session.client("ecr")  # (1)
+    result = client.batch_check_layer_availability()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [ECRClient](./client.md)
+    2. result: [:material-code-braces: BatchCheckLayerAvailabilityResponseTypeDef](./type_defs.md#batchchecklayeravailabilityresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("ecr")  # (1)
+
+    paginator = client.get_paginator("describe_image_scan_findings")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ECRClient](./client.md)
+    2. paginator: [DescribeImageScanFindingsPaginator](./paginators.md#describeimagescanfindingspaginator)
+    3. item: [:material-code-braces: DescribeImageScanFindingsResponseTypeDef](./type_defs.md#describeimagescanfindingsresponsetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("ecr")  # (1)
+
+    waiter = client.get_waiter("image_scan_complete")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [ECRClient](./client.md)
+    2. waiter: [ImageScanCompleteWaiter](./waiters.md#imagescancompletewaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[ecr]` or a standalone `mypy_boto3_ecr` package, you have
-to explicitly specify `client: ECRClient` type annotation.
+With `boto3-stubs-lite[ecr]`
+or a standalone `mypy_boto3_ecr` package, you have to explicitly specify `client: ECRClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_ecr.client import ECRClient
-from mypy_boto3_ecr.paginator import DescribeImageScanFindingsPaginator
-from mypy_boto3_ecr.waiter import ImageScanCompleteWaiter
-from mypy_boto3_ecr.literals import PaginatorName
-from mypy_boto3_ecr.literals import WaiterName
-from mypy_boto3_ecr.type_defs import BatchCheckLayerAvailabilityResponseTypeDef
-from mypy_boto3_ecr.type_defs import DescribeImageScanFindingsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ECRClient = session.client("ecr")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: BatchCheckLayerAvailabilityResponseTypeDef = client.batch_check_layer_availability()
+    from mypy_boto3_ecr.client import ECRClient
+    from mypy_boto3_ecr.type_defs import BatchCheckLayerAvailabilityResponseTypeDef
+    from mypy_boto3_ecr.type_defs import BatchCheckLayerAvailabilityRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_image_scan_findings"
-paginator: DescribeImageScanFindingsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeImageScanFindingsResponseTypeDef
-    print(item)
 
-waiter_name: WaiterName = "image_scan_complete"
-waiter: ImageScanCompleteWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: ECRClient = session.client("ecr")
+
+    kwargs: BatchCheckLayerAvailabilityRequestRequestTypeDef = {...}
+    result: BatchCheckLayerAvailabilityResponseTypeDef = client.batch_check_layer_availability(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_ecr.client import ECRClient
+    from mypy_boto3_ecr.paginator import DescribeImageScanFindingsPaginator
+    from mypy_boto3_ecr.type_defs import DescribeImageScanFindingsResponseTypeDef
+
+
+    session = Session()
+    client: ECRClient = session.client("ecr")
+
+    paginator: DescribeImageScanFindingsPaginator = client.get_paginator("describe_image_scan_findings")
+    for item in paginator.paginate(...):
+        item: DescribeImageScanFindingsResponseTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_ecr.client import ECRClient
+    from mypy_boto3_ecr.waiter import ImageScanCompleteWaiter
+
+    session = Session()
+    client: ECRClient = session.client("ecr")
+
+    waiter: ImageScanCompleteWaiter = client.get_waiter("image_scan_complete")
+    waiter.wait()
+    ```
+
+

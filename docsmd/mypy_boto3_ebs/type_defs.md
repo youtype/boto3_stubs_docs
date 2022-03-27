@@ -1,308 +1,382 @@
-<a id="typed-dictionaries-for-boto3-ebs-module"></a>
-
-# Typed dictionaries for boto3 EBS module
+# Typed dictionaries
 
 > [Index](../README.md) > [EBS](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
-type annotations stubs module
-[mypy-boto3-ebs](https://pypi.org/project/mypy-boto3-ebs/).
+!!! note ""
 
-- [Typed dictionaries for boto3 EBS module](#typed-dictionaries-for-boto3-ebs-module)
-  - [BlockTypeDef](#blocktypedef)
-  - [ChangedBlockTypeDef](#changedblocktypedef)
-  - [CompleteSnapshotRequestRequestTypeDef](#completesnapshotrequestrequesttypedef)
-  - [CompleteSnapshotResponseTypeDef](#completesnapshotresponsetypedef)
-  - [GetSnapshotBlockRequestRequestTypeDef](#getsnapshotblockrequestrequesttypedef)
-  - [GetSnapshotBlockResponseTypeDef](#getsnapshotblockresponsetypedef)
-  - [ListChangedBlocksRequestRequestTypeDef](#listchangedblocksrequestrequesttypedef)
-  - [ListChangedBlocksResponseTypeDef](#listchangedblocksresponsetypedef)
-  - [ListSnapshotBlocksRequestRequestTypeDef](#listsnapshotblocksrequestrequesttypedef)
-  - [ListSnapshotBlocksResponseTypeDef](#listsnapshotblocksresponsetypedef)
-  - [PutSnapshotBlockRequestRequestTypeDef](#putsnapshotblockrequestrequesttypedef)
-  - [PutSnapshotBlockResponseTypeDef](#putsnapshotblockresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartSnapshotRequestRequestTypeDef](#startsnapshotrequestrequesttypedef)
-  - [StartSnapshotResponseTypeDef](#startsnapshotresponsetypedef)
-  - [TagTypeDef](#tagtypedef)
-
-<a id="blocktypedef"></a>
+    Auto-generated documentation for [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
+    type annotations stubs module [mypy-boto3-ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 ## BlockTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import BlockTypeDef
+
+def get_value() -> BlockTypeDef:
+    return {
+        "BlockIndex": ...,
+    }
 ```
 
-Optional fields:
-
-- `BlockIndex`: `int`
-- `BlockToken`: `str`
-
-<a id="changedblocktypedef"></a>
+```python title="Definition"
+class BlockTypeDef(TypedDict):
+    BlockIndex: NotRequired[int],
+    BlockToken: NotRequired[str],
+```
 
 ## ChangedBlockTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import ChangedBlockTypeDef
+
+def get_value() -> ChangedBlockTypeDef:
+    return {
+        "BlockIndex": ...,
+    }
 ```
 
-Optional fields:
-
-- `BlockIndex`: `int`
-- `FirstBlockToken`: `str`
-- `SecondBlockToken`: `str`
-
-<a id="completesnapshotrequestrequesttypedef"></a>
+```python title="Definition"
+class ChangedBlockTypeDef(TypedDict):
+    BlockIndex: NotRequired[int],
+    FirstBlockToken: NotRequired[str],
+    SecondBlockToken: NotRequired[str],
+```
 
 ## CompleteSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import CompleteSnapshotRequestRequestTypeDef
+
+def get_value() -> CompleteSnapshotRequestRequestTypeDef:
+    return {
+        "SnapshotId": ...,
+        "ChangedBlocksCount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CompleteSnapshotRequestRequestTypeDef(TypedDict):
+    SnapshotId: str,
+    ChangedBlocksCount: int,
+    Checksum: NotRequired[str],
+    ChecksumAlgorithm: NotRequired[ChecksumAlgorithmType],  # (1)
+    ChecksumAggregationMethod: NotRequired[ChecksumAggregationMethodType],  # (2)
+```
 
-- `SnapshotId`: `str`
-- `ChangedBlocksCount`: `int`
-
-Optional fields:
-
-- `Checksum`: `str`
-- `ChecksumAlgorithm`: `Literal['SHA256']` (see
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
-- `ChecksumAggregationMethod`: `Literal['LINEAR']` (see
-  [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype))
-
-<a id="completesnapshotresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-brackets: ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype) 
 ## CompleteSnapshotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import CompleteSnapshotResponseTypeDef
+
+def get_value() -> CompleteSnapshotResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CompleteSnapshotResponseTypeDef(TypedDict):
+    Status: StatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [StatusType](./literals.md#statustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsnapshotblockrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSnapshotBlockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import GetSnapshotBlockRequestRequestTypeDef
+
+def get_value() -> GetSnapshotBlockRequestRequestTypeDef:
+    return {
+        "SnapshotId": ...,
+        "BlockIndex": ...,
+        "BlockToken": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotId`: `str`
-- `BlockIndex`: `int`
-- `BlockToken`: `str`
-
-<a id="getsnapshotblockresponsetypedef"></a>
+```python title="Definition"
+class GetSnapshotBlockRequestRequestTypeDef(TypedDict):
+    SnapshotId: str,
+    BlockIndex: int,
+    BlockToken: str,
+```
 
 ## GetSnapshotBlockResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import GetSnapshotBlockResponseTypeDef
+
+def get_value() -> GetSnapshotBlockResponseTypeDef:
+    return {
+        "DataLength": ...,
+        "BlockData": ...,
+        "Checksum": ...,
+        "ChecksumAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSnapshotBlockResponseTypeDef(TypedDict):
+    DataLength: int,
+    BlockData: StreamingBody,
+    Checksum: str,
+    ChecksumAlgorithm: ChecksumAlgorithmType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataLength`: `int`
-- `BlockData`: `StreamingBody`
-- `Checksum`: `str`
-- `ChecksumAlgorithm`: `Literal['SHA256']` (see
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listchangedblocksrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChangedBlocksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import ListChangedBlocksRequestRequestTypeDef
+
+def get_value() -> ListChangedBlocksRequestRequestTypeDef:
+    return {
+        "SecondSnapshotId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecondSnapshotId`: `str`
-
-Optional fields:
-
-- `FirstSnapshotId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StartingBlockIndex`: `int`
-
-<a id="listchangedblocksresponsetypedef"></a>
+```python title="Definition"
+class ListChangedBlocksRequestRequestTypeDef(TypedDict):
+    SecondSnapshotId: str,
+    FirstSnapshotId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    StartingBlockIndex: NotRequired[int],
+```
 
 ## ListChangedBlocksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import ListChangedBlocksResponseTypeDef
+
+def get_value() -> ListChangedBlocksResponseTypeDef:
+    return {
+        "ChangedBlocks": ...,
+        "ExpiryTime": ...,
+        "VolumeSize": ...,
+        "BlockSize": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChangedBlocksResponseTypeDef(TypedDict):
+    ChangedBlocks: List[ChangedBlockTypeDef],  # (1)
+    ExpiryTime: datetime,
+    VolumeSize: int,
+    BlockSize: int,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangedBlocks`:
-  `List`\[[ChangedBlockTypeDef](./type_defs.md#changedblocktypedef)\]
-- `ExpiryTime`: `datetime`
-- `VolumeSize`: `int`
-- `BlockSize`: `int`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsnapshotblocksrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChangedBlockTypeDef](./type_defs.md#changedblocktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSnapshotBlocksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import ListSnapshotBlocksRequestRequestTypeDef
+
+def get_value() -> ListSnapshotBlocksRequestRequestTypeDef:
+    return {
+        "SnapshotId": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StartingBlockIndex`: `int`
-
-<a id="listsnapshotblocksresponsetypedef"></a>
+```python title="Definition"
+class ListSnapshotBlocksRequestRequestTypeDef(TypedDict):
+    SnapshotId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    StartingBlockIndex: NotRequired[int],
+```
 
 ## ListSnapshotBlocksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import ListSnapshotBlocksResponseTypeDef
+
+def get_value() -> ListSnapshotBlocksResponseTypeDef:
+    return {
+        "Blocks": ...,
+        "ExpiryTime": ...,
+        "VolumeSize": ...,
+        "BlockSize": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSnapshotBlocksResponseTypeDef(TypedDict):
+    Blocks: List[BlockTypeDef],  # (1)
+    ExpiryTime: datetime,
+    VolumeSize: int,
+    BlockSize: int,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Blocks`: `List`\[[BlockTypeDef](./type_defs.md#blocktypedef)\]
-- `ExpiryTime`: `datetime`
-- `VolumeSize`: `int`
-- `BlockSize`: `int`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putsnapshotblockrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BlockTypeDef](./type_defs.md#blocktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutSnapshotBlockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import PutSnapshotBlockRequestRequestTypeDef
+
+def get_value() -> PutSnapshotBlockRequestRequestTypeDef:
+    return {
+        "SnapshotId": ...,
+        "BlockIndex": ...,
+        "BlockData": ...,
+        "DataLength": ...,
+        "Checksum": ...,
+        "ChecksumAlgorithm": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutSnapshotBlockRequestRequestTypeDef(TypedDict):
+    SnapshotId: str,
+    BlockIndex: int,
+    BlockData: Union[bytes, IO[bytes], StreamingBody],
+    DataLength: int,
+    Checksum: str,
+    ChecksumAlgorithm: ChecksumAlgorithmType,  # (1)
+    Progress: NotRequired[int],
+```
 
-- `SnapshotId`: `str`
-- `BlockIndex`: `int`
-- `BlockData`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `DataLength`: `int`
-- `Checksum`: `str`
-- `ChecksumAlgorithm`: `Literal['SHA256']` (see
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
-
-Optional fields:
-
-- `Progress`: `int`
-
-<a id="putsnapshotblockresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 ## PutSnapshotBlockResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import PutSnapshotBlockResponseTypeDef
+
+def get_value() -> PutSnapshotBlockResponseTypeDef:
+    return {
+        "Checksum": ...,
+        "ChecksumAlgorithm": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutSnapshotBlockResponseTypeDef(TypedDict):
+    Checksum: str,
+    ChecksumAlgorithm: ChecksumAlgorithmType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Checksum`: `str`
-- `ChecksumAlgorithm`: `Literal['SHA256']` (see
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startsnapshotrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import StartSnapshotRequestRequestTypeDef
+
+def get_value() -> StartSnapshotRequestRequestTypeDef:
+    return {
+        "VolumeSize": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSnapshotRequestRequestTypeDef(TypedDict):
+    VolumeSize: int,
+    ParentSnapshotId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+    Encrypted: NotRequired[bool],
+    KmsKeyArn: NotRequired[str],
+    Timeout: NotRequired[int],
+```
 
-- `VolumeSize`: `int`
-
-Optional fields:
-
-- `ParentSnapshotId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Description`: `str`
-- `ClientToken`: `str`
-- `Encrypted`: `bool`
-- `KmsKeyArn`: `str`
-- `Timeout`: `int`
-
-<a id="startsnapshotresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## StartSnapshotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import StartSnapshotResponseTypeDef
+
+def get_value() -> StartSnapshotResponseTypeDef:
+    return {
+        "Description": ...,
+        "SnapshotId": ...,
+        "OwnerId": ...,
+        "Status": ...,
+        "StartTime": ...,
+        "VolumeSize": ...,
+        "BlockSize": ...,
+        "Tags": ...,
+        "ParentSnapshotId": ...,
+        "KmsKeyArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSnapshotResponseTypeDef(TypedDict):
+    Description: str,
+    SnapshotId: str,
+    OwnerId: str,
+    Status: StatusType,  # (1)
+    StartTime: datetime,
+    VolumeSize: int,
+    BlockSize: int,
+    Tags: List[TagTypeDef],  # (2)
+    ParentSnapshotId: str,
+    KmsKeyArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Description`: `str`
-- `SnapshotId`: `str`
-- `OwnerId`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `StartTime`: `datetime`
-- `VolumeSize`: `int`
-- `BlockSize`: `int`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ParentSnapshotId`: `str`
-- `KmsKeyArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ebs.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
-- `Key`: `str`
-- `Value`: `str`

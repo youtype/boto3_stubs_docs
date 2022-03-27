@@ -1,392 +1,512 @@
-<a id="typed-dictionaries-for-boto3-mobile-module"></a>
-
-# Typed dictionaries for boto3 Mobile module
+# Typed dictionaries
 
 > [Index](../README.md) > [Mobile](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
-type annotations stubs module
-[mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Mobile module](#typed-dictionaries-for-boto3-mobile-module)
-  - [BundleDetailsTypeDef](#bundledetailstypedef)
-  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
-  - [CreateProjectResultTypeDef](#createprojectresulttypedef)
-  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
-  - [DeleteProjectResultTypeDef](#deleteprojectresulttypedef)
-  - [DescribeBundleRequestRequestTypeDef](#describebundlerequestrequesttypedef)
-  - [DescribeBundleResultTypeDef](#describebundleresulttypedef)
-  - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
-  - [DescribeProjectResultTypeDef](#describeprojectresulttypedef)
-  - [ExportBundleRequestRequestTypeDef](#exportbundlerequestrequesttypedef)
-  - [ExportBundleResultTypeDef](#exportbundleresulttypedef)
-  - [ExportProjectRequestRequestTypeDef](#exportprojectrequestrequesttypedef)
-  - [ExportProjectResultTypeDef](#exportprojectresulttypedef)
-  - [ListBundlesRequestRequestTypeDef](#listbundlesrequestrequesttypedef)
-  - [ListBundlesResultTypeDef](#listbundlesresulttypedef)
-  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
-  - [ListProjectsResultTypeDef](#listprojectsresulttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProjectDetailsTypeDef](#projectdetailstypedef)
-  - [ProjectSummaryTypeDef](#projectsummarytypedef)
-  - [ResourceTypeDef](#resourcetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
-  - [UpdateProjectResultTypeDef](#updateprojectresulttypedef)
-
-<a id="bundledetailstypedef"></a>
+    Auto-generated documentation for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+    type annotations stubs module [mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 ## BundleDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import BundleDetailsTypeDef
+
+def get_value() -> BundleDetailsTypeDef:
+    return {
+        "bundleId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BundleDetailsTypeDef(TypedDict):
+    bundleId: NotRequired[str],
+    title: NotRequired[str],
+    version: NotRequired[str],
+    description: NotRequired[str],
+    iconUrl: NotRequired[str],
+    availablePlatforms: NotRequired[List[PlatformType]],  # (1)
+```
 
-- `bundleId`: `str`
-- `title`: `str`
-- `version`: `str`
-- `description`: `str`
-- `iconUrl`: `str`
-- `availablePlatforms`: `List`\[[PlatformType](./literals.md#platformtype)\]
-
-<a id="createprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
 ## CreateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import CreateProjectRequestRequestTypeDef
+
+def get_value() -> CreateProjectRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `region`: `str`
-- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `snapshotId`: `str`
-
-<a id="createprojectresulttypedef"></a>
+```python title="Definition"
+class CreateProjectRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    region: NotRequired[str],
+    contents: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    snapshotId: NotRequired[str],
+```
 
 ## CreateProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import CreateProjectResultTypeDef
+
+def get_value() -> CreateProjectResultTypeDef:
+    return {
+        "details": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectResultTypeDef(TypedDict):
+    details: ProjectDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import DeleteProjectRequestRequestTypeDef
+
+def get_value() -> DeleteProjectRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-
-<a id="deleteprojectresulttypedef"></a>
+```python title="Definition"
+class DeleteProjectRequestRequestTypeDef(TypedDict):
+    projectId: str,
+```
 
 ## DeleteProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import DeleteProjectResultTypeDef
+
+def get_value() -> DeleteProjectResultTypeDef:
+    return {
+        "deletedResources": ...,
+        "orphanedResources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteProjectResultTypeDef(TypedDict):
+    deletedResources: List[ResourceTypeDef],  # (1)
+    orphanedResources: List[ResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `deletedResources`:
-  `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `orphanedResources`:
-  `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describebundlerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBundleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import DescribeBundleRequestRequestTypeDef
+
+def get_value() -> DescribeBundleRequestRequestTypeDef:
+    return {
+        "bundleId": ...,
+    }
 ```
 
-Required fields:
-
-- `bundleId`: `str`
-
-<a id="describebundleresulttypedef"></a>
+```python title="Definition"
+class DescribeBundleRequestRequestTypeDef(TypedDict):
+    bundleId: str,
+```
 
 ## DescribeBundleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import DescribeBundleResultTypeDef
+
+def get_value() -> DescribeBundleResultTypeDef:
+    return {
+        "details": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBundleResultTypeDef(TypedDict):
+    details: BundleDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `details`: [BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import DescribeProjectRequestRequestTypeDef
+
+def get_value() -> DescribeProjectRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-
-Optional fields:
-
-- `syncFromResources`: `bool`
-
-<a id="describeprojectresulttypedef"></a>
+```python title="Definition"
+class DescribeProjectRequestRequestTypeDef(TypedDict):
+    projectId: str,
+    syncFromResources: NotRequired[bool],
+```
 
 ## DescribeProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import DescribeProjectResultTypeDef
+
+def get_value() -> DescribeProjectResultTypeDef:
+    return {
+        "details": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProjectResultTypeDef(TypedDict):
+    details: ProjectDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="exportbundlerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExportBundleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ExportBundleRequestRequestTypeDef
+
+def get_value() -> ExportBundleRequestRequestTypeDef:
+    return {
+        "bundleId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportBundleRequestRequestTypeDef(TypedDict):
+    bundleId: str,
+    projectId: NotRequired[str],
+    platform: NotRequired[PlatformType],  # (1)
+```
 
-- `bundleId`: `str`
-
-Optional fields:
-
-- `projectId`: `str`
-- `platform`: [PlatformType](./literals.md#platformtype)
-
-<a id="exportbundleresulttypedef"></a>
-
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
 ## ExportBundleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ExportBundleResultTypeDef
+
+def get_value() -> ExportBundleResultTypeDef:
+    return {
+        "downloadUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportBundleResultTypeDef(TypedDict):
+    downloadUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `downloadUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="exportprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExportProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ExportProjectRequestRequestTypeDef
+
+def get_value() -> ExportProjectRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-
-<a id="exportprojectresulttypedef"></a>
+```python title="Definition"
+class ExportProjectRequestRequestTypeDef(TypedDict):
+    projectId: str,
+```
 
 ## ExportProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ExportProjectResultTypeDef
+
+def get_value() -> ExportProjectResultTypeDef:
+    return {
+        "downloadUrl": ...,
+        "shareUrl": ...,
+        "snapshotId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportProjectResultTypeDef(TypedDict):
+    downloadUrl: str,
+    shareUrl: str,
+    snapshotId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `downloadUrl`: `str`
-- `shareUrl`: `str`
-- `snapshotId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBundlesRequestListBundlesPaginateTypeDef
 
-<a id="listbundlesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mobile.type_defs import ListBundlesRequestListBundlesPaginateTypeDef
 
+def get_value() -> ListBundlesRequestListBundlesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListBundlesRequestListBundlesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBundlesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ListBundlesRequestRequestTypeDef
+
+def get_value() -> ListBundlesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listbundlesresulttypedef"></a>
+```python title="Definition"
+class ListBundlesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListBundlesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ListBundlesResultTypeDef
+
+def get_value() -> ListBundlesResultTypeDef:
+    return {
+        "bundleList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBundlesResultTypeDef(TypedDict):
+    bundleList: List[BundleDetailsTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `bundleList`:
-  `List`\[[BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProjectsRequestListProjectsPaginateTypeDef
 
-<a id="listprojectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mobile.type_defs import ListProjectsRequestListProjectsPaginateTypeDef
 
+def get_value() -> ListProjectsRequestListProjectsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectsRequestListProjectsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ListProjectsRequestRequestTypeDef
+
+def get_value() -> ListProjectsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listprojectsresulttypedef"></a>
+```python title="Definition"
+class ListProjectsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListProjectsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ListProjectsResultTypeDef
+
+def get_value() -> ListProjectsResultTypeDef:
+    return {
+        "projects": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProjectsResultTypeDef(TypedDict):
+    projects: List[ProjectSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `projects`:
-  `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="projectdetailstypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProjectDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ProjectDetailsTypeDef
+
+def get_value() -> ProjectDetailsTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectDetailsTypeDef(TypedDict):
+    name: NotRequired[str],
+    projectId: NotRequired[str],
+    region: NotRequired[str],
+    state: NotRequired[ProjectStateType],  # (1)
+    createdDate: NotRequired[datetime],
+    lastUpdatedDate: NotRequired[datetime],
+    consoleUrl: NotRequired[str],
+    resources: NotRequired[List[ResourceTypeDef]],  # (2)
+```
 
-- `name`: `str`
-- `projectId`: `str`
-- `region`: `str`
-- `state`: [ProjectStateType](./literals.md#projectstatetype)
-- `createdDate`: `datetime`
-- `lastUpdatedDate`: `datetime`
-- `consoleUrl`: `str`
-- `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-
-<a id="projectsummarytypedef"></a>
-
+1. See [:material-code-brackets: ProjectStateType](./literals.md#projectstatetype) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
 ## ProjectSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ProjectSummaryTypeDef
+
+def get_value() -> ProjectSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `projectId`: `str`
-
-<a id="resourcetypedef"></a>
+```python title="Definition"
+class ProjectSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    projectId: NotRequired[str],
+```
 
 ## ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
-
-- `type`: `str`
-- `name`: `str`
-- `arn`: `str`
-- `feature`: `str`
-- `attributes`: `Dict`\[`str`, `str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    type: NotRequired[str],
+    name: NotRequired[str],
+    arn: NotRequired[str],
+    feature: NotRequired[str],
+    attributes: NotRequired[Dict[str, str]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="updateprojectrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## UpdateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import UpdateProjectRequestRequestTypeDef
+
+def get_value() -> UpdateProjectRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-
-Optional fields:
-
-- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="updateprojectresulttypedef"></a>
+```python title="Definition"
+class UpdateProjectRequestRequestTypeDef(TypedDict):
+    projectId: str,
+    contents: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## UpdateProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mobile.type_defs import UpdateProjectResultTypeDef
+
+def get_value() -> UpdateProjectResultTypeDef:
+    return {
+        "details": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectResultTypeDef(TypedDict):
+    details: ProjectDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `details`: [ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ProjectDetailsTypeDef](./type_defs.md#projectdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

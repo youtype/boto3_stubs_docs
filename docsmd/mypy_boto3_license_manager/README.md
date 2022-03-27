@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-licensemanager-module"></a>
-
-# Type annotations for boto3 LicenseManager module
+#  LicenseManager module
 
 > [Index](../README.md) > LicenseManager
 
-Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
-type annotations stubs module
-[mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
+!!! note ""
 
-- [Type annotations for boto3 LicenseManager module](#type-annotations-for-boto3-licensemanager-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [LicenseManagerClient](#licensemanagerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
+    type annotations stubs module [mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `LicenseManager`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[license-manager]'
 python -m pip install mypy-boto3-license-manager
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,118 +42,37 @@ python -m pip install mypy-boto3-license-manager
 python -m pip uninstall -y mypy-boto3-license-manager
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="licensemanagerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## LicenseManagerClient
 
-Type annotations for `boto3.client("license-manager")` as
-[LicenseManagerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("license-manager")` as [LicenseManagerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_license_manager.client import LicenseManagerClient
+
+def get_client() -> LicenseManagerClient:
+    return Session().cleint("license-manager")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_grant](./client.md#accept_grant)
-- [can_paginate](./client.md#can_paginate)
-- [check_in_license](./client.md#check_in_license)
-- [checkout_borrow_license](./client.md#checkout_borrow_license)
-- [checkout_license](./client.md#checkout_license)
-- [create_grant](./client.md#create_grant)
-- [create_grant_version](./client.md#create_grant_version)
-- [create_license](./client.md#create_license)
-- [create_license_configuration](./client.md#create_license_configuration)
-- [create_license_conversion_task_for_resource](./client.md#create_license_conversion_task_for_resource)
-- [create_license_manager_report_generator](./client.md#create_license_manager_report_generator)
-- [create_license_version](./client.md#create_license_version)
-- [create_token](./client.md#create_token)
-- [delete_grant](./client.md#delete_grant)
-- [delete_license](./client.md#delete_license)
-- [delete_license_configuration](./client.md#delete_license_configuration)
-- [delete_license_manager_report_generator](./client.md#delete_license_manager_report_generator)
-- [delete_token](./client.md#delete_token)
-- [exceptions](./client.md#exceptions)
-- [extend_license_consumption](./client.md#extend_license_consumption)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_access_token](./client.md#get_access_token)
-- [get_grant](./client.md#get_grant)
-- [get_license](./client.md#get_license)
-- [get_license_configuration](./client.md#get_license_configuration)
-- [get_license_conversion_task](./client.md#get_license_conversion_task)
-- [get_license_manager_report_generator](./client.md#get_license_manager_report_generator)
-- [get_license_usage](./client.md#get_license_usage)
-- [get_paginator](./client.md#get_paginator)
-- [get_service_settings](./client.md#get_service_settings)
-- [list_associations_for_license_configuration](./client.md#list_associations_for_license_configuration)
-- [list_distributed_grants](./client.md#list_distributed_grants)
-- [list_failures_for_license_configuration_operations](./client.md#list_failures_for_license_configuration_operations)
-- [list_license_configurations](./client.md#list_license_configurations)
-- [list_license_conversion_tasks](./client.md#list_license_conversion_tasks)
-- [list_license_manager_report_generators](./client.md#list_license_manager_report_generators)
-- [list_license_specifications_for_resource](./client.md#list_license_specifications_for_resource)
-- [list_license_versions](./client.md#list_license_versions)
-- [list_licenses](./client.md#list_licenses)
-- [list_received_grants](./client.md#list_received_grants)
-- [list_received_licenses](./client.md#list_received_licenses)
-- [list_resource_inventory](./client.md#list_resource_inventory)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_tokens](./client.md#list_tokens)
-- [list_usage_for_license_configuration](./client.md#list_usage_for_license_configuration)
-- [reject_grant](./client.md#reject_grant)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_license_configuration](./client.md#update_license_configuration)
-- [update_license_manager_report_generator](./client.md#update_license_manager_report_generator)
-- [update_license_specifications_for_resource](./client.md#update_license_specifications_for_resource)
-- [update_service_settings](./client.md#update_service_settings)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-LicenseManagerClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- AuthorizationException
-- ClientError
-- ConflictException
-- EntitlementNotAllowedException
-- FailedDependencyException
-- FilterLimitExceededException
-- InvalidParameterValueException
-- InvalidResourceStateException
-- LicenseUsageException
-- NoEntitlementsAllowedException
-- RateLimitExceededException
-- RedirectException
-- ResourceLimitExceededException
-- ResourceNotFoundException
-- ServerInternalException
-- UnsupportedDigitalSignatureMethodException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("license-manager").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("license-manager").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_license_manager.paginator import ListAssociationsForLicenseConfigurationPaginator, ...
+from mypy_boto3_license_manager.paginator import ListAssociationsForLicenseConfigurationPaginator
+
+def get_list_associations_for_license_configuration_paginator() -> ListAssociationsForLicenseConfigurationPaginator:
+    return Session().client("license-manager").get_paginator("list_associations_for_license_configuration"))
 ```
 
 - [ListAssociationsForLicenseConfigurationPaginator](./paginators.md#listassociationsforlicenseconfigurationpaginator)
@@ -184,16 +81,23 @@ from mypy_boto3_license_manager.paginator import ListAssociationsForLicenseConfi
 - [ListResourceInventoryPaginator](./paginators.md#listresourceinventorypaginator)
 - [ListUsageForLicenseConfigurationPaginator](./paginators.md#listusageforlicenseconfigurationpaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_license_manager.literals import AllowedOperationType
 
-```python
-from mypy_boto3_license_manager.literals import AllowedOperationType, ...
+def get_value() -> AllowedOperationType:
+    return "CheckInLicense"
 ```
 
 - [AllowedOperationType](./literals.md#allowedoperationtype)
@@ -223,18 +127,22 @@ from mypy_boto3_license_manager.literals import AllowedOperationType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_license_manager.type_defs import AcceptGrantRequestRequestTypeDef
 
-```python
-from mypy_boto3_license_manager.type_defs import AcceptGrantRequestRequestTypeDef, ...
+def get_value() -> AcceptGrantRequestRequestTypeDef:
+    return {
+        "GrantArn": ...,
+    }
 ```
 
 - [AcceptGrantRequestRequestTypeDef](./type_defs.md#acceptgrantrequestrequesttypedef)
@@ -307,18 +215,21 @@ from mypy_boto3_license_manager.type_defs import AcceptGrantRequestRequestTypeDe
 - [LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)
 - [LicenseTypeDef](./type_defs.md#licensetypedef)
 - [LicenseUsageTypeDef](./type_defs.md#licenseusagetypedef)
+- [ListAssociationsForLicenseConfigurationRequestListAssociationsForLicenseConfigurationPaginateTypeDef](./type_defs.md#listassociationsforlicenseconfigurationrequestlistassociationsforlicenseconfigurationpaginatetypedef)
 - [ListAssociationsForLicenseConfigurationRequestRequestTypeDef](./type_defs.md#listassociationsforlicenseconfigurationrequestrequesttypedef)
 - [ListAssociationsForLicenseConfigurationResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponsetypedef)
 - [ListDistributedGrantsRequestRequestTypeDef](./type_defs.md#listdistributedgrantsrequestrequesttypedef)
 - [ListDistributedGrantsResponseTypeDef](./type_defs.md#listdistributedgrantsresponsetypedef)
 - [ListFailuresForLicenseConfigurationOperationsRequestRequestTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsrequestrequesttypedef)
 - [ListFailuresForLicenseConfigurationOperationsResponseTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsresponsetypedef)
+- [ListLicenseConfigurationsRequestListLicenseConfigurationsPaginateTypeDef](./type_defs.md#listlicenseconfigurationsrequestlistlicenseconfigurationspaginatetypedef)
 - [ListLicenseConfigurationsRequestRequestTypeDef](./type_defs.md#listlicenseconfigurationsrequestrequesttypedef)
 - [ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef)
 - [ListLicenseConversionTasksRequestRequestTypeDef](./type_defs.md#listlicenseconversiontasksrequestrequesttypedef)
 - [ListLicenseConversionTasksResponseTypeDef](./type_defs.md#listlicenseconversiontasksresponsetypedef)
 - [ListLicenseManagerReportGeneratorsRequestRequestTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsrequestrequesttypedef)
 - [ListLicenseManagerReportGeneratorsResponseTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsresponsetypedef)
+- [ListLicenseSpecificationsForResourceRequestListLicenseSpecificationsForResourcePaginateTypeDef](./type_defs.md#listlicensespecificationsforresourcerequestlistlicensespecificationsforresourcepaginatetypedef)
 - [ListLicenseSpecificationsForResourceRequestRequestTypeDef](./type_defs.md#listlicensespecificationsforresourcerequestrequesttypedef)
 - [ListLicenseSpecificationsForResourceResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponsetypedef)
 - [ListLicenseVersionsRequestRequestTypeDef](./type_defs.md#listlicenseversionsrequestrequesttypedef)
@@ -329,12 +240,14 @@ from mypy_boto3_license_manager.type_defs import AcceptGrantRequestRequestTypeDe
 - [ListReceivedGrantsResponseTypeDef](./type_defs.md#listreceivedgrantsresponsetypedef)
 - [ListReceivedLicensesRequestRequestTypeDef](./type_defs.md#listreceivedlicensesrequestrequesttypedef)
 - [ListReceivedLicensesResponseTypeDef](./type_defs.md#listreceivedlicensesresponsetypedef)
+- [ListResourceInventoryRequestListResourceInventoryPaginateTypeDef](./type_defs.md#listresourceinventoryrequestlistresourceinventorypaginatetypedef)
 - [ListResourceInventoryRequestRequestTypeDef](./type_defs.md#listresourceinventoryrequestrequesttypedef)
 - [ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListTokensRequestRequestTypeDef](./type_defs.md#listtokensrequestrequesttypedef)
 - [ListTokensResponseTypeDef](./type_defs.md#listtokensresponsetypedef)
+- [ListUsageForLicenseConfigurationRequestListUsageForLicenseConfigurationPaginateTypeDef](./type_defs.md#listusageforlicenseconfigurationrequestlistusageforlicenseconfigurationpaginatetypedef)
 - [ListUsageForLicenseConfigurationRequestRequestTypeDef](./type_defs.md#listusageforlicenseconfigurationrequestrequesttypedef)
 - [ListUsageForLicenseConfigurationResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponsetypedef)
 - [ManagedResourceSummaryTypeDef](./type_defs.md#managedresourcesummarytypedef)
@@ -361,3 +274,4 @@ from mypy_boto3_license_manager.type_defs import AcceptGrantRequestRequestTypeDe
 - [UpdateLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#updatelicensemanagerreportgeneratorrequestrequesttypedef)
 - [UpdateLicenseSpecificationsForResourceRequestRequestTypeDef](./type_defs.md#updatelicensespecificationsforresourcerequestrequesttypedef)
 - [UpdateServiceSettingsRequestRequestTypeDef](./type_defs.md#updateservicesettingsrequestrequesttypedef)
+

@@ -1,554 +1,602 @@
-<a id="literals-for-boto3-sns-module"></a>
-
-# Literals for boto3 SNS module
+# Literals
 
 > [Index](../README.md) > [SNS](./README.md) > Literals
 
-Auto-generated documentation for
-[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module
-[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
+!!! note ""
 
-- [Literals for boto3 SNS module](#literals-for-boto3-sns-module)
-  - [LanguageCodeStringType](#languagecodestringtype)
-  - [ListEndpointsByPlatformApplicationPaginatorName](#listendpointsbyplatformapplicationpaginatorname)
-  - [ListOriginationNumbersPaginatorName](#listoriginationnumberspaginatorname)
-  - [ListPhoneNumbersOptedOutPaginatorName](#listphonenumbersoptedoutpaginatorname)
-  - [ListPlatformApplicationsPaginatorName](#listplatformapplicationspaginatorname)
-  - [ListSMSSandboxPhoneNumbersPaginatorName](#listsmssandboxphonenumberspaginatorname)
-  - [ListSubscriptionsByTopicPaginatorName](#listsubscriptionsbytopicpaginatorname)
-  - [ListSubscriptionsPaginatorName](#listsubscriptionspaginatorname)
-  - [ListTopicsPaginatorName](#listtopicspaginatorname)
-  - [NumberCapabilityType](#numbercapabilitytype)
-  - [RouteTypeType](#routetypetype)
-  - [SMSSandboxPhoneNumberVerificationStatusType](#smssandboxphonenumberverificationstatustype)
-  - [SNSServiceName](#snsservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="languagecodestringtype"></a>
+    Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+    type annotations stubs module [mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 ## LanguageCodeStringType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import LanguageCodeStringType
+
+def get_value() -> LanguageCodeStringType:
+    return "de-DE"
 ```
 
-Values:
-
-- `de-DE`
-- `en-GB`
-- `en-US`
-- `es-419`
-- `es-ES`
-- `fr-CA`
-- `fr-FR`
-- `it-IT`
-- `ja-JP`
-- `kr-KR`
-- `pt-BR`
-- `zh-CN`
-- `zh-TW`
-
-<a id="listendpointsbyplatformapplicationpaginatorname"></a>
-
+```python title="Definition"
+LanguageCodeStringType = Literal[
+    "de-DE",
+    "en-GB",
+    "en-US",
+    "es-419",
+    "es-ES",
+    "fr-CA",
+    "fr-FR",
+    "it-IT",
+    "ja-JP",
+    "kr-KR",
+    "pt-BR",
+    "zh-CN",
+    "zh-TW",
+]
+```
 ## ListEndpointsByPlatformApplicationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ListEndpointsByPlatformApplicationPaginatorName
+
+def get_value() -> ListEndpointsByPlatformApplicationPaginatorName:
+    return "list_endpoints_by_platform_application"
 ```
 
-Values:
-
-- `list_endpoints_by_platform_application`
-
-<a id="listoriginationnumberspaginatorname"></a>
-
+```python title="Definition"
+ListEndpointsByPlatformApplicationPaginatorName = Literal[
+    "list_endpoints_by_platform_application",
+]
+```
 ## ListOriginationNumbersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ListOriginationNumbersPaginatorName
+
+def get_value() -> ListOriginationNumbersPaginatorName:
+    return "list_origination_numbers"
 ```
 
-Values:
-
-- `list_origination_numbers`
-
-<a id="listphonenumbersoptedoutpaginatorname"></a>
-
+```python title="Definition"
+ListOriginationNumbersPaginatorName = Literal[
+    "list_origination_numbers",
+]
+```
 ## ListPhoneNumbersOptedOutPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ListPhoneNumbersOptedOutPaginatorName
+
+def get_value() -> ListPhoneNumbersOptedOutPaginatorName:
+    return "list_phone_numbers_opted_out"
 ```
 
-Values:
-
-- `list_phone_numbers_opted_out`
-
-<a id="listplatformapplicationspaginatorname"></a>
-
+```python title="Definition"
+ListPhoneNumbersOptedOutPaginatorName = Literal[
+    "list_phone_numbers_opted_out",
+]
+```
 ## ListPlatformApplicationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ListPlatformApplicationsPaginatorName
+
+def get_value() -> ListPlatformApplicationsPaginatorName:
+    return "list_platform_applications"
 ```
 
-Values:
-
-- `list_platform_applications`
-
-<a id="listsmssandboxphonenumberspaginatorname"></a>
-
+```python title="Definition"
+ListPlatformApplicationsPaginatorName = Literal[
+    "list_platform_applications",
+]
+```
 ## ListSMSSandboxPhoneNumbersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ListSMSSandboxPhoneNumbersPaginatorName
+
+def get_value() -> ListSMSSandboxPhoneNumbersPaginatorName:
+    return "list_sms_sandbox_phone_numbers"
 ```
 
-Values:
-
-- `list_sms_sandbox_phone_numbers`
-
-<a id="listsubscriptionsbytopicpaginatorname"></a>
-
+```python title="Definition"
+ListSMSSandboxPhoneNumbersPaginatorName = Literal[
+    "list_sms_sandbox_phone_numbers",
+]
+```
 ## ListSubscriptionsByTopicPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ListSubscriptionsByTopicPaginatorName
+
+def get_value() -> ListSubscriptionsByTopicPaginatorName:
+    return "list_subscriptions_by_topic"
 ```
 
-Values:
-
-- `list_subscriptions_by_topic`
-
-<a id="listsubscriptionspaginatorname"></a>
-
+```python title="Definition"
+ListSubscriptionsByTopicPaginatorName = Literal[
+    "list_subscriptions_by_topic",
+]
+```
 ## ListSubscriptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ListSubscriptionsPaginatorName
+
+def get_value() -> ListSubscriptionsPaginatorName:
+    return "list_subscriptions"
 ```
 
-Values:
-
-- `list_subscriptions`
-
-<a id="listtopicspaginatorname"></a>
-
+```python title="Definition"
+ListSubscriptionsPaginatorName = Literal[
+    "list_subscriptions",
+]
+```
 ## ListTopicsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ListTopicsPaginatorName
+
+def get_value() -> ListTopicsPaginatorName:
+    return "list_topics"
 ```
 
-Values:
-
-- `list_topics`
-
-<a id="numbercapabilitytype"></a>
-
+```python title="Definition"
+ListTopicsPaginatorName = Literal[
+    "list_topics",
+]
+```
 ## NumberCapabilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import NumberCapabilityType
+
+def get_value() -> NumberCapabilityType:
+    return "MMS"
 ```
 
-Values:
-
-- `MMS`
-- `SMS`
-- `VOICE`
-
-<a id="routetypetype"></a>
-
+```python title="Definition"
+NumberCapabilityType = Literal[
+    "MMS",
+    "SMS",
+    "VOICE",
+]
+```
 ## RouteTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import RouteTypeType
+
+def get_value() -> RouteTypeType:
+    return "Premium"
 ```
 
-Values:
-
-- `Premium`
-- `Promotional`
-- `Transactional`
-
-<a id="smssandboxphonenumberverificationstatustype"></a>
-
+```python title="Definition"
+RouteTypeType = Literal[
+    "Premium",
+    "Promotional",
+    "Transactional",
+]
+```
 ## SMSSandboxPhoneNumberVerificationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import SMSSandboxPhoneNumberVerificationStatusType
+
+def get_value() -> SMSSandboxPhoneNumberVerificationStatusType:
+    return "Pending"
 ```
 
-Values:
-
-- `Pending`
-- `Verified`
-
-<a id="snsservicename"></a>
-
+```python title="Definition"
+SMSSandboxPhoneNumberVerificationStatusType = Literal[
+    "Pending",
+    "Verified",
+]
+```
 ## SNSServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import SNSServiceName
+
+def get_value() -> SNSServiceName:
+    return "sns"
 ```
 
-Values:
-
-- `sns`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+SNSServiceName = Literal[
+    "sns",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sns.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_endpoints_by_platform_application"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_endpoints_by_platform_application",
+    "list_origination_numbers",
+    "list_phone_numbers_opted_out",
+    "list_platform_applications",
+    "list_sms_sandbox_phone_numbers",
+    "list_subscriptions",
+    "list_subscriptions_by_topic",
+    "list_topics",
+]
+```
+## RegionName
 
-- `list_endpoints_by_platform_application`
-- `list_origination_numbers`
-- `list_phone_numbers_opted_out`
-- `list_platform_applications`
-- `list_sms_sandbox_phone_numbers`
-- `list_subscriptions`
-- `list_subscriptions_by_topic`
-- `list_topics`
+```python title="Usage Example"
+from mypy_boto3_sns.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

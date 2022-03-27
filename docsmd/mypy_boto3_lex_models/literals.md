@@ -1,857 +1,912 @@
-<a id="literals-for-boto3-lexmodelbuildingservice-module"></a>
-
-# Literals for boto3 LexModelBuildingService module
+# Literals
 
 > [Index](../README.md) > [LexModelBuildingService](./README.md) > Literals
 
-Auto-generated documentation for
-[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
-type annotations stubs module
-[mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
+!!! note ""
 
-- [Literals for boto3 LexModelBuildingService module](#literals-for-boto3-lexmodelbuildingservice-module)
-  - [ChannelStatusType](#channelstatustype)
-  - [ChannelTypeType](#channeltypetype)
-  - [ContentTypeType](#contenttypetype)
-  - [DestinationType](#destinationtype)
-  - [ExportStatusType](#exportstatustype)
-  - [ExportTypeType](#exporttypetype)
-  - [FulfillmentActivityTypeType](#fulfillmentactivitytypetype)
-  - [GetBotAliasesPaginatorName](#getbotaliasespaginatorname)
-  - [GetBotChannelAssociationsPaginatorName](#getbotchannelassociationspaginatorname)
-  - [GetBotVersionsPaginatorName](#getbotversionspaginatorname)
-  - [GetBotsPaginatorName](#getbotspaginatorname)
-  - [GetBuiltinIntentsPaginatorName](#getbuiltinintentspaginatorname)
-  - [GetBuiltinSlotTypesPaginatorName](#getbuiltinslottypespaginatorname)
-  - [GetIntentVersionsPaginatorName](#getintentversionspaginatorname)
-  - [GetIntentsPaginatorName](#getintentspaginatorname)
-  - [GetSlotTypeVersionsPaginatorName](#getslottypeversionspaginatorname)
-  - [GetSlotTypesPaginatorName](#getslottypespaginatorname)
-  - [ImportStatusType](#importstatustype)
-  - [LocaleType](#localetype)
-  - [LogTypeType](#logtypetype)
-  - [MergeStrategyType](#mergestrategytype)
-  - [MigrationAlertTypeType](#migrationalerttypetype)
-  - [MigrationSortAttributeType](#migrationsortattributetype)
-  - [MigrationStatusType](#migrationstatustype)
-  - [MigrationStrategyType](#migrationstrategytype)
-  - [ObfuscationSettingType](#obfuscationsettingtype)
-  - [ProcessBehaviorType](#processbehaviortype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [SlotConstraintType](#slotconstrainttype)
-  - [SlotValueSelectionStrategyType](#slotvalueselectionstrategytype)
-  - [SortOrderType](#sortordertype)
-  - [StatusType](#statustype)
-  - [StatusTypeType](#statustypetype)
-  - [LexModelBuildingServiceServiceName](#lexmodelbuildingserviceservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="channelstatustype"></a>
+    Auto-generated documentation for [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+    type annotations stubs module [mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 ## ChannelStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ChannelStatusType
+
+def get_value() -> ChannelStatusType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATED`
-- `FAILED`
-- `IN_PROGRESS`
-
-<a id="channeltypetype"></a>
-
+```python title="Definition"
+ChannelStatusType = Literal[
+    "CREATED",
+    "FAILED",
+    "IN_PROGRESS",
+]
+```
 ## ChannelTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ChannelTypeType
+
+def get_value() -> ChannelTypeType:
+    return "Facebook"
 ```
 
-Values:
-
-- `Facebook`
-- `Kik`
-- `Slack`
-- `Twilio-Sms`
-
-<a id="contenttypetype"></a>
-
+```python title="Definition"
+ChannelTypeType = Literal[
+    "Facebook",
+    "Kik",
+    "Slack",
+    "Twilio-Sms",
+]
+```
 ## ContentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ContentTypeType
+
+def get_value() -> ContentTypeType:
+    return "CustomPayload"
 ```
 
-Values:
-
-- `CustomPayload`
-- `PlainText`
-- `SSML`
-
-<a id="destinationtype"></a>
-
+```python title="Definition"
+ContentTypeType = Literal[
+    "CustomPayload",
+    "PlainText",
+    "SSML",
+]
+```
 ## DestinationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import DestinationType
+
+def get_value() -> DestinationType:
+    return "CLOUDWATCH_LOGS"
 ```
 
-Values:
-
-- `CLOUDWATCH_LOGS`
-- `S3`
-
-<a id="exportstatustype"></a>
-
+```python title="Definition"
+DestinationType = Literal[
+    "CLOUDWATCH_LOGS",
+    "S3",
+]
+```
 ## ExportStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ExportStatusType
+
+def get_value() -> ExportStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `READY`
-
-<a id="exporttypetype"></a>
-
+```python title="Definition"
+ExportStatusType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "READY",
+]
+```
 ## ExportTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ExportTypeType
+
+def get_value() -> ExportTypeType:
+    return "ALEXA_SKILLS_KIT"
 ```
 
-Values:
-
-- `ALEXA_SKILLS_KIT`
-- `LEX`
-
-<a id="fulfillmentactivitytypetype"></a>
-
+```python title="Definition"
+ExportTypeType = Literal[
+    "ALEXA_SKILLS_KIT",
+    "LEX",
+]
+```
 ## FulfillmentActivityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import FulfillmentActivityTypeType
+
+def get_value() -> FulfillmentActivityTypeType:
+    return "CodeHook"
 ```
 
-Values:
-
-- `CodeHook`
-- `ReturnIntent`
-
-<a id="getbotaliasespaginatorname"></a>
-
+```python title="Definition"
+FulfillmentActivityTypeType = Literal[
+    "CodeHook",
+    "ReturnIntent",
+]
+```
 ## GetBotAliasesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetBotAliasesPaginatorName
+
+def get_value() -> GetBotAliasesPaginatorName:
+    return "get_bot_aliases"
 ```
 
-Values:
-
-- `get_bot_aliases`
-
-<a id="getbotchannelassociationspaginatorname"></a>
-
+```python title="Definition"
+GetBotAliasesPaginatorName = Literal[
+    "get_bot_aliases",
+]
+```
 ## GetBotChannelAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetBotChannelAssociationsPaginatorName
+
+def get_value() -> GetBotChannelAssociationsPaginatorName:
+    return "get_bot_channel_associations"
 ```
 
-Values:
-
-- `get_bot_channel_associations`
-
-<a id="getbotversionspaginatorname"></a>
-
+```python title="Definition"
+GetBotChannelAssociationsPaginatorName = Literal[
+    "get_bot_channel_associations",
+]
+```
 ## GetBotVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetBotVersionsPaginatorName
+
+def get_value() -> GetBotVersionsPaginatorName:
+    return "get_bot_versions"
 ```
 
-Values:
-
-- `get_bot_versions`
-
-<a id="getbotspaginatorname"></a>
-
+```python title="Definition"
+GetBotVersionsPaginatorName = Literal[
+    "get_bot_versions",
+]
+```
 ## GetBotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetBotsPaginatorName
+
+def get_value() -> GetBotsPaginatorName:
+    return "get_bots"
 ```
 
-Values:
-
-- `get_bots`
-
-<a id="getbuiltinintentspaginatorname"></a>
-
+```python title="Definition"
+GetBotsPaginatorName = Literal[
+    "get_bots",
+]
+```
 ## GetBuiltinIntentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetBuiltinIntentsPaginatorName
+
+def get_value() -> GetBuiltinIntentsPaginatorName:
+    return "get_builtin_intents"
 ```
 
-Values:
-
-- `get_builtin_intents`
-
-<a id="getbuiltinslottypespaginatorname"></a>
-
+```python title="Definition"
+GetBuiltinIntentsPaginatorName = Literal[
+    "get_builtin_intents",
+]
+```
 ## GetBuiltinSlotTypesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetBuiltinSlotTypesPaginatorName
+
+def get_value() -> GetBuiltinSlotTypesPaginatorName:
+    return "get_builtin_slot_types"
 ```
 
-Values:
-
-- `get_builtin_slot_types`
-
-<a id="getintentversionspaginatorname"></a>
-
+```python title="Definition"
+GetBuiltinSlotTypesPaginatorName = Literal[
+    "get_builtin_slot_types",
+]
+```
 ## GetIntentVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetIntentVersionsPaginatorName
+
+def get_value() -> GetIntentVersionsPaginatorName:
+    return "get_intent_versions"
 ```
 
-Values:
-
-- `get_intent_versions`
-
-<a id="getintentspaginatorname"></a>
-
+```python title="Definition"
+GetIntentVersionsPaginatorName = Literal[
+    "get_intent_versions",
+]
+```
 ## GetIntentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetIntentsPaginatorName
+
+def get_value() -> GetIntentsPaginatorName:
+    return "get_intents"
 ```
 
-Values:
-
-- `get_intents`
-
-<a id="getslottypeversionspaginatorname"></a>
-
+```python title="Definition"
+GetIntentsPaginatorName = Literal[
+    "get_intents",
+]
+```
 ## GetSlotTypeVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetSlotTypeVersionsPaginatorName
+
+def get_value() -> GetSlotTypeVersionsPaginatorName:
+    return "get_slot_type_versions"
 ```
 
-Values:
-
-- `get_slot_type_versions`
-
-<a id="getslottypespaginatorname"></a>
-
+```python title="Definition"
+GetSlotTypeVersionsPaginatorName = Literal[
+    "get_slot_type_versions",
+]
+```
 ## GetSlotTypesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import GetSlotTypesPaginatorName
+
+def get_value() -> GetSlotTypesPaginatorName:
+    return "get_slot_types"
 ```
 
-Values:
-
-- `get_slot_types`
-
-<a id="importstatustype"></a>
-
+```python title="Definition"
+GetSlotTypesPaginatorName = Literal[
+    "get_slot_types",
+]
+```
 ## ImportStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ImportStatusType
+
+def get_value() -> ImportStatusType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `FAILED`
-- `IN_PROGRESS`
-
-<a id="localetype"></a>
-
+```python title="Definition"
+ImportStatusType = Literal[
+    "COMPLETE",
+    "FAILED",
+    "IN_PROGRESS",
+]
+```
 ## LocaleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import LocaleType
+
+def get_value() -> LocaleType:
+    return "de-DE"
 ```
 
-Values:
-
-- `de-DE`
-- `en-AU`
-- `en-GB`
-- `en-IN`
-- `en-US`
-- `es-419`
-- `es-ES`
-- `es-US`
-- `fr-CA`
-- `fr-FR`
-- `it-IT`
-- `ja-JP`
-- `ko-KR`
-
-<a id="logtypetype"></a>
-
+```python title="Definition"
+LocaleType = Literal[
+    "de-DE",
+    "en-AU",
+    "en-GB",
+    "en-IN",
+    "en-US",
+    "es-419",
+    "es-ES",
+    "es-US",
+    "fr-CA",
+    "fr-FR",
+    "it-IT",
+    "ja-JP",
+    "ko-KR",
+]
+```
 ## LogTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import LogTypeType
+
+def get_value() -> LogTypeType:
+    return "AUDIO"
 ```
 
-Values:
-
-- `AUDIO`
-- `TEXT`
-
-<a id="mergestrategytype"></a>
-
+```python title="Definition"
+LogTypeType = Literal[
+    "AUDIO",
+    "TEXT",
+]
+```
 ## MergeStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import MergeStrategyType
+
+def get_value() -> MergeStrategyType:
+    return "FAIL_ON_CONFLICT"
 ```
 
-Values:
-
-- `FAIL_ON_CONFLICT`
-- `OVERWRITE_LATEST`
-
-<a id="migrationalerttypetype"></a>
-
+```python title="Definition"
+MergeStrategyType = Literal[
+    "FAIL_ON_CONFLICT",
+    "OVERWRITE_LATEST",
+]
+```
 ## MigrationAlertTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import MigrationAlertTypeType
+
+def get_value() -> MigrationAlertTypeType:
+    return "ERROR"
 ```
 
-Values:
-
-- `ERROR`
-- `WARN`
-
-<a id="migrationsortattributetype"></a>
-
+```python title="Definition"
+MigrationAlertTypeType = Literal[
+    "ERROR",
+    "WARN",
+]
+```
 ## MigrationSortAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import MigrationSortAttributeType
+
+def get_value() -> MigrationSortAttributeType:
+    return "MIGRATION_DATE_TIME"
 ```
 
-Values:
-
-- `MIGRATION_DATE_TIME`
-- `V1_BOT_NAME`
-
-<a id="migrationstatustype"></a>
-
+```python title="Definition"
+MigrationSortAttributeType = Literal[
+    "MIGRATION_DATE_TIME",
+    "V1_BOT_NAME",
+]
+```
 ## MigrationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import MigrationStatusType
+
+def get_value() -> MigrationStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `IN_PROGRESS`
-
-<a id="migrationstrategytype"></a>
-
+```python title="Definition"
+MigrationStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "IN_PROGRESS",
+]
+```
 ## MigrationStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import MigrationStrategyType
+
+def get_value() -> MigrationStrategyType:
+    return "CREATE_NEW"
 ```
 
-Values:
-
-- `CREATE_NEW`
-- `UPDATE_EXISTING`
-
-<a id="obfuscationsettingtype"></a>
-
+```python title="Definition"
+MigrationStrategyType = Literal[
+    "CREATE_NEW",
+    "UPDATE_EXISTING",
+]
+```
 ## ObfuscationSettingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ObfuscationSettingType
+
+def get_value() -> ObfuscationSettingType:
+    return "DEFAULT_OBFUSCATION"
 ```
 
-Values:
-
-- `DEFAULT_OBFUSCATION`
-- `NONE`
-
-<a id="processbehaviortype"></a>
-
+```python title="Definition"
+ObfuscationSettingType = Literal[
+    "DEFAULT_OBFUSCATION",
+    "NONE",
+]
+```
 ## ProcessBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ProcessBehaviorType
+
+def get_value() -> ProcessBehaviorType:
+    return "BUILD"
 ```
 
-Values:
-
-- `BUILD`
-- `SAVE`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+ProcessBehaviorType = Literal[
+    "BUILD",
+    "SAVE",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "BOT"
 ```
 
-Values:
-
-- `BOT`
-- `INTENT`
-- `SLOT_TYPE`
-
-<a id="slotconstrainttype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "BOT",
+    "INTENT",
+    "SLOT_TYPE",
+]
+```
 ## SlotConstraintType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import SlotConstraintType
+
+def get_value() -> SlotConstraintType:
+    return "Optional"
 ```
 
-Values:
-
-- `Optional`
-- `Required`
-
-<a id="slotvalueselectionstrategytype"></a>
-
+```python title="Definition"
+SlotConstraintType = Literal[
+    "Optional",
+    "Required",
+]
+```
 ## SlotValueSelectionStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import SlotValueSelectionStrategyType
+
+def get_value() -> SlotValueSelectionStrategyType:
+    return "ORIGINAL_VALUE"
 ```
 
-Values:
-
-- `ORIGINAL_VALUE`
-- `TOP_RESOLUTION`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+SlotValueSelectionStrategyType = Literal[
+    "ORIGINAL_VALUE",
+    "TOP_RESOLUTION",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="statustype"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## StatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import StatusType
+
+def get_value() -> StatusType:
+    return "BUILDING"
 ```
 
-Values:
-
-- `BUILDING`
-- `FAILED`
-- `NOT_BUILT`
-- `READY`
-- `READY_BASIC_TESTING`
-
-<a id="statustypetype"></a>
-
+```python title="Definition"
+StatusType = Literal[
+    "BUILDING",
+    "FAILED",
+    "NOT_BUILT",
+    "READY",
+    "READY_BASIC_TESTING",
+]
+```
 ## StatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import StatusTypeType
+
+def get_value() -> StatusTypeType:
+    return "Detected"
 ```
 
-Values:
-
-- `Detected`
-- `Missed`
-
-<a id="lexmodelbuildingserviceservicename"></a>
-
+```python title="Definition"
+StatusTypeType = Literal[
+    "Detected",
+    "Missed",
+]
+```
 ## LexModelBuildingServiceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import LexModelBuildingServiceServiceName
+
+def get_value() -> LexModelBuildingServiceServiceName:
+    return "lex-models"
 ```
 
-Values:
-
-- `lex-models`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+LexModelBuildingServiceServiceName = Literal[
+    "lex-models",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lex_models.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "get_bot_aliases"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "get_bot_aliases",
+    "get_bot_channel_associations",
+    "get_bot_versions",
+    "get_bots",
+    "get_builtin_intents",
+    "get_builtin_slot_types",
+    "get_intent_versions",
+    "get_intents",
+    "get_slot_type_versions",
+    "get_slot_types",
+]
+```
+## RegionName
 
-- `get_bot_aliases`
-- `get_bot_channel_associations`
-- `get_bot_versions`
-- `get_bots`
-- `get_builtin_intents`
-- `get_builtin_slot_types`
-- `get_intent_versions`
-- `get_intents`
-- `get_slot_type_versions`
-- `get_slot_types`
+```python title="Usage Example"
+from mypy_boto3_lex_models.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "eu-central-1",
+    "eu-west-1",
+    "eu-west-2",
+    "us-east-1",
+    "us-west-2",
+]
+```

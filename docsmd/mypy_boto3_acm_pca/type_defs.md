@@ -1,1049 +1,1372 @@
-<a id="typed-dictionaries-for-boto3-acmpca-module"></a>
-
-# Typed dictionaries for boto3 ACMPCA module
+# Typed dictionaries
 
 > [Index](../README.md) > [ACMPCA](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
-type annotations stubs module
-[mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ACMPCA module](#typed-dictionaries-for-boto3-acmpca-module)
-  - [ASN1SubjectTypeDef](#asn1subjecttypedef)
-  - [AccessDescriptionTypeDef](#accessdescriptiontypedef)
-  - [AccessMethodTypeDef](#accessmethodtypedef)
-  - [ApiPassthroughTypeDef](#apipassthroughtypedef)
-  - [CertificateAuthorityConfigurationTypeDef](#certificateauthorityconfigurationtypedef)
-  - [CertificateAuthorityTypeDef](#certificateauthoritytypedef)
-  - [CreateCertificateAuthorityAuditReportRequestRequestTypeDef](#createcertificateauthorityauditreportrequestrequesttypedef)
-  - [CreateCertificateAuthorityAuditReportResponseTypeDef](#createcertificateauthorityauditreportresponsetypedef)
-  - [CreateCertificateAuthorityRequestRequestTypeDef](#createcertificateauthorityrequestrequesttypedef)
-  - [CreateCertificateAuthorityResponseTypeDef](#createcertificateauthorityresponsetypedef)
-  - [CreatePermissionRequestRequestTypeDef](#createpermissionrequestrequesttypedef)
-  - [CrlConfigurationTypeDef](#crlconfigurationtypedef)
-  - [CsrExtensionsTypeDef](#csrextensionstypedef)
-  - [CustomAttributeTypeDef](#customattributetypedef)
-  - [CustomExtensionTypeDef](#customextensiontypedef)
-  - [DeleteCertificateAuthorityRequestRequestTypeDef](#deletecertificateauthorityrequestrequesttypedef)
-  - [DeletePermissionRequestRequestTypeDef](#deletepermissionrequestrequesttypedef)
-  - [DeletePolicyRequestRequestTypeDef](#deletepolicyrequestrequesttypedef)
-  - [DescribeCertificateAuthorityAuditReportRequestRequestTypeDef](#describecertificateauthorityauditreportrequestrequesttypedef)
-  - [DescribeCertificateAuthorityAuditReportResponseTypeDef](#describecertificateauthorityauditreportresponsetypedef)
-  - [DescribeCertificateAuthorityRequestRequestTypeDef](#describecertificateauthorityrequestrequesttypedef)
-  - [DescribeCertificateAuthorityResponseTypeDef](#describecertificateauthorityresponsetypedef)
-  - [EdiPartyNameTypeDef](#edipartynametypedef)
-  - [ExtendedKeyUsageTypeDef](#extendedkeyusagetypedef)
-  - [ExtensionsTypeDef](#extensionstypedef)
-  - [GeneralNameTypeDef](#generalnametypedef)
-  - [GetCertificateAuthorityCertificateRequestRequestTypeDef](#getcertificateauthoritycertificaterequestrequesttypedef)
-  - [GetCertificateAuthorityCertificateResponseTypeDef](#getcertificateauthoritycertificateresponsetypedef)
-  - [GetCertificateAuthorityCsrRequestRequestTypeDef](#getcertificateauthoritycsrrequestrequesttypedef)
-  - [GetCertificateAuthorityCsrResponseTypeDef](#getcertificateauthoritycsrresponsetypedef)
-  - [GetCertificateRequestRequestTypeDef](#getcertificaterequestrequesttypedef)
-  - [GetCertificateResponseTypeDef](#getcertificateresponsetypedef)
-  - [GetPolicyRequestRequestTypeDef](#getpolicyrequestrequesttypedef)
-  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
-  - [ImportCertificateAuthorityCertificateRequestRequestTypeDef](#importcertificateauthoritycertificaterequestrequesttypedef)
-  - [IssueCertificateRequestRequestTypeDef](#issuecertificaterequestrequesttypedef)
-  - [IssueCertificateResponseTypeDef](#issuecertificateresponsetypedef)
-  - [KeyUsageTypeDef](#keyusagetypedef)
-  - [ListCertificateAuthoritiesRequestRequestTypeDef](#listcertificateauthoritiesrequestrequesttypedef)
-  - [ListCertificateAuthoritiesResponseTypeDef](#listcertificateauthoritiesresponsetypedef)
-  - [ListPermissionsRequestRequestTypeDef](#listpermissionsrequestrequesttypedef)
-  - [ListPermissionsResponseTypeDef](#listpermissionsresponsetypedef)
-  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
-  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
-  - [OcspConfigurationTypeDef](#ocspconfigurationtypedef)
-  - [OtherNameTypeDef](#othernametypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PermissionTypeDef](#permissiontypedef)
-  - [PolicyInformationTypeDef](#policyinformationtypedef)
-  - [PolicyQualifierInfoTypeDef](#policyqualifierinfotypedef)
-  - [PutPolicyRequestRequestTypeDef](#putpolicyrequestrequesttypedef)
-  - [QualifierTypeDef](#qualifiertypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreCertificateAuthorityRequestRequestTypeDef](#restorecertificateauthorityrequestrequesttypedef)
-  - [RevocationConfigurationTypeDef](#revocationconfigurationtypedef)
-  - [RevokeCertificateRequestRequestTypeDef](#revokecertificaterequestrequesttypedef)
-  - [TagCertificateAuthorityRequestRequestTypeDef](#tagcertificateauthorityrequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagCertificateAuthorityRequestRequestTypeDef](#untagcertificateauthorityrequestrequesttypedef)
-  - [UpdateCertificateAuthorityRequestRequestTypeDef](#updatecertificateauthorityrequestrequesttypedef)
-  - [ValidityTypeDef](#validitytypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="asn1subjecttypedef"></a>
+    Auto-generated documentation for [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+    type annotations stubs module [mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 ## ASN1SubjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ASN1SubjectTypeDef
+
+def get_value() -> ASN1SubjectTypeDef:
+    return {
+        "Country": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ASN1SubjectTypeDef(TypedDict):
+    Country: NotRequired[str],
+    Organization: NotRequired[str],
+    OrganizationalUnit: NotRequired[str],
+    DistinguishedNameQualifier: NotRequired[str],
+    State: NotRequired[str],
+    CommonName: NotRequired[str],
+    SerialNumber: NotRequired[str],
+    Locality: NotRequired[str],
+    Title: NotRequired[str],
+    Surname: NotRequired[str],
+    GivenName: NotRequired[str],
+    Initials: NotRequired[str],
+    Pseudonym: NotRequired[str],
+    GenerationQualifier: NotRequired[str],
+    CustomAttributes: NotRequired[Sequence[CustomAttributeTypeDef]],  # (1)
+```
 
-- `Country`: `str`
-- `Organization`: `str`
-- `OrganizationalUnit`: `str`
-- `DistinguishedNameQualifier`: `str`
-- `State`: `str`
-- `CommonName`: `str`
-- `SerialNumber`: `str`
-- `Locality`: `str`
-- `Title`: `str`
-- `Surname`: `str`
-- `GivenName`: `str`
-- `Initials`: `str`
-- `Pseudonym`: `str`
-- `GenerationQualifier`: `str`
-- `CustomAttributes`:
-  `Sequence`\[[CustomAttributeTypeDef](./type_defs.md#customattributetypedef)\]
-
-<a id="accessdescriptiontypedef"></a>
-
+1. See [:material-code-braces: CustomAttributeTypeDef](./type_defs.md#customattributetypedef) 
 ## AccessDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import AccessDescriptionTypeDef
+
+def get_value() -> AccessDescriptionTypeDef:
+    return {
+        "AccessMethod": ...,
+        "AccessLocation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessDescriptionTypeDef(TypedDict):
+    AccessMethod: AccessMethodTypeDef,  # (1)
+    AccessLocation: GeneralNameTypeDef,  # (2)
+```
 
-- `AccessMethod`: [AccessMethodTypeDef](./type_defs.md#accessmethodtypedef)
-- `AccessLocation`: [GeneralNameTypeDef](./type_defs.md#generalnametypedef)
-
-<a id="accessmethodtypedef"></a>
-
+1. See [:material-code-braces: AccessMethodTypeDef](./type_defs.md#accessmethodtypedef) 
+2. See [:material-code-braces: GeneralNameTypeDef](./type_defs.md#generalnametypedef) 
 ## AccessMethodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import AccessMethodTypeDef
+
+def get_value() -> AccessMethodTypeDef:
+    return {
+        "CustomObjectIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccessMethodTypeDef(TypedDict):
+    CustomObjectIdentifier: NotRequired[str],
+    AccessMethodType: NotRequired[AccessMethodTypeType],  # (1)
+```
 
-- `CustomObjectIdentifier`: `str`
-- `AccessMethodType`:
-  [AccessMethodTypeType](./literals.md#accessmethodtypetype)
-
-<a id="apipassthroughtypedef"></a>
-
+1. See [:material-code-brackets: AccessMethodTypeType](./literals.md#accessmethodtypetype) 
 ## ApiPassthroughTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ApiPassthroughTypeDef
+
+def get_value() -> ApiPassthroughTypeDef:
+    return {
+        "Extensions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApiPassthroughTypeDef(TypedDict):
+    Extensions: NotRequired[ExtensionsTypeDef],  # (1)
+    Subject: NotRequired[ASN1SubjectTypeDef],  # (2)
+```
 
-- `Extensions`: [ExtensionsTypeDef](./type_defs.md#extensionstypedef)
-- `Subject`: [ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef)
-
-<a id="certificateauthorityconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ExtensionsTypeDef](./type_defs.md#extensionstypedef) 
+2. See [:material-code-braces: ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef) 
 ## CertificateAuthorityConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CertificateAuthorityConfigurationTypeDef
+
+def get_value() -> CertificateAuthorityConfigurationTypeDef:
+    return {
+        "KeyAlgorithm": ...,
+        "SigningAlgorithm": ...,
+        "Subject": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CertificateAuthorityConfigurationTypeDef(TypedDict):
+    KeyAlgorithm: KeyAlgorithmType,  # (1)
+    SigningAlgorithm: SigningAlgorithmType,  # (2)
+    Subject: ASN1SubjectTypeDef,  # (3)
+    CsrExtensions: NotRequired[CsrExtensionsTypeDef],  # (4)
+```
 
-- `KeyAlgorithm`: [KeyAlgorithmType](./literals.md#keyalgorithmtype)
-- `SigningAlgorithm`:
-  [SigningAlgorithmType](./literals.md#signingalgorithmtype)
-- `Subject`: [ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef)
-
-Optional fields:
-
-- `CsrExtensions`: [CsrExtensionsTypeDef](./type_defs.md#csrextensionstypedef)
-
-<a id="certificateauthoritytypedef"></a>
-
+1. See [:material-code-brackets: KeyAlgorithmType](./literals.md#keyalgorithmtype) 
+2. See [:material-code-brackets: SigningAlgorithmType](./literals.md#signingalgorithmtype) 
+3. See [:material-code-braces: ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef) 
+4. See [:material-code-braces: CsrExtensionsTypeDef](./type_defs.md#csrextensionstypedef) 
 ## CertificateAuthorityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CertificateAuthorityTypeDef
+
+def get_value() -> CertificateAuthorityTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CertificateAuthorityTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    OwnerAccount: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    LastStateChangeAt: NotRequired[datetime],
+    Type: NotRequired[CertificateAuthorityTypeType],  # (1)
+    Serial: NotRequired[str],
+    Status: NotRequired[CertificateAuthorityStatusType],  # (2)
+    NotBefore: NotRequired[datetime],
+    NotAfter: NotRequired[datetime],
+    FailureReason: NotRequired[FailureReasonType],  # (3)
+    CertificateAuthorityConfiguration: NotRequired[CertificateAuthorityConfigurationTypeDef],  # (4)
+    RevocationConfiguration: NotRequired[RevocationConfigurationTypeDef],  # (5)
+    RestorableUntil: NotRequired[datetime],
+    KeyStorageSecurityStandard: NotRequired[KeyStorageSecurityStandardType],  # (6)
+```
 
-- `Arn`: `str`
-- `OwnerAccount`: `str`
-- `CreatedAt`: `datetime`
-- `LastStateChangeAt`: `datetime`
-- `Type`:
-  [CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype)
-- `Serial`: `str`
-- `Status`:
-  [CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype)
-- `NotBefore`: `datetime`
-- `NotAfter`: `datetime`
-- `FailureReason`: [FailureReasonType](./literals.md#failurereasontype)
-- `CertificateAuthorityConfiguration`:
-  [CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef)
-- `RevocationConfiguration`:
-  [RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef)
-- `RestorableUntil`: `datetime`
-- `KeyStorageSecurityStandard`:
-  [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
-
-<a id="createcertificateauthorityauditreportrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype) 
+2. See [:material-code-brackets: CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype) 
+3. See [:material-code-brackets: FailureReasonType](./literals.md#failurereasontype) 
+4. See [:material-code-braces: CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef) 
+5. See [:material-code-braces: RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef) 
+6. See [:material-code-brackets: KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype) 
 ## CreateCertificateAuthorityAuditReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityAuditReportRequestRequestTypeDef
+
+def get_value() -> CreateCertificateAuthorityAuditReportRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "S3BucketName": ...,
+        "AuditReportResponseFormat": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCertificateAuthorityAuditReportRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    S3BucketName: str,
+    AuditReportResponseFormat: AuditReportResponseFormatType,  # (1)
+```
 
-- `CertificateAuthorityArn`: `str`
-- `S3BucketName`: `str`
-- `AuditReportResponseFormat`:
-  [AuditReportResponseFormatType](./literals.md#auditreportresponseformattype)
-
-<a id="createcertificateauthorityauditreportresponsetypedef"></a>
-
+1. See [:material-code-brackets: AuditReportResponseFormatType](./literals.md#auditreportresponseformattype) 
 ## CreateCertificateAuthorityAuditReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityAuditReportResponseTypeDef
+
+def get_value() -> CreateCertificateAuthorityAuditReportResponseTypeDef:
+    return {
+        "AuditReportId": ...,
+        "S3Key": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCertificateAuthorityAuditReportResponseTypeDef(TypedDict):
+    AuditReportId: str,
+    S3Key: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AuditReportId`: `str`
-- `S3Key`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcertificateauthorityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCertificateAuthorityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityRequestRequestTypeDef
+
+def get_value() -> CreateCertificateAuthorityRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityConfiguration": ...,
+        "CertificateAuthorityType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCertificateAuthorityRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityConfiguration: CertificateAuthorityConfigurationTypeDef,  # (1)
+    CertificateAuthorityType: CertificateAuthorityTypeType,  # (2)
+    RevocationConfiguration: NotRequired[RevocationConfigurationTypeDef],  # (3)
+    IdempotencyToken: NotRequired[str],
+    KeyStorageSecurityStandard: NotRequired[KeyStorageSecurityStandardType],  # (4)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+```
 
-- `CertificateAuthorityConfiguration`:
-  [CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef)
-- `CertificateAuthorityType`:
-  [CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype)
-
-Optional fields:
-
-- `RevocationConfiguration`:
-  [RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef)
-- `IdempotencyToken`: `str`
-- `KeyStorageSecurityStandard`:
-  [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createcertificateauthorityresponsetypedef"></a>
-
+1. See [:material-code-braces: CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef) 
+2. See [:material-code-brackets: CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype) 
+3. See [:material-code-braces: RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef) 
+4. See [:material-code-brackets: KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateCertificateAuthorityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityResponseTypeDef
+
+def get_value() -> CreateCertificateAuthorityResponseTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCertificateAuthorityResponseTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CertificateAuthorityArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpermissionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CreatePermissionRequestRequestTypeDef
+
+def get_value() -> CreatePermissionRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "Principal": ...,
+        "Actions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePermissionRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    Principal: str,
+    Actions: Sequence[ActionTypeType],  # (1)
+    SourceAccount: NotRequired[str],
+```
 
-- `CertificateAuthorityArn`: `str`
-- `Principal`: `str`
-- `Actions`: `Sequence`\[[ActionTypeType](./literals.md#actiontypetype)\]
-
-Optional fields:
-
-- `SourceAccount`: `str`
-
-<a id="crlconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
 ## CrlConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CrlConfigurationTypeDef
+
+def get_value() -> CrlConfigurationTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CrlConfigurationTypeDef(TypedDict):
+    Enabled: bool,
+    ExpirationInDays: NotRequired[int],
+    CustomCname: NotRequired[str],
+    S3BucketName: NotRequired[str],
+    S3ObjectAcl: NotRequired[S3ObjectAclType],  # (1)
+```
 
-- `Enabled`: `bool`
-
-Optional fields:
-
-- `ExpirationInDays`: `int`
-- `CustomCname`: `str`
-- `S3BucketName`: `str`
-- `S3ObjectAcl`: [S3ObjectAclType](./literals.md#s3objectacltype)
-
-<a id="csrextensionstypedef"></a>
-
+1. See [:material-code-brackets: S3ObjectAclType](./literals.md#s3objectacltype) 
 ## CsrExtensionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CsrExtensionsTypeDef
+
+def get_value() -> CsrExtensionsTypeDef:
+    return {
+        "KeyUsage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CsrExtensionsTypeDef(TypedDict):
+    KeyUsage: NotRequired[KeyUsageTypeDef],  # (1)
+    SubjectInformationAccess: NotRequired[Sequence[AccessDescriptionTypeDef]],  # (2)
+```
 
-- `KeyUsage`: [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
-- `SubjectInformationAccess`:
-  `Sequence`\[[AccessDescriptionTypeDef](./type_defs.md#accessdescriptiontypedef)\]
-
-<a id="customattributetypedef"></a>
-
+1. See [:material-code-braces: KeyUsageTypeDef](./type_defs.md#keyusagetypedef) 
+2. See [:material-code-braces: AccessDescriptionTypeDef](./type_defs.md#accessdescriptiontypedef) 
 ## CustomAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CustomAttributeTypeDef
+
+def get_value() -> CustomAttributeTypeDef:
+    return {
+        "ObjectIdentifier": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `ObjectIdentifier`: `str`
-- `Value`: `str`
-
-<a id="customextensiontypedef"></a>
+```python title="Definition"
+class CustomAttributeTypeDef(TypedDict):
+    ObjectIdentifier: str,
+    Value: str,
+```
 
 ## CustomExtensionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import CustomExtensionTypeDef
+
+def get_value() -> CustomExtensionTypeDef:
+    return {
+        "ObjectIdentifier": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `ObjectIdentifier`: `str`
-- `Value`: `str`
-
-Optional fields:
-
-- `Critical`: `bool`
-
-<a id="deletecertificateauthorityrequestrequesttypedef"></a>
+```python title="Definition"
+class CustomExtensionTypeDef(TypedDict):
+    ObjectIdentifier: str,
+    Value: str,
+    Critical: NotRequired[bool],
+```
 
 ## DeleteCertificateAuthorityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import DeleteCertificateAuthorityRequestRequestTypeDef
+
+def get_value() -> DeleteCertificateAuthorityRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-
-Optional fields:
-
-- `PermanentDeletionTimeInDays`: `int`
-
-<a id="deletepermissionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCertificateAuthorityRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    PermanentDeletionTimeInDays: NotRequired[int],
+```
 
 ## DeletePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import DeletePermissionRequestRequestTypeDef
+
+def get_value() -> DeletePermissionRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "Principal": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-- `Principal`: `str`
-
-Optional fields:
-
-- `SourceAccount`: `str`
-
-<a id="deletepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePermissionRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    Principal: str,
+    SourceAccount: NotRequired[str],
+```
 
 ## DeletePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import DeletePolicyRequestRequestTypeDef
+
+def get_value() -> DeletePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeletePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
-- `ResourceArn`: `str`
+## DescribeCertificateAuthorityAuditReportRequestAuditReportCreatedWaitTypeDef
 
-<a id="describecertificateauthorityauditreportrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityAuditReportRequestAuditReportCreatedWaitTypeDef
 
+def get_value() -> DescribeCertificateAuthorityAuditReportRequestAuditReportCreatedWaitTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "AuditReportId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCertificateAuthorityAuditReportRequestAuditReportCreatedWaitTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    AuditReportId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeCertificateAuthorityAuditReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityAuditReportRequestRequestTypeDef
+
+def get_value() -> DescribeCertificateAuthorityAuditReportRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "AuditReportId": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-- `AuditReportId`: `str`
-
-<a id="describecertificateauthorityauditreportresponsetypedef"></a>
+```python title="Definition"
+class DescribeCertificateAuthorityAuditReportRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    AuditReportId: str,
+```
 
 ## DescribeCertificateAuthorityAuditReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityAuditReportResponseTypeDef
+
+def get_value() -> DescribeCertificateAuthorityAuditReportResponseTypeDef:
+    return {
+        "AuditReportStatus": ...,
+        "S3BucketName": ...,
+        "S3Key": ...,
+        "CreatedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCertificateAuthorityAuditReportResponseTypeDef(TypedDict):
+    AuditReportStatus: AuditReportStatusType,  # (1)
+    S3BucketName: str,
+    S3Key: str,
+    CreatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AuditReportStatus`:
-  [AuditReportStatusType](./literals.md#auditreportstatustype)
-- `S3BucketName`: `str`
-- `S3Key`: `str`
-- `CreatedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecertificateauthorityrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AuditReportStatusType](./literals.md#auditreportstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCertificateAuthorityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityRequestRequestTypeDef
+
+def get_value() -> DescribeCertificateAuthorityRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-
-<a id="describecertificateauthorityresponsetypedef"></a>
+```python title="Definition"
+class DescribeCertificateAuthorityRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+```
 
 ## DescribeCertificateAuthorityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import DescribeCertificateAuthorityResponseTypeDef
+
+def get_value() -> DescribeCertificateAuthorityResponseTypeDef:
+    return {
+        "CertificateAuthority": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCertificateAuthorityResponseTypeDef(TypedDict):
+    CertificateAuthority: CertificateAuthorityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CertificateAuthority`:
-  [CertificateAuthorityTypeDef](./type_defs.md#certificateauthoritytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="edipartynametypedef"></a>
-
+1. See [:material-code-braces: CertificateAuthorityTypeDef](./type_defs.md#certificateauthoritytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EdiPartyNameTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import EdiPartyNameTypeDef
+
+def get_value() -> EdiPartyNameTypeDef:
+    return {
+        "PartyName": ...,
+    }
 ```
 
-Required fields:
-
-- `PartyName`: `str`
-
-Optional fields:
-
-- `NameAssigner`: `str`
-
-<a id="extendedkeyusagetypedef"></a>
+```python title="Definition"
+class EdiPartyNameTypeDef(TypedDict):
+    PartyName: str,
+    NameAssigner: NotRequired[str],
+```
 
 ## ExtendedKeyUsageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ExtendedKeyUsageTypeDef
+
+def get_value() -> ExtendedKeyUsageTypeDef:
+    return {
+        "ExtendedKeyUsageType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExtendedKeyUsageTypeDef(TypedDict):
+    ExtendedKeyUsageType: NotRequired[ExtendedKeyUsageTypeType],  # (1)
+    ExtendedKeyUsageObjectIdentifier: NotRequired[str],
+```
 
-- `ExtendedKeyUsageType`:
-  [ExtendedKeyUsageTypeType](./literals.md#extendedkeyusagetypetype)
-- `ExtendedKeyUsageObjectIdentifier`: `str`
-
-<a id="extensionstypedef"></a>
-
+1. See [:material-code-brackets: ExtendedKeyUsageTypeType](./literals.md#extendedkeyusagetypetype) 
 ## ExtensionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ExtensionsTypeDef
+
+def get_value() -> ExtensionsTypeDef:
+    return {
+        "CertificatePolicies": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExtensionsTypeDef(TypedDict):
+    CertificatePolicies: NotRequired[Sequence[PolicyInformationTypeDef]],  # (1)
+    ExtendedKeyUsage: NotRequired[Sequence[ExtendedKeyUsageTypeDef]],  # (2)
+    KeyUsage: NotRequired[KeyUsageTypeDef],  # (3)
+    SubjectAlternativeNames: NotRequired[Sequence[GeneralNameTypeDef]],  # (4)
+    CustomExtensions: NotRequired[Sequence[CustomExtensionTypeDef]],  # (5)
+```
 
-- `CertificatePolicies`:
-  `Sequence`\[[PolicyInformationTypeDef](./type_defs.md#policyinformationtypedef)\]
-- `ExtendedKeyUsage`:
-  `Sequence`\[[ExtendedKeyUsageTypeDef](./type_defs.md#extendedkeyusagetypedef)\]
-- `KeyUsage`: [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
-- `SubjectAlternativeNames`:
-  `Sequence`\[[GeneralNameTypeDef](./type_defs.md#generalnametypedef)\]
-- `CustomExtensions`:
-  `Sequence`\[[CustomExtensionTypeDef](./type_defs.md#customextensiontypedef)\]
-
-<a id="generalnametypedef"></a>
-
+1. See [:material-code-braces: PolicyInformationTypeDef](./type_defs.md#policyinformationtypedef) 
+2. See [:material-code-braces: ExtendedKeyUsageTypeDef](./type_defs.md#extendedkeyusagetypedef) 
+3. See [:material-code-braces: KeyUsageTypeDef](./type_defs.md#keyusagetypedef) 
+4. See [:material-code-braces: GeneralNameTypeDef](./type_defs.md#generalnametypedef) 
+5. See [:material-code-braces: CustomExtensionTypeDef](./type_defs.md#customextensiontypedef) 
 ## GeneralNameTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import GeneralNameTypeDef
+
+def get_value() -> GeneralNameTypeDef:
+    return {
+        "OtherName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GeneralNameTypeDef(TypedDict):
+    OtherName: NotRequired[OtherNameTypeDef],  # (1)
+    Rfc822Name: NotRequired[str],
+    DnsName: NotRequired[str],
+    DirectoryName: NotRequired[ASN1SubjectTypeDef],  # (2)
+    EdiPartyName: NotRequired[EdiPartyNameTypeDef],  # (3)
+    UniformResourceIdentifier: NotRequired[str],
+    IpAddress: NotRequired[str],
+    RegisteredId: NotRequired[str],
+```
 
-- `OtherName`: [OtherNameTypeDef](./type_defs.md#othernametypedef)
-- `Rfc822Name`: `str`
-- `DnsName`: `str`
-- `DirectoryName`: [ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef)
-- `EdiPartyName`: [EdiPartyNameTypeDef](./type_defs.md#edipartynametypedef)
-- `UniformResourceIdentifier`: `str`
-- `IpAddress`: `str`
-- `RegisteredId`: `str`
-
-<a id="getcertificateauthoritycertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OtherNameTypeDef](./type_defs.md#othernametypedef) 
+2. See [:material-code-braces: ASN1SubjectTypeDef](./type_defs.md#asn1subjecttypedef) 
+3. See [:material-code-braces: EdiPartyNameTypeDef](./type_defs.md#edipartynametypedef) 
 ## GetCertificateAuthorityCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCertificateRequestRequestTypeDef
+
+def get_value() -> GetCertificateAuthorityCertificateRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-
-<a id="getcertificateauthoritycertificateresponsetypedef"></a>
+```python title="Definition"
+class GetCertificateAuthorityCertificateRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+```
 
 ## GetCertificateAuthorityCertificateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCertificateResponseTypeDef
+
+def get_value() -> GetCertificateAuthorityCertificateResponseTypeDef:
+    return {
+        "Certificate": ...,
+        "CertificateChain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCertificateAuthorityCertificateResponseTypeDef(TypedDict):
+    Certificate: str,
+    CertificateChain: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Certificate`: `str`
-- `CertificateChain`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCertificateAuthorityCsrRequestCertificateAuthorityCSRCreatedWaitTypeDef
 
-<a id="getcertificateauthoritycsrrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCsrRequestCertificateAuthorityCSRCreatedWaitTypeDef
 
+def get_value() -> GetCertificateAuthorityCsrRequestCertificateAuthorityCSRCreatedWaitTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetCertificateAuthorityCsrRequestCertificateAuthorityCSRCreatedWaitTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetCertificateAuthorityCsrRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCsrRequestRequestTypeDef
+
+def get_value() -> GetCertificateAuthorityCsrRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-
-<a id="getcertificateauthoritycsrresponsetypedef"></a>
+```python title="Definition"
+class GetCertificateAuthorityCsrRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+```
 
 ## GetCertificateAuthorityCsrResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import GetCertificateAuthorityCsrResponseTypeDef
+
+def get_value() -> GetCertificateAuthorityCsrResponseTypeDef:
+    return {
+        "Csr": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCertificateAuthorityCsrResponseTypeDef(TypedDict):
+    Csr: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Csr`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCertificateRequestCertificateIssuedWaitTypeDef
 
-<a id="getcertificaterequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_acm_pca.type_defs import GetCertificateRequestCertificateIssuedWaitTypeDef
 
+def get_value() -> GetCertificateRequestCertificateIssuedWaitTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "CertificateArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetCertificateRequestCertificateIssuedWaitTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    CertificateArn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import GetCertificateRequestRequestTypeDef
+
+def get_value() -> GetCertificateRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "CertificateArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-- `CertificateArn`: `str`
-
-<a id="getcertificateresponsetypedef"></a>
+```python title="Definition"
+class GetCertificateRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    CertificateArn: str,
+```
 
 ## GetCertificateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import GetCertificateResponseTypeDef
+
+def get_value() -> GetCertificateResponseTypeDef:
+    return {
+        "Certificate": ...,
+        "CertificateChain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCertificateResponseTypeDef(TypedDict):
+    Certificate: str,
+    CertificateChain: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Certificate`: `str`
-- `CertificateChain`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import GetPolicyRequestRequestTypeDef
+
+def get_value() -> GetPolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="getpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetPolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## GetPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import GetPolicyResponseTypeDef
+
+def get_value() -> GetPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="importcertificateauthoritycertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportCertificateAuthorityCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ImportCertificateAuthorityCertificateRequestRequestTypeDef
+
+def get_value() -> ImportCertificateAuthorityCertificateRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "Certificate": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-- `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-Optional fields:
-
-- `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="issuecertificaterequestrequesttypedef"></a>
+```python title="Definition"
+class ImportCertificateAuthorityCertificateRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    Certificate: Union[bytes, IO[bytes], StreamingBody],
+    CertificateChain: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## IssueCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import IssueCertificateRequestRequestTypeDef
+
+def get_value() -> IssueCertificateRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "Csr": ...,
+        "SigningAlgorithm": ...,
+        "Validity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IssueCertificateRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    Csr: Union[bytes, IO[bytes], StreamingBody],
+    SigningAlgorithm: SigningAlgorithmType,  # (1)
+    Validity: ValidityTypeDef,  # (2)
+    ApiPassthrough: NotRequired[ApiPassthroughTypeDef],  # (3)
+    TemplateArn: NotRequired[str],
+    ValidityNotBefore: NotRequired[ValidityTypeDef],  # (2)
+    IdempotencyToken: NotRequired[str],
+```
 
-- `CertificateAuthorityArn`: `str`
-- `Csr`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `SigningAlgorithm`:
-  [SigningAlgorithmType](./literals.md#signingalgorithmtype)
-- `Validity`: [ValidityTypeDef](./type_defs.md#validitytypedef)
-
-Optional fields:
-
-- `ApiPassthrough`:
-  [ApiPassthroughTypeDef](./type_defs.md#apipassthroughtypedef)
-- `TemplateArn`: `str`
-- `ValidityNotBefore`: [ValidityTypeDef](./type_defs.md#validitytypedef)
-- `IdempotencyToken`: `str`
-
-<a id="issuecertificateresponsetypedef"></a>
-
+1. See [:material-code-brackets: SigningAlgorithmType](./literals.md#signingalgorithmtype) 
+2. See [:material-code-braces: ValidityTypeDef](./type_defs.md#validitytypedef) 
+3. See [:material-code-braces: ApiPassthroughTypeDef](./type_defs.md#apipassthroughtypedef) 
+4. See [:material-code-braces: ValidityTypeDef](./type_defs.md#validitytypedef) 
 ## IssueCertificateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import IssueCertificateResponseTypeDef
+
+def get_value() -> IssueCertificateResponseTypeDef:
+    return {
+        "CertificateArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IssueCertificateResponseTypeDef(TypedDict):
+    CertificateArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CertificateArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="keyusagetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## KeyUsageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import KeyUsageTypeDef
+
+def get_value() -> KeyUsageTypeDef:
+    return {
+        "DigitalSignature": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KeyUsageTypeDef(TypedDict):
+    DigitalSignature: NotRequired[bool],
+    NonRepudiation: NotRequired[bool],
+    KeyEncipherment: NotRequired[bool],
+    DataEncipherment: NotRequired[bool],
+    KeyAgreement: NotRequired[bool],
+    KeyCertSign: NotRequired[bool],
+    CRLSign: NotRequired[bool],
+    EncipherOnly: NotRequired[bool],
+    DecipherOnly: NotRequired[bool],
+```
 
-- `DigitalSignature`: `bool`
-- `NonRepudiation`: `bool`
-- `KeyEncipherment`: `bool`
-- `DataEncipherment`: `bool`
-- `KeyAgreement`: `bool`
-- `KeyCertSign`: `bool`
-- `CRLSign`: `bool`
-- `EncipherOnly`: `bool`
-- `DecipherOnly`: `bool`
+## ListCertificateAuthoritiesRequestListCertificateAuthoritiesPaginateTypeDef
 
-<a id="listcertificateauthoritiesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesRequestListCertificateAuthoritiesPaginateTypeDef
 
+def get_value() -> ListCertificateAuthoritiesRequestListCertificateAuthoritiesPaginateTypeDef:
+    return {
+        "ResourceOwner": ...,
+    }
+```
+
+```python title="Definition"
+class ListCertificateAuthoritiesRequestListCertificateAuthoritiesPaginateTypeDef(TypedDict):
+    ResourceOwner: NotRequired[ResourceOwnerType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCertificateAuthoritiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesRequestRequestTypeDef
+
+def get_value() -> ListCertificateAuthoritiesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCertificateAuthoritiesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ResourceOwner: NotRequired[ResourceOwnerType],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ResourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
-
-<a id="listcertificateauthoritiesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
 ## ListCertificateAuthoritiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesResponseTypeDef
+
+def get_value() -> ListCertificateAuthoritiesResponseTypeDef:
+    return {
+        "CertificateAuthorities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCertificateAuthoritiesResponseTypeDef(TypedDict):
+    CertificateAuthorities: List[CertificateAuthorityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CertificateAuthorities`:
-  `List`\[[CertificateAuthorityTypeDef](./type_defs.md#certificateauthoritytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CertificateAuthorityTypeDef](./type_defs.md#certificateauthoritytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPermissionsRequestListPermissionsPaginateTypeDef
 
-<a id="listpermissionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_acm_pca.type_defs import ListPermissionsRequestListPermissionsPaginateTypeDef
 
+def get_value() -> ListPermissionsRequestListPermissionsPaginateTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListPermissionsRequestListPermissionsPaginateTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ListPermissionsRequestRequestTypeDef
+
+def get_value() -> ListPermissionsRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listpermissionsresponsetypedef"></a>
+```python title="Definition"
+class ListPermissionsRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListPermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ListPermissionsResponseTypeDef
+
+def get_value() -> ListPermissionsResponseTypeDef:
+    return {
+        "Permissions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPermissionsResponseTypeDef(TypedDict):
+    Permissions: List[PermissionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Permissions`:
-  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PermissionTypeDef](./type_defs.md#permissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsRequestListTagsPaginateTypeDef
 
-<a id="listtagsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_acm_pca.type_defs import ListTagsRequestListTagsPaginateTypeDef
 
+def get_value() -> ListTagsRequestListTagsPaginateTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsRequestListTagsPaginateTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ListTagsRequestRequestTypeDef
+
+def get_value() -> ListTagsRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listtagsresponsetypedef"></a>
+```python title="Definition"
+class ListTagsRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ListTagsResponseTypeDef
+
+def get_value() -> ListTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ocspconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OcspConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import OcspConfigurationTypeDef
+
+def get_value() -> OcspConfigurationTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-
-Optional fields:
-
-- `OcspCustomCname`: `str`
-
-<a id="othernametypedef"></a>
+```python title="Definition"
+class OcspConfigurationTypeDef(TypedDict):
+    Enabled: bool,
+    OcspCustomCname: NotRequired[str],
+```
 
 ## OtherNameTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import OtherNameTypeDef
+
+def get_value() -> OtherNameTypeDef:
+    return {
+        "TypeId": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `TypeId`: `str`
-- `Value`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OtherNameTypeDef(TypedDict):
+    TypeId: str,
+    Value: str,
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="permissiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import PermissionTypeDef
+
+def get_value() -> PermissionTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PermissionTypeDef(TypedDict):
+    CertificateAuthorityArn: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    Principal: NotRequired[str],
+    SourceAccount: NotRequired[str],
+    Actions: NotRequired[List[ActionTypeType]],  # (1)
+    Policy: NotRequired[str],
+```
 
-- `CertificateAuthorityArn`: `str`
-- `CreatedAt`: `datetime`
-- `Principal`: `str`
-- `SourceAccount`: `str`
-- `Actions`: `List`\[[ActionTypeType](./literals.md#actiontypetype)\]
-- `Policy`: `str`
-
-<a id="policyinformationtypedef"></a>
-
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
 ## PolicyInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import PolicyInformationTypeDef
+
+def get_value() -> PolicyInformationTypeDef:
+    return {
+        "CertPolicyId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PolicyInformationTypeDef(TypedDict):
+    CertPolicyId: str,
+    PolicyQualifiers: NotRequired[Sequence[PolicyQualifierInfoTypeDef]],  # (1)
+```
 
-- `CertPolicyId`: `str`
-
-Optional fields:
-
-- `PolicyQualifiers`:
-  `Sequence`\[[PolicyQualifierInfoTypeDef](./type_defs.md#policyqualifierinfotypedef)\]
-
-<a id="policyqualifierinfotypedef"></a>
-
+1. See [:material-code-braces: PolicyQualifierInfoTypeDef](./type_defs.md#policyqualifierinfotypedef) 
 ## PolicyQualifierInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import PolicyQualifierInfoTypeDef
+
+def get_value() -> PolicyQualifierInfoTypeDef:
+    return {
+        "PolicyQualifierId": ...,
+        "Qualifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PolicyQualifierInfoTypeDef(TypedDict):
+    PolicyQualifierId: PolicyQualifierIdType,  # (1)
+    Qualifier: QualifierTypeDef,  # (2)
+```
 
-- `PolicyQualifierId`: `Literal['CPS']` (see
-  [PolicyQualifierIdType](./literals.md#policyqualifieridtype))
-- `Qualifier`: [QualifierTypeDef](./type_defs.md#qualifiertypedef)
-
-<a id="putpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PolicyQualifierIdType](./literals.md#policyqualifieridtype) 
+2. See [:material-code-braces: QualifierTypeDef](./type_defs.md#qualifiertypedef) 
 ## PutPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import PutPolicyRequestRequestTypeDef
+
+def get_value() -> PutPolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Policy": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Policy`: `str`
-
-<a id="qualifiertypedef"></a>
+```python title="Definition"
+class PutPolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Policy: str,
+```
 
 ## QualifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import QualifierTypeDef
+
+def get_value() -> QualifierTypeDef:
+    return {
+        "CpsUri": ...,
+    }
 ```
 
-Required fields:
-
-- `CpsUri`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class QualifierTypeDef(TypedDict):
+    CpsUri: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restorecertificateauthorityrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreCertificateAuthorityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import RestoreCertificateAuthorityRequestRequestTypeDef
+
+def get_value() -> RestoreCertificateAuthorityRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateAuthorityArn`: `str`
-
-<a id="revocationconfigurationtypedef"></a>
+```python title="Definition"
+class RestoreCertificateAuthorityRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+```
 
 ## RevocationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import RevocationConfigurationTypeDef
+
+def get_value() -> RevocationConfigurationTypeDef:
+    return {
+        "CrlConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RevocationConfigurationTypeDef(TypedDict):
+    CrlConfiguration: NotRequired[CrlConfigurationTypeDef],  # (1)
+    OcspConfiguration: NotRequired[OcspConfigurationTypeDef],  # (2)
+```
 
-- `CrlConfiguration`:
-  [CrlConfigurationTypeDef](./type_defs.md#crlconfigurationtypedef)
-- `OcspConfiguration`:
-  [OcspConfigurationTypeDef](./type_defs.md#ocspconfigurationtypedef)
-
-<a id="revokecertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CrlConfigurationTypeDef](./type_defs.md#crlconfigurationtypedef) 
+2. See [:material-code-braces: OcspConfigurationTypeDef](./type_defs.md#ocspconfigurationtypedef) 
 ## RevokeCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import RevokeCertificateRequestRequestTypeDef
+
+def get_value() -> RevokeCertificateRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "CertificateSerial": ...,
+        "RevocationReason": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RevokeCertificateRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    CertificateSerial: str,
+    RevocationReason: RevocationReasonType,  # (1)
+```
 
-- `CertificateAuthorityArn`: `str`
-- `CertificateSerial`: `str`
-- `RevocationReason`:
-  [RevocationReasonType](./literals.md#revocationreasontype)
-
-<a id="tagcertificateauthorityrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RevocationReasonType](./literals.md#revocationreasontype) 
 ## TagCertificateAuthorityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import TagCertificateAuthorityRequestRequestTypeDef
+
+def get_value() -> TagCertificateAuthorityRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagCertificateAuthorityRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `CertificateAuthorityArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `Value`: `str`
-
-<a id="untagcertificateauthorityrequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
+```
 
 ## UntagCertificateAuthorityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import UntagCertificateAuthorityRequestRequestTypeDef
+
+def get_value() -> UntagCertificateAuthorityRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UntagCertificateAuthorityRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `CertificateAuthorityArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="updatecertificateauthorityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateCertificateAuthorityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import UpdateCertificateAuthorityRequestRequestTypeDef
+
+def get_value() -> UpdateCertificateAuthorityRequestRequestTypeDef:
+    return {
+        "CertificateAuthorityArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCertificateAuthorityRequestRequestTypeDef(TypedDict):
+    CertificateAuthorityArn: str,
+    RevocationConfiguration: NotRequired[RevocationConfigurationTypeDef],  # (1)
+    Status: NotRequired[CertificateAuthorityStatusType],  # (2)
+```
 
-- `CertificateAuthorityArn`: `str`
-
-Optional fields:
-
-- `RevocationConfiguration`:
-  [RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef)
-- `Status`:
-  [CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype)
-
-<a id="validitytypedef"></a>
-
+1. See [:material-code-braces: RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef) 
+2. See [:material-code-brackets: CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype) 
 ## ValidityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import ValidityTypeDef
+
+def get_value() -> ValidityTypeDef:
+    return {
+        "Value": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValidityTypeDef(TypedDict):
+    Value: int,
+    Type: ValidityPeriodTypeType,  # (1)
+```
 
-- `Value`: `int`
-- `Type`: [ValidityPeriodTypeType](./literals.md#validityperiodtypetype)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-brackets: ValidityPeriodTypeType](./literals.md#validityperiodtypetype) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_acm_pca.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

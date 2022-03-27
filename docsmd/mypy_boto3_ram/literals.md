@@ -1,596 +1,646 @@
-<a id="literals-for-boto3-ram-module"></a>
-
-# Literals for boto3 RAM module
+# Literals
 
 > [Index](../README.md) > [RAM](./README.md) > Literals
 
-Auto-generated documentation for
-[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
-type annotations stubs module
-[mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
+!!! note ""
 
-- [Literals for boto3 RAM module](#literals-for-boto3-ram-module)
-  - [GetResourcePoliciesPaginatorName](#getresourcepoliciespaginatorname)
-  - [GetResourceShareAssociationsPaginatorName](#getresourceshareassociationspaginatorname)
-  - [GetResourceShareInvitationsPaginatorName](#getresourceshareinvitationspaginatorname)
-  - [GetResourceSharesPaginatorName](#getresourcesharespaginatorname)
-  - [ListPrincipalsPaginatorName](#listprincipalspaginatorname)
-  - [ListResourcesPaginatorName](#listresourcespaginatorname)
-  - [ResourceOwnerType](#resourceownertype)
-  - [ResourceRegionScopeFilterType](#resourceregionscopefiltertype)
-  - [ResourceRegionScopeType](#resourceregionscopetype)
-  - [ResourceShareAssociationStatusType](#resourceshareassociationstatustype)
-  - [ResourceShareAssociationTypeType](#resourceshareassociationtypetype)
-  - [ResourceShareFeatureSetType](#resourcesharefeaturesettype)
-  - [ResourceShareInvitationStatusType](#resourceshareinvitationstatustype)
-  - [ResourceShareStatusType](#resourcesharestatustype)
-  - [ResourceStatusType](#resourcestatustype)
-  - [RAMServiceName](#ramservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="getresourcepoliciespaginatorname"></a>
+    Auto-generated documentation for [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+    type annotations stubs module [mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
 
 ## GetResourcePoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName
+
+def get_value() -> GetResourcePoliciesPaginatorName:
+    return "get_resource_policies"
 ```
 
-Values:
-
-- `get_resource_policies`
-
-<a id="getresourceshareassociationspaginatorname"></a>
-
+```python title="Definition"
+GetResourcePoliciesPaginatorName = Literal[
+    "get_resource_policies",
+]
+```
 ## GetResourceShareAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import GetResourceShareAssociationsPaginatorName
+
+def get_value() -> GetResourceShareAssociationsPaginatorName:
+    return "get_resource_share_associations"
 ```
 
-Values:
-
-- `get_resource_share_associations`
-
-<a id="getresourceshareinvitationspaginatorname"></a>
-
+```python title="Definition"
+GetResourceShareAssociationsPaginatorName = Literal[
+    "get_resource_share_associations",
+]
+```
 ## GetResourceShareInvitationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import GetResourceShareInvitationsPaginatorName
+
+def get_value() -> GetResourceShareInvitationsPaginatorName:
+    return "get_resource_share_invitations"
 ```
 
-Values:
-
-- `get_resource_share_invitations`
-
-<a id="getresourcesharespaginatorname"></a>
-
+```python title="Definition"
+GetResourceShareInvitationsPaginatorName = Literal[
+    "get_resource_share_invitations",
+]
+```
 ## GetResourceSharesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import GetResourceSharesPaginatorName
+
+def get_value() -> GetResourceSharesPaginatorName:
+    return "get_resource_shares"
 ```
 
-Values:
-
-- `get_resource_shares`
-
-<a id="listprincipalspaginatorname"></a>
-
+```python title="Definition"
+GetResourceSharesPaginatorName = Literal[
+    "get_resource_shares",
+]
+```
 ## ListPrincipalsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ListPrincipalsPaginatorName
+
+def get_value() -> ListPrincipalsPaginatorName:
+    return "list_principals"
 ```
 
-Values:
-
-- `list_principals`
-
-<a id="listresourcespaginatorname"></a>
-
+```python title="Definition"
+ListPrincipalsPaginatorName = Literal[
+    "list_principals",
+]
+```
 ## ListResourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ListResourcesPaginatorName
+
+def get_value() -> ListResourcesPaginatorName:
+    return "list_resources"
 ```
 
-Values:
-
-- `list_resources`
-
-<a id="resourceownertype"></a>
-
+```python title="Definition"
+ListResourcesPaginatorName = Literal[
+    "list_resources",
+]
+```
 ## ResourceOwnerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceOwnerType
+
+def get_value() -> ResourceOwnerType:
+    return "OTHER-ACCOUNTS"
 ```
 
-Values:
-
-- `OTHER-ACCOUNTS`
-- `SELF`
-
-<a id="resourceregionscopefiltertype"></a>
-
+```python title="Definition"
+ResourceOwnerType = Literal[
+    "OTHER-ACCOUNTS",
+    "SELF",
+]
+```
 ## ResourceRegionScopeFilterType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceRegionScopeFilterType
+
+def get_value() -> ResourceRegionScopeFilterType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `GLOBAL`
-- `REGIONAL`
-
-<a id="resourceregionscopetype"></a>
-
+```python title="Definition"
+ResourceRegionScopeFilterType = Literal[
+    "ALL",
+    "GLOBAL",
+    "REGIONAL",
+]
+```
 ## ResourceRegionScopeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceRegionScopeType
+
+def get_value() -> ResourceRegionScopeType:
+    return "GLOBAL"
 ```
 
-Values:
-
-- `GLOBAL`
-- `REGIONAL`
-
-<a id="resourceshareassociationstatustype"></a>
-
+```python title="Definition"
+ResourceRegionScopeType = Literal[
+    "GLOBAL",
+    "REGIONAL",
+]
+```
 ## ResourceShareAssociationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceShareAssociationStatusType
+
+def get_value() -> ResourceShareAssociationStatusType:
+    return "ASSOCIATED"
 ```
 
-Values:
-
-- `ASSOCIATED`
-- `ASSOCIATING`
-- `DISASSOCIATED`
-- `DISASSOCIATING`
-- `FAILED`
-
-<a id="resourceshareassociationtypetype"></a>
-
+```python title="Definition"
+ResourceShareAssociationStatusType = Literal[
+    "ASSOCIATED",
+    "ASSOCIATING",
+    "DISASSOCIATED",
+    "DISASSOCIATING",
+    "FAILED",
+]
+```
 ## ResourceShareAssociationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceShareAssociationTypeType
+
+def get_value() -> ResourceShareAssociationTypeType:
+    return "PRINCIPAL"
 ```
 
-Values:
-
-- `PRINCIPAL`
-- `RESOURCE`
-
-<a id="resourcesharefeaturesettype"></a>
-
+```python title="Definition"
+ResourceShareAssociationTypeType = Literal[
+    "PRINCIPAL",
+    "RESOURCE",
+]
+```
 ## ResourceShareFeatureSetType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceShareFeatureSetType
+
+def get_value() -> ResourceShareFeatureSetType:
+    return "CREATED_FROM_POLICY"
 ```
 
-Values:
-
-- `CREATED_FROM_POLICY`
-- `PROMOTING_TO_STANDARD`
-- `STANDARD`
-
-<a id="resourceshareinvitationstatustype"></a>
-
+```python title="Definition"
+ResourceShareFeatureSetType = Literal[
+    "CREATED_FROM_POLICY",
+    "PROMOTING_TO_STANDARD",
+    "STANDARD",
+]
+```
 ## ResourceShareInvitationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceShareInvitationStatusType
+
+def get_value() -> ResourceShareInvitationStatusType:
+    return "ACCEPTED"
 ```
 
-Values:
-
-- `ACCEPTED`
-- `EXPIRED`
-- `PENDING`
-- `REJECTED`
-
-<a id="resourcesharestatustype"></a>
-
+```python title="Definition"
+ResourceShareInvitationStatusType = Literal[
+    "ACCEPTED",
+    "EXPIRED",
+    "PENDING",
+    "REJECTED",
+]
+```
 ## ResourceShareStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceShareStatusType
+
+def get_value() -> ResourceShareStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DELETED`
-- `DELETING`
-- `FAILED`
-- `PENDING`
-
-<a id="resourcestatustype"></a>
-
+```python title="Definition"
+ResourceShareStatusType = Literal[
+    "ACTIVE",
+    "DELETED",
+    "DELETING",
+    "FAILED",
+    "PENDING",
+]
+```
 ## ResourceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceStatusType
+
+def get_value() -> ResourceStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `LIMIT_EXCEEDED`
-- `PENDING`
-- `UNAVAILABLE`
-- `ZONAL_RESOURCE_INACCESSIBLE`
-
-<a id="ramservicename"></a>
-
+```python title="Definition"
+ResourceStatusType = Literal[
+    "AVAILABLE",
+    "LIMIT_EXCEEDED",
+    "PENDING",
+    "UNAVAILABLE",
+    "ZONAL_RESOURCE_INACCESSIBLE",
+]
+```
 ## RAMServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import RAMServiceName
+
+def get_value() -> RAMServiceName:
+    return "ram"
 ```
 
-Values:
-
-- `ram`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+RAMServiceName = Literal[
+    "ram",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ram.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "get_resource_policies"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "get_resource_policies",
+    "get_resource_share_associations",
+    "get_resource_share_invitations",
+    "get_resource_shares",
+    "list_principals",
+    "list_resources",
+]
+```
+## RegionName
 
-- `get_resource_policies`
-- `get_resource_share_associations`
-- `get_resource_share_invitations`
-- `get_resource_shares`
-- `list_principals`
-- `list_resources`
+```python title="Usage Example"
+from mypy_boto3_ram.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

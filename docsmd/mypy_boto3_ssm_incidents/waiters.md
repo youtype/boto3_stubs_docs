@@ -1,28 +1,18 @@
-<a id="waiters-for-boto3-ssmincidents-module"></a>
-
-# Waiters for boto3 SSMIncidents module
+# Waiters
 
 > [Index](../README.md) > [SSMIncidents](./README.md) > Waiters
 
-Auto-generated documentation for
-[SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
-type annotations stubs module
-[mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
+!!! note ""
 
-- [Waiters for boto3 SSMIncidents module](#waiters-for-boto3-ssmincidents-module)
-  - [WaitForReplicationSetActiveWaiter](#waitforreplicationsetactivewaiter)
-  - [WaitForReplicationSetDeletedWaiter](#waitforreplicationsetdeletedwaiter)
-
-<a id="waitforreplicationsetactivewaiter"></a>
+    Auto-generated documentation for [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
+    type annotations stubs module [mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
 ## WaitForReplicationSetActiveWaiter
 
-Type annotations for
-`boto3.client("ssm-incidents").get_waiter("wait_for_replication_set_active")`.
+Type annotations and code completion for `#!python boto3.client("ssm-incidents").get_waiter("wait_for_replication_set_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Waiter.WaitForReplicationSetActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm_incidents.waiter import WaitForReplicationSetActiveWaiter
@@ -31,24 +21,39 @@ def get_wait_for_replication_set_active_waiter() -> WaitForReplicationSetActiveW
     return Session().client("ssm-incidents").get_waiter("wait_for_replication_set_active")
 ```
 
-Boto3 documentation:
-[SSMIncidents.Waiter.wait_for_replication_set_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Waiter.WaitForReplicationSetActive)
 
-Arguments for `WaitForReplicationSetActiveWaiter.wait` method:
+### wait
 
-- `arn`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python WaitForReplicationSetActiveWaiter.wait` method.
 
-<a id="waitforreplicationsetdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    arn: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetReplicationSetInputWaitForReplicationSetActiveWaitTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetReplicationSetInputWaitForReplicationSetActiveWaitTypeDef](./type_defs.md#getreplicationsetinputwaitforreplicationsetactivewaittypedef) 
 ## WaitForReplicationSetDeletedWaiter
 
-Type annotations for
-`boto3.client("ssm-incidents").get_waiter("wait_for_replication_set_deleted")`.
+Type annotations and code completion for `#!python boto3.client("ssm-incidents").get_waiter("wait_for_replication_set_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Waiter.WaitForReplicationSetDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm_incidents.waiter import WaitForReplicationSetDeletedWaiter
@@ -57,10 +62,30 @@ def get_wait_for_replication_set_deleted_waiter() -> WaitForReplicationSetDelete
     return Session().client("ssm-incidents").get_waiter("wait_for_replication_set_deleted")
 ```
 
-Boto3 documentation:
-[SSMIncidents.Waiter.wait_for_replication_set_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Waiter.WaitForReplicationSetDeleted)
 
-Arguments for `WaitForReplicationSetDeletedWaiter.wait` method:
+### wait
 
-- `arn`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python WaitForReplicationSetDeletedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    arn: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetReplicationSetInputWaitForReplicationSetDeletedWaitTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetReplicationSetInputWaitForReplicationSetDeletedWaitTypeDef](./type_defs.md#getreplicationsetinputwaitforreplicationsetdeletedwaittypedef) 

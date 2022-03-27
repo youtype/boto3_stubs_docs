@@ -1,77 +1,18 @@
-<a id="chimesdkmessagingclient-for-boto3-chimesdkmessaging-module"></a>
+# ChimeSDKMessagingClient
 
-# ChimeSDKMessagingClient for boto3 ChimeSDKMessaging module
+> [Index](../README.md) > [ChimeSDKMessaging](./README.md) > ChimeSDKMessagingClient
 
-> [Index](../README.md) > [ChimeSDKMessaging](./README.md) >
-> ChimeSDKMessagingClient
+!!! note ""
 
-Auto-generated documentation for
-[ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
-type annotations stubs module
-[mypy-boto3-chime-sdk-messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
-
-- [ChimeSDKMessagingClient for boto3 ChimeSDKMessaging module](#chimesdkmessagingclient-for-boto3-chimesdkmessaging-module)
-  - [ChimeSDKMessagingClient](#chimesdkmessagingclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_channel_flow](#associate_channel_flow)
-    - [batch_create_channel_membership](#batch_create_channel_membership)
-    - [can_paginate](#can_paginate)
-    - [channel_flow_callback](#channel_flow_callback)
-    - [create_channel](#create_channel)
-    - [create_channel_ban](#create_channel_ban)
-    - [create_channel_flow](#create_channel_flow)
-    - [create_channel_membership](#create_channel_membership)
-    - [create_channel_moderator](#create_channel_moderator)
-    - [delete_channel](#delete_channel)
-    - [delete_channel_ban](#delete_channel_ban)
-    - [delete_channel_flow](#delete_channel_flow)
-    - [delete_channel_membership](#delete_channel_membership)
-    - [delete_channel_message](#delete_channel_message)
-    - [delete_channel_moderator](#delete_channel_moderator)
-    - [describe_channel](#describe_channel)
-    - [describe_channel_ban](#describe_channel_ban)
-    - [describe_channel_flow](#describe_channel_flow)
-    - [describe_channel_membership](#describe_channel_membership)
-    - [describe_channel_membership_for_app_instance_user](#describe_channel_membership_for_app_instance_user)
-    - [describe_channel_moderated_by_app_instance_user](#describe_channel_moderated_by_app_instance_user)
-    - [describe_channel_moderator](#describe_channel_moderator)
-    - [disassociate_channel_flow](#disassociate_channel_flow)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_channel_membership_preferences](#get_channel_membership_preferences)
-    - [get_channel_message](#get_channel_message)
-    - [get_channel_message_status](#get_channel_message_status)
-    - [get_messaging_session_endpoint](#get_messaging_session_endpoint)
-    - [list_channel_bans](#list_channel_bans)
-    - [list_channel_flows](#list_channel_flows)
-    - [list_channel_memberships](#list_channel_memberships)
-    - [list_channel_memberships_for_app_instance_user](#list_channel_memberships_for_app_instance_user)
-    - [list_channel_messages](#list_channel_messages)
-    - [list_channel_moderators](#list_channel_moderators)
-    - [list_channels](#list_channels)
-    - [list_channels_associated_with_channel_flow](#list_channels_associated_with_channel_flow)
-    - [list_channels_moderated_by_app_instance_user](#list_channels_moderated_by_app_instance_user)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_channel_membership_preferences](#put_channel_membership_preferences)
-    - [redact_channel_message](#redact_channel_message)
-    - [send_channel_message](#send_channel_message)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_channel](#update_channel)
-    - [update_channel_flow](#update_channel_flow)
-    - [update_channel_message](#update_channel_message)
-    - [update_channel_read_marker](#update_channel_read_marker)
-
-<a id="chimesdkmessagingclient"></a>
+    Auto-generated documentation for [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
+    type annotations stubs module [mypy-boto3-chime-sdk-messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
 
 ## ChimeSDKMessagingClient
 
-Type annotations for `boto3.client("chime-sdk-messaging")`
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_chime_sdk_messaging.client import ChimeSDKMessagingClient
 
@@ -79,1178 +20,1567 @@ def get_chime-sdk-messaging_client() -> ChimeSDKMessagingClient:
     return Session().client("chime-sdk-messaging")
 ```
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("chime-sdk-messaging").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("chime-sdk-messaging")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.NotFoundException,
+    client.ResourceLimitExceededException,
+    client.ServiceFailureException,
+    client.ServiceUnavailableException,
+    client.ThrottledClientException,
+    client.UnauthorizedClientException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_chime_sdk_messaging.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ResourceLimitExceededException`
-- `Exceptions.ServiceFailureException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottledClientException`
-- `Exceptions.UnauthorizedClientException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ChimeSDKMessagingClient exceptions.
-
-Type annotations for `boto3.client("chime-sdk-messaging").exceptions` method.
-
-Boto3 documentation:
-[ChimeSDKMessaging.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_channel\_flow"></a>
-
-### associate_channel_flow
+### associate\_channel\_flow
 
 Associates a channel flow with a channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").associate_channel_flow` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").associate_channel_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.associate_channel_flow)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.associate_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.associate_channel_flow)
+```python title="Method definition"
+def associate_channel_flow(
+    self,
+    *,
+    ChannelArn: str,
+    ChannelFlowArn: str,
+    ChimeBearer: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateChannelFlowRequestRequestTypeDef](./type_defs.md#associatechannelflowrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChannelFlowArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateChannelFlowRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChannelFlowArn": ...,
+    "ChimeBearer": ...,
+}
 
-<a id="batch\_create\_channel\_membership"></a>
+parent.associate_channel_flow(**kwargs)
+```
 
-### batch_create_channel_membership
+1. See [:material-code-braces: AssociateChannelFlowRequestRequestTypeDef](./type_defs.md#associatechannelflowrequestrequesttypedef) 
+
+### batch\_create\_channel\_membership
 
 Adds a specified number of users to a channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").batch_create_channel_membership` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").batch_create_channel_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.batch_create_channel_membership)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.batch_create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.batch_create_channel_membership)
+```python title="Method definition"
+def batch_create_channel_membership(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArns: Sequence[str],
+    ChimeBearer: str,
+    Type: ChannelMembershipTypeType = ...,  # (1)
+) -> BatchCreateChannelMembershipResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchCreateChannelMembershipRequestRequestTypeDef](./type_defs.md#batchcreatechannelmembershiprequestrequesttypedef).
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+2. See [:material-code-braces: BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArns`: `Sequence`\[`str`\] *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
+```python title="Usage example with kwargs"
+kwargs: BatchCreateChannelMembershipRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArns": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef).
+parent.batch_create_channel_membership(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchCreateChannelMembershipRequestRequestTypeDef](./type_defs.md#batchcreatechannelmembershiprequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("chime-sdk-messaging").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.can_paginate)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="channel\_flow\_callback"></a>
-
-### channel_flow_callback
+### channel\_flow\_callback
 
 Calls back Chime SDK Messaging with a processing response message.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").channel_flow_callback` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").channel_flow_callback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.channel_flow_callback)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.channel_flow_callback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.channel_flow_callback)
+```python title="Method definition"
+def channel_flow_callback(
+    self,
+    *,
+    CallbackId: str,
+    ChannelArn: str,
+    ChannelMessage: ChannelMessageCallbackTypeDef,  # (1)
+    DeleteResource: bool = ...,
+) -> ChannelFlowCallbackResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ChannelFlowCallbackRequestRequestTypeDef](./type_defs.md#channelflowcallbackrequestrequesttypedef).
+1. See [:material-code-braces: ChannelMessageCallbackTypeDef](./type_defs.md#channelmessagecallbacktypedef) 
+2. See [:material-code-braces: ChannelFlowCallbackResponseTypeDef](./type_defs.md#channelflowcallbackresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CallbackId`: `str` *(required)*
-- `ChannelArn`: `str` *(required)*
-- `ChannelMessage`:
-  [ChannelMessageCallbackTypeDef](./type_defs.md#channelmessagecallbacktypedef)
-  *(required)*
-- `DeleteResource`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ChannelFlowCallbackRequestRequestTypeDef = {  # (1)
+    "CallbackId": ...,
+    "ChannelArn": ...,
+    "ChannelMessage": ...,
+}
 
-Returns
-[ChannelFlowCallbackResponseTypeDef](./type_defs.md#channelflowcallbackresponsetypedef).
+parent.channel_flow_callback(**kwargs)
+```
 
-<a id="create\_channel"></a>
+1. See [:material-code-braces: ChannelFlowCallbackRequestRequestTypeDef](./type_defs.md#channelflowcallbackrequestrequesttypedef) 
 
-### create_channel
+### create\_channel
 
 Creates a channel to which you can add users and send messages.
 
-Type annotations for `boto3.client("chime-sdk-messaging").create_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").create_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel)
+```python title="Method definition"
+def create_channel(
+    self,
+    *,
+    AppInstanceArn: str,
+    Name: str,
+    ClientRequestToken: str,
+    ChimeBearer: str,
+    Mode: ChannelModeType = ...,  # (1)
+    Privacy: ChannelPrivacyType = ...,  # (2)
+    Metadata: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateChannelResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
-- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
-- `Metadata`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateChannelRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "Name": ...,
+    "ClientRequestToken": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+parent.create_channel(**kwargs)
+```
 
-<a id="create\_channel\_ban"></a>
+1. See [:material-code-braces: CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef) 
 
-### create_channel_ban
+### create\_channel\_ban
 
 Permanently bans a member from a channel.
 
-Type annotations for `boto3.client("chime-sdk-messaging").create_channel_ban`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").create_channel_ban` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel_ban)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.create_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel_ban)
+```python title="Method definition"
+def create_channel_ban(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+) -> CreateChannelBanResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelBanRequestRequestTypeDef](./type_defs.md#createchannelbanrequestrequesttypedef).
+1. See [:material-code-braces: CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateChannelBanRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef).
+parent.create_channel_ban(**kwargs)
+```
 
-<a id="create\_channel\_flow"></a>
+1. See [:material-code-braces: CreateChannelBanRequestRequestTypeDef](./type_defs.md#createchannelbanrequestrequesttypedef) 
 
-### create_channel_flow
+### create\_channel\_flow
 
 Creates a channel flow, a container for processors.
 
-Type annotations for `boto3.client("chime-sdk-messaging").create_channel_flow`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").create_channel_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel_flow)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.create_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel_flow)
+```python title="Method definition"
+def create_channel_flow(
+    self,
+    *,
+    AppInstanceArn: str,
+    Processors: Sequence[ProcessorTypeDef],  # (1)
+    Name: str,
+    ClientRequestToken: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateChannelFlowResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelFlowRequestRequestTypeDef](./type_defs.md#createchannelflowrequestrequesttypedef).
+1. See [:material-code-braces: ProcessorTypeDef](./type_defs.md#processortypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateChannelFlowResponseTypeDef](./type_defs.md#createchannelflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `Processors`:
-  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
-  *(required)*
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateChannelFlowRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "Processors": ...,
+    "Name": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateChannelFlowResponseTypeDef](./type_defs.md#createchannelflowresponsetypedef).
+parent.create_channel_flow(**kwargs)
+```
 
-<a id="create\_channel\_membership"></a>
+1. See [:material-code-braces: CreateChannelFlowRequestRequestTypeDef](./type_defs.md#createchannelflowrequestrequesttypedef) 
 
-### create_channel_membership
+### create\_channel\_membership
 
 Adds a user to a channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").create_channel_membership` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").create_channel_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel_membership)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel_membership)
+```python title="Method definition"
+def create_channel_membership(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    Type: ChannelMembershipTypeType,  # (1)
+    ChimeBearer: str,
+) -> CreateChannelMembershipResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelMembershipRequestRequestTypeDef](./type_defs.md#createchannelmembershiprequestrequesttypedef).
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+2. See [:material-code-braces: CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-  *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateChannelMembershipRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+    "Type": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef).
+parent.create_channel_membership(**kwargs)
+```
 
-<a id="create\_channel\_moderator"></a>
+1. See [:material-code-braces: CreateChannelMembershipRequestRequestTypeDef](./type_defs.md#createchannelmembershiprequestrequesttypedef) 
 
-### create_channel_moderator
+### create\_channel\_moderator
 
 Creates a new `ChannelModerator`.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").create_channel_moderator` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").create_channel_moderator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel_moderator)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.create_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.create_channel_moderator)
+```python title="Method definition"
+def create_channel_moderator(
+    self,
+    *,
+    ChannelArn: str,
+    ChannelModeratorArn: str,
+    ChimeBearer: str,
+) -> CreateChannelModeratorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelModeratorRequestRequestTypeDef](./type_defs.md#createchannelmoderatorrequestrequesttypedef).
+1. See [:material-code-braces: CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChannelModeratorArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateChannelModeratorRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChannelModeratorArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef).
+parent.create_channel_moderator(**kwargs)
+```
 
-<a id="delete\_channel"></a>
+1. See [:material-code-braces: CreateChannelModeratorRequestRequestTypeDef](./type_defs.md#createchannelmoderatorrequestrequesttypedef) 
 
-### delete_channel
+### delete\_channel
 
 Immediately makes a channel and its memberships inaccessible and marks them for
 deletion.
 
-Type annotations for `boto3.client("chime-sdk-messaging").delete_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").delete_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel)
+```python title="Method definition"
+def delete_channel(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChimeBearer": ...,
+}
 
-<a id="delete\_channel\_ban"></a>
+parent.delete_channel(**kwargs)
+```
 
-### delete_channel_ban
+1. See [:material-code-braces: DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef) 
+
+### delete\_channel\_ban
 
 Removes a user from a channel's ban list.
 
-Type annotations for `boto3.client("chime-sdk-messaging").delete_channel_ban`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").delete_channel_ban` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_ban)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.delete_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_ban)
+```python title="Method definition"
+def delete_channel_ban(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelBanRequestRequestTypeDef](./type_defs.md#deletechannelbanrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelBanRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+    "ChimeBearer": ...,
+}
 
-<a id="delete\_channel\_flow"></a>
+parent.delete_channel_ban(**kwargs)
+```
 
-### delete_channel_flow
+1. See [:material-code-braces: DeleteChannelBanRequestRequestTypeDef](./type_defs.md#deletechannelbanrequestrequesttypedef) 
+
+### delete\_channel\_flow
 
 Deletes a channel flow, an irreversible process.
 
-Type annotations for `boto3.client("chime-sdk-messaging").delete_channel_flow`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").delete_channel_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_flow)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.delete_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_flow)
+```python title="Method definition"
+def delete_channel_flow(
+    self,
+    *,
+    ChannelFlowArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelFlowRequestRequestTypeDef](./type_defs.md#deletechannelflowrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelFlowArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelFlowRequestRequestTypeDef = {  # (1)
+    "ChannelFlowArn": ...,
+}
 
-<a id="delete\_channel\_membership"></a>
+parent.delete_channel_flow(**kwargs)
+```
 
-### delete_channel_membership
+1. See [:material-code-braces: DeleteChannelFlowRequestRequestTypeDef](./type_defs.md#deletechannelflowrequestrequesttypedef) 
+
+### delete\_channel\_membership
 
 Removes a member from a channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").delete_channel_membership` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").delete_channel_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_membership)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.delete_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_membership)
+```python title="Method definition"
+def delete_channel_membership(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelMembershipRequestRequestTypeDef](./type_defs.md#deletechannelmembershiprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelMembershipRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+    "ChimeBearer": ...,
+}
 
-<a id="delete\_channel\_message"></a>
+parent.delete_channel_membership(**kwargs)
+```
 
-### delete_channel_message
+1. See [:material-code-braces: DeleteChannelMembershipRequestRequestTypeDef](./type_defs.md#deletechannelmembershiprequestrequesttypedef) 
+
+### delete\_channel\_message
 
 Deletes a channel message.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").delete_channel_message` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").delete_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_message)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.delete_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_message)
+```python title="Method definition"
+def delete_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelMessageRequestRequestTypeDef](./type_defs.md#deletechannelmessagerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MessageId`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MessageId": ...,
+    "ChimeBearer": ...,
+}
 
-<a id="delete\_channel\_moderator"></a>
+parent.delete_channel_message(**kwargs)
+```
 
-### delete_channel_moderator
+1. See [:material-code-braces: DeleteChannelMessageRequestRequestTypeDef](./type_defs.md#deletechannelmessagerequestrequesttypedef) 
+
+### delete\_channel\_moderator
 
 Deletes a channel moderator.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").delete_channel_moderator` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").delete_channel_moderator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_moderator)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.delete_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.delete_channel_moderator)
+```python title="Method definition"
+def delete_channel_moderator(
+    self,
+    *,
+    ChannelArn: str,
+    ChannelModeratorArn: str,
+    ChimeBearer: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelModeratorRequestRequestTypeDef](./type_defs.md#deletechannelmoderatorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChannelModeratorArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelModeratorRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChannelModeratorArn": ...,
+    "ChimeBearer": ...,
+}
 
-<a id="describe\_channel"></a>
+parent.delete_channel_moderator(**kwargs)
+```
 
-### describe_channel
+1. See [:material-code-braces: DeleteChannelModeratorRequestRequestTypeDef](./type_defs.md#deletechannelmoderatorrequestrequesttypedef) 
+
+### describe\_channel
 
 Returns the full details of a channel in an Amazon Chime `AppInstance` .
 
-Type annotations for `boto3.client("chime-sdk-messaging").describe_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").describe_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel)
+```python title="Method definition"
+def describe_channel(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str,
+) -> DescribeChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+parent.describe_channel(**kwargs)
+```
 
-<a id="describe\_channel\_ban"></a>
+1. See [:material-code-braces: DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef) 
 
-### describe_channel_ban
+### describe\_channel\_ban
 
 Returns the full details of a channel ban.
 
-Type annotations for `boto3.client("chime-sdk-messaging").describe_channel_ban`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").describe_channel_ban` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_ban)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.describe_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_ban)
+```python title="Method definition"
+def describe_channel_ban(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+) -> DescribeChannelBanResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelBanRequestRequestTypeDef](./type_defs.md#describechannelbanrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelBanRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef).
+parent.describe_channel_ban(**kwargs)
+```
 
-<a id="describe\_channel\_flow"></a>
+1. See [:material-code-braces: DescribeChannelBanRequestRequestTypeDef](./type_defs.md#describechannelbanrequestrequesttypedef) 
 
-### describe_channel_flow
+### describe\_channel\_flow
 
 Returns the full details of a channel flow in an Amazon Chime `AppInstance`.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").describe_channel_flow` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").describe_channel_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_flow)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.describe_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_flow)
+```python title="Method definition"
+def describe_channel_flow(
+    self,
+    *,
+    ChannelFlowArn: str,
+) -> DescribeChannelFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelFlowRequestRequestTypeDef](./type_defs.md#describechannelflowrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelFlowResponseTypeDef](./type_defs.md#describechannelflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelFlowArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelFlowRequestRequestTypeDef = {  # (1)
+    "ChannelFlowArn": ...,
+}
 
-Returns
-[DescribeChannelFlowResponseTypeDef](./type_defs.md#describechannelflowresponsetypedef).
+parent.describe_channel_flow(**kwargs)
+```
 
-<a id="describe\_channel\_membership"></a>
+1. See [:material-code-braces: DescribeChannelFlowRequestRequestTypeDef](./type_defs.md#describechannelflowrequestrequesttypedef) 
 
-### describe_channel_membership
+### describe\_channel\_membership
 
 Returns the full details of a user's channel membership.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").describe_channel_membership` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").describe_channel_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_membership)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.describe_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_membership)
+```python title="Method definition"
+def describe_channel_membership(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+) -> DescribeChannelMembershipResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelMembershipRequestRequestTypeDef](./type_defs.md#describechannelmembershiprequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelMembershipResponseTypeDef](./type_defs.md#describechannelmembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelMembershipRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[DescribeChannelMembershipResponseTypeDef](./type_defs.md#describechannelmembershipresponsetypedef).
+parent.describe_channel_membership(**kwargs)
+```
 
-<a id="describe\_channel\_membership\_for\_app\_instance\_user"></a>
+1. See [:material-code-braces: DescribeChannelMembershipRequestRequestTypeDef](./type_defs.md#describechannelmembershiprequestrequesttypedef) 
 
-### describe_channel_membership_for_app_instance_user
+### describe\_channel\_membership\_for\_app\_instance\_user
 
 Returns the details of a channel based on the membership of the specified
 `AppInstanceUser` .
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").describe_channel_membership_for_app_instance_user`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").describe_channel_membership_for_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_membership_for_app_instance_user)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.describe_channel_membership_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_membership_for_app_instance_user)
+```python title="Method definition"
+def describe_channel_membership_for_app_instance_user(
+    self,
+    *,
+    ChannelArn: str,
+    AppInstanceUserArn: str,
+    ChimeBearer: str,
+) -> DescribeChannelMembershipForAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelMembershipForAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `AppInstanceUserArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "AppInstanceUserArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[DescribeChannelMembershipForAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponsetypedef).
+parent.describe_channel_membership_for_app_instance_user(**kwargs)
+```
 
-<a id="describe\_channel\_moderated\_by\_app\_instance\_user"></a>
+1. See [:material-code-braces: DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserrequestrequesttypedef) 
 
-### describe_channel_moderated_by_app_instance_user
+### describe\_channel\_moderated\_by\_app\_instance\_user
 
 Returns the full details of a channel moderated by the specified
 `AppInstanceUser` .
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").describe_channel_moderated_by_app_instance_user`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").describe_channel_moderated_by_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_moderated_by_app_instance_user)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.describe_channel_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_moderated_by_app_instance_user)
+```python title="Method definition"
+def describe_channel_moderated_by_app_instance_user(
+    self,
+    *,
+    ChannelArn: str,
+    AppInstanceUserArn: str,
+    ChimeBearer: str,
+) -> DescribeChannelModeratedByAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `AppInstanceUserArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "AppInstanceUserArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[DescribeChannelModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponsetypedef).
+parent.describe_channel_moderated_by_app_instance_user(**kwargs)
+```
 
-<a id="describe\_channel\_moderator"></a>
+1. See [:material-code-braces: DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserrequestrequesttypedef) 
 
-### describe_channel_moderator
+### describe\_channel\_moderator
 
 Returns the full details of a single ChannelModerator.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").describe_channel_moderator` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").describe_channel_moderator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_moderator)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.describe_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.describe_channel_moderator)
+```python title="Method definition"
+def describe_channel_moderator(
+    self,
+    *,
+    ChannelArn: str,
+    ChannelModeratorArn: str,
+    ChimeBearer: str,
+) -> DescribeChannelModeratorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelModeratorRequestRequestTypeDef](./type_defs.md#describechannelmoderatorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChannelModeratorArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelModeratorRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChannelModeratorArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef).
+parent.describe_channel_moderator(**kwargs)
+```
 
-<a id="disassociate\_channel\_flow"></a>
+1. See [:material-code-braces: DescribeChannelModeratorRequestRequestTypeDef](./type_defs.md#describechannelmoderatorrequestrequesttypedef) 
 
-### disassociate_channel_flow
+### disassociate\_channel\_flow
 
 Disassociates a channel flow from all its channels.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").disassociate_channel_flow` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").disassociate_channel_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.disassociate_channel_flow)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.disassociate_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.disassociate_channel_flow)
+```python title="Method definition"
+def disassociate_channel_flow(
+    self,
+    *,
+    ChannelArn: str,
+    ChannelFlowArn: str,
+    ChimeBearer: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateChannelFlowRequestRequestTypeDef](./type_defs.md#disassociatechannelflowrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChannelFlowArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateChannelFlowRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChannelFlowArn": ...,
+    "ChimeBearer": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.disassociate_channel_flow(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DisassociateChannelFlowRequestRequestTypeDef](./type_defs.md#disassociatechannelflowrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_channel\_membership\_preferences"></a>
-
-### get_channel_membership_preferences
+### get\_channel\_membership\_preferences
 
 Gets the membership preferences of an `AppInstanceUser` for the specified
 channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").get_channel_membership_preferences`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").get_channel_membership_preferences` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_channel_membership_preferences)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.get_channel_membership_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_channel_membership_preferences)
+```python title="Method definition"
+def get_channel_membership_preferences(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+) -> GetChannelMembershipPreferencesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChannelMembershipPreferencesRequestRequestTypeDef](./type_defs.md#getchannelmembershippreferencesrequestrequesttypedef).
+1. See [:material-code-braces: GetChannelMembershipPreferencesResponseTypeDef](./type_defs.md#getchannelmembershippreferencesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetChannelMembershipPreferencesRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[GetChannelMembershipPreferencesResponseTypeDef](./type_defs.md#getchannelmembershippreferencesresponsetypedef).
+parent.get_channel_membership_preferences(**kwargs)
+```
 
-<a id="get\_channel\_message"></a>
+1. See [:material-code-braces: GetChannelMembershipPreferencesRequestRequestTypeDef](./type_defs.md#getchannelmembershippreferencesrequestrequesttypedef) 
 
-### get_channel_message
+### get\_channel\_message
 
 Gets the full details of a channel message.
 
-Type annotations for `boto3.client("chime-sdk-messaging").get_channel_message`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").get_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_channel_message)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.get_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_channel_message)
+```python title="Method definition"
+def get_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+) -> GetChannelMessageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChannelMessageRequestRequestTypeDef](./type_defs.md#getchannelmessagerequestrequesttypedef).
+1. See [:material-code-braces: GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MessageId`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MessageId": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef).
+parent.get_channel_message(**kwargs)
+```
 
-<a id="get\_channel\_message\_status"></a>
+1. See [:material-code-braces: GetChannelMessageRequestRequestTypeDef](./type_defs.md#getchannelmessagerequestrequesttypedef) 
 
-### get_channel_message_status
+### get\_channel\_message\_status
 
 Gets message status for a specified `messageId`.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").get_channel_message_status` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").get_channel_message_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_channel_message_status)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.get_channel_message_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_channel_message_status)
+```python title="Method definition"
+def get_channel_message_status(
+    self,
+    *,
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+) -> GetChannelMessageStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChannelMessageStatusRequestRequestTypeDef](./type_defs.md#getchannelmessagestatusrequestrequesttypedef).
+1. See [:material-code-braces: GetChannelMessageStatusResponseTypeDef](./type_defs.md#getchannelmessagestatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MessageId`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetChannelMessageStatusRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MessageId": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[GetChannelMessageStatusResponseTypeDef](./type_defs.md#getchannelmessagestatusresponsetypedef).
+parent.get_channel_message_status(**kwargs)
+```
 
-<a id="get\_messaging\_session\_endpoint"></a>
+1. See [:material-code-braces: GetChannelMessageStatusRequestRequestTypeDef](./type_defs.md#getchannelmessagestatusrequestrequesttypedef) 
 
-### get_messaging_session_endpoint
+### get\_messaging\_session\_endpoint
 
 The details of the endpoint for the messaging session.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").get_messaging_session_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").get_messaging_session_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_messaging_session_endpoint)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.get_messaging_session_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.get_messaging_session_endpoint)
+```python title="Method definition"
+def get_messaging_session_endpoint(
+    self,
+) -> GetMessagingSessionEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef).
+1. See [:material-code-braces: GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef) 
 
-<a id="list\_channel\_bans"></a>
-
-### list_channel_bans
+### list\_channel\_bans
 
 Lists all the users banned from a particular channel.
 
-Type annotations for `boto3.client("chime-sdk-messaging").list_channel_bans`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_channel_bans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_bans)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_channel_bans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_bans)
+```python title="Method definition"
+def list_channel_bans(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelBansResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelBansRequestRequestTypeDef](./type_defs.md#listchannelbansrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelBansRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef).
+parent.list_channel_bans(**kwargs)
+```
 
-<a id="list\_channel\_flows"></a>
+1. See [:material-code-braces: ListChannelBansRequestRequestTypeDef](./type_defs.md#listchannelbansrequestrequesttypedef) 
 
-### list_channel_flows
+### list\_channel\_flows
 
-Returns a paginated lists of all the channel flows created under a single
-Chime.
+Returns a paginated lists of all the channel flows created under a single Chime.
 
-Type annotations for `boto3.client("chime-sdk-messaging").list_channel_flows`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_channel_flows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_flows)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_channel_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_flows)
+```python title="Method definition"
+def list_channel_flows(
+    self,
+    *,
+    AppInstanceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelFlowsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelFlowsRequestRequestTypeDef](./type_defs.md#listchannelflowsrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelFlowsResponseTypeDef](./type_defs.md#listchannelflowsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelFlowsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[ListChannelFlowsResponseTypeDef](./type_defs.md#listchannelflowsresponsetypedef).
+parent.list_channel_flows(**kwargs)
+```
 
-<a id="list\_channel\_memberships"></a>
+1. See [:material-code-braces: ListChannelFlowsRequestRequestTypeDef](./type_defs.md#listchannelflowsrequestrequesttypedef) 
 
-### list_channel_memberships
+### list\_channel\_memberships
 
 Lists all channel memberships in a channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").list_channel_memberships` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_channel_memberships` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_memberships)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_channel_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_memberships)
+```python title="Method definition"
+def list_channel_memberships(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str,
+    Type: ChannelMembershipTypeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelMembershipsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelMembershipsRequestRequestTypeDef](./type_defs.md#listchannelmembershipsrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+2. See [:material-code-braces: ListChannelMembershipsResponseTypeDef](./type_defs.md#listchannelmembershipsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelMembershipsRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[ListChannelMembershipsResponseTypeDef](./type_defs.md#listchannelmembershipsresponsetypedef).
+parent.list_channel_memberships(**kwargs)
+```
 
-<a id="list\_channel\_memberships\_for\_app\_instance\_user"></a>
+1. See [:material-code-braces: ListChannelMembershipsRequestRequestTypeDef](./type_defs.md#listchannelmembershipsrequestrequesttypedef) 
 
-### list_channel_memberships_for_app_instance_user
+### list\_channel\_memberships\_for\_app\_instance\_user
 
 Lists all channels that a particular `AppInstanceUser` is a part of.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").list_channel_memberships_for_app_instance_user`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_channel_memberships_for_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_memberships_for_app_instance_user)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_channel_memberships_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_memberships_for_app_instance_user)
+```python title="Method definition"
+def list_channel_memberships_for_app_instance_user(
+    self,
+    *,
+    ChimeBearer: str,
+    AppInstanceUserArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelMembershipsForAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelMembershipsForAppInstanceUserResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChimeBearer`: `str` *(required)*
-- `AppInstanceUserArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "ChimeBearer": ...,
+}
 
-Returns
-[ListChannelMembershipsForAppInstanceUserResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponsetypedef).
+parent.list_channel_memberships_for_app_instance_user(**kwargs)
+```
 
-<a id="list\_channel\_messages"></a>
+1. See [:material-code-braces: ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserrequestrequesttypedef) 
 
-### list_channel_messages
+### list\_channel\_messages
 
 List all the messages in a channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").list_channel_messages` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_channel_messages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_messages)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_channel_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_messages)
+```python title="Method definition"
+def list_channel_messages(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str,
+    SortOrder: SortOrderType = ...,  # (1)
+    NotBefore: Union[datetime, str] = ...,
+    NotAfter: Union[datetime, str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelMessagesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelMessagesRequestRequestTypeDef](./type_defs.md#listchannelmessagesrequestrequesttypedef).
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-braces: ListChannelMessagesResponseTypeDef](./type_defs.md#listchannelmessagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NotBefore`: `Union`\[`datetime`, `str`\]
-- `NotAfter`: `Union`\[`datetime`, `str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelMessagesRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[ListChannelMessagesResponseTypeDef](./type_defs.md#listchannelmessagesresponsetypedef).
+parent.list_channel_messages(**kwargs)
+```
 
-<a id="list\_channel\_moderators"></a>
+1. See [:material-code-braces: ListChannelMessagesRequestRequestTypeDef](./type_defs.md#listchannelmessagesrequestrequesttypedef) 
 
-### list_channel_moderators
+### list\_channel\_moderators
 
 Lists all the moderators for a channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").list_channel_moderators` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_channel_moderators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_moderators)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_channel_moderators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channel_moderators)
+```python title="Method definition"
+def list_channel_moderators(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelModeratorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelModeratorsRequestRequestTypeDef](./type_defs.md#listchannelmoderatorsrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelModeratorsResponseTypeDef](./type_defs.md#listchannelmoderatorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelModeratorsRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[ListChannelModeratorsResponseTypeDef](./type_defs.md#listchannelmoderatorsresponsetypedef).
+parent.list_channel_moderators(**kwargs)
+```
 
-<a id="list\_channels"></a>
+1. See [:material-code-braces: ListChannelModeratorsRequestRequestTypeDef](./type_defs.md#listchannelmoderatorsrequestrequesttypedef) 
 
-### list_channels
+### list\_channels
 
 Lists all Channels created under a single Chime App as a paginated list.
 
-Type annotations for `boto3.client("chime-sdk-messaging").list_channels`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channels)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channels)
+```python title="Method definition"
+def list_channels(
+    self,
+    *,
+    AppInstanceArn: str,
+    ChimeBearer: str,
+    Privacy: ChannelPrivacyType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
+2. See [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+parent.list_channels(**kwargs)
+```
 
-<a id="list\_channels\_associated\_with\_channel\_flow"></a>
+1. See [:material-code-braces: ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef) 
 
-### list_channels_associated_with_channel_flow
+### list\_channels\_associated\_with\_channel\_flow
 
 Lists all channels associated with a specified channel flow.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").list_channels_associated_with_channel_flow`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_channels_associated_with_channel_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channels_associated_with_channel_flow)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_channels_associated_with_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channels_associated_with_channel_flow)
+```python title="Method definition"
+def list_channels_associated_with_channel_flow(
+    self,
+    *,
+    ChannelFlowArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelsAssociatedWithChannelFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef](./type_defs.md#listchannelsassociatedwithchannelflowrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelsAssociatedWithChannelFlowResponseTypeDef](./type_defs.md#listchannelsassociatedwithchannelflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelFlowArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef = {  # (1)
+    "ChannelFlowArn": ...,
+}
 
-Returns
-[ListChannelsAssociatedWithChannelFlowResponseTypeDef](./type_defs.md#listchannelsassociatedwithchannelflowresponsetypedef).
+parent.list_channels_associated_with_channel_flow(**kwargs)
+```
 
-<a id="list\_channels\_moderated\_by\_app\_instance\_user"></a>
+1. See [:material-code-braces: ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef](./type_defs.md#listchannelsassociatedwithchannelflowrequestrequesttypedef) 
 
-### list_channels_moderated_by_app_instance_user
+### list\_channels\_moderated\_by\_app\_instance\_user
 
 A list of the channels moderated by an `AppInstanceUser` .
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").list_channels_moderated_by_app_instance_user`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_channels_moderated_by_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channels_moderated_by_app_instance_user)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_channels_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_channels_moderated_by_app_instance_user)
+```python title="Method definition"
+def list_channels_moderated_by_app_instance_user(
+    self,
+    *,
+    ChimeBearer: str,
+    AppInstanceUserArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelsModeratedByAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChimeBearer`: `str` *(required)*
-- `AppInstanceUserArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "ChimeBearer": ...,
+}
 
-Returns
-[ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef).
+parent.list_channels_moderated_by_app_instance_user(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags applied to an Amazon Chime SDK messaging resource.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_channel\_membership\_preferences"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_channel_membership_preferences
+### put\_channel\_membership\_preferences
 
 Sets the membership preferences of an `AppInstanceUser` for the specified
 channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").put_channel_membership_preferences`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").put_channel_membership_preferences` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.put_channel_membership_preferences)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.put_channel_membership_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.put_channel_membership_preferences)
+```python title="Method definition"
+def put_channel_membership_preferences(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+    Preferences: ChannelMembershipPreferencesTypeDef,  # (1)
+) -> PutChannelMembershipPreferencesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutChannelMembershipPreferencesRequestRequestTypeDef](./type_defs.md#putchannelmembershippreferencesrequestrequesttypedef).
+1. See [:material-code-braces: ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef) 
+2. See [:material-code-braces: PutChannelMembershipPreferencesResponseTypeDef](./type_defs.md#putchannelmembershippreferencesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `Preferences`:
-  [ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutChannelMembershipPreferencesRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+    "ChimeBearer": ...,
+    "Preferences": ...,
+}
 
-Returns
-[PutChannelMembershipPreferencesResponseTypeDef](./type_defs.md#putchannelmembershippreferencesresponsetypedef).
+parent.put_channel_membership_preferences(**kwargs)
+```
 
-<a id="redact\_channel\_message"></a>
+1. See [:material-code-braces: PutChannelMembershipPreferencesRequestRequestTypeDef](./type_defs.md#putchannelmembershippreferencesrequestrequesttypedef) 
 
-### redact_channel_message
+### redact\_channel\_message
 
 Redacts message content, but not metadata.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").redact_channel_message` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").redact_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.redact_channel_message)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.redact_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.redact_channel_message)
+```python title="Method definition"
+def redact_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+) -> RedactChannelMessageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RedactChannelMessageRequestRequestTypeDef](./type_defs.md#redactchannelmessagerequestrequesttypedef).
+1. See [:material-code-braces: RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MessageId`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RedactChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MessageId": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef).
+parent.redact_channel_message(**kwargs)
+```
 
-<a id="send\_channel\_message"></a>
+1. See [:material-code-braces: RedactChannelMessageRequestRequestTypeDef](./type_defs.md#redactchannelmessagerequestrequesttypedef) 
 
-### send_channel_message
+### send\_channel\_message
 
 Sends a message to a particular channel that the member is a part of.
 
-Type annotations for `boto3.client("chime-sdk-messaging").send_channel_message`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").send_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.send_channel_message)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.send_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.send_channel_message)
+```python title="Method definition"
+def send_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    Content: str,
+    Type: ChannelMessageTypeType,  # (1)
+    Persistence: ChannelMessagePersistenceTypeType,  # (2)
+    ClientRequestToken: str,
+    ChimeBearer: str,
+    Metadata: str = ...,
+    PushNotification: PushNotificationConfigurationTypeDef = ...,  # (3)
+    MessageAttributes: Mapping[str, MessageAttributeValueTypeDef] = ...,  # (4)
+) -> SendChannelMessageResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[SendChannelMessageRequestRequestTypeDef](./type_defs.md#sendchannelmessagerequestrequesttypedef).
+1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
+2. See [:material-code-brackets: ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype) 
+3. See [:material-code-braces: PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef) 
+4. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
+5. See [:material-code-braces: SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `Content`: `str` *(required)*
-- `Type`: [ChannelMessageTypeType](./literals.md#channelmessagetypetype)
-  *(required)*
-- `Persistence`:
-  [ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype)
-  *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `Metadata`: `str`
-- `PushNotification`:
-  [PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef)
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SendChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "Content": ...,
+    "Type": ...,
+    "Persistence": ...,
+    "ClientRequestToken": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).
+parent.send_channel_message(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SendChannelMessageRequestRequestTypeDef](./type_defs.md#sendchannelmessagerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
-Applies the specified tags to the specified Amazon Chime SDK messaging
-resource.
+Applies the specified tags to the specified Amazon Chime SDK messaging resource.
 
-Type annotations for `boto3.client("chime-sdk-messaging").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.tag_resource)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Removes the specified tags from the specified Amazon Chime SDK messaging
 resource.
 
-Type annotations for `boto3.client("chime-sdk-messaging").untag_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.untag_resource)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_channel"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_channel
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_channel
 
 Update a channel's attributes.
 
-Type annotations for `boto3.client("chime-sdk-messaging").update_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").update_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.update_channel)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.update_channel)
+```python title="Method definition"
+def update_channel(
+    self,
+    *,
+    ChannelArn: str,
+    Name: str,
+    Mode: ChannelModeType,  # (1)
+    ChimeBearer: str,
+    Metadata: str = ...,
+) -> UpdateChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-braces: UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Mode`: [ChannelModeType](./literals.md#channelmodetype) *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `Metadata`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "Name": ...,
+    "Mode": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+parent.update_channel(**kwargs)
+```
 
-<a id="update\_channel\_flow"></a>
+1. See [:material-code-braces: UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef) 
 
-### update_channel_flow
+### update\_channel\_flow
 
 Updates channel flow attributes.
 
-Type annotations for `boto3.client("chime-sdk-messaging").update_channel_flow`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").update_channel_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.update_channel_flow)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.update_channel_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.update_channel_flow)
+```python title="Method definition"
+def update_channel_flow(
+    self,
+    *,
+    ChannelFlowArn: str,
+    Processors: Sequence[ProcessorTypeDef],  # (1)
+    Name: str,
+) -> UpdateChannelFlowResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelFlowRequestRequestTypeDef](./type_defs.md#updatechannelflowrequestrequesttypedef).
+1. See [:material-code-braces: ProcessorTypeDef](./type_defs.md#processortypedef) 
+2. See [:material-code-braces: UpdateChannelFlowResponseTypeDef](./type_defs.md#updatechannelflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelFlowArn`: `str` *(required)*
-- `Processors`:
-  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
-  *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelFlowRequestRequestTypeDef = {  # (1)
+    "ChannelFlowArn": ...,
+    "Processors": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateChannelFlowResponseTypeDef](./type_defs.md#updatechannelflowresponsetypedef).
+parent.update_channel_flow(**kwargs)
+```
 
-<a id="update\_channel\_message"></a>
+1. See [:material-code-braces: UpdateChannelFlowRequestRequestTypeDef](./type_defs.md#updatechannelflowrequestrequesttypedef) 
 
-### update_channel_message
+### update\_channel\_message
 
 Updates the content of a message.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").update_channel_message` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").update_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.update_channel_message)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.update_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.update_channel_message)
+```python title="Method definition"
+def update_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+    Content: str = ...,
+    Metadata: str = ...,
+) -> UpdateChannelMessageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelMessageRequestRequestTypeDef](./type_defs.md#updatechannelmessagerequestrequesttypedef).
+1. See [:material-code-braces: UpdateChannelMessageResponseTypeDef](./type_defs.md#updatechannelmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MessageId`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
-- `Content`: `str`
-- `Metadata`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MessageId": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[UpdateChannelMessageResponseTypeDef](./type_defs.md#updatechannelmessageresponsetypedef).
+parent.update_channel_message(**kwargs)
+```
 
-<a id="update\_channel\_read\_marker"></a>
+1. See [:material-code-braces: UpdateChannelMessageRequestRequestTypeDef](./type_defs.md#updatechannelmessagerequestrequesttypedef) 
 
-### update_channel_read_marker
+### update\_channel\_read\_marker
 
 The details of the time when a user last read messages in a channel.
 
-Type annotations for
-`boto3.client("chime-sdk-messaging").update_channel_read_marker` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-messaging").update_channel_read_marker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.update_channel_read_marker)
 
-Boto3 documentation:
-[ChimeSDKMessaging.Client.update_channel_read_marker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.update_channel_read_marker)
+```python title="Method definition"
+def update_channel_read_marker(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str,
+) -> UpdateChannelReadMarkerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelReadMarkerRequestRequestTypeDef](./type_defs.md#updatechannelreadmarkerrequestrequesttypedef).
+1. See [:material-code-braces: UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelReadMarkerRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChimeBearer": ...,
+}
 
-Returns
-[UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef).
+parent.update_channel_read_marker(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateChannelReadMarkerRequestRequestTypeDef](./type_defs.md#updatechannelreadmarkerrequestrequesttypedef) 
+
+
+
+

@@ -1,27 +1,18 @@
-<a id="waiters-for-boto3-cloudcontrolapi-module"></a>
-
-# Waiters for boto3 CloudControlApi module
+# Waiters
 
 > [Index](../README.md) > [CloudControlApi](./README.md) > Waiters
 
-Auto-generated documentation for
-[CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
-type annotations stubs module
-[mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
+!!! note ""
 
-- [Waiters for boto3 CloudControlApi module](#waiters-for-boto3-cloudcontrolapi-module)
-  - [ResourceRequestSuccessWaiter](#resourcerequestsuccesswaiter)
-
-<a id="resourcerequestsuccesswaiter"></a>
+    Auto-generated documentation for [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
+    type annotations stubs module [mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
 
 ## ResourceRequestSuccessWaiter
 
-Type annotations for
-`boto3.client("cloudcontrol").get_waiter("resource_request_success")`.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").get_waiter("resource_request_success")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Waiter.ResourceRequestSuccess)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudcontrol.waiter import ResourceRequestSuccessWaiter
@@ -30,10 +21,30 @@ def get_resource_request_success_waiter() -> ResourceRequestSuccessWaiter:
     return Session().client("cloudcontrol").get_waiter("resource_request_success")
 ```
 
-Boto3 documentation:
-[CloudControlApi.Waiter.resource_request_success](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Waiter.ResourceRequestSuccess)
 
-Arguments for `ResourceRequestSuccessWaiter.wait` method:
+### wait
 
-- `RequestToken`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ResourceRequestSuccessWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    RequestToken: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetResourceRequestStatusInputResourceRequestSuccessWaitTypeDef = {  # (1)
+    "RequestToken": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourceRequestStatusInputResourceRequestSuccessWaitTypeDef](./type_defs.md#getresourcerequeststatusinputresourcerequestsuccesswaittypedef) 

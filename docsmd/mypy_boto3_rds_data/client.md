@@ -1,37 +1,18 @@
-<a id="rdsdataserviceclient-for-boto3-rdsdataservice-module"></a>
-
-# RDSDataServiceClient for boto3 RDSDataService module
+# RDSDataServiceClient
 
 > [Index](../README.md) > [RDSDataService](./README.md) > RDSDataServiceClient
 
-Auto-generated documentation for
-[RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
-type annotations stubs module
-[mypy-boto3-rds-data](https://pypi.org/project/mypy-boto3-rds-data/).
+!!! note ""
 
-- [RDSDataServiceClient for boto3 RDSDataService module](#rdsdataserviceclient-for-boto3-rdsdataservice-module)
-  - [RDSDataServiceClient](#rdsdataserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_execute_statement](#batch_execute_statement)
-    - [begin_transaction](#begin_transaction)
-    - [can_paginate](#can_paginate)
-    - [commit_transaction](#commit_transaction)
-    - [execute_sql](#execute_sql)
-    - [execute_statement](#execute_statement)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [rollback_transaction](#rollback_transaction)
-
-<a id="rdsdataserviceclient"></a>
+    Auto-generated documentation for [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
+    type annotations stubs module [mypy-boto3-rds-data](https://pypi.org/project/mypy-boto3-rds-data/).
 
 ## RDSDataServiceClient
 
-Type annotations for `boto3.client("rds-data")`
+Type annotations and code completion for `#!python boto3.client("rds-data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_rds_data.client import RDSDataServiceClient
 
@@ -39,238 +20,290 @@ def get_rds-data_client() -> RDSDataServiceClient:
     return Session().client("rds-data")
 ```
 
-Boto3 documentation:
-[RDSDataService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("rds-data").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("rds-data")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ForbiddenException,
+    client.InternalServerErrorException,
+    client.NotFoundException,
+    client.ServiceUnavailableError,
+    client.StatementTimeoutException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_rds_data.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ForbiddenException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ServiceUnavailableError`
-- `Exceptions.StatementTimeoutException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-RDSDataServiceClient exceptions.
-
-Type annotations for `boto3.client("rds-data").exceptions` method.
-
-Boto3 documentation:
-[RDSDataService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_execute\_statement"></a>
-
-### batch_execute_statement
+### batch\_execute\_statement
 
 Runs a batch SQL statement over an array of data.
 
-Type annotations for `boto3.client("rds-data").batch_execute_statement` method.
+Type annotations and code completion for `#!python boto3.client("rds-data").batch_execute_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement)
 
-Boto3 documentation:
-[RDSDataService.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.batch_execute_statement)
+```python title="Method definition"
+def batch_execute_statement(
+    self,
+    *,
+    resourceArn: str,
+    secretArn: str,
+    sql: str,
+    database: str = ...,
+    parameterSets: Sequence[Sequence[SqlParameterTypeDef]] = ...,  # (1)
+    schema: str = ...,
+    transactionId: str = ...,
+) -> BatchExecuteStatementResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchExecuteStatementRequestRequestTypeDef](./type_defs.md#batchexecutestatementrequestrequesttypedef).
+1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
+2. See [:material-code-braces: BatchExecuteStatementResponseTypeDef](./type_defs.md#batchexecutestatementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `secretArn`: `str` *(required)*
-- `sql`: `str` *(required)*
-- `database`: `str`
-- `parameterSets`:
-  `Sequence`\[`Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]\]
-- `schema`: `str`
-- `transactionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchExecuteStatementRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "secretArn": ...,
+    "sql": ...,
+}
 
-Returns
-[BatchExecuteStatementResponseTypeDef](./type_defs.md#batchexecutestatementresponsetypedef).
+parent.batch_execute_statement(**kwargs)
+```
 
-<a id="begin\_transaction"></a>
+1. See [:material-code-braces: BatchExecuteStatementRequestRequestTypeDef](./type_defs.md#batchexecutestatementrequestrequesttypedef) 
 
-### begin_transaction
+### begin\_transaction
 
 Starts a SQL transaction.
 
-Type annotations for `boto3.client("rds-data").begin_transaction` method.
+Type annotations and code completion for `#!python boto3.client("rds-data").begin_transaction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.begin_transaction)
 
-Boto3 documentation:
-[RDSDataService.Client.begin_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.begin_transaction)
+```python title="Method definition"
+def begin_transaction(
+    self,
+    *,
+    resourceArn: str,
+    secretArn: str,
+    database: str = ...,
+    schema: str = ...,
+) -> BeginTransactionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BeginTransactionRequestRequestTypeDef](./type_defs.md#begintransactionrequestrequesttypedef).
+1. See [:material-code-braces: BeginTransactionResponseTypeDef](./type_defs.md#begintransactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `secretArn`: `str` *(required)*
-- `database`: `str`
-- `schema`: `str`
+```python title="Usage example with kwargs"
+kwargs: BeginTransactionRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "secretArn": ...,
+}
 
-Returns
-[BeginTransactionResponseTypeDef](./type_defs.md#begintransactionresponsetypedef).
+parent.begin_transaction(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BeginTransactionRequestRequestTypeDef](./type_defs.md#begintransactionrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("rds-data").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("rds-data").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.can_paginate)
 
-Boto3 documentation:
-[RDSDataService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### commit\_transaction
 
-Returns `bool`.
+Ends a SQL transaction started with the `BeginTransaction` operation and commits
+the changes.
 
-<a id="commit\_transaction"></a>
+Type annotations and code completion for `#!python boto3.client("rds-data").commit_transaction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.commit_transaction)
 
-### commit_transaction
+```python title="Method definition"
+def commit_transaction(
+    self,
+    *,
+    resourceArn: str,
+    secretArn: str,
+    transactionId: str,
+) -> CommitTransactionResponseTypeDef:  # (1)
+    ...
+```
 
-Ends a SQL transaction started with the `BeginTransaction` operation and
-commits the changes.
+1. See [:material-code-braces: CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef) 
 
-Type annotations for `boto3.client("rds-data").commit_transaction` method.
 
-Boto3 documentation:
-[RDSDataService.Client.commit_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.commit_transaction)
+```python title="Usage example with kwargs"
+kwargs: CommitTransactionRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "secretArn": ...,
+    "transactionId": ...,
+}
 
-Arguments mapping described in
-[CommitTransactionRequestRequestTypeDef](./type_defs.md#committransactionrequestrequesttypedef).
+parent.commit_transaction(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CommitTransactionRequestRequestTypeDef](./type_defs.md#committransactionrequestrequesttypedef) 
 
-- `resourceArn`: `str` *(required)*
-- `secretArn`: `str` *(required)*
-- `transactionId`: `str` *(required)*
-
-Returns
-[CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef).
-
-<a id="execute\_sql"></a>
-
-### execute_sql
+### execute\_sql
 
 Runs one or more SQL statements.
 
-Type annotations for `boto3.client("rds-data").execute_sql` method.
+Type annotations and code completion for `#!python boto3.client("rds-data").execute_sql` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_sql)
 
-Boto3 documentation:
-[RDSDataService.Client.execute_sql](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_sql)
+```python title="Method definition"
+def execute_sql(
+    self,
+    *,
+    awsSecretStoreArn: str,
+    dbClusterOrInstanceArn: str,
+    sqlStatements: str,
+    database: str = ...,
+    schema: str = ...,
+) -> ExecuteSqlResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExecuteSqlRequestRequestTypeDef](./type_defs.md#executesqlrequestrequesttypedef).
+1. See [:material-code-braces: ExecuteSqlResponseTypeDef](./type_defs.md#executesqlresponsetypedef) 
 
-Keyword-only arguments:
 
-- `awsSecretStoreArn`: `str` *(required)*
-- `dbClusterOrInstanceArn`: `str` *(required)*
-- `sqlStatements`: `str` *(required)*
-- `database`: `str`
-- `schema`: `str`
+```python title="Usage example with kwargs"
+kwargs: ExecuteSqlRequestRequestTypeDef = {  # (1)
+    "awsSecretStoreArn": ...,
+    "dbClusterOrInstanceArn": ...,
+    "sqlStatements": ...,
+}
 
-Returns [ExecuteSqlResponseTypeDef](./type_defs.md#executesqlresponsetypedef).
+parent.execute_sql(**kwargs)
+```
 
-<a id="execute\_statement"></a>
+1. See [:material-code-braces: ExecuteSqlRequestRequestTypeDef](./type_defs.md#executesqlrequestrequesttypedef) 
 
-### execute_statement
+### execute\_statement
 
 Runs a SQL statement against a database.
 
-Type annotations for `boto3.client("rds-data").execute_statement` method.
+Type annotations and code completion for `#!python boto3.client("rds-data").execute_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_statement)
 
-Boto3 documentation:
-[RDSDataService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.execute_statement)
+```python title="Method definition"
+def execute_statement(
+    self,
+    *,
+    resourceArn: str,
+    secretArn: str,
+    sql: str,
+    continueAfterTimeout: bool = ...,
+    database: str = ...,
+    includeResultMetadata: bool = ...,
+    parameters: Sequence[SqlParameterTypeDef] = ...,  # (1)
+    resultSetOptions: ResultSetOptionsTypeDef = ...,  # (2)
+    schema: str = ...,
+    transactionId: str = ...,
+) -> ExecuteStatementResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ExecuteStatementRequestRequestTypeDef](./type_defs.md#executestatementrequestrequesttypedef).
+1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
+2. See [:material-code-braces: ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef) 
+3. See [:material-code-braces: ExecuteStatementResponseTypeDef](./type_defs.md#executestatementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `secretArn`: `str` *(required)*
-- `sql`: `str` *(required)*
-- `continueAfterTimeout`: `bool`
-- `database`: `str`
-- `includeResultMetadata`: `bool`
-- `parameters`:
-  `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
-- `resultSetOptions`:
-  [ResultSetOptionsTypeDef](./type_defs.md#resultsetoptionstypedef)
-- `schema`: `str`
-- `transactionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ExecuteStatementRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "secretArn": ...,
+    "sql": ...,
+}
 
-Returns
-[ExecuteStatementResponseTypeDef](./type_defs.md#executestatementresponsetypedef).
+parent.execute_statement(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExecuteStatementRequestRequestTypeDef](./type_defs.md#executestatementrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("rds-data").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("rds-data").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[RDSDataService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="rollback\_transaction"></a>
-
-### rollback_transaction
+### rollback\_transaction
 
 Performs a rollback of a transaction.
 
-Type annotations for `boto3.client("rds-data").rollback_transaction` method.
+Type annotations and code completion for `#!python boto3.client("rds-data").rollback_transaction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction)
 
-Boto3 documentation:
-[RDSDataService.Client.rollback_transaction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.rollback_transaction)
+```python title="Method definition"
+def rollback_transaction(
+    self,
+    *,
+    resourceArn: str,
+    secretArn: str,
+    transactionId: str,
+) -> RollbackTransactionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RollbackTransactionRequestRequestTypeDef](./type_defs.md#rollbacktransactionrequestrequesttypedef).
+1. See [:material-code-braces: RollbackTransactionResponseTypeDef](./type_defs.md#rollbacktransactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `secretArn`: `str` *(required)*
-- `transactionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RollbackTransactionRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "secretArn": ...,
+    "transactionId": ...,
+}
 
-Returns
-[RollbackTransactionResponseTypeDef](./type_defs.md#rollbacktransactionresponsetypedef).
+parent.rollback_transaction(**kwargs)
+```
+
+1. See [:material-code-braces: RollbackTransactionRequestRequestTypeDef](./type_defs.md#rollbacktransactionrequestrequesttypedef) 
+
+
+
+

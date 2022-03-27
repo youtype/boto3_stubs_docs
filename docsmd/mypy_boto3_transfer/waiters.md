@@ -1,27 +1,18 @@
-<a id="waiters-for-boto3-transfer-module"></a>
-
-# Waiters for boto3 Transfer module
+# Waiters
 
 > [Index](../README.md) > [Transfer](./README.md) > Waiters
 
-Auto-generated documentation for
-[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
-type annotations stubs module
-[mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
+!!! note ""
 
-- [Waiters for boto3 Transfer module](#waiters-for-boto3-transfer-module)
-  - [ServerOfflineWaiter](#serverofflinewaiter)
-  - [ServerOnlineWaiter](#serveronlinewaiter)
-
-<a id="serverofflinewaiter"></a>
+    Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+    type annotations stubs module [mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 ## ServerOfflineWaiter
 
-Type annotations for `boto3.client("transfer").get_waiter("server_offline")`.
+Type annotations and code completion for `#!python boto3.client("transfer").get_waiter("server_offline")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Waiter.ServerOffline)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_transfer.waiter import ServerOfflineWaiter
@@ -30,23 +21,39 @@ def get_server_offline_waiter() -> ServerOfflineWaiter:
     return Session().client("transfer").get_waiter("server_offline")
 ```
 
-Boto3 documentation:
-[Transfer.Waiter.server_offline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Waiter.ServerOffline)
 
-Arguments for `ServerOfflineWaiter.wait` method:
+### wait
 
-- `ServerId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ServerOfflineWaiter.wait` method.
 
-<a id="serveronlinewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ServerId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeServerRequestServerOfflineWaitTypeDef = {  # (1)
+    "ServerId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeServerRequestServerOfflineWaitTypeDef](./type_defs.md#describeserverrequestserverofflinewaittypedef) 
 ## ServerOnlineWaiter
 
-Type annotations for `boto3.client("transfer").get_waiter("server_online")`.
+Type annotations and code completion for `#!python boto3.client("transfer").get_waiter("server_online")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Waiter.ServerOnline)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_transfer.waiter import ServerOnlineWaiter
@@ -55,10 +62,30 @@ def get_server_online_waiter() -> ServerOnlineWaiter:
     return Session().client("transfer").get_waiter("server_online")
 ```
 
-Boto3 documentation:
-[Transfer.Waiter.server_online](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer.Waiter.ServerOnline)
 
-Arguments for `ServerOnlineWaiter.wait` method:
+### wait
 
-- `ServerId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ServerOnlineWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ServerId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeServerRequestServerOnlineWaitTypeDef = {  # (1)
+    "ServerId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeServerRequestServerOnlineWaitTypeDef](./type_defs.md#describeserverrequestserveronlinewaittypedef) 

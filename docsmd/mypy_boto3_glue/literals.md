@@ -1,1511 +1,1619 @@
-<a id="literals-for-boto3-glue-module"></a>
-
-# Literals for boto3 Glue module
+# Literals
 
 > [Index](../README.md) > [Glue](./README.md) > Literals
 
-Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
-type annotations stubs module
-[mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
+!!! note ""
 
-- [Literals for boto3 Glue module](#literals-for-boto3-glue-module)
-  - [BackfillErrorCodeType](#backfillerrorcodetype)
-  - [BlueprintRunStateType](#blueprintrunstatetype)
-  - [BlueprintStatusType](#blueprintstatustype)
-  - [CatalogEncryptionModeType](#catalogencryptionmodetype)
-  - [CloudWatchEncryptionModeType](#cloudwatchencryptionmodetype)
-  - [ColumnStatisticsTypeType](#columnstatisticstypetype)
-  - [ComparatorType](#comparatortype)
-  - [CompatibilityType](#compatibilitytype)
-  - [ConnectionPropertyKeyType](#connectionpropertykeytype)
-  - [ConnectionTypeType](#connectiontypetype)
-  - [CrawlStateType](#crawlstatetype)
-  - [CrawlerLineageSettingsType](#crawlerlineagesettingstype)
-  - [CrawlerStateType](#crawlerstatetype)
-  - [CsvHeaderOptionType](#csvheaderoptiontype)
-  - [DataFormatType](#dataformattype)
-  - [DeleteBehaviorType](#deletebehaviortype)
-  - [EnableHybridValuesType](#enablehybridvaluestype)
-  - [ExistConditionType](#existconditiontype)
-  - [GetClassifiersPaginatorName](#getclassifierspaginatorname)
-  - [GetConnectionsPaginatorName](#getconnectionspaginatorname)
-  - [GetCrawlerMetricsPaginatorName](#getcrawlermetricspaginatorname)
-  - [GetCrawlersPaginatorName](#getcrawlerspaginatorname)
-  - [GetDatabasesPaginatorName](#getdatabasespaginatorname)
-  - [GetDevEndpointsPaginatorName](#getdevendpointspaginatorname)
-  - [GetJobRunsPaginatorName](#getjobrunspaginatorname)
-  - [GetJobsPaginatorName](#getjobspaginatorname)
-  - [GetPartitionIndexesPaginatorName](#getpartitionindexespaginatorname)
-  - [GetPartitionsPaginatorName](#getpartitionspaginatorname)
-  - [GetResourcePoliciesPaginatorName](#getresourcepoliciespaginatorname)
-  - [GetSecurityConfigurationsPaginatorName](#getsecurityconfigurationspaginatorname)
-  - [GetTableVersionsPaginatorName](#gettableversionspaginatorname)
-  - [GetTablesPaginatorName](#gettablespaginatorname)
-  - [GetTriggersPaginatorName](#gettriggerspaginatorname)
-  - [GetUserDefinedFunctionsPaginatorName](#getuserdefinedfunctionspaginatorname)
-  - [JobBookmarksEncryptionModeType](#jobbookmarksencryptionmodetype)
-  - [JobRunStateType](#jobrunstatetype)
-  - [LanguageType](#languagetype)
-  - [LastCrawlStatusType](#lastcrawlstatustype)
-  - [ListRegistriesPaginatorName](#listregistriespaginatorname)
-  - [ListSchemaVersionsPaginatorName](#listschemaversionspaginatorname)
-  - [ListSchemasPaginatorName](#listschemaspaginatorname)
-  - [LogicalOperatorType](#logicaloperatortype)
-  - [LogicalType](#logicaltype)
-  - [MLUserDataEncryptionModeStringType](#mluserdataencryptionmodestringtype)
-  - [NodeTypeType](#nodetypetype)
-  - [PartitionIndexStatusType](#partitionindexstatustype)
-  - [PermissionType](#permissiontype)
-  - [PermissionTypeType](#permissiontypetype)
-  - [PrincipalTypeType](#principaltypetype)
-  - [RecrawlBehaviorType](#recrawlbehaviortype)
-  - [RegistryStatusType](#registrystatustype)
-  - [ResourceShareTypeType](#resourcesharetypetype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [S3EncryptionModeType](#s3encryptionmodetype)
-  - [ScheduleStateType](#schedulestatetype)
-  - [SchemaDiffTypeType](#schemadifftypetype)
-  - [SchemaStatusType](#schemastatustype)
-  - [SchemaVersionStatusType](#schemaversionstatustype)
-  - [SessionStatusType](#sessionstatustype)
-  - [SortDirectionTypeType](#sortdirectiontypetype)
-  - [SortType](#sorttype)
-  - [StatementStateType](#statementstatetype)
-  - [TaskRunSortColumnTypeType](#taskrunsortcolumntypetype)
-  - [TaskStatusTypeType](#taskstatustypetype)
-  - [TaskTypeType](#tasktypetype)
-  - [TransformSortColumnTypeType](#transformsortcolumntypetype)
-  - [TransformStatusTypeType](#transformstatustypetype)
-  - [TransformTypeType](#transformtypetype)
-  - [TriggerStateType](#triggerstatetype)
-  - [TriggerTypeType](#triggertypetype)
-  - [UpdateBehaviorType](#updatebehaviortype)
-  - [WorkerTypeType](#workertypetype)
-  - [WorkflowRunStatusType](#workflowrunstatustype)
-  - [GlueServiceName](#glueservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="backfillerrorcodetype"></a>
+    Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+    type annotations stubs module [mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
 ## BackfillErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import BackfillErrorCodeType
+
+def get_value() -> BackfillErrorCodeType:
+    return "ENCRYPTED_PARTITION_ERROR"
 ```
 
-Values:
-
-- `ENCRYPTED_PARTITION_ERROR`
-- `INTERNAL_ERROR`
-- `INVALID_PARTITION_TYPE_DATA_ERROR`
-- `MISSING_PARTITION_VALUE_ERROR`
-- `UNSUPPORTED_PARTITION_CHARACTER_ERROR`
-
-<a id="blueprintrunstatetype"></a>
-
+```python title="Definition"
+BackfillErrorCodeType = Literal[
+    "ENCRYPTED_PARTITION_ERROR",
+    "INTERNAL_ERROR",
+    "INVALID_PARTITION_TYPE_DATA_ERROR",
+    "MISSING_PARTITION_VALUE_ERROR",
+    "UNSUPPORTED_PARTITION_CHARACTER_ERROR",
+]
+```
 ## BlueprintRunStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import BlueprintRunStateType
+
+def get_value() -> BlueprintRunStateType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `ROLLING_BACK`
-- `RUNNING`
-- `SUCCEEDED`
-
-<a id="blueprintstatustype"></a>
-
+```python title="Definition"
+BlueprintRunStateType = Literal[
+    "FAILED",
+    "ROLLING_BACK",
+    "RUNNING",
+    "SUCCEEDED",
+]
+```
 ## BlueprintStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import BlueprintStatusType
+
+def get_value() -> BlueprintStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `FAILED`
-- `UPDATING`
-
-<a id="catalogencryptionmodetype"></a>
-
+```python title="Definition"
+BlueprintStatusType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "FAILED",
+    "UPDATING",
+]
+```
 ## CatalogEncryptionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import CatalogEncryptionModeType
+
+def get_value() -> CatalogEncryptionModeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `SSE-KMS`
-
-<a id="cloudwatchencryptionmodetype"></a>
-
+```python title="Definition"
+CatalogEncryptionModeType = Literal[
+    "DISABLED",
+    "SSE-KMS",
+]
+```
 ## CloudWatchEncryptionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import CloudWatchEncryptionModeType
+
+def get_value() -> CloudWatchEncryptionModeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `SSE-KMS`
-
-<a id="columnstatisticstypetype"></a>
-
+```python title="Definition"
+CloudWatchEncryptionModeType = Literal[
+    "DISABLED",
+    "SSE-KMS",
+]
+```
 ## ColumnStatisticsTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ColumnStatisticsTypeType
+
+def get_value() -> ColumnStatisticsTypeType:
+    return "BINARY"
 ```
 
-Values:
-
-- `BINARY`
-- `BOOLEAN`
-- `DATE`
-- `DECIMAL`
-- `DOUBLE`
-- `LONG`
-- `STRING`
-
-<a id="comparatortype"></a>
-
+```python title="Definition"
+ColumnStatisticsTypeType = Literal[
+    "BINARY",
+    "BOOLEAN",
+    "DATE",
+    "DECIMAL",
+    "DOUBLE",
+    "LONG",
+    "STRING",
+]
+```
 ## ComparatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ComparatorType
+
+def get_value() -> ComparatorType:
+    return "EQUALS"
 ```
 
-Values:
-
-- `EQUALS`
-- `GREATER_THAN`
-- `GREATER_THAN_EQUALS`
-- `LESS_THAN`
-- `LESS_THAN_EQUALS`
-
-<a id="compatibilitytype"></a>
-
+```python title="Definition"
+ComparatorType = Literal[
+    "EQUALS",
+    "GREATER_THAN",
+    "GREATER_THAN_EQUALS",
+    "LESS_THAN",
+    "LESS_THAN_EQUALS",
+]
+```
 ## CompatibilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import CompatibilityType
+
+def get_value() -> CompatibilityType:
+    return "BACKWARD"
 ```
 
-Values:
-
-- `BACKWARD`
-- `BACKWARD_ALL`
-- `DISABLED`
-- `FORWARD`
-- `FORWARD_ALL`
-- `FULL`
-- `FULL_ALL`
-- `NONE`
-
-<a id="connectionpropertykeytype"></a>
-
+```python title="Definition"
+CompatibilityType = Literal[
+    "BACKWARD",
+    "BACKWARD_ALL",
+    "DISABLED",
+    "FORWARD",
+    "FORWARD_ALL",
+    "FULL",
+    "FULL_ALL",
+    "NONE",
+]
+```
 ## ConnectionPropertyKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ConnectionPropertyKeyType
+
+def get_value() -> ConnectionPropertyKeyType:
+    return "CONFIG_FILES"
 ```
 
-Values:
-
-- `CONFIG_FILES`
-- `CONNECTION_URL`
-- `CONNECTOR_CLASS_NAME`
-- `CONNECTOR_TYPE`
-- `CONNECTOR_URL`
-- `CUSTOM_JDBC_CERT`
-- `CUSTOM_JDBC_CERT_STRING`
-- `ENCRYPTED_KAFKA_CLIENT_KEY_PASSWORD`
-- `ENCRYPTED_KAFKA_CLIENT_KEYSTORE_PASSWORD`
-- `ENCRYPTED_PASSWORD`
-- `HOST`
-- `INSTANCE_ID`
-- `JDBC_CONNECTION_URL`
-- `JDBC_DRIVER_CLASS_NAME`
-- `JDBC_DRIVER_JAR_URI`
-- `JDBC_ENFORCE_SSL`
-- `JDBC_ENGINE`
-- `JDBC_ENGINE_VERSION`
-- `KAFKA_BOOTSTRAP_SERVERS`
-- `KAFKA_CLIENT_KEY_PASSWORD`
-- `KAFKA_CLIENT_KEYSTORE`
-- `KAFKA_CLIENT_KEYSTORE_PASSWORD`
-- `KAFKA_CUSTOM_CERT`
-- `KAFKA_SKIP_CUSTOM_CERT_VALIDATION`
-- `KAFKA_SSL_ENABLED`
-- `PASSWORD`
-- `PORT`
-- `SECRET_ID`
-- `SKIP_CUSTOM_JDBC_CERT_VALIDATION`
-- `USERNAME`
-
-<a id="connectiontypetype"></a>
-
+```python title="Definition"
+ConnectionPropertyKeyType = Literal[
+    "CONFIG_FILES",
+    "CONNECTION_URL",
+    "CONNECTOR_CLASS_NAME",
+    "CONNECTOR_TYPE",
+    "CONNECTOR_URL",
+    "CUSTOM_JDBC_CERT",
+    "CUSTOM_JDBC_CERT_STRING",
+    "ENCRYPTED_KAFKA_CLIENT_KEY_PASSWORD",
+    "ENCRYPTED_KAFKA_CLIENT_KEYSTORE_PASSWORD",
+    "ENCRYPTED_PASSWORD",
+    "HOST",
+    "INSTANCE_ID",
+    "JDBC_CONNECTION_URL",
+    "JDBC_DRIVER_CLASS_NAME",
+    "JDBC_DRIVER_JAR_URI",
+    "JDBC_ENFORCE_SSL",
+    "JDBC_ENGINE",
+    "JDBC_ENGINE_VERSION",
+    "KAFKA_BOOTSTRAP_SERVERS",
+    "KAFKA_CLIENT_KEY_PASSWORD",
+    "KAFKA_CLIENT_KEYSTORE",
+    "KAFKA_CLIENT_KEYSTORE_PASSWORD",
+    "KAFKA_CUSTOM_CERT",
+    "KAFKA_SKIP_CUSTOM_CERT_VALIDATION",
+    "KAFKA_SSL_ENABLED",
+    "PASSWORD",
+    "PORT",
+    "SECRET_ID",
+    "SKIP_CUSTOM_JDBC_CERT_VALIDATION",
+    "USERNAME",
+]
+```
 ## ConnectionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ConnectionTypeType
+
+def get_value() -> ConnectionTypeType:
+    return "CUSTOM"
 ```
 
-Values:
-
-- `CUSTOM`
-- `JDBC`
-- `KAFKA`
-- `MARKETPLACE`
-- `MONGODB`
-- `NETWORK`
-- `SFTP`
-
-<a id="crawlstatetype"></a>
-
+```python title="Definition"
+ConnectionTypeType = Literal[
+    "CUSTOM",
+    "JDBC",
+    "KAFKA",
+    "MARKETPLACE",
+    "MONGODB",
+    "NETWORK",
+    "SFTP",
+]
+```
 ## CrawlStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import CrawlStateType
+
+def get_value() -> CrawlStateType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `CANCELLING`
-- `FAILED`
-- `RUNNING`
-- `SUCCEEDED`
-
-<a id="crawlerlineagesettingstype"></a>
-
+```python title="Definition"
+CrawlStateType = Literal[
+    "CANCELLED",
+    "CANCELLING",
+    "FAILED",
+    "RUNNING",
+    "SUCCEEDED",
+]
+```
 ## CrawlerLineageSettingsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import CrawlerLineageSettingsType
+
+def get_value() -> CrawlerLineageSettingsType:
+    return "DISABLE"
 ```
 
-Values:
-
-- `DISABLE`
-- `ENABLE`
-
-<a id="crawlerstatetype"></a>
-
+```python title="Definition"
+CrawlerLineageSettingsType = Literal[
+    "DISABLE",
+    "ENABLE",
+]
+```
 ## CrawlerStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import CrawlerStateType
+
+def get_value() -> CrawlerStateType:
+    return "READY"
 ```
 
-Values:
-
-- `READY`
-- `RUNNING`
-- `STOPPING`
-
-<a id="csvheaderoptiontype"></a>
-
+```python title="Definition"
+CrawlerStateType = Literal[
+    "READY",
+    "RUNNING",
+    "STOPPING",
+]
+```
 ## CsvHeaderOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import CsvHeaderOptionType
+
+def get_value() -> CsvHeaderOptionType:
+    return "ABSENT"
 ```
 
-Values:
-
-- `ABSENT`
-- `PRESENT`
-- `UNKNOWN`
-
-<a id="dataformattype"></a>
-
+```python title="Definition"
+CsvHeaderOptionType = Literal[
+    "ABSENT",
+    "PRESENT",
+    "UNKNOWN",
+]
+```
 ## DataFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import DataFormatType
+
+def get_value() -> DataFormatType:
+    return "AVRO"
 ```
 
-Values:
-
-- `AVRO`
-- `JSON`
-- `PROTOBUF`
-
-<a id="deletebehaviortype"></a>
-
+```python title="Definition"
+DataFormatType = Literal[
+    "AVRO",
+    "JSON",
+    "PROTOBUF",
+]
+```
 ## DeleteBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import DeleteBehaviorType
+
+def get_value() -> DeleteBehaviorType:
+    return "DELETE_FROM_DATABASE"
 ```
 
-Values:
-
-- `DELETE_FROM_DATABASE`
-- `DEPRECATE_IN_DATABASE`
-- `LOG`
-
-<a id="enablehybridvaluestype"></a>
-
+```python title="Definition"
+DeleteBehaviorType = Literal[
+    "DELETE_FROM_DATABASE",
+    "DEPRECATE_IN_DATABASE",
+    "LOG",
+]
+```
 ## EnableHybridValuesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import EnableHybridValuesType
+
+def get_value() -> EnableHybridValuesType:
+    return "FALSE"
 ```
 
-Values:
-
-- `FALSE`
-- `TRUE`
-
-<a id="existconditiontype"></a>
-
+```python title="Definition"
+EnableHybridValuesType = Literal[
+    "FALSE",
+    "TRUE",
+]
+```
 ## ExistConditionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ExistConditionType
+
+def get_value() -> ExistConditionType:
+    return "MUST_EXIST"
 ```
 
-Values:
-
-- `MUST_EXIST`
-- `NONE`
-- `NOT_EXIST`
-
-<a id="getclassifierspaginatorname"></a>
-
+```python title="Definition"
+ExistConditionType = Literal[
+    "MUST_EXIST",
+    "NONE",
+    "NOT_EXIST",
+]
+```
 ## GetClassifiersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetClassifiersPaginatorName
+
+def get_value() -> GetClassifiersPaginatorName:
+    return "get_classifiers"
 ```
 
-Values:
-
-- `get_classifiers`
-
-<a id="getconnectionspaginatorname"></a>
-
+```python title="Definition"
+GetClassifiersPaginatorName = Literal[
+    "get_classifiers",
+]
+```
 ## GetConnectionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetConnectionsPaginatorName
+
+def get_value() -> GetConnectionsPaginatorName:
+    return "get_connections"
 ```
 
-Values:
-
-- `get_connections`
-
-<a id="getcrawlermetricspaginatorname"></a>
-
+```python title="Definition"
+GetConnectionsPaginatorName = Literal[
+    "get_connections",
+]
+```
 ## GetCrawlerMetricsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetCrawlerMetricsPaginatorName
+
+def get_value() -> GetCrawlerMetricsPaginatorName:
+    return "get_crawler_metrics"
 ```
 
-Values:
-
-- `get_crawler_metrics`
-
-<a id="getcrawlerspaginatorname"></a>
-
+```python title="Definition"
+GetCrawlerMetricsPaginatorName = Literal[
+    "get_crawler_metrics",
+]
+```
 ## GetCrawlersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetCrawlersPaginatorName
+
+def get_value() -> GetCrawlersPaginatorName:
+    return "get_crawlers"
 ```
 
-Values:
-
-- `get_crawlers`
-
-<a id="getdatabasespaginatorname"></a>
-
+```python title="Definition"
+GetCrawlersPaginatorName = Literal[
+    "get_crawlers",
+]
+```
 ## GetDatabasesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetDatabasesPaginatorName
+
+def get_value() -> GetDatabasesPaginatorName:
+    return "get_databases"
 ```
 
-Values:
-
-- `get_databases`
-
-<a id="getdevendpointspaginatorname"></a>
-
+```python title="Definition"
+GetDatabasesPaginatorName = Literal[
+    "get_databases",
+]
+```
 ## GetDevEndpointsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetDevEndpointsPaginatorName
+
+def get_value() -> GetDevEndpointsPaginatorName:
+    return "get_dev_endpoints"
 ```
 
-Values:
-
-- `get_dev_endpoints`
-
-<a id="getjobrunspaginatorname"></a>
-
+```python title="Definition"
+GetDevEndpointsPaginatorName = Literal[
+    "get_dev_endpoints",
+]
+```
 ## GetJobRunsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetJobRunsPaginatorName
+
+def get_value() -> GetJobRunsPaginatorName:
+    return "get_job_runs"
 ```
 
-Values:
-
-- `get_job_runs`
-
-<a id="getjobspaginatorname"></a>
-
+```python title="Definition"
+GetJobRunsPaginatorName = Literal[
+    "get_job_runs",
+]
+```
 ## GetJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetJobsPaginatorName
+
+def get_value() -> GetJobsPaginatorName:
+    return "get_jobs"
 ```
 
-Values:
-
-- `get_jobs`
-
-<a id="getpartitionindexespaginatorname"></a>
-
+```python title="Definition"
+GetJobsPaginatorName = Literal[
+    "get_jobs",
+]
+```
 ## GetPartitionIndexesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetPartitionIndexesPaginatorName
+
+def get_value() -> GetPartitionIndexesPaginatorName:
+    return "get_partition_indexes"
 ```
 
-Values:
-
-- `get_partition_indexes`
-
-<a id="getpartitionspaginatorname"></a>
-
+```python title="Definition"
+GetPartitionIndexesPaginatorName = Literal[
+    "get_partition_indexes",
+]
+```
 ## GetPartitionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetPartitionsPaginatorName
+
+def get_value() -> GetPartitionsPaginatorName:
+    return "get_partitions"
 ```
 
-Values:
-
-- `get_partitions`
-
-<a id="getresourcepoliciespaginatorname"></a>
-
+```python title="Definition"
+GetPartitionsPaginatorName = Literal[
+    "get_partitions",
+]
+```
 ## GetResourcePoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetResourcePoliciesPaginatorName
+
+def get_value() -> GetResourcePoliciesPaginatorName:
+    return "get_resource_policies"
 ```
 
-Values:
-
-- `get_resource_policies`
-
-<a id="getsecurityconfigurationspaginatorname"></a>
-
+```python title="Definition"
+GetResourcePoliciesPaginatorName = Literal[
+    "get_resource_policies",
+]
+```
 ## GetSecurityConfigurationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetSecurityConfigurationsPaginatorName
+
+def get_value() -> GetSecurityConfigurationsPaginatorName:
+    return "get_security_configurations"
 ```
 
-Values:
-
-- `get_security_configurations`
-
-<a id="gettableversionspaginatorname"></a>
-
+```python title="Definition"
+GetSecurityConfigurationsPaginatorName = Literal[
+    "get_security_configurations",
+]
+```
 ## GetTableVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetTableVersionsPaginatorName
+
+def get_value() -> GetTableVersionsPaginatorName:
+    return "get_table_versions"
 ```
 
-Values:
-
-- `get_table_versions`
-
-<a id="gettablespaginatorname"></a>
-
+```python title="Definition"
+GetTableVersionsPaginatorName = Literal[
+    "get_table_versions",
+]
+```
 ## GetTablesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetTablesPaginatorName
+
+def get_value() -> GetTablesPaginatorName:
+    return "get_tables"
 ```
 
-Values:
-
-- `get_tables`
-
-<a id="gettriggerspaginatorname"></a>
-
+```python title="Definition"
+GetTablesPaginatorName = Literal[
+    "get_tables",
+]
+```
 ## GetTriggersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetTriggersPaginatorName
+
+def get_value() -> GetTriggersPaginatorName:
+    return "get_triggers"
 ```
 
-Values:
-
-- `get_triggers`
-
-<a id="getuserdefinedfunctionspaginatorname"></a>
-
+```python title="Definition"
+GetTriggersPaginatorName = Literal[
+    "get_triggers",
+]
+```
 ## GetUserDefinedFunctionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GetUserDefinedFunctionsPaginatorName
+
+def get_value() -> GetUserDefinedFunctionsPaginatorName:
+    return "get_user_defined_functions"
 ```
 
-Values:
-
-- `get_user_defined_functions`
-
-<a id="jobbookmarksencryptionmodetype"></a>
-
+```python title="Definition"
+GetUserDefinedFunctionsPaginatorName = Literal[
+    "get_user_defined_functions",
+]
+```
 ## JobBookmarksEncryptionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import JobBookmarksEncryptionModeType
+
+def get_value() -> JobBookmarksEncryptionModeType:
+    return "CSE-KMS"
 ```
 
-Values:
-
-- `CSE-KMS`
-- `DISABLED`
-
-<a id="jobrunstatetype"></a>
-
+```python title="Definition"
+JobBookmarksEncryptionModeType = Literal[
+    "CSE-KMS",
+    "DISABLED",
+]
+```
 ## JobRunStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import JobRunStateType
+
+def get_value() -> JobRunStateType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `RUNNING`
-- `STARTING`
-- `STOPPED`
-- `STOPPING`
-- `SUCCEEDED`
-- `TIMEOUT`
-
-<a id="languagetype"></a>
-
+```python title="Definition"
+JobRunStateType = Literal[
+    "FAILED",
+    "RUNNING",
+    "STARTING",
+    "STOPPED",
+    "STOPPING",
+    "SUCCEEDED",
+    "TIMEOUT",
+]
+```
 ## LanguageType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import LanguageType
+
+def get_value() -> LanguageType:
+    return "PYTHON"
 ```
 
-Values:
-
-- `PYTHON`
-- `SCALA`
-
-<a id="lastcrawlstatustype"></a>
-
+```python title="Definition"
+LanguageType = Literal[
+    "PYTHON",
+    "SCALA",
+]
+```
 ## LastCrawlStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import LastCrawlStatusType
+
+def get_value() -> LastCrawlStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `FAILED`
-- `SUCCEEDED`
-
-<a id="listregistriespaginatorname"></a>
-
+```python title="Definition"
+LastCrawlStatusType = Literal[
+    "CANCELLED",
+    "FAILED",
+    "SUCCEEDED",
+]
+```
 ## ListRegistriesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ListRegistriesPaginatorName
+
+def get_value() -> ListRegistriesPaginatorName:
+    return "list_registries"
 ```
 
-Values:
-
-- `list_registries`
-
-<a id="listschemaversionspaginatorname"></a>
-
+```python title="Definition"
+ListRegistriesPaginatorName = Literal[
+    "list_registries",
+]
+```
 ## ListSchemaVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ListSchemaVersionsPaginatorName
+
+def get_value() -> ListSchemaVersionsPaginatorName:
+    return "list_schema_versions"
 ```
 
-Values:
-
-- `list_schema_versions`
-
-<a id="listschemaspaginatorname"></a>
-
+```python title="Definition"
+ListSchemaVersionsPaginatorName = Literal[
+    "list_schema_versions",
+]
+```
 ## ListSchemasPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ListSchemasPaginatorName
+
+def get_value() -> ListSchemasPaginatorName:
+    return "list_schemas"
 ```
 
-Values:
-
-- `list_schemas`
-
-<a id="logicaloperatortype"></a>
-
+```python title="Definition"
+ListSchemasPaginatorName = Literal[
+    "list_schemas",
+]
+```
 ## LogicalOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import LogicalOperatorType
+
+def get_value() -> LogicalOperatorType:
+    return "EQUALS"
 ```
 
-Values:
-
-- `EQUALS`
-
-<a id="logicaltype"></a>
-
+```python title="Definition"
+LogicalOperatorType = Literal[
+    "EQUALS",
+]
+```
 ## LogicalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import LogicalType
+
+def get_value() -> LogicalType:
+    return "AND"
 ```
 
-Values:
-
-- `AND`
-- `ANY`
-
-<a id="mluserdataencryptionmodestringtype"></a>
-
+```python title="Definition"
+LogicalType = Literal[
+    "AND",
+    "ANY",
+]
+```
 ## MLUserDataEncryptionModeStringType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import MLUserDataEncryptionModeStringType
+
+def get_value() -> MLUserDataEncryptionModeStringType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `SSE-KMS`
-
-<a id="nodetypetype"></a>
-
+```python title="Definition"
+MLUserDataEncryptionModeStringType = Literal[
+    "DISABLED",
+    "SSE-KMS",
+]
+```
 ## NodeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import NodeTypeType
+
+def get_value() -> NodeTypeType:
+    return "CRAWLER"
 ```
 
-Values:
-
-- `CRAWLER`
-- `JOB`
-- `TRIGGER`
-
-<a id="partitionindexstatustype"></a>
-
+```python title="Definition"
+NodeTypeType = Literal[
+    "CRAWLER",
+    "JOB",
+    "TRIGGER",
+]
+```
 ## PartitionIndexStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import PartitionIndexStatusType
+
+def get_value() -> PartitionIndexStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-
-<a id="permissiontype"></a>
-
+```python title="Definition"
+PartitionIndexStatusType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+]
+```
 ## PermissionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import PermissionType
+
+def get_value() -> PermissionType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `ALTER`
-- `CREATE_DATABASE`
-- `CREATE_TABLE`
-- `DATA_LOCATION_ACCESS`
-- `DELETE`
-- `DROP`
-- `INSERT`
-- `SELECT`
-
-<a id="permissiontypetype"></a>
-
+```python title="Definition"
+PermissionType = Literal[
+    "ALL",
+    "ALTER",
+    "CREATE_DATABASE",
+    "CREATE_TABLE",
+    "DATA_LOCATION_ACCESS",
+    "DELETE",
+    "DROP",
+    "INSERT",
+    "SELECT",
+]
+```
 ## PermissionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import PermissionTypeType
+
+def get_value() -> PermissionTypeType:
+    return "CELL_FILTER_PERMISSION"
 ```
 
-Values:
-
-- `CELL_FILTER_PERMISSION`
-- `COLUMN_PERMISSION`
-
-<a id="principaltypetype"></a>
-
+```python title="Definition"
+PermissionTypeType = Literal[
+    "CELL_FILTER_PERMISSION",
+    "COLUMN_PERMISSION",
+]
+```
 ## PrincipalTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import PrincipalTypeType
+
+def get_value() -> PrincipalTypeType:
+    return "GROUP"
 ```
 
-Values:
-
-- `GROUP`
-- `ROLE`
-- `USER`
-
-<a id="recrawlbehaviortype"></a>
-
+```python title="Definition"
+PrincipalTypeType = Literal[
+    "GROUP",
+    "ROLE",
+    "USER",
+]
+```
 ## RecrawlBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import RecrawlBehaviorType
+
+def get_value() -> RecrawlBehaviorType:
+    return "CRAWL_EVENT_MODE"
 ```
 
-Values:
-
-- `CRAWL_EVENT_MODE`
-- `CRAWL_EVERYTHING`
-- `CRAWL_NEW_FOLDERS_ONLY`
-
-<a id="registrystatustype"></a>
-
+```python title="Definition"
+RecrawlBehaviorType = Literal[
+    "CRAWL_EVENT_MODE",
+    "CRAWL_EVERYTHING",
+    "CRAWL_NEW_FOLDERS_ONLY",
+]
+```
 ## RegistryStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import RegistryStatusType
+
+def get_value() -> RegistryStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `DELETING`
-
-<a id="resourcesharetypetype"></a>
-
+```python title="Definition"
+RegistryStatusType = Literal[
+    "AVAILABLE",
+    "DELETING",
+]
+```
 ## ResourceShareTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ResourceShareTypeType
+
+def get_value() -> ResourceShareTypeType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `FOREIGN`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+ResourceShareTypeType = Literal[
+    "ALL",
+    "FOREIGN",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "ARCHIVE"
 ```
 
-Values:
-
-- `ARCHIVE`
-- `FILE`
-- `JAR`
-
-<a id="s3encryptionmodetype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "ARCHIVE",
+    "FILE",
+    "JAR",
+]
+```
 ## S3EncryptionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import S3EncryptionModeType
+
+def get_value() -> S3EncryptionModeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `SSE-KMS`
-- `SSE-S3`
-
-<a id="schedulestatetype"></a>
-
+```python title="Definition"
+S3EncryptionModeType = Literal[
+    "DISABLED",
+    "SSE-KMS",
+    "SSE-S3",
+]
+```
 ## ScheduleStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ScheduleStateType
+
+def get_value() -> ScheduleStateType:
+    return "NOT_SCHEDULED"
 ```
 
-Values:
-
-- `NOT_SCHEDULED`
-- `SCHEDULED`
-- `TRANSITIONING`
-
-<a id="schemadifftypetype"></a>
-
+```python title="Definition"
+ScheduleStateType = Literal[
+    "NOT_SCHEDULED",
+    "SCHEDULED",
+    "TRANSITIONING",
+]
+```
 ## SchemaDiffTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import SchemaDiffTypeType
+
+def get_value() -> SchemaDiffTypeType:
+    return "SYNTAX_DIFF"
 ```
 
-Values:
-
-- `SYNTAX_DIFF`
-
-<a id="schemastatustype"></a>
-
+```python title="Definition"
+SchemaDiffTypeType = Literal[
+    "SYNTAX_DIFF",
+]
+```
 ## SchemaStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import SchemaStatusType
+
+def get_value() -> SchemaStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `DELETING`
-- `PENDING`
-
-<a id="schemaversionstatustype"></a>
-
+```python title="Definition"
+SchemaStatusType = Literal[
+    "AVAILABLE",
+    "DELETING",
+    "PENDING",
+]
+```
 ## SchemaVersionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import SchemaVersionStatusType
+
+def get_value() -> SchemaVersionStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `DELETING`
-- `FAILURE`
-- `PENDING`
-
-<a id="sessionstatustype"></a>
-
+```python title="Definition"
+SchemaVersionStatusType = Literal[
+    "AVAILABLE",
+    "DELETING",
+    "FAILURE",
+    "PENDING",
+]
+```
 ## SessionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import SessionStatusType
+
+def get_value() -> SessionStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `PROVISIONING`
-- `READY`
-- `STOPPED`
-- `STOPPING`
-- `TIMEOUT`
-
-<a id="sortdirectiontypetype"></a>
-
+```python title="Definition"
+SessionStatusType = Literal[
+    "FAILED",
+    "PROVISIONING",
+    "READY",
+    "STOPPED",
+    "STOPPING",
+    "TIMEOUT",
+]
+```
 ## SortDirectionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import SortDirectionTypeType
+
+def get_value() -> SortDirectionTypeType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="sorttype"></a>
-
+```python title="Definition"
+SortDirectionTypeType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## SortType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import SortType
+
+def get_value() -> SortType:
+    return "ASC"
 ```
 
-Values:
-
-- `ASC`
-- `DESC`
-
-<a id="statementstatetype"></a>
-
+```python title="Definition"
+SortType = Literal[
+    "ASC",
+    "DESC",
+]
+```
 ## StatementStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import StatementStateType
+
+def get_value() -> StatementStateType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `CANCELLED`
-- `CANCELLING`
-- `ERROR`
-- `RUNNING`
-- `WAITING`
-
-<a id="taskrunsortcolumntypetype"></a>
-
+```python title="Definition"
+StatementStateType = Literal[
+    "AVAILABLE",
+    "CANCELLED",
+    "CANCELLING",
+    "ERROR",
+    "RUNNING",
+    "WAITING",
+]
+```
 ## TaskRunSortColumnTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import TaskRunSortColumnTypeType
+
+def get_value() -> TaskRunSortColumnTypeType:
+    return "STARTED"
 ```
 
-Values:
-
-- `STARTED`
-- `STATUS`
-- `TASK_RUN_TYPE`
-
-<a id="taskstatustypetype"></a>
-
+```python title="Definition"
+TaskRunSortColumnTypeType = Literal[
+    "STARTED",
+    "STATUS",
+    "TASK_RUN_TYPE",
+]
+```
 ## TaskStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import TaskStatusTypeType
+
+def get_value() -> TaskStatusTypeType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `RUNNING`
-- `STARTING`
-- `STOPPED`
-- `STOPPING`
-- `SUCCEEDED`
-- `TIMEOUT`
-
-<a id="tasktypetype"></a>
-
+```python title="Definition"
+TaskStatusTypeType = Literal[
+    "FAILED",
+    "RUNNING",
+    "STARTING",
+    "STOPPED",
+    "STOPPING",
+    "SUCCEEDED",
+    "TIMEOUT",
+]
+```
 ## TaskTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import TaskTypeType
+
+def get_value() -> TaskTypeType:
+    return "EVALUATION"
 ```
 
-Values:
-
-- `EVALUATION`
-- `EXPORT_LABELS`
-- `FIND_MATCHES`
-- `IMPORT_LABELS`
-- `LABELING_SET_GENERATION`
-
-<a id="transformsortcolumntypetype"></a>
-
+```python title="Definition"
+TaskTypeType = Literal[
+    "EVALUATION",
+    "EXPORT_LABELS",
+    "FIND_MATCHES",
+    "IMPORT_LABELS",
+    "LABELING_SET_GENERATION",
+]
+```
 ## TransformSortColumnTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import TransformSortColumnTypeType
+
+def get_value() -> TransformSortColumnTypeType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATED`
-- `LAST_MODIFIED`
-- `NAME`
-- `STATUS`
-- `TRANSFORM_TYPE`
-
-<a id="transformstatustypetype"></a>
-
+```python title="Definition"
+TransformSortColumnTypeType = Literal[
+    "CREATED",
+    "LAST_MODIFIED",
+    "NAME",
+    "STATUS",
+    "TRANSFORM_TYPE",
+]
+```
 ## TransformStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import TransformStatusTypeType
+
+def get_value() -> TransformStatusTypeType:
+    return "DELETING"
 ```
 
-Values:
-
-- `DELETING`
-- `NOT_READY`
-- `READY`
-
-<a id="transformtypetype"></a>
-
+```python title="Definition"
+TransformStatusTypeType = Literal[
+    "DELETING",
+    "NOT_READY",
+    "READY",
+]
+```
 ## TransformTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import TransformTypeType
+
+def get_value() -> TransformTypeType:
+    return "FIND_MATCHES"
 ```
 
-Values:
-
-- `FIND_MATCHES`
-
-<a id="triggerstatetype"></a>
-
+```python title="Definition"
+TransformTypeType = Literal[
+    "FIND_MATCHES",
+]
+```
 ## TriggerStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import TriggerStateType
+
+def get_value() -> TriggerStateType:
+    return "ACTIVATED"
 ```
 
-Values:
-
-- `ACTIVATED`
-- `ACTIVATING`
-- `CREATED`
-- `CREATING`
-- `DEACTIVATED`
-- `DEACTIVATING`
-- `DELETING`
-- `UPDATING`
-
-<a id="triggertypetype"></a>
-
+```python title="Definition"
+TriggerStateType = Literal[
+    "ACTIVATED",
+    "ACTIVATING",
+    "CREATED",
+    "CREATING",
+    "DEACTIVATED",
+    "DEACTIVATING",
+    "DELETING",
+    "UPDATING",
+]
+```
 ## TriggerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import TriggerTypeType
+
+def get_value() -> TriggerTypeType:
+    return "CONDITIONAL"
 ```
 
-Values:
-
-- `CONDITIONAL`
-- `EVENT`
-- `ON_DEMAND`
-- `SCHEDULED`
-
-<a id="updatebehaviortype"></a>
-
+```python title="Definition"
+TriggerTypeType = Literal[
+    "CONDITIONAL",
+    "EVENT",
+    "ON_DEMAND",
+    "SCHEDULED",
+]
+```
 ## UpdateBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import UpdateBehaviorType
+
+def get_value() -> UpdateBehaviorType:
+    return "LOG"
 ```
 
-Values:
-
-- `LOG`
-- `UPDATE_IN_DATABASE`
-
-<a id="workertypetype"></a>
-
+```python title="Definition"
+UpdateBehaviorType = Literal[
+    "LOG",
+    "UPDATE_IN_DATABASE",
+]
+```
 ## WorkerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import WorkerTypeType
+
+def get_value() -> WorkerTypeType:
+    return "G.1X"
 ```
 
-Values:
-
-- `G.1X`
-- `G.2X`
-- `Standard`
-
-<a id="workflowrunstatustype"></a>
-
+```python title="Definition"
+WorkerTypeType = Literal[
+    "G.1X",
+    "G.2X",
+    "Standard",
+]
+```
 ## WorkflowRunStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import WorkflowRunStatusType
+
+def get_value() -> WorkflowRunStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `ERROR`
-- `RUNNING`
-- `STOPPED`
-- `STOPPING`
-
-<a id="glueservicename"></a>
-
+```python title="Definition"
+WorkflowRunStatusType = Literal[
+    "COMPLETED",
+    "ERROR",
+    "RUNNING",
+    "STOPPED",
+    "STOPPING",
+]
+```
 ## GlueServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import GlueServiceName
+
+def get_value() -> GlueServiceName:
+    return "glue"
 ```
 
-Values:
-
-- `glue`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+GlueServiceName = Literal[
+    "glue",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "get_classifiers"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "get_classifiers",
+    "get_connections",
+    "get_crawler_metrics",
+    "get_crawlers",
+    "get_databases",
+    "get_dev_endpoints",
+    "get_job_runs",
+    "get_jobs",
+    "get_partition_indexes",
+    "get_partitions",
+    "get_resource_policies",
+    "get_security_configurations",
+    "get_table_versions",
+    "get_tables",
+    "get_triggers",
+    "get_user_defined_functions",
+    "list_registries",
+    "list_schema_versions",
+    "list_schemas",
+]
+```
+## RegionName
 
-- `get_classifiers`
-- `get_connections`
-- `get_crawler_metrics`
-- `get_crawlers`
-- `get_databases`
-- `get_dev_endpoints`
-- `get_job_runs`
-- `get_jobs`
-- `get_partition_indexes`
-- `get_partitions`
-- `get_resource_policies`
-- `get_security_configurations`
-- `get_table_versions`
-- `get_tables`
-- `get_triggers`
-- `get_user_defined_functions`
-- `list_registries`
-- `list_schema_versions`
-- `list_schemas`
+```python title="Usage Example"
+from mypy_boto3_glue.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

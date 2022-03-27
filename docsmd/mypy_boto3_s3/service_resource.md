@@ -1,2609 +1,3091 @@
-<a id="s3serviceresource-for-boto3-s3-module"></a>
-
-# S3ServiceResource for boto3 S3 module
+# S3ServiceResource
 
 > [Index](../README.md) > [S3](./README.md) > S3ServiceResource
 
-Auto-generated documentation for
-[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
-type annotations stubs module
-[mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
+!!! note ""
 
-- [S3ServiceResource for boto3 S3 module](#s3serviceresource-for-boto3-s3-module)
-  - [S3ServiceResource](#s3serviceresource)
-  - [Attributes](#attributes)
-  - [Collections](#collections)
-    - [ServiceResourceBucketsCollection](#serviceresourcebucketscollection)
-  - [Methods](#methods)
-    - [S3ServiceResource.Bucket method](#s3serviceresourcebucket-method)
-    - [S3ServiceResource.BucketAcl method](#s3serviceresourcebucketacl-method)
-    - [S3ServiceResource.BucketCors method](#s3serviceresourcebucketcors-method)
-    - [S3ServiceResource.BucketLifecycle method](#s3serviceresourcebucketlifecycle-method)
-    - [S3ServiceResource.BucketLifecycleConfiguration method](#s3serviceresourcebucketlifecycleconfiguration-method)
-    - [S3ServiceResource.BucketLogging method](#s3serviceresourcebucketlogging-method)
-    - [S3ServiceResource.BucketNotification method](#s3serviceresourcebucketnotification-method)
-    - [S3ServiceResource.BucketPolicy method](#s3serviceresourcebucketpolicy-method)
-    - [S3ServiceResource.BucketRequestPayment method](#s3serviceresourcebucketrequestpayment-method)
-    - [S3ServiceResource.BucketTagging method](#s3serviceresourcebuckettagging-method)
-    - [S3ServiceResource.BucketVersioning method](#s3serviceresourcebucketversioning-method)
-    - [S3ServiceResource.BucketWebsite method](#s3serviceresourcebucketwebsite-method)
-    - [S3ServiceResource.MultipartUpload method](#s3serviceresourcemultipartupload-method)
-    - [S3ServiceResource.MultipartUploadPart method](#s3serviceresourcemultipartuploadpart-method)
-    - [S3ServiceResource.Object method](#s3serviceresourceobject-method)
-    - [S3ServiceResource.ObjectAcl method](#s3serviceresourceobjectacl-method)
-    - [S3ServiceResource.ObjectSummary method](#s3serviceresourceobjectsummary-method)
-    - [S3ServiceResource.ObjectVersion method](#s3serviceresourceobjectversion-method)
-    - [S3ServiceResource.create_bucket method](#s3serviceresourcecreate_bucket-method)
-    - [S3ServiceResource.get_available_subresources method](#s3serviceresourceget_available_subresources-method)
-  - [Bucket](#bucket)
-    - [Bucket attributes](#bucket-attributes)
-    - [Bucket collections](#bucket-collections)
-    - [Bucket methods](#bucket-methods)
-  - [BucketAcl](#bucketacl)
-    - [BucketAcl attributes](#bucketacl-attributes)
-    - [BucketAcl methods](#bucketacl-methods)
-  - [BucketCors](#bucketcors)
-    - [BucketCors attributes](#bucketcors-attributes)
-    - [BucketCors methods](#bucketcors-methods)
-  - [BucketLifecycle](#bucketlifecycle)
-    - [BucketLifecycle attributes](#bucketlifecycle-attributes)
-    - [BucketLifecycle methods](#bucketlifecycle-methods)
-  - [BucketLifecycleConfiguration](#bucketlifecycleconfiguration)
-    - [BucketLifecycleConfiguration attributes](#bucketlifecycleconfiguration-attributes)
-    - [BucketLifecycleConfiguration methods](#bucketlifecycleconfiguration-methods)
-  - [BucketLogging](#bucketlogging)
-    - [BucketLogging attributes](#bucketlogging-attributes)
-    - [BucketLogging methods](#bucketlogging-methods)
-  - [BucketNotification](#bucketnotification)
-    - [BucketNotification attributes](#bucketnotification-attributes)
-    - [BucketNotification methods](#bucketnotification-methods)
-  - [BucketPolicy](#bucketpolicy)
-    - [BucketPolicy attributes](#bucketpolicy-attributes)
-    - [BucketPolicy methods](#bucketpolicy-methods)
-  - [BucketRequestPayment](#bucketrequestpayment)
-    - [BucketRequestPayment attributes](#bucketrequestpayment-attributes)
-    - [BucketRequestPayment methods](#bucketrequestpayment-methods)
-  - [BucketTagging](#buckettagging)
-    - [BucketTagging attributes](#buckettagging-attributes)
-    - [BucketTagging methods](#buckettagging-methods)
-  - [BucketVersioning](#bucketversioning)
-    - [BucketVersioning attributes](#bucketversioning-attributes)
-    - [BucketVersioning methods](#bucketversioning-methods)
-  - [BucketWebsite](#bucketwebsite)
-    - [BucketWebsite attributes](#bucketwebsite-attributes)
-    - [BucketWebsite methods](#bucketwebsite-methods)
-  - [MultipartUpload](#multipartupload)
-    - [MultipartUpload attributes](#multipartupload-attributes)
-    - [MultipartUpload collections](#multipartupload-collections)
-    - [MultipartUpload methods](#multipartupload-methods)
-  - [MultipartUploadPart](#multipartuploadpart)
-    - [MultipartUploadPart attributes](#multipartuploadpart-attributes)
-    - [MultipartUploadPart methods](#multipartuploadpart-methods)
-  - [Object](#object)
-    - [Object attributes](#object-attributes)
-    - [Object methods](#object-methods)
-  - [ObjectAcl](#objectacl)
-    - [ObjectAcl attributes](#objectacl-attributes)
-    - [ObjectAcl methods](#objectacl-methods)
-  - [ObjectSummary](#objectsummary)
-    - [ObjectSummary attributes](#objectsummary-attributes)
-    - [ObjectSummary methods](#objectsummary-methods)
-  - [ObjectVersion](#objectversion)
-    - [ObjectVersion attributes](#objectversion-attributes)
-    - [ObjectVersion methods](#objectversion-methods)
-
-<a id="s3serviceresource"></a>
+    Auto-generated documentation for [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+    type annotations stubs module [mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
 ## S3ServiceResource
 
-Type annotations for `boto3.resource("s3")`, included resources and
-collections.
+Type annotations and code completion for `#!python boto3.resource("s3")`, included resources and collections.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import S3ServiceResource
 
 def get_s3_resource() -> S3ServiceResource:
     return boto3.resource("s3")
 ```
 
-Boto3 documentation:
-[S3.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource)
-
-<a id="attributes"></a>
 
 ## Attributes
 
+
 - `meta`: [S3ResourceMeta](#s3resourcemeta)
 
-- `buckets`:
-  [ServiceResourceBucketsCollection](#serviceresourcebucketscollection)
+- `buckets`: [ServiceResourceBucketsCollection](#serviceresourcebucketscollection)
 
-<a id="collections"></a>
+
+
 
 ## Collections
 
-<a id="serviceresourcebucketscollection"></a>
-
 ### ServiceResourceBucketsCollection
 
-Type annotations for `boto3.resource("s3").buckets` collection.
+Provides access to [Bucket](#bucket) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("s3").buckets` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.buckets)
 
-```python
-from mypy_boto3_s3.service_resource import ServiceResourceBucketsCollection,
+```python title="Usage example"
+from mypy_boto3_s3.service_resource import ServiceResourceBucketsCollection
 
 def get_collection() -> ServiceResourceBucketsCollection:
     return boto3.resource("s3").buckets
 ```
 
-Provides access to [Bucket](#bucket) resource.
 
-Boto3 documentation:
-[S3.ServiceResource.buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.buckets)
 
-<a id="methods"></a>
 
 ## Methods
-
-<a id="s3serviceresourcebucket-method"></a>
 
 ### S3ServiceResource.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Bucket)
 
-Boto3 documentation:
-[S3.ServiceResource.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+    name: str,
+) -> Bucket:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketRequestTypeDef](./type_defs.md#serviceresourcebucketrequesttypedef).
 
-Arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [Bucket](#bucket).
+parent.Bucket(**kwargs)
+```
 
-<a id="s3serviceresourcebucketacl-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketRequestTypeDef](./type_defs.md#serviceresourcebucketrequesttypedef) 
 
 ### S3ServiceResource.BucketAcl method
 
 Creates a BucketAcl resource.
 
-Type annotations for `boto3.resource("s3").BucketAcl` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketAcl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketAcl)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketAcl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketAcl)
+```python title="Method definition"
+def BucketAcl(
+    self,
+    bucket_name: str,
+) -> BucketAcl:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketAclRequestTypeDef](./type_defs.md#serviceresourcebucketaclrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketAclRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketAcl](#bucketacl).
+parent.BucketAcl(**kwargs)
+```
 
-<a id="s3serviceresourcebucketcors-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketAclRequestTypeDef](./type_defs.md#serviceresourcebucketaclrequesttypedef) 
 
 ### S3ServiceResource.BucketCors method
 
 Creates a BucketCors resource.
 
-Type annotations for `boto3.resource("s3").BucketCors` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketCors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketCors)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketCors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketCors)
+```python title="Method definition"
+def BucketCors(
+    self,
+    bucket_name: str,
+) -> BucketCors:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketCorsRequestTypeDef](./type_defs.md#serviceresourcebucketcorsrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketCorsRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketCors](#bucketcors).
+parent.BucketCors(**kwargs)
+```
 
-<a id="s3serviceresourcebucketlifecycle-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketCorsRequestTypeDef](./type_defs.md#serviceresourcebucketcorsrequesttypedef) 
 
 ### S3ServiceResource.BucketLifecycle method
 
 Creates a BucketLifecycle resource.
 
-Type annotations for `boto3.resource("s3").BucketLifecycle` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketLifecycle` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycle)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketLifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycle)
+```python title="Method definition"
+def BucketLifecycle(
+    self,
+    bucket_name: str,
+) -> BucketLifecycle:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketLifecycleRequestTypeDef](./type_defs.md#serviceresourcebucketlifecyclerequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketLifecycleRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketLifecycle](#bucketlifecycle).
+parent.BucketLifecycle(**kwargs)
+```
 
-<a id="s3serviceresourcebucketlifecycleconfiguration-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketLifecycleRequestTypeDef](./type_defs.md#serviceresourcebucketlifecyclerequesttypedef) 
 
 ### S3ServiceResource.BucketLifecycleConfiguration method
 
 Creates a BucketLifecycleConfiguration resource.
 
-Type annotations for `boto3.resource("s3").BucketLifecycleConfiguration`
-method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketLifecycleConfiguration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycleConfiguration)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketLifecycleConfiguration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycleConfiguration)
+```python title="Method definition"
+def BucketLifecycleConfiguration(
+    self,
+    bucket_name: str,
+) -> BucketLifecycleConfiguration:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketLifecycleConfigurationRequestTypeDef](./type_defs.md#serviceresourcebucketlifecycleconfigurationrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketLifecycleConfigurationRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketLifecycleConfiguration](#bucketlifecycleconfiguration).
+parent.BucketLifecycleConfiguration(**kwargs)
+```
 
-<a id="s3serviceresourcebucketlogging-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketLifecycleConfigurationRequestTypeDef](./type_defs.md#serviceresourcebucketlifecycleconfigurationrequesttypedef) 
 
 ### S3ServiceResource.BucketLogging method
 
 Creates a BucketLogging resource.
 
-Type annotations for `boto3.resource("s3").BucketLogging` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketLogging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLogging)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketLogging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLogging)
+```python title="Method definition"
+def BucketLogging(
+    self,
+    bucket_name: str,
+) -> BucketLogging:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketLoggingRequestTypeDef](./type_defs.md#serviceresourcebucketloggingrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketLoggingRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketLogging](#bucketlogging).
+parent.BucketLogging(**kwargs)
+```
 
-<a id="s3serviceresourcebucketnotification-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketLoggingRequestTypeDef](./type_defs.md#serviceresourcebucketloggingrequesttypedef) 
 
 ### S3ServiceResource.BucketNotification method
 
 Creates a BucketNotification resource.
 
-Type annotations for `boto3.resource("s3").BucketNotification` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketNotification` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketNotification)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketNotification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketNotification)
+```python title="Method definition"
+def BucketNotification(
+    self,
+    bucket_name: str,
+) -> BucketNotification:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketNotificationRequestTypeDef](./type_defs.md#serviceresourcebucketnotificationrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketNotificationRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketNotification](#bucketnotification).
+parent.BucketNotification(**kwargs)
+```
 
-<a id="s3serviceresourcebucketpolicy-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketNotificationRequestTypeDef](./type_defs.md#serviceresourcebucketnotificationrequesttypedef) 
 
 ### S3ServiceResource.BucketPolicy method
 
 Creates a BucketPolicy resource.
 
-Type annotations for `boto3.resource("s3").BucketPolicy` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketPolicy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketPolicy)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketPolicy)
+```python title="Method definition"
+def BucketPolicy(
+    self,
+    bucket_name: str,
+) -> BucketPolicy:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketPolicyRequestTypeDef](./type_defs.md#serviceresourcebucketpolicyrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketPolicyRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketPolicy](#bucketpolicy).
+parent.BucketPolicy(**kwargs)
+```
 
-<a id="s3serviceresourcebucketrequestpayment-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketPolicyRequestTypeDef](./type_defs.md#serviceresourcebucketpolicyrequesttypedef) 
 
 ### S3ServiceResource.BucketRequestPayment method
 
 Creates a BucketRequestPayment resource.
 
-Type annotations for `boto3.resource("s3").BucketRequestPayment` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketRequestPayment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketRequestPayment)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketRequestPayment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketRequestPayment)
+```python title="Method definition"
+def BucketRequestPayment(
+    self,
+    bucket_name: str,
+) -> BucketRequestPayment:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketRequestPaymentRequestTypeDef](./type_defs.md#serviceresourcebucketrequestpaymentrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketRequestPaymentRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketRequestPayment](#bucketrequestpayment).
+parent.BucketRequestPayment(**kwargs)
+```
 
-<a id="s3serviceresourcebuckettagging-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketRequestPaymentRequestTypeDef](./type_defs.md#serviceresourcebucketrequestpaymentrequesttypedef) 
 
 ### S3ServiceResource.BucketTagging method
 
 Creates a BucketTagging resource.
 
-Type annotations for `boto3.resource("s3").BucketTagging` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketTagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketTagging)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketTagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketTagging)
+```python title="Method definition"
+def BucketTagging(
+    self,
+    bucket_name: str,
+) -> BucketTagging:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketTaggingRequestTypeDef](./type_defs.md#serviceresourcebuckettaggingrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketTaggingRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketTagging](#buckettagging).
+parent.BucketTagging(**kwargs)
+```
 
-<a id="s3serviceresourcebucketversioning-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketTaggingRequestTypeDef](./type_defs.md#serviceresourcebuckettaggingrequesttypedef) 
 
 ### S3ServiceResource.BucketVersioning method
 
 Creates a BucketVersioning resource.
 
-Type annotations for `boto3.resource("s3").BucketVersioning` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketVersioning` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketVersioning)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketVersioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketVersioning)
+```python title="Method definition"
+def BucketVersioning(
+    self,
+    bucket_name: str,
+) -> BucketVersioning:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketVersioningRequestTypeDef](./type_defs.md#serviceresourcebucketversioningrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketVersioningRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketVersioning](#bucketversioning).
+parent.BucketVersioning(**kwargs)
+```
 
-<a id="s3serviceresourcebucketwebsite-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketVersioningRequestTypeDef](./type_defs.md#serviceresourcebucketversioningrequesttypedef) 
 
 ### S3ServiceResource.BucketWebsite method
 
 Creates a BucketWebsite resource.
 
-Type annotations for `boto3.resource("s3").BucketWebsite` method.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketWebsite` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketWebsite)
 
-Boto3 documentation:
-[S3.ServiceResource.BucketWebsite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketWebsite)
+```python title="Method definition"
+def BucketWebsite(
+    self,
+    bucket_name: str,
+) -> BucketWebsite:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceBucketWebsiteRequestTypeDef](./type_defs.md#serviceresourcebucketwebsiterequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceBucketWebsiteRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+}
 
-Returns [BucketWebsite](#bucketwebsite).
+parent.BucketWebsite(**kwargs)
+```
 
-<a id="s3serviceresourcemultipartupload-method"></a>
+1. See [:material-code-braces: ServiceResourceBucketWebsiteRequestTypeDef](./type_defs.md#serviceresourcebucketwebsiterequesttypedef) 
 
 ### S3ServiceResource.MultipartUpload method
 
 Creates a MultipartUpload resource.
 
-Type annotations for `boto3.resource("s3").MultipartUpload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").MultipartUpload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUpload)
 
-Boto3 documentation:
-[S3.ServiceResource.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUpload)
+```python title="Method definition"
+def MultipartUpload(
+    self,
+    bucket_name: str,
+    object_key: str,
+    id: str,
+) -> MultipartUpload:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceMultipartUploadRequestTypeDef](./type_defs.md#serviceresourcemultipartuploadrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
-- `object_key`: `str` *(required)*
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceMultipartUploadRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+    "object_key": ...,
+    "id": ...,
+}
 
-Returns [MultipartUpload](#multipartupload).
+parent.MultipartUpload(**kwargs)
+```
 
-<a id="s3serviceresourcemultipartuploadpart-method"></a>
+1. See [:material-code-braces: ServiceResourceMultipartUploadRequestTypeDef](./type_defs.md#serviceresourcemultipartuploadrequesttypedef) 
 
 ### S3ServiceResource.MultipartUploadPart method
 
 Creates a MultipartUploadPart resource.
 
-Type annotations for `boto3.resource("s3").MultipartUploadPart` method.
+Type annotations and code completion for `#!python boto3.resource("s3").MultipartUploadPart` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUploadPart)
 
-Boto3 documentation:
-[S3.ServiceResource.MultipartUploadPart](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUploadPart)
+```python title="Method definition"
+def MultipartUploadPart(
+    self,
+    bucket_name: str,
+    object_key: str,
+    multipart_upload_id: str,
+    part_number: str,
+) -> MultipartUploadPart:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceMultipartUploadPartRequestTypeDef](./type_defs.md#serviceresourcemultipartuploadpartrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
-- `object_key`: `str` *(required)*
-- `multipart_upload_id`: `str` *(required)*
-- `part_number`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceMultipartUploadPartRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+    "object_key": ...,
+    "multipart_upload_id": ...,
+    "part_number": ...,
+}
 
-Returns [MultipartUploadPart](#multipartuploadpart).
+parent.MultipartUploadPart(**kwargs)
+```
 
-<a id="s3serviceresourceobject-method"></a>
+1. See [:material-code-braces: ServiceResourceMultipartUploadPartRequestTypeDef](./type_defs.md#serviceresourcemultipartuploadpartrequesttypedef) 
 
 ### S3ServiceResource.Object method
 
 Creates a Object resource.
 
-Type annotations for `boto3.resource("s3").Object` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Object)
 
-Boto3 documentation:
-[S3.ServiceResource.Object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Object)
+```python title="Method definition"
+def Object(
+    self,
+    bucket_name: str,
+    key: str,
+) -> Object:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceObjectRequestTypeDef](./type_defs.md#serviceresourceobjectrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
-- `key`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceObjectRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+    "key": ...,
+}
 
-Returns [Object](#object).
+parent.Object(**kwargs)
+```
 
-<a id="s3serviceresourceobjectacl-method"></a>
+1. See [:material-code-braces: ServiceResourceObjectRequestTypeDef](./type_defs.md#serviceresourceobjectrequesttypedef) 
 
 ### S3ServiceResource.ObjectAcl method
 
 Creates a ObjectAcl resource.
 
-Type annotations for `boto3.resource("s3").ObjectAcl` method.
+Type annotations and code completion for `#!python boto3.resource("s3").ObjectAcl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectAcl)
 
-Boto3 documentation:
-[S3.ServiceResource.ObjectAcl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectAcl)
+```python title="Method definition"
+def ObjectAcl(
+    self,
+    bucket_name: str,
+    object_key: str,
+) -> ObjectAcl:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceObjectAclRequestTypeDef](./type_defs.md#serviceresourceobjectaclrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
-- `object_key`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceObjectAclRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+    "object_key": ...,
+}
 
-Returns [ObjectAcl](#objectacl).
+parent.ObjectAcl(**kwargs)
+```
 
-<a id="s3serviceresourceobjectsummary-method"></a>
+1. See [:material-code-braces: ServiceResourceObjectAclRequestTypeDef](./type_defs.md#serviceresourceobjectaclrequesttypedef) 
 
 ### S3ServiceResource.ObjectSummary method
 
 Creates a ObjectSummary resource.
 
-Type annotations for `boto3.resource("s3").ObjectSummary` method.
+Type annotations and code completion for `#!python boto3.resource("s3").ObjectSummary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectSummary)
 
-Boto3 documentation:
-[S3.ServiceResource.ObjectSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectSummary)
+```python title="Method definition"
+def ObjectSummary(
+    self,
+    bucket_name: str,
+    key: str,
+) -> ObjectSummary:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceObjectSummaryRequestTypeDef](./type_defs.md#serviceresourceobjectsummaryrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
-- `key`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceObjectSummaryRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+    "key": ...,
+}
 
-Returns [ObjectSummary](#objectsummary).
+parent.ObjectSummary(**kwargs)
+```
 
-<a id="s3serviceresourceobjectversion-method"></a>
+1. See [:material-code-braces: ServiceResourceObjectSummaryRequestTypeDef](./type_defs.md#serviceresourceobjectsummaryrequesttypedef) 
 
 ### S3ServiceResource.ObjectVersion method
 
 Creates a ObjectVersion resource.
 
-Type annotations for `boto3.resource("s3").ObjectVersion` method.
+Type annotations and code completion for `#!python boto3.resource("s3").ObjectVersion` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectVersion)
 
-Boto3 documentation:
-[S3.ServiceResource.ObjectVersion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectVersion)
+```python title="Method definition"
+def ObjectVersion(
+    self,
+    bucket_name: str,
+    object_key: str,
+    id: str,
+) -> ObjectVersion:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceObjectVersionRequestTypeDef](./type_defs.md#serviceresourceobjectversionrequesttypedef).
 
-Arguments:
 
-- `bucket_name`: `str` *(required)*
-- `object_key`: `str` *(required)*
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceObjectVersionRequestTypeDef = {  # (1)
+    "bucket_name": ...,
+    "object_key": ...,
+    "id": ...,
+}
 
-Returns [ObjectVersion](#objectversion).
+parent.ObjectVersion(**kwargs)
+```
 
-<a id="s3serviceresourcecreate\_bucket-method"></a>
+1. See [:material-code-braces: ServiceResourceObjectVersionRequestTypeDef](./type_defs.md#serviceresourceobjectversionrequesttypedef) 
 
-### S3ServiceResource.create_bucket method
+### S3ServiceResource.create\_bucket method
 
 Creates a new S3 bucket.
 
-Type annotations for `boto3.resource("s3").create_bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").create_bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.create_bucket)
 
-Boto3 documentation:
-[S3.ServiceResource.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.create_bucket)
+```python title="Method definition"
+def create_bucket(
+    self,
+    *,
+    Bucket: str,
+    ACL: BucketCannedACLType = ...,  # (1)
+    CreateBucketConfiguration: CreateBucketConfigurationTypeDef = ...,  # (2)
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWrite: str = ...,
+    GrantWriteACP: str = ...,
+    ObjectLockEnabledForBucket: bool = ...,
+    ObjectOwnership: ObjectOwnershipType = ...,  # (3)
+) -> Bucket:
+    ...
+```
 
-Arguments mapping described in
-[CreateBucketRequestServiceResourceCreateBucketTypeDef](./type_defs.md#createbucketrequestserviceresourcecreatebuckettypedef).
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef) 
+3. See [:material-code-brackets: ObjectOwnershipType](./literals.md#objectownershiptype) 
 
-Keyword-only arguments:
 
-- `Bucket`: `str` *(required)*
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ObjectLockEnabledForBucket`: `bool`
-- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
+```python title="Usage example with kwargs"
+kwargs: CreateBucketRequestServiceResourceCreateBucketTypeDef = {  # (1)
+    "Bucket": ...,
+}
 
-Returns [Bucket](#bucket).
+parent.create_bucket(**kwargs)
+```
 
-<a id="s3serviceresourceget\_available\_subresources-method"></a>
+1. See [:material-code-braces: CreateBucketRequestServiceResourceCreateBucketTypeDef](./type_defs.md#createbucketrequestserviceresourcecreatebuckettypedef) 
 
-### S3ServiceResource.get_available_subresources method
+### S3ServiceResource.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.get_available_subresources)
 
-Boto3 documentation:
-[S3.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="bucket"></a>
+
 
 ## Bucket
 
-Type annotations for `boto3.resource("s3").Bucket` class.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Bucket)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import Bucket
 
 def get_resource() -> Bucket:
     return boto3.resource("s3").Bucket(...)
 ```
 
-Boto3 documentation:
-[S3.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Bucket)
-
-<a id="bucket-attributes"></a>
 
 ### Bucket attributes
 
+
 - `creation_date`: `datetime`
 - `name`: `str`
-- `multipart_uploads`:
-  [BucketMultipartUploadsCollection](#bucketmultipartuploadscollection)
-- `object_versions`:
-  [BucketObjectVersionsCollection](#bucketobjectversionscollection)
+- `multipart_uploads`: [BucketMultipartUploadsCollection](#bucketmultipartuploadscollection)
+- `object_versions`: [BucketObjectVersionsCollection](#bucketobjectversionscollection)
 - `objects`: [BucketObjectsCollection](#bucketobjectscollection)
 
-<a id="bucket-collections"></a>
+
 
 ### Bucket collections
 
-<a id="bucketmultipart_uploads"></a>
 
 #### Bucket.multipart_uploads
 
-Type annotations for `boto3.resource("s3").Bucket(...).multipart_uploads`
-collection.
+Provides access to [MultipartUpload](#multipartupload) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket(...).multipart_uploads` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.multipart_uploads)
 
-```python
-from mypy_boto3_s3.service_resource import BucketMultipartUploadsCollection,
+```python title="Usage example"
+from mypy_boto3_s3.service_resource import BucketMultipartUploadsCollection
 
 def get_collection() -> BucketMultipartUploadsCollection:
     resource = boto3.resource("s3").Bucket(...)
     return resource.multipart_uploads
 ```
 
-Provides access to [MultipartUpload](#multipartupload) resource.
-
-Boto3 documentation:
-[S3.Bucket.BucketMultipartUploadsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.multipart_uploads)
-
-<a id="bucketobject_versions"></a>
-
 #### Bucket.object_versions
 
-Type annotations for `boto3.resource("s3").Bucket(...).object_versions`
-collection.
+Provides access to [ObjectVersion](#objectversion) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket(...).object_versions` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.object_versions)
 
-```python
-from mypy_boto3_s3.service_resource import BucketObjectVersionsCollection,
+```python title="Usage example"
+from mypy_boto3_s3.service_resource import BucketObjectVersionsCollection
 
 def get_collection() -> BucketObjectVersionsCollection:
     resource = boto3.resource("s3").Bucket(...)
     return resource.object_versions
 ```
 
-Provides access to [ObjectVersion](#objectversion) resource.
-
-Boto3 documentation:
-[S3.Bucket.BucketObjectVersionsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.object_versions)
-
-<a id="bucketobjects"></a>
-
 #### Bucket.objects
 
-Type annotations for `boto3.resource("s3").Bucket(...).objects` collection.
+Provides access to [ObjectSummary](#objectsummary) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket(...).objects` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.objects)
 
-```python
-from mypy_boto3_s3.service_resource import BucketObjectsCollection,
+```python title="Usage example"
+from mypy_boto3_s3.service_resource import BucketObjectsCollection
 
 def get_collection() -> BucketObjectsCollection:
     resource = boto3.resource("s3").Bucket(...)
     return resource.objects
 ```
 
-Provides access to [ObjectSummary](#objectsummary) resource.
 
-Boto3 documentation:
-[S3.Bucket.BucketObjectsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.objects)
 
-<a id="bucket-methods"></a>
 
 ### Bucket methods
 
-<a id="bucketacl-method"></a>
 
 #### Bucket.Acl method
 
 Creates a BucketAcl resource.
 
-Type annotations for `boto3.resource("s3").Acl` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Acl)
 
-Boto3 documentation:
-[S3.Bucket.Acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Acl)
+```python title="Method definition"
+def Acl(
+    self,
+) -> BucketAcl:
+    ...
+```
 
-Returns [BucketAcl](#bucketacl).
-
-<a id="bucketcors-method"></a>
 
 #### Bucket.Cors method
 
 Creates a BucketCors resource.
 
-Type annotations for `boto3.resource("s3").Cors` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Cors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Cors)
 
-Boto3 documentation:
-[S3.Bucket.Cors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Cors)
+```python title="Method definition"
+def Cors(
+    self,
+) -> BucketCors:
+    ...
+```
 
-Returns [BucketCors](#bucketcors).
-
-<a id="bucketlifecycle-method"></a>
 
 #### Bucket.Lifecycle method
 
 Creates a BucketLifecycle resource.
 
-Type annotations for `boto3.resource("s3").Lifecycle` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Lifecycle` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Lifecycle)
 
-Boto3 documentation:
-[S3.Bucket.Lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Lifecycle)
+```python title="Method definition"
+def Lifecycle(
+    self,
+) -> BucketLifecycle:
+    ...
+```
 
-Returns [BucketLifecycle](#bucketlifecycle).
-
-<a id="bucketlifecycleconfiguration-method"></a>
 
 #### Bucket.LifecycleConfiguration method
 
 Creates a BucketLifecycleConfiguration resource.
 
-Type annotations for `boto3.resource("s3").LifecycleConfiguration` method.
+Type annotations and code completion for `#!python boto3.resource("s3").LifecycleConfiguration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.LifecycleConfiguration)
 
-Boto3 documentation:
-[S3.Bucket.LifecycleConfiguration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.LifecycleConfiguration)
+```python title="Method definition"
+def LifecycleConfiguration(
+    self,
+) -> BucketLifecycleConfiguration:
+    ...
+```
 
-Returns [BucketLifecycleConfiguration](#bucketlifecycleconfiguration).
-
-<a id="bucketlogging-method"></a>
 
 #### Bucket.Logging method
 
 Creates a BucketLogging resource.
 
-Type annotations for `boto3.resource("s3").Logging` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Logging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Logging)
 
-Boto3 documentation:
-[S3.Bucket.Logging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Logging)
+```python title="Method definition"
+def Logging(
+    self,
+) -> BucketLogging:
+    ...
+```
 
-Returns [BucketLogging](#bucketlogging).
-
-<a id="bucketnotification-method"></a>
 
 #### Bucket.Notification method
 
 Creates a BucketNotification resource.
 
-Type annotations for `boto3.resource("s3").Notification` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Notification` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Notification)
 
-Boto3 documentation:
-[S3.Bucket.Notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Notification)
+```python title="Method definition"
+def Notification(
+    self,
+) -> BucketNotification:
+    ...
+```
 
-Returns [BucketNotification](#bucketnotification).
-
-<a id="bucketobject-method"></a>
 
 #### Bucket.Object method
 
 Creates a Object resource.
 
-Type annotations for `boto3.resource("s3").Object` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Object)
 
-Boto3 documentation:
-[S3.Bucket.Object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Object)
+```python title="Method definition"
+def Object(
+    self,
+    key: str,
+) -> Object:
+    ...
+```
 
-Arguments mapping described in
-[BucketObjectRequestTypeDef](./type_defs.md#bucketobjectrequesttypedef).
 
-Arguments:
 
-- `key`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: BucketObjectRequestTypeDef = {  # (1)
+    "key": ...,
+}
 
-Returns [Object](#object).
+parent.Object(**kwargs)
+```
 
-<a id="bucketpolicy-method"></a>
+1. See [:material-code-braces: BucketObjectRequestTypeDef](./type_defs.md#bucketobjectrequesttypedef) 
 
 #### Bucket.Policy method
 
 Creates a BucketPolicy resource.
 
-Type annotations for `boto3.resource("s3").Policy` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Policy)
 
-Boto3 documentation:
-[S3.Bucket.Policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Policy)
+```python title="Method definition"
+def Policy(
+    self,
+) -> BucketPolicy:
+    ...
+```
 
-Returns [BucketPolicy](#bucketpolicy).
-
-<a id="bucketrequestpayment-method"></a>
 
 #### Bucket.RequestPayment method
 
 Creates a BucketRequestPayment resource.
 
-Type annotations for `boto3.resource("s3").RequestPayment` method.
+Type annotations and code completion for `#!python boto3.resource("s3").RequestPayment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.RequestPayment)
 
-Boto3 documentation:
-[S3.Bucket.RequestPayment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.RequestPayment)
+```python title="Method definition"
+def RequestPayment(
+    self,
+) -> BucketRequestPayment:
+    ...
+```
 
-Returns [BucketRequestPayment](#bucketrequestpayment).
-
-<a id="buckettagging-method"></a>
 
 #### Bucket.Tagging method
 
 Creates a BucketTagging resource.
 
-Type annotations for `boto3.resource("s3").Tagging` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Tagging)
 
-Boto3 documentation:
-[S3.Bucket.Tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Tagging)
+```python title="Method definition"
+def Tagging(
+    self,
+) -> BucketTagging:
+    ...
+```
 
-Returns [BucketTagging](#buckettagging).
-
-<a id="bucketversioning-method"></a>
 
 #### Bucket.Versioning method
 
 Creates a BucketVersioning resource.
 
-Type annotations for `boto3.resource("s3").Versioning` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Versioning` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Versioning)
 
-Boto3 documentation:
-[S3.Bucket.Versioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Versioning)
+```python title="Method definition"
+def Versioning(
+    self,
+) -> BucketVersioning:
+    ...
+```
 
-Returns [BucketVersioning](#bucketversioning).
-
-<a id="bucketwebsite-method"></a>
 
 #### Bucket.Website method
 
 Creates a BucketWebsite resource.
 
-Type annotations for `boto3.resource("s3").Website` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Website` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Website)
 
-Boto3 documentation:
-[S3.Bucket.Website](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.Website)
+```python title="Method definition"
+def Website(
+    self,
+) -> BucketWebsite:
+    ...
+```
 
-Returns [BucketWebsite](#bucketwebsite).
-
-<a id="bucketcopy-method"></a>
 
 #### Bucket.copy method
 
 Copy an object from one S3 location to an object in this bucket.
 
-Type annotations for `boto3.resource("s3").copy` method.
+Type annotations and code completion for `#!python boto3.resource("s3").copy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.copy)
 
-Boto3 documentation:
-[S3.Bucket.copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.copy)
+```python title="Method definition"
+def copy(
+    self,
+    CopySource: CopySourceTypeDef,  # (1)
+    Key: str,
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    SourceClient: BaseClient = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[BucketCopyRequestTypeDef](./type_defs.md#bucketcopyrequesttypedef).
+1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
 
-Arguments:
 
-- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
-  *(required)*
-- `Key`: `str` *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `SourceClient`: `BaseClient`
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: BucketCopyRequestTypeDef = {  # (1)
+    "CopySource": ...,
+    "Key": ...,
+}
 
-<a id="bucketcreate-method"></a>
+parent.copy(**kwargs)
+```
+
+1. See [:material-code-braces: BucketCopyRequestTypeDef](./type_defs.md#bucketcopyrequesttypedef) 
 
 #### Bucket.create method
 
 Creates a new S3 bucket.
 
-Type annotations for `boto3.resource("s3").create` method.
+Type annotations and code completion for `#!python boto3.resource("s3").create` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.create)
 
-Boto3 documentation:
-[S3.Bucket.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.create)
+```python title="Method definition"
+def create(
+    self,
+    *,
+    ACL: BucketCannedACLType = ...,  # (1)
+    CreateBucketConfiguration: CreateBucketConfigurationTypeDef = ...,  # (2)
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWrite: str = ...,
+    GrantWriteACP: str = ...,
+    ObjectLockEnabledForBucket: bool = ...,
+    ObjectOwnership: ObjectOwnershipType = ...,  # (3)
+) -> CreateBucketOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateBucketRequestBucketCreateTypeDef](./type_defs.md#createbucketrequestbucketcreatetypedef).
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef) 
+3. See [:material-code-brackets: ObjectOwnershipType](./literals.md#objectownershiptype) 
+4. See [:material-code-braces: CreateBucketOutputTypeDef](./type_defs.md#createbucketoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ObjectLockEnabledForBucket`: `bool`
-- `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
+```python title="Usage example with kwargs"
+kwargs: CreateBucketRequestBucketCreateTypeDef = {  # (1)
+    "ACL": ...,
+}
 
-Returns [CreateBucketOutputTypeDef](./type_defs.md#createbucketoutputtypedef).
+parent.create(**kwargs)
+```
 
-<a id="bucketdelete-method"></a>
+1. See [:material-code-braces: CreateBucketRequestBucketCreateTypeDef](./type_defs.md#createbucketrequestbucketcreatetypedef) 
 
 #### Bucket.delete method
 
 Deletes the S3 bucket.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete)
 
-Boto3 documentation:
-[S3.Bucket.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBucketRequestBucketDeleteTypeDef](./type_defs.md#deletebucketrequestbucketdeletetypedef).
 
-Keyword-only arguments:
 
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketRequestBucketDeleteTypeDef = {  # (1)
+    "ExpectedBucketOwner": ...,
+}
 
-<a id="bucketdelete\_objects-method"></a>
+parent.delete(**kwargs)
+```
 
-#### Bucket.delete_objects method
+1. See [:material-code-braces: DeleteBucketRequestBucketDeleteTypeDef](./type_defs.md#deletebucketrequestbucketdeletetypedef) 
+
+#### Bucket.delete\_objects method
 
 This action enables you to delete multiple objects from a bucket using a single
 HTTP request.
 
-Type annotations for `boto3.resource("s3").delete_objects` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete_objects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete_objects)
 
-Boto3 documentation:
-[S3.Bucket.delete_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.delete_objects)
+```python title="Method definition"
+def delete_objects(
+    self,
+    *,
+    Delete: DeleteTypeDef,  # (1)
+    MFA: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (2)
+    BypassGovernanceRetention: bool = ...,
+    ExpectedBucketOwner: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (3)
+) -> DeleteObjectsOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[DeleteObjectsRequestBucketDeleteObjectsTypeDef](./type_defs.md#deleteobjectsrequestbucketdeleteobjectstypedef).
+1. See [:material-code-braces: DeleteTypeDef](./type_defs.md#deletetypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+4. See [:material-code-braces: DeleteObjectsOutputTypeDef](./type_defs.md#deleteobjectsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef) *(required)*
-- `MFA`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
+```python title="Usage example with kwargs"
+kwargs: DeleteObjectsRequestBucketDeleteObjectsTypeDef = {  # (1)
+    "Delete": ...,
+}
 
-Returns
-[DeleteObjectsOutputTypeDef](./type_defs.md#deleteobjectsoutputtypedef).
+parent.delete_objects(**kwargs)
+```
 
-<a id="bucketdownload\_file-method"></a>
+1. See [:material-code-braces: DeleteObjectsRequestBucketDeleteObjectsTypeDef](./type_defs.md#deleteobjectsrequestbucketdeleteobjectstypedef) 
 
-#### Bucket.download_file method
+#### Bucket.download\_file method
 
 Download an S3 object to a file.
 
-Type annotations for `boto3.resource("s3").download_file` method.
+Type annotations and code completion for `#!python boto3.resource("s3").download_file` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.download_file)
 
-Boto3 documentation:
-[S3.Bucket.download_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.download_file)
+```python title="Method definition"
+def download_file(
+    self,
+    Key: str,
+    Filename: str,
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[BucketDownloadFileRequestTypeDef](./type_defs.md#bucketdownloadfilerequesttypedef).
 
-Arguments:
 
-- `Key`: `str` *(required)*
-- `Filename`: `str` *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: BucketDownloadFileRequestTypeDef = {  # (1)
+    "Key": ...,
+    "Filename": ...,
+}
 
-<a id="bucketdownload\_fileobj-method"></a>
+parent.download_file(**kwargs)
+```
 
-#### Bucket.download_fileobj method
+1. See [:material-code-braces: BucketDownloadFileRequestTypeDef](./type_defs.md#bucketdownloadfilerequesttypedef) 
+
+#### Bucket.download\_fileobj method
 
 Download an object from this bucket to a file-like-object.
 
-Type annotations for `boto3.resource("s3").download_fileobj` method.
+Type annotations and code completion for `#!python boto3.resource("s3").download_fileobj` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.download_fileobj)
 
-Boto3 documentation:
-[S3.Bucket.download_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.download_fileobj)
+```python title="Method definition"
+def download_fileobj(
+    self,
+    Key: str,
+    Fileobj: Union[IO[Any], StreamingBody],
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[BucketDownloadFileobjRequestTypeDef](./type_defs.md#bucketdownloadfileobjrequesttypedef).
 
-Arguments:
 
-- `Key`: `str` *(required)*
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\] *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: BucketDownloadFileobjRequestTypeDef = {  # (1)
+    "Key": ...,
+    "Fileobj": ...,
+}
 
-<a id="bucketget\_available\_subresources-method"></a>
+parent.download_fileobj(**kwargs)
+```
 
-#### Bucket.get_available_subresources method
+1. See [:material-code-braces: BucketDownloadFileobjRequestTypeDef](./type_defs.md#bucketdownloadfileobjrequesttypedef) 
+
+#### Bucket.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.get_available_subresources)
 
-Boto3 documentation:
-[S3.Bucket.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketload-method"></a>
 
 #### Bucket.load method
 
 Calls s3.Client.list_buckets() to update the attributes of the Bucket resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.load)
 
-Boto3 documentation:
-[S3.Bucket.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketput\_object-method"></a>
 
-#### Bucket.put_object method
+#### Bucket.put\_object method
 
 Adds an object to a bucket.
 
-Type annotations for `boto3.resource("s3").put_object` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.put_object)
 
-Boto3 documentation:
-[S3.Bucket.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.put_object)
+```python title="Method definition"
+def put_object(
+    self,
+    *,
+    Key: str,
+    ACL: ObjectCannedACLType = ...,  # (1)
+    Body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    CacheControl: str = ...,
+    ContentDisposition: str = ...,
+    ContentEncoding: str = ...,
+    ContentLanguage: str = ...,
+    ContentLength: int = ...,
+    ContentMD5: str = ...,
+    ContentType: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ChecksumCRC32: str = ...,
+    ChecksumCRC32C: str = ...,
+    ChecksumSHA1: str = ...,
+    ChecksumSHA256: str = ...,
+    Expires: Union[datetime, str] = ...,
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWriteACP: str = ...,
+    Metadata: Mapping[str, str] = ...,
+    ServerSideEncryption: ServerSideEncryptionType = ...,  # (3)
+    StorageClass: StorageClassType = ...,  # (4)
+    WebsiteRedirectLocation: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    SSEKMSKeyId: str = ...,
+    SSEKMSEncryptionContext: str = ...,
+    BucketKeyEnabled: bool = ...,
+    RequestPayer: RequestPayerType = ...,  # (5)
+    Tagging: str = ...,
+    ObjectLockMode: ObjectLockModeType = ...,  # (6)
+    ObjectLockRetainUntilDate: Union[datetime, str] = ...,
+    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatusType = ...,  # (7)
+    ExpectedBucketOwner: str = ...,
+) -> Object:
+    ...
+```
 
-Arguments mapping described in
-[PutObjectRequestBucketPutObjectTypeDef](./type_defs.md#putobjectrequestbucketputobjecttypedef).
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+5. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+6. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+7. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
 
-Keyword-only arguments:
 
-- `Key`: `str` *(required)*
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutObjectRequestBucketPutObjectTypeDef = {  # (1)
+    "Key": ...,
+}
 
-Returns [Object](#object).
+parent.put_object(**kwargs)
+```
 
-<a id="bucketupload\_file-method"></a>
+1. See [:material-code-braces: PutObjectRequestBucketPutObjectTypeDef](./type_defs.md#putobjectrequestbucketputobjecttypedef) 
 
-#### Bucket.upload_file method
+#### Bucket.upload\_file method
 
 Upload a file to an S3 object.
 
-Type annotations for `boto3.resource("s3").upload_file` method.
+Type annotations and code completion for `#!python boto3.resource("s3").upload_file` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.upload_file)
 
-Boto3 documentation:
-[S3.Bucket.upload_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.upload_file)
+```python title="Method definition"
+def upload_file(
+    self,
+    Filename: str,
+    Key: str,
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[BucketUploadFileRequestTypeDef](./type_defs.md#bucketuploadfilerequesttypedef).
 
-Arguments:
 
-- `Filename`: `str` *(required)*
-- `Key`: `str` *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: BucketUploadFileRequestTypeDef = {  # (1)
+    "Filename": ...,
+    "Key": ...,
+}
 
-<a id="bucketupload\_fileobj-method"></a>
+parent.upload_file(**kwargs)
+```
 
-#### Bucket.upload_fileobj method
+1. See [:material-code-braces: BucketUploadFileRequestTypeDef](./type_defs.md#bucketuploadfilerequesttypedef) 
+
+#### Bucket.upload\_fileobj method
 
 Upload a file-like object to this bucket.
 
-Type annotations for `boto3.resource("s3").upload_fileobj` method.
+Type annotations and code completion for `#!python boto3.resource("s3").upload_fileobj` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.upload_fileobj)
 
-Boto3 documentation:
-[S3.Bucket.upload_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.upload_fileobj)
+```python title="Method definition"
+def upload_fileobj(
+    self,
+    Fileobj: Union[IO[Any], StreamingBody],
+    Key: str,
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[BucketUploadFileobjRequestTypeDef](./type_defs.md#bucketuploadfileobjrequesttypedef).
 
-Arguments:
 
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\] *(required)*
-- `Key`: `str` *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: BucketUploadFileobjRequestTypeDef = {  # (1)
+    "Fileobj": ...,
+    "Key": ...,
+}
 
-<a id="bucketwait\_until\_exists-method"></a>
+parent.upload_fileobj(**kwargs)
+```
 
-#### Bucket.wait_until_exists method
+1. See [:material-code-braces: BucketUploadFileobjRequestTypeDef](./type_defs.md#bucketuploadfileobjrequesttypedef) 
+
+#### Bucket.wait\_until\_exists method
 
 Waits until this Bucket is exists.
 
-Type annotations for `boto3.resource("s3").wait_until_exists` method.
+Type annotations and code completion for `#!python boto3.resource("s3").wait_until_exists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.wait_until_exists)
 
-Boto3 documentation:
-[S3.Bucket.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.wait_until_exists)
+```python title="Method definition"
+def wait_until_exists(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketwait\_until\_not\_exists-method"></a>
 
-#### Bucket.wait_until_not_exists method
+#### Bucket.wait\_until\_not\_exists method
 
 Waits until this Bucket is not exists.
 
-Type annotations for `boto3.resource("s3").wait_until_not_exists` method.
+Type annotations and code completion for `#!python boto3.resource("s3").wait_until_not_exists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.wait_until_not_exists)
 
-Boto3 documentation:
-[S3.Bucket.wait_until_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.wait_until_not_exists)
+```python title="Method definition"
+def wait_until_not_exists(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketacl"></a>
+
+
+
 
 ## BucketAcl
 
-Type annotations for `boto3.resource("s3").BucketAcl` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketAcl` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketAcl)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketAcl
 
 def get_resource() -> BucketAcl:
     return boto3.resource("s3").BucketAcl(...)
 ```
 
-Boto3 documentation:
-[S3.BucketAcl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketAcl)
-
-<a id="bucketacl-attributes"></a>
 
 ### BucketAcl attributes
 
-- `owner`:
-  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
-- `grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
+
+- `owner`: [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
+- `grants`: `List`[[GrantTypeDef](./type_defs.md#granttypedef)]
 - `bucket_name`: `str`
 
-<a id="bucketacl-methods"></a>
+
+
+
 
 ### BucketAcl methods
 
-<a id="bucketaclbucket-method"></a>
 
 #### BucketAcl.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.Bucket)
 
-Boto3 documentation:
-[S3.BucketAcl.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
 
-<a id="bucketaclget\_available\_subresources-method"></a>
-
-#### BucketAcl.get_available_subresources method
+#### BucketAcl.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketAcl.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketaclload-method"></a>
 
 #### BucketAcl.load method
 
 Calls :py:meth:`S3.Client.get_bucket_acl` to update the attributes of the
 BucketAcl resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.load)
 
-Boto3 documentation:
-[S3.BucketAcl.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketaclput-method"></a>
 
 #### BucketAcl.put method
 
 Sets the permissions on an existing bucket using access control lists (ACL).
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.put)
 
-Boto3 documentation:
-[S3.BucketAcl.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    ACL: BucketCannedACLType = ...,  # (1)
+    AccessControlPolicy: AccessControlPolicyTypeDef = ...,  # (2)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (3)
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWrite: str = ...,
+    GrantWriteACP: str = ...,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketAclRequestBucketAclPutTypeDef](./type_defs.md#putbucketaclrequestbucketaclputtypedef).
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `AccessControlPolicy`:
-  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketAclRequestBucketAclPutTypeDef = {  # (1)
+    "ACL": ...,
+}
 
-<a id="bucketaclreload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketAclRequestBucketAclPutTypeDef](./type_defs.md#putbucketaclrequestbucketaclputtypedef) 
 
 #### BucketAcl.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_acl` to update the attributes of the
 BucketAcl resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.reload)
 
-Boto3 documentation:
-[S3.BucketAcl.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketAcl.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketcors"></a>
+
+
+
 
 ## BucketCors
 
-Type annotations for `boto3.resource("s3").BucketCors` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketCors` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketCors)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketCors
 
 def get_resource() -> BucketCors:
     return boto3.resource("s3").BucketCors(...)
 ```
 
-Boto3 documentation:
-[S3.BucketCors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketCors)
-
-<a id="bucketcors-attributes"></a>
 
 ### BucketCors attributes
 
-- `cors_rules`: `List`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
+
+- `cors_rules`: `List`[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)]
 - `bucket_name`: `str`
 
-<a id="bucketcors-methods"></a>
+
+
+
 
 ### BucketCors methods
 
-<a id="bucketcorsbucket-method"></a>
 
 #### BucketCors.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.Bucket)
 
-Boto3 documentation:
-[S3.BucketCors.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
-
-<a id="bucketcorsdelete-method"></a>
 
 #### BucketCors.delete method
 
 Deletes the `cors` configuration information set for the bucket.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.delete)
 
-Boto3 documentation:
-[S3.BucketCors.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBucketCorsRequestBucketCorsDeleteTypeDef](./type_defs.md#deletebucketcorsrequestbucketcorsdeletetypedef).
 
-Keyword-only arguments:
 
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketCorsRequestBucketCorsDeleteTypeDef = {  # (1)
+    "ExpectedBucketOwner": ...,
+}
 
-<a id="bucketcorsget\_available\_subresources-method"></a>
+parent.delete(**kwargs)
+```
 
-#### BucketCors.get_available_subresources method
+1. See [:material-code-braces: DeleteBucketCorsRequestBucketCorsDeleteTypeDef](./type_defs.md#deletebucketcorsrequestbucketcorsdeletetypedef) 
+
+#### BucketCors.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketCors.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketcorsload-method"></a>
 
 #### BucketCors.load method
 
 Calls :py:meth:`S3.Client.get_bucket_cors` to update the attributes of the
 BucketCors resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.load)
 
-Boto3 documentation:
-[S3.BucketCors.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketcorsput-method"></a>
 
 #### BucketCors.put method
 
 Sets the `cors` configuration for your bucket.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.put)
 
-Boto3 documentation:
-[S3.BucketCors.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    CORSConfiguration: CORSConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketCorsRequestBucketCorsPutTypeDef](./type_defs.md#putbucketcorsrequestbucketcorsputtypedef).
+1. See [:material-code-braces: CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `CORSConfiguration`:
-  [CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef)
-  *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketCorsRequestBucketCorsPutTypeDef = {  # (1)
+    "CORSConfiguration": ...,
+}
 
-<a id="bucketcorsreload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketCorsRequestBucketCorsPutTypeDef](./type_defs.md#putbucketcorsrequestbucketcorsputtypedef) 
 
 #### BucketCors.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_cors` to update the attributes of the
 BucketCors resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.reload)
 
-Boto3 documentation:
-[S3.BucketCors.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketCors.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketlifecycle"></a>
+
+
+
 
 ## BucketLifecycle
 
-Type annotations for `boto3.resource("s3").BucketLifecycle` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketLifecycle` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycle)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketLifecycle
 
 def get_resource() -> BucketLifecycle:
     return boto3.resource("s3").BucketLifecycle(...)
 ```
 
-Boto3 documentation:
-[S3.BucketLifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycle)
-
-<a id="bucketlifecycle-attributes"></a>
 
 ### BucketLifecycle attributes
 
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+
+- `rules`: `List`[[RuleTypeDef](./type_defs.md#ruletypedef)]
 - `bucket_name`: `str`
 
-<a id="bucketlifecycle-methods"></a>
+
+
+
 
 ### BucketLifecycle methods
 
-<a id="bucketlifecyclebucket-method"></a>
 
 #### BucketLifecycle.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.Bucket)
 
-Boto3 documentation:
-[S3.BucketLifecycle.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
-
-<a id="bucketlifecycledelete-method"></a>
 
 #### BucketLifecycle.delete method
 
 Deletes the lifecycle configuration from the specified bucket.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.delete)
 
-Boto3 documentation:
-[S3.BucketLifecycle.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBucketLifecycleRequestBucketLifecycleDeleteTypeDef](./type_defs.md#deletebucketlifecyclerequestbucketlifecycledeletetypedef).
 
-Keyword-only arguments:
 
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketLifecycleRequestBucketLifecycleDeleteTypeDef = {  # (1)
+    "ExpectedBucketOwner": ...,
+}
 
-<a id="bucketlifecycleget\_available\_subresources-method"></a>
+parent.delete(**kwargs)
+```
 
-#### BucketLifecycle.get_available_subresources method
+1. See [:material-code-braces: DeleteBucketLifecycleRequestBucketLifecycleDeleteTypeDef](./type_defs.md#deletebucketlifecyclerequestbucketlifecycledeletetypedef) 
+
+#### BucketLifecycle.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketLifecycle.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketlifecycleload-method"></a>
 
 #### BucketLifecycle.load method
 
 Calls :py:meth:`S3.Client.get_bucket_lifecycle` to update the attributes of the
 BucketLifecycle resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.load)
 
-Boto3 documentation:
-[S3.BucketLifecycle.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketlifecycleput-method"></a>
 
 #### BucketLifecycle.put method
 
 .
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.put)
 
-Boto3 documentation:
-[S3.BucketLifecycle.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
+    LifecycleConfiguration: LifecycleConfigurationTypeDef = ...,  # (2)
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketLifecycleRequestBucketLifecyclePutTypeDef](./type_defs.md#putbucketlifecyclerequestbucketlifecycleputtypedef).
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `LifecycleConfiguration`:
-  [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketLifecycleRequestBucketLifecyclePutTypeDef = {  # (1)
+    "ChecksumAlgorithm": ...,
+}
 
-<a id="bucketlifecyclereload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketLifecycleRequestBucketLifecyclePutTypeDef](./type_defs.md#putbucketlifecyclerequestbucketlifecycleputtypedef) 
 
 #### BucketLifecycle.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_lifecycle` to update the attributes of the
 BucketLifecycle resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.reload)
 
-Boto3 documentation:
-[S3.BucketLifecycle.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycle.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketlifecycleconfiguration"></a>
+
+
+
 
 ## BucketLifecycleConfiguration
 
-Type annotations for `boto3.resource("s3").BucketLifecycleConfiguration` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketLifecycleConfiguration` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycleConfiguration)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketLifecycleConfiguration
 
 def get_resource() -> BucketLifecycleConfiguration:
     return boto3.resource("s3").BucketLifecycleConfiguration(...)
 ```
 
-Boto3 documentation:
-[S3.BucketLifecycleConfiguration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLifecycleConfiguration)
-
-<a id="bucketlifecycleconfiguration-attributes"></a>
 
 ### BucketLifecycleConfiguration attributes
 
-- `rules`:
-  `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+
+- `rules`: `List`[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)]
 - `bucket_name`: `str`
 
-<a id="bucketlifecycleconfiguration-methods"></a>
+
+
+
 
 ### BucketLifecycleConfiguration methods
 
-<a id="bucketlifecycleconfigurationbucket-method"></a>
 
 #### BucketLifecycleConfiguration.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.Bucket)
 
-Boto3 documentation:
-[S3.BucketLifecycleConfiguration.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
-
-<a id="bucketlifecycleconfigurationdelete-method"></a>
 
 #### BucketLifecycleConfiguration.delete method
 
 Deletes the lifecycle configuration from the specified bucket.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.delete)
 
-Boto3 documentation:
-[S3.BucketLifecycleConfiguration.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBucketLifecycleRequestBucketLifecycleConfigurationDeleteTypeDef](./type_defs.md#deletebucketlifecyclerequestbucketlifecycleconfigurationdeletetypedef).
 
-Keyword-only arguments:
 
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketLifecycleRequestBucketLifecycleConfigurationDeleteTypeDef = {  # (1)
+    "ExpectedBucketOwner": ...,
+}
 
-<a id="bucketlifecycleconfigurationget\_available\_subresources-method"></a>
+parent.delete(**kwargs)
+```
 
-#### BucketLifecycleConfiguration.get_available_subresources method
+1. See [:material-code-braces: DeleteBucketLifecycleRequestBucketLifecycleConfigurationDeleteTypeDef](./type_defs.md#deletebucketlifecyclerequestbucketlifecycleconfigurationdeletetypedef) 
+
+#### BucketLifecycleConfiguration.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketLifecycleConfiguration.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketlifecycleconfigurationload-method"></a>
 
 #### BucketLifecycleConfiguration.load method
 
 Calls :py:meth:`S3.Client.get_bucket_lifecycle_configuration` to update the
 attributes of the BucketLifecycleConfiguration resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.load)
 
-Boto3 documentation:
-[S3.BucketLifecycleConfiguration.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketlifecycleconfigurationput-method"></a>
 
 #### BucketLifecycleConfiguration.put method
 
 Creates a new lifecycle configuration for the bucket or replaces an existing
 lifecycle configuration.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.put)
 
-Boto3 documentation:
-[S3.BucketLifecycleConfiguration.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
+    LifecycleConfiguration: BucketLifecycleConfigurationTypeDef = ...,  # (2)
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationPutTypeDef](./type_defs.md#putbucketlifecycleconfigurationrequestbucketlifecycleconfigurationputtypedef).
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-braces: BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `LifecycleConfiguration`:
-  [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationPutTypeDef = {  # (1)
+    "ChecksumAlgorithm": ...,
+}
 
-<a id="bucketlifecycleconfigurationreload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationPutTypeDef](./type_defs.md#putbucketlifecycleconfigurationrequestbucketlifecycleconfigurationputtypedef) 
 
 #### BucketLifecycleConfiguration.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_lifecycle_configuration` to update the
 attributes of the BucketLifecycleConfiguration resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.reload)
 
-Boto3 documentation:
-[S3.BucketLifecycleConfiguration.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLifecycleConfiguration.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketlogging"></a>
+
+
+
 
 ## BucketLogging
 
-Type annotations for `boto3.resource("s3").BucketLogging` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketLogging` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLogging)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketLogging
 
 def get_resource() -> BucketLogging:
     return boto3.resource("s3").BucketLogging(...)
 ```
 
-Boto3 documentation:
-[S3.BucketLogging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketLogging)
-
-<a id="bucketlogging-attributes"></a>
 
 ### BucketLogging attributes
 
-- `logging_enabled`:
-  [LoggingEnabledResponseMetadataTypeDef](./type_defs.md#loggingenabledresponsemetadatatypedef)
+
+- `logging_enabled`: [LoggingEnabledResponseMetadataTypeDef](./type_defs.md#loggingenabledresponsemetadatatypedef)
 - `bucket_name`: `str`
 
-<a id="bucketlogging-methods"></a>
+
+
+
 
 ### BucketLogging methods
 
-<a id="bucketloggingbucket-method"></a>
 
 #### BucketLogging.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.Bucket)
 
-Boto3 documentation:
-[S3.BucketLogging.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
 
-<a id="bucketloggingget\_available\_subresources-method"></a>
-
-#### BucketLogging.get_available_subresources method
+#### BucketLogging.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketLogging.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketloggingload-method"></a>
 
 #### BucketLogging.load method
 
 Calls :py:meth:`S3.Client.get_bucket_logging` to update the attributes of the
 BucketLogging resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.load)
 
-Boto3 documentation:
-[S3.BucketLogging.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketloggingput-method"></a>
 
 #### BucketLogging.put method
 
 Set the logging parameters for a bucket and to specify permissions for who can
 view and modify the logging parameters.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.put)
 
-Boto3 documentation:
-[S3.BucketLogging.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    BucketLoggingStatus: BucketLoggingStatusTypeDef,  # (1)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketLoggingRequestBucketLoggingPutTypeDef](./type_defs.md#putbucketloggingrequestbucketloggingputtypedef).
+1. See [:material-code-braces: BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `BucketLoggingStatus`:
-  [BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef)
-  *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketLoggingRequestBucketLoggingPutTypeDef = {  # (1)
+    "BucketLoggingStatus": ...,
+}
 
-<a id="bucketloggingreload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketLoggingRequestBucketLoggingPutTypeDef](./type_defs.md#putbucketloggingrequestbucketloggingputtypedef) 
 
 #### BucketLogging.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_logging` to update the attributes of the
 BucketLogging resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.reload)
 
-Boto3 documentation:
-[S3.BucketLogging.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketLogging.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketnotification"></a>
+
+
+
 
 ## BucketNotification
 
-Type annotations for `boto3.resource("s3").BucketNotification` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketNotification` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketNotification)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketNotification
 
 def get_resource() -> BucketNotification:
     return boto3.resource("s3").BucketNotification(...)
 ```
 
-Boto3 documentation:
-[S3.BucketNotification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketNotification)
-
-<a id="bucketnotification-attributes"></a>
 
 ### BucketNotification attributes
 
-- `topic_configurations`:
-  `List`\[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)\]
-- `queue_configurations`:
-  `List`\[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)\]
-- `lambda_function_configurations`:
-  `List`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
-- `event_bridge_configuration`: `Dict`\[`str`, `Any`\]
+
+- `topic_configurations`: `List`[[TopicConfigurationTypeDef](./type_defs.md#topicconfigurationtypedef)]
+- `queue_configurations`: `List`[[QueueConfigurationTypeDef](./type_defs.md#queueconfigurationtypedef)]
+- `lambda_function_configurations`: `List`[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)]
+- `event_bridge_configuration`: `Dict`[`str`, `Any`]
 - `bucket_name`: `str`
 
-<a id="bucketnotification-methods"></a>
+
+
+
 
 ### BucketNotification methods
 
-<a id="bucketnotificationbucket-method"></a>
 
 #### BucketNotification.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.Bucket)
 
-Boto3 documentation:
-[S3.BucketNotification.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
 
-<a id="bucketnotificationget\_available\_subresources-method"></a>
-
-#### BucketNotification.get_available_subresources method
+#### BucketNotification.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketNotification.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketnotificationload-method"></a>
 
 #### BucketNotification.load method
 
 Calls :py:meth:`S3.Client.get_bucket_notification_configuration` to update the
 attributes of the BucketNotification resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.load)
 
-Boto3 documentation:
-[S3.BucketNotification.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketnotificationput-method"></a>
 
 #### BucketNotification.put method
 
 Enables notifications of specified events for a bucket.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.put)
 
-Boto3 documentation:
-[S3.BucketNotification.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    NotificationConfiguration: NotificationConfigurationTypeDef,  # (1)
+    ExpectedBucketOwner: str = ...,
+    SkipDestinationValidation: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketNotificationConfigurationRequestBucketNotificationPutTypeDef](./type_defs.md#putbucketnotificationconfigurationrequestbucketnotificationputtypedef).
+1. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
-  *(required)*
-- `ExpectedBucketOwner`: `str`
-- `SkipDestinationValidation`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutBucketNotificationConfigurationRequestBucketNotificationPutTypeDef = {  # (1)
+    "NotificationConfiguration": ...,
+}
 
-<a id="bucketnotificationreload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketNotificationConfigurationRequestBucketNotificationPutTypeDef](./type_defs.md#putbucketnotificationconfigurationrequestbucketnotificationputtypedef) 
 
 #### BucketNotification.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_notification_configuration` to update the
 attributes of the BucketNotification resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.reload)
 
-Boto3 documentation:
-[S3.BucketNotification.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketNotification.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketpolicy"></a>
+
+
+
 
 ## BucketPolicy
 
-Type annotations for `boto3.resource("s3").BucketPolicy` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketPolicy` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketPolicy)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketPolicy
 
 def get_resource() -> BucketPolicy:
     return boto3.resource("s3").BucketPolicy(...)
 ```
 
-Boto3 documentation:
-[S3.BucketPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketPolicy)
-
-<a id="bucketpolicy-attributes"></a>
 
 ### BucketPolicy attributes
+
 
 - `policy`: `str`
 - `bucket_name`: `str`
 
-<a id="bucketpolicy-methods"></a>
+
+
+
 
 ### BucketPolicy methods
 
-<a id="bucketpolicybucket-method"></a>
 
 #### BucketPolicy.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.Bucket)
 
-Boto3 documentation:
-[S3.BucketPolicy.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
-
-<a id="bucketpolicydelete-method"></a>
 
 #### BucketPolicy.delete method
 
 This implementation of the DELETE action uses the policy subresource to delete
 the policy of a specified bucket.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.delete)
 
-Boto3 documentation:
-[S3.BucketPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBucketPolicyRequestBucketPolicyDeleteTypeDef](./type_defs.md#deletebucketpolicyrequestbucketpolicydeletetypedef).
 
-Keyword-only arguments:
 
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketPolicyRequestBucketPolicyDeleteTypeDef = {  # (1)
+    "ExpectedBucketOwner": ...,
+}
 
-<a id="bucketpolicyget\_available\_subresources-method"></a>
+parent.delete(**kwargs)
+```
 
-#### BucketPolicy.get_available_subresources method
+1. See [:material-code-braces: DeleteBucketPolicyRequestBucketPolicyDeleteTypeDef](./type_defs.md#deletebucketpolicyrequestbucketpolicydeletetypedef) 
+
+#### BucketPolicy.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketPolicy.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketpolicyload-method"></a>
 
 #### BucketPolicy.load method
 
 Calls :py:meth:`S3.Client.get_bucket_policy` to update the attributes of the
 BucketPolicy resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.load)
 
-Boto3 documentation:
-[S3.BucketPolicy.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketpolicyput-method"></a>
 
 #### BucketPolicy.put method
 
 Applies an Amazon S3 bucket policy to an Amazon S3 bucket.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.put)
 
-Boto3 documentation:
-[S3.BucketPolicy.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    Policy: str,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
+    ConfirmRemoveSelfBucketAccess: bool = ...,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketPolicyRequestBucketPolicyPutTypeDef](./type_defs.md#putbucketpolicyrequestbucketpolicyputtypedef).
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `Policy`: `str` *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ConfirmRemoveSelfBucketAccess`: `bool`
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketPolicyRequestBucketPolicyPutTypeDef = {  # (1)
+    "Policy": ...,
+}
 
-<a id="bucketpolicyreload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketPolicyRequestBucketPolicyPutTypeDef](./type_defs.md#putbucketpolicyrequestbucketpolicyputtypedef) 
 
 #### BucketPolicy.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_policy` to update the attributes of the
 BucketPolicy resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.reload)
 
-Boto3 documentation:
-[S3.BucketPolicy.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketPolicy.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketrequestpayment"></a>
+
+
+
 
 ## BucketRequestPayment
 
-Type annotations for `boto3.resource("s3").BucketRequestPayment` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketRequestPayment` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketRequestPayment)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketRequestPayment
 
 def get_resource() -> BucketRequestPayment:
     return boto3.resource("s3").BucketRequestPayment(...)
 ```
 
-Boto3 documentation:
-[S3.BucketRequestPayment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketRequestPayment)
-
-<a id="bucketrequestpayment-attributes"></a>
 
 ### BucketRequestPayment attributes
+
 
 - `payer`: [PayerType](./literals.md#payertype)
 - `bucket_name`: `str`
 
-<a id="bucketrequestpayment-methods"></a>
+
+
+
 
 ### BucketRequestPayment methods
 
-<a id="bucketrequestpaymentbucket-method"></a>
 
 #### BucketRequestPayment.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.Bucket)
 
-Boto3 documentation:
-[S3.BucketRequestPayment.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
 
-<a id="bucketrequestpaymentget\_available\_subresources-method"></a>
-
-#### BucketRequestPayment.get_available_subresources method
+#### BucketRequestPayment.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketRequestPayment.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketrequestpaymentload-method"></a>
 
 #### BucketRequestPayment.load method
 
 Calls :py:meth:`S3.Client.get_bucket_request_payment` to update the attributes
 of the BucketRequestPayment resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.load)
 
-Boto3 documentation:
-[S3.BucketRequestPayment.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketrequestpaymentput-method"></a>
 
 #### BucketRequestPayment.put method
 
 Sets the request payment configuration for a bucket.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.put)
 
-Boto3 documentation:
-[S3.BucketRequestPayment.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    RequestPaymentConfiguration: RequestPaymentConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketRequestPaymentRequestBucketRequestPaymentPutTypeDef](./type_defs.md#putbucketrequestpaymentrequestbucketrequestpaymentputtypedef).
+1. See [:material-code-braces: RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `RequestPaymentConfiguration`:
-  [RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef)
-  *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketRequestPaymentRequestBucketRequestPaymentPutTypeDef = {  # (1)
+    "RequestPaymentConfiguration": ...,
+}
 
-<a id="bucketrequestpaymentreload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketRequestPaymentRequestBucketRequestPaymentPutTypeDef](./type_defs.md#putbucketrequestpaymentrequestbucketrequestpaymentputtypedef) 
 
 #### BucketRequestPayment.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_request_payment` to update the attributes
 of the BucketRequestPayment resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.reload)
 
-Boto3 documentation:
-[S3.BucketRequestPayment.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketRequestPayment.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="buckettagging"></a>
+
+
+
 
 ## BucketTagging
 
-Type annotations for `boto3.resource("s3").BucketTagging` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketTagging` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketTagging)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketTagging
 
 def get_resource() -> BucketTagging:
     return boto3.resource("s3").BucketTagging(...)
 ```
 
-Boto3 documentation:
-[S3.BucketTagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketTagging)
-
-<a id="buckettagging-attributes"></a>
 
 ### BucketTagging attributes
 
-- `tag_set`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+- `tag_set`: `List`[[TagTypeDef](./type_defs.md#tagtypedef)]
 - `bucket_name`: `str`
 
-<a id="buckettagging-methods"></a>
+
+
+
 
 ### BucketTagging methods
 
-<a id="buckettaggingbucket-method"></a>
 
 #### BucketTagging.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.Bucket)
 
-Boto3 documentation:
-[S3.BucketTagging.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
-
-<a id="buckettaggingdelete-method"></a>
 
 #### BucketTagging.delete method
 
 Deletes the tags from the bucket.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.delete)
 
-Boto3 documentation:
-[S3.BucketTagging.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBucketTaggingRequestBucketTaggingDeleteTypeDef](./type_defs.md#deletebuckettaggingrequestbuckettaggingdeletetypedef).
 
-Keyword-only arguments:
 
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketTaggingRequestBucketTaggingDeleteTypeDef = {  # (1)
+    "ExpectedBucketOwner": ...,
+}
 
-<a id="buckettaggingget\_available\_subresources-method"></a>
+parent.delete(**kwargs)
+```
 
-#### BucketTagging.get_available_subresources method
+1. See [:material-code-braces: DeleteBucketTaggingRequestBucketTaggingDeleteTypeDef](./type_defs.md#deletebuckettaggingrequestbuckettaggingdeletetypedef) 
+
+#### BucketTagging.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketTagging.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="buckettaggingload-method"></a>
 
 #### BucketTagging.load method
 
 Calls :py:meth:`S3.Client.get_bucket_tagging` to update the attributes of the
 BucketTagging resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.load)
 
-Boto3 documentation:
-[S3.BucketTagging.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="buckettaggingput-method"></a>
 
 #### BucketTagging.put method
 
 Sets the tags for a bucket.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.put)
 
-Boto3 documentation:
-[S3.BucketTagging.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    Tagging: TaggingTypeDef,  # (1)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketTaggingRequestBucketTaggingPutTypeDef](./type_defs.md#putbuckettaggingrequestbuckettaggingputtypedef).
+1. See [:material-code-braces: TaggingTypeDef](./type_defs.md#taggingtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef) *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketTaggingRequestBucketTaggingPutTypeDef = {  # (1)
+    "Tagging": ...,
+}
 
-<a id="buckettaggingreload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketTaggingRequestBucketTaggingPutTypeDef](./type_defs.md#putbuckettaggingrequestbuckettaggingputtypedef) 
 
 #### BucketTagging.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_tagging` to update the attributes of the
 BucketTagging resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.reload)
 
-Boto3 documentation:
-[S3.BucketTagging.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketTagging.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketversioning"></a>
+
+
+
 
 ## BucketVersioning
 
-Type annotations for `boto3.resource("s3").BucketVersioning` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketVersioning` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketVersioning)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketVersioning
 
 def get_resource() -> BucketVersioning:
     return boto3.resource("s3").BucketVersioning(...)
 ```
 
-Boto3 documentation:
-[S3.BucketVersioning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketVersioning)
-
-<a id="bucketversioning-attributes"></a>
 
 ### BucketVersioning attributes
 
-- `status`:
-  [BucketVersioningStatusType](./literals.md#bucketversioningstatustype)
+
+- `status`: [BucketVersioningStatusType](./literals.md#bucketversioningstatustype)
 - `mfa_delete`: [MFADeleteStatusType](./literals.md#mfadeletestatustype)
 - `bucket_name`: `str`
 
-<a id="bucketversioning-methods"></a>
+
+
+
 
 ### BucketVersioning methods
 
-<a id="bucketversioningbucket-method"></a>
 
 #### BucketVersioning.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.Bucket)
 
-Boto3 documentation:
-[S3.BucketVersioning.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
-
-<a id="bucketversioningenable-method"></a>
 
 #### BucketVersioning.enable method
 
 Sets the versioning state of an existing bucket.
 
-Type annotations for `boto3.resource("s3").enable` method.
+Type annotations and code completion for `#!python boto3.resource("s3").enable` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.enable)
 
-Boto3 documentation:
-[S3.BucketVersioning.enable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.enable)
+```python title="Method definition"
+def enable(
+    self,
+    *,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
+    MFA: str = ...,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketVersioningRequestBucketVersioningEnableTypeDef](./type_defs.md#putbucketversioningrequestbucketversioningenabletypedef).
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `MFA`: `str`
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketVersioningRequestBucketVersioningEnableTypeDef = {  # (1)
+    "ChecksumAlgorithm": ...,
+}
 
-<a id="bucketversioningget\_available\_subresources-method"></a>
+parent.enable(**kwargs)
+```
 
-#### BucketVersioning.get_available_subresources method
+1. See [:material-code-braces: PutBucketVersioningRequestBucketVersioningEnableTypeDef](./type_defs.md#putbucketversioningrequestbucketversioningenabletypedef) 
+
+#### BucketVersioning.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketVersioning.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketversioningload-method"></a>
 
 #### BucketVersioning.load method
 
-Calls :py:meth:`S3.Client.get_bucket_versioning` to update the attributes of
-the BucketVersioning resource.
+Calls :py:meth:`S3.Client.get_bucket_versioning` to update the attributes of the
+BucketVersioning resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.load)
 
-Boto3 documentation:
-[S3.BucketVersioning.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketversioningput-method"></a>
 
 #### BucketVersioning.put method
 
 Sets the versioning state of an existing bucket.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.put)
 
-Boto3 documentation:
-[S3.BucketVersioning.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    VersioningConfiguration: VersioningConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    MFA: str = ...,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketVersioningRequestBucketVersioningPutTypeDef](./type_defs.md#putbucketversioningrequestbucketversioningputtypedef).
+1. See [:material-code-braces: VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `VersioningConfiguration`:
-  [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
-  *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `MFA`: `str`
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketVersioningRequestBucketVersioningPutTypeDef = {  # (1)
+    "VersioningConfiguration": ...,
+}
 
-<a id="bucketversioningreload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketVersioningRequestBucketVersioningPutTypeDef](./type_defs.md#putbucketversioningrequestbucketversioningputtypedef) 
 
 #### BucketVersioning.reload method
 
-Calls :py:meth:`S3.Client.get_bucket_versioning` to update the attributes of
-the BucketVersioning resource.
+Calls :py:meth:`S3.Client.get_bucket_versioning` to update the attributes of the
+BucketVersioning resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.reload)
 
-Boto3 documentation:
-[S3.BucketVersioning.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketversioningsuspend-method"></a>
 
 #### BucketVersioning.suspend method
 
 Sets the versioning state of an existing bucket.
 
-Type annotations for `boto3.resource("s3").suspend` method.
+Type annotations and code completion for `#!python boto3.resource("s3").suspend` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.suspend)
 
-Boto3 documentation:
-[S3.BucketVersioning.suspend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketVersioning.suspend)
+```python title="Method definition"
+def suspend(
+    self,
+    *,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
+    MFA: str = ...,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketVersioningRequestBucketVersioningSuspendTypeDef](./type_defs.md#putbucketversioningrequestbucketversioningsuspendtypedef).
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `MFA`: `str`
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketVersioningRequestBucketVersioningSuspendTypeDef = {  # (1)
+    "ChecksumAlgorithm": ...,
+}
 
-<a id="bucketwebsite"></a>
+parent.suspend(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketVersioningRequestBucketVersioningSuspendTypeDef](./type_defs.md#putbucketversioningrequestbucketversioningsuspendtypedef) 
+
+
+
 
 ## BucketWebsite
 
-Type annotations for `boto3.resource("s3").BucketWebsite` class.
+Type annotations and code completion for `#!python boto3.resource("s3").BucketWebsite` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketWebsite)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import BucketWebsite
 
 def get_resource() -> BucketWebsite:
     return boto3.resource("s3").BucketWebsite(...)
 ```
 
-Boto3 documentation:
-[S3.BucketWebsite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.BucketWebsite)
-
-<a id="bucketwebsite-attributes"></a>
 
 ### BucketWebsite attributes
 
-- `redirect_all_requests_to`:
-  [RedirectAllRequestsToResponseMetadataTypeDef](./type_defs.md#redirectallrequeststoresponsemetadatatypedef)
-- `index_document`:
-  [IndexDocumentResponseMetadataTypeDef](./type_defs.md#indexdocumentresponsemetadatatypedef)
-- `error_document`:
-  [ErrorDocumentResponseMetadataTypeDef](./type_defs.md#errordocumentresponsemetadatatypedef)
-- `routing_rules`:
-  `List`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
+
+- `redirect_all_requests_to`: [RedirectAllRequestsToResponseMetadataTypeDef](./type_defs.md#redirectallrequeststoresponsemetadatatypedef)
+- `index_document`: [IndexDocumentResponseMetadataTypeDef](./type_defs.md#indexdocumentresponsemetadatatypedef)
+- `error_document`: [ErrorDocumentResponseMetadataTypeDef](./type_defs.md#errordocumentresponsemetadatatypedef)
+- `routing_rules`: `List`[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)]
 - `bucket_name`: `str`
 
-<a id="bucketwebsite-methods"></a>
+
+
+
 
 ### BucketWebsite methods
 
-<a id="bucketwebsitebucket-method"></a>
 
 #### BucketWebsite.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.Bucket)
 
-Boto3 documentation:
-[S3.BucketWebsite.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
-
-<a id="bucketwebsitedelete-method"></a>
 
 #### BucketWebsite.delete method
 
 This action removes the website configuration for a bucket.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.delete)
 
-Boto3 documentation:
-[S3.BucketWebsite.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBucketWebsiteRequestBucketWebsiteDeleteTypeDef](./type_defs.md#deletebucketwebsiterequestbucketwebsitedeletetypedef).
 
-Keyword-only arguments:
 
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketWebsiteRequestBucketWebsiteDeleteTypeDef = {  # (1)
+    "ExpectedBucketOwner": ...,
+}
 
-<a id="bucketwebsiteget\_available\_subresources-method"></a>
+parent.delete(**kwargs)
+```
 
-#### BucketWebsite.get_available_subresources method
+1. See [:material-code-braces: DeleteBucketWebsiteRequestBucketWebsiteDeleteTypeDef](./type_defs.md#deletebucketwebsiterequestbucketwebsitedeletetypedef) 
+
+#### BucketWebsite.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.get_available_subresources)
 
-Boto3 documentation:
-[S3.BucketWebsite.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="bucketwebsiteload-method"></a>
 
 #### BucketWebsite.load method
 
 Calls :py:meth:`S3.Client.get_bucket_website` to update the attributes of the
 BucketWebsite resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.load)
 
-Boto3 documentation:
-[S3.BucketWebsite.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="bucketwebsiteput-method"></a>
 
 #### BucketWebsite.put method
 
 Sets the configuration of the website that is specified in the `website`
 subresource.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.put)
 
-Boto3 documentation:
-[S3.BucketWebsite.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    WebsiteConfiguration: WebsiteConfigurationTypeDef,  # (1)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ExpectedBucketOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketWebsiteRequestBucketWebsitePutTypeDef](./type_defs.md#putbucketwebsiterequestbucketwebsiteputtypedef).
+1. See [:material-code-braces: WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `WebsiteConfiguration`:
-  [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
-  *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutBucketWebsiteRequestBucketWebsitePutTypeDef = {  # (1)
+    "WebsiteConfiguration": ...,
+}
 
-<a id="bucketwebsitereload-method"></a>
+parent.put(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketWebsiteRequestBucketWebsitePutTypeDef](./type_defs.md#putbucketwebsiterequestbucketwebsiteputtypedef) 
 
 #### BucketWebsite.reload method
 
 Calls :py:meth:`S3.Client.get_bucket_website` to update the attributes of the
 BucketWebsite resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.reload)
 
-Boto3 documentation:
-[S3.BucketWebsite.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.BucketWebsite.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="multipartupload"></a>
+
+
+
 
 ## MultipartUpload
 
-Type annotations for `boto3.resource("s3").MultipartUpload` class.
+Type annotations and code completion for `#!python boto3.resource("s3").MultipartUpload` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUpload)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import MultipartUpload
 
 def get_resource() -> MultipartUpload:
     return boto3.resource("s3").MultipartUpload(...)
 ```
 
-Boto3 documentation:
-[S3.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUpload)
-
-<a id="multipartupload-attributes"></a>
 
 ### MultipartUpload attributes
+
 
 - `upload_id`: `str`
 - `key`: `str`
 - `initiated`: `datetime`
 - `storage_class`: [StorageClassType](./literals.md#storageclasstype)
-- `owner`:
-  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
-- `initiator`:
-  [InitiatorResponseMetadataTypeDef](./type_defs.md#initiatorresponsemetadatatypedef)
-- `checksum_algorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
+- `owner`: [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
+- `initiator`: [InitiatorResponseMetadataTypeDef](./type_defs.md#initiatorresponsemetadatatypedef)
+- `checksum_algorithm`: [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `bucket_name`: `str`
 - `object_key`: `str`
 - `id`: `str`
 - `parts`: [MultipartUploadPartsCollection](#multipartuploadpartscollection)
 
-<a id="multipartupload-collections"></a>
+
 
 ### MultipartUpload collections
 
-<a id="multipartuploadparts"></a>
 
 #### MultipartUpload.parts
 
-Type annotations for `boto3.resource("s3").MultipartUpload(...).parts`
-collection.
+Provides access to [MultipartUploadPart](#multipartuploadpart) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("s3").MultipartUpload(...).parts` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.parts)
 
-```python
-from mypy_boto3_s3.service_resource import MultipartUploadPartsCollection,
+```python title="Usage example"
+from mypy_boto3_s3.service_resource import MultipartUploadPartsCollection
 
 def get_collection() -> MultipartUploadPartsCollection:
     resource = boto3.resource("s3").MultipartUpload(...)
     return resource.parts
 ```
 
-Provides access to [MultipartUploadPart](#multipartuploadpart) resource.
 
-Boto3 documentation:
-[S3.MultipartUpload.MultipartUploadPartsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.parts)
 
-<a id="multipartupload-methods"></a>
 
 ### MultipartUpload methods
 
-<a id="multipartuploadobject-method"></a>
 
 #### MultipartUpload.Object method
 
 Creates a Object resource.
 
-Type annotations for `boto3.resource("s3").Object` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.Object)
 
-Boto3 documentation:
-[S3.MultipartUpload.Object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.Object)
+```python title="Method definition"
+def Object(
+    self,
+) -> Object:
+    ...
+```
 
-Returns [Object](#object).
-
-<a id="multipartuploadpart-method"></a>
 
 #### MultipartUpload.Part method
 
 Creates a MultipartUploadPart resource.
 
-Type annotations for `boto3.resource("s3").Part` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Part` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.Part)
 
-Boto3 documentation:
-[S3.MultipartUpload.Part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.Part)
+```python title="Method definition"
+def Part(
+    self,
+    part_number: str,
+) -> MultipartUploadPart:
+    ...
+```
 
-Arguments mapping described in
-[MultipartUploadPartRequestTypeDef](./type_defs.md#multipartuploadpartrequesttypedef).
 
-Arguments:
 
-- `part_number`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: MultipartUploadPartRequestTypeDef = {  # (1)
+    "part_number": ...,
+}
 
-Returns [MultipartUploadPart](#multipartuploadpart).
+parent.Part(**kwargs)
+```
 
-<a id="multipartuploadabort-method"></a>
+1. See [:material-code-braces: MultipartUploadPartRequestTypeDef](./type_defs.md#multipartuploadpartrequesttypedef) 
 
 #### MultipartUpload.abort method
 
 This action aborts a multipart upload.
 
-Type annotations for `boto3.resource("s3").abort` method.
+Type annotations and code completion for `#!python boto3.resource("s3").abort` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.abort)
 
-Boto3 documentation:
-[S3.MultipartUpload.abort](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.abort)
+```python title="Method definition"
+def abort(
+    self,
+    *,
+    RequestPayer: RequestPayerType = ...,  # (1)
+    ExpectedBucketOwner: str = ...,
+) -> AbortMultipartUploadOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AbortMultipartUploadRequestMultipartUploadAbortTypeDef](./type_defs.md#abortmultipartuploadrequestmultipartuploadaborttypedef).
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-braces: AbortMultipartUploadOutputTypeDef](./type_defs.md#abortmultipartuploadoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: AbortMultipartUploadRequestMultipartUploadAbortTypeDef = {  # (1)
+    "RequestPayer": ...,
+}
 
-Returns
-[AbortMultipartUploadOutputTypeDef](./type_defs.md#abortmultipartuploadoutputtypedef).
+parent.abort(**kwargs)
+```
 
-<a id="multipartuploadcomplete-method"></a>
+1. See [:material-code-braces: AbortMultipartUploadRequestMultipartUploadAbortTypeDef](./type_defs.md#abortmultipartuploadrequestmultipartuploadaborttypedef) 
 
 #### MultipartUpload.complete method
 
 Completes a multipart upload by assembling previously uploaded parts.
 
-Type annotations for `boto3.resource("s3").complete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").complete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.complete)
 
-Boto3 documentation:
-[S3.MultipartUpload.complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.complete)
+```python title="Method definition"
+def complete(
+    self,
+    *,
+    MultipartUpload: CompletedMultipartUploadTypeDef = ...,  # (1)
+    ChecksumCRC32: str = ...,
+    ChecksumCRC32C: str = ...,
+    ChecksumSHA1: str = ...,
+    ChecksumSHA256: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (2)
+    ExpectedBucketOwner: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+) -> Object:
+    ...
+```
 
-Arguments mapping described in
-[CompleteMultipartUploadRequestMultipartUploadCompleteTypeDef](./type_defs.md#completemultipartuploadrequestmultipartuploadcompletetypedef).
+1. See [:material-code-braces: CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
 
-Keyword-only arguments:
 
-- `MultipartUpload`:
-  [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
+```python title="Usage example with kwargs"
+kwargs: CompleteMultipartUploadRequestMultipartUploadCompleteTypeDef = {  # (1)
+    "MultipartUpload": ...,
+}
 
-Returns [Object](#object).
+parent.complete(**kwargs)
+```
 
-<a id="multipartuploadget\_available\_subresources-method"></a>
+1. See [:material-code-braces: CompleteMultipartUploadRequestMultipartUploadCompleteTypeDef](./type_defs.md#completemultipartuploadrequestmultipartuploadcompletetypedef) 
 
-#### MultipartUpload.get_available_subresources method
+#### MultipartUpload.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.get_available_subresources)
 
-Boto3 documentation:
-[S3.MultipartUpload.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUpload.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="multipartuploadpart"></a>
+
+
 
 ## MultipartUploadPart
 
-Type annotations for `boto3.resource("s3").MultipartUploadPart` class.
+Type annotations and code completion for `#!python boto3.resource("s3").MultipartUploadPart` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUploadPart)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import MultipartUploadPart
 
 def get_resource() -> MultipartUploadPart:
     return boto3.resource("s3").MultipartUploadPart(...)
 ```
 
-Boto3 documentation:
-[S3.MultipartUploadPart](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.MultipartUploadPart)
-
-<a id="multipartuploadpart-attributes"></a>
 
 ### MultipartUploadPart attributes
+
 
 - `last_modified`: `datetime`
 - `e_tag`: `str`
@@ -2617,127 +3099,148 @@ Boto3 documentation:
 - `multipart_upload_id`: `str`
 - `part_number`: `str`
 
-<a id="multipartuploadpart-methods"></a>
+
+
+
 
 ### MultipartUploadPart methods
 
-<a id="multipartuploadpartmultipartupload-method"></a>
 
 #### MultipartUploadPart.MultipartUpload method
 
 Creates a MultipartUpload resource.
 
-Type annotations for `boto3.resource("s3").MultipartUpload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").MultipartUpload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.MultipartUpload)
 
-Boto3 documentation:
-[S3.MultipartUploadPart.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.MultipartUpload)
+```python title="Method definition"
+def MultipartUpload(
+    self,
+) -> MultipartUpload:
+    ...
+```
 
-Returns [MultipartUpload](#multipartupload).
 
-<a id="multipartuploadpartcopy\_from-method"></a>
-
-#### MultipartUploadPart.copy_from method
+#### MultipartUploadPart.copy\_from method
 
 Uploads a part by copying data from an existing object as data source.
 
-Type annotations for `boto3.resource("s3").copy_from` method.
+Type annotations and code completion for `#!python boto3.resource("s3").copy_from` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.copy_from)
 
-Boto3 documentation:
-[S3.MultipartUploadPart.copy_from](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.copy_from)
+```python title="Method definition"
+def copy_from(
+    self,
+    *,
+    CopySource: str,
+    CopySourceIfMatch: str = ...,
+    CopySourceIfModifiedSince: Union[datetime, str] = ...,
+    CopySourceIfNoneMatch: str = ...,
+    CopySourceIfUnmodifiedSince: Union[datetime, str] = ...,
+    CopySourceRange: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    CopySourceSSECustomerAlgorithm: str = ...,
+    CopySourceSSECustomerKey: str = ...,
+    CopySourceSSECustomerKeyMD5: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (1)
+    ExpectedBucketOwner: str = ...,
+    ExpectedSourceBucketOwner: str = ...,
+) -> UploadPartCopyOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef](./type_defs.md#uploadpartcopyrequestmultipartuploadpartcopyfromtypedef).
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-braces: UploadPartCopyOutputTypeDef](./type_defs.md#uploadpartcopyoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CopySource`: `str` *(required)*
-- `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceRange`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `CopySourceSSECustomerAlgorithm`: `str`
-- `CopySourceSSECustomerKey`: `str`
-- `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-- `ExpectedSourceBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef = {  # (1)
+    "CopySource": ...,
+}
 
-Returns
-[UploadPartCopyOutputTypeDef](./type_defs.md#uploadpartcopyoutputtypedef).
+parent.copy_from(**kwargs)
+```
 
-<a id="multipartuploadpartget\_available\_subresources-method"></a>
+1. See [:material-code-braces: UploadPartCopyRequestMultipartUploadPartCopyFromTypeDef](./type_defs.md#uploadpartcopyrequestmultipartuploadpartcopyfromtypedef) 
 
-#### MultipartUploadPart.get_available_subresources method
+#### MultipartUploadPart.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.get_available_subresources)
 
-Boto3 documentation:
-[S3.MultipartUploadPart.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="multipartuploadpartupload-method"></a>
 
 #### MultipartUploadPart.upload method
 
 Uploads a part in a multipart upload.
 
-Type annotations for `boto3.resource("s3").upload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.upload)
 
-Boto3 documentation:
-[S3.MultipartUploadPart.upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.MultipartUploadPart.upload)
+```python title="Method definition"
+def upload(
+    self,
+    *,
+    Body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    ContentLength: int = ...,
+    ContentMD5: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (1)
+    ChecksumCRC32: str = ...,
+    ChecksumCRC32C: str = ...,
+    ChecksumSHA1: str = ...,
+    ChecksumSHA256: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (2)
+    ExpectedBucketOwner: str = ...,
+) -> UploadPartOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UploadPartRequestMultipartUploadPartUploadTypeDef](./type_defs.md#uploadpartrequestmultipartuploadpartuploadtypedef).
+1. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-braces: UploadPartOutputTypeDef](./type_defs.md#uploadpartoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: UploadPartRequestMultipartUploadPartUploadTypeDef = {  # (1)
+    "Body": ...,
+}
 
-Returns [UploadPartOutputTypeDef](./type_defs.md#uploadpartoutputtypedef).
+parent.upload(**kwargs)
+```
 
-<a id="object"></a>
+1. See [:material-code-braces: UploadPartRequestMultipartUploadPartUploadTypeDef](./type_defs.md#uploadpartrequestmultipartuploadpartuploadtypedef) 
+
+
+
 
 ## Object
 
-Type annotations for `boto3.resource("s3").Object` class.
+Type annotations and code completion for `#!python boto3.resource("s3").Object` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Object)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import Object
 
 def get_resource() -> Object:
     return boto3.resource("s3").Object(...)
 ```
 
-Boto3 documentation:
-[S3.Object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.Object)
-
-<a id="object-attributes"></a>
 
 ### Object attributes
+
 
 - `delete_marker`: `bool`
 - `accept_ranges`: `str`
@@ -2760,1242 +3263,1526 @@ Boto3 documentation:
 - `content_type`: `str`
 - `expires`: `datetime`
 - `website_redirect_location`: `str`
-- `server_side_encryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `metadata`: `Dict`\[`str`, `str`\]
+- `server_side_encryption`: [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
+- `metadata`: `Dict`[`str`, `str`]
 - `sse_customer_algorithm`: `str`
 - `sse_customer_key_md5`: `str`
 - `ssekms_key_id`: `str`
 - `bucket_key_enabled`: `bool`
 - `storage_class`: [StorageClassType](./literals.md#storageclasstype)
-- `request_charged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `replication_status`:
-  [ReplicationStatusType](./literals.md#replicationstatustype)
+- `request_charged`: `Literal['requester']` (see [RequestChargedType](./literals.md#requestchargedtype))
+- `replication_status`: [ReplicationStatusType](./literals.md#replicationstatustype)
 - `parts_count`: `int`
 - `object_lock_mode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
 - `object_lock_retain_until_date`: `datetime`
-- `object_lock_legal_hold_status`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+- `object_lock_legal_hold_status`: [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `bucket_name`: `str`
 - `key`: `str`
 
-<a id="object-methods"></a>
+
+
+
 
 ### Object methods
 
-<a id="objectacl-method"></a>
 
 #### Object.Acl method
 
 Creates a ObjectAcl resource.
 
-Type annotations for `boto3.resource("s3").Acl` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Acl)
 
-Boto3 documentation:
-[S3.Object.Acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Acl)
+```python title="Method definition"
+def Acl(
+    self,
+) -> ObjectAcl:
+    ...
+```
 
-Returns [ObjectAcl](#objectacl).
-
-<a id="objectbucket-method"></a>
 
 #### Object.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Bucket)
 
-Boto3 documentation:
-[S3.Object.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
-
-<a id="objectmultipartupload-method"></a>
 
 #### Object.MultipartUpload method
 
 Creates a MultipartUpload resource.
 
-Type annotations for `boto3.resource("s3").MultipartUpload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").MultipartUpload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.MultipartUpload)
 
-Boto3 documentation:
-[S3.Object.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.MultipartUpload)
+```python title="Method definition"
+def MultipartUpload(
+    self,
+    id: str,
+) -> MultipartUpload:
+    ...
+```
 
-Arguments mapping described in
-[ObjectMultipartUploadRequestTypeDef](./type_defs.md#objectmultipartuploadrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ObjectMultipartUploadRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [MultipartUpload](#multipartupload).
+parent.MultipartUpload(**kwargs)
+```
 
-<a id="objectversion-method"></a>
+1. See [:material-code-braces: ObjectMultipartUploadRequestTypeDef](./type_defs.md#objectmultipartuploadrequesttypedef) 
 
 #### Object.Version method
 
 Creates a ObjectVersion resource.
 
-Type annotations for `boto3.resource("s3").Version` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Version)
 
-Boto3 documentation:
-[S3.Object.Version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.Version)
+```python title="Method definition"
+def Version(
+    self,
+    id: str,
+) -> ObjectVersion:
+    ...
+```
 
-Arguments mapping described in
-[ObjectVersionRequestTypeDef](./type_defs.md#objectversionrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ObjectVersionRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [ObjectVersion](#objectversion).
+parent.Version(**kwargs)
+```
 
-<a id="objectcopy-method"></a>
+1. See [:material-code-braces: ObjectVersionRequestTypeDef](./type_defs.md#objectversionrequesttypedef) 
 
 #### Object.copy method
 
 Copy an object from one S3 location to this object.
 
-Type annotations for `boto3.resource("s3").copy` method.
+Type annotations and code completion for `#!python boto3.resource("s3").copy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.copy)
 
-Boto3 documentation:
-[S3.Object.copy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.copy)
+```python title="Method definition"
+def copy(
+    self,
+    CopySource: CopySourceTypeDef,  # (1)
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    SourceClient: BaseClient = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ObjectCopyRequestTypeDef](./type_defs.md#objectcopyrequesttypedef).
+1. See [:material-code-braces: CopySourceTypeDef](./type_defs.md#copysourcetypedef) 
 
-Arguments:
 
-- `CopySource`: [CopySourceTypeDef](./type_defs.md#copysourcetypedef)
-  *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `SourceClient`: `BaseClient`
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: ObjectCopyRequestTypeDef = {  # (1)
+    "CopySource": ...,
+}
 
-<a id="objectcopy\_from-method"></a>
+parent.copy(**kwargs)
+```
 
-#### Object.copy_from method
+1. See [:material-code-braces: ObjectCopyRequestTypeDef](./type_defs.md#objectcopyrequesttypedef) 
+
+#### Object.copy\_from method
 
 Creates a copy of an object that is already stored in Amazon S3.
 
-Type annotations for `boto3.resource("s3").copy_from` method.
+Type annotations and code completion for `#!python boto3.resource("s3").copy_from` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.copy_from)
 
-Boto3 documentation:
-[S3.Object.copy_from](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.copy_from)
+```python title="Method definition"
+def copy_from(
+    self,
+    *,
+    CopySource: str,
+    ACL: ObjectCannedACLType = ...,  # (1)
+    CacheControl: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ContentDisposition: str = ...,
+    ContentEncoding: str = ...,
+    ContentLanguage: str = ...,
+    ContentType: str = ...,
+    CopySourceIfMatch: str = ...,
+    CopySourceIfModifiedSince: Union[datetime, str] = ...,
+    CopySourceIfNoneMatch: str = ...,
+    CopySourceIfUnmodifiedSince: Union[datetime, str] = ...,
+    Expires: Union[datetime, str] = ...,
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWriteACP: str = ...,
+    Metadata: Mapping[str, str] = ...,
+    MetadataDirective: MetadataDirectiveType = ...,  # (3)
+    TaggingDirective: TaggingDirectiveType = ...,  # (4)
+    ServerSideEncryption: ServerSideEncryptionType = ...,  # (5)
+    StorageClass: StorageClassType = ...,  # (6)
+    WebsiteRedirectLocation: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    SSEKMSKeyId: str = ...,
+    SSEKMSEncryptionContext: str = ...,
+    BucketKeyEnabled: bool = ...,
+    CopySourceSSECustomerAlgorithm: str = ...,
+    CopySourceSSECustomerKey: str = ...,
+    CopySourceSSECustomerKeyMD5: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (7)
+    Tagging: str = ...,
+    ObjectLockMode: ObjectLockModeType = ...,  # (8)
+    ObjectLockRetainUntilDate: Union[datetime, str] = ...,
+    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatusType = ...,  # (9)
+    ExpectedBucketOwner: str = ...,
+    ExpectedSourceBucketOwner: str = ...,
+) -> CopyObjectOutputTypeDef:  # (10)
+    ...
+```
 
-Arguments mapping described in
-[CopyObjectRequestObjectCopyFromTypeDef](./type_defs.md#copyobjectrequestobjectcopyfromtypedef).
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: MetadataDirectiveType](./literals.md#metadatadirectivetype) 
+4. See [:material-code-brackets: TaggingDirectiveType](./literals.md#taggingdirectivetype) 
+5. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+6. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+7. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+8. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+9. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+10. See [:material-code-braces: CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CopySource`: `str` *(required)*
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `MetadataDirective`:
-  [MetadataDirectiveType](./literals.md#metadatadirectivetype)
-- `TaggingDirective`:
-  [TaggingDirectiveType](./literals.md#taggingdirectivetype)
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `CopySourceSSECustomerAlgorithm`: `str`
-- `CopySourceSSECustomerKey`: `str`
-- `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ExpectedSourceBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: CopyObjectRequestObjectCopyFromTypeDef = {  # (1)
+    "CopySource": ...,
+}
 
-Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
+parent.copy_from(**kwargs)
+```
 
-<a id="objectdelete-method"></a>
+1. See [:material-code-braces: CopyObjectRequestObjectCopyFromTypeDef](./type_defs.md#copyobjectrequestobjectcopyfromtypedef) 
 
 #### Object.delete method
 
 Removes the null version (if there is one) of an object and inserts a delete
 marker, which becomes the latest version of the object.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.delete)
 
-Boto3 documentation:
-[S3.Object.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    MFA: str = ...,
+    VersionId: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (1)
+    BypassGovernanceRetention: bool = ...,
+    ExpectedBucketOwner: str = ...,
+) -> DeleteObjectOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteObjectRequestObjectDeleteTypeDef](./type_defs.md#deleteobjectrequestobjectdeletetypedef).
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-braces: DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MFA`: `str`
-- `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteObjectRequestObjectDeleteTypeDef = {  # (1)
+    "MFA": ...,
+}
 
-Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
+parent.delete(**kwargs)
+```
 
-<a id="objectdownload\_file-method"></a>
+1. See [:material-code-braces: DeleteObjectRequestObjectDeleteTypeDef](./type_defs.md#deleteobjectrequestobjectdeletetypedef) 
 
-#### Object.download_file method
+#### Object.download\_file method
 
 Download an S3 object to a file.
 
-Type annotations for `boto3.resource("s3").download_file` method.
+Type annotations and code completion for `#!python boto3.resource("s3").download_file` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.download_file)
 
-Boto3 documentation:
-[S3.Object.download_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.download_file)
+```python title="Method definition"
+def download_file(
+    self,
+    Filename: str,
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ObjectDownloadFileRequestTypeDef](./type_defs.md#objectdownloadfilerequesttypedef).
 
-Arguments:
 
-- `Filename`: `str` *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: ObjectDownloadFileRequestTypeDef = {  # (1)
+    "Filename": ...,
+}
 
-<a id="objectdownload\_fileobj-method"></a>
+parent.download_file(**kwargs)
+```
 
-#### Object.download_fileobj method
+1. See [:material-code-braces: ObjectDownloadFileRequestTypeDef](./type_defs.md#objectdownloadfilerequesttypedef) 
+
+#### Object.download\_fileobj method
 
 Download this object from S3 to a file-like object.
 
-Type annotations for `boto3.resource("s3").download_fileobj` method.
+Type annotations and code completion for `#!python boto3.resource("s3").download_fileobj` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.download_fileobj)
 
-Boto3 documentation:
-[S3.Object.download_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.download_fileobj)
+```python title="Method definition"
+def download_fileobj(
+    self,
+    Fileobj: Union[IO[Any], StreamingBody],
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ObjectDownloadFileobjRequestTypeDef](./type_defs.md#objectdownloadfileobjrequesttypedef).
 
-Arguments:
 
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\] *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: ObjectDownloadFileobjRequestTypeDef = {  # (1)
+    "Fileobj": ...,
+}
 
-<a id="objectget-method"></a>
+parent.download_fileobj(**kwargs)
+```
+
+1. See [:material-code-braces: ObjectDownloadFileobjRequestTypeDef](./type_defs.md#objectdownloadfileobjrequesttypedef) 
 
 #### Object.get method
 
 Retrieves objects from Amazon S3.
 
-Type annotations for `boto3.resource("s3").get` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get)
 
-Boto3 documentation:
-[S3.Object.get](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get)
+```python title="Method definition"
+def get(
+    self,
+    *,
+    IfMatch: str = ...,
+    IfModifiedSince: Union[datetime, str] = ...,
+    IfNoneMatch: str = ...,
+    IfUnmodifiedSince: Union[datetime, str] = ...,
+    Range: str = ...,
+    ResponseCacheControl: str = ...,
+    ResponseContentDisposition: str = ...,
+    ResponseContentEncoding: str = ...,
+    ResponseContentLanguage: str = ...,
+    ResponseContentType: str = ...,
+    ResponseExpires: Union[datetime, str] = ...,
+    VersionId: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (1)
+    PartNumber: int = ...,
+    ExpectedBucketOwner: str = ...,
+    ChecksumMode: ChecksumModeType = ...,  # (2)
+) -> GetObjectOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetObjectRequestObjectGetTypeDef](./type_defs.md#getobjectrequestobjectgettypedef).
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
+3. See [:material-code-braces: GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `ResponseCacheControl`: `str`
-- `ResponseContentDisposition`: `str`
-- `ResponseContentEncoding`: `str`
-- `ResponseContentLanguage`: `str`
-- `ResponseContentType`: `str`
-- `ResponseExpires`: `Union`\[`datetime`, `str`\]
-- `VersionId`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
+```python title="Usage example with kwargs"
+kwargs: GetObjectRequestObjectGetTypeDef = {  # (1)
+    "IfMatch": ...,
+}
 
-Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
+parent.get(**kwargs)
+```
 
-<a id="objectget\_available\_subresources-method"></a>
+1. See [:material-code-braces: GetObjectRequestObjectGetTypeDef](./type_defs.md#getobjectrequestobjectgettypedef) 
 
-#### Object.get_available_subresources method
+#### Object.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get_available_subresources)
 
-Boto3 documentation:
-[S3.Object.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="objectinitiate\_multipart\_upload-method"></a>
-
-#### Object.initiate_multipart_upload method
+#### Object.initiate\_multipart\_upload method
 
 This action initiates a multipart upload and returns an upload ID.
 
-Type annotations for `boto3.resource("s3").initiate_multipart_upload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").initiate_multipart_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.initiate_multipart_upload)
 
-Boto3 documentation:
-[S3.Object.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.initiate_multipart_upload)
+```python title="Method definition"
+def initiate_multipart_upload(
+    self,
+    *,
+    ACL: ObjectCannedACLType = ...,  # (1)
+    CacheControl: str = ...,
+    ContentDisposition: str = ...,
+    ContentEncoding: str = ...,
+    ContentLanguage: str = ...,
+    ContentType: str = ...,
+    Expires: Union[datetime, str] = ...,
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWriteACP: str = ...,
+    Metadata: Mapping[str, str] = ...,
+    ServerSideEncryption: ServerSideEncryptionType = ...,  # (2)
+    StorageClass: StorageClassType = ...,  # (3)
+    WebsiteRedirectLocation: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    SSEKMSKeyId: str = ...,
+    SSEKMSEncryptionContext: str = ...,
+    BucketKeyEnabled: bool = ...,
+    RequestPayer: RequestPayerType = ...,  # (4)
+    Tagging: str = ...,
+    ObjectLockMode: ObjectLockModeType = ...,  # (5)
+    ObjectLockRetainUntilDate: Union[datetime, str] = ...,
+    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatusType = ...,  # (6)
+    ExpectedBucketOwner: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (7)
+) -> MultipartUpload:
+    ...
+```
 
-Arguments mapping described in
-[CreateMultipartUploadRequestObjectInitiateMultipartUploadTypeDef](./type_defs.md#createmultipartuploadrequestobjectinitiatemultipartuploadtypedef).
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+3. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+4. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+5. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+6. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+7. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
+```python title="Usage example with kwargs"
+kwargs: CreateMultipartUploadRequestObjectInitiateMultipartUploadTypeDef = {  # (1)
+    "ACL": ...,
+}
 
-Returns [MultipartUpload](#multipartupload).
+parent.initiate_multipart_upload(**kwargs)
+```
 
-<a id="objectload-method"></a>
+1. See [:material-code-braces: CreateMultipartUploadRequestObjectInitiateMultipartUploadTypeDef](./type_defs.md#createmultipartuploadrequestobjectinitiatemultipartuploadtypedef) 
 
 #### Object.load method
 
 Calls :py:meth:`S3.Client.head_object` to update the attributes of the Object
 resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.load)
 
-Boto3 documentation:
-[S3.Object.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="objectput-method"></a>
 
 #### Object.put method
 
 Adds an object to a bucket.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.put)
 
-Boto3 documentation:
-[S3.Object.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    ACL: ObjectCannedACLType = ...,  # (1)
+    Body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    CacheControl: str = ...,
+    ContentDisposition: str = ...,
+    ContentEncoding: str = ...,
+    ContentLanguage: str = ...,
+    ContentLength: int = ...,
+    ContentMD5: str = ...,
+    ContentType: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ChecksumCRC32: str = ...,
+    ChecksumCRC32C: str = ...,
+    ChecksumSHA1: str = ...,
+    ChecksumSHA256: str = ...,
+    Expires: Union[datetime, str] = ...,
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWriteACP: str = ...,
+    Metadata: Mapping[str, str] = ...,
+    ServerSideEncryption: ServerSideEncryptionType = ...,  # (3)
+    StorageClass: StorageClassType = ...,  # (4)
+    WebsiteRedirectLocation: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    SSEKMSKeyId: str = ...,
+    SSEKMSEncryptionContext: str = ...,
+    BucketKeyEnabled: bool = ...,
+    RequestPayer: RequestPayerType = ...,  # (5)
+    Tagging: str = ...,
+    ObjectLockMode: ObjectLockModeType = ...,  # (6)
+    ObjectLockRetainUntilDate: Union[datetime, str] = ...,
+    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatusType = ...,  # (7)
+    ExpectedBucketOwner: str = ...,
+) -> PutObjectOutputTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[PutObjectRequestObjectPutTypeDef](./type_defs.md#putobjectrequestobjectputtypedef).
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+5. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+6. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+7. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+8. See [:material-code-braces: PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutObjectRequestObjectPutTypeDef = {  # (1)
+    "ACL": ...,
+}
 
-Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
+parent.put(**kwargs)
+```
 
-<a id="objectreload-method"></a>
+1. See [:material-code-braces: PutObjectRequestObjectPutTypeDef](./type_defs.md#putobjectrequestobjectputtypedef) 
 
 #### Object.reload method
 
 Calls :py:meth:`S3.Client.head_object` to update the attributes of the Object
 resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.reload)
 
-Boto3 documentation:
-[S3.Object.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="objectrestore\_object-method"></a>
 
-#### Object.restore_object method
+#### Object.restore\_object method
 
 Restores an archived copy of an object back into Amazon S3 This action is not
 supported by Amazon S3 on Outposts.
 
-Type annotations for `boto3.resource("s3").restore_object` method.
+Type annotations and code completion for `#!python boto3.resource("s3").restore_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.restore_object)
 
-Boto3 documentation:
-[S3.Object.restore_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.restore_object)
+```python title="Method definition"
+def restore_object(
+    self,
+    *,
+    VersionId: str = ...,
+    RestoreRequest: RestoreRequestTypeDef = ...,  # (1)
+    RequestPayer: RequestPayerType = ...,  # (2)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (3)
+    ExpectedBucketOwner: str = ...,
+) -> RestoreObjectOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[RestoreObjectRequestObjectRestoreObjectTypeDef](./type_defs.md#restoreobjectrequestobjectrestoreobjecttypedef).
+1. See [:material-code-braces: RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+4. See [:material-code-braces: RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VersionId`: `str`
-- `RestoreRequest`:
-  [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: RestoreObjectRequestObjectRestoreObjectTypeDef = {  # (1)
+    "VersionId": ...,
+}
 
-Returns
-[RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef).
+parent.restore_object(**kwargs)
+```
 
-<a id="objectupload\_file-method"></a>
+1. See [:material-code-braces: RestoreObjectRequestObjectRestoreObjectTypeDef](./type_defs.md#restoreobjectrequestobjectrestoreobjecttypedef) 
 
-#### Object.upload_file method
+#### Object.upload\_file method
 
 Upload a file to an S3 object.
 
-Type annotations for `boto3.resource("s3").upload_file` method.
+Type annotations and code completion for `#!python boto3.resource("s3").upload_file` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.upload_file)
 
-Boto3 documentation:
-[S3.Object.upload_file](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.upload_file)
+```python title="Method definition"
+def upload_file(
+    self,
+    Filename: str,
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ObjectUploadFileRequestTypeDef](./type_defs.md#objectuploadfilerequesttypedef).
 
-Arguments:
 
-- `Filename`: `str` *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: ObjectUploadFileRequestTypeDef = {  # (1)
+    "Filename": ...,
+}
 
-<a id="objectupload\_fileobj-method"></a>
+parent.upload_file(**kwargs)
+```
 
-#### Object.upload_fileobj method
+1. See [:material-code-braces: ObjectUploadFileRequestTypeDef](./type_defs.md#objectuploadfilerequesttypedef) 
+
+#### Object.upload\_fileobj method
 
 Upload a file-like object to this object.
 
-Type annotations for `boto3.resource("s3").upload_fileobj` method.
+Type annotations and code completion for `#!python boto3.resource("s3").upload_fileobj` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.upload_fileobj)
 
-Boto3 documentation:
-[S3.Object.upload_fileobj](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.upload_fileobj)
+```python title="Method definition"
+def upload_fileobj(
+    self,
+    Fileobj: Union[IO[Any], StreamingBody],
+    ExtraArgs: Dict[str, Any] = ...,
+    Callback: Callable[..., Any] = ...,
+    Config: TransferConfig = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ObjectUploadFileobjRequestTypeDef](./type_defs.md#objectuploadfileobjrequesttypedef).
 
-Arguments:
 
-- `Fileobj`: `Union`\[`IO`\[`Any`\], `StreamingBody`\] *(required)*
-- `ExtraArgs`: `Dict`\[`str`, `Any`\]
-- `Callback`: `Callable`\[`...`, `Any`\]
-- `Config`: `TransferConfig`
+```python title="Usage example with kwargs"
+kwargs: ObjectUploadFileobjRequestTypeDef = {  # (1)
+    "Fileobj": ...,
+}
 
-<a id="objectwait\_until\_exists-method"></a>
+parent.upload_fileobj(**kwargs)
+```
 
-#### Object.wait_until_exists method
+1. See [:material-code-braces: ObjectUploadFileobjRequestTypeDef](./type_defs.md#objectuploadfileobjrequesttypedef) 
+
+#### Object.wait\_until\_exists method
 
 Waits until this Object is exists.
 
-Type annotations for `boto3.resource("s3").wait_until_exists` method.
+Type annotations and code completion for `#!python boto3.resource("s3").wait_until_exists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.wait_until_exists)
 
-Boto3 documentation:
-[S3.Object.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.wait_until_exists)
+```python title="Method definition"
+def wait_until_exists(
+    self,
+) -> None:
+    ...
+```
 
-<a id="objectwait\_until\_not\_exists-method"></a>
 
-#### Object.wait_until_not_exists method
+#### Object.wait\_until\_not\_exists method
 
 Waits until this Object is not exists.
 
-Type annotations for `boto3.resource("s3").wait_until_not_exists` method.
+Type annotations and code completion for `#!python boto3.resource("s3").wait_until_not_exists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.wait_until_not_exists)
 
-Boto3 documentation:
-[S3.Object.wait_until_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Object.wait_until_not_exists)
+```python title="Method definition"
+def wait_until_not_exists(
+    self,
+) -> None:
+    ...
+```
 
-<a id="objectacl"></a>
+
+
+
 
 ## ObjectAcl
 
-Type annotations for `boto3.resource("s3").ObjectAcl` class.
+Type annotations and code completion for `#!python boto3.resource("s3").ObjectAcl` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectAcl)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import ObjectAcl
 
 def get_resource() -> ObjectAcl:
     return boto3.resource("s3").ObjectAcl(...)
 ```
 
-Boto3 documentation:
-[S3.ObjectAcl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectAcl)
-
-<a id="objectacl-attributes"></a>
 
 ### ObjectAcl attributes
 
-- `owner`:
-  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
-- `grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
-- `request_charged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
+
+- `owner`: [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
+- `grants`: `List`[[GrantTypeDef](./type_defs.md#granttypedef)]
+- `request_charged`: `Literal['requester']` (see [RequestChargedType](./literals.md#requestchargedtype))
 - `bucket_name`: `str`
 - `object_key`: `str`
 
-<a id="objectacl-methods"></a>
+
+
+
 
 ### ObjectAcl methods
 
-<a id="objectaclobject-method"></a>
 
 #### ObjectAcl.Object method
 
 Creates a Object resource.
 
-Type annotations for `boto3.resource("s3").Object` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.Object)
 
-Boto3 documentation:
-[S3.ObjectAcl.Object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.Object)
+```python title="Method definition"
+def Object(
+    self,
+) -> Object:
+    ...
+```
 
-Returns [Object](#object).
 
-<a id="objectaclget\_available\_subresources-method"></a>
-
-#### ObjectAcl.get_available_subresources method
+#### ObjectAcl.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.get_available_subresources)
 
-Boto3 documentation:
-[S3.ObjectAcl.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="objectaclload-method"></a>
 
 #### ObjectAcl.load method
 
 Calls :py:meth:`S3.Client.get_object_acl` to update the attributes of the
 ObjectAcl resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.load)
 
-Boto3 documentation:
-[S3.ObjectAcl.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="objectaclput-method"></a>
 
 #### ObjectAcl.put method
 
 Uses the `acl` subresource to set the access control list (ACL) permissions for
 a new or existing object in an S3 bucket.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.put)
 
-Boto3 documentation:
-[S3.ObjectAcl.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    ACL: ObjectCannedACLType = ...,  # (1)
+    AccessControlPolicy: AccessControlPolicyTypeDef = ...,  # (2)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (3)
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWrite: str = ...,
+    GrantWriteACP: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (4)
+    VersionId: str = ...,
+    ExpectedBucketOwner: str = ...,
+) -> PutObjectAclOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[PutObjectAclRequestObjectAclPutTypeDef](./type_defs.md#putobjectaclrequestobjectaclputtypedef).
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-braces: AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+4. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+5. See [:material-code-braces: PutObjectAclOutputTypeDef](./type_defs.md#putobjectacloutputtypedef) 
 
-Keyword-only arguments:
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `AccessControlPolicy`:
-  [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `VersionId`: `str`
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutObjectAclRequestObjectAclPutTypeDef = {  # (1)
+    "ACL": ...,
+}
 
-Returns [PutObjectAclOutputTypeDef](./type_defs.md#putobjectacloutputtypedef).
+parent.put(**kwargs)
+```
 
-<a id="objectaclreload-method"></a>
+1. See [:material-code-braces: PutObjectAclRequestObjectAclPutTypeDef](./type_defs.md#putobjectaclrequestobjectaclputtypedef) 
 
 #### ObjectAcl.reload method
 
 Calls :py:meth:`S3.Client.get_object_acl` to update the attributes of the
 ObjectAcl resource.
 
-Type annotations for `boto3.resource("s3").reload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.reload)
 
-Boto3 documentation:
-[S3.ObjectAcl.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectAcl.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="objectsummary"></a>
+
+
+
 
 ## ObjectSummary
 
-Type annotations for `boto3.resource("s3").ObjectSummary` class.
+Type annotations and code completion for `#!python boto3.resource("s3").ObjectSummary` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectSummary)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import ObjectSummary
 
 def get_resource() -> ObjectSummary:
     return boto3.resource("s3").ObjectSummary(...)
 ```
 
-Boto3 documentation:
-[S3.ObjectSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectSummary)
-
-<a id="objectsummary-attributes"></a>
 
 ### ObjectSummary attributes
 
+
 - `last_modified`: `datetime`
 - `e_tag`: `str`
-- `checksum_algorithm`:
-  `List`\[[ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)\]
+- `checksum_algorithm`: `List`[[ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)]
 - `size`: `int`
-- `storage_class`:
-  [ObjectStorageClassType](./literals.md#objectstorageclasstype)
-- `owner`:
-  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
+- `storage_class`: [ObjectStorageClassType](./literals.md#objectstorageclasstype)
+- `owner`: [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
 - `bucket_name`: `str`
 - `key`: `str`
 
-<a id="objectsummary-methods"></a>
+
+
+
 
 ### ObjectSummary methods
 
-<a id="objectsummaryacl-method"></a>
 
 #### ObjectSummary.Acl method
 
 Creates a ObjectAcl resource.
 
-Type annotations for `boto3.resource("s3").Acl` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Acl)
 
-Boto3 documentation:
-[S3.ObjectSummary.Acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Acl)
+```python title="Method definition"
+def Acl(
+    self,
+) -> ObjectAcl:
+    ...
+```
 
-Returns [ObjectAcl](#objectacl).
-
-<a id="objectsummarybucket-method"></a>
 
 #### ObjectSummary.Bucket method
 
 Creates a Bucket resource.
 
-Type annotations for `boto3.resource("s3").Bucket` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Bucket)
 
-Boto3 documentation:
-[S3.ObjectSummary.Bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Bucket)
+```python title="Method definition"
+def Bucket(
+    self,
+) -> Bucket:
+    ...
+```
 
-Returns [Bucket](#bucket).
-
-<a id="objectsummarymultipartupload-method"></a>
 
 #### ObjectSummary.MultipartUpload method
 
 Creates a MultipartUpload resource.
 
-Type annotations for `boto3.resource("s3").MultipartUpload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").MultipartUpload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.MultipartUpload)
 
-Boto3 documentation:
-[S3.ObjectSummary.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.MultipartUpload)
+```python title="Method definition"
+def MultipartUpload(
+    self,
+    id: str,
+) -> MultipartUpload:
+    ...
+```
 
-Arguments mapping described in
-[ObjectSummaryMultipartUploadRequestTypeDef](./type_defs.md#objectsummarymultipartuploadrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ObjectSummaryMultipartUploadRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [MultipartUpload](#multipartupload).
+parent.MultipartUpload(**kwargs)
+```
 
-<a id="objectsummaryobject-method"></a>
+1. See [:material-code-braces: ObjectSummaryMultipartUploadRequestTypeDef](./type_defs.md#objectsummarymultipartuploadrequesttypedef) 
 
 #### ObjectSummary.Object method
 
 Creates a Object resource.
 
-Type annotations for `boto3.resource("s3").Object` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Object)
 
-Boto3 documentation:
-[S3.ObjectSummary.Object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Object)
+```python title="Method definition"
+def Object(
+    self,
+) -> Object:
+    ...
+```
 
-Returns [Object](#object).
-
-<a id="objectsummaryversion-method"></a>
 
 #### ObjectSummary.Version method
 
 Creates a ObjectVersion resource.
 
-Type annotations for `boto3.resource("s3").Version` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Version)
 
-Boto3 documentation:
-[S3.ObjectSummary.Version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.Version)
+```python title="Method definition"
+def Version(
+    self,
+    id: str,
+) -> ObjectVersion:
+    ...
+```
 
-Arguments mapping described in
-[ObjectSummaryVersionRequestTypeDef](./type_defs.md#objectsummaryversionrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ObjectSummaryVersionRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [ObjectVersion](#objectversion).
+parent.Version(**kwargs)
+```
 
-<a id="objectsummarycopy\_from-method"></a>
+1. See [:material-code-braces: ObjectSummaryVersionRequestTypeDef](./type_defs.md#objectsummaryversionrequesttypedef) 
 
-#### ObjectSummary.copy_from method
+#### ObjectSummary.copy\_from method
 
 Creates a copy of an object that is already stored in Amazon S3.
 
-Type annotations for `boto3.resource("s3").copy_from` method.
+Type annotations and code completion for `#!python boto3.resource("s3").copy_from` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.copy_from)
 
-Boto3 documentation:
-[S3.ObjectSummary.copy_from](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.copy_from)
+```python title="Method definition"
+def copy_from(
+    self,
+    *,
+    CopySource: str,
+    ACL: ObjectCannedACLType = ...,  # (1)
+    CacheControl: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ContentDisposition: str = ...,
+    ContentEncoding: str = ...,
+    ContentLanguage: str = ...,
+    ContentType: str = ...,
+    CopySourceIfMatch: str = ...,
+    CopySourceIfModifiedSince: Union[datetime, str] = ...,
+    CopySourceIfNoneMatch: str = ...,
+    CopySourceIfUnmodifiedSince: Union[datetime, str] = ...,
+    Expires: Union[datetime, str] = ...,
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWriteACP: str = ...,
+    Metadata: Mapping[str, str] = ...,
+    MetadataDirective: MetadataDirectiveType = ...,  # (3)
+    TaggingDirective: TaggingDirectiveType = ...,  # (4)
+    ServerSideEncryption: ServerSideEncryptionType = ...,  # (5)
+    StorageClass: StorageClassType = ...,  # (6)
+    WebsiteRedirectLocation: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    SSEKMSKeyId: str = ...,
+    SSEKMSEncryptionContext: str = ...,
+    BucketKeyEnabled: bool = ...,
+    CopySourceSSECustomerAlgorithm: str = ...,
+    CopySourceSSECustomerKey: str = ...,
+    CopySourceSSECustomerKeyMD5: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (7)
+    Tagging: str = ...,
+    ObjectLockMode: ObjectLockModeType = ...,  # (8)
+    ObjectLockRetainUntilDate: Union[datetime, str] = ...,
+    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatusType = ...,  # (9)
+    ExpectedBucketOwner: str = ...,
+    ExpectedSourceBucketOwner: str = ...,
+) -> CopyObjectOutputTypeDef:  # (10)
+    ...
+```
 
-Arguments mapping described in
-[CopyObjectRequestObjectSummaryCopyFromTypeDef](./type_defs.md#copyobjectrequestobjectsummarycopyfromtypedef).
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: MetadataDirectiveType](./literals.md#metadatadirectivetype) 
+4. See [:material-code-brackets: TaggingDirectiveType](./literals.md#taggingdirectivetype) 
+5. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+6. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+7. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+8. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+9. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+10. See [:material-code-braces: CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CopySource`: `str` *(required)*
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `CopySourceIfMatch`: `str`
-- `CopySourceIfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `CopySourceIfNoneMatch`: `str`
-- `CopySourceIfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `MetadataDirective`:
-  [MetadataDirectiveType](./literals.md#metadatadirectivetype)
-- `TaggingDirective`:
-  [TaggingDirectiveType](./literals.md#taggingdirectivetype)
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `CopySourceSSECustomerAlgorithm`: `str`
-- `CopySourceSSECustomerKey`: `str`
-- `CopySourceSSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ExpectedSourceBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: CopyObjectRequestObjectSummaryCopyFromTypeDef = {  # (1)
+    "CopySource": ...,
+}
 
-Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
+parent.copy_from(**kwargs)
+```
 
-<a id="objectsummarydelete-method"></a>
+1. See [:material-code-braces: CopyObjectRequestObjectSummaryCopyFromTypeDef](./type_defs.md#copyobjectrequestobjectsummarycopyfromtypedef) 
 
 #### ObjectSummary.delete method
 
 Removes the null version (if there is one) of an object and inserts a delete
 marker, which becomes the latest version of the object.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.delete)
 
-Boto3 documentation:
-[S3.ObjectSummary.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    MFA: str = ...,
+    VersionId: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (1)
+    BypassGovernanceRetention: bool = ...,
+    ExpectedBucketOwner: str = ...,
+) -> DeleteObjectOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteObjectRequestObjectSummaryDeleteTypeDef](./type_defs.md#deleteobjectrequestobjectsummarydeletetypedef).
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-braces: DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MFA`: `str`
-- `VersionId`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteObjectRequestObjectSummaryDeleteTypeDef = {  # (1)
+    "MFA": ...,
+}
 
-Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
+parent.delete(**kwargs)
+```
 
-<a id="objectsummaryget-method"></a>
+1. See [:material-code-braces: DeleteObjectRequestObjectSummaryDeleteTypeDef](./type_defs.md#deleteobjectrequestobjectsummarydeletetypedef) 
 
 #### ObjectSummary.get method
 
 Retrieves objects from Amazon S3.
 
-Type annotations for `boto3.resource("s3").get` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get)
 
-Boto3 documentation:
-[S3.ObjectSummary.get](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get)
+```python title="Method definition"
+def get(
+    self,
+    *,
+    IfMatch: str = ...,
+    IfModifiedSince: Union[datetime, str] = ...,
+    IfNoneMatch: str = ...,
+    IfUnmodifiedSince: Union[datetime, str] = ...,
+    Range: str = ...,
+    ResponseCacheControl: str = ...,
+    ResponseContentDisposition: str = ...,
+    ResponseContentEncoding: str = ...,
+    ResponseContentLanguage: str = ...,
+    ResponseContentType: str = ...,
+    ResponseExpires: Union[datetime, str] = ...,
+    VersionId: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (1)
+    PartNumber: int = ...,
+    ExpectedBucketOwner: str = ...,
+    ChecksumMode: ChecksumModeType = ...,  # (2)
+) -> GetObjectOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetObjectRequestObjectSummaryGetTypeDef](./type_defs.md#getobjectrequestobjectsummarygettypedef).
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
+3. See [:material-code-braces: GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `ResponseCacheControl`: `str`
-- `ResponseContentDisposition`: `str`
-- `ResponseContentEncoding`: `str`
-- `ResponseContentLanguage`: `str`
-- `ResponseContentType`: `str`
-- `ResponseExpires`: `Union`\[`datetime`, `str`\]
-- `VersionId`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
+```python title="Usage example with kwargs"
+kwargs: GetObjectRequestObjectSummaryGetTypeDef = {  # (1)
+    "IfMatch": ...,
+}
 
-Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
+parent.get(**kwargs)
+```
 
-<a id="objectsummaryget\_available\_subresources-method"></a>
+1. See [:material-code-braces: GetObjectRequestObjectSummaryGetTypeDef](./type_defs.md#getobjectrequestobjectsummarygettypedef) 
 
-#### ObjectSummary.get_available_subresources method
+#### ObjectSummary.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get_available_subresources)
 
-Boto3 documentation:
-[S3.ObjectSummary.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="objectsummaryinitiate\_multipart\_upload-method"></a>
-
-#### ObjectSummary.initiate_multipart_upload method
+#### ObjectSummary.initiate\_multipart\_upload method
 
 This action initiates a multipart upload and returns an upload ID.
 
-Type annotations for `boto3.resource("s3").initiate_multipart_upload` method.
+Type annotations and code completion for `#!python boto3.resource("s3").initiate_multipart_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.initiate_multipart_upload)
 
-Boto3 documentation:
-[S3.ObjectSummary.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.initiate_multipart_upload)
+```python title="Method definition"
+def initiate_multipart_upload(
+    self,
+    *,
+    ACL: ObjectCannedACLType = ...,  # (1)
+    CacheControl: str = ...,
+    ContentDisposition: str = ...,
+    ContentEncoding: str = ...,
+    ContentLanguage: str = ...,
+    ContentType: str = ...,
+    Expires: Union[datetime, str] = ...,
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWriteACP: str = ...,
+    Metadata: Mapping[str, str] = ...,
+    ServerSideEncryption: ServerSideEncryptionType = ...,  # (2)
+    StorageClass: StorageClassType = ...,  # (3)
+    WebsiteRedirectLocation: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    SSEKMSKeyId: str = ...,
+    SSEKMSEncryptionContext: str = ...,
+    BucketKeyEnabled: bool = ...,
+    RequestPayer: RequestPayerType = ...,  # (4)
+    Tagging: str = ...,
+    ObjectLockMode: ObjectLockModeType = ...,  # (5)
+    ObjectLockRetainUntilDate: Union[datetime, str] = ...,
+    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatusType = ...,  # (6)
+    ExpectedBucketOwner: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (7)
+) -> MultipartUpload:
+    ...
+```
 
-Arguments mapping described in
-[CreateMultipartUploadRequestObjectSummaryInitiateMultipartUploadTypeDef](./type_defs.md#createmultipartuploadrequestobjectsummaryinitiatemultipartuploadtypedef).
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+3. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+4. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+5. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+6. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+7. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
 
-Keyword-only arguments:
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentType`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
+```python title="Usage example with kwargs"
+kwargs: CreateMultipartUploadRequestObjectSummaryInitiateMultipartUploadTypeDef = {  # (1)
+    "ACL": ...,
+}
 
-Returns [MultipartUpload](#multipartupload).
+parent.initiate_multipart_upload(**kwargs)
+```
 
-<a id="objectsummaryload-method"></a>
+1. See [:material-code-braces: CreateMultipartUploadRequestObjectSummaryInitiateMultipartUploadTypeDef](./type_defs.md#createmultipartuploadrequestobjectsummaryinitiatemultipartuploadtypedef) 
 
 #### ObjectSummary.load method
 
 Calls s3.Client.head_object to update the attributes of the ObjectSummary
 resource.
 
-Type annotations for `boto3.resource("s3").load` method.
+Type annotations and code completion for `#!python boto3.resource("s3").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.load)
 
-Boto3 documentation:
-[S3.ObjectSummary.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="objectsummaryput-method"></a>
 
 #### ObjectSummary.put method
 
 Adds an object to a bucket.
 
-Type annotations for `boto3.resource("s3").put` method.
+Type annotations and code completion for `#!python boto3.resource("s3").put` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.put)
 
-Boto3 documentation:
-[S3.ObjectSummary.put](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.put)
+```python title="Method definition"
+def put(
+    self,
+    *,
+    ACL: ObjectCannedACLType = ...,  # (1)
+    Body: Union[bytes, IO[bytes], StreamingBody] = ...,
+    CacheControl: str = ...,
+    ContentDisposition: str = ...,
+    ContentEncoding: str = ...,
+    ContentLanguage: str = ...,
+    ContentLength: int = ...,
+    ContentMD5: str = ...,
+    ContentType: str = ...,
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (2)
+    ChecksumCRC32: str = ...,
+    ChecksumCRC32C: str = ...,
+    ChecksumSHA1: str = ...,
+    ChecksumSHA256: str = ...,
+    Expires: Union[datetime, str] = ...,
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWriteACP: str = ...,
+    Metadata: Mapping[str, str] = ...,
+    ServerSideEncryption: ServerSideEncryptionType = ...,  # (3)
+    StorageClass: StorageClassType = ...,  # (4)
+    WebsiteRedirectLocation: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    SSEKMSKeyId: str = ...,
+    SSEKMSEncryptionContext: str = ...,
+    BucketKeyEnabled: bool = ...,
+    RequestPayer: RequestPayerType = ...,  # (5)
+    Tagging: str = ...,
+    ObjectLockMode: ObjectLockModeType = ...,  # (6)
+    ObjectLockRetainUntilDate: Union[datetime, str] = ...,
+    ObjectLockLegalHoldStatus: ObjectLockLegalHoldStatusType = ...,  # (7)
+    ExpectedBucketOwner: str = ...,
+) -> PutObjectOutputTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[PutObjectRequestObjectSummaryPutTypeDef](./type_defs.md#putobjectrequestobjectsummaryputtypedef).
+1. See [:material-code-brackets: ObjectCannedACLType](./literals.md#objectcannedacltype) 
+2. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+3. See [:material-code-brackets: ServerSideEncryptionType](./literals.md#serversideencryptiontype) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+5. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+6. See [:material-code-brackets: ObjectLockModeType](./literals.md#objectlockmodetype) 
+7. See [:material-code-brackets: ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype) 
+8. See [:material-code-braces: PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `CacheControl`: `str`
-- `ContentDisposition`: `str`
-- `ContentEncoding`: `str`
-- `ContentLanguage`: `str`
-- `ContentLength`: `int`
-- `ContentMD5`: `str`
-- `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-- `Expires`: `Union`\[`datetime`, `str`\]
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWriteACP`: `str`
-- `Metadata`: `Mapping`\[`str`, `str`\]
-- `ServerSideEncryption`:
-  [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `WebsiteRedirectLocation`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `SSEKMSKeyId`: `str`
-- `SSEKMSEncryptionContext`: `str`
-- `BucketKeyEnabled`: `bool`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `Tagging`: `str`
-- `ObjectLockMode`: [ObjectLockModeType](./literals.md#objectlockmodetype)
-- `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
-- `ObjectLockLegalHoldStatus`:
-  [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutObjectRequestObjectSummaryPutTypeDef = {  # (1)
+    "ACL": ...,
+}
 
-Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
+parent.put(**kwargs)
+```
 
-<a id="objectsummaryrestore\_object-method"></a>
+1. See [:material-code-braces: PutObjectRequestObjectSummaryPutTypeDef](./type_defs.md#putobjectrequestobjectsummaryputtypedef) 
 
-#### ObjectSummary.restore_object method
+#### ObjectSummary.restore\_object method
 
 Restores an archived copy of an object back into Amazon S3 This action is not
 supported by Amazon S3 on Outposts.
 
-Type annotations for `boto3.resource("s3").restore_object` method.
+Type annotations and code completion for `#!python boto3.resource("s3").restore_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.restore_object)
 
-Boto3 documentation:
-[S3.ObjectSummary.restore_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.restore_object)
+```python title="Method definition"
+def restore_object(
+    self,
+    *,
+    VersionId: str = ...,
+    RestoreRequest: RestoreRequestTypeDef = ...,  # (1)
+    RequestPayer: RequestPayerType = ...,  # (2)
+    ChecksumAlgorithm: ChecksumAlgorithmType = ...,  # (3)
+    ExpectedBucketOwner: str = ...,
+) -> RestoreObjectOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[RestoreObjectRequestObjectSummaryRestoreObjectTypeDef](./type_defs.md#restoreobjectrequestobjectsummaryrestoreobjecttypedef).
+1. See [:material-code-braces: RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef) 
+2. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+3. See [:material-code-brackets: ChecksumAlgorithmType](./literals.md#checksumalgorithmtype) 
+4. See [:material-code-braces: RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VersionId`: `str`
-- `RestoreRequest`:
-  [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: RestoreObjectRequestObjectSummaryRestoreObjectTypeDef = {  # (1)
+    "VersionId": ...,
+}
 
-Returns
-[RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef).
+parent.restore_object(**kwargs)
+```
 
-<a id="objectsummarywait\_until\_exists-method"></a>
+1. See [:material-code-braces: RestoreObjectRequestObjectSummaryRestoreObjectTypeDef](./type_defs.md#restoreobjectrequestobjectsummaryrestoreobjecttypedef) 
 
-#### ObjectSummary.wait_until_exists method
+#### ObjectSummary.wait\_until\_exists method
 
 Waits until this ObjectSummary is exists.
 
-Type annotations for `boto3.resource("s3").wait_until_exists` method.
+Type annotations and code completion for `#!python boto3.resource("s3").wait_until_exists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.wait_until_exists)
 
-Boto3 documentation:
-[S3.ObjectSummary.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.wait_until_exists)
+```python title="Method definition"
+def wait_until_exists(
+    self,
+) -> None:
+    ...
+```
 
-<a id="objectsummarywait\_until\_not\_exists-method"></a>
 
-#### ObjectSummary.wait_until_not_exists method
+#### ObjectSummary.wait\_until\_not\_exists method
 
 Waits until this ObjectSummary is not exists.
 
-Type annotations for `boto3.resource("s3").wait_until_not_exists` method.
+Type annotations and code completion for `#!python boto3.resource("s3").wait_until_not_exists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.wait_until_not_exists)
 
-Boto3 documentation:
-[S3.ObjectSummary.wait_until_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectSummary.wait_until_not_exists)
+```python title="Method definition"
+def wait_until_not_exists(
+    self,
+) -> None:
+    ...
+```
 
-<a id="objectversion"></a>
+
+
+
 
 ## ObjectVersion
 
-Type annotations for `boto3.resource("s3").ObjectVersion` class.
+Type annotations and code completion for `#!python boto3.resource("s3").ObjectVersion` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectVersion)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_s3.service_resource import ObjectVersion
 
 def get_resource() -> ObjectVersion:
     return boto3.resource("s3").ObjectVersion(...)
 ```
 
-Boto3 documentation:
-[S3.ObjectVersion](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource.ObjectVersion)
-
-<a id="objectversion-attributes"></a>
 
 ### ObjectVersion attributes
 
+
 - `e_tag`: `str`
-- `checksum_algorithm`:
-  `List`\[[ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)\]
+- `checksum_algorithm`: `List`[[ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)]
 - `size`: `int`
-- `storage_class`: `Literal['STANDARD']` (see
-  [ObjectVersionStorageClassType](./literals.md#objectversionstorageclasstype))
+- `storage_class`: `Literal['STANDARD']` (see [ObjectVersionStorageClassType](./literals.md#objectversionstorageclasstype))
 - `key`: `str`
 - `version_id`: `str`
 - `is_latest`: `bool`
 - `last_modified`: `datetime`
-- `owner`:
-  [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
+- `owner`: [OwnerResponseMetadataTypeDef](./type_defs.md#ownerresponsemetadatatypedef)
 - `bucket_name`: `str`
 - `object_key`: `str`
 - `id`: `str`
 
-<a id="objectversion-methods"></a>
+
+
+
 
 ### ObjectVersion methods
 
-<a id="objectversionobject-method"></a>
 
 #### ObjectVersion.Object method
 
 Creates a Object resource.
 
-Type annotations for `boto3.resource("s3").Object` method.
+Type annotations and code completion for `#!python boto3.resource("s3").Object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.Object)
 
-Boto3 documentation:
-[S3.ObjectVersion.Object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.Object)
+```python title="Method definition"
+def Object(
+    self,
+) -> Object:
+    ...
+```
 
-Returns [Object](#object).
-
-<a id="objectversiondelete-method"></a>
 
 #### ObjectVersion.delete method
 
 Removes the null version (if there is one) of an object and inserts a delete
 marker, which becomes the latest version of the object.
 
-Type annotations for `boto3.resource("s3").delete` method.
+Type annotations and code completion for `#!python boto3.resource("s3").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.delete)
 
-Boto3 documentation:
-[S3.ObjectVersion.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.delete)
+```python title="Method definition"
+def delete(
+    self,
+    *,
+    MFA: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (1)
+    BypassGovernanceRetention: bool = ...,
+    ExpectedBucketOwner: str = ...,
+) -> DeleteObjectOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteObjectRequestObjectVersionDeleteTypeDef](./type_defs.md#deleteobjectrequestobjectversiondeletetypedef).
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-braces: DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MFA`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `BypassGovernanceRetention`: `bool`
-- `ExpectedBucketOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteObjectRequestObjectVersionDeleteTypeDef = {  # (1)
+    "MFA": ...,
+}
 
-Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
+parent.delete(**kwargs)
+```
 
-<a id="objectversionget-method"></a>
+1. See [:material-code-braces: DeleteObjectRequestObjectVersionDeleteTypeDef](./type_defs.md#deleteobjectrequestobjectversiondeletetypedef) 
 
 #### ObjectVersion.get method
 
 Retrieves objects from Amazon S3.
 
-Type annotations for `boto3.resource("s3").get` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get)
 
-Boto3 documentation:
-[S3.ObjectVersion.get](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get)
+```python title="Method definition"
+def get(
+    self,
+    *,
+    IfMatch: str = ...,
+    IfModifiedSince: Union[datetime, str] = ...,
+    IfNoneMatch: str = ...,
+    IfUnmodifiedSince: Union[datetime, str] = ...,
+    Range: str = ...,
+    ResponseCacheControl: str = ...,
+    ResponseContentDisposition: str = ...,
+    ResponseContentEncoding: str = ...,
+    ResponseContentLanguage: str = ...,
+    ResponseContentType: str = ...,
+    ResponseExpires: Union[datetime, str] = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (1)
+    PartNumber: int = ...,
+    ExpectedBucketOwner: str = ...,
+    ChecksumMode: ChecksumModeType = ...,  # (2)
+) -> GetObjectOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetObjectRequestObjectVersionGetTypeDef](./type_defs.md#getobjectrequestobjectversiongettypedef).
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
+3. See [:material-code-braces: GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `ResponseCacheControl`: `str`
-- `ResponseContentDisposition`: `str`
-- `ResponseContentEncoding`: `str`
-- `ResponseContentLanguage`: `str`
-- `ResponseContentType`: `str`
-- `ResponseExpires`: `Union`\[`datetime`, `str`\]
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
+```python title="Usage example with kwargs"
+kwargs: GetObjectRequestObjectVersionGetTypeDef = {  # (1)
+    "IfMatch": ...,
+}
 
-Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
+parent.get(**kwargs)
+```
 
-<a id="objectversionget\_available\_subresources-method"></a>
+1. See [:material-code-braces: GetObjectRequestObjectVersionGetTypeDef](./type_defs.md#getobjectrequestobjectversiongettypedef) 
 
-#### ObjectVersion.get_available_subresources method
+#### ObjectVersion.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("s3").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("s3").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get_available_subresources)
 
-Boto3 documentation:
-[S3.ObjectVersion.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="objectversionhead-method"></a>
 
 #### ObjectVersion.head method
 
 The HEAD action retrieves metadata from an object without returning the object
 itself.
 
-Type annotations for `boto3.resource("s3").head` method.
+Type annotations and code completion for `#!python boto3.resource("s3").head` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.head)
 
-Boto3 documentation:
-[S3.ObjectVersion.head](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ObjectVersion.head)
+```python title="Method definition"
+def head(
+    self,
+    *,
+    IfMatch: str = ...,
+    IfModifiedSince: Union[datetime, str] = ...,
+    IfNoneMatch: str = ...,
+    IfUnmodifiedSince: Union[datetime, str] = ...,
+    Range: str = ...,
+    SSECustomerAlgorithm: str = ...,
+    SSECustomerKey: str = ...,
+    SSECustomerKeyMD5: str = ...,
+    RequestPayer: RequestPayerType = ...,  # (1)
+    PartNumber: int = ...,
+    ExpectedBucketOwner: str = ...,
+    ChecksumMode: ChecksumModeType = ...,  # (2)
+) -> HeadObjectOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[HeadObjectRequestObjectVersionHeadTypeDef](./type_defs.md#headobjectrequestobjectversionheadtypedef).
+1. See [:material-code-brackets: RequestPayerType](./literals.md#requestpayertype) 
+2. See [:material-code-brackets: ChecksumModeType](./literals.md#checksummodetype) 
+3. See [:material-code-braces: HeadObjectOutputTypeDef](./type_defs.md#headobjectoutputtypedef) 
 
-Keyword-only arguments:
 
-- `IfMatch`: `str`
-- `IfModifiedSince`: `Union`\[`datetime`, `str`\]
-- `IfNoneMatch`: `str`
-- `IfUnmodifiedSince`: `Union`\[`datetime`, `str`\]
-- `Range`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `PartNumber`: `int`
-- `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
+```python title="Usage example with kwargs"
+kwargs: HeadObjectRequestObjectVersionHeadTypeDef = {  # (1)
+    "IfMatch": ...,
+}
 
-Returns [HeadObjectOutputTypeDef](./type_defs.md#headobjectoutputtypedef).
+parent.head(**kwargs)
+```
+
+1. See [:material-code-braces: HeadObjectRequestObjectVersionHeadTypeDef](./type_defs.md#headobjectrequestobjectversionheadtypedef) 
+
+
+

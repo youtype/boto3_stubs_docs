@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-amplifybackend-module"></a>
-
-# Type annotations for boto3 AmplifyBackend module
+#  AmplifyBackend module
 
 > [Index](../README.md) > AmplifyBackend
 
-Auto-generated documentation for
-[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
-type annotations stubs module
-[mypy-boto3-amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
+!!! note ""
 
-- [Type annotations for boto3 AmplifyBackend module](#type-annotations-for-boto3-amplifybackend-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AmplifyBackendClient](#amplifybackendclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
+    type annotations stubs module [mypy-boto3-amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AmplifyBackend`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[amplifybackend]'
 python -m pip install mypy-boto3-amplifybackend
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,102 +42,58 @@ python -m pip install mypy-boto3-amplifybackend
 python -m pip uninstall -y mypy-boto3-amplifybackend
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="amplifybackendclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AmplifyBackendClient
 
-Type annotations for `boto3.client("amplifybackend")` as
-[AmplifyBackendClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("amplifybackend")` as [AmplifyBackendClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_amplifybackend.client import AmplifyBackendClient
+
+def get_client() -> AmplifyBackendClient:
+    return Session().cleint("amplifybackend")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [clone_backend](./client.md#clone_backend)
-- [create_backend](./client.md#create_backend)
-- [create_backend_api](./client.md#create_backend_api)
-- [create_backend_auth](./client.md#create_backend_auth)
-- [create_backend_config](./client.md#create_backend_config)
-- [create_backend_storage](./client.md#create_backend_storage)
-- [create_token](./client.md#create_token)
-- [delete_backend](./client.md#delete_backend)
-- [delete_backend_api](./client.md#delete_backend_api)
-- [delete_backend_auth](./client.md#delete_backend_auth)
-- [delete_backend_storage](./client.md#delete_backend_storage)
-- [delete_token](./client.md#delete_token)
-- [exceptions](./client.md#exceptions)
-- [generate_backend_api_models](./client.md#generate_backend_api_models)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_backend](./client.md#get_backend)
-- [get_backend_api](./client.md#get_backend_api)
-- [get_backend_api_models](./client.md#get_backend_api_models)
-- [get_backend_auth](./client.md#get_backend_auth)
-- [get_backend_job](./client.md#get_backend_job)
-- [get_backend_storage](./client.md#get_backend_storage)
-- [get_paginator](./client.md#get_paginator)
-- [get_token](./client.md#get_token)
-- [import_backend_auth](./client.md#import_backend_auth)
-- [import_backend_storage](./client.md#import_backend_storage)
-- [list_backend_jobs](./client.md#list_backend_jobs)
-- [list_s3_buckets](./client.md#list_s3_buckets)
-- [remove_all_backends](./client.md#remove_all_backends)
-- [remove_backend_config](./client.md#remove_backend_config)
-- [update_backend_api](./client.md#update_backend_api)
-- [update_backend_auth](./client.md#update_backend_auth)
-- [update_backend_config](./client.md#update_backend_config)
-- [update_backend_job](./client.md#update_backend_job)
-- [update_backend_storage](./client.md#update_backend_storage)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-AmplifyBackendClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- GatewayTimeoutException
-- NotFoundException
-- TooManyRequestsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("amplifybackend").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("amplifybackend").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_amplifybackend.paginator import ListBackendJobsPaginator, ...
+from mypy_boto3_amplifybackend.paginator import ListBackendJobsPaginator
+
+def get_list_backend_jobs_paginator() -> ListBackendJobsPaginator:
+    return Session().client("amplifybackend").get_paginator("list_backend_jobs"))
 ```
 
 - [ListBackendJobsPaginator](./paginators.md#listbackendjobspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElementType
 
-```python
-from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElementType, ...
+def get_value() -> AdditionalConstraintsElementType:
+    return "REQUIRE_DIGIT"
 ```
 
 - [AdditionalConstraintsElementType](./literals.md#additionalconstraintselementtype)
@@ -183,18 +117,22 @@ from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElementType,
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_amplifybackend.type_defs import BackendAPIAppSyncAuthSettingsTypeDef
 
-```python
-from mypy_boto3_amplifybackend.type_defs import BackendAPIAppSyncAuthSettingsTypeDef, ...
+def get_value() -> BackendAPIAppSyncAuthSettingsTypeDef:
+    return {
+        "CognitoUserPoolId": ...,
+    }
 ```
 
 - [BackendAPIAppSyncAuthSettingsTypeDef](./type_defs.md#backendapiappsyncauthsettingstypedef)
@@ -260,6 +198,7 @@ from mypy_boto3_amplifybackend.type_defs import BackendAPIAppSyncAuthSettingsTyp
 - [ImportBackendAuthResponseTypeDef](./type_defs.md#importbackendauthresponsetypedef)
 - [ImportBackendStorageRequestRequestTypeDef](./type_defs.md#importbackendstoragerequestrequesttypedef)
 - [ImportBackendStorageResponseTypeDef](./type_defs.md#importbackendstorageresponsetypedef)
+- [ListBackendJobsRequestListBackendJobsPaginateTypeDef](./type_defs.md#listbackendjobsrequestlistbackendjobspaginatetypedef)
 - [ListBackendJobsRequestRequestTypeDef](./type_defs.md#listbackendjobsrequestrequesttypedef)
 - [ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef)
 - [ListS3BucketsRequestRequestTypeDef](./type_defs.md#lists3bucketsrequestrequesttypedef)
@@ -294,3 +233,4 @@ from mypy_boto3_amplifybackend.type_defs import BackendAPIAppSyncAuthSettingsTyp
 - [UpdateBackendStorageRequestRequestTypeDef](./type_defs.md#updatebackendstoragerequestrequesttypedef)
 - [UpdateBackendStorageResourceConfigTypeDef](./type_defs.md#updatebackendstorageresourceconfigtypedef)
 - [UpdateBackendStorageResponseTypeDef](./type_defs.md#updatebackendstorageresponsetypedef)
+

@@ -1,52 +1,18 @@
-<a id="kinesisanalyticsclient-for-boto3-kinesisanalytics-module"></a>
+# KinesisAnalyticsClient
 
-# KinesisAnalyticsClient for boto3 KinesisAnalytics module
+> [Index](../README.md) > [KinesisAnalytics](./README.md) > KinesisAnalyticsClient
 
-> [Index](../README.md) > [KinesisAnalytics](./README.md) >
-> KinesisAnalyticsClient
+!!! note ""
 
-Auto-generated documentation for
-[KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
-type annotations stubs module
-[mypy-boto3-kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
-
-- [KinesisAnalyticsClient for boto3 KinesisAnalytics module](#kinesisanalyticsclient-for-boto3-kinesisanalytics-module)
-  - [KinesisAnalyticsClient](#kinesisanalyticsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_application_cloud_watch_logging_option](#add_application_cloud_watch_logging_option)
-    - [add_application_input](#add_application_input)
-    - [add_application_input_processing_configuration](#add_application_input_processing_configuration)
-    - [add_application_output](#add_application_output)
-    - [add_application_reference_data_source](#add_application_reference_data_source)
-    - [can_paginate](#can_paginate)
-    - [create_application](#create_application)
-    - [delete_application](#delete_application)
-    - [delete_application_cloud_watch_logging_option](#delete_application_cloud_watch_logging_option)
-    - [delete_application_input_processing_configuration](#delete_application_input_processing_configuration)
-    - [delete_application_output](#delete_application_output)
-    - [delete_application_reference_data_source](#delete_application_reference_data_source)
-    - [describe_application](#describe_application)
-    - [discover_input_schema](#discover_input_schema)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_applications](#list_applications)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [start_application](#start_application)
-    - [stop_application](#stop_application)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_application](#update_application)
-
-<a id="kinesisanalyticsclient"></a>
+    Auto-generated documentation for [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
+    type annotations stubs module [mypy-boto3-kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
 ## KinesisAnalyticsClient
 
-Type annotations for `boto3.client("kinesisanalytics")`
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_kinesisanalytics.client import KinesisAnalyticsClient
 
@@ -54,569 +20,722 @@ def get_kinesisanalytics_client() -> KinesisAnalyticsClient:
     return Session().client("kinesisanalytics")
 ```
 
-Boto3 documentation:
-[KinesisAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("kinesisanalytics").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("kinesisanalytics")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.CodeValidationException,
+    client.ConcurrentModificationException,
+    client.InvalidApplicationConfigurationException,
+    client.InvalidArgumentException,
+    client.LimitExceededException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ResourceProvisionedThroughputExceededException,
+    client.ServiceUnavailableException,
+    client.TooManyTagsException,
+    client.UnableToDetectSchemaException,
+    client.UnsupportedOperationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_kinesisanalytics.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.CodeValidationException`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.InvalidApplicationConfigurationException`
-- `Exceptions.InvalidArgumentException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceProvisionedThroughputExceededException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.UnableToDetectSchemaException`
-- `Exceptions.UnsupportedOperationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-KinesisAnalyticsClient exceptions.
-
-Type annotations for `boto3.client("kinesisanalytics").exceptions` method.
-
-Boto3 documentation:
-[KinesisAnalytics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_application\_cloud\_watch\_logging\_option"></a>
-
-### add_application_cloud_watch_logging_option
+### add\_application\_cloud\_watch\_logging\_option
 
 .
 
-Type annotations for
-`boto3.client("kinesisanalytics").add_application_cloud_watch_logging_option`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").add_application_cloud_watch_logging_option` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_cloud_watch_logging_option)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.add_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_cloud_watch_logging_option)
+```python title="Method definition"
+def add_application_cloud_watch_logging_option(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    CloudWatchLoggingOption: CloudWatchLoggingOptionTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionrequestrequesttypedef).
+1. See [:material-code-braces: CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `CloudWatchLoggingOption`:
-  [CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "CloudWatchLoggingOption": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_application_cloud_watch_logging_option(**kwargs)
+```
 
-<a id="add\_application\_input"></a>
+1. See [:material-code-braces: AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionrequestrequesttypedef) 
 
-### add_application_input
-
-.
-
-Type annotations for `boto3.client("kinesisanalytics").add_application_input`
-method.
-
-Boto3 documentation:
-[KinesisAnalytics.Client.add_application_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input)
-
-Arguments mapping described in
-[AddApplicationInputRequestRequestTypeDef](./type_defs.md#addapplicationinputrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="add\_application\_input\_processing\_configuration"></a>
-
-### add_application_input_processing_configuration
+### add\_application\_input
 
 .
 
-Type annotations for
-`boto3.client("kinesisanalytics").add_application_input_processing_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").add_application_input` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.add_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input_processing_configuration)
+```python title="Method definition"
+def add_application_input(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    Input: InputTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddApplicationInputProcessingConfigurationRequestRequestTypeDef](./type_defs.md#addapplicationinputprocessingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: InputTypeDef](./type_defs.md#inputtypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `InputId`: `str` *(required)*
-- `InputProcessingConfiguration`:
-  [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddApplicationInputRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "Input": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_application_input(**kwargs)
+```
 
-<a id="add\_application\_output"></a>
+1. See [:material-code-braces: AddApplicationInputRequestRequestTypeDef](./type_defs.md#addapplicationinputrequestrequesttypedef) 
 
-### add_application_output
-
-.
-
-Type annotations for `boto3.client("kinesisanalytics").add_application_output`
-method.
-
-Boto3 documentation:
-[KinesisAnalytics.Client.add_application_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_output)
-
-Arguments mapping described in
-[AddApplicationOutputRequestRequestTypeDef](./type_defs.md#addapplicationoutputrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `Output`: [OutputTypeDef](./type_defs.md#outputtypedef) *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="add\_application\_reference\_data\_source"></a>
-
-### add_application_reference_data_source
+### add\_application\_input\_processing\_configuration
 
 .
 
-Type annotations for
-`boto3.client("kinesisanalytics").add_application_reference_data_source`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").add_application_input_processing_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_input_processing_configuration)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.add_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_reference_data_source)
+```python title="Method definition"
+def add_application_input_processing_configuration(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    InputId: str,
+    InputProcessingConfiguration: InputProcessingConfigurationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddApplicationReferenceDataSourceRequestRequestTypeDef](./type_defs.md#addapplicationreferencedatasourcerequestrequesttypedef).
+1. See [:material-code-braces: InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `ReferenceDataSource`:
-  [ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddApplicationInputProcessingConfigurationRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "InputId": ...,
+    "InputProcessingConfiguration": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_application_input_processing_configuration(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddApplicationInputProcessingConfigurationRequestRequestTypeDef](./type_defs.md#addapplicationinputprocessingconfigurationrequestrequesttypedef) 
 
-### can_paginate
+### add\_application\_output
+
+.
+
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").add_application_output` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_output)
+
+```python title="Method definition"
+def add_application_output(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    Output: OutputTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AddApplicationOutputRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "Output": ...,
+}
+
+parent.add_application_output(**kwargs)
+```
+
+1. See [:material-code-braces: AddApplicationOutputRequestRequestTypeDef](./type_defs.md#addapplicationoutputrequestrequesttypedef) 
+
+### add\_application\_reference\_data\_source
+
+.
+
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").add_application_reference_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.add_application_reference_data_source)
+
+```python title="Method definition"
+def add_application_reference_data_source(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    ReferenceDataSource: ReferenceDataSourceTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-braces: ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AddApplicationReferenceDataSourceRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "ReferenceDataSource": ...,
+}
+
+parent.add_application_reference_data_source(**kwargs)
+```
+
+1. See [:material-code-braces: AddApplicationReferenceDataSourceRequestRequestTypeDef](./type_defs.md#addapplicationreferencedatasourcerequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("kinesisanalytics").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.can_paginate)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_application"></a>
-
-### create_application
-
-.
-
-Type annotations for `boto3.client("kinesisanalytics").create_application`
-method.
-
-Boto3 documentation:
-[KinesisAnalytics.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.create_application)
-
-Arguments mapping described in
-[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ApplicationName`: `str` *(required)*
-- `ApplicationDescription`: `str`
-- `Inputs`: `Sequence`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
-- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `CloudWatchLoggingOptions`:
-  `Sequence`\[[CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)\]
-- `ApplicationCode`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-Returns
-[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
-
-<a id="delete\_application"></a>
-
-### delete_application
+### create\_application
 
 .
 
-Type annotations for `boto3.client("kinesisanalytics").delete_application`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").create_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.create_application)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application)
+```python title="Method definition"
+def create_application(
+    self,
+    *,
+    ApplicationName: str,
+    ApplicationDescription: str = ...,
+    Inputs: Sequence[InputTypeDef] = ...,  # (1)
+    Outputs: Sequence[OutputTypeDef] = ...,  # (2)
+    CloudWatchLoggingOptions: Sequence[CloudWatchLoggingOptionTypeDef] = ...,  # (3)
+    ApplicationCode: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateApplicationResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef).
+1. See [:material-code-braces: InputTypeDef](./type_defs.md#inputtypedef) 
+2. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+3. See [:material-code-braces: CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `CreateTimestamp`: `Union`\[`datetime`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_application(**kwargs)
+```
 
-<a id="delete\_application\_cloud\_watch\_logging\_option"></a>
+1. See [:material-code-braces: CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef) 
 
-### delete_application_cloud_watch_logging_option
-
-.
-
-Type annotations for
-`boto3.client("kinesisanalytics").delete_application_cloud_watch_logging_option`
-method.
-
-Boto3 documentation:
-[KinesisAnalytics.Client.delete_application_cloud_watch_logging_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_cloud_watch_logging_option)
-
-Arguments mapping described in
-[DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef](./type_defs.md#deleteapplicationcloudwatchloggingoptionrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `CloudWatchLoggingOptionId`: `str` *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="delete\_application\_input\_processing\_configuration"></a>
-
-### delete_application_input_processing_configuration
+### delete\_application
 
 .
 
-Type annotations for
-`boto3.client("kinesisanalytics").delete_application_input_processing_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").delete_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.delete_application_input_processing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_input_processing_configuration)
+```python title="Method definition"
+def delete_application(
+    self,
+    *,
+    ApplicationName: str,
+    CreateTimestamp: Union[datetime, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef](./type_defs.md#deleteapplicationinputprocessingconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `InputId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CreateTimestamp": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_application(**kwargs)
+```
 
-<a id="delete\_application\_output"></a>
+1. See [:material-code-braces: DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef) 
 
-### delete_application_output
-
-.
-
-Type annotations for
-`boto3.client("kinesisanalytics").delete_application_output` method.
-
-Boto3 documentation:
-[KinesisAnalytics.Client.delete_application_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_output)
-
-Arguments mapping described in
-[DeleteApplicationOutputRequestRequestTypeDef](./type_defs.md#deleteapplicationoutputrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `OutputId`: `str` *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="delete\_application\_reference\_data\_source"></a>
-
-### delete_application_reference_data_source
+### delete\_application\_cloud\_watch\_logging\_option
 
 .
 
-Type annotations for
-`boto3.client("kinesisanalytics").delete_application_reference_data_source`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").delete_application_cloud_watch_logging_option` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_cloud_watch_logging_option)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.delete_application_reference_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_reference_data_source)
+```python title="Method definition"
+def delete_application_cloud_watch_logging_option(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    CloudWatchLoggingOptionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationReferenceDataSourceRequestRequestTypeDef](./type_defs.md#deleteapplicationreferencedatasourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `ReferenceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "CloudWatchLoggingOptionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_application_cloud_watch_logging_option(**kwargs)
+```
 
-<a id="describe\_application"></a>
+1. See [:material-code-braces: DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef](./type_defs.md#deleteapplicationcloudwatchloggingoptionrequestrequesttypedef) 
 
-### describe_application
-
-.
-
-Type annotations for `boto3.client("kinesisanalytics").describe_application`
-method.
-
-Boto3 documentation:
-[KinesisAnalytics.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.describe_application)
-
-Arguments mapping described in
-[DescribeApplicationRequestRequestTypeDef](./type_defs.md#describeapplicationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ApplicationName`: `str` *(required)*
-
-Returns
-[DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
-
-<a id="discover\_input\_schema"></a>
-
-### discover_input_schema
+### delete\_application\_input\_processing\_configuration
 
 .
 
-Type annotations for `boto3.client("kinesisanalytics").discover_input_schema`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").delete_application_input_processing_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_input_processing_configuration)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.discover_input_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.discover_input_schema)
+```python title="Method definition"
+def delete_application_input_processing_configuration(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    InputId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DiscoverInputSchemaRequestRequestTypeDef](./type_defs.md#discoverinputschemarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str`
-- `RoleARN`: `str`
-- `InputStartingPositionConfiguration`:
-  [InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef)
-- `S3Configuration`:
-  [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
-- `InputProcessingConfiguration`:
-  [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "InputId": ...,
+}
 
-Returns
-[DiscoverInputSchemaResponseTypeDef](./type_defs.md#discoverinputschemaresponsetypedef).
+parent.delete_application_input_processing_configuration(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef](./type_defs.md#deleteapplicationinputprocessingconfigurationrequestrequesttypedef) 
 
-### generate_presigned_url
+### delete\_application\_output
+
+.
+
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").delete_application_output` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_output)
+
+```python title="Method definition"
+def delete_application_output(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    OutputId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationOutputRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "OutputId": ...,
+}
+
+parent.delete_application_output(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteApplicationOutputRequestRequestTypeDef](./type_defs.md#deleteapplicationoutputrequestrequesttypedef) 
+
+### delete\_application\_reference\_data\_source
+
+.
+
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").delete_application_reference_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.delete_application_reference_data_source)
+
+```python title="Method definition"
+def delete_application_reference_data_source(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    ReferenceId: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationReferenceDataSourceRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "ReferenceId": ...,
+}
+
+parent.delete_application_reference_data_source(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteApplicationReferenceDataSourceRequestRequestTypeDef](./type_defs.md#deleteapplicationreferencedatasourcerequestrequesttypedef) 
+
+### describe\_application
+
+.
+
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").describe_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.describe_application)
+
+```python title="Method definition"
+def describe_application(
+    self,
+    *,
+    ApplicationName: str,
+) -> DescribeApplicationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
+
+parent.describe_application(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeApplicationRequestRequestTypeDef](./type_defs.md#describeapplicationrequestrequesttypedef) 
+
+### discover\_input\_schema
+
+.
+
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").discover_input_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.discover_input_schema)
+
+```python title="Method definition"
+def discover_input_schema(
+    self,
+    *,
+    ResourceARN: str = ...,
+    RoleARN: str = ...,
+    InputStartingPositionConfiguration: InputStartingPositionConfigurationTypeDef = ...,  # (1)
+    S3Configuration: S3ConfigurationTypeDef = ...,  # (2)
+    InputProcessingConfiguration: InputProcessingConfigurationTypeDef = ...,  # (3)
+) -> DiscoverInputSchemaResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef) 
+2. See [:material-code-braces: S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef) 
+3. See [:material-code-braces: InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef) 
+4. See [:material-code-braces: DiscoverInputSchemaResponseTypeDef](./type_defs.md#discoverinputschemaresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DiscoverInputSchemaRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
+
+parent.discover_input_schema(**kwargs)
+```
+
+1. See [:material-code-braces: DiscoverInputSchemaRequestRequestTypeDef](./type_defs.md#discoverinputschemarequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("kinesisanalytics").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.generate_presigned_url)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_applications"></a>
-
-### list_applications
+### list\_applications
 
 .
 
-Type annotations for `boto3.client("kinesisanalytics").list_applications`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").list_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_applications)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_applications)
+```python title="Method definition"
+def list_applications(
+    self,
+    *,
+    Limit: int = ...,
+    ExclusiveStartApplicationName: str = ...,
+) -> ListApplicationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef).
+1. See [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Limit`: `int`
-- `ExclusiveStartApplicationName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListApplicationsRequestRequestTypeDef = {  # (1)
+    "Limit": ...,
+}
 
-Returns
-[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
+parent.list_applications(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves the list of key-value tags assigned to the application.
 
-Type annotations for `boto3.client("kinesisanalytics").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="start\_application"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### start_application
-
-.
-
-Type annotations for `boto3.client("kinesisanalytics").start_application`
-method.
-
-Boto3 documentation:
-[KinesisAnalytics.Client.start_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.start_application)
-
-Arguments mapping described in
-[StartApplicationRequestRequestTypeDef](./type_defs.md#startapplicationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ApplicationName`: `str` *(required)*
-- `InputConfigurations`:
-  `Sequence`\[[InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef)\]
-  *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="stop\_application"></a>
-
-### stop_application
+### start\_application
 
 .
 
-Type annotations for `boto3.client("kinesisanalytics").stop_application`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").start_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.start_application)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.stop_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.stop_application)
+```python title="Method definition"
+def start_application(
+    self,
+    *,
+    ApplicationName: str,
+    InputConfigurations: Sequence[InputConfigurationTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopApplicationRequestRequestTypeDef](./type_defs.md#stopapplicationrequestrequesttypedef).
+1. See [:material-code-braces: InputConfigurationTypeDef](./type_defs.md#inputconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "InputConfigurations": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_application(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartApplicationRequestRequestTypeDef](./type_defs.md#startapplicationrequestrequesttypedef) 
 
-### tag_resource
+### stop\_application
+
+.
+
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").stop_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.stop_application)
+
+```python title="Method definition"
+def stop_application(
+    self,
+    *,
+    ApplicationName: str,
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: StopApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
+
+parent.stop_application(**kwargs)
+```
+
+1. See [:material-code-braces: StopApplicationRequestRequestTypeDef](./type_defs.md#stopapplicationrequestrequesttypedef) 
+
+### tag\_resource
 
 Adds one or more key-value tags to a Kinesis Analytics application.
 
-Type annotations for `boto3.client("kinesisanalytics").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.tag_resource)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from a Kinesis Analytics application.
 
-Type annotations for `boto3.client("kinesisanalytics").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.untag_resource)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_application"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_application
+### update\_application
 
 .
 
-Type annotations for `boto3.client("kinesisanalytics").update_application`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesisanalytics").update_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.update_application)
 
-Boto3 documentation:
-[KinesisAnalytics.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics.Client.update_application)
+```python title="Method definition"
+def update_application(
+    self,
+    *,
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    ApplicationUpdate: ApplicationUpdateTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationUpdateTypeDef](./type_defs.md#applicationupdatetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `CurrentApplicationVersionId`: `int` *(required)*
-- `ApplicationUpdate`:
-  [ApplicationUpdateTypeDef](./type_defs.md#applicationupdatetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "CurrentApplicationVersionId": ...,
+    "ApplicationUpdate": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_application(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef) 
+
+
+
+

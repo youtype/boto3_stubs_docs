@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-greengrass-module"></a>
-
-# Type annotations for boto3 Greengrass module
+#  Greengrass module
 
 > [Index](../README.md) > Greengrass
 
-Auto-generated documentation for
-[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
-type annotations stubs module
-[mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+!!! note ""
 
-- [Type annotations for boto3 Greengrass module](#type-annotations-for-boto3-greengrass-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GreengrassClient](#greengrassclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
+    type annotations stubs module [mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Greengrass`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[greengrass]'
 python -m pip install mypy-boto3-greengrass
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,147 +42,37 @@ python -m pip install mypy-boto3-greengrass
 python -m pip uninstall -y mypy-boto3-greengrass
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="greengrassclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GreengrassClient
 
-Type annotations for `boto3.client("greengrass")` as
-[GreengrassClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("greengrass")` as [GreengrassClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_greengrass.client import GreengrassClient
+
+def get_client() -> GreengrassClient:
+    return Session().cleint("greengrass")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_role_to_group](./client.md#associate_role_to_group)
-- [associate_service_role_to_account](./client.md#associate_service_role_to_account)
-- [can_paginate](./client.md#can_paginate)
-- [create_connector_definition](./client.md#create_connector_definition)
-- [create_connector_definition_version](./client.md#create_connector_definition_version)
-- [create_core_definition](./client.md#create_core_definition)
-- [create_core_definition_version](./client.md#create_core_definition_version)
-- [create_deployment](./client.md#create_deployment)
-- [create_device_definition](./client.md#create_device_definition)
-- [create_device_definition_version](./client.md#create_device_definition_version)
-- [create_function_definition](./client.md#create_function_definition)
-- [create_function_definition_version](./client.md#create_function_definition_version)
-- [create_group](./client.md#create_group)
-- [create_group_certificate_authority](./client.md#create_group_certificate_authority)
-- [create_group_version](./client.md#create_group_version)
-- [create_logger_definition](./client.md#create_logger_definition)
-- [create_logger_definition_version](./client.md#create_logger_definition_version)
-- [create_resource_definition](./client.md#create_resource_definition)
-- [create_resource_definition_version](./client.md#create_resource_definition_version)
-- [create_software_update_job](./client.md#create_software_update_job)
-- [create_subscription_definition](./client.md#create_subscription_definition)
-- [create_subscription_definition_version](./client.md#create_subscription_definition_version)
-- [delete_connector_definition](./client.md#delete_connector_definition)
-- [delete_core_definition](./client.md#delete_core_definition)
-- [delete_device_definition](./client.md#delete_device_definition)
-- [delete_function_definition](./client.md#delete_function_definition)
-- [delete_group](./client.md#delete_group)
-- [delete_logger_definition](./client.md#delete_logger_definition)
-- [delete_resource_definition](./client.md#delete_resource_definition)
-- [delete_subscription_definition](./client.md#delete_subscription_definition)
-- [disassociate_role_from_group](./client.md#disassociate_role_from_group)
-- [disassociate_service_role_from_account](./client.md#disassociate_service_role_from_account)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_associated_role](./client.md#get_associated_role)
-- [get_bulk_deployment_status](./client.md#get_bulk_deployment_status)
-- [get_connectivity_info](./client.md#get_connectivity_info)
-- [get_connector_definition](./client.md#get_connector_definition)
-- [get_connector_definition_version](./client.md#get_connector_definition_version)
-- [get_core_definition](./client.md#get_core_definition)
-- [get_core_definition_version](./client.md#get_core_definition_version)
-- [get_deployment_status](./client.md#get_deployment_status)
-- [get_device_definition](./client.md#get_device_definition)
-- [get_device_definition_version](./client.md#get_device_definition_version)
-- [get_function_definition](./client.md#get_function_definition)
-- [get_function_definition_version](./client.md#get_function_definition_version)
-- [get_group](./client.md#get_group)
-- [get_group_certificate_authority](./client.md#get_group_certificate_authority)
-- [get_group_certificate_configuration](./client.md#get_group_certificate_configuration)
-- [get_group_version](./client.md#get_group_version)
-- [get_logger_definition](./client.md#get_logger_definition)
-- [get_logger_definition_version](./client.md#get_logger_definition_version)
-- [get_paginator](./client.md#get_paginator)
-- [get_resource_definition](./client.md#get_resource_definition)
-- [get_resource_definition_version](./client.md#get_resource_definition_version)
-- [get_service_role_for_account](./client.md#get_service_role_for_account)
-- [get_subscription_definition](./client.md#get_subscription_definition)
-- [get_subscription_definition_version](./client.md#get_subscription_definition_version)
-- [get_thing_runtime_configuration](./client.md#get_thing_runtime_configuration)
-- [list_bulk_deployment_detailed_reports](./client.md#list_bulk_deployment_detailed_reports)
-- [list_bulk_deployments](./client.md#list_bulk_deployments)
-- [list_connector_definition_versions](./client.md#list_connector_definition_versions)
-- [list_connector_definitions](./client.md#list_connector_definitions)
-- [list_core_definition_versions](./client.md#list_core_definition_versions)
-- [list_core_definitions](./client.md#list_core_definitions)
-- [list_deployments](./client.md#list_deployments)
-- [list_device_definition_versions](./client.md#list_device_definition_versions)
-- [list_device_definitions](./client.md#list_device_definitions)
-- [list_function_definition_versions](./client.md#list_function_definition_versions)
-- [list_function_definitions](./client.md#list_function_definitions)
-- [list_group_certificate_authorities](./client.md#list_group_certificate_authorities)
-- [list_group_versions](./client.md#list_group_versions)
-- [list_groups](./client.md#list_groups)
-- [list_logger_definition_versions](./client.md#list_logger_definition_versions)
-- [list_logger_definitions](./client.md#list_logger_definitions)
-- [list_resource_definition_versions](./client.md#list_resource_definition_versions)
-- [list_resource_definitions](./client.md#list_resource_definitions)
-- [list_subscription_definition_versions](./client.md#list_subscription_definition_versions)
-- [list_subscription_definitions](./client.md#list_subscription_definitions)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [reset_deployments](./client.md#reset_deployments)
-- [start_bulk_deployment](./client.md#start_bulk_deployment)
-- [stop_bulk_deployment](./client.md#stop_bulk_deployment)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_connectivity_info](./client.md#update_connectivity_info)
-- [update_connector_definition](./client.md#update_connector_definition)
-- [update_core_definition](./client.md#update_core_definition)
-- [update_device_definition](./client.md#update_device_definition)
-- [update_function_definition](./client.md#update_function_definition)
-- [update_group](./client.md#update_group)
-- [update_group_certificate_configuration](./client.md#update_group_certificate_configuration)
-- [update_logger_definition](./client.md#update_logger_definition)
-- [update_resource_definition](./client.md#update_resource_definition)
-- [update_subscription_definition](./client.md#update_subscription_definition)
-- [update_thing_runtime_configuration](./client.md#update_thing_runtime_configuration)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-GreengrassClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- InternalServerErrorException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("greengrass").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("greengrass").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_greengrass.paginator import ListBulkDeploymentDetailedReportsPaginator, ...
+from mypy_boto3_greengrass.paginator import ListBulkDeploymentDetailedReportsPaginator
+
+def get_list_bulk_deployment_detailed_reports_paginator() -> ListBulkDeploymentDetailedReportsPaginator:
+    return Session().client("greengrass").get_paginator("list_bulk_deployment_detailed_reports"))
 ```
 
 - [ListBulkDeploymentDetailedReportsPaginator](./paginators.md#listbulkdeploymentdetailedreportspaginator)
@@ -227,16 +95,23 @@ from mypy_boto3_greengrass.paginator import ListBulkDeploymentDetailedReportsPag
 - [ListSubscriptionDefinitionVersionsPaginator](./paginators.md#listsubscriptiondefinitionversionspaginator)
 - [ListSubscriptionDefinitionsPaginator](./paginators.md#listsubscriptiondefinitionspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_greengrass.literals import BulkDeploymentStatusType
 
-```python
-from mypy_boto3_greengrass.literals import BulkDeploymentStatusType, ...
+def get_value() -> BulkDeploymentStatusType:
+    return "Completed"
 ```
 
 - [BulkDeploymentStatusType](./literals.md#bulkdeploymentstatustype)
@@ -276,18 +151,23 @@ from mypy_boto3_greengrass.literals import BulkDeploymentStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_greengrass.type_defs import AssociateRoleToGroupRequestRequestTypeDef
 
-```python
-from mypy_boto3_greengrass.type_defs import AssociateRoleToGroupRequestRequestTypeDef, ...
+def get_value() -> AssociateRoleToGroupRequestRequestTypeDef:
+    return {
+        "GroupId": ...,
+        "RoleArn": ...,
+    }
 ```
 
 - [AssociateRoleToGroupRequestRequestTypeDef](./type_defs.md#associateroletogrouprequestrequesttypedef)
@@ -415,44 +295,63 @@ from mypy_boto3_greengrass.type_defs import AssociateRoleToGroupRequestRequestTy
 - [GroupInformationTypeDef](./type_defs.md#groupinformationtypedef)
 - [GroupOwnerSettingTypeDef](./type_defs.md#groupownersettingtypedef)
 - [GroupVersionTypeDef](./type_defs.md#groupversiontypedef)
+- [ListBulkDeploymentDetailedReportsRequestListBulkDeploymentDetailedReportsPaginateTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsrequestlistbulkdeploymentdetailedreportspaginatetypedef)
 - [ListBulkDeploymentDetailedReportsRequestRequestTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsrequestrequesttypedef)
 - [ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef)
+- [ListBulkDeploymentsRequestListBulkDeploymentsPaginateTypeDef](./type_defs.md#listbulkdeploymentsrequestlistbulkdeploymentspaginatetypedef)
 - [ListBulkDeploymentsRequestRequestTypeDef](./type_defs.md#listbulkdeploymentsrequestrequesttypedef)
 - [ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef)
+- [ListConnectorDefinitionVersionsRequestListConnectorDefinitionVersionsPaginateTypeDef](./type_defs.md#listconnectordefinitionversionsrequestlistconnectordefinitionversionspaginatetypedef)
 - [ListConnectorDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listconnectordefinitionversionsrequestrequesttypedef)
 - [ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef)
+- [ListConnectorDefinitionsRequestListConnectorDefinitionsPaginateTypeDef](./type_defs.md#listconnectordefinitionsrequestlistconnectordefinitionspaginatetypedef)
 - [ListConnectorDefinitionsRequestRequestTypeDef](./type_defs.md#listconnectordefinitionsrequestrequesttypedef)
 - [ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef)
+- [ListCoreDefinitionVersionsRequestListCoreDefinitionVersionsPaginateTypeDef](./type_defs.md#listcoredefinitionversionsrequestlistcoredefinitionversionspaginatetypedef)
 - [ListCoreDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listcoredefinitionversionsrequestrequesttypedef)
 - [ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef)
+- [ListCoreDefinitionsRequestListCoreDefinitionsPaginateTypeDef](./type_defs.md#listcoredefinitionsrequestlistcoredefinitionspaginatetypedef)
 - [ListCoreDefinitionsRequestRequestTypeDef](./type_defs.md#listcoredefinitionsrequestrequesttypedef)
 - [ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef)
+- [ListDeploymentsRequestListDeploymentsPaginateTypeDef](./type_defs.md#listdeploymentsrequestlistdeploymentspaginatetypedef)
 - [ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef)
 - [ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef)
+- [ListDeviceDefinitionVersionsRequestListDeviceDefinitionVersionsPaginateTypeDef](./type_defs.md#listdevicedefinitionversionsrequestlistdevicedefinitionversionspaginatetypedef)
 - [ListDeviceDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listdevicedefinitionversionsrequestrequesttypedef)
 - [ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef)
+- [ListDeviceDefinitionsRequestListDeviceDefinitionsPaginateTypeDef](./type_defs.md#listdevicedefinitionsrequestlistdevicedefinitionspaginatetypedef)
 - [ListDeviceDefinitionsRequestRequestTypeDef](./type_defs.md#listdevicedefinitionsrequestrequesttypedef)
 - [ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef)
+- [ListFunctionDefinitionVersionsRequestListFunctionDefinitionVersionsPaginateTypeDef](./type_defs.md#listfunctiondefinitionversionsrequestlistfunctiondefinitionversionspaginatetypedef)
 - [ListFunctionDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listfunctiondefinitionversionsrequestrequesttypedef)
 - [ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef)
+- [ListFunctionDefinitionsRequestListFunctionDefinitionsPaginateTypeDef](./type_defs.md#listfunctiondefinitionsrequestlistfunctiondefinitionspaginatetypedef)
 - [ListFunctionDefinitionsRequestRequestTypeDef](./type_defs.md#listfunctiondefinitionsrequestrequesttypedef)
 - [ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef)
 - [ListGroupCertificateAuthoritiesRequestRequestTypeDef](./type_defs.md#listgroupcertificateauthoritiesrequestrequesttypedef)
 - [ListGroupCertificateAuthoritiesResponseTypeDef](./type_defs.md#listgroupcertificateauthoritiesresponsetypedef)
+- [ListGroupVersionsRequestListGroupVersionsPaginateTypeDef](./type_defs.md#listgroupversionsrequestlistgroupversionspaginatetypedef)
 - [ListGroupVersionsRequestRequestTypeDef](./type_defs.md#listgroupversionsrequestrequesttypedef)
 - [ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef)
+- [ListGroupsRequestListGroupsPaginateTypeDef](./type_defs.md#listgroupsrequestlistgroupspaginatetypedef)
 - [ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef)
 - [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)
+- [ListLoggerDefinitionVersionsRequestListLoggerDefinitionVersionsPaginateTypeDef](./type_defs.md#listloggerdefinitionversionsrequestlistloggerdefinitionversionspaginatetypedef)
 - [ListLoggerDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listloggerdefinitionversionsrequestrequesttypedef)
 - [ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef)
+- [ListLoggerDefinitionsRequestListLoggerDefinitionsPaginateTypeDef](./type_defs.md#listloggerdefinitionsrequestlistloggerdefinitionspaginatetypedef)
 - [ListLoggerDefinitionsRequestRequestTypeDef](./type_defs.md#listloggerdefinitionsrequestrequesttypedef)
 - [ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef)
+- [ListResourceDefinitionVersionsRequestListResourceDefinitionVersionsPaginateTypeDef](./type_defs.md#listresourcedefinitionversionsrequestlistresourcedefinitionversionspaginatetypedef)
 - [ListResourceDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listresourcedefinitionversionsrequestrequesttypedef)
 - [ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef)
+- [ListResourceDefinitionsRequestListResourceDefinitionsPaginateTypeDef](./type_defs.md#listresourcedefinitionsrequestlistresourcedefinitionspaginatetypedef)
 - [ListResourceDefinitionsRequestRequestTypeDef](./type_defs.md#listresourcedefinitionsrequestrequesttypedef)
 - [ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef)
+- [ListSubscriptionDefinitionVersionsRequestListSubscriptionDefinitionVersionsPaginateTypeDef](./type_defs.md#listsubscriptiondefinitionversionsrequestlistsubscriptiondefinitionversionspaginatetypedef)
 - [ListSubscriptionDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listsubscriptiondefinitionversionsrequestrequesttypedef)
 - [ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef)
+- [ListSubscriptionDefinitionsRequestListSubscriptionDefinitionsPaginateTypeDef](./type_defs.md#listsubscriptiondefinitionsrequestlistsubscriptiondefinitionspaginatetypedef)
 - [ListSubscriptionDefinitionsRequestRequestTypeDef](./type_defs.md#listsubscriptiondefinitionsrequestrequesttypedef)
 - [ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -497,3 +396,4 @@ from mypy_boto3_greengrass.type_defs import AssociateRoleToGroupRequestRequestTy
 - [UpdateSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#updatesubscriptiondefinitionrequestrequesttypedef)
 - [UpdateThingRuntimeConfigurationRequestRequestTypeDef](./type_defs.md#updatethingruntimeconfigurationrequestrequesttypedef)
 - [VersionInformationTypeDef](./type_defs.md#versioninformationtypedef)
+

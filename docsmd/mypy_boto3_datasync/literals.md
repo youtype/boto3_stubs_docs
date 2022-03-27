@@ -1,886 +1,955 @@
-<a id="literals-for-boto3-datasync-module"></a>
-
-# Literals for boto3 DataSync module
+# Literals
 
 > [Index](../README.md) > [DataSync](./README.md) > Literals
 
-Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
-type annotations stubs module
-[mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
+!!! note ""
 
-- [Literals for boto3 DataSync module](#literals-for-boto3-datasync-module)
-  - [AgentStatusType](#agentstatustype)
-  - [AtimeType](#atimetype)
-  - [EndpointTypeType](#endpointtypetype)
-  - [FilterTypeType](#filtertypetype)
-  - [GidType](#gidtype)
-  - [HdfsAuthenticationTypeType](#hdfsauthenticationtypetype)
-  - [HdfsDataTransferProtectionType](#hdfsdatatransferprotectiontype)
-  - [HdfsRpcProtectionType](#hdfsrpcprotectiontype)
-  - [ListAgentsPaginatorName](#listagentspaginatorname)
-  - [ListLocationsPaginatorName](#listlocationspaginatorname)
-  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [ListTaskExecutionsPaginatorName](#listtaskexecutionspaginatorname)
-  - [ListTasksPaginatorName](#listtaskspaginatorname)
-  - [LocationFilterNameType](#locationfilternametype)
-  - [LogLevelType](#logleveltype)
-  - [MtimeType](#mtimetype)
-  - [NfsVersionType](#nfsversiontype)
-  - [ObjectStorageServerProtocolType](#objectstorageserverprotocoltype)
-  - [OperatorType](#operatortype)
-  - [OverwriteModeType](#overwritemodetype)
-  - [PhaseStatusType](#phasestatustype)
-  - [PosixPermissionsType](#posixpermissionstype)
-  - [PreserveDeletedFilesType](#preservedeletedfilestype)
-  - [PreserveDevicesType](#preservedevicestype)
-  - [S3StorageClassType](#s3storageclasstype)
-  - [SmbSecurityDescriptorCopyFlagsType](#smbsecuritydescriptorcopyflagstype)
-  - [SmbVersionType](#smbversiontype)
-  - [TaskExecutionStatusType](#taskexecutionstatustype)
-  - [TaskFilterNameType](#taskfilternametype)
-  - [TaskQueueingType](#taskqueueingtype)
-  - [TaskStatusType](#taskstatustype)
-  - [TransferModeType](#transfermodetype)
-  - [UidType](#uidtype)
-  - [VerifyModeType](#verifymodetype)
-  - [DataSyncServiceName](#datasyncservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="agentstatustype"></a>
+    Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+    type annotations stubs module [mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 ## AgentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import AgentStatusType
+
+def get_value() -> AgentStatusType:
+    return "OFFLINE"
 ```
 
-Values:
-
-- `OFFLINE`
-- `ONLINE`
-
-<a id="atimetype"></a>
-
+```python title="Definition"
+AgentStatusType = Literal[
+    "OFFLINE",
+    "ONLINE",
+]
+```
 ## AtimeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import AtimeType
+
+def get_value() -> AtimeType:
+    return "BEST_EFFORT"
 ```
 
-Values:
-
-- `BEST_EFFORT`
-- `NONE`
-
-<a id="endpointtypetype"></a>
-
+```python title="Definition"
+AtimeType = Literal[
+    "BEST_EFFORT",
+    "NONE",
+]
+```
 ## EndpointTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import EndpointTypeType
+
+def get_value() -> EndpointTypeType:
+    return "FIPS"
 ```
 
-Values:
-
-- `FIPS`
-- `PRIVATE_LINK`
-- `PUBLIC`
-
-<a id="filtertypetype"></a>
-
+```python title="Definition"
+EndpointTypeType = Literal[
+    "FIPS",
+    "PRIVATE_LINK",
+    "PUBLIC",
+]
+```
 ## FilterTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import FilterTypeType
+
+def get_value() -> FilterTypeType:
+    return "SIMPLE_PATTERN"
 ```
 
-Values:
-
-- `SIMPLE_PATTERN`
-
-<a id="gidtype"></a>
-
+```python title="Definition"
+FilterTypeType = Literal[
+    "SIMPLE_PATTERN",
+]
+```
 ## GidType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import GidType
+
+def get_value() -> GidType:
+    return "BOTH"
 ```
 
-Values:
-
-- `BOTH`
-- `INT_VALUE`
-- `NAME`
-- `NONE`
-
-<a id="hdfsauthenticationtypetype"></a>
-
+```python title="Definition"
+GidType = Literal[
+    "BOTH",
+    "INT_VALUE",
+    "NAME",
+    "NONE",
+]
+```
 ## HdfsAuthenticationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import HdfsAuthenticationTypeType
+
+def get_value() -> HdfsAuthenticationTypeType:
+    return "KERBEROS"
 ```
 
-Values:
-
-- `KERBEROS`
-- `SIMPLE`
-
-<a id="hdfsdatatransferprotectiontype"></a>
-
+```python title="Definition"
+HdfsAuthenticationTypeType = Literal[
+    "KERBEROS",
+    "SIMPLE",
+]
+```
 ## HdfsDataTransferProtectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import HdfsDataTransferProtectionType
+
+def get_value() -> HdfsDataTransferProtectionType:
+    return "AUTHENTICATION"
 ```
 
-Values:
-
-- `AUTHENTICATION`
-- `DISABLED`
-- `INTEGRITY`
-- `PRIVACY`
-
-<a id="hdfsrpcprotectiontype"></a>
-
+```python title="Definition"
+HdfsDataTransferProtectionType = Literal[
+    "AUTHENTICATION",
+    "DISABLED",
+    "INTEGRITY",
+    "PRIVACY",
+]
+```
 ## HdfsRpcProtectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import HdfsRpcProtectionType
+
+def get_value() -> HdfsRpcProtectionType:
+    return "AUTHENTICATION"
 ```
 
-Values:
-
-- `AUTHENTICATION`
-- `DISABLED`
-- `INTEGRITY`
-- `PRIVACY`
-
-<a id="listagentspaginatorname"></a>
-
+```python title="Definition"
+HdfsRpcProtectionType = Literal[
+    "AUTHENTICATION",
+    "DISABLED",
+    "INTEGRITY",
+    "PRIVACY",
+]
+```
 ## ListAgentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import ListAgentsPaginatorName
+
+def get_value() -> ListAgentsPaginatorName:
+    return "list_agents"
 ```
 
-Values:
-
-- `list_agents`
-
-<a id="listlocationspaginatorname"></a>
-
+```python title="Definition"
+ListAgentsPaginatorName = Literal[
+    "list_agents",
+]
+```
 ## ListLocationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import ListLocationsPaginatorName
+
+def get_value() -> ListLocationsPaginatorName:
+    return "list_locations"
 ```
 
-Values:
-
-- `list_locations`
-
-<a id="listtagsforresourcepaginatorname"></a>
-
+```python title="Definition"
+ListLocationsPaginatorName = Literal[
+    "list_locations",
+]
+```
 ## ListTagsForResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import ListTagsForResourcePaginatorName
+
+def get_value() -> ListTagsForResourcePaginatorName:
+    return "list_tags_for_resource"
 ```
 
-Values:
-
-- `list_tags_for_resource`
-
-<a id="listtaskexecutionspaginatorname"></a>
-
+```python title="Definition"
+ListTagsForResourcePaginatorName = Literal[
+    "list_tags_for_resource",
+]
+```
 ## ListTaskExecutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import ListTaskExecutionsPaginatorName
+
+def get_value() -> ListTaskExecutionsPaginatorName:
+    return "list_task_executions"
 ```
 
-Values:
-
-- `list_task_executions`
-
-<a id="listtaskspaginatorname"></a>
-
+```python title="Definition"
+ListTaskExecutionsPaginatorName = Literal[
+    "list_task_executions",
+]
+```
 ## ListTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import ListTasksPaginatorName
+
+def get_value() -> ListTasksPaginatorName:
+    return "list_tasks"
 ```
 
-Values:
-
-- `list_tasks`
-
-<a id="locationfilternametype"></a>
-
+```python title="Definition"
+ListTasksPaginatorName = Literal[
+    "list_tasks",
+]
+```
 ## LocationFilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import LocationFilterNameType
+
+def get_value() -> LocationFilterNameType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `LocationType`
-- `LocationUri`
-
-<a id="logleveltype"></a>
-
+```python title="Definition"
+LocationFilterNameType = Literal[
+    "CreationTime",
+    "LocationType",
+    "LocationUri",
+]
+```
 ## LogLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import LogLevelType
+
+def get_value() -> LogLevelType:
+    return "BASIC"
 ```
 
-Values:
-
-- `BASIC`
-- `OFF`
-- `TRANSFER`
-
-<a id="mtimetype"></a>
-
+```python title="Definition"
+LogLevelType = Literal[
+    "BASIC",
+    "OFF",
+    "TRANSFER",
+]
+```
 ## MtimeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import MtimeType
+
+def get_value() -> MtimeType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PRESERVE`
-
-<a id="nfsversiontype"></a>
-
+```python title="Definition"
+MtimeType = Literal[
+    "NONE",
+    "PRESERVE",
+]
+```
 ## NfsVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import NfsVersionType
+
+def get_value() -> NfsVersionType:
+    return "AUTOMATIC"
 ```
 
-Values:
-
-- `AUTOMATIC`
-- `NFS3`
-- `NFS4_0`
-- `NFS4_1`
-
-<a id="objectstorageserverprotocoltype"></a>
-
+```python title="Definition"
+NfsVersionType = Literal[
+    "AUTOMATIC",
+    "NFS3",
+    "NFS4_0",
+    "NFS4_1",
+]
+```
 ## ObjectStorageServerProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import ObjectStorageServerProtocolType
+
+def get_value() -> ObjectStorageServerProtocolType:
+    return "HTTP"
 ```
 
-Values:
-
-- `HTTP`
-- `HTTPS`
-
-<a id="operatortype"></a>
-
+```python title="Definition"
+ObjectStorageServerProtocolType = Literal[
+    "HTTP",
+    "HTTPS",
+]
+```
 ## OperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import OperatorType
+
+def get_value() -> OperatorType:
+    return "BeginsWith"
 ```
 
-Values:
-
-- `BeginsWith`
-- `Contains`
-- `Equals`
-- `GreaterThan`
-- `GreaterThanOrEqual`
-- `In`
-- `LessThan`
-- `LessThanOrEqual`
-- `NotContains`
-- `NotEquals`
-
-<a id="overwritemodetype"></a>
-
+```python title="Definition"
+OperatorType = Literal[
+    "BeginsWith",
+    "Contains",
+    "Equals",
+    "GreaterThan",
+    "GreaterThanOrEqual",
+    "In",
+    "LessThan",
+    "LessThanOrEqual",
+    "NotContains",
+    "NotEquals",
+]
+```
 ## OverwriteModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import OverwriteModeType
+
+def get_value() -> OverwriteModeType:
+    return "ALWAYS"
 ```
 
-Values:
-
-- `ALWAYS`
-- `NEVER`
-
-<a id="phasestatustype"></a>
-
+```python title="Definition"
+OverwriteModeType = Literal[
+    "ALWAYS",
+    "NEVER",
+]
+```
 ## PhaseStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import PhaseStatusType
+
+def get_value() -> PhaseStatusType:
+    return "ERROR"
 ```
 
-Values:
-
-- `ERROR`
-- `PENDING`
-- `SUCCESS`
-
-<a id="posixpermissionstype"></a>
-
+```python title="Definition"
+PhaseStatusType = Literal[
+    "ERROR",
+    "PENDING",
+    "SUCCESS",
+]
+```
 ## PosixPermissionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import PosixPermissionsType
+
+def get_value() -> PosixPermissionsType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PRESERVE`
-
-<a id="preservedeletedfilestype"></a>
-
+```python title="Definition"
+PosixPermissionsType = Literal[
+    "NONE",
+    "PRESERVE",
+]
+```
 ## PreserveDeletedFilesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import PreserveDeletedFilesType
+
+def get_value() -> PreserveDeletedFilesType:
+    return "PRESERVE"
 ```
 
-Values:
-
-- `PRESERVE`
-- `REMOVE`
-
-<a id="preservedevicestype"></a>
-
+```python title="Definition"
+PreserveDeletedFilesType = Literal[
+    "PRESERVE",
+    "REMOVE",
+]
+```
 ## PreserveDevicesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import PreserveDevicesType
+
+def get_value() -> PreserveDevicesType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PRESERVE`
-
-<a id="s3storageclasstype"></a>
-
+```python title="Definition"
+PreserveDevicesType = Literal[
+    "NONE",
+    "PRESERVE",
+]
+```
 ## S3StorageClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import S3StorageClassType
+
+def get_value() -> S3StorageClassType:
+    return "DEEP_ARCHIVE"
 ```
 
-Values:
-
-- `DEEP_ARCHIVE`
-- `GLACIER`
-- `INTELLIGENT_TIERING`
-- `ONEZONE_IA`
-- `OUTPOSTS`
-- `STANDARD`
-- `STANDARD_IA`
-
-<a id="smbsecuritydescriptorcopyflagstype"></a>
-
+```python title="Definition"
+S3StorageClassType = Literal[
+    "DEEP_ARCHIVE",
+    "GLACIER",
+    "INTELLIGENT_TIERING",
+    "ONEZONE_IA",
+    "OUTPOSTS",
+    "STANDARD",
+    "STANDARD_IA",
+]
+```
 ## SmbSecurityDescriptorCopyFlagsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import SmbSecurityDescriptorCopyFlagsType
+
+def get_value() -> SmbSecurityDescriptorCopyFlagsType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `OWNER_DACL`
-- `OWNER_DACL_SACL`
-
-<a id="smbversiontype"></a>
-
+```python title="Definition"
+SmbSecurityDescriptorCopyFlagsType = Literal[
+    "NONE",
+    "OWNER_DACL",
+    "OWNER_DACL_SACL",
+]
+```
 ## SmbVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import SmbVersionType
+
+def get_value() -> SmbVersionType:
+    return "AUTOMATIC"
 ```
 
-Values:
-
-- `AUTOMATIC`
-- `SMB2`
-- `SMB3`
-
-<a id="taskexecutionstatustype"></a>
-
+```python title="Definition"
+SmbVersionType = Literal[
+    "AUTOMATIC",
+    "SMB2",
+    "SMB3",
+]
+```
 ## TaskExecutionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import TaskExecutionStatusType
+
+def get_value() -> TaskExecutionStatusType:
+    return "ERROR"
 ```
 
-Values:
-
-- `ERROR`
-- `LAUNCHING`
-- `PREPARING`
-- `QUEUED`
-- `SUCCESS`
-- `TRANSFERRING`
-- `VERIFYING`
-
-<a id="taskfilternametype"></a>
-
+```python title="Definition"
+TaskExecutionStatusType = Literal[
+    "ERROR",
+    "LAUNCHING",
+    "PREPARING",
+    "QUEUED",
+    "SUCCESS",
+    "TRANSFERRING",
+    "VERIFYING",
+]
+```
 ## TaskFilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import TaskFilterNameType
+
+def get_value() -> TaskFilterNameType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `LocationId`
-
-<a id="taskqueueingtype"></a>
-
+```python title="Definition"
+TaskFilterNameType = Literal[
+    "CreationTime",
+    "LocationId",
+]
+```
 ## TaskQueueingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import TaskQueueingType
+
+def get_value() -> TaskQueueingType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="taskstatustype"></a>
-
+```python title="Definition"
+TaskQueueingType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## TaskStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import TaskStatusType
+
+def get_value() -> TaskStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `CREATING`
-- `QUEUED`
-- `RUNNING`
-- `UNAVAILABLE`
-
-<a id="transfermodetype"></a>
-
+```python title="Definition"
+TaskStatusType = Literal[
+    "AVAILABLE",
+    "CREATING",
+    "QUEUED",
+    "RUNNING",
+    "UNAVAILABLE",
+]
+```
 ## TransferModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import TransferModeType
+
+def get_value() -> TransferModeType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CHANGED`
-
-<a id="uidtype"></a>
-
+```python title="Definition"
+TransferModeType = Literal[
+    "ALL",
+    "CHANGED",
+]
+```
 ## UidType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import UidType
+
+def get_value() -> UidType:
+    return "BOTH"
 ```
 
-Values:
-
-- `BOTH`
-- `INT_VALUE`
-- `NAME`
-- `NONE`
-
-<a id="verifymodetype"></a>
-
+```python title="Definition"
+UidType = Literal[
+    "BOTH",
+    "INT_VALUE",
+    "NAME",
+    "NONE",
+]
+```
 ## VerifyModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import VerifyModeType
+
+def get_value() -> VerifyModeType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `ONLY_FILES_TRANSFERRED`
-- `POINT_IN_TIME_CONSISTENT`
-
-<a id="datasyncservicename"></a>
-
+```python title="Definition"
+VerifyModeType = Literal[
+    "NONE",
+    "ONLY_FILES_TRANSFERRED",
+    "POINT_IN_TIME_CONSISTENT",
+]
+```
 ## DataSyncServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import DataSyncServiceName
+
+def get_value() -> DataSyncServiceName:
+    return "datasync"
 ```
 
-Values:
-
-- `datasync`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+DataSyncServiceName = Literal[
+    "datasync",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_datasync.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_agents"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_agents",
+    "list_locations",
+    "list_tags_for_resource",
+    "list_task_executions",
+    "list_tasks",
+]
+```
+## RegionName
 
-- `list_agents`
-- `list_locations`
-- `list_tags_for_resource`
-- `list_task_executions`
-- `list_tasks`
+```python title="Usage Example"
+from mypy_boto3_datasync.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

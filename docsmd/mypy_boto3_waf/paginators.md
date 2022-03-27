@@ -1,42 +1,18 @@
-<a id="paginators-for-boto3-waf-module"></a>
-
-# Paginators for boto3 WAF module
+# Paginators
 
 > [Index](../README.md) > [WAF](./README.md) > Paginators
 
-Auto-generated documentation for
-[WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
-type annotations stubs module
-[mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
+!!! note ""
 
-- [Paginators for boto3 WAF module](#paginators-for-boto3-waf-module)
-  - [GetRateBasedRuleManagedKeysPaginator](#getratebasedrulemanagedkeyspaginator)
-  - [ListActivatedRulesInRuleGroupPaginator](#listactivatedrulesinrulegrouppaginator)
-  - [ListByteMatchSetsPaginator](#listbytematchsetspaginator)
-  - [ListGeoMatchSetsPaginator](#listgeomatchsetspaginator)
-  - [ListIPSetsPaginator](#listipsetspaginator)
-  - [ListLoggingConfigurationsPaginator](#listloggingconfigurationspaginator)
-  - [ListRateBasedRulesPaginator](#listratebasedrulespaginator)
-  - [ListRegexMatchSetsPaginator](#listregexmatchsetspaginator)
-  - [ListRegexPatternSetsPaginator](#listregexpatternsetspaginator)
-  - [ListRuleGroupsPaginator](#listrulegroupspaginator)
-  - [ListRulesPaginator](#listrulespaginator)
-  - [ListSizeConstraintSetsPaginator](#listsizeconstraintsetspaginator)
-  - [ListSqlInjectionMatchSetsPaginator](#listsqlinjectionmatchsetspaginator)
-  - [ListSubscribedRuleGroupsPaginator](#listsubscribedrulegroupspaginator)
-  - [ListWebACLsPaginator](#listwebaclspaginator)
-  - [ListXssMatchSetsPaginator](#listxssmatchsetspaginator)
-
-<a id="getratebasedrulemanagedkeyspaginator"></a>
+    Auto-generated documentation for [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
+    type annotations stubs module [mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
 
 ## GetRateBasedRuleManagedKeysPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("get_rate_based_rule_managed_keys")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("get_rate_based_rule_managed_keys")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.GetRateBasedRuleManagedKeys)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import GetRateBasedRuleManagedKeysPaginator
@@ -45,28 +21,40 @@ def get_get_rate_based_rule_managed_keys_paginator() -> GetRateBasedRuleManagedK
     return Session().client("waf").get_paginator("get_rate_based_rule_managed_keys")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.GetRateBasedRuleManagedKeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.GetRateBasedRuleManagedKeys)
 
-Arguments for `GetRateBasedRuleManagedKeysPaginator.paginate` method:
+### paginate
 
-- `RuleId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetRateBasedRuleManagedKeysPaginator.paginate` method.
 
-`GetRateBasedRuleManagedKeysPaginator.paginate` returns
-`_PageIterator`\[[GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RuleId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetRateBasedRuleManagedKeysResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listactivatedrulesinrulegrouppaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetRateBasedRuleManagedKeysRequestGetRateBasedRuleManagedKeysPaginateTypeDef = {  # (1)
+    "RuleId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetRateBasedRuleManagedKeysRequestGetRateBasedRuleManagedKeysPaginateTypeDef](./type_defs.md#getratebasedrulemanagedkeysrequestgetratebasedrulemanagedkeyspaginatetypedef) 
 ## ListActivatedRulesInRuleGroupPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_activated_rules_in_rule_group")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_activated_rules_in_rule_group")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListActivatedRulesInRuleGroup)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListActivatedRulesInRuleGroupPaginator
@@ -75,28 +63,40 @@ def get_list_activated_rules_in_rule_group_paginator() -> ListActivatedRulesInRu
     return Session().client("waf").get_paginator("list_activated_rules_in_rule_group")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListActivatedRulesInRuleGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListActivatedRulesInRuleGroup)
 
-Arguments for `ListActivatedRulesInRuleGroupPaginator.paginate` method:
+### paginate
 
-- `RuleGroupId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListActivatedRulesInRuleGroupPaginator.paginate` method.
 
-`ListActivatedRulesInRuleGroupPaginator.paginate` returns
-`_PageIterator`\[[ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RuleGroupId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListActivatedRulesInRuleGroupResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listbytematchsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListActivatedRulesInRuleGroupRequestListActivatedRulesInRuleGroupPaginateTypeDef = {  # (1)
+    "RuleGroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListActivatedRulesInRuleGroupRequestListActivatedRulesInRuleGroupPaginateTypeDef](./type_defs.md#listactivatedrulesinrulegrouprequestlistactivatedrulesinrulegrouppaginatetypedef) 
 ## ListByteMatchSetsPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_byte_match_sets")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_byte_match_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListByteMatchSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListByteMatchSetsPaginator
@@ -105,27 +105,39 @@ def get_list_byte_match_sets_paginator() -> ListByteMatchSetsPaginator:
     return Session().client("waf").get_paginator("list_byte_match_sets")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListByteMatchSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListByteMatchSets)
 
-Arguments for `ListByteMatchSetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListByteMatchSetsPaginator.paginate` method.
 
-`ListByteMatchSetsPaginator.paginate` returns
-`_PageIterator`\[[ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListByteMatchSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgeomatchsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListByteMatchSetsRequestListByteMatchSetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListByteMatchSetsRequestListByteMatchSetsPaginateTypeDef](./type_defs.md#listbytematchsetsrequestlistbytematchsetspaginatetypedef) 
 ## ListGeoMatchSetsPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_geo_match_sets")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_geo_match_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListGeoMatchSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListGeoMatchSetsPaginator
@@ -134,26 +146,39 @@ def get_list_geo_match_sets_paginator() -> ListGeoMatchSetsPaginator:
     return Session().client("waf").get_paginator("list_geo_match_sets")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListGeoMatchSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListGeoMatchSets)
 
-Arguments for `ListGeoMatchSetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGeoMatchSetsPaginator.paginate` method.
 
-`ListGeoMatchSetsPaginator.paginate` returns
-`_PageIterator`\[[ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGeoMatchSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listipsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGeoMatchSetsRequestListGeoMatchSetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGeoMatchSetsRequestListGeoMatchSetsPaginateTypeDef](./type_defs.md#listgeomatchsetsrequestlistgeomatchsetspaginatetypedef) 
 ## ListIPSetsPaginator
 
-Type annotations for `boto3.client("waf").get_paginator("list_ip_sets")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_ip_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListIPSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListIPSetsPaginator
@@ -162,27 +187,39 @@ def get_list_ip_sets_paginator() -> ListIPSetsPaginator:
     return Session().client("waf").get_paginator("list_ip_sets")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListIPSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListIPSets)
 
-Arguments for `ListIPSetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListIPSetsPaginator.paginate` method.
 
-`ListIPSetsPaginator.paginate` returns
-`_PageIterator`\[[ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListIPSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listloggingconfigurationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListIPSetsRequestListIPSetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListIPSetsRequestListIPSetsPaginateTypeDef](./type_defs.md#listipsetsrequestlistipsetspaginatetypedef) 
 ## ListLoggingConfigurationsPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_logging_configurations")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_logging_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListLoggingConfigurations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListLoggingConfigurationsPaginator
@@ -191,27 +228,39 @@ def get_list_logging_configurations_paginator() -> ListLoggingConfigurationsPagi
     return Session().client("waf").get_paginator("list_logging_configurations")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListLoggingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListLoggingConfigurations)
 
-Arguments for `ListLoggingConfigurationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListLoggingConfigurationsPaginator.paginate` method.
 
-`ListLoggingConfigurationsPaginator.paginate` returns
-`_PageIterator`\[[ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListLoggingConfigurationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listratebasedrulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListLoggingConfigurationsRequestListLoggingConfigurationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLoggingConfigurationsRequestListLoggingConfigurationsPaginateTypeDef](./type_defs.md#listloggingconfigurationsrequestlistloggingconfigurationspaginatetypedef) 
 ## ListRateBasedRulesPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_rate_based_rules")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_rate_based_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRateBasedRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListRateBasedRulesPaginator
@@ -220,27 +269,39 @@ def get_list_rate_based_rules_paginator() -> ListRateBasedRulesPaginator:
     return Session().client("waf").get_paginator("list_rate_based_rules")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListRateBasedRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRateBasedRules)
 
-Arguments for `ListRateBasedRulesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRateBasedRulesPaginator.paginate` method.
 
-`ListRateBasedRulesPaginator.paginate` returns
-`_PageIterator`\[[ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRateBasedRulesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listregexmatchsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRateBasedRulesRequestListRateBasedRulesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRateBasedRulesRequestListRateBasedRulesPaginateTypeDef](./type_defs.md#listratebasedrulesrequestlistratebasedrulespaginatetypedef) 
 ## ListRegexMatchSetsPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_regex_match_sets")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_regex_match_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRegexMatchSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListRegexMatchSetsPaginator
@@ -249,27 +310,39 @@ def get_list_regex_match_sets_paginator() -> ListRegexMatchSetsPaginator:
     return Session().client("waf").get_paginator("list_regex_match_sets")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListRegexMatchSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRegexMatchSets)
 
-Arguments for `ListRegexMatchSetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRegexMatchSetsPaginator.paginate` method.
 
-`ListRegexMatchSetsPaginator.paginate` returns
-`_PageIterator`\[[ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRegexMatchSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listregexpatternsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRegexMatchSetsRequestListRegexMatchSetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRegexMatchSetsRequestListRegexMatchSetsPaginateTypeDef](./type_defs.md#listregexmatchsetsrequestlistregexmatchsetspaginatetypedef) 
 ## ListRegexPatternSetsPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_regex_pattern_sets")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_regex_pattern_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRegexPatternSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListRegexPatternSetsPaginator
@@ -278,26 +351,39 @@ def get_list_regex_pattern_sets_paginator() -> ListRegexPatternSetsPaginator:
     return Session().client("waf").get_paginator("list_regex_pattern_sets")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListRegexPatternSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRegexPatternSets)
 
-Arguments for `ListRegexPatternSetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRegexPatternSetsPaginator.paginate` method.
 
-`ListRegexPatternSetsPaginator.paginate` returns
-`_PageIterator`\[[ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRegexPatternSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrulegroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRegexPatternSetsRequestListRegexPatternSetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRegexPatternSetsRequestListRegexPatternSetsPaginateTypeDef](./type_defs.md#listregexpatternsetsrequestlistregexpatternsetspaginatetypedef) 
 ## ListRuleGroupsPaginator
 
-Type annotations for `boto3.client("waf").get_paginator("list_rule_groups")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_rule_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRuleGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListRuleGroupsPaginator
@@ -306,26 +392,39 @@ def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
     return Session().client("waf").get_paginator("list_rule_groups")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRuleGroups)
 
-Arguments for `ListRuleGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRuleGroupsPaginator.paginate` method.
 
-`ListRuleGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRuleGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRuleGroupsRequestListRuleGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRuleGroupsRequestListRuleGroupsPaginateTypeDef](./type_defs.md#listrulegroupsrequestlistrulegroupspaginatetypedef) 
 ## ListRulesPaginator
 
-Type annotations for `boto3.client("waf").get_paginator("list_rules")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListRulesPaginator
@@ -334,27 +433,39 @@ def get_list_rules_paginator() -> ListRulesPaginator:
     return Session().client("waf").get_paginator("list_rules")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListRules)
 
-Arguments for `ListRulesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRulesPaginator.paginate` method.
 
-`ListRulesPaginator.paginate` returns
-`_PageIterator`\[[ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRulesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsizeconstraintsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRulesRequestListRulesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRulesRequestListRulesPaginateTypeDef](./type_defs.md#listrulesrequestlistrulespaginatetypedef) 
 ## ListSizeConstraintSetsPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_size_constraint_sets")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_size_constraint_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSizeConstraintSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListSizeConstraintSetsPaginator
@@ -363,27 +474,39 @@ def get_list_size_constraint_sets_paginator() -> ListSizeConstraintSetsPaginator
     return Session().client("waf").get_paginator("list_size_constraint_sets")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListSizeConstraintSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSizeConstraintSets)
 
-Arguments for `ListSizeConstraintSetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSizeConstraintSetsPaginator.paginate` method.
 
-`ListSizeConstraintSetsPaginator.paginate` returns
-`_PageIterator`\[[ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSizeConstraintSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsqlinjectionmatchsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSizeConstraintSetsRequestListSizeConstraintSetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSizeConstraintSetsRequestListSizeConstraintSetsPaginateTypeDef](./type_defs.md#listsizeconstraintsetsrequestlistsizeconstraintsetspaginatetypedef) 
 ## ListSqlInjectionMatchSetsPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_sql_injection_match_sets")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_sql_injection_match_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSqlInjectionMatchSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListSqlInjectionMatchSetsPaginator
@@ -392,27 +515,39 @@ def get_list_sql_injection_match_sets_paginator() -> ListSqlInjectionMatchSetsPa
     return Session().client("waf").get_paginator("list_sql_injection_match_sets")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListSqlInjectionMatchSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSqlInjectionMatchSets)
 
-Arguments for `ListSqlInjectionMatchSetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSqlInjectionMatchSetsPaginator.paginate` method.
 
-`ListSqlInjectionMatchSetsPaginator.paginate` returns
-`_PageIterator`\[[ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSqlInjectionMatchSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsubscribedrulegroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSqlInjectionMatchSetsRequestListSqlInjectionMatchSetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSqlInjectionMatchSetsRequestListSqlInjectionMatchSetsPaginateTypeDef](./type_defs.md#listsqlinjectionmatchsetsrequestlistsqlinjectionmatchsetspaginatetypedef) 
 ## ListSubscribedRuleGroupsPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_subscribed_rule_groups")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_subscribed_rule_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSubscribedRuleGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListSubscribedRuleGroupsPaginator
@@ -421,26 +556,39 @@ def get_list_subscribed_rule_groups_paginator() -> ListSubscribedRuleGroupsPagin
     return Session().client("waf").get_paginator("list_subscribed_rule_groups")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListSubscribedRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListSubscribedRuleGroups)
 
-Arguments for `ListSubscribedRuleGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSubscribedRuleGroupsPaginator.paginate` method.
 
-`ListSubscribedRuleGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSubscribedRuleGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listwebaclspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSubscribedRuleGroupsRequestListSubscribedRuleGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSubscribedRuleGroupsRequestListSubscribedRuleGroupsPaginateTypeDef](./type_defs.md#listsubscribedrulegroupsrequestlistsubscribedrulegroupspaginatetypedef) 
 ## ListWebACLsPaginator
 
-Type annotations for `boto3.client("waf").get_paginator("list_web_acls")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_web_acls")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListWebACLs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListWebACLsPaginator
@@ -449,27 +597,39 @@ def get_list_web_acls_paginator() -> ListWebACLsPaginator:
     return Session().client("waf").get_paginator("list_web_acls")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListWebACLs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListWebACLs)
 
-Arguments for `ListWebACLsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListWebACLsPaginator.paginate` method.
 
-`ListWebACLsPaginator.paginate` returns
-`_PageIterator`\[[ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListWebACLsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listxssmatchsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListWebACLsRequestListWebACLsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWebACLsRequestListWebACLsPaginateTypeDef](./type_defs.md#listwebaclsrequestlistwebaclspaginatetypedef) 
 ## ListXssMatchSetsPaginator
 
-Type annotations for
-`boto3.client("waf").get_paginator("list_xss_match_sets")`.
+Type annotations and code completion for `#!python boto3.client("waf").get_paginator("list_xss_match_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListXssMatchSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_waf.paginator import ListXssMatchSetsPaginator
@@ -478,13 +638,30 @@ def get_list_xss_match_sets_paginator() -> ListXssMatchSetsPaginator:
     return Session().client("waf").get_paginator("list_xss_match_sets")
 ```
 
-Boto3 documentation:
-[WAF.Paginator.ListXssMatchSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF.Paginator.ListXssMatchSets)
 
-Arguments for `ListXssMatchSetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListXssMatchSetsPaginator.paginate` method.
 
-`ListXssMatchSetsPaginator.paginate` returns
-`_PageIterator`\[[ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListXssMatchSetsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListXssMatchSetsRequestListXssMatchSetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListXssMatchSetsRequestListXssMatchSetsPaginateTypeDef](./type_defs.md#listxssmatchsetsrequestlistxssmatchsetspaginatetypedef) 

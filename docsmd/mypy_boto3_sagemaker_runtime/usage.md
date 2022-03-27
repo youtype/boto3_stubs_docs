@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-sagemakerruntime-module"></a>
-
-# Examples for boto3 SageMakerRuntime module
+# Examples
 
 > [Index](../README.md) > [SageMakerRuntime](./README.md) > Examples
 
-- [Examples for boto3 SageMakerRuntime module](#examples-for-boto3-sagemakerruntime-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
+    type annotations stubs module [mypy-boto3-sagemaker-runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[sagemaker-runtime]` package installed.
 
-Write your `SageMakerRuntime` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `SageMakerRuntime` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SageMakerRuntimeClient
-# and provides type checking and code completion
-client = session.client("sagemaker-runtime")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("sagemaker-runtime")  # (1)
+    result = client.invoke_endpoint()  # (2)
+    ```
+
+    1. client: [SageMakerRuntimeClient](./client.md)
+    2. result: [:material-code-braces: InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[sagemaker-runtime]` or a standalone
-`mypy_boto3_sagemaker_runtime` package, you have to explicitly specify
-`client: SageMakerRuntimeClient` type annotation.
+With `boto3-stubs-lite[sagemaker-runtime]`
+or a standalone `mypy_boto3_sagemaker_runtime` package, you have to explicitly specify `client: SageMakerRuntimeClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_sagemaker_runtime.client import SageMakerRuntimeClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_sagemaker_runtime.client import SageMakerRuntimeClient
+    from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointOutputTypeDef
+    from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointInputRequestTypeDef
 
 
-from mypy_boto3_sagemaker_runtime.type_defs import bool
+    session = Session()
+
+    client: SageMakerRuntimeClient = session.client("sagemaker-runtime")
+
+    kwargs: InvokeEndpointInputRequestTypeDef = {...}
+    result: InvokeEndpointOutputTypeDef = client.invoke_endpoint(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: SageMakerRuntimeClient = session.client("sagemaker-runtime")
 
-result: bool = client.can_paginate()
-```
+

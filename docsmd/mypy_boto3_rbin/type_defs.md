@@ -1,335 +1,443 @@
-<a id="typed-dictionaries-for-boto3-recyclebin-module"></a>
-
-# Typed dictionaries for boto3 RecycleBin module
+# Typed dictionaries
 
 > [Index](../README.md) > [RecycleBin](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
-type annotations stubs module
-[mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
+!!! note ""
 
-- [Typed dictionaries for boto3 RecycleBin module](#typed-dictionaries-for-boto3-recyclebin-module)
-  - [CreateRuleRequestRequestTypeDef](#createrulerequestrequesttypedef)
-  - [CreateRuleResponseTypeDef](#createruleresponsetypedef)
-  - [DeleteRuleRequestRequestTypeDef](#deleterulerequestrequesttypedef)
-  - [GetRuleRequestRequestTypeDef](#getrulerequestrequesttypedef)
-  - [GetRuleResponseTypeDef](#getruleresponsetypedef)
-  - [ListRulesRequestRequestTypeDef](#listrulesrequestrequesttypedef)
-  - [ListRulesResponseTypeDef](#listrulesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResourceTagTypeDef](#resourcetagtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetentionPeriodTypeDef](#retentionperiodtypedef)
-  - [RuleSummaryTypeDef](#rulesummarytypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateRuleRequestRequestTypeDef](#updaterulerequestrequesttypedef)
-  - [UpdateRuleResponseTypeDef](#updateruleresponsetypedef)
-
-<a id="createrulerequestrequesttypedef"></a>
+    Auto-generated documentation for [RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
+    type annotations stubs module [mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
 
 ## CreateRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import CreateRuleRequestRequestTypeDef
+
+def get_value() -> CreateRuleRequestRequestTypeDef:
+    return {
+        "RetentionPeriod": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRuleRequestRequestTypeDef(TypedDict):
+    RetentionPeriod: RetentionPeriodTypeDef,  # (1)
+    ResourceType: ResourceTypeType,  # (2)
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (4)
+```
 
-- `RetentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-
-<a id="createruleresponsetypedef"></a>
-
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 ## CreateRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import CreateRuleResponseTypeDef
+
+def get_value() -> CreateRuleResponseTypeDef:
+    return {
+        "Identifier": ...,
+        "RetentionPeriod": ...,
+        "Description": ...,
+        "Tags": ...,
+        "ResourceType": ...,
+        "ResourceTags": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRuleResponseTypeDef(TypedDict):
+    Identifier: str,
+    RetentionPeriod: RetentionPeriodTypeDef,  # (1)
+    Description: str,
+    Tags: List[TagTypeDef],  # (2)
+    ResourceType: ResourceTypeType,  # (3)
+    ResourceTags: List[ResourceTagTypeDef],  # (4)
+    Status: RuleStatusType,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `Identifier`: `str`
-- `RetentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `ResourceTags`:
-  `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-- `Status`: [RuleStatusType](./literals.md#rulestatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleterulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+5. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import DeleteRuleRequestRequestTypeDef
+
+def get_value() -> DeleteRuleRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `Identifier`: `str`
-
-<a id="getrulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRuleRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+```
 
 ## GetRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import GetRuleRequestRequestTypeDef
+
+def get_value() -> GetRuleRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `Identifier`: `str`
-
-<a id="getruleresponsetypedef"></a>
+```python title="Definition"
+class GetRuleRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+```
 
 ## GetRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import GetRuleResponseTypeDef
+
+def get_value() -> GetRuleResponseTypeDef:
+    return {
+        "Identifier": ...,
+        "Description": ...,
+        "ResourceType": ...,
+        "RetentionPeriod": ...,
+        "ResourceTags": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRuleResponseTypeDef(TypedDict):
+    Identifier: str,
+    Description: str,
+    ResourceType: ResourceTypeType,  # (1)
+    RetentionPeriod: RetentionPeriodTypeDef,  # (2)
+    ResourceTags: List[ResourceTagTypeDef],  # (3)
+    Status: RuleStatusType,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `Identifier`: `str`
-- `Description`: `str`
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `RetentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `ResourceTags`:
-  `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-- `Status`: [RuleStatusType](./literals.md#rulestatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+4. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRulesRequestListRulesPaginateTypeDef
 
-<a id="listrulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_rbin.type_defs import ListRulesRequestListRulesPaginateTypeDef
 
+def get_value() -> ListRulesRequestListRulesPaginateTypeDef:
+    return {
+        "ResourceType": ...,
+    }
+```
+
+```python title="Definition"
+class ListRulesRequestListRulesPaginateTypeDef(TypedDict):
+    ResourceType: ResourceTypeType,  # (1)
+    ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import ListRulesRequestRequestTypeDef
+
+def get_value() -> ListRulesRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRulesRequestRequestTypeDef(TypedDict):
+    ResourceType: ResourceTypeType,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (2)
+```
 
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-
-<a id="listrulesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 ## ListRulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import ListRulesResponseTypeDef
+
+def get_value() -> ListRulesResponseTypeDef:
+    return {
+        "Rules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRulesResponseTypeDef(TypedDict):
+    Rules: List[RuleSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Rules`: `List`\[[RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RuleSummaryTypeDef](./type_defs.md#rulesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="resourcetagtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResourceTagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import ResourceTagTypeDef
+
+def get_value() -> ResourceTagTypeDef:
+    return {
+        "ResourceTagKey": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceTagKey`: `str`
-
-Optional fields:
-
-- `ResourceTagValue`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceTagTypeDef(TypedDict):
+    ResourceTagKey: str,
+    ResourceTagValue: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retentionperiodtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetentionPeriodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import RetentionPeriodTypeDef
+
+def get_value() -> RetentionPeriodTypeDef:
+    return {
+        "RetentionPeriodValue": ...,
+        "RetentionPeriodUnit": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetentionPeriodTypeDef(TypedDict):
+    RetentionPeriodValue: int,
+    RetentionPeriodUnit: RetentionPeriodUnitType,  # (1)
+```
 
-- `RetentionPeriodValue`: `int`
-- `RetentionPeriodUnit`: `Literal['DAYS']` (see
-  [RetentionPeriodUnitType](./literals.md#retentionperiodunittype))
-
-<a id="rulesummarytypedef"></a>
-
+1. See [:material-code-brackets: RetentionPeriodUnitType](./literals.md#retentionperiodunittype) 
 ## RuleSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import RuleSummaryTypeDef
+
+def get_value() -> RuleSummaryTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RuleSummaryTypeDef(TypedDict):
+    Identifier: NotRequired[str],
+    Description: NotRequired[str],
+    RetentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (1)
+```
 
-- `Identifier`: `str`
-- `Description`: `str`
-- `RetentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updaterulerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import UpdateRuleRequestRequestTypeDef
+
+def get_value() -> UpdateRuleRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRuleRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+    RetentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (1)
+    Description: NotRequired[str],
+    ResourceType: NotRequired[ResourceTypeType],  # (2)
+    ResourceTags: NotRequired[Sequence[ResourceTagTypeDef]],  # (3)
+```
 
-- `Identifier`: `str`
-
-Optional fields:
-
-- `RetentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `Description`: `str`
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-
-<a id="updateruleresponsetypedef"></a>
-
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
 ## UpdateRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rbin.type_defs import UpdateRuleResponseTypeDef
+
+def get_value() -> UpdateRuleResponseTypeDef:
+    return {
+        "Identifier": ...,
+        "RetentionPeriod": ...,
+        "Description": ...,
+        "ResourceType": ...,
+        "ResourceTags": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRuleResponseTypeDef(TypedDict):
+    Identifier: str,
+    RetentionPeriod: RetentionPeriodTypeDef,  # (1)
+    Description: str,
+    ResourceType: ResourceTypeType,  # (2)
+    ResourceTags: List[ResourceTagTypeDef],  # (3)
+    Status: RuleStatusType,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `Identifier`: `str`
-- `RetentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `Description`: `str`
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `ResourceTags`:
-  `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-- `Status`: [RuleStatusType](./literals.md#rulestatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+4. See [:material-code-brackets: RuleStatusType](./literals.md#rulestatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

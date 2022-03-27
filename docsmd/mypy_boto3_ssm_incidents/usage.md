@@ -1,92 +1,139 @@
-<a id="examples-for-boto3-ssmincidents-module"></a>
-
-# Examples for boto3 SSMIncidents module
+# Examples
 
 > [Index](../README.md) > [SSMIncidents](./README.md) > Examples
 
-- [Examples for boto3 SSMIncidents module](#examples-for-boto3-ssmincidents-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
+    type annotations stubs module [mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[ssm-incidents]` package installed.
 
-Write your `SSMIncidents` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `SSMIncidents` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SSMIncidentsClient
-# and provides type checking and code completion
-client = session.client("ssm-incidents")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type GetResourcePoliciesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_resource_policies")
-for item in paginator.paginate(...):
-    # item has type GetResourcePoliciesOutputTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type WaitForReplicationSetActiveWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("wait_for_replication_set_active")
-waiter.wait()
-```
+    client = session.client("ssm-incidents")  # (1)
+    result = client.create_replication_set()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [SSMIncidentsClient](./client.md)
+    2. result: [:material-code-braces: CreateReplicationSetOutputTypeDef](./type_defs.md#createreplicationsetoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("ssm-incidents")  # (1)
+
+    paginator = client.get_paginator("get_resource_policies")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [SSMIncidentsClient](./client.md)
+    2. paginator: [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
+    3. item: [:material-code-braces: GetResourcePoliciesOutputTypeDef](./type_defs.md#getresourcepoliciesoutputtypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("ssm-incidents")  # (1)
+
+    waiter = client.get_waiter("wait_for_replication_set_active")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [SSMIncidentsClient](./client.md)
+    2. waiter: [WaitForReplicationSetActiveWaiter](./waiters.md#waitforreplicationsetactivewaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[ssm-incidents]` or a standalone
-`mypy_boto3_ssm_incidents` package, you have to explicitly specify
-`client: SSMIncidentsClient` type annotation.
+With `boto3-stubs-lite[ssm-incidents]`
+or a standalone `mypy_boto3_ssm_incidents` package, you have to explicitly specify `client: SSMIncidentsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_ssm_incidents.client import SSMIncidentsClient
-from mypy_boto3_ssm_incidents.paginator import GetResourcePoliciesPaginator
-from mypy_boto3_ssm_incidents.waiter import WaitForReplicationSetActiveWaiter
-from mypy_boto3_ssm_incidents.literals import PaginatorName
-from mypy_boto3_ssm_incidents.literals import WaiterName
-from mypy_boto3_ssm_incidents.type_defs import bool
-from mypy_boto3_ssm_incidents.type_defs import GetResourcePoliciesOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: SSMIncidentsClient = session.client("ssm-incidents")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_ssm_incidents.client import SSMIncidentsClient
+    from mypy_boto3_ssm_incidents.type_defs import CreateReplicationSetOutputTypeDef
+    from mypy_boto3_ssm_incidents.type_defs import CreateReplicationSetInputRequestTypeDef
 
-paginator_name: PaginatorName = "get_resource_policies"
-paginator: GetResourcePoliciesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetResourcePoliciesOutputTypeDef
-    print(item)
 
-waiter_name: WaiterName = "wait_for_replication_set_active"
-waiter: WaitForReplicationSetActiveWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: SSMIncidentsClient = session.client("ssm-incidents")
+
+    kwargs: CreateReplicationSetInputRequestTypeDef = {...}
+    result: CreateReplicationSetOutputTypeDef = client.create_replication_set(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_ssm_incidents.client import SSMIncidentsClient
+    from mypy_boto3_ssm_incidents.paginator import GetResourcePoliciesPaginator
+    from mypy_boto3_ssm_incidents.type_defs import GetResourcePoliciesOutputTypeDef
+
+
+    session = Session()
+    client: SSMIncidentsClient = session.client("ssm-incidents")
+
+    paginator: GetResourcePoliciesPaginator = client.get_paginator("get_resource_policies")
+    for item in paginator.paginate(...):
+        item: GetResourcePoliciesOutputTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_ssm_incidents.client import SSMIncidentsClient
+    from mypy_boto3_ssm_incidents.waiter import WaitForReplicationSetActiveWaiter
+
+    session = Session()
+    client: SSMIncidentsClient = session.client("ssm-incidents")
+
+    waiter: WaitForReplicationSetActiveWaiter = client.get_waiter("wait_for_replication_set_active")
+    waiter.wait()
+    ```
+
+

@@ -1,45 +1,18 @@
-<a id="paginators-for-boto3-networkmanager-module"></a>
-
-# Paginators for boto3 NetworkManager module
+# Paginators
 
 > [Index](../README.md) > [NetworkManager](./README.md) > Paginators
 
-Auto-generated documentation for
-[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
-type annotations stubs module
-[mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+!!! note ""
 
-- [Paginators for boto3 NetworkManager module](#paginators-for-boto3-networkmanager-module)
-  - [DescribeGlobalNetworksPaginator](#describeglobalnetworkspaginator)
-  - [GetConnectPeerAssociationsPaginator](#getconnectpeerassociationspaginator)
-  - [GetConnectionsPaginator](#getconnectionspaginator)
-  - [GetCoreNetworkChangeSetPaginator](#getcorenetworkchangesetpaginator)
-  - [GetCustomerGatewayAssociationsPaginator](#getcustomergatewayassociationspaginator)
-  - [GetDevicesPaginator](#getdevicespaginator)
-  - [GetLinkAssociationsPaginator](#getlinkassociationspaginator)
-  - [GetLinksPaginator](#getlinkspaginator)
-  - [GetNetworkResourceCountsPaginator](#getnetworkresourcecountspaginator)
-  - [GetNetworkResourceRelationshipsPaginator](#getnetworkresourcerelationshipspaginator)
-  - [GetNetworkResourcesPaginator](#getnetworkresourcespaginator)
-  - [GetNetworkTelemetryPaginator](#getnetworktelemetrypaginator)
-  - [GetSitesPaginator](#getsitespaginator)
-  - [GetTransitGatewayConnectPeerAssociationsPaginator](#gettransitgatewayconnectpeerassociationspaginator)
-  - [GetTransitGatewayRegistrationsPaginator](#gettransitgatewayregistrationspaginator)
-  - [ListAttachmentsPaginator](#listattachmentspaginator)
-  - [ListConnectPeersPaginator](#listconnectpeerspaginator)
-  - [ListCoreNetworkPolicyVersionsPaginator](#listcorenetworkpolicyversionspaginator)
-  - [ListCoreNetworksPaginator](#listcorenetworkspaginator)
-
-<a id="describeglobalnetworkspaginator"></a>
+    Auto-generated documentation for [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+    type annotations stubs module [mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 ## DescribeGlobalNetworksPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("describe_global_networks")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("describe_global_networks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.DescribeGlobalNetworks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import DescribeGlobalNetworksPaginator
@@ -48,28 +21,40 @@ def get_describe_global_networks_paginator() -> DescribeGlobalNetworksPaginator:
     return Session().client("networkmanager").get_paginator("describe_global_networks")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.DescribeGlobalNetworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.DescribeGlobalNetworks)
 
-Arguments for `DescribeGlobalNetworksPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeGlobalNetworksPaginator.paginate` method.
 
-`DescribeGlobalNetworksPaginator.paginate` returns
-`_PageIterator`\[[DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeGlobalNetworksResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getconnectpeerassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef = {  # (1)
+    "GlobalNetworkIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef](./type_defs.md#describeglobalnetworksrequestdescribeglobalnetworkspaginatetypedef) 
 ## GetConnectPeerAssociationsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_connect_peer_associations")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_connect_peer_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnectPeerAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetConnectPeerAssociationsPaginator
@@ -78,29 +63,41 @@ def get_get_connect_peer_associations_paginator() -> GetConnectPeerAssociationsP
     return Session().client("networkmanager").get_paginator("get_connect_peer_associations")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetConnectPeerAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnectPeerAssociations)
 
-Arguments for `GetConnectPeerAssociationsPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ConnectPeerIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetConnectPeerAssociationsPaginator.paginate` method.
 
-`GetConnectPeerAssociationsPaginator.paginate` returns
-`_PageIterator`\[[GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ConnectPeerIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetConnectPeerAssociationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getconnectionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef](./type_defs.md#getconnectpeerassociationsrequestgetconnectpeerassociationspaginatetypedef) 
 ## GetConnectionsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_connections")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_connections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnections)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetConnectionsPaginator
@@ -109,30 +106,42 @@ def get_get_connections_paginator() -> GetConnectionsPaginator:
     return Session().client("networkmanager").get_paginator("get_connections")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetConnections)
 
-Arguments for `GetConnectionsPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ConnectionIds`: `Sequence`\[`str`\]
-- `DeviceId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetConnectionsPaginator.paginate` method.
 
-`GetConnectionsPaginator.paginate` returns
-`_PageIterator`\[[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ConnectionIds: Sequence[str] = ...,
+    DeviceId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetConnectionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getcorenetworkchangesetpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetConnectionsRequestGetConnectionsPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetConnectionsRequestGetConnectionsPaginateTypeDef](./type_defs.md#getconnectionsrequestgetconnectionspaginatetypedef) 
 ## GetCoreNetworkChangeSetPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_core_network_change_set")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_core_network_change_set")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetCoreNetworkChangeSet)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetCoreNetworkChangeSetPaginator
@@ -141,29 +150,42 @@ def get_get_core_network_change_set_paginator() -> GetCoreNetworkChangeSetPagina
     return Session().client("networkmanager").get_paginator("get_core_network_change_set")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetCoreNetworkChangeSet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetCoreNetworkChangeSet)
 
-Arguments for `GetCoreNetworkChangeSetPaginator.paginate` method:
+### paginate
 
-- `CoreNetworkId`: `str` *(required)*
-- `PolicyVersionId`: `int` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetCoreNetworkChangeSetPaginator.paginate` method.
 
-`GetCoreNetworkChangeSetPaginator.paginate` returns
-`_PageIterator`\[[GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CoreNetworkId: str,
+    PolicyVersionId: int,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetCoreNetworkChangeSetResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getcustomergatewayassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "PolicyVersionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef](./type_defs.md#getcorenetworkchangesetrequestgetcorenetworkchangesetpaginatetypedef) 
 ## GetCustomerGatewayAssociationsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_customer_gateway_associations")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_customer_gateway_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetCustomerGatewayAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetCustomerGatewayAssociationsPaginator
@@ -172,29 +194,41 @@ def get_get_customer_gateway_associations_paginator() -> GetCustomerGatewayAssoc
     return Session().client("networkmanager").get_paginator("get_customer_gateway_associations")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetCustomerGatewayAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetCustomerGatewayAssociations)
 
-Arguments for `GetCustomerGatewayAssociationsPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `CustomerGatewayArns`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetCustomerGatewayAssociationsPaginator.paginate` method.
 
-`GetCustomerGatewayAssociationsPaginator.paginate` returns
-`_PageIterator`\[[GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    CustomerGatewayArns: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetCustomerGatewayAssociationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getdevicespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef](./type_defs.md#getcustomergatewayassociationsrequestgetcustomergatewayassociationspaginatetypedef) 
 ## GetDevicesPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_devices")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_devices")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetDevices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetDevicesPaginator
@@ -203,30 +237,42 @@ def get_get_devices_paginator() -> GetDevicesPaginator:
     return Session().client("networkmanager").get_paginator("get_devices")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetDevices)
 
-Arguments for `GetDevicesPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceIds`: `Sequence`\[`str`\]
-- `SiteId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDevicesPaginator.paginate` method.
 
-`GetDevicesPaginator.paginate` returns
-`_PageIterator`\[[GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    DeviceIds: Sequence[str] = ...,
+    SiteId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetDevicesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getlinkassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDevicesRequestGetDevicesPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDevicesRequestGetDevicesPaginateTypeDef](./type_defs.md#getdevicesrequestgetdevicespaginatetypedef) 
 ## GetLinkAssociationsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_link_associations")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_link_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinkAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetLinkAssociationsPaginator
@@ -235,30 +281,42 @@ def get_get_link_associations_paginator() -> GetLinkAssociationsPaginator:
     return Session().client("networkmanager").get_paginator("get_link_associations")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetLinkAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinkAssociations)
 
-Arguments for `GetLinkAssociationsPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceId`: `str`
-- `LinkId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetLinkAssociationsPaginator.paginate` method.
 
-`GetLinkAssociationsPaginator.paginate` returns
-`_PageIterator`\[[GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    DeviceId: str = ...,
+    LinkId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetLinkAssociationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getlinkspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef](./type_defs.md#getlinkassociationsrequestgetlinkassociationspaginatetypedef) 
 ## GetLinksPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_links")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_links")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetLinksPaginator
@@ -267,32 +325,44 @@ def get_get_links_paginator() -> GetLinksPaginator:
     return Session().client("networkmanager").get_paginator("get_links")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetLinks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetLinks)
 
-Arguments for `GetLinksPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `LinkIds`: `Sequence`\[`str`\]
-- `SiteId`: `str`
-- `Type`: `str`
-- `Provider`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetLinksPaginator.paginate` method.
 
-`GetLinksPaginator.paginate` returns
-`_PageIterator`\[[GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    LinkIds: Sequence[str] = ...,
+    SiteId: str = ...,
+    Type: str = ...,
+    Provider: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetLinksResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getnetworkresourcecountspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetLinksRequestGetLinksPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetLinksRequestGetLinksPaginateTypeDef](./type_defs.md#getlinksrequestgetlinkspaginatetypedef) 
 ## GetNetworkResourceCountsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_network_resource_counts")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_network_resource_counts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkResourceCounts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetNetworkResourceCountsPaginator
@@ -301,29 +371,41 @@ def get_get_network_resource_counts_paginator() -> GetNetworkResourceCountsPagin
     return Session().client("networkmanager").get_paginator("get_network_resource_counts")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetNetworkResourceCounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkResourceCounts)
 
-Arguments for `GetNetworkResourceCountsPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ResourceType`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetNetworkResourceCountsPaginator.paginate` method.
 
-`GetNetworkResourceCountsPaginator.paginate` returns
-`_PageIterator`\[[GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ResourceType: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetNetworkResourceCountsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getnetworkresourcerelationshipspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef](./type_defs.md#getnetworkresourcecountsrequestgetnetworkresourcecountspaginatetypedef) 
 ## GetNetworkResourceRelationshipsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_network_resource_relationships")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_network_resource_relationships")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkResourceRelationships)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetNetworkResourceRelationshipsPaginator
@@ -332,34 +414,46 @@ def get_get_network_resource_relationships_paginator() -> GetNetworkResourceRela
     return Session().client("networkmanager").get_paginator("get_network_resource_relationships")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetNetworkResourceRelationships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkResourceRelationships)
 
-Arguments for `GetNetworkResourceRelationshipsPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `CoreNetworkId`: `str`
-- `RegisteredGatewayArn`: `str`
-- `AwsRegion`: `str`
-- `AccountId`: `str`
-- `ResourceType`: `str`
-- `ResourceArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetNetworkResourceRelationshipsPaginator.paginate` method.
 
-`GetNetworkResourceRelationshipsPaginator.paginate` returns
-`_PageIterator`\[[GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    CoreNetworkId: str = ...,
+    RegisteredGatewayArn: str = ...,
+    AwsRegion: str = ...,
+    AccountId: str = ...,
+    ResourceType: str = ...,
+    ResourceArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetNetworkResourceRelationshipsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getnetworkresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef](./type_defs.md#getnetworkresourcerelationshipsrequestgetnetworkresourcerelationshipspaginatetypedef) 
 ## GetNetworkResourcesPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_network_resources")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_network_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetNetworkResourcesPaginator
@@ -368,34 +462,46 @@ def get_get_network_resources_paginator() -> GetNetworkResourcesPaginator:
     return Session().client("networkmanager").get_paginator("get_network_resources")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetNetworkResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkResources)
 
-Arguments for `GetNetworkResourcesPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `CoreNetworkId`: `str`
-- `RegisteredGatewayArn`: `str`
-- `AwsRegion`: `str`
-- `AccountId`: `str`
-- `ResourceType`: `str`
-- `ResourceArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetNetworkResourcesPaginator.paginate` method.
 
-`GetNetworkResourcesPaginator.paginate` returns
-`_PageIterator`\[[GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    CoreNetworkId: str = ...,
+    RegisteredGatewayArn: str = ...,
+    AwsRegion: str = ...,
+    AccountId: str = ...,
+    ResourceType: str = ...,
+    ResourceArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetNetworkResourcesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getnetworktelemetrypaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef](./type_defs.md#getnetworkresourcesrequestgetnetworkresourcespaginatetypedef) 
 ## GetNetworkTelemetryPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_network_telemetry")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_network_telemetry")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkTelemetry)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetNetworkTelemetryPaginator
@@ -404,34 +510,46 @@ def get_get_network_telemetry_paginator() -> GetNetworkTelemetryPaginator:
     return Session().client("networkmanager").get_paginator("get_network_telemetry")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetNetworkTelemetry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetNetworkTelemetry)
 
-Arguments for `GetNetworkTelemetryPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `CoreNetworkId`: `str`
-- `RegisteredGatewayArn`: `str`
-- `AwsRegion`: `str`
-- `AccountId`: `str`
-- `ResourceType`: `str`
-- `ResourceArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetNetworkTelemetryPaginator.paginate` method.
 
-`GetNetworkTelemetryPaginator.paginate` returns
-`_PageIterator`\[[GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    CoreNetworkId: str = ...,
+    RegisteredGatewayArn: str = ...,
+    AwsRegion: str = ...,
+    AccountId: str = ...,
+    ResourceType: str = ...,
+    ResourceArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetNetworkTelemetryResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getsitespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef](./type_defs.md#getnetworktelemetryrequestgetnetworktelemetrypaginatetypedef) 
 ## GetSitesPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_sites")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_sites")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetSites)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetSitesPaginator
@@ -440,29 +558,41 @@ def get_get_sites_paginator() -> GetSitesPaginator:
     return Session().client("networkmanager").get_paginator("get_sites")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetSites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetSites)
 
-Arguments for `GetSitesPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `SiteIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetSitesPaginator.paginate` method.
 
-`GetSitesPaginator.paginate` returns
-`_PageIterator`\[[GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    SiteIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetSitesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="gettransitgatewayconnectpeerassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetSitesRequestGetSitesPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetSitesRequestGetSitesPaginateTypeDef](./type_defs.md#getsitesrequestgetsitespaginatetypedef) 
 ## GetTransitGatewayConnectPeerAssociationsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetTransitGatewayConnectPeerAssociationsPaginator
@@ -471,30 +601,41 @@ def get_get_transit_gateway_connect_peer_associations_paginator() -> GetTransitG
     return Session().client("networkmanager").get_paginator("get_transit_gateway_connect_peer_associations")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayConnectPeerAssociations)
 
-Arguments for `GetTransitGatewayConnectPeerAssociationsPaginator.paginate`
-method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayConnectPeerArns`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTransitGatewayConnectPeerAssociationsPaginator.paginate` method.
 
-`GetTransitGatewayConnectPeerAssociationsPaginator.paginate` returns
-`_PageIterator`\[[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    TransitGatewayConnectPeerArns: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetTransitGatewayConnectPeerAssociationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="gettransitgatewayregistrationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsrequestgettransitgatewayconnectpeerassociationspaginatetypedef) 
 ## GetTransitGatewayRegistrationsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("get_transit_gateway_registrations")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("get_transit_gateway_registrations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayRegistrations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import GetTransitGatewayRegistrationsPaginator
@@ -503,29 +644,41 @@ def get_get_transit_gateway_registrations_paginator() -> GetTransitGatewayRegist
     return Session().client("networkmanager").get_paginator("get_transit_gateway_registrations")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.GetTransitGatewayRegistrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.GetTransitGatewayRegistrations)
 
-Arguments for `GetTransitGatewayRegistrationsPaginator.paginate` method:
+### paginate
 
-- `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayArns`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetTransitGatewayRegistrationsPaginator.paginate` method.
 
-`GetTransitGatewayRegistrationsPaginator.paginate` returns
-`_PageIterator`\[[GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalNetworkId: str,
+    TransitGatewayArns: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetTransitGatewayRegistrationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listattachmentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef](./type_defs.md#gettransitgatewayregistrationsrequestgettransitgatewayregistrationspaginatetypedef) 
 ## ListAttachmentsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("list_attachments")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("list_attachments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListAttachments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import ListAttachmentsPaginator
@@ -534,31 +687,45 @@ def get_list_attachments_paginator() -> ListAttachmentsPaginator:
     return Session().client("networkmanager").get_paginator("list_attachments")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.ListAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListAttachments)
 
-Arguments for `ListAttachmentsPaginator.paginate` method:
+### paginate
 
-- `CoreNetworkId`: `str`
-- `AttachmentType`: [AttachmentTypeType](./literals.md#attachmenttypetype)
-- `EdgeLocation`: `str`
-- `State`: [AttachmentStateType](./literals.md#attachmentstatetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAttachmentsPaginator.paginate` method.
 
-`ListAttachmentsPaginator.paginate` returns
-`_PageIterator`\[[ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CoreNetworkId: str = ...,
+    AttachmentType: AttachmentTypeType = ...,  # (1)
+    EdgeLocation: str = ...,
+    State: AttachmentStateType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListAttachmentsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listconnectpeerspaginator"></a>
+1. See [:material-code-brackets: AttachmentTypeType](./literals.md#attachmenttypetype) 
+2. See [:material-code-brackets: AttachmentStateType](./literals.md#attachmentstatetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAttachmentsRequestListAttachmentsPaginateTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAttachmentsRequestListAttachmentsPaginateTypeDef](./type_defs.md#listattachmentsrequestlistattachmentspaginatetypedef) 
 ## ListConnectPeersPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("list_connect_peers")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("list_connect_peers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListConnectPeers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import ListConnectPeersPaginator
@@ -567,29 +734,41 @@ def get_list_connect_peers_paginator() -> ListConnectPeersPaginator:
     return Session().client("networkmanager").get_paginator("list_connect_peers")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.ListConnectPeers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListConnectPeers)
 
-Arguments for `ListConnectPeersPaginator.paginate` method:
+### paginate
 
-- `CoreNetworkId`: `str`
-- `ConnectAttachmentId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListConnectPeersPaginator.paginate` method.
 
-`ListConnectPeersPaginator.paginate` returns
-`_PageIterator`\[[ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CoreNetworkId: str = ...,
+    ConnectAttachmentId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListConnectPeersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcorenetworkpolicyversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListConnectPeersRequestListConnectPeersPaginateTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListConnectPeersRequestListConnectPeersPaginateTypeDef](./type_defs.md#listconnectpeersrequestlistconnectpeerspaginatetypedef) 
 ## ListCoreNetworkPolicyVersionsPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("list_core_network_policy_versions")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("list_core_network_policy_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListCoreNetworkPolicyVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import ListCoreNetworkPolicyVersionsPaginator
@@ -598,28 +777,40 @@ def get_list_core_network_policy_versions_paginator() -> ListCoreNetworkPolicyVe
     return Session().client("networkmanager").get_paginator("list_core_network_policy_versions")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.ListCoreNetworkPolicyVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListCoreNetworkPolicyVersions)
 
-Arguments for `ListCoreNetworkPolicyVersionsPaginator.paginate` method:
+### paginate
 
-- `CoreNetworkId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCoreNetworkPolicyVersionsPaginator.paginate` method.
 
-`ListCoreNetworkPolicyVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CoreNetworkId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCoreNetworkPolicyVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcorenetworkspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef](./type_defs.md#listcorenetworkpolicyversionsrequestlistcorenetworkpolicyversionspaginatetypedef) 
 ## ListCoreNetworksPaginator
 
-Type annotations for
-`boto3.client("networkmanager").get_paginator("list_core_networks")`.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator("list_core_networks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListCoreNetworks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_networkmanager.paginator import ListCoreNetworksPaginator
@@ -628,13 +819,30 @@ def get_list_core_networks_paginator() -> ListCoreNetworksPaginator:
     return Session().client("networkmanager").get_paginator("list_core_networks")
 ```
 
-Boto3 documentation:
-[NetworkManager.Paginator.ListCoreNetworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Paginator.ListCoreNetworks)
 
-Arguments for `ListCoreNetworksPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCoreNetworksPaginator.paginate` method.
 
-`ListCoreNetworksPaginator.paginate` returns
-`_PageIterator`\[[ListCoreNetworksResponseTypeDef](./type_defs.md#listcorenetworksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCoreNetworksResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCoreNetworksResponseTypeDef](./type_defs.md#listcorenetworksresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListCoreNetworksRequestListCoreNetworksPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCoreNetworksRequestListCoreNetworksPaginateTypeDef](./type_defs.md#listcorenetworksrequestlistcorenetworkspaginatetypedef) 

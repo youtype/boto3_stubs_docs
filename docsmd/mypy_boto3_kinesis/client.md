@@ -1,62 +1,18 @@
-<a id="kinesisclient-for-boto3-kinesis-module"></a>
-
-# KinesisClient for boto3 Kinesis module
+# KinesisClient
 
 > [Index](../README.md) > [Kinesis](./README.md) > KinesisClient
 
-Auto-generated documentation for
-[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
-type annotations stubs module
-[mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+!!! note ""
 
-- [KinesisClient for boto3 Kinesis module](#kinesisclient-for-boto3-kinesis-module)
-  - [KinesisClient](#kinesisclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_tags_to_stream](#add_tags_to_stream)
-    - [can_paginate](#can_paginate)
-    - [create_stream](#create_stream)
-    - [decrease_stream_retention_period](#decrease_stream_retention_period)
-    - [delete_stream](#delete_stream)
-    - [deregister_stream_consumer](#deregister_stream_consumer)
-    - [describe_limits](#describe_limits)
-    - [describe_stream](#describe_stream)
-    - [describe_stream_consumer](#describe_stream_consumer)
-    - [describe_stream_summary](#describe_stream_summary)
-    - [disable_enhanced_monitoring](#disable_enhanced_monitoring)
-    - [enable_enhanced_monitoring](#enable_enhanced_monitoring)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_records](#get_records)
-    - [get_shard_iterator](#get_shard_iterator)
-    - [increase_stream_retention_period](#increase_stream_retention_period)
-    - [list_shards](#list_shards)
-    - [list_stream_consumers](#list_stream_consumers)
-    - [list_streams](#list_streams)
-    - [list_tags_for_stream](#list_tags_for_stream)
-    - [merge_shards](#merge_shards)
-    - [put_record](#put_record)
-    - [put_records](#put_records)
-    - [register_stream_consumer](#register_stream_consumer)
-    - [remove_tags_from_stream](#remove_tags_from_stream)
-    - [split_shard](#split_shard)
-    - [start_stream_encryption](#start_stream_encryption)
-    - [stop_stream_encryption](#stop_stream_encryption)
-    - [subscribe_to_shard](#subscribe_to_shard)
-    - [update_shard_count](#update_shard_count)
-    - [update_stream_mode](#update_stream_mode)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="kinesisclient"></a>
+    Auto-generated documentation for [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
+    type annotations stubs module [mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 ## KinesisClient
 
-Type annotations for `boto3.client("kinesis")`
+Type annotations and code completion for `#!python boto3.client("kinesis")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_kinesis.client import KinesisClient
 
@@ -64,761 +20,1016 @@ def get_kinesis_client() -> KinesisClient:
     return Session().client("kinesis")
 ```
 
-Boto3 documentation:
-[Kinesis.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("kinesis").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("kinesis")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ExpiredIteratorException,
+    client.ExpiredNextTokenException,
+    client.InternalFailureException,
+    client.InvalidArgumentException,
+    client.KMSAccessDeniedException,
+    client.KMSDisabledException,
+    client.KMSInvalidStateException,
+    client.KMSNotFoundException,
+    client.KMSOptInRequired,
+    client.KMSThrottlingException,
+    client.LimitExceededException,
+    client.ProvisionedThroughputExceededException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_kinesis.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ExpiredIteratorException`
-- `Exceptions.ExpiredNextTokenException`
-- `Exceptions.InternalFailureException`
-- `Exceptions.InvalidArgumentException`
-- `Exceptions.KMSAccessDeniedException`
-- `Exceptions.KMSDisabledException`
-- `Exceptions.KMSInvalidStateException`
-- `Exceptions.KMSNotFoundException`
-- `Exceptions.KMSOptInRequired`
-- `Exceptions.KMSThrottlingException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ProvisionedThroughputExceededException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-KinesisClient exceptions.
-
-Type annotations for `boto3.client("kinesis").exceptions` method.
-
-Boto3 documentation:
-[Kinesis.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_tags\_to\_stream"></a>
-
-### add_tags_to_stream
+### add\_tags\_to\_stream
 
 Adds or updates tags for the specified Kinesis data stream.
 
-Type annotations for `boto3.client("kinesis").add_tags_to_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").add_tags_to_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.add_tags_to_stream)
 
-Boto3 documentation:
-[Kinesis.Client.add_tags_to_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.add_tags_to_stream)
+```python title="Method definition"
+def add_tags_to_stream(
+    self,
+    *,
+    StreamName: str,
+    Tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsToStreamInputRequestTypeDef](./type_defs.md#addtagstostreaminputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsToStreamInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "Tags": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.add_tags_to_stream(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AddTagsToStreamInputRequestTypeDef](./type_defs.md#addtagstostreaminputrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("kinesis").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.can_paginate)
 
-Boto3 documentation:
-[Kinesis.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_stream"></a>
-
-### create_stream
+### create\_stream
 
 Creates a Kinesis data stream.
 
-Type annotations for `boto3.client("kinesis").create_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").create_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.create_stream)
 
-Boto3 documentation:
-[Kinesis.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.create_stream)
+```python title="Method definition"
+def create_stream(
+    self,
+    *,
+    StreamName: str,
+    ShardCount: int = ...,
+    StreamModeDetails: StreamModeDetailsTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamInputRequestTypeDef](./type_defs.md#createstreaminputrequesttypedef).
+1. See [:material-code-braces: StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `ShardCount`: `int`
-- `StreamModeDetails`:
-  [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateStreamInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-<a id="decrease\_stream\_retention\_period"></a>
+parent.create_stream(**kwargs)
+```
 
-### decrease_stream_retention_period
+1. See [:material-code-braces: CreateStreamInputRequestTypeDef](./type_defs.md#createstreaminputrequesttypedef) 
+
+### decrease\_stream\_retention\_period
 
 Decreases the Kinesis data stream's retention period, which is the length of
 time data records are accessible after they are added to the stream.
 
-Type annotations for `boto3.client("kinesis").decrease_stream_retention_period`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesis").decrease_stream_retention_period` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.decrease_stream_retention_period)
 
-Boto3 documentation:
-[Kinesis.Client.decrease_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.decrease_stream_retention_period)
+```python title="Method definition"
+def decrease_stream_retention_period(
+    self,
+    *,
+    StreamName: str,
+    RetentionPeriodHours: int,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DecreaseStreamRetentionPeriodInputRequestTypeDef](./type_defs.md#decreasestreamretentionperiodinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `RetentionPeriodHours`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DecreaseStreamRetentionPeriodInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "RetentionPeriodHours": ...,
+}
 
-<a id="delete\_stream"></a>
+parent.decrease_stream_retention_period(**kwargs)
+```
 
-### delete_stream
+1. See [:material-code-braces: DecreaseStreamRetentionPeriodInputRequestTypeDef](./type_defs.md#decreasestreamretentionperiodinputrequesttypedef) 
+
+### delete\_stream
 
 Deletes a Kinesis data stream and all its shards and data.
 
-Type annotations for `boto3.client("kinesis").delete_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").delete_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.delete_stream)
 
-Boto3 documentation:
-[Kinesis.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.delete_stream)
+```python title="Method definition"
+def delete_stream(
+    self,
+    *,
+    StreamName: str,
+    EnforceConsumerDeletion: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStreamInputRequestTypeDef](./type_defs.md#deletestreaminputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `EnforceConsumerDeletion`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteStreamInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-<a id="deregister\_stream\_consumer"></a>
+parent.delete_stream(**kwargs)
+```
 
-### deregister_stream_consumer
+1. See [:material-code-braces: DeleteStreamInputRequestTypeDef](./type_defs.md#deletestreaminputrequesttypedef) 
+
+### deregister\_stream\_consumer
 
 To deregister a consumer, provide its ARN.
 
-Type annotations for `boto3.client("kinesis").deregister_stream_consumer`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesis").deregister_stream_consumer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.deregister_stream_consumer)
 
-Boto3 documentation:
-[Kinesis.Client.deregister_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.deregister_stream_consumer)
+```python title="Method definition"
+def deregister_stream_consumer(
+    self,
+    *,
+    StreamARN: str = ...,
+    ConsumerName: str = ...,
+    ConsumerARN: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterStreamConsumerInputRequestTypeDef](./type_defs.md#deregisterstreamconsumerinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StreamARN`: `str`
-- `ConsumerName`: `str`
-- `ConsumerARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeregisterStreamConsumerInputRequestTypeDef = {  # (1)
+    "StreamARN": ...,
+}
 
-<a id="describe\_limits"></a>
+parent.deregister_stream_consumer(**kwargs)
+```
 
-### describe_limits
+1. See [:material-code-braces: DeregisterStreamConsumerInputRequestTypeDef](./type_defs.md#deregisterstreamconsumerinputrequesttypedef) 
+
+### describe\_limits
 
 Describes the shard limits and usage for the account.
 
-Type annotations for `boto3.client("kinesis").describe_limits` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").describe_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_limits)
 
-Boto3 documentation:
-[Kinesis.Client.describe_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_limits)
+```python title="Method definition"
+def describe_limits(
+    self,
+) -> DescribeLimitsOutputTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
+1. See [:material-code-braces: DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef) 
 
-<a id="describe\_stream"></a>
-
-### describe_stream
+### describe\_stream
 
 Describes the specified Kinesis data stream.
 
-Type annotations for `boto3.client("kinesis").describe_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").describe_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream)
 
-Boto3 documentation:
-[Kinesis.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream)
+```python title="Method definition"
+def describe_stream(
+    self,
+    *,
+    StreamName: str,
+    Limit: int = ...,
+    ExclusiveStartShardId: str = ...,
+) -> DescribeStreamOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStreamInputRequestTypeDef](./type_defs.md#describestreaminputrequesttypedef).
+1. See [:material-code-braces: DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `Limit`: `int`
-- `ExclusiveStartShardId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeStreamInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-Returns
-[DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
+parent.describe_stream(**kwargs)
+```
 
-<a id="describe\_stream\_consumer"></a>
+1. See [:material-code-braces: DescribeStreamInputRequestTypeDef](./type_defs.md#describestreaminputrequesttypedef) 
 
-### describe_stream_consumer
+### describe\_stream\_consumer
 
 To get the description of a registered consumer, provide the ARN of the
 consumer.
 
-Type annotations for `boto3.client("kinesis").describe_stream_consumer` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").describe_stream_consumer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_consumer)
 
-Boto3 documentation:
-[Kinesis.Client.describe_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_consumer)
+```python title="Method definition"
+def describe_stream_consumer(
+    self,
+    *,
+    StreamARN: str = ...,
+    ConsumerName: str = ...,
+    ConsumerARN: str = ...,
+) -> DescribeStreamConsumerOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStreamConsumerInputRequestTypeDef](./type_defs.md#describestreamconsumerinputrequesttypedef).
+1. See [:material-code-braces: DescribeStreamConsumerOutputTypeDef](./type_defs.md#describestreamconsumeroutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamARN`: `str`
-- `ConsumerName`: `str`
-- `ConsumerARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeStreamConsumerInputRequestTypeDef = {  # (1)
+    "StreamARN": ...,
+}
 
-Returns
-[DescribeStreamConsumerOutputTypeDef](./type_defs.md#describestreamconsumeroutputtypedef).
+parent.describe_stream_consumer(**kwargs)
+```
 
-<a id="describe\_stream\_summary"></a>
+1. See [:material-code-braces: DescribeStreamConsumerInputRequestTypeDef](./type_defs.md#describestreamconsumerinputrequesttypedef) 
 
-### describe_stream_summary
+### describe\_stream\_summary
 
 Provides a summarized description of the specified Kinesis data stream without
 the shard list.
 
-Type annotations for `boto3.client("kinesis").describe_stream_summary` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").describe_stream_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_summary)
 
-Boto3 documentation:
-[Kinesis.Client.describe_stream_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.describe_stream_summary)
+```python title="Method definition"
+def describe_stream_summary(
+    self,
+    *,
+    StreamName: str,
+) -> DescribeStreamSummaryOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStreamSummaryInputRequestTypeDef](./type_defs.md#describestreamsummaryinputrequesttypedef).
+1. See [:material-code-braces: DescribeStreamSummaryOutputTypeDef](./type_defs.md#describestreamsummaryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStreamSummaryInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-Returns
-[DescribeStreamSummaryOutputTypeDef](./type_defs.md#describestreamsummaryoutputtypedef).
+parent.describe_stream_summary(**kwargs)
+```
 
-<a id="disable\_enhanced\_monitoring"></a>
+1. See [:material-code-braces: DescribeStreamSummaryInputRequestTypeDef](./type_defs.md#describestreamsummaryinputrequesttypedef) 
 
-### disable_enhanced_monitoring
+### disable\_enhanced\_monitoring
 
 Disables enhanced monitoring.
 
-Type annotations for `boto3.client("kinesis").disable_enhanced_monitoring`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesis").disable_enhanced_monitoring` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.disable_enhanced_monitoring)
 
-Boto3 documentation:
-[Kinesis.Client.disable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.disable_enhanced_monitoring)
+```python title="Method definition"
+def disable_enhanced_monitoring(
+    self,
+    *,
+    StreamName: str,
+    ShardLevelMetrics: Sequence[MetricsNameType],  # (1)
+) -> EnhancedMonitoringOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DisableEnhancedMonitoringInputRequestTypeDef](./type_defs.md#disableenhancedmonitoringinputrequesttypedef).
+1. See [:material-code-brackets: MetricsNameType](./literals.md#metricsnametype) 
+2. See [:material-code-braces: EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `ShardLevelMetrics`:
-  `Sequence`\[[MetricsNameType](./literals.md#metricsnametype)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableEnhancedMonitoringInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "ShardLevelMetrics": ...,
+}
 
-Returns
-[EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
+parent.disable_enhanced_monitoring(**kwargs)
+```
 
-<a id="enable\_enhanced\_monitoring"></a>
+1. See [:material-code-braces: DisableEnhancedMonitoringInputRequestTypeDef](./type_defs.md#disableenhancedmonitoringinputrequesttypedef) 
 
-### enable_enhanced_monitoring
+### enable\_enhanced\_monitoring
 
 Enables enhanced Kinesis data stream monitoring for shard-level metrics.
 
-Type annotations for `boto3.client("kinesis").enable_enhanced_monitoring`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesis").enable_enhanced_monitoring` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.enable_enhanced_monitoring)
 
-Boto3 documentation:
-[Kinesis.Client.enable_enhanced_monitoring](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.enable_enhanced_monitoring)
+```python title="Method definition"
+def enable_enhanced_monitoring(
+    self,
+    *,
+    StreamName: str,
+    ShardLevelMetrics: Sequence[MetricsNameType],  # (1)
+) -> EnhancedMonitoringOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[EnableEnhancedMonitoringInputRequestTypeDef](./type_defs.md#enableenhancedmonitoringinputrequesttypedef).
+1. See [:material-code-brackets: MetricsNameType](./literals.md#metricsnametype) 
+2. See [:material-code-braces: EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `ShardLevelMetrics`:
-  `Sequence`\[[MetricsNameType](./literals.md#metricsnametype)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableEnhancedMonitoringInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "ShardLevelMetrics": ...,
+}
 
-Returns
-[EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
+parent.enable_enhanced_monitoring(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableEnhancedMonitoringInputRequestTypeDef](./type_defs.md#enableenhancedmonitoringinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("kinesis").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Kinesis.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_records"></a>
-
-### get_records
+### get\_records
 
 Gets data records from a Kinesis data stream's shard.
 
-Type annotations for `boto3.client("kinesis").get_records` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").get_records` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_records)
 
-Boto3 documentation:
-[Kinesis.Client.get_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_records)
+```python title="Method definition"
+def get_records(
+    self,
+    *,
+    ShardIterator: str,
+    Limit: int = ...,
+) -> GetRecordsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecordsInputRequestTypeDef](./type_defs.md#getrecordsinputrequesttypedef).
+1. See [:material-code-braces: GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ShardIterator`: `str` *(required)*
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetRecordsInputRequestTypeDef = {  # (1)
+    "ShardIterator": ...,
+}
 
-Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
+parent.get_records(**kwargs)
+```
 
-<a id="get\_shard\_iterator"></a>
+1. See [:material-code-braces: GetRecordsInputRequestTypeDef](./type_defs.md#getrecordsinputrequesttypedef) 
 
-### get_shard_iterator
+### get\_shard\_iterator
 
 Gets an Amazon Kinesis shard iterator.
 
-Type annotations for `boto3.client("kinesis").get_shard_iterator` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").get_shard_iterator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_shard_iterator)
 
-Boto3 documentation:
-[Kinesis.Client.get_shard_iterator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.get_shard_iterator)
+```python title="Method definition"
+def get_shard_iterator(
+    self,
+    *,
+    StreamName: str,
+    ShardId: str,
+    ShardIteratorType: ShardIteratorTypeType,  # (1)
+    StartingSequenceNumber: str = ...,
+    Timestamp: Union[datetime, str] = ...,
+) -> GetShardIteratorOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetShardIteratorInputRequestTypeDef](./type_defs.md#getsharditeratorinputrequesttypedef).
+1. See [:material-code-brackets: ShardIteratorTypeType](./literals.md#sharditeratortypetype) 
+2. See [:material-code-braces: GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `ShardId`: `str` *(required)*
-- `ShardIteratorType`:
-  [ShardIteratorTypeType](./literals.md#sharditeratortypetype) *(required)*
-- `StartingSequenceNumber`: `str`
-- `Timestamp`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetShardIteratorInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "ShardId": ...,
+    "ShardIteratorType": ...,
+}
 
-Returns
-[GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
+parent.get_shard_iterator(**kwargs)
+```
 
-<a id="increase\_stream\_retention\_period"></a>
+1. See [:material-code-braces: GetShardIteratorInputRequestTypeDef](./type_defs.md#getsharditeratorinputrequesttypedef) 
 
-### increase_stream_retention_period
+### increase\_stream\_retention\_period
 
 Increases the Kinesis data stream's retention period, which is the length of
 time data records are accessible after they are added to the stream.
 
-Type annotations for `boto3.client("kinesis").increase_stream_retention_period`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesis").increase_stream_retention_period` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.increase_stream_retention_period)
 
-Boto3 documentation:
-[Kinesis.Client.increase_stream_retention_period](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.increase_stream_retention_period)
+```python title="Method definition"
+def increase_stream_retention_period(
+    self,
+    *,
+    StreamName: str,
+    RetentionPeriodHours: int,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[IncreaseStreamRetentionPeriodInputRequestTypeDef](./type_defs.md#increasestreamretentionperiodinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `RetentionPeriodHours`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: IncreaseStreamRetentionPeriodInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "RetentionPeriodHours": ...,
+}
 
-<a id="list\_shards"></a>
+parent.increase_stream_retention_period(**kwargs)
+```
 
-### list_shards
+1. See [:material-code-braces: IncreaseStreamRetentionPeriodInputRequestTypeDef](./type_defs.md#increasestreamretentionperiodinputrequesttypedef) 
+
+### list\_shards
 
 Lists the shards in a stream and provides information about each shard.
 
-Type annotations for `boto3.client("kinesis").list_shards` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").list_shards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_shards)
 
-Boto3 documentation:
-[Kinesis.Client.list_shards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_shards)
+```python title="Method definition"
+def list_shards(
+    self,
+    *,
+    StreamName: str = ...,
+    NextToken: str = ...,
+    ExclusiveStartShardId: str = ...,
+    MaxResults: int = ...,
+    StreamCreationTimestamp: Union[datetime, str] = ...,
+    ShardFilter: ShardFilterTypeDef = ...,  # (1)
+) -> ListShardsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListShardsInputRequestTypeDef](./type_defs.md#listshardsinputrequesttypedef).
+1. See [:material-code-braces: ShardFilterTypeDef](./type_defs.md#shardfiltertypedef) 
+2. See [:material-code-braces: ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str`
-- `NextToken`: `str`
-- `ExclusiveStartShardId`: `str`
-- `MaxResults`: `int`
-- `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
-- `ShardFilter`: [ShardFilterTypeDef](./type_defs.md#shardfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListShardsInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-Returns [ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef).
+parent.list_shards(**kwargs)
+```
 
-<a id="list\_stream\_consumers"></a>
+1. See [:material-code-braces: ListShardsInputRequestTypeDef](./type_defs.md#listshardsinputrequesttypedef) 
 
-### list_stream_consumers
+### list\_stream\_consumers
 
-Lists the consumers registered to receive data from a stream using enhanced
-fan- out, and provides information about each consumer.
+Lists the consumers registered to receive data from a stream using enhanced fan-
+out, and provides information about each consumer.
 
-Type annotations for `boto3.client("kinesis").list_stream_consumers` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").list_stream_consumers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_stream_consumers)
 
-Boto3 documentation:
-[Kinesis.Client.list_stream_consumers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_stream_consumers)
+```python title="Method definition"
+def list_stream_consumers(
+    self,
+    *,
+    StreamARN: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    StreamCreationTimestamp: Union[datetime, str] = ...,
+) -> ListStreamConsumersOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamConsumersInputRequestTypeDef](./type_defs.md#liststreamconsumersinputrequesttypedef).
+1. See [:material-code-braces: ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamARN`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StreamCreationTimestamp`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListStreamConsumersInputRequestTypeDef = {  # (1)
+    "StreamARN": ...,
+}
 
-Returns
-[ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef).
+parent.list_stream_consumers(**kwargs)
+```
 
-<a id="list\_streams"></a>
+1. See [:material-code-braces: ListStreamConsumersInputRequestTypeDef](./type_defs.md#liststreamconsumersinputrequesttypedef) 
 
-### list_streams
+### list\_streams
 
 Lists your Kinesis data streams.
 
-Type annotations for `boto3.client("kinesis").list_streams` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").list_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_streams)
 
-Boto3 documentation:
-[Kinesis.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_streams)
+```python title="Method definition"
+def list_streams(
+    self,
+    *,
+    Limit: int = ...,
+    ExclusiveStartStreamName: str = ...,
+) -> ListStreamsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamsInputRequestTypeDef](./type_defs.md#liststreamsinputrequesttypedef).
+1. See [:material-code-braces: ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Limit`: `int`
-- `ExclusiveStartStreamName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStreamsInputRequestTypeDef = {  # (1)
+    "Limit": ...,
+}
 
-Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
+parent.list_streams(**kwargs)
+```
 
-<a id="list\_tags\_for\_stream"></a>
+1. See [:material-code-braces: ListStreamsInputRequestTypeDef](./type_defs.md#liststreamsinputrequesttypedef) 
 
-### list_tags_for_stream
+### list\_tags\_for\_stream
 
 Lists the tags for the specified Kinesis data stream.
 
-Type annotations for `boto3.client("kinesis").list_tags_for_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").list_tags_for_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_tags_for_stream)
 
-Boto3 documentation:
-[Kinesis.Client.list_tags_for_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.list_tags_for_stream)
+```python title="Method definition"
+def list_tags_for_stream(
+    self,
+    *,
+    StreamName: str,
+    ExclusiveStartTagKey: str = ...,
+    Limit: int = ...,
+) -> ListTagsForStreamOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForStreamInputRequestTypeDef](./type_defs.md#listtagsforstreaminputrequesttypedef).
+1. See [:material-code-braces: ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `ExclusiveStartTagKey`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForStreamInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-Returns
-[ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
+parent.list_tags_for_stream(**kwargs)
+```
 
-<a id="merge\_shards"></a>
+1. See [:material-code-braces: ListTagsForStreamInputRequestTypeDef](./type_defs.md#listtagsforstreaminputrequesttypedef) 
 
-### merge_shards
+### merge\_shards
 
 Merges two adjacent shards in a Kinesis data stream and combines them into a
 single shard to reduce the stream's capacity to ingest and transport data.
 
-Type annotations for `boto3.client("kinesis").merge_shards` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").merge_shards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.merge_shards)
 
-Boto3 documentation:
-[Kinesis.Client.merge_shards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.merge_shards)
+```python title="Method definition"
+def merge_shards(
+    self,
+    *,
+    StreamName: str,
+    ShardToMerge: str,
+    AdjacentShardToMerge: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[MergeShardsInputRequestTypeDef](./type_defs.md#mergeshardsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `ShardToMerge`: `str` *(required)*
-- `AdjacentShardToMerge`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: MergeShardsInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "ShardToMerge": ...,
+    "AdjacentShardToMerge": ...,
+}
 
-<a id="put\_record"></a>
+parent.merge_shards(**kwargs)
+```
 
-### put_record
+1. See [:material-code-braces: MergeShardsInputRequestTypeDef](./type_defs.md#mergeshardsinputrequesttypedef) 
+
+### put\_record
 
 Writes a single data record into an Amazon Kinesis data stream.
 
-Type annotations for `boto3.client("kinesis").put_record` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").put_record` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_record)
 
-Boto3 documentation:
-[Kinesis.Client.put_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_record)
+```python title="Method definition"
+def put_record(
+    self,
+    *,
+    StreamName: str,
+    Data: Union[bytes, IO[bytes], StreamingBody],
+    PartitionKey: str,
+    ExplicitHashKey: str = ...,
+    SequenceNumberForOrdering: str = ...,
+) -> PutRecordOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutRecordInputRequestTypeDef](./type_defs.md#putrecordinputrequesttypedef).
+1. See [:material-code-braces: PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `PartitionKey`: `str` *(required)*
-- `ExplicitHashKey`: `str`
-- `SequenceNumberForOrdering`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutRecordInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "Data": ...,
+    "PartitionKey": ...,
+}
 
-Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
+parent.put_record(**kwargs)
+```
 
-<a id="put\_records"></a>
+1. See [:material-code-braces: PutRecordInputRequestTypeDef](./type_defs.md#putrecordinputrequesttypedef) 
 
-### put_records
+### put\_records
 
 Writes multiple data records into a Kinesis data stream in a single call (also
 referred to as a `PutRecords` request).
 
-Type annotations for `boto3.client("kinesis").put_records` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").put_records` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_records)
 
-Boto3 documentation:
-[Kinesis.Client.put_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.put_records)
+```python title="Method definition"
+def put_records(
+    self,
+    *,
+    Records: Sequence[PutRecordsRequestEntryTypeDef],  # (1)
+    StreamName: str,
+) -> PutRecordsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutRecordsInputRequestTypeDef](./type_defs.md#putrecordsinputrequesttypedef).
+1. See [:material-code-braces: PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef) 
+2. See [:material-code-braces: PutRecordsOutputTypeDef](./type_defs.md#putrecordsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Records`:
-  `Sequence`\[[PutRecordsRequestEntryTypeDef](./type_defs.md#putrecordsrequestentrytypedef)\]
-  *(required)*
-- `StreamName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutRecordsInputRequestTypeDef = {  # (1)
+    "Records": ...,
+    "StreamName": ...,
+}
 
-Returns [PutRecordsOutputTypeDef](./type_defs.md#putrecordsoutputtypedef).
+parent.put_records(**kwargs)
+```
 
-<a id="register\_stream\_consumer"></a>
+1. See [:material-code-braces: PutRecordsInputRequestTypeDef](./type_defs.md#putrecordsinputrequesttypedef) 
 
-### register_stream_consumer
+### register\_stream\_consumer
 
 Registers a consumer with a Kinesis data stream.
 
-Type annotations for `boto3.client("kinesis").register_stream_consumer` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").register_stream_consumer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.register_stream_consumer)
 
-Boto3 documentation:
-[Kinesis.Client.register_stream_consumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.register_stream_consumer)
+```python title="Method definition"
+def register_stream_consumer(
+    self,
+    *,
+    StreamARN: str,
+    ConsumerName: str,
+) -> RegisterStreamConsumerOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterStreamConsumerInputRequestTypeDef](./type_defs.md#registerstreamconsumerinputrequesttypedef).
+1. See [:material-code-braces: RegisterStreamConsumerOutputTypeDef](./type_defs.md#registerstreamconsumeroutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamARN`: `str` *(required)*
-- `ConsumerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterStreamConsumerInputRequestTypeDef = {  # (1)
+    "StreamARN": ...,
+    "ConsumerName": ...,
+}
 
-Returns
-[RegisterStreamConsumerOutputTypeDef](./type_defs.md#registerstreamconsumeroutputtypedef).
+parent.register_stream_consumer(**kwargs)
+```
 
-<a id="remove\_tags\_from\_stream"></a>
+1. See [:material-code-braces: RegisterStreamConsumerInputRequestTypeDef](./type_defs.md#registerstreamconsumerinputrequesttypedef) 
 
-### remove_tags_from_stream
+### remove\_tags\_from\_stream
 
 Removes tags from the specified Kinesis data stream.
 
-Type annotations for `boto3.client("kinesis").remove_tags_from_stream` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").remove_tags_from_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.remove_tags_from_stream)
 
-Boto3 documentation:
-[Kinesis.Client.remove_tags_from_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.remove_tags_from_stream)
+```python title="Method definition"
+def remove_tags_from_stream(
+    self,
+    *,
+    StreamName: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsFromStreamInputRequestTypeDef](./type_defs.md#removetagsfromstreaminputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsFromStreamInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "TagKeys": ...,
+}
 
-<a id="split\_shard"></a>
+parent.remove_tags_from_stream(**kwargs)
+```
 
-### split_shard
+1. See [:material-code-braces: RemoveTagsFromStreamInputRequestTypeDef](./type_defs.md#removetagsfromstreaminputrequesttypedef) 
+
+### split\_shard
 
 Splits a shard into two new shards in the Kinesis data stream, to increase the
 stream's capacity to ingest and transport data.
 
-Type annotations for `boto3.client("kinesis").split_shard` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").split_shard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.split_shard)
 
-Boto3 documentation:
-[Kinesis.Client.split_shard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.split_shard)
+```python title="Method definition"
+def split_shard(
+    self,
+    *,
+    StreamName: str,
+    ShardToSplit: str,
+    NewStartingHashKey: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SplitShardInputRequestTypeDef](./type_defs.md#splitshardinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `ShardToSplit`: `str` *(required)*
-- `NewStartingHashKey`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SplitShardInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "ShardToSplit": ...,
+    "NewStartingHashKey": ...,
+}
 
-<a id="start\_stream\_encryption"></a>
+parent.split_shard(**kwargs)
+```
 
-### start_stream_encryption
+1. See [:material-code-braces: SplitShardInputRequestTypeDef](./type_defs.md#splitshardinputrequesttypedef) 
+
+### start\_stream\_encryption
 
 Enables or updates server-side encryption using an Amazon Web Services KMS key
 for a specified stream.
 
-Type annotations for `boto3.client("kinesis").start_stream_encryption` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").start_stream_encryption` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.start_stream_encryption)
 
-Boto3 documentation:
-[Kinesis.Client.start_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.start_stream_encryption)
+```python title="Method definition"
+def start_stream_encryption(
+    self,
+    *,
+    StreamName: str,
+    EncryptionType: EncryptionTypeType,  # (1)
+    KeyId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StartStreamEncryptionInputRequestTypeDef](./type_defs.md#startstreamencryptioninputrequesttypedef).
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-  *(required)*
-- `KeyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartStreamEncryptionInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "EncryptionType": ...,
+    "KeyId": ...,
+}
 
-<a id="stop\_stream\_encryption"></a>
+parent.start_stream_encryption(**kwargs)
+```
 
-### stop_stream_encryption
+1. See [:material-code-braces: StartStreamEncryptionInputRequestTypeDef](./type_defs.md#startstreamencryptioninputrequesttypedef) 
+
+### stop\_stream\_encryption
 
 Disables server-side encryption for a specified stream.
 
-Type annotations for `boto3.client("kinesis").stop_stream_encryption` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").stop_stream_encryption` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.stop_stream_encryption)
 
-Boto3 documentation:
-[Kinesis.Client.stop_stream_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.stop_stream_encryption)
+```python title="Method definition"
+def stop_stream_encryption(
+    self,
+    *,
+    StreamName: str,
+    EncryptionType: EncryptionTypeType,  # (1)
+    KeyId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopStreamEncryptionInputRequestTypeDef](./type_defs.md#stopstreamencryptioninputrequesttypedef).
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-  *(required)*
-- `KeyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopStreamEncryptionInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "EncryptionType": ...,
+    "KeyId": ...,
+}
 
-<a id="subscribe\_to\_shard"></a>
+parent.stop_stream_encryption(**kwargs)
+```
 
-### subscribe_to_shard
+1. See [:material-code-braces: StopStreamEncryptionInputRequestTypeDef](./type_defs.md#stopstreamencryptioninputrequesttypedef) 
 
-This operation establishes an HTTP/2 connection between the consumer you
-specify in the `ConsumerARN` parameter and the shard you specify in the
-`ShardId` parameter.
+### subscribe\_to\_shard
 
-Type annotations for `boto3.client("kinesis").subscribe_to_shard` method.
+This operation establishes an HTTP/2 connection between the consumer you specify
+in the `ConsumerARN` parameter and the shard you specify in the `ShardId`
+parameter.
 
-Boto3 documentation:
-[Kinesis.Client.subscribe_to_shard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.subscribe_to_shard)
+Type annotations and code completion for `#!python boto3.client("kinesis").subscribe_to_shard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.subscribe_to_shard)
 
-Arguments mapping described in
-[SubscribeToShardInputRequestTypeDef](./type_defs.md#subscribetoshardinputrequesttypedef).
+```python title="Method definition"
+def subscribe_to_shard(
+    self,
+    *,
+    ConsumerARN: str,
+    ShardId: str,
+    StartingPosition: StartingPositionTypeDef,  # (1)
+) -> SubscribeToShardOutputTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: StartingPositionTypeDef](./type_defs.md#startingpositiontypedef) 
+2. See [:material-code-braces: SubscribeToShardOutputTypeDef](./type_defs.md#subscribetoshardoutputtypedef) 
 
-- `ConsumerARN`: `str` *(required)*
-- `ShardId`: `str` *(required)*
-- `StartingPosition`:
-  [StartingPositionTypeDef](./type_defs.md#startingpositiontypedef)
-  *(required)*
 
-Returns
-[SubscribeToShardOutputTypeDef](./type_defs.md#subscribetoshardoutputtypedef).
+```python title="Usage example with kwargs"
+kwargs: SubscribeToShardInputRequestTypeDef = {  # (1)
+    "ConsumerARN": ...,
+    "ShardId": ...,
+    "StartingPosition": ...,
+}
 
-<a id="update\_shard\_count"></a>
+parent.subscribe_to_shard(**kwargs)
+```
 
-### update_shard_count
+1. See [:material-code-braces: SubscribeToShardInputRequestTypeDef](./type_defs.md#subscribetoshardinputrequesttypedef) 
+
+### update\_shard\_count
 
 Updates the shard count of the specified stream to the specified number of
 shards.
 
-Type annotations for `boto3.client("kinesis").update_shard_count` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").update_shard_count` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.update_shard_count)
 
-Boto3 documentation:
-[Kinesis.Client.update_shard_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.update_shard_count)
+```python title="Method definition"
+def update_shard_count(
+    self,
+    *,
+    StreamName: str,
+    TargetShardCount: int,
+    ScalingType: ScalingTypeType,  # (1)
+) -> UpdateShardCountOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateShardCountInputRequestTypeDef](./type_defs.md#updateshardcountinputrequesttypedef).
+1. See [:material-code-brackets: ScalingTypeType](./literals.md#scalingtypetype) 
+2. See [:material-code-braces: UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str` *(required)*
-- `TargetShardCount`: `int` *(required)*
-- `ScalingType`: `Literal['UNIFORM_SCALING']` (see
-  [ScalingTypeType](./literals.md#scalingtypetype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateShardCountInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+    "TargetShardCount": ...,
+    "ScalingType": ...,
+}
 
-Returns
-[UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef).
+parent.update_shard_count(**kwargs)
+```
 
-<a id="update\_stream\_mode"></a>
+1. See [:material-code-braces: UpdateShardCountInputRequestTypeDef](./type_defs.md#updateshardcountinputrequesttypedef) 
 
-### update_stream_mode
+### update\_stream\_mode
 
 Updates the capacity mode of the data stream.
 
-Type annotations for `boto3.client("kinesis").update_stream_mode` method.
+Type annotations and code completion for `#!python boto3.client("kinesis").update_stream_mode` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.update_stream_mode)
 
-Boto3 documentation:
-[Kinesis.Client.update_stream_mode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client.update_stream_mode)
+```python title="Method definition"
+def update_stream_mode(
+    self,
+    *,
+    StreamARN: str,
+    StreamModeDetails: StreamModeDetailsTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateStreamModeInputRequestTypeDef](./type_defs.md#updatestreammodeinputrequesttypedef).
+1. See [:material-code-braces: StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef) 
 
-Keyword-only arguments:
 
-- `StreamARN`: `str` *(required)*
-- `StreamModeDetails`:
-  [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateStreamModeInputRequestTypeDef = {  # (1)
+    "StreamARN": ...,
+    "StreamModeDetails": ...,
+}
 
-<a id="get_paginator"></a>
+parent.update_stream_mode(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateStreamModeInputRequestTypeDef](./type_defs.md#updatestreammodeinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("kinesis").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("kinesis").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_stream")` ->
-  [DescribeStreamPaginator](./paginators.md#describestreampaginator)
-- `client.get_paginator("list_shards")` ->
-  [ListShardsPaginator](./paginators.md#listshardspaginator)
-- `client.get_paginator("list_stream_consumers")` ->
-  [ListStreamConsumersPaginator](./paginators.md#liststreamconsumerspaginator)
-- `client.get_paginator("list_streams")` ->
-  [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+- `client.get_paginator("describe_stream")` -> [DescribeStreamPaginator](./paginators.md#describestreampaginator)
+- `client.get_paginator("list_shards")` -> [ListShardsPaginator](./paginators.md#listshardspaginator)
+- `client.get_paginator("list_stream_consumers")` -> [ListStreamConsumersPaginator](./paginators.md#liststreamconsumerspaginator)
+- `client.get_paginator("list_streams")` -> [ListStreamsPaginator](./paginators.md#liststreamspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("kinesis").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("kinesis").get_waiter` method with overloads.
 
-- `client.get_waiter("stream_exists")` ->
-  [StreamExistsWaiter](./waiters.md#streamexistswaiter)
-- `client.get_waiter("stream_not_exists")` ->
-  [StreamNotExistsWaiter](./waiters.md#streamnotexistswaiter)
+- `client.get_waiter("stream_exists")` -> [StreamExistsWaiter](./waiters.md#streamexistswaiter)
+- `client.get_waiter("stream_not_exists")` -> [StreamNotExistsWaiter](./waiters.md#streamnotexistswaiter)
+

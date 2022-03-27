@@ -1,76 +1,18 @@
-<a id="gluedatabrewclient-for-boto3-gluedatabrew-module"></a>
-
-# GlueDataBrewClient for boto3 GlueDataBrew module
+# GlueDataBrewClient
 
 > [Index](../README.md) > [GlueDataBrew](./README.md) > GlueDataBrewClient
 
-Auto-generated documentation for
-[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
-type annotations stubs module
-[mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
+!!! note ""
 
-- [GlueDataBrewClient for boto3 GlueDataBrew module](#gluedatabrewclient-for-boto3-gluedatabrew-module)
-  - [GlueDataBrewClient](#gluedatabrewclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_delete_recipe_version](#batch_delete_recipe_version)
-    - [can_paginate](#can_paginate)
-    - [create_dataset](#create_dataset)
-    - [create_profile_job](#create_profile_job)
-    - [create_project](#create_project)
-    - [create_recipe](#create_recipe)
-    - [create_recipe_job](#create_recipe_job)
-    - [create_ruleset](#create_ruleset)
-    - [create_schedule](#create_schedule)
-    - [delete_dataset](#delete_dataset)
-    - [delete_job](#delete_job)
-    - [delete_project](#delete_project)
-    - [delete_recipe_version](#delete_recipe_version)
-    - [delete_ruleset](#delete_ruleset)
-    - [delete_schedule](#delete_schedule)
-    - [describe_dataset](#describe_dataset)
-    - [describe_job](#describe_job)
-    - [describe_job_run](#describe_job_run)
-    - [describe_project](#describe_project)
-    - [describe_recipe](#describe_recipe)
-    - [describe_ruleset](#describe_ruleset)
-    - [describe_schedule](#describe_schedule)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_datasets](#list_datasets)
-    - [list_job_runs](#list_job_runs)
-    - [list_jobs](#list_jobs)
-    - [list_projects](#list_projects)
-    - [list_recipe_versions](#list_recipe_versions)
-    - [list_recipes](#list_recipes)
-    - [list_rulesets](#list_rulesets)
-    - [list_schedules](#list_schedules)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [publish_recipe](#publish_recipe)
-    - [send_project_session_action](#send_project_session_action)
-    - [start_job_run](#start_job_run)
-    - [start_project_session](#start_project_session)
-    - [stop_job_run](#stop_job_run)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_dataset](#update_dataset)
-    - [update_profile_job](#update_profile_job)
-    - [update_project](#update_project)
-    - [update_recipe](#update_recipe)
-    - [update_recipe_job](#update_recipe_job)
-    - [update_ruleset](#update_ruleset)
-    - [update_schedule](#update_schedule)
-    - [get_paginator](#get_paginator)
-
-<a id="gluedatabrewclient"></a>
+    Auto-generated documentation for [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
+    type annotations stubs module [mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 ## GlueDataBrewClient
 
-Type annotations for `boto3.client("databrew")`
+Type annotations and code completion for `#!python boto3.client("databrew")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_databrew.client import GlueDataBrewClient
 
@@ -78,1158 +20,1545 @@ def get_databrew_client() -> GlueDataBrewClient:
     return Session().client("databrew")
 ```
 
-Boto3 documentation:
-[GlueDataBrew.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("databrew").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("databrew")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_databrew.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-GlueDataBrewClient exceptions.
-
-Type annotations for `boto3.client("databrew").exceptions` method.
-
-Boto3 documentation:
-[GlueDataBrew.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_delete\_recipe\_version"></a>
-
-### batch_delete_recipe_version
+### batch\_delete\_recipe\_version
 
 Deletes one or more versions of a recipe at a time.
 
-Type annotations for `boto3.client("databrew").batch_delete_recipe_version`
-method.
+Type annotations and code completion for `#!python boto3.client("databrew").batch_delete_recipe_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.batch_delete_recipe_version)
 
-Boto3 documentation:
-[GlueDataBrew.Client.batch_delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.batch_delete_recipe_version)
+```python title="Method definition"
+def batch_delete_recipe_version(
+    self,
+    *,
+    Name: str,
+    RecipeVersions: Sequence[str],
+) -> BatchDeleteRecipeVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteRecipeVersionRequestRequestTypeDef](./type_defs.md#batchdeleterecipeversionrequestrequesttypedef).
+1. See [:material-code-braces: BatchDeleteRecipeVersionResponseTypeDef](./type_defs.md#batchdeleterecipeversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RecipeVersions`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteRecipeVersionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RecipeVersions": ...,
+}
 
-Returns
-[BatchDeleteRecipeVersionResponseTypeDef](./type_defs.md#batchdeleterecipeversionresponsetypedef).
+parent.batch_delete_recipe_version(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchDeleteRecipeVersionRequestRequestTypeDef](./type_defs.md#batchdeleterecipeversionrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("databrew").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("databrew").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.can_paginate)
 
-Boto3 documentation:
-[GlueDataBrew.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_dataset"></a>
-
-### create_dataset
+### create\_dataset
 
 Creates a new DataBrew dataset.
 
-Type annotations for `boto3.client("databrew").create_dataset` method.
+Type annotations and code completion for `#!python boto3.client("databrew").create_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_dataset)
 
-Boto3 documentation:
-[GlueDataBrew.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_dataset)
+```python title="Method definition"
+def create_dataset(
+    self,
+    *,
+    Name: str,
+    Input: InputTypeDef,  # (1)
+    Format: InputFormatType = ...,  # (2)
+    FormatOptions: FormatOptionsTypeDef = ...,  # (3)
+    PathOptions: PathOptionsTypeDef = ...,  # (4)
+    Tags: Mapping[str, str] = ...,
+) -> CreateDatasetResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+1. See [:material-code-braces: InputTypeDef](./type_defs.md#inputtypedef) 
+2. See [:material-code-brackets: InputFormatType](./literals.md#inputformattype) 
+3. See [:material-code-braces: FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef) 
+4. See [:material-code-braces: PathOptionsTypeDef](./type_defs.md#pathoptionstypedef) 
+5. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
-- `Format`: [InputFormatType](./literals.md#inputformattype)
-- `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
-- `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Input": ...,
+}
 
-Returns
-[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+parent.create_dataset(**kwargs)
+```
 
-<a id="create\_profile\_job"></a>
+1. See [:material-code-braces: CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
 
-### create_profile_job
+### create\_profile\_job
 
 Creates a new job to analyze a dataset and create its data profile.
 
-Type annotations for `boto3.client("databrew").create_profile_job` method.
+Type annotations and code completion for `#!python boto3.client("databrew").create_profile_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_profile_job)
 
-Boto3 documentation:
-[GlueDataBrew.Client.create_profile_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_profile_job)
+```python title="Method definition"
+def create_profile_job(
+    self,
+    *,
+    DatasetName: str,
+    Name: str,
+    OutputLocation: S3LocationTypeDef,  # (1)
+    RoleArn: str,
+    EncryptionKeyArn: str = ...,
+    EncryptionMode: EncryptionModeType = ...,  # (2)
+    LogSubscription: LogSubscriptionType = ...,  # (3)
+    MaxCapacity: int = ...,
+    MaxRetries: int = ...,
+    Configuration: ProfileConfigurationTypeDef = ...,  # (4)
+    ValidationConfigurations: Sequence[ValidationConfigurationTypeDef] = ...,  # (5)
+    Tags: Mapping[str, str] = ...,
+    Timeout: int = ...,
+    JobSample: JobSampleTypeDef = ...,  # (6)
+) -> CreateProfileJobResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateProfileJobRequestRequestTypeDef](./type_defs.md#createprofilejobrequestrequesttypedef).
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-brackets: EncryptionModeType](./literals.md#encryptionmodetype) 
+3. See [:material-code-brackets: LogSubscriptionType](./literals.md#logsubscriptiontype) 
+4. See [:material-code-braces: ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef) 
+5. See [:material-code-braces: ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef) 
+6. See [:material-code-braces: JobSampleTypeDef](./type_defs.md#jobsampletypedef) 
+7. See [:material-code-braces: CreateProfileJobResponseTypeDef](./type_defs.md#createprofilejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetName`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-  *(required)*
-- `RoleArn`: `str` *(required)*
-- `EncryptionKeyArn`: `str`
-- `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
-- `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
-- `MaxCapacity`: `int`
-- `MaxRetries`: `int`
-- `Configuration`:
-  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
-- `ValidationConfigurations`:
-  `Sequence`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Timeout`: `int`
-- `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateProfileJobRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+    "Name": ...,
+    "OutputLocation": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[CreateProfileJobResponseTypeDef](./type_defs.md#createprofilejobresponsetypedef).
+parent.create_profile_job(**kwargs)
+```
 
-<a id="create\_project"></a>
+1. See [:material-code-braces: CreateProfileJobRequestRequestTypeDef](./type_defs.md#createprofilejobrequestrequesttypedef) 
 
-### create_project
+### create\_project
 
 Creates a new DataBrew project.
 
-Type annotations for `boto3.client("databrew").create_project` method.
+Type annotations and code completion for `#!python boto3.client("databrew").create_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_project)
 
-Boto3 documentation:
-[GlueDataBrew.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_project)
+```python title="Method definition"
+def create_project(
+    self,
+    *,
+    DatasetName: str,
+    Name: str,
+    RecipeName: str,
+    RoleArn: str,
+    Sample: SampleTypeDef = ...,  # (1)
+    Tags: Mapping[str, str] = ...,
+) -> CreateProjectResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
+1. See [:material-code-braces: SampleTypeDef](./type_defs.md#sampletypedef) 
+2. See [:material-code-braces: CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetName`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `RecipeName`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateProjectRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+    "Name": ...,
+    "RecipeName": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
+parent.create_project(**kwargs)
+```
 
-<a id="create\_recipe"></a>
+1. See [:material-code-braces: CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef) 
 
-### create_recipe
+### create\_recipe
 
 Creates a new DataBrew recipe.
 
-Type annotations for `boto3.client("databrew").create_recipe` method.
+Type annotations and code completion for `#!python boto3.client("databrew").create_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe)
 
-Boto3 documentation:
-[GlueDataBrew.Client.create_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe)
+```python title="Method definition"
+def create_recipe(
+    self,
+    *,
+    Name: str,
+    Steps: Sequence[RecipeStepTypeDef],  # (1)
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateRecipeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRecipeRequestRequestTypeDef](./type_defs.md#createreciperequestrequesttypedef).
+1. See [:material-code-braces: RecipeStepTypeDef](./type_defs.md#recipesteptypedef) 
+2. See [:material-code-braces: CreateRecipeResponseTypeDef](./type_defs.md#createreciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Steps`: `Sequence`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
-  *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRecipeRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Steps": ...,
+}
 
-Returns
-[CreateRecipeResponseTypeDef](./type_defs.md#createreciperesponsetypedef).
+parent.create_recipe(**kwargs)
+```
 
-<a id="create\_recipe\_job"></a>
+1. See [:material-code-braces: CreateRecipeRequestRequestTypeDef](./type_defs.md#createreciperequestrequesttypedef) 
 
-### create_recipe_job
+### create\_recipe\_job
 
 Creates a new job to transform input data, using steps defined in an existing
-Glue DataBrew recipe See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/databrew-2017-07-25/CreateRecipeJob).
+Glue DataBrew recipe See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/databrew-2017-07-25/CreateRecipeJob).
 
-Type annotations for `boto3.client("databrew").create_recipe_job` method.
+Type annotations and code completion for `#!python boto3.client("databrew").create_recipe_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe_job)
 
-Boto3 documentation:
-[GlueDataBrew.Client.create_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_recipe_job)
+```python title="Method definition"
+def create_recipe_job(
+    self,
+    *,
+    Name: str,
+    RoleArn: str,
+    DatasetName: str = ...,
+    EncryptionKeyArn: str = ...,
+    EncryptionMode: EncryptionModeType = ...,  # (1)
+    LogSubscription: LogSubscriptionType = ...,  # (2)
+    MaxCapacity: int = ...,
+    MaxRetries: int = ...,
+    Outputs: Sequence[OutputTypeDef] = ...,  # (3)
+    DataCatalogOutputs: Sequence[DataCatalogOutputTypeDef] = ...,  # (4)
+    DatabaseOutputs: Sequence[DatabaseOutputTypeDef] = ...,  # (5)
+    ProjectName: str = ...,
+    RecipeReference: RecipeReferenceTypeDef = ...,  # (6)
+    Tags: Mapping[str, str] = ...,
+    Timeout: int = ...,
+) -> CreateRecipeJobResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateRecipeJobRequestRequestTypeDef](./type_defs.md#createrecipejobrequestrequesttypedef).
+1. See [:material-code-brackets: EncryptionModeType](./literals.md#encryptionmodetype) 
+2. See [:material-code-brackets: LogSubscriptionType](./literals.md#logsubscriptiontype) 
+3. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+4. See [:material-code-braces: DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef) 
+5. See [:material-code-braces: DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef) 
+6. See [:material-code-braces: RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef) 
+7. See [:material-code-braces: CreateRecipeJobResponseTypeDef](./type_defs.md#createrecipejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `DatasetName`: `str`
-- `EncryptionKeyArn`: `str`
-- `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
-- `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
-- `MaxCapacity`: `int`
-- `MaxRetries`: `int`
-- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `DataCatalogOutputs`:
-  `Sequence`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
-- `DatabaseOutputs`:
-  `Sequence`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
-- `ProjectName`: `str`
-- `RecipeReference`:
-  [RecipeReferenceTypeDef](./type_defs.md#recipereferencetypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Timeout`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateRecipeJobRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[CreateRecipeJobResponseTypeDef](./type_defs.md#createrecipejobresponsetypedef).
+parent.create_recipe_job(**kwargs)
+```
 
-<a id="create\_ruleset"></a>
+1. See [:material-code-braces: CreateRecipeJobRequestRequestTypeDef](./type_defs.md#createrecipejobrequestrequesttypedef) 
 
-### create_ruleset
+### create\_ruleset
 
 Creates a new ruleset that can be used in a profile job to validate the data
 quality of a dataset.
 
-Type annotations for `boto3.client("databrew").create_ruleset` method.
+Type annotations and code completion for `#!python boto3.client("databrew").create_ruleset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_ruleset)
 
-Boto3 documentation:
-[GlueDataBrew.Client.create_ruleset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_ruleset)
+```python title="Method definition"
+def create_ruleset(
+    self,
+    *,
+    Name: str,
+    TargetArn: str,
+    Rules: Sequence[RuleTypeDef],  # (1)
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateRulesetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRulesetRequestRequestTypeDef](./type_defs.md#createrulesetrequestrequesttypedef).
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: CreateRulesetResponseTypeDef](./type_defs.md#createrulesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `TargetArn`: `str` *(required)*
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRulesetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "TargetArn": ...,
+    "Rules": ...,
+}
 
-Returns
-[CreateRulesetResponseTypeDef](./type_defs.md#createrulesetresponsetypedef).
+parent.create_ruleset(**kwargs)
+```
 
-<a id="create\_schedule"></a>
+1. See [:material-code-braces: CreateRulesetRequestRequestTypeDef](./type_defs.md#createrulesetrequestrequesttypedef) 
 
-### create_schedule
+### create\_schedule
 
 Creates a new schedule for one or more DataBrew jobs.
 
-Type annotations for `boto3.client("databrew").create_schedule` method.
+Type annotations and code completion for `#!python boto3.client("databrew").create_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_schedule)
 
-Boto3 documentation:
-[GlueDataBrew.Client.create_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.create_schedule)
+```python title="Method definition"
+def create_schedule(
+    self,
+    *,
+    CronExpression: str,
+    Name: str,
+    JobNames: Sequence[str] = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateScheduleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateScheduleRequestRequestTypeDef](./type_defs.md#createschedulerequestrequesttypedef).
+1. See [:material-code-braces: CreateScheduleResponseTypeDef](./type_defs.md#createscheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CronExpression`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `JobNames`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateScheduleRequestRequestTypeDef = {  # (1)
+    "CronExpression": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateScheduleResponseTypeDef](./type_defs.md#createscheduleresponsetypedef).
+parent.create_schedule(**kwargs)
+```
 
-<a id="delete\_dataset"></a>
+1. See [:material-code-braces: CreateScheduleRequestRequestTypeDef](./type_defs.md#createschedulerequestrequesttypedef) 
 
-### delete_dataset
+### delete\_dataset
 
 Deletes a dataset from DataBrew.
 
-Type annotations for `boto3.client("databrew").delete_dataset` method.
+Type annotations and code completion for `#!python boto3.client("databrew").delete_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_dataset)
 
-Boto3 documentation:
-[GlueDataBrew.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_dataset)
+```python title="Method definition"
+def delete_dataset(
+    self,
+    *,
+    Name: str,
+) -> DeleteDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
+parent.delete_dataset(**kwargs)
+```
 
-<a id="delete\_job"></a>
+1. See [:material-code-braces: DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
 
-### delete_job
+### delete\_job
 
 Deletes the specified DataBrew job.
 
-Type annotations for `boto3.client("databrew").delete_job` method.
+Type annotations and code completion for `#!python boto3.client("databrew").delete_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_job)
 
-Boto3 documentation:
-[GlueDataBrew.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_job)
+```python title="Method definition"
+def delete_job(
+    self,
+    *,
+    Name: str,
+) -> DeleteJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef).
+1. See [:material-code-braces: DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteJobRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
+parent.delete_job(**kwargs)
+```
 
-<a id="delete\_project"></a>
+1. See [:material-code-braces: DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef) 
 
-### delete_project
+### delete\_project
 
 Deletes an existing DataBrew project.
 
-Type annotations for `boto3.client("databrew").delete_project` method.
+Type annotations and code completion for `#!python boto3.client("databrew").delete_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_project)
 
-Boto3 documentation:
-[GlueDataBrew.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_project)
+```python title="Method definition"
+def delete_project(
+    self,
+    *,
+    Name: str,
+) -> DeleteProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
+1. See [:material-code-braces: DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
+parent.delete_project(**kwargs)
+```
 
-<a id="delete\_recipe\_version"></a>
+1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
 
-### delete_recipe_version
+### delete\_recipe\_version
 
 Deletes a single version of a DataBrew recipe.
 
-Type annotations for `boto3.client("databrew").delete_recipe_version` method.
+Type annotations and code completion for `#!python boto3.client("databrew").delete_recipe_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_recipe_version)
 
-Boto3 documentation:
-[GlueDataBrew.Client.delete_recipe_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_recipe_version)
+```python title="Method definition"
+def delete_recipe_version(
+    self,
+    *,
+    Name: str,
+    RecipeVersion: str,
+) -> DeleteRecipeVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRecipeVersionRequestRequestTypeDef](./type_defs.md#deleterecipeversionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteRecipeVersionResponseTypeDef](./type_defs.md#deleterecipeversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RecipeVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRecipeVersionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RecipeVersion": ...,
+}
 
-Returns
-[DeleteRecipeVersionResponseTypeDef](./type_defs.md#deleterecipeversionresponsetypedef).
+parent.delete_recipe_version(**kwargs)
+```
 
-<a id="delete\_ruleset"></a>
+1. See [:material-code-braces: DeleteRecipeVersionRequestRequestTypeDef](./type_defs.md#deleterecipeversionrequestrequesttypedef) 
 
-### delete_ruleset
+### delete\_ruleset
 
 Deletes a ruleset.
 
-Type annotations for `boto3.client("databrew").delete_ruleset` method.
+Type annotations and code completion for `#!python boto3.client("databrew").delete_ruleset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_ruleset)
 
-Boto3 documentation:
-[GlueDataBrew.Client.delete_ruleset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_ruleset)
+```python title="Method definition"
+def delete_ruleset(
+    self,
+    *,
+    Name: str,
+) -> DeleteRulesetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRulesetRequestRequestTypeDef](./type_defs.md#deleterulesetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteRulesetResponseTypeDef](./type_defs.md#deleterulesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRulesetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteRulesetResponseTypeDef](./type_defs.md#deleterulesetresponsetypedef).
+parent.delete_ruleset(**kwargs)
+```
 
-<a id="delete\_schedule"></a>
+1. See [:material-code-braces: DeleteRulesetRequestRequestTypeDef](./type_defs.md#deleterulesetrequestrequesttypedef) 
 
-### delete_schedule
+### delete\_schedule
 
 Deletes the specified DataBrew schedule.
 
-Type annotations for `boto3.client("databrew").delete_schedule` method.
+Type annotations and code completion for `#!python boto3.client("databrew").delete_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_schedule)
 
-Boto3 documentation:
-[GlueDataBrew.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.delete_schedule)
+```python title="Method definition"
+def delete_schedule(
+    self,
+    *,
+    Name: str,
+) -> DeleteScheduleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteScheduleRequestRequestTypeDef](./type_defs.md#deleteschedulerequestrequesttypedef).
+1. See [:material-code-braces: DeleteScheduleResponseTypeDef](./type_defs.md#deletescheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScheduleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteScheduleResponseTypeDef](./type_defs.md#deletescheduleresponsetypedef).
+parent.delete_schedule(**kwargs)
+```
 
-<a id="describe\_dataset"></a>
+1. See [:material-code-braces: DeleteScheduleRequestRequestTypeDef](./type_defs.md#deleteschedulerequestrequesttypedef) 
 
-### describe_dataset
+### describe\_dataset
 
 Returns the definition of a specific DataBrew dataset.
 
-Type annotations for `boto3.client("databrew").describe_dataset` method.
+Type annotations and code completion for `#!python boto3.client("databrew").describe_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_dataset)
 
-Boto3 documentation:
-[GlueDataBrew.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_dataset)
+```python title="Method definition"
+def describe_dataset(
+    self,
+    *,
+    Name: str,
+) -> DescribeDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+parent.describe_dataset(**kwargs)
+```
 
-<a id="describe\_job"></a>
+1. See [:material-code-braces: DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef) 
 
-### describe_job
+### describe\_job
 
 Returns the definition of a specific DataBrew job.
 
-Type annotations for `boto3.client("databrew").describe_job` method.
+Type annotations and code completion for `#!python boto3.client("databrew").describe_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job)
 
-Boto3 documentation:
-[GlueDataBrew.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job)
+```python title="Method definition"
+def describe_job(
+    self,
+    *,
+    Name: str,
+) -> DescribeJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJobRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef).
+parent.describe_job(**kwargs)
+```
 
-<a id="describe\_job\_run"></a>
+1. See [:material-code-braces: DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef) 
 
-### describe_job_run
+### describe\_job\_run
 
 Represents one run of a DataBrew job.
 
-Type annotations for `boto3.client("databrew").describe_job_run` method.
+Type annotations and code completion for `#!python boto3.client("databrew").describe_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job_run)
 
-Boto3 documentation:
-[GlueDataBrew.Client.describe_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_job_run)
+```python title="Method definition"
+def describe_job_run(
+    self,
+    *,
+    Name: str,
+    RunId: str,
+) -> DescribeJobRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobRunRequestRequestTypeDef](./type_defs.md#describejobrunrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJobRunRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RunId": ...,
+}
 
-Returns
-[DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef).
+parent.describe_job_run(**kwargs)
+```
 
-<a id="describe\_project"></a>
+1. See [:material-code-braces: DescribeJobRunRequestRequestTypeDef](./type_defs.md#describejobrunrequestrequesttypedef) 
 
-### describe_project
+### describe\_project
 
 Returns the definition of a specific DataBrew project.
 
-Type annotations for `boto3.client("databrew").describe_project` method.
+Type annotations and code completion for `#!python boto3.client("databrew").describe_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_project)
 
-Boto3 documentation:
-[GlueDataBrew.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_project)
+```python title="Method definition"
+def describe_project(
+    self,
+    *,
+    Name: str,
+) -> DescribeProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProjectRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
+parent.describe_project(**kwargs)
+```
 
-<a id="describe\_recipe"></a>
+1. See [:material-code-braces: DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef) 
 
-### describe_recipe
+### describe\_recipe
 
 Returns the definition of a specific DataBrew recipe corresponding to a
 particular version.
 
-Type annotations for `boto3.client("databrew").describe_recipe` method.
+Type annotations and code completion for `#!python boto3.client("databrew").describe_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_recipe)
 
-Boto3 documentation:
-[GlueDataBrew.Client.describe_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_recipe)
+```python title="Method definition"
+def describe_recipe(
+    self,
+    *,
+    Name: str,
+    RecipeVersion: str = ...,
+) -> DescribeRecipeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRecipeRequestRequestTypeDef](./type_defs.md#describereciperequestrequesttypedef).
+1. See [:material-code-braces: DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RecipeVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeRecipeRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeRecipeResponseTypeDef](./type_defs.md#describereciperesponsetypedef).
+parent.describe_recipe(**kwargs)
+```
 
-<a id="describe\_ruleset"></a>
+1. See [:material-code-braces: DescribeRecipeRequestRequestTypeDef](./type_defs.md#describereciperequestrequesttypedef) 
 
-### describe_ruleset
+### describe\_ruleset
 
 Retrieves detailed information about the ruleset.
 
-Type annotations for `boto3.client("databrew").describe_ruleset` method.
+Type annotations and code completion for `#!python boto3.client("databrew").describe_ruleset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_ruleset)
 
-Boto3 documentation:
-[GlueDataBrew.Client.describe_ruleset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_ruleset)
+```python title="Method definition"
+def describe_ruleset(
+    self,
+    *,
+    Name: str,
+) -> DescribeRulesetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRulesetRequestRequestTypeDef](./type_defs.md#describerulesetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRulesetResponseTypeDef](./type_defs.md#describerulesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRulesetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeRulesetResponseTypeDef](./type_defs.md#describerulesetresponsetypedef).
+parent.describe_ruleset(**kwargs)
+```
 
-<a id="describe\_schedule"></a>
+1. See [:material-code-braces: DescribeRulesetRequestRequestTypeDef](./type_defs.md#describerulesetrequestrequesttypedef) 
 
-### describe_schedule
+### describe\_schedule
 
 Returns the definition of a specific DataBrew schedule.
 
-Type annotations for `boto3.client("databrew").describe_schedule` method.
+Type annotations and code completion for `#!python boto3.client("databrew").describe_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_schedule)
 
-Boto3 documentation:
-[GlueDataBrew.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.describe_schedule)
+```python title="Method definition"
+def describe_schedule(
+    self,
+    *,
+    Name: str,
+) -> DescribeScheduleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScheduleRequestRequestTypeDef](./type_defs.md#describeschedulerequestrequesttypedef).
+1. See [:material-code-braces: DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef).
+parent.describe_schedule(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeScheduleRequestRequestTypeDef](./type_defs.md#describeschedulerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("databrew").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("databrew").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.generate_presigned_url)
 
-Boto3 documentation:
-[GlueDataBrew.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_datasets"></a>
-
-### list_datasets
+### list\_datasets
 
 Lists all of the DataBrew datasets.
 
-Type annotations for `boto3.client("databrew").list_datasets` method.
+Type annotations and code completion for `#!python boto3.client("databrew").list_datasets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_datasets)
 
-Boto3 documentation:
-[GlueDataBrew.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_datasets)
+```python title="Method definition"
+def list_datasets(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDatasetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+parent.list_datasets(**kwargs)
+```
 
-<a id="list\_job\_runs"></a>
+1. See [:material-code-braces: ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef) 
 
-### list_job_runs
+### list\_job\_runs
 
 Lists all of the previous runs of a particular DataBrew job.
 
-Type annotations for `boto3.client("databrew").list_job_runs` method.
+Type annotations and code completion for `#!python boto3.client("databrew").list_job_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_job_runs)
 
-Boto3 documentation:
-[GlueDataBrew.Client.list_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_job_runs)
+```python title="Method definition"
+def list_job_runs(
+    self,
+    *,
+    Name: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListJobRunsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef).
+1. See [:material-code-braces: ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobRunsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef).
+parent.list_job_runs(**kwargs)
+```
 
-<a id="list\_jobs"></a>
+1. See [:material-code-braces: ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef) 
 
-### list_jobs
+### list\_jobs
 
 Lists all of the DataBrew jobs that are defined.
 
-Type annotations for `boto3.client("databrew").list_jobs` method.
+Type annotations and code completion for `#!python boto3.client("databrew").list_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_jobs)
 
-Boto3 documentation:
-[GlueDataBrew.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_jobs)
+```python title="Method definition"
+def list_jobs(
+    self,
+    *,
+    DatasetName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ProjectName: str = ...,
+) -> ListJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ProjectName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+}
 
-Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+parent.list_jobs(**kwargs)
+```
 
-<a id="list\_projects"></a>
+1. See [:material-code-braces: ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef) 
 
-### list_projects
+### list\_projects
 
 Lists all of the DataBrew projects that are defined.
 
-Type annotations for `boto3.client("databrew").list_projects` method.
+Type annotations and code completion for `#!python boto3.client("databrew").list_projects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_projects)
 
-Boto3 documentation:
-[GlueDataBrew.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_projects)
+```python title="Method definition"
+def list_projects(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListProjectsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
+1. See [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
+parent.list_projects(**kwargs)
+```
 
-<a id="list\_recipe\_versions"></a>
+1. See [:material-code-braces: ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef) 
 
-### list_recipe_versions
+### list\_recipe\_versions
 
 Lists the versions of a particular DataBrew recipe, except for `LATEST_WORKING`
 .
 
-Type annotations for `boto3.client("databrew").list_recipe_versions` method.
+Type annotations and code completion for `#!python boto3.client("databrew").list_recipe_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipe_versions)
 
-Boto3 documentation:
-[GlueDataBrew.Client.list_recipe_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipe_versions)
+```python title="Method definition"
+def list_recipe_versions(
+    self,
+    *,
+    Name: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRecipeVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecipeVersionsRequestRequestTypeDef](./type_defs.md#listrecipeversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRecipeVersionsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef).
+parent.list_recipe_versions(**kwargs)
+```
 
-<a id="list\_recipes"></a>
+1. See [:material-code-braces: ListRecipeVersionsRequestRequestTypeDef](./type_defs.md#listrecipeversionsrequestrequesttypedef) 
 
-### list_recipes
+### list\_recipes
 
 Lists all of the DataBrew recipes that are defined.
 
-Type annotations for `boto3.client("databrew").list_recipes` method.
+Type annotations and code completion for `#!python boto3.client("databrew").list_recipes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipes)
 
-Boto3 documentation:
-[GlueDataBrew.Client.list_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_recipes)
+```python title="Method definition"
+def list_recipes(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    RecipeVersion: str = ...,
+) -> ListRecipesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecipesRequestRequestTypeDef](./type_defs.md#listrecipesrequestrequesttypedef).
+1. See [:material-code-braces: ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `RecipeVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRecipesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef).
+parent.list_recipes(**kwargs)
+```
 
-<a id="list\_rulesets"></a>
+1. See [:material-code-braces: ListRecipesRequestRequestTypeDef](./type_defs.md#listrecipesrequestrequesttypedef) 
 
-### list_rulesets
+### list\_rulesets
 
-List all rulesets available in the current account or rulesets associated with
-a specific resource (dataset).
+List all rulesets available in the current account or rulesets associated with a
+specific resource (dataset).
 
-Type annotations for `boto3.client("databrew").list_rulesets` method.
+Type annotations and code completion for `#!python boto3.client("databrew").list_rulesets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_rulesets)
 
-Boto3 documentation:
-[GlueDataBrew.Client.list_rulesets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_rulesets)
+```python title="Method definition"
+def list_rulesets(
+    self,
+    *,
+    TargetArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRulesetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRulesetsRequestRequestTypeDef](./type_defs.md#listrulesetsrequestrequesttypedef).
+1. See [:material-code-braces: ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TargetArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRulesetsRequestRequestTypeDef = {  # (1)
+    "TargetArn": ...,
+}
 
-Returns
-[ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef).
+parent.list_rulesets(**kwargs)
+```
 
-<a id="list\_schedules"></a>
+1. See [:material-code-braces: ListRulesetsRequestRequestTypeDef](./type_defs.md#listrulesetsrequestrequesttypedef) 
 
-### list_schedules
+### list\_schedules
 
 Lists the DataBrew schedules that are defined.
 
-Type annotations for `boto3.client("databrew").list_schedules` method.
+Type annotations and code completion for `#!python boto3.client("databrew").list_schedules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_schedules)
 
-Boto3 documentation:
-[GlueDataBrew.Client.list_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_schedules)
+```python title="Method definition"
+def list_schedules(
+    self,
+    *,
+    JobName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSchedulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSchedulesRequestRequestTypeDef](./type_defs.md#listschedulesrequestrequesttypedef).
+1. See [:material-code-braces: ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSchedulesRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
 
-Returns
-[ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef).
+parent.list_schedules(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSchedulesRequestRequestTypeDef](./type_defs.md#listschedulesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all the tags for a DataBrew resource.
 
-Type annotations for `boto3.client("databrew").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("databrew").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[GlueDataBrew.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="publish\_recipe"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### publish_recipe
+### publish\_recipe
 
 Publishes a new version of a DataBrew recipe.
 
-Type annotations for `boto3.client("databrew").publish_recipe` method.
+Type annotations and code completion for `#!python boto3.client("databrew").publish_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.publish_recipe)
 
-Boto3 documentation:
-[GlueDataBrew.Client.publish_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.publish_recipe)
+```python title="Method definition"
+def publish_recipe(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+) -> PublishRecipeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PublishRecipeRequestRequestTypeDef](./type_defs.md#publishreciperequestrequesttypedef).
+1. See [:material-code-braces: PublishRecipeResponseTypeDef](./type_defs.md#publishreciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: PublishRecipeRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[PublishRecipeResponseTypeDef](./type_defs.md#publishreciperesponsetypedef).
+parent.publish_recipe(**kwargs)
+```
 
-<a id="send\_project\_session\_action"></a>
+1. See [:material-code-braces: PublishRecipeRequestRequestTypeDef](./type_defs.md#publishreciperequestrequesttypedef) 
 
-### send_project_session_action
+### send\_project\_session\_action
 
 Performs a recipe step within an interactive DataBrew session that's currently
 open.
 
-Type annotations for `boto3.client("databrew").send_project_session_action`
-method.
+Type annotations and code completion for `#!python boto3.client("databrew").send_project_session_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.send_project_session_action)
 
-Boto3 documentation:
-[GlueDataBrew.Client.send_project_session_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.send_project_session_action)
+```python title="Method definition"
+def send_project_session_action(
+    self,
+    *,
+    Name: str,
+    Preview: bool = ...,
+    RecipeStep: RecipeStepTypeDef = ...,  # (1)
+    StepIndex: int = ...,
+    ClientSessionId: str = ...,
+    ViewFrame: ViewFrameTypeDef = ...,  # (2)
+) -> SendProjectSessionActionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SendProjectSessionActionRequestRequestTypeDef](./type_defs.md#sendprojectsessionactionrequestrequesttypedef).
+1. See [:material-code-braces: RecipeStepTypeDef](./type_defs.md#recipesteptypedef) 
+2. See [:material-code-braces: ViewFrameTypeDef](./type_defs.md#viewframetypedef) 
+3. See [:material-code-braces: SendProjectSessionActionResponseTypeDef](./type_defs.md#sendprojectsessionactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Preview`: `bool`
-- `RecipeStep`: [RecipeStepTypeDef](./type_defs.md#recipesteptypedef)
-- `StepIndex`: `int`
-- `ClientSessionId`: `str`
-- `ViewFrame`: [ViewFrameTypeDef](./type_defs.md#viewframetypedef)
+```python title="Usage example with kwargs"
+kwargs: SendProjectSessionActionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[SendProjectSessionActionResponseTypeDef](./type_defs.md#sendprojectsessionactionresponsetypedef).
+parent.send_project_session_action(**kwargs)
+```
 
-<a id="start\_job\_run"></a>
+1. See [:material-code-braces: SendProjectSessionActionRequestRequestTypeDef](./type_defs.md#sendprojectsessionactionrequestrequesttypedef) 
 
-### start_job_run
+### start\_job\_run
 
 Runs a DataBrew job.
 
-Type annotations for `boto3.client("databrew").start_job_run` method.
+Type annotations and code completion for `#!python boto3.client("databrew").start_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_job_run)
 
-Boto3 documentation:
-[GlueDataBrew.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_job_run)
+```python title="Method definition"
+def start_job_run(
+    self,
+    *,
+    Name: str,
+) -> StartJobRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartJobRunRequestRequestTypeDef](./type_defs.md#startjobrunrequestrequesttypedef).
+1. See [:material-code-braces: StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartJobRunRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
+parent.start_job_run(**kwargs)
+```
 
-<a id="start\_project\_session"></a>
+1. See [:material-code-braces: StartJobRunRequestRequestTypeDef](./type_defs.md#startjobrunrequestrequesttypedef) 
 
-### start_project_session
+### start\_project\_session
 
 Creates an interactive session, enabling you to manipulate data in a DataBrew
 project.
 
-Type annotations for `boto3.client("databrew").start_project_session` method.
+Type annotations and code completion for `#!python boto3.client("databrew").start_project_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_project_session)
 
-Boto3 documentation:
-[GlueDataBrew.Client.start_project_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.start_project_session)
+```python title="Method definition"
+def start_project_session(
+    self,
+    *,
+    Name: str,
+    AssumeControl: bool = ...,
+) -> StartProjectSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartProjectSessionRequestRequestTypeDef](./type_defs.md#startprojectsessionrequestrequesttypedef).
+1. See [:material-code-braces: StartProjectSessionResponseTypeDef](./type_defs.md#startprojectsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AssumeControl`: `bool`
+```python title="Usage example with kwargs"
+kwargs: StartProjectSessionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[StartProjectSessionResponseTypeDef](./type_defs.md#startprojectsessionresponsetypedef).
+parent.start_project_session(**kwargs)
+```
 
-<a id="stop\_job\_run"></a>
+1. See [:material-code-braces: StartProjectSessionRequestRequestTypeDef](./type_defs.md#startprojectsessionrequestrequesttypedef) 
 
-### stop_job_run
+### stop\_job\_run
 
 Stops a particular run of a job.
 
-Type annotations for `boto3.client("databrew").stop_job_run` method.
+Type annotations and code completion for `#!python boto3.client("databrew").stop_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.stop_job_run)
 
-Boto3 documentation:
-[GlueDataBrew.Client.stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.stop_job_run)
+```python title="Method definition"
+def stop_job_run(
+    self,
+    *,
+    Name: str,
+    RunId: str,
+) -> StopJobRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopJobRunRequestRequestTypeDef](./type_defs.md#stopjobrunrequestrequesttypedef).
+1. See [:material-code-braces: StopJobRunResponseTypeDef](./type_defs.md#stopjobrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopJobRunRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RunId": ...,
+}
 
-Returns [StopJobRunResponseTypeDef](./type_defs.md#stopjobrunresponsetypedef).
+parent.stop_job_run(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopJobRunRequestRequestTypeDef](./type_defs.md#stopjobrunrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds metadata tags to a DataBrew resource, such as a dataset, project, recipe,
 job, or schedule.
 
-Type annotations for `boto3.client("databrew").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("databrew").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.tag_resource)
 
-Boto3 documentation:
-[GlueDataBrew.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes metadata tags from a DataBrew resource.
 
-Type annotations for `boto3.client("databrew").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("databrew").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.untag_resource)
 
-Boto3 documentation:
-[GlueDataBrew.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_dataset"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_dataset
+### update\_dataset
 
 Modifies the definition of an existing DataBrew dataset.
 
-Type annotations for `boto3.client("databrew").update_dataset` method.
+Type annotations and code completion for `#!python boto3.client("databrew").update_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_dataset)
 
-Boto3 documentation:
-[GlueDataBrew.Client.update_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_dataset)
+```python title="Method definition"
+def update_dataset(
+    self,
+    *,
+    Name: str,
+    Input: InputTypeDef,  # (1)
+    Format: InputFormatType = ...,  # (2)
+    FormatOptions: FormatOptionsTypeDef = ...,  # (3)
+    PathOptions: PathOptionsTypeDef = ...,  # (4)
+) -> UpdateDatasetResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDatasetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef).
+1. See [:material-code-braces: InputTypeDef](./type_defs.md#inputtypedef) 
+2. See [:material-code-brackets: InputFormatType](./literals.md#inputformattype) 
+3. See [:material-code-braces: FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef) 
+4. See [:material-code-braces: PathOptionsTypeDef](./type_defs.md#pathoptionstypedef) 
+5. See [:material-code-braces: UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Input`: [InputTypeDef](./type_defs.md#inputtypedef) *(required)*
-- `Format`: [InputFormatType](./literals.md#inputformattype)
-- `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
-- `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateDatasetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Input": ...,
+}
 
-Returns
-[UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
+parent.update_dataset(**kwargs)
+```
 
-<a id="update\_profile\_job"></a>
+1. See [:material-code-braces: UpdateDatasetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef) 
 
-### update_profile_job
+### update\_profile\_job
 
 Modifies the definition of an existing profile job.
 
-Type annotations for `boto3.client("databrew").update_profile_job` method.
+Type annotations and code completion for `#!python boto3.client("databrew").update_profile_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_profile_job)
 
-Boto3 documentation:
-[GlueDataBrew.Client.update_profile_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_profile_job)
+```python title="Method definition"
+def update_profile_job(
+    self,
+    *,
+    Name: str,
+    OutputLocation: S3LocationTypeDef,  # (1)
+    RoleArn: str,
+    Configuration: ProfileConfigurationTypeDef = ...,  # (2)
+    EncryptionKeyArn: str = ...,
+    EncryptionMode: EncryptionModeType = ...,  # (3)
+    LogSubscription: LogSubscriptionType = ...,  # (4)
+    MaxCapacity: int = ...,
+    MaxRetries: int = ...,
+    ValidationConfigurations: Sequence[ValidationConfigurationTypeDef] = ...,  # (5)
+    Timeout: int = ...,
+    JobSample: JobSampleTypeDef = ...,  # (6)
+) -> UpdateProfileJobResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProfileJobRequestRequestTypeDef](./type_defs.md#updateprofilejobrequestrequesttypedef).
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef) 
+3. See [:material-code-brackets: EncryptionModeType](./literals.md#encryptionmodetype) 
+4. See [:material-code-brackets: LogSubscriptionType](./literals.md#logsubscriptiontype) 
+5. See [:material-code-braces: ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef) 
+6. See [:material-code-braces: JobSampleTypeDef](./type_defs.md#jobsampletypedef) 
+7. See [:material-code-braces: UpdateProfileJobResponseTypeDef](./type_defs.md#updateprofilejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-  *(required)*
-- `RoleArn`: `str` *(required)*
-- `Configuration`:
-  [ProfileConfigurationTypeDef](./type_defs.md#profileconfigurationtypedef)
-- `EncryptionKeyArn`: `str`
-- `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
-- `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
-- `MaxCapacity`: `int`
-- `MaxRetries`: `int`
-- `ValidationConfigurations`:
-  `Sequence`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
-- `Timeout`: `int`
-- `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateProfileJobRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "OutputLocation": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[UpdateProfileJobResponseTypeDef](./type_defs.md#updateprofilejobresponsetypedef).
+parent.update_profile_job(**kwargs)
+```
 
-<a id="update\_project"></a>
+1. See [:material-code-braces: UpdateProfileJobRequestRequestTypeDef](./type_defs.md#updateprofilejobrequestrequesttypedef) 
 
-### update_project
+### update\_project
 
 Modifies the definition of an existing DataBrew project.
 
-Type annotations for `boto3.client("databrew").update_project` method.
+Type annotations and code completion for `#!python boto3.client("databrew").update_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_project)
 
-Boto3 documentation:
-[GlueDataBrew.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_project)
+```python title="Method definition"
+def update_project(
+    self,
+    *,
+    RoleArn: str,
+    Name: str,
+    Sample: SampleTypeDef = ...,  # (1)
+) -> UpdateProjectResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
+1. See [:material-code-braces: SampleTypeDef](./type_defs.md#sampletypedef) 
+2. See [:material-code-braces: UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateProjectRequestRequestTypeDef = {  # (1)
+    "RoleArn": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef).
+parent.update_project(**kwargs)
+```
 
-<a id="update\_recipe"></a>
+1. See [:material-code-braces: UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef) 
 
-### update_recipe
+### update\_recipe
 
 Modifies the definition of the `LATEST_WORKING` version of a DataBrew recipe.
 
-Type annotations for `boto3.client("databrew").update_recipe` method.
+Type annotations and code completion for `#!python boto3.client("databrew").update_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe)
 
-Boto3 documentation:
-[GlueDataBrew.Client.update_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe)
+```python title="Method definition"
+def update_recipe(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    Steps: Sequence[RecipeStepTypeDef] = ...,  # (1)
+) -> UpdateRecipeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRecipeRequestRequestTypeDef](./type_defs.md#updatereciperequestrequesttypedef).
+1. See [:material-code-braces: RecipeStepTypeDef](./type_defs.md#recipesteptypedef) 
+2. See [:material-code-braces: UpdateRecipeResponseTypeDef](./type_defs.md#updatereciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `Steps`: `Sequence`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateRecipeRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateRecipeResponseTypeDef](./type_defs.md#updatereciperesponsetypedef).
+parent.update_recipe(**kwargs)
+```
 
-<a id="update\_recipe\_job"></a>
+1. See [:material-code-braces: UpdateRecipeRequestRequestTypeDef](./type_defs.md#updatereciperequestrequesttypedef) 
 
-### update_recipe_job
+### update\_recipe\_job
 
 Modifies the definition of an existing DataBrew recipe job.
 
-Type annotations for `boto3.client("databrew").update_recipe_job` method.
+Type annotations and code completion for `#!python boto3.client("databrew").update_recipe_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe_job)
 
-Boto3 documentation:
-[GlueDataBrew.Client.update_recipe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_recipe_job)
+```python title="Method definition"
+def update_recipe_job(
+    self,
+    *,
+    Name: str,
+    RoleArn: str,
+    EncryptionKeyArn: str = ...,
+    EncryptionMode: EncryptionModeType = ...,  # (1)
+    LogSubscription: LogSubscriptionType = ...,  # (2)
+    MaxCapacity: int = ...,
+    MaxRetries: int = ...,
+    Outputs: Sequence[OutputTypeDef] = ...,  # (3)
+    DataCatalogOutputs: Sequence[DataCatalogOutputTypeDef] = ...,  # (4)
+    DatabaseOutputs: Sequence[DatabaseOutputTypeDef] = ...,  # (5)
+    Timeout: int = ...,
+) -> UpdateRecipeJobResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRecipeJobRequestRequestTypeDef](./type_defs.md#updaterecipejobrequestrequesttypedef).
+1. See [:material-code-brackets: EncryptionModeType](./literals.md#encryptionmodetype) 
+2. See [:material-code-brackets: LogSubscriptionType](./literals.md#logsubscriptiontype) 
+3. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+4. See [:material-code-braces: DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef) 
+5. See [:material-code-braces: DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef) 
+6. See [:material-code-braces: UpdateRecipeJobResponseTypeDef](./type_defs.md#updaterecipejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `EncryptionKeyArn`: `str`
-- `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
-- `LogSubscription`: [LogSubscriptionType](./literals.md#logsubscriptiontype)
-- `MaxCapacity`: `int`
-- `MaxRetries`: `int`
-- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `DataCatalogOutputs`:
-  `Sequence`\[[DataCatalogOutputTypeDef](./type_defs.md#datacatalogoutputtypedef)\]
-- `DatabaseOutputs`:
-  `Sequence`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
-- `Timeout`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateRecipeJobRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[UpdateRecipeJobResponseTypeDef](./type_defs.md#updaterecipejobresponsetypedef).
+parent.update_recipe_job(**kwargs)
+```
 
-<a id="update\_ruleset"></a>
+1. See [:material-code-braces: UpdateRecipeJobRequestRequestTypeDef](./type_defs.md#updaterecipejobrequestrequesttypedef) 
 
-### update_ruleset
+### update\_ruleset
 
 Updates specified ruleset.
 
-Type annotations for `boto3.client("databrew").update_ruleset` method.
+Type annotations and code completion for `#!python boto3.client("databrew").update_ruleset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_ruleset)
 
-Boto3 documentation:
-[GlueDataBrew.Client.update_ruleset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_ruleset)
+```python title="Method definition"
+def update_ruleset(
+    self,
+    *,
+    Name: str,
+    Rules: Sequence[RuleTypeDef],  # (1)
+    Description: str = ...,
+) -> UpdateRulesetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRulesetRequestRequestTypeDef](./type_defs.md#updaterulesetrequestrequesttypedef).
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: UpdateRulesetResponseTypeDef](./type_defs.md#updaterulesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateRulesetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Rules": ...,
+}
 
-Returns
-[UpdateRulesetResponseTypeDef](./type_defs.md#updaterulesetresponsetypedef).
+parent.update_ruleset(**kwargs)
+```
 
-<a id="update\_schedule"></a>
+1. See [:material-code-braces: UpdateRulesetRequestRequestTypeDef](./type_defs.md#updaterulesetrequestrequesttypedef) 
 
-### update_schedule
+### update\_schedule
 
 Modifies the definition of an existing DataBrew schedule.
 
-Type annotations for `boto3.client("databrew").update_schedule` method.
+Type annotations and code completion for `#!python boto3.client("databrew").update_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_schedule)
 
-Boto3 documentation:
-[GlueDataBrew.Client.update_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client.update_schedule)
+```python title="Method definition"
+def update_schedule(
+    self,
+    *,
+    CronExpression: str,
+    Name: str,
+    JobNames: Sequence[str] = ...,
+) -> UpdateScheduleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateScheduleRequestRequestTypeDef](./type_defs.md#updateschedulerequestrequesttypedef).
+1. See [:material-code-braces: UpdateScheduleResponseTypeDef](./type_defs.md#updatescheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CronExpression`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `JobNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateScheduleRequestRequestTypeDef = {  # (1)
+    "CronExpression": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateScheduleResponseTypeDef](./type_defs.md#updatescheduleresponsetypedef).
+parent.update_schedule(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateScheduleRequestRequestTypeDef](./type_defs.md#updateschedulerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("databrew").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("databrew").get_paginator` method with overloads.
 
-- `client.get_paginator("list_datasets")` ->
-  [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
-- `client.get_paginator("list_job_runs")` ->
-  [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
-- `client.get_paginator("list_jobs")` ->
-  [ListJobsPaginator](./paginators.md#listjobspaginator)
-- `client.get_paginator("list_projects")` ->
-  [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-- `client.get_paginator("list_recipe_versions")` ->
-  [ListRecipeVersionsPaginator](./paginators.md#listrecipeversionspaginator)
-- `client.get_paginator("list_recipes")` ->
-  [ListRecipesPaginator](./paginators.md#listrecipespaginator)
-- `client.get_paginator("list_rulesets")` ->
-  [ListRulesetsPaginator](./paginators.md#listrulesetspaginator)
-- `client.get_paginator("list_schedules")` ->
-  [ListSchedulesPaginator](./paginators.md#listschedulespaginator)
+- `client.get_paginator("list_datasets")` -> [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+- `client.get_paginator("list_job_runs")` -> [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
+- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_recipe_versions")` -> [ListRecipeVersionsPaginator](./paginators.md#listrecipeversionspaginator)
+- `client.get_paginator("list_recipes")` -> [ListRecipesPaginator](./paginators.md#listrecipespaginator)
+- `client.get_paginator("list_rulesets")` -> [ListRulesetsPaginator](./paginators.md#listrulesetspaginator)
+- `client.get_paginator("list_schedules")` -> [ListSchedulesPaginator](./paginators.md#listschedulespaginator)
+
+
+

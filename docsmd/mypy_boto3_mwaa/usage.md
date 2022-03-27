@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-mwaa-module"></a>
-
-# Examples for boto3 MWAA module
+# Examples
 
 > [Index](../README.md) > [MWAA](./README.md) > Examples
 
-- [Examples for boto3 MWAA module](#examples-for-boto3-mwaa-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
+    type annotations stubs module [mypy-boto3-mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[mwaa]` package installed.
 
-Write your `MWAA` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `MWAA` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MWAAClient
-# and provides type checking and code completion
-client = session.client("mwaa")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListEnvironmentsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_environments")
-for item in paginator.paginate(...):
-    # item has type ListEnvironmentsOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("mwaa")  # (1)
+    result = client.create_cli_token()  # (2)
+    ```
+
+    1. client: [MWAAClient](./client.md)
+    2. result: [:material-code-braces: CreateCliTokenResponseTypeDef](./type_defs.md#createclitokenresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("mwaa")  # (1)
+
+    paginator = client.get_paginator("list_environments")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [MWAAClient](./client.md)
+    2. paginator: [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+    3. item: [:material-code-braces: ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[mwaa]` or a standalone `mypy_boto3_mwaa` package, you
-have to explicitly specify `client: MWAAClient` type annotation.
+With `boto3-stubs-lite[mwaa]`
+or a standalone `mypy_boto3_mwaa` package, you have to explicitly specify `client: MWAAClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_mwaa.client import MWAAClient
-from mypy_boto3_mwaa.paginator import ListEnvironmentsPaginator
-
-from mypy_boto3_mwaa.literals import PaginatorName
-
-from mypy_boto3_mwaa.type_defs import bool
-from mypy_boto3_mwaa.type_defs import ListEnvironmentsOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: MWAAClient = session.client("mwaa")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_mwaa.client import MWAAClient
+    from mypy_boto3_mwaa.type_defs import CreateCliTokenResponseTypeDef
+    from mypy_boto3_mwaa.type_defs import CreateCliTokenRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_environments"
-paginator: ListEnvironmentsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListEnvironmentsOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: MWAAClient = session.client("mwaa")
+
+    kwargs: CreateCliTokenRequestRequestTypeDef = {...}
+    result: CreateCliTokenResponseTypeDef = client.create_cli_token(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_mwaa.client import MWAAClient
+    from mypy_boto3_mwaa.paginator import ListEnvironmentsPaginator
+    from mypy_boto3_mwaa.type_defs import ListEnvironmentsOutputTypeDef
+
+
+    session = Session()
+    client: MWAAClient = session.client("mwaa")
+
+    paginator: ListEnvironmentsPaginator = client.get_paginator("list_environments")
+    for item in paginator.paginate(...):
+        item: ListEnvironmentsOutputTypeDef
+        print(item)
+    ```
+
+
+
+

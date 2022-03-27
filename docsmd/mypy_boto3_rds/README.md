@@ -1,44 +1,20 @@
-<a id="type-annotations-for-boto3-rds-module"></a>
-
-# Type annotations for boto3 RDS module
+#  RDS module
 
 > [Index](../README.md) > RDS
 
-Auto-generated documentation for
-[RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
-type annotations stubs module
-[mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
+!!! note ""
 
-- [Type annotations for boto3 RDS module](#type-annotations-for-boto3-rds-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-    - [From conda-forge](#from-conda-forge)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [RDSClient](#rdsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
+    type annotations stubs module [mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `RDS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -58,33 +34,31 @@ python -m pip install 'boto3-stubs-lite[rds]'
 python -m pip install mypy-boto3-rds
 ```
 
-<a id="from-conda-forge"></a>
 
 ### From conda-forge
 
-Installing `mypy-boto3-rds` from the `conda-forge` channel can be achieved by
-adding `conda-forge` to your channels with:
+Installing `mypy-boto3-rds` from the `conda-forge` channel
+can be achieved by adding `conda-forge` to your channels with:
 
 ```bash
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `mypy-boto3-rds` can be
-installed with:
+Once the `conda-forge` channel has been enabled, `mypy-boto3-rds`
+can be installed with:
 
 ```bash
 conda install mypy-boto3-rds
 ```
 
-It is possible to list all of the versions of `mypy-boto3-rds` available on
-your platform with:
+It is possible to list all of the versions of `mypy-boto3-rds`
+available on your platform with:
 
 ```bash
 conda search mypy-boto3-rds --channel conda-forge
 ```
 
-<a id="how-to-uninstall"></a>
 
 ## How to uninstall
 
@@ -92,316 +66,37 @@ conda search mypy-boto3-rds --channel conda-forge
 python -m pip uninstall -y mypy-boto3-rds
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="rdsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## RDSClient
 
-Type annotations for `boto3.client("rds")` as [RDSClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("rds")` as [RDSClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_rds.client import RDSClient
+
+def get_client() -> RDSClient:
+    return Session().cleint("rds")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_role_to_db_cluster](./client.md#add_role_to_db_cluster)
-- [add_role_to_db_instance](./client.md#add_role_to_db_instance)
-- [add_source_identifier_to_subscription](./client.md#add_source_identifier_to_subscription)
-- [add_tags_to_resource](./client.md#add_tags_to_resource)
-- [apply_pending_maintenance_action](./client.md#apply_pending_maintenance_action)
-- [authorize_db_security_group_ingress](./client.md#authorize_db_security_group_ingress)
-- [backtrack_db_cluster](./client.md#backtrack_db_cluster)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_export_task](./client.md#cancel_export_task)
-- [copy_db_cluster_parameter_group](./client.md#copy_db_cluster_parameter_group)
-- [copy_db_cluster_snapshot](./client.md#copy_db_cluster_snapshot)
-- [copy_db_parameter_group](./client.md#copy_db_parameter_group)
-- [copy_db_snapshot](./client.md#copy_db_snapshot)
-- [copy_option_group](./client.md#copy_option_group)
-- [create_custom_availability_zone](./client.md#create_custom_availability_zone)
-- [create_custom_db_engine_version](./client.md#create_custom_db_engine_version)
-- [create_db_cluster](./client.md#create_db_cluster)
-- [create_db_cluster_endpoint](./client.md#create_db_cluster_endpoint)
-- [create_db_cluster_parameter_group](./client.md#create_db_cluster_parameter_group)
-- [create_db_cluster_snapshot](./client.md#create_db_cluster_snapshot)
-- [create_db_instance](./client.md#create_db_instance)
-- [create_db_instance_read_replica](./client.md#create_db_instance_read_replica)
-- [create_db_parameter_group](./client.md#create_db_parameter_group)
-- [create_db_proxy](./client.md#create_db_proxy)
-- [create_db_proxy_endpoint](./client.md#create_db_proxy_endpoint)
-- [create_db_security_group](./client.md#create_db_security_group)
-- [create_db_snapshot](./client.md#create_db_snapshot)
-- [create_db_subnet_group](./client.md#create_db_subnet_group)
-- [create_event_subscription](./client.md#create_event_subscription)
-- [create_global_cluster](./client.md#create_global_cluster)
-- [create_option_group](./client.md#create_option_group)
-- [delete_custom_availability_zone](./client.md#delete_custom_availability_zone)
-- [delete_custom_db_engine_version](./client.md#delete_custom_db_engine_version)
-- [delete_db_cluster](./client.md#delete_db_cluster)
-- [delete_db_cluster_endpoint](./client.md#delete_db_cluster_endpoint)
-- [delete_db_cluster_parameter_group](./client.md#delete_db_cluster_parameter_group)
-- [delete_db_cluster_snapshot](./client.md#delete_db_cluster_snapshot)
-- [delete_db_instance](./client.md#delete_db_instance)
-- [delete_db_instance_automated_backup](./client.md#delete_db_instance_automated_backup)
-- [delete_db_parameter_group](./client.md#delete_db_parameter_group)
-- [delete_db_proxy](./client.md#delete_db_proxy)
-- [delete_db_proxy_endpoint](./client.md#delete_db_proxy_endpoint)
-- [delete_db_security_group](./client.md#delete_db_security_group)
-- [delete_db_snapshot](./client.md#delete_db_snapshot)
-- [delete_db_subnet_group](./client.md#delete_db_subnet_group)
-- [delete_event_subscription](./client.md#delete_event_subscription)
-- [delete_global_cluster](./client.md#delete_global_cluster)
-- [delete_installation_media](./client.md#delete_installation_media)
-- [delete_option_group](./client.md#delete_option_group)
-- [deregister_db_proxy_targets](./client.md#deregister_db_proxy_targets)
-- [describe_account_attributes](./client.md#describe_account_attributes)
-- [describe_certificates](./client.md#describe_certificates)
-- [describe_custom_availability_zones](./client.md#describe_custom_availability_zones)
-- [describe_db_cluster_backtracks](./client.md#describe_db_cluster_backtracks)
-- [describe_db_cluster_endpoints](./client.md#describe_db_cluster_endpoints)
-- [describe_db_cluster_parameter_groups](./client.md#describe_db_cluster_parameter_groups)
-- [describe_db_cluster_parameters](./client.md#describe_db_cluster_parameters)
-- [describe_db_cluster_snapshot_attributes](./client.md#describe_db_cluster_snapshot_attributes)
-- [describe_db_cluster_snapshots](./client.md#describe_db_cluster_snapshots)
-- [describe_db_clusters](./client.md#describe_db_clusters)
-- [describe_db_engine_versions](./client.md#describe_db_engine_versions)
-- [describe_db_instance_automated_backups](./client.md#describe_db_instance_automated_backups)
-- [describe_db_instances](./client.md#describe_db_instances)
-- [describe_db_log_files](./client.md#describe_db_log_files)
-- [describe_db_parameter_groups](./client.md#describe_db_parameter_groups)
-- [describe_db_parameters](./client.md#describe_db_parameters)
-- [describe_db_proxies](./client.md#describe_db_proxies)
-- [describe_db_proxy_endpoints](./client.md#describe_db_proxy_endpoints)
-- [describe_db_proxy_target_groups](./client.md#describe_db_proxy_target_groups)
-- [describe_db_proxy_targets](./client.md#describe_db_proxy_targets)
-- [describe_db_security_groups](./client.md#describe_db_security_groups)
-- [describe_db_snapshot_attributes](./client.md#describe_db_snapshot_attributes)
-- [describe_db_snapshots](./client.md#describe_db_snapshots)
-- [describe_db_subnet_groups](./client.md#describe_db_subnet_groups)
-- [describe_engine_default_cluster_parameters](./client.md#describe_engine_default_cluster_parameters)
-- [describe_engine_default_parameters](./client.md#describe_engine_default_parameters)
-- [describe_event_categories](./client.md#describe_event_categories)
-- [describe_event_subscriptions](./client.md#describe_event_subscriptions)
-- [describe_events](./client.md#describe_events)
-- [describe_export_tasks](./client.md#describe_export_tasks)
-- [describe_global_clusters](./client.md#describe_global_clusters)
-- [describe_installation_media](./client.md#describe_installation_media)
-- [describe_option_group_options](./client.md#describe_option_group_options)
-- [describe_option_groups](./client.md#describe_option_groups)
-- [describe_orderable_db_instance_options](./client.md#describe_orderable_db_instance_options)
-- [describe_pending_maintenance_actions](./client.md#describe_pending_maintenance_actions)
-- [describe_reserved_db_instances](./client.md#describe_reserved_db_instances)
-- [describe_reserved_db_instances_offerings](./client.md#describe_reserved_db_instances_offerings)
-- [describe_source_regions](./client.md#describe_source_regions)
-- [describe_valid_db_instance_modifications](./client.md#describe_valid_db_instance_modifications)
-- [download_db_log_file_portion](./client.md#download_db_log_file_portion)
-- [exceptions](./client.md#exceptions)
-- [failover_db_cluster](./client.md#failover_db_cluster)
-- [failover_global_cluster](./client.md#failover_global_cluster)
-- [generate_db_auth_token](./client.md#generate_db_auth_token)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [import_installation_media](./client.md#import_installation_media)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [modify_certificates](./client.md#modify_certificates)
-- [modify_current_db_cluster_capacity](./client.md#modify_current_db_cluster_capacity)
-- [modify_custom_db_engine_version](./client.md#modify_custom_db_engine_version)
-- [modify_db_cluster](./client.md#modify_db_cluster)
-- [modify_db_cluster_endpoint](./client.md#modify_db_cluster_endpoint)
-- [modify_db_cluster_parameter_group](./client.md#modify_db_cluster_parameter_group)
-- [modify_db_cluster_snapshot_attribute](./client.md#modify_db_cluster_snapshot_attribute)
-- [modify_db_instance](./client.md#modify_db_instance)
-- [modify_db_parameter_group](./client.md#modify_db_parameter_group)
-- [modify_db_proxy](./client.md#modify_db_proxy)
-- [modify_db_proxy_endpoint](./client.md#modify_db_proxy_endpoint)
-- [modify_db_proxy_target_group](./client.md#modify_db_proxy_target_group)
-- [modify_db_snapshot](./client.md#modify_db_snapshot)
-- [modify_db_snapshot_attribute](./client.md#modify_db_snapshot_attribute)
-- [modify_db_subnet_group](./client.md#modify_db_subnet_group)
-- [modify_event_subscription](./client.md#modify_event_subscription)
-- [modify_global_cluster](./client.md#modify_global_cluster)
-- [modify_option_group](./client.md#modify_option_group)
-- [promote_read_replica](./client.md#promote_read_replica)
-- [promote_read_replica_db_cluster](./client.md#promote_read_replica_db_cluster)
-- [purchase_reserved_db_instances_offering](./client.md#purchase_reserved_db_instances_offering)
-- [reboot_db_cluster](./client.md#reboot_db_cluster)
-- [reboot_db_instance](./client.md#reboot_db_instance)
-- [register_db_proxy_targets](./client.md#register_db_proxy_targets)
-- [remove_from_global_cluster](./client.md#remove_from_global_cluster)
-- [remove_role_from_db_cluster](./client.md#remove_role_from_db_cluster)
-- [remove_role_from_db_instance](./client.md#remove_role_from_db_instance)
-- [remove_source_identifier_from_subscription](./client.md#remove_source_identifier_from_subscription)
-- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
-- [reset_db_cluster_parameter_group](./client.md#reset_db_cluster_parameter_group)
-- [reset_db_parameter_group](./client.md#reset_db_parameter_group)
-- [restore_db_cluster_from_s3](./client.md#restore_db_cluster_from_s3)
-- [restore_db_cluster_from_snapshot](./client.md#restore_db_cluster_from_snapshot)
-- [restore_db_cluster_to_point_in_time](./client.md#restore_db_cluster_to_point_in_time)
-- [restore_db_instance_from_db_snapshot](./client.md#restore_db_instance_from_db_snapshot)
-- [restore_db_instance_from_s3](./client.md#restore_db_instance_from_s3)
-- [restore_db_instance_to_point_in_time](./client.md#restore_db_instance_to_point_in_time)
-- [revoke_db_security_group_ingress](./client.md#revoke_db_security_group_ingress)
-- [start_activity_stream](./client.md#start_activity_stream)
-- [start_db_cluster](./client.md#start_db_cluster)
-- [start_db_instance](./client.md#start_db_instance)
-- [start_db_instance_automated_backups_replication](./client.md#start_db_instance_automated_backups_replication)
-- [start_export_task](./client.md#start_export_task)
-- [stop_activity_stream](./client.md#stop_activity_stream)
-- [stop_db_cluster](./client.md#stop_db_cluster)
-- [stop_db_instance](./client.md#stop_db_instance)
-- [stop_db_instance_automated_backups_replication](./client.md#stop_db_instance_automated_backups_replication)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-RDSClient [exceptions](./client.md#exceptions)
-
-- AuthorizationAlreadyExistsFault
-- AuthorizationNotFoundFault
-- AuthorizationQuotaExceededFault
-- BackupPolicyNotFoundFault
-- CertificateNotFoundFault
-- ClientError
-- CustomAvailabilityZoneAlreadyExistsFault
-- CustomAvailabilityZoneNotFoundFault
-- CustomAvailabilityZoneQuotaExceededFault
-- CustomDBEngineVersionAlreadyExistsFault
-- CustomDBEngineVersionNotFoundFault
-- CustomDBEngineVersionQuotaExceededFault
-- DBClusterAlreadyExistsFault
-- DBClusterBacktrackNotFoundFault
-- DBClusterEndpointAlreadyExistsFault
-- DBClusterEndpointNotFoundFault
-- DBClusterEndpointQuotaExceededFault
-- DBClusterNotFoundFault
-- DBClusterParameterGroupNotFoundFault
-- DBClusterQuotaExceededFault
-- DBClusterRoleAlreadyExistsFault
-- DBClusterRoleNotFoundFault
-- DBClusterRoleQuotaExceededFault
-- DBClusterSnapshotAlreadyExistsFault
-- DBClusterSnapshotNotFoundFault
-- DBInstanceAlreadyExistsFault
-- DBInstanceAutomatedBackupNotFoundFault
-- DBInstanceAutomatedBackupQuotaExceededFault
-- DBInstanceNotFoundFault
-- DBInstanceRoleAlreadyExistsFault
-- DBInstanceRoleNotFoundFault
-- DBInstanceRoleQuotaExceededFault
-- DBLogFileNotFoundFault
-- DBParameterGroupAlreadyExistsFault
-- DBParameterGroupNotFoundFault
-- DBParameterGroupQuotaExceededFault
-- DBProxyAlreadyExistsFault
-- DBProxyEndpointAlreadyExistsFault
-- DBProxyEndpointNotFoundFault
-- DBProxyEndpointQuotaExceededFault
-- DBProxyNotFoundFault
-- DBProxyQuotaExceededFault
-- DBProxyTargetAlreadyRegisteredFault
-- DBProxyTargetGroupNotFoundFault
-- DBProxyTargetNotFoundFault
-- DBSecurityGroupAlreadyExistsFault
-- DBSecurityGroupNotFoundFault
-- DBSecurityGroupNotSupportedFault
-- DBSecurityGroupQuotaExceededFault
-- DBSnapshotAlreadyExistsFault
-- DBSnapshotNotFoundFault
-- DBSubnetGroupAlreadyExistsFault
-- DBSubnetGroupDoesNotCoverEnoughAZs
-- DBSubnetGroupNotAllowedFault
-- DBSubnetGroupNotFoundFault
-- DBSubnetGroupQuotaExceededFault
-- DBSubnetQuotaExceededFault
-- DBUpgradeDependencyFailureFault
-- DomainNotFoundFault
-- EventSubscriptionQuotaExceededFault
-- ExportTaskAlreadyExistsFault
-- ExportTaskNotFoundFault
-- GlobalClusterAlreadyExistsFault
-- GlobalClusterNotFoundFault
-- GlobalClusterQuotaExceededFault
-- IamRoleMissingPermissionsFault
-- IamRoleNotFoundFault
-- InstallationMediaAlreadyExistsFault
-- InstallationMediaNotFoundFault
-- InstanceQuotaExceededFault
-- InsufficientAvailableIPsInSubnetFault
-- InsufficientDBClusterCapacityFault
-- InsufficientDBInstanceCapacityFault
-- InsufficientStorageClusterCapacityFault
-- InvalidCustomDBEngineVersionStateFault
-- InvalidDBClusterCapacityFault
-- InvalidDBClusterEndpointStateFault
-- InvalidDBClusterSnapshotStateFault
-- InvalidDBClusterStateFault
-- InvalidDBInstanceAutomatedBackupStateFault
-- InvalidDBInstanceStateFault
-- InvalidDBParameterGroupStateFault
-- InvalidDBProxyEndpointStateFault
-- InvalidDBProxyStateFault
-- InvalidDBSecurityGroupStateFault
-- InvalidDBSnapshotStateFault
-- InvalidDBSubnetGroupFault
-- InvalidDBSubnetGroupStateFault
-- InvalidDBSubnetStateFault
-- InvalidEventSubscriptionStateFault
-- InvalidExportOnlyFault
-- InvalidExportSourceStateFault
-- InvalidExportTaskStateFault
-- InvalidGlobalClusterStateFault
-- InvalidOptionGroupStateFault
-- InvalidRestoreFault
-- InvalidS3BucketFault
-- InvalidSubnet
-- InvalidVPCNetworkStateFault
-- KMSKeyNotAccessibleFault
-- OptionGroupAlreadyExistsFault
-- OptionGroupNotFoundFault
-- OptionGroupQuotaExceededFault
-- PointInTimeRestoreNotEnabledFault
-- ProvisionedIopsNotAvailableInAZFault
-- ReservedDBInstanceAlreadyExistsFault
-- ReservedDBInstanceNotFoundFault
-- ReservedDBInstanceQuotaExceededFault
-- ReservedDBInstancesOfferingNotFoundFault
-- ResourceNotFoundFault
-- SNSInvalidTopicFault
-- SNSNoAuthorizationFault
-- SNSTopicArnNotFoundFault
-- SharedSnapshotQuotaExceededFault
-- SnapshotQuotaExceededFault
-- SourceNotFoundFault
-- StorageQuotaExceededFault
-- StorageTypeNotSupportedFault
-- SubnetAlreadyInUse
-- SubscriptionAlreadyExistFault
-- SubscriptionCategoryNotFoundFault
-- SubscriptionNotFoundFault
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("rds").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("rds").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_rds.paginator import DescribeCertificatesPaginator, ...
+from mypy_boto3_rds.paginator import DescribeCertificatesPaginator
+
+def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
+    return Session().client("rds").get_paginator("describe_certificates"))
 ```
 
 - [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
@@ -441,17 +136,21 @@ from mypy_boto3_rds.paginator import DescribeCertificatesPaginator, ...
 - [DescribeSourceRegionsPaginator](./paginators.md#describesourceregionspaginator)
 - [DownloadDBLogFilePortionPaginator](./paginators.md#downloaddblogfileportionpaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("rds").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("rds").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_rds.waiter import DBClusterSnapshotAvailableWaiter, ...
+from mypy_boto3_rds.waiter import DBClusterSnapshotAvailableWaiter
+
+def get_db_cluster_snapshot_available_waiter() -> DBClusterSnapshotAvailableWaiter:
+    return Session().client("rds").get_waiter("db_cluster_snapshot_available")
 ```
 
 - [DBClusterSnapshotAvailableWaiter](./waiters.md#dbclustersnapshotavailablewaiter)
@@ -462,16 +161,21 @@ from mypy_boto3_rds.waiter import DBClusterSnapshotAvailableWaiter, ...
 - [DBSnapshotCompletedWaiter](./waiters.md#dbsnapshotcompletedwaiter)
 - [DBSnapshotDeletedWaiter](./waiters.md#dbsnapshotdeletedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_rds.literals import ActivityStreamModeType
 
-```python
-from mypy_boto3_rds.literals import ActivityStreamModeType, ...
+def get_value() -> ActivityStreamModeType:
+    return "async"
 ```
 
 - [ActivityStreamModeType](./literals.md#activitystreammodetype)
@@ -541,18 +245,23 @@ from mypy_boto3_rds.literals import ActivityStreamModeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_rds.type_defs import AccountAttributesMessageTypeDef
 
-```python
-from mypy_boto3_rds.type_defs import AccountAttributesMessageTypeDef, ...
+def get_value() -> AccountAttributesMessageTypeDef:
+    return {
+        "AccountQuotas": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
 - [AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef)
@@ -699,59 +408,102 @@ from mypy_boto3_rds.type_defs import AccountAttributesMessageTypeDef, ...
 - [DeleteInstallationMediaMessageRequestTypeDef](./type_defs.md#deleteinstallationmediamessagerequesttypedef)
 - [DeleteOptionGroupMessageRequestTypeDef](./type_defs.md#deleteoptiongroupmessagerequesttypedef)
 - [DeregisterDBProxyTargetsRequestRequestTypeDef](./type_defs.md#deregisterdbproxytargetsrequestrequesttypedef)
+- [DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef](./type_defs.md#describecertificatesmessagedescribecertificatespaginatetypedef)
 - [DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef)
+- [DescribeCustomAvailabilityZonesMessageDescribeCustomAvailabilityZonesPaginateTypeDef](./type_defs.md#describecustomavailabilityzonesmessagedescribecustomavailabilityzonespaginatetypedef)
 - [DescribeCustomAvailabilityZonesMessageRequestTypeDef](./type_defs.md#describecustomavailabilityzonesmessagerequesttypedef)
+- [DescribeDBClusterBacktracksMessageDescribeDBClusterBacktracksPaginateTypeDef](./type_defs.md#describedbclusterbacktracksmessagedescribedbclusterbacktrackspaginatetypedef)
 - [DescribeDBClusterBacktracksMessageRequestTypeDef](./type_defs.md#describedbclusterbacktracksmessagerequesttypedef)
+- [DescribeDBClusterEndpointsMessageDescribeDBClusterEndpointsPaginateTypeDef](./type_defs.md#describedbclusterendpointsmessagedescribedbclusterendpointspaginatetypedef)
 - [DescribeDBClusterEndpointsMessageRequestTypeDef](./type_defs.md#describedbclusterendpointsmessagerequesttypedef)
+- [DescribeDBClusterParameterGroupsMessageDescribeDBClusterParameterGroupsPaginateTypeDef](./type_defs.md#describedbclusterparametergroupsmessagedescribedbclusterparametergroupspaginatetypedef)
 - [DescribeDBClusterParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbclusterparametergroupsmessagerequesttypedef)
+- [DescribeDBClusterParametersMessageDescribeDBClusterParametersPaginateTypeDef](./type_defs.md#describedbclusterparametersmessagedescribedbclusterparameterspaginatetypedef)
 - [DescribeDBClusterParametersMessageRequestTypeDef](./type_defs.md#describedbclusterparametersmessagerequesttypedef)
 - [DescribeDBClusterSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotattributesmessagerequesttypedef)
 - [DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef)
+- [DescribeDBClusterSnapshotsMessageDBClusterSnapshotAvailableWaitTypeDef](./type_defs.md#describedbclustersnapshotsmessagedbclustersnapshotavailablewaittypedef)
+- [DescribeDBClusterSnapshotsMessageDBClusterSnapshotDeletedWaitTypeDef](./type_defs.md#describedbclustersnapshotsmessagedbclustersnapshotdeletedwaittypedef)
+- [DescribeDBClusterSnapshotsMessageDescribeDBClusterSnapshotsPaginateTypeDef](./type_defs.md#describedbclustersnapshotsmessagedescribedbclustersnapshotspaginatetypedef)
 - [DescribeDBClusterSnapshotsMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotsmessagerequesttypedef)
+- [DescribeDBClustersMessageDescribeDBClustersPaginateTypeDef](./type_defs.md#describedbclustersmessagedescribedbclusterspaginatetypedef)
 - [DescribeDBClustersMessageRequestTypeDef](./type_defs.md#describedbclustersmessagerequesttypedef)
+- [DescribeDBEngineVersionsMessageDescribeDBEngineVersionsPaginateTypeDef](./type_defs.md#describedbengineversionsmessagedescribedbengineversionspaginatetypedef)
 - [DescribeDBEngineVersionsMessageRequestTypeDef](./type_defs.md#describedbengineversionsmessagerequesttypedef)
+- [DescribeDBInstanceAutomatedBackupsMessageDescribeDBInstanceAutomatedBackupsPaginateTypeDef](./type_defs.md#describedbinstanceautomatedbackupsmessagedescribedbinstanceautomatedbackupspaginatetypedef)
 - [DescribeDBInstanceAutomatedBackupsMessageRequestTypeDef](./type_defs.md#describedbinstanceautomatedbackupsmessagerequesttypedef)
+- [DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef](./type_defs.md#describedbinstancesmessagedbinstanceavailablewaittypedef)
+- [DescribeDBInstancesMessageDBInstanceDeletedWaitTypeDef](./type_defs.md#describedbinstancesmessagedbinstancedeletedwaittypedef)
+- [DescribeDBInstancesMessageDescribeDBInstancesPaginateTypeDef](./type_defs.md#describedbinstancesmessagedescribedbinstancespaginatetypedef)
 - [DescribeDBInstancesMessageRequestTypeDef](./type_defs.md#describedbinstancesmessagerequesttypedef)
 - [DescribeDBLogFilesDetailsTypeDef](./type_defs.md#describedblogfilesdetailstypedef)
+- [DescribeDBLogFilesMessageDescribeDBLogFilesPaginateTypeDef](./type_defs.md#describedblogfilesmessagedescribedblogfilespaginatetypedef)
 - [DescribeDBLogFilesMessageRequestTypeDef](./type_defs.md#describedblogfilesmessagerequesttypedef)
 - [DescribeDBLogFilesResponseTypeDef](./type_defs.md#describedblogfilesresponsetypedef)
+- [DescribeDBParameterGroupsMessageDescribeDBParameterGroupsPaginateTypeDef](./type_defs.md#describedbparametergroupsmessagedescribedbparametergroupspaginatetypedef)
 - [DescribeDBParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbparametergroupsmessagerequesttypedef)
+- [DescribeDBParametersMessageDescribeDBParametersPaginateTypeDef](./type_defs.md#describedbparametersmessagedescribedbparameterspaginatetypedef)
 - [DescribeDBParametersMessageRequestTypeDef](./type_defs.md#describedbparametersmessagerequesttypedef)
+- [DescribeDBProxiesRequestDescribeDBProxiesPaginateTypeDef](./type_defs.md#describedbproxiesrequestdescribedbproxiespaginatetypedef)
 - [DescribeDBProxiesRequestRequestTypeDef](./type_defs.md#describedbproxiesrequestrequesttypedef)
 - [DescribeDBProxiesResponseTypeDef](./type_defs.md#describedbproxiesresponsetypedef)
+- [DescribeDBProxyEndpointsRequestDescribeDBProxyEndpointsPaginateTypeDef](./type_defs.md#describedbproxyendpointsrequestdescribedbproxyendpointspaginatetypedef)
 - [DescribeDBProxyEndpointsRequestRequestTypeDef](./type_defs.md#describedbproxyendpointsrequestrequesttypedef)
 - [DescribeDBProxyEndpointsResponseTypeDef](./type_defs.md#describedbproxyendpointsresponsetypedef)
+- [DescribeDBProxyTargetGroupsRequestDescribeDBProxyTargetGroupsPaginateTypeDef](./type_defs.md#describedbproxytargetgroupsrequestdescribedbproxytargetgroupspaginatetypedef)
 - [DescribeDBProxyTargetGroupsRequestRequestTypeDef](./type_defs.md#describedbproxytargetgroupsrequestrequesttypedef)
 - [DescribeDBProxyTargetGroupsResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponsetypedef)
+- [DescribeDBProxyTargetsRequestDescribeDBProxyTargetsPaginateTypeDef](./type_defs.md#describedbproxytargetsrequestdescribedbproxytargetspaginatetypedef)
 - [DescribeDBProxyTargetsRequestRequestTypeDef](./type_defs.md#describedbproxytargetsrequestrequesttypedef)
 - [DescribeDBProxyTargetsResponseTypeDef](./type_defs.md#describedbproxytargetsresponsetypedef)
+- [DescribeDBSecurityGroupsMessageDescribeDBSecurityGroupsPaginateTypeDef](./type_defs.md#describedbsecuritygroupsmessagedescribedbsecuritygroupspaginatetypedef)
 - [DescribeDBSecurityGroupsMessageRequestTypeDef](./type_defs.md#describedbsecuritygroupsmessagerequesttypedef)
 - [DescribeDBSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbsnapshotattributesmessagerequesttypedef)
 - [DescribeDBSnapshotAttributesResultTypeDef](./type_defs.md#describedbsnapshotattributesresulttypedef)
+- [DescribeDBSnapshotsMessageDBSnapshotAvailableWaitTypeDef](./type_defs.md#describedbsnapshotsmessagedbsnapshotavailablewaittypedef)
+- [DescribeDBSnapshotsMessageDBSnapshotCompletedWaitTypeDef](./type_defs.md#describedbsnapshotsmessagedbsnapshotcompletedwaittypedef)
+- [DescribeDBSnapshotsMessageDBSnapshotDeletedWaitTypeDef](./type_defs.md#describedbsnapshotsmessagedbsnapshotdeletedwaittypedef)
+- [DescribeDBSnapshotsMessageDescribeDBSnapshotsPaginateTypeDef](./type_defs.md#describedbsnapshotsmessagedescribedbsnapshotspaginatetypedef)
 - [DescribeDBSnapshotsMessageRequestTypeDef](./type_defs.md#describedbsnapshotsmessagerequesttypedef)
+- [DescribeDBSubnetGroupsMessageDescribeDBSubnetGroupsPaginateTypeDef](./type_defs.md#describedbsubnetgroupsmessagedescribedbsubnetgroupspaginatetypedef)
 - [DescribeDBSubnetGroupsMessageRequestTypeDef](./type_defs.md#describedbsubnetgroupsmessagerequesttypedef)
+- [DescribeEngineDefaultClusterParametersMessageDescribeEngineDefaultClusterParametersPaginateTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagedescribeenginedefaultclusterparameterspaginatetypedef)
 - [DescribeEngineDefaultClusterParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagerequesttypedef)
 - [DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef)
+- [DescribeEngineDefaultParametersMessageDescribeEngineDefaultParametersPaginateTypeDef](./type_defs.md#describeenginedefaultparametersmessagedescribeenginedefaultparameterspaginatetypedef)
 - [DescribeEngineDefaultParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultparametersmessagerequesttypedef)
 - [DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)
 - [DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef)
+- [DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef](./type_defs.md#describeeventsubscriptionsmessagedescribeeventsubscriptionspaginatetypedef)
 - [DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef)
+- [DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef)
 - [DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef)
+- [DescribeExportTasksMessageDescribeExportTasksPaginateTypeDef](./type_defs.md#describeexporttasksmessagedescribeexporttaskspaginatetypedef)
 - [DescribeExportTasksMessageRequestTypeDef](./type_defs.md#describeexporttasksmessagerequesttypedef)
+- [DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef](./type_defs.md#describeglobalclustersmessagedescribeglobalclusterspaginatetypedef)
 - [DescribeGlobalClustersMessageRequestTypeDef](./type_defs.md#describeglobalclustersmessagerequesttypedef)
+- [DescribeInstallationMediaMessageDescribeInstallationMediaPaginateTypeDef](./type_defs.md#describeinstallationmediamessagedescribeinstallationmediapaginatetypedef)
 - [DescribeInstallationMediaMessageRequestTypeDef](./type_defs.md#describeinstallationmediamessagerequesttypedef)
+- [DescribeOptionGroupOptionsMessageDescribeOptionGroupOptionsPaginateTypeDef](./type_defs.md#describeoptiongroupoptionsmessagedescribeoptiongroupoptionspaginatetypedef)
 - [DescribeOptionGroupOptionsMessageRequestTypeDef](./type_defs.md#describeoptiongroupoptionsmessagerequesttypedef)
+- [DescribeOptionGroupsMessageDescribeOptionGroupsPaginateTypeDef](./type_defs.md#describeoptiongroupsmessagedescribeoptiongroupspaginatetypedef)
 - [DescribeOptionGroupsMessageRequestTypeDef](./type_defs.md#describeoptiongroupsmessagerequesttypedef)
+- [DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagedescribeorderabledbinstanceoptionspaginatetypedef)
 - [DescribeOrderableDBInstanceOptionsMessageRequestTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagerequesttypedef)
+- [DescribePendingMaintenanceActionsMessageDescribePendingMaintenanceActionsPaginateTypeDef](./type_defs.md#describependingmaintenanceactionsmessagedescribependingmaintenanceactionspaginatetypedef)
 - [DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef)
+- [DescribeReservedDBInstancesMessageDescribeReservedDBInstancesPaginateTypeDef](./type_defs.md#describereserveddbinstancesmessagedescribereserveddbinstancespaginatetypedef)
 - [DescribeReservedDBInstancesMessageRequestTypeDef](./type_defs.md#describereserveddbinstancesmessagerequesttypedef)
+- [DescribeReservedDBInstancesOfferingsMessageDescribeReservedDBInstancesOfferingsPaginateTypeDef](./type_defs.md#describereserveddbinstancesofferingsmessagedescribereserveddbinstancesofferingspaginatetypedef)
 - [DescribeReservedDBInstancesOfferingsMessageRequestTypeDef](./type_defs.md#describereserveddbinstancesofferingsmessagerequesttypedef)
+- [DescribeSourceRegionsMessageDescribeSourceRegionsPaginateTypeDef](./type_defs.md#describesourceregionsmessagedescribesourceregionspaginatetypedef)
 - [DescribeSourceRegionsMessageRequestTypeDef](./type_defs.md#describesourceregionsmessagerequesttypedef)
 - [DescribeValidDBInstanceModificationsMessageRequestTypeDef](./type_defs.md#describevaliddbinstancemodificationsmessagerequesttypedef)
 - [DescribeValidDBInstanceModificationsResultTypeDef](./type_defs.md#describevaliddbinstancemodificationsresulttypedef)
 - [DomainMembershipTypeDef](./type_defs.md#domainmembershiptypedef)
 - [DoubleRangeTypeDef](./type_defs.md#doublerangetypedef)
 - [DownloadDBLogFilePortionDetailsTypeDef](./type_defs.md#downloaddblogfileportiondetailstypedef)
+- [DownloadDBLogFilePortionMessageDownloadDBLogFilePortionPaginateTypeDef](./type_defs.md#downloaddblogfileportionmessagedownloaddblogfileportionpaginatetypedef)
 - [DownloadDBLogFilePortionMessageRequestTypeDef](./type_defs.md#downloaddblogfileportionmessagerequesttypedef)
 - [EC2SecurityGroupTypeDef](./type_defs.md#ec2securitygrouptypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
@@ -911,3 +663,4 @@ from mypy_boto3_rds.type_defs import AccountAttributesMessageTypeDef, ...
 - [VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)
 - [VpnDetailsTypeDef](./type_defs.md#vpndetailstypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

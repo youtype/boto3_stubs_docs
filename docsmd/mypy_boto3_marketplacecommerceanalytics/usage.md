@@ -1,71 +1,71 @@
-<a id="examples-for-boto3-marketplacecommerceanalytics-module"></a>
+# Examples
 
-# Examples for boto3 MarketplaceCommerceAnalytics module
+> [Index](../README.md) > [MarketplaceCommerceAnalytics](./README.md) > Examples
 
-> [Index](../README.md) > [MarketplaceCommerceAnalytics](./README.md) >
-> Examples
+!!! note ""
 
-- [Examples for boto3 MarketplaceCommerceAnalytics module](#examples-for-boto3-marketplacecommerceanalytics-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
-
-<a id="client"></a>
+    Auto-generated documentation for [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
+    type annotations stubs module [mypy-boto3-marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[marketplacecommerceanalytics]` package installed.
 
-Write your `MarketplaceCommerceAnalytics` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `MarketplaceCommerceAnalytics` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MarketplaceCommerceAnalyticsClient
-# and provides type checking and code completion
-client = session.client("marketplacecommerceanalytics")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("marketplacecommerceanalytics")  # (1)
+    result = client.generate_data_set()  # (2)
+    ```
+
+    1. client: [MarketplaceCommerceAnalyticsClient](./client.md)
+    2. result: [:material-code-braces: GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[marketplacecommerceanalytics]` or a standalone
-`mypy_boto3_marketplacecommerceanalytics` package, you have to explicitly
-specify `client: MarketplaceCommerceAnalyticsClient` type annotation.
+With `boto3-stubs-lite[marketplacecommerceanalytics]`
+or a standalone `mypy_boto3_marketplacecommerceanalytics` package, you have to explicitly specify `client: MarketplaceCommerceAnalyticsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAnalyticsClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAnalyticsClient
+    from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetResultTypeDef
+    from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetRequestRequestTypeDef
 
 
-from mypy_boto3_marketplacecommerceanalytics.type_defs import bool
+    session = Session()
+
+    client: MarketplaceCommerceAnalyticsClient = session.client("marketplacecommerceanalytics")
+
+    kwargs: GenerateDataSetRequestRequestTypeDef = {...}
+    result: GenerateDataSetResultTypeDef = client.generate_data_set(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: MarketplaceCommerceAnalyticsClient = session.client("marketplacecommerceanalytics")
 
-result: bool = client.can_paginate()
-```
+

@@ -1,41 +1,18 @@
-<a id="textractclient-for-boto3-textract-module"></a>
-
-# TextractClient for boto3 Textract module
+# TextractClient
 
 > [Index](../README.md) > [Textract](./README.md) > TextractClient
 
-Auto-generated documentation for
-[Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
-type annotations stubs module
-[mypy-boto3-textract](https://pypi.org/project/mypy-boto3-textract/).
+!!! note ""
 
-- [TextractClient for boto3 Textract module](#textractclient-for-boto3-textract-module)
-  - [TextractClient](#textractclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [analyze_document](#analyze_document)
-    - [analyze_expense](#analyze_expense)
-    - [analyze_id](#analyze_id)
-    - [can_paginate](#can_paginate)
-    - [detect_document_text](#detect_document_text)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_document_analysis](#get_document_analysis)
-    - [get_document_text_detection](#get_document_text_detection)
-    - [get_expense_analysis](#get_expense_analysis)
-    - [start_document_analysis](#start_document_analysis)
-    - [start_document_text_detection](#start_document_text_detection)
-    - [start_expense_analysis](#start_expense_analysis)
-
-<a id="textractclient"></a>
+    Auto-generated documentation for [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
+    type annotations stubs module [mypy-boto3-textract](https://pypi.org/project/mypy-boto3-textract/).
 
 ## TextractClient
 
-Type annotations for `boto3.client("textract")`
+Type annotations and code completion for `#!python boto3.client("textract")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_textract.client import TextractClient
 
@@ -43,345 +20,421 @@ def get_textract_client() -> TextractClient:
     return Session().client("textract")
 ```
 
-Boto3 documentation:
-[Textract.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("textract").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("textract")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BadDocumentException,
+    client.ClientError,
+    client.DocumentTooLargeException,
+    client.HumanLoopQuotaExceededException,
+    client.IdempotentParameterMismatchException,
+    client.InternalServerError,
+    client.InvalidJobIdException,
+    client.InvalidKMSKeyException,
+    client.InvalidParameterException,
+    client.InvalidS3ObjectException,
+    client.LimitExceededException,
+    client.ProvisionedThroughputExceededException,
+    client.ThrottlingException,
+    client.UnsupportedDocumentException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_textract.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BadDocumentException`
-- `Exceptions.ClientError`
-- `Exceptions.DocumentTooLargeException`
-- `Exceptions.HumanLoopQuotaExceededException`
-- `Exceptions.IdempotentParameterMismatchException`
-- `Exceptions.InternalServerError`
-- `Exceptions.InvalidJobIdException`
-- `Exceptions.InvalidKMSKeyException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidS3ObjectException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ProvisionedThroughputExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.UnsupportedDocumentException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-TextractClient exceptions.
-
-Type annotations for `boto3.client("textract").exceptions` method.
-
-Boto3 documentation:
-[Textract.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="analyze\_document"></a>
-
-### analyze_document
+### analyze\_document
 
 Analyzes an input document for relationships between detected items.
 
-Type annotations for `boto3.client("textract").analyze_document` method.
+Type annotations and code completion for `#!python boto3.client("textract").analyze_document` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document)
 
-Boto3 documentation:
-[Textract.Client.analyze_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_document)
+```python title="Method definition"
+def analyze_document(
+    self,
+    *,
+    Document: DocumentTypeDef,  # (1)
+    FeatureTypes: Sequence[FeatureTypeType],  # (2)
+    HumanLoopConfig: HumanLoopConfigTypeDef = ...,  # (3)
+) -> AnalyzeDocumentResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[AnalyzeDocumentRequestRequestTypeDef](./type_defs.md#analyzedocumentrequestrequesttypedef).
+1. See [:material-code-braces: DocumentTypeDef](./type_defs.md#documenttypedef) 
+2. See [:material-code-brackets: FeatureTypeType](./literals.md#featuretypetype) 
+3. See [:material-code-braces: HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef) 
+4. See [:material-code-braces: AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
-- `FeatureTypes`:
-  `Sequence`\[[FeatureTypeType](./literals.md#featuretypetype)\] *(required)*
-- `HumanLoopConfig`:
-  [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: AnalyzeDocumentRequestRequestTypeDef = {  # (1)
+    "Document": ...,
+    "FeatureTypes": ...,
+}
 
-Returns
-[AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef).
+parent.analyze_document(**kwargs)
+```
 
-<a id="analyze\_expense"></a>
+1. See [:material-code-braces: AnalyzeDocumentRequestRequestTypeDef](./type_defs.md#analyzedocumentrequestrequesttypedef) 
 
-### analyze_expense
+### analyze\_expense
 
 `AnalyzeExpense` synchronously analyzes an input document for financially
 related relationships between text.
 
-Type annotations for `boto3.client("textract").analyze_expense` method.
+Type annotations and code completion for `#!python boto3.client("textract").analyze_expense` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_expense)
 
-Boto3 documentation:
-[Textract.Client.analyze_expense](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_expense)
+```python title="Method definition"
+def analyze_expense(
+    self,
+    *,
+    Document: DocumentTypeDef,  # (1)
+) -> AnalyzeExpenseResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AnalyzeExpenseRequestRequestTypeDef](./type_defs.md#analyzeexpenserequestrequesttypedef).
+1. See [:material-code-braces: DocumentTypeDef](./type_defs.md#documenttypedef) 
+2. See [:material-code-braces: AnalyzeExpenseResponseTypeDef](./type_defs.md#analyzeexpenseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: AnalyzeExpenseRequestRequestTypeDef = {  # (1)
+    "Document": ...,
+}
 
-Returns
-[AnalyzeExpenseResponseTypeDef](./type_defs.md#analyzeexpenseresponsetypedef).
+parent.analyze_expense(**kwargs)
+```
 
-<a id="analyze\_id"></a>
+1. See [:material-code-braces: AnalyzeExpenseRequestRequestTypeDef](./type_defs.md#analyzeexpenserequestrequesttypedef) 
 
-### analyze_id
+### analyze\_id
 
 Analyzes identity documents for relevant information.
 
-Type annotations for `boto3.client("textract").analyze_id` method.
+Type annotations and code completion for `#!python boto3.client("textract").analyze_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_id)
 
-Boto3 documentation:
-[Textract.Client.analyze_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.analyze_id)
+```python title="Method definition"
+def analyze_id(
+    self,
+    *,
+    DocumentPages: Sequence[DocumentTypeDef],  # (1)
+) -> AnalyzeIDResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AnalyzeIDRequestRequestTypeDef](./type_defs.md#analyzeidrequestrequesttypedef).
+1. See [:material-code-braces: DocumentTypeDef](./type_defs.md#documenttypedef) 
+2. See [:material-code-braces: AnalyzeIDResponseTypeDef](./type_defs.md#analyzeidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentPages`:
-  `Sequence`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AnalyzeIDRequestRequestTypeDef = {  # (1)
+    "DocumentPages": ...,
+}
 
-Returns [AnalyzeIDResponseTypeDef](./type_defs.md#analyzeidresponsetypedef).
+parent.analyze_id(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AnalyzeIDRequestRequestTypeDef](./type_defs.md#analyzeidrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("textract").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("textract").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.can_paginate)
 
-Boto3 documentation:
-[Textract.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="detect\_document\_text"></a>
-
-### detect_document_text
+### detect\_document\_text
 
 Detects text in the input document.
 
-Type annotations for `boto3.client("textract").detect_document_text` method.
+Type annotations and code completion for `#!python boto3.client("textract").detect_document_text` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.detect_document_text)
 
-Boto3 documentation:
-[Textract.Client.detect_document_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.detect_document_text)
+```python title="Method definition"
+def detect_document_text(
+    self,
+    *,
+    Document: DocumentTypeDef,  # (1)
+) -> DetectDocumentTextResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DetectDocumentTextRequestRequestTypeDef](./type_defs.md#detectdocumenttextrequestrequesttypedef).
+1. See [:material-code-braces: DocumentTypeDef](./type_defs.md#documenttypedef) 
+2. See [:material-code-braces: DetectDocumentTextResponseTypeDef](./type_defs.md#detectdocumenttextresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetectDocumentTextRequestRequestTypeDef = {  # (1)
+    "Document": ...,
+}
 
-Returns
-[DetectDocumentTextResponseTypeDef](./type_defs.md#detectdocumenttextresponsetypedef).
+parent.detect_document_text(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DetectDocumentTextRequestRequestTypeDef](./type_defs.md#detectdocumenttextrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("textract").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("textract").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Textract.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_document\_analysis"></a>
-
-### get_document_analysis
+### get\_document\_analysis
 
 Gets the results for an Amazon Textract asynchronous operation that analyzes
 text in a document.
 
-Type annotations for `boto3.client("textract").get_document_analysis` method.
+Type annotations and code completion for `#!python boto3.client("textract").get_document_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_analysis)
 
-Boto3 documentation:
-[Textract.Client.get_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_analysis)
+```python title="Method definition"
+def get_document_analysis(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetDocumentAnalysisResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDocumentAnalysisRequestRequestTypeDef](./type_defs.md#getdocumentanalysisrequestrequesttypedef).
+1. See [:material-code-braces: GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDocumentAnalysisRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef).
+parent.get_document_analysis(**kwargs)
+```
 
-<a id="get\_document\_text\_detection"></a>
+1. See [:material-code-braces: GetDocumentAnalysisRequestRequestTypeDef](./type_defs.md#getdocumentanalysisrequestrequesttypedef) 
 
-### get_document_text_detection
+### get\_document\_text\_detection
 
-Gets the results for an Amazon Textract asynchronous operation that detects
-text in a document.
+Gets the results for an Amazon Textract asynchronous operation that detects text
+in a document.
 
-Type annotations for `boto3.client("textract").get_document_text_detection`
-method.
+Type annotations and code completion for `#!python boto3.client("textract").get_document_text_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_text_detection)
 
-Boto3 documentation:
-[Textract.Client.get_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_document_text_detection)
+```python title="Method definition"
+def get_document_text_detection(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetDocumentTextDetectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDocumentTextDetectionRequestRequestTypeDef](./type_defs.md#getdocumenttextdetectionrequestrequesttypedef).
+1. See [:material-code-braces: GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDocumentTextDetectionRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef).
+parent.get_document_text_detection(**kwargs)
+```
 
-<a id="get\_expense\_analysis"></a>
+1. See [:material-code-braces: GetDocumentTextDetectionRequestRequestTypeDef](./type_defs.md#getdocumenttextdetectionrequestrequesttypedef) 
 
-### get_expense_analysis
+### get\_expense\_analysis
 
 Gets the results for an Amazon Textract asynchronous operation that analyzes
 invoices and receipts.
 
-Type annotations for `boto3.client("textract").get_expense_analysis` method.
+Type annotations and code completion for `#!python boto3.client("textract").get_expense_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_expense_analysis)
 
-Boto3 documentation:
-[Textract.Client.get_expense_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.get_expense_analysis)
+```python title="Method definition"
+def get_expense_analysis(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetExpenseAnalysisResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetExpenseAnalysisRequestRequestTypeDef](./type_defs.md#getexpenseanalysisrequestrequesttypedef).
+1. See [:material-code-braces: GetExpenseAnalysisResponseTypeDef](./type_defs.md#getexpenseanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetExpenseAnalysisRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetExpenseAnalysisResponseTypeDef](./type_defs.md#getexpenseanalysisresponsetypedef).
+parent.get_expense_analysis(**kwargs)
+```
 
-<a id="start\_document\_analysis"></a>
+1. See [:material-code-braces: GetExpenseAnalysisRequestRequestTypeDef](./type_defs.md#getexpenseanalysisrequestrequesttypedef) 
 
-### start_document_analysis
+### start\_document\_analysis
 
 Starts the asynchronous analysis of an input document for relationships between
 detected items such as key-value pairs, tables, and selection elements.
 
-Type annotations for `boto3.client("textract").start_document_analysis` method.
+Type annotations and code completion for `#!python boto3.client("textract").start_document_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_analysis)
 
-Boto3 documentation:
-[Textract.Client.start_document_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_analysis)
+```python title="Method definition"
+def start_document_analysis(
+    self,
+    *,
+    DocumentLocation: DocumentLocationTypeDef,  # (1)
+    FeatureTypes: Sequence[FeatureTypeType],  # (2)
+    ClientRequestToken: str = ...,
+    JobTag: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (3)
+    OutputConfig: OutputConfigTypeDef = ...,  # (4)
+    KMSKeyId: str = ...,
+) -> StartDocumentAnalysisResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[StartDocumentAnalysisRequestRequestTypeDef](./type_defs.md#startdocumentanalysisrequestrequesttypedef).
+1. See [:material-code-braces: DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef) 
+2. See [:material-code-brackets: FeatureTypeType](./literals.md#featuretypetype) 
+3. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+4. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+5. See [:material-code-braces: StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentLocation`:
-  [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
-  *(required)*
-- `FeatureTypes`:
-  `Sequence`\[[FeatureTypeType](./literals.md#featuretypetype)\] *(required)*
-- `ClientRequestToken`: `str`
-- `JobTag`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-- `KMSKeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartDocumentAnalysisRequestRequestTypeDef = {  # (1)
+    "DocumentLocation": ...,
+    "FeatureTypes": ...,
+}
 
-Returns
-[StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef).
+parent.start_document_analysis(**kwargs)
+```
 
-<a id="start\_document\_text\_detection"></a>
+1. See [:material-code-braces: StartDocumentAnalysisRequestRequestTypeDef](./type_defs.md#startdocumentanalysisrequestrequesttypedef) 
 
-### start_document_text_detection
+### start\_document\_text\_detection
 
 Starts the asynchronous detection of text in a document.
 
-Type annotations for `boto3.client("textract").start_document_text_detection`
-method.
+Type annotations and code completion for `#!python boto3.client("textract").start_document_text_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_text_detection)
 
-Boto3 documentation:
-[Textract.Client.start_document_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_document_text_detection)
+```python title="Method definition"
+def start_document_text_detection(
+    self,
+    *,
+    DocumentLocation: DocumentLocationTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+    JobTag: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    OutputConfig: OutputConfigTypeDef = ...,  # (3)
+    KMSKeyId: str = ...,
+) -> StartDocumentTextDetectionResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartDocumentTextDetectionRequestRequestTypeDef](./type_defs.md#startdocumenttextdetectionrequestrequesttypedef).
+1. See [:material-code-braces: DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+4. See [:material-code-braces: StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentLocation`:
-  [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
-  *(required)*
-- `ClientRequestToken`: `str`
-- `JobTag`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-- `KMSKeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartDocumentTextDetectionRequestRequestTypeDef = {  # (1)
+    "DocumentLocation": ...,
+}
 
-Returns
-[StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef).
+parent.start_document_text_detection(**kwargs)
+```
 
-<a id="start\_expense\_analysis"></a>
+1. See [:material-code-braces: StartDocumentTextDetectionRequestRequestTypeDef](./type_defs.md#startdocumenttextdetectionrequestrequesttypedef) 
 
-### start_expense_analysis
+### start\_expense\_analysis
 
 Starts the asynchronous analysis of invoices or receipts for data like contact
 information, items purchased, and vendor names.
 
-Type annotations for `boto3.client("textract").start_expense_analysis` method.
+Type annotations and code completion for `#!python boto3.client("textract").start_expense_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_expense_analysis)
 
-Boto3 documentation:
-[Textract.Client.start_expense_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract.Client.start_expense_analysis)
+```python title="Method definition"
+def start_expense_analysis(
+    self,
+    *,
+    DocumentLocation: DocumentLocationTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+    JobTag: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    OutputConfig: OutputConfigTypeDef = ...,  # (3)
+    KMSKeyId: str = ...,
+) -> StartExpenseAnalysisResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartExpenseAnalysisRequestRequestTypeDef](./type_defs.md#startexpenseanalysisrequestrequesttypedef).
+1. See [:material-code-braces: DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+4. See [:material-code-braces: StartExpenseAnalysisResponseTypeDef](./type_defs.md#startexpenseanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentLocation`:
-  [DocumentLocationTypeDef](./type_defs.md#documentlocationtypedef)
-  *(required)*
-- `ClientRequestToken`: `str`
-- `JobTag`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-- `KMSKeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartExpenseAnalysisRequestRequestTypeDef = {  # (1)
+    "DocumentLocation": ...,
+}
 
-Returns
-[StartExpenseAnalysisResponseTypeDef](./type_defs.md#startexpenseanalysisresponsetypedef).
+parent.start_expense_analysis(**kwargs)
+```
+
+1. See [:material-code-braces: StartExpenseAnalysisRequestRequestTypeDef](./type_defs.md#startexpenseanalysisrequestrequesttypedef) 
+
+
+
+

@@ -1,34 +1,18 @@
-<a id="paginators-for-boto3-appmesh-module"></a>
-
-# Paginators for boto3 AppMesh module
+# Paginators
 
 > [Index](../README.md) > [AppMesh](./README.md) > Paginators
 
-Auto-generated documentation for
-[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
-type annotations stubs module
-[mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+!!! note ""
 
-- [Paginators for boto3 AppMesh module](#paginators-for-boto3-appmesh-module)
-  - [ListGatewayRoutesPaginator](#listgatewayroutespaginator)
-  - [ListMeshesPaginator](#listmeshespaginator)
-  - [ListRoutesPaginator](#listroutespaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-  - [ListVirtualGatewaysPaginator](#listvirtualgatewayspaginator)
-  - [ListVirtualNodesPaginator](#listvirtualnodespaginator)
-  - [ListVirtualRoutersPaginator](#listvirtualrouterspaginator)
-  - [ListVirtualServicesPaginator](#listvirtualservicespaginator)
-
-<a id="listgatewayroutespaginator"></a>
+    Auto-generated documentation for [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+    type annotations stubs module [mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 ## ListGatewayRoutesPaginator
 
-Type annotations for
-`boto3.client("appmesh").get_paginator("list_gateway_routes")`.
+Type annotations and code completion for `#!python boto3.client("appmesh").get_paginator("list_gateway_routes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListGatewayRoutes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator
@@ -37,29 +21,43 @@ def get_list_gateway_routes_paginator() -> ListGatewayRoutesPaginator:
     return Session().client("appmesh").get_paginator("list_gateway_routes")
 ```
 
-Boto3 documentation:
-[AppMesh.Paginator.ListGatewayRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListGatewayRoutes)
 
-Arguments for `ListGatewayRoutesPaginator.paginate` method:
+### paginate
 
-- `meshName`: `str` *(required)*
-- `virtualGatewayName`: `str` *(required)*
-- `meshOwner`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGatewayRoutesPaginator.paginate` method.
 
-`ListGatewayRoutesPaginator.paginate` returns
-`_PageIterator`\[[ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGatewayRoutesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmeshespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGatewayRoutesInputListGatewayRoutesPaginateTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualGatewayName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGatewayRoutesInputListGatewayRoutesPaginateTypeDef](./type_defs.md#listgatewayroutesinputlistgatewayroutespaginatetypedef) 
 ## ListMeshesPaginator
 
-Type annotations for `boto3.client("appmesh").get_paginator("list_meshes")`.
+Type annotations and code completion for `#!python boto3.client("appmesh").get_paginator("list_meshes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListMeshes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appmesh.paginator import ListMeshesPaginator
@@ -68,26 +66,39 @@ def get_list_meshes_paginator() -> ListMeshesPaginator:
     return Session().client("appmesh").get_paginator("list_meshes")
 ```
 
-Boto3 documentation:
-[AppMesh.Paginator.ListMeshes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListMeshes)
 
-Arguments for `ListMeshesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMeshesPaginator.paginate` method.
 
-`ListMeshesPaginator.paginate` returns
-`_PageIterator`\[[ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMeshesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listroutespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMeshesInputListMeshesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMeshesInputListMeshesPaginateTypeDef](./type_defs.md#listmeshesinputlistmeshespaginatetypedef) 
 ## ListRoutesPaginator
 
-Type annotations for `boto3.client("appmesh").get_paginator("list_routes")`.
+Type annotations and code completion for `#!python boto3.client("appmesh").get_paginator("list_routes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListRoutes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appmesh.paginator import ListRoutesPaginator
@@ -96,30 +107,43 @@ def get_list_routes_paginator() -> ListRoutesPaginator:
     return Session().client("appmesh").get_paginator("list_routes")
 ```
 
-Boto3 documentation:
-[AppMesh.Paginator.ListRoutes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListRoutes)
 
-Arguments for `ListRoutesPaginator.paginate` method:
+### paginate
 
-- `meshName`: `str` *(required)*
-- `virtualRouterName`: `str` *(required)*
-- `meshOwner`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRoutesPaginator.paginate` method.
 
-`ListRoutesPaginator.paginate` returns
-`_PageIterator`\[[ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    meshName: str,
+    virtualRouterName: str,
+    meshOwner: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRoutesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRoutesInputListRoutesPaginateTypeDef = {  # (1)
+    "meshName": ...,
+    "virtualRouterName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRoutesInputListRoutesPaginateTypeDef](./type_defs.md#listroutesinputlistroutespaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("appmesh").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("appmesh").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appmesh.paginator import ListTagsForResourcePaginator
@@ -128,28 +152,40 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("appmesh").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[AppMesh.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `resourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    resourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listvirtualgatewayspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputListTagsForResourcePaginateTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceInputListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourceinputlisttagsforresourcepaginatetypedef) 
 ## ListVirtualGatewaysPaginator
 
-Type annotations for
-`boto3.client("appmesh").get_paginator("list_virtual_gateways")`.
+Type annotations and code completion for `#!python boto3.client("appmesh").get_paginator("list_virtual_gateways")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualGateways)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appmesh.paginator import ListVirtualGatewaysPaginator
@@ -158,29 +194,41 @@ def get_list_virtual_gateways_paginator() -> ListVirtualGatewaysPaginator:
     return Session().client("appmesh").get_paginator("list_virtual_gateways")
 ```
 
-Boto3 documentation:
-[AppMesh.Paginator.ListVirtualGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualGateways)
 
-Arguments for `ListVirtualGatewaysPaginator.paginate` method:
+### paginate
 
-- `meshName`: `str` *(required)*
-- `meshOwner`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListVirtualGatewaysPaginator.paginate` method.
 
-`ListVirtualGatewaysPaginator.paginate` returns
-`_PageIterator`\[[ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    meshName: str,
+    meshOwner: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListVirtualGatewaysOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listvirtualnodespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListVirtualGatewaysInputListVirtualGatewaysPaginateTypeDef = {  # (1)
+    "meshName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListVirtualGatewaysInputListVirtualGatewaysPaginateTypeDef](./type_defs.md#listvirtualgatewaysinputlistvirtualgatewayspaginatetypedef) 
 ## ListVirtualNodesPaginator
 
-Type annotations for
-`boto3.client("appmesh").get_paginator("list_virtual_nodes")`.
+Type annotations and code completion for `#!python boto3.client("appmesh").get_paginator("list_virtual_nodes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualNodes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appmesh.paginator import ListVirtualNodesPaginator
@@ -189,29 +237,41 @@ def get_list_virtual_nodes_paginator() -> ListVirtualNodesPaginator:
     return Session().client("appmesh").get_paginator("list_virtual_nodes")
 ```
 
-Boto3 documentation:
-[AppMesh.Paginator.ListVirtualNodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualNodes)
 
-Arguments for `ListVirtualNodesPaginator.paginate` method:
+### paginate
 
-- `meshName`: `str` *(required)*
-- `meshOwner`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListVirtualNodesPaginator.paginate` method.
 
-`ListVirtualNodesPaginator.paginate` returns
-`_PageIterator`\[[ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    meshName: str,
+    meshOwner: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListVirtualNodesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listvirtualrouterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListVirtualNodesInputListVirtualNodesPaginateTypeDef = {  # (1)
+    "meshName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListVirtualNodesInputListVirtualNodesPaginateTypeDef](./type_defs.md#listvirtualnodesinputlistvirtualnodespaginatetypedef) 
 ## ListVirtualRoutersPaginator
 
-Type annotations for
-`boto3.client("appmesh").get_paginator("list_virtual_routers")`.
+Type annotations and code completion for `#!python boto3.client("appmesh").get_paginator("list_virtual_routers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualRouters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appmesh.paginator import ListVirtualRoutersPaginator
@@ -220,29 +280,41 @@ def get_list_virtual_routers_paginator() -> ListVirtualRoutersPaginator:
     return Session().client("appmesh").get_paginator("list_virtual_routers")
 ```
 
-Boto3 documentation:
-[AppMesh.Paginator.ListVirtualRouters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualRouters)
 
-Arguments for `ListVirtualRoutersPaginator.paginate` method:
+### paginate
 
-- `meshName`: `str` *(required)*
-- `meshOwner`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListVirtualRoutersPaginator.paginate` method.
 
-`ListVirtualRoutersPaginator.paginate` returns
-`_PageIterator`\[[ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    meshName: str,
+    meshOwner: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListVirtualRoutersOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listvirtualservicespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListVirtualRoutersInputListVirtualRoutersPaginateTypeDef = {  # (1)
+    "meshName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListVirtualRoutersInputListVirtualRoutersPaginateTypeDef](./type_defs.md#listvirtualroutersinputlistvirtualrouterspaginatetypedef) 
 ## ListVirtualServicesPaginator
 
-Type annotations for
-`boto3.client("appmesh").get_paginator("list_virtual_services")`.
+Type annotations and code completion for `#!python boto3.client("appmesh").get_paginator("list_virtual_services")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualServices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appmesh.paginator import ListVirtualServicesPaginator
@@ -251,15 +323,32 @@ def get_list_virtual_services_paginator() -> ListVirtualServicesPaginator:
     return Session().client("appmesh").get_paginator("list_virtual_services")
 ```
 
-Boto3 documentation:
-[AppMesh.Paginator.ListVirtualServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Paginator.ListVirtualServices)
 
-Arguments for `ListVirtualServicesPaginator.paginate` method:
+### paginate
 
-- `meshName`: `str` *(required)*
-- `meshOwner`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListVirtualServicesPaginator.paginate` method.
 
-`ListVirtualServicesPaginator.paginate` returns
-`_PageIterator`\[[ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    meshName: str,
+    meshOwner: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListVirtualServicesOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVirtualServicesInputListVirtualServicesPaginateTypeDef = {  # (1)
+    "meshName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListVirtualServicesInputListVirtualServicesPaginateTypeDef](./type_defs.md#listvirtualservicesinputlistvirtualservicespaginatetypedef) 

@@ -1,34 +1,18 @@
-<a id="ssooidcclient-for-boto3-ssooidc-module"></a>
-
-# SSOOIDCClient for boto3 SSOOIDC module
+# SSOOIDCClient
 
 > [Index](../README.md) > [SSOOIDC](./README.md) > SSOOIDCClient
 
-Auto-generated documentation for
-[SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
-type annotations stubs module
-[mypy-boto3-sso-oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
+!!! note ""
 
-- [SSOOIDCClient for boto3 SSOOIDC module](#ssooidcclient-for-boto3-ssooidc-module)
-  - [SSOOIDCClient](#ssooidcclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_token](#create_token)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [register_client](#register_client)
-    - [start_device_authorization](#start_device_authorization)
-
-<a id="ssooidcclient"></a>
+    Auto-generated documentation for [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
+    type annotations stubs module [mypy-boto3-sso-oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
 ## SSOOIDCClient
 
-Type annotations for `boto3.client("sso-oidc")`
+Type annotations and code completion for `#!python boto3.client("sso-oidc")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sso_oidc.client import SSOOIDCClient
 
@@ -36,165 +20,186 @@ def get_sso-oidc_client() -> SSOOIDCClient:
     return Session().client("sso-oidc")
 ```
 
-Boto3 documentation:
-[SSOOIDC.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sso-oidc").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sso-oidc")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AuthorizationPendingException,
+    client.ClientError,
+    client.ExpiredTokenException,
+    client.InternalServerException,
+    client.InvalidClientException,
+    client.InvalidClientMetadataException,
+    client.InvalidGrantException,
+    client.InvalidRequestException,
+    client.InvalidScopeException,
+    client.SlowDownException,
+    client.UnauthorizedClientException,
+    client.UnsupportedGrantTypeException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sso_oidc.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AuthorizationPendingException`
-- `Exceptions.ClientError`
-- `Exceptions.ExpiredTokenException`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidClientException`
-- `Exceptions.InvalidClientMetadataException`
-- `Exceptions.InvalidGrantException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.InvalidScopeException`
-- `Exceptions.SlowDownException`
-- `Exceptions.UnauthorizedClientException`
-- `Exceptions.UnsupportedGrantTypeException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SSOOIDCClient exceptions.
-
-Type annotations for `boto3.client("sso-oidc").exceptions` method.
-
-Boto3 documentation:
-[SSOOIDC.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sso-oidc").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("sso-oidc").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.can_paginate)
 
-Boto3 documentation:
-[SSOOIDC.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_token"></a>
-
-### create_token
+### create\_token
 
 Creates and returns an access token for the authorized client.
 
-Type annotations for `boto3.client("sso-oidc").create_token` method.
+Type annotations and code completion for `#!python boto3.client("sso-oidc").create_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.create_token)
 
-Boto3 documentation:
-[SSOOIDC.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.create_token)
+```python title="Method definition"
+def create_token(
+    self,
+    *,
+    clientId: str,
+    clientSecret: str,
+    grantType: str,
+    deviceCode: str,
+    code: str = ...,
+    refreshToken: str = ...,
+    scope: Sequence[str] = ...,
+    redirectUri: str = ...,
+) -> CreateTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef).
+1. See [:material-code-braces: CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientId`: `str` *(required)*
-- `clientSecret`: `str` *(required)*
-- `grantType`: `str` *(required)*
-- `deviceCode`: `str` *(required)*
-- `code`: `str`
-- `refreshToken`: `str`
-- `scope`: `Sequence`\[`str`\]
-- `redirectUri`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateTokenRequestRequestTypeDef = {  # (1)
+    "clientId": ...,
+    "clientSecret": ...,
+    "grantType": ...,
+    "deviceCode": ...,
+}
 
-Returns
-[CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
+parent.create_token(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("sso-oidc").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sso-oidc").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SSOOIDC.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="register\_client"></a>
-
-### register_client
+### register\_client
 
 Registers a client with AWS SSO.
 
-Type annotations for `boto3.client("sso-oidc").register_client` method.
+Type annotations and code completion for `#!python boto3.client("sso-oidc").register_client` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.register_client)
 
-Boto3 documentation:
-[SSOOIDC.Client.register_client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.register_client)
+```python title="Method definition"
+def register_client(
+    self,
+    *,
+    clientName: str,
+    clientType: str,
+    scopes: Sequence[str] = ...,
+) -> RegisterClientResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterClientRequestRequestTypeDef](./type_defs.md#registerclientrequestrequesttypedef).
+1. See [:material-code-braces: RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientName`: `str` *(required)*
-- `clientType`: `str` *(required)*
-- `scopes`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: RegisterClientRequestRequestTypeDef = {  # (1)
+    "clientName": ...,
+    "clientType": ...,
+}
 
-Returns
-[RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef).
+parent.register_client(**kwargs)
+```
 
-<a id="start\_device\_authorization"></a>
+1. See [:material-code-braces: RegisterClientRequestRequestTypeDef](./type_defs.md#registerclientrequestrequesttypedef) 
 
-### start_device_authorization
+### start\_device\_authorization
 
 Initiates device authorization by requesting a pair of verification codes from
 the authorization service.
 
-Type annotations for `boto3.client("sso-oidc").start_device_authorization`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-oidc").start_device_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.start_device_authorization)
 
-Boto3 documentation:
-[SSOOIDC.Client.start_device_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC.Client.start_device_authorization)
+```python title="Method definition"
+def start_device_authorization(
+    self,
+    *,
+    clientId: str,
+    clientSecret: str,
+    startUrl: str,
+) -> StartDeviceAuthorizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartDeviceAuthorizationRequestRequestTypeDef](./type_defs.md#startdeviceauthorizationrequestrequesttypedef).
+1. See [:material-code-braces: StartDeviceAuthorizationResponseTypeDef](./type_defs.md#startdeviceauthorizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientId`: `str` *(required)*
-- `clientSecret`: `str` *(required)*
-- `startUrl`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartDeviceAuthorizationRequestRequestTypeDef = {  # (1)
+    "clientId": ...,
+    "clientSecret": ...,
+    "startUrl": ...,
+}
 
-Returns
-[StartDeviceAuthorizationResponseTypeDef](./type_defs.md#startdeviceauthorizationresponsetypedef).
+parent.start_device_authorization(**kwargs)
+```
+
+1. See [:material-code-braces: StartDeviceAuthorizationRequestRequestTypeDef](./type_defs.md#startdeviceauthorizationrequestrequesttypedef) 
+
+
+
+

@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-applicationinsights-module"></a>
-
-# Examples for boto3 ApplicationInsights module
+# Examples
 
 > [Index](../README.md) > [ApplicationInsights](./README.md) > Examples
 
-- [Examples for boto3 ApplicationInsights module](#examples-for-boto3-applicationinsights-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
+    type annotations stubs module [mypy-boto3-application-insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[application-insights]` package installed.
 
-Write your `ApplicationInsights` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `ApplicationInsights` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ApplicationInsightsClient
-# and provides type checking and code completion
-client = session.client("application-insights")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("application-insights")  # (1)
+    result = client.create_application()  # (2)
+    ```
+
+    1. client: [ApplicationInsightsClient](./client.md)
+    2. result: [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[application-insights]` or a standalone
-`mypy_boto3_application_insights` package, you have to explicitly specify
-`client: ApplicationInsightsClient` type annotation.
+With `boto3-stubs-lite[application-insights]`
+or a standalone `mypy_boto3_application_insights` package, you have to explicitly specify `client: ApplicationInsightsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_application_insights.client import ApplicationInsightsClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_application_insights.client import ApplicationInsightsClient
+    from mypy_boto3_application_insights.type_defs import CreateApplicationResponseTypeDef
+    from mypy_boto3_application_insights.type_defs import CreateApplicationRequestRequestTypeDef
 
 
-from mypy_boto3_application_insights.type_defs import bool
+    session = Session()
+
+    client: ApplicationInsightsClient = session.client("application-insights")
+
+    kwargs: CreateApplicationRequestRequestTypeDef = {...}
+    result: CreateApplicationResponseTypeDef = client.create_application(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: ApplicationInsightsClient = session.client("application-insights")
 
-result: bool = client.can_paginate()
-```
+

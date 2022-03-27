@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-savingsplans-module"></a>
-
-# Type annotations for boto3 SavingsPlans module
+#  SavingsPlans module
 
 > [Index](../README.md) > SavingsPlans
 
-Auto-generated documentation for
-[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
-type annotations stubs module
-[mypy-boto3-savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+!!! note ""
 
-- [Type annotations for boto3 SavingsPlans module](#type-annotations-for-boto3-savingsplans-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SavingsPlansClient](#savingsplansclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
+    type annotations stubs module [mypy-boto3-savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SavingsPlans`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[savingsplans]'
 python -m pip install mypy-boto3-savingsplans
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,64 +42,41 @@ python -m pip install mypy-boto3-savingsplans
 python -m pip uninstall -y mypy-boto3-savingsplans
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="savingsplansclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SavingsPlansClient
 
-Type annotations for `boto3.client("savingsplans")` as
-[SavingsPlansClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("savingsplans")` as [SavingsPlansClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_savingsplans.client import SavingsPlansClient
+
+def get_client() -> SavingsPlansClient:
+    return Session().cleint("savingsplans")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_savings_plan](./client.md#create_savings_plan)
-- [delete_queued_savings_plan](./client.md#delete_queued_savings_plan)
-- [describe_savings_plan_rates](./client.md#describe_savings_plan_rates)
-- [describe_savings_plans](./client.md#describe_savings_plans)
-- [describe_savings_plans_offering_rates](./client.md#describe_savings_plans_offering_rates)
-- [describe_savings_plans_offerings](./client.md#describe_savings_plans_offerings)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-SavingsPlansClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_savingsplans.literals import CurrencyCodeType
 
-```python
-from mypy_boto3_savingsplans.literals import CurrencyCodeType, ...
+def get_value() -> CurrencyCodeType:
+    return "CNY"
 ```
 
 - [CurrencyCodeType](./literals.md#currencycodetype)
@@ -140,17 +96,21 @@ from mypy_boto3_savingsplans.literals import CurrencyCodeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanRequestRequestTypeDef
 
-```python
-from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanRequestRequestTypeDef, ...
+def get_value() -> CreateSavingsPlanRequestRequestTypeDef:
+    return {
+        "savingsPlanOfferingId": ...,
+        "commitment": ...,
+    }
 ```
 
 - [CreateSavingsPlanRequestRequestTypeDef](./type_defs.md#createsavingsplanrequestrequesttypedef)
@@ -181,3 +141,4 @@ from mypy_boto3_savingsplans.type_defs import CreateSavingsPlanRequestRequestTyp
 - [SavingsPlanTypeDef](./type_defs.md#savingsplantypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+

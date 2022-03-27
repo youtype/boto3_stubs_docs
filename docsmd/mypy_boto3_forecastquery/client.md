@@ -1,33 +1,18 @@
-<a id="forecastqueryserviceclient-for-boto3-forecastqueryservice-module"></a>
+# ForecastQueryServiceClient
 
-# ForecastQueryServiceClient for boto3 ForecastQueryService module
+> [Index](../README.md) > [ForecastQueryService](./README.md) > ForecastQueryServiceClient
 
-> [Index](../README.md) > [ForecastQueryService](./README.md) >
-> ForecastQueryServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
-type annotations stubs module
-[mypy-boto3-forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
-
-- [ForecastQueryServiceClient for boto3 ForecastQueryService module](#forecastqueryserviceclient-for-boto3-forecastqueryservice-module)
-  - [ForecastQueryServiceClient](#forecastqueryserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [query_forecast](#query_forecast)
-
-<a id="forecastqueryserviceclient"></a>
+    Auto-generated documentation for [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
+    type annotations stubs module [mypy-boto3-forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
 ## ForecastQueryServiceClient
 
-Type annotations for `boto3.client("forecastquery")`
+Type annotations and code completion for `#!python boto3.client("forecastquery")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_forecastquery.client import ForecastQueryServiceClient
 
@@ -35,108 +20,108 @@ def get_forecastquery_client() -> ForecastQueryServiceClient:
     return Session().client("forecastquery")
 ```
 
-Boto3 documentation:
-[ForecastQueryService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("forecastquery").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("forecastquery")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InvalidInputException,
+    client.InvalidNextTokenException,
+    client.LimitExceededException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_forecastquery.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InvalidInputException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ForecastQueryServiceClient exceptions.
-
-Type annotations for `boto3.client("forecastquery").exceptions` method.
-
-Boto3 documentation:
-[ForecastQueryService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("forecastquery").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("forecastquery").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.can_paginate)
 
-Boto3 documentation:
-[ForecastQueryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("forecastquery").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("forecastquery").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ForecastQueryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="query\_forecast"></a>
-
-### query_forecast
+### query\_forecast
 
 Retrieves a forecast for a single item, filtered by the supplied criteria.
 
-Type annotations for `boto3.client("forecastquery").query_forecast` method.
+Type annotations and code completion for `#!python boto3.client("forecastquery").query_forecast` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.query_forecast)
 
-Boto3 documentation:
-[ForecastQueryService.Client.query_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.query_forecast)
+```python title="Method definition"
+def query_forecast(
+    self,
+    *,
+    ForecastArn: str,
+    Filters: Mapping[str, str],
+    StartDate: str = ...,
+    EndDate: str = ...,
+    NextToken: str = ...,
+) -> QueryForecastResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[QueryForecastRequestRequestTypeDef](./type_defs.md#queryforecastrequestrequesttypedef).
+1. See [:material-code-braces: QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ForecastArn`: `str` *(required)*
-- `Filters`: `Mapping`\[`str`, `str`\] *(required)*
-- `StartDate`: `str`
-- `EndDate`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: QueryForecastRequestRequestTypeDef = {  # (1)
+    "ForecastArn": ...,
+    "Filters": ...,
+}
 
-Returns
-[QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef).
+parent.query_forecast(**kwargs)
+```
+
+1. See [:material-code-braces: QueryForecastRequestRequestTypeDef](./type_defs.md#queryforecastrequestrequesttypedef) 
+
+
+
+

@@ -1,3256 +1,4400 @@
-<a id="typed-dictionaries-for-boto3-iotsitewise-module"></a>
-
-# Typed dictionaries for boto3 IoTSiteWise module
+# Typed dictionaries
 
 > [Index](../README.md) > [IoTSiteWise](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
-type annotations stubs module
-[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IoTSiteWise module](#typed-dictionaries-for-boto3-iotsitewise-module)
-  - [AccessPolicySummaryTypeDef](#accesspolicysummarytypedef)
-  - [AggregatedValueTypeDef](#aggregatedvaluetypedef)
-  - [AggregatesTypeDef](#aggregatestypedef)
-  - [AlarmsTypeDef](#alarmstypedef)
-  - [AssetCompositeModelTypeDef](#assetcompositemodeltypedef)
-  - [AssetErrorDetailsTypeDef](#asseterrordetailstypedef)
-  - [AssetHierarchyInfoTypeDef](#assethierarchyinfotypedef)
-  - [AssetHierarchyTypeDef](#assethierarchytypedef)
-  - [AssetModelCompositeModelDefinitionTypeDef](#assetmodelcompositemodeldefinitiontypedef)
-  - [AssetModelCompositeModelTypeDef](#assetmodelcompositemodeltypedef)
-  - [AssetModelHierarchyDefinitionTypeDef](#assetmodelhierarchydefinitiontypedef)
-  - [AssetModelHierarchyTypeDef](#assetmodelhierarchytypedef)
-  - [AssetModelPropertyDefinitionTypeDef](#assetmodelpropertydefinitiontypedef)
-  - [AssetModelPropertyTypeDef](#assetmodelpropertytypedef)
-  - [AssetModelStatusTypeDef](#assetmodelstatustypedef)
-  - [AssetModelSummaryTypeDef](#assetmodelsummarytypedef)
-  - [AssetPropertyTypeDef](#assetpropertytypedef)
-  - [AssetPropertyValueTypeDef](#assetpropertyvaluetypedef)
-  - [AssetRelationshipSummaryTypeDef](#assetrelationshipsummarytypedef)
-  - [AssetStatusTypeDef](#assetstatustypedef)
-  - [AssetSummaryTypeDef](#assetsummarytypedef)
-  - [AssociateAssetsRequestRequestTypeDef](#associateassetsrequestrequesttypedef)
-  - [AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef](#associatetimeseriestoassetpropertyrequestrequesttypedef)
-  - [AssociatedAssetsSummaryTypeDef](#associatedassetssummarytypedef)
-  - [AttributeTypeDef](#attributetypedef)
-  - [BatchAssociateProjectAssetsRequestRequestTypeDef](#batchassociateprojectassetsrequestrequesttypedef)
-  - [BatchAssociateProjectAssetsResponseTypeDef](#batchassociateprojectassetsresponsetypedef)
-  - [BatchDisassociateProjectAssetsRequestRequestTypeDef](#batchdisassociateprojectassetsrequestrequesttypedef)
-  - [BatchDisassociateProjectAssetsResponseTypeDef](#batchdisassociateprojectassetsresponsetypedef)
-  - [BatchPutAssetPropertyErrorEntryTypeDef](#batchputassetpropertyerrorentrytypedef)
-  - [BatchPutAssetPropertyErrorTypeDef](#batchputassetpropertyerrortypedef)
-  - [BatchPutAssetPropertyValueRequestRequestTypeDef](#batchputassetpropertyvaluerequestrequesttypedef)
-  - [BatchPutAssetPropertyValueResponseTypeDef](#batchputassetpropertyvalueresponsetypedef)
-  - [CompositeModelPropertyTypeDef](#compositemodelpropertytypedef)
-  - [ConfigurationErrorDetailsTypeDef](#configurationerrordetailstypedef)
-  - [ConfigurationStatusTypeDef](#configurationstatustypedef)
-  - [CreateAccessPolicyRequestRequestTypeDef](#createaccesspolicyrequestrequesttypedef)
-  - [CreateAccessPolicyResponseTypeDef](#createaccesspolicyresponsetypedef)
-  - [CreateAssetModelRequestRequestTypeDef](#createassetmodelrequestrequesttypedef)
-  - [CreateAssetModelResponseTypeDef](#createassetmodelresponsetypedef)
-  - [CreateAssetRequestRequestTypeDef](#createassetrequestrequesttypedef)
-  - [CreateAssetResponseTypeDef](#createassetresponsetypedef)
-  - [CreateDashboardRequestRequestTypeDef](#createdashboardrequestrequesttypedef)
-  - [CreateDashboardResponseTypeDef](#createdashboardresponsetypedef)
-  - [CreateGatewayRequestRequestTypeDef](#creategatewayrequestrequesttypedef)
-  - [CreateGatewayResponseTypeDef](#creategatewayresponsetypedef)
-  - [CreatePortalRequestRequestTypeDef](#createportalrequestrequesttypedef)
-  - [CreatePortalResponseTypeDef](#createportalresponsetypedef)
-  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
-  - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
-  - [CustomerManagedS3StorageTypeDef](#customermanageds3storagetypedef)
-  - [DashboardSummaryTypeDef](#dashboardsummarytypedef)
-  - [DeleteAccessPolicyRequestRequestTypeDef](#deleteaccesspolicyrequestrequesttypedef)
-  - [DeleteAssetModelRequestRequestTypeDef](#deleteassetmodelrequestrequesttypedef)
-  - [DeleteAssetModelResponseTypeDef](#deleteassetmodelresponsetypedef)
-  - [DeleteAssetRequestRequestTypeDef](#deleteassetrequestrequesttypedef)
-  - [DeleteAssetResponseTypeDef](#deleteassetresponsetypedef)
-  - [DeleteDashboardRequestRequestTypeDef](#deletedashboardrequestrequesttypedef)
-  - [DeleteGatewayRequestRequestTypeDef](#deletegatewayrequestrequesttypedef)
-  - [DeletePortalRequestRequestTypeDef](#deleteportalrequestrequesttypedef)
-  - [DeletePortalResponseTypeDef](#deleteportalresponsetypedef)
-  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
-  - [DeleteTimeSeriesRequestRequestTypeDef](#deletetimeseriesrequestrequesttypedef)
-  - [DescribeAccessPolicyRequestRequestTypeDef](#describeaccesspolicyrequestrequesttypedef)
-  - [DescribeAccessPolicyResponseTypeDef](#describeaccesspolicyresponsetypedef)
-  - [DescribeAssetModelRequestRequestTypeDef](#describeassetmodelrequestrequesttypedef)
-  - [DescribeAssetModelResponseTypeDef](#describeassetmodelresponsetypedef)
-  - [DescribeAssetPropertyRequestRequestTypeDef](#describeassetpropertyrequestrequesttypedef)
-  - [DescribeAssetPropertyResponseTypeDef](#describeassetpropertyresponsetypedef)
-  - [DescribeAssetRequestRequestTypeDef](#describeassetrequestrequesttypedef)
-  - [DescribeAssetResponseTypeDef](#describeassetresponsetypedef)
-  - [DescribeDashboardRequestRequestTypeDef](#describedashboardrequestrequesttypedef)
-  - [DescribeDashboardResponseTypeDef](#describedashboardresponsetypedef)
-  - [DescribeDefaultEncryptionConfigurationResponseTypeDef](#describedefaultencryptionconfigurationresponsetypedef)
-  - [DescribeGatewayCapabilityConfigurationRequestRequestTypeDef](#describegatewaycapabilityconfigurationrequestrequesttypedef)
-  - [DescribeGatewayCapabilityConfigurationResponseTypeDef](#describegatewaycapabilityconfigurationresponsetypedef)
-  - [DescribeGatewayRequestRequestTypeDef](#describegatewayrequestrequesttypedef)
-  - [DescribeGatewayResponseTypeDef](#describegatewayresponsetypedef)
-  - [DescribeLoggingOptionsResponseTypeDef](#describeloggingoptionsresponsetypedef)
-  - [DescribePortalRequestRequestTypeDef](#describeportalrequestrequesttypedef)
-  - [DescribePortalResponseTypeDef](#describeportalresponsetypedef)
-  - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
-  - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
-  - [DescribeStorageConfigurationResponseTypeDef](#describestorageconfigurationresponsetypedef)
-  - [DescribeTimeSeriesRequestRequestTypeDef](#describetimeseriesrequestrequesttypedef)
-  - [DescribeTimeSeriesResponseTypeDef](#describetimeseriesresponsetypedef)
-  - [DetailedErrorTypeDef](#detailederrortypedef)
-  - [DisassociateAssetsRequestRequestTypeDef](#disassociateassetsrequestrequesttypedef)
-  - [DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef](#disassociatetimeseriesfromassetpropertyrequestrequesttypedef)
-  - [ErrorDetailsTypeDef](#errordetailstypedef)
-  - [ExpressionVariableTypeDef](#expressionvariabletypedef)
-  - [ForwardingConfigTypeDef](#forwardingconfigtypedef)
-  - [GatewayCapabilitySummaryTypeDef](#gatewaycapabilitysummarytypedef)
-  - [GatewayPlatformTypeDef](#gatewayplatformtypedef)
-  - [GatewaySummaryTypeDef](#gatewaysummarytypedef)
-  - [GetAssetPropertyAggregatesRequestRequestTypeDef](#getassetpropertyaggregatesrequestrequesttypedef)
-  - [GetAssetPropertyAggregatesResponseTypeDef](#getassetpropertyaggregatesresponsetypedef)
-  - [GetAssetPropertyValueHistoryRequestRequestTypeDef](#getassetpropertyvaluehistoryrequestrequesttypedef)
-  - [GetAssetPropertyValueHistoryResponseTypeDef](#getassetpropertyvaluehistoryresponsetypedef)
-  - [GetAssetPropertyValueRequestRequestTypeDef](#getassetpropertyvaluerequestrequesttypedef)
-  - [GetAssetPropertyValueResponseTypeDef](#getassetpropertyvalueresponsetypedef)
-  - [GetInterpolatedAssetPropertyValuesRequestRequestTypeDef](#getinterpolatedassetpropertyvaluesrequestrequesttypedef)
-  - [GetInterpolatedAssetPropertyValuesResponseTypeDef](#getinterpolatedassetpropertyvaluesresponsetypedef)
-  - [GreengrassTypeDef](#greengrasstypedef)
-  - [GreengrassV2TypeDef](#greengrassv2typedef)
-  - [GroupIdentityTypeDef](#groupidentitytypedef)
-  - [IAMRoleIdentityTypeDef](#iamroleidentitytypedef)
-  - [IAMUserIdentityTypeDef](#iamuseridentitytypedef)
-  - [IdentityTypeDef](#identitytypedef)
-  - [ImageFileTypeDef](#imagefiletypedef)
-  - [ImageLocationTypeDef](#imagelocationtypedef)
-  - [ImageTypeDef](#imagetypedef)
-  - [InterpolatedAssetPropertyValueTypeDef](#interpolatedassetpropertyvaluetypedef)
-  - [ListAccessPoliciesRequestRequestTypeDef](#listaccesspoliciesrequestrequesttypedef)
-  - [ListAccessPoliciesResponseTypeDef](#listaccesspoliciesresponsetypedef)
-  - [ListAssetModelsRequestRequestTypeDef](#listassetmodelsrequestrequesttypedef)
-  - [ListAssetModelsResponseTypeDef](#listassetmodelsresponsetypedef)
-  - [ListAssetRelationshipsRequestRequestTypeDef](#listassetrelationshipsrequestrequesttypedef)
-  - [ListAssetRelationshipsResponseTypeDef](#listassetrelationshipsresponsetypedef)
-  - [ListAssetsRequestRequestTypeDef](#listassetsrequestrequesttypedef)
-  - [ListAssetsResponseTypeDef](#listassetsresponsetypedef)
-  - [ListAssociatedAssetsRequestRequestTypeDef](#listassociatedassetsrequestrequesttypedef)
-  - [ListAssociatedAssetsResponseTypeDef](#listassociatedassetsresponsetypedef)
-  - [ListDashboardsRequestRequestTypeDef](#listdashboardsrequestrequesttypedef)
-  - [ListDashboardsResponseTypeDef](#listdashboardsresponsetypedef)
-  - [ListGatewaysRequestRequestTypeDef](#listgatewaysrequestrequesttypedef)
-  - [ListGatewaysResponseTypeDef](#listgatewaysresponsetypedef)
-  - [ListPortalsRequestRequestTypeDef](#listportalsrequestrequesttypedef)
-  - [ListPortalsResponseTypeDef](#listportalsresponsetypedef)
-  - [ListProjectAssetsRequestRequestTypeDef](#listprojectassetsrequestrequesttypedef)
-  - [ListProjectAssetsResponseTypeDef](#listprojectassetsresponsetypedef)
-  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
-  - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTimeSeriesRequestRequestTypeDef](#listtimeseriesrequestrequesttypedef)
-  - [ListTimeSeriesResponseTypeDef](#listtimeseriesresponsetypedef)
-  - [LoggingOptionsTypeDef](#loggingoptionstypedef)
-  - [MeasurementProcessingConfigTypeDef](#measurementprocessingconfigtypedef)
-  - [MeasurementTypeDef](#measurementtypedef)
-  - [MetricProcessingConfigTypeDef](#metricprocessingconfigtypedef)
-  - [MetricTypeDef](#metrictypedef)
-  - [MetricWindowTypeDef](#metricwindowtypedef)
-  - [MonitorErrorDetailsTypeDef](#monitorerrordetailstypedef)
-  - [MultiLayerStorageTypeDef](#multilayerstoragetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PortalResourceTypeDef](#portalresourcetypedef)
-  - [PortalStatusTypeDef](#portalstatustypedef)
-  - [PortalSummaryTypeDef](#portalsummarytypedef)
-  - [ProjectResourceTypeDef](#projectresourcetypedef)
-  - [ProjectSummaryTypeDef](#projectsummarytypedef)
-  - [PropertyNotificationTypeDef](#propertynotificationtypedef)
-  - [PropertyTypeDef](#propertytypedef)
-  - [PropertyTypeTypeDef](#propertytypetypedef)
-  - [PutAssetPropertyValueEntryTypeDef](#putassetpropertyvalueentrytypedef)
-  - [PutDefaultEncryptionConfigurationRequestRequestTypeDef](#putdefaultencryptionconfigurationrequestrequesttypedef)
-  - [PutDefaultEncryptionConfigurationResponseTypeDef](#putdefaultencryptionconfigurationresponsetypedef)
-  - [PutLoggingOptionsRequestRequestTypeDef](#putloggingoptionsrequestrequesttypedef)
-  - [PutStorageConfigurationRequestRequestTypeDef](#putstorageconfigurationrequestrequesttypedef)
-  - [PutStorageConfigurationResponseTypeDef](#putstorageconfigurationresponsetypedef)
-  - [ResourceTypeDef](#resourcetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetentionPeriodTypeDef](#retentionperiodtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TimeInNanosTypeDef](#timeinnanostypedef)
-  - [TimeSeriesSummaryTypeDef](#timeseriessummarytypedef)
-  - [TransformProcessingConfigTypeDef](#transformprocessingconfigtypedef)
-  - [TransformTypeDef](#transformtypedef)
-  - [TumblingWindowTypeDef](#tumblingwindowtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAccessPolicyRequestRequestTypeDef](#updateaccesspolicyrequestrequesttypedef)
-  - [UpdateAssetModelRequestRequestTypeDef](#updateassetmodelrequestrequesttypedef)
-  - [UpdateAssetModelResponseTypeDef](#updateassetmodelresponsetypedef)
-  - [UpdateAssetPropertyRequestRequestTypeDef](#updateassetpropertyrequestrequesttypedef)
-  - [UpdateAssetRequestRequestTypeDef](#updateassetrequestrequesttypedef)
-  - [UpdateAssetResponseTypeDef](#updateassetresponsetypedef)
-  - [UpdateDashboardRequestRequestTypeDef](#updatedashboardrequestrequesttypedef)
-  - [UpdateGatewayCapabilityConfigurationRequestRequestTypeDef](#updategatewaycapabilityconfigurationrequestrequesttypedef)
-  - [UpdateGatewayCapabilityConfigurationResponseTypeDef](#updategatewaycapabilityconfigurationresponsetypedef)
-  - [UpdateGatewayRequestRequestTypeDef](#updategatewayrequestrequesttypedef)
-  - [UpdatePortalRequestRequestTypeDef](#updateportalrequestrequesttypedef)
-  - [UpdatePortalResponseTypeDef](#updateportalresponsetypedef)
-  - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
-  - [UserIdentityTypeDef](#useridentitytypedef)
-  - [VariableValueTypeDef](#variablevaluetypedef)
-  - [VariantTypeDef](#varianttypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="accesspolicysummarytypedef"></a>
+    Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+    type annotations stubs module [mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 ## AccessPolicySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef
+
+def get_value() -> AccessPolicySummaryTypeDef:
+    return {
+        "id": ...,
+        "identity": ...,
+        "resource": ...,
+        "permission": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessPolicySummaryTypeDef(TypedDict):
+    id: str,
+    identity: IdentityTypeDef,  # (1)
+    resource: ResourceTypeDef,  # (2)
+    permission: PermissionType,  # (3)
+    creationDate: NotRequired[datetime],
+    lastUpdateDate: NotRequired[datetime],
+```
 
-- `id`: `str`
-- `identity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `permission`: [PermissionType](./literals.md#permissiontype)
-
-Optional fields:
-
-- `creationDate`: `datetime`
-- `lastUpdateDate`: `datetime`
-
-<a id="aggregatedvaluetypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## AggregatedValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AggregatedValueTypeDef
+
+def get_value() -> AggregatedValueTypeDef:
+    return {
+        "timestamp": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AggregatedValueTypeDef(TypedDict):
+    timestamp: datetime,
+    value: AggregatesTypeDef,  # (2)
+    quality: NotRequired[QualityType],  # (1)
+```
 
-- `timestamp`: `datetime`
-- `value`: [AggregatesTypeDef](./type_defs.md#aggregatestypedef)
-
-Optional fields:
-
-- `quality`: [QualityType](./literals.md#qualitytype)
-
-<a id="aggregatestypedef"></a>
-
+1. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+2. See [:material-code-braces: AggregatesTypeDef](./type_defs.md#aggregatestypedef) 
 ## AggregatesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AggregatesTypeDef
+
+def get_value() -> AggregatesTypeDef:
+    return {
+        "average": ...,
+    }
 ```
 
-Optional fields:
-
-- `average`: `float`
-- `count`: `float`
-- `maximum`: `float`
-- `minimum`: `float`
-- `sum`: `float`
-- `standardDeviation`: `float`
-
-<a id="alarmstypedef"></a>
+```python title="Definition"
+class AggregatesTypeDef(TypedDict):
+    average: NotRequired[float],
+    count: NotRequired[float],
+    maximum: NotRequired[float],
+    minimum: NotRequired[float],
+    sum: NotRequired[float],
+    standardDeviation: NotRequired[float],
+```
 
 ## AlarmsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AlarmsTypeDef
+
+def get_value() -> AlarmsTypeDef:
+    return {
+        "alarmRoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `alarmRoleArn`: `str`
-
-Optional fields:
-
-- `notificationLambdaArn`: `str`
-
-<a id="assetcompositemodeltypedef"></a>
+```python title="Definition"
+class AlarmsTypeDef(TypedDict):
+    alarmRoleArn: str,
+    notificationLambdaArn: NotRequired[str],
+```
 
 ## AssetCompositeModelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetCompositeModelTypeDef
+
+def get_value() -> AssetCompositeModelTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+        "properties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetCompositeModelTypeDef(TypedDict):
+    name: str,
+    type: str,
+    properties: List[AssetPropertyTypeDef],  # (1)
+    description: NotRequired[str],
+```
 
-- `name`: `str`
-- `type`: `str`
-- `properties`:
-  `List`\[[AssetPropertyTypeDef](./type_defs.md#assetpropertytypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="asseterrordetailstypedef"></a>
-
+1. See [:material-code-braces: AssetPropertyTypeDef](./type_defs.md#assetpropertytypedef) 
 ## AssetErrorDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetErrorDetailsTypeDef
+
+def get_value() -> AssetErrorDetailsTypeDef:
+    return {
+        "assetId": ...,
+        "code": ...,
+        "message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetErrorDetailsTypeDef(TypedDict):
+    assetId: str,
+    code: AssetErrorCodeType,  # (1)
+    message: str,
+```
 
-- `assetId`: `str`
-- `code`: `Literal['INTERNAL_FAILURE']` (see
-  [AssetErrorCodeType](./literals.md#asseterrorcodetype))
-- `message`: `str`
-
-<a id="assethierarchyinfotypedef"></a>
-
+1. See [:material-code-brackets: AssetErrorCodeType](./literals.md#asseterrorcodetype) 
 ## AssetHierarchyInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetHierarchyInfoTypeDef
+
+def get_value() -> AssetHierarchyInfoTypeDef:
+    return {
+        "parentAssetId": ...,
+    }
 ```
 
-Optional fields:
-
-- `parentAssetId`: `str`
-- `childAssetId`: `str`
-
-<a id="assethierarchytypedef"></a>
+```python title="Definition"
+class AssetHierarchyInfoTypeDef(TypedDict):
+    parentAssetId: NotRequired[str],
+    childAssetId: NotRequired[str],
+```
 
 ## AssetHierarchyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetHierarchyTypeDef
+
+def get_value() -> AssetHierarchyTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `id`: `str`
-
-<a id="assetmodelcompositemodeldefinitiontypedef"></a>
+```python title="Definition"
+class AssetHierarchyTypeDef(TypedDict):
+    name: str,
+    id: NotRequired[str],
+```
 
 ## AssetModelCompositeModelDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetModelCompositeModelDefinitionTypeDef
+
+def get_value() -> AssetModelCompositeModelDefinitionTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetModelCompositeModelDefinitionTypeDef(TypedDict):
+    name: str,
+    type: str,
+    description: NotRequired[str],
+    properties: NotRequired[Sequence[AssetModelPropertyDefinitionTypeDef]],  # (1)
+```
 
-- `name`: `str`
-- `type`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `properties`:
-  `Sequence`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
-
-<a id="assetmodelcompositemodeltypedef"></a>
-
+1. See [:material-code-braces: AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef) 
 ## AssetModelCompositeModelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetModelCompositeModelTypeDef
+
+def get_value() -> AssetModelCompositeModelTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetModelCompositeModelTypeDef(TypedDict):
+    name: str,
+    type: str,
+    description: NotRequired[str],
+    properties: NotRequired[List[AssetModelPropertyTypeDef]],  # (1)
+```
 
-- `name`: `str`
-- `type`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `properties`:
-  `List`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
-
-<a id="assetmodelhierarchydefinitiontypedef"></a>
-
+1. See [:material-code-braces: AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef) 
 ## AssetModelHierarchyDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetModelHierarchyDefinitionTypeDef
+
+def get_value() -> AssetModelHierarchyDefinitionTypeDef:
+    return {
+        "name": ...,
+        "childAssetModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `childAssetModelId`: `str`
-
-<a id="assetmodelhierarchytypedef"></a>
+```python title="Definition"
+class AssetModelHierarchyDefinitionTypeDef(TypedDict):
+    name: str,
+    childAssetModelId: str,
+```
 
 ## AssetModelHierarchyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetModelHierarchyTypeDef
+
+def get_value() -> AssetModelHierarchyTypeDef:
+    return {
+        "name": ...,
+        "childAssetModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `childAssetModelId`: `str`
-
-Optional fields:
-
-- `id`: `str`
-
-<a id="assetmodelpropertydefinitiontypedef"></a>
+```python title="Definition"
+class AssetModelHierarchyTypeDef(TypedDict):
+    name: str,
+    childAssetModelId: str,
+    id: NotRequired[str],
+```
 
 ## AssetModelPropertyDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetModelPropertyDefinitionTypeDef
+
+def get_value() -> AssetModelPropertyDefinitionTypeDef:
+    return {
+        "name": ...,
+        "dataType": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetModelPropertyDefinitionTypeDef(TypedDict):
+    name: str,
+    dataType: PropertyDataTypeType,  # (1)
+    type: PropertyTypeTypeDef,  # (2)
+    dataTypeSpec: NotRequired[str],
+    unit: NotRequired[str],
+```
 
-- `name`: `str`
-- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
-- `type`: [PropertyTypeTypeDef](./type_defs.md#propertytypetypedef)
-
-Optional fields:
-
-- `dataTypeSpec`: `str`
-- `unit`: `str`
-
-<a id="assetmodelpropertytypedef"></a>
-
+1. See [:material-code-brackets: PropertyDataTypeType](./literals.md#propertydatatypetype) 
+2. See [:material-code-braces: PropertyTypeTypeDef](./type_defs.md#propertytypetypedef) 
 ## AssetModelPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetModelPropertyTypeDef
+
+def get_value() -> AssetModelPropertyTypeDef:
+    return {
+        "name": ...,
+        "dataType": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetModelPropertyTypeDef(TypedDict):
+    name: str,
+    dataType: PropertyDataTypeType,  # (1)
+    type: PropertyTypeTypeDef,  # (2)
+    id: NotRequired[str],
+    dataTypeSpec: NotRequired[str],
+    unit: NotRequired[str],
+```
 
-- `name`: `str`
-- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
-- `type`: [PropertyTypeTypeDef](./type_defs.md#propertytypetypedef)
-
-Optional fields:
-
-- `id`: `str`
-- `dataTypeSpec`: `str`
-- `unit`: `str`
-
-<a id="assetmodelstatustypedef"></a>
-
+1. See [:material-code-brackets: PropertyDataTypeType](./literals.md#propertydatatypetype) 
+2. See [:material-code-braces: PropertyTypeTypeDef](./type_defs.md#propertytypetypedef) 
 ## AssetModelStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetModelStatusTypeDef
+
+def get_value() -> AssetModelStatusTypeDef:
+    return {
+        "state": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetModelStatusTypeDef(TypedDict):
+    state: AssetModelStateType,  # (1)
+    error: NotRequired[ErrorDetailsTypeDef],  # (2)
+```
 
-- `state`: [AssetModelStateType](./literals.md#assetmodelstatetype)
-
-Optional fields:
-
-- `error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
-
-<a id="assetmodelsummarytypedef"></a>
-
+1. See [:material-code-brackets: AssetModelStateType](./literals.md#assetmodelstatetype) 
+2. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
 ## AssetModelSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetModelSummaryTypeDef
+
+def get_value() -> AssetModelSummaryTypeDef:
+    return {
+        "id": ...,
+        "arn": ...,
+        "name": ...,
+        "description": ...,
+        "creationDate": ...,
+        "lastUpdateDate": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetModelSummaryTypeDef(TypedDict):
+    id: str,
+    arn: str,
+    name: str,
+    description: str,
+    creationDate: datetime,
+    lastUpdateDate: datetime,
+    status: AssetModelStatusTypeDef,  # (1)
+```
 
-- `id`: `str`
-- `arn`: `str`
-- `name`: `str`
-- `description`: `str`
-- `creationDate`: `datetime`
-- `lastUpdateDate`: `datetime`
-- `status`: [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
-
-<a id="assetpropertytypedef"></a>
-
+1. See [:material-code-braces: AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef) 
 ## AssetPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetPropertyTypeDef
+
+def get_value() -> AssetPropertyTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "dataType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetPropertyTypeDef(TypedDict):
+    id: str,
+    name: str,
+    dataType: PropertyDataTypeType,  # (2)
+    alias: NotRequired[str],
+    notification: NotRequired[PropertyNotificationTypeDef],  # (1)
+    dataTypeSpec: NotRequired[str],
+    unit: NotRequired[str],
+```
 
-- `id`: `str`
-- `name`: `str`
-- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
-
-Optional fields:
-
-- `alias`: `str`
-- `notification`:
-  [PropertyNotificationTypeDef](./type_defs.md#propertynotificationtypedef)
-- `dataTypeSpec`: `str`
-- `unit`: `str`
-
-<a id="assetpropertyvaluetypedef"></a>
-
+1. See [:material-code-braces: PropertyNotificationTypeDef](./type_defs.md#propertynotificationtypedef) 
+2. See [:material-code-brackets: PropertyDataTypeType](./literals.md#propertydatatypetype) 
 ## AssetPropertyValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetPropertyValueTypeDef
+
+def get_value() -> AssetPropertyValueTypeDef:
+    return {
+        "value": ...,
+        "timestamp": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetPropertyValueTypeDef(TypedDict):
+    value: VariantTypeDef,  # (1)
+    timestamp: TimeInNanosTypeDef,  # (2)
+    quality: NotRequired[QualityType],  # (3)
+```
 
-- `value`: [VariantTypeDef](./type_defs.md#varianttypedef)
-- `timestamp`: [TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)
-
-Optional fields:
-
-- `quality`: [QualityType](./literals.md#qualitytype)
-
-<a id="assetrelationshipsummarytypedef"></a>
-
+1. See [:material-code-braces: VariantTypeDef](./type_defs.md#varianttypedef) 
+2. See [:material-code-braces: TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef) 
+3. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
 ## AssetRelationshipSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetRelationshipSummaryTypeDef
+
+def get_value() -> AssetRelationshipSummaryTypeDef:
+    return {
+        "relationshipType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetRelationshipSummaryTypeDef(TypedDict):
+    relationshipType: AssetRelationshipTypeType,  # (2)
+    hierarchyInfo: NotRequired[AssetHierarchyInfoTypeDef],  # (1)
+```
 
-- `relationshipType`: `Literal['HIERARCHY']` (see
-  [AssetRelationshipTypeType](./literals.md#assetrelationshiptypetype))
-
-Optional fields:
-
-- `hierarchyInfo`:
-  [AssetHierarchyInfoTypeDef](./type_defs.md#assethierarchyinfotypedef)
-
-<a id="assetstatustypedef"></a>
-
+1. See [:material-code-braces: AssetHierarchyInfoTypeDef](./type_defs.md#assethierarchyinfotypedef) 
+2. See [:material-code-brackets: AssetRelationshipTypeType](./literals.md#assetrelationshiptypetype) 
 ## AssetStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetStatusTypeDef
+
+def get_value() -> AssetStatusTypeDef:
+    return {
+        "state": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetStatusTypeDef(TypedDict):
+    state: AssetStateType,  # (1)
+    error: NotRequired[ErrorDetailsTypeDef],  # (2)
+```
 
-- `state`: [AssetStateType](./literals.md#assetstatetype)
-
-Optional fields:
-
-- `error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
-
-<a id="assetsummarytypedef"></a>
-
+1. See [:material-code-brackets: AssetStateType](./literals.md#assetstatetype) 
+2. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
 ## AssetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssetSummaryTypeDef
+
+def get_value() -> AssetSummaryTypeDef:
+    return {
+        "id": ...,
+        "arn": ...,
+        "name": ...,
+        "assetModelId": ...,
+        "creationDate": ...,
+        "lastUpdateDate": ...,
+        "status": ...,
+        "hierarchies": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssetSummaryTypeDef(TypedDict):
+    id: str,
+    arn: str,
+    name: str,
+    assetModelId: str,
+    creationDate: datetime,
+    lastUpdateDate: datetime,
+    status: AssetStatusTypeDef,  # (1)
+    hierarchies: List[AssetHierarchyTypeDef],  # (2)
+```
 
-- `id`: `str`
-- `arn`: `str`
-- `name`: `str`
-- `assetModelId`: `str`
-- `creationDate`: `datetime`
-- `lastUpdateDate`: `datetime`
-- `status`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
-- `hierarchies`:
-  `List`\[[AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef)\]
-
-<a id="associateassetsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetStatusTypeDef](./type_defs.md#assetstatustypedef) 
+2. See [:material-code-braces: AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef) 
 ## AssociateAssetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssociateAssetsRequestRequestTypeDef
+
+def get_value() -> AssociateAssetsRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+        "hierarchyId": ...,
+        "childAssetId": ...,
+    }
 ```
 
-Required fields:
-
-- `assetId`: `str`
-- `hierarchyId`: `str`
-- `childAssetId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="associatetimeseriestoassetpropertyrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateAssetsRequestRequestTypeDef(TypedDict):
+    assetId: str,
+    hierarchyId: str,
+    childAssetId: str,
+    clientToken: NotRequired[str],
+```
 
 ## AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef
+
+def get_value() -> AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef:
+    return {
+        "alias": ...,
+        "assetId": ...,
+        "propertyId": ...,
+    }
 ```
 
-Required fields:
-
-- `alias`: `str`
-- `assetId`: `str`
-- `propertyId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="associatedassetssummarytypedef"></a>
+```python title="Definition"
+class AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef(TypedDict):
+    alias: str,
+    assetId: str,
+    propertyId: str,
+    clientToken: NotRequired[str],
+```
 
 ## AssociatedAssetsSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AssociatedAssetsSummaryTypeDef
+
+def get_value() -> AssociatedAssetsSummaryTypeDef:
+    return {
+        "id": ...,
+        "arn": ...,
+        "name": ...,
+        "assetModelId": ...,
+        "creationDate": ...,
+        "lastUpdateDate": ...,
+        "status": ...,
+        "hierarchies": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociatedAssetsSummaryTypeDef(TypedDict):
+    id: str,
+    arn: str,
+    name: str,
+    assetModelId: str,
+    creationDate: datetime,
+    lastUpdateDate: datetime,
+    status: AssetStatusTypeDef,  # (1)
+    hierarchies: List[AssetHierarchyTypeDef],  # (2)
+```
 
-- `id`: `str`
-- `arn`: `str`
-- `name`: `str`
-- `assetModelId`: `str`
-- `creationDate`: `datetime`
-- `lastUpdateDate`: `datetime`
-- `status`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
-- `hierarchies`:
-  `List`\[[AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef)\]
-
-<a id="attributetypedef"></a>
-
+1. See [:material-code-braces: AssetStatusTypeDef](./type_defs.md#assetstatustypedef) 
+2. See [:material-code-braces: AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef) 
 ## AttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import AttributeTypeDef
+
+def get_value() -> AttributeTypeDef:
+    return {
+        "defaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `defaultValue`: `str`
-
-<a id="batchassociateprojectassetsrequestrequesttypedef"></a>
+```python title="Definition"
+class AttributeTypeDef(TypedDict):
+    defaultValue: NotRequired[str],
+```
 
 ## BatchAssociateProjectAssetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsRequestRequestTypeDef
+
+def get_value() -> BatchAssociateProjectAssetsRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+        "assetIds": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-- `assetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="batchassociateprojectassetsresponsetypedef"></a>
+```python title="Definition"
+class BatchAssociateProjectAssetsRequestRequestTypeDef(TypedDict):
+    projectId: str,
+    assetIds: Sequence[str],
+    clientToken: NotRequired[str],
+```
 
 ## BatchAssociateProjectAssetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import BatchAssociateProjectAssetsResponseTypeDef
+
+def get_value() -> BatchAssociateProjectAssetsResponseTypeDef:
+    return {
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchAssociateProjectAssetsResponseTypeDef(TypedDict):
+    errors: List[AssetErrorDetailsTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errors`:
-  `List`\[[AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdisassociateprojectassetsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDisassociateProjectAssetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import BatchDisassociateProjectAssetsRequestRequestTypeDef
+
+def get_value() -> BatchDisassociateProjectAssetsRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+        "assetIds": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-- `assetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="batchdisassociateprojectassetsresponsetypedef"></a>
+```python title="Definition"
+class BatchDisassociateProjectAssetsRequestRequestTypeDef(TypedDict):
+    projectId: str,
+    assetIds: Sequence[str],
+    clientToken: NotRequired[str],
+```
 
 ## BatchDisassociateProjectAssetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import BatchDisassociateProjectAssetsResponseTypeDef
+
+def get_value() -> BatchDisassociateProjectAssetsResponseTypeDef:
+    return {
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDisassociateProjectAssetsResponseTypeDef(TypedDict):
+    errors: List[AssetErrorDetailsTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errors`:
-  `List`\[[AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchputassetpropertyerrorentrytypedef"></a>
-
+1. See [:material-code-braces: AssetErrorDetailsTypeDef](./type_defs.md#asseterrordetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchPutAssetPropertyErrorEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyErrorEntryTypeDef
+
+def get_value() -> BatchPutAssetPropertyErrorEntryTypeDef:
+    return {
+        "entryId": ...,
+        "errors": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutAssetPropertyErrorEntryTypeDef(TypedDict):
+    entryId: str,
+    errors: List[BatchPutAssetPropertyErrorTypeDef],  # (1)
+```
 
-- `entryId`: `str`
-- `errors`:
-  `List`\[[BatchPutAssetPropertyErrorTypeDef](./type_defs.md#batchputassetpropertyerrortypedef)\]
-
-<a id="batchputassetpropertyerrortypedef"></a>
-
+1. See [:material-code-braces: BatchPutAssetPropertyErrorTypeDef](./type_defs.md#batchputassetpropertyerrortypedef) 
 ## BatchPutAssetPropertyErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyErrorTypeDef
+
+def get_value() -> BatchPutAssetPropertyErrorTypeDef:
+    return {
+        "errorCode": ...,
+        "errorMessage": ...,
+        "timestamps": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutAssetPropertyErrorTypeDef(TypedDict):
+    errorCode: BatchPutAssetPropertyValueErrorCodeType,  # (1)
+    errorMessage: str,
+    timestamps: List[TimeInNanosTypeDef],  # (2)
+```
 
-- `errorCode`:
-  [BatchPutAssetPropertyValueErrorCodeType](./literals.md#batchputassetpropertyvalueerrorcodetype)
-- `errorMessage`: `str`
-- `timestamps`:
-  `List`\[[TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)\]
-
-<a id="batchputassetpropertyvaluerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BatchPutAssetPropertyValueErrorCodeType](./literals.md#batchputassetpropertyvalueerrorcodetype) 
+2. See [:material-code-braces: TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef) 
 ## BatchPutAssetPropertyValueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyValueRequestRequestTypeDef
+
+def get_value() -> BatchPutAssetPropertyValueRequestRequestTypeDef:
+    return {
+        "entries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutAssetPropertyValueRequestRequestTypeDef(TypedDict):
+    entries: Sequence[PutAssetPropertyValueEntryTypeDef],  # (1)
+```
 
-- `entries`:
-  `Sequence`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
-
-<a id="batchputassetpropertyvalueresponsetypedef"></a>
-
+1. See [:material-code-braces: PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef) 
 ## BatchPutAssetPropertyValueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import BatchPutAssetPropertyValueResponseTypeDef
+
+def get_value() -> BatchPutAssetPropertyValueResponseTypeDef:
+    return {
+        "errorEntries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutAssetPropertyValueResponseTypeDef(TypedDict):
+    errorEntries: List[BatchPutAssetPropertyErrorEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errorEntries`:
-  `List`\[[BatchPutAssetPropertyErrorEntryTypeDef](./type_defs.md#batchputassetpropertyerrorentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="compositemodelpropertytypedef"></a>
-
+1. See [:material-code-braces: BatchPutAssetPropertyErrorEntryTypeDef](./type_defs.md#batchputassetpropertyerrorentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CompositeModelPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CompositeModelPropertyTypeDef
+
+def get_value() -> CompositeModelPropertyTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+        "assetProperty": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CompositeModelPropertyTypeDef(TypedDict):
+    name: str,
+    type: str,
+    assetProperty: PropertyTypeDef,  # (1)
+```
 
-- `name`: `str`
-- `type`: `str`
-- `assetProperty`: [PropertyTypeDef](./type_defs.md#propertytypedef)
-
-<a id="configurationerrordetailstypedef"></a>
-
+1. See [:material-code-braces: PropertyTypeDef](./type_defs.md#propertytypedef) 
 ## ConfigurationErrorDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ConfigurationErrorDetailsTypeDef
+
+def get_value() -> ConfigurationErrorDetailsTypeDef:
+    return {
+        "code": ...,
+        "message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigurationErrorDetailsTypeDef(TypedDict):
+    code: ErrorCodeType,  # (1)
+    message: str,
+```
 
-- `code`: [ErrorCodeType](./literals.md#errorcodetype)
-- `message`: `str`
-
-<a id="configurationstatustypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## ConfigurationStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ConfigurationStatusTypeDef
+
+def get_value() -> ConfigurationStatusTypeDef:
+    return {
+        "state": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigurationStatusTypeDef(TypedDict):
+    state: ConfigurationStateType,  # (1)
+    error: NotRequired[ConfigurationErrorDetailsTypeDef],  # (2)
+```
 
-- `state`: [ConfigurationStateType](./literals.md#configurationstatetype)
-
-Optional fields:
-
-- `error`:
-  [ConfigurationErrorDetailsTypeDef](./type_defs.md#configurationerrordetailstypedef)
-
-<a id="createaccesspolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationStateType](./literals.md#configurationstatetype) 
+2. See [:material-code-braces: ConfigurationErrorDetailsTypeDef](./type_defs.md#configurationerrordetailstypedef) 
 ## CreateAccessPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateAccessPolicyRequestRequestTypeDef
+
+def get_value() -> CreateAccessPolicyRequestRequestTypeDef:
+    return {
+        "accessPolicyIdentity": ...,
+        "accessPolicyResource": ...,
+        "accessPolicyPermission": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAccessPolicyRequestRequestTypeDef(TypedDict):
+    accessPolicyIdentity: IdentityTypeDef,  # (1)
+    accessPolicyResource: ResourceTypeDef,  # (2)
+    accessPolicyPermission: PermissionType,  # (3)
+    clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
-
-Optional fields:
-
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createaccesspolicyresponsetypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## CreateAccessPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateAccessPolicyResponseTypeDef
+
+def get_value() -> CreateAccessPolicyResponseTypeDef:
+    return {
+        "accessPolicyId": ...,
+        "accessPolicyArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAccessPolicyResponseTypeDef(TypedDict):
+    accessPolicyId: str,
+    accessPolicyArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `accessPolicyId`: `str`
-- `accessPolicyArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createassetmodelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAssetModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateAssetModelRequestRequestTypeDef
+
+def get_value() -> CreateAssetModelRequestRequestTypeDef:
+    return {
+        "assetModelName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssetModelRequestRequestTypeDef(TypedDict):
+    assetModelName: str,
+    assetModelDescription: NotRequired[str],
+    assetModelProperties: NotRequired[Sequence[AssetModelPropertyDefinitionTypeDef]],  # (1)
+    assetModelHierarchies: NotRequired[Sequence[AssetModelHierarchyDefinitionTypeDef]],  # (2)
+    assetModelCompositeModels: NotRequired[Sequence[AssetModelCompositeModelDefinitionTypeDef]],  # (3)
+    clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `assetModelName`: `str`
-
-Optional fields:
-
-- `assetModelDescription`: `str`
-- `assetModelProperties`:
-  `Sequence`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
-- `assetModelHierarchies`:
-  `Sequence`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
-- `assetModelCompositeModels`:
-  `Sequence`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createassetmodelresponsetypedef"></a>
-
+1. See [:material-code-braces: AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef) 
+2. See [:material-code-braces: AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef) 
+3. See [:material-code-braces: AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef) 
 ## CreateAssetModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateAssetModelResponseTypeDef
+
+def get_value() -> CreateAssetModelResponseTypeDef:
+    return {
+        "assetModelId": ...,
+        "assetModelArn": ...,
+        "assetModelStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssetModelResponseTypeDef(TypedDict):
+    assetModelId: str,
+    assetModelArn: str,
+    assetModelStatus: AssetModelStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetModelId`: `str`
-- `assetModelArn`: `str`
-- `assetModelStatus`:
-  [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createassetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAssetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateAssetRequestRequestTypeDef
+
+def get_value() -> CreateAssetRequestRequestTypeDef:
+    return {
+        "assetName": ...,
+        "assetModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `assetName`: `str`
-- `assetModelId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createassetresponsetypedef"></a>
+```python title="Definition"
+class CreateAssetRequestRequestTypeDef(TypedDict):
+    assetName: str,
+    assetModelId: str,
+    clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateAssetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateAssetResponseTypeDef
+
+def get_value() -> CreateAssetResponseTypeDef:
+    return {
+        "assetId": ...,
+        "assetArn": ...,
+        "assetStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssetResponseTypeDef(TypedDict):
+    assetId: str,
+    assetArn: str,
+    assetStatus: AssetStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetId`: `str`
-- `assetArn`: `str`
-- `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdashboardrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetStatusTypeDef](./type_defs.md#assetstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDashboardRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateDashboardRequestRequestTypeDef
+
+def get_value() -> CreateDashboardRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+        "dashboardName": ...,
+        "dashboardDefinition": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-- `dashboardName`: `str`
-- `dashboardDefinition`: `str`
-
-Optional fields:
-
-- `dashboardDescription`: `str`
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createdashboardresponsetypedef"></a>
+```python title="Definition"
+class CreateDashboardRequestRequestTypeDef(TypedDict):
+    projectId: str,
+    dashboardName: str,
+    dashboardDefinition: str,
+    dashboardDescription: NotRequired[str],
+    clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateDashboardResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateDashboardResponseTypeDef
+
+def get_value() -> CreateDashboardResponseTypeDef:
+    return {
+        "dashboardId": ...,
+        "dashboardArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDashboardResponseTypeDef(TypedDict):
+    dashboardId: str,
+    dashboardArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `dashboardId`: `str`
-- `dashboardArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="creategatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateGatewayRequestRequestTypeDef
+
+def get_value() -> CreateGatewayRequestRequestTypeDef:
+    return {
+        "gatewayName": ...,
+        "gatewayPlatform": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGatewayRequestRequestTypeDef(TypedDict):
+    gatewayName: str,
+    gatewayPlatform: GatewayPlatformTypeDef,  # (1)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `gatewayName`: `str`
-- `gatewayPlatform`:
-  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
-
-Optional fields:
-
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="creategatewayresponsetypedef"></a>
-
+1. See [:material-code-braces: GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef) 
 ## CreateGatewayResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateGatewayResponseTypeDef
+
+def get_value() -> CreateGatewayResponseTypeDef:
+    return {
+        "gatewayId": ...,
+        "gatewayArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGatewayResponseTypeDef(TypedDict):
+    gatewayId: str,
+    gatewayArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `gatewayId`: `str`
-- `gatewayArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createportalrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePortalRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreatePortalRequestRequestTypeDef
+
+def get_value() -> CreatePortalRequestRequestTypeDef:
+    return {
+        "portalName": ...,
+        "portalContactEmail": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePortalRequestRequestTypeDef(TypedDict):
+    portalName: str,
+    portalContactEmail: str,
+    roleArn: str,
+    portalDescription: NotRequired[str],
+    clientToken: NotRequired[str],
+    portalLogoImageFile: NotRequired[ImageFileTypeDef],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+    portalAuthMode: NotRequired[AuthModeType],  # (2)
+    notificationSenderEmail: NotRequired[str],
+    alarms: NotRequired[AlarmsTypeDef],  # (3)
+```
 
-- `portalName`: `str`
-- `portalContactEmail`: `str`
-- `roleArn`: `str`
-
-Optional fields:
-
-- `portalDescription`: `str`
-- `clientToken`: `str`
-- `portalLogoImageFile`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
-- `notificationSenderEmail`: `str`
-- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
-
-<a id="createportalresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageFileTypeDef](./type_defs.md#imagefiletypedef) 
+2. See [:material-code-brackets: AuthModeType](./literals.md#authmodetype) 
+3. See [:material-code-braces: AlarmsTypeDef](./type_defs.md#alarmstypedef) 
 ## CreatePortalResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreatePortalResponseTypeDef
+
+def get_value() -> CreatePortalResponseTypeDef:
+    return {
+        "portalId": ...,
+        "portalArn": ...,
+        "portalStartUrl": ...,
+        "portalStatus": ...,
+        "ssoApplicationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePortalResponseTypeDef(TypedDict):
+    portalId: str,
+    portalArn: str,
+    portalStartUrl: str,
+    portalStatus: PortalStatusTypeDef,  # (1)
+    ssoApplicationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `portalId`: `str`
-- `portalArn`: `str`
-- `portalStartUrl`: `str`
-- `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
-- `ssoApplicationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PortalStatusTypeDef](./type_defs.md#portalstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateProjectRequestRequestTypeDef
+
+def get_value() -> CreateProjectRequestRequestTypeDef:
+    return {
+        "portalId": ...,
+        "projectName": ...,
+    }
 ```
 
-Required fields:
-
-- `portalId`: `str`
-- `projectName`: `str`
-
-Optional fields:
-
-- `projectDescription`: `str`
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createprojectresponsetypedef"></a>
+```python title="Definition"
+class CreateProjectRequestRequestTypeDef(TypedDict):
+    portalId: str,
+    projectName: str,
+    projectDescription: NotRequired[str],
+    clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CreateProjectResponseTypeDef
+
+def get_value() -> CreateProjectResponseTypeDef:
+    return {
+        "projectId": ...,
+        "projectArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectResponseTypeDef(TypedDict):
+    projectId: str,
+    projectArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `projectId`: `str`
-- `projectArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customermanageds3storagetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomerManagedS3StorageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import CustomerManagedS3StorageTypeDef
+
+def get_value() -> CustomerManagedS3StorageTypeDef:
+    return {
+        "s3ResourceArn": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `s3ResourceArn`: `str`
-- `roleArn`: `str`
-
-<a id="dashboardsummarytypedef"></a>
+```python title="Definition"
+class CustomerManagedS3StorageTypeDef(TypedDict):
+    s3ResourceArn: str,
+    roleArn: str,
+```
 
 ## DashboardSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DashboardSummaryTypeDef
+
+def get_value() -> DashboardSummaryTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `creationDate`: `datetime`
-- `lastUpdateDate`: `datetime`
-
-<a id="deleteaccesspolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DashboardSummaryTypeDef(TypedDict):
+    id: str,
+    name: str,
+    description: NotRequired[str],
+    creationDate: NotRequired[datetime],
+    lastUpdateDate: NotRequired[datetime],
+```
 
 ## DeleteAccessPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeleteAccessPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteAccessPolicyRequestRequestTypeDef:
+    return {
+        "accessPolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `accessPolicyId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deleteassetmodelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAccessPolicyRequestRequestTypeDef(TypedDict):
+    accessPolicyId: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteAssetModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeleteAssetModelRequestRequestTypeDef
+
+def get_value() -> DeleteAssetModelRequestRequestTypeDef:
+    return {
+        "assetModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `assetModelId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deleteassetmodelresponsetypedef"></a>
+```python title="Definition"
+class DeleteAssetModelRequestRequestTypeDef(TypedDict):
+    assetModelId: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteAssetModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeleteAssetModelResponseTypeDef
+
+def get_value() -> DeleteAssetModelResponseTypeDef:
+    return {
+        "assetModelStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAssetModelResponseTypeDef(TypedDict):
+    assetModelStatus: AssetModelStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetModelStatus`:
-  [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteassetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAssetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeleteAssetRequestRequestTypeDef
+
+def get_value() -> DeleteAssetRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+    }
 ```
 
-Required fields:
-
-- `assetId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deleteassetresponsetypedef"></a>
+```python title="Definition"
+class DeleteAssetRequestRequestTypeDef(TypedDict):
+    assetId: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteAssetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeleteAssetResponseTypeDef
+
+def get_value() -> DeleteAssetResponseTypeDef:
+    return {
+        "assetStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAssetResponseTypeDef(TypedDict):
+    assetStatus: AssetStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedashboardrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetStatusTypeDef](./type_defs.md#assetstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDashboardRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeleteDashboardRequestRequestTypeDef
+
+def get_value() -> DeleteDashboardRequestRequestTypeDef:
+    return {
+        "dashboardId": ...,
+    }
 ```
 
-Required fields:
-
-- `dashboardId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deletegatewayrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDashboardRequestRequestTypeDef(TypedDict):
+    dashboardId: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeleteGatewayRequestRequestTypeDef
+
+def get_value() -> DeleteGatewayRequestRequestTypeDef:
+    return {
+        "gatewayId": ...,
+    }
 ```
 
-Required fields:
-
-- `gatewayId`: `str`
-
-<a id="deleteportalrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteGatewayRequestRequestTypeDef(TypedDict):
+    gatewayId: str,
+```
 
 ## DeletePortalRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeletePortalRequestRequestTypeDef
+
+def get_value() -> DeletePortalRequestRequestTypeDef:
+    return {
+        "portalId": ...,
+    }
 ```
 
-Required fields:
-
-- `portalId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deleteportalresponsetypedef"></a>
+```python title="Definition"
+class DeletePortalRequestRequestTypeDef(TypedDict):
+    portalId: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeletePortalResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeletePortalResponseTypeDef
+
+def get_value() -> DeletePortalResponseTypeDef:
+    return {
+        "portalStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeletePortalResponseTypeDef(TypedDict):
+    portalStatus: PortalStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PortalStatusTypeDef](./type_defs.md#portalstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeleteProjectRequestRequestTypeDef
+
+def get_value() -> DeleteProjectRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deletetimeseriesrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteProjectRequestRequestTypeDef(TypedDict):
+    projectId: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteTimeSeriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DeleteTimeSeriesRequestRequestTypeDef
+
+def get_value() -> DeleteTimeSeriesRequestRequestTypeDef:
+    return {
+        "alias": ...,
+    }
 ```
 
-Optional fields:
-
-- `alias`: `str`
-- `assetId`: `str`
-- `propertyId`: `str`
-- `clientToken`: `str`
-
-<a id="describeaccesspolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTimeSeriesRequestRequestTypeDef(TypedDict):
+    alias: NotRequired[str],
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    clientToken: NotRequired[str],
+```
 
 ## DescribeAccessPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeAccessPolicyRequestRequestTypeDef
+
+def get_value() -> DescribeAccessPolicyRequestRequestTypeDef:
+    return {
+        "accessPolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `accessPolicyId`: `str`
-
-<a id="describeaccesspolicyresponsetypedef"></a>
+```python title="Definition"
+class DescribeAccessPolicyRequestRequestTypeDef(TypedDict):
+    accessPolicyId: str,
+```
 
 ## DescribeAccessPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeAccessPolicyResponseTypeDef
+
+def get_value() -> DescribeAccessPolicyResponseTypeDef:
+    return {
+        "accessPolicyId": ...,
+        "accessPolicyArn": ...,
+        "accessPolicyIdentity": ...,
+        "accessPolicyResource": ...,
+        "accessPolicyPermission": ...,
+        "accessPolicyCreationDate": ...,
+        "accessPolicyLastUpdateDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccessPolicyResponseTypeDef(TypedDict):
+    accessPolicyId: str,
+    accessPolicyArn: str,
+    accessPolicyIdentity: IdentityTypeDef,  # (1)
+    accessPolicyResource: ResourceTypeDef,  # (2)
+    accessPolicyPermission: PermissionType,  # (3)
+    accessPolicyCreationDate: datetime,
+    accessPolicyLastUpdateDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `accessPolicyId`: `str`
-- `accessPolicyArn`: `str`
-- `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
-- `accessPolicyCreationDate`: `datetime`
-- `accessPolicyLastUpdateDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAssetModelRequestAssetModelActiveWaitTypeDef
 
-<a id="describeassetmodelrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetModelRequestAssetModelActiveWaitTypeDef
 
+def get_value() -> DescribeAssetModelRequestAssetModelActiveWaitTypeDef:
+    return {
+        "assetModelId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAssetModelRequestAssetModelActiveWaitTypeDef(TypedDict):
+    assetModelId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeAssetModelRequestAssetModelNotExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetModelRequestAssetModelNotExistsWaitTypeDef
+
+def get_value() -> DescribeAssetModelRequestAssetModelNotExistsWaitTypeDef:
+    return {
+        "assetModelId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAssetModelRequestAssetModelNotExistsWaitTypeDef(TypedDict):
+    assetModelId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeAssetModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeAssetModelRequestRequestTypeDef
+
+def get_value() -> DescribeAssetModelRequestRequestTypeDef:
+    return {
+        "assetModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `assetModelId`: `str`
-
-<a id="describeassetmodelresponsetypedef"></a>
+```python title="Definition"
+class DescribeAssetModelRequestRequestTypeDef(TypedDict):
+    assetModelId: str,
+```
 
 ## DescribeAssetModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeAssetModelResponseTypeDef
+
+def get_value() -> DescribeAssetModelResponseTypeDef:
+    return {
+        "assetModelId": ...,
+        "assetModelArn": ...,
+        "assetModelName": ...,
+        "assetModelDescription": ...,
+        "assetModelProperties": ...,
+        "assetModelHierarchies": ...,
+        "assetModelCompositeModels": ...,
+        "assetModelCreationDate": ...,
+        "assetModelLastUpdateDate": ...,
+        "assetModelStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAssetModelResponseTypeDef(TypedDict):
+    assetModelId: str,
+    assetModelArn: str,
+    assetModelName: str,
+    assetModelDescription: str,
+    assetModelProperties: List[AssetModelPropertyTypeDef],  # (1)
+    assetModelHierarchies: List[AssetModelHierarchyTypeDef],  # (2)
+    assetModelCompositeModels: List[AssetModelCompositeModelTypeDef],  # (3)
+    assetModelCreationDate: datetime,
+    assetModelLastUpdateDate: datetime,
+    assetModelStatus: AssetModelStatusTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `assetModelId`: `str`
-- `assetModelArn`: `str`
-- `assetModelName`: `str`
-- `assetModelDescription`: `str`
-- `assetModelProperties`:
-  `List`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
-- `assetModelHierarchies`:
-  `List`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
-- `assetModelCompositeModels`:
-  `List`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
-- `assetModelCreationDate`: `datetime`
-- `assetModelLastUpdateDate`: `datetime`
-- `assetModelStatus`:
-  [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeassetpropertyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef) 
+2. See [:material-code-braces: AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef) 
+3. See [:material-code-braces: AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef) 
+4. See [:material-code-braces: AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAssetPropertyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeAssetPropertyRequestRequestTypeDef
+
+def get_value() -> DescribeAssetPropertyRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+        "propertyId": ...,
+    }
 ```
 
-Required fields:
-
-- `assetId`: `str`
-- `propertyId`: `str`
-
-<a id="describeassetpropertyresponsetypedef"></a>
+```python title="Definition"
+class DescribeAssetPropertyRequestRequestTypeDef(TypedDict):
+    assetId: str,
+    propertyId: str,
+```
 
 ## DescribeAssetPropertyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeAssetPropertyResponseTypeDef
+
+def get_value() -> DescribeAssetPropertyResponseTypeDef:
+    return {
+        "assetId": ...,
+        "assetName": ...,
+        "assetModelId": ...,
+        "assetProperty": ...,
+        "compositeModel": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAssetPropertyResponseTypeDef(TypedDict):
+    assetId: str,
+    assetName: str,
+    assetModelId: str,
+    assetProperty: PropertyTypeDef,  # (1)
+    compositeModel: CompositeModelPropertyTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `assetId`: `str`
-- `assetName`: `str`
-- `assetModelId`: `str`
-- `assetProperty`: [PropertyTypeDef](./type_defs.md#propertytypedef)
-- `compositeModel`:
-  [CompositeModelPropertyTypeDef](./type_defs.md#compositemodelpropertytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PropertyTypeDef](./type_defs.md#propertytypedef) 
+2. See [:material-code-braces: CompositeModelPropertyTypeDef](./type_defs.md#compositemodelpropertytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAssetRequestAssetActiveWaitTypeDef
 
-<a id="describeassetrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetRequestAssetActiveWaitTypeDef
 
+def get_value() -> DescribeAssetRequestAssetActiveWaitTypeDef:
+    return {
+        "assetId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAssetRequestAssetActiveWaitTypeDef(TypedDict):
+    assetId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeAssetRequestAssetNotExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import DescribeAssetRequestAssetNotExistsWaitTypeDef
+
+def get_value() -> DescribeAssetRequestAssetNotExistsWaitTypeDef:
+    return {
+        "assetId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAssetRequestAssetNotExistsWaitTypeDef(TypedDict):
+    assetId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeAssetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeAssetRequestRequestTypeDef
+
+def get_value() -> DescribeAssetRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+    }
 ```
 
-Required fields:
-
-- `assetId`: `str`
-
-<a id="describeassetresponsetypedef"></a>
+```python title="Definition"
+class DescribeAssetRequestRequestTypeDef(TypedDict):
+    assetId: str,
+```
 
 ## DescribeAssetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeAssetResponseTypeDef
+
+def get_value() -> DescribeAssetResponseTypeDef:
+    return {
+        "assetId": ...,
+        "assetArn": ...,
+        "assetName": ...,
+        "assetModelId": ...,
+        "assetProperties": ...,
+        "assetHierarchies": ...,
+        "assetCompositeModels": ...,
+        "assetCreationDate": ...,
+        "assetLastUpdateDate": ...,
+        "assetStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAssetResponseTypeDef(TypedDict):
+    assetId: str,
+    assetArn: str,
+    assetName: str,
+    assetModelId: str,
+    assetProperties: List[AssetPropertyTypeDef],  # (1)
+    assetHierarchies: List[AssetHierarchyTypeDef],  # (2)
+    assetCompositeModels: List[AssetCompositeModelTypeDef],  # (3)
+    assetCreationDate: datetime,
+    assetLastUpdateDate: datetime,
+    assetStatus: AssetStatusTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `assetId`: `str`
-- `assetArn`: `str`
-- `assetName`: `str`
-- `assetModelId`: `str`
-- `assetProperties`:
-  `List`\[[AssetPropertyTypeDef](./type_defs.md#assetpropertytypedef)\]
-- `assetHierarchies`:
-  `List`\[[AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef)\]
-- `assetCompositeModels`:
-  `List`\[[AssetCompositeModelTypeDef](./type_defs.md#assetcompositemodeltypedef)\]
-- `assetCreationDate`: `datetime`
-- `assetLastUpdateDate`: `datetime`
-- `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedashboardrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetPropertyTypeDef](./type_defs.md#assetpropertytypedef) 
+2. See [:material-code-braces: AssetHierarchyTypeDef](./type_defs.md#assethierarchytypedef) 
+3. See [:material-code-braces: AssetCompositeModelTypeDef](./type_defs.md#assetcompositemodeltypedef) 
+4. See [:material-code-braces: AssetStatusTypeDef](./type_defs.md#assetstatustypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDashboardRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeDashboardRequestRequestTypeDef
+
+def get_value() -> DescribeDashboardRequestRequestTypeDef:
+    return {
+        "dashboardId": ...,
+    }
 ```
 
-Required fields:
-
-- `dashboardId`: `str`
-
-<a id="describedashboardresponsetypedef"></a>
+```python title="Definition"
+class DescribeDashboardRequestRequestTypeDef(TypedDict):
+    dashboardId: str,
+```
 
 ## DescribeDashboardResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeDashboardResponseTypeDef
+
+def get_value() -> DescribeDashboardResponseTypeDef:
+    return {
+        "dashboardId": ...,
+        "dashboardArn": ...,
+        "dashboardName": ...,
+        "projectId": ...,
+        "dashboardDescription": ...,
+        "dashboardDefinition": ...,
+        "dashboardCreationDate": ...,
+        "dashboardLastUpdateDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDashboardResponseTypeDef(TypedDict):
+    dashboardId: str,
+    dashboardArn: str,
+    dashboardName: str,
+    projectId: str,
+    dashboardDescription: str,
+    dashboardDefinition: str,
+    dashboardCreationDate: datetime,
+    dashboardLastUpdateDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `dashboardId`: `str`
-- `dashboardArn`: `str`
-- `dashboardName`: `str`
-- `projectId`: `str`
-- `dashboardDescription`: `str`
-- `dashboardDefinition`: `str`
-- `dashboardCreationDate`: `datetime`
-- `dashboardLastUpdateDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedefaultencryptionconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDefaultEncryptionConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeDefaultEncryptionConfigurationResponseTypeDef
+
+def get_value() -> DescribeDefaultEncryptionConfigurationResponseTypeDef:
+    return {
+        "encryptionType": ...,
+        "kmsKeyArn": ...,
+        "configurationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDefaultEncryptionConfigurationResponseTypeDef(TypedDict):
+    encryptionType: EncryptionTypeType,  # (1)
+    kmsKeyArn: str,
+    configurationStatus: ConfigurationStatusTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-- `kmsKeyArn`: `str`
-- `configurationStatus`:
-  [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describegatewaycapabilityconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+2. See [:material-code-braces: ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeGatewayCapabilityConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeGatewayCapabilityConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeGatewayCapabilityConfigurationRequestRequestTypeDef:
+    return {
+        "gatewayId": ...,
+        "capabilityNamespace": ...,
+    }
 ```
 
-Required fields:
-
-- `gatewayId`: `str`
-- `capabilityNamespace`: `str`
-
-<a id="describegatewaycapabilityconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DescribeGatewayCapabilityConfigurationRequestRequestTypeDef(TypedDict):
+    gatewayId: str,
+    capabilityNamespace: str,
+```
 
 ## DescribeGatewayCapabilityConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeGatewayCapabilityConfigurationResponseTypeDef
+
+def get_value() -> DescribeGatewayCapabilityConfigurationResponseTypeDef:
+    return {
+        "gatewayId": ...,
+        "capabilityNamespace": ...,
+        "capabilityConfiguration": ...,
+        "capabilitySyncStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGatewayCapabilityConfigurationResponseTypeDef(TypedDict):
+    gatewayId: str,
+    capabilityNamespace: str,
+    capabilityConfiguration: str,
+    capabilitySyncStatus: CapabilitySyncStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `gatewayId`: `str`
-- `capabilityNamespace`: `str`
-- `capabilityConfiguration`: `str`
-- `capabilitySyncStatus`:
-  [CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describegatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeGatewayRequestRequestTypeDef
+
+def get_value() -> DescribeGatewayRequestRequestTypeDef:
+    return {
+        "gatewayId": ...,
+    }
 ```
 
-Required fields:
-
-- `gatewayId`: `str`
-
-<a id="describegatewayresponsetypedef"></a>
+```python title="Definition"
+class DescribeGatewayRequestRequestTypeDef(TypedDict):
+    gatewayId: str,
+```
 
 ## DescribeGatewayResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeGatewayResponseTypeDef
+
+def get_value() -> DescribeGatewayResponseTypeDef:
+    return {
+        "gatewayId": ...,
+        "gatewayName": ...,
+        "gatewayArn": ...,
+        "gatewayPlatform": ...,
+        "gatewayCapabilitySummaries": ...,
+        "creationDate": ...,
+        "lastUpdateDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGatewayResponseTypeDef(TypedDict):
+    gatewayId: str,
+    gatewayName: str,
+    gatewayArn: str,
+    gatewayPlatform: GatewayPlatformTypeDef,  # (1)
+    gatewayCapabilitySummaries: List[GatewayCapabilitySummaryTypeDef],  # (2)
+    creationDate: datetime,
+    lastUpdateDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `gatewayId`: `str`
-- `gatewayName`: `str`
-- `gatewayArn`: `str`
-- `gatewayPlatform`:
-  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
-- `gatewayCapabilitySummaries`:
-  `List`\[[GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef)\]
-- `creationDate`: `datetime`
-- `lastUpdateDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeloggingoptionsresponsetypedef"></a>
-
+1. See [:material-code-braces: GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef) 
+2. See [:material-code-braces: GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLoggingOptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeLoggingOptionsResponseTypeDef
+
+def get_value() -> DescribeLoggingOptionsResponseTypeDef:
+    return {
+        "loggingOptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLoggingOptionsResponseTypeDef(TypedDict):
+    loggingOptions: LoggingOptionsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `loggingOptions`:
-  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePortalRequestPortalActiveWaitTypeDef
 
-<a id="describeportalrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import DescribePortalRequestPortalActiveWaitTypeDef
 
+def get_value() -> DescribePortalRequestPortalActiveWaitTypeDef:
+    return {
+        "portalId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePortalRequestPortalActiveWaitTypeDef(TypedDict):
+    portalId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribePortalRequestPortalNotExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import DescribePortalRequestPortalNotExistsWaitTypeDef
+
+def get_value() -> DescribePortalRequestPortalNotExistsWaitTypeDef:
+    return {
+        "portalId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePortalRequestPortalNotExistsWaitTypeDef(TypedDict):
+    portalId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribePortalRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribePortalRequestRequestTypeDef
+
+def get_value() -> DescribePortalRequestRequestTypeDef:
+    return {
+        "portalId": ...,
+    }
 ```
 
-Required fields:
-
-- `portalId`: `str`
-
-<a id="describeportalresponsetypedef"></a>
+```python title="Definition"
+class DescribePortalRequestRequestTypeDef(TypedDict):
+    portalId: str,
+```
 
 ## DescribePortalResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribePortalResponseTypeDef
+
+def get_value() -> DescribePortalResponseTypeDef:
+    return {
+        "portalId": ...,
+        "portalArn": ...,
+        "portalName": ...,
+        "portalDescription": ...,
+        "portalClientId": ...,
+        "portalStartUrl": ...,
+        "portalContactEmail": ...,
+        "portalStatus": ...,
+        "portalCreationDate": ...,
+        "portalLastUpdateDate": ...,
+        "portalLogoImageLocation": ...,
+        "roleArn": ...,
+        "portalAuthMode": ...,
+        "notificationSenderEmail": ...,
+        "alarms": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePortalResponseTypeDef(TypedDict):
+    portalId: str,
+    portalArn: str,
+    portalName: str,
+    portalDescription: str,
+    portalClientId: str,
+    portalStartUrl: str,
+    portalContactEmail: str,
+    portalStatus: PortalStatusTypeDef,  # (1)
+    portalCreationDate: datetime,
+    portalLastUpdateDate: datetime,
+    portalLogoImageLocation: ImageLocationTypeDef,  # (2)
+    roleArn: str,
+    portalAuthMode: AuthModeType,  # (3)
+    notificationSenderEmail: str,
+    alarms: AlarmsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `portalId`: `str`
-- `portalArn`: `str`
-- `portalName`: `str`
-- `portalDescription`: `str`
-- `portalClientId`: `str`
-- `portalStartUrl`: `str`
-- `portalContactEmail`: `str`
-- `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
-- `portalCreationDate`: `datetime`
-- `portalLastUpdateDate`: `datetime`
-- `portalLogoImageLocation`:
-  [ImageLocationTypeDef](./type_defs.md#imagelocationtypedef)
-- `roleArn`: `str`
-- `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
-- `notificationSenderEmail`: `str`
-- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PortalStatusTypeDef](./type_defs.md#portalstatustypedef) 
+2. See [:material-code-braces: ImageLocationTypeDef](./type_defs.md#imagelocationtypedef) 
+3. See [:material-code-brackets: AuthModeType](./literals.md#authmodetype) 
+4. See [:material-code-braces: AlarmsTypeDef](./type_defs.md#alarmstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeProjectRequestRequestTypeDef
+
+def get_value() -> DescribeProjectRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-
-<a id="describeprojectresponsetypedef"></a>
+```python title="Definition"
+class DescribeProjectRequestRequestTypeDef(TypedDict):
+    projectId: str,
+```
 
 ## DescribeProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeProjectResponseTypeDef
+
+def get_value() -> DescribeProjectResponseTypeDef:
+    return {
+        "projectId": ...,
+        "projectArn": ...,
+        "projectName": ...,
+        "portalId": ...,
+        "projectDescription": ...,
+        "projectCreationDate": ...,
+        "projectLastUpdateDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProjectResponseTypeDef(TypedDict):
+    projectId: str,
+    projectArn: str,
+    projectName: str,
+    portalId: str,
+    projectDescription: str,
+    projectCreationDate: datetime,
+    projectLastUpdateDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `projectId`: `str`
-- `projectArn`: `str`
-- `projectName`: `str`
-- `portalId`: `str`
-- `projectDescription`: `str`
-- `projectCreationDate`: `datetime`
-- `projectLastUpdateDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestorageconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStorageConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeStorageConfigurationResponseTypeDef
+
+def get_value() -> DescribeStorageConfigurationResponseTypeDef:
+    return {
+        "storageType": ...,
+        "multiLayerStorage": ...,
+        "disassociatedDataStorage": ...,
+        "retentionPeriod": ...,
+        "configurationStatus": ...,
+        "lastUpdateDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStorageConfigurationResponseTypeDef(TypedDict):
+    storageType: StorageTypeType,  # (1)
+    multiLayerStorage: MultiLayerStorageTypeDef,  # (2)
+    disassociatedDataStorage: DisassociatedDataStorageStateType,  # (3)
+    retentionPeriod: RetentionPeriodTypeDef,  # (4)
+    configurationStatus: ConfigurationStatusTypeDef,  # (5)
+    lastUpdateDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `storageType`: [StorageTypeType](./literals.md#storagetypetype)
-- `multiLayerStorage`:
-  [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
-- `disassociatedDataStorage`:
-  [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
-- `retentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `configurationStatus`:
-  [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
-- `lastUpdateDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetimeseriesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StorageTypeType](./literals.md#storagetypetype) 
+2. See [:material-code-braces: MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef) 
+3. See [:material-code-brackets: DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype) 
+4. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+5. See [:material-code-braces: ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTimeSeriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeTimeSeriesRequestRequestTypeDef
+
+def get_value() -> DescribeTimeSeriesRequestRequestTypeDef:
+    return {
+        "alias": ...,
+    }
 ```
 
-Optional fields:
-
-- `alias`: `str`
-- `assetId`: `str`
-- `propertyId`: `str`
-
-<a id="describetimeseriesresponsetypedef"></a>
+```python title="Definition"
+class DescribeTimeSeriesRequestRequestTypeDef(TypedDict):
+    alias: NotRequired[str],
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+```
 
 ## DescribeTimeSeriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DescribeTimeSeriesResponseTypeDef
+
+def get_value() -> DescribeTimeSeriesResponseTypeDef:
+    return {
+        "assetId": ...,
+        "propertyId": ...,
+        "alias": ...,
+        "timeSeriesId": ...,
+        "dataType": ...,
+        "dataTypeSpec": ...,
+        "timeSeriesCreationDate": ...,
+        "timeSeriesLastUpdateDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTimeSeriesResponseTypeDef(TypedDict):
+    assetId: str,
+    propertyId: str,
+    alias: str,
+    timeSeriesId: str,
+    dataType: PropertyDataTypeType,  # (1)
+    dataTypeSpec: str,
+    timeSeriesCreationDate: datetime,
+    timeSeriesLastUpdateDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetId`: `str`
-- `propertyId`: `str`
-- `alias`: `str`
-- `timeSeriesId`: `str`
-- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
-- `dataTypeSpec`: `str`
-- `timeSeriesCreationDate`: `datetime`
-- `timeSeriesLastUpdateDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detailederrortypedef"></a>
-
+1. See [:material-code-brackets: PropertyDataTypeType](./literals.md#propertydatatypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetailedErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DetailedErrorTypeDef
+
+def get_value() -> DetailedErrorTypeDef:
+    return {
+        "code": ...,
+        "message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetailedErrorTypeDef(TypedDict):
+    code: DetailedErrorCodeType,  # (1)
+    message: str,
+```
 
-- `code`: [DetailedErrorCodeType](./literals.md#detailederrorcodetype)
-- `message`: `str`
-
-<a id="disassociateassetsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DetailedErrorCodeType](./literals.md#detailederrorcodetype) 
 ## DisassociateAssetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DisassociateAssetsRequestRequestTypeDef
+
+def get_value() -> DisassociateAssetsRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+        "hierarchyId": ...,
+        "childAssetId": ...,
+    }
 ```
 
-Required fields:
-
-- `assetId`: `str`
-- `hierarchyId`: `str`
-- `childAssetId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="disassociatetimeseriesfromassetpropertyrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateAssetsRequestRequestTypeDef(TypedDict):
+    assetId: str,
+    hierarchyId: str,
+    childAssetId: str,
+    clientToken: NotRequired[str],
+```
 
 ## DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef
+
+def get_value() -> DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef:
+    return {
+        "alias": ...,
+        "assetId": ...,
+        "propertyId": ...,
+    }
 ```
 
-Required fields:
-
-- `alias`: `str`
-- `assetId`: `str`
-- `propertyId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="errordetailstypedef"></a>
+```python title="Definition"
+class DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef(TypedDict):
+    alias: str,
+    assetId: str,
+    propertyId: str,
+    clientToken: NotRequired[str],
+```
 
 ## ErrorDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ErrorDetailsTypeDef
+
+def get_value() -> ErrorDetailsTypeDef:
+    return {
+        "code": ...,
+        "message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ErrorDetailsTypeDef(TypedDict):
+    code: ErrorCodeType,  # (1)
+    message: str,
+    details: NotRequired[List[DetailedErrorTypeDef]],  # (2)
+```
 
-- `code`: [ErrorCodeType](./literals.md#errorcodetype)
-- `message`: `str`
-
-Optional fields:
-
-- `details`:
-  `List`\[[DetailedErrorTypeDef](./type_defs.md#detailederrortypedef)\]
-
-<a id="expressionvariabletypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
+2. See [:material-code-braces: DetailedErrorTypeDef](./type_defs.md#detailederrortypedef) 
 ## ExpressionVariableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ExpressionVariableTypeDef
+
+def get_value() -> ExpressionVariableTypeDef:
+    return {
+        "name": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExpressionVariableTypeDef(TypedDict):
+    name: str,
+    value: VariableValueTypeDef,  # (1)
+```
 
-- `name`: `str`
-- `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
-
-<a id="forwardingconfigtypedef"></a>
-
+1. See [:material-code-braces: VariableValueTypeDef](./type_defs.md#variablevaluetypedef) 
 ## ForwardingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ForwardingConfigTypeDef
+
+def get_value() -> ForwardingConfigTypeDef:
+    return {
+        "state": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ForwardingConfigTypeDef(TypedDict):
+    state: ForwardingConfigStateType,  # (1)
+```
 
-- `state`: [ForwardingConfigStateType](./literals.md#forwardingconfigstatetype)
-
-<a id="gatewaycapabilitysummarytypedef"></a>
-
+1. See [:material-code-brackets: ForwardingConfigStateType](./literals.md#forwardingconfigstatetype) 
 ## GatewayCapabilitySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GatewayCapabilitySummaryTypeDef
+
+def get_value() -> GatewayCapabilitySummaryTypeDef:
+    return {
+        "capabilityNamespace": ...,
+        "capabilitySyncStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GatewayCapabilitySummaryTypeDef(TypedDict):
+    capabilityNamespace: str,
+    capabilitySyncStatus: CapabilitySyncStatusType,  # (1)
+```
 
-- `capabilityNamespace`: `str`
-- `capabilitySyncStatus`:
-  [CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype)
-
-<a id="gatewayplatformtypedef"></a>
-
+1. See [:material-code-brackets: CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype) 
 ## GatewayPlatformTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GatewayPlatformTypeDef
+
+def get_value() -> GatewayPlatformTypeDef:
+    return {
+        "greengrass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GatewayPlatformTypeDef(TypedDict):
+    greengrass: NotRequired[GreengrassTypeDef],  # (1)
+    greengrassV2: NotRequired[GreengrassV2TypeDef],  # (2)
+```
 
-- `greengrass`: [GreengrassTypeDef](./type_defs.md#greengrasstypedef)
-- `greengrassV2`: [GreengrassV2TypeDef](./type_defs.md#greengrassv2typedef)
-
-<a id="gatewaysummarytypedef"></a>
-
+1. See [:material-code-braces: GreengrassTypeDef](./type_defs.md#greengrasstypedef) 
+2. See [:material-code-braces: GreengrassV2TypeDef](./type_defs.md#greengrassv2typedef) 
 ## GatewaySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GatewaySummaryTypeDef
+
+def get_value() -> GatewaySummaryTypeDef:
+    return {
+        "gatewayId": ...,
+        "gatewayName": ...,
+        "creationDate": ...,
+        "lastUpdateDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GatewaySummaryTypeDef(TypedDict):
+    gatewayId: str,
+    gatewayName: str,
+    creationDate: datetime,
+    lastUpdateDate: datetime,
+    gatewayPlatform: NotRequired[GatewayPlatformTypeDef],  # (1)
+    gatewayCapabilitySummaries: NotRequired[List[GatewayCapabilitySummaryTypeDef]],  # (2)
+```
 
-- `gatewayId`: `str`
-- `gatewayName`: `str`
-- `creationDate`: `datetime`
-- `lastUpdateDate`: `datetime`
+1. See [:material-code-braces: GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef) 
+2. See [:material-code-braces: GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef) 
+## GetAssetPropertyAggregatesRequestGetAssetPropertyAggregatesPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyAggregatesRequestGetAssetPropertyAggregatesPaginateTypeDef
 
-- `gatewayPlatform`:
-  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
-- `gatewayCapabilitySummaries`:
-  `List`\[[GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef)\]
+def get_value() -> GetAssetPropertyAggregatesRequestGetAssetPropertyAggregatesPaginateTypeDef:
+    return {
+        "aggregateTypes": ...,
+        "resolution": ...,
+        "startDate": ...,
+        "endDate": ...,
+    }
+```
 
-<a id="getassetpropertyaggregatesrequestrequesttypedef"></a>
+```python title="Definition"
+class GetAssetPropertyAggregatesRequestGetAssetPropertyAggregatesPaginateTypeDef(TypedDict):
+    aggregateTypes: Sequence[AggregateTypeType],  # (1)
+    resolution: str,
+    startDate: Union[datetime, str],
+    endDate: Union[datetime, str],
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+    qualities: NotRequired[Sequence[QualityType]],  # (2)
+    timeOrdering: NotRequired[TimeOrderingType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
 
+1. See [:material-code-brackets: AggregateTypeType](./literals.md#aggregatetypetype) 
+2. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+3. See [:material-code-brackets: TimeOrderingType](./literals.md#timeorderingtype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetAssetPropertyAggregatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyAggregatesRequestRequestTypeDef
+
+def get_value() -> GetAssetPropertyAggregatesRequestRequestTypeDef:
+    return {
+        "aggregateTypes": ...,
+        "resolution": ...,
+        "startDate": ...,
+        "endDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssetPropertyAggregatesRequestRequestTypeDef(TypedDict):
+    aggregateTypes: Sequence[AggregateTypeType],  # (1)
+    resolution: str,
+    startDate: Union[datetime, str],
+    endDate: Union[datetime, str],
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+    qualities: NotRequired[Sequence[QualityType]],  # (2)
+    timeOrdering: NotRequired[TimeOrderingType],  # (3)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `aggregateTypes`:
-  `Sequence`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
-- `resolution`: `str`
-- `startDate`: `Union`\[`datetime`, `str`\]
-- `endDate`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
-- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
-- `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getassetpropertyaggregatesresponsetypedef"></a>
-
+1. See [:material-code-brackets: AggregateTypeType](./literals.md#aggregatetypetype) 
+2. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+3. See [:material-code-brackets: TimeOrderingType](./literals.md#timeorderingtype) 
 ## GetAssetPropertyAggregatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyAggregatesResponseTypeDef
+
+def get_value() -> GetAssetPropertyAggregatesResponseTypeDef:
+    return {
+        "aggregatedValues": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssetPropertyAggregatesResponseTypeDef(TypedDict):
+    aggregatedValues: List[AggregatedValueTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `aggregatedValues`:
-  `List`\[[AggregatedValueTypeDef](./type_defs.md#aggregatedvaluetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AggregatedValueTypeDef](./type_defs.md#aggregatedvaluetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAssetPropertyValueHistoryRequestGetAssetPropertyValueHistoryPaginateTypeDef
 
-<a id="getassetpropertyvaluehistoryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueHistoryRequestGetAssetPropertyValueHistoryPaginateTypeDef
 
+def get_value() -> GetAssetPropertyValueHistoryRequestGetAssetPropertyValueHistoryPaginateTypeDef:
+    return {
+        "assetId": ...,
+    }
+```
+
+```python title="Definition"
+class GetAssetPropertyValueHistoryRequestGetAssetPropertyValueHistoryPaginateTypeDef(TypedDict):
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+    startDate: NotRequired[Union[datetime, str]],
+    endDate: NotRequired[Union[datetime, str]],
+    qualities: NotRequired[Sequence[QualityType]],  # (1)
+    timeOrdering: NotRequired[TimeOrderingType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+2. See [:material-code-brackets: TimeOrderingType](./literals.md#timeorderingtype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetAssetPropertyValueHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueHistoryRequestRequestTypeDef
+
+def get_value() -> GetAssetPropertyValueHistoryRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetAssetPropertyValueHistoryRequestRequestTypeDef(TypedDict):
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+    startDate: NotRequired[Union[datetime, str]],
+    endDate: NotRequired[Union[datetime, str]],
+    qualities: NotRequired[Sequence[QualityType]],  # (1)
+    timeOrdering: NotRequired[TimeOrderingType],  # (2)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
-- `startDate`: `Union`\[`datetime`, `str`\]
-- `endDate`: `Union`\[`datetime`, `str`\]
-- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
-- `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getassetpropertyvaluehistoryresponsetypedef"></a>
-
+1. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+2. See [:material-code-brackets: TimeOrderingType](./literals.md#timeorderingtype) 
 ## GetAssetPropertyValueHistoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueHistoryResponseTypeDef
+
+def get_value() -> GetAssetPropertyValueHistoryResponseTypeDef:
+    return {
+        "assetPropertyValueHistory": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssetPropertyValueHistoryResponseTypeDef(TypedDict):
+    assetPropertyValueHistory: List[AssetPropertyValueTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetPropertyValueHistory`:
-  `List`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getassetpropertyvaluerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAssetPropertyValueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueRequestRequestTypeDef
+
+def get_value() -> GetAssetPropertyValueRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+    }
 ```
 
-Optional fields:
-
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
-
-<a id="getassetpropertyvalueresponsetypedef"></a>
+```python title="Definition"
+class GetAssetPropertyValueRequestRequestTypeDef(TypedDict):
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+```
 
 ## GetAssetPropertyValueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GetAssetPropertyValueResponseTypeDef
+
+def get_value() -> GetAssetPropertyValueResponseTypeDef:
+    return {
+        "propertyValue": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssetPropertyValueResponseTypeDef(TypedDict):
+    propertyValue: AssetPropertyValueTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `propertyValue`:
-  [AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetInterpolatedAssetPropertyValuesRequestGetInterpolatedAssetPropertyValuesPaginateTypeDef
 
-<a id="getinterpolatedassetpropertyvaluesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import GetInterpolatedAssetPropertyValuesRequestGetInterpolatedAssetPropertyValuesPaginateTypeDef
 
+def get_value() -> GetInterpolatedAssetPropertyValuesRequestGetInterpolatedAssetPropertyValuesPaginateTypeDef:
+    return {
+        "startTimeInSeconds": ...,
+        "endTimeInSeconds": ...,
+        "quality": ...,
+        "intervalInSeconds": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class GetInterpolatedAssetPropertyValuesRequestGetInterpolatedAssetPropertyValuesPaginateTypeDef(TypedDict):
+    startTimeInSeconds: int,
+    endTimeInSeconds: int,
+    quality: QualityType,  # (1)
+    intervalInSeconds: int,
+    type: str,
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+    startTimeOffsetInNanos: NotRequired[int],
+    endTimeOffsetInNanos: NotRequired[int],
+    intervalWindowInSeconds: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetInterpolatedAssetPropertyValuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GetInterpolatedAssetPropertyValuesRequestRequestTypeDef
+
+def get_value() -> GetInterpolatedAssetPropertyValuesRequestRequestTypeDef:
+    return {
+        "startTimeInSeconds": ...,
+        "endTimeInSeconds": ...,
+        "quality": ...,
+        "intervalInSeconds": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInterpolatedAssetPropertyValuesRequestRequestTypeDef(TypedDict):
+    startTimeInSeconds: int,
+    endTimeInSeconds: int,
+    quality: QualityType,  # (1)
+    intervalInSeconds: int,
+    type: str,
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+    startTimeOffsetInNanos: NotRequired[int],
+    endTimeOffsetInNanos: NotRequired[int],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    intervalWindowInSeconds: NotRequired[int],
+```
 
-- `startTimeInSeconds`: `int`
-- `endTimeInSeconds`: `int`
-- `quality`: [QualityType](./literals.md#qualitytype)
-- `intervalInSeconds`: `int`
-- `type`: `str`
-
-Optional fields:
-
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
-- `startTimeOffsetInNanos`: `int`
-- `endTimeOffsetInNanos`: `int`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `intervalWindowInSeconds`: `int`
-
-<a id="getinterpolatedassetpropertyvaluesresponsetypedef"></a>
-
+1. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
 ## GetInterpolatedAssetPropertyValuesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GetInterpolatedAssetPropertyValuesResponseTypeDef
+
+def get_value() -> GetInterpolatedAssetPropertyValuesResponseTypeDef:
+    return {
+        "interpolatedAssetPropertyValues": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInterpolatedAssetPropertyValuesResponseTypeDef(TypedDict):
+    interpolatedAssetPropertyValues: List[InterpolatedAssetPropertyValueTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `interpolatedAssetPropertyValues`:
-  `List`\[[InterpolatedAssetPropertyValueTypeDef](./type_defs.md#interpolatedassetpropertyvaluetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="greengrasstypedef"></a>
-
+1. See [:material-code-braces: InterpolatedAssetPropertyValueTypeDef](./type_defs.md#interpolatedassetpropertyvaluetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GreengrassTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GreengrassTypeDef
+
+def get_value() -> GreengrassTypeDef:
+    return {
+        "groupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `groupArn`: `str`
-
-<a id="greengrassv2typedef"></a>
+```python title="Definition"
+class GreengrassTypeDef(TypedDict):
+    groupArn: str,
+```
 
 ## GreengrassV2TypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GreengrassV2TypeDef
+
+def get_value() -> GreengrassV2TypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
 ```
 
-Required fields:
-
-- `coreDeviceThingName`: `str`
-
-<a id="groupidentitytypedef"></a>
+```python title="Definition"
+class GreengrassV2TypeDef(TypedDict):
+    coreDeviceThingName: str,
+```
 
 ## GroupIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import GroupIdentityTypeDef
+
+def get_value() -> GroupIdentityTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="iamroleidentitytypedef"></a>
+```python title="Definition"
+class GroupIdentityTypeDef(TypedDict):
+    id: str,
+```
 
 ## IAMRoleIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import IAMRoleIdentityTypeDef
+
+def get_value() -> IAMRoleIdentityTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="iamuseridentitytypedef"></a>
+```python title="Definition"
+class IAMRoleIdentityTypeDef(TypedDict):
+    arn: str,
+```
 
 ## IAMUserIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import IAMUserIdentityTypeDef
+
+def get_value() -> IAMUserIdentityTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="identitytypedef"></a>
+```python title="Definition"
+class IAMUserIdentityTypeDef(TypedDict):
+    arn: str,
+```
 
 ## IdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import IdentityTypeDef
+
+def get_value() -> IdentityTypeDef:
+    return {
+        "user": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IdentityTypeDef(TypedDict):
+    user: NotRequired[UserIdentityTypeDef],  # (1)
+    group: NotRequired[GroupIdentityTypeDef],  # (2)
+    iamUser: NotRequired[IAMUserIdentityTypeDef],  # (3)
+    iamRole: NotRequired[IAMRoleIdentityTypeDef],  # (4)
+```
 
-- `user`: [UserIdentityTypeDef](./type_defs.md#useridentitytypedef)
-- `group`: [GroupIdentityTypeDef](./type_defs.md#groupidentitytypedef)
-- `iamUser`: [IAMUserIdentityTypeDef](./type_defs.md#iamuseridentitytypedef)
-- `iamRole`: [IAMRoleIdentityTypeDef](./type_defs.md#iamroleidentitytypedef)
-
-<a id="imagefiletypedef"></a>
-
+1. See [:material-code-braces: UserIdentityTypeDef](./type_defs.md#useridentitytypedef) 
+2. See [:material-code-braces: GroupIdentityTypeDef](./type_defs.md#groupidentitytypedef) 
+3. See [:material-code-braces: IAMUserIdentityTypeDef](./type_defs.md#iamuseridentitytypedef) 
+4. See [:material-code-braces: IAMRoleIdentityTypeDef](./type_defs.md#iamroleidentitytypedef) 
 ## ImageFileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ImageFileTypeDef
+
+def get_value() -> ImageFileTypeDef:
+    return {
+        "data": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImageFileTypeDef(TypedDict):
+    data: Union[bytes, IO[bytes], StreamingBody],
+    type: ImageFileTypeType,  # (1)
+```
 
-- `data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `type`: `Literal['PNG']` (see
-  [ImageFileTypeType](./literals.md#imagefiletypetype))
-
-<a id="imagelocationtypedef"></a>
-
+1. See [:material-code-brackets: ImageFileTypeType](./literals.md#imagefiletypetype) 
 ## ImageLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ImageLocationTypeDef
+
+def get_value() -> ImageLocationTypeDef:
+    return {
+        "id": ...,
+        "url": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-- `url`: `str`
-
-<a id="imagetypedef"></a>
+```python title="Definition"
+class ImageLocationTypeDef(TypedDict):
+    id: str,
+    url: str,
+```
 
 ## ImageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ImageTypeDef
+
+def get_value() -> ImageTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImageTypeDef(TypedDict):
+    id: NotRequired[str],
+    file: NotRequired[ImageFileTypeDef],  # (1)
+```
 
-- `id`: `str`
-- `file`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
-
-<a id="interpolatedassetpropertyvaluetypedef"></a>
-
+1. See [:material-code-braces: ImageFileTypeDef](./type_defs.md#imagefiletypedef) 
 ## InterpolatedAssetPropertyValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import InterpolatedAssetPropertyValueTypeDef
+
+def get_value() -> InterpolatedAssetPropertyValueTypeDef:
+    return {
+        "timestamp": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InterpolatedAssetPropertyValueTypeDef(TypedDict):
+    timestamp: TimeInNanosTypeDef,  # (1)
+    value: VariantTypeDef,  # (2)
+```
 
-- `timestamp`: [TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef)
-- `value`: [VariantTypeDef](./type_defs.md#varianttypedef)
+1. See [:material-code-braces: TimeInNanosTypeDef](./type_defs.md#timeinnanostypedef) 
+2. See [:material-code-braces: VariantTypeDef](./type_defs.md#varianttypedef) 
+## ListAccessPoliciesRequestListAccessPoliciesPaginateTypeDef
 
-<a id="listaccesspoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAccessPoliciesRequestListAccessPoliciesPaginateTypeDef
 
+def get_value() -> ListAccessPoliciesRequestListAccessPoliciesPaginateTypeDef:
+    return {
+        "identityType": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessPoliciesRequestListAccessPoliciesPaginateTypeDef(TypedDict):
+    identityType: NotRequired[IdentityTypeType],  # (1)
+    identityId: NotRequired[str],
+    resourceType: NotRequired[ResourceTypeType],  # (2)
+    resourceId: NotRequired[str],
+    iamArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccessPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAccessPoliciesRequestRequestTypeDef
+
+def get_value() -> ListAccessPoliciesRequestRequestTypeDef:
+    return {
+        "identityType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListAccessPoliciesRequestRequestTypeDef(TypedDict):
+    identityType: NotRequired[IdentityTypeType],  # (1)
+    identityId: NotRequired[str],
+    resourceType: NotRequired[ResourceTypeType],  # (2)
+    resourceId: NotRequired[str],
+    iamArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `identityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `identityId`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `resourceId`: `str`
-- `iamArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listaccesspoliciesresponsetypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ListAccessPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAccessPoliciesResponseTypeDef
+
+def get_value() -> ListAccessPoliciesResponseTypeDef:
+    return {
+        "accessPolicySummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccessPoliciesResponseTypeDef(TypedDict):
+    accessPolicySummaries: List[AccessPolicySummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `accessPolicySummaries`:
-  `List`\[[AccessPolicySummaryTypeDef](./type_defs.md#accesspolicysummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccessPolicySummaryTypeDef](./type_defs.md#accesspolicysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssetModelsRequestListAssetModelsPaginateTypeDef
 
-<a id="listassetmodelsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssetModelsRequestListAssetModelsPaginateTypeDef
 
+def get_value() -> ListAssetModelsRequestListAssetModelsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetModelsRequestListAssetModelsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssetModelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAssetModelsRequestRequestTypeDef
+
+def get_value() -> ListAssetModelsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listassetmodelsresponsetypedef"></a>
+```python title="Definition"
+class ListAssetModelsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListAssetModelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAssetModelsResponseTypeDef
+
+def get_value() -> ListAssetModelsResponseTypeDef:
+    return {
+        "assetModelSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssetModelsResponseTypeDef(TypedDict):
+    assetModelSummaries: List[AssetModelSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetModelSummaries`:
-  `List`\[[AssetModelSummaryTypeDef](./type_defs.md#assetmodelsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssetModelSummaryTypeDef](./type_defs.md#assetmodelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssetRelationshipsRequestListAssetRelationshipsPaginateTypeDef
 
-<a id="listassetrelationshipsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssetRelationshipsRequestListAssetRelationshipsPaginateTypeDef
 
+def get_value() -> ListAssetRelationshipsRequestListAssetRelationshipsPaginateTypeDef:
+    return {
+        "assetId": ...,
+        "traversalType": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetRelationshipsRequestListAssetRelationshipsPaginateTypeDef(TypedDict):
+    assetId: str,
+    traversalType: TraversalTypeType,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TraversalTypeType](./literals.md#traversaltypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssetRelationshipsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAssetRelationshipsRequestRequestTypeDef
+
+def get_value() -> ListAssetRelationshipsRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+        "traversalType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssetRelationshipsRequestRequestTypeDef(TypedDict):
+    assetId: str,
+    traversalType: TraversalTypeType,  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `assetId`: `str`
-- `traversalType`: `Literal['PATH_TO_ROOT']` (see
-  [TraversalTypeType](./literals.md#traversaltypetype))
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listassetrelationshipsresponsetypedef"></a>
-
+1. See [:material-code-brackets: TraversalTypeType](./literals.md#traversaltypetype) 
 ## ListAssetRelationshipsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAssetRelationshipsResponseTypeDef
+
+def get_value() -> ListAssetRelationshipsResponseTypeDef:
+    return {
+        "assetRelationshipSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssetRelationshipsResponseTypeDef(TypedDict):
+    assetRelationshipSummaries: List[AssetRelationshipSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetRelationshipSummaries`:
-  `List`\[[AssetRelationshipSummaryTypeDef](./type_defs.md#assetrelationshipsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssetRelationshipSummaryTypeDef](./type_defs.md#assetrelationshipsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssetsRequestListAssetsPaginateTypeDef
 
-<a id="listassetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssetsRequestListAssetsPaginateTypeDef
 
+def get_value() -> ListAssetsRequestListAssetsPaginateTypeDef:
+    return {
+        "assetModelId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssetsRequestListAssetsPaginateTypeDef(TypedDict):
+    assetModelId: NotRequired[str],
+    filter: NotRequired[ListAssetsFilterType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ListAssetsFilterType](./literals.md#listassetsfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAssetsRequestRequestTypeDef
+
+def get_value() -> ListAssetsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListAssetsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    assetModelId: NotRequired[str],
+    filter: NotRequired[ListAssetsFilterType],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `assetModelId`: `str`
-- `filter`: [ListAssetsFilterType](./literals.md#listassetsfiltertype)
-
-<a id="listassetsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ListAssetsFilterType](./literals.md#listassetsfiltertype) 
 ## ListAssetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAssetsResponseTypeDef
+
+def get_value() -> ListAssetsResponseTypeDef:
+    return {
+        "assetSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssetsResponseTypeDef(TypedDict):
+    assetSummaries: List[AssetSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetSummaries`:
-  `List`\[[AssetSummaryTypeDef](./type_defs.md#assetsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssetSummaryTypeDef](./type_defs.md#assetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAssociatedAssetsRequestListAssociatedAssetsPaginateTypeDef
 
-<a id="listassociatedassetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListAssociatedAssetsRequestListAssociatedAssetsPaginateTypeDef
 
+def get_value() -> ListAssociatedAssetsRequestListAssociatedAssetsPaginateTypeDef:
+    return {
+        "assetId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssociatedAssetsRequestListAssociatedAssetsPaginateTypeDef(TypedDict):
+    assetId: str,
+    hierarchyId: NotRequired[str],
+    traversalDirection: NotRequired[TraversalDirectionType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TraversalDirectionType](./literals.md#traversaldirectiontype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssociatedAssetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAssociatedAssetsRequestRequestTypeDef
+
+def get_value() -> ListAssociatedAssetsRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssociatedAssetsRequestRequestTypeDef(TypedDict):
+    assetId: str,
+    hierarchyId: NotRequired[str],
+    traversalDirection: NotRequired[TraversalDirectionType],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `assetId`: `str`
-
-Optional fields:
-
-- `hierarchyId`: `str`
-- `traversalDirection`:
-  [TraversalDirectionType](./literals.md#traversaldirectiontype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listassociatedassetsresponsetypedef"></a>
-
+1. See [:material-code-brackets: TraversalDirectionType](./literals.md#traversaldirectiontype) 
 ## ListAssociatedAssetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListAssociatedAssetsResponseTypeDef
+
+def get_value() -> ListAssociatedAssetsResponseTypeDef:
+    return {
+        "assetSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssociatedAssetsResponseTypeDef(TypedDict):
+    assetSummaries: List[AssociatedAssetsSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetSummaries`:
-  `List`\[[AssociatedAssetsSummaryTypeDef](./type_defs.md#associatedassetssummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssociatedAssetsSummaryTypeDef](./type_defs.md#associatedassetssummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDashboardsRequestListDashboardsPaginateTypeDef
 
-<a id="listdashboardsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListDashboardsRequestListDashboardsPaginateTypeDef
 
+def get_value() -> ListDashboardsRequestListDashboardsPaginateTypeDef:
+    return {
+        "projectId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDashboardsRequestListDashboardsPaginateTypeDef(TypedDict):
+    projectId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDashboardsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListDashboardsRequestRequestTypeDef
+
+def get_value() -> ListDashboardsRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listdashboardsresponsetypedef"></a>
+```python title="Definition"
+class ListDashboardsRequestRequestTypeDef(TypedDict):
+    projectId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListDashboardsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListDashboardsResponseTypeDef
+
+def get_value() -> ListDashboardsResponseTypeDef:
+    return {
+        "dashboardSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDashboardsResponseTypeDef(TypedDict):
+    dashboardSummaries: List[DashboardSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `dashboardSummaries`:
-  `List`\[[DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DashboardSummaryTypeDef](./type_defs.md#dashboardsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGatewaysRequestListGatewaysPaginateTypeDef
 
-<a id="listgatewaysrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListGatewaysRequestListGatewaysPaginateTypeDef
 
+def get_value() -> ListGatewaysRequestListGatewaysPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListGatewaysRequestListGatewaysPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGatewaysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListGatewaysRequestRequestTypeDef
+
+def get_value() -> ListGatewaysRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listgatewaysresponsetypedef"></a>
+```python title="Definition"
+class ListGatewaysRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListGatewaysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListGatewaysResponseTypeDef
+
+def get_value() -> ListGatewaysResponseTypeDef:
+    return {
+        "gatewaySummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGatewaysResponseTypeDef(TypedDict):
+    gatewaySummaries: List[GatewaySummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `gatewaySummaries`:
-  `List`\[[GatewaySummaryTypeDef](./type_defs.md#gatewaysummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GatewaySummaryTypeDef](./type_defs.md#gatewaysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPortalsRequestListPortalsPaginateTypeDef
 
-<a id="listportalsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListPortalsRequestListPortalsPaginateTypeDef
 
+def get_value() -> ListPortalsRequestListPortalsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListPortalsRequestListPortalsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPortalsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListPortalsRequestRequestTypeDef
+
+def get_value() -> ListPortalsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listportalsresponsetypedef"></a>
+```python title="Definition"
+class ListPortalsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListPortalsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListPortalsResponseTypeDef
+
+def get_value() -> ListPortalsResponseTypeDef:
+    return {
+        "portalSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPortalsResponseTypeDef(TypedDict):
+    portalSummaries: List[PortalSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `portalSummaries`:
-  `List`\[[PortalSummaryTypeDef](./type_defs.md#portalsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PortalSummaryTypeDef](./type_defs.md#portalsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProjectAssetsRequestListProjectAssetsPaginateTypeDef
 
-<a id="listprojectassetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListProjectAssetsRequestListProjectAssetsPaginateTypeDef
 
+def get_value() -> ListProjectAssetsRequestListProjectAssetsPaginateTypeDef:
+    return {
+        "projectId": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectAssetsRequestListProjectAssetsPaginateTypeDef(TypedDict):
+    projectId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProjectAssetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListProjectAssetsRequestRequestTypeDef
+
+def get_value() -> ListProjectAssetsRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listprojectassetsresponsetypedef"></a>
+```python title="Definition"
+class ListProjectAssetsRequestRequestTypeDef(TypedDict):
+    projectId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListProjectAssetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListProjectAssetsResponseTypeDef
+
+def get_value() -> ListProjectAssetsResponseTypeDef:
+    return {
+        "assetIds": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProjectAssetsResponseTypeDef(TypedDict):
+    assetIds: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `assetIds`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProjectsRequestListProjectsPaginateTypeDef
 
-<a id="listprojectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListProjectsRequestListProjectsPaginateTypeDef
 
+def get_value() -> ListProjectsRequestListProjectsPaginateTypeDef:
+    return {
+        "portalId": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectsRequestListProjectsPaginateTypeDef(TypedDict):
+    portalId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListProjectsRequestRequestTypeDef
+
+def get_value() -> ListProjectsRequestRequestTypeDef:
+    return {
+        "portalId": ...,
+    }
 ```
 
-Required fields:
-
-- `portalId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listprojectsresponsetypedef"></a>
+```python title="Definition"
+class ListProjectsRequestRequestTypeDef(TypedDict):
+    portalId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListProjectsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListProjectsResponseTypeDef
+
+def get_value() -> ListProjectsResponseTypeDef:
+    return {
+        "projectSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProjectsResponseTypeDef(TypedDict):
+    projectSummaries: List[ProjectSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `projectSummaries`:
-  `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTimeSeriesRequestListTimeSeriesPaginateTypeDef
 
-<a id="listtimeseriesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.type_defs import ListTimeSeriesRequestListTimeSeriesPaginateTypeDef
 
+def get_value() -> ListTimeSeriesRequestListTimeSeriesPaginateTypeDef:
+    return {
+        "assetId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTimeSeriesRequestListTimeSeriesPaginateTypeDef(TypedDict):
+    assetId: NotRequired[str],
+    aliasPrefix: NotRequired[str],
+    timeSeriesType: NotRequired[ListTimeSeriesTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ListTimeSeriesTypeType](./literals.md#listtimeseriestypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTimeSeriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListTimeSeriesRequestRequestTypeDef
+
+def get_value() -> ListTimeSeriesRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTimeSeriesRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    assetId: NotRequired[str],
+    aliasPrefix: NotRequired[str],
+    timeSeriesType: NotRequired[ListTimeSeriesTypeType],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `assetId`: `str`
-- `aliasPrefix`: `str`
-- `timeSeriesType`:
-  [ListTimeSeriesTypeType](./literals.md#listtimeseriestypetype)
-
-<a id="listtimeseriesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ListTimeSeriesTypeType](./literals.md#listtimeseriestypetype) 
 ## ListTimeSeriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ListTimeSeriesResponseTypeDef
+
+def get_value() -> ListTimeSeriesResponseTypeDef:
+    return {
+        "TimeSeriesSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTimeSeriesResponseTypeDef(TypedDict):
+    TimeSeriesSummaries: List[TimeSeriesSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TimeSeriesSummaries`:
-  `List`\[[TimeSeriesSummaryTypeDef](./type_defs.md#timeseriessummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loggingoptionstypedef"></a>
-
+1. See [:material-code-braces: TimeSeriesSummaryTypeDef](./type_defs.md#timeseriessummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import LoggingOptionsTypeDef
+
+def get_value() -> LoggingOptionsTypeDef:
+    return {
+        "level": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LoggingOptionsTypeDef(TypedDict):
+    level: LoggingLevelType,  # (1)
+```
 
-- `level`: [LoggingLevelType](./literals.md#loggingleveltype)
-
-<a id="measurementprocessingconfigtypedef"></a>
-
+1. See [:material-code-brackets: LoggingLevelType](./literals.md#loggingleveltype) 
 ## MeasurementProcessingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import MeasurementProcessingConfigTypeDef
+
+def get_value() -> MeasurementProcessingConfigTypeDef:
+    return {
+        "forwardingConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MeasurementProcessingConfigTypeDef(TypedDict):
+    forwardingConfig: ForwardingConfigTypeDef,  # (1)
+```
 
-- `forwardingConfig`:
-  [ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef)
-
-<a id="measurementtypedef"></a>
-
+1. See [:material-code-braces: ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef) 
 ## MeasurementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import MeasurementTypeDef
+
+def get_value() -> MeasurementTypeDef:
+    return {
+        "processingConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MeasurementTypeDef(TypedDict):
+    processingConfig: NotRequired[MeasurementProcessingConfigTypeDef],  # (1)
+```
 
-- `processingConfig`:
-  [MeasurementProcessingConfigTypeDef](./type_defs.md#measurementprocessingconfigtypedef)
-
-<a id="metricprocessingconfigtypedef"></a>
-
+1. See [:material-code-braces: MeasurementProcessingConfigTypeDef](./type_defs.md#measurementprocessingconfigtypedef) 
 ## MetricProcessingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import MetricProcessingConfigTypeDef
+
+def get_value() -> MetricProcessingConfigTypeDef:
+    return {
+        "computeLocation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricProcessingConfigTypeDef(TypedDict):
+    computeLocation: ComputeLocationType,  # (1)
+```
 
-- `computeLocation`: [ComputeLocationType](./literals.md#computelocationtype)
-
-<a id="metrictypedef"></a>
-
+1. See [:material-code-brackets: ComputeLocationType](./literals.md#computelocationtype) 
 ## MetricTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import MetricTypeDef
+
+def get_value() -> MetricTypeDef:
+    return {
+        "expression": ...,
+        "variables": ...,
+        "window": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricTypeDef(TypedDict):
+    expression: str,
+    variables: Sequence[ExpressionVariableTypeDef],  # (1)
+    window: MetricWindowTypeDef,  # (2)
+    processingConfig: NotRequired[MetricProcessingConfigTypeDef],  # (3)
+```
 
-- `expression`: `str`
-- `variables`:
-  `Sequence`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
-- `window`: [MetricWindowTypeDef](./type_defs.md#metricwindowtypedef)
-
-Optional fields:
-
-- `processingConfig`:
-  [MetricProcessingConfigTypeDef](./type_defs.md#metricprocessingconfigtypedef)
-
-<a id="metricwindowtypedef"></a>
-
+1. See [:material-code-braces: ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef) 
+2. See [:material-code-braces: MetricWindowTypeDef](./type_defs.md#metricwindowtypedef) 
+3. See [:material-code-braces: MetricProcessingConfigTypeDef](./type_defs.md#metricprocessingconfigtypedef) 
 ## MetricWindowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import MetricWindowTypeDef
+
+def get_value() -> MetricWindowTypeDef:
+    return {
+        "tumbling": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MetricWindowTypeDef(TypedDict):
+    tumbling: NotRequired[TumblingWindowTypeDef],  # (1)
+```
 
-- `tumbling`: [TumblingWindowTypeDef](./type_defs.md#tumblingwindowtypedef)
-
-<a id="monitorerrordetailstypedef"></a>
-
+1. See [:material-code-braces: TumblingWindowTypeDef](./type_defs.md#tumblingwindowtypedef) 
 ## MonitorErrorDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import MonitorErrorDetailsTypeDef
+
+def get_value() -> MonitorErrorDetailsTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MonitorErrorDetailsTypeDef(TypedDict):
+    code: NotRequired[MonitorErrorCodeType],  # (1)
+    message: NotRequired[str],
+```
 
-- `code`: [MonitorErrorCodeType](./literals.md#monitorerrorcodetype)
-- `message`: `str`
-
-<a id="multilayerstoragetypedef"></a>
-
+1. See [:material-code-brackets: MonitorErrorCodeType](./literals.md#monitorerrorcodetype) 
 ## MultiLayerStorageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import MultiLayerStorageTypeDef
+
+def get_value() -> MultiLayerStorageTypeDef:
+    return {
+        "customerManagedS3Storage": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MultiLayerStorageTypeDef(TypedDict):
+    customerManagedS3Storage: CustomerManagedS3StorageTypeDef,  # (1)
+```
 
-- `customerManagedS3Storage`:
-  [CustomerManagedS3StorageTypeDef](./type_defs.md#customermanageds3storagetypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: CustomerManagedS3StorageTypeDef](./type_defs.md#customermanageds3storagetypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="portalresourcetypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PortalResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PortalResourceTypeDef
+
+def get_value() -> PortalResourceTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="portalstatustypedef"></a>
+```python title="Definition"
+class PortalResourceTypeDef(TypedDict):
+    id: str,
+```
 
 ## PortalStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PortalStatusTypeDef
+
+def get_value() -> PortalStatusTypeDef:
+    return {
+        "state": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PortalStatusTypeDef(TypedDict):
+    state: PortalStateType,  # (1)
+    error: NotRequired[MonitorErrorDetailsTypeDef],  # (2)
+```
 
-- `state`: [PortalStateType](./literals.md#portalstatetype)
-
-Optional fields:
-
-- `error`:
-  [MonitorErrorDetailsTypeDef](./type_defs.md#monitorerrordetailstypedef)
-
-<a id="portalsummarytypedef"></a>
-
+1. See [:material-code-brackets: PortalStateType](./literals.md#portalstatetype) 
+2. See [:material-code-braces: MonitorErrorDetailsTypeDef](./type_defs.md#monitorerrordetailstypedef) 
 ## PortalSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PortalSummaryTypeDef
+
+def get_value() -> PortalSummaryTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "startUrl": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PortalSummaryTypeDef(TypedDict):
+    id: str,
+    name: str,
+    startUrl: str,
+    status: PortalStatusTypeDef,  # (1)
+    description: NotRequired[str],
+    creationDate: NotRequired[datetime],
+    lastUpdateDate: NotRequired[datetime],
+    roleArn: NotRequired[str],
+```
 
-- `id`: `str`
-- `name`: `str`
-- `startUrl`: `str`
-- `status`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
-
-Optional fields:
-
-- `description`: `str`
-- `creationDate`: `datetime`
-- `lastUpdateDate`: `datetime`
-- `roleArn`: `str`
-
-<a id="projectresourcetypedef"></a>
-
+1. See [:material-code-braces: PortalStatusTypeDef](./type_defs.md#portalstatustypedef) 
 ## ProjectResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ProjectResourceTypeDef
+
+def get_value() -> ProjectResourceTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="projectsummarytypedef"></a>
+```python title="Definition"
+class ProjectResourceTypeDef(TypedDict):
+    id: str,
+```
 
 ## ProjectSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ProjectSummaryTypeDef
+
+def get_value() -> ProjectSummaryTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `creationDate`: `datetime`
-- `lastUpdateDate`: `datetime`
-
-<a id="propertynotificationtypedef"></a>
+```python title="Definition"
+class ProjectSummaryTypeDef(TypedDict):
+    id: str,
+    name: str,
+    description: NotRequired[str],
+    creationDate: NotRequired[datetime],
+    lastUpdateDate: NotRequired[datetime],
+```
 
 ## PropertyNotificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PropertyNotificationTypeDef
+
+def get_value() -> PropertyNotificationTypeDef:
+    return {
+        "topic": ...,
+        "state": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PropertyNotificationTypeDef(TypedDict):
+    topic: str,
+    state: PropertyNotificationStateType,  # (1)
+```
 
-- `topic`: `str`
-- `state`:
-  [PropertyNotificationStateType](./literals.md#propertynotificationstatetype)
-
-<a id="propertytypedef"></a>
-
+1. See [:material-code-brackets: PropertyNotificationStateType](./literals.md#propertynotificationstatetype) 
 ## PropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PropertyTypeDef
+
+def get_value() -> PropertyTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "dataType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PropertyTypeDef(TypedDict):
+    id: str,
+    name: str,
+    dataType: PropertyDataTypeType,  # (2)
+    alias: NotRequired[str],
+    notification: NotRequired[PropertyNotificationTypeDef],  # (1)
+    unit: NotRequired[str],
+    type: NotRequired[PropertyTypeTypeDef],  # (3)
+```
 
-- `id`: `str`
-- `name`: `str`
-- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
-
-Optional fields:
-
-- `alias`: `str`
-- `notification`:
-  [PropertyNotificationTypeDef](./type_defs.md#propertynotificationtypedef)
-- `unit`: `str`
-- `type`: [PropertyTypeTypeDef](./type_defs.md#propertytypetypedef)
-
-<a id="propertytypetypedef"></a>
-
+1. See [:material-code-braces: PropertyNotificationTypeDef](./type_defs.md#propertynotificationtypedef) 
+2. See [:material-code-brackets: PropertyDataTypeType](./literals.md#propertydatatypetype) 
+3. See [:material-code-braces: PropertyTypeTypeDef](./type_defs.md#propertytypetypedef) 
 ## PropertyTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PropertyTypeTypeDef
+
+def get_value() -> PropertyTypeTypeDef:
+    return {
+        "attribute": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PropertyTypeTypeDef(TypedDict):
+    attribute: NotRequired[AttributeTypeDef],  # (1)
+    measurement: NotRequired[MeasurementTypeDef],  # (2)
+    transform: NotRequired[TransformTypeDef],  # (3)
+    metric: NotRequired[MetricTypeDef],  # (4)
+```
 
-- `attribute`: [AttributeTypeDef](./type_defs.md#attributetypedef)
-- `measurement`: [MeasurementTypeDef](./type_defs.md#measurementtypedef)
-- `transform`: [TransformTypeDef](./type_defs.md#transformtypedef)
-- `metric`: [MetricTypeDef](./type_defs.md#metrictypedef)
-
-<a id="putassetpropertyvalueentrytypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: MeasurementTypeDef](./type_defs.md#measurementtypedef) 
+3. See [:material-code-braces: TransformTypeDef](./type_defs.md#transformtypedef) 
+4. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
 ## PutAssetPropertyValueEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PutAssetPropertyValueEntryTypeDef
+
+def get_value() -> PutAssetPropertyValueEntryTypeDef:
+    return {
+        "entryId": ...,
+        "propertyValues": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAssetPropertyValueEntryTypeDef(TypedDict):
+    entryId: str,
+    propertyValues: Sequence[AssetPropertyValueTypeDef],  # (1)
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    propertyAlias: NotRequired[str],
+```
 
-- `entryId`: `str`
-- `propertyValues`:
-  `Sequence`\[[AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef)\]
-
-Optional fields:
-
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
-
-<a id="putdefaultencryptionconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetPropertyValueTypeDef](./type_defs.md#assetpropertyvaluetypedef) 
 ## PutDefaultEncryptionConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PutDefaultEncryptionConfigurationRequestRequestTypeDef
+
+def get_value() -> PutDefaultEncryptionConfigurationRequestRequestTypeDef:
+    return {
+        "encryptionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutDefaultEncryptionConfigurationRequestRequestTypeDef(TypedDict):
+    encryptionType: EncryptionTypeType,  # (1)
+    kmsKeyId: NotRequired[str],
+```
 
-- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-
-Optional fields:
-
-- `kmsKeyId`: `str`
-
-<a id="putdefaultencryptionconfigurationresponsetypedef"></a>
-
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
 ## PutDefaultEncryptionConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PutDefaultEncryptionConfigurationResponseTypeDef
+
+def get_value() -> PutDefaultEncryptionConfigurationResponseTypeDef:
+    return {
+        "encryptionType": ...,
+        "kmsKeyArn": ...,
+        "configurationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutDefaultEncryptionConfigurationResponseTypeDef(TypedDict):
+    encryptionType: EncryptionTypeType,  # (1)
+    kmsKeyArn: str,
+    configurationStatus: ConfigurationStatusTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-- `kmsKeyArn`: `str`
-- `configurationStatus`:
-  [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putloggingoptionsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+2. See [:material-code-braces: ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutLoggingOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PutLoggingOptionsRequestRequestTypeDef
+
+def get_value() -> PutLoggingOptionsRequestRequestTypeDef:
+    return {
+        "loggingOptions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutLoggingOptionsRequestRequestTypeDef(TypedDict):
+    loggingOptions: LoggingOptionsTypeDef,  # (1)
+```
 
-- `loggingOptions`:
-  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
-
-<a id="putstorageconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
 ## PutStorageConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PutStorageConfigurationRequestRequestTypeDef
+
+def get_value() -> PutStorageConfigurationRequestRequestTypeDef:
+    return {
+        "storageType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutStorageConfigurationRequestRequestTypeDef(TypedDict):
+    storageType: StorageTypeType,  # (1)
+    multiLayerStorage: NotRequired[MultiLayerStorageTypeDef],  # (2)
+    disassociatedDataStorage: NotRequired[DisassociatedDataStorageStateType],  # (3)
+    retentionPeriod: NotRequired[RetentionPeriodTypeDef],  # (4)
+```
 
-- `storageType`: [StorageTypeType](./literals.md#storagetypetype)
-
-Optional fields:
-
-- `multiLayerStorage`:
-  [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
-- `disassociatedDataStorage`:
-  [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
-- `retentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-
-<a id="putstorageconfigurationresponsetypedef"></a>
-
+1. See [:material-code-brackets: StorageTypeType](./literals.md#storagetypetype) 
+2. See [:material-code-braces: MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef) 
+3. See [:material-code-brackets: DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype) 
+4. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
 ## PutStorageConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import PutStorageConfigurationResponseTypeDef
+
+def get_value() -> PutStorageConfigurationResponseTypeDef:
+    return {
+        "storageType": ...,
+        "multiLayerStorage": ...,
+        "disassociatedDataStorage": ...,
+        "retentionPeriod": ...,
+        "configurationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutStorageConfigurationResponseTypeDef(TypedDict):
+    storageType: StorageTypeType,  # (1)
+    multiLayerStorage: MultiLayerStorageTypeDef,  # (2)
+    disassociatedDataStorage: DisassociatedDataStorageStateType,  # (3)
+    retentionPeriod: RetentionPeriodTypeDef,  # (4)
+    configurationStatus: ConfigurationStatusTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `storageType`: [StorageTypeType](./literals.md#storagetypetype)
-- `multiLayerStorage`:
-  [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
-- `disassociatedDataStorage`:
-  [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
-- `retentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `configurationStatus`:
-  [ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resourcetypedef"></a>
-
+1. See [:material-code-brackets: StorageTypeType](./literals.md#storagetypetype) 
+2. See [:material-code-braces: MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef) 
+3. See [:material-code-brackets: DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype) 
+4. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+5. See [:material-code-braces: ConfigurationStatusTypeDef](./type_defs.md#configurationstatustypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "portal": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    portal: NotRequired[PortalResourceTypeDef],  # (1)
+    project: NotRequired[ProjectResourceTypeDef],  # (2)
+```
 
-- `portal`: [PortalResourceTypeDef](./type_defs.md#portalresourcetypedef)
-- `project`: [ProjectResourceTypeDef](./type_defs.md#projectresourcetypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: PortalResourceTypeDef](./type_defs.md#portalresourcetypedef) 
+2. See [:material-code-braces: ProjectResourceTypeDef](./type_defs.md#projectresourcetypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retentionperiodtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetentionPeriodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import RetentionPeriodTypeDef
+
+def get_value() -> RetentionPeriodTypeDef:
+    return {
+        "numberOfDays": ...,
+    }
 ```
 
-Optional fields:
-
-- `numberOfDays`: `int`
-- `unlimited`: `bool`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class RetentionPeriodTypeDef(TypedDict):
+    numberOfDays: NotRequired[int],
+    unlimited: NotRequired[bool],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="timeinnanostypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TimeInNanosTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import TimeInNanosTypeDef
+
+def get_value() -> TimeInNanosTypeDef:
+    return {
+        "timeInSeconds": ...,
+    }
 ```
 
-Required fields:
-
-- `timeInSeconds`: `int`
-
-Optional fields:
-
-- `offsetInNanos`: `int`
-
-<a id="timeseriessummarytypedef"></a>
+```python title="Definition"
+class TimeInNanosTypeDef(TypedDict):
+    timeInSeconds: int,
+    offsetInNanos: NotRequired[int],
+```
 
 ## TimeSeriesSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import TimeSeriesSummaryTypeDef
+
+def get_value() -> TimeSeriesSummaryTypeDef:
+    return {
+        "timeSeriesId": ...,
+        "dataType": ...,
+        "timeSeriesCreationDate": ...,
+        "timeSeriesLastUpdateDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TimeSeriesSummaryTypeDef(TypedDict):
+    timeSeriesId: str,
+    dataType: PropertyDataTypeType,  # (1)
+    timeSeriesCreationDate: datetime,
+    timeSeriesLastUpdateDate: datetime,
+    assetId: NotRequired[str],
+    propertyId: NotRequired[str],
+    alias: NotRequired[str],
+    dataTypeSpec: NotRequired[str],
+```
 
-- `timeSeriesId`: `str`
-- `dataType`: [PropertyDataTypeType](./literals.md#propertydatatypetype)
-- `timeSeriesCreationDate`: `datetime`
-- `timeSeriesLastUpdateDate`: `datetime`
-
-Optional fields:
-
-- `assetId`: `str`
-- `propertyId`: `str`
-- `alias`: `str`
-- `dataTypeSpec`: `str`
-
-<a id="transformprocessingconfigtypedef"></a>
-
+1. See [:material-code-brackets: PropertyDataTypeType](./literals.md#propertydatatypetype) 
 ## TransformProcessingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import TransformProcessingConfigTypeDef
+
+def get_value() -> TransformProcessingConfigTypeDef:
+    return {
+        "computeLocation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransformProcessingConfigTypeDef(TypedDict):
+    computeLocation: ComputeLocationType,  # (1)
+    forwardingConfig: NotRequired[ForwardingConfigTypeDef],  # (2)
+```
 
-- `computeLocation`: [ComputeLocationType](./literals.md#computelocationtype)
-
-Optional fields:
-
-- `forwardingConfig`:
-  [ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef)
-
-<a id="transformtypedef"></a>
-
+1. See [:material-code-brackets: ComputeLocationType](./literals.md#computelocationtype) 
+2. See [:material-code-braces: ForwardingConfigTypeDef](./type_defs.md#forwardingconfigtypedef) 
 ## TransformTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import TransformTypeDef
+
+def get_value() -> TransformTypeDef:
+    return {
+        "expression": ...,
+        "variables": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransformTypeDef(TypedDict):
+    expression: str,
+    variables: Sequence[ExpressionVariableTypeDef],  # (1)
+    processingConfig: NotRequired[TransformProcessingConfigTypeDef],  # (2)
+```
 
-- `expression`: `str`
-- `variables`:
-  `Sequence`\[[ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef)\]
-
-Optional fields:
-
-- `processingConfig`:
-  [TransformProcessingConfigTypeDef](./type_defs.md#transformprocessingconfigtypedef)
-
-<a id="tumblingwindowtypedef"></a>
-
+1. See [:material-code-braces: ExpressionVariableTypeDef](./type_defs.md#expressionvariabletypedef) 
+2. See [:material-code-braces: TransformProcessingConfigTypeDef](./type_defs.md#transformprocessingconfigtypedef) 
 ## TumblingWindowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import TumblingWindowTypeDef
+
+def get_value() -> TumblingWindowTypeDef:
+    return {
+        "interval": ...,
+    }
 ```
 
-Required fields:
-
-- `interval`: `str`
-
-Optional fields:
-
-- `offset`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TumblingWindowTypeDef(TypedDict):
+    interval: str,
+    offset: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateaccesspolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateAccessPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateAccessPolicyRequestRequestTypeDef
+
+def get_value() -> UpdateAccessPolicyRequestRequestTypeDef:
+    return {
+        "accessPolicyId": ...,
+        "accessPolicyIdentity": ...,
+        "accessPolicyResource": ...,
+        "accessPolicyPermission": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAccessPolicyRequestRequestTypeDef(TypedDict):
+    accessPolicyId: str,
+    accessPolicyIdentity: IdentityTypeDef,  # (1)
+    accessPolicyResource: ResourceTypeDef,  # (2)
+    accessPolicyPermission: PermissionType,  # (3)
+    clientToken: NotRequired[str],
+```
 
-- `accessPolicyId`: `str`
-- `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="updateassetmodelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## UpdateAssetModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateAssetModelRequestRequestTypeDef
+
+def get_value() -> UpdateAssetModelRequestRequestTypeDef:
+    return {
+        "assetModelId": ...,
+        "assetModelName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssetModelRequestRequestTypeDef(TypedDict):
+    assetModelId: str,
+    assetModelName: str,
+    assetModelDescription: NotRequired[str],
+    assetModelProperties: NotRequired[Sequence[AssetModelPropertyTypeDef]],  # (1)
+    assetModelHierarchies: NotRequired[Sequence[AssetModelHierarchyTypeDef]],  # (2)
+    assetModelCompositeModels: NotRequired[Sequence[AssetModelCompositeModelTypeDef]],  # (3)
+    clientToken: NotRequired[str],
+```
 
-- `assetModelId`: `str`
-- `assetModelName`: `str`
-
-Optional fields:
-
-- `assetModelDescription`: `str`
-- `assetModelProperties`:
-  `Sequence`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
-- `assetModelHierarchies`:
-  `Sequence`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
-- `assetModelCompositeModels`:
-  `Sequence`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
-- `clientToken`: `str`
-
-<a id="updateassetmodelresponsetypedef"></a>
-
+1. See [:material-code-braces: AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef) 
+2. See [:material-code-braces: AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef) 
+3. See [:material-code-braces: AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef) 
 ## UpdateAssetModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateAssetModelResponseTypeDef
+
+def get_value() -> UpdateAssetModelResponseTypeDef:
+    return {
+        "assetModelStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssetModelResponseTypeDef(TypedDict):
+    assetModelStatus: AssetModelStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetModelStatus`:
-  [AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateassetpropertyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetModelStatusTypeDef](./type_defs.md#assetmodelstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAssetPropertyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateAssetPropertyRequestRequestTypeDef
+
+def get_value() -> UpdateAssetPropertyRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+        "propertyId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssetPropertyRequestRequestTypeDef(TypedDict):
+    assetId: str,
+    propertyId: str,
+    propertyAlias: NotRequired[str],
+    propertyNotificationState: NotRequired[PropertyNotificationStateType],  # (1)
+    clientToken: NotRequired[str],
+```
 
-- `assetId`: `str`
-- `propertyId`: `str`
-
-Optional fields:
-
-- `propertyAlias`: `str`
-- `propertyNotificationState`:
-  [PropertyNotificationStateType](./literals.md#propertynotificationstatetype)
-- `clientToken`: `str`
-
-<a id="updateassetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PropertyNotificationStateType](./literals.md#propertynotificationstatetype) 
 ## UpdateAssetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateAssetRequestRequestTypeDef
+
+def get_value() -> UpdateAssetRequestRequestTypeDef:
+    return {
+        "assetId": ...,
+        "assetName": ...,
+    }
 ```
 
-Required fields:
-
-- `assetId`: `str`
-- `assetName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="updateassetresponsetypedef"></a>
+```python title="Definition"
+class UpdateAssetRequestRequestTypeDef(TypedDict):
+    assetId: str,
+    assetName: str,
+    clientToken: NotRequired[str],
+```
 
 ## UpdateAssetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateAssetResponseTypeDef
+
+def get_value() -> UpdateAssetResponseTypeDef:
+    return {
+        "assetStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssetResponseTypeDef(TypedDict):
+    assetStatus: AssetStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assetStatus`: [AssetStatusTypeDef](./type_defs.md#assetstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedashboardrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssetStatusTypeDef](./type_defs.md#assetstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDashboardRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateDashboardRequestRequestTypeDef
+
+def get_value() -> UpdateDashboardRequestRequestTypeDef:
+    return {
+        "dashboardId": ...,
+        "dashboardName": ...,
+        "dashboardDefinition": ...,
+    }
 ```
 
-Required fields:
-
-- `dashboardId`: `str`
-- `dashboardName`: `str`
-- `dashboardDefinition`: `str`
-
-Optional fields:
-
-- `dashboardDescription`: `str`
-- `clientToken`: `str`
-
-<a id="updategatewaycapabilityconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateDashboardRequestRequestTypeDef(TypedDict):
+    dashboardId: str,
+    dashboardName: str,
+    dashboardDefinition: str,
+    dashboardDescription: NotRequired[str],
+    clientToken: NotRequired[str],
+```
 
 ## UpdateGatewayCapabilityConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateGatewayCapabilityConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateGatewayCapabilityConfigurationRequestRequestTypeDef:
+    return {
+        "gatewayId": ...,
+        "capabilityNamespace": ...,
+        "capabilityConfiguration": ...,
+    }
 ```
 
-Required fields:
-
-- `gatewayId`: `str`
-- `capabilityNamespace`: `str`
-- `capabilityConfiguration`: `str`
-
-<a id="updategatewaycapabilityconfigurationresponsetypedef"></a>
+```python title="Definition"
+class UpdateGatewayCapabilityConfigurationRequestRequestTypeDef(TypedDict):
+    gatewayId: str,
+    capabilityNamespace: str,
+    capabilityConfiguration: str,
+```
 
 ## UpdateGatewayCapabilityConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateGatewayCapabilityConfigurationResponseTypeDef
+
+def get_value() -> UpdateGatewayCapabilityConfigurationResponseTypeDef:
+    return {
+        "capabilityNamespace": ...,
+        "capabilitySyncStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGatewayCapabilityConfigurationResponseTypeDef(TypedDict):
+    capabilityNamespace: str,
+    capabilitySyncStatus: CapabilitySyncStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `capabilityNamespace`: `str`
-- `capabilitySyncStatus`:
-  [CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updategatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CapabilitySyncStatusType](./literals.md#capabilitysyncstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateGatewayRequestRequestTypeDef
+
+def get_value() -> UpdateGatewayRequestRequestTypeDef:
+    return {
+        "gatewayId": ...,
+        "gatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `gatewayId`: `str`
-- `gatewayName`: `str`
-
-<a id="updateportalrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateGatewayRequestRequestTypeDef(TypedDict):
+    gatewayId: str,
+    gatewayName: str,
+```
 
 ## UpdatePortalRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdatePortalRequestRequestTypeDef
+
+def get_value() -> UpdatePortalRequestRequestTypeDef:
+    return {
+        "portalId": ...,
+        "portalName": ...,
+        "portalContactEmail": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePortalRequestRequestTypeDef(TypedDict):
+    portalId: str,
+    portalName: str,
+    portalContactEmail: str,
+    roleArn: str,
+    portalDescription: NotRequired[str],
+    portalLogoImage: NotRequired[ImageTypeDef],  # (1)
+    clientToken: NotRequired[str],
+    notificationSenderEmail: NotRequired[str],
+    alarms: NotRequired[AlarmsTypeDef],  # (2)
+```
 
-- `portalId`: `str`
-- `portalName`: `str`
-- `portalContactEmail`: `str`
-- `roleArn`: `str`
-
-Optional fields:
-
-- `portalDescription`: `str`
-- `portalLogoImage`: [ImageTypeDef](./type_defs.md#imagetypedef)
-- `clientToken`: `str`
-- `notificationSenderEmail`: `str`
-- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
-
-<a id="updateportalresponsetypedef"></a>
-
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: AlarmsTypeDef](./type_defs.md#alarmstypedef) 
 ## UpdatePortalResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdatePortalResponseTypeDef
+
+def get_value() -> UpdatePortalResponseTypeDef:
+    return {
+        "portalStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePortalResponseTypeDef(TypedDict):
+    portalStatus: PortalStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `portalStatus`: [PortalStatusTypeDef](./type_defs.md#portalstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PortalStatusTypeDef](./type_defs.md#portalstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UpdateProjectRequestRequestTypeDef
+
+def get_value() -> UpdateProjectRequestRequestTypeDef:
+    return {
+        "projectId": ...,
+        "projectName": ...,
+    }
 ```
 
-Required fields:
-
-- `projectId`: `str`
-- `projectName`: `str`
-
-Optional fields:
-
-- `projectDescription`: `str`
-- `clientToken`: `str`
-
-<a id="useridentitytypedef"></a>
+```python title="Definition"
+class UpdateProjectRequestRequestTypeDef(TypedDict):
+    projectId: str,
+    projectName: str,
+    projectDescription: NotRequired[str],
+    clientToken: NotRequired[str],
+```
 
 ## UserIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import UserIdentityTypeDef
+
+def get_value() -> UserIdentityTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="variablevaluetypedef"></a>
+```python title="Definition"
+class UserIdentityTypeDef(TypedDict):
+    id: str,
+```
 
 ## VariableValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import VariableValueTypeDef
+
+def get_value() -> VariableValueTypeDef:
+    return {
+        "propertyId": ...,
+    }
 ```
 
-Required fields:
-
-- `propertyId`: `str`
-
-Optional fields:
-
-- `hierarchyId`: `str`
-
-<a id="varianttypedef"></a>
+```python title="Definition"
+class VariableValueTypeDef(TypedDict):
+    propertyId: str,
+    hierarchyId: NotRequired[str],
+```
 
 ## VariantTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import VariantTypeDef
+
+def get_value() -> VariantTypeDef:
+    return {
+        "stringValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `stringValue`: `str`
-- `integerValue`: `int`
-- `doubleValue`: `float`
-- `booleanValue`: `bool`
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class VariantTypeDef(TypedDict):
+    stringValue: NotRequired[str],
+    integerValue: NotRequired[int],
+    doubleValue: NotRequired[float],
+    booleanValue: NotRequired[bool],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

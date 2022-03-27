@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-cognitoidentity-module"></a>
-
-# Type annotations for boto3 CognitoIdentity module
+#  CognitoIdentity module
 
 > [Index](../README.md) > CognitoIdentity
 
-Auto-generated documentation for
-[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
-type annotations stubs module
-[mypy-boto3-cognito-identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
+!!! note ""
 
-- [Type annotations for boto3 CognitoIdentity module](#type-annotations-for-boto3-cognitoidentity-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CognitoIdentityClient](#cognitoidentityclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
+    type annotations stubs module [mypy-boto3-cognito-identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CognitoIdentity`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cognito-identity]'
 python -m pip install mypy-boto3-cognito-identity
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,101 +42,58 @@ python -m pip install mypy-boto3-cognito-identity
 python -m pip uninstall -y mypy-boto3-cognito-identity
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cognitoidentityclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CognitoIdentityClient
 
-Type annotations for `boto3.client("cognito-identity")` as
-[CognitoIdentityClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cognito-identity")` as [CognitoIdentityClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cognito_identity.client import CognitoIdentityClient
+
+def get_client() -> CognitoIdentityClient:
+    return Session().cleint("cognito-identity")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_identity_pool](./client.md#create_identity_pool)
-- [delete_identities](./client.md#delete_identities)
-- [delete_identity_pool](./client.md#delete_identity_pool)
-- [describe_identity](./client.md#describe_identity)
-- [describe_identity_pool](./client.md#describe_identity_pool)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_credentials_for_identity](./client.md#get_credentials_for_identity)
-- [get_id](./client.md#get_id)
-- [get_identity_pool_roles](./client.md#get_identity_pool_roles)
-- [get_open_id_token](./client.md#get_open_id_token)
-- [get_open_id_token_for_developer_identity](./client.md#get_open_id_token_for_developer_identity)
-- [get_paginator](./client.md#get_paginator)
-- [get_principal_tag_attribute_map](./client.md#get_principal_tag_attribute_map)
-- [list_identities](./client.md#list_identities)
-- [list_identity_pools](./client.md#list_identity_pools)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [lookup_developer_identity](./client.md#lookup_developer_identity)
-- [merge_developer_identities](./client.md#merge_developer_identities)
-- [set_identity_pool_roles](./client.md#set_identity_pool_roles)
-- [set_principal_tag_attribute_map](./client.md#set_principal_tag_attribute_map)
-- [tag_resource](./client.md#tag_resource)
-- [unlink_developer_identity](./client.md#unlink_developer_identity)
-- [unlink_identity](./client.md#unlink_identity)
-- [untag_resource](./client.md#untag_resource)
-- [update_identity_pool](./client.md#update_identity_pool)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CognitoIdentityClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentModificationException
-- DeveloperUserAlreadyRegisteredException
-- ExternalServiceException
-- InternalErrorException
-- InvalidIdentityPoolConfigurationException
-- InvalidParameterException
-- LimitExceededException
-- NotAuthorizedException
-- ResourceConflictException
-- ResourceNotFoundException
-- TooManyRequestsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("cognito-identity").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cognito-identity").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cognito_identity.paginator import ListIdentityPoolsPaginator, ...
+from mypy_boto3_cognito_identity.paginator import ListIdentityPoolsPaginator
+
+def get_list_identity_pools_paginator() -> ListIdentityPoolsPaginator:
+    return Session().client("cognito-identity").get_paginator("list_identity_pools"))
 ```
 
 - [ListIdentityPoolsPaginator](./paginators.md#listidentitypoolspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionTypeType
 
-```python
-from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionTypeType, ...
+def get_value() -> AmbiguousRoleResolutionTypeType:
+    return "AuthenticatedRole"
 ```
 
 - [AmbiguousRoleResolutionTypeType](./literals.md#ambiguousroleresolutiontypetype)
@@ -170,18 +105,22 @@ from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionTypeType
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cognito_identity.type_defs import CognitoIdentityProviderTypeDef
 
-```python
-from mypy_boto3_cognito_identity.type_defs import CognitoIdentityProviderTypeDef, ...
+def get_value() -> CognitoIdentityProviderTypeDef:
+    return {
+        "ProviderName": ...,
+    }
 ```
 
 - [CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)
@@ -211,6 +150,7 @@ from mypy_boto3_cognito_identity.type_defs import CognitoIdentityProviderTypeDef
 - [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef)
 - [ListIdentitiesInputRequestTypeDef](./type_defs.md#listidentitiesinputrequesttypedef)
 - [ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef)
+- [ListIdentityPoolsInputListIdentityPoolsPaginateTypeDef](./type_defs.md#listidentitypoolsinputlistidentitypoolspaginatetypedef)
 - [ListIdentityPoolsInputRequestTypeDef](./type_defs.md#listidentitypoolsinputrequesttypedef)
 - [ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
@@ -232,3 +172,4 @@ from mypy_boto3_cognito_identity.type_defs import CognitoIdentityProviderTypeDef
 - [UnlinkIdentityInputRequestTypeDef](./type_defs.md#unlinkidentityinputrequesttypedef)
 - [UnprocessedIdentityIdTypeDef](./type_defs.md#unprocessedidentityidtypedef)
 - [UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef)
+

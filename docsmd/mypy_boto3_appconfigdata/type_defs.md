@@ -1,94 +1,114 @@
-<a id="typed-dictionaries-for-boto3-appconfigdata-module"></a>
-
-# Typed dictionaries for boto3 AppConfigData module
+# Typed dictionaries
 
 > [Index](../README.md) > [AppConfigData](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[AppConfigData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData)
-type annotations stubs module
-[mypy-boto3-appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
+!!! note ""
 
-- [Typed dictionaries for boto3 AppConfigData module](#typed-dictionaries-for-boto3-appconfigdata-module)
-  - [GetLatestConfigurationRequestRequestTypeDef](#getlatestconfigurationrequestrequesttypedef)
-  - [GetLatestConfigurationResponseTypeDef](#getlatestconfigurationresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartConfigurationSessionRequestRequestTypeDef](#startconfigurationsessionrequestrequesttypedef)
-  - [StartConfigurationSessionResponseTypeDef](#startconfigurationsessionresponsetypedef)
-
-<a id="getlatestconfigurationrequestrequesttypedef"></a>
+    Auto-generated documentation for [AppConfigData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfigdata.html#AppConfigData)
+    type annotations stubs module [mypy-boto3-appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
 
 ## GetLatestConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfigdata.type_defs import GetLatestConfigurationRequestRequestTypeDef
+
+def get_value() -> GetLatestConfigurationRequestRequestTypeDef:
+    return {
+        "ConfigurationToken": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationToken`: `str`
-
-<a id="getlatestconfigurationresponsetypedef"></a>
+```python title="Definition"
+class GetLatestConfigurationRequestRequestTypeDef(TypedDict):
+    ConfigurationToken: str,
+```
 
 ## GetLatestConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfigdata.type_defs import GetLatestConfigurationResponseTypeDef
+
+def get_value() -> GetLatestConfigurationResponseTypeDef:
+    return {
+        "NextPollConfigurationToken": ...,
+        "NextPollIntervalInSeconds": ...,
+        "ContentType": ...,
+        "Configuration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLatestConfigurationResponseTypeDef(TypedDict):
+    NextPollConfigurationToken: str,
+    NextPollIntervalInSeconds: int,
+    ContentType: str,
+    Configuration: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NextPollConfigurationToken`: `str`
-- `NextPollIntervalInSeconds`: `int`
-- `ContentType`: `str`
-- `Configuration`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfigdata.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startconfigurationsessionrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartConfigurationSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfigdata.type_defs import StartConfigurationSessionRequestRequestTypeDef
+
+def get_value() -> StartConfigurationSessionRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+        "ConfigurationProfileIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-- `ConfigurationProfileIdentifier`: `str`
-
-Optional fields:
-
-- `RequiredMinimumPollIntervalInSeconds`: `int`
-
-<a id="startconfigurationsessionresponsetypedef"></a>
+```python title="Definition"
+class StartConfigurationSessionRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    ConfigurationProfileIdentifier: str,
+    RequiredMinimumPollIntervalInSeconds: NotRequired[int],
+```
 
 ## StartConfigurationSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appconfigdata.type_defs import StartConfigurationSessionResponseTypeDef
+
+def get_value() -> StartConfigurationSessionResponseTypeDef:
+    return {
+        "InitialConfigurationToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartConfigurationSessionResponseTypeDef(TypedDict):
+    InitialConfigurationToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `InitialConfigurationToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

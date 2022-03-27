@@ -1,2531 +1,3165 @@
-<a id="typed-dictionaries-for-boto3-eventbridge-module"></a>
-
-# Typed dictionaries for boto3 EventBridge module
+# Typed dictionaries
 
 > [Index](../README.md) > [EventBridge](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
-type annotations stubs module
-[mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
+!!! note ""
 
-- [Typed dictionaries for boto3 EventBridge module](#typed-dictionaries-for-boto3-eventbridge-module)
-  - [ActivateEventSourceRequestRequestTypeDef](#activateeventsourcerequestrequesttypedef)
-  - [ApiDestinationTypeDef](#apidestinationtypedef)
-  - [ArchiveTypeDef](#archivetypedef)
-  - [AwsVpcConfigurationTypeDef](#awsvpcconfigurationtypedef)
-  - [BatchArrayPropertiesTypeDef](#batcharraypropertiestypedef)
-  - [BatchParametersTypeDef](#batchparameterstypedef)
-  - [BatchRetryStrategyTypeDef](#batchretrystrategytypedef)
-  - [CancelReplayRequestRequestTypeDef](#cancelreplayrequestrequesttypedef)
-  - [CancelReplayResponseTypeDef](#cancelreplayresponsetypedef)
-  - [CapacityProviderStrategyItemTypeDef](#capacityproviderstrategyitemtypedef)
-  - [ConditionTypeDef](#conditiontypedef)
-  - [ConnectionApiKeyAuthResponseParametersTypeDef](#connectionapikeyauthresponseparameterstypedef)
-  - [ConnectionAuthResponseParametersTypeDef](#connectionauthresponseparameterstypedef)
-  - [ConnectionBasicAuthResponseParametersTypeDef](#connectionbasicauthresponseparameterstypedef)
-  - [ConnectionBodyParameterTypeDef](#connectionbodyparametertypedef)
-  - [ConnectionHeaderParameterTypeDef](#connectionheaderparametertypedef)
-  - [ConnectionHttpParametersTypeDef](#connectionhttpparameterstypedef)
-  - [ConnectionOAuthClientResponseParametersTypeDef](#connectionoauthclientresponseparameterstypedef)
-  - [ConnectionOAuthResponseParametersTypeDef](#connectionoauthresponseparameterstypedef)
-  - [ConnectionQueryStringParameterTypeDef](#connectionquerystringparametertypedef)
-  - [ConnectionTypeDef](#connectiontypedef)
-  - [CreateApiDestinationRequestRequestTypeDef](#createapidestinationrequestrequesttypedef)
-  - [CreateApiDestinationResponseTypeDef](#createapidestinationresponsetypedef)
-  - [CreateArchiveRequestRequestTypeDef](#createarchiverequestrequesttypedef)
-  - [CreateArchiveResponseTypeDef](#createarchiveresponsetypedef)
-  - [CreateConnectionApiKeyAuthRequestParametersTypeDef](#createconnectionapikeyauthrequestparameterstypedef)
-  - [CreateConnectionAuthRequestParametersTypeDef](#createconnectionauthrequestparameterstypedef)
-  - [CreateConnectionBasicAuthRequestParametersTypeDef](#createconnectionbasicauthrequestparameterstypedef)
-  - [CreateConnectionOAuthClientRequestParametersTypeDef](#createconnectionoauthclientrequestparameterstypedef)
-  - [CreateConnectionOAuthRequestParametersTypeDef](#createconnectionoauthrequestparameterstypedef)
-  - [CreateConnectionRequestRequestTypeDef](#createconnectionrequestrequesttypedef)
-  - [CreateConnectionResponseTypeDef](#createconnectionresponsetypedef)
-  - [CreateEventBusRequestRequestTypeDef](#createeventbusrequestrequesttypedef)
-  - [CreateEventBusResponseTypeDef](#createeventbusresponsetypedef)
-  - [CreatePartnerEventSourceRequestRequestTypeDef](#createpartnereventsourcerequestrequesttypedef)
-  - [CreatePartnerEventSourceResponseTypeDef](#createpartnereventsourceresponsetypedef)
-  - [DeactivateEventSourceRequestRequestTypeDef](#deactivateeventsourcerequestrequesttypedef)
-  - [DeadLetterConfigTypeDef](#deadletterconfigtypedef)
-  - [DeauthorizeConnectionRequestRequestTypeDef](#deauthorizeconnectionrequestrequesttypedef)
-  - [DeauthorizeConnectionResponseTypeDef](#deauthorizeconnectionresponsetypedef)
-  - [DeleteApiDestinationRequestRequestTypeDef](#deleteapidestinationrequestrequesttypedef)
-  - [DeleteArchiveRequestRequestTypeDef](#deletearchiverequestrequesttypedef)
-  - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
-  - [DeleteConnectionResponseTypeDef](#deleteconnectionresponsetypedef)
-  - [DeleteEventBusRequestRequestTypeDef](#deleteeventbusrequestrequesttypedef)
-  - [DeletePartnerEventSourceRequestRequestTypeDef](#deletepartnereventsourcerequestrequesttypedef)
-  - [DeleteRuleRequestRequestTypeDef](#deleterulerequestrequesttypedef)
-  - [DescribeApiDestinationRequestRequestTypeDef](#describeapidestinationrequestrequesttypedef)
-  - [DescribeApiDestinationResponseTypeDef](#describeapidestinationresponsetypedef)
-  - [DescribeArchiveRequestRequestTypeDef](#describearchiverequestrequesttypedef)
-  - [DescribeArchiveResponseTypeDef](#describearchiveresponsetypedef)
-  - [DescribeConnectionRequestRequestTypeDef](#describeconnectionrequestrequesttypedef)
-  - [DescribeConnectionResponseTypeDef](#describeconnectionresponsetypedef)
-  - [DescribeEventBusRequestRequestTypeDef](#describeeventbusrequestrequesttypedef)
-  - [DescribeEventBusResponseTypeDef](#describeeventbusresponsetypedef)
-  - [DescribeEventSourceRequestRequestTypeDef](#describeeventsourcerequestrequesttypedef)
-  - [DescribeEventSourceResponseTypeDef](#describeeventsourceresponsetypedef)
-  - [DescribePartnerEventSourceRequestRequestTypeDef](#describepartnereventsourcerequestrequesttypedef)
-  - [DescribePartnerEventSourceResponseTypeDef](#describepartnereventsourceresponsetypedef)
-  - [DescribeReplayRequestRequestTypeDef](#describereplayrequestrequesttypedef)
-  - [DescribeReplayResponseTypeDef](#describereplayresponsetypedef)
-  - [DescribeRuleRequestRequestTypeDef](#describerulerequestrequesttypedef)
-  - [DescribeRuleResponseTypeDef](#describeruleresponsetypedef)
-  - [DisableRuleRequestRequestTypeDef](#disablerulerequestrequesttypedef)
-  - [EcsParametersTypeDef](#ecsparameterstypedef)
-  - [EnableRuleRequestRequestTypeDef](#enablerulerequestrequesttypedef)
-  - [EventBusTypeDef](#eventbustypedef)
-  - [EventSourceTypeDef](#eventsourcetypedef)
-  - [HttpParametersTypeDef](#httpparameterstypedef)
-  - [InputTransformerTypeDef](#inputtransformertypedef)
-  - [KinesisParametersTypeDef](#kinesisparameterstypedef)
-  - [ListApiDestinationsRequestRequestTypeDef](#listapidestinationsrequestrequesttypedef)
-  - [ListApiDestinationsResponseTypeDef](#listapidestinationsresponsetypedef)
-  - [ListArchivesRequestRequestTypeDef](#listarchivesrequestrequesttypedef)
-  - [ListArchivesResponseTypeDef](#listarchivesresponsetypedef)
-  - [ListConnectionsRequestRequestTypeDef](#listconnectionsrequestrequesttypedef)
-  - [ListConnectionsResponseTypeDef](#listconnectionsresponsetypedef)
-  - [ListEventBusesRequestRequestTypeDef](#listeventbusesrequestrequesttypedef)
-  - [ListEventBusesResponseTypeDef](#listeventbusesresponsetypedef)
-  - [ListEventSourcesRequestRequestTypeDef](#listeventsourcesrequestrequesttypedef)
-  - [ListEventSourcesResponseTypeDef](#listeventsourcesresponsetypedef)
-  - [ListPartnerEventSourceAccountsRequestRequestTypeDef](#listpartnereventsourceaccountsrequestrequesttypedef)
-  - [ListPartnerEventSourceAccountsResponseTypeDef](#listpartnereventsourceaccountsresponsetypedef)
-  - [ListPartnerEventSourcesRequestRequestTypeDef](#listpartnereventsourcesrequestrequesttypedef)
-  - [ListPartnerEventSourcesResponseTypeDef](#listpartnereventsourcesresponsetypedef)
-  - [ListReplaysRequestRequestTypeDef](#listreplaysrequestrequesttypedef)
-  - [ListReplaysResponseTypeDef](#listreplaysresponsetypedef)
-  - [ListRuleNamesByTargetRequestRequestTypeDef](#listrulenamesbytargetrequestrequesttypedef)
-  - [ListRuleNamesByTargetResponseTypeDef](#listrulenamesbytargetresponsetypedef)
-  - [ListRulesRequestRequestTypeDef](#listrulesrequestrequesttypedef)
-  - [ListRulesResponseTypeDef](#listrulesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTargetsByRuleRequestRequestTypeDef](#listtargetsbyrulerequestrequesttypedef)
-  - [ListTargetsByRuleResponseTypeDef](#listtargetsbyruleresponsetypedef)
-  - [NetworkConfigurationTypeDef](#networkconfigurationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PartnerEventSourceAccountTypeDef](#partnereventsourceaccounttypedef)
-  - [PartnerEventSourceTypeDef](#partnereventsourcetypedef)
-  - [PlacementConstraintTypeDef](#placementconstrainttypedef)
-  - [PlacementStrategyTypeDef](#placementstrategytypedef)
-  - [PutEventsRequestEntryTypeDef](#puteventsrequestentrytypedef)
-  - [PutEventsRequestRequestTypeDef](#puteventsrequestrequesttypedef)
-  - [PutEventsResponseTypeDef](#puteventsresponsetypedef)
-  - [PutEventsResultEntryTypeDef](#puteventsresultentrytypedef)
-  - [PutPartnerEventsRequestEntryTypeDef](#putpartnereventsrequestentrytypedef)
-  - [PutPartnerEventsRequestRequestTypeDef](#putpartnereventsrequestrequesttypedef)
-  - [PutPartnerEventsResponseTypeDef](#putpartnereventsresponsetypedef)
-  - [PutPartnerEventsResultEntryTypeDef](#putpartnereventsresultentrytypedef)
-  - [PutPermissionRequestRequestTypeDef](#putpermissionrequestrequesttypedef)
-  - [PutRuleRequestRequestTypeDef](#putrulerequestrequesttypedef)
-  - [PutRuleResponseTypeDef](#putruleresponsetypedef)
-  - [PutTargetsRequestRequestTypeDef](#puttargetsrequestrequesttypedef)
-  - [PutTargetsResponseTypeDef](#puttargetsresponsetypedef)
-  - [PutTargetsResultEntryTypeDef](#puttargetsresultentrytypedef)
-  - [RedshiftDataParametersTypeDef](#redshiftdataparameterstypedef)
-  - [RemovePermissionRequestRequestTypeDef](#removepermissionrequestrequesttypedef)
-  - [RemoveTargetsRequestRequestTypeDef](#removetargetsrequestrequesttypedef)
-  - [RemoveTargetsResponseTypeDef](#removetargetsresponsetypedef)
-  - [RemoveTargetsResultEntryTypeDef](#removetargetsresultentrytypedef)
-  - [ReplayDestinationTypeDef](#replaydestinationtypedef)
-  - [ReplayTypeDef](#replaytypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetryPolicyTypeDef](#retrypolicytypedef)
-  - [RuleTypeDef](#ruletypedef)
-  - [RunCommandParametersTypeDef](#runcommandparameterstypedef)
-  - [RunCommandTargetTypeDef](#runcommandtargettypedef)
-  - [SageMakerPipelineParameterTypeDef](#sagemakerpipelineparametertypedef)
-  - [SageMakerPipelineParametersTypeDef](#sagemakerpipelineparameterstypedef)
-  - [SqsParametersTypeDef](#sqsparameterstypedef)
-  - [StartReplayRequestRequestTypeDef](#startreplayrequestrequesttypedef)
-  - [StartReplayResponseTypeDef](#startreplayresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TargetTypeDef](#targettypedef)
-  - [TestEventPatternRequestRequestTypeDef](#testeventpatternrequestrequesttypedef)
-  - [TestEventPatternResponseTypeDef](#testeventpatternresponsetypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateApiDestinationRequestRequestTypeDef](#updateapidestinationrequestrequesttypedef)
-  - [UpdateApiDestinationResponseTypeDef](#updateapidestinationresponsetypedef)
-  - [UpdateArchiveRequestRequestTypeDef](#updatearchiverequestrequesttypedef)
-  - [UpdateArchiveResponseTypeDef](#updatearchiveresponsetypedef)
-  - [UpdateConnectionApiKeyAuthRequestParametersTypeDef](#updateconnectionapikeyauthrequestparameterstypedef)
-  - [UpdateConnectionAuthRequestParametersTypeDef](#updateconnectionauthrequestparameterstypedef)
-  - [UpdateConnectionBasicAuthRequestParametersTypeDef](#updateconnectionbasicauthrequestparameterstypedef)
-  - [UpdateConnectionOAuthClientRequestParametersTypeDef](#updateconnectionoauthclientrequestparameterstypedef)
-  - [UpdateConnectionOAuthRequestParametersTypeDef](#updateconnectionoauthrequestparameterstypedef)
-  - [UpdateConnectionRequestRequestTypeDef](#updateconnectionrequestrequesttypedef)
-  - [UpdateConnectionResponseTypeDef](#updateconnectionresponsetypedef)
-
-<a id="activateeventsourcerequestrequesttypedef"></a>
+    Auto-generated documentation for [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
+    type annotations stubs module [mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
 
 ## ActivateEventSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ActivateEventSourceRequestRequestTypeDef
+
+def get_value() -> ActivateEventSourceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="apidestinationtypedef"></a>
+```python title="Definition"
+class ActivateEventSourceRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## ApiDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ApiDestinationTypeDef
+
+def get_value() -> ApiDestinationTypeDef:
+    return {
+        "ApiDestinationArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApiDestinationTypeDef(TypedDict):
+    ApiDestinationArn: NotRequired[str],
+    Name: NotRequired[str],
+    ApiDestinationState: NotRequired[ApiDestinationStateType],  # (1)
+    ConnectionArn: NotRequired[str],
+    InvocationEndpoint: NotRequired[str],
+    HttpMethod: NotRequired[ApiDestinationHttpMethodType],  # (2)
+    InvocationRateLimitPerSecond: NotRequired[int],
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+```
 
-- `ApiDestinationArn`: `str`
-- `Name`: `str`
-- `ApiDestinationState`:
-  [ApiDestinationStateType](./literals.md#apidestinationstatetype)
-- `ConnectionArn`: `str`
-- `InvocationEndpoint`: `str`
-- `HttpMethod`:
-  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
-- `InvocationRateLimitPerSecond`: `int`
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-
-<a id="archivetypedef"></a>
-
+1. See [:material-code-brackets: ApiDestinationStateType](./literals.md#apidestinationstatetype) 
+2. See [:material-code-brackets: ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype) 
 ## ArchiveTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ArchiveTypeDef
+
+def get_value() -> ArchiveTypeDef:
+    return {
+        "ArchiveName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ArchiveTypeDef(TypedDict):
+    ArchiveName: NotRequired[str],
+    EventSourceArn: NotRequired[str],
+    State: NotRequired[ArchiveStateType],  # (1)
+    StateReason: NotRequired[str],
+    RetentionDays: NotRequired[int],
+    SizeBytes: NotRequired[int],
+    EventCount: NotRequired[int],
+    CreationTime: NotRequired[datetime],
+```
 
-- `ArchiveName`: `str`
-- `EventSourceArn`: `str`
-- `State`: [ArchiveStateType](./literals.md#archivestatetype)
-- `StateReason`: `str`
-- `RetentionDays`: `int`
-- `SizeBytes`: `int`
-- `EventCount`: `int`
-- `CreationTime`: `datetime`
-
-<a id="awsvpcconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ArchiveStateType](./literals.md#archivestatetype) 
 ## AwsVpcConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import AwsVpcConfigurationTypeDef
+
+def get_value() -> AwsVpcConfigurationTypeDef:
+    return {
+        "Subnets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AwsVpcConfigurationTypeDef(TypedDict):
+    Subnets: List[str],
+    SecurityGroups: NotRequired[List[str]],
+    AssignPublicIp: NotRequired[AssignPublicIpType],  # (1)
+```
 
-- `Subnets`: `List`\[`str`\]
-
-Optional fields:
-
-- `SecurityGroups`: `List`\[`str`\]
-- `AssignPublicIp`: [AssignPublicIpType](./literals.md#assignpubliciptype)
-
-<a id="batcharraypropertiestypedef"></a>
-
+1. See [:material-code-brackets: AssignPublicIpType](./literals.md#assignpubliciptype) 
 ## BatchArrayPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import BatchArrayPropertiesTypeDef
+
+def get_value() -> BatchArrayPropertiesTypeDef:
+    return {
+        "Size": ...,
+    }
 ```
 
-Optional fields:
-
-- `Size`: `int`
-
-<a id="batchparameterstypedef"></a>
+```python title="Definition"
+class BatchArrayPropertiesTypeDef(TypedDict):
+    Size: NotRequired[int],
+```
 
 ## BatchParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import BatchParametersTypeDef
+
+def get_value() -> BatchParametersTypeDef:
+    return {
+        "JobDefinition": ...,
+        "JobName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchParametersTypeDef(TypedDict):
+    JobDefinition: str,
+    JobName: str,
+    ArrayProperties: NotRequired[BatchArrayPropertiesTypeDef],  # (1)
+    RetryStrategy: NotRequired[BatchRetryStrategyTypeDef],  # (2)
+```
 
-- `JobDefinition`: `str`
-- `JobName`: `str`
-
-Optional fields:
-
-- `ArrayProperties`:
-  [BatchArrayPropertiesTypeDef](./type_defs.md#batcharraypropertiestypedef)
-- `RetryStrategy`:
-  [BatchRetryStrategyTypeDef](./type_defs.md#batchretrystrategytypedef)
-
-<a id="batchretrystrategytypedef"></a>
-
+1. See [:material-code-braces: BatchArrayPropertiesTypeDef](./type_defs.md#batcharraypropertiestypedef) 
+2. See [:material-code-braces: BatchRetryStrategyTypeDef](./type_defs.md#batchretrystrategytypedef) 
 ## BatchRetryStrategyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import BatchRetryStrategyTypeDef
+
+def get_value() -> BatchRetryStrategyTypeDef:
+    return {
+        "Attempts": ...,
+    }
 ```
 
-Optional fields:
-
-- `Attempts`: `int`
-
-<a id="cancelreplayrequestrequesttypedef"></a>
+```python title="Definition"
+class BatchRetryStrategyTypeDef(TypedDict):
+    Attempts: NotRequired[int],
+```
 
 ## CancelReplayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CancelReplayRequestRequestTypeDef
+
+def get_value() -> CancelReplayRequestRequestTypeDef:
+    return {
+        "ReplayName": ...,
+    }
 ```
 
-Required fields:
-
-- `ReplayName`: `str`
-
-<a id="cancelreplayresponsetypedef"></a>
+```python title="Definition"
+class CancelReplayRequestRequestTypeDef(TypedDict):
+    ReplayName: str,
+```
 
 ## CancelReplayResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CancelReplayResponseTypeDef
+
+def get_value() -> CancelReplayResponseTypeDef:
+    return {
+        "ReplayArn": ...,
+        "State": ...,
+        "StateReason": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelReplayResponseTypeDef(TypedDict):
+    ReplayArn: str,
+    State: ReplayStateType,  # (1)
+    StateReason: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReplayArn`: `str`
-- `State`: [ReplayStateType](./literals.md#replaystatetype)
-- `StateReason`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="capacityproviderstrategyitemtypedef"></a>
-
+1. See [:material-code-brackets: ReplayStateType](./literals.md#replaystatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CapacityProviderStrategyItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CapacityProviderStrategyItemTypeDef
+
+def get_value() -> CapacityProviderStrategyItemTypeDef:
+    return {
+        "capacityProvider": ...,
+    }
 ```
 
-Required fields:
-
-- `capacityProvider`: `str`
-
-Optional fields:
-
-- `weight`: `int`
-- `base`: `int`
-
-<a id="conditiontypedef"></a>
+```python title="Definition"
+class CapacityProviderStrategyItemTypeDef(TypedDict):
+    capacityProvider: str,
+    weight: NotRequired[int],
+    base: NotRequired[int],
+```
 
 ## ConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConditionTypeDef
+
+def get_value() -> ConditionTypeDef:
+    return {
+        "Type": ...,
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Type`: `str`
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="connectionapikeyauthresponseparameterstypedef"></a>
+```python title="Definition"
+class ConditionTypeDef(TypedDict):
+    Type: str,
+    Key: str,
+    Value: str,
+```
 
 ## ConnectionApiKeyAuthResponseParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionApiKeyAuthResponseParametersTypeDef
+
+def get_value() -> ConnectionApiKeyAuthResponseParametersTypeDef:
+    return {
+        "ApiKeyName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApiKeyName`: `str`
-
-<a id="connectionauthresponseparameterstypedef"></a>
+```python title="Definition"
+class ConnectionApiKeyAuthResponseParametersTypeDef(TypedDict):
+    ApiKeyName: NotRequired[str],
+```
 
 ## ConnectionAuthResponseParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionAuthResponseParametersTypeDef
+
+def get_value() -> ConnectionAuthResponseParametersTypeDef:
+    return {
+        "BasicAuthParameters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionAuthResponseParametersTypeDef(TypedDict):
+    BasicAuthParameters: NotRequired[ConnectionBasicAuthResponseParametersTypeDef],  # (1)
+    OAuthParameters: NotRequired[ConnectionOAuthResponseParametersTypeDef],  # (2)
+    ApiKeyAuthParameters: NotRequired[ConnectionApiKeyAuthResponseParametersTypeDef],  # (3)
+    InvocationHttpParameters: NotRequired[ConnectionHttpParametersTypeDef],  # (4)
+```
 
-- `BasicAuthParameters`:
-  [ConnectionBasicAuthResponseParametersTypeDef](./type_defs.md#connectionbasicauthresponseparameterstypedef)
-- `OAuthParameters`:
-  [ConnectionOAuthResponseParametersTypeDef](./type_defs.md#connectionoauthresponseparameterstypedef)
-- `ApiKeyAuthParameters`:
-  [ConnectionApiKeyAuthResponseParametersTypeDef](./type_defs.md#connectionapikeyauthresponseparameterstypedef)
-- `InvocationHttpParameters`:
-  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
-
-<a id="connectionbasicauthresponseparameterstypedef"></a>
-
+1. See [:material-code-braces: ConnectionBasicAuthResponseParametersTypeDef](./type_defs.md#connectionbasicauthresponseparameterstypedef) 
+2. See [:material-code-braces: ConnectionOAuthResponseParametersTypeDef](./type_defs.md#connectionoauthresponseparameterstypedef) 
+3. See [:material-code-braces: ConnectionApiKeyAuthResponseParametersTypeDef](./type_defs.md#connectionapikeyauthresponseparameterstypedef) 
+4. See [:material-code-braces: ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef) 
 ## ConnectionBasicAuthResponseParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionBasicAuthResponseParametersTypeDef
+
+def get_value() -> ConnectionBasicAuthResponseParametersTypeDef:
+    return {
+        "Username": ...,
+    }
 ```
 
-Optional fields:
-
-- `Username`: `str`
-
-<a id="connectionbodyparametertypedef"></a>
+```python title="Definition"
+class ConnectionBasicAuthResponseParametersTypeDef(TypedDict):
+    Username: NotRequired[str],
+```
 
 ## ConnectionBodyParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionBodyParameterTypeDef
+
+def get_value() -> ConnectionBodyParameterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-- `IsValueSecret`: `bool`
-
-<a id="connectionheaderparametertypedef"></a>
+```python title="Definition"
+class ConnectionBodyParameterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    IsValueSecret: NotRequired[bool],
+```
 
 ## ConnectionHeaderParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionHeaderParameterTypeDef
+
+def get_value() -> ConnectionHeaderParameterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-- `IsValueSecret`: `bool`
-
-<a id="connectionhttpparameterstypedef"></a>
+```python title="Definition"
+class ConnectionHeaderParameterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    IsValueSecret: NotRequired[bool],
+```
 
 ## ConnectionHttpParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionHttpParametersTypeDef
+
+def get_value() -> ConnectionHttpParametersTypeDef:
+    return {
+        "HeaderParameters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionHttpParametersTypeDef(TypedDict):
+    HeaderParameters: NotRequired[Sequence[ConnectionHeaderParameterTypeDef]],  # (1)
+    QueryStringParameters: NotRequired[Sequence[ConnectionQueryStringParameterTypeDef]],  # (2)
+    BodyParameters: NotRequired[Sequence[ConnectionBodyParameterTypeDef]],  # (3)
+```
 
-- `HeaderParameters`:
-  `Sequence`\[[ConnectionHeaderParameterTypeDef](./type_defs.md#connectionheaderparametertypedef)\]
-- `QueryStringParameters`:
-  `Sequence`\[[ConnectionQueryStringParameterTypeDef](./type_defs.md#connectionquerystringparametertypedef)\]
-- `BodyParameters`:
-  `Sequence`\[[ConnectionBodyParameterTypeDef](./type_defs.md#connectionbodyparametertypedef)\]
-
-<a id="connectionoauthclientresponseparameterstypedef"></a>
-
+1. See [:material-code-braces: ConnectionHeaderParameterTypeDef](./type_defs.md#connectionheaderparametertypedef) 
+2. See [:material-code-braces: ConnectionQueryStringParameterTypeDef](./type_defs.md#connectionquerystringparametertypedef) 
+3. See [:material-code-braces: ConnectionBodyParameterTypeDef](./type_defs.md#connectionbodyparametertypedef) 
 ## ConnectionOAuthClientResponseParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionOAuthClientResponseParametersTypeDef
+
+def get_value() -> ConnectionOAuthClientResponseParametersTypeDef:
+    return {
+        "ClientID": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClientID`: `str`
-
-<a id="connectionoauthresponseparameterstypedef"></a>
+```python title="Definition"
+class ConnectionOAuthClientResponseParametersTypeDef(TypedDict):
+    ClientID: NotRequired[str],
+```
 
 ## ConnectionOAuthResponseParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionOAuthResponseParametersTypeDef
+
+def get_value() -> ConnectionOAuthResponseParametersTypeDef:
+    return {
+        "ClientParameters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionOAuthResponseParametersTypeDef(TypedDict):
+    ClientParameters: NotRequired[ConnectionOAuthClientResponseParametersTypeDef],  # (1)
+    AuthorizationEndpoint: NotRequired[str],
+    HttpMethod: NotRequired[ConnectionOAuthHttpMethodType],  # (2)
+    OAuthHttpParameters: NotRequired[ConnectionHttpParametersTypeDef],  # (3)
+```
 
-- `ClientParameters`:
-  [ConnectionOAuthClientResponseParametersTypeDef](./type_defs.md#connectionoauthclientresponseparameterstypedef)
-- `AuthorizationEndpoint`: `str`
-- `HttpMethod`:
-  [ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype)
-- `OAuthHttpParameters`:
-  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
-
-<a id="connectionquerystringparametertypedef"></a>
-
+1. See [:material-code-braces: ConnectionOAuthClientResponseParametersTypeDef](./type_defs.md#connectionoauthclientresponseparameterstypedef) 
+2. See [:material-code-brackets: ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype) 
+3. See [:material-code-braces: ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef) 
 ## ConnectionQueryStringParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionQueryStringParameterTypeDef
+
+def get_value() -> ConnectionQueryStringParameterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-- `IsValueSecret`: `bool`
-
-<a id="connectiontypedef"></a>
+```python title="Definition"
+class ConnectionQueryStringParameterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    IsValueSecret: NotRequired[bool],
+```
 
 ## ConnectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ConnectionTypeDef
+
+def get_value() -> ConnectionTypeDef:
+    return {
+        "ConnectionArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionTypeDef(TypedDict):
+    ConnectionArn: NotRequired[str],
+    Name: NotRequired[str],
+    ConnectionState: NotRequired[ConnectionStateType],  # (1)
+    StateReason: NotRequired[str],
+    AuthorizationType: NotRequired[ConnectionAuthorizationTypeType],  # (2)
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    LastAuthorizedTime: NotRequired[datetime],
+```
 
-- `ConnectionArn`: `str`
-- `Name`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `StateReason`: `str`
-- `AuthorizationType`:
-  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `LastAuthorizedTime`: `datetime`
-
-<a id="createapidestinationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-brackets: ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype) 
 ## CreateApiDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateApiDestinationRequestRequestTypeDef
+
+def get_value() -> CreateApiDestinationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ConnectionArn": ...,
+        "InvocationEndpoint": ...,
+        "HttpMethod": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApiDestinationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ConnectionArn: str,
+    InvocationEndpoint: str,
+    HttpMethod: ApiDestinationHttpMethodType,  # (1)
+    Description: NotRequired[str],
+    InvocationRateLimitPerSecond: NotRequired[int],
+```
 
-- `Name`: `str`
-- `ConnectionArn`: `str`
-- `InvocationEndpoint`: `str`
-- `HttpMethod`:
-  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
-
-Optional fields:
-
-- `Description`: `str`
-- `InvocationRateLimitPerSecond`: `int`
-
-<a id="createapidestinationresponsetypedef"></a>
-
+1. See [:material-code-brackets: ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype) 
 ## CreateApiDestinationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateApiDestinationResponseTypeDef
+
+def get_value() -> CreateApiDestinationResponseTypeDef:
+    return {
+        "ApiDestinationArn": ...,
+        "ApiDestinationState": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApiDestinationResponseTypeDef(TypedDict):
+    ApiDestinationArn: str,
+    ApiDestinationState: ApiDestinationStateType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApiDestinationArn`: `str`
-- `ApiDestinationState`:
-  [ApiDestinationStateType](./literals.md#apidestinationstatetype)
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createarchiverequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApiDestinationStateType](./literals.md#apidestinationstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateArchiveRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateArchiveRequestRequestTypeDef
+
+def get_value() -> CreateArchiveRequestRequestTypeDef:
+    return {
+        "ArchiveName": ...,
+        "EventSourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ArchiveName`: `str`
-- `EventSourceArn`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `EventPattern`: `str`
-- `RetentionDays`: `int`
-
-<a id="createarchiveresponsetypedef"></a>
+```python title="Definition"
+class CreateArchiveRequestRequestTypeDef(TypedDict):
+    ArchiveName: str,
+    EventSourceArn: str,
+    Description: NotRequired[str],
+    EventPattern: NotRequired[str],
+    RetentionDays: NotRequired[int],
+```
 
 ## CreateArchiveResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateArchiveResponseTypeDef
+
+def get_value() -> CreateArchiveResponseTypeDef:
+    return {
+        "ArchiveArn": ...,
+        "State": ...,
+        "StateReason": ...,
+        "CreationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateArchiveResponseTypeDef(TypedDict):
+    ArchiveArn: str,
+    State: ArchiveStateType,  # (1)
+    StateReason: str,
+    CreationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ArchiveArn`: `str`
-- `State`: [ArchiveStateType](./literals.md#archivestatetype)
-- `StateReason`: `str`
-- `CreationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createconnectionapikeyauthrequestparameterstypedef"></a>
-
+1. See [:material-code-brackets: ArchiveStateType](./literals.md#archivestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateConnectionApiKeyAuthRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateConnectionApiKeyAuthRequestParametersTypeDef
+
+def get_value() -> CreateConnectionApiKeyAuthRequestParametersTypeDef:
+    return {
+        "ApiKeyName": ...,
+        "ApiKeyValue": ...,
+    }
 ```
 
-Required fields:
-
-- `ApiKeyName`: `str`
-- `ApiKeyValue`: `str`
-
-<a id="createconnectionauthrequestparameterstypedef"></a>
+```python title="Definition"
+class CreateConnectionApiKeyAuthRequestParametersTypeDef(TypedDict):
+    ApiKeyName: str,
+    ApiKeyValue: str,
+```
 
 ## CreateConnectionAuthRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateConnectionAuthRequestParametersTypeDef
+
+def get_value() -> CreateConnectionAuthRequestParametersTypeDef:
+    return {
+        "BasicAuthParameters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateConnectionAuthRequestParametersTypeDef(TypedDict):
+    BasicAuthParameters: NotRequired[CreateConnectionBasicAuthRequestParametersTypeDef],  # (1)
+    OAuthParameters: NotRequired[CreateConnectionOAuthRequestParametersTypeDef],  # (2)
+    ApiKeyAuthParameters: NotRequired[CreateConnectionApiKeyAuthRequestParametersTypeDef],  # (3)
+    InvocationHttpParameters: NotRequired[ConnectionHttpParametersTypeDef],  # (4)
+```
 
-- `BasicAuthParameters`:
-  [CreateConnectionBasicAuthRequestParametersTypeDef](./type_defs.md#createconnectionbasicauthrequestparameterstypedef)
-- `OAuthParameters`:
-  [CreateConnectionOAuthRequestParametersTypeDef](./type_defs.md#createconnectionoauthrequestparameterstypedef)
-- `ApiKeyAuthParameters`:
-  [CreateConnectionApiKeyAuthRequestParametersTypeDef](./type_defs.md#createconnectionapikeyauthrequestparameterstypedef)
-- `InvocationHttpParameters`:
-  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
-
-<a id="createconnectionbasicauthrequestparameterstypedef"></a>
-
+1. See [:material-code-braces: CreateConnectionBasicAuthRequestParametersTypeDef](./type_defs.md#createconnectionbasicauthrequestparameterstypedef) 
+2. See [:material-code-braces: CreateConnectionOAuthRequestParametersTypeDef](./type_defs.md#createconnectionoauthrequestparameterstypedef) 
+3. See [:material-code-braces: CreateConnectionApiKeyAuthRequestParametersTypeDef](./type_defs.md#createconnectionapikeyauthrequestparameterstypedef) 
+4. See [:material-code-braces: ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef) 
 ## CreateConnectionBasicAuthRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateConnectionBasicAuthRequestParametersTypeDef
+
+def get_value() -> CreateConnectionBasicAuthRequestParametersTypeDef:
+    return {
+        "Username": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `Username`: `str`
-- `Password`: `str`
-
-<a id="createconnectionoauthclientrequestparameterstypedef"></a>
+```python title="Definition"
+class CreateConnectionBasicAuthRequestParametersTypeDef(TypedDict):
+    Username: str,
+    Password: str,
+```
 
 ## CreateConnectionOAuthClientRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateConnectionOAuthClientRequestParametersTypeDef
+
+def get_value() -> CreateConnectionOAuthClientRequestParametersTypeDef:
+    return {
+        "ClientID": ...,
+        "ClientSecret": ...,
+    }
 ```
 
-Required fields:
-
-- `ClientID`: `str`
-- `ClientSecret`: `str`
-
-<a id="createconnectionoauthrequestparameterstypedef"></a>
+```python title="Definition"
+class CreateConnectionOAuthClientRequestParametersTypeDef(TypedDict):
+    ClientID: str,
+    ClientSecret: str,
+```
 
 ## CreateConnectionOAuthRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateConnectionOAuthRequestParametersTypeDef
+
+def get_value() -> CreateConnectionOAuthRequestParametersTypeDef:
+    return {
+        "ClientParameters": ...,
+        "AuthorizationEndpoint": ...,
+        "HttpMethod": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionOAuthRequestParametersTypeDef(TypedDict):
+    ClientParameters: CreateConnectionOAuthClientRequestParametersTypeDef,  # (1)
+    AuthorizationEndpoint: str,
+    HttpMethod: ConnectionOAuthHttpMethodType,  # (2)
+    OAuthHttpParameters: NotRequired[ConnectionHttpParametersTypeDef],  # (3)
+```
 
-- `ClientParameters`:
-  [CreateConnectionOAuthClientRequestParametersTypeDef](./type_defs.md#createconnectionoauthclientrequestparameterstypedef)
-- `AuthorizationEndpoint`: `str`
-- `HttpMethod`:
-  [ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype)
-
-Optional fields:
-
-- `OAuthHttpParameters`:
-  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
-
-<a id="createconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CreateConnectionOAuthClientRequestParametersTypeDef](./type_defs.md#createconnectionoauthclientrequestparameterstypedef) 
+2. See [:material-code-brackets: ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype) 
+3. See [:material-code-braces: ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef) 
 ## CreateConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateConnectionRequestRequestTypeDef
+
+def get_value() -> CreateConnectionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "AuthorizationType": ...,
+        "AuthParameters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    AuthorizationType: ConnectionAuthorizationTypeType,  # (1)
+    AuthParameters: CreateConnectionAuthRequestParametersTypeDef,  # (2)
+    Description: NotRequired[str],
+```
 
-- `Name`: `str`
-- `AuthorizationType`:
-  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
-- `AuthParameters`:
-  [CreateConnectionAuthRequestParametersTypeDef](./type_defs.md#createconnectionauthrequestparameterstypedef)
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="createconnectionresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype) 
+2. See [:material-code-braces: CreateConnectionAuthRequestParametersTypeDef](./type_defs.md#createconnectionauthrequestparameterstypedef) 
 ## CreateConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateConnectionResponseTypeDef
+
+def get_value() -> CreateConnectionResponseTypeDef:
+    return {
+        "ConnectionArn": ...,
+        "ConnectionState": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionResponseTypeDef(TypedDict):
+    ConnectionArn: str,
+    ConnectionState: ConnectionStateType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConnectionArn`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createeventbusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEventBusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateEventBusRequestRequestTypeDef
+
+def get_value() -> CreateEventBusRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventBusRequestRequestTypeDef(TypedDict):
+    Name: str,
+    EventSourceName: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `EventSourceName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createeventbusresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEventBusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreateEventBusResponseTypeDef
+
+def get_value() -> CreateEventBusResponseTypeDef:
+    return {
+        "EventBusArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventBusResponseTypeDef(TypedDict):
+    EventBusArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EventBusArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpartnereventsourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePartnerEventSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreatePartnerEventSourceRequestRequestTypeDef
+
+def get_value() -> CreatePartnerEventSourceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Account": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Account`: `str`
-
-<a id="createpartnereventsourceresponsetypedef"></a>
+```python title="Definition"
+class CreatePartnerEventSourceRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Account: str,
+```
 
 ## CreatePartnerEventSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import CreatePartnerEventSourceResponseTypeDef
+
+def get_value() -> CreatePartnerEventSourceResponseTypeDef:
+    return {
+        "EventSourceArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePartnerEventSourceResponseTypeDef(TypedDict):
+    EventSourceArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EventSourceArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deactivateeventsourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeactivateEventSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeactivateEventSourceRequestRequestTypeDef
+
+def get_value() -> DeactivateEventSourceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deadletterconfigtypedef"></a>
+```python title="Definition"
+class DeactivateEventSourceRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeadLetterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeadLetterConfigTypeDef
+
+def get_value() -> DeadLetterConfigTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-
-<a id="deauthorizeconnectionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeadLetterConfigTypeDef(TypedDict):
+    Arn: NotRequired[str],
+```
 
 ## DeauthorizeConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeauthorizeConnectionRequestRequestTypeDef
+
+def get_value() -> DeauthorizeConnectionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deauthorizeconnectionresponsetypedef"></a>
+```python title="Definition"
+class DeauthorizeConnectionRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeauthorizeConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeauthorizeConnectionResponseTypeDef
+
+def get_value() -> DeauthorizeConnectionResponseTypeDef:
+    return {
+        "ConnectionArn": ...,
+        "ConnectionState": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "LastAuthorizedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeauthorizeConnectionResponseTypeDef(TypedDict):
+    ConnectionArn: str,
+    ConnectionState: ConnectionStateType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    LastAuthorizedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConnectionArn`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `LastAuthorizedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapidestinationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApiDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeleteApiDestinationRequestRequestTypeDef
+
+def get_value() -> DeleteApiDestinationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletearchiverequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteApiDestinationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteArchiveRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeleteArchiveRequestRequestTypeDef
+
+def get_value() -> DeleteArchiveRequestRequestTypeDef:
+    return {
+        "ArchiveName": ...,
+    }
 ```
 
-Required fields:
-
-- `ArchiveName`: `str`
-
-<a id="deleteconnectionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteArchiveRequestRequestTypeDef(TypedDict):
+    ArchiveName: str,
+```
 
 ## DeleteConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeleteConnectionRequestRequestTypeDef
+
+def get_value() -> DeleteConnectionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deleteconnectionresponsetypedef"></a>
+```python title="Definition"
+class DeleteConnectionRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeleteConnectionResponseTypeDef
+
+def get_value() -> DeleteConnectionResponseTypeDef:
+    return {
+        "ConnectionArn": ...,
+        "ConnectionState": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "LastAuthorizedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteConnectionResponseTypeDef(TypedDict):
+    ConnectionArn: str,
+    ConnectionState: ConnectionStateType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    LastAuthorizedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConnectionArn`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `LastAuthorizedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteeventbusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEventBusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeleteEventBusRequestRequestTypeDef
+
+def get_value() -> DeleteEventBusRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletepartnereventsourcerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteEventBusRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeletePartnerEventSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeletePartnerEventSourceRequestRequestTypeDef
+
+def get_value() -> DeletePartnerEventSourceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Account": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Account`: `str`
-
-<a id="deleterulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePartnerEventSourceRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Account: str,
+```
 
 ## DeleteRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DeleteRuleRequestRequestTypeDef
+
+def get_value() -> DeleteRuleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `EventBusName`: `str`
-- `Force`: `bool`
-
-<a id="describeapidestinationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRuleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    EventBusName: NotRequired[str],
+    Force: NotRequired[bool],
+```
 
 ## DescribeApiDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeApiDestinationRequestRequestTypeDef
+
+def get_value() -> DescribeApiDestinationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describeapidestinationresponsetypedef"></a>
+```python title="Definition"
+class DescribeApiDestinationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribeApiDestinationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeApiDestinationResponseTypeDef
+
+def get_value() -> DescribeApiDestinationResponseTypeDef:
+    return {
+        "ApiDestinationArn": ...,
+        "Name": ...,
+        "Description": ...,
+        "ApiDestinationState": ...,
+        "ConnectionArn": ...,
+        "InvocationEndpoint": ...,
+        "HttpMethod": ...,
+        "InvocationRateLimitPerSecond": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeApiDestinationResponseTypeDef(TypedDict):
+    ApiDestinationArn: str,
+    Name: str,
+    Description: str,
+    ApiDestinationState: ApiDestinationStateType,  # (1)
+    ConnectionArn: str,
+    InvocationEndpoint: str,
+    HttpMethod: ApiDestinationHttpMethodType,  # (2)
+    InvocationRateLimitPerSecond: int,
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ApiDestinationArn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `ApiDestinationState`:
-  [ApiDestinationStateType](./literals.md#apidestinationstatetype)
-- `ConnectionArn`: `str`
-- `InvocationEndpoint`: `str`
-- `HttpMethod`:
-  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
-- `InvocationRateLimitPerSecond`: `int`
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describearchiverequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApiDestinationStateType](./literals.md#apidestinationstatetype) 
+2. See [:material-code-brackets: ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeArchiveRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeArchiveRequestRequestTypeDef
+
+def get_value() -> DescribeArchiveRequestRequestTypeDef:
+    return {
+        "ArchiveName": ...,
+    }
 ```
 
-Required fields:
-
-- `ArchiveName`: `str`
-
-<a id="describearchiveresponsetypedef"></a>
+```python title="Definition"
+class DescribeArchiveRequestRequestTypeDef(TypedDict):
+    ArchiveName: str,
+```
 
 ## DescribeArchiveResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeArchiveResponseTypeDef
+
+def get_value() -> DescribeArchiveResponseTypeDef:
+    return {
+        "ArchiveArn": ...,
+        "ArchiveName": ...,
+        "EventSourceArn": ...,
+        "Description": ...,
+        "EventPattern": ...,
+        "State": ...,
+        "StateReason": ...,
+        "RetentionDays": ...,
+        "SizeBytes": ...,
+        "EventCount": ...,
+        "CreationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeArchiveResponseTypeDef(TypedDict):
+    ArchiveArn: str,
+    ArchiveName: str,
+    EventSourceArn: str,
+    Description: str,
+    EventPattern: str,
+    State: ArchiveStateType,  # (1)
+    StateReason: str,
+    RetentionDays: int,
+    SizeBytes: int,
+    EventCount: int,
+    CreationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ArchiveArn`: `str`
-- `ArchiveName`: `str`
-- `EventSourceArn`: `str`
-- `Description`: `str`
-- `EventPattern`: `str`
-- `State`: [ArchiveStateType](./literals.md#archivestatetype)
-- `StateReason`: `str`
-- `RetentionDays`: `int`
-- `SizeBytes`: `int`
-- `EventCount`: `int`
-- `CreationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ArchiveStateType](./literals.md#archivestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeConnectionRequestRequestTypeDef
+
+def get_value() -> DescribeConnectionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describeconnectionresponsetypedef"></a>
+```python title="Definition"
+class DescribeConnectionRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribeConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeConnectionResponseTypeDef
+
+def get_value() -> DescribeConnectionResponseTypeDef:
+    return {
+        "ConnectionArn": ...,
+        "Name": ...,
+        "Description": ...,
+        "ConnectionState": ...,
+        "StateReason": ...,
+        "AuthorizationType": ...,
+        "SecretArn": ...,
+        "AuthParameters": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "LastAuthorizedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectionResponseTypeDef(TypedDict):
+    ConnectionArn: str,
+    Name: str,
+    Description: str,
+    ConnectionState: ConnectionStateType,  # (1)
+    StateReason: str,
+    AuthorizationType: ConnectionAuthorizationTypeType,  # (2)
+    SecretArn: str,
+    AuthParameters: ConnectionAuthResponseParametersTypeDef,  # (3)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    LastAuthorizedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `ConnectionArn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `StateReason`: `str`
-- `AuthorizationType`:
-  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
-- `SecretArn`: `str`
-- `AuthParameters`:
-  [ConnectionAuthResponseParametersTypeDef](./type_defs.md#connectionauthresponseparameterstypedef)
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `LastAuthorizedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeeventbusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-brackets: ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype) 
+3. See [:material-code-braces: ConnectionAuthResponseParametersTypeDef](./type_defs.md#connectionauthresponseparameterstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEventBusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeEventBusRequestRequestTypeDef
+
+def get_value() -> DescribeEventBusRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="describeeventbusresponsetypedef"></a>
+```python title="Definition"
+class DescribeEventBusRequestRequestTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## DescribeEventBusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeEventBusResponseTypeDef
+
+def get_value() -> DescribeEventBusResponseTypeDef:
+    return {
+        "Name": ...,
+        "Arn": ...,
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventBusResponseTypeDef(TypedDict):
+    Name: str,
+    Arn: str,
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `Arn`: `str`
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeeventsourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEventSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeEventSourceRequestRequestTypeDef
+
+def get_value() -> DescribeEventSourceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describeeventsourceresponsetypedef"></a>
+```python title="Definition"
+class DescribeEventSourceRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribeEventSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeEventSourceResponseTypeDef
+
+def get_value() -> DescribeEventSourceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "CreatedBy": ...,
+        "CreationTime": ...,
+        "ExpirationTime": ...,
+        "Name": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventSourceResponseTypeDef(TypedDict):
+    Arn: str,
+    CreatedBy: str,
+    CreationTime: datetime,
+    ExpirationTime: datetime,
+    Name: str,
+    State: EventSourceStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `CreatedBy`: `str`
-- `CreationTime`: `datetime`
-- `ExpirationTime`: `datetime`
-- `Name`: `str`
-- `State`: [EventSourceStateType](./literals.md#eventsourcestatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepartnereventsourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EventSourceStateType](./literals.md#eventsourcestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePartnerEventSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribePartnerEventSourceRequestRequestTypeDef
+
+def get_value() -> DescribePartnerEventSourceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describepartnereventsourceresponsetypedef"></a>
+```python title="Definition"
+class DescribePartnerEventSourceRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribePartnerEventSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribePartnerEventSourceResponseTypeDef
+
+def get_value() -> DescribePartnerEventSourceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePartnerEventSourceResponseTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describereplayrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeReplayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeReplayRequestRequestTypeDef
+
+def get_value() -> DescribeReplayRequestRequestTypeDef:
+    return {
+        "ReplayName": ...,
+    }
 ```
 
-Required fields:
-
-- `ReplayName`: `str`
-
-<a id="describereplayresponsetypedef"></a>
+```python title="Definition"
+class DescribeReplayRequestRequestTypeDef(TypedDict):
+    ReplayName: str,
+```
 
 ## DescribeReplayResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeReplayResponseTypeDef
+
+def get_value() -> DescribeReplayResponseTypeDef:
+    return {
+        "ReplayName": ...,
+        "ReplayArn": ...,
+        "Description": ...,
+        "State": ...,
+        "StateReason": ...,
+        "EventSourceArn": ...,
+        "Destination": ...,
+        "EventStartTime": ...,
+        "EventEndTime": ...,
+        "EventLastReplayedTime": ...,
+        "ReplayStartTime": ...,
+        "ReplayEndTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeReplayResponseTypeDef(TypedDict):
+    ReplayName: str,
+    ReplayArn: str,
+    Description: str,
+    State: ReplayStateType,  # (1)
+    StateReason: str,
+    EventSourceArn: str,
+    Destination: ReplayDestinationTypeDef,  # (2)
+    EventStartTime: datetime,
+    EventEndTime: datetime,
+    EventLastReplayedTime: datetime,
+    ReplayStartTime: datetime,
+    ReplayEndTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ReplayName`: `str`
-- `ReplayArn`: `str`
-- `Description`: `str`
-- `State`: [ReplayStateType](./literals.md#replaystatetype)
-- `StateReason`: `str`
-- `EventSourceArn`: `str`
-- `Destination`:
-  [ReplayDestinationTypeDef](./type_defs.md#replaydestinationtypedef)
-- `EventStartTime`: `datetime`
-- `EventEndTime`: `datetime`
-- `EventLastReplayedTime`: `datetime`
-- `ReplayStartTime`: `datetime`
-- `ReplayEndTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerulerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ReplayStateType](./literals.md#replaystatetype) 
+2. See [:material-code-braces: ReplayDestinationTypeDef](./type_defs.md#replaydestinationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeRuleRequestRequestTypeDef
+
+def get_value() -> DescribeRuleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `EventBusName`: `str`
-
-<a id="describeruleresponsetypedef"></a>
+```python title="Definition"
+class DescribeRuleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    EventBusName: NotRequired[str],
+```
 
 ## DescribeRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DescribeRuleResponseTypeDef
+
+def get_value() -> DescribeRuleResponseTypeDef:
+    return {
+        "Name": ...,
+        "Arn": ...,
+        "EventPattern": ...,
+        "ScheduleExpression": ...,
+        "State": ...,
+        "Description": ...,
+        "RoleArn": ...,
+        "ManagedBy": ...,
+        "EventBusName": ...,
+        "CreatedBy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRuleResponseTypeDef(TypedDict):
+    Name: str,
+    Arn: str,
+    EventPattern: str,
+    ScheduleExpression: str,
+    State: RuleStateType,  # (1)
+    Description: str,
+    RoleArn: str,
+    ManagedBy: str,
+    EventBusName: str,
+    CreatedBy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Name`: `str`
-- `Arn`: `str`
-- `EventPattern`: `str`
-- `ScheduleExpression`: `str`
-- `State`: [RuleStateType](./literals.md#rulestatetype)
-- `Description`: `str`
-- `RoleArn`: `str`
-- `ManagedBy`: `str`
-- `EventBusName`: `str`
-- `CreatedBy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disablerulerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RuleStateType](./literals.md#rulestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisableRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import DisableRuleRequestRequestTypeDef
+
+def get_value() -> DisableRuleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `EventBusName`: `str`
-
-<a id="ecsparameterstypedef"></a>
+```python title="Definition"
+class DisableRuleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    EventBusName: NotRequired[str],
+```
 
 ## EcsParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import EcsParametersTypeDef
+
+def get_value() -> EcsParametersTypeDef:
+    return {
+        "TaskDefinitionArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EcsParametersTypeDef(TypedDict):
+    TaskDefinitionArn: str,
+    TaskCount: NotRequired[int],
+    LaunchType: NotRequired[LaunchTypeType],  # (1)
+    NetworkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (2)
+    PlatformVersion: NotRequired[str],
+    Group: NotRequired[str],
+    CapacityProviderStrategy: NotRequired[List[CapacityProviderStrategyItemTypeDef]],  # (3)
+    EnableECSManagedTags: NotRequired[bool],
+    EnableExecuteCommand: NotRequired[bool],
+    PlacementConstraints: NotRequired[List[PlacementConstraintTypeDef]],  # (4)
+    PlacementStrategy: NotRequired[List[PlacementStrategyTypeDef]],  # (5)
+    PropagateTags: NotRequired[PropagateTagsType],  # (6)
+    ReferenceId: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (7)
+```
 
-- `TaskDefinitionArn`: `str`
-
-Optional fields:
-
-- `TaskCount`: `int`
-- `LaunchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `PlatformVersion`: `str`
-- `Group`: `str`
-- `CapacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `EnableECSManagedTags`: `bool`
-- `EnableExecuteCommand`: `bool`
-- `PlacementConstraints`:
-  `List`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
-- `PlacementStrategy`:
-  `List`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
-- `PropagateTags`: `Literal['TASK_DEFINITION']` (see
-  [PropagateTagsType](./literals.md#propagatetagstype))
-- `ReferenceId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="enablerulerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+2. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+3. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+4. See [:material-code-braces: PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef) 
+5. See [:material-code-braces: PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef) 
+6. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## EnableRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import EnableRuleRequestRequestTypeDef
+
+def get_value() -> EnableRuleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `EventBusName`: `str`
-
-<a id="eventbustypedef"></a>
+```python title="Definition"
+class EnableRuleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    EventBusName: NotRequired[str],
+```
 
 ## EventBusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import EventBusTypeDef
+
+def get_value() -> EventBusTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Arn`: `str`
-- `Policy`: `str`
-
-<a id="eventsourcetypedef"></a>
+```python title="Definition"
+class EventBusTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    Policy: NotRequired[str],
+```
 
 ## EventSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import EventSourceTypeDef
+
+def get_value() -> EventSourceTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventSourceTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreatedBy: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    ExpirationTime: NotRequired[datetime],
+    Name: NotRequired[str],
+    State: NotRequired[EventSourceStateType],  # (1)
+```
 
-- `Arn`: `str`
-- `CreatedBy`: `str`
-- `CreationTime`: `datetime`
-- `ExpirationTime`: `datetime`
-- `Name`: `str`
-- `State`: [EventSourceStateType](./literals.md#eventsourcestatetype)
-
-<a id="httpparameterstypedef"></a>
-
+1. See [:material-code-brackets: EventSourceStateType](./literals.md#eventsourcestatetype) 
 ## HttpParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import HttpParametersTypeDef
+
+def get_value() -> HttpParametersTypeDef:
+    return {
+        "PathParameterValues": ...,
+    }
 ```
 
-Optional fields:
-
-- `PathParameterValues`: `List`\[`str`\]
-- `HeaderParameters`: `Dict`\[`str`, `str`\]
-- `QueryStringParameters`: `Dict`\[`str`, `str`\]
-
-<a id="inputtransformertypedef"></a>
+```python title="Definition"
+class HttpParametersTypeDef(TypedDict):
+    PathParameterValues: NotRequired[List[str]],
+    HeaderParameters: NotRequired[Dict[str, str]],
+    QueryStringParameters: NotRequired[Dict[str, str]],
+```
 
 ## InputTransformerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import InputTransformerTypeDef
+
+def get_value() -> InputTransformerTypeDef:
+    return {
+        "InputTemplate": ...,
+    }
 ```
 
-Required fields:
-
-- `InputTemplate`: `str`
-
-Optional fields:
-
-- `InputPathsMap`: `Dict`\[`str`, `str`\]
-
-<a id="kinesisparameterstypedef"></a>
+```python title="Definition"
+class InputTransformerTypeDef(TypedDict):
+    InputTemplate: str,
+    InputPathsMap: NotRequired[Dict[str, str]],
+```
 
 ## KinesisParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import KinesisParametersTypeDef
+
+def get_value() -> KinesisParametersTypeDef:
+    return {
+        "PartitionKeyPath": ...,
+    }
 ```
 
-Required fields:
-
-- `PartitionKeyPath`: `str`
-
-<a id="listapidestinationsrequestrequesttypedef"></a>
+```python title="Definition"
+class KinesisParametersTypeDef(TypedDict):
+    PartitionKeyPath: str,
+```
 
 ## ListApiDestinationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListApiDestinationsRequestRequestTypeDef
+
+def get_value() -> ListApiDestinationsRequestRequestTypeDef:
+    return {
+        "NamePrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `NamePrefix`: `str`
-- `ConnectionArn`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listapidestinationsresponsetypedef"></a>
+```python title="Definition"
+class ListApiDestinationsRequestRequestTypeDef(TypedDict):
+    NamePrefix: NotRequired[str],
+    ConnectionArn: NotRequired[str],
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListApiDestinationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListApiDestinationsResponseTypeDef
+
+def get_value() -> ListApiDestinationsResponseTypeDef:
+    return {
+        "ApiDestinations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApiDestinationsResponseTypeDef(TypedDict):
+    ApiDestinations: List[ApiDestinationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApiDestinations`:
-  `List`\[[ApiDestinationTypeDef](./type_defs.md#apidestinationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listarchivesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApiDestinationTypeDef](./type_defs.md#apidestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListArchivesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListArchivesRequestRequestTypeDef
+
+def get_value() -> ListArchivesRequestRequestTypeDef:
+    return {
+        "NamePrefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListArchivesRequestRequestTypeDef(TypedDict):
+    NamePrefix: NotRequired[str],
+    EventSourceArn: NotRequired[str],
+    State: NotRequired[ArchiveStateType],  # (1)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
-- `NamePrefix`: `str`
-- `EventSourceArn`: `str`
-- `State`: [ArchiveStateType](./literals.md#archivestatetype)
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listarchivesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ArchiveStateType](./literals.md#archivestatetype) 
 ## ListArchivesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListArchivesResponseTypeDef
+
+def get_value() -> ListArchivesResponseTypeDef:
+    return {
+        "Archives": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListArchivesResponseTypeDef(TypedDict):
+    Archives: List[ArchiveTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Archives`: `List`\[[ArchiveTypeDef](./type_defs.md#archivetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listconnectionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ArchiveTypeDef](./type_defs.md#archivetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListConnectionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListConnectionsRequestRequestTypeDef
+
+def get_value() -> ListConnectionsRequestRequestTypeDef:
+    return {
+        "NamePrefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListConnectionsRequestRequestTypeDef(TypedDict):
+    NamePrefix: NotRequired[str],
+    ConnectionState: NotRequired[ConnectionStateType],  # (1)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
-- `NamePrefix`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listconnectionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
 ## ListConnectionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListConnectionsResponseTypeDef
+
+def get_value() -> ListConnectionsResponseTypeDef:
+    return {
+        "Connections": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConnectionsResponseTypeDef(TypedDict):
+    Connections: List[ConnectionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Connections`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listeventbusesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEventBusesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListEventBusesRequestRequestTypeDef
+
+def get_value() -> ListEventBusesRequestRequestTypeDef:
+    return {
+        "NamePrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `NamePrefix`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listeventbusesresponsetypedef"></a>
+```python title="Definition"
+class ListEventBusesRequestRequestTypeDef(TypedDict):
+    NamePrefix: NotRequired[str],
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListEventBusesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListEventBusesResponseTypeDef
+
+def get_value() -> ListEventBusesResponseTypeDef:
+    return {
+        "EventBuses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventBusesResponseTypeDef(TypedDict):
+    EventBuses: List[EventBusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventBuses`: `List`\[[EventBusTypeDef](./type_defs.md#eventbustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listeventsourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventBusTypeDef](./type_defs.md#eventbustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEventSourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListEventSourcesRequestRequestTypeDef
+
+def get_value() -> ListEventSourcesRequestRequestTypeDef:
+    return {
+        "NamePrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `NamePrefix`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listeventsourcesresponsetypedef"></a>
+```python title="Definition"
+class ListEventSourcesRequestRequestTypeDef(TypedDict):
+    NamePrefix: NotRequired[str],
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListEventSourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListEventSourcesResponseTypeDef
+
+def get_value() -> ListEventSourcesResponseTypeDef:
+    return {
+        "EventSources": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventSourcesResponseTypeDef(TypedDict):
+    EventSources: List[EventSourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventSources`:
-  `List`\[[EventSourceTypeDef](./type_defs.md#eventsourcetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpartnereventsourceaccountsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventSourceTypeDef](./type_defs.md#eventsourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPartnerEventSourceAccountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListPartnerEventSourceAccountsRequestRequestTypeDef
+
+def get_value() -> ListPartnerEventSourceAccountsRequestRequestTypeDef:
+    return {
+        "EventSourceName": ...,
+    }
 ```
 
-Required fields:
-
-- `EventSourceName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listpartnereventsourceaccountsresponsetypedef"></a>
+```python title="Definition"
+class ListPartnerEventSourceAccountsRequestRequestTypeDef(TypedDict):
+    EventSourceName: str,
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListPartnerEventSourceAccountsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListPartnerEventSourceAccountsResponseTypeDef
+
+def get_value() -> ListPartnerEventSourceAccountsResponseTypeDef:
+    return {
+        "PartnerEventSourceAccounts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPartnerEventSourceAccountsResponseTypeDef(TypedDict):
+    PartnerEventSourceAccounts: List[PartnerEventSourceAccountTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PartnerEventSourceAccounts`:
-  `List`\[[PartnerEventSourceAccountTypeDef](./type_defs.md#partnereventsourceaccounttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpartnereventsourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartnerEventSourceAccountTypeDef](./type_defs.md#partnereventsourceaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPartnerEventSourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListPartnerEventSourcesRequestRequestTypeDef
+
+def get_value() -> ListPartnerEventSourcesRequestRequestTypeDef:
+    return {
+        "NamePrefix": ...,
+    }
 ```
 
-Required fields:
-
-- `NamePrefix`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listpartnereventsourcesresponsetypedef"></a>
+```python title="Definition"
+class ListPartnerEventSourcesRequestRequestTypeDef(TypedDict):
+    NamePrefix: str,
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListPartnerEventSourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListPartnerEventSourcesResponseTypeDef
+
+def get_value() -> ListPartnerEventSourcesResponseTypeDef:
+    return {
+        "PartnerEventSources": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPartnerEventSourcesResponseTypeDef(TypedDict):
+    PartnerEventSources: List[PartnerEventSourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PartnerEventSources`:
-  `List`\[[PartnerEventSourceTypeDef](./type_defs.md#partnereventsourcetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listreplaysrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartnerEventSourceTypeDef](./type_defs.md#partnereventsourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListReplaysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListReplaysRequestRequestTypeDef
+
+def get_value() -> ListReplaysRequestRequestTypeDef:
+    return {
+        "NamePrefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListReplaysRequestRequestTypeDef(TypedDict):
+    NamePrefix: NotRequired[str],
+    State: NotRequired[ReplayStateType],  # (1)
+    EventSourceArn: NotRequired[str],
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
-- `NamePrefix`: `str`
-- `State`: [ReplayStateType](./literals.md#replaystatetype)
-- `EventSourceArn`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listreplaysresponsetypedef"></a>
-
+1. See [:material-code-brackets: ReplayStateType](./literals.md#replaystatetype) 
 ## ListReplaysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListReplaysResponseTypeDef
+
+def get_value() -> ListReplaysResponseTypeDef:
+    return {
+        "Replays": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReplaysResponseTypeDef(TypedDict):
+    Replays: List[ReplayTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Replays`: `List`\[[ReplayTypeDef](./type_defs.md#replaytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ReplayTypeDef](./type_defs.md#replaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRuleNamesByTargetRequestListRuleNamesByTargetPaginateTypeDef
 
-<a id="listrulenamesbytargetrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_events.type_defs import ListRuleNamesByTargetRequestListRuleNamesByTargetPaginateTypeDef
 
+def get_value() -> ListRuleNamesByTargetRequestListRuleNamesByTargetPaginateTypeDef:
+    return {
+        "TargetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListRuleNamesByTargetRequestListRuleNamesByTargetPaginateTypeDef(TypedDict):
+    TargetArn: str,
+    EventBusName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRuleNamesByTargetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListRuleNamesByTargetRequestRequestTypeDef
+
+def get_value() -> ListRuleNamesByTargetRequestRequestTypeDef:
+    return {
+        "TargetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `TargetArn`: `str`
-
-Optional fields:
-
-- `EventBusName`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listrulenamesbytargetresponsetypedef"></a>
+```python title="Definition"
+class ListRuleNamesByTargetRequestRequestTypeDef(TypedDict):
+    TargetArn: str,
+    EventBusName: NotRequired[str],
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListRuleNamesByTargetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListRuleNamesByTargetResponseTypeDef
+
+def get_value() -> ListRuleNamesByTargetResponseTypeDef:
+    return {
+        "RuleNames": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRuleNamesByTargetResponseTypeDef(TypedDict):
+    RuleNames: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RuleNames`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRulesRequestListRulesPaginateTypeDef
 
-<a id="listrulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_events.type_defs import ListRulesRequestListRulesPaginateTypeDef
 
+def get_value() -> ListRulesRequestListRulesPaginateTypeDef:
+    return {
+        "NamePrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListRulesRequestListRulesPaginateTypeDef(TypedDict):
+    NamePrefix: NotRequired[str],
+    EventBusName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListRulesRequestRequestTypeDef
+
+def get_value() -> ListRulesRequestRequestTypeDef:
+    return {
+        "NamePrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `NamePrefix`: `str`
-- `EventBusName`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listrulesresponsetypedef"></a>
+```python title="Definition"
+class ListRulesRequestRequestTypeDef(TypedDict):
+    NamePrefix: NotRequired[str],
+    EventBusName: NotRequired[str],
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListRulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListRulesResponseTypeDef
+
+def get_value() -> ListRulesResponseTypeDef:
+    return {
+        "Rules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRulesResponseTypeDef(TypedDict):
+    Rules: List[RuleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTargetsByRuleRequestListTargetsByRulePaginateTypeDef
 
-<a id="listtargetsbyrulerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_events.type_defs import ListTargetsByRuleRequestListTargetsByRulePaginateTypeDef
 
+def get_value() -> ListTargetsByRuleRequestListTargetsByRulePaginateTypeDef:
+    return {
+        "Rule": ...,
+    }
+```
+
+```python title="Definition"
+class ListTargetsByRuleRequestListTargetsByRulePaginateTypeDef(TypedDict):
+    Rule: str,
+    EventBusName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTargetsByRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListTargetsByRuleRequestRequestTypeDef
+
+def get_value() -> ListTargetsByRuleRequestRequestTypeDef:
+    return {
+        "Rule": ...,
+    }
 ```
 
-Required fields:
-
-- `Rule`: `str`
-
-Optional fields:
-
-- `EventBusName`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="listtargetsbyruleresponsetypedef"></a>
+```python title="Definition"
+class ListTargetsByRuleRequestRequestTypeDef(TypedDict):
+    Rule: str,
+    EventBusName: NotRequired[str],
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListTargetsByRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ListTargetsByRuleResponseTypeDef
+
+def get_value() -> ListTargetsByRuleResponseTypeDef:
+    return {
+        "Targets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTargetsByRuleResponseTypeDef(TypedDict):
+    Targets: List[TargetTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Targets`: `List`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="networkconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NetworkConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import NetworkConfigurationTypeDef
+
+def get_value() -> NetworkConfigurationTypeDef:
+    return {
+        "awsvpcConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkConfigurationTypeDef(TypedDict):
+    awsvpcConfiguration: NotRequired[AwsVpcConfigurationTypeDef],  # (1)
+```
 
-- `awsvpcConfiguration`:
-  [AwsVpcConfigurationTypeDef](./type_defs.md#awsvpcconfigurationtypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: AwsVpcConfigurationTypeDef](./type_defs.md#awsvpcconfigurationtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="partnereventsourceaccounttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PartnerEventSourceAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PartnerEventSourceAccountTypeDef
+
+def get_value() -> PartnerEventSourceAccountTypeDef:
+    return {
+        "Account": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PartnerEventSourceAccountTypeDef(TypedDict):
+    Account: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    ExpirationTime: NotRequired[datetime],
+    State: NotRequired[EventSourceStateType],  # (1)
+```
 
-- `Account`: `str`
-- `CreationTime`: `datetime`
-- `ExpirationTime`: `datetime`
-- `State`: [EventSourceStateType](./literals.md#eventsourcestatetype)
-
-<a id="partnereventsourcetypedef"></a>
-
+1. See [:material-code-brackets: EventSourceStateType](./literals.md#eventsourcestatetype) 
 ## PartnerEventSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PartnerEventSourceTypeDef
+
+def get_value() -> PartnerEventSourceTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="placementconstrainttypedef"></a>
+```python title="Definition"
+class PartnerEventSourceTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## PlacementConstraintTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PlacementConstraintTypeDef
+
+def get_value() -> PlacementConstraintTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PlacementConstraintTypeDef(TypedDict):
+    type: NotRequired[PlacementConstraintTypeType],  # (1)
+    expression: NotRequired[str],
+```
 
-- `type`:
-  [PlacementConstraintTypeType](./literals.md#placementconstrainttypetype)
-- `expression`: `str`
-
-<a id="placementstrategytypedef"></a>
-
+1. See [:material-code-brackets: PlacementConstraintTypeType](./literals.md#placementconstrainttypetype) 
 ## PlacementStrategyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PlacementStrategyTypeDef
+
+def get_value() -> PlacementStrategyTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PlacementStrategyTypeDef(TypedDict):
+    type: NotRequired[PlacementStrategyTypeType],  # (1)
+    field: NotRequired[str],
+```
 
-- `type`: [PlacementStrategyTypeType](./literals.md#placementstrategytypetype)
-- `field`: `str`
-
-<a id="puteventsrequestentrytypedef"></a>
-
+1. See [:material-code-brackets: PlacementStrategyTypeType](./literals.md#placementstrategytypetype) 
 ## PutEventsRequestEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutEventsRequestEntryTypeDef
+
+def get_value() -> PutEventsRequestEntryTypeDef:
+    return {
+        "Time": ...,
+    }
 ```
 
-Optional fields:
-
-- `Time`: `Union`\[`datetime`, `str`\]
-- `Source`: `str`
-- `Resources`: `Sequence`\[`str`\]
-- `DetailType`: `str`
-- `Detail`: `str`
-- `EventBusName`: `str`
-- `TraceHeader`: `str`
-
-<a id="puteventsrequestrequesttypedef"></a>
+```python title="Definition"
+class PutEventsRequestEntryTypeDef(TypedDict):
+    Time: NotRequired[Union[datetime, str]],
+    Source: NotRequired[str],
+    Resources: NotRequired[Sequence[str]],
+    DetailType: NotRequired[str],
+    Detail: NotRequired[str],
+    EventBusName: NotRequired[str],
+    TraceHeader: NotRequired[str],
+```
 
 ## PutEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutEventsRequestRequestTypeDef
+
+def get_value() -> PutEventsRequestRequestTypeDef:
+    return {
+        "Entries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEventsRequestRequestTypeDef(TypedDict):
+    Entries: Sequence[PutEventsRequestEntryTypeDef],  # (1)
+```
 
-- `Entries`:
-  `Sequence`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
-
-<a id="puteventsresponsetypedef"></a>
-
+1. See [:material-code-braces: PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef) 
 ## PutEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutEventsResponseTypeDef
+
+def get_value() -> PutEventsResponseTypeDef:
+    return {
+        "FailedEntryCount": ...,
+        "Entries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEventsResponseTypeDef(TypedDict):
+    FailedEntryCount: int,
+    Entries: List[PutEventsResultEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedEntryCount`: `int`
-- `Entries`:
-  `List`\[[PutEventsResultEntryTypeDef](./type_defs.md#puteventsresultentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="puteventsresultentrytypedef"></a>
-
+1. See [:material-code-braces: PutEventsResultEntryTypeDef](./type_defs.md#puteventsresultentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutEventsResultEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutEventsResultEntryTypeDef
+
+def get_value() -> PutEventsResultEntryTypeDef:
+    return {
+        "EventId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EventId`: `str`
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="putpartnereventsrequestentrytypedef"></a>
+```python title="Definition"
+class PutEventsResultEntryTypeDef(TypedDict):
+    EventId: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## PutPartnerEventsRequestEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutPartnerEventsRequestEntryTypeDef
+
+def get_value() -> PutPartnerEventsRequestEntryTypeDef:
+    return {
+        "Time": ...,
+    }
 ```
 
-Optional fields:
-
-- `Time`: `Union`\[`datetime`, `str`\]
-- `Source`: `str`
-- `Resources`: `Sequence`\[`str`\]
-- `DetailType`: `str`
-- `Detail`: `str`
-
-<a id="putpartnereventsrequestrequesttypedef"></a>
+```python title="Definition"
+class PutPartnerEventsRequestEntryTypeDef(TypedDict):
+    Time: NotRequired[Union[datetime, str]],
+    Source: NotRequired[str],
+    Resources: NotRequired[Sequence[str]],
+    DetailType: NotRequired[str],
+    Detail: NotRequired[str],
+```
 
 ## PutPartnerEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutPartnerEventsRequestRequestTypeDef
+
+def get_value() -> PutPartnerEventsRequestRequestTypeDef:
+    return {
+        "Entries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutPartnerEventsRequestRequestTypeDef(TypedDict):
+    Entries: Sequence[PutPartnerEventsRequestEntryTypeDef],  # (1)
+```
 
-- `Entries`:
-  `Sequence`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
-
-<a id="putpartnereventsresponsetypedef"></a>
-
+1. See [:material-code-braces: PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef) 
 ## PutPartnerEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutPartnerEventsResponseTypeDef
+
+def get_value() -> PutPartnerEventsResponseTypeDef:
+    return {
+        "FailedEntryCount": ...,
+        "Entries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutPartnerEventsResponseTypeDef(TypedDict):
+    FailedEntryCount: int,
+    Entries: List[PutPartnerEventsResultEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedEntryCount`: `int`
-- `Entries`:
-  `List`\[[PutPartnerEventsResultEntryTypeDef](./type_defs.md#putpartnereventsresultentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putpartnereventsresultentrytypedef"></a>
-
+1. See [:material-code-braces: PutPartnerEventsResultEntryTypeDef](./type_defs.md#putpartnereventsresultentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutPartnerEventsResultEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutPartnerEventsResultEntryTypeDef
+
+def get_value() -> PutPartnerEventsResultEntryTypeDef:
+    return {
+        "EventId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EventId`: `str`
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="putpermissionrequestrequesttypedef"></a>
+```python title="Definition"
+class PutPartnerEventsResultEntryTypeDef(TypedDict):
+    EventId: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## PutPermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutPermissionRequestRequestTypeDef
+
+def get_value() -> PutPermissionRequestRequestTypeDef:
+    return {
+        "EventBusName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutPermissionRequestRequestTypeDef(TypedDict):
+    EventBusName: NotRequired[str],
+    Action: NotRequired[str],
+    Principal: NotRequired[str],
+    StatementId: NotRequired[str],
+    Condition: NotRequired[ConditionTypeDef],  # (1)
+    Policy: NotRequired[str],
+```
 
-- `EventBusName`: `str`
-- `Action`: `str`
-- `Principal`: `str`
-- `StatementId`: `str`
-- `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
-- `Policy`: `str`
-
-<a id="putrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 ## PutRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutRuleRequestRequestTypeDef
+
+def get_value() -> PutRuleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRuleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ScheduleExpression: NotRequired[str],
+    EventPattern: NotRequired[str],
+    State: NotRequired[RuleStateType],  # (1)
+    Description: NotRequired[str],
+    RoleArn: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    EventBusName: NotRequired[str],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `ScheduleExpression`: `str`
-- `EventPattern`: `str`
-- `State`: [RuleStateType](./literals.md#rulestatetype)
-- `Description`: `str`
-- `RoleArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `EventBusName`: `str`
-
-<a id="putruleresponsetypedef"></a>
-
+1. See [:material-code-brackets: RuleStateType](./literals.md#rulestatetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutRuleResponseTypeDef
+
+def get_value() -> PutRuleResponseTypeDef:
+    return {
+        "RuleArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRuleResponseTypeDef(TypedDict):
+    RuleArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RuleArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="puttargetsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutTargetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutTargetsRequestRequestTypeDef
+
+def get_value() -> PutTargetsRequestRequestTypeDef:
+    return {
+        "Rule": ...,
+        "Targets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutTargetsRequestRequestTypeDef(TypedDict):
+    Rule: str,
+    Targets: Sequence[TargetTypeDef],  # (1)
+    EventBusName: NotRequired[str],
+```
 
-- `Rule`: `str`
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-
-Optional fields:
-
-- `EventBusName`: `str`
-
-<a id="puttargetsresponsetypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 ## PutTargetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutTargetsResponseTypeDef
+
+def get_value() -> PutTargetsResponseTypeDef:
+    return {
+        "FailedEntryCount": ...,
+        "FailedEntries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutTargetsResponseTypeDef(TypedDict):
+    FailedEntryCount: int,
+    FailedEntries: List[PutTargetsResultEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedEntryCount`: `int`
-- `FailedEntries`:
-  `List`\[[PutTargetsResultEntryTypeDef](./type_defs.md#puttargetsresultentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="puttargetsresultentrytypedef"></a>
-
+1. See [:material-code-braces: PutTargetsResultEntryTypeDef](./type_defs.md#puttargetsresultentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutTargetsResultEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import PutTargetsResultEntryTypeDef
+
+def get_value() -> PutTargetsResultEntryTypeDef:
+    return {
+        "TargetId": ...,
+    }
 ```
 
-Optional fields:
-
-- `TargetId`: `str`
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="redshiftdataparameterstypedef"></a>
+```python title="Definition"
+class PutTargetsResultEntryTypeDef(TypedDict):
+    TargetId: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## RedshiftDataParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import RedshiftDataParametersTypeDef
+
+def get_value() -> RedshiftDataParametersTypeDef:
+    return {
+        "Database": ...,
+        "Sql": ...,
+    }
 ```
 
-Required fields:
-
-- `Database`: `str`
-- `Sql`: `str`
-
-Optional fields:
-
-- `SecretManagerArn`: `str`
-- `DbUser`: `str`
-- `StatementName`: `str`
-- `WithEvent`: `bool`
-
-<a id="removepermissionrequestrequesttypedef"></a>
+```python title="Definition"
+class RedshiftDataParametersTypeDef(TypedDict):
+    Database: str,
+    Sql: str,
+    SecretManagerArn: NotRequired[str],
+    DbUser: NotRequired[str],
+    StatementName: NotRequired[str],
+    WithEvent: NotRequired[bool],
+```
 
 ## RemovePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import RemovePermissionRequestRequestTypeDef
+
+def get_value() -> RemovePermissionRequestRequestTypeDef:
+    return {
+        "StatementId": ...,
+    }
 ```
 
-Optional fields:
-
-- `StatementId`: `str`
-- `RemoveAllPermissions`: `bool`
-- `EventBusName`: `str`
-
-<a id="removetargetsrequestrequesttypedef"></a>
+```python title="Definition"
+class RemovePermissionRequestRequestTypeDef(TypedDict):
+    StatementId: NotRequired[str],
+    RemoveAllPermissions: NotRequired[bool],
+    EventBusName: NotRequired[str],
+```
 
 ## RemoveTargetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import RemoveTargetsRequestRequestTypeDef
+
+def get_value() -> RemoveTargetsRequestRequestTypeDef:
+    return {
+        "Rule": ...,
+        "Ids": ...,
+    }
 ```
 
-Required fields:
-
-- `Rule`: `str`
-- `Ids`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `EventBusName`: `str`
-- `Force`: `bool`
-
-<a id="removetargetsresponsetypedef"></a>
+```python title="Definition"
+class RemoveTargetsRequestRequestTypeDef(TypedDict):
+    Rule: str,
+    Ids: Sequence[str],
+    EventBusName: NotRequired[str],
+    Force: NotRequired[bool],
+```
 
 ## RemoveTargetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import RemoveTargetsResponseTypeDef
+
+def get_value() -> RemoveTargetsResponseTypeDef:
+    return {
+        "FailedEntryCount": ...,
+        "FailedEntries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveTargetsResponseTypeDef(TypedDict):
+    FailedEntryCount: int,
+    FailedEntries: List[RemoveTargetsResultEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedEntryCount`: `int`
-- `FailedEntries`:
-  `List`\[[RemoveTargetsResultEntryTypeDef](./type_defs.md#removetargetsresultentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removetargetsresultentrytypedef"></a>
-
+1. See [:material-code-braces: RemoveTargetsResultEntryTypeDef](./type_defs.md#removetargetsresultentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveTargetsResultEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import RemoveTargetsResultEntryTypeDef
+
+def get_value() -> RemoveTargetsResultEntryTypeDef:
+    return {
+        "TargetId": ...,
+    }
 ```
 
-Optional fields:
-
-- `TargetId`: `str`
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="replaydestinationtypedef"></a>
+```python title="Definition"
+class RemoveTargetsResultEntryTypeDef(TypedDict):
+    TargetId: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## ReplayDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ReplayDestinationTypeDef
+
+def get_value() -> ReplayDestinationTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-Optional fields:
-
-- `FilterArns`: `List`\[`str`\]
-
-<a id="replaytypedef"></a>
+```python title="Definition"
+class ReplayDestinationTypeDef(TypedDict):
+    Arn: str,
+    FilterArns: NotRequired[List[str]],
+```
 
 ## ReplayTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ReplayTypeDef
+
+def get_value() -> ReplayTypeDef:
+    return {
+        "ReplayName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplayTypeDef(TypedDict):
+    ReplayName: NotRequired[str],
+    EventSourceArn: NotRequired[str],
+    State: NotRequired[ReplayStateType],  # (1)
+    StateReason: NotRequired[str],
+    EventStartTime: NotRequired[datetime],
+    EventEndTime: NotRequired[datetime],
+    EventLastReplayedTime: NotRequired[datetime],
+    ReplayStartTime: NotRequired[datetime],
+    ReplayEndTime: NotRequired[datetime],
+```
 
-- `ReplayName`: `str`
-- `EventSourceArn`: `str`
-- `State`: [ReplayStateType](./literals.md#replaystatetype)
-- `StateReason`: `str`
-- `EventStartTime`: `datetime`
-- `EventEndTime`: `datetime`
-- `EventLastReplayedTime`: `datetime`
-- `ReplayStartTime`: `datetime`
-- `ReplayEndTime`: `datetime`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ReplayStateType](./literals.md#replaystatetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retrypolicytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetryPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import RetryPolicyTypeDef
+
+def get_value() -> RetryPolicyTypeDef:
+    return {
+        "MaximumRetryAttempts": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaximumRetryAttempts`: `int`
-- `MaximumEventAgeInSeconds`: `int`
-
-<a id="ruletypedef"></a>
+```python title="Definition"
+class RetryPolicyTypeDef(TypedDict):
+    MaximumRetryAttempts: NotRequired[int],
+    MaximumEventAgeInSeconds: NotRequired[int],
+```
 
 ## RuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import RuleTypeDef
+
+def get_value() -> RuleTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RuleTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    EventPattern: NotRequired[str],
+    State: NotRequired[RuleStateType],  # (1)
+    Description: NotRequired[str],
+    ScheduleExpression: NotRequired[str],
+    RoleArn: NotRequired[str],
+    ManagedBy: NotRequired[str],
+    EventBusName: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Arn`: `str`
-- `EventPattern`: `str`
-- `State`: [RuleStateType](./literals.md#rulestatetype)
-- `Description`: `str`
-- `ScheduleExpression`: `str`
-- `RoleArn`: `str`
-- `ManagedBy`: `str`
-- `EventBusName`: `str`
-
-<a id="runcommandparameterstypedef"></a>
-
+1. See [:material-code-brackets: RuleStateType](./literals.md#rulestatetype) 
 ## RunCommandParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import RunCommandParametersTypeDef
+
+def get_value() -> RunCommandParametersTypeDef:
+    return {
+        "RunCommandTargets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RunCommandParametersTypeDef(TypedDict):
+    RunCommandTargets: List[RunCommandTargetTypeDef],  # (1)
+```
 
-- `RunCommandTargets`:
-  `List`\[[RunCommandTargetTypeDef](./type_defs.md#runcommandtargettypedef)\]
-
-<a id="runcommandtargettypedef"></a>
-
+1. See [:material-code-braces: RunCommandTargetTypeDef](./type_defs.md#runcommandtargettypedef) 
 ## RunCommandTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import RunCommandTargetTypeDef
+
+def get_value() -> RunCommandTargetTypeDef:
+    return {
+        "Key": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Values`: `List`\[`str`\]
-
-<a id="sagemakerpipelineparametertypedef"></a>
+```python title="Definition"
+class RunCommandTargetTypeDef(TypedDict):
+    Key: str,
+    Values: List[str],
+```
 
 ## SageMakerPipelineParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import SageMakerPipelineParameterTypeDef
+
+def get_value() -> SageMakerPipelineParameterTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="sagemakerpipelineparameterstypedef"></a>
+```python title="Definition"
+class SageMakerPipelineParameterTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
 
 ## SageMakerPipelineParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import SageMakerPipelineParametersTypeDef
+
+def get_value() -> SageMakerPipelineParametersTypeDef:
+    return {
+        "PipelineParameterList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SageMakerPipelineParametersTypeDef(TypedDict):
+    PipelineParameterList: NotRequired[List[SageMakerPipelineParameterTypeDef]],  # (1)
+```
 
-- `PipelineParameterList`:
-  `List`\[[SageMakerPipelineParameterTypeDef](./type_defs.md#sagemakerpipelineparametertypedef)\]
-
-<a id="sqsparameterstypedef"></a>
-
+1. See [:material-code-braces: SageMakerPipelineParameterTypeDef](./type_defs.md#sagemakerpipelineparametertypedef) 
 ## SqsParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import SqsParametersTypeDef
+
+def get_value() -> SqsParametersTypeDef:
+    return {
+        "MessageGroupId": ...,
+    }
 ```
 
-Optional fields:
-
-- `MessageGroupId`: `str`
-
-<a id="startreplayrequestrequesttypedef"></a>
+```python title="Definition"
+class SqsParametersTypeDef(TypedDict):
+    MessageGroupId: NotRequired[str],
+```
 
 ## StartReplayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import StartReplayRequestRequestTypeDef
+
+def get_value() -> StartReplayRequestRequestTypeDef:
+    return {
+        "ReplayName": ...,
+        "EventSourceArn": ...,
+        "EventStartTime": ...,
+        "EventEndTime": ...,
+        "Destination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartReplayRequestRequestTypeDef(TypedDict):
+    ReplayName: str,
+    EventSourceArn: str,
+    EventStartTime: Union[datetime, str],
+    EventEndTime: Union[datetime, str],
+    Destination: ReplayDestinationTypeDef,  # (1)
+    Description: NotRequired[str],
+```
 
-- `ReplayName`: `str`
-- `EventSourceArn`: `str`
-- `EventStartTime`: `Union`\[`datetime`, `str`\]
-- `EventEndTime`: `Union`\[`datetime`, `str`\]
-- `Destination`:
-  [ReplayDestinationTypeDef](./type_defs.md#replaydestinationtypedef)
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="startreplayresponsetypedef"></a>
-
+1. See [:material-code-braces: ReplayDestinationTypeDef](./type_defs.md#replaydestinationtypedef) 
 ## StartReplayResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import StartReplayResponseTypeDef
+
+def get_value() -> StartReplayResponseTypeDef:
+    return {
+        "ReplayArn": ...,
+        "State": ...,
+        "StateReason": ...,
+        "ReplayStartTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartReplayResponseTypeDef(TypedDict):
+    ReplayArn: str,
+    State: ReplayStateType,  # (1)
+    StateReason: str,
+    ReplayStartTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReplayArn`: `str`
-- `State`: [ReplayStateType](./literals.md#replaystatetype)
-- `StateReason`: `str`
-- `ReplayStartTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ReplayStateType](./literals.md#replaystatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="targettypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import TargetTypeDef
+
+def get_value() -> TargetTypeDef:
+    return {
+        "Id": ...,
+        "Arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TargetTypeDef(TypedDict):
+    Id: str,
+    Arn: str,
+    RoleArn: NotRequired[str],
+    Input: NotRequired[str],
+    InputPath: NotRequired[str],
+    InputTransformer: NotRequired[InputTransformerTypeDef],  # (1)
+    KinesisParameters: NotRequired[KinesisParametersTypeDef],  # (2)
+    RunCommandParameters: NotRequired[RunCommandParametersTypeDef],  # (3)
+    EcsParameters: NotRequired[EcsParametersTypeDef],  # (4)
+    BatchParameters: NotRequired[BatchParametersTypeDef],  # (5)
+    SqsParameters: NotRequired[SqsParametersTypeDef],  # (6)
+    HttpParameters: NotRequired[HttpParametersTypeDef],  # (7)
+    RedshiftDataParameters: NotRequired[RedshiftDataParametersTypeDef],  # (8)
+    SageMakerPipelineParameters: NotRequired[SageMakerPipelineParametersTypeDef],  # (9)
+    DeadLetterConfig: NotRequired[DeadLetterConfigTypeDef],  # (10)
+    RetryPolicy: NotRequired[RetryPolicyTypeDef],  # (11)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-
-Optional fields:
-
-- `RoleArn`: `str`
-- `Input`: `str`
-- `InputPath`: `str`
-- `InputTransformer`:
-  [InputTransformerTypeDef](./type_defs.md#inputtransformertypedef)
-- `KinesisParameters`:
-  [KinesisParametersTypeDef](./type_defs.md#kinesisparameterstypedef)
-- `RunCommandParameters`:
-  [RunCommandParametersTypeDef](./type_defs.md#runcommandparameterstypedef)
-- `EcsParameters`: [EcsParametersTypeDef](./type_defs.md#ecsparameterstypedef)
-- `BatchParameters`:
-  [BatchParametersTypeDef](./type_defs.md#batchparameterstypedef)
-- `SqsParameters`: [SqsParametersTypeDef](./type_defs.md#sqsparameterstypedef)
-- `HttpParameters`:
-  [HttpParametersTypeDef](./type_defs.md#httpparameterstypedef)
-- `RedshiftDataParameters`:
-  [RedshiftDataParametersTypeDef](./type_defs.md#redshiftdataparameterstypedef)
-- `SageMakerPipelineParameters`:
-  [SageMakerPipelineParametersTypeDef](./type_defs.md#sagemakerpipelineparameterstypedef)
-- `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
-- `RetryPolicy`: [RetryPolicyTypeDef](./type_defs.md#retrypolicytypedef)
-
-<a id="testeventpatternrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InputTransformerTypeDef](./type_defs.md#inputtransformertypedef) 
+2. See [:material-code-braces: KinesisParametersTypeDef](./type_defs.md#kinesisparameterstypedef) 
+3. See [:material-code-braces: RunCommandParametersTypeDef](./type_defs.md#runcommandparameterstypedef) 
+4. See [:material-code-braces: EcsParametersTypeDef](./type_defs.md#ecsparameterstypedef) 
+5. See [:material-code-braces: BatchParametersTypeDef](./type_defs.md#batchparameterstypedef) 
+6. See [:material-code-braces: SqsParametersTypeDef](./type_defs.md#sqsparameterstypedef) 
+7. See [:material-code-braces: HttpParametersTypeDef](./type_defs.md#httpparameterstypedef) 
+8. See [:material-code-braces: RedshiftDataParametersTypeDef](./type_defs.md#redshiftdataparameterstypedef) 
+9. See [:material-code-braces: SageMakerPipelineParametersTypeDef](./type_defs.md#sagemakerpipelineparameterstypedef) 
+10. See [:material-code-braces: DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef) 
+11. See [:material-code-braces: RetryPolicyTypeDef](./type_defs.md#retrypolicytypedef) 
 ## TestEventPatternRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import TestEventPatternRequestRequestTypeDef
+
+def get_value() -> TestEventPatternRequestRequestTypeDef:
+    return {
+        "EventPattern": ...,
+        "Event": ...,
+    }
 ```
 
-Required fields:
-
-- `EventPattern`: `str`
-- `Event`: `str`
-
-<a id="testeventpatternresponsetypedef"></a>
+```python title="Definition"
+class TestEventPatternRequestRequestTypeDef(TypedDict):
+    EventPattern: str,
+    Event: str,
+```
 
 ## TestEventPatternResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import TestEventPatternResponseTypeDef
+
+def get_value() -> TestEventPatternResponseTypeDef:
+    return {
+        "Result": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestEventPatternResponseTypeDef(TypedDict):
+    Result: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Result`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateapidestinationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateApiDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateApiDestinationRequestRequestTypeDef
+
+def get_value() -> UpdateApiDestinationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApiDestinationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    ConnectionArn: NotRequired[str],
+    InvocationEndpoint: NotRequired[str],
+    HttpMethod: NotRequired[ApiDestinationHttpMethodType],  # (1)
+    InvocationRateLimitPerSecond: NotRequired[int],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `ConnectionArn`: `str`
-- `InvocationEndpoint`: `str`
-- `HttpMethod`:
-  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
-- `InvocationRateLimitPerSecond`: `int`
-
-<a id="updateapidestinationresponsetypedef"></a>
-
+1. See [:material-code-brackets: ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype) 
 ## UpdateApiDestinationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateApiDestinationResponseTypeDef
+
+def get_value() -> UpdateApiDestinationResponseTypeDef:
+    return {
+        "ApiDestinationArn": ...,
+        "ApiDestinationState": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApiDestinationResponseTypeDef(TypedDict):
+    ApiDestinationArn: str,
+    ApiDestinationState: ApiDestinationStateType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApiDestinationArn`: `str`
-- `ApiDestinationState`:
-  [ApiDestinationStateType](./literals.md#apidestinationstatetype)
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatearchiverequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApiDestinationStateType](./literals.md#apidestinationstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateArchiveRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateArchiveRequestRequestTypeDef
+
+def get_value() -> UpdateArchiveRequestRequestTypeDef:
+    return {
+        "ArchiveName": ...,
+    }
 ```
 
-Required fields:
-
-- `ArchiveName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `EventPattern`: `str`
-- `RetentionDays`: `int`
-
-<a id="updatearchiveresponsetypedef"></a>
+```python title="Definition"
+class UpdateArchiveRequestRequestTypeDef(TypedDict):
+    ArchiveName: str,
+    Description: NotRequired[str],
+    EventPattern: NotRequired[str],
+    RetentionDays: NotRequired[int],
+```
 
 ## UpdateArchiveResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateArchiveResponseTypeDef
+
+def get_value() -> UpdateArchiveResponseTypeDef:
+    return {
+        "ArchiveArn": ...,
+        "State": ...,
+        "StateReason": ...,
+        "CreationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateArchiveResponseTypeDef(TypedDict):
+    ArchiveArn: str,
+    State: ArchiveStateType,  # (1)
+    StateReason: str,
+    CreationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ArchiveArn`: `str`
-- `State`: [ArchiveStateType](./literals.md#archivestatetype)
-- `StateReason`: `str`
-- `CreationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateconnectionapikeyauthrequestparameterstypedef"></a>
-
+1. See [:material-code-brackets: ArchiveStateType](./literals.md#archivestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateConnectionApiKeyAuthRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateConnectionApiKeyAuthRequestParametersTypeDef
+
+def get_value() -> UpdateConnectionApiKeyAuthRequestParametersTypeDef:
+    return {
+        "ApiKeyName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApiKeyName`: `str`
-- `ApiKeyValue`: `str`
-
-<a id="updateconnectionauthrequestparameterstypedef"></a>
+```python title="Definition"
+class UpdateConnectionApiKeyAuthRequestParametersTypeDef(TypedDict):
+    ApiKeyName: NotRequired[str],
+    ApiKeyValue: NotRequired[str],
+```
 
 ## UpdateConnectionAuthRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateConnectionAuthRequestParametersTypeDef
+
+def get_value() -> UpdateConnectionAuthRequestParametersTypeDef:
+    return {
+        "BasicAuthParameters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateConnectionAuthRequestParametersTypeDef(TypedDict):
+    BasicAuthParameters: NotRequired[UpdateConnectionBasicAuthRequestParametersTypeDef],  # (1)
+    OAuthParameters: NotRequired[UpdateConnectionOAuthRequestParametersTypeDef],  # (2)
+    ApiKeyAuthParameters: NotRequired[UpdateConnectionApiKeyAuthRequestParametersTypeDef],  # (3)
+    InvocationHttpParameters: NotRequired[ConnectionHttpParametersTypeDef],  # (4)
+```
 
-- `BasicAuthParameters`:
-  [UpdateConnectionBasicAuthRequestParametersTypeDef](./type_defs.md#updateconnectionbasicauthrequestparameterstypedef)
-- `OAuthParameters`:
-  [UpdateConnectionOAuthRequestParametersTypeDef](./type_defs.md#updateconnectionoauthrequestparameterstypedef)
-- `ApiKeyAuthParameters`:
-  [UpdateConnectionApiKeyAuthRequestParametersTypeDef](./type_defs.md#updateconnectionapikeyauthrequestparameterstypedef)
-- `InvocationHttpParameters`:
-  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
-
-<a id="updateconnectionbasicauthrequestparameterstypedef"></a>
-
+1. See [:material-code-braces: UpdateConnectionBasicAuthRequestParametersTypeDef](./type_defs.md#updateconnectionbasicauthrequestparameterstypedef) 
+2. See [:material-code-braces: UpdateConnectionOAuthRequestParametersTypeDef](./type_defs.md#updateconnectionoauthrequestparameterstypedef) 
+3. See [:material-code-braces: UpdateConnectionApiKeyAuthRequestParametersTypeDef](./type_defs.md#updateconnectionapikeyauthrequestparameterstypedef) 
+4. See [:material-code-braces: ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef) 
 ## UpdateConnectionBasicAuthRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateConnectionBasicAuthRequestParametersTypeDef
+
+def get_value() -> UpdateConnectionBasicAuthRequestParametersTypeDef:
+    return {
+        "Username": ...,
+    }
 ```
 
-Optional fields:
-
-- `Username`: `str`
-- `Password`: `str`
-
-<a id="updateconnectionoauthclientrequestparameterstypedef"></a>
+```python title="Definition"
+class UpdateConnectionBasicAuthRequestParametersTypeDef(TypedDict):
+    Username: NotRequired[str],
+    Password: NotRequired[str],
+```
 
 ## UpdateConnectionOAuthClientRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateConnectionOAuthClientRequestParametersTypeDef
+
+def get_value() -> UpdateConnectionOAuthClientRequestParametersTypeDef:
+    return {
+        "ClientID": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClientID`: `str`
-- `ClientSecret`: `str`
-
-<a id="updateconnectionoauthrequestparameterstypedef"></a>
+```python title="Definition"
+class UpdateConnectionOAuthClientRequestParametersTypeDef(TypedDict):
+    ClientID: NotRequired[str],
+    ClientSecret: NotRequired[str],
+```
 
 ## UpdateConnectionOAuthRequestParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateConnectionOAuthRequestParametersTypeDef
+
+def get_value() -> UpdateConnectionOAuthRequestParametersTypeDef:
+    return {
+        "ClientParameters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateConnectionOAuthRequestParametersTypeDef(TypedDict):
+    ClientParameters: NotRequired[UpdateConnectionOAuthClientRequestParametersTypeDef],  # (1)
+    AuthorizationEndpoint: NotRequired[str],
+    HttpMethod: NotRequired[ConnectionOAuthHttpMethodType],  # (2)
+    OAuthHttpParameters: NotRequired[ConnectionHttpParametersTypeDef],  # (3)
+```
 
-- `ClientParameters`:
-  [UpdateConnectionOAuthClientRequestParametersTypeDef](./type_defs.md#updateconnectionoauthclientrequestparameterstypedef)
-- `AuthorizationEndpoint`: `str`
-- `HttpMethod`:
-  [ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype)
-- `OAuthHttpParameters`:
-  [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
-
-<a id="updateconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateConnectionOAuthClientRequestParametersTypeDef](./type_defs.md#updateconnectionoauthclientrequestparameterstypedef) 
+2. See [:material-code-brackets: ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype) 
+3. See [:material-code-braces: ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef) 
 ## UpdateConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateConnectionRequestRequestTypeDef
+
+def get_value() -> UpdateConnectionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    AuthorizationType: NotRequired[ConnectionAuthorizationTypeType],  # (1)
+    AuthParameters: NotRequired[UpdateConnectionAuthRequestParametersTypeDef],  # (2)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `AuthorizationType`:
-  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
-- `AuthParameters`:
-  [UpdateConnectionAuthRequestParametersTypeDef](./type_defs.md#updateconnectionauthrequestparameterstypedef)
-
-<a id="updateconnectionresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype) 
+2. See [:material-code-braces: UpdateConnectionAuthRequestParametersTypeDef](./type_defs.md#updateconnectionauthrequestparameterstypedef) 
 ## UpdateConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_events.type_defs import UpdateConnectionResponseTypeDef
+
+def get_value() -> UpdateConnectionResponseTypeDef:
+    return {
+        "ConnectionArn": ...,
+        "ConnectionState": ...,
+        "CreationTime": ...,
+        "LastModifiedTime": ...,
+        "LastAuthorizedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectionResponseTypeDef(TypedDict):
+    ConnectionArn: str,
+    ConnectionState: ConnectionStateType,  # (1)
+    CreationTime: datetime,
+    LastModifiedTime: datetime,
+    LastAuthorizedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConnectionArn`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `LastAuthorizedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

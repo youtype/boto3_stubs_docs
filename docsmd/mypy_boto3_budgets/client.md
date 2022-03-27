@@ -1,55 +1,18 @@
-<a id="budgetsclient-for-boto3-budgets-module"></a>
-
-# BudgetsClient for boto3 Budgets module
+# BudgetsClient
 
 > [Index](../README.md) > [Budgets](./README.md) > BudgetsClient
 
-Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
-type annotations stubs module
-[mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
+!!! note ""
 
-- [BudgetsClient for boto3 Budgets module](#budgetsclient-for-boto3-budgets-module)
-  - [BudgetsClient](#budgetsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_budget](#create_budget)
-    - [create_budget_action](#create_budget_action)
-    - [create_notification](#create_notification)
-    - [create_subscriber](#create_subscriber)
-    - [delete_budget](#delete_budget)
-    - [delete_budget_action](#delete_budget_action)
-    - [delete_notification](#delete_notification)
-    - [delete_subscriber](#delete_subscriber)
-    - [describe_budget](#describe_budget)
-    - [describe_budget_action](#describe_budget_action)
-    - [describe_budget_action_histories](#describe_budget_action_histories)
-    - [describe_budget_actions_for_account](#describe_budget_actions_for_account)
-    - [describe_budget_actions_for_budget](#describe_budget_actions_for_budget)
-    - [describe_budget_notifications_for_account](#describe_budget_notifications_for_account)
-    - [describe_budget_performance_history](#describe_budget_performance_history)
-    - [describe_budgets](#describe_budgets)
-    - [describe_notifications_for_budget](#describe_notifications_for_budget)
-    - [describe_subscribers_for_notification](#describe_subscribers_for_notification)
-    - [execute_budget_action](#execute_budget_action)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [update_budget](#update_budget)
-    - [update_budget_action](#update_budget_action)
-    - [update_notification](#update_notification)
-    - [update_subscriber](#update_subscriber)
-    - [get_paginator](#get_paginator)
-
-<a id="budgetsclient"></a>
+    Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+    type annotations stubs module [mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 ## BudgetsClient
 
-Type annotations for `boto3.client("budgets")`
+Type annotations and code completion for `#!python boto3.client("budgets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_budgets.client import BudgetsClient
 
@@ -57,687 +20,897 @@ def get_budgets_client() -> BudgetsClient:
     return Session().client("budgets")
 ```
 
-Boto3 documentation:
-[Budgets.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("budgets").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("budgets")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.CreationLimitExceededException,
+    client.DuplicateRecordException,
+    client.ExpiredNextTokenException,
+    client.InternalErrorException,
+    client.InvalidNextTokenException,
+    client.InvalidParameterException,
+    client.NotFoundException,
+    client.ResourceLockedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_budgets.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.CreationLimitExceededException`
-- `Exceptions.DuplicateRecordException`
-- `Exceptions.ExpiredNextTokenException`
-- `Exceptions.InternalErrorException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ResourceLockedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-BudgetsClient exceptions.
-
-Type annotations for `boto3.client("budgets").exceptions` method.
-
-Boto3 documentation:
-[Budgets.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("budgets").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("budgets").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.can_paginate)
 
-Boto3 documentation:
-[Budgets.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_budget"></a>
-
-### create_budget
+### create\_budget
 
 Creates a budget and, if included, notifications and subscribers.
 
-Type annotations for `boto3.client("budgets").create_budget` method.
+Type annotations and code completion for `#!python boto3.client("budgets").create_budget` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget)
 
-Boto3 documentation:
-[Budgets.Client.create_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget)
+```python title="Method definition"
+def create_budget(
+    self,
+    *,
+    AccountId: str,
+    Budget: BudgetTypeDef,  # (1)
+    NotificationsWithSubscribers: Sequence[NotificationWithSubscribersTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateBudgetRequestRequestTypeDef](./type_defs.md#createbudgetrequestrequesttypedef).
+1. See [:material-code-braces: BudgetTypeDef](./type_defs.md#budgettypedef) 
+2. See [:material-code-braces: NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Budget`: [BudgetTypeDef](./type_defs.md#budgettypedef) *(required)*
-- `NotificationsWithSubscribers`:
-  `Sequence`\[[NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateBudgetRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Budget": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_budget(**kwargs)
+```
 
-<a id="create\_budget\_action"></a>
+1. See [:material-code-braces: CreateBudgetRequestRequestTypeDef](./type_defs.md#createbudgetrequestrequesttypedef) 
 
-### create_budget_action
+### create\_budget\_action
 
 Creates a budget action.
 
-Type annotations for `boto3.client("budgets").create_budget_action` method.
+Type annotations and code completion for `#!python boto3.client("budgets").create_budget_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget_action)
 
-Boto3 documentation:
-[Budgets.Client.create_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_budget_action)
+```python title="Method definition"
+def create_budget_action(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    NotificationType: NotificationTypeType,  # (1)
+    ActionType: ActionTypeType,  # (2)
+    ActionThreshold: ActionThresholdTypeDef,  # (3)
+    Definition: DefinitionTypeDef,  # (4)
+    ExecutionRoleArn: str,
+    ApprovalModel: ApprovalModelType,  # (5)
+    Subscribers: Sequence[SubscriberTypeDef],  # (6)
+) -> CreateBudgetActionResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateBudgetActionRequestRequestTypeDef](./type_defs.md#createbudgetactionrequestrequesttypedef).
+1. See [:material-code-brackets: NotificationTypeType](./literals.md#notificationtypetype) 
+2. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+3. See [:material-code-braces: ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef) 
+4. See [:material-code-braces: DefinitionTypeDef](./type_defs.md#definitiontypedef) 
+5. See [:material-code-brackets: ApprovalModelType](./literals.md#approvalmodeltype) 
+6. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
+7. See [:material-code-braces: CreateBudgetActionResponseTypeDef](./type_defs.md#createbudgetactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `NotificationType`:
-  [NotificationTypeType](./literals.md#notificationtypetype) *(required)*
-- `ActionType`: [ActionTypeType](./literals.md#actiontypetype) *(required)*
-- `ActionThreshold`:
-  [ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef) *(required)*
-- `Definition`: [DefinitionTypeDef](./type_defs.md#definitiontypedef)
-  *(required)*
-- `ExecutionRoleArn`: `str` *(required)*
-- `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
-  *(required)*
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateBudgetActionRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "NotificationType": ...,
+    "ActionType": ...,
+    "ActionThreshold": ...,
+    "Definition": ...,
+    "ExecutionRoleArn": ...,
+    "ApprovalModel": ...,
+    "Subscribers": ...,
+}
 
-Returns
-[CreateBudgetActionResponseTypeDef](./type_defs.md#createbudgetactionresponsetypedef).
+parent.create_budget_action(**kwargs)
+```
 
-<a id="create\_notification"></a>
+1. See [:material-code-braces: CreateBudgetActionRequestRequestTypeDef](./type_defs.md#createbudgetactionrequestrequesttypedef) 
 
-### create_notification
+### create\_notification
 
 Creates a notification.
 
-Type annotations for `boto3.client("budgets").create_notification` method.
+Type annotations and code completion for `#!python boto3.client("budgets").create_notification` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_notification)
 
-Boto3 documentation:
-[Budgets.Client.create_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_notification)
+```python title="Method definition"
+def create_notification(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    Subscribers: Sequence[SubscriberTypeDef],  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateNotificationRequestRequestTypeDef](./type_defs.md#createnotificationrequestrequesttypedef).
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-  *(required)*
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateNotificationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "Notification": ...,
+    "Subscribers": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_notification(**kwargs)
+```
 
-<a id="create\_subscriber"></a>
+1. See [:material-code-braces: CreateNotificationRequestRequestTypeDef](./type_defs.md#createnotificationrequestrequesttypedef) 
 
-### create_subscriber
+### create\_subscriber
 
 Creates a subscriber.
 
-Type annotations for `boto3.client("budgets").create_subscriber` method.
+Type annotations and code completion for `#!python boto3.client("budgets").create_subscriber` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_subscriber)
 
-Boto3 documentation:
-[Budgets.Client.create_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.create_subscriber)
+```python title="Method definition"
+def create_subscriber(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    Subscriber: SubscriberTypeDef,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateSubscriberRequestRequestTypeDef](./type_defs.md#createsubscriberrequestrequesttypedef).
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-  *(required)*
-- `Subscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateSubscriberRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "Notification": ...,
+    "Subscriber": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_subscriber(**kwargs)
+```
 
-<a id="delete\_budget"></a>
+1. See [:material-code-braces: CreateSubscriberRequestRequestTypeDef](./type_defs.md#createsubscriberrequestrequesttypedef) 
 
-### delete_budget
+### delete\_budget
 
 Deletes a budget.
 
-Type annotations for `boto3.client("budgets").delete_budget` method.
+Type annotations and code completion for `#!python boto3.client("budgets").delete_budget` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget)
 
-Boto3 documentation:
-[Budgets.Client.delete_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget)
+```python title="Method definition"
+def delete_budget(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBudgetRequestRequestTypeDef](./type_defs.md#deletebudgetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBudgetRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_budget(**kwargs)
+```
 
-<a id="delete\_budget\_action"></a>
+1. See [:material-code-braces: DeleteBudgetRequestRequestTypeDef](./type_defs.md#deletebudgetrequestrequesttypedef) 
 
-### delete_budget_action
+### delete\_budget\_action
 
 Deletes a budget action.
 
-Type annotations for `boto3.client("budgets").delete_budget_action` method.
+Type annotations and code completion for `#!python boto3.client("budgets").delete_budget_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget_action)
 
-Boto3 documentation:
-[Budgets.Client.delete_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_budget_action)
+```python title="Method definition"
+def delete_budget_action(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+) -> DeleteBudgetActionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBudgetActionRequestRequestTypeDef](./type_defs.md#deletebudgetactionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteBudgetActionResponseTypeDef](./type_defs.md#deletebudgetactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `ActionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBudgetActionRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "ActionId": ...,
+}
 
-Returns
-[DeleteBudgetActionResponseTypeDef](./type_defs.md#deletebudgetactionresponsetypedef).
+parent.delete_budget_action(**kwargs)
+```
 
-<a id="delete\_notification"></a>
+1. See [:material-code-braces: DeleteBudgetActionRequestRequestTypeDef](./type_defs.md#deletebudgetactionrequestrequesttypedef) 
 
-### delete_notification
+### delete\_notification
 
 Deletes a notification.
 
-Type annotations for `boto3.client("budgets").delete_notification` method.
+Type annotations and code completion for `#!python boto3.client("budgets").delete_notification` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_notification)
 
-Boto3 documentation:
-[Budgets.Client.delete_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_notification)
+```python title="Method definition"
+def delete_notification(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteNotificationRequestRequestTypeDef](./type_defs.md#deletenotificationrequestrequesttypedef).
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNotificationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "Notification": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_notification(**kwargs)
+```
 
-<a id="delete\_subscriber"></a>
+1. See [:material-code-braces: DeleteNotificationRequestRequestTypeDef](./type_defs.md#deletenotificationrequestrequesttypedef) 
 
-### delete_subscriber
+### delete\_subscriber
 
 Deletes a subscriber.
 
-Type annotations for `boto3.client("budgets").delete_subscriber` method.
+Type annotations and code completion for `#!python boto3.client("budgets").delete_subscriber` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_subscriber)
 
-Boto3 documentation:
-[Budgets.Client.delete_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.delete_subscriber)
+```python title="Method definition"
+def delete_subscriber(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    Subscriber: SubscriberTypeDef,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSubscriberRequestRequestTypeDef](./type_defs.md#deletesubscriberrequestrequesttypedef).
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-  *(required)*
-- `Subscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSubscriberRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "Notification": ...,
+    "Subscriber": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_subscriber(**kwargs)
+```
 
-<a id="describe\_budget"></a>
+1. See [:material-code-braces: DeleteSubscriberRequestRequestTypeDef](./type_defs.md#deletesubscriberrequestrequesttypedef) 
 
-### describe_budget
+### describe\_budget
 
 Describes a budget.
 
-Type annotations for `boto3.client("budgets").describe_budget` method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_budget` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget)
 
-Boto3 documentation:
-[Budgets.Client.describe_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget)
+```python title="Method definition"
+def describe_budget(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+) -> DescribeBudgetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBudgetRequestRequestTypeDef](./type_defs.md#describebudgetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBudgetResponseTypeDef](./type_defs.md#describebudgetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+}
 
-Returns
-[DescribeBudgetResponseTypeDef](./type_defs.md#describebudgetresponsetypedef).
+parent.describe_budget(**kwargs)
+```
 
-<a id="describe\_budget\_action"></a>
+1. See [:material-code-braces: DescribeBudgetRequestRequestTypeDef](./type_defs.md#describebudgetrequestrequesttypedef) 
 
-### describe_budget_action
+### describe\_budget\_action
 
 Describes a budget action detail.
 
-Type annotations for `boto3.client("budgets").describe_budget_action` method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_budget_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action)
 
-Boto3 documentation:
-[Budgets.Client.describe_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action)
+```python title="Method definition"
+def describe_budget_action(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+) -> DescribeBudgetActionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBudgetActionRequestRequestTypeDef](./type_defs.md#describebudgetactionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBudgetActionResponseTypeDef](./type_defs.md#describebudgetactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `ActionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetActionRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "ActionId": ...,
+}
 
-Returns
-[DescribeBudgetActionResponseTypeDef](./type_defs.md#describebudgetactionresponsetypedef).
+parent.describe_budget_action(**kwargs)
+```
 
-<a id="describe\_budget\_action\_histories"></a>
+1. See [:material-code-braces: DescribeBudgetActionRequestRequestTypeDef](./type_defs.md#describebudgetactionrequestrequesttypedef) 
 
-### describe_budget_action_histories
+### describe\_budget\_action\_histories
 
 Describes a budget action history detail.
 
-Type annotations for `boto3.client("budgets").describe_budget_action_histories`
-method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_budget_action_histories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories)
 
-Boto3 documentation:
-[Budgets.Client.describe_budget_action_histories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_action_histories)
+```python title="Method definition"
+def describe_budget_action_histories(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    TimePeriod: TimePeriodTypeDef = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeBudgetActionHistoriesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBudgetActionHistoriesRequestRequestTypeDef](./type_defs.md#describebudgetactionhistoriesrequestrequesttypedef).
+1. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
+2. See [:material-code-braces: DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `ActionId`: `str` *(required)*
-- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetActionHistoriesRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "ActionId": ...,
+}
 
-Returns
-[DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef).
+parent.describe_budget_action_histories(**kwargs)
+```
 
-<a id="describe\_budget\_actions\_for\_account"></a>
+1. See [:material-code-braces: DescribeBudgetActionHistoriesRequestRequestTypeDef](./type_defs.md#describebudgetactionhistoriesrequestrequesttypedef) 
 
-### describe_budget_actions_for_account
+### describe\_budget\_actions\_for\_account
 
 Describes all of the budget actions for an account.
 
-Type annotations for
-`boto3.client("budgets").describe_budget_actions_for_account` method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_budget_actions_for_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account)
 
-Boto3 documentation:
-[Budgets.Client.describe_budget_actions_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_account)
+```python title="Method definition"
+def describe_budget_actions_for_account(
+    self,
+    *,
+    AccountId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeBudgetActionsForAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBudgetActionsForAccountRequestRequestTypeDef](./type_defs.md#describebudgetactionsforaccountrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetActionsForAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef).
+parent.describe_budget_actions_for_account(**kwargs)
+```
 
-<a id="describe\_budget\_actions\_for\_budget"></a>
+1. See [:material-code-braces: DescribeBudgetActionsForAccountRequestRequestTypeDef](./type_defs.md#describebudgetactionsforaccountrequestrequesttypedef) 
 
-### describe_budget_actions_for_budget
+### describe\_budget\_actions\_for\_budget
 
 Describes all of the budget actions for a budget.
 
-Type annotations for
-`boto3.client("budgets").describe_budget_actions_for_budget` method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_budget_actions_for_budget` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget)
 
-Boto3 documentation:
-[Budgets.Client.describe_budget_actions_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_actions_for_budget)
+```python title="Method definition"
+def describe_budget_actions_for_budget(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeBudgetActionsForBudgetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBudgetActionsForBudgetRequestRequestTypeDef](./type_defs.md#describebudgetactionsforbudgetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetActionsForBudgetRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+}
 
-Returns
-[DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef).
+parent.describe_budget_actions_for_budget(**kwargs)
+```
 
-<a id="describe\_budget\_notifications\_for\_account"></a>
+1. See [:material-code-braces: DescribeBudgetActionsForBudgetRequestRequestTypeDef](./type_defs.md#describebudgetactionsforbudgetrequestrequesttypedef) 
 
-### describe_budget_notifications_for_account
+### describe\_budget\_notifications\_for\_account
 
 Lists the budget names and notifications that are associated with an account.
 
-Type annotations for
-`boto3.client("budgets").describe_budget_notifications_for_account` method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_budget_notifications_for_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_notifications_for_account)
 
-Boto3 documentation:
-[Budgets.Client.describe_budget_notifications_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_notifications_for_account)
+```python title="Method definition"
+def describe_budget_notifications_for_account(
+    self,
+    *,
+    AccountId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeBudgetNotificationsForAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBudgetNotificationsForAccountRequestRequestTypeDef](./type_defs.md#describebudgetnotificationsforaccountrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBudgetNotificationsForAccountResponseTypeDef](./type_defs.md#describebudgetnotificationsforaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetNotificationsForAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[DescribeBudgetNotificationsForAccountResponseTypeDef](./type_defs.md#describebudgetnotificationsforaccountresponsetypedef).
+parent.describe_budget_notifications_for_account(**kwargs)
+```
 
-<a id="describe\_budget\_performance\_history"></a>
+1. See [:material-code-braces: DescribeBudgetNotificationsForAccountRequestRequestTypeDef](./type_defs.md#describebudgetnotificationsforaccountrequestrequesttypedef) 
 
-### describe_budget_performance_history
+### describe\_budget\_performance\_history
 
 Describes the history for `DAILY` , `MONTHLY` , and `QUARTERLY` budgets.
 
-Type annotations for
-`boto3.client("budgets").describe_budget_performance_history` method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_budget_performance_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history)
 
-Boto3 documentation:
-[Budgets.Client.describe_budget_performance_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_performance_history)
+```python title="Method definition"
+def describe_budget_performance_history(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    TimePeriod: TimePeriodTypeDef = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeBudgetPerformanceHistoryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBudgetPerformanceHistoryRequestRequestTypeDef](./type_defs.md#describebudgetperformancehistoryrequestrequesttypedef).
+1. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
+2. See [:material-code-braces: DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetPerformanceHistoryRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+}
 
-Returns
-[DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef).
+parent.describe_budget_performance_history(**kwargs)
+```
 
-<a id="describe\_budgets"></a>
+1. See [:material-code-braces: DescribeBudgetPerformanceHistoryRequestRequestTypeDef](./type_defs.md#describebudgetperformancehistoryrequestrequesttypedef) 
 
-### describe_budgets
+### describe\_budgets
 
 Lists the budgets that are associated with an account.
 
-Type annotations for `boto3.client("budgets").describe_budgets` method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_budgets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budgets)
 
-Boto3 documentation:
-[Budgets.Client.describe_budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budgets)
+```python title="Method definition"
+def describe_budgets(
+    self,
+    *,
+    AccountId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeBudgetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBudgetsRequestRequestTypeDef](./type_defs.md#describebudgetsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef).
+parent.describe_budgets(**kwargs)
+```
 
-<a id="describe\_notifications\_for\_budget"></a>
+1. See [:material-code-braces: DescribeBudgetsRequestRequestTypeDef](./type_defs.md#describebudgetsrequestrequesttypedef) 
 
-### describe_notifications_for_budget
+### describe\_notifications\_for\_budget
 
 Lists the notifications that are associated with a budget.
 
-Type annotations for
-`boto3.client("budgets").describe_notifications_for_budget` method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_notifications_for_budget` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget)
 
-Boto3 documentation:
-[Budgets.Client.describe_notifications_for_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_notifications_for_budget)
+```python title="Method definition"
+def describe_notifications_for_budget(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeNotificationsForBudgetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNotificationsForBudgetRequestRequestTypeDef](./type_defs.md#describenotificationsforbudgetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeNotificationsForBudgetRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+}
 
-Returns
-[DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef).
+parent.describe_notifications_for_budget(**kwargs)
+```
 
-<a id="describe\_subscribers\_for\_notification"></a>
+1. See [:material-code-braces: DescribeNotificationsForBudgetRequestRequestTypeDef](./type_defs.md#describenotificationsforbudgetrequestrequesttypedef) 
 
-### describe_subscribers_for_notification
+### describe\_subscribers\_for\_notification
 
 Lists the subscribers that are associated with a notification.
 
-Type annotations for
-`boto3.client("budgets").describe_subscribers_for_notification` method.
+Type annotations and code completion for `#!python boto3.client("budgets").describe_subscribers_for_notification` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification)
 
-Boto3 documentation:
-[Budgets.Client.describe_subscribers_for_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_subscribers_for_notification)
+```python title="Method definition"
+def describe_subscribers_for_notification(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeSubscribersForNotificationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSubscribersForNotificationRequestRequestTypeDef](./type_defs.md#describesubscribersfornotificationrequestrequesttypedef).
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-  *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSubscribersForNotificationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "Notification": ...,
+}
 
-Returns
-[DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef).
+parent.describe_subscribers_for_notification(**kwargs)
+```
 
-<a id="execute\_budget\_action"></a>
+1. See [:material-code-braces: DescribeSubscribersForNotificationRequestRequestTypeDef](./type_defs.md#describesubscribersfornotificationrequestrequesttypedef) 
 
-### execute_budget_action
+### execute\_budget\_action
 
 Executes a budget action.
 
-Type annotations for `boto3.client("budgets").execute_budget_action` method.
+Type annotations and code completion for `#!python boto3.client("budgets").execute_budget_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.execute_budget_action)
 
-Boto3 documentation:
-[Budgets.Client.execute_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.execute_budget_action)
+```python title="Method definition"
+def execute_budget_action(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    ExecutionType: ExecutionTypeType,  # (1)
+) -> ExecuteBudgetActionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ExecuteBudgetActionRequestRequestTypeDef](./type_defs.md#executebudgetactionrequestrequesttypedef).
+1. See [:material-code-brackets: ExecutionTypeType](./literals.md#executiontypetype) 
+2. See [:material-code-braces: ExecuteBudgetActionResponseTypeDef](./type_defs.md#executebudgetactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `ActionId`: `str` *(required)*
-- `ExecutionType`: [ExecutionTypeType](./literals.md#executiontypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ExecuteBudgetActionRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "ActionId": ...,
+    "ExecutionType": ...,
+}
 
-Returns
-[ExecuteBudgetActionResponseTypeDef](./type_defs.md#executebudgetactionresponsetypedef).
+parent.execute_budget_action(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExecuteBudgetActionRequestRequestTypeDef](./type_defs.md#executebudgetactionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("budgets").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("budgets").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Budgets.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="update\_budget"></a>
-
-### update_budget
+### update\_budget
 
 Updates a budget.
 
-Type annotations for `boto3.client("budgets").update_budget` method.
+Type annotations and code completion for `#!python boto3.client("budgets").update_budget` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget)
 
-Boto3 documentation:
-[Budgets.Client.update_budget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget)
+```python title="Method definition"
+def update_budget(
+    self,
+    *,
+    AccountId: str,
+    NewBudget: BudgetTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateBudgetRequestRequestTypeDef](./type_defs.md#updatebudgetrequestrequesttypedef).
+1. See [:material-code-braces: BudgetTypeDef](./type_defs.md#budgettypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `NewBudget`: [BudgetTypeDef](./type_defs.md#budgettypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateBudgetRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "NewBudget": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_budget(**kwargs)
+```
 
-<a id="update\_budget\_action"></a>
+1. See [:material-code-braces: UpdateBudgetRequestRequestTypeDef](./type_defs.md#updatebudgetrequestrequesttypedef) 
 
-### update_budget_action
+### update\_budget\_action
 
 Updates a budget action.
 
-Type annotations for `boto3.client("budgets").update_budget_action` method.
+Type annotations and code completion for `#!python boto3.client("budgets").update_budget_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget_action)
 
-Boto3 documentation:
-[Budgets.Client.update_budget_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_budget_action)
+```python title="Method definition"
+def update_budget_action(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    NotificationType: NotificationTypeType = ...,  # (1)
+    ActionThreshold: ActionThresholdTypeDef = ...,  # (2)
+    Definition: DefinitionTypeDef = ...,  # (3)
+    ExecutionRoleArn: str = ...,
+    ApprovalModel: ApprovalModelType = ...,  # (4)
+    Subscribers: Sequence[SubscriberTypeDef] = ...,  # (5)
+) -> UpdateBudgetActionResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBudgetActionRequestRequestTypeDef](./type_defs.md#updatebudgetactionrequestrequesttypedef).
+1. See [:material-code-brackets: NotificationTypeType](./literals.md#notificationtypetype) 
+2. See [:material-code-braces: ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef) 
+3. See [:material-code-braces: DefinitionTypeDef](./type_defs.md#definitiontypedef) 
+4. See [:material-code-brackets: ApprovalModelType](./literals.md#approvalmodeltype) 
+5. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
+6. See [:material-code-braces: UpdateBudgetActionResponseTypeDef](./type_defs.md#updatebudgetactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `ActionId`: `str` *(required)*
-- `NotificationType`:
-  [NotificationTypeType](./literals.md#notificationtypetype)
-- `ActionThreshold`:
-  [ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef)
-- `Definition`: [DefinitionTypeDef](./type_defs.md#definitiontypedef)
-- `ExecutionRoleArn`: `str`
-- `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateBudgetActionRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "ActionId": ...,
+}
 
-Returns
-[UpdateBudgetActionResponseTypeDef](./type_defs.md#updatebudgetactionresponsetypedef).
+parent.update_budget_action(**kwargs)
+```
 
-<a id="update\_notification"></a>
+1. See [:material-code-braces: UpdateBudgetActionRequestRequestTypeDef](./type_defs.md#updatebudgetactionrequestrequesttypedef) 
 
-### update_notification
+### update\_notification
 
 Updates a notification.
 
-Type annotations for `boto3.client("budgets").update_notification` method.
+Type annotations and code completion for `#!python boto3.client("budgets").update_notification` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_notification)
 
-Boto3 documentation:
-[Budgets.Client.update_notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_notification)
+```python title="Method definition"
+def update_notification(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    OldNotification: NotificationTypeDef,  # (1)
+    NewNotification: NotificationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateNotificationRequestRequestTypeDef](./type_defs.md#updatenotificationrequestrequesttypedef).
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `OldNotification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-  *(required)*
-- `NewNotification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateNotificationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "OldNotification": ...,
+    "NewNotification": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_notification(**kwargs)
+```
 
-<a id="update\_subscriber"></a>
+1. See [:material-code-braces: UpdateNotificationRequestRequestTypeDef](./type_defs.md#updatenotificationrequestrequesttypedef) 
 
-### update_subscriber
+### update\_subscriber
 
 Updates a subscriber.
 
-Type annotations for `boto3.client("budgets").update_subscriber` method.
+Type annotations and code completion for `#!python boto3.client("budgets").update_subscriber` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_subscriber)
 
-Boto3 documentation:
-[Budgets.Client.update_subscriber](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.update_subscriber)
+```python title="Method definition"
+def update_subscriber(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    OldSubscriber: SubscriberTypeDef,  # (2)
+    NewSubscriber: SubscriberTypeDef,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSubscriberRequestRequestTypeDef](./type_defs.md#updatesubscriberrequestrequesttypedef).
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
+3. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-  *(required)*
-- `OldSubscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
-  *(required)*
-- `NewSubscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSubscriberRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "Notification": ...,
+    "OldSubscriber": ...,
+    "NewSubscriber": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_subscriber(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateSubscriberRequestRequestTypeDef](./type_defs.md#updatesubscriberrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("budgets").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("budgets").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_budget_action_histories")` ->
-  [DescribeBudgetActionHistoriesPaginator](./paginators.md#describebudgetactionhistoriespaginator)
-- `client.get_paginator("describe_budget_actions_for_account")` ->
-  [DescribeBudgetActionsForAccountPaginator](./paginators.md#describebudgetactionsforaccountpaginator)
-- `client.get_paginator("describe_budget_actions_for_budget")` ->
-  [DescribeBudgetActionsForBudgetPaginator](./paginators.md#describebudgetactionsforbudgetpaginator)
-- `client.get_paginator("describe_budget_notifications_for_account")` ->
-  [DescribeBudgetNotificationsForAccountPaginator](./paginators.md#describebudgetnotificationsforaccountpaginator)
-- `client.get_paginator("describe_budget_performance_history")` ->
-  [DescribeBudgetPerformanceHistoryPaginator](./paginators.md#describebudgetperformancehistorypaginator)
-- `client.get_paginator("describe_budgets")` ->
-  [DescribeBudgetsPaginator](./paginators.md#describebudgetspaginator)
-- `client.get_paginator("describe_notifications_for_budget")` ->
-  [DescribeNotificationsForBudgetPaginator](./paginators.md#describenotificationsforbudgetpaginator)
-- `client.get_paginator("describe_subscribers_for_notification")` ->
-  [DescribeSubscribersForNotificationPaginator](./paginators.md#describesubscribersfornotificationpaginator)
+- `client.get_paginator("describe_budget_action_histories")` -> [DescribeBudgetActionHistoriesPaginator](./paginators.md#describebudgetactionhistoriespaginator)
+- `client.get_paginator("describe_budget_actions_for_account")` -> [DescribeBudgetActionsForAccountPaginator](./paginators.md#describebudgetactionsforaccountpaginator)
+- `client.get_paginator("describe_budget_actions_for_budget")` -> [DescribeBudgetActionsForBudgetPaginator](./paginators.md#describebudgetactionsforbudgetpaginator)
+- `client.get_paginator("describe_budget_notifications_for_account")` -> [DescribeBudgetNotificationsForAccountPaginator](./paginators.md#describebudgetnotificationsforaccountpaginator)
+- `client.get_paginator("describe_budget_performance_history")` -> [DescribeBudgetPerformanceHistoryPaginator](./paginators.md#describebudgetperformancehistorypaginator)
+- `client.get_paginator("describe_budgets")` -> [DescribeBudgetsPaginator](./paginators.md#describebudgetspaginator)
+- `client.get_paginator("describe_notifications_for_budget")` -> [DescribeNotificationsForBudgetPaginator](./paginators.md#describenotificationsforbudgetpaginator)
+- `client.get_paginator("describe_subscribers_for_notification")` -> [DescribeSubscribersForNotificationPaginator](./paginators.md#describesubscribersfornotificationpaginator)
+
+
+

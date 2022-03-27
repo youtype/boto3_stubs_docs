@@ -1,46 +1,20 @@
-<a id="type-annotations-for-boto3-cloudwatch-module"></a>
-
-# Type annotations for boto3 CloudWatch module
+#  CloudWatch module
 
 > [Index](../README.md) > CloudWatch
 
-Auto-generated documentation for
-[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
-type annotations stubs module
-[mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+!!! note ""
 
-- [Type annotations for boto3 CloudWatch module](#type-annotations-for-boto3-cloudwatch-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudWatchClient](#cloudwatchclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [CloudWatchServiceResource](#cloudwatchserviceresource)
-    - [Collections](#collections)
-    - [Resources](#resources)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+    type annotations stubs module [mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudWatch`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -60,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cloudwatch]'
 python -m pip install mypy-boto3-cloudwatch
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -68,147 +42,37 @@ python -m pip install mypy-boto3-cloudwatch
 python -m pip uninstall -y mypy-boto3-cloudwatch
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudwatchclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudWatchClient
 
-Type annotations for `boto3.client("cloudwatch")` as
-[CloudWatchClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cloudwatch")` as [CloudWatchClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cloudwatch.client import CloudWatchClient
+
+def get_client() -> CloudWatchClient:
+    return Session().cleint("cloudwatch")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [delete_alarms](./client.md#delete_alarms)
-- [delete_anomaly_detector](./client.md#delete_anomaly_detector)
-- [delete_dashboards](./client.md#delete_dashboards)
-- [delete_insight_rules](./client.md#delete_insight_rules)
-- [delete_metric_stream](./client.md#delete_metric_stream)
-- [describe_alarm_history](./client.md#describe_alarm_history)
-- [describe_alarms](./client.md#describe_alarms)
-- [describe_alarms_for_metric](./client.md#describe_alarms_for_metric)
-- [describe_anomaly_detectors](./client.md#describe_anomaly_detectors)
-- [describe_insight_rules](./client.md#describe_insight_rules)
-- [disable_alarm_actions](./client.md#disable_alarm_actions)
-- [disable_insight_rules](./client.md#disable_insight_rules)
-- [enable_alarm_actions](./client.md#enable_alarm_actions)
-- [enable_insight_rules](./client.md#enable_insight_rules)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_dashboard](./client.md#get_dashboard)
-- [get_insight_rule_report](./client.md#get_insight_rule_report)
-- [get_metric_data](./client.md#get_metric_data)
-- [get_metric_statistics](./client.md#get_metric_statistics)
-- [get_metric_stream](./client.md#get_metric_stream)
-- [get_metric_widget_image](./client.md#get_metric_widget_image)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_dashboards](./client.md#list_dashboards)
-- [list_metric_streams](./client.md#list_metric_streams)
-- [list_metrics](./client.md#list_metrics)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_anomaly_detector](./client.md#put_anomaly_detector)
-- [put_composite_alarm](./client.md#put_composite_alarm)
-- [put_dashboard](./client.md#put_dashboard)
-- [put_insight_rule](./client.md#put_insight_rule)
-- [put_metric_alarm](./client.md#put_metric_alarm)
-- [put_metric_data](./client.md#put_metric_data)
-- [put_metric_stream](./client.md#put_metric_stream)
-- [set_alarm_state](./client.md#set_alarm_state)
-- [start_metric_streams](./client.md#start_metric_streams)
-- [stop_metric_streams](./client.md#stop_metric_streams)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CloudWatchClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentModificationException
-- DashboardInvalidInputError
-- DashboardNotFoundError
-- InternalServiceFault
-- InvalidFormatFault
-- InvalidNextToken
-- InvalidParameterCombinationException
-- InvalidParameterValueException
-- LimitExceededException
-- LimitExceededFault
-- MissingRequiredParameterException
-- ResourceNotFound
-- ResourceNotFoundException
-
-<a id="cloudwatchserviceresource"></a>
-
-## CloudWatchServiceResource
-
-Type annotations for `boto3.resource("cloudwatch")` as
-[CloudWatchServiceResource](./service_resource.md#cloudwatchserviceresource)
-
-Can be used directly:
-
-```python
-from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
-```
-
-<a id="collections"></a>
-
-### Collections
-
-Type annotations for collections from `boto3.resource("cloudwatch").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_cloudwatch.service_resource import ServiceResourceAlarmsCollection, ...
-```
-
-- [ServiceResourceAlarmsCollection](./service_resource.md#cloudwatchserviceresourcealarms)
-- [ServiceResourceMetricsCollection](./service_resource.md#cloudwatchserviceresourcemetrics)
-
-<a id="resources"></a>
-
-### Resources
-
-Type annotations for additional resources from
-`boto3.resource("cloudwatch").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_cloudwatch.service_resource import Alarm, ...
-```
-
-- [Alarm](./service_resource.md#alarm)
-- [Metric](./service_resource.md#metric)
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("cloudwatch").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cloudwatch").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloudwatch.paginator import DescribeAlarmHistoryPaginator, ...
+from mypy_boto3_cloudwatch.paginator import DescribeAlarmHistoryPaginator
+
+def get_describe_alarm_history_paginator() -> DescribeAlarmHistoryPaginator:
+    return Session().client("cloudwatch").get_paginator("describe_alarm_history"))
 ```
 
 - [DescribeAlarmHistoryPaginator](./paginators.md#describealarmhistorypaginator)
@@ -217,32 +81,96 @@ from mypy_boto3_cloudwatch.paginator import DescribeAlarmHistoryPaginator, ...
 - [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
 - [ListMetricsPaginator](./paginators.md#listmetricspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("cloudwatch").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("cloudwatch").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloudwatch.waiter import AlarmExistsWaiter, ...
+from mypy_boto3_cloudwatch.waiter import AlarmExistsWaiter
+
+def get_alarm_exists_waiter() -> AlarmExistsWaiter:
+    return Session().client("cloudwatch").get_waiter("alarm_exists")
 ```
 
 - [AlarmExistsWaiter](./waiters.md#alarmexistswaiter)
 - [CompositeAlarmExistsWaiter](./waiters.md#compositealarmexistswaiter)
 
-<a id="literals"></a>
+
+
+
+
+## CloudWatchServiceResource
+
+Type annotations and code completion for `#!python boto3.resource("cloudwatch")` as
+[CloudWatchServiceResource](./service_resource.md#cloudwatchserviceresource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
+
+def get_cloudwatch_resource() -> CloudWatchServiceResource:
+    return Session().resource("cloudwatch")
+```
+
+
+### Collections
+
+Type annotations and code completion for collections
+from `#!python boto3.resource("cloudwatch").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudwatch.service_resource import ServiceResourceAlarmsCollection
+
+def get_collection() -> ServiceResourceAlarmsCollection:
+    return Session().resource("cloudwatch").alarms
+```
+
+- [ServiceResourceAlarmsCollection](./service_resource.md#cloudwatchserviceresourcealarms)
+- [ServiceResourceMetricsCollection](./service_resource.md#cloudwatchserviceresourcemetrics)
+
+
+
+
+### Resources
+
+Type annotations and code completion for additional resources
+from `#!python boto3.resource("cloudwatch").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudwatch.service_resource import Alarm
+
+def get_resource() -> Alarm:
+    return Session().resource("cloudwatch").Alarm(...)
+```
+
+- [Alarm](./service_resource.md#alarm)
+- [Metric](./service_resource.md#metric)
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudwatch.literals import AlarmExistsWaiterName
 
-```python
-from mypy_boto3_cloudwatch.literals import AlarmExistsWaiterName, ...
+def get_value() -> AlarmExistsWaiterName:
+    return "alarm_exists"
 ```
 
 - [AlarmExistsWaiterName](./literals.md#alarmexistswaitername)
@@ -269,18 +197,22 @@ from mypy_boto3_cloudwatch.literals import AlarmExistsWaiterName, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudwatch.type_defs import AlarmHistoryItemTypeDef
 
-```python
-from mypy_boto3_cloudwatch.type_defs import AlarmHistoryItemTypeDef, ...
+def get_value() -> AlarmHistoryItemTypeDef:
+    return {
+        "AlarmName": ...,
+    }
 ```
 
 - [AlarmHistoryItemTypeDef](./type_defs.md#alarmhistoryitemtypedef)
@@ -297,10 +229,14 @@ from mypy_boto3_cloudwatch.type_defs import AlarmHistoryItemTypeDef, ...
 - [DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef)
 - [DeleteMetricStreamInputRequestTypeDef](./type_defs.md#deletemetricstreaminputrequesttypedef)
 - [DescribeAlarmHistoryInputAlarmDescribeHistoryTypeDef](./type_defs.md#describealarmhistoryinputalarmdescribehistorytypedef)
+- [DescribeAlarmHistoryInputDescribeAlarmHistoryPaginateTypeDef](./type_defs.md#describealarmhistoryinputdescribealarmhistorypaginatetypedef)
 - [DescribeAlarmHistoryInputRequestTypeDef](./type_defs.md#describealarmhistoryinputrequesttypedef)
 - [DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef)
 - [DescribeAlarmsForMetricInputRequestTypeDef](./type_defs.md#describealarmsformetricinputrequesttypedef)
 - [DescribeAlarmsForMetricOutputTypeDef](./type_defs.md#describealarmsformetricoutputtypedef)
+- [DescribeAlarmsInputAlarmExistsWaitTypeDef](./type_defs.md#describealarmsinputalarmexistswaittypedef)
+- [DescribeAlarmsInputCompositeAlarmExistsWaitTypeDef](./type_defs.md#describealarmsinputcompositealarmexistswaittypedef)
+- [DescribeAlarmsInputDescribeAlarmsPaginateTypeDef](./type_defs.md#describealarmsinputdescribealarmspaginatetypedef)
 - [DescribeAlarmsInputRequestTypeDef](./type_defs.md#describealarmsinputrequesttypedef)
 - [DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef)
 - [DescribeAnomalyDetectorsInputRequestTypeDef](./type_defs.md#describeanomalydetectorsinputrequesttypedef)
@@ -319,6 +255,7 @@ from mypy_boto3_cloudwatch.type_defs import AlarmHistoryItemTypeDef, ...
 - [GetDashboardOutputTypeDef](./type_defs.md#getdashboardoutputtypedef)
 - [GetInsightRuleReportInputRequestTypeDef](./type_defs.md#getinsightrulereportinputrequesttypedef)
 - [GetInsightRuleReportOutputTypeDef](./type_defs.md#getinsightrulereportoutputtypedef)
+- [GetMetricDataInputGetMetricDataPaginateTypeDef](./type_defs.md#getmetricdatainputgetmetricdatapaginatetypedef)
 - [GetMetricDataInputRequestTypeDef](./type_defs.md#getmetricdatainputrequesttypedef)
 - [GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef)
 - [GetMetricStatisticsInputMetricGetStatisticsTypeDef](./type_defs.md#getmetricstatisticsinputmetricgetstatisticstypedef)
@@ -333,10 +270,12 @@ from mypy_boto3_cloudwatch.type_defs import AlarmHistoryItemTypeDef, ...
 - [InsightRuleMetricDatapointTypeDef](./type_defs.md#insightrulemetricdatapointtypedef)
 - [InsightRuleTypeDef](./type_defs.md#insightruletypedef)
 - [LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef)
+- [ListDashboardsInputListDashboardsPaginateTypeDef](./type_defs.md#listdashboardsinputlistdashboardspaginatetypedef)
 - [ListDashboardsInputRequestTypeDef](./type_defs.md#listdashboardsinputrequesttypedef)
 - [ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef)
 - [ListMetricStreamsInputRequestTypeDef](./type_defs.md#listmetricstreamsinputrequesttypedef)
 - [ListMetricStreamsOutputTypeDef](./type_defs.md#listmetricstreamsoutputtypedef)
+- [ListMetricsInputListMetricsPaginateTypeDef](./type_defs.md#listmetricsinputlistmetricspaginatetypedef)
 - [ListMetricsInputRequestTypeDef](./type_defs.md#listmetricsinputrequesttypedef)
 - [ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
@@ -377,3 +316,4 @@ from mypy_boto3_cloudwatch.type_defs import AlarmHistoryItemTypeDef, ...
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

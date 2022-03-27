@@ -1,1149 +1,1202 @@
-<a id="literals-for-boto3-iam-module"></a>
-
-# Literals for boto3 IAM module
+# Literals
 
 > [Index](../README.md) > [IAM](./README.md) > Literals
 
-Auto-generated documentation for
-[IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
-type annotations stubs module
-[mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
+!!! note ""
 
-- [Literals for boto3 IAM module](#literals-for-boto3-iam-module)
-  - [AccessAdvisorUsageGranularityTypeType](#accessadvisorusagegranularitytypetype)
-  - [ContextKeyTypeEnumType](#contextkeytypeenumtype)
-  - [DeletionTaskStatusTypeType](#deletiontaskstatustypetype)
-  - [EntityTypeType](#entitytypetype)
-  - [GetAccountAuthorizationDetailsPaginatorName](#getaccountauthorizationdetailspaginatorname)
-  - [GetGroupPaginatorName](#getgrouppaginatorname)
-  - [InstanceProfileExistsWaiterName](#instanceprofileexistswaitername)
-  - [ListAccessKeysPaginatorName](#listaccesskeyspaginatorname)
-  - [ListAccountAliasesPaginatorName](#listaccountaliasespaginatorname)
-  - [ListAttachedGroupPoliciesPaginatorName](#listattachedgrouppoliciespaginatorname)
-  - [ListAttachedRolePoliciesPaginatorName](#listattachedrolepoliciespaginatorname)
-  - [ListAttachedUserPoliciesPaginatorName](#listattacheduserpoliciespaginatorname)
-  - [ListEntitiesForPolicyPaginatorName](#listentitiesforpolicypaginatorname)
-  - [ListGroupPoliciesPaginatorName](#listgrouppoliciespaginatorname)
-  - [ListGroupsForUserPaginatorName](#listgroupsforuserpaginatorname)
-  - [ListGroupsPaginatorName](#listgroupspaginatorname)
-  - [ListInstanceProfilesForRolePaginatorName](#listinstanceprofilesforrolepaginatorname)
-  - [ListInstanceProfilesPaginatorName](#listinstanceprofilespaginatorname)
-  - [ListMFADevicesPaginatorName](#listmfadevicespaginatorname)
-  - [ListPoliciesPaginatorName](#listpoliciespaginatorname)
-  - [ListPolicyVersionsPaginatorName](#listpolicyversionspaginatorname)
-  - [ListRolePoliciesPaginatorName](#listrolepoliciespaginatorname)
-  - [ListRolesPaginatorName](#listrolespaginatorname)
-  - [ListSSHPublicKeysPaginatorName](#listsshpublickeyspaginatorname)
-  - [ListServerCertificatesPaginatorName](#listservercertificatespaginatorname)
-  - [ListSigningCertificatesPaginatorName](#listsigningcertificatespaginatorname)
-  - [ListUserPoliciesPaginatorName](#listuserpoliciespaginatorname)
-  - [ListUserTagsPaginatorName](#listusertagspaginatorname)
-  - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [ListVirtualMFADevicesPaginatorName](#listvirtualmfadevicespaginatorname)
-  - [PermissionsBoundaryAttachmentTypeType](#permissionsboundaryattachmenttypetype)
-  - [PolicyEvaluationDecisionTypeType](#policyevaluationdecisiontypetype)
-  - [PolicyExistsWaiterName](#policyexistswaitername)
-  - [PolicySourceTypeType](#policysourcetypetype)
-  - [PolicyUsageTypeType](#policyusagetypetype)
-  - [ReportFormatTypeType](#reportformattypetype)
-  - [ReportStateTypeType](#reportstatetypetype)
-  - [RoleExistsWaiterName](#roleexistswaitername)
-  - [SimulateCustomPolicyPaginatorName](#simulatecustompolicypaginatorname)
-  - [SimulatePrincipalPolicyPaginatorName](#simulateprincipalpolicypaginatorname)
-  - [UserExistsWaiterName](#userexistswaitername)
-  - [assignmentStatusTypeType](#assignmentstatustypetype)
-  - [encodingTypeType](#encodingtypetype)
-  - [globalEndpointTokenVersionType](#globalendpointtokenversiontype)
-  - [jobStatusTypeType](#jobstatustypetype)
-  - [policyOwnerEntityTypeType](#policyownerentitytypetype)
-  - [policyScopeTypeType](#policyscopetypetype)
-  - [policyTypeType](#policytypetype)
-  - [sortKeyTypeType](#sortkeytypetype)
-  - [statusTypeType](#statustypetype)
-  - [summaryKeyTypeType](#summarykeytypetype)
-  - [IAMServiceName](#iamservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="accessadvisorusagegranularitytypetype"></a>
+    Auto-generated documentation for [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
+    type annotations stubs module [mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
 
 ## AccessAdvisorUsageGranularityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import AccessAdvisorUsageGranularityTypeType
+
+def get_value() -> AccessAdvisorUsageGranularityTypeType:
+    return "ACTION_LEVEL"
 ```
 
-Values:
-
-- `ACTION_LEVEL`
-- `SERVICE_LEVEL`
-
-<a id="contextkeytypeenumtype"></a>
-
+```python title="Definition"
+AccessAdvisorUsageGranularityTypeType = Literal[
+    "ACTION_LEVEL",
+    "SERVICE_LEVEL",
+]
+```
 ## ContextKeyTypeEnumType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ContextKeyTypeEnumType
+
+def get_value() -> ContextKeyTypeEnumType:
+    return "binary"
 ```
 
-Values:
-
-- `binary`
-- `binaryList`
-- `boolean`
-- `booleanList`
-- `date`
-- `dateList`
-- `ip`
-- `ipList`
-- `numeric`
-- `numericList`
-- `string`
-- `stringList`
-
-<a id="deletiontaskstatustypetype"></a>
-
+```python title="Definition"
+ContextKeyTypeEnumType = Literal[
+    "binary",
+    "binaryList",
+    "boolean",
+    "booleanList",
+    "date",
+    "dateList",
+    "ip",
+    "ipList",
+    "numeric",
+    "numericList",
+    "string",
+    "stringList",
+]
+```
 ## DeletionTaskStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import DeletionTaskStatusTypeType
+
+def get_value() -> DeletionTaskStatusTypeType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `NOT_STARTED`
-- `SUCCEEDED`
-
-<a id="entitytypetype"></a>
-
+```python title="Definition"
+DeletionTaskStatusTypeType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "NOT_STARTED",
+    "SUCCEEDED",
+]
+```
 ## EntityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import EntityTypeType
+
+def get_value() -> EntityTypeType:
+    return "AWSManagedPolicy"
 ```
 
-Values:
-
-- `AWSManagedPolicy`
-- `Group`
-- `LocalManagedPolicy`
-- `Role`
-- `User`
-
-<a id="getaccountauthorizationdetailspaginatorname"></a>
-
+```python title="Definition"
+EntityTypeType = Literal[
+    "AWSManagedPolicy",
+    "Group",
+    "LocalManagedPolicy",
+    "Role",
+    "User",
+]
+```
 ## GetAccountAuthorizationDetailsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import GetAccountAuthorizationDetailsPaginatorName
+
+def get_value() -> GetAccountAuthorizationDetailsPaginatorName:
+    return "get_account_authorization_details"
 ```
 
-Values:
-
-- `get_account_authorization_details`
-
-<a id="getgrouppaginatorname"></a>
-
+```python title="Definition"
+GetAccountAuthorizationDetailsPaginatorName = Literal[
+    "get_account_authorization_details",
+]
+```
 ## GetGroupPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import GetGroupPaginatorName
+
+def get_value() -> GetGroupPaginatorName:
+    return "get_group"
 ```
 
-Values:
-
-- `get_group`
-
-<a id="instanceprofileexistswaitername"></a>
-
+```python title="Definition"
+GetGroupPaginatorName = Literal[
+    "get_group",
+]
+```
 ## InstanceProfileExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import InstanceProfileExistsWaiterName
+
+def get_value() -> InstanceProfileExistsWaiterName:
+    return "instance_profile_exists"
 ```
 
-Values:
-
-- `instance_profile_exists`
-
-<a id="listaccesskeyspaginatorname"></a>
-
+```python title="Definition"
+InstanceProfileExistsWaiterName = Literal[
+    "instance_profile_exists",
+]
+```
 ## ListAccessKeysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListAccessKeysPaginatorName
+
+def get_value() -> ListAccessKeysPaginatorName:
+    return "list_access_keys"
 ```
 
-Values:
-
-- `list_access_keys`
-
-<a id="listaccountaliasespaginatorname"></a>
-
+```python title="Definition"
+ListAccessKeysPaginatorName = Literal[
+    "list_access_keys",
+]
+```
 ## ListAccountAliasesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListAccountAliasesPaginatorName
+
+def get_value() -> ListAccountAliasesPaginatorName:
+    return "list_account_aliases"
 ```
 
-Values:
-
-- `list_account_aliases`
-
-<a id="listattachedgrouppoliciespaginatorname"></a>
-
+```python title="Definition"
+ListAccountAliasesPaginatorName = Literal[
+    "list_account_aliases",
+]
+```
 ## ListAttachedGroupPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListAttachedGroupPoliciesPaginatorName
+
+def get_value() -> ListAttachedGroupPoliciesPaginatorName:
+    return "list_attached_group_policies"
 ```
 
-Values:
-
-- `list_attached_group_policies`
-
-<a id="listattachedrolepoliciespaginatorname"></a>
-
+```python title="Definition"
+ListAttachedGroupPoliciesPaginatorName = Literal[
+    "list_attached_group_policies",
+]
+```
 ## ListAttachedRolePoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListAttachedRolePoliciesPaginatorName
+
+def get_value() -> ListAttachedRolePoliciesPaginatorName:
+    return "list_attached_role_policies"
 ```
 
-Values:
-
-- `list_attached_role_policies`
-
-<a id="listattacheduserpoliciespaginatorname"></a>
-
+```python title="Definition"
+ListAttachedRolePoliciesPaginatorName = Literal[
+    "list_attached_role_policies",
+]
+```
 ## ListAttachedUserPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListAttachedUserPoliciesPaginatorName
+
+def get_value() -> ListAttachedUserPoliciesPaginatorName:
+    return "list_attached_user_policies"
 ```
 
-Values:
-
-- `list_attached_user_policies`
-
-<a id="listentitiesforpolicypaginatorname"></a>
-
+```python title="Definition"
+ListAttachedUserPoliciesPaginatorName = Literal[
+    "list_attached_user_policies",
+]
+```
 ## ListEntitiesForPolicyPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListEntitiesForPolicyPaginatorName
+
+def get_value() -> ListEntitiesForPolicyPaginatorName:
+    return "list_entities_for_policy"
 ```
 
-Values:
-
-- `list_entities_for_policy`
-
-<a id="listgrouppoliciespaginatorname"></a>
-
+```python title="Definition"
+ListEntitiesForPolicyPaginatorName = Literal[
+    "list_entities_for_policy",
+]
+```
 ## ListGroupPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListGroupPoliciesPaginatorName
+
+def get_value() -> ListGroupPoliciesPaginatorName:
+    return "list_group_policies"
 ```
 
-Values:
-
-- `list_group_policies`
-
-<a id="listgroupsforuserpaginatorname"></a>
-
+```python title="Definition"
+ListGroupPoliciesPaginatorName = Literal[
+    "list_group_policies",
+]
+```
 ## ListGroupsForUserPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListGroupsForUserPaginatorName
+
+def get_value() -> ListGroupsForUserPaginatorName:
+    return "list_groups_for_user"
 ```
 
-Values:
-
-- `list_groups_for_user`
-
-<a id="listgroupspaginatorname"></a>
-
+```python title="Definition"
+ListGroupsForUserPaginatorName = Literal[
+    "list_groups_for_user",
+]
+```
 ## ListGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListGroupsPaginatorName
+
+def get_value() -> ListGroupsPaginatorName:
+    return "list_groups"
 ```
 
-Values:
-
-- `list_groups`
-
-<a id="listinstanceprofilesforrolepaginatorname"></a>
-
+```python title="Definition"
+ListGroupsPaginatorName = Literal[
+    "list_groups",
+]
+```
 ## ListInstanceProfilesForRolePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListInstanceProfilesForRolePaginatorName
+
+def get_value() -> ListInstanceProfilesForRolePaginatorName:
+    return "list_instance_profiles_for_role"
 ```
 
-Values:
-
-- `list_instance_profiles_for_role`
-
-<a id="listinstanceprofilespaginatorname"></a>
-
+```python title="Definition"
+ListInstanceProfilesForRolePaginatorName = Literal[
+    "list_instance_profiles_for_role",
+]
+```
 ## ListInstanceProfilesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListInstanceProfilesPaginatorName
+
+def get_value() -> ListInstanceProfilesPaginatorName:
+    return "list_instance_profiles"
 ```
 
-Values:
-
-- `list_instance_profiles`
-
-<a id="listmfadevicespaginatorname"></a>
-
+```python title="Definition"
+ListInstanceProfilesPaginatorName = Literal[
+    "list_instance_profiles",
+]
+```
 ## ListMFADevicesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListMFADevicesPaginatorName
+
+def get_value() -> ListMFADevicesPaginatorName:
+    return "list_mfa_devices"
 ```
 
-Values:
-
-- `list_mfa_devices`
-
-<a id="listpoliciespaginatorname"></a>
-
+```python title="Definition"
+ListMFADevicesPaginatorName = Literal[
+    "list_mfa_devices",
+]
+```
 ## ListPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListPoliciesPaginatorName
+
+def get_value() -> ListPoliciesPaginatorName:
+    return "list_policies"
 ```
 
-Values:
-
-- `list_policies`
-
-<a id="listpolicyversionspaginatorname"></a>
-
+```python title="Definition"
+ListPoliciesPaginatorName = Literal[
+    "list_policies",
+]
+```
 ## ListPolicyVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListPolicyVersionsPaginatorName
+
+def get_value() -> ListPolicyVersionsPaginatorName:
+    return "list_policy_versions"
 ```
 
-Values:
-
-- `list_policy_versions`
-
-<a id="listrolepoliciespaginatorname"></a>
-
+```python title="Definition"
+ListPolicyVersionsPaginatorName = Literal[
+    "list_policy_versions",
+]
+```
 ## ListRolePoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListRolePoliciesPaginatorName
+
+def get_value() -> ListRolePoliciesPaginatorName:
+    return "list_role_policies"
 ```
 
-Values:
-
-- `list_role_policies`
-
-<a id="listrolespaginatorname"></a>
-
+```python title="Definition"
+ListRolePoliciesPaginatorName = Literal[
+    "list_role_policies",
+]
+```
 ## ListRolesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListRolesPaginatorName
+
+def get_value() -> ListRolesPaginatorName:
+    return "list_roles"
 ```
 
-Values:
-
-- `list_roles`
-
-<a id="listsshpublickeyspaginatorname"></a>
-
+```python title="Definition"
+ListRolesPaginatorName = Literal[
+    "list_roles",
+]
+```
 ## ListSSHPublicKeysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListSSHPublicKeysPaginatorName
+
+def get_value() -> ListSSHPublicKeysPaginatorName:
+    return "list_ssh_public_keys"
 ```
 
-Values:
-
-- `list_ssh_public_keys`
-
-<a id="listservercertificatespaginatorname"></a>
-
+```python title="Definition"
+ListSSHPublicKeysPaginatorName = Literal[
+    "list_ssh_public_keys",
+]
+```
 ## ListServerCertificatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListServerCertificatesPaginatorName
+
+def get_value() -> ListServerCertificatesPaginatorName:
+    return "list_server_certificates"
 ```
 
-Values:
-
-- `list_server_certificates`
-
-<a id="listsigningcertificatespaginatorname"></a>
-
+```python title="Definition"
+ListServerCertificatesPaginatorName = Literal[
+    "list_server_certificates",
+]
+```
 ## ListSigningCertificatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListSigningCertificatesPaginatorName
+
+def get_value() -> ListSigningCertificatesPaginatorName:
+    return "list_signing_certificates"
 ```
 
-Values:
-
-- `list_signing_certificates`
-
-<a id="listuserpoliciespaginatorname"></a>
-
+```python title="Definition"
+ListSigningCertificatesPaginatorName = Literal[
+    "list_signing_certificates",
+]
+```
 ## ListUserPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListUserPoliciesPaginatorName
+
+def get_value() -> ListUserPoliciesPaginatorName:
+    return "list_user_policies"
 ```
 
-Values:
-
-- `list_user_policies`
-
-<a id="listusertagspaginatorname"></a>
-
+```python title="Definition"
+ListUserPoliciesPaginatorName = Literal[
+    "list_user_policies",
+]
+```
 ## ListUserTagsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListUserTagsPaginatorName
+
+def get_value() -> ListUserTagsPaginatorName:
+    return "list_user_tags"
 ```
 
-Values:
-
-- `list_user_tags`
-
-<a id="listuserspaginatorname"></a>
-
+```python title="Definition"
+ListUserTagsPaginatorName = Literal[
+    "list_user_tags",
+]
+```
 ## ListUsersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListUsersPaginatorName
+
+def get_value() -> ListUsersPaginatorName:
+    return "list_users"
 ```
 
-Values:
-
-- `list_users`
-
-<a id="listvirtualmfadevicespaginatorname"></a>
-
+```python title="Definition"
+ListUsersPaginatorName = Literal[
+    "list_users",
+]
+```
 ## ListVirtualMFADevicesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ListVirtualMFADevicesPaginatorName
+
+def get_value() -> ListVirtualMFADevicesPaginatorName:
+    return "list_virtual_mfa_devices"
 ```
 
-Values:
-
-- `list_virtual_mfa_devices`
-
-<a id="permissionsboundaryattachmenttypetype"></a>
-
+```python title="Definition"
+ListVirtualMFADevicesPaginatorName = Literal[
+    "list_virtual_mfa_devices",
+]
+```
 ## PermissionsBoundaryAttachmentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import PermissionsBoundaryAttachmentTypeType
+
+def get_value() -> PermissionsBoundaryAttachmentTypeType:
+    return "PermissionsBoundaryPolicy"
 ```
 
-Values:
-
-- `PermissionsBoundaryPolicy`
-
-<a id="policyevaluationdecisiontypetype"></a>
-
+```python title="Definition"
+PermissionsBoundaryAttachmentTypeType = Literal[
+    "PermissionsBoundaryPolicy",
+]
+```
 ## PolicyEvaluationDecisionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import PolicyEvaluationDecisionTypeType
+
+def get_value() -> PolicyEvaluationDecisionTypeType:
+    return "allowed"
 ```
 
-Values:
-
-- `allowed`
-- `explicitDeny`
-- `implicitDeny`
-
-<a id="policyexistswaitername"></a>
-
+```python title="Definition"
+PolicyEvaluationDecisionTypeType = Literal[
+    "allowed",
+    "explicitDeny",
+    "implicitDeny",
+]
+```
 ## PolicyExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import PolicyExistsWaiterName
+
+def get_value() -> PolicyExistsWaiterName:
+    return "policy_exists"
 ```
 
-Values:
-
-- `policy_exists`
-
-<a id="policysourcetypetype"></a>
-
+```python title="Definition"
+PolicyExistsWaiterName = Literal[
+    "policy_exists",
+]
+```
 ## PolicySourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import PolicySourceTypeType
+
+def get_value() -> PolicySourceTypeType:
+    return "aws-managed"
 ```
 
-Values:
-
-- `aws-managed`
-- `group`
-- `none`
-- `resource`
-- `role`
-- `user`
-- `user-managed`
-
-<a id="policyusagetypetype"></a>
-
+```python title="Definition"
+PolicySourceTypeType = Literal[
+    "aws-managed",
+    "group",
+    "none",
+    "resource",
+    "role",
+    "user",
+    "user-managed",
+]
+```
 ## PolicyUsageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import PolicyUsageTypeType
+
+def get_value() -> PolicyUsageTypeType:
+    return "PermissionsBoundary"
 ```
 
-Values:
-
-- `PermissionsBoundary`
-- `PermissionsPolicy`
-
-<a id="reportformattypetype"></a>
-
+```python title="Definition"
+PolicyUsageTypeType = Literal[
+    "PermissionsBoundary",
+    "PermissionsPolicy",
+]
+```
 ## ReportFormatTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ReportFormatTypeType
+
+def get_value() -> ReportFormatTypeType:
+    return "text/csv"
 ```
 
-Values:
-
-- `text/csv`
-
-<a id="reportstatetypetype"></a>
-
+```python title="Definition"
+ReportFormatTypeType = Literal[
+    "text/csv",
+]
+```
 ## ReportStateTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ReportStateTypeType
+
+def get_value() -> ReportStateTypeType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `INPROGRESS`
-- `STARTED`
-
-<a id="roleexistswaitername"></a>
-
+```python title="Definition"
+ReportStateTypeType = Literal[
+    "COMPLETE",
+    "INPROGRESS",
+    "STARTED",
+]
+```
 ## RoleExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import RoleExistsWaiterName
+
+def get_value() -> RoleExistsWaiterName:
+    return "role_exists"
 ```
 
-Values:
-
-- `role_exists`
-
-<a id="simulatecustompolicypaginatorname"></a>
-
+```python title="Definition"
+RoleExistsWaiterName = Literal[
+    "role_exists",
+]
+```
 ## SimulateCustomPolicyPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import SimulateCustomPolicyPaginatorName
+
+def get_value() -> SimulateCustomPolicyPaginatorName:
+    return "simulate_custom_policy"
 ```
 
-Values:
-
-- `simulate_custom_policy`
-
-<a id="simulateprincipalpolicypaginatorname"></a>
-
+```python title="Definition"
+SimulateCustomPolicyPaginatorName = Literal[
+    "simulate_custom_policy",
+]
+```
 ## SimulatePrincipalPolicyPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import SimulatePrincipalPolicyPaginatorName
+
+def get_value() -> SimulatePrincipalPolicyPaginatorName:
+    return "simulate_principal_policy"
 ```
 
-Values:
-
-- `simulate_principal_policy`
-
-<a id="userexistswaitername"></a>
-
+```python title="Definition"
+SimulatePrincipalPolicyPaginatorName = Literal[
+    "simulate_principal_policy",
+]
+```
 ## UserExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import UserExistsWaiterName
+
+def get_value() -> UserExistsWaiterName:
+    return "user_exists"
 ```
 
-Values:
-
-- `user_exists`
-
-<a id="assignmentstatustypetype"></a>
-
+```python title="Definition"
+UserExistsWaiterName = Literal[
+    "user_exists",
+]
+```
 ## assignmentStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import assignmentStatusTypeType
+
+def get_value() -> assignmentStatusTypeType:
+    return "Any"
 ```
 
-Values:
-
-- `Any`
-- `Assigned`
-- `Unassigned`
-
-<a id="encodingtypetype"></a>
-
+```python title="Definition"
+assignmentStatusTypeType = Literal[
+    "Any",
+    "Assigned",
+    "Unassigned",
+]
+```
 ## encodingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import encodingTypeType
+
+def get_value() -> encodingTypeType:
+    return "PEM"
 ```
 
-Values:
-
-- `PEM`
-- `SSH`
-
-<a id="globalendpointtokenversiontype"></a>
-
+```python title="Definition"
+encodingTypeType = Literal[
+    "PEM",
+    "SSH",
+]
+```
 ## globalEndpointTokenVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import globalEndpointTokenVersionType
+
+def get_value() -> globalEndpointTokenVersionType:
+    return "v1Token"
 ```
 
-Values:
-
-- `v1Token`
-- `v2Token`
-
-<a id="jobstatustypetype"></a>
-
+```python title="Definition"
+globalEndpointTokenVersionType = Literal[
+    "v1Token",
+    "v2Token",
+]
+```
 ## jobStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import jobStatusTypeType
+
+def get_value() -> jobStatusTypeType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `IN_PROGRESS`
-
-<a id="policyownerentitytypetype"></a>
-
+```python title="Definition"
+jobStatusTypeType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "IN_PROGRESS",
+]
+```
 ## policyOwnerEntityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import policyOwnerEntityTypeType
+
+def get_value() -> policyOwnerEntityTypeType:
+    return "GROUP"
 ```
 
-Values:
-
-- `GROUP`
-- `ROLE`
-- `USER`
-
-<a id="policyscopetypetype"></a>
-
+```python title="Definition"
+policyOwnerEntityTypeType = Literal[
+    "GROUP",
+    "ROLE",
+    "USER",
+]
+```
 ## policyScopeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import policyScopeTypeType
+
+def get_value() -> policyScopeTypeType:
+    return "AWS"
 ```
 
-Values:
-
-- `All`
-- `AWS`
-- `Local`
-
-<a id="policytypetype"></a>
-
+```python title="Definition"
+policyScopeTypeType = Literal[
+    "All",
+    "AWS",
+    "Local",
+]
+```
 ## policyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import policyTypeType
+
+def get_value() -> policyTypeType:
+    return "INLINE"
 ```
 
-Values:
-
-- `INLINE`
-- `MANAGED`
-
-<a id="sortkeytypetype"></a>
-
+```python title="Definition"
+policyTypeType = Literal[
+    "INLINE",
+    "MANAGED",
+]
+```
 ## sortKeyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import sortKeyTypeType
+
+def get_value() -> sortKeyTypeType:
+    return "LAST_AUTHENTICATED_TIME_ASCENDING"
 ```
 
-Values:
-
-- `LAST_AUTHENTICATED_TIME_ASCENDING`
-- `LAST_AUTHENTICATED_TIME_DESCENDING`
-- `SERVICE_NAMESPACE_ASCENDING`
-- `SERVICE_NAMESPACE_DESCENDING`
-
-<a id="statustypetype"></a>
-
+```python title="Definition"
+sortKeyTypeType = Literal[
+    "LAST_AUTHENTICATED_TIME_ASCENDING",
+    "LAST_AUTHENTICATED_TIME_DESCENDING",
+    "SERVICE_NAMESPACE_ASCENDING",
+    "SERVICE_NAMESPACE_DESCENDING",
+]
+```
 ## statusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import statusTypeType
+
+def get_value() -> statusTypeType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Inactive`
-
-<a id="summarykeytypetype"></a>
-
+```python title="Definition"
+statusTypeType = Literal[
+    "Active",
+    "Inactive",
+]
+```
 ## summaryKeyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import summaryKeyTypeType
+
+def get_value() -> summaryKeyTypeType:
+    return "AccessKeysPerUserQuota"
 ```
 
-Values:
-
-- `AccessKeysPerUserQuota`
-- `AccountAccessKeysPresent`
-- `AccountMFAEnabled`
-- `AccountSigningCertificatesPresent`
-- `AttachedPoliciesPerGroupQuota`
-- `AttachedPoliciesPerRoleQuota`
-- `AttachedPoliciesPerUserQuota`
-- `GlobalEndpointTokenVersion`
-- `GroupPolicySizeQuota`
-- `Groups`
-- `GroupsPerUserQuota`
-- `GroupsQuota`
-- `MFADevices`
-- `MFADevicesInUse`
-- `Policies`
-- `PoliciesQuota`
-- `PolicySizeQuota`
-- `PolicyVersionsInUse`
-- `PolicyVersionsInUseQuota`
-- `ServerCertificates`
-- `ServerCertificatesQuota`
-- `SigningCertificatesPerUserQuota`
-- `UserPolicySizeQuota`
-- `Users`
-- `UsersQuota`
-- `VersionsPerPolicyQuota`
-
-<a id="iamservicename"></a>
-
+```python title="Definition"
+summaryKeyTypeType = Literal[
+    "AccessKeysPerUserQuota",
+    "AccountAccessKeysPresent",
+    "AccountMFAEnabled",
+    "AccountSigningCertificatesPresent",
+    "AttachedPoliciesPerGroupQuota",
+    "AttachedPoliciesPerRoleQuota",
+    "AttachedPoliciesPerUserQuota",
+    "GlobalEndpointTokenVersion",
+    "GroupPolicySizeQuota",
+    "Groups",
+    "GroupsPerUserQuota",
+    "GroupsQuota",
+    "MFADevices",
+    "MFADevicesInUse",
+    "Policies",
+    "PoliciesQuota",
+    "PolicySizeQuota",
+    "PolicyVersionsInUse",
+    "PolicyVersionsInUseQuota",
+    "ServerCertificates",
+    "ServerCertificatesQuota",
+    "SigningCertificatesPerUserQuota",
+    "UserPolicySizeQuota",
+    "Users",
+    "UsersQuota",
+    "VersionsPerPolicyQuota",
+]
+```
 ## IAMServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import IAMServiceName
+
+def get_value() -> IAMServiceName:
+    return "iam"
 ```
 
-Values:
-
-- `iam`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+IAMServiceName = Literal[
+    "iam",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "get_account_authorization_details"
 ```
 
-Values:
-
-- `get_account_authorization_details`
-- `get_group`
-- `list_access_keys`
-- `list_account_aliases`
-- `list_attached_group_policies`
-- `list_attached_role_policies`
-- `list_attached_user_policies`
-- `list_entities_for_policy`
-- `list_group_policies`
-- `list_groups`
-- `list_groups_for_user`
-- `list_instance_profiles`
-- `list_instance_profiles_for_role`
-- `list_mfa_devices`
-- `list_policies`
-- `list_policy_versions`
-- `list_role_policies`
-- `list_roles`
-- `list_server_certificates`
-- `list_signing_certificates`
-- `list_ssh_public_keys`
-- `list_user_policies`
-- `list_user_tags`
-- `list_users`
-- `list_virtual_mfa_devices`
-- `simulate_custom_policy`
-- `simulate_principal_policy`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "get_account_authorization_details",
+    "get_group",
+    "list_access_keys",
+    "list_account_aliases",
+    "list_attached_group_policies",
+    "list_attached_role_policies",
+    "list_attached_user_policies",
+    "list_entities_for_policy",
+    "list_group_policies",
+    "list_groups",
+    "list_groups_for_user",
+    "list_instance_profiles",
+    "list_instance_profiles_for_role",
+    "list_mfa_devices",
+    "list_policies",
+    "list_policy_versions",
+    "list_role_policies",
+    "list_roles",
+    "list_server_certificates",
+    "list_signing_certificates",
+    "list_ssh_public_keys",
+    "list_user_policies",
+    "list_user_tags",
+    "list_users",
+    "list_virtual_mfa_devices",
+    "simulate_custom_policy",
+    "simulate_principal_policy",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "instance_profile_exists"
 ```
 
-Values:
-
-- `instance_profile_exists`
-- `policy_exists`
-- `role_exists`
-- `user_exists`
+```python title="Definition"
+WaiterName = Literal[
+    "instance_profile_exists",
+    "policy_exists",
+    "role_exists",
+    "user_exists",
+]
+```

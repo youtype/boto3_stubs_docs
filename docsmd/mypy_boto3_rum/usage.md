@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-cloudwatchrum-module"></a>
-
-# Examples for boto3 CloudWatchRUM module
+# Examples
 
 > [Index](../README.md) > [CloudWatchRUM](./README.md) > Examples
 
-- [Examples for boto3 CloudWatchRUM module](#examples-for-boto3-cloudwatchrum-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
+    type annotations stubs module [mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[rum]` package installed.
 
-Write your `CloudWatchRUM` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `CloudWatchRUM` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CloudWatchRUMClient
-# and provides type checking and code completion
-client = session.client("rum")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type GetAppMonitorDataPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_app_monitor_data")
-for item in paginator.paginate(...):
-    # item has type GetAppMonitorDataResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("rum")  # (1)
+    result = client.create_app_monitor()  # (2)
+    ```
+
+    1. client: [CloudWatchRUMClient](./client.md)
+    2. result: [:material-code-braces: CreateAppMonitorResponseTypeDef](./type_defs.md#createappmonitorresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("rum")  # (1)
+
+    paginator = client.get_paginator("get_app_monitor_data")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CloudWatchRUMClient](./client.md)
+    2. paginator: [GetAppMonitorDataPaginator](./paginators.md#getappmonitordatapaginator)
+    3. item: [:material-code-braces: GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[rum]` or a standalone `mypy_boto3_rum` package, you have
-to explicitly specify `client: CloudWatchRUMClient` type annotation.
+With `boto3-stubs-lite[rum]`
+or a standalone `mypy_boto3_rum` package, you have to explicitly specify `client: CloudWatchRUMClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_rum.client import CloudWatchRUMClient
-from mypy_boto3_rum.paginator import GetAppMonitorDataPaginator
-
-from mypy_boto3_rum.literals import PaginatorName
-
-from mypy_boto3_rum.type_defs import bool
-from mypy_boto3_rum.type_defs import GetAppMonitorDataResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CloudWatchRUMClient = session.client("rum")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_rum.client import CloudWatchRUMClient
+    from mypy_boto3_rum.type_defs import CreateAppMonitorResponseTypeDef
+    from mypy_boto3_rum.type_defs import CreateAppMonitorRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_app_monitor_data"
-paginator: GetAppMonitorDataPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetAppMonitorDataResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: CloudWatchRUMClient = session.client("rum")
+
+    kwargs: CreateAppMonitorRequestRequestTypeDef = {...}
+    result: CreateAppMonitorResponseTypeDef = client.create_app_monitor(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_rum.client import CloudWatchRUMClient
+    from mypy_boto3_rum.paginator import GetAppMonitorDataPaginator
+    from mypy_boto3_rum.type_defs import GetAppMonitorDataResponseTypeDef
+
+
+    session = Session()
+    client: CloudWatchRUMClient = session.client("rum")
+
+    paginator: GetAppMonitorDataPaginator = client.get_paginator("get_app_monitor_data")
+    for item in paginator.paginate(...):
+        item: GetAppMonitorDataResponseTypeDef
+        print(item)
+    ```
+
+
+
+

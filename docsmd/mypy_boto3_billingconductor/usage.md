@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-billingconductor-module"></a>
-
-# Examples for boto3 BillingConductor module
+# Examples
 
 > [Index](../README.md) > [BillingConductor](./README.md) > Examples
 
-- [Examples for boto3 BillingConductor module](#examples-for-boto3-billingconductor-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [BillingConductor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor)
+    type annotations stubs module [mypy-boto3-billingconductor](https://pypi.org/project/mypy-boto3-billingconductor/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[billingconductor]` package installed.
 
-Write your `BillingConductor` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `BillingConductor` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type BillingConductorClient
-# and provides type checking and code completion
-client = session.client("billingconductor")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateAccountsOutputTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_accounts()
 
-# paginator has type ListAccountAssociationsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_account_associations")
-for item in paginator.paginate(...):
-    # item has type ListAccountAssociationsOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("billingconductor")  # (1)
+    result = client.associate_accounts()  # (2)
+    ```
+
+    1. client: [BillingConductorClient](./client.md)
+    2. result: [:material-code-braces: AssociateAccountsOutputTypeDef](./type_defs.md#associateaccountsoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("billingconductor")  # (1)
+
+    paginator = client.get_paginator("list_account_associations")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [BillingConductorClient](./client.md)
+    2. paginator: [ListAccountAssociationsPaginator](./paginators.md#listaccountassociationspaginator)
+    3. item: [:material-code-braces: ListAccountAssociationsOutputTypeDef](./type_defs.md#listaccountassociationsoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[billingconductor]` or a standalone
-`mypy_boto3_billingconductor` package, you have to explicitly specify
-`client: BillingConductorClient` type annotation.
+With `boto3-stubs-lite[billingconductor]`
+or a standalone `mypy_boto3_billingconductor` package, you have to explicitly specify `client: BillingConductorClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_billingconductor.client import BillingConductorClient
-from mypy_boto3_billingconductor.paginator import ListAccountAssociationsPaginator
-
-from mypy_boto3_billingconductor.literals import PaginatorName
-
-from mypy_boto3_billingconductor.type_defs import AssociateAccountsOutputTypeDef
-from mypy_boto3_billingconductor.type_defs import ListAccountAssociationsOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: BillingConductorClient = session.client("billingconductor")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AssociateAccountsOutputTypeDef = client.associate_accounts()
+    from mypy_boto3_billingconductor.client import BillingConductorClient
+    from mypy_boto3_billingconductor.type_defs import AssociateAccountsOutputTypeDef
+    from mypy_boto3_billingconductor.type_defs import AssociateAccountsInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_account_associations"
-paginator: ListAccountAssociationsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAccountAssociationsOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: BillingConductorClient = session.client("billingconductor")
+
+    kwargs: AssociateAccountsInputRequestTypeDef = {...}
+    result: AssociateAccountsOutputTypeDef = client.associate_accounts(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_billingconductor.client import BillingConductorClient
+    from mypy_boto3_billingconductor.paginator import ListAccountAssociationsPaginator
+    from mypy_boto3_billingconductor.type_defs import ListAccountAssociationsOutputTypeDef
+
+
+    session = Session()
+    client: BillingConductorClient = session.client("billingconductor")
+
+    paginator: ListAccountAssociationsPaginator = client.get_paginator("list_account_associations")
+    for item in paginator.paginate(...):
+        item: ListAccountAssociationsOutputTypeDef
+        print(item)
+    ```
+
+
+
+

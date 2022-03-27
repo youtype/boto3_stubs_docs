@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-importexport-module"></a>
-
-# Type annotations for boto3 ImportExport module
+#  ImportExport module
 
 > [Index](../README.md) > ImportExport
 
-Auto-generated documentation for
-[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
-type annotations stubs module
-[mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
+!!! note ""
 
-- [Type annotations for boto3 ImportExport module](#type-annotations-for-boto3-importexport-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ImportExportClient](#importexportclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
+    type annotations stubs module [mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ImportExport`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[importexport]'
 python -m pip install mypy-boto3-importexport
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,93 +42,58 @@ python -m pip install mypy-boto3-importexport
 python -m pip uninstall -y mypy-boto3-importexport
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="importexportclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ImportExportClient
 
-Type annotations for `boto3.client("importexport")` as
-[ImportExportClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("importexport")` as [ImportExportClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_importexport.client import ImportExportClient
+
+def get_client() -> ImportExportClient:
+    return Session().cleint("importexport")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_job](./client.md#cancel_job)
-- [create_job](./client.md#create_job)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_shipping_label](./client.md#get_shipping_label)
-- [get_status](./client.md#get_status)
-- [list_jobs](./client.md#list_jobs)
-- [update_job](./client.md#update_job)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ImportExportClient [exceptions](./client.md#exceptions)
-
-- BucketPermissionException
-- CanceledJobIdException
-- ClientError
-- CreateJobQuotaExceededException
-- ExpiredJobIdException
-- InvalidAccessKeyIdException
-- InvalidAddressException
-- InvalidCustomsException
-- InvalidFileSystemException
-- InvalidJobIdException
-- InvalidManifestFieldException
-- InvalidParameterException
-- InvalidVersionException
-- MalformedManifestException
-- MissingCustomsException
-- MissingManifestFieldException
-- MissingParameterException
-- MultipleRegionsException
-- NoSuchBucketException
-- UnableToCancelJobIdException
-- UnableToUpdateJobIdException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("importexport").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("importexport").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_importexport.paginator import ListJobsPaginator, ...
+from mypy_boto3_importexport.paginator import ListJobsPaginator
+
+def get_list_jobs_paginator() -> ListJobsPaginator:
+    return Session().client("importexport").get_paginator("list_jobs"))
 ```
 
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_importexport.literals import JobTypeType
 
-```python
-from mypy_boto3_importexport.literals import JobTypeType, ...
+def get_value() -> JobTypeType:
+    return "Export"
 ```
 
 - [JobTypeType](./literals.md#jobtypetype)
@@ -160,17 +103,20 @@ from mypy_boto3_importexport.literals import JobTypeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_importexport.type_defs import ArtifactTypeDef
 
-```python
-from mypy_boto3_importexport.type_defs import ArtifactTypeDef, ...
+def get_value() -> ArtifactTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
 - [ArtifactTypeDef](./type_defs.md#artifacttypedef)
@@ -183,9 +129,11 @@ from mypy_boto3_importexport.type_defs import ArtifactTypeDef, ...
 - [GetStatusInputRequestTypeDef](./type_defs.md#getstatusinputrequesttypedef)
 - [GetStatusOutputTypeDef](./type_defs.md#getstatusoutputtypedef)
 - [JobTypeDef](./type_defs.md#jobtypedef)
+- [ListJobsInputListJobsPaginateTypeDef](./type_defs.md#listjobsinputlistjobspaginatetypedef)
 - [ListJobsInputRequestTypeDef](./type_defs.md#listjobsinputrequesttypedef)
 - [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [UpdateJobInputRequestTypeDef](./type_defs.md#updatejobinputrequesttypedef)
 - [UpdateJobOutputTypeDef](./type_defs.md#updatejoboutputtypedef)
+

@@ -1,51 +1,18 @@
-<a id="detectiveclient-for-boto3-detective-module"></a>
-
-# DetectiveClient for boto3 Detective module
+# DetectiveClient
 
 > [Index](../README.md) > [Detective](./README.md) > DetectiveClient
 
-Auto-generated documentation for
-[Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
-type annotations stubs module
-[mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
+!!! note ""
 
-- [DetectiveClient for boto3 Detective module](#detectiveclient-for-boto3-detective-module)
-  - [DetectiveClient](#detectiveclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_invitation](#accept_invitation)
-    - [can_paginate](#can_paginate)
-    - [create_graph](#create_graph)
-    - [create_members](#create_members)
-    - [delete_graph](#delete_graph)
-    - [delete_members](#delete_members)
-    - [describe_organization_configuration](#describe_organization_configuration)
-    - [disable_organization_admin_account](#disable_organization_admin_account)
-    - [disassociate_membership](#disassociate_membership)
-    - [enable_organization_admin_account](#enable_organization_admin_account)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_members](#get_members)
-    - [list_graphs](#list_graphs)
-    - [list_invitations](#list_invitations)
-    - [list_members](#list_members)
-    - [list_organization_admin_accounts](#list_organization_admin_accounts)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [reject_invitation](#reject_invitation)
-    - [start_monitoring_member](#start_monitoring_member)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_organization_configuration](#update_organization_configuration)
-
-<a id="detectiveclient"></a>
+    Auto-generated documentation for [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
+    type annotations stubs module [mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
 
 ## DetectiveClient
 
-Type annotations for `boto3.client("detective")`
+Type annotations and code completion for `#!python boto3.client("detective")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_detective.client import DetectiveClient
 
@@ -53,501 +20,663 @@ def get_detective_client() -> DetectiveClient:
     return Session().client("detective")
 ```
 
-Boto3 documentation:
-[Detective.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("detective").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("detective")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.TooManyRequestsException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_detective.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-DetectiveClient exceptions.
-
-Type annotations for `boto3.client("detective").exceptions` method.
-
-Boto3 documentation:
-[Detective.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_invitation"></a>
-
-### accept_invitation
+### accept\_invitation
 
 Accepts an invitation for the member account to contribute data to a behavior
 graph.
 
-Type annotations for `boto3.client("detective").accept_invitation` method.
+Type annotations and code completion for `#!python boto3.client("detective").accept_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.accept_invitation)
 
-Boto3 documentation:
-[Detective.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.accept_invitation)
+```python title="Method definition"
+def accept_invitation(
+    self,
+    *,
+    GraphArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptInvitationRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.accept_invitation(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("detective").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("detective").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.can_paginate)
 
-Boto3 documentation:
-[Detective.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_graph"></a>
-
-### create_graph
+### create\_graph
 
 Creates a new behavior graph for the calling account, and sets that account as
 the administrator account.
 
-Type annotations for `boto3.client("detective").create_graph` method.
+Type annotations and code completion for `#!python boto3.client("detective").create_graph` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_graph)
 
-Boto3 documentation:
-[Detective.Client.create_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_graph)
+```python title="Method definition"
+def create_graph(
+    self,
+    *,
+    Tags: Mapping[str, str] = ...,
+) -> CreateGraphResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGraphRequestRequestTypeDef](./type_defs.md#creategraphrequestrequesttypedef).
+1. See [:material-code-braces: CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateGraphRequestRequestTypeDef = {  # (1)
+    "Tags": ...,
+}
 
-Returns
-[CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef).
+parent.create_graph(**kwargs)
+```
 
-<a id="create\_members"></a>
+1. See [:material-code-braces: CreateGraphRequestRequestTypeDef](./type_defs.md#creategraphrequestrequesttypedef) 
 
-### create_members
+### create\_members
 
 `CreateMembers` is used to send invitations to accounts.
 
-Type annotations for `boto3.client("detective").create_members` method.
+Type annotations and code completion for `#!python boto3.client("detective").create_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_members)
 
-Boto3 documentation:
-[Detective.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.create_members)
+```python title="Method definition"
+def create_members(
+    self,
+    *,
+    GraphArn: str,
+    Accounts: Sequence[AccountTypeDef],  # (1)
+    Message: str = ...,
+    DisableEmailNotification: bool = ...,
+) -> CreateMembersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef).
+1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
+2. See [:material-code-braces: CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
-- `Accounts`: `Sequence`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
-  *(required)*
-- `Message`: `str`
-- `DisableEmailNotification`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateMembersRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+    "Accounts": ...,
+}
 
-Returns
-[CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
+parent.create_members(**kwargs)
+```
 
-<a id="delete\_graph"></a>
+1. See [:material-code-braces: CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef) 
 
-### delete_graph
+### delete\_graph
 
 Disables the specified behavior graph and queues it to be deleted.
 
-Type annotations for `boto3.client("detective").delete_graph` method.
+Type annotations and code completion for `#!python boto3.client("detective").delete_graph` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_graph)
 
-Boto3 documentation:
-[Detective.Client.delete_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_graph)
+```python title="Method definition"
+def delete_graph(
+    self,
+    *,
+    GraphArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGraphRequestRequestTypeDef](./type_defs.md#deletegraphrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGraphRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+}
 
-<a id="delete\_members"></a>
+parent.delete_graph(**kwargs)
+```
 
-### delete_members
+1. See [:material-code-braces: DeleteGraphRequestRequestTypeDef](./type_defs.md#deletegraphrequestrequesttypedef) 
+
+### delete\_members
 
 Removes the specified member accounts from the behavior graph.
 
-Type annotations for `boto3.client("detective").delete_members` method.
+Type annotations and code completion for `#!python boto3.client("detective").delete_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_members)
 
-Boto3 documentation:
-[Detective.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.delete_members)
+```python title="Method definition"
+def delete_members(
+    self,
+    *,
+    GraphArn: str,
+    AccountIds: Sequence[str],
+) -> DeleteMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef).
+1. See [:material-code-braces: DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMembersRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
+parent.delete_members(**kwargs)
+```
 
-<a id="describe\_organization\_configuration"></a>
+1. See [:material-code-braces: DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef) 
 
-### describe_organization_configuration
+### describe\_organization\_configuration
 
-Returns information about the configuration for the organization behavior
-graph.
+Returns information about the configuration for the organization behavior graph.
 
-Type annotations for
-`boto3.client("detective").describe_organization_configuration` method.
+Type annotations and code completion for `#!python boto3.client("detective").describe_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.describe_organization_configuration)
 
-Boto3 documentation:
-[Detective.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.describe_organization_configuration)
+```python title="Method definition"
+def describe_organization_configuration(
+    self,
+    *,
+    GraphArn: str,
+) -> DescribeOrganizationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#describeorganizationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeOrganizationConfigurationRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+}
 
-Returns
-[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
+parent.describe_organization_configuration(**kwargs)
+```
 
-<a id="disable\_organization\_admin\_account"></a>
+1. See [:material-code-braces: DescribeOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#describeorganizationconfigurationrequestrequesttypedef) 
 
-### disable_organization_admin_account
+### disable\_organization\_admin\_account
 
 Removes the Detective administrator account for the organization in the current
 Region.
 
-Type annotations for
-`boto3.client("detective").disable_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("detective").disable_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disable_organization_admin_account)
 
-Boto3 documentation:
-[Detective.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disable_organization_admin_account)
+```python title="Method definition"
+def disable_organization_admin_account(
+    self,
+) -> None:
+    ...
+```
 
-<a id="disassociate\_membership"></a>
 
-### disassociate_membership
+### disassociate\_membership
 
 Removes the member account from the specified behavior graph.
 
-Type annotations for `boto3.client("detective").disassociate_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("detective").disassociate_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disassociate_membership)
 
-Boto3 documentation:
-[Detective.Client.disassociate_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disassociate_membership)
+```python title="Method definition"
+def disassociate_membership(
+    self,
+    *,
+    GraphArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateMembershipRequestRequestTypeDef](./type_defs.md#disassociatemembershiprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateMembershipRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+}
 
-<a id="enable\_organization\_admin\_account"></a>
+parent.disassociate_membership(**kwargs)
+```
 
-### enable_organization_admin_account
+1. See [:material-code-braces: DisassociateMembershipRequestRequestTypeDef](./type_defs.md#disassociatemembershiprequestrequesttypedef) 
+
+### enable\_organization\_admin\_account
 
 Designates the Detective administrator account for the organization in the
 current Region.
 
-Type annotations for
-`boto3.client("detective").enable_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("detective").enable_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.enable_organization_admin_account)
 
-Boto3 documentation:
-[Detective.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.enable_organization_admin_account)
+```python title="Method definition"
+def enable_organization_admin_account(
+    self,
+    *,
+    AccountId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableOrganizationAdminAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.enable_organization_admin_account(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("detective").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("detective").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Detective.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_members"></a>
-
-### get_members
+### get\_members
 
 Returns the membership details for specified member accounts for a behavior
 graph.
 
-Type annotations for `boto3.client("detective").get_members` method.
+Type annotations and code completion for `#!python boto3.client("detective").get_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.get_members)
 
-Boto3 documentation:
-[Detective.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.get_members)
+```python title="Method definition"
+def get_members(
+    self,
+    *,
+    GraphArn: str,
+    AccountIds: Sequence[str],
+) -> GetMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef).
+1. See [:material-code-braces: GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMembersRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+    "AccountIds": ...,
+}
 
-Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
+parent.get_members(**kwargs)
+```
 
-<a id="list\_graphs"></a>
+1. See [:material-code-braces: GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef) 
 
-### list_graphs
+### list\_graphs
 
-Returns the list of behavior graphs that the calling account is an
-administrator account of.
+Returns the list of behavior graphs that the calling account is an administrator
+account of.
 
-Type annotations for `boto3.client("detective").list_graphs` method.
+Type annotations and code completion for `#!python boto3.client("detective").list_graphs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_graphs)
 
-Boto3 documentation:
-[Detective.Client.list_graphs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_graphs)
+```python title="Method definition"
+def list_graphs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGraphsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGraphsRequestRequestTypeDef](./type_defs.md#listgraphsrequestrequesttypedef).
+1. See [:material-code-braces: ListGraphsResponseTypeDef](./type_defs.md#listgraphsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGraphsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListGraphsResponseTypeDef](./type_defs.md#listgraphsresponsetypedef).
+parent.list_graphs(**kwargs)
+```
 
-<a id="list\_invitations"></a>
+1. See [:material-code-braces: ListGraphsRequestRequestTypeDef](./type_defs.md#listgraphsrequestrequesttypedef) 
 
-### list_invitations
+### list\_invitations
 
 Retrieves the list of open and accepted behavior graph invitations for the
 member account.
 
-Type annotations for `boto3.client("detective").list_invitations` method.
+Type annotations and code completion for `#!python boto3.client("detective").list_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_invitations)
 
-Boto3 documentation:
-[Detective.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_invitations)
+```python title="Method definition"
+def list_invitations(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListInvitationsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
+parent.list_invitations(**kwargs)
+```
 
-<a id="list\_members"></a>
+1. See [:material-code-braces: ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef) 
 
-### list_members
+### list\_members
 
 Retrieves the list of member accounts for a behavior graph.
 
-Type annotations for `boto3.client("detective").list_members` method.
+Type annotations and code completion for `#!python boto3.client("detective").list_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_members)
 
-Boto3 documentation:
-[Detective.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_members)
+```python title="Method definition"
+def list_members(
+    self,
+    *,
+    GraphArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef).
+1. See [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMembersRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+}
 
-Returns
-[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
+parent.list_members(**kwargs)
+```
 
-<a id="list\_organization\_admin\_accounts"></a>
+1. See [:material-code-braces: ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef) 
 
-### list_organization_admin_accounts
+### list\_organization\_admin\_accounts
 
 Returns information about the Detective administrator account for an
 organization.
 
-Type annotations for
-`boto3.client("detective").list_organization_admin_accounts` method.
+Type annotations and code completion for `#!python boto3.client("detective").list_organization_admin_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_organization_admin_accounts)
 
-Boto3 documentation:
-[Detective.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_organization_admin_accounts)
+```python title="Method definition"
+def list_organization_admin_accounts(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListOrganizationAdminAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationAdminAccountsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
+parent.list_organization_admin_accounts(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns the tag values that are assigned to a behavior graph.
 
-Type annotations for `boto3.client("detective").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("detective").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Detective.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="reject\_invitation"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### reject_invitation
+### reject\_invitation
 
 Rejects an invitation to contribute the account data to a behavior graph.
 
-Type annotations for `boto3.client("detective").reject_invitation` method.
+Type annotations and code completion for `#!python boto3.client("detective").reject_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.reject_invitation)
 
-Boto3 documentation:
-[Detective.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.reject_invitation)
+```python title="Method definition"
+def reject_invitation(
+    self,
+    *,
+    GraphArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RejectInvitationRequestRequestTypeDef](./type_defs.md#rejectinvitationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectInvitationRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+}
 
-<a id="start\_monitoring\_member"></a>
+parent.reject_invitation(**kwargs)
+```
 
-### start_monitoring_member
+1. See [:material-code-braces: RejectInvitationRequestRequestTypeDef](./type_defs.md#rejectinvitationrequestrequesttypedef) 
+
+### start\_monitoring\_member
 
 Sends a request to enable data ingest for a member account that has a status of
 `ACCEPTED_BUT_DISABLED` .
 
-Type annotations for `boto3.client("detective").start_monitoring_member`
-method.
+Type annotations and code completion for `#!python boto3.client("detective").start_monitoring_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.start_monitoring_member)
 
-Boto3 documentation:
-[Detective.Client.start_monitoring_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.start_monitoring_member)
+```python title="Method definition"
+def start_monitoring_member(
+    self,
+    *,
+    GraphArn: str,
+    AccountId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StartMonitoringMemberRequestRequestTypeDef](./type_defs.md#startmonitoringmemberrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartMonitoringMemberRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+    "AccountId": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.start_monitoring_member(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: StartMonitoringMemberRequestRequestTypeDef](./type_defs.md#startmonitoringmemberrequestrequesttypedef) 
+
+### tag\_resource
 
 Applies tag values to a behavior graph.
 
-Type annotations for `boto3.client("detective").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("detective").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.tag_resource)
 
-Boto3 documentation:
-[Detective.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a behavior graph.
 
-Type annotations for `boto3.client("detective").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("detective").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.untag_resource)
 
-Boto3 documentation:
-[Detective.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_organization\_configuration"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_organization_configuration
+### update\_organization\_configuration
 
 Updates the configuration for the Organizations integration in the current
 Region.
 
-Type annotations for
-`boto3.client("detective").update_organization_configuration` method.
+Type annotations and code completion for `#!python boto3.client("detective").update_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.update_organization_configuration)
 
-Boto3 documentation:
-[Detective.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.update_organization_configuration)
+```python title="Method definition"
+def update_organization_configuration(
+    self,
+    *,
+    GraphArn: str,
+    AutoEnable: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GraphArn`: `str` *(required)*
-- `AutoEnable`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateOrganizationConfigurationRequestRequestTypeDef = {  # (1)
+    "GraphArn": ...,
+}
+
+parent.update_organization_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef) 
+
+
+
+

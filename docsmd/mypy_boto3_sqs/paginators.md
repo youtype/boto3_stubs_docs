@@ -1,28 +1,18 @@
-<a id="paginators-for-boto3-sqs-module"></a>
-
-# Paginators for boto3 SQS module
+# Paginators
 
 > [Index](../README.md) > [SQS](./README.md) > Paginators
 
-Auto-generated documentation for
-[SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
-type annotations stubs module
-[mypy-boto3-sqs](https://pypi.org/project/mypy-boto3-sqs/).
+!!! note ""
 
-- [Paginators for boto3 SQS module](#paginators-for-boto3-sqs-module)
-  - [ListDeadLetterSourceQueuesPaginator](#listdeadlettersourcequeuespaginator)
-  - [ListQueuesPaginator](#listqueuespaginator)
-
-<a id="listdeadlettersourcequeuespaginator"></a>
+    Auto-generated documentation for [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
+    type annotations stubs module [mypy-boto3-sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
 ## ListDeadLetterSourceQueuesPaginator
 
-Type annotations for
-`boto3.client("sqs").get_paginator("list_dead_letter_source_queues")`.
+Type annotations and code completion for `#!python boto3.client("sqs").get_paginator("list_dead_letter_source_queues")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListDeadLetterSourceQueues)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sqs.paginator import ListDeadLetterSourceQueuesPaginator
@@ -31,27 +21,40 @@ def get_list_dead_letter_source_queues_paginator() -> ListDeadLetterSourceQueues
     return Session().client("sqs").get_paginator("list_dead_letter_source_queues")
 ```
 
-Boto3 documentation:
-[SQS.Paginator.ListDeadLetterSourceQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListDeadLetterSourceQueues)
 
-Arguments for `ListDeadLetterSourceQueuesPaginator.paginate` method:
+### paginate
 
-- `QueueUrl`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDeadLetterSourceQueuesPaginator.paginate` method.
 
-`ListDeadLetterSourceQueuesPaginator.paginate` returns
-`_PageIterator`\[[ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    QueueUrl: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDeadLetterSourceQueuesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listqueuespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef = {  # (1)
+    "QueueUrl": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDeadLetterSourceQueuesRequestListDeadLetterSourceQueuesPaginateTypeDef](./type_defs.md#listdeadlettersourcequeuesrequestlistdeadlettersourcequeuespaginatetypedef) 
 ## ListQueuesPaginator
 
-Type annotations for `boto3.client("sqs").get_paginator("list_queues")`.
+Type annotations and code completion for `#!python boto3.client("sqs").get_paginator("list_queues")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListQueues)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sqs.paginator import ListQueuesPaginator
@@ -60,14 +63,31 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
     return Session().client("sqs").get_paginator("list_queues")
 ```
 
-Boto3 documentation:
-[SQS.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Paginator.ListQueues)
 
-Arguments for `ListQueuesPaginator.paginate` method:
+### paginate
 
-- `QueueNamePrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListQueuesPaginator.paginate` method.
 
-`ListQueuesPaginator.paginate` returns
-`_PageIterator`\[[ListQueuesResultTypeDef](./type_defs.md#listqueuesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    QueueNamePrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListQueuesResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListQueuesResultTypeDef](./type_defs.md#listqueuesresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListQueuesRequestListQueuesPaginateTypeDef = {  # (1)
+    "QueueNamePrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListQueuesRequestListQueuesPaginateTypeDef](./type_defs.md#listqueuesrequestlistqueuespaginatetypedef) 

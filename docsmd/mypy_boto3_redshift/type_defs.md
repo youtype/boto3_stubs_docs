@@ -1,4952 +1,6719 @@
-<a id="typed-dictionaries-for-boto3-redshift-module"></a>
-
-# Typed dictionaries for boto3 Redshift module
+# Typed dictionaries
 
 > [Index](../README.md) > [Redshift](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
-type annotations stubs module
-[mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Redshift module](#typed-dictionaries-for-boto3-redshift-module)
-  - [AcceptReservedNodeExchangeInputMessageRequestTypeDef](#acceptreservednodeexchangeinputmessagerequesttypedef)
-  - [AcceptReservedNodeExchangeOutputMessageTypeDef](#acceptreservednodeexchangeoutputmessagetypedef)
-  - [AccountAttributeListTypeDef](#accountattributelisttypedef)
-  - [AccountAttributeTypeDef](#accountattributetypedef)
-  - [AccountWithRestoreAccessTypeDef](#accountwithrestoreaccesstypedef)
-  - [AquaConfigurationTypeDef](#aquaconfigurationtypedef)
-  - [AssociateDataShareConsumerMessageRequestTypeDef](#associatedatashareconsumermessagerequesttypedef)
-  - [AttributeValueTargetTypeDef](#attributevaluetargettypedef)
-  - [AuthenticationProfileTypeDef](#authenticationprofiletypedef)
-  - [AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef](#authorizeclustersecuritygroupingressmessagerequesttypedef)
-  - [AuthorizeClusterSecurityGroupIngressResultTypeDef](#authorizeclustersecuritygroupingressresulttypedef)
-  - [AuthorizeDataShareMessageRequestTypeDef](#authorizedatasharemessagerequesttypedef)
-  - [AuthorizeEndpointAccessMessageRequestTypeDef](#authorizeendpointaccessmessagerequesttypedef)
-  - [AuthorizeSnapshotAccessMessageRequestTypeDef](#authorizesnapshotaccessmessagerequesttypedef)
-  - [AuthorizeSnapshotAccessResultTypeDef](#authorizesnapshotaccessresulttypedef)
-  - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
-  - [BatchDeleteClusterSnapshotsRequestRequestTypeDef](#batchdeleteclustersnapshotsrequestrequesttypedef)
-  - [BatchDeleteClusterSnapshotsResultTypeDef](#batchdeleteclustersnapshotsresulttypedef)
-  - [BatchModifyClusterSnapshotsMessageRequestTypeDef](#batchmodifyclustersnapshotsmessagerequesttypedef)
-  - [BatchModifyClusterSnapshotsOutputMessageTypeDef](#batchmodifyclustersnapshotsoutputmessagetypedef)
-  - [CancelResizeMessageRequestTypeDef](#cancelresizemessagerequesttypedef)
-  - [ClusterAssociatedToScheduleTypeDef](#clusterassociatedtoscheduletypedef)
-  - [ClusterCredentialsTypeDef](#clustercredentialstypedef)
-  - [ClusterDbRevisionTypeDef](#clusterdbrevisiontypedef)
-  - [ClusterDbRevisionsMessageTypeDef](#clusterdbrevisionsmessagetypedef)
-  - [ClusterIamRoleTypeDef](#clusteriamroletypedef)
-  - [ClusterNodeTypeDef](#clusternodetypedef)
-  - [ClusterParameterGroupDetailsTypeDef](#clusterparametergroupdetailstypedef)
-  - [ClusterParameterGroupNameMessageTypeDef](#clusterparametergroupnamemessagetypedef)
-  - [ClusterParameterGroupStatusTypeDef](#clusterparametergroupstatustypedef)
-  - [ClusterParameterGroupTypeDef](#clusterparametergrouptypedef)
-  - [ClusterParameterGroupsMessageTypeDef](#clusterparametergroupsmessagetypedef)
-  - [ClusterParameterStatusTypeDef](#clusterparameterstatustypedef)
-  - [ClusterSecurityGroupMembershipTypeDef](#clustersecuritygroupmembershiptypedef)
-  - [ClusterSecurityGroupMessageTypeDef](#clustersecuritygroupmessagetypedef)
-  - [ClusterSecurityGroupTypeDef](#clustersecuritygrouptypedef)
-  - [ClusterSnapshotCopyStatusTypeDef](#clustersnapshotcopystatustypedef)
-  - [ClusterSubnetGroupMessageTypeDef](#clustersubnetgroupmessagetypedef)
-  - [ClusterSubnetGroupTypeDef](#clustersubnetgrouptypedef)
-  - [ClusterTypeDef](#clustertypedef)
-  - [ClusterVersionTypeDef](#clusterversiontypedef)
-  - [ClusterVersionsMessageTypeDef](#clusterversionsmessagetypedef)
-  - [ClustersMessageTypeDef](#clustersmessagetypedef)
-  - [CopyClusterSnapshotMessageRequestTypeDef](#copyclustersnapshotmessagerequesttypedef)
-  - [CopyClusterSnapshotResultTypeDef](#copyclustersnapshotresulttypedef)
-  - [CreateAuthenticationProfileMessageRequestTypeDef](#createauthenticationprofilemessagerequesttypedef)
-  - [CreateAuthenticationProfileResultTypeDef](#createauthenticationprofileresulttypedef)
-  - [CreateClusterMessageRequestTypeDef](#createclustermessagerequesttypedef)
-  - [CreateClusterParameterGroupMessageRequestTypeDef](#createclusterparametergroupmessagerequesttypedef)
-  - [CreateClusterParameterGroupResultTypeDef](#createclusterparametergroupresulttypedef)
-  - [CreateClusterResultTypeDef](#createclusterresulttypedef)
-  - [CreateClusterSecurityGroupMessageRequestTypeDef](#createclustersecuritygroupmessagerequesttypedef)
-  - [CreateClusterSecurityGroupResultTypeDef](#createclustersecuritygroupresulttypedef)
-  - [CreateClusterSnapshotMessageRequestTypeDef](#createclustersnapshotmessagerequesttypedef)
-  - [CreateClusterSnapshotResultTypeDef](#createclustersnapshotresulttypedef)
-  - [CreateClusterSubnetGroupMessageRequestTypeDef](#createclustersubnetgroupmessagerequesttypedef)
-  - [CreateClusterSubnetGroupResultTypeDef](#createclustersubnetgroupresulttypedef)
-  - [CreateEndpointAccessMessageRequestTypeDef](#createendpointaccessmessagerequesttypedef)
-  - [CreateEventSubscriptionMessageRequestTypeDef](#createeventsubscriptionmessagerequesttypedef)
-  - [CreateEventSubscriptionResultTypeDef](#createeventsubscriptionresulttypedef)
-  - [CreateHsmClientCertificateMessageRequestTypeDef](#createhsmclientcertificatemessagerequesttypedef)
-  - [CreateHsmClientCertificateResultTypeDef](#createhsmclientcertificateresulttypedef)
-  - [CreateHsmConfigurationMessageRequestTypeDef](#createhsmconfigurationmessagerequesttypedef)
-  - [CreateHsmConfigurationResultTypeDef](#createhsmconfigurationresulttypedef)
-  - [CreateScheduledActionMessageRequestTypeDef](#createscheduledactionmessagerequesttypedef)
-  - [CreateSnapshotCopyGrantMessageRequestTypeDef](#createsnapshotcopygrantmessagerequesttypedef)
-  - [CreateSnapshotCopyGrantResultTypeDef](#createsnapshotcopygrantresulttypedef)
-  - [CreateSnapshotScheduleMessageRequestTypeDef](#createsnapshotschedulemessagerequesttypedef)
-  - [CreateTagsMessageRequestTypeDef](#createtagsmessagerequesttypedef)
-  - [CreateUsageLimitMessageRequestTypeDef](#createusagelimitmessagerequesttypedef)
-  - [CustomerStorageMessageTypeDef](#customerstoragemessagetypedef)
-  - [DataShareAssociationTypeDef](#datashareassociationtypedef)
-  - [DataShareResponseMetadataTypeDef](#datashareresponsemetadatatypedef)
-  - [DataShareTypeDef](#datasharetypedef)
-  - [DataTransferProgressTypeDef](#datatransferprogresstypedef)
-  - [DeauthorizeDataShareMessageRequestTypeDef](#deauthorizedatasharemessagerequesttypedef)
-  - [DefaultClusterParametersTypeDef](#defaultclusterparameterstypedef)
-  - [DeferredMaintenanceWindowTypeDef](#deferredmaintenancewindowtypedef)
-  - [DeleteAuthenticationProfileMessageRequestTypeDef](#deleteauthenticationprofilemessagerequesttypedef)
-  - [DeleteAuthenticationProfileResultTypeDef](#deleteauthenticationprofileresulttypedef)
-  - [DeleteClusterMessageRequestTypeDef](#deleteclustermessagerequesttypedef)
-  - [DeleteClusterParameterGroupMessageRequestTypeDef](#deleteclusterparametergroupmessagerequesttypedef)
-  - [DeleteClusterResultTypeDef](#deleteclusterresulttypedef)
-  - [DeleteClusterSecurityGroupMessageRequestTypeDef](#deleteclustersecuritygroupmessagerequesttypedef)
-  - [DeleteClusterSnapshotMessageRequestTypeDef](#deleteclustersnapshotmessagerequesttypedef)
-  - [DeleteClusterSnapshotMessageTypeDef](#deleteclustersnapshotmessagetypedef)
-  - [DeleteClusterSnapshotResultTypeDef](#deleteclustersnapshotresulttypedef)
-  - [DeleteClusterSubnetGroupMessageRequestTypeDef](#deleteclustersubnetgroupmessagerequesttypedef)
-  - [DeleteEndpointAccessMessageRequestTypeDef](#deleteendpointaccessmessagerequesttypedef)
-  - [DeleteEventSubscriptionMessageRequestTypeDef](#deleteeventsubscriptionmessagerequesttypedef)
-  - [DeleteHsmClientCertificateMessageRequestTypeDef](#deletehsmclientcertificatemessagerequesttypedef)
-  - [DeleteHsmConfigurationMessageRequestTypeDef](#deletehsmconfigurationmessagerequesttypedef)
-  - [DeleteScheduledActionMessageRequestTypeDef](#deletescheduledactionmessagerequesttypedef)
-  - [DeleteSnapshotCopyGrantMessageRequestTypeDef](#deletesnapshotcopygrantmessagerequesttypedef)
-  - [DeleteSnapshotScheduleMessageRequestTypeDef](#deletesnapshotschedulemessagerequesttypedef)
-  - [DeleteTagsMessageRequestTypeDef](#deletetagsmessagerequesttypedef)
-  - [DeleteUsageLimitMessageRequestTypeDef](#deleteusagelimitmessagerequesttypedef)
-  - [DescribeAccountAttributesMessageRequestTypeDef](#describeaccountattributesmessagerequesttypedef)
-  - [DescribeAuthenticationProfilesMessageRequestTypeDef](#describeauthenticationprofilesmessagerequesttypedef)
-  - [DescribeAuthenticationProfilesResultTypeDef](#describeauthenticationprofilesresulttypedef)
-  - [DescribeClusterDbRevisionsMessageRequestTypeDef](#describeclusterdbrevisionsmessagerequesttypedef)
-  - [DescribeClusterParameterGroupsMessageRequestTypeDef](#describeclusterparametergroupsmessagerequesttypedef)
-  - [DescribeClusterParametersMessageRequestTypeDef](#describeclusterparametersmessagerequesttypedef)
-  - [DescribeClusterSecurityGroupsMessageRequestTypeDef](#describeclustersecuritygroupsmessagerequesttypedef)
-  - [DescribeClusterSnapshotsMessageRequestTypeDef](#describeclustersnapshotsmessagerequesttypedef)
-  - [DescribeClusterSubnetGroupsMessageRequestTypeDef](#describeclustersubnetgroupsmessagerequesttypedef)
-  - [DescribeClusterTracksMessageRequestTypeDef](#describeclustertracksmessagerequesttypedef)
-  - [DescribeClusterVersionsMessageRequestTypeDef](#describeclusterversionsmessagerequesttypedef)
-  - [DescribeClustersMessageRequestTypeDef](#describeclustersmessagerequesttypedef)
-  - [DescribeDataSharesForConsumerMessageRequestTypeDef](#describedatasharesforconsumermessagerequesttypedef)
-  - [DescribeDataSharesForConsumerResultTypeDef](#describedatasharesforconsumerresulttypedef)
-  - [DescribeDataSharesForProducerMessageRequestTypeDef](#describedatasharesforproducermessagerequesttypedef)
-  - [DescribeDataSharesForProducerResultTypeDef](#describedatasharesforproducerresulttypedef)
-  - [DescribeDataSharesMessageRequestTypeDef](#describedatasharesmessagerequesttypedef)
-  - [DescribeDataSharesResultTypeDef](#describedatasharesresulttypedef)
-  - [DescribeDefaultClusterParametersMessageRequestTypeDef](#describedefaultclusterparametersmessagerequesttypedef)
-  - [DescribeDefaultClusterParametersResultTypeDef](#describedefaultclusterparametersresulttypedef)
-  - [DescribeEndpointAccessMessageRequestTypeDef](#describeendpointaccessmessagerequesttypedef)
-  - [DescribeEndpointAuthorizationMessageRequestTypeDef](#describeendpointauthorizationmessagerequesttypedef)
-  - [DescribeEventCategoriesMessageRequestTypeDef](#describeeventcategoriesmessagerequesttypedef)
-  - [DescribeEventSubscriptionsMessageRequestTypeDef](#describeeventsubscriptionsmessagerequesttypedef)
-  - [DescribeEventsMessageRequestTypeDef](#describeeventsmessagerequesttypedef)
-  - [DescribeHsmClientCertificatesMessageRequestTypeDef](#describehsmclientcertificatesmessagerequesttypedef)
-  - [DescribeHsmConfigurationsMessageRequestTypeDef](#describehsmconfigurationsmessagerequesttypedef)
-  - [DescribeLoggingStatusMessageRequestTypeDef](#describeloggingstatusmessagerequesttypedef)
-  - [DescribeNodeConfigurationOptionsMessageRequestTypeDef](#describenodeconfigurationoptionsmessagerequesttypedef)
-  - [DescribeOrderableClusterOptionsMessageRequestTypeDef](#describeorderableclusteroptionsmessagerequesttypedef)
-  - [DescribePartnersInputMessageRequestTypeDef](#describepartnersinputmessagerequesttypedef)
-  - [DescribePartnersOutputMessageTypeDef](#describepartnersoutputmessagetypedef)
-  - [DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef](#describereservednodeexchangestatusinputmessagerequesttypedef)
-  - [DescribeReservedNodeExchangeStatusOutputMessageTypeDef](#describereservednodeexchangestatusoutputmessagetypedef)
-  - [DescribeReservedNodeOfferingsMessageRequestTypeDef](#describereservednodeofferingsmessagerequesttypedef)
-  - [DescribeReservedNodesMessageRequestTypeDef](#describereservednodesmessagerequesttypedef)
-  - [DescribeResizeMessageRequestTypeDef](#describeresizemessagerequesttypedef)
-  - [DescribeScheduledActionsMessageRequestTypeDef](#describescheduledactionsmessagerequesttypedef)
-  - [DescribeSnapshotCopyGrantsMessageRequestTypeDef](#describesnapshotcopygrantsmessagerequesttypedef)
-  - [DescribeSnapshotSchedulesMessageRequestTypeDef](#describesnapshotschedulesmessagerequesttypedef)
-  - [DescribeSnapshotSchedulesOutputMessageTypeDef](#describesnapshotschedulesoutputmessagetypedef)
-  - [DescribeTableRestoreStatusMessageRequestTypeDef](#describetablerestorestatusmessagerequesttypedef)
-  - [DescribeTagsMessageRequestTypeDef](#describetagsmessagerequesttypedef)
-  - [DescribeUsageLimitsMessageRequestTypeDef](#describeusagelimitsmessagerequesttypedef)
-  - [DisableLoggingMessageRequestTypeDef](#disableloggingmessagerequesttypedef)
-  - [DisableSnapshotCopyMessageRequestTypeDef](#disablesnapshotcopymessagerequesttypedef)
-  - [DisableSnapshotCopyResultTypeDef](#disablesnapshotcopyresulttypedef)
-  - [DisassociateDataShareConsumerMessageRequestTypeDef](#disassociatedatashareconsumermessagerequesttypedef)
-  - [EC2SecurityGroupTypeDef](#ec2securitygrouptypedef)
-  - [ElasticIpStatusTypeDef](#elasticipstatustypedef)
-  - [EnableLoggingMessageRequestTypeDef](#enableloggingmessagerequesttypedef)
-  - [EnableSnapshotCopyMessageRequestTypeDef](#enablesnapshotcopymessagerequesttypedef)
-  - [EnableSnapshotCopyResultTypeDef](#enablesnapshotcopyresulttypedef)
-  - [EndpointAccessListTypeDef](#endpointaccesslisttypedef)
-  - [EndpointAccessResponseMetadataTypeDef](#endpointaccessresponsemetadatatypedef)
-  - [EndpointAccessTypeDef](#endpointaccesstypedef)
-  - [EndpointAuthorizationListTypeDef](#endpointauthorizationlisttypedef)
-  - [EndpointAuthorizationResponseMetadataTypeDef](#endpointauthorizationresponsemetadatatypedef)
-  - [EndpointAuthorizationTypeDef](#endpointauthorizationtypedef)
-  - [EndpointTypeDef](#endpointtypedef)
-  - [EventCategoriesMapTypeDef](#eventcategoriesmaptypedef)
-  - [EventCategoriesMessageTypeDef](#eventcategoriesmessagetypedef)
-  - [EventInfoMapTypeDef](#eventinfomaptypedef)
-  - [EventSubscriptionTypeDef](#eventsubscriptiontypedef)
-  - [EventSubscriptionsMessageTypeDef](#eventsubscriptionsmessagetypedef)
-  - [EventTypeDef](#eventtypedef)
-  - [EventsMessageTypeDef](#eventsmessagetypedef)
-  - [GetClusterCredentialsMessageRequestTypeDef](#getclustercredentialsmessagerequesttypedef)
-  - [GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef](#getreservednodeexchangeconfigurationoptionsinputmessagerequesttypedef)
-  - [GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef)
-  - [GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef](#getreservednodeexchangeofferingsinputmessagerequesttypedef)
-  - [GetReservedNodeExchangeOfferingsOutputMessageTypeDef](#getreservednodeexchangeofferingsoutputmessagetypedef)
-  - [HsmClientCertificateMessageTypeDef](#hsmclientcertificatemessagetypedef)
-  - [HsmClientCertificateTypeDef](#hsmclientcertificatetypedef)
-  - [HsmConfigurationMessageTypeDef](#hsmconfigurationmessagetypedef)
-  - [HsmConfigurationTypeDef](#hsmconfigurationtypedef)
-  - [HsmStatusTypeDef](#hsmstatustypedef)
-  - [IPRangeTypeDef](#iprangetypedef)
-  - [LoggingStatusTypeDef](#loggingstatustypedef)
-  - [MaintenanceTrackTypeDef](#maintenancetracktypedef)
-  - [ModifyAquaInputMessageRequestTypeDef](#modifyaquainputmessagerequesttypedef)
-  - [ModifyAquaOutputMessageTypeDef](#modifyaquaoutputmessagetypedef)
-  - [ModifyAuthenticationProfileMessageRequestTypeDef](#modifyauthenticationprofilemessagerequesttypedef)
-  - [ModifyAuthenticationProfileResultTypeDef](#modifyauthenticationprofileresulttypedef)
-  - [ModifyClusterDbRevisionMessageRequestTypeDef](#modifyclusterdbrevisionmessagerequesttypedef)
-  - [ModifyClusterDbRevisionResultTypeDef](#modifyclusterdbrevisionresulttypedef)
-  - [ModifyClusterIamRolesMessageRequestTypeDef](#modifyclusteriamrolesmessagerequesttypedef)
-  - [ModifyClusterIamRolesResultTypeDef](#modifyclusteriamrolesresulttypedef)
-  - [ModifyClusterMaintenanceMessageRequestTypeDef](#modifyclustermaintenancemessagerequesttypedef)
-  - [ModifyClusterMaintenanceResultTypeDef](#modifyclustermaintenanceresulttypedef)
-  - [ModifyClusterMessageRequestTypeDef](#modifyclustermessagerequesttypedef)
-  - [ModifyClusterParameterGroupMessageRequestTypeDef](#modifyclusterparametergroupmessagerequesttypedef)
-  - [ModifyClusterResultTypeDef](#modifyclusterresulttypedef)
-  - [ModifyClusterSnapshotMessageRequestTypeDef](#modifyclustersnapshotmessagerequesttypedef)
-  - [ModifyClusterSnapshotResultTypeDef](#modifyclustersnapshotresulttypedef)
-  - [ModifyClusterSnapshotScheduleMessageRequestTypeDef](#modifyclustersnapshotschedulemessagerequesttypedef)
-  - [ModifyClusterSubnetGroupMessageRequestTypeDef](#modifyclustersubnetgroupmessagerequesttypedef)
-  - [ModifyClusterSubnetGroupResultTypeDef](#modifyclustersubnetgroupresulttypedef)
-  - [ModifyEndpointAccessMessageRequestTypeDef](#modifyendpointaccessmessagerequesttypedef)
-  - [ModifyEventSubscriptionMessageRequestTypeDef](#modifyeventsubscriptionmessagerequesttypedef)
-  - [ModifyEventSubscriptionResultTypeDef](#modifyeventsubscriptionresulttypedef)
-  - [ModifyScheduledActionMessageRequestTypeDef](#modifyscheduledactionmessagerequesttypedef)
-  - [ModifySnapshotCopyRetentionPeriodMessageRequestTypeDef](#modifysnapshotcopyretentionperiodmessagerequesttypedef)
-  - [ModifySnapshotCopyRetentionPeriodResultTypeDef](#modifysnapshotcopyretentionperiodresulttypedef)
-  - [ModifySnapshotScheduleMessageRequestTypeDef](#modifysnapshotschedulemessagerequesttypedef)
-  - [ModifyUsageLimitMessageRequestTypeDef](#modifyusagelimitmessagerequesttypedef)
-  - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
-  - [NodeConfigurationOptionTypeDef](#nodeconfigurationoptiontypedef)
-  - [NodeConfigurationOptionsFilterTypeDef](#nodeconfigurationoptionsfiltertypedef)
-  - [NodeConfigurationOptionsMessageTypeDef](#nodeconfigurationoptionsmessagetypedef)
-  - [OrderableClusterOptionTypeDef](#orderableclusteroptiontypedef)
-  - [OrderableClusterOptionsMessageTypeDef](#orderableclusteroptionsmessagetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterTypeDef](#parametertypedef)
-  - [PartnerIntegrationInfoTypeDef](#partnerintegrationinfotypedef)
-  - [PartnerIntegrationInputMessageRequestTypeDef](#partnerintegrationinputmessagerequesttypedef)
-  - [PartnerIntegrationOutputMessageTypeDef](#partnerintegrationoutputmessagetypedef)
-  - [PauseClusterMessageRequestTypeDef](#pauseclustermessagerequesttypedef)
-  - [PauseClusterMessageTypeDef](#pauseclustermessagetypedef)
-  - [PauseClusterResultTypeDef](#pauseclusterresulttypedef)
-  - [PendingModifiedValuesTypeDef](#pendingmodifiedvaluestypedef)
-  - [PurchaseReservedNodeOfferingMessageRequestTypeDef](#purchasereservednodeofferingmessagerequesttypedef)
-  - [PurchaseReservedNodeOfferingResultTypeDef](#purchasereservednodeofferingresulttypedef)
-  - [RebootClusterMessageRequestTypeDef](#rebootclustermessagerequesttypedef)
-  - [RebootClusterResultTypeDef](#rebootclusterresulttypedef)
-  - [RecurringChargeTypeDef](#recurringchargetypedef)
-  - [RejectDataShareMessageRequestTypeDef](#rejectdatasharemessagerequesttypedef)
-  - [ReservedNodeConfigurationOptionTypeDef](#reservednodeconfigurationoptiontypedef)
-  - [ReservedNodeExchangeStatusTypeDef](#reservednodeexchangestatustypedef)
-  - [ReservedNodeOfferingTypeDef](#reservednodeofferingtypedef)
-  - [ReservedNodeOfferingsMessageTypeDef](#reservednodeofferingsmessagetypedef)
-  - [ReservedNodeTypeDef](#reservednodetypedef)
-  - [ReservedNodesMessageTypeDef](#reservednodesmessagetypedef)
-  - [ResetClusterParameterGroupMessageRequestTypeDef](#resetclusterparametergroupmessagerequesttypedef)
-  - [ResizeClusterMessageRequestTypeDef](#resizeclustermessagerequesttypedef)
-  - [ResizeClusterMessageTypeDef](#resizeclustermessagetypedef)
-  - [ResizeClusterResultTypeDef](#resizeclusterresulttypedef)
-  - [ResizeInfoTypeDef](#resizeinfotypedef)
-  - [ResizeProgressMessageTypeDef](#resizeprogressmessagetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreFromClusterSnapshotMessageRequestTypeDef](#restorefromclustersnapshotmessagerequesttypedef)
-  - [RestoreFromClusterSnapshotResultTypeDef](#restorefromclustersnapshotresulttypedef)
-  - [RestoreStatusTypeDef](#restorestatustypedef)
-  - [RestoreTableFromClusterSnapshotMessageRequestTypeDef](#restoretablefromclustersnapshotmessagerequesttypedef)
-  - [RestoreTableFromClusterSnapshotResultTypeDef](#restoretablefromclustersnapshotresulttypedef)
-  - [ResumeClusterMessageRequestTypeDef](#resumeclustermessagerequesttypedef)
-  - [ResumeClusterMessageTypeDef](#resumeclustermessagetypedef)
-  - [ResumeClusterResultTypeDef](#resumeclusterresulttypedef)
-  - [RevisionTargetTypeDef](#revisiontargettypedef)
-  - [RevokeClusterSecurityGroupIngressMessageRequestTypeDef](#revokeclustersecuritygroupingressmessagerequesttypedef)
-  - [RevokeClusterSecurityGroupIngressResultTypeDef](#revokeclustersecuritygroupingressresulttypedef)
-  - [RevokeEndpointAccessMessageRequestTypeDef](#revokeendpointaccessmessagerequesttypedef)
-  - [RevokeSnapshotAccessMessageRequestTypeDef](#revokesnapshotaccessmessagerequesttypedef)
-  - [RevokeSnapshotAccessResultTypeDef](#revokesnapshotaccessresulttypedef)
-  - [RotateEncryptionKeyMessageRequestTypeDef](#rotateencryptionkeymessagerequesttypedef)
-  - [RotateEncryptionKeyResultTypeDef](#rotateencryptionkeyresulttypedef)
-  - [ScheduledActionFilterTypeDef](#scheduledactionfiltertypedef)
-  - [ScheduledActionResponseMetadataTypeDef](#scheduledactionresponsemetadatatypedef)
-  - [ScheduledActionTypeDef](#scheduledactiontypedef)
-  - [ScheduledActionTypeTypeDef](#scheduledactiontypetypedef)
-  - [ScheduledActionsMessageTypeDef](#scheduledactionsmessagetypedef)
-  - [SnapshotCopyGrantMessageTypeDef](#snapshotcopygrantmessagetypedef)
-  - [SnapshotCopyGrantTypeDef](#snapshotcopygranttypedef)
-  - [SnapshotErrorMessageTypeDef](#snapshoterrormessagetypedef)
-  - [SnapshotMessageTypeDef](#snapshotmessagetypedef)
-  - [SnapshotScheduleResponseMetadataTypeDef](#snapshotscheduleresponsemetadatatypedef)
-  - [SnapshotScheduleTypeDef](#snapshotscheduletypedef)
-  - [SnapshotSortingEntityTypeDef](#snapshotsortingentitytypedef)
-  - [SnapshotTypeDef](#snapshottypedef)
-  - [SubnetTypeDef](#subnettypedef)
-  - [SupportedOperationTypeDef](#supportedoperationtypedef)
-  - [SupportedPlatformTypeDef](#supportedplatformtypedef)
-  - [TableRestoreStatusMessageTypeDef](#tablerestorestatusmessagetypedef)
-  - [TableRestoreStatusTypeDef](#tablerestorestatustypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TaggedResourceListMessageTypeDef](#taggedresourcelistmessagetypedef)
-  - [TaggedResourceTypeDef](#taggedresourcetypedef)
-  - [TrackListMessageTypeDef](#tracklistmessagetypedef)
-  - [UpdatePartnerStatusInputMessageRequestTypeDef](#updatepartnerstatusinputmessagerequesttypedef)
-  - [UpdateTargetTypeDef](#updatetargettypedef)
-  - [UsageLimitListTypeDef](#usagelimitlisttypedef)
-  - [UsageLimitResponseMetadataTypeDef](#usagelimitresponsemetadatatypedef)
-  - [UsageLimitTypeDef](#usagelimittypedef)
-  - [VpcEndpointTypeDef](#vpcendpointtypedef)
-  - [VpcSecurityGroupMembershipTypeDef](#vpcsecuritygroupmembershiptypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="acceptreservednodeexchangeinputmessagerequesttypedef"></a>
+    Auto-generated documentation for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
+    type annotations stubs module [mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 ## AcceptReservedNodeExchangeInputMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessageRequestTypeDef
+
+def get_value() -> AcceptReservedNodeExchangeInputMessageRequestTypeDef:
+    return {
+        "ReservedNodeId": ...,
+        "TargetReservedNodeOfferingId": ...,
+    }
 ```
 
-Required fields:
-
-- `ReservedNodeId`: `str`
-- `TargetReservedNodeOfferingId`: `str`
-
-<a id="acceptreservednodeexchangeoutputmessagetypedef"></a>
+```python title="Definition"
+class AcceptReservedNodeExchangeInputMessageRequestTypeDef(TypedDict):
+    ReservedNodeId: str,
+    TargetReservedNodeOfferingId: str,
+```
 
 ## AcceptReservedNodeExchangeOutputMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeOutputMessageTypeDef
+
+def get_value() -> AcceptReservedNodeExchangeOutputMessageTypeDef:
+    return {
+        "ExchangedReservedNode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AcceptReservedNodeExchangeOutputMessageTypeDef(TypedDict):
+    ExchangedReservedNode: ReservedNodeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExchangedReservedNode`:
-  [ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="accountattributelisttypedef"></a>
-
+1. See [:material-code-braces: ReservedNodeTypeDef](./type_defs.md#reservednodetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AccountAttributeListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AccountAttributeListTypeDef
+
+def get_value() -> AccountAttributeListTypeDef:
+    return {
+        "AccountAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccountAttributeListTypeDef(TypedDict):
+    AccountAttributes: List[AccountAttributeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountAttributes`:
-  `List`\[[AccountAttributeTypeDef](./type_defs.md#accountattributetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="accountattributetypedef"></a>
-
+1. See [:material-code-braces: AccountAttributeTypeDef](./type_defs.md#accountattributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AccountAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AccountAttributeTypeDef
+
+def get_value() -> AccountAttributeTypeDef:
+    return {
+        "AttributeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountAttributeTypeDef(TypedDict):
+    AttributeName: NotRequired[str],
+    AttributeValues: NotRequired[List[AttributeValueTargetTypeDef]],  # (1)
+```
 
-- `AttributeName`: `str`
-- `AttributeValues`:
-  `List`\[[AttributeValueTargetTypeDef](./type_defs.md#attributevaluetargettypedef)\]
-
-<a id="accountwithrestoreaccesstypedef"></a>
-
+1. See [:material-code-braces: AttributeValueTargetTypeDef](./type_defs.md#attributevaluetargettypedef) 
 ## AccountWithRestoreAccessTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AccountWithRestoreAccessTypeDef
+
+def get_value() -> AccountWithRestoreAccessTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountId`: `str`
-- `AccountAlias`: `str`
-
-<a id="aquaconfigurationtypedef"></a>
+```python title="Definition"
+class AccountWithRestoreAccessTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    AccountAlias: NotRequired[str],
+```
 
 ## AquaConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AquaConfigurationTypeDef
+
+def get_value() -> AquaConfigurationTypeDef:
+    return {
+        "AquaStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AquaConfigurationTypeDef(TypedDict):
+    AquaStatus: NotRequired[AquaStatusType],  # (1)
+    AquaConfigurationStatus: NotRequired[AquaConfigurationStatusType],  # (2)
+```
 
-- `AquaStatus`: [AquaStatusType](./literals.md#aquastatustype)
-- `AquaConfigurationStatus`:
-  [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
-
-<a id="associatedatashareconsumermessagerequesttypedef"></a>
-
+1. See [:material-code-brackets: AquaStatusType](./literals.md#aquastatustype) 
+2. See [:material-code-brackets: AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype) 
 ## AssociateDataShareConsumerMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AssociateDataShareConsumerMessageRequestTypeDef
+
+def get_value() -> AssociateDataShareConsumerMessageRequestTypeDef:
+    return {
+        "DataShareArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DataShareArn`: `str`
-
-Optional fields:
-
-- `AssociateEntireAccount`: `bool`
-- `ConsumerArn`: `str`
-- `ConsumerRegion`: `str`
-
-<a id="attributevaluetargettypedef"></a>
+```python title="Definition"
+class AssociateDataShareConsumerMessageRequestTypeDef(TypedDict):
+    DataShareArn: str,
+    AssociateEntireAccount: NotRequired[bool],
+    ConsumerArn: NotRequired[str],
+    ConsumerRegion: NotRequired[str],
+```
 
 ## AttributeValueTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AttributeValueTargetTypeDef
+
+def get_value() -> AttributeValueTargetTypeDef:
+    return {
+        "AttributeValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `AttributeValue`: `str`
-
-<a id="authenticationprofiletypedef"></a>
+```python title="Definition"
+class AttributeValueTargetTypeDef(TypedDict):
+    AttributeValue: NotRequired[str],
+```
 
 ## AuthenticationProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AuthenticationProfileTypeDef
+
+def get_value() -> AuthenticationProfileTypeDef:
+    return {
+        "AuthenticationProfileName": ...,
+    }
 ```
 
-Optional fields:
-
-- `AuthenticationProfileName`: `str`
-- `AuthenticationProfileContent`: `str`
-
-<a id="authorizeclustersecuritygroupingressmessagerequesttypedef"></a>
+```python title="Definition"
+class AuthenticationProfileTypeDef(TypedDict):
+    AuthenticationProfileName: NotRequired[str],
+    AuthenticationProfileContent: NotRequired[str],
+```
 
 ## AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef
+
+def get_value() -> AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef:
+    return {
+        "ClusterSecurityGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterSecurityGroupName`: `str`
-
-Optional fields:
-
-- `CIDRIP`: `str`
-- `EC2SecurityGroupName`: `str`
-- `EC2SecurityGroupOwnerId`: `str`
-
-<a id="authorizeclustersecuritygroupingressresulttypedef"></a>
+```python title="Definition"
+class AuthorizeClusterSecurityGroupIngressMessageRequestTypeDef(TypedDict):
+    ClusterSecurityGroupName: str,
+    CIDRIP: NotRequired[str],
+    EC2SecurityGroupName: NotRequired[str],
+    EC2SecurityGroupOwnerId: NotRequired[str],
+```
 
 ## AuthorizeClusterSecurityGroupIngressResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AuthorizeClusterSecurityGroupIngressResultTypeDef
+
+def get_value() -> AuthorizeClusterSecurityGroupIngressResultTypeDef:
+    return {
+        "ClusterSecurityGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AuthorizeClusterSecurityGroupIngressResultTypeDef(TypedDict):
+    ClusterSecurityGroup: ClusterSecurityGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClusterSecurityGroup`:
-  [ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="authorizedatasharemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AuthorizeDataShareMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AuthorizeDataShareMessageRequestTypeDef
+
+def get_value() -> AuthorizeDataShareMessageRequestTypeDef:
+    return {
+        "DataShareArn": ...,
+        "ConsumerIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DataShareArn`: `str`
-- `ConsumerIdentifier`: `str`
-
-<a id="authorizeendpointaccessmessagerequesttypedef"></a>
+```python title="Definition"
+class AuthorizeDataShareMessageRequestTypeDef(TypedDict):
+    DataShareArn: str,
+    ConsumerIdentifier: str,
+```
 
 ## AuthorizeEndpointAccessMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AuthorizeEndpointAccessMessageRequestTypeDef
+
+def get_value() -> AuthorizeEndpointAccessMessageRequestTypeDef:
+    return {
+        "Account": ...,
+    }
 ```
 
-Required fields:
-
-- `Account`: `str`
-
-Optional fields:
-
-- `ClusterIdentifier`: `str`
-- `VpcIds`: `Sequence`\[`str`\]
-
-<a id="authorizesnapshotaccessmessagerequesttypedef"></a>
+```python title="Definition"
+class AuthorizeEndpointAccessMessageRequestTypeDef(TypedDict):
+    Account: str,
+    ClusterIdentifier: NotRequired[str],
+    VpcIds: NotRequired[Sequence[str]],
+```
 
 ## AuthorizeSnapshotAccessMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AuthorizeSnapshotAccessMessageRequestTypeDef
+
+def get_value() -> AuthorizeSnapshotAccessMessageRequestTypeDef:
+    return {
+        "SnapshotIdentifier": ...,
+        "AccountWithRestoreAccess": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotIdentifier`: `str`
-- `AccountWithRestoreAccess`: `str`
-
-Optional fields:
-
-- `SnapshotClusterIdentifier`: `str`
-
-<a id="authorizesnapshotaccessresulttypedef"></a>
+```python title="Definition"
+class AuthorizeSnapshotAccessMessageRequestTypeDef(TypedDict):
+    SnapshotIdentifier: str,
+    AccountWithRestoreAccess: str,
+    SnapshotClusterIdentifier: NotRequired[str],
+```
 
 ## AuthorizeSnapshotAccessResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AuthorizeSnapshotAccessResultTypeDef
+
+def get_value() -> AuthorizeSnapshotAccessResultTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AuthorizeSnapshotAccessResultTypeDef(TypedDict):
+    Snapshot: SnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="availabilityzonetypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AvailabilityZoneTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import AvailabilityZoneTypeDef
+
+def get_value() -> AvailabilityZoneTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AvailabilityZoneTypeDef(TypedDict):
+    Name: NotRequired[str],
+    SupportedPlatforms: NotRequired[List[SupportedPlatformTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `SupportedPlatforms`:
-  `List`\[[SupportedPlatformTypeDef](./type_defs.md#supportedplatformtypedef)\]
-
-<a id="batchdeleteclustersnapshotsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SupportedPlatformTypeDef](./type_defs.md#supportedplatformtypedef) 
 ## BatchDeleteClusterSnapshotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import BatchDeleteClusterSnapshotsRequestRequestTypeDef
+
+def get_value() -> BatchDeleteClusterSnapshotsRequestRequestTypeDef:
+    return {
+        "Identifiers": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteClusterSnapshotsRequestRequestTypeDef(TypedDict):
+    Identifiers: Sequence[DeleteClusterSnapshotMessageTypeDef],  # (1)
+```
 
-- `Identifiers`:
-  `Sequence`\[[DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef)\]
-
-<a id="batchdeleteclustersnapshotsresulttypedef"></a>
-
+1. See [:material-code-braces: DeleteClusterSnapshotMessageTypeDef](./type_defs.md#deleteclustersnapshotmessagetypedef) 
 ## BatchDeleteClusterSnapshotsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import BatchDeleteClusterSnapshotsResultTypeDef
+
+def get_value() -> BatchDeleteClusterSnapshotsResultTypeDef:
+    return {
+        "Resources": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteClusterSnapshotsResultTypeDef(TypedDict):
+    Resources: List[str],
+    Errors: List[SnapshotErrorMessageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Resources`: `List`\[`str`\]
-- `Errors`:
-  `List`\[[SnapshotErrorMessageTypeDef](./type_defs.md#snapshoterrormessagetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchmodifyclustersnapshotsmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotErrorMessageTypeDef](./type_defs.md#snapshoterrormessagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchModifyClusterSnapshotsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import BatchModifyClusterSnapshotsMessageRequestTypeDef
+
+def get_value() -> BatchModifyClusterSnapshotsMessageRequestTypeDef:
+    return {
+        "SnapshotIdentifierList": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotIdentifierList`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `ManualSnapshotRetentionPeriod`: `int`
-- `Force`: `bool`
-
-<a id="batchmodifyclustersnapshotsoutputmessagetypedef"></a>
+```python title="Definition"
+class BatchModifyClusterSnapshotsMessageRequestTypeDef(TypedDict):
+    SnapshotIdentifierList: Sequence[str],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    Force: NotRequired[bool],
+```
 
 ## BatchModifyClusterSnapshotsOutputMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import BatchModifyClusterSnapshotsOutputMessageTypeDef
+
+def get_value() -> BatchModifyClusterSnapshotsOutputMessageTypeDef:
+    return {
+        "Resources": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchModifyClusterSnapshotsOutputMessageTypeDef(TypedDict):
+    Resources: List[str],
+    Errors: List[SnapshotErrorMessageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Resources`: `List`\[`str`\]
-- `Errors`:
-  `List`\[[SnapshotErrorMessageTypeDef](./type_defs.md#snapshoterrormessagetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cancelresizemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotErrorMessageTypeDef](./type_defs.md#snapshoterrormessagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelResizeMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CancelResizeMessageRequestTypeDef
+
+def get_value() -> CancelResizeMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-<a id="clusterassociatedtoscheduletypedef"></a>
+```python title="Definition"
+class CancelResizeMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
 ## ClusterAssociatedToScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterAssociatedToScheduleTypeDef
+
+def get_value() -> ClusterAssociatedToScheduleTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterAssociatedToScheduleTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    ScheduleAssociationState: NotRequired[ScheduleStateType],  # (1)
+```
 
-- `ClusterIdentifier`: `str`
-- `ScheduleAssociationState`:
-  [ScheduleStateType](./literals.md#schedulestatetype)
-
-<a id="clustercredentialstypedef"></a>
-
+1. See [:material-code-brackets: ScheduleStateType](./literals.md#schedulestatetype) 
 ## ClusterCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterCredentialsTypeDef
+
+def get_value() -> ClusterCredentialsTypeDef:
+    return {
+        "DbUser": ...,
+        "DbPassword": ...,
+        "Expiration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClusterCredentialsTypeDef(TypedDict):
+    DbUser: str,
+    DbPassword: str,
+    Expiration: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DbUser`: `str`
-- `DbPassword`: `str`
-- `Expiration`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="clusterdbrevisiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClusterDbRevisionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterDbRevisionTypeDef
+
+def get_value() -> ClusterDbRevisionTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterDbRevisionTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    CurrentDatabaseRevision: NotRequired[str],
+    DatabaseRevisionReleaseDate: NotRequired[datetime],
+    RevisionTargets: NotRequired[List[RevisionTargetTypeDef]],  # (1)
+```
 
-- `ClusterIdentifier`: `str`
-- `CurrentDatabaseRevision`: `str`
-- `DatabaseRevisionReleaseDate`: `datetime`
-- `RevisionTargets`:
-  `List`\[[RevisionTargetTypeDef](./type_defs.md#revisiontargettypedef)\]
-
-<a id="clusterdbrevisionsmessagetypedef"></a>
-
+1. See [:material-code-braces: RevisionTargetTypeDef](./type_defs.md#revisiontargettypedef) 
 ## ClusterDbRevisionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterDbRevisionsMessageTypeDef
+
+def get_value() -> ClusterDbRevisionsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ClusterDbRevisions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClusterDbRevisionsMessageTypeDef(TypedDict):
+    Marker: str,
+    ClusterDbRevisions: List[ClusterDbRevisionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ClusterDbRevisions`:
-  `List`\[[ClusterDbRevisionTypeDef](./type_defs.md#clusterdbrevisiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="clusteriamroletypedef"></a>
-
+1. See [:material-code-braces: ClusterDbRevisionTypeDef](./type_defs.md#clusterdbrevisiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClusterIamRoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterIamRoleTypeDef
+
+def get_value() -> ClusterIamRoleTypeDef:
+    return {
+        "IamRoleArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `IamRoleArn`: `str`
-- `ApplyStatus`: `str`
-
-<a id="clusternodetypedef"></a>
+```python title="Definition"
+class ClusterIamRoleTypeDef(TypedDict):
+    IamRoleArn: NotRequired[str],
+    ApplyStatus: NotRequired[str],
+```
 
 ## ClusterNodeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterNodeTypeDef
+
+def get_value() -> ClusterNodeTypeDef:
+    return {
+        "NodeRole": ...,
+    }
 ```
 
-Optional fields:
-
-- `NodeRole`: `str`
-- `PrivateIPAddress`: `str`
-- `PublicIPAddress`: `str`
-
-<a id="clusterparametergroupdetailstypedef"></a>
+```python title="Definition"
+class ClusterNodeTypeDef(TypedDict):
+    NodeRole: NotRequired[str],
+    PrivateIPAddress: NotRequired[str],
+    PublicIPAddress: NotRequired[str],
+```
 
 ## ClusterParameterGroupDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterParameterGroupDetailsTypeDef
+
+def get_value() -> ClusterParameterGroupDetailsTypeDef:
+    return {
+        "Parameters": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClusterParameterGroupDetailsTypeDef(TypedDict):
+    Parameters: List[ParameterTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="clusterparametergroupnamemessagetypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClusterParameterGroupNameMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterParameterGroupNameMessageTypeDef
+
+def get_value() -> ClusterParameterGroupNameMessageTypeDef:
+    return {
+        "ParameterGroupName": ...,
+        "ParameterGroupStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClusterParameterGroupNameMessageTypeDef(TypedDict):
+    ParameterGroupName: str,
+    ParameterGroupStatus: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ParameterGroupName`: `str`
-- `ParameterGroupStatus`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="clusterparametergroupstatustypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClusterParameterGroupStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterParameterGroupStatusTypeDef
+
+def get_value() -> ClusterParameterGroupStatusTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterParameterGroupStatusTypeDef(TypedDict):
+    ParameterGroupName: NotRequired[str],
+    ParameterApplyStatus: NotRequired[str],
+    ClusterParameterStatusList: NotRequired[List[ClusterParameterStatusTypeDef]],  # (1)
+```
 
-- `ParameterGroupName`: `str`
-- `ParameterApplyStatus`: `str`
-- `ClusterParameterStatusList`:
-  `List`\[[ClusterParameterStatusTypeDef](./type_defs.md#clusterparameterstatustypedef)\]
-
-<a id="clusterparametergrouptypedef"></a>
-
+1. See [:material-code-braces: ClusterParameterStatusTypeDef](./type_defs.md#clusterparameterstatustypedef) 
 ## ClusterParameterGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterParameterGroupTypeDef
+
+def get_value() -> ClusterParameterGroupTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterParameterGroupTypeDef(TypedDict):
+    ParameterGroupName: NotRequired[str],
+    ParameterGroupFamily: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `ParameterGroupName`: `str`
-- `ParameterGroupFamily`: `str`
-- `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="clusterparametergroupsmessagetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ClusterParameterGroupsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterParameterGroupsMessageTypeDef
+
+def get_value() -> ClusterParameterGroupsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ParameterGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClusterParameterGroupsMessageTypeDef(TypedDict):
+    Marker: str,
+    ParameterGroups: List[ClusterParameterGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ParameterGroups`:
-  `List`\[[ClusterParameterGroupTypeDef](./type_defs.md#clusterparametergrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="clusterparameterstatustypedef"></a>
-
+1. See [:material-code-braces: ClusterParameterGroupTypeDef](./type_defs.md#clusterparametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClusterParameterStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterParameterStatusTypeDef
+
+def get_value() -> ClusterParameterStatusTypeDef:
+    return {
+        "ParameterName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterName`: `str`
-- `ParameterApplyStatus`: `str`
-- `ParameterApplyErrorDescription`: `str`
-
-<a id="clustersecuritygroupmembershiptypedef"></a>
+```python title="Definition"
+class ClusterParameterStatusTypeDef(TypedDict):
+    ParameterName: NotRequired[str],
+    ParameterApplyStatus: NotRequired[str],
+    ParameterApplyErrorDescription: NotRequired[str],
+```
 
 ## ClusterSecurityGroupMembershipTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterSecurityGroupMembershipTypeDef
+
+def get_value() -> ClusterSecurityGroupMembershipTypeDef:
+    return {
+        "ClusterSecurityGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterSecurityGroupName`: `str`
-- `Status`: `str`
-
-<a id="clustersecuritygroupmessagetypedef"></a>
+```python title="Definition"
+class ClusterSecurityGroupMembershipTypeDef(TypedDict):
+    ClusterSecurityGroupName: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## ClusterSecurityGroupMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterSecurityGroupMessageTypeDef
+
+def get_value() -> ClusterSecurityGroupMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ClusterSecurityGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClusterSecurityGroupMessageTypeDef(TypedDict):
+    Marker: str,
+    ClusterSecurityGroups: List[ClusterSecurityGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ClusterSecurityGroups`:
-  `List`\[[ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="clustersecuritygrouptypedef"></a>
-
+1. See [:material-code-braces: ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClusterSecurityGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterSecurityGroupTypeDef
+
+def get_value() -> ClusterSecurityGroupTypeDef:
+    return {
+        "ClusterSecurityGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterSecurityGroupTypeDef(TypedDict):
+    ClusterSecurityGroupName: NotRequired[str],
+    Description: NotRequired[str],
+    EC2SecurityGroups: NotRequired[List[EC2SecurityGroupTypeDef]],  # (1)
+    IPRanges: NotRequired[List[IPRangeTypeDef]],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
 
-- `ClusterSecurityGroupName`: `str`
-- `Description`: `str`
-- `EC2SecurityGroups`:
-  `List`\[[EC2SecurityGroupTypeDef](./type_defs.md#ec2securitygrouptypedef)\]
-- `IPRanges`: `List`\[[IPRangeTypeDef](./type_defs.md#iprangetypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="clustersnapshotcopystatustypedef"></a>
-
+1. See [:material-code-braces: EC2SecurityGroupTypeDef](./type_defs.md#ec2securitygrouptypedef) 
+2. See [:material-code-braces: IPRangeTypeDef](./type_defs.md#iprangetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ClusterSnapshotCopyStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterSnapshotCopyStatusTypeDef
+
+def get_value() -> ClusterSnapshotCopyStatusTypeDef:
+    return {
+        "DestinationRegion": ...,
+    }
 ```
 
-Optional fields:
-
-- `DestinationRegion`: `str`
-- `RetentionPeriod`: `int`
-- `ManualSnapshotRetentionPeriod`: `int`
-- `SnapshotCopyGrantName`: `str`
-
-<a id="clustersubnetgroupmessagetypedef"></a>
+```python title="Definition"
+class ClusterSnapshotCopyStatusTypeDef(TypedDict):
+    DestinationRegion: NotRequired[str],
+    RetentionPeriod: NotRequired[int],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    SnapshotCopyGrantName: NotRequired[str],
+```
 
 ## ClusterSubnetGroupMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterSubnetGroupMessageTypeDef
+
+def get_value() -> ClusterSubnetGroupMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ClusterSubnetGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClusterSubnetGroupMessageTypeDef(TypedDict):
+    Marker: str,
+    ClusterSubnetGroups: List[ClusterSubnetGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ClusterSubnetGroups`:
-  `List`\[[ClusterSubnetGroupTypeDef](./type_defs.md#clustersubnetgrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="clustersubnetgrouptypedef"></a>
-
+1. See [:material-code-braces: ClusterSubnetGroupTypeDef](./type_defs.md#clustersubnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClusterSubnetGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterSubnetGroupTypeDef
+
+def get_value() -> ClusterSubnetGroupTypeDef:
+    return {
+        "ClusterSubnetGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterSubnetGroupTypeDef(TypedDict):
+    ClusterSubnetGroupName: NotRequired[str],
+    Description: NotRequired[str],
+    VpcId: NotRequired[str],
+    SubnetGroupStatus: NotRequired[str],
+    Subnets: NotRequired[List[SubnetTypeDef]],  # (1)
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `ClusterSubnetGroupName`: `str`
-- `Description`: `str`
-- `VpcId`: `str`
-- `SubnetGroupStatus`: `str`
-- `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="clustertypedef"></a>
-
+1. See [:material-code-braces: SubnetTypeDef](./type_defs.md#subnettypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterTypeDef
+
+def get_value() -> ClusterTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    NodeType: NotRequired[str],
+    ClusterStatus: NotRequired[str],
+    ClusterAvailabilityStatus: NotRequired[str],
+    ModifyStatus: NotRequired[str],
+    MasterUsername: NotRequired[str],
+    DBName: NotRequired[str],
+    Endpoint: NotRequired[EndpointTypeDef],  # (1)
+    ClusterCreateTime: NotRequired[datetime],
+    AutomatedSnapshotRetentionPeriod: NotRequired[int],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    ClusterSecurityGroups: NotRequired[List[ClusterSecurityGroupMembershipTypeDef]],  # (2)
+    VpcSecurityGroups: NotRequired[List[VpcSecurityGroupMembershipTypeDef]],  # (3)
+    ClusterParameterGroups: NotRequired[List[ClusterParameterGroupStatusTypeDef]],  # (4)
+    ClusterSubnetGroupName: NotRequired[str],
+    VpcId: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    PendingModifiedValues: NotRequired[PendingModifiedValuesTypeDef],  # (5)
+    ClusterVersion: NotRequired[str],
+    AllowVersionUpgrade: NotRequired[bool],
+    NumberOfNodes: NotRequired[int],
+    PubliclyAccessible: NotRequired[bool],
+    Encrypted: NotRequired[bool],
+    RestoreStatus: NotRequired[RestoreStatusTypeDef],  # (6)
+    DataTransferProgress: NotRequired[DataTransferProgressTypeDef],  # (7)
+    HsmStatus: NotRequired[HsmStatusTypeDef],  # (8)
+    ClusterSnapshotCopyStatus: NotRequired[ClusterSnapshotCopyStatusTypeDef],  # (9)
+    ClusterPublicKey: NotRequired[str],
+    ClusterNodes: NotRequired[List[ClusterNodeTypeDef]],  # (10)
+    ElasticIpStatus: NotRequired[ElasticIpStatusTypeDef],  # (11)
+    ClusterRevisionNumber: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (12)
+    KmsKeyId: NotRequired[str],
+    EnhancedVpcRouting: NotRequired[bool],
+    IamRoles: NotRequired[List[ClusterIamRoleTypeDef]],  # (13)
+    PendingActions: NotRequired[List[str]],
+    MaintenanceTrackName: NotRequired[str],
+    ElasticResizeNumberOfNodeOptions: NotRequired[str],
+    DeferredMaintenanceWindows: NotRequired[List[DeferredMaintenanceWindowTypeDef]],  # (14)
+    SnapshotScheduleIdentifier: NotRequired[str],
+    SnapshotScheduleState: NotRequired[ScheduleStateType],  # (15)
+    ExpectedNextSnapshotScheduleTime: NotRequired[datetime],
+    ExpectedNextSnapshotScheduleTimeStatus: NotRequired[str],
+    NextMaintenanceWindowStartTime: NotRequired[datetime],
+    ResizeInfo: NotRequired[ResizeInfoTypeDef],  # (16)
+    AvailabilityZoneRelocationStatus: NotRequired[str],
+    ClusterNamespaceArn: NotRequired[str],
+    TotalStorageCapacityInMegaBytes: NotRequired[int],
+    AquaConfiguration: NotRequired[AquaConfigurationTypeDef],  # (17)
+    DefaultIamRoleArn: NotRequired[str],
+    ReservedNodeExchangeStatus: NotRequired[ReservedNodeExchangeStatusTypeDef],  # (18)
+```
 
-- `ClusterIdentifier`: `str`
-- `NodeType`: `str`
-- `ClusterStatus`: `str`
-- `ClusterAvailabilityStatus`: `str`
-- `ModifyStatus`: `str`
-- `MasterUsername`: `str`
-- `DBName`: `str`
-- `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
-- `ClusterCreateTime`: `datetime`
-- `AutomatedSnapshotRetentionPeriod`: `int`
-- `ManualSnapshotRetentionPeriod`: `int`
-- `ClusterSecurityGroups`:
-  `List`\[[ClusterSecurityGroupMembershipTypeDef](./type_defs.md#clustersecuritygroupmembershiptypedef)\]
-- `VpcSecurityGroups`:
-  `List`\[[VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)\]
-- `ClusterParameterGroups`:
-  `List`\[[ClusterParameterGroupStatusTypeDef](./type_defs.md#clusterparametergroupstatustypedef)\]
-- `ClusterSubnetGroupName`: `str`
-- `VpcId`: `str`
-- `AvailabilityZone`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `PendingModifiedValues`:
-  [PendingModifiedValuesTypeDef](./type_defs.md#pendingmodifiedvaluestypedef)
-- `ClusterVersion`: `str`
-- `AllowVersionUpgrade`: `bool`
-- `NumberOfNodes`: `int`
-- `PubliclyAccessible`: `bool`
-- `Encrypted`: `bool`
-- `RestoreStatus`: [RestoreStatusTypeDef](./type_defs.md#restorestatustypedef)
-- `DataTransferProgress`:
-  [DataTransferProgressTypeDef](./type_defs.md#datatransferprogresstypedef)
-- `HsmStatus`: [HsmStatusTypeDef](./type_defs.md#hsmstatustypedef)
-- `ClusterSnapshotCopyStatus`:
-  [ClusterSnapshotCopyStatusTypeDef](./type_defs.md#clustersnapshotcopystatustypedef)
-- `ClusterPublicKey`: `str`
-- `ClusterNodes`:
-  `List`\[[ClusterNodeTypeDef](./type_defs.md#clusternodetypedef)\]
-- `ElasticIpStatus`:
-  [ElasticIpStatusTypeDef](./type_defs.md#elasticipstatustypedef)
-- `ClusterRevisionNumber`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
-- `EnhancedVpcRouting`: `bool`
-- `IamRoles`:
-  `List`\[[ClusterIamRoleTypeDef](./type_defs.md#clusteriamroletypedef)\]
-- `PendingActions`: `List`\[`str`\]
-- `MaintenanceTrackName`: `str`
-- `ElasticResizeNumberOfNodeOptions`: `str`
-- `DeferredMaintenanceWindows`:
-  `List`\[[DeferredMaintenanceWindowTypeDef](./type_defs.md#deferredmaintenancewindowtypedef)\]
-- `SnapshotScheduleIdentifier`: `str`
-- `SnapshotScheduleState`: [ScheduleStateType](./literals.md#schedulestatetype)
-- `ExpectedNextSnapshotScheduleTime`: `datetime`
-- `ExpectedNextSnapshotScheduleTimeStatus`: `str`
-- `NextMaintenanceWindowStartTime`: `datetime`
-- `ResizeInfo`: [ResizeInfoTypeDef](./type_defs.md#resizeinfotypedef)
-- `AvailabilityZoneRelocationStatus`: `str`
-- `ClusterNamespaceArn`: `str`
-- `TotalStorageCapacityInMegaBytes`: `int`
-- `AquaConfiguration`:
-  [AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef)
-- `DefaultIamRoleArn`: `str`
-- `ReservedNodeExchangeStatus`:
-  [ReservedNodeExchangeStatusTypeDef](./type_defs.md#reservednodeexchangestatustypedef)
-
-<a id="clusterversiontypedef"></a>
-
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: ClusterSecurityGroupMembershipTypeDef](./type_defs.md#clustersecuritygroupmembershiptypedef) 
+3. See [:material-code-braces: VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef) 
+4. See [:material-code-braces: ClusterParameterGroupStatusTypeDef](./type_defs.md#clusterparametergroupstatustypedef) 
+5. See [:material-code-braces: PendingModifiedValuesTypeDef](./type_defs.md#pendingmodifiedvaluestypedef) 
+6. See [:material-code-braces: RestoreStatusTypeDef](./type_defs.md#restorestatustypedef) 
+7. See [:material-code-braces: DataTransferProgressTypeDef](./type_defs.md#datatransferprogresstypedef) 
+8. See [:material-code-braces: HsmStatusTypeDef](./type_defs.md#hsmstatustypedef) 
+9. See [:material-code-braces: ClusterSnapshotCopyStatusTypeDef](./type_defs.md#clustersnapshotcopystatustypedef) 
+10. See [:material-code-braces: ClusterNodeTypeDef](./type_defs.md#clusternodetypedef) 
+11. See [:material-code-braces: ElasticIpStatusTypeDef](./type_defs.md#elasticipstatustypedef) 
+12. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+13. See [:material-code-braces: ClusterIamRoleTypeDef](./type_defs.md#clusteriamroletypedef) 
+14. See [:material-code-braces: DeferredMaintenanceWindowTypeDef](./type_defs.md#deferredmaintenancewindowtypedef) 
+15. See [:material-code-brackets: ScheduleStateType](./literals.md#schedulestatetype) 
+16. See [:material-code-braces: ResizeInfoTypeDef](./type_defs.md#resizeinfotypedef) 
+17. See [:material-code-braces: AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef) 
+18. See [:material-code-braces: ReservedNodeExchangeStatusTypeDef](./type_defs.md#reservednodeexchangestatustypedef) 
 ## ClusterVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterVersionTypeDef
+
+def get_value() -> ClusterVersionTypeDef:
+    return {
+        "ClusterVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterVersion`: `str`
-- `ClusterParameterGroupFamily`: `str`
-- `Description`: `str`
-
-<a id="clusterversionsmessagetypedef"></a>
+```python title="Definition"
+class ClusterVersionTypeDef(TypedDict):
+    ClusterVersion: NotRequired[str],
+    ClusterParameterGroupFamily: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## ClusterVersionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClusterVersionsMessageTypeDef
+
+def get_value() -> ClusterVersionsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ClusterVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClusterVersionsMessageTypeDef(TypedDict):
+    Marker: str,
+    ClusterVersions: List[ClusterVersionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ClusterVersions`:
-  `List`\[[ClusterVersionTypeDef](./type_defs.md#clusterversiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="clustersmessagetypedef"></a>
-
+1. See [:material-code-braces: ClusterVersionTypeDef](./type_defs.md#clusterversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClustersMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ClustersMessageTypeDef
+
+def get_value() -> ClustersMessageTypeDef:
+    return {
+        "Marker": ...,
+        "Clusters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClustersMessageTypeDef(TypedDict):
+    Marker: str,
+    Clusters: List[ClusterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `Clusters`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="copyclustersnapshotmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CopyClusterSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CopyClusterSnapshotMessageRequestTypeDef
+
+def get_value() -> CopyClusterSnapshotMessageRequestTypeDef:
+    return {
+        "SourceSnapshotIdentifier": ...,
+        "TargetSnapshotIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `SourceSnapshotIdentifier`: `str`
-- `TargetSnapshotIdentifier`: `str`
-
-Optional fields:
-
-- `SourceSnapshotClusterIdentifier`: `str`
-- `ManualSnapshotRetentionPeriod`: `int`
-
-<a id="copyclustersnapshotresulttypedef"></a>
+```python title="Definition"
+class CopyClusterSnapshotMessageRequestTypeDef(TypedDict):
+    SourceSnapshotIdentifier: str,
+    TargetSnapshotIdentifier: str,
+    SourceSnapshotClusterIdentifier: NotRequired[str],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+```
 
 ## CopyClusterSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CopyClusterSnapshotResultTypeDef
+
+def get_value() -> CopyClusterSnapshotResultTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyClusterSnapshotResultTypeDef(TypedDict):
+    Snapshot: SnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createauthenticationprofilemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAuthenticationProfileMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateAuthenticationProfileMessageRequestTypeDef
+
+def get_value() -> CreateAuthenticationProfileMessageRequestTypeDef:
+    return {
+        "AuthenticationProfileName": ...,
+        "AuthenticationProfileContent": ...,
+    }
 ```
 
-Required fields:
-
-- `AuthenticationProfileName`: `str`
-- `AuthenticationProfileContent`: `str`
-
-<a id="createauthenticationprofileresulttypedef"></a>
+```python title="Definition"
+class CreateAuthenticationProfileMessageRequestTypeDef(TypedDict):
+    AuthenticationProfileName: str,
+    AuthenticationProfileContent: str,
+```
 
 ## CreateAuthenticationProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateAuthenticationProfileResultTypeDef
+
+def get_value() -> CreateAuthenticationProfileResultTypeDef:
+    return {
+        "AuthenticationProfileName": ...,
+        "AuthenticationProfileContent": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAuthenticationProfileResultTypeDef(TypedDict):
+    AuthenticationProfileName: str,
+    AuthenticationProfileContent: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AuthenticationProfileName`: `str`
-- `AuthenticationProfileContent`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterMessageRequestTypeDef
+
+def get_value() -> CreateClusterMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "NodeType": ...,
+        "MasterUsername": ...,
+        "MasterUserPassword": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    NodeType: str,
+    MasterUsername: str,
+    MasterUserPassword: str,
+    DBName: NotRequired[str],
+    ClusterType: NotRequired[str],
+    ClusterSecurityGroups: NotRequired[Sequence[str]],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    ClusterSubnetGroupName: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    ClusterParameterGroupName: NotRequired[str],
+    AutomatedSnapshotRetentionPeriod: NotRequired[int],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    Port: NotRequired[int],
+    ClusterVersion: NotRequired[str],
+    AllowVersionUpgrade: NotRequired[bool],
+    NumberOfNodes: NotRequired[int],
+    PubliclyAccessible: NotRequired[bool],
+    Encrypted: NotRequired[bool],
+    HsmClientCertificateIdentifier: NotRequired[str],
+    HsmConfigurationIdentifier: NotRequired[str],
+    ElasticIp: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    KmsKeyId: NotRequired[str],
+    EnhancedVpcRouting: NotRequired[bool],
+    AdditionalInfo: NotRequired[str],
+    IamRoles: NotRequired[Sequence[str]],
+    MaintenanceTrackName: NotRequired[str],
+    SnapshotScheduleIdentifier: NotRequired[str],
+    AvailabilityZoneRelocation: NotRequired[bool],
+    AquaConfigurationStatus: NotRequired[AquaConfigurationStatusType],  # (2)
+    DefaultIamRoleArn: NotRequired[str],
+```
 
-- `ClusterIdentifier`: `str`
-- `NodeType`: `str`
-- `MasterUsername`: `str`
-- `MasterUserPassword`: `str`
-
-Optional fields:
-
-- `DBName`: `str`
-- `ClusterType`: `str`
-- `ClusterSecurityGroups`: `Sequence`\[`str`\]
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `ClusterSubnetGroupName`: `str`
-- `AvailabilityZone`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `ClusterParameterGroupName`: `str`
-- `AutomatedSnapshotRetentionPeriod`: `int`
-- `ManualSnapshotRetentionPeriod`: `int`
-- `Port`: `int`
-- `ClusterVersion`: `str`
-- `AllowVersionUpgrade`: `bool`
-- `NumberOfNodes`: `int`
-- `PubliclyAccessible`: `bool`
-- `Encrypted`: `bool`
-- `HsmClientCertificateIdentifier`: `str`
-- `HsmConfigurationIdentifier`: `str`
-- `ElasticIp`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
-- `EnhancedVpcRouting`: `bool`
-- `AdditionalInfo`: `str`
-- `IamRoles`: `Sequence`\[`str`\]
-- `MaintenanceTrackName`: `str`
-- `SnapshotScheduleIdentifier`: `str`
-- `AvailabilityZoneRelocation`: `bool`
-- `AquaConfigurationStatus`:
-  [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
-- `DefaultIamRoleArn`: `str`
-
-<a id="createclusterparametergroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype) 
 ## CreateClusterParameterGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterParameterGroupMessageRequestTypeDef
+
+def get_value() -> CreateClusterParameterGroupMessageRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+        "ParameterGroupFamily": ...,
+        "Description": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterParameterGroupMessageRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    ParameterGroupFamily: str,
+    Description: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ParameterGroupName`: `str`
-- `ParameterGroupFamily`: `str`
-- `Description`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createclusterparametergroupresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateClusterParameterGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterParameterGroupResultTypeDef
+
+def get_value() -> CreateClusterParameterGroupResultTypeDef:
+    return {
+        "ClusterParameterGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterParameterGroupResultTypeDef(TypedDict):
+    ClusterParameterGroup: ClusterParameterGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClusterParameterGroup`:
-  [ClusterParameterGroupTypeDef](./type_defs.md#clusterparametergrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclusterresulttypedef"></a>
-
+1. See [:material-code-braces: ClusterParameterGroupTypeDef](./type_defs.md#clusterparametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterResultTypeDef
+
+def get_value() -> CreateClusterResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclustersecuritygroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterSecurityGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterSecurityGroupMessageRequestTypeDef
+
+def get_value() -> CreateClusterSecurityGroupMessageRequestTypeDef:
+    return {
+        "ClusterSecurityGroupName": ...,
+        "Description": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterSecurityGroupMessageRequestTypeDef(TypedDict):
+    ClusterSecurityGroupName: str,
+    Description: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ClusterSecurityGroupName`: `str`
-- `Description`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createclustersecuritygroupresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateClusterSecurityGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterSecurityGroupResultTypeDef
+
+def get_value() -> CreateClusterSecurityGroupResultTypeDef:
+    return {
+        "ClusterSecurityGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterSecurityGroupResultTypeDef(TypedDict):
+    ClusterSecurityGroup: ClusterSecurityGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClusterSecurityGroup`:
-  [ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclustersnapshotmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterSnapshotMessageRequestTypeDef
+
+def get_value() -> CreateClusterSnapshotMessageRequestTypeDef:
+    return {
+        "SnapshotIdentifier": ...,
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterSnapshotMessageRequestTypeDef(TypedDict):
+    SnapshotIdentifier: str,
+    ClusterIdentifier: str,
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SnapshotIdentifier`: `str`
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `ManualSnapshotRetentionPeriod`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createclustersnapshotresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateClusterSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterSnapshotResultTypeDef
+
+def get_value() -> CreateClusterSnapshotResultTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterSnapshotResultTypeDef(TypedDict):
+    Snapshot: SnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclustersubnetgroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterSubnetGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterSubnetGroupMessageRequestTypeDef
+
+def get_value() -> CreateClusterSubnetGroupMessageRequestTypeDef:
+    return {
+        "ClusterSubnetGroupName": ...,
+        "Description": ...,
+        "SubnetIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterSubnetGroupMessageRequestTypeDef(TypedDict):
+    ClusterSubnetGroupName: str,
+    Description: str,
+    SubnetIds: Sequence[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ClusterSubnetGroupName`: `str`
-- `Description`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createclustersubnetgroupresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateClusterSubnetGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateClusterSubnetGroupResultTypeDef
+
+def get_value() -> CreateClusterSubnetGroupResultTypeDef:
+    return {
+        "ClusterSubnetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterSubnetGroupResultTypeDef(TypedDict):
+    ClusterSubnetGroup: ClusterSubnetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClusterSubnetGroup`:
-  [ClusterSubnetGroupTypeDef](./type_defs.md#clustersubnetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createendpointaccessmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterSubnetGroupTypeDef](./type_defs.md#clustersubnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEndpointAccessMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateEndpointAccessMessageRequestTypeDef
+
+def get_value() -> CreateEndpointAccessMessageRequestTypeDef:
+    return {
+        "EndpointName": ...,
+        "SubnetGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointName`: `str`
-- `SubnetGroupName`: `str`
-
-Optional fields:
-
-- `ClusterIdentifier`: `str`
-- `ResourceOwner`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-
-<a id="createeventsubscriptionmessagerequesttypedef"></a>
+```python title="Definition"
+class CreateEndpointAccessMessageRequestTypeDef(TypedDict):
+    EndpointName: str,
+    SubnetGroupName: str,
+    ClusterIdentifier: NotRequired[str],
+    ResourceOwner: NotRequired[str],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+```
 
 ## CreateEventSubscriptionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateEventSubscriptionMessageRequestTypeDef
+
+def get_value() -> CreateEventSubscriptionMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+        "SnsTopicArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventSubscriptionMessageRequestTypeDef(TypedDict):
+    SubscriptionName: str,
+    SnsTopicArn: str,
+    SourceType: NotRequired[str],
+    SourceIds: NotRequired[Sequence[str]],
+    EventCategories: NotRequired[Sequence[str]],
+    Severity: NotRequired[str],
+    Enabled: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SubscriptionName`: `str`
-- `SnsTopicArn`: `str`
-
-Optional fields:
-
-- `SourceType`: `str`
-- `SourceIds`: `Sequence`\[`str`\]
-- `EventCategories`: `Sequence`\[`str`\]
-- `Severity`: `str`
-- `Enabled`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createeventsubscriptionresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEventSubscriptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateEventSubscriptionResultTypeDef
+
+def get_value() -> CreateEventSubscriptionResultTypeDef:
+    return {
+        "EventSubscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventSubscriptionResultTypeDef(TypedDict):
+    EventSubscription: EventSubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventSubscription`:
-  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhsmclientcertificatemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHsmClientCertificateMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateHsmClientCertificateMessageRequestTypeDef
+
+def get_value() -> CreateHsmClientCertificateMessageRequestTypeDef:
+    return {
+        "HsmClientCertificateIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHsmClientCertificateMessageRequestTypeDef(TypedDict):
+    HsmClientCertificateIdentifier: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `HsmClientCertificateIdentifier`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createhsmclientcertificateresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateHsmClientCertificateResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateHsmClientCertificateResultTypeDef
+
+def get_value() -> CreateHsmClientCertificateResultTypeDef:
+    return {
+        "HsmClientCertificate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHsmClientCertificateResultTypeDef(TypedDict):
+    HsmClientCertificate: HsmClientCertificateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HsmClientCertificate`:
-  [HsmClientCertificateTypeDef](./type_defs.md#hsmclientcertificatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhsmconfigurationmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: HsmClientCertificateTypeDef](./type_defs.md#hsmclientcertificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHsmConfigurationMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateHsmConfigurationMessageRequestTypeDef
+
+def get_value() -> CreateHsmConfigurationMessageRequestTypeDef:
+    return {
+        "HsmConfigurationIdentifier": ...,
+        "Description": ...,
+        "HsmIpAddress": ...,
+        "HsmPartitionName": ...,
+        "HsmPartitionPassword": ...,
+        "HsmServerPublicCertificate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHsmConfigurationMessageRequestTypeDef(TypedDict):
+    HsmConfigurationIdentifier: str,
+    Description: str,
+    HsmIpAddress: str,
+    HsmPartitionName: str,
+    HsmPartitionPassword: str,
+    HsmServerPublicCertificate: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `HsmConfigurationIdentifier`: `str`
-- `Description`: `str`
-- `HsmIpAddress`: `str`
-- `HsmPartitionName`: `str`
-- `HsmPartitionPassword`: `str`
-- `HsmServerPublicCertificate`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createhsmconfigurationresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateHsmConfigurationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateHsmConfigurationResultTypeDef
+
+def get_value() -> CreateHsmConfigurationResultTypeDef:
+    return {
+        "HsmConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHsmConfigurationResultTypeDef(TypedDict):
+    HsmConfiguration: HsmConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HsmConfiguration`:
-  [HsmConfigurationTypeDef](./type_defs.md#hsmconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createscheduledactionmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: HsmConfigurationTypeDef](./type_defs.md#hsmconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateScheduledActionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateScheduledActionMessageRequestTypeDef
+
+def get_value() -> CreateScheduledActionMessageRequestTypeDef:
+    return {
+        "ScheduledActionName": ...,
+        "TargetAction": ...,
+        "Schedule": ...,
+        "IamRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateScheduledActionMessageRequestTypeDef(TypedDict):
+    ScheduledActionName: str,
+    TargetAction: ScheduledActionTypeTypeDef,  # (1)
+    Schedule: str,
+    IamRole: str,
+    ScheduledActionDescription: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Enable: NotRequired[bool],
+```
 
-- `ScheduledActionName`: `str`
-- `TargetAction`:
-  [ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef)
-- `Schedule`: `str`
-- `IamRole`: `str`
-
-Optional fields:
-
-- `ScheduledActionDescription`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Enable`: `bool`
-
-<a id="createsnapshotcopygrantmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef) 
 ## CreateSnapshotCopyGrantMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateSnapshotCopyGrantMessageRequestTypeDef
+
+def get_value() -> CreateSnapshotCopyGrantMessageRequestTypeDef:
+    return {
+        "SnapshotCopyGrantName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSnapshotCopyGrantMessageRequestTypeDef(TypedDict):
+    SnapshotCopyGrantName: str,
+    KmsKeyId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SnapshotCopyGrantName`: `str`
-
-Optional fields:
-
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createsnapshotcopygrantresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateSnapshotCopyGrantResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateSnapshotCopyGrantResultTypeDef
+
+def get_value() -> CreateSnapshotCopyGrantResultTypeDef:
+    return {
+        "SnapshotCopyGrant": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSnapshotCopyGrantResultTypeDef(TypedDict):
+    SnapshotCopyGrant: SnapshotCopyGrantTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SnapshotCopyGrant`:
-  [SnapshotCopyGrantTypeDef](./type_defs.md#snapshotcopygranttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsnapshotschedulemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotCopyGrantTypeDef](./type_defs.md#snapshotcopygranttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSnapshotScheduleMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateSnapshotScheduleMessageRequestTypeDef
+
+def get_value() -> CreateSnapshotScheduleMessageRequestTypeDef:
+    return {
+        "ScheduleDefinitions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateSnapshotScheduleMessageRequestTypeDef(TypedDict):
+    ScheduleDefinitions: NotRequired[Sequence[str]],
+    ScheduleIdentifier: NotRequired[str],
+    ScheduleDescription: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    DryRun: NotRequired[bool],
+    NextInvocations: NotRequired[int],
+```
 
-- `ScheduleDefinitions`: `Sequence`\[`str`\]
-- `ScheduleIdentifier`: `str`
-- `ScheduleDescription`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DryRun`: `bool`
-- `NextInvocations`: `int`
-
-<a id="createtagsmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTagsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateTagsMessageRequestTypeDef
+
+def get_value() -> CreateTagsMessageRequestTypeDef:
+    return {
+        "ResourceName": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTagsMessageRequestTypeDef(TypedDict):
+    ResourceName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createusagelimitmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateUsageLimitMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CreateUsageLimitMessageRequestTypeDef
+
+def get_value() -> CreateUsageLimitMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "FeatureType": ...,
+        "LimitType": ...,
+        "Amount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUsageLimitMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    FeatureType: UsageLimitFeatureTypeType,  # (1)
+    LimitType: UsageLimitLimitTypeType,  # (2)
+    Amount: int,
+    Period: NotRequired[UsageLimitPeriodType],  # (3)
+    BreachAction: NotRequired[UsageLimitBreachActionType],  # (4)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+```
 
-- `ClusterIdentifier`: `str`
-- `FeatureType`:
-  [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
-- `LimitType`: [UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype)
-- `Amount`: `int`
-
-Optional fields:
-
-- `Period`: [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
-- `BreachAction`:
-  [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="customerstoragemessagetypedef"></a>
-
+1. See [:material-code-brackets: UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype) 
+2. See [:material-code-brackets: UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype) 
+3. See [:material-code-brackets: UsageLimitPeriodType](./literals.md#usagelimitperiodtype) 
+4. See [:material-code-brackets: UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CustomerStorageMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import CustomerStorageMessageTypeDef
+
+def get_value() -> CustomerStorageMessageTypeDef:
+    return {
+        "TotalBackupSizeInMegaBytes": ...,
+        "TotalProvisionedStorageInMegaBytes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomerStorageMessageTypeDef(TypedDict):
+    TotalBackupSizeInMegaBytes: float,
+    TotalProvisionedStorageInMegaBytes: float,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TotalBackupSizeInMegaBytes`: `float`
-- `TotalProvisionedStorageInMegaBytes`: `float`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datashareassociationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataShareAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DataShareAssociationTypeDef
+
+def get_value() -> DataShareAssociationTypeDef:
+    return {
+        "ConsumerIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataShareAssociationTypeDef(TypedDict):
+    ConsumerIdentifier: NotRequired[str],
+    Status: NotRequired[DataShareStatusType],  # (1)
+    ConsumerRegion: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+    StatusChangeDate: NotRequired[datetime],
+```
 
-- `ConsumerIdentifier`: `str`
-- `Status`: [DataShareStatusType](./literals.md#datasharestatustype)
-- `ConsumerRegion`: `str`
-- `CreatedDate`: `datetime`
-- `StatusChangeDate`: `datetime`
-
-<a id="datashareresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: DataShareStatusType](./literals.md#datasharestatustype) 
 ## DataShareResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DataShareResponseMetadataTypeDef
+
+def get_value() -> DataShareResponseMetadataTypeDef:
+    return {
+        "DataShareArn": ...,
+        "ProducerArn": ...,
+        "AllowPubliclyAccessibleConsumers": ...,
+        "DataShareAssociations": ...,
+        "ManagedBy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DataShareResponseMetadataTypeDef(TypedDict):
+    DataShareArn: str,
+    ProducerArn: str,
+    AllowPubliclyAccessibleConsumers: bool,
+    DataShareAssociations: List[DataShareAssociationTypeDef],  # (1)
+    ManagedBy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataShareArn`: `str`
-- `ProducerArn`: `str`
-- `AllowPubliclyAccessibleConsumers`: `bool`
-- `DataShareAssociations`:
-  `List`\[[DataShareAssociationTypeDef](./type_defs.md#datashareassociationtypedef)\]
-- `ManagedBy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datasharetypedef"></a>
-
+1. See [:material-code-braces: DataShareAssociationTypeDef](./type_defs.md#datashareassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataShareTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DataShareTypeDef
+
+def get_value() -> DataShareTypeDef:
+    return {
+        "DataShareArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataShareTypeDef(TypedDict):
+    DataShareArn: NotRequired[str],
+    ProducerArn: NotRequired[str],
+    AllowPubliclyAccessibleConsumers: NotRequired[bool],
+    DataShareAssociations: NotRequired[List[DataShareAssociationTypeDef]],  # (1)
+    ManagedBy: NotRequired[str],
+```
 
-- `DataShareArn`: `str`
-- `ProducerArn`: `str`
-- `AllowPubliclyAccessibleConsumers`: `bool`
-- `DataShareAssociations`:
-  `List`\[[DataShareAssociationTypeDef](./type_defs.md#datashareassociationtypedef)\]
-- `ManagedBy`: `str`
-
-<a id="datatransferprogresstypedef"></a>
-
+1. See [:material-code-braces: DataShareAssociationTypeDef](./type_defs.md#datashareassociationtypedef) 
 ## DataTransferProgressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DataTransferProgressTypeDef
+
+def get_value() -> DataTransferProgressTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
-
-- `Status`: `str`
-- `CurrentRateInMegaBytesPerSecond`: `float`
-- `TotalDataInMegaBytes`: `int`
-- `DataTransferredInMegaBytes`: `int`
-- `EstimatedTimeToCompletionInSeconds`: `int`
-- `ElapsedTimeInSeconds`: `int`
-
-<a id="deauthorizedatasharemessagerequesttypedef"></a>
+```python title="Definition"
+class DataTransferProgressTypeDef(TypedDict):
+    Status: NotRequired[str],
+    CurrentRateInMegaBytesPerSecond: NotRequired[float],
+    TotalDataInMegaBytes: NotRequired[int],
+    DataTransferredInMegaBytes: NotRequired[int],
+    EstimatedTimeToCompletionInSeconds: NotRequired[int],
+    ElapsedTimeInSeconds: NotRequired[int],
+```
 
 ## DeauthorizeDataShareMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeauthorizeDataShareMessageRequestTypeDef
+
+def get_value() -> DeauthorizeDataShareMessageRequestTypeDef:
+    return {
+        "DataShareArn": ...,
+        "ConsumerIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DataShareArn`: `str`
-- `ConsumerIdentifier`: `str`
-
-<a id="defaultclusterparameterstypedef"></a>
+```python title="Definition"
+class DeauthorizeDataShareMessageRequestTypeDef(TypedDict):
+    DataShareArn: str,
+    ConsumerIdentifier: str,
+```
 
 ## DefaultClusterParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DefaultClusterParametersTypeDef
+
+def get_value() -> DefaultClusterParametersTypeDef:
+    return {
+        "ParameterGroupFamily": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DefaultClusterParametersTypeDef(TypedDict):
+    ParameterGroupFamily: NotRequired[str],
+    Marker: NotRequired[str],
+    Parameters: NotRequired[List[ParameterTypeDef]],  # (1)
+```
 
-- `ParameterGroupFamily`: `str`
-- `Marker`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-
-<a id="deferredmaintenancewindowtypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 ## DeferredMaintenanceWindowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeferredMaintenanceWindowTypeDef
+
+def get_value() -> DeferredMaintenanceWindowTypeDef:
+    return {
+        "DeferMaintenanceIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeferMaintenanceIdentifier`: `str`
-- `DeferMaintenanceStartTime`: `datetime`
-- `DeferMaintenanceEndTime`: `datetime`
-
-<a id="deleteauthenticationprofilemessagerequesttypedef"></a>
+```python title="Definition"
+class DeferredMaintenanceWindowTypeDef(TypedDict):
+    DeferMaintenanceIdentifier: NotRequired[str],
+    DeferMaintenanceStartTime: NotRequired[datetime],
+    DeferMaintenanceEndTime: NotRequired[datetime],
+```
 
 ## DeleteAuthenticationProfileMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteAuthenticationProfileMessageRequestTypeDef
+
+def get_value() -> DeleteAuthenticationProfileMessageRequestTypeDef:
+    return {
+        "AuthenticationProfileName": ...,
+    }
 ```
 
-Required fields:
-
-- `AuthenticationProfileName`: `str`
-
-<a id="deleteauthenticationprofileresulttypedef"></a>
+```python title="Definition"
+class DeleteAuthenticationProfileMessageRequestTypeDef(TypedDict):
+    AuthenticationProfileName: str,
+```
 
 ## DeleteAuthenticationProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteAuthenticationProfileResultTypeDef
+
+def get_value() -> DeleteAuthenticationProfileResultTypeDef:
+    return {
+        "AuthenticationProfileName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAuthenticationProfileResultTypeDef(TypedDict):
+    AuthenticationProfileName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AuthenticationProfileName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteClusterMessageRequestTypeDef
+
+def get_value() -> DeleteClusterMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `SkipFinalClusterSnapshot`: `bool`
-- `FinalClusterSnapshotIdentifier`: `str`
-- `FinalClusterSnapshotRetentionPeriod`: `int`
-
-<a id="deleteclusterparametergroupmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteClusterMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    SkipFinalClusterSnapshot: NotRequired[bool],
+    FinalClusterSnapshotIdentifier: NotRequired[str],
+    FinalClusterSnapshotRetentionPeriod: NotRequired[int],
+```
 
 ## DeleteClusterParameterGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteClusterParameterGroupMessageRequestTypeDef
+
+def get_value() -> DeleteClusterParameterGroupMessageRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterGroupName`: `str`
-
-<a id="deleteclusterresulttypedef"></a>
+```python title="Definition"
+class DeleteClusterParameterGroupMessageRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+```
 
 ## DeleteClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteClusterResultTypeDef
+
+def get_value() -> DeleteClusterResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteClusterResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteclustersecuritygroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteClusterSecurityGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteClusterSecurityGroupMessageRequestTypeDef
+
+def get_value() -> DeleteClusterSecurityGroupMessageRequestTypeDef:
+    return {
+        "ClusterSecurityGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterSecurityGroupName`: `str`
-
-<a id="deleteclustersnapshotmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteClusterSecurityGroupMessageRequestTypeDef(TypedDict):
+    ClusterSecurityGroupName: str,
+```
 
 ## DeleteClusterSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteClusterSnapshotMessageRequestTypeDef
+
+def get_value() -> DeleteClusterSnapshotMessageRequestTypeDef:
+    return {
+        "SnapshotIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotIdentifier`: `str`
-
-Optional fields:
-
-- `SnapshotClusterIdentifier`: `str`
-
-<a id="deleteclustersnapshotmessagetypedef"></a>
+```python title="Definition"
+class DeleteClusterSnapshotMessageRequestTypeDef(TypedDict):
+    SnapshotIdentifier: str,
+    SnapshotClusterIdentifier: NotRequired[str],
+```
 
 ## DeleteClusterSnapshotMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteClusterSnapshotMessageTypeDef
+
+def get_value() -> DeleteClusterSnapshotMessageTypeDef:
+    return {
+        "SnapshotIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotIdentifier`: `str`
-
-Optional fields:
-
-- `SnapshotClusterIdentifier`: `str`
-
-<a id="deleteclustersnapshotresulttypedef"></a>
+```python title="Definition"
+class DeleteClusterSnapshotMessageTypeDef(TypedDict):
+    SnapshotIdentifier: str,
+    SnapshotClusterIdentifier: NotRequired[str],
+```
 
 ## DeleteClusterSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteClusterSnapshotResultTypeDef
+
+def get_value() -> DeleteClusterSnapshotResultTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteClusterSnapshotResultTypeDef(TypedDict):
+    Snapshot: SnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteclustersubnetgroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteClusterSubnetGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteClusterSubnetGroupMessageRequestTypeDef
+
+def get_value() -> DeleteClusterSubnetGroupMessageRequestTypeDef:
+    return {
+        "ClusterSubnetGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterSubnetGroupName`: `str`
-
-<a id="deleteendpointaccessmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteClusterSubnetGroupMessageRequestTypeDef(TypedDict):
+    ClusterSubnetGroupName: str,
+```
 
 ## DeleteEndpointAccessMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteEndpointAccessMessageRequestTypeDef
+
+def get_value() -> DeleteEndpointAccessMessageRequestTypeDef:
+    return {
+        "EndpointName": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointName`: `str`
-
-<a id="deleteeventsubscriptionmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteEndpointAccessMessageRequestTypeDef(TypedDict):
+    EndpointName: str,
+```
 
 ## DeleteEventSubscriptionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteEventSubscriptionMessageRequestTypeDef
+
+def get_value() -> DeleteEventSubscriptionMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionName`: `str`
-
-<a id="deletehsmclientcertificatemessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteEventSubscriptionMessageRequestTypeDef(TypedDict):
+    SubscriptionName: str,
+```
 
 ## DeleteHsmClientCertificateMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteHsmClientCertificateMessageRequestTypeDef
+
+def get_value() -> DeleteHsmClientCertificateMessageRequestTypeDef:
+    return {
+        "HsmClientCertificateIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `HsmClientCertificateIdentifier`: `str`
-
-<a id="deletehsmconfigurationmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteHsmClientCertificateMessageRequestTypeDef(TypedDict):
+    HsmClientCertificateIdentifier: str,
+```
 
 ## DeleteHsmConfigurationMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteHsmConfigurationMessageRequestTypeDef
+
+def get_value() -> DeleteHsmConfigurationMessageRequestTypeDef:
+    return {
+        "HsmConfigurationIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `HsmConfigurationIdentifier`: `str`
-
-<a id="deletescheduledactionmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteHsmConfigurationMessageRequestTypeDef(TypedDict):
+    HsmConfigurationIdentifier: str,
+```
 
 ## DeleteScheduledActionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteScheduledActionMessageRequestTypeDef
+
+def get_value() -> DeleteScheduledActionMessageRequestTypeDef:
+    return {
+        "ScheduledActionName": ...,
+    }
 ```
 
-Required fields:
-
-- `ScheduledActionName`: `str`
-
-<a id="deletesnapshotcopygrantmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteScheduledActionMessageRequestTypeDef(TypedDict):
+    ScheduledActionName: str,
+```
 
 ## DeleteSnapshotCopyGrantMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteSnapshotCopyGrantMessageRequestTypeDef
+
+def get_value() -> DeleteSnapshotCopyGrantMessageRequestTypeDef:
+    return {
+        "SnapshotCopyGrantName": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotCopyGrantName`: `str`
-
-<a id="deletesnapshotschedulemessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteSnapshotCopyGrantMessageRequestTypeDef(TypedDict):
+    SnapshotCopyGrantName: str,
+```
 
 ## DeleteSnapshotScheduleMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteSnapshotScheduleMessageRequestTypeDef
+
+def get_value() -> DeleteSnapshotScheduleMessageRequestTypeDef:
+    return {
+        "ScheduleIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ScheduleIdentifier`: `str`
-
-<a id="deletetagsmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteSnapshotScheduleMessageRequestTypeDef(TypedDict):
+    ScheduleIdentifier: str,
+```
 
 ## DeleteTagsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteTagsMessageRequestTypeDef
+
+def get_value() -> DeleteTagsMessageRequestTypeDef:
+    return {
+        "ResourceName": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="deleteusagelimitmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteTagsMessageRequestTypeDef(TypedDict):
+    ResourceName: str,
+    TagKeys: Sequence[str],
+```
 
 ## DeleteUsageLimitMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DeleteUsageLimitMessageRequestTypeDef
+
+def get_value() -> DeleteUsageLimitMessageRequestTypeDef:
+    return {
+        "UsageLimitId": ...,
+    }
 ```
 
-Required fields:
-
-- `UsageLimitId`: `str`
-
-<a id="describeaccountattributesmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteUsageLimitMessageRequestTypeDef(TypedDict):
+    UsageLimitId: str,
+```
 
 ## DescribeAccountAttributesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeAccountAttributesMessageRequestTypeDef
+
+def get_value() -> DescribeAccountAttributesMessageRequestTypeDef:
+    return {
+        "AttributeNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `AttributeNames`: `Sequence`\[`str`\]
-
-<a id="describeauthenticationprofilesmessagerequesttypedef"></a>
+```python title="Definition"
+class DescribeAccountAttributesMessageRequestTypeDef(TypedDict):
+    AttributeNames: NotRequired[Sequence[str]],
+```
 
 ## DescribeAuthenticationProfilesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeAuthenticationProfilesMessageRequestTypeDef
+
+def get_value() -> DescribeAuthenticationProfilesMessageRequestTypeDef:
+    return {
+        "AuthenticationProfileName": ...,
+    }
 ```
 
-Optional fields:
-
-- `AuthenticationProfileName`: `str`
-
-<a id="describeauthenticationprofilesresulttypedef"></a>
+```python title="Definition"
+class DescribeAuthenticationProfilesMessageRequestTypeDef(TypedDict):
+    AuthenticationProfileName: NotRequired[str],
+```
 
 ## DescribeAuthenticationProfilesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeAuthenticationProfilesResultTypeDef
+
+def get_value() -> DescribeAuthenticationProfilesResultTypeDef:
+    return {
+        "AuthenticationProfiles": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAuthenticationProfilesResultTypeDef(TypedDict):
+    AuthenticationProfiles: List[AuthenticationProfileTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AuthenticationProfiles`:
-  `List`\[[AuthenticationProfileTypeDef](./type_defs.md#authenticationprofiletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AuthenticationProfileTypeDef](./type_defs.md#authenticationprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeClusterDbRevisionsMessageDescribeClusterDbRevisionsPaginateTypeDef
 
-<a id="describeclusterdbrevisionsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClusterDbRevisionsMessageDescribeClusterDbRevisionsPaginateTypeDef
 
+def get_value() -> DescribeClusterDbRevisionsMessageDescribeClusterDbRevisionsPaginateTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterDbRevisionsMessageDescribeClusterDbRevisionsPaginateTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClusterDbRevisionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeClusterDbRevisionsMessageRequestTypeDef
+
+def get_value() -> DescribeClusterDbRevisionsMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeClusterDbRevisionsMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `ClusterIdentifier`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
+## DescribeClusterParameterGroupsMessageDescribeClusterParameterGroupsPaginateTypeDef
 
-<a id="describeclusterparametergroupsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClusterParameterGroupsMessageDescribeClusterParameterGroupsPaginateTypeDef
 
+def get_value() -> DescribeClusterParameterGroupsMessageDescribeClusterParameterGroupsPaginateTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterParameterGroupsMessageDescribeClusterParameterGroupsPaginateTypeDef(TypedDict):
+    ParameterGroupName: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClusterParameterGroupsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeClusterParameterGroupsMessageRequestTypeDef
+
+def get_value() -> DescribeClusterParameterGroupsMessageRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeClusterParameterGroupsMessageRequestTypeDef(TypedDict):
+    ParameterGroupName: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
-- `ParameterGroupName`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
+## DescribeClusterParametersMessageDescribeClusterParametersPaginateTypeDef
 
-<a id="describeclusterparametersmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClusterParametersMessageDescribeClusterParametersPaginateTypeDef
 
+def get_value() -> DescribeClusterParametersMessageDescribeClusterParametersPaginateTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterParametersMessageDescribeClusterParametersPaginateTypeDef(TypedDict):
+    ParameterGroupName: str,
+    Source: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClusterParametersMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeClusterParametersMessageRequestTypeDef
+
+def get_value() -> DescribeClusterParametersMessageRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClusterParametersMessageRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    Source: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `ParameterGroupName`: `str`
+## DescribeClusterSecurityGroupsMessageDescribeClusterSecurityGroupsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClusterSecurityGroupsMessageDescribeClusterSecurityGroupsPaginateTypeDef
 
-- `Source`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
+def get_value() -> DescribeClusterSecurityGroupsMessageDescribeClusterSecurityGroupsPaginateTypeDef:
+    return {
+        "ClusterSecurityGroupName": ...,
+    }
+```
 
-<a id="describeclustersecuritygroupsmessagerequesttypedef"></a>
+```python title="Definition"
+class DescribeClusterSecurityGroupsMessageDescribeClusterSecurityGroupsPaginateTypeDef(TypedDict):
+    ClusterSecurityGroupName: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClusterSecurityGroupsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeClusterSecurityGroupsMessageRequestTypeDef
+
+def get_value() -> DescribeClusterSecurityGroupsMessageRequestTypeDef:
+    return {
+        "ClusterSecurityGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeClusterSecurityGroupsMessageRequestTypeDef(TypedDict):
+    ClusterSecurityGroupName: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
-- `ClusterSecurityGroupName`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
+## DescribeClusterSnapshotsMessageDescribeClusterSnapshotsPaginateTypeDef
 
-<a id="describeclustersnapshotsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClusterSnapshotsMessageDescribeClusterSnapshotsPaginateTypeDef
 
+def get_value() -> DescribeClusterSnapshotsMessageDescribeClusterSnapshotsPaginateTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterSnapshotsMessageDescribeClusterSnapshotsPaginateTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    SnapshotIdentifier: NotRequired[str],
+    SnapshotType: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    OwnerAccount: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    ClusterExists: NotRequired[bool],
+    SortingEntities: NotRequired[Sequence[SnapshotSortingEntityTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClusterSnapshotsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeClusterSnapshotsMessageRequestTypeDef
+
+def get_value() -> DescribeClusterSnapshotsMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeClusterSnapshotsMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    SnapshotIdentifier: NotRequired[str],
+    SnapshotType: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    OwnerAccount: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    ClusterExists: NotRequired[bool],
+    SortingEntities: NotRequired[Sequence[SnapshotSortingEntityTypeDef]],  # (1)
+```
 
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `SnapshotType`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `OwnerAccount`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `ClusterExists`: `bool`
-- `SortingEntities`:
-  `Sequence`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
+1. See [:material-code-braces: SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef) 
+## DescribeClusterSnapshotsMessageSnapshotAvailableWaitTypeDef
 
-<a id="describeclustersubnetgroupsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClusterSnapshotsMessageSnapshotAvailableWaitTypeDef
 
+def get_value() -> DescribeClusterSnapshotsMessageSnapshotAvailableWaitTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterSnapshotsMessageSnapshotAvailableWaitTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    SnapshotIdentifier: NotRequired[str],
+    SnapshotType: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    OwnerAccount: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    ClusterExists: NotRequired[bool],
+    SortingEntities: NotRequired[Sequence[SnapshotSortingEntityTypeDef]],  # (1)
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeClusterSubnetGroupsMessageDescribeClusterSubnetGroupsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClusterSubnetGroupsMessageDescribeClusterSubnetGroupsPaginateTypeDef
+
+def get_value() -> DescribeClusterSubnetGroupsMessageDescribeClusterSubnetGroupsPaginateTypeDef:
+    return {
+        "ClusterSubnetGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterSubnetGroupsMessageDescribeClusterSubnetGroupsPaginateTypeDef(TypedDict):
+    ClusterSubnetGroupName: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClusterSubnetGroupsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeClusterSubnetGroupsMessageRequestTypeDef
+
+def get_value() -> DescribeClusterSubnetGroupsMessageRequestTypeDef:
+    return {
+        "ClusterSubnetGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeClusterSubnetGroupsMessageRequestTypeDef(TypedDict):
+    ClusterSubnetGroupName: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
-- `ClusterSubnetGroupName`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
+## DescribeClusterTracksMessageDescribeClusterTracksPaginateTypeDef
 
-<a id="describeclustertracksmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClusterTracksMessageDescribeClusterTracksPaginateTypeDef
 
+def get_value() -> DescribeClusterTracksMessageDescribeClusterTracksPaginateTypeDef:
+    return {
+        "MaintenanceTrackName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterTracksMessageDescribeClusterTracksPaginateTypeDef(TypedDict):
+    MaintenanceTrackName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClusterTracksMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeClusterTracksMessageRequestTypeDef
+
+def get_value() -> DescribeClusterTracksMessageRequestTypeDef:
+    return {
+        "MaintenanceTrackName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeClusterTracksMessageRequestTypeDef(TypedDict):
+    MaintenanceTrackName: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `MaintenanceTrackName`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
+## DescribeClusterVersionsMessageDescribeClusterVersionsPaginateTypeDef
 
-<a id="describeclusterversionsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClusterVersionsMessageDescribeClusterVersionsPaginateTypeDef
 
+def get_value() -> DescribeClusterVersionsMessageDescribeClusterVersionsPaginateTypeDef:
+    return {
+        "ClusterVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterVersionsMessageDescribeClusterVersionsPaginateTypeDef(TypedDict):
+    ClusterVersion: NotRequired[str],
+    ClusterParameterGroupFamily: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClusterVersionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeClusterVersionsMessageRequestTypeDef
+
+def get_value() -> DescribeClusterVersionsMessageRequestTypeDef:
+    return {
+        "ClusterVersion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeClusterVersionsMessageRequestTypeDef(TypedDict):
+    ClusterVersion: NotRequired[str],
+    ClusterParameterGroupFamily: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `ClusterVersion`: `str`
-- `ClusterParameterGroupFamily`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
+## DescribeClustersMessageClusterAvailableWaitTypeDef
 
-<a id="describeclustersmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClustersMessageClusterAvailableWaitTypeDef
 
+def get_value() -> DescribeClustersMessageClusterAvailableWaitTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClustersMessageClusterAvailableWaitTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeClustersMessageClusterDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClustersMessageClusterDeletedWaitTypeDef
+
+def get_value() -> DescribeClustersMessageClusterDeletedWaitTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClustersMessageClusterDeletedWaitTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeClustersMessageClusterRestoredWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClustersMessageClusterRestoredWaitTypeDef
+
+def get_value() -> DescribeClustersMessageClusterRestoredWaitTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClustersMessageClusterRestoredWaitTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeClustersMessageDescribeClustersPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeClustersMessageDescribeClustersPaginateTypeDef
+
+def get_value() -> DescribeClustersMessageDescribeClustersPaginateTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClustersMessageDescribeClustersPaginateTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClustersMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeClustersMessageRequestTypeDef
+
+def get_value() -> DescribeClustersMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeClustersMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
-- `ClusterIdentifier`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
+## DescribeDataSharesForConsumerMessageDescribeDataSharesForConsumerPaginateTypeDef
 
-<a id="describedatasharesforconsumermessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeDataSharesForConsumerMessageDescribeDataSharesForConsumerPaginateTypeDef
 
+def get_value() -> DescribeDataSharesForConsumerMessageDescribeDataSharesForConsumerPaginateTypeDef:
+    return {
+        "ConsumerArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSharesForConsumerMessageDescribeDataSharesForConsumerPaginateTypeDef(TypedDict):
+    ConsumerArn: NotRequired[str],
+    Status: NotRequired[DataShareStatusForConsumerType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: DataShareStatusForConsumerType](./literals.md#datasharestatusforconsumertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDataSharesForConsumerMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeDataSharesForConsumerMessageRequestTypeDef
+
+def get_value() -> DescribeDataSharesForConsumerMessageRequestTypeDef:
+    return {
+        "ConsumerArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeDataSharesForConsumerMessageRequestTypeDef(TypedDict):
+    ConsumerArn: NotRequired[str],
+    Status: NotRequired[DataShareStatusForConsumerType],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `ConsumerArn`: `str`
-- `Status`:
-  [DataShareStatusForConsumerType](./literals.md#datasharestatusforconsumertype)
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describedatasharesforconsumerresulttypedef"></a>
-
+1. See [:material-code-brackets: DataShareStatusForConsumerType](./literals.md#datasharestatusforconsumertype) 
 ## DescribeDataSharesForConsumerResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeDataSharesForConsumerResultTypeDef
+
+def get_value() -> DescribeDataSharesForConsumerResultTypeDef:
+    return {
+        "DataShares": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDataSharesForConsumerResultTypeDef(TypedDict):
+    DataShares: List[DataShareTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataShares`: `List`\[[DataShareTypeDef](./type_defs.md#datasharetypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DataShareTypeDef](./type_defs.md#datasharetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDataSharesForProducerMessageDescribeDataSharesForProducerPaginateTypeDef
 
-<a id="describedatasharesforproducermessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeDataSharesForProducerMessageDescribeDataSharesForProducerPaginateTypeDef
 
+def get_value() -> DescribeDataSharesForProducerMessageDescribeDataSharesForProducerPaginateTypeDef:
+    return {
+        "ProducerArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSharesForProducerMessageDescribeDataSharesForProducerPaginateTypeDef(TypedDict):
+    ProducerArn: NotRequired[str],
+    Status: NotRequired[DataShareStatusForProducerType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: DataShareStatusForProducerType](./literals.md#datasharestatusforproducertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDataSharesForProducerMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeDataSharesForProducerMessageRequestTypeDef
+
+def get_value() -> DescribeDataSharesForProducerMessageRequestTypeDef:
+    return {
+        "ProducerArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeDataSharesForProducerMessageRequestTypeDef(TypedDict):
+    ProducerArn: NotRequired[str],
+    Status: NotRequired[DataShareStatusForProducerType],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `ProducerArn`: `str`
-- `Status`:
-  [DataShareStatusForProducerType](./literals.md#datasharestatusforproducertype)
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describedatasharesforproducerresulttypedef"></a>
-
+1. See [:material-code-brackets: DataShareStatusForProducerType](./literals.md#datasharestatusforproducertype) 
 ## DescribeDataSharesForProducerResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeDataSharesForProducerResultTypeDef
+
+def get_value() -> DescribeDataSharesForProducerResultTypeDef:
+    return {
+        "DataShares": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDataSharesForProducerResultTypeDef(TypedDict):
+    DataShares: List[DataShareTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataShares`: `List`\[[DataShareTypeDef](./type_defs.md#datasharetypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DataShareTypeDef](./type_defs.md#datasharetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDataSharesMessageDescribeDataSharesPaginateTypeDef
 
-<a id="describedatasharesmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeDataSharesMessageDescribeDataSharesPaginateTypeDef
 
+def get_value() -> DescribeDataSharesMessageDescribeDataSharesPaginateTypeDef:
+    return {
+        "DataShareArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSharesMessageDescribeDataSharesPaginateTypeDef(TypedDict):
+    DataShareArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDataSharesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeDataSharesMessageRequestTypeDef
+
+def get_value() -> DescribeDataSharesMessageRequestTypeDef:
+    return {
+        "DataShareArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `DataShareArn`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describedatasharesresulttypedef"></a>
+```python title="Definition"
+class DescribeDataSharesMessageRequestTypeDef(TypedDict):
+    DataShareArn: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribeDataSharesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeDataSharesResultTypeDef
+
+def get_value() -> DescribeDataSharesResultTypeDef:
+    return {
+        "DataShares": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDataSharesResultTypeDef(TypedDict):
+    DataShares: List[DataShareTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataShares`: `List`\[[DataShareTypeDef](./type_defs.md#datasharetypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DataShareTypeDef](./type_defs.md#datasharetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDefaultClusterParametersMessageDescribeDefaultClusterParametersPaginateTypeDef
 
-<a id="describedefaultclusterparametersmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeDefaultClusterParametersMessageDescribeDefaultClusterParametersPaginateTypeDef
 
+def get_value() -> DescribeDefaultClusterParametersMessageDescribeDefaultClusterParametersPaginateTypeDef:
+    return {
+        "ParameterGroupFamily": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDefaultClusterParametersMessageDescribeDefaultClusterParametersPaginateTypeDef(TypedDict):
+    ParameterGroupFamily: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDefaultClusterParametersMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeDefaultClusterParametersMessageRequestTypeDef
+
+def get_value() -> DescribeDefaultClusterParametersMessageRequestTypeDef:
+    return {
+        "ParameterGroupFamily": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterGroupFamily`: `str`
-
-Optional fields:
-
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describedefaultclusterparametersresulttypedef"></a>
+```python title="Definition"
+class DescribeDefaultClusterParametersMessageRequestTypeDef(TypedDict):
+    ParameterGroupFamily: str,
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribeDefaultClusterParametersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeDefaultClusterParametersResultTypeDef
+
+def get_value() -> DescribeDefaultClusterParametersResultTypeDef:
+    return {
+        "DefaultClusterParameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDefaultClusterParametersResultTypeDef(TypedDict):
+    DefaultClusterParameters: DefaultClusterParametersTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DefaultClusterParameters`:
-  [DefaultClusterParametersTypeDef](./type_defs.md#defaultclusterparameterstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DefaultClusterParametersTypeDef](./type_defs.md#defaultclusterparameterstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEndpointAccessMessageDescribeEndpointAccessPaginateTypeDef
 
-<a id="describeendpointaccessmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeEndpointAccessMessageDescribeEndpointAccessPaginateTypeDef
 
+def get_value() -> DescribeEndpointAccessMessageDescribeEndpointAccessPaginateTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEndpointAccessMessageDescribeEndpointAccessPaginateTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    ResourceOwner: NotRequired[str],
+    EndpointName: NotRequired[str],
+    VpcId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEndpointAccessMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeEndpointAccessMessageRequestTypeDef
+
+def get_value() -> DescribeEndpointAccessMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEndpointAccessMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    ResourceOwner: NotRequired[str],
+    EndpointName: NotRequired[str],
+    VpcId: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `ClusterIdentifier`: `str`
-- `ResourceOwner`: `str`
-- `EndpointName`: `str`
-- `VpcId`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
+## DescribeEndpointAuthorizationMessageDescribeEndpointAuthorizationPaginateTypeDef
 
-<a id="describeendpointauthorizationmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeEndpointAuthorizationMessageDescribeEndpointAuthorizationPaginateTypeDef
 
+def get_value() -> DescribeEndpointAuthorizationMessageDescribeEndpointAuthorizationPaginateTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEndpointAuthorizationMessageDescribeEndpointAuthorizationPaginateTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    Account: NotRequired[str],
+    Grantee: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEndpointAuthorizationMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeEndpointAuthorizationMessageRequestTypeDef
+
+def get_value() -> DescribeEndpointAuthorizationMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterIdentifier`: `str`
-- `Account`: `str`
-- `Grantee`: `bool`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describeeventcategoriesmessagerequesttypedef"></a>
+```python title="Definition"
+class DescribeEndpointAuthorizationMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    Account: NotRequired[str],
+    Grantee: NotRequired[bool],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribeEventCategoriesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeEventCategoriesMessageRequestTypeDef
+
+def get_value() -> DescribeEventCategoriesMessageRequestTypeDef:
+    return {
+        "SourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventCategoriesMessageRequestTypeDef(TypedDict):
+    SourceType: NotRequired[str],
+```
 
-- `SourceType`: `str`
+## DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef
 
-<a id="describeeventsubscriptionsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef
 
+def get_value() -> DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef:
+    return {
+        "SubscriptionName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef(TypedDict):
+    SubscriptionName: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventSubscriptionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeEventSubscriptionsMessageRequestTypeDef
+
+def get_value() -> DescribeEventSubscriptionsMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventSubscriptionsMessageRequestTypeDef(TypedDict):
+    SubscriptionName: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
-- `SubscriptionName`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
+## DescribeEventsMessageDescribeEventsPaginateTypeDef
 
-<a id="describeeventsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeEventsMessageDescribeEventsPaginateTypeDef
 
+def get_value() -> DescribeEventsMessageDescribeEventsPaginateTypeDef:
+    return {
+        "SourceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventsMessageDescribeEventsPaginateTypeDef(TypedDict):
+    SourceIdentifier: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Duration: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeEventsMessageRequestTypeDef
+
+def get_value() -> DescribeEventsMessageRequestTypeDef:
+    return {
+        "SourceIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventsMessageRequestTypeDef(TypedDict):
+    SourceIdentifier: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Duration: NotRequired[int],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `SourceIdentifier`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `MaxRecords`: `int`
-- `Marker`: `str`
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+## DescribeHsmClientCertificatesMessageDescribeHsmClientCertificatesPaginateTypeDef
 
-<a id="describehsmclientcertificatesmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeHsmClientCertificatesMessageDescribeHsmClientCertificatesPaginateTypeDef
 
+def get_value() -> DescribeHsmClientCertificatesMessageDescribeHsmClientCertificatesPaginateTypeDef:
+    return {
+        "HsmClientCertificateIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHsmClientCertificatesMessageDescribeHsmClientCertificatesPaginateTypeDef(TypedDict):
+    HsmClientCertificateIdentifier: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeHsmClientCertificatesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeHsmClientCertificatesMessageRequestTypeDef
+
+def get_value() -> DescribeHsmClientCertificatesMessageRequestTypeDef:
+    return {
+        "HsmClientCertificateIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeHsmClientCertificatesMessageRequestTypeDef(TypedDict):
+    HsmClientCertificateIdentifier: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
-- `HsmClientCertificateIdentifier`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
+## DescribeHsmConfigurationsMessageDescribeHsmConfigurationsPaginateTypeDef
 
-<a id="describehsmconfigurationsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeHsmConfigurationsMessageDescribeHsmConfigurationsPaginateTypeDef
 
+def get_value() -> DescribeHsmConfigurationsMessageDescribeHsmConfigurationsPaginateTypeDef:
+    return {
+        "HsmConfigurationIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeHsmConfigurationsMessageDescribeHsmConfigurationsPaginateTypeDef(TypedDict):
+    HsmConfigurationIdentifier: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeHsmConfigurationsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeHsmConfigurationsMessageRequestTypeDef
+
+def get_value() -> DescribeHsmConfigurationsMessageRequestTypeDef:
+    return {
+        "HsmConfigurationIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `HsmConfigurationIdentifier`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-
-<a id="describeloggingstatusmessagerequesttypedef"></a>
+```python title="Definition"
+class DescribeHsmConfigurationsMessageRequestTypeDef(TypedDict):
+    HsmConfigurationIdentifier: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
 ## DescribeLoggingStatusMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeLoggingStatusMessageRequestTypeDef
+
+def get_value() -> DescribeLoggingStatusMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLoggingStatusMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
-- `ClusterIdentifier`: `str`
+## DescribeNodeConfigurationOptionsMessageDescribeNodeConfigurationOptionsPaginateTypeDef
 
-<a id="describenodeconfigurationoptionsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeNodeConfigurationOptionsMessageDescribeNodeConfigurationOptionsPaginateTypeDef
 
+def get_value() -> DescribeNodeConfigurationOptionsMessageDescribeNodeConfigurationOptionsPaginateTypeDef:
+    return {
+        "ActionType": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNodeConfigurationOptionsMessageDescribeNodeConfigurationOptionsPaginateTypeDef(TypedDict):
+    ActionType: ActionTypeType,  # (1)
+    ClusterIdentifier: NotRequired[str],
+    SnapshotIdentifier: NotRequired[str],
+    OwnerAccount: NotRequired[str],
+    Filters: NotRequired[Sequence[NodeConfigurationOptionsFilterTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-braces: NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeNodeConfigurationOptionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeNodeConfigurationOptionsMessageRequestTypeDef
+
+def get_value() -> DescribeNodeConfigurationOptionsMessageRequestTypeDef:
+    return {
+        "ActionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNodeConfigurationOptionsMessageRequestTypeDef(TypedDict):
+    ActionType: ActionTypeType,  # (1)
+    ClusterIdentifier: NotRequired[str],
+    SnapshotIdentifier: NotRequired[str],
+    OwnerAccount: NotRequired[str],
+    Filters: NotRequired[Sequence[NodeConfigurationOptionsFilterTypeDef]],  # (2)
+    Marker: NotRequired[str],
+    MaxRecords: NotRequired[int],
+```
 
-- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-braces: NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef) 
+## DescribeOrderableClusterOptionsMessageDescribeOrderableClusterOptionsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeOrderableClusterOptionsMessageDescribeOrderableClusterOptionsPaginateTypeDef
 
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `OwnerAccount`: `str`
-- `Filters`:
-  `Sequence`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
+def get_value() -> DescribeOrderableClusterOptionsMessageDescribeOrderableClusterOptionsPaginateTypeDef:
+    return {
+        "ClusterVersion": ...,
+    }
+```
 
-<a id="describeorderableclusteroptionsmessagerequesttypedef"></a>
+```python title="Definition"
+class DescribeOrderableClusterOptionsMessageDescribeOrderableClusterOptionsPaginateTypeDef(TypedDict):
+    ClusterVersion: NotRequired[str],
+    NodeType: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeOrderableClusterOptionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeOrderableClusterOptionsMessageRequestTypeDef
+
+def get_value() -> DescribeOrderableClusterOptionsMessageRequestTypeDef:
+    return {
+        "ClusterVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterVersion`: `str`
-- `NodeType`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describepartnersinputmessagerequesttypedef"></a>
+```python title="Definition"
+class DescribeOrderableClusterOptionsMessageRequestTypeDef(TypedDict):
+    ClusterVersion: NotRequired[str],
+    NodeType: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribePartnersInputMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribePartnersInputMessageRequestTypeDef
+
+def get_value() -> DescribePartnersInputMessageRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `DatabaseName`: `str`
-- `PartnerName`: `str`
-
-<a id="describepartnersoutputmessagetypedef"></a>
+```python title="Definition"
+class DescribePartnersInputMessageRequestTypeDef(TypedDict):
+    AccountId: str,
+    ClusterIdentifier: str,
+    DatabaseName: NotRequired[str],
+    PartnerName: NotRequired[str],
+```
 
 ## DescribePartnersOutputMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribePartnersOutputMessageTypeDef
+
+def get_value() -> DescribePartnersOutputMessageTypeDef:
+    return {
+        "PartnerIntegrationInfoList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePartnersOutputMessageTypeDef(TypedDict):
+    PartnerIntegrationInfoList: List[PartnerIntegrationInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PartnerIntegrationInfoList`:
-  `List`\[[PartnerIntegrationInfoTypeDef](./type_defs.md#partnerintegrationinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PartnerIntegrationInfoTypeDef](./type_defs.md#partnerintegrationinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeReservedNodeExchangeStatusInputMessageDescribeReservedNodeExchangeStatusPaginateTypeDef
 
-<a id="describereservednodeexchangestatusinputmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeReservedNodeExchangeStatusInputMessageDescribeReservedNodeExchangeStatusPaginateTypeDef
 
+def get_value() -> DescribeReservedNodeExchangeStatusInputMessageDescribeReservedNodeExchangeStatusPaginateTypeDef:
+    return {
+        "ReservedNodeId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReservedNodeExchangeStatusInputMessageDescribeReservedNodeExchangeStatusPaginateTypeDef(TypedDict):
+    ReservedNodeId: NotRequired[str],
+    ReservedNodeExchangeRequestId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef
+
+def get_value() -> DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef:
+    return {
+        "ReservedNodeId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReservedNodeId`: `str`
-- `ReservedNodeExchangeRequestId`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describereservednodeexchangestatusoutputmessagetypedef"></a>
+```python title="Definition"
+class DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef(TypedDict):
+    ReservedNodeId: NotRequired[str],
+    ReservedNodeExchangeRequestId: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribeReservedNodeExchangeStatusOutputMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeReservedNodeExchangeStatusOutputMessageTypeDef
+
+def get_value() -> DescribeReservedNodeExchangeStatusOutputMessageTypeDef:
+    return {
+        "ReservedNodeExchangeStatusDetails": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeReservedNodeExchangeStatusOutputMessageTypeDef(TypedDict):
+    ReservedNodeExchangeStatusDetails: List[ReservedNodeExchangeStatusTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReservedNodeExchangeStatusDetails`:
-  `List`\[[ReservedNodeExchangeStatusTypeDef](./type_defs.md#reservednodeexchangestatustypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ReservedNodeExchangeStatusTypeDef](./type_defs.md#reservednodeexchangestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeReservedNodeOfferingsMessageDescribeReservedNodeOfferingsPaginateTypeDef
 
-<a id="describereservednodeofferingsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeReservedNodeOfferingsMessageDescribeReservedNodeOfferingsPaginateTypeDef
 
+def get_value() -> DescribeReservedNodeOfferingsMessageDescribeReservedNodeOfferingsPaginateTypeDef:
+    return {
+        "ReservedNodeOfferingId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReservedNodeOfferingsMessageDescribeReservedNodeOfferingsPaginateTypeDef(TypedDict):
+    ReservedNodeOfferingId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeReservedNodeOfferingsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeReservedNodeOfferingsMessageRequestTypeDef
+
+def get_value() -> DescribeReservedNodeOfferingsMessageRequestTypeDef:
+    return {
+        "ReservedNodeOfferingId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeReservedNodeOfferingsMessageRequestTypeDef(TypedDict):
+    ReservedNodeOfferingId: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `ReservedNodeOfferingId`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
+## DescribeReservedNodesMessageDescribeReservedNodesPaginateTypeDef
 
-<a id="describereservednodesmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeReservedNodesMessageDescribeReservedNodesPaginateTypeDef
 
+def get_value() -> DescribeReservedNodesMessageDescribeReservedNodesPaginateTypeDef:
+    return {
+        "ReservedNodeId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReservedNodesMessageDescribeReservedNodesPaginateTypeDef(TypedDict):
+    ReservedNodeId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeReservedNodesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeReservedNodesMessageRequestTypeDef
+
+def get_value() -> DescribeReservedNodesMessageRequestTypeDef:
+    return {
+        "ReservedNodeId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReservedNodeId`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describeresizemessagerequesttypedef"></a>
+```python title="Definition"
+class DescribeReservedNodesMessageRequestTypeDef(TypedDict):
+    ReservedNodeId: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribeResizeMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeResizeMessageRequestTypeDef
+
+def get_value() -> DescribeResizeMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeResizeMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
-- `ClusterIdentifier`: `str`
+## DescribeScheduledActionsMessageDescribeScheduledActionsPaginateTypeDef
 
-<a id="describescheduledactionsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeScheduledActionsMessageDescribeScheduledActionsPaginateTypeDef
 
+def get_value() -> DescribeScheduledActionsMessageDescribeScheduledActionsPaginateTypeDef:
+    return {
+        "ScheduledActionName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeScheduledActionsMessageDescribeScheduledActionsPaginateTypeDef(TypedDict):
+    ScheduledActionName: NotRequired[str],
+    TargetActionType: NotRequired[ScheduledActionTypeValuesType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Active: NotRequired[bool],
+    Filters: NotRequired[Sequence[ScheduledActionFilterTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ScheduledActionTypeValuesType](./literals.md#scheduledactiontypevaluestype) 
+2. See [:material-code-braces: ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeScheduledActionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeScheduledActionsMessageRequestTypeDef
+
+def get_value() -> DescribeScheduledActionsMessageRequestTypeDef:
+    return {
+        "ScheduledActionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeScheduledActionsMessageRequestTypeDef(TypedDict):
+    ScheduledActionName: NotRequired[str],
+    TargetActionType: NotRequired[ScheduledActionTypeValuesType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Active: NotRequired[bool],
+    Filters: NotRequired[Sequence[ScheduledActionFilterTypeDef]],  # (2)
+    Marker: NotRequired[str],
+    MaxRecords: NotRequired[int],
+```
 
-- `ScheduledActionName`: `str`
-- `TargetActionType`:
-  [ScheduledActionTypeValuesType](./literals.md#scheduledactiontypevaluestype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Active`: `bool`
-- `Filters`:
-  `Sequence`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
+1. See [:material-code-brackets: ScheduledActionTypeValuesType](./literals.md#scheduledactiontypevaluestype) 
+2. See [:material-code-braces: ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef) 
+## DescribeSnapshotCopyGrantsMessageDescribeSnapshotCopyGrantsPaginateTypeDef
 
-<a id="describesnapshotcopygrantsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeSnapshotCopyGrantsMessageDescribeSnapshotCopyGrantsPaginateTypeDef
 
+def get_value() -> DescribeSnapshotCopyGrantsMessageDescribeSnapshotCopyGrantsPaginateTypeDef:
+    return {
+        "SnapshotCopyGrantName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSnapshotCopyGrantsMessageDescribeSnapshotCopyGrantsPaginateTypeDef(TypedDict):
+    SnapshotCopyGrantName: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSnapshotCopyGrantsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeSnapshotCopyGrantsMessageRequestTypeDef
+
+def get_value() -> DescribeSnapshotCopyGrantsMessageRequestTypeDef:
+    return {
+        "SnapshotCopyGrantName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeSnapshotCopyGrantsMessageRequestTypeDef(TypedDict):
+    SnapshotCopyGrantName: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
-- `SnapshotCopyGrantName`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
+## DescribeSnapshotSchedulesMessageDescribeSnapshotSchedulesPaginateTypeDef
 
-<a id="describesnapshotschedulesmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeSnapshotSchedulesMessageDescribeSnapshotSchedulesPaginateTypeDef
 
+def get_value() -> DescribeSnapshotSchedulesMessageDescribeSnapshotSchedulesPaginateTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSnapshotSchedulesMessageDescribeSnapshotSchedulesPaginateTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    ScheduleIdentifier: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSnapshotSchedulesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeSnapshotSchedulesMessageRequestTypeDef
+
+def get_value() -> DescribeSnapshotSchedulesMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterIdentifier`: `str`
-- `ScheduleIdentifier`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
-
-<a id="describesnapshotschedulesoutputmessagetypedef"></a>
+```python title="Definition"
+class DescribeSnapshotSchedulesMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    ScheduleIdentifier: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    Marker: NotRequired[str],
+    MaxRecords: NotRequired[int],
+```
 
 ## DescribeSnapshotSchedulesOutputMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeSnapshotSchedulesOutputMessageTypeDef
+
+def get_value() -> DescribeSnapshotSchedulesOutputMessageTypeDef:
+    return {
+        "SnapshotSchedules": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSnapshotSchedulesOutputMessageTypeDef(TypedDict):
+    SnapshotSchedules: List[SnapshotScheduleTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SnapshotSchedules`:
-  `List`\[[SnapshotScheduleTypeDef](./type_defs.md#snapshotscheduletypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SnapshotScheduleTypeDef](./type_defs.md#snapshotscheduletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTableRestoreStatusMessageDescribeTableRestoreStatusPaginateTypeDef
 
-<a id="describetablerestorestatusmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeTableRestoreStatusMessageDescribeTableRestoreStatusPaginateTypeDef
 
+def get_value() -> DescribeTableRestoreStatusMessageDescribeTableRestoreStatusPaginateTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTableRestoreStatusMessageDescribeTableRestoreStatusPaginateTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    TableRestoreRequestId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeTableRestoreStatusMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeTableRestoreStatusMessageRequestTypeDef
+
+def get_value() -> DescribeTableRestoreStatusMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeTableRestoreStatusMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    TableRestoreRequestId: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `ClusterIdentifier`: `str`
-- `TableRestoreRequestId`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
+## DescribeTagsMessageDescribeTagsPaginateTypeDef
 
-<a id="describetagsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeTagsMessageDescribeTagsPaginateTypeDef
 
+def get_value() -> DescribeTagsMessageDescribeTagsPaginateTypeDef:
+    return {
+        "ResourceName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTagsMessageDescribeTagsPaginateTypeDef(TypedDict):
+    ResourceName: NotRequired[str],
+    ResourceType: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeTagsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeTagsMessageRequestTypeDef
+
+def get_value() -> DescribeTagsMessageRequestTypeDef:
+    return {
+        "ResourceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeTagsMessageRequestTypeDef(TypedDict):
+    ResourceName: NotRequired[str],
+    ResourceType: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
-- `ResourceName`: `str`
-- `ResourceType`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
+## DescribeUsageLimitsMessageDescribeUsageLimitsPaginateTypeDef
 
-<a id="describeusagelimitsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import DescribeUsageLimitsMessageDescribeUsageLimitsPaginateTypeDef
 
+def get_value() -> DescribeUsageLimitsMessageDescribeUsageLimitsPaginateTypeDef:
+    return {
+        "UsageLimitId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUsageLimitsMessageDescribeUsageLimitsPaginateTypeDef(TypedDict):
+    UsageLimitId: NotRequired[str],
+    ClusterIdentifier: NotRequired[str],
+    FeatureType: NotRequired[UsageLimitFeatureTypeType],  # (1)
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeUsageLimitsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DescribeUsageLimitsMessageRequestTypeDef
+
+def get_value() -> DescribeUsageLimitsMessageRequestTypeDef:
+    return {
+        "UsageLimitId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeUsageLimitsMessageRequestTypeDef(TypedDict):
+    UsageLimitId: NotRequired[str],
+    ClusterIdentifier: NotRequired[str],
+    FeatureType: NotRequired[UsageLimitFeatureTypeType],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+    TagValues: NotRequired[Sequence[str]],
+```
 
-- `UsageLimitId`: `str`
-- `ClusterIdentifier`: `str`
-- `FeatureType`:
-  [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-
-<a id="disableloggingmessagerequesttypedef"></a>
-
+1. See [:material-code-brackets: UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype) 
 ## DisableLoggingMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DisableLoggingMessageRequestTypeDef
+
+def get_value() -> DisableLoggingMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-<a id="disablesnapshotcopymessagerequesttypedef"></a>
+```python title="Definition"
+class DisableLoggingMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
 ## DisableSnapshotCopyMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DisableSnapshotCopyMessageRequestTypeDef
+
+def get_value() -> DisableSnapshotCopyMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-<a id="disablesnapshotcopyresulttypedef"></a>
+```python title="Definition"
+class DisableSnapshotCopyMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
 ## DisableSnapshotCopyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DisableSnapshotCopyResultTypeDef
+
+def get_value() -> DisableSnapshotCopyResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisableSnapshotCopyResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociatedatashareconsumermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateDataShareConsumerMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import DisassociateDataShareConsumerMessageRequestTypeDef
+
+def get_value() -> DisassociateDataShareConsumerMessageRequestTypeDef:
+    return {
+        "DataShareArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DataShareArn`: `str`
-
-Optional fields:
-
-- `DisassociateEntireAccount`: `bool`
-- `ConsumerArn`: `str`
-- `ConsumerRegion`: `str`
-
-<a id="ec2securitygrouptypedef"></a>
+```python title="Definition"
+class DisassociateDataShareConsumerMessageRequestTypeDef(TypedDict):
+    DataShareArn: str,
+    DisassociateEntireAccount: NotRequired[bool],
+    ConsumerArn: NotRequired[str],
+    ConsumerRegion: NotRequired[str],
+```
 
 ## EC2SecurityGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EC2SecurityGroupTypeDef
+
+def get_value() -> EC2SecurityGroupTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EC2SecurityGroupTypeDef(TypedDict):
+    Status: NotRequired[str],
+    EC2SecurityGroupName: NotRequired[str],
+    EC2SecurityGroupOwnerId: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `Status`: `str`
-- `EC2SecurityGroupName`: `str`
-- `EC2SecurityGroupOwnerId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="elasticipstatustypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ElasticIpStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ElasticIpStatusTypeDef
+
+def get_value() -> ElasticIpStatusTypeDef:
+    return {
+        "ElasticIp": ...,
+    }
 ```
 
-Optional fields:
-
-- `ElasticIp`: `str`
-- `Status`: `str`
-
-<a id="enableloggingmessagerequesttypedef"></a>
+```python title="Definition"
+class ElasticIpStatusTypeDef(TypedDict):
+    ElasticIp: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## EnableLoggingMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EnableLoggingMessageRequestTypeDef
+
+def get_value() -> EnableLoggingMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "BucketName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-- `BucketName`: `str`
-
-Optional fields:
-
-- `S3KeyPrefix`: `str`
-
-<a id="enablesnapshotcopymessagerequesttypedef"></a>
+```python title="Definition"
+class EnableLoggingMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    BucketName: str,
+    S3KeyPrefix: NotRequired[str],
+```
 
 ## EnableSnapshotCopyMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EnableSnapshotCopyMessageRequestTypeDef
+
+def get_value() -> EnableSnapshotCopyMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "DestinationRegion": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-- `DestinationRegion`: `str`
-
-Optional fields:
-
-- `RetentionPeriod`: `int`
-- `SnapshotCopyGrantName`: `str`
-- `ManualSnapshotRetentionPeriod`: `int`
-
-<a id="enablesnapshotcopyresulttypedef"></a>
+```python title="Definition"
+class EnableSnapshotCopyMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    DestinationRegion: str,
+    RetentionPeriod: NotRequired[int],
+    SnapshotCopyGrantName: NotRequired[str],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+```
 
 ## EnableSnapshotCopyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EnableSnapshotCopyResultTypeDef
+
+def get_value() -> EnableSnapshotCopyResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnableSnapshotCopyResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="endpointaccesslisttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EndpointAccessListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EndpointAccessListTypeDef
+
+def get_value() -> EndpointAccessListTypeDef:
+    return {
+        "EndpointAccessList": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EndpointAccessListTypeDef(TypedDict):
+    EndpointAccessList: List[EndpointAccessTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointAccessList`:
-  `List`\[[EndpointAccessTypeDef](./type_defs.md#endpointaccesstypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="endpointaccessresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: EndpointAccessTypeDef](./type_defs.md#endpointaccesstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EndpointAccessResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EndpointAccessResponseMetadataTypeDef
+
+def get_value() -> EndpointAccessResponseMetadataTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "ResourceOwner": ...,
+        "SubnetGroupName": ...,
+        "EndpointStatus": ...,
+        "EndpointName": ...,
+        "EndpointCreateTime": ...,
+        "Port": ...,
+        "Address": ...,
+        "VpcSecurityGroups": ...,
+        "VpcEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EndpointAccessResponseMetadataTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    ResourceOwner: str,
+    SubnetGroupName: str,
+    EndpointStatus: str,
+    EndpointName: str,
+    EndpointCreateTime: datetime,
+    Port: int,
+    Address: str,
+    VpcSecurityGroups: List[VpcSecurityGroupMembershipTypeDef],  # (1)
+    VpcEndpoint: VpcEndpointTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ClusterIdentifier`: `str`
-- `ResourceOwner`: `str`
-- `SubnetGroupName`: `str`
-- `EndpointStatus`: `str`
-- `EndpointName`: `str`
-- `EndpointCreateTime`: `datetime`
-- `Port`: `int`
-- `Address`: `str`
-- `VpcSecurityGroups`:
-  `List`\[[VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)\]
-- `VpcEndpoint`: [VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="endpointaccesstypedef"></a>
-
+1. See [:material-code-braces: VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef) 
+2. See [:material-code-braces: VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EndpointAccessTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EndpointAccessTypeDef
+
+def get_value() -> EndpointAccessTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EndpointAccessTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    ResourceOwner: NotRequired[str],
+    SubnetGroupName: NotRequired[str],
+    EndpointStatus: NotRequired[str],
+    EndpointName: NotRequired[str],
+    EndpointCreateTime: NotRequired[datetime],
+    Port: NotRequired[int],
+    Address: NotRequired[str],
+    VpcSecurityGroups: NotRequired[List[VpcSecurityGroupMembershipTypeDef]],  # (1)
+    VpcEndpoint: NotRequired[VpcEndpointTypeDef],  # (2)
+```
 
-- `ClusterIdentifier`: `str`
-- `ResourceOwner`: `str`
-- `SubnetGroupName`: `str`
-- `EndpointStatus`: `str`
-- `EndpointName`: `str`
-- `EndpointCreateTime`: `datetime`
-- `Port`: `int`
-- `Address`: `str`
-- `VpcSecurityGroups`:
-  `List`\[[VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)\]
-- `VpcEndpoint`: [VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)
-
-<a id="endpointauthorizationlisttypedef"></a>
-
+1. See [:material-code-braces: VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef) 
+2. See [:material-code-braces: VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef) 
 ## EndpointAuthorizationListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EndpointAuthorizationListTypeDef
+
+def get_value() -> EndpointAuthorizationListTypeDef:
+    return {
+        "EndpointAuthorizationList": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EndpointAuthorizationListTypeDef(TypedDict):
+    EndpointAuthorizationList: List[EndpointAuthorizationTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointAuthorizationList`:
-  `List`\[[EndpointAuthorizationTypeDef](./type_defs.md#endpointauthorizationtypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="endpointauthorizationresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: EndpointAuthorizationTypeDef](./type_defs.md#endpointauthorizationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EndpointAuthorizationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EndpointAuthorizationResponseMetadataTypeDef
+
+def get_value() -> EndpointAuthorizationResponseMetadataTypeDef:
+    return {
+        "Grantor": ...,
+        "Grantee": ...,
+        "ClusterIdentifier": ...,
+        "AuthorizeTime": ...,
+        "ClusterStatus": ...,
+        "Status": ...,
+        "AllowedAllVPCs": ...,
+        "AllowedVPCs": ...,
+        "EndpointCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EndpointAuthorizationResponseMetadataTypeDef(TypedDict):
+    Grantor: str,
+    Grantee: str,
+    ClusterIdentifier: str,
+    AuthorizeTime: datetime,
+    ClusterStatus: str,
+    Status: AuthorizationStatusType,  # (1)
+    AllowedAllVPCs: bool,
+    AllowedVPCs: List[str],
+    EndpointCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Grantor`: `str`
-- `Grantee`: `str`
-- `ClusterIdentifier`: `str`
-- `AuthorizeTime`: `datetime`
-- `ClusterStatus`: `str`
-- `Status`: [AuthorizationStatusType](./literals.md#authorizationstatustype)
-- `AllowedAllVPCs`: `bool`
-- `AllowedVPCs`: `List`\[`str`\]
-- `EndpointCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="endpointauthorizationtypedef"></a>
-
+1. See [:material-code-brackets: AuthorizationStatusType](./literals.md#authorizationstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EndpointAuthorizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EndpointAuthorizationTypeDef
+
+def get_value() -> EndpointAuthorizationTypeDef:
+    return {
+        "Grantor": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EndpointAuthorizationTypeDef(TypedDict):
+    Grantor: NotRequired[str],
+    Grantee: NotRequired[str],
+    ClusterIdentifier: NotRequired[str],
+    AuthorizeTime: NotRequired[datetime],
+    ClusterStatus: NotRequired[str],
+    Status: NotRequired[AuthorizationStatusType],  # (1)
+    AllowedAllVPCs: NotRequired[bool],
+    AllowedVPCs: NotRequired[List[str]],
+    EndpointCount: NotRequired[int],
+```
 
-- `Grantor`: `str`
-- `Grantee`: `str`
-- `ClusterIdentifier`: `str`
-- `AuthorizeTime`: `datetime`
-- `ClusterStatus`: `str`
-- `Status`: [AuthorizationStatusType](./literals.md#authorizationstatustype)
-- `AllowedAllVPCs`: `bool`
-- `AllowedVPCs`: `List`\[`str`\]
-- `EndpointCount`: `int`
-
-<a id="endpointtypedef"></a>
-
+1. See [:material-code-brackets: AuthorizationStatusType](./literals.md#authorizationstatustype) 
 ## EndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "Address": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    Address: NotRequired[str],
+    Port: NotRequired[int],
+    VpcEndpoints: NotRequired[List[VpcEndpointTypeDef]],  # (1)
+```
 
-- `Address`: `str`
-- `Port`: `int`
-- `VpcEndpoints`:
-  `List`\[[VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)\]
-
-<a id="eventcategoriesmaptypedef"></a>
-
+1. See [:material-code-braces: VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef) 
 ## EventCategoriesMapTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EventCategoriesMapTypeDef
+
+def get_value() -> EventCategoriesMapTypeDef:
+    return {
+        "SourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventCategoriesMapTypeDef(TypedDict):
+    SourceType: NotRequired[str],
+    Events: NotRequired[List[EventInfoMapTypeDef]],  # (1)
+```
 
-- `SourceType`: `str`
-- `Events`: `List`\[[EventInfoMapTypeDef](./type_defs.md#eventinfomaptypedef)\]
-
-<a id="eventcategoriesmessagetypedef"></a>
-
+1. See [:material-code-braces: EventInfoMapTypeDef](./type_defs.md#eventinfomaptypedef) 
 ## EventCategoriesMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EventCategoriesMessageTypeDef
+
+def get_value() -> EventCategoriesMessageTypeDef:
+    return {
+        "EventCategoriesMapList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventCategoriesMessageTypeDef(TypedDict):
+    EventCategoriesMapList: List[EventCategoriesMapTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventCategoriesMapList`:
-  `List`\[[EventCategoriesMapTypeDef](./type_defs.md#eventcategoriesmaptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="eventinfomaptypedef"></a>
-
+1. See [:material-code-braces: EventCategoriesMapTypeDef](./type_defs.md#eventcategoriesmaptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventInfoMapTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EventInfoMapTypeDef
+
+def get_value() -> EventInfoMapTypeDef:
+    return {
+        "EventId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EventId`: `str`
-- `EventCategories`: `List`\[`str`\]
-- `EventDescription`: `str`
-- `Severity`: `str`
-
-<a id="eventsubscriptiontypedef"></a>
+```python title="Definition"
+class EventInfoMapTypeDef(TypedDict):
+    EventId: NotRequired[str],
+    EventCategories: NotRequired[List[str]],
+    EventDescription: NotRequired[str],
+    Severity: NotRequired[str],
+```
 
 ## EventSubscriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EventSubscriptionTypeDef
+
+def get_value() -> EventSubscriptionTypeDef:
+    return {
+        "CustomerAwsId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventSubscriptionTypeDef(TypedDict):
+    CustomerAwsId: NotRequired[str],
+    CustSubscriptionId: NotRequired[str],
+    SnsTopicArn: NotRequired[str],
+    Status: NotRequired[str],
+    SubscriptionCreationTime: NotRequired[datetime],
+    SourceType: NotRequired[str],
+    SourceIdsList: NotRequired[List[str]],
+    EventCategoriesList: NotRequired[List[str]],
+    Severity: NotRequired[str],
+    Enabled: NotRequired[bool],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `CustomerAwsId`: `str`
-- `CustSubscriptionId`: `str`
-- `SnsTopicArn`: `str`
-- `Status`: `str`
-- `SubscriptionCreationTime`: `datetime`
-- `SourceType`: `str`
-- `SourceIdsList`: `List`\[`str`\]
-- `EventCategoriesList`: `List`\[`str`\]
-- `Severity`: `str`
-- `Enabled`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="eventsubscriptionsmessagetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## EventSubscriptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EventSubscriptionsMessageTypeDef
+
+def get_value() -> EventSubscriptionsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "EventSubscriptionsList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventSubscriptionsMessageTypeDef(TypedDict):
+    Marker: str,
+    EventSubscriptionsList: List[EventSubscriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `EventSubscriptionsList`:
-  `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="eventtypedef"></a>
-
+1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "SourceIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    SourceIdentifier: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    Message: NotRequired[str],
+    EventCategories: NotRequired[List[str]],
+    Severity: NotRequired[str],
+    Date: NotRequired[datetime],
+    EventId: NotRequired[str],
+```
 
-- `SourceIdentifier`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `Message`: `str`
-- `EventCategories`: `List`\[`str`\]
-- `Severity`: `str`
-- `Date`: `datetime`
-- `EventId`: `str`
-
-<a id="eventsmessagetypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## EventsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import EventsMessageTypeDef
+
+def get_value() -> EventsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "Events": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventsMessageTypeDef(TypedDict):
+    Marker: str,
+    Events: List[EventTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getclustercredentialsmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetClusterCredentialsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import GetClusterCredentialsMessageRequestTypeDef
+
+def get_value() -> GetClusterCredentialsMessageRequestTypeDef:
+    return {
+        "DbUser": ...,
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetClusterCredentialsMessageRequestTypeDef(TypedDict):
+    DbUser: str,
+    ClusterIdentifier: str,
+    DbName: NotRequired[str],
+    DurationSeconds: NotRequired[int],
+    AutoCreate: NotRequired[bool],
+    DbGroups: NotRequired[Sequence[str]],
+```
 
-- `DbUser`: `str`
-- `ClusterIdentifier`: `str`
+## GetReservedNodeExchangeConfigurationOptionsInputMessageGetReservedNodeExchangeConfigurationOptionsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeConfigurationOptionsInputMessageGetReservedNodeExchangeConfigurationOptionsPaginateTypeDef
 
-- `DbName`: `str`
-- `DurationSeconds`: `int`
-- `AutoCreate`: `bool`
-- `DbGroups`: `Sequence`\[`str`\]
+def get_value() -> GetReservedNodeExchangeConfigurationOptionsInputMessageGetReservedNodeExchangeConfigurationOptionsPaginateTypeDef:
+    return {
+        "ActionType": ...,
+    }
+```
 
-<a id="getreservednodeexchangeconfigurationoptionsinputmessagerequesttypedef"></a>
+```python title="Definition"
+class GetReservedNodeExchangeConfigurationOptionsInputMessageGetReservedNodeExchangeConfigurationOptionsPaginateTypeDef(TypedDict):
+    ActionType: ReservedNodeExchangeActionTypeType,  # (1)
+    ClusterIdentifier: NotRequired[str],
+    SnapshotIdentifier: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-brackets: ReservedNodeExchangeActionTypeType](./literals.md#reservednodeexchangeactiontypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef
+
+def get_value() -> GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef:
+    return {
+        "ActionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef(TypedDict):
+    ActionType: ReservedNodeExchangeActionTypeType,  # (1)
+    ClusterIdentifier: NotRequired[str],
+    SnapshotIdentifier: NotRequired[str],
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `ActionType`:
-  [ReservedNodeExchangeActionTypeType](./literals.md#reservednodeexchangeactiontypetype)
-
-Optional fields:
-
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="getreservednodeexchangeconfigurationoptionsoutputmessagetypedef"></a>
-
+1. See [:material-code-brackets: ReservedNodeExchangeActionTypeType](./literals.md#reservednodeexchangeactiontypetype) 
 ## GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef
+
+def get_value() -> GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ReservedNodeConfigurationOptionList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef(TypedDict):
+    Marker: str,
+    ReservedNodeConfigurationOptionList: List[ReservedNodeConfigurationOptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ReservedNodeConfigurationOptionList`:
-  `List`\[[ReservedNodeConfigurationOptionTypeDef](./type_defs.md#reservednodeconfigurationoptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ReservedNodeConfigurationOptionTypeDef](./type_defs.md#reservednodeconfigurationoptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetReservedNodeExchangeOfferingsInputMessageGetReservedNodeExchangeOfferingsPaginateTypeDef
 
-<a id="getreservednodeexchangeofferingsinputmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeOfferingsInputMessageGetReservedNodeExchangeOfferingsPaginateTypeDef
 
+def get_value() -> GetReservedNodeExchangeOfferingsInputMessageGetReservedNodeExchangeOfferingsPaginateTypeDef:
+    return {
+        "ReservedNodeId": ...,
+    }
+```
+
+```python title="Definition"
+class GetReservedNodeExchangeOfferingsInputMessageGetReservedNodeExchangeOfferingsPaginateTypeDef(TypedDict):
+    ReservedNodeId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef
+
+def get_value() -> GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef:
+    return {
+        "ReservedNodeId": ...,
+    }
 ```
 
-Required fields:
-
-- `ReservedNodeId`: `str`
-
-Optional fields:
-
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="getreservednodeexchangeofferingsoutputmessagetypedef"></a>
+```python title="Definition"
+class GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef(TypedDict):
+    ReservedNodeId: str,
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## GetReservedNodeExchangeOfferingsOutputMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import GetReservedNodeExchangeOfferingsOutputMessageTypeDef
+
+def get_value() -> GetReservedNodeExchangeOfferingsOutputMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ReservedNodeOfferings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReservedNodeExchangeOfferingsOutputMessageTypeDef(TypedDict):
+    Marker: str,
+    ReservedNodeOfferings: List[ReservedNodeOfferingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ReservedNodeOfferings`:
-  `List`\[[ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hsmclientcertificatemessagetypedef"></a>
-
+1. See [:material-code-braces: ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HsmClientCertificateMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import HsmClientCertificateMessageTypeDef
+
+def get_value() -> HsmClientCertificateMessageTypeDef:
+    return {
+        "Marker": ...,
+        "HsmClientCertificates": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HsmClientCertificateMessageTypeDef(TypedDict):
+    Marker: str,
+    HsmClientCertificates: List[HsmClientCertificateTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `HsmClientCertificates`:
-  `List`\[[HsmClientCertificateTypeDef](./type_defs.md#hsmclientcertificatetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hsmclientcertificatetypedef"></a>
-
+1. See [:material-code-braces: HsmClientCertificateTypeDef](./type_defs.md#hsmclientcertificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HsmClientCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import HsmClientCertificateTypeDef
+
+def get_value() -> HsmClientCertificateTypeDef:
+    return {
+        "HsmClientCertificateIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HsmClientCertificateTypeDef(TypedDict):
+    HsmClientCertificateIdentifier: NotRequired[str],
+    HsmClientCertificatePublicKey: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `HsmClientCertificateIdentifier`: `str`
-- `HsmClientCertificatePublicKey`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="hsmconfigurationmessagetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## HsmConfigurationMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import HsmConfigurationMessageTypeDef
+
+def get_value() -> HsmConfigurationMessageTypeDef:
+    return {
+        "Marker": ...,
+        "HsmConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HsmConfigurationMessageTypeDef(TypedDict):
+    Marker: str,
+    HsmConfigurations: List[HsmConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `HsmConfigurations`:
-  `List`\[[HsmConfigurationTypeDef](./type_defs.md#hsmconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hsmconfigurationtypedef"></a>
-
+1. See [:material-code-braces: HsmConfigurationTypeDef](./type_defs.md#hsmconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HsmConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import HsmConfigurationTypeDef
+
+def get_value() -> HsmConfigurationTypeDef:
+    return {
+        "HsmConfigurationIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HsmConfigurationTypeDef(TypedDict):
+    HsmConfigurationIdentifier: NotRequired[str],
+    Description: NotRequired[str],
+    HsmIpAddress: NotRequired[str],
+    HsmPartitionName: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `HsmConfigurationIdentifier`: `str`
-- `Description`: `str`
-- `HsmIpAddress`: `str`
-- `HsmPartitionName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="hsmstatustypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## HsmStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import HsmStatusTypeDef
+
+def get_value() -> HsmStatusTypeDef:
+    return {
+        "HsmClientCertificateIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `HsmClientCertificateIdentifier`: `str`
-- `HsmConfigurationIdentifier`: `str`
-- `Status`: `str`
-
-<a id="iprangetypedef"></a>
+```python title="Definition"
+class HsmStatusTypeDef(TypedDict):
+    HsmClientCertificateIdentifier: NotRequired[str],
+    HsmConfigurationIdentifier: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## IPRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import IPRangeTypeDef
+
+def get_value() -> IPRangeTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IPRangeTypeDef(TypedDict):
+    Status: NotRequired[str],
+    CIDRIP: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `Status`: `str`
-- `CIDRIP`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="loggingstatustypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## LoggingStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import LoggingStatusTypeDef
+
+def get_value() -> LoggingStatusTypeDef:
+    return {
+        "LoggingEnabled": ...,
+        "BucketName": ...,
+        "S3KeyPrefix": ...,
+        "LastSuccessfulDeliveryTime": ...,
+        "LastFailureTime": ...,
+        "LastFailureMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LoggingStatusTypeDef(TypedDict):
+    LoggingEnabled: bool,
+    BucketName: str,
+    S3KeyPrefix: str,
+    LastSuccessfulDeliveryTime: datetime,
+    LastFailureTime: datetime,
+    LastFailureMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LoggingEnabled`: `bool`
-- `BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `LastSuccessfulDeliveryTime`: `datetime`
-- `LastFailureTime`: `datetime`
-- `LastFailureMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="maintenancetracktypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MaintenanceTrackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import MaintenanceTrackTypeDef
+
+def get_value() -> MaintenanceTrackTypeDef:
+    return {
+        "MaintenanceTrackName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MaintenanceTrackTypeDef(TypedDict):
+    MaintenanceTrackName: NotRequired[str],
+    DatabaseVersion: NotRequired[str],
+    UpdateTargets: NotRequired[List[UpdateTargetTypeDef]],  # (1)
+```
 
-- `MaintenanceTrackName`: `str`
-- `DatabaseVersion`: `str`
-- `UpdateTargets`:
-  `List`\[[UpdateTargetTypeDef](./type_defs.md#updatetargettypedef)\]
-
-<a id="modifyaquainputmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateTargetTypeDef](./type_defs.md#updatetargettypedef) 
 ## ModifyAquaInputMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyAquaInputMessageRequestTypeDef
+
+def get_value() -> ModifyAquaInputMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyAquaInputMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    AquaConfigurationStatus: NotRequired[AquaConfigurationStatusType],  # (1)
+```
 
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `AquaConfigurationStatus`:
-  [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
-
-<a id="modifyaquaoutputmessagetypedef"></a>
-
+1. See [:material-code-brackets: AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype) 
 ## ModifyAquaOutputMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyAquaOutputMessageTypeDef
+
+def get_value() -> ModifyAquaOutputMessageTypeDef:
+    return {
+        "AquaConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyAquaOutputMessageTypeDef(TypedDict):
+    AquaConfiguration: AquaConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AquaConfiguration`:
-  [AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyauthenticationprofilemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: AquaConfigurationTypeDef](./type_defs.md#aquaconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyAuthenticationProfileMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyAuthenticationProfileMessageRequestTypeDef
+
+def get_value() -> ModifyAuthenticationProfileMessageRequestTypeDef:
+    return {
+        "AuthenticationProfileName": ...,
+        "AuthenticationProfileContent": ...,
+    }
 ```
 
-Required fields:
-
-- `AuthenticationProfileName`: `str`
-- `AuthenticationProfileContent`: `str`
-
-<a id="modifyauthenticationprofileresulttypedef"></a>
+```python title="Definition"
+class ModifyAuthenticationProfileMessageRequestTypeDef(TypedDict):
+    AuthenticationProfileName: str,
+    AuthenticationProfileContent: str,
+```
 
 ## ModifyAuthenticationProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyAuthenticationProfileResultTypeDef
+
+def get_value() -> ModifyAuthenticationProfileResultTypeDef:
+    return {
+        "AuthenticationProfileName": ...,
+        "AuthenticationProfileContent": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyAuthenticationProfileResultTypeDef(TypedDict):
+    AuthenticationProfileName: str,
+    AuthenticationProfileContent: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AuthenticationProfileName`: `str`
-- `AuthenticationProfileContent`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyclusterdbrevisionmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyClusterDbRevisionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterDbRevisionMessageRequestTypeDef
+
+def get_value() -> ModifyClusterDbRevisionMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "RevisionTarget": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-- `RevisionTarget`: `str`
-
-<a id="modifyclusterdbrevisionresulttypedef"></a>
+```python title="Definition"
+class ModifyClusterDbRevisionMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    RevisionTarget: str,
+```
 
 ## ModifyClusterDbRevisionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterDbRevisionResultTypeDef
+
+def get_value() -> ModifyClusterDbRevisionResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterDbRevisionResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyclusteriamrolesmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyClusterIamRolesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterIamRolesMessageRequestTypeDef
+
+def get_value() -> ModifyClusterIamRolesMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `AddIamRoles`: `Sequence`\[`str`\]
-- `RemoveIamRoles`: `Sequence`\[`str`\]
-- `DefaultIamRoleArn`: `str`
-
-<a id="modifyclusteriamrolesresulttypedef"></a>
+```python title="Definition"
+class ModifyClusterIamRolesMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    AddIamRoles: NotRequired[Sequence[str]],
+    RemoveIamRoles: NotRequired[Sequence[str]],
+    DefaultIamRoleArn: NotRequired[str],
+```
 
 ## ModifyClusterIamRolesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterIamRolesResultTypeDef
+
+def get_value() -> ModifyClusterIamRolesResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterIamRolesResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyclustermaintenancemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyClusterMaintenanceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterMaintenanceMessageRequestTypeDef
+
+def get_value() -> ModifyClusterMaintenanceMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `DeferMaintenance`: `bool`
-- `DeferMaintenanceIdentifier`: `str`
-- `DeferMaintenanceStartTime`: `Union`\[`datetime`, `str`\]
-- `DeferMaintenanceEndTime`: `Union`\[`datetime`, `str`\]
-- `DeferMaintenanceDuration`: `int`
-
-<a id="modifyclustermaintenanceresulttypedef"></a>
+```python title="Definition"
+class ModifyClusterMaintenanceMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    DeferMaintenance: NotRequired[bool],
+    DeferMaintenanceIdentifier: NotRequired[str],
+    DeferMaintenanceStartTime: NotRequired[Union[datetime, str]],
+    DeferMaintenanceEndTime: NotRequired[Union[datetime, str]],
+    DeferMaintenanceDuration: NotRequired[int],
+```
 
 ## ModifyClusterMaintenanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterMaintenanceResultTypeDef
+
+def get_value() -> ModifyClusterMaintenanceResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterMaintenanceResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterMessageRequestTypeDef
+
+def get_value() -> ModifyClusterMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `ClusterType`: `str`
-- `NodeType`: `str`
-- `NumberOfNodes`: `int`
-- `ClusterSecurityGroups`: `Sequence`\[`str`\]
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `MasterUserPassword`: `str`
-- `ClusterParameterGroupName`: `str`
-- `AutomatedSnapshotRetentionPeriod`: `int`
-- `ManualSnapshotRetentionPeriod`: `int`
-- `PreferredMaintenanceWindow`: `str`
-- `ClusterVersion`: `str`
-- `AllowVersionUpgrade`: `bool`
-- `HsmClientCertificateIdentifier`: `str`
-- `HsmConfigurationIdentifier`: `str`
-- `NewClusterIdentifier`: `str`
-- `PubliclyAccessible`: `bool`
-- `ElasticIp`: `str`
-- `EnhancedVpcRouting`: `bool`
-- `MaintenanceTrackName`: `str`
-- `Encrypted`: `bool`
-- `KmsKeyId`: `str`
-- `AvailabilityZoneRelocation`: `bool`
-- `AvailabilityZone`: `str`
-- `Port`: `int`
-
-<a id="modifyclusterparametergroupmessagerequesttypedef"></a>
+```python title="Definition"
+class ModifyClusterMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    ClusterType: NotRequired[str],
+    NodeType: NotRequired[str],
+    NumberOfNodes: NotRequired[int],
+    ClusterSecurityGroups: NotRequired[Sequence[str]],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    MasterUserPassword: NotRequired[str],
+    ClusterParameterGroupName: NotRequired[str],
+    AutomatedSnapshotRetentionPeriod: NotRequired[int],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    PreferredMaintenanceWindow: NotRequired[str],
+    ClusterVersion: NotRequired[str],
+    AllowVersionUpgrade: NotRequired[bool],
+    HsmClientCertificateIdentifier: NotRequired[str],
+    HsmConfigurationIdentifier: NotRequired[str],
+    NewClusterIdentifier: NotRequired[str],
+    PubliclyAccessible: NotRequired[bool],
+    ElasticIp: NotRequired[str],
+    EnhancedVpcRouting: NotRequired[bool],
+    MaintenanceTrackName: NotRequired[str],
+    Encrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    AvailabilityZoneRelocation: NotRequired[bool],
+    AvailabilityZone: NotRequired[str],
+    Port: NotRequired[int],
+```
 
 ## ModifyClusterParameterGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterParameterGroupMessageRequestTypeDef
+
+def get_value() -> ModifyClusterParameterGroupMessageRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+        "Parameters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterParameterGroupMessageRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    Parameters: Sequence[ParameterTypeDef],  # (1)
+```
 
-- `ParameterGroupName`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-
-<a id="modifyclusterresulttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 ## ModifyClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterResultTypeDef
+
+def get_value() -> ModifyClusterResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyclustersnapshotmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyClusterSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotMessageRequestTypeDef
+
+def get_value() -> ModifyClusterSnapshotMessageRequestTypeDef:
+    return {
+        "SnapshotIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotIdentifier`: `str`
-
-Optional fields:
-
-- `ManualSnapshotRetentionPeriod`: `int`
-- `Force`: `bool`
-
-<a id="modifyclustersnapshotresulttypedef"></a>
+```python title="Definition"
+class ModifyClusterSnapshotMessageRequestTypeDef(TypedDict):
+    SnapshotIdentifier: str,
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    Force: NotRequired[bool],
+```
 
 ## ModifyClusterSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotResultTypeDef
+
+def get_value() -> ModifyClusterSnapshotResultTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterSnapshotResultTypeDef(TypedDict):
+    Snapshot: SnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyclustersnapshotschedulemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyClusterSnapshotScheduleMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterSnapshotScheduleMessageRequestTypeDef
+
+def get_value() -> ModifyClusterSnapshotScheduleMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `ScheduleIdentifier`: `str`
-- `DisassociateSchedule`: `bool`
-
-<a id="modifyclustersubnetgroupmessagerequesttypedef"></a>
+```python title="Definition"
+class ModifyClusterSnapshotScheduleMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    ScheduleIdentifier: NotRequired[str],
+    DisassociateSchedule: NotRequired[bool],
+```
 
 ## ModifyClusterSubnetGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterSubnetGroupMessageRequestTypeDef
+
+def get_value() -> ModifyClusterSubnetGroupMessageRequestTypeDef:
+    return {
+        "ClusterSubnetGroupName": ...,
+        "SubnetIds": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterSubnetGroupName`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="modifyclustersubnetgroupresulttypedef"></a>
+```python title="Definition"
+class ModifyClusterSubnetGroupMessageRequestTypeDef(TypedDict):
+    ClusterSubnetGroupName: str,
+    SubnetIds: Sequence[str],
+    Description: NotRequired[str],
+```
 
 ## ModifyClusterSubnetGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyClusterSubnetGroupResultTypeDef
+
+def get_value() -> ModifyClusterSubnetGroupResultTypeDef:
+    return {
+        "ClusterSubnetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterSubnetGroupResultTypeDef(TypedDict):
+    ClusterSubnetGroup: ClusterSubnetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClusterSubnetGroup`:
-  [ClusterSubnetGroupTypeDef](./type_defs.md#clustersubnetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyendpointaccessmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterSubnetGroupTypeDef](./type_defs.md#clustersubnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyEndpointAccessMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyEndpointAccessMessageRequestTypeDef
+
+def get_value() -> ModifyEndpointAccessMessageRequestTypeDef:
+    return {
+        "EndpointName": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointName`: `str`
-
-Optional fields:
-
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-
-<a id="modifyeventsubscriptionmessagerequesttypedef"></a>
+```python title="Definition"
+class ModifyEndpointAccessMessageRequestTypeDef(TypedDict):
+    EndpointName: str,
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+```
 
 ## ModifyEventSubscriptionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyEventSubscriptionMessageRequestTypeDef
+
+def get_value() -> ModifyEventSubscriptionMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionName`: `str`
-
-Optional fields:
-
-- `SnsTopicArn`: `str`
-- `SourceType`: `str`
-- `SourceIds`: `Sequence`\[`str`\]
-- `EventCategories`: `Sequence`\[`str`\]
-- `Severity`: `str`
-- `Enabled`: `bool`
-
-<a id="modifyeventsubscriptionresulttypedef"></a>
+```python title="Definition"
+class ModifyEventSubscriptionMessageRequestTypeDef(TypedDict):
+    SubscriptionName: str,
+    SnsTopicArn: NotRequired[str],
+    SourceType: NotRequired[str],
+    SourceIds: NotRequired[Sequence[str]],
+    EventCategories: NotRequired[Sequence[str]],
+    Severity: NotRequired[str],
+    Enabled: NotRequired[bool],
+```
 
 ## ModifyEventSubscriptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyEventSubscriptionResultTypeDef
+
+def get_value() -> ModifyEventSubscriptionResultTypeDef:
+    return {
+        "EventSubscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyEventSubscriptionResultTypeDef(TypedDict):
+    EventSubscription: EventSubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventSubscription`:
-  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyscheduledactionmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyScheduledActionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyScheduledActionMessageRequestTypeDef
+
+def get_value() -> ModifyScheduledActionMessageRequestTypeDef:
+    return {
+        "ScheduledActionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyScheduledActionMessageRequestTypeDef(TypedDict):
+    ScheduledActionName: str,
+    TargetAction: NotRequired[ScheduledActionTypeTypeDef],  # (1)
+    Schedule: NotRequired[str],
+    IamRole: NotRequired[str],
+    ScheduledActionDescription: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Enable: NotRequired[bool],
+```
 
-- `ScheduledActionName`: `str`
-
-Optional fields:
-
-- `TargetAction`:
-  [ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef)
-- `Schedule`: `str`
-- `IamRole`: `str`
-- `ScheduledActionDescription`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Enable`: `bool`
-
-<a id="modifysnapshotcopyretentionperiodmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef) 
 ## ModifySnapshotCopyRetentionPeriodMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifySnapshotCopyRetentionPeriodMessageRequestTypeDef
+
+def get_value() -> ModifySnapshotCopyRetentionPeriodMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "RetentionPeriod": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-- `RetentionPeriod`: `int`
-
-Optional fields:
-
-- `Manual`: `bool`
-
-<a id="modifysnapshotcopyretentionperiodresulttypedef"></a>
+```python title="Definition"
+class ModifySnapshotCopyRetentionPeriodMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    RetentionPeriod: int,
+    Manual: NotRequired[bool],
+```
 
 ## ModifySnapshotCopyRetentionPeriodResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifySnapshotCopyRetentionPeriodResultTypeDef
+
+def get_value() -> ModifySnapshotCopyRetentionPeriodResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifySnapshotCopyRetentionPeriodResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifysnapshotschedulemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifySnapshotScheduleMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifySnapshotScheduleMessageRequestTypeDef
+
+def get_value() -> ModifySnapshotScheduleMessageRequestTypeDef:
+    return {
+        "ScheduleIdentifier": ...,
+        "ScheduleDefinitions": ...,
+    }
 ```
 
-Required fields:
-
-- `ScheduleIdentifier`: `str`
-- `ScheduleDefinitions`: `Sequence`\[`str`\]
-
-<a id="modifyusagelimitmessagerequesttypedef"></a>
+```python title="Definition"
+class ModifySnapshotScheduleMessageRequestTypeDef(TypedDict):
+    ScheduleIdentifier: str,
+    ScheduleDefinitions: Sequence[str],
+```
 
 ## ModifyUsageLimitMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ModifyUsageLimitMessageRequestTypeDef
+
+def get_value() -> ModifyUsageLimitMessageRequestTypeDef:
+    return {
+        "UsageLimitId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyUsageLimitMessageRequestTypeDef(TypedDict):
+    UsageLimitId: str,
+    Amount: NotRequired[int],
+    BreachAction: NotRequired[UsageLimitBreachActionType],  # (1)
+```
 
-- `UsageLimitId`: `str`
-
-Optional fields:
-
-- `Amount`: `int`
-- `BreachAction`:
-  [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
-
-<a id="networkinterfacetypedef"></a>
-
+1. See [:material-code-brackets: UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype) 
 ## NetworkInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import NetworkInterfaceTypeDef
+
+def get_value() -> NetworkInterfaceTypeDef:
+    return {
+        "NetworkInterfaceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `NetworkInterfaceId`: `str`
-- `SubnetId`: `str`
-- `PrivateIpAddress`: `str`
-- `AvailabilityZone`: `str`
-
-<a id="nodeconfigurationoptiontypedef"></a>
+```python title="Definition"
+class NetworkInterfaceTypeDef(TypedDict):
+    NetworkInterfaceId: NotRequired[str],
+    SubnetId: NotRequired[str],
+    PrivateIpAddress: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+```
 
 ## NodeConfigurationOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import NodeConfigurationOptionTypeDef
+
+def get_value() -> NodeConfigurationOptionTypeDef:
+    return {
+        "NodeType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodeConfigurationOptionTypeDef(TypedDict):
+    NodeType: NotRequired[str],
+    NumberOfNodes: NotRequired[int],
+    EstimatedDiskUtilizationPercent: NotRequired[float],
+    Mode: NotRequired[ModeType],  # (1)
+```
 
-- `NodeType`: `str`
-- `NumberOfNodes`: `int`
-- `EstimatedDiskUtilizationPercent`: `float`
-- `Mode`: [ModeType](./literals.md#modetype)
-
-<a id="nodeconfigurationoptionsfiltertypedef"></a>
-
+1. See [:material-code-brackets: ModeType](./literals.md#modetype) 
 ## NodeConfigurationOptionsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import NodeConfigurationOptionsFilterTypeDef
+
+def get_value() -> NodeConfigurationOptionsFilterTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodeConfigurationOptionsFilterTypeDef(TypedDict):
+    Name: NotRequired[NodeConfigurationOptionsFilterNameType],  # (1)
+    Operator: NotRequired[OperatorTypeType],  # (2)
+    Values: NotRequired[Sequence[str]],
+```
 
-- `Name`:
-  [NodeConfigurationOptionsFilterNameType](./literals.md#nodeconfigurationoptionsfilternametype)
-- `Operator`: [OperatorTypeType](./literals.md#operatortypetype)
-- `Values`: `Sequence`\[`str`\]
-
-<a id="nodeconfigurationoptionsmessagetypedef"></a>
-
+1. See [:material-code-brackets: NodeConfigurationOptionsFilterNameType](./literals.md#nodeconfigurationoptionsfilternametype) 
+2. See [:material-code-brackets: OperatorTypeType](./literals.md#operatortypetype) 
 ## NodeConfigurationOptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import NodeConfigurationOptionsMessageTypeDef
+
+def get_value() -> NodeConfigurationOptionsMessageTypeDef:
+    return {
+        "NodeConfigurationOptionList": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NodeConfigurationOptionsMessageTypeDef(TypedDict):
+    NodeConfigurationOptionList: List[NodeConfigurationOptionTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NodeConfigurationOptionList`:
-  `List`\[[NodeConfigurationOptionTypeDef](./type_defs.md#nodeconfigurationoptiontypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="orderableclusteroptiontypedef"></a>
-
+1. See [:material-code-braces: NodeConfigurationOptionTypeDef](./type_defs.md#nodeconfigurationoptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OrderableClusterOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import OrderableClusterOptionTypeDef
+
+def get_value() -> OrderableClusterOptionTypeDef:
+    return {
+        "ClusterVersion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrderableClusterOptionTypeDef(TypedDict):
+    ClusterVersion: NotRequired[str],
+    ClusterType: NotRequired[str],
+    NodeType: NotRequired[str],
+    AvailabilityZones: NotRequired[List[AvailabilityZoneTypeDef]],  # (1)
+```
 
-- `ClusterVersion`: `str`
-- `ClusterType`: `str`
-- `NodeType`: `str`
-- `AvailabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
-
-<a id="orderableclusteroptionsmessagetypedef"></a>
-
+1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
 ## OrderableClusterOptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import OrderableClusterOptionsMessageTypeDef
+
+def get_value() -> OrderableClusterOptionsMessageTypeDef:
+    return {
+        "OrderableClusterOptions": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrderableClusterOptionsMessageTypeDef(TypedDict):
+    OrderableClusterOptions: List[OrderableClusterOptionTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OrderableClusterOptions`:
-  `List`\[[OrderableClusterOptionTypeDef](./type_defs.md#orderableclusteroptiontypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: OrderableClusterOptionTypeDef](./type_defs.md#orderableclusteroptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parametertypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ParameterTypeDef
+
+def get_value() -> ParameterTypeDef:
+    return {
+        "ParameterName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParameterTypeDef(TypedDict):
+    ParameterName: NotRequired[str],
+    ParameterValue: NotRequired[str],
+    Description: NotRequired[str],
+    Source: NotRequired[str],
+    DataType: NotRequired[str],
+    AllowedValues: NotRequired[str],
+    ApplyType: NotRequired[ParameterApplyTypeType],  # (1)
+    IsModifiable: NotRequired[bool],
+    MinimumEngineVersion: NotRequired[str],
+```
 
-- `ParameterName`: `str`
-- `ParameterValue`: `str`
-- `Description`: `str`
-- `Source`: `str`
-- `DataType`: `str`
-- `AllowedValues`: `str`
-- `ApplyType`: [ParameterApplyTypeType](./literals.md#parameterapplytypetype)
-- `IsModifiable`: `bool`
-- `MinimumEngineVersion`: `str`
-
-<a id="partnerintegrationinfotypedef"></a>
-
+1. See [:material-code-brackets: ParameterApplyTypeType](./literals.md#parameterapplytypetype) 
 ## PartnerIntegrationInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PartnerIntegrationInfoTypeDef
+
+def get_value() -> PartnerIntegrationInfoTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PartnerIntegrationInfoTypeDef(TypedDict):
+    DatabaseName: NotRequired[str],
+    PartnerName: NotRequired[str],
+    Status: NotRequired[PartnerIntegrationStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    UpdatedAt: NotRequired[datetime],
+```
 
-- `DatabaseName`: `str`
-- `PartnerName`: `str`
-- `Status`:
-  [PartnerIntegrationStatusType](./literals.md#partnerintegrationstatustype)
-- `StatusMessage`: `str`
-- `CreatedAt`: `datetime`
-- `UpdatedAt`: `datetime`
-
-<a id="partnerintegrationinputmessagerequesttypedef"></a>
-
+1. See [:material-code-brackets: PartnerIntegrationStatusType](./literals.md#partnerintegrationstatustype) 
 ## PartnerIntegrationInputMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PartnerIntegrationInputMessageRequestTypeDef
+
+def get_value() -> PartnerIntegrationInputMessageRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "ClusterIdentifier": ...,
+        "DatabaseName": ...,
+        "PartnerName": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-- `ClusterIdentifier`: `str`
-- `DatabaseName`: `str`
-- `PartnerName`: `str`
-
-<a id="partnerintegrationoutputmessagetypedef"></a>
+```python title="Definition"
+class PartnerIntegrationInputMessageRequestTypeDef(TypedDict):
+    AccountId: str,
+    ClusterIdentifier: str,
+    DatabaseName: str,
+    PartnerName: str,
+```
 
 ## PartnerIntegrationOutputMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PartnerIntegrationOutputMessageTypeDef
+
+def get_value() -> PartnerIntegrationOutputMessageTypeDef:
+    return {
+        "DatabaseName": ...,
+        "PartnerName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PartnerIntegrationOutputMessageTypeDef(TypedDict):
+    DatabaseName: str,
+    PartnerName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DatabaseName`: `str`
-- `PartnerName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="pauseclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PauseClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PauseClusterMessageRequestTypeDef
+
+def get_value() -> PauseClusterMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-<a id="pauseclustermessagetypedef"></a>
+```python title="Definition"
+class PauseClusterMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
 ## PauseClusterMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PauseClusterMessageTypeDef
+
+def get_value() -> PauseClusterMessageTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-<a id="pauseclusterresulttypedef"></a>
+```python title="Definition"
+class PauseClusterMessageTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
 ## PauseClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PauseClusterResultTypeDef
+
+def get_value() -> PauseClusterResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PauseClusterResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="pendingmodifiedvaluestypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PendingModifiedValuesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PendingModifiedValuesTypeDef
+
+def get_value() -> PendingModifiedValuesTypeDef:
+    return {
+        "MasterUserPassword": ...,
+    }
 ```
 
-Optional fields:
-
-- `MasterUserPassword`: `str`
-- `NodeType`: `str`
-- `NumberOfNodes`: `int`
-- `ClusterType`: `str`
-- `ClusterVersion`: `str`
-- `AutomatedSnapshotRetentionPeriod`: `int`
-- `ClusterIdentifier`: `str`
-- `PubliclyAccessible`: `bool`
-- `EnhancedVpcRouting`: `bool`
-- `MaintenanceTrackName`: `str`
-- `EncryptionType`: `str`
-
-<a id="purchasereservednodeofferingmessagerequesttypedef"></a>
+```python title="Definition"
+class PendingModifiedValuesTypeDef(TypedDict):
+    MasterUserPassword: NotRequired[str],
+    NodeType: NotRequired[str],
+    NumberOfNodes: NotRequired[int],
+    ClusterType: NotRequired[str],
+    ClusterVersion: NotRequired[str],
+    AutomatedSnapshotRetentionPeriod: NotRequired[int],
+    ClusterIdentifier: NotRequired[str],
+    PubliclyAccessible: NotRequired[bool],
+    EnhancedVpcRouting: NotRequired[bool],
+    MaintenanceTrackName: NotRequired[str],
+    EncryptionType: NotRequired[str],
+```
 
 ## PurchaseReservedNodeOfferingMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PurchaseReservedNodeOfferingMessageRequestTypeDef
+
+def get_value() -> PurchaseReservedNodeOfferingMessageRequestTypeDef:
+    return {
+        "ReservedNodeOfferingId": ...,
+    }
 ```
 
-Required fields:
-
-- `ReservedNodeOfferingId`: `str`
-
-Optional fields:
-
-- `NodeCount`: `int`
-
-<a id="purchasereservednodeofferingresulttypedef"></a>
+```python title="Definition"
+class PurchaseReservedNodeOfferingMessageRequestTypeDef(TypedDict):
+    ReservedNodeOfferingId: str,
+    NodeCount: NotRequired[int],
+```
 
 ## PurchaseReservedNodeOfferingResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import PurchaseReservedNodeOfferingResultTypeDef
+
+def get_value() -> PurchaseReservedNodeOfferingResultTypeDef:
+    return {
+        "ReservedNode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PurchaseReservedNodeOfferingResultTypeDef(TypedDict):
+    ReservedNode: ReservedNodeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReservedNode`: [ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rebootclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ReservedNodeTypeDef](./type_defs.md#reservednodetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RebootClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RebootClusterMessageRequestTypeDef
+
+def get_value() -> RebootClusterMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-<a id="rebootclusterresulttypedef"></a>
+```python title="Definition"
+class RebootClusterMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
 ## RebootClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RebootClusterResultTypeDef
+
+def get_value() -> RebootClusterResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RebootClusterResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="recurringchargetypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecurringChargeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RecurringChargeTypeDef
+
+def get_value() -> RecurringChargeTypeDef:
+    return {
+        "RecurringChargeAmount": ...,
+    }
 ```
 
-Optional fields:
-
-- `RecurringChargeAmount`: `float`
-- `RecurringChargeFrequency`: `str`
-
-<a id="rejectdatasharemessagerequesttypedef"></a>
+```python title="Definition"
+class RecurringChargeTypeDef(TypedDict):
+    RecurringChargeAmount: NotRequired[float],
+    RecurringChargeFrequency: NotRequired[str],
+```
 
 ## RejectDataShareMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RejectDataShareMessageRequestTypeDef
+
+def get_value() -> RejectDataShareMessageRequestTypeDef:
+    return {
+        "DataShareArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DataShareArn`: `str`
-
-<a id="reservednodeconfigurationoptiontypedef"></a>
+```python title="Definition"
+class RejectDataShareMessageRequestTypeDef(TypedDict):
+    DataShareArn: str,
+```
 
 ## ReservedNodeConfigurationOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ReservedNodeConfigurationOptionTypeDef
+
+def get_value() -> ReservedNodeConfigurationOptionTypeDef:
+    return {
+        "SourceReservedNode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReservedNodeConfigurationOptionTypeDef(TypedDict):
+    SourceReservedNode: NotRequired[ReservedNodeTypeDef],  # (1)
+    TargetReservedNodeCount: NotRequired[int],
+    TargetReservedNodeOffering: NotRequired[ReservedNodeOfferingTypeDef],  # (2)
+```
 
-- `SourceReservedNode`:
-  [ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)
-- `TargetReservedNodeCount`: `int`
-- `TargetReservedNodeOffering`:
-  [ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef)
-
-<a id="reservednodeexchangestatustypedef"></a>
-
+1. See [:material-code-braces: ReservedNodeTypeDef](./type_defs.md#reservednodetypedef) 
+2. See [:material-code-braces: ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef) 
 ## ReservedNodeExchangeStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ReservedNodeExchangeStatusTypeDef
+
+def get_value() -> ReservedNodeExchangeStatusTypeDef:
+    return {
+        "ReservedNodeExchangeRequestId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReservedNodeExchangeStatusTypeDef(TypedDict):
+    ReservedNodeExchangeRequestId: NotRequired[str],
+    Status: NotRequired[ReservedNodeExchangeStatusTypeType],  # (1)
+    RequestTime: NotRequired[datetime],
+    SourceReservedNodeId: NotRequired[str],
+    SourceReservedNodeType: NotRequired[str],
+    SourceReservedNodeCount: NotRequired[int],
+    TargetReservedNodeOfferingId: NotRequired[str],
+    TargetReservedNodeType: NotRequired[str],
+    TargetReservedNodeCount: NotRequired[int],
+```
 
-- `ReservedNodeExchangeRequestId`: `str`
-- `Status`:
-  [ReservedNodeExchangeStatusTypeType](./literals.md#reservednodeexchangestatustypetype)
-- `RequestTime`: `datetime`
-- `SourceReservedNodeId`: `str`
-- `SourceReservedNodeType`: `str`
-- `SourceReservedNodeCount`: `int`
-- `TargetReservedNodeOfferingId`: `str`
-- `TargetReservedNodeType`: `str`
-- `TargetReservedNodeCount`: `int`
-
-<a id="reservednodeofferingtypedef"></a>
-
+1. See [:material-code-brackets: ReservedNodeExchangeStatusTypeType](./literals.md#reservednodeexchangestatustypetype) 
 ## ReservedNodeOfferingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ReservedNodeOfferingTypeDef
+
+def get_value() -> ReservedNodeOfferingTypeDef:
+    return {
+        "ReservedNodeOfferingId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReservedNodeOfferingTypeDef(TypedDict):
+    ReservedNodeOfferingId: NotRequired[str],
+    NodeType: NotRequired[str],
+    Duration: NotRequired[int],
+    FixedPrice: NotRequired[float],
+    UsagePrice: NotRequired[float],
+    CurrencyCode: NotRequired[str],
+    OfferingType: NotRequired[str],
+    RecurringCharges: NotRequired[List[RecurringChargeTypeDef]],  # (1)
+    ReservedNodeOfferingType: NotRequired[ReservedNodeOfferingTypeType],  # (2)
+```
 
-- `ReservedNodeOfferingId`: `str`
-- `NodeType`: `str`
-- `Duration`: `int`
-- `FixedPrice`: `float`
-- `UsagePrice`: `float`
-- `CurrencyCode`: `str`
-- `OfferingType`: `str`
-- `RecurringCharges`:
-  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
-- `ReservedNodeOfferingType`:
-  [ReservedNodeOfferingTypeType](./literals.md#reservednodeofferingtypetype)
-
-<a id="reservednodeofferingsmessagetypedef"></a>
-
+1. See [:material-code-braces: RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef) 
+2. See [:material-code-brackets: ReservedNodeOfferingTypeType](./literals.md#reservednodeofferingtypetype) 
 ## ReservedNodeOfferingsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ReservedNodeOfferingsMessageTypeDef
+
+def get_value() -> ReservedNodeOfferingsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ReservedNodeOfferings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReservedNodeOfferingsMessageTypeDef(TypedDict):
+    Marker: str,
+    ReservedNodeOfferings: List[ReservedNodeOfferingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ReservedNodeOfferings`:
-  `List`\[[ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="reservednodetypedef"></a>
-
+1. See [:material-code-braces: ReservedNodeOfferingTypeDef](./type_defs.md#reservednodeofferingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReservedNodeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ReservedNodeTypeDef
+
+def get_value() -> ReservedNodeTypeDef:
+    return {
+        "ReservedNodeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReservedNodeTypeDef(TypedDict):
+    ReservedNodeId: NotRequired[str],
+    ReservedNodeOfferingId: NotRequired[str],
+    NodeType: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    Duration: NotRequired[int],
+    FixedPrice: NotRequired[float],
+    UsagePrice: NotRequired[float],
+    CurrencyCode: NotRequired[str],
+    NodeCount: NotRequired[int],
+    State: NotRequired[str],
+    OfferingType: NotRequired[str],
+    RecurringCharges: NotRequired[List[RecurringChargeTypeDef]],  # (1)
+    ReservedNodeOfferingType: NotRequired[ReservedNodeOfferingTypeType],  # (2)
+```
 
-- `ReservedNodeId`: `str`
-- `ReservedNodeOfferingId`: `str`
-- `NodeType`: `str`
-- `StartTime`: `datetime`
-- `Duration`: `int`
-- `FixedPrice`: `float`
-- `UsagePrice`: `float`
-- `CurrencyCode`: `str`
-- `NodeCount`: `int`
-- `State`: `str`
-- `OfferingType`: `str`
-- `RecurringCharges`:
-  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
-- `ReservedNodeOfferingType`:
-  [ReservedNodeOfferingTypeType](./literals.md#reservednodeofferingtypetype)
-
-<a id="reservednodesmessagetypedef"></a>
-
+1. See [:material-code-braces: RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef) 
+2. See [:material-code-brackets: ReservedNodeOfferingTypeType](./literals.md#reservednodeofferingtypetype) 
 ## ReservedNodesMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ReservedNodesMessageTypeDef
+
+def get_value() -> ReservedNodesMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ReservedNodes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReservedNodesMessageTypeDef(TypedDict):
+    Marker: str,
+    ReservedNodes: List[ReservedNodeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ReservedNodes`:
-  `List`\[[ReservedNodeTypeDef](./type_defs.md#reservednodetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resetclusterparametergroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ReservedNodeTypeDef](./type_defs.md#reservednodetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResetClusterParameterGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResetClusterParameterGroupMessageRequestTypeDef
+
+def get_value() -> ResetClusterParameterGroupMessageRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResetClusterParameterGroupMessageRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    ResetAllParameters: NotRequired[bool],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+```
 
-- `ParameterGroupName`: `str`
-
-Optional fields:
-
-- `ResetAllParameters`: `bool`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-
-<a id="resizeclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 ## ResizeClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResizeClusterMessageRequestTypeDef
+
+def get_value() -> ResizeClusterMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `ClusterType`: `str`
-- `NodeType`: `str`
-- `NumberOfNodes`: `int`
-- `Classic`: `bool`
-- `ReservedNodeId`: `str`
-- `TargetReservedNodeOfferingId`: `str`
-
-<a id="resizeclustermessagetypedef"></a>
+```python title="Definition"
+class ResizeClusterMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    ClusterType: NotRequired[str],
+    NodeType: NotRequired[str],
+    NumberOfNodes: NotRequired[int],
+    Classic: NotRequired[bool],
+    ReservedNodeId: NotRequired[str],
+    TargetReservedNodeOfferingId: NotRequired[str],
+```
 
 ## ResizeClusterMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResizeClusterMessageTypeDef
+
+def get_value() -> ResizeClusterMessageTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-Optional fields:
-
-- `ClusterType`: `str`
-- `NodeType`: `str`
-- `NumberOfNodes`: `int`
-- `Classic`: `bool`
-- `ReservedNodeId`: `str`
-- `TargetReservedNodeOfferingId`: `str`
-
-<a id="resizeclusterresulttypedef"></a>
+```python title="Definition"
+class ResizeClusterMessageTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    ClusterType: NotRequired[str],
+    NodeType: NotRequired[str],
+    NumberOfNodes: NotRequired[int],
+    Classic: NotRequired[bool],
+    ReservedNodeId: NotRequired[str],
+    TargetReservedNodeOfferingId: NotRequired[str],
+```
 
 ## ResizeClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResizeClusterResultTypeDef
+
+def get_value() -> ResizeClusterResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResizeClusterResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resizeinfotypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResizeInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResizeInfoTypeDef
+
+def get_value() -> ResizeInfoTypeDef:
+    return {
+        "ResizeType": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResizeType`: `str`
-- `AllowCancelResize`: `bool`
-
-<a id="resizeprogressmessagetypedef"></a>
+```python title="Definition"
+class ResizeInfoTypeDef(TypedDict):
+    ResizeType: NotRequired[str],
+    AllowCancelResize: NotRequired[bool],
+```
 
 ## ResizeProgressMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResizeProgressMessageTypeDef
+
+def get_value() -> ResizeProgressMessageTypeDef:
+    return {
+        "TargetNodeType": ...,
+        "TargetNumberOfNodes": ...,
+        "TargetClusterType": ...,
+        "Status": ...,
+        "ImportTablesCompleted": ...,
+        "ImportTablesInProgress": ...,
+        "ImportTablesNotStarted": ...,
+        "AvgResizeRateInMegaBytesPerSecond": ...,
+        "TotalResizeDataInMegaBytes": ...,
+        "ProgressInMegaBytes": ...,
+        "ElapsedTimeInSeconds": ...,
+        "EstimatedTimeToCompletionInSeconds": ...,
+        "ResizeType": ...,
+        "Message": ...,
+        "TargetEncryptionType": ...,
+        "DataTransferProgressPercent": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResizeProgressMessageTypeDef(TypedDict):
+    TargetNodeType: str,
+    TargetNumberOfNodes: int,
+    TargetClusterType: str,
+    Status: str,
+    ImportTablesCompleted: List[str],
+    ImportTablesInProgress: List[str],
+    ImportTablesNotStarted: List[str],
+    AvgResizeRateInMegaBytesPerSecond: float,
+    TotalResizeDataInMegaBytes: int,
+    ProgressInMegaBytes: int,
+    ElapsedTimeInSeconds: int,
+    EstimatedTimeToCompletionInSeconds: int,
+    ResizeType: str,
+    Message: str,
+    TargetEncryptionType: str,
+    DataTransferProgressPercent: float,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TargetNodeType`: `str`
-- `TargetNumberOfNodes`: `int`
-- `TargetClusterType`: `str`
-- `Status`: `str`
-- `ImportTablesCompleted`: `List`\[`str`\]
-- `ImportTablesInProgress`: `List`\[`str`\]
-- `ImportTablesNotStarted`: `List`\[`str`\]
-- `AvgResizeRateInMegaBytesPerSecond`: `float`
-- `TotalResizeDataInMegaBytes`: `int`
-- `ProgressInMegaBytes`: `int`
-- `ElapsedTimeInSeconds`: `int`
-- `EstimatedTimeToCompletionInSeconds`: `int`
-- `ResizeType`: `str`
-- `Message`: `str`
-- `TargetEncryptionType`: `str`
-- `DataTransferProgressPercent`: `float`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restorefromclustersnapshotmessagerequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreFromClusterSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RestoreFromClusterSnapshotMessageRequestTypeDef
+
+def get_value() -> RestoreFromClusterSnapshotMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "SnapshotIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreFromClusterSnapshotMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    SnapshotIdentifier: str,
+    SnapshotClusterIdentifier: NotRequired[str],
+    Port: NotRequired[int],
+    AvailabilityZone: NotRequired[str],
+    AllowVersionUpgrade: NotRequired[bool],
+    ClusterSubnetGroupName: NotRequired[str],
+    PubliclyAccessible: NotRequired[bool],
+    OwnerAccount: NotRequired[str],
+    HsmClientCertificateIdentifier: NotRequired[str],
+    HsmConfigurationIdentifier: NotRequired[str],
+    ElasticIp: NotRequired[str],
+    ClusterParameterGroupName: NotRequired[str],
+    ClusterSecurityGroups: NotRequired[Sequence[str]],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    PreferredMaintenanceWindow: NotRequired[str],
+    AutomatedSnapshotRetentionPeriod: NotRequired[int],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    KmsKeyId: NotRequired[str],
+    NodeType: NotRequired[str],
+    EnhancedVpcRouting: NotRequired[bool],
+    AdditionalInfo: NotRequired[str],
+    IamRoles: NotRequired[Sequence[str]],
+    MaintenanceTrackName: NotRequired[str],
+    SnapshotScheduleIdentifier: NotRequired[str],
+    NumberOfNodes: NotRequired[int],
+    AvailabilityZoneRelocation: NotRequired[bool],
+    AquaConfigurationStatus: NotRequired[AquaConfigurationStatusType],  # (1)
+    DefaultIamRoleArn: NotRequired[str],
+    ReservedNodeId: NotRequired[str],
+    TargetReservedNodeOfferingId: NotRequired[str],
+    Encrypted: NotRequired[bool],
+```
 
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-
-Optional fields:
-
-- `SnapshotClusterIdentifier`: `str`
-- `Port`: `int`
-- `AvailabilityZone`: `str`
-- `AllowVersionUpgrade`: `bool`
-- `ClusterSubnetGroupName`: `str`
-- `PubliclyAccessible`: `bool`
-- `OwnerAccount`: `str`
-- `HsmClientCertificateIdentifier`: `str`
-- `HsmConfigurationIdentifier`: `str`
-- `ElasticIp`: `str`
-- `ClusterParameterGroupName`: `str`
-- `ClusterSecurityGroups`: `Sequence`\[`str`\]
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `PreferredMaintenanceWindow`: `str`
-- `AutomatedSnapshotRetentionPeriod`: `int`
-- `ManualSnapshotRetentionPeriod`: `int`
-- `KmsKeyId`: `str`
-- `NodeType`: `str`
-- `EnhancedVpcRouting`: `bool`
-- `AdditionalInfo`: `str`
-- `IamRoles`: `Sequence`\[`str`\]
-- `MaintenanceTrackName`: `str`
-- `SnapshotScheduleIdentifier`: `str`
-- `NumberOfNodes`: `int`
-- `AvailabilityZoneRelocation`: `bool`
-- `AquaConfigurationStatus`:
-  [AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype)
-- `DefaultIamRoleArn`: `str`
-- `ReservedNodeId`: `str`
-- `TargetReservedNodeOfferingId`: `str`
-- `Encrypted`: `bool`
-
-<a id="restorefromclustersnapshotresulttypedef"></a>
-
+1. See [:material-code-brackets: AquaConfigurationStatusType](./literals.md#aquaconfigurationstatustype) 
 ## RestoreFromClusterSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RestoreFromClusterSnapshotResultTypeDef
+
+def get_value() -> RestoreFromClusterSnapshotResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreFromClusterSnapshotResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="restorestatustypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RestoreStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RestoreStatusTypeDef
+
+def get_value() -> RestoreStatusTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
-
-- `Status`: `str`
-- `CurrentRestoreRateInMegaBytesPerSecond`: `float`
-- `SnapshotSizeInMegaBytes`: `int`
-- `ProgressInMegaBytes`: `int`
-- `ElapsedTimeInSeconds`: `int`
-- `EstimatedTimeToCompletionInSeconds`: `int`
-
-<a id="restoretablefromclustersnapshotmessagerequesttypedef"></a>
+```python title="Definition"
+class RestoreStatusTypeDef(TypedDict):
+    Status: NotRequired[str],
+    CurrentRestoreRateInMegaBytesPerSecond: NotRequired[float],
+    SnapshotSizeInMegaBytes: NotRequired[int],
+    ProgressInMegaBytes: NotRequired[int],
+    ElapsedTimeInSeconds: NotRequired[int],
+    EstimatedTimeToCompletionInSeconds: NotRequired[int],
+```
 
 ## RestoreTableFromClusterSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RestoreTableFromClusterSnapshotMessageRequestTypeDef
+
+def get_value() -> RestoreTableFromClusterSnapshotMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+        "SnapshotIdentifier": ...,
+        "SourceDatabaseName": ...,
+        "SourceTableName": ...,
+        "NewTableName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `SourceDatabaseName`: `str`
-- `SourceTableName`: `str`
-- `NewTableName`: `str`
-
-Optional fields:
-
-- `SourceSchemaName`: `str`
-- `TargetDatabaseName`: `str`
-- `TargetSchemaName`: `str`
-- `EnableCaseSensitiveIdentifier`: `bool`
-
-<a id="restoretablefromclustersnapshotresulttypedef"></a>
+```python title="Definition"
+class RestoreTableFromClusterSnapshotMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+    SnapshotIdentifier: str,
+    SourceDatabaseName: str,
+    SourceTableName: str,
+    NewTableName: str,
+    SourceSchemaName: NotRequired[str],
+    TargetDatabaseName: NotRequired[str],
+    TargetSchemaName: NotRequired[str],
+    EnableCaseSensitiveIdentifier: NotRequired[bool],
+```
 
 ## RestoreTableFromClusterSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RestoreTableFromClusterSnapshotResultTypeDef
+
+def get_value() -> RestoreTableFromClusterSnapshotResultTypeDef:
+    return {
+        "TableRestoreStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreTableFromClusterSnapshotResultTypeDef(TypedDict):
+    TableRestoreStatus: TableRestoreStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableRestoreStatus`:
-  [TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resumeclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResumeClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResumeClusterMessageRequestTypeDef
+
+def get_value() -> ResumeClusterMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-<a id="resumeclustermessagetypedef"></a>
+```python title="Definition"
+class ResumeClusterMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
 ## ResumeClusterMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResumeClusterMessageTypeDef
+
+def get_value() -> ResumeClusterMessageTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-<a id="resumeclusterresulttypedef"></a>
+```python title="Definition"
+class ResumeClusterMessageTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
 ## ResumeClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ResumeClusterResultTypeDef
+
+def get_value() -> ResumeClusterResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResumeClusterResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="revisiontargettypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RevisionTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RevisionTargetTypeDef
+
+def get_value() -> RevisionTargetTypeDef:
+    return {
+        "DatabaseRevision": ...,
+    }
 ```
 
-Optional fields:
-
-- `DatabaseRevision`: `str`
-- `Description`: `str`
-- `DatabaseRevisionReleaseDate`: `datetime`
-
-<a id="revokeclustersecuritygroupingressmessagerequesttypedef"></a>
+```python title="Definition"
+class RevisionTargetTypeDef(TypedDict):
+    DatabaseRevision: NotRequired[str],
+    Description: NotRequired[str],
+    DatabaseRevisionReleaseDate: NotRequired[datetime],
+```
 
 ## RevokeClusterSecurityGroupIngressMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RevokeClusterSecurityGroupIngressMessageRequestTypeDef
+
+def get_value() -> RevokeClusterSecurityGroupIngressMessageRequestTypeDef:
+    return {
+        "ClusterSecurityGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterSecurityGroupName`: `str`
-
-Optional fields:
-
-- `CIDRIP`: `str`
-- `EC2SecurityGroupName`: `str`
-- `EC2SecurityGroupOwnerId`: `str`
-
-<a id="revokeclustersecuritygroupingressresulttypedef"></a>
+```python title="Definition"
+class RevokeClusterSecurityGroupIngressMessageRequestTypeDef(TypedDict):
+    ClusterSecurityGroupName: str,
+    CIDRIP: NotRequired[str],
+    EC2SecurityGroupName: NotRequired[str],
+    EC2SecurityGroupOwnerId: NotRequired[str],
+```
 
 ## RevokeClusterSecurityGroupIngressResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RevokeClusterSecurityGroupIngressResultTypeDef
+
+def get_value() -> RevokeClusterSecurityGroupIngressResultTypeDef:
+    return {
+        "ClusterSecurityGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RevokeClusterSecurityGroupIngressResultTypeDef(TypedDict):
+    ClusterSecurityGroup: ClusterSecurityGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClusterSecurityGroup`:
-  [ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="revokeendpointaccessmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterSecurityGroupTypeDef](./type_defs.md#clustersecuritygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RevokeEndpointAccessMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RevokeEndpointAccessMessageRequestTypeDef
+
+def get_value() -> RevokeEndpointAccessMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterIdentifier`: `str`
-- `Account`: `str`
-- `VpcIds`: `Sequence`\[`str`\]
-- `Force`: `bool`
-
-<a id="revokesnapshotaccessmessagerequesttypedef"></a>
+```python title="Definition"
+class RevokeEndpointAccessMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    Account: NotRequired[str],
+    VpcIds: NotRequired[Sequence[str]],
+    Force: NotRequired[bool],
+```
 
 ## RevokeSnapshotAccessMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RevokeSnapshotAccessMessageRequestTypeDef
+
+def get_value() -> RevokeSnapshotAccessMessageRequestTypeDef:
+    return {
+        "SnapshotIdentifier": ...,
+        "AccountWithRestoreAccess": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotIdentifier`: `str`
-- `AccountWithRestoreAccess`: `str`
-
-Optional fields:
-
-- `SnapshotClusterIdentifier`: `str`
-
-<a id="revokesnapshotaccessresulttypedef"></a>
+```python title="Definition"
+class RevokeSnapshotAccessMessageRequestTypeDef(TypedDict):
+    SnapshotIdentifier: str,
+    AccountWithRestoreAccess: str,
+    SnapshotClusterIdentifier: NotRequired[str],
+```
 
 ## RevokeSnapshotAccessResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RevokeSnapshotAccessResultTypeDef
+
+def get_value() -> RevokeSnapshotAccessResultTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RevokeSnapshotAccessResultTypeDef(TypedDict):
+    Snapshot: SnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rotateencryptionkeymessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RotateEncryptionKeyMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RotateEncryptionKeyMessageRequestTypeDef
+
+def get_value() -> RotateEncryptionKeyMessageRequestTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterIdentifier`: `str`
-
-<a id="rotateencryptionkeyresulttypedef"></a>
+```python title="Definition"
+class RotateEncryptionKeyMessageRequestTypeDef(TypedDict):
+    ClusterIdentifier: str,
+```
 
 ## RotateEncryptionKeyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import RotateEncryptionKeyResultTypeDef
+
+def get_value() -> RotateEncryptionKeyResultTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RotateEncryptionKeyResultTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="scheduledactionfiltertypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ScheduledActionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ScheduledActionFilterTypeDef
+
+def get_value() -> ScheduledActionFilterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduledActionFilterTypeDef(TypedDict):
+    Name: ScheduledActionFilterNameType,  # (1)
+    Values: Sequence[str],
+```
 
-- `Name`:
-  [ScheduledActionFilterNameType](./literals.md#scheduledactionfilternametype)
-- `Values`: `Sequence`\[`str`\]
-
-<a id="scheduledactionresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ScheduledActionFilterNameType](./literals.md#scheduledactionfilternametype) 
 ## ScheduledActionResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ScheduledActionResponseMetadataTypeDef
+
+def get_value() -> ScheduledActionResponseMetadataTypeDef:
+    return {
+        "ScheduledActionName": ...,
+        "TargetAction": ...,
+        "Schedule": ...,
+        "IamRole": ...,
+        "ScheduledActionDescription": ...,
+        "State": ...,
+        "NextInvocations": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduledActionResponseMetadataTypeDef(TypedDict):
+    ScheduledActionName: str,
+    TargetAction: ScheduledActionTypeTypeDef,  # (1)
+    Schedule: str,
+    IamRole: str,
+    ScheduledActionDescription: str,
+    State: ScheduledActionStateType,  # (2)
+    NextInvocations: List[datetime],
+    StartTime: datetime,
+    EndTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ScheduledActionName`: `str`
-- `TargetAction`:
-  [ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef)
-- `Schedule`: `str`
-- `IamRole`: `str`
-- `ScheduledActionDescription`: `str`
-- `State`: [ScheduledActionStateType](./literals.md#scheduledactionstatetype)
-- `NextInvocations`: `List`\[`datetime`\]
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="scheduledactiontypedef"></a>
-
+1. See [:material-code-braces: ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef) 
+2. See [:material-code-brackets: ScheduledActionStateType](./literals.md#scheduledactionstatetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ScheduledActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ScheduledActionTypeDef
+
+def get_value() -> ScheduledActionTypeDef:
+    return {
+        "ScheduledActionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScheduledActionTypeDef(TypedDict):
+    ScheduledActionName: NotRequired[str],
+    TargetAction: NotRequired[ScheduledActionTypeTypeDef],  # (1)
+    Schedule: NotRequired[str],
+    IamRole: NotRequired[str],
+    ScheduledActionDescription: NotRequired[str],
+    State: NotRequired[ScheduledActionStateType],  # (2)
+    NextInvocations: NotRequired[List[datetime]],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+```
 
-- `ScheduledActionName`: `str`
-- `TargetAction`:
-  [ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef)
-- `Schedule`: `str`
-- `IamRole`: `str`
-- `ScheduledActionDescription`: `str`
-- `State`: [ScheduledActionStateType](./literals.md#scheduledactionstatetype)
-- `NextInvocations`: `List`\[`datetime`\]
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-
-<a id="scheduledactiontypetypedef"></a>
-
+1. See [:material-code-braces: ScheduledActionTypeTypeDef](./type_defs.md#scheduledactiontypetypedef) 
+2. See [:material-code-brackets: ScheduledActionStateType](./literals.md#scheduledactionstatetype) 
 ## ScheduledActionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ScheduledActionTypeTypeDef
+
+def get_value() -> ScheduledActionTypeTypeDef:
+    return {
+        "ResizeCluster": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScheduledActionTypeTypeDef(TypedDict):
+    ResizeCluster: NotRequired[ResizeClusterMessageTypeDef],  # (1)
+    PauseCluster: NotRequired[PauseClusterMessageTypeDef],  # (2)
+    ResumeCluster: NotRequired[ResumeClusterMessageTypeDef],  # (3)
+```
 
-- `ResizeCluster`:
-  [ResizeClusterMessageTypeDef](./type_defs.md#resizeclustermessagetypedef)
-- `PauseCluster`:
-  [PauseClusterMessageTypeDef](./type_defs.md#pauseclustermessagetypedef)
-- `ResumeCluster`:
-  [ResumeClusterMessageTypeDef](./type_defs.md#resumeclustermessagetypedef)
-
-<a id="scheduledactionsmessagetypedef"></a>
-
+1. See [:material-code-braces: ResizeClusterMessageTypeDef](./type_defs.md#resizeclustermessagetypedef) 
+2. See [:material-code-braces: PauseClusterMessageTypeDef](./type_defs.md#pauseclustermessagetypedef) 
+3. See [:material-code-braces: ResumeClusterMessageTypeDef](./type_defs.md#resumeclustermessagetypedef) 
 ## ScheduledActionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import ScheduledActionsMessageTypeDef
+
+def get_value() -> ScheduledActionsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "ScheduledActions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduledActionsMessageTypeDef(TypedDict):
+    Marker: str,
+    ScheduledActions: List[ScheduledActionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `ScheduledActions`:
-  `List`\[[ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="snapshotcopygrantmessagetypedef"></a>
-
+1. See [:material-code-braces: ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SnapshotCopyGrantMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SnapshotCopyGrantMessageTypeDef
+
+def get_value() -> SnapshotCopyGrantMessageTypeDef:
+    return {
+        "Marker": ...,
+        "SnapshotCopyGrants": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SnapshotCopyGrantMessageTypeDef(TypedDict):
+    Marker: str,
+    SnapshotCopyGrants: List[SnapshotCopyGrantTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `SnapshotCopyGrants`:
-  `List`\[[SnapshotCopyGrantTypeDef](./type_defs.md#snapshotcopygranttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="snapshotcopygranttypedef"></a>
-
+1. See [:material-code-braces: SnapshotCopyGrantTypeDef](./type_defs.md#snapshotcopygranttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SnapshotCopyGrantTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SnapshotCopyGrantTypeDef
+
+def get_value() -> SnapshotCopyGrantTypeDef:
+    return {
+        "SnapshotCopyGrantName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SnapshotCopyGrantTypeDef(TypedDict):
+    SnapshotCopyGrantName: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `SnapshotCopyGrantName`: `str`
-- `KmsKeyId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="snapshoterrormessagetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## SnapshotErrorMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SnapshotErrorMessageTypeDef
+
+def get_value() -> SnapshotErrorMessageTypeDef:
+    return {
+        "SnapshotIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `SnapshotIdentifier`: `str`
-- `SnapshotClusterIdentifier`: `str`
-- `FailureCode`: `str`
-- `FailureReason`: `str`
-
-<a id="snapshotmessagetypedef"></a>
+```python title="Definition"
+class SnapshotErrorMessageTypeDef(TypedDict):
+    SnapshotIdentifier: NotRequired[str],
+    SnapshotClusterIdentifier: NotRequired[str],
+    FailureCode: NotRequired[str],
+    FailureReason: NotRequired[str],
+```
 
 ## SnapshotMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SnapshotMessageTypeDef
+
+def get_value() -> SnapshotMessageTypeDef:
+    return {
+        "Marker": ...,
+        "Snapshots": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SnapshotMessageTypeDef(TypedDict):
+    Marker: str,
+    Snapshots: List[SnapshotTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `Snapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="snapshotscheduleresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: SnapshotTypeDef](./type_defs.md#snapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SnapshotScheduleResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SnapshotScheduleResponseMetadataTypeDef
+
+def get_value() -> SnapshotScheduleResponseMetadataTypeDef:
+    return {
+        "ScheduleDefinitions": ...,
+        "ScheduleIdentifier": ...,
+        "ScheduleDescription": ...,
+        "Tags": ...,
+        "NextInvocations": ...,
+        "AssociatedClusterCount": ...,
+        "AssociatedClusters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SnapshotScheduleResponseMetadataTypeDef(TypedDict):
+    ScheduleDefinitions: List[str],
+    ScheduleIdentifier: str,
+    ScheduleDescription: str,
+    Tags: List[TagTypeDef],  # (1)
+    NextInvocations: List[datetime],
+    AssociatedClusterCount: int,
+    AssociatedClusters: List[ClusterAssociatedToScheduleTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ScheduleDefinitions`: `List`\[`str`\]
-- `ScheduleIdentifier`: `str`
-- `ScheduleDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextInvocations`: `List`\[`datetime`\]
-- `AssociatedClusterCount`: `int`
-- `AssociatedClusters`:
-  `List`\[[ClusterAssociatedToScheduleTypeDef](./type_defs.md#clusterassociatedtoscheduletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="snapshotscheduletypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ClusterAssociatedToScheduleTypeDef](./type_defs.md#clusterassociatedtoscheduletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SnapshotScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SnapshotScheduleTypeDef
+
+def get_value() -> SnapshotScheduleTypeDef:
+    return {
+        "ScheduleDefinitions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SnapshotScheduleTypeDef(TypedDict):
+    ScheduleDefinitions: NotRequired[List[str]],
+    ScheduleIdentifier: NotRequired[str],
+    ScheduleDescription: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    NextInvocations: NotRequired[List[datetime]],
+    AssociatedClusterCount: NotRequired[int],
+    AssociatedClusters: NotRequired[List[ClusterAssociatedToScheduleTypeDef]],  # (2)
+```
 
-- `ScheduleDefinitions`: `List`\[`str`\]
-- `ScheduleIdentifier`: `str`
-- `ScheduleDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextInvocations`: `List`\[`datetime`\]
-- `AssociatedClusterCount`: `int`
-- `AssociatedClusters`:
-  `List`\[[ClusterAssociatedToScheduleTypeDef](./type_defs.md#clusterassociatedtoscheduletypedef)\]
-
-<a id="snapshotsortingentitytypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ClusterAssociatedToScheduleTypeDef](./type_defs.md#clusterassociatedtoscheduletypedef) 
 ## SnapshotSortingEntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SnapshotSortingEntityTypeDef
+
+def get_value() -> SnapshotSortingEntityTypeDef:
+    return {
+        "Attribute": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SnapshotSortingEntityTypeDef(TypedDict):
+    Attribute: SnapshotAttributeToSortByType,  # (1)
+    SortOrder: NotRequired[SortByOrderType],  # (2)
+```
 
-- `Attribute`:
-  [SnapshotAttributeToSortByType](./literals.md#snapshotattributetosortbytype)
-
-Optional fields:
-
-- `SortOrder`: [SortByOrderType](./literals.md#sortbyordertype)
-
-<a id="snapshottypedef"></a>
-
+1. See [:material-code-brackets: SnapshotAttributeToSortByType](./literals.md#snapshotattributetosortbytype) 
+2. See [:material-code-brackets: SortByOrderType](./literals.md#sortbyordertype) 
 ## SnapshotTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SnapshotTypeDef
+
+def get_value() -> SnapshotTypeDef:
+    return {
+        "SnapshotIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SnapshotTypeDef(TypedDict):
+    SnapshotIdentifier: NotRequired[str],
+    ClusterIdentifier: NotRequired[str],
+    SnapshotCreateTime: NotRequired[datetime],
+    Status: NotRequired[str],
+    Port: NotRequired[int],
+    AvailabilityZone: NotRequired[str],
+    ClusterCreateTime: NotRequired[datetime],
+    MasterUsername: NotRequired[str],
+    ClusterVersion: NotRequired[str],
+    EngineFullVersion: NotRequired[str],
+    SnapshotType: NotRequired[str],
+    NodeType: NotRequired[str],
+    NumberOfNodes: NotRequired[int],
+    DBName: NotRequired[str],
+    VpcId: NotRequired[str],
+    Encrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    EncryptedWithHSM: NotRequired[bool],
+    AccountsWithRestoreAccess: NotRequired[List[AccountWithRestoreAccessTypeDef]],  # (1)
+    OwnerAccount: NotRequired[str],
+    TotalBackupSizeInMegaBytes: NotRequired[float],
+    ActualIncrementalBackupSizeInMegaBytes: NotRequired[float],
+    BackupProgressInMegaBytes: NotRequired[float],
+    CurrentBackupRateInMegaBytesPerSecond: NotRequired[float],
+    EstimatedSecondsToCompletion: NotRequired[int],
+    ElapsedTimeInSeconds: NotRequired[int],
+    SourceRegion: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+    RestorableNodeTypes: NotRequired[List[str]],
+    EnhancedVpcRouting: NotRequired[bool],
+    MaintenanceTrackName: NotRequired[str],
+    ManualSnapshotRetentionPeriod: NotRequired[int],
+    ManualSnapshotRemainingDays: NotRequired[int],
+    SnapshotRetentionStartTime: NotRequired[datetime],
+```
 
-- `SnapshotIdentifier`: `str`
-- `ClusterIdentifier`: `str`
-- `SnapshotCreateTime`: `datetime`
-- `Status`: `str`
-- `Port`: `int`
-- `AvailabilityZone`: `str`
-- `ClusterCreateTime`: `datetime`
-- `MasterUsername`: `str`
-- `ClusterVersion`: `str`
-- `EngineFullVersion`: `str`
-- `SnapshotType`: `str`
-- `NodeType`: `str`
-- `NumberOfNodes`: `int`
-- `DBName`: `str`
-- `VpcId`: `str`
-- `Encrypted`: `bool`
-- `KmsKeyId`: `str`
-- `EncryptedWithHSM`: `bool`
-- `AccountsWithRestoreAccess`:
-  `List`\[[AccountWithRestoreAccessTypeDef](./type_defs.md#accountwithrestoreaccesstypedef)\]
-- `OwnerAccount`: `str`
-- `TotalBackupSizeInMegaBytes`: `float`
-- `ActualIncrementalBackupSizeInMegaBytes`: `float`
-- `BackupProgressInMegaBytes`: `float`
-- `CurrentBackupRateInMegaBytesPerSecond`: `float`
-- `EstimatedSecondsToCompletion`: `int`
-- `ElapsedTimeInSeconds`: `int`
-- `SourceRegion`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RestorableNodeTypes`: `List`\[`str`\]
-- `EnhancedVpcRouting`: `bool`
-- `MaintenanceTrackName`: `str`
-- `ManualSnapshotRetentionPeriod`: `int`
-- `ManualSnapshotRemainingDays`: `int`
-- `SnapshotRetentionStartTime`: `datetime`
-
-<a id="subnettypedef"></a>
-
+1. See [:material-code-braces: AccountWithRestoreAccessTypeDef](./type_defs.md#accountwithrestoreaccesstypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## SubnetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SubnetTypeDef
+
+def get_value() -> SubnetTypeDef:
+    return {
+        "SubnetIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubnetTypeDef(TypedDict):
+    SubnetIdentifier: NotRequired[str],
+    SubnetAvailabilityZone: NotRequired[AvailabilityZoneTypeDef],  # (1)
+    SubnetStatus: NotRequired[str],
+```
 
-- `SubnetIdentifier`: `str`
-- `SubnetAvailabilityZone`:
-  [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
-- `SubnetStatus`: `str`
-
-<a id="supportedoperationtypedef"></a>
-
+1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
 ## SupportedOperationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SupportedOperationTypeDef
+
+def get_value() -> SupportedOperationTypeDef:
+    return {
+        "OperationName": ...,
+    }
 ```
 
-Optional fields:
-
-- `OperationName`: `str`
-
-<a id="supportedplatformtypedef"></a>
+```python title="Definition"
+class SupportedOperationTypeDef(TypedDict):
+    OperationName: NotRequired[str],
+```
 
 ## SupportedPlatformTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import SupportedPlatformTypeDef
+
+def get_value() -> SupportedPlatformTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="tablerestorestatusmessagetypedef"></a>
+```python title="Definition"
+class SupportedPlatformTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## TableRestoreStatusMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import TableRestoreStatusMessageTypeDef
+
+def get_value() -> TableRestoreStatusMessageTypeDef:
+    return {
+        "TableRestoreStatusDetails": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TableRestoreStatusMessageTypeDef(TypedDict):
+    TableRestoreStatusDetails: List[TableRestoreStatusTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableRestoreStatusDetails`:
-  `List`\[[TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tablerestorestatustypedef"></a>
-
+1. See [:material-code-braces: TableRestoreStatusTypeDef](./type_defs.md#tablerestorestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TableRestoreStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import TableRestoreStatusTypeDef
+
+def get_value() -> TableRestoreStatusTypeDef:
+    return {
+        "TableRestoreRequestId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TableRestoreStatusTypeDef(TypedDict):
+    TableRestoreRequestId: NotRequired[str],
+    Status: NotRequired[TableRestoreStatusTypeType],  # (1)
+    Message: NotRequired[str],
+    RequestTime: NotRequired[datetime],
+    ProgressInMegaBytes: NotRequired[int],
+    TotalDataInMegaBytes: NotRequired[int],
+    ClusterIdentifier: NotRequired[str],
+    SnapshotIdentifier: NotRequired[str],
+    SourceDatabaseName: NotRequired[str],
+    SourceSchemaName: NotRequired[str],
+    SourceTableName: NotRequired[str],
+    TargetDatabaseName: NotRequired[str],
+    TargetSchemaName: NotRequired[str],
+    NewTableName: NotRequired[str],
+```
 
-- `TableRestoreRequestId`: `str`
-- `Status`:
-  [TableRestoreStatusTypeType](./literals.md#tablerestorestatustypetype)
-- `Message`: `str`
-- `RequestTime`: `datetime`
-- `ProgressInMegaBytes`: `int`
-- `TotalDataInMegaBytes`: `int`
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `SourceDatabaseName`: `str`
-- `SourceSchemaName`: `str`
-- `SourceTableName`: `str`
-- `TargetDatabaseName`: `str`
-- `TargetSchemaName`: `str`
-- `NewTableName`: `str`
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-brackets: TableRestoreStatusTypeType](./literals.md#tablerestorestatustypetype) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="taggedresourcelistmessagetypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## TaggedResourceListMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import TaggedResourceListMessageTypeDef
+
+def get_value() -> TaggedResourceListMessageTypeDef:
+    return {
+        "TaggedResources": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TaggedResourceListMessageTypeDef(TypedDict):
+    TaggedResources: List[TaggedResourceTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TaggedResources`:
-  `List`\[[TaggedResourceTypeDef](./type_defs.md#taggedresourcetypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="taggedresourcetypedef"></a>
-
+1. See [:material-code-braces: TaggedResourceTypeDef](./type_defs.md#taggedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TaggedResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import TaggedResourceTypeDef
+
+def get_value() -> TaggedResourceTypeDef:
+    return {
+        "Tag": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaggedResourceTypeDef(TypedDict):
+    Tag: NotRequired[TagTypeDef],  # (1)
+    ResourceName: NotRequired[str],
+    ResourceType: NotRequired[str],
+```
 
-- `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
-- `ResourceName`: `str`
-- `ResourceType`: `str`
-
-<a id="tracklistmessagetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TrackListMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import TrackListMessageTypeDef
+
+def get_value() -> TrackListMessageTypeDef:
+    return {
+        "MaintenanceTracks": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TrackListMessageTypeDef(TypedDict):
+    MaintenanceTracks: List[MaintenanceTrackTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MaintenanceTracks`:
-  `List`\[[MaintenanceTrackTypeDef](./type_defs.md#maintenancetracktypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatepartnerstatusinputmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: MaintenanceTrackTypeDef](./type_defs.md#maintenancetracktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePartnerStatusInputMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import UpdatePartnerStatusInputMessageRequestTypeDef
+
+def get_value() -> UpdatePartnerStatusInputMessageRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "ClusterIdentifier": ...,
+        "DatabaseName": ...,
+        "PartnerName": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePartnerStatusInputMessageRequestTypeDef(TypedDict):
+    AccountId: str,
+    ClusterIdentifier: str,
+    DatabaseName: str,
+    PartnerName: str,
+    Status: PartnerIntegrationStatusType,  # (1)
+    StatusMessage: NotRequired[str],
+```
 
-- `AccountId`: `str`
-- `ClusterIdentifier`: `str`
-- `DatabaseName`: `str`
-- `PartnerName`: `str`
-- `Status`:
-  [PartnerIntegrationStatusType](./literals.md#partnerintegrationstatustype)
-
-Optional fields:
-
-- `StatusMessage`: `str`
-
-<a id="updatetargettypedef"></a>
-
+1. See [:material-code-brackets: PartnerIntegrationStatusType](./literals.md#partnerintegrationstatustype) 
 ## UpdateTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import UpdateTargetTypeDef
+
+def get_value() -> UpdateTargetTypeDef:
+    return {
+        "MaintenanceTrackName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateTargetTypeDef(TypedDict):
+    MaintenanceTrackName: NotRequired[str],
+    DatabaseVersion: NotRequired[str],
+    SupportedOperations: NotRequired[List[SupportedOperationTypeDef]],  # (1)
+```
 
-- `MaintenanceTrackName`: `str`
-- `DatabaseVersion`: `str`
-- `SupportedOperations`:
-  `List`\[[SupportedOperationTypeDef](./type_defs.md#supportedoperationtypedef)\]
-
-<a id="usagelimitlisttypedef"></a>
-
+1. See [:material-code-braces: SupportedOperationTypeDef](./type_defs.md#supportedoperationtypedef) 
 ## UsageLimitListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import UsageLimitListTypeDef
+
+def get_value() -> UsageLimitListTypeDef:
+    return {
+        "UsageLimits": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UsageLimitListTypeDef(TypedDict):
+    UsageLimits: List[UsageLimitTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UsageLimits`:
-  `List`\[[UsageLimitTypeDef](./type_defs.md#usagelimittypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="usagelimitresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: UsageLimitTypeDef](./type_defs.md#usagelimittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UsageLimitResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import UsageLimitResponseMetadataTypeDef
+
+def get_value() -> UsageLimitResponseMetadataTypeDef:
+    return {
+        "UsageLimitId": ...,
+        "ClusterIdentifier": ...,
+        "FeatureType": ...,
+        "LimitType": ...,
+        "Amount": ...,
+        "Period": ...,
+        "BreachAction": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UsageLimitResponseMetadataTypeDef(TypedDict):
+    UsageLimitId: str,
+    ClusterIdentifier: str,
+    FeatureType: UsageLimitFeatureTypeType,  # (1)
+    LimitType: UsageLimitLimitTypeType,  # (2)
+    Amount: int,
+    Period: UsageLimitPeriodType,  # (3)
+    BreachAction: UsageLimitBreachActionType,  # (4)
+    Tags: List[TagTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `UsageLimitId`: `str`
-- `ClusterIdentifier`: `str`
-- `FeatureType`:
-  [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
-- `LimitType`: [UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype)
-- `Amount`: `int`
-- `Period`: [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
-- `BreachAction`:
-  [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="usagelimittypedef"></a>
-
+1. See [:material-code-brackets: UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype) 
+2. See [:material-code-brackets: UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype) 
+3. See [:material-code-brackets: UsageLimitPeriodType](./literals.md#usagelimitperiodtype) 
+4. See [:material-code-brackets: UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UsageLimitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import UsageLimitTypeDef
+
+def get_value() -> UsageLimitTypeDef:
+    return {
+        "UsageLimitId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UsageLimitTypeDef(TypedDict):
+    UsageLimitId: NotRequired[str],
+    ClusterIdentifier: NotRequired[str],
+    FeatureType: NotRequired[UsageLimitFeatureTypeType],  # (1)
+    LimitType: NotRequired[UsageLimitLimitTypeType],  # (2)
+    Amount: NotRequired[int],
+    Period: NotRequired[UsageLimitPeriodType],  # (3)
+    BreachAction: NotRequired[UsageLimitBreachActionType],  # (4)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+```
 
-- `UsageLimitId`: `str`
-- `ClusterIdentifier`: `str`
-- `FeatureType`:
-  [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
-- `LimitType`: [UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype)
-- `Amount`: `int`
-- `Period`: [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
-- `BreachAction`:
-  [UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="vpcendpointtypedef"></a>
-
+1. See [:material-code-brackets: UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype) 
+2. See [:material-code-brackets: UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype) 
+3. See [:material-code-brackets: UsageLimitPeriodType](./literals.md#usagelimitperiodtype) 
+4. See [:material-code-brackets: UsageLimitBreachActionType](./literals.md#usagelimitbreachactiontype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## VpcEndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import VpcEndpointTypeDef
+
+def get_value() -> VpcEndpointTypeDef:
+    return {
+        "VpcEndpointId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VpcEndpointTypeDef(TypedDict):
+    VpcEndpointId: NotRequired[str],
+    VpcId: NotRequired[str],
+    NetworkInterfaces: NotRequired[List[NetworkInterfaceTypeDef]],  # (1)
+```
 
-- `VpcEndpointId`: `str`
-- `VpcId`: `str`
-- `NetworkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
-
-<a id="vpcsecuritygroupmembershiptypedef"></a>
-
+1. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
 ## VpcSecurityGroupMembershipTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import VpcSecurityGroupMembershipTypeDef
+
+def get_value() -> VpcSecurityGroupMembershipTypeDef:
+    return {
+        "VpcSecurityGroupId": ...,
+    }
 ```
 
-Optional fields:
-
-- `VpcSecurityGroupId`: `str`
-- `Status`: `str`
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class VpcSecurityGroupMembershipTypeDef(TypedDict):
+    VpcSecurityGroupId: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

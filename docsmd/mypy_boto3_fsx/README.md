@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-fsx-module"></a>
-
-# Type annotations for boto3 FSx module
+#  FSx module
 
 > [Index](../README.md) > FSx
 
-Auto-generated documentation for
-[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
-type annotations stubs module
-[mypy-boto3-fsx](https://pypi.org/project/mypy-boto3-fsx/).
+!!! note ""
 
-- [Type annotations for boto3 FSx module](#type-annotations-for-boto3-fsx-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [FSxClient](#fsxclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
+    type annotations stubs module [mypy-boto3-fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `FSx`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[fsx]'
 python -m pip install mypy-boto3-fsx
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,138 +42,60 @@ python -m pip install mypy-boto3-fsx
 python -m pip uninstall -y mypy-boto3-fsx
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="fsxclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## FSxClient
 
-Type annotations for `boto3.client("fsx")` as [FSxClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("fsx")` as [FSxClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_fsx.client import FSxClient
+
+def get_client() -> FSxClient:
+    return Session().cleint("fsx")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_file_system_aliases](./client.md#associate_file_system_aliases)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_data_repository_task](./client.md#cancel_data_repository_task)
-- [copy_backup](./client.md#copy_backup)
-- [create_backup](./client.md#create_backup)
-- [create_data_repository_association](./client.md#create_data_repository_association)
-- [create_data_repository_task](./client.md#create_data_repository_task)
-- [create_file_system](./client.md#create_file_system)
-- [create_file_system_from_backup](./client.md#create_file_system_from_backup)
-- [create_snapshot](./client.md#create_snapshot)
-- [create_storage_virtual_machine](./client.md#create_storage_virtual_machine)
-- [create_volume](./client.md#create_volume)
-- [create_volume_from_backup](./client.md#create_volume_from_backup)
-- [delete_backup](./client.md#delete_backup)
-- [delete_data_repository_association](./client.md#delete_data_repository_association)
-- [delete_file_system](./client.md#delete_file_system)
-- [delete_snapshot](./client.md#delete_snapshot)
-- [delete_storage_virtual_machine](./client.md#delete_storage_virtual_machine)
-- [delete_volume](./client.md#delete_volume)
-- [describe_backups](./client.md#describe_backups)
-- [describe_data_repository_associations](./client.md#describe_data_repository_associations)
-- [describe_data_repository_tasks](./client.md#describe_data_repository_tasks)
-- [describe_file_system_aliases](./client.md#describe_file_system_aliases)
-- [describe_file_systems](./client.md#describe_file_systems)
-- [describe_snapshots](./client.md#describe_snapshots)
-- [describe_storage_virtual_machines](./client.md#describe_storage_virtual_machines)
-- [describe_volumes](./client.md#describe_volumes)
-- [disassociate_file_system_aliases](./client.md#disassociate_file_system_aliases)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [release_file_system_nfs_v3_locks](./client.md#release_file_system_nfs_v3_locks)
-- [restore_volume_from_snapshot](./client.md#restore_volume_from_snapshot)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_data_repository_association](./client.md#update_data_repository_association)
-- [update_file_system](./client.md#update_file_system)
-- [update_snapshot](./client.md#update_snapshot)
-- [update_storage_virtual_machine](./client.md#update_storage_virtual_machine)
-- [update_volume](./client.md#update_volume)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-FSxClient [exceptions](./client.md#exceptions)
-
-- ActiveDirectoryError
-- BackupBeingCopied
-- BackupInProgress
-- BackupNotFound
-- BackupRestoring
-- BadRequest
-- ClientError
-- DataRepositoryAssociationNotFound
-- DataRepositoryTaskEnded
-- DataRepositoryTaskExecuting
-- DataRepositoryTaskNotFound
-- FileSystemNotFound
-- IncompatibleParameterError
-- IncompatibleRegionForMultiAZ
-- InternalServerError
-- InvalidDataRepositoryType
-- InvalidDestinationKmsKey
-- InvalidExportPath
-- InvalidImportPath
-- InvalidNetworkSettings
-- InvalidPerUnitStorageThroughput
-- InvalidRegion
-- InvalidSourceKmsKey
-- MissingFileSystemConfiguration
-- MissingVolumeConfiguration
-- NotServiceResourceError
-- ResourceDoesNotSupportTagging
-- ResourceNotFound
-- ServiceLimitExceeded
-- SnapshotNotFound
-- SourceBackupUnavailable
-- StorageVirtualMachineNotFound
-- UnsupportedOperation
-- VolumeNotFound
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("fsx").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("fsx").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_fsx.paginator import DescribeBackupsPaginator, ...
+from mypy_boto3_fsx.paginator import DescribeBackupsPaginator
+
+def get_describe_backups_paginator() -> DescribeBackupsPaginator:
+    return Session().client("fsx").get_paginator("describe_backups"))
 ```
 
 - [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
 - [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_fsx.literals import AdministrativeActionTypeType
 
-```python
-from mypy_boto3_fsx.literals import AdministrativeActionTypeType, ...
+def get_value() -> AdministrativeActionTypeType:
+    return "FILE_SYSTEM_ALIAS_ASSOCIATION"
 ```
 
 - [AdministrativeActionTypeType](./literals.md#administrativeactiontypetype)
@@ -252,18 +152,22 @@ from mypy_boto3_fsx.literals import AdministrativeActionTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_fsx.type_defs import ActiveDirectoryBackupAttributesTypeDef
 
-```python
-from mypy_boto3_fsx.type_defs import ActiveDirectoryBackupAttributesTypeDef, ...
+def get_value() -> ActiveDirectoryBackupAttributesTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
 - [ActiveDirectoryBackupAttributesTypeDef](./type_defs.md#activedirectorybackupattributestypedef)
@@ -335,6 +239,7 @@ from mypy_boto3_fsx.type_defs import ActiveDirectoryBackupAttributesTypeDef, ...
 - [DeleteVolumeOpenZFSConfigurationTypeDef](./type_defs.md#deletevolumeopenzfsconfigurationtypedef)
 - [DeleteVolumeRequestRequestTypeDef](./type_defs.md#deletevolumerequestrequesttypedef)
 - [DeleteVolumeResponseTypeDef](./type_defs.md#deletevolumeresponsetypedef)
+- [DescribeBackupsRequestDescribeBackupsPaginateTypeDef](./type_defs.md#describebackupsrequestdescribebackupspaginatetypedef)
 - [DescribeBackupsRequestRequestTypeDef](./type_defs.md#describebackupsrequestrequesttypedef)
 - [DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)
 - [DescribeDataRepositoryAssociationsRequestRequestTypeDef](./type_defs.md#describedatarepositoryassociationsrequestrequesttypedef)
@@ -343,6 +248,7 @@ from mypy_boto3_fsx.type_defs import ActiveDirectoryBackupAttributesTypeDef, ...
 - [DescribeDataRepositoryTasksResponseTypeDef](./type_defs.md#describedatarepositorytasksresponsetypedef)
 - [DescribeFileSystemAliasesRequestRequestTypeDef](./type_defs.md#describefilesystemaliasesrequestrequesttypedef)
 - [DescribeFileSystemAliasesResponseTypeDef](./type_defs.md#describefilesystemaliasesresponsetypedef)
+- [DescribeFileSystemsRequestDescribeFileSystemsPaginateTypeDef](./type_defs.md#describefilesystemsrequestdescribefilesystemspaginatetypedef)
 - [DescribeFileSystemsRequestRequestTypeDef](./type_defs.md#describefilesystemsrequestrequesttypedef)
 - [DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef)
 - [DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef)
@@ -360,6 +266,7 @@ from mypy_boto3_fsx.type_defs import ActiveDirectoryBackupAttributesTypeDef, ...
 - [FileSystemTypeDef](./type_defs.md#filesystemtypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
 - [LifecycleTransitionReasonTypeDef](./type_defs.md#lifecycletransitionreasontypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [LustreFileSystemConfigurationTypeDef](./type_defs.md#lustrefilesystemconfigurationtypedef)
@@ -417,3 +324,4 @@ from mypy_boto3_fsx.type_defs import ActiveDirectoryBackupAttributesTypeDef, ...
 - [WindowsAuditLogConfigurationTypeDef](./type_defs.md#windowsauditlogconfigurationtypedef)
 - [WindowsAuditLogCreateConfigurationTypeDef](./type_defs.md#windowsauditlogcreateconfigurationtypedef)
 - [WindowsFileSystemConfigurationTypeDef](./type_defs.md#windowsfilesystemconfigurationtypedef)
+

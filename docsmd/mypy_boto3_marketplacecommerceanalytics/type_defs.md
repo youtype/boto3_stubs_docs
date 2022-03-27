@@ -1,104 +1,125 @@
-<a id="typed-dictionaries-for-boto3-marketplacecommerceanalytics-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 MarketplaceCommerceAnalytics module
+> [Index](../README.md) > [MarketplaceCommerceAnalytics](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [MarketplaceCommerceAnalytics](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
-type annotations stubs module
-[mypy-boto3-marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
-
-- [Typed dictionaries for boto3 MarketplaceCommerceAnalytics module](#typed-dictionaries-for-boto3-marketplacecommerceanalytics-module)
-  - [GenerateDataSetRequestRequestTypeDef](#generatedatasetrequestrequesttypedef)
-  - [GenerateDataSetResultTypeDef](#generatedatasetresulttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartSupportDataExportRequestRequestTypeDef](#startsupportdataexportrequestrequesttypedef)
-  - [StartSupportDataExportResultTypeDef](#startsupportdataexportresulttypedef)
-
-<a id="generatedatasetrequestrequesttypedef"></a>
+    Auto-generated documentation for [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
+    type annotations stubs module [mypy-boto3-marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 ## GenerateDataSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetRequestRequestTypeDef
+
+def get_value() -> GenerateDataSetRequestRequestTypeDef:
+    return {
+        "dataSetType": ...,
+        "dataSetPublicationDate": ...,
+        "roleNameArn": ...,
+        "destinationS3BucketName": ...,
+        "snsTopicArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GenerateDataSetRequestRequestTypeDef(TypedDict):
+    dataSetType: DataSetTypeType,  # (1)
+    dataSetPublicationDate: Union[datetime, str],
+    roleNameArn: str,
+    destinationS3BucketName: str,
+    snsTopicArn: str,
+    destinationS3Prefix: NotRequired[str],
+    customerDefinedValues: NotRequired[Mapping[str, str]],
+```
 
-- `dataSetType`: [DataSetTypeType](./literals.md#datasettypetype)
-- `dataSetPublicationDate`: `Union`\[`datetime`, `str`\]
-- `roleNameArn`: `str`
-- `destinationS3BucketName`: `str`
-- `snsTopicArn`: `str`
-
-Optional fields:
-
-- `destinationS3Prefix`: `str`
-- `customerDefinedValues`: `Mapping`\[`str`, `str`\]
-
-<a id="generatedatasetresulttypedef"></a>
-
+1. See [:material-code-brackets: DataSetTypeType](./literals.md#datasettypetype) 
 ## GenerateDataSetResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplacecommerceanalytics.type_defs import GenerateDataSetResultTypeDef
+
+def get_value() -> GenerateDataSetResultTypeDef:
+    return {
+        "dataSetRequestId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GenerateDataSetResultTypeDef(TypedDict):
+    dataSetRequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `dataSetRequestId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplacecommerceanalytics.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startsupportdataexportrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartSupportDataExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplacecommerceanalytics.type_defs import StartSupportDataExportRequestRequestTypeDef
+
+def get_value() -> StartSupportDataExportRequestRequestTypeDef:
+    return {
+        "dataSetType": ...,
+        "fromDate": ...,
+        "roleNameArn": ...,
+        "destinationS3BucketName": ...,
+        "snsTopicArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSupportDataExportRequestRequestTypeDef(TypedDict):
+    dataSetType: SupportDataSetTypeType,  # (1)
+    fromDate: Union[datetime, str],
+    roleNameArn: str,
+    destinationS3BucketName: str,
+    snsTopicArn: str,
+    destinationS3Prefix: NotRequired[str],
+    customerDefinedValues: NotRequired[Mapping[str, str]],
+```
 
-- `dataSetType`: [SupportDataSetTypeType](./literals.md#supportdatasettypetype)
-- `fromDate`: `Union`\[`datetime`, `str`\]
-- `roleNameArn`: `str`
-- `destinationS3BucketName`: `str`
-- `snsTopicArn`: `str`
-
-Optional fields:
-
-- `destinationS3Prefix`: `str`
-- `customerDefinedValues`: `Mapping`\[`str`, `str`\]
-
-<a id="startsupportdataexportresulttypedef"></a>
-
+1. See [:material-code-brackets: SupportDataSetTypeType](./literals.md#supportdatasettypetype) 
 ## StartSupportDataExportResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplacecommerceanalytics.type_defs import StartSupportDataExportResultTypeDef
+
+def get_value() -> StartSupportDataExportResultTypeDef:
+    return {
+        "dataSetRequestId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSupportDataExportResultTypeDef(TypedDict):
+    dataSetRequestId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `dataSetRequestId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

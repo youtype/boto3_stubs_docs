@@ -1,92 +1,139 @@
-<a id="examples-for-boto3-codedeploy-module"></a>
-
-# Examples for boto3 CodeDeploy module
+# Examples
 
 > [Index](../README.md) > [CodeDeploy](./README.md) > Examples
 
-- [Examples for boto3 CodeDeploy module](#examples-for-boto3-codedeploy-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+    type annotations stubs module [mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[codedeploy]` package installed.
 
-Write your `CodeDeploy` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `CodeDeploy` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CodeDeployClient
-# and provides type checking and code completion
-client = session.client("codedeploy")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_tags_to_on_premises_instances()
 
-# paginator has type ListApplicationRevisionsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_application_revisions")
-for item in paginator.paginate(...):
-    # item has type ListApplicationRevisionsOutputTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type DeploymentSuccessfulWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("deployment_successful")
-waiter.wait()
-```
+    client = session.client("codedeploy")  # (1)
+    result = client.batch_get_application_revisions()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [CodeDeployClient](./client.md)
+    2. result: [:material-code-braces: BatchGetApplicationRevisionsOutputTypeDef](./type_defs.md#batchgetapplicationrevisionsoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("codedeploy")  # (1)
+
+    paginator = client.get_paginator("list_application_revisions")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CodeDeployClient](./client.md)
+    2. paginator: [ListApplicationRevisionsPaginator](./paginators.md#listapplicationrevisionspaginator)
+    3. item: [:material-code-braces: ListApplicationRevisionsOutputTypeDef](./type_defs.md#listapplicationrevisionsoutputtypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("codedeploy")  # (1)
+
+    waiter = client.get_waiter("deployment_successful")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [CodeDeployClient](./client.md)
+    2. waiter: [DeploymentSuccessfulWaiter](./waiters.md#deploymentsuccessfulwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[codedeploy]` or a standalone `mypy_boto3_codedeploy`
-package, you have to explicitly specify `client: CodeDeployClient` type
-annotation.
+With `boto3-stubs-lite[codedeploy]`
+or a standalone `mypy_boto3_codedeploy` package, you have to explicitly specify `client: CodeDeployClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_codedeploy.client import CodeDeployClient
-from mypy_boto3_codedeploy.paginator import ListApplicationRevisionsPaginator
-from mypy_boto3_codedeploy.waiter import DeploymentSuccessfulWaiter
-from mypy_boto3_codedeploy.literals import PaginatorName
-from mypy_boto3_codedeploy.literals import WaiterName
-from mypy_boto3_codedeploy.type_defs import None
-from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CodeDeployClient = session.client("codedeploy")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.add_tags_to_on_premises_instances()
+    from mypy_boto3_codedeploy.client import CodeDeployClient
+    from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsOutputTypeDef
+    from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_application_revisions"
-paginator: ListApplicationRevisionsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListApplicationRevisionsOutputTypeDef
-    print(item)
 
-waiter_name: WaiterName = "deployment_successful"
-waiter: DeploymentSuccessfulWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: CodeDeployClient = session.client("codedeploy")
+
+    kwargs: BatchGetApplicationRevisionsInputRequestTypeDef = {...}
+    result: BatchGetApplicationRevisionsOutputTypeDef = client.batch_get_application_revisions(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_codedeploy.client import CodeDeployClient
+    from mypy_boto3_codedeploy.paginator import ListApplicationRevisionsPaginator
+    from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsOutputTypeDef
+
+
+    session = Session()
+    client: CodeDeployClient = session.client("codedeploy")
+
+    paginator: ListApplicationRevisionsPaginator = client.get_paginator("list_application_revisions")
+    for item in paginator.paginate(...):
+        item: ListApplicationRevisionsOutputTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_codedeploy.client import CodeDeployClient
+    from mypy_boto3_codedeploy.waiter import DeploymentSuccessfulWaiter
+
+    session = Session()
+    client: CodeDeployClient = session.client("codedeploy")
+
+    waiter: DeploymentSuccessfulWaiter = client.get_waiter("deployment_successful")
+    waiter.wait()
+    ```
+
+

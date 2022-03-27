@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-groundstation-module"></a>
-
-# Type annotations for boto3 GroundStation module
+#  GroundStation module
 
 > [Index](../README.md) > GroundStation
 
-Auto-generated documentation for
-[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
-type annotations stubs module
-[mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+!!! note ""
 
-- [Type annotations for boto3 GroundStation module](#type-annotations-for-boto3-groundstation-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GroundStationClient](#groundstationclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+    type annotations stubs module [mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `GroundStation`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[groundstation]'
 python -m pip install mypy-boto3-groundstation
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,82 +42,37 @@ python -m pip install mypy-boto3-groundstation
 python -m pip uninstall -y mypy-boto3-groundstation
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="groundstationclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GroundStationClient
 
-Type annotations for `boto3.client("groundstation")` as
-[GroundStationClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("groundstation")` as [GroundStationClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_groundstation.client import GroundStationClient
+
+def get_client() -> GroundStationClient:
+    return Session().cleint("groundstation")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_contact](./client.md#cancel_contact)
-- [create_config](./client.md#create_config)
-- [create_dataflow_endpoint_group](./client.md#create_dataflow_endpoint_group)
-- [create_mission_profile](./client.md#create_mission_profile)
-- [delete_config](./client.md#delete_config)
-- [delete_dataflow_endpoint_group](./client.md#delete_dataflow_endpoint_group)
-- [delete_mission_profile](./client.md#delete_mission_profile)
-- [describe_contact](./client.md#describe_contact)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_config](./client.md#get_config)
-- [get_dataflow_endpoint_group](./client.md#get_dataflow_endpoint_group)
-- [get_minute_usage](./client.md#get_minute_usage)
-- [get_mission_profile](./client.md#get_mission_profile)
-- [get_paginator](./client.md#get_paginator)
-- [get_satellite](./client.md#get_satellite)
-- [list_configs](./client.md#list_configs)
-- [list_contacts](./client.md#list_contacts)
-- [list_dataflow_endpoint_groups](./client.md#list_dataflow_endpoint_groups)
-- [list_ground_stations](./client.md#list_ground_stations)
-- [list_mission_profiles](./client.md#list_mission_profiles)
-- [list_satellites](./client.md#list_satellites)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [reserve_contact](./client.md#reserve_contact)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_config](./client.md#update_config)
-- [update_mission_profile](./client.md#update_mission_profile)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-GroundStationClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- DependencyException
-- InvalidParameterException
-- ResourceLimitExceededException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("groundstation").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("groundstation").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_groundstation.paginator import ListConfigsPaginator, ...
+from mypy_boto3_groundstation.paginator import ListConfigsPaginator
+
+def get_list_configs_paginator() -> ListConfigsPaginator:
+    return Session().client("groundstation").get_paginator("list_configs"))
 ```
 
 - [ListConfigsPaginator](./paginators.md#listconfigspaginator)
@@ -149,16 +82,23 @@ from mypy_boto3_groundstation.paginator import ListConfigsPaginator, ...
 - [ListMissionProfilesPaginator](./paginators.md#listmissionprofilespaginator)
 - [ListSatellitesPaginator](./paginators.md#listsatellitespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_groundstation.literals import AngleUnitsType
 
-```python
-from mypy_boto3_groundstation.literals import AngleUnitsType, ...
+def get_value() -> AngleUnitsType:
+    return "DEGREE_ANGLE"
 ```
 
 - [AngleUnitsType](./literals.md#angleunitstype)
@@ -180,18 +120,22 @@ from mypy_boto3_groundstation.literals import AngleUnitsType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_groundstation.type_defs import AntennaDemodDecodeDetailsTypeDef
 
-```python
-from mypy_boto3_groundstation.type_defs import AntennaDemodDecodeDetailsTypeDef, ...
+def get_value() -> AntennaDemodDecodeDetailsTypeDef:
+    return {
+        "outputNode": ...,
+    }
 ```
 
 - [AntennaDemodDecodeDetailsTypeDef](./type_defs.md#antennademoddecodedetailstypedef)
@@ -237,16 +181,22 @@ from mypy_boto3_groundstation.type_defs import AntennaDemodDecodeDetailsTypeDef,
 - [GetSatelliteRequestRequestTypeDef](./type_defs.md#getsatelliterequestrequesttypedef)
 - [GetSatelliteResponseTypeDef](./type_defs.md#getsatelliteresponsetypedef)
 - [GroundStationDataTypeDef](./type_defs.md#groundstationdatatypedef)
+- [ListConfigsRequestListConfigsPaginateTypeDef](./type_defs.md#listconfigsrequestlistconfigspaginatetypedef)
 - [ListConfigsRequestRequestTypeDef](./type_defs.md#listconfigsrequestrequesttypedef)
 - [ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef)
+- [ListContactsRequestListContactsPaginateTypeDef](./type_defs.md#listcontactsrequestlistcontactspaginatetypedef)
 - [ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef)
 - [ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef)
+- [ListDataflowEndpointGroupsRequestListDataflowEndpointGroupsPaginateTypeDef](./type_defs.md#listdataflowendpointgroupsrequestlistdataflowendpointgroupspaginatetypedef)
 - [ListDataflowEndpointGroupsRequestRequestTypeDef](./type_defs.md#listdataflowendpointgroupsrequestrequesttypedef)
 - [ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef)
+- [ListGroundStationsRequestListGroundStationsPaginateTypeDef](./type_defs.md#listgroundstationsrequestlistgroundstationspaginatetypedef)
 - [ListGroundStationsRequestRequestTypeDef](./type_defs.md#listgroundstationsrequestrequesttypedef)
 - [ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef)
+- [ListMissionProfilesRequestListMissionProfilesPaginateTypeDef](./type_defs.md#listmissionprofilesrequestlistmissionprofilespaginatetypedef)
 - [ListMissionProfilesRequestRequestTypeDef](./type_defs.md#listmissionprofilesrequestrequesttypedef)
 - [ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef)
+- [ListSatellitesRequestListSatellitesPaginateTypeDef](./type_defs.md#listsatellitesrequestlistsatellitespaginatetypedef)
 - [ListSatellitesRequestRequestTypeDef](./type_defs.md#listsatellitesrequestrequesttypedef)
 - [ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -270,3 +220,4 @@ from mypy_boto3_groundstation.type_defs import AntennaDemodDecodeDetailsTypeDef,
 - [UpdateMissionProfileRequestRequestTypeDef](./type_defs.md#updatemissionprofilerequestrequesttypedef)
 - [UplinkEchoConfigTypeDef](./type_defs.md#uplinkechoconfigtypedef)
 - [UplinkSpectrumConfigTypeDef](./type_defs.md#uplinkspectrumconfigtypedef)
+

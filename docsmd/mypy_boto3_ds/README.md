@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-directoryservice-module"></a>
-
-# Type annotations for boto3 DirectoryService module
+#  DirectoryService module
 
 > [Index](../README.md) > DirectoryService
 
-Auto-generated documentation for
-[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
-type annotations stubs module
-[mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
+!!! note ""
 
-- [Type annotations for boto3 DirectoryService module](#type-annotations-for-boto3-directoryservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DirectoryServiceClient](#directoryserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+    type annotations stubs module [mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DirectoryService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ds]'
 python -m pip install mypy-boto3-ds
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,150 +42,37 @@ python -m pip install mypy-boto3-ds
 python -m pip uninstall -y mypy-boto3-ds
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="directoryserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DirectoryServiceClient
 
-Type annotations for `boto3.client("ds")` as
-[DirectoryServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ds")` as [DirectoryServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ds.client import DirectoryServiceClient
+
+def get_client() -> DirectoryServiceClient:
+    return Session().cleint("ds")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_shared_directory](./client.md#accept_shared_directory)
-- [add_ip_routes](./client.md#add_ip_routes)
-- [add_region](./client.md#add_region)
-- [add_tags_to_resource](./client.md#add_tags_to_resource)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_schema_extension](./client.md#cancel_schema_extension)
-- [connect_directory](./client.md#connect_directory)
-- [create_alias](./client.md#create_alias)
-- [create_computer](./client.md#create_computer)
-- [create_conditional_forwarder](./client.md#create_conditional_forwarder)
-- [create_directory](./client.md#create_directory)
-- [create_log_subscription](./client.md#create_log_subscription)
-- [create_microsoft_ad](./client.md#create_microsoft_ad)
-- [create_snapshot](./client.md#create_snapshot)
-- [create_trust](./client.md#create_trust)
-- [delete_conditional_forwarder](./client.md#delete_conditional_forwarder)
-- [delete_directory](./client.md#delete_directory)
-- [delete_log_subscription](./client.md#delete_log_subscription)
-- [delete_snapshot](./client.md#delete_snapshot)
-- [delete_trust](./client.md#delete_trust)
-- [deregister_certificate](./client.md#deregister_certificate)
-- [deregister_event_topic](./client.md#deregister_event_topic)
-- [describe_certificate](./client.md#describe_certificate)
-- [describe_client_authentication_settings](./client.md#describe_client_authentication_settings)
-- [describe_conditional_forwarders](./client.md#describe_conditional_forwarders)
-- [describe_directories](./client.md#describe_directories)
-- [describe_domain_controllers](./client.md#describe_domain_controllers)
-- [describe_event_topics](./client.md#describe_event_topics)
-- [describe_ldaps_settings](./client.md#describe_ldaps_settings)
-- [describe_regions](./client.md#describe_regions)
-- [describe_shared_directories](./client.md#describe_shared_directories)
-- [describe_snapshots](./client.md#describe_snapshots)
-- [describe_trusts](./client.md#describe_trusts)
-- [disable_client_authentication](./client.md#disable_client_authentication)
-- [disable_ldaps](./client.md#disable_ldaps)
-- [disable_radius](./client.md#disable_radius)
-- [disable_sso](./client.md#disable_sso)
-- [enable_client_authentication](./client.md#enable_client_authentication)
-- [enable_ldaps](./client.md#enable_ldaps)
-- [enable_radius](./client.md#enable_radius)
-- [enable_sso](./client.md#enable_sso)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_directory_limits](./client.md#get_directory_limits)
-- [get_paginator](./client.md#get_paginator)
-- [get_snapshot_limits](./client.md#get_snapshot_limits)
-- [list_certificates](./client.md#list_certificates)
-- [list_ip_routes](./client.md#list_ip_routes)
-- [list_log_subscriptions](./client.md#list_log_subscriptions)
-- [list_schema_extensions](./client.md#list_schema_extensions)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [register_certificate](./client.md#register_certificate)
-- [register_event_topic](./client.md#register_event_topic)
-- [reject_shared_directory](./client.md#reject_shared_directory)
-- [remove_ip_routes](./client.md#remove_ip_routes)
-- [remove_region](./client.md#remove_region)
-- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
-- [reset_user_password](./client.md#reset_user_password)
-- [restore_from_snapshot](./client.md#restore_from_snapshot)
-- [share_directory](./client.md#share_directory)
-- [start_schema_extension](./client.md#start_schema_extension)
-- [unshare_directory](./client.md#unshare_directory)
-- [update_conditional_forwarder](./client.md#update_conditional_forwarder)
-- [update_number_of_domain_controllers](./client.md#update_number_of_domain_controllers)
-- [update_radius](./client.md#update_radius)
-- [update_trust](./client.md#update_trust)
-- [verify_trust](./client.md#verify_trust)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-DirectoryServiceClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- AuthenticationFailedException
-- CertificateAlreadyExistsException
-- CertificateDoesNotExistException
-- CertificateInUseException
-- CertificateLimitExceededException
-- ClientError
-- ClientException
-- DirectoryAlreadyInRegionException
-- DirectoryAlreadySharedException
-- DirectoryDoesNotExistException
-- DirectoryLimitExceededException
-- DirectoryNotSharedException
-- DirectoryUnavailableException
-- DomainControllerLimitExceededException
-- EntityAlreadyExistsException
-- EntityDoesNotExistException
-- InsufficientPermissionsException
-- InvalidCertificateException
-- InvalidClientAuthStatusException
-- InvalidLDAPSStatusException
-- InvalidNextTokenException
-- InvalidParameterException
-- InvalidPasswordException
-- InvalidTargetException
-- IpRouteLimitExceededException
-- NoAvailableCertificateException
-- OrganizationsException
-- RegionLimitExceededException
-- ServiceException
-- ShareLimitExceededException
-- SnapshotLimitExceededException
-- TagLimitExceededException
-- UnsupportedOperationException
-- UserDoesNotExistException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("ds").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("ds").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ds.paginator import DescribeDirectoriesPaginator, ...
+from mypy_boto3_ds.paginator import DescribeDirectoriesPaginator
+
+def get_describe_directories_paginator() -> DescribeDirectoriesPaginator:
+    return Session().client("ds").get_paginator("describe_directories"))
 ```
 
 - [DescribeDirectoriesPaginator](./paginators.md#describedirectoriespaginator)
@@ -220,16 +85,23 @@ from mypy_boto3_ds.paginator import DescribeDirectoriesPaginator, ...
 - [ListSchemaExtensionsPaginator](./paginators.md#listschemaextensionspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ds.literals import CertificateStateType
 
-```python
-from mypy_boto3_ds.literals import CertificateStateType, ...
+def get_value() -> CertificateStateType:
+    return "DeregisterFailed"
 ```
 
 - [CertificateStateType](./literals.md#certificatestatetype)
@@ -272,18 +144,22 @@ from mypy_boto3_ds.literals import CertificateStateType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ds.type_defs import AcceptSharedDirectoryRequestRequestTypeDef
 
-```python
-from mypy_boto3_ds.type_defs import AcceptSharedDirectoryRequestRequestTypeDef, ...
+def get_value() -> AcceptSharedDirectoryRequestRequestTypeDef:
+    return {
+        "SharedDirectoryId": ...,
+    }
 ```
 
 - [AcceptSharedDirectoryRequestRequestTypeDef](./type_defs.md#acceptshareddirectoryrequestrequesttypedef)
@@ -331,8 +207,10 @@ from mypy_boto3_ds.type_defs import AcceptSharedDirectoryRequestRequestTypeDef, 
 - [DescribeClientAuthenticationSettingsResultTypeDef](./type_defs.md#describeclientauthenticationsettingsresulttypedef)
 - [DescribeConditionalForwardersRequestRequestTypeDef](./type_defs.md#describeconditionalforwardersrequestrequesttypedef)
 - [DescribeConditionalForwardersResultTypeDef](./type_defs.md#describeconditionalforwardersresulttypedef)
+- [DescribeDirectoriesRequestDescribeDirectoriesPaginateTypeDef](./type_defs.md#describedirectoriesrequestdescribedirectoriespaginatetypedef)
 - [DescribeDirectoriesRequestRequestTypeDef](./type_defs.md#describedirectoriesrequestrequesttypedef)
 - [DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef)
+- [DescribeDomainControllersRequestDescribeDomainControllersPaginateTypeDef](./type_defs.md#describedomaincontrollersrequestdescribedomaincontrollerspaginatetypedef)
 - [DescribeDomainControllersRequestRequestTypeDef](./type_defs.md#describedomaincontrollersrequestrequesttypedef)
 - [DescribeDomainControllersResultTypeDef](./type_defs.md#describedomaincontrollersresulttypedef)
 - [DescribeEventTopicsRequestRequestTypeDef](./type_defs.md#describeeventtopicsrequestrequesttypedef)
@@ -341,10 +219,13 @@ from mypy_boto3_ds.type_defs import AcceptSharedDirectoryRequestRequestTypeDef, 
 - [DescribeLDAPSSettingsResultTypeDef](./type_defs.md#describeldapssettingsresulttypedef)
 - [DescribeRegionsRequestRequestTypeDef](./type_defs.md#describeregionsrequestrequesttypedef)
 - [DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef)
+- [DescribeSharedDirectoriesRequestDescribeSharedDirectoriesPaginateTypeDef](./type_defs.md#describeshareddirectoriesrequestdescribeshareddirectoriespaginatetypedef)
 - [DescribeSharedDirectoriesRequestRequestTypeDef](./type_defs.md#describeshareddirectoriesrequestrequesttypedef)
 - [DescribeSharedDirectoriesResultTypeDef](./type_defs.md#describeshareddirectoriesresulttypedef)
+- [DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef](./type_defs.md#describesnapshotsrequestdescribesnapshotspaginatetypedef)
 - [DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef)
 - [DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef)
+- [DescribeTrustsRequestDescribeTrustsPaginateTypeDef](./type_defs.md#describetrustsrequestdescribetrustspaginatetypedef)
 - [DescribeTrustsRequestRequestTypeDef](./type_defs.md#describetrustsrequestrequesttypedef)
 - [DescribeTrustsResultTypeDef](./type_defs.md#describetrustsresulttypedef)
 - [DirectoryConnectSettingsDescriptionTypeDef](./type_defs.md#directoryconnectsettingsdescriptiontypedef)
@@ -371,12 +252,16 @@ from mypy_boto3_ds.type_defs import AcceptSharedDirectoryRequestRequestTypeDef, 
 - [LDAPSSettingInfoTypeDef](./type_defs.md#ldapssettinginfotypedef)
 - [ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef)
 - [ListCertificatesResultTypeDef](./type_defs.md#listcertificatesresulttypedef)
+- [ListIpRoutesRequestListIpRoutesPaginateTypeDef](./type_defs.md#listiproutesrequestlistiproutespaginatetypedef)
 - [ListIpRoutesRequestRequestTypeDef](./type_defs.md#listiproutesrequestrequesttypedef)
 - [ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef)
+- [ListLogSubscriptionsRequestListLogSubscriptionsPaginateTypeDef](./type_defs.md#listlogsubscriptionsrequestlistlogsubscriptionspaginatetypedef)
 - [ListLogSubscriptionsRequestRequestTypeDef](./type_defs.md#listlogsubscriptionsrequestrequesttypedef)
 - [ListLogSubscriptionsResultTypeDef](./type_defs.md#listlogsubscriptionsresulttypedef)
+- [ListSchemaExtensionsRequestListSchemaExtensionsPaginateTypeDef](./type_defs.md#listschemaextensionsrequestlistschemaextensionspaginatetypedef)
 - [ListSchemaExtensionsRequestRequestTypeDef](./type_defs.md#listschemaextensionsrequestrequesttypedef)
 - [ListSchemaExtensionsResultTypeDef](./type_defs.md#listschemaextensionsresulttypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef)
 - [LogSubscriptionTypeDef](./type_defs.md#logsubscriptiontypedef)
@@ -417,3 +302,4 @@ from mypy_boto3_ds.type_defs import AcceptSharedDirectoryRequestRequestTypeDef, 
 - [UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef)
 - [VerifyTrustRequestRequestTypeDef](./type_defs.md#verifytrustrequestrequesttypedef)
 - [VerifyTrustResultTypeDef](./type_defs.md#verifytrustresulttypedef)
+

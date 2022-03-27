@@ -1,559 +1,700 @@
-<a id="typed-dictionaries-for-boto3-iotdeviceadvisor-module"></a>
-
-# Typed dictionaries for boto3 IoTDeviceAdvisor module
+# Typed dictionaries
 
 > [Index](../README.md) > [IoTDeviceAdvisor](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
-type annotations stubs module
-[mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IoTDeviceAdvisor module](#typed-dictionaries-for-boto3-iotdeviceadvisor-module)
-  - [CreateSuiteDefinitionRequestRequestTypeDef](#createsuitedefinitionrequestrequesttypedef)
-  - [CreateSuiteDefinitionResponseTypeDef](#createsuitedefinitionresponsetypedef)
-  - [DeleteSuiteDefinitionRequestRequestTypeDef](#deletesuitedefinitionrequestrequesttypedef)
-  - [DeviceUnderTestTypeDef](#deviceundertesttypedef)
-  - [GetEndpointRequestRequestTypeDef](#getendpointrequestrequesttypedef)
-  - [GetEndpointResponseTypeDef](#getendpointresponsetypedef)
-  - [GetSuiteDefinitionRequestRequestTypeDef](#getsuitedefinitionrequestrequesttypedef)
-  - [GetSuiteDefinitionResponseTypeDef](#getsuitedefinitionresponsetypedef)
-  - [GetSuiteRunReportRequestRequestTypeDef](#getsuiterunreportrequestrequesttypedef)
-  - [GetSuiteRunReportResponseTypeDef](#getsuiterunreportresponsetypedef)
-  - [GetSuiteRunRequestRequestTypeDef](#getsuiterunrequestrequesttypedef)
-  - [GetSuiteRunResponseTypeDef](#getsuiterunresponsetypedef)
-  - [GroupResultTypeDef](#groupresulttypedef)
-  - [ListSuiteDefinitionsRequestRequestTypeDef](#listsuitedefinitionsrequestrequesttypedef)
-  - [ListSuiteDefinitionsResponseTypeDef](#listsuitedefinitionsresponsetypedef)
-  - [ListSuiteRunsRequestRequestTypeDef](#listsuiterunsrequestrequesttypedef)
-  - [ListSuiteRunsResponseTypeDef](#listsuiterunsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartSuiteRunRequestRequestTypeDef](#startsuiterunrequestrequesttypedef)
-  - [StartSuiteRunResponseTypeDef](#startsuiterunresponsetypedef)
-  - [StopSuiteRunRequestRequestTypeDef](#stopsuiterunrequestrequesttypedef)
-  - [SuiteDefinitionConfigurationTypeDef](#suitedefinitionconfigurationtypedef)
-  - [SuiteDefinitionInformationTypeDef](#suitedefinitioninformationtypedef)
-  - [SuiteRunConfigurationTypeDef](#suiterunconfigurationtypedef)
-  - [SuiteRunInformationTypeDef](#suiteruninformationtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TestCaseRunTypeDef](#testcaseruntypedef)
-  - [TestResultTypeDef](#testresulttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateSuiteDefinitionRequestRequestTypeDef](#updatesuitedefinitionrequestrequesttypedef)
-  - [UpdateSuiteDefinitionResponseTypeDef](#updatesuitedefinitionresponsetypedef)
-
-<a id="createsuitedefinitionrequestrequesttypedef"></a>
+    Auto-generated documentation for [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+    type annotations stubs module [mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 ## CreateSuiteDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionRequestRequestTypeDef
+
+def get_value() -> CreateSuiteDefinitionRequestRequestTypeDef:
+    return {
+        "suiteDefinitionConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateSuiteDefinitionRequestRequestTypeDef(TypedDict):
+    suiteDefinitionConfiguration: NotRequired[SuiteDefinitionConfigurationTypeDef],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `suiteDefinitionConfiguration`:
-  [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createsuitedefinitionresponsetypedef"></a>
-
+1. See [:material-code-braces: SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef) 
 ## CreateSuiteDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import CreateSuiteDefinitionResponseTypeDef
+
+def get_value() -> CreateSuiteDefinitionResponseTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+        "suiteDefinitionArn": ...,
+        "suiteDefinitionName": ...,
+        "createdAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSuiteDefinitionResponseTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteDefinitionArn: str,
+    suiteDefinitionName: str,
+    createdAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `suiteDefinitionId`: `str`
-- `suiteDefinitionArn`: `str`
-- `suiteDefinitionName`: `str`
-- `createdAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesuitedefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSuiteDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import DeleteSuiteDefinitionRequestRequestTypeDef
+
+def get_value() -> DeleteSuiteDefinitionRequestRequestTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+    }
 ```
 
-Required fields:
-
-- `suiteDefinitionId`: `str`
-
-<a id="deviceundertesttypedef"></a>
+```python title="Definition"
+class DeleteSuiteDefinitionRequestRequestTypeDef(TypedDict):
+    suiteDefinitionId: str,
+```
 
 ## DeviceUnderTestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import DeviceUnderTestTypeDef
+
+def get_value() -> DeviceUnderTestTypeDef:
+    return {
+        "thingArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `thingArn`: `str`
-- `certificateArn`: `str`
-
-<a id="getendpointrequestrequesttypedef"></a>
+```python title="Definition"
+class DeviceUnderTestTypeDef(TypedDict):
+    thingArn: NotRequired[str],
+    certificateArn: NotRequired[str],
+```
 
 ## GetEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import GetEndpointRequestRequestTypeDef
+
+def get_value() -> GetEndpointRequestRequestTypeDef:
+    return {
+        "thingArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `thingArn`: `str`
-- `certificateArn`: `str`
-
-<a id="getendpointresponsetypedef"></a>
+```python title="Definition"
+class GetEndpointRequestRequestTypeDef(TypedDict):
+    thingArn: NotRequired[str],
+    certificateArn: NotRequired[str],
+```
 
 ## GetEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import GetEndpointResponseTypeDef
+
+def get_value() -> GetEndpointResponseTypeDef:
+    return {
+        "endpoint": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEndpointResponseTypeDef(TypedDict):
+    endpoint: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `endpoint`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsuitedefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSuiteDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteDefinitionRequestRequestTypeDef
+
+def get_value() -> GetSuiteDefinitionRequestRequestTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+    }
 ```
 
-Required fields:
-
-- `suiteDefinitionId`: `str`
-
-Optional fields:
-
-- `suiteDefinitionVersion`: `str`
-
-<a id="getsuitedefinitionresponsetypedef"></a>
+```python title="Definition"
+class GetSuiteDefinitionRequestRequestTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteDefinitionVersion: NotRequired[str],
+```
 
 ## GetSuiteDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteDefinitionResponseTypeDef
+
+def get_value() -> GetSuiteDefinitionResponseTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+        "suiteDefinitionArn": ...,
+        "suiteDefinitionVersion": ...,
+        "latestVersion": ...,
+        "suiteDefinitionConfiguration": ...,
+        "createdAt": ...,
+        "lastModifiedAt": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSuiteDefinitionResponseTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteDefinitionArn: str,
+    suiteDefinitionVersion: str,
+    latestVersion: str,
+    suiteDefinitionConfiguration: SuiteDefinitionConfigurationTypeDef,  # (1)
+    createdAt: datetime,
+    lastModifiedAt: datetime,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `suiteDefinitionId`: `str`
-- `suiteDefinitionArn`: `str`
-- `suiteDefinitionVersion`: `str`
-- `latestVersion`: `str`
-- `suiteDefinitionConfiguration`:
-  [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
-- `createdAt`: `datetime`
-- `lastModifiedAt`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsuiterunreportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSuiteRunReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunReportRequestRequestTypeDef
+
+def get_value() -> GetSuiteRunReportRequestRequestTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+        "suiteRunId": ...,
+    }
 ```
 
-Required fields:
-
-- `suiteDefinitionId`: `str`
-- `suiteRunId`: `str`
-
-<a id="getsuiterunreportresponsetypedef"></a>
+```python title="Definition"
+class GetSuiteRunReportRequestRequestTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteRunId: str,
+```
 
 ## GetSuiteRunReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunReportResponseTypeDef
+
+def get_value() -> GetSuiteRunReportResponseTypeDef:
+    return {
+        "qualificationReportDownloadUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSuiteRunReportResponseTypeDef(TypedDict):
+    qualificationReportDownloadUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `qualificationReportDownloadUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsuiterunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSuiteRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunRequestRequestTypeDef
+
+def get_value() -> GetSuiteRunRequestRequestTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+        "suiteRunId": ...,
+    }
 ```
 
-Required fields:
-
-- `suiteDefinitionId`: `str`
-- `suiteRunId`: `str`
-
-<a id="getsuiterunresponsetypedef"></a>
+```python title="Definition"
+class GetSuiteRunRequestRequestTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteRunId: str,
+```
 
 ## GetSuiteRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import GetSuiteRunResponseTypeDef
+
+def get_value() -> GetSuiteRunResponseTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+        "suiteDefinitionVersion": ...,
+        "suiteRunId": ...,
+        "suiteRunArn": ...,
+        "suiteRunConfiguration": ...,
+        "testResult": ...,
+        "startTime": ...,
+        "endTime": ...,
+        "status": ...,
+        "errorReason": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSuiteRunResponseTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteDefinitionVersion: str,
+    suiteRunId: str,
+    suiteRunArn: str,
+    suiteRunConfiguration: SuiteRunConfigurationTypeDef,  # (1)
+    testResult: TestResultTypeDef,  # (2)
+    startTime: datetime,
+    endTime: datetime,
+    status: SuiteRunStatusType,  # (3)
+    errorReason: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `suiteDefinitionId`: `str`
-- `suiteDefinitionVersion`: `str`
-- `suiteRunId`: `str`
-- `suiteRunArn`: `str`
-- `suiteRunConfiguration`:
-  [SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef)
-- `testResult`: [TestResultTypeDef](./type_defs.md#testresulttypedef)
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `status`: [SuiteRunStatusType](./literals.md#suiterunstatustype)
-- `errorReason`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="groupresulttypedef"></a>
-
+1. See [:material-code-braces: SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef) 
+2. See [:material-code-braces: TestResultTypeDef](./type_defs.md#testresulttypedef) 
+3. See [:material-code-brackets: SuiteRunStatusType](./literals.md#suiterunstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import GroupResultTypeDef
+
+def get_value() -> GroupResultTypeDef:
+    return {
+        "groupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GroupResultTypeDef(TypedDict):
+    groupId: NotRequired[str],
+    groupName: NotRequired[str],
+    tests: NotRequired[List[TestCaseRunTypeDef]],  # (1)
+```
 
-- `groupId`: `str`
-- `groupName`: `str`
-- `tests`: `List`\[[TestCaseRunTypeDef](./type_defs.md#testcaseruntypedef)\]
-
-<a id="listsuitedefinitionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestCaseRunTypeDef](./type_defs.md#testcaseruntypedef) 
 ## ListSuiteDefinitionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteDefinitionsRequestRequestTypeDef
+
+def get_value() -> ListSuiteDefinitionsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listsuitedefinitionsresponsetypedef"></a>
+```python title="Definition"
+class ListSuiteDefinitionsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListSuiteDefinitionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteDefinitionsResponseTypeDef
+
+def get_value() -> ListSuiteDefinitionsResponseTypeDef:
+    return {
+        "suiteDefinitionInformationList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSuiteDefinitionsResponseTypeDef(TypedDict):
+    suiteDefinitionInformationList: List[SuiteDefinitionInformationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `suiteDefinitionInformationList`:
-  `List`\[[SuiteDefinitionInformationTypeDef](./type_defs.md#suitedefinitioninformationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsuiterunsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SuiteDefinitionInformationTypeDef](./type_defs.md#suitedefinitioninformationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSuiteRunsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteRunsRequestRequestTypeDef
+
+def get_value() -> ListSuiteRunsRequestRequestTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `suiteDefinitionId`: `str`
-- `suiteDefinitionVersion`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listsuiterunsresponsetypedef"></a>
+```python title="Definition"
+class ListSuiteRunsRequestRequestTypeDef(TypedDict):
+    suiteDefinitionId: NotRequired[str],
+    suiteDefinitionVersion: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListSuiteRunsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import ListSuiteRunsResponseTypeDef
+
+def get_value() -> ListSuiteRunsResponseTypeDef:
+    return {
+        "suiteRunsList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSuiteRunsResponseTypeDef(TypedDict):
+    suiteRunsList: List[SuiteRunInformationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `suiteRunsList`:
-  `List`\[[SuiteRunInformationTypeDef](./type_defs.md#suiteruninformationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SuiteRunInformationTypeDef](./type_defs.md#suiteruninformationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startsuiterunrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartSuiteRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import StartSuiteRunRequestRequestTypeDef
+
+def get_value() -> StartSuiteRunRequestRequestTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSuiteRunRequestRequestTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteDefinitionVersion: NotRequired[str],
+    suiteRunConfiguration: NotRequired[SuiteRunConfigurationTypeDef],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `suiteDefinitionId`: `str`
-
-Optional fields:
-
-- `suiteDefinitionVersion`: `str`
-- `suiteRunConfiguration`:
-  [SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="startsuiterunresponsetypedef"></a>
-
+1. See [:material-code-braces: SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef) 
 ## StartSuiteRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import StartSuiteRunResponseTypeDef
+
+def get_value() -> StartSuiteRunResponseTypeDef:
+    return {
+        "suiteRunId": ...,
+        "suiteRunArn": ...,
+        "createdAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSuiteRunResponseTypeDef(TypedDict):
+    suiteRunId: str,
+    suiteRunArn: str,
+    createdAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `suiteRunId`: `str`
-- `suiteRunArn`: `str`
-- `createdAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopsuiterunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopSuiteRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import StopSuiteRunRequestRequestTypeDef
+
+def get_value() -> StopSuiteRunRequestRequestTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+        "suiteRunId": ...,
+    }
 ```
 
-Required fields:
-
-- `suiteDefinitionId`: `str`
-- `suiteRunId`: `str`
-
-<a id="suitedefinitionconfigurationtypedef"></a>
+```python title="Definition"
+class StopSuiteRunRequestRequestTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteRunId: str,
+```
 
 ## SuiteDefinitionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import SuiteDefinitionConfigurationTypeDef
+
+def get_value() -> SuiteDefinitionConfigurationTypeDef:
+    return {
+        "suiteDefinitionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SuiteDefinitionConfigurationTypeDef(TypedDict):
+    suiteDefinitionName: NotRequired[str],
+    devices: NotRequired[Sequence[DeviceUnderTestTypeDef]],  # (1)
+    intendedForQualification: NotRequired[bool],
+    rootGroup: NotRequired[str],
+    devicePermissionRoleArn: NotRequired[str],
+```
 
-- `suiteDefinitionName`: `str`
-- `devices`:
-  `Sequence`\[[DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)\]
-- `intendedForQualification`: `bool`
-- `rootGroup`: `str`
-- `devicePermissionRoleArn`: `str`
-
-<a id="suitedefinitioninformationtypedef"></a>
-
+1. See [:material-code-braces: DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef) 
 ## SuiteDefinitionInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import SuiteDefinitionInformationTypeDef
+
+def get_value() -> SuiteDefinitionInformationTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SuiteDefinitionInformationTypeDef(TypedDict):
+    suiteDefinitionId: NotRequired[str],
+    suiteDefinitionName: NotRequired[str],
+    defaultDevices: NotRequired[List[DeviceUnderTestTypeDef]],  # (1)
+    intendedForQualification: NotRequired[bool],
+    createdAt: NotRequired[datetime],
+```
 
-- `suiteDefinitionId`: `str`
-- `suiteDefinitionName`: `str`
-- `defaultDevices`:
-  `List`\[[DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)\]
-- `intendedForQualification`: `bool`
-- `createdAt`: `datetime`
-
-<a id="suiterunconfigurationtypedef"></a>
-
+1. See [:material-code-braces: DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef) 
 ## SuiteRunConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import SuiteRunConfigurationTypeDef
+
+def get_value() -> SuiteRunConfigurationTypeDef:
+    return {
+        "primaryDevice": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SuiteRunConfigurationTypeDef(TypedDict):
+    primaryDevice: NotRequired[DeviceUnderTestTypeDef],  # (1)
+    selectedTestList: NotRequired[List[str]],
+    parallelRun: NotRequired[bool],
+```
 
-- `primaryDevice`:
-  [DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)
-- `selectedTestList`: `List`\[`str`\]
-- `parallelRun`: `bool`
-
-<a id="suiteruninformationtypedef"></a>
-
+1. See [:material-code-braces: DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef) 
 ## SuiteRunInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import SuiteRunInformationTypeDef
+
+def get_value() -> SuiteRunInformationTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SuiteRunInformationTypeDef(TypedDict):
+    suiteDefinitionId: NotRequired[str],
+    suiteDefinitionVersion: NotRequired[str],
+    suiteDefinitionName: NotRequired[str],
+    suiteRunId: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    startedAt: NotRequired[datetime],
+    endAt: NotRequired[datetime],
+    status: NotRequired[SuiteRunStatusType],  # (1)
+    passed: NotRequired[int],
+    failed: NotRequired[int],
+```
 
-- `suiteDefinitionId`: `str`
-- `suiteDefinitionVersion`: `str`
-- `suiteDefinitionName`: `str`
-- `suiteRunId`: `str`
-- `createdAt`: `datetime`
-- `startedAt`: `datetime`
-- `endAt`: `datetime`
-- `status`: [SuiteRunStatusType](./literals.md#suiterunstatustype)
-- `passed`: `int`
-- `failed`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SuiteRunStatusType](./literals.md#suiterunstatustype) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="testcaseruntypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TestCaseRunTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import TestCaseRunTypeDef
+
+def get_value() -> TestCaseRunTypeDef:
+    return {
+        "testCaseRunId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestCaseRunTypeDef(TypedDict):
+    testCaseRunId: NotRequired[str],
+    testCaseDefinitionId: NotRequired[str],
+    testCaseDefinitionName: NotRequired[str],
+    status: NotRequired[StatusType],  # (1)
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    logUrl: NotRequired[str],
+    warnings: NotRequired[str],
+    failure: NotRequired[str],
+```
 
-- `testCaseRunId`: `str`
-- `testCaseDefinitionId`: `str`
-- `testCaseDefinitionName`: `str`
-- `status`: [StatusType](./literals.md#statustype)
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `logUrl`: `str`
-- `warnings`: `str`
-- `failure`: `str`
-
-<a id="testresulttypedef"></a>
-
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## TestResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import TestResultTypeDef
+
+def get_value() -> TestResultTypeDef:
+    return {
+        "groups": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestResultTypeDef(TypedDict):
+    groups: NotRequired[List[GroupResultTypeDef]],  # (1)
+```
 
-- `groups`: `List`\[[GroupResultTypeDef](./type_defs.md#groupresulttypedef)\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupResultTypeDef](./type_defs.md#groupresulttypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatesuitedefinitionrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateSuiteDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import UpdateSuiteDefinitionRequestRequestTypeDef
+
+def get_value() -> UpdateSuiteDefinitionRequestRequestTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSuiteDefinitionRequestRequestTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteDefinitionConfiguration: NotRequired[SuiteDefinitionConfigurationTypeDef],  # (1)
+```
 
-- `suiteDefinitionId`: `str`
-
-Optional fields:
-
-- `suiteDefinitionConfiguration`:
-  [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
-
-<a id="updatesuitedefinitionresponsetypedef"></a>
-
+1. See [:material-code-braces: SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef) 
 ## UpdateSuiteDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotdeviceadvisor.type_defs import UpdateSuiteDefinitionResponseTypeDef
+
+def get_value() -> UpdateSuiteDefinitionResponseTypeDef:
+    return {
+        "suiteDefinitionId": ...,
+        "suiteDefinitionArn": ...,
+        "suiteDefinitionName": ...,
+        "suiteDefinitionVersion": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSuiteDefinitionResponseTypeDef(TypedDict):
+    suiteDefinitionId: str,
+    suiteDefinitionArn: str,
+    suiteDefinitionName: str,
+    suiteDefinitionVersion: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `suiteDefinitionId`: `str`
-- `suiteDefinitionArn`: `str`
-- `suiteDefinitionName`: `str`
-- `suiteDefinitionVersion`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

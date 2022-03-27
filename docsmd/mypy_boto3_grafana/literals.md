@@ -1,567 +1,604 @@
-<a id="literals-for-boto3-managedgrafana-module"></a>
-
-# Literals for boto3 ManagedGrafana module
+# Literals
 
 > [Index](../README.md) > [ManagedGrafana](./README.md) > Literals
 
-Auto-generated documentation for
-[ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
-type annotations stubs module
-[mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
+!!! note ""
 
-- [Literals for boto3 ManagedGrafana module](#literals-for-boto3-managedgrafana-module)
-  - [AccountAccessTypeType](#accountaccesstypetype)
-  - [AuthenticationProviderTypesType](#authenticationprovidertypestype)
-  - [DataSourceTypeType](#datasourcetypetype)
-  - [LicenseTypeType](#licensetypetype)
-  - [ListPermissionsPaginatorName](#listpermissionspaginatorname)
-  - [ListWorkspacesPaginatorName](#listworkspacespaginatorname)
-  - [NotificationDestinationTypeType](#notificationdestinationtypetype)
-  - [PermissionTypeType](#permissiontypetype)
-  - [RoleType](#roletype)
-  - [SamlConfigurationStatusType](#samlconfigurationstatustype)
-  - [UpdateActionType](#updateactiontype)
-  - [UserTypeType](#usertypetype)
-  - [WorkspaceStatusType](#workspacestatustype)
-  - [ManagedGrafanaServiceName](#managedgrafanaservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="accountaccesstypetype"></a>
+    Auto-generated documentation for [ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
+    type annotations stubs module [mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
 
 ## AccountAccessTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import AccountAccessTypeType
+
+def get_value() -> AccountAccessTypeType:
+    return "CURRENT_ACCOUNT"
 ```
 
-Values:
-
-- `CURRENT_ACCOUNT`
-- `ORGANIZATION`
-
-<a id="authenticationprovidertypestype"></a>
-
+```python title="Definition"
+AccountAccessTypeType = Literal[
+    "CURRENT_ACCOUNT",
+    "ORGANIZATION",
+]
+```
 ## AuthenticationProviderTypesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import AuthenticationProviderTypesType
+
+def get_value() -> AuthenticationProviderTypesType:
+    return "AWS_SSO"
 ```
 
-Values:
-
-- `AWS_SSO`
-- `SAML`
-
-<a id="datasourcetypetype"></a>
-
+```python title="Definition"
+AuthenticationProviderTypesType = Literal[
+    "AWS_SSO",
+    "SAML",
+]
+```
 ## DataSourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import DataSourceTypeType
+
+def get_value() -> DataSourceTypeType:
+    return "AMAZON_OPENSEARCH_SERVICE"
 ```
 
-Values:
-
-- `AMAZON_OPENSEARCH_SERVICE`
-- `CLOUDWATCH`
-- `PROMETHEUS`
-- `SITEWISE`
-- `TIMESTREAM`
-- `XRAY`
-
-<a id="licensetypetype"></a>
-
+```python title="Definition"
+DataSourceTypeType = Literal[
+    "AMAZON_OPENSEARCH_SERVICE",
+    "CLOUDWATCH",
+    "PROMETHEUS",
+    "SITEWISE",
+    "TIMESTREAM",
+    "XRAY",
+]
+```
 ## LicenseTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import LicenseTypeType
+
+def get_value() -> LicenseTypeType:
+    return "ENTERPRISE"
 ```
 
-Values:
-
-- `ENTERPRISE`
-- `ENTERPRISE_FREE_TRIAL`
-
-<a id="listpermissionspaginatorname"></a>
-
+```python title="Definition"
+LicenseTypeType = Literal[
+    "ENTERPRISE",
+    "ENTERPRISE_FREE_TRIAL",
+]
+```
 ## ListPermissionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import ListPermissionsPaginatorName
+
+def get_value() -> ListPermissionsPaginatorName:
+    return "list_permissions"
 ```
 
-Values:
-
-- `list_permissions`
-
-<a id="listworkspacespaginatorname"></a>
-
+```python title="Definition"
+ListPermissionsPaginatorName = Literal[
+    "list_permissions",
+]
+```
 ## ListWorkspacesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import ListWorkspacesPaginatorName
+
+def get_value() -> ListWorkspacesPaginatorName:
+    return "list_workspaces"
 ```
 
-Values:
-
-- `list_workspaces`
-
-<a id="notificationdestinationtypetype"></a>
-
+```python title="Definition"
+ListWorkspacesPaginatorName = Literal[
+    "list_workspaces",
+]
+```
 ## NotificationDestinationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import NotificationDestinationTypeType
+
+def get_value() -> NotificationDestinationTypeType:
+    return "SNS"
 ```
 
-Values:
-
-- `SNS`
-
-<a id="permissiontypetype"></a>
-
+```python title="Definition"
+NotificationDestinationTypeType = Literal[
+    "SNS",
+]
+```
 ## PermissionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import PermissionTypeType
+
+def get_value() -> PermissionTypeType:
+    return "CUSTOMER_MANAGED"
 ```
 
-Values:
-
-- `CUSTOMER_MANAGED`
-- `SERVICE_MANAGED`
-
-<a id="roletype"></a>
-
+```python title="Definition"
+PermissionTypeType = Literal[
+    "CUSTOMER_MANAGED",
+    "SERVICE_MANAGED",
+]
+```
 ## RoleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import RoleType
+
+def get_value() -> RoleType:
+    return "ADMIN"
 ```
 
-Values:
-
-- `ADMIN`
-- `EDITOR`
-
-<a id="samlconfigurationstatustype"></a>
-
+```python title="Definition"
+RoleType = Literal[
+    "ADMIN",
+    "EDITOR",
+]
+```
 ## SamlConfigurationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import SamlConfigurationStatusType
+
+def get_value() -> SamlConfigurationStatusType:
+    return "CONFIGURED"
 ```
 
-Values:
-
-- `CONFIGURED`
-- `NOT_CONFIGURED`
-
-<a id="updateactiontype"></a>
-
+```python title="Definition"
+SamlConfigurationStatusType = Literal[
+    "CONFIGURED",
+    "NOT_CONFIGURED",
+]
+```
 ## UpdateActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import UpdateActionType
+
+def get_value() -> UpdateActionType:
+    return "ADD"
 ```
 
-Values:
-
-- `ADD`
-- `REVOKE`
-
-<a id="usertypetype"></a>
-
+```python title="Definition"
+UpdateActionType = Literal[
+    "ADD",
+    "REVOKE",
+]
+```
 ## UserTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import UserTypeType
+
+def get_value() -> UserTypeType:
+    return "SSO_GROUP"
 ```
 
-Values:
-
-- `SSO_GROUP`
-- `SSO_USER`
-
-<a id="workspacestatustype"></a>
-
+```python title="Definition"
+UserTypeType = Literal[
+    "SSO_GROUP",
+    "SSO_USER",
+]
+```
 ## WorkspaceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import WorkspaceStatusType
+
+def get_value() -> WorkspaceStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `CREATION_FAILED`
-- `DELETING`
-- `DELETION_FAILED`
-- `FAILED`
-- `LICENSE_REMOVAL_FAILED`
-- `UPDATE_FAILED`
-- `UPDATING`
-- `UPGRADE_FAILED`
-- `UPGRADING`
-
-<a id="managedgrafanaservicename"></a>
-
+```python title="Definition"
+WorkspaceStatusType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "CREATION_FAILED",
+    "DELETING",
+    "DELETION_FAILED",
+    "FAILED",
+    "LICENSE_REMOVAL_FAILED",
+    "UPDATE_FAILED",
+    "UPDATING",
+    "UPGRADE_FAILED",
+    "UPGRADING",
+]
+```
 ## ManagedGrafanaServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import ManagedGrafanaServiceName
+
+def get_value() -> ManagedGrafanaServiceName:
+    return "grafana"
 ```
 
-Values:
-
-- `grafana`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ManagedGrafanaServiceName = Literal[
+    "grafana",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_grafana.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_permissions"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_permissions",
+    "list_workspaces",
+]
+```
+## RegionName
 
-- `list_permissions`
-- `list_workspaces`
+```python title="Usage Example"
+from mypy_boto3_grafana.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "eu-central-1",
+    "eu-west-1",
+    "eu-west-2",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-servicediscovery-module"></a>
-
-# Type annotations for boto3 ServiceDiscovery module
+#  ServiceDiscovery module
 
 > [Index](../README.md) > ServiceDiscovery
 
-Auto-generated documentation for
-[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
-type annotations stubs module
-[mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+!!! note ""
 
-- [Type annotations for boto3 ServiceDiscovery module](#type-annotations-for-boto3-servicediscovery-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ServiceDiscoveryClient](#servicediscoveryclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
+    type annotations stubs module [mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ServiceDiscovery`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[servicediscovery]'
 python -m pip install mypy-boto3-servicediscovery
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,93 +42,37 @@ python -m pip install mypy-boto3-servicediscovery
 python -m pip uninstall -y mypy-boto3-servicediscovery
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="servicediscoveryclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ServiceDiscoveryClient
 
-Type annotations for `boto3.client("servicediscovery")` as
-[ServiceDiscoveryClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("servicediscovery")` as [ServiceDiscoveryClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_servicediscovery.client import ServiceDiscoveryClient
+
+def get_client() -> ServiceDiscoveryClient:
+    return Session().cleint("servicediscovery")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_http_namespace](./client.md#create_http_namespace)
-- [create_private_dns_namespace](./client.md#create_private_dns_namespace)
-- [create_public_dns_namespace](./client.md#create_public_dns_namespace)
-- [create_service](./client.md#create_service)
-- [delete_namespace](./client.md#delete_namespace)
-- [delete_service](./client.md#delete_service)
-- [deregister_instance](./client.md#deregister_instance)
-- [discover_instances](./client.md#discover_instances)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_instance](./client.md#get_instance)
-- [get_instances_health_status](./client.md#get_instances_health_status)
-- [get_namespace](./client.md#get_namespace)
-- [get_operation](./client.md#get_operation)
-- [get_paginator](./client.md#get_paginator)
-- [get_service](./client.md#get_service)
-- [list_instances](./client.md#list_instances)
-- [list_namespaces](./client.md#list_namespaces)
-- [list_operations](./client.md#list_operations)
-- [list_services](./client.md#list_services)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [register_instance](./client.md#register_instance)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_http_namespace](./client.md#update_http_namespace)
-- [update_instance_custom_health_status](./client.md#update_instance_custom_health_status)
-- [update_private_dns_namespace](./client.md#update_private_dns_namespace)
-- [update_public_dns_namespace](./client.md#update_public_dns_namespace)
-- [update_service](./client.md#update_service)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ServiceDiscoveryClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- CustomHealthNotFound
-- DuplicateRequest
-- InstanceNotFound
-- InvalidInput
-- NamespaceAlreadyExists
-- NamespaceNotFound
-- OperationNotFound
-- RequestLimitExceeded
-- ResourceInUse
-- ResourceLimitExceeded
-- ResourceNotFoundException
-- ServiceAlreadyExists
-- ServiceNotFound
-- TooManyTagsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("servicediscovery").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("servicediscovery").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_servicediscovery.paginator import ListInstancesPaginator, ...
+from mypy_boto3_servicediscovery.paginator import ListInstancesPaginator
+
+def get_list_instances_paginator() -> ListInstancesPaginator:
+    return Session().client("servicediscovery").get_paginator("list_instances"))
 ```
 
 - [ListInstancesPaginator](./paginators.md#listinstancespaginator)
@@ -158,16 +80,23 @@ from mypy_boto3_servicediscovery.paginator import ListInstancesPaginator, ...
 - [ListOperationsPaginator](./paginators.md#listoperationspaginator)
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_servicediscovery.literals import CustomHealthStatusType
 
-```python
-from mypy_boto3_servicediscovery.literals import CustomHealthStatusType, ...
+def get_value() -> CustomHealthStatusType:
+    return "HEALTHY"
 ```
 
 - [CustomHealthStatusType](./literals.md#customhealthstatustype)
@@ -194,18 +123,22 @@ from mypy_boto3_servicediscovery.literals import CustomHealthStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_servicediscovery.type_defs import CreateHttpNamespaceRequestRequestTypeDef
 
-```python
-from mypy_boto3_servicediscovery.type_defs import CreateHttpNamespaceRequestRequestTypeDef, ...
+def get_value() -> CreateHttpNamespaceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [CreateHttpNamespaceRequestRequestTypeDef](./type_defs.md#createhttpnamespacerequestrequesttypedef)
@@ -244,12 +177,16 @@ from mypy_boto3_servicediscovery.type_defs import CreateHttpNamespaceRequestRequ
 - [HttpPropertiesTypeDef](./type_defs.md#httppropertiestypedef)
 - [InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef)
 - [InstanceTypeDef](./type_defs.md#instancetypedef)
+- [ListInstancesRequestListInstancesPaginateTypeDef](./type_defs.md#listinstancesrequestlistinstancespaginatetypedef)
 - [ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef)
 - [ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)
+- [ListNamespacesRequestListNamespacesPaginateTypeDef](./type_defs.md#listnamespacesrequestlistnamespacespaginatetypedef)
 - [ListNamespacesRequestRequestTypeDef](./type_defs.md#listnamespacesrequestrequesttypedef)
 - [ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef)
+- [ListOperationsRequestListOperationsPaginateTypeDef](./type_defs.md#listoperationsrequestlistoperationspaginatetypedef)
 - [ListOperationsRequestRequestTypeDef](./type_defs.md#listoperationsrequestrequesttypedef)
 - [ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef)
+- [ListServicesRequestListServicesPaginateTypeDef](./type_defs.md#listservicesrequestlistservicespaginatetypedef)
 - [ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef)
 - [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -293,3 +230,4 @@ from mypy_boto3_servicediscovery.type_defs import CreateHttpNamespaceRequestRequ
 - [UpdatePublicDnsNamespaceResponseTypeDef](./type_defs.md#updatepublicdnsnamespaceresponsetypedef)
 - [UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef)
 - [UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef)
+

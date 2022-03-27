@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-configservice-module"></a>
-
-# Type annotations for boto3 ConfigService module
+#  ConfigService module
 
 > [Index](../README.md) > ConfigService
 
-Auto-generated documentation for
-[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
-type annotations stubs module
-[mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
+!!! note ""
 
-- [Type annotations for boto3 ConfigService module](#type-annotations-for-boto3-configservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ConfigServiceClient](#configserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+    type annotations stubs module [mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ConfigService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[config]'
 python -m pip install mypy-boto3-config
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,194 +42,37 @@ python -m pip install mypy-boto3-config
 python -m pip uninstall -y mypy-boto3-config
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="configserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ConfigServiceClient
 
-Type annotations for `boto3.client("config")` as
-[ConfigServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("config")` as [ConfigServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_config.client import ConfigServiceClient
+
+def get_client() -> ConfigServiceClient:
+    return Session().cleint("config")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_get_aggregate_resource_config](./client.md#batch_get_aggregate_resource_config)
-- [batch_get_resource_config](./client.md#batch_get_resource_config)
-- [can_paginate](./client.md#can_paginate)
-- [delete_aggregation_authorization](./client.md#delete_aggregation_authorization)
-- [delete_config_rule](./client.md#delete_config_rule)
-- [delete_configuration_aggregator](./client.md#delete_configuration_aggregator)
-- [delete_configuration_recorder](./client.md#delete_configuration_recorder)
-- [delete_conformance_pack](./client.md#delete_conformance_pack)
-- [delete_delivery_channel](./client.md#delete_delivery_channel)
-- [delete_evaluation_results](./client.md#delete_evaluation_results)
-- [delete_organization_config_rule](./client.md#delete_organization_config_rule)
-- [delete_organization_conformance_pack](./client.md#delete_organization_conformance_pack)
-- [delete_pending_aggregation_request](./client.md#delete_pending_aggregation_request)
-- [delete_remediation_configuration](./client.md#delete_remediation_configuration)
-- [delete_remediation_exceptions](./client.md#delete_remediation_exceptions)
-- [delete_resource_config](./client.md#delete_resource_config)
-- [delete_retention_configuration](./client.md#delete_retention_configuration)
-- [delete_stored_query](./client.md#delete_stored_query)
-- [deliver_config_snapshot](./client.md#deliver_config_snapshot)
-- [describe_aggregate_compliance_by_config_rules](./client.md#describe_aggregate_compliance_by_config_rules)
-- [describe_aggregate_compliance_by_conformance_packs](./client.md#describe_aggregate_compliance_by_conformance_packs)
-- [describe_aggregation_authorizations](./client.md#describe_aggregation_authorizations)
-- [describe_compliance_by_config_rule](./client.md#describe_compliance_by_config_rule)
-- [describe_compliance_by_resource](./client.md#describe_compliance_by_resource)
-- [describe_config_rule_evaluation_status](./client.md#describe_config_rule_evaluation_status)
-- [describe_config_rules](./client.md#describe_config_rules)
-- [describe_configuration_aggregator_sources_status](./client.md#describe_configuration_aggregator_sources_status)
-- [describe_configuration_aggregators](./client.md#describe_configuration_aggregators)
-- [describe_configuration_recorder_status](./client.md#describe_configuration_recorder_status)
-- [describe_configuration_recorders](./client.md#describe_configuration_recorders)
-- [describe_conformance_pack_compliance](./client.md#describe_conformance_pack_compliance)
-- [describe_conformance_pack_status](./client.md#describe_conformance_pack_status)
-- [describe_conformance_packs](./client.md#describe_conformance_packs)
-- [describe_delivery_channel_status](./client.md#describe_delivery_channel_status)
-- [describe_delivery_channels](./client.md#describe_delivery_channels)
-- [describe_organization_config_rule_statuses](./client.md#describe_organization_config_rule_statuses)
-- [describe_organization_config_rules](./client.md#describe_organization_config_rules)
-- [describe_organization_conformance_pack_statuses](./client.md#describe_organization_conformance_pack_statuses)
-- [describe_organization_conformance_packs](./client.md#describe_organization_conformance_packs)
-- [describe_pending_aggregation_requests](./client.md#describe_pending_aggregation_requests)
-- [describe_remediation_configurations](./client.md#describe_remediation_configurations)
-- [describe_remediation_exceptions](./client.md#describe_remediation_exceptions)
-- [describe_remediation_execution_status](./client.md#describe_remediation_execution_status)
-- [describe_retention_configurations](./client.md#describe_retention_configurations)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_aggregate_compliance_details_by_config_rule](./client.md#get_aggregate_compliance_details_by_config_rule)
-- [get_aggregate_config_rule_compliance_summary](./client.md#get_aggregate_config_rule_compliance_summary)
-- [get_aggregate_conformance_pack_compliance_summary](./client.md#get_aggregate_conformance_pack_compliance_summary)
-- [get_aggregate_discovered_resource_counts](./client.md#get_aggregate_discovered_resource_counts)
-- [get_aggregate_resource_config](./client.md#get_aggregate_resource_config)
-- [get_compliance_details_by_config_rule](./client.md#get_compliance_details_by_config_rule)
-- [get_compliance_details_by_resource](./client.md#get_compliance_details_by_resource)
-- [get_compliance_summary_by_config_rule](./client.md#get_compliance_summary_by_config_rule)
-- [get_compliance_summary_by_resource_type](./client.md#get_compliance_summary_by_resource_type)
-- [get_conformance_pack_compliance_details](./client.md#get_conformance_pack_compliance_details)
-- [get_conformance_pack_compliance_summary](./client.md#get_conformance_pack_compliance_summary)
-- [get_custom_rule_policy](./client.md#get_custom_rule_policy)
-- [get_discovered_resource_counts](./client.md#get_discovered_resource_counts)
-- [get_organization_config_rule_detailed_status](./client.md#get_organization_config_rule_detailed_status)
-- [get_organization_conformance_pack_detailed_status](./client.md#get_organization_conformance_pack_detailed_status)
-- [get_organization_custom_rule_policy](./client.md#get_organization_custom_rule_policy)
-- [get_paginator](./client.md#get_paginator)
-- [get_resource_config_history](./client.md#get_resource_config_history)
-- [get_stored_query](./client.md#get_stored_query)
-- [list_aggregate_discovered_resources](./client.md#list_aggregate_discovered_resources)
-- [list_discovered_resources](./client.md#list_discovered_resources)
-- [list_stored_queries](./client.md#list_stored_queries)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_aggregation_authorization](./client.md#put_aggregation_authorization)
-- [put_config_rule](./client.md#put_config_rule)
-- [put_configuration_aggregator](./client.md#put_configuration_aggregator)
-- [put_configuration_recorder](./client.md#put_configuration_recorder)
-- [put_conformance_pack](./client.md#put_conformance_pack)
-- [put_delivery_channel](./client.md#put_delivery_channel)
-- [put_evaluations](./client.md#put_evaluations)
-- [put_external_evaluation](./client.md#put_external_evaluation)
-- [put_organization_config_rule](./client.md#put_organization_config_rule)
-- [put_organization_conformance_pack](./client.md#put_organization_conformance_pack)
-- [put_remediation_configurations](./client.md#put_remediation_configurations)
-- [put_remediation_exceptions](./client.md#put_remediation_exceptions)
-- [put_resource_config](./client.md#put_resource_config)
-- [put_retention_configuration](./client.md#put_retention_configuration)
-- [put_stored_query](./client.md#put_stored_query)
-- [select_aggregate_resource_config](./client.md#select_aggregate_resource_config)
-- [select_resource_config](./client.md#select_resource_config)
-- [start_config_rules_evaluation](./client.md#start_config_rules_evaluation)
-- [start_configuration_recorder](./client.md#start_configuration_recorder)
-- [start_remediation_execution](./client.md#start_remediation_execution)
-- [stop_configuration_recorder](./client.md#stop_configuration_recorder)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ConfigServiceClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConformancePackTemplateValidationException
-- InsufficientDeliveryPolicyException
-- InsufficientPermissionsException
-- InvalidConfigurationRecorderNameException
-- InvalidDeliveryChannelNameException
-- InvalidExpressionException
-- InvalidLimitException
-- InvalidNextTokenException
-- InvalidParameterValueException
-- InvalidRecordingGroupException
-- InvalidResultTokenException
-- InvalidRoleException
-- InvalidS3KeyPrefixException
-- InvalidS3KmsKeyArnException
-- InvalidSNSTopicARNException
-- InvalidTimeRangeException
-- LastDeliveryChannelDeleteFailedException
-- LimitExceededException
-- MaxActiveResourcesExceededException
-- MaxNumberOfConfigRulesExceededException
-- MaxNumberOfConfigurationRecordersExceededException
-- MaxNumberOfConformancePacksExceededException
-- MaxNumberOfDeliveryChannelsExceededException
-- MaxNumberOfOrganizationConfigRulesExceededException
-- MaxNumberOfOrganizationConformancePacksExceededException
-- MaxNumberOfRetentionConfigurationsExceededException
-- NoAvailableConfigurationRecorderException
-- NoAvailableDeliveryChannelException
-- NoAvailableOrganizationException
-- NoRunningConfigurationRecorderException
-- NoSuchBucketException
-- NoSuchConfigRuleException
-- NoSuchConfigRuleInConformancePackException
-- NoSuchConfigurationAggregatorException
-- NoSuchConfigurationRecorderException
-- NoSuchConformancePackException
-- NoSuchDeliveryChannelException
-- NoSuchOrganizationConfigRuleException
-- NoSuchOrganizationConformancePackException
-- NoSuchRemediationConfigurationException
-- NoSuchRemediationExceptionException
-- NoSuchRetentionConfigurationException
-- OrganizationAccessDeniedException
-- OrganizationAllFeaturesNotEnabledException
-- OrganizationConformancePackTemplateValidationException
-- OversizedConfigurationItemException
-- RemediationInProgressException
-- ResourceConcurrentModificationException
-- ResourceInUseException
-- ResourceNotDiscoveredException
-- ResourceNotFoundException
-- TooManyTagsException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("config").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("config").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_config.paginator import DescribeAggregateComplianceByConfigRulesPaginator, ...
+from mypy_boto3_config.paginator import DescribeAggregateComplianceByConfigRulesPaginator
+
+def get_describe_aggregate_compliance_by_config_rules_paginator() -> DescribeAggregateComplianceByConfigRulesPaginator:
+    return Session().client("config").get_paginator("describe_aggregate_compliance_by_config_rules"))
 ```
 
 - [DescribeAggregateComplianceByConfigRulesPaginator](./paginators.md#describeaggregatecompliancebyconfigrulespaginator)
@@ -285,16 +106,23 @@ from mypy_boto3_config.paginator import DescribeAggregateComplianceByConfigRules
 - [SelectAggregateResourceConfigPaginator](./paginators.md#selectaggregateresourceconfigpaginator)
 - [SelectResourceConfigPaginator](./paginators.md#selectresourceconfigpaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_config.literals import AggregateConformancePackComplianceSummaryGroupKeyType
 
-```python
-from mypy_boto3_config.literals import AggregateConformancePackComplianceSummaryGroupKeyType, ...
+def get_value() -> AggregateConformancePackComplianceSummaryGroupKeyType:
+    return "ACCOUNT_ID"
 ```
 
 - [AggregateConformancePackComplianceSummaryGroupKeyType](./literals.md#aggregateconformancepackcompliancesummarygroupkeytype)
@@ -359,18 +187,22 @@ from mypy_boto3_config.literals import AggregateConformancePackComplianceSummary
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef
 
-```python
-from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef, ...
+def get_value() -> AccountAggregationSourceTypeDef:
+    return {
+        "AccountIds": ...,
+    }
 ```
 
 - [AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)
@@ -437,22 +269,31 @@ from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef, ...
 - [DeliverConfigSnapshotResponseTypeDef](./type_defs.md#deliverconfigsnapshotresponsetypedef)
 - [DeliveryChannelStatusTypeDef](./type_defs.md#deliverychannelstatustypedef)
 - [DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef)
+- [DescribeAggregateComplianceByConfigRulesRequestDescribeAggregateComplianceByConfigRulesPaginateTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesrequestdescribeaggregatecompliancebyconfigrulespaginatetypedef)
 - [DescribeAggregateComplianceByConfigRulesRequestRequestTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesrequestrequesttypedef)
 - [DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef)
+- [DescribeAggregateComplianceByConformancePacksRequestDescribeAggregateComplianceByConformancePacksPaginateTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksrequestdescribeaggregatecompliancebyconformancepackspaginatetypedef)
 - [DescribeAggregateComplianceByConformancePacksRequestRequestTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksrequestrequesttypedef)
 - [DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef)
+- [DescribeAggregationAuthorizationsRequestDescribeAggregationAuthorizationsPaginateTypeDef](./type_defs.md#describeaggregationauthorizationsrequestdescribeaggregationauthorizationspaginatetypedef)
 - [DescribeAggregationAuthorizationsRequestRequestTypeDef](./type_defs.md#describeaggregationauthorizationsrequestrequesttypedef)
 - [DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef)
+- [DescribeComplianceByConfigRuleRequestDescribeComplianceByConfigRulePaginateTypeDef](./type_defs.md#describecompliancebyconfigrulerequestdescribecompliancebyconfigrulepaginatetypedef)
 - [DescribeComplianceByConfigRuleRequestRequestTypeDef](./type_defs.md#describecompliancebyconfigrulerequestrequesttypedef)
 - [DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef)
+- [DescribeComplianceByResourceRequestDescribeComplianceByResourcePaginateTypeDef](./type_defs.md#describecompliancebyresourcerequestdescribecompliancebyresourcepaginatetypedef)
 - [DescribeComplianceByResourceRequestRequestTypeDef](./type_defs.md#describecompliancebyresourcerequestrequesttypedef)
 - [DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef)
+- [DescribeConfigRuleEvaluationStatusRequestDescribeConfigRuleEvaluationStatusPaginateTypeDef](./type_defs.md#describeconfigruleevaluationstatusrequestdescribeconfigruleevaluationstatuspaginatetypedef)
 - [DescribeConfigRuleEvaluationStatusRequestRequestTypeDef](./type_defs.md#describeconfigruleevaluationstatusrequestrequesttypedef)
 - [DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef)
+- [DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef](./type_defs.md#describeconfigrulesrequestdescribeconfigrulespaginatetypedef)
 - [DescribeConfigRulesRequestRequestTypeDef](./type_defs.md#describeconfigrulesrequestrequesttypedef)
 - [DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef)
+- [DescribeConfigurationAggregatorSourcesStatusRequestDescribeConfigurationAggregatorSourcesStatusPaginateTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusrequestdescribeconfigurationaggregatorsourcesstatuspaginatetypedef)
 - [DescribeConfigurationAggregatorSourcesStatusRequestRequestTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusrequestrequesttypedef)
 - [DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef)
+- [DescribeConfigurationAggregatorsRequestDescribeConfigurationAggregatorsPaginateTypeDef](./type_defs.md#describeconfigurationaggregatorsrequestdescribeconfigurationaggregatorspaginatetypedef)
 - [DescribeConfigurationAggregatorsRequestRequestTypeDef](./type_defs.md#describeconfigurationaggregatorsrequestrequesttypedef)
 - [DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef)
 - [DescribeConfigurationRecorderStatusRequestRequestTypeDef](./type_defs.md#describeconfigurationrecorderstatusrequestrequesttypedef)
@@ -461,30 +302,39 @@ from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef, ...
 - [DescribeConfigurationRecordersResponseTypeDef](./type_defs.md#describeconfigurationrecordersresponsetypedef)
 - [DescribeConformancePackComplianceRequestRequestTypeDef](./type_defs.md#describeconformancepackcompliancerequestrequesttypedef)
 - [DescribeConformancePackComplianceResponseTypeDef](./type_defs.md#describeconformancepackcomplianceresponsetypedef)
+- [DescribeConformancePackStatusRequestDescribeConformancePackStatusPaginateTypeDef](./type_defs.md#describeconformancepackstatusrequestdescribeconformancepackstatuspaginatetypedef)
 - [DescribeConformancePackStatusRequestRequestTypeDef](./type_defs.md#describeconformancepackstatusrequestrequesttypedef)
 - [DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef)
+- [DescribeConformancePacksRequestDescribeConformancePacksPaginateTypeDef](./type_defs.md#describeconformancepacksrequestdescribeconformancepackspaginatetypedef)
 - [DescribeConformancePacksRequestRequestTypeDef](./type_defs.md#describeconformancepacksrequestrequesttypedef)
 - [DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef)
 - [DescribeDeliveryChannelStatusRequestRequestTypeDef](./type_defs.md#describedeliverychannelstatusrequestrequesttypedef)
 - [DescribeDeliveryChannelStatusResponseTypeDef](./type_defs.md#describedeliverychannelstatusresponsetypedef)
 - [DescribeDeliveryChannelsRequestRequestTypeDef](./type_defs.md#describedeliverychannelsrequestrequesttypedef)
 - [DescribeDeliveryChannelsResponseTypeDef](./type_defs.md#describedeliverychannelsresponsetypedef)
+- [DescribeOrganizationConfigRuleStatusesRequestDescribeOrganizationConfigRuleStatusesPaginateTypeDef](./type_defs.md#describeorganizationconfigrulestatusesrequestdescribeorganizationconfigrulestatusespaginatetypedef)
 - [DescribeOrganizationConfigRuleStatusesRequestRequestTypeDef](./type_defs.md#describeorganizationconfigrulestatusesrequestrequesttypedef)
 - [DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef)
+- [DescribeOrganizationConfigRulesRequestDescribeOrganizationConfigRulesPaginateTypeDef](./type_defs.md#describeorganizationconfigrulesrequestdescribeorganizationconfigrulespaginatetypedef)
 - [DescribeOrganizationConfigRulesRequestRequestTypeDef](./type_defs.md#describeorganizationconfigrulesrequestrequesttypedef)
 - [DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef)
+- [DescribeOrganizationConformancePackStatusesRequestDescribeOrganizationConformancePackStatusesPaginateTypeDef](./type_defs.md#describeorganizationconformancepackstatusesrequestdescribeorganizationconformancepackstatusespaginatetypedef)
 - [DescribeOrganizationConformancePackStatusesRequestRequestTypeDef](./type_defs.md#describeorganizationconformancepackstatusesrequestrequesttypedef)
 - [DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef)
+- [DescribeOrganizationConformancePacksRequestDescribeOrganizationConformancePacksPaginateTypeDef](./type_defs.md#describeorganizationconformancepacksrequestdescribeorganizationconformancepackspaginatetypedef)
 - [DescribeOrganizationConformancePacksRequestRequestTypeDef](./type_defs.md#describeorganizationconformancepacksrequestrequesttypedef)
 - [DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef)
+- [DescribePendingAggregationRequestsRequestDescribePendingAggregationRequestsPaginateTypeDef](./type_defs.md#describependingaggregationrequestsrequestdescribependingaggregationrequestspaginatetypedef)
 - [DescribePendingAggregationRequestsRequestRequestTypeDef](./type_defs.md#describependingaggregationrequestsrequestrequesttypedef)
 - [DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef)
 - [DescribeRemediationConfigurationsRequestRequestTypeDef](./type_defs.md#describeremediationconfigurationsrequestrequesttypedef)
 - [DescribeRemediationConfigurationsResponseTypeDef](./type_defs.md#describeremediationconfigurationsresponsetypedef)
 - [DescribeRemediationExceptionsRequestRequestTypeDef](./type_defs.md#describeremediationexceptionsrequestrequesttypedef)
 - [DescribeRemediationExceptionsResponseTypeDef](./type_defs.md#describeremediationexceptionsresponsetypedef)
+- [DescribeRemediationExecutionStatusRequestDescribeRemediationExecutionStatusPaginateTypeDef](./type_defs.md#describeremediationexecutionstatusrequestdescriberemediationexecutionstatuspaginatetypedef)
 - [DescribeRemediationExecutionStatusRequestRequestTypeDef](./type_defs.md#describeremediationexecutionstatusrequestrequesttypedef)
 - [DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef)
+- [DescribeRetentionConfigurationsRequestDescribeRetentionConfigurationsPaginateTypeDef](./type_defs.md#describeretentionconfigurationsrequestdescriberetentionconfigurationspaginatetypedef)
 - [DescribeRetentionConfigurationsRequestRequestTypeDef](./type_defs.md#describeretentionconfigurationsrequestrequesttypedef)
 - [DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef)
 - [EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef)
@@ -497,6 +347,7 @@ from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef, ...
 - [FailedRemediationBatchTypeDef](./type_defs.md#failedremediationbatchtypedef)
 - [FailedRemediationExceptionBatchTypeDef](./type_defs.md#failedremediationexceptionbatchtypedef)
 - [FieldInfoTypeDef](./type_defs.md#fieldinfotypedef)
+- [GetAggregateComplianceDetailsByConfigRuleRequestGetAggregateComplianceDetailsByConfigRulePaginateTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigrulerequestgetaggregatecompliancedetailsbyconfigrulepaginatetypedef)
 - [GetAggregateComplianceDetailsByConfigRuleRequestRequestTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigrulerequestrequesttypedef)
 - [GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef)
 - [GetAggregateConfigRuleComplianceSummaryRequestRequestTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryrequestrequesttypedef)
@@ -507,8 +358,10 @@ from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef, ...
 - [GetAggregateDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsresponsetypedef)
 - [GetAggregateResourceConfigRequestRequestTypeDef](./type_defs.md#getaggregateresourceconfigrequestrequesttypedef)
 - [GetAggregateResourceConfigResponseTypeDef](./type_defs.md#getaggregateresourceconfigresponsetypedef)
+- [GetComplianceDetailsByConfigRuleRequestGetComplianceDetailsByConfigRulePaginateTypeDef](./type_defs.md#getcompliancedetailsbyconfigrulerequestgetcompliancedetailsbyconfigrulepaginatetypedef)
 - [GetComplianceDetailsByConfigRuleRequestRequestTypeDef](./type_defs.md#getcompliancedetailsbyconfigrulerequestrequesttypedef)
 - [GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef)
+- [GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef](./type_defs.md#getcompliancedetailsbyresourcerequestgetcompliancedetailsbyresourcepaginatetypedef)
 - [GetComplianceDetailsByResourceRequestRequestTypeDef](./type_defs.md#getcompliancedetailsbyresourcerequestrequesttypedef)
 - [GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef)
 - [GetComplianceSummaryByConfigRuleResponseTypeDef](./type_defs.md#getcompliancesummarybyconfigruleresponsetypedef)
@@ -516,29 +369,36 @@ from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef, ...
 - [GetComplianceSummaryByResourceTypeResponseTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperesponsetypedef)
 - [GetConformancePackComplianceDetailsRequestRequestTypeDef](./type_defs.md#getconformancepackcompliancedetailsrequestrequesttypedef)
 - [GetConformancePackComplianceDetailsResponseTypeDef](./type_defs.md#getconformancepackcompliancedetailsresponsetypedef)
+- [GetConformancePackComplianceSummaryRequestGetConformancePackComplianceSummaryPaginateTypeDef](./type_defs.md#getconformancepackcompliancesummaryrequestgetconformancepackcompliancesummarypaginatetypedef)
 - [GetConformancePackComplianceSummaryRequestRequestTypeDef](./type_defs.md#getconformancepackcompliancesummaryrequestrequesttypedef)
 - [GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef)
 - [GetCustomRulePolicyRequestRequestTypeDef](./type_defs.md#getcustomrulepolicyrequestrequesttypedef)
 - [GetCustomRulePolicyResponseTypeDef](./type_defs.md#getcustomrulepolicyresponsetypedef)
 - [GetDiscoveredResourceCountsRequestRequestTypeDef](./type_defs.md#getdiscoveredresourcecountsrequestrequesttypedef)
 - [GetDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getdiscoveredresourcecountsresponsetypedef)
+- [GetOrganizationConfigRuleDetailedStatusRequestGetOrganizationConfigRuleDetailedStatusPaginateTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusrequestgetorganizationconfigruledetailedstatuspaginatetypedef)
 - [GetOrganizationConfigRuleDetailedStatusRequestRequestTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusrequestrequesttypedef)
 - [GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef)
+- [GetOrganizationConformancePackDetailedStatusRequestGetOrganizationConformancePackDetailedStatusPaginateTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusrequestgetorganizationconformancepackdetailedstatuspaginatetypedef)
 - [GetOrganizationConformancePackDetailedStatusRequestRequestTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusrequestrequesttypedef)
 - [GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef)
 - [GetOrganizationCustomRulePolicyRequestRequestTypeDef](./type_defs.md#getorganizationcustomrulepolicyrequestrequesttypedef)
 - [GetOrganizationCustomRulePolicyResponseTypeDef](./type_defs.md#getorganizationcustomrulepolicyresponsetypedef)
+- [GetResourceConfigHistoryRequestGetResourceConfigHistoryPaginateTypeDef](./type_defs.md#getresourceconfighistoryrequestgetresourceconfighistorypaginatetypedef)
 - [GetResourceConfigHistoryRequestRequestTypeDef](./type_defs.md#getresourceconfighistoryrequestrequesttypedef)
 - [GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef)
 - [GetStoredQueryRequestRequestTypeDef](./type_defs.md#getstoredqueryrequestrequesttypedef)
 - [GetStoredQueryResponseTypeDef](./type_defs.md#getstoredqueryresponsetypedef)
 - [GroupedResourceCountTypeDef](./type_defs.md#groupedresourcecounttypedef)
+- [ListAggregateDiscoveredResourcesRequestListAggregateDiscoveredResourcesPaginateTypeDef](./type_defs.md#listaggregatediscoveredresourcesrequestlistaggregatediscoveredresourcespaginatetypedef)
 - [ListAggregateDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listaggregatediscoveredresourcesrequestrequesttypedef)
 - [ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef)
+- [ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef](./type_defs.md#listdiscoveredresourcesrequestlistdiscoveredresourcespaginatetypedef)
 - [ListDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequestrequesttypedef)
 - [ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef)
 - [ListStoredQueriesRequestRequestTypeDef](./type_defs.md#liststoredqueriesrequestrequesttypedef)
 - [ListStoredQueriesResponseTypeDef](./type_defs.md#liststoredqueriesresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MemberAccountStatusTypeDef](./type_defs.md#memberaccountstatustypedef)
@@ -599,8 +459,10 @@ from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef, ...
 - [RetentionConfigurationTypeDef](./type_defs.md#retentionconfigurationtypedef)
 - [ScopeTypeDef](./type_defs.md#scopetypedef)
 - [SelectAggregateResourceConfigRequestRequestTypeDef](./type_defs.md#selectaggregateresourceconfigrequestrequesttypedef)
+- [SelectAggregateResourceConfigRequestSelectAggregateResourceConfigPaginateTypeDef](./type_defs.md#selectaggregateresourceconfigrequestselectaggregateresourceconfigpaginatetypedef)
 - [SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef)
 - [SelectResourceConfigRequestRequestTypeDef](./type_defs.md#selectresourceconfigrequestrequesttypedef)
+- [SelectResourceConfigRequestSelectResourceConfigPaginateTypeDef](./type_defs.md#selectresourceconfigrequestselectresourceconfigpaginatetypedef)
 - [SelectResourceConfigResponseTypeDef](./type_defs.md#selectresourceconfigresponsetypedef)
 - [SourceDetailTypeDef](./type_defs.md#sourcedetailtypedef)
 - [SourceTypeDef](./type_defs.md#sourcetypedef)
@@ -617,3 +479,4 @@ from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef, ...
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+

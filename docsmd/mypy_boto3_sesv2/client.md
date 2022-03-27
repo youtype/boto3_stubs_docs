@@ -1,112 +1,18 @@
-<a id="sesv2client-for-boto3-sesv2-module"></a>
-
-# SESV2Client for boto3 SESV2 module
+# SESV2Client
 
 > [Index](../README.md) > [SESV2](./README.md) > SESV2Client
 
-Auto-generated documentation for
-[SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
-type annotations stubs module
-[mypy-boto3-sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
+!!! note ""
 
-- [SESV2Client for boto3 SESV2 module](#sesv2client-for-boto3-sesv2-module)
-  - [SESV2Client](#sesv2client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_configuration_set](#create_configuration_set)
-    - [create_configuration_set_event_destination](#create_configuration_set_event_destination)
-    - [create_contact](#create_contact)
-    - [create_contact_list](#create_contact_list)
-    - [create_custom_verification_email_template](#create_custom_verification_email_template)
-    - [create_dedicated_ip_pool](#create_dedicated_ip_pool)
-    - [create_deliverability_test_report](#create_deliverability_test_report)
-    - [create_email_identity](#create_email_identity)
-    - [create_email_identity_policy](#create_email_identity_policy)
-    - [create_email_template](#create_email_template)
-    - [create_import_job](#create_import_job)
-    - [delete_configuration_set](#delete_configuration_set)
-    - [delete_configuration_set_event_destination](#delete_configuration_set_event_destination)
-    - [delete_contact](#delete_contact)
-    - [delete_contact_list](#delete_contact_list)
-    - [delete_custom_verification_email_template](#delete_custom_verification_email_template)
-    - [delete_dedicated_ip_pool](#delete_dedicated_ip_pool)
-    - [delete_email_identity](#delete_email_identity)
-    - [delete_email_identity_policy](#delete_email_identity_policy)
-    - [delete_email_template](#delete_email_template)
-    - [delete_suppressed_destination](#delete_suppressed_destination)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account](#get_account)
-    - [get_blacklist_reports](#get_blacklist_reports)
-    - [get_configuration_set](#get_configuration_set)
-    - [get_configuration_set_event_destinations](#get_configuration_set_event_destinations)
-    - [get_contact](#get_contact)
-    - [get_contact_list](#get_contact_list)
-    - [get_custom_verification_email_template](#get_custom_verification_email_template)
-    - [get_dedicated_ip](#get_dedicated_ip)
-    - [get_dedicated_ips](#get_dedicated_ips)
-    - [get_deliverability_dashboard_options](#get_deliverability_dashboard_options)
-    - [get_deliverability_test_report](#get_deliverability_test_report)
-    - [get_domain_deliverability_campaign](#get_domain_deliverability_campaign)
-    - [get_domain_statistics_report](#get_domain_statistics_report)
-    - [get_email_identity](#get_email_identity)
-    - [get_email_identity_policies](#get_email_identity_policies)
-    - [get_email_template](#get_email_template)
-    - [get_import_job](#get_import_job)
-    - [get_suppressed_destination](#get_suppressed_destination)
-    - [list_configuration_sets](#list_configuration_sets)
-    - [list_contact_lists](#list_contact_lists)
-    - [list_contacts](#list_contacts)
-    - [list_custom_verification_email_templates](#list_custom_verification_email_templates)
-    - [list_dedicated_ip_pools](#list_dedicated_ip_pools)
-    - [list_deliverability_test_reports](#list_deliverability_test_reports)
-    - [list_domain_deliverability_campaigns](#list_domain_deliverability_campaigns)
-    - [list_email_identities](#list_email_identities)
-    - [list_email_templates](#list_email_templates)
-    - [list_import_jobs](#list_import_jobs)
-    - [list_suppressed_destinations](#list_suppressed_destinations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_account_dedicated_ip_warmup_attributes](#put_account_dedicated_ip_warmup_attributes)
-    - [put_account_details](#put_account_details)
-    - [put_account_sending_attributes](#put_account_sending_attributes)
-    - [put_account_suppression_attributes](#put_account_suppression_attributes)
-    - [put_configuration_set_delivery_options](#put_configuration_set_delivery_options)
-    - [put_configuration_set_reputation_options](#put_configuration_set_reputation_options)
-    - [put_configuration_set_sending_options](#put_configuration_set_sending_options)
-    - [put_configuration_set_suppression_options](#put_configuration_set_suppression_options)
-    - [put_configuration_set_tracking_options](#put_configuration_set_tracking_options)
-    - [put_dedicated_ip_in_pool](#put_dedicated_ip_in_pool)
-    - [put_dedicated_ip_warmup_attributes](#put_dedicated_ip_warmup_attributes)
-    - [put_deliverability_dashboard_option](#put_deliverability_dashboard_option)
-    - [put_email_identity_configuration_set_attributes](#put_email_identity_configuration_set_attributes)
-    - [put_email_identity_dkim_attributes](#put_email_identity_dkim_attributes)
-    - [put_email_identity_dkim_signing_attributes](#put_email_identity_dkim_signing_attributes)
-    - [put_email_identity_feedback_attributes](#put_email_identity_feedback_attributes)
-    - [put_email_identity_mail_from_attributes](#put_email_identity_mail_from_attributes)
-    - [put_suppressed_destination](#put_suppressed_destination)
-    - [send_bulk_email](#send_bulk_email)
-    - [send_custom_verification_email](#send_custom_verification_email)
-    - [send_email](#send_email)
-    - [tag_resource](#tag_resource)
-    - [test_render_email_template](#test_render_email_template)
-    - [untag_resource](#untag_resource)
-    - [update_configuration_set_event_destination](#update_configuration_set_event_destination)
-    - [update_contact](#update_contact)
-    - [update_contact_list](#update_contact_list)
-    - [update_custom_verification_email_template](#update_custom_verification_email_template)
-    - [update_email_identity_policy](#update_email_identity_policy)
-    - [update_email_template](#update_email_template)
-
-<a id="sesv2client"></a>
+    Auto-generated documentation for [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
+    type annotations stubs module [mypy-boto3-sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
 ## SESV2Client
 
-Type annotations for `boto3.client("sesv2")`
+Type annotations and code completion for `#!python boto3.client("sesv2")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sesv2.client import SESV2Client
 
@@ -114,1964 +20,2602 @@ def get_sesv2_client() -> SESV2Client:
     return Session().client("sesv2")
 ```
 
-Boto3 documentation:
-[SESV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sesv2").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sesv2")
+
+try:
+    do_something(client)
+except (
+    client.AccountSuspendedException,
+    client.AlreadyExistsException,
+    client.BadRequestException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.ConflictException,
+    client.InvalidNextTokenException,
+    client.LimitExceededException,
+    client.MailFromDomainNotVerifiedException,
+    client.MessageRejected,
+    client.NotFoundException,
+    client.SendingPausedException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sesv2.client import Exceptions
 
 def handle_error(exc: Exceptions.AccountSuspendedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccountSuspendedException`
-- `Exceptions.AlreadyExistsException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.ConflictException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.MailFromDomainNotVerifiedException`
-- `Exceptions.MessageRejected`
-- `Exceptions.NotFoundException`
-- `Exceptions.SendingPausedException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SESV2Client exceptions.
-
-Type annotations for `boto3.client("sesv2").exceptions` method.
-
-Boto3 documentation:
-[SESV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sesv2").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.can_paginate)
 
-Boto3 documentation:
-[SESV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_configuration\_set"></a>
-
-### create_configuration_set
+### create\_configuration\_set
 
 Create a configuration set.
 
-Type annotations for `boto3.client("sesv2").create_configuration_set` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_configuration_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set)
 
-Boto3 documentation:
-[SESV2.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set)
+```python title="Method definition"
+def create_configuration_set(
+    self,
+    *,
+    ConfigurationSetName: str,
+    TrackingOptions: TrackingOptionsTypeDef = ...,  # (1)
+    DeliveryOptions: DeliveryOptionsTypeDef = ...,  # (2)
+    ReputationOptions: ReputationOptionsTypeDef = ...,  # (3)
+    SendingOptions: SendingOptionsTypeDef = ...,  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+    SuppressionOptions: SuppressionOptionsTypeDef = ...,  # (6)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateConfigurationSetRequestRequestTypeDef](./type_defs.md#createconfigurationsetrequestrequesttypedef).
+1. See [:material-code-braces: TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef) 
+2. See [:material-code-braces: DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef) 
+3. See [:material-code-braces: ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef) 
+4. See [:material-code-braces: SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `TrackingOptions`:
-  [TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef)
-- `DeliveryOptions`:
-  [DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef)
-- `ReputationOptions`:
-  [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
-- `SendingOptions`:
-  [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SuppressionOptions`:
-  [SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateConfigurationSetRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_configuration_set(**kwargs)
+```
 
-<a id="create\_configuration\_set\_event\_destination"></a>
+1. See [:material-code-braces: CreateConfigurationSetRequestRequestTypeDef](./type_defs.md#createconfigurationsetrequestrequesttypedef) 
 
-### create_configuration_set_event_destination
+### create\_configuration\_set\_event\_destination
 
 Create an event destination.
 
-Type annotations for
-`boto3.client("sesv2").create_configuration_set_event_destination` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_configuration_set_event_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set_event_destination)
 
-Boto3 documentation:
-[SESV2.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_configuration_set_event_destination)
+```python title="Method definition"
+def create_configuration_set_event_destination(
+    self,
+    *,
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+    EventDestination: EventDestinationDefinitionTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequestrequesttypedef).
+1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `EventDestinationName`: `str` *(required)*
-- `EventDestination`:
-  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateConfigurationSetEventDestinationRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+    "EventDestinationName": ...,
+    "EventDestination": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_configuration_set_event_destination(**kwargs)
+```
 
-<a id="create\_contact"></a>
+1. See [:material-code-braces: CreateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequestrequesttypedef) 
 
-### create_contact
+### create\_contact
 
 Creates a contact, which is an end-user who is receiving the email, and adds
 them to a contact list.
 
-Type annotations for `boto3.client("sesv2").create_contact` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact)
 
-Boto3 documentation:
-[SESV2.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact)
+```python title="Method definition"
+def create_contact(
+    self,
+    *,
+    ContactListName: str,
+    EmailAddress: str,
+    TopicPreferences: Sequence[TopicPreferenceTypeDef] = ...,  # (1)
+    UnsubscribeAll: bool = ...,
+    AttributesData: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateContactRequestRequestTypeDef](./type_defs.md#createcontactrequestrequesttypedef).
+1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
 
-Keyword-only arguments:
 
-- `ContactListName`: `str` *(required)*
-- `EmailAddress`: `str` *(required)*
-- `TopicPreferences`:
-  `Sequence`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
-- `UnsubscribeAll`: `bool`
-- `AttributesData`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateContactRequestRequestTypeDef = {  # (1)
+    "ContactListName": ...,
+    "EmailAddress": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_contact(**kwargs)
+```
 
-<a id="create\_contact\_list"></a>
+1. See [:material-code-braces: CreateContactRequestRequestTypeDef](./type_defs.md#createcontactrequestrequesttypedef) 
 
-### create_contact_list
+### create\_contact\_list
 
 Creates a contact list.
 
-Type annotations for `boto3.client("sesv2").create_contact_list` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_contact_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact_list)
 
-Boto3 documentation:
-[SESV2.Client.create_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_contact_list)
+```python title="Method definition"
+def create_contact_list(
+    self,
+    *,
+    ContactListName: str,
+    Topics: Sequence[TopicTypeDef] = ...,  # (1)
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateContactListRequestRequestTypeDef](./type_defs.md#createcontactlistrequestrequesttypedef).
+1. See [:material-code-braces: TopicTypeDef](./type_defs.md#topictypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ContactListName`: `str` *(required)*
-- `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateContactListRequestRequestTypeDef = {  # (1)
+    "ContactListName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_contact_list(**kwargs)
+```
 
-<a id="create\_custom\_verification\_email\_template"></a>
+1. See [:material-code-braces: CreateContactListRequestRequestTypeDef](./type_defs.md#createcontactlistrequestrequesttypedef) 
 
-### create_custom_verification_email_template
+### create\_custom\_verification\_email\_template
 
 Creates a new custom verification email template.
 
-Type annotations for
-`boto3.client("sesv2").create_custom_verification_email_template` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_custom_verification_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_custom_verification_email_template)
 
-Boto3 documentation:
-[SESV2.Client.create_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_custom_verification_email_template)
+```python title="Method definition"
+def create_custom_verification_email_template(
+    self,
+    *,
+    TemplateName: str,
+    FromEmailAddress: str,
+    TemplateSubject: str,
+    TemplateContent: str,
+    SuccessRedirectionURL: str,
+    FailureRedirectionURL: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#createcustomverificationemailtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `FromEmailAddress`: `str` *(required)*
-- `TemplateSubject`: `str` *(required)*
-- `TemplateContent`: `str` *(required)*
-- `SuccessRedirectionURL`: `str` *(required)*
-- `FailureRedirectionURL`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCustomVerificationEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+    "FromEmailAddress": ...,
+    "TemplateSubject": ...,
+    "TemplateContent": ...,
+    "SuccessRedirectionURL": ...,
+    "FailureRedirectionURL": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_custom_verification_email_template(**kwargs)
+```
 
-<a id="create\_dedicated\_ip\_pool"></a>
+1. See [:material-code-braces: CreateCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#createcustomverificationemailtemplaterequestrequesttypedef) 
 
-### create_dedicated_ip_pool
+### create\_dedicated\_ip\_pool
 
 Create a new pool of dedicated IP addresses.
 
-Type annotations for `boto3.client("sesv2").create_dedicated_ip_pool` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_dedicated_ip_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_dedicated_ip_pool)
 
-Boto3 documentation:
-[SESV2.Client.create_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_dedicated_ip_pool)
+```python title="Method definition"
+def create_dedicated_ip_pool(
+    self,
+    *,
+    PoolName: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateDedicatedIpPoolRequestRequestTypeDef](./type_defs.md#creatededicatedippoolrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `PoolName`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDedicatedIpPoolRequestRequestTypeDef = {  # (1)
+    "PoolName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_dedicated_ip_pool(**kwargs)
+```
 
-<a id="create\_deliverability\_test\_report"></a>
+1. See [:material-code-braces: CreateDedicatedIpPoolRequestRequestTypeDef](./type_defs.md#creatededicatedippoolrequestrequesttypedef) 
 
-### create_deliverability_test_report
+### create\_deliverability\_test\_report
 
 Create a new predictive inbox placement test.
 
-Type annotations for `boto3.client("sesv2").create_deliverability_test_report`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_deliverability_test_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_deliverability_test_report)
 
-Boto3 documentation:
-[SESV2.Client.create_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_deliverability_test_report)
+```python title="Method definition"
+def create_deliverability_test_report(
+    self,
+    *,
+    FromEmailAddress: str,
+    Content: EmailContentTypeDef,  # (1)
+    ReportName: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDeliverabilityTestReportResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDeliverabilityTestReportRequestRequestTypeDef](./type_defs.md#createdeliverabilitytestreportrequestrequesttypedef).
+1. See [:material-code-braces: EmailContentTypeDef](./type_defs.md#emailcontenttypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FromEmailAddress`: `str` *(required)*
-- `Content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
-  *(required)*
-- `ReportName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDeliverabilityTestReportRequestRequestTypeDef = {  # (1)
+    "FromEmailAddress": ...,
+    "Content": ...,
+}
 
-Returns
-[CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef).
+parent.create_deliverability_test_report(**kwargs)
+```
 
-<a id="create\_email\_identity"></a>
+1. See [:material-code-braces: CreateDeliverabilityTestReportRequestRequestTypeDef](./type_defs.md#createdeliverabilitytestreportrequestrequesttypedef) 
 
-### create_email_identity
+### create\_email\_identity
 
 Starts the process of verifying an email identity.
 
-Type annotations for `boto3.client("sesv2").create_email_identity` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_email_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity)
 
-Boto3 documentation:
-[SESV2.Client.create_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity)
+```python title="Method definition"
+def create_email_identity(
+    self,
+    *,
+    EmailIdentity: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    DkimSigningAttributes: DkimSigningAttributesTypeDef = ...,  # (2)
+    ConfigurationSetName: str = ...,
+) -> CreateEmailIdentityResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateEmailIdentityRequestRequestTypeDef](./type_defs.md#createemailidentityrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef) 
+3. See [:material-code-braces: CreateEmailIdentityResponseTypeDef](./type_defs.md#createemailidentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DkimSigningAttributes`:
-  [DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef)
-- `ConfigurationSetName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateEmailIdentityRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+}
 
-Returns
-[CreateEmailIdentityResponseTypeDef](./type_defs.md#createemailidentityresponsetypedef).
+parent.create_email_identity(**kwargs)
+```
 
-<a id="create\_email\_identity\_policy"></a>
+1. See [:material-code-braces: CreateEmailIdentityRequestRequestTypeDef](./type_defs.md#createemailidentityrequestrequesttypedef) 
 
-### create_email_identity_policy
+### create\_email\_identity\_policy
 
 Creates the specified sending authorization policy for the given identity (an
 email address or a domain).
 
-Type annotations for `boto3.client("sesv2").create_email_identity_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_email_identity_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity_policy)
 
-Boto3 documentation:
-[SESV2.Client.create_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_identity_policy)
+```python title="Method definition"
+def create_email_identity_policy(
+    self,
+    *,
+    EmailIdentity: str,
+    PolicyName: str,
+    Policy: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateEmailIdentityPolicyRequestRequestTypeDef](./type_defs.md#createemailidentitypolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `Policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateEmailIdentityPolicyRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+    "PolicyName": ...,
+    "Policy": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_email_identity_policy(**kwargs)
+```
 
-<a id="create\_email\_template"></a>
+1. See [:material-code-braces: CreateEmailIdentityPolicyRequestRequestTypeDef](./type_defs.md#createemailidentitypolicyrequestrequesttypedef) 
 
-### create_email_template
+### create\_email\_template
 
 Creates an email template.
 
-Type annotations for `boto3.client("sesv2").create_email_template` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_template)
 
-Boto3 documentation:
-[SESV2.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_email_template)
+```python title="Method definition"
+def create_email_template(
+    self,
+    *,
+    TemplateName: str,
+    TemplateContent: EmailTemplateContentTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateEmailTemplateRequestRequestTypeDef](./type_defs.md#createemailtemplaterequestrequesttypedef).
+1. See [:material-code-braces: EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `TemplateContent`:
-  [EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+    "TemplateContent": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_email_template(**kwargs)
+```
 
-<a id="create\_import\_job"></a>
+1. See [:material-code-braces: CreateEmailTemplateRequestRequestTypeDef](./type_defs.md#createemailtemplaterequestrequesttypedef) 
 
-### create_import_job
+### create\_import\_job
 
 Creates an import job for a data destination.
 
-Type annotations for `boto3.client("sesv2").create_import_job` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").create_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_import_job)
 
-Boto3 documentation:
-[SESV2.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.create_import_job)
+```python title="Method definition"
+def create_import_job(
+    self,
+    *,
+    ImportDestination: ImportDestinationTypeDef,  # (1)
+    ImportDataSource: ImportDataSourceTypeDef,  # (2)
+) -> CreateImportJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateImportJobRequestRequestTypeDef](./type_defs.md#createimportjobrequestrequesttypedef).
+1. See [:material-code-braces: ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef) 
+2. See [:material-code-braces: ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef) 
+3. See [:material-code-braces: CreateImportJobResponseTypeDef](./type_defs.md#createimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ImportDestination`:
-  [ImportDestinationTypeDef](./type_defs.md#importdestinationtypedef)
-  *(required)*
-- `ImportDataSource`:
-  [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateImportJobRequestRequestTypeDef = {  # (1)
+    "ImportDestination": ...,
+    "ImportDataSource": ...,
+}
 
-Returns
-[CreateImportJobResponseTypeDef](./type_defs.md#createimportjobresponsetypedef).
+parent.create_import_job(**kwargs)
+```
 
-<a id="delete\_configuration\_set"></a>
+1. See [:material-code-braces: CreateImportJobRequestRequestTypeDef](./type_defs.md#createimportjobrequestrequesttypedef) 
 
-### delete_configuration_set
+### delete\_configuration\_set
 
 Delete an existing configuration set.
 
-Type annotations for `boto3.client("sesv2").delete_configuration_set` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_configuration_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set)
 
-Boto3 documentation:
-[SESV2.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set)
+```python title="Method definition"
+def delete_configuration_set(
+    self,
+    *,
+    ConfigurationSetName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConfigurationSetRequestRequestTypeDef](./type_defs.md#deleteconfigurationsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConfigurationSetRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_configuration_set(**kwargs)
+```
 
-<a id="delete\_configuration\_set\_event\_destination"></a>
+1. See [:material-code-braces: DeleteConfigurationSetRequestRequestTypeDef](./type_defs.md#deleteconfigurationsetrequestrequesttypedef) 
 
-### delete_configuration_set_event_destination
+### delete\_configuration\_set\_event\_destination
 
 Delete an event destination.
 
-Type annotations for
-`boto3.client("sesv2").delete_configuration_set_event_destination` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_configuration_set_event_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set_event_destination)
 
-Boto3 documentation:
-[SESV2.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_configuration_set_event_destination)
+```python title="Method definition"
+def delete_configuration_set_event_destination(
+    self,
+    *,
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `EventDestinationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConfigurationSetEventDestinationRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+    "EventDestinationName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_configuration_set_event_destination(**kwargs)
+```
 
-<a id="delete\_contact"></a>
+1. See [:material-code-braces: DeleteConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequestrequesttypedef) 
 
-### delete_contact
+### delete\_contact
 
 Removes a contact from a contact list.
 
-Type annotations for `boto3.client("sesv2").delete_contact` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact)
 
-Boto3 documentation:
-[SESV2.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact)
+```python title="Method definition"
+def delete_contact(
+    self,
+    *,
+    ContactListName: str,
+    EmailAddress: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteContactRequestRequestTypeDef](./type_defs.md#deletecontactrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ContactListName`: `str` *(required)*
-- `EmailAddress`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteContactRequestRequestTypeDef = {  # (1)
+    "ContactListName": ...,
+    "EmailAddress": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_contact(**kwargs)
+```
 
-<a id="delete\_contact\_list"></a>
+1. See [:material-code-braces: DeleteContactRequestRequestTypeDef](./type_defs.md#deletecontactrequestrequesttypedef) 
 
-### delete_contact_list
+### delete\_contact\_list
 
 Deletes a contact list and all of the contacts on that list.
 
-Type annotations for `boto3.client("sesv2").delete_contact_list` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_contact_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact_list)
 
-Boto3 documentation:
-[SESV2.Client.delete_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_contact_list)
+```python title="Method definition"
+def delete_contact_list(
+    self,
+    *,
+    ContactListName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteContactListRequestRequestTypeDef](./type_defs.md#deletecontactlistrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ContactListName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteContactListRequestRequestTypeDef = {  # (1)
+    "ContactListName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_contact_list(**kwargs)
+```
 
-<a id="delete\_custom\_verification\_email\_template"></a>
+1. See [:material-code-braces: DeleteContactListRequestRequestTypeDef](./type_defs.md#deletecontactlistrequestrequesttypedef) 
 
-### delete_custom_verification_email_template
+### delete\_custom\_verification\_email\_template
 
 Deletes an existing custom verification email template.
 
-Type annotations for
-`boto3.client("sesv2").delete_custom_verification_email_template` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_custom_verification_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_custom_verification_email_template)
 
-Boto3 documentation:
-[SESV2.Client.delete_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_custom_verification_email_template)
+```python title="Method definition"
+def delete_custom_verification_email_template(
+    self,
+    *,
+    TemplateName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#deletecustomverificationemailtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomVerificationEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_custom_verification_email_template(**kwargs)
+```
 
-<a id="delete\_dedicated\_ip\_pool"></a>
+1. See [:material-code-braces: DeleteCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#deletecustomverificationemailtemplaterequestrequesttypedef) 
 
-### delete_dedicated_ip_pool
+### delete\_dedicated\_ip\_pool
 
 Delete a dedicated IP pool.
 
-Type annotations for `boto3.client("sesv2").delete_dedicated_ip_pool` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_dedicated_ip_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_dedicated_ip_pool)
 
-Boto3 documentation:
-[SESV2.Client.delete_dedicated_ip_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_dedicated_ip_pool)
+```python title="Method definition"
+def delete_dedicated_ip_pool(
+    self,
+    *,
+    PoolName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDedicatedIpPoolRequestRequestTypeDef](./type_defs.md#deletededicatedippoolrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PoolName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDedicatedIpPoolRequestRequestTypeDef = {  # (1)
+    "PoolName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_dedicated_ip_pool(**kwargs)
+```
 
-<a id="delete\_email\_identity"></a>
+1. See [:material-code-braces: DeleteDedicatedIpPoolRequestRequestTypeDef](./type_defs.md#deletededicatedippoolrequestrequesttypedef) 
 
-### delete_email_identity
+### delete\_email\_identity
 
 Deletes an email identity.
 
-Type annotations for `boto3.client("sesv2").delete_email_identity` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_email_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity)
 
-Boto3 documentation:
-[SESV2.Client.delete_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity)
+```python title="Method definition"
+def delete_email_identity(
+    self,
+    *,
+    EmailIdentity: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEmailIdentityRequestRequestTypeDef](./type_defs.md#deleteemailidentityrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEmailIdentityRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_email_identity(**kwargs)
+```
 
-<a id="delete\_email\_identity\_policy"></a>
+1. See [:material-code-braces: DeleteEmailIdentityRequestRequestTypeDef](./type_defs.md#deleteemailidentityrequestrequesttypedef) 
 
-### delete_email_identity_policy
+### delete\_email\_identity\_policy
 
 Deletes the specified sending authorization policy for the given identity (an
 email address or a domain).
 
-Type annotations for `boto3.client("sesv2").delete_email_identity_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_email_identity_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity_policy)
 
-Boto3 documentation:
-[SESV2.Client.delete_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_identity_policy)
+```python title="Method definition"
+def delete_email_identity_policy(
+    self,
+    *,
+    EmailIdentity: str,
+    PolicyName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEmailIdentityPolicyRequestRequestTypeDef](./type_defs.md#deleteemailidentitypolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEmailIdentityPolicyRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+    "PolicyName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_email_identity_policy(**kwargs)
+```
 
-<a id="delete\_email\_template"></a>
+1. See [:material-code-braces: DeleteEmailIdentityPolicyRequestRequestTypeDef](./type_defs.md#deleteemailidentitypolicyrequestrequesttypedef) 
 
-### delete_email_template
+### delete\_email\_template
 
 Deletes an email template.
 
-Type annotations for `boto3.client("sesv2").delete_email_template` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_template)
 
-Boto3 documentation:
-[SESV2.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_email_template)
+```python title="Method definition"
+def delete_email_template(
+    self,
+    *,
+    TemplateName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEmailTemplateRequestRequestTypeDef](./type_defs.md#deleteemailtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_email_template(**kwargs)
+```
 
-<a id="delete\_suppressed\_destination"></a>
+1. See [:material-code-braces: DeleteEmailTemplateRequestRequestTypeDef](./type_defs.md#deleteemailtemplaterequestrequesttypedef) 
 
-### delete_suppressed_destination
+### delete\_suppressed\_destination
 
 Removes an email address from the suppression list for your account.
 
-Type annotations for `boto3.client("sesv2").delete_suppressed_destination`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").delete_suppressed_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_suppressed_destination)
 
-Boto3 documentation:
-[SESV2.Client.delete_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.delete_suppressed_destination)
+```python title="Method definition"
+def delete_suppressed_destination(
+    self,
+    *,
+    EmailAddress: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSuppressedDestinationRequestRequestTypeDef](./type_defs.md#deletesuppresseddestinationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EmailAddress`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSuppressedDestinationRequestRequestTypeDef = {  # (1)
+    "EmailAddress": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_suppressed_destination(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteSuppressedDestinationRequestRequestTypeDef](./type_defs.md#deletesuppresseddestinationrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("sesv2").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SESV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_account"></a>
-
-### get_account
+### get\_account
 
 Obtain information about the email-sending status and capabilities of your
 Amazon SES account in the current Amazon Web Services Region.
 
-Type annotations for `boto3.client("sesv2").get_account` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_account)
 
-Boto3 documentation:
-[SESV2.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_account)
+```python title="Method definition"
+def get_account(
+    self,
+) -> GetAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
+1. See [:material-code-braces: GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef) 
 
-<a id="get\_blacklist\_reports"></a>
-
-### get_blacklist_reports
+### get\_blacklist\_reports
 
 Retrieve a list of the blacklists that your dedicated IP addresses appear on.
 
-Type annotations for `boto3.client("sesv2").get_blacklist_reports` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_blacklist_reports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_blacklist_reports)
 
-Boto3 documentation:
-[SESV2.Client.get_blacklist_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_blacklist_reports)
+```python title="Method definition"
+def get_blacklist_reports(
+    self,
+    *,
+    BlacklistItemNames: Sequence[str],
+) -> GetBlacklistReportsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBlacklistReportsRequestRequestTypeDef](./type_defs.md#getblacklistreportsrequestrequesttypedef).
+1. See [:material-code-braces: GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BlacklistItemNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBlacklistReportsRequestRequestTypeDef = {  # (1)
+    "BlacklistItemNames": ...,
+}
 
-Returns
-[GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef).
+parent.get_blacklist_reports(**kwargs)
+```
 
-<a id="get\_configuration\_set"></a>
+1. See [:material-code-braces: GetBlacklistReportsRequestRequestTypeDef](./type_defs.md#getblacklistreportsrequestrequesttypedef) 
 
-### get_configuration_set
+### get\_configuration\_set
 
 Get information about an existing configuration set, including the dedicated IP
 pool that it's associated with, whether or not it's enabled for sending email,
 and more.
 
-Type annotations for `boto3.client("sesv2").get_configuration_set` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_configuration_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set)
 
-Boto3 documentation:
-[SESV2.Client.get_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set)
+```python title="Method definition"
+def get_configuration_set(
+    self,
+    *,
+    ConfigurationSetName: str,
+) -> GetConfigurationSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConfigurationSetRequestRequestTypeDef](./type_defs.md#getconfigurationsetrequestrequesttypedef).
+1. See [:material-code-braces: GetConfigurationSetResponseTypeDef](./type_defs.md#getconfigurationsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConfigurationSetRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns
-[GetConfigurationSetResponseTypeDef](./type_defs.md#getconfigurationsetresponsetypedef).
+parent.get_configuration_set(**kwargs)
+```
 
-<a id="get\_configuration\_set\_event\_destinations"></a>
+1. See [:material-code-braces: GetConfigurationSetRequestRequestTypeDef](./type_defs.md#getconfigurationsetrequestrequesttypedef) 
 
-### get_configuration_set_event_destinations
+### get\_configuration\_set\_event\_destinations
 
 Retrieve a list of event destinations that are associated with a configuration
 set.
 
-Type annotations for
-`boto3.client("sesv2").get_configuration_set_event_destinations` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_configuration_set_event_destinations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set_event_destinations)
 
-Boto3 documentation:
-[SESV2.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_configuration_set_event_destinations)
+```python title="Method definition"
+def get_configuration_set_event_destinations(
+    self,
+    *,
+    ConfigurationSetName: str,
+) -> GetConfigurationSetEventDestinationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConfigurationSetEventDestinationsRequestRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequestrequesttypedef).
+1. See [:material-code-braces: GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConfigurationSetEventDestinationsRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns
-[GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
+parent.get_configuration_set_event_destinations(**kwargs)
+```
 
-<a id="get\_contact"></a>
+1. See [:material-code-braces: GetConfigurationSetEventDestinationsRequestRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequestrequesttypedef) 
 
-### get_contact
+### get\_contact
 
 Returns a contact from a contact list.
 
-Type annotations for `boto3.client("sesv2").get_contact` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact)
 
-Boto3 documentation:
-[SESV2.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact)
+```python title="Method definition"
+def get_contact(
+    self,
+    *,
+    ContactListName: str,
+    EmailAddress: str,
+) -> GetContactResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContactRequestRequestTypeDef](./type_defs.md#getcontactrequestrequesttypedef).
+1. See [:material-code-braces: GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ContactListName`: `str` *(required)*
-- `EmailAddress`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetContactRequestRequestTypeDef = {  # (1)
+    "ContactListName": ...,
+    "EmailAddress": ...,
+}
 
-Returns [GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef).
+parent.get_contact(**kwargs)
+```
 
-<a id="get\_contact\_list"></a>
+1. See [:material-code-braces: GetContactRequestRequestTypeDef](./type_defs.md#getcontactrequestrequesttypedef) 
 
-### get_contact_list
+### get\_contact\_list
 
 Returns contact list metadata.
 
-Type annotations for `boto3.client("sesv2").get_contact_list` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_contact_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact_list)
 
-Boto3 documentation:
-[SESV2.Client.get_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_contact_list)
+```python title="Method definition"
+def get_contact_list(
+    self,
+    *,
+    ContactListName: str,
+) -> GetContactListResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContactListRequestRequestTypeDef](./type_defs.md#getcontactlistrequestrequesttypedef).
+1. See [:material-code-braces: GetContactListResponseTypeDef](./type_defs.md#getcontactlistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ContactListName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetContactListRequestRequestTypeDef = {  # (1)
+    "ContactListName": ...,
+}
 
-Returns
-[GetContactListResponseTypeDef](./type_defs.md#getcontactlistresponsetypedef).
+parent.get_contact_list(**kwargs)
+```
 
-<a id="get\_custom\_verification\_email\_template"></a>
+1. See [:material-code-braces: GetContactListRequestRequestTypeDef](./type_defs.md#getcontactlistrequestrequesttypedef) 
 
-### get_custom_verification_email_template
+### get\_custom\_verification\_email\_template
 
 Returns the custom email verification template for the template name you
 specify.
 
-Type annotations for
-`boto3.client("sesv2").get_custom_verification_email_template` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_custom_verification_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_custom_verification_email_template)
 
-Boto3 documentation:
-[SESV2.Client.get_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_custom_verification_email_template)
+```python title="Method definition"
+def get_custom_verification_email_template(
+    self,
+    *,
+    TemplateName: str,
+) -> GetCustomVerificationEmailTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#getcustomverificationemailtemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetCustomVerificationEmailTemplateResponseTypeDef](./type_defs.md#getcustomverificationemailtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCustomVerificationEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[GetCustomVerificationEmailTemplateResponseTypeDef](./type_defs.md#getcustomverificationemailtemplateresponsetypedef).
+parent.get_custom_verification_email_template(**kwargs)
+```
 
-<a id="get\_dedicated\_ip"></a>
+1. See [:material-code-braces: GetCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#getcustomverificationemailtemplaterequestrequesttypedef) 
 
-### get_dedicated_ip
+### get\_dedicated\_ip
 
 Get information about a dedicated IP address, including the name of the
 dedicated IP pool that it's associated with, as well information about the
 automatic warm-up process for the address.
 
-Type annotations for `boto3.client("sesv2").get_dedicated_ip` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_dedicated_ip` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ip)
 
-Boto3 documentation:
-[SESV2.Client.get_dedicated_ip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ip)
+```python title="Method definition"
+def get_dedicated_ip(
+    self,
+    *,
+    Ip: str,
+) -> GetDedicatedIpResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDedicatedIpRequestRequestTypeDef](./type_defs.md#getdedicatediprequestrequesttypedef).
+1. See [:material-code-braces: GetDedicatedIpResponseTypeDef](./type_defs.md#getdedicatedipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Ip`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDedicatedIpRequestRequestTypeDef = {  # (1)
+    "Ip": ...,
+}
 
-Returns
-[GetDedicatedIpResponseTypeDef](./type_defs.md#getdedicatedipresponsetypedef).
+parent.get_dedicated_ip(**kwargs)
+```
 
-<a id="get\_dedicated\_ips"></a>
+1. See [:material-code-braces: GetDedicatedIpRequestRequestTypeDef](./type_defs.md#getdedicatediprequestrequesttypedef) 
 
-### get_dedicated_ips
+### get\_dedicated\_ips
 
 List the dedicated IP addresses that are associated with your Amazon Web
 Services account.
 
-Type annotations for `boto3.client("sesv2").get_dedicated_ips` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_dedicated_ips` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ips)
 
-Boto3 documentation:
-[SESV2.Client.get_dedicated_ips](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_dedicated_ips)
+```python title="Method definition"
+def get_dedicated_ips(
+    self,
+    *,
+    PoolName: str = ...,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> GetDedicatedIpsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDedicatedIpsRequestRequestTypeDef](./type_defs.md#getdedicatedipsrequestrequesttypedef).
+1. See [:material-code-braces: GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PoolName`: `str`
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetDedicatedIpsRequestRequestTypeDef = {  # (1)
+    "PoolName": ...,
+}
 
-Returns
-[GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef).
+parent.get_dedicated_ips(**kwargs)
+```
 
-<a id="get\_deliverability\_dashboard\_options"></a>
+1. See [:material-code-braces: GetDedicatedIpsRequestRequestTypeDef](./type_defs.md#getdedicatedipsrequestrequesttypedef) 
 
-### get_deliverability_dashboard_options
+### get\_deliverability\_dashboard\_options
 
 Retrieve information about the status of the Deliverability dashboard for your
 account.
 
-Type annotations for
-`boto3.client("sesv2").get_deliverability_dashboard_options` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_deliverability_dashboard_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_dashboard_options)
 
-Boto3 documentation:
-[SESV2.Client.get_deliverability_dashboard_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_dashboard_options)
+```python title="Method definition"
+def get_deliverability_dashboard_options(
+    self,
+) -> GetDeliverabilityDashboardOptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetDeliverabilityDashboardOptionsResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponsetypedef).
+1. See [:material-code-braces: GetDeliverabilityDashboardOptionsResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponsetypedef) 
 
-<a id="get\_deliverability\_test\_report"></a>
-
-### get_deliverability_test_report
+### get\_deliverability\_test\_report
 
 Retrieve the results of a predictive inbox placement test.
 
-Type annotations for `boto3.client("sesv2").get_deliverability_test_report`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_deliverability_test_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_test_report)
 
-Boto3 documentation:
-[SESV2.Client.get_deliverability_test_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_deliverability_test_report)
+```python title="Method definition"
+def get_deliverability_test_report(
+    self,
+    *,
+    ReportId: str,
+) -> GetDeliverabilityTestReportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeliverabilityTestReportRequestRequestTypeDef](./type_defs.md#getdeliverabilitytestreportrequestrequesttypedef).
+1. See [:material-code-braces: GetDeliverabilityTestReportResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDeliverabilityTestReportRequestRequestTypeDef = {  # (1)
+    "ReportId": ...,
+}
 
-Returns
-[GetDeliverabilityTestReportResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponsetypedef).
+parent.get_deliverability_test_report(**kwargs)
+```
 
-<a id="get\_domain\_deliverability\_campaign"></a>
+1. See [:material-code-braces: GetDeliverabilityTestReportRequestRequestTypeDef](./type_defs.md#getdeliverabilitytestreportrequestrequesttypedef) 
 
-### get_domain_deliverability_campaign
+### get\_domain\_deliverability\_campaign
 
 Retrieve all the deliverability data for a specific campaign.
 
-Type annotations for `boto3.client("sesv2").get_domain_deliverability_campaign`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_domain_deliverability_campaign` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_deliverability_campaign)
 
-Boto3 documentation:
-[SESV2.Client.get_domain_deliverability_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_deliverability_campaign)
+```python title="Method definition"
+def get_domain_deliverability_campaign(
+    self,
+    *,
+    CampaignId: str,
+) -> GetDomainDeliverabilityCampaignResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDomainDeliverabilityCampaignRequestRequestTypeDef](./type_defs.md#getdomaindeliverabilitycampaignrequestrequesttypedef).
+1. See [:material-code-braces: GetDomainDeliverabilityCampaignResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CampaignId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDomainDeliverabilityCampaignRequestRequestTypeDef = {  # (1)
+    "CampaignId": ...,
+}
 
-Returns
-[GetDomainDeliverabilityCampaignResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponsetypedef).
+parent.get_domain_deliverability_campaign(**kwargs)
+```
 
-<a id="get\_domain\_statistics\_report"></a>
+1. See [:material-code-braces: GetDomainDeliverabilityCampaignRequestRequestTypeDef](./type_defs.md#getdomaindeliverabilitycampaignrequestrequesttypedef) 
 
-### get_domain_statistics_report
+### get\_domain\_statistics\_report
 
 Retrieve inbox placement and engagement rates for the domains that you use to
 send email.
 
-Type annotations for `boto3.client("sesv2").get_domain_statistics_report`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_domain_statistics_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_statistics_report)
 
-Boto3 documentation:
-[SESV2.Client.get_domain_statistics_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_domain_statistics_report)
+```python title="Method definition"
+def get_domain_statistics_report(
+    self,
+    *,
+    Domain: str,
+    StartDate: Union[datetime, str],
+    EndDate: Union[datetime, str],
+) -> GetDomainStatisticsReportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDomainStatisticsReportRequestRequestTypeDef](./type_defs.md#getdomainstatisticsreportrequestrequesttypedef).
+1. See [:material-code-braces: GetDomainStatisticsReportResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Domain`: `str` *(required)*
-- `StartDate`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndDate`: `Union`\[`datetime`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDomainStatisticsReportRequestRequestTypeDef = {  # (1)
+    "Domain": ...,
+    "StartDate": ...,
+    "EndDate": ...,
+}
 
-Returns
-[GetDomainStatisticsReportResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponsetypedef).
+parent.get_domain_statistics_report(**kwargs)
+```
 
-<a id="get\_email\_identity"></a>
+1. See [:material-code-braces: GetDomainStatisticsReportRequestRequestTypeDef](./type_defs.md#getdomainstatisticsreportrequestrequesttypedef) 
 
-### get_email_identity
+### get\_email\_identity
 
 Provides information about a specific identity, including the identity's
 verification status, sending authorization policies, its DKIM authentication
 status, and its custom Mail-From settings.
 
-Type annotations for `boto3.client("sesv2").get_email_identity` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_email_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity)
 
-Boto3 documentation:
-[SESV2.Client.get_email_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity)
+```python title="Method definition"
+def get_email_identity(
+    self,
+    *,
+    EmailIdentity: str,
+) -> GetEmailIdentityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEmailIdentityRequestRequestTypeDef](./type_defs.md#getemailidentityrequestrequesttypedef).
+1. See [:material-code-braces: GetEmailIdentityResponseTypeDef](./type_defs.md#getemailidentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEmailIdentityRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+}
 
-Returns
-[GetEmailIdentityResponseTypeDef](./type_defs.md#getemailidentityresponsetypedef).
+parent.get_email_identity(**kwargs)
+```
 
-<a id="get\_email\_identity\_policies"></a>
+1. See [:material-code-braces: GetEmailIdentityRequestRequestTypeDef](./type_defs.md#getemailidentityrequestrequesttypedef) 
 
-### get_email_identity_policies
+### get\_email\_identity\_policies
 
 Returns the requested sending authorization policies for the given identity (an
 email address or a domain).
 
-Type annotations for `boto3.client("sesv2").get_email_identity_policies`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_email_identity_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity_policies)
 
-Boto3 documentation:
-[SESV2.Client.get_email_identity_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_identity_policies)
+```python title="Method definition"
+def get_email_identity_policies(
+    self,
+    *,
+    EmailIdentity: str,
+) -> GetEmailIdentityPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEmailIdentityPoliciesRequestRequestTypeDef](./type_defs.md#getemailidentitypoliciesrequestrequesttypedef).
+1. See [:material-code-braces: GetEmailIdentityPoliciesResponseTypeDef](./type_defs.md#getemailidentitypoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEmailIdentityPoliciesRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+}
 
-Returns
-[GetEmailIdentityPoliciesResponseTypeDef](./type_defs.md#getemailidentitypoliciesresponsetypedef).
+parent.get_email_identity_policies(**kwargs)
+```
 
-<a id="get\_email\_template"></a>
+1. See [:material-code-braces: GetEmailIdentityPoliciesRequestRequestTypeDef](./type_defs.md#getemailidentitypoliciesrequestrequesttypedef) 
 
-### get_email_template
+### get\_email\_template
 
 Displays the template object (which includes the subject line, HTML part and
 text part) for the template you specify.
 
-Type annotations for `boto3.client("sesv2").get_email_template` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_template)
 
-Boto3 documentation:
-[SESV2.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_email_template)
+```python title="Method definition"
+def get_email_template(
+    self,
+    *,
+    TemplateName: str,
+) -> GetEmailTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEmailTemplateRequestRequestTypeDef](./type_defs.md#getemailtemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetEmailTemplateResponseTypeDef](./type_defs.md#getemailtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[GetEmailTemplateResponseTypeDef](./type_defs.md#getemailtemplateresponsetypedef).
+parent.get_email_template(**kwargs)
+```
 
-<a id="get\_import\_job"></a>
+1. See [:material-code-braces: GetEmailTemplateRequestRequestTypeDef](./type_defs.md#getemailtemplaterequestrequesttypedef) 
 
-### get_import_job
+### get\_import\_job
 
 Provides information about an import job.
 
-Type annotations for `boto3.client("sesv2").get_import_job` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_import_job)
 
-Boto3 documentation:
-[SESV2.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_import_job)
+```python title="Method definition"
+def get_import_job(
+    self,
+    *,
+    JobId: str,
+) -> GetImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImportJobRequestRequestTypeDef](./type_defs.md#getimportjobrequestrequesttypedef).
+1. See [:material-code-braces: GetImportJobResponseTypeDef](./type_defs.md#getimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetImportJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetImportJobResponseTypeDef](./type_defs.md#getimportjobresponsetypedef).
+parent.get_import_job(**kwargs)
+```
 
-<a id="get\_suppressed\_destination"></a>
+1. See [:material-code-braces: GetImportJobRequestRequestTypeDef](./type_defs.md#getimportjobrequestrequesttypedef) 
 
-### get_suppressed_destination
+### get\_suppressed\_destination
 
 Retrieves information about a specific email address that's on the suppression
 list for your account.
 
-Type annotations for `boto3.client("sesv2").get_suppressed_destination` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").get_suppressed_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_suppressed_destination)
 
-Boto3 documentation:
-[SESV2.Client.get_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_suppressed_destination)
+```python title="Method definition"
+def get_suppressed_destination(
+    self,
+    *,
+    EmailAddress: str,
+) -> GetSuppressedDestinationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSuppressedDestinationRequestRequestTypeDef](./type_defs.md#getsuppresseddestinationrequestrequesttypedef).
+1. See [:material-code-braces: GetSuppressedDestinationResponseTypeDef](./type_defs.md#getsuppresseddestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EmailAddress`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSuppressedDestinationRequestRequestTypeDef = {  # (1)
+    "EmailAddress": ...,
+}
 
-Returns
-[GetSuppressedDestinationResponseTypeDef](./type_defs.md#getsuppresseddestinationresponsetypedef).
+parent.get_suppressed_destination(**kwargs)
+```
 
-<a id="list\_configuration\_sets"></a>
+1. See [:material-code-braces: GetSuppressedDestinationRequestRequestTypeDef](./type_defs.md#getsuppresseddestinationrequestrequesttypedef) 
 
-### list_configuration_sets
+### list\_configuration\_sets
 
 List all of the configuration sets associated with your account in the current
 region.
 
-Type annotations for `boto3.client("sesv2").list_configuration_sets` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_configuration_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_configuration_sets)
 
-Boto3 documentation:
-[SESV2.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_configuration_sets)
+```python title="Method definition"
+def list_configuration_sets(
+    self,
+    *,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListConfigurationSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConfigurationSetsRequestRequestTypeDef](./type_defs.md#listconfigurationsetsrequestrequesttypedef).
+1. See [:material-code-braces: ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListConfigurationSetsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef).
+parent.list_configuration_sets(**kwargs)
+```
 
-<a id="list\_contact\_lists"></a>
+1. See [:material-code-braces: ListConfigurationSetsRequestRequestTypeDef](./type_defs.md#listconfigurationsetsrequestrequesttypedef) 
 
-### list_contact_lists
+### list\_contact\_lists
 
 Lists all of the contact lists available.
 
-Type annotations for `boto3.client("sesv2").list_contact_lists` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_contact_lists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contact_lists)
 
-Boto3 documentation:
-[SESV2.Client.list_contact_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contact_lists)
+```python title="Method definition"
+def list_contact_lists(
+    self,
+    *,
+    PageSize: int = ...,
+    NextToken: str = ...,
+) -> ListContactListsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListContactListsRequestRequestTypeDef](./type_defs.md#listcontactlistsrequestrequesttypedef).
+1. See [:material-code-braces: ListContactListsResponseTypeDef](./type_defs.md#listcontactlistsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PageSize`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListContactListsRequestRequestTypeDef = {  # (1)
+    "PageSize": ...,
+}
 
-Returns
-[ListContactListsResponseTypeDef](./type_defs.md#listcontactlistsresponsetypedef).
+parent.list_contact_lists(**kwargs)
+```
 
-<a id="list\_contacts"></a>
+1. See [:material-code-braces: ListContactListsRequestRequestTypeDef](./type_defs.md#listcontactlistsrequestrequesttypedef) 
 
-### list_contacts
+### list\_contacts
 
 Lists the contacts present in a specific contact list.
 
-Type annotations for `boto3.client("sesv2").list_contacts` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_contacts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contacts)
 
-Boto3 documentation:
-[SESV2.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_contacts)
+```python title="Method definition"
+def list_contacts(
+    self,
+    *,
+    ContactListName: str,
+    Filter: ListContactsFilterTypeDef = ...,  # (1)
+    PageSize: int = ...,
+    NextToken: str = ...,
+) -> ListContactsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef).
+1. See [:material-code-braces: ListContactsFilterTypeDef](./type_defs.md#listcontactsfiltertypedef) 
+2. See [:material-code-braces: ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ContactListName`: `str` *(required)*
-- `Filter`:
-  [ListContactsFilterTypeDef](./type_defs.md#listcontactsfiltertypedef)
-- `PageSize`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListContactsRequestRequestTypeDef = {  # (1)
+    "ContactListName": ...,
+}
 
-Returns
-[ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef).
+parent.list_contacts(**kwargs)
+```
 
-<a id="list\_custom\_verification\_email\_templates"></a>
+1. See [:material-code-braces: ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef) 
 
-### list_custom_verification_email_templates
+### list\_custom\_verification\_email\_templates
 
 Lists the existing custom verification email templates for your account in the
 current Amazon Web Services Region.
 
-Type annotations for
-`boto3.client("sesv2").list_custom_verification_email_templates` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_custom_verification_email_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_custom_verification_email_templates)
 
-Boto3 documentation:
-[SESV2.Client.list_custom_verification_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_custom_verification_email_templates)
+```python title="Method definition"
+def list_custom_verification_email_templates(
+    self,
+    *,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListCustomVerificationEmailTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomVerificationEmailTemplatesRequestRequestTypeDef](./type_defs.md#listcustomverificationemailtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCustomVerificationEmailTemplatesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef).
+parent.list_custom_verification_email_templates(**kwargs)
+```
 
-<a id="list\_dedicated\_ip\_pools"></a>
+1. See [:material-code-braces: ListCustomVerificationEmailTemplatesRequestRequestTypeDef](./type_defs.md#listcustomverificationemailtemplatesrequestrequesttypedef) 
 
-### list_dedicated_ip_pools
+### list\_dedicated\_ip\_pools
 
 List all of the dedicated IP pools that exist in your Amazon Web Services
 account in the current Region.
 
-Type annotations for `boto3.client("sesv2").list_dedicated_ip_pools` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_dedicated_ip_pools` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_dedicated_ip_pools)
 
-Boto3 documentation:
-[SESV2.Client.list_dedicated_ip_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_dedicated_ip_pools)
+```python title="Method definition"
+def list_dedicated_ip_pools(
+    self,
+    *,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListDedicatedIpPoolsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDedicatedIpPoolsRequestRequestTypeDef](./type_defs.md#listdedicatedippoolsrequestrequesttypedef).
+1. See [:material-code-braces: ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDedicatedIpPoolsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef).
+parent.list_dedicated_ip_pools(**kwargs)
+```
 
-<a id="list\_deliverability\_test\_reports"></a>
+1. See [:material-code-braces: ListDedicatedIpPoolsRequestRequestTypeDef](./type_defs.md#listdedicatedippoolsrequestrequesttypedef) 
 
-### list_deliverability_test_reports
+### list\_deliverability\_test\_reports
 
 Show a list of the predictive inbox placement tests that you've performed,
 regardless of their statuses.
 
-Type annotations for `boto3.client("sesv2").list_deliverability_test_reports`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_deliverability_test_reports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_deliverability_test_reports)
 
-Boto3 documentation:
-[SESV2.Client.list_deliverability_test_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_deliverability_test_reports)
+```python title="Method definition"
+def list_deliverability_test_reports(
+    self,
+    *,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListDeliverabilityTestReportsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDeliverabilityTestReportsRequestRequestTypeDef](./type_defs.md#listdeliverabilitytestreportsrequestrequesttypedef).
+1. See [:material-code-braces: ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDeliverabilityTestReportsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef).
+parent.list_deliverability_test_reports(**kwargs)
+```
 
-<a id="list\_domain\_deliverability\_campaigns"></a>
+1. See [:material-code-braces: ListDeliverabilityTestReportsRequestRequestTypeDef](./type_defs.md#listdeliverabilitytestreportsrequestrequesttypedef) 
 
-### list_domain_deliverability_campaigns
+### list\_domain\_deliverability\_campaigns
 
 Retrieve deliverability data for all the campaigns that used a specific domain
 to send email during a specified time range.
 
-Type annotations for
-`boto3.client("sesv2").list_domain_deliverability_campaigns` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_domain_deliverability_campaigns` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_domain_deliverability_campaigns)
 
-Boto3 documentation:
-[SESV2.Client.list_domain_deliverability_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_domain_deliverability_campaigns)
+```python title="Method definition"
+def list_domain_deliverability_campaigns(
+    self,
+    *,
+    StartDate: Union[datetime, str],
+    EndDate: Union[datetime, str],
+    SubscribedDomain: str,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListDomainDeliverabilityCampaignsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainDeliverabilityCampaignsRequestRequestTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsrequestrequesttypedef).
+1. See [:material-code-braces: ListDomainDeliverabilityCampaignsResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StartDate`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndDate`: `Union`\[`datetime`, `str`\] *(required)*
-- `SubscribedDomain`: `str` *(required)*
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDomainDeliverabilityCampaignsRequestRequestTypeDef = {  # (1)
+    "StartDate": ...,
+    "EndDate": ...,
+    "SubscribedDomain": ...,
+}
 
-Returns
-[ListDomainDeliverabilityCampaignsResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponsetypedef).
+parent.list_domain_deliverability_campaigns(**kwargs)
+```
 
-<a id="list\_email\_identities"></a>
+1. See [:material-code-braces: ListDomainDeliverabilityCampaignsRequestRequestTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsrequestrequesttypedef) 
 
-### list_email_identities
+### list\_email\_identities
 
 Returns a list of all of the email identities that are associated with your
 Amazon Web Services account.
 
-Type annotations for `boto3.client("sesv2").list_email_identities` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_email_identities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_identities)
 
-Boto3 documentation:
-[SESV2.Client.list_email_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_identities)
+```python title="Method definition"
+def list_email_identities(
+    self,
+    *,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListEmailIdentitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEmailIdentitiesRequestRequestTypeDef](./type_defs.md#listemailidentitiesrequestrequesttypedef).
+1. See [:material-code-braces: ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEmailIdentitiesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef).
+parent.list_email_identities(**kwargs)
+```
 
-<a id="list\_email\_templates"></a>
+1. See [:material-code-braces: ListEmailIdentitiesRequestRequestTypeDef](./type_defs.md#listemailidentitiesrequestrequesttypedef) 
 
-### list_email_templates
+### list\_email\_templates
 
 Lists the email templates present in your Amazon SES account in the current
 Amazon Web Services Region.
 
-Type annotations for `boto3.client("sesv2").list_email_templates` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_email_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_templates)
 
-Boto3 documentation:
-[SESV2.Client.list_email_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_email_templates)
+```python title="Method definition"
+def list_email_templates(
+    self,
+    *,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListEmailTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEmailTemplatesRequestRequestTypeDef](./type_defs.md#listemailtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: ListEmailTemplatesResponseTypeDef](./type_defs.md#listemailtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEmailTemplatesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListEmailTemplatesResponseTypeDef](./type_defs.md#listemailtemplatesresponsetypedef).
+parent.list_email_templates(**kwargs)
+```
 
-<a id="list\_import\_jobs"></a>
+1. See [:material-code-braces: ListEmailTemplatesRequestRequestTypeDef](./type_defs.md#listemailtemplatesrequestrequesttypedef) 
 
-### list_import_jobs
+### list\_import\_jobs
 
 Lists all of the import jobs.
 
-Type annotations for `boto3.client("sesv2").list_import_jobs` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_import_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_import_jobs)
 
-Boto3 documentation:
-[SESV2.Client.list_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_import_jobs)
+```python title="Method definition"
+def list_import_jobs(
+    self,
+    *,
+    ImportDestinationType: ImportDestinationTypeType = ...,  # (1)
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListImportJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListImportJobsRequestRequestTypeDef](./type_defs.md#listimportjobsrequestrequesttypedef).
+1. See [:material-code-brackets: ImportDestinationTypeType](./literals.md#importdestinationtypetype) 
+2. See [:material-code-braces: ListImportJobsResponseTypeDef](./type_defs.md#listimportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ImportDestinationType`:
-  [ImportDestinationTypeType](./literals.md#importdestinationtypetype)
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListImportJobsRequestRequestTypeDef = {  # (1)
+    "ImportDestinationType": ...,
+}
 
-Returns
-[ListImportJobsResponseTypeDef](./type_defs.md#listimportjobsresponsetypedef).
+parent.list_import_jobs(**kwargs)
+```
 
-<a id="list\_suppressed\_destinations"></a>
+1. See [:material-code-braces: ListImportJobsRequestRequestTypeDef](./type_defs.md#listimportjobsrequestrequesttypedef) 
 
-### list_suppressed_destinations
+### list\_suppressed\_destinations
 
 Retrieves a list of email addresses that are on the suppression list for your
 account.
 
-Type annotations for `boto3.client("sesv2").list_suppressed_destinations`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_suppressed_destinations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_suppressed_destinations)
 
-Boto3 documentation:
-[SESV2.Client.list_suppressed_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_suppressed_destinations)
+```python title="Method definition"
+def list_suppressed_destinations(
+    self,
+    *,
+    Reasons: Sequence[SuppressionListReasonType] = ...,  # (1)
+    StartDate: Union[datetime, str] = ...,
+    EndDate: Union[datetime, str] = ...,
+    NextToken: str = ...,
+    PageSize: int = ...,
+) -> ListSuppressedDestinationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSuppressedDestinationsRequestRequestTypeDef](./type_defs.md#listsuppresseddestinationsrequestrequesttypedef).
+1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
+2. See [:material-code-braces: ListSuppressedDestinationsResponseTypeDef](./type_defs.md#listsuppresseddestinationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Reasons`:
-  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
-- `StartDate`: `Union`\[`datetime`, `str`\]
-- `EndDate`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSuppressedDestinationsRequestRequestTypeDef = {  # (1)
+    "Reasons": ...,
+}
 
-Returns
-[ListSuppressedDestinationsResponseTypeDef](./type_defs.md#listsuppresseddestinationsresponsetypedef).
+parent.list_suppressed_destinations(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSuppressedDestinationsRequestRequestTypeDef](./type_defs.md#listsuppresseddestinationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieve a list of the tags (keys and values) that are associated with a
 specified resource.
 
-Type annotations for `boto3.client("sesv2").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[SESV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_account\_dedicated\_ip\_warmup\_attributes"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_account_dedicated_ip_warmup_attributes
+### put\_account\_dedicated\_ip\_warmup\_attributes
 
 Enable or disable the automatic warm-up feature for dedicated IP addresses.
 
-Type annotations for
-`boto3.client("sesv2").put_account_dedicated_ip_warmup_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_account_dedicated_ip_warmup_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_dedicated_ip_warmup_attributes)
 
-Boto3 documentation:
-[SESV2.Client.put_account_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_dedicated_ip_warmup_attributes)
+```python title="Method definition"
+def put_account_dedicated_ip_warmup_attributes(
+    self,
+    *,
+    AutoWarmupEnabled: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef](./type_defs.md#putaccountdedicatedipwarmupattributesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoWarmupEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef = {  # (1)
+    "AutoWarmupEnabled": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_account_dedicated_ip_warmup_attributes(**kwargs)
+```
 
-<a id="put\_account\_details"></a>
+1. See [:material-code-braces: PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef](./type_defs.md#putaccountdedicatedipwarmupattributesrequestrequesttypedef) 
 
-### put_account_details
+### put\_account\_details
 
 Update your Amazon SES account details.
 
-Type annotations for `boto3.client("sesv2").put_account_details` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_account_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_details)
 
-Boto3 documentation:
-[SESV2.Client.put_account_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_details)
+```python title="Method definition"
+def put_account_details(
+    self,
+    *,
+    MailType: MailTypeType,  # (1)
+    WebsiteURL: str,
+    UseCaseDescription: str,
+    ContactLanguage: ContactLanguageType = ...,  # (2)
+    AdditionalContactEmailAddresses: Sequence[str] = ...,
+    ProductionAccessEnabled: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAccountDetailsRequestRequestTypeDef](./type_defs.md#putaccountdetailsrequestrequesttypedef).
+1. See [:material-code-brackets: MailTypeType](./literals.md#mailtypetype) 
+2. See [:material-code-brackets: ContactLanguageType](./literals.md#contactlanguagetype) 
 
-Keyword-only arguments:
 
-- `MailType`: [MailTypeType](./literals.md#mailtypetype) *(required)*
-- `WebsiteURL`: `str` *(required)*
-- `UseCaseDescription`: `str` *(required)*
-- `ContactLanguage`: [ContactLanguageType](./literals.md#contactlanguagetype)
-- `AdditionalContactEmailAddresses`: `Sequence`\[`str`\]
-- `ProductionAccessEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutAccountDetailsRequestRequestTypeDef = {  # (1)
+    "MailType": ...,
+    "WebsiteURL": ...,
+    "UseCaseDescription": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_account_details(**kwargs)
+```
 
-<a id="put\_account\_sending\_attributes"></a>
+1. See [:material-code-braces: PutAccountDetailsRequestRequestTypeDef](./type_defs.md#putaccountdetailsrequestrequesttypedef) 
 
-### put_account_sending_attributes
+### put\_account\_sending\_attributes
 
 Enable or disable the ability of your account to send email.
 
-Type annotations for `boto3.client("sesv2").put_account_sending_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_account_sending_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_sending_attributes)
 
-Boto3 documentation:
-[SESV2.Client.put_account_sending_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_sending_attributes)
+```python title="Method definition"
+def put_account_sending_attributes(
+    self,
+    *,
+    SendingEnabled: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAccountSendingAttributesRequestRequestTypeDef](./type_defs.md#putaccountsendingattributesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SendingEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutAccountSendingAttributesRequestRequestTypeDef = {  # (1)
+    "SendingEnabled": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_account_sending_attributes(**kwargs)
+```
 
-<a id="put\_account\_suppression\_attributes"></a>
+1. See [:material-code-braces: PutAccountSendingAttributesRequestRequestTypeDef](./type_defs.md#putaccountsendingattributesrequestrequesttypedef) 
 
-### put_account_suppression_attributes
+### put\_account\_suppression\_attributes
 
 Change the settings for the account-level suppression list.
 
-Type annotations for `boto3.client("sesv2").put_account_suppression_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_account_suppression_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_suppression_attributes)
 
-Boto3 documentation:
-[SESV2.Client.put_account_suppression_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_account_suppression_attributes)
+```python title="Method definition"
+def put_account_suppression_attributes(
+    self,
+    *,
+    SuppressedReasons: Sequence[SuppressionListReasonType] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAccountSuppressionAttributesRequestRequestTypeDef](./type_defs.md#putaccountsuppressionattributesrequestrequesttypedef).
+1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
 
-Keyword-only arguments:
 
-- `SuppressedReasons`:
-  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+```python title="Usage example with kwargs"
+kwargs: PutAccountSuppressionAttributesRequestRequestTypeDef = {  # (1)
+    "SuppressedReasons": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_account_suppression_attributes(**kwargs)
+```
 
-<a id="put\_configuration\_set\_delivery\_options"></a>
+1. See [:material-code-braces: PutAccountSuppressionAttributesRequestRequestTypeDef](./type_defs.md#putaccountsuppressionattributesrequestrequesttypedef) 
 
-### put_configuration_set_delivery_options
+### put\_configuration\_set\_delivery\_options
 
 Associate a configuration set with a dedicated IP pool.
 
-Type annotations for
-`boto3.client("sesv2").put_configuration_set_delivery_options` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_configuration_set_delivery_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_delivery_options)
 
-Boto3 documentation:
-[SESV2.Client.put_configuration_set_delivery_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_delivery_options)
+```python title="Method definition"
+def put_configuration_set_delivery_options(
+    self,
+    *,
+    ConfigurationSetName: str,
+    TlsPolicy: TlsPolicyType = ...,  # (1)
+    SendingPoolName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutConfigurationSetDeliveryOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetdeliveryoptionsrequestrequesttypedef).
+1. See [:material-code-brackets: TlsPolicyType](./literals.md#tlspolicytype) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
-- `SendingPoolName`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutConfigurationSetDeliveryOptionsRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_configuration_set_delivery_options(**kwargs)
+```
 
-<a id="put\_configuration\_set\_reputation\_options"></a>
+1. See [:material-code-braces: PutConfigurationSetDeliveryOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetdeliveryoptionsrequestrequesttypedef) 
 
-### put_configuration_set_reputation_options
+### put\_configuration\_set\_reputation\_options
 
 Enable or disable collection of reputation metrics for emails that you send
 using a particular configuration set in a specific Amazon Web Services Region.
 
-Type annotations for
-`boto3.client("sesv2").put_configuration_set_reputation_options` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_configuration_set_reputation_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_reputation_options)
 
-Boto3 documentation:
-[SESV2.Client.put_configuration_set_reputation_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_reputation_options)
+```python title="Method definition"
+def put_configuration_set_reputation_options(
+    self,
+    *,
+    ConfigurationSetName: str,
+    ReputationMetricsEnabled: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutConfigurationSetReputationOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetreputationoptionsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `ReputationMetricsEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutConfigurationSetReputationOptionsRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_configuration_set_reputation_options(**kwargs)
+```
 
-<a id="put\_configuration\_set\_sending\_options"></a>
+1. See [:material-code-braces: PutConfigurationSetReputationOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetreputationoptionsrequestrequesttypedef) 
 
-### put_configuration_set_sending_options
+### put\_configuration\_set\_sending\_options
 
-Enable or disable email sending for messages that use a particular
-configuration set in a specific Amazon Web Services Region.
+Enable or disable email sending for messages that use a particular configuration
+set in a specific Amazon Web Services Region.
 
-Type annotations for
-`boto3.client("sesv2").put_configuration_set_sending_options` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_configuration_set_sending_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_sending_options)
 
-Boto3 documentation:
-[SESV2.Client.put_configuration_set_sending_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_sending_options)
+```python title="Method definition"
+def put_configuration_set_sending_options(
+    self,
+    *,
+    ConfigurationSetName: str,
+    SendingEnabled: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutConfigurationSetSendingOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetsendingoptionsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `SendingEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutConfigurationSetSendingOptionsRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_configuration_set_sending_options(**kwargs)
+```
 
-<a id="put\_configuration\_set\_suppression\_options"></a>
+1. See [:material-code-braces: PutConfigurationSetSendingOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetsendingoptionsrequestrequesttypedef) 
 
-### put_configuration_set_suppression_options
+### put\_configuration\_set\_suppression\_options
 
 Specify the account suppression list preferences for a configuration set.
 
-Type annotations for
-`boto3.client("sesv2").put_configuration_set_suppression_options` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_configuration_set_suppression_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_suppression_options)
 
-Boto3 documentation:
-[SESV2.Client.put_configuration_set_suppression_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_suppression_options)
+```python title="Method definition"
+def put_configuration_set_suppression_options(
+    self,
+    *,
+    ConfigurationSetName: str,
+    SuppressedReasons: Sequence[SuppressionListReasonType] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutConfigurationSetSuppressionOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetsuppressionoptionsrequestrequesttypedef).
+1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `SuppressedReasons`:
-  `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+```python title="Usage example with kwargs"
+kwargs: PutConfigurationSetSuppressionOptionsRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_configuration_set_suppression_options(**kwargs)
+```
 
-<a id="put\_configuration\_set\_tracking\_options"></a>
+1. See [:material-code-braces: PutConfigurationSetSuppressionOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsetsuppressionoptionsrequestrequesttypedef) 
 
-### put_configuration_set_tracking_options
+### put\_configuration\_set\_tracking\_options
 
 Specify a custom domain to use for open and click tracking elements in email
 that you send.
 
-Type annotations for
-`boto3.client("sesv2").put_configuration_set_tracking_options` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_configuration_set_tracking_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_tracking_options)
 
-Boto3 documentation:
-[SESV2.Client.put_configuration_set_tracking_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_configuration_set_tracking_options)
+```python title="Method definition"
+def put_configuration_set_tracking_options(
+    self,
+    *,
+    ConfigurationSetName: str,
+    CustomRedirectDomain: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutConfigurationSetTrackingOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsettrackingoptionsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `CustomRedirectDomain`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutConfigurationSetTrackingOptionsRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_configuration_set_tracking_options(**kwargs)
+```
 
-<a id="put\_dedicated\_ip\_in\_pool"></a>
+1. See [:material-code-braces: PutConfigurationSetTrackingOptionsRequestRequestTypeDef](./type_defs.md#putconfigurationsettrackingoptionsrequestrequesttypedef) 
 
-### put_dedicated_ip_in_pool
+### put\_dedicated\_ip\_in\_pool
 
 Move a dedicated IP address to an existing dedicated IP pool.
 
-Type annotations for `boto3.client("sesv2").put_dedicated_ip_in_pool` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_dedicated_ip_in_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_in_pool)
 
-Boto3 documentation:
-[SESV2.Client.put_dedicated_ip_in_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_in_pool)
+```python title="Method definition"
+def put_dedicated_ip_in_pool(
+    self,
+    *,
+    Ip: str,
+    DestinationPoolName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutDedicatedIpInPoolRequestRequestTypeDef](./type_defs.md#putdedicatedipinpoolrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Ip`: `str` *(required)*
-- `DestinationPoolName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutDedicatedIpInPoolRequestRequestTypeDef = {  # (1)
+    "Ip": ...,
+    "DestinationPoolName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_dedicated_ip_in_pool(**kwargs)
+```
 
-<a id="put\_dedicated\_ip\_warmup\_attributes"></a>
+1. See [:material-code-braces: PutDedicatedIpInPoolRequestRequestTypeDef](./type_defs.md#putdedicatedipinpoolrequestrequesttypedef) 
 
-### put_dedicated_ip_warmup_attributes
+### put\_dedicated\_ip\_warmup\_attributes
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/sesv2-2019-09-27/PutDedicatedIpWarmupAttributes).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/sesv2-2019-09-27/PutDedicatedIpWarmupAttributes).
 
-Type annotations for `boto3.client("sesv2").put_dedicated_ip_warmup_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_dedicated_ip_warmup_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_warmup_attributes)
 
-Boto3 documentation:
-[SESV2.Client.put_dedicated_ip_warmup_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_dedicated_ip_warmup_attributes)
+```python title="Method definition"
+def put_dedicated_ip_warmup_attributes(
+    self,
+    *,
+    Ip: str,
+    WarmupPercentage: int,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutDedicatedIpWarmupAttributesRequestRequestTypeDef](./type_defs.md#putdedicatedipwarmupattributesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Ip`: `str` *(required)*
-- `WarmupPercentage`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutDedicatedIpWarmupAttributesRequestRequestTypeDef = {  # (1)
+    "Ip": ...,
+    "WarmupPercentage": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_dedicated_ip_warmup_attributes(**kwargs)
+```
 
-<a id="put\_deliverability\_dashboard\_option"></a>
+1. See [:material-code-braces: PutDedicatedIpWarmupAttributesRequestRequestTypeDef](./type_defs.md#putdedicatedipwarmupattributesrequestrequesttypedef) 
 
-### put_deliverability_dashboard_option
+### put\_deliverability\_dashboard\_option
 
 Enable or disable the Deliverability dashboard.
 
-Type annotations for
-`boto3.client("sesv2").put_deliverability_dashboard_option` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_deliverability_dashboard_option` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_deliverability_dashboard_option)
 
-Boto3 documentation:
-[SESV2.Client.put_deliverability_dashboard_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_deliverability_dashboard_option)
+```python title="Method definition"
+def put_deliverability_dashboard_option(
+    self,
+    *,
+    DashboardEnabled: bool,
+    SubscribedDomains: Sequence[DomainDeliverabilityTrackingOptionTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutDeliverabilityDashboardOptionRequestRequestTypeDef](./type_defs.md#putdeliverabilitydashboardoptionrequestrequesttypedef).
+1. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
 
-Keyword-only arguments:
 
-- `DashboardEnabled`: `bool` *(required)*
-- `SubscribedDomains`:
-  `Sequence`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutDeliverabilityDashboardOptionRequestRequestTypeDef = {  # (1)
+    "DashboardEnabled": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_deliverability_dashboard_option(**kwargs)
+```
 
-<a id="put\_email\_identity\_configuration\_set\_attributes"></a>
+1. See [:material-code-braces: PutDeliverabilityDashboardOptionRequestRequestTypeDef](./type_defs.md#putdeliverabilitydashboardoptionrequestrequesttypedef) 
 
-### put_email_identity_configuration_set_attributes
+### put\_email\_identity\_configuration\_set\_attributes
 
 Used to associate a configuration set with an email identity.
 
-Type annotations for
-`boto3.client("sesv2").put_email_identity_configuration_set_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_email_identity_configuration_set_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_configuration_set_attributes)
 
-Boto3 documentation:
-[SESV2.Client.put_email_identity_configuration_set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_configuration_set_attributes)
+```python title="Method definition"
+def put_email_identity_configuration_set_attributes(
+    self,
+    *,
+    EmailIdentity: str,
+    ConfigurationSetName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutEmailIdentityConfigurationSetAttributesRequestRequestTypeDef](./type_defs.md#putemailidentityconfigurationsetattributesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
-- `ConfigurationSetName`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutEmailIdentityConfigurationSetAttributesRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_email_identity_configuration_set_attributes(**kwargs)
+```
 
-<a id="put\_email\_identity\_dkim\_attributes"></a>
+1. See [:material-code-braces: PutEmailIdentityConfigurationSetAttributesRequestRequestTypeDef](./type_defs.md#putemailidentityconfigurationsetattributesrequestrequesttypedef) 
 
-### put_email_identity_dkim_attributes
+### put\_email\_identity\_dkim\_attributes
 
 Used to enable or disable DKIM authentication for an email identity.
 
-Type annotations for `boto3.client("sesv2").put_email_identity_dkim_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_email_identity_dkim_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_attributes)
 
-Boto3 documentation:
-[SESV2.Client.put_email_identity_dkim_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_attributes)
+```python title="Method definition"
+def put_email_identity_dkim_attributes(
+    self,
+    *,
+    EmailIdentity: str,
+    SigningEnabled: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutEmailIdentityDkimAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitydkimattributesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
-- `SigningEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutEmailIdentityDkimAttributesRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_email_identity_dkim_attributes(**kwargs)
+```
 
-<a id="put\_email\_identity\_dkim\_signing\_attributes"></a>
+1. See [:material-code-braces: PutEmailIdentityDkimAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitydkimattributesrequestrequesttypedef) 
 
-### put_email_identity_dkim_signing_attributes
+### put\_email\_identity\_dkim\_signing\_attributes
 
-Used to configure or change the DKIM authentication settings for an email
-domain identity.
+Used to configure or change the DKIM authentication settings for an email domain
+identity.
 
-Type annotations for
-`boto3.client("sesv2").put_email_identity_dkim_signing_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_email_identity_dkim_signing_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_signing_attributes)
 
-Boto3 documentation:
-[SESV2.Client.put_email_identity_dkim_signing_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_dkim_signing_attributes)
+```python title="Method definition"
+def put_email_identity_dkim_signing_attributes(
+    self,
+    *,
+    EmailIdentity: str,
+    SigningAttributesOrigin: DkimSigningAttributesOriginType,  # (1)
+    SigningAttributes: DkimSigningAttributesTypeDef = ...,  # (2)
+) -> PutEmailIdentityDkimSigningAttributesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitydkimsigningattributesrequestrequesttypedef).
+1. See [:material-code-brackets: DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype) 
+2. See [:material-code-braces: DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef) 
+3. See [:material-code-braces: PutEmailIdentityDkimSigningAttributesResponseTypeDef](./type_defs.md#putemailidentitydkimsigningattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
-- `SigningAttributesOrigin`:
-  [DkimSigningAttributesOriginType](./literals.md#dkimsigningattributesorigintype)
-  *(required)*
-- `SigningAttributes`:
-  [DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef)
+```python title="Usage example with kwargs"
+kwargs: PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+    "SigningAttributesOrigin": ...,
+}
 
-Returns
-[PutEmailIdentityDkimSigningAttributesResponseTypeDef](./type_defs.md#putemailidentitydkimsigningattributesresponsetypedef).
+parent.put_email_identity_dkim_signing_attributes(**kwargs)
+```
 
-<a id="put\_email\_identity\_feedback\_attributes"></a>
+1. See [:material-code-braces: PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitydkimsigningattributesrequestrequesttypedef) 
 
-### put_email_identity_feedback_attributes
+### put\_email\_identity\_feedback\_attributes
 
 Used to enable or disable feedback forwarding for an identity.
 
-Type annotations for
-`boto3.client("sesv2").put_email_identity_feedback_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_email_identity_feedback_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_feedback_attributes)
 
-Boto3 documentation:
-[SESV2.Client.put_email_identity_feedback_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_feedback_attributes)
+```python title="Method definition"
+def put_email_identity_feedback_attributes(
+    self,
+    *,
+    EmailIdentity: str,
+    EmailForwardingEnabled: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutEmailIdentityFeedbackAttributesRequestRequestTypeDef](./type_defs.md#putemailidentityfeedbackattributesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
-- `EmailForwardingEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutEmailIdentityFeedbackAttributesRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_email_identity_feedback_attributes(**kwargs)
+```
 
-<a id="put\_email\_identity\_mail\_from\_attributes"></a>
+1. See [:material-code-braces: PutEmailIdentityFeedbackAttributesRequestRequestTypeDef](./type_defs.md#putemailidentityfeedbackattributesrequestrequesttypedef) 
 
-### put_email_identity_mail_from_attributes
+### put\_email\_identity\_mail\_from\_attributes
 
-Used to enable or disable the custom Mail-From domain configuration for an
-email identity.
+Used to enable or disable the custom Mail-From domain configuration for an email
+identity.
 
-Type annotations for
-`boto3.client("sesv2").put_email_identity_mail_from_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_email_identity_mail_from_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_mail_from_attributes)
 
-Boto3 documentation:
-[SESV2.Client.put_email_identity_mail_from_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_email_identity_mail_from_attributes)
+```python title="Method definition"
+def put_email_identity_mail_from_attributes(
+    self,
+    *,
+    EmailIdentity: str,
+    MailFromDomain: str = ...,
+    BehaviorOnMxFailure: BehaviorOnMxFailureType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutEmailIdentityMailFromAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitymailfromattributesrequestrequesttypedef).
+1. See [:material-code-brackets: BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype) 
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
-- `MailFromDomain`: `str`
-- `BehaviorOnMxFailure`:
-  [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
+```python title="Usage example with kwargs"
+kwargs: PutEmailIdentityMailFromAttributesRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_email_identity_mail_from_attributes(**kwargs)
+```
 
-<a id="put\_suppressed\_destination"></a>
+1. See [:material-code-braces: PutEmailIdentityMailFromAttributesRequestRequestTypeDef](./type_defs.md#putemailidentitymailfromattributesrequestrequesttypedef) 
 
-### put_suppressed_destination
+### put\_suppressed\_destination
 
 Adds an email address to the suppression list for your account.
 
-Type annotations for `boto3.client("sesv2").put_suppressed_destination` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").put_suppressed_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_suppressed_destination)
 
-Boto3 documentation:
-[SESV2.Client.put_suppressed_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.put_suppressed_destination)
+```python title="Method definition"
+def put_suppressed_destination(
+    self,
+    *,
+    EmailAddress: str,
+    Reason: SuppressionListReasonType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutSuppressedDestinationRequestRequestTypeDef](./type_defs.md#putsuppresseddestinationrequestrequesttypedef).
+1. See [:material-code-brackets: SuppressionListReasonType](./literals.md#suppressionlistreasontype) 
 
-Keyword-only arguments:
 
-- `EmailAddress`: `str` *(required)*
-- `Reason`:
-  [SuppressionListReasonType](./literals.md#suppressionlistreasontype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutSuppressedDestinationRequestRequestTypeDef = {  # (1)
+    "EmailAddress": ...,
+    "Reason": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_suppressed_destination(**kwargs)
+```
 
-<a id="send\_bulk\_email"></a>
+1. See [:material-code-braces: PutSuppressedDestinationRequestRequestTypeDef](./type_defs.md#putsuppresseddestinationrequestrequesttypedef) 
 
-### send_bulk_email
+### send\_bulk\_email
 
 Composes an email message to multiple destinations.
 
-Type annotations for `boto3.client("sesv2").send_bulk_email` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").send_bulk_email` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_bulk_email)
 
-Boto3 documentation:
-[SESV2.Client.send_bulk_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_bulk_email)
+```python title="Method definition"
+def send_bulk_email(
+    self,
+    *,
+    DefaultContent: BulkEmailContentTypeDef,  # (1)
+    BulkEmailEntries: Sequence[BulkEmailEntryTypeDef],  # (2)
+    FromEmailAddress: str = ...,
+    FromEmailAddressIdentityArn: str = ...,
+    ReplyToAddresses: Sequence[str] = ...,
+    FeedbackForwardingEmailAddress: str = ...,
+    FeedbackForwardingEmailAddressIdentityArn: str = ...,
+    DefaultEmailTags: Sequence[MessageTagTypeDef] = ...,  # (3)
+    ConfigurationSetName: str = ...,
+) -> SendBulkEmailResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[SendBulkEmailRequestRequestTypeDef](./type_defs.md#sendbulkemailrequestrequesttypedef).
+1. See [:material-code-braces: BulkEmailContentTypeDef](./type_defs.md#bulkemailcontenttypedef) 
+2. See [:material-code-braces: BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef) 
+3. See [:material-code-braces: MessageTagTypeDef](./type_defs.md#messagetagtypedef) 
+4. See [:material-code-braces: SendBulkEmailResponseTypeDef](./type_defs.md#sendbulkemailresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DefaultContent`:
-  [BulkEmailContentTypeDef](./type_defs.md#bulkemailcontenttypedef)
-  *(required)*
-- `BulkEmailEntries`:
-  `Sequence`\[[BulkEmailEntryTypeDef](./type_defs.md#bulkemailentrytypedef)\]
-  *(required)*
-- `FromEmailAddress`: `str`
-- `FromEmailAddressIdentityArn`: `str`
-- `ReplyToAddresses`: `Sequence`\[`str`\]
-- `FeedbackForwardingEmailAddress`: `str`
-- `FeedbackForwardingEmailAddressIdentityArn`: `str`
-- `DefaultEmailTags`:
-  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
-- `ConfigurationSetName`: `str`
+```python title="Usage example with kwargs"
+kwargs: SendBulkEmailRequestRequestTypeDef = {  # (1)
+    "DefaultContent": ...,
+    "BulkEmailEntries": ...,
+}
 
-Returns
-[SendBulkEmailResponseTypeDef](./type_defs.md#sendbulkemailresponsetypedef).
+parent.send_bulk_email(**kwargs)
+```
 
-<a id="send\_custom\_verification\_email"></a>
+1. See [:material-code-braces: SendBulkEmailRequestRequestTypeDef](./type_defs.md#sendbulkemailrequestrequesttypedef) 
 
-### send_custom_verification_email
+### send\_custom\_verification\_email
 
 Adds an email address to the list of identities for your Amazon SES account in
 the current Amazon Web Services Region and attempts to verify it.
 
-Type annotations for `boto3.client("sesv2").send_custom_verification_email`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").send_custom_verification_email` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_custom_verification_email)
 
-Boto3 documentation:
-[SESV2.Client.send_custom_verification_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_custom_verification_email)
+```python title="Method definition"
+def send_custom_verification_email(
+    self,
+    *,
+    EmailAddress: str,
+    TemplateName: str,
+    ConfigurationSetName: str = ...,
+) -> SendCustomVerificationEmailResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SendCustomVerificationEmailRequestRequestTypeDef](./type_defs.md#sendcustomverificationemailrequestrequesttypedef).
+1. See [:material-code-braces: SendCustomVerificationEmailResponseTypeDef](./type_defs.md#sendcustomverificationemailresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EmailAddress`: `str` *(required)*
-- `TemplateName`: `str` *(required)*
-- `ConfigurationSetName`: `str`
+```python title="Usage example with kwargs"
+kwargs: SendCustomVerificationEmailRequestRequestTypeDef = {  # (1)
+    "EmailAddress": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[SendCustomVerificationEmailResponseTypeDef](./type_defs.md#sendcustomverificationemailresponsetypedef).
+parent.send_custom_verification_email(**kwargs)
+```
 
-<a id="send\_email"></a>
+1. See [:material-code-braces: SendCustomVerificationEmailRequestRequestTypeDef](./type_defs.md#sendcustomverificationemailrequestrequesttypedef) 
 
-### send_email
+### send\_email
 
 Sends an email message.
 
-Type annotations for `boto3.client("sesv2").send_email` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").send_email` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_email)
 
-Boto3 documentation:
-[SESV2.Client.send_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.send_email)
+```python title="Method definition"
+def send_email(
+    self,
+    *,
+    Content: EmailContentTypeDef,  # (1)
+    FromEmailAddress: str = ...,
+    FromEmailAddressIdentityArn: str = ...,
+    Destination: DestinationTypeDef = ...,  # (2)
+    ReplyToAddresses: Sequence[str] = ...,
+    FeedbackForwardingEmailAddress: str = ...,
+    FeedbackForwardingEmailAddressIdentityArn: str = ...,
+    EmailTags: Sequence[MessageTagTypeDef] = ...,  # (3)
+    ConfigurationSetName: str = ...,
+    ListManagementOptions: ListManagementOptionsTypeDef = ...,  # (4)
+) -> SendEmailResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[SendEmailRequestRequestTypeDef](./type_defs.md#sendemailrequestrequesttypedef).
+1. See [:material-code-braces: EmailContentTypeDef](./type_defs.md#emailcontenttypedef) 
+2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+3. See [:material-code-braces: MessageTagTypeDef](./type_defs.md#messagetagtypedef) 
+4. See [:material-code-braces: ListManagementOptionsTypeDef](./type_defs.md#listmanagementoptionstypedef) 
+5. See [:material-code-braces: SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
-  *(required)*
-- `FromEmailAddress`: `str`
-- `FromEmailAddressIdentityArn`: `str`
-- `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-- `ReplyToAddresses`: `Sequence`\[`str`\]
-- `FeedbackForwardingEmailAddress`: `str`
-- `FeedbackForwardingEmailAddressIdentityArn`: `str`
-- `EmailTags`:
-  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
-- `ConfigurationSetName`: `str`
-- `ListManagementOptions`:
-  [ListManagementOptionsTypeDef](./type_defs.md#listmanagementoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: SendEmailRequestRequestTypeDef = {  # (1)
+    "Content": ...,
+}
 
-Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
+parent.send_email(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SendEmailRequestRequestTypeDef](./type_defs.md#sendemailrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Add one or more tags (keys and values) to a specified resource.
 
-Type annotations for `boto3.client("sesv2").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.tag_resource)
 
-Boto3 documentation:
-[SESV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="test\_render\_email\_template"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### test_render_email_template
+### test\_render\_email\_template
 
 Creates a preview of the MIME content of an email when provided with a template
 and a set of replacement data.
 
-Type annotations for `boto3.client("sesv2").test_render_email_template` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").test_render_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.test_render_email_template)
 
-Boto3 documentation:
-[SESV2.Client.test_render_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.test_render_email_template)
+```python title="Method definition"
+def test_render_email_template(
+    self,
+    *,
+    TemplateName: str,
+    TemplateData: str,
+) -> TestRenderEmailTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TestRenderEmailTemplateRequestRequestTypeDef](./type_defs.md#testrenderemailtemplaterequestrequesttypedef).
+1. See [:material-code-braces: TestRenderEmailTemplateResponseTypeDef](./type_defs.md#testrenderemailtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `TemplateData`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: TestRenderEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+    "TemplateData": ...,
+}
 
-Returns
-[TestRenderEmailTemplateResponseTypeDef](./type_defs.md#testrenderemailtemplateresponsetypedef).
+parent.test_render_email_template(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TestRenderEmailTemplateRequestRequestTypeDef](./type_defs.md#testrenderemailtemplaterequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Remove one or more tags (keys and values) from a specified resource.
 
-Type annotations for `boto3.client("sesv2").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.untag_resource)
 
-Boto3 documentation:
-[SESV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_configuration\_set\_event\_destination"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_configuration_set_event_destination
+### update\_configuration\_set\_event\_destination
 
 Update the configuration of an event destination for a configuration set.
 
-Type annotations for
-`boto3.client("sesv2").update_configuration_set_event_destination` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").update_configuration_set_event_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_configuration_set_event_destination)
 
-Boto3 documentation:
-[SESV2.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_configuration_set_event_destination)
+```python title="Method definition"
+def update_configuration_set_event_destination(
+    self,
+    *,
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+    EventDestination: EventDestinationDefinitionTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequestrequesttypedef).
+1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `EventDestinationName`: `str` *(required)*
-- `EventDestination`:
-  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateConfigurationSetEventDestinationRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+    "EventDestinationName": ...,
+    "EventDestination": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_configuration_set_event_destination(**kwargs)
+```
 
-<a id="update\_contact"></a>
+1. See [:material-code-braces: UpdateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequestrequesttypedef) 
 
-### update_contact
+### update\_contact
 
 Updates a contact's preferences for a list.
 
-Type annotations for `boto3.client("sesv2").update_contact` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").update_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact)
 
-Boto3 documentation:
-[SESV2.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact)
+```python title="Method definition"
+def update_contact(
+    self,
+    *,
+    ContactListName: str,
+    EmailAddress: str,
+    TopicPreferences: Sequence[TopicPreferenceTypeDef] = ...,  # (1)
+    UnsubscribeAll: bool = ...,
+    AttributesData: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef).
+1. See [:material-code-braces: TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef) 
 
-Keyword-only arguments:
 
-- `ContactListName`: `str` *(required)*
-- `EmailAddress`: `str` *(required)*
-- `TopicPreferences`:
-  `Sequence`\[[TopicPreferenceTypeDef](./type_defs.md#topicpreferencetypedef)\]
-- `UnsubscribeAll`: `bool`
-- `AttributesData`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateContactRequestRequestTypeDef = {  # (1)
+    "ContactListName": ...,
+    "EmailAddress": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_contact(**kwargs)
+```
 
-<a id="update\_contact\_list"></a>
+1. See [:material-code-braces: UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef) 
 
-### update_contact_list
+### update\_contact\_list
 
 Updates contact list metadata.
 
-Type annotations for `boto3.client("sesv2").update_contact_list` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").update_contact_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact_list)
 
-Boto3 documentation:
-[SESV2.Client.update_contact_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_contact_list)
+```python title="Method definition"
+def update_contact_list(
+    self,
+    *,
+    ContactListName: str,
+    Topics: Sequence[TopicTypeDef] = ...,  # (1)
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactListRequestRequestTypeDef](./type_defs.md#updatecontactlistrequestrequesttypedef).
+1. See [:material-code-braces: TopicTypeDef](./type_defs.md#topictypedef) 
 
-Keyword-only arguments:
 
-- `ContactListName`: `str` *(required)*
-- `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateContactListRequestRequestTypeDef = {  # (1)
+    "ContactListName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_contact_list(**kwargs)
+```
 
-<a id="update\_custom\_verification\_email\_template"></a>
+1. See [:material-code-braces: UpdateContactListRequestRequestTypeDef](./type_defs.md#updatecontactlistrequestrequesttypedef) 
 
-### update_custom_verification_email_template
+### update\_custom\_verification\_email\_template
 
 Updates an existing custom verification email template.
 
-Type annotations for
-`boto3.client("sesv2").update_custom_verification_email_template` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").update_custom_verification_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_custom_verification_email_template)
 
-Boto3 documentation:
-[SESV2.Client.update_custom_verification_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_custom_verification_email_template)
+```python title="Method definition"
+def update_custom_verification_email_template(
+    self,
+    *,
+    TemplateName: str,
+    FromEmailAddress: str,
+    TemplateSubject: str,
+    TemplateContent: str,
+    SuccessRedirectionURL: str,
+    FailureRedirectionURL: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#updatecustomverificationemailtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `FromEmailAddress`: `str` *(required)*
-- `TemplateSubject`: `str` *(required)*
-- `TemplateContent`: `str` *(required)*
-- `SuccessRedirectionURL`: `str` *(required)*
-- `FailureRedirectionURL`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateCustomVerificationEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+    "FromEmailAddress": ...,
+    "TemplateSubject": ...,
+    "TemplateContent": ...,
+    "SuccessRedirectionURL": ...,
+    "FailureRedirectionURL": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_custom_verification_email_template(**kwargs)
+```
 
-<a id="update\_email\_identity\_policy"></a>
+1. See [:material-code-braces: UpdateCustomVerificationEmailTemplateRequestRequestTypeDef](./type_defs.md#updatecustomverificationemailtemplaterequestrequesttypedef) 
 
-### update_email_identity_policy
+### update\_email\_identity\_policy
 
 Updates the specified sending authorization policy for the given identity (an
 email address or a domain).
 
-Type annotations for `boto3.client("sesv2").update_email_identity_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("sesv2").update_email_identity_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_identity_policy)
 
-Boto3 documentation:
-[SESV2.Client.update_email_identity_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_identity_policy)
+```python title="Method definition"
+def update_email_identity_policy(
+    self,
+    *,
+    EmailIdentity: str,
+    PolicyName: str,
+    Policy: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateEmailIdentityPolicyRequestRequestTypeDef](./type_defs.md#updateemailidentitypolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EmailIdentity`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `Policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateEmailIdentityPolicyRequestRequestTypeDef = {  # (1)
+    "EmailIdentity": ...,
+    "PolicyName": ...,
+    "Policy": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_email_identity_policy(**kwargs)
+```
 
-<a id="update\_email\_template"></a>
+1. See [:material-code-braces: UpdateEmailIdentityPolicyRequestRequestTypeDef](./type_defs.md#updateemailidentitypolicyrequestrequesttypedef) 
 
-### update_email_template
+### update\_email\_template
 
 Updates an email template.
 
-Type annotations for `boto3.client("sesv2").update_email_template` method.
+Type annotations and code completion for `#!python boto3.client("sesv2").update_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_template)
 
-Boto3 documentation:
-[SESV2.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.update_email_template)
+```python title="Method definition"
+def update_email_template(
+    self,
+    *,
+    TemplateName: str,
+    TemplateContent: EmailTemplateContentTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateEmailTemplateRequestRequestTypeDef](./type_defs.md#updateemailtemplaterequestrequesttypedef).
+1. See [:material-code-braces: EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `TemplateContent`:
-  [EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+    "TemplateContent": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_email_template(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateEmailTemplateRequestRequestTypeDef](./type_defs.md#updateemailtemplaterequestrequesttypedef) 
+
+
+
+

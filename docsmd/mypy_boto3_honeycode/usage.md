@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-honeycode-module"></a>
-
-# Examples for boto3 Honeycode module
+# Examples
 
 > [Index](../README.md) > [Honeycode](./README.md) > Examples
 
-- [Examples for boto3 Honeycode module](#examples-for-boto3-honeycode-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+    type annotations stubs module [mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[honeycode]` package installed.
 
-Write your `Honeycode` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Honeycode` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type HoneycodeClient
-# and provides type checking and code completion
-client = session.client("honeycode")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BatchCreateTableRowsResultTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_create_table_rows()
 
-# paginator has type ListTableColumnsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_table_columns")
-for item in paginator.paginate(...):
-    # item has type ListTableColumnsResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("honeycode")  # (1)
+    result = client.batch_create_table_rows()  # (2)
+    ```
+
+    1. client: [HoneycodeClient](./client.md)
+    2. result: [:material-code-braces: BatchCreateTableRowsResultTypeDef](./type_defs.md#batchcreatetablerowsresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("honeycode")  # (1)
+
+    paginator = client.get_paginator("list_table_columns")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [HoneycodeClient](./client.md)
+    2. paginator: [ListTableColumnsPaginator](./paginators.md#listtablecolumnspaginator)
+    3. item: [:material-code-braces: ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[honeycode]` or a standalone `mypy_boto3_honeycode`
-package, you have to explicitly specify `client: HoneycodeClient` type
-annotation.
+With `boto3-stubs-lite[honeycode]`
+or a standalone `mypy_boto3_honeycode` package, you have to explicitly specify `client: HoneycodeClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_honeycode.client import HoneycodeClient
-from mypy_boto3_honeycode.paginator import ListTableColumnsPaginator
-
-from mypy_boto3_honeycode.literals import PaginatorName
-
-from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsResultTypeDef
-from mypy_boto3_honeycode.type_defs import ListTableColumnsResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: HoneycodeClient = session.client("honeycode")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: BatchCreateTableRowsResultTypeDef = client.batch_create_table_rows()
+    from mypy_boto3_honeycode.client import HoneycodeClient
+    from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsResultTypeDef
+    from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_table_columns"
-paginator: ListTableColumnsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListTableColumnsResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: HoneycodeClient = session.client("honeycode")
+
+    kwargs: BatchCreateTableRowsRequestRequestTypeDef = {...}
+    result: BatchCreateTableRowsResultTypeDef = client.batch_create_table_rows(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_honeycode.client import HoneycodeClient
+    from mypy_boto3_honeycode.paginator import ListTableColumnsPaginator
+    from mypy_boto3_honeycode.type_defs import ListTableColumnsResultTypeDef
+
+
+    session = Session()
+    client: HoneycodeClient = session.client("honeycode")
+
+    paginator: ListTableColumnsPaginator = client.get_paginator("list_table_columns")
+    for item in paginator.paginate(...):
+        item: ListTableColumnsResultTypeDef
+        print(item)
+    ```
+
+
+
+

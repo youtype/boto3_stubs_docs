@@ -1,109 +1,18 @@
-<a id="devicefarmclient-for-boto3-devicefarm-module"></a>
-
-# DeviceFarmClient for boto3 DeviceFarm module
+# DeviceFarmClient
 
 > [Index](../README.md) > [DeviceFarm](./README.md) > DeviceFarmClient
 
-Auto-generated documentation for
-[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
-type annotations stubs module
-[mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+!!! note ""
 
-- [DeviceFarmClient for boto3 DeviceFarm module](#devicefarmclient-for-boto3-devicefarm-module)
-  - [DeviceFarmClient](#devicefarmclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_device_pool](#create_device_pool)
-    - [create_instance_profile](#create_instance_profile)
-    - [create_network_profile](#create_network_profile)
-    - [create_project](#create_project)
-    - [create_remote_access_session](#create_remote_access_session)
-    - [create_test_grid_project](#create_test_grid_project)
-    - [create_test_grid_url](#create_test_grid_url)
-    - [create_upload](#create_upload)
-    - [create_vpce_configuration](#create_vpce_configuration)
-    - [delete_device_pool](#delete_device_pool)
-    - [delete_instance_profile](#delete_instance_profile)
-    - [delete_network_profile](#delete_network_profile)
-    - [delete_project](#delete_project)
-    - [delete_remote_access_session](#delete_remote_access_session)
-    - [delete_run](#delete_run)
-    - [delete_test_grid_project](#delete_test_grid_project)
-    - [delete_upload](#delete_upload)
-    - [delete_vpce_configuration](#delete_vpce_configuration)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account_settings](#get_account_settings)
-    - [get_device](#get_device)
-    - [get_device_instance](#get_device_instance)
-    - [get_device_pool](#get_device_pool)
-    - [get_device_pool_compatibility](#get_device_pool_compatibility)
-    - [get_instance_profile](#get_instance_profile)
-    - [get_job](#get_job)
-    - [get_network_profile](#get_network_profile)
-    - [get_offering_status](#get_offering_status)
-    - [get_project](#get_project)
-    - [get_remote_access_session](#get_remote_access_session)
-    - [get_run](#get_run)
-    - [get_suite](#get_suite)
-    - [get_test](#get_test)
-    - [get_test_grid_project](#get_test_grid_project)
-    - [get_test_grid_session](#get_test_grid_session)
-    - [get_upload](#get_upload)
-    - [get_vpce_configuration](#get_vpce_configuration)
-    - [install_to_remote_access_session](#install_to_remote_access_session)
-    - [list_artifacts](#list_artifacts)
-    - [list_device_instances](#list_device_instances)
-    - [list_device_pools](#list_device_pools)
-    - [list_devices](#list_devices)
-    - [list_instance_profiles](#list_instance_profiles)
-    - [list_jobs](#list_jobs)
-    - [list_network_profiles](#list_network_profiles)
-    - [list_offering_promotions](#list_offering_promotions)
-    - [list_offering_transactions](#list_offering_transactions)
-    - [list_offerings](#list_offerings)
-    - [list_projects](#list_projects)
-    - [list_remote_access_sessions](#list_remote_access_sessions)
-    - [list_runs](#list_runs)
-    - [list_samples](#list_samples)
-    - [list_suites](#list_suites)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_test_grid_projects](#list_test_grid_projects)
-    - [list_test_grid_session_actions](#list_test_grid_session_actions)
-    - [list_test_grid_session_artifacts](#list_test_grid_session_artifacts)
-    - [list_test_grid_sessions](#list_test_grid_sessions)
-    - [list_tests](#list_tests)
-    - [list_unique_problems](#list_unique_problems)
-    - [list_uploads](#list_uploads)
-    - [list_vpce_configurations](#list_vpce_configurations)
-    - [purchase_offering](#purchase_offering)
-    - [renew_offering](#renew_offering)
-    - [schedule_run](#schedule_run)
-    - [stop_job](#stop_job)
-    - [stop_remote_access_session](#stop_remote_access_session)
-    - [stop_run](#stop_run)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_device_instance](#update_device_instance)
-    - [update_device_pool](#update_device_pool)
-    - [update_instance_profile](#update_instance_profile)
-    - [update_network_profile](#update_network_profile)
-    - [update_project](#update_project)
-    - [update_test_grid_project](#update_test_grid_project)
-    - [update_upload](#update_upload)
-    - [update_vpce_configuration](#update_vpce_configuration)
-    - [get_paginator](#get_paginator)
-
-<a id="devicefarmclient"></a>
+    Auto-generated documentation for [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
+    type annotations stubs module [mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 ## DeviceFarmClient
 
-Type annotations for `boto3.client("devicefarm")`
+Type annotations and code completion for `#!python boto3.client("devicefarm")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_devicefarm.client import DeviceFarmClient
 
@@ -111,1902 +20,2499 @@ def get_devicefarm_client() -> DeviceFarmClient:
     return Session().client("devicefarm")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("devicefarm").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("devicefarm")
+
+try:
+    do_something(client)
+except (
+    client.ArgumentException,
+    client.CannotDeleteException,
+    client.ClientError,
+    client.IdempotencyException,
+    client.InternalServiceException,
+    client.InvalidOperationException,
+    client.LimitExceededException,
+    client.NotEligibleException,
+    client.NotFoundException,
+    client.ServiceAccountException,
+    client.TagOperationException,
+    client.TagPolicyException,
+    client.TooManyTagsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_devicefarm.client import Exceptions
 
 def handle_error(exc: Exceptions.ArgumentException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ArgumentException`
-- `Exceptions.CannotDeleteException`
-- `Exceptions.ClientError`
-- `Exceptions.IdempotencyException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidOperationException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotEligibleException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ServiceAccountException`
-- `Exceptions.TagOperationException`
-- `Exceptions.TagPolicyException`
-- `Exceptions.TooManyTagsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-DeviceFarmClient exceptions.
-
-Type annotations for `boto3.client("devicefarm").exceptions` method.
-
-Boto3 documentation:
-[DeviceFarm.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("devicefarm").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.can_paginate)
 
-Boto3 documentation:
-[DeviceFarm.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_device\_pool"></a>
-
-### create_device_pool
+### create\_device\_pool
 
 Creates a device pool.
 
-Type annotations for `boto3.client("devicefarm").create_device_pool` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").create_device_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_device_pool)
 
-Boto3 documentation:
-[DeviceFarm.Client.create_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_device_pool)
+```python title="Method definition"
+def create_device_pool(
+    self,
+    *,
+    projectArn: str,
+    name: str,
+    rules: Sequence[RuleTypeDef],  # (1)
+    description: str = ...,
+    maxDevices: int = ...,
+) -> CreateDevicePoolResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDevicePoolRequestRequestTypeDef](./type_defs.md#createdevicepoolrequestrequesttypedef).
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: CreateDevicePoolResultTypeDef](./type_defs.md#createdevicepoolresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
-- `name`: `str` *(required)*
-- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
-- `description`: `str`
-- `maxDevices`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateDevicePoolRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+    "name": ...,
+    "rules": ...,
+}
 
-Returns
-[CreateDevicePoolResultTypeDef](./type_defs.md#createdevicepoolresulttypedef).
+parent.create_device_pool(**kwargs)
+```
 
-<a id="create\_instance\_profile"></a>
+1. See [:material-code-braces: CreateDevicePoolRequestRequestTypeDef](./type_defs.md#createdevicepoolrequestrequesttypedef) 
 
-### create_instance_profile
+### create\_instance\_profile
 
 Creates a profile that can be applied to one or more private fleet device
 instances.
 
-Type annotations for `boto3.client("devicefarm").create_instance_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").create_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_instance_profile)
 
-Boto3 documentation:
-[DeviceFarm.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_instance_profile)
+```python title="Method definition"
+def create_instance_profile(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    packageCleanup: bool = ...,
+    excludeAppPackagesFromCleanup: Sequence[str] = ...,
+    rebootAfterUse: bool = ...,
+) -> CreateInstanceProfileResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateInstanceProfileRequestRequestTypeDef](./type_defs.md#createinstanceprofilerequestrequesttypedef).
+1. See [:material-code-braces: CreateInstanceProfileResultTypeDef](./type_defs.md#createinstanceprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `packageCleanup`: `bool`
-- `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
-- `rebootAfterUse`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateInstanceProfileRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateInstanceProfileResultTypeDef](./type_defs.md#createinstanceprofileresulttypedef).
+parent.create_instance_profile(**kwargs)
+```
 
-<a id="create\_network\_profile"></a>
+1. See [:material-code-braces: CreateInstanceProfileRequestRequestTypeDef](./type_defs.md#createinstanceprofilerequestrequesttypedef) 
 
-### create_network_profile
+### create\_network\_profile
 
 Creates a network profile.
 
-Type annotations for `boto3.client("devicefarm").create_network_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").create_network_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_network_profile)
 
-Boto3 documentation:
-[DeviceFarm.Client.create_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_network_profile)
+```python title="Method definition"
+def create_network_profile(
+    self,
+    *,
+    projectArn: str,
+    name: str,
+    description: str = ...,
+    type: NetworkProfileTypeType = ...,  # (1)
+    uplinkBandwidthBits: int = ...,
+    downlinkBandwidthBits: int = ...,
+    uplinkDelayMs: int = ...,
+    downlinkDelayMs: int = ...,
+    uplinkJitterMs: int = ...,
+    downlinkJitterMs: int = ...,
+    uplinkLossPercent: int = ...,
+    downlinkLossPercent: int = ...,
+) -> CreateNetworkProfileResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateNetworkProfileRequestRequestTypeDef](./type_defs.md#createnetworkprofilerequestrequesttypedef).
+1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
+2. See [:material-code-braces: CreateNetworkProfileResultTypeDef](./type_defs.md#createnetworkprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
-- `name`: `str` *(required)*
-- `description`: `str`
-- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
-- `uplinkBandwidthBits`: `int`
-- `downlinkBandwidthBits`: `int`
-- `uplinkDelayMs`: `int`
-- `downlinkDelayMs`: `int`
-- `uplinkJitterMs`: `int`
-- `downlinkJitterMs`: `int`
-- `uplinkLossPercent`: `int`
-- `downlinkLossPercent`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateNetworkProfileRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+    "name": ...,
+}
 
-Returns
-[CreateNetworkProfileResultTypeDef](./type_defs.md#createnetworkprofileresulttypedef).
+parent.create_network_profile(**kwargs)
+```
 
-<a id="create\_project"></a>
+1. See [:material-code-braces: CreateNetworkProfileRequestRequestTypeDef](./type_defs.md#createnetworkprofilerequestrequesttypedef) 
 
-### create_project
+### create\_project
 
 Creates a project.
 
-Type annotations for `boto3.client("devicefarm").create_project` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").create_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_project)
 
-Boto3 documentation:
-[DeviceFarm.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_project)
+```python title="Method definition"
+def create_project(
+    self,
+    *,
+    name: str,
+    defaultJobTimeoutMinutes: int = ...,
+) -> CreateProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
+1. See [:material-code-braces: CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `defaultJobTimeoutMinutes`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateProjectRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
+parent.create_project(**kwargs)
+```
 
-<a id="create\_remote\_access\_session"></a>
+1. See [:material-code-braces: CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef) 
 
-### create_remote_access_session
+### create\_remote\_access\_session
 
 Specifies and starts a remote access session.
 
-Type annotations for `boto3.client("devicefarm").create_remote_access_session`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").create_remote_access_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_remote_access_session)
 
-Boto3 documentation:
-[DeviceFarm.Client.create_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_remote_access_session)
+```python title="Method definition"
+def create_remote_access_session(
+    self,
+    *,
+    projectArn: str,
+    deviceArn: str,
+    instanceArn: str = ...,
+    sshPublicKey: str = ...,
+    remoteDebugEnabled: bool = ...,
+    remoteRecordEnabled: bool = ...,
+    remoteRecordAppArn: str = ...,
+    name: str = ...,
+    clientId: str = ...,
+    configuration: CreateRemoteAccessSessionConfigurationTypeDef = ...,  # (1)
+    interactionMode: InteractionModeType = ...,  # (2)
+    skipAppResign: bool = ...,
+) -> CreateRemoteAccessSessionResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#createremoteaccesssessionrequestrequesttypedef).
+1. See [:material-code-braces: CreateRemoteAccessSessionConfigurationTypeDef](./type_defs.md#createremoteaccesssessionconfigurationtypedef) 
+2. See [:material-code-brackets: InteractionModeType](./literals.md#interactionmodetype) 
+3. See [:material-code-braces: CreateRemoteAccessSessionResultTypeDef](./type_defs.md#createremoteaccesssessionresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
-- `deviceArn`: `str` *(required)*
-- `instanceArn`: `str`
-- `sshPublicKey`: `str`
-- `remoteDebugEnabled`: `bool`
-- `remoteRecordEnabled`: `bool`
-- `remoteRecordAppArn`: `str`
-- `name`: `str`
-- `clientId`: `str`
-- `configuration`:
-  [CreateRemoteAccessSessionConfigurationTypeDef](./type_defs.md#createremoteaccesssessionconfigurationtypedef)
-- `interactionMode`: [InteractionModeType](./literals.md#interactionmodetype)
-- `skipAppResign`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateRemoteAccessSessionRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+    "deviceArn": ...,
+}
 
-Returns
-[CreateRemoteAccessSessionResultTypeDef](./type_defs.md#createremoteaccesssessionresulttypedef).
+parent.create_remote_access_session(**kwargs)
+```
 
-<a id="create\_test\_grid\_project"></a>
+1. See [:material-code-braces: CreateRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#createremoteaccesssessionrequestrequesttypedef) 
 
-### create_test_grid_project
+### create\_test\_grid\_project
 
 Creates a Selenium testing project.
 
-Type annotations for `boto3.client("devicefarm").create_test_grid_project`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").create_test_grid_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_project)
 
-Boto3 documentation:
-[DeviceFarm.Client.create_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_project)
+```python title="Method definition"
+def create_test_grid_project(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    vpcConfig: TestGridVpcConfigTypeDef = ...,  # (1)
+) -> CreateTestGridProjectResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateTestGridProjectRequestRequestTypeDef](./type_defs.md#createtestgridprojectrequestrequesttypedef).
+1. See [:material-code-braces: TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef) 
+2. See [:material-code-braces: CreateTestGridProjectResultTypeDef](./type_defs.md#createtestgridprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `vpcConfig`:
-  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateTestGridProjectRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateTestGridProjectResultTypeDef](./type_defs.md#createtestgridprojectresulttypedef).
+parent.create_test_grid_project(**kwargs)
+```
 
-<a id="create\_test\_grid\_url"></a>
+1. See [:material-code-braces: CreateTestGridProjectRequestRequestTypeDef](./type_defs.md#createtestgridprojectrequestrequesttypedef) 
 
-### create_test_grid_url
+### create\_test\_grid\_url
 
 Creates a signed, short-term URL that can be passed to a Selenium
 `RemoteWebDriver` constructor.
 
-Type annotations for `boto3.client("devicefarm").create_test_grid_url` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").create_test_grid_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_url)
 
-Boto3 documentation:
-[DeviceFarm.Client.create_test_grid_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_test_grid_url)
+```python title="Method definition"
+def create_test_grid_url(
+    self,
+    *,
+    projectArn: str,
+    expiresInSeconds: int,
+) -> CreateTestGridUrlResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateTestGridUrlRequestRequestTypeDef](./type_defs.md#createtestgridurlrequestrequesttypedef).
+1. See [:material-code-braces: CreateTestGridUrlResultTypeDef](./type_defs.md#createtestgridurlresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
-- `expiresInSeconds`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTestGridUrlRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+    "expiresInSeconds": ...,
+}
 
-Returns
-[CreateTestGridUrlResultTypeDef](./type_defs.md#createtestgridurlresulttypedef).
+parent.create_test_grid_url(**kwargs)
+```
 
-<a id="create\_upload"></a>
+1. See [:material-code-braces: CreateTestGridUrlRequestRequestTypeDef](./type_defs.md#createtestgridurlrequestrequesttypedef) 
 
-### create_upload
+### create\_upload
 
 Uploads an app or test scripts.
 
-Type annotations for `boto3.client("devicefarm").create_upload` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").create_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_upload)
 
-Boto3 documentation:
-[DeviceFarm.Client.create_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_upload)
+```python title="Method definition"
+def create_upload(
+    self,
+    *,
+    projectArn: str,
+    name: str,
+    type: UploadTypeType,  # (1)
+    contentType: str = ...,
+) -> CreateUploadResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateUploadRequestRequestTypeDef](./type_defs.md#createuploadrequestrequesttypedef).
+1. See [:material-code-brackets: UploadTypeType](./literals.md#uploadtypetype) 
+2. See [:material-code-braces: CreateUploadResultTypeDef](./type_defs.md#createuploadresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
-- `name`: `str` *(required)*
-- `type`: [UploadTypeType](./literals.md#uploadtypetype) *(required)*
-- `contentType`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateUploadRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+    "name": ...,
+    "type": ...,
+}
 
-Returns [CreateUploadResultTypeDef](./type_defs.md#createuploadresulttypedef).
+parent.create_upload(**kwargs)
+```
 
-<a id="create\_vpce\_configuration"></a>
+1. See [:material-code-braces: CreateUploadRequestRequestTypeDef](./type_defs.md#createuploadrequestrequesttypedef) 
 
-### create_vpce_configuration
+### create\_vpce\_configuration
 
 Creates a configuration record in Device Farm for your Amazon Virtual Private
 Cloud (VPC) endpoint.
 
-Type annotations for `boto3.client("devicefarm").create_vpce_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").create_vpce_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_vpce_configuration)
 
-Boto3 documentation:
-[DeviceFarm.Client.create_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.create_vpce_configuration)
+```python title="Method definition"
+def create_vpce_configuration(
+    self,
+    *,
+    vpceConfigurationName: str,
+    vpceServiceName: str,
+    serviceDnsName: str,
+    vpceConfigurationDescription: str = ...,
+) -> CreateVPCEConfigurationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateVPCEConfigurationRequestRequestTypeDef](./type_defs.md#createvpceconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: CreateVPCEConfigurationResultTypeDef](./type_defs.md#createvpceconfigurationresulttypedef) 
 
-Keyword-only arguments:
 
-- `vpceConfigurationName`: `str` *(required)*
-- `vpceServiceName`: `str` *(required)*
-- `serviceDnsName`: `str` *(required)*
-- `vpceConfigurationDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateVPCEConfigurationRequestRequestTypeDef = {  # (1)
+    "vpceConfigurationName": ...,
+    "vpceServiceName": ...,
+    "serviceDnsName": ...,
+}
 
-Returns
-[CreateVPCEConfigurationResultTypeDef](./type_defs.md#createvpceconfigurationresulttypedef).
+parent.create_vpce_configuration(**kwargs)
+```
 
-<a id="delete\_device\_pool"></a>
+1. See [:material-code-braces: CreateVPCEConfigurationRequestRequestTypeDef](./type_defs.md#createvpceconfigurationrequestrequesttypedef) 
 
-### delete_device_pool
+### delete\_device\_pool
 
 Deletes a device pool given the pool ARN.
 
-Type annotations for `boto3.client("devicefarm").delete_device_pool` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").delete_device_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_device_pool)
 
-Boto3 documentation:
-[DeviceFarm.Client.delete_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_device_pool)
+```python title="Method definition"
+def delete_device_pool(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDevicePoolRequestRequestTypeDef](./type_defs.md#deletedevicepoolrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDevicePoolRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_device_pool(**kwargs)
+```
 
-<a id="delete\_instance\_profile"></a>
+1. See [:material-code-braces: DeleteDevicePoolRequestRequestTypeDef](./type_defs.md#deletedevicepoolrequestrequesttypedef) 
 
-### delete_instance_profile
+### delete\_instance\_profile
 
 Deletes a profile that can be applied to one or more private device instances.
 
-Type annotations for `boto3.client("devicefarm").delete_instance_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").delete_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_instance_profile)
 
-Boto3 documentation:
-[DeviceFarm.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_instance_profile)
+```python title="Method definition"
+def delete_instance_profile(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteInstanceProfileRequestRequestTypeDef](./type_defs.md#deleteinstanceprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInstanceProfileRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_instance_profile(**kwargs)
+```
 
-<a id="delete\_network\_profile"></a>
+1. See [:material-code-braces: DeleteInstanceProfileRequestRequestTypeDef](./type_defs.md#deleteinstanceprofilerequestrequesttypedef) 
 
-### delete_network_profile
+### delete\_network\_profile
 
 Deletes a network profile.
 
-Type annotations for `boto3.client("devicefarm").delete_network_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").delete_network_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_network_profile)
 
-Boto3 documentation:
-[DeviceFarm.Client.delete_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_network_profile)
+```python title="Method definition"
+def delete_network_profile(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteNetworkProfileRequestRequestTypeDef](./type_defs.md#deletenetworkprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNetworkProfileRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_network_profile(**kwargs)
+```
 
-<a id="delete\_project"></a>
+1. See [:material-code-braces: DeleteNetworkProfileRequestRequestTypeDef](./type_defs.md#deletenetworkprofilerequestrequesttypedef) 
 
-### delete_project
+### delete\_project
 
 Deletes an AWS Device Farm project, given the project ARN.
 
-Type annotations for `boto3.client("devicefarm").delete_project` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").delete_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_project)
 
-Boto3 documentation:
-[DeviceFarm.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_project)
+```python title="Method definition"
+def delete_project(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_project(**kwargs)
+```
 
-<a id="delete\_remote\_access\_session"></a>
+1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
 
-### delete_remote_access_session
+### delete\_remote\_access\_session
 
 Deletes a completed remote access session and its results.
 
-Type annotations for `boto3.client("devicefarm").delete_remote_access_session`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").delete_remote_access_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_remote_access_session)
 
-Boto3 documentation:
-[DeviceFarm.Client.delete_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_remote_access_session)
+```python title="Method definition"
+def delete_remote_access_session(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#deleteremoteaccesssessionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRemoteAccessSessionRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_remote_access_session(**kwargs)
+```
 
-<a id="delete\_run"></a>
+1. See [:material-code-braces: DeleteRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#deleteremoteaccesssessionrequestrequesttypedef) 
 
-### delete_run
+### delete\_run
 
 Deletes the run, given the run ARN.
 
-Type annotations for `boto3.client("devicefarm").delete_run` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").delete_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_run)
 
-Boto3 documentation:
-[DeviceFarm.Client.delete_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_run)
+```python title="Method definition"
+def delete_run(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRunRequestRequestTypeDef](./type_defs.md#deleterunrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRunRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_run(**kwargs)
+```
 
-<a id="delete\_test\_grid\_project"></a>
+1. See [:material-code-braces: DeleteRunRequestRequestTypeDef](./type_defs.md#deleterunrequestrequesttypedef) 
 
-### delete_test_grid_project
+### delete\_test\_grid\_project
 
 Deletes a Selenium testing project and all content generated under it.
 
-Type annotations for `boto3.client("devicefarm").delete_test_grid_project`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").delete_test_grid_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_test_grid_project)
 
-Boto3 documentation:
-[DeviceFarm.Client.delete_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_test_grid_project)
+```python title="Method definition"
+def delete_test_grid_project(
+    self,
+    *,
+    projectArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTestGridProjectRequestRequestTypeDef](./type_defs.md#deletetestgridprojectrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTestGridProjectRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_test_grid_project(**kwargs)
+```
 
-<a id="delete\_upload"></a>
+1. See [:material-code-braces: DeleteTestGridProjectRequestRequestTypeDef](./type_defs.md#deletetestgridprojectrequestrequesttypedef) 
 
-### delete_upload
+### delete\_upload
 
 Deletes an upload given the upload ARN.
 
-Type annotations for `boto3.client("devicefarm").delete_upload` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").delete_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_upload)
 
-Boto3 documentation:
-[DeviceFarm.Client.delete_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_upload)
+```python title="Method definition"
+def delete_upload(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUploadRequestRequestTypeDef](./type_defs.md#deleteuploadrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUploadRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_upload(**kwargs)
+```
 
-<a id="delete\_vpce\_configuration"></a>
+1. See [:material-code-braces: DeleteUploadRequestRequestTypeDef](./type_defs.md#deleteuploadrequestrequesttypedef) 
 
-### delete_vpce_configuration
+### delete\_vpce\_configuration
 
 Deletes a configuration for your Amazon Virtual Private Cloud (VPC) endpoint.
 
-Type annotations for `boto3.client("devicefarm").delete_vpce_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").delete_vpce_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_vpce_configuration)
 
-Boto3 documentation:
-[DeviceFarm.Client.delete_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.delete_vpce_configuration)
+```python title="Method definition"
+def delete_vpce_configuration(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVPCEConfigurationRequestRequestTypeDef](./type_defs.md#deletevpceconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVPCEConfigurationRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_vpce_configuration(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteVPCEConfigurationRequestRequestTypeDef](./type_defs.md#deletevpceconfigurationrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("devicefarm").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.generate_presigned_url)
 
-Boto3 documentation:
-[DeviceFarm.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_account\_settings"></a>
-
-### get_account_settings
+### get\_account\_settings
 
 Returns the number of unmetered iOS or unmetered Android devices that have been
 purchased by the account.
 
-Type annotations for `boto3.client("devicefarm").get_account_settings` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_account_settings)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_account_settings)
+```python title="Method definition"
+def get_account_settings(
+    self,
+) -> GetAccountSettingsResultTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAccountSettingsResultTypeDef](./type_defs.md#getaccountsettingsresulttypedef).
+1. See [:material-code-braces: GetAccountSettingsResultTypeDef](./type_defs.md#getaccountsettingsresulttypedef) 
 
-<a id="get\_device"></a>
-
-### get_device
+### get\_device
 
 Gets information about a unique device type.
 
-Type annotations for `boto3.client("devicefarm").get_device` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device)
+```python title="Method definition"
+def get_device(
+    self,
+    *,
+    arn: str,
+) -> GetDeviceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef).
+1. See [:material-code-braces: GetDeviceResultTypeDef](./type_defs.md#getdeviceresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDeviceRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [GetDeviceResultTypeDef](./type_defs.md#getdeviceresulttypedef).
+parent.get_device(**kwargs)
+```
 
-<a id="get\_device\_instance"></a>
+1. See [:material-code-braces: GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef) 
 
-### get_device_instance
+### get\_device\_instance
 
 Returns information about a device instance that belongs to a private device
 fleet.
 
-Type annotations for `boto3.client("devicefarm").get_device_instance` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_device_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_instance)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_device_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_instance)
+```python title="Method definition"
+def get_device_instance(
+    self,
+    *,
+    arn: str,
+) -> GetDeviceInstanceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeviceInstanceRequestRequestTypeDef](./type_defs.md#getdeviceinstancerequestrequesttypedef).
+1. See [:material-code-braces: GetDeviceInstanceResultTypeDef](./type_defs.md#getdeviceinstanceresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDeviceInstanceRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetDeviceInstanceResultTypeDef](./type_defs.md#getdeviceinstanceresulttypedef).
+parent.get_device_instance(**kwargs)
+```
 
-<a id="get\_device\_pool"></a>
+1. See [:material-code-braces: GetDeviceInstanceRequestRequestTypeDef](./type_defs.md#getdeviceinstancerequestrequesttypedef) 
 
-### get_device_pool
+### get\_device\_pool
 
 Gets information about a device pool.
 
-Type annotations for `boto3.client("devicefarm").get_device_pool` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_device_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool)
+```python title="Method definition"
+def get_device_pool(
+    self,
+    *,
+    arn: str,
+) -> GetDevicePoolResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDevicePoolRequestRequestTypeDef](./type_defs.md#getdevicepoolrequestrequesttypedef).
+1. See [:material-code-braces: GetDevicePoolResultTypeDef](./type_defs.md#getdevicepoolresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDevicePoolRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetDevicePoolResultTypeDef](./type_defs.md#getdevicepoolresulttypedef).
+parent.get_device_pool(**kwargs)
+```
 
-<a id="get\_device\_pool\_compatibility"></a>
+1. See [:material-code-braces: GetDevicePoolRequestRequestTypeDef](./type_defs.md#getdevicepoolrequestrequesttypedef) 
 
-### get_device_pool_compatibility
+### get\_device\_pool\_compatibility
 
 Gets information about compatibility with a device pool.
 
-Type annotations for `boto3.client("devicefarm").get_device_pool_compatibility`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_device_pool_compatibility` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool_compatibility)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_device_pool_compatibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_device_pool_compatibility)
+```python title="Method definition"
+def get_device_pool_compatibility(
+    self,
+    *,
+    devicePoolArn: str,
+    appArn: str = ...,
+    testType: TestTypeType = ...,  # (1)
+    test: ScheduleRunTestTypeDef = ...,  # (2)
+    configuration: ScheduleRunConfigurationTypeDef = ...,  # (3)
+) -> GetDevicePoolCompatibilityResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetDevicePoolCompatibilityRequestRequestTypeDef](./type_defs.md#getdevicepoolcompatibilityrequestrequesttypedef).
+1. See [:material-code-brackets: TestTypeType](./literals.md#testtypetype) 
+2. See [:material-code-braces: ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef) 
+3. See [:material-code-braces: ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef) 
+4. See [:material-code-braces: GetDevicePoolCompatibilityResultTypeDef](./type_defs.md#getdevicepoolcompatibilityresulttypedef) 
 
-Keyword-only arguments:
 
-- `devicePoolArn`: `str` *(required)*
-- `appArn`: `str`
-- `testType`: [TestTypeType](./literals.md#testtypetype)
-- `test`: [ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef)
-- `configuration`:
-  [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: GetDevicePoolCompatibilityRequestRequestTypeDef = {  # (1)
+    "devicePoolArn": ...,
+}
 
-Returns
-[GetDevicePoolCompatibilityResultTypeDef](./type_defs.md#getdevicepoolcompatibilityresulttypedef).
+parent.get_device_pool_compatibility(**kwargs)
+```
 
-<a id="get\_instance\_profile"></a>
+1. See [:material-code-braces: GetDevicePoolCompatibilityRequestRequestTypeDef](./type_defs.md#getdevicepoolcompatibilityrequestrequesttypedef) 
 
-### get_instance_profile
+### get\_instance\_profile
 
 Returns information about the specified instance profile.
 
-Type annotations for `boto3.client("devicefarm").get_instance_profile` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_instance_profile)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_instance_profile)
+```python title="Method definition"
+def get_instance_profile(
+    self,
+    *,
+    arn: str,
+) -> GetInstanceProfileResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInstanceProfileRequestRequestTypeDef](./type_defs.md#getinstanceprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetInstanceProfileResultTypeDef](./type_defs.md#getinstanceprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInstanceProfileRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetInstanceProfileResultTypeDef](./type_defs.md#getinstanceprofileresulttypedef).
+parent.get_instance_profile(**kwargs)
+```
 
-<a id="get\_job"></a>
+1. See [:material-code-braces: GetInstanceProfileRequestRequestTypeDef](./type_defs.md#getinstanceprofilerequestrequesttypedef) 
 
-### get_job
+### get\_job
 
 Gets information about a job.
 
-Type annotations for `boto3.client("devicefarm").get_job` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_job)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_job)
+```python title="Method definition"
+def get_job(
+    self,
+    *,
+    arn: str,
+) -> GetJobResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef).
+1. See [:material-code-braces: GetJobResultTypeDef](./type_defs.md#getjobresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [GetJobResultTypeDef](./type_defs.md#getjobresulttypedef).
+parent.get_job(**kwargs)
+```
 
-<a id="get\_network\_profile"></a>
+1. See [:material-code-braces: GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef) 
 
-### get_network_profile
+### get\_network\_profile
 
 Returns information about a network profile.
 
-Type annotations for `boto3.client("devicefarm").get_network_profile` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_network_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_network_profile)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_network_profile)
+```python title="Method definition"
+def get_network_profile(
+    self,
+    *,
+    arn: str,
+) -> GetNetworkProfileResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNetworkProfileRequestRequestTypeDef](./type_defs.md#getnetworkprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetNetworkProfileResultTypeDef](./type_defs.md#getnetworkprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetNetworkProfileRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetNetworkProfileResultTypeDef](./type_defs.md#getnetworkprofileresulttypedef).
+parent.get_network_profile(**kwargs)
+```
 
-<a id="get\_offering\_status"></a>
+1. See [:material-code-braces: GetNetworkProfileRequestRequestTypeDef](./type_defs.md#getnetworkprofilerequestrequesttypedef) 
 
-### get_offering_status
+### get\_offering\_status
 
 Gets the current status and future status of all offerings purchased by an AWS
 account.
 
-Type annotations for `boto3.client("devicefarm").get_offering_status` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_offering_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_offering_status)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_offering_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_offering_status)
+```python title="Method definition"
+def get_offering_status(
+    self,
+    *,
+    nextToken: str = ...,
+) -> GetOfferingStatusResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOfferingStatusRequestRequestTypeDef](./type_defs.md#getofferingstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetOfferingStatusRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef).
+parent.get_offering_status(**kwargs)
+```
 
-<a id="get\_project"></a>
+1. See [:material-code-braces: GetOfferingStatusRequestRequestTypeDef](./type_defs.md#getofferingstatusrequestrequesttypedef) 
 
-### get_project
+### get\_project
 
 Gets information about a project.
 
-Type annotations for `boto3.client("devicefarm").get_project` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_project)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_project)
+```python title="Method definition"
+def get_project(
+    self,
+    *,
+    arn: str,
+) -> GetProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProjectRequestRequestTypeDef](./type_defs.md#getprojectrequestrequesttypedef).
+1. See [:material-code-braces: GetProjectResultTypeDef](./type_defs.md#getprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetProjectRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [GetProjectResultTypeDef](./type_defs.md#getprojectresulttypedef).
+parent.get_project(**kwargs)
+```
 
-<a id="get\_remote\_access\_session"></a>
+1. See [:material-code-braces: GetProjectRequestRequestTypeDef](./type_defs.md#getprojectrequestrequesttypedef) 
 
-### get_remote_access_session
+### get\_remote\_access\_session
 
 Returns a link to a currently running remote access session.
 
-Type annotations for `boto3.client("devicefarm").get_remote_access_session`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_remote_access_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_remote_access_session)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_remote_access_session)
+```python title="Method definition"
+def get_remote_access_session(
+    self,
+    *,
+    arn: str,
+) -> GetRemoteAccessSessionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#getremoteaccesssessionrequestrequesttypedef).
+1. See [:material-code-braces: GetRemoteAccessSessionResultTypeDef](./type_defs.md#getremoteaccesssessionresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRemoteAccessSessionRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetRemoteAccessSessionResultTypeDef](./type_defs.md#getremoteaccesssessionresulttypedef).
+parent.get_remote_access_session(**kwargs)
+```
 
-<a id="get\_run"></a>
+1. See [:material-code-braces: GetRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#getremoteaccesssessionrequestrequesttypedef) 
 
-### get_run
+### get\_run
 
 Gets information about a run.
 
-Type annotations for `boto3.client("devicefarm").get_run` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_run)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_run)
+```python title="Method definition"
+def get_run(
+    self,
+    *,
+    arn: str,
+) -> GetRunResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRunRequestRequestTypeDef](./type_defs.md#getrunrequestrequesttypedef).
+1. See [:material-code-braces: GetRunResultTypeDef](./type_defs.md#getrunresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRunRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [GetRunResultTypeDef](./type_defs.md#getrunresulttypedef).
+parent.get_run(**kwargs)
+```
 
-<a id="get\_suite"></a>
+1. See [:material-code-braces: GetRunRequestRequestTypeDef](./type_defs.md#getrunrequestrequesttypedef) 
 
-### get_suite
+### get\_suite
 
 Gets information about a suite.
 
-Type annotations for `boto3.client("devicefarm").get_suite` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_suite` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_suite)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_suite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_suite)
+```python title="Method definition"
+def get_suite(
+    self,
+    *,
+    arn: str,
+) -> GetSuiteResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSuiteRequestRequestTypeDef](./type_defs.md#getsuiterequestrequesttypedef).
+1. See [:material-code-braces: GetSuiteResultTypeDef](./type_defs.md#getsuiteresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSuiteRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [GetSuiteResultTypeDef](./type_defs.md#getsuiteresulttypedef).
+parent.get_suite(**kwargs)
+```
 
-<a id="get\_test"></a>
+1. See [:material-code-braces: GetSuiteRequestRequestTypeDef](./type_defs.md#getsuiterequestrequesttypedef) 
 
-### get_test
+### get\_test
 
 Gets information about a test.
 
-Type annotations for `boto3.client("devicefarm").get_test` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_test` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test)
+```python title="Method definition"
+def get_test(
+    self,
+    *,
+    arn: str,
+) -> GetTestResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTestRequestRequestTypeDef](./type_defs.md#gettestrequestrequesttypedef).
+1. See [:material-code-braces: GetTestResultTypeDef](./type_defs.md#gettestresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTestRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [GetTestResultTypeDef](./type_defs.md#gettestresulttypedef).
+parent.get_test(**kwargs)
+```
 
-<a id="get\_test\_grid\_project"></a>
+1. See [:material-code-braces: GetTestRequestRequestTypeDef](./type_defs.md#gettestrequestrequesttypedef) 
 
-### get_test_grid_project
+### get\_test\_grid\_project
 
 Retrieves information about a Selenium testing project.
 
-Type annotations for `boto3.client("devicefarm").get_test_grid_project` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_test_grid_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_project)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_project)
+```python title="Method definition"
+def get_test_grid_project(
+    self,
+    *,
+    projectArn: str,
+) -> GetTestGridProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTestGridProjectRequestRequestTypeDef](./type_defs.md#gettestgridprojectrequestrequesttypedef).
+1. See [:material-code-braces: GetTestGridProjectResultTypeDef](./type_defs.md#gettestgridprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTestGridProjectRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+}
 
-Returns
-[GetTestGridProjectResultTypeDef](./type_defs.md#gettestgridprojectresulttypedef).
+parent.get_test_grid_project(**kwargs)
+```
 
-<a id="get\_test\_grid\_session"></a>
+1. See [:material-code-braces: GetTestGridProjectRequestRequestTypeDef](./type_defs.md#gettestgridprojectrequestrequesttypedef) 
 
-### get_test_grid_session
+### get\_test\_grid\_session
 
 A session is an instance of a browser created through a `RemoteWebDriver` with
-the URL from CreateTestGridUrlResult$url.
+the URL from  CreateTestGridUrlResult$url.
 
-Type annotations for `boto3.client("devicefarm").get_test_grid_session` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_test_grid_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_session)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_test_grid_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_test_grid_session)
+```python title="Method definition"
+def get_test_grid_session(
+    self,
+    *,
+    projectArn: str = ...,
+    sessionId: str = ...,
+    sessionArn: str = ...,
+) -> GetTestGridSessionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTestGridSessionRequestRequestTypeDef](./type_defs.md#gettestgridsessionrequestrequesttypedef).
+1. See [:material-code-braces: GetTestGridSessionResultTypeDef](./type_defs.md#gettestgridsessionresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str`
-- `sessionId`: `str`
-- `sessionArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTestGridSessionRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+}
 
-Returns
-[GetTestGridSessionResultTypeDef](./type_defs.md#gettestgridsessionresulttypedef).
+parent.get_test_grid_session(**kwargs)
+```
 
-<a id="get\_upload"></a>
+1. See [:material-code-braces: GetTestGridSessionRequestRequestTypeDef](./type_defs.md#gettestgridsessionrequestrequesttypedef) 
 
-### get_upload
+### get\_upload
 
 Gets information about an upload.
 
-Type annotations for `boto3.client("devicefarm").get_upload` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_upload)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_upload)
+```python title="Method definition"
+def get_upload(
+    self,
+    *,
+    arn: str,
+) -> GetUploadResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUploadRequestRequestTypeDef](./type_defs.md#getuploadrequestrequesttypedef).
+1. See [:material-code-braces: GetUploadResultTypeDef](./type_defs.md#getuploadresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUploadRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [GetUploadResultTypeDef](./type_defs.md#getuploadresulttypedef).
+parent.get_upload(**kwargs)
+```
 
-<a id="get\_vpce\_configuration"></a>
+1. See [:material-code-braces: GetUploadRequestRequestTypeDef](./type_defs.md#getuploadrequestrequesttypedef) 
 
-### get_vpce_configuration
+### get\_vpce\_configuration
 
 Returns information about the configuration settings for your Amazon Virtual
 Private Cloud (VPC) endpoint.
 
-Type annotations for `boto3.client("devicefarm").get_vpce_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_vpce_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_vpce_configuration)
 
-Boto3 documentation:
-[DeviceFarm.Client.get_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.get_vpce_configuration)
+```python title="Method definition"
+def get_vpce_configuration(
+    self,
+    *,
+    arn: str,
+) -> GetVPCEConfigurationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVPCEConfigurationRequestRequestTypeDef](./type_defs.md#getvpceconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetVPCEConfigurationResultTypeDef](./type_defs.md#getvpceconfigurationresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVPCEConfigurationRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetVPCEConfigurationResultTypeDef](./type_defs.md#getvpceconfigurationresulttypedef).
+parent.get_vpce_configuration(**kwargs)
+```
 
-<a id="install\_to\_remote\_access\_session"></a>
+1. See [:material-code-braces: GetVPCEConfigurationRequestRequestTypeDef](./type_defs.md#getvpceconfigurationrequestrequesttypedef) 
 
-### install_to_remote_access_session
+### install\_to\_remote\_access\_session
 
 Installs an application to the device in a remote access session.
 
-Type annotations for
-`boto3.client("devicefarm").install_to_remote_access_session` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").install_to_remote_access_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.install_to_remote_access_session)
 
-Boto3 documentation:
-[DeviceFarm.Client.install_to_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.install_to_remote_access_session)
+```python title="Method definition"
+def install_to_remote_access_session(
+    self,
+    *,
+    remoteAccessSessionArn: str,
+    appArn: str,
+) -> InstallToRemoteAccessSessionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InstallToRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#installtoremoteaccesssessionrequestrequesttypedef).
+1. See [:material-code-braces: InstallToRemoteAccessSessionResultTypeDef](./type_defs.md#installtoremoteaccesssessionresulttypedef) 
 
-Keyword-only arguments:
 
-- `remoteAccessSessionArn`: `str` *(required)*
-- `appArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: InstallToRemoteAccessSessionRequestRequestTypeDef = {  # (1)
+    "remoteAccessSessionArn": ...,
+    "appArn": ...,
+}
 
-Returns
-[InstallToRemoteAccessSessionResultTypeDef](./type_defs.md#installtoremoteaccesssessionresulttypedef).
+parent.install_to_remote_access_session(**kwargs)
+```
 
-<a id="list\_artifacts"></a>
+1. See [:material-code-braces: InstallToRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#installtoremoteaccesssessionrequestrequesttypedef) 
 
-### list_artifacts
+### list\_artifacts
 
 Gets information about artifacts.
 
-Type annotations for `boto3.client("devicefarm").list_artifacts` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_artifacts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_artifacts)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_artifacts)
+```python title="Method definition"
+def list_artifacts(
+    self,
+    *,
+    arn: str,
+    type: ArtifactCategoryType,  # (1)
+    nextToken: str = ...,
+) -> ListArtifactsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListArtifactsRequestRequestTypeDef](./type_defs.md#listartifactsrequestrequesttypedef).
+1. See [:material-code-brackets: ArtifactCategoryType](./literals.md#artifactcategorytype) 
+2. See [:material-code-braces: ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `type`: [ArtifactCategoryType](./literals.md#artifactcategorytype)
-  *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListArtifactsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+    "type": ...,
+}
 
-Returns
-[ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef).
+parent.list_artifacts(**kwargs)
+```
 
-<a id="list\_device\_instances"></a>
+1. See [:material-code-braces: ListArtifactsRequestRequestTypeDef](./type_defs.md#listartifactsrequestrequesttypedef) 
 
-### list_device_instances
+### list\_device\_instances
 
 Returns information about the private device instances associated with one or
 more AWS accounts.
 
-Type annotations for `boto3.client("devicefarm").list_device_instances` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_device_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_instances)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_device_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_instances)
+```python title="Method definition"
+def list_device_instances(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListDeviceInstancesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDeviceInstancesRequestRequestTypeDef](./type_defs.md#listdeviceinstancesrequestrequesttypedef).
+1. See [:material-code-braces: ListDeviceInstancesResultTypeDef](./type_defs.md#listdeviceinstancesresulttypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDeviceInstancesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListDeviceInstancesResultTypeDef](./type_defs.md#listdeviceinstancesresulttypedef).
+parent.list_device_instances(**kwargs)
+```
 
-<a id="list\_device\_pools"></a>
+1. See [:material-code-braces: ListDeviceInstancesRequestRequestTypeDef](./type_defs.md#listdeviceinstancesrequestrequesttypedef) 
 
-### list_device_pools
+### list\_device\_pools
 
 Gets information about device pools.
 
-Type annotations for `boto3.client("devicefarm").list_device_pools` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_device_pools` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_pools)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_device_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_device_pools)
+```python title="Method definition"
+def list_device_pools(
+    self,
+    *,
+    arn: str,
+    type: DevicePoolTypeType = ...,  # (1)
+    nextToken: str = ...,
+) -> ListDevicePoolsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDevicePoolsRequestRequestTypeDef](./type_defs.md#listdevicepoolsrequestrequesttypedef).
+1. See [:material-code-brackets: DevicePoolTypeType](./literals.md#devicepooltypetype) 
+2. See [:material-code-braces: ListDevicePoolsResultTypeDef](./type_defs.md#listdevicepoolsresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `type`: [DevicePoolTypeType](./literals.md#devicepooltypetype)
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDevicePoolsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[ListDevicePoolsResultTypeDef](./type_defs.md#listdevicepoolsresulttypedef).
+parent.list_device_pools(**kwargs)
+```
 
-<a id="list\_devices"></a>
+1. See [:material-code-braces: ListDevicePoolsRequestRequestTypeDef](./type_defs.md#listdevicepoolsrequestrequesttypedef) 
 
-### list_devices
+### list\_devices
 
 Gets information about unique device types.
 
-Type annotations for `boto3.client("devicefarm").list_devices` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_devices)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_devices)
+```python title="Method definition"
+def list_devices(
+    self,
+    *,
+    arn: str = ...,
+    nextToken: str = ...,
+    filters: Sequence[DeviceFilterTypeDef] = ...,  # (1)
+) -> ListDevicesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef).
+1. See [:material-code-braces: DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef) 
+2. See [:material-code-braces: ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str`
-- `nextToken`: `str`
-- `filters`:
-  `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListDevicesRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef).
+parent.list_devices(**kwargs)
+```
 
-<a id="list\_instance\_profiles"></a>
+1. See [:material-code-braces: ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef) 
 
-### list_instance_profiles
+### list\_instance\_profiles
 
 Returns information about all the instance profiles in an AWS account.
 
-Type annotations for `boto3.client("devicefarm").list_instance_profiles`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_instance_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_instance_profiles)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_instance_profiles)
+```python title="Method definition"
+def list_instance_profiles(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListInstanceProfilesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstanceProfilesRequestRequestTypeDef](./type_defs.md#listinstanceprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ListInstanceProfilesResultTypeDef](./type_defs.md#listinstanceprofilesresulttypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInstanceProfilesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListInstanceProfilesResultTypeDef](./type_defs.md#listinstanceprofilesresulttypedef).
+parent.list_instance_profiles(**kwargs)
+```
 
-<a id="list\_jobs"></a>
+1. See [:material-code-braces: ListInstanceProfilesRequestRequestTypeDef](./type_defs.md#listinstanceprofilesrequestrequesttypedef) 
 
-### list_jobs
+### list\_jobs
 
 Gets information about jobs for a given test run.
 
-Type annotations for `boto3.client("devicefarm").list_jobs` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_jobs)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_jobs)
+```python title="Method definition"
+def list_jobs(
+    self,
+    *,
+    arn: str,
+    nextToken: str = ...,
+) -> ListJobsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
+parent.list_jobs(**kwargs)
+```
 
-<a id="list\_network\_profiles"></a>
+1. See [:material-code-braces: ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef) 
 
-### list_network_profiles
+### list\_network\_profiles
 
 Returns the list of available network profiles.
 
-Type annotations for `boto3.client("devicefarm").list_network_profiles` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_network_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_network_profiles)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_network_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_network_profiles)
+```python title="Method definition"
+def list_network_profiles(
+    self,
+    *,
+    arn: str,
+    type: NetworkProfileTypeType = ...,  # (1)
+    nextToken: str = ...,
+) -> ListNetworkProfilesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListNetworkProfilesRequestRequestTypeDef](./type_defs.md#listnetworkprofilesrequestrequesttypedef).
+1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
+2. See [:material-code-braces: ListNetworkProfilesResultTypeDef](./type_defs.md#listnetworkprofilesresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListNetworkProfilesRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[ListNetworkProfilesResultTypeDef](./type_defs.md#listnetworkprofilesresulttypedef).
+parent.list_network_profiles(**kwargs)
+```
 
-<a id="list\_offering\_promotions"></a>
+1. See [:material-code-braces: ListNetworkProfilesRequestRequestTypeDef](./type_defs.md#listnetworkprofilesrequestrequesttypedef) 
 
-### list_offering_promotions
+### list\_offering\_promotions
 
 Returns a list of offering promotions.
 
-Type annotations for `boto3.client("devicefarm").list_offering_promotions`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_offering_promotions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_promotions)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_offering_promotions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_promotions)
+```python title="Method definition"
+def list_offering_promotions(
+    self,
+    *,
+    nextToken: str = ...,
+) -> ListOfferingPromotionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOfferingPromotionsRequestRequestTypeDef](./type_defs.md#listofferingpromotionsrequestrequesttypedef).
+1. See [:material-code-braces: ListOfferingPromotionsResultTypeDef](./type_defs.md#listofferingpromotionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListOfferingPromotionsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListOfferingPromotionsResultTypeDef](./type_defs.md#listofferingpromotionsresulttypedef).
+parent.list_offering_promotions(**kwargs)
+```
 
-<a id="list\_offering\_transactions"></a>
+1. See [:material-code-braces: ListOfferingPromotionsRequestRequestTypeDef](./type_defs.md#listofferingpromotionsrequestrequesttypedef) 
 
-### list_offering_transactions
+### list\_offering\_transactions
 
 Returns a list of all historical purchases, renewals, and system renewal
 transactions for an AWS account.
 
-Type annotations for `boto3.client("devicefarm").list_offering_transactions`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_offering_transactions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_transactions)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_offering_transactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offering_transactions)
+```python title="Method definition"
+def list_offering_transactions(
+    self,
+    *,
+    nextToken: str = ...,
+) -> ListOfferingTransactionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOfferingTransactionsRequestRequestTypeDef](./type_defs.md#listofferingtransactionsrequestrequesttypedef).
+1. See [:material-code-braces: ListOfferingTransactionsResultTypeDef](./type_defs.md#listofferingtransactionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListOfferingTransactionsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListOfferingTransactionsResultTypeDef](./type_defs.md#listofferingtransactionsresulttypedef).
+parent.list_offering_transactions(**kwargs)
+```
 
-<a id="list\_offerings"></a>
+1. See [:material-code-braces: ListOfferingTransactionsRequestRequestTypeDef](./type_defs.md#listofferingtransactionsrequestrequesttypedef) 
 
-### list_offerings
+### list\_offerings
 
 Returns a list of products or offerings that the user can manage through the
 API.
 
-Type annotations for `boto3.client("devicefarm").list_offerings` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_offerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offerings)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_offerings)
+```python title="Method definition"
+def list_offerings(
+    self,
+    *,
+    nextToken: str = ...,
+) -> ListOfferingsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef).
+1. See [:material-code-braces: ListOfferingsResultTypeDef](./type_defs.md#listofferingsresulttypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListOfferingsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListOfferingsResultTypeDef](./type_defs.md#listofferingsresulttypedef).
+parent.list_offerings(**kwargs)
+```
 
-<a id="list\_projects"></a>
+1. See [:material-code-braces: ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef) 
 
-### list_projects
+### list\_projects
 
 Gets information about projects.
 
-Type annotations for `boto3.client("devicefarm").list_projects` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_projects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_projects)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_projects)
+```python title="Method definition"
+def list_projects(
+    self,
+    *,
+    arn: str = ...,
+    nextToken: str = ...,
+) -> ListProjectsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
+1. See [:material-code-braces: ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
+parent.list_projects(**kwargs)
+```
 
-<a id="list\_remote\_access\_sessions"></a>
+1. See [:material-code-braces: ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef) 
 
-### list_remote_access_sessions
+### list\_remote\_access\_sessions
 
 Returns a list of all currently running remote access sessions.
 
-Type annotations for `boto3.client("devicefarm").list_remote_access_sessions`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_remote_access_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_remote_access_sessions)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_remote_access_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_remote_access_sessions)
+```python title="Method definition"
+def list_remote_access_sessions(
+    self,
+    *,
+    arn: str,
+    nextToken: str = ...,
+) -> ListRemoteAccessSessionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRemoteAccessSessionsRequestRequestTypeDef](./type_defs.md#listremoteaccesssessionsrequestrequesttypedef).
+1. See [:material-code-braces: ListRemoteAccessSessionsResultTypeDef](./type_defs.md#listremoteaccesssessionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRemoteAccessSessionsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[ListRemoteAccessSessionsResultTypeDef](./type_defs.md#listremoteaccesssessionsresulttypedef).
+parent.list_remote_access_sessions(**kwargs)
+```
 
-<a id="list\_runs"></a>
+1. See [:material-code-braces: ListRemoteAccessSessionsRequestRequestTypeDef](./type_defs.md#listremoteaccesssessionsrequestrequesttypedef) 
 
-### list_runs
+### list\_runs
 
 Gets information about runs, given an AWS Device Farm project ARN.
 
-Type annotations for `boto3.client("devicefarm").list_runs` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_runs)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_runs)
+```python title="Method definition"
+def list_runs(
+    self,
+    *,
+    arn: str,
+    nextToken: str = ...,
+) -> ListRunsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRunsRequestRequestTypeDef](./type_defs.md#listrunsrequestrequesttypedef).
+1. See [:material-code-braces: ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRunsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef).
+parent.list_runs(**kwargs)
+```
 
-<a id="list\_samples"></a>
+1. See [:material-code-braces: ListRunsRequestRequestTypeDef](./type_defs.md#listrunsrequestrequesttypedef) 
 
-### list_samples
+### list\_samples
 
 Gets information about samples, given an AWS Device Farm job ARN.
 
-Type annotations for `boto3.client("devicefarm").list_samples` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_samples` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_samples)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_samples](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_samples)
+```python title="Method definition"
+def list_samples(
+    self,
+    *,
+    arn: str,
+    nextToken: str = ...,
+) -> ListSamplesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSamplesRequestRequestTypeDef](./type_defs.md#listsamplesrequestrequesttypedef).
+1. See [:material-code-braces: ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSamplesRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef).
+parent.list_samples(**kwargs)
+```
 
-<a id="list\_suites"></a>
+1. See [:material-code-braces: ListSamplesRequestRequestTypeDef](./type_defs.md#listsamplesrequestrequesttypedef) 
 
-### list_suites
+### list\_suites
 
 Gets information about test suites for a given job.
 
-Type annotations for `boto3.client("devicefarm").list_suites` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_suites` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_suites)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_suites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_suites)
+```python title="Method definition"
+def list_suites(
+    self,
+    *,
+    arn: str,
+    nextToken: str = ...,
+) -> ListSuitesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSuitesRequestRequestTypeDef](./type_defs.md#listsuitesrequestrequesttypedef).
+1. See [:material-code-braces: ListSuitesResultTypeDef](./type_defs.md#listsuitesresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSuitesRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [ListSuitesResultTypeDef](./type_defs.md#listsuitesresulttypedef).
+parent.list_suites(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSuitesRequestRequestTypeDef](./type_defs.md#listsuitesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List the tags for an AWS Device Farm resource.
 
-Type annotations for `boto3.client("devicefarm").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_test\_grid\_projects"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_test_grid_projects
+### list\_test\_grid\_projects
 
 Gets a list of all Selenium testing projects in your account.
 
-Type annotations for `boto3.client("devicefarm").list_test_grid_projects`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_test_grid_projects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_projects)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_test_grid_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_projects)
+```python title="Method definition"
+def list_test_grid_projects(
+    self,
+    *,
+    maxResult: int = ...,
+    nextToken: str = ...,
+) -> ListTestGridProjectsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTestGridProjectsRequestRequestTypeDef](./type_defs.md#listtestgridprojectsrequestrequesttypedef).
+1. See [:material-code-braces: ListTestGridProjectsResultTypeDef](./type_defs.md#listtestgridprojectsresulttypedef) 
 
-Keyword-only arguments:
 
-- `maxResult`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTestGridProjectsRequestRequestTypeDef = {  # (1)
+    "maxResult": ...,
+}
 
-Returns
-[ListTestGridProjectsResultTypeDef](./type_defs.md#listtestgridprojectsresulttypedef).
+parent.list_test_grid_projects(**kwargs)
+```
 
-<a id="list\_test\_grid\_session\_actions"></a>
+1. See [:material-code-braces: ListTestGridProjectsRequestRequestTypeDef](./type_defs.md#listtestgridprojectsrequestrequesttypedef) 
 
-### list_test_grid_session_actions
+### list\_test\_grid\_session\_actions
 
-Returns a list of the actions taken in a TestGridSession .
+Returns a list of the actions taken in a  TestGridSession .
 
-Type annotations for
-`boto3.client("devicefarm").list_test_grid_session_actions` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_test_grid_session_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_actions)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_test_grid_session_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_actions)
+```python title="Method definition"
+def list_test_grid_session_actions(
+    self,
+    *,
+    sessionArn: str,
+    maxResult: int = ...,
+    nextToken: str = ...,
+) -> ListTestGridSessionActionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTestGridSessionActionsRequestRequestTypeDef](./type_defs.md#listtestgridsessionactionsrequestrequesttypedef).
+1. See [:material-code-braces: ListTestGridSessionActionsResultTypeDef](./type_defs.md#listtestgridsessionactionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `sessionArn`: `str` *(required)*
-- `maxResult`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTestGridSessionActionsRequestRequestTypeDef = {  # (1)
+    "sessionArn": ...,
+}
 
-Returns
-[ListTestGridSessionActionsResultTypeDef](./type_defs.md#listtestgridsessionactionsresulttypedef).
+parent.list_test_grid_session_actions(**kwargs)
+```
 
-<a id="list\_test\_grid\_session\_artifacts"></a>
+1. See [:material-code-braces: ListTestGridSessionActionsRequestRequestTypeDef](./type_defs.md#listtestgridsessionactionsrequestrequesttypedef) 
 
-### list_test_grid_session_artifacts
+### list\_test\_grid\_session\_artifacts
 
 Retrieves a list of artifacts created during the session.
 
-Type annotations for
-`boto3.client("devicefarm").list_test_grid_session_artifacts` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_test_grid_session_artifacts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_artifacts)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_test_grid_session_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_session_artifacts)
+```python title="Method definition"
+def list_test_grid_session_artifacts(
+    self,
+    *,
+    sessionArn: str,
+    type: TestGridSessionArtifactCategoryType = ...,  # (1)
+    maxResult: int = ...,
+    nextToken: str = ...,
+) -> ListTestGridSessionArtifactsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTestGridSessionArtifactsRequestRequestTypeDef](./type_defs.md#listtestgridsessionartifactsrequestrequesttypedef).
+1. See [:material-code-brackets: TestGridSessionArtifactCategoryType](./literals.md#testgridsessionartifactcategorytype) 
+2. See [:material-code-braces: ListTestGridSessionArtifactsResultTypeDef](./type_defs.md#listtestgridsessionartifactsresulttypedef) 
 
-Keyword-only arguments:
 
-- `sessionArn`: `str` *(required)*
-- `type`:
-  [TestGridSessionArtifactCategoryType](./literals.md#testgridsessionartifactcategorytype)
-- `maxResult`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTestGridSessionArtifactsRequestRequestTypeDef = {  # (1)
+    "sessionArn": ...,
+}
 
-Returns
-[ListTestGridSessionArtifactsResultTypeDef](./type_defs.md#listtestgridsessionartifactsresulttypedef).
+parent.list_test_grid_session_artifacts(**kwargs)
+```
 
-<a id="list\_test\_grid\_sessions"></a>
+1. See [:material-code-braces: ListTestGridSessionArtifactsRequestRequestTypeDef](./type_defs.md#listtestgridsessionartifactsrequestrequesttypedef) 
 
-### list_test_grid_sessions
+### list\_test\_grid\_sessions
 
-Retrieves a list of sessions for a TestGridProject .
+Retrieves a list of sessions for a  TestGridProject .
 
-Type annotations for `boto3.client("devicefarm").list_test_grid_sessions`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_test_grid_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_sessions)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_test_grid_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_test_grid_sessions)
+```python title="Method definition"
+def list_test_grid_sessions(
+    self,
+    *,
+    projectArn: str,
+    status: TestGridSessionStatusType = ...,  # (1)
+    creationTimeAfter: Union[datetime, str] = ...,
+    creationTimeBefore: Union[datetime, str] = ...,
+    endTimeAfter: Union[datetime, str] = ...,
+    endTimeBefore: Union[datetime, str] = ...,
+    maxResult: int = ...,
+    nextToken: str = ...,
+) -> ListTestGridSessionsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTestGridSessionsRequestRequestTypeDef](./type_defs.md#listtestgridsessionsrequestrequesttypedef).
+1. See [:material-code-brackets: TestGridSessionStatusType](./literals.md#testgridsessionstatustype) 
+2. See [:material-code-braces: ListTestGridSessionsResultTypeDef](./type_defs.md#listtestgridsessionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
-- `status`:
-  [TestGridSessionStatusType](./literals.md#testgridsessionstatustype)
-- `creationTimeAfter`: `Union`\[`datetime`, `str`\]
-- `creationTimeBefore`: `Union`\[`datetime`, `str`\]
-- `endTimeAfter`: `Union`\[`datetime`, `str`\]
-- `endTimeBefore`: `Union`\[`datetime`, `str`\]
-- `maxResult`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTestGridSessionsRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+}
 
-Returns
-[ListTestGridSessionsResultTypeDef](./type_defs.md#listtestgridsessionsresulttypedef).
+parent.list_test_grid_sessions(**kwargs)
+```
 
-<a id="list\_tests"></a>
+1. See [:material-code-braces: ListTestGridSessionsRequestRequestTypeDef](./type_defs.md#listtestgridsessionsrequestrequesttypedef) 
 
-### list_tests
+### list\_tests
 
 Gets information about tests in a given test suite.
 
-Type annotations for `boto3.client("devicefarm").list_tests` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_tests` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tests)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_tests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_tests)
+```python title="Method definition"
+def list_tests(
+    self,
+    *,
+    arn: str,
+    nextToken: str = ...,
+) -> ListTestsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTestsRequestRequestTypeDef](./type_defs.md#listtestsrequestrequesttypedef).
+1. See [:material-code-braces: ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTestsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef).
+parent.list_tests(**kwargs)
+```
 
-<a id="list\_unique\_problems"></a>
+1. See [:material-code-braces: ListTestsRequestRequestTypeDef](./type_defs.md#listtestsrequestrequesttypedef) 
 
-### list_unique_problems
+### list\_unique\_problems
 
 Gets information about unique problems, such as exceptions or crashes.
 
-Type annotations for `boto3.client("devicefarm").list_unique_problems` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_unique_problems` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_unique_problems)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_unique_problems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_unique_problems)
+```python title="Method definition"
+def list_unique_problems(
+    self,
+    *,
+    arn: str,
+    nextToken: str = ...,
+) -> ListUniqueProblemsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUniqueProblemsRequestRequestTypeDef](./type_defs.md#listuniqueproblemsrequestrequesttypedef).
+1. See [:material-code-braces: ListUniqueProblemsResultTypeDef](./type_defs.md#listuniqueproblemsresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUniqueProblemsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[ListUniqueProblemsResultTypeDef](./type_defs.md#listuniqueproblemsresulttypedef).
+parent.list_unique_problems(**kwargs)
+```
 
-<a id="list\_uploads"></a>
+1. See [:material-code-braces: ListUniqueProblemsRequestRequestTypeDef](./type_defs.md#listuniqueproblemsrequestrequesttypedef) 
 
-### list_uploads
+### list\_uploads
 
 Gets information about uploads, given an AWS Device Farm project ARN.
 
-Type annotations for `boto3.client("devicefarm").list_uploads` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_uploads` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_uploads)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_uploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_uploads)
+```python title="Method definition"
+def list_uploads(
+    self,
+    *,
+    arn: str,
+    type: UploadTypeType = ...,  # (1)
+    nextToken: str = ...,
+) -> ListUploadsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListUploadsRequestRequestTypeDef](./type_defs.md#listuploadsrequestrequesttypedef).
+1. See [:material-code-brackets: UploadTypeType](./literals.md#uploadtypetype) 
+2. See [:material-code-braces: ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `type`: [UploadTypeType](./literals.md#uploadtypetype)
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUploadsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef).
+parent.list_uploads(**kwargs)
+```
 
-<a id="list\_vpce\_configurations"></a>
+1. See [:material-code-braces: ListUploadsRequestRequestTypeDef](./type_defs.md#listuploadsrequestrequesttypedef) 
 
-### list_vpce_configurations
+### list\_vpce\_configurations
 
 Returns information about all Amazon Virtual Private Cloud (VPC) endpoint
 configurations in the AWS account.
 
-Type annotations for `boto3.client("devicefarm").list_vpce_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").list_vpce_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_vpce_configurations)
 
-Boto3 documentation:
-[DeviceFarm.Client.list_vpce_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.list_vpce_configurations)
+```python title="Method definition"
+def list_vpce_configurations(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListVPCEConfigurationsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVPCEConfigurationsRequestRequestTypeDef](./type_defs.md#listvpceconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: ListVPCEConfigurationsResultTypeDef](./type_defs.md#listvpceconfigurationsresulttypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVPCEConfigurationsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListVPCEConfigurationsResultTypeDef](./type_defs.md#listvpceconfigurationsresulttypedef).
+parent.list_vpce_configurations(**kwargs)
+```
 
-<a id="purchase\_offering"></a>
+1. See [:material-code-braces: ListVPCEConfigurationsRequestRequestTypeDef](./type_defs.md#listvpceconfigurationsrequestrequesttypedef) 
 
-### purchase_offering
+### purchase\_offering
 
 Immediately purchases offerings for an AWS account.
 
-Type annotations for `boto3.client("devicefarm").purchase_offering` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").purchase_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.purchase_offering)
 
-Boto3 documentation:
-[DeviceFarm.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.purchase_offering)
+```python title="Method definition"
+def purchase_offering(
+    self,
+    *,
+    offeringId: str,
+    quantity: int,
+    offeringPromotionId: str = ...,
+) -> PurchaseOfferingResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef).
+1. See [:material-code-braces: PurchaseOfferingResultTypeDef](./type_defs.md#purchaseofferingresulttypedef) 
 
-Keyword-only arguments:
 
-- `offeringId`: `str` *(required)*
-- `quantity`: `int` *(required)*
-- `offeringPromotionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PurchaseOfferingRequestRequestTypeDef = {  # (1)
+    "offeringId": ...,
+    "quantity": ...,
+}
 
-Returns
-[PurchaseOfferingResultTypeDef](./type_defs.md#purchaseofferingresulttypedef).
+parent.purchase_offering(**kwargs)
+```
 
-<a id="renew\_offering"></a>
+1. See [:material-code-braces: PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef) 
 
-### renew_offering
+### renew\_offering
 
 Explicitly sets the quantity of devices to renew for an offering, starting from
 the `effectiveDate` of the next period.
 
-Type annotations for `boto3.client("devicefarm").renew_offering` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").renew_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.renew_offering)
 
-Boto3 documentation:
-[DeviceFarm.Client.renew_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.renew_offering)
+```python title="Method definition"
+def renew_offering(
+    self,
+    *,
+    offeringId: str,
+    quantity: int,
+) -> RenewOfferingResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RenewOfferingRequestRequestTypeDef](./type_defs.md#renewofferingrequestrequesttypedef).
+1. See [:material-code-braces: RenewOfferingResultTypeDef](./type_defs.md#renewofferingresulttypedef) 
 
-Keyword-only arguments:
 
-- `offeringId`: `str` *(required)*
-- `quantity`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RenewOfferingRequestRequestTypeDef = {  # (1)
+    "offeringId": ...,
+    "quantity": ...,
+}
 
-Returns
-[RenewOfferingResultTypeDef](./type_defs.md#renewofferingresulttypedef).
+parent.renew_offering(**kwargs)
+```
 
-<a id="schedule\_run"></a>
+1. See [:material-code-braces: RenewOfferingRequestRequestTypeDef](./type_defs.md#renewofferingrequestrequesttypedef) 
 
-### schedule_run
+### schedule\_run
 
 Schedules a run.
 
-Type annotations for `boto3.client("devicefarm").schedule_run` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").schedule_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.schedule_run)
 
-Boto3 documentation:
-[DeviceFarm.Client.schedule_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.schedule_run)
+```python title="Method definition"
+def schedule_run(
+    self,
+    *,
+    projectArn: str,
+    test: ScheduleRunTestTypeDef,  # (1)
+    appArn: str = ...,
+    devicePoolArn: str = ...,
+    deviceSelectionConfiguration: DeviceSelectionConfigurationTypeDef = ...,  # (2)
+    name: str = ...,
+    configuration: ScheduleRunConfigurationTypeDef = ...,  # (3)
+    executionConfiguration: ExecutionConfigurationTypeDef = ...,  # (4)
+) -> ScheduleRunResultTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[ScheduleRunRequestRequestTypeDef](./type_defs.md#schedulerunrequestrequesttypedef).
+1. See [:material-code-braces: ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef) 
+2. See [:material-code-braces: DeviceSelectionConfigurationTypeDef](./type_defs.md#deviceselectionconfigurationtypedef) 
+3. See [:material-code-braces: ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef) 
+4. See [:material-code-braces: ExecutionConfigurationTypeDef](./type_defs.md#executionconfigurationtypedef) 
+5. See [:material-code-braces: ScheduleRunResultTypeDef](./type_defs.md#schedulerunresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
-- `test`: [ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef)
-  *(required)*
-- `appArn`: `str`
-- `devicePoolArn`: `str`
-- `deviceSelectionConfiguration`:
-  [DeviceSelectionConfigurationTypeDef](./type_defs.md#deviceselectionconfigurationtypedef)
-- `name`: `str`
-- `configuration`:
-  [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
-- `executionConfiguration`:
-  [ExecutionConfigurationTypeDef](./type_defs.md#executionconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: ScheduleRunRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+    "test": ...,
+}
 
-Returns [ScheduleRunResultTypeDef](./type_defs.md#schedulerunresulttypedef).
+parent.schedule_run(**kwargs)
+```
 
-<a id="stop\_job"></a>
+1. See [:material-code-braces: ScheduleRunRequestRequestTypeDef](./type_defs.md#schedulerunrequestrequesttypedef) 
 
-### stop_job
+### stop\_job
 
 Initiates a stop request for the current job.
 
-Type annotations for `boto3.client("devicefarm").stop_job` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").stop_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_job)
 
-Boto3 documentation:
-[DeviceFarm.Client.stop_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_job)
+```python title="Method definition"
+def stop_job(
+    self,
+    *,
+    arn: str,
+) -> StopJobResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopJobRequestRequestTypeDef](./type_defs.md#stopjobrequestrequesttypedef).
+1. See [:material-code-braces: StopJobResultTypeDef](./type_defs.md#stopjobresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopJobRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [StopJobResultTypeDef](./type_defs.md#stopjobresulttypedef).
+parent.stop_job(**kwargs)
+```
 
-<a id="stop\_remote\_access\_session"></a>
+1. See [:material-code-braces: StopJobRequestRequestTypeDef](./type_defs.md#stopjobrequestrequesttypedef) 
 
-### stop_remote_access_session
+### stop\_remote\_access\_session
 
 Ends a specified remote access session.
 
-Type annotations for `boto3.client("devicefarm").stop_remote_access_session`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").stop_remote_access_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_remote_access_session)
 
-Boto3 documentation:
-[DeviceFarm.Client.stop_remote_access_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_remote_access_session)
+```python title="Method definition"
+def stop_remote_access_session(
+    self,
+    *,
+    arn: str,
+) -> StopRemoteAccessSessionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#stopremoteaccesssessionrequestrequesttypedef).
+1. See [:material-code-braces: StopRemoteAccessSessionResultTypeDef](./type_defs.md#stopremoteaccesssessionresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopRemoteAccessSessionRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[StopRemoteAccessSessionResultTypeDef](./type_defs.md#stopremoteaccesssessionresulttypedef).
+parent.stop_remote_access_session(**kwargs)
+```
 
-<a id="stop\_run"></a>
+1. See [:material-code-braces: StopRemoteAccessSessionRequestRequestTypeDef](./type_defs.md#stopremoteaccesssessionrequestrequesttypedef) 
 
-### stop_run
+### stop\_run
 
 Initiates a stop request for the current test run.
 
-Type annotations for `boto3.client("devicefarm").stop_run` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").stop_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_run)
 
-Boto3 documentation:
-[DeviceFarm.Client.stop_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.stop_run)
+```python title="Method definition"
+def stop_run(
+    self,
+    *,
+    arn: str,
+) -> StopRunResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopRunRequestRequestTypeDef](./type_defs.md#stoprunrequestrequesttypedef).
+1. See [:material-code-braces: StopRunResultTypeDef](./type_defs.md#stoprunresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopRunRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [StopRunResultTypeDef](./type_defs.md#stoprunresulttypedef).
+parent.stop_run(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopRunRequestRequestTypeDef](./type_defs.md#stoprunrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
 
-Type annotations for `boto3.client("devicefarm").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.tag_resource)
 
-Boto3 documentation:
-[DeviceFarm.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes the specified tags from a resource.
 
-Type annotations for `boto3.client("devicefarm").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.untag_resource)
 
-Boto3 documentation:
-[DeviceFarm.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_device\_instance"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_device_instance
+### update\_device\_instance
 
 Updates information about a private device instance.
 
-Type annotations for `boto3.client("devicefarm").update_device_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").update_device_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_instance)
 
-Boto3 documentation:
-[DeviceFarm.Client.update_device_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_instance)
+```python title="Method definition"
+def update_device_instance(
+    self,
+    *,
+    arn: str,
+    profileArn: str = ...,
+    labels: Sequence[str] = ...,
+) -> UpdateDeviceInstanceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDeviceInstanceRequestRequestTypeDef](./type_defs.md#updatedeviceinstancerequestrequesttypedef).
+1. See [:material-code-braces: UpdateDeviceInstanceResultTypeDef](./type_defs.md#updatedeviceinstanceresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `profileArn`: `str`
-- `labels`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateDeviceInstanceRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[UpdateDeviceInstanceResultTypeDef](./type_defs.md#updatedeviceinstanceresulttypedef).
+parent.update_device_instance(**kwargs)
+```
 
-<a id="update\_device\_pool"></a>
+1. See [:material-code-braces: UpdateDeviceInstanceRequestRequestTypeDef](./type_defs.md#updatedeviceinstancerequestrequesttypedef) 
 
-### update_device_pool
+### update\_device\_pool
 
 Modifies the name, description, and rules in a device pool given the attributes
 and the pool ARN.
 
-Type annotations for `boto3.client("devicefarm").update_device_pool` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").update_device_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_pool)
 
-Boto3 documentation:
-[DeviceFarm.Client.update_device_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_device_pool)
+```python title="Method definition"
+def update_device_pool(
+    self,
+    *,
+    arn: str,
+    name: str = ...,
+    description: str = ...,
+    rules: Sequence[RuleTypeDef] = ...,  # (1)
+    maxDevices: int = ...,
+    clearMaxDevices: bool = ...,
+) -> UpdateDevicePoolResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDevicePoolRequestRequestTypeDef](./type_defs.md#updatedevicepoolrequestrequesttypedef).
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+2. See [:material-code-braces: UpdateDevicePoolResultTypeDef](./type_defs.md#updatedevicepoolresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
-- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `maxDevices`: `int`
-- `clearMaxDevices`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateDevicePoolRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[UpdateDevicePoolResultTypeDef](./type_defs.md#updatedevicepoolresulttypedef).
+parent.update_device_pool(**kwargs)
+```
 
-<a id="update\_instance\_profile"></a>
+1. See [:material-code-braces: UpdateDevicePoolRequestRequestTypeDef](./type_defs.md#updatedevicepoolrequestrequesttypedef) 
 
-### update_instance_profile
+### update\_instance\_profile
 
 Updates information about an existing private device instance profile.
 
-Type annotations for `boto3.client("devicefarm").update_instance_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").update_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_instance_profile)
 
-Boto3 documentation:
-[DeviceFarm.Client.update_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_instance_profile)
+```python title="Method definition"
+def update_instance_profile(
+    self,
+    *,
+    arn: str,
+    name: str = ...,
+    description: str = ...,
+    packageCleanup: bool = ...,
+    excludeAppPackagesFromCleanup: Sequence[str] = ...,
+    rebootAfterUse: bool = ...,
+) -> UpdateInstanceProfileResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateInstanceProfileRequestRequestTypeDef](./type_defs.md#updateinstanceprofilerequestrequesttypedef).
+1. See [:material-code-braces: UpdateInstanceProfileResultTypeDef](./type_defs.md#updateinstanceprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
-- `packageCleanup`: `bool`
-- `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
-- `rebootAfterUse`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateInstanceProfileRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[UpdateInstanceProfileResultTypeDef](./type_defs.md#updateinstanceprofileresulttypedef).
+parent.update_instance_profile(**kwargs)
+```
 
-<a id="update\_network\_profile"></a>
+1. See [:material-code-braces: UpdateInstanceProfileRequestRequestTypeDef](./type_defs.md#updateinstanceprofilerequestrequesttypedef) 
 
-### update_network_profile
+### update\_network\_profile
 
 Updates the network profile.
 
-Type annotations for `boto3.client("devicefarm").update_network_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").update_network_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_network_profile)
 
-Boto3 documentation:
-[DeviceFarm.Client.update_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_network_profile)
+```python title="Method definition"
+def update_network_profile(
+    self,
+    *,
+    arn: str,
+    name: str = ...,
+    description: str = ...,
+    type: NetworkProfileTypeType = ...,  # (1)
+    uplinkBandwidthBits: int = ...,
+    downlinkBandwidthBits: int = ...,
+    uplinkDelayMs: int = ...,
+    downlinkDelayMs: int = ...,
+    uplinkJitterMs: int = ...,
+    downlinkJitterMs: int = ...,
+    uplinkLossPercent: int = ...,
+    downlinkLossPercent: int = ...,
+) -> UpdateNetworkProfileResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateNetworkProfileRequestRequestTypeDef](./type_defs.md#updatenetworkprofilerequestrequesttypedef).
+1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
+2. See [:material-code-braces: UpdateNetworkProfileResultTypeDef](./type_defs.md#updatenetworkprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
-- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
-- `uplinkBandwidthBits`: `int`
-- `downlinkBandwidthBits`: `int`
-- `uplinkDelayMs`: `int`
-- `downlinkDelayMs`: `int`
-- `uplinkJitterMs`: `int`
-- `downlinkJitterMs`: `int`
-- `uplinkLossPercent`: `int`
-- `downlinkLossPercent`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateNetworkProfileRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[UpdateNetworkProfileResultTypeDef](./type_defs.md#updatenetworkprofileresulttypedef).
+parent.update_network_profile(**kwargs)
+```
 
-<a id="update\_project"></a>
+1. See [:material-code-braces: UpdateNetworkProfileRequestRequestTypeDef](./type_defs.md#updatenetworkprofilerequestrequesttypedef) 
 
-### update_project
+### update\_project
 
 Modifies the specified project name, given the project ARN and a new name.
 
-Type annotations for `boto3.client("devicefarm").update_project` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").update_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_project)
 
-Boto3 documentation:
-[DeviceFarm.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_project)
+```python title="Method definition"
+def update_project(
+    self,
+    *,
+    arn: str,
+    name: str = ...,
+    defaultJobTimeoutMinutes: int = ...,
+) -> UpdateProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
+1. See [:material-code-braces: UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `name`: `str`
-- `defaultJobTimeoutMinutes`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateProjectRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).
+parent.update_project(**kwargs)
+```
 
-<a id="update\_test\_grid\_project"></a>
+1. See [:material-code-braces: UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef) 
 
-### update_test_grid_project
+### update\_test\_grid\_project
 
 Change details of a project.
 
-Type annotations for `boto3.client("devicefarm").update_test_grid_project`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").update_test_grid_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_test_grid_project)
 
-Boto3 documentation:
-[DeviceFarm.Client.update_test_grid_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_test_grid_project)
+```python title="Method definition"
+def update_test_grid_project(
+    self,
+    *,
+    projectArn: str,
+    name: str = ...,
+    description: str = ...,
+    vpcConfig: TestGridVpcConfigTypeDef = ...,  # (1)
+) -> UpdateTestGridProjectResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTestGridProjectRequestRequestTypeDef](./type_defs.md#updatetestgridprojectrequestrequesttypedef).
+1. See [:material-code-braces: TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef) 
+2. See [:material-code-braces: UpdateTestGridProjectResultTypeDef](./type_defs.md#updatetestgridprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectArn`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
-- `vpcConfig`:
-  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateTestGridProjectRequestRequestTypeDef = {  # (1)
+    "projectArn": ...,
+}
 
-Returns
-[UpdateTestGridProjectResultTypeDef](./type_defs.md#updatetestgridprojectresulttypedef).
+parent.update_test_grid_project(**kwargs)
+```
 
-<a id="update\_upload"></a>
+1. See [:material-code-braces: UpdateTestGridProjectRequestRequestTypeDef](./type_defs.md#updatetestgridprojectrequestrequesttypedef) 
 
-### update_upload
+### update\_upload
 
 Updates an uploaded test spec.
 
-Type annotations for `boto3.client("devicefarm").update_upload` method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").update_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_upload)
 
-Boto3 documentation:
-[DeviceFarm.Client.update_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_upload)
+```python title="Method definition"
+def update_upload(
+    self,
+    *,
+    arn: str,
+    name: str = ...,
+    contentType: str = ...,
+    editContent: bool = ...,
+) -> UpdateUploadResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUploadRequestRequestTypeDef](./type_defs.md#updateuploadrequestrequesttypedef).
+1. See [:material-code-braces: UpdateUploadResultTypeDef](./type_defs.md#updateuploadresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `name`: `str`
-- `contentType`: `str`
-- `editContent`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateUploadRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [UpdateUploadResultTypeDef](./type_defs.md#updateuploadresulttypedef).
+parent.update_upload(**kwargs)
+```
 
-<a id="update\_vpce\_configuration"></a>
+1. See [:material-code-braces: UpdateUploadRequestRequestTypeDef](./type_defs.md#updateuploadrequestrequesttypedef) 
 
-### update_vpce_configuration
+### update\_vpce\_configuration
 
 Updates information about an Amazon Virtual Private Cloud (VPC) endpoint
 configuration.
 
-Type annotations for `boto3.client("devicefarm").update_vpce_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("devicefarm").update_vpce_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_vpce_configuration)
 
-Boto3 documentation:
-[DeviceFarm.Client.update_vpce_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Client.update_vpce_configuration)
+```python title="Method definition"
+def update_vpce_configuration(
+    self,
+    *,
+    arn: str,
+    vpceConfigurationName: str = ...,
+    vpceServiceName: str = ...,
+    serviceDnsName: str = ...,
+    vpceConfigurationDescription: str = ...,
+) -> UpdateVPCEConfigurationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVPCEConfigurationRequestRequestTypeDef](./type_defs.md#updatevpceconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: UpdateVPCEConfigurationResultTypeDef](./type_defs.md#updatevpceconfigurationresulttypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `vpceConfigurationName`: `str`
-- `vpceServiceName`: `str`
-- `serviceDnsName`: `str`
-- `vpceConfigurationDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateVPCEConfigurationRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[UpdateVPCEConfigurationResultTypeDef](./type_defs.md#updatevpceconfigurationresulttypedef).
+parent.update_vpce_configuration(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateVPCEConfigurationRequestRequestTypeDef](./type_defs.md#updatevpceconfigurationrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("devicefarm").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator` method with overloads.
 
-- `client.get_paginator("get_offering_status")` ->
-  [GetOfferingStatusPaginator](./paginators.md#getofferingstatuspaginator)
-- `client.get_paginator("list_artifacts")` ->
-  [ListArtifactsPaginator](./paginators.md#listartifactspaginator)
-- `client.get_paginator("list_device_instances")` ->
-  [ListDeviceInstancesPaginator](./paginators.md#listdeviceinstancespaginator)
-- `client.get_paginator("list_device_pools")` ->
-  [ListDevicePoolsPaginator](./paginators.md#listdevicepoolspaginator)
-- `client.get_paginator("list_devices")` ->
-  [ListDevicesPaginator](./paginators.md#listdevicespaginator)
-- `client.get_paginator("list_instance_profiles")` ->
-  [ListInstanceProfilesPaginator](./paginators.md#listinstanceprofilespaginator)
-- `client.get_paginator("list_jobs")` ->
-  [ListJobsPaginator](./paginators.md#listjobspaginator)
-- `client.get_paginator("list_network_profiles")` ->
-  [ListNetworkProfilesPaginator](./paginators.md#listnetworkprofilespaginator)
-- `client.get_paginator("list_offering_promotions")` ->
-  [ListOfferingPromotionsPaginator](./paginators.md#listofferingpromotionspaginator)
-- `client.get_paginator("list_offering_transactions")` ->
-  [ListOfferingTransactionsPaginator](./paginators.md#listofferingtransactionspaginator)
-- `client.get_paginator("list_offerings")` ->
-  [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
-- `client.get_paginator("list_projects")` ->
-  [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-- `client.get_paginator("list_remote_access_sessions")` ->
-  [ListRemoteAccessSessionsPaginator](./paginators.md#listremoteaccesssessionspaginator)
-- `client.get_paginator("list_runs")` ->
-  [ListRunsPaginator](./paginators.md#listrunspaginator)
-- `client.get_paginator("list_samples")` ->
-  [ListSamplesPaginator](./paginators.md#listsamplespaginator)
-- `client.get_paginator("list_suites")` ->
-  [ListSuitesPaginator](./paginators.md#listsuitespaginator)
-- `client.get_paginator("list_tests")` ->
-  [ListTestsPaginator](./paginators.md#listtestspaginator)
-- `client.get_paginator("list_unique_problems")` ->
-  [ListUniqueProblemsPaginator](./paginators.md#listuniqueproblemspaginator)
-- `client.get_paginator("list_uploads")` ->
-  [ListUploadsPaginator](./paginators.md#listuploadspaginator)
-- `client.get_paginator("list_vpce_configurations")` ->
-  [ListVPCEConfigurationsPaginator](./paginators.md#listvpceconfigurationspaginator)
+- `client.get_paginator("get_offering_status")` -> [GetOfferingStatusPaginator](./paginators.md#getofferingstatuspaginator)
+- `client.get_paginator("list_artifacts")` -> [ListArtifactsPaginator](./paginators.md#listartifactspaginator)
+- `client.get_paginator("list_device_instances")` -> [ListDeviceInstancesPaginator](./paginators.md#listdeviceinstancespaginator)
+- `client.get_paginator("list_device_pools")` -> [ListDevicePoolsPaginator](./paginators.md#listdevicepoolspaginator)
+- `client.get_paginator("list_devices")` -> [ListDevicesPaginator](./paginators.md#listdevicespaginator)
+- `client.get_paginator("list_instance_profiles")` -> [ListInstanceProfilesPaginator](./paginators.md#listinstanceprofilespaginator)
+- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_network_profiles")` -> [ListNetworkProfilesPaginator](./paginators.md#listnetworkprofilespaginator)
+- `client.get_paginator("list_offering_promotions")` -> [ListOfferingPromotionsPaginator](./paginators.md#listofferingpromotionspaginator)
+- `client.get_paginator("list_offering_transactions")` -> [ListOfferingTransactionsPaginator](./paginators.md#listofferingtransactionspaginator)
+- `client.get_paginator("list_offerings")` -> [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
+- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_remote_access_sessions")` -> [ListRemoteAccessSessionsPaginator](./paginators.md#listremoteaccesssessionspaginator)
+- `client.get_paginator("list_runs")` -> [ListRunsPaginator](./paginators.md#listrunspaginator)
+- `client.get_paginator("list_samples")` -> [ListSamplesPaginator](./paginators.md#listsamplespaginator)
+- `client.get_paginator("list_suites")` -> [ListSuitesPaginator](./paginators.md#listsuitespaginator)
+- `client.get_paginator("list_tests")` -> [ListTestsPaginator](./paginators.md#listtestspaginator)
+- `client.get_paginator("list_unique_problems")` -> [ListUniqueProblemsPaginator](./paginators.md#listuniqueproblemspaginator)
+- `client.get_paginator("list_uploads")` -> [ListUploadsPaginator](./paginators.md#listuploadspaginator)
+- `client.get_paginator("list_vpce_configurations")` -> [ListVPCEConfigurationsPaginator](./paginators.md#listvpceconfigurationspaginator)
+
+
+

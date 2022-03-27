@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-pinpoint-module"></a>
-
-# Type annotations for boto3 Pinpoint module
+#  Pinpoint module
 
 > [Index](../README.md) > Pinpoint
 
-Auto-generated documentation for
-[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
-type annotations stubs module
-[mypy-boto3-pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+!!! note ""
 
-- [Type annotations for boto3 Pinpoint module](#type-annotations-for-boto3-pinpoint-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [PinpointClient](#pinpointclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
+    type annotations stubs module [mypy-boto3-pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Pinpoint`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[pinpoint]'
 python -m pip install mypy-boto3-pinpoint
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,178 +42,41 @@ python -m pip install mypy-boto3-pinpoint
 python -m pip uninstall -y mypy-boto3-pinpoint
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="pinpointclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## PinpointClient
 
-Type annotations for `boto3.client("pinpoint")` as
-[PinpointClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("pinpoint")` as [PinpointClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_pinpoint.client import PinpointClient
+
+def get_client() -> PinpointClient:
+    return Session().cleint("pinpoint")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_app](./client.md#create_app)
-- [create_campaign](./client.md#create_campaign)
-- [create_email_template](./client.md#create_email_template)
-- [create_export_job](./client.md#create_export_job)
-- [create_import_job](./client.md#create_import_job)
-- [create_in_app_template](./client.md#create_in_app_template)
-- [create_journey](./client.md#create_journey)
-- [create_push_template](./client.md#create_push_template)
-- [create_recommender_configuration](./client.md#create_recommender_configuration)
-- [create_segment](./client.md#create_segment)
-- [create_sms_template](./client.md#create_sms_template)
-- [create_voice_template](./client.md#create_voice_template)
-- [delete_adm_channel](./client.md#delete_adm_channel)
-- [delete_apns_channel](./client.md#delete_apns_channel)
-- [delete_apns_sandbox_channel](./client.md#delete_apns_sandbox_channel)
-- [delete_apns_voip_channel](./client.md#delete_apns_voip_channel)
-- [delete_apns_voip_sandbox_channel](./client.md#delete_apns_voip_sandbox_channel)
-- [delete_app](./client.md#delete_app)
-- [delete_baidu_channel](./client.md#delete_baidu_channel)
-- [delete_campaign](./client.md#delete_campaign)
-- [delete_email_channel](./client.md#delete_email_channel)
-- [delete_email_template](./client.md#delete_email_template)
-- [delete_endpoint](./client.md#delete_endpoint)
-- [delete_event_stream](./client.md#delete_event_stream)
-- [delete_gcm_channel](./client.md#delete_gcm_channel)
-- [delete_in_app_template](./client.md#delete_in_app_template)
-- [delete_journey](./client.md#delete_journey)
-- [delete_push_template](./client.md#delete_push_template)
-- [delete_recommender_configuration](./client.md#delete_recommender_configuration)
-- [delete_segment](./client.md#delete_segment)
-- [delete_sms_channel](./client.md#delete_sms_channel)
-- [delete_sms_template](./client.md#delete_sms_template)
-- [delete_user_endpoints](./client.md#delete_user_endpoints)
-- [delete_voice_channel](./client.md#delete_voice_channel)
-- [delete_voice_template](./client.md#delete_voice_template)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_adm_channel](./client.md#get_adm_channel)
-- [get_apns_channel](./client.md#get_apns_channel)
-- [get_apns_sandbox_channel](./client.md#get_apns_sandbox_channel)
-- [get_apns_voip_channel](./client.md#get_apns_voip_channel)
-- [get_apns_voip_sandbox_channel](./client.md#get_apns_voip_sandbox_channel)
-- [get_app](./client.md#get_app)
-- [get_application_date_range_kpi](./client.md#get_application_date_range_kpi)
-- [get_application_settings](./client.md#get_application_settings)
-- [get_apps](./client.md#get_apps)
-- [get_baidu_channel](./client.md#get_baidu_channel)
-- [get_campaign](./client.md#get_campaign)
-- [get_campaign_activities](./client.md#get_campaign_activities)
-- [get_campaign_date_range_kpi](./client.md#get_campaign_date_range_kpi)
-- [get_campaign_version](./client.md#get_campaign_version)
-- [get_campaign_versions](./client.md#get_campaign_versions)
-- [get_campaigns](./client.md#get_campaigns)
-- [get_channels](./client.md#get_channels)
-- [get_email_channel](./client.md#get_email_channel)
-- [get_email_template](./client.md#get_email_template)
-- [get_endpoint](./client.md#get_endpoint)
-- [get_event_stream](./client.md#get_event_stream)
-- [get_export_job](./client.md#get_export_job)
-- [get_export_jobs](./client.md#get_export_jobs)
-- [get_gcm_channel](./client.md#get_gcm_channel)
-- [get_import_job](./client.md#get_import_job)
-- [get_import_jobs](./client.md#get_import_jobs)
-- [get_in_app_messages](./client.md#get_in_app_messages)
-- [get_in_app_template](./client.md#get_in_app_template)
-- [get_journey](./client.md#get_journey)
-- [get_journey_date_range_kpi](./client.md#get_journey_date_range_kpi)
-- [get_journey_execution_activity_metrics](./client.md#get_journey_execution_activity_metrics)
-- [get_journey_execution_metrics](./client.md#get_journey_execution_metrics)
-- [get_push_template](./client.md#get_push_template)
-- [get_recommender_configuration](./client.md#get_recommender_configuration)
-- [get_recommender_configurations](./client.md#get_recommender_configurations)
-- [get_segment](./client.md#get_segment)
-- [get_segment_export_jobs](./client.md#get_segment_export_jobs)
-- [get_segment_import_jobs](./client.md#get_segment_import_jobs)
-- [get_segment_version](./client.md#get_segment_version)
-- [get_segment_versions](./client.md#get_segment_versions)
-- [get_segments](./client.md#get_segments)
-- [get_sms_channel](./client.md#get_sms_channel)
-- [get_sms_template](./client.md#get_sms_template)
-- [get_user_endpoints](./client.md#get_user_endpoints)
-- [get_voice_channel](./client.md#get_voice_channel)
-- [get_voice_template](./client.md#get_voice_template)
-- [list_journeys](./client.md#list_journeys)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_template_versions](./client.md#list_template_versions)
-- [list_templates](./client.md#list_templates)
-- [phone_number_validate](./client.md#phone_number_validate)
-- [put_event_stream](./client.md#put_event_stream)
-- [put_events](./client.md#put_events)
-- [remove_attributes](./client.md#remove_attributes)
-- [send_messages](./client.md#send_messages)
-- [send_otp_message](./client.md#send_otp_message)
-- [send_users_messages](./client.md#send_users_messages)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_adm_channel](./client.md#update_adm_channel)
-- [update_apns_channel](./client.md#update_apns_channel)
-- [update_apns_sandbox_channel](./client.md#update_apns_sandbox_channel)
-- [update_apns_voip_channel](./client.md#update_apns_voip_channel)
-- [update_apns_voip_sandbox_channel](./client.md#update_apns_voip_sandbox_channel)
-- [update_application_settings](./client.md#update_application_settings)
-- [update_baidu_channel](./client.md#update_baidu_channel)
-- [update_campaign](./client.md#update_campaign)
-- [update_email_channel](./client.md#update_email_channel)
-- [update_email_template](./client.md#update_email_template)
-- [update_endpoint](./client.md#update_endpoint)
-- [update_endpoints_batch](./client.md#update_endpoints_batch)
-- [update_gcm_channel](./client.md#update_gcm_channel)
-- [update_in_app_template](./client.md#update_in_app_template)
-- [update_journey](./client.md#update_journey)
-- [update_journey_state](./client.md#update_journey_state)
-- [update_push_template](./client.md#update_push_template)
-- [update_recommender_configuration](./client.md#update_recommender_configuration)
-- [update_segment](./client.md#update_segment)
-- [update_sms_channel](./client.md#update_sms_channel)
-- [update_sms_template](./client.md#update_sms_template)
-- [update_template_active_version](./client.md#update_template_active_version)
-- [update_voice_channel](./client.md#update_voice_channel)
-- [update_voice_template](./client.md#update_voice_template)
-- [verify_otp_message](./client.md#verify_otp_message)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-PinpointClient [exceptions](./client.md#exceptions)
 
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- InternalServerErrorException
-- MethodNotAllowedException
-- NotFoundException
-- PayloadTooLargeException
-- TooManyRequestsException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_pinpoint.literals import ActionType
 
-```python
-from mypy_boto3_pinpoint.literals import ActionType, ...
+def get_value() -> ActionType:
+    return "DEEP_LINK"
 ```
 
 - [ActionType](./literals.md#actiontype)
@@ -265,18 +107,23 @@ from mypy_boto3_pinpoint.literals import ActionType, ...
 - [PinpointServiceName](./literals.md#pinpointservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_pinpoint.type_defs import ADMChannelRequestTypeDef
 
-```python
-from mypy_boto3_pinpoint.type_defs import ADMChannelRequestTypeDef, ...
+def get_value() -> ADMChannelRequestTypeDef:
+    return {
+        "ClientId": ...,
+        "ClientSecret": ...,
+    }
 ```
 
 - [ADMChannelRequestTypeDef](./type_defs.md#admchannelrequesttypedef)
@@ -714,3 +561,4 @@ from mypy_boto3_pinpoint.type_defs import ADMChannelRequestTypeDef, ...
 - [WriteJourneyRequestTypeDef](./type_defs.md#writejourneyrequesttypedef)
 - [WriteSegmentRequestTypeDef](./type_defs.md#writesegmentrequesttypedef)
 - [WriteTreatmentResourceTypeDef](./type_defs.md#writetreatmentresourcetypedef)
+

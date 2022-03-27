@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-apprunner-module"></a>
-
-# Examples for boto3 AppRunner module
+# Examples
 
 > [Index](../README.md) > [AppRunner](./README.md) > Examples
 
-- [Examples for boto3 AppRunner module](#examples-for-boto3-apprunner-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
+    type annotations stubs module [mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[apprunner]` package installed.
 
-Write your `AppRunner` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `AppRunner` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type AppRunnerClient
-# and provides type checking and code completion
-client = session.client("apprunner")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateCustomDomainResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_custom_domain()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("apprunner")  # (1)
+    result = client.associate_custom_domain()  # (2)
+    ```
+
+    1. client: [AppRunnerClient](./client.md)
+    2. result: [:material-code-braces: AssociateCustomDomainResponseTypeDef](./type_defs.md#associatecustomdomainresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[apprunner]` or a standalone `mypy_boto3_apprunner`
-package, you have to explicitly specify `client: AppRunnerClient` type
-annotation.
+With `boto3-stubs-lite[apprunner]`
+or a standalone `mypy_boto3_apprunner` package, you have to explicitly specify `client: AppRunnerClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_apprunner.client import AppRunnerClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_apprunner.client import AppRunnerClient
+    from mypy_boto3_apprunner.type_defs import AssociateCustomDomainResponseTypeDef
+    from mypy_boto3_apprunner.type_defs import AssociateCustomDomainRequestRequestTypeDef
 
 
-from mypy_boto3_apprunner.type_defs import AssociateCustomDomainResponseTypeDef
+    session = Session()
+
+    client: AppRunnerClient = session.client("apprunner")
+
+    kwargs: AssociateCustomDomainRequestRequestTypeDef = {...}
+    result: AssociateCustomDomainResponseTypeDef = client.associate_custom_domain(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: AppRunnerClient = session.client("apprunner")
 
-result: AssociateCustomDomainResponseTypeDef = client.associate_custom_domain()
-```
+

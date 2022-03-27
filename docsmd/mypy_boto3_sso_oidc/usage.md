@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-ssooidc-module"></a>
-
-# Examples for boto3 SSOOIDC module
+# Examples
 
 > [Index](../README.md) > [SSOOIDC](./README.md) > Examples
 
-- [Examples for boto3 SSOOIDC module](#examples-for-boto3-ssooidc-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SSOOIDC](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-oidc.html#SSOOIDC)
+    type annotations stubs module [mypy-boto3-sso-oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[sso-oidc]` package installed.
 
-Write your `SSOOIDC` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `SSOOIDC` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SSOOIDCClient
-# and provides type checking and code completion
-client = session.client("sso-oidc")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("sso-oidc")  # (1)
+    result = client.create_token()  # (2)
+    ```
+
+    1. client: [SSOOIDCClient](./client.md)
+    2. result: [:material-code-braces: CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[sso-oidc]` or a standalone `mypy_boto3_sso_oidc`
-package, you have to explicitly specify `client: SSOOIDCClient` type
-annotation.
+With `boto3-stubs-lite[sso-oidc]`
+or a standalone `mypy_boto3_sso_oidc` package, you have to explicitly specify `client: SSOOIDCClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_sso_oidc.client import SSOOIDCClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_sso_oidc.client import SSOOIDCClient
+    from mypy_boto3_sso_oidc.type_defs import CreateTokenResponseTypeDef
+    from mypy_boto3_sso_oidc.type_defs import CreateTokenRequestRequestTypeDef
 
 
-from mypy_boto3_sso_oidc.type_defs import bool
+    session = Session()
+
+    client: SSOOIDCClient = session.client("sso-oidc")
+
+    kwargs: CreateTokenRequestRequestTypeDef = {...}
+    result: CreateTokenResponseTypeDef = client.create_token(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: SSOOIDCClient = session.client("sso-oidc")
 
-result: bool = client.can_paginate()
-```
+

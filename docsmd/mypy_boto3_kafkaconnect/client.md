@@ -1,44 +1,18 @@
-<a id="kafkaconnectclient-for-boto3-kafkaconnect-module"></a>
-
-# KafkaConnectClient for boto3 KafkaConnect module
+# KafkaConnectClient
 
 > [Index](../README.md) > [KafkaConnect](./README.md) > KafkaConnectClient
 
-Auto-generated documentation for
-[KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
-type annotations stubs module
-[mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
+!!! note ""
 
-- [KafkaConnectClient for boto3 KafkaConnect module](#kafkaconnectclient-for-boto3-kafkaconnect-module)
-  - [KafkaConnectClient](#kafkaconnectclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_connector](#create_connector)
-    - [create_custom_plugin](#create_custom_plugin)
-    - [create_worker_configuration](#create_worker_configuration)
-    - [delete_connector](#delete_connector)
-    - [delete_custom_plugin](#delete_custom_plugin)
-    - [describe_connector](#describe_connector)
-    - [describe_custom_plugin](#describe_custom_plugin)
-    - [describe_worker_configuration](#describe_worker_configuration)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_connectors](#list_connectors)
-    - [list_custom_plugins](#list_custom_plugins)
-    - [list_worker_configurations](#list_worker_configurations)
-    - [update_connector](#update_connector)
-    - [get_paginator](#get_paginator)
-
-<a id="kafkaconnectclient"></a>
+    Auto-generated documentation for [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
+    type annotations stubs module [mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
 
 ## KafkaConnectClient
 
-Type annotations for `boto3.client("kafkaconnect")`
+Type annotations and code completion for `#!python boto3.client("kafkaconnect")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_kafkaconnect.client import KafkaConnectClient
 
@@ -46,393 +20,480 @@ def get_kafkaconnect_client() -> KafkaConnectClient:
     return Session().client("kafkaconnect")
 ```
 
-Boto3 documentation:
-[KafkaConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("kafkaconnect").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("kafkaconnect")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.InternalServerErrorException,
+    client.NotFoundException,
+    client.ServiceUnavailableException,
+    client.TooManyRequestsException,
+    client.UnauthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_kafkaconnect.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnauthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-KafkaConnectClient exceptions.
-
-Type annotations for `boto3.client("kafkaconnect").exceptions` method.
-
-Boto3 documentation:
-[KafkaConnect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("kafkaconnect").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.can_paginate)
 
-Boto3 documentation:
-[KafkaConnect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_connector"></a>
-
-### create_connector
+### create\_connector
 
 Creates a connector using the specified properties.
 
-Type annotations for `boto3.client("kafkaconnect").create_connector` method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").create_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.create_connector)
 
-Boto3 documentation:
-[KafkaConnect.Client.create_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.create_connector)
+```python title="Method definition"
+def create_connector(
+    self,
+    *,
+    capacity: CapacityTypeDef,  # (1)
+    connectorConfiguration: Mapping[str, str],
+    connectorName: str,
+    kafkaCluster: KafkaClusterTypeDef,  # (2)
+    kafkaClusterClientAuthentication: KafkaClusterClientAuthenticationTypeDef,  # (3)
+    kafkaClusterEncryptionInTransit: KafkaClusterEncryptionInTransitTypeDef,  # (4)
+    kafkaConnectVersion: str,
+    plugins: Sequence[PluginTypeDef],  # (5)
+    serviceExecutionRoleArn: str,
+    connectorDescription: str = ...,
+    logDelivery: LogDeliveryTypeDef = ...,  # (6)
+    workerConfiguration: WorkerConfigurationTypeDef = ...,  # (7)
+) -> CreateConnectorResponseTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectorRequestRequestTypeDef](./type_defs.md#createconnectorrequestrequesttypedef).
+1. See [:material-code-braces: CapacityTypeDef](./type_defs.md#capacitytypedef) 
+2. See [:material-code-braces: KafkaClusterTypeDef](./type_defs.md#kafkaclustertypedef) 
+3. See [:material-code-braces: KafkaClusterClientAuthenticationTypeDef](./type_defs.md#kafkaclusterclientauthenticationtypedef) 
+4. See [:material-code-braces: KafkaClusterEncryptionInTransitTypeDef](./type_defs.md#kafkaclusterencryptionintransittypedef) 
+5. See [:material-code-braces: PluginTypeDef](./type_defs.md#plugintypedef) 
+6. See [:material-code-braces: LogDeliveryTypeDef](./type_defs.md#logdeliverytypedef) 
+7. See [:material-code-braces: WorkerConfigurationTypeDef](./type_defs.md#workerconfigurationtypedef) 
+8. See [:material-code-braces: CreateConnectorResponseTypeDef](./type_defs.md#createconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `capacity`: [CapacityTypeDef](./type_defs.md#capacitytypedef) *(required)*
-- `connectorConfiguration`: `Mapping`\[`str`, `str`\] *(required)*
-- `connectorName`: `str` *(required)*
-- `kafkaCluster`: [KafkaClusterTypeDef](./type_defs.md#kafkaclustertypedef)
-  *(required)*
-- `kafkaClusterClientAuthentication`:
-  [KafkaClusterClientAuthenticationTypeDef](./type_defs.md#kafkaclusterclientauthenticationtypedef)
-  *(required)*
-- `kafkaClusterEncryptionInTransit`:
-  [KafkaClusterEncryptionInTransitTypeDef](./type_defs.md#kafkaclusterencryptionintransittypedef)
-  *(required)*
-- `kafkaConnectVersion`: `str` *(required)*
-- `plugins`: `Sequence`\[[PluginTypeDef](./type_defs.md#plugintypedef)\]
-  *(required)*
-- `serviceExecutionRoleArn`: `str` *(required)*
-- `connectorDescription`: `str`
-- `logDelivery`: [LogDeliveryTypeDef](./type_defs.md#logdeliverytypedef)
-- `workerConfiguration`:
-  [WorkerConfigurationTypeDef](./type_defs.md#workerconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateConnectorRequestRequestTypeDef = {  # (1)
+    "capacity": ...,
+    "connectorConfiguration": ...,
+    "connectorName": ...,
+    "kafkaCluster": ...,
+    "kafkaClusterClientAuthentication": ...,
+    "kafkaClusterEncryptionInTransit": ...,
+    "kafkaConnectVersion": ...,
+    "plugins": ...,
+    "serviceExecutionRoleArn": ...,
+}
 
-Returns
-[CreateConnectorResponseTypeDef](./type_defs.md#createconnectorresponsetypedef).
+parent.create_connector(**kwargs)
+```
 
-<a id="create\_custom\_plugin"></a>
+1. See [:material-code-braces: CreateConnectorRequestRequestTypeDef](./type_defs.md#createconnectorrequestrequesttypedef) 
 
-### create_custom_plugin
+### create\_custom\_plugin
 
 Creates a custom plugin using the specified properties.
 
-Type annotations for `boto3.client("kafkaconnect").create_custom_plugin`
-method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").create_custom_plugin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.create_custom_plugin)
 
-Boto3 documentation:
-[KafkaConnect.Client.create_custom_plugin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.create_custom_plugin)
+```python title="Method definition"
+def create_custom_plugin(
+    self,
+    *,
+    contentType: CustomPluginContentTypeType,  # (1)
+    location: CustomPluginLocationTypeDef,  # (2)
+    name: str,
+    description: str = ...,
+) -> CreateCustomPluginResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomPluginRequestRequestTypeDef](./type_defs.md#createcustompluginrequestrequesttypedef).
+1. See [:material-code-brackets: CustomPluginContentTypeType](./literals.md#customplugincontenttypetype) 
+2. See [:material-code-braces: CustomPluginLocationTypeDef](./type_defs.md#custompluginlocationtypedef) 
+3. See [:material-code-braces: CreateCustomPluginResponseTypeDef](./type_defs.md#createcustompluginresponsetypedef) 
 
-Keyword-only arguments:
 
-- `contentType`:
-  [CustomPluginContentTypeType](./literals.md#customplugincontenttypetype)
-  *(required)*
-- `location`:
-  [CustomPluginLocationTypeDef](./type_defs.md#custompluginlocationtypedef)
-  *(required)*
-- `name`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateCustomPluginRequestRequestTypeDef = {  # (1)
+    "contentType": ...,
+    "location": ...,
+    "name": ...,
+}
 
-Returns
-[CreateCustomPluginResponseTypeDef](./type_defs.md#createcustompluginresponsetypedef).
+parent.create_custom_plugin(**kwargs)
+```
 
-<a id="create\_worker\_configuration"></a>
+1. See [:material-code-braces: CreateCustomPluginRequestRequestTypeDef](./type_defs.md#createcustompluginrequestrequesttypedef) 
 
-### create_worker_configuration
+### create\_worker\_configuration
 
 Creates a worker configuration using the specified properties.
 
-Type annotations for `boto3.client("kafkaconnect").create_worker_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").create_worker_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.create_worker_configuration)
 
-Boto3 documentation:
-[KafkaConnect.Client.create_worker_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.create_worker_configuration)
+```python title="Method definition"
+def create_worker_configuration(
+    self,
+    *,
+    name: str,
+    propertiesFileContent: str,
+    description: str = ...,
+) -> CreateWorkerConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkerConfigurationRequestRequestTypeDef](./type_defs.md#createworkerconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: CreateWorkerConfigurationResponseTypeDef](./type_defs.md#createworkerconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `propertiesFileContent`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateWorkerConfigurationRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "propertiesFileContent": ...,
+}
 
-Returns
-[CreateWorkerConfigurationResponseTypeDef](./type_defs.md#createworkerconfigurationresponsetypedef).
+parent.create_worker_configuration(**kwargs)
+```
 
-<a id="delete\_connector"></a>
+1. See [:material-code-braces: CreateWorkerConfigurationRequestRequestTypeDef](./type_defs.md#createworkerconfigurationrequestrequesttypedef) 
 
-### delete_connector
+### delete\_connector
 
 Deletes the specified connector.
 
-Type annotations for `boto3.client("kafkaconnect").delete_connector` method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").delete_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.delete_connector)
 
-Boto3 documentation:
-[KafkaConnect.Client.delete_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.delete_connector)
+```python title="Method definition"
+def delete_connector(
+    self,
+    *,
+    connectorArn: str,
+    currentVersion: str = ...,
+) -> DeleteConnectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectorRequestRequestTypeDef](./type_defs.md#deleteconnectorrequestrequesttypedef).
+1. See [:material-code-braces: DeleteConnectorResponseTypeDef](./type_defs.md#deleteconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorArn`: `str` *(required)*
-- `currentVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectorRequestRequestTypeDef = {  # (1)
+    "connectorArn": ...,
+}
 
-Returns
-[DeleteConnectorResponseTypeDef](./type_defs.md#deleteconnectorresponsetypedef).
+parent.delete_connector(**kwargs)
+```
 
-<a id="delete\_custom\_plugin"></a>
+1. See [:material-code-braces: DeleteConnectorRequestRequestTypeDef](./type_defs.md#deleteconnectorrequestrequesttypedef) 
 
-### delete_custom_plugin
+### delete\_custom\_plugin
 
 Deletes a custom plugin.
 
-Type annotations for `boto3.client("kafkaconnect").delete_custom_plugin`
-method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").delete_custom_plugin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.delete_custom_plugin)
 
-Boto3 documentation:
-[KafkaConnect.Client.delete_custom_plugin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.delete_custom_plugin)
+```python title="Method definition"
+def delete_custom_plugin(
+    self,
+    *,
+    customPluginArn: str,
+) -> DeleteCustomPluginResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomPluginRequestRequestTypeDef](./type_defs.md#deletecustompluginrequestrequesttypedef).
+1. See [:material-code-braces: DeleteCustomPluginResponseTypeDef](./type_defs.md#deletecustompluginresponsetypedef) 
 
-Keyword-only arguments:
 
-- `customPluginArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomPluginRequestRequestTypeDef = {  # (1)
+    "customPluginArn": ...,
+}
 
-Returns
-[DeleteCustomPluginResponseTypeDef](./type_defs.md#deletecustompluginresponsetypedef).
+parent.delete_custom_plugin(**kwargs)
+```
 
-<a id="describe\_connector"></a>
+1. See [:material-code-braces: DeleteCustomPluginRequestRequestTypeDef](./type_defs.md#deletecustompluginrequestrequesttypedef) 
 
-### describe_connector
+### describe\_connector
 
 Returns summary information about the connector.
 
-Type annotations for `boto3.client("kafkaconnect").describe_connector` method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").describe_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.describe_connector)
 
-Boto3 documentation:
-[KafkaConnect.Client.describe_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.describe_connector)
+```python title="Method definition"
+def describe_connector(
+    self,
+    *,
+    connectorArn: str,
+) -> DescribeConnectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectorRequestRequestTypeDef](./type_defs.md#describeconnectorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeConnectorResponseTypeDef](./type_defs.md#describeconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectorRequestRequestTypeDef = {  # (1)
+    "connectorArn": ...,
+}
 
-Returns
-[DescribeConnectorResponseTypeDef](./type_defs.md#describeconnectorresponsetypedef).
+parent.describe_connector(**kwargs)
+```
 
-<a id="describe\_custom\_plugin"></a>
+1. See [:material-code-braces: DescribeConnectorRequestRequestTypeDef](./type_defs.md#describeconnectorrequestrequesttypedef) 
 
-### describe_custom_plugin
+### describe\_custom\_plugin
 
 A summary description of the custom plugin.
 
-Type annotations for `boto3.client("kafkaconnect").describe_custom_plugin`
-method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").describe_custom_plugin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.describe_custom_plugin)
 
-Boto3 documentation:
-[KafkaConnect.Client.describe_custom_plugin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.describe_custom_plugin)
+```python title="Method definition"
+def describe_custom_plugin(
+    self,
+    *,
+    customPluginArn: str,
+) -> DescribeCustomPluginResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCustomPluginRequestRequestTypeDef](./type_defs.md#describecustompluginrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCustomPluginResponseTypeDef](./type_defs.md#describecustompluginresponsetypedef) 
 
-Keyword-only arguments:
 
-- `customPluginArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomPluginRequestRequestTypeDef = {  # (1)
+    "customPluginArn": ...,
+}
 
-Returns
-[DescribeCustomPluginResponseTypeDef](./type_defs.md#describecustompluginresponsetypedef).
+parent.describe_custom_plugin(**kwargs)
+```
 
-<a id="describe\_worker\_configuration"></a>
+1. See [:material-code-braces: DescribeCustomPluginRequestRequestTypeDef](./type_defs.md#describecustompluginrequestrequesttypedef) 
 
-### describe_worker_configuration
+### describe\_worker\_configuration
 
 Returns information about a worker configuration.
 
-Type annotations for
-`boto3.client("kafkaconnect").describe_worker_configuration` method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").describe_worker_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.describe_worker_configuration)
 
-Boto3 documentation:
-[KafkaConnect.Client.describe_worker_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.describe_worker_configuration)
+```python title="Method definition"
+def describe_worker_configuration(
+    self,
+    *,
+    workerConfigurationArn: str,
+) -> DescribeWorkerConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkerConfigurationRequestRequestTypeDef](./type_defs.md#describeworkerconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkerConfigurationResponseTypeDef](./type_defs.md#describeworkerconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workerConfigurationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkerConfigurationRequestRequestTypeDef = {  # (1)
+    "workerConfigurationArn": ...,
+}
 
-Returns
-[DescribeWorkerConfigurationResponseTypeDef](./type_defs.md#describeworkerconfigurationresponsetypedef).
+parent.describe_worker_configuration(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeWorkerConfigurationRequestRequestTypeDef](./type_defs.md#describeworkerconfigurationrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("kafkaconnect").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.generate_presigned_url)
 
-Boto3 documentation:
-[KafkaConnect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_connectors"></a>
-
-### list_connectors
+### list\_connectors
 
 Returns a list of all the connectors in this account and Region.
 
-Type annotations for `boto3.client("kafkaconnect").list_connectors` method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").list_connectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.list_connectors)
 
-Boto3 documentation:
-[KafkaConnect.Client.list_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.list_connectors)
+```python title="Method definition"
+def list_connectors(
+    self,
+    *,
+    connectorNamePrefix: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListConnectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConnectorsRequestRequestTypeDef](./type_defs.md#listconnectorsrequestrequesttypedef).
+1. See [:material-code-braces: ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `connectorNamePrefix`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConnectorsRequestRequestTypeDef = {  # (1)
+    "connectorNamePrefix": ...,
+}
 
-Returns
-[ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef).
+parent.list_connectors(**kwargs)
+```
 
-<a id="list\_custom\_plugins"></a>
+1. See [:material-code-braces: ListConnectorsRequestRequestTypeDef](./type_defs.md#listconnectorsrequestrequesttypedef) 
 
-### list_custom_plugins
+### list\_custom\_plugins
 
 Returns a list of all of the custom plugins in this account and Region.
 
-Type annotations for `boto3.client("kafkaconnect").list_custom_plugins` method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").list_custom_plugins` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.list_custom_plugins)
 
-Boto3 documentation:
-[KafkaConnect.Client.list_custom_plugins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.list_custom_plugins)
+```python title="Method definition"
+def list_custom_plugins(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListCustomPluginsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomPluginsRequestRequestTypeDef](./type_defs.md#listcustompluginsrequestrequesttypedef).
+1. See [:material-code-braces: ListCustomPluginsResponseTypeDef](./type_defs.md#listcustompluginsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCustomPluginsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListCustomPluginsResponseTypeDef](./type_defs.md#listcustompluginsresponsetypedef).
+parent.list_custom_plugins(**kwargs)
+```
 
-<a id="list\_worker\_configurations"></a>
+1. See [:material-code-braces: ListCustomPluginsRequestRequestTypeDef](./type_defs.md#listcustompluginsrequestrequesttypedef) 
 
-### list_worker_configurations
+### list\_worker\_configurations
 
 Returns a list of all of the worker configurations in this account and Region.
 
-Type annotations for `boto3.client("kafkaconnect").list_worker_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").list_worker_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.list_worker_configurations)
 
-Boto3 documentation:
-[KafkaConnect.Client.list_worker_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.list_worker_configurations)
+```python title="Method definition"
+def list_worker_configurations(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListWorkerConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkerConfigurationsRequestRequestTypeDef](./type_defs.md#listworkerconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: ListWorkerConfigurationsResponseTypeDef](./type_defs.md#listworkerconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListWorkerConfigurationsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListWorkerConfigurationsResponseTypeDef](./type_defs.md#listworkerconfigurationsresponsetypedef).
+parent.list_worker_configurations(**kwargs)
+```
 
-<a id="update\_connector"></a>
+1. See [:material-code-braces: ListWorkerConfigurationsRequestRequestTypeDef](./type_defs.md#listworkerconfigurationsrequestrequesttypedef) 
 
-### update_connector
+### update\_connector
 
 Updates the specified connector.
 
-Type annotations for `boto3.client("kafkaconnect").update_connector` method.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").update_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.update_connector)
 
-Boto3 documentation:
-[KafkaConnect.Client.update_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.update_connector)
+```python title="Method definition"
+def update_connector(
+    self,
+    *,
+    capacity: CapacityUpdateTypeDef,  # (1)
+    connectorArn: str,
+    currentVersion: str,
+) -> UpdateConnectorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectorRequestRequestTypeDef](./type_defs.md#updateconnectorrequestrequesttypedef).
+1. See [:material-code-braces: CapacityUpdateTypeDef](./type_defs.md#capacityupdatetypedef) 
+2. See [:material-code-braces: UpdateConnectorResponseTypeDef](./type_defs.md#updateconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `capacity`: [CapacityUpdateTypeDef](./type_defs.md#capacityupdatetypedef)
-  *(required)*
-- `connectorArn`: `str` *(required)*
-- `currentVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectorRequestRequestTypeDef = {  # (1)
+    "capacity": ...,
+    "connectorArn": ...,
+    "currentVersion": ...,
+}
 
-Returns
-[UpdateConnectorResponseTypeDef](./type_defs.md#updateconnectorresponsetypedef).
+parent.update_connector(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateConnectorRequestRequestTypeDef](./type_defs.md#updateconnectorrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("kafkaconnect").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("kafkaconnect").get_paginator` method with overloads.
 
-- `client.get_paginator("list_connectors")` ->
-  [ListConnectorsPaginator](./paginators.md#listconnectorspaginator)
-- `client.get_paginator("list_custom_plugins")` ->
-  [ListCustomPluginsPaginator](./paginators.md#listcustompluginspaginator)
-- `client.get_paginator("list_worker_configurations")` ->
-  [ListWorkerConfigurationsPaginator](./paginators.md#listworkerconfigurationspaginator)
+- `client.get_paginator("list_connectors")` -> [ListConnectorsPaginator](./paginators.md#listconnectorspaginator)
+- `client.get_paginator("list_custom_plugins")` -> [ListCustomPluginsPaginator](./paginators.md#listcustompluginspaginator)
+- `client.get_paginator("list_worker_configurations")` -> [ListWorkerConfigurationsPaginator](./paginators.md#listworkerconfigurationspaginator)
+
+
+

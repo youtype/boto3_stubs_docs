@@ -1,69 +1,71 @@
-<a id="examples-for-boto3-dlm-module"></a>
-
-# Examples for boto3 DLM module
+# Examples
 
 > [Index](../README.md) > [DLM](./README.md) > Examples
 
-- [Examples for boto3 DLM module](#examples-for-boto3-dlm-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+    type annotations stubs module [mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[dlm]` package installed.
 
-Write your `DLM` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `DLM` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type DLMClient
-# and provides type checking and code completion
-client = session.client("dlm")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("dlm")  # (1)
+    result = client.create_lifecycle_policy()  # (2)
+    ```
+
+    1. client: [DLMClient](./client.md)
+    2. result: [:material-code-braces: CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[dlm]` or a standalone `mypy_boto3_dlm` package, you have
-to explicitly specify `client: DLMClient` type annotation.
+With `boto3-stubs-lite[dlm]`
+or a standalone `mypy_boto3_dlm` package, you have to explicitly specify `client: DLMClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_dlm.client import DLMClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_dlm.client import DLMClient
+    from mypy_boto3_dlm.type_defs import CreateLifecyclePolicyResponseTypeDef
+    from mypy_boto3_dlm.type_defs import CreateLifecyclePolicyRequestRequestTypeDef
 
 
-from mypy_boto3_dlm.type_defs import bool
+    session = Session()
+
+    client: DLMClient = session.client("dlm")
+
+    kwargs: CreateLifecyclePolicyRequestRequestTypeDef = {...}
+    result: CreateLifecyclePolicyResponseTypeDef = client.create_lifecycle_policy(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: DLMClient = session.client("dlm")
 
-result: bool = client.can_paginate()
-```
+

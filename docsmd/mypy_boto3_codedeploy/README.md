@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-codedeploy-module"></a>
-
-# Type annotations for boto3 CodeDeploy module
+#  CodeDeploy module
 
 > [Index](../README.md) > CodeDeploy
 
-Auto-generated documentation for
-[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
-type annotations stubs module
-[mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+!!! note ""
 
-- [Type annotations for boto3 CodeDeploy module](#type-annotations-for-boto3-codedeploy-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CodeDeployClient](#codedeployclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+    type annotations stubs module [mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CodeDeploy`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[codedeploy]'
 python -m pip install mypy-boto3-codedeploy
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,213 +42,37 @@ python -m pip install mypy-boto3-codedeploy
 python -m pip uninstall -y mypy-boto3-codedeploy
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="codedeployclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CodeDeployClient
 
-Type annotations for `boto3.client("codedeploy")` as
-[CodeDeployClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("codedeploy")` as [CodeDeployClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_codedeploy.client import CodeDeployClient
+
+def get_client() -> CodeDeployClient:
+    return Session().cleint("codedeploy")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_tags_to_on_premises_instances](./client.md#add_tags_to_on_premises_instances)
-- [batch_get_application_revisions](./client.md#batch_get_application_revisions)
-- [batch_get_applications](./client.md#batch_get_applications)
-- [batch_get_deployment_groups](./client.md#batch_get_deployment_groups)
-- [batch_get_deployment_instances](./client.md#batch_get_deployment_instances)
-- [batch_get_deployment_targets](./client.md#batch_get_deployment_targets)
-- [batch_get_deployments](./client.md#batch_get_deployments)
-- [batch_get_on_premises_instances](./client.md#batch_get_on_premises_instances)
-- [can_paginate](./client.md#can_paginate)
-- [continue_deployment](./client.md#continue_deployment)
-- [create_application](./client.md#create_application)
-- [create_deployment](./client.md#create_deployment)
-- [create_deployment_config](./client.md#create_deployment_config)
-- [create_deployment_group](./client.md#create_deployment_group)
-- [delete_application](./client.md#delete_application)
-- [delete_deployment_config](./client.md#delete_deployment_config)
-- [delete_deployment_group](./client.md#delete_deployment_group)
-- [delete_git_hub_account_token](./client.md#delete_git_hub_account_token)
-- [delete_resources_by_external_id](./client.md#delete_resources_by_external_id)
-- [deregister_on_premises_instance](./client.md#deregister_on_premises_instance)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_application](./client.md#get_application)
-- [get_application_revision](./client.md#get_application_revision)
-- [get_deployment](./client.md#get_deployment)
-- [get_deployment_config](./client.md#get_deployment_config)
-- [get_deployment_group](./client.md#get_deployment_group)
-- [get_deployment_instance](./client.md#get_deployment_instance)
-- [get_deployment_target](./client.md#get_deployment_target)
-- [get_on_premises_instance](./client.md#get_on_premises_instance)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_application_revisions](./client.md#list_application_revisions)
-- [list_applications](./client.md#list_applications)
-- [list_deployment_configs](./client.md#list_deployment_configs)
-- [list_deployment_groups](./client.md#list_deployment_groups)
-- [list_deployment_instances](./client.md#list_deployment_instances)
-- [list_deployment_targets](./client.md#list_deployment_targets)
-- [list_deployments](./client.md#list_deployments)
-- [list_git_hub_account_token_names](./client.md#list_git_hub_account_token_names)
-- [list_on_premises_instances](./client.md#list_on_premises_instances)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_lifecycle_event_hook_execution_status](./client.md#put_lifecycle_event_hook_execution_status)
-- [register_application_revision](./client.md#register_application_revision)
-- [register_on_premises_instance](./client.md#register_on_premises_instance)
-- [remove_tags_from_on_premises_instances](./client.md#remove_tags_from_on_premises_instances)
-- [skip_wait_time_for_instance_termination](./client.md#skip_wait_time_for_instance_termination)
-- [stop_deployment](./client.md#stop_deployment)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_application](./client.md#update_application)
-- [update_deployment_group](./client.md#update_deployment_group)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CodeDeployClient [exceptions](./client.md#exceptions)
-
-- AlarmsLimitExceededException
-- ApplicationAlreadyExistsException
-- ApplicationDoesNotExistException
-- ApplicationLimitExceededException
-- ApplicationNameRequiredException
-- ArnNotSupportedException
-- BatchLimitExceededException
-- BucketNameFilterRequiredException
-- ClientError
-- DeploymentAlreadyCompletedException
-- DeploymentAlreadyStartedException
-- DeploymentConfigAlreadyExistsException
-- DeploymentConfigDoesNotExistException
-- DeploymentConfigInUseException
-- DeploymentConfigLimitExceededException
-- DeploymentConfigNameRequiredException
-- DeploymentDoesNotExistException
-- DeploymentGroupAlreadyExistsException
-- DeploymentGroupDoesNotExistException
-- DeploymentGroupLimitExceededException
-- DeploymentGroupNameRequiredException
-- DeploymentIdRequiredException
-- DeploymentIsNotInReadyStateException
-- DeploymentLimitExceededException
-- DeploymentNotStartedException
-- DeploymentTargetDoesNotExistException
-- DeploymentTargetIdRequiredException
-- DeploymentTargetListSizeExceededException
-- DescriptionTooLongException
-- ECSServiceMappingLimitExceededException
-- GitHubAccountTokenDoesNotExistException
-- GitHubAccountTokenNameRequiredException
-- IamArnRequiredException
-- IamSessionArnAlreadyRegisteredException
-- IamUserArnAlreadyRegisteredException
-- IamUserArnRequiredException
-- InstanceDoesNotExistException
-- InstanceIdRequiredException
-- InstanceLimitExceededException
-- InstanceNameAlreadyRegisteredException
-- InstanceNameRequiredException
-- InstanceNotRegisteredException
-- InvalidAlarmConfigException
-- InvalidApplicationNameException
-- InvalidArnException
-- InvalidAutoRollbackConfigException
-- InvalidAutoScalingGroupException
-- InvalidBlueGreenDeploymentConfigurationException
-- InvalidBucketNameFilterException
-- InvalidComputePlatformException
-- InvalidDeployedStateFilterException
-- InvalidDeploymentConfigNameException
-- InvalidDeploymentGroupNameException
-- InvalidDeploymentIdException
-- InvalidDeploymentInstanceTypeException
-- InvalidDeploymentStatusException
-- InvalidDeploymentStyleException
-- InvalidDeploymentTargetIdException
-- InvalidDeploymentWaitTypeException
-- InvalidEC2TagCombinationException
-- InvalidEC2TagException
-- InvalidECSServiceException
-- InvalidExternalIdException
-- InvalidFileExistsBehaviorException
-- InvalidGitHubAccountTokenException
-- InvalidGitHubAccountTokenNameException
-- InvalidIamSessionArnException
-- InvalidIamUserArnException
-- InvalidIgnoreApplicationStopFailuresValueException
-- InvalidInputException
-- InvalidInstanceIdException
-- InvalidInstanceNameException
-- InvalidInstanceStatusException
-- InvalidInstanceTypeException
-- InvalidKeyPrefixFilterException
-- InvalidLifecycleEventHookExecutionIdException
-- InvalidLifecycleEventHookExecutionStatusException
-- InvalidLoadBalancerInfoException
-- InvalidMinimumHealthyHostValueException
-- InvalidNextTokenException
-- InvalidOnPremisesTagCombinationException
-- InvalidOperationException
-- InvalidRegistrationStatusException
-- InvalidRevisionException
-- InvalidRoleException
-- InvalidSortByException
-- InvalidSortOrderException
-- InvalidTagException
-- InvalidTagFilterException
-- InvalidTagsToAddException
-- InvalidTargetException
-- InvalidTargetFilterNameException
-- InvalidTargetGroupPairException
-- InvalidTargetInstancesException
-- InvalidTimeRangeException
-- InvalidTrafficRoutingConfigurationException
-- InvalidTriggerConfigException
-- InvalidUpdateOutdatedInstancesOnlyValueException
-- LifecycleEventAlreadyCompletedException
-- LifecycleHookLimitExceededException
-- MultipleIamArnsProvidedException
-- OperationNotSupportedException
-- ResourceArnRequiredException
-- ResourceValidationException
-- RevisionDoesNotExistException
-- RevisionRequiredException
-- RoleRequiredException
-- TagLimitExceededException
-- TagRequiredException
-- TagSetListLimitExceededException
-- ThrottlingException
-- TriggerTargetsLimitExceededException
-- UnsupportedActionForDeploymentTypeException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("codedeploy").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("codedeploy").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_codedeploy.paginator import ListApplicationRevisionsPaginator, ...
+from mypy_boto3_codedeploy.paginator import ListApplicationRevisionsPaginator
+
+def get_list_application_revisions_paginator() -> ListApplicationRevisionsPaginator:
+    return Session().client("codedeploy").get_paginator("list_application_revisions"))
 ```
 
 - [ListApplicationRevisionsPaginator](./paginators.md#listapplicationrevisionspaginator)
@@ -284,31 +85,40 @@ from mypy_boto3_codedeploy.paginator import ListApplicationRevisionsPaginator, .
 - [ListGitHubAccountTokenNamesPaginator](./paginators.md#listgithubaccounttokennamespaginator)
 - [ListOnPremisesInstancesPaginator](./paginators.md#listonpremisesinstancespaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("codedeploy").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("codedeploy").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_codedeploy.waiter import DeploymentSuccessfulWaiter, ...
+from mypy_boto3_codedeploy.waiter import DeploymentSuccessfulWaiter
+
+def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
+    return Session().client("codedeploy").get_waiter("deployment_successful")
 ```
 
 - [DeploymentSuccessfulWaiter](./waiters.md#deploymentsuccessfulwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codedeploy.literals import ApplicationRevisionSortByType
 
-```python
-from mypy_boto3_codedeploy.literals import ApplicationRevisionSortByType, ...
+def get_value() -> ApplicationRevisionSortByType:
+    return "firstUsedTime"
 ```
 
 - [ApplicationRevisionSortByType](./literals.md#applicationrevisionsortbytype)
@@ -359,18 +169,23 @@ from mypy_boto3_codedeploy.literals import ApplicationRevisionSortByType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputRequestTypeDef
 
-```python
-from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputRequestTypeDef, ...
+def get_value() -> AddTagsToOnPremisesInstancesInputRequestTypeDef:
+    return {
+        "tags": ...,
+        "instanceNames": ...,
+    }
 ```
 
 - [AddTagsToOnPremisesInstancesInputRequestTypeDef](./type_defs.md#addtagstoonpremisesinstancesinputrequesttypedef)
@@ -438,6 +253,7 @@ from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputReq
 - [GetDeploymentConfigOutputTypeDef](./type_defs.md#getdeploymentconfigoutputtypedef)
 - [GetDeploymentGroupInputRequestTypeDef](./type_defs.md#getdeploymentgroupinputrequesttypedef)
 - [GetDeploymentGroupOutputTypeDef](./type_defs.md#getdeploymentgroupoutputtypedef)
+- [GetDeploymentInputDeploymentSuccessfulWaitTypeDef](./type_defs.md#getdeploymentinputdeploymentsuccessfulwaittypedef)
 - [GetDeploymentInputRequestTypeDef](./type_defs.md#getdeploymentinputrequesttypedef)
 - [GetDeploymentInstanceInputRequestTypeDef](./type_defs.md#getdeploymentinstanceinputrequesttypedef)
 - [GetDeploymentInstanceOutputTypeDef](./type_defs.md#getdeploymentinstanceoutputtypedef)
@@ -455,22 +271,31 @@ from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputReq
 - [LambdaTargetTypeDef](./type_defs.md#lambdatargettypedef)
 - [LastDeploymentInfoTypeDef](./type_defs.md#lastdeploymentinfotypedef)
 - [LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)
+- [ListApplicationRevisionsInputListApplicationRevisionsPaginateTypeDef](./type_defs.md#listapplicationrevisionsinputlistapplicationrevisionspaginatetypedef)
 - [ListApplicationRevisionsInputRequestTypeDef](./type_defs.md#listapplicationrevisionsinputrequesttypedef)
 - [ListApplicationRevisionsOutputTypeDef](./type_defs.md#listapplicationrevisionsoutputtypedef)
+- [ListApplicationsInputListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsinputlistapplicationspaginatetypedef)
 - [ListApplicationsInputRequestTypeDef](./type_defs.md#listapplicationsinputrequesttypedef)
 - [ListApplicationsOutputTypeDef](./type_defs.md#listapplicationsoutputtypedef)
+- [ListDeploymentConfigsInputListDeploymentConfigsPaginateTypeDef](./type_defs.md#listdeploymentconfigsinputlistdeploymentconfigspaginatetypedef)
 - [ListDeploymentConfigsInputRequestTypeDef](./type_defs.md#listdeploymentconfigsinputrequesttypedef)
 - [ListDeploymentConfigsOutputTypeDef](./type_defs.md#listdeploymentconfigsoutputtypedef)
+- [ListDeploymentGroupsInputListDeploymentGroupsPaginateTypeDef](./type_defs.md#listdeploymentgroupsinputlistdeploymentgroupspaginatetypedef)
 - [ListDeploymentGroupsInputRequestTypeDef](./type_defs.md#listdeploymentgroupsinputrequesttypedef)
 - [ListDeploymentGroupsOutputTypeDef](./type_defs.md#listdeploymentgroupsoutputtypedef)
+- [ListDeploymentInstancesInputListDeploymentInstancesPaginateTypeDef](./type_defs.md#listdeploymentinstancesinputlistdeploymentinstancespaginatetypedef)
 - [ListDeploymentInstancesInputRequestTypeDef](./type_defs.md#listdeploymentinstancesinputrequesttypedef)
 - [ListDeploymentInstancesOutputTypeDef](./type_defs.md#listdeploymentinstancesoutputtypedef)
+- [ListDeploymentTargetsInputListDeploymentTargetsPaginateTypeDef](./type_defs.md#listdeploymenttargetsinputlistdeploymenttargetspaginatetypedef)
 - [ListDeploymentTargetsInputRequestTypeDef](./type_defs.md#listdeploymenttargetsinputrequesttypedef)
 - [ListDeploymentTargetsOutputTypeDef](./type_defs.md#listdeploymenttargetsoutputtypedef)
+- [ListDeploymentsInputListDeploymentsPaginateTypeDef](./type_defs.md#listdeploymentsinputlistdeploymentspaginatetypedef)
 - [ListDeploymentsInputRequestTypeDef](./type_defs.md#listdeploymentsinputrequesttypedef)
 - [ListDeploymentsOutputTypeDef](./type_defs.md#listdeploymentsoutputtypedef)
+- [ListGitHubAccountTokenNamesInputListGitHubAccountTokenNamesPaginateTypeDef](./type_defs.md#listgithubaccounttokennamesinputlistgithubaccounttokennamespaginatetypedef)
 - [ListGitHubAccountTokenNamesInputRequestTypeDef](./type_defs.md#listgithubaccounttokennamesinputrequesttypedef)
 - [ListGitHubAccountTokenNamesOutputTypeDef](./type_defs.md#listgithubaccounttokennamesoutputtypedef)
+- [ListOnPremisesInstancesInputListOnPremisesInstancesPaginateTypeDef](./type_defs.md#listonpremisesinstancesinputlistonpremisesinstancespaginatetypedef)
 - [ListOnPremisesInstancesInputRequestTypeDef](./type_defs.md#listonpremisesinstancesinputrequesttypedef)
 - [ListOnPremisesInstancesOutputTypeDef](./type_defs.md#listonpremisesinstancesoutputtypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
@@ -511,3 +336,4 @@ from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputReq
 - [UpdateDeploymentGroupInputRequestTypeDef](./type_defs.md#updatedeploymentgroupinputrequesttypedef)
 - [UpdateDeploymentGroupOutputTypeDef](./type_defs.md#updatedeploymentgroupoutputtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

@@ -1,92 +1,139 @@
-<a id="examples-for-boto3-elasticbeanstalk-module"></a>
-
-# Examples for boto3 ElasticBeanstalk module
+# Examples
 
 > [Index](../README.md) > [ElasticBeanstalk](./README.md) > Examples
 
-- [Examples for boto3 ElasticBeanstalk module](#examples-for-boto3-elasticbeanstalk-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+    type annotations stubs module [mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[elasticbeanstalk]` package installed.
 
-Write your `ElasticBeanstalk` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `ElasticBeanstalk` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ElasticBeanstalkClient
-# and provides type checking and code completion
-client = session.client("elasticbeanstalk")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.abort_environment_update()
 
-# paginator has type DescribeApplicationVersionsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_application_versions")
-for item in paginator.paginate(...):
-    # item has type ApplicationVersionDescriptionsMessageTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type EnvironmentExistsWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("environment_exists")
-waiter.wait()
-```
+    client = session.client("elasticbeanstalk")  # (1)
+    result = client.apply_environment_managed_action()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [ElasticBeanstalkClient](./client.md)
+    2. result: [:material-code-braces: ApplyEnvironmentManagedActionResultTypeDef](./type_defs.md#applyenvironmentmanagedactionresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("elasticbeanstalk")  # (1)
+
+    paginator = client.get_paginator("describe_application_versions")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ElasticBeanstalkClient](./client.md)
+    2. paginator: [DescribeApplicationVersionsPaginator](./paginators.md#describeapplicationversionspaginator)
+    3. item: [:material-code-braces: ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("elasticbeanstalk")  # (1)
+
+    waiter = client.get_waiter("environment_exists")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [ElasticBeanstalkClient](./client.md)
+    2. waiter: [EnvironmentExistsWaiter](./waiters.md#environmentexistswaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[elasticbeanstalk]` or a standalone
-`mypy_boto3_elasticbeanstalk` package, you have to explicitly specify
-`client: ElasticBeanstalkClient` type annotation.
+With `boto3-stubs-lite[elasticbeanstalk]`
+or a standalone `mypy_boto3_elasticbeanstalk` package, you have to explicitly specify `client: ElasticBeanstalkClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
-from mypy_boto3_elasticbeanstalk.paginator import DescribeApplicationVersionsPaginator
-from mypy_boto3_elasticbeanstalk.waiter import EnvironmentExistsWaiter
-from mypy_boto3_elasticbeanstalk.literals import PaginatorName
-from mypy_boto3_elasticbeanstalk.literals import WaiterName
-from mypy_boto3_elasticbeanstalk.type_defs import None
-from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionsMessageTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ElasticBeanstalkClient = session.client("elasticbeanstalk")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.abort_environment_update()
+    from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
+    from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionResultTypeDef
+    from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_application_versions"
-paginator: DescribeApplicationVersionsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ApplicationVersionDescriptionsMessageTypeDef
-    print(item)
 
-waiter_name: WaiterName = "environment_exists"
-waiter: EnvironmentExistsWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: ElasticBeanstalkClient = session.client("elasticbeanstalk")
+
+    kwargs: ApplyEnvironmentManagedActionRequestRequestTypeDef = {...}
+    result: ApplyEnvironmentManagedActionResultTypeDef = client.apply_environment_managed_action(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
+    from mypy_boto3_elasticbeanstalk.paginator import DescribeApplicationVersionsPaginator
+    from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionsMessageTypeDef
+
+
+    session = Session()
+    client: ElasticBeanstalkClient = session.client("elasticbeanstalk")
+
+    paginator: DescribeApplicationVersionsPaginator = client.get_paginator("describe_application_versions")
+    for item in paginator.paginate(...):
+        item: ApplicationVersionDescriptionsMessageTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
+    from mypy_boto3_elasticbeanstalk.waiter import EnvironmentExistsWaiter
+
+    session = Session()
+    client: ElasticBeanstalkClient = session.client("elasticbeanstalk")
+
+    waiter: EnvironmentExistsWaiter = client.get_waiter("environment_exists")
+    waiter.wait()
+    ```
+
+

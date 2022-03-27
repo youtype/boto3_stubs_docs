@@ -1,273 +1,337 @@
-<a id="typed-dictionaries-for-boto3-iotdataplane-module"></a>
-
-# Typed dictionaries for boto3 IoTDataPlane module
+# Typed dictionaries
 
 > [Index](../README.md) > [IoTDataPlane](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
-type annotations stubs module
-[mypy-boto3-iot-data](https://pypi.org/project/mypy-boto3-iot-data/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IoTDataPlane module](#typed-dictionaries-for-boto3-iotdataplane-module)
-  - [DeleteThingShadowRequestRequestTypeDef](#deletethingshadowrequestrequesttypedef)
-  - [DeleteThingShadowResponseTypeDef](#deletethingshadowresponsetypedef)
-  - [GetRetainedMessageRequestRequestTypeDef](#getretainedmessagerequestrequesttypedef)
-  - [GetRetainedMessageResponseTypeDef](#getretainedmessageresponsetypedef)
-  - [GetThingShadowRequestRequestTypeDef](#getthingshadowrequestrequesttypedef)
-  - [GetThingShadowResponseTypeDef](#getthingshadowresponsetypedef)
-  - [ListNamedShadowsForThingRequestRequestTypeDef](#listnamedshadowsforthingrequestrequesttypedef)
-  - [ListNamedShadowsForThingResponseTypeDef](#listnamedshadowsforthingresponsetypedef)
-  - [ListRetainedMessagesRequestRequestTypeDef](#listretainedmessagesrequestrequesttypedef)
-  - [ListRetainedMessagesResponseTypeDef](#listretainedmessagesresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PublishRequestRequestTypeDef](#publishrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetainedMessageSummaryTypeDef](#retainedmessagesummarytypedef)
-  - [UpdateThingShadowRequestRequestTypeDef](#updatethingshadowrequestrequesttypedef)
-  - [UpdateThingShadowResponseTypeDef](#updatethingshadowresponsetypedef)
-
-<a id="deletethingshadowrequestrequesttypedef"></a>
+    Auto-generated documentation for [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
+    type annotations stubs module [mypy-boto3-iot-data](https://pypi.org/project/mypy-boto3-iot-data/).
 
 ## DeleteThingShadowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import DeleteThingShadowRequestRequestTypeDef
+
+def get_value() -> DeleteThingShadowRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Required fields:
-
-- `thingName`: `str`
-
-Optional fields:
-
-- `shadowName`: `str`
-
-<a id="deletethingshadowresponsetypedef"></a>
+```python title="Definition"
+class DeleteThingShadowRequestRequestTypeDef(TypedDict):
+    thingName: str,
+    shadowName: NotRequired[str],
+```
 
 ## DeleteThingShadowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import DeleteThingShadowResponseTypeDef
+
+def get_value() -> DeleteThingShadowResponseTypeDef:
+    return {
+        "payload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteThingShadowResponseTypeDef(TypedDict):
+    payload: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `payload`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getretainedmessagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRetainedMessageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import GetRetainedMessageRequestRequestTypeDef
+
+def get_value() -> GetRetainedMessageRequestRequestTypeDef:
+    return {
+        "topic": ...,
+    }
 ```
 
-Required fields:
-
-- `topic`: `str`
-
-<a id="getretainedmessageresponsetypedef"></a>
+```python title="Definition"
+class GetRetainedMessageRequestRequestTypeDef(TypedDict):
+    topic: str,
+```
 
 ## GetRetainedMessageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import GetRetainedMessageResponseTypeDef
+
+def get_value() -> GetRetainedMessageResponseTypeDef:
+    return {
+        "topic": ...,
+        "payload": ...,
+        "qos": ...,
+        "lastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRetainedMessageResponseTypeDef(TypedDict):
+    topic: str,
+    payload: bytes,
+    qos: int,
+    lastModifiedTime: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `topic`: `str`
-- `payload`: `bytes`
-- `qos`: `int`
-- `lastModifiedTime`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getthingshadowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetThingShadowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import GetThingShadowRequestRequestTypeDef
+
+def get_value() -> GetThingShadowRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Required fields:
-
-- `thingName`: `str`
-
-Optional fields:
-
-- `shadowName`: `str`
-
-<a id="getthingshadowresponsetypedef"></a>
+```python title="Definition"
+class GetThingShadowRequestRequestTypeDef(TypedDict):
+    thingName: str,
+    shadowName: NotRequired[str],
+```
 
 ## GetThingShadowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import GetThingShadowResponseTypeDef
+
+def get_value() -> GetThingShadowResponseTypeDef:
+    return {
+        "payload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetThingShadowResponseTypeDef(TypedDict):
+    payload: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `payload`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listnamedshadowsforthingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListNamedShadowsForThingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import ListNamedShadowsForThingRequestRequestTypeDef
+
+def get_value() -> ListNamedShadowsForThingRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Required fields:
-
-- `thingName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `pageSize`: `int`
-
-<a id="listnamedshadowsforthingresponsetypedef"></a>
+```python title="Definition"
+class ListNamedShadowsForThingRequestRequestTypeDef(TypedDict):
+    thingName: str,
+    nextToken: NotRequired[str],
+    pageSize: NotRequired[int],
+```
 
 ## ListNamedShadowsForThingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import ListNamedShadowsForThingResponseTypeDef
+
+def get_value() -> ListNamedShadowsForThingResponseTypeDef:
+    return {
+        "results": ...,
+        "nextToken": ...,
+        "timestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNamedShadowsForThingResponseTypeDef(TypedDict):
+    results: List[str],
+    nextToken: str,
+    timestamp: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `results`: `List`\[`str`\]
-- `nextToken`: `str`
-- `timestamp`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRetainedMessagesRequestListRetainedMessagesPaginateTypeDef
 
-<a id="listretainedmessagesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iot_data.type_defs import ListRetainedMessagesRequestListRetainedMessagesPaginateTypeDef
 
+def get_value() -> ListRetainedMessagesRequestListRetainedMessagesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListRetainedMessagesRequestListRetainedMessagesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRetainedMessagesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import ListRetainedMessagesRequestRequestTypeDef
+
+def get_value() -> ListRetainedMessagesRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listretainedmessagesresponsetypedef"></a>
+```python title="Definition"
+class ListRetainedMessagesRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListRetainedMessagesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import ListRetainedMessagesResponseTypeDef
+
+def get_value() -> ListRetainedMessagesResponseTypeDef:
+    return {
+        "retainedTopics": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRetainedMessagesResponseTypeDef(TypedDict):
+    retainedTopics: List[RetainedMessageSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `retainedTopics`:
-  `List`\[[RetainedMessageSummaryTypeDef](./type_defs.md#retainedmessagesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: RetainedMessageSummaryTypeDef](./type_defs.md#retainedmessagesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="publishrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PublishRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import PublishRequestRequestTypeDef
+
+def get_value() -> PublishRequestRequestTypeDef:
+    return {
+        "topic": ...,
+    }
 ```
 
-Required fields:
-
-- `topic`: `str`
-
-Optional fields:
-
-- `qos`: `int`
-- `retain`: `bool`
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PublishRequestRequestTypeDef(TypedDict):
+    topic: str,
+    qos: NotRequired[int],
+    retain: NotRequired[bool],
+    payload: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retainedmessagesummarytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetainedMessageSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import RetainedMessageSummaryTypeDef
+
+def get_value() -> RetainedMessageSummaryTypeDef:
+    return {
+        "topic": ...,
+    }
 ```
 
-Optional fields:
-
-- `topic`: `str`
-- `payloadSize`: `int`
-- `qos`: `int`
-- `lastModifiedTime`: `int`
-
-<a id="updatethingshadowrequestrequesttypedef"></a>
+```python title="Definition"
+class RetainedMessageSummaryTypeDef(TypedDict):
+    topic: NotRequired[str],
+    payloadSize: NotRequired[int],
+    qos: NotRequired[int],
+    lastModifiedTime: NotRequired[int],
+```
 
 ## UpdateThingShadowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import UpdateThingShadowRequestRequestTypeDef
+
+def get_value() -> UpdateThingShadowRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+        "payload": ...,
+    }
 ```
 
-Required fields:
-
-- `thingName`: `str`
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-Optional fields:
-
-- `shadowName`: `str`
-
-<a id="updatethingshadowresponsetypedef"></a>
+```python title="Definition"
+class UpdateThingShadowRequestRequestTypeDef(TypedDict):
+    thingName: str,
+    payload: Union[bytes, IO[bytes], StreamingBody],
+    shadowName: NotRequired[str],
+```
 
 ## UpdateThingShadowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_data.type_defs import UpdateThingShadowResponseTypeDef
+
+def get_value() -> UpdateThingShadowResponseTypeDef:
+    return {
+        "payload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateThingShadowResponseTypeDef(TypedDict):
+    payload: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `payload`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

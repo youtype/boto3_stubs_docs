@@ -1,28 +1,18 @@
-<a id="paginators-for-boto3-braket-module"></a>
-
-# Paginators for boto3 Braket module
+# Paginators
 
 > [Index](../README.md) > [Braket](./README.md) > Paginators
 
-Auto-generated documentation for
-[Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
-type annotations stubs module
-[mypy-boto3-braket](https://pypi.org/project/mypy-boto3-braket/).
+!!! note ""
 
-- [Paginators for boto3 Braket module](#paginators-for-boto3-braket-module)
-  - [SearchDevicesPaginator](#searchdevicespaginator)
-  - [SearchJobsPaginator](#searchjobspaginator)
-  - [SearchQuantumTasksPaginator](#searchquantumtaskspaginator)
-
-<a id="searchdevicespaginator"></a>
+    Auto-generated documentation for [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
+    type annotations stubs module [mypy-boto3-braket](https://pypi.org/project/mypy-boto3-braket/).
 
 ## SearchDevicesPaginator
 
-Type annotations for `boto3.client("braket").get_paginator("search_devices")`.
+Type annotations and code completion for `#!python boto3.client("braket").get_paginator("search_devices")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchDevices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_braket.paginator import SearchDevicesPaginator
@@ -31,29 +21,41 @@ def get_search_devices_paginator() -> SearchDevicesPaginator:
     return Session().client("braket").get_paginator("search_devices")
 ```
 
-Boto3 documentation:
-[Braket.Paginator.SearchDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchDevices)
 
-Arguments for `SearchDevicesPaginator.paginate` method:
+### paginate
 
-- `filters`:
-  `Sequence`\[[SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef)\]
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchDevicesPaginator.paginate` method.
 
-`SearchDevicesPaginator.paginate` returns
-`_PageIterator`\[[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[SearchDevicesFilterTypeDef],  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchDevicesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="searchjobspaginator"></a>
+1. See [:material-code-braces: SearchDevicesFilterTypeDef](./type_defs.md#searchdevicesfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchDevicesRequestSearchDevicesPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchDevicesRequestSearchDevicesPaginateTypeDef](./type_defs.md#searchdevicesrequestsearchdevicespaginatetypedef) 
 ## SearchJobsPaginator
 
-Type annotations for `boto3.client("braket").get_paginator("search_jobs")`.
+Type annotations and code completion for `#!python boto3.client("braket").get_paginator("search_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_braket.paginator import SearchJobsPaginator
@@ -62,30 +64,41 @@ def get_search_jobs_paginator() -> SearchJobsPaginator:
     return Session().client("braket").get_paginator("search_jobs")
 ```
 
-Boto3 documentation:
-[Braket.Paginator.SearchJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchJobs)
 
-Arguments for `SearchJobsPaginator.paginate` method:
+### paginate
 
-- `filters`:
-  `Sequence`\[[SearchJobsFilterTypeDef](./type_defs.md#searchjobsfiltertypedef)\]
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchJobsPaginator.paginate` method.
 
-`SearchJobsPaginator.paginate` returns
-`_PageIterator`\[[SearchJobsResponseTypeDef](./type_defs.md#searchjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[SearchJobsFilterTypeDef],  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchJobsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="searchquantumtaskspaginator"></a>
+1. See [:material-code-braces: SearchJobsFilterTypeDef](./type_defs.md#searchjobsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchJobsResponseTypeDef](./type_defs.md#searchjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchJobsRequestSearchJobsPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchJobsRequestSearchJobsPaginateTypeDef](./type_defs.md#searchjobsrequestsearchjobspaginatetypedef) 
 ## SearchQuantumTasksPaginator
 
-Type annotations for
-`boto3.client("braket").get_paginator("search_quantum_tasks")`.
+Type annotations and code completion for `#!python boto3.client("braket").get_paginator("search_quantum_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_braket.paginator import SearchQuantumTasksPaginator
@@ -94,16 +107,32 @@ def get_search_quantum_tasks_paginator() -> SearchQuantumTasksPaginator:
     return Session().client("braket").get_paginator("search_quantum_tasks")
 ```
 
-Boto3 documentation:
-[Braket.Paginator.SearchQuantumTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket.Paginator.SearchQuantumTasks)
 
-Arguments for `SearchQuantumTasksPaginator.paginate` method:
+### paginate
 
-- `filters`:
-  `Sequence`\[[SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef)\]
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchQuantumTasksPaginator.paginate` method.
 
-`SearchQuantumTasksPaginator.paginate` returns
-`_PageIterator`\[[SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[SearchQuantumTasksFilterTypeDef],  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchQuantumTasksResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: SearchQuantumTasksFilterTypeDef](./type_defs.md#searchquantumtasksfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchQuantumTasksRequestSearchQuantumTasksPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchQuantumTasksRequestSearchQuantumTasksPaginateTypeDef](./type_defs.md#searchquantumtasksrequestsearchquantumtaskspaginatetypedef) 

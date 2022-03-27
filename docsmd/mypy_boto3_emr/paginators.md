@@ -1,36 +1,18 @@
-<a id="paginators-for-boto3-emr-module"></a>
-
-# Paginators for boto3 EMR module
+# Paginators
 
 > [Index](../README.md) > [EMR](./README.md) > Paginators
 
-Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
-type annotations stubs module
-[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
+!!! note ""
 
-- [Paginators for boto3 EMR module](#paginators-for-boto3-emr-module)
-  - [ListBootstrapActionsPaginator](#listbootstrapactionspaginator)
-  - [ListClustersPaginator](#listclusterspaginator)
-  - [ListInstanceFleetsPaginator](#listinstancefleetspaginator)
-  - [ListInstanceGroupsPaginator](#listinstancegroupspaginator)
-  - [ListInstancesPaginator](#listinstancespaginator)
-  - [ListNotebookExecutionsPaginator](#listnotebookexecutionspaginator)
-  - [ListSecurityConfigurationsPaginator](#listsecurityconfigurationspaginator)
-  - [ListStepsPaginator](#liststepspaginator)
-  - [ListStudioSessionMappingsPaginator](#liststudiosessionmappingspaginator)
-  - [ListStudiosPaginator](#liststudiospaginator)
-
-<a id="listbootstrapactionspaginator"></a>
+    Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+    type annotations stubs module [mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 ## ListBootstrapActionsPaginator
 
-Type annotations for
-`boto3.client("emr").get_paginator("list_bootstrap_actions")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_bootstrap_actions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListBootstrapActions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator
@@ -39,27 +21,40 @@ def get_list_bootstrap_actions_paginator() -> ListBootstrapActionsPaginator:
     return Session().client("emr").get_paginator("list_bootstrap_actions")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListBootstrapActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListBootstrapActions)
 
-Arguments for `ListBootstrapActionsPaginator.paginate` method:
+### paginate
 
-- `ClusterId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBootstrapActionsPaginator.paginate` method.
 
-`ListBootstrapActionsPaginator.paginate` returns
-`_PageIterator`\[[ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListBootstrapActionsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listclusterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBootstrapActionsInputListBootstrapActionsPaginateTypeDef = {  # (1)
+    "ClusterId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBootstrapActionsInputListBootstrapActionsPaginateTypeDef](./type_defs.md#listbootstrapactionsinputlistbootstrapactionspaginatetypedef) 
 ## ListClustersPaginator
 
-Type annotations for `boto3.client("emr").get_paginator("list_clusters")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_clusters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListClusters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListClustersPaginator
@@ -68,31 +63,43 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
     return Session().client("emr").get_paginator("list_clusters")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListClusters)
 
-Arguments for `ListClustersPaginator.paginate` method:
+### paginate
 
-- `CreatedAfter`: `Union`\[`datetime`, `str`\]
-- `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ClusterStates`:
-  `Sequence`\[[ClusterStateType](./literals.md#clusterstatetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListClustersPaginator.paginate` method.
 
-`ListClustersPaginator.paginate` returns
-`_PageIterator`\[[ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CreatedAfter: Union[datetime, str] = ...,
+    CreatedBefore: Union[datetime, str] = ...,
+    ClusterStates: Sequence[ClusterStateType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListClustersOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listinstancefleetspaginator"></a>
+1. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListClustersInputListClustersPaginateTypeDef = {  # (1)
+    "CreatedAfter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListClustersInputListClustersPaginateTypeDef](./type_defs.md#listclustersinputlistclusterspaginatetypedef) 
 ## ListInstanceFleetsPaginator
 
-Type annotations for
-`boto3.client("emr").get_paginator("list_instance_fleets")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_instance_fleets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceFleets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListInstanceFleetsPaginator
@@ -101,28 +108,40 @@ def get_list_instance_fleets_paginator() -> ListInstanceFleetsPaginator:
     return Session().client("emr").get_paginator("list_instance_fleets")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListInstanceFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceFleets)
 
-Arguments for `ListInstanceFleetsPaginator.paginate` method:
+### paginate
 
-- `ClusterId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInstanceFleetsPaginator.paginate` method.
 
-`ListInstanceFleetsPaginator.paginate` returns
-`_PageIterator`\[[ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInstanceFleetsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinstancegroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInstanceFleetsInputListInstanceFleetsPaginateTypeDef = {  # (1)
+    "ClusterId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInstanceFleetsInputListInstanceFleetsPaginateTypeDef](./type_defs.md#listinstancefleetsinputlistinstancefleetspaginatetypedef) 
 ## ListInstanceGroupsPaginator
 
-Type annotations for
-`boto3.client("emr").get_paginator("list_instance_groups")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_instance_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListInstanceGroupsPaginator
@@ -131,27 +150,40 @@ def get_list_instance_groups_paginator() -> ListInstanceGroupsPaginator:
     return Session().client("emr").get_paginator("list_instance_groups")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListInstanceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstanceGroups)
 
-Arguments for `ListInstanceGroupsPaginator.paginate` method:
+### paginate
 
-- `ClusterId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInstanceGroupsPaginator.paginate` method.
 
-`ListInstanceGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInstanceGroupsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinstancespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInstanceGroupsInputListInstanceGroupsPaginateTypeDef = {  # (1)
+    "ClusterId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInstanceGroupsInputListInstanceGroupsPaginateTypeDef](./type_defs.md#listinstancegroupsinputlistinstancegroupspaginatetypedef) 
 ## ListInstancesPaginator
 
-Type annotations for `boto3.client("emr").get_paginator("list_instances")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListInstancesPaginator
@@ -160,36 +192,48 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
     return Session().client("emr").get_paginator("list_instances")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListInstances)
 
-Arguments for `ListInstancesPaginator.paginate` method:
+### paginate
 
-- `ClusterId`: `str` *(required)*
-- `InstanceGroupId`: `str`
-- `InstanceGroupTypes`:
-  `Sequence`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
-- `InstanceFleetId`: `str`
-- `InstanceFleetType`:
-  [InstanceFleetTypeType](./literals.md#instancefleettypetype)
-- `InstanceStates`:
-  `Sequence`\[[InstanceStateType](./literals.md#instancestatetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInstancesPaginator.paginate` method.
 
-`ListInstancesPaginator.paginate` returns
-`_PageIterator`\[[ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterId: str,
+    InstanceGroupId: str = ...,
+    InstanceGroupTypes: Sequence[InstanceGroupTypeType] = ...,  # (1)
+    InstanceFleetId: str = ...,
+    InstanceFleetType: InstanceFleetTypeType = ...,  # (2)
+    InstanceStates: Sequence[InstanceStateType] = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListInstancesOutputTypeDef]:  # (5)
+    ...
+```
 
-<a id="listnotebookexecutionspaginator"></a>
+1. See [:material-code-brackets: InstanceGroupTypeType](./literals.md#instancegrouptypetype) 
+2. See [:material-code-brackets: InstanceFleetTypeType](./literals.md#instancefleettypetype) 
+3. See [:material-code-brackets: InstanceStateType](./literals.md#instancestatetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInstancesInputListInstancesPaginateTypeDef = {  # (1)
+    "ClusterId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInstancesInputListInstancesPaginateTypeDef](./type_defs.md#listinstancesinputlistinstancespaginatetypedef) 
 ## ListNotebookExecutionsPaginator
 
-Type annotations for
-`boto3.client("emr").get_paginator("list_notebook_executions")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_notebook_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListNotebookExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListNotebookExecutionsPaginator
@@ -198,32 +242,44 @@ def get_list_notebook_executions_paginator() -> ListNotebookExecutionsPaginator:
     return Session().client("emr").get_paginator("list_notebook_executions")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListNotebookExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListNotebookExecutions)
 
-Arguments for `ListNotebookExecutionsPaginator.paginate` method:
+### paginate
 
-- `EditorId`: `str`
-- `Status`:
-  [NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype)
-- `From`: `Union`\[`datetime`, `str`\]
-- `To`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListNotebookExecutionsPaginator.paginate` method.
 
-`ListNotebookExecutionsPaginator.paginate` returns
-`_PageIterator`\[[ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    EditorId: str = ...,
+    Status: NotebookExecutionStatusType = ...,  # (1)
+    From: Union[datetime, str] = ...,
+    To: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListNotebookExecutionsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listsecurityconfigurationspaginator"></a>
+1. See [:material-code-brackets: NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListNotebookExecutionsInputListNotebookExecutionsPaginateTypeDef = {  # (1)
+    "EditorId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListNotebookExecutionsInputListNotebookExecutionsPaginateTypeDef](./type_defs.md#listnotebookexecutionsinputlistnotebookexecutionspaginatetypedef) 
 ## ListSecurityConfigurationsPaginator
 
-Type annotations for
-`boto3.client("emr").get_paginator("list_security_configurations")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_security_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSecurityConfigurations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListSecurityConfigurationsPaginator
@@ -232,26 +288,39 @@ def get_list_security_configurations_paginator() -> ListSecurityConfigurationsPa
     return Session().client("emr").get_paginator("list_security_configurations")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListSecurityConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSecurityConfigurations)
 
-Arguments for `ListSecurityConfigurationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSecurityConfigurationsPaginator.paginate` method.
 
-`ListSecurityConfigurationsPaginator.paginate` returns
-`_PageIterator`\[[ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSecurityConfigurationsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="liststepspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSecurityConfigurationsInputListSecurityConfigurationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSecurityConfigurationsInputListSecurityConfigurationsPaginateTypeDef](./type_defs.md#listsecurityconfigurationsinputlistsecurityconfigurationspaginatetypedef) 
 ## ListStepsPaginator
 
-Type annotations for `boto3.client("emr").get_paginator("list_steps")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_steps")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSteps)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListStepsPaginator
@@ -260,30 +329,43 @@ def get_list_steps_paginator() -> ListStepsPaginator:
     return Session().client("emr").get_paginator("list_steps")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListSteps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListSteps)
 
-Arguments for `ListStepsPaginator.paginate` method:
+### paginate
 
-- `ClusterId`: `str` *(required)*
-- `StepStates`: `Sequence`\[[StepStateType](./literals.md#stepstatetype)\]
-- `StepIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStepsPaginator.paginate` method.
 
-`ListStepsPaginator.paginate` returns
-`_PageIterator`\[[ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterId: str,
+    StepStates: Sequence[StepStateType] = ...,  # (1)
+    StepIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListStepsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="liststudiosessionmappingspaginator"></a>
+1. See [:material-code-brackets: StepStateType](./literals.md#stepstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListStepsInputListStepsPaginateTypeDef = {  # (1)
+    "ClusterId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStepsInputListStepsPaginateTypeDef](./type_defs.md#liststepsinputliststepspaginatetypedef) 
 ## ListStudioSessionMappingsPaginator
 
-Type annotations for
-`boto3.client("emr").get_paginator("list_studio_session_mappings")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_studio_session_mappings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudioSessionMappings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListStudioSessionMappingsPaginator
@@ -292,28 +374,42 @@ def get_list_studio_session_mappings_paginator() -> ListStudioSessionMappingsPag
     return Session().client("emr").get_paginator("list_studio_session_mappings")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListStudioSessionMappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudioSessionMappings)
 
-Arguments for `ListStudioSessionMappingsPaginator.paginate` method:
+### paginate
 
-- `StudioId`: `str`
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStudioSessionMappingsPaginator.paginate` method.
 
-`ListStudioSessionMappingsPaginator.paginate` returns
-`_PageIterator`\[[ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StudioId: str = ...,
+    IdentityType: IdentityTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListStudioSessionMappingsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="liststudiospaginator"></a>
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListStudioSessionMappingsInputListStudioSessionMappingsPaginateTypeDef = {  # (1)
+    "StudioId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStudioSessionMappingsInputListStudioSessionMappingsPaginateTypeDef](./type_defs.md#liststudiosessionmappingsinputliststudiosessionmappingspaginatetypedef) 
 ## ListStudiosPaginator
 
-Type annotations for `boto3.client("emr").get_paginator("list_studios")`.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator("list_studios")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudios)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr.paginator import ListStudiosPaginator
@@ -322,13 +418,30 @@ def get_list_studios_paginator() -> ListStudiosPaginator:
     return Session().client("emr").get_paginator("list_studios")
 ```
 
-Boto3 documentation:
-[EMR.Paginator.ListStudios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Paginator.ListStudios)
 
-Arguments for `ListStudiosPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStudiosPaginator.paginate` method.
 
-`ListStudiosPaginator.paginate` returns
-`_PageIterator`\[[ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStudiosOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStudiosInputListStudiosPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStudiosInputListStudiosPaginateTypeDef](./type_defs.md#liststudiosinputliststudiospaginatetypedef) 

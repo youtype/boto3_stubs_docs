@@ -1,4418 +1,5790 @@
-<a id="typed-dictionaries-for-boto3-lexmodelsv2-module"></a>
-
-# Typed dictionaries for boto3 LexModelsV2 module
+# Typed dictionaries
 
 > [Index](../README.md) > [LexModelsV2](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
-type annotations stubs module
-[mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+!!! note ""
 
-- [Typed dictionaries for boto3 LexModelsV2 module](#typed-dictionaries-for-boto3-lexmodelsv2-module)
-  - [AdvancedRecognitionSettingTypeDef](#advancedrecognitionsettingtypedef)
-  - [AggregatedUtterancesFilterTypeDef](#aggregatedutterancesfiltertypedef)
-  - [AggregatedUtterancesSortByTypeDef](#aggregatedutterancessortbytypedef)
-  - [AggregatedUtterancesSummaryTypeDef](#aggregatedutterancessummarytypedef)
-  - [AssociatedTranscriptFilterTypeDef](#associatedtranscriptfiltertypedef)
-  - [AssociatedTranscriptTypeDef](#associatedtranscripttypedef)
-  - [AudioLogDestinationTypeDef](#audiologdestinationtypedef)
-  - [AudioLogSettingTypeDef](#audiologsettingtypedef)
-  - [BotAliasHistoryEventTypeDef](#botaliashistoryeventtypedef)
-  - [BotAliasLocaleSettingsTypeDef](#botaliaslocalesettingstypedef)
-  - [BotAliasSummaryTypeDef](#botaliassummarytypedef)
-  - [BotExportSpecificationTypeDef](#botexportspecificationtypedef)
-  - [BotFilterTypeDef](#botfiltertypedef)
-  - [BotImportSpecificationTypeDef](#botimportspecificationtypedef)
-  - [BotLocaleExportSpecificationTypeDef](#botlocaleexportspecificationtypedef)
-  - [BotLocaleFilterTypeDef](#botlocalefiltertypedef)
-  - [BotLocaleHistoryEventTypeDef](#botlocalehistoryeventtypedef)
-  - [BotLocaleImportSpecificationTypeDef](#botlocaleimportspecificationtypedef)
-  - [BotLocaleSortByTypeDef](#botlocalesortbytypedef)
-  - [BotLocaleSummaryTypeDef](#botlocalesummarytypedef)
-  - [BotRecommendationResultStatisticsTypeDef](#botrecommendationresultstatisticstypedef)
-  - [BotRecommendationResultsTypeDef](#botrecommendationresultstypedef)
-  - [BotRecommendationSummaryTypeDef](#botrecommendationsummarytypedef)
-  - [BotSortByTypeDef](#botsortbytypedef)
-  - [BotSummaryTypeDef](#botsummarytypedef)
-  - [BotVersionLocaleDetailsTypeDef](#botversionlocaledetailstypedef)
-  - [BotVersionSortByTypeDef](#botversionsortbytypedef)
-  - [BotVersionSummaryTypeDef](#botversionsummarytypedef)
-  - [BuildBotLocaleRequestRequestTypeDef](#buildbotlocalerequestrequesttypedef)
-  - [BuildBotLocaleResponseTypeDef](#buildbotlocaleresponsetypedef)
-  - [BuiltInIntentSortByTypeDef](#builtinintentsortbytypedef)
-  - [BuiltInIntentSummaryTypeDef](#builtinintentsummarytypedef)
-  - [BuiltInSlotTypeSortByTypeDef](#builtinslottypesortbytypedef)
-  - [BuiltInSlotTypeSummaryTypeDef](#builtinslottypesummarytypedef)
-  - [ButtonTypeDef](#buttontypedef)
-  - [CloudWatchLogGroupLogDestinationTypeDef](#cloudwatchloggrouplogdestinationtypedef)
-  - [CodeHookSpecificationTypeDef](#codehookspecificationtypedef)
-  - [ConversationLogSettingsTypeDef](#conversationlogsettingstypedef)
-  - [CreateBotAliasRequestRequestTypeDef](#createbotaliasrequestrequesttypedef)
-  - [CreateBotAliasResponseTypeDef](#createbotaliasresponsetypedef)
-  - [CreateBotLocaleRequestRequestTypeDef](#createbotlocalerequestrequesttypedef)
-  - [CreateBotLocaleResponseTypeDef](#createbotlocaleresponsetypedef)
-  - [CreateBotRequestRequestTypeDef](#createbotrequestrequesttypedef)
-  - [CreateBotResponseTypeDef](#createbotresponsetypedef)
-  - [CreateBotVersionRequestRequestTypeDef](#createbotversionrequestrequesttypedef)
-  - [CreateBotVersionResponseTypeDef](#createbotversionresponsetypedef)
-  - [CreateExportRequestRequestTypeDef](#createexportrequestrequesttypedef)
-  - [CreateExportResponseTypeDef](#createexportresponsetypedef)
-  - [CreateIntentRequestRequestTypeDef](#createintentrequestrequesttypedef)
-  - [CreateIntentResponseTypeDef](#createintentresponsetypedef)
-  - [CreateResourcePolicyRequestRequestTypeDef](#createresourcepolicyrequestrequesttypedef)
-  - [CreateResourcePolicyResponseTypeDef](#createresourcepolicyresponsetypedef)
-  - [CreateResourcePolicyStatementRequestRequestTypeDef](#createresourcepolicystatementrequestrequesttypedef)
-  - [CreateResourcePolicyStatementResponseTypeDef](#createresourcepolicystatementresponsetypedef)
-  - [CreateSlotRequestRequestTypeDef](#createslotrequestrequesttypedef)
-  - [CreateSlotResponseTypeDef](#createslotresponsetypedef)
-  - [CreateSlotTypeRequestRequestTypeDef](#createslottyperequestrequesttypedef)
-  - [CreateSlotTypeResponseTypeDef](#createslottyperesponsetypedef)
-  - [CreateUploadUrlResponseTypeDef](#createuploadurlresponsetypedef)
-  - [CustomPayloadTypeDef](#custompayloadtypedef)
-  - [CustomVocabularyExportSpecificationTypeDef](#customvocabularyexportspecificationtypedef)
-  - [CustomVocabularyImportSpecificationTypeDef](#customvocabularyimportspecificationtypedef)
-  - [DataPrivacyTypeDef](#dataprivacytypedef)
-  - [DateRangeFilterTypeDef](#daterangefiltertypedef)
-  - [DeleteBotAliasRequestRequestTypeDef](#deletebotaliasrequestrequesttypedef)
-  - [DeleteBotAliasResponseTypeDef](#deletebotaliasresponsetypedef)
-  - [DeleteBotLocaleRequestRequestTypeDef](#deletebotlocalerequestrequesttypedef)
-  - [DeleteBotLocaleResponseTypeDef](#deletebotlocaleresponsetypedef)
-  - [DeleteBotRequestRequestTypeDef](#deletebotrequestrequesttypedef)
-  - [DeleteBotResponseTypeDef](#deletebotresponsetypedef)
-  - [DeleteBotVersionRequestRequestTypeDef](#deletebotversionrequestrequesttypedef)
-  - [DeleteBotVersionResponseTypeDef](#deletebotversionresponsetypedef)
-  - [DeleteCustomVocabularyRequestRequestTypeDef](#deletecustomvocabularyrequestrequesttypedef)
-  - [DeleteCustomVocabularyResponseTypeDef](#deletecustomvocabularyresponsetypedef)
-  - [DeleteExportRequestRequestTypeDef](#deleteexportrequestrequesttypedef)
-  - [DeleteExportResponseTypeDef](#deleteexportresponsetypedef)
-  - [DeleteImportRequestRequestTypeDef](#deleteimportrequestrequesttypedef)
-  - [DeleteImportResponseTypeDef](#deleteimportresponsetypedef)
-  - [DeleteIntentRequestRequestTypeDef](#deleteintentrequestrequesttypedef)
-  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
-  - [DeleteResourcePolicyResponseTypeDef](#deleteresourcepolicyresponsetypedef)
-  - [DeleteResourcePolicyStatementRequestRequestTypeDef](#deleteresourcepolicystatementrequestrequesttypedef)
-  - [DeleteResourcePolicyStatementResponseTypeDef](#deleteresourcepolicystatementresponsetypedef)
-  - [DeleteSlotRequestRequestTypeDef](#deleteslotrequestrequesttypedef)
-  - [DeleteSlotTypeRequestRequestTypeDef](#deleteslottyperequestrequesttypedef)
-  - [DeleteUtterancesRequestRequestTypeDef](#deleteutterancesrequestrequesttypedef)
-  - [DescribeBotAliasRequestRequestTypeDef](#describebotaliasrequestrequesttypedef)
-  - [DescribeBotAliasResponseTypeDef](#describebotaliasresponsetypedef)
-  - [DescribeBotLocaleRequestRequestTypeDef](#describebotlocalerequestrequesttypedef)
-  - [DescribeBotLocaleResponseTypeDef](#describebotlocaleresponsetypedef)
-  - [DescribeBotRecommendationRequestRequestTypeDef](#describebotrecommendationrequestrequesttypedef)
-  - [DescribeBotRecommendationResponseTypeDef](#describebotrecommendationresponsetypedef)
-  - [DescribeBotRequestRequestTypeDef](#describebotrequestrequesttypedef)
-  - [DescribeBotResponseTypeDef](#describebotresponsetypedef)
-  - [DescribeBotVersionRequestRequestTypeDef](#describebotversionrequestrequesttypedef)
-  - [DescribeBotVersionResponseTypeDef](#describebotversionresponsetypedef)
-  - [DescribeCustomVocabularyMetadataRequestRequestTypeDef](#describecustomvocabularymetadatarequestrequesttypedef)
-  - [DescribeCustomVocabularyMetadataResponseTypeDef](#describecustomvocabularymetadataresponsetypedef)
-  - [DescribeExportRequestRequestTypeDef](#describeexportrequestrequesttypedef)
-  - [DescribeExportResponseTypeDef](#describeexportresponsetypedef)
-  - [DescribeImportRequestRequestTypeDef](#describeimportrequestrequesttypedef)
-  - [DescribeImportResponseTypeDef](#describeimportresponsetypedef)
-  - [DescribeIntentRequestRequestTypeDef](#describeintentrequestrequesttypedef)
-  - [DescribeIntentResponseTypeDef](#describeintentresponsetypedef)
-  - [DescribeResourcePolicyRequestRequestTypeDef](#describeresourcepolicyrequestrequesttypedef)
-  - [DescribeResourcePolicyResponseTypeDef](#describeresourcepolicyresponsetypedef)
-  - [DescribeSlotRequestRequestTypeDef](#describeslotrequestrequesttypedef)
-  - [DescribeSlotResponseTypeDef](#describeslotresponsetypedef)
-  - [DescribeSlotTypeRequestRequestTypeDef](#describeslottyperequestrequesttypedef)
-  - [DescribeSlotTypeResponseTypeDef](#describeslottyperesponsetypedef)
-  - [DialogCodeHookSettingsTypeDef](#dialogcodehooksettingstypedef)
-  - [EncryptionSettingTypeDef](#encryptionsettingtypedef)
-  - [ExportFilterTypeDef](#exportfiltertypedef)
-  - [ExportResourceSpecificationTypeDef](#exportresourcespecificationtypedef)
-  - [ExportSortByTypeDef](#exportsortbytypedef)
-  - [ExportSummaryTypeDef](#exportsummarytypedef)
-  - [ExternalSourceSettingTypeDef](#externalsourcesettingtypedef)
-  - [FulfillmentCodeHookSettingsTypeDef](#fulfillmentcodehooksettingstypedef)
-  - [FulfillmentStartResponseSpecificationTypeDef](#fulfillmentstartresponsespecificationtypedef)
-  - [FulfillmentUpdateResponseSpecificationTypeDef](#fulfillmentupdateresponsespecificationtypedef)
-  - [FulfillmentUpdatesSpecificationTypeDef](#fulfillmentupdatesspecificationtypedef)
-  - [GrammarSlotTypeSettingTypeDef](#grammarslottypesettingtypedef)
-  - [GrammarSlotTypeSourceTypeDef](#grammarslottypesourcetypedef)
-  - [ImageResponseCardTypeDef](#imageresponsecardtypedef)
-  - [ImportFilterTypeDef](#importfiltertypedef)
-  - [ImportResourceSpecificationTypeDef](#importresourcespecificationtypedef)
-  - [ImportSortByTypeDef](#importsortbytypedef)
-  - [ImportSummaryTypeDef](#importsummarytypedef)
-  - [InputContextTypeDef](#inputcontexttypedef)
-  - [IntentClosingSettingTypeDef](#intentclosingsettingtypedef)
-  - [IntentConfirmationSettingTypeDef](#intentconfirmationsettingtypedef)
-  - [IntentFilterTypeDef](#intentfiltertypedef)
-  - [IntentSortByTypeDef](#intentsortbytypedef)
-  - [IntentStatisticsTypeDef](#intentstatisticstypedef)
-  - [IntentSummaryTypeDef](#intentsummarytypedef)
-  - [KendraConfigurationTypeDef](#kendraconfigurationtypedef)
-  - [LambdaCodeHookTypeDef](#lambdacodehooktypedef)
-  - [LexTranscriptFilterTypeDef](#lextranscriptfiltertypedef)
-  - [ListAggregatedUtterancesRequestRequestTypeDef](#listaggregatedutterancesrequestrequesttypedef)
-  - [ListAggregatedUtterancesResponseTypeDef](#listaggregatedutterancesresponsetypedef)
-  - [ListBotAliasesRequestRequestTypeDef](#listbotaliasesrequestrequesttypedef)
-  - [ListBotAliasesResponseTypeDef](#listbotaliasesresponsetypedef)
-  - [ListBotLocalesRequestRequestTypeDef](#listbotlocalesrequestrequesttypedef)
-  - [ListBotLocalesResponseTypeDef](#listbotlocalesresponsetypedef)
-  - [ListBotRecommendationsRequestRequestTypeDef](#listbotrecommendationsrequestrequesttypedef)
-  - [ListBotRecommendationsResponseTypeDef](#listbotrecommendationsresponsetypedef)
-  - [ListBotVersionsRequestRequestTypeDef](#listbotversionsrequestrequesttypedef)
-  - [ListBotVersionsResponseTypeDef](#listbotversionsresponsetypedef)
-  - [ListBotsRequestRequestTypeDef](#listbotsrequestrequesttypedef)
-  - [ListBotsResponseTypeDef](#listbotsresponsetypedef)
-  - [ListBuiltInIntentsRequestRequestTypeDef](#listbuiltinintentsrequestrequesttypedef)
-  - [ListBuiltInIntentsResponseTypeDef](#listbuiltinintentsresponsetypedef)
-  - [ListBuiltInSlotTypesRequestRequestTypeDef](#listbuiltinslottypesrequestrequesttypedef)
-  - [ListBuiltInSlotTypesResponseTypeDef](#listbuiltinslottypesresponsetypedef)
-  - [ListExportsRequestRequestTypeDef](#listexportsrequestrequesttypedef)
-  - [ListExportsResponseTypeDef](#listexportsresponsetypedef)
-  - [ListImportsRequestRequestTypeDef](#listimportsrequestrequesttypedef)
-  - [ListImportsResponseTypeDef](#listimportsresponsetypedef)
-  - [ListIntentsRequestRequestTypeDef](#listintentsrequestrequesttypedef)
-  - [ListIntentsResponseTypeDef](#listintentsresponsetypedef)
-  - [ListRecommendedIntentsRequestRequestTypeDef](#listrecommendedintentsrequestrequesttypedef)
-  - [ListRecommendedIntentsResponseTypeDef](#listrecommendedintentsresponsetypedef)
-  - [ListSlotTypesRequestRequestTypeDef](#listslottypesrequestrequesttypedef)
-  - [ListSlotTypesResponseTypeDef](#listslottypesresponsetypedef)
-  - [ListSlotsRequestRequestTypeDef](#listslotsrequestrequesttypedef)
-  - [ListSlotsResponseTypeDef](#listslotsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MessageGroupTypeDef](#messagegrouptypedef)
-  - [MessageTypeDef](#messagetypedef)
-  - [MultipleValuesSettingTypeDef](#multiplevaluessettingtypedef)
-  - [ObfuscationSettingTypeDef](#obfuscationsettingtypedef)
-  - [OutputContextTypeDef](#outputcontexttypedef)
-  - [PathFormatTypeDef](#pathformattypedef)
-  - [PlainTextMessageTypeDef](#plaintextmessagetypedef)
-  - [PostFulfillmentStatusSpecificationTypeDef](#postfulfillmentstatusspecificationtypedef)
-  - [PrincipalTypeDef](#principaltypedef)
-  - [PromptSpecificationTypeDef](#promptspecificationtypedef)
-  - [RecommendedIntentSummaryTypeDef](#recommendedintentsummarytypedef)
-  - [RelativeAggregationDurationTypeDef](#relativeaggregationdurationtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResponseSpecificationTypeDef](#responsespecificationtypedef)
-  - [S3BucketLogDestinationTypeDef](#s3bucketlogdestinationtypedef)
-  - [S3BucketTranscriptSourceTypeDef](#s3buckettranscriptsourcetypedef)
-  - [SSMLMessageTypeDef](#ssmlmessagetypedef)
-  - [SampleUtteranceTypeDef](#sampleutterancetypedef)
-  - [SampleValueTypeDef](#samplevaluetypedef)
-  - [SearchAssociatedTranscriptsRequestRequestTypeDef](#searchassociatedtranscriptsrequestrequesttypedef)
-  - [SearchAssociatedTranscriptsResponseTypeDef](#searchassociatedtranscriptsresponsetypedef)
-  - [SentimentAnalysisSettingsTypeDef](#sentimentanalysissettingstypedef)
-  - [SlotDefaultValueSpecificationTypeDef](#slotdefaultvaluespecificationtypedef)
-  - [SlotDefaultValueTypeDef](#slotdefaultvaluetypedef)
-  - [SlotFilterTypeDef](#slotfiltertypedef)
-  - [SlotPriorityTypeDef](#slotprioritytypedef)
-  - [SlotSortByTypeDef](#slotsortbytypedef)
-  - [SlotSummaryTypeDef](#slotsummarytypedef)
-  - [SlotTypeFilterTypeDef](#slottypefiltertypedef)
-  - [SlotTypeSortByTypeDef](#slottypesortbytypedef)
-  - [SlotTypeStatisticsTypeDef](#slottypestatisticstypedef)
-  - [SlotTypeSummaryTypeDef](#slottypesummarytypedef)
-  - [SlotTypeValueTypeDef](#slottypevaluetypedef)
-  - [SlotValueElicitationSettingTypeDef](#slotvalueelicitationsettingtypedef)
-  - [SlotValueRegexFilterTypeDef](#slotvalueregexfiltertypedef)
-  - [SlotValueSelectionSettingTypeDef](#slotvalueselectionsettingtypedef)
-  - [StartBotRecommendationRequestRequestTypeDef](#startbotrecommendationrequestrequesttypedef)
-  - [StartBotRecommendationResponseTypeDef](#startbotrecommendationresponsetypedef)
-  - [StartImportRequestRequestTypeDef](#startimportrequestrequesttypedef)
-  - [StartImportResponseTypeDef](#startimportresponsetypedef)
-  - [StillWaitingResponseSpecificationTypeDef](#stillwaitingresponsespecificationtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TextLogDestinationTypeDef](#textlogdestinationtypedef)
-  - [TextLogSettingTypeDef](#textlogsettingtypedef)
-  - [TranscriptFilterTypeDef](#transcriptfiltertypedef)
-  - [TranscriptSourceSettingTypeDef](#transcriptsourcesettingtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateBotAliasRequestRequestTypeDef](#updatebotaliasrequestrequesttypedef)
-  - [UpdateBotAliasResponseTypeDef](#updatebotaliasresponsetypedef)
-  - [UpdateBotLocaleRequestRequestTypeDef](#updatebotlocalerequestrequesttypedef)
-  - [UpdateBotLocaleResponseTypeDef](#updatebotlocaleresponsetypedef)
-  - [UpdateBotRecommendationRequestRequestTypeDef](#updatebotrecommendationrequestrequesttypedef)
-  - [UpdateBotRecommendationResponseTypeDef](#updatebotrecommendationresponsetypedef)
-  - [UpdateBotRequestRequestTypeDef](#updatebotrequestrequesttypedef)
-  - [UpdateBotResponseTypeDef](#updatebotresponsetypedef)
-  - [UpdateExportRequestRequestTypeDef](#updateexportrequestrequesttypedef)
-  - [UpdateExportResponseTypeDef](#updateexportresponsetypedef)
-  - [UpdateIntentRequestRequestTypeDef](#updateintentrequestrequesttypedef)
-  - [UpdateIntentResponseTypeDef](#updateintentresponsetypedef)
-  - [UpdateResourcePolicyRequestRequestTypeDef](#updateresourcepolicyrequestrequesttypedef)
-  - [UpdateResourcePolicyResponseTypeDef](#updateresourcepolicyresponsetypedef)
-  - [UpdateSlotRequestRequestTypeDef](#updateslotrequestrequesttypedef)
-  - [UpdateSlotResponseTypeDef](#updateslotresponsetypedef)
-  - [UpdateSlotTypeRequestRequestTypeDef](#updateslottyperequestrequesttypedef)
-  - [UpdateSlotTypeResponseTypeDef](#updateslottyperesponsetypedef)
-  - [UtteranceAggregationDurationTypeDef](#utteranceaggregationdurationtypedef)
-  - [VoiceSettingsTypeDef](#voicesettingstypedef)
-  - [WaitAndContinueSpecificationTypeDef](#waitandcontinuespecificationtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="advancedrecognitionsettingtypedef"></a>
+    Auto-generated documentation for [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+    type annotations stubs module [mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 ## AdvancedRecognitionSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef
+
+def get_value() -> AdvancedRecognitionSettingTypeDef:
+    return {
+        "audioRecognitionStrategy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AdvancedRecognitionSettingTypeDef(TypedDict):
+    audioRecognitionStrategy: NotRequired[AudioRecognitionStrategyType],  # (1)
+```
 
-- `audioRecognitionStrategy`: `Literal['UseSlotValuesAsCustomVocabulary']` (see
-  [AudioRecognitionStrategyType](./literals.md#audiorecognitionstrategytype))
-
-<a id="aggregatedutterancesfiltertypedef"></a>
-
+1. See [:material-code-brackets: AudioRecognitionStrategyType](./literals.md#audiorecognitionstrategytype) 
 ## AggregatedUtterancesFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import AggregatedUtterancesFilterTypeDef
+
+def get_value() -> AggregatedUtterancesFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AggregatedUtterancesFilterTypeDef(TypedDict):
+    name: AggregatedUtterancesFilterNameType,  # (1)
+    values: Sequence[str],
+    operator: AggregatedUtterancesFilterOperatorType,  # (2)
+```
 
-- `name`: `Literal['Utterance']` (see
-  [AggregatedUtterancesFilterNameType](./literals.md#aggregatedutterancesfilternametype))
-- `values`: `Sequence`\[`str`\]
-- `operator`:
-  [AggregatedUtterancesFilterOperatorType](./literals.md#aggregatedutterancesfilteroperatortype)
-
-<a id="aggregatedutterancessortbytypedef"></a>
-
+1. See [:material-code-brackets: AggregatedUtterancesFilterNameType](./literals.md#aggregatedutterancesfilternametype) 
+2. See [:material-code-brackets: AggregatedUtterancesFilterOperatorType](./literals.md#aggregatedutterancesfilteroperatortype) 
 ## AggregatedUtterancesSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import AggregatedUtterancesSortByTypeDef
+
+def get_value() -> AggregatedUtterancesSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AggregatedUtterancesSortByTypeDef(TypedDict):
+    attribute: AggregatedUtterancesSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`:
-  [AggregatedUtterancesSortAttributeType](./literals.md#aggregatedutterancessortattributetype)
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="aggregatedutterancessummarytypedef"></a>
-
+1. See [:material-code-brackets: AggregatedUtterancesSortAttributeType](./literals.md#aggregatedutterancessortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## AggregatedUtterancesSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import AggregatedUtterancesSummaryTypeDef
+
+def get_value() -> AggregatedUtterancesSummaryTypeDef:
+    return {
+        "utterance": ...,
+    }
 ```
 
-Optional fields:
-
-- `utterance`: `str`
-- `hitCount`: `int`
-- `missedCount`: `int`
-- `utteranceFirstRecordedInAggregationDuration`: `datetime`
-- `utteranceLastRecordedInAggregationDuration`: `datetime`
-- `containsDataFromDeletedResources`: `bool`
-
-<a id="associatedtranscriptfiltertypedef"></a>
+```python title="Definition"
+class AggregatedUtterancesSummaryTypeDef(TypedDict):
+    utterance: NotRequired[str],
+    hitCount: NotRequired[int],
+    missedCount: NotRequired[int],
+    utteranceFirstRecordedInAggregationDuration: NotRequired[datetime],
+    utteranceLastRecordedInAggregationDuration: NotRequired[datetime],
+    containsDataFromDeletedResources: NotRequired[bool],
+```
 
 ## AssociatedTranscriptFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import AssociatedTranscriptFilterTypeDef
+
+def get_value() -> AssociatedTranscriptFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociatedTranscriptFilterTypeDef(TypedDict):
+    name: AssociatedTranscriptFilterNameType,  # (1)
+    values: Sequence[str],
+```
 
-- `name`:
-  [AssociatedTranscriptFilterNameType](./literals.md#associatedtranscriptfilternametype)
-- `values`: `Sequence`\[`str`\]
-
-<a id="associatedtranscripttypedef"></a>
-
+1. See [:material-code-brackets: AssociatedTranscriptFilterNameType](./literals.md#associatedtranscriptfilternametype) 
 ## AssociatedTranscriptTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import AssociatedTranscriptTypeDef
+
+def get_value() -> AssociatedTranscriptTypeDef:
+    return {
+        "transcript": ...,
+    }
 ```
 
-Optional fields:
-
-- `transcript`: `str`
-
-<a id="audiologdestinationtypedef"></a>
+```python title="Definition"
+class AssociatedTranscriptTypeDef(TypedDict):
+    transcript: NotRequired[str],
+```
 
 ## AudioLogDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import AudioLogDestinationTypeDef
+
+def get_value() -> AudioLogDestinationTypeDef:
+    return {
+        "s3Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AudioLogDestinationTypeDef(TypedDict):
+    s3Bucket: S3BucketLogDestinationTypeDef,  # (1)
+```
 
-- `s3Bucket`:
-  [S3BucketLogDestinationTypeDef](./type_defs.md#s3bucketlogdestinationtypedef)
-
-<a id="audiologsettingtypedef"></a>
-
+1. See [:material-code-braces: S3BucketLogDestinationTypeDef](./type_defs.md#s3bucketlogdestinationtypedef) 
 ## AudioLogSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import AudioLogSettingTypeDef
+
+def get_value() -> AudioLogSettingTypeDef:
+    return {
+        "enabled": ...,
+        "destination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AudioLogSettingTypeDef(TypedDict):
+    enabled: bool,
+    destination: AudioLogDestinationTypeDef,  # (1)
+```
 
-- `enabled`: `bool`
-- `destination`:
-  [AudioLogDestinationTypeDef](./type_defs.md#audiologdestinationtypedef)
-
-<a id="botaliashistoryeventtypedef"></a>
-
+1. See [:material-code-braces: AudioLogDestinationTypeDef](./type_defs.md#audiologdestinationtypedef) 
 ## BotAliasHistoryEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotAliasHistoryEventTypeDef
+
+def get_value() -> BotAliasHistoryEventTypeDef:
+    return {
+        "botVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `botVersion`: `str`
-- `startDate`: `datetime`
-- `endDate`: `datetime`
-
-<a id="botaliaslocalesettingstypedef"></a>
+```python title="Definition"
+class BotAliasHistoryEventTypeDef(TypedDict):
+    botVersion: NotRequired[str],
+    startDate: NotRequired[datetime],
+    endDate: NotRequired[datetime],
+```
 
 ## BotAliasLocaleSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotAliasLocaleSettingsTypeDef
+
+def get_value() -> BotAliasLocaleSettingsTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BotAliasLocaleSettingsTypeDef(TypedDict):
+    enabled: bool,
+    codeHookSpecification: NotRequired[CodeHookSpecificationTypeDef],  # (1)
+```
 
-- `enabled`: `bool`
-
-Optional fields:
-
-- `codeHookSpecification`:
-  [CodeHookSpecificationTypeDef](./type_defs.md#codehookspecificationtypedef)
-
-<a id="botaliassummarytypedef"></a>
-
+1. See [:material-code-braces: CodeHookSpecificationTypeDef](./type_defs.md#codehookspecificationtypedef) 
 ## BotAliasSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotAliasSummaryTypeDef
+
+def get_value() -> BotAliasSummaryTypeDef:
+    return {
+        "botAliasId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BotAliasSummaryTypeDef(TypedDict):
+    botAliasId: NotRequired[str],
+    botAliasName: NotRequired[str],
+    description: NotRequired[str],
+    botVersion: NotRequired[str],
+    botAliasStatus: NotRequired[BotAliasStatusType],  # (1)
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `botAliasId`: `str`
-- `botAliasName`: `str`
-- `description`: `str`
-- `botVersion`: `str`
-- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="botexportspecificationtypedef"></a>
-
+1. See [:material-code-brackets: BotAliasStatusType](./literals.md#botaliasstatustype) 
 ## BotExportSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotExportSpecificationTypeDef
+
+def get_value() -> BotExportSpecificationTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-
-<a id="botfiltertypedef"></a>
+```python title="Definition"
+class BotExportSpecificationTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+```
 
 ## BotFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotFilterTypeDef
+
+def get_value() -> BotFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BotFilterTypeDef(TypedDict):
+    name: BotFilterNameType,  # (1)
+    values: Sequence[str],
+    operator: BotFilterOperatorType,  # (2)
+```
 
-- `name`: `Literal['BotName']` (see
-  [BotFilterNameType](./literals.md#botfilternametype))
-- `values`: `Sequence`\[`str`\]
-- `operator`: [BotFilterOperatorType](./literals.md#botfilteroperatortype)
-
-<a id="botimportspecificationtypedef"></a>
-
+1. See [:material-code-brackets: BotFilterNameType](./literals.md#botfilternametype) 
+2. See [:material-code-brackets: BotFilterOperatorType](./literals.md#botfilteroperatortype) 
 ## BotImportSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotImportSpecificationTypeDef
+
+def get_value() -> BotImportSpecificationTypeDef:
+    return {
+        "botName": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BotImportSpecificationTypeDef(TypedDict):
+    botName: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: NotRequired[int],
+    botTags: NotRequired[Dict[str, str]],
+    testBotAliasTags: NotRequired[Dict[str, str]],
+```
 
-- `botName`: `str`
-- `roleArn`: `str`
-- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
-
-Optional fields:
-
-- `idleSessionTTLInSeconds`: `int`
-- `botTags`: `Dict`\[`str`, `str`\]
-- `testBotAliasTags`: `Dict`\[`str`, `str`\]
-
-<a id="botlocaleexportspecificationtypedef"></a>
-
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
 ## BotLocaleExportSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotLocaleExportSpecificationTypeDef
+
+def get_value() -> BotLocaleExportSpecificationTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="botlocalefiltertypedef"></a>
+```python title="Definition"
+class BotLocaleExportSpecificationTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## BotLocaleFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotLocaleFilterTypeDef
+
+def get_value() -> BotLocaleFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BotLocaleFilterTypeDef(TypedDict):
+    name: BotLocaleFilterNameType,  # (1)
+    values: Sequence[str],
+    operator: BotLocaleFilterOperatorType,  # (2)
+```
 
-- `name`: `Literal['BotLocaleName']` (see
-  [BotLocaleFilterNameType](./literals.md#botlocalefilternametype))
-- `values`: `Sequence`\[`str`\]
-- `operator`:
-  [BotLocaleFilterOperatorType](./literals.md#botlocalefilteroperatortype)
-
-<a id="botlocalehistoryeventtypedef"></a>
-
+1. See [:material-code-brackets: BotLocaleFilterNameType](./literals.md#botlocalefilternametype) 
+2. See [:material-code-brackets: BotLocaleFilterOperatorType](./literals.md#botlocalefilteroperatortype) 
 ## BotLocaleHistoryEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotLocaleHistoryEventTypeDef
+
+def get_value() -> BotLocaleHistoryEventTypeDef:
+    return {
+        "event": ...,
+        "eventDate": ...,
+    }
 ```
 
-Required fields:
-
-- `event`: `str`
-- `eventDate`: `datetime`
-
-<a id="botlocaleimportspecificationtypedef"></a>
+```python title="Definition"
+class BotLocaleHistoryEventTypeDef(TypedDict):
+    event: str,
+    eventDate: datetime,
+```
 
 ## BotLocaleImportSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotLocaleImportSpecificationTypeDef
+
+def get_value() -> BotLocaleImportSpecificationTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BotLocaleImportSpecificationTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    nluIntentConfidenceThreshold: NotRequired[float],
+    voiceSettings: NotRequired[VoiceSettingsTypeDef],  # (1)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-Optional fields:
-
-- `nluIntentConfidenceThreshold`: `float`
-- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
-
-<a id="botlocalesortbytypedef"></a>
-
+1. See [:material-code-braces: VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef) 
 ## BotLocaleSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotLocaleSortByTypeDef
+
+def get_value() -> BotLocaleSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BotLocaleSortByTypeDef(TypedDict):
+    attribute: BotLocaleSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`: `Literal['BotLocaleName']` (see
-  [BotLocaleSortAttributeType](./literals.md#botlocalesortattributetype))
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="botlocalesummarytypedef"></a>
-
+1. See [:material-code-brackets: BotLocaleSortAttributeType](./literals.md#botlocalesortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## BotLocaleSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotLocaleSummaryTypeDef
+
+def get_value() -> BotLocaleSummaryTypeDef:
+    return {
+        "localeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BotLocaleSummaryTypeDef(TypedDict):
+    localeId: NotRequired[str],
+    localeName: NotRequired[str],
+    description: NotRequired[str],
+    botLocaleStatus: NotRequired[BotLocaleStatusType],  # (1)
+    lastUpdatedDateTime: NotRequired[datetime],
+    lastBuildSubmittedDateTime: NotRequired[datetime],
+```
 
-- `localeId`: `str`
-- `localeName`: `str`
-- `description`: `str`
-- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
-- `lastUpdatedDateTime`: `datetime`
-- `lastBuildSubmittedDateTime`: `datetime`
-
-<a id="botrecommendationresultstatisticstypedef"></a>
-
+1. See [:material-code-brackets: BotLocaleStatusType](./literals.md#botlocalestatustype) 
 ## BotRecommendationResultStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotRecommendationResultStatisticsTypeDef
+
+def get_value() -> BotRecommendationResultStatisticsTypeDef:
+    return {
+        "intents": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BotRecommendationResultStatisticsTypeDef(TypedDict):
+    intents: NotRequired[IntentStatisticsTypeDef],  # (1)
+    slotTypes: NotRequired[SlotTypeStatisticsTypeDef],  # (2)
+```
 
-- `intents`: [IntentStatisticsTypeDef](./type_defs.md#intentstatisticstypedef)
-- `slotTypes`:
-  [SlotTypeStatisticsTypeDef](./type_defs.md#slottypestatisticstypedef)
-
-<a id="botrecommendationresultstypedef"></a>
-
+1. See [:material-code-braces: IntentStatisticsTypeDef](./type_defs.md#intentstatisticstypedef) 
+2. See [:material-code-braces: SlotTypeStatisticsTypeDef](./type_defs.md#slottypestatisticstypedef) 
 ## BotRecommendationResultsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotRecommendationResultsTypeDef
+
+def get_value() -> BotRecommendationResultsTypeDef:
+    return {
+        "botLocaleExportUrl": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BotRecommendationResultsTypeDef(TypedDict):
+    botLocaleExportUrl: NotRequired[str],
+    associatedTranscriptsUrl: NotRequired[str],
+    statistics: NotRequired[BotRecommendationResultStatisticsTypeDef],  # (1)
+```
 
-- `botLocaleExportUrl`: `str`
-- `associatedTranscriptsUrl`: `str`
-- `statistics`:
-  [BotRecommendationResultStatisticsTypeDef](./type_defs.md#botrecommendationresultstatisticstypedef)
-
-<a id="botrecommendationsummarytypedef"></a>
-
+1. See [:material-code-braces: BotRecommendationResultStatisticsTypeDef](./type_defs.md#botrecommendationresultstatisticstypedef) 
 ## BotRecommendationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotRecommendationSummaryTypeDef
+
+def get_value() -> BotRecommendationSummaryTypeDef:
+    return {
+        "botRecommendationStatus": ...,
+        "botRecommendationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BotRecommendationSummaryTypeDef(TypedDict):
+    botRecommendationStatus: BotRecommendationStatusType,  # (1)
+    botRecommendationId: str,
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `botRecommendationStatus`:
-  [BotRecommendationStatusType](./literals.md#botrecommendationstatustype)
-- `botRecommendationId`: `str`
-
-Optional fields:
-
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="botsortbytypedef"></a>
-
+1. See [:material-code-brackets: BotRecommendationStatusType](./literals.md#botrecommendationstatustype) 
 ## BotSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotSortByTypeDef
+
+def get_value() -> BotSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BotSortByTypeDef(TypedDict):
+    attribute: BotSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`: `Literal['BotName']` (see
-  [BotSortAttributeType](./literals.md#botsortattributetype))
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="botsummarytypedef"></a>
-
+1. See [:material-code-brackets: BotSortAttributeType](./literals.md#botsortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## BotSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotSummaryTypeDef
+
+def get_value() -> BotSummaryTypeDef:
+    return {
+        "botId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BotSummaryTypeDef(TypedDict):
+    botId: NotRequired[str],
+    botName: NotRequired[str],
+    description: NotRequired[str],
+    botStatus: NotRequired[BotStatusType],  # (1)
+    latestBotVersion: NotRequired[str],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `botId`: `str`
-- `botName`: `str`
-- `description`: `str`
-- `botStatus`: [BotStatusType](./literals.md#botstatustype)
-- `latestBotVersion`: `str`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="botversionlocaledetailstypedef"></a>
-
+1. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
 ## BotVersionLocaleDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotVersionLocaleDetailsTypeDef
+
+def get_value() -> BotVersionLocaleDetailsTypeDef:
+    return {
+        "sourceBotVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `sourceBotVersion`: `str`
-
-<a id="botversionsortbytypedef"></a>
+```python title="Definition"
+class BotVersionLocaleDetailsTypeDef(TypedDict):
+    sourceBotVersion: str,
+```
 
 ## BotVersionSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotVersionSortByTypeDef
+
+def get_value() -> BotVersionSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BotVersionSortByTypeDef(TypedDict):
+    attribute: BotVersionSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`: `Literal['BotVersion']` (see
-  [BotVersionSortAttributeType](./literals.md#botversionsortattributetype))
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="botversionsummarytypedef"></a>
-
+1. See [:material-code-brackets: BotVersionSortAttributeType](./literals.md#botversionsortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## BotVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BotVersionSummaryTypeDef
+
+def get_value() -> BotVersionSummaryTypeDef:
+    return {
+        "botName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BotVersionSummaryTypeDef(TypedDict):
+    botName: NotRequired[str],
+    botVersion: NotRequired[str],
+    description: NotRequired[str],
+    botStatus: NotRequired[BotStatusType],  # (1)
+    creationDateTime: NotRequired[datetime],
+```
 
-- `botName`: `str`
-- `botVersion`: `str`
-- `description`: `str`
-- `botStatus`: [BotStatusType](./literals.md#botstatustype)
-- `creationDateTime`: `datetime`
-
-<a id="buildbotlocalerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
 ## BuildBotLocaleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleRequestRequestTypeDef
+
+def get_value() -> BuildBotLocaleRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="buildbotlocaleresponsetypedef"></a>
+```python title="Definition"
+class BuildBotLocaleRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## BuildBotLocaleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleResponseTypeDef
+
+def get_value() -> BuildBotLocaleResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botLocaleStatus": ...,
+        "lastBuildSubmittedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BuildBotLocaleResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botLocaleStatus: BotLocaleStatusType,  # (1)
+    lastBuildSubmittedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
-- `lastBuildSubmittedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="builtinintentsortbytypedef"></a>
-
+1. See [:material-code-brackets: BotLocaleStatusType](./literals.md#botlocalestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BuiltInIntentSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BuiltInIntentSortByTypeDef
+
+def get_value() -> BuiltInIntentSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BuiltInIntentSortByTypeDef(TypedDict):
+    attribute: BuiltInIntentSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`: `Literal['IntentSignature']` (see
-  [BuiltInIntentSortAttributeType](./literals.md#builtinintentsortattributetype))
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="builtinintentsummarytypedef"></a>
-
+1. See [:material-code-brackets: BuiltInIntentSortAttributeType](./literals.md#builtinintentsortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## BuiltInIntentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BuiltInIntentSummaryTypeDef
+
+def get_value() -> BuiltInIntentSummaryTypeDef:
+    return {
+        "intentSignature": ...,
+    }
 ```
 
-Optional fields:
-
-- `intentSignature`: `str`
-- `description`: `str`
-
-<a id="builtinslottypesortbytypedef"></a>
+```python title="Definition"
+class BuiltInIntentSummaryTypeDef(TypedDict):
+    intentSignature: NotRequired[str],
+    description: NotRequired[str],
+```
 
 ## BuiltInSlotTypeSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BuiltInSlotTypeSortByTypeDef
+
+def get_value() -> BuiltInSlotTypeSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BuiltInSlotTypeSortByTypeDef(TypedDict):
+    attribute: BuiltInSlotTypeSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`: `Literal['SlotTypeSignature']` (see
-  [BuiltInSlotTypeSortAttributeType](./literals.md#builtinslottypesortattributetype))
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="builtinslottypesummarytypedef"></a>
-
+1. See [:material-code-brackets: BuiltInSlotTypeSortAttributeType](./literals.md#builtinslottypesortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## BuiltInSlotTypeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import BuiltInSlotTypeSummaryTypeDef
+
+def get_value() -> BuiltInSlotTypeSummaryTypeDef:
+    return {
+        "slotTypeSignature": ...,
+    }
 ```
 
-Optional fields:
-
-- `slotTypeSignature`: `str`
-- `description`: `str`
-
-<a id="buttontypedef"></a>
+```python title="Definition"
+class BuiltInSlotTypeSummaryTypeDef(TypedDict):
+    slotTypeSignature: NotRequired[str],
+    description: NotRequired[str],
+```
 
 ## ButtonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ButtonTypeDef
+
+def get_value() -> ButtonTypeDef:
+    return {
+        "text": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `text`: `str`
-- `value`: `str`
-
-<a id="cloudwatchloggrouplogdestinationtypedef"></a>
+```python title="Definition"
+class ButtonTypeDef(TypedDict):
+    text: str,
+    value: str,
+```
 
 ## CloudWatchLogGroupLogDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CloudWatchLogGroupLogDestinationTypeDef
+
+def get_value() -> CloudWatchLogGroupLogDestinationTypeDef:
+    return {
+        "cloudWatchLogGroupArn": ...,
+        "logPrefix": ...,
+    }
 ```
 
-Required fields:
-
-- `cloudWatchLogGroupArn`: `str`
-- `logPrefix`: `str`
-
-<a id="codehookspecificationtypedef"></a>
+```python title="Definition"
+class CloudWatchLogGroupLogDestinationTypeDef(TypedDict):
+    cloudWatchLogGroupArn: str,
+    logPrefix: str,
+```
 
 ## CodeHookSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CodeHookSpecificationTypeDef
+
+def get_value() -> CodeHookSpecificationTypeDef:
+    return {
+        "lambdaCodeHook": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CodeHookSpecificationTypeDef(TypedDict):
+    lambdaCodeHook: LambdaCodeHookTypeDef,  # (1)
+```
 
-- `lambdaCodeHook`:
-  [LambdaCodeHookTypeDef](./type_defs.md#lambdacodehooktypedef)
-
-<a id="conversationlogsettingstypedef"></a>
-
+1. See [:material-code-braces: LambdaCodeHookTypeDef](./type_defs.md#lambdacodehooktypedef) 
 ## ConversationLogSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ConversationLogSettingsTypeDef
+
+def get_value() -> ConversationLogSettingsTypeDef:
+    return {
+        "textLogSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConversationLogSettingsTypeDef(TypedDict):
+    textLogSettings: NotRequired[Sequence[TextLogSettingTypeDef]],  # (1)
+    audioLogSettings: NotRequired[Sequence[AudioLogSettingTypeDef]],  # (2)
+```
 
-- `textLogSettings`:
-  `Sequence`\[[TextLogSettingTypeDef](./type_defs.md#textlogsettingtypedef)\]
-- `audioLogSettings`:
-  `Sequence`\[[AudioLogSettingTypeDef](./type_defs.md#audiologsettingtypedef)\]
-
-<a id="createbotaliasrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TextLogSettingTypeDef](./type_defs.md#textlogsettingtypedef) 
+2. See [:material-code-braces: AudioLogSettingTypeDef](./type_defs.md#audiologsettingtypedef) 
 ## CreateBotAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateBotAliasRequestRequestTypeDef
+
+def get_value() -> CreateBotAliasRequestRequestTypeDef:
+    return {
+        "botAliasName": ...,
+        "botId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBotAliasRequestRequestTypeDef(TypedDict):
+    botAliasName: str,
+    botId: str,
+    description: NotRequired[str],
+    botVersion: NotRequired[str],
+    botAliasLocaleSettings: NotRequired[Mapping[str, BotAliasLocaleSettingsTypeDef]],  # (1)
+    conversationLogSettings: NotRequired[ConversationLogSettingsTypeDef],  # (2)
+    sentimentAnalysisSettings: NotRequired[SentimentAnalysisSettingsTypeDef],  # (3)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `botAliasName`: `str`
-- `botId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `botVersion`: `str`
-- `botAliasLocaleSettings`: `Mapping`\[`str`,
-  [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
-- `conversationLogSettings`:
-  [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
-- `sentimentAnalysisSettings`:
-  [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createbotaliasresponsetypedef"></a>
-
+1. See [:material-code-braces: BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef) 
+2. See [:material-code-braces: ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef) 
+3. See [:material-code-braces: SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef) 
 ## CreateBotAliasResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateBotAliasResponseTypeDef
+
+def get_value() -> CreateBotAliasResponseTypeDef:
+    return {
+        "botAliasId": ...,
+        "botAliasName": ...,
+        "description": ...,
+        "botVersion": ...,
+        "botAliasLocaleSettings": ...,
+        "conversationLogSettings": ...,
+        "sentimentAnalysisSettings": ...,
+        "botAliasStatus": ...,
+        "botId": ...,
+        "creationDateTime": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBotAliasResponseTypeDef(TypedDict):
+    botAliasId: str,
+    botAliasName: str,
+    description: str,
+    botVersion: str,
+    botAliasLocaleSettings: Dict[str, BotAliasLocaleSettingsTypeDef],  # (1)
+    conversationLogSettings: ConversationLogSettingsTypeDef,  # (2)
+    sentimentAnalysisSettings: SentimentAnalysisSettingsTypeDef,  # (3)
+    botAliasStatus: BotAliasStatusType,  # (4)
+    botId: str,
+    creationDateTime: datetime,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `botAliasId`: `str`
-- `botAliasName`: `str`
-- `description`: `str`
-- `botVersion`: `str`
-- `botAliasLocaleSettings`: `Dict`\[`str`,
-  [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
-- `conversationLogSettings`:
-  [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
-- `sentimentAnalysisSettings`:
-  [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
-- `botId`: `str`
-- `creationDateTime`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbotlocalerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef) 
+2. See [:material-code-braces: ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef) 
+3. See [:material-code-braces: SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef) 
+4. See [:material-code-brackets: BotAliasStatusType](./literals.md#botaliasstatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBotLocaleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateBotLocaleRequestRequestTypeDef
+
+def get_value() -> CreateBotLocaleRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "nluIntentConfidenceThreshold": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBotLocaleRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    nluIntentConfidenceThreshold: float,
+    description: NotRequired[str],
+    voiceSettings: NotRequired[VoiceSettingsTypeDef],  # (1)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `nluIntentConfidenceThreshold`: `float`
-
-Optional fields:
-
-- `description`: `str`
-- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
-
-<a id="createbotlocaleresponsetypedef"></a>
-
+1. See [:material-code-braces: VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef) 
 ## CreateBotLocaleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateBotLocaleResponseTypeDef
+
+def get_value() -> CreateBotLocaleResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeName": ...,
+        "localeId": ...,
+        "description": ...,
+        "nluIntentConfidenceThreshold": ...,
+        "voiceSettings": ...,
+        "botLocaleStatus": ...,
+        "creationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBotLocaleResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeName: str,
+    localeId: str,
+    description: str,
+    nluIntentConfidenceThreshold: float,
+    voiceSettings: VoiceSettingsTypeDef,  # (1)
+    botLocaleStatus: BotLocaleStatusType,  # (2)
+    creationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeName`: `str`
-- `localeId`: `str`
-- `description`: `str`
-- `nluIntentConfidenceThreshold`: `float`
-- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
-- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
-- `creationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef) 
+2. See [:material-code-brackets: BotLocaleStatusType](./literals.md#botlocalestatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateBotRequestRequestTypeDef
+
+def get_value() -> CreateBotRequestRequestTypeDef:
+    return {
+        "botName": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBotRequestRequestTypeDef(TypedDict):
+    botName: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    description: NotRequired[str],
+    botTags: NotRequired[Mapping[str, str]],
+    testBotAliasTags: NotRequired[Mapping[str, str]],
+```
 
-- `botName`: `str`
-- `roleArn`: `str`
-- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
-- `idleSessionTTLInSeconds`: `int`
-
-Optional fields:
-
-- `description`: `str`
-- `botTags`: `Mapping`\[`str`, `str`\]
-- `testBotAliasTags`: `Mapping`\[`str`, `str`\]
-
-<a id="createbotresponsetypedef"></a>
-
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
 ## CreateBotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateBotResponseTypeDef
+
+def get_value() -> CreateBotResponseTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "description": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+        "botStatus": ...,
+        "creationDateTime": ...,
+        "botTags": ...,
+        "testBotAliasTags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBotResponseTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    description: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    botStatus: BotStatusType,  # (2)
+    creationDateTime: datetime,
+    botTags: Dict[str, str],
+    testBotAliasTags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `botId`: `str`
-- `botName`: `str`
-- `description`: `str`
-- `roleArn`: `str`
-- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
-- `idleSessionTTLInSeconds`: `int`
-- `botStatus`: [BotStatusType](./literals.md#botstatustype)
-- `creationDateTime`: `datetime`
-- `botTags`: `Dict`\[`str`, `str`\]
-- `testBotAliasTags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbotversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBotVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateBotVersionRequestRequestTypeDef
+
+def get_value() -> CreateBotVersionRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersionLocaleSpecification": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBotVersionRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersionLocaleSpecification: Mapping[str, BotVersionLocaleDetailsTypeDef],  # (1)
+    description: NotRequired[str],
+```
 
-- `botId`: `str`
-- `botVersionLocaleSpecification`: `Mapping`\[`str`,
-  [BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="createbotversionresponsetypedef"></a>
-
+1. See [:material-code-braces: BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef) 
 ## CreateBotVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateBotVersionResponseTypeDef
+
+def get_value() -> CreateBotVersionResponseTypeDef:
+    return {
+        "botId": ...,
+        "description": ...,
+        "botVersion": ...,
+        "botVersionLocaleSpecification": ...,
+        "botStatus": ...,
+        "creationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBotVersionResponseTypeDef(TypedDict):
+    botId: str,
+    description: str,
+    botVersion: str,
+    botVersionLocaleSpecification: Dict[str, BotVersionLocaleDetailsTypeDef],  # (1)
+    botStatus: BotStatusType,  # (2)
+    creationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `botId`: `str`
-- `description`: `str`
-- `botVersion`: `str`
-- `botVersionLocaleSpecification`: `Dict`\[`str`,
-  [BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef)\]
-- `botStatus`: [BotStatusType](./literals.md#botstatustype)
-- `creationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createexportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef) 
+2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateExportRequestRequestTypeDef
+
+def get_value() -> CreateExportRequestRequestTypeDef:
+    return {
+        "resourceSpecification": ...,
+        "fileFormat": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExportRequestRequestTypeDef(TypedDict):
+    resourceSpecification: ExportResourceSpecificationTypeDef,  # (1)
+    fileFormat: ImportExportFileFormatType,  # (2)
+    filePassword: NotRequired[str],
+```
 
-- `resourceSpecification`:
-  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`:
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
-
-Optional fields:
-
-- `filePassword`: `str`
-
-<a id="createexportresponsetypedef"></a>
-
+1. See [:material-code-braces: ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef) 
+2. See [:material-code-brackets: ImportExportFileFormatType](./literals.md#importexportfileformattype) 
 ## CreateExportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateExportResponseTypeDef
+
+def get_value() -> CreateExportResponseTypeDef:
+    return {
+        "exportId": ...,
+        "resourceSpecification": ...,
+        "fileFormat": ...,
+        "exportStatus": ...,
+        "creationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExportResponseTypeDef(TypedDict):
+    exportId: str,
+    resourceSpecification: ExportResourceSpecificationTypeDef,  # (1)
+    fileFormat: ImportExportFileFormatType,  # (2)
+    exportStatus: ExportStatusType,  # (3)
+    creationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `exportId`: `str`
-- `resourceSpecification`:
-  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`:
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
-- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
-- `creationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createintentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef) 
+2. See [:material-code-brackets: ImportExportFileFormatType](./literals.md#importexportfileformattype) 
+3. See [:material-code-brackets: ExportStatusType](./literals.md#exportstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIntentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateIntentRequestRequestTypeDef
+
+def get_value() -> CreateIntentRequestRequestTypeDef:
+    return {
+        "intentName": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIntentRequestRequestTypeDef(TypedDict):
+    intentName: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    description: NotRequired[str],
+    parentIntentSignature: NotRequired[str],
+    sampleUtterances: NotRequired[Sequence[SampleUtteranceTypeDef]],  # (1)
+    dialogCodeHook: NotRequired[DialogCodeHookSettingsTypeDef],  # (2)
+    fulfillmentCodeHook: NotRequired[FulfillmentCodeHookSettingsTypeDef],  # (3)
+    intentConfirmationSetting: NotRequired[IntentConfirmationSettingTypeDef],  # (4)
+    intentClosingSetting: NotRequired[IntentClosingSettingTypeDef],  # (5)
+    inputContexts: NotRequired[Sequence[InputContextTypeDef]],  # (6)
+    outputContexts: NotRequired[Sequence[OutputContextTypeDef]],  # (7)
+    kendraConfiguration: NotRequired[KendraConfigurationTypeDef],  # (8)
+```
 
-- `intentName`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `parentIntentSignature`: `str`
-- `sampleUtterances`:
-  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
-- `dialogCodeHook`:
-  [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
-- `fulfillmentCodeHook`:
-  [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
-- `intentConfirmationSetting`:
-  [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
-- `intentClosingSetting`:
-  [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
-- `inputContexts`:
-  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
-- `outputContexts`:
-  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
-- `kendraConfiguration`:
-  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
-
-<a id="createintentresponsetypedef"></a>
-
+1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+2. See [:material-code-braces: DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef) 
+3. See [:material-code-braces: FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef) 
+4. See [:material-code-braces: IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef) 
+5. See [:material-code-braces: IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef) 
+6. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
+7. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
+8. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
 ## CreateIntentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateIntentResponseTypeDef
+
+def get_value() -> CreateIntentResponseTypeDef:
+    return {
+        "intentId": ...,
+        "intentName": ...,
+        "description": ...,
+        "parentIntentSignature": ...,
+        "sampleUtterances": ...,
+        "dialogCodeHook": ...,
+        "fulfillmentCodeHook": ...,
+        "intentConfirmationSetting": ...,
+        "intentClosingSetting": ...,
+        "inputContexts": ...,
+        "outputContexts": ...,
+        "kendraConfiguration": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "creationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIntentResponseTypeDef(TypedDict):
+    intentId: str,
+    intentName: str,
+    description: str,
+    parentIntentSignature: str,
+    sampleUtterances: List[SampleUtteranceTypeDef],  # (1)
+    dialogCodeHook: DialogCodeHookSettingsTypeDef,  # (2)
+    fulfillmentCodeHook: FulfillmentCodeHookSettingsTypeDef,  # (3)
+    intentConfirmationSetting: IntentConfirmationSettingTypeDef,  # (4)
+    intentClosingSetting: IntentClosingSettingTypeDef,  # (5)
+    inputContexts: List[InputContextTypeDef],  # (6)
+    outputContexts: List[OutputContextTypeDef],  # (7)
+    kendraConfiguration: KendraConfigurationTypeDef,  # (8)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    creationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
+```
 
-- `intentId`: `str`
-- `intentName`: `str`
-- `description`: `str`
-- `parentIntentSignature`: `str`
-- `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
-- `dialogCodeHook`:
-  [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
-- `fulfillmentCodeHook`:
-  [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
-- `intentConfirmationSetting`:
-  [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
-- `intentClosingSetting`:
-  [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
-- `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
-- `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
-- `kendraConfiguration`:
-  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `creationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+2. See [:material-code-braces: DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef) 
+3. See [:material-code-braces: FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef) 
+4. See [:material-code-braces: IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef) 
+5. See [:material-code-braces: IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef) 
+6. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
+7. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
+8. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
+9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyRequestRequestTypeDef
+
+def get_value() -> CreateResourcePolicyRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "policy": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `policy`: `str`
-
-<a id="createresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class CreateResourcePolicyRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    policy: str,
+```
 
 ## CreateResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyResponseTypeDef
+
+def get_value() -> CreateResourcePolicyResponseTypeDef:
+    return {
+        "resourceArn": ...,
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResourcePolicyResponseTypeDef(TypedDict):
+    resourceArn: str,
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `resourceArn`: `str`
-- `revisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createresourcepolicystatementrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResourcePolicyStatementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyStatementRequestRequestTypeDef
+
+def get_value() -> CreateResourcePolicyStatementRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "statementId": ...,
+        "effect": ...,
+        "principal": ...,
+        "action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResourcePolicyStatementRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    statementId: str,
+    effect: EffectType,  # (1)
+    principal: Sequence[PrincipalTypeDef],  # (2)
+    action: Sequence[str],
+    condition: NotRequired[Mapping[str, Mapping[str, str]]],
+    expectedRevisionId: NotRequired[str],
+```
 
-- `resourceArn`: `str`
-- `statementId`: `str`
-- `effect`: [EffectType](./literals.md#effecttype)
-- `principal`:
-  `Sequence`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
-- `action`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `condition`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
-- `expectedRevisionId`: `str`
-
-<a id="createresourcepolicystatementresponsetypedef"></a>
-
+1. See [:material-code-brackets: EffectType](./literals.md#effecttype) 
+2. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
 ## CreateResourcePolicyStatementResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateResourcePolicyStatementResponseTypeDef
+
+def get_value() -> CreateResourcePolicyStatementResponseTypeDef:
+    return {
+        "resourceArn": ...,
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResourcePolicyStatementResponseTypeDef(TypedDict):
+    resourceArn: str,
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `resourceArn`: `str`
-- `revisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createslotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSlotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateSlotRequestRequestTypeDef
+
+def get_value() -> CreateSlotRequestRequestTypeDef:
+    return {
+        "slotName": ...,
+        "valueElicitationSetting": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSlotRequestRequestTypeDef(TypedDict):
+    slotName: str,
+    valueElicitationSetting: SlotValueElicitationSettingTypeDef,  # (1)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    description: NotRequired[str],
+    slotTypeId: NotRequired[str],
+    obfuscationSetting: NotRequired[ObfuscationSettingTypeDef],  # (2)
+    multipleValuesSetting: NotRequired[MultipleValuesSettingTypeDef],  # (3)
+```
 
-- `slotName`: `str`
-- `valueElicitationSetting`:
-  [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `slotTypeId`: `str`
-- `obfuscationSetting`:
-  [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
-- `multipleValuesSetting`:
-  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
-
-<a id="createslotresponsetypedef"></a>
-
+1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
+2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
+3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
 ## CreateSlotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateSlotResponseTypeDef
+
+def get_value() -> CreateSlotResponseTypeDef:
+    return {
+        "slotId": ...,
+        "slotName": ...,
+        "description": ...,
+        "slotTypeId": ...,
+        "valueElicitationSetting": ...,
+        "obfuscationSetting": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentId": ...,
+        "creationDateTime": ...,
+        "multipleValuesSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSlotResponseTypeDef(TypedDict):
+    slotId: str,
+    slotName: str,
+    description: str,
+    slotTypeId: str,
+    valueElicitationSetting: SlotValueElicitationSettingTypeDef,  # (1)
+    obfuscationSetting: ObfuscationSettingTypeDef,  # (2)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    creationDateTime: datetime,
+    multipleValuesSetting: MultipleValuesSettingTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `slotId`: `str`
-- `slotName`: `str`
-- `description`: `str`
-- `slotTypeId`: `str`
-- `valueElicitationSetting`:
-  [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
-- `obfuscationSetting`:
-  [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentId`: `str`
-- `creationDateTime`: `datetime`
-- `multipleValuesSetting`:
-  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createslottyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
+2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
+3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSlotTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateSlotTypeRequestRequestTypeDef
+
+def get_value() -> CreateSlotTypeRequestRequestTypeDef:
+    return {
+        "slotTypeName": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSlotTypeRequestRequestTypeDef(TypedDict):
+    slotTypeName: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    description: NotRequired[str],
+    slotTypeValues: NotRequired[Sequence[SlotTypeValueTypeDef]],  # (1)
+    valueSelectionSetting: NotRequired[SlotValueSelectionSettingTypeDef],  # (2)
+    parentSlotTypeSignature: NotRequired[str],
+    externalSourceSetting: NotRequired[ExternalSourceSettingTypeDef],  # (3)
+```
 
-- `slotTypeName`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `slotTypeValues`:
-  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
-- `parentSlotTypeSignature`: `str`
-- `externalSourceSetting`:
-  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
-
-<a id="createslottyperesponsetypedef"></a>
-
+1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
+2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
+3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
 ## CreateSlotTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateSlotTypeResponseTypeDef
+
+def get_value() -> CreateSlotTypeResponseTypeDef:
+    return {
+        "slotTypeId": ...,
+        "slotTypeName": ...,
+        "description": ...,
+        "slotTypeValues": ...,
+        "valueSelectionSetting": ...,
+        "parentSlotTypeSignature": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "creationDateTime": ...,
+        "externalSourceSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSlotTypeResponseTypeDef(TypedDict):
+    slotTypeId: str,
+    slotTypeName: str,
+    description: str,
+    slotTypeValues: List[SlotTypeValueTypeDef],  # (1)
+    valueSelectionSetting: SlotValueSelectionSettingTypeDef,  # (2)
+    parentSlotTypeSignature: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    creationDateTime: datetime,
+    externalSourceSetting: ExternalSourceSettingTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `slotTypeId`: `str`
-- `slotTypeName`: `str`
-- `description`: `str`
-- `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
-- `parentSlotTypeSignature`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `creationDateTime`: `datetime`
-- `externalSourceSetting`:
-  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuploadurlresponsetypedef"></a>
-
+1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
+2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
+3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUploadUrlResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CreateUploadUrlResponseTypeDef
+
+def get_value() -> CreateUploadUrlResponseTypeDef:
+    return {
+        "importId": ...,
+        "uploadUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUploadUrlResponseTypeDef(TypedDict):
+    importId: str,
+    uploadUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `importId`: `str`
-- `uploadUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="custompayloadtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomPayloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CustomPayloadTypeDef
+
+def get_value() -> CustomPayloadTypeDef:
+    return {
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `value`: `str`
-
-<a id="customvocabularyexportspecificationtypedef"></a>
+```python title="Definition"
+class CustomPayloadTypeDef(TypedDict):
+    value: str,
+```
 
 ## CustomVocabularyExportSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CustomVocabularyExportSpecificationTypeDef
+
+def get_value() -> CustomVocabularyExportSpecificationTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="customvocabularyimportspecificationtypedef"></a>
+```python title="Definition"
+class CustomVocabularyExportSpecificationTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## CustomVocabularyImportSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import CustomVocabularyImportSpecificationTypeDef
+
+def get_value() -> CustomVocabularyImportSpecificationTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="dataprivacytypedef"></a>
+```python title="Definition"
+class CustomVocabularyImportSpecificationTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## DataPrivacyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DataPrivacyTypeDef
+
+def get_value() -> DataPrivacyTypeDef:
+    return {
+        "childDirected": ...,
+    }
 ```
 
-Required fields:
-
-- `childDirected`: `bool`
-
-<a id="daterangefiltertypedef"></a>
+```python title="Definition"
+class DataPrivacyTypeDef(TypedDict):
+    childDirected: bool,
+```
 
 ## DateRangeFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DateRangeFilterTypeDef
+
+def get_value() -> DateRangeFilterTypeDef:
+    return {
+        "startDateTime": ...,
+        "endDateTime": ...,
+    }
 ```
 
-Required fields:
-
-- `startDateTime`: `datetime`
-- `endDateTime`: `datetime`
-
-<a id="deletebotaliasrequestrequesttypedef"></a>
+```python title="Definition"
+class DateRangeFilterTypeDef(TypedDict):
+    startDateTime: datetime,
+    endDateTime: datetime,
+```
 
 ## DeleteBotAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteBotAliasRequestRequestTypeDef
+
+def get_value() -> DeleteBotAliasRequestRequestTypeDef:
+    return {
+        "botAliasId": ...,
+        "botId": ...,
+    }
 ```
 
-Required fields:
-
-- `botAliasId`: `str`
-- `botId`: `str`
-
-Optional fields:
-
-- `skipResourceInUseCheck`: `bool`
-
-<a id="deletebotaliasresponsetypedef"></a>
+```python title="Definition"
+class DeleteBotAliasRequestRequestTypeDef(TypedDict):
+    botAliasId: str,
+    botId: str,
+    skipResourceInUseCheck: NotRequired[bool],
+```
 
 ## DeleteBotAliasResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteBotAliasResponseTypeDef
+
+def get_value() -> DeleteBotAliasResponseTypeDef:
+    return {
+        "botAliasId": ...,
+        "botId": ...,
+        "botAliasStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBotAliasResponseTypeDef(TypedDict):
+    botAliasId: str,
+    botId: str,
+    botAliasStatus: BotAliasStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botAliasId`: `str`
-- `botId`: `str`
-- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebotlocalerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BotAliasStatusType](./literals.md#botaliasstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBotLocaleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteBotLocaleRequestRequestTypeDef
+
+def get_value() -> DeleteBotLocaleRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="deletebotlocaleresponsetypedef"></a>
+```python title="Definition"
+class DeleteBotLocaleRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## DeleteBotLocaleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteBotLocaleResponseTypeDef
+
+def get_value() -> DeleteBotLocaleResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botLocaleStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBotLocaleResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botLocaleStatus: BotLocaleStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebotrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BotLocaleStatusType](./literals.md#botlocalestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteBotRequestRequestTypeDef
+
+def get_value() -> DeleteBotRequestRequestTypeDef:
+    return {
+        "botId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-
-Optional fields:
-
-- `skipResourceInUseCheck`: `bool`
-
-<a id="deletebotresponsetypedef"></a>
+```python title="Definition"
+class DeleteBotRequestRequestTypeDef(TypedDict):
+    botId: str,
+    skipResourceInUseCheck: NotRequired[bool],
+```
 
 ## DeleteBotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteBotResponseTypeDef
+
+def get_value() -> DeleteBotResponseTypeDef:
+    return {
+        "botId": ...,
+        "botStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBotResponseTypeDef(TypedDict):
+    botId: str,
+    botStatus: BotStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botStatus`: [BotStatusType](./literals.md#botstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebotversionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBotVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteBotVersionRequestRequestTypeDef
+
+def get_value() -> DeleteBotVersionRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-
-Optional fields:
-
-- `skipResourceInUseCheck`: `bool`
-
-<a id="deletebotversionresponsetypedef"></a>
+```python title="Definition"
+class DeleteBotVersionRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    skipResourceInUseCheck: NotRequired[bool],
+```
 
 ## DeleteBotVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteBotVersionResponseTypeDef
+
+def get_value() -> DeleteBotVersionResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "botStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBotVersionResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    botStatus: BotStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `botStatus`: [BotStatusType](./literals.md#botstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletecustomvocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteCustomVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteCustomVocabularyRequestRequestTypeDef
+
+def get_value() -> DeleteCustomVocabularyRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="deletecustomvocabularyresponsetypedef"></a>
+```python title="Definition"
+class DeleteCustomVocabularyRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## DeleteCustomVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteCustomVocabularyResponseTypeDef
+
+def get_value() -> DeleteCustomVocabularyResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "customVocabularyStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteCustomVocabularyResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    customVocabularyStatus: CustomVocabularyStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `customVocabularyStatus`:
-  [CustomVocabularyStatusType](./literals.md#customvocabularystatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteexportrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CustomVocabularyStatusType](./literals.md#customvocabularystatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteExportRequestRequestTypeDef
+
+def get_value() -> DeleteExportRequestRequestTypeDef:
+    return {
+        "exportId": ...,
+    }
 ```
 
-Required fields:
-
-- `exportId`: `str`
-
-<a id="deleteexportresponsetypedef"></a>
+```python title="Definition"
+class DeleteExportRequestRequestTypeDef(TypedDict):
+    exportId: str,
+```
 
 ## DeleteExportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteExportResponseTypeDef
+
+def get_value() -> DeleteExportResponseTypeDef:
+    return {
+        "exportId": ...,
+        "exportStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteExportResponseTypeDef(TypedDict):
+    exportId: str,
+    exportStatus: ExportStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `exportId`: `str`
-- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteimportrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ExportStatusType](./literals.md#exportstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteImportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteImportRequestRequestTypeDef
+
+def get_value() -> DeleteImportRequestRequestTypeDef:
+    return {
+        "importId": ...,
+    }
 ```
 
-Required fields:
-
-- `importId`: `str`
-
-<a id="deleteimportresponsetypedef"></a>
+```python title="Definition"
+class DeleteImportRequestRequestTypeDef(TypedDict):
+    importId: str,
+```
 
 ## DeleteImportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteImportResponseTypeDef
+
+def get_value() -> DeleteImportResponseTypeDef:
+    return {
+        "importId": ...,
+        "importStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteImportResponseTypeDef(TypedDict):
+    importId: str,
+    importStatus: ImportStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `importId`: `str`
-- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteintentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteIntentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteIntentRequestRequestTypeDef
+
+def get_value() -> DeleteIntentRequestRequestTypeDef:
+    return {
+        "intentId": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `intentId`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="deleteresourcepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteIntentRequestRequestTypeDef(TypedDict):
+    intentId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## DeleteResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-Optional fields:
-
-- `expectedRevisionId`: `str`
-
-<a id="deleteresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    expectedRevisionId: NotRequired[str],
+```
 
 ## DeleteResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyResponseTypeDef
+
+def get_value() -> DeleteResourcePolicyResponseTypeDef:
+    return {
+        "resourceArn": ...,
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteResourcePolicyResponseTypeDef(TypedDict):
+    resourceArn: str,
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `resourceArn`: `str`
-- `revisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourcepolicystatementrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourcePolicyStatementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyStatementRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyStatementRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "statementId": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `statementId`: `str`
-
-Optional fields:
-
-- `expectedRevisionId`: `str`
-
-<a id="deleteresourcepolicystatementresponsetypedef"></a>
+```python title="Definition"
+class DeleteResourcePolicyStatementRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    statementId: str,
+    expectedRevisionId: NotRequired[str],
+```
 
 ## DeleteResourcePolicyStatementResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteResourcePolicyStatementResponseTypeDef
+
+def get_value() -> DeleteResourcePolicyStatementResponseTypeDef:
+    return {
+        "resourceArn": ...,
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteResourcePolicyStatementResponseTypeDef(TypedDict):
+    resourceArn: str,
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `resourceArn`: `str`
-- `revisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteslotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSlotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteSlotRequestRequestTypeDef
+
+def get_value() -> DeleteSlotRequestRequestTypeDef:
+    return {
+        "slotId": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentId": ...,
+    }
 ```
 
-Required fields:
-
-- `slotId`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentId`: `str`
-
-<a id="deleteslottyperequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSlotRequestRequestTypeDef(TypedDict):
+    slotId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+```
 
 ## DeleteSlotTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteSlotTypeRequestRequestTypeDef
+
+def get_value() -> DeleteSlotTypeRequestRequestTypeDef:
+    return {
+        "slotTypeId": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `slotTypeId`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-Optional fields:
-
-- `skipResourceInUseCheck`: `bool`
-
-<a id="deleteutterancesrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSlotTypeRequestRequestTypeDef(TypedDict):
+    slotTypeId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    skipResourceInUseCheck: NotRequired[bool],
+```
 
 ## DeleteUtterancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DeleteUtterancesRequestRequestTypeDef
+
+def get_value() -> DeleteUtterancesRequestRequestTypeDef:
+    return {
+        "botId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteUtterancesRequestRequestTypeDef(TypedDict):
+    botId: str,
+    localeId: NotRequired[str],
+    sessionId: NotRequired[str],
+```
 
-- `botId`: `str`
+## DescribeBotAliasRequestBotAliasAvailableWaitTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeBotAliasRequestBotAliasAvailableWaitTypeDef
 
-- `localeId`: `str`
-- `sessionId`: `str`
+def get_value() -> DescribeBotAliasRequestBotAliasAvailableWaitTypeDef:
+    return {
+        "botAliasId": ...,
+        "botId": ...,
+    }
+```
 
-<a id="describebotaliasrequestrequesttypedef"></a>
+```python title="Definition"
+class DescribeBotAliasRequestBotAliasAvailableWaitTypeDef(TypedDict):
+    botAliasId: str,
+    botId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeBotAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotAliasRequestRequestTypeDef
+
+def get_value() -> DescribeBotAliasRequestRequestTypeDef:
+    return {
+        "botAliasId": ...,
+        "botId": ...,
+    }
 ```
 
-Required fields:
-
-- `botAliasId`: `str`
-- `botId`: `str`
-
-<a id="describebotaliasresponsetypedef"></a>
+```python title="Definition"
+class DescribeBotAliasRequestRequestTypeDef(TypedDict):
+    botAliasId: str,
+    botId: str,
+```
 
 ## DescribeBotAliasResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotAliasResponseTypeDef
+
+def get_value() -> DescribeBotAliasResponseTypeDef:
+    return {
+        "botAliasId": ...,
+        "botAliasName": ...,
+        "description": ...,
+        "botVersion": ...,
+        "botAliasLocaleSettings": ...,
+        "conversationLogSettings": ...,
+        "sentimentAnalysisSettings": ...,
+        "botAliasHistoryEvents": ...,
+        "botAliasStatus": ...,
+        "botId": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBotAliasResponseTypeDef(TypedDict):
+    botAliasId: str,
+    botAliasName: str,
+    description: str,
+    botVersion: str,
+    botAliasLocaleSettings: Dict[str, BotAliasLocaleSettingsTypeDef],  # (1)
+    conversationLogSettings: ConversationLogSettingsTypeDef,  # (2)
+    sentimentAnalysisSettings: SentimentAnalysisSettingsTypeDef,  # (3)
+    botAliasHistoryEvents: List[BotAliasHistoryEventTypeDef],  # (4)
+    botAliasStatus: BotAliasStatusType,  # (5)
+    botId: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `botAliasId`: `str`
-- `botAliasName`: `str`
-- `description`: `str`
-- `botVersion`: `str`
-- `botAliasLocaleSettings`: `Dict`\[`str`,
-  [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
-- `conversationLogSettings`:
-  [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
-- `sentimentAnalysisSettings`:
-  [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `botAliasHistoryEvents`:
-  `List`\[[BotAliasHistoryEventTypeDef](./type_defs.md#botaliashistoryeventtypedef)\]
-- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
-- `botId`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef) 
+2. See [:material-code-braces: ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef) 
+3. See [:material-code-braces: SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef) 
+4. See [:material-code-braces: BotAliasHistoryEventTypeDef](./type_defs.md#botaliashistoryeventtypedef) 
+5. See [:material-code-brackets: BotAliasStatusType](./literals.md#botaliasstatustype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBotLocaleRequestBotLocaleBuiltWaitTypeDef
 
-<a id="describebotlocalerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeBotLocaleRequestBotLocaleBuiltWaitTypeDef
 
+def get_value() -> DescribeBotLocaleRequestBotLocaleBuiltWaitTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBotLocaleRequestBotLocaleBuiltWaitTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeBotLocaleRequestBotLocaleCreatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeBotLocaleRequestBotLocaleCreatedWaitTypeDef
+
+def get_value() -> DescribeBotLocaleRequestBotLocaleCreatedWaitTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBotLocaleRequestBotLocaleCreatedWaitTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeBotLocaleRequestBotLocaleExpressTestingAvailableWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeBotLocaleRequestBotLocaleExpressTestingAvailableWaitTypeDef
+
+def get_value() -> DescribeBotLocaleRequestBotLocaleExpressTestingAvailableWaitTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBotLocaleRequestBotLocaleExpressTestingAvailableWaitTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeBotLocaleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotLocaleRequestRequestTypeDef
+
+def get_value() -> DescribeBotLocaleRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="describebotlocaleresponsetypedef"></a>
+```python title="Definition"
+class DescribeBotLocaleRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## DescribeBotLocaleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotLocaleResponseTypeDef
+
+def get_value() -> DescribeBotLocaleResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "localeName": ...,
+        "description": ...,
+        "nluIntentConfidenceThreshold": ...,
+        "voiceSettings": ...,
+        "intentsCount": ...,
+        "slotTypesCount": ...,
+        "botLocaleStatus": ...,
+        "failureReasons": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "lastBuildSubmittedDateTime": ...,
+        "botLocaleHistoryEvents": ...,
+        "recommendedActions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBotLocaleResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    localeName: str,
+    description: str,
+    nluIntentConfidenceThreshold: float,
+    voiceSettings: VoiceSettingsTypeDef,  # (1)
+    intentsCount: int,
+    slotTypesCount: int,
+    botLocaleStatus: BotLocaleStatusType,  # (2)
+    failureReasons: List[str],
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    lastBuildSubmittedDateTime: datetime,
+    botLocaleHistoryEvents: List[BotLocaleHistoryEventTypeDef],  # (3)
+    recommendedActions: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `localeName`: `str`
-- `description`: `str`
-- `nluIntentConfidenceThreshold`: `float`
-- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
-- `intentsCount`: `int`
-- `slotTypesCount`: `int`
-- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
-- `failureReasons`: `List`\[`str`\]
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `lastBuildSubmittedDateTime`: `datetime`
-- `botLocaleHistoryEvents`:
-  `List`\[[BotLocaleHistoryEventTypeDef](./type_defs.md#botlocalehistoryeventtypedef)\]
-- `recommendedActions`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describebotrecommendationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef) 
+2. See [:material-code-brackets: BotLocaleStatusType](./literals.md#botlocalestatustype) 
+3. See [:material-code-braces: BotLocaleHistoryEventTypeDef](./type_defs.md#botlocalehistoryeventtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBotRecommendationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotRecommendationRequestRequestTypeDef
+
+def get_value() -> DescribeBotRecommendationRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationId`: `str`
-
-<a id="describebotrecommendationresponsetypedef"></a>
+```python title="Definition"
+class DescribeBotRecommendationRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+```
 
 ## DescribeBotRecommendationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotRecommendationResponseTypeDef
+
+def get_value() -> DescribeBotRecommendationResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationStatus": ...,
+        "botRecommendationId": ...,
+        "failureReasons": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "transcriptSourceSetting": ...,
+        "encryptionSetting": ...,
+        "botRecommendationResults": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBotRecommendationResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationStatus: BotRecommendationStatusType,  # (1)
+    botRecommendationId: str,
+    failureReasons: List[str],
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    transcriptSourceSetting: TranscriptSourceSettingTypeDef,  # (2)
+    encryptionSetting: EncryptionSettingTypeDef,  # (3)
+    botRecommendationResults: BotRecommendationResultsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationStatus`:
-  [BotRecommendationStatusType](./literals.md#botrecommendationstatustype)
-- `botRecommendationId`: `str`
-- `failureReasons`: `List`\[`str`\]
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `transcriptSourceSetting`:
-  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
-- `encryptionSetting`:
-  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
-- `botRecommendationResults`:
-  [BotRecommendationResultsTypeDef](./type_defs.md#botrecommendationresultstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: BotRecommendationStatusType](./literals.md#botrecommendationstatustype) 
+2. See [:material-code-braces: TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef) 
+3. See [:material-code-braces: EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef) 
+4. See [:material-code-braces: BotRecommendationResultsTypeDef](./type_defs.md#botrecommendationresultstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBotRequestBotAvailableWaitTypeDef
 
-<a id="describebotrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeBotRequestBotAvailableWaitTypeDef
 
+def get_value() -> DescribeBotRequestBotAvailableWaitTypeDef:
+    return {
+        "botId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBotRequestBotAvailableWaitTypeDef(TypedDict):
+    botId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeBotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotRequestRequestTypeDef
+
+def get_value() -> DescribeBotRequestRequestTypeDef:
+    return {
+        "botId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-
-<a id="describebotresponsetypedef"></a>
+```python title="Definition"
+class DescribeBotRequestRequestTypeDef(TypedDict):
+    botId: str,
+```
 
 ## DescribeBotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotResponseTypeDef
+
+def get_value() -> DescribeBotResponseTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "description": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+        "botStatus": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBotResponseTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    description: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    botStatus: BotStatusType,  # (2)
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `botId`: `str`
-- `botName`: `str`
-- `description`: `str`
-- `roleArn`: `str`
-- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
-- `idleSessionTTLInSeconds`: `int`
-- `botStatus`: [BotStatusType](./literals.md#botstatustype)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBotVersionRequestBotVersionAvailableWaitTypeDef
 
-<a id="describebotversionrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeBotVersionRequestBotVersionAvailableWaitTypeDef
 
+def get_value() -> DescribeBotVersionRequestBotVersionAvailableWaitTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBotVersionRequestBotVersionAvailableWaitTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeBotVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotVersionRequestRequestTypeDef
+
+def get_value() -> DescribeBotVersionRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-
-<a id="describebotversionresponsetypedef"></a>
+```python title="Definition"
+class DescribeBotVersionRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+```
 
 ## DescribeBotVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeBotVersionResponseTypeDef
+
+def get_value() -> DescribeBotVersionResponseTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "botVersion": ...,
+        "description": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+        "botStatus": ...,
+        "failureReasons": ...,
+        "creationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBotVersionResponseTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    botVersion: str,
+    description: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    botStatus: BotStatusType,  # (2)
+    failureReasons: List[str],
+    creationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `botId`: `str`
-- `botName`: `str`
-- `botVersion`: `str`
-- `description`: `str`
-- `roleArn`: `str`
-- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
-- `idleSessionTTLInSeconds`: `int`
-- `botStatus`: [BotStatusType](./literals.md#botstatustype)
-- `failureReasons`: `List`\[`str`\]
-- `creationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecustomvocabularymetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCustomVocabularyMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeCustomVocabularyMetadataRequestRequestTypeDef
+
+def get_value() -> DescribeCustomVocabularyMetadataRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="describecustomvocabularymetadataresponsetypedef"></a>
+```python title="Definition"
+class DescribeCustomVocabularyMetadataRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## DescribeCustomVocabularyMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeCustomVocabularyMetadataResponseTypeDef
+
+def get_value() -> DescribeCustomVocabularyMetadataResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "customVocabularyStatus": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCustomVocabularyMetadataResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    customVocabularyStatus: CustomVocabularyStatusType,  # (1)
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `customVocabularyStatus`:
-  [CustomVocabularyStatusType](./literals.md#customvocabularystatustype)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: CustomVocabularyStatusType](./literals.md#customvocabularystatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeExportRequestBotExportCompletedWaitTypeDef
 
-<a id="describeexportrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeExportRequestBotExportCompletedWaitTypeDef
 
+def get_value() -> DescribeExportRequestBotExportCompletedWaitTypeDef:
+    return {
+        "exportId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeExportRequestBotExportCompletedWaitTypeDef(TypedDict):
+    exportId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeExportRequestRequestTypeDef
+
+def get_value() -> DescribeExportRequestRequestTypeDef:
+    return {
+        "exportId": ...,
+    }
 ```
 
-Required fields:
-
-- `exportId`: `str`
-
-<a id="describeexportresponsetypedef"></a>
+```python title="Definition"
+class DescribeExportRequestRequestTypeDef(TypedDict):
+    exportId: str,
+```
 
 ## DescribeExportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeExportResponseTypeDef
+
+def get_value() -> DescribeExportResponseTypeDef:
+    return {
+        "exportId": ...,
+        "resourceSpecification": ...,
+        "fileFormat": ...,
+        "exportStatus": ...,
+        "failureReasons": ...,
+        "downloadUrl": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeExportResponseTypeDef(TypedDict):
+    exportId: str,
+    resourceSpecification: ExportResourceSpecificationTypeDef,  # (1)
+    fileFormat: ImportExportFileFormatType,  # (2)
+    exportStatus: ExportStatusType,  # (3)
+    failureReasons: List[str],
+    downloadUrl: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `exportId`: `str`
-- `resourceSpecification`:
-  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`:
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
-- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
-- `failureReasons`: `List`\[`str`\]
-- `downloadUrl`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef) 
+2. See [:material-code-brackets: ImportExportFileFormatType](./literals.md#importexportfileformattype) 
+3. See [:material-code-brackets: ExportStatusType](./literals.md#exportstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeImportRequestBotImportCompletedWaitTypeDef
 
-<a id="describeimportrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lexv2_models.type_defs import DescribeImportRequestBotImportCompletedWaitTypeDef
 
+def get_value() -> DescribeImportRequestBotImportCompletedWaitTypeDef:
+    return {
+        "importId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeImportRequestBotImportCompletedWaitTypeDef(TypedDict):
+    importId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeImportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeImportRequestRequestTypeDef
+
+def get_value() -> DescribeImportRequestRequestTypeDef:
+    return {
+        "importId": ...,
+    }
 ```
 
-Required fields:
-
-- `importId`: `str`
-
-<a id="describeimportresponsetypedef"></a>
+```python title="Definition"
+class DescribeImportRequestRequestTypeDef(TypedDict):
+    importId: str,
+```
 
 ## DescribeImportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeImportResponseTypeDef
+
+def get_value() -> DescribeImportResponseTypeDef:
+    return {
+        "importId": ...,
+        "resourceSpecification": ...,
+        "importedResourceId": ...,
+        "importedResourceName": ...,
+        "mergeStrategy": ...,
+        "importStatus": ...,
+        "failureReasons": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeImportResponseTypeDef(TypedDict):
+    importId: str,
+    resourceSpecification: ImportResourceSpecificationTypeDef,  # (1)
+    importedResourceId: str,
+    importedResourceName: str,
+    mergeStrategy: MergeStrategyType,  # (2)
+    importStatus: ImportStatusType,  # (3)
+    failureReasons: List[str],
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `importId`: `str`
-- `resourceSpecification`:
-  [ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef)
-- `importedResourceId`: `str`
-- `importedResourceName`: `str`
-- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
-- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
-- `failureReasons`: `List`\[`str`\]
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeintentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef) 
+2. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
+3. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeIntentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeIntentRequestRequestTypeDef
+
+def get_value() -> DescribeIntentRequestRequestTypeDef:
+    return {
+        "intentId": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `intentId`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="describeintentresponsetypedef"></a>
+```python title="Definition"
+class DescribeIntentRequestRequestTypeDef(TypedDict):
+    intentId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## DescribeIntentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeIntentResponseTypeDef
+
+def get_value() -> DescribeIntentResponseTypeDef:
+    return {
+        "intentId": ...,
+        "intentName": ...,
+        "description": ...,
+        "parentIntentSignature": ...,
+        "sampleUtterances": ...,
+        "dialogCodeHook": ...,
+        "fulfillmentCodeHook": ...,
+        "slotPriorities": ...,
+        "intentConfirmationSetting": ...,
+        "intentClosingSetting": ...,
+        "inputContexts": ...,
+        "outputContexts": ...,
+        "kendraConfiguration": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeIntentResponseTypeDef(TypedDict):
+    intentId: str,
+    intentName: str,
+    description: str,
+    parentIntentSignature: str,
+    sampleUtterances: List[SampleUtteranceTypeDef],  # (1)
+    dialogCodeHook: DialogCodeHookSettingsTypeDef,  # (2)
+    fulfillmentCodeHook: FulfillmentCodeHookSettingsTypeDef,  # (3)
+    slotPriorities: List[SlotPriorityTypeDef],  # (4)
+    intentConfirmationSetting: IntentConfirmationSettingTypeDef,  # (5)
+    intentClosingSetting: IntentClosingSettingTypeDef,  # (6)
+    inputContexts: List[InputContextTypeDef],  # (7)
+    outputContexts: List[OutputContextTypeDef],  # (8)
+    kendraConfiguration: KendraConfigurationTypeDef,  # (9)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
+```
 
-- `intentId`: `str`
-- `intentName`: `str`
-- `description`: `str`
-- `parentIntentSignature`: `str`
-- `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
-- `dialogCodeHook`:
-  [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
-- `fulfillmentCodeHook`:
-  [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
-- `slotPriorities`:
-  `List`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
-- `intentConfirmationSetting`:
-  [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
-- `intentClosingSetting`:
-  [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
-- `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
-- `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
-- `kendraConfiguration`:
-  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+2. See [:material-code-braces: DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef) 
+3. See [:material-code-braces: FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef) 
+4. See [:material-code-braces: SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef) 
+5. See [:material-code-braces: IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef) 
+6. See [:material-code-braces: IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef) 
+7. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
+8. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
+9. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
+10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DescribeResourcePolicyRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="describeresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class DescribeResourcePolicyRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## DescribeResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeResourcePolicyResponseTypeDef
+
+def get_value() -> DescribeResourcePolicyResponseTypeDef:
+    return {
+        "resourceArn": ...,
+        "policy": ...,
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeResourcePolicyResponseTypeDef(TypedDict):
+    resourceArn: str,
+    policy: str,
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `resourceArn`: `str`
-- `policy`: `str`
-- `revisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeslotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSlotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeSlotRequestRequestTypeDef
+
+def get_value() -> DescribeSlotRequestRequestTypeDef:
+    return {
+        "slotId": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentId": ...,
+    }
 ```
 
-Required fields:
-
-- `slotId`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentId`: `str`
-
-<a id="describeslotresponsetypedef"></a>
+```python title="Definition"
+class DescribeSlotRequestRequestTypeDef(TypedDict):
+    slotId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+```
 
 ## DescribeSlotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeSlotResponseTypeDef
+
+def get_value() -> DescribeSlotResponseTypeDef:
+    return {
+        "slotId": ...,
+        "slotName": ...,
+        "description": ...,
+        "slotTypeId": ...,
+        "valueElicitationSetting": ...,
+        "obfuscationSetting": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentId": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "multipleValuesSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSlotResponseTypeDef(TypedDict):
+    slotId: str,
+    slotName: str,
+    description: str,
+    slotTypeId: str,
+    valueElicitationSetting: SlotValueElicitationSettingTypeDef,  # (1)
+    obfuscationSetting: ObfuscationSettingTypeDef,  # (2)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    multipleValuesSetting: MultipleValuesSettingTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `slotId`: `str`
-- `slotName`: `str`
-- `description`: `str`
-- `slotTypeId`: `str`
-- `valueElicitationSetting`:
-  [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
-- `obfuscationSetting`:
-  [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentId`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `multipleValuesSetting`:
-  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeslottyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
+2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
+3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSlotTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeSlotTypeRequestRequestTypeDef
+
+def get_value() -> DescribeSlotTypeRequestRequestTypeDef:
+    return {
+        "slotTypeId": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `slotTypeId`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-<a id="describeslottyperesponsetypedef"></a>
+```python title="Definition"
+class DescribeSlotTypeRequestRequestTypeDef(TypedDict):
+    slotTypeId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+```
 
 ## DescribeSlotTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DescribeSlotTypeResponseTypeDef
+
+def get_value() -> DescribeSlotTypeResponseTypeDef:
+    return {
+        "slotTypeId": ...,
+        "slotTypeName": ...,
+        "description": ...,
+        "slotTypeValues": ...,
+        "valueSelectionSetting": ...,
+        "parentSlotTypeSignature": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "externalSourceSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSlotTypeResponseTypeDef(TypedDict):
+    slotTypeId: str,
+    slotTypeName: str,
+    description: str,
+    slotTypeValues: List[SlotTypeValueTypeDef],  # (1)
+    valueSelectionSetting: SlotValueSelectionSettingTypeDef,  # (2)
+    parentSlotTypeSignature: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    externalSourceSetting: ExternalSourceSettingTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `slotTypeId`: `str`
-- `slotTypeName`: `str`
-- `description`: `str`
-- `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
-- `parentSlotTypeSignature`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `externalSourceSetting`:
-  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dialogcodehooksettingstypedef"></a>
-
+1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
+2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
+3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DialogCodeHookSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import DialogCodeHookSettingsTypeDef
+
+def get_value() -> DialogCodeHookSettingsTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `enabled`: `bool`
-
-<a id="encryptionsettingtypedef"></a>
+```python title="Definition"
+class DialogCodeHookSettingsTypeDef(TypedDict):
+    enabled: bool,
+```
 
 ## EncryptionSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import EncryptionSettingTypeDef
+
+def get_value() -> EncryptionSettingTypeDef:
+    return {
+        "kmsKeyArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `kmsKeyArn`: `str`
-- `botLocaleExportPassword`: `str`
-- `associatedTranscriptsPassword`: `str`
-
-<a id="exportfiltertypedef"></a>
+```python title="Definition"
+class EncryptionSettingTypeDef(TypedDict):
+    kmsKeyArn: NotRequired[str],
+    botLocaleExportPassword: NotRequired[str],
+    associatedTranscriptsPassword: NotRequired[str],
+```
 
 ## ExportFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ExportFilterTypeDef
+
+def get_value() -> ExportFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportFilterTypeDef(TypedDict):
+    name: ExportFilterNameType,  # (1)
+    values: Sequence[str],
+    operator: ExportFilterOperatorType,  # (2)
+```
 
-- `name`: `Literal['ExportResourceType']` (see
-  [ExportFilterNameType](./literals.md#exportfilternametype))
-- `values`: `Sequence`\[`str`\]
-- `operator`:
-  [ExportFilterOperatorType](./literals.md#exportfilteroperatortype)
-
-<a id="exportresourcespecificationtypedef"></a>
-
+1. See [:material-code-brackets: ExportFilterNameType](./literals.md#exportfilternametype) 
+2. See [:material-code-brackets: ExportFilterOperatorType](./literals.md#exportfilteroperatortype) 
 ## ExportResourceSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ExportResourceSpecificationTypeDef
+
+def get_value() -> ExportResourceSpecificationTypeDef:
+    return {
+        "botExportSpecification": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExportResourceSpecificationTypeDef(TypedDict):
+    botExportSpecification: NotRequired[BotExportSpecificationTypeDef],  # (1)
+    botLocaleExportSpecification: NotRequired[BotLocaleExportSpecificationTypeDef],  # (2)
+    customVocabularyExportSpecification: NotRequired[CustomVocabularyExportSpecificationTypeDef],  # (3)
+```
 
-- `botExportSpecification`:
-  [BotExportSpecificationTypeDef](./type_defs.md#botexportspecificationtypedef)
-- `botLocaleExportSpecification`:
-  [BotLocaleExportSpecificationTypeDef](./type_defs.md#botlocaleexportspecificationtypedef)
-- `customVocabularyExportSpecification`:
-  [CustomVocabularyExportSpecificationTypeDef](./type_defs.md#customvocabularyexportspecificationtypedef)
-
-<a id="exportsortbytypedef"></a>
-
+1. See [:material-code-braces: BotExportSpecificationTypeDef](./type_defs.md#botexportspecificationtypedef) 
+2. See [:material-code-braces: BotLocaleExportSpecificationTypeDef](./type_defs.md#botlocaleexportspecificationtypedef) 
+3. See [:material-code-braces: CustomVocabularyExportSpecificationTypeDef](./type_defs.md#customvocabularyexportspecificationtypedef) 
 ## ExportSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ExportSortByTypeDef
+
+def get_value() -> ExportSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportSortByTypeDef(TypedDict):
+    attribute: ExportSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`: `Literal['LastUpdatedDateTime']` (see
-  [ExportSortAttributeType](./literals.md#exportsortattributetype))
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="exportsummarytypedef"></a>
-
+1. See [:material-code-brackets: ExportSortAttributeType](./literals.md#exportsortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ExportSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ExportSummaryTypeDef
+
+def get_value() -> ExportSummaryTypeDef:
+    return {
+        "exportId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExportSummaryTypeDef(TypedDict):
+    exportId: NotRequired[str],
+    resourceSpecification: NotRequired[ExportResourceSpecificationTypeDef],  # (1)
+    fileFormat: NotRequired[ImportExportFileFormatType],  # (2)
+    exportStatus: NotRequired[ExportStatusType],  # (3)
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `exportId`: `str`
-- `resourceSpecification`:
-  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`:
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
-- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="externalsourcesettingtypedef"></a>
-
+1. See [:material-code-braces: ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef) 
+2. See [:material-code-brackets: ImportExportFileFormatType](./literals.md#importexportfileformattype) 
+3. See [:material-code-brackets: ExportStatusType](./literals.md#exportstatustype) 
 ## ExternalSourceSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ExternalSourceSettingTypeDef
+
+def get_value() -> ExternalSourceSettingTypeDef:
+    return {
+        "grammarSlotTypeSetting": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExternalSourceSettingTypeDef(TypedDict):
+    grammarSlotTypeSetting: NotRequired[GrammarSlotTypeSettingTypeDef],  # (1)
+```
 
-- `grammarSlotTypeSetting`:
-  [GrammarSlotTypeSettingTypeDef](./type_defs.md#grammarslottypesettingtypedef)
-
-<a id="fulfillmentcodehooksettingstypedef"></a>
-
+1. See [:material-code-braces: GrammarSlotTypeSettingTypeDef](./type_defs.md#grammarslottypesettingtypedef) 
 ## FulfillmentCodeHookSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import FulfillmentCodeHookSettingsTypeDef
+
+def get_value() -> FulfillmentCodeHookSettingsTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FulfillmentCodeHookSettingsTypeDef(TypedDict):
+    enabled: bool,
+    postFulfillmentStatusSpecification: NotRequired[PostFulfillmentStatusSpecificationTypeDef],  # (1)
+    fulfillmentUpdatesSpecification: NotRequired[FulfillmentUpdatesSpecificationTypeDef],  # (2)
+```
 
-- `enabled`: `bool`
-
-Optional fields:
-
-- `postFulfillmentStatusSpecification`:
-  [PostFulfillmentStatusSpecificationTypeDef](./type_defs.md#postfulfillmentstatusspecificationtypedef)
-- `fulfillmentUpdatesSpecification`:
-  [FulfillmentUpdatesSpecificationTypeDef](./type_defs.md#fulfillmentupdatesspecificationtypedef)
-
-<a id="fulfillmentstartresponsespecificationtypedef"></a>
-
+1. See [:material-code-braces: PostFulfillmentStatusSpecificationTypeDef](./type_defs.md#postfulfillmentstatusspecificationtypedef) 
+2. See [:material-code-braces: FulfillmentUpdatesSpecificationTypeDef](./type_defs.md#fulfillmentupdatesspecificationtypedef) 
 ## FulfillmentStartResponseSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import FulfillmentStartResponseSpecificationTypeDef
+
+def get_value() -> FulfillmentStartResponseSpecificationTypeDef:
+    return {
+        "delayInSeconds": ...,
+        "messageGroups": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FulfillmentStartResponseSpecificationTypeDef(TypedDict):
+    delayInSeconds: int,
+    messageGroups: Sequence[MessageGroupTypeDef],  # (1)
+    allowInterrupt: NotRequired[bool],
+```
 
-- `delayInSeconds`: `int`
-- `messageGroups`:
-  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
-
-Optional fields:
-
-- `allowInterrupt`: `bool`
-
-<a id="fulfillmentupdateresponsespecificationtypedef"></a>
-
+1. See [:material-code-braces: MessageGroupTypeDef](./type_defs.md#messagegrouptypedef) 
 ## FulfillmentUpdateResponseSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import FulfillmentUpdateResponseSpecificationTypeDef
+
+def get_value() -> FulfillmentUpdateResponseSpecificationTypeDef:
+    return {
+        "frequencyInSeconds": ...,
+        "messageGroups": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FulfillmentUpdateResponseSpecificationTypeDef(TypedDict):
+    frequencyInSeconds: int,
+    messageGroups: Sequence[MessageGroupTypeDef],  # (1)
+    allowInterrupt: NotRequired[bool],
+```
 
-- `frequencyInSeconds`: `int`
-- `messageGroups`:
-  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
-
-Optional fields:
-
-- `allowInterrupt`: `bool`
-
-<a id="fulfillmentupdatesspecificationtypedef"></a>
-
+1. See [:material-code-braces: MessageGroupTypeDef](./type_defs.md#messagegrouptypedef) 
 ## FulfillmentUpdatesSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import FulfillmentUpdatesSpecificationTypeDef
+
+def get_value() -> FulfillmentUpdatesSpecificationTypeDef:
+    return {
+        "active": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FulfillmentUpdatesSpecificationTypeDef(TypedDict):
+    active: bool,
+    startResponse: NotRequired[FulfillmentStartResponseSpecificationTypeDef],  # (1)
+    updateResponse: NotRequired[FulfillmentUpdateResponseSpecificationTypeDef],  # (2)
+    timeoutInSeconds: NotRequired[int],
+```
 
-- `active`: `bool`
-
-Optional fields:
-
-- `startResponse`:
-  [FulfillmentStartResponseSpecificationTypeDef](./type_defs.md#fulfillmentstartresponsespecificationtypedef)
-- `updateResponse`:
-  [FulfillmentUpdateResponseSpecificationTypeDef](./type_defs.md#fulfillmentupdateresponsespecificationtypedef)
-- `timeoutInSeconds`: `int`
-
-<a id="grammarslottypesettingtypedef"></a>
-
+1. See [:material-code-braces: FulfillmentStartResponseSpecificationTypeDef](./type_defs.md#fulfillmentstartresponsespecificationtypedef) 
+2. See [:material-code-braces: FulfillmentUpdateResponseSpecificationTypeDef](./type_defs.md#fulfillmentupdateresponsespecificationtypedef) 
 ## GrammarSlotTypeSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import GrammarSlotTypeSettingTypeDef
+
+def get_value() -> GrammarSlotTypeSettingTypeDef:
+    return {
+        "source": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GrammarSlotTypeSettingTypeDef(TypedDict):
+    source: NotRequired[GrammarSlotTypeSourceTypeDef],  # (1)
+```
 
-- `source`:
-  [GrammarSlotTypeSourceTypeDef](./type_defs.md#grammarslottypesourcetypedef)
-
-<a id="grammarslottypesourcetypedef"></a>
-
+1. See [:material-code-braces: GrammarSlotTypeSourceTypeDef](./type_defs.md#grammarslottypesourcetypedef) 
 ## GrammarSlotTypeSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import GrammarSlotTypeSourceTypeDef
+
+def get_value() -> GrammarSlotTypeSourceTypeDef:
+    return {
+        "s3BucketName": ...,
+        "s3ObjectKey": ...,
+    }
 ```
 
-Required fields:
-
-- `s3BucketName`: `str`
-- `s3ObjectKey`: `str`
-
-Optional fields:
-
-- `kmsKeyArn`: `str`
-
-<a id="imageresponsecardtypedef"></a>
+```python title="Definition"
+class GrammarSlotTypeSourceTypeDef(TypedDict):
+    s3BucketName: str,
+    s3ObjectKey: str,
+    kmsKeyArn: NotRequired[str],
+```
 
 ## ImageResponseCardTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ImageResponseCardTypeDef
+
+def get_value() -> ImageResponseCardTypeDef:
+    return {
+        "title": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImageResponseCardTypeDef(TypedDict):
+    title: str,
+    subtitle: NotRequired[str],
+    imageUrl: NotRequired[str],
+    buttons: NotRequired[Sequence[ButtonTypeDef]],  # (1)
+```
 
-- `title`: `str`
-
-Optional fields:
-
-- `subtitle`: `str`
-- `imageUrl`: `str`
-- `buttons`: `Sequence`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
-
-<a id="importfiltertypedef"></a>
-
+1. See [:material-code-braces: ButtonTypeDef](./type_defs.md#buttontypedef) 
 ## ImportFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ImportFilterTypeDef
+
+def get_value() -> ImportFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportFilterTypeDef(TypedDict):
+    name: ImportFilterNameType,  # (1)
+    values: Sequence[str],
+    operator: ImportFilterOperatorType,  # (2)
+```
 
-- `name`: `Literal['ImportResourceType']` (see
-  [ImportFilterNameType](./literals.md#importfilternametype))
-- `values`: `Sequence`\[`str`\]
-- `operator`:
-  [ImportFilterOperatorType](./literals.md#importfilteroperatortype)
-
-<a id="importresourcespecificationtypedef"></a>
-
+1. See [:material-code-brackets: ImportFilterNameType](./literals.md#importfilternametype) 
+2. See [:material-code-brackets: ImportFilterOperatorType](./literals.md#importfilteroperatortype) 
 ## ImportResourceSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ImportResourceSpecificationTypeDef
+
+def get_value() -> ImportResourceSpecificationTypeDef:
+    return {
+        "botImportSpecification": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImportResourceSpecificationTypeDef(TypedDict):
+    botImportSpecification: NotRequired[BotImportSpecificationTypeDef],  # (1)
+    botLocaleImportSpecification: NotRequired[BotLocaleImportSpecificationTypeDef],  # (2)
+    customVocabularyImportSpecification: NotRequired[CustomVocabularyImportSpecificationTypeDef],  # (3)
+```
 
-- `botImportSpecification`:
-  [BotImportSpecificationTypeDef](./type_defs.md#botimportspecificationtypedef)
-- `botLocaleImportSpecification`:
-  [BotLocaleImportSpecificationTypeDef](./type_defs.md#botlocaleimportspecificationtypedef)
-- `customVocabularyImportSpecification`:
-  [CustomVocabularyImportSpecificationTypeDef](./type_defs.md#customvocabularyimportspecificationtypedef)
-
-<a id="importsortbytypedef"></a>
-
+1. See [:material-code-braces: BotImportSpecificationTypeDef](./type_defs.md#botimportspecificationtypedef) 
+2. See [:material-code-braces: BotLocaleImportSpecificationTypeDef](./type_defs.md#botlocaleimportspecificationtypedef) 
+3. See [:material-code-braces: CustomVocabularyImportSpecificationTypeDef](./type_defs.md#customvocabularyimportspecificationtypedef) 
 ## ImportSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ImportSortByTypeDef
+
+def get_value() -> ImportSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportSortByTypeDef(TypedDict):
+    attribute: ImportSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`: `Literal['LastUpdatedDateTime']` (see
-  [ImportSortAttributeType](./literals.md#importsortattributetype))
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="importsummarytypedef"></a>
-
+1. See [:material-code-brackets: ImportSortAttributeType](./literals.md#importsortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ImportSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ImportSummaryTypeDef
+
+def get_value() -> ImportSummaryTypeDef:
+    return {
+        "importId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImportSummaryTypeDef(TypedDict):
+    importId: NotRequired[str],
+    importedResourceId: NotRequired[str],
+    importedResourceName: NotRequired[str],
+    importStatus: NotRequired[ImportStatusType],  # (1)
+    mergeStrategy: NotRequired[MergeStrategyType],  # (2)
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    importedResourceType: NotRequired[ImportResourceTypeType],  # (3)
+```
 
-- `importId`: `str`
-- `importedResourceId`: `str`
-- `importedResourceName`: `str`
-- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
-- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `importedResourceType`:
-  [ImportResourceTypeType](./literals.md#importresourcetypetype)
-
-<a id="inputcontexttypedef"></a>
-
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+2. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
+3. See [:material-code-brackets: ImportResourceTypeType](./literals.md#importresourcetypetype) 
 ## InputContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import InputContextTypeDef
+
+def get_value() -> InputContextTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="intentclosingsettingtypedef"></a>
+```python title="Definition"
+class InputContextTypeDef(TypedDict):
+    name: str,
+```
 
 ## IntentClosingSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import IntentClosingSettingTypeDef
+
+def get_value() -> IntentClosingSettingTypeDef:
+    return {
+        "closingResponse": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IntentClosingSettingTypeDef(TypedDict):
+    closingResponse: ResponseSpecificationTypeDef,  # (1)
+    active: NotRequired[bool],
+```
 
-- `closingResponse`:
-  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
-
-Optional fields:
-
-- `active`: `bool`
-
-<a id="intentconfirmationsettingtypedef"></a>
-
+1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
 ## IntentConfirmationSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import IntentConfirmationSettingTypeDef
+
+def get_value() -> IntentConfirmationSettingTypeDef:
+    return {
+        "promptSpecification": ...,
+        "declinationResponse": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IntentConfirmationSettingTypeDef(TypedDict):
+    promptSpecification: PromptSpecificationTypeDef,  # (1)
+    declinationResponse: ResponseSpecificationTypeDef,  # (2)
+    active: NotRequired[bool],
+```
 
-- `promptSpecification`:
-  [PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef)
-- `declinationResponse`:
-  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
-
-Optional fields:
-
-- `active`: `bool`
-
-<a id="intentfiltertypedef"></a>
-
+1. See [:material-code-braces: PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef) 
+2. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
 ## IntentFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import IntentFilterTypeDef
+
+def get_value() -> IntentFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IntentFilterTypeDef(TypedDict):
+    name: IntentFilterNameType,  # (1)
+    values: Sequence[str],
+    operator: IntentFilterOperatorType,  # (2)
+```
 
-- `name`: `Literal['IntentName']` (see
-  [IntentFilterNameType](./literals.md#intentfilternametype))
-- `values`: `Sequence`\[`str`\]
-- `operator`:
-  [IntentFilterOperatorType](./literals.md#intentfilteroperatortype)
-
-<a id="intentsortbytypedef"></a>
-
+1. See [:material-code-brackets: IntentFilterNameType](./literals.md#intentfilternametype) 
+2. See [:material-code-brackets: IntentFilterOperatorType](./literals.md#intentfilteroperatortype) 
 ## IntentSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import IntentSortByTypeDef
+
+def get_value() -> IntentSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IntentSortByTypeDef(TypedDict):
+    attribute: IntentSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`: [IntentSortAttributeType](./literals.md#intentsortattributetype)
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="intentstatisticstypedef"></a>
-
+1. See [:material-code-brackets: IntentSortAttributeType](./literals.md#intentsortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## IntentStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import IntentStatisticsTypeDef
+
+def get_value() -> IntentStatisticsTypeDef:
+    return {
+        "discoveredIntentCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `discoveredIntentCount`: `int`
-
-<a id="intentsummarytypedef"></a>
+```python title="Definition"
+class IntentStatisticsTypeDef(TypedDict):
+    discoveredIntentCount: NotRequired[int],
+```
 
 ## IntentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import IntentSummaryTypeDef
+
+def get_value() -> IntentSummaryTypeDef:
+    return {
+        "intentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IntentSummaryTypeDef(TypedDict):
+    intentId: NotRequired[str],
+    intentName: NotRequired[str],
+    description: NotRequired[str],
+    parentIntentSignature: NotRequired[str],
+    inputContexts: NotRequired[List[InputContextTypeDef]],  # (1)
+    outputContexts: NotRequired[List[OutputContextTypeDef]],  # (2)
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `intentId`: `str`
-- `intentName`: `str`
-- `description`: `str`
-- `parentIntentSignature`: `str`
-- `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
-- `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="kendraconfigurationtypedef"></a>
-
+1. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
+2. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
 ## KendraConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import KendraConfigurationTypeDef
+
+def get_value() -> KendraConfigurationTypeDef:
+    return {
+        "kendraIndex": ...,
+    }
 ```
 
-Required fields:
-
-- `kendraIndex`: `str`
-
-Optional fields:
-
-- `queryFilterStringEnabled`: `bool`
-- `queryFilterString`: `str`
-
-<a id="lambdacodehooktypedef"></a>
+```python title="Definition"
+class KendraConfigurationTypeDef(TypedDict):
+    kendraIndex: str,
+    queryFilterStringEnabled: NotRequired[bool],
+    queryFilterString: NotRequired[str],
+```
 
 ## LambdaCodeHookTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import LambdaCodeHookTypeDef
+
+def get_value() -> LambdaCodeHookTypeDef:
+    return {
+        "lambdaARN": ...,
+        "codeHookInterfaceVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `lambdaARN`: `str`
-- `codeHookInterfaceVersion`: `str`
-
-<a id="lextranscriptfiltertypedef"></a>
+```python title="Definition"
+class LambdaCodeHookTypeDef(TypedDict):
+    lambdaARN: str,
+    codeHookInterfaceVersion: str,
+```
 
 ## LexTranscriptFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import LexTranscriptFilterTypeDef
+
+def get_value() -> LexTranscriptFilterTypeDef:
+    return {
+        "dateRangeFilter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LexTranscriptFilterTypeDef(TypedDict):
+    dateRangeFilter: NotRequired[DateRangeFilterTypeDef],  # (1)
+```
 
-- `dateRangeFilter`:
-  [DateRangeFilterTypeDef](./type_defs.md#daterangefiltertypedef)
-
-<a id="listaggregatedutterancesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DateRangeFilterTypeDef](./type_defs.md#daterangefiltertypedef) 
 ## ListAggregatedUtterancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListAggregatedUtterancesRequestRequestTypeDef
+
+def get_value() -> ListAggregatedUtterancesRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "localeId": ...,
+        "aggregationDuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAggregatedUtterancesRequestRequestTypeDef(TypedDict):
+    botId: str,
+    localeId: str,
+    aggregationDuration: UtteranceAggregationDurationTypeDef,  # (1)
+    botAliasId: NotRequired[str],
+    botVersion: NotRequired[str],
+    sortBy: NotRequired[AggregatedUtterancesSortByTypeDef],  # (2)
+    filters: NotRequired[Sequence[AggregatedUtterancesFilterTypeDef]],  # (3)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `botId`: `str`
-- `localeId`: `str`
-- `aggregationDuration`:
-  [UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef)
-
-Optional fields:
-
-- `botAliasId`: `str`
-- `botVersion`: `str`
-- `sortBy`:
-  [AggregatedUtterancesSortByTypeDef](./type_defs.md#aggregatedutterancessortbytypedef)
-- `filters`:
-  `Sequence`\[[AggregatedUtterancesFilterTypeDef](./type_defs.md#aggregatedutterancesfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listaggregatedutterancesresponsetypedef"></a>
-
+1. See [:material-code-braces: UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef) 
+2. See [:material-code-braces: AggregatedUtterancesSortByTypeDef](./type_defs.md#aggregatedutterancessortbytypedef) 
+3. See [:material-code-braces: AggregatedUtterancesFilterTypeDef](./type_defs.md#aggregatedutterancesfiltertypedef) 
 ## ListAggregatedUtterancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListAggregatedUtterancesResponseTypeDef
+
+def get_value() -> ListAggregatedUtterancesResponseTypeDef:
+    return {
+        "botId": ...,
+        "botAliasId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "aggregationDuration": ...,
+        "aggregationWindowStartTime": ...,
+        "aggregationWindowEndTime": ...,
+        "aggregationLastRefreshedDateTime": ...,
+        "aggregatedUtterancesSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAggregatedUtterancesResponseTypeDef(TypedDict):
+    botId: str,
+    botAliasId: str,
+    botVersion: str,
+    localeId: str,
+    aggregationDuration: UtteranceAggregationDurationTypeDef,  # (1)
+    aggregationWindowStartTime: datetime,
+    aggregationWindowEndTime: datetime,
+    aggregationLastRefreshedDateTime: datetime,
+    aggregatedUtterancesSummaries: List[AggregatedUtterancesSummaryTypeDef],  # (2)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `botId`: `str`
-- `botAliasId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `aggregationDuration`:
-  [UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef)
-- `aggregationWindowStartTime`: `datetime`
-- `aggregationWindowEndTime`: `datetime`
-- `aggregationLastRefreshedDateTime`: `datetime`
-- `aggregatedUtterancesSummaries`:
-  `List`\[[AggregatedUtterancesSummaryTypeDef](./type_defs.md#aggregatedutterancessummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbotaliasesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef) 
+2. See [:material-code-braces: AggregatedUtterancesSummaryTypeDef](./type_defs.md#aggregatedutterancessummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBotAliasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotAliasesRequestRequestTypeDef
+
+def get_value() -> ListBotAliasesRequestRequestTypeDef:
+    return {
+        "botId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listbotaliasesresponsetypedef"></a>
+```python title="Definition"
+class ListBotAliasesRequestRequestTypeDef(TypedDict):
+    botId: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListBotAliasesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotAliasesResponseTypeDef
+
+def get_value() -> ListBotAliasesResponseTypeDef:
+    return {
+        "botAliasSummaries": ...,
+        "nextToken": ...,
+        "botId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBotAliasesResponseTypeDef(TypedDict):
+    botAliasSummaries: List[BotAliasSummaryTypeDef],  # (1)
+    nextToken: str,
+    botId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botAliasSummaries`:
-  `List`\[[BotAliasSummaryTypeDef](./type_defs.md#botaliassummarytypedef)\]
-- `nextToken`: `str`
-- `botId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbotlocalesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BotAliasSummaryTypeDef](./type_defs.md#botaliassummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBotLocalesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotLocalesRequestRequestTypeDef
+
+def get_value() -> ListBotLocalesRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBotLocalesRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    sortBy: NotRequired[BotLocaleSortByTypeDef],  # (1)
+    filters: NotRequired[Sequence[BotLocaleFilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-
-Optional fields:
-
-- `sortBy`: [BotLocaleSortByTypeDef](./type_defs.md#botlocalesortbytypedef)
-- `filters`:
-  `Sequence`\[[BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listbotlocalesresponsetypedef"></a>
-
+1. See [:material-code-braces: BotLocaleSortByTypeDef](./type_defs.md#botlocalesortbytypedef) 
+2. See [:material-code-braces: BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef) 
 ## ListBotLocalesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotLocalesResponseTypeDef
+
+def get_value() -> ListBotLocalesResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "nextToken": ...,
+        "botLocaleSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBotLocalesResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    nextToken: str,
+    botLocaleSummaries: List[BotLocaleSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `nextToken`: `str`
-- `botLocaleSummaries`:
-  `List`\[[BotLocaleSummaryTypeDef](./type_defs.md#botlocalesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbotrecommendationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BotLocaleSummaryTypeDef](./type_defs.md#botlocalesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBotRecommendationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotRecommendationsRequestRequestTypeDef
+
+def get_value() -> ListBotRecommendationsRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listbotrecommendationsresponsetypedef"></a>
+```python title="Definition"
+class ListBotRecommendationsRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListBotRecommendationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotRecommendationsResponseTypeDef
+
+def get_value() -> ListBotRecommendationsResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBotRecommendationsResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationSummaries: List[BotRecommendationSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationSummaries`:
-  `List`\[[BotRecommendationSummaryTypeDef](./type_defs.md#botrecommendationsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbotversionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BotRecommendationSummaryTypeDef](./type_defs.md#botrecommendationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBotVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotVersionsRequestRequestTypeDef
+
+def get_value() -> ListBotVersionsRequestRequestTypeDef:
+    return {
+        "botId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBotVersionsRequestRequestTypeDef(TypedDict):
+    botId: str,
+    sortBy: NotRequired[BotVersionSortByTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `botId`: `str`
-
-Optional fields:
-
-- `sortBy`: [BotVersionSortByTypeDef](./type_defs.md#botversionsortbytypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listbotversionsresponsetypedef"></a>
-
+1. See [:material-code-braces: BotVersionSortByTypeDef](./type_defs.md#botversionsortbytypedef) 
 ## ListBotVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotVersionsResponseTypeDef
+
+def get_value() -> ListBotVersionsResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersionSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBotVersionsResponseTypeDef(TypedDict):
+    botId: str,
+    botVersionSummaries: List[BotVersionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersionSummaries`:
-  `List`\[[BotVersionSummaryTypeDef](./type_defs.md#botversionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbotsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BotVersionSummaryTypeDef](./type_defs.md#botversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotsRequestRequestTypeDef
+
+def get_value() -> ListBotsRequestRequestTypeDef:
+    return {
+        "sortBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListBotsRequestRequestTypeDef(TypedDict):
+    sortBy: NotRequired[BotSortByTypeDef],  # (1)
+    filters: NotRequired[Sequence[BotFilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `sortBy`: [BotSortByTypeDef](./type_defs.md#botsortbytypedef)
-- `filters`: `Sequence`\[[BotFilterTypeDef](./type_defs.md#botfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listbotsresponsetypedef"></a>
-
+1. See [:material-code-braces: BotSortByTypeDef](./type_defs.md#botsortbytypedef) 
+2. See [:material-code-braces: BotFilterTypeDef](./type_defs.md#botfiltertypedef) 
 ## ListBotsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBotsResponseTypeDef
+
+def get_value() -> ListBotsResponseTypeDef:
+    return {
+        "botSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBotsResponseTypeDef(TypedDict):
+    botSummaries: List[BotSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botSummaries`:
-  `List`\[[BotSummaryTypeDef](./type_defs.md#botsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbuiltinintentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BotSummaryTypeDef](./type_defs.md#botsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBuiltInIntentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBuiltInIntentsRequestRequestTypeDef
+
+def get_value() -> ListBuiltInIntentsRequestRequestTypeDef:
+    return {
+        "localeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBuiltInIntentsRequestRequestTypeDef(TypedDict):
+    localeId: str,
+    sortBy: NotRequired[BuiltInIntentSortByTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `localeId`: `str`
-
-Optional fields:
-
-- `sortBy`:
-  [BuiltInIntentSortByTypeDef](./type_defs.md#builtinintentsortbytypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listbuiltinintentsresponsetypedef"></a>
-
+1. See [:material-code-braces: BuiltInIntentSortByTypeDef](./type_defs.md#builtinintentsortbytypedef) 
 ## ListBuiltInIntentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBuiltInIntentsResponseTypeDef
+
+def get_value() -> ListBuiltInIntentsResponseTypeDef:
+    return {
+        "builtInIntentSummaries": ...,
+        "nextToken": ...,
+        "localeId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBuiltInIntentsResponseTypeDef(TypedDict):
+    builtInIntentSummaries: List[BuiltInIntentSummaryTypeDef],  # (1)
+    nextToken: str,
+    localeId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `builtInIntentSummaries`:
-  `List`\[[BuiltInIntentSummaryTypeDef](./type_defs.md#builtinintentsummarytypedef)\]
-- `nextToken`: `str`
-- `localeId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbuiltinslottypesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BuiltInIntentSummaryTypeDef](./type_defs.md#builtinintentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBuiltInSlotTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBuiltInSlotTypesRequestRequestTypeDef
+
+def get_value() -> ListBuiltInSlotTypesRequestRequestTypeDef:
+    return {
+        "localeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBuiltInSlotTypesRequestRequestTypeDef(TypedDict):
+    localeId: str,
+    sortBy: NotRequired[BuiltInSlotTypeSortByTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `localeId`: `str`
-
-Optional fields:
-
-- `sortBy`:
-  [BuiltInSlotTypeSortByTypeDef](./type_defs.md#builtinslottypesortbytypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listbuiltinslottypesresponsetypedef"></a>
-
+1. See [:material-code-braces: BuiltInSlotTypeSortByTypeDef](./type_defs.md#builtinslottypesortbytypedef) 
 ## ListBuiltInSlotTypesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListBuiltInSlotTypesResponseTypeDef
+
+def get_value() -> ListBuiltInSlotTypesResponseTypeDef:
+    return {
+        "builtInSlotTypeSummaries": ...,
+        "nextToken": ...,
+        "localeId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBuiltInSlotTypesResponseTypeDef(TypedDict):
+    builtInSlotTypeSummaries: List[BuiltInSlotTypeSummaryTypeDef],  # (1)
+    nextToken: str,
+    localeId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `builtInSlotTypeSummaries`:
-  `List`\[[BuiltInSlotTypeSummaryTypeDef](./type_defs.md#builtinslottypesummarytypedef)\]
-- `nextToken`: `str`
-- `localeId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listexportsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BuiltInSlotTypeSummaryTypeDef](./type_defs.md#builtinslottypesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListExportsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListExportsRequestRequestTypeDef
+
+def get_value() -> ListExportsRequestRequestTypeDef:
+    return {
+        "botId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListExportsRequestRequestTypeDef(TypedDict):
+    botId: NotRequired[str],
+    botVersion: NotRequired[str],
+    sortBy: NotRequired[ExportSortByTypeDef],  # (1)
+    filters: NotRequired[Sequence[ExportFilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    localeId: NotRequired[str],
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `sortBy`: [ExportSortByTypeDef](./type_defs.md#exportsortbytypedef)
-- `filters`:
-  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `localeId`: `str`
-
-<a id="listexportsresponsetypedef"></a>
-
+1. See [:material-code-braces: ExportSortByTypeDef](./type_defs.md#exportsortbytypedef) 
+2. See [:material-code-braces: ExportFilterTypeDef](./type_defs.md#exportfiltertypedef) 
 ## ListExportsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListExportsResponseTypeDef
+
+def get_value() -> ListExportsResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "exportSummaries": ...,
+        "nextToken": ...,
+        "localeId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExportsResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    exportSummaries: List[ExportSummaryTypeDef],  # (1)
+    nextToken: str,
+    localeId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `exportSummaries`:
-  `List`\[[ExportSummaryTypeDef](./type_defs.md#exportsummarytypedef)\]
-- `nextToken`: `str`
-- `localeId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listimportsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExportSummaryTypeDef](./type_defs.md#exportsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListImportsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListImportsRequestRequestTypeDef
+
+def get_value() -> ListImportsRequestRequestTypeDef:
+    return {
+        "botId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListImportsRequestRequestTypeDef(TypedDict):
+    botId: NotRequired[str],
+    botVersion: NotRequired[str],
+    sortBy: NotRequired[ImportSortByTypeDef],  # (1)
+    filters: NotRequired[Sequence[ImportFilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    localeId: NotRequired[str],
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `sortBy`: [ImportSortByTypeDef](./type_defs.md#importsortbytypedef)
-- `filters`:
-  `Sequence`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `localeId`: `str`
-
-<a id="listimportsresponsetypedef"></a>
-
+1. See [:material-code-braces: ImportSortByTypeDef](./type_defs.md#importsortbytypedef) 
+2. See [:material-code-braces: ImportFilterTypeDef](./type_defs.md#importfiltertypedef) 
 ## ListImportsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListImportsResponseTypeDef
+
+def get_value() -> ListImportsResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "importSummaries": ...,
+        "nextToken": ...,
+        "localeId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListImportsResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    importSummaries: List[ImportSummaryTypeDef],  # (1)
+    nextToken: str,
+    localeId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `importSummaries`:
-  `List`\[[ImportSummaryTypeDef](./type_defs.md#importsummarytypedef)\]
-- `nextToken`: `str`
-- `localeId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listintentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ImportSummaryTypeDef](./type_defs.md#importsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListIntentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListIntentsRequestRequestTypeDef
+
+def get_value() -> ListIntentsRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIntentsRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    sortBy: NotRequired[IntentSortByTypeDef],  # (1)
+    filters: NotRequired[Sequence[IntentFilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-Optional fields:
-
-- `sortBy`: [IntentSortByTypeDef](./type_defs.md#intentsortbytypedef)
-- `filters`:
-  `Sequence`\[[IntentFilterTypeDef](./type_defs.md#intentfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listintentsresponsetypedef"></a>
-
+1. See [:material-code-braces: IntentSortByTypeDef](./type_defs.md#intentsortbytypedef) 
+2. See [:material-code-braces: IntentFilterTypeDef](./type_defs.md#intentfiltertypedef) 
 ## ListIntentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListIntentsResponseTypeDef
+
+def get_value() -> ListIntentsResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIntentsResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentSummaries: List[IntentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentSummaries`:
-  `List`\[[IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listrecommendedintentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IntentSummaryTypeDef](./type_defs.md#intentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRecommendedIntentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListRecommendedIntentsRequestRequestTypeDef
+
+def get_value() -> ListRecommendedIntentsRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listrecommendedintentsresponsetypedef"></a>
+```python title="Definition"
+class ListRecommendedIntentsRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListRecommendedIntentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListRecommendedIntentsResponseTypeDef
+
+def get_value() -> ListRecommendedIntentsResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationId": ...,
+        "summaryList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRecommendedIntentsResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+    summaryList: List[RecommendedIntentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationId`: `str`
-- `summaryList`:
-  `List`\[[RecommendedIntentSummaryTypeDef](./type_defs.md#recommendedintentsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listslottypesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RecommendedIntentSummaryTypeDef](./type_defs.md#recommendedintentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSlotTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListSlotTypesRequestRequestTypeDef
+
+def get_value() -> ListSlotTypesRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSlotTypesRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    sortBy: NotRequired[SlotTypeSortByTypeDef],  # (1)
+    filters: NotRequired[Sequence[SlotTypeFilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-Optional fields:
-
-- `sortBy`: [SlotTypeSortByTypeDef](./type_defs.md#slottypesortbytypedef)
-- `filters`:
-  `Sequence`\[[SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listslottypesresponsetypedef"></a>
-
+1. See [:material-code-braces: SlotTypeSortByTypeDef](./type_defs.md#slottypesortbytypedef) 
+2. See [:material-code-braces: SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef) 
 ## ListSlotTypesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListSlotTypesResponseTypeDef
+
+def get_value() -> ListSlotTypesResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "slotTypeSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSlotTypesResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    slotTypeSummaries: List[SlotTypeSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `slotTypeSummaries`:
-  `List`\[[SlotTypeSummaryTypeDef](./type_defs.md#slottypesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listslotsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SlotTypeSummaryTypeDef](./type_defs.md#slottypesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSlotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListSlotsRequestRequestTypeDef
+
+def get_value() -> ListSlotsRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSlotsRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    sortBy: NotRequired[SlotSortByTypeDef],  # (1)
+    filters: NotRequired[Sequence[SlotFilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentId`: `str`
-
-Optional fields:
-
-- `sortBy`: [SlotSortByTypeDef](./type_defs.md#slotsortbytypedef)
-- `filters`:
-  `Sequence`\[[SlotFilterTypeDef](./type_defs.md#slotfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listslotsresponsetypedef"></a>
-
+1. See [:material-code-braces: SlotSortByTypeDef](./type_defs.md#slotsortbytypedef) 
+2. See [:material-code-braces: SlotFilterTypeDef](./type_defs.md#slotfiltertypedef) 
 ## ListSlotsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListSlotsResponseTypeDef
+
+def get_value() -> ListSlotsResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentId": ...,
+        "slotSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSlotsResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    slotSummaries: List[SlotSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentId`: `str`
-- `slotSummaries`:
-  `List`\[[SlotSummaryTypeDef](./type_defs.md#slotsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SlotSummaryTypeDef](./type_defs.md#slotsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceARN`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceARN: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="messagegrouptypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MessageGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import MessageGroupTypeDef
+
+def get_value() -> MessageGroupTypeDef:
+    return {
+        "message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MessageGroupTypeDef(TypedDict):
+    message: MessageTypeDef,  # (1)
+    variations: NotRequired[Sequence[MessageTypeDef]],  # (2)
+```
 
-- `message`: [MessageTypeDef](./type_defs.md#messagetypedef)
-
-Optional fields:
-
-- `variations`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
-
-<a id="messagetypedef"></a>
-
+1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+2. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
 ## MessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import MessageTypeDef
+
+def get_value() -> MessageTypeDef:
+    return {
+        "plainTextMessage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MessageTypeDef(TypedDict):
+    plainTextMessage: NotRequired[PlainTextMessageTypeDef],  # (1)
+    customPayload: NotRequired[CustomPayloadTypeDef],  # (2)
+    ssmlMessage: NotRequired[SSMLMessageTypeDef],  # (3)
+    imageResponseCard: NotRequired[ImageResponseCardTypeDef],  # (4)
+```
 
-- `plainTextMessage`:
-  [PlainTextMessageTypeDef](./type_defs.md#plaintextmessagetypedef)
-- `customPayload`: [CustomPayloadTypeDef](./type_defs.md#custompayloadtypedef)
-- `ssmlMessage`: [SSMLMessageTypeDef](./type_defs.md#ssmlmessagetypedef)
-- `imageResponseCard`:
-  [ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef)
-
-<a id="multiplevaluessettingtypedef"></a>
-
+1. See [:material-code-braces: PlainTextMessageTypeDef](./type_defs.md#plaintextmessagetypedef) 
+2. See [:material-code-braces: CustomPayloadTypeDef](./type_defs.md#custompayloadtypedef) 
+3. See [:material-code-braces: SSMLMessageTypeDef](./type_defs.md#ssmlmessagetypedef) 
+4. See [:material-code-braces: ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef) 
 ## MultipleValuesSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import MultipleValuesSettingTypeDef
+
+def get_value() -> MultipleValuesSettingTypeDef:
+    return {
+        "allowMultipleValues": ...,
+    }
 ```
 
-Optional fields:
-
-- `allowMultipleValues`: `bool`
-
-<a id="obfuscationsettingtypedef"></a>
+```python title="Definition"
+class MultipleValuesSettingTypeDef(TypedDict):
+    allowMultipleValues: NotRequired[bool],
+```
 
 ## ObfuscationSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ObfuscationSettingTypeDef
+
+def get_value() -> ObfuscationSettingTypeDef:
+    return {
+        "obfuscationSettingType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ObfuscationSettingTypeDef(TypedDict):
+    obfuscationSettingType: ObfuscationSettingTypeType,  # (1)
+```
 
-- `obfuscationSettingType`:
-  [ObfuscationSettingTypeType](./literals.md#obfuscationsettingtypetype)
-
-<a id="outputcontexttypedef"></a>
-
+1. See [:material-code-brackets: ObfuscationSettingTypeType](./literals.md#obfuscationsettingtypetype) 
 ## OutputContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import OutputContextTypeDef
+
+def get_value() -> OutputContextTypeDef:
+    return {
+        "name": ...,
+        "timeToLiveInSeconds": ...,
+        "turnsToLive": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `timeToLiveInSeconds`: `int`
-- `turnsToLive`: `int`
-
-<a id="pathformattypedef"></a>
+```python title="Definition"
+class OutputContextTypeDef(TypedDict):
+    name: str,
+    timeToLiveInSeconds: int,
+    turnsToLive: int,
+```
 
 ## PathFormatTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import PathFormatTypeDef
+
+def get_value() -> PathFormatTypeDef:
+    return {
+        "objectPrefixes": ...,
+    }
 ```
 
-Optional fields:
-
-- `objectPrefixes`: `List`\[`str`\]
-
-<a id="plaintextmessagetypedef"></a>
+```python title="Definition"
+class PathFormatTypeDef(TypedDict):
+    objectPrefixes: NotRequired[List[str]],
+```
 
 ## PlainTextMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import PlainTextMessageTypeDef
+
+def get_value() -> PlainTextMessageTypeDef:
+    return {
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `value`: `str`
-
-<a id="postfulfillmentstatusspecificationtypedef"></a>
+```python title="Definition"
+class PlainTextMessageTypeDef(TypedDict):
+    value: str,
+```
 
 ## PostFulfillmentStatusSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import PostFulfillmentStatusSpecificationTypeDef
+
+def get_value() -> PostFulfillmentStatusSpecificationTypeDef:
+    return {
+        "successResponse": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PostFulfillmentStatusSpecificationTypeDef(TypedDict):
+    successResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    failureResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+    timeoutResponse: NotRequired[ResponseSpecificationTypeDef],  # (1)
+```
 
-- `successResponse`:
-  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
-- `failureResponse`:
-  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
-- `timeoutResponse`:
-  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
-
-<a id="principaltypedef"></a>
-
+1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+2. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+3. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
 ## PrincipalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import PrincipalTypeDef
+
+def get_value() -> PrincipalTypeDef:
+    return {
+        "service": ...,
+    }
 ```
 
-Optional fields:
-
-- `service`: `str`
-- `arn`: `str`
-
-<a id="promptspecificationtypedef"></a>
+```python title="Definition"
+class PrincipalTypeDef(TypedDict):
+    service: NotRequired[str],
+    arn: NotRequired[str],
+```
 
 ## PromptSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import PromptSpecificationTypeDef
+
+def get_value() -> PromptSpecificationTypeDef:
+    return {
+        "messageGroups": ...,
+        "maxRetries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PromptSpecificationTypeDef(TypedDict):
+    messageGroups: Sequence[MessageGroupTypeDef],  # (1)
+    maxRetries: int,
+    allowInterrupt: NotRequired[bool],
+```
 
-- `messageGroups`:
-  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
-- `maxRetries`: `int`
-
-Optional fields:
-
-- `allowInterrupt`: `bool`
-
-<a id="recommendedintentsummarytypedef"></a>
-
+1. See [:material-code-braces: MessageGroupTypeDef](./type_defs.md#messagegrouptypedef) 
 ## RecommendedIntentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import RecommendedIntentSummaryTypeDef
+
+def get_value() -> RecommendedIntentSummaryTypeDef:
+    return {
+        "intentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `intentId`: `str`
-- `intentName`: `str`
-- `sampleUtterancesCount`: `int`
-
-<a id="relativeaggregationdurationtypedef"></a>
+```python title="Definition"
+class RecommendedIntentSummaryTypeDef(TypedDict):
+    intentId: NotRequired[str],
+    intentName: NotRequired[str],
+    sampleUtterancesCount: NotRequired[int],
+```
 
 ## RelativeAggregationDurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import RelativeAggregationDurationTypeDef
+
+def get_value() -> RelativeAggregationDurationTypeDef:
+    return {
+        "timeDimension": ...,
+        "timeValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RelativeAggregationDurationTypeDef(TypedDict):
+    timeDimension: TimeDimensionType,  # (1)
+    timeValue: int,
+```
 
-- `timeDimension`: [TimeDimensionType](./literals.md#timedimensiontype)
-- `timeValue`: `int`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: TimeDimensionType](./literals.md#timedimensiontype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="responsespecificationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResponseSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import ResponseSpecificationTypeDef
+
+def get_value() -> ResponseSpecificationTypeDef:
+    return {
+        "messageGroups": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseSpecificationTypeDef(TypedDict):
+    messageGroups: Sequence[MessageGroupTypeDef],  # (1)
+    allowInterrupt: NotRequired[bool],
+```
 
-- `messageGroups`:
-  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
-
-Optional fields:
-
-- `allowInterrupt`: `bool`
-
-<a id="s3bucketlogdestinationtypedef"></a>
-
+1. See [:material-code-braces: MessageGroupTypeDef](./type_defs.md#messagegrouptypedef) 
 ## S3BucketLogDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import S3BucketLogDestinationTypeDef
+
+def get_value() -> S3BucketLogDestinationTypeDef:
+    return {
+        "s3BucketArn": ...,
+        "logPrefix": ...,
+    }
 ```
 
-Required fields:
-
-- `s3BucketArn`: `str`
-- `logPrefix`: `str`
-
-Optional fields:
-
-- `kmsKeyArn`: `str`
-
-<a id="s3buckettranscriptsourcetypedef"></a>
+```python title="Definition"
+class S3BucketLogDestinationTypeDef(TypedDict):
+    s3BucketArn: str,
+    logPrefix: str,
+    kmsKeyArn: NotRequired[str],
+```
 
 ## S3BucketTranscriptSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import S3BucketTranscriptSourceTypeDef
+
+def get_value() -> S3BucketTranscriptSourceTypeDef:
+    return {
+        "s3BucketName": ...,
+        "transcriptFormat": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3BucketTranscriptSourceTypeDef(TypedDict):
+    s3BucketName: str,
+    transcriptFormat: TranscriptFormatType,  # (2)
+    pathFormat: NotRequired[PathFormatTypeDef],  # (1)
+    transcriptFilter: NotRequired[TranscriptFilterTypeDef],  # (3)
+    kmsKeyArn: NotRequired[str],
+```
 
-- `s3BucketName`: `str`
-- `transcriptFormat`: `Literal['Lex']` (see
-  [TranscriptFormatType](./literals.md#transcriptformattype))
-
-Optional fields:
-
-- `pathFormat`: [PathFormatTypeDef](./type_defs.md#pathformattypedef)
-- `transcriptFilter`:
-  [TranscriptFilterTypeDef](./type_defs.md#transcriptfiltertypedef)
-- `kmsKeyArn`: `str`
-
-<a id="ssmlmessagetypedef"></a>
-
+1. See [:material-code-braces: PathFormatTypeDef](./type_defs.md#pathformattypedef) 
+2. See [:material-code-brackets: TranscriptFormatType](./literals.md#transcriptformattype) 
+3. See [:material-code-braces: TranscriptFilterTypeDef](./type_defs.md#transcriptfiltertypedef) 
 ## SSMLMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SSMLMessageTypeDef
+
+def get_value() -> SSMLMessageTypeDef:
+    return {
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `value`: `str`
-
-<a id="sampleutterancetypedef"></a>
+```python title="Definition"
+class SSMLMessageTypeDef(TypedDict):
+    value: str,
+```
 
 ## SampleUtteranceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SampleUtteranceTypeDef
+
+def get_value() -> SampleUtteranceTypeDef:
+    return {
+        "utterance": ...,
+    }
 ```
 
-Required fields:
-
-- `utterance`: `str`
-
-<a id="samplevaluetypedef"></a>
+```python title="Definition"
+class SampleUtteranceTypeDef(TypedDict):
+    utterance: str,
+```
 
 ## SampleValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SampleValueTypeDef
+
+def get_value() -> SampleValueTypeDef:
+    return {
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `value`: `str`
-
-<a id="searchassociatedtranscriptsrequestrequesttypedef"></a>
+```python title="Definition"
+class SampleValueTypeDef(TypedDict):
+    value: str,
+```
 
 ## SearchAssociatedTranscriptsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SearchAssociatedTranscriptsRequestRequestTypeDef
+
+def get_value() -> SearchAssociatedTranscriptsRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationId": ...,
+        "filters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchAssociatedTranscriptsRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+    filters: Sequence[AssociatedTranscriptFilterTypeDef],  # (1)
+    searchOrder: NotRequired[SearchOrderType],  # (2)
+    maxResults: NotRequired[int],
+    nextIndex: NotRequired[int],
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationId`: `str`
-- `filters`:
-  `Sequence`\[[AssociatedTranscriptFilterTypeDef](./type_defs.md#associatedtranscriptfiltertypedef)\]
-
-Optional fields:
-
-- `searchOrder`: [SearchOrderType](./literals.md#searchordertype)
-- `maxResults`: `int`
-- `nextIndex`: `int`
-
-<a id="searchassociatedtranscriptsresponsetypedef"></a>
-
+1. See [:material-code-braces: AssociatedTranscriptFilterTypeDef](./type_defs.md#associatedtranscriptfiltertypedef) 
+2. See [:material-code-brackets: SearchOrderType](./literals.md#searchordertype) 
 ## SearchAssociatedTranscriptsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SearchAssociatedTranscriptsResponseTypeDef
+
+def get_value() -> SearchAssociatedTranscriptsResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationId": ...,
+        "nextIndex": ...,
+        "associatedTranscripts": ...,
+        "totalResults": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchAssociatedTranscriptsResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+    nextIndex: int,
+    associatedTranscripts: List[AssociatedTranscriptTypeDef],  # (1)
+    totalResults: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationId`: `str`
-- `nextIndex`: `int`
-- `associatedTranscripts`:
-  `List`\[[AssociatedTranscriptTypeDef](./type_defs.md#associatedtranscripttypedef)\]
-- `totalResults`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="sentimentanalysissettingstypedef"></a>
-
+1. See [:material-code-braces: AssociatedTranscriptTypeDef](./type_defs.md#associatedtranscripttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SentimentAnalysisSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SentimentAnalysisSettingsTypeDef
+
+def get_value() -> SentimentAnalysisSettingsTypeDef:
+    return {
+        "detectSentiment": ...,
+    }
 ```
 
-Required fields:
-
-- `detectSentiment`: `bool`
-
-<a id="slotdefaultvaluespecificationtypedef"></a>
+```python title="Definition"
+class SentimentAnalysisSettingsTypeDef(TypedDict):
+    detectSentiment: bool,
+```
 
 ## SlotDefaultValueSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotDefaultValueSpecificationTypeDef
+
+def get_value() -> SlotDefaultValueSpecificationTypeDef:
+    return {
+        "defaultValueList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SlotDefaultValueSpecificationTypeDef(TypedDict):
+    defaultValueList: Sequence[SlotDefaultValueTypeDef],  # (1)
+```
 
-- `defaultValueList`:
-  `Sequence`\[[SlotDefaultValueTypeDef](./type_defs.md#slotdefaultvaluetypedef)\]
-
-<a id="slotdefaultvaluetypedef"></a>
-
+1. See [:material-code-braces: SlotDefaultValueTypeDef](./type_defs.md#slotdefaultvaluetypedef) 
 ## SlotDefaultValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotDefaultValueTypeDef
+
+def get_value() -> SlotDefaultValueTypeDef:
+    return {
+        "defaultValue": ...,
+    }
 ```
 
-Required fields:
-
-- `defaultValue`: `str`
-
-<a id="slotfiltertypedef"></a>
+```python title="Definition"
+class SlotDefaultValueTypeDef(TypedDict):
+    defaultValue: str,
+```
 
 ## SlotFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotFilterTypeDef
+
+def get_value() -> SlotFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SlotFilterTypeDef(TypedDict):
+    name: SlotFilterNameType,  # (1)
+    values: Sequence[str],
+    operator: SlotFilterOperatorType,  # (2)
+```
 
-- `name`: `Literal['SlotName']` (see
-  [SlotFilterNameType](./literals.md#slotfilternametype))
-- `values`: `Sequence`\[`str`\]
-- `operator`: [SlotFilterOperatorType](./literals.md#slotfilteroperatortype)
-
-<a id="slotprioritytypedef"></a>
-
+1. See [:material-code-brackets: SlotFilterNameType](./literals.md#slotfilternametype) 
+2. See [:material-code-brackets: SlotFilterOperatorType](./literals.md#slotfilteroperatortype) 
 ## SlotPriorityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotPriorityTypeDef
+
+def get_value() -> SlotPriorityTypeDef:
+    return {
+        "priority": ...,
+        "slotId": ...,
+    }
 ```
 
-Required fields:
-
-- `priority`: `int`
-- `slotId`: `str`
-
-<a id="slotsortbytypedef"></a>
+```python title="Definition"
+class SlotPriorityTypeDef(TypedDict):
+    priority: int,
+    slotId: str,
+```
 
 ## SlotSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotSortByTypeDef
+
+def get_value() -> SlotSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SlotSortByTypeDef(TypedDict):
+    attribute: SlotSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`: [SlotSortAttributeType](./literals.md#slotsortattributetype)
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="slotsummarytypedef"></a>
-
+1. See [:material-code-brackets: SlotSortAttributeType](./literals.md#slotsortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## SlotSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotSummaryTypeDef
+
+def get_value() -> SlotSummaryTypeDef:
+    return {
+        "slotId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SlotSummaryTypeDef(TypedDict):
+    slotId: NotRequired[str],
+    slotName: NotRequired[str],
+    description: NotRequired[str],
+    slotConstraint: NotRequired[SlotConstraintType],  # (1)
+    slotTypeId: NotRequired[str],
+    valueElicitationPromptSpecification: NotRequired[PromptSpecificationTypeDef],  # (2)
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `slotId`: `str`
-- `slotName`: `str`
-- `description`: `str`
-- `slotConstraint`: [SlotConstraintType](./literals.md#slotconstrainttype)
-- `slotTypeId`: `str`
-- `valueElicitationPromptSpecification`:
-  [PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef)
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="slottypefiltertypedef"></a>
-
+1. See [:material-code-brackets: SlotConstraintType](./literals.md#slotconstrainttype) 
+2. See [:material-code-braces: PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef) 
 ## SlotTypeFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotTypeFilterTypeDef
+
+def get_value() -> SlotTypeFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SlotTypeFilterTypeDef(TypedDict):
+    name: SlotTypeFilterNameType,  # (1)
+    values: Sequence[str],
+    operator: SlotTypeFilterOperatorType,  # (2)
+```
 
-- `name`: [SlotTypeFilterNameType](./literals.md#slottypefilternametype)
-- `values`: `Sequence`\[`str`\]
-- `operator`:
-  [SlotTypeFilterOperatorType](./literals.md#slottypefilteroperatortype)
-
-<a id="slottypesortbytypedef"></a>
-
+1. See [:material-code-brackets: SlotTypeFilterNameType](./literals.md#slottypefilternametype) 
+2. See [:material-code-brackets: SlotTypeFilterOperatorType](./literals.md#slottypefilteroperatortype) 
 ## SlotTypeSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotTypeSortByTypeDef
+
+def get_value() -> SlotTypeSortByTypeDef:
+    return {
+        "attribute": ...,
+        "order": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SlotTypeSortByTypeDef(TypedDict):
+    attribute: SlotTypeSortAttributeType,  # (1)
+    order: SortOrderType,  # (2)
+```
 
-- `attribute`:
-  [SlotTypeSortAttributeType](./literals.md#slottypesortattributetype)
-- `order`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="slottypestatisticstypedef"></a>
-
+1. See [:material-code-brackets: SlotTypeSortAttributeType](./literals.md#slottypesortattributetype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## SlotTypeStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotTypeStatisticsTypeDef
+
+def get_value() -> SlotTypeStatisticsTypeDef:
+    return {
+        "discoveredSlotTypeCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `discoveredSlotTypeCount`: `int`
-
-<a id="slottypesummarytypedef"></a>
+```python title="Definition"
+class SlotTypeStatisticsTypeDef(TypedDict):
+    discoveredSlotTypeCount: NotRequired[int],
+```
 
 ## SlotTypeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotTypeSummaryTypeDef
+
+def get_value() -> SlotTypeSummaryTypeDef:
+    return {
+        "slotTypeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SlotTypeSummaryTypeDef(TypedDict):
+    slotTypeId: NotRequired[str],
+    slotTypeName: NotRequired[str],
+    description: NotRequired[str],
+    parentSlotTypeSignature: NotRequired[str],
+    lastUpdatedDateTime: NotRequired[datetime],
+    slotTypeCategory: NotRequired[SlotTypeCategoryType],  # (1)
+```
 
-- `slotTypeId`: `str`
-- `slotTypeName`: `str`
-- `description`: `str`
-- `parentSlotTypeSignature`: `str`
-- `lastUpdatedDateTime`: `datetime`
-- `slotTypeCategory`:
-  [SlotTypeCategoryType](./literals.md#slottypecategorytype)
-
-<a id="slottypevaluetypedef"></a>
-
+1. See [:material-code-brackets: SlotTypeCategoryType](./literals.md#slottypecategorytype) 
 ## SlotTypeValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotTypeValueTypeDef
+
+def get_value() -> SlotTypeValueTypeDef:
+    return {
+        "sampleValue": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SlotTypeValueTypeDef(TypedDict):
+    sampleValue: NotRequired[SampleValueTypeDef],  # (1)
+    synonyms: NotRequired[Sequence[SampleValueTypeDef]],  # (2)
+```
 
-- `sampleValue`: [SampleValueTypeDef](./type_defs.md#samplevaluetypedef)
-- `synonyms`:
-  `Sequence`\[[SampleValueTypeDef](./type_defs.md#samplevaluetypedef)\]
-
-<a id="slotvalueelicitationsettingtypedef"></a>
-
+1. See [:material-code-braces: SampleValueTypeDef](./type_defs.md#samplevaluetypedef) 
+2. See [:material-code-braces: SampleValueTypeDef](./type_defs.md#samplevaluetypedef) 
 ## SlotValueElicitationSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotValueElicitationSettingTypeDef
+
+def get_value() -> SlotValueElicitationSettingTypeDef:
+    return {
+        "slotConstraint": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SlotValueElicitationSettingTypeDef(TypedDict):
+    slotConstraint: SlotConstraintType,  # (2)
+    defaultValueSpecification: NotRequired[SlotDefaultValueSpecificationTypeDef],  # (1)
+    promptSpecification: NotRequired[PromptSpecificationTypeDef],  # (3)
+    sampleUtterances: NotRequired[Sequence[SampleUtteranceTypeDef]],  # (4)
+    waitAndContinueSpecification: NotRequired[WaitAndContinueSpecificationTypeDef],  # (5)
+```
 
-- `slotConstraint`: [SlotConstraintType](./literals.md#slotconstrainttype)
-
-Optional fields:
-
-- `defaultValueSpecification`:
-  [SlotDefaultValueSpecificationTypeDef](./type_defs.md#slotdefaultvaluespecificationtypedef)
-- `promptSpecification`:
-  [PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef)
-- `sampleUtterances`:
-  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
-- `waitAndContinueSpecification`:
-  [WaitAndContinueSpecificationTypeDef](./type_defs.md#waitandcontinuespecificationtypedef)
-
-<a id="slotvalueregexfiltertypedef"></a>
-
+1. See [:material-code-braces: SlotDefaultValueSpecificationTypeDef](./type_defs.md#slotdefaultvaluespecificationtypedef) 
+2. See [:material-code-brackets: SlotConstraintType](./literals.md#slotconstrainttype) 
+3. See [:material-code-braces: PromptSpecificationTypeDef](./type_defs.md#promptspecificationtypedef) 
+4. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+5. See [:material-code-braces: WaitAndContinueSpecificationTypeDef](./type_defs.md#waitandcontinuespecificationtypedef) 
 ## SlotValueRegexFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotValueRegexFilterTypeDef
+
+def get_value() -> SlotValueRegexFilterTypeDef:
+    return {
+        "pattern": ...,
+    }
 ```
 
-Required fields:
-
-- `pattern`: `str`
-
-<a id="slotvalueselectionsettingtypedef"></a>
+```python title="Definition"
+class SlotValueRegexFilterTypeDef(TypedDict):
+    pattern: str,
+```
 
 ## SlotValueSelectionSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import SlotValueSelectionSettingTypeDef
+
+def get_value() -> SlotValueSelectionSettingTypeDef:
+    return {
+        "resolutionStrategy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SlotValueSelectionSettingTypeDef(TypedDict):
+    resolutionStrategy: SlotValueResolutionStrategyType,  # (1)
+    regexFilter: NotRequired[SlotValueRegexFilterTypeDef],  # (2)
+    advancedRecognitionSetting: NotRequired[AdvancedRecognitionSettingTypeDef],  # (3)
+```
 
-- `resolutionStrategy`:
-  [SlotValueResolutionStrategyType](./literals.md#slotvalueresolutionstrategytype)
-
-Optional fields:
-
-- `regexFilter`:
-  [SlotValueRegexFilterTypeDef](./type_defs.md#slotvalueregexfiltertypedef)
-- `advancedRecognitionSetting`:
-  [AdvancedRecognitionSettingTypeDef](./type_defs.md#advancedrecognitionsettingtypedef)
-
-<a id="startbotrecommendationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SlotValueResolutionStrategyType](./literals.md#slotvalueresolutionstrategytype) 
+2. See [:material-code-braces: SlotValueRegexFilterTypeDef](./type_defs.md#slotvalueregexfiltertypedef) 
+3. See [:material-code-braces: AdvancedRecognitionSettingTypeDef](./type_defs.md#advancedrecognitionsettingtypedef) 
 ## StartBotRecommendationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import StartBotRecommendationRequestRequestTypeDef
+
+def get_value() -> StartBotRecommendationRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "transcriptSourceSetting": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBotRecommendationRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    transcriptSourceSetting: TranscriptSourceSettingTypeDef,  # (1)
+    encryptionSetting: NotRequired[EncryptionSettingTypeDef],  # (2)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `transcriptSourceSetting`:
-  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
-
-Optional fields:
-
-- `encryptionSetting`:
-  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
-
-<a id="startbotrecommendationresponsetypedef"></a>
-
+1. See [:material-code-braces: TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef) 
+2. See [:material-code-braces: EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef) 
 ## StartBotRecommendationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import StartBotRecommendationResponseTypeDef
+
+def get_value() -> StartBotRecommendationResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationStatus": ...,
+        "botRecommendationId": ...,
+        "creationDateTime": ...,
+        "transcriptSourceSetting": ...,
+        "encryptionSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBotRecommendationResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationStatus: BotRecommendationStatusType,  # (1)
+    botRecommendationId: str,
+    creationDateTime: datetime,
+    transcriptSourceSetting: TranscriptSourceSettingTypeDef,  # (2)
+    encryptionSetting: EncryptionSettingTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationStatus`:
-  [BotRecommendationStatusType](./literals.md#botrecommendationstatustype)
-- `botRecommendationId`: `str`
-- `creationDateTime`: `datetime`
-- `transcriptSourceSetting`:
-  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
-- `encryptionSetting`:
-  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startimportrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BotRecommendationStatusType](./literals.md#botrecommendationstatustype) 
+2. See [:material-code-braces: TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef) 
+3. See [:material-code-braces: EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartImportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import StartImportRequestRequestTypeDef
+
+def get_value() -> StartImportRequestRequestTypeDef:
+    return {
+        "importId": ...,
+        "resourceSpecification": ...,
+        "mergeStrategy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartImportRequestRequestTypeDef(TypedDict):
+    importId: str,
+    resourceSpecification: ImportResourceSpecificationTypeDef,  # (1)
+    mergeStrategy: MergeStrategyType,  # (2)
+    filePassword: NotRequired[str],
+```
 
-- `importId`: `str`
-- `resourceSpecification`:
-  [ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef)
-- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
-
-Optional fields:
-
-- `filePassword`: `str`
-
-<a id="startimportresponsetypedef"></a>
-
+1. See [:material-code-braces: ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef) 
+2. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
 ## StartImportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import StartImportResponseTypeDef
+
+def get_value() -> StartImportResponseTypeDef:
+    return {
+        "importId": ...,
+        "resourceSpecification": ...,
+        "mergeStrategy": ...,
+        "importStatus": ...,
+        "creationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartImportResponseTypeDef(TypedDict):
+    importId: str,
+    resourceSpecification: ImportResourceSpecificationTypeDef,  # (1)
+    mergeStrategy: MergeStrategyType,  # (2)
+    importStatus: ImportStatusType,  # (3)
+    creationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `importId`: `str`
-- `resourceSpecification`:
-  [ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef)
-- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
-- `importStatus`: [ImportStatusType](./literals.md#importstatustype)
-- `creationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stillwaitingresponsespecificationtypedef"></a>
-
+1. See [:material-code-braces: ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef) 
+2. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
+3. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StillWaitingResponseSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import StillWaitingResponseSpecificationTypeDef
+
+def get_value() -> StillWaitingResponseSpecificationTypeDef:
+    return {
+        "messageGroups": ...,
+        "frequencyInSeconds": ...,
+        "timeoutInSeconds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StillWaitingResponseSpecificationTypeDef(TypedDict):
+    messageGroups: Sequence[MessageGroupTypeDef],  # (1)
+    frequencyInSeconds: int,
+    timeoutInSeconds: int,
+    allowInterrupt: NotRequired[bool],
+```
 
-- `messageGroups`:
-  `Sequence`\[[MessageGroupTypeDef](./type_defs.md#messagegrouptypedef)\]
-- `frequencyInSeconds`: `int`
-- `timeoutInSeconds`: `int`
-
-Optional fields:
-
-- `allowInterrupt`: `bool`
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MessageGroupTypeDef](./type_defs.md#messagegrouptypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceARN": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceARN`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="textlogdestinationtypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceARN: str,
+    tags: Mapping[str, str],
+```
 
 ## TextLogDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import TextLogDestinationTypeDef
+
+def get_value() -> TextLogDestinationTypeDef:
+    return {
+        "cloudWatch": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TextLogDestinationTypeDef(TypedDict):
+    cloudWatch: CloudWatchLogGroupLogDestinationTypeDef,  # (1)
+```
 
-- `cloudWatch`:
-  [CloudWatchLogGroupLogDestinationTypeDef](./type_defs.md#cloudwatchloggrouplogdestinationtypedef)
-
-<a id="textlogsettingtypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogGroupLogDestinationTypeDef](./type_defs.md#cloudwatchloggrouplogdestinationtypedef) 
 ## TextLogSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import TextLogSettingTypeDef
+
+def get_value() -> TextLogSettingTypeDef:
+    return {
+        "enabled": ...,
+        "destination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TextLogSettingTypeDef(TypedDict):
+    enabled: bool,
+    destination: TextLogDestinationTypeDef,  # (1)
+```
 
-- `enabled`: `bool`
-- `destination`:
-  [TextLogDestinationTypeDef](./type_defs.md#textlogdestinationtypedef)
-
-<a id="transcriptfiltertypedef"></a>
-
+1. See [:material-code-braces: TextLogDestinationTypeDef](./type_defs.md#textlogdestinationtypedef) 
 ## TranscriptFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import TranscriptFilterTypeDef
+
+def get_value() -> TranscriptFilterTypeDef:
+    return {
+        "lexTranscriptFilter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TranscriptFilterTypeDef(TypedDict):
+    lexTranscriptFilter: NotRequired[LexTranscriptFilterTypeDef],  # (1)
+```
 
-- `lexTranscriptFilter`:
-  [LexTranscriptFilterTypeDef](./type_defs.md#lextranscriptfiltertypedef)
-
-<a id="transcriptsourcesettingtypedef"></a>
-
+1. See [:material-code-braces: LexTranscriptFilterTypeDef](./type_defs.md#lextranscriptfiltertypedef) 
 ## TranscriptSourceSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import TranscriptSourceSettingTypeDef
+
+def get_value() -> TranscriptSourceSettingTypeDef:
+    return {
+        "s3BucketTranscriptSource": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TranscriptSourceSettingTypeDef(TypedDict):
+    s3BucketTranscriptSource: NotRequired[S3BucketTranscriptSourceTypeDef],  # (1)
+```
 
-- `s3BucketTranscriptSource`:
-  [S3BucketTranscriptSourceTypeDef](./type_defs.md#s3buckettranscriptsourcetypedef)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3BucketTranscriptSourceTypeDef](./type_defs.md#s3buckettranscriptsourcetypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceARN": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceARN`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatebotaliasrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceARN: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateBotAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateBotAliasRequestRequestTypeDef
+
+def get_value() -> UpdateBotAliasRequestRequestTypeDef:
+    return {
+        "botAliasId": ...,
+        "botAliasName": ...,
+        "botId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBotAliasRequestRequestTypeDef(TypedDict):
+    botAliasId: str,
+    botAliasName: str,
+    botId: str,
+    description: NotRequired[str],
+    botVersion: NotRequired[str],
+    botAliasLocaleSettings: NotRequired[Mapping[str, BotAliasLocaleSettingsTypeDef]],  # (1)
+    conversationLogSettings: NotRequired[ConversationLogSettingsTypeDef],  # (2)
+    sentimentAnalysisSettings: NotRequired[SentimentAnalysisSettingsTypeDef],  # (3)
+```
 
-- `botAliasId`: `str`
-- `botAliasName`: `str`
-- `botId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `botVersion`: `str`
-- `botAliasLocaleSettings`: `Mapping`\[`str`,
-  [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
-- `conversationLogSettings`:
-  [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
-- `sentimentAnalysisSettings`:
-  [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-
-<a id="updatebotaliasresponsetypedef"></a>
-
+1. See [:material-code-braces: BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef) 
+2. See [:material-code-braces: ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef) 
+3. See [:material-code-braces: SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef) 
 ## UpdateBotAliasResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateBotAliasResponseTypeDef
+
+def get_value() -> UpdateBotAliasResponseTypeDef:
+    return {
+        "botAliasId": ...,
+        "botAliasName": ...,
+        "description": ...,
+        "botVersion": ...,
+        "botAliasLocaleSettings": ...,
+        "conversationLogSettings": ...,
+        "sentimentAnalysisSettings": ...,
+        "botAliasStatus": ...,
+        "botId": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBotAliasResponseTypeDef(TypedDict):
+    botAliasId: str,
+    botAliasName: str,
+    description: str,
+    botVersion: str,
+    botAliasLocaleSettings: Dict[str, BotAliasLocaleSettingsTypeDef],  # (1)
+    conversationLogSettings: ConversationLogSettingsTypeDef,  # (2)
+    sentimentAnalysisSettings: SentimentAnalysisSettingsTypeDef,  # (3)
+    botAliasStatus: BotAliasStatusType,  # (4)
+    botId: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `botAliasId`: `str`
-- `botAliasName`: `str`
-- `description`: `str`
-- `botVersion`: `str`
-- `botAliasLocaleSettings`: `Dict`\[`str`,
-  [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
-- `conversationLogSettings`:
-  [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
-- `sentimentAnalysisSettings`:
-  [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `botAliasStatus`: [BotAliasStatusType](./literals.md#botaliasstatustype)
-- `botId`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatebotlocalerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef) 
+2. See [:material-code-braces: ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef) 
+3. See [:material-code-braces: SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef) 
+4. See [:material-code-brackets: BotAliasStatusType](./literals.md#botaliasstatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBotLocaleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateBotLocaleRequestRequestTypeDef
+
+def get_value() -> UpdateBotLocaleRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "nluIntentConfidenceThreshold": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBotLocaleRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    nluIntentConfidenceThreshold: float,
+    description: NotRequired[str],
+    voiceSettings: NotRequired[VoiceSettingsTypeDef],  # (1)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `nluIntentConfidenceThreshold`: `float`
-
-Optional fields:
-
-- `description`: `str`
-- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
-
-<a id="updatebotlocaleresponsetypedef"></a>
-
+1. See [:material-code-braces: VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef) 
 ## UpdateBotLocaleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateBotLocaleResponseTypeDef
+
+def get_value() -> UpdateBotLocaleResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "localeName": ...,
+        "description": ...,
+        "nluIntentConfidenceThreshold": ...,
+        "voiceSettings": ...,
+        "botLocaleStatus": ...,
+        "failureReasons": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "recommendedActions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBotLocaleResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    localeName: str,
+    description: str,
+    nluIntentConfidenceThreshold: float,
+    voiceSettings: VoiceSettingsTypeDef,  # (1)
+    botLocaleStatus: BotLocaleStatusType,  # (2)
+    failureReasons: List[str],
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    recommendedActions: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `localeName`: `str`
-- `description`: `str`
-- `nluIntentConfidenceThreshold`: `float`
-- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
-- `botLocaleStatus`: [BotLocaleStatusType](./literals.md#botlocalestatustype)
-- `failureReasons`: `List`\[`str`\]
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `recommendedActions`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatebotrecommendationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef) 
+2. See [:material-code-brackets: BotLocaleStatusType](./literals.md#botlocalestatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBotRecommendationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateBotRecommendationRequestRequestTypeDef
+
+def get_value() -> UpdateBotRecommendationRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationId": ...,
+        "encryptionSetting": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBotRecommendationRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+    encryptionSetting: EncryptionSettingTypeDef,  # (1)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationId`: `str`
-- `encryptionSetting`:
-  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
-
-<a id="updatebotrecommendationresponsetypedef"></a>
-
+1. See [:material-code-braces: EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef) 
 ## UpdateBotRecommendationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateBotRecommendationResponseTypeDef
+
+def get_value() -> UpdateBotRecommendationResponseTypeDef:
+    return {
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "botRecommendationStatus": ...,
+        "botRecommendationId": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "transcriptSourceSetting": ...,
+        "encryptionSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBotRecommendationResponseTypeDef(TypedDict):
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationStatus: BotRecommendationStatusType,  # (1)
+    botRecommendationId: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    transcriptSourceSetting: TranscriptSourceSettingTypeDef,  # (2)
+    encryptionSetting: EncryptionSettingTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `botRecommendationStatus`:
-  [BotRecommendationStatusType](./literals.md#botrecommendationstatustype)
-- `botRecommendationId`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `transcriptSourceSetting`:
-  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
-- `encryptionSetting`:
-  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatebotrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BotRecommendationStatusType](./literals.md#botrecommendationstatustype) 
+2. See [:material-code-braces: TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef) 
+3. See [:material-code-braces: EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateBotRequestRequestTypeDef
+
+def get_value() -> UpdateBotRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBotRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    description: NotRequired[str],
+```
 
-- `botId`: `str`
-- `botName`: `str`
-- `roleArn`: `str`
-- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
-- `idleSessionTTLInSeconds`: `int`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="updatebotresponsetypedef"></a>
-
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
 ## UpdateBotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateBotResponseTypeDef
+
+def get_value() -> UpdateBotResponseTypeDef:
+    return {
+        "botId": ...,
+        "botName": ...,
+        "description": ...,
+        "roleArn": ...,
+        "dataPrivacy": ...,
+        "idleSessionTTLInSeconds": ...,
+        "botStatus": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBotResponseTypeDef(TypedDict):
+    botId: str,
+    botName: str,
+    description: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    botStatus: BotStatusType,  # (2)
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `botId`: `str`
-- `botName`: `str`
-- `description`: `str`
-- `roleArn`: `str`
-- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
-- `idleSessionTTLInSeconds`: `int`
-- `botStatus`: [BotStatusType](./literals.md#botstatustype)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateexportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-brackets: BotStatusType](./literals.md#botstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateExportRequestRequestTypeDef
+
+def get_value() -> UpdateExportRequestRequestTypeDef:
+    return {
+        "exportId": ...,
+    }
 ```
 
-Required fields:
-
-- `exportId`: `str`
-
-Optional fields:
-
-- `filePassword`: `str`
-
-<a id="updateexportresponsetypedef"></a>
+```python title="Definition"
+class UpdateExportRequestRequestTypeDef(TypedDict):
+    exportId: str,
+    filePassword: NotRequired[str],
+```
 
 ## UpdateExportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateExportResponseTypeDef
+
+def get_value() -> UpdateExportResponseTypeDef:
+    return {
+        "exportId": ...,
+        "resourceSpecification": ...,
+        "fileFormat": ...,
+        "exportStatus": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateExportResponseTypeDef(TypedDict):
+    exportId: str,
+    resourceSpecification: ExportResourceSpecificationTypeDef,  # (1)
+    fileFormat: ImportExportFileFormatType,  # (2)
+    exportStatus: ExportStatusType,  # (3)
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `exportId`: `str`
-- `resourceSpecification`:
-  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-- `fileFormat`:
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
-- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateintentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef) 
+2. See [:material-code-brackets: ImportExportFileFormatType](./literals.md#importexportfileformattype) 
+3. See [:material-code-brackets: ExportStatusType](./literals.md#exportstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateIntentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateIntentRequestRequestTypeDef
+
+def get_value() -> UpdateIntentRequestRequestTypeDef:
+    return {
+        "intentId": ...,
+        "intentName": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateIntentRequestRequestTypeDef(TypedDict):
+    intentId: str,
+    intentName: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    description: NotRequired[str],
+    parentIntentSignature: NotRequired[str],
+    sampleUtterances: NotRequired[Sequence[SampleUtteranceTypeDef]],  # (1)
+    dialogCodeHook: NotRequired[DialogCodeHookSettingsTypeDef],  # (2)
+    fulfillmentCodeHook: NotRequired[FulfillmentCodeHookSettingsTypeDef],  # (3)
+    slotPriorities: NotRequired[Sequence[SlotPriorityTypeDef]],  # (4)
+    intentConfirmationSetting: NotRequired[IntentConfirmationSettingTypeDef],  # (5)
+    intentClosingSetting: NotRequired[IntentClosingSettingTypeDef],  # (6)
+    inputContexts: NotRequired[Sequence[InputContextTypeDef]],  # (7)
+    outputContexts: NotRequired[Sequence[OutputContextTypeDef]],  # (8)
+    kendraConfiguration: NotRequired[KendraConfigurationTypeDef],  # (9)
+```
 
-- `intentId`: `str`
-- `intentName`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `parentIntentSignature`: `str`
-- `sampleUtterances`:
-  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
-- `dialogCodeHook`:
-  [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
-- `fulfillmentCodeHook`:
-  [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
-- `slotPriorities`:
-  `Sequence`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
-- `intentConfirmationSetting`:
-  [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
-- `intentClosingSetting`:
-  [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
-- `inputContexts`:
-  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
-- `outputContexts`:
-  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
-- `kendraConfiguration`:
-  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
-
-<a id="updateintentresponsetypedef"></a>
-
+1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+2. See [:material-code-braces: DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef) 
+3. See [:material-code-braces: FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef) 
+4. See [:material-code-braces: SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef) 
+5. See [:material-code-braces: IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef) 
+6. See [:material-code-braces: IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef) 
+7. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
+8. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
+9. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
 ## UpdateIntentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateIntentResponseTypeDef
+
+def get_value() -> UpdateIntentResponseTypeDef:
+    return {
+        "intentId": ...,
+        "intentName": ...,
+        "description": ...,
+        "parentIntentSignature": ...,
+        "sampleUtterances": ...,
+        "dialogCodeHook": ...,
+        "fulfillmentCodeHook": ...,
+        "slotPriorities": ...,
+        "intentConfirmationSetting": ...,
+        "intentClosingSetting": ...,
+        "inputContexts": ...,
+        "outputContexts": ...,
+        "kendraConfiguration": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateIntentResponseTypeDef(TypedDict):
+    intentId: str,
+    intentName: str,
+    description: str,
+    parentIntentSignature: str,
+    sampleUtterances: List[SampleUtteranceTypeDef],  # (1)
+    dialogCodeHook: DialogCodeHookSettingsTypeDef,  # (2)
+    fulfillmentCodeHook: FulfillmentCodeHookSettingsTypeDef,  # (3)
+    slotPriorities: List[SlotPriorityTypeDef],  # (4)
+    intentConfirmationSetting: IntentConfirmationSettingTypeDef,  # (5)
+    intentClosingSetting: IntentClosingSettingTypeDef,  # (6)
+    inputContexts: List[InputContextTypeDef],  # (7)
+    outputContexts: List[OutputContextTypeDef],  # (8)
+    kendraConfiguration: KendraConfigurationTypeDef,  # (9)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (10)
+```
 
-- `intentId`: `str`
-- `intentName`: `str`
-- `description`: `str`
-- `parentIntentSignature`: `str`
-- `sampleUtterances`:
-  `List`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
-- `dialogCodeHook`:
-  [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
-- `fulfillmentCodeHook`:
-  [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
-- `slotPriorities`:
-  `List`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
-- `intentConfirmationSetting`:
-  [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
-- `intentClosingSetting`:
-  [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
-- `inputContexts`:
-  `List`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
-- `outputContexts`:
-  `List`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
-- `kendraConfiguration`:
-  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+2. See [:material-code-braces: DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef) 
+3. See [:material-code-braces: FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef) 
+4. See [:material-code-braces: SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef) 
+5. See [:material-code-braces: IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef) 
+6. See [:material-code-braces: IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef) 
+7. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
+8. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
+9. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
+10. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateResourcePolicyRequestRequestTypeDef
+
+def get_value() -> UpdateResourcePolicyRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "policy": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `policy`: `str`
-
-Optional fields:
-
-- `expectedRevisionId`: `str`
-
-<a id="updateresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class UpdateResourcePolicyRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    policy: str,
+    expectedRevisionId: NotRequired[str],
+```
 
 ## UpdateResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateResourcePolicyResponseTypeDef
+
+def get_value() -> UpdateResourcePolicyResponseTypeDef:
+    return {
+        "resourceArn": ...,
+        "revisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResourcePolicyResponseTypeDef(TypedDict):
+    resourceArn: str,
+    revisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `resourceArn`: `str`
-- `revisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateslotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSlotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateSlotRequestRequestTypeDef
+
+def get_value() -> UpdateSlotRequestRequestTypeDef:
+    return {
+        "slotId": ...,
+        "slotName": ...,
+        "valueElicitationSetting": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSlotRequestRequestTypeDef(TypedDict):
+    slotId: str,
+    slotName: str,
+    valueElicitationSetting: SlotValueElicitationSettingTypeDef,  # (1)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    description: NotRequired[str],
+    slotTypeId: NotRequired[str],
+    obfuscationSetting: NotRequired[ObfuscationSettingTypeDef],  # (2)
+    multipleValuesSetting: NotRequired[MultipleValuesSettingTypeDef],  # (3)
+```
 
-- `slotId`: `str`
-- `slotName`: `str`
-- `valueElicitationSetting`:
-  [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `slotTypeId`: `str`
-- `obfuscationSetting`:
-  [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
-- `multipleValuesSetting`:
-  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
-
-<a id="updateslotresponsetypedef"></a>
-
+1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
+2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
+3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
 ## UpdateSlotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateSlotResponseTypeDef
+
+def get_value() -> UpdateSlotResponseTypeDef:
+    return {
+        "slotId": ...,
+        "slotName": ...,
+        "description": ...,
+        "slotTypeId": ...,
+        "valueElicitationSetting": ...,
+        "obfuscationSetting": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "intentId": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "multipleValuesSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSlotResponseTypeDef(TypedDict):
+    slotId: str,
+    slotName: str,
+    description: str,
+    slotTypeId: str,
+    valueElicitationSetting: SlotValueElicitationSettingTypeDef,  # (1)
+    obfuscationSetting: ObfuscationSettingTypeDef,  # (2)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    multipleValuesSetting: MultipleValuesSettingTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `slotId`: `str`
-- `slotName`: `str`
-- `description`: `str`
-- `slotTypeId`: `str`
-- `valueElicitationSetting`:
-  [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
-- `obfuscationSetting`:
-  [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `intentId`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `multipleValuesSetting`:
-  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateslottyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
+2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
+3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSlotTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateSlotTypeRequestRequestTypeDef
+
+def get_value() -> UpdateSlotTypeRequestRequestTypeDef:
+    return {
+        "slotTypeId": ...,
+        "slotTypeName": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSlotTypeRequestRequestTypeDef(TypedDict):
+    slotTypeId: str,
+    slotTypeName: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    description: NotRequired[str],
+    slotTypeValues: NotRequired[Sequence[SlotTypeValueTypeDef]],  # (1)
+    valueSelectionSetting: NotRequired[SlotValueSelectionSettingTypeDef],  # (2)
+    parentSlotTypeSignature: NotRequired[str],
+    externalSourceSetting: NotRequired[ExternalSourceSettingTypeDef],  # (3)
+```
 
-- `slotTypeId`: `str`
-- `slotTypeName`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `slotTypeValues`:
-  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
-- `parentSlotTypeSignature`: `str`
-- `externalSourceSetting`:
-  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
-
-<a id="updateslottyperesponsetypedef"></a>
-
+1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
+2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
+3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
 ## UpdateSlotTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UpdateSlotTypeResponseTypeDef
+
+def get_value() -> UpdateSlotTypeResponseTypeDef:
+    return {
+        "slotTypeId": ...,
+        "slotTypeName": ...,
+        "description": ...,
+        "slotTypeValues": ...,
+        "valueSelectionSetting": ...,
+        "parentSlotTypeSignature": ...,
+        "botId": ...,
+        "botVersion": ...,
+        "localeId": ...,
+        "creationDateTime": ...,
+        "lastUpdatedDateTime": ...,
+        "externalSourceSetting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSlotTypeResponseTypeDef(TypedDict):
+    slotTypeId: str,
+    slotTypeName: str,
+    description: str,
+    slotTypeValues: List[SlotTypeValueTypeDef],  # (1)
+    valueSelectionSetting: SlotValueSelectionSettingTypeDef,  # (2)
+    parentSlotTypeSignature: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    creationDateTime: datetime,
+    lastUpdatedDateTime: datetime,
+    externalSourceSetting: ExternalSourceSettingTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `slotTypeId`: `str`
-- `slotTypeName`: `str`
-- `description`: `str`
-- `slotTypeValues`:
-  `List`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
-- `parentSlotTypeSignature`: `str`
-- `botId`: `str`
-- `botVersion`: `str`
-- `localeId`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `externalSourceSetting`:
-  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="utteranceaggregationdurationtypedef"></a>
-
+1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
+2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
+3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UtteranceAggregationDurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import UtteranceAggregationDurationTypeDef
+
+def get_value() -> UtteranceAggregationDurationTypeDef:
+    return {
+        "relativeAggregationDuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UtteranceAggregationDurationTypeDef(TypedDict):
+    relativeAggregationDuration: RelativeAggregationDurationTypeDef,  # (1)
+```
 
-- `relativeAggregationDuration`:
-  [RelativeAggregationDurationTypeDef](./type_defs.md#relativeaggregationdurationtypedef)
-
-<a id="voicesettingstypedef"></a>
-
+1. See [:material-code-braces: RelativeAggregationDurationTypeDef](./type_defs.md#relativeaggregationdurationtypedef) 
 ## VoiceSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import VoiceSettingsTypeDef
+
+def get_value() -> VoiceSettingsTypeDef:
+    return {
+        "voiceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VoiceSettingsTypeDef(TypedDict):
+    voiceId: str,
+    engine: NotRequired[VoiceEngineType],  # (1)
+```
 
-- `voiceId`: `str`
-
-Optional fields:
-
-- `engine`: [VoiceEngineType](./literals.md#voiceenginetype)
-
-<a id="waitandcontinuespecificationtypedef"></a>
-
+1. See [:material-code-brackets: VoiceEngineType](./literals.md#voiceenginetype) 
 ## WaitAndContinueSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import WaitAndContinueSpecificationTypeDef
+
+def get_value() -> WaitAndContinueSpecificationTypeDef:
+    return {
+        "waitingResponse": ...,
+        "continueResponse": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WaitAndContinueSpecificationTypeDef(TypedDict):
+    waitingResponse: ResponseSpecificationTypeDef,  # (1)
+    continueResponse: ResponseSpecificationTypeDef,  # (1)
+    stillWaitingResponse: NotRequired[StillWaitingResponseSpecificationTypeDef],  # (3)
+    active: NotRequired[bool],
+```
 
-- `waitingResponse`:
-  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
-- `continueResponse`:
-  [ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef)
-
-Optional fields:
-
-- `stillWaitingResponse`:
-  [StillWaitingResponseSpecificationTypeDef](./type_defs.md#stillwaitingresponsespecificationtypedef)
-- `active`: `bool`
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+2. See [:material-code-braces: ResponseSpecificationTypeDef](./type_defs.md#responsespecificationtypedef) 
+3. See [:material-code-braces: StillWaitingResponseSpecificationTypeDef](./type_defs.md#stillwaitingresponsespecificationtypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_models.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

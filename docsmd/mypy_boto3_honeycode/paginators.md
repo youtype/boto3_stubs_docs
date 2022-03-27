@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-honeycode-module"></a>
-
-# Paginators for boto3 Honeycode module
+# Paginators
 
 > [Index](../README.md) > [Honeycode](./README.md) > Paginators
 
-Auto-generated documentation for
-[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
-type annotations stubs module
-[mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+!!! note ""
 
-- [Paginators for boto3 Honeycode module](#paginators-for-boto3-honeycode-module)
-  - [ListTableColumnsPaginator](#listtablecolumnspaginator)
-  - [ListTableRowsPaginator](#listtablerowspaginator)
-  - [ListTablesPaginator](#listtablespaginator)
-  - [QueryTableRowsPaginator](#querytablerowspaginator)
-
-<a id="listtablecolumnspaginator"></a>
+    Auto-generated documentation for [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+    type annotations stubs module [mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 ## ListTableColumnsPaginator
 
-Type annotations for
-`boto3.client("honeycode").get_paginator("list_table_columns")`.
+Type annotations and code completion for `#!python boto3.client("honeycode").get_paginator("list_table_columns")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_honeycode.paginator import ListTableColumnsPaginator
@@ -33,29 +21,42 @@ def get_list_table_columns_paginator() -> ListTableColumnsPaginator:
     return Session().client("honeycode").get_paginator("list_table_columns")
 ```
 
-Boto3 documentation:
-[Honeycode.Paginator.ListTableColumns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableColumns)
 
-Arguments for `ListTableColumnsPaginator.paginate` method:
+### paginate
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTableColumnsPaginator.paginate` method.
 
-`ListTableColumnsPaginator.paginate` returns
-`_PageIterator`\[[ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTableColumnsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtablerowspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTableColumnsRequestListTableColumnsPaginateTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTableColumnsRequestListTableColumnsPaginateTypeDef](./type_defs.md#listtablecolumnsrequestlisttablecolumnspaginatetypedef) 
 ## ListTableRowsPaginator
 
-Type annotations for
-`boto3.client("honeycode").get_paginator("list_table_rows")`.
+Type annotations and code completion for `#!python boto3.client("honeycode").get_paginator("list_table_rows")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_honeycode.paginator import ListTableRowsPaginator
@@ -64,29 +65,43 @@ def get_list_table_rows_paginator() -> ListTableRowsPaginator:
     return Session().client("honeycode").get_paginator("list_table_rows")
 ```
 
-Boto3 documentation:
-[Honeycode.Paginator.ListTableRows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTableRows)
 
-Arguments for `ListTableRowsPaginator.paginate` method:
+### paginate
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `rowIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTableRowsPaginator.paginate` method.
 
-`ListTableRowsPaginator.paginate` returns
-`_PageIterator`\[[ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    rowIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTableRowsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtablespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTableRowsRequestListTableRowsPaginateTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTableRowsRequestListTableRowsPaginateTypeDef](./type_defs.md#listtablerowsrequestlisttablerowspaginatetypedef) 
 ## ListTablesPaginator
 
-Type annotations for `boto3.client("honeycode").get_paginator("list_tables")`.
+Type annotations and code completion for `#!python boto3.client("honeycode").get_paginator("list_tables")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_honeycode.paginator import ListTablesPaginator
@@ -95,28 +110,40 @@ def get_list_tables_paginator() -> ListTablesPaginator:
     return Session().client("honeycode").get_paginator("list_tables")
 ```
 
-Boto3 documentation:
-[Honeycode.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.ListTables)
 
-Arguments for `ListTablesPaginator.paginate` method:
+### paginate
 
-- `workbookId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTablesPaginator.paginate` method.
 
-`ListTablesPaginator.paginate` returns
-`_PageIterator`\[[ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    workbookId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTablesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="querytablerowspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTablesRequestListTablesPaginateTypeDef = {  # (1)
+    "workbookId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTablesRequestListTablesPaginateTypeDef](./type_defs.md#listtablesrequestlisttablespaginatetypedef) 
 ## QueryTableRowsPaginator
 
-Type annotations for
-`boto3.client("honeycode").get_paginator("query_table_rows")`.
+Type annotations and code completion for `#!python boto3.client("honeycode").get_paginator("query_table_rows")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_honeycode.paginator import QueryTableRowsPaginator
@@ -125,16 +152,36 @@ def get_query_table_rows_paginator() -> QueryTableRowsPaginator:
     return Session().client("honeycode").get_paginator("query_table_rows")
 ```
 
-Boto3 documentation:
-[Honeycode.Paginator.QueryTableRows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Paginator.QueryTableRows)
 
-Arguments for `QueryTableRowsPaginator.paginate` method:
+### paginate
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `filterFormula`: [FilterTypeDef](./type_defs.md#filtertypedef) *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python QueryTableRowsPaginator.paginate` method.
 
-`QueryTableRowsPaginator.paginate` returns
-`_PageIterator`\[[QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    filterFormula: FilterTypeDef,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[QueryTableRowsResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: QueryTableRowsRequestQueryTableRowsPaginateTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+    "filterFormula": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: QueryTableRowsRequestQueryTableRowsPaginateTypeDef](./type_defs.md#querytablerowsrequestquerytablerowspaginatetypedef) 

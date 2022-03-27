@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-computeoptimizer-module"></a>
-
-# Type annotations for boto3 ComputeOptimizer module
+#  ComputeOptimizer module
 
 > [Index](../README.md) > ComputeOptimizer
 
-Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
-type annotations stubs module
-[mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
+!!! note ""
 
-- [Type annotations for boto3 ComputeOptimizer module](#type-annotations-for-boto3-computeoptimizer-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ComputeOptimizerClient](#computeoptimizerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
+    type annotations stubs module [mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ComputeOptimizer`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[compute-optimizer]'
 python -m pip install mypy-boto3-compute-optimizer
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,78 +42,41 @@ python -m pip install mypy-boto3-compute-optimizer
 python -m pip uninstall -y mypy-boto3-compute-optimizer
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="computeoptimizerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ComputeOptimizerClient
 
-Type annotations for `boto3.client("compute-optimizer")` as
-[ComputeOptimizerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("compute-optimizer")` as [ComputeOptimizerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
+
+def get_client() -> ComputeOptimizerClient:
+    return Session().cleint("compute-optimizer")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [delete_recommendation_preferences](./client.md#delete_recommendation_preferences)
-- [describe_recommendation_export_jobs](./client.md#describe_recommendation_export_jobs)
-- [exceptions](./client.md#exceptions)
-- [export_auto_scaling_group_recommendations](./client.md#export_auto_scaling_group_recommendations)
-- [export_ebs_volume_recommendations](./client.md#export_ebs_volume_recommendations)
-- [export_ec2_instance_recommendations](./client.md#export_ec2_instance_recommendations)
-- [export_lambda_function_recommendations](./client.md#export_lambda_function_recommendations)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_auto_scaling_group_recommendations](./client.md#get_auto_scaling_group_recommendations)
-- [get_ebs_volume_recommendations](./client.md#get_ebs_volume_recommendations)
-- [get_ec2_instance_recommendations](./client.md#get_ec2_instance_recommendations)
-- [get_ec2_recommendation_projected_metrics](./client.md#get_ec2_recommendation_projected_metrics)
-- [get_effective_recommendation_preferences](./client.md#get_effective_recommendation_preferences)
-- [get_enrollment_status](./client.md#get_enrollment_status)
-- [get_enrollment_statuses_for_organization](./client.md#get_enrollment_statuses_for_organization)
-- [get_lambda_function_recommendations](./client.md#get_lambda_function_recommendations)
-- [get_recommendation_preferences](./client.md#get_recommendation_preferences)
-- [get_recommendation_summaries](./client.md#get_recommendation_summaries)
-- [put_recommendation_preferences](./client.md#put_recommendation_preferences)
-- [update_enrollment_status](./client.md#update_enrollment_status)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-ComputeOptimizerClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- InternalServerException
-- InvalidParameterValueException
-- LimitExceededException
-- MissingAuthenticationToken
-- OptInRequiredException
-- ResourceNotFoundException
-- ServiceUnavailableException
-- ThrottlingException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_compute_optimizer.literals import CpuVendorArchitectureType
 
-```python
-from mypy_boto3_compute_optimizer.literals import CpuVendorArchitectureType, ...
+def get_value() -> CpuVendorArchitectureType:
+    return "AWS_ARM64"
 ```
 
 - [CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype)
@@ -177,18 +119,22 @@ from mypy_boto3_compute_optimizer.literals import CpuVendorArchitectureType, ...
 - [ComputeOptimizerServiceName](./literals.md#computeoptimizerservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_compute_optimizer.type_defs import AccountEnrollmentStatusTypeDef
 
-```python
-from mypy_boto3_compute_optimizer.type_defs import AccountEnrollmentStatusTypeDef, ...
+def get_value() -> AccountEnrollmentStatusTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
 - [AccountEnrollmentStatusTypeDef](./type_defs.md#accountenrollmentstatustypedef)
@@ -263,3 +209,4 @@ from mypy_boto3_compute_optimizer.type_defs import AccountEnrollmentStatusTypeDe
 - [VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)
 - [VolumeRecommendationOptionTypeDef](./type_defs.md#volumerecommendationoptiontypedef)
 - [VolumeRecommendationTypeDef](./type_defs.md#volumerecommendationtypedef)
+

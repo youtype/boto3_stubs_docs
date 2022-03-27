@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-opsworkscm-module"></a>
-
-# Type annotations for boto3 OpsWorksCM module
+#  OpsWorksCM module
 
 > [Index](../README.md) > OpsWorksCM
 
-Auto-generated documentation for
-[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
-type annotations stubs module
-[mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+!!! note ""
 
-- [Type annotations for boto3 OpsWorksCM module](#type-annotations-for-boto3-opsworkscm-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [OpsWorksCMClient](#opsworkscmclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+    type annotations stubs module [mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `OpsWorksCM`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[opsworkscm]'
 python -m pip install mypy-boto3-opsworkscm
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,79 +42,37 @@ python -m pip install mypy-boto3-opsworkscm
 python -m pip uninstall -y mypy-boto3-opsworkscm
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="opsworkscmclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## OpsWorksCMClient
 
-Type annotations for `boto3.client("opsworkscm")` as
-[OpsWorksCMClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("opsworkscm")` as [OpsWorksCMClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_opsworkscm.client import OpsWorksCMClient
+
+def get_client() -> OpsWorksCMClient:
+    return Session().cleint("opsworkscm")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_node](./client.md#associate_node)
-- [can_paginate](./client.md#can_paginate)
-- [create_backup](./client.md#create_backup)
-- [create_server](./client.md#create_server)
-- [delete_backup](./client.md#delete_backup)
-- [delete_server](./client.md#delete_server)
-- [describe_account_attributes](./client.md#describe_account_attributes)
-- [describe_backups](./client.md#describe_backups)
-- [describe_events](./client.md#describe_events)
-- [describe_node_association_status](./client.md#describe_node_association_status)
-- [describe_servers](./client.md#describe_servers)
-- [disassociate_node](./client.md#disassociate_node)
-- [exceptions](./client.md#exceptions)
-- [export_server_engine_attribute](./client.md#export_server_engine_attribute)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [restore_server](./client.md#restore_server)
-- [start_maintenance](./client.md#start_maintenance)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_server](./client.md#update_server)
-- [update_server_engine_attributes](./client.md#update_server_engine_attributes)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-OpsWorksCMClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InvalidNextTokenException
-- InvalidStateException
-- LimitExceededException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("opsworkscm").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("opsworkscm").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_opsworkscm.paginator import DescribeBackupsPaginator, ...
+from mypy_boto3_opsworkscm.paginator import DescribeBackupsPaginator
+
+def get_describe_backups_paginator() -> DescribeBackupsPaginator:
+    return Session().client("opsworkscm").get_paginator("describe_backups"))
 ```
 
 - [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
@@ -145,31 +80,40 @@ from mypy_boto3_opsworkscm.paginator import DescribeBackupsPaginator, ...
 - [DescribeServersPaginator](./paginators.md#describeserverspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("opsworkscm").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("opsworkscm").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_opsworkscm.waiter import NodeAssociatedWaiter, ...
+from mypy_boto3_opsworkscm.waiter import NodeAssociatedWaiter
+
+def get_node_associated_waiter() -> NodeAssociatedWaiter:
+    return Session().client("opsworkscm").get_waiter("node_associated")
 ```
 
 - [NodeAssociatedWaiter](./waiters.md#nodeassociatedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_opsworkscm.literals import BackupStatusType
 
-```python
-from mypy_boto3_opsworkscm.literals import BackupStatusType, ...
+def get_value() -> BackupStatusType:
+    return "DELETING"
 ```
 
 - [BackupStatusType](./literals.md#backupstatustype)
@@ -187,18 +131,22 @@ from mypy_boto3_opsworkscm.literals import BackupStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_opsworkscm.type_defs import AccountAttributeTypeDef
 
-```python
-from mypy_boto3_opsworkscm.type_defs import AccountAttributeTypeDef, ...
+def get_value() -> AccountAttributeTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [AccountAttributeTypeDef](./type_defs.md#accountattributetypedef)
@@ -212,12 +160,16 @@ from mypy_boto3_opsworkscm.type_defs import AccountAttributeTypeDef, ...
 - [DeleteBackupRequestRequestTypeDef](./type_defs.md#deletebackuprequestrequesttypedef)
 - [DeleteServerRequestRequestTypeDef](./type_defs.md#deleteserverrequestrequesttypedef)
 - [DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef)
+- [DescribeBackupsRequestDescribeBackupsPaginateTypeDef](./type_defs.md#describebackupsrequestdescribebackupspaginatetypedef)
 - [DescribeBackupsRequestRequestTypeDef](./type_defs.md#describebackupsrequestrequesttypedef)
 - [DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)
+- [DescribeEventsRequestDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsrequestdescribeeventspaginatetypedef)
 - [DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef)
 - [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)
+- [DescribeNodeAssociationStatusRequestNodeAssociatedWaitTypeDef](./type_defs.md#describenodeassociationstatusrequestnodeassociatedwaittypedef)
 - [DescribeNodeAssociationStatusRequestRequestTypeDef](./type_defs.md#describenodeassociationstatusrequestrequesttypedef)
 - [DescribeNodeAssociationStatusResponseTypeDef](./type_defs.md#describenodeassociationstatusresponsetypedef)
+- [DescribeServersRequestDescribeServersPaginateTypeDef](./type_defs.md#describeserversrequestdescribeserverspaginatetypedef)
 - [DescribeServersRequestRequestTypeDef](./type_defs.md#describeserversrequestrequesttypedef)
 - [DescribeServersResponseTypeDef](./type_defs.md#describeserversresponsetypedef)
 - [DisassociateNodeRequestRequestTypeDef](./type_defs.md#disassociatenoderequestrequesttypedef)
@@ -225,6 +177,7 @@ from mypy_boto3_opsworkscm.type_defs import AccountAttributeTypeDef, ...
 - [EngineAttributeTypeDef](./type_defs.md#engineattributetypedef)
 - [ExportServerEngineAttributeRequestRequestTypeDef](./type_defs.md#exportserverengineattributerequestrequesttypedef)
 - [ExportServerEngineAttributeResponseTypeDef](./type_defs.md#exportserverengineattributeresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -243,3 +196,4 @@ from mypy_boto3_opsworkscm.type_defs import AccountAttributeTypeDef, ...
 - [UpdateServerRequestRequestTypeDef](./type_defs.md#updateserverrequestrequesttypedef)
 - [UpdateServerResponseTypeDef](./type_defs.md#updateserverresponsetypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

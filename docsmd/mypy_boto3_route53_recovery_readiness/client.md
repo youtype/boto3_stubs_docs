@@ -1,65 +1,18 @@
-<a id="route53recoveryreadinessclient-for-boto3-route53recoveryreadiness-module"></a>
+# Route53RecoveryReadinessClient
 
-# Route53RecoveryReadinessClient for boto3 Route53RecoveryReadiness module
+> [Index](../README.md) > [Route53RecoveryReadiness](./README.md) > Route53RecoveryReadinessClient
 
-> [Index](../README.md) > [Route53RecoveryReadiness](./README.md) >
-> Route53RecoveryReadinessClient
+!!! note ""
 
-Auto-generated documentation for
-[Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
-type annotations stubs module
-[mypy-boto3-route53-recovery-readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
-
-- [Route53RecoveryReadinessClient for boto3 Route53RecoveryReadiness module](#route53recoveryreadinessclient-for-boto3-route53recoveryreadiness-module)
-  - [Route53RecoveryReadinessClient](#route53recoveryreadinessclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_cell](#create_cell)
-    - [create_cross_account_authorization](#create_cross_account_authorization)
-    - [create_readiness_check](#create_readiness_check)
-    - [create_recovery_group](#create_recovery_group)
-    - [create_resource_set](#create_resource_set)
-    - [delete_cell](#delete_cell)
-    - [delete_cross_account_authorization](#delete_cross_account_authorization)
-    - [delete_readiness_check](#delete_readiness_check)
-    - [delete_recovery_group](#delete_recovery_group)
-    - [delete_resource_set](#delete_resource_set)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_architecture_recommendations](#get_architecture_recommendations)
-    - [get_cell](#get_cell)
-    - [get_cell_readiness_summary](#get_cell_readiness_summary)
-    - [get_readiness_check](#get_readiness_check)
-    - [get_readiness_check_resource_status](#get_readiness_check_resource_status)
-    - [get_readiness_check_status](#get_readiness_check_status)
-    - [get_recovery_group](#get_recovery_group)
-    - [get_recovery_group_readiness_summary](#get_recovery_group_readiness_summary)
-    - [get_resource_set](#get_resource_set)
-    - [list_cells](#list_cells)
-    - [list_cross_account_authorizations](#list_cross_account_authorizations)
-    - [list_readiness_checks](#list_readiness_checks)
-    - [list_recovery_groups](#list_recovery_groups)
-    - [list_resource_sets](#list_resource_sets)
-    - [list_rules](#list_rules)
-    - [list_tags_for_resources](#list_tags_for_resources)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_cell](#update_cell)
-    - [update_readiness_check](#update_readiness_check)
-    - [update_recovery_group](#update_recovery_group)
-    - [update_resource_set](#update_resource_set)
-    - [get_paginator](#get_paginator)
-
-<a id="route53recoveryreadinessclient"></a>
+    Auto-generated documentation for [Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
+    type annotations stubs module [mypy-boto3-route53-recovery-readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
 
 ## Route53RecoveryReadinessClient
 
-Type annotations for `boto3.client("route53-recovery-readiness")`
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_route53_recovery_readiness.client import Route53RecoveryReadinessClient
 
@@ -67,846 +20,1067 @@ def get_route53-recovery-readiness_client() -> Route53RecoveryReadinessClient:
     return Session().client("route53-recovery-readiness")
 ```
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("route53-recovery-readiness").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("route53-recovery-readiness")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_route53_recovery_readiness.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-Route53RecoveryReadinessClient exceptions.
-
-Type annotations for `boto3.client("route53-recovery-readiness").exceptions`
-method.
-
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("route53-recovery-readiness").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.can_paginate)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_cell"></a>
-
-### create_cell
+### create\_cell
 
 Creates a cell in an account.
 
-Type annotations for `boto3.client("route53-recovery-readiness").create_cell`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").create_cell` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_cell)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.create_cell](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_cell)
+```python title="Method definition"
+def create_cell(
+    self,
+    *,
+    CellName: str,
+    Cells: Sequence[str] = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateCellResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateCellRequestRequestTypeDef](./type_defs.md#createcellrequestrequesttypedef).
+1. See [:material-code-braces: CreateCellResponseTypeDef](./type_defs.md#createcellresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CellName`: `str` *(required)*
-- `Cells`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateCellRequestRequestTypeDef = {  # (1)
+    "CellName": ...,
+}
 
-Returns [CreateCellResponseTypeDef](./type_defs.md#createcellresponsetypedef).
+parent.create_cell(**kwargs)
+```
 
-<a id="create\_cross\_account\_authorization"></a>
+1. See [:material-code-braces: CreateCellRequestRequestTypeDef](./type_defs.md#createcellrequestrequesttypedef) 
 
-### create_cross_account_authorization
+### create\_cross\_account\_authorization
 
 Creates a cross-account readiness authorization.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").create_cross_account_authorization`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").create_cross_account_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_cross_account_authorization)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.create_cross_account_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_cross_account_authorization)
+```python title="Method definition"
+def create_cross_account_authorization(
+    self,
+    *,
+    CrossAccountAuthorization: str,
+) -> CreateCrossAccountAuthorizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateCrossAccountAuthorizationRequestRequestTypeDef](./type_defs.md#createcrossaccountauthorizationrequestrequesttypedef).
+1. See [:material-code-braces: CreateCrossAccountAuthorizationResponseTypeDef](./type_defs.md#createcrossaccountauthorizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CrossAccountAuthorization`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCrossAccountAuthorizationRequestRequestTypeDef = {  # (1)
+    "CrossAccountAuthorization": ...,
+}
 
-Returns
-[CreateCrossAccountAuthorizationResponseTypeDef](./type_defs.md#createcrossaccountauthorizationresponsetypedef).
+parent.create_cross_account_authorization(**kwargs)
+```
 
-<a id="create\_readiness\_check"></a>
+1. See [:material-code-braces: CreateCrossAccountAuthorizationRequestRequestTypeDef](./type_defs.md#createcrossaccountauthorizationrequestrequesttypedef) 
 
-### create_readiness_check
+### create\_readiness\_check
 
 Creates a readiness check in an account.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").create_readiness_check` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").create_readiness_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_readiness_check)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.create_readiness_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_readiness_check)
+```python title="Method definition"
+def create_readiness_check(
+    self,
+    *,
+    ReadinessCheckName: str,
+    ResourceSetName: str,
+    Tags: Mapping[str, str] = ...,
+) -> CreateReadinessCheckResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateReadinessCheckRequestRequestTypeDef](./type_defs.md#createreadinesscheckrequestrequesttypedef).
+1. See [:material-code-braces: CreateReadinessCheckResponseTypeDef](./type_defs.md#createreadinesscheckresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReadinessCheckName`: `str` *(required)*
-- `ResourceSetName`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateReadinessCheckRequestRequestTypeDef = {  # (1)
+    "ReadinessCheckName": ...,
+    "ResourceSetName": ...,
+}
 
-Returns
-[CreateReadinessCheckResponseTypeDef](./type_defs.md#createreadinesscheckresponsetypedef).
+parent.create_readiness_check(**kwargs)
+```
 
-<a id="create\_recovery\_group"></a>
+1. See [:material-code-braces: CreateReadinessCheckRequestRequestTypeDef](./type_defs.md#createreadinesscheckrequestrequesttypedef) 
 
-### create_recovery_group
+### create\_recovery\_group
 
 Creates a recovery group in an account.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").create_recovery_group` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").create_recovery_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_recovery_group)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.create_recovery_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_recovery_group)
+```python title="Method definition"
+def create_recovery_group(
+    self,
+    *,
+    RecoveryGroupName: str,
+    Cells: Sequence[str] = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateRecoveryGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRecoveryGroupRequestRequestTypeDef](./type_defs.md#createrecoverygrouprequestrequesttypedef).
+1. See [:material-code-braces: CreateRecoveryGroupResponseTypeDef](./type_defs.md#createrecoverygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RecoveryGroupName`: `str` *(required)*
-- `Cells`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRecoveryGroupRequestRequestTypeDef = {  # (1)
+    "RecoveryGroupName": ...,
+}
 
-Returns
-[CreateRecoveryGroupResponseTypeDef](./type_defs.md#createrecoverygroupresponsetypedef).
+parent.create_recovery_group(**kwargs)
+```
 
-<a id="create\_resource\_set"></a>
+1. See [:material-code-braces: CreateRecoveryGroupRequestRequestTypeDef](./type_defs.md#createrecoverygrouprequestrequesttypedef) 
 
-### create_resource_set
+### create\_resource\_set
 
 Creates a resource set.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").create_resource_set` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").create_resource_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_resource_set)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.create_resource_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.create_resource_set)
+```python title="Method definition"
+def create_resource_set(
+    self,
+    *,
+    ResourceSetName: str,
+    ResourceSetType: str,
+    Resources: Sequence[ResourceTypeDef],  # (1)
+    Tags: Mapping[str, str] = ...,
+) -> CreateResourceSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourceSetRequestRequestTypeDef](./type_defs.md#createresourcesetrequestrequesttypedef).
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: CreateResourceSetResponseTypeDef](./type_defs.md#createresourcesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceSetName`: `str` *(required)*
-- `ResourceSetType`: `str` *(required)*
-- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-  *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateResourceSetRequestRequestTypeDef = {  # (1)
+    "ResourceSetName": ...,
+    "ResourceSetType": ...,
+    "Resources": ...,
+}
 
-Returns
-[CreateResourceSetResponseTypeDef](./type_defs.md#createresourcesetresponsetypedef).
+parent.create_resource_set(**kwargs)
+```
 
-<a id="delete\_cell"></a>
+1. See [:material-code-braces: CreateResourceSetRequestRequestTypeDef](./type_defs.md#createresourcesetrequestrequesttypedef) 
 
-### delete_cell
+### delete\_cell
 
 Delete a cell.
 
-Type annotations for `boto3.client("route53-recovery-readiness").delete_cell`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").delete_cell` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_cell)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.delete_cell](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_cell)
+```python title="Method definition"
+def delete_cell(
+    self,
+    *,
+    CellName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCellRequestRequestTypeDef](./type_defs.md#deletecellrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CellName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCellRequestRequestTypeDef = {  # (1)
+    "CellName": ...,
+}
 
-<a id="delete\_cross\_account\_authorization"></a>
+parent.delete_cell(**kwargs)
+```
 
-### delete_cross_account_authorization
+1. See [:material-code-braces: DeleteCellRequestRequestTypeDef](./type_defs.md#deletecellrequestrequesttypedef) 
+
+### delete\_cross\_account\_authorization
 
 Deletes cross account readiness authorization.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").delete_cross_account_authorization`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").delete_cross_account_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_cross_account_authorization)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.delete_cross_account_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_cross_account_authorization)
+```python title="Method definition"
+def delete_cross_account_authorization(
+    self,
+    *,
+    CrossAccountAuthorization: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCrossAccountAuthorizationRequestRequestTypeDef](./type_defs.md#deletecrossaccountauthorizationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CrossAccountAuthorization`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCrossAccountAuthorizationRequestRequestTypeDef = {  # (1)
+    "CrossAccountAuthorization": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_cross_account_authorization(**kwargs)
+```
 
-<a id="delete\_readiness\_check"></a>
+1. See [:material-code-braces: DeleteCrossAccountAuthorizationRequestRequestTypeDef](./type_defs.md#deletecrossaccountauthorizationrequestrequesttypedef) 
 
-### delete_readiness_check
+### delete\_readiness\_check
 
 Deletes a readiness check.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").delete_readiness_check` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").delete_readiness_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_readiness_check)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.delete_readiness_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_readiness_check)
+```python title="Method definition"
+def delete_readiness_check(
+    self,
+    *,
+    ReadinessCheckName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteReadinessCheckRequestRequestTypeDef](./type_defs.md#deletereadinesscheckrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ReadinessCheckName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReadinessCheckRequestRequestTypeDef = {  # (1)
+    "ReadinessCheckName": ...,
+}
 
-<a id="delete\_recovery\_group"></a>
+parent.delete_readiness_check(**kwargs)
+```
 
-### delete_recovery_group
+1. See [:material-code-braces: DeleteReadinessCheckRequestRequestTypeDef](./type_defs.md#deletereadinesscheckrequestrequesttypedef) 
+
+### delete\_recovery\_group
 
 Deletes a recovery group.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").delete_recovery_group` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").delete_recovery_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_recovery_group)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.delete_recovery_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_recovery_group)
+```python title="Method definition"
+def delete_recovery_group(
+    self,
+    *,
+    RecoveryGroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRecoveryGroupRequestRequestTypeDef](./type_defs.md#deleterecoverygrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RecoveryGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRecoveryGroupRequestRequestTypeDef = {  # (1)
+    "RecoveryGroupName": ...,
+}
 
-<a id="delete\_resource\_set"></a>
+parent.delete_recovery_group(**kwargs)
+```
 
-### delete_resource_set
+1. See [:material-code-braces: DeleteRecoveryGroupRequestRequestTypeDef](./type_defs.md#deleterecoverygrouprequestrequesttypedef) 
+
+### delete\_resource\_set
 
 Deletes a resource set.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").delete_resource_set` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").delete_resource_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_resource_set)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.delete_resource_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.delete_resource_set)
+```python title="Method definition"
+def delete_resource_set(
+    self,
+    *,
+    ResourceSetName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourceSetRequestRequestTypeDef](./type_defs.md#deleteresourcesetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceSetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResourceSetRequestRequestTypeDef = {  # (1)
+    "ResourceSetName": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_resource_set(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteResourceSetRequestRequestTypeDef](./type_defs.md#deleteresourcesetrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_architecture\_recommendations"></a>
-
-### get_architecture_recommendations
+### get\_architecture\_recommendations
 
 Gets recommendations about architecture designs for improving resiliency for an
 application, based on a recovery group.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").get_architecture_recommendations`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_architecture_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_architecture_recommendations)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.get_architecture_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_architecture_recommendations)
+```python title="Method definition"
+def get_architecture_recommendations(
+    self,
+    *,
+    RecoveryGroupName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetArchitectureRecommendationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetArchitectureRecommendationsRequestRequestTypeDef](./type_defs.md#getarchitecturerecommendationsrequestrequesttypedef).
+1. See [:material-code-braces: GetArchitectureRecommendationsResponseTypeDef](./type_defs.md#getarchitecturerecommendationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RecoveryGroupName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetArchitectureRecommendationsRequestRequestTypeDef = {  # (1)
+    "RecoveryGroupName": ...,
+}
 
-Returns
-[GetArchitectureRecommendationsResponseTypeDef](./type_defs.md#getarchitecturerecommendationsresponsetypedef).
+parent.get_architecture_recommendations(**kwargs)
+```
 
-<a id="get\_cell"></a>
+1. See [:material-code-braces: GetArchitectureRecommendationsRequestRequestTypeDef](./type_defs.md#getarchitecturerecommendationsrequestrequesttypedef) 
 
-### get_cell
+### get\_cell
 
 Gets information about a cell including cell name, cell Amazon Resource Name
 (ARN), ARNs of nested cells for this cell, and a list of those cell ARNs with
 their associated recovery group ARNs.
 
-Type annotations for `boto3.client("route53-recovery-readiness").get_cell`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_cell` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_cell)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.get_cell](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_cell)
+```python title="Method definition"
+def get_cell(
+    self,
+    *,
+    CellName: str,
+) -> GetCellResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCellRequestRequestTypeDef](./type_defs.md#getcellrequestrequesttypedef).
+1. See [:material-code-braces: GetCellResponseTypeDef](./type_defs.md#getcellresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CellName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCellRequestRequestTypeDef = {  # (1)
+    "CellName": ...,
+}
 
-Returns [GetCellResponseTypeDef](./type_defs.md#getcellresponsetypedef).
+parent.get_cell(**kwargs)
+```
 
-<a id="get\_cell\_readiness\_summary"></a>
+1. See [:material-code-braces: GetCellRequestRequestTypeDef](./type_defs.md#getcellrequestrequesttypedef) 
 
-### get_cell_readiness_summary
+### get\_cell\_readiness\_summary
 
 Gets readiness for a cell.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").get_cell_readiness_summary` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_cell_readiness_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_cell_readiness_summary)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.get_cell_readiness_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_cell_readiness_summary)
+```python title="Method definition"
+def get_cell_readiness_summary(
+    self,
+    *,
+    CellName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetCellReadinessSummaryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCellReadinessSummaryRequestRequestTypeDef](./type_defs.md#getcellreadinesssummaryrequestrequesttypedef).
+1. See [:material-code-braces: GetCellReadinessSummaryResponseTypeDef](./type_defs.md#getcellreadinesssummaryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CellName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCellReadinessSummaryRequestRequestTypeDef = {  # (1)
+    "CellName": ...,
+}
 
-Returns
-[GetCellReadinessSummaryResponseTypeDef](./type_defs.md#getcellreadinesssummaryresponsetypedef).
+parent.get_cell_readiness_summary(**kwargs)
+```
 
-<a id="get\_readiness\_check"></a>
+1. See [:material-code-braces: GetCellReadinessSummaryRequestRequestTypeDef](./type_defs.md#getcellreadinesssummaryrequestrequesttypedef) 
 
-### get_readiness_check
+### get\_readiness\_check
 
 Gets details about a readiness check.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").get_readiness_check` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_readiness_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_readiness_check)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.get_readiness_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_readiness_check)
+```python title="Method definition"
+def get_readiness_check(
+    self,
+    *,
+    ReadinessCheckName: str,
+) -> GetReadinessCheckResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetReadinessCheckRequestRequestTypeDef](./type_defs.md#getreadinesscheckrequestrequesttypedef).
+1. See [:material-code-braces: GetReadinessCheckResponseTypeDef](./type_defs.md#getreadinesscheckresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReadinessCheckName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetReadinessCheckRequestRequestTypeDef = {  # (1)
+    "ReadinessCheckName": ...,
+}
 
-Returns
-[GetReadinessCheckResponseTypeDef](./type_defs.md#getreadinesscheckresponsetypedef).
+parent.get_readiness_check(**kwargs)
+```
 
-<a id="get\_readiness\_check\_resource\_status"></a>
+1. See [:material-code-braces: GetReadinessCheckRequestRequestTypeDef](./type_defs.md#getreadinesscheckrequestrequesttypedef) 
 
-### get_readiness_check_resource_status
+### get\_readiness\_check\_resource\_status
 
 Gets individual readiness status for a readiness check.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").get_readiness_check_resource_status`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_readiness_check_resource_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_readiness_check_resource_status)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.get_readiness_check_resource_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_readiness_check_resource_status)
+```python title="Method definition"
+def get_readiness_check_resource_status(
+    self,
+    *,
+    ReadinessCheckName: str,
+    ResourceIdentifier: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetReadinessCheckResourceStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetReadinessCheckResourceStatusRequestRequestTypeDef](./type_defs.md#getreadinesscheckresourcestatusrequestrequesttypedef).
+1. See [:material-code-braces: GetReadinessCheckResourceStatusResponseTypeDef](./type_defs.md#getreadinesscheckresourcestatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReadinessCheckName`: `str` *(required)*
-- `ResourceIdentifier`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetReadinessCheckResourceStatusRequestRequestTypeDef = {  # (1)
+    "ReadinessCheckName": ...,
+    "ResourceIdentifier": ...,
+}
 
-Returns
-[GetReadinessCheckResourceStatusResponseTypeDef](./type_defs.md#getreadinesscheckresourcestatusresponsetypedef).
+parent.get_readiness_check_resource_status(**kwargs)
+```
 
-<a id="get\_readiness\_check\_status"></a>
+1. See [:material-code-braces: GetReadinessCheckResourceStatusRequestRequestTypeDef](./type_defs.md#getreadinesscheckresourcestatusrequestrequesttypedef) 
 
-### get_readiness_check_status
+### get\_readiness\_check\_status
 
 Gets the readiness status for an individual readiness check.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").get_readiness_check_status` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_readiness_check_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_readiness_check_status)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.get_readiness_check_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_readiness_check_status)
+```python title="Method definition"
+def get_readiness_check_status(
+    self,
+    *,
+    ReadinessCheckName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetReadinessCheckStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetReadinessCheckStatusRequestRequestTypeDef](./type_defs.md#getreadinesscheckstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetReadinessCheckStatusResponseTypeDef](./type_defs.md#getreadinesscheckstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReadinessCheckName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetReadinessCheckStatusRequestRequestTypeDef = {  # (1)
+    "ReadinessCheckName": ...,
+}
 
-Returns
-[GetReadinessCheckStatusResponseTypeDef](./type_defs.md#getreadinesscheckstatusresponsetypedef).
+parent.get_readiness_check_status(**kwargs)
+```
 
-<a id="get\_recovery\_group"></a>
+1. See [:material-code-braces: GetReadinessCheckStatusRequestRequestTypeDef](./type_defs.md#getreadinesscheckstatusrequestrequesttypedef) 
 
-### get_recovery_group
+### get\_recovery\_group
 
 Gets details about a recovery group, including a list of the cells that are
 included in it.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").get_recovery_group` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_recovery_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_recovery_group)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.get_recovery_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_recovery_group)
+```python title="Method definition"
+def get_recovery_group(
+    self,
+    *,
+    RecoveryGroupName: str,
+) -> GetRecoveryGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecoveryGroupRequestRequestTypeDef](./type_defs.md#getrecoverygrouprequestrequesttypedef).
+1. See [:material-code-braces: GetRecoveryGroupResponseTypeDef](./type_defs.md#getrecoverygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RecoveryGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRecoveryGroupRequestRequestTypeDef = {  # (1)
+    "RecoveryGroupName": ...,
+}
 
-Returns
-[GetRecoveryGroupResponseTypeDef](./type_defs.md#getrecoverygroupresponsetypedef).
+parent.get_recovery_group(**kwargs)
+```
 
-<a id="get\_recovery\_group\_readiness\_summary"></a>
+1. See [:material-code-braces: GetRecoveryGroupRequestRequestTypeDef](./type_defs.md#getrecoverygrouprequestrequesttypedef) 
 
-### get_recovery_group_readiness_summary
+### get\_recovery\_group\_readiness\_summary
 
 Displays a summary of information about a recovery group's readiness status.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").get_recovery_group_readiness_summary`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_recovery_group_readiness_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_recovery_group_readiness_summary)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.get_recovery_group_readiness_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_recovery_group_readiness_summary)
+```python title="Method definition"
+def get_recovery_group_readiness_summary(
+    self,
+    *,
+    RecoveryGroupName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetRecoveryGroupReadinessSummaryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecoveryGroupReadinessSummaryRequestRequestTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryrequestrequesttypedef).
+1. See [:material-code-braces: GetRecoveryGroupReadinessSummaryResponseTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RecoveryGroupName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRecoveryGroupReadinessSummaryRequestRequestTypeDef = {  # (1)
+    "RecoveryGroupName": ...,
+}
 
-Returns
-[GetRecoveryGroupReadinessSummaryResponseTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryresponsetypedef).
+parent.get_recovery_group_readiness_summary(**kwargs)
+```
 
-<a id="get\_resource\_set"></a>
+1. See [:material-code-braces: GetRecoveryGroupReadinessSummaryRequestRequestTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryrequestrequesttypedef) 
 
-### get_resource_set
+### get\_resource\_set
 
 Displays the details about a resource set, including a list of the resources in
 the set.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").get_resource_set` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_resource_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_resource_set)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.get_resource_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.get_resource_set)
+```python title="Method definition"
+def get_resource_set(
+    self,
+    *,
+    ResourceSetName: str,
+) -> GetResourceSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourceSetRequestRequestTypeDef](./type_defs.md#getresourcesetrequestrequesttypedef).
+1. See [:material-code-braces: GetResourceSetResponseTypeDef](./type_defs.md#getresourcesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceSetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResourceSetRequestRequestTypeDef = {  # (1)
+    "ResourceSetName": ...,
+}
 
-Returns
-[GetResourceSetResponseTypeDef](./type_defs.md#getresourcesetresponsetypedef).
+parent.get_resource_set(**kwargs)
+```
 
-<a id="list\_cells"></a>
+1. See [:material-code-braces: GetResourceSetRequestRequestTypeDef](./type_defs.md#getresourcesetrequestrequesttypedef) 
 
-### list_cells
+### list\_cells
 
 Lists the cells for an account.
 
-Type annotations for `boto3.client("route53-recovery-readiness").list_cells`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").list_cells` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_cells)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.list_cells](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_cells)
+```python title="Method definition"
+def list_cells(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCellsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCellsRequestRequestTypeDef](./type_defs.md#listcellsrequestrequesttypedef).
+1. See [:material-code-braces: ListCellsResponseTypeDef](./type_defs.md#listcellsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCellsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListCellsResponseTypeDef](./type_defs.md#listcellsresponsetypedef).
+parent.list_cells(**kwargs)
+```
 
-<a id="list\_cross\_account\_authorizations"></a>
+1. See [:material-code-braces: ListCellsRequestRequestTypeDef](./type_defs.md#listcellsrequestrequesttypedef) 
 
-### list_cross_account_authorizations
+### list\_cross\_account\_authorizations
 
 Lists the cross-account readiness authorizations that are in place for an
 account.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").list_cross_account_authorizations`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").list_cross_account_authorizations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_cross_account_authorizations)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.list_cross_account_authorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_cross_account_authorizations)
+```python title="Method definition"
+def list_cross_account_authorizations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCrossAccountAuthorizationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCrossAccountAuthorizationsRequestRequestTypeDef](./type_defs.md#listcrossaccountauthorizationsrequestrequesttypedef).
+1. See [:material-code-braces: ListCrossAccountAuthorizationsResponseTypeDef](./type_defs.md#listcrossaccountauthorizationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCrossAccountAuthorizationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListCrossAccountAuthorizationsResponseTypeDef](./type_defs.md#listcrossaccountauthorizationsresponsetypedef).
+parent.list_cross_account_authorizations(**kwargs)
+```
 
-<a id="list\_readiness\_checks"></a>
+1. See [:material-code-braces: ListCrossAccountAuthorizationsRequestRequestTypeDef](./type_defs.md#listcrossaccountauthorizationsrequestrequesttypedef) 
 
-### list_readiness_checks
+### list\_readiness\_checks
 
 Lists the readiness checks for an account.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").list_readiness_checks` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").list_readiness_checks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_readiness_checks)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.list_readiness_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_readiness_checks)
+```python title="Method definition"
+def list_readiness_checks(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListReadinessChecksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListReadinessChecksRequestRequestTypeDef](./type_defs.md#listreadinesschecksrequestrequesttypedef).
+1. See [:material-code-braces: ListReadinessChecksResponseTypeDef](./type_defs.md#listreadinesschecksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListReadinessChecksRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListReadinessChecksResponseTypeDef](./type_defs.md#listreadinesschecksresponsetypedef).
+parent.list_readiness_checks(**kwargs)
+```
 
-<a id="list\_recovery\_groups"></a>
+1. See [:material-code-braces: ListReadinessChecksRequestRequestTypeDef](./type_defs.md#listreadinesschecksrequestrequesttypedef) 
 
-### list_recovery_groups
+### list\_recovery\_groups
 
 Lists the recovery groups in an account.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").list_recovery_groups` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").list_recovery_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_recovery_groups)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.list_recovery_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_recovery_groups)
+```python title="Method definition"
+def list_recovery_groups(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRecoveryGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecoveryGroupsRequestRequestTypeDef](./type_defs.md#listrecoverygroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListRecoveryGroupsResponseTypeDef](./type_defs.md#listrecoverygroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRecoveryGroupsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListRecoveryGroupsResponseTypeDef](./type_defs.md#listrecoverygroupsresponsetypedef).
+parent.list_recovery_groups(**kwargs)
+```
 
-<a id="list\_resource\_sets"></a>
+1. See [:material-code-braces: ListRecoveryGroupsRequestRequestTypeDef](./type_defs.md#listrecoverygroupsrequestrequesttypedef) 
 
-### list_resource_sets
+### list\_resource\_sets
 
 Lists the resource sets in an account.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").list_resource_sets` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").list_resource_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_resource_sets)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.list_resource_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_resource_sets)
+```python title="Method definition"
+def list_resource_sets(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListResourceSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourceSetsRequestRequestTypeDef](./type_defs.md#listresourcesetsrequestrequesttypedef).
+1. See [:material-code-braces: ListResourceSetsResponseTypeDef](./type_defs.md#listresourcesetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResourceSetsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResourceSetsResponseTypeDef](./type_defs.md#listresourcesetsresponsetypedef).
+parent.list_resource_sets(**kwargs)
+```
 
-<a id="list\_rules"></a>
+1. See [:material-code-braces: ListResourceSetsRequestRequestTypeDef](./type_defs.md#listresourcesetsrequestrequesttypedef) 
 
-### list_rules
+### list\_rules
 
 Lists all readiness rules, or lists the readiness rules for a specific resource
 type.
 
-Type annotations for `boto3.client("route53-recovery-readiness").list_rules`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").list_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_rules)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_rules)
+```python title="Method definition"
+def list_rules(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ResourceType: str = ...,
+) -> ListRulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef).
+1. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ResourceType`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRulesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
+parent.list_rules(**kwargs)
+```
 
-<a id="list\_tags\_for\_resources"></a>
+1. See [:material-code-braces: ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef) 
 
-### list_tags_for_resources
+### list\_tags\_for\_resources
 
 Lists the tags for a resource.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").list_tags_for_resources` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").list_tags_for_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_tags_for_resources)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.list_tags_for_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.list_tags_for_resources)
+```python title="Method definition"
+def list_tags_for_resources(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourcesRequestRequestTypeDef](./type_defs.md#listtagsforresourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourcesResponseTypeDef](./type_defs.md#listtagsforresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourcesRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourcesResponseTypeDef](./type_defs.md#listtagsforresourcesresponsetypedef).
+parent.list_tags_for_resources(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourcesRequestRequestTypeDef](./type_defs.md#listtagsforresourcesrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds a tag to a resource.
 
-Type annotations for `boto3.client("route53-recovery-readiness").tag_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.tag_resource)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from a resource.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.untag_resource)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_cell"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_cell
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_cell
 
 Updates a cell to replace the list of nested cells with a new list of nested
 cells.
 
-Type annotations for `boto3.client("route53-recovery-readiness").update_cell`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").update_cell` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.update_cell)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.update_cell](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.update_cell)
+```python title="Method definition"
+def update_cell(
+    self,
+    *,
+    CellName: str,
+    Cells: Sequence[str],
+) -> UpdateCellResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCellRequestRequestTypeDef](./type_defs.md#updatecellrequestrequesttypedef).
+1. See [:material-code-braces: UpdateCellResponseTypeDef](./type_defs.md#updatecellresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CellName`: `str` *(required)*
-- `Cells`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateCellRequestRequestTypeDef = {  # (1)
+    "CellName": ...,
+    "Cells": ...,
+}
 
-Returns [UpdateCellResponseTypeDef](./type_defs.md#updatecellresponsetypedef).
+parent.update_cell(**kwargs)
+```
 
-<a id="update\_readiness\_check"></a>
+1. See [:material-code-braces: UpdateCellRequestRequestTypeDef](./type_defs.md#updatecellrequestrequesttypedef) 
 
-### update_readiness_check
+### update\_readiness\_check
 
 Updates a readiness check.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").update_readiness_check` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").update_readiness_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.update_readiness_check)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.update_readiness_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.update_readiness_check)
+```python title="Method definition"
+def update_readiness_check(
+    self,
+    *,
+    ReadinessCheckName: str,
+    ResourceSetName: str,
+) -> UpdateReadinessCheckResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateReadinessCheckRequestRequestTypeDef](./type_defs.md#updatereadinesscheckrequestrequesttypedef).
+1. See [:material-code-braces: UpdateReadinessCheckResponseTypeDef](./type_defs.md#updatereadinesscheckresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReadinessCheckName`: `str` *(required)*
-- `ResourceSetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateReadinessCheckRequestRequestTypeDef = {  # (1)
+    "ReadinessCheckName": ...,
+    "ResourceSetName": ...,
+}
 
-Returns
-[UpdateReadinessCheckResponseTypeDef](./type_defs.md#updatereadinesscheckresponsetypedef).
+parent.update_readiness_check(**kwargs)
+```
 
-<a id="update\_recovery\_group"></a>
+1. See [:material-code-braces: UpdateReadinessCheckRequestRequestTypeDef](./type_defs.md#updatereadinesscheckrequestrequesttypedef) 
 
-### update_recovery_group
+### update\_recovery\_group
 
 Updates a recovery group.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").update_recovery_group` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").update_recovery_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.update_recovery_group)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.update_recovery_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.update_recovery_group)
+```python title="Method definition"
+def update_recovery_group(
+    self,
+    *,
+    Cells: Sequence[str],
+    RecoveryGroupName: str,
+) -> UpdateRecoveryGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRecoveryGroupRequestRequestTypeDef](./type_defs.md#updaterecoverygrouprequestrequesttypedef).
+1. See [:material-code-braces: UpdateRecoveryGroupResponseTypeDef](./type_defs.md#updaterecoverygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Cells`: `Sequence`\[`str`\] *(required)*
-- `RecoveryGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRecoveryGroupRequestRequestTypeDef = {  # (1)
+    "Cells": ...,
+    "RecoveryGroupName": ...,
+}
 
-Returns
-[UpdateRecoveryGroupResponseTypeDef](./type_defs.md#updaterecoverygroupresponsetypedef).
+parent.update_recovery_group(**kwargs)
+```
 
-<a id="update\_resource\_set"></a>
+1. See [:material-code-braces: UpdateRecoveryGroupRequestRequestTypeDef](./type_defs.md#updaterecoverygrouprequestrequesttypedef) 
 
-### update_resource_set
+### update\_resource\_set
 
 Updates a resource set.
 
-Type annotations for
-`boto3.client("route53-recovery-readiness").update_resource_set` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").update_resource_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.update_resource_set)
 
-Boto3 documentation:
-[Route53RecoveryReadiness.Client.update_resource_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.update_resource_set)
+```python title="Method definition"
+def update_resource_set(
+    self,
+    *,
+    ResourceSetName: str,
+    ResourceSetType: str,
+    Resources: Sequence[ResourceTypeDef],  # (1)
+) -> UpdateResourceSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResourceSetRequestRequestTypeDef](./type_defs.md#updateresourcesetrequestrequesttypedef).
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: UpdateResourceSetResponseTypeDef](./type_defs.md#updateresourcesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceSetName`: `str` *(required)*
-- `ResourceSetType`: `str` *(required)*
-- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateResourceSetRequestRequestTypeDef = {  # (1)
+    "ResourceSetName": ...,
+    "ResourceSetType": ...,
+    "Resources": ...,
+}
 
-Returns
-[UpdateResourceSetResponseTypeDef](./type_defs.md#updateresourcesetresponsetypedef).
+parent.update_resource_set(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateResourceSetRequestRequestTypeDef](./type_defs.md#updateresourcesetrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("route53-recovery-readiness").get_paginator`
-method with overloads.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-readiness").get_paginator` method with overloads.
 
-- `client.get_paginator("get_cell_readiness_summary")` ->
-  [GetCellReadinessSummaryPaginator](./paginators.md#getcellreadinesssummarypaginator)
-- `client.get_paginator("get_readiness_check_resource_status")` ->
-  [GetReadinessCheckResourceStatusPaginator](./paginators.md#getreadinesscheckresourcestatuspaginator)
-- `client.get_paginator("get_readiness_check_status")` ->
-  [GetReadinessCheckStatusPaginator](./paginators.md#getreadinesscheckstatuspaginator)
-- `client.get_paginator("get_recovery_group_readiness_summary")` ->
-  [GetRecoveryGroupReadinessSummaryPaginator](./paginators.md#getrecoverygroupreadinesssummarypaginator)
-- `client.get_paginator("list_cells")` ->
-  [ListCellsPaginator](./paginators.md#listcellspaginator)
-- `client.get_paginator("list_cross_account_authorizations")` ->
-  [ListCrossAccountAuthorizationsPaginator](./paginators.md#listcrossaccountauthorizationspaginator)
-- `client.get_paginator("list_readiness_checks")` ->
-  [ListReadinessChecksPaginator](./paginators.md#listreadinesscheckspaginator)
-- `client.get_paginator("list_recovery_groups")` ->
-  [ListRecoveryGroupsPaginator](./paginators.md#listrecoverygroupspaginator)
-- `client.get_paginator("list_resource_sets")` ->
-  [ListResourceSetsPaginator](./paginators.md#listresourcesetspaginator)
-- `client.get_paginator("list_rules")` ->
-  [ListRulesPaginator](./paginators.md#listrulespaginator)
+- `client.get_paginator("get_cell_readiness_summary")` -> [GetCellReadinessSummaryPaginator](./paginators.md#getcellreadinesssummarypaginator)
+- `client.get_paginator("get_readiness_check_resource_status")` -> [GetReadinessCheckResourceStatusPaginator](./paginators.md#getreadinesscheckresourcestatuspaginator)
+- `client.get_paginator("get_readiness_check_status")` -> [GetReadinessCheckStatusPaginator](./paginators.md#getreadinesscheckstatuspaginator)
+- `client.get_paginator("get_recovery_group_readiness_summary")` -> [GetRecoveryGroupReadinessSummaryPaginator](./paginators.md#getrecoverygroupreadinesssummarypaginator)
+- `client.get_paginator("list_cells")` -> [ListCellsPaginator](./paginators.md#listcellspaginator)
+- `client.get_paginator("list_cross_account_authorizations")` -> [ListCrossAccountAuthorizationsPaginator](./paginators.md#listcrossaccountauthorizationspaginator)
+- `client.get_paginator("list_readiness_checks")` -> [ListReadinessChecksPaginator](./paginators.md#listreadinesscheckspaginator)
+- `client.get_paginator("list_recovery_groups")` -> [ListRecoveryGroupsPaginator](./paginators.md#listrecoverygroupspaginator)
+- `client.get_paginator("list_resource_sets")` -> [ListResourceSetsPaginator](./paginators.md#listresourcesetspaginator)
+- `client.get_paginator("list_rules")` -> [ListRulesPaginator](./paginators.md#listrulespaginator)
+
+
+

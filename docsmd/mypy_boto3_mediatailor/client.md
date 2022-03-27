@@ -1,69 +1,18 @@
-<a id="mediatailorclient-for-boto3-mediatailor-module"></a>
-
-# MediaTailorClient for boto3 MediaTailor module
+# MediaTailorClient
 
 > [Index](../README.md) > [MediaTailor](./README.md) > MediaTailorClient
 
-Auto-generated documentation for
-[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
-type annotations stubs module
-[mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
+!!! note ""
 
-- [MediaTailorClient for boto3 MediaTailor module](#mediatailorclient-for-boto3-mediatailor-module)
-  - [MediaTailorClient](#mediatailorclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [configure_logs_for_playback_configuration](#configure_logs_for_playback_configuration)
-    - [create_channel](#create_channel)
-    - [create_prefetch_schedule](#create_prefetch_schedule)
-    - [create_program](#create_program)
-    - [create_source_location](#create_source_location)
-    - [create_vod_source](#create_vod_source)
-    - [delete_channel](#delete_channel)
-    - [delete_channel_policy](#delete_channel_policy)
-    - [delete_playback_configuration](#delete_playback_configuration)
-    - [delete_prefetch_schedule](#delete_prefetch_schedule)
-    - [delete_program](#delete_program)
-    - [delete_source_location](#delete_source_location)
-    - [delete_vod_source](#delete_vod_source)
-    - [describe_channel](#describe_channel)
-    - [describe_program](#describe_program)
-    - [describe_source_location](#describe_source_location)
-    - [describe_vod_source](#describe_vod_source)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_channel_policy](#get_channel_policy)
-    - [get_channel_schedule](#get_channel_schedule)
-    - [get_playback_configuration](#get_playback_configuration)
-    - [get_prefetch_schedule](#get_prefetch_schedule)
-    - [list_alerts](#list_alerts)
-    - [list_channels](#list_channels)
-    - [list_playback_configurations](#list_playback_configurations)
-    - [list_prefetch_schedules](#list_prefetch_schedules)
-    - [list_source_locations](#list_source_locations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_vod_sources](#list_vod_sources)
-    - [put_channel_policy](#put_channel_policy)
-    - [put_playback_configuration](#put_playback_configuration)
-    - [start_channel](#start_channel)
-    - [stop_channel](#stop_channel)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_channel](#update_channel)
-    - [update_source_location](#update_source_location)
-    - [update_vod_source](#update_vod_source)
-    - [get_paginator](#get_paginator)
-
-<a id="mediatailorclient"></a>
+    Auto-generated documentation for [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+    type annotations stubs module [mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 ## MediaTailorClient
 
-Type annotations for `boto3.client("mediatailor")`
+Type annotations and code completion for `#!python boto3.client("mediatailor")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mediatailor.client import MediaTailorClient
 
@@ -71,975 +20,1263 @@ def get_mediatailor_client() -> MediaTailorClient:
     return Session().client("mediatailor")
 ```
 
-Boto3 documentation:
-[MediaTailor.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mediatailor").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mediatailor")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mediatailor.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MediaTailorClient exceptions.
-
-Type annotations for `boto3.client("mediatailor").exceptions` method.
-
-Boto3 documentation:
-[MediaTailor.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mediatailor").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.can_paginate)
 
-Boto3 documentation:
-[MediaTailor.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="configure\_logs\_for\_playback\_configuration"></a>
-
-### configure_logs_for_playback_configuration
+### configure\_logs\_for\_playback\_configuration
 
 Configures Amazon CloudWatch log settings for a playback configuration.
 
-Type annotations for
-`boto3.client("mediatailor").configure_logs_for_playback_configuration` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").configure_logs_for_playback_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.configure_logs_for_playback_configuration)
 
-Boto3 documentation:
-[MediaTailor.Client.configure_logs_for_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.configure_logs_for_playback_configuration)
+```python title="Method definition"
+def configure_logs_for_playback_configuration(
+    self,
+    *,
+    PercentEnabled: int,
+    PlaybackConfigurationName: str,
+) -> ConfigureLogsForPlaybackConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#configurelogsforplaybackconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ConfigureLogsForPlaybackConfigurationResponseTypeDef](./type_defs.md#configurelogsforplaybackconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PercentEnabled`: `int` *(required)*
-- `PlaybackConfigurationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef = {  # (1)
+    "PercentEnabled": ...,
+    "PlaybackConfigurationName": ...,
+}
 
-Returns
-[ConfigureLogsForPlaybackConfigurationResponseTypeDef](./type_defs.md#configurelogsforplaybackconfigurationresponsetypedef).
+parent.configure_logs_for_playback_configuration(**kwargs)
+```
 
-<a id="create\_channel"></a>
+1. See [:material-code-braces: ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#configurelogsforplaybackconfigurationrequestrequesttypedef) 
 
-### create_channel
+### create\_channel
 
 Creates a channel.
 
-Type annotations for `boto3.client("mediatailor").create_channel` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").create_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_channel)
 
-Boto3 documentation:
-[MediaTailor.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_channel)
+```python title="Method definition"
+def create_channel(
+    self,
+    *,
+    ChannelName: str,
+    Outputs: Sequence[RequestOutputItemTypeDef],  # (1)
+    PlaybackMode: PlaybackModeType,  # (2)
+    FillerSlate: SlateSourceTypeDef = ...,  # (3)
+    Tags: Mapping[str, str] = ...,
+) -> CreateChannelResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
+1. See [:material-code-braces: RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef) 
+2. See [:material-code-brackets: PlaybackModeType](./literals.md#playbackmodetype) 
+3. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
+4. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
-- `Outputs`:
-  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
-  *(required)*
-- `PlaybackMode`: [PlaybackModeType](./literals.md#playbackmodetype)
-  *(required)*
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateChannelRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+    "Outputs": ...,
+    "PlaybackMode": ...,
+}
 
-Returns
-[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+parent.create_channel(**kwargs)
+```
 
-<a id="create\_prefetch\_schedule"></a>
+1. See [:material-code-braces: CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef) 
 
-### create_prefetch_schedule
+### create\_prefetch\_schedule
 
 Creates a new prefetch schedule for the specified playback configuration.
 
-Type annotations for `boto3.client("mediatailor").create_prefetch_schedule`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").create_prefetch_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_prefetch_schedule)
 
-Boto3 documentation:
-[MediaTailor.Client.create_prefetch_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_prefetch_schedule)
+```python title="Method definition"
+def create_prefetch_schedule(
+    self,
+    *,
+    Consumption: PrefetchConsumptionTypeDef,  # (1)
+    Name: str,
+    PlaybackConfigurationName: str,
+    Retrieval: PrefetchRetrievalTypeDef,  # (2)
+    StreamId: str = ...,
+) -> CreatePrefetchScheduleResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePrefetchScheduleRequestRequestTypeDef](./type_defs.md#createprefetchschedulerequestrequesttypedef).
+1. See [:material-code-braces: PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef) 
+2. See [:material-code-braces: PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef) 
+3. See [:material-code-braces: CreatePrefetchScheduleResponseTypeDef](./type_defs.md#createprefetchscheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Consumption`:
-  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
-  *(required)*
-- `Name`: `str` *(required)*
-- `PlaybackConfigurationName`: `str` *(required)*
-- `Retrieval`:
-  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
-  *(required)*
-- `StreamId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePrefetchScheduleRequestRequestTypeDef = {  # (1)
+    "Consumption": ...,
+    "Name": ...,
+    "PlaybackConfigurationName": ...,
+    "Retrieval": ...,
+}
 
-Returns
-[CreatePrefetchScheduleResponseTypeDef](./type_defs.md#createprefetchscheduleresponsetypedef).
+parent.create_prefetch_schedule(**kwargs)
+```
 
-<a id="create\_program"></a>
+1. See [:material-code-braces: CreatePrefetchScheduleRequestRequestTypeDef](./type_defs.md#createprefetchschedulerequestrequesttypedef) 
 
-### create_program
+### create\_program
 
 Creates a program.
 
-Type annotations for `boto3.client("mediatailor").create_program` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").create_program` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_program)
 
-Boto3 documentation:
-[MediaTailor.Client.create_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_program)
+```python title="Method definition"
+def create_program(
+    self,
+    *,
+    ChannelName: str,
+    ProgramName: str,
+    ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (1)
+    SourceLocationName: str,
+    VodSourceName: str,
+    AdBreaks: Sequence[AdBreakTypeDef] = ...,  # (2)
+) -> CreateProgramResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateProgramRequestRequestTypeDef](./type_defs.md#createprogramrequestrequesttypedef).
+1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
+2. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
+3. See [:material-code-braces: CreateProgramResponseTypeDef](./type_defs.md#createprogramresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
-- `ProgramName`: `str` *(required)*
-- `ScheduleConfiguration`:
-  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
-  *(required)*
-- `SourceLocationName`: `str` *(required)*
-- `VodSourceName`: `str` *(required)*
-- `AdBreaks`: `Sequence`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateProgramRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+    "ProgramName": ...,
+    "ScheduleConfiguration": ...,
+    "SourceLocationName": ...,
+    "VodSourceName": ...,
+}
 
-Returns
-[CreateProgramResponseTypeDef](./type_defs.md#createprogramresponsetypedef).
+parent.create_program(**kwargs)
+```
 
-<a id="create\_source\_location"></a>
+1. See [:material-code-braces: CreateProgramRequestRequestTypeDef](./type_defs.md#createprogramrequestrequesttypedef) 
 
-### create_source_location
+### create\_source\_location
 
 Creates a source location on a specific channel.
 
-Type annotations for `boto3.client("mediatailor").create_source_location`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").create_source_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_source_location)
 
-Boto3 documentation:
-[MediaTailor.Client.create_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_source_location)
+```python title="Method definition"
+def create_source_location(
+    self,
+    *,
+    HttpConfiguration: HttpConfigurationTypeDef,  # (1)
+    SourceLocationName: str,
+    AccessConfiguration: AccessConfigurationTypeDef = ...,  # (2)
+    DefaultSegmentDeliveryConfiguration: DefaultSegmentDeliveryConfigurationTypeDef = ...,  # (3)
+    SegmentDeliveryConfigurations: Sequence[SegmentDeliveryConfigurationTypeDef] = ...,  # (4)
+    Tags: Mapping[str, str] = ...,
+) -> CreateSourceLocationResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateSourceLocationRequestRequestTypeDef](./type_defs.md#createsourcelocationrequestrequesttypedef).
+1. See [:material-code-braces: HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef) 
+2. See [:material-code-braces: AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef) 
+3. See [:material-code-braces: DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef) 
+4. See [:material-code-braces: SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef) 
+5. See [:material-code-braces: CreateSourceLocationResponseTypeDef](./type_defs.md#createsourcelocationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HttpConfiguration`:
-  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
-  *(required)*
-- `SourceLocationName`: `str` *(required)*
-- `AccessConfiguration`:
-  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
-- `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `SegmentDeliveryConfigurations`:
-  `Sequence`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSourceLocationRequestRequestTypeDef = {  # (1)
+    "HttpConfiguration": ...,
+    "SourceLocationName": ...,
+}
 
-Returns
-[CreateSourceLocationResponseTypeDef](./type_defs.md#createsourcelocationresponsetypedef).
+parent.create_source_location(**kwargs)
+```
 
-<a id="create\_vod\_source"></a>
+1. See [:material-code-braces: CreateSourceLocationRequestRequestTypeDef](./type_defs.md#createsourcelocationrequestrequesttypedef) 
 
-### create_vod_source
+### create\_vod\_source
 
 Creates name for a specific VOD source in a source location.
 
-Type annotations for `boto3.client("mediatailor").create_vod_source` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").create_vod_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source)
 
-Boto3 documentation:
-[MediaTailor.Client.create_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.create_vod_source)
+```python title="Method definition"
+def create_vod_source(
+    self,
+    *,
+    HttpPackageConfigurations: Sequence[HttpPackageConfigurationTypeDef],  # (1)
+    SourceLocationName: str,
+    VodSourceName: str,
+    Tags: Mapping[str, str] = ...,
+) -> CreateVodSourceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateVodSourceRequestRequestTypeDef](./type_defs.md#createvodsourcerequestrequesttypedef).
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 
+2. See [:material-code-braces: CreateVodSourceResponseTypeDef](./type_defs.md#createvodsourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HttpPackageConfigurations`:
-  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
-  *(required)*
-- `SourceLocationName`: `str` *(required)*
-- `VodSourceName`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateVodSourceRequestRequestTypeDef = {  # (1)
+    "HttpPackageConfigurations": ...,
+    "SourceLocationName": ...,
+    "VodSourceName": ...,
+}
 
-Returns
-[CreateVodSourceResponseTypeDef](./type_defs.md#createvodsourceresponsetypedef).
+parent.create_vod_source(**kwargs)
+```
 
-<a id="delete\_channel"></a>
+1. See [:material-code-braces: CreateVodSourceRequestRequestTypeDef](./type_defs.md#createvodsourcerequestrequesttypedef) 
 
-### delete_channel
+### delete\_channel
 
 Deletes a channel.
 
-Type annotations for `boto3.client("mediatailor").delete_channel` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").delete_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel)
 
-Boto3 documentation:
-[MediaTailor.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel)
+```python title="Method definition"
+def delete_channel(
+    self,
+    *,
+    ChannelName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_channel(**kwargs)
+```
 
-<a id="delete\_channel\_policy"></a>
+1. See [:material-code-braces: DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef) 
 
-### delete_channel_policy
+### delete\_channel\_policy
 
 Deletes a channel's IAM policy.
 
-Type annotations for `boto3.client("mediatailor").delete_channel_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").delete_channel_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy)
 
-Boto3 documentation:
-[MediaTailor.Client.delete_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_channel_policy)
+```python title="Method definition"
+def delete_channel_policy(
+    self,
+    *,
+    ChannelName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelPolicyRequestRequestTypeDef](./type_defs.md#deletechannelpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelPolicyRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_channel_policy(**kwargs)
+```
 
-<a id="delete\_playback\_configuration"></a>
+1. See [:material-code-braces: DeleteChannelPolicyRequestRequestTypeDef](./type_defs.md#deletechannelpolicyrequestrequesttypedef) 
 
-### delete_playback_configuration
+### delete\_playback\_configuration
 
 Deletes the playback configuration for the specified name.
 
-Type annotations for
-`boto3.client("mediatailor").delete_playback_configuration` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").delete_playback_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration)
 
-Boto3 documentation:
-[MediaTailor.Client.delete_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_playback_configuration)
+```python title="Method definition"
+def delete_playback_configuration(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePlaybackConfigurationRequestRequestTypeDef](./type_defs.md#deleteplaybackconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePlaybackConfigurationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_playback_configuration(**kwargs)
+```
 
-<a id="delete\_prefetch\_schedule"></a>
+1. See [:material-code-braces: DeletePlaybackConfigurationRequestRequestTypeDef](./type_defs.md#deleteplaybackconfigurationrequestrequesttypedef) 
 
-### delete_prefetch_schedule
+### delete\_prefetch\_schedule
 
 Deletes a prefetch schedule for a specific playback configuration.
 
-Type annotations for `boto3.client("mediatailor").delete_prefetch_schedule`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").delete_prefetch_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_prefetch_schedule)
 
-Boto3 documentation:
-[MediaTailor.Client.delete_prefetch_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_prefetch_schedule)
+```python title="Method definition"
+def delete_prefetch_schedule(
+    self,
+    *,
+    Name: str,
+    PlaybackConfigurationName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePrefetchScheduleRequestRequestTypeDef](./type_defs.md#deleteprefetchschedulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `PlaybackConfigurationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePrefetchScheduleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "PlaybackConfigurationName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_prefetch_schedule(**kwargs)
+```
 
-<a id="delete\_program"></a>
+1. See [:material-code-braces: DeletePrefetchScheduleRequestRequestTypeDef](./type_defs.md#deleteprefetchschedulerequestrequesttypedef) 
 
-### delete_program
+### delete\_program
 
 Deletes a specific program on a specific channel.
 
-Type annotations for `boto3.client("mediatailor").delete_program` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").delete_program` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_program)
 
-Boto3 documentation:
-[MediaTailor.Client.delete_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_program)
+```python title="Method definition"
+def delete_program(
+    self,
+    *,
+    ChannelName: str,
+    ProgramName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProgramRequestRequestTypeDef](./type_defs.md#deleteprogramrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
-- `ProgramName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProgramRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+    "ProgramName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_program(**kwargs)
+```
 
-<a id="delete\_source\_location"></a>
+1. See [:material-code-braces: DeleteProgramRequestRequestTypeDef](./type_defs.md#deleteprogramrequestrequesttypedef) 
 
-### delete_source_location
+### delete\_source\_location
 
 Deletes a source location on a specific channel.
 
-Type annotations for `boto3.client("mediatailor").delete_source_location`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").delete_source_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location)
 
-Boto3 documentation:
-[MediaTailor.Client.delete_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_source_location)
+```python title="Method definition"
+def delete_source_location(
+    self,
+    *,
+    SourceLocationName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSourceLocationRequestRequestTypeDef](./type_defs.md#deletesourcelocationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SourceLocationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSourceLocationRequestRequestTypeDef = {  # (1)
+    "SourceLocationName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_source_location(**kwargs)
+```
 
-<a id="delete\_vod\_source"></a>
+1. See [:material-code-braces: DeleteSourceLocationRequestRequestTypeDef](./type_defs.md#deletesourcelocationrequestrequesttypedef) 
 
-### delete_vod_source
+### delete\_vod\_source
 
 Deletes a specific VOD source in a specific source location.
 
-Type annotations for `boto3.client("mediatailor").delete_vod_source` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").delete_vod_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source)
 
-Boto3 documentation:
-[MediaTailor.Client.delete_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.delete_vod_source)
+```python title="Method definition"
+def delete_vod_source(
+    self,
+    *,
+    SourceLocationName: str,
+    VodSourceName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVodSourceRequestRequestTypeDef](./type_defs.md#deletevodsourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SourceLocationName`: `str` *(required)*
-- `VodSourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVodSourceRequestRequestTypeDef = {  # (1)
+    "SourceLocationName": ...,
+    "VodSourceName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_vod_source(**kwargs)
+```
 
-<a id="describe\_channel"></a>
+1. See [:material-code-braces: DeleteVodSourceRequestRequestTypeDef](./type_defs.md#deletevodsourcerequestrequesttypedef) 
 
-### describe_channel
+### describe\_channel
 
 Describes the properties of a specific channel.
 
-Type annotations for `boto3.client("mediatailor").describe_channel` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").describe_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_channel)
 
-Boto3 documentation:
-[MediaTailor.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_channel)
+```python title="Method definition"
+def describe_channel(
+    self,
+    *,
+    ChannelName: str,
+) -> DescribeChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
 
-Returns
-[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+parent.describe_channel(**kwargs)
+```
 
-<a id="describe\_program"></a>
+1. See [:material-code-braces: DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef) 
 
-### describe_program
+### describe\_program
 
 Retrieves the properties of the requested program.
 
-Type annotations for `boto3.client("mediatailor").describe_program` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").describe_program` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_program)
 
-Boto3 documentation:
-[MediaTailor.Client.describe_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_program)
+```python title="Method definition"
+def describe_program(
+    self,
+    *,
+    ChannelName: str,
+    ProgramName: str,
+) -> DescribeProgramResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProgramRequestRequestTypeDef](./type_defs.md#describeprogramrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProgramResponseTypeDef](./type_defs.md#describeprogramresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
-- `ProgramName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProgramRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+    "ProgramName": ...,
+}
 
-Returns
-[DescribeProgramResponseTypeDef](./type_defs.md#describeprogramresponsetypedef).
+parent.describe_program(**kwargs)
+```
 
-<a id="describe\_source\_location"></a>
+1. See [:material-code-braces: DescribeProgramRequestRequestTypeDef](./type_defs.md#describeprogramrequestrequesttypedef) 
 
-### describe_source_location
+### describe\_source\_location
 
 Retrieves the properties of the requested source location.
 
-Type annotations for `boto3.client("mediatailor").describe_source_location`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").describe_source_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location)
 
-Boto3 documentation:
-[MediaTailor.Client.describe_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_source_location)
+```python title="Method definition"
+def describe_source_location(
+    self,
+    *,
+    SourceLocationName: str,
+) -> DescribeSourceLocationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSourceLocationRequestRequestTypeDef](./type_defs.md#describesourcelocationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSourceLocationResponseTypeDef](./type_defs.md#describesourcelocationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceLocationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSourceLocationRequestRequestTypeDef = {  # (1)
+    "SourceLocationName": ...,
+}
 
-Returns
-[DescribeSourceLocationResponseTypeDef](./type_defs.md#describesourcelocationresponsetypedef).
+parent.describe_source_location(**kwargs)
+```
 
-<a id="describe\_vod\_source"></a>
+1. See [:material-code-braces: DescribeSourceLocationRequestRequestTypeDef](./type_defs.md#describesourcelocationrequestrequesttypedef) 
 
-### describe_vod_source
+### describe\_vod\_source
 
 Provides details about a specific VOD source in a specific source location.
 
-Type annotations for `boto3.client("mediatailor").describe_vod_source` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").describe_vod_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source)
 
-Boto3 documentation:
-[MediaTailor.Client.describe_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.describe_vod_source)
+```python title="Method definition"
+def describe_vod_source(
+    self,
+    *,
+    SourceLocationName: str,
+    VodSourceName: str,
+) -> DescribeVodSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVodSourceRequestRequestTypeDef](./type_defs.md#describevodsourcerequestrequesttypedef).
+1. See [:material-code-braces: DescribeVodSourceResponseTypeDef](./type_defs.md#describevodsourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceLocationName`: `str` *(required)*
-- `VodSourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeVodSourceRequestRequestTypeDef = {  # (1)
+    "SourceLocationName": ...,
+    "VodSourceName": ...,
+}
 
-Returns
-[DescribeVodSourceResponseTypeDef](./type_defs.md#describevodsourceresponsetypedef).
+parent.describe_vod_source(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeVodSourceRequestRequestTypeDef](./type_defs.md#describevodsourcerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mediatailor").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MediaTailor.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_channel\_policy"></a>
-
-### get_channel_policy
+### get\_channel\_policy
 
 Retrieves information about a channel's IAM policy.
 
-Type annotations for `boto3.client("mediatailor").get_channel_policy` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").get_channel_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy)
 
-Boto3 documentation:
-[MediaTailor.Client.get_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_policy)
+```python title="Method definition"
+def get_channel_policy(
+    self,
+    *,
+    ChannelName: str,
+) -> GetChannelPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChannelPolicyRequestRequestTypeDef](./type_defs.md#getchannelpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetChannelPolicyResponseTypeDef](./type_defs.md#getchannelpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetChannelPolicyRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
 
-Returns
-[GetChannelPolicyResponseTypeDef](./type_defs.md#getchannelpolicyresponsetypedef).
+parent.get_channel_policy(**kwargs)
+```
 
-<a id="get\_channel\_schedule"></a>
+1. See [:material-code-braces: GetChannelPolicyRequestRequestTypeDef](./type_defs.md#getchannelpolicyrequestrequesttypedef) 
 
-### get_channel_schedule
+### get\_channel\_schedule
 
 Retrieves information about your channel's schedule.
 
-Type annotations for `boto3.client("mediatailor").get_channel_schedule` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").get_channel_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_schedule)
 
-Boto3 documentation:
-[MediaTailor.Client.get_channel_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_channel_schedule)
+```python title="Method definition"
+def get_channel_schedule(
+    self,
+    *,
+    ChannelName: str,
+    DurationMinutes: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetChannelScheduleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChannelScheduleRequestRequestTypeDef](./type_defs.md#getchannelschedulerequestrequesttypedef).
+1. See [:material-code-braces: GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
-- `DurationMinutes`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetChannelScheduleRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
 
-Returns
-[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef).
+parent.get_channel_schedule(**kwargs)
+```
 
-<a id="get\_playback\_configuration"></a>
+1. See [:material-code-braces: GetChannelScheduleRequestRequestTypeDef](./type_defs.md#getchannelschedulerequestrequesttypedef) 
 
-### get_playback_configuration
+### get\_playback\_configuration
 
 Returns the playback configuration for the specified name.
 
-Type annotations for `boto3.client("mediatailor").get_playback_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").get_playback_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration)
 
-Boto3 documentation:
-[MediaTailor.Client.get_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_playback_configuration)
+```python title="Method definition"
+def get_playback_configuration(
+    self,
+    *,
+    Name: str,
+) -> GetPlaybackConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#getplaybackconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetPlaybackConfigurationResponseTypeDef](./type_defs.md#getplaybackconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPlaybackConfigurationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetPlaybackConfigurationResponseTypeDef](./type_defs.md#getplaybackconfigurationresponsetypedef).
+parent.get_playback_configuration(**kwargs)
+```
 
-<a id="get\_prefetch\_schedule"></a>
+1. See [:material-code-braces: GetPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#getplaybackconfigurationrequestrequesttypedef) 
 
-### get_prefetch_schedule
+### get\_prefetch\_schedule
 
 Returns information about the prefetch schedule for a specific playback
 configuration.
 
-Type annotations for `boto3.client("mediatailor").get_prefetch_schedule`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").get_prefetch_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_prefetch_schedule)
 
-Boto3 documentation:
-[MediaTailor.Client.get_prefetch_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.get_prefetch_schedule)
+```python title="Method definition"
+def get_prefetch_schedule(
+    self,
+    *,
+    Name: str,
+    PlaybackConfigurationName: str,
+) -> GetPrefetchScheduleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPrefetchScheduleRequestRequestTypeDef](./type_defs.md#getprefetchschedulerequestrequesttypedef).
+1. See [:material-code-braces: GetPrefetchScheduleResponseTypeDef](./type_defs.md#getprefetchscheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `PlaybackConfigurationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPrefetchScheduleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "PlaybackConfigurationName": ...,
+}
 
-Returns
-[GetPrefetchScheduleResponseTypeDef](./type_defs.md#getprefetchscheduleresponsetypedef).
+parent.get_prefetch_schedule(**kwargs)
+```
 
-<a id="list\_alerts"></a>
+1. See [:material-code-braces: GetPrefetchScheduleRequestRequestTypeDef](./type_defs.md#getprefetchschedulerequestrequesttypedef) 
 
-### list_alerts
+### list\_alerts
 
 Returns a list of alerts for the given resource.
 
-Type annotations for `boto3.client("mediatailor").list_alerts` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").list_alerts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_alerts)
 
-Boto3 documentation:
-[MediaTailor.Client.list_alerts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_alerts)
+```python title="Method definition"
+def list_alerts(
+    self,
+    *,
+    ResourceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAlertsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAlertsRequestRequestTypeDef](./type_defs.md#listalertsrequestrequesttypedef).
+1. See [:material-code-braces: ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAlertsRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef).
+parent.list_alerts(**kwargs)
+```
 
-<a id="list\_channels"></a>
+1. See [:material-code-braces: ListAlertsRequestRequestTypeDef](./type_defs.md#listalertsrequestrequesttypedef) 
 
-### list_channels
+### list\_channels
 
 Retrieves a list of channels that are associated with this account.
 
-Type annotations for `boto3.client("mediatailor").list_channels` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").list_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_channels)
 
-Boto3 documentation:
-[MediaTailor.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_channels)
+```python title="Method definition"
+def list_channels(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+parent.list_channels(**kwargs)
+```
 
-<a id="list\_playback\_configurations"></a>
+1. See [:material-code-braces: ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef) 
 
-### list_playback_configurations
+### list\_playback\_configurations
 
 Returns a list of the playback configurations defined in AWS Elemental
 MediaTailor.
 
-Type annotations for `boto3.client("mediatailor").list_playback_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").list_playback_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations)
 
-Boto3 documentation:
-[MediaTailor.Client.list_playback_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_playback_configurations)
+```python title="Method definition"
+def list_playback_configurations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPlaybackConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPlaybackConfigurationsRequestRequestTypeDef](./type_defs.md#listplaybackconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPlaybackConfigurationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef).
+parent.list_playback_configurations(**kwargs)
+```
 
-<a id="list\_prefetch\_schedules"></a>
+1. See [:material-code-braces: ListPlaybackConfigurationsRequestRequestTypeDef](./type_defs.md#listplaybackconfigurationsrequestrequesttypedef) 
 
-### list_prefetch_schedules
+### list\_prefetch\_schedules
 
 Creates a new prefetch schedule.
 
-Type annotations for `boto3.client("mediatailor").list_prefetch_schedules`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").list_prefetch_schedules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_prefetch_schedules)
 
-Boto3 documentation:
-[MediaTailor.Client.list_prefetch_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_prefetch_schedules)
+```python title="Method definition"
+def list_prefetch_schedules(
+    self,
+    *,
+    PlaybackConfigurationName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    StreamId: str = ...,
+) -> ListPrefetchSchedulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPrefetchSchedulesRequestRequestTypeDef](./type_defs.md#listprefetchschedulesrequestrequesttypedef).
+1. See [:material-code-braces: ListPrefetchSchedulesResponseTypeDef](./type_defs.md#listprefetchschedulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PlaybackConfigurationName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `StreamId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPrefetchSchedulesRequestRequestTypeDef = {  # (1)
+    "PlaybackConfigurationName": ...,
+}
 
-Returns
-[ListPrefetchSchedulesResponseTypeDef](./type_defs.md#listprefetchschedulesresponsetypedef).
+parent.list_prefetch_schedules(**kwargs)
+```
 
-<a id="list\_source\_locations"></a>
+1. See [:material-code-braces: ListPrefetchSchedulesRequestRequestTypeDef](./type_defs.md#listprefetchschedulesrequestrequesttypedef) 
 
-### list_source_locations
+### list\_source\_locations
 
 Retrieves a list of source locations.
 
-Type annotations for `boto3.client("mediatailor").list_source_locations`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").list_source_locations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations)
 
-Boto3 documentation:
-[MediaTailor.Client.list_source_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_source_locations)
+```python title="Method definition"
+def list_source_locations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSourceLocationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSourceLocationsRequestRequestTypeDef](./type_defs.md#listsourcelocationsrequestrequesttypedef).
+1. See [:material-code-braces: ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSourceLocationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef).
+parent.list_source_locations(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSourceLocationsRequestRequestTypeDef](./type_defs.md#listsourcelocationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of the tags assigned to the specified playback configuration
 resource.
 
-Type annotations for `boto3.client("mediatailor").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[MediaTailor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_vod\_sources"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_vod_sources
+### list\_vod\_sources
 
 Lists all the VOD sources in a source location.
 
-Type annotations for `boto3.client("mediatailor").list_vod_sources` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").list_vod_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources)
 
-Boto3 documentation:
-[MediaTailor.Client.list_vod_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.list_vod_sources)
+```python title="Method definition"
+def list_vod_sources(
+    self,
+    *,
+    SourceLocationName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListVodSourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVodSourcesRequestRequestTypeDef](./type_defs.md#listvodsourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceLocationName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVodSourcesRequestRequestTypeDef = {  # (1)
+    "SourceLocationName": ...,
+}
 
-Returns
-[ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef).
+parent.list_vod_sources(**kwargs)
+```
 
-<a id="put\_channel\_policy"></a>
+1. See [:material-code-braces: ListVodSourcesRequestRequestTypeDef](./type_defs.md#listvodsourcesrequestrequesttypedef) 
 
-### put_channel_policy
+### put\_channel\_policy
 
 Creates an IAM policy for the channel.
 
-Type annotations for `boto3.client("mediatailor").put_channel_policy` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").put_channel_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_channel_policy)
 
-Boto3 documentation:
-[MediaTailor.Client.put_channel_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_channel_policy)
+```python title="Method definition"
+def put_channel_policy(
+    self,
+    *,
+    ChannelName: str,
+    Policy: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutChannelPolicyRequestRequestTypeDef](./type_defs.md#putchannelpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
-- `Policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutChannelPolicyRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+    "Policy": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_channel_policy(**kwargs)
+```
 
-<a id="put\_playback\_configuration"></a>
+1. See [:material-code-braces: PutChannelPolicyRequestRequestTypeDef](./type_defs.md#putchannelpolicyrequestrequesttypedef) 
 
-### put_playback_configuration
+### put\_playback\_configuration
 
 Adds a new playback configuration to AWS Elemental MediaTailor.
 
-Type annotations for `boto3.client("mediatailor").put_playback_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").put_playback_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration)
 
-Boto3 documentation:
-[MediaTailor.Client.put_playback_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.put_playback_configuration)
+```python title="Method definition"
+def put_playback_configuration(
+    self,
+    *,
+    AdDecisionServerUrl: str = ...,
+    AvailSuppression: AvailSuppressionTypeDef = ...,  # (1)
+    Bumper: BumperTypeDef = ...,  # (2)
+    CdnConfiguration: CdnConfigurationTypeDef = ...,  # (3)
+    ConfigurationAliases: Mapping[str, Mapping[str, str]] = ...,
+    DashConfiguration: DashConfigurationForPutTypeDef = ...,  # (4)
+    LivePreRollConfiguration: LivePreRollConfigurationTypeDef = ...,  # (5)
+    ManifestProcessingRules: ManifestProcessingRulesTypeDef = ...,  # (6)
+    Name: str = ...,
+    PersonalizationThresholdSeconds: int = ...,
+    SlateAdUrl: str = ...,
+    Tags: Mapping[str, str] = ...,
+    TranscodeProfileName: str = ...,
+    VideoContentSourceUrl: str = ...,
+) -> PutPlaybackConfigurationResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[PutPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#putplaybackconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef) 
+2. See [:material-code-braces: BumperTypeDef](./type_defs.md#bumpertypedef) 
+3. See [:material-code-braces: CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef) 
+4. See [:material-code-braces: DashConfigurationForPutTypeDef](./type_defs.md#dashconfigurationforputtypedef) 
+5. See [:material-code-braces: LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef) 
+6. See [:material-code-braces: ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef) 
+7. See [:material-code-braces: PutPlaybackConfigurationResponseTypeDef](./type_defs.md#putplaybackconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AdDecisionServerUrl`: `str`
-- `AvailSuppression`:
-  [AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef)
-- `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
-- `CdnConfiguration`:
-  [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
-- `ConfigurationAliases`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
-- `DashConfiguration`:
-  [DashConfigurationForPutTypeDef](./type_defs.md#dashconfigurationforputtypedef)
-- `LivePreRollConfiguration`:
-  [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
-- `ManifestProcessingRules`:
-  [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
-- `Name`: `str`
-- `PersonalizationThresholdSeconds`: `int`
-- `SlateAdUrl`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `TranscodeProfileName`: `str`
-- `VideoContentSourceUrl`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutPlaybackConfigurationRequestRequestTypeDef = {  # (1)
+    "AdDecisionServerUrl": ...,
+}
 
-Returns
-[PutPlaybackConfigurationResponseTypeDef](./type_defs.md#putplaybackconfigurationresponsetypedef).
+parent.put_playback_configuration(**kwargs)
+```
 
-<a id="start\_channel"></a>
+1. See [:material-code-braces: PutPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#putplaybackconfigurationrequestrequesttypedef) 
 
-### start_channel
+### start\_channel
 
 Starts a specific channel.
 
-Type annotations for `boto3.client("mediatailor").start_channel` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").start_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.start_channel)
 
-Boto3 documentation:
-[MediaTailor.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.start_channel)
+```python title="Method definition"
+def start_channel(
+    self,
+    *,
+    ChannelName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartChannelRequestRequestTypeDef](./type_defs.md#startchannelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartChannelRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_channel(**kwargs)
+```
 
-<a id="stop\_channel"></a>
+1. See [:material-code-braces: StartChannelRequestRequestTypeDef](./type_defs.md#startchannelrequestrequesttypedef) 
 
-### stop_channel
+### stop\_channel
 
 Stops a specific channel.
 
-Type annotations for `boto3.client("mediatailor").stop_channel` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").stop_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.stop_channel)
 
-Boto3 documentation:
-[MediaTailor.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.stop_channel)
+```python title="Method definition"
+def stop_channel(
+    self,
+    *,
+    ChannelName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopChannelRequestRequestTypeDef](./type_defs.md#stopchannelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopChannelRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_channel(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopChannelRequestRequestTypeDef](./type_defs.md#stopchannelrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to the specified playback configuration resource.
 
-Type annotations for `boto3.client("mediatailor").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.tag_resource)
 
-Boto3 documentation:
-[MediaTailor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Removes tags from the specified playback configuration resource.
 
-Type annotations for `boto3.client("mediatailor").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.untag_resource)
 
-Boto3 documentation:
-[MediaTailor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_channel"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_channel
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_channel
 
 Updates an existing channel.
 
-Type annotations for `boto3.client("mediatailor").update_channel` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").update_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_channel)
 
-Boto3 documentation:
-[MediaTailor.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_channel)
+```python title="Method definition"
+def update_channel(
+    self,
+    *,
+    ChannelName: str,
+    Outputs: Sequence[RequestOutputItemTypeDef],  # (1)
+    FillerSlate: SlateSourceTypeDef = ...,  # (2)
+) -> UpdateChannelResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
+1. See [:material-code-braces: RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef) 
+2. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
+3. See [:material-code-braces: UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelName`: `str` *(required)*
-- `Outputs`:
-  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
-  *(required)*
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelRequestRequestTypeDef = {  # (1)
+    "ChannelName": ...,
+    "Outputs": ...,
+}
 
-Returns
-[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+parent.update_channel(**kwargs)
+```
 
-<a id="update\_source\_location"></a>
+1. See [:material-code-braces: UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef) 
 
-### update_source_location
+### update\_source\_location
 
 Updates a source location on a specific channel.
 
-Type annotations for `boto3.client("mediatailor").update_source_location`
-method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").update_source_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_source_location)
 
-Boto3 documentation:
-[MediaTailor.Client.update_source_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_source_location)
+```python title="Method definition"
+def update_source_location(
+    self,
+    *,
+    HttpConfiguration: HttpConfigurationTypeDef,  # (1)
+    SourceLocationName: str,
+    AccessConfiguration: AccessConfigurationTypeDef = ...,  # (2)
+    DefaultSegmentDeliveryConfiguration: DefaultSegmentDeliveryConfigurationTypeDef = ...,  # (3)
+    SegmentDeliveryConfigurations: Sequence[SegmentDeliveryConfigurationTypeDef] = ...,  # (4)
+) -> UpdateSourceLocationResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSourceLocationRequestRequestTypeDef](./type_defs.md#updatesourcelocationrequestrequesttypedef).
+1. See [:material-code-braces: HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef) 
+2. See [:material-code-braces: AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef) 
+3. See [:material-code-braces: DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef) 
+4. See [:material-code-braces: SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef) 
+5. See [:material-code-braces: UpdateSourceLocationResponseTypeDef](./type_defs.md#updatesourcelocationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HttpConfiguration`:
-  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
-  *(required)*
-- `SourceLocationName`: `str` *(required)*
-- `AccessConfiguration`:
-  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
-- `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `SegmentDeliveryConfigurations`:
-  `Sequence`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateSourceLocationRequestRequestTypeDef = {  # (1)
+    "HttpConfiguration": ...,
+    "SourceLocationName": ...,
+}
 
-Returns
-[UpdateSourceLocationResponseTypeDef](./type_defs.md#updatesourcelocationresponsetypedef).
+parent.update_source_location(**kwargs)
+```
 
-<a id="update\_vod\_source"></a>
+1. See [:material-code-braces: UpdateSourceLocationRequestRequestTypeDef](./type_defs.md#updatesourcelocationrequestrequesttypedef) 
 
-### update_vod_source
+### update\_vod\_source
 
 Updates a specific VOD source in a specific source location.
 
-Type annotations for `boto3.client("mediatailor").update_vod_source` method.
+Type annotations and code completion for `#!python boto3.client("mediatailor").update_vod_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source)
 
-Boto3 documentation:
-[MediaTailor.Client.update_vod_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.update_vod_source)
+```python title="Method definition"
+def update_vod_source(
+    self,
+    *,
+    HttpPackageConfigurations: Sequence[HttpPackageConfigurationTypeDef],  # (1)
+    SourceLocationName: str,
+    VodSourceName: str,
+) -> UpdateVodSourceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVodSourceRequestRequestTypeDef](./type_defs.md#updatevodsourcerequestrequesttypedef).
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 
+2. See [:material-code-braces: UpdateVodSourceResponseTypeDef](./type_defs.md#updatevodsourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HttpPackageConfigurations`:
-  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
-  *(required)*
-- `SourceLocationName`: `str` *(required)*
-- `VodSourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateVodSourceRequestRequestTypeDef = {  # (1)
+    "HttpPackageConfigurations": ...,
+    "SourceLocationName": ...,
+    "VodSourceName": ...,
+}
 
-Returns
-[UpdateVodSourceResponseTypeDef](./type_defs.md#updatevodsourceresponsetypedef).
+parent.update_vod_source(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateVodSourceRequestRequestTypeDef](./type_defs.md#updatevodsourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mediatailor").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("mediatailor").get_paginator` method with overloads.
 
-- `client.get_paginator("get_channel_schedule")` ->
-  [GetChannelSchedulePaginator](./paginators.md#getchannelschedulepaginator)
-- `client.get_paginator("list_alerts")` ->
-  [ListAlertsPaginator](./paginators.md#listalertspaginator)
-- `client.get_paginator("list_channels")` ->
-  [ListChannelsPaginator](./paginators.md#listchannelspaginator)
-- `client.get_paginator("list_playback_configurations")` ->
-  [ListPlaybackConfigurationsPaginator](./paginators.md#listplaybackconfigurationspaginator)
-- `client.get_paginator("list_prefetch_schedules")` ->
-  [ListPrefetchSchedulesPaginator](./paginators.md#listprefetchschedulespaginator)
-- `client.get_paginator("list_source_locations")` ->
-  [ListSourceLocationsPaginator](./paginators.md#listsourcelocationspaginator)
-- `client.get_paginator("list_vod_sources")` ->
-  [ListVodSourcesPaginator](./paginators.md#listvodsourcespaginator)
+- `client.get_paginator("get_channel_schedule")` -> [GetChannelSchedulePaginator](./paginators.md#getchannelschedulepaginator)
+- `client.get_paginator("list_alerts")` -> [ListAlertsPaginator](./paginators.md#listalertspaginator)
+- `client.get_paginator("list_channels")` -> [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+- `client.get_paginator("list_playback_configurations")` -> [ListPlaybackConfigurationsPaginator](./paginators.md#listplaybackconfigurationspaginator)
+- `client.get_paginator("list_prefetch_schedules")` -> [ListPrefetchSchedulesPaginator](./paginators.md#listprefetchschedulespaginator)
+- `client.get_paginator("list_source_locations")` -> [ListSourceLocationsPaginator](./paginators.md#listsourcelocationspaginator)
+- `client.get_paginator("list_vod_sources")` -> [ListVodSourcesPaginator](./paginators.md#listvodsourcespaginator)
+
+
+

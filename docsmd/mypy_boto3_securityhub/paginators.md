@@ -1,38 +1,18 @@
-<a id="paginators-for-boto3-securityhub-module"></a>
-
-# Paginators for boto3 SecurityHub module
+# Paginators
 
 > [Index](../README.md) > [SecurityHub](./README.md) > Paginators
 
-Auto-generated documentation for
-[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
-type annotations stubs module
-[mypy-boto3-securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
+!!! note ""
 
-- [Paginators for boto3 SecurityHub module](#paginators-for-boto3-securityhub-module)
-  - [DescribeActionTargetsPaginator](#describeactiontargetspaginator)
-  - [DescribeProductsPaginator](#describeproductspaginator)
-  - [DescribeStandardsPaginator](#describestandardspaginator)
-  - [DescribeStandardsControlsPaginator](#describestandardscontrolspaginator)
-  - [GetEnabledStandardsPaginator](#getenabledstandardspaginator)
-  - [GetFindingsPaginator](#getfindingspaginator)
-  - [GetInsightsPaginator](#getinsightspaginator)
-  - [ListEnabledProductsForImportPaginator](#listenabledproductsforimportpaginator)
-  - [ListFindingAggregatorsPaginator](#listfindingaggregatorspaginator)
-  - [ListInvitationsPaginator](#listinvitationspaginator)
-  - [ListMembersPaginator](#listmemberspaginator)
-  - [ListOrganizationAdminAccountsPaginator](#listorganizationadminaccountspaginator)
-
-<a id="describeactiontargetspaginator"></a>
+    Auto-generated documentation for [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
+    type annotations stubs module [mypy-boto3-securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 ## DescribeActionTargetsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("describe_action_targets")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("describe_action_targets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeActionTargets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import DescribeActionTargetsPaginator
@@ -41,28 +21,40 @@ def get_describe_action_targets_paginator() -> DescribeActionTargetsPaginator:
     return Session().client("securityhub").get_paginator("describe_action_targets")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.DescribeActionTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeActionTargets)
 
-Arguments for `DescribeActionTargetsPaginator.paginate` method:
+### paginate
 
-- `ActionTargetArns`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeActionTargetsPaginator.paginate` method.
 
-`DescribeActionTargetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ActionTargetArns: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeActionTargetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeproductspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef = {  # (1)
+    "ActionTargetArns": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef](./type_defs.md#describeactiontargetsrequestdescribeactiontargetspaginatetypedef) 
 ## DescribeProductsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("describe_products")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("describe_products")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeProducts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import DescribeProductsPaginator
@@ -71,28 +63,40 @@ def get_describe_products_paginator() -> DescribeProductsPaginator:
     return Session().client("securityhub").get_paginator("describe_products")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.DescribeProducts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeProducts)
 
-Arguments for `DescribeProductsPaginator.paginate` method:
+### paginate
 
-- `ProductArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeProductsPaginator.paginate` method.
 
-`DescribeProductsPaginator.paginate` returns
-`_PageIterator`\[[DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProductArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeProductsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describestandardspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeProductsRequestDescribeProductsPaginateTypeDef = {  # (1)
+    "ProductArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeProductsRequestDescribeProductsPaginateTypeDef](./type_defs.md#describeproductsrequestdescribeproductspaginatetypedef) 
 ## DescribeStandardsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("describe_standards")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("describe_standards")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeStandards)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import DescribeStandardsPaginator
@@ -101,27 +105,39 @@ def get_describe_standards_paginator() -> DescribeStandardsPaginator:
     return Session().client("securityhub").get_paginator("describe_standards")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.DescribeStandards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeStandards)
 
-Arguments for `DescribeStandardsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeStandardsPaginator.paginate` method.
 
-`DescribeStandardsPaginator.paginate` returns
-`_PageIterator`\[[DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeStandardsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describestandardscontrolspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStandardsRequestDescribeStandardsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStandardsRequestDescribeStandardsPaginateTypeDef](./type_defs.md#describestandardsrequestdescribestandardspaginatetypedef) 
 ## DescribeStandardsControlsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("describe_standards_controls")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("describe_standards_controls")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeStandardsControls)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import DescribeStandardsControlsPaginator
@@ -130,28 +146,40 @@ def get_describe_standards_controls_paginator() -> DescribeStandardsControlsPagi
     return Session().client("securityhub").get_paginator("describe_standards_controls")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.DescribeStandardsControls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.DescribeStandardsControls)
 
-Arguments for `DescribeStandardsControlsPaginator.paginate` method:
+### paginate
 
-- `StandardsSubscriptionArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeStandardsControlsPaginator.paginate` method.
 
-`DescribeStandardsControlsPaginator.paginate` returns
-`_PageIterator`\[[DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StandardsSubscriptionArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeStandardsControlsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getenabledstandardspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef = {  # (1)
+    "StandardsSubscriptionArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef](./type_defs.md#describestandardscontrolsrequestdescribestandardscontrolspaginatetypedef) 
 ## GetEnabledStandardsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("get_enabled_standards")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("get_enabled_standards")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetEnabledStandards)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import GetEnabledStandardsPaginator
@@ -160,28 +188,40 @@ def get_get_enabled_standards_paginator() -> GetEnabledStandardsPaginator:
     return Session().client("securityhub").get_paginator("get_enabled_standards")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.GetEnabledStandards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetEnabledStandards)
 
-Arguments for `GetEnabledStandardsPaginator.paginate` method:
+### paginate
 
-- `StandardsSubscriptionArns`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetEnabledStandardsPaginator.paginate` method.
 
-`GetEnabledStandardsPaginator.paginate` returns
-`_PageIterator`\[[GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StandardsSubscriptionArns: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetEnabledStandardsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getfindingspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef = {  # (1)
+    "StandardsSubscriptionArns": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef](./type_defs.md#getenabledstandardsrequestgetenabledstandardspaginatetypedef) 
 ## GetFindingsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("get_findings")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("get_findings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetFindings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import GetFindingsPaginator
@@ -190,31 +230,43 @@ def get_get_findings_paginator() -> GetFindingsPaginator:
     return Session().client("securityhub").get_paginator("get_findings")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.GetFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetFindings)
 
-Arguments for `GetFindingsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
-- `SortCriteria`:
-  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetFindingsPaginator.paginate` method.
 
-`GetFindingsPaginator.paginate` returns
-`_PageIterator`\[[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: AwsSecurityFindingFiltersTypeDef = ...,  # (1)
+    SortCriteria: Sequence[SortCriterionTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[GetFindingsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="getinsightspaginator"></a>
+1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
+2. See [:material-code-braces: SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetFindingsRequestGetFindingsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetFindingsRequestGetFindingsPaginateTypeDef](./type_defs.md#getfindingsrequestgetfindingspaginatetypedef) 
 ## GetInsightsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("get_insights")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("get_insights")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetInsights)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import GetInsightsPaginator
@@ -223,28 +275,40 @@ def get_get_insights_paginator() -> GetInsightsPaginator:
     return Session().client("securityhub").get_paginator("get_insights")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.GetInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.GetInsights)
 
-Arguments for `GetInsightsPaginator.paginate` method:
+### paginate
 
-- `InsightArns`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetInsightsPaginator.paginate` method.
 
-`GetInsightsPaginator.paginate` returns
-`_PageIterator`\[[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InsightArns: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetInsightsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listenabledproductsforimportpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetInsightsRequestGetInsightsPaginateTypeDef = {  # (1)
+    "InsightArns": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetInsightsRequestGetInsightsPaginateTypeDef](./type_defs.md#getinsightsrequestgetinsightspaginatetypedef) 
 ## ListEnabledProductsForImportPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("list_enabled_products_for_import")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("list_enabled_products_for_import")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListEnabledProductsForImport)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import ListEnabledProductsForImportPaginator
@@ -253,27 +317,39 @@ def get_list_enabled_products_for_import_paginator() -> ListEnabledProductsForIm
     return Session().client("securityhub").get_paginator("list_enabled_products_for_import")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.ListEnabledProductsForImport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListEnabledProductsForImport)
 
-Arguments for `ListEnabledProductsForImportPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnabledProductsForImportPaginator.paginate` method.
 
-`ListEnabledProductsForImportPaginator.paginate` returns
-`_PageIterator`\[[ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEnabledProductsForImportResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfindingaggregatorspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef](./type_defs.md#listenabledproductsforimportrequestlistenabledproductsforimportpaginatetypedef) 
 ## ListFindingAggregatorsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("list_finding_aggregators")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("list_finding_aggregators")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListFindingAggregators)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import ListFindingAggregatorsPaginator
@@ -282,27 +358,39 @@ def get_list_finding_aggregators_paginator() -> ListFindingAggregatorsPaginator:
     return Session().client("securityhub").get_paginator("list_finding_aggregators")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.ListFindingAggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListFindingAggregators)
 
-Arguments for `ListFindingAggregatorsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFindingAggregatorsPaginator.paginate` method.
 
-`ListFindingAggregatorsPaginator.paginate` returns
-`_PageIterator`\[[ListFindingAggregatorsResponseTypeDef](./type_defs.md#listfindingaggregatorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFindingAggregatorsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinvitationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFindingAggregatorsResponseTypeDef](./type_defs.md#listfindingaggregatorsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef](./type_defs.md#listfindingaggregatorsrequestlistfindingaggregatorspaginatetypedef) 
 ## ListInvitationsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("list_invitations")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("list_invitations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListInvitations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import ListInvitationsPaginator
@@ -311,27 +399,39 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return Session().client("securityhub").get_paginator("list_invitations")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.ListInvitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListInvitations)
 
-Arguments for `ListInvitationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInvitationsPaginator.paginate` method.
 
-`ListInvitationsPaginator.paginate` returns
-`_PageIterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInvitationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmemberspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInvitationsRequestListInvitationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInvitationsRequestListInvitationsPaginateTypeDef](./type_defs.md#listinvitationsrequestlistinvitationspaginatetypedef) 
 ## ListMembersPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("list_members")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("list_members")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListMembers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import ListMembersPaginator
@@ -340,28 +440,40 @@ def get_list_members_paginator() -> ListMembersPaginator:
     return Session().client("securityhub").get_paginator("list_members")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListMembers)
 
-Arguments for `ListMembersPaginator.paginate` method:
+### paginate
 
-- `OnlyAssociated`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMembersPaginator.paginate` method.
 
-`ListMembersPaginator.paginate` returns
-`_PageIterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OnlyAssociated: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMembersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listorganizationadminaccountspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMembersRequestListMembersPaginateTypeDef = {  # (1)
+    "OnlyAssociated": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMembersRequestListMembersPaginateTypeDef](./type_defs.md#listmembersrequestlistmemberspaginatetypedef) 
 ## ListOrganizationAdminAccountsPaginator
 
-Type annotations for
-`boto3.client("securityhub").get_paginator("list_organization_admin_accounts")`.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator("list_organization_admin_accounts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListOrganizationAdminAccounts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_securityhub.paginator import ListOrganizationAdminAccountsPaginator
@@ -370,13 +482,30 @@ def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAcc
     return Session().client("securityhub").get_paginator("list_organization_admin_accounts")
 ```
 
-Boto3 documentation:
-[SecurityHub.Paginator.ListOrganizationAdminAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Paginator.ListOrganizationAdminAccounts)
 
-Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOrganizationAdminAccountsPaginator.paginate` method.
 
-`ListOrganizationAdminAccountsPaginator.paginate` returns
-`_PageIterator`\[[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOrganizationAdminAccountsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef](./type_defs.md#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef) 

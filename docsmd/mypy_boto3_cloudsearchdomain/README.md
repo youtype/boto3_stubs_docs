@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-cloudsearchdomain-module"></a>
-
-# Type annotations for boto3 CloudSearchDomain module
+#  CloudSearchDomain module
 
 > [Index](../README.md) > CloudSearchDomain
 
-Auto-generated documentation for
-[CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
-type annotations stubs module
-[mypy-boto3-cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
+!!! note ""
 
-- [Type annotations for boto3 CloudSearchDomain module](#type-annotations-for-boto3-cloudsearchdomain-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudSearchDomainClient](#cloudsearchdomainclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
+    type annotations stubs module [mypy-boto3-cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudSearchDomain`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cloudsearchdomain]'
 python -m pip install mypy-boto3-cloudsearchdomain
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,56 +42,41 @@ python -m pip install mypy-boto3-cloudsearchdomain
 python -m pip uninstall -y mypy-boto3-cloudsearchdomain
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudsearchdomainclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudSearchDomainClient
 
-Type annotations for `boto3.client("cloudsearchdomain")` as
-[CloudSearchDomainClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cloudsearchdomain")` as [CloudSearchDomainClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cloudsearchdomain.client import CloudSearchDomainClient
+
+def get_client() -> CloudSearchDomainClient:
+    return Session().cleint("cloudsearchdomain")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [search](./client.md#search)
-- [suggest](./client.md#suggest)
-- [upload_documents](./client.md#upload_documents)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-CloudSearchDomainClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- DocumentServiceException
-- SearchException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudsearchdomain.literals import ContentTypeType
 
-```python
-from mypy_boto3_cloudsearchdomain.literals import ContentTypeType, ...
+def get_value() -> ContentTypeType:
+    return "application/json"
 ```
 
 - [ContentTypeType](./literals.md#contenttypetype)
@@ -121,17 +85,20 @@ from mypy_boto3_cloudsearchdomain.literals import ContentTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudsearchdomain.type_defs import BucketInfoTypeDef
 
-```python
-from mypy_boto3_cloudsearchdomain.type_defs import BucketInfoTypeDef, ...
+def get_value() -> BucketInfoTypeDef:
+    return {
+        "buckets": ...,
+    }
 ```
 
 - [BucketInfoTypeDef](./type_defs.md#bucketinfotypedef)
@@ -151,3 +118,4 @@ from mypy_boto3_cloudsearchdomain.type_defs import BucketInfoTypeDef, ...
 - [SuggestionMatchTypeDef](./type_defs.md#suggestionmatchtypedef)
 - [UploadDocumentsRequestRequestTypeDef](./type_defs.md#uploaddocumentsrequestrequesttypedef)
 - [UploadDocumentsResponseTypeDef](./type_defs.md#uploaddocumentsresponsetypedef)
+

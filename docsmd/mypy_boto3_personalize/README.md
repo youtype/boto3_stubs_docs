@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-personalize-module"></a>
-
-# Type annotations for boto3 Personalize module
+#  Personalize module
 
 > [Index](../README.md) > Personalize
 
-Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
-type annotations stubs module
-[mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
+!!! note ""
 
-- [Type annotations for boto3 Personalize module](#type-annotations-for-boto3-personalize-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [PersonalizeClient](#personalizeclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+    type annotations stubs module [mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Personalize`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[personalize]'
 python -m pip install mypy-boto3-personalize
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,114 +42,37 @@ python -m pip install mypy-boto3-personalize
 python -m pip uninstall -y mypy-boto3-personalize
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="personalizeclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## PersonalizeClient
 
-Type annotations for `boto3.client("personalize")` as
-[PersonalizeClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("personalize")` as [PersonalizeClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_personalize.client import PersonalizeClient
+
+def get_client() -> PersonalizeClient:
+    return Session().cleint("personalize")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_batch_inference_job](./client.md#create_batch_inference_job)
-- [create_batch_segment_job](./client.md#create_batch_segment_job)
-- [create_campaign](./client.md#create_campaign)
-- [create_dataset](./client.md#create_dataset)
-- [create_dataset_export_job](./client.md#create_dataset_export_job)
-- [create_dataset_group](./client.md#create_dataset_group)
-- [create_dataset_import_job](./client.md#create_dataset_import_job)
-- [create_event_tracker](./client.md#create_event_tracker)
-- [create_filter](./client.md#create_filter)
-- [create_recommender](./client.md#create_recommender)
-- [create_schema](./client.md#create_schema)
-- [create_solution](./client.md#create_solution)
-- [create_solution_version](./client.md#create_solution_version)
-- [delete_campaign](./client.md#delete_campaign)
-- [delete_dataset](./client.md#delete_dataset)
-- [delete_dataset_group](./client.md#delete_dataset_group)
-- [delete_event_tracker](./client.md#delete_event_tracker)
-- [delete_filter](./client.md#delete_filter)
-- [delete_recommender](./client.md#delete_recommender)
-- [delete_schema](./client.md#delete_schema)
-- [delete_solution](./client.md#delete_solution)
-- [describe_algorithm](./client.md#describe_algorithm)
-- [describe_batch_inference_job](./client.md#describe_batch_inference_job)
-- [describe_batch_segment_job](./client.md#describe_batch_segment_job)
-- [describe_campaign](./client.md#describe_campaign)
-- [describe_dataset](./client.md#describe_dataset)
-- [describe_dataset_export_job](./client.md#describe_dataset_export_job)
-- [describe_dataset_group](./client.md#describe_dataset_group)
-- [describe_dataset_import_job](./client.md#describe_dataset_import_job)
-- [describe_event_tracker](./client.md#describe_event_tracker)
-- [describe_feature_transformation](./client.md#describe_feature_transformation)
-- [describe_filter](./client.md#describe_filter)
-- [describe_recipe](./client.md#describe_recipe)
-- [describe_recommender](./client.md#describe_recommender)
-- [describe_schema](./client.md#describe_schema)
-- [describe_solution](./client.md#describe_solution)
-- [describe_solution_version](./client.md#describe_solution_version)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_solution_metrics](./client.md#get_solution_metrics)
-- [list_batch_inference_jobs](./client.md#list_batch_inference_jobs)
-- [list_batch_segment_jobs](./client.md#list_batch_segment_jobs)
-- [list_campaigns](./client.md#list_campaigns)
-- [list_dataset_export_jobs](./client.md#list_dataset_export_jobs)
-- [list_dataset_groups](./client.md#list_dataset_groups)
-- [list_dataset_import_jobs](./client.md#list_dataset_import_jobs)
-- [list_datasets](./client.md#list_datasets)
-- [list_event_trackers](./client.md#list_event_trackers)
-- [list_filters](./client.md#list_filters)
-- [list_recipes](./client.md#list_recipes)
-- [list_recommenders](./client.md#list_recommenders)
-- [list_schemas](./client.md#list_schemas)
-- [list_solution_versions](./client.md#list_solution_versions)
-- [list_solutions](./client.md#list_solutions)
-- [stop_solution_version_creation](./client.md#stop_solution_version_creation)
-- [update_campaign](./client.md#update_campaign)
-- [update_recommender](./client.md#update_recommender)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-PersonalizeClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InvalidInputException
-- InvalidNextTokenException
-- LimitExceededException
-- ResourceAlreadyExistsException
-- ResourceInUseException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("personalize").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("personalize").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_personalize.paginator import ListBatchInferenceJobsPaginator, ...
+from mypy_boto3_personalize.paginator import ListBatchInferenceJobsPaginator
+
+def get_list_batch_inference_jobs_paginator() -> ListBatchInferenceJobsPaginator:
+    return Session().client("personalize").get_paginator("list_batch_inference_jobs"))
 ```
 
 - [ListBatchInferenceJobsPaginator](./paginators.md#listbatchinferencejobspaginator)
@@ -189,16 +90,23 @@ from mypy_boto3_personalize.paginator import ListBatchInferenceJobsPaginator, ..
 - [ListSolutionVersionsPaginator](./paginators.md#listsolutionversionspaginator)
 - [ListSolutionsPaginator](./paginators.md#listsolutionspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_personalize.literals import DomainType
 
-```python
-from mypy_boto3_personalize.literals import DomainType, ...
+def get_value() -> DomainType:
+    return "ECOMMERCE"
 ```
 
 - [DomainType](./literals.md#domaintype)
@@ -224,18 +132,22 @@ from mypy_boto3_personalize.literals import DomainType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_personalize.type_defs import AlgorithmImageTypeDef
 
-```python
-from mypy_boto3_personalize.type_defs import AlgorithmImageTypeDef, ...
+def get_value() -> AlgorithmImageTypeDef:
+    return {
+        "dockerURI": ...,
+    }
 ```
 
 - [AlgorithmImageTypeDef](./type_defs.md#algorithmimagetypedef)
@@ -351,32 +263,46 @@ from mypy_boto3_personalize.type_defs import AlgorithmImageTypeDef, ...
 - [HPOResourceConfigTypeDef](./type_defs.md#hporesourceconfigtypedef)
 - [HyperParameterRangesTypeDef](./type_defs.md#hyperparameterrangestypedef)
 - [IntegerHyperParameterRangeTypeDef](./type_defs.md#integerhyperparameterrangetypedef)
+- [ListBatchInferenceJobsRequestListBatchInferenceJobsPaginateTypeDef](./type_defs.md#listbatchinferencejobsrequestlistbatchinferencejobspaginatetypedef)
 - [ListBatchInferenceJobsRequestRequestTypeDef](./type_defs.md#listbatchinferencejobsrequestrequesttypedef)
 - [ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef)
+- [ListBatchSegmentJobsRequestListBatchSegmentJobsPaginateTypeDef](./type_defs.md#listbatchsegmentjobsrequestlistbatchsegmentjobspaginatetypedef)
 - [ListBatchSegmentJobsRequestRequestTypeDef](./type_defs.md#listbatchsegmentjobsrequestrequesttypedef)
 - [ListBatchSegmentJobsResponseTypeDef](./type_defs.md#listbatchsegmentjobsresponsetypedef)
+- [ListCampaignsRequestListCampaignsPaginateTypeDef](./type_defs.md#listcampaignsrequestlistcampaignspaginatetypedef)
 - [ListCampaignsRequestRequestTypeDef](./type_defs.md#listcampaignsrequestrequesttypedef)
 - [ListCampaignsResponseTypeDef](./type_defs.md#listcampaignsresponsetypedef)
+- [ListDatasetExportJobsRequestListDatasetExportJobsPaginateTypeDef](./type_defs.md#listdatasetexportjobsrequestlistdatasetexportjobspaginatetypedef)
 - [ListDatasetExportJobsRequestRequestTypeDef](./type_defs.md#listdatasetexportjobsrequestrequesttypedef)
 - [ListDatasetExportJobsResponseTypeDef](./type_defs.md#listdatasetexportjobsresponsetypedef)
+- [ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef](./type_defs.md#listdatasetgroupsrequestlistdatasetgroupspaginatetypedef)
 - [ListDatasetGroupsRequestRequestTypeDef](./type_defs.md#listdatasetgroupsrequestrequesttypedef)
 - [ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef)
+- [ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef](./type_defs.md#listdatasetimportjobsrequestlistdatasetimportjobspaginatetypedef)
 - [ListDatasetImportJobsRequestRequestTypeDef](./type_defs.md#listdatasetimportjobsrequestrequesttypedef)
 - [ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef)
+- [ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef)
 - [ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
 - [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)
+- [ListEventTrackersRequestListEventTrackersPaginateTypeDef](./type_defs.md#listeventtrackersrequestlisteventtrackerspaginatetypedef)
 - [ListEventTrackersRequestRequestTypeDef](./type_defs.md#listeventtrackersrequestrequesttypedef)
 - [ListEventTrackersResponseTypeDef](./type_defs.md#listeventtrackersresponsetypedef)
+- [ListFiltersRequestListFiltersPaginateTypeDef](./type_defs.md#listfiltersrequestlistfilterspaginatetypedef)
 - [ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef)
 - [ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef)
+- [ListRecipesRequestListRecipesPaginateTypeDef](./type_defs.md#listrecipesrequestlistrecipespaginatetypedef)
 - [ListRecipesRequestRequestTypeDef](./type_defs.md#listrecipesrequestrequesttypedef)
 - [ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef)
+- [ListRecommendersRequestListRecommendersPaginateTypeDef](./type_defs.md#listrecommendersrequestlistrecommenderspaginatetypedef)
 - [ListRecommendersRequestRequestTypeDef](./type_defs.md#listrecommendersrequestrequesttypedef)
 - [ListRecommendersResponseTypeDef](./type_defs.md#listrecommendersresponsetypedef)
+- [ListSchemasRequestListSchemasPaginateTypeDef](./type_defs.md#listschemasrequestlistschemaspaginatetypedef)
 - [ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef)
 - [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)
+- [ListSolutionVersionsRequestListSolutionVersionsPaginateTypeDef](./type_defs.md#listsolutionversionsrequestlistsolutionversionspaginatetypedef)
 - [ListSolutionVersionsRequestRequestTypeDef](./type_defs.md#listsolutionversionsrequestrequesttypedef)
 - [ListSolutionVersionsResponseTypeDef](./type_defs.md#listsolutionversionsresponsetypedef)
+- [ListSolutionsRequestListSolutionsPaginateTypeDef](./type_defs.md#listsolutionsrequestlistsolutionspaginatetypedef)
 - [ListSolutionsRequestRequestTypeDef](./type_defs.md#listsolutionsrequestrequesttypedef)
 - [ListSolutionsResponseTypeDef](./type_defs.md#listsolutionsresponsetypedef)
 - [OptimizationObjectiveTypeDef](./type_defs.md#optimizationobjectivetypedef)
@@ -400,3 +326,4 @@ from mypy_boto3_personalize.type_defs import AlgorithmImageTypeDef, ...
 - [UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef)
 - [UpdateRecommenderRequestRequestTypeDef](./type_defs.md#updaterecommenderrequestrequesttypedef)
 - [UpdateRecommenderResponseTypeDef](./type_defs.md#updaterecommenderresponsetypedef)
+

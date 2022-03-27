@@ -1,30 +1,18 @@
-<a id="waiters-for-boto3-redshift-module"></a>
-
-# Waiters for boto3 Redshift module
+# Waiters
 
 > [Index](../README.md) > [Redshift](./README.md) > Waiters
 
-Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
-type annotations stubs module
-[mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
+!!! note ""
 
-- [Waiters for boto3 Redshift module](#waiters-for-boto3-redshift-module)
-  - [ClusterAvailableWaiter](#clusteravailablewaiter)
-  - [ClusterDeletedWaiter](#clusterdeletedwaiter)
-  - [ClusterRestoredWaiter](#clusterrestoredwaiter)
-  - [SnapshotAvailableWaiter](#snapshotavailablewaiter)
-
-<a id="clusteravailablewaiter"></a>
+    Auto-generated documentation for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
+    type annotations stubs module [mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 ## ClusterAvailableWaiter
 
-Type annotations for
-`boto3.client("redshift").get_waiter("cluster_available")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_waiter("cluster_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.waiter import ClusterAvailableWaiter
@@ -33,27 +21,43 @@ def get_cluster_available_waiter() -> ClusterAvailableWaiter:
     return Session().client("redshift").get_waiter("cluster_available")
 ```
 
-Boto3 documentation:
-[Redshift.Waiter.cluster_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterAvailable)
 
-Arguments for `ClusterAvailableWaiter.wait` method:
+### wait
 
-- `ClusterIdentifier`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ClusterAvailableWaiter.wait` method.
 
-<a id="clusterdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClustersMessageClusterAvailableWaitTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClustersMessageClusterAvailableWaitTypeDef](./type_defs.md#describeclustersmessageclusteravailablewaittypedef) 
 ## ClusterDeletedWaiter
 
-Type annotations for `boto3.client("redshift").get_waiter("cluster_deleted")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_waiter("cluster_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.waiter import ClusterDeletedWaiter
@@ -62,27 +66,43 @@ def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
     return Session().client("redshift").get_waiter("cluster_deleted")
 ```
 
-Boto3 documentation:
-[Redshift.Waiter.cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterDeleted)
 
-Arguments for `ClusterDeletedWaiter.wait` method:
+### wait
 
-- `ClusterIdentifier`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ClusterDeletedWaiter.wait` method.
 
-<a id="clusterrestoredwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClustersMessageClusterDeletedWaitTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClustersMessageClusterDeletedWaitTypeDef](./type_defs.md#describeclustersmessageclusterdeletedwaittypedef) 
 ## ClusterRestoredWaiter
 
-Type annotations for `boto3.client("redshift").get_waiter("cluster_restored")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_waiter("cluster_restored")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterRestored)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.waiter import ClusterRestoredWaiter
@@ -91,28 +111,43 @@ def get_cluster_restored_waiter() -> ClusterRestoredWaiter:
     return Session().client("redshift").get_waiter("cluster_restored")
 ```
 
-Boto3 documentation:
-[Redshift.Waiter.cluster_restored](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.ClusterRestored)
 
-Arguments for `ClusterRestoredWaiter.wait` method:
+### wait
 
-- `ClusterIdentifier`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ClusterRestoredWaiter.wait` method.
 
-<a id="snapshotavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClustersMessageClusterRestoredWaitTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClustersMessageClusterRestoredWaitTypeDef](./type_defs.md#describeclustersmessageclusterrestoredwaittypedef) 
 ## SnapshotAvailableWaiter
 
-Type annotations for
-`boto3.client("redshift").get_waiter("snapshot_available")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_waiter("snapshot_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.SnapshotAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.waiter import SnapshotAvailableWaiter
@@ -121,22 +156,42 @@ def get_snapshot_available_waiter() -> SnapshotAvailableWaiter:
     return Session().client("redshift").get_waiter("snapshot_available")
 ```
 
-Boto3 documentation:
-[Redshift.Waiter.snapshot_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Waiter.SnapshotAvailable)
 
-Arguments for `SnapshotAvailableWaiter.wait` method:
+### wait
 
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `SnapshotType`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `OwnerAccount`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `ClusterExists`: `bool`
-- `SortingEntities`:
-  `Sequence`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python SnapshotAvailableWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    SnapshotIdentifier: str = ...,
+    SnapshotType: str = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    OwnerAccount: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    ClusterExists: bool = ...,
+    SortingEntities: Sequence[SnapshotSortingEntityTypeDef] = ...,  # (1)
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterSnapshotsMessageSnapshotAvailableWaitTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterSnapshotsMessageSnapshotAvailableWaitTypeDef](./type_defs.md#describeclustersnapshotsmessagesnapshotavailablewaittypedef) 

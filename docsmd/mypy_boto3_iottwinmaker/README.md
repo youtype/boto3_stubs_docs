@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-iottwinmaker-module"></a>
-
-# Type annotations for boto3 IoTTwinMaker module
+#  IoTTwinMaker module
 
 > [Index](../README.md) > IoTTwinMaker
 
-Auto-generated documentation for
-[IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
-type annotations stubs module
-[mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
+!!! note ""
 
-- [Type annotations for boto3 IoTTwinMaker module](#type-annotations-for-boto3-iottwinmaker-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoTTwinMakerClient](#iottwinmakerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
+    type annotations stubs module [mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoTTwinMaker`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iottwinmaker]'
 python -m pip install mypy-boto3-iottwinmaker
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,87 +42,41 @@ python -m pip install mypy-boto3-iottwinmaker
 python -m pip uninstall -y mypy-boto3-iottwinmaker
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="iottwinmakerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoTTwinMakerClient
 
-Type annotations for `boto3.client("iottwinmaker")` as
-[IoTTwinMakerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iottwinmaker")` as [IoTTwinMakerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iottwinmaker.client import IoTTwinMakerClient
+
+def get_client() -> IoTTwinMakerClient:
+    return Session().cleint("iottwinmaker")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [batch_put_property_values](./client.md#batch_put_property_values)
-- [can_paginate](./client.md#can_paginate)
-- [create_component_type](./client.md#create_component_type)
-- [create_entity](./client.md#create_entity)
-- [create_scene](./client.md#create_scene)
-- [create_workspace](./client.md#create_workspace)
-- [delete_component_type](./client.md#delete_component_type)
-- [delete_entity](./client.md#delete_entity)
-- [delete_scene](./client.md#delete_scene)
-- [delete_workspace](./client.md#delete_workspace)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_component_type](./client.md#get_component_type)
-- [get_entity](./client.md#get_entity)
-- [get_property_value](./client.md#get_property_value)
-- [get_property_value_history](./client.md#get_property_value_history)
-- [get_scene](./client.md#get_scene)
-- [get_workspace](./client.md#get_workspace)
-- [list_component_types](./client.md#list_component_types)
-- [list_entities](./client.md#list_entities)
-- [list_scenes](./client.md#list_scenes)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_workspaces](./client.md#list_workspaces)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_component_type](./client.md#update_component_type)
-- [update_entity](./client.md#update_entity)
-- [update_scene](./client.md#update_scene)
-- [update_workspace](./client.md#update_workspace)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-IoTTwinMakerClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- ConnectorFailureException
-- ConnectorTimeoutException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- TooManyTagsException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iottwinmaker.literals import ComponentUpdateTypeType
 
-```python
-from mypy_boto3_iottwinmaker.literals import ComponentUpdateTypeType, ...
+def get_value() -> ComponentUpdateTypeType:
+    return "CREATE"
 ```
 
 - [ComponentUpdateTypeType](./literals.md#componentupdatetypetype)
@@ -159,17 +92,20 @@ from mypy_boto3_iottwinmaker.literals import ComponentUpdateTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iottwinmaker.type_defs import BatchPutPropertyErrorEntryTypeDef
 
-```python
-from mypy_boto3_iottwinmaker.type_defs import BatchPutPropertyErrorEntryTypeDef, ...
+def get_value() -> BatchPutPropertyErrorEntryTypeDef:
+    return {
+        "errors": ...,
+    }
 ```
 
 - [BatchPutPropertyErrorEntryTypeDef](./type_defs.md#batchputpropertyerrorentrytypedef)
@@ -254,3 +190,4 @@ from mypy_boto3_iottwinmaker.type_defs import BatchPutPropertyErrorEntryTypeDef,
 - [UpdateWorkspaceRequestRequestTypeDef](./type_defs.md#updateworkspacerequestrequesttypedef)
 - [UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef)
 - [WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef)
+

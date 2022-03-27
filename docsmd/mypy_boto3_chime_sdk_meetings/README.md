@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-chimesdkmeetings-module"></a>
-
-# Type annotations for boto3 ChimeSDKMeetings module
+#  ChimeSDKMeetings module
 
 > [Index](../README.md) > ChimeSDKMeetings
 
-Auto-generated documentation for
-[ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
-type annotations stubs module
-[mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
+!!! note ""
 
-- [Type annotations for boto3 ChimeSDKMeetings module](#type-annotations-for-boto3-chimesdkmeetings-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ChimeSDKMeetingsClient](#chimesdkmeetingsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
+    type annotations stubs module [mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ChimeSDKMeetings`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[chime-sdk-meetings]'
 python -m pip install mypy-boto3-chime-sdk-meetings
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,69 +42,41 @@ python -m pip install mypy-boto3-chime-sdk-meetings
 python -m pip uninstall -y mypy-boto3-chime-sdk-meetings
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="chimesdkmeetingsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ChimeSDKMeetingsClient
 
-Type annotations for `boto3.client("chime-sdk-meetings")` as
-[ChimeSDKMeetingsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("chime-sdk-meetings")` as [ChimeSDKMeetingsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_chime_sdk_meetings.client import ChimeSDKMeetingsClient
+
+def get_client() -> ChimeSDKMeetingsClient:
+    return Session().cleint("chime-sdk-meetings")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [batch_create_attendee](./client.md#batch_create_attendee)
-- [can_paginate](./client.md#can_paginate)
-- [create_attendee](./client.md#create_attendee)
-- [create_meeting](./client.md#create_meeting)
-- [create_meeting_with_attendees](./client.md#create_meeting_with_attendees)
-- [delete_attendee](./client.md#delete_attendee)
-- [delete_meeting](./client.md#delete_meeting)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_attendee](./client.md#get_attendee)
-- [get_meeting](./client.md#get_meeting)
-- [list_attendees](./client.md#list_attendees)
-- [start_meeting_transcription](./client.md#start_meeting_transcription)
-- [stop_meeting_transcription](./client.md#stop_meeting_transcription)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-ChimeSDKMeetingsClient [exceptions](./client.md#exceptions)
 
-- BadRequestException
-- ClientError
-- ForbiddenException
-- LimitExceededException
-- NotFoundException
-- ServiceUnavailableException
-- UnauthorizedException
-- UnprocessableEntityException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_chime_sdk_meetings.literals import MeetingFeatureStatusType
 
-```python
-from mypy_boto3_chime_sdk_meetings.literals import MeetingFeatureStatusType, ...
+def get_value() -> MeetingFeatureStatusType:
+    return "AVAILABLE"
 ```
 
 - [MeetingFeatureStatusType](./literals.md#meetingfeaturestatustype)
@@ -143,18 +94,22 @@ from mypy_boto3_chime_sdk_meetings.literals import MeetingFeatureStatusType, ...
 - [ChimeSDKMeetingsServiceName](./literals.md#chimesdkmeetingsservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_chime_sdk_meetings.type_defs import AttendeeTypeDef
 
-```python
-from mypy_boto3_chime_sdk_meetings.type_defs import AttendeeTypeDef, ...
+def get_value() -> AttendeeTypeDef:
+    return {
+        "ExternalUserId": ...,
+    }
 ```
 
 - [AttendeeTypeDef](./type_defs.md#attendeetypedef)
@@ -187,3 +142,4 @@ from mypy_boto3_chime_sdk_meetings.type_defs import AttendeeTypeDef, ...
 - [StartMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#startmeetingtranscriptionrequestrequesttypedef)
 - [StopMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#stopmeetingtranscriptionrequestrequesttypedef)
 - [TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef)
+

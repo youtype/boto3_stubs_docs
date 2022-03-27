@@ -1,43 +1,18 @@
-<a id="redshiftdataapiserviceclient-for-boto3-redshiftdataapiservice-module"></a>
+# RedshiftDataAPIServiceClient
 
-# RedshiftDataAPIServiceClient for boto3 RedshiftDataAPIService module
+> [Index](../README.md) > [RedshiftDataAPIService](./README.md) > RedshiftDataAPIServiceClient
 
-> [Index](../README.md) > [RedshiftDataAPIService](./README.md) >
-> RedshiftDataAPIServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
-type annotations stubs module
-[mypy-boto3-redshift-data](https://pypi.org/project/mypy-boto3-redshift-data/).
-
-- [RedshiftDataAPIServiceClient for boto3 RedshiftDataAPIService module](#redshiftdataapiserviceclient-for-boto3-redshiftdataapiservice-module)
-  - [RedshiftDataAPIServiceClient](#redshiftdataapiserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_execute_statement](#batch_execute_statement)
-    - [can_paginate](#can_paginate)
-    - [cancel_statement](#cancel_statement)
-    - [describe_statement](#describe_statement)
-    - [describe_table](#describe_table)
-    - [execute_statement](#execute_statement)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_statement_result](#get_statement_result)
-    - [list_databases](#list_databases)
-    - [list_schemas](#list_schemas)
-    - [list_statements](#list_statements)
-    - [list_tables](#list_tables)
-    - [get_paginator](#get_paginator)
-
-<a id="redshiftdataapiserviceclient"></a>
+    Auto-generated documentation for [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
+    type annotations stubs module [mypy-boto3-redshift-data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 ## RedshiftDataAPIServiceClient
 
-Type annotations for `boto3.client("redshift-data")`
+Type annotations and code completion for `#!python boto3.client("redshift-data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_redshift_data.client import RedshiftDataAPIServiceClient
 
@@ -45,366 +20,431 @@ def get_redshift-data_client() -> RedshiftDataAPIServiceClient:
     return Session().client("redshift-data")
 ```
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("redshift-data").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("redshift-data")
+
+try:
+    do_something(client)
+except (
+    client.ActiveStatementsExceededException,
+    client.BatchExecuteStatementException,
+    client.ClientError,
+    client.DatabaseConnectionException,
+    client.ExecuteStatementException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_redshift_data.client import Exceptions
 
 def handle_error(exc: Exceptions.ActiveStatementsExceededException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ActiveStatementsExceededException`
-- `Exceptions.BatchExecuteStatementException`
-- `Exceptions.ClientError`
-- `Exceptions.DatabaseConnectionException`
-- `Exceptions.ExecuteStatementException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-RedshiftDataAPIServiceClient exceptions.
-
-Type annotations for `boto3.client("redshift-data").exceptions` method.
-
-Boto3 documentation:
-[RedshiftDataAPIService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_execute\_statement"></a>
-
-### batch_execute_statement
+### batch\_execute\_statement
 
 Runs one or more SQL statements, which can be data manipulation language (DML)
 or data definition language (DDL).
 
-Type annotations for `boto3.client("redshift-data").batch_execute_statement`
-method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").batch_execute_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.batch_execute_statement)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.batch_execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.batch_execute_statement)
+```python title="Method definition"
+def batch_execute_statement(
+    self,
+    *,
+    Database: str,
+    Sqls: Sequence[str],
+    ClusterIdentifier: str = ...,
+    DbUser: str = ...,
+    SecretArn: str = ...,
+    StatementName: str = ...,
+    WithEvent: bool = ...,
+) -> BatchExecuteStatementOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchExecuteStatementInputRequestTypeDef](./type_defs.md#batchexecutestatementinputrequesttypedef).
+1. See [:material-code-braces: BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Database`: `str` *(required)*
-- `Sqls`: `Sequence`\[`str`\] *(required)*
-- `ClusterIdentifier`: `str`
-- `DbUser`: `str`
-- `SecretArn`: `str`
-- `StatementName`: `str`
-- `WithEvent`: `bool`
+```python title="Usage example with kwargs"
+kwargs: BatchExecuteStatementInputRequestTypeDef = {  # (1)
+    "Database": ...,
+    "Sqls": ...,
+}
 
-Returns
-[BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef).
+parent.batch_execute_statement(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchExecuteStatementInputRequestTypeDef](./type_defs.md#batchexecutestatementinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("redshift-data").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.can_paginate)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_statement"></a>
-
-### cancel_statement
+### cancel\_statement
 
 Cancels a running query.
 
-Type annotations for `boto3.client("redshift-data").cancel_statement` method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").cancel_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.cancel_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.cancel_statement)
+```python title="Method definition"
+def cancel_statement(
+    self,
+    *,
+    Id: str,
+) -> CancelStatementResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelStatementRequestRequestTypeDef](./type_defs.md#cancelstatementrequestrequesttypedef).
+1. See [:material-code-braces: CancelStatementResponseTypeDef](./type_defs.md#cancelstatementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelStatementRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[CancelStatementResponseTypeDef](./type_defs.md#cancelstatementresponsetypedef).
+parent.cancel_statement(**kwargs)
+```
 
-<a id="describe\_statement"></a>
+1. See [:material-code-braces: CancelStatementRequestRequestTypeDef](./type_defs.md#cancelstatementrequestrequesttypedef) 
 
-### describe_statement
+### describe\_statement
 
 Describes the details about a specific instance when a query was run by the
 Amazon Redshift Data API.
 
-Type annotations for `boto3.client("redshift-data").describe_statement` method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").describe_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.describe_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_statement)
+```python title="Method definition"
+def describe_statement(
+    self,
+    *,
+    Id: str,
+) -> DescribeStatementResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStatementRequestRequestTypeDef](./type_defs.md#describestatementrequestrequesttypedef).
+1. See [:material-code-braces: DescribeStatementResponseTypeDef](./type_defs.md#describestatementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStatementRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DescribeStatementResponseTypeDef](./type_defs.md#describestatementresponsetypedef).
+parent.describe_statement(**kwargs)
+```
 
-<a id="describe\_table"></a>
+1. See [:material-code-braces: DescribeStatementRequestRequestTypeDef](./type_defs.md#describestatementrequestrequesttypedef) 
 
-### describe_table
+### describe\_table
 
 Describes the detailed information about a table from metadata in the cluster.
 
-Type annotations for `boto3.client("redshift-data").describe_table` method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").describe_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.describe_table)
+```python title="Method definition"
+def describe_table(
+    self,
+    *,
+    Database: str,
+    ClusterIdentifier: str = ...,
+    ConnectedDatabase: str = ...,
+    DbUser: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Schema: str = ...,
+    SecretArn: str = ...,
+    Table: str = ...,
+) -> DescribeTableResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTableRequestRequestTypeDef](./type_defs.md#describetablerequestrequesttypedef).
+1. See [:material-code-braces: DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
-- `ConnectedDatabase`: `str`
-- `DbUser`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Schema`: `str`
-- `SecretArn`: `str`
-- `Table`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeTableRequestRequestTypeDef = {  # (1)
+    "Database": ...,
+}
 
-Returns
-[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
+parent.describe_table(**kwargs)
+```
 
-<a id="execute\_statement"></a>
+1. See [:material-code-braces: DescribeTableRequestRequestTypeDef](./type_defs.md#describetablerequestrequesttypedef) 
 
-### execute_statement
+### execute\_statement
 
 Runs an SQL statement, which can be data manipulation language (DML) or data
 definition language (DDL).
 
-Type annotations for `boto3.client("redshift-data").execute_statement` method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").execute_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.execute_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.execute_statement)
+```python title="Method definition"
+def execute_statement(
+    self,
+    *,
+    Database: str,
+    Sql: str,
+    ClusterIdentifier: str = ...,
+    DbUser: str = ...,
+    Parameters: Sequence[SqlParameterTypeDef] = ...,  # (1)
+    SecretArn: str = ...,
+    StatementName: str = ...,
+    WithEvent: bool = ...,
+) -> ExecuteStatementOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ExecuteStatementInputRequestTypeDef](./type_defs.md#executestatementinputrequesttypedef).
+1. See [:material-code-braces: SqlParameterTypeDef](./type_defs.md#sqlparametertypedef) 
+2. See [:material-code-braces: ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Database`: `str` *(required)*
-- `Sql`: `str` *(required)*
-- `ClusterIdentifier`: `str`
-- `DbUser`: `str`
-- `Parameters`:
-  `Sequence`\[[SqlParameterTypeDef](./type_defs.md#sqlparametertypedef)\]
-- `SecretArn`: `str`
-- `StatementName`: `str`
-- `WithEvent`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ExecuteStatementInputRequestTypeDef = {  # (1)
+    "Database": ...,
+    "Sql": ...,
+}
 
-Returns
-[ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).
+parent.execute_statement(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExecuteStatementInputRequestTypeDef](./type_defs.md#executestatementinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("redshift-data").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_statement\_result"></a>
-
-### get_statement_result
+### get\_statement\_result
 
 Fetches the temporarily cached result of an SQL statement.
 
-Type annotations for `boto3.client("redshift-data").get_statement_result`
-method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").get_statement_result` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.get_statement_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.get_statement_result)
+```python title="Method definition"
+def get_statement_result(
+    self,
+    *,
+    Id: str,
+    NextToken: str = ...,
+) -> GetStatementResultResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStatementResultRequestRequestTypeDef](./type_defs.md#getstatementresultrequestrequesttypedef).
+1. See [:material-code-braces: GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetStatementResultRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef).
+parent.get_statement_result(**kwargs)
+```
 
-<a id="list\_databases"></a>
+1. See [:material-code-braces: GetStatementResultRequestRequestTypeDef](./type_defs.md#getstatementresultrequestrequesttypedef) 
 
-### list_databases
+### list\_databases
 
 List the databases in a cluster.
 
-Type annotations for `boto3.client("redshift-data").list_databases` method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").list_databases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_databases)
+```python title="Method definition"
+def list_databases(
+    self,
+    *,
+    Database: str,
+    ClusterIdentifier: str = ...,
+    DbUser: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    SecretArn: str = ...,
+) -> ListDatabasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatabasesRequestRequestTypeDef](./type_defs.md#listdatabasesrequestrequesttypedef).
+1. See [:material-code-braces: ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
-- `DbUser`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SecretArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDatabasesRequestRequestTypeDef = {  # (1)
+    "Database": ...,
+}
 
-Returns
-[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
+parent.list_databases(**kwargs)
+```
 
-<a id="list\_schemas"></a>
+1. See [:material-code-braces: ListDatabasesRequestRequestTypeDef](./type_defs.md#listdatabasesrequestrequesttypedef) 
 
-### list_schemas
+### list\_schemas
 
 Lists the schemas in a database.
 
-Type annotations for `boto3.client("redshift-data").list_schemas` method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").list_schemas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_schemas)
+```python title="Method definition"
+def list_schemas(
+    self,
+    *,
+    Database: str,
+    ClusterIdentifier: str = ...,
+    ConnectedDatabase: str = ...,
+    DbUser: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    SchemaPattern: str = ...,
+    SecretArn: str = ...,
+) -> ListSchemasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef).
+1. See [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
-- `ConnectedDatabase`: `str`
-- `DbUser`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SchemaPattern`: `str`
-- `SecretArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSchemasRequestRequestTypeDef = {  # (1)
+    "Database": ...,
+}
 
-Returns
-[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
+parent.list_schemas(**kwargs)
+```
 
-<a id="list\_statements"></a>
+1. See [:material-code-braces: ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef) 
 
-### list_statements
+### list\_statements
 
 List of SQL statements.
 
-Type annotations for `boto3.client("redshift-data").list_statements` method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").list_statements` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.list_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_statements)
+```python title="Method definition"
+def list_statements(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    RoleLevel: bool = ...,
+    StatementName: str = ...,
+    Status: StatusStringType = ...,  # (1)
+) -> ListStatementsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListStatementsRequestRequestTypeDef](./type_defs.md#liststatementsrequestrequesttypedef).
+1. See [:material-code-brackets: StatusStringType](./literals.md#statusstringtype) 
+2. See [:material-code-braces: ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `RoleLevel`: `bool`
-- `StatementName`: `str`
-- `Status`: [StatusStringType](./literals.md#statusstringtype)
+```python title="Usage example with kwargs"
+kwargs: ListStatementsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef).
+parent.list_statements(**kwargs)
+```
 
-<a id="list\_tables"></a>
+1. See [:material-code-braces: ListStatementsRequestRequestTypeDef](./type_defs.md#liststatementsrequestrequesttypedef) 
 
-### list_tables
+### list\_tables
 
 List the tables in a database.
 
-Type annotations for `boto3.client("redshift-data").list_tables` method.
+Type annotations and code completion for `#!python boto3.client("redshift-data").list_tables` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables)
 
-Boto3 documentation:
-[RedshiftDataAPIService.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.list_tables)
+```python title="Method definition"
+def list_tables(
+    self,
+    *,
+    Database: str,
+    ClusterIdentifier: str = ...,
+    ConnectedDatabase: str = ...,
+    DbUser: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    SchemaPattern: str = ...,
+    SecretArn: str = ...,
+    TablePattern: str = ...,
+) -> ListTablesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef).
+1. See [:material-code-braces: ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
-- `ConnectedDatabase`: `str`
-- `DbUser`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SchemaPattern`: `str`
-- `SecretArn`: `str`
-- `TablePattern`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTablesRequestRequestTypeDef = {  # (1)
+    "Database": ...,
+}
 
-Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
+parent.list_tables(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("redshift-data").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("redshift-data").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_table")` ->
-  [DescribeTablePaginator](./paginators.md#describetablepaginator)
-- `client.get_paginator("get_statement_result")` ->
-  [GetStatementResultPaginator](./paginators.md#getstatementresultpaginator)
-- `client.get_paginator("list_databases")` ->
-  [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
-- `client.get_paginator("list_schemas")` ->
-  [ListSchemasPaginator](./paginators.md#listschemaspaginator)
-- `client.get_paginator("list_statements")` ->
-  [ListStatementsPaginator](./paginators.md#liststatementspaginator)
-- `client.get_paginator("list_tables")` ->
-  [ListTablesPaginator](./paginators.md#listtablespaginator)
+- `client.get_paginator("describe_table")` -> [DescribeTablePaginator](./paginators.md#describetablepaginator)
+- `client.get_paginator("get_statement_result")` -> [GetStatementResultPaginator](./paginators.md#getstatementresultpaginator)
+- `client.get_paginator("list_databases")` -> [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
+- `client.get_paginator("list_schemas")` -> [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+- `client.get_paginator("list_statements")` -> [ListStatementsPaginator](./paginators.md#liststatementspaginator)
+- `client.get_paginator("list_tables")` -> [ListTablesPaginator](./paginators.md#listtablespaginator)
+
+
+

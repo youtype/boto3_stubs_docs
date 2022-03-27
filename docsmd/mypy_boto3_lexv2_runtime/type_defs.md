@@ -1,504 +1,636 @@
-<a id="typed-dictionaries-for-boto3-lexruntimev2-module"></a>
-
-# Typed dictionaries for boto3 LexRuntimeV2 module
+# Typed dictionaries
 
 > [Index](../README.md) > [LexRuntimeV2](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
-type annotations stubs module
-[mypy-boto3-lexv2-runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
+!!! note ""
 
-- [Typed dictionaries for boto3 LexRuntimeV2 module](#typed-dictionaries-for-boto3-lexruntimev2-module)
-  - [ActiveContextTimeToLiveTypeDef](#activecontexttimetolivetypedef)
-  - [ActiveContextTypeDef](#activecontexttypedef)
-  - [ButtonTypeDef](#buttontypedef)
-  - [ConfidenceScoreTypeDef](#confidencescoretypedef)
-  - [DeleteSessionRequestRequestTypeDef](#deletesessionrequestrequesttypedef)
-  - [DeleteSessionResponseTypeDef](#deletesessionresponsetypedef)
-  - [DialogActionTypeDef](#dialogactiontypedef)
-  - [GetSessionRequestRequestTypeDef](#getsessionrequestrequesttypedef)
-  - [GetSessionResponseTypeDef](#getsessionresponsetypedef)
-  - [ImageResponseCardTypeDef](#imageresponsecardtypedef)
-  - [IntentTypeDef](#intenttypedef)
-  - [InterpretationTypeDef](#interpretationtypedef)
-  - [MessageTypeDef](#messagetypedef)
-  - [PutSessionRequestRequestTypeDef](#putsessionrequestrequesttypedef)
-  - [PutSessionResponseTypeDef](#putsessionresponsetypedef)
-  - [RecognizeTextRequestRequestTypeDef](#recognizetextrequestrequesttypedef)
-  - [RecognizeTextResponseTypeDef](#recognizetextresponsetypedef)
-  - [RecognizeUtteranceRequestRequestTypeDef](#recognizeutterancerequestrequesttypedef)
-  - [RecognizeUtteranceResponseTypeDef](#recognizeutteranceresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RuntimeHintDetailsTypeDef](#runtimehintdetailstypedef)
-  - [RuntimeHintValueTypeDef](#runtimehintvaluetypedef)
-  - [RuntimeHintsTypeDef](#runtimehintstypedef)
-  - [SentimentResponseTypeDef](#sentimentresponsetypedef)
-  - [SentimentScoreTypeDef](#sentimentscoretypedef)
-  - [SessionStateTypeDef](#sessionstatetypedef)
-  - [SlotTypeDef](#slottypedef)
-  - [ValueTypeDef](#valuetypedef)
-
-<a id="activecontexttimetolivetypedef"></a>
+    Auto-generated documentation for [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
+    type annotations stubs module [mypy-boto3-lexv2-runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
 ## ActiveContextTimeToLiveTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import ActiveContextTimeToLiveTypeDef
+
+def get_value() -> ActiveContextTimeToLiveTypeDef:
+    return {
+        "timeToLiveInSeconds": ...,
+        "turnsToLive": ...,
+    }
 ```
 
-Required fields:
-
-- `timeToLiveInSeconds`: `int`
-- `turnsToLive`: `int`
-
-<a id="activecontexttypedef"></a>
+```python title="Definition"
+class ActiveContextTimeToLiveTypeDef(TypedDict):
+    timeToLiveInSeconds: int,
+    turnsToLive: int,
+```
 
 ## ActiveContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import ActiveContextTypeDef
+
+def get_value() -> ActiveContextTypeDef:
+    return {
+        "name": ...,
+        "timeToLive": ...,
+        "contextAttributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActiveContextTypeDef(TypedDict):
+    name: str,
+    timeToLive: ActiveContextTimeToLiveTypeDef,  # (1)
+    contextAttributes: Dict[str, str],
+```
 
-- `name`: `str`
-- `timeToLive`:
-  [ActiveContextTimeToLiveTypeDef](./type_defs.md#activecontexttimetolivetypedef)
-- `contextAttributes`: `Dict`\[`str`, `str`\]
-
-<a id="buttontypedef"></a>
-
+1. See [:material-code-braces: ActiveContextTimeToLiveTypeDef](./type_defs.md#activecontexttimetolivetypedef) 
 ## ButtonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import ButtonTypeDef
+
+def get_value() -> ButtonTypeDef:
+    return {
+        "text": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `text`: `str`
-- `value`: `str`
-
-<a id="confidencescoretypedef"></a>
+```python title="Definition"
+class ButtonTypeDef(TypedDict):
+    text: str,
+    value: str,
+```
 
 ## ConfidenceScoreTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import ConfidenceScoreTypeDef
+
+def get_value() -> ConfidenceScoreTypeDef:
+    return {
+        "score": ...,
+    }
 ```
 
-Optional fields:
-
-- `score`: `float`
-
-<a id="deletesessionrequestrequesttypedef"></a>
+```python title="Definition"
+class ConfidenceScoreTypeDef(TypedDict):
+    score: NotRequired[float],
+```
 
 ## DeleteSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import DeleteSessionRequestRequestTypeDef
+
+def get_value() -> DeleteSessionRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botAliasId": ...,
+        "localeId": ...,
+        "sessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botAliasId`: `str`
-- `localeId`: `str`
-- `sessionId`: `str`
-
-<a id="deletesessionresponsetypedef"></a>
+```python title="Definition"
+class DeleteSessionRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+```
 
 ## DeleteSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import DeleteSessionResponseTypeDef
+
+def get_value() -> DeleteSessionResponseTypeDef:
+    return {
+        "botId": ...,
+        "botAliasId": ...,
+        "localeId": ...,
+        "sessionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSessionResponseTypeDef(TypedDict):
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `botId`: `str`
-- `botAliasId`: `str`
-- `localeId`: `str`
-- `sessionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dialogactiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DialogActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import DialogActionTypeDef
+
+def get_value() -> DialogActionTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DialogActionTypeDef(TypedDict):
+    type: DialogActionTypeType,  # (1)
+    slotToElicit: NotRequired[str],
+    slotElicitationStyle: NotRequired[StyleTypeType],  # (2)
+```
 
-- `type`: [DialogActionTypeType](./literals.md#dialogactiontypetype)
-
-Optional fields:
-
-- `slotToElicit`: `str`
-- `slotElicitationStyle`: [StyleTypeType](./literals.md#styletypetype)
-
-<a id="getsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DialogActionTypeType](./literals.md#dialogactiontypetype) 
+2. See [:material-code-brackets: StyleTypeType](./literals.md#styletypetype) 
 ## GetSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import GetSessionRequestRequestTypeDef
+
+def get_value() -> GetSessionRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botAliasId": ...,
+        "localeId": ...,
+        "sessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botAliasId`: `str`
-- `localeId`: `str`
-- `sessionId`: `str`
-
-<a id="getsessionresponsetypedef"></a>
+```python title="Definition"
+class GetSessionRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+```
 
 ## GetSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import GetSessionResponseTypeDef
+
+def get_value() -> GetSessionResponseTypeDef:
+    return {
+        "sessionId": ...,
+        "messages": ...,
+        "interpretations": ...,
+        "sessionState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSessionResponseTypeDef(TypedDict):
+    sessionId: str,
+    messages: List[MessageTypeDef],  # (1)
+    interpretations: List[InterpretationTypeDef],  # (2)
+    sessionState: SessionStateTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `sessionId`: `str`
-- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
-- `interpretations`:
-  `List`\[[InterpretationTypeDef](./type_defs.md#interpretationtypedef)\]
-- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="imageresponsecardtypedef"></a>
-
+1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+2. See [:material-code-braces: InterpretationTypeDef](./type_defs.md#interpretationtypedef) 
+3. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImageResponseCardTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import ImageResponseCardTypeDef
+
+def get_value() -> ImageResponseCardTypeDef:
+    return {
+        "title": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImageResponseCardTypeDef(TypedDict):
+    title: str,
+    subtitle: NotRequired[str],
+    imageUrl: NotRequired[str],
+    buttons: NotRequired[List[ButtonTypeDef]],  # (1)
+```
 
-- `title`: `str`
-
-Optional fields:
-
-- `subtitle`: `str`
-- `imageUrl`: `str`
-- `buttons`: `List`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
-
-<a id="intenttypedef"></a>
-
+1. See [:material-code-braces: ButtonTypeDef](./type_defs.md#buttontypedef) 
 ## IntentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import IntentTypeDef
+
+def get_value() -> IntentTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IntentTypeDef(TypedDict):
+    name: str,
+    slots: NotRequired[Dict[str, SlotTypeDef]],  # (1)
+    state: NotRequired[IntentStateType],  # (2)
+    confirmationState: NotRequired[ConfirmationStateType],  # (3)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `slots`: `Dict`\[`str`, [SlotTypeDef](./type_defs.md#slottypedef)\]
-- `state`: [IntentStateType](./literals.md#intentstatetype)
-- `confirmationState`:
-  [ConfirmationStateType](./literals.md#confirmationstatetype)
-
-<a id="interpretationtypedef"></a>
-
+1. See [:material-code-braces: SlotTypeDef](./type_defs.md#slottypedef) 
+2. See [:material-code-brackets: IntentStateType](./literals.md#intentstatetype) 
+3. See [:material-code-brackets: ConfirmationStateType](./literals.md#confirmationstatetype) 
 ## InterpretationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import InterpretationTypeDef
+
+def get_value() -> InterpretationTypeDef:
+    return {
+        "nluConfidence": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InterpretationTypeDef(TypedDict):
+    nluConfidence: NotRequired[ConfidenceScoreTypeDef],  # (1)
+    sentimentResponse: NotRequired[SentimentResponseTypeDef],  # (2)
+    intent: NotRequired[IntentTypeDef],  # (3)
+```
 
-- `nluConfidence`:
-  [ConfidenceScoreTypeDef](./type_defs.md#confidencescoretypedef)
-- `sentimentResponse`:
-  [SentimentResponseTypeDef](./type_defs.md#sentimentresponsetypedef)
-- `intent`: [IntentTypeDef](./type_defs.md#intenttypedef)
-
-<a id="messagetypedef"></a>
-
+1. See [:material-code-braces: ConfidenceScoreTypeDef](./type_defs.md#confidencescoretypedef) 
+2. See [:material-code-braces: SentimentResponseTypeDef](./type_defs.md#sentimentresponsetypedef) 
+3. See [:material-code-braces: IntentTypeDef](./type_defs.md#intenttypedef) 
 ## MessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import MessageTypeDef
+
+def get_value() -> MessageTypeDef:
+    return {
+        "contentType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MessageTypeDef(TypedDict):
+    contentType: MessageContentTypeType,  # (1)
+    content: NotRequired[str],
+    imageResponseCard: NotRequired[ImageResponseCardTypeDef],  # (2)
+```
 
-- `contentType`: [MessageContentTypeType](./literals.md#messagecontenttypetype)
-
-Optional fields:
-
-- `content`: `str`
-- `imageResponseCard`:
-  [ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef)
-
-<a id="putsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: MessageContentTypeType](./literals.md#messagecontenttypetype) 
+2. See [:material-code-braces: ImageResponseCardTypeDef](./type_defs.md#imageresponsecardtypedef) 
 ## PutSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import PutSessionRequestRequestTypeDef
+
+def get_value() -> PutSessionRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botAliasId": ...,
+        "localeId": ...,
+        "sessionId": ...,
+        "sessionState": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutSessionRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+    sessionState: SessionStateTypeDef,  # (1)
+    messages: NotRequired[Sequence[MessageTypeDef]],  # (2)
+    requestAttributes: NotRequired[Mapping[str, str]],
+    responseContentType: NotRequired[str],
+```
 
-- `botId`: `str`
-- `botAliasId`: `str`
-- `localeId`: `str`
-- `sessionId`: `str`
-- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
-
-Optional fields:
-
-- `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
-- `requestAttributes`: `Mapping`\[`str`, `str`\]
-- `responseContentType`: `str`
-
-<a id="putsessionresponsetypedef"></a>
-
+1. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
+2. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
 ## PutSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import PutSessionResponseTypeDef
+
+def get_value() -> PutSessionResponseTypeDef:
+    return {
+        "contentType": ...,
+        "messages": ...,
+        "sessionState": ...,
+        "requestAttributes": ...,
+        "sessionId": ...,
+        "audioStream": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutSessionResponseTypeDef(TypedDict):
+    contentType: str,
+    messages: str,
+    sessionState: str,
+    requestAttributes: str,
+    sessionId: str,
+    audioStream: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `contentType`: `str`
-- `messages`: `str`
-- `sessionState`: `str`
-- `requestAttributes`: `str`
-- `sessionId`: `str`
-- `audioStream`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="recognizetextrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecognizeTextRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import RecognizeTextRequestRequestTypeDef
+
+def get_value() -> RecognizeTextRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botAliasId": ...,
+        "localeId": ...,
+        "sessionId": ...,
+        "text": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecognizeTextRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+    text: str,
+    sessionState: NotRequired[SessionStateTypeDef],  # (1)
+    requestAttributes: NotRequired[Mapping[str, str]],
+```
 
-- `botId`: `str`
-- `botAliasId`: `str`
-- `localeId`: `str`
-- `sessionId`: `str`
-- `text`: `str`
-
-Optional fields:
-
-- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
-- `requestAttributes`: `Mapping`\[`str`, `str`\]
-
-<a id="recognizetextresponsetypedef"></a>
-
+1. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
 ## RecognizeTextResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import RecognizeTextResponseTypeDef
+
+def get_value() -> RecognizeTextResponseTypeDef:
+    return {
+        "messages": ...,
+        "sessionState": ...,
+        "interpretations": ...,
+        "requestAttributes": ...,
+        "sessionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecognizeTextResponseTypeDef(TypedDict):
+    messages: List[MessageTypeDef],  # (1)
+    sessionState: SessionStateTypeDef,  # (2)
+    interpretations: List[InterpretationTypeDef],  # (3)
+    requestAttributes: Dict[str, str],
+    sessionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `messages`: `List`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
-- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
-- `interpretations`:
-  `List`\[[InterpretationTypeDef](./type_defs.md#interpretationtypedef)\]
-- `requestAttributes`: `Dict`\[`str`, `str`\]
-- `sessionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="recognizeutterancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+2. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
+3. See [:material-code-braces: InterpretationTypeDef](./type_defs.md#interpretationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecognizeUtteranceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import RecognizeUtteranceRequestRequestTypeDef
+
+def get_value() -> RecognizeUtteranceRequestRequestTypeDef:
+    return {
+        "botId": ...,
+        "botAliasId": ...,
+        "localeId": ...,
+        "sessionId": ...,
+        "requestContentType": ...,
+    }
 ```
 
-Required fields:
-
-- `botId`: `str`
-- `botAliasId`: `str`
-- `localeId`: `str`
-- `sessionId`: `str`
-- `requestContentType`: `str`
-
-Optional fields:
-
-- `sessionState`: `str`
-- `requestAttributes`: `str`
-- `responseContentType`: `str`
-- `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="recognizeutteranceresponsetypedef"></a>
+```python title="Definition"
+class RecognizeUtteranceRequestRequestTypeDef(TypedDict):
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+    requestContentType: str,
+    sessionState: NotRequired[str],
+    requestAttributes: NotRequired[str],
+    responseContentType: NotRequired[str],
+    inputStream: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## RecognizeUtteranceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import RecognizeUtteranceResponseTypeDef
+
+def get_value() -> RecognizeUtteranceResponseTypeDef:
+    return {
+        "inputMode": ...,
+        "contentType": ...,
+        "messages": ...,
+        "interpretations": ...,
+        "sessionState": ...,
+        "requestAttributes": ...,
+        "sessionId": ...,
+        "inputTranscript": ...,
+        "audioStream": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecognizeUtteranceResponseTypeDef(TypedDict):
+    inputMode: str,
+    contentType: str,
+    messages: str,
+    interpretations: str,
+    sessionState: str,
+    requestAttributes: str,
+    sessionId: str,
+    inputTranscript: str,
+    audioStream: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `inputMode`: `str`
-- `contentType`: `str`
-- `messages`: `str`
-- `interpretations`: `str`
-- `sessionState`: `str`
-- `requestAttributes`: `str`
-- `sessionId`: `str`
-- `inputTranscript`: `str`
-- `audioStream`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="runtimehintdetailstypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RuntimeHintDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import RuntimeHintDetailsTypeDef
+
+def get_value() -> RuntimeHintDetailsTypeDef:
+    return {
+        "runtimeHintValues": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RuntimeHintDetailsTypeDef(TypedDict):
+    runtimeHintValues: List[RuntimeHintValueTypeDef],  # (1)
+```
 
-- `runtimeHintValues`:
-  `List`\[[RuntimeHintValueTypeDef](./type_defs.md#runtimehintvaluetypedef)\]
-
-<a id="runtimehintvaluetypedef"></a>
-
+1. See [:material-code-braces: RuntimeHintValueTypeDef](./type_defs.md#runtimehintvaluetypedef) 
 ## RuntimeHintValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import RuntimeHintValueTypeDef
+
+def get_value() -> RuntimeHintValueTypeDef:
+    return {
+        "phrase": ...,
+    }
 ```
 
-Required fields:
-
-- `phrase`: `str`
-
-<a id="runtimehintstypedef"></a>
+```python title="Definition"
+class RuntimeHintValueTypeDef(TypedDict):
+    phrase: str,
+```
 
 ## RuntimeHintsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import RuntimeHintsTypeDef
+
+def get_value() -> RuntimeHintsTypeDef:
+    return {
+        "slotHints": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RuntimeHintsTypeDef(TypedDict):
+    slotHints: NotRequired[Dict[str, Dict[str, RuntimeHintDetailsTypeDef]]],  # (1)
+```
 
-- `slotHints`: `Dict`\[`str`, `Dict`\[`str`,
-  [RuntimeHintDetailsTypeDef](./type_defs.md#runtimehintdetailstypedef)\]\]
-
-<a id="sentimentresponsetypedef"></a>
-
+1. See [:material-code-braces: RuntimeHintDetailsTypeDef](./type_defs.md#runtimehintdetailstypedef) 
 ## SentimentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import SentimentResponseTypeDef
+
+def get_value() -> SentimentResponseTypeDef:
+    return {
+        "sentiment": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SentimentResponseTypeDef(TypedDict):
+    sentiment: NotRequired[SentimentTypeType],  # (1)
+    sentimentScore: NotRequired[SentimentScoreTypeDef],  # (2)
+```
 
-- `sentiment`: [SentimentTypeType](./literals.md#sentimenttypetype)
-- `sentimentScore`:
-  [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
-
-<a id="sentimentscoretypedef"></a>
-
+1. See [:material-code-brackets: SentimentTypeType](./literals.md#sentimenttypetype) 
+2. See [:material-code-braces: SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef) 
 ## SentimentScoreTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import SentimentScoreTypeDef
+
+def get_value() -> SentimentScoreTypeDef:
+    return {
+        "positive": ...,
+    }
 ```
 
-Optional fields:
-
-- `positive`: `float`
-- `negative`: `float`
-- `neutral`: `float`
-- `mixed`: `float`
-
-<a id="sessionstatetypedef"></a>
+```python title="Definition"
+class SentimentScoreTypeDef(TypedDict):
+    positive: NotRequired[float],
+    negative: NotRequired[float],
+    neutral: NotRequired[float],
+    mixed: NotRequired[float],
+```
 
 ## SessionStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import SessionStateTypeDef
+
+def get_value() -> SessionStateTypeDef:
+    return {
+        "dialogAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SessionStateTypeDef(TypedDict):
+    dialogAction: NotRequired[DialogActionTypeDef],  # (1)
+    intent: NotRequired[IntentTypeDef],  # (2)
+    activeContexts: NotRequired[List[ActiveContextTypeDef]],  # (3)
+    sessionAttributes: NotRequired[Dict[str, str]],
+    originatingRequestId: NotRequired[str],
+    runtimeHints: NotRequired[RuntimeHintsTypeDef],  # (4)
+```
 
-- `dialogAction`: [DialogActionTypeDef](./type_defs.md#dialogactiontypedef)
-- `intent`: [IntentTypeDef](./type_defs.md#intenttypedef)
-- `activeContexts`:
-  `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
-- `sessionAttributes`: `Dict`\[`str`, `str`\]
-- `originatingRequestId`: `str`
-- `runtimeHints`: [RuntimeHintsTypeDef](./type_defs.md#runtimehintstypedef)
-
-<a id="slottypedef"></a>
-
+1. See [:material-code-braces: DialogActionTypeDef](./type_defs.md#dialogactiontypedef) 
+2. See [:material-code-braces: IntentTypeDef](./type_defs.md#intenttypedef) 
+3. See [:material-code-braces: ActiveContextTypeDef](./type_defs.md#activecontexttypedef) 
+4. See [:material-code-braces: RuntimeHintsTypeDef](./type_defs.md#runtimehintstypedef) 
 ## SlotTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import SlotTypeDef
+
+def get_value() -> SlotTypeDef:
+    return {
+        "value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SlotTypeDef(TypedDict):
+    value: NotRequired[ValueTypeDef],  # (1)
+    shape: NotRequired[ShapeType],  # (2)
+    values: NotRequired[List[SlotTypeDef]],  # (3)
+```
 
-- `value`: [ValueTypeDef](./type_defs.md#valuetypedef)
-- `shape`: [ShapeType](./literals.md#shapetype)
-- `values`: `List`\[[SlotTypeDef](./type_defs.md#slottypedef)\]
-
-<a id="valuetypedef"></a>
-
+1. See [:material-code-braces: ValueTypeDef](./type_defs.md#valuetypedef) 
+2. See [:material-code-brackets: ShapeType](./literals.md#shapetype) 
+3. See [:material-code-braces: SlotTypeDef](./type_defs.md#slottypedef) 
 ## ValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lexv2_runtime.type_defs import ValueTypeDef
+
+def get_value() -> ValueTypeDef:
+    return {
+        "interpretedValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValueTypeDef(TypedDict):
+    interpretedValue: str,
+    originalValue: NotRequired[str],
+    resolvedValues: NotRequired[List[str]],
+```
 
-- `interpretedValue`: `str`
-
-Optional fields:
-
-- `originalValue`: `str`
-- `resolvedValues`: `List`\[`str`\]

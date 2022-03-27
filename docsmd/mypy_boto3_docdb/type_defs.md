@@ -1,2368 +1,3173 @@
-<a id="typed-dictionaries-for-boto3-docdb-module"></a>
-
-# Typed dictionaries for boto3 DocDB module
+# Typed dictionaries
 
 > [Index](../README.md) > [DocDB](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
-type annotations stubs module
-[mypy-boto3-docdb](https://pypi.org/project/mypy-boto3-docdb/).
+!!! note ""
 
-- [Typed dictionaries for boto3 DocDB module](#typed-dictionaries-for-boto3-docdb-module)
-  - [AddSourceIdentifierToSubscriptionMessageRequestTypeDef](#addsourceidentifiertosubscriptionmessagerequesttypedef)
-  - [AddSourceIdentifierToSubscriptionResultTypeDef](#addsourceidentifiertosubscriptionresulttypedef)
-  - [AddTagsToResourceMessageRequestTypeDef](#addtagstoresourcemessagerequesttypedef)
-  - [ApplyPendingMaintenanceActionMessageRequestTypeDef](#applypendingmaintenanceactionmessagerequesttypedef)
-  - [ApplyPendingMaintenanceActionResultTypeDef](#applypendingmaintenanceactionresulttypedef)
-  - [AvailabilityZoneTypeDef](#availabilityzonetypedef)
-  - [CertificateMessageTypeDef](#certificatemessagetypedef)
-  - [CertificateTypeDef](#certificatetypedef)
-  - [CloudwatchLogsExportConfigurationTypeDef](#cloudwatchlogsexportconfigurationtypedef)
-  - [CopyDBClusterParameterGroupMessageRequestTypeDef](#copydbclusterparametergroupmessagerequesttypedef)
-  - [CopyDBClusterParameterGroupResultTypeDef](#copydbclusterparametergroupresulttypedef)
-  - [CopyDBClusterSnapshotMessageRequestTypeDef](#copydbclustersnapshotmessagerequesttypedef)
-  - [CopyDBClusterSnapshotResultTypeDef](#copydbclustersnapshotresulttypedef)
-  - [CreateDBClusterMessageRequestTypeDef](#createdbclustermessagerequesttypedef)
-  - [CreateDBClusterParameterGroupMessageRequestTypeDef](#createdbclusterparametergroupmessagerequesttypedef)
-  - [CreateDBClusterParameterGroupResultTypeDef](#createdbclusterparametergroupresulttypedef)
-  - [CreateDBClusterResultTypeDef](#createdbclusterresulttypedef)
-  - [CreateDBClusterSnapshotMessageRequestTypeDef](#createdbclustersnapshotmessagerequesttypedef)
-  - [CreateDBClusterSnapshotResultTypeDef](#createdbclustersnapshotresulttypedef)
-  - [CreateDBInstanceMessageRequestTypeDef](#createdbinstancemessagerequesttypedef)
-  - [CreateDBInstanceResultTypeDef](#createdbinstanceresulttypedef)
-  - [CreateDBSubnetGroupMessageRequestTypeDef](#createdbsubnetgroupmessagerequesttypedef)
-  - [CreateDBSubnetGroupResultTypeDef](#createdbsubnetgroupresulttypedef)
-  - [CreateEventSubscriptionMessageRequestTypeDef](#createeventsubscriptionmessagerequesttypedef)
-  - [CreateEventSubscriptionResultTypeDef](#createeventsubscriptionresulttypedef)
-  - [CreateGlobalClusterMessageRequestTypeDef](#createglobalclustermessagerequesttypedef)
-  - [CreateGlobalClusterResultTypeDef](#createglobalclusterresulttypedef)
-  - [DBClusterMemberTypeDef](#dbclustermembertypedef)
-  - [DBClusterMessageTypeDef](#dbclustermessagetypedef)
-  - [DBClusterParameterGroupDetailsTypeDef](#dbclusterparametergroupdetailstypedef)
-  - [DBClusterParameterGroupNameMessageTypeDef](#dbclusterparametergroupnamemessagetypedef)
-  - [DBClusterParameterGroupTypeDef](#dbclusterparametergrouptypedef)
-  - [DBClusterParameterGroupsMessageTypeDef](#dbclusterparametergroupsmessagetypedef)
-  - [DBClusterRoleTypeDef](#dbclusterroletypedef)
-  - [DBClusterSnapshotAttributeTypeDef](#dbclustersnapshotattributetypedef)
-  - [DBClusterSnapshotAttributesResultTypeDef](#dbclustersnapshotattributesresulttypedef)
-  - [DBClusterSnapshotMessageTypeDef](#dbclustersnapshotmessagetypedef)
-  - [DBClusterSnapshotTypeDef](#dbclustersnapshottypedef)
-  - [DBClusterTypeDef](#dbclustertypedef)
-  - [DBEngineVersionMessageTypeDef](#dbengineversionmessagetypedef)
-  - [DBEngineVersionTypeDef](#dbengineversiontypedef)
-  - [DBInstanceMessageTypeDef](#dbinstancemessagetypedef)
-  - [DBInstanceStatusInfoTypeDef](#dbinstancestatusinfotypedef)
-  - [DBInstanceTypeDef](#dbinstancetypedef)
-  - [DBSubnetGroupMessageTypeDef](#dbsubnetgroupmessagetypedef)
-  - [DBSubnetGroupTypeDef](#dbsubnetgrouptypedef)
-  - [DeleteDBClusterMessageRequestTypeDef](#deletedbclustermessagerequesttypedef)
-  - [DeleteDBClusterParameterGroupMessageRequestTypeDef](#deletedbclusterparametergroupmessagerequesttypedef)
-  - [DeleteDBClusterResultTypeDef](#deletedbclusterresulttypedef)
-  - [DeleteDBClusterSnapshotMessageRequestTypeDef](#deletedbclustersnapshotmessagerequesttypedef)
-  - [DeleteDBClusterSnapshotResultTypeDef](#deletedbclustersnapshotresulttypedef)
-  - [DeleteDBInstanceMessageRequestTypeDef](#deletedbinstancemessagerequesttypedef)
-  - [DeleteDBInstanceResultTypeDef](#deletedbinstanceresulttypedef)
-  - [DeleteDBSubnetGroupMessageRequestTypeDef](#deletedbsubnetgroupmessagerequesttypedef)
-  - [DeleteEventSubscriptionMessageRequestTypeDef](#deleteeventsubscriptionmessagerequesttypedef)
-  - [DeleteEventSubscriptionResultTypeDef](#deleteeventsubscriptionresulttypedef)
-  - [DeleteGlobalClusterMessageRequestTypeDef](#deleteglobalclustermessagerequesttypedef)
-  - [DeleteGlobalClusterResultTypeDef](#deleteglobalclusterresulttypedef)
-  - [DescribeCertificatesMessageRequestTypeDef](#describecertificatesmessagerequesttypedef)
-  - [DescribeDBClusterParameterGroupsMessageRequestTypeDef](#describedbclusterparametergroupsmessagerequesttypedef)
-  - [DescribeDBClusterParametersMessageRequestTypeDef](#describedbclusterparametersmessagerequesttypedef)
-  - [DescribeDBClusterSnapshotAttributesMessageRequestTypeDef](#describedbclustersnapshotattributesmessagerequesttypedef)
-  - [DescribeDBClusterSnapshotAttributesResultTypeDef](#describedbclustersnapshotattributesresulttypedef)
-  - [DescribeDBClusterSnapshotsMessageRequestTypeDef](#describedbclustersnapshotsmessagerequesttypedef)
-  - [DescribeDBClustersMessageRequestTypeDef](#describedbclustersmessagerequesttypedef)
-  - [DescribeDBEngineVersionsMessageRequestTypeDef](#describedbengineversionsmessagerequesttypedef)
-  - [DescribeDBInstancesMessageRequestTypeDef](#describedbinstancesmessagerequesttypedef)
-  - [DescribeDBSubnetGroupsMessageRequestTypeDef](#describedbsubnetgroupsmessagerequesttypedef)
-  - [DescribeEngineDefaultClusterParametersMessageRequestTypeDef](#describeenginedefaultclusterparametersmessagerequesttypedef)
-  - [DescribeEngineDefaultClusterParametersResultTypeDef](#describeenginedefaultclusterparametersresulttypedef)
-  - [DescribeEventCategoriesMessageRequestTypeDef](#describeeventcategoriesmessagerequesttypedef)
-  - [DescribeEventSubscriptionsMessageRequestTypeDef](#describeeventsubscriptionsmessagerequesttypedef)
-  - [DescribeEventsMessageRequestTypeDef](#describeeventsmessagerequesttypedef)
-  - [DescribeGlobalClustersMessageRequestTypeDef](#describeglobalclustersmessagerequesttypedef)
-  - [DescribeOrderableDBInstanceOptionsMessageRequestTypeDef](#describeorderabledbinstanceoptionsmessagerequesttypedef)
-  - [DescribePendingMaintenanceActionsMessageRequestTypeDef](#describependingmaintenanceactionsmessagerequesttypedef)
-  - [EndpointTypeDef](#endpointtypedef)
-  - [EngineDefaultsTypeDef](#enginedefaultstypedef)
-  - [EventCategoriesMapTypeDef](#eventcategoriesmaptypedef)
-  - [EventCategoriesMessageTypeDef](#eventcategoriesmessagetypedef)
-  - [EventSubscriptionTypeDef](#eventsubscriptiontypedef)
-  - [EventSubscriptionsMessageTypeDef](#eventsubscriptionsmessagetypedef)
-  - [EventTypeDef](#eventtypedef)
-  - [EventsMessageTypeDef](#eventsmessagetypedef)
-  - [FailoverDBClusterMessageRequestTypeDef](#failoverdbclustermessagerequesttypedef)
-  - [FailoverDBClusterResultTypeDef](#failoverdbclusterresulttypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [GlobalClusterMemberTypeDef](#globalclustermembertypedef)
-  - [GlobalClusterTypeDef](#globalclustertypedef)
-  - [GlobalClustersMessageTypeDef](#globalclustersmessagetypedef)
-  - [ListTagsForResourceMessageRequestTypeDef](#listtagsforresourcemessagerequesttypedef)
-  - [ModifyDBClusterMessageRequestTypeDef](#modifydbclustermessagerequesttypedef)
-  - [ModifyDBClusterParameterGroupMessageRequestTypeDef](#modifydbclusterparametergroupmessagerequesttypedef)
-  - [ModifyDBClusterResultTypeDef](#modifydbclusterresulttypedef)
-  - [ModifyDBClusterSnapshotAttributeMessageRequestTypeDef](#modifydbclustersnapshotattributemessagerequesttypedef)
-  - [ModifyDBClusterSnapshotAttributeResultTypeDef](#modifydbclustersnapshotattributeresulttypedef)
-  - [ModifyDBInstanceMessageRequestTypeDef](#modifydbinstancemessagerequesttypedef)
-  - [ModifyDBInstanceResultTypeDef](#modifydbinstanceresulttypedef)
-  - [ModifyDBSubnetGroupMessageRequestTypeDef](#modifydbsubnetgroupmessagerequesttypedef)
-  - [ModifyDBSubnetGroupResultTypeDef](#modifydbsubnetgroupresulttypedef)
-  - [ModifyEventSubscriptionMessageRequestTypeDef](#modifyeventsubscriptionmessagerequesttypedef)
-  - [ModifyEventSubscriptionResultTypeDef](#modifyeventsubscriptionresulttypedef)
-  - [ModifyGlobalClusterMessageRequestTypeDef](#modifyglobalclustermessagerequesttypedef)
-  - [ModifyGlobalClusterResultTypeDef](#modifyglobalclusterresulttypedef)
-  - [OrderableDBInstanceOptionTypeDef](#orderabledbinstanceoptiontypedef)
-  - [OrderableDBInstanceOptionsMessageTypeDef](#orderabledbinstanceoptionsmessagetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterTypeDef](#parametertypedef)
-  - [PendingCloudwatchLogsExportsTypeDef](#pendingcloudwatchlogsexportstypedef)
-  - [PendingMaintenanceActionTypeDef](#pendingmaintenanceactiontypedef)
-  - [PendingMaintenanceActionsMessageTypeDef](#pendingmaintenanceactionsmessagetypedef)
-  - [PendingModifiedValuesTypeDef](#pendingmodifiedvaluestypedef)
-  - [RebootDBInstanceMessageRequestTypeDef](#rebootdbinstancemessagerequesttypedef)
-  - [RebootDBInstanceResultTypeDef](#rebootdbinstanceresulttypedef)
-  - [RemoveFromGlobalClusterMessageRequestTypeDef](#removefromglobalclustermessagerequesttypedef)
-  - [RemoveFromGlobalClusterResultTypeDef](#removefromglobalclusterresulttypedef)
-  - [RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef](#removesourceidentifierfromsubscriptionmessagerequesttypedef)
-  - [RemoveSourceIdentifierFromSubscriptionResultTypeDef](#removesourceidentifierfromsubscriptionresulttypedef)
-  - [RemoveTagsFromResourceMessageRequestTypeDef](#removetagsfromresourcemessagerequesttypedef)
-  - [ResetDBClusterParameterGroupMessageRequestTypeDef](#resetdbclusterparametergroupmessagerequesttypedef)
-  - [ResourcePendingMaintenanceActionsTypeDef](#resourcependingmaintenanceactionstypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreDBClusterFromSnapshotMessageRequestTypeDef](#restoredbclusterfromsnapshotmessagerequesttypedef)
-  - [RestoreDBClusterFromSnapshotResultTypeDef](#restoredbclusterfromsnapshotresulttypedef)
-  - [RestoreDBClusterToPointInTimeMessageRequestTypeDef](#restoredbclustertopointintimemessagerequesttypedef)
-  - [RestoreDBClusterToPointInTimeResultTypeDef](#restoredbclustertopointintimeresulttypedef)
-  - [StartDBClusterMessageRequestTypeDef](#startdbclustermessagerequesttypedef)
-  - [StartDBClusterResultTypeDef](#startdbclusterresulttypedef)
-  - [StopDBClusterMessageRequestTypeDef](#stopdbclustermessagerequesttypedef)
-  - [StopDBClusterResultTypeDef](#stopdbclusterresulttypedef)
-  - [SubnetTypeDef](#subnettypedef)
-  - [TagListMessageTypeDef](#taglistmessagetypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UpgradeTargetTypeDef](#upgradetargettypedef)
-  - [VpcSecurityGroupMembershipTypeDef](#vpcsecuritygroupmembershiptypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="addsourceidentifiertosubscriptionmessagerequesttypedef"></a>
+    Auto-generated documentation for [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
+    type annotations stubs module [mypy-boto3-docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
 ## AddSourceIdentifierToSubscriptionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionMessageRequestTypeDef
+
+def get_value() -> AddSourceIdentifierToSubscriptionMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+        "SourceIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionName`: `str`
-- `SourceIdentifier`: `str`
-
-<a id="addsourceidentifiertosubscriptionresulttypedef"></a>
+```python title="Definition"
+class AddSourceIdentifierToSubscriptionMessageRequestTypeDef(TypedDict):
+    SubscriptionName: str,
+    SourceIdentifier: str,
+```
 
 ## AddSourceIdentifierToSubscriptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionResultTypeDef
+
+def get_value() -> AddSourceIdentifierToSubscriptionResultTypeDef:
+    return {
+        "EventSubscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddSourceIdentifierToSubscriptionResultTypeDef(TypedDict):
+    EventSubscription: EventSubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventSubscription`:
-  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addtagstoresourcemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddTagsToResourceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import AddTagsToResourceMessageRequestTypeDef
+
+def get_value() -> AddTagsToResourceMessageRequestTypeDef:
+    return {
+        "ResourceName": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsToResourceMessageRequestTypeDef(TypedDict):
+    ResourceName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="applypendingmaintenanceactionmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ApplyPendingMaintenanceActionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ApplyPendingMaintenanceActionMessageRequestTypeDef
+
+def get_value() -> ApplyPendingMaintenanceActionMessageRequestTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+        "ApplyAction": ...,
+        "OptInType": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceIdentifier`: `str`
-- `ApplyAction`: `str`
-- `OptInType`: `str`
-
-<a id="applypendingmaintenanceactionresulttypedef"></a>
+```python title="Definition"
+class ApplyPendingMaintenanceActionMessageRequestTypeDef(TypedDict):
+    ResourceIdentifier: str,
+    ApplyAction: str,
+    OptInType: str,
+```
 
 ## ApplyPendingMaintenanceActionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ApplyPendingMaintenanceActionResultTypeDef
+
+def get_value() -> ApplyPendingMaintenanceActionResultTypeDef:
+    return {
+        "ResourcePendingMaintenanceActions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplyPendingMaintenanceActionResultTypeDef(TypedDict):
+    ResourcePendingMaintenanceActions: ResourcePendingMaintenanceActionsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourcePendingMaintenanceActions`:
-  [ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="availabilityzonetypedef"></a>
-
+1. See [:material-code-braces: ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AvailabilityZoneTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import AvailabilityZoneTypeDef
+
+def get_value() -> AvailabilityZoneTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="certificatemessagetypedef"></a>
+```python title="Definition"
+class AvailabilityZoneTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## CertificateMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CertificateMessageTypeDef
+
+def get_value() -> CertificateMessageTypeDef:
+    return {
+        "Certificates": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CertificateMessageTypeDef(TypedDict):
+    Certificates: List[CertificateTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Certificates`:
-  `List`\[[CertificateTypeDef](./type_defs.md#certificatetypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="certificatetypedef"></a>
-
+1. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CertificateTypeDef
+
+def get_value() -> CertificateTypeDef:
+    return {
+        "CertificateIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `CertificateIdentifier`: `str`
-- `CertificateType`: `str`
-- `Thumbprint`: `str`
-- `ValidFrom`: `datetime`
-- `ValidTill`: `datetime`
-- `CertificateArn`: `str`
-
-<a id="cloudwatchlogsexportconfigurationtypedef"></a>
+```python title="Definition"
+class CertificateTypeDef(TypedDict):
+    CertificateIdentifier: NotRequired[str],
+    CertificateType: NotRequired[str],
+    Thumbprint: NotRequired[str],
+    ValidFrom: NotRequired[datetime],
+    ValidTill: NotRequired[datetime],
+    CertificateArn: NotRequired[str],
+```
 
 ## CloudwatchLogsExportConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CloudwatchLogsExportConfigurationTypeDef
+
+def get_value() -> CloudwatchLogsExportConfigurationTypeDef:
+    return {
+        "EnableLogTypes": ...,
+    }
 ```
 
-Optional fields:
-
-- `EnableLogTypes`: `Sequence`\[`str`\]
-- `DisableLogTypes`: `Sequence`\[`str`\]
-
-<a id="copydbclusterparametergroupmessagerequesttypedef"></a>
+```python title="Definition"
+class CloudwatchLogsExportConfigurationTypeDef(TypedDict):
+    EnableLogTypes: NotRequired[Sequence[str]],
+    DisableLogTypes: NotRequired[Sequence[str]],
+```
 
 ## CopyDBClusterParameterGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CopyDBClusterParameterGroupMessageRequestTypeDef
+
+def get_value() -> CopyDBClusterParameterGroupMessageRequestTypeDef:
+    return {
+        "SourceDBClusterParameterGroupIdentifier": ...,
+        "TargetDBClusterParameterGroupIdentifier": ...,
+        "TargetDBClusterParameterGroupDescription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyDBClusterParameterGroupMessageRequestTypeDef(TypedDict):
+    SourceDBClusterParameterGroupIdentifier: str,
+    TargetDBClusterParameterGroupIdentifier: str,
+    TargetDBClusterParameterGroupDescription: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SourceDBClusterParameterGroupIdentifier`: `str`
-- `TargetDBClusterParameterGroupIdentifier`: `str`
-- `TargetDBClusterParameterGroupDescription`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="copydbclusterparametergroupresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CopyDBClusterParameterGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CopyDBClusterParameterGroupResultTypeDef
+
+def get_value() -> CopyDBClusterParameterGroupResultTypeDef:
+    return {
+        "DBClusterParameterGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyDBClusterParameterGroupResultTypeDef(TypedDict):
+    DBClusterParameterGroup: DBClusterParameterGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBClusterParameterGroup`:
-  [DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="copydbclustersnapshotmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CopyDBClusterSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CopyDBClusterSnapshotMessageRequestTypeDef
+
+def get_value() -> CopyDBClusterSnapshotMessageRequestTypeDef:
+    return {
+        "SourceDBClusterSnapshotIdentifier": ...,
+        "TargetDBClusterSnapshotIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyDBClusterSnapshotMessageRequestTypeDef(TypedDict):
+    SourceDBClusterSnapshotIdentifier: str,
+    TargetDBClusterSnapshotIdentifier: str,
+    KmsKeyId: NotRequired[str],
+    PreSignedUrl: NotRequired[str],
+    CopyTags: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    SourceRegion: NotRequired[str],
+```
 
-- `SourceDBClusterSnapshotIdentifier`: `str`
-- `TargetDBClusterSnapshotIdentifier`: `str`
-
-Optional fields:
-
-- `KmsKeyId`: `str`
-- `PreSignedUrl`: `str`
-- `CopyTags`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SourceRegion`: `str`
-
-<a id="copydbclustersnapshotresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CopyDBClusterSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CopyDBClusterSnapshotResultTypeDef
+
+def get_value() -> CopyDBClusterSnapshotResultTypeDef:
+    return {
+        "DBClusterSnapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyDBClusterSnapshotResultTypeDef(TypedDict):
+    DBClusterSnapshot: DBClusterSnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBClusterSnapshot`:
-  [DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdbclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDBClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBClusterMessageRequestTypeDef
+
+def get_value() -> CreateDBClusterMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+        "Engine": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBClusterMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+    Engine: str,
+    AvailabilityZones: NotRequired[Sequence[str]],
+    BackupRetentionPeriod: NotRequired[int],
+    DBClusterParameterGroupName: NotRequired[str],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    DBSubnetGroupName: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    Port: NotRequired[int],
+    MasterUsername: NotRequired[str],
+    MasterUserPassword: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    StorageEncrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    PreSignedUrl: NotRequired[str],
+    EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
+    DeletionProtection: NotRequired[bool],
+    GlobalClusterIdentifier: NotRequired[str],
+    SourceRegion: NotRequired[str],
+```
 
-- `DBClusterIdentifier`: `str`
-- `Engine`: `str`
-
-Optional fields:
-
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `BackupRetentionPeriod`: `int`
-- `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `DBSubnetGroupName`: `str`
-- `EngineVersion`: `str`
-- `Port`: `int`
-- `MasterUsername`: `str`
-- `MasterUserPassword`: `str`
-- `PreferredBackupWindow`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `StorageEncrypted`: `bool`
-- `KmsKeyId`: `str`
-- `PreSignedUrl`: `str`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `DeletionProtection`: `bool`
-- `GlobalClusterIdentifier`: `str`
-- `SourceRegion`: `str`
-
-<a id="createdbclusterparametergroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDBClusterParameterGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBClusterParameterGroupMessageRequestTypeDef
+
+def get_value() -> CreateDBClusterParameterGroupMessageRequestTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+        "DBParameterGroupFamily": ...,
+        "Description": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBClusterParameterGroupMessageRequestTypeDef(TypedDict):
+    DBClusterParameterGroupName: str,
+    DBParameterGroupFamily: str,
+    Description: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `DBClusterParameterGroupName`: `str`
-- `DBParameterGroupFamily`: `str`
-- `Description`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdbclusterparametergroupresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDBClusterParameterGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBClusterParameterGroupResultTypeDef
+
+def get_value() -> CreateDBClusterParameterGroupResultTypeDef:
+    return {
+        "DBClusterParameterGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBClusterParameterGroupResultTypeDef(TypedDict):
+    DBClusterParameterGroup: DBClusterParameterGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBClusterParameterGroup`:
-  [DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdbclusterresulttypedef"></a>
-
+1. See [:material-code-braces: DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDBClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBClusterResultTypeDef
+
+def get_value() -> CreateDBClusterResultTypeDef:
+    return {
+        "DBCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBClusterResultTypeDef(TypedDict):
+    DBCluster: DBClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdbclustersnapshotmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterTypeDef](./type_defs.md#dbclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDBClusterSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBClusterSnapshotMessageRequestTypeDef
+
+def get_value() -> CreateDBClusterSnapshotMessageRequestTypeDef:
+    return {
+        "DBClusterSnapshotIdentifier": ...,
+        "DBClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBClusterSnapshotMessageRequestTypeDef(TypedDict):
+    DBClusterSnapshotIdentifier: str,
+    DBClusterIdentifier: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `DBClusterSnapshotIdentifier`: `str`
-- `DBClusterIdentifier`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdbclustersnapshotresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDBClusterSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBClusterSnapshotResultTypeDef
+
+def get_value() -> CreateDBClusterSnapshotResultTypeDef:
+    return {
+        "DBClusterSnapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBClusterSnapshotResultTypeDef(TypedDict):
+    DBClusterSnapshot: DBClusterSnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBClusterSnapshot`:
-  [DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdbinstancemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDBInstanceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBInstanceMessageRequestTypeDef
+
+def get_value() -> CreateDBInstanceMessageRequestTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+        "DBInstanceClass": ...,
+        "Engine": ...,
+        "DBClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBInstanceMessageRequestTypeDef(TypedDict):
+    DBInstanceIdentifier: str,
+    DBInstanceClass: str,
+    Engine: str,
+    DBClusterIdentifier: str,
+    AvailabilityZone: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    AutoMinorVersionUpgrade: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    PromotionTier: NotRequired[int],
+```
 
-- `DBInstanceIdentifier`: `str`
-- `DBInstanceClass`: `str`
-- `Engine`: `str`
-- `DBClusterIdentifier`: `str`
-
-Optional fields:
-
-- `AvailabilityZone`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `AutoMinorVersionUpgrade`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `PromotionTier`: `int`
-
-<a id="createdbinstanceresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDBInstanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBInstanceResultTypeDef
+
+def get_value() -> CreateDBInstanceResultTypeDef:
+    return {
+        "DBInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBInstanceResultTypeDef(TypedDict):
+    DBInstance: DBInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdbsubnetgroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBInstanceTypeDef](./type_defs.md#dbinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDBSubnetGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBSubnetGroupMessageRequestTypeDef
+
+def get_value() -> CreateDBSubnetGroupMessageRequestTypeDef:
+    return {
+        "DBSubnetGroupName": ...,
+        "DBSubnetGroupDescription": ...,
+        "SubnetIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBSubnetGroupMessageRequestTypeDef(TypedDict):
+    DBSubnetGroupName: str,
+    DBSubnetGroupDescription: str,
+    SubnetIds: Sequence[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `DBSubnetGroupName`: `str`
-- `DBSubnetGroupDescription`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdbsubnetgroupresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDBSubnetGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateDBSubnetGroupResultTypeDef
+
+def get_value() -> CreateDBSubnetGroupResultTypeDef:
+    return {
+        "DBSubnetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDBSubnetGroupResultTypeDef(TypedDict):
+    DBSubnetGroup: DBSubnetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBSubnetGroup`: [DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createeventsubscriptionmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEventSubscriptionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateEventSubscriptionMessageRequestTypeDef
+
+def get_value() -> CreateEventSubscriptionMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+        "SnsTopicArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventSubscriptionMessageRequestTypeDef(TypedDict):
+    SubscriptionName: str,
+    SnsTopicArn: str,
+    SourceType: NotRequired[str],
+    EventCategories: NotRequired[Sequence[str]],
+    SourceIds: NotRequired[Sequence[str]],
+    Enabled: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SubscriptionName`: `str`
-- `SnsTopicArn`: `str`
-
-Optional fields:
-
-- `SourceType`: `str`
-- `EventCategories`: `Sequence`\[`str`\]
-- `SourceIds`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createeventsubscriptionresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEventSubscriptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateEventSubscriptionResultTypeDef
+
+def get_value() -> CreateEventSubscriptionResultTypeDef:
+    return {
+        "EventSubscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventSubscriptionResultTypeDef(TypedDict):
+    EventSubscription: EventSubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventSubscription`:
-  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createglobalclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateGlobalClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateGlobalClusterMessageRequestTypeDef
+
+def get_value() -> CreateGlobalClusterMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `GlobalClusterIdentifier`: `str`
-
-Optional fields:
-
-- `SourceDBClusterIdentifier`: `str`
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `DeletionProtection`: `bool`
-- `DatabaseName`: `str`
-- `StorageEncrypted`: `bool`
-
-<a id="createglobalclusterresulttypedef"></a>
+```python title="Definition"
+class CreateGlobalClusterMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: str,
+    SourceDBClusterIdentifier: NotRequired[str],
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+    DatabaseName: NotRequired[str],
+    StorageEncrypted: NotRequired[bool],
+```
 
 ## CreateGlobalClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import CreateGlobalClusterResultTypeDef
+
+def get_value() -> CreateGlobalClusterResultTypeDef:
+    return {
+        "GlobalCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGlobalClusterResultTypeDef(TypedDict):
+    GlobalCluster: GlobalClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dbclustermembertypedef"></a>
-
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBClusterMemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterMemberTypeDef
+
+def get_value() -> DBClusterMemberTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `DBInstanceIdentifier`: `str`
-- `IsClusterWriter`: `bool`
-- `DBClusterParameterGroupStatus`: `str`
-- `PromotionTier`: `int`
-
-<a id="dbclustermessagetypedef"></a>
+```python title="Definition"
+class DBClusterMemberTypeDef(TypedDict):
+    DBInstanceIdentifier: NotRequired[str],
+    IsClusterWriter: NotRequired[bool],
+    DBClusterParameterGroupStatus: NotRequired[str],
+    PromotionTier: NotRequired[int],
+```
 
 ## DBClusterMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterMessageTypeDef
+
+def get_value() -> DBClusterMessageTypeDef:
+    return {
+        "Marker": ...,
+        "DBClusters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DBClusterMessageTypeDef(TypedDict):
+    Marker: str,
+    DBClusters: List[DBClusterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `DBClusters`: `List`\[[DBClusterTypeDef](./type_defs.md#dbclustertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dbclusterparametergroupdetailstypedef"></a>
-
+1. See [:material-code-braces: DBClusterTypeDef](./type_defs.md#dbclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBClusterParameterGroupDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterParameterGroupDetailsTypeDef
+
+def get_value() -> DBClusterParameterGroupDetailsTypeDef:
+    return {
+        "Parameters": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DBClusterParameterGroupDetailsTypeDef(TypedDict):
+    Parameters: List[ParameterTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dbclusterparametergroupnamemessagetypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBClusterParameterGroupNameMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterParameterGroupNameMessageTypeDef
+
+def get_value() -> DBClusterParameterGroupNameMessageTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DBClusterParameterGroupNameMessageTypeDef(TypedDict):
+    DBClusterParameterGroupName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DBClusterParameterGroupName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dbclusterparametergrouptypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBClusterParameterGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterParameterGroupTypeDef
+
+def get_value() -> DBClusterParameterGroupTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `DBClusterParameterGroupName`: `str`
-- `DBParameterGroupFamily`: `str`
-- `Description`: `str`
-- `DBClusterParameterGroupArn`: `str`
-
-<a id="dbclusterparametergroupsmessagetypedef"></a>
+```python title="Definition"
+class DBClusterParameterGroupTypeDef(TypedDict):
+    DBClusterParameterGroupName: NotRequired[str],
+    DBParameterGroupFamily: NotRequired[str],
+    Description: NotRequired[str],
+    DBClusterParameterGroupArn: NotRequired[str],
+```
 
 ## DBClusterParameterGroupsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterParameterGroupsMessageTypeDef
+
+def get_value() -> DBClusterParameterGroupsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "DBClusterParameterGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DBClusterParameterGroupsMessageTypeDef(TypedDict):
+    Marker: str,
+    DBClusterParameterGroups: List[DBClusterParameterGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `DBClusterParameterGroups`:
-  `List`\[[DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dbclusterroletypedef"></a>
-
+1. See [:material-code-braces: DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBClusterRoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterRoleTypeDef
+
+def get_value() -> DBClusterRoleTypeDef:
+    return {
+        "RoleArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoleArn`: `str`
-- `Status`: `str`
-
-<a id="dbclustersnapshotattributetypedef"></a>
+```python title="Definition"
+class DBClusterRoleTypeDef(TypedDict):
+    RoleArn: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## DBClusterSnapshotAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterSnapshotAttributeTypeDef
+
+def get_value() -> DBClusterSnapshotAttributeTypeDef:
+    return {
+        "AttributeName": ...,
+    }
 ```
 
-Optional fields:
-
-- `AttributeName`: `str`
-- `AttributeValues`: `List`\[`str`\]
-
-<a id="dbclustersnapshotattributesresulttypedef"></a>
+```python title="Definition"
+class DBClusterSnapshotAttributeTypeDef(TypedDict):
+    AttributeName: NotRequired[str],
+    AttributeValues: NotRequired[List[str]],
+```
 
 ## DBClusterSnapshotAttributesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterSnapshotAttributesResultTypeDef
+
+def get_value() -> DBClusterSnapshotAttributesResultTypeDef:
+    return {
+        "DBClusterSnapshotIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DBClusterSnapshotAttributesResultTypeDef(TypedDict):
+    DBClusterSnapshotIdentifier: NotRequired[str],
+    DBClusterSnapshotAttributes: NotRequired[List[DBClusterSnapshotAttributeTypeDef]],  # (1)
+```
 
-- `DBClusterSnapshotIdentifier`: `str`
-- `DBClusterSnapshotAttributes`:
-  `List`\[[DBClusterSnapshotAttributeTypeDef](./type_defs.md#dbclustersnapshotattributetypedef)\]
-
-<a id="dbclustersnapshotmessagetypedef"></a>
-
+1. See [:material-code-braces: DBClusterSnapshotAttributeTypeDef](./type_defs.md#dbclustersnapshotattributetypedef) 
 ## DBClusterSnapshotMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterSnapshotMessageTypeDef
+
+def get_value() -> DBClusterSnapshotMessageTypeDef:
+    return {
+        "Marker": ...,
+        "DBClusterSnapshots": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DBClusterSnapshotMessageTypeDef(TypedDict):
+    Marker: str,
+    DBClusterSnapshots: List[DBClusterSnapshotTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `DBClusterSnapshots`:
-  `List`\[[DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dbclustersnapshottypedef"></a>
-
+1. See [:material-code-braces: DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBClusterSnapshotTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterSnapshotTypeDef
+
+def get_value() -> DBClusterSnapshotTypeDef:
+    return {
+        "AvailabilityZones": ...,
+    }
 ```
 
-Optional fields:
-
-- `AvailabilityZones`: `List`\[`str`\]
-- `DBClusterSnapshotIdentifier`: `str`
-- `DBClusterIdentifier`: `str`
-- `SnapshotCreateTime`: `datetime`
-- `Engine`: `str`
-- `Status`: `str`
-- `Port`: `int`
-- `VpcId`: `str`
-- `ClusterCreateTime`: `datetime`
-- `MasterUsername`: `str`
-- `EngineVersion`: `str`
-- `SnapshotType`: `str`
-- `PercentProgress`: `int`
-- `StorageEncrypted`: `bool`
-- `KmsKeyId`: `str`
-- `DBClusterSnapshotArn`: `str`
-- `SourceDBClusterSnapshotArn`: `str`
-
-<a id="dbclustertypedef"></a>
+```python title="Definition"
+class DBClusterSnapshotTypeDef(TypedDict):
+    AvailabilityZones: NotRequired[List[str]],
+    DBClusterSnapshotIdentifier: NotRequired[str],
+    DBClusterIdentifier: NotRequired[str],
+    SnapshotCreateTime: NotRequired[datetime],
+    Engine: NotRequired[str],
+    Status: NotRequired[str],
+    Port: NotRequired[int],
+    VpcId: NotRequired[str],
+    ClusterCreateTime: NotRequired[datetime],
+    MasterUsername: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    SnapshotType: NotRequired[str],
+    PercentProgress: NotRequired[int],
+    StorageEncrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    DBClusterSnapshotArn: NotRequired[str],
+    SourceDBClusterSnapshotArn: NotRequired[str],
+```
 
 ## DBClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBClusterTypeDef
+
+def get_value() -> DBClusterTypeDef:
+    return {
+        "AvailabilityZones": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DBClusterTypeDef(TypedDict):
+    AvailabilityZones: NotRequired[List[str]],
+    BackupRetentionPeriod: NotRequired[int],
+    DBClusterIdentifier: NotRequired[str],
+    DBClusterParameterGroup: NotRequired[str],
+    DBSubnetGroup: NotRequired[str],
+    Status: NotRequired[str],
+    PercentProgress: NotRequired[str],
+    EarliestRestorableTime: NotRequired[datetime],
+    Endpoint: NotRequired[str],
+    ReaderEndpoint: NotRequired[str],
+    MultiAZ: NotRequired[bool],
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    LatestRestorableTime: NotRequired[datetime],
+    Port: NotRequired[int],
+    MasterUsername: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    ReplicationSourceIdentifier: NotRequired[str],
+    ReadReplicaIdentifiers: NotRequired[List[str]],
+    DBClusterMembers: NotRequired[List[DBClusterMemberTypeDef]],  # (1)
+    VpcSecurityGroups: NotRequired[List[VpcSecurityGroupMembershipTypeDef]],  # (2)
+    HostedZoneId: NotRequired[str],
+    StorageEncrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    DbClusterResourceId: NotRequired[str],
+    DBClusterArn: NotRequired[str],
+    AssociatedRoles: NotRequired[List[DBClusterRoleTypeDef]],  # (3)
+    ClusterCreateTime: NotRequired[datetime],
+    EnabledCloudwatchLogsExports: NotRequired[List[str]],
+    DeletionProtection: NotRequired[bool],
+```
 
-- `AvailabilityZones`: `List`\[`str`\]
-- `BackupRetentionPeriod`: `int`
-- `DBClusterIdentifier`: `str`
-- `DBClusterParameterGroup`: `str`
-- `DBSubnetGroup`: `str`
-- `Status`: `str`
-- `PercentProgress`: `str`
-- `EarliestRestorableTime`: `datetime`
-- `Endpoint`: `str`
-- `ReaderEndpoint`: `str`
-- `MultiAZ`: `bool`
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `LatestRestorableTime`: `datetime`
-- `Port`: `int`
-- `MasterUsername`: `str`
-- `PreferredBackupWindow`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `ReplicationSourceIdentifier`: `str`
-- `ReadReplicaIdentifiers`: `List`\[`str`\]
-- `DBClusterMembers`:
-  `List`\[[DBClusterMemberTypeDef](./type_defs.md#dbclustermembertypedef)\]
-- `VpcSecurityGroups`:
-  `List`\[[VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)\]
-- `HostedZoneId`: `str`
-- `StorageEncrypted`: `bool`
-- `KmsKeyId`: `str`
-- `DbClusterResourceId`: `str`
-- `DBClusterArn`: `str`
-- `AssociatedRoles`:
-  `List`\[[DBClusterRoleTypeDef](./type_defs.md#dbclusterroletypedef)\]
-- `ClusterCreateTime`: `datetime`
-- `EnabledCloudwatchLogsExports`: `List`\[`str`\]
-- `DeletionProtection`: `bool`
-
-<a id="dbengineversionmessagetypedef"></a>
-
+1. See [:material-code-braces: DBClusterMemberTypeDef](./type_defs.md#dbclustermembertypedef) 
+2. See [:material-code-braces: VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef) 
+3. See [:material-code-braces: DBClusterRoleTypeDef](./type_defs.md#dbclusterroletypedef) 
 ## DBEngineVersionMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBEngineVersionMessageTypeDef
+
+def get_value() -> DBEngineVersionMessageTypeDef:
+    return {
+        "Marker": ...,
+        "DBEngineVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DBEngineVersionMessageTypeDef(TypedDict):
+    Marker: str,
+    DBEngineVersions: List[DBEngineVersionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `DBEngineVersions`:
-  `List`\[[DBEngineVersionTypeDef](./type_defs.md#dbengineversiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dbengineversiontypedef"></a>
-
+1. See [:material-code-braces: DBEngineVersionTypeDef](./type_defs.md#dbengineversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBEngineVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBEngineVersionTypeDef
+
+def get_value() -> DBEngineVersionTypeDef:
+    return {
+        "Engine": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DBEngineVersionTypeDef(TypedDict):
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    DBParameterGroupFamily: NotRequired[str],
+    DBEngineDescription: NotRequired[str],
+    DBEngineVersionDescription: NotRequired[str],
+    ValidUpgradeTarget: NotRequired[List[UpgradeTargetTypeDef]],  # (1)
+    ExportableLogTypes: NotRequired[List[str]],
+    SupportsLogExportsToCloudwatchLogs: NotRequired[bool],
+```
 
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `DBParameterGroupFamily`: `str`
-- `DBEngineDescription`: `str`
-- `DBEngineVersionDescription`: `str`
-- `ValidUpgradeTarget`:
-  `List`\[[UpgradeTargetTypeDef](./type_defs.md#upgradetargettypedef)\]
-- `ExportableLogTypes`: `List`\[`str`\]
-- `SupportsLogExportsToCloudwatchLogs`: `bool`
-
-<a id="dbinstancemessagetypedef"></a>
-
+1. See [:material-code-braces: UpgradeTargetTypeDef](./type_defs.md#upgradetargettypedef) 
 ## DBInstanceMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBInstanceMessageTypeDef
+
+def get_value() -> DBInstanceMessageTypeDef:
+    return {
+        "Marker": ...,
+        "DBInstances": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DBInstanceMessageTypeDef(TypedDict):
+    Marker: str,
+    DBInstances: List[DBInstanceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `DBInstances`:
-  `List`\[[DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dbinstancestatusinfotypedef"></a>
-
+1. See [:material-code-braces: DBInstanceTypeDef](./type_defs.md#dbinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBInstanceStatusInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBInstanceStatusInfoTypeDef
+
+def get_value() -> DBInstanceStatusInfoTypeDef:
+    return {
+        "StatusType": ...,
+    }
 ```
 
-Optional fields:
-
-- `StatusType`: `str`
-- `Normal`: `bool`
-- `Status`: `str`
-- `Message`: `str`
-
-<a id="dbinstancetypedef"></a>
+```python title="Definition"
+class DBInstanceStatusInfoTypeDef(TypedDict):
+    StatusType: NotRequired[str],
+    Normal: NotRequired[bool],
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+```
 
 ## DBInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBInstanceTypeDef
+
+def get_value() -> DBInstanceTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DBInstanceTypeDef(TypedDict):
+    DBInstanceIdentifier: NotRequired[str],
+    DBInstanceClass: NotRequired[str],
+    Engine: NotRequired[str],
+    DBInstanceStatus: NotRequired[str],
+    Endpoint: NotRequired[EndpointTypeDef],  # (1)
+    InstanceCreateTime: NotRequired[datetime],
+    PreferredBackupWindow: NotRequired[str],
+    BackupRetentionPeriod: NotRequired[int],
+    VpcSecurityGroups: NotRequired[List[VpcSecurityGroupMembershipTypeDef]],  # (2)
+    AvailabilityZone: NotRequired[str],
+    DBSubnetGroup: NotRequired[DBSubnetGroupTypeDef],  # (3)
+    PreferredMaintenanceWindow: NotRequired[str],
+    PendingModifiedValues: NotRequired[PendingModifiedValuesTypeDef],  # (4)
+    LatestRestorableTime: NotRequired[datetime],
+    EngineVersion: NotRequired[str],
+    AutoMinorVersionUpgrade: NotRequired[bool],
+    PubliclyAccessible: NotRequired[bool],
+    StatusInfos: NotRequired[List[DBInstanceStatusInfoTypeDef]],  # (5)
+    DBClusterIdentifier: NotRequired[str],
+    StorageEncrypted: NotRequired[bool],
+    KmsKeyId: NotRequired[str],
+    DbiResourceId: NotRequired[str],
+    CACertificateIdentifier: NotRequired[str],
+    PromotionTier: NotRequired[int],
+    DBInstanceArn: NotRequired[str],
+    EnabledCloudwatchLogsExports: NotRequired[List[str]],
+```
 
-- `DBInstanceIdentifier`: `str`
-- `DBInstanceClass`: `str`
-- `Engine`: `str`
-- `DBInstanceStatus`: `str`
-- `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
-- `InstanceCreateTime`: `datetime`
-- `PreferredBackupWindow`: `str`
-- `BackupRetentionPeriod`: `int`
-- `VpcSecurityGroups`:
-  `List`\[[VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)\]
-- `AvailabilityZone`: `str`
-- `DBSubnetGroup`: [DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)
-- `PreferredMaintenanceWindow`: `str`
-- `PendingModifiedValues`:
-  [PendingModifiedValuesTypeDef](./type_defs.md#pendingmodifiedvaluestypedef)
-- `LatestRestorableTime`: `datetime`
-- `EngineVersion`: `str`
-- `AutoMinorVersionUpgrade`: `bool`
-- `PubliclyAccessible`: `bool`
-- `StatusInfos`:
-  `List`\[[DBInstanceStatusInfoTypeDef](./type_defs.md#dbinstancestatusinfotypedef)\]
-- `DBClusterIdentifier`: `str`
-- `StorageEncrypted`: `bool`
-- `KmsKeyId`: `str`
-- `DbiResourceId`: `str`
-- `CACertificateIdentifier`: `str`
-- `PromotionTier`: `int`
-- `DBInstanceArn`: `str`
-- `EnabledCloudwatchLogsExports`: `List`\[`str`\]
-
-<a id="dbsubnetgroupmessagetypedef"></a>
-
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef) 
+3. See [:material-code-braces: DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef) 
+4. See [:material-code-braces: PendingModifiedValuesTypeDef](./type_defs.md#pendingmodifiedvaluestypedef) 
+5. See [:material-code-braces: DBInstanceStatusInfoTypeDef](./type_defs.md#dbinstancestatusinfotypedef) 
 ## DBSubnetGroupMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBSubnetGroupMessageTypeDef
+
+def get_value() -> DBSubnetGroupMessageTypeDef:
+    return {
+        "Marker": ...,
+        "DBSubnetGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DBSubnetGroupMessageTypeDef(TypedDict):
+    Marker: str,
+    DBSubnetGroups: List[DBSubnetGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `DBSubnetGroups`:
-  `List`\[[DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dbsubnetgrouptypedef"></a>
-
+1. See [:material-code-braces: DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DBSubnetGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DBSubnetGroupTypeDef
+
+def get_value() -> DBSubnetGroupTypeDef:
+    return {
+        "DBSubnetGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DBSubnetGroupTypeDef(TypedDict):
+    DBSubnetGroupName: NotRequired[str],
+    DBSubnetGroupDescription: NotRequired[str],
+    VpcId: NotRequired[str],
+    SubnetGroupStatus: NotRequired[str],
+    Subnets: NotRequired[List[SubnetTypeDef]],  # (1)
+    DBSubnetGroupArn: NotRequired[str],
+```
 
-- `DBSubnetGroupName`: `str`
-- `DBSubnetGroupDescription`: `str`
-- `VpcId`: `str`
-- `SubnetGroupStatus`: `str`
-- `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
-- `DBSubnetGroupArn`: `str`
-
-<a id="deletedbclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SubnetTypeDef](./type_defs.md#subnettypedef) 
 ## DeleteDBClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteDBClusterMessageRequestTypeDef
+
+def get_value() -> DeleteDBClusterMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DBClusterIdentifier`: `str`
-
-Optional fields:
-
-- `SkipFinalSnapshot`: `bool`
-- `FinalDBSnapshotIdentifier`: `str`
-
-<a id="deletedbclusterparametergroupmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteDBClusterMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+    SkipFinalSnapshot: NotRequired[bool],
+    FinalDBSnapshotIdentifier: NotRequired[str],
+```
 
 ## DeleteDBClusterParameterGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteDBClusterParameterGroupMessageRequestTypeDef
+
+def get_value() -> DeleteDBClusterParameterGroupMessageRequestTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `DBClusterParameterGroupName`: `str`
-
-<a id="deletedbclusterresulttypedef"></a>
+```python title="Definition"
+class DeleteDBClusterParameterGroupMessageRequestTypeDef(TypedDict):
+    DBClusterParameterGroupName: str,
+```
 
 ## DeleteDBClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteDBClusterResultTypeDef
+
+def get_value() -> DeleteDBClusterResultTypeDef:
+    return {
+        "DBCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDBClusterResultTypeDef(TypedDict):
+    DBCluster: DBClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedbclustersnapshotmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterTypeDef](./type_defs.md#dbclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDBClusterSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteDBClusterSnapshotMessageRequestTypeDef
+
+def get_value() -> DeleteDBClusterSnapshotMessageRequestTypeDef:
+    return {
+        "DBClusterSnapshotIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DBClusterSnapshotIdentifier`: `str`
-
-<a id="deletedbclustersnapshotresulttypedef"></a>
+```python title="Definition"
+class DeleteDBClusterSnapshotMessageRequestTypeDef(TypedDict):
+    DBClusterSnapshotIdentifier: str,
+```
 
 ## DeleteDBClusterSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteDBClusterSnapshotResultTypeDef
+
+def get_value() -> DeleteDBClusterSnapshotResultTypeDef:
+    return {
+        "DBClusterSnapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDBClusterSnapshotResultTypeDef(TypedDict):
+    DBClusterSnapshot: DBClusterSnapshotTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBClusterSnapshot`:
-  [DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedbinstancemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDBInstanceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteDBInstanceMessageRequestTypeDef
+
+def get_value() -> DeleteDBInstanceMessageRequestTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DBInstanceIdentifier`: `str`
-
-<a id="deletedbinstanceresulttypedef"></a>
+```python title="Definition"
+class DeleteDBInstanceMessageRequestTypeDef(TypedDict):
+    DBInstanceIdentifier: str,
+```
 
 ## DeleteDBInstanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteDBInstanceResultTypeDef
+
+def get_value() -> DeleteDBInstanceResultTypeDef:
+    return {
+        "DBInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDBInstanceResultTypeDef(TypedDict):
+    DBInstance: DBInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedbsubnetgroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBInstanceTypeDef](./type_defs.md#dbinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDBSubnetGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteDBSubnetGroupMessageRequestTypeDef
+
+def get_value() -> DeleteDBSubnetGroupMessageRequestTypeDef:
+    return {
+        "DBSubnetGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `DBSubnetGroupName`: `str`
-
-<a id="deleteeventsubscriptionmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteDBSubnetGroupMessageRequestTypeDef(TypedDict):
+    DBSubnetGroupName: str,
+```
 
 ## DeleteEventSubscriptionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteEventSubscriptionMessageRequestTypeDef
+
+def get_value() -> DeleteEventSubscriptionMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionName`: `str`
-
-<a id="deleteeventsubscriptionresulttypedef"></a>
+```python title="Definition"
+class DeleteEventSubscriptionMessageRequestTypeDef(TypedDict):
+    SubscriptionName: str,
+```
 
 ## DeleteEventSubscriptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteEventSubscriptionResultTypeDef
+
+def get_value() -> DeleteEventSubscriptionResultTypeDef:
+    return {
+        "EventSubscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteEventSubscriptionResultTypeDef(TypedDict):
+    EventSubscription: EventSubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventSubscription`:
-  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteglobalclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGlobalClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteGlobalClusterMessageRequestTypeDef
+
+def get_value() -> DeleteGlobalClusterMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `GlobalClusterIdentifier`: `str`
-
-<a id="deleteglobalclusterresulttypedef"></a>
+```python title="Definition"
+class DeleteGlobalClusterMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: str,
+```
 
 ## DeleteGlobalClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DeleteGlobalClusterResultTypeDef
+
+def get_value() -> DeleteGlobalClusterResultTypeDef:
+    return {
+        "GlobalCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteGlobalClusterResultTypeDef(TypedDict):
+    GlobalCluster: GlobalClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef
 
-<a id="describecertificatesmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef
 
+def get_value() -> DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef:
+    return {
+        "CertificateIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef(TypedDict):
+    CertificateIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeCertificatesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeCertificatesMessageRequestTypeDef
+
+def get_value() -> DescribeCertificatesMessageRequestTypeDef:
+    return {
+        "CertificateIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeCertificatesMessageRequestTypeDef(TypedDict):
+    CertificateIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `CertificateIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeDBClusterParameterGroupsMessageDescribeDBClusterParameterGroupsPaginateTypeDef
 
-<a id="describedbclusterparametergroupsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeDBClusterParameterGroupsMessageDescribeDBClusterParameterGroupsPaginateTypeDef
 
+def get_value() -> DescribeDBClusterParameterGroupsMessageDescribeDBClusterParameterGroupsPaginateTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBClusterParameterGroupsMessageDescribeDBClusterParameterGroupsPaginateTypeDef(TypedDict):
+    DBClusterParameterGroupName: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDBClusterParameterGroupsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeDBClusterParameterGroupsMessageRequestTypeDef
+
+def get_value() -> DescribeDBClusterParameterGroupsMessageRequestTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeDBClusterParameterGroupsMessageRequestTypeDef(TypedDict):
+    DBClusterParameterGroupName: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `DBClusterParameterGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeDBClusterParametersMessageDescribeDBClusterParametersPaginateTypeDef
 
-<a id="describedbclusterparametersmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeDBClusterParametersMessageDescribeDBClusterParametersPaginateTypeDef
 
+def get_value() -> DescribeDBClusterParametersMessageDescribeDBClusterParametersPaginateTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBClusterParametersMessageDescribeDBClusterParametersPaginateTypeDef(TypedDict):
+    DBClusterParameterGroupName: str,
+    Source: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDBClusterParametersMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeDBClusterParametersMessageRequestTypeDef
+
+def get_value() -> DescribeDBClusterParametersMessageRequestTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDBClusterParametersMessageRequestTypeDef(TypedDict):
+    DBClusterParameterGroupName: str,
+    Source: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `DBClusterParameterGroupName`: `str`
-
-Optional fields:
-
-- `Source`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describedbclustersnapshotattributesmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeDBClusterSnapshotAttributesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeDBClusterSnapshotAttributesMessageRequestTypeDef
+
+def get_value() -> DescribeDBClusterSnapshotAttributesMessageRequestTypeDef:
+    return {
+        "DBClusterSnapshotIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DBClusterSnapshotIdentifier`: `str`
-
-<a id="describedbclustersnapshotattributesresulttypedef"></a>
+```python title="Definition"
+class DescribeDBClusterSnapshotAttributesMessageRequestTypeDef(TypedDict):
+    DBClusterSnapshotIdentifier: str,
+```
 
 ## DescribeDBClusterSnapshotAttributesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeDBClusterSnapshotAttributesResultTypeDef
+
+def get_value() -> DescribeDBClusterSnapshotAttributesResultTypeDef:
+    return {
+        "DBClusterSnapshotAttributesResult": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDBClusterSnapshotAttributesResultTypeDef(TypedDict):
+    DBClusterSnapshotAttributesResult: DBClusterSnapshotAttributesResultTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBClusterSnapshotAttributesResult`:
-  [DBClusterSnapshotAttributesResultTypeDef](./type_defs.md#dbclustersnapshotattributesresulttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DBClusterSnapshotAttributesResultTypeDef](./type_defs.md#dbclustersnapshotattributesresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDBClusterSnapshotsMessageDescribeDBClusterSnapshotsPaginateTypeDef
 
-<a id="describedbclustersnapshotsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeDBClusterSnapshotsMessageDescribeDBClusterSnapshotsPaginateTypeDef
 
+def get_value() -> DescribeDBClusterSnapshotsMessageDescribeDBClusterSnapshotsPaginateTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBClusterSnapshotsMessageDescribeDBClusterSnapshotsPaginateTypeDef(TypedDict):
+    DBClusterIdentifier: NotRequired[str],
+    DBClusterSnapshotIdentifier: NotRequired[str],
+    SnapshotType: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    IncludeShared: NotRequired[bool],
+    IncludePublic: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDBClusterSnapshotsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeDBClusterSnapshotsMessageRequestTypeDef
+
+def get_value() -> DescribeDBClusterSnapshotsMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeDBClusterSnapshotsMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: NotRequired[str],
+    DBClusterSnapshotIdentifier: NotRequired[str],
+    SnapshotType: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    IncludeShared: NotRequired[bool],
+    IncludePublic: NotRequired[bool],
+```
 
-- `DBClusterIdentifier`: `str`
-- `DBClusterSnapshotIdentifier`: `str`
-- `SnapshotType`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `IncludeShared`: `bool`
-- `IncludePublic`: `bool`
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeDBClustersMessageDescribeDBClustersPaginateTypeDef
 
-<a id="describedbclustersmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeDBClustersMessageDescribeDBClustersPaginateTypeDef
 
+def get_value() -> DescribeDBClustersMessageDescribeDBClustersPaginateTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBClustersMessageDescribeDBClustersPaginateTypeDef(TypedDict):
+    DBClusterIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDBClustersMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeDBClustersMessageRequestTypeDef
+
+def get_value() -> DescribeDBClustersMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeDBClustersMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `DBClusterIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeDBEngineVersionsMessageDescribeDBEngineVersionsPaginateTypeDef
 
-<a id="describedbengineversionsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeDBEngineVersionsMessageDescribeDBEngineVersionsPaginateTypeDef
 
+def get_value() -> DescribeDBEngineVersionsMessageDescribeDBEngineVersionsPaginateTypeDef:
+    return {
+        "Engine": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBEngineVersionsMessageDescribeDBEngineVersionsPaginateTypeDef(TypedDict):
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    DBParameterGroupFamily: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    DefaultOnly: NotRequired[bool],
+    ListSupportedCharacterSets: NotRequired[bool],
+    ListSupportedTimezones: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDBEngineVersionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeDBEngineVersionsMessageRequestTypeDef
+
+def get_value() -> DescribeDBEngineVersionsMessageRequestTypeDef:
+    return {
+        "Engine": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeDBEngineVersionsMessageRequestTypeDef(TypedDict):
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    DBParameterGroupFamily: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    DefaultOnly: NotRequired[bool],
+    ListSupportedCharacterSets: NotRequired[bool],
+    ListSupportedTimezones: NotRequired[bool],
+```
 
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `DBParameterGroupFamily`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `DefaultOnly`: `bool`
-- `ListSupportedCharacterSets`: `bool`
-- `ListSupportedTimezones`: `bool`
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef
 
-<a id="describedbinstancesmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef
 
+def get_value() -> DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef(TypedDict):
+    DBInstanceIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeDBInstancesMessageDBInstanceDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeDBInstancesMessageDBInstanceDeletedWaitTypeDef
+
+def get_value() -> DescribeDBInstancesMessageDBInstanceDeletedWaitTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBInstancesMessageDBInstanceDeletedWaitTypeDef(TypedDict):
+    DBInstanceIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeDBInstancesMessageDescribeDBInstancesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeDBInstancesMessageDescribeDBInstancesPaginateTypeDef
+
+def get_value() -> DescribeDBInstancesMessageDescribeDBInstancesPaginateTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBInstancesMessageDescribeDBInstancesPaginateTypeDef(TypedDict):
+    DBInstanceIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDBInstancesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeDBInstancesMessageRequestTypeDef
+
+def get_value() -> DescribeDBInstancesMessageRequestTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeDBInstancesMessageRequestTypeDef(TypedDict):
+    DBInstanceIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `DBInstanceIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeDBSubnetGroupsMessageDescribeDBSubnetGroupsPaginateTypeDef
 
-<a id="describedbsubnetgroupsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeDBSubnetGroupsMessageDescribeDBSubnetGroupsPaginateTypeDef
 
+def get_value() -> DescribeDBSubnetGroupsMessageDescribeDBSubnetGroupsPaginateTypeDef:
+    return {
+        "DBSubnetGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDBSubnetGroupsMessageDescribeDBSubnetGroupsPaginateTypeDef(TypedDict):
+    DBSubnetGroupName: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDBSubnetGroupsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeDBSubnetGroupsMessageRequestTypeDef
+
+def get_value() -> DescribeDBSubnetGroupsMessageRequestTypeDef:
+    return {
+        "DBSubnetGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeDBSubnetGroupsMessageRequestTypeDef(TypedDict):
+    DBSubnetGroupName: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `DBSubnetGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describeenginedefaultclusterparametersmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeEngineDefaultClusterParametersMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeEngineDefaultClusterParametersMessageRequestTypeDef
+
+def get_value() -> DescribeEngineDefaultClusterParametersMessageRequestTypeDef:
+    return {
+        "DBParameterGroupFamily": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEngineDefaultClusterParametersMessageRequestTypeDef(TypedDict):
+    DBParameterGroupFamily: str,
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `DBParameterGroupFamily`: `str`
-
-Optional fields:
-
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-<a id="describeenginedefaultclusterparametersresulttypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeEngineDefaultClusterParametersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeEngineDefaultClusterParametersResultTypeDef
+
+def get_value() -> DescribeEngineDefaultClusterParametersResultTypeDef:
+    return {
+        "EngineDefaults": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEngineDefaultClusterParametersResultTypeDef(TypedDict):
+    EngineDefaults: EngineDefaultsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EngineDefaults`:
-  [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeeventcategoriesmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEventCategoriesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeEventCategoriesMessageRequestTypeDef
+
+def get_value() -> DescribeEventCategoriesMessageRequestTypeDef:
+    return {
+        "SourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventCategoriesMessageRequestTypeDef(TypedDict):
+    SourceType: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `SourceType`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef
 
-<a id="describeeventsubscriptionsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef
 
+def get_value() -> DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef:
+    return {
+        "SubscriptionName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef(TypedDict):
+    SubscriptionName: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventSubscriptionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeEventSubscriptionsMessageRequestTypeDef
+
+def get_value() -> DescribeEventSubscriptionsMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventSubscriptionsMessageRequestTypeDef(TypedDict):
+    SubscriptionName: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `SubscriptionName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeEventsMessageDescribeEventsPaginateTypeDef
 
-<a id="describeeventsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeEventsMessageDescribeEventsPaginateTypeDef
 
+def get_value() -> DescribeEventsMessageDescribeEventsPaginateTypeDef:
+    return {
+        "SourceIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventsMessageDescribeEventsPaginateTypeDef(TypedDict):
+    SourceIdentifier: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Duration: NotRequired[int],
+    EventCategories: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeEventsMessageRequestTypeDef
+
+def get_value() -> DescribeEventsMessageRequestTypeDef:
+    return {
+        "SourceIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventsMessageRequestTypeDef(TypedDict):
+    SourceIdentifier: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Duration: NotRequired[int],
+    EventCategories: NotRequired[Sequence[str]],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `SourceIdentifier`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `EventCategories`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef
 
-<a id="describeglobalclustersmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef
 
+def get_value() -> DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGlobalClustersMessageDescribeGlobalClustersPaginateTypeDef(TypedDict):
+    GlobalClusterIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeGlobalClustersMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeGlobalClustersMessageRequestTypeDef
+
+def get_value() -> DescribeGlobalClustersMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeGlobalClustersMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `GlobalClusterIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef
 
-<a id="describeorderabledbinstanceoptionsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef
 
+def get_value() -> DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef:
+    return {
+        "Engine": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef(TypedDict):
+    Engine: str,
+    EngineVersion: NotRequired[str],
+    DBInstanceClass: NotRequired[str],
+    LicenseModel: NotRequired[str],
+    Vpc: NotRequired[bool],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeOrderableDBInstanceOptionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribeOrderableDBInstanceOptionsMessageRequestTypeDef
+
+def get_value() -> DescribeOrderableDBInstanceOptionsMessageRequestTypeDef:
+    return {
+        "Engine": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrderableDBInstanceOptionsMessageRequestTypeDef(TypedDict):
+    Engine: str,
+    EngineVersion: NotRequired[str],
+    DBInstanceClass: NotRequired[str],
+    LicenseModel: NotRequired[str],
+    Vpc: NotRequired[bool],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `Engine`: `str`
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+## DescribePendingMaintenanceActionsMessageDescribePendingMaintenanceActionsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_docdb.type_defs import DescribePendingMaintenanceActionsMessageDescribePendingMaintenanceActionsPaginateTypeDef
 
-- `EngineVersion`: `str`
-- `DBInstanceClass`: `str`
-- `LicenseModel`: `str`
-- `Vpc`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+def get_value() -> DescribePendingMaintenanceActionsMessageDescribePendingMaintenanceActionsPaginateTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+    }
+```
 
-<a id="describependingmaintenanceactionsmessagerequesttypedef"></a>
+```python title="Definition"
+class DescribePendingMaintenanceActionsMessageDescribePendingMaintenanceActionsPaginateTypeDef(TypedDict):
+    ResourceIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribePendingMaintenanceActionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import DescribePendingMaintenanceActionsMessageRequestTypeDef
+
+def get_value() -> DescribePendingMaintenanceActionsMessageRequestTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribePendingMaintenanceActionsMessageRequestTypeDef(TypedDict):
+    ResourceIdentifier: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    Marker: NotRequired[str],
+    MaxRecords: NotRequired[int],
+```
 
-- `ResourceIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
-
-<a id="endpointtypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## EndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "Address": ...,
+    }
 ```
 
-Optional fields:
-
-- `Address`: `str`
-- `Port`: `int`
-- `HostedZoneId`: `str`
-
-<a id="enginedefaultstypedef"></a>
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    Address: NotRequired[str],
+    Port: NotRequired[int],
+    HostedZoneId: NotRequired[str],
+```
 
 ## EngineDefaultsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import EngineDefaultsTypeDef
+
+def get_value() -> EngineDefaultsTypeDef:
+    return {
+        "DBParameterGroupFamily": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EngineDefaultsTypeDef(TypedDict):
+    DBParameterGroupFamily: NotRequired[str],
+    Marker: NotRequired[str],
+    Parameters: NotRequired[List[ParameterTypeDef]],  # (1)
+```
 
-- `DBParameterGroupFamily`: `str`
-- `Marker`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-
-<a id="eventcategoriesmaptypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 ## EventCategoriesMapTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import EventCategoriesMapTypeDef
+
+def get_value() -> EventCategoriesMapTypeDef:
+    return {
+        "SourceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `SourceType`: `str`
-- `EventCategories`: `List`\[`str`\]
-
-<a id="eventcategoriesmessagetypedef"></a>
+```python title="Definition"
+class EventCategoriesMapTypeDef(TypedDict):
+    SourceType: NotRequired[str],
+    EventCategories: NotRequired[List[str]],
+```
 
 ## EventCategoriesMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import EventCategoriesMessageTypeDef
+
+def get_value() -> EventCategoriesMessageTypeDef:
+    return {
+        "EventCategoriesMapList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventCategoriesMessageTypeDef(TypedDict):
+    EventCategoriesMapList: List[EventCategoriesMapTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventCategoriesMapList`:
-  `List`\[[EventCategoriesMapTypeDef](./type_defs.md#eventcategoriesmaptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="eventsubscriptiontypedef"></a>
-
+1. See [:material-code-braces: EventCategoriesMapTypeDef](./type_defs.md#eventcategoriesmaptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventSubscriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import EventSubscriptionTypeDef
+
+def get_value() -> EventSubscriptionTypeDef:
+    return {
+        "CustomerAwsId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CustomerAwsId`: `str`
-- `CustSubscriptionId`: `str`
-- `SnsTopicArn`: `str`
-- `Status`: `str`
-- `SubscriptionCreationTime`: `str`
-- `SourceType`: `str`
-- `SourceIdsList`: `List`\[`str`\]
-- `EventCategoriesList`: `List`\[`str`\]
-- `Enabled`: `bool`
-- `EventSubscriptionArn`: `str`
-
-<a id="eventsubscriptionsmessagetypedef"></a>
+```python title="Definition"
+class EventSubscriptionTypeDef(TypedDict):
+    CustomerAwsId: NotRequired[str],
+    CustSubscriptionId: NotRequired[str],
+    SnsTopicArn: NotRequired[str],
+    Status: NotRequired[str],
+    SubscriptionCreationTime: NotRequired[str],
+    SourceType: NotRequired[str],
+    SourceIdsList: NotRequired[List[str]],
+    EventCategoriesList: NotRequired[List[str]],
+    Enabled: NotRequired[bool],
+    EventSubscriptionArn: NotRequired[str],
+```
 
 ## EventSubscriptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import EventSubscriptionsMessageTypeDef
+
+def get_value() -> EventSubscriptionsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "EventSubscriptionsList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventSubscriptionsMessageTypeDef(TypedDict):
+    Marker: str,
+    EventSubscriptionsList: List[EventSubscriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `EventSubscriptionsList`:
-  `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="eventtypedef"></a>
-
+1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "SourceIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    SourceIdentifier: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    Message: NotRequired[str],
+    EventCategories: NotRequired[List[str]],
+    Date: NotRequired[datetime],
+    SourceArn: NotRequired[str],
+```
 
-- `SourceIdentifier`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `Message`: `str`
-- `EventCategories`: `List`\[`str`\]
-- `Date`: `datetime`
-- `SourceArn`: `str`
-
-<a id="eventsmessagetypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## EventsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import EventsMessageTypeDef
+
+def get_value() -> EventsMessageTypeDef:
+    return {
+        "Marker": ...,
+        "Events": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventsMessageTypeDef(TypedDict):
+    Marker: str,
+    Events: List[EventTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="failoverdbclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FailoverDBClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import FailoverDBClusterMessageRequestTypeDef
+
+def get_value() -> FailoverDBClusterMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `DBClusterIdentifier`: `str`
-- `TargetDBInstanceIdentifier`: `str`
-
-<a id="failoverdbclusterresulttypedef"></a>
+```python title="Definition"
+class FailoverDBClusterMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: NotRequired[str],
+    TargetDBInstanceIdentifier: NotRequired[str],
+```
 
 ## FailoverDBClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import FailoverDBClusterResultTypeDef
+
+def get_value() -> FailoverDBClusterResultTypeDef:
+    return {
+        "DBCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FailoverDBClusterResultTypeDef(TypedDict):
+    DBCluster: DBClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: DBClusterTypeDef](./type_defs.md#dbclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="globalclustermembertypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    Name: str,
+    Values: Sequence[str],
+```
 
 ## GlobalClusterMemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import GlobalClusterMemberTypeDef
+
+def get_value() -> GlobalClusterMemberTypeDef:
+    return {
+        "DBClusterArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `DBClusterArn`: `str`
-- `Readers`: `List`\[`str`\]
-- `IsWriter`: `bool`
-
-<a id="globalclustertypedef"></a>
+```python title="Definition"
+class GlobalClusterMemberTypeDef(TypedDict):
+    DBClusterArn: NotRequired[str],
+    Readers: NotRequired[List[str]],
+    IsWriter: NotRequired[bool],
+```
 
 ## GlobalClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import GlobalClusterTypeDef
+
+def get_value() -> GlobalClusterTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GlobalClusterTypeDef(TypedDict):
+    GlobalClusterIdentifier: NotRequired[str],
+    GlobalClusterResourceId: NotRequired[str],
+    GlobalClusterArn: NotRequired[str],
+    Status: NotRequired[str],
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    StorageEncrypted: NotRequired[bool],
+    DeletionProtection: NotRequired[bool],
+    GlobalClusterMembers: NotRequired[List[GlobalClusterMemberTypeDef]],  # (1)
+```
 
-- `GlobalClusterIdentifier`: `str`
-- `GlobalClusterResourceId`: `str`
-- `GlobalClusterArn`: `str`
-- `Status`: `str`
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `DatabaseName`: `str`
-- `StorageEncrypted`: `bool`
-- `DeletionProtection`: `bool`
-- `GlobalClusterMembers`:
-  `List`\[[GlobalClusterMemberTypeDef](./type_defs.md#globalclustermembertypedef)\]
-
-<a id="globalclustersmessagetypedef"></a>
-
+1. See [:material-code-braces: GlobalClusterMemberTypeDef](./type_defs.md#globalclustermembertypedef) 
 ## GlobalClustersMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import GlobalClustersMessageTypeDef
+
+def get_value() -> GlobalClustersMessageTypeDef:
+    return {
+        "Marker": ...,
+        "GlobalClusters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GlobalClustersMessageTypeDef(TypedDict):
+    Marker: str,
+    GlobalClusters: List[GlobalClusterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `GlobalClusters`:
-  `List`\[[GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ListTagsForResourceMessageRequestTypeDef
+
+def get_value() -> ListTagsForResourceMessageRequestTypeDef:
+    return {
+        "ResourceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceMessageRequestTypeDef(TypedDict):
+    ResourceName: str,
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `ResourceName`: `str`
-
-Optional fields:
-
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="modifydbclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ModifyDBClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyDBClusterMessageRequestTypeDef
+
+def get_value() -> ModifyDBClusterMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyDBClusterMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+    NewDBClusterIdentifier: NotRequired[str],
+    ApplyImmediately: NotRequired[bool],
+    BackupRetentionPeriod: NotRequired[int],
+    DBClusterParameterGroupName: NotRequired[str],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    Port: NotRequired[int],
+    MasterUserPassword: NotRequired[str],
+    PreferredBackupWindow: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    CloudwatchLogsExportConfiguration: NotRequired[CloudwatchLogsExportConfigurationTypeDef],  # (1)
+    EngineVersion: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+```
 
-- `DBClusterIdentifier`: `str`
-
-Optional fields:
-
-- `NewDBClusterIdentifier`: `str`
-- `ApplyImmediately`: `bool`
-- `BackupRetentionPeriod`: `int`
-- `DBClusterParameterGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `Port`: `int`
-- `MasterUserPassword`: `str`
-- `PreferredBackupWindow`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `CloudwatchLogsExportConfiguration`:
-  [CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef)
-- `EngineVersion`: `str`
-- `DeletionProtection`: `bool`
-
-<a id="modifydbclusterparametergroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: CloudwatchLogsExportConfigurationTypeDef](./type_defs.md#cloudwatchlogsexportconfigurationtypedef) 
 ## ModifyDBClusterParameterGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyDBClusterParameterGroupMessageRequestTypeDef
+
+def get_value() -> ModifyDBClusterParameterGroupMessageRequestTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+        "Parameters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyDBClusterParameterGroupMessageRequestTypeDef(TypedDict):
+    DBClusterParameterGroupName: str,
+    Parameters: Sequence[ParameterTypeDef],  # (1)
+```
 
-- `DBClusterParameterGroupName`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-
-<a id="modifydbclusterresulttypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 ## ModifyDBClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyDBClusterResultTypeDef
+
+def get_value() -> ModifyDBClusterResultTypeDef:
+    return {
+        "DBCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyDBClusterResultTypeDef(TypedDict):
+    DBCluster: DBClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifydbclustersnapshotattributemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterTypeDef](./type_defs.md#dbclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyDBClusterSnapshotAttributeMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyDBClusterSnapshotAttributeMessageRequestTypeDef
+
+def get_value() -> ModifyDBClusterSnapshotAttributeMessageRequestTypeDef:
+    return {
+        "DBClusterSnapshotIdentifier": ...,
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
-
-- `DBClusterSnapshotIdentifier`: `str`
-- `AttributeName`: `str`
-
-Optional fields:
-
-- `ValuesToAdd`: `Sequence`\[`str`\]
-- `ValuesToRemove`: `Sequence`\[`str`\]
-
-<a id="modifydbclustersnapshotattributeresulttypedef"></a>
+```python title="Definition"
+class ModifyDBClusterSnapshotAttributeMessageRequestTypeDef(TypedDict):
+    DBClusterSnapshotIdentifier: str,
+    AttributeName: str,
+    ValuesToAdd: NotRequired[Sequence[str]],
+    ValuesToRemove: NotRequired[Sequence[str]],
+```
 
 ## ModifyDBClusterSnapshotAttributeResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyDBClusterSnapshotAttributeResultTypeDef
+
+def get_value() -> ModifyDBClusterSnapshotAttributeResultTypeDef:
+    return {
+        "DBClusterSnapshotAttributesResult": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyDBClusterSnapshotAttributeResultTypeDef(TypedDict):
+    DBClusterSnapshotAttributesResult: DBClusterSnapshotAttributesResultTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBClusterSnapshotAttributesResult`:
-  [DBClusterSnapshotAttributesResultTypeDef](./type_defs.md#dbclustersnapshotattributesresulttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifydbinstancemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterSnapshotAttributesResultTypeDef](./type_defs.md#dbclustersnapshotattributesresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyDBInstanceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyDBInstanceMessageRequestTypeDef
+
+def get_value() -> ModifyDBInstanceMessageRequestTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DBInstanceIdentifier`: `str`
-
-Optional fields:
-
-- `DBInstanceClass`: `str`
-- `ApplyImmediately`: `bool`
-- `PreferredMaintenanceWindow`: `str`
-- `AutoMinorVersionUpgrade`: `bool`
-- `NewDBInstanceIdentifier`: `str`
-- `CACertificateIdentifier`: `str`
-- `PromotionTier`: `int`
-
-<a id="modifydbinstanceresulttypedef"></a>
+```python title="Definition"
+class ModifyDBInstanceMessageRequestTypeDef(TypedDict):
+    DBInstanceIdentifier: str,
+    DBInstanceClass: NotRequired[str],
+    ApplyImmediately: NotRequired[bool],
+    PreferredMaintenanceWindow: NotRequired[str],
+    AutoMinorVersionUpgrade: NotRequired[bool],
+    NewDBInstanceIdentifier: NotRequired[str],
+    CACertificateIdentifier: NotRequired[str],
+    PromotionTier: NotRequired[int],
+```
 
 ## ModifyDBInstanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyDBInstanceResultTypeDef
+
+def get_value() -> ModifyDBInstanceResultTypeDef:
+    return {
+        "DBInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyDBInstanceResultTypeDef(TypedDict):
+    DBInstance: DBInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifydbsubnetgroupmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBInstanceTypeDef](./type_defs.md#dbinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyDBSubnetGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyDBSubnetGroupMessageRequestTypeDef
+
+def get_value() -> ModifyDBSubnetGroupMessageRequestTypeDef:
+    return {
+        "DBSubnetGroupName": ...,
+        "SubnetIds": ...,
+    }
 ```
 
-Required fields:
-
-- `DBSubnetGroupName`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `DBSubnetGroupDescription`: `str`
-
-<a id="modifydbsubnetgroupresulttypedef"></a>
+```python title="Definition"
+class ModifyDBSubnetGroupMessageRequestTypeDef(TypedDict):
+    DBSubnetGroupName: str,
+    SubnetIds: Sequence[str],
+    DBSubnetGroupDescription: NotRequired[str],
+```
 
 ## ModifyDBSubnetGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyDBSubnetGroupResultTypeDef
+
+def get_value() -> ModifyDBSubnetGroupResultTypeDef:
+    return {
+        "DBSubnetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyDBSubnetGroupResultTypeDef(TypedDict):
+    DBSubnetGroup: DBSubnetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBSubnetGroup`: [DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyeventsubscriptionmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyEventSubscriptionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyEventSubscriptionMessageRequestTypeDef
+
+def get_value() -> ModifyEventSubscriptionMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionName`: `str`
-
-Optional fields:
-
-- `SnsTopicArn`: `str`
-- `SourceType`: `str`
-- `EventCategories`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
-
-<a id="modifyeventsubscriptionresulttypedef"></a>
+```python title="Definition"
+class ModifyEventSubscriptionMessageRequestTypeDef(TypedDict):
+    SubscriptionName: str,
+    SnsTopicArn: NotRequired[str],
+    SourceType: NotRequired[str],
+    EventCategories: NotRequired[Sequence[str]],
+    Enabled: NotRequired[bool],
+```
 
 ## ModifyEventSubscriptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyEventSubscriptionResultTypeDef
+
+def get_value() -> ModifyEventSubscriptionResultTypeDef:
+    return {
+        "EventSubscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyEventSubscriptionResultTypeDef(TypedDict):
+    EventSubscription: EventSubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventSubscription`:
-  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyglobalclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyGlobalClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyGlobalClusterMessageRequestTypeDef
+
+def get_value() -> ModifyGlobalClusterMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `GlobalClusterIdentifier`: `str`
-
-Optional fields:
-
-- `NewGlobalClusterIdentifier`: `str`
-- `DeletionProtection`: `bool`
-
-<a id="modifyglobalclusterresulttypedef"></a>
+```python title="Definition"
+class ModifyGlobalClusterMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: str,
+    NewGlobalClusterIdentifier: NotRequired[str],
+    DeletionProtection: NotRequired[bool],
+```
 
 ## ModifyGlobalClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ModifyGlobalClusterResultTypeDef
+
+def get_value() -> ModifyGlobalClusterResultTypeDef:
+    return {
+        "GlobalCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyGlobalClusterResultTypeDef(TypedDict):
+    GlobalCluster: GlobalClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="orderabledbinstanceoptiontypedef"></a>
-
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OrderableDBInstanceOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import OrderableDBInstanceOptionTypeDef
+
+def get_value() -> OrderableDBInstanceOptionTypeDef:
+    return {
+        "Engine": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrderableDBInstanceOptionTypeDef(TypedDict):
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    DBInstanceClass: NotRequired[str],
+    LicenseModel: NotRequired[str],
+    AvailabilityZones: NotRequired[List[AvailabilityZoneTypeDef]],  # (1)
+    Vpc: NotRequired[bool],
+```
 
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `DBInstanceClass`: `str`
-- `LicenseModel`: `str`
-- `AvailabilityZones`:
-  `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
-- `Vpc`: `bool`
-
-<a id="orderabledbinstanceoptionsmessagetypedef"></a>
-
+1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
 ## OrderableDBInstanceOptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import OrderableDBInstanceOptionsMessageTypeDef
+
+def get_value() -> OrderableDBInstanceOptionsMessageTypeDef:
+    return {
+        "OrderableDBInstanceOptions": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrderableDBInstanceOptionsMessageTypeDef(TypedDict):
+    OrderableDBInstanceOptions: List[OrderableDBInstanceOptionTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OrderableDBInstanceOptions`:
-  `List`\[[OrderableDBInstanceOptionTypeDef](./type_defs.md#orderabledbinstanceoptiontypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: OrderableDBInstanceOptionTypeDef](./type_defs.md#orderabledbinstanceoptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parametertypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ParameterTypeDef
+
+def get_value() -> ParameterTypeDef:
+    return {
+        "ParameterName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParameterTypeDef(TypedDict):
+    ParameterName: NotRequired[str],
+    ParameterValue: NotRequired[str],
+    Description: NotRequired[str],
+    Source: NotRequired[str],
+    ApplyType: NotRequired[str],
+    DataType: NotRequired[str],
+    AllowedValues: NotRequired[str],
+    IsModifiable: NotRequired[bool],
+    MinimumEngineVersion: NotRequired[str],
+    ApplyMethod: NotRequired[ApplyMethodType],  # (1)
+```
 
-- `ParameterName`: `str`
-- `ParameterValue`: `str`
-- `Description`: `str`
-- `Source`: `str`
-- `ApplyType`: `str`
-- `DataType`: `str`
-- `AllowedValues`: `str`
-- `IsModifiable`: `bool`
-- `MinimumEngineVersion`: `str`
-- `ApplyMethod`: [ApplyMethodType](./literals.md#applymethodtype)
-
-<a id="pendingcloudwatchlogsexportstypedef"></a>
-
+1. See [:material-code-brackets: ApplyMethodType](./literals.md#applymethodtype) 
 ## PendingCloudwatchLogsExportsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import PendingCloudwatchLogsExportsTypeDef
+
+def get_value() -> PendingCloudwatchLogsExportsTypeDef:
+    return {
+        "LogTypesToEnable": ...,
+    }
 ```
 
-Optional fields:
-
-- `LogTypesToEnable`: `List`\[`str`\]
-- `LogTypesToDisable`: `List`\[`str`\]
-
-<a id="pendingmaintenanceactiontypedef"></a>
+```python title="Definition"
+class PendingCloudwatchLogsExportsTypeDef(TypedDict):
+    LogTypesToEnable: NotRequired[List[str]],
+    LogTypesToDisable: NotRequired[List[str]],
+```
 
 ## PendingMaintenanceActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import PendingMaintenanceActionTypeDef
+
+def get_value() -> PendingMaintenanceActionTypeDef:
+    return {
+        "Action": ...,
+    }
 ```
 
-Optional fields:
-
-- `Action`: `str`
-- `AutoAppliedAfterDate`: `datetime`
-- `ForcedApplyDate`: `datetime`
-- `OptInStatus`: `str`
-- `CurrentApplyDate`: `datetime`
-- `Description`: `str`
-
-<a id="pendingmaintenanceactionsmessagetypedef"></a>
+```python title="Definition"
+class PendingMaintenanceActionTypeDef(TypedDict):
+    Action: NotRequired[str],
+    AutoAppliedAfterDate: NotRequired[datetime],
+    ForcedApplyDate: NotRequired[datetime],
+    OptInStatus: NotRequired[str],
+    CurrentApplyDate: NotRequired[datetime],
+    Description: NotRequired[str],
+```
 
 ## PendingMaintenanceActionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import PendingMaintenanceActionsMessageTypeDef
+
+def get_value() -> PendingMaintenanceActionsMessageTypeDef:
+    return {
+        "PendingMaintenanceActions": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PendingMaintenanceActionsMessageTypeDef(TypedDict):
+    PendingMaintenanceActions: List[ResourcePendingMaintenanceActionsTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PendingMaintenanceActions`:
-  `List`\[[ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="pendingmodifiedvaluestypedef"></a>
-
+1. See [:material-code-braces: ResourcePendingMaintenanceActionsTypeDef](./type_defs.md#resourcependingmaintenanceactionstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PendingModifiedValuesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import PendingModifiedValuesTypeDef
+
+def get_value() -> PendingModifiedValuesTypeDef:
+    return {
+        "DBInstanceClass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PendingModifiedValuesTypeDef(TypedDict):
+    DBInstanceClass: NotRequired[str],
+    AllocatedStorage: NotRequired[int],
+    MasterUserPassword: NotRequired[str],
+    Port: NotRequired[int],
+    BackupRetentionPeriod: NotRequired[int],
+    MultiAZ: NotRequired[bool],
+    EngineVersion: NotRequired[str],
+    LicenseModel: NotRequired[str],
+    Iops: NotRequired[int],
+    DBInstanceIdentifier: NotRequired[str],
+    StorageType: NotRequired[str],
+    CACertificateIdentifier: NotRequired[str],
+    DBSubnetGroupName: NotRequired[str],
+    PendingCloudwatchLogsExports: NotRequired[PendingCloudwatchLogsExportsTypeDef],  # (1)
+```
 
-- `DBInstanceClass`: `str`
-- `AllocatedStorage`: `int`
-- `MasterUserPassword`: `str`
-- `Port`: `int`
-- `BackupRetentionPeriod`: `int`
-- `MultiAZ`: `bool`
-- `EngineVersion`: `str`
-- `LicenseModel`: `str`
-- `Iops`: `int`
-- `DBInstanceIdentifier`: `str`
-- `StorageType`: `str`
-- `CACertificateIdentifier`: `str`
-- `DBSubnetGroupName`: `str`
-- `PendingCloudwatchLogsExports`:
-  [PendingCloudwatchLogsExportsTypeDef](./type_defs.md#pendingcloudwatchlogsexportstypedef)
-
-<a id="rebootdbinstancemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: PendingCloudwatchLogsExportsTypeDef](./type_defs.md#pendingcloudwatchlogsexportstypedef) 
 ## RebootDBInstanceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RebootDBInstanceMessageRequestTypeDef
+
+def get_value() -> RebootDBInstanceMessageRequestTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DBInstanceIdentifier`: `str`
-
-Optional fields:
-
-- `ForceFailover`: `bool`
-
-<a id="rebootdbinstanceresulttypedef"></a>
+```python title="Definition"
+class RebootDBInstanceMessageRequestTypeDef(TypedDict):
+    DBInstanceIdentifier: str,
+    ForceFailover: NotRequired[bool],
+```
 
 ## RebootDBInstanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RebootDBInstanceResultTypeDef
+
+def get_value() -> RebootDBInstanceResultTypeDef:
+    return {
+        "DBInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RebootDBInstanceResultTypeDef(TypedDict):
+    DBInstance: DBInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removefromglobalclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBInstanceTypeDef](./type_defs.md#dbinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveFromGlobalClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RemoveFromGlobalClusterMessageRequestTypeDef
+
+def get_value() -> RemoveFromGlobalClusterMessageRequestTypeDef:
+    return {
+        "GlobalClusterIdentifier": ...,
+        "DbClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `GlobalClusterIdentifier`: `str`
-- `DbClusterIdentifier`: `str`
-
-<a id="removefromglobalclusterresulttypedef"></a>
+```python title="Definition"
+class RemoveFromGlobalClusterMessageRequestTypeDef(TypedDict):
+    GlobalClusterIdentifier: str,
+    DbClusterIdentifier: str,
+```
 
 ## RemoveFromGlobalClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RemoveFromGlobalClusterResultTypeDef
+
+def get_value() -> RemoveFromGlobalClusterResultTypeDef:
+    return {
+        "GlobalCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveFromGlobalClusterResultTypeDef(TypedDict):
+    GlobalCluster: GlobalClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removesourceidentifierfromsubscriptionmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: GlobalClusterTypeDef](./type_defs.md#globalclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef
+
+def get_value() -> RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef:
+    return {
+        "SubscriptionName": ...,
+        "SourceIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionName`: `str`
-- `SourceIdentifier`: `str`
-
-<a id="removesourceidentifierfromsubscriptionresulttypedef"></a>
+```python title="Definition"
+class RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef(TypedDict):
+    SubscriptionName: str,
+    SourceIdentifier: str,
+```
 
 ## RemoveSourceIdentifierFromSubscriptionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RemoveSourceIdentifierFromSubscriptionResultTypeDef
+
+def get_value() -> RemoveSourceIdentifierFromSubscriptionResultTypeDef:
+    return {
+        "EventSubscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveSourceIdentifierFromSubscriptionResultTypeDef(TypedDict):
+    EventSubscription: EventSubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventSubscription`:
-  [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removetagsfromresourcemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveTagsFromResourceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RemoveTagsFromResourceMessageRequestTypeDef
+
+def get_value() -> RemoveTagsFromResourceMessageRequestTypeDef:
+    return {
+        "ResourceName": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="resetdbclusterparametergroupmessagerequesttypedef"></a>
+```python title="Definition"
+class RemoveTagsFromResourceMessageRequestTypeDef(TypedDict):
+    ResourceName: str,
+    TagKeys: Sequence[str],
+```
 
 ## ResetDBClusterParameterGroupMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ResetDBClusterParameterGroupMessageRequestTypeDef
+
+def get_value() -> ResetDBClusterParameterGroupMessageRequestTypeDef:
+    return {
+        "DBClusterParameterGroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResetDBClusterParameterGroupMessageRequestTypeDef(TypedDict):
+    DBClusterParameterGroupName: str,
+    ResetAllParameters: NotRequired[bool],
+    Parameters: NotRequired[Sequence[ParameterTypeDef]],  # (1)
+```
 
-- `DBClusterParameterGroupName`: `str`
-
-Optional fields:
-
-- `ResetAllParameters`: `bool`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-
-<a id="resourcependingmaintenanceactionstypedef"></a>
-
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
 ## ResourcePendingMaintenanceActionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ResourcePendingMaintenanceActionsTypeDef
+
+def get_value() -> ResourcePendingMaintenanceActionsTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourcePendingMaintenanceActionsTypeDef(TypedDict):
+    ResourceIdentifier: NotRequired[str],
+    PendingMaintenanceActionDetails: NotRequired[List[PendingMaintenanceActionTypeDef]],  # (1)
+```
 
-- `ResourceIdentifier`: `str`
-- `PendingMaintenanceActionDetails`:
-  `List`\[[PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restoredbclusterfromsnapshotmessagerequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreDBClusterFromSnapshotMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RestoreDBClusterFromSnapshotMessageRequestTypeDef
+
+def get_value() -> RestoreDBClusterFromSnapshotMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+        "SnapshotIdentifier": ...,
+        "Engine": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreDBClusterFromSnapshotMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+    SnapshotIdentifier: str,
+    Engine: str,
+    AvailabilityZones: NotRequired[Sequence[str]],
+    EngineVersion: NotRequired[str],
+    Port: NotRequired[int],
+    DBSubnetGroupName: NotRequired[str],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    KmsKeyId: NotRequired[str],
+    EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
+    DeletionProtection: NotRequired[bool],
+```
 
-- `DBClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `Engine`: `str`
-
-Optional fields:
-
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `EngineVersion`: `str`
-- `Port`: `int`
-- `DBSubnetGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `DeletionProtection`: `bool`
-
-<a id="restoredbclusterfromsnapshotresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## RestoreDBClusterFromSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RestoreDBClusterFromSnapshotResultTypeDef
+
+def get_value() -> RestoreDBClusterFromSnapshotResultTypeDef:
+    return {
+        "DBCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreDBClusterFromSnapshotResultTypeDef(TypedDict):
+    DBCluster: DBClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="restoredbclustertopointintimemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterTypeDef](./type_defs.md#dbclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RestoreDBClusterToPointInTimeMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RestoreDBClusterToPointInTimeMessageRequestTypeDef
+
+def get_value() -> RestoreDBClusterToPointInTimeMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+        "SourceDBClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreDBClusterToPointInTimeMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+    SourceDBClusterIdentifier: str,
+    RestoreToTime: NotRequired[Union[datetime, str]],
+    UseLatestRestorableTime: NotRequired[bool],
+    Port: NotRequired[int],
+    DBSubnetGroupName: NotRequired[str],
+    VpcSecurityGroupIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    KmsKeyId: NotRequired[str],
+    EnableCloudwatchLogsExports: NotRequired[Sequence[str]],
+    DeletionProtection: NotRequired[bool],
+```
 
-- `DBClusterIdentifier`: `str`
-- `SourceDBClusterIdentifier`: `str`
-
-Optional fields:
-
-- `RestoreToTime`: `Union`\[`datetime`, `str`\]
-- `UseLatestRestorableTime`: `bool`
-- `Port`: `int`
-- `DBSubnetGroupName`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
-- `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
-- `DeletionProtection`: `bool`
-
-<a id="restoredbclustertopointintimeresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## RestoreDBClusterToPointInTimeResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import RestoreDBClusterToPointInTimeResultTypeDef
+
+def get_value() -> RestoreDBClusterToPointInTimeResultTypeDef:
+    return {
+        "DBCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreDBClusterToPointInTimeResultTypeDef(TypedDict):
+    DBCluster: DBClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startdbclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterTypeDef](./type_defs.md#dbclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartDBClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import StartDBClusterMessageRequestTypeDef
+
+def get_value() -> StartDBClusterMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DBClusterIdentifier`: `str`
-
-<a id="startdbclusterresulttypedef"></a>
+```python title="Definition"
+class StartDBClusterMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+```
 
 ## StartDBClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import StartDBClusterResultTypeDef
+
+def get_value() -> StartDBClusterResultTypeDef:
+    return {
+        "DBCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDBClusterResultTypeDef(TypedDict):
+    DBCluster: DBClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopdbclustermessagerequesttypedef"></a>
-
+1. See [:material-code-braces: DBClusterTypeDef](./type_defs.md#dbclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopDBClusterMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import StopDBClusterMessageRequestTypeDef
+
+def get_value() -> StopDBClusterMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DBClusterIdentifier`: `str`
-
-<a id="stopdbclusterresulttypedef"></a>
+```python title="Definition"
+class StopDBClusterMessageRequestTypeDef(TypedDict):
+    DBClusterIdentifier: str,
+```
 
 ## StopDBClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import StopDBClusterResultTypeDef
+
+def get_value() -> StopDBClusterResultTypeDef:
+    return {
+        "DBCluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopDBClusterResultTypeDef(TypedDict):
+    DBCluster: DBClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="subnettypedef"></a>
-
+1. See [:material-code-braces: DBClusterTypeDef](./type_defs.md#dbclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SubnetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import SubnetTypeDef
+
+def get_value() -> SubnetTypeDef:
+    return {
+        "SubnetIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubnetTypeDef(TypedDict):
+    SubnetIdentifier: NotRequired[str],
+    SubnetAvailabilityZone: NotRequired[AvailabilityZoneTypeDef],  # (1)
+    SubnetStatus: NotRequired[str],
+```
 
-- `SubnetIdentifier`: `str`
-- `SubnetAvailabilityZone`:
-  [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
-- `SubnetStatus`: `str`
-
-<a id="taglistmessagetypedef"></a>
-
+1. See [:material-code-braces: AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef) 
 ## TagListMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import TagListMessageTypeDef
+
+def get_value() -> TagListMessageTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagListMessageTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="upgradetargettypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## UpgradeTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import UpgradeTargetTypeDef
+
+def get_value() -> UpgradeTargetTypeDef:
+    return {
+        "Engine": ...,
+    }
 ```
 
-Optional fields:
-
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `Description`: `str`
-- `AutoUpgrade`: `bool`
-- `IsMajorVersionUpgrade`: `bool`
-
-<a id="vpcsecuritygroupmembershiptypedef"></a>
+```python title="Definition"
+class UpgradeTargetTypeDef(TypedDict):
+    Engine: NotRequired[str],
+    EngineVersion: NotRequired[str],
+    Description: NotRequired[str],
+    AutoUpgrade: NotRequired[bool],
+    IsMajorVersionUpgrade: NotRequired[bool],
+```
 
 ## VpcSecurityGroupMembershipTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import VpcSecurityGroupMembershipTypeDef
+
+def get_value() -> VpcSecurityGroupMembershipTypeDef:
+    return {
+        "VpcSecurityGroupId": ...,
+    }
 ```
 
-Optional fields:
-
-- `VpcSecurityGroupId`: `str`
-- `Status`: `str`
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class VpcSecurityGroupMembershipTypeDef(TypedDict):
+    VpcSecurityGroupId: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_docdb.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

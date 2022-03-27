@@ -1,51 +1,18 @@
-<a id="datapipelineclient-for-boto3-datapipeline-module"></a>
-
-# DataPipelineClient for boto3 DataPipeline module
+# DataPipelineClient
 
 > [Index](../README.md) > [DataPipeline](./README.md) > DataPipelineClient
 
-Auto-generated documentation for
-[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
-type annotations stubs module
-[mypy-boto3-datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
+!!! note ""
 
-- [DataPipelineClient for boto3 DataPipeline module](#datapipelineclient-for-boto3-datapipeline-module)
-  - [DataPipelineClient](#datapipelineclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [activate_pipeline](#activate_pipeline)
-    - [add_tags](#add_tags)
-    - [can_paginate](#can_paginate)
-    - [create_pipeline](#create_pipeline)
-    - [deactivate_pipeline](#deactivate_pipeline)
-    - [delete_pipeline](#delete_pipeline)
-    - [describe_objects](#describe_objects)
-    - [describe_pipelines](#describe_pipelines)
-    - [evaluate_expression](#evaluate_expression)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_pipeline_definition](#get_pipeline_definition)
-    - [list_pipelines](#list_pipelines)
-    - [poll_for_task](#poll_for_task)
-    - [put_pipeline_definition](#put_pipeline_definition)
-    - [query_objects](#query_objects)
-    - [remove_tags](#remove_tags)
-    - [report_task_progress](#report_task_progress)
-    - [report_task_runner_heartbeat](#report_task_runner_heartbeat)
-    - [set_status](#set_status)
-    - [set_task_status](#set_task_status)
-    - [validate_pipeline_definition](#validate_pipeline_definition)
-    - [get_paginator](#get_paginator)
-
-<a id="datapipelineclient"></a>
+    Auto-generated documentation for [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
+    type annotations stubs module [mypy-boto3-datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 ## DataPipelineClient
 
-Type annotations for `boto3.client("datapipeline")`
+Type annotations and code completion for `#!python boto3.client("datapipeline")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_datapipeline.client import DataPipelineClient
 
@@ -53,542 +20,696 @@ def get_datapipeline_client() -> DataPipelineClient:
     return Session().client("datapipeline")
 ```
 
-Boto3 documentation:
-[DataPipeline.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("datapipeline").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("datapipeline")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServiceError,
+    client.InvalidRequestException,
+    client.PipelineDeletedException,
+    client.PipelineNotFoundException,
+    client.TaskNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_datapipeline.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServiceError`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.PipelineDeletedException`
-- `Exceptions.PipelineNotFoundException`
-- `Exceptions.TaskNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-DataPipelineClient exceptions.
-
-Type annotations for `boto3.client("datapipeline").exceptions` method.
-
-Boto3 documentation:
-[DataPipeline.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="activate\_pipeline"></a>
-
-### activate_pipeline
+### activate\_pipeline
 
 Validates the specified pipeline and starts processing pipeline tasks.
 
-Type annotations for `boto3.client("datapipeline").activate_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").activate_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline)
 
-Boto3 documentation:
-[DataPipeline.Client.activate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.activate_pipeline)
+```python title="Method definition"
+def activate_pipeline(
+    self,
+    *,
+    pipelineId: str,
+    parameterValues: Sequence[ParameterValueTypeDef] = ...,  # (1)
+    startTimestamp: Union[datetime, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ActivatePipelineInputRequestTypeDef](./type_defs.md#activatepipelineinputrequesttypedef).
+1. See [:material-code-braces: ParameterValueTypeDef](./type_defs.md#parametervaluetypedef) 
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `parameterValues`:
-  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
-- `startTimestamp`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ActivatePipelineInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.activate_pipeline(**kwargs)
+```
 
-<a id="add\_tags"></a>
+1. See [:material-code-braces: ActivatePipelineInputRequestTypeDef](./type_defs.md#activatepipelineinputrequesttypedef) 
 
-### add_tags
+### add\_tags
 
 Adds or modifies tags for the specified pipeline.
 
-Type annotations for `boto3.client("datapipeline").add_tags` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").add_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.add_tags)
 
-Boto3 documentation:
-[DataPipeline.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.add_tags)
+```python title="Method definition"
+def add_tags(
+    self,
+    *,
+    pipelineId: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_tags(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("datapipeline").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.can_paginate)
 
-Boto3 documentation:
-[DataPipeline.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_pipeline"></a>
-
-### create_pipeline
+### create\_pipeline
 
 Creates a new, empty pipeline.
 
-Type annotations for `boto3.client("datapipeline").create_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").create_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline)
 
-Boto3 documentation:
-[DataPipeline.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.create_pipeline)
+```python title="Method definition"
+def create_pipeline(
+    self,
+    *,
+    name: str,
+    uniqueId: str,
+    description: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreatePipelineOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePipelineInputRequestTypeDef](./type_defs.md#createpipelineinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `uniqueId`: `str` *(required)*
-- `description`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePipelineInputRequestTypeDef = {  # (1)
+    "name": ...,
+    "uniqueId": ...,
+}
 
-Returns
-[CreatePipelineOutputTypeDef](./type_defs.md#createpipelineoutputtypedef).
+parent.create_pipeline(**kwargs)
+```
 
-<a id="deactivate\_pipeline"></a>
+1. See [:material-code-braces: CreatePipelineInputRequestTypeDef](./type_defs.md#createpipelineinputrequesttypedef) 
 
-### deactivate_pipeline
+### deactivate\_pipeline
 
 Deactivates the specified running pipeline.
 
-Type annotations for `boto3.client("datapipeline").deactivate_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").deactivate_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline)
 
-Boto3 documentation:
-[DataPipeline.Client.deactivate_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.deactivate_pipeline)
+```python title="Method definition"
+def deactivate_pipeline(
+    self,
+    *,
+    pipelineId: str,
+    cancelActive: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeactivatePipelineInputRequestTypeDef](./type_defs.md#deactivatepipelineinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `cancelActive`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeactivatePipelineInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deactivate_pipeline(**kwargs)
+```
 
-<a id="delete\_pipeline"></a>
+1. See [:material-code-braces: DeactivatePipelineInputRequestTypeDef](./type_defs.md#deactivatepipelineinputrequesttypedef) 
 
-### delete_pipeline
+### delete\_pipeline
 
 Deletes a pipeline, its pipeline definition, and its run history.
 
-Type annotations for `boto3.client("datapipeline").delete_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").delete_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline)
 
-Boto3 documentation:
-[DataPipeline.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.delete_pipeline)
+```python title="Method definition"
+def delete_pipeline(
+    self,
+    *,
+    pipelineId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePipelineInputRequestTypeDef](./type_defs.md#deletepipelineinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePipelineInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+}
 
-<a id="describe\_objects"></a>
+parent.delete_pipeline(**kwargs)
+```
 
-### describe_objects
+1. See [:material-code-braces: DeletePipelineInputRequestTypeDef](./type_defs.md#deletepipelineinputrequesttypedef) 
+
+### describe\_objects
 
 Gets the object definitions for a set of objects associated with the pipeline.
 
-Type annotations for `boto3.client("datapipeline").describe_objects` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").describe_objects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_objects)
 
-Boto3 documentation:
-[DataPipeline.Client.describe_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_objects)
+```python title="Method definition"
+def describe_objects(
+    self,
+    *,
+    pipelineId: str,
+    objectIds: Sequence[str],
+    evaluateExpressions: bool = ...,
+    marker: str = ...,
+) -> DescribeObjectsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeObjectsInputRequestTypeDef](./type_defs.md#describeobjectsinputrequesttypedef).
+1. See [:material-code-braces: DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `objectIds`: `Sequence`\[`str`\] *(required)*
-- `evaluateExpressions`: `bool`
-- `marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeObjectsInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+    "objectIds": ...,
+}
 
-Returns
-[DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef).
+parent.describe_objects(**kwargs)
+```
 
-<a id="describe\_pipelines"></a>
+1. See [:material-code-braces: DescribeObjectsInputRequestTypeDef](./type_defs.md#describeobjectsinputrequesttypedef) 
 
-### describe_pipelines
+### describe\_pipelines
 
 Retrieves metadata about one or more pipelines.
 
-Type annotations for `boto3.client("datapipeline").describe_pipelines` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").describe_pipelines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines)
 
-Boto3 documentation:
-[DataPipeline.Client.describe_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.describe_pipelines)
+```python title="Method definition"
+def describe_pipelines(
+    self,
+    *,
+    pipelineIds: Sequence[str],
+) -> DescribePipelinesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePipelinesInputRequestTypeDef](./type_defs.md#describepipelinesinputrequesttypedef).
+1. See [:material-code-braces: DescribePipelinesOutputTypeDef](./type_defs.md#describepipelinesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePipelinesInputRequestTypeDef = {  # (1)
+    "pipelineIds": ...,
+}
 
-Returns
-[DescribePipelinesOutputTypeDef](./type_defs.md#describepipelinesoutputtypedef).
+parent.describe_pipelines(**kwargs)
+```
 
-<a id="evaluate\_expression"></a>
+1. See [:material-code-braces: DescribePipelinesInputRequestTypeDef](./type_defs.md#describepipelinesinputrequesttypedef) 
 
-### evaluate_expression
+### evaluate\_expression
 
 Task runners call `EvaluateExpression` to evaluate a string in the context of
 the specified object.
 
-Type annotations for `boto3.client("datapipeline").evaluate_expression` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").evaluate_expression` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression)
 
-Boto3 documentation:
-[DataPipeline.Client.evaluate_expression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.evaluate_expression)
+```python title="Method definition"
+def evaluate_expression(
+    self,
+    *,
+    pipelineId: str,
+    objectId: str,
+    expression: str,
+) -> EvaluateExpressionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EvaluateExpressionInputRequestTypeDef](./type_defs.md#evaluateexpressioninputrequesttypedef).
+1. See [:material-code-braces: EvaluateExpressionOutputTypeDef](./type_defs.md#evaluateexpressionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `objectId`: `str` *(required)*
-- `expression`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EvaluateExpressionInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+    "objectId": ...,
+    "expression": ...,
+}
 
-Returns
-[EvaluateExpressionOutputTypeDef](./type_defs.md#evaluateexpressionoutputtypedef).
+parent.evaluate_expression(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EvaluateExpressionInputRequestTypeDef](./type_defs.md#evaluateexpressioninputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("datapipeline").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.generate_presigned_url)
 
-Boto3 documentation:
-[DataPipeline.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_pipeline\_definition"></a>
-
-### get_pipeline_definition
+### get\_pipeline\_definition
 
 Gets the definition of the specified pipeline.
 
-Type annotations for `boto3.client("datapipeline").get_pipeline_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").get_pipeline_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition)
 
-Boto3 documentation:
-[DataPipeline.Client.get_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.get_pipeline_definition)
+```python title="Method definition"
+def get_pipeline_definition(
+    self,
+    *,
+    pipelineId: str,
+    version: str = ...,
+) -> GetPipelineDefinitionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPipelineDefinitionInputRequestTypeDef](./type_defs.md#getpipelinedefinitioninputrequesttypedef).
+1. See [:material-code-braces: GetPipelineDefinitionOutputTypeDef](./type_defs.md#getpipelinedefinitionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `version`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPipelineDefinitionInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+}
 
-Returns
-[GetPipelineDefinitionOutputTypeDef](./type_defs.md#getpipelinedefinitionoutputtypedef).
+parent.get_pipeline_definition(**kwargs)
+```
 
-<a id="list\_pipelines"></a>
+1. See [:material-code-braces: GetPipelineDefinitionInputRequestTypeDef](./type_defs.md#getpipelinedefinitioninputrequesttypedef) 
 
-### list_pipelines
+### list\_pipelines
 
-Lists the pipeline identifiers for all active pipelines that you have
-permission to access.
+Lists the pipeline identifiers for all active pipelines that you have permission
+to access.
 
-Type annotations for `boto3.client("datapipeline").list_pipelines` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").list_pipelines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines)
 
-Boto3 documentation:
-[DataPipeline.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.list_pipelines)
+```python title="Method definition"
+def list_pipelines(
+    self,
+    *,
+    marker: str = ...,
+) -> ListPipelinesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPipelinesInputRequestTypeDef](./type_defs.md#listpipelinesinputrequesttypedef).
+1. See [:material-code-braces: ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPipelinesInputRequestTypeDef = {  # (1)
+    "marker": ...,
+}
 
-Returns
-[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef).
+parent.list_pipelines(**kwargs)
+```
 
-<a id="poll\_for\_task"></a>
+1. See [:material-code-braces: ListPipelinesInputRequestTypeDef](./type_defs.md#listpipelinesinputrequesttypedef) 
 
-### poll_for_task
+### poll\_for\_task
 
 Task runners call `PollForTask` to receive a task to perform from AWS Data
 Pipeline.
 
-Type annotations for `boto3.client("datapipeline").poll_for_task` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").poll_for_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task)
 
-Boto3 documentation:
-[DataPipeline.Client.poll_for_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.poll_for_task)
+```python title="Method definition"
+def poll_for_task(
+    self,
+    *,
+    workerGroup: str,
+    hostname: str = ...,
+    instanceIdentity: InstanceIdentityTypeDef = ...,  # (1)
+) -> PollForTaskOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PollForTaskInputRequestTypeDef](./type_defs.md#pollfortaskinputrequesttypedef).
+1. See [:material-code-braces: InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef) 
+2. See [:material-code-braces: PollForTaskOutputTypeDef](./type_defs.md#pollfortaskoutputtypedef) 
 
-Keyword-only arguments:
 
-- `workerGroup`: `str` *(required)*
-- `hostname`: `str`
-- `instanceIdentity`:
-  [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
+```python title="Usage example with kwargs"
+kwargs: PollForTaskInputRequestTypeDef = {  # (1)
+    "workerGroup": ...,
+}
 
-Returns [PollForTaskOutputTypeDef](./type_defs.md#pollfortaskoutputtypedef).
+parent.poll_for_task(**kwargs)
+```
 
-<a id="put\_pipeline\_definition"></a>
+1. See [:material-code-braces: PollForTaskInputRequestTypeDef](./type_defs.md#pollfortaskinputrequesttypedef) 
 
-### put_pipeline_definition
+### put\_pipeline\_definition
 
 Adds tasks, schedules, and preconditions to the specified pipeline.
 
-Type annotations for `boto3.client("datapipeline").put_pipeline_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").put_pipeline_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition)
 
-Boto3 documentation:
-[DataPipeline.Client.put_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.put_pipeline_definition)
+```python title="Method definition"
+def put_pipeline_definition(
+    self,
+    *,
+    pipelineId: str,
+    pipelineObjects: Sequence[PipelineObjectTypeDef],  # (1)
+    parameterObjects: Sequence[ParameterObjectTypeDef] = ...,  # (2)
+    parameterValues: Sequence[ParameterValueTypeDef] = ...,  # (3)
+) -> PutPipelineDefinitionOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[PutPipelineDefinitionInputRequestTypeDef](./type_defs.md#putpipelinedefinitioninputrequesttypedef).
+1. See [:material-code-braces: PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef) 
+2. See [:material-code-braces: ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef) 
+3. See [:material-code-braces: ParameterValueTypeDef](./type_defs.md#parametervaluetypedef) 
+4. See [:material-code-braces: PutPipelineDefinitionOutputTypeDef](./type_defs.md#putpipelinedefinitionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `pipelineObjects`:
-  `Sequence`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
-  *(required)*
-- `parameterObjects`:
-  `Sequence`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
-- `parameterValues`:
-  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutPipelineDefinitionInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+    "pipelineObjects": ...,
+}
 
-Returns
-[PutPipelineDefinitionOutputTypeDef](./type_defs.md#putpipelinedefinitionoutputtypedef).
+parent.put_pipeline_definition(**kwargs)
+```
 
-<a id="query\_objects"></a>
+1. See [:material-code-braces: PutPipelineDefinitionInputRequestTypeDef](./type_defs.md#putpipelinedefinitioninputrequesttypedef) 
 
-### query_objects
+### query\_objects
 
-Queries the specified pipeline for the names of objects that match the
-specified set of conditions.
+Queries the specified pipeline for the names of objects that match the specified
+set of conditions.
 
-Type annotations for `boto3.client("datapipeline").query_objects` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").query_objects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.query_objects)
 
-Boto3 documentation:
-[DataPipeline.Client.query_objects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.query_objects)
+```python title="Method definition"
+def query_objects(
+    self,
+    *,
+    pipelineId: str,
+    sphere: str,
+    query: QueryTypeDef = ...,  # (1)
+    marker: str = ...,
+    limit: int = ...,
+) -> QueryObjectsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[QueryObjectsInputRequestTypeDef](./type_defs.md#queryobjectsinputrequesttypedef).
+1. See [:material-code-braces: QueryTypeDef](./type_defs.md#querytypedef) 
+2. See [:material-code-braces: QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `sphere`: `str` *(required)*
-- `query`: [QueryTypeDef](./type_defs.md#querytypedef)
-- `marker`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: QueryObjectsInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+    "sphere": ...,
+}
 
-Returns [QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef).
+parent.query_objects(**kwargs)
+```
 
-<a id="remove\_tags"></a>
+1. See [:material-code-braces: QueryObjectsInputRequestTypeDef](./type_defs.md#queryobjectsinputrequesttypedef) 
 
-### remove_tags
+### remove\_tags
 
 Removes existing tags from the specified pipeline.
 
-Type annotations for `boto3.client("datapipeline").remove_tags` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").remove_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.remove_tags)
 
-Boto3 documentation:
-[DataPipeline.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.remove_tags)
+```python title="Method definition"
+def remove_tags(
+    self,
+    *,
+    pipelineId: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_tags(**kwargs)
+```
 
-<a id="report\_task\_progress"></a>
+1. See [:material-code-braces: RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef) 
 
-### report_task_progress
+### report\_task\_progress
 
 Task runners call `ReportTaskProgress` when assigned a task to acknowledge that
 it has the task.
 
-Type annotations for `boto3.client("datapipeline").report_task_progress`
-method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").report_task_progress` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress)
 
-Boto3 documentation:
-[DataPipeline.Client.report_task_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_progress)
+```python title="Method definition"
+def report_task_progress(
+    self,
+    *,
+    taskId: str,
+    fields: Sequence[FieldTypeDef] = ...,  # (1)
+) -> ReportTaskProgressOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ReportTaskProgressInputRequestTypeDef](./type_defs.md#reporttaskprogressinputrequesttypedef).
+1. See [:material-code-braces: FieldTypeDef](./type_defs.md#fieldtypedef) 
+2. See [:material-code-braces: ReportTaskProgressOutputTypeDef](./type_defs.md#reporttaskprogressoutputtypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
-- `fields`: `Sequence`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ReportTaskProgressInputRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns
-[ReportTaskProgressOutputTypeDef](./type_defs.md#reporttaskprogressoutputtypedef).
+parent.report_task_progress(**kwargs)
+```
 
-<a id="report\_task\_runner\_heartbeat"></a>
+1. See [:material-code-braces: ReportTaskProgressInputRequestTypeDef](./type_defs.md#reporttaskprogressinputrequesttypedef) 
 
-### report_task_runner_heartbeat
+### report\_task\_runner\_heartbeat
 
 Task runners call `ReportTaskRunnerHeartbeat` every 15 minutes to indicate that
 they are operational.
 
-Type annotations for
-`boto3.client("datapipeline").report_task_runner_heartbeat` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").report_task_runner_heartbeat` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat)
 
-Boto3 documentation:
-[DataPipeline.Client.report_task_runner_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.report_task_runner_heartbeat)
+```python title="Method definition"
+def report_task_runner_heartbeat(
+    self,
+    *,
+    taskrunnerId: str,
+    workerGroup: str = ...,
+    hostname: str = ...,
+) -> ReportTaskRunnerHeartbeatOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ReportTaskRunnerHeartbeatInputRequestTypeDef](./type_defs.md#reporttaskrunnerheartbeatinputrequesttypedef).
+1. See [:material-code-braces: ReportTaskRunnerHeartbeatOutputTypeDef](./type_defs.md#reporttaskrunnerheartbeatoutputtypedef) 
 
-Keyword-only arguments:
 
-- `taskrunnerId`: `str` *(required)*
-- `workerGroup`: `str`
-- `hostname`: `str`
+```python title="Usage example with kwargs"
+kwargs: ReportTaskRunnerHeartbeatInputRequestTypeDef = {  # (1)
+    "taskrunnerId": ...,
+}
 
-Returns
-[ReportTaskRunnerHeartbeatOutputTypeDef](./type_defs.md#reporttaskrunnerheartbeatoutputtypedef).
+parent.report_task_runner_heartbeat(**kwargs)
+```
 
-<a id="set\_status"></a>
+1. See [:material-code-braces: ReportTaskRunnerHeartbeatInputRequestTypeDef](./type_defs.md#reporttaskrunnerheartbeatinputrequesttypedef) 
 
-### set_status
+### set\_status
 
 Requests that the status of the specified physical or logical pipeline objects
 be updated in the specified pipeline.
 
-Type annotations for `boto3.client("datapipeline").set_status` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").set_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_status)
 
-Boto3 documentation:
-[DataPipeline.Client.set_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_status)
+```python title="Method definition"
+def set_status(
+    self,
+    *,
+    pipelineId: str,
+    objectIds: Sequence[str],
+    status: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetStatusInputRequestTypeDef](./type_defs.md#setstatusinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `objectIds`: `Sequence`\[`str`\] *(required)*
-- `status`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetStatusInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+    "objectIds": ...,
+    "status": ...,
+}
 
-<a id="set\_task\_status"></a>
+parent.set_status(**kwargs)
+```
 
-### set_task_status
+1. See [:material-code-braces: SetStatusInputRequestTypeDef](./type_defs.md#setstatusinputrequesttypedef) 
+
+### set\_task\_status
 
 Task runners call `SetTaskStatus` to notify AWS Data Pipeline that a task is
 completed and provide information about the final status.
 
-Type annotations for `boto3.client("datapipeline").set_task_status` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").set_task_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_task_status)
 
-Boto3 documentation:
-[DataPipeline.Client.set_task_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.set_task_status)
+```python title="Method definition"
+def set_task_status(
+    self,
+    *,
+    taskId: str,
+    taskStatus: TaskStatusType,  # (1)
+    errorId: str = ...,
+    errorMessage: str = ...,
+    errorStackTrace: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SetTaskStatusInputRequestTypeDef](./type_defs.md#settaskstatusinputrequesttypedef).
+1. See [:material-code-brackets: TaskStatusType](./literals.md#taskstatustype) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
-- `taskStatus`: [TaskStatusType](./literals.md#taskstatustype) *(required)*
-- `errorId`: `str`
-- `errorMessage`: `str`
-- `errorStackTrace`: `str`
+```python title="Usage example with kwargs"
+kwargs: SetTaskStatusInputRequestTypeDef = {  # (1)
+    "taskId": ...,
+    "taskStatus": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.set_task_status(**kwargs)
+```
 
-<a id="validate\_pipeline\_definition"></a>
+1. See [:material-code-braces: SetTaskStatusInputRequestTypeDef](./type_defs.md#settaskstatusinputrequesttypedef) 
 
-### validate_pipeline_definition
+### validate\_pipeline\_definition
 
-Validates the specified pipeline definition to ensure that it is well formed
-and can be run without error.
+Validates the specified pipeline definition to ensure that it is well formed and
+can be run without error.
 
-Type annotations for
-`boto3.client("datapipeline").validate_pipeline_definition` method.
+Type annotations and code completion for `#!python boto3.client("datapipeline").validate_pipeline_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition)
 
-Boto3 documentation:
-[DataPipeline.Client.validate_pipeline_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Client.validate_pipeline_definition)
+```python title="Method definition"
+def validate_pipeline_definition(
+    self,
+    *,
+    pipelineId: str,
+    pipelineObjects: Sequence[PipelineObjectTypeDef],  # (1)
+    parameterObjects: Sequence[ParameterObjectTypeDef] = ...,  # (2)
+    parameterValues: Sequence[ParameterValueTypeDef] = ...,  # (3)
+) -> ValidatePipelineDefinitionOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ValidatePipelineDefinitionInputRequestTypeDef](./type_defs.md#validatepipelinedefinitioninputrequesttypedef).
+1. See [:material-code-braces: PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef) 
+2. See [:material-code-braces: ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef) 
+3. See [:material-code-braces: ParameterValueTypeDef](./type_defs.md#parametervaluetypedef) 
+4. See [:material-code-braces: ValidatePipelineDefinitionOutputTypeDef](./type_defs.md#validatepipelinedefinitionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `pipelineId`: `str` *(required)*
-- `pipelineObjects`:
-  `Sequence`\[[PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
-  *(required)*
-- `parameterObjects`:
-  `Sequence`\[[ParameterObjectTypeDef](./type_defs.md#parameterobjecttypedef)\]
-- `parameterValues`:
-  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ValidatePipelineDefinitionInputRequestTypeDef = {  # (1)
+    "pipelineId": ...,
+    "pipelineObjects": ...,
+}
 
-Returns
-[ValidatePipelineDefinitionOutputTypeDef](./type_defs.md#validatepipelinedefinitionoutputtypedef).
+parent.validate_pipeline_definition(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ValidatePipelineDefinitionInputRequestTypeDef](./type_defs.md#validatepipelinedefinitioninputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("datapipeline").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("datapipeline").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_objects")` ->
-  [DescribeObjectsPaginator](./paginators.md#describeobjectspaginator)
-- `client.get_paginator("list_pipelines")` ->
-  [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
-- `client.get_paginator("query_objects")` ->
-  [QueryObjectsPaginator](./paginators.md#queryobjectspaginator)
+- `client.get_paginator("describe_objects")` -> [DescribeObjectsPaginator](./paginators.md#describeobjectspaginator)
+- `client.get_paginator("list_pipelines")` -> [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+- `client.get_paginator("query_objects")` -> [QueryObjectsPaginator](./paginators.md#queryobjectspaginator)
+
+
+

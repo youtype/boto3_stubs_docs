@@ -1,166 +1,18 @@
-<a id="connectclient-for-boto3-connect-module"></a>
-
-# ConnectClient for boto3 Connect module
+# ConnectClient
 
 > [Index](../README.md) > [Connect](./README.md) > ConnectClient
 
-Auto-generated documentation for
-[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
-type annotations stubs module
-[mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
+!!! note ""
 
-- [ConnectClient for boto3 Connect module](#connectclient-for-boto3-connect-module)
-  - [ConnectClient](#connectclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_approved_origin](#associate_approved_origin)
-    - [associate_bot](#associate_bot)
-    - [associate_default_vocabulary](#associate_default_vocabulary)
-    - [associate_instance_storage_config](#associate_instance_storage_config)
-    - [associate_lambda_function](#associate_lambda_function)
-    - [associate_lex_bot](#associate_lex_bot)
-    - [associate_queue_quick_connects](#associate_queue_quick_connects)
-    - [associate_routing_profile_queues](#associate_routing_profile_queues)
-    - [associate_security_key](#associate_security_key)
-    - [can_paginate](#can_paginate)
-    - [create_agent_status](#create_agent_status)
-    - [create_contact_flow](#create_contact_flow)
-    - [create_contact_flow_module](#create_contact_flow_module)
-    - [create_hours_of_operation](#create_hours_of_operation)
-    - [create_instance](#create_instance)
-    - [create_integration_association](#create_integration_association)
-    - [create_queue](#create_queue)
-    - [create_quick_connect](#create_quick_connect)
-    - [create_routing_profile](#create_routing_profile)
-    - [create_security_profile](#create_security_profile)
-    - [create_use_case](#create_use_case)
-    - [create_user](#create_user)
-    - [create_user_hierarchy_group](#create_user_hierarchy_group)
-    - [create_vocabulary](#create_vocabulary)
-    - [delete_contact_flow](#delete_contact_flow)
-    - [delete_contact_flow_module](#delete_contact_flow_module)
-    - [delete_hours_of_operation](#delete_hours_of_operation)
-    - [delete_instance](#delete_instance)
-    - [delete_integration_association](#delete_integration_association)
-    - [delete_quick_connect](#delete_quick_connect)
-    - [delete_security_profile](#delete_security_profile)
-    - [delete_use_case](#delete_use_case)
-    - [delete_user](#delete_user)
-    - [delete_user_hierarchy_group](#delete_user_hierarchy_group)
-    - [delete_vocabulary](#delete_vocabulary)
-    - [describe_agent_status](#describe_agent_status)
-    - [describe_contact](#describe_contact)
-    - [describe_contact_flow](#describe_contact_flow)
-    - [describe_contact_flow_module](#describe_contact_flow_module)
-    - [describe_hours_of_operation](#describe_hours_of_operation)
-    - [describe_instance](#describe_instance)
-    - [describe_instance_attribute](#describe_instance_attribute)
-    - [describe_instance_storage_config](#describe_instance_storage_config)
-    - [describe_queue](#describe_queue)
-    - [describe_quick_connect](#describe_quick_connect)
-    - [describe_routing_profile](#describe_routing_profile)
-    - [describe_security_profile](#describe_security_profile)
-    - [describe_user](#describe_user)
-    - [describe_user_hierarchy_group](#describe_user_hierarchy_group)
-    - [describe_user_hierarchy_structure](#describe_user_hierarchy_structure)
-    - [describe_vocabulary](#describe_vocabulary)
-    - [disassociate_approved_origin](#disassociate_approved_origin)
-    - [disassociate_bot](#disassociate_bot)
-    - [disassociate_instance_storage_config](#disassociate_instance_storage_config)
-    - [disassociate_lambda_function](#disassociate_lambda_function)
-    - [disassociate_lex_bot](#disassociate_lex_bot)
-    - [disassociate_queue_quick_connects](#disassociate_queue_quick_connects)
-    - [disassociate_routing_profile_queues](#disassociate_routing_profile_queues)
-    - [disassociate_security_key](#disassociate_security_key)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_contact_attributes](#get_contact_attributes)
-    - [get_current_metric_data](#get_current_metric_data)
-    - [get_federation_token](#get_federation_token)
-    - [get_metric_data](#get_metric_data)
-    - [list_agent_statuses](#list_agent_statuses)
-    - [list_approved_origins](#list_approved_origins)
-    - [list_bots](#list_bots)
-    - [list_contact_flow_modules](#list_contact_flow_modules)
-    - [list_contact_flows](#list_contact_flows)
-    - [list_contact_references](#list_contact_references)
-    - [list_default_vocabularies](#list_default_vocabularies)
-    - [list_hours_of_operations](#list_hours_of_operations)
-    - [list_instance_attributes](#list_instance_attributes)
-    - [list_instance_storage_configs](#list_instance_storage_configs)
-    - [list_instances](#list_instances)
-    - [list_integration_associations](#list_integration_associations)
-    - [list_lambda_functions](#list_lambda_functions)
-    - [list_lex_bots](#list_lex_bots)
-    - [list_phone_numbers](#list_phone_numbers)
-    - [list_prompts](#list_prompts)
-    - [list_queue_quick_connects](#list_queue_quick_connects)
-    - [list_queues](#list_queues)
-    - [list_quick_connects](#list_quick_connects)
-    - [list_routing_profile_queues](#list_routing_profile_queues)
-    - [list_routing_profiles](#list_routing_profiles)
-    - [list_security_keys](#list_security_keys)
-    - [list_security_profile_permissions](#list_security_profile_permissions)
-    - [list_security_profiles](#list_security_profiles)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_use_cases](#list_use_cases)
-    - [list_user_hierarchy_groups](#list_user_hierarchy_groups)
-    - [list_users](#list_users)
-    - [resume_contact_recording](#resume_contact_recording)
-    - [search_vocabularies](#search_vocabularies)
-    - [start_chat_contact](#start_chat_contact)
-    - [start_contact_recording](#start_contact_recording)
-    - [start_contact_streaming](#start_contact_streaming)
-    - [start_outbound_voice_contact](#start_outbound_voice_contact)
-    - [start_task_contact](#start_task_contact)
-    - [stop_contact](#stop_contact)
-    - [stop_contact_recording](#stop_contact_recording)
-    - [stop_contact_streaming](#stop_contact_streaming)
-    - [suspend_contact_recording](#suspend_contact_recording)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_agent_status](#update_agent_status)
-    - [update_contact](#update_contact)
-    - [update_contact_attributes](#update_contact_attributes)
-    - [update_contact_flow_content](#update_contact_flow_content)
-    - [update_contact_flow_metadata](#update_contact_flow_metadata)
-    - [update_contact_flow_module_content](#update_contact_flow_module_content)
-    - [update_contact_flow_module_metadata](#update_contact_flow_module_metadata)
-    - [update_contact_flow_name](#update_contact_flow_name)
-    - [update_contact_schedule](#update_contact_schedule)
-    - [update_hours_of_operation](#update_hours_of_operation)
-    - [update_instance_attribute](#update_instance_attribute)
-    - [update_instance_storage_config](#update_instance_storage_config)
-    - [update_queue_hours_of_operation](#update_queue_hours_of_operation)
-    - [update_queue_max_contacts](#update_queue_max_contacts)
-    - [update_queue_name](#update_queue_name)
-    - [update_queue_outbound_caller_config](#update_queue_outbound_caller_config)
-    - [update_queue_status](#update_queue_status)
-    - [update_quick_connect_config](#update_quick_connect_config)
-    - [update_quick_connect_name](#update_quick_connect_name)
-    - [update_routing_profile_concurrency](#update_routing_profile_concurrency)
-    - [update_routing_profile_default_outbound_queue](#update_routing_profile_default_outbound_queue)
-    - [update_routing_profile_name](#update_routing_profile_name)
-    - [update_routing_profile_queues](#update_routing_profile_queues)
-    - [update_security_profile](#update_security_profile)
-    - [update_user_hierarchy](#update_user_hierarchy)
-    - [update_user_hierarchy_group_name](#update_user_hierarchy_group_name)
-    - [update_user_hierarchy_structure](#update_user_hierarchy_structure)
-    - [update_user_identity_info](#update_user_identity_info)
-    - [update_user_phone_config](#update_user_phone_config)
-    - [update_user_routing_profile](#update_user_routing_profile)
-    - [update_user_security_profiles](#update_user_security_profiles)
-    - [get_paginator](#get_paginator)
-
-<a id="connectclient"></a>
+    Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+    type annotations stubs module [mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
 ## ConnectClient
 
-Type annotations for `boto3.client("connect")`
+Type annotations and code completion for `#!python boto3.client("connect")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_connect.client import ConnectClient
 
@@ -168,3297 +20,4536 @@ def get_connect_client() -> ConnectClient:
     return Session().client("connect")
 ```
 
-Boto3 documentation:
-[Connect.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("connect").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("connect")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ContactFlowNotPublishedException,
+    client.ContactNotFoundException,
+    client.DestinationNotAllowedException,
+    client.DuplicateResourceException,
+    client.IdempotencyException,
+    client.InternalServiceException,
+    client.InvalidContactFlowException,
+    client.InvalidContactFlowModuleException,
+    client.InvalidParameterException,
+    client.InvalidRequestException,
+    client.LimitExceededException,
+    client.OutboundContactNotPermittedException,
+    client.ResourceConflictException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.UserNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_connect.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ContactFlowNotPublishedException`
-- `Exceptions.ContactNotFoundException`
-- `Exceptions.DestinationNotAllowedException`
-- `Exceptions.DuplicateResourceException`
-- `Exceptions.IdempotencyException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidContactFlowException`
-- `Exceptions.InvalidContactFlowModuleException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.OutboundContactNotPermittedException`
-- `Exceptions.ResourceConflictException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.UserNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ConnectClient exceptions.
-
-Type annotations for `boto3.client("connect").exceptions` method.
-
-Boto3 documentation:
-[Connect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_approved\_origin"></a>
-
-### associate_approved_origin
+### associate\_approved\_origin
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").associate_approved_origin`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").associate_approved_origin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_approved_origin)
 
-Boto3 documentation:
-[Connect.Client.associate_approved_origin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_approved_origin)
+```python title="Method definition"
+def associate_approved_origin(
+    self,
+    *,
+    InstanceId: str,
+    Origin: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateApprovedOriginRequestRequestTypeDef](./type_defs.md#associateapprovedoriginrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `Origin`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateApprovedOriginRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Origin": ...,
+}
 
-<a id="associate\_bot"></a>
+parent.associate_approved_origin(**kwargs)
+```
 
-### associate_bot
+1. See [:material-code-braces: AssociateApprovedOriginRequestRequestTypeDef](./type_defs.md#associateapprovedoriginrequestrequesttypedef) 
+
+### associate\_bot
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").associate_bot` method.
+Type annotations and code completion for `#!python boto3.client("connect").associate_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_bot)
 
-Boto3 documentation:
-[Connect.Client.associate_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_bot)
+```python title="Method definition"
+def associate_bot(
+    self,
+    *,
+    InstanceId: str,
+    LexBot: LexBotTypeDef = ...,  # (1)
+    LexV2Bot: LexV2BotTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateBotRequestRequestTypeDef](./type_defs.md#associatebotrequestrequesttypedef).
+1. See [:material-code-braces: LexBotTypeDef](./type_defs.md#lexbottypedef) 
+2. See [:material-code-braces: LexV2BotTypeDef](./type_defs.md#lexv2bottypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
-- `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+```python title="Usage example with kwargs"
+kwargs: AssociateBotRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-<a id="associate\_default\_vocabulary"></a>
+parent.associate_bot(**kwargs)
+```
 
-### associate_default_vocabulary
+1. See [:material-code-braces: AssociateBotRequestRequestTypeDef](./type_defs.md#associatebotrequestrequesttypedef) 
+
+### associate\_default\_vocabulary
 
 Associates an existing vocabulary as the default.
 
-Type annotations for `boto3.client("connect").associate_default_vocabulary`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").associate_default_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_default_vocabulary)
 
-Boto3 documentation:
-[Connect.Client.associate_default_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_default_vocabulary)
+```python title="Method definition"
+def associate_default_vocabulary(
+    self,
+    *,
+    InstanceId: str,
+    LanguageCode: VocabularyLanguageCodeType,  # (1)
+    VocabularyId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateDefaultVocabularyRequestRequestTypeDef](./type_defs.md#associatedefaultvocabularyrequestrequesttypedef).
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-  *(required)*
-- `VocabularyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateDefaultVocabularyRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "LanguageCode": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_default_vocabulary(**kwargs)
+```
 
-<a id="associate\_instance\_storage\_config"></a>
+1. See [:material-code-braces: AssociateDefaultVocabularyRequestRequestTypeDef](./type_defs.md#associatedefaultvocabularyrequestrequesttypedef) 
 
-### associate_instance_storage_config
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for
-`boto3.client("connect").associate_instance_storage_config` method.
-
-Boto3 documentation:
-[Connect.Client.associate_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_instance_storage_config)
-
-Arguments mapping described in
-[AssociateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#associateinstancestorageconfigrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-  *(required)*
-- `StorageConfig`:
-  [InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)
-  *(required)*
-
-Returns
-[AssociateInstanceStorageConfigResponseTypeDef](./type_defs.md#associateinstancestorageconfigresponsetypedef).
-
-<a id="associate\_lambda\_function"></a>
-
-### associate_lambda_function
+### associate\_instance\_storage\_config
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").associate_lambda_function`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").associate_instance_storage_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_instance_storage_config)
 
-Boto3 documentation:
-[Connect.Client.associate_lambda_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lambda_function)
+```python title="Method definition"
+def associate_instance_storage_config(
+    self,
+    *,
+    InstanceId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+    StorageConfig: InstanceStorageConfigTypeDef,  # (2)
+) -> AssociateInstanceStorageConfigResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[AssociateLambdaFunctionRequestRequestTypeDef](./type_defs.md#associatelambdafunctionrequestrequesttypedef).
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
+2. See [:material-code-braces: InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef) 
+3. See [:material-code-braces: AssociateInstanceStorageConfigResponseTypeDef](./type_defs.md#associateinstancestorageconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `FunctionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateInstanceStorageConfigRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ResourceType": ...,
+    "StorageConfig": ...,
+}
 
-<a id="associate\_lex\_bot"></a>
+parent.associate_instance_storage_config(**kwargs)
+```
 
-### associate_lex_bot
+1. See [:material-code-braces: AssociateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#associateinstancestorageconfigrequestrequesttypedef) 
 
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").associate_lex_bot` method.
-
-Boto3 documentation:
-[Connect.Client.associate_lex_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lex_bot)
-
-Arguments mapping described in
-[AssociateLexBotRequestRequestTypeDef](./type_defs.md#associatelexbotrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef) *(required)*
-
-<a id="associate\_queue\_quick\_connects"></a>
-
-### associate_queue_quick_connects
+### associate\_lambda\_function
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").associate_queue_quick_connects`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").associate_lambda_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lambda_function)
 
-Boto3 documentation:
-[Connect.Client.associate_queue_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_queue_quick_connects)
+```python title="Method definition"
+def associate_lambda_function(
+    self,
+    *,
+    InstanceId: str,
+    FunctionArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateQueueQuickConnectsRequestRequestTypeDef](./type_defs.md#associatequeuequickconnectsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
-- `QuickConnectIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateLambdaFunctionRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "FunctionArn": ...,
+}
 
-<a id="associate\_routing\_profile\_queues"></a>
+parent.associate_lambda_function(**kwargs)
+```
 
-### associate_routing_profile_queues
+1. See [:material-code-braces: AssociateLambdaFunctionRequestRequestTypeDef](./type_defs.md#associatelambdafunctionrequestrequesttypedef) 
+
+### associate\_lex\_bot
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").associate_lex_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_lex_bot)
+
+```python title="Method definition"
+def associate_lex_bot(
+    self,
+    *,
+    InstanceId: str,
+    LexBot: LexBotTypeDef,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: LexBotTypeDef](./type_defs.md#lexbottypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateLexBotRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "LexBot": ...,
+}
+
+parent.associate_lex_bot(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateLexBotRequestRequestTypeDef](./type_defs.md#associatelexbotrequestrequesttypedef) 
+
+### associate\_queue\_quick\_connects
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").associate_queue_quick_connects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_queue_quick_connects)
+
+```python title="Method definition"
+def associate_queue_quick_connects(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+    QuickConnectIds: Sequence[str],
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: AssociateQueueQuickConnectsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+    "QuickConnectIds": ...,
+}
+
+parent.associate_queue_quick_connects(**kwargs)
+```
+
+1. See [:material-code-braces: AssociateQueueQuickConnectsRequestRequestTypeDef](./type_defs.md#associatequeuequickconnectsrequestrequesttypedef) 
+
+### associate\_routing\_profile\_queues
 
 Associates a set of queues with a routing profile.
 
-Type annotations for `boto3.client("connect").associate_routing_profile_queues`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").associate_routing_profile_queues` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_routing_profile_queues)
 
-Boto3 documentation:
-[Connect.Client.associate_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_routing_profile_queues)
+```python title="Method definition"
+def associate_routing_profile_queues(
+    self,
+    *,
+    InstanceId: str,
+    RoutingProfileId: str,
+    QueueConfigs: Sequence[RoutingProfileQueueConfigTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#associateroutingprofilequeuesrequestrequesttypedef).
+1. See [:material-code-braces: RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `RoutingProfileId`: `str` *(required)*
-- `QueueConfigs`:
-  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateRoutingProfileQueuesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RoutingProfileId": ...,
+    "QueueConfigs": ...,
+}
 
-<a id="associate\_security\_key"></a>
+parent.associate_routing_profile_queues(**kwargs)
+```
 
-### associate_security_key
+1. See [:material-code-braces: AssociateRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#associateroutingprofilequeuesrequestrequesttypedef) 
+
+### associate\_security\_key
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").associate_security_key` method.
+Type annotations and code completion for `#!python boto3.client("connect").associate_security_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_security_key)
 
-Boto3 documentation:
-[Connect.Client.associate_security_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.associate_security_key)
+```python title="Method definition"
+def associate_security_key(
+    self,
+    *,
+    InstanceId: str,
+    Key: str,
+) -> AssociateSecurityKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateSecurityKeyRequestRequestTypeDef](./type_defs.md#associatesecuritykeyrequestrequesttypedef).
+1. See [:material-code-braces: AssociateSecurityKeyResponseTypeDef](./type_defs.md#associatesecuritykeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `Key`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateSecurityKeyRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Key": ...,
+}
 
-Returns
-[AssociateSecurityKeyResponseTypeDef](./type_defs.md#associatesecuritykeyresponsetypedef).
+parent.associate_security_key(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateSecurityKeyRequestRequestTypeDef](./type_defs.md#associatesecuritykeyrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("connect").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("connect").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.can_paginate)
 
-Boto3 documentation:
-[Connect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_agent\_status"></a>
-
-### create_agent_status
+### create\_agent\_status
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").create_agent_status` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_agent_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_agent_status)
 
-Boto3 documentation:
-[Connect.Client.create_agent_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_agent_status)
+```python title="Method definition"
+def create_agent_status(
+    self,
+    *,
+    InstanceId: str,
+    Name: str,
+    State: AgentStatusStateType,  # (1)
+    Description: str = ...,
+    DisplayOrder: int = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateAgentStatusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAgentStatusRequestRequestTypeDef](./type_defs.md#createagentstatusrequestrequesttypedef).
+1. See [:material-code-brackets: AgentStatusStateType](./literals.md#agentstatusstatetype) 
+2. See [:material-code-braces: CreateAgentStatusResponseTypeDef](./type_defs.md#createagentstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
-  *(required)*
-- `Description`: `str`
-- `DisplayOrder`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAgentStatusRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Name": ...,
+    "State": ...,
+}
 
-Returns
-[CreateAgentStatusResponseTypeDef](./type_defs.md#createagentstatusresponsetypedef).
+parent.create_agent_status(**kwargs)
+```
 
-<a id="create\_contact\_flow"></a>
+1. See [:material-code-braces: CreateAgentStatusRequestRequestTypeDef](./type_defs.md#createagentstatusrequestrequesttypedef) 
 
-### create_contact_flow
+### create\_contact\_flow
 
 Creates a contact flow for the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").create_contact_flow` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_contact_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow)
 
-Boto3 documentation:
-[Connect.Client.create_contact_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow)
+```python title="Method definition"
+def create_contact_flow(
+    self,
+    *,
+    InstanceId: str,
+    Name: str,
+    Type: ContactFlowTypeType,  # (1)
+    Content: str,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateContactFlowResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateContactFlowRequestRequestTypeDef](./type_defs.md#createcontactflowrequestrequesttypedef).
+1. See [:material-code-brackets: ContactFlowTypeType](./literals.md#contactflowtypetype) 
+2. See [:material-code-braces: CreateContactFlowResponseTypeDef](./type_defs.md#createcontactflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Type`: [ContactFlowTypeType](./literals.md#contactflowtypetype) *(required)*
-- `Content`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateContactFlowRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Name": ...,
+    "Type": ...,
+    "Content": ...,
+}
 
-Returns
-[CreateContactFlowResponseTypeDef](./type_defs.md#createcontactflowresponsetypedef).
+parent.create_contact_flow(**kwargs)
+```
 
-<a id="create\_contact\_flow\_module"></a>
+1. See [:material-code-braces: CreateContactFlowRequestRequestTypeDef](./type_defs.md#createcontactflowrequestrequesttypedef) 
 
-### create_contact_flow_module
+### create\_contact\_flow\_module
 
 Creates a contact flow module for the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").create_contact_flow_module`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").create_contact_flow_module` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow_module)
 
-Boto3 documentation:
-[Connect.Client.create_contact_flow_module](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_contact_flow_module)
+```python title="Method definition"
+def create_contact_flow_module(
+    self,
+    *,
+    InstanceId: str,
+    Name: str,
+    Content: str,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+    ClientToken: str = ...,
+) -> CreateContactFlowModuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateContactFlowModuleRequestRequestTypeDef](./type_defs.md#createcontactflowmodulerequestrequesttypedef).
+1. See [:material-code-braces: CreateContactFlowModuleResponseTypeDef](./type_defs.md#createcontactflowmoduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Content`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateContactFlowModuleRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Name": ...,
+    "Content": ...,
+}
 
-Returns
-[CreateContactFlowModuleResponseTypeDef](./type_defs.md#createcontactflowmoduleresponsetypedef).
+parent.create_contact_flow_module(**kwargs)
+```
 
-<a id="create\_hours\_of\_operation"></a>
+1. See [:material-code-braces: CreateContactFlowModuleRequestRequestTypeDef](./type_defs.md#createcontactflowmodulerequestrequesttypedef) 
 
-### create_hours_of_operation
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").create_hours_of_operation`
-method.
-
-Boto3 documentation:
-[Connect.Client.create_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_hours_of_operation)
-
-Arguments mapping described in
-[CreateHoursOfOperationRequestRequestTypeDef](./type_defs.md#createhoursofoperationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `TimeZone`: `str` *(required)*
-- `Config`:
-  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
-  *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-Returns
-[CreateHoursOfOperationResponseTypeDef](./type_defs.md#createhoursofoperationresponsetypedef).
-
-<a id="create\_instance"></a>
-
-### create_instance
+### create\_hours\_of\_operation
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").create_instance` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_hours_of_operation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_hours_of_operation)
 
-Boto3 documentation:
-[Connect.Client.create_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_instance)
+```python title="Method definition"
+def create_hours_of_operation(
+    self,
+    *,
+    InstanceId: str,
+    Name: str,
+    TimeZone: str,
+    Config: Sequence[HoursOfOperationConfigTypeDef],  # (1)
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateHoursOfOperationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateInstanceRequestRequestTypeDef](./type_defs.md#createinstancerequestrequesttypedef).
+1. See [:material-code-braces: HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef) 
+2. See [:material-code-braces: CreateHoursOfOperationResponseTypeDef](./type_defs.md#createhoursofoperationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityManagementType`:
-  [DirectoryTypeType](./literals.md#directorytypetype) *(required)*
-- `InboundCallsEnabled`: `bool` *(required)*
-- `OutboundCallsEnabled`: `bool` *(required)*
-- `ClientToken`: `str`
-- `InstanceAlias`: `str`
-- `DirectoryId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateHoursOfOperationRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Name": ...,
+    "TimeZone": ...,
+    "Config": ...,
+}
 
-Returns
-[CreateInstanceResponseTypeDef](./type_defs.md#createinstanceresponsetypedef).
+parent.create_hours_of_operation(**kwargs)
+```
 
-<a id="create\_integration\_association"></a>
+1. See [:material-code-braces: CreateHoursOfOperationRequestRequestTypeDef](./type_defs.md#createhoursofoperationrequestrequesttypedef) 
 
-### create_integration_association
+### create\_instance
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").create_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_instance)
+
+```python title="Method definition"
+def create_instance(
+    self,
+    *,
+    IdentityManagementType: DirectoryTypeType,  # (1)
+    InboundCallsEnabled: bool,
+    OutboundCallsEnabled: bool,
+    ClientToken: str = ...,
+    InstanceAlias: str = ...,
+    DirectoryId: str = ...,
+) -> CreateInstanceResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: DirectoryTypeType](./literals.md#directorytypetype) 
+2. See [:material-code-braces: CreateInstanceResponseTypeDef](./type_defs.md#createinstanceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateInstanceRequestRequestTypeDef = {  # (1)
+    "IdentityManagementType": ...,
+    "InboundCallsEnabled": ...,
+    "OutboundCallsEnabled": ...,
+}
+
+parent.create_instance(**kwargs)
+```
+
+1. See [:material-code-braces: CreateInstanceRequestRequestTypeDef](./type_defs.md#createinstancerequestrequesttypedef) 
+
+### create\_integration\_association
 
 Creates an Amazon Web Services resource association with an Amazon Connect
 instance.
 
-Type annotations for `boto3.client("connect").create_integration_association`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").create_integration_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_integration_association)
 
-Boto3 documentation:
-[Connect.Client.create_integration_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_integration_association)
+```python title="Method definition"
+def create_integration_association(
+    self,
+    *,
+    InstanceId: str,
+    IntegrationType: IntegrationTypeType,  # (1)
+    IntegrationArn: str,
+    SourceApplicationUrl: str = ...,
+    SourceApplicationName: str = ...,
+    SourceType: SourceTypeType = ...,  # (2)
+    Tags: Mapping[str, str] = ...,
+) -> CreateIntegrationAssociationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateIntegrationAssociationRequestRequestTypeDef](./type_defs.md#createintegrationassociationrequestrequesttypedef).
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+3. See [:material-code-braces: CreateIntegrationAssociationResponseTypeDef](./type_defs.md#createintegrationassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
-  *(required)*
-- `IntegrationArn`: `str` *(required)*
-- `SourceApplicationUrl`: `str`
-- `SourceApplicationName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateIntegrationAssociationRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "IntegrationType": ...,
+    "IntegrationArn": ...,
+}
 
-Returns
-[CreateIntegrationAssociationResponseTypeDef](./type_defs.md#createintegrationassociationresponsetypedef).
+parent.create_integration_association(**kwargs)
+```
 
-<a id="create\_queue"></a>
+1. See [:material-code-braces: CreateIntegrationAssociationRequestRequestTypeDef](./type_defs.md#createintegrationassociationrequestrequesttypedef) 
 
-### create_queue
+### create\_queue
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").create_queue` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_queue)
 
-Boto3 documentation:
-[Connect.Client.create_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_queue)
+```python title="Method definition"
+def create_queue(
+    self,
+    *,
+    InstanceId: str,
+    Name: str,
+    HoursOfOperationId: str,
+    Description: str = ...,
+    OutboundCallerConfig: OutboundCallerConfigTypeDef = ...,  # (1)
+    MaxContacts: int = ...,
+    QuickConnectIds: Sequence[str] = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateQueueResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateQueueRequestRequestTypeDef](./type_defs.md#createqueuerequestrequesttypedef).
+1. See [:material-code-braces: OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef) 
+2. See [:material-code-braces: CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `HoursOfOperationId`: `str` *(required)*
-- `Description`: `str`
-- `OutboundCallerConfig`:
-  [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
-- `MaxContacts`: `int`
-- `QuickConnectIds`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateQueueRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Name": ...,
+    "HoursOfOperationId": ...,
+}
 
-Returns
-[CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
+parent.create_queue(**kwargs)
+```
 
-<a id="create\_quick\_connect"></a>
+1. See [:material-code-braces: CreateQueueRequestRequestTypeDef](./type_defs.md#createqueuerequestrequesttypedef) 
 
-### create_quick_connect
+### create\_quick\_connect
 
 Creates a quick connect for the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").create_quick_connect` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_quick_connect` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_quick_connect)
 
-Boto3 documentation:
-[Connect.Client.create_quick_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_quick_connect)
+```python title="Method definition"
+def create_quick_connect(
+    self,
+    *,
+    InstanceId: str,
+    Name: str,
+    QuickConnectConfig: QuickConnectConfigTypeDef,  # (1)
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateQuickConnectResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateQuickConnectRequestRequestTypeDef](./type_defs.md#createquickconnectrequestrequesttypedef).
+1. See [:material-code-braces: QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef) 
+2. See [:material-code-braces: CreateQuickConnectResponseTypeDef](./type_defs.md#createquickconnectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `QuickConnectConfig`:
-  [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
-  *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateQuickConnectRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Name": ...,
+    "QuickConnectConfig": ...,
+}
 
-Returns
-[CreateQuickConnectResponseTypeDef](./type_defs.md#createquickconnectresponsetypedef).
+parent.create_quick_connect(**kwargs)
+```
 
-<a id="create\_routing\_profile"></a>
+1. See [:material-code-braces: CreateQuickConnectRequestRequestTypeDef](./type_defs.md#createquickconnectrequestrequesttypedef) 
 
-### create_routing_profile
+### create\_routing\_profile
 
 Creates a new routing profile.
 
-Type annotations for `boto3.client("connect").create_routing_profile` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_routing_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_routing_profile)
 
-Boto3 documentation:
-[Connect.Client.create_routing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_routing_profile)
+```python title="Method definition"
+def create_routing_profile(
+    self,
+    *,
+    InstanceId: str,
+    Name: str,
+    Description: str,
+    DefaultOutboundQueueId: str,
+    MediaConcurrencies: Sequence[MediaConcurrencyTypeDef],  # (1)
+    QueueConfigs: Sequence[RoutingProfileQueueConfigTypeDef] = ...,  # (2)
+    Tags: Mapping[str, str] = ...,
+) -> CreateRoutingProfileResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateRoutingProfileRequestRequestTypeDef](./type_defs.md#createroutingprofilerequestrequesttypedef).
+1. See [:material-code-braces: MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef) 
+2. See [:material-code-braces: RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef) 
+3. See [:material-code-braces: CreateRoutingProfileResponseTypeDef](./type_defs.md#createroutingprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `DefaultOutboundQueueId`: `str` *(required)*
-- `MediaConcurrencies`:
-  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
-  *(required)*
-- `QueueConfigs`:
-  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRoutingProfileRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Name": ...,
+    "Description": ...,
+    "DefaultOutboundQueueId": ...,
+    "MediaConcurrencies": ...,
+}
 
-Returns
-[CreateRoutingProfileResponseTypeDef](./type_defs.md#createroutingprofileresponsetypedef).
+parent.create_routing_profile(**kwargs)
+```
 
-<a id="create\_security\_profile"></a>
+1. See [:material-code-braces: CreateRoutingProfileRequestRequestTypeDef](./type_defs.md#createroutingprofilerequestrequesttypedef) 
 
-### create_security_profile
+### create\_security\_profile
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").create_security_profile` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_security_profile)
 
-Boto3 documentation:
-[Connect.Client.create_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_security_profile)
+```python title="Method definition"
+def create_security_profile(
+    self,
+    *,
+    SecurityProfileName: str,
+    InstanceId: str,
+    Description: str = ...,
+    Permissions: Sequence[str] = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateSecurityProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSecurityProfileRequestRequestTypeDef](./type_defs.md#createsecurityprofilerequestrequesttypedef).
+1. See [:material-code-braces: CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecurityProfileName`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `Description`: `str`
-- `Permissions`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSecurityProfileRequestRequestTypeDef = {  # (1)
+    "SecurityProfileName": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef).
+parent.create_security_profile(**kwargs)
+```
 
-<a id="create\_use\_case"></a>
+1. See [:material-code-braces: CreateSecurityProfileRequestRequestTypeDef](./type_defs.md#createsecurityprofilerequestrequesttypedef) 
 
-### create_use_case
+### create\_use\_case
 
 Creates a use case for an integration association.
 
-Type annotations for `boto3.client("connect").create_use_case` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_use_case` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_use_case)
 
-Boto3 documentation:
-[Connect.Client.create_use_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_use_case)
+```python title="Method definition"
+def create_use_case(
+    self,
+    *,
+    InstanceId: str,
+    IntegrationAssociationId: str,
+    UseCaseType: UseCaseTypeType,  # (1)
+    Tags: Mapping[str, str] = ...,
+) -> CreateUseCaseResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateUseCaseRequestRequestTypeDef](./type_defs.md#createusecaserequestrequesttypedef).
+1. See [:material-code-brackets: UseCaseTypeType](./literals.md#usecasetypetype) 
+2. See [:material-code-braces: CreateUseCaseResponseTypeDef](./type_defs.md#createusecaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `IntegrationAssociationId`: `str` *(required)*
-- `UseCaseType`: [UseCaseTypeType](./literals.md#usecasetypetype) *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateUseCaseRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "IntegrationAssociationId": ...,
+    "UseCaseType": ...,
+}
 
-Returns
-[CreateUseCaseResponseTypeDef](./type_defs.md#createusecaseresponsetypedef).
+parent.create_use_case(**kwargs)
+```
 
-<a id="create\_user"></a>
+1. See [:material-code-braces: CreateUseCaseRequestRequestTypeDef](./type_defs.md#createusecaserequestrequesttypedef) 
 
-### create_user
+### create\_user
 
 Creates a user account for the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").create_user` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user)
 
-Boto3 documentation:
-[Connect.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    Username: str,
+    PhoneConfig: UserPhoneConfigTypeDef,  # (1)
+    SecurityProfileIds: Sequence[str],
+    RoutingProfileId: str,
+    InstanceId: str,
+    Password: str = ...,
+    IdentityInfo: UserIdentityInfoTypeDef = ...,  # (2)
+    DirectoryUserId: str = ...,
+    HierarchyGroupId: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateUserResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-braces: UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) 
+2. See [:material-code-braces: UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef) 
+3. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Username`: `str` *(required)*
-- `PhoneConfig`:
-  [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) *(required)*
-- `SecurityProfileIds`: `Sequence`\[`str`\] *(required)*
-- `RoutingProfileId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `Password`: `str`
-- `IdentityInfo`:
-  [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
-- `DirectoryUserId`: `str`
-- `HierarchyGroupId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "Username": ...,
+    "PhoneConfig": ...,
+    "SecurityProfileIds": ...,
+    "RoutingProfileId": ...,
+    "InstanceId": ...,
+}
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+parent.create_user(**kwargs)
+```
 
-<a id="create\_user\_hierarchy\_group"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### create_user_hierarchy_group
+### create\_user\_hierarchy\_group
 
 Creates a new user hierarchy group.
 
-Type annotations for `boto3.client("connect").create_user_hierarchy_group`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").create_user_hierarchy_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user_hierarchy_group)
 
-Boto3 documentation:
-[Connect.Client.create_user_hierarchy_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_user_hierarchy_group)
+```python title="Method definition"
+def create_user_hierarchy_group(
+    self,
+    *,
+    Name: str,
+    InstanceId: str,
+    ParentGroupId: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateUserHierarchyGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserHierarchyGroupRequestRequestTypeDef](./type_defs.md#createuserhierarchygrouprequestrequesttypedef).
+1. See [:material-code-braces: CreateUserHierarchyGroupResponseTypeDef](./type_defs.md#createuserhierarchygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `ParentGroupId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateUserHierarchyGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[CreateUserHierarchyGroupResponseTypeDef](./type_defs.md#createuserhierarchygroupresponsetypedef).
+parent.create_user_hierarchy_group(**kwargs)
+```
 
-<a id="create\_vocabulary"></a>
+1. See [:material-code-braces: CreateUserHierarchyGroupRequestRequestTypeDef](./type_defs.md#createuserhierarchygrouprequestrequesttypedef) 
 
-### create_vocabulary
+### create\_vocabulary
 
 Creates a custom vocabulary associated with your Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").create_vocabulary` method.
+Type annotations and code completion for `#!python boto3.client("connect").create_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_vocabulary)
 
-Boto3 documentation:
-[Connect.Client.create_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.create_vocabulary)
+```python title="Method definition"
+def create_vocabulary(
+    self,
+    *,
+    InstanceId: str,
+    VocabularyName: str,
+    LanguageCode: VocabularyLanguageCodeType,  # (1)
+    Content: str,
+    ClientToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateVocabularyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateVocabularyRequestRequestTypeDef](./type_defs.md#createvocabularyrequestrequesttypedef).
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+2. See [:material-code-braces: CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `VocabularyName`: `str` *(required)*
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-  *(required)*
-- `Content`: `str` *(required)*
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateVocabularyRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "VocabularyName": ...,
+    "LanguageCode": ...,
+    "Content": ...,
+}
 
-Returns
-[CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef).
+parent.create_vocabulary(**kwargs)
+```
 
-<a id="delete\_contact\_flow"></a>
+1. See [:material-code-braces: CreateVocabularyRequestRequestTypeDef](./type_defs.md#createvocabularyrequestrequesttypedef) 
 
-### delete_contact_flow
+### delete\_contact\_flow
 
 Deletes a contact flow for the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").delete_contact_flow` method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_contact_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_contact_flow)
 
-Boto3 documentation:
-[Connect.Client.delete_contact_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_contact_flow)
+```python title="Method definition"
+def delete_contact_flow(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteContactFlowRequestRequestTypeDef](./type_defs.md#deletecontactflowrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteContactFlowRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowId": ...,
+}
 
-<a id="delete\_contact\_flow\_module"></a>
+parent.delete_contact_flow(**kwargs)
+```
 
-### delete_contact_flow_module
+1. See [:material-code-braces: DeleteContactFlowRequestRequestTypeDef](./type_defs.md#deletecontactflowrequestrequesttypedef) 
+
+### delete\_contact\_flow\_module
 
 Deletes the specified contact flow module.
 
-Type annotations for `boto3.client("connect").delete_contact_flow_module`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_contact_flow_module` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_contact_flow_module)
 
-Boto3 documentation:
-[Connect.Client.delete_contact_flow_module](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_contact_flow_module)
+```python title="Method definition"
+def delete_contact_flow_module(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowModuleId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteContactFlowModuleRequestRequestTypeDef](./type_defs.md#deletecontactflowmodulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowModuleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteContactFlowModuleRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowModuleId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_contact_flow_module(**kwargs)
+```
 
-<a id="delete\_hours\_of\_operation"></a>
+1. See [:material-code-braces: DeleteContactFlowModuleRequestRequestTypeDef](./type_defs.md#deletecontactflowmodulerequestrequesttypedef) 
 
-### delete_hours_of_operation
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").delete_hours_of_operation`
-method.
-
-Boto3 documentation:
-[Connect.Client.delete_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_hours_of_operation)
-
-Arguments mapping described in
-[DeleteHoursOfOperationRequestRequestTypeDef](./type_defs.md#deletehoursofoperationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `HoursOfOperationId`: `str` *(required)*
-
-<a id="delete\_instance"></a>
-
-### delete_instance
+### delete\_hours\_of\_operation
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").delete_instance` method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_hours_of_operation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_hours_of_operation)
 
-Boto3 documentation:
-[Connect.Client.delete_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_instance)
+```python title="Method definition"
+def delete_hours_of_operation(
+    self,
+    *,
+    InstanceId: str,
+    HoursOfOperationId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteInstanceRequestRequestTypeDef](./type_defs.md#deleteinstancerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteHoursOfOperationRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "HoursOfOperationId": ...,
+}
 
-<a id="delete\_integration\_association"></a>
+parent.delete_hours_of_operation(**kwargs)
+```
 
-### delete_integration_association
+1. See [:material-code-braces: DeleteHoursOfOperationRequestRequestTypeDef](./type_defs.md#deletehoursofoperationrequestrequesttypedef) 
+
+### delete\_instance
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").delete_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_instance)
+
+```python title="Method definition"
+def delete_instance(
+    self,
+    *,
+    InstanceId: str,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteInstanceRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.delete_instance(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteInstanceRequestRequestTypeDef](./type_defs.md#deleteinstancerequestrequesttypedef) 
+
+### delete\_integration\_association
 
 Deletes an Amazon Web Services resource association from an Amazon Connect
 instance.
 
-Type annotations for `boto3.client("connect").delete_integration_association`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_integration_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_integration_association)
 
-Boto3 documentation:
-[Connect.Client.delete_integration_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_integration_association)
+```python title="Method definition"
+def delete_integration_association(
+    self,
+    *,
+    InstanceId: str,
+    IntegrationAssociationId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIntegrationAssociationRequestRequestTypeDef](./type_defs.md#deleteintegrationassociationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `IntegrationAssociationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIntegrationAssociationRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "IntegrationAssociationId": ...,
+}
 
-<a id="delete\_quick\_connect"></a>
+parent.delete_integration_association(**kwargs)
+```
 
-### delete_quick_connect
+1. See [:material-code-braces: DeleteIntegrationAssociationRequestRequestTypeDef](./type_defs.md#deleteintegrationassociationrequestrequesttypedef) 
+
+### delete\_quick\_connect
 
 Deletes a quick connect.
 
-Type annotations for `boto3.client("connect").delete_quick_connect` method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_quick_connect` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_quick_connect)
 
-Boto3 documentation:
-[Connect.Client.delete_quick_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_quick_connect)
+```python title="Method definition"
+def delete_quick_connect(
+    self,
+    *,
+    InstanceId: str,
+    QuickConnectId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteQuickConnectRequestRequestTypeDef](./type_defs.md#deletequickconnectrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QuickConnectId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteQuickConnectRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QuickConnectId": ...,
+}
 
-<a id="delete\_security\_profile"></a>
+parent.delete_quick_connect(**kwargs)
+```
 
-### delete_security_profile
+1. See [:material-code-braces: DeleteQuickConnectRequestRequestTypeDef](./type_defs.md#deletequickconnectrequestrequesttypedef) 
+
+### delete\_security\_profile
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").delete_security_profile` method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_security_profile)
 
-Boto3 documentation:
-[Connect.Client.delete_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_security_profile)
+```python title="Method definition"
+def delete_security_profile(
+    self,
+    *,
+    InstanceId: str,
+    SecurityProfileId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSecurityProfileRequestRequestTypeDef](./type_defs.md#deletesecurityprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `SecurityProfileId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSecurityProfileRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "SecurityProfileId": ...,
+}
 
-<a id="delete\_use\_case"></a>
+parent.delete_security_profile(**kwargs)
+```
 
-### delete_use_case
+1. See [:material-code-braces: DeleteSecurityProfileRequestRequestTypeDef](./type_defs.md#deletesecurityprofilerequestrequesttypedef) 
+
+### delete\_use\_case
 
 Deletes a use case from an integration association.
 
-Type annotations for `boto3.client("connect").delete_use_case` method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_use_case` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_use_case)
 
-Boto3 documentation:
-[Connect.Client.delete_use_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_use_case)
+```python title="Method definition"
+def delete_use_case(
+    self,
+    *,
+    InstanceId: str,
+    IntegrationAssociationId: str,
+    UseCaseId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUseCaseRequestRequestTypeDef](./type_defs.md#deleteusecaserequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `IntegrationAssociationId`: `str` *(required)*
-- `UseCaseId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUseCaseRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "IntegrationAssociationId": ...,
+    "UseCaseId": ...,
+}
 
-<a id="delete\_user"></a>
+parent.delete_use_case(**kwargs)
+```
 
-### delete_user
+1. See [:material-code-braces: DeleteUseCaseRequestRequestTypeDef](./type_defs.md#deleteusecaserequestrequesttypedef) 
+
+### delete\_user
 
 Deletes a user account from the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user)
 
-Boto3 documentation:
-[Connect.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    InstanceId: str,
+    UserId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "UserId": ...,
+}
 
-<a id="delete\_user\_hierarchy\_group"></a>
+parent.delete_user(**kwargs)
+```
 
-### delete_user_hierarchy_group
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
+
+### delete\_user\_hierarchy\_group
 
 Deletes an existing user hierarchy group.
 
-Type annotations for `boto3.client("connect").delete_user_hierarchy_group`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_user_hierarchy_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user_hierarchy_group)
 
-Boto3 documentation:
-[Connect.Client.delete_user_hierarchy_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_user_hierarchy_group)
+```python title="Method definition"
+def delete_user_hierarchy_group(
+    self,
+    *,
+    HierarchyGroupId: str,
+    InstanceId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserHierarchyGroupRequestRequestTypeDef](./type_defs.md#deleteuserhierarchygrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `HierarchyGroupId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserHierarchyGroupRequestRequestTypeDef = {  # (1)
+    "HierarchyGroupId": ...,
+    "InstanceId": ...,
+}
 
-<a id="delete\_vocabulary"></a>
+parent.delete_user_hierarchy_group(**kwargs)
+```
 
-### delete_vocabulary
+1. See [:material-code-braces: DeleteUserHierarchyGroupRequestRequestTypeDef](./type_defs.md#deleteuserhierarchygrouprequestrequesttypedef) 
+
+### delete\_vocabulary
 
 Deletes the vocabulary that has the given identifier.
 
-Type annotations for `boto3.client("connect").delete_vocabulary` method.
+Type annotations and code completion for `#!python boto3.client("connect").delete_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_vocabulary)
 
-Boto3 documentation:
-[Connect.Client.delete_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.delete_vocabulary)
+```python title="Method definition"
+def delete_vocabulary(
+    self,
+    *,
+    InstanceId: str,
+    VocabularyId: str,
+) -> DeleteVocabularyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVocabularyRequestRequestTypeDef](./type_defs.md#deletevocabularyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteVocabularyResponseTypeDef](./type_defs.md#deletevocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `VocabularyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVocabularyRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "VocabularyId": ...,
+}
 
-Returns
-[DeleteVocabularyResponseTypeDef](./type_defs.md#deletevocabularyresponsetypedef).
+parent.delete_vocabulary(**kwargs)
+```
 
-<a id="describe\_agent\_status"></a>
+1. See [:material-code-braces: DeleteVocabularyRequestRequestTypeDef](./type_defs.md#deletevocabularyrequestrequesttypedef) 
 
-### describe_agent_status
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").describe_agent_status` method.
-
-Boto3 documentation:
-[Connect.Client.describe_agent_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_agent_status)
-
-Arguments mapping described in
-[DescribeAgentStatusRequestRequestTypeDef](./type_defs.md#describeagentstatusrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `AgentStatusId`: `str` *(required)*
-
-Returns
-[DescribeAgentStatusResponseTypeDef](./type_defs.md#describeagentstatusresponsetypedef).
-
-<a id="describe\_contact"></a>
-
-### describe_contact
+### describe\_agent\_status
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").describe_contact` method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_agent_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_agent_status)
 
-Boto3 documentation:
-[Connect.Client.describe_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact)
+```python title="Method definition"
+def describe_agent_status(
+    self,
+    *,
+    InstanceId: str,
+    AgentStatusId: str,
+) -> DescribeAgentStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeContactRequestRequestTypeDef](./type_defs.md#describecontactrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAgentStatusResponseTypeDef](./type_defs.md#describeagentstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAgentStatusRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "AgentStatusId": ...,
+}
 
-Returns
-[DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef).
+parent.describe_agent_status(**kwargs)
+```
 
-<a id="describe\_contact\_flow"></a>
+1. See [:material-code-braces: DescribeAgentStatusRequestRequestTypeDef](./type_defs.md#describeagentstatusrequestrequesttypedef) 
 
-### describe_contact_flow
+### describe\_contact
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").describe_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact)
+
+```python title="Method definition"
+def describe_contact(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+) -> DescribeContactResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeContactRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+}
+
+parent.describe_contact(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeContactRequestRequestTypeDef](./type_defs.md#describecontactrequestrequesttypedef) 
+
+### describe\_contact\_flow
 
 Describes the specified contact flow.
 
-Type annotations for `boto3.client("connect").describe_contact_flow` method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_contact_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow)
 
-Boto3 documentation:
-[Connect.Client.describe_contact_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow)
+```python title="Method definition"
+def describe_contact_flow(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowId: str,
+) -> DescribeContactFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeContactFlowRequestRequestTypeDef](./type_defs.md#describecontactflowrequestrequesttypedef).
+1. See [:material-code-braces: DescribeContactFlowResponseTypeDef](./type_defs.md#describecontactflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeContactFlowRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowId": ...,
+}
 
-Returns
-[DescribeContactFlowResponseTypeDef](./type_defs.md#describecontactflowresponsetypedef).
+parent.describe_contact_flow(**kwargs)
+```
 
-<a id="describe\_contact\_flow\_module"></a>
+1. See [:material-code-braces: DescribeContactFlowRequestRequestTypeDef](./type_defs.md#describecontactflowrequestrequesttypedef) 
 
-### describe_contact_flow_module
+### describe\_contact\_flow\_module
 
 Describes the specified contact flow module.
 
-Type annotations for `boto3.client("connect").describe_contact_flow_module`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_contact_flow_module` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow_module)
 
-Boto3 documentation:
-[Connect.Client.describe_contact_flow_module](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_contact_flow_module)
+```python title="Method definition"
+def describe_contact_flow_module(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowModuleId: str,
+) -> DescribeContactFlowModuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeContactFlowModuleRequestRequestTypeDef](./type_defs.md#describecontactflowmodulerequestrequesttypedef).
+1. See [:material-code-braces: DescribeContactFlowModuleResponseTypeDef](./type_defs.md#describecontactflowmoduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowModuleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeContactFlowModuleRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowModuleId": ...,
+}
 
-Returns
-[DescribeContactFlowModuleResponseTypeDef](./type_defs.md#describecontactflowmoduleresponsetypedef).
+parent.describe_contact_flow_module(**kwargs)
+```
 
-<a id="describe\_hours\_of\_operation"></a>
+1. See [:material-code-braces: DescribeContactFlowModuleRequestRequestTypeDef](./type_defs.md#describecontactflowmodulerequestrequesttypedef) 
 
-### describe_hours_of_operation
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").describe_hours_of_operation`
-method.
-
-Boto3 documentation:
-[Connect.Client.describe_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_hours_of_operation)
-
-Arguments mapping described in
-[DescribeHoursOfOperationRequestRequestTypeDef](./type_defs.md#describehoursofoperationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `HoursOfOperationId`: `str` *(required)*
-
-Returns
-[DescribeHoursOfOperationResponseTypeDef](./type_defs.md#describehoursofoperationresponsetypedef).
-
-<a id="describe\_instance"></a>
-
-### describe_instance
+### describe\_hours\_of\_operation
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").describe_instance` method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_hours_of_operation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_hours_of_operation)
 
-Boto3 documentation:
-[Connect.Client.describe_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance)
+```python title="Method definition"
+def describe_hours_of_operation(
+    self,
+    *,
+    InstanceId: str,
+    HoursOfOperationId: str,
+) -> DescribeHoursOfOperationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInstanceRequestRequestTypeDef](./type_defs.md#describeinstancerequestrequesttypedef).
+1. See [:material-code-braces: DescribeHoursOfOperationResponseTypeDef](./type_defs.md#describehoursofoperationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeHoursOfOperationRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "HoursOfOperationId": ...,
+}
 
-Returns
-[DescribeInstanceResponseTypeDef](./type_defs.md#describeinstanceresponsetypedef).
+parent.describe_hours_of_operation(**kwargs)
+```
 
-<a id="describe\_instance\_attribute"></a>
+1. See [:material-code-braces: DescribeHoursOfOperationRequestRequestTypeDef](./type_defs.md#describehoursofoperationrequestrequesttypedef) 
 
-### describe_instance_attribute
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").describe_instance_attribute`
-method.
-
-Boto3 documentation:
-[Connect.Client.describe_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_attribute)
-
-Arguments mapping described in
-[DescribeInstanceAttributeRequestRequestTypeDef](./type_defs.md#describeinstanceattributerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `AttributeType`:
-  [InstanceAttributeTypeType](./literals.md#instanceattributetypetype)
-  *(required)*
-
-Returns
-[DescribeInstanceAttributeResponseTypeDef](./type_defs.md#describeinstanceattributeresponsetypedef).
-
-<a id="describe\_instance\_storage\_config"></a>
-
-### describe_instance_storage_config
+### describe\_instance
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").describe_instance_storage_config`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance)
 
-Boto3 documentation:
-[Connect.Client.describe_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_storage_config)
+```python title="Method definition"
+def describe_instance(
+    self,
+    *,
+    InstanceId: str,
+) -> DescribeInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#describeinstancestorageconfigrequestrequesttypedef).
+1. See [:material-code-braces: DescribeInstanceResponseTypeDef](./type_defs.md#describeinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `AssociationId`: `str` *(required)*
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[DescribeInstanceStorageConfigResponseTypeDef](./type_defs.md#describeinstancestorageconfigresponsetypedef).
+parent.describe_instance(**kwargs)
+```
 
-<a id="describe\_queue"></a>
+1. See [:material-code-braces: DescribeInstanceRequestRequestTypeDef](./type_defs.md#describeinstancerequestrequesttypedef) 
 
-### describe_queue
+### describe\_instance\_attribute
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").describe_queue` method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_instance_attribute` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_attribute)
 
-Boto3 documentation:
-[Connect.Client.describe_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_queue)
+```python title="Method definition"
+def describe_instance_attribute(
+    self,
+    *,
+    InstanceId: str,
+    AttributeType: InstanceAttributeTypeType,  # (1)
+) -> DescribeInstanceAttributeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeQueueRequestRequestTypeDef](./type_defs.md#describequeuerequestrequesttypedef).
+1. See [:material-code-brackets: InstanceAttributeTypeType](./literals.md#instanceattributetypetype) 
+2. See [:material-code-braces: DescribeInstanceAttributeResponseTypeDef](./type_defs.md#describeinstanceattributeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceAttributeRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "AttributeType": ...,
+}
 
-Returns
-[DescribeQueueResponseTypeDef](./type_defs.md#describequeueresponsetypedef).
+parent.describe_instance_attribute(**kwargs)
+```
 
-<a id="describe\_quick\_connect"></a>
+1. See [:material-code-braces: DescribeInstanceAttributeRequestRequestTypeDef](./type_defs.md#describeinstanceattributerequestrequesttypedef) 
 
-### describe_quick_connect
+### describe\_instance\_storage\_config
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").describe_instance_storage_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_instance_storage_config)
+
+```python title="Method definition"
+def describe_instance_storage_config(
+    self,
+    *,
+    InstanceId: str,
+    AssociationId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+) -> DescribeInstanceStorageConfigResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
+2. See [:material-code-braces: DescribeInstanceStorageConfigResponseTypeDef](./type_defs.md#describeinstancestorageconfigresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceStorageConfigRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "AssociationId": ...,
+    "ResourceType": ...,
+}
+
+parent.describe_instance_storage_config(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#describeinstancestorageconfigrequestrequesttypedef) 
+
+### describe\_queue
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").describe_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_queue)
+
+```python title="Method definition"
+def describe_queue(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+) -> DescribeQueueResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeQueueResponseTypeDef](./type_defs.md#describequeueresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeQueueRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+}
+
+parent.describe_queue(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeQueueRequestRequestTypeDef](./type_defs.md#describequeuerequestrequesttypedef) 
+
+### describe\_quick\_connect
 
 Describes the quick connect.
 
-Type annotations for `boto3.client("connect").describe_quick_connect` method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_quick_connect` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_quick_connect)
 
-Boto3 documentation:
-[Connect.Client.describe_quick_connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_quick_connect)
+```python title="Method definition"
+def describe_quick_connect(
+    self,
+    *,
+    InstanceId: str,
+    QuickConnectId: str,
+) -> DescribeQuickConnectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeQuickConnectRequestRequestTypeDef](./type_defs.md#describequickconnectrequestrequesttypedef).
+1. See [:material-code-braces: DescribeQuickConnectResponseTypeDef](./type_defs.md#describequickconnectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QuickConnectId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeQuickConnectRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QuickConnectId": ...,
+}
 
-Returns
-[DescribeQuickConnectResponseTypeDef](./type_defs.md#describequickconnectresponsetypedef).
+parent.describe_quick_connect(**kwargs)
+```
 
-<a id="describe\_routing\_profile"></a>
+1. See [:material-code-braces: DescribeQuickConnectRequestRequestTypeDef](./type_defs.md#describequickconnectrequestrequesttypedef) 
 
-### describe_routing_profile
+### describe\_routing\_profile
 
 Describes the specified routing profile.
 
-Type annotations for `boto3.client("connect").describe_routing_profile` method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_routing_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_routing_profile)
 
-Boto3 documentation:
-[Connect.Client.describe_routing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_routing_profile)
+```python title="Method definition"
+def describe_routing_profile(
+    self,
+    *,
+    InstanceId: str,
+    RoutingProfileId: str,
+) -> DescribeRoutingProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRoutingProfileRequestRequestTypeDef](./type_defs.md#describeroutingprofilerequestrequesttypedef).
+1. See [:material-code-braces: DescribeRoutingProfileResponseTypeDef](./type_defs.md#describeroutingprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `RoutingProfileId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRoutingProfileRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RoutingProfileId": ...,
+}
 
-Returns
-[DescribeRoutingProfileResponseTypeDef](./type_defs.md#describeroutingprofileresponsetypedef).
+parent.describe_routing_profile(**kwargs)
+```
 
-<a id="describe\_security\_profile"></a>
+1. See [:material-code-braces: DescribeRoutingProfileRequestRequestTypeDef](./type_defs.md#describeroutingprofilerequestrequesttypedef) 
 
-### describe_security_profile
+### describe\_security\_profile
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").describe_security_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_security_profile)
 
-Boto3 documentation:
-[Connect.Client.describe_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_security_profile)
+```python title="Method definition"
+def describe_security_profile(
+    self,
+    *,
+    SecurityProfileId: str,
+    InstanceId: str,
+) -> DescribeSecurityProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSecurityProfileRequestRequestTypeDef](./type_defs.md#describesecurityprofilerequestrequesttypedef).
+1. See [:material-code-braces: DescribeSecurityProfileResponseTypeDef](./type_defs.md#describesecurityprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecurityProfileId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSecurityProfileRequestRequestTypeDef = {  # (1)
+    "SecurityProfileId": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[DescribeSecurityProfileResponseTypeDef](./type_defs.md#describesecurityprofileresponsetypedef).
+parent.describe_security_profile(**kwargs)
+```
 
-<a id="describe\_user"></a>
+1. See [:material-code-braces: DescribeSecurityProfileRequestRequestTypeDef](./type_defs.md#describesecurityprofilerequestrequesttypedef) 
 
-### describe_user
+### describe\_user
 
 Describes the specified user account.
 
-Type annotations for `boto3.client("connect").describe_user` method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user)
 
-Boto3 documentation:
-[Connect.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user)
+```python title="Method definition"
+def describe_user(
+    self,
+    *,
+    UserId: str,
+    InstanceId: str,
+) -> DescribeUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+parent.describe_user(**kwargs)
+```
 
-<a id="describe\_user\_hierarchy\_group"></a>
+1. See [:material-code-braces: DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef) 
 
-### describe_user_hierarchy_group
+### describe\_user\_hierarchy\_group
 
 Describes the specified hierarchy group.
 
-Type annotations for `boto3.client("connect").describe_user_hierarchy_group`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_user_hierarchy_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_group)
 
-Boto3 documentation:
-[Connect.Client.describe_user_hierarchy_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_group)
+```python title="Method definition"
+def describe_user_hierarchy_group(
+    self,
+    *,
+    HierarchyGroupId: str,
+    InstanceId: str,
+) -> DescribeUserHierarchyGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserHierarchyGroupRequestRequestTypeDef](./type_defs.md#describeuserhierarchygrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserHierarchyGroupResponseTypeDef](./type_defs.md#describeuserhierarchygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HierarchyGroupId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserHierarchyGroupRequestRequestTypeDef = {  # (1)
+    "HierarchyGroupId": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[DescribeUserHierarchyGroupResponseTypeDef](./type_defs.md#describeuserhierarchygroupresponsetypedef).
+parent.describe_user_hierarchy_group(**kwargs)
+```
 
-<a id="describe\_user\_hierarchy\_structure"></a>
+1. See [:material-code-braces: DescribeUserHierarchyGroupRequestRequestTypeDef](./type_defs.md#describeuserhierarchygrouprequestrequesttypedef) 
 
-### describe_user_hierarchy_structure
+### describe\_user\_hierarchy\_structure
 
 Describes the hierarchy structure of the specified Amazon Connect instance.
 
-Type annotations for
-`boto3.client("connect").describe_user_hierarchy_structure` method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_user_hierarchy_structure` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_structure)
 
-Boto3 documentation:
-[Connect.Client.describe_user_hierarchy_structure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_user_hierarchy_structure)
+```python title="Method definition"
+def describe_user_hierarchy_structure(
+    self,
+    *,
+    InstanceId: str,
+) -> DescribeUserHierarchyStructureResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserHierarchyStructureRequestRequestTypeDef](./type_defs.md#describeuserhierarchystructurerequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserHierarchyStructureResponseTypeDef](./type_defs.md#describeuserhierarchystructureresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserHierarchyStructureRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[DescribeUserHierarchyStructureResponseTypeDef](./type_defs.md#describeuserhierarchystructureresponsetypedef).
+parent.describe_user_hierarchy_structure(**kwargs)
+```
 
-<a id="describe\_vocabulary"></a>
+1. See [:material-code-braces: DescribeUserHierarchyStructureRequestRequestTypeDef](./type_defs.md#describeuserhierarchystructurerequestrequesttypedef) 
 
-### describe_vocabulary
+### describe\_vocabulary
 
 Describes the specified vocabulary.
 
-Type annotations for `boto3.client("connect").describe_vocabulary` method.
+Type annotations and code completion for `#!python boto3.client("connect").describe_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_vocabulary)
 
-Boto3 documentation:
-[Connect.Client.describe_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.describe_vocabulary)
+```python title="Method definition"
+def describe_vocabulary(
+    self,
+    *,
+    InstanceId: str,
+    VocabularyId: str,
+) -> DescribeVocabularyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVocabularyRequestRequestTypeDef](./type_defs.md#describevocabularyrequestrequesttypedef).
+1. See [:material-code-braces: DescribeVocabularyResponseTypeDef](./type_defs.md#describevocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `VocabularyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeVocabularyRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "VocabularyId": ...,
+}
 
-Returns
-[DescribeVocabularyResponseTypeDef](./type_defs.md#describevocabularyresponsetypedef).
+parent.describe_vocabulary(**kwargs)
+```
 
-<a id="disassociate\_approved\_origin"></a>
+1. See [:material-code-braces: DescribeVocabularyRequestRequestTypeDef](./type_defs.md#describevocabularyrequestrequesttypedef) 
 
-### disassociate_approved_origin
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").disassociate_approved_origin`
-method.
-
-Boto3 documentation:
-[Connect.Client.disassociate_approved_origin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_approved_origin)
-
-Arguments mapping described in
-[DisassociateApprovedOriginRequestRequestTypeDef](./type_defs.md#disassociateapprovedoriginrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `Origin`: `str` *(required)*
-
-<a id="disassociate\_bot"></a>
-
-### disassociate_bot
+### disassociate\_approved\_origin
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").disassociate_bot` method.
+Type annotations and code completion for `#!python boto3.client("connect").disassociate_approved_origin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_approved_origin)
 
-Boto3 documentation:
-[Connect.Client.disassociate_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_bot)
+```python title="Method definition"
+def disassociate_approved_origin(
+    self,
+    *,
+    InstanceId: str,
+    Origin: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateBotRequestRequestTypeDef](./type_defs.md#disassociatebotrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
-- `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+```python title="Usage example with kwargs"
+kwargs: DisassociateApprovedOriginRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Origin": ...,
+}
 
-<a id="disassociate\_instance\_storage\_config"></a>
+parent.disassociate_approved_origin(**kwargs)
+```
 
-### disassociate_instance_storage_config
+1. See [:material-code-braces: DisassociateApprovedOriginRequestRequestTypeDef](./type_defs.md#disassociateapprovedoriginrequestrequesttypedef) 
 
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for
-`boto3.client("connect").disassociate_instance_storage_config` method.
-
-Boto3 documentation:
-[Connect.Client.disassociate_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_instance_storage_config)
-
-Arguments mapping described in
-[DisassociateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#disassociateinstancestorageconfigrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `AssociationId`: `str` *(required)*
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-  *(required)*
-
-<a id="disassociate\_lambda\_function"></a>
-
-### disassociate_lambda_function
+### disassociate\_bot
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").disassociate_lambda_function`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").disassociate_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_bot)
 
-Boto3 documentation:
-[Connect.Client.disassociate_lambda_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lambda_function)
+```python title="Method definition"
+def disassociate_bot(
+    self,
+    *,
+    InstanceId: str,
+    LexBot: LexBotTypeDef = ...,  # (1)
+    LexV2Bot: LexV2BotTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateLambdaFunctionRequestRequestTypeDef](./type_defs.md#disassociatelambdafunctionrequestrequesttypedef).
+1. See [:material-code-braces: LexBotTypeDef](./type_defs.md#lexbottypedef) 
+2. See [:material-code-braces: LexV2BotTypeDef](./type_defs.md#lexv2bottypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `FunctionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateBotRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-<a id="disassociate\_lex\_bot"></a>
+parent.disassociate_bot(**kwargs)
+```
 
-### disassociate_lex_bot
+1. See [:material-code-braces: DisassociateBotRequestRequestTypeDef](./type_defs.md#disassociatebotrequestrequesttypedef) 
 
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").disassociate_lex_bot` method.
-
-Boto3 documentation:
-[Connect.Client.disassociate_lex_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lex_bot)
-
-Arguments mapping described in
-[DisassociateLexBotRequestRequestTypeDef](./type_defs.md#disassociatelexbotrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `BotName`: `str` *(required)*
-- `LexRegion`: `str` *(required)*
-
-<a id="disassociate\_queue\_quick\_connects"></a>
-
-### disassociate_queue_quick_connects
+### disassociate\_instance\_storage\_config
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for
-`boto3.client("connect").disassociate_queue_quick_connects` method.
+Type annotations and code completion for `#!python boto3.client("connect").disassociate_instance_storage_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_instance_storage_config)
 
-Boto3 documentation:
-[Connect.Client.disassociate_queue_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_queue_quick_connects)
+```python title="Method definition"
+def disassociate_instance_storage_config(
+    self,
+    *,
+    InstanceId: str,
+    AssociationId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateQueueQuickConnectsRequestRequestTypeDef](./type_defs.md#disassociatequeuequickconnectsrequestrequesttypedef).
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
-- `QuickConnectIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateInstanceStorageConfigRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "AssociationId": ...,
+    "ResourceType": ...,
+}
 
-<a id="disassociate\_routing\_profile\_queues"></a>
+parent.disassociate_instance_storage_config(**kwargs)
+```
 
-### disassociate_routing_profile_queues
+1. See [:material-code-braces: DisassociateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#disassociateinstancestorageconfigrequestrequesttypedef) 
+
+### disassociate\_lambda\_function
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").disassociate_lambda_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lambda_function)
+
+```python title="Method definition"
+def disassociate_lambda_function(
+    self,
+    *,
+    InstanceId: str,
+    FunctionArn: str,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateLambdaFunctionRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "FunctionArn": ...,
+}
+
+parent.disassociate_lambda_function(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateLambdaFunctionRequestRequestTypeDef](./type_defs.md#disassociatelambdafunctionrequestrequesttypedef) 
+
+### disassociate\_lex\_bot
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").disassociate_lex_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_lex_bot)
+
+```python title="Method definition"
+def disassociate_lex_bot(
+    self,
+    *,
+    InstanceId: str,
+    BotName: str,
+    LexRegion: str,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateLexBotRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "BotName": ...,
+    "LexRegion": ...,
+}
+
+parent.disassociate_lex_bot(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateLexBotRequestRequestTypeDef](./type_defs.md#disassociatelexbotrequestrequesttypedef) 
+
+### disassociate\_queue\_quick\_connects
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").disassociate_queue_quick_connects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_queue_quick_connects)
+
+```python title="Method definition"
+def disassociate_queue_quick_connects(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+    QuickConnectIds: Sequence[str],
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateQueueQuickConnectsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+    "QuickConnectIds": ...,
+}
+
+parent.disassociate_queue_quick_connects(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateQueueQuickConnectsRequestRequestTypeDef](./type_defs.md#disassociatequeuequickconnectsrequestrequesttypedef) 
+
+### disassociate\_routing\_profile\_queues
 
 Disassociates a set of queues from a routing profile.
 
-Type annotations for
-`boto3.client("connect").disassociate_routing_profile_queues` method.
+Type annotations and code completion for `#!python boto3.client("connect").disassociate_routing_profile_queues` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_routing_profile_queues)
 
-Boto3 documentation:
-[Connect.Client.disassociate_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_routing_profile_queues)
+```python title="Method definition"
+def disassociate_routing_profile_queues(
+    self,
+    *,
+    InstanceId: str,
+    RoutingProfileId: str,
+    QueueReferences: Sequence[RoutingProfileQueueReferenceTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#disassociateroutingprofilequeuesrequestrequesttypedef).
+1. See [:material-code-braces: RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `RoutingProfileId`: `str` *(required)*
-- `QueueReferences`:
-  `Sequence`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateRoutingProfileQueuesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RoutingProfileId": ...,
+    "QueueReferences": ...,
+}
 
-<a id="disassociate\_security\_key"></a>
+parent.disassociate_routing_profile_queues(**kwargs)
+```
 
-### disassociate_security_key
+1. See [:material-code-braces: DisassociateRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#disassociateroutingprofilequeuesrequestrequesttypedef) 
+
+### disassociate\_security\_key
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").disassociate_security_key`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").disassociate_security_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_security_key)
 
-Boto3 documentation:
-[Connect.Client.disassociate_security_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.disassociate_security_key)
+```python title="Method definition"
+def disassociate_security_key(
+    self,
+    *,
+    InstanceId: str,
+    AssociationId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateSecurityKeyRequestRequestTypeDef](./type_defs.md#disassociatesecuritykeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `AssociationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateSecurityKeyRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "AssociationId": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.disassociate_security_key(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DisassociateSecurityKeyRequestRequestTypeDef](./type_defs.md#disassociatesecuritykeyrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("connect").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("connect").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Connect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_contact\_attributes"></a>
-
-### get_contact_attributes
+### get\_contact\_attributes
 
 Retrieves the contact attributes for the specified contact.
 
-Type annotations for `boto3.client("connect").get_contact_attributes` method.
+Type annotations and code completion for `#!python boto3.client("connect").get_contact_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_contact_attributes)
 
-Boto3 documentation:
-[Connect.Client.get_contact_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_contact_attributes)
+```python title="Method definition"
+def get_contact_attributes(
+    self,
+    *,
+    InstanceId: str,
+    InitialContactId: str,
+) -> GetContactAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContactAttributesRequestRequestTypeDef](./type_defs.md#getcontactattributesrequestrequesttypedef).
+1. See [:material-code-braces: GetContactAttributesResponseTypeDef](./type_defs.md#getcontactattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `InitialContactId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetContactAttributesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "InitialContactId": ...,
+}
 
-Returns
-[GetContactAttributesResponseTypeDef](./type_defs.md#getcontactattributesresponsetypedef).
+parent.get_contact_attributes(**kwargs)
+```
 
-<a id="get\_current\_metric\_data"></a>
+1. See [:material-code-braces: GetContactAttributesRequestRequestTypeDef](./type_defs.md#getcontactattributesrequestrequesttypedef) 
 
-### get_current_metric_data
+### get\_current\_metric\_data
 
 Gets the real-time metric data from the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").get_current_metric_data` method.
+Type annotations and code completion for `#!python boto3.client("connect").get_current_metric_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_current_metric_data)
 
-Boto3 documentation:
-[Connect.Client.get_current_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_current_metric_data)
+```python title="Method definition"
+def get_current_metric_data(
+    self,
+    *,
+    InstanceId: str,
+    Filters: FiltersTypeDef,  # (1)
+    CurrentMetrics: Sequence[CurrentMetricTypeDef],  # (2)
+    Groupings: Sequence[GroupingType] = ...,  # (3)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetCurrentMetricDataResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetCurrentMetricDataRequestRequestTypeDef](./type_defs.md#getcurrentmetricdatarequestrequesttypedef).
+1. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
+2. See [:material-code-braces: CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef) 
+3. See [:material-code-brackets: GroupingType](./literals.md#groupingtype) 
+4. See [:material-code-braces: GetCurrentMetricDataResponseTypeDef](./type_defs.md#getcurrentmetricdataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
-- `CurrentMetrics`:
-  `Sequence`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
-  *(required)*
-- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetCurrentMetricDataRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "Filters": ...,
+    "CurrentMetrics": ...,
+}
 
-Returns
-[GetCurrentMetricDataResponseTypeDef](./type_defs.md#getcurrentmetricdataresponsetypedef).
+parent.get_current_metric_data(**kwargs)
+```
 
-<a id="get\_federation\_token"></a>
+1. See [:material-code-braces: GetCurrentMetricDataRequestRequestTypeDef](./type_defs.md#getcurrentmetricdatarequestrequesttypedef) 
 
-### get_federation_token
+### get\_federation\_token
 
 Retrieves a token for federation.
 
-Type annotations for `boto3.client("connect").get_federation_token` method.
+Type annotations and code completion for `#!python boto3.client("connect").get_federation_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_federation_token)
 
-Boto3 documentation:
-[Connect.Client.get_federation_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_federation_token)
+```python title="Method definition"
+def get_federation_token(
+    self,
+    *,
+    InstanceId: str,
+) -> GetFederationTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFederationTokenRequestRequestTypeDef](./type_defs.md#getfederationtokenrequestrequesttypedef).
+1. See [:material-code-braces: GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFederationTokenRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).
+parent.get_federation_token(**kwargs)
+```
 
-<a id="get\_metric\_data"></a>
+1. See [:material-code-braces: GetFederationTokenRequestRequestTypeDef](./type_defs.md#getfederationtokenrequestrequesttypedef) 
 
-### get_metric_data
+### get\_metric\_data
 
 Gets historical metric data from the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").get_metric_data` method.
+Type annotations and code completion for `#!python boto3.client("connect").get_metric_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_metric_data)
 
-Boto3 documentation:
-[Connect.Client.get_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.get_metric_data)
+```python title="Method definition"
+def get_metric_data(
+    self,
+    *,
+    InstanceId: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Filters: FiltersTypeDef,  # (1)
+    HistoricalMetrics: Sequence[HistoricalMetricTypeDef],  # (2)
+    Groupings: Sequence[GroupingType] = ...,  # (3)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetMetricDataResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetMetricDataRequestRequestTypeDef](./type_defs.md#getmetricdatarequestrequesttypedef).
+1. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
+2. See [:material-code-braces: HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef) 
+3. See [:material-code-brackets: GroupingType](./literals.md#groupingtype) 
+4. See [:material-code-braces: GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
-- `HistoricalMetrics`:
-  `Sequence`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
-  *(required)*
-- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetMetricDataRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+    "Filters": ...,
+    "HistoricalMetrics": ...,
+}
 
-Returns
-[GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef).
+parent.get_metric_data(**kwargs)
+```
 
-<a id="list\_agent\_statuses"></a>
+1. See [:material-code-braces: GetMetricDataRequestRequestTypeDef](./type_defs.md#getmetricdatarequestrequesttypedef) 
 
-### list_agent_statuses
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").list_agent_statuses` method.
-
-Boto3 documentation:
-[Connect.Client.list_agent_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_agent_statuses)
-
-Arguments mapping described in
-[ListAgentStatusRequestRequestTypeDef](./type_defs.md#listagentstatusrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `AgentStatusTypes`:
-  `Sequence`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
-
-Returns
-[ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef).
-
-<a id="list\_approved\_origins"></a>
-
-### list_approved_origins
+### list\_agent\_statuses
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").list_approved_origins` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_agent_statuses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_agent_statuses)
 
-Boto3 documentation:
-[Connect.Client.list_approved_origins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_approved_origins)
+```python title="Method definition"
+def list_agent_statuses(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    AgentStatusTypes: Sequence[AgentStatusTypeType] = ...,  # (1)
+) -> ListAgentStatusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListApprovedOriginsRequestRequestTypeDef](./type_defs.md#listapprovedoriginsrequestrequesttypedef).
+1. See [:material-code-brackets: AgentStatusTypeType](./literals.md#agentstatustypetype) 
+2. See [:material-code-braces: ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAgentStatusRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef).
+parent.list_agent_statuses(**kwargs)
+```
 
-<a id="list\_bots"></a>
+1. See [:material-code-braces: ListAgentStatusRequestRequestTypeDef](./type_defs.md#listagentstatusrequestrequesttypedef) 
 
-### list_bots
+### list\_approved\_origins
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").list_bots` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_approved_origins` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_approved_origins)
 
-Boto3 documentation:
-[Connect.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_bots)
+```python title="Method definition"
+def list_approved_origins(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListApprovedOriginsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBotsRequestRequestTypeDef](./type_defs.md#listbotsrequestrequesttypedef).
+1. See [:material-code-braces: ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `LexVersion`: [LexVersionType](./literals.md#lexversiontype) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListApprovedOriginsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+parent.list_approved_origins(**kwargs)
+```
 
-<a id="list\_contact\_flow\_modules"></a>
+1. See [:material-code-braces: ListApprovedOriginsRequestRequestTypeDef](./type_defs.md#listapprovedoriginsrequestrequesttypedef) 
 
-### list_contact_flow_modules
+### list\_bots
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").list_bots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_bots)
+
+```python title="Method definition"
+def list_bots(
+    self,
+    *,
+    InstanceId: str,
+    LexVersion: LexVersionType,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListBotsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: LexVersionType](./literals.md#lexversiontype) 
+2. See [:material-code-braces: ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListBotsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "LexVersion": ...,
+}
+
+parent.list_bots(**kwargs)
+```
+
+1. See [:material-code-braces: ListBotsRequestRequestTypeDef](./type_defs.md#listbotsrequestrequesttypedef) 
+
+### list\_contact\_flow\_modules
 
 Provides information about the contact flow modules for the specified Amazon
 Connect instance.
 
-Type annotations for `boto3.client("connect").list_contact_flow_modules`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").list_contact_flow_modules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flow_modules)
 
-Boto3 documentation:
-[Connect.Client.list_contact_flow_modules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flow_modules)
+```python title="Method definition"
+def list_contact_flow_modules(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ContactFlowModuleState: ContactFlowModuleStateType = ...,  # (1)
+) -> ListContactFlowModulesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListContactFlowModulesRequestRequestTypeDef](./type_defs.md#listcontactflowmodulesrequestrequesttypedef).
+1. See [:material-code-brackets: ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype) 
+2. See [:material-code-braces: ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ContactFlowModuleState`:
-  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
+```python title="Usage example with kwargs"
+kwargs: ListContactFlowModulesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef).
+parent.list_contact_flow_modules(**kwargs)
+```
 
-<a id="list\_contact\_flows"></a>
+1. See [:material-code-braces: ListContactFlowModulesRequestRequestTypeDef](./type_defs.md#listcontactflowmodulesrequestrequesttypedef) 
 
-### list_contact_flows
+### list\_contact\_flows
 
 Provides information about the contact flows for the specified Amazon Connect
 instance.
 
-Type annotations for `boto3.client("connect").list_contact_flows` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_contact_flows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flows)
 
-Boto3 documentation:
-[Connect.Client.list_contact_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_flows)
+```python title="Method definition"
+def list_contact_flows(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowTypes: Sequence[ContactFlowTypeType] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListContactFlowsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListContactFlowsRequestRequestTypeDef](./type_defs.md#listcontactflowsrequestrequesttypedef).
+1. See [:material-code-brackets: ContactFlowTypeType](./literals.md#contactflowtypetype) 
+2. See [:material-code-braces: ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowTypes`:
-  `Sequence`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListContactFlowsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef).
+parent.list_contact_flows(**kwargs)
+```
 
-<a id="list\_contact\_references"></a>
+1. See [:material-code-braces: ListContactFlowsRequestRequestTypeDef](./type_defs.md#listcontactflowsrequestrequesttypedef) 
 
-### list_contact_references
+### list\_contact\_references
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").list_contact_references` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_contact_references` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_references)
 
-Boto3 documentation:
-[Connect.Client.list_contact_references](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_contact_references)
+```python title="Method definition"
+def list_contact_references(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    ReferenceTypes: Sequence[ReferenceTypeType],  # (1)
+    NextToken: str = ...,
+) -> ListContactReferencesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListContactReferencesRequestRequestTypeDef](./type_defs.md#listcontactreferencesrequestrequesttypedef).
+1. See [:material-code-brackets: ReferenceTypeType](./literals.md#referencetypetype) 
+2. See [:material-code-braces: ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `ReferenceTypes`:
-  `Sequence`\[[ReferenceTypeType](./literals.md#referencetypetype)\]
-  *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListContactReferencesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "ReferenceTypes": ...,
+}
 
-Returns
-[ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef).
+parent.list_contact_references(**kwargs)
+```
 
-<a id="list\_default\_vocabularies"></a>
+1. See [:material-code-braces: ListContactReferencesRequestRequestTypeDef](./type_defs.md#listcontactreferencesrequestrequesttypedef) 
 
-### list_default_vocabularies
+### list\_default\_vocabularies
 
 Lists the default vocabularies for the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").list_default_vocabularies`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").list_default_vocabularies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_default_vocabularies)
 
-Boto3 documentation:
-[Connect.Client.list_default_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_default_vocabularies)
+```python title="Method definition"
+def list_default_vocabularies(
+    self,
+    *,
+    InstanceId: str,
+    LanguageCode: VocabularyLanguageCodeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDefaultVocabulariesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDefaultVocabulariesRequestRequestTypeDef](./type_defs.md#listdefaultvocabulariesrequestrequesttypedef).
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+2. See [:material-code-braces: ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDefaultVocabulariesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef).
+parent.list_default_vocabularies(**kwargs)
+```
 
-<a id="list\_hours\_of\_operations"></a>
+1. See [:material-code-braces: ListDefaultVocabulariesRequestRequestTypeDef](./type_defs.md#listdefaultvocabulariesrequestrequesttypedef) 
 
-### list_hours_of_operations
+### list\_hours\_of\_operations
 
 Provides information about the hours of operation for the specified Amazon
 Connect instance.
 
-Type annotations for `boto3.client("connect").list_hours_of_operations` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_hours_of_operations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_hours_of_operations)
 
-Boto3 documentation:
-[Connect.Client.list_hours_of_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_hours_of_operations)
+```python title="Method definition"
+def list_hours_of_operations(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListHoursOfOperationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListHoursOfOperationsRequestRequestTypeDef](./type_defs.md#listhoursofoperationsrequestrequesttypedef).
+1. See [:material-code-braces: ListHoursOfOperationsResponseTypeDef](./type_defs.md#listhoursofoperationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListHoursOfOperationsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListHoursOfOperationsResponseTypeDef](./type_defs.md#listhoursofoperationsresponsetypedef).
+parent.list_hours_of_operations(**kwargs)
+```
 
-<a id="list\_instance\_attributes"></a>
+1. See [:material-code-braces: ListHoursOfOperationsRequestRequestTypeDef](./type_defs.md#listhoursofoperationsrequestrequesttypedef) 
 
-### list_instance_attributes
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").list_instance_attributes` method.
-
-Boto3 documentation:
-[Connect.Client.list_instance_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_attributes)
-
-Arguments mapping described in
-[ListInstanceAttributesRequestRequestTypeDef](./type_defs.md#listinstanceattributesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-Returns
-[ListInstanceAttributesResponseTypeDef](./type_defs.md#listinstanceattributesresponsetypedef).
-
-<a id="list\_instance\_storage\_configs"></a>
-
-### list_instance_storage_configs
+### list\_instance\_attributes
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").list_instance_storage_configs`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").list_instance_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_attributes)
 
-Boto3 documentation:
-[Connect.Client.list_instance_storage_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_storage_configs)
+```python title="Method definition"
+def list_instance_attributes(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListInstanceAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstanceStorageConfigsRequestRequestTypeDef](./type_defs.md#listinstancestorageconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListInstanceAttributesResponseTypeDef](./type_defs.md#listinstanceattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-  *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListInstanceAttributesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListInstanceStorageConfigsResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponsetypedef).
+parent.list_instance_attributes(**kwargs)
+```
 
-<a id="list\_instances"></a>
+1. See [:material-code-braces: ListInstanceAttributesRequestRequestTypeDef](./type_defs.md#listinstanceattributesrequestrequesttypedef) 
 
-### list_instances
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").list_instances` method.
-
-Boto3 documentation:
-[Connect.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instances)
-
-Arguments mapping described in
-[ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-Returns
-[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
-
-<a id="list\_integration\_associations"></a>
-
-### list_integration_associations
-
-Provides summary information about the Amazon Web Services resource
-associations for the specified Amazon Connect instance.
-
-Type annotations for `boto3.client("connect").list_integration_associations`
-method.
-
-Boto3 documentation:
-[Connect.Client.list_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_integration_associations)
-
-Arguments mapping described in
-[ListIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listintegrationassociationsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-Returns
-[ListIntegrationAssociationsResponseTypeDef](./type_defs.md#listintegrationassociationsresponsetypedef).
-
-<a id="list\_lambda\_functions"></a>
-
-### list_lambda_functions
+### list\_instance\_storage\_configs
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").list_lambda_functions` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_instance_storage_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instance_storage_configs)
 
-Boto3 documentation:
-[Connect.Client.list_lambda_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lambda_functions)
+```python title="Method definition"
+def list_instance_storage_configs(
+    self,
+    *,
+    InstanceId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListInstanceStorageConfigsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLambdaFunctionsRequestRequestTypeDef](./type_defs.md#listlambdafunctionsrequestrequesttypedef).
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
+2. See [:material-code-braces: ListInstanceStorageConfigsResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListInstanceStorageConfigsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ResourceType": ...,
+}
 
-Returns
-[ListLambdaFunctionsResponseTypeDef](./type_defs.md#listlambdafunctionsresponsetypedef).
+parent.list_instance_storage_configs(**kwargs)
+```
 
-<a id="list\_lex\_bots"></a>
+1. See [:material-code-braces: ListInstanceStorageConfigsRequestRequestTypeDef](./type_defs.md#listinstancestorageconfigsrequestrequesttypedef) 
 
-### list_lex_bots
+### list\_instances
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").list_lex_bots` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_instances)
 
-Boto3 documentation:
-[Connect.Client.list_lex_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lex_bots)
+```python title="Method definition"
+def list_instances(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLexBotsRequestRequestTypeDef](./type_defs.md#listlexbotsrequestrequesttypedef).
+1. See [:material-code-braces: ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListInstancesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListLexBotsResponseTypeDef](./type_defs.md#listlexbotsresponsetypedef).
+parent.list_instances(**kwargs)
+```
 
-<a id="list\_phone\_numbers"></a>
+1. See [:material-code-braces: ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef) 
 
-### list_phone_numbers
+### list\_integration\_associations
+
+Provides summary information about the Amazon Web Services resource associations
+for the specified Amazon Connect instance.
+
+Type annotations and code completion for `#!python boto3.client("connect").list_integration_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_integration_associations)
+
+```python title="Method definition"
+def list_integration_associations(
+    self,
+    *,
+    InstanceId: str,
+    IntegrationType: IntegrationTypeType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListIntegrationAssociationsResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-braces: ListIntegrationAssociationsResponseTypeDef](./type_defs.md#listintegrationassociationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListIntegrationAssociationsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.list_integration_associations(**kwargs)
+```
+
+1. See [:material-code-braces: ListIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listintegrationassociationsrequestrequesttypedef) 
+
+### list\_lambda\_functions
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").list_lambda_functions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lambda_functions)
+
+```python title="Method definition"
+def list_lambda_functions(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLambdaFunctionsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListLambdaFunctionsResponseTypeDef](./type_defs.md#listlambdafunctionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLambdaFunctionsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.list_lambda_functions(**kwargs)
+```
+
+1. See [:material-code-braces: ListLambdaFunctionsRequestRequestTypeDef](./type_defs.md#listlambdafunctionsrequestrequesttypedef) 
+
+### list\_lex\_bots
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").list_lex_bots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_lex_bots)
+
+```python title="Method definition"
+def list_lex_bots(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLexBotsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListLexBotsResponseTypeDef](./type_defs.md#listlexbotsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListLexBotsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.list_lex_bots(**kwargs)
+```
+
+1. See [:material-code-braces: ListLexBotsRequestRequestTypeDef](./type_defs.md#listlexbotsrequestrequesttypedef) 
+
+### list\_phone\_numbers
 
 Provides information about the phone numbers for the specified Amazon Connect
 instance.
 
-Type annotations for `boto3.client("connect").list_phone_numbers` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_phone_numbers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_phone_numbers)
 
-Boto3 documentation:
-[Connect.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_phone_numbers)
+```python title="Method definition"
+def list_phone_numbers(
+    self,
+    *,
+    InstanceId: str,
+    PhoneNumberTypes: Sequence[PhoneNumberTypeType] = ...,  # (1)
+    PhoneNumberCountryCodes: Sequence[PhoneNumberCountryCodeType] = ...,  # (2)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPhoneNumbersResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListPhoneNumbersRequestRequestTypeDef](./type_defs.md#listphonenumbersrequestrequesttypedef).
+1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+2. See [:material-code-brackets: PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype) 
+3. See [:material-code-braces: ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `PhoneNumberTypes`:
-  `Sequence`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
-- `PhoneNumberCountryCodes`:
-  `Sequence`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPhoneNumbersRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef).
+parent.list_phone_numbers(**kwargs)
+```
 
-<a id="list\_prompts"></a>
+1. See [:material-code-braces: ListPhoneNumbersRequestRequestTypeDef](./type_defs.md#listphonenumbersrequestrequesttypedef) 
 
-### list_prompts
+### list\_prompts
 
 Provides information about the prompts for the specified Amazon Connect
 instance.
 
-Type annotations for `boto3.client("connect").list_prompts` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_prompts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_prompts)
 
-Boto3 documentation:
-[Connect.Client.list_prompts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_prompts)
+```python title="Method definition"
+def list_prompts(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPromptsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPromptsRequestRequestTypeDef](./type_defs.md#listpromptsrequestrequesttypedef).
+1. See [:material-code-braces: ListPromptsResponseTypeDef](./type_defs.md#listpromptsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPromptsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListPromptsResponseTypeDef](./type_defs.md#listpromptsresponsetypedef).
+parent.list_prompts(**kwargs)
+```
 
-<a id="list\_queue\_quick\_connects"></a>
+1. See [:material-code-braces: ListPromptsRequestRequestTypeDef](./type_defs.md#listpromptsrequestrequesttypedef) 
 
-### list_queue_quick_connects
+### list\_queue\_quick\_connects
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").list_queue_quick_connects`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").list_queue_quick_connects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queue_quick_connects)
 
-Boto3 documentation:
-[Connect.Client.list_queue_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queue_quick_connects)
+```python title="Method definition"
+def list_queue_quick_connects(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListQueueQuickConnectsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListQueueQuickConnectsRequestRequestTypeDef](./type_defs.md#listqueuequickconnectsrequestrequesttypedef).
+1. See [:material-code-braces: ListQueueQuickConnectsResponseTypeDef](./type_defs.md#listqueuequickconnectsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListQueueQuickConnectsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+}
 
-Returns
-[ListQueueQuickConnectsResponseTypeDef](./type_defs.md#listqueuequickconnectsresponsetypedef).
+parent.list_queue_quick_connects(**kwargs)
+```
 
-<a id="list\_queues"></a>
+1. See [:material-code-braces: ListQueueQuickConnectsRequestRequestTypeDef](./type_defs.md#listqueuequickconnectsrequestrequesttypedef) 
 
-### list_queues
+### list\_queues
 
-Provides information about the queues for the specified Amazon Connect
-instance.
+Provides information about the queues for the specified Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").list_queues` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_queues` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queues)
 
-Boto3 documentation:
-[Connect.Client.list_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_queues)
+```python title="Method definition"
+def list_queues(
+    self,
+    *,
+    InstanceId: str,
+    QueueTypes: Sequence[QueueTypeType] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListQueuesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListQueuesRequestRequestTypeDef](./type_defs.md#listqueuesrequestrequesttypedef).
+1. See [:material-code-brackets: QueueTypeType](./literals.md#queuetypetype) 
+2. See [:material-code-braces: ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QueueTypes`: `Sequence`\[[QueueTypeType](./literals.md#queuetypetype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListQueuesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns [ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef).
+parent.list_queues(**kwargs)
+```
 
-<a id="list\_quick\_connects"></a>
+1. See [:material-code-braces: ListQueuesRequestRequestTypeDef](./type_defs.md#listqueuesrequestrequesttypedef) 
 
-### list_quick_connects
+### list\_quick\_connects
 
 Provides information about the quick connects for the specified Amazon Connect
 instance.
 
-Type annotations for `boto3.client("connect").list_quick_connects` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_quick_connects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_quick_connects)
 
-Boto3 documentation:
-[Connect.Client.list_quick_connects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_quick_connects)
+```python title="Method definition"
+def list_quick_connects(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    QuickConnectTypes: Sequence[QuickConnectTypeType] = ...,  # (1)
+) -> ListQuickConnectsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListQuickConnectsRequestRequestTypeDef](./type_defs.md#listquickconnectsrequestrequesttypedef).
+1. See [:material-code-brackets: QuickConnectTypeType](./literals.md#quickconnecttypetype) 
+2. See [:material-code-braces: ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `QuickConnectTypes`:
-  `Sequence`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
+```python title="Usage example with kwargs"
+kwargs: ListQuickConnectsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef).
+parent.list_quick_connects(**kwargs)
+```
 
-<a id="list\_routing\_profile\_queues"></a>
+1. See [:material-code-braces: ListQuickConnectsRequestRequestTypeDef](./type_defs.md#listquickconnectsrequestrequesttypedef) 
 
-### list_routing_profile_queues
+### list\_routing\_profile\_queues
 
 Lists the queues associated with a routing profile.
 
-Type annotations for `boto3.client("connect").list_routing_profile_queues`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").list_routing_profile_queues` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profile_queues)
 
-Boto3 documentation:
-[Connect.Client.list_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profile_queues)
+```python title="Method definition"
+def list_routing_profile_queues(
+    self,
+    *,
+    InstanceId: str,
+    RoutingProfileId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListRoutingProfileQueuesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#listroutingprofilequeuesrequestrequesttypedef).
+1. See [:material-code-braces: ListRoutingProfileQueuesResponseTypeDef](./type_defs.md#listroutingprofilequeuesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `RoutingProfileId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRoutingProfileQueuesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RoutingProfileId": ...,
+}
 
-Returns
-[ListRoutingProfileQueuesResponseTypeDef](./type_defs.md#listroutingprofilequeuesresponsetypedef).
+parent.list_routing_profile_queues(**kwargs)
+```
 
-<a id="list\_routing\_profiles"></a>
+1. See [:material-code-braces: ListRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#listroutingprofilequeuesrequestrequesttypedef) 
 
-### list_routing_profiles
+### list\_routing\_profiles
 
-Provides summary information about the routing profiles for the specified
-Amazon Connect instance.
+Provides summary information about the routing profiles for the specified Amazon
+Connect instance.
 
-Type annotations for `boto3.client("connect").list_routing_profiles` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_routing_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profiles)
 
-Boto3 documentation:
-[Connect.Client.list_routing_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_routing_profiles)
+```python title="Method definition"
+def list_routing_profiles(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListRoutingProfilesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRoutingProfilesRequestRequestTypeDef](./type_defs.md#listroutingprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ListRoutingProfilesResponseTypeDef](./type_defs.md#listroutingprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRoutingProfilesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListRoutingProfilesResponseTypeDef](./type_defs.md#listroutingprofilesresponsetypedef).
+parent.list_routing_profiles(**kwargs)
+```
 
-<a id="list\_security\_keys"></a>
+1. See [:material-code-braces: ListRoutingProfilesRequestRequestTypeDef](./type_defs.md#listroutingprofilesrequestrequesttypedef) 
 
-### list_security_keys
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").list_security_keys` method.
-
-Boto3 documentation:
-[Connect.Client.list_security_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_keys)
-
-Arguments mapping described in
-[ListSecurityKeysRequestRequestTypeDef](./type_defs.md#listsecuritykeysrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-Returns
-[ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef).
-
-<a id="list\_security\_profile\_permissions"></a>
-
-### list_security_profile_permissions
+### list\_security\_keys
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for
-`boto3.client("connect").list_security_profile_permissions` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_security_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_keys)
 
-Boto3 documentation:
-[Connect.Client.list_security_profile_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_profile_permissions)
+```python title="Method definition"
+def list_security_keys(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListSecurityKeysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSecurityProfilePermissionsRequestRequestTypeDef](./type_defs.md#listsecurityprofilepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SecurityProfileId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSecurityKeysRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListSecurityProfilePermissionsResponseTypeDef](./type_defs.md#listsecurityprofilepermissionsresponsetypedef).
+parent.list_security_keys(**kwargs)
+```
 
-<a id="list\_security\_profiles"></a>
+1. See [:material-code-braces: ListSecurityKeysRequestRequestTypeDef](./type_defs.md#listsecuritykeysrequestrequesttypedef) 
 
-### list_security_profiles
+### list\_security\_profile\_permissions
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").list_security_profile_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_profile_permissions)
+
+```python title="Method definition"
+def list_security_profile_permissions(
+    self,
+    *,
+    SecurityProfileId: str,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListSecurityProfilePermissionsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListSecurityProfilePermissionsResponseTypeDef](./type_defs.md#listsecurityprofilepermissionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSecurityProfilePermissionsRequestRequestTypeDef = {  # (1)
+    "SecurityProfileId": ...,
+    "InstanceId": ...,
+}
+
+parent.list_security_profile_permissions(**kwargs)
+```
+
+1. See [:material-code-braces: ListSecurityProfilePermissionsRequestRequestTypeDef](./type_defs.md#listsecurityprofilepermissionsrequestrequesttypedef) 
+
+### list\_security\_profiles
 
 Provides summary information about the security profiles for the specified
 Amazon Connect instance.
 
-Type annotations for `boto3.client("connect").list_security_profiles` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_security_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_profiles)
 
-Boto3 documentation:
-[Connect.Client.list_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_security_profiles)
+```python title="Method definition"
+def list_security_profiles(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListSecurityProfilesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSecurityProfilesRequestRequestTypeDef](./type_defs.md#listsecurityprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSecurityProfilesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef).
+parent.list_security_profiles(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSecurityProfilesRequestRequestTypeDef](./type_defs.md#listsecurityprofilesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for the specified resource.
 
-Type annotations for `boto3.client("connect").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Connect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_use\_cases"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_use_cases
+### list\_use\_cases
 
 Lists the use cases for the integration association.
 
-Type annotations for `boto3.client("connect").list_use_cases` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_use_cases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_use_cases)
 
-Boto3 documentation:
-[Connect.Client.list_use_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_use_cases)
+```python title="Method definition"
+def list_use_cases(
+    self,
+    *,
+    InstanceId: str,
+    IntegrationAssociationId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListUseCasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUseCasesRequestRequestTypeDef](./type_defs.md#listusecasesrequestrequesttypedef).
+1. See [:material-code-braces: ListUseCasesResponseTypeDef](./type_defs.md#listusecasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `IntegrationAssociationId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUseCasesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "IntegrationAssociationId": ...,
+}
 
-Returns
-[ListUseCasesResponseTypeDef](./type_defs.md#listusecasesresponsetypedef).
+parent.list_use_cases(**kwargs)
+```
 
-<a id="list\_user\_hierarchy\_groups"></a>
+1. See [:material-code-braces: ListUseCasesRequestRequestTypeDef](./type_defs.md#listusecasesrequestrequesttypedef) 
 
-### list_user_hierarchy_groups
+### list\_user\_hierarchy\_groups
 
-Provides summary information about the hierarchy groups for the specified
-Amazon Connect instance.
+Provides summary information about the hierarchy groups for the specified Amazon
+Connect instance.
 
-Type annotations for `boto3.client("connect").list_user_hierarchy_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").list_user_hierarchy_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_user_hierarchy_groups)
 
-Boto3 documentation:
-[Connect.Client.list_user_hierarchy_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_user_hierarchy_groups)
+```python title="Method definition"
+def list_user_hierarchy_groups(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListUserHierarchyGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUserHierarchyGroupsRequestRequestTypeDef](./type_defs.md#listuserhierarchygroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListUserHierarchyGroupsResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUserHierarchyGroupsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[ListUserHierarchyGroupsResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponsetypedef).
+parent.list_user_hierarchy_groups(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListUserHierarchyGroupsRequestRequestTypeDef](./type_defs.md#listuserhierarchygroupsrequestrequesttypedef) 
 
-### list_users
+### list\_users
 
 Provides summary information about the users for the specified Amazon Connect
 instance.
 
-Type annotations for `boto3.client("connect").list_users` method.
+Type annotations and code completion for `#!python boto3.client("connect").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_users)
 
-Boto3 documentation:
-[Connect.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    InstanceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
 
-<a id="resume\_contact\_recording"></a>
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
-### resume_contact_recording
+### resume\_contact\_recording
 
 When a contact is being recorded, and the recording has been suspended using
 SuspendContactRecording, this API resumes recording the call.
 
-Type annotations for `boto3.client("connect").resume_contact_recording` method.
+Type annotations and code completion for `#!python boto3.client("connect").resume_contact_recording` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.resume_contact_recording)
 
-Boto3 documentation:
-[Connect.Client.resume_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.resume_contact_recording)
+```python title="Method definition"
+def resume_contact_recording(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    InitialContactId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ResumeContactRecordingRequestRequestTypeDef](./type_defs.md#resumecontactrecordingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `InitialContactId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResumeContactRecordingRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "InitialContactId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.resume_contact_recording(**kwargs)
+```
 
-<a id="search\_vocabularies"></a>
+1. See [:material-code-braces: ResumeContactRecordingRequestRequestTypeDef](./type_defs.md#resumecontactrecordingrequestrequesttypedef) 
 
-### search_vocabularies
+### search\_vocabularies
 
 Searches for vocabularies within a specific Amazon Connect instance using
 `State` , `NameStartsWith` , and `LanguageCode` .
 
-Type annotations for `boto3.client("connect").search_vocabularies` method.
+Type annotations and code completion for `#!python boto3.client("connect").search_vocabularies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.search_vocabularies)
 
-Boto3 documentation:
-[Connect.Client.search_vocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.search_vocabularies)
+```python title="Method definition"
+def search_vocabularies(
+    self,
+    *,
+    InstanceId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    State: VocabularyStateType = ...,  # (1)
+    NameStartsWith: str = ...,
+    LanguageCode: VocabularyLanguageCodeType = ...,  # (2)
+) -> SearchVocabulariesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchVocabulariesRequestRequestTypeDef](./type_defs.md#searchvocabulariesrequestrequesttypedef).
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+3. See [:material-code-braces: SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `NameStartsWith`: `str`
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+```python title="Usage example with kwargs"
+kwargs: SearchVocabulariesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+}
 
-Returns
-[SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef).
+parent.search_vocabularies(**kwargs)
+```
 
-<a id="start\_chat\_contact"></a>
+1. See [:material-code-braces: SearchVocabulariesRequestRequestTypeDef](./type_defs.md#searchvocabulariesrequestrequesttypedef) 
 
-### start_chat_contact
+### start\_chat\_contact
 
 Initiates a contact flow to start a new chat for the customer.
 
-Type annotations for `boto3.client("connect").start_chat_contact` method.
+Type annotations and code completion for `#!python boto3.client("connect").start_chat_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_chat_contact)
 
-Boto3 documentation:
-[Connect.Client.start_chat_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_chat_contact)
+```python title="Method definition"
+def start_chat_contact(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowId: str,
+    ParticipantDetails: ParticipantDetailsTypeDef,  # (1)
+    Attributes: Mapping[str, str] = ...,
+    InitialMessage: ChatMessageTypeDef = ...,  # (2)
+    ClientToken: str = ...,
+    ChatDurationInMinutes: int = ...,
+    SupportedMessagingContentTypes: Sequence[str] = ...,
+) -> StartChatContactResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartChatContactRequestRequestTypeDef](./type_defs.md#startchatcontactrequestrequesttypedef).
+1. See [:material-code-braces: ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef) 
+2. See [:material-code-braces: ChatMessageTypeDef](./type_defs.md#chatmessagetypedef) 
+3. See [:material-code-braces: StartChatContactResponseTypeDef](./type_defs.md#startchatcontactresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowId`: `str` *(required)*
-- `ParticipantDetails`:
-  [ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef)
-  *(required)*
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
-- `ClientToken`: `str`
-- `ChatDurationInMinutes`: `int`
-- `SupportedMessagingContentTypes`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: StartChatContactRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowId": ...,
+    "ParticipantDetails": ...,
+}
 
-Returns
-[StartChatContactResponseTypeDef](./type_defs.md#startchatcontactresponsetypedef).
+parent.start_chat_contact(**kwargs)
+```
 
-<a id="start\_contact\_recording"></a>
+1. See [:material-code-braces: StartChatContactRequestRequestTypeDef](./type_defs.md#startchatcontactrequestrequesttypedef) 
 
-### start_contact_recording
+### start\_contact\_recording
 
-Starts recording the contact * If the API is called *before* the agent joins
-the call, recording starts when the agent joins the call.
+Starts recording the contact * If the API is called *before* the agent joins the
+call, recording starts when the agent joins the call.
 
-Type annotations for `boto3.client("connect").start_contact_recording` method.
+Type annotations and code completion for `#!python boto3.client("connect").start_contact_recording` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_contact_recording)
 
-Boto3 documentation:
-[Connect.Client.start_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_contact_recording)
+```python title="Method definition"
+def start_contact_recording(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    InitialContactId: str,
+    VoiceRecordingConfiguration: VoiceRecordingConfigurationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartContactRecordingRequestRequestTypeDef](./type_defs.md#startcontactrecordingrequestrequesttypedef).
+1. See [:material-code-braces: VoiceRecordingConfigurationTypeDef](./type_defs.md#voicerecordingconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `InitialContactId`: `str` *(required)*
-- `VoiceRecordingConfiguration`:
-  [VoiceRecordingConfigurationTypeDef](./type_defs.md#voicerecordingconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartContactRecordingRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "InitialContactId": ...,
+    "VoiceRecordingConfiguration": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_contact_recording(**kwargs)
+```
 
-<a id="start\_contact\_streaming"></a>
+1. See [:material-code-braces: StartContactRecordingRequestRequestTypeDef](./type_defs.md#startcontactrecordingrequestrequesttypedef) 
 
-### start_contact_streaming
+### start\_contact\_streaming
 
 Initiates real-time message streaming for a new chat contact.
 
-Type annotations for `boto3.client("connect").start_contact_streaming` method.
+Type annotations and code completion for `#!python boto3.client("connect").start_contact_streaming` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_contact_streaming)
 
-Boto3 documentation:
-[Connect.Client.start_contact_streaming](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_contact_streaming)
+```python title="Method definition"
+def start_contact_streaming(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    ChatStreamingConfiguration: ChatStreamingConfigurationTypeDef,  # (1)
+    ClientToken: str,
+) -> StartContactStreamingResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartContactStreamingRequestRequestTypeDef](./type_defs.md#startcontactstreamingrequestrequesttypedef).
+1. See [:material-code-braces: ChatStreamingConfigurationTypeDef](./type_defs.md#chatstreamingconfigurationtypedef) 
+2. See [:material-code-braces: StartContactStreamingResponseTypeDef](./type_defs.md#startcontactstreamingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `ChatStreamingConfiguration`:
-  [ChatStreamingConfigurationTypeDef](./type_defs.md#chatstreamingconfigurationtypedef)
-  *(required)*
-- `ClientToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartContactStreamingRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "ChatStreamingConfiguration": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[StartContactStreamingResponseTypeDef](./type_defs.md#startcontactstreamingresponsetypedef).
+parent.start_contact_streaming(**kwargs)
+```
 
-<a id="start\_outbound\_voice\_contact"></a>
+1. See [:material-code-braces: StartContactStreamingRequestRequestTypeDef](./type_defs.md#startcontactstreamingrequestrequesttypedef) 
 
-### start_outbound_voice_contact
+### start\_outbound\_voice\_contact
 
 Places an outbound call to a contact, and then initiates the contact flow.
 
-Type annotations for `boto3.client("connect").start_outbound_voice_contact`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").start_outbound_voice_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_outbound_voice_contact)
 
-Boto3 documentation:
-[Connect.Client.start_outbound_voice_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_outbound_voice_contact)
+```python title="Method definition"
+def start_outbound_voice_contact(
+    self,
+    *,
+    DestinationPhoneNumber: str,
+    ContactFlowId: str,
+    InstanceId: str,
+    ClientToken: str = ...,
+    SourcePhoneNumber: str = ...,
+    QueueId: str = ...,
+    Attributes: Mapping[str, str] = ...,
+    AnswerMachineDetectionConfig: AnswerMachineDetectionConfigTypeDef = ...,  # (1)
+    CampaignId: str = ...,
+    TrafficType: TrafficTypeType = ...,  # (2)
+) -> StartOutboundVoiceContactResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartOutboundVoiceContactRequestRequestTypeDef](./type_defs.md#startoutboundvoicecontactrequestrequesttypedef).
+1. See [:material-code-braces: AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef) 
+2. See [:material-code-brackets: TrafficTypeType](./literals.md#traffictypetype) 
+3. See [:material-code-braces: StartOutboundVoiceContactResponseTypeDef](./type_defs.md#startoutboundvoicecontactresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DestinationPhoneNumber`: `str` *(required)*
-- `ContactFlowId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `ClientToken`: `str`
-- `SourcePhoneNumber`: `str`
-- `QueueId`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `AnswerMachineDetectionConfig`:
-  [AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef)
-- `CampaignId`: `str`
-- `TrafficType`: [TrafficTypeType](./literals.md#traffictypetype)
+```python title="Usage example with kwargs"
+kwargs: StartOutboundVoiceContactRequestRequestTypeDef = {  # (1)
+    "DestinationPhoneNumber": ...,
+    "ContactFlowId": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[StartOutboundVoiceContactResponseTypeDef](./type_defs.md#startoutboundvoicecontactresponsetypedef).
+parent.start_outbound_voice_contact(**kwargs)
+```
 
-<a id="start\_task\_contact"></a>
+1. See [:material-code-braces: StartOutboundVoiceContactRequestRequestTypeDef](./type_defs.md#startoutboundvoicecontactrequestrequesttypedef) 
 
-### start_task_contact
+### start\_task\_contact
 
 Initiates a contact flow to start a new task.
 
-Type annotations for `boto3.client("connect").start_task_contact` method.
+Type annotations and code completion for `#!python boto3.client("connect").start_task_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_task_contact)
 
-Boto3 documentation:
-[Connect.Client.start_task_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.start_task_contact)
+```python title="Method definition"
+def start_task_contact(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowId: str,
+    Name: str,
+    PreviousContactId: str = ...,
+    Attributes: Mapping[str, str] = ...,
+    References: Mapping[str, ReferenceTypeDef] = ...,  # (1)
+    Description: str = ...,
+    ClientToken: str = ...,
+    ScheduledTime: Union[datetime, str] = ...,
+) -> StartTaskContactResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartTaskContactRequestRequestTypeDef](./type_defs.md#starttaskcontactrequestrequesttypedef).
+1. See [:material-code-braces: ReferenceTypeDef](./type_defs.md#referencetypedef) 
+2. See [:material-code-braces: StartTaskContactResponseTypeDef](./type_defs.md#starttaskcontactresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `PreviousContactId`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `References`: `Mapping`\[`str`,
-  [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
-- `Description`: `str`
-- `ClientToken`: `str`
-- `ScheduledTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartTaskContactRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowId": ...,
+    "Name": ...,
+}
 
-Returns
-[StartTaskContactResponseTypeDef](./type_defs.md#starttaskcontactresponsetypedef).
+parent.start_task_contact(**kwargs)
+```
 
-<a id="stop\_contact"></a>
+1. See [:material-code-braces: StartTaskContactRequestRequestTypeDef](./type_defs.md#starttaskcontactrequestrequesttypedef) 
 
-### stop_contact
+### stop\_contact
 
 Ends the specified contact.
 
-Type annotations for `boto3.client("connect").stop_contact` method.
+Type annotations and code completion for `#!python boto3.client("connect").stop_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact)
 
-Boto3 documentation:
-[Connect.Client.stop_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact)
+```python title="Method definition"
+def stop_contact(
+    self,
+    *,
+    ContactId: str,
+    InstanceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopContactRequestRequestTypeDef](./type_defs.md#stopcontactrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ContactId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopContactRequestRequestTypeDef = {  # (1)
+    "ContactId": ...,
+    "InstanceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_contact(**kwargs)
+```
 
-<a id="stop\_contact\_recording"></a>
+1. See [:material-code-braces: StopContactRequestRequestTypeDef](./type_defs.md#stopcontactrequestrequesttypedef) 
 
-### stop_contact_recording
+### stop\_contact\_recording
 
 Stops recording a call when a contact is being recorded.
 
-Type annotations for `boto3.client("connect").stop_contact_recording` method.
+Type annotations and code completion for `#!python boto3.client("connect").stop_contact_recording` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact_recording)
 
-Boto3 documentation:
-[Connect.Client.stop_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact_recording)
+```python title="Method definition"
+def stop_contact_recording(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    InitialContactId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopContactRecordingRequestRequestTypeDef](./type_defs.md#stopcontactrecordingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `InitialContactId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopContactRecordingRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "InitialContactId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_contact_recording(**kwargs)
+```
 
-<a id="stop\_contact\_streaming"></a>
+1. See [:material-code-braces: StopContactRecordingRequestRequestTypeDef](./type_defs.md#stopcontactrecordingrequestrequesttypedef) 
 
-### stop_contact_streaming
+### stop\_contact\_streaming
 
 Ends message streaming on a specified contact.
 
-Type annotations for `boto3.client("connect").stop_contact_streaming` method.
+Type annotations and code completion for `#!python boto3.client("connect").stop_contact_streaming` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact_streaming)
 
-Boto3 documentation:
-[Connect.Client.stop_contact_streaming](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.stop_contact_streaming)
+```python title="Method definition"
+def stop_contact_streaming(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    StreamingId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopContactStreamingRequestRequestTypeDef](./type_defs.md#stopcontactstreamingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `StreamingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopContactStreamingRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "StreamingId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_contact_streaming(**kwargs)
+```
 
-<a id="suspend\_contact\_recording"></a>
+1. See [:material-code-braces: StopContactStreamingRequestRequestTypeDef](./type_defs.md#stopcontactstreamingrequestrequesttypedef) 
 
-### suspend_contact_recording
+### suspend\_contact\_recording
 
 When a contact is being recorded, this API suspends recording the call.
 
-Type annotations for `boto3.client("connect").suspend_contact_recording`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").suspend_contact_recording` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.suspend_contact_recording)
 
-Boto3 documentation:
-[Connect.Client.suspend_contact_recording](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.suspend_contact_recording)
+```python title="Method definition"
+def suspend_contact_recording(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    InitialContactId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SuspendContactRecordingRequestRequestTypeDef](./type_defs.md#suspendcontactrecordingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `InitialContactId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SuspendContactRecordingRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "InitialContactId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.suspend_contact_recording(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SuspendContactRecordingRequestRequestTypeDef](./type_defs.md#suspendcontactrecordingrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds the specified tags to the specified resource.
 
-Type annotations for `boto3.client("connect").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("connect").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.tag_resource)
 
-Boto3 documentation:
-[Connect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Removes the specified tags from the specified resource.
 
-Type annotations for `boto3.client("connect").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("connect").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.untag_resource)
 
-Boto3 documentation:
-[Connect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-<a id="update\_agent\_status"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_agent_status
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").update_agent_status` method.
-
-Boto3 documentation:
-[Connect.Client.update_agent_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_agent_status)
-
-Arguments mapping described in
-[UpdateAgentStatusRequestRequestTypeDef](./type_defs.md#updateagentstatusrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `AgentStatusId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
-- `DisplayOrder`: `int`
-- `ResetOrderNumber`: `bool`
-
-<a id="update\_contact"></a>
-
-### update_contact
+### update\_agent\_status
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").update_contact` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_agent_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_agent_status)
 
-Boto3 documentation:
-[Connect.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact)
+```python title="Method definition"
+def update_agent_status(
+    self,
+    *,
+    InstanceId: str,
+    AgentStatusId: str,
+    Name: str = ...,
+    Description: str = ...,
+    State: AgentStatusStateType = ...,  # (1)
+    DisplayOrder: int = ...,
+    ResetOrderNumber: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef).
+1. See [:material-code-brackets: AgentStatusStateType](./literals.md#agentstatusstatetype) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `References`: `Mapping`\[`str`,
-  [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateAgentStatusRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "AgentStatusId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_agent_status(**kwargs)
+```
 
-<a id="update\_contact\_attributes"></a>
+1. See [:material-code-braces: UpdateAgentStatusRequestRequestTypeDef](./type_defs.md#updateagentstatusrequestrequesttypedef) 
 
-### update_contact_attributes
+### update\_contact
 
-Creates or updates user-defined contact attributes associated with the
-specified contact.
+This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").update_contact_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact)
 
-Boto3 documentation:
-[Connect.Client.update_contact_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_attributes)
+```python title="Method definition"
+def update_contact(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    Name: str = ...,
+    Description: str = ...,
+    References: Mapping[str, ReferenceTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactAttributesRequestRequestTypeDef](./type_defs.md#updatecontactattributesrequestrequesttypedef).
+1. See [:material-code-braces: ReferenceTypeDef](./type_defs.md#referencetypedef) 
 
-Keyword-only arguments:
 
-- `InitialContactId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateContactRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_contact(**kwargs)
+```
 
-<a id="update\_contact\_flow\_content"></a>
+1. See [:material-code-braces: UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef) 
 
-### update_contact_flow_content
+### update\_contact\_attributes
+
+Creates or updates user-defined contact attributes associated with the specified
+contact.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_contact_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_attributes)
+
+```python title="Method definition"
+def update_contact_attributes(
+    self,
+    *,
+    InitialContactId: str,
+    InstanceId: str,
+    Attributes: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateContactAttributesRequestRequestTypeDef = {  # (1)
+    "InitialContactId": ...,
+    "InstanceId": ...,
+    "Attributes": ...,
+}
+
+parent.update_contact_attributes(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateContactAttributesRequestRequestTypeDef](./type_defs.md#updatecontactattributesrequestrequesttypedef) 
+
+### update\_contact\_flow\_content
 
 Updates the specified contact flow.
 
-Type annotations for `boto3.client("connect").update_contact_flow_content`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_content)
 
-Boto3 documentation:
-[Connect.Client.update_contact_flow_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_content)
+```python title="Method definition"
+def update_contact_flow_content(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowId: str,
+    Content: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactFlowContentRequestRequestTypeDef](./type_defs.md#updatecontactflowcontentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowId`: `str` *(required)*
-- `Content`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateContactFlowContentRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowId": ...,
+    "Content": ...,
+}
 
-<a id="update\_contact\_flow\_metadata"></a>
+parent.update_contact_flow_content(**kwargs)
+```
 
-### update_contact_flow_metadata
+1. See [:material-code-braces: UpdateContactFlowContentRequestRequestTypeDef](./type_defs.md#updatecontactflowcontentrequestrequesttypedef) 
+
+### update\_contact\_flow\_metadata
 
 Updates metadata about specified contact flow.
 
-Type annotations for `boto3.client("connect").update_contact_flow_metadata`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_metadata)
 
-Boto3 documentation:
-[Connect.Client.update_contact_flow_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_metadata)
+```python title="Method definition"
+def update_contact_flow_metadata(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowId: str,
+    Name: str = ...,
+    Description: str = ...,
+    ContactFlowState: ContactFlowStateType = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactFlowMetadataRequestRequestTypeDef](./type_defs.md#updatecontactflowmetadatarequestrequesttypedef).
+1. See [:material-code-brackets: ContactFlowStateType](./literals.md#contactflowstatetype) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `ContactFlowState`:
-  [ContactFlowStateType](./literals.md#contactflowstatetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateContactFlowMetadataRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowId": ...,
+}
 
-<a id="update\_contact\_flow\_module\_content"></a>
+parent.update_contact_flow_metadata(**kwargs)
+```
 
-### update_contact_flow_module_content
+1. See [:material-code-braces: UpdateContactFlowMetadataRequestRequestTypeDef](./type_defs.md#updatecontactflowmetadatarequestrequesttypedef) 
 
-Updates specified contact flow module for the specified Amazon Connect
-instance.
+### update\_contact\_flow\_module\_content
 
-Type annotations for
-`boto3.client("connect").update_contact_flow_module_content` method.
+Updates specified contact flow module for the specified Amazon Connect instance.
 
-Boto3 documentation:
-[Connect.Client.update_contact_flow_module_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_module_content)
+Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_module_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_module_content)
 
-Arguments mapping described in
-[UpdateContactFlowModuleContentRequestRequestTypeDef](./type_defs.md#updatecontactflowmodulecontentrequestrequesttypedef).
+```python title="Method definition"
+def update_contact_flow_module_content(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowModuleId: str,
+    Content: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowModuleId`: `str` *(required)*
-- `Content`: `str` *(required)*
 
-Returns `Dict`\[`str`, `Any`\].
+```python title="Usage example with kwargs"
+kwargs: UpdateContactFlowModuleContentRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowModuleId": ...,
+    "Content": ...,
+}
 
-<a id="update\_contact\_flow\_module\_metadata"></a>
+parent.update_contact_flow_module_content(**kwargs)
+```
 
-### update_contact_flow_module_metadata
+1. See [:material-code-braces: UpdateContactFlowModuleContentRequestRequestTypeDef](./type_defs.md#updatecontactflowmodulecontentrequestrequesttypedef) 
+
+### update\_contact\_flow\_module\_metadata
 
 Updates metadata about specified contact flow module.
 
-Type annotations for
-`boto3.client("connect").update_contact_flow_module_metadata` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_module_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_module_metadata)
 
-Boto3 documentation:
-[Connect.Client.update_contact_flow_module_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_module_metadata)
+```python title="Method definition"
+def update_contact_flow_module_metadata(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowModuleId: str,
+    Name: str = ...,
+    Description: str = ...,
+    State: ContactFlowModuleStateType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactFlowModuleMetadataRequestRequestTypeDef](./type_defs.md#updatecontactflowmodulemetadatarequestrequesttypedef).
+1. See [:material-code-brackets: ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowModuleId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `State`:
-  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateContactFlowModuleMetadataRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowModuleId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_contact_flow_module_metadata(**kwargs)
+```
 
-<a id="update\_contact\_flow\_name"></a>
+1. See [:material-code-braces: UpdateContactFlowModuleMetadataRequestRequestTypeDef](./type_defs.md#updatecontactflowmodulemetadatarequestrequesttypedef) 
 
-### update_contact_flow_name
+### update\_contact\_flow\_name
 
 The name of the contact flow.
 
-Type annotations for `boto3.client("connect").update_contact_flow_name` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_contact_flow_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_name)
 
-Boto3 documentation:
-[Connect.Client.update_contact_flow_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_flow_name)
+```python title="Method definition"
+def update_contact_flow_name(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowId: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactFlowNameRequestRequestTypeDef](./type_defs.md#updatecontactflownamerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateContactFlowNameRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactFlowId": ...,
+}
 
-<a id="update\_contact\_schedule"></a>
+parent.update_contact_flow_name(**kwargs)
+```
 
-### update_contact_schedule
+1. See [:material-code-braces: UpdateContactFlowNameRequestRequestTypeDef](./type_defs.md#updatecontactflownamerequestrequesttypedef) 
+
+### update\_contact\_schedule
 
 Updates the scheduled time of a task contact that is already scheduled.
 
-Type annotations for `boto3.client("connect").update_contact_schedule` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_contact_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_schedule)
 
-Boto3 documentation:
-[Connect.Client.update_contact_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_contact_schedule)
+```python title="Method definition"
+def update_contact_schedule(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    ScheduledTime: Union[datetime, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactScheduleRequestRequestTypeDef](./type_defs.md#updatecontactschedulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `ScheduledTime`: `Union`\[`datetime`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateContactScheduleRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "ScheduledTime": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_contact_schedule(**kwargs)
+```
 
-<a id="update\_hours\_of\_operation"></a>
+1. See [:material-code-braces: UpdateContactScheduleRequestRequestTypeDef](./type_defs.md#updatecontactschedulerequestrequesttypedef) 
 
-### update_hours_of_operation
-
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").update_hours_of_operation`
-method.
-
-Boto3 documentation:
-[Connect.Client.update_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_hours_of_operation)
-
-Arguments mapping described in
-[UpdateHoursOfOperationRequestRequestTypeDef](./type_defs.md#updatehoursofoperationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `HoursOfOperationId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `TimeZone`: `str`
-- `Config`:
-  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
-
-<a id="update\_instance\_attribute"></a>
-
-### update_instance_attribute
+### update\_hours\_of\_operation
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").update_instance_attribute`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_hours_of_operation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_hours_of_operation)
 
-Boto3 documentation:
-[Connect.Client.update_instance_attribute](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_attribute)
+```python title="Method definition"
+def update_hours_of_operation(
+    self,
+    *,
+    InstanceId: str,
+    HoursOfOperationId: str,
+    Name: str = ...,
+    Description: str = ...,
+    TimeZone: str = ...,
+    Config: Sequence[HoursOfOperationConfigTypeDef] = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateInstanceAttributeRequestRequestTypeDef](./type_defs.md#updateinstanceattributerequestrequesttypedef).
+1. See [:material-code-braces: HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `AttributeType`:
-  [InstanceAttributeTypeType](./literals.md#instanceattributetypetype)
-  *(required)*
-- `Value`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateHoursOfOperationRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "HoursOfOperationId": ...,
+}
 
-<a id="update\_instance\_storage\_config"></a>
+parent.update_hours_of_operation(**kwargs)
+```
 
-### update_instance_storage_config
+1. See [:material-code-braces: UpdateHoursOfOperationRequestRequestTypeDef](./type_defs.md#updatehoursofoperationrequestrequesttypedef) 
 
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").update_instance_storage_config`
-method.
-
-Boto3 documentation:
-[Connect.Client.update_instance_storage_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_storage_config)
-
-Arguments mapping described in
-[UpdateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#updateinstancestorageconfigrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `AssociationId`: `str` *(required)*
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-  *(required)*
-- `StorageConfig`:
-  [InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)
-  *(required)*
-
-<a id="update\_queue\_hours\_of\_operation"></a>
-
-### update_queue_hours_of_operation
+### update\_instance\_attribute
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").update_queue_hours_of_operation`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_instance_attribute` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_attribute)
 
-Boto3 documentation:
-[Connect.Client.update_queue_hours_of_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_hours_of_operation)
+```python title="Method definition"
+def update_instance_attribute(
+    self,
+    *,
+    InstanceId: str,
+    AttributeType: InstanceAttributeTypeType,  # (1)
+    Value: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateQueueHoursOfOperationRequestRequestTypeDef](./type_defs.md#updatequeuehoursofoperationrequestrequesttypedef).
+1. See [:material-code-brackets: InstanceAttributeTypeType](./literals.md#instanceattributetypetype) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
-- `HoursOfOperationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateInstanceAttributeRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "AttributeType": ...,
+    "Value": ...,
+}
 
-<a id="update\_queue\_max\_contacts"></a>
+parent.update_instance_attribute(**kwargs)
+```
 
-### update_queue_max_contacts
+1. See [:material-code-braces: UpdateInstanceAttributeRequestRequestTypeDef](./type_defs.md#updateinstanceattributerequestrequesttypedef) 
 
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for `boto3.client("connect").update_queue_max_contacts`
-method.
-
-Boto3 documentation:
-[Connect.Client.update_queue_max_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_max_contacts)
-
-Arguments mapping described in
-[UpdateQueueMaxContactsRequestRequestTypeDef](./type_defs.md#updatequeuemaxcontactsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
-- `MaxContacts`: `int`
-
-<a id="update\_queue\_name"></a>
-
-### update_queue_name
+### update\_instance\_storage\_config
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").update_queue_name` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_instance_storage_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_instance_storage_config)
 
-Boto3 documentation:
-[Connect.Client.update_queue_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_name)
+```python title="Method definition"
+def update_instance_storage_config(
+    self,
+    *,
+    InstanceId: str,
+    AssociationId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+    StorageConfig: InstanceStorageConfigTypeDef,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateQueueNameRequestRequestTypeDef](./type_defs.md#updatequeuenamerequestrequesttypedef).
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
+2. See [:material-code-braces: InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateInstanceStorageConfigRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "AssociationId": ...,
+    "ResourceType": ...,
+    "StorageConfig": ...,
+}
 
-<a id="update\_queue\_outbound\_caller\_config"></a>
+parent.update_instance_storage_config(**kwargs)
+```
 
-### update_queue_outbound_caller_config
+1. See [:material-code-braces: UpdateInstanceStorageConfigRequestRequestTypeDef](./type_defs.md#updateinstancestorageconfigrequestrequesttypedef) 
 
-This API is in preview release for Amazon Connect and is subject to change.
-
-Type annotations for
-`boto3.client("connect").update_queue_outbound_caller_config` method.
-
-Boto3 documentation:
-[Connect.Client.update_queue_outbound_caller_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_outbound_caller_config)
-
-Arguments mapping described in
-[UpdateQueueOutboundCallerConfigRequestRequestTypeDef](./type_defs.md#updatequeueoutboundcallerconfigrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
-- `OutboundCallerConfig`:
-  [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
-  *(required)*
-
-<a id="update\_queue\_status"></a>
-
-### update_queue_status
+### update\_queue\_hours\_of\_operation
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").update_queue_status` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_queue_hours_of_operation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_hours_of_operation)
 
-Boto3 documentation:
-[Connect.Client.update_queue_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_status)
+```python title="Method definition"
+def update_queue_hours_of_operation(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+    HoursOfOperationId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateQueueStatusRequestRequestTypeDef](./type_defs.md#updatequeuestatusrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
-- `Status`: [QueueStatusType](./literals.md#queuestatustype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateQueueHoursOfOperationRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+    "HoursOfOperationId": ...,
+}
 
-<a id="update\_quick\_connect\_config"></a>
+parent.update_queue_hours_of_operation(**kwargs)
+```
 
-### update_quick_connect_config
+1. See [:material-code-braces: UpdateQueueHoursOfOperationRequestRequestTypeDef](./type_defs.md#updatequeuehoursofoperationrequestrequesttypedef) 
+
+### update\_queue\_max\_contacts
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_queue_max_contacts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_max_contacts)
+
+```python title="Method definition"
+def update_queue_max_contacts(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+    MaxContacts: int = ...,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateQueueMaxContactsRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+}
+
+parent.update_queue_max_contacts(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateQueueMaxContactsRequestRequestTypeDef](./type_defs.md#updatequeuemaxcontactsrequestrequesttypedef) 
+
+### update\_queue\_name
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_queue_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_name)
+
+```python title="Method definition"
+def update_queue_name(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateQueueNameRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+}
+
+parent.update_queue_name(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateQueueNameRequestRequestTypeDef](./type_defs.md#updatequeuenamerequestrequesttypedef) 
+
+### update\_queue\_outbound\_caller\_config
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_queue_outbound_caller_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_outbound_caller_config)
+
+```python title="Method definition"
+def update_queue_outbound_caller_config(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+    OutboundCallerConfig: OutboundCallerConfigTypeDef,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateQueueOutboundCallerConfigRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+    "OutboundCallerConfig": ...,
+}
+
+parent.update_queue_outbound_caller_config(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateQueueOutboundCallerConfigRequestRequestTypeDef](./type_defs.md#updatequeueoutboundcallerconfigrequestrequesttypedef) 
+
+### update\_queue\_status
+
+This API is in preview release for Amazon Connect and is subject to change.
+
+Type annotations and code completion for `#!python boto3.client("connect").update_queue_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_queue_status)
+
+```python title="Method definition"
+def update_queue_status(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+    Status: QueueStatusType,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-brackets: QueueStatusType](./literals.md#queuestatustype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateQueueStatusRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+    "Status": ...,
+}
+
+parent.update_queue_status(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateQueueStatusRequestRequestTypeDef](./type_defs.md#updatequeuestatusrequestrequesttypedef) 
+
+### update\_quick\_connect\_config
 
 Updates the configuration settings for the specified quick connect.
 
-Type annotations for `boto3.client("connect").update_quick_connect_config`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_quick_connect_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_config)
 
-Boto3 documentation:
-[Connect.Client.update_quick_connect_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_config)
+```python title="Method definition"
+def update_quick_connect_config(
+    self,
+    *,
+    InstanceId: str,
+    QuickConnectId: str,
+    QuickConnectConfig: QuickConnectConfigTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateQuickConnectConfigRequestRequestTypeDef](./type_defs.md#updatequickconnectconfigrequestrequesttypedef).
+1. See [:material-code-braces: QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QuickConnectId`: `str` *(required)*
-- `QuickConnectConfig`:
-  [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateQuickConnectConfigRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QuickConnectId": ...,
+    "QuickConnectConfig": ...,
+}
 
-<a id="update\_quick\_connect\_name"></a>
+parent.update_quick_connect_config(**kwargs)
+```
 
-### update_quick_connect_name
+1. See [:material-code-braces: UpdateQuickConnectConfigRequestRequestTypeDef](./type_defs.md#updatequickconnectconfigrequestrequesttypedef) 
+
+### update\_quick\_connect\_name
 
 Updates the name and description of a quick connect.
 
-Type annotations for `boto3.client("connect").update_quick_connect_name`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_quick_connect_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_name)
 
-Boto3 documentation:
-[Connect.Client.update_quick_connect_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_quick_connect_name)
+```python title="Method definition"
+def update_quick_connect_name(
+    self,
+    *,
+    InstanceId: str,
+    QuickConnectId: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateQuickConnectNameRequestRequestTypeDef](./type_defs.md#updatequickconnectnamerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `QuickConnectId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateQuickConnectNameRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QuickConnectId": ...,
+}
 
-<a id="update\_routing\_profile\_concurrency"></a>
+parent.update_quick_connect_name(**kwargs)
+```
 
-### update_routing_profile_concurrency
+1. See [:material-code-braces: UpdateQuickConnectNameRequestRequestTypeDef](./type_defs.md#updatequickconnectnamerequestrequesttypedef) 
+
+### update\_routing\_profile\_concurrency
 
 Updates the channels that agents can handle in the Contact Control Panel (CCP)
 for a routing profile.
 
-Type annotations for
-`boto3.client("connect").update_routing_profile_concurrency` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_routing_profile_concurrency` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_concurrency)
 
-Boto3 documentation:
-[Connect.Client.update_routing_profile_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_concurrency)
+```python title="Method definition"
+def update_routing_profile_concurrency(
+    self,
+    *,
+    InstanceId: str,
+    RoutingProfileId: str,
+    MediaConcurrencies: Sequence[MediaConcurrencyTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoutingProfileConcurrencyRequestRequestTypeDef](./type_defs.md#updateroutingprofileconcurrencyrequestrequesttypedef).
+1. See [:material-code-braces: MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `RoutingProfileId`: `str` *(required)*
-- `MediaConcurrencies`:
-  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRoutingProfileConcurrencyRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RoutingProfileId": ...,
+    "MediaConcurrencies": ...,
+}
 
-<a id="update\_routing\_profile\_default\_outbound\_queue"></a>
+parent.update_routing_profile_concurrency(**kwargs)
+```
 
-### update_routing_profile_default_outbound_queue
+1. See [:material-code-braces: UpdateRoutingProfileConcurrencyRequestRequestTypeDef](./type_defs.md#updateroutingprofileconcurrencyrequestrequesttypedef) 
+
+### update\_routing\_profile\_default\_outbound\_queue
 
 Updates the default outbound queue of a routing profile.
 
-Type annotations for
-`boto3.client("connect").update_routing_profile_default_outbound_queue` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_routing_profile_default_outbound_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_default_outbound_queue)
 
-Boto3 documentation:
-[Connect.Client.update_routing_profile_default_outbound_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_default_outbound_queue)
+```python title="Method definition"
+def update_routing_profile_default_outbound_queue(
+    self,
+    *,
+    InstanceId: str,
+    RoutingProfileId: str,
+    DefaultOutboundQueueId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef](./type_defs.md#updateroutingprofiledefaultoutboundqueuerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `RoutingProfileId`: `str` *(required)*
-- `DefaultOutboundQueueId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RoutingProfileId": ...,
+    "DefaultOutboundQueueId": ...,
+}
 
-<a id="update\_routing\_profile\_name"></a>
+parent.update_routing_profile_default_outbound_queue(**kwargs)
+```
 
-### update_routing_profile_name
+1. See [:material-code-braces: UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef](./type_defs.md#updateroutingprofiledefaultoutboundqueuerequestrequesttypedef) 
+
+### update\_routing\_profile\_name
 
 Updates the name and description of a routing profile.
 
-Type annotations for `boto3.client("connect").update_routing_profile_name`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_routing_profile_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_name)
 
-Boto3 documentation:
-[Connect.Client.update_routing_profile_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_name)
+```python title="Method definition"
+def update_routing_profile_name(
+    self,
+    *,
+    InstanceId: str,
+    RoutingProfileId: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoutingProfileNameRequestRequestTypeDef](./type_defs.md#updateroutingprofilenamerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `RoutingProfileId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateRoutingProfileNameRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RoutingProfileId": ...,
+}
 
-<a id="update\_routing\_profile\_queues"></a>
+parent.update_routing_profile_name(**kwargs)
+```
 
-### update_routing_profile_queues
+1. See [:material-code-braces: UpdateRoutingProfileNameRequestRequestTypeDef](./type_defs.md#updateroutingprofilenamerequestrequesttypedef) 
+
+### update\_routing\_profile\_queues
 
 Updates the properties associated with a set of queues for a routing profile.
 
-Type annotations for `boto3.client("connect").update_routing_profile_queues`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_routing_profile_queues` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_queues)
 
-Boto3 documentation:
-[Connect.Client.update_routing_profile_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_routing_profile_queues)
+```python title="Method definition"
+def update_routing_profile_queues(
+    self,
+    *,
+    InstanceId: str,
+    RoutingProfileId: str,
+    QueueConfigs: Sequence[RoutingProfileQueueConfigTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#updateroutingprofilequeuesrequestrequesttypedef).
+1. See [:material-code-braces: RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `RoutingProfileId`: `str` *(required)*
-- `QueueConfigs`:
-  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRoutingProfileQueuesRequestRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RoutingProfileId": ...,
+    "QueueConfigs": ...,
+}
 
-<a id="update\_security\_profile"></a>
+parent.update_routing_profile_queues(**kwargs)
+```
 
-### update_security_profile
+1. See [:material-code-braces: UpdateRoutingProfileQueuesRequestRequestTypeDef](./type_defs.md#updateroutingprofilequeuesrequestrequesttypedef) 
+
+### update\_security\_profile
 
 This API is in preview release for Amazon Connect and is subject to change.
 
-Type annotations for `boto3.client("connect").update_security_profile` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_security_profile)
 
-Boto3 documentation:
-[Connect.Client.update_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_security_profile)
+```python title="Method definition"
+def update_security_profile(
+    self,
+    *,
+    SecurityProfileId: str,
+    InstanceId: str,
+    Description: str = ...,
+    Permissions: Sequence[str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSecurityProfileRequestRequestTypeDef](./type_defs.md#updatesecurityprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SecurityProfileId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `Description`: `str`
-- `Permissions`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateSecurityProfileRequestRequestTypeDef = {  # (1)
+    "SecurityProfileId": ...,
+    "InstanceId": ...,
+}
 
-<a id="update\_user\_hierarchy"></a>
+parent.update_security_profile(**kwargs)
+```
 
-### update_user_hierarchy
+1. See [:material-code-braces: UpdateSecurityProfileRequestRequestTypeDef](./type_defs.md#updatesecurityprofilerequestrequesttypedef) 
+
+### update\_user\_hierarchy
 
 Assigns the specified hierarchy group to the specified user.
 
-Type annotations for `boto3.client("connect").update_user_hierarchy` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_user_hierarchy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy)
 
-Boto3 documentation:
-[Connect.Client.update_user_hierarchy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy)
+```python title="Method definition"
+def update_user_hierarchy(
+    self,
+    *,
+    UserId: str,
+    InstanceId: str,
+    HierarchyGroupId: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserHierarchyRequestRequestTypeDef](./type_defs.md#updateuserhierarchyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `HierarchyGroupId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserHierarchyRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+    "InstanceId": ...,
+}
 
-<a id="update\_user\_hierarchy\_group\_name"></a>
+parent.update_user_hierarchy(**kwargs)
+```
 
-### update_user_hierarchy_group_name
+1. See [:material-code-braces: UpdateUserHierarchyRequestRequestTypeDef](./type_defs.md#updateuserhierarchyrequestrequesttypedef) 
+
+### update\_user\_hierarchy\_group\_name
 
 Updates the name of the user hierarchy group.
 
-Type annotations for `boto3.client("connect").update_user_hierarchy_group_name`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_user_hierarchy_group_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_group_name)
 
-Boto3 documentation:
-[Connect.Client.update_user_hierarchy_group_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_group_name)
+```python title="Method definition"
+def update_user_hierarchy_group_name(
+    self,
+    *,
+    Name: str,
+    HierarchyGroupId: str,
+    InstanceId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserHierarchyGroupNameRequestRequestTypeDef](./type_defs.md#updateuserhierarchygroupnamerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `HierarchyGroupId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateUserHierarchyGroupNameRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "HierarchyGroupId": ...,
+    "InstanceId": ...,
+}
 
-<a id="update\_user\_hierarchy\_structure"></a>
+parent.update_user_hierarchy_group_name(**kwargs)
+```
 
-### update_user_hierarchy_structure
+1. See [:material-code-braces: UpdateUserHierarchyGroupNameRequestRequestTypeDef](./type_defs.md#updateuserhierarchygroupnamerequestrequesttypedef) 
+
+### update\_user\_hierarchy\_structure
 
 Updates the user hierarchy structure: add, remove, and rename user hierarchy
 levels.
 
-Type annotations for `boto3.client("connect").update_user_hierarchy_structure`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_user_hierarchy_structure` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_structure)
 
-Boto3 documentation:
-[Connect.Client.update_user_hierarchy_structure](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_hierarchy_structure)
+```python title="Method definition"
+def update_user_hierarchy_structure(
+    self,
+    *,
+    HierarchyStructure: HierarchyStructureUpdateTypeDef,  # (1)
+    InstanceId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserHierarchyStructureRequestRequestTypeDef](./type_defs.md#updateuserhierarchystructurerequestrequesttypedef).
+1. See [:material-code-braces: HierarchyStructureUpdateTypeDef](./type_defs.md#hierarchystructureupdatetypedef) 
 
-Keyword-only arguments:
 
-- `HierarchyStructure`:
-  [HierarchyStructureUpdateTypeDef](./type_defs.md#hierarchystructureupdatetypedef)
-  *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateUserHierarchyStructureRequestRequestTypeDef = {  # (1)
+    "HierarchyStructure": ...,
+    "InstanceId": ...,
+}
 
-<a id="update\_user\_identity\_info"></a>
+parent.update_user_hierarchy_structure(**kwargs)
+```
 
-### update_user_identity_info
+1. See [:material-code-braces: UpdateUserHierarchyStructureRequestRequestTypeDef](./type_defs.md#updateuserhierarchystructurerequestrequesttypedef) 
+
+### update\_user\_identity\_info
 
 Updates the identity information for the specified user.
 
-Type annotations for `boto3.client("connect").update_user_identity_info`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_user_identity_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_identity_info)
 
-Boto3 documentation:
-[Connect.Client.update_user_identity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_identity_info)
+```python title="Method definition"
+def update_user_identity_info(
+    self,
+    *,
+    IdentityInfo: UserIdentityInfoTypeDef,  # (1)
+    UserId: str,
+    InstanceId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserIdentityInfoRequestRequestTypeDef](./type_defs.md#updateuseridentityinforequestrequesttypedef).
+1. See [:material-code-braces: UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef) 
 
-Keyword-only arguments:
 
-- `IdentityInfo`:
-  [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
-  *(required)*
-- `UserId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateUserIdentityInfoRequestRequestTypeDef = {  # (1)
+    "IdentityInfo": ...,
+    "UserId": ...,
+    "InstanceId": ...,
+}
 
-<a id="update\_user\_phone\_config"></a>
+parent.update_user_identity_info(**kwargs)
+```
 
-### update_user_phone_config
+1. See [:material-code-braces: UpdateUserIdentityInfoRequestRequestTypeDef](./type_defs.md#updateuseridentityinforequestrequesttypedef) 
+
+### update\_user\_phone\_config
 
 Updates the phone configuration settings for the specified user.
 
-Type annotations for `boto3.client("connect").update_user_phone_config` method.
+Type annotations and code completion for `#!python boto3.client("connect").update_user_phone_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_phone_config)
 
-Boto3 documentation:
-[Connect.Client.update_user_phone_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_phone_config)
+```python title="Method definition"
+def update_user_phone_config(
+    self,
+    *,
+    PhoneConfig: UserPhoneConfigTypeDef,  # (1)
+    UserId: str,
+    InstanceId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserPhoneConfigRequestRequestTypeDef](./type_defs.md#updateuserphoneconfigrequestrequesttypedef).
+1. See [:material-code-braces: UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) 
 
-Keyword-only arguments:
 
-- `PhoneConfig`:
-  [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) *(required)*
-- `UserId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateUserPhoneConfigRequestRequestTypeDef = {  # (1)
+    "PhoneConfig": ...,
+    "UserId": ...,
+    "InstanceId": ...,
+}
 
-<a id="update\_user\_routing\_profile"></a>
+parent.update_user_phone_config(**kwargs)
+```
 
-### update_user_routing_profile
+1. See [:material-code-braces: UpdateUserPhoneConfigRequestRequestTypeDef](./type_defs.md#updateuserphoneconfigrequestrequesttypedef) 
+
+### update\_user\_routing\_profile
 
 Assigns the specified routing profile to the specified user.
 
-Type annotations for `boto3.client("connect").update_user_routing_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_user_routing_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_routing_profile)
 
-Boto3 documentation:
-[Connect.Client.update_user_routing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_routing_profile)
+```python title="Method definition"
+def update_user_routing_profile(
+    self,
+    *,
+    RoutingProfileId: str,
+    UserId: str,
+    InstanceId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserRoutingProfileRequestRequestTypeDef](./type_defs.md#updateuserroutingprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoutingProfileId`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRoutingProfileRequestRequestTypeDef = {  # (1)
+    "RoutingProfileId": ...,
+    "UserId": ...,
+    "InstanceId": ...,
+}
 
-<a id="update\_user\_security\_profiles"></a>
+parent.update_user_routing_profile(**kwargs)
+```
 
-### update_user_security_profiles
+1. See [:material-code-braces: UpdateUserRoutingProfileRequestRequestTypeDef](./type_defs.md#updateuserroutingprofilerequestrequesttypedef) 
+
+### update\_user\_security\_profiles
 
 Assigns the specified security profiles to the specified user.
 
-Type annotations for `boto3.client("connect").update_user_security_profiles`
-method.
+Type annotations and code completion for `#!python boto3.client("connect").update_user_security_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_security_profiles)
 
-Boto3 documentation:
-[Connect.Client.update_user_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.update_user_security_profiles)
+```python title="Method definition"
+def update_user_security_profiles(
+    self,
+    *,
+    SecurityProfileIds: Sequence[str],
+    UserId: str,
+    InstanceId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserSecurityProfilesRequestRequestTypeDef](./type_defs.md#updateusersecurityprofilesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SecurityProfileIds`: `Sequence`\[`str`\] *(required)*
-- `UserId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateUserSecurityProfilesRequestRequestTypeDef = {  # (1)
+    "SecurityProfileIds": ...,
+    "UserId": ...,
+    "InstanceId": ...,
+}
 
-<a id="get_paginator"></a>
+parent.update_user_security_profiles(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateUserSecurityProfilesRequestRequestTypeDef](./type_defs.md#updateusersecurityprofilesrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("connect").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator` method with overloads.
 
-- `client.get_paginator("get_metric_data")` ->
-  [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
-- `client.get_paginator("list_agent_statuses")` ->
-  [ListAgentStatusesPaginator](./paginators.md#listagentstatusespaginator)
-- `client.get_paginator("list_approved_origins")` ->
-  [ListApprovedOriginsPaginator](./paginators.md#listapprovedoriginspaginator)
-- `client.get_paginator("list_bots")` ->
-  [ListBotsPaginator](./paginators.md#listbotspaginator)
-- `client.get_paginator("list_contact_flow_modules")` ->
-  [ListContactFlowModulesPaginator](./paginators.md#listcontactflowmodulespaginator)
-- `client.get_paginator("list_contact_flows")` ->
-  [ListContactFlowsPaginator](./paginators.md#listcontactflowspaginator)
-- `client.get_paginator("list_contact_references")` ->
-  [ListContactReferencesPaginator](./paginators.md#listcontactreferencespaginator)
-- `client.get_paginator("list_default_vocabularies")` ->
-  [ListDefaultVocabulariesPaginator](./paginators.md#listdefaultvocabulariespaginator)
-- `client.get_paginator("list_hours_of_operations")` ->
-  [ListHoursOfOperationsPaginator](./paginators.md#listhoursofoperationspaginator)
-- `client.get_paginator("list_instance_attributes")` ->
-  [ListInstanceAttributesPaginator](./paginators.md#listinstanceattributespaginator)
-- `client.get_paginator("list_instance_storage_configs")` ->
-  [ListInstanceStorageConfigsPaginator](./paginators.md#listinstancestorageconfigspaginator)
-- `client.get_paginator("list_instances")` ->
-  [ListInstancesPaginator](./paginators.md#listinstancespaginator)
-- `client.get_paginator("list_integration_associations")` ->
-  [ListIntegrationAssociationsPaginator](./paginators.md#listintegrationassociationspaginator)
-- `client.get_paginator("list_lambda_functions")` ->
-  [ListLambdaFunctionsPaginator](./paginators.md#listlambdafunctionspaginator)
-- `client.get_paginator("list_lex_bots")` ->
-  [ListLexBotsPaginator](./paginators.md#listlexbotspaginator)
-- `client.get_paginator("list_phone_numbers")` ->
-  [ListPhoneNumbersPaginator](./paginators.md#listphonenumberspaginator)
-- `client.get_paginator("list_prompts")` ->
-  [ListPromptsPaginator](./paginators.md#listpromptspaginator)
-- `client.get_paginator("list_queue_quick_connects")` ->
-  [ListQueueQuickConnectsPaginator](./paginators.md#listqueuequickconnectspaginator)
-- `client.get_paginator("list_queues")` ->
-  [ListQueuesPaginator](./paginators.md#listqueuespaginator)
-- `client.get_paginator("list_quick_connects")` ->
-  [ListQuickConnectsPaginator](./paginators.md#listquickconnectspaginator)
-- `client.get_paginator("list_routing_profile_queues")` ->
-  [ListRoutingProfileQueuesPaginator](./paginators.md#listroutingprofilequeuespaginator)
-- `client.get_paginator("list_routing_profiles")` ->
-  [ListRoutingProfilesPaginator](./paginators.md#listroutingprofilespaginator)
-- `client.get_paginator("list_security_keys")` ->
-  [ListSecurityKeysPaginator](./paginators.md#listsecuritykeyspaginator)
-- `client.get_paginator("list_security_profile_permissions")` ->
-  [ListSecurityProfilePermissionsPaginator](./paginators.md#listsecurityprofilepermissionspaginator)
-- `client.get_paginator("list_security_profiles")` ->
-  [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
-- `client.get_paginator("list_use_cases")` ->
-  [ListUseCasesPaginator](./paginators.md#listusecasespaginator)
-- `client.get_paginator("list_user_hierarchy_groups")` ->
-  [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
-- `client.get_paginator("list_users")` ->
-  [ListUsersPaginator](./paginators.md#listuserspaginator)
-- `client.get_paginator("search_vocabularies")` ->
-  [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)
+- `client.get_paginator("get_metric_data")` -> [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
+- `client.get_paginator("list_agent_statuses")` -> [ListAgentStatusesPaginator](./paginators.md#listagentstatusespaginator)
+- `client.get_paginator("list_approved_origins")` -> [ListApprovedOriginsPaginator](./paginators.md#listapprovedoriginspaginator)
+- `client.get_paginator("list_bots")` -> [ListBotsPaginator](./paginators.md#listbotspaginator)
+- `client.get_paginator("list_contact_flow_modules")` -> [ListContactFlowModulesPaginator](./paginators.md#listcontactflowmodulespaginator)
+- `client.get_paginator("list_contact_flows")` -> [ListContactFlowsPaginator](./paginators.md#listcontactflowspaginator)
+- `client.get_paginator("list_contact_references")` -> [ListContactReferencesPaginator](./paginators.md#listcontactreferencespaginator)
+- `client.get_paginator("list_default_vocabularies")` -> [ListDefaultVocabulariesPaginator](./paginators.md#listdefaultvocabulariespaginator)
+- `client.get_paginator("list_hours_of_operations")` -> [ListHoursOfOperationsPaginator](./paginators.md#listhoursofoperationspaginator)
+- `client.get_paginator("list_instance_attributes")` -> [ListInstanceAttributesPaginator](./paginators.md#listinstanceattributespaginator)
+- `client.get_paginator("list_instance_storage_configs")` -> [ListInstanceStorageConfigsPaginator](./paginators.md#listinstancestorageconfigspaginator)
+- `client.get_paginator("list_instances")` -> [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+- `client.get_paginator("list_integration_associations")` -> [ListIntegrationAssociationsPaginator](./paginators.md#listintegrationassociationspaginator)
+- `client.get_paginator("list_lambda_functions")` -> [ListLambdaFunctionsPaginator](./paginators.md#listlambdafunctionspaginator)
+- `client.get_paginator("list_lex_bots")` -> [ListLexBotsPaginator](./paginators.md#listlexbotspaginator)
+- `client.get_paginator("list_phone_numbers")` -> [ListPhoneNumbersPaginator](./paginators.md#listphonenumberspaginator)
+- `client.get_paginator("list_prompts")` -> [ListPromptsPaginator](./paginators.md#listpromptspaginator)
+- `client.get_paginator("list_queue_quick_connects")` -> [ListQueueQuickConnectsPaginator](./paginators.md#listqueuequickconnectspaginator)
+- `client.get_paginator("list_queues")` -> [ListQueuesPaginator](./paginators.md#listqueuespaginator)
+- `client.get_paginator("list_quick_connects")` -> [ListQuickConnectsPaginator](./paginators.md#listquickconnectspaginator)
+- `client.get_paginator("list_routing_profile_queues")` -> [ListRoutingProfileQueuesPaginator](./paginators.md#listroutingprofilequeuespaginator)
+- `client.get_paginator("list_routing_profiles")` -> [ListRoutingProfilesPaginator](./paginators.md#listroutingprofilespaginator)
+- `client.get_paginator("list_security_keys")` -> [ListSecurityKeysPaginator](./paginators.md#listsecuritykeyspaginator)
+- `client.get_paginator("list_security_profile_permissions")` -> [ListSecurityProfilePermissionsPaginator](./paginators.md#listsecurityprofilepermissionspaginator)
+- `client.get_paginator("list_security_profiles")` -> [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
+- `client.get_paginator("list_use_cases")` -> [ListUseCasesPaginator](./paginators.md#listusecasespaginator)
+- `client.get_paginator("list_user_hierarchy_groups")` -> [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
+- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("search_vocabularies")` -> [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)
+
+
+

@@ -1,27 +1,18 @@
-<a id="paginators-for-boto3-support-module"></a>
-
-# Paginators for boto3 Support module
+# Paginators
 
 > [Index](../README.md) > [Support](./README.md) > Paginators
 
-Auto-generated documentation for
-[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
-type annotations stubs module
-[mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
+!!! note ""
 
-- [Paginators for boto3 Support module](#paginators-for-boto3-support-module)
-  - [DescribeCasesPaginator](#describecasespaginator)
-  - [DescribeCommunicationsPaginator](#describecommunicationspaginator)
-
-<a id="describecasespaginator"></a>
+    Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+    type annotations stubs module [mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
 
 ## DescribeCasesPaginator
 
-Type annotations for `boto3.client("support").get_paginator("describe_cases")`.
+Type annotations and code completion for `#!python boto3.client("support").get_paginator("describe_cases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_support.paginator import DescribeCasesPaginator
@@ -30,34 +21,46 @@ def get_describe_cases_paginator() -> DescribeCasesPaginator:
     return Session().client("support").get_paginator("describe_cases")
 ```
 
-Boto3 documentation:
-[Support.Paginator.DescribeCases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCases)
 
-Arguments for `DescribeCasesPaginator.paginate` method:
+### paginate
 
-- `caseIdList`: `Sequence`\[`str`\]
-- `displayId`: `str`
-- `afterTime`: `str`
-- `beforeTime`: `str`
-- `includeResolvedCases`: `bool`
-- `language`: `str`
-- `includeCommunications`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCasesPaginator.paginate` method.
 
-`DescribeCasesPaginator.paginate` returns
-`_PageIterator`\[[DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    caseIdList: Sequence[str] = ...,
+    displayId: str = ...,
+    afterTime: str = ...,
+    beforeTime: str = ...,
+    includeResolvedCases: bool = ...,
+    language: str = ...,
+    includeCommunications: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeCasesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describecommunicationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCasesRequestDescribeCasesPaginateTypeDef = {  # (1)
+    "caseIdList": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCasesRequestDescribeCasesPaginateTypeDef](./type_defs.md#describecasesrequestdescribecasespaginatetypedef) 
 ## DescribeCommunicationsPaginator
 
-Type annotations for
-`boto3.client("support").get_paginator("describe_communications")`.
+Type annotations and code completion for `#!python boto3.client("support").get_paginator("describe_communications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCommunications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_support.paginator import DescribeCommunicationsPaginator
@@ -66,16 +69,33 @@ def get_describe_communications_paginator() -> DescribeCommunicationsPaginator:
     return Session().client("support").get_paginator("describe_communications")
 ```
 
-Boto3 documentation:
-[Support.Paginator.DescribeCommunications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Paginator.DescribeCommunications)
 
-Arguments for `DescribeCommunicationsPaginator.paginate` method:
+### paginate
 
-- `caseId`: `str` *(required)*
-- `beforeTime`: `str`
-- `afterTime`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCommunicationsPaginator.paginate` method.
 
-`DescribeCommunicationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    caseId: str,
+    beforeTime: str = ...,
+    afterTime: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeCommunicationsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCommunicationsRequestDescribeCommunicationsPaginateTypeDef = {  # (1)
+    "caseId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCommunicationsRequestDescribeCommunicationsPaginateTypeDef](./type_defs.md#describecommunicationsrequestdescribecommunicationspaginatetypedef) 

@@ -1,3339 +1,4338 @@
-<a id="typed-dictionaries-for-boto3-macie2-module"></a>
-
-# Typed dictionaries for boto3 Macie2 module
+# Typed dictionaries
 
 > [Index](../README.md) > [Macie2](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
-type annotations stubs module
-[mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Macie2 module](#typed-dictionaries-for-boto3-macie2-module)
-  - [AcceptInvitationRequestRequestTypeDef](#acceptinvitationrequestrequesttypedef)
-  - [AccessControlListTypeDef](#accesscontrollisttypedef)
-  - [AccountDetailTypeDef](#accountdetailtypedef)
-  - [AccountLevelPermissionsTypeDef](#accountlevelpermissionstypedef)
-  - [AdminAccountTypeDef](#adminaccounttypedef)
-  - [ApiCallDetailsTypeDef](#apicalldetailstypedef)
-  - [AssumedRoleTypeDef](#assumedroletypedef)
-  - [AwsAccountTypeDef](#awsaccounttypedef)
-  - [AwsServiceTypeDef](#awsservicetypedef)
-  - [BatchGetCustomDataIdentifierSummaryTypeDef](#batchgetcustomdataidentifiersummarytypedef)
-  - [BatchGetCustomDataIdentifiersRequestRequestTypeDef](#batchgetcustomdataidentifiersrequestrequesttypedef)
-  - [BatchGetCustomDataIdentifiersResponseTypeDef](#batchgetcustomdataidentifiersresponsetypedef)
-  - [BlockPublicAccessTypeDef](#blockpublicaccesstypedef)
-  - [BucketCountByEffectivePermissionTypeDef](#bucketcountbyeffectivepermissiontypedef)
-  - [BucketCountByEncryptionTypeTypeDef](#bucketcountbyencryptiontypetypedef)
-  - [BucketCountBySharedAccessTypeTypeDef](#bucketcountbysharedaccesstypetypedef)
-  - [BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef](#bucketcountpolicyallowsunencryptedobjectuploadstypedef)
-  - [BucketCriteriaAdditionalPropertiesTypeDef](#bucketcriteriaadditionalpropertiestypedef)
-  - [BucketLevelPermissionsTypeDef](#bucketlevelpermissionstypedef)
-  - [BucketMetadataTypeDef](#bucketmetadatatypedef)
-  - [BucketPermissionConfigurationTypeDef](#bucketpermissionconfigurationtypedef)
-  - [BucketPolicyTypeDef](#bucketpolicytypedef)
-  - [BucketPublicAccessTypeDef](#bucketpublicaccesstypedef)
-  - [BucketServerSideEncryptionTypeDef](#bucketserversideencryptiontypedef)
-  - [BucketSortCriteriaTypeDef](#bucketsortcriteriatypedef)
-  - [CellTypeDef](#celltypedef)
-  - [ClassificationDetailsTypeDef](#classificationdetailstypedef)
-  - [ClassificationExportConfigurationTypeDef](#classificationexportconfigurationtypedef)
-  - [ClassificationResultStatusTypeDef](#classificationresultstatustypedef)
-  - [ClassificationResultTypeDef](#classificationresulttypedef)
-  - [CreateClassificationJobRequestRequestTypeDef](#createclassificationjobrequestrequesttypedef)
-  - [CreateClassificationJobResponseTypeDef](#createclassificationjobresponsetypedef)
-  - [CreateCustomDataIdentifierRequestRequestTypeDef](#createcustomdataidentifierrequestrequesttypedef)
-  - [CreateCustomDataIdentifierResponseTypeDef](#createcustomdataidentifierresponsetypedef)
-  - [CreateFindingsFilterRequestRequestTypeDef](#createfindingsfilterrequestrequesttypedef)
-  - [CreateFindingsFilterResponseTypeDef](#createfindingsfilterresponsetypedef)
-  - [CreateInvitationsRequestRequestTypeDef](#createinvitationsrequestrequesttypedef)
-  - [CreateInvitationsResponseTypeDef](#createinvitationsresponsetypedef)
-  - [CreateMemberRequestRequestTypeDef](#creatememberrequestrequesttypedef)
-  - [CreateMemberResponseTypeDef](#creatememberresponsetypedef)
-  - [CreateSampleFindingsRequestRequestTypeDef](#createsamplefindingsrequestrequesttypedef)
-  - [CriteriaBlockForJobTypeDef](#criteriablockforjobtypedef)
-  - [CriteriaForJobTypeDef](#criteriaforjobtypedef)
-  - [CriterionAdditionalPropertiesTypeDef](#criterionadditionalpropertiestypedef)
-  - [CustomDataIdentifierSummaryTypeDef](#customdataidentifiersummarytypedef)
-  - [CustomDataIdentifiersTypeDef](#customdataidentifierstypedef)
-  - [CustomDetectionTypeDef](#customdetectiontypedef)
-  - [DeclineInvitationsRequestRequestTypeDef](#declineinvitationsrequestrequesttypedef)
-  - [DeclineInvitationsResponseTypeDef](#declineinvitationsresponsetypedef)
-  - [DefaultDetectionTypeDef](#defaultdetectiontypedef)
-  - [DeleteCustomDataIdentifierRequestRequestTypeDef](#deletecustomdataidentifierrequestrequesttypedef)
-  - [DeleteFindingsFilterRequestRequestTypeDef](#deletefindingsfilterrequestrequesttypedef)
-  - [DeleteInvitationsRequestRequestTypeDef](#deleteinvitationsrequestrequesttypedef)
-  - [DeleteInvitationsResponseTypeDef](#deleteinvitationsresponsetypedef)
-  - [DeleteMemberRequestRequestTypeDef](#deletememberrequestrequesttypedef)
-  - [DescribeBucketsRequestRequestTypeDef](#describebucketsrequestrequesttypedef)
-  - [DescribeBucketsResponseTypeDef](#describebucketsresponsetypedef)
-  - [DescribeClassificationJobRequestRequestTypeDef](#describeclassificationjobrequestrequesttypedef)
-  - [DescribeClassificationJobResponseTypeDef](#describeclassificationjobresponsetypedef)
-  - [DescribeOrganizationConfigurationResponseTypeDef](#describeorganizationconfigurationresponsetypedef)
-  - [DisableOrganizationAdminAccountRequestRequestTypeDef](#disableorganizationadminaccountrequestrequesttypedef)
-  - [DisassociateMemberRequestRequestTypeDef](#disassociatememberrequestrequesttypedef)
-  - [DomainDetailsTypeDef](#domaindetailstypedef)
-  - [EnableMacieRequestRequestTypeDef](#enablemacierequestrequesttypedef)
-  - [EnableOrganizationAdminAccountRequestRequestTypeDef](#enableorganizationadminaccountrequestrequesttypedef)
-  - [FederatedUserTypeDef](#federatedusertypedef)
-  - [FindingActionTypeDef](#findingactiontypedef)
-  - [FindingActorTypeDef](#findingactortypedef)
-  - [FindingCriteriaTypeDef](#findingcriteriatypedef)
-  - [FindingStatisticsSortCriteriaTypeDef](#findingstatisticssortcriteriatypedef)
-  - [FindingTypeDef](#findingtypedef)
-  - [FindingsFilterListItemTypeDef](#findingsfilterlistitemtypedef)
-  - [GetAdministratorAccountResponseTypeDef](#getadministratoraccountresponsetypedef)
-  - [GetBucketStatisticsRequestRequestTypeDef](#getbucketstatisticsrequestrequesttypedef)
-  - [GetBucketStatisticsResponseTypeDef](#getbucketstatisticsresponsetypedef)
-  - [GetClassificationExportConfigurationResponseTypeDef](#getclassificationexportconfigurationresponsetypedef)
-  - [GetCustomDataIdentifierRequestRequestTypeDef](#getcustomdataidentifierrequestrequesttypedef)
-  - [GetCustomDataIdentifierResponseTypeDef](#getcustomdataidentifierresponsetypedef)
-  - [GetFindingStatisticsRequestRequestTypeDef](#getfindingstatisticsrequestrequesttypedef)
-  - [GetFindingStatisticsResponseTypeDef](#getfindingstatisticsresponsetypedef)
-  - [GetFindingsFilterRequestRequestTypeDef](#getfindingsfilterrequestrequesttypedef)
-  - [GetFindingsFilterResponseTypeDef](#getfindingsfilterresponsetypedef)
-  - [GetFindingsPublicationConfigurationResponseTypeDef](#getfindingspublicationconfigurationresponsetypedef)
-  - [GetFindingsRequestRequestTypeDef](#getfindingsrequestrequesttypedef)
-  - [GetFindingsResponseTypeDef](#getfindingsresponsetypedef)
-  - [GetInvitationsCountResponseTypeDef](#getinvitationscountresponsetypedef)
-  - [GetMacieSessionResponseTypeDef](#getmaciesessionresponsetypedef)
-  - [GetMasterAccountResponseTypeDef](#getmasteraccountresponsetypedef)
-  - [GetMemberRequestRequestTypeDef](#getmemberrequestrequesttypedef)
-  - [GetMemberResponseTypeDef](#getmemberresponsetypedef)
-  - [GetUsageStatisticsRequestRequestTypeDef](#getusagestatisticsrequestrequesttypedef)
-  - [GetUsageStatisticsResponseTypeDef](#getusagestatisticsresponsetypedef)
-  - [GetUsageTotalsRequestRequestTypeDef](#getusagetotalsrequestrequesttypedef)
-  - [GetUsageTotalsResponseTypeDef](#getusagetotalsresponsetypedef)
-  - [GroupCountTypeDef](#groupcounttypedef)
-  - [IamUserTypeDef](#iamusertypedef)
-  - [InvitationTypeDef](#invitationtypedef)
-  - [IpAddressDetailsTypeDef](#ipaddressdetailstypedef)
-  - [IpCityTypeDef](#ipcitytypedef)
-  - [IpCountryTypeDef](#ipcountrytypedef)
-  - [IpGeoLocationTypeDef](#ipgeolocationtypedef)
-  - [IpOwnerTypeDef](#ipownertypedef)
-  - [JobDetailsTypeDef](#jobdetailstypedef)
-  - [JobScheduleFrequencyTypeDef](#jobschedulefrequencytypedef)
-  - [JobScopeTermTypeDef](#jobscopetermtypedef)
-  - [JobScopingBlockTypeDef](#jobscopingblocktypedef)
-  - [JobSummaryTypeDef](#jobsummarytypedef)
-  - [KeyValuePairTypeDef](#keyvaluepairtypedef)
-  - [LastRunErrorStatusTypeDef](#lastrunerrorstatustypedef)
-  - [ListClassificationJobsRequestRequestTypeDef](#listclassificationjobsrequestrequesttypedef)
-  - [ListClassificationJobsResponseTypeDef](#listclassificationjobsresponsetypedef)
-  - [ListCustomDataIdentifiersRequestRequestTypeDef](#listcustomdataidentifiersrequestrequesttypedef)
-  - [ListCustomDataIdentifiersResponseTypeDef](#listcustomdataidentifiersresponsetypedef)
-  - [ListFindingsFiltersRequestRequestTypeDef](#listfindingsfiltersrequestrequesttypedef)
-  - [ListFindingsFiltersResponseTypeDef](#listfindingsfiltersresponsetypedef)
-  - [ListFindingsRequestRequestTypeDef](#listfindingsrequestrequesttypedef)
-  - [ListFindingsResponseTypeDef](#listfindingsresponsetypedef)
-  - [ListInvitationsRequestRequestTypeDef](#listinvitationsrequestrequesttypedef)
-  - [ListInvitationsResponseTypeDef](#listinvitationsresponsetypedef)
-  - [ListJobsFilterCriteriaTypeDef](#listjobsfiltercriteriatypedef)
-  - [ListJobsFilterTermTypeDef](#listjobsfiltertermtypedef)
-  - [ListJobsSortCriteriaTypeDef](#listjobssortcriteriatypedef)
-  - [ListManagedDataIdentifiersRequestRequestTypeDef](#listmanageddataidentifiersrequestrequesttypedef)
-  - [ListManagedDataIdentifiersResponseTypeDef](#listmanageddataidentifiersresponsetypedef)
-  - [ListMembersRequestRequestTypeDef](#listmembersrequestrequesttypedef)
-  - [ListMembersResponseTypeDef](#listmembersresponsetypedef)
-  - [ListOrganizationAdminAccountsRequestRequestTypeDef](#listorganizationadminaccountsrequestrequesttypedef)
-  - [ListOrganizationAdminAccountsResponseTypeDef](#listorganizationadminaccountsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ManagedDataIdentifierSummaryTypeDef](#manageddataidentifiersummarytypedef)
-  - [MatchingBucketTypeDef](#matchingbuckettypedef)
-  - [MatchingResourceTypeDef](#matchingresourcetypedef)
-  - [MemberTypeDef](#membertypedef)
-  - [MonthlyScheduleTypeDef](#monthlyscheduletypedef)
-  - [ObjectCountByEncryptionTypeTypeDef](#objectcountbyencryptiontypetypedef)
-  - [ObjectLevelStatisticsTypeDef](#objectlevelstatisticstypedef)
-  - [OccurrencesTypeDef](#occurrencestypedef)
-  - [PageTypeDef](#pagetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PolicyDetailsTypeDef](#policydetailstypedef)
-  - [PutClassificationExportConfigurationRequestRequestTypeDef](#putclassificationexportconfigurationrequestrequesttypedef)
-  - [PutClassificationExportConfigurationResponseTypeDef](#putclassificationexportconfigurationresponsetypedef)
-  - [PutFindingsPublicationConfigurationRequestRequestTypeDef](#putfindingspublicationconfigurationrequestrequesttypedef)
-  - [RangeTypeDef](#rangetypedef)
-  - [RecordTypeDef](#recordtypedef)
-  - [ReplicationDetailsTypeDef](#replicationdetailstypedef)
-  - [ResourcesAffectedTypeDef](#resourcesaffectedtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3BucketCriteriaForJobTypeDef](#s3bucketcriteriaforjobtypedef)
-  - [S3BucketDefinitionForJobTypeDef](#s3bucketdefinitionforjobtypedef)
-  - [S3BucketOwnerTypeDef](#s3bucketownertypedef)
-  - [S3BucketTypeDef](#s3buckettypedef)
-  - [S3DestinationTypeDef](#s3destinationtypedef)
-  - [S3JobDefinitionTypeDef](#s3jobdefinitiontypedef)
-  - [S3ObjectTypeDef](#s3objecttypedef)
-  - [ScopingTypeDef](#scopingtypedef)
-  - [SearchResourcesBucketCriteriaTypeDef](#searchresourcesbucketcriteriatypedef)
-  - [SearchResourcesCriteriaBlockTypeDef](#searchresourcescriteriablocktypedef)
-  - [SearchResourcesCriteriaTypeDef](#searchresourcescriteriatypedef)
-  - [SearchResourcesRequestRequestTypeDef](#searchresourcesrequestrequesttypedef)
-  - [SearchResourcesResponseTypeDef](#searchresourcesresponsetypedef)
-  - [SearchResourcesSimpleCriterionTypeDef](#searchresourcessimplecriteriontypedef)
-  - [SearchResourcesSortCriteriaTypeDef](#searchresourcessortcriteriatypedef)
-  - [SearchResourcesTagCriterionPairTypeDef](#searchresourcestagcriterionpairtypedef)
-  - [SearchResourcesTagCriterionTypeDef](#searchresourcestagcriteriontypedef)
-  - [SecurityHubConfigurationTypeDef](#securityhubconfigurationtypedef)
-  - [SensitiveDataItemTypeDef](#sensitivedataitemtypedef)
-  - [ServerSideEncryptionTypeDef](#serversideencryptiontypedef)
-  - [ServiceLimitTypeDef](#servicelimittypedef)
-  - [SessionContextAttributesTypeDef](#sessioncontextattributestypedef)
-  - [SessionContextTypeDef](#sessioncontexttypedef)
-  - [SessionIssuerTypeDef](#sessionissuertypedef)
-  - [SeverityLevelTypeDef](#severityleveltypedef)
-  - [SeverityTypeDef](#severitytypedef)
-  - [SimpleCriterionForJobTypeDef](#simplecriterionforjobtypedef)
-  - [SimpleScopeTermTypeDef](#simplescopetermtypedef)
-  - [SortCriteriaTypeDef](#sortcriteriatypedef)
-  - [StatisticsTypeDef](#statisticstypedef)
-  - [TagCriterionForJobTypeDef](#tagcriterionforjobtypedef)
-  - [TagCriterionPairForJobTypeDef](#tagcriterionpairforjobtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagScopeTermTypeDef](#tagscopetermtypedef)
-  - [TagValuePairTypeDef](#tagvaluepairtypedef)
-  - [TestCustomDataIdentifierRequestRequestTypeDef](#testcustomdataidentifierrequestrequesttypedef)
-  - [TestCustomDataIdentifierResponseTypeDef](#testcustomdataidentifierresponsetypedef)
-  - [UnprocessedAccountTypeDef](#unprocessedaccounttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateClassificationJobRequestRequestTypeDef](#updateclassificationjobrequestrequesttypedef)
-  - [UpdateFindingsFilterRequestRequestTypeDef](#updatefindingsfilterrequestrequesttypedef)
-  - [UpdateFindingsFilterResponseTypeDef](#updatefindingsfilterresponsetypedef)
-  - [UpdateMacieSessionRequestRequestTypeDef](#updatemaciesessionrequestrequesttypedef)
-  - [UpdateMemberSessionRequestRequestTypeDef](#updatemembersessionrequestrequesttypedef)
-  - [UpdateOrganizationConfigurationRequestRequestTypeDef](#updateorganizationconfigurationrequestrequesttypedef)
-  - [UsageByAccountTypeDef](#usagebyaccounttypedef)
-  - [UsageRecordTypeDef](#usagerecordtypedef)
-  - [UsageStatisticsFilterTypeDef](#usagestatisticsfiltertypedef)
-  - [UsageStatisticsSortByTypeDef](#usagestatisticssortbytypedef)
-  - [UsageTotalTypeDef](#usagetotaltypedef)
-  - [UserIdentityRootTypeDef](#useridentityroottypedef)
-  - [UserIdentityTypeDef](#useridentitytypedef)
-  - [UserPausedDetailsTypeDef](#userpauseddetailstypedef)
-  - [WeeklyScheduleTypeDef](#weeklyscheduletypedef)
-
-<a id="acceptinvitationrequestrequesttypedef"></a>
+    Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+    type annotations stubs module [mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 ## AcceptInvitationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef
+
+def get_value() -> AcceptInvitationRequestRequestTypeDef:
+    return {
+        "invitationId": ...,
+    }
 ```
 
-Required fields:
-
-- `invitationId`: `str`
-
-Optional fields:
-
-- `administratorAccountId`: `str`
-- `masterAccount`: `str`
-
-<a id="accesscontrollisttypedef"></a>
+```python title="Definition"
+class AcceptInvitationRequestRequestTypeDef(TypedDict):
+    invitationId: str,
+    administratorAccountId: NotRequired[str],
+    masterAccount: NotRequired[str],
+```
 
 ## AccessControlListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import AccessControlListTypeDef
+
+def get_value() -> AccessControlListTypeDef:
+    return {
+        "allowsPublicReadAccess": ...,
+    }
 ```
 
-Optional fields:
-
-- `allowsPublicReadAccess`: `bool`
-- `allowsPublicWriteAccess`: `bool`
-
-<a id="accountdetailtypedef"></a>
+```python title="Definition"
+class AccessControlListTypeDef(TypedDict):
+    allowsPublicReadAccess: NotRequired[bool],
+    allowsPublicWriteAccess: NotRequired[bool],
+```
 
 ## AccountDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import AccountDetailTypeDef
+
+def get_value() -> AccountDetailTypeDef:
+    return {
+        "accountId": ...,
+        "email": ...,
+    }
 ```
 
-Required fields:
-
-- `accountId`: `str`
-- `email`: `str`
-
-<a id="accountlevelpermissionstypedef"></a>
+```python title="Definition"
+class AccountDetailTypeDef(TypedDict):
+    accountId: str,
+    email: str,
+```
 
 ## AccountLevelPermissionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import AccountLevelPermissionsTypeDef
+
+def get_value() -> AccountLevelPermissionsTypeDef:
+    return {
+        "blockPublicAccess": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountLevelPermissionsTypeDef(TypedDict):
+    blockPublicAccess: NotRequired[BlockPublicAccessTypeDef],  # (1)
+```
 
-- `blockPublicAccess`:
-  [BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef)
-
-<a id="adminaccounttypedef"></a>
-
+1. See [:material-code-braces: BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef) 
 ## AdminAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import AdminAccountTypeDef
+
+def get_value() -> AdminAccountTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AdminAccountTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    status: NotRequired[AdminStatusType],  # (1)
+```
 
-- `accountId`: `str`
-- `status`: [AdminStatusType](./literals.md#adminstatustype)
-
-<a id="apicalldetailstypedef"></a>
-
+1. See [:material-code-brackets: AdminStatusType](./literals.md#adminstatustype) 
 ## ApiCallDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ApiCallDetailsTypeDef
+
+def get_value() -> ApiCallDetailsTypeDef:
+    return {
+        "api": ...,
+    }
 ```
 
-Optional fields:
-
-- `api`: `str`
-- `apiServiceName`: `str`
-- `firstSeen`: `datetime`
-- `lastSeen`: `datetime`
-
-<a id="assumedroletypedef"></a>
+```python title="Definition"
+class ApiCallDetailsTypeDef(TypedDict):
+    api: NotRequired[str],
+    apiServiceName: NotRequired[str],
+    firstSeen: NotRequired[datetime],
+    lastSeen: NotRequired[datetime],
+```
 
 ## AssumedRoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import AssumedRoleTypeDef
+
+def get_value() -> AssumedRoleTypeDef:
+    return {
+        "accessKeyId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssumedRoleTypeDef(TypedDict):
+    accessKeyId: NotRequired[str],
+    accountId: NotRequired[str],
+    arn: NotRequired[str],
+    principalId: NotRequired[str],
+    sessionContext: NotRequired[SessionContextTypeDef],  # (1)
+```
 
-- `accessKeyId`: `str`
-- `accountId`: `str`
-- `arn`: `str`
-- `principalId`: `str`
-- `sessionContext`:
-  [SessionContextTypeDef](./type_defs.md#sessioncontexttypedef)
-
-<a id="awsaccounttypedef"></a>
-
+1. See [:material-code-braces: SessionContextTypeDef](./type_defs.md#sessioncontexttypedef) 
 ## AwsAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import AwsAccountTypeDef
+
+def get_value() -> AwsAccountTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-- `principalId`: `str`
-
-<a id="awsservicetypedef"></a>
+```python title="Definition"
+class AwsAccountTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    principalId: NotRequired[str],
+```
 
 ## AwsServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import AwsServiceTypeDef
+
+def get_value() -> AwsServiceTypeDef:
+    return {
+        "invokedBy": ...,
+    }
 ```
 
-Optional fields:
-
-- `invokedBy`: `str`
-
-<a id="batchgetcustomdataidentifiersummarytypedef"></a>
+```python title="Definition"
+class AwsServiceTypeDef(TypedDict):
+    invokedBy: NotRequired[str],
+```
 
 ## BatchGetCustomDataIdentifierSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifierSummaryTypeDef
+
+def get_value() -> BatchGetCustomDataIdentifierSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `deleted`: `bool`
-- `description`: `str`
-- `id`: `str`
-- `name`: `str`
-
-<a id="batchgetcustomdataidentifiersrequestrequesttypedef"></a>
+```python title="Definition"
+class BatchGetCustomDataIdentifierSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    deleted: NotRequired[bool],
+    description: NotRequired[str],
+    id: NotRequired[str],
+    name: NotRequired[str],
+```
 
 ## BatchGetCustomDataIdentifiersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifiersRequestRequestTypeDef
+
+def get_value() -> BatchGetCustomDataIdentifiersRequestRequestTypeDef:
+    return {
+        "ids": ...,
+    }
 ```
 
-Optional fields:
-
-- `ids`: `Sequence`\[`str`\]
-
-<a id="batchgetcustomdataidentifiersresponsetypedef"></a>
+```python title="Definition"
+class BatchGetCustomDataIdentifiersRequestRequestTypeDef(TypedDict):
+    ids: NotRequired[Sequence[str]],
+```
 
 ## BatchGetCustomDataIdentifiersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BatchGetCustomDataIdentifiersResponseTypeDef
+
+def get_value() -> BatchGetCustomDataIdentifiersResponseTypeDef:
+    return {
+        "customDataIdentifiers": ...,
+        "notFoundIdentifierIds": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetCustomDataIdentifiersResponseTypeDef(TypedDict):
+    customDataIdentifiers: List[BatchGetCustomDataIdentifierSummaryTypeDef],  # (1)
+    notFoundIdentifierIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `customDataIdentifiers`:
-  `List`\[[BatchGetCustomDataIdentifierSummaryTypeDef](./type_defs.md#batchgetcustomdataidentifiersummarytypedef)\]
-- `notFoundIdentifierIds`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="blockpublicaccesstypedef"></a>
-
+1. See [:material-code-braces: BatchGetCustomDataIdentifierSummaryTypeDef](./type_defs.md#batchgetcustomdataidentifiersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BlockPublicAccessTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BlockPublicAccessTypeDef
+
+def get_value() -> BlockPublicAccessTypeDef:
+    return {
+        "blockPublicAcls": ...,
+    }
 ```
 
-Optional fields:
-
-- `blockPublicAcls`: `bool`
-- `blockPublicPolicy`: `bool`
-- `ignorePublicAcls`: `bool`
-- `restrictPublicBuckets`: `bool`
-
-<a id="bucketcountbyeffectivepermissiontypedef"></a>
+```python title="Definition"
+class BlockPublicAccessTypeDef(TypedDict):
+    blockPublicAcls: NotRequired[bool],
+    blockPublicPolicy: NotRequired[bool],
+    ignorePublicAcls: NotRequired[bool],
+    restrictPublicBuckets: NotRequired[bool],
+```
 
 ## BucketCountByEffectivePermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketCountByEffectivePermissionTypeDef
+
+def get_value() -> BucketCountByEffectivePermissionTypeDef:
+    return {
+        "publiclyAccessible": ...,
+    }
 ```
 
-Optional fields:
-
-- `publiclyAccessible`: `int`
-- `publiclyReadable`: `int`
-- `publiclyWritable`: `int`
-- `unknown`: `int`
-
-<a id="bucketcountbyencryptiontypetypedef"></a>
+```python title="Definition"
+class BucketCountByEffectivePermissionTypeDef(TypedDict):
+    publiclyAccessible: NotRequired[int],
+    publiclyReadable: NotRequired[int],
+    publiclyWritable: NotRequired[int],
+    unknown: NotRequired[int],
+```
 
 ## BucketCountByEncryptionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketCountByEncryptionTypeTypeDef
+
+def get_value() -> BucketCountByEncryptionTypeTypeDef:
+    return {
+        "kmsManaged": ...,
+    }
 ```
 
-Optional fields:
-
-- `kmsManaged`: `int`
-- `s3Managed`: `int`
-- `unencrypted`: `int`
-- `unknown`: `int`
-
-<a id="bucketcountbysharedaccesstypetypedef"></a>
+```python title="Definition"
+class BucketCountByEncryptionTypeTypeDef(TypedDict):
+    kmsManaged: NotRequired[int],
+    s3Managed: NotRequired[int],
+    unencrypted: NotRequired[int],
+    unknown: NotRequired[int],
+```
 
 ## BucketCountBySharedAccessTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketCountBySharedAccessTypeTypeDef
+
+def get_value() -> BucketCountBySharedAccessTypeTypeDef:
+    return {
+        "external": ...,
+    }
 ```
 
-Optional fields:
-
-- `external`: `int`
-- `internal`: `int`
-- `notShared`: `int`
-- `unknown`: `int`
-
-<a id="bucketcountpolicyallowsunencryptedobjectuploadstypedef"></a>
+```python title="Definition"
+class BucketCountBySharedAccessTypeTypeDef(TypedDict):
+    external: NotRequired[int],
+    internal: NotRequired[int],
+    notShared: NotRequired[int],
+    unknown: NotRequired[int],
+```
 
 ## BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef
+
+def get_value() -> BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef:
+    return {
+        "allowsUnencryptedObjectUploads": ...,
+    }
 ```
 
-Optional fields:
-
-- `allowsUnencryptedObjectUploads`: `int`
-- `deniesUnencryptedObjectUploads`: `int`
-- `unknown`: `int`
-
-<a id="bucketcriteriaadditionalpropertiestypedef"></a>
+```python title="Definition"
+class BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef(TypedDict):
+    allowsUnencryptedObjectUploads: NotRequired[int],
+    deniesUnencryptedObjectUploads: NotRequired[int],
+    unknown: NotRequired[int],
+```
 
 ## BucketCriteriaAdditionalPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketCriteriaAdditionalPropertiesTypeDef
+
+def get_value() -> BucketCriteriaAdditionalPropertiesTypeDef:
+    return {
+        "eq": ...,
+    }
 ```
 
-Optional fields:
-
-- `eq`: `Sequence`\[`str`\]
-- `gt`: `int`
-- `gte`: `int`
-- `lt`: `int`
-- `lte`: `int`
-- `neq`: `Sequence`\[`str`\]
-- `prefix`: `str`
-
-<a id="bucketlevelpermissionstypedef"></a>
+```python title="Definition"
+class BucketCriteriaAdditionalPropertiesTypeDef(TypedDict):
+    eq: NotRequired[Sequence[str]],
+    gt: NotRequired[int],
+    gte: NotRequired[int],
+    lt: NotRequired[int],
+    lte: NotRequired[int],
+    neq: NotRequired[Sequence[str]],
+    prefix: NotRequired[str],
+```
 
 ## BucketLevelPermissionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketLevelPermissionsTypeDef
+
+def get_value() -> BucketLevelPermissionsTypeDef:
+    return {
+        "accessControlList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BucketLevelPermissionsTypeDef(TypedDict):
+    accessControlList: NotRequired[AccessControlListTypeDef],  # (1)
+    blockPublicAccess: NotRequired[BlockPublicAccessTypeDef],  # (2)
+    bucketPolicy: NotRequired[BucketPolicyTypeDef],  # (3)
+```
 
-- `accessControlList`:
-  [AccessControlListTypeDef](./type_defs.md#accesscontrollisttypedef)
-- `blockPublicAccess`:
-  [BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef)
-- `bucketPolicy`: [BucketPolicyTypeDef](./type_defs.md#bucketpolicytypedef)
-
-<a id="bucketmetadatatypedef"></a>
-
+1. See [:material-code-braces: AccessControlListTypeDef](./type_defs.md#accesscontrollisttypedef) 
+2. See [:material-code-braces: BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef) 
+3. See [:material-code-braces: BucketPolicyTypeDef](./type_defs.md#bucketpolicytypedef) 
 ## BucketMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketMetadataTypeDef
+
+def get_value() -> BucketMetadataTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BucketMetadataTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    allowsUnencryptedObjectUploads: NotRequired[AllowsUnencryptedObjectUploadsType],  # (1)
+    bucketArn: NotRequired[str],
+    bucketCreatedAt: NotRequired[datetime],
+    bucketName: NotRequired[str],
+    classifiableObjectCount: NotRequired[int],
+    classifiableSizeInBytes: NotRequired[int],
+    errorCode: NotRequired[BucketMetadataErrorCodeType],  # (2)
+    errorMessage: NotRequired[str],
+    jobDetails: NotRequired[JobDetailsTypeDef],  # (3)
+    lastUpdated: NotRequired[datetime],
+    objectCount: NotRequired[int],
+    objectCountByEncryptionType: NotRequired[ObjectCountByEncryptionTypeTypeDef],  # (4)
+    publicAccess: NotRequired[BucketPublicAccessTypeDef],  # (5)
+    region: NotRequired[str],
+    replicationDetails: NotRequired[ReplicationDetailsTypeDef],  # (6)
+    serverSideEncryption: NotRequired[BucketServerSideEncryptionTypeDef],  # (7)
+    sharedAccess: NotRequired[SharedAccessType],  # (8)
+    sizeInBytes: NotRequired[int],
+    sizeInBytesCompressed: NotRequired[int],
+    tags: NotRequired[List[KeyValuePairTypeDef]],  # (9)
+    unclassifiableObjectCount: NotRequired[ObjectLevelStatisticsTypeDef],  # (10)
+    unclassifiableObjectSizeInBytes: NotRequired[ObjectLevelStatisticsTypeDef],  # (10)
+    versioning: NotRequired[bool],
+```
 
-- `accountId`: `str`
-- `allowsUnencryptedObjectUploads`:
-  [AllowsUnencryptedObjectUploadsType](./literals.md#allowsunencryptedobjectuploadstype)
-- `bucketArn`: `str`
-- `bucketCreatedAt`: `datetime`
-- `bucketName`: `str`
-- `classifiableObjectCount`: `int`
-- `classifiableSizeInBytes`: `int`
-- `errorCode`: `Literal['ACCESS_DENIED']` (see
-  [BucketMetadataErrorCodeType](./literals.md#bucketmetadataerrorcodetype))
-- `errorMessage`: `str`
-- `jobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
-- `lastUpdated`: `datetime`
-- `objectCount`: `int`
-- `objectCountByEncryptionType`:
-  [ObjectCountByEncryptionTypeTypeDef](./type_defs.md#objectcountbyencryptiontypetypedef)
-- `publicAccess`:
-  [BucketPublicAccessTypeDef](./type_defs.md#bucketpublicaccesstypedef)
-- `region`: `str`
-- `replicationDetails`:
-  [ReplicationDetailsTypeDef](./type_defs.md#replicationdetailstypedef)
-- `serverSideEncryption`:
-  [BucketServerSideEncryptionTypeDef](./type_defs.md#bucketserversideencryptiontypedef)
-- `sharedAccess`: [SharedAccessType](./literals.md#sharedaccesstype)
-- `sizeInBytes`: `int`
-- `sizeInBytesCompressed`: `int`
-- `tags`: `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-- `unclassifiableObjectCount`:
-  [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
-- `unclassifiableObjectSizeInBytes`:
-  [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
-- `versioning`: `bool`
-
-<a id="bucketpermissionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: AllowsUnencryptedObjectUploadsType](./literals.md#allowsunencryptedobjectuploadstype) 
+2. See [:material-code-brackets: BucketMetadataErrorCodeType](./literals.md#bucketmetadataerrorcodetype) 
+3. See [:material-code-braces: JobDetailsTypeDef](./type_defs.md#jobdetailstypedef) 
+4. See [:material-code-braces: ObjectCountByEncryptionTypeTypeDef](./type_defs.md#objectcountbyencryptiontypetypedef) 
+5. See [:material-code-braces: BucketPublicAccessTypeDef](./type_defs.md#bucketpublicaccesstypedef) 
+6. See [:material-code-braces: ReplicationDetailsTypeDef](./type_defs.md#replicationdetailstypedef) 
+7. See [:material-code-braces: BucketServerSideEncryptionTypeDef](./type_defs.md#bucketserversideencryptiontypedef) 
+8. See [:material-code-brackets: SharedAccessType](./literals.md#sharedaccesstype) 
+9. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
+10. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
+11. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
 ## BucketPermissionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketPermissionConfigurationTypeDef
+
+def get_value() -> BucketPermissionConfigurationTypeDef:
+    return {
+        "accountLevelPermissions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BucketPermissionConfigurationTypeDef(TypedDict):
+    accountLevelPermissions: NotRequired[AccountLevelPermissionsTypeDef],  # (1)
+    bucketLevelPermissions: NotRequired[BucketLevelPermissionsTypeDef],  # (2)
+```
 
-- `accountLevelPermissions`:
-  [AccountLevelPermissionsTypeDef](./type_defs.md#accountlevelpermissionstypedef)
-- `bucketLevelPermissions`:
-  [BucketLevelPermissionsTypeDef](./type_defs.md#bucketlevelpermissionstypedef)
-
-<a id="bucketpolicytypedef"></a>
-
+1. See [:material-code-braces: AccountLevelPermissionsTypeDef](./type_defs.md#accountlevelpermissionstypedef) 
+2. See [:material-code-braces: BucketLevelPermissionsTypeDef](./type_defs.md#bucketlevelpermissionstypedef) 
 ## BucketPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketPolicyTypeDef
+
+def get_value() -> BucketPolicyTypeDef:
+    return {
+        "allowsPublicReadAccess": ...,
+    }
 ```
 
-Optional fields:
-
-- `allowsPublicReadAccess`: `bool`
-- `allowsPublicWriteAccess`: `bool`
-
-<a id="bucketpublicaccesstypedef"></a>
+```python title="Definition"
+class BucketPolicyTypeDef(TypedDict):
+    allowsPublicReadAccess: NotRequired[bool],
+    allowsPublicWriteAccess: NotRequired[bool],
+```
 
 ## BucketPublicAccessTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketPublicAccessTypeDef
+
+def get_value() -> BucketPublicAccessTypeDef:
+    return {
+        "effectivePermission": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BucketPublicAccessTypeDef(TypedDict):
+    effectivePermission: NotRequired[EffectivePermissionType],  # (1)
+    permissionConfiguration: NotRequired[BucketPermissionConfigurationTypeDef],  # (2)
+```
 
-- `effectivePermission`:
-  [EffectivePermissionType](./literals.md#effectivepermissiontype)
-- `permissionConfiguration`:
-  [BucketPermissionConfigurationTypeDef](./type_defs.md#bucketpermissionconfigurationtypedef)
-
-<a id="bucketserversideencryptiontypedef"></a>
-
+1. See [:material-code-brackets: EffectivePermissionType](./literals.md#effectivepermissiontype) 
+2. See [:material-code-braces: BucketPermissionConfigurationTypeDef](./type_defs.md#bucketpermissionconfigurationtypedef) 
 ## BucketServerSideEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketServerSideEncryptionTypeDef
+
+def get_value() -> BucketServerSideEncryptionTypeDef:
+    return {
+        "kmsMasterKeyId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BucketServerSideEncryptionTypeDef(TypedDict):
+    kmsMasterKeyId: NotRequired[str],
+    type: NotRequired[TypeType],  # (1)
+```
 
-- `kmsMasterKeyId`: `str`
-- `type`: [TypeType](./literals.md#typetype)
-
-<a id="bucketsortcriteriatypedef"></a>
-
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## BucketSortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import BucketSortCriteriaTypeDef
+
+def get_value() -> BucketSortCriteriaTypeDef:
+    return {
+        "attributeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BucketSortCriteriaTypeDef(TypedDict):
+    attributeName: NotRequired[str],
+    orderBy: NotRequired[OrderByType],  # (1)
+```
 
-- `attributeName`: `str`
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
-
-<a id="celltypedef"></a>
-
+1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## CellTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CellTypeDef
+
+def get_value() -> CellTypeDef:
+    return {
+        "cellReference": ...,
+    }
 ```
 
-Optional fields:
-
-- `cellReference`: `str`
-- `column`: `int`
-- `columnName`: `str`
-- `row`: `int`
-
-<a id="classificationdetailstypedef"></a>
+```python title="Definition"
+class CellTypeDef(TypedDict):
+    cellReference: NotRequired[str],
+    column: NotRequired[int],
+    columnName: NotRequired[str],
+    row: NotRequired[int],
+```
 
 ## ClassificationDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ClassificationDetailsTypeDef
+
+def get_value() -> ClassificationDetailsTypeDef:
+    return {
+        "detailedResultsLocation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClassificationDetailsTypeDef(TypedDict):
+    detailedResultsLocation: NotRequired[str],
+    jobArn: NotRequired[str],
+    jobId: NotRequired[str],
+    result: NotRequired[ClassificationResultTypeDef],  # (1)
+```
 
-- `detailedResultsLocation`: `str`
-- `jobArn`: `str`
-- `jobId`: `str`
-- `result`:
-  [ClassificationResultTypeDef](./type_defs.md#classificationresulttypedef)
-
-<a id="classificationexportconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ClassificationResultTypeDef](./type_defs.md#classificationresulttypedef) 
 ## ClassificationExportConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ClassificationExportConfigurationTypeDef
+
+def get_value() -> ClassificationExportConfigurationTypeDef:
+    return {
+        "s3Destination": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClassificationExportConfigurationTypeDef(TypedDict):
+    s3Destination: NotRequired[S3DestinationTypeDef],  # (1)
+```
 
-- `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
-
-<a id="classificationresultstatustypedef"></a>
-
+1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
 ## ClassificationResultStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ClassificationResultStatusTypeDef
+
+def get_value() -> ClassificationResultStatusTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
-
-- `code`: `str`
-- `reason`: `str`
-
-<a id="classificationresulttypedef"></a>
+```python title="Definition"
+class ClassificationResultStatusTypeDef(TypedDict):
+    code: NotRequired[str],
+    reason: NotRequired[str],
+```
 
 ## ClassificationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ClassificationResultTypeDef
+
+def get_value() -> ClassificationResultTypeDef:
+    return {
+        "additionalOccurrences": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClassificationResultTypeDef(TypedDict):
+    additionalOccurrences: NotRequired[bool],
+    customDataIdentifiers: NotRequired[CustomDataIdentifiersTypeDef],  # (1)
+    mimeType: NotRequired[str],
+    sensitiveData: NotRequired[List[SensitiveDataItemTypeDef]],  # (2)
+    sizeClassified: NotRequired[int],
+    status: NotRequired[ClassificationResultStatusTypeDef],  # (3)
+```
 
-- `additionalOccurrences`: `bool`
-- `customDataIdentifiers`:
-  [CustomDataIdentifiersTypeDef](./type_defs.md#customdataidentifierstypedef)
-- `mimeType`: `str`
-- `sensitiveData`:
-  `List`\[[SensitiveDataItemTypeDef](./type_defs.md#sensitivedataitemtypedef)\]
-- `sizeClassified`: `int`
-- `status`:
-  [ClassificationResultStatusTypeDef](./type_defs.md#classificationresultstatustypedef)
-
-<a id="createclassificationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomDataIdentifiersTypeDef](./type_defs.md#customdataidentifierstypedef) 
+2. See [:material-code-braces: SensitiveDataItemTypeDef](./type_defs.md#sensitivedataitemtypedef) 
+3. See [:material-code-braces: ClassificationResultStatusTypeDef](./type_defs.md#classificationresultstatustypedef) 
 ## CreateClassificationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateClassificationJobRequestRequestTypeDef
+
+def get_value() -> CreateClassificationJobRequestRequestTypeDef:
+    return {
+        "clientToken": ...,
+        "jobType": ...,
+        "name": ...,
+        "s3JobDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClassificationJobRequestRequestTypeDef(TypedDict):
+    clientToken: str,
+    jobType: JobTypeType,  # (1)
+    name: str,
+    s3JobDefinition: S3JobDefinitionTypeDef,  # (2)
+    customDataIdentifierIds: NotRequired[Sequence[str]],
+    description: NotRequired[str],
+    initialRun: NotRequired[bool],
+    managedDataIdentifierIds: NotRequired[Sequence[str]],
+    managedDataIdentifierSelector: NotRequired[ManagedDataIdentifierSelectorType],  # (3)
+    samplingPercentage: NotRequired[int],
+    scheduleFrequency: NotRequired[JobScheduleFrequencyTypeDef],  # (4)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `clientToken`: `str`
-- `jobType`: [JobTypeType](./literals.md#jobtypetype)
-- `name`: `str`
-- `s3JobDefinition`:
-  [S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef)
-
-Optional fields:
-
-- `customDataIdentifierIds`: `Sequence`\[`str`\]
-- `description`: `str`
-- `initialRun`: `bool`
-- `managedDataIdentifierIds`: `Sequence`\[`str`\]
-- `managedDataIdentifierSelector`:
-  [ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype)
-- `samplingPercentage`: `int`
-- `scheduleFrequency`:
-  [JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createclassificationjobresponsetypedef"></a>
-
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef) 
+3. See [:material-code-brackets: ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype) 
+4. See [:material-code-braces: JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef) 
 ## CreateClassificationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateClassificationJobResponseTypeDef
+
+def get_value() -> CreateClassificationJobResponseTypeDef:
+    return {
+        "jobArn": ...,
+        "jobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClassificationJobResponseTypeDef(TypedDict):
+    jobArn: str,
+    jobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `jobArn`: `str`
-- `jobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcustomdataidentifierrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCustomDataIdentifierRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateCustomDataIdentifierRequestRequestTypeDef
+
+def get_value() -> CreateCustomDataIdentifierRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "regex": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomDataIdentifierRequestRequestTypeDef(TypedDict):
+    name: str,
+    regex: str,
+    clientToken: NotRequired[str],
+    description: NotRequired[str],
+    ignoreWords: NotRequired[Sequence[str]],
+    keywords: NotRequired[Sequence[str]],
+    maximumMatchDistance: NotRequired[int],
+    severityLevels: NotRequired[Sequence[SeverityLevelTypeDef]],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-- `regex`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `description`: `str`
-- `ignoreWords`: `Sequence`\[`str`\]
-- `keywords`: `Sequence`\[`str`\]
-- `maximumMatchDistance`: `int`
-- `severityLevels`:
-  `Sequence`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createcustomdataidentifierresponsetypedef"></a>
-
+1. See [:material-code-braces: SeverityLevelTypeDef](./type_defs.md#severityleveltypedef) 
 ## CreateCustomDataIdentifierResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateCustomDataIdentifierResponseTypeDef
+
+def get_value() -> CreateCustomDataIdentifierResponseTypeDef:
+    return {
+        "customDataIdentifierId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomDataIdentifierResponseTypeDef(TypedDict):
+    customDataIdentifierId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `customDataIdentifierId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfindingsfilterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFindingsFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateFindingsFilterRequestRequestTypeDef
+
+def get_value() -> CreateFindingsFilterRequestRequestTypeDef:
+    return {
+        "action": ...,
+        "findingCriteria": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFindingsFilterRequestRequestTypeDef(TypedDict):
+    action: FindingsFilterActionType,  # (1)
+    findingCriteria: FindingCriteriaTypeDef,  # (2)
+    name: str,
+    clientToken: NotRequired[str],
+    description: NotRequired[str],
+    position: NotRequired[int],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `name`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `description`: `str`
-- `position`: `int`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createfindingsfilterresponsetypedef"></a>
-
+1. See [:material-code-brackets: FindingsFilterActionType](./literals.md#findingsfilteractiontype) 
+2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
 ## CreateFindingsFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateFindingsFilterResponseTypeDef
+
+def get_value() -> CreateFindingsFilterResponseTypeDef:
+    return {
+        "arn": ...,
+        "id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFindingsFilterResponseTypeDef(TypedDict):
+    arn: str,
+    id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinvitationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInvitationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateInvitationsRequestRequestTypeDef
+
+def get_value() -> CreateInvitationsRequestRequestTypeDef:
+    return {
+        "accountIds": ...,
+    }
 ```
 
-Required fields:
-
-- `accountIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `disableEmailNotification`: `bool`
-- `message`: `str`
-
-<a id="createinvitationsresponsetypedef"></a>
+```python title="Definition"
+class CreateInvitationsRequestRequestTypeDef(TypedDict):
+    accountIds: Sequence[str],
+    disableEmailNotification: NotRequired[bool],
+    message: NotRequired[str],
+```
 
 ## CreateInvitationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateInvitationsResponseTypeDef
+
+def get_value() -> CreateInvitationsResponseTypeDef:
+    return {
+        "unprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInvitationsResponseTypeDef(TypedDict):
+    unprocessedAccounts: List[UnprocessedAccountTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `unprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="creatememberrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMemberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateMemberRequestRequestTypeDef
+
+def get_value() -> CreateMemberRequestRequestTypeDef:
+    return {
+        "account": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMemberRequestRequestTypeDef(TypedDict):
+    account: AccountDetailTypeDef,  # (1)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `account`: [AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)
-
-Optional fields:
-
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="creatememberresponsetypedef"></a>
-
+1. See [:material-code-braces: AccountDetailTypeDef](./type_defs.md#accountdetailtypedef) 
 ## CreateMemberResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateMemberResponseTypeDef
+
+def get_value() -> CreateMemberResponseTypeDef:
+    return {
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMemberResponseTypeDef(TypedDict):
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsamplefindingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSampleFindingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CreateSampleFindingsRequestRequestTypeDef
+
+def get_value() -> CreateSampleFindingsRequestRequestTypeDef:
+    return {
+        "findingTypes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateSampleFindingsRequestRequestTypeDef(TypedDict):
+    findingTypes: NotRequired[Sequence[FindingTypeType]],  # (1)
+```
 
-- `findingTypes`:
-  `Sequence`\[[FindingTypeType](./literals.md#findingtypetype)\]
-
-<a id="criteriablockforjobtypedef"></a>
-
+1. See [:material-code-brackets: FindingTypeType](./literals.md#findingtypetype) 
 ## CriteriaBlockForJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CriteriaBlockForJobTypeDef
+
+def get_value() -> CriteriaBlockForJobTypeDef:
+    return {
+        "and": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CriteriaBlockForJobTypeDef(TypedDict):
+    and: NotRequired[Sequence[CriteriaForJobTypeDef]],  # (1)
+```
 
-- `and`:
-  `Sequence`\[[CriteriaForJobTypeDef](./type_defs.md#criteriaforjobtypedef)\]
-
-<a id="criteriaforjobtypedef"></a>
-
+1. See [:material-code-braces: CriteriaForJobTypeDef](./type_defs.md#criteriaforjobtypedef) 
 ## CriteriaForJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CriteriaForJobTypeDef
+
+def get_value() -> CriteriaForJobTypeDef:
+    return {
+        "simpleCriterion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CriteriaForJobTypeDef(TypedDict):
+    simpleCriterion: NotRequired[SimpleCriterionForJobTypeDef],  # (1)
+    tagCriterion: NotRequired[TagCriterionForJobTypeDef],  # (2)
+```
 
-- `simpleCriterion`:
-  [SimpleCriterionForJobTypeDef](./type_defs.md#simplecriterionforjobtypedef)
-- `tagCriterion`:
-  [TagCriterionForJobTypeDef](./type_defs.md#tagcriterionforjobtypedef)
-
-<a id="criterionadditionalpropertiestypedef"></a>
-
+1. See [:material-code-braces: SimpleCriterionForJobTypeDef](./type_defs.md#simplecriterionforjobtypedef) 
+2. See [:material-code-braces: TagCriterionForJobTypeDef](./type_defs.md#tagcriterionforjobtypedef) 
 ## CriterionAdditionalPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CriterionAdditionalPropertiesTypeDef
+
+def get_value() -> CriterionAdditionalPropertiesTypeDef:
+    return {
+        "eq": ...,
+    }
 ```
 
-Optional fields:
-
-- `eq`: `Sequence`\[`str`\]
-- `eqExactMatch`: `Sequence`\[`str`\]
-- `gt`: `int`
-- `gte`: `int`
-- `lt`: `int`
-- `lte`: `int`
-- `neq`: `Sequence`\[`str`\]
-
-<a id="customdataidentifiersummarytypedef"></a>
+```python title="Definition"
+class CriterionAdditionalPropertiesTypeDef(TypedDict):
+    eq: NotRequired[Sequence[str]],
+    eqExactMatch: NotRequired[Sequence[str]],
+    gt: NotRequired[int],
+    gte: NotRequired[int],
+    lt: NotRequired[int],
+    lte: NotRequired[int],
+    neq: NotRequired[Sequence[str]],
+```
 
 ## CustomDataIdentifierSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CustomDataIdentifierSummaryTypeDef
+
+def get_value() -> CustomDataIdentifierSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `description`: `str`
-- `id`: `str`
-- `name`: `str`
-
-<a id="customdataidentifierstypedef"></a>
+```python title="Definition"
+class CustomDataIdentifierSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    description: NotRequired[str],
+    id: NotRequired[str],
+    name: NotRequired[str],
+```
 
 ## CustomDataIdentifiersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CustomDataIdentifiersTypeDef
+
+def get_value() -> CustomDataIdentifiersTypeDef:
+    return {
+        "detections": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomDataIdentifiersTypeDef(TypedDict):
+    detections: NotRequired[List[CustomDetectionTypeDef]],  # (1)
+    totalCount: NotRequired[int],
+```
 
-- `detections`:
-  `List`\[[CustomDetectionTypeDef](./type_defs.md#customdetectiontypedef)\]
-- `totalCount`: `int`
-
-<a id="customdetectiontypedef"></a>
-
+1. See [:material-code-braces: CustomDetectionTypeDef](./type_defs.md#customdetectiontypedef) 
 ## CustomDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import CustomDetectionTypeDef
+
+def get_value() -> CustomDetectionTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomDetectionTypeDef(TypedDict):
+    arn: NotRequired[str],
+    count: NotRequired[int],
+    name: NotRequired[str],
+    occurrences: NotRequired[OccurrencesTypeDef],  # (1)
+```
 
-- `arn`: `str`
-- `count`: `int`
-- `name`: `str`
-- `occurrences`: [OccurrencesTypeDef](./type_defs.md#occurrencestypedef)
-
-<a id="declineinvitationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OccurrencesTypeDef](./type_defs.md#occurrencestypedef) 
 ## DeclineInvitationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DeclineInvitationsRequestRequestTypeDef
+
+def get_value() -> DeclineInvitationsRequestRequestTypeDef:
+    return {
+        "accountIds": ...,
+    }
 ```
 
-Required fields:
-
-- `accountIds`: `Sequence`\[`str`\]
-
-<a id="declineinvitationsresponsetypedef"></a>
+```python title="Definition"
+class DeclineInvitationsRequestRequestTypeDef(TypedDict):
+    accountIds: Sequence[str],
+```
 
 ## DeclineInvitationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DeclineInvitationsResponseTypeDef
+
+def get_value() -> DeclineInvitationsResponseTypeDef:
+    return {
+        "unprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeclineInvitationsResponseTypeDef(TypedDict):
+    unprocessedAccounts: List[UnprocessedAccountTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `unprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="defaultdetectiontypedef"></a>
-
+1. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DefaultDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DefaultDetectionTypeDef
+
+def get_value() -> DefaultDetectionTypeDef:
+    return {
+        "count": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DefaultDetectionTypeDef(TypedDict):
+    count: NotRequired[int],
+    occurrences: NotRequired[OccurrencesTypeDef],  # (1)
+    type: NotRequired[str],
+```
 
-- `count`: `int`
-- `occurrences`: [OccurrencesTypeDef](./type_defs.md#occurrencestypedef)
-- `type`: `str`
-
-<a id="deletecustomdataidentifierrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OccurrencesTypeDef](./type_defs.md#occurrencestypedef) 
 ## DeleteCustomDataIdentifierRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DeleteCustomDataIdentifierRequestRequestTypeDef
+
+def get_value() -> DeleteCustomDataIdentifierRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="deletefindingsfilterrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCustomDataIdentifierRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## DeleteFindingsFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DeleteFindingsFilterRequestRequestTypeDef
+
+def get_value() -> DeleteFindingsFilterRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="deleteinvitationsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFindingsFilterRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## DeleteInvitationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DeleteInvitationsRequestRequestTypeDef
+
+def get_value() -> DeleteInvitationsRequestRequestTypeDef:
+    return {
+        "accountIds": ...,
+    }
 ```
 
-Required fields:
-
-- `accountIds`: `Sequence`\[`str`\]
-
-<a id="deleteinvitationsresponsetypedef"></a>
+```python title="Definition"
+class DeleteInvitationsRequestRequestTypeDef(TypedDict):
+    accountIds: Sequence[str],
+```
 
 ## DeleteInvitationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DeleteInvitationsResponseTypeDef
+
+def get_value() -> DeleteInvitationsResponseTypeDef:
+    return {
+        "unprocessedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteInvitationsResponseTypeDef(TypedDict):
+    unprocessedAccounts: List[UnprocessedAccountTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `unprocessedAccounts`:
-  `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletememberrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteMemberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DeleteMemberRequestRequestTypeDef
+
+def get_value() -> DeleteMemberRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteMemberRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
-- `id`: `str`
+## DescribeBucketsRequestDescribeBucketsPaginateTypeDef
 
-<a id="describebucketsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import DescribeBucketsRequestDescribeBucketsPaginateTypeDef
 
+def get_value() -> DescribeBucketsRequestDescribeBucketsPaginateTypeDef:
+    return {
+        "criteria": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBucketsRequestDescribeBucketsPaginateTypeDef(TypedDict):
+    criteria: NotRequired[Mapping[str, BucketCriteriaAdditionalPropertiesTypeDef]],  # (1)
+    sortCriteria: NotRequired[BucketSortCriteriaTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef) 
+2. See [:material-code-braces: BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBucketsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DescribeBucketsRequestRequestTypeDef
+
+def get_value() -> DescribeBucketsRequestRequestTypeDef:
+    return {
+        "criteria": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeBucketsRequestRequestTypeDef(TypedDict):
+    criteria: NotRequired[Mapping[str, BucketCriteriaAdditionalPropertiesTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    sortCriteria: NotRequired[BucketSortCriteriaTypeDef],  # (2)
+```
 
-- `criteria`: `Mapping`\[`str`,
-  [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`:
-  [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
-
-<a id="describebucketsresponsetypedef"></a>
-
+1. See [:material-code-braces: BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef) 
+2. See [:material-code-braces: BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef) 
 ## DescribeBucketsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DescribeBucketsResponseTypeDef
+
+def get_value() -> DescribeBucketsResponseTypeDef:
+    return {
+        "buckets": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBucketsResponseTypeDef(TypedDict):
+    buckets: List[BucketMetadataTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `buckets`:
-  `List`\[[BucketMetadataTypeDef](./type_defs.md#bucketmetadatatypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeclassificationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BucketMetadataTypeDef](./type_defs.md#bucketmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeClassificationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DescribeClassificationJobRequestRequestTypeDef
+
+def get_value() -> DescribeClassificationJobRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `jobId`: `str`
-
-<a id="describeclassificationjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeClassificationJobRequestRequestTypeDef(TypedDict):
+    jobId: str,
+```
 
 ## DescribeClassificationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DescribeClassificationJobResponseTypeDef
+
+def get_value() -> DescribeClassificationJobResponseTypeDef:
+    return {
+        "clientToken": ...,
+        "createdAt": ...,
+        "customDataIdentifierIds": ...,
+        "description": ...,
+        "initialRun": ...,
+        "jobArn": ...,
+        "jobId": ...,
+        "jobStatus": ...,
+        "jobType": ...,
+        "lastRunErrorStatus": ...,
+        "lastRunTime": ...,
+        "managedDataIdentifierIds": ...,
+        "managedDataIdentifierSelector": ...,
+        "name": ...,
+        "s3JobDefinition": ...,
+        "samplingPercentage": ...,
+        "scheduleFrequency": ...,
+        "statistics": ...,
+        "tags": ...,
+        "userPausedDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClassificationJobResponseTypeDef(TypedDict):
+    clientToken: str,
+    createdAt: datetime,
+    customDataIdentifierIds: List[str],
+    description: str,
+    initialRun: bool,
+    jobArn: str,
+    jobId: str,
+    jobStatus: JobStatusType,  # (1)
+    jobType: JobTypeType,  # (2)
+    lastRunErrorStatus: LastRunErrorStatusTypeDef,  # (3)
+    lastRunTime: datetime,
+    managedDataIdentifierIds: List[str],
+    managedDataIdentifierSelector: ManagedDataIdentifierSelectorType,  # (4)
+    name: str,
+    s3JobDefinition: S3JobDefinitionTypeDef,  # (5)
+    samplingPercentage: int,
+    scheduleFrequency: JobScheduleFrequencyTypeDef,  # (6)
+    statistics: StatisticsTypeDef,  # (7)
+    tags: Dict[str, str],
+    userPausedDetails: UserPausedDetailsTypeDef,  # (8)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
+```
 
-- `clientToken`: `str`
-- `createdAt`: `datetime`
-- `customDataIdentifierIds`: `List`\[`str`\]
-- `description`: `str`
-- `initialRun`: `bool`
-- `jobArn`: `str`
-- `jobId`: `str`
-- `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `jobType`: [JobTypeType](./literals.md#jobtypetype)
-- `lastRunErrorStatus`:
-  [LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef)
-- `lastRunTime`: `datetime`
-- `managedDataIdentifierIds`: `List`\[`str`\]
-- `managedDataIdentifierSelector`:
-  [ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype)
-- `name`: `str`
-- `s3JobDefinition`:
-  [S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef)
-- `samplingPercentage`: `int`
-- `scheduleFrequency`:
-  [JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef)
-- `statistics`: [StatisticsTypeDef](./type_defs.md#statisticstypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-- `userPausedDetails`:
-  [UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeorganizationconfigurationresponsetypedef"></a>
-
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-braces: LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef) 
+4. See [:material-code-brackets: ManagedDataIdentifierSelectorType](./literals.md#manageddataidentifierselectortype) 
+5. See [:material-code-braces: S3JobDefinitionTypeDef](./type_defs.md#s3jobdefinitiontypedef) 
+6. See [:material-code-braces: JobScheduleFrequencyTypeDef](./type_defs.md#jobschedulefrequencytypedef) 
+7. See [:material-code-braces: StatisticsTypeDef](./type_defs.md#statisticstypedef) 
+8. See [:material-code-braces: UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef) 
+9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrganizationConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DescribeOrganizationConfigurationResponseTypeDef
+
+def get_value() -> DescribeOrganizationConfigurationResponseTypeDef:
+    return {
+        "autoEnable": ...,
+        "maxAccountLimitReached": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationConfigurationResponseTypeDef(TypedDict):
+    autoEnable: bool,
+    maxAccountLimitReached: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `autoEnable`: `bool`
-- `maxAccountLimitReached`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disableorganizationadminaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisableOrganizationAdminAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DisableOrganizationAdminAccountRequestRequestTypeDef
+
+def get_value() -> DisableOrganizationAdminAccountRequestRequestTypeDef:
+    return {
+        "adminAccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `adminAccountId`: `str`
-
-<a id="disassociatememberrequestrequesttypedef"></a>
+```python title="Definition"
+class DisableOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
+    adminAccountId: str,
+```
 
 ## DisassociateMemberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DisassociateMemberRequestRequestTypeDef
+
+def get_value() -> DisassociateMemberRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="domaindetailstypedef"></a>
+```python title="Definition"
+class DisassociateMemberRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## DomainDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import DomainDetailsTypeDef
+
+def get_value() -> DomainDetailsTypeDef:
+    return {
+        "domainName": ...,
+    }
 ```
 
-Optional fields:
-
-- `domainName`: `str`
-
-<a id="enablemacierequestrequesttypedef"></a>
+```python title="Definition"
+class DomainDetailsTypeDef(TypedDict):
+    domainName: NotRequired[str],
+```
 
 ## EnableMacieRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import EnableMacieRequestRequestTypeDef
+
+def get_value() -> EnableMacieRequestRequestTypeDef:
+    return {
+        "clientToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnableMacieRequestRequestTypeDef(TypedDict):
+    clientToken: NotRequired[str],
+    findingPublishingFrequency: NotRequired[FindingPublishingFrequencyType],  # (1)
+    status: NotRequired[MacieStatusType],  # (2)
+```
 
-- `clientToken`: `str`
-- `findingPublishingFrequency`:
-  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
-- `status`: [MacieStatusType](./literals.md#maciestatustype)
-
-<a id="enableorganizationadminaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype) 
+2. See [:material-code-brackets: MacieStatusType](./literals.md#maciestatustype) 
 ## EnableOrganizationAdminAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import EnableOrganizationAdminAccountRequestRequestTypeDef
+
+def get_value() -> EnableOrganizationAdminAccountRequestRequestTypeDef:
+    return {
+        "adminAccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `adminAccountId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="federatedusertypedef"></a>
+```python title="Definition"
+class EnableOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
+    adminAccountId: str,
+    clientToken: NotRequired[str],
+```
 
 ## FederatedUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import FederatedUserTypeDef
+
+def get_value() -> FederatedUserTypeDef:
+    return {
+        "accessKeyId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FederatedUserTypeDef(TypedDict):
+    accessKeyId: NotRequired[str],
+    accountId: NotRequired[str],
+    arn: NotRequired[str],
+    principalId: NotRequired[str],
+    sessionContext: NotRequired[SessionContextTypeDef],  # (1)
+```
 
-- `accessKeyId`: `str`
-- `accountId`: `str`
-- `arn`: `str`
-- `principalId`: `str`
-- `sessionContext`:
-  [SessionContextTypeDef](./type_defs.md#sessioncontexttypedef)
-
-<a id="findingactiontypedef"></a>
-
+1. See [:material-code-braces: SessionContextTypeDef](./type_defs.md#sessioncontexttypedef) 
 ## FindingActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import FindingActionTypeDef
+
+def get_value() -> FindingActionTypeDef:
+    return {
+        "actionType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FindingActionTypeDef(TypedDict):
+    actionType: NotRequired[FindingActionTypeType],  # (1)
+    apiCallDetails: NotRequired[ApiCallDetailsTypeDef],  # (2)
+```
 
-- `actionType`: `Literal['AWS_API_CALL']` (see
-  [FindingActionTypeType](./literals.md#findingactiontypetype))
-- `apiCallDetails`:
-  [ApiCallDetailsTypeDef](./type_defs.md#apicalldetailstypedef)
-
-<a id="findingactortypedef"></a>
-
+1. See [:material-code-brackets: FindingActionTypeType](./literals.md#findingactiontypetype) 
+2. See [:material-code-braces: ApiCallDetailsTypeDef](./type_defs.md#apicalldetailstypedef) 
 ## FindingActorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import FindingActorTypeDef
+
+def get_value() -> FindingActorTypeDef:
+    return {
+        "domainDetails": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FindingActorTypeDef(TypedDict):
+    domainDetails: NotRequired[DomainDetailsTypeDef],  # (1)
+    ipAddressDetails: NotRequired[IpAddressDetailsTypeDef],  # (2)
+    userIdentity: NotRequired[UserIdentityTypeDef],  # (3)
+```
 
-- `domainDetails`: [DomainDetailsTypeDef](./type_defs.md#domaindetailstypedef)
-- `ipAddressDetails`:
-  [IpAddressDetailsTypeDef](./type_defs.md#ipaddressdetailstypedef)
-- `userIdentity`: [UserIdentityTypeDef](./type_defs.md#useridentitytypedef)
-
-<a id="findingcriteriatypedef"></a>
-
+1. See [:material-code-braces: DomainDetailsTypeDef](./type_defs.md#domaindetailstypedef) 
+2. See [:material-code-braces: IpAddressDetailsTypeDef](./type_defs.md#ipaddressdetailstypedef) 
+3. See [:material-code-braces: UserIdentityTypeDef](./type_defs.md#useridentitytypedef) 
 ## FindingCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import FindingCriteriaTypeDef
+
+def get_value() -> FindingCriteriaTypeDef:
+    return {
+        "criterion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FindingCriteriaTypeDef(TypedDict):
+    criterion: NotRequired[Mapping[str, CriterionAdditionalPropertiesTypeDef]],  # (1)
+```
 
-- `criterion`: `Mapping`\[`str`,
-  [CriterionAdditionalPropertiesTypeDef](./type_defs.md#criterionadditionalpropertiestypedef)\]
-
-<a id="findingstatisticssortcriteriatypedef"></a>
-
+1. See [:material-code-braces: CriterionAdditionalPropertiesTypeDef](./type_defs.md#criterionadditionalpropertiestypedef) 
 ## FindingStatisticsSortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import FindingStatisticsSortCriteriaTypeDef
+
+def get_value() -> FindingStatisticsSortCriteriaTypeDef:
+    return {
+        "attributeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FindingStatisticsSortCriteriaTypeDef(TypedDict):
+    attributeName: NotRequired[FindingStatisticsSortAttributeNameType],  # (1)
+    orderBy: NotRequired[OrderByType],  # (2)
+```
 
-- `attributeName`:
-  [FindingStatisticsSortAttributeNameType](./literals.md#findingstatisticssortattributenametype)
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
-
-<a id="findingtypedef"></a>
-
+1. See [:material-code-brackets: FindingStatisticsSortAttributeNameType](./literals.md#findingstatisticssortattributenametype) 
+2. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## FindingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import FindingTypeDef
+
+def get_value() -> FindingTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FindingTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    archived: NotRequired[bool],
+    category: NotRequired[FindingCategoryType],  # (1)
+    classificationDetails: NotRequired[ClassificationDetailsTypeDef],  # (2)
+    count: NotRequired[int],
+    createdAt: NotRequired[datetime],
+    description: NotRequired[str],
+    id: NotRequired[str],
+    partition: NotRequired[str],
+    policyDetails: NotRequired[PolicyDetailsTypeDef],  # (3)
+    region: NotRequired[str],
+    resourcesAffected: NotRequired[ResourcesAffectedTypeDef],  # (4)
+    sample: NotRequired[bool],
+    schemaVersion: NotRequired[str],
+    severity: NotRequired[SeverityTypeDef],  # (5)
+    title: NotRequired[str],
+    type: NotRequired[FindingTypeType],  # (6)
+    updatedAt: NotRequired[datetime],
+```
 
-- `accountId`: `str`
-- `archived`: `bool`
-- `category`: [FindingCategoryType](./literals.md#findingcategorytype)
-- `classificationDetails`:
-  [ClassificationDetailsTypeDef](./type_defs.md#classificationdetailstypedef)
-- `count`: `int`
-- `createdAt`: `datetime`
-- `description`: `str`
-- `id`: `str`
-- `partition`: `str`
-- `policyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
-- `region`: `str`
-- `resourcesAffected`:
-  [ResourcesAffectedTypeDef](./type_defs.md#resourcesaffectedtypedef)
-- `sample`: `bool`
-- `schemaVersion`: `str`
-- `severity`: [SeverityTypeDef](./type_defs.md#severitytypedef)
-- `title`: `str`
-- `type`: [FindingTypeType](./literals.md#findingtypetype)
-- `updatedAt`: `datetime`
-
-<a id="findingsfilterlistitemtypedef"></a>
-
+1. See [:material-code-brackets: FindingCategoryType](./literals.md#findingcategorytype) 
+2. See [:material-code-braces: ClassificationDetailsTypeDef](./type_defs.md#classificationdetailstypedef) 
+3. See [:material-code-braces: PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef) 
+4. See [:material-code-braces: ResourcesAffectedTypeDef](./type_defs.md#resourcesaffectedtypedef) 
+5. See [:material-code-braces: SeverityTypeDef](./type_defs.md#severitytypedef) 
+6. See [:material-code-brackets: FindingTypeType](./literals.md#findingtypetype) 
 ## FindingsFilterListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import FindingsFilterListItemTypeDef
+
+def get_value() -> FindingsFilterListItemTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FindingsFilterListItemTypeDef(TypedDict):
+    action: NotRequired[FindingsFilterActionType],  # (1)
+    arn: NotRequired[str],
+    id: NotRequired[str],
+    name: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
-- `arn`: `str`
-- `id`: `str`
-- `name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="getadministratoraccountresponsetypedef"></a>
-
+1. See [:material-code-brackets: FindingsFilterActionType](./literals.md#findingsfilteractiontype) 
 ## GetAdministratorAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetAdministratorAccountResponseTypeDef
+
+def get_value() -> GetAdministratorAccountResponseTypeDef:
+    return {
+        "administrator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAdministratorAccountResponseTypeDef(TypedDict):
+    administrator: InvitationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `administrator`: [InvitationTypeDef](./type_defs.md#invitationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbucketstatisticsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InvitationTypeDef](./type_defs.md#invitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBucketStatisticsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetBucketStatisticsRequestRequestTypeDef
+
+def get_value() -> GetBucketStatisticsRequestRequestTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="getbucketstatisticsresponsetypedef"></a>
+```python title="Definition"
+class GetBucketStatisticsRequestRequestTypeDef(TypedDict):
+    accountId: NotRequired[str],
+```
 
 ## GetBucketStatisticsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetBucketStatisticsResponseTypeDef
+
+def get_value() -> GetBucketStatisticsResponseTypeDef:
+    return {
+        "bucketCount": ...,
+        "bucketCountByEffectivePermission": ...,
+        "bucketCountByEncryptionType": ...,
+        "bucketCountByObjectEncryptionRequirement": ...,
+        "bucketCountBySharedAccessType": ...,
+        "classifiableObjectCount": ...,
+        "classifiableSizeInBytes": ...,
+        "lastUpdated": ...,
+        "objectCount": ...,
+        "sizeInBytes": ...,
+        "sizeInBytesCompressed": ...,
+        "unclassifiableObjectCount": ...,
+        "unclassifiableObjectSizeInBytes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBucketStatisticsResponseTypeDef(TypedDict):
+    bucketCount: int,
+    bucketCountByEffectivePermission: BucketCountByEffectivePermissionTypeDef,  # (1)
+    bucketCountByEncryptionType: BucketCountByEncryptionTypeTypeDef,  # (2)
+    bucketCountByObjectEncryptionRequirement: BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef,  # (3)
+    bucketCountBySharedAccessType: BucketCountBySharedAccessTypeTypeDef,  # (4)
+    classifiableObjectCount: int,
+    classifiableSizeInBytes: int,
+    lastUpdated: datetime,
+    objectCount: int,
+    sizeInBytes: int,
+    sizeInBytesCompressed: int,
+    unclassifiableObjectCount: ObjectLevelStatisticsTypeDef,  # (5)
+    unclassifiableObjectSizeInBytes: ObjectLevelStatisticsTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `bucketCount`: `int`
-- `bucketCountByEffectivePermission`:
-  [BucketCountByEffectivePermissionTypeDef](./type_defs.md#bucketcountbyeffectivepermissiontypedef)
-- `bucketCountByEncryptionType`:
-  [BucketCountByEncryptionTypeTypeDef](./type_defs.md#bucketcountbyencryptiontypetypedef)
-- `bucketCountByObjectEncryptionRequirement`:
-  [BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef](./type_defs.md#bucketcountpolicyallowsunencryptedobjectuploadstypedef)
-- `bucketCountBySharedAccessType`:
-  [BucketCountBySharedAccessTypeTypeDef](./type_defs.md#bucketcountbysharedaccesstypetypedef)
-- `classifiableObjectCount`: `int`
-- `classifiableSizeInBytes`: `int`
-- `lastUpdated`: `datetime`
-- `objectCount`: `int`
-- `sizeInBytes`: `int`
-- `sizeInBytesCompressed`: `int`
-- `unclassifiableObjectCount`:
-  [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
-- `unclassifiableObjectSizeInBytes`:
-  [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getclassificationexportconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: BucketCountByEffectivePermissionTypeDef](./type_defs.md#bucketcountbyeffectivepermissiontypedef) 
+2. See [:material-code-braces: BucketCountByEncryptionTypeTypeDef](./type_defs.md#bucketcountbyencryptiontypetypedef) 
+3. See [:material-code-braces: BucketCountPolicyAllowsUnencryptedObjectUploadsTypeDef](./type_defs.md#bucketcountpolicyallowsunencryptedobjectuploadstypedef) 
+4. See [:material-code-braces: BucketCountBySharedAccessTypeTypeDef](./type_defs.md#bucketcountbysharedaccesstypetypedef) 
+5. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
+6. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetClassificationExportConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetClassificationExportConfigurationResponseTypeDef
+
+def get_value() -> GetClassificationExportConfigurationResponseTypeDef:
+    return {
+        "configuration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetClassificationExportConfigurationResponseTypeDef(TypedDict):
+    configuration: ClassificationExportConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `configuration`:
-  [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcustomdataidentifierrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCustomDataIdentifierRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetCustomDataIdentifierRequestRequestTypeDef
+
+def get_value() -> GetCustomDataIdentifierRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="getcustomdataidentifierresponsetypedef"></a>
+```python title="Definition"
+class GetCustomDataIdentifierRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## GetCustomDataIdentifierResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetCustomDataIdentifierResponseTypeDef
+
+def get_value() -> GetCustomDataIdentifierResponseTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "deleted": ...,
+        "description": ...,
+        "id": ...,
+        "ignoreWords": ...,
+        "keywords": ...,
+        "maximumMatchDistance": ...,
+        "name": ...,
+        "regex": ...,
+        "severityLevels": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCustomDataIdentifierResponseTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    deleted: bool,
+    description: str,
+    id: str,
+    ignoreWords: List[str],
+    keywords: List[str],
+    maximumMatchDistance: int,
+    name: str,
+    regex: str,
+    severityLevels: List[SeverityLevelTypeDef],  # (1)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `deleted`: `bool`
-- `description`: `str`
-- `id`: `str`
-- `ignoreWords`: `List`\[`str`\]
-- `keywords`: `List`\[`str`\]
-- `maximumMatchDistance`: `int`
-- `name`: `str`
-- `regex`: `str`
-- `severityLevels`:
-  `List`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfindingstatisticsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SeverityLevelTypeDef](./type_defs.md#severityleveltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFindingStatisticsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetFindingStatisticsRequestRequestTypeDef
+
+def get_value() -> GetFindingStatisticsRequestRequestTypeDef:
+    return {
+        "groupBy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFindingStatisticsRequestRequestTypeDef(TypedDict):
+    groupBy: GroupByType,  # (1)
+    findingCriteria: NotRequired[FindingCriteriaTypeDef],  # (2)
+    size: NotRequired[int],
+    sortCriteria: NotRequired[FindingStatisticsSortCriteriaTypeDef],  # (3)
+```
 
-- `groupBy`: [GroupByType](./literals.md#groupbytype)
-
-Optional fields:
-
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `size`: `int`
-- `sortCriteria`:
-  [FindingStatisticsSortCriteriaTypeDef](./type_defs.md#findingstatisticssortcriteriatypedef)
-
-<a id="getfindingstatisticsresponsetypedef"></a>
-
+1. See [:material-code-brackets: GroupByType](./literals.md#groupbytype) 
+2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+3. See [:material-code-braces: FindingStatisticsSortCriteriaTypeDef](./type_defs.md#findingstatisticssortcriteriatypedef) 
 ## GetFindingStatisticsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetFindingStatisticsResponseTypeDef
+
+def get_value() -> GetFindingStatisticsResponseTypeDef:
+    return {
+        "countsByGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFindingStatisticsResponseTypeDef(TypedDict):
+    countsByGroup: List[GroupCountTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `countsByGroup`:
-  `List`\[[GroupCountTypeDef](./type_defs.md#groupcounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfindingsfilterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupCountTypeDef](./type_defs.md#groupcounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFindingsFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetFindingsFilterRequestRequestTypeDef
+
+def get_value() -> GetFindingsFilterRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="getfindingsfilterresponsetypedef"></a>
+```python title="Definition"
+class GetFindingsFilterRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## GetFindingsFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetFindingsFilterResponseTypeDef
+
+def get_value() -> GetFindingsFilterResponseTypeDef:
+    return {
+        "action": ...,
+        "arn": ...,
+        "description": ...,
+        "findingCriteria": ...,
+        "id": ...,
+        "name": ...,
+        "position": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFindingsFilterResponseTypeDef(TypedDict):
+    action: FindingsFilterActionType,  # (1)
+    arn: str,
+    description: str,
+    findingCriteria: FindingCriteriaTypeDef,  # (2)
+    id: str,
+    name: str,
+    position: int,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
-- `arn`: `str`
-- `description`: `str`
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `id`: `str`
-- `name`: `str`
-- `position`: `int`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfindingspublicationconfigurationresponsetypedef"></a>
-
+1. See [:material-code-brackets: FindingsFilterActionType](./literals.md#findingsfilteractiontype) 
+2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFindingsPublicationConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetFindingsPublicationConfigurationResponseTypeDef
+
+def get_value() -> GetFindingsPublicationConfigurationResponseTypeDef:
+    return {
+        "securityHubConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFindingsPublicationConfigurationResponseTypeDef(TypedDict):
+    securityHubConfiguration: SecurityHubConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `securityHubConfiguration`:
-  [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfindingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFindingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetFindingsRequestRequestTypeDef
+
+def get_value() -> GetFindingsRequestRequestTypeDef:
+    return {
+        "findingIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFindingsRequestRequestTypeDef(TypedDict):
+    findingIds: Sequence[str],
+    sortCriteria: NotRequired[SortCriteriaTypeDef],  # (1)
+```
 
-- `findingIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
-
-<a id="getfindingsresponsetypedef"></a>
-
+1. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
 ## GetFindingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetFindingsResponseTypeDef
+
+def get_value() -> GetFindingsResponseTypeDef:
+    return {
+        "findings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFindingsResponseTypeDef(TypedDict):
+    findings: List[FindingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `findings`: `List`\[[FindingTypeDef](./type_defs.md#findingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinvitationscountresponsetypedef"></a>
-
+1. See [:material-code-braces: FindingTypeDef](./type_defs.md#findingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInvitationsCountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetInvitationsCountResponseTypeDef
+
+def get_value() -> GetInvitationsCountResponseTypeDef:
+    return {
+        "invitationsCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInvitationsCountResponseTypeDef(TypedDict):
+    invitationsCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `invitationsCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmaciesessionresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMacieSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetMacieSessionResponseTypeDef
+
+def get_value() -> GetMacieSessionResponseTypeDef:
+    return {
+        "createdAt": ...,
+        "findingPublishingFrequency": ...,
+        "serviceRole": ...,
+        "status": ...,
+        "updatedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMacieSessionResponseTypeDef(TypedDict):
+    createdAt: datetime,
+    findingPublishingFrequency: FindingPublishingFrequencyType,  # (1)
+    serviceRole: str,
+    status: MacieStatusType,  # (2)
+    updatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `createdAt`: `datetime`
-- `findingPublishingFrequency`:
-  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
-- `serviceRole`: `str`
-- `status`: [MacieStatusType](./literals.md#maciestatustype)
-- `updatedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmasteraccountresponsetypedef"></a>
-
+1. See [:material-code-brackets: FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype) 
+2. See [:material-code-brackets: MacieStatusType](./literals.md#maciestatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMasterAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetMasterAccountResponseTypeDef
+
+def get_value() -> GetMasterAccountResponseTypeDef:
+    return {
+        "master": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMasterAccountResponseTypeDef(TypedDict):
+    master: InvitationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `master`: [InvitationTypeDef](./type_defs.md#invitationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmemberrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InvitationTypeDef](./type_defs.md#invitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMemberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetMemberRequestRequestTypeDef
+
+def get_value() -> GetMemberRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="getmemberresponsetypedef"></a>
+```python title="Definition"
+class GetMemberRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## GetMemberResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetMemberResponseTypeDef
+
+def get_value() -> GetMemberResponseTypeDef:
+    return {
+        "accountId": ...,
+        "administratorAccountId": ...,
+        "arn": ...,
+        "email": ...,
+        "invitedAt": ...,
+        "masterAccountId": ...,
+        "relationshipStatus": ...,
+        "tags": ...,
+        "updatedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMemberResponseTypeDef(TypedDict):
+    accountId: str,
+    administratorAccountId: str,
+    arn: str,
+    email: str,
+    invitedAt: datetime,
+    masterAccountId: str,
+    relationshipStatus: RelationshipStatusType,  # (1)
+    tags: Dict[str, str],
+    updatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `accountId`: `str`
-- `administratorAccountId`: `str`
-- `arn`: `str`
-- `email`: `str`
-- `invitedAt`: `datetime`
-- `masterAccountId`: `str`
-- `relationshipStatus`:
-  [RelationshipStatusType](./literals.md#relationshipstatustype)
-- `tags`: `Dict`\[`str`, `str`\]
-- `updatedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: RelationshipStatusType](./literals.md#relationshipstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef
 
-<a id="getusagestatisticsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef
 
+def get_value() -> GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef:
+    return {
+        "filterBy": ...,
+    }
+```
+
+```python title="Definition"
+class GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef(TypedDict):
+    filterBy: NotRequired[Sequence[UsageStatisticsFilterTypeDef]],  # (1)
+    sortBy: NotRequired[UsageStatisticsSortByTypeDef],  # (2)
+    timeRange: NotRequired[TimeRangeType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef) 
+2. See [:material-code-braces: UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef) 
+3. See [:material-code-brackets: TimeRangeType](./literals.md#timerangetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetUsageStatisticsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetUsageStatisticsRequestRequestTypeDef
+
+def get_value() -> GetUsageStatisticsRequestRequestTypeDef:
+    return {
+        "filterBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetUsageStatisticsRequestRequestTypeDef(TypedDict):
+    filterBy: NotRequired[Sequence[UsageStatisticsFilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    sortBy: NotRequired[UsageStatisticsSortByTypeDef],  # (2)
+    timeRange: NotRequired[TimeRangeType],  # (3)
+```
 
-- `filterBy`:
-  `Sequence`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortBy`:
-  [UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef)
-- `timeRange`: [TimeRangeType](./literals.md#timerangetype)
-
-<a id="getusagestatisticsresponsetypedef"></a>
-
+1. See [:material-code-braces: UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef) 
+2. See [:material-code-braces: UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef) 
+3. See [:material-code-brackets: TimeRangeType](./literals.md#timerangetype) 
 ## GetUsageStatisticsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetUsageStatisticsResponseTypeDef
+
+def get_value() -> GetUsageStatisticsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "records": ...,
+        "timeRange": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUsageStatisticsResponseTypeDef(TypedDict):
+    nextToken: str,
+    records: List[UsageRecordTypeDef],  # (1)
+    timeRange: TimeRangeType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `nextToken`: `str`
-- `records`: `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
-- `timeRange`: [TimeRangeType](./literals.md#timerangetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getusagetotalsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UsageRecordTypeDef](./type_defs.md#usagerecordtypedef) 
+2. See [:material-code-brackets: TimeRangeType](./literals.md#timerangetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUsageTotalsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetUsageTotalsRequestRequestTypeDef
+
+def get_value() -> GetUsageTotalsRequestRequestTypeDef:
+    return {
+        "timeRange": ...,
+    }
 ```
 
-Optional fields:
-
-- `timeRange`: `str`
-
-<a id="getusagetotalsresponsetypedef"></a>
+```python title="Definition"
+class GetUsageTotalsRequestRequestTypeDef(TypedDict):
+    timeRange: NotRequired[str],
+```
 
 ## GetUsageTotalsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GetUsageTotalsResponseTypeDef
+
+def get_value() -> GetUsageTotalsResponseTypeDef:
+    return {
+        "timeRange": ...,
+        "usageTotals": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUsageTotalsResponseTypeDef(TypedDict):
+    timeRange: TimeRangeType,  # (1)
+    usageTotals: List[UsageTotalTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `timeRange`: [TimeRangeType](./literals.md#timerangetype)
-- `usageTotals`:
-  `List`\[[UsageTotalTypeDef](./type_defs.md#usagetotaltypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="groupcounttypedef"></a>
-
+1. See [:material-code-brackets: TimeRangeType](./literals.md#timerangetype) 
+2. See [:material-code-braces: UsageTotalTypeDef](./type_defs.md#usagetotaltypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupCountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import GroupCountTypeDef
+
+def get_value() -> GroupCountTypeDef:
+    return {
+        "count": ...,
+    }
 ```
 
-Optional fields:
-
-- `count`: `int`
-- `groupKey`: `str`
-
-<a id="iamusertypedef"></a>
+```python title="Definition"
+class GroupCountTypeDef(TypedDict):
+    count: NotRequired[int],
+    groupKey: NotRequired[str],
+```
 
 ## IamUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import IamUserTypeDef
+
+def get_value() -> IamUserTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-- `arn`: `str`
-- `principalId`: `str`
-- `userName`: `str`
-
-<a id="invitationtypedef"></a>
+```python title="Definition"
+class IamUserTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    arn: NotRequired[str],
+    principalId: NotRequired[str],
+    userName: NotRequired[str],
+```
 
 ## InvitationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import InvitationTypeDef
+
+def get_value() -> InvitationTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InvitationTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    invitationId: NotRequired[str],
+    invitedAt: NotRequired[datetime],
+    relationshipStatus: NotRequired[RelationshipStatusType],  # (1)
+```
 
-- `accountId`: `str`
-- `invitationId`: `str`
-- `invitedAt`: `datetime`
-- `relationshipStatus`:
-  [RelationshipStatusType](./literals.md#relationshipstatustype)
-
-<a id="ipaddressdetailstypedef"></a>
-
+1. See [:material-code-brackets: RelationshipStatusType](./literals.md#relationshipstatustype) 
 ## IpAddressDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import IpAddressDetailsTypeDef
+
+def get_value() -> IpAddressDetailsTypeDef:
+    return {
+        "ipAddressV4": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IpAddressDetailsTypeDef(TypedDict):
+    ipAddressV4: NotRequired[str],
+    ipCity: NotRequired[IpCityTypeDef],  # (1)
+    ipCountry: NotRequired[IpCountryTypeDef],  # (2)
+    ipGeoLocation: NotRequired[IpGeoLocationTypeDef],  # (3)
+    ipOwner: NotRequired[IpOwnerTypeDef],  # (4)
+```
 
-- `ipAddressV4`: `str`
-- `ipCity`: [IpCityTypeDef](./type_defs.md#ipcitytypedef)
-- `ipCountry`: [IpCountryTypeDef](./type_defs.md#ipcountrytypedef)
-- `ipGeoLocation`: [IpGeoLocationTypeDef](./type_defs.md#ipgeolocationtypedef)
-- `ipOwner`: [IpOwnerTypeDef](./type_defs.md#ipownertypedef)
-
-<a id="ipcitytypedef"></a>
-
+1. See [:material-code-braces: IpCityTypeDef](./type_defs.md#ipcitytypedef) 
+2. See [:material-code-braces: IpCountryTypeDef](./type_defs.md#ipcountrytypedef) 
+3. See [:material-code-braces: IpGeoLocationTypeDef](./type_defs.md#ipgeolocationtypedef) 
+4. See [:material-code-braces: IpOwnerTypeDef](./type_defs.md#ipownertypedef) 
 ## IpCityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import IpCityTypeDef
+
+def get_value() -> IpCityTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-
-<a id="ipcountrytypedef"></a>
+```python title="Definition"
+class IpCityTypeDef(TypedDict):
+    name: NotRequired[str],
+```
 
 ## IpCountryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import IpCountryTypeDef
+
+def get_value() -> IpCountryTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
-
-- `code`: `str`
-- `name`: `str`
-
-<a id="ipgeolocationtypedef"></a>
+```python title="Definition"
+class IpCountryTypeDef(TypedDict):
+    code: NotRequired[str],
+    name: NotRequired[str],
+```
 
 ## IpGeoLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import IpGeoLocationTypeDef
+
+def get_value() -> IpGeoLocationTypeDef:
+    return {
+        "lat": ...,
+    }
 ```
 
-Optional fields:
-
-- `lat`: `float`
-- `lon`: `float`
-
-<a id="ipownertypedef"></a>
+```python title="Definition"
+class IpGeoLocationTypeDef(TypedDict):
+    lat: NotRequired[float],
+    lon: NotRequired[float],
+```
 
 ## IpOwnerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import IpOwnerTypeDef
+
+def get_value() -> IpOwnerTypeDef:
+    return {
+        "asn": ...,
+    }
 ```
 
-Optional fields:
-
-- `asn`: `str`
-- `asnOrg`: `str`
-- `isp`: `str`
-- `org`: `str`
-
-<a id="jobdetailstypedef"></a>
+```python title="Definition"
+class IpOwnerTypeDef(TypedDict):
+    asn: NotRequired[str],
+    asnOrg: NotRequired[str],
+    isp: NotRequired[str],
+    org: NotRequired[str],
+```
 
 ## JobDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import JobDetailsTypeDef
+
+def get_value() -> JobDetailsTypeDef:
+    return {
+        "isDefinedInJob": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobDetailsTypeDef(TypedDict):
+    isDefinedInJob: NotRequired[IsDefinedInJobType],  # (1)
+    isMonitoredByJob: NotRequired[IsMonitoredByJobType],  # (2)
+    lastJobId: NotRequired[str],
+    lastJobRunTime: NotRequired[datetime],
+```
 
-- `isDefinedInJob`: [IsDefinedInJobType](./literals.md#isdefinedinjobtype)
-- `isMonitoredByJob`:
-  [IsMonitoredByJobType](./literals.md#ismonitoredbyjobtype)
-- `lastJobId`: `str`
-- `lastJobRunTime`: `datetime`
-
-<a id="jobschedulefrequencytypedef"></a>
-
+1. See [:material-code-brackets: IsDefinedInJobType](./literals.md#isdefinedinjobtype) 
+2. See [:material-code-brackets: IsMonitoredByJobType](./literals.md#ismonitoredbyjobtype) 
 ## JobScheduleFrequencyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import JobScheduleFrequencyTypeDef
+
+def get_value() -> JobScheduleFrequencyTypeDef:
+    return {
+        "dailySchedule": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobScheduleFrequencyTypeDef(TypedDict):
+    dailySchedule: NotRequired[Mapping[str, Any]],
+    monthlySchedule: NotRequired[MonthlyScheduleTypeDef],  # (1)
+    weeklySchedule: NotRequired[WeeklyScheduleTypeDef],  # (2)
+```
 
-- `dailySchedule`: `Mapping`\[`str`, `Any`\]
-- `monthlySchedule`:
-  [MonthlyScheduleTypeDef](./type_defs.md#monthlyscheduletypedef)
-- `weeklySchedule`:
-  [WeeklyScheduleTypeDef](./type_defs.md#weeklyscheduletypedef)
-
-<a id="jobscopetermtypedef"></a>
-
+1. See [:material-code-braces: MonthlyScheduleTypeDef](./type_defs.md#monthlyscheduletypedef) 
+2. See [:material-code-braces: WeeklyScheduleTypeDef](./type_defs.md#weeklyscheduletypedef) 
 ## JobScopeTermTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import JobScopeTermTypeDef
+
+def get_value() -> JobScopeTermTypeDef:
+    return {
+        "simpleScopeTerm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobScopeTermTypeDef(TypedDict):
+    simpleScopeTerm: NotRequired[SimpleScopeTermTypeDef],  # (1)
+    tagScopeTerm: NotRequired[TagScopeTermTypeDef],  # (2)
+```
 
-- `simpleScopeTerm`:
-  [SimpleScopeTermTypeDef](./type_defs.md#simplescopetermtypedef)
-- `tagScopeTerm`: [TagScopeTermTypeDef](./type_defs.md#tagscopetermtypedef)
-
-<a id="jobscopingblocktypedef"></a>
-
+1. See [:material-code-braces: SimpleScopeTermTypeDef](./type_defs.md#simplescopetermtypedef) 
+2. See [:material-code-braces: TagScopeTermTypeDef](./type_defs.md#tagscopetermtypedef) 
 ## JobScopingBlockTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import JobScopingBlockTypeDef
+
+def get_value() -> JobScopingBlockTypeDef:
+    return {
+        "and": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobScopingBlockTypeDef(TypedDict):
+    and: NotRequired[Sequence[JobScopeTermTypeDef]],  # (1)
+```
 
-- `and`:
-  `Sequence`\[[JobScopeTermTypeDef](./type_defs.md#jobscopetermtypedef)\]
-
-<a id="jobsummarytypedef"></a>
-
+1. See [:material-code-braces: JobScopeTermTypeDef](./type_defs.md#jobscopetermtypedef) 
 ## JobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import JobSummaryTypeDef
+
+def get_value() -> JobSummaryTypeDef:
+    return {
+        "bucketDefinitions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobSummaryTypeDef(TypedDict):
+    bucketDefinitions: NotRequired[List[S3BucketDefinitionForJobTypeDef]],  # (1)
+    createdAt: NotRequired[datetime],
+    jobId: NotRequired[str],
+    jobStatus: NotRequired[JobStatusType],  # (2)
+    jobType: NotRequired[JobTypeType],  # (3)
+    lastRunErrorStatus: NotRequired[LastRunErrorStatusTypeDef],  # (4)
+    name: NotRequired[str],
+    userPausedDetails: NotRequired[UserPausedDetailsTypeDef],  # (5)
+    bucketCriteria: NotRequired[S3BucketCriteriaForJobTypeDef],  # (6)
+```
 
-- `bucketDefinitions`:
-  `List`\[[S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef)\]
-- `createdAt`: `datetime`
-- `jobId`: `str`
-- `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `jobType`: [JobTypeType](./literals.md#jobtypetype)
-- `lastRunErrorStatus`:
-  [LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef)
-- `name`: `str`
-- `userPausedDetails`:
-  [UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef)
-- `bucketCriteria`:
-  [S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef)
-
-<a id="keyvaluepairtypedef"></a>
-
+1. See [:material-code-braces: S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+3. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+4. See [:material-code-braces: LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef) 
+5. See [:material-code-braces: UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef) 
+6. See [:material-code-braces: S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef) 
 ## KeyValuePairTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import KeyValuePairTypeDef
+
+def get_value() -> KeyValuePairTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="lastrunerrorstatustypedef"></a>
+```python title="Definition"
+class KeyValuePairTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## LastRunErrorStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import LastRunErrorStatusTypeDef
+
+def get_value() -> LastRunErrorStatusTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LastRunErrorStatusTypeDef(TypedDict):
+    code: NotRequired[LastRunErrorStatusCodeType],  # (1)
+```
 
-- `code`:
-  [LastRunErrorStatusCodeType](./literals.md#lastrunerrorstatuscodetype)
+1. See [:material-code-brackets: LastRunErrorStatusCodeType](./literals.md#lastrunerrorstatuscodetype) 
+## ListClassificationJobsRequestListClassificationJobsPaginateTypeDef
 
-<a id="listclassificationjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListClassificationJobsRequestListClassificationJobsPaginateTypeDef
 
+def get_value() -> ListClassificationJobsRequestListClassificationJobsPaginateTypeDef:
+    return {
+        "filterCriteria": ...,
+    }
+```
+
+```python title="Definition"
+class ListClassificationJobsRequestListClassificationJobsPaginateTypeDef(TypedDict):
+    filterCriteria: NotRequired[ListJobsFilterCriteriaTypeDef],  # (1)
+    sortCriteria: NotRequired[ListJobsSortCriteriaTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef) 
+2. See [:material-code-braces: ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListClassificationJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListClassificationJobsRequestRequestTypeDef
+
+def get_value() -> ListClassificationJobsRequestRequestTypeDef:
+    return {
+        "filterCriteria": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListClassificationJobsRequestRequestTypeDef(TypedDict):
+    filterCriteria: NotRequired[ListJobsFilterCriteriaTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    sortCriteria: NotRequired[ListJobsSortCriteriaTypeDef],  # (2)
+```
 
-- `filterCriteria`:
-  [ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`:
-  [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
-
-<a id="listclassificationjobsresponsetypedef"></a>
-
+1. See [:material-code-braces: ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef) 
+2. See [:material-code-braces: ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef) 
 ## ListClassificationJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListClassificationJobsResponseTypeDef
+
+def get_value() -> ListClassificationJobsResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListClassificationJobsResponseTypeDef(TypedDict):
+    items: List[JobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `items`: `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomDataIdentifiersRequestListCustomDataIdentifiersPaginateTypeDef
 
-<a id="listcustomdataidentifiersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListCustomDataIdentifiersRequestListCustomDataIdentifiersPaginateTypeDef
 
+def get_value() -> ListCustomDataIdentifiersRequestListCustomDataIdentifiersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomDataIdentifiersRequestListCustomDataIdentifiersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCustomDataIdentifiersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListCustomDataIdentifiersRequestRequestTypeDef
+
+def get_value() -> ListCustomDataIdentifiersRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listcustomdataidentifiersresponsetypedef"></a>
+```python title="Definition"
+class ListCustomDataIdentifiersRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListCustomDataIdentifiersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListCustomDataIdentifiersResponseTypeDef
+
+def get_value() -> ListCustomDataIdentifiersResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCustomDataIdentifiersResponseTypeDef(TypedDict):
+    items: List[CustomDataIdentifierSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `items`:
-  `List`\[[CustomDataIdentifierSummaryTypeDef](./type_defs.md#customdataidentifiersummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CustomDataIdentifierSummaryTypeDef](./type_defs.md#customdataidentifiersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFindingsFiltersRequestListFindingsFiltersPaginateTypeDef
 
-<a id="listfindingsfiltersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListFindingsFiltersRequestListFindingsFiltersPaginateTypeDef
 
+def get_value() -> ListFindingsFiltersRequestListFindingsFiltersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListFindingsFiltersRequestListFindingsFiltersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFindingsFiltersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListFindingsFiltersRequestRequestTypeDef
+
+def get_value() -> ListFindingsFiltersRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listfindingsfiltersresponsetypedef"></a>
+```python title="Definition"
+class ListFindingsFiltersRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListFindingsFiltersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListFindingsFiltersResponseTypeDef
+
+def get_value() -> ListFindingsFiltersResponseTypeDef:
+    return {
+        "findingsFilterListItems": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFindingsFiltersResponseTypeDef(TypedDict):
+    findingsFilterListItems: List[FindingsFilterListItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `findingsFilterListItems`:
-  `List`\[[FindingsFilterListItemTypeDef](./type_defs.md#findingsfilterlistitemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FindingsFilterListItemTypeDef](./type_defs.md#findingsfilterlistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFindingsRequestListFindingsPaginateTypeDef
 
-<a id="listfindingsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListFindingsRequestListFindingsPaginateTypeDef
 
+def get_value() -> ListFindingsRequestListFindingsPaginateTypeDef:
+    return {
+        "findingCriteria": ...,
+    }
+```
+
+```python title="Definition"
+class ListFindingsRequestListFindingsPaginateTypeDef(TypedDict):
+    findingCriteria: NotRequired[FindingCriteriaTypeDef],  # (1)
+    sortCriteria: NotRequired[SortCriteriaTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFindingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListFindingsRequestRequestTypeDef
+
+def get_value() -> ListFindingsRequestRequestTypeDef:
+    return {
+        "findingCriteria": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListFindingsRequestRequestTypeDef(TypedDict):
+    findingCriteria: NotRequired[FindingCriteriaTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    sortCriteria: NotRequired[SortCriteriaTypeDef],  # (2)
+```
 
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
-
-<a id="listfindingsresponsetypedef"></a>
-
+1. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
 ## ListFindingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListFindingsResponseTypeDef
+
+def get_value() -> ListFindingsResponseTypeDef:
+    return {
+        "findingIds": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFindingsResponseTypeDef(TypedDict):
+    findingIds: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `findingIds`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInvitationsRequestListInvitationsPaginateTypeDef
 
-<a id="listinvitationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListInvitationsRequestListInvitationsPaginateTypeDef
 
+def get_value() -> ListInvitationsRequestListInvitationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListInvitationsRequestListInvitationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInvitationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListInvitationsRequestRequestTypeDef
+
+def get_value() -> ListInvitationsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listinvitationsresponsetypedef"></a>
+```python title="Definition"
+class ListInvitationsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListInvitationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListInvitationsResponseTypeDef
+
+def get_value() -> ListInvitationsResponseTypeDef:
+    return {
+        "invitations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInvitationsResponseTypeDef(TypedDict):
+    invitations: List[InvitationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `invitations`:
-  `List`\[[InvitationTypeDef](./type_defs.md#invitationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listjobsfiltercriteriatypedef"></a>
-
+1. See [:material-code-braces: InvitationTypeDef](./type_defs.md#invitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListJobsFilterCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListJobsFilterCriteriaTypeDef
+
+def get_value() -> ListJobsFilterCriteriaTypeDef:
+    return {
+        "excludes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListJobsFilterCriteriaTypeDef(TypedDict):
+    excludes: NotRequired[Sequence[ListJobsFilterTermTypeDef]],  # (1)
+    includes: NotRequired[Sequence[ListJobsFilterTermTypeDef]],  # (1)
+```
 
-- `excludes`:
-  `Sequence`\[[ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef)\]
-- `includes`:
-  `Sequence`\[[ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef)\]
-
-<a id="listjobsfiltertermtypedef"></a>
-
+1. See [:material-code-braces: ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef) 
+2. See [:material-code-braces: ListJobsFilterTermTypeDef](./type_defs.md#listjobsfiltertermtypedef) 
 ## ListJobsFilterTermTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListJobsFilterTermTypeDef
+
+def get_value() -> ListJobsFilterTermTypeDef:
+    return {
+        "comparator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListJobsFilterTermTypeDef(TypedDict):
+    comparator: NotRequired[JobComparatorType],  # (1)
+    key: NotRequired[ListJobsFilterKeyType],  # (2)
+    values: NotRequired[Sequence[str]],
+```
 
-- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
-- `key`: [ListJobsFilterKeyType](./literals.md#listjobsfilterkeytype)
-- `values`: `Sequence`\[`str`\]
-
-<a id="listjobssortcriteriatypedef"></a>
-
+1. See [:material-code-brackets: JobComparatorType](./literals.md#jobcomparatortype) 
+2. See [:material-code-brackets: ListJobsFilterKeyType](./literals.md#listjobsfilterkeytype) 
 ## ListJobsSortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListJobsSortCriteriaTypeDef
+
+def get_value() -> ListJobsSortCriteriaTypeDef:
+    return {
+        "attributeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListJobsSortCriteriaTypeDef(TypedDict):
+    attributeName: NotRequired[ListJobsSortAttributeNameType],  # (1)
+    orderBy: NotRequired[OrderByType],  # (2)
+```
 
-- `attributeName`:
-  [ListJobsSortAttributeNameType](./literals.md#listjobssortattributenametype)
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
-
-<a id="listmanageddataidentifiersrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ListJobsSortAttributeNameType](./literals.md#listjobssortattributenametype) 
+2. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## ListManagedDataIdentifiersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListManagedDataIdentifiersRequestRequestTypeDef
+
+def get_value() -> ListManagedDataIdentifiersRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listmanageddataidentifiersresponsetypedef"></a>
+```python title="Definition"
+class ListManagedDataIdentifiersRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## ListManagedDataIdentifiersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListManagedDataIdentifiersResponseTypeDef
+
+def get_value() -> ListManagedDataIdentifiersResponseTypeDef:
+    return {
+        "items": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListManagedDataIdentifiersResponseTypeDef(TypedDict):
+    items: List[ManagedDataIdentifierSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `items`:
-  `List`\[[ManagedDataIdentifierSummaryTypeDef](./type_defs.md#manageddataidentifiersummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ManagedDataIdentifierSummaryTypeDef](./type_defs.md#manageddataidentifiersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMembersRequestListMembersPaginateTypeDef
 
-<a id="listmembersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListMembersRequestListMembersPaginateTypeDef
 
+def get_value() -> ListMembersRequestListMembersPaginateTypeDef:
+    return {
+        "onlyAssociated": ...,
+    }
+```
+
+```python title="Definition"
+class ListMembersRequestListMembersPaginateTypeDef(TypedDict):
+    onlyAssociated: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMembersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListMembersRequestRequestTypeDef
+
+def get_value() -> ListMembersRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `onlyAssociated`: `str`
-
-<a id="listmembersresponsetypedef"></a>
+```python title="Definition"
+class ListMembersRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    onlyAssociated: NotRequired[str],
+```
 
 ## ListMembersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListMembersResponseTypeDef
+
+def get_value() -> ListMembersResponseTypeDef:
+    return {
+        "members": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMembersResponseTypeDef(TypedDict):
+    members: List[MemberTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
 
-<a id="listorganizationadminaccountsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef
 
+def get_value() -> ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOrganizationAdminAccountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListOrganizationAdminAccountsRequestRequestTypeDef
+
+def get_value() -> ListOrganizationAdminAccountsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listorganizationadminaccountsresponsetypedef"></a>
+```python title="Definition"
+class ListOrganizationAdminAccountsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListOrganizationAdminAccountsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListOrganizationAdminAccountsResponseTypeDef
+
+def get_value() -> ListOrganizationAdminAccountsResponseTypeDef:
+    return {
+        "adminAccounts": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOrganizationAdminAccountsResponseTypeDef(TypedDict):
+    adminAccounts: List[AdminAccountTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `adminAccounts`:
-  `List`\[[AdminAccountTypeDef](./type_defs.md#adminaccounttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AdminAccountTypeDef](./type_defs.md#adminaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="manageddataidentifiersummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ManagedDataIdentifierSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ManagedDataIdentifierSummaryTypeDef
+
+def get_value() -> ManagedDataIdentifierSummaryTypeDef:
+    return {
+        "category": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ManagedDataIdentifierSummaryTypeDef(TypedDict):
+    category: NotRequired[SensitiveDataItemCategoryType],  # (1)
+    id: NotRequired[str],
+```
 
-- `category`:
-  [SensitiveDataItemCategoryType](./literals.md#sensitivedataitemcategorytype)
-- `id`: `str`
-
-<a id="matchingbuckettypedef"></a>
-
+1. See [:material-code-brackets: SensitiveDataItemCategoryType](./literals.md#sensitivedataitemcategorytype) 
 ## MatchingBucketTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import MatchingBucketTypeDef
+
+def get_value() -> MatchingBucketTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MatchingBucketTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    bucketName: NotRequired[str],
+    classifiableObjectCount: NotRequired[int],
+    classifiableSizeInBytes: NotRequired[int],
+    errorCode: NotRequired[BucketMetadataErrorCodeType],  # (1)
+    errorMessage: NotRequired[str],
+    jobDetails: NotRequired[JobDetailsTypeDef],  # (2)
+    objectCount: NotRequired[int],
+    objectCountByEncryptionType: NotRequired[ObjectCountByEncryptionTypeTypeDef],  # (3)
+    sizeInBytes: NotRequired[int],
+    sizeInBytesCompressed: NotRequired[int],
+    unclassifiableObjectCount: NotRequired[ObjectLevelStatisticsTypeDef],  # (4)
+    unclassifiableObjectSizeInBytes: NotRequired[ObjectLevelStatisticsTypeDef],  # (4)
+```
 
-- `accountId`: `str`
-- `bucketName`: `str`
-- `classifiableObjectCount`: `int`
-- `classifiableSizeInBytes`: `int`
-- `errorCode`: `Literal['ACCESS_DENIED']` (see
-  [BucketMetadataErrorCodeType](./literals.md#bucketmetadataerrorcodetype))
-- `errorMessage`: `str`
-- `jobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
-- `objectCount`: `int`
-- `objectCountByEncryptionType`:
-  [ObjectCountByEncryptionTypeTypeDef](./type_defs.md#objectcountbyencryptiontypetypedef)
-- `sizeInBytes`: `int`
-- `sizeInBytesCompressed`: `int`
-- `unclassifiableObjectCount`:
-  [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
-- `unclassifiableObjectSizeInBytes`:
-  [ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef)
-
-<a id="matchingresourcetypedef"></a>
-
+1. See [:material-code-brackets: BucketMetadataErrorCodeType](./literals.md#bucketmetadataerrorcodetype) 
+2. See [:material-code-braces: JobDetailsTypeDef](./type_defs.md#jobdetailstypedef) 
+3. See [:material-code-braces: ObjectCountByEncryptionTypeTypeDef](./type_defs.md#objectcountbyencryptiontypetypedef) 
+4. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
+5. See [:material-code-braces: ObjectLevelStatisticsTypeDef](./type_defs.md#objectlevelstatisticstypedef) 
 ## MatchingResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import MatchingResourceTypeDef
+
+def get_value() -> MatchingResourceTypeDef:
+    return {
+        "matchingBucket": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MatchingResourceTypeDef(TypedDict):
+    matchingBucket: NotRequired[MatchingBucketTypeDef],  # (1)
+```
 
-- `matchingBucket`:
-  [MatchingBucketTypeDef](./type_defs.md#matchingbuckettypedef)
-
-<a id="membertypedef"></a>
-
+1. See [:material-code-braces: MatchingBucketTypeDef](./type_defs.md#matchingbuckettypedef) 
 ## MemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import MemberTypeDef
+
+def get_value() -> MemberTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MemberTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    administratorAccountId: NotRequired[str],
+    arn: NotRequired[str],
+    email: NotRequired[str],
+    invitedAt: NotRequired[datetime],
+    masterAccountId: NotRequired[str],
+    relationshipStatus: NotRequired[RelationshipStatusType],  # (1)
+    tags: NotRequired[Dict[str, str]],
+    updatedAt: NotRequired[datetime],
+```
 
-- `accountId`: `str`
-- `administratorAccountId`: `str`
-- `arn`: `str`
-- `email`: `str`
-- `invitedAt`: `datetime`
-- `masterAccountId`: `str`
-- `relationshipStatus`:
-  [RelationshipStatusType](./literals.md#relationshipstatustype)
-- `tags`: `Dict`\[`str`, `str`\]
-- `updatedAt`: `datetime`
-
-<a id="monthlyscheduletypedef"></a>
-
+1. See [:material-code-brackets: RelationshipStatusType](./literals.md#relationshipstatustype) 
 ## MonthlyScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import MonthlyScheduleTypeDef
+
+def get_value() -> MonthlyScheduleTypeDef:
+    return {
+        "dayOfMonth": ...,
+    }
 ```
 
-Optional fields:
-
-- `dayOfMonth`: `int`
-
-<a id="objectcountbyencryptiontypetypedef"></a>
+```python title="Definition"
+class MonthlyScheduleTypeDef(TypedDict):
+    dayOfMonth: NotRequired[int],
+```
 
 ## ObjectCountByEncryptionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ObjectCountByEncryptionTypeTypeDef
+
+def get_value() -> ObjectCountByEncryptionTypeTypeDef:
+    return {
+        "customerManaged": ...,
+    }
 ```
 
-Optional fields:
-
-- `customerManaged`: `int`
-- `kmsManaged`: `int`
-- `s3Managed`: `int`
-- `unencrypted`: `int`
-- `unknown`: `int`
-
-<a id="objectlevelstatisticstypedef"></a>
+```python title="Definition"
+class ObjectCountByEncryptionTypeTypeDef(TypedDict):
+    customerManaged: NotRequired[int],
+    kmsManaged: NotRequired[int],
+    s3Managed: NotRequired[int],
+    unencrypted: NotRequired[int],
+    unknown: NotRequired[int],
+```
 
 ## ObjectLevelStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ObjectLevelStatisticsTypeDef
+
+def get_value() -> ObjectLevelStatisticsTypeDef:
+    return {
+        "fileType": ...,
+    }
 ```
 
-Optional fields:
-
-- `fileType`: `int`
-- `storageClass`: `int`
-- `total`: `int`
-
-<a id="occurrencestypedef"></a>
+```python title="Definition"
+class ObjectLevelStatisticsTypeDef(TypedDict):
+    fileType: NotRequired[int],
+    storageClass: NotRequired[int],
+    total: NotRequired[int],
+```
 
 ## OccurrencesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import OccurrencesTypeDef
+
+def get_value() -> OccurrencesTypeDef:
+    return {
+        "cells": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OccurrencesTypeDef(TypedDict):
+    cells: NotRequired[List[CellTypeDef]],  # (1)
+    lineRanges: NotRequired[List[RangeTypeDef]],  # (2)
+    offsetRanges: NotRequired[List[RangeTypeDef]],  # (2)
+    pages: NotRequired[List[PageTypeDef]],  # (4)
+    records: NotRequired[List[RecordTypeDef]],  # (5)
+```
 
-- `cells`: `List`\[[CellTypeDef](./type_defs.md#celltypedef)\]
-- `lineRanges`: `List`\[[RangeTypeDef](./type_defs.md#rangetypedef)\]
-- `offsetRanges`: `List`\[[RangeTypeDef](./type_defs.md#rangetypedef)\]
-- `pages`: `List`\[[PageTypeDef](./type_defs.md#pagetypedef)\]
-- `records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
-
-<a id="pagetypedef"></a>
-
+1. See [:material-code-braces: CellTypeDef](./type_defs.md#celltypedef) 
+2. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+3. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+4. See [:material-code-braces: PageTypeDef](./type_defs.md#pagetypedef) 
+5. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
 ## PageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import PageTypeDef
+
+def get_value() -> PageTypeDef:
+    return {
+        "lineRange": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PageTypeDef(TypedDict):
+    lineRange: NotRequired[RangeTypeDef],  # (1)
+    offsetRange: NotRequired[RangeTypeDef],  # (1)
+    pageNumber: NotRequired[int],
+```
 
-- `lineRange`: [RangeTypeDef](./type_defs.md#rangetypedef)
-- `offsetRange`: [RangeTypeDef](./type_defs.md#rangetypedef)
-- `pageNumber`: `int`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+2. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="policydetailstypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PolicyDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import PolicyDetailsTypeDef
+
+def get_value() -> PolicyDetailsTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PolicyDetailsTypeDef(TypedDict):
+    action: NotRequired[FindingActionTypeDef],  # (1)
+    actor: NotRequired[FindingActorTypeDef],  # (2)
+```
 
-- `action`: [FindingActionTypeDef](./type_defs.md#findingactiontypedef)
-- `actor`: [FindingActorTypeDef](./type_defs.md#findingactortypedef)
-
-<a id="putclassificationexportconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FindingActionTypeDef](./type_defs.md#findingactiontypedef) 
+2. See [:material-code-braces: FindingActorTypeDef](./type_defs.md#findingactortypedef) 
 ## PutClassificationExportConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import PutClassificationExportConfigurationRequestRequestTypeDef
+
+def get_value() -> PutClassificationExportConfigurationRequestRequestTypeDef:
+    return {
+        "configuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutClassificationExportConfigurationRequestRequestTypeDef(TypedDict):
+    configuration: ClassificationExportConfigurationTypeDef,  # (1)
+```
 
-- `configuration`:
-  [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
-
-<a id="putclassificationexportconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef) 
 ## PutClassificationExportConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import PutClassificationExportConfigurationResponseTypeDef
+
+def get_value() -> PutClassificationExportConfigurationResponseTypeDef:
+    return {
+        "configuration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutClassificationExportConfigurationResponseTypeDef(TypedDict):
+    configuration: ClassificationExportConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `configuration`:
-  [ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putfindingspublicationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClassificationExportConfigurationTypeDef](./type_defs.md#classificationexportconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutFindingsPublicationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import PutFindingsPublicationConfigurationRequestRequestTypeDef
+
+def get_value() -> PutFindingsPublicationConfigurationRequestRequestTypeDef:
+    return {
+        "clientToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutFindingsPublicationConfigurationRequestRequestTypeDef(TypedDict):
+    clientToken: NotRequired[str],
+    securityHubConfiguration: NotRequired[SecurityHubConfigurationTypeDef],  # (1)
+```
 
-- `clientToken`: `str`
-- `securityHubConfiguration`:
-  [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
-
-<a id="rangetypedef"></a>
-
+1. See [:material-code-braces: SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef) 
 ## RangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import RangeTypeDef
+
+def get_value() -> RangeTypeDef:
+    return {
+        "end": ...,
+    }
 ```
 
-Optional fields:
-
-- `end`: `int`
-- `start`: `int`
-- `startColumn`: `int`
-
-<a id="recordtypedef"></a>
+```python title="Definition"
+class RangeTypeDef(TypedDict):
+    end: NotRequired[int],
+    start: NotRequired[int],
+    startColumn: NotRequired[int],
+```
 
 ## RecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import RecordTypeDef
+
+def get_value() -> RecordTypeDef:
+    return {
+        "jsonPath": ...,
+    }
 ```
 
-Optional fields:
-
-- `jsonPath`: `str`
-- `recordIndex`: `int`
-
-<a id="replicationdetailstypedef"></a>
+```python title="Definition"
+class RecordTypeDef(TypedDict):
+    jsonPath: NotRequired[str],
+    recordIndex: NotRequired[int],
+```
 
 ## ReplicationDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ReplicationDetailsTypeDef
+
+def get_value() -> ReplicationDetailsTypeDef:
+    return {
+        "replicated": ...,
+    }
 ```
 
-Optional fields:
-
-- `replicated`: `bool`
-- `replicatedExternally`: `bool`
-- `replicationAccounts`: `List`\[`str`\]
-
-<a id="resourcesaffectedtypedef"></a>
+```python title="Definition"
+class ReplicationDetailsTypeDef(TypedDict):
+    replicated: NotRequired[bool],
+    replicatedExternally: NotRequired[bool],
+    replicationAccounts: NotRequired[List[str]],
+```
 
 ## ResourcesAffectedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ResourcesAffectedTypeDef
+
+def get_value() -> ResourcesAffectedTypeDef:
+    return {
+        "s3Bucket": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourcesAffectedTypeDef(TypedDict):
+    s3Bucket: NotRequired[S3BucketTypeDef],  # (1)
+    s3Object: NotRequired[S3ObjectTypeDef],  # (2)
+```
 
-- `s3Bucket`: [S3BucketTypeDef](./type_defs.md#s3buckettypedef)
-- `s3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: S3BucketTypeDef](./type_defs.md#s3buckettypedef) 
+2. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3bucketcriteriaforjobtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3BucketCriteriaForJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import S3BucketCriteriaForJobTypeDef
+
+def get_value() -> S3BucketCriteriaForJobTypeDef:
+    return {
+        "excludes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3BucketCriteriaForJobTypeDef(TypedDict):
+    excludes: NotRequired[CriteriaBlockForJobTypeDef],  # (1)
+    includes: NotRequired[CriteriaBlockForJobTypeDef],  # (1)
+```
 
-- `excludes`:
-  [CriteriaBlockForJobTypeDef](./type_defs.md#criteriablockforjobtypedef)
-- `includes`:
-  [CriteriaBlockForJobTypeDef](./type_defs.md#criteriablockforjobtypedef)
-
-<a id="s3bucketdefinitionforjobtypedef"></a>
-
+1. See [:material-code-braces: CriteriaBlockForJobTypeDef](./type_defs.md#criteriablockforjobtypedef) 
+2. See [:material-code-braces: CriteriaBlockForJobTypeDef](./type_defs.md#criteriablockforjobtypedef) 
 ## S3BucketDefinitionForJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import S3BucketDefinitionForJobTypeDef
+
+def get_value() -> S3BucketDefinitionForJobTypeDef:
+    return {
+        "accountId": ...,
+        "buckets": ...,
+    }
 ```
 
-Required fields:
-
-- `accountId`: `str`
-- `buckets`: `Sequence`\[`str`\]
-
-<a id="s3bucketownertypedef"></a>
+```python title="Definition"
+class S3BucketDefinitionForJobTypeDef(TypedDict):
+    accountId: str,
+    buckets: Sequence[str],
+```
 
 ## S3BucketOwnerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import S3BucketOwnerTypeDef
+
+def get_value() -> S3BucketOwnerTypeDef:
+    return {
+        "displayName": ...,
+    }
 ```
 
-Optional fields:
-
-- `displayName`: `str`
-- `id`: `str`
-
-<a id="s3buckettypedef"></a>
+```python title="Definition"
+class S3BucketOwnerTypeDef(TypedDict):
+    displayName: NotRequired[str],
+    id: NotRequired[str],
+```
 
 ## S3BucketTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import S3BucketTypeDef
+
+def get_value() -> S3BucketTypeDef:
+    return {
+        "allowsUnencryptedObjectUploads": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3BucketTypeDef(TypedDict):
+    allowsUnencryptedObjectUploads: NotRequired[AllowsUnencryptedObjectUploadsType],  # (1)
+    arn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    defaultServerSideEncryption: NotRequired[ServerSideEncryptionTypeDef],  # (2)
+    name: NotRequired[str],
+    owner: NotRequired[S3BucketOwnerTypeDef],  # (3)
+    publicAccess: NotRequired[BucketPublicAccessTypeDef],  # (4)
+    tags: NotRequired[List[KeyValuePairTypeDef]],  # (5)
+```
 
-- `allowsUnencryptedObjectUploads`:
-  [AllowsUnencryptedObjectUploadsType](./literals.md#allowsunencryptedobjectuploadstype)
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `defaultServerSideEncryption`:
-  [ServerSideEncryptionTypeDef](./type_defs.md#serversideencryptiontypedef)
-- `name`: `str`
-- `owner`: [S3BucketOwnerTypeDef](./type_defs.md#s3bucketownertypedef)
-- `publicAccess`:
-  [BucketPublicAccessTypeDef](./type_defs.md#bucketpublicaccesstypedef)
-- `tags`: `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-
-<a id="s3destinationtypedef"></a>
-
+1. See [:material-code-brackets: AllowsUnencryptedObjectUploadsType](./literals.md#allowsunencryptedobjectuploadstype) 
+2. See [:material-code-braces: ServerSideEncryptionTypeDef](./type_defs.md#serversideencryptiontypedef) 
+3. See [:material-code-braces: S3BucketOwnerTypeDef](./type_defs.md#s3bucketownertypedef) 
+4. See [:material-code-braces: BucketPublicAccessTypeDef](./type_defs.md#bucketpublicaccesstypedef) 
+5. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
 ## S3DestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import S3DestinationTypeDef
+
+def get_value() -> S3DestinationTypeDef:
+    return {
+        "bucketName": ...,
+        "kmsKeyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `bucketName`: `str`
-- `kmsKeyArn`: `str`
-
-Optional fields:
-
-- `keyPrefix`: `str`
-
-<a id="s3jobdefinitiontypedef"></a>
+```python title="Definition"
+class S3DestinationTypeDef(TypedDict):
+    bucketName: str,
+    kmsKeyArn: str,
+    keyPrefix: NotRequired[str],
+```
 
 ## S3JobDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import S3JobDefinitionTypeDef
+
+def get_value() -> S3JobDefinitionTypeDef:
+    return {
+        "bucketDefinitions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3JobDefinitionTypeDef(TypedDict):
+    bucketDefinitions: NotRequired[Sequence[S3BucketDefinitionForJobTypeDef]],  # (1)
+    scoping: NotRequired[ScopingTypeDef],  # (2)
+    bucketCriteria: NotRequired[S3BucketCriteriaForJobTypeDef],  # (3)
+```
 
-- `bucketDefinitions`:
-  `Sequence`\[[S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef)\]
-- `scoping`: [ScopingTypeDef](./type_defs.md#scopingtypedef)
-- `bucketCriteria`:
-  [S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef)
-
-<a id="s3objecttypedef"></a>
-
+1. See [:material-code-braces: S3BucketDefinitionForJobTypeDef](./type_defs.md#s3bucketdefinitionforjobtypedef) 
+2. See [:material-code-braces: ScopingTypeDef](./type_defs.md#scopingtypedef) 
+3. See [:material-code-braces: S3BucketCriteriaForJobTypeDef](./type_defs.md#s3bucketcriteriaforjobtypedef) 
 ## S3ObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import S3ObjectTypeDef
+
+def get_value() -> S3ObjectTypeDef:
+    return {
+        "bucketArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3ObjectTypeDef(TypedDict):
+    bucketArn: NotRequired[str],
+    eTag: NotRequired[str],
+    extension: NotRequired[str],
+    key: NotRequired[str],
+    lastModified: NotRequired[datetime],
+    path: NotRequired[str],
+    publicAccess: NotRequired[bool],
+    serverSideEncryption: NotRequired[ServerSideEncryptionTypeDef],  # (1)
+    size: NotRequired[int],
+    storageClass: NotRequired[StorageClassType],  # (2)
+    tags: NotRequired[List[KeyValuePairTypeDef]],  # (3)
+    versionId: NotRequired[str],
+```
 
-- `bucketArn`: `str`
-- `eTag`: `str`
-- `extension`: `str`
-- `key`: `str`
-- `lastModified`: `datetime`
-- `path`: `str`
-- `publicAccess`: `bool`
-- `serverSideEncryption`:
-  [ServerSideEncryptionTypeDef](./type_defs.md#serversideencryptiontypedef)
-- `size`: `int`
-- `storageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `tags`: `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-- `versionId`: `str`
-
-<a id="scopingtypedef"></a>
-
+1. See [:material-code-braces: ServerSideEncryptionTypeDef](./type_defs.md#serversideencryptiontypedef) 
+2. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+3. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
 ## ScopingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ScopingTypeDef
+
+def get_value() -> ScopingTypeDef:
+    return {
+        "excludes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScopingTypeDef(TypedDict):
+    excludes: NotRequired[JobScopingBlockTypeDef],  # (1)
+    includes: NotRequired[JobScopingBlockTypeDef],  # (1)
+```
 
-- `excludes`: [JobScopingBlockTypeDef](./type_defs.md#jobscopingblocktypedef)
-- `includes`: [JobScopingBlockTypeDef](./type_defs.md#jobscopingblocktypedef)
-
-<a id="searchresourcesbucketcriteriatypedef"></a>
-
+1. See [:material-code-braces: JobScopingBlockTypeDef](./type_defs.md#jobscopingblocktypedef) 
+2. See [:material-code-braces: JobScopingBlockTypeDef](./type_defs.md#jobscopingblocktypedef) 
 ## SearchResourcesBucketCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SearchResourcesBucketCriteriaTypeDef
+
+def get_value() -> SearchResourcesBucketCriteriaTypeDef:
+    return {
+        "excludes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchResourcesBucketCriteriaTypeDef(TypedDict):
+    excludes: NotRequired[SearchResourcesCriteriaBlockTypeDef],  # (1)
+    includes: NotRequired[SearchResourcesCriteriaBlockTypeDef],  # (1)
+```
 
-- `excludes`:
-  [SearchResourcesCriteriaBlockTypeDef](./type_defs.md#searchresourcescriteriablocktypedef)
-- `includes`:
-  [SearchResourcesCriteriaBlockTypeDef](./type_defs.md#searchresourcescriteriablocktypedef)
-
-<a id="searchresourcescriteriablocktypedef"></a>
-
+1. See [:material-code-braces: SearchResourcesCriteriaBlockTypeDef](./type_defs.md#searchresourcescriteriablocktypedef) 
+2. See [:material-code-braces: SearchResourcesCriteriaBlockTypeDef](./type_defs.md#searchresourcescriteriablocktypedef) 
 ## SearchResourcesCriteriaBlockTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SearchResourcesCriteriaBlockTypeDef
+
+def get_value() -> SearchResourcesCriteriaBlockTypeDef:
+    return {
+        "and": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchResourcesCriteriaBlockTypeDef(TypedDict):
+    and: NotRequired[Sequence[SearchResourcesCriteriaTypeDef]],  # (1)
+```
 
-- `and`:
-  `Sequence`\[[SearchResourcesCriteriaTypeDef](./type_defs.md#searchresourcescriteriatypedef)\]
-
-<a id="searchresourcescriteriatypedef"></a>
-
+1. See [:material-code-braces: SearchResourcesCriteriaTypeDef](./type_defs.md#searchresourcescriteriatypedef) 
 ## SearchResourcesCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SearchResourcesCriteriaTypeDef
+
+def get_value() -> SearchResourcesCriteriaTypeDef:
+    return {
+        "simpleCriterion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchResourcesCriteriaTypeDef(TypedDict):
+    simpleCriterion: NotRequired[SearchResourcesSimpleCriterionTypeDef],  # (1)
+    tagCriterion: NotRequired[SearchResourcesTagCriterionTypeDef],  # (2)
+```
 
-- `simpleCriterion`:
-  [SearchResourcesSimpleCriterionTypeDef](./type_defs.md#searchresourcessimplecriteriontypedef)
-- `tagCriterion`:
-  [SearchResourcesTagCriterionTypeDef](./type_defs.md#searchresourcestagcriteriontypedef)
-
-<a id="searchresourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SearchResourcesSimpleCriterionTypeDef](./type_defs.md#searchresourcessimplecriteriontypedef) 
+2. See [:material-code-braces: SearchResourcesTagCriterionTypeDef](./type_defs.md#searchresourcestagcriteriontypedef) 
 ## SearchResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SearchResourcesRequestRequestTypeDef
+
+def get_value() -> SearchResourcesRequestRequestTypeDef:
+    return {
+        "bucketCriteria": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchResourcesRequestRequestTypeDef(TypedDict):
+    bucketCriteria: NotRequired[SearchResourcesBucketCriteriaTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    sortCriteria: NotRequired[SearchResourcesSortCriteriaTypeDef],  # (2)
+```
 
-- `bucketCriteria`:
-  [SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`:
-  [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
+1. See [:material-code-braces: SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef) 
+2. See [:material-code-braces: SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef) 
+## SearchResourcesRequestSearchResourcesPaginateTypeDef
 
-<a id="searchresourcesresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_macie2.type_defs import SearchResourcesRequestSearchResourcesPaginateTypeDef
 
+def get_value() -> SearchResourcesRequestSearchResourcesPaginateTypeDef:
+    return {
+        "bucketCriteria": ...,
+    }
+```
+
+```python title="Definition"
+class SearchResourcesRequestSearchResourcesPaginateTypeDef(TypedDict):
+    bucketCriteria: NotRequired[SearchResourcesBucketCriteriaTypeDef],  # (1)
+    sortCriteria: NotRequired[SearchResourcesSortCriteriaTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef) 
+2. See [:material-code-braces: SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SearchResourcesResponseTypeDef
+
+def get_value() -> SearchResourcesResponseTypeDef:
+    return {
+        "matchingResources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchResourcesResponseTypeDef(TypedDict):
+    matchingResources: List[MatchingResourceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `matchingResources`:
-  `List`\[[MatchingResourceTypeDef](./type_defs.md#matchingresourcetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchresourcessimplecriteriontypedef"></a>
-
+1. See [:material-code-braces: MatchingResourceTypeDef](./type_defs.md#matchingresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchResourcesSimpleCriterionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SearchResourcesSimpleCriterionTypeDef
+
+def get_value() -> SearchResourcesSimpleCriterionTypeDef:
+    return {
+        "comparator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchResourcesSimpleCriterionTypeDef(TypedDict):
+    comparator: NotRequired[SearchResourcesComparatorType],  # (1)
+    key: NotRequired[SearchResourcesSimpleCriterionKeyType],  # (2)
+    values: NotRequired[Sequence[str]],
+```
 
-- `comparator`:
-  [SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype)
-- `key`:
-  [SearchResourcesSimpleCriterionKeyType](./literals.md#searchresourcessimplecriterionkeytype)
-- `values`: `Sequence`\[`str`\]
-
-<a id="searchresourcessortcriteriatypedef"></a>
-
+1. See [:material-code-brackets: SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype) 
+2. See [:material-code-brackets: SearchResourcesSimpleCriterionKeyType](./literals.md#searchresourcessimplecriterionkeytype) 
 ## SearchResourcesSortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SearchResourcesSortCriteriaTypeDef
+
+def get_value() -> SearchResourcesSortCriteriaTypeDef:
+    return {
+        "attributeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchResourcesSortCriteriaTypeDef(TypedDict):
+    attributeName: NotRequired[SearchResourcesSortAttributeNameType],  # (1)
+    orderBy: NotRequired[OrderByType],  # (2)
+```
 
-- `attributeName`:
-  [SearchResourcesSortAttributeNameType](./literals.md#searchresourcessortattributenametype)
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
-
-<a id="searchresourcestagcriterionpairtypedef"></a>
-
+1. See [:material-code-brackets: SearchResourcesSortAttributeNameType](./literals.md#searchresourcessortattributenametype) 
+2. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## SearchResourcesTagCriterionPairTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SearchResourcesTagCriterionPairTypeDef
+
+def get_value() -> SearchResourcesTagCriterionPairTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="searchresourcestagcriteriontypedef"></a>
+```python title="Definition"
+class SearchResourcesTagCriterionPairTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## SearchResourcesTagCriterionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SearchResourcesTagCriterionTypeDef
+
+def get_value() -> SearchResourcesTagCriterionTypeDef:
+    return {
+        "comparator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchResourcesTagCriterionTypeDef(TypedDict):
+    comparator: NotRequired[SearchResourcesComparatorType],  # (1)
+    tagValues: NotRequired[Sequence[SearchResourcesTagCriterionPairTypeDef]],  # (2)
+```
 
-- `comparator`:
-  [SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype)
-- `tagValues`:
-  `Sequence`\[[SearchResourcesTagCriterionPairTypeDef](./type_defs.md#searchresourcestagcriterionpairtypedef)\]
-
-<a id="securityhubconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: SearchResourcesComparatorType](./literals.md#searchresourcescomparatortype) 
+2. See [:material-code-braces: SearchResourcesTagCriterionPairTypeDef](./type_defs.md#searchresourcestagcriterionpairtypedef) 
 ## SecurityHubConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SecurityHubConfigurationTypeDef
+
+def get_value() -> SecurityHubConfigurationTypeDef:
+    return {
+        "publishClassificationFindings": ...,
+        "publishPolicyFindings": ...,
+    }
 ```
 
-Required fields:
-
-- `publishClassificationFindings`: `bool`
-- `publishPolicyFindings`: `bool`
-
-<a id="sensitivedataitemtypedef"></a>
+```python title="Definition"
+class SecurityHubConfigurationTypeDef(TypedDict):
+    publishClassificationFindings: bool,
+    publishPolicyFindings: bool,
+```
 
 ## SensitiveDataItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SensitiveDataItemTypeDef
+
+def get_value() -> SensitiveDataItemTypeDef:
+    return {
+        "category": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SensitiveDataItemTypeDef(TypedDict):
+    category: NotRequired[SensitiveDataItemCategoryType],  # (1)
+    detections: NotRequired[List[DefaultDetectionTypeDef]],  # (2)
+    totalCount: NotRequired[int],
+```
 
-- `category`:
-  [SensitiveDataItemCategoryType](./literals.md#sensitivedataitemcategorytype)
-- `detections`:
-  `List`\[[DefaultDetectionTypeDef](./type_defs.md#defaultdetectiontypedef)\]
-- `totalCount`: `int`
-
-<a id="serversideencryptiontypedef"></a>
-
+1. See [:material-code-brackets: SensitiveDataItemCategoryType](./literals.md#sensitivedataitemcategorytype) 
+2. See [:material-code-braces: DefaultDetectionTypeDef](./type_defs.md#defaultdetectiontypedef) 
 ## ServerSideEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ServerSideEncryptionTypeDef
+
+def get_value() -> ServerSideEncryptionTypeDef:
+    return {
+        "encryptionType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerSideEncryptionTypeDef(TypedDict):
+    encryptionType: NotRequired[EncryptionTypeType],  # (1)
+    kmsMasterKeyId: NotRequired[str],
+```
 
-- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-- `kmsMasterKeyId`: `str`
-
-<a id="servicelimittypedef"></a>
-
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
 ## ServiceLimitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import ServiceLimitTypeDef
+
+def get_value() -> ServiceLimitTypeDef:
+    return {
+        "isServiceLimited": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceLimitTypeDef(TypedDict):
+    isServiceLimited: NotRequired[bool],
+    unit: NotRequired[UnitType],  # (1)
+    value: NotRequired[int],
+```
 
-- `isServiceLimited`: `bool`
-- `unit`: `Literal['TERABYTES']` (see [UnitType](./literals.md#unittype))
-- `value`: `int`
-
-<a id="sessioncontextattributestypedef"></a>
-
+1. See [:material-code-brackets: UnitType](./literals.md#unittype) 
 ## SessionContextAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SessionContextAttributesTypeDef
+
+def get_value() -> SessionContextAttributesTypeDef:
+    return {
+        "creationDate": ...,
+    }
 ```
 
-Optional fields:
-
-- `creationDate`: `datetime`
-- `mfaAuthenticated`: `bool`
-
-<a id="sessioncontexttypedef"></a>
+```python title="Definition"
+class SessionContextAttributesTypeDef(TypedDict):
+    creationDate: NotRequired[datetime],
+    mfaAuthenticated: NotRequired[bool],
+```
 
 ## SessionContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SessionContextTypeDef
+
+def get_value() -> SessionContextTypeDef:
+    return {
+        "attributes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SessionContextTypeDef(TypedDict):
+    attributes: NotRequired[SessionContextAttributesTypeDef],  # (1)
+    sessionIssuer: NotRequired[SessionIssuerTypeDef],  # (2)
+```
 
-- `attributes`:
-  [SessionContextAttributesTypeDef](./type_defs.md#sessioncontextattributestypedef)
-- `sessionIssuer`: [SessionIssuerTypeDef](./type_defs.md#sessionissuertypedef)
-
-<a id="sessionissuertypedef"></a>
-
+1. See [:material-code-braces: SessionContextAttributesTypeDef](./type_defs.md#sessioncontextattributestypedef) 
+2. See [:material-code-braces: SessionIssuerTypeDef](./type_defs.md#sessionissuertypedef) 
 ## SessionIssuerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SessionIssuerTypeDef
+
+def get_value() -> SessionIssuerTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-- `arn`: `str`
-- `principalId`: `str`
-- `type`: `str`
-- `userName`: `str`
-
-<a id="severityleveltypedef"></a>
+```python title="Definition"
+class SessionIssuerTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    arn: NotRequired[str],
+    principalId: NotRequired[str],
+    type: NotRequired[str],
+    userName: NotRequired[str],
+```
 
 ## SeverityLevelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SeverityLevelTypeDef
+
+def get_value() -> SeverityLevelTypeDef:
+    return {
+        "occurrencesThreshold": ...,
+        "severity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SeverityLevelTypeDef(TypedDict):
+    occurrencesThreshold: int,
+    severity: DataIdentifierSeverityType,  # (1)
+```
 
-- `occurrencesThreshold`: `int`
-- `severity`:
-  [DataIdentifierSeverityType](./literals.md#dataidentifierseveritytype)
-
-<a id="severitytypedef"></a>
-
+1. See [:material-code-brackets: DataIdentifierSeverityType](./literals.md#dataidentifierseveritytype) 
 ## SeverityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SeverityTypeDef
+
+def get_value() -> SeverityTypeDef:
+    return {
+        "description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SeverityTypeDef(TypedDict):
+    description: NotRequired[SeverityDescriptionType],  # (1)
+    score: NotRequired[int],
+```
 
-- `description`:
-  [SeverityDescriptionType](./literals.md#severitydescriptiontype)
-- `score`: `int`
-
-<a id="simplecriterionforjobtypedef"></a>
-
+1. See [:material-code-brackets: SeverityDescriptionType](./literals.md#severitydescriptiontype) 
 ## SimpleCriterionForJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SimpleCriterionForJobTypeDef
+
+def get_value() -> SimpleCriterionForJobTypeDef:
+    return {
+        "comparator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SimpleCriterionForJobTypeDef(TypedDict):
+    comparator: NotRequired[JobComparatorType],  # (1)
+    key: NotRequired[SimpleCriterionKeyForJobType],  # (2)
+    values: NotRequired[Sequence[str]],
+```
 
-- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
-- `key`:
-  [SimpleCriterionKeyForJobType](./literals.md#simplecriterionkeyforjobtype)
-- `values`: `Sequence`\[`str`\]
-
-<a id="simplescopetermtypedef"></a>
-
+1. See [:material-code-brackets: JobComparatorType](./literals.md#jobcomparatortype) 
+2. See [:material-code-brackets: SimpleCriterionKeyForJobType](./literals.md#simplecriterionkeyforjobtype) 
 ## SimpleScopeTermTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SimpleScopeTermTypeDef
+
+def get_value() -> SimpleScopeTermTypeDef:
+    return {
+        "comparator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SimpleScopeTermTypeDef(TypedDict):
+    comparator: NotRequired[JobComparatorType],  # (1)
+    key: NotRequired[ScopeFilterKeyType],  # (2)
+    values: NotRequired[Sequence[str]],
+```
 
-- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
-- `key`: [ScopeFilterKeyType](./literals.md#scopefilterkeytype)
-- `values`: `Sequence`\[`str`\]
-
-<a id="sortcriteriatypedef"></a>
-
+1. See [:material-code-brackets: JobComparatorType](./literals.md#jobcomparatortype) 
+2. See [:material-code-brackets: ScopeFilterKeyType](./literals.md#scopefilterkeytype) 
 ## SortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import SortCriteriaTypeDef
+
+def get_value() -> SortCriteriaTypeDef:
+    return {
+        "attributeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SortCriteriaTypeDef(TypedDict):
+    attributeName: NotRequired[str],
+    orderBy: NotRequired[OrderByType],  # (1)
+```
 
-- `attributeName`: `str`
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
-
-<a id="statisticstypedef"></a>
-
+1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## StatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import StatisticsTypeDef
+
+def get_value() -> StatisticsTypeDef:
+    return {
+        "approximateNumberOfObjectsToProcess": ...,
+    }
 ```
 
-Optional fields:
-
-- `approximateNumberOfObjectsToProcess`: `float`
-- `numberOfRuns`: `float`
-
-<a id="tagcriterionforjobtypedef"></a>
+```python title="Definition"
+class StatisticsTypeDef(TypedDict):
+    approximateNumberOfObjectsToProcess: NotRequired[float],
+    numberOfRuns: NotRequired[float],
+```
 
 ## TagCriterionForJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import TagCriterionForJobTypeDef
+
+def get_value() -> TagCriterionForJobTypeDef:
+    return {
+        "comparator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TagCriterionForJobTypeDef(TypedDict):
+    comparator: NotRequired[JobComparatorType],  # (1)
+    tagValues: NotRequired[Sequence[TagCriterionPairForJobTypeDef]],  # (2)
+```
 
-- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
-- `tagValues`:
-  `Sequence`\[[TagCriterionPairForJobTypeDef](./type_defs.md#tagcriterionpairforjobtypedef)\]
-
-<a id="tagcriterionpairforjobtypedef"></a>
-
+1. See [:material-code-brackets: JobComparatorType](./literals.md#jobcomparatortype) 
+2. See [:material-code-braces: TagCriterionPairForJobTypeDef](./type_defs.md#tagcriterionpairforjobtypedef) 
 ## TagCriterionPairForJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import TagCriterionPairForJobTypeDef
+
+def get_value() -> TagCriterionPairForJobTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagCriterionPairForJobTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="tagscopetermtypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TagScopeTermTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import TagScopeTermTypeDef
+
+def get_value() -> TagScopeTermTypeDef:
+    return {
+        "comparator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TagScopeTermTypeDef(TypedDict):
+    comparator: NotRequired[JobComparatorType],  # (1)
+    key: NotRequired[str],
+    tagValues: NotRequired[Sequence[TagValuePairTypeDef]],  # (2)
+    target: NotRequired[TagTargetType],  # (3)
+```
 
-- `comparator`: [JobComparatorType](./literals.md#jobcomparatortype)
-- `key`: `str`
-- `tagValues`:
-  `Sequence`\[[TagValuePairTypeDef](./type_defs.md#tagvaluepairtypedef)\]
-- `target`: `Literal['S3_OBJECT']` (see
-  [TagTargetType](./literals.md#tagtargettype))
-
-<a id="tagvaluepairtypedef"></a>
-
+1. See [:material-code-brackets: JobComparatorType](./literals.md#jobcomparatortype) 
+2. See [:material-code-braces: TagValuePairTypeDef](./type_defs.md#tagvaluepairtypedef) 
+3. See [:material-code-brackets: TagTargetType](./literals.md#tagtargettype) 
 ## TagValuePairTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import TagValuePairTypeDef
+
+def get_value() -> TagValuePairTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="testcustomdataidentifierrequestrequesttypedef"></a>
+```python title="Definition"
+class TagValuePairTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## TestCustomDataIdentifierRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import TestCustomDataIdentifierRequestRequestTypeDef
+
+def get_value() -> TestCustomDataIdentifierRequestRequestTypeDef:
+    return {
+        "regex": ...,
+        "sampleText": ...,
+    }
 ```
 
-Required fields:
-
-- `regex`: `str`
-- `sampleText`: `str`
-
-Optional fields:
-
-- `ignoreWords`: `Sequence`\[`str`\]
-- `keywords`: `Sequence`\[`str`\]
-- `maximumMatchDistance`: `int`
-
-<a id="testcustomdataidentifierresponsetypedef"></a>
+```python title="Definition"
+class TestCustomDataIdentifierRequestRequestTypeDef(TypedDict):
+    regex: str,
+    sampleText: str,
+    ignoreWords: NotRequired[Sequence[str]],
+    keywords: NotRequired[Sequence[str]],
+    maximumMatchDistance: NotRequired[int],
+```
 
 ## TestCustomDataIdentifierResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import TestCustomDataIdentifierResponseTypeDef
+
+def get_value() -> TestCustomDataIdentifierResponseTypeDef:
+    return {
+        "matchCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestCustomDataIdentifierResponseTypeDef(TypedDict):
+    matchCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `matchCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="unprocessedaccounttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UnprocessedAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UnprocessedAccountTypeDef
+
+def get_value() -> UnprocessedAccountTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UnprocessedAccountTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    errorCode: NotRequired[ErrorCodeType],  # (1)
+    errorMessage: NotRequired[str],
+```
 
-- `accountId`: `str`
-- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
-- `errorMessage`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateclassificationjobrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateClassificationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UpdateClassificationJobRequestRequestTypeDef
+
+def get_value() -> UpdateClassificationJobRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+        "jobStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClassificationJobRequestRequestTypeDef(TypedDict):
+    jobId: str,
+    jobStatus: JobStatusType,  # (1)
+```
 
-- `jobId`: `str`
-- `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
-
-<a id="updatefindingsfilterrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 ## UpdateFindingsFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UpdateFindingsFilterRequestRequestTypeDef
+
+def get_value() -> UpdateFindingsFilterRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFindingsFilterRequestRequestTypeDef(TypedDict):
+    id: str,
+    action: NotRequired[FindingsFilterActionType],  # (1)
+    description: NotRequired[str],
+    findingCriteria: NotRequired[FindingCriteriaTypeDef],  # (2)
+    name: NotRequired[str],
+    position: NotRequired[int],
+    clientToken: NotRequired[str],
+```
 
-- `id`: `str`
-
-Optional fields:
-
-- `action`: [FindingsFilterActionType](./literals.md#findingsfilteractiontype)
-- `description`: `str`
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `name`: `str`
-- `position`: `int`
-- `clientToken`: `str`
-
-<a id="updatefindingsfilterresponsetypedef"></a>
-
+1. See [:material-code-brackets: FindingsFilterActionType](./literals.md#findingsfilteractiontype) 
+2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
 ## UpdateFindingsFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UpdateFindingsFilterResponseTypeDef
+
+def get_value() -> UpdateFindingsFilterResponseTypeDef:
+    return {
+        "arn": ...,
+        "id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFindingsFilterResponseTypeDef(TypedDict):
+    arn: str,
+    id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemaciesessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMacieSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UpdateMacieSessionRequestRequestTypeDef
+
+def get_value() -> UpdateMacieSessionRequestRequestTypeDef:
+    return {
+        "findingPublishingFrequency": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateMacieSessionRequestRequestTypeDef(TypedDict):
+    findingPublishingFrequency: NotRequired[FindingPublishingFrequencyType],  # (1)
+    status: NotRequired[MacieStatusType],  # (2)
+```
 
-- `findingPublishingFrequency`:
-  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
-- `status`: [MacieStatusType](./literals.md#maciestatustype)
-
-<a id="updatemembersessionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype) 
+2. See [:material-code-brackets: MacieStatusType](./literals.md#maciestatustype) 
 ## UpdateMemberSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UpdateMemberSessionRequestRequestTypeDef
+
+def get_value() -> UpdateMemberSessionRequestRequestTypeDef:
+    return {
+        "id": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMemberSessionRequestRequestTypeDef(TypedDict):
+    id: str,
+    status: MacieStatusType,  # (1)
+```
 
-- `id`: `str`
-- `status`: [MacieStatusType](./literals.md#maciestatustype)
-
-<a id="updateorganizationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: MacieStatusType](./literals.md#maciestatustype) 
 ## UpdateOrganizationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UpdateOrganizationConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateOrganizationConfigurationRequestRequestTypeDef:
+    return {
+        "autoEnable": ...,
+    }
 ```
 
-Required fields:
-
-- `autoEnable`: `bool`
-
-<a id="usagebyaccounttypedef"></a>
+```python title="Definition"
+class UpdateOrganizationConfigurationRequestRequestTypeDef(TypedDict):
+    autoEnable: bool,
+```
 
 ## UsageByAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UsageByAccountTypeDef
+
+def get_value() -> UsageByAccountTypeDef:
+    return {
+        "currency": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UsageByAccountTypeDef(TypedDict):
+    currency: NotRequired[CurrencyType],  # (1)
+    estimatedCost: NotRequired[str],
+    serviceLimit: NotRequired[ServiceLimitTypeDef],  # (2)
+    type: NotRequired[UsageTypeType],  # (3)
+```
 
-- `currency`: `Literal['USD']` (see [CurrencyType](./literals.md#currencytype))
-- `estimatedCost`: `str`
-- `serviceLimit`: [ServiceLimitTypeDef](./type_defs.md#servicelimittypedef)
-- `type`: [UsageTypeType](./literals.md#usagetypetype)
-
-<a id="usagerecordtypedef"></a>
-
+1. See [:material-code-brackets: CurrencyType](./literals.md#currencytype) 
+2. See [:material-code-braces: ServiceLimitTypeDef](./type_defs.md#servicelimittypedef) 
+3. See [:material-code-brackets: UsageTypeType](./literals.md#usagetypetype) 
 ## UsageRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UsageRecordTypeDef
+
+def get_value() -> UsageRecordTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UsageRecordTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    freeTrialStartDate: NotRequired[datetime],
+    usage: NotRequired[List[UsageByAccountTypeDef]],  # (1)
+```
 
-- `accountId`: `str`
-- `freeTrialStartDate`: `datetime`
-- `usage`:
-  `List`\[[UsageByAccountTypeDef](./type_defs.md#usagebyaccounttypedef)\]
-
-<a id="usagestatisticsfiltertypedef"></a>
-
+1. See [:material-code-braces: UsageByAccountTypeDef](./type_defs.md#usagebyaccounttypedef) 
 ## UsageStatisticsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UsageStatisticsFilterTypeDef
+
+def get_value() -> UsageStatisticsFilterTypeDef:
+    return {
+        "comparator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UsageStatisticsFilterTypeDef(TypedDict):
+    comparator: NotRequired[UsageStatisticsFilterComparatorType],  # (1)
+    key: NotRequired[UsageStatisticsFilterKeyType],  # (2)
+    values: NotRequired[Sequence[str]],
+```
 
-- `comparator`:
-  [UsageStatisticsFilterComparatorType](./literals.md#usagestatisticsfiltercomparatortype)
-- `key`:
-  [UsageStatisticsFilterKeyType](./literals.md#usagestatisticsfilterkeytype)
-- `values`: `Sequence`\[`str`\]
-
-<a id="usagestatisticssortbytypedef"></a>
-
+1. See [:material-code-brackets: UsageStatisticsFilterComparatorType](./literals.md#usagestatisticsfiltercomparatortype) 
+2. See [:material-code-brackets: UsageStatisticsFilterKeyType](./literals.md#usagestatisticsfilterkeytype) 
 ## UsageStatisticsSortByTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UsageStatisticsSortByTypeDef
+
+def get_value() -> UsageStatisticsSortByTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UsageStatisticsSortByTypeDef(TypedDict):
+    key: NotRequired[UsageStatisticsSortKeyType],  # (1)
+    orderBy: NotRequired[OrderByType],  # (2)
+```
 
-- `key`: [UsageStatisticsSortKeyType](./literals.md#usagestatisticssortkeytype)
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
-
-<a id="usagetotaltypedef"></a>
-
+1. See [:material-code-brackets: UsageStatisticsSortKeyType](./literals.md#usagestatisticssortkeytype) 
+2. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## UsageTotalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UsageTotalTypeDef
+
+def get_value() -> UsageTotalTypeDef:
+    return {
+        "currency": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UsageTotalTypeDef(TypedDict):
+    currency: NotRequired[CurrencyType],  # (1)
+    estimatedCost: NotRequired[str],
+    type: NotRequired[UsageTypeType],  # (2)
+```
 
-- `currency`: `Literal['USD']` (see [CurrencyType](./literals.md#currencytype))
-- `estimatedCost`: `str`
-- `type`: [UsageTypeType](./literals.md#usagetypetype)
-
-<a id="useridentityroottypedef"></a>
-
+1. See [:material-code-brackets: CurrencyType](./literals.md#currencytype) 
+2. See [:material-code-brackets: UsageTypeType](./literals.md#usagetypetype) 
 ## UserIdentityRootTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UserIdentityRootTypeDef
+
+def get_value() -> UserIdentityRootTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-- `arn`: `str`
-- `principalId`: `str`
-
-<a id="useridentitytypedef"></a>
+```python title="Definition"
+class UserIdentityRootTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    arn: NotRequired[str],
+    principalId: NotRequired[str],
+```
 
 ## UserIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UserIdentityTypeDef
+
+def get_value() -> UserIdentityTypeDef:
+    return {
+        "assumedRole": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserIdentityTypeDef(TypedDict):
+    assumedRole: NotRequired[AssumedRoleTypeDef],  # (1)
+    awsAccount: NotRequired[AwsAccountTypeDef],  # (2)
+    awsService: NotRequired[AwsServiceTypeDef],  # (3)
+    federatedUser: NotRequired[FederatedUserTypeDef],  # (4)
+    iamUser: NotRequired[IamUserTypeDef],  # (5)
+    root: NotRequired[UserIdentityRootTypeDef],  # (6)
+    type: NotRequired[UserIdentityTypeType],  # (7)
+```
 
-- `assumedRole`: [AssumedRoleTypeDef](./type_defs.md#assumedroletypedef)
-- `awsAccount`: [AwsAccountTypeDef](./type_defs.md#awsaccounttypedef)
-- `awsService`: [AwsServiceTypeDef](./type_defs.md#awsservicetypedef)
-- `federatedUser`: [FederatedUserTypeDef](./type_defs.md#federatedusertypedef)
-- `iamUser`: [IamUserTypeDef](./type_defs.md#iamusertypedef)
-- `root`: [UserIdentityRootTypeDef](./type_defs.md#useridentityroottypedef)
-- `type`: [UserIdentityTypeType](./literals.md#useridentitytypetype)
-
-<a id="userpauseddetailstypedef"></a>
-
+1. See [:material-code-braces: AssumedRoleTypeDef](./type_defs.md#assumedroletypedef) 
+2. See [:material-code-braces: AwsAccountTypeDef](./type_defs.md#awsaccounttypedef) 
+3. See [:material-code-braces: AwsServiceTypeDef](./type_defs.md#awsservicetypedef) 
+4. See [:material-code-braces: FederatedUserTypeDef](./type_defs.md#federatedusertypedef) 
+5. See [:material-code-braces: IamUserTypeDef](./type_defs.md#iamusertypedef) 
+6. See [:material-code-braces: UserIdentityRootTypeDef](./type_defs.md#useridentityroottypedef) 
+7. See [:material-code-brackets: UserIdentityTypeType](./literals.md#useridentitytypetype) 
 ## UserPausedDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import UserPausedDetailsTypeDef
+
+def get_value() -> UserPausedDetailsTypeDef:
+    return {
+        "jobExpiresAt": ...,
+    }
 ```
 
-Optional fields:
-
-- `jobExpiresAt`: `datetime`
-- `jobImminentExpirationHealthEventArn`: `str`
-- `jobPausedAt`: `datetime`
-
-<a id="weeklyscheduletypedef"></a>
+```python title="Definition"
+class UserPausedDetailsTypeDef(TypedDict):
+    jobExpiresAt: NotRequired[datetime],
+    jobImminentExpirationHealthEventArn: NotRequired[str],
+    jobPausedAt: NotRequired[datetime],
+```
 
 ## WeeklyScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_macie2.type_defs import WeeklyScheduleTypeDef
+
+def get_value() -> WeeklyScheduleTypeDef:
+    return {
+        "dayOfWeek": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WeeklyScheduleTypeDef(TypedDict):
+    dayOfWeek: NotRequired[DayOfWeekType],  # (1)
+```
 
-- `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
+1. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 

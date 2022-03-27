@@ -1,34 +1,18 @@
-<a id="paginators-for-boto3-accessanalyzer-module"></a>
-
-# Paginators for boto3 AccessAnalyzer module
+# Paginators
 
 > [Index](../README.md) > [AccessAnalyzer](./README.md) > Paginators
 
-Auto-generated documentation for
-[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
-type annotations stubs module
-[mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+!!! note ""
 
-- [Paginators for boto3 AccessAnalyzer module](#paginators-for-boto3-accessanalyzer-module)
-  - [ListAccessPreviewFindingsPaginator](#listaccesspreviewfindingspaginator)
-  - [ListAccessPreviewsPaginator](#listaccesspreviewspaginator)
-  - [ListAnalyzedResourcesPaginator](#listanalyzedresourcespaginator)
-  - [ListAnalyzersPaginator](#listanalyzerspaginator)
-  - [ListArchiveRulesPaginator](#listarchiverulespaginator)
-  - [ListFindingsPaginator](#listfindingspaginator)
-  - [ListPolicyGenerationsPaginator](#listpolicygenerationspaginator)
-  - [ValidatePolicyPaginator](#validatepolicypaginator)
-
-<a id="listaccesspreviewfindingspaginator"></a>
+    Auto-generated documentation for [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+    type annotations stubs module [mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 ## ListAccessPreviewFindingsPaginator
 
-Type annotations for
-`boto3.client("accessanalyzer").get_paginator("list_access_preview_findings")`.
+Type annotations and code completion for `#!python boto3.client("accessanalyzer").get_paginator("list_access_preview_findings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviewFindings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewFindingsPaginator
@@ -37,31 +21,44 @@ def get_list_access_preview_findings_paginator() -> ListAccessPreviewFindingsPag
     return Session().client("accessanalyzer").get_paginator("list_access_preview_findings")
 ```
 
-Boto3 documentation:
-[AccessAnalyzer.Paginator.ListAccessPreviewFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviewFindings)
 
-Arguments for `ListAccessPreviewFindingsPaginator.paginate` method:
+### paginate
 
-- `accessPreviewId`: `str` *(required)*
-- `analyzerArn`: `str` *(required)*
-- `filter`: `Mapping`\[`str`,
-  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccessPreviewFindingsPaginator.paginate` method.
 
-`ListAccessPreviewFindingsPaginator.paginate` returns
-`_PageIterator`\[[ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    accessPreviewId: str,
+    analyzerArn: str,
+    filter: Mapping[str, CriterionTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAccessPreviewFindingsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listaccesspreviewspaginator"></a>
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef = {  # (1)
+    "accessPreviewId": ...,
+    "analyzerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef](./type_defs.md#listaccesspreviewfindingsrequestlistaccesspreviewfindingspaginatetypedef) 
 ## ListAccessPreviewsPaginator
 
-Type annotations for
-`boto3.client("accessanalyzer").get_paginator("list_access_previews")`.
+Type annotations and code completion for `#!python boto3.client("accessanalyzer").get_paginator("list_access_previews")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviews)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewsPaginator
@@ -70,28 +67,40 @@ def get_list_access_previews_paginator() -> ListAccessPreviewsPaginator:
     return Session().client("accessanalyzer").get_paginator("list_access_previews")
 ```
 
-Boto3 documentation:
-[AccessAnalyzer.Paginator.ListAccessPreviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAccessPreviews)
 
-Arguments for `ListAccessPreviewsPaginator.paginate` method:
+### paginate
 
-- `analyzerArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccessPreviewsPaginator.paginate` method.
 
-`ListAccessPreviewsPaginator.paginate` returns
-`_PageIterator`\[[ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    analyzerArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAccessPreviewsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listanalyzedresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccessPreviewsRequestListAccessPreviewsPaginateTypeDef = {  # (1)
+    "analyzerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccessPreviewsRequestListAccessPreviewsPaginateTypeDef](./type_defs.md#listaccesspreviewsrequestlistaccesspreviewspaginatetypedef) 
 ## ListAnalyzedResourcesPaginator
 
-Type annotations for
-`boto3.client("accessanalyzer").get_paginator("list_analyzed_resources")`.
+Type annotations and code completion for `#!python boto3.client("accessanalyzer").get_paginator("list_analyzed_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzedResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_accessanalyzer.paginator import ListAnalyzedResourcesPaginator
@@ -100,29 +109,42 @@ def get_list_analyzed_resources_paginator() -> ListAnalyzedResourcesPaginator:
     return Session().client("accessanalyzer").get_paginator("list_analyzed_resources")
 ```
 
-Boto3 documentation:
-[AccessAnalyzer.Paginator.ListAnalyzedResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzedResources)
 
-Arguments for `ListAnalyzedResourcesPaginator.paginate` method:
+### paginate
 
-- `analyzerArn`: `str` *(required)*
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAnalyzedResourcesPaginator.paginate` method.
 
-`ListAnalyzedResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    analyzerArn: str,
+    resourceType: ResourceTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAnalyzedResourcesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listanalyzerspaginator"></a>
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAnalyzedResourcesRequestListAnalyzedResourcesPaginateTypeDef = {  # (1)
+    "analyzerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAnalyzedResourcesRequestListAnalyzedResourcesPaginateTypeDef](./type_defs.md#listanalyzedresourcesrequestlistanalyzedresourcespaginatetypedef) 
 ## ListAnalyzersPaginator
 
-Type annotations for
-`boto3.client("accessanalyzer").get_paginator("list_analyzers")`.
+Type annotations and code completion for `#!python boto3.client("accessanalyzer").get_paginator("list_analyzers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_accessanalyzer.paginator import ListAnalyzersPaginator
@@ -131,28 +153,41 @@ def get_list_analyzers_paginator() -> ListAnalyzersPaginator:
     return Session().client("accessanalyzer").get_paginator("list_analyzers")
 ```
 
-Boto3 documentation:
-[AccessAnalyzer.Paginator.ListAnalyzers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListAnalyzers)
 
-Arguments for `ListAnalyzersPaginator.paginate` method:
+### paginate
 
-- `type`: [TypeType](./literals.md#typetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAnalyzersPaginator.paginate` method.
 
-`ListAnalyzersPaginator.paginate` returns
-`_PageIterator`\[[ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    type: TypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAnalyzersResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listarchiverulespaginator"></a>
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAnalyzersRequestListAnalyzersPaginateTypeDef = {  # (1)
+    "type": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAnalyzersRequestListAnalyzersPaginateTypeDef](./type_defs.md#listanalyzersrequestlistanalyzerspaginatetypedef) 
 ## ListArchiveRulesPaginator
 
-Type annotations for
-`boto3.client("accessanalyzer").get_paginator("list_archive_rules")`.
+Type annotations and code completion for `#!python boto3.client("accessanalyzer").get_paginator("list_archive_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListArchiveRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_accessanalyzer.paginator import ListArchiveRulesPaginator
@@ -161,28 +196,40 @@ def get_list_archive_rules_paginator() -> ListArchiveRulesPaginator:
     return Session().client("accessanalyzer").get_paginator("list_archive_rules")
 ```
 
-Boto3 documentation:
-[AccessAnalyzer.Paginator.ListArchiveRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListArchiveRules)
 
-Arguments for `ListArchiveRulesPaginator.paginate` method:
+### paginate
 
-- `analyzerName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListArchiveRulesPaginator.paginate` method.
 
-`ListArchiveRulesPaginator.paginate` returns
-`_PageIterator`\[[ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    analyzerName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListArchiveRulesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfindingspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListArchiveRulesRequestListArchiveRulesPaginateTypeDef = {  # (1)
+    "analyzerName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListArchiveRulesRequestListArchiveRulesPaginateTypeDef](./type_defs.md#listarchiverulesrequestlistarchiverulespaginatetypedef) 
 ## ListFindingsPaginator
 
-Type annotations for
-`boto3.client("accessanalyzer").get_paginator("list_findings")`.
+Type annotations and code completion for `#!python boto3.client("accessanalyzer").get_paginator("list_findings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListFindings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_accessanalyzer.paginator import ListFindingsPaginator
@@ -191,31 +238,44 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
     return Session().client("accessanalyzer").get_paginator("list_findings")
 ```
 
-Boto3 documentation:
-[AccessAnalyzer.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListFindings)
 
-Arguments for `ListFindingsPaginator.paginate` method:
+### paginate
 
-- `analyzerArn`: `str` *(required)*
-- `filter`: `Mapping`\[`str`,
-  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
-- `sort`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFindingsPaginator.paginate` method.
 
-`ListFindingsPaginator.paginate` returns
-`_PageIterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    analyzerArn: str,
+    filter: Mapping[str, CriterionTypeDef] = ...,  # (1)
+    sort: SortCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListFindingsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listpolicygenerationspaginator"></a>
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFindingsRequestListFindingsPaginateTypeDef = {  # (1)
+    "analyzerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFindingsRequestListFindingsPaginateTypeDef](./type_defs.md#listfindingsrequestlistfindingspaginatetypedef) 
 ## ListPolicyGenerationsPaginator
 
-Type annotations for
-`boto3.client("accessanalyzer").get_paginator("list_policy_generations")`.
+Type annotations and code completion for `#!python boto3.client("accessanalyzer").get_paginator("list_policy_generations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListPolicyGenerations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_accessanalyzer.paginator import ListPolicyGenerationsPaginator
@@ -224,28 +284,40 @@ def get_list_policy_generations_paginator() -> ListPolicyGenerationsPaginator:
     return Session().client("accessanalyzer").get_paginator("list_policy_generations")
 ```
 
-Boto3 documentation:
-[AccessAnalyzer.Paginator.ListPolicyGenerations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ListPolicyGenerations)
 
-Arguments for `ListPolicyGenerationsPaginator.paginate` method:
+### paginate
 
-- `principalArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPolicyGenerationsPaginator.paginate` method.
 
-`ListPolicyGenerationsPaginator.paginate` returns
-`_PageIterator`\[[ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    principalArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPolicyGenerationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="validatepolicypaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPolicyGenerationsRequestListPolicyGenerationsPaginateTypeDef = {  # (1)
+    "principalArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPolicyGenerationsRequestListPolicyGenerationsPaginateTypeDef](./type_defs.md#listpolicygenerationsrequestlistpolicygenerationspaginatetypedef) 
 ## ValidatePolicyPaginator
 
-Type annotations for
-`boto3.client("accessanalyzer").get_paginator("validate_policy")`.
+Type annotations and code completion for `#!python boto3.client("accessanalyzer").get_paginator("validate_policy")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ValidatePolicy)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_accessanalyzer.paginator import ValidatePolicyPaginator
@@ -254,18 +326,38 @@ def get_validate_policy_paginator() -> ValidatePolicyPaginator:
     return Session().client("accessanalyzer").get_paginator("validate_policy")
 ```
 
-Boto3 documentation:
-[AccessAnalyzer.Paginator.ValidatePolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Paginator.ValidatePolicy)
 
-Arguments for `ValidatePolicyPaginator.paginate` method:
+### paginate
 
-- `policyDocument`: `str` *(required)*
-- `policyType`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
-- `locale`: [LocaleType](./literals.md#localetype)
-- `validatePolicyResourceType`:
-  [ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ValidatePolicyPaginator.paginate` method.
 
-`ValidatePolicyPaginator.paginate` returns
-`_PageIterator`\[[ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    policyDocument: str,
+    policyType: PolicyTypeType,  # (1)
+    locale: LocaleType = ...,  # (2)
+    validatePolicyResourceType: ValidatePolicyResourceTypeType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ValidatePolicyResponseTypeDef]:  # (5)
+    ...
+```
+
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+3. See [:material-code-brackets: ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ValidatePolicyRequestValidatePolicyPaginateTypeDef = {  # (1)
+    "policyDocument": ...,
+    "policyType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ValidatePolicyRequestValidatePolicyPaginateTypeDef](./type_defs.md#validatepolicyrequestvalidatepolicypaginatetypedef) 

@@ -1,1302 +1,1402 @@
-<a id="literals-for-boto3-redshift-module"></a>
-
-# Literals for boto3 Redshift module
+# Literals
 
 > [Index](../README.md) > [Redshift](./README.md) > Literals
 
-Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
-type annotations stubs module
-[mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
+!!! note ""
 
-- [Literals for boto3 Redshift module](#literals-for-boto3-redshift-module)
-  - [ActionTypeType](#actiontypetype)
-  - [AquaConfigurationStatusType](#aquaconfigurationstatustype)
-  - [AquaStatusType](#aquastatustype)
-  - [AuthorizationStatusType](#authorizationstatustype)
-  - [ClusterAvailableWaiterName](#clusteravailablewaitername)
-  - [ClusterDeletedWaiterName](#clusterdeletedwaitername)
-  - [ClusterRestoredWaiterName](#clusterrestoredwaitername)
-  - [DataShareStatusForConsumerType](#datasharestatusforconsumertype)
-  - [DataShareStatusForProducerType](#datasharestatusforproducertype)
-  - [DataShareStatusType](#datasharestatustype)
-  - [DescribeClusterDbRevisionsPaginatorName](#describeclusterdbrevisionspaginatorname)
-  - [DescribeClusterParameterGroupsPaginatorName](#describeclusterparametergroupspaginatorname)
-  - [DescribeClusterParametersPaginatorName](#describeclusterparameterspaginatorname)
-  - [DescribeClusterSecurityGroupsPaginatorName](#describeclustersecuritygroupspaginatorname)
-  - [DescribeClusterSnapshotsPaginatorName](#describeclustersnapshotspaginatorname)
-  - [DescribeClusterSubnetGroupsPaginatorName](#describeclustersubnetgroupspaginatorname)
-  - [DescribeClusterTracksPaginatorName](#describeclustertrackspaginatorname)
-  - [DescribeClusterVersionsPaginatorName](#describeclusterversionspaginatorname)
-  - [DescribeClustersPaginatorName](#describeclusterspaginatorname)
-  - [DescribeDataSharesForConsumerPaginatorName](#describedatasharesforconsumerpaginatorname)
-  - [DescribeDataSharesForProducerPaginatorName](#describedatasharesforproducerpaginatorname)
-  - [DescribeDataSharesPaginatorName](#describedatasharespaginatorname)
-  - [DescribeDefaultClusterParametersPaginatorName](#describedefaultclusterparameterspaginatorname)
-  - [DescribeEndpointAccessPaginatorName](#describeendpointaccesspaginatorname)
-  - [DescribeEndpointAuthorizationPaginatorName](#describeendpointauthorizationpaginatorname)
-  - [DescribeEventSubscriptionsPaginatorName](#describeeventsubscriptionspaginatorname)
-  - [DescribeEventsPaginatorName](#describeeventspaginatorname)
-  - [DescribeHsmClientCertificatesPaginatorName](#describehsmclientcertificatespaginatorname)
-  - [DescribeHsmConfigurationsPaginatorName](#describehsmconfigurationspaginatorname)
-  - [DescribeNodeConfigurationOptionsPaginatorName](#describenodeconfigurationoptionspaginatorname)
-  - [DescribeOrderableClusterOptionsPaginatorName](#describeorderableclusteroptionspaginatorname)
-  - [DescribeReservedNodeExchangeStatusPaginatorName](#describereservednodeexchangestatuspaginatorname)
-  - [DescribeReservedNodeOfferingsPaginatorName](#describereservednodeofferingspaginatorname)
-  - [DescribeReservedNodesPaginatorName](#describereservednodespaginatorname)
-  - [DescribeScheduledActionsPaginatorName](#describescheduledactionspaginatorname)
-  - [DescribeSnapshotCopyGrantsPaginatorName](#describesnapshotcopygrantspaginatorname)
-  - [DescribeSnapshotSchedulesPaginatorName](#describesnapshotschedulespaginatorname)
-  - [DescribeTableRestoreStatusPaginatorName](#describetablerestorestatuspaginatorname)
-  - [DescribeTagsPaginatorName](#describetagspaginatorname)
-  - [DescribeUsageLimitsPaginatorName](#describeusagelimitspaginatorname)
-  - [GetReservedNodeExchangeConfigurationOptionsPaginatorName](#getreservednodeexchangeconfigurationoptionspaginatorname)
-  - [GetReservedNodeExchangeOfferingsPaginatorName](#getreservednodeexchangeofferingspaginatorname)
-  - [ModeType](#modetype)
-  - [NodeConfigurationOptionsFilterNameType](#nodeconfigurationoptionsfilternametype)
-  - [OperatorTypeType](#operatortypetype)
-  - [ParameterApplyTypeType](#parameterapplytypetype)
-  - [PartnerIntegrationStatusType](#partnerintegrationstatustype)
-  - [ReservedNodeExchangeActionTypeType](#reservednodeexchangeactiontypetype)
-  - [ReservedNodeExchangeStatusTypeType](#reservednodeexchangestatustypetype)
-  - [ReservedNodeOfferingTypeType](#reservednodeofferingtypetype)
-  - [ScheduleStateType](#schedulestatetype)
-  - [ScheduledActionFilterNameType](#scheduledactionfilternametype)
-  - [ScheduledActionStateType](#scheduledactionstatetype)
-  - [ScheduledActionTypeValuesType](#scheduledactiontypevaluestype)
-  - [SnapshotAttributeToSortByType](#snapshotattributetosortbytype)
-  - [SnapshotAvailableWaiterName](#snapshotavailablewaitername)
-  - [SortByOrderType](#sortbyordertype)
-  - [SourceTypeType](#sourcetypetype)
-  - [TableRestoreStatusTypeType](#tablerestorestatustypetype)
-  - [UsageLimitBreachActionType](#usagelimitbreachactiontype)
-  - [UsageLimitFeatureTypeType](#usagelimitfeaturetypetype)
-  - [UsageLimitLimitTypeType](#usagelimitlimittypetype)
-  - [UsageLimitPeriodType](#usagelimitperiodtype)
-  - [RedshiftServiceName](#redshiftservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="actiontypetype"></a>
+    Auto-generated documentation for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
+    type annotations stubs module [mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 ## ActionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ActionTypeType
+
+def get_value() -> ActionTypeType:
+    return "recommend-node-config"
 ```
 
-Values:
-
-- `recommend-node-config`
-- `resize-cluster`
-- `restore-cluster`
-
-<a id="aquaconfigurationstatustype"></a>
-
+```python title="Definition"
+ActionTypeType = Literal[
+    "recommend-node-config",
+    "resize-cluster",
+    "restore-cluster",
+]
+```
 ## AquaConfigurationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import AquaConfigurationStatusType
+
+def get_value() -> AquaConfigurationStatusType:
+    return "auto"
 ```
 
-Values:
-
-- `auto`
-- `disabled`
-- `enabled`
-
-<a id="aquastatustype"></a>
-
+```python title="Definition"
+AquaConfigurationStatusType = Literal[
+    "auto",
+    "disabled",
+    "enabled",
+]
+```
 ## AquaStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import AquaStatusType
+
+def get_value() -> AquaStatusType:
+    return "applying"
 ```
 
-Values:
-
-- `applying`
-- `disabled`
-- `enabled`
-
-<a id="authorizationstatustype"></a>
-
+```python title="Definition"
+AquaStatusType = Literal[
+    "applying",
+    "disabled",
+    "enabled",
+]
+```
 ## AuthorizationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import AuthorizationStatusType
+
+def get_value() -> AuthorizationStatusType:
+    return "Authorized"
 ```
 
-Values:
-
-- `Authorized`
-- `Revoking`
-
-<a id="clusteravailablewaitername"></a>
-
+```python title="Definition"
+AuthorizationStatusType = Literal[
+    "Authorized",
+    "Revoking",
+]
+```
 ## ClusterAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ClusterAvailableWaiterName
+
+def get_value() -> ClusterAvailableWaiterName:
+    return "cluster_available"
 ```
 
-Values:
-
-- `cluster_available`
-
-<a id="clusterdeletedwaitername"></a>
-
+```python title="Definition"
+ClusterAvailableWaiterName = Literal[
+    "cluster_available",
+]
+```
 ## ClusterDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ClusterDeletedWaiterName
+
+def get_value() -> ClusterDeletedWaiterName:
+    return "cluster_deleted"
 ```
 
-Values:
-
-- `cluster_deleted`
-
-<a id="clusterrestoredwaitername"></a>
-
+```python title="Definition"
+ClusterDeletedWaiterName = Literal[
+    "cluster_deleted",
+]
+```
 ## ClusterRestoredWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ClusterRestoredWaiterName
+
+def get_value() -> ClusterRestoredWaiterName:
+    return "cluster_restored"
 ```
 
-Values:
-
-- `cluster_restored`
-
-<a id="datasharestatusforconsumertype"></a>
-
+```python title="Definition"
+ClusterRestoredWaiterName = Literal[
+    "cluster_restored",
+]
+```
 ## DataShareStatusForConsumerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DataShareStatusForConsumerType
+
+def get_value() -> DataShareStatusForConsumerType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `AVAILABLE`
-
-<a id="datasharestatusforproducertype"></a>
-
+```python title="Definition"
+DataShareStatusForConsumerType = Literal[
+    "ACTIVE",
+    "AVAILABLE",
+]
+```
 ## DataShareStatusForProducerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DataShareStatusForProducerType
+
+def get_value() -> DataShareStatusForProducerType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `AUTHORIZED`
-- `DEAUTHORIZED`
-- `PENDING_AUTHORIZATION`
-- `REJECTED`
-
-<a id="datasharestatustype"></a>
-
+```python title="Definition"
+DataShareStatusForProducerType = Literal[
+    "ACTIVE",
+    "AUTHORIZED",
+    "DEAUTHORIZED",
+    "PENDING_AUTHORIZATION",
+    "REJECTED",
+]
+```
 ## DataShareStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DataShareStatusType
+
+def get_value() -> DataShareStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `AUTHORIZED`
-- `AVAILABLE`
-- `DEAUTHORIZED`
-- `PENDING_AUTHORIZATION`
-- `REJECTED`
-
-<a id="describeclusterdbrevisionspaginatorname"></a>
-
+```python title="Definition"
+DataShareStatusType = Literal[
+    "ACTIVE",
+    "AUTHORIZED",
+    "AVAILABLE",
+    "DEAUTHORIZED",
+    "PENDING_AUTHORIZATION",
+    "REJECTED",
+]
+```
 ## DescribeClusterDbRevisionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeClusterDbRevisionsPaginatorName
+
+def get_value() -> DescribeClusterDbRevisionsPaginatorName:
+    return "describe_cluster_db_revisions"
 ```
 
-Values:
-
-- `describe_cluster_db_revisions`
-
-<a id="describeclusterparametergroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeClusterDbRevisionsPaginatorName = Literal[
+    "describe_cluster_db_revisions",
+]
+```
 ## DescribeClusterParameterGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeClusterParameterGroupsPaginatorName
+
+def get_value() -> DescribeClusterParameterGroupsPaginatorName:
+    return "describe_cluster_parameter_groups"
 ```
 
-Values:
-
-- `describe_cluster_parameter_groups`
-
-<a id="describeclusterparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeClusterParameterGroupsPaginatorName = Literal[
+    "describe_cluster_parameter_groups",
+]
+```
 ## DescribeClusterParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeClusterParametersPaginatorName
+
+def get_value() -> DescribeClusterParametersPaginatorName:
+    return "describe_cluster_parameters"
 ```
 
-Values:
-
-- `describe_cluster_parameters`
-
-<a id="describeclustersecuritygroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeClusterParametersPaginatorName = Literal[
+    "describe_cluster_parameters",
+]
+```
 ## DescribeClusterSecurityGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeClusterSecurityGroupsPaginatorName
+
+def get_value() -> DescribeClusterSecurityGroupsPaginatorName:
+    return "describe_cluster_security_groups"
 ```
 
-Values:
-
-- `describe_cluster_security_groups`
-
-<a id="describeclustersnapshotspaginatorname"></a>
-
+```python title="Definition"
+DescribeClusterSecurityGroupsPaginatorName = Literal[
+    "describe_cluster_security_groups",
+]
+```
 ## DescribeClusterSnapshotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeClusterSnapshotsPaginatorName
+
+def get_value() -> DescribeClusterSnapshotsPaginatorName:
+    return "describe_cluster_snapshots"
 ```
 
-Values:
-
-- `describe_cluster_snapshots`
-
-<a id="describeclustersubnetgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeClusterSnapshotsPaginatorName = Literal[
+    "describe_cluster_snapshots",
+]
+```
 ## DescribeClusterSubnetGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeClusterSubnetGroupsPaginatorName
+
+def get_value() -> DescribeClusterSubnetGroupsPaginatorName:
+    return "describe_cluster_subnet_groups"
 ```
 
-Values:
-
-- `describe_cluster_subnet_groups`
-
-<a id="describeclustertrackspaginatorname"></a>
-
+```python title="Definition"
+DescribeClusterSubnetGroupsPaginatorName = Literal[
+    "describe_cluster_subnet_groups",
+]
+```
 ## DescribeClusterTracksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeClusterTracksPaginatorName
+
+def get_value() -> DescribeClusterTracksPaginatorName:
+    return "describe_cluster_tracks"
 ```
 
-Values:
-
-- `describe_cluster_tracks`
-
-<a id="describeclusterversionspaginatorname"></a>
-
+```python title="Definition"
+DescribeClusterTracksPaginatorName = Literal[
+    "describe_cluster_tracks",
+]
+```
 ## DescribeClusterVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeClusterVersionsPaginatorName
+
+def get_value() -> DescribeClusterVersionsPaginatorName:
+    return "describe_cluster_versions"
 ```
 
-Values:
-
-- `describe_cluster_versions`
-
-<a id="describeclusterspaginatorname"></a>
-
+```python title="Definition"
+DescribeClusterVersionsPaginatorName = Literal[
+    "describe_cluster_versions",
+]
+```
 ## DescribeClustersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeClustersPaginatorName
+
+def get_value() -> DescribeClustersPaginatorName:
+    return "describe_clusters"
 ```
 
-Values:
-
-- `describe_clusters`
-
-<a id="describedatasharesforconsumerpaginatorname"></a>
-
+```python title="Definition"
+DescribeClustersPaginatorName = Literal[
+    "describe_clusters",
+]
+```
 ## DescribeDataSharesForConsumerPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeDataSharesForConsumerPaginatorName
+
+def get_value() -> DescribeDataSharesForConsumerPaginatorName:
+    return "describe_data_shares_for_consumer"
 ```
 
-Values:
-
-- `describe_data_shares_for_consumer`
-
-<a id="describedatasharesforproducerpaginatorname"></a>
-
+```python title="Definition"
+DescribeDataSharesForConsumerPaginatorName = Literal[
+    "describe_data_shares_for_consumer",
+]
+```
 ## DescribeDataSharesForProducerPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeDataSharesForProducerPaginatorName
+
+def get_value() -> DescribeDataSharesForProducerPaginatorName:
+    return "describe_data_shares_for_producer"
 ```
 
-Values:
-
-- `describe_data_shares_for_producer`
-
-<a id="describedatasharespaginatorname"></a>
-
+```python title="Definition"
+DescribeDataSharesForProducerPaginatorName = Literal[
+    "describe_data_shares_for_producer",
+]
+```
 ## DescribeDataSharesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeDataSharesPaginatorName
+
+def get_value() -> DescribeDataSharesPaginatorName:
+    return "describe_data_shares"
 ```
 
-Values:
-
-- `describe_data_shares`
-
-<a id="describedefaultclusterparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeDataSharesPaginatorName = Literal[
+    "describe_data_shares",
+]
+```
 ## DescribeDefaultClusterParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeDefaultClusterParametersPaginatorName
+
+def get_value() -> DescribeDefaultClusterParametersPaginatorName:
+    return "describe_default_cluster_parameters"
 ```
 
-Values:
-
-- `describe_default_cluster_parameters`
-
-<a id="describeendpointaccesspaginatorname"></a>
-
+```python title="Definition"
+DescribeDefaultClusterParametersPaginatorName = Literal[
+    "describe_default_cluster_parameters",
+]
+```
 ## DescribeEndpointAccessPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeEndpointAccessPaginatorName
+
+def get_value() -> DescribeEndpointAccessPaginatorName:
+    return "describe_endpoint_access"
 ```
 
-Values:
-
-- `describe_endpoint_access`
-
-<a id="describeendpointauthorizationpaginatorname"></a>
-
+```python title="Definition"
+DescribeEndpointAccessPaginatorName = Literal[
+    "describe_endpoint_access",
+]
+```
 ## DescribeEndpointAuthorizationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeEndpointAuthorizationPaginatorName
+
+def get_value() -> DescribeEndpointAuthorizationPaginatorName:
+    return "describe_endpoint_authorization"
 ```
 
-Values:
-
-- `describe_endpoint_authorization`
-
-<a id="describeeventsubscriptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeEndpointAuthorizationPaginatorName = Literal[
+    "describe_endpoint_authorization",
+]
+```
 ## DescribeEventSubscriptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeEventSubscriptionsPaginatorName
+
+def get_value() -> DescribeEventSubscriptionsPaginatorName:
+    return "describe_event_subscriptions"
 ```
 
-Values:
-
-- `describe_event_subscriptions`
-
-<a id="describeeventspaginatorname"></a>
-
+```python title="Definition"
+DescribeEventSubscriptionsPaginatorName = Literal[
+    "describe_event_subscriptions",
+]
+```
 ## DescribeEventsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeEventsPaginatorName
+
+def get_value() -> DescribeEventsPaginatorName:
+    return "describe_events"
 ```
 
-Values:
-
-- `describe_events`
-
-<a id="describehsmclientcertificatespaginatorname"></a>
-
+```python title="Definition"
+DescribeEventsPaginatorName = Literal[
+    "describe_events",
+]
+```
 ## DescribeHsmClientCertificatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeHsmClientCertificatesPaginatorName
+
+def get_value() -> DescribeHsmClientCertificatesPaginatorName:
+    return "describe_hsm_client_certificates"
 ```
 
-Values:
-
-- `describe_hsm_client_certificates`
-
-<a id="describehsmconfigurationspaginatorname"></a>
-
+```python title="Definition"
+DescribeHsmClientCertificatesPaginatorName = Literal[
+    "describe_hsm_client_certificates",
+]
+```
 ## DescribeHsmConfigurationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeHsmConfigurationsPaginatorName
+
+def get_value() -> DescribeHsmConfigurationsPaginatorName:
+    return "describe_hsm_configurations"
 ```
 
-Values:
-
-- `describe_hsm_configurations`
-
-<a id="describenodeconfigurationoptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeHsmConfigurationsPaginatorName = Literal[
+    "describe_hsm_configurations",
+]
+```
 ## DescribeNodeConfigurationOptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeNodeConfigurationOptionsPaginatorName
+
+def get_value() -> DescribeNodeConfigurationOptionsPaginatorName:
+    return "describe_node_configuration_options"
 ```
 
-Values:
-
-- `describe_node_configuration_options`
-
-<a id="describeorderableclusteroptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeNodeConfigurationOptionsPaginatorName = Literal[
+    "describe_node_configuration_options",
+]
+```
 ## DescribeOrderableClusterOptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeOrderableClusterOptionsPaginatorName
+
+def get_value() -> DescribeOrderableClusterOptionsPaginatorName:
+    return "describe_orderable_cluster_options"
 ```
 
-Values:
-
-- `describe_orderable_cluster_options`
-
-<a id="describereservednodeexchangestatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeOrderableClusterOptionsPaginatorName = Literal[
+    "describe_orderable_cluster_options",
+]
+```
 ## DescribeReservedNodeExchangeStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeReservedNodeExchangeStatusPaginatorName
+
+def get_value() -> DescribeReservedNodeExchangeStatusPaginatorName:
+    return "describe_reserved_node_exchange_status"
 ```
 
-Values:
-
-- `describe_reserved_node_exchange_status`
-
-<a id="describereservednodeofferingspaginatorname"></a>
-
+```python title="Definition"
+DescribeReservedNodeExchangeStatusPaginatorName = Literal[
+    "describe_reserved_node_exchange_status",
+]
+```
 ## DescribeReservedNodeOfferingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeReservedNodeOfferingsPaginatorName
+
+def get_value() -> DescribeReservedNodeOfferingsPaginatorName:
+    return "describe_reserved_node_offerings"
 ```
 
-Values:
-
-- `describe_reserved_node_offerings`
-
-<a id="describereservednodespaginatorname"></a>
-
+```python title="Definition"
+DescribeReservedNodeOfferingsPaginatorName = Literal[
+    "describe_reserved_node_offerings",
+]
+```
 ## DescribeReservedNodesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeReservedNodesPaginatorName
+
+def get_value() -> DescribeReservedNodesPaginatorName:
+    return "describe_reserved_nodes"
 ```
 
-Values:
-
-- `describe_reserved_nodes`
-
-<a id="describescheduledactionspaginatorname"></a>
-
+```python title="Definition"
+DescribeReservedNodesPaginatorName = Literal[
+    "describe_reserved_nodes",
+]
+```
 ## DescribeScheduledActionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeScheduledActionsPaginatorName
+
+def get_value() -> DescribeScheduledActionsPaginatorName:
+    return "describe_scheduled_actions"
 ```
 
-Values:
-
-- `describe_scheduled_actions`
-
-<a id="describesnapshotcopygrantspaginatorname"></a>
-
+```python title="Definition"
+DescribeScheduledActionsPaginatorName = Literal[
+    "describe_scheduled_actions",
+]
+```
 ## DescribeSnapshotCopyGrantsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeSnapshotCopyGrantsPaginatorName
+
+def get_value() -> DescribeSnapshotCopyGrantsPaginatorName:
+    return "describe_snapshot_copy_grants"
 ```
 
-Values:
-
-- `describe_snapshot_copy_grants`
-
-<a id="describesnapshotschedulespaginatorname"></a>
-
+```python title="Definition"
+DescribeSnapshotCopyGrantsPaginatorName = Literal[
+    "describe_snapshot_copy_grants",
+]
+```
 ## DescribeSnapshotSchedulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeSnapshotSchedulesPaginatorName
+
+def get_value() -> DescribeSnapshotSchedulesPaginatorName:
+    return "describe_snapshot_schedules"
 ```
 
-Values:
-
-- `describe_snapshot_schedules`
-
-<a id="describetablerestorestatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeSnapshotSchedulesPaginatorName = Literal[
+    "describe_snapshot_schedules",
+]
+```
 ## DescribeTableRestoreStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeTableRestoreStatusPaginatorName
+
+def get_value() -> DescribeTableRestoreStatusPaginatorName:
+    return "describe_table_restore_status"
 ```
 
-Values:
-
-- `describe_table_restore_status`
-
-<a id="describetagspaginatorname"></a>
-
+```python title="Definition"
+DescribeTableRestoreStatusPaginatorName = Literal[
+    "describe_table_restore_status",
+]
+```
 ## DescribeTagsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeTagsPaginatorName
+
+def get_value() -> DescribeTagsPaginatorName:
+    return "describe_tags"
 ```
 
-Values:
-
-- `describe_tags`
-
-<a id="describeusagelimitspaginatorname"></a>
-
+```python title="Definition"
+DescribeTagsPaginatorName = Literal[
+    "describe_tags",
+]
+```
 ## DescribeUsageLimitsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import DescribeUsageLimitsPaginatorName
+
+def get_value() -> DescribeUsageLimitsPaginatorName:
+    return "describe_usage_limits"
 ```
 
-Values:
-
-- `describe_usage_limits`
-
-<a id="getreservednodeexchangeconfigurationoptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeUsageLimitsPaginatorName = Literal[
+    "describe_usage_limits",
+]
+```
 ## GetReservedNodeExchangeConfigurationOptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import GetReservedNodeExchangeConfigurationOptionsPaginatorName
+
+def get_value() -> GetReservedNodeExchangeConfigurationOptionsPaginatorName:
+    return "get_reserved_node_exchange_configuration_options"
 ```
 
-Values:
-
-- `get_reserved_node_exchange_configuration_options`
-
-<a id="getreservednodeexchangeofferingspaginatorname"></a>
-
+```python title="Definition"
+GetReservedNodeExchangeConfigurationOptionsPaginatorName = Literal[
+    "get_reserved_node_exchange_configuration_options",
+]
+```
 ## GetReservedNodeExchangeOfferingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import GetReservedNodeExchangeOfferingsPaginatorName
+
+def get_value() -> GetReservedNodeExchangeOfferingsPaginatorName:
+    return "get_reserved_node_exchange_offerings"
 ```
 
-Values:
-
-- `get_reserved_node_exchange_offerings`
-
-<a id="modetype"></a>
-
+```python title="Definition"
+GetReservedNodeExchangeOfferingsPaginatorName = Literal[
+    "get_reserved_node_exchange_offerings",
+]
+```
 ## ModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ModeType
+
+def get_value() -> ModeType:
+    return "high-performance"
 ```
 
-Values:
-
-- `high-performance`
-- `standard`
-
-<a id="nodeconfigurationoptionsfilternametype"></a>
-
+```python title="Definition"
+ModeType = Literal[
+    "high-performance",
+    "standard",
+]
+```
 ## NodeConfigurationOptionsFilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import NodeConfigurationOptionsFilterNameType
+
+def get_value() -> NodeConfigurationOptionsFilterNameType:
+    return "EstimatedDiskUtilizationPercent"
 ```
 
-Values:
-
-- `EstimatedDiskUtilizationPercent`
-- `Mode`
-- `NodeType`
-- `NumberOfNodes`
-
-<a id="operatortypetype"></a>
-
+```python title="Definition"
+NodeConfigurationOptionsFilterNameType = Literal[
+    "EstimatedDiskUtilizationPercent",
+    "Mode",
+    "NodeType",
+    "NumberOfNodes",
+]
+```
 ## OperatorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import OperatorTypeType
+
+def get_value() -> OperatorTypeType:
+    return "between"
 ```
 
-Values:
-
-- `between`
-- `eq`
-- `ge`
-- `gt`
-- `in`
-- `le`
-- `lt`
-
-<a id="parameterapplytypetype"></a>
-
+```python title="Definition"
+OperatorTypeType = Literal[
+    "between",
+    "eq",
+    "ge",
+    "gt",
+    "in",
+    "le",
+    "lt",
+]
+```
 ## ParameterApplyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ParameterApplyTypeType
+
+def get_value() -> ParameterApplyTypeType:
+    return "dynamic"
 ```
 
-Values:
-
-- `dynamic`
-- `static`
-
-<a id="partnerintegrationstatustype"></a>
-
+```python title="Definition"
+ParameterApplyTypeType = Literal[
+    "dynamic",
+    "static",
+]
+```
 ## PartnerIntegrationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import PartnerIntegrationStatusType
+
+def get_value() -> PartnerIntegrationStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `ConnectionFailure`
-- `Inactive`
-- `RuntimeFailure`
-
-<a id="reservednodeexchangeactiontypetype"></a>
-
+```python title="Definition"
+PartnerIntegrationStatusType = Literal[
+    "Active",
+    "ConnectionFailure",
+    "Inactive",
+    "RuntimeFailure",
+]
+```
 ## ReservedNodeExchangeActionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ReservedNodeExchangeActionTypeType
+
+def get_value() -> ReservedNodeExchangeActionTypeType:
+    return "resize-cluster"
 ```
 
-Values:
-
-- `resize-cluster`
-- `restore-cluster`
-
-<a id="reservednodeexchangestatustypetype"></a>
-
+```python title="Definition"
+ReservedNodeExchangeActionTypeType = Literal[
+    "resize-cluster",
+    "restore-cluster",
+]
+```
 ## ReservedNodeExchangeStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ReservedNodeExchangeStatusTypeType
+
+def get_value() -> ReservedNodeExchangeStatusTypeType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `PENDING`
-- `REQUESTED`
-- `RETRYING`
-- `SUCCEEDED`
-
-<a id="reservednodeofferingtypetype"></a>
-
+```python title="Definition"
+ReservedNodeExchangeStatusTypeType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "PENDING",
+    "REQUESTED",
+    "RETRYING",
+    "SUCCEEDED",
+]
+```
 ## ReservedNodeOfferingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ReservedNodeOfferingTypeType
+
+def get_value() -> ReservedNodeOfferingTypeType:
+    return "Regular"
 ```
 
-Values:
-
-- `Regular`
-- `Upgradable`
-
-<a id="schedulestatetype"></a>
-
+```python title="Definition"
+ReservedNodeOfferingTypeType = Literal[
+    "Regular",
+    "Upgradable",
+]
+```
 ## ScheduleStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ScheduleStateType
+
+def get_value() -> ScheduleStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `FAILED`
-- `MODIFYING`
-
-<a id="scheduledactionfilternametype"></a>
-
+```python title="Definition"
+ScheduleStateType = Literal[
+    "ACTIVE",
+    "FAILED",
+    "MODIFYING",
+]
+```
 ## ScheduledActionFilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ScheduledActionFilterNameType
+
+def get_value() -> ScheduledActionFilterNameType:
+    return "cluster-identifier"
 ```
 
-Values:
-
-- `cluster-identifier`
-- `iam-role`
-
-<a id="scheduledactionstatetype"></a>
-
+```python title="Definition"
+ScheduledActionFilterNameType = Literal[
+    "cluster-identifier",
+    "iam-role",
+]
+```
 ## ScheduledActionStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ScheduledActionStateType
+
+def get_value() -> ScheduledActionStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DISABLED`
-
-<a id="scheduledactiontypevaluestype"></a>
-
+```python title="Definition"
+ScheduledActionStateType = Literal[
+    "ACTIVE",
+    "DISABLED",
+]
+```
 ## ScheduledActionTypeValuesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ScheduledActionTypeValuesType
+
+def get_value() -> ScheduledActionTypeValuesType:
+    return "PauseCluster"
 ```
 
-Values:
-
-- `PauseCluster`
-- `ResizeCluster`
-- `ResumeCluster`
-
-<a id="snapshotattributetosortbytype"></a>
-
+```python title="Definition"
+ScheduledActionTypeValuesType = Literal[
+    "PauseCluster",
+    "ResizeCluster",
+    "ResumeCluster",
+]
+```
 ## SnapshotAttributeToSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import SnapshotAttributeToSortByType
+
+def get_value() -> SnapshotAttributeToSortByType:
+    return "CREATE_TIME"
 ```
 
-Values:
-
-- `CREATE_TIME`
-- `SOURCE_TYPE`
-- `TOTAL_SIZE`
-
-<a id="snapshotavailablewaitername"></a>
-
+```python title="Definition"
+SnapshotAttributeToSortByType = Literal[
+    "CREATE_TIME",
+    "SOURCE_TYPE",
+    "TOTAL_SIZE",
+]
+```
 ## SnapshotAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import SnapshotAvailableWaiterName
+
+def get_value() -> SnapshotAvailableWaiterName:
+    return "snapshot_available"
 ```
 
-Values:
-
-- `snapshot_available`
-
-<a id="sortbyordertype"></a>
-
+```python title="Definition"
+SnapshotAvailableWaiterName = Literal[
+    "snapshot_available",
+]
+```
 ## SortByOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import SortByOrderType
+
+def get_value() -> SortByOrderType:
+    return "ASC"
 ```
 
-Values:
-
-- `ASC`
-- `DESC`
-
-<a id="sourcetypetype"></a>
-
+```python title="Definition"
+SortByOrderType = Literal[
+    "ASC",
+    "DESC",
+]
+```
 ## SourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import SourceTypeType
+
+def get_value() -> SourceTypeType:
+    return "cluster"
 ```
 
-Values:
-
-- `cluster`
-- `cluster-parameter-group`
-- `cluster-security-group`
-- `cluster-snapshot`
-- `scheduled-action`
-
-<a id="tablerestorestatustypetype"></a>
-
+```python title="Definition"
+SourceTypeType = Literal[
+    "cluster",
+    "cluster-parameter-group",
+    "cluster-security-group",
+    "cluster-snapshot",
+    "scheduled-action",
+]
+```
 ## TableRestoreStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import TableRestoreStatusTypeType
+
+def get_value() -> TableRestoreStatusTypeType:
+    return "CANCELED"
 ```
 
-Values:
-
-- `CANCELED`
-- `FAILED`
-- `IN_PROGRESS`
-- `PENDING`
-- `SUCCEEDED`
-
-<a id="usagelimitbreachactiontype"></a>
-
+```python title="Definition"
+TableRestoreStatusTypeType = Literal[
+    "CANCELED",
+    "FAILED",
+    "IN_PROGRESS",
+    "PENDING",
+    "SUCCEEDED",
+]
+```
 ## UsageLimitBreachActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import UsageLimitBreachActionType
+
+def get_value() -> UsageLimitBreachActionType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `emit-metric`
-- `log`
-
-<a id="usagelimitfeaturetypetype"></a>
-
+```python title="Definition"
+UsageLimitBreachActionType = Literal[
+    "disable",
+    "emit-metric",
+    "log",
+]
+```
 ## UsageLimitFeatureTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import UsageLimitFeatureTypeType
+
+def get_value() -> UsageLimitFeatureTypeType:
+    return "concurrency-scaling"
 ```
 
-Values:
-
-- `concurrency-scaling`
-- `cross-region-datasharing`
-- `spectrum`
-
-<a id="usagelimitlimittypetype"></a>
-
+```python title="Definition"
+UsageLimitFeatureTypeType = Literal[
+    "concurrency-scaling",
+    "cross-region-datasharing",
+    "spectrum",
+]
+```
 ## UsageLimitLimitTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import UsageLimitLimitTypeType
+
+def get_value() -> UsageLimitLimitTypeType:
+    return "data-scanned"
 ```
 
-Values:
-
-- `data-scanned`
-- `time`
-
-<a id="usagelimitperiodtype"></a>
-
+```python title="Definition"
+UsageLimitLimitTypeType = Literal[
+    "data-scanned",
+    "time",
+]
+```
 ## UsageLimitPeriodType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import UsageLimitPeriodType
+
+def get_value() -> UsageLimitPeriodType:
+    return "daily"
 ```
 
-Values:
-
-- `daily`
-- `monthly`
-- `weekly`
-
-<a id="redshiftservicename"></a>
-
+```python title="Definition"
+UsageLimitPeriodType = Literal[
+    "daily",
+    "monthly",
+    "weekly",
+]
+```
 ## RedshiftServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import RedshiftServiceName
+
+def get_value() -> RedshiftServiceName:
+    return "redshift"
 ```
 
-Values:
-
-- `redshift`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+RedshiftServiceName = Literal[
+    "redshift",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_cluster_db_revisions"
 ```
 
-Values:
-
-- `describe_cluster_db_revisions`
-- `describe_cluster_parameter_groups`
-- `describe_cluster_parameters`
-- `describe_cluster_security_groups`
-- `describe_cluster_snapshots`
-- `describe_cluster_subnet_groups`
-- `describe_cluster_tracks`
-- `describe_cluster_versions`
-- `describe_clusters`
-- `describe_data_shares`
-- `describe_data_shares_for_consumer`
-- `describe_data_shares_for_producer`
-- `describe_default_cluster_parameters`
-- `describe_endpoint_access`
-- `describe_endpoint_authorization`
-- `describe_event_subscriptions`
-- `describe_events`
-- `describe_hsm_client_certificates`
-- `describe_hsm_configurations`
-- `describe_node_configuration_options`
-- `describe_orderable_cluster_options`
-- `describe_reserved_node_exchange_status`
-- `describe_reserved_node_offerings`
-- `describe_reserved_nodes`
-- `describe_scheduled_actions`
-- `describe_snapshot_copy_grants`
-- `describe_snapshot_schedules`
-- `describe_table_restore_status`
-- `describe_tags`
-- `describe_usage_limits`
-- `get_reserved_node_exchange_configuration_options`
-- `get_reserved_node_exchange_offerings`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_cluster_db_revisions",
+    "describe_cluster_parameter_groups",
+    "describe_cluster_parameters",
+    "describe_cluster_security_groups",
+    "describe_cluster_snapshots",
+    "describe_cluster_subnet_groups",
+    "describe_cluster_tracks",
+    "describe_cluster_versions",
+    "describe_clusters",
+    "describe_data_shares",
+    "describe_data_shares_for_consumer",
+    "describe_data_shares_for_producer",
+    "describe_default_cluster_parameters",
+    "describe_endpoint_access",
+    "describe_endpoint_authorization",
+    "describe_event_subscriptions",
+    "describe_events",
+    "describe_hsm_client_certificates",
+    "describe_hsm_configurations",
+    "describe_node_configuration_options",
+    "describe_orderable_cluster_options",
+    "describe_reserved_node_exchange_status",
+    "describe_reserved_node_offerings",
+    "describe_reserved_nodes",
+    "describe_scheduled_actions",
+    "describe_snapshot_copy_grants",
+    "describe_snapshot_schedules",
+    "describe_table_restore_status",
+    "describe_tags",
+    "describe_usage_limits",
+    "get_reserved_node_exchange_configuration_options",
+    "get_reserved_node_exchange_offerings",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_redshift.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "cluster_available"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "cluster_available",
+    "cluster_deleted",
+    "cluster_restored",
+    "snapshot_available",
+]
+```
+## RegionName
 
-- `cluster_available`
-- `cluster_deleted`
-- `cluster_restored`
-- `snapshot_available`
+```python title="Usage Example"
+from mypy_boto3_redshift.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

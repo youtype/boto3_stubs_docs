@@ -1,28 +1,18 @@
-<a id="paginators-for-boto3-s3outposts-module"></a>
-
-# Paginators for boto3 S3Outposts module
+# Paginators
 
 > [Index](../README.md) > [S3Outposts](./README.md) > Paginators
 
-Auto-generated documentation for
-[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
-type annotations stubs module
-[mypy-boto3-s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
+!!! note ""
 
-- [Paginators for boto3 S3Outposts module](#paginators-for-boto3-s3outposts-module)
-  - [ListEndpointsPaginator](#listendpointspaginator)
-  - [ListSharedEndpointsPaginator](#listsharedendpointspaginator)
-
-<a id="listendpointspaginator"></a>
+    Auto-generated documentation for [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
+    type annotations stubs module [mypy-boto3-s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 ## ListEndpointsPaginator
 
-Type annotations for
-`boto3.client("s3outposts").get_paginator("list_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("s3outposts").get_paginator("list_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Paginator.ListEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_s3outposts.paginator import ListEndpointsPaginator
@@ -31,27 +21,39 @@ def get_list_endpoints_paginator() -> ListEndpointsPaginator:
     return Session().client("s3outposts").get_paginator("list_endpoints")
 ```
 
-Boto3 documentation:
-[S3Outposts.Paginator.ListEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Paginator.ListEndpoints)
 
-Arguments for `ListEndpointsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEndpointsPaginator.paginate` method.
 
-`ListEndpointsPaginator.paginate` returns
-`_PageIterator`\[[ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEndpointsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsharedendpointspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEndpointsRequestListEndpointsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEndpointsRequestListEndpointsPaginateTypeDef](./type_defs.md#listendpointsrequestlistendpointspaginatetypedef) 
 ## ListSharedEndpointsPaginator
 
-Type annotations for
-`boto3.client("s3outposts").get_paginator("list_shared_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("s3outposts").get_paginator("list_shared_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Paginator.ListSharedEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_s3outposts.paginator import ListSharedEndpointsPaginator
@@ -60,14 +62,31 @@ def get_list_shared_endpoints_paginator() -> ListSharedEndpointsPaginator:
     return Session().client("s3outposts").get_paginator("list_shared_endpoints")
 ```
 
-Boto3 documentation:
-[S3Outposts.Paginator.ListSharedEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Paginator.ListSharedEndpoints)
 
-Arguments for `ListSharedEndpointsPaginator.paginate` method:
+### paginate
 
-- `OutpostId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSharedEndpointsPaginator.paginate` method.
 
-`ListSharedEndpointsPaginator.paginate` returns
-`_PageIterator`\[[ListSharedEndpointsResultTypeDef](./type_defs.md#listsharedendpointsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OutpostId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSharedEndpointsResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSharedEndpointsResultTypeDef](./type_defs.md#listsharedendpointsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef = {  # (1)
+    "OutpostId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef](./type_defs.md#listsharedendpointsrequestlistsharedendpointspaginatetypedef) 

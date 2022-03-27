@@ -1,52 +1,18 @@
-<a id="voiceidclient-for-boto3-voiceid-module"></a>
-
-# VoiceIDClient for boto3 VoiceID module
+# VoiceIDClient
 
 > [Index](../README.md) > [VoiceID](./README.md) > VoiceIDClient
 
-Auto-generated documentation for
-[VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
-type annotations stubs module
-[mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
+!!! note ""
 
-- [VoiceIDClient for boto3 VoiceID module](#voiceidclient-for-boto3-voiceid-module)
-  - [VoiceIDClient](#voiceidclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_domain](#create_domain)
-    - [delete_domain](#delete_domain)
-    - [delete_fraudster](#delete_fraudster)
-    - [delete_speaker](#delete_speaker)
-    - [describe_domain](#describe_domain)
-    - [describe_fraudster](#describe_fraudster)
-    - [describe_fraudster_registration_job](#describe_fraudster_registration_job)
-    - [describe_speaker](#describe_speaker)
-    - [describe_speaker_enrollment_job](#describe_speaker_enrollment_job)
-    - [evaluate_session](#evaluate_session)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_domains](#list_domains)
-    - [list_fraudster_registration_jobs](#list_fraudster_registration_jobs)
-    - [list_speaker_enrollment_jobs](#list_speaker_enrollment_jobs)
-    - [list_speakers](#list_speakers)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [opt_out_speaker](#opt_out_speaker)
-    - [start_fraudster_registration_job](#start_fraudster_registration_job)
-    - [start_speaker_enrollment_job](#start_speaker_enrollment_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_domain](#update_domain)
-
-<a id="voiceidclient"></a>
+    Auto-generated documentation for [VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
+    type annotations stubs module [mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
 
 ## VoiceIDClient
 
-Type annotations for `boto3.client("voice-id")`
+Type annotations and code completion for `#!python boto3.client("voice-id")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_voice_id.client import VoiceIDClient
 
@@ -54,576 +20,753 @@ def get_voice-id_client() -> VoiceIDClient:
     return Session().client("voice-id")
 ```
 
-Boto3 documentation:
-[VoiceID.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("voice-id").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("voice-id")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_voice_id.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-VoiceIDClient exceptions.
-
-Type annotations for `boto3.client("voice-id").exceptions` method.
-
-Boto3 documentation:
-[VoiceID.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("voice-id").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.can_paginate)
 
-Boto3 documentation:
-[VoiceID.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_domain"></a>
-
-### create_domain
+### create\_domain
 
 Creates a domain that contains all Amazon Connect Voice ID data, such as
 speakers, fraudsters, customer audio, and voiceprints.
 
-Type annotations for `boto3.client("voice-id").create_domain` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").create_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.create_domain)
 
-Boto3 documentation:
-[VoiceID.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.create_domain)
+```python title="Method definition"
+def create_domain(
+    self,
+    *,
+    Name: str,
+    ServerSideEncryptionConfiguration: ServerSideEncryptionConfigurationTypeDef,  # (1)
+    ClientToken: str = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDomainResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef).
+1. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-  *(required)*
-- `ClientToken`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDomainRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ServerSideEncryptionConfiguration": ...,
+}
 
-Returns
-[CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
+parent.create_domain(**kwargs)
+```
 
-<a id="delete\_domain"></a>
+1. See [:material-code-braces: CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef) 
 
-### delete_domain
+### delete\_domain
 
 Deletes the specified domain from the Amazon Connect Voice ID system.
 
-Type annotations for `boto3.client("voice-id").delete_domain` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").delete_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.delete_domain)
 
-Boto3 documentation:
-[VoiceID.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.delete_domain)
+```python title="Method definition"
+def delete_domain(
+    self,
+    *,
+    DomainId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+}
 
-<a id="delete\_fraudster"></a>
+parent.delete_domain(**kwargs)
+```
 
-### delete_fraudster
+1. See [:material-code-braces: DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef) 
+
+### delete\_fraudster
 
 Deletes the specified fraudster from the Amazon Connect Voice ID system.
 
-Type annotations for `boto3.client("voice-id").delete_fraudster` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").delete_fraudster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.delete_fraudster)
 
-Boto3 documentation:
-[VoiceID.Client.delete_fraudster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.delete_fraudster)
+```python title="Method definition"
+def delete_fraudster(
+    self,
+    *,
+    DomainId: str,
+    FraudsterId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFraudsterRequestRequestTypeDef](./type_defs.md#deletefraudsterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `FraudsterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFraudsterRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "FraudsterId": ...,
+}
 
-<a id="delete\_speaker"></a>
+parent.delete_fraudster(**kwargs)
+```
 
-### delete_speaker
+1. See [:material-code-braces: DeleteFraudsterRequestRequestTypeDef](./type_defs.md#deletefraudsterrequestrequesttypedef) 
+
+### delete\_speaker
 
 Deletes the specified speaker from the Amazon Connect Voice ID system.
 
-Type annotations for `boto3.client("voice-id").delete_speaker` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").delete_speaker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.delete_speaker)
 
-Boto3 documentation:
-[VoiceID.Client.delete_speaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.delete_speaker)
+```python title="Method definition"
+def delete_speaker(
+    self,
+    *,
+    DomainId: str,
+    SpeakerId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSpeakerRequestRequestTypeDef](./type_defs.md#deletespeakerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `SpeakerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSpeakerRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "SpeakerId": ...,
+}
 
-<a id="describe\_domain"></a>
+parent.delete_speaker(**kwargs)
+```
 
-### describe_domain
+1. See [:material-code-braces: DeleteSpeakerRequestRequestTypeDef](./type_defs.md#deletespeakerrequestrequesttypedef) 
+
+### describe\_domain
 
 Describes the specified domain.
 
-Type annotations for `boto3.client("voice-id").describe_domain` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").describe_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_domain)
 
-Boto3 documentation:
-[VoiceID.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_domain)
+```python title="Method definition"
+def describe_domain(
+    self,
+    *,
+    DomainId: str,
+) -> DescribeDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+}
 
-Returns
-[DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
+parent.describe_domain(**kwargs)
+```
 
-<a id="describe\_fraudster"></a>
+1. See [:material-code-braces: DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef) 
 
-### describe_fraudster
+### describe\_fraudster
 
 Describes the specified fraudster.
 
-Type annotations for `boto3.client("voice-id").describe_fraudster` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").describe_fraudster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_fraudster)
 
-Boto3 documentation:
-[VoiceID.Client.describe_fraudster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_fraudster)
+```python title="Method definition"
+def describe_fraudster(
+    self,
+    *,
+    DomainId: str,
+    FraudsterId: str,
+) -> DescribeFraudsterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFraudsterRequestRequestTypeDef](./type_defs.md#describefraudsterrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFraudsterResponseTypeDef](./type_defs.md#describefraudsterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `FraudsterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFraudsterRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "FraudsterId": ...,
+}
 
-Returns
-[DescribeFraudsterResponseTypeDef](./type_defs.md#describefraudsterresponsetypedef).
+parent.describe_fraudster(**kwargs)
+```
 
-<a id="describe\_fraudster\_registration\_job"></a>
+1. See [:material-code-braces: DescribeFraudsterRequestRequestTypeDef](./type_defs.md#describefraudsterrequestrequesttypedef) 
 
-### describe_fraudster_registration_job
+### describe\_fraudster\_registration\_job
 
 Describes the specified fraudster registration job.
 
-Type annotations for
-`boto3.client("voice-id").describe_fraudster_registration_job` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").describe_fraudster_registration_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_fraudster_registration_job)
 
-Boto3 documentation:
-[VoiceID.Client.describe_fraudster_registration_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_fraudster_registration_job)
+```python title="Method definition"
+def describe_fraudster_registration_job(
+    self,
+    *,
+    DomainId: str,
+    JobId: str,
+) -> DescribeFraudsterRegistrationJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFraudsterRegistrationJobRequestRequestTypeDef](./type_defs.md#describefraudsterregistrationjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFraudsterRegistrationJobResponseTypeDef](./type_defs.md#describefraudsterregistrationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFraudsterRegistrationJobRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "JobId": ...,
+}
 
-Returns
-[DescribeFraudsterRegistrationJobResponseTypeDef](./type_defs.md#describefraudsterregistrationjobresponsetypedef).
+parent.describe_fraudster_registration_job(**kwargs)
+```
 
-<a id="describe\_speaker"></a>
+1. See [:material-code-braces: DescribeFraudsterRegistrationJobRequestRequestTypeDef](./type_defs.md#describefraudsterregistrationjobrequestrequesttypedef) 
 
-### describe_speaker
+### describe\_speaker
 
 Describes the specified speaker.
 
-Type annotations for `boto3.client("voice-id").describe_speaker` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").describe_speaker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_speaker)
 
-Boto3 documentation:
-[VoiceID.Client.describe_speaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_speaker)
+```python title="Method definition"
+def describe_speaker(
+    self,
+    *,
+    DomainId: str,
+    SpeakerId: str,
+) -> DescribeSpeakerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSpeakerRequestRequestTypeDef](./type_defs.md#describespeakerrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSpeakerResponseTypeDef](./type_defs.md#describespeakerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `SpeakerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSpeakerRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "SpeakerId": ...,
+}
 
-Returns
-[DescribeSpeakerResponseTypeDef](./type_defs.md#describespeakerresponsetypedef).
+parent.describe_speaker(**kwargs)
+```
 
-<a id="describe\_speaker\_enrollment\_job"></a>
+1. See [:material-code-braces: DescribeSpeakerRequestRequestTypeDef](./type_defs.md#describespeakerrequestrequesttypedef) 
 
-### describe_speaker_enrollment_job
+### describe\_speaker\_enrollment\_job
 
 Describes the specified speaker enrollment job.
 
-Type annotations for `boto3.client("voice-id").describe_speaker_enrollment_job`
-method.
+Type annotations and code completion for `#!python boto3.client("voice-id").describe_speaker_enrollment_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_speaker_enrollment_job)
 
-Boto3 documentation:
-[VoiceID.Client.describe_speaker_enrollment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.describe_speaker_enrollment_job)
+```python title="Method definition"
+def describe_speaker_enrollment_job(
+    self,
+    *,
+    DomainId: str,
+    JobId: str,
+) -> DescribeSpeakerEnrollmentJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSpeakerEnrollmentJobRequestRequestTypeDef](./type_defs.md#describespeakerenrollmentjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSpeakerEnrollmentJobResponseTypeDef](./type_defs.md#describespeakerenrollmentjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSpeakerEnrollmentJobRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "JobId": ...,
+}
 
-Returns
-[DescribeSpeakerEnrollmentJobResponseTypeDef](./type_defs.md#describespeakerenrollmentjobresponsetypedef).
+parent.describe_speaker_enrollment_job(**kwargs)
+```
 
-<a id="evaluate\_session"></a>
+1. See [:material-code-braces: DescribeSpeakerEnrollmentJobRequestRequestTypeDef](./type_defs.md#describespeakerenrollmentjobrequestrequesttypedef) 
 
-### evaluate_session
+### evaluate\_session
 
-Evaluates a specified session based on audio data accumulated during a
-streaming Amazon Connect Voice ID call.
+Evaluates a specified session based on audio data accumulated during a streaming
+Amazon Connect Voice ID call.
 
-Type annotations for `boto3.client("voice-id").evaluate_session` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").evaluate_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.evaluate_session)
 
-Boto3 documentation:
-[VoiceID.Client.evaluate_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.evaluate_session)
+```python title="Method definition"
+def evaluate_session(
+    self,
+    *,
+    DomainId: str,
+    SessionNameOrId: str,
+) -> EvaluateSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EvaluateSessionRequestRequestTypeDef](./type_defs.md#evaluatesessionrequestrequesttypedef).
+1. See [:material-code-braces: EvaluateSessionResponseTypeDef](./type_defs.md#evaluatesessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `SessionNameOrId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EvaluateSessionRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "SessionNameOrId": ...,
+}
 
-Returns
-[EvaluateSessionResponseTypeDef](./type_defs.md#evaluatesessionresponsetypedef).
+parent.evaluate_session(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EvaluateSessionRequestRequestTypeDef](./type_defs.md#evaluatesessionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("voice-id").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.generate_presigned_url)
 
-Boto3 documentation:
-[VoiceID.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_domains"></a>
-
-### list_domains
+### list\_domains
 
 Lists all the domains in the Amazon Web Services account.
 
-Type annotations for `boto3.client("voice-id").list_domains` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").list_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_domains)
 
-Boto3 documentation:
-[VoiceID.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_domains)
+```python title="Method definition"
+def list_domains(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDomainsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef).
+1. See [:material-code-braces: ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDomainsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
+parent.list_domains(**kwargs)
+```
 
-<a id="list\_fraudster\_registration\_jobs"></a>
+1. See [:material-code-braces: ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef) 
 
-### list_fraudster_registration_jobs
+### list\_fraudster\_registration\_jobs
 
 Lists all the fraudster registration jobs in the domain with the given
 `JobStatus`.
 
-Type annotations for
-`boto3.client("voice-id").list_fraudster_registration_jobs` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").list_fraudster_registration_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_fraudster_registration_jobs)
 
-Boto3 documentation:
-[VoiceID.Client.list_fraudster_registration_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_fraudster_registration_jobs)
+```python title="Method definition"
+def list_fraudster_registration_jobs(
+    self,
+    *,
+    DomainId: str,
+    JobStatus: FraudsterRegistrationJobStatusType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFraudsterRegistrationJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFraudsterRegistrationJobsRequestRequestTypeDef](./type_defs.md#listfraudsterregistrationjobsrequestrequesttypedef).
+1. See [:material-code-brackets: FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype) 
+2. See [:material-code-braces: ListFraudsterRegistrationJobsResponseTypeDef](./type_defs.md#listfraudsterregistrationjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `JobStatus`:
-  [FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFraudsterRegistrationJobsRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+}
 
-Returns
-[ListFraudsterRegistrationJobsResponseTypeDef](./type_defs.md#listfraudsterregistrationjobsresponsetypedef).
+parent.list_fraudster_registration_jobs(**kwargs)
+```
 
-<a id="list\_speaker\_enrollment\_jobs"></a>
+1. See [:material-code-braces: ListFraudsterRegistrationJobsRequestRequestTypeDef](./type_defs.md#listfraudsterregistrationjobsrequestrequesttypedef) 
 
-### list_speaker_enrollment_jobs
+### list\_speaker\_enrollment\_jobs
 
 Lists all the speaker enrollment jobs in the domain with the specified
 `JobStatus`.
 
-Type annotations for `boto3.client("voice-id").list_speaker_enrollment_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("voice-id").list_speaker_enrollment_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_speaker_enrollment_jobs)
 
-Boto3 documentation:
-[VoiceID.Client.list_speaker_enrollment_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_speaker_enrollment_jobs)
+```python title="Method definition"
+def list_speaker_enrollment_jobs(
+    self,
+    *,
+    DomainId: str,
+    JobStatus: SpeakerEnrollmentJobStatusType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSpeakerEnrollmentJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSpeakerEnrollmentJobsRequestRequestTypeDef](./type_defs.md#listspeakerenrollmentjobsrequestrequesttypedef).
+1. See [:material-code-brackets: SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype) 
+2. See [:material-code-braces: ListSpeakerEnrollmentJobsResponseTypeDef](./type_defs.md#listspeakerenrollmentjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `JobStatus`:
-  [SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSpeakerEnrollmentJobsRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+}
 
-Returns
-[ListSpeakerEnrollmentJobsResponseTypeDef](./type_defs.md#listspeakerenrollmentjobsresponsetypedef).
+parent.list_speaker_enrollment_jobs(**kwargs)
+```
 
-<a id="list\_speakers"></a>
+1. See [:material-code-braces: ListSpeakerEnrollmentJobsRequestRequestTypeDef](./type_defs.md#listspeakerenrollmentjobsrequestrequesttypedef) 
 
-### list_speakers
+### list\_speakers
 
 Lists all speakers in a specified domain.
 
-Type annotations for `boto3.client("voice-id").list_speakers` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").list_speakers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_speakers)
 
-Boto3 documentation:
-[VoiceID.Client.list_speakers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_speakers)
+```python title="Method definition"
+def list_speakers(
+    self,
+    *,
+    DomainId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSpeakersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSpeakersRequestRequestTypeDef](./type_defs.md#listspeakersrequestrequesttypedef).
+1. See [:material-code-braces: ListSpeakersResponseTypeDef](./type_defs.md#listspeakersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSpeakersRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+}
 
-Returns
-[ListSpeakersResponseTypeDef](./type_defs.md#listspeakersresponsetypedef).
+parent.list_speakers(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSpeakersRequestRequestTypeDef](./type_defs.md#listspeakersrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags associated with a specified Voice ID resource.
 
-Type annotations for `boto3.client("voice-id").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[VoiceID.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="opt\_out\_speaker"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### opt_out_speaker
+### opt\_out\_speaker
 
 Opts out a speaker from Voice ID system.
 
-Type annotations for `boto3.client("voice-id").opt_out_speaker` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").opt_out_speaker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.opt_out_speaker)
 
-Boto3 documentation:
-[VoiceID.Client.opt_out_speaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.opt_out_speaker)
+```python title="Method definition"
+def opt_out_speaker(
+    self,
+    *,
+    DomainId: str,
+    SpeakerId: str,
+) -> OptOutSpeakerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[OptOutSpeakerRequestRequestTypeDef](./type_defs.md#optoutspeakerrequestrequesttypedef).
+1. See [:material-code-braces: OptOutSpeakerResponseTypeDef](./type_defs.md#optoutspeakerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `SpeakerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: OptOutSpeakerRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "SpeakerId": ...,
+}
 
-Returns
-[OptOutSpeakerResponseTypeDef](./type_defs.md#optoutspeakerresponsetypedef).
+parent.opt_out_speaker(**kwargs)
+```
 
-<a id="start\_fraudster\_registration\_job"></a>
+1. See [:material-code-braces: OptOutSpeakerRequestRequestTypeDef](./type_defs.md#optoutspeakerrequestrequesttypedef) 
 
-### start_fraudster_registration_job
+### start\_fraudster\_registration\_job
 
 Starts a new batch fraudster registration job using provided details.
 
-Type annotations for
-`boto3.client("voice-id").start_fraudster_registration_job` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").start_fraudster_registration_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.start_fraudster_registration_job)
 
-Boto3 documentation:
-[VoiceID.Client.start_fraudster_registration_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.start_fraudster_registration_job)
+```python title="Method definition"
+def start_fraudster_registration_job(
+    self,
+    *,
+    DataAccessRoleArn: str,
+    DomainId: str,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    ClientToken: str = ...,
+    JobName: str = ...,
+    RegistrationConfig: RegistrationConfigTypeDef = ...,  # (3)
+) -> StartFraudsterRegistrationJobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartFraudsterRegistrationJobRequestRequestTypeDef](./type_defs.md#startfraudsterregistrationjobrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
+4. See [:material-code-braces: StartFraudsterRegistrationJobResponseTypeDef](./type_defs.md#startfraudsterregistrationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataAccessRoleArn`: `str` *(required)*
-- `DomainId`: `str` *(required)*
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `ClientToken`: `str`
-- `JobName`: `str`
-- `RegistrationConfig`:
-  [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: StartFraudsterRegistrationJobRequestRequestTypeDef = {  # (1)
+    "DataAccessRoleArn": ...,
+    "DomainId": ...,
+    "InputDataConfig": ...,
+    "OutputDataConfig": ...,
+}
 
-Returns
-[StartFraudsterRegistrationJobResponseTypeDef](./type_defs.md#startfraudsterregistrationjobresponsetypedef).
+parent.start_fraudster_registration_job(**kwargs)
+```
 
-<a id="start\_speaker\_enrollment\_job"></a>
+1. See [:material-code-braces: StartFraudsterRegistrationJobRequestRequestTypeDef](./type_defs.md#startfraudsterregistrationjobrequestrequesttypedef) 
 
-### start_speaker_enrollment_job
+### start\_speaker\_enrollment\_job
 
 Starts a new batch speaker enrollment job using specified details.
 
-Type annotations for `boto3.client("voice-id").start_speaker_enrollment_job`
-method.
+Type annotations and code completion for `#!python boto3.client("voice-id").start_speaker_enrollment_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.start_speaker_enrollment_job)
 
-Boto3 documentation:
-[VoiceID.Client.start_speaker_enrollment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.start_speaker_enrollment_job)
+```python title="Method definition"
+def start_speaker_enrollment_job(
+    self,
+    *,
+    DataAccessRoleArn: str,
+    DomainId: str,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    ClientToken: str = ...,
+    EnrollmentConfig: EnrollmentConfigTypeDef = ...,  # (3)
+    JobName: str = ...,
+) -> StartSpeakerEnrollmentJobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartSpeakerEnrollmentJobRequestRequestTypeDef](./type_defs.md#startspeakerenrollmentjobrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-braces: EnrollmentConfigTypeDef](./type_defs.md#enrollmentconfigtypedef) 
+4. See [:material-code-braces: StartSpeakerEnrollmentJobResponseTypeDef](./type_defs.md#startspeakerenrollmentjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataAccessRoleArn`: `str` *(required)*
-- `DomainId`: `str` *(required)*
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `ClientToken`: `str`
-- `EnrollmentConfig`:
-  [EnrollmentConfigTypeDef](./type_defs.md#enrollmentconfigtypedef)
-- `JobName`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartSpeakerEnrollmentJobRequestRequestTypeDef = {  # (1)
+    "DataAccessRoleArn": ...,
+    "DomainId": ...,
+    "InputDataConfig": ...,
+    "OutputDataConfig": ...,
+}
 
-Returns
-[StartSpeakerEnrollmentJobResponseTypeDef](./type_defs.md#startspeakerenrollmentjobresponsetypedef).
+parent.start_speaker_enrollment_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartSpeakerEnrollmentJobRequestRequestTypeDef](./type_defs.md#startspeakerenrollmentjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Tags an Amazon Connect Voice ID resource with the provided list of tags.
 
-Type annotations for `boto3.client("voice-id").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.tag_resource)
 
-Boto3 documentation:
-[VoiceID.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes specified tags from a specified Amazon Connect Voice ID resource.
 
-Type annotations for `boto3.client("voice-id").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.untag_resource)
 
-Boto3 documentation:
-[VoiceID.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_domain"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_domain
+### update\_domain
 
 Updates the specified domain.
 
-Type annotations for `boto3.client("voice-id").update_domain` method.
+Type annotations and code completion for `#!python boto3.client("voice-id").update_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.update_domain)
 
-Boto3 documentation:
-[VoiceID.Client.update_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID.Client.update_domain)
+```python title="Method definition"
+def update_domain(
+    self,
+    *,
+    DomainId: str,
+    Name: str,
+    ServerSideEncryptionConfiguration: ServerSideEncryptionConfigurationTypeDef,  # (1)
+    Description: str = ...,
+) -> UpdateDomainResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDomainRequestRequestTypeDef](./type_defs.md#updatedomainrequestrequesttypedef).
+1. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+2. See [:material-code-braces: UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-  *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDomainRequestRequestTypeDef = {  # (1)
+    "DomainId": ...,
+    "Name": ...,
+    "ServerSideEncryptionConfiguration": ...,
+}
 
-Returns
-[UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef).
+parent.update_domain(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateDomainRequestRequestTypeDef](./type_defs.md#updatedomainrequestrequesttypedef) 
+
+
+
+

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-cloudwatchrum-module"></a>
-
-# Type annotations for boto3 CloudWatchRUM module
+#  CloudWatchRUM module
 
 > [Index](../README.md) > CloudWatchRUM
 
-Auto-generated documentation for
-[CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
-type annotations stubs module
-[mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
+!!! note ""
 
-- [Type annotations for boto3 CloudWatchRUM module](#type-annotations-for-boto3-cloudwatchrum-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudWatchRUMClient](#cloudwatchrumclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
+    type annotations stubs module [mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudWatchRUM`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[rum]'
 python -m pip install mypy-boto3-rum
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,85 +42,59 @@ python -m pip install mypy-boto3-rum
 python -m pip uninstall -y mypy-boto3-rum
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudwatchrumclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudWatchRUMClient
 
-Type annotations for `boto3.client("rum")` as
-[CloudWatchRUMClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("rum")` as [CloudWatchRUMClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_rum.client import CloudWatchRUMClient
+
+def get_client() -> CloudWatchRUMClient:
+    return Session().cleint("rum")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_app_monitor](./client.md#create_app_monitor)
-- [delete_app_monitor](./client.md#delete_app_monitor)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_app_monitor](./client.md#get_app_monitor)
-- [get_app_monitor_data](./client.md#get_app_monitor_data)
-- [get_paginator](./client.md#get_paginator)
-- [list_app_monitors](./client.md#list_app_monitors)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_rum_events](./client.md#put_rum_events)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_app_monitor](./client.md#update_app_monitor)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CloudWatchRUMClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("rum").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("rum").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_rum.paginator import GetAppMonitorDataPaginator, ...
+from mypy_boto3_rum.paginator import GetAppMonitorDataPaginator
+
+def get_get_app_monitor_data_paginator() -> GetAppMonitorDataPaginator:
+    return Session().client("rum").get_paginator("get_app_monitor_data"))
 ```
 
 - [GetAppMonitorDataPaginator](./paginators.md#getappmonitordatapaginator)
 - [ListAppMonitorsPaginator](./paginators.md#listappmonitorspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_rum.literals import GetAppMonitorDataPaginatorName
 
-```python
-from mypy_boto3_rum.literals import GetAppMonitorDataPaginatorName, ...
+def get_value() -> GetAppMonitorDataPaginatorName:
+    return "get_app_monitor_data"
 ```
 
 - [GetAppMonitorDataPaginatorName](./literals.md#getappmonitordatapaginatorname)
@@ -153,18 +105,22 @@ from mypy_boto3_rum.literals import GetAppMonitorDataPaginatorName, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_rum.type_defs import AppMonitorConfigurationTypeDef
 
-```python
-from mypy_boto3_rum.type_defs import AppMonitorConfigurationTypeDef, ...
+def get_value() -> AppMonitorConfigurationTypeDef:
+    return {
+        "AllowCookies": ...,
+    }
 ```
 
 - [AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef)
@@ -176,10 +132,12 @@ from mypy_boto3_rum.type_defs import AppMonitorConfigurationTypeDef, ...
 - [CwLogTypeDef](./type_defs.md#cwlogtypedef)
 - [DataStorageTypeDef](./type_defs.md#datastoragetypedef)
 - [DeleteAppMonitorRequestRequestTypeDef](./type_defs.md#deleteappmonitorrequestrequesttypedef)
+- [GetAppMonitorDataRequestGetAppMonitorDataPaginateTypeDef](./type_defs.md#getappmonitordatarequestgetappmonitordatapaginatetypedef)
 - [GetAppMonitorDataRequestRequestTypeDef](./type_defs.md#getappmonitordatarequestrequesttypedef)
 - [GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef)
 - [GetAppMonitorRequestRequestTypeDef](./type_defs.md#getappmonitorrequestrequesttypedef)
 - [GetAppMonitorResponseTypeDef](./type_defs.md#getappmonitorresponsetypedef)
+- [ListAppMonitorsRequestListAppMonitorsPaginateTypeDef](./type_defs.md#listappmonitorsrequestlistappmonitorspaginatetypedef)
 - [ListAppMonitorsRequestRequestTypeDef](./type_defs.md#listappmonitorsrequestrequesttypedef)
 - [ListAppMonitorsResponseTypeDef](./type_defs.md#listappmonitorsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -194,3 +152,4 @@ from mypy_boto3_rum.type_defs import AppMonitorConfigurationTypeDef, ...
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateAppMonitorRequestRequestTypeDef](./type_defs.md#updateappmonitorrequestrequesttypedef)
 - [UserDetailsTypeDef](./type_defs.md#userdetailstypedef)
+

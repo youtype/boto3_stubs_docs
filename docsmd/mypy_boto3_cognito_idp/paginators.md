@@ -1,35 +1,18 @@
-<a id="paginators-for-boto3-cognitoidentityprovider-module"></a>
-
-# Paginators for boto3 CognitoIdentityProvider module
+# Paginators
 
 > [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Paginators
 
-Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
-type annotations stubs module
-[mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
+!!! note ""
 
-- [Paginators for boto3 CognitoIdentityProvider module](#paginators-for-boto3-cognitoidentityprovider-module)
-  - [AdminListGroupsForUserPaginator](#adminlistgroupsforuserpaginator)
-  - [AdminListUserAuthEventsPaginator](#adminlistuserautheventspaginator)
-  - [ListGroupsPaginator](#listgroupspaginator)
-  - [ListIdentityProvidersPaginator](#listidentityproviderspaginator)
-  - [ListResourceServersPaginator](#listresourceserverspaginator)
-  - [ListUserPoolClientsPaginator](#listuserpoolclientspaginator)
-  - [ListUserPoolsPaginator](#listuserpoolspaginator)
-  - [ListUsersPaginator](#listuserspaginator)
-  - [ListUsersInGroupPaginator](#listusersingrouppaginator)
-
-<a id="adminlistgroupsforuserpaginator"></a>
+    Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+    type annotations stubs module [mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 ## AdminListGroupsForUserPaginator
 
-Type annotations for
-`boto3.client("cognito-idp").get_paginator("admin_list_groups_for_user")`.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator("admin_list_groups_for_user")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListGroupsForUser)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cognito_idp.paginator import AdminListGroupsForUserPaginator
@@ -38,29 +21,42 @@ def get_admin_list_groups_for_user_paginator() -> AdminListGroupsForUserPaginato
     return Session().client("cognito-idp").get_paginator("admin_list_groups_for_user")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Paginator.AdminListGroupsForUser](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListGroupsForUser)
 
-Arguments for `AdminListGroupsForUserPaginator.paginate` method:
+### paginate
 
-- `Username`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python AdminListGroupsForUserPaginator.paginate` method.
 
-`AdminListGroupsForUserPaginator.paginate` returns
-`_PageIterator`\[[AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Username: str,
+    UserPoolId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[AdminListGroupsForUserResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="adminlistuserautheventspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: AdminListGroupsForUserRequestAdminListGroupsForUserPaginateTypeDef = {  # (1)
+    "Username": ...,
+    "UserPoolId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: AdminListGroupsForUserRequestAdminListGroupsForUserPaginateTypeDef](./type_defs.md#adminlistgroupsforuserrequestadminlistgroupsforuserpaginatetypedef) 
 ## AdminListUserAuthEventsPaginator
 
-Type annotations for
-`boto3.client("cognito-idp").get_paginator("admin_list_user_auth_events")`.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator("admin_list_user_auth_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListUserAuthEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cognito_idp.paginator import AdminListUserAuthEventsPaginator
@@ -69,29 +65,42 @@ def get_admin_list_user_auth_events_paginator() -> AdminListUserAuthEventsPagina
     return Session().client("cognito-idp").get_paginator("admin_list_user_auth_events")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Paginator.AdminListUserAuthEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.AdminListUserAuthEvents)
 
-Arguments for `AdminListUserAuthEventsPaginator.paginate` method:
+### paginate
 
-- `UserPoolId`: `str` *(required)*
-- `Username`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python AdminListUserAuthEventsPaginator.paginate` method.
 
-`AdminListUserAuthEventsPaginator.paginate` returns
-`_PageIterator`\[[AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    UserPoolId: str,
+    Username: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[AdminListUserAuthEventsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: AdminListUserAuthEventsRequestAdminListUserAuthEventsPaginateTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "Username": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: AdminListUserAuthEventsRequestAdminListUserAuthEventsPaginateTypeDef](./type_defs.md#adminlistuserautheventsrequestadminlistuserautheventspaginatetypedef) 
 ## ListGroupsPaginator
 
-Type annotations for
-`boto3.client("cognito-idp").get_paginator("list_groups")`.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator("list_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cognito_idp.paginator import ListGroupsPaginator
@@ -100,28 +109,40 @@ def get_list_groups_paginator() -> ListGroupsPaginator:
     return Session().client("cognito-idp").get_paginator("list_groups")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListGroups)
 
-Arguments for `ListGroupsPaginator.paginate` method:
+### paginate
 
-- `UserPoolId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGroupsPaginator.paginate` method.
 
-`ListGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    UserPoolId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listidentityproviderspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestListGroupsPaginateTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroupsRequestListGroupsPaginateTypeDef](./type_defs.md#listgroupsrequestlistgroupspaginatetypedef) 
 ## ListIdentityProvidersPaginator
 
-Type annotations for
-`boto3.client("cognito-idp").get_paginator("list_identity_providers")`.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator("list_identity_providers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListIdentityProviders)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cognito_idp.paginator import ListIdentityProvidersPaginator
@@ -130,28 +151,40 @@ def get_list_identity_providers_paginator() -> ListIdentityProvidersPaginator:
     return Session().client("cognito-idp").get_paginator("list_identity_providers")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListIdentityProviders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListIdentityProviders)
 
-Arguments for `ListIdentityProvidersPaginator.paginate` method:
+### paginate
 
-- `UserPoolId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListIdentityProvidersPaginator.paginate` method.
 
-`ListIdentityProvidersPaginator.paginate` returns
-`_PageIterator`\[[ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    UserPoolId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListIdentityProvidersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresourceserverspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListIdentityProvidersRequestListIdentityProvidersPaginateTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListIdentityProvidersRequestListIdentityProvidersPaginateTypeDef](./type_defs.md#listidentityprovidersrequestlistidentityproviderspaginatetypedef) 
 ## ListResourceServersPaginator
 
-Type annotations for
-`boto3.client("cognito-idp").get_paginator("list_resource_servers")`.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator("list_resource_servers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListResourceServers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cognito_idp.paginator import ListResourceServersPaginator
@@ -160,28 +193,40 @@ def get_list_resource_servers_paginator() -> ListResourceServersPaginator:
     return Session().client("cognito-idp").get_paginator("list_resource_servers")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListResourceServers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListResourceServers)
 
-Arguments for `ListResourceServersPaginator.paginate` method:
+### paginate
 
-- `UserPoolId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourceServersPaginator.paginate` method.
 
-`ListResourceServersPaginator.paginate` returns
-`_PageIterator`\[[ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    UserPoolId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourceServersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuserpoolclientspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceServersRequestListResourceServersPaginateTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceServersRequestListResourceServersPaginateTypeDef](./type_defs.md#listresourceserversrequestlistresourceserverspaginatetypedef) 
 ## ListUserPoolClientsPaginator
 
-Type annotations for
-`boto3.client("cognito-idp").get_paginator("list_user_pool_clients")`.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator("list_user_pool_clients")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPoolClients)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cognito_idp.paginator import ListUserPoolClientsPaginator
@@ -190,28 +235,40 @@ def get_list_user_pool_clients_paginator() -> ListUserPoolClientsPaginator:
     return Session().client("cognito-idp").get_paginator("list_user_pool_clients")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListUserPoolClients](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPoolClients)
 
-Arguments for `ListUserPoolClientsPaginator.paginate` method:
+### paginate
 
-- `UserPoolId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUserPoolClientsPaginator.paginate` method.
 
-`ListUserPoolClientsPaginator.paginate` returns
-`_PageIterator`\[[ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    UserPoolId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUserPoolClientsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuserpoolspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListUserPoolClientsRequestListUserPoolClientsPaginateTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUserPoolClientsRequestListUserPoolClientsPaginateTypeDef](./type_defs.md#listuserpoolclientsrequestlistuserpoolclientspaginatetypedef) 
 ## ListUserPoolsPaginator
 
-Type annotations for
-`boto3.client("cognito-idp").get_paginator("list_user_pools")`.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator("list_user_pools")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPools)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cognito_idp.paginator import ListUserPoolsPaginator
@@ -220,26 +277,39 @@ def get_list_user_pools_paginator() -> ListUserPoolsPaginator:
     return Session().client("cognito-idp").get_paginator("list_user_pools")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListUserPools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUserPools)
 
-Arguments for `ListUserPoolsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUserPoolsPaginator.paginate` method.
 
-`ListUserPoolsPaginator.paginate` returns
-`_PageIterator`\[[ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUserPoolsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuserspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListUserPoolsRequestListUserPoolsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUserPoolsRequestListUserPoolsPaginateTypeDef](./type_defs.md#listuserpoolsrequestlistuserpoolspaginatetypedef) 
 ## ListUsersPaginator
 
-Type annotations for `boto3.client("cognito-idp").get_paginator("list_users")`.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator("list_users")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cognito_idp.paginator import ListUsersPaginator
@@ -248,30 +318,42 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("cognito-idp").get_paginator("list_users")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsers)
 
-Arguments for `ListUsersPaginator.paginate` method:
+### paginate
 
-- `UserPoolId`: `str` *(required)*
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `Filter`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUsersPaginator.paginate` method.
 
-`ListUsersPaginator.paginate` returns
-`_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    UserPoolId: str,
+    AttributesToGet: Sequence[str] = ...,
+    Filter: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUsersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listusersingrouppaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestListUsersPaginateTypeDef = {  # (1)
+    "UserPoolId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef) 
 ## ListUsersInGroupPaginator
 
-Type annotations for
-`boto3.client("cognito-idp").get_paginator("list_users_in_group")`.
+Type annotations and code completion for `#!python boto3.client("cognito-idp").get_paginator("list_users_in_group")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsersInGroup)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cognito_idp.paginator import ListUsersInGroupPaginator
@@ -280,15 +362,33 @@ def get_list_users_in_group_paginator() -> ListUsersInGroupPaginator:
     return Session().client("cognito-idp").get_paginator("list_users_in_group")
 ```
 
-Boto3 documentation:
-[CognitoIdentityProvider.Paginator.ListUsersInGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Paginator.ListUsersInGroup)
 
-Arguments for `ListUsersInGroupPaginator.paginate` method:
+### paginate
 
-- `UserPoolId`: `str` *(required)*
-- `GroupName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUsersInGroupPaginator.paginate` method.
 
-`ListUsersInGroupPaginator.paginate` returns
-`_PageIterator`\[[ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    UserPoolId: str,
+    GroupName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUsersInGroupResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListUsersInGroupRequestListUsersInGroupPaginateTypeDef = {  # (1)
+    "UserPoolId": ...,
+    "GroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUsersInGroupRequestListUsersInGroupPaginateTypeDef](./type_defs.md#listusersingrouprequestlistusersingrouppaginatetypedef) 

@@ -1,39 +1,18 @@
-<a id="iotdataplaneclient-for-boto3-iotdataplane-module"></a>
-
-# IoTDataPlaneClient for boto3 IoTDataPlane module
+# IoTDataPlaneClient
 
 > [Index](../README.md) > [IoTDataPlane](./README.md) > IoTDataPlaneClient
 
-Auto-generated documentation for
-[IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
-type annotations stubs module
-[mypy-boto3-iot-data](https://pypi.org/project/mypy-boto3-iot-data/).
+!!! note ""
 
-- [IoTDataPlaneClient for boto3 IoTDataPlane module](#iotdataplaneclient-for-boto3-iotdataplane-module)
-  - [IoTDataPlaneClient](#iotdataplaneclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [delete_thing_shadow](#delete_thing_shadow)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_retained_message](#get_retained_message)
-    - [get_thing_shadow](#get_thing_shadow)
-    - [list_named_shadows_for_thing](#list_named_shadows_for_thing)
-    - [list_retained_messages](#list_retained_messages)
-    - [publish](#publish)
-    - [update_thing_shadow](#update_thing_shadow)
-    - [get_paginator](#get_paginator)
-
-<a id="iotdataplaneclient"></a>
+    Auto-generated documentation for [IoTDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane)
+    type annotations stubs module [mypy-boto3-iot-data](https://pypi.org/project/mypy-boto3-iot-data/).
 
 ## IoTDataPlaneClient
 
-Type annotations for `boto3.client("iot-data")`
+Type annotations and code completion for `#!python boto3.client("iot-data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iot_data.client import IoTDataPlaneClient
 
@@ -41,252 +20,299 @@ def get_iot-data_client() -> IoTDataPlaneClient:
     return Session().client("iot-data")
 ```
 
-Boto3 documentation:
-[IoTDataPlane.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iot-data").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iot-data")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.InternalFailureException,
+    client.InvalidRequestException,
+    client.MethodNotAllowedException,
+    client.RequestEntityTooLargeException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.ThrottlingException,
+    client.UnauthorizedException,
+    client.UnsupportedDocumentEncodingException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iot_data.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalFailureException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.MethodNotAllowedException`
-- `Exceptions.RequestEntityTooLargeException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.UnauthorizedException`
-- `Exceptions.UnsupportedDocumentEncodingException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IoTDataPlaneClient exceptions.
-
-Type annotations for `boto3.client("iot-data").exceptions` method.
-
-Boto3 documentation:
-[IoTDataPlane.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iot-data").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iot-data").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.can_paginate)
 
-Boto3 documentation:
-[IoTDataPlane.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_thing\_shadow"></a>
-
-### delete_thing_shadow
+### delete\_thing\_shadow
 
 Deletes the shadow for the specified thing.
 
-Type annotations for `boto3.client("iot-data").delete_thing_shadow` method.
+Type annotations and code completion for `#!python boto3.client("iot-data").delete_thing_shadow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow)
 
-Boto3 documentation:
-[IoTDataPlane.Client.delete_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.delete_thing_shadow)
+```python title="Method definition"
+def delete_thing_shadow(
+    self,
+    *,
+    thingName: str,
+    shadowName: str = ...,
+) -> DeleteThingShadowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteThingShadowRequestRequestTypeDef](./type_defs.md#deletethingshadowrequestrequesttypedef).
+1. See [:material-code-braces: DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `shadowName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteThingShadowRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef).
+parent.delete_thing_shadow(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteThingShadowRequestRequestTypeDef](./type_defs.md#deletethingshadowrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iot-data").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("iot-data").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IoTDataPlane.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_retained\_message"></a>
-
-### get_retained_message
+### get\_retained\_message
 
 Gets the details of a single retained message for the specified topic.
 
-Type annotations for `boto3.client("iot-data").get_retained_message` method.
+Type annotations and code completion for `#!python boto3.client("iot-data").get_retained_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_retained_message)
 
-Boto3 documentation:
-[IoTDataPlane.Client.get_retained_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_retained_message)
+```python title="Method definition"
+def get_retained_message(
+    self,
+    *,
+    topic: str,
+) -> GetRetainedMessageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRetainedMessageRequestRequestTypeDef](./type_defs.md#getretainedmessagerequestrequesttypedef).
+1. See [:material-code-braces: GetRetainedMessageResponseTypeDef](./type_defs.md#getretainedmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `topic`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRetainedMessageRequestRequestTypeDef = {  # (1)
+    "topic": ...,
+}
 
-Returns
-[GetRetainedMessageResponseTypeDef](./type_defs.md#getretainedmessageresponsetypedef).
+parent.get_retained_message(**kwargs)
+```
 
-<a id="get\_thing\_shadow"></a>
+1. See [:material-code-braces: GetRetainedMessageRequestRequestTypeDef](./type_defs.md#getretainedmessagerequestrequesttypedef) 
 
-### get_thing_shadow
+### get\_thing\_shadow
 
 Gets the shadow for the specified thing.
 
-Type annotations for `boto3.client("iot-data").get_thing_shadow` method.
+Type annotations and code completion for `#!python boto3.client("iot-data").get_thing_shadow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow)
 
-Boto3 documentation:
-[IoTDataPlane.Client.get_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.get_thing_shadow)
+```python title="Method definition"
+def get_thing_shadow(
+    self,
+    *,
+    thingName: str,
+    shadowName: str = ...,
+) -> GetThingShadowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetThingShadowRequestRequestTypeDef](./type_defs.md#getthingshadowrequestrequesttypedef).
+1. See [:material-code-braces: GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `shadowName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetThingShadowRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef).
+parent.get_thing_shadow(**kwargs)
+```
 
-<a id="list\_named\_shadows\_for\_thing"></a>
+1. See [:material-code-braces: GetThingShadowRequestRequestTypeDef](./type_defs.md#getthingshadowrequestrequesttypedef) 
 
-### list_named_shadows_for_thing
+### list\_named\_shadows\_for\_thing
 
 Lists the shadows for the specified thing.
 
-Type annotations for `boto3.client("iot-data").list_named_shadows_for_thing`
-method.
+Type annotations and code completion for `#!python boto3.client("iot-data").list_named_shadows_for_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing)
 
-Boto3 documentation:
-[IoTDataPlane.Client.list_named_shadows_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_named_shadows_for_thing)
+```python title="Method definition"
+def list_named_shadows_for_thing(
+    self,
+    *,
+    thingName: str,
+    nextToken: str = ...,
+    pageSize: int = ...,
+) -> ListNamedShadowsForThingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListNamedShadowsForThingRequestRequestTypeDef](./type_defs.md#listnamedshadowsforthingrequestrequesttypedef).
+1. See [:material-code-braces: ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `nextToken`: `str`
-- `pageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListNamedShadowsForThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef).
+parent.list_named_shadows_for_thing(**kwargs)
+```
 
-<a id="list\_retained\_messages"></a>
+1. See [:material-code-braces: ListNamedShadowsForThingRequestRequestTypeDef](./type_defs.md#listnamedshadowsforthingrequestrequesttypedef) 
 
-### list_retained_messages
+### list\_retained\_messages
 
 Lists summary information about the retained messages stored for the account.
 
-Type annotations for `boto3.client("iot-data").list_retained_messages` method.
+Type annotations and code completion for `#!python boto3.client("iot-data").list_retained_messages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_retained_messages)
 
-Boto3 documentation:
-[IoTDataPlane.Client.list_retained_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.list_retained_messages)
+```python title="Method definition"
+def list_retained_messages(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListRetainedMessagesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRetainedMessagesRequestRequestTypeDef](./type_defs.md#listretainedmessagesrequestrequesttypedef).
+1. See [:material-code-braces: ListRetainedMessagesResponseTypeDef](./type_defs.md#listretainedmessagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRetainedMessagesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListRetainedMessagesResponseTypeDef](./type_defs.md#listretainedmessagesresponsetypedef).
+parent.list_retained_messages(**kwargs)
+```
 
-<a id="publish"></a>
+1. See [:material-code-braces: ListRetainedMessagesRequestRequestTypeDef](./type_defs.md#listretainedmessagesrequestrequesttypedef) 
 
 ### publish
 
 Publishes an MQTT message.
 
-Type annotations for `boto3.client("iot-data").publish` method.
+Type annotations and code completion for `#!python boto3.client("iot-data").publish` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.publish)
 
-Boto3 documentation:
-[IoTDataPlane.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.publish)
+```python title="Method definition"
+def publish(
+    self,
+    *,
+    topic: str,
+    qos: int = ...,
+    retain: bool = ...,
+    payload: Union[bytes, IO[bytes], StreamingBody] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PublishRequestRequestTypeDef](./type_defs.md#publishrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `topic`: `str` *(required)*
-- `qos`: `int`
-- `retain`: `bool`
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+```python title="Usage example with kwargs"
+kwargs: PublishRequestRequestTypeDef = {  # (1)
+    "topic": ...,
+}
 
-<a id="update\_thing\_shadow"></a>
+parent.publish(**kwargs)
+```
 
-### update_thing_shadow
+1. See [:material-code-braces: PublishRequestRequestTypeDef](./type_defs.md#publishrequestrequesttypedef) 
+
+### update\_thing\_shadow
 
 Updates the shadow for the specified thing.
 
-Type annotations for `boto3.client("iot-data").update_thing_shadow` method.
+Type annotations and code completion for `#!python boto3.client("iot-data").update_thing_shadow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow)
 
-Boto3 documentation:
-[IoTDataPlane.Client.update_thing_shadow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-data.html#IoTDataPlane.Client.update_thing_shadow)
+```python title="Method definition"
+def update_thing_shadow(
+    self,
+    *,
+    thingName: str,
+    payload: Union[bytes, IO[bytes], StreamingBody],
+    shadowName: str = ...,
+) -> UpdateThingShadowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateThingShadowRequestRequestTypeDef](./type_defs.md#updatethingshadowrequestrequesttypedef).
+1. See [:material-code-braces: UpdateThingShadowResponseTypeDef](./type_defs.md#updatethingshadowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `shadowName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateThingShadowRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+    "payload": ...,
+}
 
-Returns
-[UpdateThingShadowResponseTypeDef](./type_defs.md#updatethingshadowresponsetypedef).
+parent.update_thing_shadow(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateThingShadowRequestRequestTypeDef](./type_defs.md#updatethingshadowrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("iot-data").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("iot-data").get_paginator` method with overloads.
 
-- `client.get_paginator("list_retained_messages")` ->
-  [ListRetainedMessagesPaginator](./paginators.md#listretainedmessagespaginator)
+- `client.get_paginator("list_retained_messages")` -> [ListRetainedMessagesPaginator](./paginators.md#listretainedmessagespaginator)
+
+
+

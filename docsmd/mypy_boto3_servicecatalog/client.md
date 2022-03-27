@@ -1,119 +1,18 @@
-<a id="servicecatalogclient-for-boto3-servicecatalog-module"></a>
-
-# ServiceCatalogClient for boto3 ServiceCatalog module
+# ServiceCatalogClient
 
 > [Index](../README.md) > [ServiceCatalog](./README.md) > ServiceCatalogClient
 
-Auto-generated documentation for
-[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
-type annotations stubs module
-[mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+!!! note ""
 
-- [ServiceCatalogClient for boto3 ServiceCatalog module](#servicecatalogclient-for-boto3-servicecatalog-module)
-  - [ServiceCatalogClient](#servicecatalogclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_portfolio_share](#accept_portfolio_share)
-    - [associate_budget_with_resource](#associate_budget_with_resource)
-    - [associate_principal_with_portfolio](#associate_principal_with_portfolio)
-    - [associate_product_with_portfolio](#associate_product_with_portfolio)
-    - [associate_service_action_with_provisioning_artifact](#associate_service_action_with_provisioning_artifact)
-    - [associate_tag_option_with_resource](#associate_tag_option_with_resource)
-    - [batch_associate_service_action_with_provisioning_artifact](#batch_associate_service_action_with_provisioning_artifact)
-    - [batch_disassociate_service_action_from_provisioning_artifact](#batch_disassociate_service_action_from_provisioning_artifact)
-    - [can_paginate](#can_paginate)
-    - [copy_product](#copy_product)
-    - [create_constraint](#create_constraint)
-    - [create_portfolio](#create_portfolio)
-    - [create_portfolio_share](#create_portfolio_share)
-    - [create_product](#create_product)
-    - [create_provisioned_product_plan](#create_provisioned_product_plan)
-    - [create_provisioning_artifact](#create_provisioning_artifact)
-    - [create_service_action](#create_service_action)
-    - [create_tag_option](#create_tag_option)
-    - [delete_constraint](#delete_constraint)
-    - [delete_portfolio](#delete_portfolio)
-    - [delete_portfolio_share](#delete_portfolio_share)
-    - [delete_product](#delete_product)
-    - [delete_provisioned_product_plan](#delete_provisioned_product_plan)
-    - [delete_provisioning_artifact](#delete_provisioning_artifact)
-    - [delete_service_action](#delete_service_action)
-    - [delete_tag_option](#delete_tag_option)
-    - [describe_constraint](#describe_constraint)
-    - [describe_copy_product_status](#describe_copy_product_status)
-    - [describe_portfolio](#describe_portfolio)
-    - [describe_portfolio_share_status](#describe_portfolio_share_status)
-    - [describe_portfolio_shares](#describe_portfolio_shares)
-    - [describe_product](#describe_product)
-    - [describe_product_as_admin](#describe_product_as_admin)
-    - [describe_product_view](#describe_product_view)
-    - [describe_provisioned_product](#describe_provisioned_product)
-    - [describe_provisioned_product_plan](#describe_provisioned_product_plan)
-    - [describe_provisioning_artifact](#describe_provisioning_artifact)
-    - [describe_provisioning_parameters](#describe_provisioning_parameters)
-    - [describe_record](#describe_record)
-    - [describe_service_action](#describe_service_action)
-    - [describe_service_action_execution_parameters](#describe_service_action_execution_parameters)
-    - [describe_tag_option](#describe_tag_option)
-    - [disable_aws_organizations_access](#disable_aws_organizations_access)
-    - [disassociate_budget_from_resource](#disassociate_budget_from_resource)
-    - [disassociate_principal_from_portfolio](#disassociate_principal_from_portfolio)
-    - [disassociate_product_from_portfolio](#disassociate_product_from_portfolio)
-    - [disassociate_service_action_from_provisioning_artifact](#disassociate_service_action_from_provisioning_artifact)
-    - [disassociate_tag_option_from_resource](#disassociate_tag_option_from_resource)
-    - [enable_aws_organizations_access](#enable_aws_organizations_access)
-    - [execute_provisioned_product_plan](#execute_provisioned_product_plan)
-    - [execute_provisioned_product_service_action](#execute_provisioned_product_service_action)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_aws_organizations_access_status](#get_aws_organizations_access_status)
-    - [get_provisioned_product_outputs](#get_provisioned_product_outputs)
-    - [import_as_provisioned_product](#import_as_provisioned_product)
-    - [list_accepted_portfolio_shares](#list_accepted_portfolio_shares)
-    - [list_budgets_for_resource](#list_budgets_for_resource)
-    - [list_constraints_for_portfolio](#list_constraints_for_portfolio)
-    - [list_launch_paths](#list_launch_paths)
-    - [list_organization_portfolio_access](#list_organization_portfolio_access)
-    - [list_portfolio_access](#list_portfolio_access)
-    - [list_portfolios](#list_portfolios)
-    - [list_portfolios_for_product](#list_portfolios_for_product)
-    - [list_principals_for_portfolio](#list_principals_for_portfolio)
-    - [list_provisioned_product_plans](#list_provisioned_product_plans)
-    - [list_provisioning_artifacts](#list_provisioning_artifacts)
-    - [list_provisioning_artifacts_for_service_action](#list_provisioning_artifacts_for_service_action)
-    - [list_record_history](#list_record_history)
-    - [list_resources_for_tag_option](#list_resources_for_tag_option)
-    - [list_service_actions](#list_service_actions)
-    - [list_service_actions_for_provisioning_artifact](#list_service_actions_for_provisioning_artifact)
-    - [list_stack_instances_for_provisioned_product](#list_stack_instances_for_provisioned_product)
-    - [list_tag_options](#list_tag_options)
-    - [provision_product](#provision_product)
-    - [reject_portfolio_share](#reject_portfolio_share)
-    - [scan_provisioned_products](#scan_provisioned_products)
-    - [search_products](#search_products)
-    - [search_products_as_admin](#search_products_as_admin)
-    - [search_provisioned_products](#search_provisioned_products)
-    - [terminate_provisioned_product](#terminate_provisioned_product)
-    - [update_constraint](#update_constraint)
-    - [update_portfolio](#update_portfolio)
-    - [update_portfolio_share](#update_portfolio_share)
-    - [update_product](#update_product)
-    - [update_provisioned_product](#update_provisioned_product)
-    - [update_provisioned_product_properties](#update_provisioned_product_properties)
-    - [update_provisioning_artifact](#update_provisioning_artifact)
-    - [update_service_action](#update_service_action)
-    - [update_tag_option](#update_tag_option)
-    - [get_paginator](#get_paginator)
-
-<a id="servicecatalogclient"></a>
+    Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+    type annotations stubs module [mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 ## ServiceCatalogClient
 
-Type annotations for `boto3.client("servicecatalog")`
+Type annotations and code completion for `#!python boto3.client("servicecatalog")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_servicecatalog.client import ServiceCatalogClient
 
@@ -121,2341 +20,2964 @@ def get_servicecatalog_client() -> ServiceCatalogClient:
     return Session().client("servicecatalog")
 ```
 
-Boto3 documentation:
-[ServiceCatalog.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("servicecatalog").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("servicecatalog")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.DuplicateResourceException,
+    client.InvalidParametersException,
+    client.InvalidStateException,
+    client.LimitExceededException,
+    client.OperationNotSupportedException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.TagOptionNotMigratedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_servicecatalog.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.DuplicateResourceException`
-- `Exceptions.InvalidParametersException`
-- `Exceptions.InvalidStateException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.OperationNotSupportedException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TagOptionNotMigratedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ServiceCatalogClient exceptions.
-
-Type annotations for `boto3.client("servicecatalog").exceptions` method.
-
-Boto3 documentation:
-[ServiceCatalog.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_portfolio\_share"></a>
-
-### accept_portfolio_share
+### accept\_portfolio\_share
 
 Accepts an offer to share the specified portfolio.
 
-Type annotations for `boto3.client("servicecatalog").accept_portfolio_share`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").accept_portfolio_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share)
 
-Boto3 documentation:
-[ServiceCatalog.Client.accept_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.accept_portfolio_share)
+```python title="Method definition"
+def accept_portfolio_share(
+    self,
+    *,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+    PortfolioShareType: PortfolioShareTypeType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AcceptPortfolioShareInputRequestTypeDef](./type_defs.md#acceptportfolioshareinputrequesttypedef).
+1. See [:material-code-brackets: PortfolioShareTypeType](./literals.md#portfoliosharetypetype) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `PortfolioShareType`:
-  [PortfolioShareTypeType](./literals.md#portfoliosharetypetype)
+```python title="Usage example with kwargs"
+kwargs: AcceptPortfolioShareInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.accept_portfolio_share(**kwargs)
+```
 
-<a id="associate\_budget\_with\_resource"></a>
+1. See [:material-code-braces: AcceptPortfolioShareInputRequestTypeDef](./type_defs.md#acceptportfolioshareinputrequesttypedef) 
 
-### associate_budget_with_resource
+### associate\_budget\_with\_resource
 
 Associates the specified budget with the specified resource.
 
-Type annotations for
-`boto3.client("servicecatalog").associate_budget_with_resource` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").associate_budget_with_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_budget_with_resource)
 
-Boto3 documentation:
-[ServiceCatalog.Client.associate_budget_with_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_budget_with_resource)
+```python title="Method definition"
+def associate_budget_with_resource(
+    self,
+    *,
+    BudgetName: str,
+    ResourceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateBudgetWithResourceInputRequestTypeDef](./type_defs.md#associatebudgetwithresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BudgetName`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateBudgetWithResourceInputRequestTypeDef = {  # (1)
+    "BudgetName": ...,
+    "ResourceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_budget_with_resource(**kwargs)
+```
 
-<a id="associate\_principal\_with\_portfolio"></a>
+1. See [:material-code-braces: AssociateBudgetWithResourceInputRequestTypeDef](./type_defs.md#associatebudgetwithresourceinputrequesttypedef) 
 
-### associate_principal_with_portfolio
+### associate\_principal\_with\_portfolio
 
 Associates the specified principal ARN with the specified portfolio.
 
-Type annotations for
-`boto3.client("servicecatalog").associate_principal_with_portfolio` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").associate_principal_with_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.associate_principal_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_principal_with_portfolio)
+```python title="Method definition"
+def associate_principal_with_portfolio(
+    self,
+    *,
+    PortfolioId: str,
+    PrincipalARN: str,
+    PrincipalType: PrincipalTypeType,  # (1)
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociatePrincipalWithPortfolioInputRequestTypeDef](./type_defs.md#associateprincipalwithportfolioinputrequesttypedef).
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `PrincipalARN`: `str` *(required)*
-- `PrincipalType`: `Literal['IAM']` (see
-  [PrincipalTypeType](./literals.md#principaltypetype)) *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociatePrincipalWithPortfolioInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+    "PrincipalARN": ...,
+    "PrincipalType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_principal_with_portfolio(**kwargs)
+```
 
-<a id="associate\_product\_with\_portfolio"></a>
+1. See [:material-code-braces: AssociatePrincipalWithPortfolioInputRequestTypeDef](./type_defs.md#associateprincipalwithportfolioinputrequesttypedef) 
 
-### associate_product_with_portfolio
+### associate\_product\_with\_portfolio
 
 Associates the specified product with the specified portfolio.
 
-Type annotations for
-`boto3.client("servicecatalog").associate_product_with_portfolio` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").associate_product_with_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.associate_product_with_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_product_with_portfolio)
+```python title="Method definition"
+def associate_product_with_portfolio(
+    self,
+    *,
+    ProductId: str,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+    SourcePortfolioId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateProductWithPortfolioInputRequestTypeDef](./type_defs.md#associateproductwithportfolioinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `SourcePortfolioId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateProductWithPortfolioInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+    "PortfolioId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_product_with_portfolio(**kwargs)
+```
 
-<a id="associate\_service\_action\_with\_provisioning\_artifact"></a>
+1. See [:material-code-braces: AssociateProductWithPortfolioInputRequestTypeDef](./type_defs.md#associateproductwithportfolioinputrequesttypedef) 
 
-### associate_service_action_with_provisioning_artifact
+### associate\_service\_action\_with\_provisioning\_artifact
 
 Associates a self-service action with a provisioning artifact.
 
-Type annotations for
-`boto3.client("servicecatalog").associate_service_action_with_provisioning_artifact`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").associate_service_action_with_provisioning_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact)
 
-Boto3 documentation:
-[ServiceCatalog.Client.associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_service_action_with_provisioning_artifact)
+```python title="Method definition"
+def associate_service_action_with_provisioning_artifact(
+    self,
+    *,
+    ProductId: str,
+    ProvisioningArtifactId: str,
+    ServiceActionId: str,
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateServiceActionWithProvisioningArtifactInputRequestTypeDef](./type_defs.md#associateserviceactionwithprovisioningartifactinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `ProvisioningArtifactId`: `str` *(required)*
-- `ServiceActionId`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateServiceActionWithProvisioningArtifactInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+    "ProvisioningArtifactId": ...,
+    "ServiceActionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_service_action_with_provisioning_artifact(**kwargs)
+```
 
-<a id="associate\_tag\_option\_with\_resource"></a>
+1. See [:material-code-braces: AssociateServiceActionWithProvisioningArtifactInputRequestTypeDef](./type_defs.md#associateserviceactionwithprovisioningartifactinputrequesttypedef) 
 
-### associate_tag_option_with_resource
+### associate\_tag\_option\_with\_resource
 
 Associate the specified TagOption with the specified portfolio or product.
 
-Type annotations for
-`boto3.client("servicecatalog").associate_tag_option_with_resource` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").associate_tag_option_with_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_tag_option_with_resource)
 
-Boto3 documentation:
-[ServiceCatalog.Client.associate_tag_option_with_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.associate_tag_option_with_resource)
+```python title="Method definition"
+def associate_tag_option_with_resource(
+    self,
+    *,
+    ResourceId: str,
+    TagOptionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateTagOptionWithResourceInputRequestTypeDef](./type_defs.md#associatetagoptionwithresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `TagOptionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateTagOptionWithResourceInputRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "TagOptionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_tag_option_with_resource(**kwargs)
+```
 
-<a id="batch\_associate\_service\_action\_with\_provisioning\_artifact"></a>
+1. See [:material-code-braces: AssociateTagOptionWithResourceInputRequestTypeDef](./type_defs.md#associatetagoptionwithresourceinputrequesttypedef) 
 
-### batch_associate_service_action_with_provisioning_artifact
+### batch\_associate\_service\_action\_with\_provisioning\_artifact
 
 Associates multiple self-service actions with provisioning artifacts.
 
-Type annotations for
-`boto3.client("servicecatalog").batch_associate_service_action_with_provisioning_artifact`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").batch_associate_service_action_with_provisioning_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact)
 
-Boto3 documentation:
-[ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_associate_service_action_with_provisioning_artifact)
+```python title="Method definition"
+def batch_associate_service_action_with_provisioning_artifact(
+    self,
+    *,
+    ServiceActionAssociations: Sequence[ServiceActionAssociationTypeDef],  # (1)
+    AcceptLanguage: str = ...,
+) -> BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactinputrequesttypedef).
+1. See [:material-code-braces: ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef) 
+2. See [:material-code-braces: BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ServiceActionAssociations`:
-  `Sequence`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
-  *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef = {  # (1)
+    "ServiceActionAssociations": ...,
+}
 
-Returns
-[BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactoutputtypedef).
+parent.batch_associate_service_action_with_provisioning_artifact(**kwargs)
+```
 
-<a id="batch\_disassociate\_service\_action\_from\_provisioning\_artifact"></a>
+1. See [:material-code-braces: BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactinputrequesttypedef) 
 
-### batch_disassociate_service_action_from_provisioning_artifact
+### batch\_disassociate\_service\_action\_from\_provisioning\_artifact
 
 Disassociates a batch of self-service actions from the specified provisioning
 artifact.
 
-Type annotations for
-`boto3.client("servicecatalog").batch_disassociate_service_action_from_provisioning_artifact`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").batch_disassociate_service_action_from_provisioning_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact)
 
-Boto3 documentation:
-[ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.batch_disassociate_service_action_from_provisioning_artifact)
+```python title="Method definition"
+def batch_disassociate_service_action_from_provisioning_artifact(
+    self,
+    *,
+    ServiceActionAssociations: Sequence[ServiceActionAssociationTypeDef],  # (1)
+    AcceptLanguage: str = ...,
+) -> BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef](./type_defs.md#batchdisassociateserviceactionfromprovisioningartifactinputrequesttypedef).
+1. See [:material-code-braces: ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef) 
+2. See [:material-code-braces: BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef](./type_defs.md#batchdisassociateserviceactionfromprovisioningartifactoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ServiceActionAssociations`:
-  `Sequence`\[[ServiceActionAssociationTypeDef](./type_defs.md#serviceactionassociationtypedef)\]
-  *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef = {  # (1)
+    "ServiceActionAssociations": ...,
+}
 
-Returns
-[BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef](./type_defs.md#batchdisassociateserviceactionfromprovisioningartifactoutputtypedef).
+parent.batch_disassociate_service_action_from_provisioning_artifact(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchDisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef](./type_defs.md#batchdisassociateserviceactionfromprovisioningartifactinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("servicecatalog").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.can_paginate)
 
-Boto3 documentation:
-[ServiceCatalog.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="copy\_product"></a>
-
-### copy_product
+### copy\_product
 
 Copies the specified source product to the specified target product or a new
 product.
 
-Type annotations for `boto3.client("servicecatalog").copy_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").copy_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.copy_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.copy_product)
+```python title="Method definition"
+def copy_product(
+    self,
+    *,
+    SourceProductArn: str,
+    IdempotencyToken: str,
+    AcceptLanguage: str = ...,
+    TargetProductId: str = ...,
+    TargetProductName: str = ...,
+    SourceProvisioningArtifactIdentifiers: Sequence[Mapping[ProvisioningArtifactPropertyNameType, str]] = ...,  # (1)
+    CopyOptions: Sequence[CopyOptionType] = ...,  # (2)
+) -> CopyProductOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CopyProductInputRequestTypeDef](./type_defs.md#copyproductinputrequesttypedef).
+1. See [:material-code-brackets: ProvisioningArtifactPropertyNameType](./literals.md#provisioningartifactpropertynametype) 
+2. See [:material-code-brackets: CopyOptionType](./literals.md#copyoptiontype) 
+3. See [:material-code-braces: CopyProductOutputTypeDef](./type_defs.md#copyproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `SourceProductArn`: `str` *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `TargetProductId`: `str`
-- `TargetProductName`: `str`
-- `SourceProvisioningArtifactIdentifiers`:
-  `Sequence`\[`Mapping`\[`Literal['Id']` (see
-  [ProvisioningArtifactPropertyNameType](./literals.md#provisioningartifactpropertynametype)),
-  `str`\]\]
-- `CopyOptions`: `Sequence`\[`Literal['CopyTags']` (see
-  [CopyOptionType](./literals.md#copyoptiontype))\]
+```python title="Usage example with kwargs"
+kwargs: CopyProductInputRequestTypeDef = {  # (1)
+    "SourceProductArn": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns [CopyProductOutputTypeDef](./type_defs.md#copyproductoutputtypedef).
+parent.copy_product(**kwargs)
+```
 
-<a id="create\_constraint"></a>
+1. See [:material-code-braces: CopyProductInputRequestTypeDef](./type_defs.md#copyproductinputrequesttypedef) 
 
-### create_constraint
+### create\_constraint
 
 Creates a constraint.
 
-Type annotations for `boto3.client("servicecatalog").create_constraint` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").create_constraint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint)
 
-Boto3 documentation:
-[ServiceCatalog.Client.create_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_constraint)
+```python title="Method definition"
+def create_constraint(
+    self,
+    *,
+    PortfolioId: str,
+    ProductId: str,
+    Parameters: str,
+    Type: str,
+    IdempotencyToken: str,
+    AcceptLanguage: str = ...,
+    Description: str = ...,
+) -> CreateConstraintOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateConstraintInputRequestTypeDef](./type_defs.md#createconstraintinputrequesttypedef).
+1. See [:material-code-braces: CreateConstraintOutputTypeDef](./type_defs.md#createconstraintoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `ProductId`: `str` *(required)*
-- `Parameters`: `str` *(required)*
-- `Type`: `str` *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateConstraintInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+    "ProductId": ...,
+    "Parameters": ...,
+    "Type": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateConstraintOutputTypeDef](./type_defs.md#createconstraintoutputtypedef).
+parent.create_constraint(**kwargs)
+```
 
-<a id="create\_portfolio"></a>
+1. See [:material-code-braces: CreateConstraintInputRequestTypeDef](./type_defs.md#createconstraintinputrequesttypedef) 
 
-### create_portfolio
+### create\_portfolio
 
 Creates a portfolio.
 
-Type annotations for `boto3.client("servicecatalog").create_portfolio` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").create_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.create_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio)
+```python title="Method definition"
+def create_portfolio(
+    self,
+    *,
+    DisplayName: str,
+    ProviderName: str,
+    IdempotencyToken: str,
+    AcceptLanguage: str = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreatePortfolioOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePortfolioInputRequestTypeDef](./type_defs.md#createportfolioinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreatePortfolioOutputTypeDef](./type_defs.md#createportfoliooutputtypedef) 
 
-Keyword-only arguments:
 
-- `DisplayName`: `str` *(required)*
-- `ProviderName`: `str` *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePortfolioInputRequestTypeDef = {  # (1)
+    "DisplayName": ...,
+    "ProviderName": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreatePortfolioOutputTypeDef](./type_defs.md#createportfoliooutputtypedef).
+parent.create_portfolio(**kwargs)
+```
 
-<a id="create\_portfolio\_share"></a>
+1. See [:material-code-braces: CreatePortfolioInputRequestTypeDef](./type_defs.md#createportfolioinputrequesttypedef) 
 
-### create_portfolio_share
+### create\_portfolio\_share
 
 Shares the specified portfolio with the specified account or organization node.
 
-Type annotations for `boto3.client("servicecatalog").create_portfolio_share`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").create_portfolio_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share)
 
-Boto3 documentation:
-[ServiceCatalog.Client.create_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_portfolio_share)
+```python title="Method definition"
+def create_portfolio_share(
+    self,
+    *,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+    AccountId: str = ...,
+    OrganizationNode: OrganizationNodeTypeDef = ...,  # (1)
+    ShareTagOptions: bool = ...,
+) -> CreatePortfolioShareOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePortfolioShareInputRequestTypeDef](./type_defs.md#createportfolioshareinputrequesttypedef).
+1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
+2. See [:material-code-braces: CreatePortfolioShareOutputTypeDef](./type_defs.md#createportfolioshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `AccountId`: `str`
-- `OrganizationNode`:
-  [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
-- `ShareTagOptions`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreatePortfolioShareInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+}
 
-Returns
-[CreatePortfolioShareOutputTypeDef](./type_defs.md#createportfolioshareoutputtypedef).
+parent.create_portfolio_share(**kwargs)
+```
 
-<a id="create\_product"></a>
+1. See [:material-code-braces: CreatePortfolioShareInputRequestTypeDef](./type_defs.md#createportfolioshareinputrequesttypedef) 
 
-### create_product
+### create\_product
 
 Creates a product.
 
-Type annotations for `boto3.client("servicecatalog").create_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").create_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.create_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_product)
+```python title="Method definition"
+def create_product(
+    self,
+    *,
+    Name: str,
+    Owner: str,
+    ProductType: ProductTypeType,  # (1)
+    ProvisioningArtifactParameters: ProvisioningArtifactPropertiesTypeDef,  # (2)
+    IdempotencyToken: str,
+    AcceptLanguage: str = ...,
+    Description: str = ...,
+    Distributor: str = ...,
+    SupportDescription: str = ...,
+    SupportEmail: str = ...,
+    SupportUrl: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateProductOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateProductInputRequestTypeDef](./type_defs.md#createproductinputrequesttypedef).
+1. See [:material-code-brackets: ProductTypeType](./literals.md#producttypetype) 
+2. See [:material-code-braces: ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateProductOutputTypeDef](./type_defs.md#createproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Owner`: `str` *(required)*
-- `ProductType`: [ProductTypeType](./literals.md#producttypetype) *(required)*
-- `ProvisioningArtifactParameters`:
-  [ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef)
-  *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `Description`: `str`
-- `Distributor`: `str`
-- `SupportDescription`: `str`
-- `SupportEmail`: `str`
-- `SupportUrl`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateProductInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Owner": ...,
+    "ProductType": ...,
+    "ProvisioningArtifactParameters": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateProductOutputTypeDef](./type_defs.md#createproductoutputtypedef).
+parent.create_product(**kwargs)
+```
 
-<a id="create\_provisioned\_product\_plan"></a>
+1. See [:material-code-braces: CreateProductInputRequestTypeDef](./type_defs.md#createproductinputrequesttypedef) 
 
-### create_provisioned_product_plan
+### create\_provisioned\_product\_plan
 
 Creates a plan.
 
-Type annotations for
-`boto3.client("servicecatalog").create_provisioned_product_plan` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").create_provisioned_product_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan)
 
-Boto3 documentation:
-[ServiceCatalog.Client.create_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioned_product_plan)
+```python title="Method definition"
+def create_provisioned_product_plan(
+    self,
+    *,
+    PlanName: str,
+    PlanType: ProvisionedProductPlanTypeType,  # (1)
+    ProductId: str,
+    ProvisionedProductName: str,
+    ProvisioningArtifactId: str,
+    IdempotencyToken: str,
+    AcceptLanguage: str = ...,
+    NotificationArns: Sequence[str] = ...,
+    PathId: str = ...,
+    ProvisioningParameters: Sequence[UpdateProvisioningParameterTypeDef] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateProvisionedProductPlanOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateProvisionedProductPlanInputRequestTypeDef](./type_defs.md#createprovisionedproductplaninputrequesttypedef).
+1. See [:material-code-brackets: ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype) 
+2. See [:material-code-braces: UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateProvisionedProductPlanOutputTypeDef](./type_defs.md#createprovisionedproductplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PlanName`: `str` *(required)*
-- `PlanType`: `Literal['CLOUDFORMATION']` (see
-  [ProvisionedProductPlanTypeType](./literals.md#provisionedproductplantypetype))
-  *(required)*
-- `ProductId`: `str` *(required)*
-- `ProvisionedProductName`: `str` *(required)*
-- `ProvisioningArtifactId`: `str` *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `NotificationArns`: `Sequence`\[`str`\]
-- `PathId`: `str`
-- `ProvisioningParameters`:
-  `Sequence`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateProvisionedProductPlanInputRequestTypeDef = {  # (1)
+    "PlanName": ...,
+    "PlanType": ...,
+    "ProductId": ...,
+    "ProvisionedProductName": ...,
+    "ProvisioningArtifactId": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateProvisionedProductPlanOutputTypeDef](./type_defs.md#createprovisionedproductplanoutputtypedef).
+parent.create_provisioned_product_plan(**kwargs)
+```
 
-<a id="create\_provisioning\_artifact"></a>
+1. See [:material-code-braces: CreateProvisionedProductPlanInputRequestTypeDef](./type_defs.md#createprovisionedproductplaninputrequesttypedef) 
 
-### create_provisioning_artifact
+### create\_provisioning\_artifact
 
 Creates a provisioning artifact (also known as a version) for the specified
 product.
 
-Type annotations for
-`boto3.client("servicecatalog").create_provisioning_artifact` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").create_provisioning_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact)
 
-Boto3 documentation:
-[ServiceCatalog.Client.create_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_provisioning_artifact)
+```python title="Method definition"
+def create_provisioning_artifact(
+    self,
+    *,
+    ProductId: str,
+    Parameters: ProvisioningArtifactPropertiesTypeDef,  # (1)
+    IdempotencyToken: str,
+    AcceptLanguage: str = ...,
+) -> CreateProvisioningArtifactOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateProvisioningArtifactInputRequestTypeDef](./type_defs.md#createprovisioningartifactinputrequesttypedef).
+1. See [:material-code-braces: ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef) 
+2. See [:material-code-braces: CreateProvisioningArtifactOutputTypeDef](./type_defs.md#createprovisioningartifactoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `Parameters`:
-  [ProvisioningArtifactPropertiesTypeDef](./type_defs.md#provisioningartifactpropertiestypedef)
-  *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateProvisioningArtifactInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+    "Parameters": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateProvisioningArtifactOutputTypeDef](./type_defs.md#createprovisioningartifactoutputtypedef).
+parent.create_provisioning_artifact(**kwargs)
+```
 
-<a id="create\_service\_action"></a>
+1. See [:material-code-braces: CreateProvisioningArtifactInputRequestTypeDef](./type_defs.md#createprovisioningartifactinputrequesttypedef) 
 
-### create_service_action
+### create\_service\_action
 
 Creates a self-service action.
 
-Type annotations for `boto3.client("servicecatalog").create_service_action`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").create_service_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action)
 
-Boto3 documentation:
-[ServiceCatalog.Client.create_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_service_action)
+```python title="Method definition"
+def create_service_action(
+    self,
+    *,
+    Name: str,
+    DefinitionType: ServiceActionDefinitionTypeType,  # (1)
+    Definition: Mapping[ServiceActionDefinitionKeyType, str],  # (2)
+    IdempotencyToken: str,
+    Description: str = ...,
+    AcceptLanguage: str = ...,
+) -> CreateServiceActionOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateServiceActionInputRequestTypeDef](./type_defs.md#createserviceactioninputrequesttypedef).
+1. See [:material-code-brackets: ServiceActionDefinitionTypeType](./literals.md#serviceactiondefinitiontypetype) 
+2. See [:material-code-brackets: ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype) 
+3. See [:material-code-braces: CreateServiceActionOutputTypeDef](./type_defs.md#createserviceactionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `DefinitionType`: `Literal['SSM_AUTOMATION']` (see
-  [ServiceActionDefinitionTypeType](./literals.md#serviceactiondefinitiontypetype))
-  *(required)*
-- `Definition`:
-  `Mapping`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
-  `str`\] *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `Description`: `str`
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateServiceActionInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "DefinitionType": ...,
+    "Definition": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateServiceActionOutputTypeDef](./type_defs.md#createserviceactionoutputtypedef).
+parent.create_service_action(**kwargs)
+```
 
-<a id="create\_tag\_option"></a>
+1. See [:material-code-braces: CreateServiceActionInputRequestTypeDef](./type_defs.md#createserviceactioninputrequesttypedef) 
 
-### create_tag_option
+### create\_tag\_option
 
 Creates a TagOption.
 
-Type annotations for `boto3.client("servicecatalog").create_tag_option` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").create_tag_option` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_tag_option)
 
-Boto3 documentation:
-[ServiceCatalog.Client.create_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.create_tag_option)
+```python title="Method definition"
+def create_tag_option(
+    self,
+    *,
+    Key: str,
+    Value: str,
+) -> CreateTagOptionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateTagOptionInputRequestTypeDef](./type_defs.md#createtagoptioninputrequesttypedef).
+1. See [:material-code-braces: CreateTagOptionOutputTypeDef](./type_defs.md#createtagoptionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Key`: `str` *(required)*
-- `Value`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTagOptionInputRequestTypeDef = {  # (1)
+    "Key": ...,
+    "Value": ...,
+}
 
-Returns
-[CreateTagOptionOutputTypeDef](./type_defs.md#createtagoptionoutputtypedef).
+parent.create_tag_option(**kwargs)
+```
 
-<a id="delete\_constraint"></a>
+1. See [:material-code-braces: CreateTagOptionInputRequestTypeDef](./type_defs.md#createtagoptioninputrequesttypedef) 
 
-### delete_constraint
+### delete\_constraint
 
 Deletes the specified constraint.
 
-Type annotations for `boto3.client("servicecatalog").delete_constraint` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").delete_constraint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_constraint)
 
-Boto3 documentation:
-[ServiceCatalog.Client.delete_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_constraint)
+```python title="Method definition"
+def delete_constraint(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConstraintInputRequestTypeDef](./type_defs.md#deleteconstraintinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteConstraintInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_constraint(**kwargs)
+```
 
-<a id="delete\_portfolio"></a>
+1. See [:material-code-braces: DeleteConstraintInputRequestTypeDef](./type_defs.md#deleteconstraintinputrequesttypedef) 
 
-### delete_portfolio
+### delete\_portfolio
 
 Deletes the specified portfolio.
 
-Type annotations for `boto3.client("servicecatalog").delete_portfolio` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").delete_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.delete_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio)
+```python title="Method definition"
+def delete_portfolio(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePortfolioInputRequestTypeDef](./type_defs.md#deleteportfolioinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePortfolioInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_portfolio(**kwargs)
+```
 
-<a id="delete\_portfolio\_share"></a>
+1. See [:material-code-braces: DeletePortfolioInputRequestTypeDef](./type_defs.md#deleteportfolioinputrequesttypedef) 
 
-### delete_portfolio_share
+### delete\_portfolio\_share
 
-Stops sharing the specified portfolio with the specified account or
-organization node.
+Stops sharing the specified portfolio with the specified account or organization
+node.
 
-Type annotations for `boto3.client("servicecatalog").delete_portfolio_share`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").delete_portfolio_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share)
 
-Boto3 documentation:
-[ServiceCatalog.Client.delete_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_portfolio_share)
+```python title="Method definition"
+def delete_portfolio_share(
+    self,
+    *,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+    AccountId: str = ...,
+    OrganizationNode: OrganizationNodeTypeDef = ...,  # (1)
+) -> DeletePortfolioShareOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeletePortfolioShareInputRequestTypeDef](./type_defs.md#deleteportfolioshareinputrequesttypedef).
+1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
+2. See [:material-code-braces: DeletePortfolioShareOutputTypeDef](./type_defs.md#deleteportfolioshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `AccountId`: `str`
-- `OrganizationNode`:
-  [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
+```python title="Usage example with kwargs"
+kwargs: DeletePortfolioShareInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+}
 
-Returns
-[DeletePortfolioShareOutputTypeDef](./type_defs.md#deleteportfolioshareoutputtypedef).
+parent.delete_portfolio_share(**kwargs)
+```
 
-<a id="delete\_product"></a>
+1. See [:material-code-braces: DeletePortfolioShareInputRequestTypeDef](./type_defs.md#deleteportfolioshareinputrequesttypedef) 
 
-### delete_product
+### delete\_product
 
 Deletes the specified product.
 
-Type annotations for `boto3.client("servicecatalog").delete_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").delete_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.delete_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_product)
+```python title="Method definition"
+def delete_product(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProductInputRequestTypeDef](./type_defs.md#deleteproductinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteProductInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_product(**kwargs)
+```
 
-<a id="delete\_provisioned\_product\_plan"></a>
+1. See [:material-code-braces: DeleteProductInputRequestTypeDef](./type_defs.md#deleteproductinputrequesttypedef) 
 
-### delete_provisioned_product_plan
+### delete\_provisioned\_product\_plan
 
 Deletes the specified plan.
 
-Type annotations for
-`boto3.client("servicecatalog").delete_provisioned_product_plan` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").delete_provisioned_product_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan)
 
-Boto3 documentation:
-[ServiceCatalog.Client.delete_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioned_product_plan)
+```python title="Method definition"
+def delete_provisioned_product_plan(
+    self,
+    *,
+    PlanId: str,
+    AcceptLanguage: str = ...,
+    IgnoreErrors: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProvisionedProductPlanInputRequestTypeDef](./type_defs.md#deleteprovisionedproductplaninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `PlanId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `IgnoreErrors`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteProvisionedProductPlanInputRequestTypeDef = {  # (1)
+    "PlanId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_provisioned_product_plan(**kwargs)
+```
 
-<a id="delete\_provisioning\_artifact"></a>
+1. See [:material-code-braces: DeleteProvisionedProductPlanInputRequestTypeDef](./type_defs.md#deleteprovisionedproductplaninputrequesttypedef) 
 
-### delete_provisioning_artifact
+### delete\_provisioning\_artifact
 
 Deletes the specified provisioning artifact (also known as a version) for the
 specified product.
 
-Type annotations for
-`boto3.client("servicecatalog").delete_provisioning_artifact` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").delete_provisioning_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact)
 
-Boto3 documentation:
-[ServiceCatalog.Client.delete_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_provisioning_artifact)
+```python title="Method definition"
+def delete_provisioning_artifact(
+    self,
+    *,
+    ProductId: str,
+    ProvisioningArtifactId: str,
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProvisioningArtifactInputRequestTypeDef](./type_defs.md#deleteprovisioningartifactinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `ProvisioningArtifactId`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteProvisioningArtifactInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+    "ProvisioningArtifactId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_provisioning_artifact(**kwargs)
+```
 
-<a id="delete\_service\_action"></a>
+1. See [:material-code-braces: DeleteProvisioningArtifactInputRequestTypeDef](./type_defs.md#deleteprovisioningartifactinputrequesttypedef) 
 
-### delete_service_action
+### delete\_service\_action
 
 Deletes a self-service action.
 
-Type annotations for `boto3.client("servicecatalog").delete_service_action`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").delete_service_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_service_action)
 
-Boto3 documentation:
-[ServiceCatalog.Client.delete_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_service_action)
+```python title="Method definition"
+def delete_service_action(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceActionInputRequestTypeDef](./type_defs.md#deleteserviceactioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceActionInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_service_action(**kwargs)
+```
 
-<a id="delete\_tag\_option"></a>
+1. See [:material-code-braces: DeleteServiceActionInputRequestTypeDef](./type_defs.md#deleteserviceactioninputrequesttypedef) 
 
-### delete_tag_option
+### delete\_tag\_option
 
 Deletes the specified TagOption.
 
-Type annotations for `boto3.client("servicecatalog").delete_tag_option` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").delete_tag_option` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_tag_option)
 
-Boto3 documentation:
-[ServiceCatalog.Client.delete_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.delete_tag_option)
+```python title="Method definition"
+def delete_tag_option(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTagOptionInputRequestTypeDef](./type_defs.md#deletetagoptioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTagOptionInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_tag_option(**kwargs)
+```
 
-<a id="describe\_constraint"></a>
+1. See [:material-code-braces: DeleteTagOptionInputRequestTypeDef](./type_defs.md#deletetagoptioninputrequesttypedef) 
 
-### describe_constraint
+### describe\_constraint
 
 Gets information about the specified constraint.
 
-Type annotations for `boto3.client("servicecatalog").describe_constraint`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_constraint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_constraint)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_constraint)
+```python title="Method definition"
+def describe_constraint(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+) -> DescribeConstraintOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConstraintInputRequestTypeDef](./type_defs.md#describeconstraintinputrequesttypedef).
+1. See [:material-code-braces: DescribeConstraintOutputTypeDef](./type_defs.md#describeconstraintoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeConstraintInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DescribeConstraintOutputTypeDef](./type_defs.md#describeconstraintoutputtypedef).
+parent.describe_constraint(**kwargs)
+```
 
-<a id="describe\_copy\_product\_status"></a>
+1. See [:material-code-braces: DescribeConstraintInputRequestTypeDef](./type_defs.md#describeconstraintinputrequesttypedef) 
 
-### describe_copy_product_status
+### describe\_copy\_product\_status
 
 Gets the status of the specified copy product operation.
 
-Type annotations for
-`boto3.client("servicecatalog").describe_copy_product_status` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_copy_product_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_copy_product_status)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_copy_product_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_copy_product_status)
+```python title="Method definition"
+def describe_copy_product_status(
+    self,
+    *,
+    CopyProductToken: str,
+    AcceptLanguage: str = ...,
+) -> DescribeCopyProductStatusOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCopyProductStatusInputRequestTypeDef](./type_defs.md#describecopyproductstatusinputrequesttypedef).
+1. See [:material-code-braces: DescribeCopyProductStatusOutputTypeDef](./type_defs.md#describecopyproductstatusoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CopyProductToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeCopyProductStatusInputRequestTypeDef = {  # (1)
+    "CopyProductToken": ...,
+}
 
-Returns
-[DescribeCopyProductStatusOutputTypeDef](./type_defs.md#describecopyproductstatusoutputtypedef).
+parent.describe_copy_product_status(**kwargs)
+```
 
-<a id="describe\_portfolio"></a>
+1. See [:material-code-braces: DescribeCopyProductStatusInputRequestTypeDef](./type_defs.md#describecopyproductstatusinputrequesttypedef) 
 
-### describe_portfolio
+### describe\_portfolio
 
 Gets information about the specified portfolio.
 
-Type annotations for `boto3.client("servicecatalog").describe_portfolio`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio)
+```python title="Method definition"
+def describe_portfolio(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+) -> DescribePortfolioOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePortfolioInputRequestTypeDef](./type_defs.md#describeportfolioinputrequesttypedef).
+1. See [:material-code-braces: DescribePortfolioOutputTypeDef](./type_defs.md#describeportfoliooutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribePortfolioInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DescribePortfolioOutputTypeDef](./type_defs.md#describeportfoliooutputtypedef).
+parent.describe_portfolio(**kwargs)
+```
 
-<a id="describe\_portfolio\_share\_status"></a>
+1. See [:material-code-braces: DescribePortfolioInputRequestTypeDef](./type_defs.md#describeportfolioinputrequesttypedef) 
 
-### describe_portfolio_share_status
+### describe\_portfolio\_share\_status
 
 Gets the status of the specified portfolio share operation.
 
-Type annotations for
-`boto3.client("servicecatalog").describe_portfolio_share_status` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_portfolio_share_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_share_status)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_portfolio_share_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_share_status)
+```python title="Method definition"
+def describe_portfolio_share_status(
+    self,
+    *,
+    PortfolioShareToken: str,
+) -> DescribePortfolioShareStatusOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePortfolioShareStatusInputRequestTypeDef](./type_defs.md#describeportfoliosharestatusinputrequesttypedef).
+1. See [:material-code-braces: DescribePortfolioShareStatusOutputTypeDef](./type_defs.md#describeportfoliosharestatusoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioShareToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePortfolioShareStatusInputRequestTypeDef = {  # (1)
+    "PortfolioShareToken": ...,
+}
 
-Returns
-[DescribePortfolioShareStatusOutputTypeDef](./type_defs.md#describeportfoliosharestatusoutputtypedef).
+parent.describe_portfolio_share_status(**kwargs)
+```
 
-<a id="describe\_portfolio\_shares"></a>
+1. See [:material-code-braces: DescribePortfolioShareStatusInputRequestTypeDef](./type_defs.md#describeportfoliosharestatusinputrequesttypedef) 
 
-### describe_portfolio_shares
+### describe\_portfolio\_shares
 
 Returns a summary of each of the portfolio shares that were created for the
 specified portfolio.
 
-Type annotations for `boto3.client("servicecatalog").describe_portfolio_shares`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_portfolio_shares` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_portfolio_shares)
+```python title="Method definition"
+def describe_portfolio_shares(
+    self,
+    *,
+    PortfolioId: str,
+    Type: DescribePortfolioShareTypeType,  # (1)
+    PageToken: str = ...,
+    PageSize: int = ...,
+) -> DescribePortfolioSharesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribePortfolioSharesInputRequestTypeDef](./type_defs.md#describeportfoliosharesinputrequesttypedef).
+1. See [:material-code-brackets: DescribePortfolioShareTypeType](./literals.md#describeportfoliosharetypetype) 
+2. See [:material-code-braces: DescribePortfolioSharesOutputTypeDef](./type_defs.md#describeportfoliosharesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `Type`:
-  [DescribePortfolioShareTypeType](./literals.md#describeportfoliosharetypetype)
-  *(required)*
-- `PageToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribePortfolioSharesInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+    "Type": ...,
+}
 
-Returns
-[DescribePortfolioSharesOutputTypeDef](./type_defs.md#describeportfoliosharesoutputtypedef).
+parent.describe_portfolio_shares(**kwargs)
+```
 
-<a id="describe\_product"></a>
+1. See [:material-code-braces: DescribePortfolioSharesInputRequestTypeDef](./type_defs.md#describeportfoliosharesinputrequesttypedef) 
 
-### describe_product
-
-Gets information about the specified product.
-
-Type annotations for `boto3.client("servicecatalog").describe_product` method.
-
-Boto3 documentation:
-[ServiceCatalog.Client.describe_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product)
-
-Arguments mapping described in
-[DescribeProductInputRequestTypeDef](./type_defs.md#describeproductinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `AcceptLanguage`: `str`
-- `Id`: `str`
-- `Name`: `str`
-
-Returns
-[DescribeProductOutputTypeDef](./type_defs.md#describeproductoutputtypedef).
-
-<a id="describe\_product\_as\_admin"></a>
-
-### describe_product_as_admin
+### describe\_product
 
 Gets information about the specified product.
 
-Type annotations for `boto3.client("servicecatalog").describe_product_as_admin`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_product_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin)
+```python title="Method definition"
+def describe_product(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    Id: str = ...,
+    Name: str = ...,
+) -> DescribeProductOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProductAsAdminInputRequestTypeDef](./type_defs.md#describeproductasadmininputrequesttypedef).
+1. See [:material-code-braces: DescribeProductOutputTypeDef](./type_defs.md#describeproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `SourcePortfolioId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeProductInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[DescribeProductAsAdminOutputTypeDef](./type_defs.md#describeproductasadminoutputtypedef).
+parent.describe_product(**kwargs)
+```
 
-<a id="describe\_product\_view"></a>
+1. See [:material-code-braces: DescribeProductInputRequestTypeDef](./type_defs.md#describeproductinputrequesttypedef) 
 
-### describe_product_view
+### describe\_product\_as\_admin
 
 Gets information about the specified product.
 
-Type annotations for `boto3.client("servicecatalog").describe_product_view`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_product_as_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_as_admin)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_product_view](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_view)
+```python title="Method definition"
+def describe_product_as_admin(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    Id: str = ...,
+    Name: str = ...,
+    SourcePortfolioId: str = ...,
+) -> DescribeProductAsAdminOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProductViewInputRequestTypeDef](./type_defs.md#describeproductviewinputrequesttypedef).
+1. See [:material-code-braces: DescribeProductAsAdminOutputTypeDef](./type_defs.md#describeproductasadminoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeProductAsAdminInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[DescribeProductViewOutputTypeDef](./type_defs.md#describeproductviewoutputtypedef).
+parent.describe_product_as_admin(**kwargs)
+```
 
-<a id="describe\_provisioned\_product"></a>
+1. See [:material-code-braces: DescribeProductAsAdminInputRequestTypeDef](./type_defs.md#describeproductasadmininputrequesttypedef) 
 
-### describe_provisioned_product
+### describe\_product\_view
+
+Gets information about the specified product.
+
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_product_view` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_product_view)
+
+```python title="Method definition"
+def describe_product_view(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+) -> DescribeProductViewOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeProductViewOutputTypeDef](./type_defs.md#describeproductviewoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeProductViewInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.describe_product_view(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeProductViewInputRequestTypeDef](./type_defs.md#describeproductviewinputrequesttypedef) 
+
+### describe\_provisioned\_product
 
 Gets information about the specified provisioned product.
 
-Type annotations for
-`boto3.client("servicecatalog").describe_provisioned_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_provisioned_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product)
+```python title="Method definition"
+def describe_provisioned_product(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    Id: str = ...,
+    Name: str = ...,
+) -> DescribeProvisionedProductOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProvisionedProductInputRequestTypeDef](./type_defs.md#describeprovisionedproductinputrequesttypedef).
+1. See [:material-code-braces: DescribeProvisionedProductOutputTypeDef](./type_defs.md#describeprovisionedproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `Id`: `str`
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeProvisionedProductInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[DescribeProvisionedProductOutputTypeDef](./type_defs.md#describeprovisionedproductoutputtypedef).
+parent.describe_provisioned_product(**kwargs)
+```
 
-<a id="describe\_provisioned\_product\_plan"></a>
+1. See [:material-code-braces: DescribeProvisionedProductInputRequestTypeDef](./type_defs.md#describeprovisionedproductinputrequesttypedef) 
 
-### describe_provisioned_product_plan
+### describe\_provisioned\_product\_plan
 
 Gets information about the resource changes for the specified plan.
 
-Type annotations for
-`boto3.client("servicecatalog").describe_provisioned_product_plan` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_provisioned_product_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioned_product_plan)
+```python title="Method definition"
+def describe_provisioned_product_plan(
+    self,
+    *,
+    PlanId: str,
+    AcceptLanguage: str = ...,
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> DescribeProvisionedProductPlanOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProvisionedProductPlanInputRequestTypeDef](./type_defs.md#describeprovisionedproductplaninputrequesttypedef).
+1. See [:material-code-braces: DescribeProvisionedProductPlanOutputTypeDef](./type_defs.md#describeprovisionedproductplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PlanId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeProvisionedProductPlanInputRequestTypeDef = {  # (1)
+    "PlanId": ...,
+}
 
-Returns
-[DescribeProvisionedProductPlanOutputTypeDef](./type_defs.md#describeprovisionedproductplanoutputtypedef).
+parent.describe_provisioned_product_plan(**kwargs)
+```
 
-<a id="describe\_provisioning\_artifact"></a>
+1. See [:material-code-braces: DescribeProvisionedProductPlanInputRequestTypeDef](./type_defs.md#describeprovisionedproductplaninputrequesttypedef) 
 
-### describe_provisioning_artifact
+### describe\_provisioning\_artifact
 
 Gets information about the specified provisioning artifact (also known as a
 version) for the specified product.
 
-Type annotations for
-`boto3.client("servicecatalog").describe_provisioning_artifact` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_provisioning_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_artifact)
+```python title="Method definition"
+def describe_provisioning_artifact(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    ProvisioningArtifactId: str = ...,
+    ProductId: str = ...,
+    ProvisioningArtifactName: str = ...,
+    ProductName: str = ...,
+    Verbose: bool = ...,
+) -> DescribeProvisioningArtifactOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProvisioningArtifactInputRequestTypeDef](./type_defs.md#describeprovisioningartifactinputrequesttypedef).
+1. See [:material-code-braces: DescribeProvisioningArtifactOutputTypeDef](./type_defs.md#describeprovisioningartifactoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `ProvisioningArtifactId`: `str`
-- `ProductId`: `str`
-- `ProvisioningArtifactName`: `str`
-- `ProductName`: `str`
-- `Verbose`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeProvisioningArtifactInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[DescribeProvisioningArtifactOutputTypeDef](./type_defs.md#describeprovisioningartifactoutputtypedef).
+parent.describe_provisioning_artifact(**kwargs)
+```
 
-<a id="describe\_provisioning\_parameters"></a>
+1. See [:material-code-braces: DescribeProvisioningArtifactInputRequestTypeDef](./type_defs.md#describeprovisioningartifactinputrequesttypedef) 
 
-### describe_provisioning_parameters
+### describe\_provisioning\_parameters
 
 Gets information about the configuration required to provision the specified
 product using the specified provisioning artifact.
 
-Type annotations for
-`boto3.client("servicecatalog").describe_provisioning_parameters` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_provisioning_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_provisioning_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_provisioning_parameters)
+```python title="Method definition"
+def describe_provisioning_parameters(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    ProductId: str = ...,
+    ProductName: str = ...,
+    ProvisioningArtifactId: str = ...,
+    ProvisioningArtifactName: str = ...,
+    PathId: str = ...,
+    PathName: str = ...,
+) -> DescribeProvisioningParametersOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProvisioningParametersInputRequestTypeDef](./type_defs.md#describeprovisioningparametersinputrequesttypedef).
+1. See [:material-code-braces: DescribeProvisioningParametersOutputTypeDef](./type_defs.md#describeprovisioningparametersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `ProductId`: `str`
-- `ProductName`: `str`
-- `ProvisioningArtifactId`: `str`
-- `ProvisioningArtifactName`: `str`
-- `PathId`: `str`
-- `PathName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeProvisioningParametersInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[DescribeProvisioningParametersOutputTypeDef](./type_defs.md#describeprovisioningparametersoutputtypedef).
+parent.describe_provisioning_parameters(**kwargs)
+```
 
-<a id="describe\_record"></a>
+1. See [:material-code-braces: DescribeProvisioningParametersInputRequestTypeDef](./type_defs.md#describeprovisioningparametersinputrequesttypedef) 
 
-### describe_record
+### describe\_record
 
 Gets information about the specified request operation.
 
-Type annotations for `boto3.client("servicecatalog").describe_record` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_record` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_record)
+```python title="Method definition"
+def describe_record(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+    PageToken: str = ...,
+    PageSize: int = ...,
+) -> DescribeRecordOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRecordInputRequestTypeDef](./type_defs.md#describerecordinputrequesttypedef).
+1. See [:material-code-braces: DescribeRecordOutputTypeDef](./type_defs.md#describerecordoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `PageToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeRecordInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DescribeRecordOutputTypeDef](./type_defs.md#describerecordoutputtypedef).
+parent.describe_record(**kwargs)
+```
 
-<a id="describe\_service\_action"></a>
+1. See [:material-code-braces: DescribeRecordInputRequestTypeDef](./type_defs.md#describerecordinputrequesttypedef) 
 
-### describe_service_action
+### describe\_service\_action
 
 Describes a self-service action.
 
-Type annotations for `boto3.client("servicecatalog").describe_service_action`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_service_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action)
+```python title="Method definition"
+def describe_service_action(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+) -> DescribeServiceActionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeServiceActionInputRequestTypeDef](./type_defs.md#describeserviceactioninputrequesttypedef).
+1. See [:material-code-braces: DescribeServiceActionOutputTypeDef](./type_defs.md#describeserviceactionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeServiceActionInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DescribeServiceActionOutputTypeDef](./type_defs.md#describeserviceactionoutputtypedef).
+parent.describe_service_action(**kwargs)
+```
 
-<a id="describe\_service\_action\_execution\_parameters"></a>
+1. See [:material-code-braces: DescribeServiceActionInputRequestTypeDef](./type_defs.md#describeserviceactioninputrequesttypedef) 
 
-### describe_service_action_execution_parameters
+### describe\_service\_action\_execution\_parameters
 
 Finds the default parameters for a specific self-service action on a specific
 provisioned product and returns a map of the results to the user.
 
-Type annotations for
-`boto3.client("servicecatalog").describe_service_action_execution_parameters`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_service_action_execution_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_service_action_execution_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_service_action_execution_parameters)
+```python title="Method definition"
+def describe_service_action_execution_parameters(
+    self,
+    *,
+    ProvisionedProductId: str,
+    ServiceActionId: str,
+    AcceptLanguage: str = ...,
+) -> DescribeServiceActionExecutionParametersOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeServiceActionExecutionParametersInputRequestTypeDef](./type_defs.md#describeserviceactionexecutionparametersinputrequesttypedef).
+1. See [:material-code-braces: DescribeServiceActionExecutionParametersOutputTypeDef](./type_defs.md#describeserviceactionexecutionparametersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProvisionedProductId`: `str` *(required)*
-- `ServiceActionId`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeServiceActionExecutionParametersInputRequestTypeDef = {  # (1)
+    "ProvisionedProductId": ...,
+    "ServiceActionId": ...,
+}
 
-Returns
-[DescribeServiceActionExecutionParametersOutputTypeDef](./type_defs.md#describeserviceactionexecutionparametersoutputtypedef).
+parent.describe_service_action_execution_parameters(**kwargs)
+```
 
-<a id="describe\_tag\_option"></a>
+1. See [:material-code-braces: DescribeServiceActionExecutionParametersInputRequestTypeDef](./type_defs.md#describeserviceactionexecutionparametersinputrequesttypedef) 
 
-### describe_tag_option
+### describe\_tag\_option
 
 Gets information about the specified TagOption.
 
-Type annotations for `boto3.client("servicecatalog").describe_tag_option`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").describe_tag_option` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_tag_option)
 
-Boto3 documentation:
-[ServiceCatalog.Client.describe_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.describe_tag_option)
+```python title="Method definition"
+def describe_tag_option(
+    self,
+    *,
+    Id: str,
+) -> DescribeTagOptionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTagOptionInputRequestTypeDef](./type_defs.md#describetagoptioninputrequesttypedef).
+1. See [:material-code-braces: DescribeTagOptionOutputTypeDef](./type_defs.md#describetagoptionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTagOptionInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DescribeTagOptionOutputTypeDef](./type_defs.md#describetagoptionoutputtypedef).
+parent.describe_tag_option(**kwargs)
+```
 
-<a id="disable\_aws\_organizations\_access"></a>
+1. See [:material-code-braces: DescribeTagOptionInputRequestTypeDef](./type_defs.md#describetagoptioninputrequesttypedef) 
 
-### disable_aws_organizations_access
+### disable\_aws\_organizations\_access
 
 Disable portfolio sharing through AWS Organizations feature.
 
-Type annotations for
-`boto3.client("servicecatalog").disable_aws_organizations_access` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").disable_aws_organizations_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access)
 
-Boto3 documentation:
-[ServiceCatalog.Client.disable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access)
+```python title="Method definition"
+def disable_aws_organizations_access(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate\_budget\_from\_resource"></a>
-
-### disassociate_budget_from_resource
+### disassociate\_budget\_from\_resource
 
 Disassociates the specified budget from the specified resource.
 
-Type annotations for
-`boto3.client("servicecatalog").disassociate_budget_from_resource` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").disassociate_budget_from_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_budget_from_resource)
 
-Boto3 documentation:
-[ServiceCatalog.Client.disassociate_budget_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_budget_from_resource)
+```python title="Method definition"
+def disassociate_budget_from_resource(
+    self,
+    *,
+    BudgetName: str,
+    ResourceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateBudgetFromResourceInputRequestTypeDef](./type_defs.md#disassociatebudgetfromresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `BudgetName`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateBudgetFromResourceInputRequestTypeDef = {  # (1)
+    "BudgetName": ...,
+    "ResourceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_budget_from_resource(**kwargs)
+```
 
-<a id="disassociate\_principal\_from\_portfolio"></a>
+1. See [:material-code-braces: DisassociateBudgetFromResourceInputRequestTypeDef](./type_defs.md#disassociatebudgetfromresourceinputrequesttypedef) 
 
-### disassociate_principal_from_portfolio
+### disassociate\_principal\_from\_portfolio
 
 Disassociates a previously associated principal ARN from a specified portfolio.
 
-Type annotations for
-`boto3.client("servicecatalog").disassociate_principal_from_portfolio` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").disassociate_principal_from_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.disassociate_principal_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_principal_from_portfolio)
+```python title="Method definition"
+def disassociate_principal_from_portfolio(
+    self,
+    *,
+    PortfolioId: str,
+    PrincipalARN: str,
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociatePrincipalFromPortfolioInputRequestTypeDef](./type_defs.md#disassociateprincipalfromportfolioinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `PrincipalARN`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociatePrincipalFromPortfolioInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+    "PrincipalARN": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_principal_from_portfolio(**kwargs)
+```
 
-<a id="disassociate\_product\_from\_portfolio"></a>
+1. See [:material-code-braces: DisassociatePrincipalFromPortfolioInputRequestTypeDef](./type_defs.md#disassociateprincipalfromportfolioinputrequesttypedef) 
 
-### disassociate_product_from_portfolio
+### disassociate\_product\_from\_portfolio
 
 Disassociates the specified product from the specified portfolio.
 
-Type annotations for
-`boto3.client("servicecatalog").disassociate_product_from_portfolio` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").disassociate_product_from_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.disassociate_product_from_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_product_from_portfolio)
+```python title="Method definition"
+def disassociate_product_from_portfolio(
+    self,
+    *,
+    ProductId: str,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateProductFromPortfolioInputRequestTypeDef](./type_defs.md#disassociateproductfromportfolioinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateProductFromPortfolioInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+    "PortfolioId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_product_from_portfolio(**kwargs)
+```
 
-<a id="disassociate\_service\_action\_from\_provisioning\_artifact"></a>
+1. See [:material-code-braces: DisassociateProductFromPortfolioInputRequestTypeDef](./type_defs.md#disassociateproductfromportfolioinputrequesttypedef) 
 
-### disassociate_service_action_from_provisioning_artifact
+### disassociate\_service\_action\_from\_provisioning\_artifact
 
 Disassociates the specified self-service action association from the specified
 provisioning artifact.
 
-Type annotations for
-`boto3.client("servicecatalog").disassociate_service_action_from_provisioning_artifact`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").disassociate_service_action_from_provisioning_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact)
 
-Boto3 documentation:
-[ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_service_action_from_provisioning_artifact)
+```python title="Method definition"
+def disassociate_service_action_from_provisioning_artifact(
+    self,
+    *,
+    ProductId: str,
+    ProvisioningArtifactId: str,
+    ServiceActionId: str,
+    AcceptLanguage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef](./type_defs.md#disassociateserviceactionfromprovisioningartifactinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `ProvisioningArtifactId`: `str` *(required)*
-- `ServiceActionId`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+    "ProvisioningArtifactId": ...,
+    "ServiceActionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_service_action_from_provisioning_artifact(**kwargs)
+```
 
-<a id="disassociate\_tag\_option\_from\_resource"></a>
+1. See [:material-code-braces: DisassociateServiceActionFromProvisioningArtifactInputRequestTypeDef](./type_defs.md#disassociateserviceactionfromprovisioningartifactinputrequesttypedef) 
 
-### disassociate_tag_option_from_resource
+### disassociate\_tag\_option\_from\_resource
 
 Disassociates the specified TagOption from the specified resource.
 
-Type annotations for
-`boto3.client("servicecatalog").disassociate_tag_option_from_resource` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").disassociate_tag_option_from_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_tag_option_from_resource)
 
-Boto3 documentation:
-[ServiceCatalog.Client.disassociate_tag_option_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disassociate_tag_option_from_resource)
+```python title="Method definition"
+def disassociate_tag_option_from_resource(
+    self,
+    *,
+    ResourceId: str,
+    TagOptionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateTagOptionFromResourceInputRequestTypeDef](./type_defs.md#disassociatetagoptionfromresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `TagOptionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateTagOptionFromResourceInputRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "TagOptionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_tag_option_from_resource(**kwargs)
+```
 
-<a id="enable\_aws\_organizations\_access"></a>
+1. See [:material-code-braces: DisassociateTagOptionFromResourceInputRequestTypeDef](./type_defs.md#disassociatetagoptionfromresourceinputrequesttypedef) 
 
-### enable_aws_organizations_access
+### enable\_aws\_organizations\_access
 
 Enable portfolio sharing feature through AWS Organizations.
 
-Type annotations for
-`boto3.client("servicecatalog").enable_aws_organizations_access` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").enable_aws_organizations_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access)
 
-Boto3 documentation:
-[ServiceCatalog.Client.enable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access)
+```python title="Method definition"
+def enable_aws_organizations_access(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="execute\_provisioned\_product\_plan"></a>
+### execute\_provisioned\_product\_plan
 
-### execute_provisioned_product_plan
+Provisions or modifies a product based on the resource changes for the specified
+plan.
 
-Provisions or modifies a product based on the resource changes for the
-specified plan.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").execute_provisioned_product_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan)
 
-Type annotations for
-`boto3.client("servicecatalog").execute_provisioned_product_plan` method.
+```python title="Method definition"
+def execute_provisioned_product_plan(
+    self,
+    *,
+    PlanId: str,
+    IdempotencyToken: str,
+    AcceptLanguage: str = ...,
+) -> ExecuteProvisionedProductPlanOutputTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[ServiceCatalog.Client.execute_provisioned_product_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_plan)
+1. See [:material-code-braces: ExecuteProvisionedProductPlanOutputTypeDef](./type_defs.md#executeprovisionedproductplanoutputtypedef) 
 
-Arguments mapping described in
-[ExecuteProvisionedProductPlanInputRequestTypeDef](./type_defs.md#executeprovisionedproductplaninputrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: ExecuteProvisionedProductPlanInputRequestTypeDef = {  # (1)
+    "PlanId": ...,
+    "IdempotencyToken": ...,
+}
 
-- `PlanId`: `str` *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
+parent.execute_provisioned_product_plan(**kwargs)
+```
 
-Returns
-[ExecuteProvisionedProductPlanOutputTypeDef](./type_defs.md#executeprovisionedproductplanoutputtypedef).
+1. See [:material-code-braces: ExecuteProvisionedProductPlanInputRequestTypeDef](./type_defs.md#executeprovisionedproductplaninputrequesttypedef) 
 
-<a id="execute\_provisioned\_product\_service\_action"></a>
-
-### execute_provisioned_product_service_action
+### execute\_provisioned\_product\_service\_action
 
 Executes a self-service action against a provisioned product.
 
-Type annotations for
-`boto3.client("servicecatalog").execute_provisioned_product_service_action`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").execute_provisioned_product_service_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action)
 
-Boto3 documentation:
-[ServiceCatalog.Client.execute_provisioned_product_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.execute_provisioned_product_service_action)
+```python title="Method definition"
+def execute_provisioned_product_service_action(
+    self,
+    *,
+    ProvisionedProductId: str,
+    ServiceActionId: str,
+    ExecuteToken: str,
+    AcceptLanguage: str = ...,
+    Parameters: Mapping[str, Sequence[str]] = ...,
+) -> ExecuteProvisionedProductServiceActionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExecuteProvisionedProductServiceActionInputRequestTypeDef](./type_defs.md#executeprovisionedproductserviceactioninputrequesttypedef).
+1. See [:material-code-braces: ExecuteProvisionedProductServiceActionOutputTypeDef](./type_defs.md#executeprovisionedproductserviceactionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProvisionedProductId`: `str` *(required)*
-- `ServiceActionId`: `str` *(required)*
-- `ExecuteToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+```python title="Usage example with kwargs"
+kwargs: ExecuteProvisionedProductServiceActionInputRequestTypeDef = {  # (1)
+    "ProvisionedProductId": ...,
+    "ServiceActionId": ...,
+    "ExecuteToken": ...,
+}
 
-Returns
-[ExecuteProvisionedProductServiceActionOutputTypeDef](./type_defs.md#executeprovisionedproductserviceactionoutputtypedef).
+parent.execute_provisioned_product_service_action(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExecuteProvisionedProductServiceActionInputRequestTypeDef](./type_defs.md#executeprovisionedproductserviceactioninputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("servicecatalog").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ServiceCatalog.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_aws\_organizations\_access\_status"></a>
-
-### get_aws_organizations_access_status
+### get\_aws\_organizations\_access\_status
 
 Get the Access Status for AWS Organization portfolio share feature.
 
-Type annotations for
-`boto3.client("servicecatalog").get_aws_organizations_access_status` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").get_aws_organizations_access_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status)
 
-Boto3 documentation:
-[ServiceCatalog.Client.get_aws_organizations_access_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_aws_organizations_access_status)
+```python title="Method definition"
+def get_aws_organizations_access_status(
+    self,
+) -> GetAWSOrganizationsAccessStatusOutputTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAWSOrganizationsAccessStatusOutputTypeDef](./type_defs.md#getawsorganizationsaccessstatusoutputtypedef).
+1. See [:material-code-braces: GetAWSOrganizationsAccessStatusOutputTypeDef](./type_defs.md#getawsorganizationsaccessstatusoutputtypedef) 
 
-<a id="get\_provisioned\_product\_outputs"></a>
-
-### get_provisioned_product_outputs
+### get\_provisioned\_product\_outputs
 
 This API takes either a `ProvisonedProductId` or a `ProvisionedProductName` ,
 along with a list of one or more output keys, and responds with the key/value
 pairs of those outputs.
 
-Type annotations for
-`boto3.client("servicecatalog").get_provisioned_product_outputs` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").get_provisioned_product_outputs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs)
 
-Boto3 documentation:
-[ServiceCatalog.Client.get_provisioned_product_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.get_provisioned_product_outputs)
+```python title="Method definition"
+def get_provisioned_product_outputs(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    ProvisionedProductId: str = ...,
+    ProvisionedProductName: str = ...,
+    OutputKeys: Sequence[str] = ...,
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> GetProvisionedProductOutputsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProvisionedProductOutputsInputRequestTypeDef](./type_defs.md#getprovisionedproductoutputsinputrequesttypedef).
+1. See [:material-code-braces: GetProvisionedProductOutputsOutputTypeDef](./type_defs.md#getprovisionedproductoutputsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `ProvisionedProductId`: `str`
-- `ProvisionedProductName`: `str`
-- `OutputKeys`: `Sequence`\[`str`\]
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetProvisionedProductOutputsInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[GetProvisionedProductOutputsOutputTypeDef](./type_defs.md#getprovisionedproductoutputsoutputtypedef).
+parent.get_provisioned_product_outputs(**kwargs)
+```
 
-<a id="import\_as\_provisioned\_product"></a>
+1. See [:material-code-braces: GetProvisionedProductOutputsInputRequestTypeDef](./type_defs.md#getprovisionedproductoutputsinputrequesttypedef) 
 
-### import_as_provisioned_product
+### import\_as\_provisioned\_product
 
 Requests the import of a resource as a Service Catalog provisioned product that
 is associated to a Service Catalog product and provisioning artifact.
 
-Type annotations for
-`boto3.client("servicecatalog").import_as_provisioned_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").import_as_provisioned_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.import_as_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.import_as_provisioned_product)
+```python title="Method definition"
+def import_as_provisioned_product(
+    self,
+    *,
+    ProductId: str,
+    ProvisioningArtifactId: str,
+    ProvisionedProductName: str,
+    PhysicalId: str,
+    IdempotencyToken: str,
+    AcceptLanguage: str = ...,
+) -> ImportAsProvisionedProductOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ImportAsProvisionedProductInputRequestTypeDef](./type_defs.md#importasprovisionedproductinputrequesttypedef).
+1. See [:material-code-braces: ImportAsProvisionedProductOutputTypeDef](./type_defs.md#importasprovisionedproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `ProvisioningArtifactId`: `str` *(required)*
-- `ProvisionedProductName`: `str` *(required)*
-- `PhysicalId`: `str` *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: ImportAsProvisionedProductInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+    "ProvisioningArtifactId": ...,
+    "ProvisionedProductName": ...,
+    "PhysicalId": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[ImportAsProvisionedProductOutputTypeDef](./type_defs.md#importasprovisionedproductoutputtypedef).
+parent.import_as_provisioned_product(**kwargs)
+```
 
-<a id="list\_accepted\_portfolio\_shares"></a>
+1. See [:material-code-braces: ImportAsProvisionedProductInputRequestTypeDef](./type_defs.md#importasprovisionedproductinputrequesttypedef) 
 
-### list_accepted_portfolio_shares
+### list\_accepted\_portfolio\_shares
 
 Lists all portfolios for which sharing was accepted by this account.
 
-Type annotations for
-`boto3.client("servicecatalog").list_accepted_portfolio_shares` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_accepted_portfolio_shares` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_accepted_portfolio_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_accepted_portfolio_shares)
+```python title="Method definition"
+def list_accepted_portfolio_shares(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    PageToken: str = ...,
+    PageSize: int = ...,
+    PortfolioShareType: PortfolioShareTypeType = ...,  # (1)
+) -> ListAcceptedPortfolioSharesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAcceptedPortfolioSharesInputRequestTypeDef](./type_defs.md#listacceptedportfoliosharesinputrequesttypedef).
+1. See [:material-code-brackets: PortfolioShareTypeType](./literals.md#portfoliosharetypetype) 
+2. See [:material-code-braces: ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `PageToken`: `str`
-- `PageSize`: `int`
-- `PortfolioShareType`:
-  [PortfolioShareTypeType](./literals.md#portfoliosharetypetype)
+```python title="Usage example with kwargs"
+kwargs: ListAcceptedPortfolioSharesInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef).
+parent.list_accepted_portfolio_shares(**kwargs)
+```
 
-<a id="list\_budgets\_for\_resource"></a>
+1. See [:material-code-braces: ListAcceptedPortfolioSharesInputRequestTypeDef](./type_defs.md#listacceptedportfoliosharesinputrequesttypedef) 
 
-### list_budgets_for_resource
+### list\_budgets\_for\_resource
 
 Lists all the budgets associated to the specified resource.
 
-Type annotations for `boto3.client("servicecatalog").list_budgets_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_budgets_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_budgets_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_budgets_for_resource)
+```python title="Method definition"
+def list_budgets_for_resource(
+    self,
+    *,
+    ResourceId: str,
+    AcceptLanguage: str = ...,
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> ListBudgetsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBudgetsForResourceInputRequestTypeDef](./type_defs.md#listbudgetsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListBudgetsForResourceOutputTypeDef](./type_defs.md#listbudgetsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBudgetsForResourceInputRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns
-[ListBudgetsForResourceOutputTypeDef](./type_defs.md#listbudgetsforresourceoutputtypedef).
+parent.list_budgets_for_resource(**kwargs)
+```
 
-<a id="list\_constraints\_for\_portfolio"></a>
+1. See [:material-code-braces: ListBudgetsForResourceInputRequestTypeDef](./type_defs.md#listbudgetsforresourceinputrequesttypedef) 
 
-### list_constraints_for_portfolio
+### list\_constraints\_for\_portfolio
 
 Lists the constraints for the specified portfolio and product.
 
-Type annotations for
-`boto3.client("servicecatalog").list_constraints_for_portfolio` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_constraints_for_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_constraints_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_constraints_for_portfolio)
+```python title="Method definition"
+def list_constraints_for_portfolio(
+    self,
+    *,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+    ProductId: str = ...,
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> ListConstraintsForPortfolioOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConstraintsForPortfolioInputRequestTypeDef](./type_defs.md#listconstraintsforportfolioinputrequesttypedef).
+1. See [:material-code-braces: ListConstraintsForPortfolioOutputTypeDef](./type_defs.md#listconstraintsforportfoliooutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `ProductId`: `str`
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConstraintsForPortfolioInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+}
 
-Returns
-[ListConstraintsForPortfolioOutputTypeDef](./type_defs.md#listconstraintsforportfoliooutputtypedef).
+parent.list_constraints_for_portfolio(**kwargs)
+```
 
-<a id="list\_launch\_paths"></a>
+1. See [:material-code-braces: ListConstraintsForPortfolioInputRequestTypeDef](./type_defs.md#listconstraintsforportfolioinputrequesttypedef) 
 
-### list_launch_paths
+### list\_launch\_paths
 
 Lists the paths to the specified product.
 
-Type annotations for `boto3.client("servicecatalog").list_launch_paths` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_launch_paths` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_launch_paths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_launch_paths)
+```python title="Method definition"
+def list_launch_paths(
+    self,
+    *,
+    ProductId: str,
+    AcceptLanguage: str = ...,
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> ListLaunchPathsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLaunchPathsInputRequestTypeDef](./type_defs.md#listlaunchpathsinputrequesttypedef).
+1. See [:material-code-braces: ListLaunchPathsOutputTypeDef](./type_defs.md#listlaunchpathsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLaunchPathsInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+}
 
-Returns
-[ListLaunchPathsOutputTypeDef](./type_defs.md#listlaunchpathsoutputtypedef).
+parent.list_launch_paths(**kwargs)
+```
 
-<a id="list\_organization\_portfolio\_access"></a>
+1. See [:material-code-braces: ListLaunchPathsInputRequestTypeDef](./type_defs.md#listlaunchpathsinputrequesttypedef) 
 
-### list_organization_portfolio_access
+### list\_organization\_portfolio\_access
 
 Lists the organization nodes that have access to the specified portfolio.
 
-Type annotations for
-`boto3.client("servicecatalog").list_organization_portfolio_access` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_organization_portfolio_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_organization_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_organization_portfolio_access)
+```python title="Method definition"
+def list_organization_portfolio_access(
+    self,
+    *,
+    PortfolioId: str,
+    OrganizationNodeType: OrganizationNodeTypeType,  # (1)
+    AcceptLanguage: str = ...,
+    PageToken: str = ...,
+    PageSize: int = ...,
+) -> ListOrganizationPortfolioAccessOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListOrganizationPortfolioAccessInputRequestTypeDef](./type_defs.md#listorganizationportfolioaccessinputrequesttypedef).
+1. See [:material-code-brackets: OrganizationNodeTypeType](./literals.md#organizationnodetypetype) 
+2. See [:material-code-braces: ListOrganizationPortfolioAccessOutputTypeDef](./type_defs.md#listorganizationportfolioaccessoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `OrganizationNodeType`:
-  [OrganizationNodeTypeType](./literals.md#organizationnodetypetype)
-  *(required)*
-- `AcceptLanguage`: `str`
-- `PageToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationPortfolioAccessInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+    "OrganizationNodeType": ...,
+}
 
-Returns
-[ListOrganizationPortfolioAccessOutputTypeDef](./type_defs.md#listorganizationportfolioaccessoutputtypedef).
+parent.list_organization_portfolio_access(**kwargs)
+```
 
-<a id="list\_portfolio\_access"></a>
+1. See [:material-code-braces: ListOrganizationPortfolioAccessInputRequestTypeDef](./type_defs.md#listorganizationportfolioaccessinputrequesttypedef) 
 
-### list_portfolio_access
+### list\_portfolio\_access
 
 Lists the account IDs that have access to the specified portfolio.
 
-Type annotations for `boto3.client("servicecatalog").list_portfolio_access`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_portfolio_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_portfolio_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolio_access)
+```python title="Method definition"
+def list_portfolio_access(
+    self,
+    *,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+    OrganizationParentId: str = ...,
+    PageToken: str = ...,
+    PageSize: int = ...,
+) -> ListPortfolioAccessOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPortfolioAccessInputRequestTypeDef](./type_defs.md#listportfolioaccessinputrequesttypedef).
+1. See [:material-code-braces: ListPortfolioAccessOutputTypeDef](./type_defs.md#listportfolioaccessoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `OrganizationParentId`: `str`
-- `PageToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPortfolioAccessInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+}
 
-Returns
-[ListPortfolioAccessOutputTypeDef](./type_defs.md#listportfolioaccessoutputtypedef).
+parent.list_portfolio_access(**kwargs)
+```
 
-<a id="list\_portfolios"></a>
+1. See [:material-code-braces: ListPortfolioAccessInputRequestTypeDef](./type_defs.md#listportfolioaccessinputrequesttypedef) 
 
-### list_portfolios
+### list\_portfolios
 
 Lists all portfolios in the catalog.
 
-Type annotations for `boto3.client("servicecatalog").list_portfolios` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_portfolios` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_portfolios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios)
+```python title="Method definition"
+def list_portfolios(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    PageToken: str = ...,
+    PageSize: int = ...,
+) -> ListPortfoliosOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPortfoliosInputRequestTypeDef](./type_defs.md#listportfoliosinputrequesttypedef).
+1. See [:material-code-braces: ListPortfoliosOutputTypeDef](./type_defs.md#listportfoliosoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `PageToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPortfoliosInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[ListPortfoliosOutputTypeDef](./type_defs.md#listportfoliosoutputtypedef).
+parent.list_portfolios(**kwargs)
+```
 
-<a id="list\_portfolios\_for\_product"></a>
+1. See [:material-code-braces: ListPortfoliosInputRequestTypeDef](./type_defs.md#listportfoliosinputrequesttypedef) 
 
-### list_portfolios_for_product
+### list\_portfolios\_for\_product
 
 Lists all portfolios that the specified product is associated with.
 
-Type annotations for
-`boto3.client("servicecatalog").list_portfolios_for_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_portfolios_for_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_portfolios_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_portfolios_for_product)
+```python title="Method definition"
+def list_portfolios_for_product(
+    self,
+    *,
+    ProductId: str,
+    AcceptLanguage: str = ...,
+    PageToken: str = ...,
+    PageSize: int = ...,
+) -> ListPortfoliosForProductOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPortfoliosForProductInputRequestTypeDef](./type_defs.md#listportfoliosforproductinputrequesttypedef).
+1. See [:material-code-braces: ListPortfoliosForProductOutputTypeDef](./type_defs.md#listportfoliosforproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `PageToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPortfoliosForProductInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+}
 
-Returns
-[ListPortfoliosForProductOutputTypeDef](./type_defs.md#listportfoliosforproductoutputtypedef).
+parent.list_portfolios_for_product(**kwargs)
+```
 
-<a id="list\_principals\_for\_portfolio"></a>
+1. See [:material-code-braces: ListPortfoliosForProductInputRequestTypeDef](./type_defs.md#listportfoliosforproductinputrequesttypedef) 
 
-### list_principals_for_portfolio
+### list\_principals\_for\_portfolio
 
 Lists all principal ARNs associated with the specified portfolio.
 
-Type annotations for
-`boto3.client("servicecatalog").list_principals_for_portfolio` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_principals_for_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_principals_for_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_principals_for_portfolio)
+```python title="Method definition"
+def list_principals_for_portfolio(
+    self,
+    *,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> ListPrincipalsForPortfolioOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPrincipalsForPortfolioInputRequestTypeDef](./type_defs.md#listprincipalsforportfolioinputrequesttypedef).
+1. See [:material-code-braces: ListPrincipalsForPortfolioOutputTypeDef](./type_defs.md#listprincipalsforportfoliooutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPrincipalsForPortfolioInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+}
 
-Returns
-[ListPrincipalsForPortfolioOutputTypeDef](./type_defs.md#listprincipalsforportfoliooutputtypedef).
+parent.list_principals_for_portfolio(**kwargs)
+```
 
-<a id="list\_provisioned\_product\_plans"></a>
+1. See [:material-code-braces: ListPrincipalsForPortfolioInputRequestTypeDef](./type_defs.md#listprincipalsforportfolioinputrequesttypedef) 
 
-### list_provisioned_product_plans
+### list\_provisioned\_product\_plans
 
 Lists the plans for the specified provisioned product or all plans to which the
 user has access.
 
-Type annotations for
-`boto3.client("servicecatalog").list_provisioned_product_plans` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_provisioned_product_plans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_provisioned_product_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioned_product_plans)
+```python title="Method definition"
+def list_provisioned_product_plans(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    ProvisionProductId: str = ...,
+    PageSize: int = ...,
+    PageToken: str = ...,
+    AccessLevelFilter: AccessLevelFilterTypeDef = ...,  # (1)
+) -> ListProvisionedProductPlansOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListProvisionedProductPlansInputRequestTypeDef](./type_defs.md#listprovisionedproductplansinputrequesttypedef).
+1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
+2. See [:material-code-braces: ListProvisionedProductPlansOutputTypeDef](./type_defs.md#listprovisionedproductplansoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `ProvisionProductId`: `str`
-- `PageSize`: `int`
-- `PageToken`: `str`
-- `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListProvisionedProductPlansInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[ListProvisionedProductPlansOutputTypeDef](./type_defs.md#listprovisionedproductplansoutputtypedef).
+parent.list_provisioned_product_plans(**kwargs)
+```
 
-<a id="list\_provisioning\_artifacts"></a>
+1. See [:material-code-braces: ListProvisionedProductPlansInputRequestTypeDef](./type_defs.md#listprovisionedproductplansinputrequesttypedef) 
 
-### list_provisioning_artifacts
+### list\_provisioning\_artifacts
 
 Lists all provisioning artifacts (also known as versions) for the specified
 product.
 
-Type annotations for
-`boto3.client("servicecatalog").list_provisioning_artifacts` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_provisioning_artifacts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_provisioning_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts)
+```python title="Method definition"
+def list_provisioning_artifacts(
+    self,
+    *,
+    ProductId: str,
+    AcceptLanguage: str = ...,
+) -> ListProvisioningArtifactsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProvisioningArtifactsInputRequestTypeDef](./type_defs.md#listprovisioningartifactsinputrequesttypedef).
+1. See [:material-code-braces: ListProvisioningArtifactsOutputTypeDef](./type_defs.md#listprovisioningartifactsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProvisioningArtifactsInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+}
 
-Returns
-[ListProvisioningArtifactsOutputTypeDef](./type_defs.md#listprovisioningartifactsoutputtypedef).
+parent.list_provisioning_artifacts(**kwargs)
+```
 
-<a id="list\_provisioning\_artifacts\_for\_service\_action"></a>
+1. See [:material-code-braces: ListProvisioningArtifactsInputRequestTypeDef](./type_defs.md#listprovisioningartifactsinputrequesttypedef) 
 
-### list_provisioning_artifacts_for_service_action
+### list\_provisioning\_artifacts\_for\_service\_action
 
 Lists all provisioning artifacts (also known as versions) for the specified
 self-service action.
 
-Type annotations for
-`boto3.client("servicecatalog").list_provisioning_artifacts_for_service_action`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_provisioning_artifacts_for_service_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_provisioning_artifacts_for_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_provisioning_artifacts_for_service_action)
+```python title="Method definition"
+def list_provisioning_artifacts_for_service_action(
+    self,
+    *,
+    ServiceActionId: str,
+    PageSize: int = ...,
+    PageToken: str = ...,
+    AcceptLanguage: str = ...,
+) -> ListProvisioningArtifactsForServiceActionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProvisioningArtifactsForServiceActionInputRequestTypeDef](./type_defs.md#listprovisioningartifactsforserviceactioninputrequesttypedef).
+1. See [:material-code-braces: ListProvisioningArtifactsForServiceActionOutputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ServiceActionId`: `str` *(required)*
-- `PageSize`: `int`
-- `PageToken`: `str`
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProvisioningArtifactsForServiceActionInputRequestTypeDef = {  # (1)
+    "ServiceActionId": ...,
+}
 
-Returns
-[ListProvisioningArtifactsForServiceActionOutputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputtypedef).
+parent.list_provisioning_artifacts_for_service_action(**kwargs)
+```
 
-<a id="list\_record\_history"></a>
+1. See [:material-code-braces: ListProvisioningArtifactsForServiceActionInputRequestTypeDef](./type_defs.md#listprovisioningartifactsforserviceactioninputrequesttypedef) 
 
-### list_record_history
+### list\_record\_history
 
 Lists the specified requests or all performed requests.
 
-Type annotations for `boto3.client("servicecatalog").list_record_history`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_record_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_record_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_record_history)
+```python title="Method definition"
+def list_record_history(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    AccessLevelFilter: AccessLevelFilterTypeDef = ...,  # (1)
+    SearchFilter: ListRecordHistorySearchFilterTypeDef = ...,  # (2)
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> ListRecordHistoryOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListRecordHistoryInputRequestTypeDef](./type_defs.md#listrecordhistoryinputrequesttypedef).
+1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
+2. See [:material-code-braces: ListRecordHistorySearchFilterTypeDef](./type_defs.md#listrecordhistorysearchfiltertypedef) 
+3. See [:material-code-braces: ListRecordHistoryOutputTypeDef](./type_defs.md#listrecordhistoryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
-- `SearchFilter`:
-  [ListRecordHistorySearchFilterTypeDef](./type_defs.md#listrecordhistorysearchfiltertypedef)
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRecordHistoryInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[ListRecordHistoryOutputTypeDef](./type_defs.md#listrecordhistoryoutputtypedef).
+parent.list_record_history(**kwargs)
+```
 
-<a id="list\_resources\_for\_tag\_option"></a>
+1. See [:material-code-braces: ListRecordHistoryInputRequestTypeDef](./type_defs.md#listrecordhistoryinputrequesttypedef) 
 
-### list_resources_for_tag_option
+### list\_resources\_for\_tag\_option
 
 Lists the resources associated with the specified TagOption.
 
-Type annotations for
-`boto3.client("servicecatalog").list_resources_for_tag_option` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_resources_for_tag_option` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_resources_for_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_resources_for_tag_option)
+```python title="Method definition"
+def list_resources_for_tag_option(
+    self,
+    *,
+    TagOptionId: str,
+    ResourceType: str = ...,
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> ListResourcesForTagOptionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourcesForTagOptionInputRequestTypeDef](./type_defs.md#listresourcesfortagoptioninputrequesttypedef).
+1. See [:material-code-braces: ListResourcesForTagOptionOutputTypeDef](./type_defs.md#listresourcesfortagoptionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TagOptionId`: `str` *(required)*
-- `ResourceType`: `str`
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResourcesForTagOptionInputRequestTypeDef = {  # (1)
+    "TagOptionId": ...,
+}
 
-Returns
-[ListResourcesForTagOptionOutputTypeDef](./type_defs.md#listresourcesfortagoptionoutputtypedef).
+parent.list_resources_for_tag_option(**kwargs)
+```
 
-<a id="list\_service\_actions"></a>
+1. See [:material-code-braces: ListResourcesForTagOptionInputRequestTypeDef](./type_defs.md#listresourcesfortagoptioninputrequesttypedef) 
 
-### list_service_actions
+### list\_service\_actions
 
 Lists all self-service actions.
 
-Type annotations for `boto3.client("servicecatalog").list_service_actions`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_service_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_service_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions)
+```python title="Method definition"
+def list_service_actions(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> ListServiceActionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceActionsInputRequestTypeDef](./type_defs.md#listserviceactionsinputrequesttypedef).
+1. See [:material-code-braces: ListServiceActionsOutputTypeDef](./type_defs.md#listserviceactionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServiceActionsInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[ListServiceActionsOutputTypeDef](./type_defs.md#listserviceactionsoutputtypedef).
+parent.list_service_actions(**kwargs)
+```
 
-<a id="list\_service\_actions\_for\_provisioning\_artifact"></a>
+1. See [:material-code-braces: ListServiceActionsInputRequestTypeDef](./type_defs.md#listserviceactionsinputrequesttypedef) 
 
-### list_service_actions_for_provisioning_artifact
+### list\_service\_actions\_for\_provisioning\_artifact
 
 Returns a paginated list of self-service actions associated with the specified
 Product ID and Provisioning Artifact ID.
 
-Type annotations for
-`boto3.client("servicecatalog").list_service_actions_for_provisioning_artifact`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_service_actions_for_provisioning_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_service_actions_for_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_service_actions_for_provisioning_artifact)
+```python title="Method definition"
+def list_service_actions_for_provisioning_artifact(
+    self,
+    *,
+    ProductId: str,
+    ProvisioningArtifactId: str,
+    PageSize: int = ...,
+    PageToken: str = ...,
+    AcceptLanguage: str = ...,
+) -> ListServiceActionsForProvisioningArtifactOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceActionsForProvisioningArtifactInputRequestTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactinputrequesttypedef).
+1. See [:material-code-braces: ListServiceActionsForProvisioningArtifactOutputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `ProvisioningArtifactId`: `str` *(required)*
-- `PageSize`: `int`
-- `PageToken`: `str`
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServiceActionsForProvisioningArtifactInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+    "ProvisioningArtifactId": ...,
+}
 
-Returns
-[ListServiceActionsForProvisioningArtifactOutputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputtypedef).
+parent.list_service_actions_for_provisioning_artifact(**kwargs)
+```
 
-<a id="list\_stack\_instances\_for\_provisioned\_product"></a>
+1. See [:material-code-braces: ListServiceActionsForProvisioningArtifactInputRequestTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactinputrequesttypedef) 
 
-### list_stack_instances_for_provisioned_product
+### list\_stack\_instances\_for\_provisioned\_product
 
 Returns summary information about stack instances that are associated with the
 specified `CFN_STACKSET` type provisioned product.
 
-Type annotations for
-`boto3.client("servicecatalog").list_stack_instances_for_provisioned_product`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_stack_instances_for_provisioned_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_stack_instances_for_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_stack_instances_for_provisioned_product)
+```python title="Method definition"
+def list_stack_instances_for_provisioned_product(
+    self,
+    *,
+    ProvisionedProductId: str,
+    AcceptLanguage: str = ...,
+    PageToken: str = ...,
+    PageSize: int = ...,
+) -> ListStackInstancesForProvisionedProductOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStackInstancesForProvisionedProductInputRequestTypeDef](./type_defs.md#liststackinstancesforprovisionedproductinputrequesttypedef).
+1. See [:material-code-braces: ListStackInstancesForProvisionedProductOutputTypeDef](./type_defs.md#liststackinstancesforprovisionedproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProvisionedProductId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `PageToken`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListStackInstancesForProvisionedProductInputRequestTypeDef = {  # (1)
+    "ProvisionedProductId": ...,
+}
 
-Returns
-[ListStackInstancesForProvisionedProductOutputTypeDef](./type_defs.md#liststackinstancesforprovisionedproductoutputtypedef).
+parent.list_stack_instances_for_provisioned_product(**kwargs)
+```
 
-<a id="list\_tag\_options"></a>
+1. See [:material-code-braces: ListStackInstancesForProvisionedProductInputRequestTypeDef](./type_defs.md#liststackinstancesforprovisionedproductinputrequesttypedef) 
 
-### list_tag_options
+### list\_tag\_options
 
 Lists the specified TagOptions or all TagOptions.
 
-Type annotations for `boto3.client("servicecatalog").list_tag_options` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").list_tag_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options)
 
-Boto3 documentation:
-[ServiceCatalog.Client.list_tag_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.list_tag_options)
+```python title="Method definition"
+def list_tag_options(
+    self,
+    *,
+    Filters: ListTagOptionsFiltersTypeDef = ...,  # (1)
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> ListTagOptionsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTagOptionsInputRequestTypeDef](./type_defs.md#listtagoptionsinputrequesttypedef).
+1. See [:material-code-braces: ListTagOptionsFiltersTypeDef](./type_defs.md#listtagoptionsfilterstypedef) 
+2. See [:material-code-braces: ListTagOptionsOutputTypeDef](./type_defs.md#listtagoptionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  [ListTagOptionsFiltersTypeDef](./type_defs.md#listtagoptionsfilterstypedef)
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagOptionsInputRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[ListTagOptionsOutputTypeDef](./type_defs.md#listtagoptionsoutputtypedef).
+parent.list_tag_options(**kwargs)
+```
 
-<a id="provision\_product"></a>
+1. See [:material-code-braces: ListTagOptionsInputRequestTypeDef](./type_defs.md#listtagoptionsinputrequesttypedef) 
 
-### provision_product
+### provision\_product
 
 Provisions the specified product.
 
-Type annotations for `boto3.client("servicecatalog").provision_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").provision_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.provision_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.provision_product)
+```python title="Method definition"
+def provision_product(
+    self,
+    *,
+    ProvisionedProductName: str,
+    ProvisionToken: str,
+    AcceptLanguage: str = ...,
+    ProductId: str = ...,
+    ProductName: str = ...,
+    ProvisioningArtifactId: str = ...,
+    ProvisioningArtifactName: str = ...,
+    PathId: str = ...,
+    PathName: str = ...,
+    ProvisioningParameters: Sequence[ProvisioningParameterTypeDef] = ...,  # (1)
+    ProvisioningPreferences: ProvisioningPreferencesTypeDef = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    NotificationArns: Sequence[str] = ...,
+) -> ProvisionProductOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ProvisionProductInputRequestTypeDef](./type_defs.md#provisionproductinputrequesttypedef).
+1. See [:material-code-braces: ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef) 
+2. See [:material-code-braces: ProvisioningPreferencesTypeDef](./type_defs.md#provisioningpreferencestypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ProvisionProductOutputTypeDef](./type_defs.md#provisionproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProvisionedProductName`: `str` *(required)*
-- `ProvisionToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `ProductId`: `str`
-- `ProductName`: `str`
-- `ProvisioningArtifactId`: `str`
-- `ProvisioningArtifactName`: `str`
-- `PathId`: `str`
-- `PathName`: `str`
-- `ProvisioningParameters`:
-  `Sequence`\[[ProvisioningParameterTypeDef](./type_defs.md#provisioningparametertypedef)\]
-- `ProvisioningPreferences`:
-  [ProvisioningPreferencesTypeDef](./type_defs.md#provisioningpreferencestypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NotificationArns`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ProvisionProductInputRequestTypeDef = {  # (1)
+    "ProvisionedProductName": ...,
+    "ProvisionToken": ...,
+}
 
-Returns
-[ProvisionProductOutputTypeDef](./type_defs.md#provisionproductoutputtypedef).
+parent.provision_product(**kwargs)
+```
 
-<a id="reject\_portfolio\_share"></a>
+1. See [:material-code-braces: ProvisionProductInputRequestTypeDef](./type_defs.md#provisionproductinputrequesttypedef) 
 
-### reject_portfolio_share
+### reject\_portfolio\_share
 
 Rejects an offer to share the specified portfolio.
 
-Type annotations for `boto3.client("servicecatalog").reject_portfolio_share`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").reject_portfolio_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share)
 
-Boto3 documentation:
-[ServiceCatalog.Client.reject_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.reject_portfolio_share)
+```python title="Method definition"
+def reject_portfolio_share(
+    self,
+    *,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+    PortfolioShareType: PortfolioShareTypeType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RejectPortfolioShareInputRequestTypeDef](./type_defs.md#rejectportfolioshareinputrequesttypedef).
+1. See [:material-code-brackets: PortfolioShareTypeType](./literals.md#portfoliosharetypetype) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `PortfolioShareType`:
-  [PortfolioShareTypeType](./literals.md#portfoliosharetypetype)
+```python title="Usage example with kwargs"
+kwargs: RejectPortfolioShareInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.reject_portfolio_share(**kwargs)
+```
 
-<a id="scan\_provisioned\_products"></a>
+1. See [:material-code-braces: RejectPortfolioShareInputRequestTypeDef](./type_defs.md#rejectportfolioshareinputrequesttypedef) 
 
-### scan_provisioned_products
+### scan\_provisioned\_products
 
 Lists the provisioned products that are available (not terminated).
 
-Type annotations for `boto3.client("servicecatalog").scan_provisioned_products`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").scan_provisioned_products` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products)
 
-Boto3 documentation:
-[ServiceCatalog.Client.scan_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.scan_provisioned_products)
+```python title="Method definition"
+def scan_provisioned_products(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    AccessLevelFilter: AccessLevelFilterTypeDef = ...,  # (1)
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> ScanProvisionedProductsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ScanProvisionedProductsInputRequestTypeDef](./type_defs.md#scanprovisionedproductsinputrequesttypedef).
+1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
+2. See [:material-code-braces: ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ScanProvisionedProductsInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef).
+parent.scan_provisioned_products(**kwargs)
+```
 
-<a id="search\_products"></a>
+1. See [:material-code-braces: ScanProvisionedProductsInputRequestTypeDef](./type_defs.md#scanprovisionedproductsinputrequesttypedef) 
 
-### search_products
+### search\_products
 
 Gets information about the products to which the caller has access.
 
-Type annotations for `boto3.client("servicecatalog").search_products` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").search_products` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products)
 
-Boto3 documentation:
-[ServiceCatalog.Client.search_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products)
+```python title="Method definition"
+def search_products(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    Filters: Mapping[ProductViewFilterByType, Sequence[str]] = ...,  # (1)
+    PageSize: int = ...,
+    SortBy: ProductViewSortByType = ...,  # (2)
+    SortOrder: SortOrderType = ...,  # (3)
+    PageToken: str = ...,
+) -> SearchProductsOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[SearchProductsInputRequestTypeDef](./type_defs.md#searchproductsinputrequesttypedef).
+1. See [:material-code-brackets: ProductViewFilterByType](./literals.md#productviewfilterbytype) 
+2. See [:material-code-brackets: ProductViewSortByType](./literals.md#productviewsortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: SearchProductsOutputTypeDef](./type_defs.md#searchproductsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `Filters`:
-  `Mapping`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
-  `Sequence`\[`str`\]\]
-- `PageSize`: `int`
-- `SortBy`: [ProductViewSortByType](./literals.md#productviewsortbytype)
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchProductsInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[SearchProductsOutputTypeDef](./type_defs.md#searchproductsoutputtypedef).
+parent.search_products(**kwargs)
+```
 
-<a id="search\_products\_as\_admin"></a>
+1. See [:material-code-braces: SearchProductsInputRequestTypeDef](./type_defs.md#searchproductsinputrequesttypedef) 
 
-### search_products_as_admin
+### search\_products\_as\_admin
 
-Gets information about the products for the specified portfolio or all
-products.
+Gets information about the products for the specified portfolio or all products.
 
-Type annotations for `boto3.client("servicecatalog").search_products_as_admin`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").search_products_as_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin)
 
-Boto3 documentation:
-[ServiceCatalog.Client.search_products_as_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_products_as_admin)
+```python title="Method definition"
+def search_products_as_admin(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    PortfolioId: str = ...,
+    Filters: Mapping[ProductViewFilterByType, Sequence[str]] = ...,  # (1)
+    SortBy: ProductViewSortByType = ...,  # (2)
+    SortOrder: SortOrderType = ...,  # (3)
+    PageToken: str = ...,
+    PageSize: int = ...,
+    ProductSource: ProductSourceType = ...,  # (4)
+) -> SearchProductsAsAdminOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[SearchProductsAsAdminInputRequestTypeDef](./type_defs.md#searchproductsasadmininputrequesttypedef).
+1. See [:material-code-brackets: ProductViewFilterByType](./literals.md#productviewfilterbytype) 
+2. See [:material-code-brackets: ProductViewSortByType](./literals.md#productviewsortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-brackets: ProductSourceType](./literals.md#productsourcetype) 
+5. See [:material-code-braces: SearchProductsAsAdminOutputTypeDef](./type_defs.md#searchproductsasadminoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `PortfolioId`: `str`
-- `Filters`:
-  `Mapping`\[[ProductViewFilterByType](./literals.md#productviewfilterbytype),
-  `Sequence`\[`str`\]\]
-- `SortBy`: [ProductViewSortByType](./literals.md#productviewsortbytype)
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PageToken`: `str`
-- `PageSize`: `int`
-- `ProductSource`: `Literal['ACCOUNT']` (see
-  [ProductSourceType](./literals.md#productsourcetype))
+```python title="Usage example with kwargs"
+kwargs: SearchProductsAsAdminInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[SearchProductsAsAdminOutputTypeDef](./type_defs.md#searchproductsasadminoutputtypedef).
+parent.search_products_as_admin(**kwargs)
+```
 
-<a id="search\_provisioned\_products"></a>
+1. See [:material-code-braces: SearchProductsAsAdminInputRequestTypeDef](./type_defs.md#searchproductsasadmininputrequesttypedef) 
 
-### search_provisioned_products
+### search\_provisioned\_products
 
 Gets information about the provisioned products that meet the specified
 criteria.
 
-Type annotations for
-`boto3.client("servicecatalog").search_provisioned_products` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").search_provisioned_products` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products)
 
-Boto3 documentation:
-[ServiceCatalog.Client.search_provisioned_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.search_provisioned_products)
+```python title="Method definition"
+def search_provisioned_products(
+    self,
+    *,
+    AcceptLanguage: str = ...,
+    AccessLevelFilter: AccessLevelFilterTypeDef = ...,  # (1)
+    Filters: Mapping[ProvisionedProductViewFilterByType, Sequence[str]] = ...,  # (2)
+    SortBy: str = ...,
+    SortOrder: SortOrderType = ...,  # (3)
+    PageSize: int = ...,
+    PageToken: str = ...,
+) -> SearchProvisionedProductsOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[SearchProvisionedProductsInputRequestTypeDef](./type_defs.md#searchprovisionedproductsinputrequesttypedef).
+1. See [:material-code-braces: AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef) 
+2. See [:material-code-brackets: ProvisionedProductViewFilterByType](./literals.md#provisionedproductviewfilterbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: SearchProvisionedProductsOutputTypeDef](./type_defs.md#searchprovisionedproductsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptLanguage`: `str`
-- `AccessLevelFilter`:
-  [AccessLevelFilterTypeDef](./type_defs.md#accesslevelfiltertypedef)
-- `Filters`: `Mapping`\[`Literal['SearchQuery']` (see
-  [ProvisionedProductViewFilterByType](./literals.md#provisionedproductviewfilterbytype)),
-  `Sequence`\[`str`\]\]
-- `SortBy`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PageSize`: `int`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchProvisionedProductsInputRequestTypeDef = {  # (1)
+    "AcceptLanguage": ...,
+}
 
-Returns
-[SearchProvisionedProductsOutputTypeDef](./type_defs.md#searchprovisionedproductsoutputtypedef).
+parent.search_provisioned_products(**kwargs)
+```
 
-<a id="terminate\_provisioned\_product"></a>
+1. See [:material-code-braces: SearchProvisionedProductsInputRequestTypeDef](./type_defs.md#searchprovisionedproductsinputrequesttypedef) 
 
-### terminate_provisioned_product
+### terminate\_provisioned\_product
 
 Terminates the specified provisioned product.
 
-Type annotations for
-`boto3.client("servicecatalog").terminate_provisioned_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").terminate_provisioned_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.terminate_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.terminate_provisioned_product)
+```python title="Method definition"
+def terminate_provisioned_product(
+    self,
+    *,
+    TerminateToken: str,
+    ProvisionedProductName: str = ...,
+    ProvisionedProductId: str = ...,
+    IgnoreErrors: bool = ...,
+    AcceptLanguage: str = ...,
+    RetainPhysicalResources: bool = ...,
+) -> TerminateProvisionedProductOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TerminateProvisionedProductInputRequestTypeDef](./type_defs.md#terminateprovisionedproductinputrequesttypedef).
+1. See [:material-code-braces: TerminateProvisionedProductOutputTypeDef](./type_defs.md#terminateprovisionedproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TerminateToken`: `str` *(required)*
-- `ProvisionedProductName`: `str`
-- `ProvisionedProductId`: `str`
-- `IgnoreErrors`: `bool`
-- `AcceptLanguage`: `str`
-- `RetainPhysicalResources`: `bool`
+```python title="Usage example with kwargs"
+kwargs: TerminateProvisionedProductInputRequestTypeDef = {  # (1)
+    "TerminateToken": ...,
+}
 
-Returns
-[TerminateProvisionedProductOutputTypeDef](./type_defs.md#terminateprovisionedproductoutputtypedef).
+parent.terminate_provisioned_product(**kwargs)
+```
 
-<a id="update\_constraint"></a>
+1. See [:material-code-braces: TerminateProvisionedProductInputRequestTypeDef](./type_defs.md#terminateprovisionedproductinputrequesttypedef) 
 
-### update_constraint
+### update\_constraint
 
 Updates the specified constraint.
 
-Type annotations for `boto3.client("servicecatalog").update_constraint` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").update_constraint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint)
 
-Boto3 documentation:
-[ServiceCatalog.Client.update_constraint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_constraint)
+```python title="Method definition"
+def update_constraint(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+    Description: str = ...,
+    Parameters: str = ...,
+) -> UpdateConstraintOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConstraintInputRequestTypeDef](./type_defs.md#updateconstraintinputrequesttypedef).
+1. See [:material-code-braces: UpdateConstraintOutputTypeDef](./type_defs.md#updateconstraintoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `Description`: `str`
-- `Parameters`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateConstraintInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[UpdateConstraintOutputTypeDef](./type_defs.md#updateconstraintoutputtypedef).
+parent.update_constraint(**kwargs)
+```
 
-<a id="update\_portfolio"></a>
+1. See [:material-code-braces: UpdateConstraintInputRequestTypeDef](./type_defs.md#updateconstraintinputrequesttypedef) 
 
-### update_portfolio
+### update\_portfolio
 
 Updates the specified portfolio.
 
-Type annotations for `boto3.client("servicecatalog").update_portfolio` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").update_portfolio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio)
 
-Boto3 documentation:
-[ServiceCatalog.Client.update_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio)
+```python title="Method definition"
+def update_portfolio(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+    DisplayName: str = ...,
+    Description: str = ...,
+    ProviderName: str = ...,
+    AddTags: Sequence[TagTypeDef] = ...,  # (1)
+    RemoveTags: Sequence[str] = ...,
+) -> UpdatePortfolioOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePortfolioInputRequestTypeDef](./type_defs.md#updateportfolioinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: UpdatePortfolioOutputTypeDef](./type_defs.md#updateportfoliooutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `DisplayName`: `str`
-- `Description`: `str`
-- `ProviderName`: `str`
-- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTags`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdatePortfolioInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[UpdatePortfolioOutputTypeDef](./type_defs.md#updateportfoliooutputtypedef).
+parent.update_portfolio(**kwargs)
+```
 
-<a id="update\_portfolio\_share"></a>
+1. See [:material-code-braces: UpdatePortfolioInputRequestTypeDef](./type_defs.md#updateportfolioinputrequesttypedef) 
 
-### update_portfolio_share
+### update\_portfolio\_share
 
 Updates the specified portfolio share.
 
-Type annotations for `boto3.client("servicecatalog").update_portfolio_share`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").update_portfolio_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share)
 
-Boto3 documentation:
-[ServiceCatalog.Client.update_portfolio_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_portfolio_share)
+```python title="Method definition"
+def update_portfolio_share(
+    self,
+    *,
+    PortfolioId: str,
+    AcceptLanguage: str = ...,
+    AccountId: str = ...,
+    OrganizationNode: OrganizationNodeTypeDef = ...,  # (1)
+    ShareTagOptions: bool = ...,
+) -> UpdatePortfolioShareOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePortfolioShareInputRequestTypeDef](./type_defs.md#updateportfolioshareinputrequesttypedef).
+1. See [:material-code-braces: OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef) 
+2. See [:material-code-braces: UpdatePortfolioShareOutputTypeDef](./type_defs.md#updateportfolioshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PortfolioId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `AccountId`: `str`
-- `OrganizationNode`:
-  [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
-- `ShareTagOptions`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdatePortfolioShareInputRequestTypeDef = {  # (1)
+    "PortfolioId": ...,
+}
 
-Returns
-[UpdatePortfolioShareOutputTypeDef](./type_defs.md#updateportfolioshareoutputtypedef).
+parent.update_portfolio_share(**kwargs)
+```
 
-<a id="update\_product"></a>
+1. See [:material-code-braces: UpdatePortfolioShareInputRequestTypeDef](./type_defs.md#updateportfolioshareinputrequesttypedef) 
 
-### update_product
+### update\_product
 
 Updates the specified product.
 
-Type annotations for `boto3.client("servicecatalog").update_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").update_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.update_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_product)
+```python title="Method definition"
+def update_product(
+    self,
+    *,
+    Id: str,
+    AcceptLanguage: str = ...,
+    Name: str = ...,
+    Owner: str = ...,
+    Description: str = ...,
+    Distributor: str = ...,
+    SupportDescription: str = ...,
+    SupportEmail: str = ...,
+    SupportUrl: str = ...,
+    AddTags: Sequence[TagTypeDef] = ...,  # (1)
+    RemoveTags: Sequence[str] = ...,
+) -> UpdateProductOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProductInputRequestTypeDef](./type_defs.md#updateproductinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: UpdateProductOutputTypeDef](./type_defs.md#updateproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `Name`: `str`
-- `Owner`: `str`
-- `Description`: `str`
-- `Distributor`: `str`
-- `SupportDescription`: `str`
-- `SupportEmail`: `str`
-- `SupportUrl`: `str`
-- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTags`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateProductInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[UpdateProductOutputTypeDef](./type_defs.md#updateproductoutputtypedef).
+parent.update_product(**kwargs)
+```
 
-<a id="update\_provisioned\_product"></a>
+1. See [:material-code-braces: UpdateProductInputRequestTypeDef](./type_defs.md#updateproductinputrequesttypedef) 
 
-### update_provisioned_product
+### update\_provisioned\_product
 
 Requests updates to the configuration of the specified provisioned product.
 
-Type annotations for
-`boto3.client("servicecatalog").update_provisioned_product` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").update_provisioned_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product)
 
-Boto3 documentation:
-[ServiceCatalog.Client.update_provisioned_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product)
+```python title="Method definition"
+def update_provisioned_product(
+    self,
+    *,
+    UpdateToken: str,
+    AcceptLanguage: str = ...,
+    ProvisionedProductName: str = ...,
+    ProvisionedProductId: str = ...,
+    ProductId: str = ...,
+    ProductName: str = ...,
+    ProvisioningArtifactId: str = ...,
+    ProvisioningArtifactName: str = ...,
+    PathId: str = ...,
+    PathName: str = ...,
+    ProvisioningParameters: Sequence[UpdateProvisioningParameterTypeDef] = ...,  # (1)
+    ProvisioningPreferences: UpdateProvisioningPreferencesTypeDef = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> UpdateProvisionedProductOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProvisionedProductInputRequestTypeDef](./type_defs.md#updateprovisionedproductinputrequesttypedef).
+1. See [:material-code-braces: UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef) 
+2. See [:material-code-braces: UpdateProvisioningPreferencesTypeDef](./type_defs.md#updateprovisioningpreferencestypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: UpdateProvisionedProductOutputTypeDef](./type_defs.md#updateprovisionedproductoutputtypedef) 
 
-Keyword-only arguments:
 
-- `UpdateToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `ProvisionedProductName`: `str`
-- `ProvisionedProductId`: `str`
-- `ProductId`: `str`
-- `ProductName`: `str`
-- `ProvisioningArtifactId`: `str`
-- `ProvisioningArtifactName`: `str`
-- `PathId`: `str`
-- `PathName`: `str`
-- `ProvisioningParameters`:
-  `Sequence`\[[UpdateProvisioningParameterTypeDef](./type_defs.md#updateprovisioningparametertypedef)\]
-- `ProvisioningPreferences`:
-  [UpdateProvisioningPreferencesTypeDef](./type_defs.md#updateprovisioningpreferencestypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateProvisionedProductInputRequestTypeDef = {  # (1)
+    "UpdateToken": ...,
+}
 
-Returns
-[UpdateProvisionedProductOutputTypeDef](./type_defs.md#updateprovisionedproductoutputtypedef).
+parent.update_provisioned_product(**kwargs)
+```
 
-<a id="update\_provisioned\_product\_properties"></a>
+1. See [:material-code-braces: UpdateProvisionedProductInputRequestTypeDef](./type_defs.md#updateprovisionedproductinputrequesttypedef) 
 
-### update_provisioned_product_properties
+### update\_provisioned\_product\_properties
 
 Requests updates to the properties of the specified provisioned product.
 
-Type annotations for
-`boto3.client("servicecatalog").update_provisioned_product_properties` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").update_provisioned_product_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties)
 
-Boto3 documentation:
-[ServiceCatalog.Client.update_provisioned_product_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioned_product_properties)
+```python title="Method definition"
+def update_provisioned_product_properties(
+    self,
+    *,
+    ProvisionedProductId: str,
+    ProvisionedProductProperties: Mapping[PropertyKeyType, str],  # (1)
+    IdempotencyToken: str,
+    AcceptLanguage: str = ...,
+) -> UpdateProvisionedProductPropertiesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProvisionedProductPropertiesInputRequestTypeDef](./type_defs.md#updateprovisionedproductpropertiesinputrequesttypedef).
+1. See [:material-code-brackets: PropertyKeyType](./literals.md#propertykeytype) 
+2. See [:material-code-braces: UpdateProvisionedProductPropertiesOutputTypeDef](./type_defs.md#updateprovisionedproductpropertiesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProvisionedProductId`: `str` *(required)*
-- `ProvisionedProductProperties`:
-  `Mapping`\[[PropertyKeyType](./literals.md#propertykeytype), `str`\]
-  *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateProvisionedProductPropertiesInputRequestTypeDef = {  # (1)
+    "ProvisionedProductId": ...,
+    "ProvisionedProductProperties": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[UpdateProvisionedProductPropertiesOutputTypeDef](./type_defs.md#updateprovisionedproductpropertiesoutputtypedef).
+parent.update_provisioned_product_properties(**kwargs)
+```
 
-<a id="update\_provisioning\_artifact"></a>
+1. See [:material-code-braces: UpdateProvisionedProductPropertiesInputRequestTypeDef](./type_defs.md#updateprovisionedproductpropertiesinputrequesttypedef) 
 
-### update_provisioning_artifact
+### update\_provisioning\_artifact
 
 Updates the specified provisioning artifact (also known as a version) for the
 specified product.
 
-Type annotations for
-`boto3.client("servicecatalog").update_provisioning_artifact` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").update_provisioning_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact)
 
-Boto3 documentation:
-[ServiceCatalog.Client.update_provisioning_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_provisioning_artifact)
+```python title="Method definition"
+def update_provisioning_artifact(
+    self,
+    *,
+    ProductId: str,
+    ProvisioningArtifactId: str,
+    AcceptLanguage: str = ...,
+    Name: str = ...,
+    Description: str = ...,
+    Active: bool = ...,
+    Guidance: ProvisioningArtifactGuidanceType = ...,  # (1)
+) -> UpdateProvisioningArtifactOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProvisioningArtifactInputRequestTypeDef](./type_defs.md#updateprovisioningartifactinputrequesttypedef).
+1. See [:material-code-brackets: ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype) 
+2. See [:material-code-braces: UpdateProvisioningArtifactOutputTypeDef](./type_defs.md#updateprovisioningartifactoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProductId`: `str` *(required)*
-- `ProvisioningArtifactId`: `str` *(required)*
-- `AcceptLanguage`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Active`: `bool`
-- `Guidance`:
-  [ProvisioningArtifactGuidanceType](./literals.md#provisioningartifactguidancetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateProvisioningArtifactInputRequestTypeDef = {  # (1)
+    "ProductId": ...,
+    "ProvisioningArtifactId": ...,
+}
 
-Returns
-[UpdateProvisioningArtifactOutputTypeDef](./type_defs.md#updateprovisioningartifactoutputtypedef).
+parent.update_provisioning_artifact(**kwargs)
+```
 
-<a id="update\_service\_action"></a>
+1. See [:material-code-braces: UpdateProvisioningArtifactInputRequestTypeDef](./type_defs.md#updateprovisioningartifactinputrequesttypedef) 
 
-### update_service_action
+### update\_service\_action
 
 Updates a self-service action.
 
-Type annotations for `boto3.client("servicecatalog").update_service_action`
-method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").update_service_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action)
 
-Boto3 documentation:
-[ServiceCatalog.Client.update_service_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_service_action)
+```python title="Method definition"
+def update_service_action(
+    self,
+    *,
+    Id: str,
+    Name: str = ...,
+    Definition: Mapping[ServiceActionDefinitionKeyType, str] = ...,  # (1)
+    Description: str = ...,
+    AcceptLanguage: str = ...,
+) -> UpdateServiceActionOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceActionInputRequestTypeDef](./type_defs.md#updateserviceactioninputrequesttypedef).
+1. See [:material-code-brackets: ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype) 
+2. See [:material-code-braces: UpdateServiceActionOutputTypeDef](./type_defs.md#updateserviceactionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Name`: `str`
-- `Definition`:
-  `Mapping`\[[ServiceActionDefinitionKeyType](./literals.md#serviceactiondefinitionkeytype),
-  `str`\]
-- `Description`: `str`
-- `AcceptLanguage`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceActionInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[UpdateServiceActionOutputTypeDef](./type_defs.md#updateserviceactionoutputtypedef).
+parent.update_service_action(**kwargs)
+```
 
-<a id="update\_tag\_option"></a>
+1. See [:material-code-braces: UpdateServiceActionInputRequestTypeDef](./type_defs.md#updateserviceactioninputrequesttypedef) 
 
-### update_tag_option
+### update\_tag\_option
 
 Updates the specified TagOption.
 
-Type annotations for `boto3.client("servicecatalog").update_tag_option` method.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").update_tag_option` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option)
 
-Boto3 documentation:
-[ServiceCatalog.Client.update_tag_option](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.update_tag_option)
+```python title="Method definition"
+def update_tag_option(
+    self,
+    *,
+    Id: str,
+    Value: str = ...,
+    Active: bool = ...,
+) -> UpdateTagOptionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTagOptionInputRequestTypeDef](./type_defs.md#updatetagoptioninputrequesttypedef).
+1. See [:material-code-braces: UpdateTagOptionOutputTypeDef](./type_defs.md#updatetagoptionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Value`: `str`
-- `Active`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateTagOptionInputRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[UpdateTagOptionOutputTypeDef](./type_defs.md#updatetagoptionoutputtypedef).
+parent.update_tag_option(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateTagOptionInputRequestTypeDef](./type_defs.md#updatetagoptioninputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("servicecatalog").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("servicecatalog").get_paginator` method with overloads.
 
-- `client.get_paginator("list_accepted_portfolio_shares")` ->
-  [ListAcceptedPortfolioSharesPaginator](./paginators.md#listacceptedportfoliosharespaginator)
-- `client.get_paginator("list_constraints_for_portfolio")` ->
-  [ListConstraintsForPortfolioPaginator](./paginators.md#listconstraintsforportfoliopaginator)
-- `client.get_paginator("list_launch_paths")` ->
-  [ListLaunchPathsPaginator](./paginators.md#listlaunchpathspaginator)
-- `client.get_paginator("list_organization_portfolio_access")` ->
-  [ListOrganizationPortfolioAccessPaginator](./paginators.md#listorganizationportfolioaccesspaginator)
-- `client.get_paginator("list_portfolios")` ->
-  [ListPortfoliosPaginator](./paginators.md#listportfoliospaginator)
-- `client.get_paginator("list_portfolios_for_product")` ->
-  [ListPortfoliosForProductPaginator](./paginators.md#listportfoliosforproductpaginator)
-- `client.get_paginator("list_principals_for_portfolio")` ->
-  [ListPrincipalsForPortfolioPaginator](./paginators.md#listprincipalsforportfoliopaginator)
-- `client.get_paginator("list_provisioned_product_plans")` ->
-  [ListProvisionedProductPlansPaginator](./paginators.md#listprovisionedproductplanspaginator)
-- `client.get_paginator("list_provisioning_artifacts_for_service_action")` ->
-  [ListProvisioningArtifactsForServiceActionPaginator](./paginators.md#listprovisioningartifactsforserviceactionpaginator)
-- `client.get_paginator("list_record_history")` ->
-  [ListRecordHistoryPaginator](./paginators.md#listrecordhistorypaginator)
-- `client.get_paginator("list_resources_for_tag_option")` ->
-  [ListResourcesForTagOptionPaginator](./paginators.md#listresourcesfortagoptionpaginator)
-- `client.get_paginator("list_service_actions")` ->
-  [ListServiceActionsPaginator](./paginators.md#listserviceactionspaginator)
-- `client.get_paginator("list_service_actions_for_provisioning_artifact")` ->
-  [ListServiceActionsForProvisioningArtifactPaginator](./paginators.md#listserviceactionsforprovisioningartifactpaginator)
-- `client.get_paginator("list_tag_options")` ->
-  [ListTagOptionsPaginator](./paginators.md#listtagoptionspaginator)
-- `client.get_paginator("scan_provisioned_products")` ->
-  [ScanProvisionedProductsPaginator](./paginators.md#scanprovisionedproductspaginator)
-- `client.get_paginator("search_products_as_admin")` ->
-  [SearchProductsAsAdminPaginator](./paginators.md#searchproductsasadminpaginator)
+- `client.get_paginator("list_accepted_portfolio_shares")` -> [ListAcceptedPortfolioSharesPaginator](./paginators.md#listacceptedportfoliosharespaginator)
+- `client.get_paginator("list_constraints_for_portfolio")` -> [ListConstraintsForPortfolioPaginator](./paginators.md#listconstraintsforportfoliopaginator)
+- `client.get_paginator("list_launch_paths")` -> [ListLaunchPathsPaginator](./paginators.md#listlaunchpathspaginator)
+- `client.get_paginator("list_organization_portfolio_access")` -> [ListOrganizationPortfolioAccessPaginator](./paginators.md#listorganizationportfolioaccesspaginator)
+- `client.get_paginator("list_portfolios")` -> [ListPortfoliosPaginator](./paginators.md#listportfoliospaginator)
+- `client.get_paginator("list_portfolios_for_product")` -> [ListPortfoliosForProductPaginator](./paginators.md#listportfoliosforproductpaginator)
+- `client.get_paginator("list_principals_for_portfolio")` -> [ListPrincipalsForPortfolioPaginator](./paginators.md#listprincipalsforportfoliopaginator)
+- `client.get_paginator("list_provisioned_product_plans")` -> [ListProvisionedProductPlansPaginator](./paginators.md#listprovisionedproductplanspaginator)
+- `client.get_paginator("list_provisioning_artifacts_for_service_action")` -> [ListProvisioningArtifactsForServiceActionPaginator](./paginators.md#listprovisioningartifactsforserviceactionpaginator)
+- `client.get_paginator("list_record_history")` -> [ListRecordHistoryPaginator](./paginators.md#listrecordhistorypaginator)
+- `client.get_paginator("list_resources_for_tag_option")` -> [ListResourcesForTagOptionPaginator](./paginators.md#listresourcesfortagoptionpaginator)
+- `client.get_paginator("list_service_actions")` -> [ListServiceActionsPaginator](./paginators.md#listserviceactionspaginator)
+- `client.get_paginator("list_service_actions_for_provisioning_artifact")` -> [ListServiceActionsForProvisioningArtifactPaginator](./paginators.md#listserviceactionsforprovisioningartifactpaginator)
+- `client.get_paginator("list_tag_options")` -> [ListTagOptionsPaginator](./paginators.md#listtagoptionspaginator)
+- `client.get_paginator("scan_provisioned_products")` -> [ScanProvisionedProductsPaginator](./paginators.md#scanprovisionedproductspaginator)
+- `client.get_paginator("search_products_as_admin")` -> [SearchProductsAsAdminPaginator](./paginators.md#searchproductsasadminpaginator)
+
+
+

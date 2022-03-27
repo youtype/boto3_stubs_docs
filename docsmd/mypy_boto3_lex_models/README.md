@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-lexmodelbuildingservice-module"></a>
-
-# Type annotations for boto3 LexModelBuildingService module
+#  LexModelBuildingService module
 
 > [Index](../README.md) > LexModelBuildingService
 
-Auto-generated documentation for
-[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
-type annotations stubs module
-[mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
+!!! note ""
 
-- [Type annotations for boto3 LexModelBuildingService module](#type-annotations-for-boto3-lexmodelbuildingservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [LexModelBuildingServiceClient](#lexmodelbuildingserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+    type annotations stubs module [mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `LexModelBuildingService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[lex-models]'
 python -m pip install mypy-boto3-lex-models
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,103 +42,37 @@ python -m pip install mypy-boto3-lex-models
 python -m pip uninstall -y mypy-boto3-lex-models
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="lexmodelbuildingserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## LexModelBuildingServiceClient
 
-Type annotations for `boto3.client("lex-models")` as
-[LexModelBuildingServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("lex-models")` as [LexModelBuildingServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_lex_models.client import LexModelBuildingServiceClient
+
+def get_client() -> LexModelBuildingServiceClient:
+    return Session().cleint("lex-models")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_bot_version](./client.md#create_bot_version)
-- [create_intent_version](./client.md#create_intent_version)
-- [create_slot_type_version](./client.md#create_slot_type_version)
-- [delete_bot](./client.md#delete_bot)
-- [delete_bot_alias](./client.md#delete_bot_alias)
-- [delete_bot_channel_association](./client.md#delete_bot_channel_association)
-- [delete_bot_version](./client.md#delete_bot_version)
-- [delete_intent](./client.md#delete_intent)
-- [delete_intent_version](./client.md#delete_intent_version)
-- [delete_slot_type](./client.md#delete_slot_type)
-- [delete_slot_type_version](./client.md#delete_slot_type_version)
-- [delete_utterances](./client.md#delete_utterances)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_bot](./client.md#get_bot)
-- [get_bot_alias](./client.md#get_bot_alias)
-- [get_bot_aliases](./client.md#get_bot_aliases)
-- [get_bot_channel_association](./client.md#get_bot_channel_association)
-- [get_bot_channel_associations](./client.md#get_bot_channel_associations)
-- [get_bot_versions](./client.md#get_bot_versions)
-- [get_bots](./client.md#get_bots)
-- [get_builtin_intent](./client.md#get_builtin_intent)
-- [get_builtin_intents](./client.md#get_builtin_intents)
-- [get_builtin_slot_types](./client.md#get_builtin_slot_types)
-- [get_export](./client.md#get_export)
-- [get_import](./client.md#get_import)
-- [get_intent](./client.md#get_intent)
-- [get_intent_versions](./client.md#get_intent_versions)
-- [get_intents](./client.md#get_intents)
-- [get_migration](./client.md#get_migration)
-- [get_migrations](./client.md#get_migrations)
-- [get_paginator](./client.md#get_paginator)
-- [get_slot_type](./client.md#get_slot_type)
-- [get_slot_type_versions](./client.md#get_slot_type_versions)
-- [get_slot_types](./client.md#get_slot_types)
-- [get_utterances_view](./client.md#get_utterances_view)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_bot](./client.md#put_bot)
-- [put_bot_alias](./client.md#put_bot_alias)
-- [put_intent](./client.md#put_intent)
-- [put_slot_type](./client.md#put_slot_type)
-- [start_import](./client.md#start_import)
-- [start_migration](./client.md#start_migration)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-LexModelBuildingServiceClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- BadRequestException
-- ClientError
-- ConflictException
-- InternalFailureException
-- LimitExceededException
-- NotFoundException
-- PreconditionFailedException
-- ResourceInUseException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("lex-models").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("lex-models").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_lex_models.paginator import GetBotAliasesPaginator, ...
+from mypy_boto3_lex_models.paginator import GetBotAliasesPaginator
+
+def get_get_bot_aliases_paginator() -> GetBotAliasesPaginator:
+    return Session().client("lex-models").get_paginator("get_bot_aliases"))
 ```
 
 - [GetBotAliasesPaginator](./paginators.md#getbotaliasespaginator)
@@ -174,16 +86,23 @@ from mypy_boto3_lex_models.paginator import GetBotAliasesPaginator, ...
 - [GetSlotTypeVersionsPaginator](./paginators.md#getslottypeversionspaginator)
 - [GetSlotTypesPaginator](./paginators.md#getslottypespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lex_models.literals import ChannelStatusType
 
-```python
-from mypy_boto3_lex_models.literals import ChannelStatusType, ...
+def get_value() -> ChannelStatusType:
+    return "CREATED"
 ```
 
 - [ChannelStatusType](./literals.md#channelstatustype)
@@ -223,18 +142,22 @@ from mypy_boto3_lex_models.literals import ChannelStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lex_models.type_defs import BotAliasMetadataTypeDef
 
-```python
-from mypy_boto3_lex_models.type_defs import BotAliasMetadataTypeDef, ...
+def get_value() -> BotAliasMetadataTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
 - [BotAliasMetadataTypeDef](./type_defs.md#botaliasmetadatatypedef)
@@ -266,22 +189,28 @@ from mypy_boto3_lex_models.type_defs import BotAliasMetadataTypeDef, ...
 - [FulfillmentActivityTypeDef](./type_defs.md#fulfillmentactivitytypedef)
 - [GetBotAliasRequestRequestTypeDef](./type_defs.md#getbotaliasrequestrequesttypedef)
 - [GetBotAliasResponseTypeDef](./type_defs.md#getbotaliasresponsetypedef)
+- [GetBotAliasesRequestGetBotAliasesPaginateTypeDef](./type_defs.md#getbotaliasesrequestgetbotaliasespaginatetypedef)
 - [GetBotAliasesRequestRequestTypeDef](./type_defs.md#getbotaliasesrequestrequesttypedef)
 - [GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef)
 - [GetBotChannelAssociationRequestRequestTypeDef](./type_defs.md#getbotchannelassociationrequestrequesttypedef)
 - [GetBotChannelAssociationResponseTypeDef](./type_defs.md#getbotchannelassociationresponsetypedef)
+- [GetBotChannelAssociationsRequestGetBotChannelAssociationsPaginateTypeDef](./type_defs.md#getbotchannelassociationsrequestgetbotchannelassociationspaginatetypedef)
 - [GetBotChannelAssociationsRequestRequestTypeDef](./type_defs.md#getbotchannelassociationsrequestrequesttypedef)
 - [GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef)
 - [GetBotRequestRequestTypeDef](./type_defs.md#getbotrequestrequesttypedef)
 - [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef)
+- [GetBotVersionsRequestGetBotVersionsPaginateTypeDef](./type_defs.md#getbotversionsrequestgetbotversionspaginatetypedef)
 - [GetBotVersionsRequestRequestTypeDef](./type_defs.md#getbotversionsrequestrequesttypedef)
 - [GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef)
+- [GetBotsRequestGetBotsPaginateTypeDef](./type_defs.md#getbotsrequestgetbotspaginatetypedef)
 - [GetBotsRequestRequestTypeDef](./type_defs.md#getbotsrequestrequesttypedef)
 - [GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef)
 - [GetBuiltinIntentRequestRequestTypeDef](./type_defs.md#getbuiltinintentrequestrequesttypedef)
 - [GetBuiltinIntentResponseTypeDef](./type_defs.md#getbuiltinintentresponsetypedef)
+- [GetBuiltinIntentsRequestGetBuiltinIntentsPaginateTypeDef](./type_defs.md#getbuiltinintentsrequestgetbuiltinintentspaginatetypedef)
 - [GetBuiltinIntentsRequestRequestTypeDef](./type_defs.md#getbuiltinintentsrequestrequesttypedef)
 - [GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef)
+- [GetBuiltinSlotTypesRequestGetBuiltinSlotTypesPaginateTypeDef](./type_defs.md#getbuiltinslottypesrequestgetbuiltinslottypespaginatetypedef)
 - [GetBuiltinSlotTypesRequestRequestTypeDef](./type_defs.md#getbuiltinslottypesrequestrequesttypedef)
 - [GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef)
 - [GetExportRequestRequestTypeDef](./type_defs.md#getexportrequestrequesttypedef)
@@ -290,8 +219,10 @@ from mypy_boto3_lex_models.type_defs import BotAliasMetadataTypeDef, ...
 - [GetImportResponseTypeDef](./type_defs.md#getimportresponsetypedef)
 - [GetIntentRequestRequestTypeDef](./type_defs.md#getintentrequestrequesttypedef)
 - [GetIntentResponseTypeDef](./type_defs.md#getintentresponsetypedef)
+- [GetIntentVersionsRequestGetIntentVersionsPaginateTypeDef](./type_defs.md#getintentversionsrequestgetintentversionspaginatetypedef)
 - [GetIntentVersionsRequestRequestTypeDef](./type_defs.md#getintentversionsrequestrequesttypedef)
 - [GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef)
+- [GetIntentsRequestGetIntentsPaginateTypeDef](./type_defs.md#getintentsrequestgetintentspaginatetypedef)
 - [GetIntentsRequestRequestTypeDef](./type_defs.md#getintentsrequestrequesttypedef)
 - [GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef)
 - [GetMigrationRequestRequestTypeDef](./type_defs.md#getmigrationrequestrequesttypedef)
@@ -300,8 +231,10 @@ from mypy_boto3_lex_models.type_defs import BotAliasMetadataTypeDef, ...
 - [GetMigrationsResponseTypeDef](./type_defs.md#getmigrationsresponsetypedef)
 - [GetSlotTypeRequestRequestTypeDef](./type_defs.md#getslottyperequestrequesttypedef)
 - [GetSlotTypeResponseTypeDef](./type_defs.md#getslottyperesponsetypedef)
+- [GetSlotTypeVersionsRequestGetSlotTypeVersionsPaginateTypeDef](./type_defs.md#getslottypeversionsrequestgetslottypeversionspaginatetypedef)
 - [GetSlotTypeVersionsRequestRequestTypeDef](./type_defs.md#getslottypeversionsrequestrequesttypedef)
 - [GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef)
+- [GetSlotTypesRequestGetSlotTypesPaginateTypeDef](./type_defs.md#getslottypesrequestgetslottypespaginatetypedef)
 - [GetSlotTypesRequestRequestTypeDef](./type_defs.md#getslottypesrequestrequesttypedef)
 - [GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef)
 - [GetUtterancesViewRequestRequestTypeDef](./type_defs.md#getutterancesviewrequestrequesttypedef)
@@ -345,3 +278,4 @@ from mypy_boto3_lex_models.type_defs import BotAliasMetadataTypeDef, ...
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UtteranceDataTypeDef](./type_defs.md#utterancedatatypedef)
 - [UtteranceListTypeDef](./type_defs.md#utterancelisttypedef)
+

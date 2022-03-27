@@ -1,33 +1,18 @@
-<a id="waiters-for-boto3-databasemigrationservice-module"></a>
-
-# Waiters for boto3 DatabaseMigrationService module
+# Waiters
 
 > [Index](../README.md) > [DatabaseMigrationService](./README.md) > Waiters
 
-Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
-type annotations stubs module
-[mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
+!!! note ""
 
-- [Waiters for boto3 DatabaseMigrationService module](#waiters-for-boto3-databasemigrationservice-module)
-  - [EndpointDeletedWaiter](#endpointdeletedwaiter)
-  - [ReplicationInstanceAvailableWaiter](#replicationinstanceavailablewaiter)
-  - [ReplicationInstanceDeletedWaiter](#replicationinstancedeletedwaiter)
-  - [ReplicationTaskDeletedWaiter](#replicationtaskdeletedwaiter)
-  - [ReplicationTaskReadyWaiter](#replicationtaskreadywaiter)
-  - [ReplicationTaskRunningWaiter](#replicationtaskrunningwaiter)
-  - [ReplicationTaskStoppedWaiter](#replicationtaskstoppedwaiter)
-  - [TestConnectionSucceedsWaiter](#testconnectionsucceedswaiter)
-
-<a id="endpointdeletedwaiter"></a>
+    Auto-generated documentation for [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+    type annotations stubs module [mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
 
 ## EndpointDeletedWaiter
 
-Type annotations for `boto3.client("dms").get_waiter("endpoint_deleted")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_waiter("endpoint_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.EndpointDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.waiter import EndpointDeletedWaiter
@@ -36,26 +21,42 @@ def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
     return Session().client("dms").get_waiter("endpoint_deleted")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Waiter.endpoint_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.EndpointDeleted)
 
-Arguments for `EndpointDeletedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python EndpointDeletedWaiter.wait` method.
 
-<a id="replicationinstanceavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointsMessageEndpointDeletedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndpointsMessageEndpointDeletedWaitTypeDef](./type_defs.md#describeendpointsmessageendpointdeletedwaittypedef) 
 ## ReplicationInstanceAvailableWaiter
 
-Type annotations for
-`boto3.client("dms").get_waiter("replication_instance_available")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_waiter("replication_instance_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationInstanceAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationInstanceAvailableWaiter
@@ -64,26 +65,42 @@ def get_replication_instance_available_waiter() -> ReplicationInstanceAvailableW
     return Session().client("dms").get_waiter("replication_instance_available")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_instance_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationInstanceAvailable)
 
-Arguments for `ReplicationInstanceAvailableWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ReplicationInstanceAvailableWaiter.wait` method.
 
-<a id="replicationinstancedeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationInstancesMessageReplicationInstanceAvailableWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationInstancesMessageReplicationInstanceAvailableWaitTypeDef](./type_defs.md#describereplicationinstancesmessagereplicationinstanceavailablewaittypedef) 
 ## ReplicationInstanceDeletedWaiter
 
-Type annotations for
-`boto3.client("dms").get_waiter("replication_instance_deleted")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_waiter("replication_instance_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationInstanceDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationInstanceDeletedWaiter
@@ -92,26 +109,42 @@ def get_replication_instance_deleted_waiter() -> ReplicationInstanceDeletedWaite
     return Session().client("dms").get_waiter("replication_instance_deleted")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationInstanceDeleted)
 
-Arguments for `ReplicationInstanceDeletedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ReplicationInstanceDeletedWaiter.wait` method.
 
-<a id="replicationtaskdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationInstancesMessageReplicationInstanceDeletedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationInstancesMessageReplicationInstanceDeletedWaitTypeDef](./type_defs.md#describereplicationinstancesmessagereplicationinstancedeletedwaittypedef) 
 ## ReplicationTaskDeletedWaiter
 
-Type annotations for
-`boto3.client("dms").get_waiter("replication_task_deleted")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_waiter("replication_task_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationTaskDeletedWaiter
@@ -120,27 +153,43 @@ def get_replication_task_deleted_waiter() -> ReplicationTaskDeletedWaiter:
     return Session().client("dms").get_waiter("replication_task_deleted")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_task_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskDeleted)
 
-Arguments for `ReplicationTaskDeletedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WithoutSettings`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ReplicationTaskDeletedWaiter.wait` method.
 
-<a id="replicationtaskreadywaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WithoutSettings: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTasksMessageReplicationTaskDeletedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationTasksMessageReplicationTaskDeletedWaitTypeDef](./type_defs.md#describereplicationtasksmessagereplicationtaskdeletedwaittypedef) 
 ## ReplicationTaskReadyWaiter
 
-Type annotations for
-`boto3.client("dms").get_waiter("replication_task_ready")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_waiter("replication_task_ready")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskReady)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationTaskReadyWaiter
@@ -149,27 +198,43 @@ def get_replication_task_ready_waiter() -> ReplicationTaskReadyWaiter:
     return Session().client("dms").get_waiter("replication_task_ready")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_task_ready](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskReady)
 
-Arguments for `ReplicationTaskReadyWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WithoutSettings`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ReplicationTaskReadyWaiter.wait` method.
 
-<a id="replicationtaskrunningwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WithoutSettings: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTasksMessageReplicationTaskReadyWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationTasksMessageReplicationTaskReadyWaitTypeDef](./type_defs.md#describereplicationtasksmessagereplicationtaskreadywaittypedef) 
 ## ReplicationTaskRunningWaiter
 
-Type annotations for
-`boto3.client("dms").get_waiter("replication_task_running")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_waiter("replication_task_running")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskRunning)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationTaskRunningWaiter
@@ -178,27 +243,43 @@ def get_replication_task_running_waiter() -> ReplicationTaskRunningWaiter:
     return Session().client("dms").get_waiter("replication_task_running")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_task_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskRunning)
 
-Arguments for `ReplicationTaskRunningWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WithoutSettings`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ReplicationTaskRunningWaiter.wait` method.
 
-<a id="replicationtaskstoppedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WithoutSettings: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTasksMessageReplicationTaskRunningWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationTasksMessageReplicationTaskRunningWaitTypeDef](./type_defs.md#describereplicationtasksmessagereplicationtaskrunningwaittypedef) 
 ## ReplicationTaskStoppedWaiter
 
-Type annotations for
-`boto3.client("dms").get_waiter("replication_task_stopped")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_waiter("replication_task_stopped")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskStopped)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.waiter import ReplicationTaskStoppedWaiter
@@ -207,27 +288,43 @@ def get_replication_task_stopped_waiter() -> ReplicationTaskStoppedWaiter:
     return Session().client("dms").get_waiter("replication_task_stopped")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Waiter.replication_task_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.ReplicationTaskStopped)
 
-Arguments for `ReplicationTaskStoppedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WithoutSettings`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ReplicationTaskStoppedWaiter.wait` method.
 
-<a id="testconnectionsucceedswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WithoutSettings: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTasksMessageReplicationTaskStoppedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationTasksMessageReplicationTaskStoppedWaitTypeDef](./type_defs.md#describereplicationtasksmessagereplicationtaskstoppedwaittypedef) 
 ## TestConnectionSucceedsWaiter
 
-Type annotations for
-`boto3.client("dms").get_waiter("test_connection_succeeds")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_waiter("test_connection_succeeds")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.TestConnectionSucceeds)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.waiter import TestConnectionSucceedsWaiter
@@ -236,12 +333,33 @@ def get_test_connection_succeeds_waiter() -> TestConnectionSucceedsWaiter:
     return Session().client("dms").get_waiter("test_connection_succeeds")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Waiter.test_connection_succeeds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Waiter.TestConnectionSucceeds)
 
-Arguments for `TestConnectionSucceedsWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python TestConnectionSucceedsWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectionsMessageTestConnectionSucceedsWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConnectionsMessageTestConnectionSucceedsWaitTypeDef](./type_defs.md#describeconnectionsmessagetestconnectionsucceedswaittypedef) 

@@ -1,1141 +1,1350 @@
-<a id="typed-dictionaries-for-boto3-fis-module"></a>
-
-# Typed dictionaries for boto3 FIS module
+# Typed dictionaries
 
 > [Index](../README.md) > [FIS](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
-type annotations stubs module
-[mypy-boto3-fis](https://pypi.org/project/mypy-boto3-fis/).
+!!! note ""
 
-- [Typed dictionaries for boto3 FIS module](#typed-dictionaries-for-boto3-fis-module)
-  - [ActionParameterTypeDef](#actionparametertypedef)
-  - [ActionSummaryTypeDef](#actionsummarytypedef)
-  - [ActionTargetTypeDef](#actiontargettypedef)
-  - [ActionTypeDef](#actiontypedef)
-  - [CreateExperimentTemplateActionInputTypeDef](#createexperimenttemplateactioninputtypedef)
-  - [CreateExperimentTemplateLogConfigurationInputTypeDef](#createexperimenttemplatelogconfigurationinputtypedef)
-  - [CreateExperimentTemplateRequestRequestTypeDef](#createexperimenttemplaterequestrequesttypedef)
-  - [CreateExperimentTemplateResponseTypeDef](#createexperimenttemplateresponsetypedef)
-  - [CreateExperimentTemplateStopConditionInputTypeDef](#createexperimenttemplatestopconditioninputtypedef)
-  - [CreateExperimentTemplateTargetInputTypeDef](#createexperimenttemplatetargetinputtypedef)
-  - [DeleteExperimentTemplateRequestRequestTypeDef](#deleteexperimenttemplaterequestrequesttypedef)
-  - [DeleteExperimentTemplateResponseTypeDef](#deleteexperimenttemplateresponsetypedef)
-  - [ExperimentActionStateTypeDef](#experimentactionstatetypedef)
-  - [ExperimentActionTypeDef](#experimentactiontypedef)
-  - [ExperimentCloudWatchLogsLogConfigurationTypeDef](#experimentcloudwatchlogslogconfigurationtypedef)
-  - [ExperimentLogConfigurationTypeDef](#experimentlogconfigurationtypedef)
-  - [ExperimentS3LogConfigurationTypeDef](#experiments3logconfigurationtypedef)
-  - [ExperimentStateTypeDef](#experimentstatetypedef)
-  - [ExperimentStopConditionTypeDef](#experimentstopconditiontypedef)
-  - [ExperimentSummaryTypeDef](#experimentsummarytypedef)
-  - [ExperimentTargetFilterTypeDef](#experimenttargetfiltertypedef)
-  - [ExperimentTargetTypeDef](#experimenttargettypedef)
-  - [ExperimentTemplateActionTypeDef](#experimenttemplateactiontypedef)
-  - [ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef](#experimenttemplatecloudwatchlogslogconfigurationinputtypedef)
-  - [ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef](#experimenttemplatecloudwatchlogslogconfigurationtypedef)
-  - [ExperimentTemplateLogConfigurationTypeDef](#experimenttemplatelogconfigurationtypedef)
-  - [ExperimentTemplateS3LogConfigurationInputTypeDef](#experimenttemplates3logconfigurationinputtypedef)
-  - [ExperimentTemplateS3LogConfigurationTypeDef](#experimenttemplates3logconfigurationtypedef)
-  - [ExperimentTemplateStopConditionTypeDef](#experimenttemplatestopconditiontypedef)
-  - [ExperimentTemplateSummaryTypeDef](#experimenttemplatesummarytypedef)
-  - [ExperimentTemplateTargetFilterTypeDef](#experimenttemplatetargetfiltertypedef)
-  - [ExperimentTemplateTargetInputFilterTypeDef](#experimenttemplatetargetinputfiltertypedef)
-  - [ExperimentTemplateTargetTypeDef](#experimenttemplatetargettypedef)
-  - [ExperimentTemplateTypeDef](#experimenttemplatetypedef)
-  - [ExperimentTypeDef](#experimenttypedef)
-  - [GetActionRequestRequestTypeDef](#getactionrequestrequesttypedef)
-  - [GetActionResponseTypeDef](#getactionresponsetypedef)
-  - [GetExperimentRequestRequestTypeDef](#getexperimentrequestrequesttypedef)
-  - [GetExperimentResponseTypeDef](#getexperimentresponsetypedef)
-  - [GetExperimentTemplateRequestRequestTypeDef](#getexperimenttemplaterequestrequesttypedef)
-  - [GetExperimentTemplateResponseTypeDef](#getexperimenttemplateresponsetypedef)
-  - [GetTargetResourceTypeRequestRequestTypeDef](#gettargetresourcetyperequestrequesttypedef)
-  - [GetTargetResourceTypeResponseTypeDef](#gettargetresourcetyperesponsetypedef)
-  - [ListActionsRequestRequestTypeDef](#listactionsrequestrequesttypedef)
-  - [ListActionsResponseTypeDef](#listactionsresponsetypedef)
-  - [ListExperimentTemplatesRequestRequestTypeDef](#listexperimenttemplatesrequestrequesttypedef)
-  - [ListExperimentTemplatesResponseTypeDef](#listexperimenttemplatesresponsetypedef)
-  - [ListExperimentsRequestRequestTypeDef](#listexperimentsrequestrequesttypedef)
-  - [ListExperimentsResponseTypeDef](#listexperimentsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTargetResourceTypesRequestRequestTypeDef](#listtargetresourcetypesrequestrequesttypedef)
-  - [ListTargetResourceTypesResponseTypeDef](#listtargetresourcetypesresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartExperimentRequestRequestTypeDef](#startexperimentrequestrequesttypedef)
-  - [StartExperimentResponseTypeDef](#startexperimentresponsetypedef)
-  - [StopExperimentRequestRequestTypeDef](#stopexperimentrequestrequesttypedef)
-  - [StopExperimentResponseTypeDef](#stopexperimentresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TargetResourceTypeParameterTypeDef](#targetresourcetypeparametertypedef)
-  - [TargetResourceTypeSummaryTypeDef](#targetresourcetypesummarytypedef)
-  - [TargetResourceTypeTypeDef](#targetresourcetypetypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateExperimentTemplateActionInputItemTypeDef](#updateexperimenttemplateactioninputitemtypedef)
-  - [UpdateExperimentTemplateLogConfigurationInputTypeDef](#updateexperimenttemplatelogconfigurationinputtypedef)
-  - [UpdateExperimentTemplateRequestRequestTypeDef](#updateexperimenttemplaterequestrequesttypedef)
-  - [UpdateExperimentTemplateResponseTypeDef](#updateexperimenttemplateresponsetypedef)
-  - [UpdateExperimentTemplateStopConditionInputTypeDef](#updateexperimenttemplatestopconditioninputtypedef)
-  - [UpdateExperimentTemplateTargetInputTypeDef](#updateexperimenttemplatetargetinputtypedef)
-
-<a id="actionparametertypedef"></a>
+    Auto-generated documentation for [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
+    type annotations stubs module [mypy-boto3-fis](https://pypi.org/project/mypy-boto3-fis/).
 
 ## ActionParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ActionParameterTypeDef
+
+def get_value() -> ActionParameterTypeDef:
+    return {
+        "description": ...,
+    }
 ```
 
-Optional fields:
-
-- `description`: `str`
-- `required`: `bool`
-
-<a id="actionsummarytypedef"></a>
+```python title="Definition"
+class ActionParameterTypeDef(TypedDict):
+    description: NotRequired[str],
+    required: NotRequired[bool],
+```
 
 ## ActionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ActionSummaryTypeDef
+
+def get_value() -> ActionSummaryTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionSummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    description: NotRequired[str],
+    targets: NotRequired[Dict[str, ActionTargetTypeDef]],  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `id`: `str`
-- `description`: `str`
-- `targets`: `Dict`\[`str`,
-  [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="actiontargettypedef"></a>
-
+1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
 ## ActionTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ActionTargetTypeDef
+
+def get_value() -> ActionTargetTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `resourceType`: `str`
-
-<a id="actiontypedef"></a>
+```python title="Definition"
+class ActionTargetTypeDef(TypedDict):
+    resourceType: NotRequired[str],
+```
 
 ## ActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    id: NotRequired[str],
+    description: NotRequired[str],
+    parameters: NotRequired[Dict[str, ActionParameterTypeDef]],  # (1)
+    targets: NotRequired[Dict[str, ActionTargetTypeDef]],  # (2)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `id`: `str`
-- `description`: `str`
-- `parameters`: `Dict`\[`str`,
-  [ActionParameterTypeDef](./type_defs.md#actionparametertypedef)\]
-- `targets`: `Dict`\[`str`,
-  [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="createexperimenttemplateactioninputtypedef"></a>
-
+1. See [:material-code-braces: ActionParameterTypeDef](./type_defs.md#actionparametertypedef) 
+2. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
 ## CreateExperimentTemplateActionInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateActionInputTypeDef
+
+def get_value() -> CreateExperimentTemplateActionInputTypeDef:
+    return {
+        "actionId": ...,
+    }
 ```
 
-Required fields:
-
-- `actionId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `parameters`: `Mapping`\[`str`, `str`\]
-- `targets`: `Mapping`\[`str`, `str`\]
-- `startAfter`: `Sequence`\[`str`\]
-
-<a id="createexperimenttemplatelogconfigurationinputtypedef"></a>
+```python title="Definition"
+class CreateExperimentTemplateActionInputTypeDef(TypedDict):
+    actionId: str,
+    description: NotRequired[str],
+    parameters: NotRequired[Mapping[str, str]],
+    targets: NotRequired[Mapping[str, str]],
+    startAfter: NotRequired[Sequence[str]],
+```
 
 ## CreateExperimentTemplateLogConfigurationInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateLogConfigurationInputTypeDef
+
+def get_value() -> CreateExperimentTemplateLogConfigurationInputTypeDef:
+    return {
+        "logSchemaVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExperimentTemplateLogConfigurationInputTypeDef(TypedDict):
+    logSchemaVersion: int,
+    cloudWatchLogsConfiguration: NotRequired[ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef],  # (1)
+    s3Configuration: NotRequired[ExperimentTemplateS3LogConfigurationInputTypeDef],  # (2)
+```
 
-- `logSchemaVersion`: `int`
-
-Optional fields:
-
-- `cloudWatchLogsConfiguration`:
-  [ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef](./type_defs.md#experimenttemplatecloudwatchlogslogconfigurationinputtypedef)
-- `s3Configuration`:
-  [ExperimentTemplateS3LogConfigurationInputTypeDef](./type_defs.md#experimenttemplates3logconfigurationinputtypedef)
-
-<a id="createexperimenttemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef](./type_defs.md#experimenttemplatecloudwatchlogslogconfigurationinputtypedef) 
+2. See [:material-code-braces: ExperimentTemplateS3LogConfigurationInputTypeDef](./type_defs.md#experimenttemplates3logconfigurationinputtypedef) 
 ## CreateExperimentTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateRequestRequestTypeDef
+
+def get_value() -> CreateExperimentTemplateRequestRequestTypeDef:
+    return {
+        "clientToken": ...,
+        "description": ...,
+        "stopConditions": ...,
+        "actions": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExperimentTemplateRequestRequestTypeDef(TypedDict):
+    clientToken: str,
+    description: str,
+    stopConditions: Sequence[CreateExperimentTemplateStopConditionInputTypeDef],  # (1)
+    actions: Mapping[str, CreateExperimentTemplateActionInputTypeDef],  # (2)
+    roleArn: str,
+    targets: NotRequired[Mapping[str, CreateExperimentTemplateTargetInputTypeDef]],  # (3)
+    tags: NotRequired[Mapping[str, str]],
+    logConfiguration: NotRequired[CreateExperimentTemplateLogConfigurationInputTypeDef],  # (4)
+```
 
-- `clientToken`: `str`
-- `description`: `str`
-- `stopConditions`:
-  `Sequence`\[[CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef)\]
-- `actions`: `Mapping`\[`str`,
-  [CreateExperimentTemplateActionInputTypeDef](./type_defs.md#createexperimenttemplateactioninputtypedef)\]
-- `roleArn`: `str`
-
-Optional fields:
-
-- `targets`: `Mapping`\[`str`,
-  [CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `logConfiguration`:
-  [CreateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#createexperimenttemplatelogconfigurationinputtypedef)
-
-<a id="createexperimenttemplateresponsetypedef"></a>
-
+1. See [:material-code-braces: CreateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#createexperimenttemplatestopconditioninputtypedef) 
+2. See [:material-code-braces: CreateExperimentTemplateActionInputTypeDef](./type_defs.md#createexperimenttemplateactioninputtypedef) 
+3. See [:material-code-braces: CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef) 
+4. See [:material-code-braces: CreateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#createexperimenttemplatelogconfigurationinputtypedef) 
 ## CreateExperimentTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateResponseTypeDef
+
+def get_value() -> CreateExperimentTemplateResponseTypeDef:
+    return {
+        "experimentTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExperimentTemplateResponseTypeDef(TypedDict):
+    experimentTemplate: ExperimentTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experimentTemplate`:
-  [ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createexperimenttemplatestopconditioninputtypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateExperimentTemplateStopConditionInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateStopConditionInputTypeDef
+
+def get_value() -> CreateExperimentTemplateStopConditionInputTypeDef:
+    return {
+        "source": ...,
+    }
 ```
 
-Required fields:
-
-- `source`: `str`
-
-Optional fields:
-
-- `value`: `str`
-
-<a id="createexperimenttemplatetargetinputtypedef"></a>
+```python title="Definition"
+class CreateExperimentTemplateStopConditionInputTypeDef(TypedDict):
+    source: str,
+    value: NotRequired[str],
+```
 
 ## CreateExperimentTemplateTargetInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import CreateExperimentTemplateTargetInputTypeDef
+
+def get_value() -> CreateExperimentTemplateTargetInputTypeDef:
+    return {
+        "resourceType": ...,
+        "selectionMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExperimentTemplateTargetInputTypeDef(TypedDict):
+    resourceType: str,
+    selectionMode: str,
+    resourceArns: NotRequired[Sequence[str]],
+    resourceTags: NotRequired[Mapping[str, str]],
+    filters: NotRequired[Sequence[ExperimentTemplateTargetInputFilterTypeDef]],  # (1)
+    parameters: NotRequired[Mapping[str, str]],
+```
 
-- `resourceType`: `str`
-- `selectionMode`: `str`
-
-Optional fields:
-
-- `resourceArns`: `Sequence`\[`str`\]
-- `resourceTags`: `Mapping`\[`str`, `str`\]
-- `filters`:
-  `Sequence`\[[ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef)\]
-- `parameters`: `Mapping`\[`str`, `str`\]
-
-<a id="deleteexperimenttemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef) 
 ## DeleteExperimentTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import DeleteExperimentTemplateRequestRequestTypeDef
+
+def get_value() -> DeleteExperimentTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="deleteexperimenttemplateresponsetypedef"></a>
+```python title="Definition"
+class DeleteExperimentTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## DeleteExperimentTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import DeleteExperimentTemplateResponseTypeDef
+
+def get_value() -> DeleteExperimentTemplateResponseTypeDef:
+    return {
+        "experimentTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteExperimentTemplateResponseTypeDef(TypedDict):
+    experimentTemplate: ExperimentTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experimentTemplate`:
-  [ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="experimentactionstatetypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExperimentActionStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentActionStateTypeDef
+
+def get_value() -> ExperimentActionStateTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentActionStateTypeDef(TypedDict):
+    status: NotRequired[ExperimentActionStatusType],  # (1)
+    reason: NotRequired[str],
+```
 
-- `status`:
-  [ExperimentActionStatusType](./literals.md#experimentactionstatustype)
-- `reason`: `str`
-
-<a id="experimentactiontypedef"></a>
-
+1. See [:material-code-brackets: ExperimentActionStatusType](./literals.md#experimentactionstatustype) 
 ## ExperimentActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentActionTypeDef
+
+def get_value() -> ExperimentActionTypeDef:
+    return {
+        "actionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentActionTypeDef(TypedDict):
+    actionId: NotRequired[str],
+    description: NotRequired[str],
+    parameters: NotRequired[Dict[str, str]],
+    targets: NotRequired[Dict[str, str]],
+    startAfter: NotRequired[List[str]],
+    state: NotRequired[ExperimentActionStateTypeDef],  # (1)
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+```
 
-- `actionId`: `str`
-- `description`: `str`
-- `parameters`: `Dict`\[`str`, `str`\]
-- `targets`: `Dict`\[`str`, `str`\]
-- `startAfter`: `List`\[`str`\]
-- `state`:
-  [ExperimentActionStateTypeDef](./type_defs.md#experimentactionstatetypedef)
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-
-<a id="experimentcloudwatchlogslogconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ExperimentActionStateTypeDef](./type_defs.md#experimentactionstatetypedef) 
 ## ExperimentCloudWatchLogsLogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentCloudWatchLogsLogConfigurationTypeDef
+
+def get_value() -> ExperimentCloudWatchLogsLogConfigurationTypeDef:
+    return {
+        "logGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `logGroupArn`: `str`
-
-<a id="experimentlogconfigurationtypedef"></a>
+```python title="Definition"
+class ExperimentCloudWatchLogsLogConfigurationTypeDef(TypedDict):
+    logGroupArn: NotRequired[str],
+```
 
 ## ExperimentLogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentLogConfigurationTypeDef
+
+def get_value() -> ExperimentLogConfigurationTypeDef:
+    return {
+        "cloudWatchLogsConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentLogConfigurationTypeDef(TypedDict):
+    cloudWatchLogsConfiguration: NotRequired[ExperimentCloudWatchLogsLogConfigurationTypeDef],  # (1)
+    s3Configuration: NotRequired[ExperimentS3LogConfigurationTypeDef],  # (2)
+    logSchemaVersion: NotRequired[int],
+```
 
-- `cloudWatchLogsConfiguration`:
-  [ExperimentCloudWatchLogsLogConfigurationTypeDef](./type_defs.md#experimentcloudwatchlogslogconfigurationtypedef)
-- `s3Configuration`:
-  [ExperimentS3LogConfigurationTypeDef](./type_defs.md#experiments3logconfigurationtypedef)
-- `logSchemaVersion`: `int`
-
-<a id="experiments3logconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ExperimentCloudWatchLogsLogConfigurationTypeDef](./type_defs.md#experimentcloudwatchlogslogconfigurationtypedef) 
+2. See [:material-code-braces: ExperimentS3LogConfigurationTypeDef](./type_defs.md#experiments3logconfigurationtypedef) 
 ## ExperimentS3LogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentS3LogConfigurationTypeDef
+
+def get_value() -> ExperimentS3LogConfigurationTypeDef:
+    return {
+        "bucketName": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucketName`: `str`
-- `prefix`: `str`
-
-<a id="experimentstatetypedef"></a>
+```python title="Definition"
+class ExperimentS3LogConfigurationTypeDef(TypedDict):
+    bucketName: NotRequired[str],
+    prefix: NotRequired[str],
+```
 
 ## ExperimentStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentStateTypeDef
+
+def get_value() -> ExperimentStateTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentStateTypeDef(TypedDict):
+    status: NotRequired[ExperimentStatusType],  # (1)
+    reason: NotRequired[str],
+```
 
-- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
-- `reason`: `str`
-
-<a id="experimentstopconditiontypedef"></a>
-
+1. See [:material-code-brackets: ExperimentStatusType](./literals.md#experimentstatustype) 
 ## ExperimentStopConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentStopConditionTypeDef
+
+def get_value() -> ExperimentStopConditionTypeDef:
+    return {
+        "source": ...,
+    }
 ```
 
-Optional fields:
-
-- `source`: `str`
-- `value`: `str`
-
-<a id="experimentsummarytypedef"></a>
+```python title="Definition"
+class ExperimentStopConditionTypeDef(TypedDict):
+    source: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## ExperimentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentSummaryTypeDef
+
+def get_value() -> ExperimentSummaryTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentSummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    experimentTemplateId: NotRequired[str],
+    state: NotRequired[ExperimentStateTypeDef],  # (1)
+    creationTime: NotRequired[datetime],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `id`: `str`
-- `experimentTemplateId`: `str`
-- `state`: [ExperimentStateTypeDef](./type_defs.md#experimentstatetypedef)
-- `creationTime`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="experimenttargetfiltertypedef"></a>
-
+1. See [:material-code-braces: ExperimentStateTypeDef](./type_defs.md#experimentstatetypedef) 
 ## ExperimentTargetFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTargetFilterTypeDef
+
+def get_value() -> ExperimentTargetFilterTypeDef:
+    return {
+        "path": ...,
+    }
 ```
 
-Optional fields:
-
-- `path`: `str`
-- `values`: `List`\[`str`\]
-
-<a id="experimenttargettypedef"></a>
+```python title="Definition"
+class ExperimentTargetFilterTypeDef(TypedDict):
+    path: NotRequired[str],
+    values: NotRequired[List[str]],
+```
 
 ## ExperimentTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTargetTypeDef
+
+def get_value() -> ExperimentTargetTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentTargetTypeDef(TypedDict):
+    resourceType: NotRequired[str],
+    resourceArns: NotRequired[List[str]],
+    resourceTags: NotRequired[Dict[str, str]],
+    filters: NotRequired[List[ExperimentTargetFilterTypeDef]],  # (1)
+    selectionMode: NotRequired[str],
+    parameters: NotRequired[Dict[str, str]],
+```
 
-- `resourceType`: `str`
-- `resourceArns`: `List`\[`str`\]
-- `resourceTags`: `Dict`\[`str`, `str`\]
-- `filters`:
-  `List`\[[ExperimentTargetFilterTypeDef](./type_defs.md#experimenttargetfiltertypedef)\]
-- `selectionMode`: `str`
-- `parameters`: `Dict`\[`str`, `str`\]
-
-<a id="experimenttemplateactiontypedef"></a>
-
+1. See [:material-code-braces: ExperimentTargetFilterTypeDef](./type_defs.md#experimenttargetfiltertypedef) 
 ## ExperimentTemplateActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateActionTypeDef
+
+def get_value() -> ExperimentTemplateActionTypeDef:
+    return {
+        "actionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `actionId`: `str`
-- `description`: `str`
-- `parameters`: `Dict`\[`str`, `str`\]
-- `targets`: `Dict`\[`str`, `str`\]
-- `startAfter`: `List`\[`str`\]
-
-<a id="experimenttemplatecloudwatchlogslogconfigurationinputtypedef"></a>
+```python title="Definition"
+class ExperimentTemplateActionTypeDef(TypedDict):
+    actionId: NotRequired[str],
+    description: NotRequired[str],
+    parameters: NotRequired[Dict[str, str]],
+    targets: NotRequired[Dict[str, str]],
+    startAfter: NotRequired[List[str]],
+```
 
 ## ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef
+
+def get_value() -> ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef:
+    return {
+        "logGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `logGroupArn`: `str`
-
-<a id="experimenttemplatecloudwatchlogslogconfigurationtypedef"></a>
+```python title="Definition"
+class ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef(TypedDict):
+    logGroupArn: str,
+```
 
 ## ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef
+
+def get_value() -> ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef:
+    return {
+        "logGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `logGroupArn`: `str`
-
-<a id="experimenttemplatelogconfigurationtypedef"></a>
+```python title="Definition"
+class ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef(TypedDict):
+    logGroupArn: NotRequired[str],
+```
 
 ## ExperimentTemplateLogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateLogConfigurationTypeDef
+
+def get_value() -> ExperimentTemplateLogConfigurationTypeDef:
+    return {
+        "cloudWatchLogsConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentTemplateLogConfigurationTypeDef(TypedDict):
+    cloudWatchLogsConfiguration: NotRequired[ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef],  # (1)
+    s3Configuration: NotRequired[ExperimentTemplateS3LogConfigurationTypeDef],  # (2)
+    logSchemaVersion: NotRequired[int],
+```
 
-- `cloudWatchLogsConfiguration`:
-  [ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef](./type_defs.md#experimenttemplatecloudwatchlogslogconfigurationtypedef)
-- `s3Configuration`:
-  [ExperimentTemplateS3LogConfigurationTypeDef](./type_defs.md#experimenttemplates3logconfigurationtypedef)
-- `logSchemaVersion`: `int`
-
-<a id="experimenttemplates3logconfigurationinputtypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef](./type_defs.md#experimenttemplatecloudwatchlogslogconfigurationtypedef) 
+2. See [:material-code-braces: ExperimentTemplateS3LogConfigurationTypeDef](./type_defs.md#experimenttemplates3logconfigurationtypedef) 
 ## ExperimentTemplateS3LogConfigurationInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateS3LogConfigurationInputTypeDef
+
+def get_value() -> ExperimentTemplateS3LogConfigurationInputTypeDef:
+    return {
+        "bucketName": ...,
+    }
 ```
 
-Required fields:
-
-- `bucketName`: `str`
-
-Optional fields:
-
-- `prefix`: `str`
-
-<a id="experimenttemplates3logconfigurationtypedef"></a>
+```python title="Definition"
+class ExperimentTemplateS3LogConfigurationInputTypeDef(TypedDict):
+    bucketName: str,
+    prefix: NotRequired[str],
+```
 
 ## ExperimentTemplateS3LogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateS3LogConfigurationTypeDef
+
+def get_value() -> ExperimentTemplateS3LogConfigurationTypeDef:
+    return {
+        "bucketName": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucketName`: `str`
-- `prefix`: `str`
-
-<a id="experimenttemplatestopconditiontypedef"></a>
+```python title="Definition"
+class ExperimentTemplateS3LogConfigurationTypeDef(TypedDict):
+    bucketName: NotRequired[str],
+    prefix: NotRequired[str],
+```
 
 ## ExperimentTemplateStopConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateStopConditionTypeDef
+
+def get_value() -> ExperimentTemplateStopConditionTypeDef:
+    return {
+        "source": ...,
+    }
 ```
 
-Optional fields:
-
-- `source`: `str`
-- `value`: `str`
-
-<a id="experimenttemplatesummarytypedef"></a>
+```python title="Definition"
+class ExperimentTemplateStopConditionTypeDef(TypedDict):
+    source: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## ExperimentTemplateSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateSummaryTypeDef
+
+def get_value() -> ExperimentTemplateSummaryTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `description`: `str`
-- `creationTime`: `datetime`
-- `lastUpdateTime`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="experimenttemplatetargetfiltertypedef"></a>
+```python title="Definition"
+class ExperimentTemplateSummaryTypeDef(TypedDict):
+    id: NotRequired[str],
+    description: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    tags: NotRequired[Dict[str, str]],
+```
 
 ## ExperimentTemplateTargetFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateTargetFilterTypeDef
+
+def get_value() -> ExperimentTemplateTargetFilterTypeDef:
+    return {
+        "path": ...,
+    }
 ```
 
-Optional fields:
-
-- `path`: `str`
-- `values`: `List`\[`str`\]
-
-<a id="experimenttemplatetargetinputfiltertypedef"></a>
+```python title="Definition"
+class ExperimentTemplateTargetFilterTypeDef(TypedDict):
+    path: NotRequired[str],
+    values: NotRequired[List[str]],
+```
 
 ## ExperimentTemplateTargetInputFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateTargetInputFilterTypeDef
+
+def get_value() -> ExperimentTemplateTargetInputFilterTypeDef:
+    return {
+        "path": ...,
+        "values": ...,
+    }
 ```
 
-Required fields:
-
-- `path`: `str`
-- `values`: `Sequence`\[`str`\]
-
-<a id="experimenttemplatetargettypedef"></a>
+```python title="Definition"
+class ExperimentTemplateTargetInputFilterTypeDef(TypedDict):
+    path: str,
+    values: Sequence[str],
+```
 
 ## ExperimentTemplateTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateTargetTypeDef
+
+def get_value() -> ExperimentTemplateTargetTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentTemplateTargetTypeDef(TypedDict):
+    resourceType: NotRequired[str],
+    resourceArns: NotRequired[List[str]],
+    resourceTags: NotRequired[Dict[str, str]],
+    filters: NotRequired[List[ExperimentTemplateTargetFilterTypeDef]],  # (1)
+    selectionMode: NotRequired[str],
+    parameters: NotRequired[Dict[str, str]],
+```
 
-- `resourceType`: `str`
-- `resourceArns`: `List`\[`str`\]
-- `resourceTags`: `Dict`\[`str`, `str`\]
-- `filters`:
-  `List`\[[ExperimentTemplateTargetFilterTypeDef](./type_defs.md#experimenttemplatetargetfiltertypedef)\]
-- `selectionMode`: `str`
-- `parameters`: `Dict`\[`str`, `str`\]
-
-<a id="experimenttemplatetypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateTargetFilterTypeDef](./type_defs.md#experimenttemplatetargetfiltertypedef) 
 ## ExperimentTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTemplateTypeDef
+
+def get_value() -> ExperimentTemplateTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentTemplateTypeDef(TypedDict):
+    id: NotRequired[str],
+    description: NotRequired[str],
+    targets: NotRequired[Dict[str, ExperimentTemplateTargetTypeDef]],  # (1)
+    actions: NotRequired[Dict[str, ExperimentTemplateActionTypeDef]],  # (2)
+    stopConditions: NotRequired[List[ExperimentTemplateStopConditionTypeDef]],  # (3)
+    creationTime: NotRequired[datetime],
+    lastUpdateTime: NotRequired[datetime],
+    roleArn: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    logConfiguration: NotRequired[ExperimentTemplateLogConfigurationTypeDef],  # (4)
+```
 
-- `id`: `str`
-- `description`: `str`
-- `targets`: `Dict`\[`str`,
-  [ExperimentTemplateTargetTypeDef](./type_defs.md#experimenttemplatetargettypedef)\]
-- `actions`: `Dict`\[`str`,
-  [ExperimentTemplateActionTypeDef](./type_defs.md#experimenttemplateactiontypedef)\]
-- `stopConditions`:
-  `List`\[[ExperimentTemplateStopConditionTypeDef](./type_defs.md#experimenttemplatestopconditiontypedef)\]
-- `creationTime`: `datetime`
-- `lastUpdateTime`: `datetime`
-- `roleArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `logConfiguration`:
-  [ExperimentTemplateLogConfigurationTypeDef](./type_defs.md#experimenttemplatelogconfigurationtypedef)
-
-<a id="experimenttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateTargetTypeDef](./type_defs.md#experimenttemplatetargettypedef) 
+2. See [:material-code-braces: ExperimentTemplateActionTypeDef](./type_defs.md#experimenttemplateactiontypedef) 
+3. See [:material-code-braces: ExperimentTemplateStopConditionTypeDef](./type_defs.md#experimenttemplatestopconditiontypedef) 
+4. See [:material-code-braces: ExperimentTemplateLogConfigurationTypeDef](./type_defs.md#experimenttemplatelogconfigurationtypedef) 
 ## ExperimentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ExperimentTypeDef
+
+def get_value() -> ExperimentTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExperimentTypeDef(TypedDict):
+    id: NotRequired[str],
+    experimentTemplateId: NotRequired[str],
+    roleArn: NotRequired[str],
+    state: NotRequired[ExperimentStateTypeDef],  # (1)
+    targets: NotRequired[Dict[str, ExperimentTargetTypeDef]],  # (2)
+    actions: NotRequired[Dict[str, ExperimentActionTypeDef]],  # (3)
+    stopConditions: NotRequired[List[ExperimentStopConditionTypeDef]],  # (4)
+    creationTime: NotRequired[datetime],
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    tags: NotRequired[Dict[str, str]],
+    logConfiguration: NotRequired[ExperimentLogConfigurationTypeDef],  # (5)
+```
 
-- `id`: `str`
-- `experimentTemplateId`: `str`
-- `roleArn`: `str`
-- `state`: [ExperimentStateTypeDef](./type_defs.md#experimentstatetypedef)
-- `targets`: `Dict`\[`str`,
-  [ExperimentTargetTypeDef](./type_defs.md#experimenttargettypedef)\]
-- `actions`: `Dict`\[`str`,
-  [ExperimentActionTypeDef](./type_defs.md#experimentactiontypedef)\]
-- `stopConditions`:
-  `List`\[[ExperimentStopConditionTypeDef](./type_defs.md#experimentstopconditiontypedef)\]
-- `creationTime`: `datetime`
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `logConfiguration`:
-  [ExperimentLogConfigurationTypeDef](./type_defs.md#experimentlogconfigurationtypedef)
-
-<a id="getactionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentStateTypeDef](./type_defs.md#experimentstatetypedef) 
+2. See [:material-code-braces: ExperimentTargetTypeDef](./type_defs.md#experimenttargettypedef) 
+3. See [:material-code-braces: ExperimentActionTypeDef](./type_defs.md#experimentactiontypedef) 
+4. See [:material-code-braces: ExperimentStopConditionTypeDef](./type_defs.md#experimentstopconditiontypedef) 
+5. See [:material-code-braces: ExperimentLogConfigurationTypeDef](./type_defs.md#experimentlogconfigurationtypedef) 
 ## GetActionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import GetActionRequestRequestTypeDef
+
+def get_value() -> GetActionRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="getactionresponsetypedef"></a>
+```python title="Definition"
+class GetActionRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## GetActionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import GetActionResponseTypeDef
+
+def get_value() -> GetActionResponseTypeDef:
+    return {
+        "action": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetActionResponseTypeDef(TypedDict):
+    action: ActionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `action`: [ActionTypeDef](./type_defs.md#actiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getexperimentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetExperimentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import GetExperimentRequestRequestTypeDef
+
+def get_value() -> GetExperimentRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="getexperimentresponsetypedef"></a>
+```python title="Definition"
+class GetExperimentRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## GetExperimentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import GetExperimentResponseTypeDef
+
+def get_value() -> GetExperimentResponseTypeDef:
+    return {
+        "experiment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetExperimentResponseTypeDef(TypedDict):
+    experiment: ExperimentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getexperimenttemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTypeDef](./type_defs.md#experimenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetExperimentTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import GetExperimentTemplateRequestRequestTypeDef
+
+def get_value() -> GetExperimentTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="getexperimenttemplateresponsetypedef"></a>
+```python title="Definition"
+class GetExperimentTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## GetExperimentTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import GetExperimentTemplateResponseTypeDef
+
+def get_value() -> GetExperimentTemplateResponseTypeDef:
+    return {
+        "experimentTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetExperimentTemplateResponseTypeDef(TypedDict):
+    experimentTemplate: ExperimentTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experimentTemplate`:
-  [ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettargetresourcetyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTargetResourceTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import GetTargetResourceTypeRequestRequestTypeDef
+
+def get_value() -> GetTargetResourceTypeRequestRequestTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceType`: `str`
-
-<a id="gettargetresourcetyperesponsetypedef"></a>
+```python title="Definition"
+class GetTargetResourceTypeRequestRequestTypeDef(TypedDict):
+    resourceType: str,
+```
 
 ## GetTargetResourceTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import GetTargetResourceTypeResponseTypeDef
+
+def get_value() -> GetTargetResourceTypeResponseTypeDef:
+    return {
+        "targetResourceType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTargetResourceTypeResponseTypeDef(TypedDict):
+    targetResourceType: TargetResourceTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `targetResourceType`:
-  [TargetResourceTypeTypeDef](./type_defs.md#targetresourcetypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listactionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TargetResourceTypeTypeDef](./type_defs.md#targetresourcetypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListActionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListActionsRequestRequestTypeDef
+
+def get_value() -> ListActionsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listactionsresponsetypedef"></a>
+```python title="Definition"
+class ListActionsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListActionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListActionsResponseTypeDef
+
+def get_value() -> ListActionsResponseTypeDef:
+    return {
+        "actions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListActionsResponseTypeDef(TypedDict):
+    actions: List[ActionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `actions`:
-  `List`\[[ActionSummaryTypeDef](./type_defs.md#actionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listexperimenttemplatesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionSummaryTypeDef](./type_defs.md#actionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListExperimentTemplatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListExperimentTemplatesRequestRequestTypeDef
+
+def get_value() -> ListExperimentTemplatesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listexperimenttemplatesresponsetypedef"></a>
+```python title="Definition"
+class ListExperimentTemplatesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListExperimentTemplatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListExperimentTemplatesResponseTypeDef
+
+def get_value() -> ListExperimentTemplatesResponseTypeDef:
+    return {
+        "experimentTemplates": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExperimentTemplatesResponseTypeDef(TypedDict):
+    experimentTemplates: List[ExperimentTemplateSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experimentTemplates`:
-  `List`\[[ExperimentTemplateSummaryTypeDef](./type_defs.md#experimenttemplatesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listexperimentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateSummaryTypeDef](./type_defs.md#experimenttemplatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListExperimentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListExperimentsRequestRequestTypeDef
+
+def get_value() -> ListExperimentsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listexperimentsresponsetypedef"></a>
+```python title="Definition"
+class ListExperimentsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListExperimentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListExperimentsResponseTypeDef
+
+def get_value() -> ListExperimentsResponseTypeDef:
+    return {
+        "experiments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExperimentsResponseTypeDef(TypedDict):
+    experiments: List[ExperimentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experiments`:
-  `List`\[[ExperimentSummaryTypeDef](./type_defs.md#experimentsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentSummaryTypeDef](./type_defs.md#experimentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtargetresourcetypesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTargetResourceTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListTargetResourceTypesRequestRequestTypeDef
+
+def get_value() -> ListTargetResourceTypesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listtargetresourcetypesresponsetypedef"></a>
+```python title="Definition"
+class ListTargetResourceTypesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTargetResourceTypesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ListTargetResourceTypesResponseTypeDef
+
+def get_value() -> ListTargetResourceTypesResponseTypeDef:
+    return {
+        "targetResourceTypes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTargetResourceTypesResponseTypeDef(TypedDict):
+    targetResourceTypes: List[TargetResourceTypeSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `targetResourceTypes`:
-  `List`\[[TargetResourceTypeSummaryTypeDef](./type_defs.md#targetresourcetypesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: TargetResourceTypeSummaryTypeDef](./type_defs.md#targetresourcetypesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startexperimentrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartExperimentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import StartExperimentRequestRequestTypeDef
+
+def get_value() -> StartExperimentRequestRequestTypeDef:
+    return {
+        "clientToken": ...,
+        "experimentTemplateId": ...,
+    }
 ```
 
-Required fields:
-
-- `clientToken`: `str`
-- `experimentTemplateId`: `str`
-
-Optional fields:
-
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="startexperimentresponsetypedef"></a>
+```python title="Definition"
+class StartExperimentRequestRequestTypeDef(TypedDict):
+    clientToken: str,
+    experimentTemplateId: str,
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## StartExperimentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import StartExperimentResponseTypeDef
+
+def get_value() -> StartExperimentResponseTypeDef:
+    return {
+        "experiment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartExperimentResponseTypeDef(TypedDict):
+    experiment: ExperimentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopexperimentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTypeDef](./type_defs.md#experimenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopExperimentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import StopExperimentRequestRequestTypeDef
+
+def get_value() -> StopExperimentRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="stopexperimentresponsetypedef"></a>
+```python title="Definition"
+class StopExperimentRequestRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## StopExperimentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import StopExperimentResponseTypeDef
+
+def get_value() -> StopExperimentResponseTypeDef:
+    return {
+        "experiment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopExperimentResponseTypeDef(TypedDict):
+    experiment: ExperimentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTypeDef](./type_defs.md#experimenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="targetresourcetypeparametertypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TargetResourceTypeParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import TargetResourceTypeParameterTypeDef
+
+def get_value() -> TargetResourceTypeParameterTypeDef:
+    return {
+        "description": ...,
+    }
 ```
 
-Optional fields:
-
-- `description`: `str`
-- `required`: `bool`
-
-<a id="targetresourcetypesummarytypedef"></a>
+```python title="Definition"
+class TargetResourceTypeParameterTypeDef(TypedDict):
+    description: NotRequired[str],
+    required: NotRequired[bool],
+```
 
 ## TargetResourceTypeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import TargetResourceTypeSummaryTypeDef
+
+def get_value() -> TargetResourceTypeSummaryTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `resourceType`: `str`
-- `description`: `str`
-
-<a id="targetresourcetypetypedef"></a>
+```python title="Definition"
+class TargetResourceTypeSummaryTypeDef(TypedDict):
+    resourceType: NotRequired[str],
+    description: NotRequired[str],
+```
 
 ## TargetResourceTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import TargetResourceTypeTypeDef
+
+def get_value() -> TargetResourceTypeTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TargetResourceTypeTypeDef(TypedDict):
+    resourceType: NotRequired[str],
+    description: NotRequired[str],
+    parameters: NotRequired[Dict[str, TargetResourceTypeParameterTypeDef]],  # (1)
+```
 
-- `resourceType`: `str`
-- `description`: `str`
-- `parameters`: `Dict`\[`str`,
-  [TargetResourceTypeParameterTypeDef](./type_defs.md#targetresourcetypeparametertypedef)\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TargetResourceTypeParameterTypeDef](./type_defs.md#targetresourcetypeparametertypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-Optional fields:
-
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateexperimenttemplateactioninputitemtypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: NotRequired[Sequence[str]],
+```
 
 ## UpdateExperimentTemplateActionInputItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateActionInputItemTypeDef
+
+def get_value() -> UpdateExperimentTemplateActionInputItemTypeDef:
+    return {
+        "actionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `actionId`: `str`
-- `description`: `str`
-- `parameters`: `Mapping`\[`str`, `str`\]
-- `targets`: `Mapping`\[`str`, `str`\]
-- `startAfter`: `Sequence`\[`str`\]
-
-<a id="updateexperimenttemplatelogconfigurationinputtypedef"></a>
+```python title="Definition"
+class UpdateExperimentTemplateActionInputItemTypeDef(TypedDict):
+    actionId: NotRequired[str],
+    description: NotRequired[str],
+    parameters: NotRequired[Mapping[str, str]],
+    targets: NotRequired[Mapping[str, str]],
+    startAfter: NotRequired[Sequence[str]],
+```
 
 ## UpdateExperimentTemplateLogConfigurationInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateLogConfigurationInputTypeDef
+
+def get_value() -> UpdateExperimentTemplateLogConfigurationInputTypeDef:
+    return {
+        "cloudWatchLogsConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateExperimentTemplateLogConfigurationInputTypeDef(TypedDict):
+    cloudWatchLogsConfiguration: NotRequired[ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef],  # (1)
+    s3Configuration: NotRequired[ExperimentTemplateS3LogConfigurationInputTypeDef],  # (2)
+    logSchemaVersion: NotRequired[int],
+```
 
-- `cloudWatchLogsConfiguration`:
-  [ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef](./type_defs.md#experimenttemplatecloudwatchlogslogconfigurationinputtypedef)
-- `s3Configuration`:
-  [ExperimentTemplateS3LogConfigurationInputTypeDef](./type_defs.md#experimenttemplates3logconfigurationinputtypedef)
-- `logSchemaVersion`: `int`
-
-<a id="updateexperimenttemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef](./type_defs.md#experimenttemplatecloudwatchlogslogconfigurationinputtypedef) 
+2. See [:material-code-braces: ExperimentTemplateS3LogConfigurationInputTypeDef](./type_defs.md#experimenttemplates3logconfigurationinputtypedef) 
 ## UpdateExperimentTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateExperimentTemplateRequestRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateExperimentTemplateRequestRequestTypeDef(TypedDict):
+    id: str,
+    description: NotRequired[str],
+    stopConditions: NotRequired[Sequence[UpdateExperimentTemplateStopConditionInputTypeDef]],  # (1)
+    targets: NotRequired[Mapping[str, UpdateExperimentTemplateTargetInputTypeDef]],  # (2)
+    actions: NotRequired[Mapping[str, UpdateExperimentTemplateActionInputItemTypeDef]],  # (3)
+    roleArn: NotRequired[str],
+    logConfiguration: NotRequired[UpdateExperimentTemplateLogConfigurationInputTypeDef],  # (4)
+```
 
-- `id`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `stopConditions`:
-  `Sequence`\[[UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef)\]
-- `targets`: `Mapping`\[`str`,
-  [UpdateExperimentTemplateTargetInputTypeDef](./type_defs.md#updateexperimenttemplatetargetinputtypedef)\]
-- `actions`: `Mapping`\[`str`,
-  [UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef)\]
-- `roleArn`: `str`
-- `logConfiguration`:
-  [UpdateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#updateexperimenttemplatelogconfigurationinputtypedef)
-
-<a id="updateexperimenttemplateresponsetypedef"></a>
-
+1. See [:material-code-braces: UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef) 
+2. See [:material-code-braces: UpdateExperimentTemplateTargetInputTypeDef](./type_defs.md#updateexperimenttemplatetargetinputtypedef) 
+3. See [:material-code-braces: UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef) 
+4. See [:material-code-braces: UpdateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#updateexperimenttemplatelogconfigurationinputtypedef) 
 ## UpdateExperimentTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateResponseTypeDef
+
+def get_value() -> UpdateExperimentTemplateResponseTypeDef:
+    return {
+        "experimentTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateExperimentTemplateResponseTypeDef(TypedDict):
+    experimentTemplate: ExperimentTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `experimentTemplate`:
-  [ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateexperimenttemplatestopconditioninputtypedef"></a>
-
+1. See [:material-code-braces: ExperimentTemplateTypeDef](./type_defs.md#experimenttemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateExperimentTemplateStopConditionInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateStopConditionInputTypeDef
+
+def get_value() -> UpdateExperimentTemplateStopConditionInputTypeDef:
+    return {
+        "source": ...,
+    }
 ```
 
-Required fields:
-
-- `source`: `str`
-
-Optional fields:
-
-- `value`: `str`
-
-<a id="updateexperimenttemplatetargetinputtypedef"></a>
+```python title="Definition"
+class UpdateExperimentTemplateStopConditionInputTypeDef(TypedDict):
+    source: str,
+    value: NotRequired[str],
+```
 
 ## UpdateExperimentTemplateTargetInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fis.type_defs import UpdateExperimentTemplateTargetInputTypeDef
+
+def get_value() -> UpdateExperimentTemplateTargetInputTypeDef:
+    return {
+        "resourceType": ...,
+        "selectionMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateExperimentTemplateTargetInputTypeDef(TypedDict):
+    resourceType: str,
+    selectionMode: str,
+    resourceArns: NotRequired[Sequence[str]],
+    resourceTags: NotRequired[Mapping[str, str]],
+    filters: NotRequired[Sequence[ExperimentTemplateTargetInputFilterTypeDef]],  # (1)
+    parameters: NotRequired[Mapping[str, str]],
+```
 
-- `resourceType`: `str`
-- `selectionMode`: `str`
-
-Optional fields:
-
-- `resourceArns`: `Sequence`\[`str`\]
-- `resourceTags`: `Mapping`\[`str`, `str`\]
-- `filters`:
-  `Sequence`\[[ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef)\]
-- `parameters`: `Mapping`\[`str`, `str`\]
+1. See [:material-code-braces: ExperimentTemplateTargetInputFilterTypeDef](./type_defs.md#experimenttemplatetargetinputfiltertypedef) 

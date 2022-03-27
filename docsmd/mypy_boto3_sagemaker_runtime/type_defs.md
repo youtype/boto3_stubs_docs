@@ -1,109 +1,127 @@
-<a id="typed-dictionaries-for-boto3-sagemakerruntime-module"></a>
-
-# Typed dictionaries for boto3 SageMakerRuntime module
+# Typed dictionaries
 
 > [Index](../README.md) > [SageMakerRuntime](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
-type annotations stubs module
-[mypy-boto3-sagemaker-runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SageMakerRuntime module](#typed-dictionaries-for-boto3-sagemakerruntime-module)
-  - [InvokeEndpointAsyncInputRequestTypeDef](#invokeendpointasyncinputrequesttypedef)
-  - [InvokeEndpointAsyncOutputTypeDef](#invokeendpointasyncoutputtypedef)
-  - [InvokeEndpointInputRequestTypeDef](#invokeendpointinputrequesttypedef)
-  - [InvokeEndpointOutputTypeDef](#invokeendpointoutputtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-
-<a id="invokeendpointasyncinputrequesttypedef"></a>
+    Auto-generated documentation for [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
+    type annotations stubs module [mypy-boto3-sagemaker-runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
 ## InvokeEndpointAsyncInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointAsyncInputRequestTypeDef
+
+def get_value() -> InvokeEndpointAsyncInputRequestTypeDef:
+    return {
+        "EndpointName": ...,
+        "InputLocation": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointName`: `str`
-- `InputLocation`: `str`
-
-Optional fields:
-
-- `ContentType`: `str`
-- `Accept`: `str`
-- `CustomAttributes`: `str`
-- `InferenceId`: `str`
-- `RequestTTLSeconds`: `int`
-
-<a id="invokeendpointasyncoutputtypedef"></a>
+```python title="Definition"
+class InvokeEndpointAsyncInputRequestTypeDef(TypedDict):
+    EndpointName: str,
+    InputLocation: str,
+    ContentType: NotRequired[str],
+    Accept: NotRequired[str],
+    CustomAttributes: NotRequired[str],
+    InferenceId: NotRequired[str],
+    RequestTTLSeconds: NotRequired[int],
+```
 
 ## InvokeEndpointAsyncOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointAsyncOutputTypeDef
+
+def get_value() -> InvokeEndpointAsyncOutputTypeDef:
+    return {
+        "InferenceId": ...,
+        "OutputLocation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvokeEndpointAsyncOutputTypeDef(TypedDict):
+    InferenceId: str,
+    OutputLocation: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `InferenceId`: `str`
-- `OutputLocation`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="invokeendpointinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InvokeEndpointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointInputRequestTypeDef
+
+def get_value() -> InvokeEndpointInputRequestTypeDef:
+    return {
+        "EndpointName": ...,
+        "Body": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointName`: `str`
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-Optional fields:
-
-- `ContentType`: `str`
-- `Accept`: `str`
-- `CustomAttributes`: `str`
-- `TargetModel`: `str`
-- `TargetVariant`: `str`
-- `TargetContainerHostname`: `str`
-- `InferenceId`: `str`
-
-<a id="invokeendpointoutputtypedef"></a>
+```python title="Definition"
+class InvokeEndpointInputRequestTypeDef(TypedDict):
+    EndpointName: str,
+    Body: Union[bytes, IO[bytes], StreamingBody],
+    ContentType: NotRequired[str],
+    Accept: NotRequired[str],
+    CustomAttributes: NotRequired[str],
+    TargetModel: NotRequired[str],
+    TargetVariant: NotRequired[str],
+    TargetContainerHostname: NotRequired[str],
+    InferenceId: NotRequired[str],
+```
 
 ## InvokeEndpointOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_runtime.type_defs import InvokeEndpointOutputTypeDef
+
+def get_value() -> InvokeEndpointOutputTypeDef:
+    return {
+        "Body": ...,
+        "ContentType": ...,
+        "InvokedProductionVariant": ...,
+        "CustomAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvokeEndpointOutputTypeDef(TypedDict):
+    Body: StreamingBody,
+    ContentType: str,
+    InvokedProductionVariant: str,
+    CustomAttributes: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Body`: `StreamingBody`
-- `ContentType`: `str`
-- `InvokedProductionVariant`: `str`
-- `CustomAttributes`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_runtime.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`

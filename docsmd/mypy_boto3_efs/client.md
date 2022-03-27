@@ -1,62 +1,18 @@
-<a id="efsclient-for-boto3-efs-module"></a>
-
-# EFSClient for boto3 EFS module
+# EFSClient
 
 > [Index](../README.md) > [EFS](./README.md) > EFSClient
 
-Auto-generated documentation for
-[EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
-type annotations stubs module
-[mypy-boto3-efs](https://pypi.org/project/mypy-boto3-efs/).
+!!! note ""
 
-- [EFSClient for boto3 EFS module](#efsclient-for-boto3-efs-module)
-  - [EFSClient](#efsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_access_point](#create_access_point)
-    - [create_file_system](#create_file_system)
-    - [create_mount_target](#create_mount_target)
-    - [create_replication_configuration](#create_replication_configuration)
-    - [create_tags](#create_tags)
-    - [delete_access_point](#delete_access_point)
-    - [delete_file_system](#delete_file_system)
-    - [delete_file_system_policy](#delete_file_system_policy)
-    - [delete_mount_target](#delete_mount_target)
-    - [delete_replication_configuration](#delete_replication_configuration)
-    - [delete_tags](#delete_tags)
-    - [describe_access_points](#describe_access_points)
-    - [describe_account_preferences](#describe_account_preferences)
-    - [describe_backup_policy](#describe_backup_policy)
-    - [describe_file_system_policy](#describe_file_system_policy)
-    - [describe_file_systems](#describe_file_systems)
-    - [describe_lifecycle_configuration](#describe_lifecycle_configuration)
-    - [describe_mount_target_security_groups](#describe_mount_target_security_groups)
-    - [describe_mount_targets](#describe_mount_targets)
-    - [describe_replication_configurations](#describe_replication_configurations)
-    - [describe_tags](#describe_tags)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [modify_mount_target_security_groups](#modify_mount_target_security_groups)
-    - [put_account_preferences](#put_account_preferences)
-    - [put_backup_policy](#put_backup_policy)
-    - [put_file_system_policy](#put_file_system_policy)
-    - [put_lifecycle_configuration](#put_lifecycle_configuration)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_file_system](#update_file_system)
-    - [get_paginator](#get_paginator)
-
-<a id="efsclient"></a>
+    Auto-generated documentation for [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
+    type annotations stubs module [mypy-boto3-efs](https://pypi.org/project/mypy-boto3-efs/).
 
 ## EFSClient
 
-Type annotations for `boto3.client("efs")`
+Type annotations and code completion for `#!python boto3.client("efs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_efs.client import EFSClient
 
@@ -64,787 +20,1046 @@ def get_efs_client() -> EFSClient:
     return Session().client("efs")
 ```
 
-Boto3 documentation:
-[EFS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("efs").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("efs")
+
+try:
+    do_something(client)
+except (
+    client.AccessPointAlreadyExists,
+    client.AccessPointLimitExceeded,
+    client.AccessPointNotFound,
+    client.AvailabilityZonesMismatch,
+    client.BadRequest,
+    client.ClientError,
+    client.DependencyTimeout,
+    client.FileSystemAlreadyExists,
+    client.FileSystemInUse,
+    client.FileSystemLimitExceeded,
+    client.FileSystemNotFound,
+    client.IncorrectFileSystemLifeCycleState,
+    client.IncorrectMountTargetState,
+    client.InsufficientThroughputCapacity,
+    client.InternalServerError,
+    client.InvalidPolicyException,
+    client.IpAddressInUse,
+    client.MountTargetConflict,
+    client.MountTargetNotFound,
+    client.NetworkInterfaceLimitExceeded,
+    client.NoFreeAddressesInSubnet,
+    client.PolicyNotFound,
+    client.ReplicationNotFound,
+    client.SecurityGroupLimitExceeded,
+    client.SecurityGroupNotFound,
+    client.SubnetNotFound,
+    client.ThroughputLimitExceeded,
+    client.TooManyRequests,
+    client.UnsupportedAvailabilityZone,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_efs.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessPointAlreadyExists) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessPointAlreadyExists`
-- `Exceptions.AccessPointLimitExceeded`
-- `Exceptions.AccessPointNotFound`
-- `Exceptions.AvailabilityZonesMismatch`
-- `Exceptions.BadRequest`
-- `Exceptions.ClientError`
-- `Exceptions.DependencyTimeout`
-- `Exceptions.FileSystemAlreadyExists`
-- `Exceptions.FileSystemInUse`
-- `Exceptions.FileSystemLimitExceeded`
-- `Exceptions.FileSystemNotFound`
-- `Exceptions.IncorrectFileSystemLifeCycleState`
-- `Exceptions.IncorrectMountTargetState`
-- `Exceptions.InsufficientThroughputCapacity`
-- `Exceptions.InternalServerError`
-- `Exceptions.InvalidPolicyException`
-- `Exceptions.IpAddressInUse`
-- `Exceptions.MountTargetConflict`
-- `Exceptions.MountTargetNotFound`
-- `Exceptions.NetworkInterfaceLimitExceeded`
-- `Exceptions.NoFreeAddressesInSubnet`
-- `Exceptions.PolicyNotFound`
-- `Exceptions.ReplicationNotFound`
-- `Exceptions.SecurityGroupLimitExceeded`
-- `Exceptions.SecurityGroupNotFound`
-- `Exceptions.SubnetNotFound`
-- `Exceptions.ThroughputLimitExceeded`
-- `Exceptions.TooManyRequests`
-- `Exceptions.UnsupportedAvailabilityZone`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-EFSClient exceptions.
-
-Type annotations for `boto3.client("efs").exceptions` method.
-
-Boto3 documentation:
-[EFS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("efs").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("efs").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.can_paginate)
 
-Boto3 documentation:
-[EFS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_access\_point"></a>
-
-### create_access_point
+### create\_access\_point
 
 Creates an EFS access point.
 
-Type annotations for `boto3.client("efs").create_access_point` method.
+Type annotations and code completion for `#!python boto3.client("efs").create_access_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_access_point)
 
-Boto3 documentation:
-[EFS.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_access_point)
+```python title="Method definition"
+def create_access_point(
+    self,
+    *,
+    ClientToken: str,
+    FileSystemId: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    PosixUser: PosixUserTypeDef = ...,  # (2)
+    RootDirectory: RootDirectoryTypeDef = ...,  # (3)
+) -> AccessPointDescriptionResponseMetadataTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PosixUserTypeDef](./type_defs.md#posixusertypedef) 
+3. See [:material-code-braces: RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef) 
+4. See [:material-code-braces: AccessPointDescriptionResponseMetadataTypeDef](./type_defs.md#accesspointdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ClientToken`: `str` *(required)*
-- `FileSystemId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
-- `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateAccessPointRequestRequestTypeDef = {  # (1)
+    "ClientToken": ...,
+    "FileSystemId": ...,
+}
 
-Returns
-[AccessPointDescriptionResponseMetadataTypeDef](./type_defs.md#accesspointdescriptionresponsemetadatatypedef).
+parent.create_access_point(**kwargs)
+```
 
-<a id="create\_file\_system"></a>
+1. See [:material-code-braces: CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef) 
 
-### create_file_system
+### create\_file\_system
 
 Creates a new, empty file system.
 
-Type annotations for `boto3.client("efs").create_file_system` method.
+Type annotations and code completion for `#!python boto3.client("efs").create_file_system` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_file_system)
 
-Boto3 documentation:
-[EFS.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_file_system)
+```python title="Method definition"
+def create_file_system(
+    self,
+    *,
+    CreationToken: str,
+    PerformanceMode: PerformanceModeType = ...,  # (1)
+    Encrypted: bool = ...,
+    KmsKeyId: str = ...,
+    ThroughputMode: ThroughputModeType = ...,  # (2)
+    ProvisionedThroughputInMibps: float = ...,
+    AvailabilityZoneName: str = ...,
+    Backup: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> FileSystemDescriptionResponseMetadataTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateFileSystemRequestRequestTypeDef](./type_defs.md#createfilesystemrequestrequesttypedef).
+1. See [:material-code-brackets: PerformanceModeType](./literals.md#performancemodetype) 
+2. See [:material-code-brackets: ThroughputModeType](./literals.md#throughputmodetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `CreationToken`: `str` *(required)*
-- `PerformanceMode`: [PerformanceModeType](./literals.md#performancemodetype)
-- `Encrypted`: `bool`
-- `KmsKeyId`: `str`
-- `ThroughputMode`: [ThroughputModeType](./literals.md#throughputmodetype)
-- `ProvisionedThroughputInMibps`: `float`
-- `AvailabilityZoneName`: `str`
-- `Backup`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateFileSystemRequestRequestTypeDef = {  # (1)
+    "CreationToken": ...,
+}
 
-Returns
-[FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef).
+parent.create_file_system(**kwargs)
+```
 
-<a id="create\_mount\_target"></a>
+1. See [:material-code-braces: CreateFileSystemRequestRequestTypeDef](./type_defs.md#createfilesystemrequestrequesttypedef) 
 
-### create_mount_target
+### create\_mount\_target
 
 Creates a mount target for a file system.
 
-Type annotations for `boto3.client("efs").create_mount_target` method.
+Type annotations and code completion for `#!python boto3.client("efs").create_mount_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_mount_target)
 
-Boto3 documentation:
-[EFS.Client.create_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_mount_target)
+```python title="Method definition"
+def create_mount_target(
+    self,
+    *,
+    FileSystemId: str,
+    SubnetId: str,
+    IpAddress: str = ...,
+    SecurityGroups: Sequence[str] = ...,
+) -> MountTargetDescriptionResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateMountTargetRequestRequestTypeDef](./type_defs.md#createmounttargetrequestrequesttypedef).
+1. See [:material-code-braces: MountTargetDescriptionResponseMetadataTypeDef](./type_defs.md#mounttargetdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `SubnetId`: `str` *(required)*
-- `IpAddress`: `str`
-- `SecurityGroups`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateMountTargetRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "SubnetId": ...,
+}
 
-Returns
-[MountTargetDescriptionResponseMetadataTypeDef](./type_defs.md#mounttargetdescriptionresponsemetadatatypedef).
+parent.create_mount_target(**kwargs)
+```
 
-<a id="create\_replication\_configuration"></a>
+1. See [:material-code-braces: CreateMountTargetRequestRequestTypeDef](./type_defs.md#createmounttargetrequestrequesttypedef) 
 
-### create_replication_configuration
+### create\_replication\_configuration
 
 Creates a replication configuration that replicates an existing EFS file system
 to a new, read-only file system.
 
-Type annotations for `boto3.client("efs").create_replication_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("efs").create_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_replication_configuration)
 
-Boto3 documentation:
-[EFS.Client.create_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_replication_configuration)
+```python title="Method definition"
+def create_replication_configuration(
+    self,
+    *,
+    SourceFileSystemId: str,
+    Destinations: Sequence[DestinationToCreateTypeDef],  # (1)
+) -> ReplicationConfigurationDescriptionResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef) 
+2. See [:material-code-braces: ReplicationConfigurationDescriptionResponseMetadataTypeDef](./type_defs.md#replicationconfigurationdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `SourceFileSystemId`: `str` *(required)*
-- `Destinations`:
-  `Sequence`\[[DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "SourceFileSystemId": ...,
+    "Destinations": ...,
+}
 
-Returns
-[ReplicationConfigurationDescriptionResponseMetadataTypeDef](./type_defs.md#replicationconfigurationdescriptionresponsemetadatatypedef).
+parent.create_replication_configuration(**kwargs)
+```
 
-<a id="create\_tags"></a>
+1. See [:material-code-braces: CreateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationrequestrequesttypedef) 
 
-### create_tags
+### create\_tags
 
 .
 
-Type annotations for `boto3.client("efs").create_tags` method.
+Type annotations and code completion for `#!python boto3.client("efs").create_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_tags)
 
-Boto3 documentation:
-[EFS.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_tags)
+```python title="Method definition"
+def create_tags(
+    self,
+    *,
+    FileSystemId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTagsRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "Tags": ...,
+}
 
-<a id="delete\_access\_point"></a>
+parent.create_tags(**kwargs)
+```
 
-### delete_access_point
+1. See [:material-code-braces: CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef) 
+
+### delete\_access\_point
 
 Deletes the specified access point.
 
-Type annotations for `boto3.client("efs").delete_access_point` method.
+Type annotations and code completion for `#!python boto3.client("efs").delete_access_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_access_point)
 
-Boto3 documentation:
-[EFS.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_access_point)
+```python title="Method definition"
+def delete_access_point(
+    self,
+    *,
+    AccessPointId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessPointRequestRequestTypeDef](./type_defs.md#deleteaccesspointrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccessPointId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessPointRequestRequestTypeDef = {  # (1)
+    "AccessPointId": ...,
+}
 
-<a id="delete\_file\_system"></a>
+parent.delete_access_point(**kwargs)
+```
 
-### delete_file_system
+1. See [:material-code-braces: DeleteAccessPointRequestRequestTypeDef](./type_defs.md#deleteaccesspointrequestrequesttypedef) 
+
+### delete\_file\_system
 
 Deletes a file system, permanently severing access to its contents.
 
-Type annotations for `boto3.client("efs").delete_file_system` method.
+Type annotations and code completion for `#!python boto3.client("efs").delete_file_system` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system)
 
-Boto3 documentation:
-[EFS.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system)
+```python title="Method definition"
+def delete_file_system(
+    self,
+    *,
+    FileSystemId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFileSystemRequestRequestTypeDef](./type_defs.md#deletefilesystemrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFileSystemRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-<a id="delete\_file\_system\_policy"></a>
+parent.delete_file_system(**kwargs)
+```
 
-### delete_file_system_policy
+1. See [:material-code-braces: DeleteFileSystemRequestRequestTypeDef](./type_defs.md#deletefilesystemrequestrequesttypedef) 
+
+### delete\_file\_system\_policy
 
 Deletes the `FileSystemPolicy` for the specified file system.
 
-Type annotations for `boto3.client("efs").delete_file_system_policy` method.
+Type annotations and code completion for `#!python boto3.client("efs").delete_file_system_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system_policy)
 
-Boto3 documentation:
-[EFS.Client.delete_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system_policy)
+```python title="Method definition"
+def delete_file_system_policy(
+    self,
+    *,
+    FileSystemId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFileSystemPolicyRequestRequestTypeDef](./type_defs.md#deletefilesystempolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFileSystemPolicyRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-<a id="delete\_mount\_target"></a>
+parent.delete_file_system_policy(**kwargs)
+```
 
-### delete_mount_target
+1. See [:material-code-braces: DeleteFileSystemPolicyRequestRequestTypeDef](./type_defs.md#deletefilesystempolicyrequestrequesttypedef) 
+
+### delete\_mount\_target
 
 Deletes the specified mount target.
 
-Type annotations for `boto3.client("efs").delete_mount_target` method.
+Type annotations and code completion for `#!python boto3.client("efs").delete_mount_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_mount_target)
 
-Boto3 documentation:
-[EFS.Client.delete_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_mount_target)
+```python title="Method definition"
+def delete_mount_target(
+    self,
+    *,
+    MountTargetId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMountTargetRequestRequestTypeDef](./type_defs.md#deletemounttargetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MountTargetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMountTargetRequestRequestTypeDef = {  # (1)
+    "MountTargetId": ...,
+}
 
-<a id="delete\_replication\_configuration"></a>
+parent.delete_mount_target(**kwargs)
+```
 
-### delete_replication_configuration
+1. See [:material-code-braces: DeleteMountTargetRequestRequestTypeDef](./type_defs.md#deletemounttargetrequestrequesttypedef) 
+
+### delete\_replication\_configuration
 
 Deletes an existing replication configuration.
 
-Type annotations for `boto3.client("efs").delete_replication_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("efs").delete_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_replication_configuration)
 
-Boto3 documentation:
-[EFS.Client.delete_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_replication_configuration)
+```python title="Method definition"
+def delete_replication_configuration(
+    self,
+    *,
+    SourceFileSystemId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteReplicationConfigurationRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SourceFileSystemId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "SourceFileSystemId": ...,
+}
 
-<a id="delete\_tags"></a>
+parent.delete_replication_configuration(**kwargs)
+```
 
-### delete_tags
+1. See [:material-code-braces: DeleteReplicationConfigurationRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationrequestrequesttypedef) 
+
+### delete\_tags
 
 .
 
-Type annotations for `boto3.client("efs").delete_tags` method.
+Type annotations and code completion for `#!python boto3.client("efs").delete_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_tags)
 
-Boto3 documentation:
-[EFS.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_tags)
+```python title="Method definition"
+def delete_tags(
+    self,
+    *,
+    FileSystemId: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTagsRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "TagKeys": ...,
+}
 
-<a id="describe\_access\_points"></a>
+parent.delete_tags(**kwargs)
+```
 
-### describe_access_points
+1. See [:material-code-braces: DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef) 
+
+### describe\_access\_points
 
 Returns the description of a specific Amazon EFS access point if the
 `AccessPointId` is provided.
 
-Type annotations for `boto3.client("efs").describe_access_points` method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_access_points` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_access_points)
 
-Boto3 documentation:
-[EFS.Client.describe_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_access_points)
+```python title="Method definition"
+def describe_access_points(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    AccessPointId: str = ...,
+    FileSystemId: str = ...,
+) -> DescribeAccessPointsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccessPointsRequestRequestTypeDef](./type_defs.md#describeaccesspointsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAccessPointsResponseTypeDef](./type_defs.md#describeaccesspointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `AccessPointId`: `str`
-- `FileSystemId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAccessPointsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[DescribeAccessPointsResponseTypeDef](./type_defs.md#describeaccesspointsresponsetypedef).
+parent.describe_access_points(**kwargs)
+```
 
-<a id="describe\_account\_preferences"></a>
+1. See [:material-code-braces: DescribeAccessPointsRequestRequestTypeDef](./type_defs.md#describeaccesspointsrequestrequesttypedef) 
 
-### describe_account_preferences
+### describe\_account\_preferences
 
 Returns the account preferences settings for the Amazon Web Services account
 associated with the user making the request, in the current Amazon Web Services
 Region.
 
-Type annotations for `boto3.client("efs").describe_account_preferences` method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_account_preferences` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_account_preferences)
 
-Boto3 documentation:
-[EFS.Client.describe_account_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_account_preferences)
+```python title="Method definition"
+def describe_account_preferences(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeAccountPreferencesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccountPreferencesRequestRequestTypeDef](./type_defs.md#describeaccountpreferencesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAccountPreferencesResponseTypeDef](./type_defs.md#describeaccountpreferencesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountPreferencesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeAccountPreferencesResponseTypeDef](./type_defs.md#describeaccountpreferencesresponsetypedef).
+parent.describe_account_preferences(**kwargs)
+```
 
-<a id="describe\_backup\_policy"></a>
+1. See [:material-code-braces: DescribeAccountPreferencesRequestRequestTypeDef](./type_defs.md#describeaccountpreferencesrequestrequesttypedef) 
 
-### describe_backup_policy
+### describe\_backup\_policy
 
 Returns the backup policy for the specified EFS file system.
 
-Type annotations for `boto3.client("efs").describe_backup_policy` method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_backup_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_backup_policy)
 
-Boto3 documentation:
-[EFS.Client.describe_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_backup_policy)
+```python title="Method definition"
+def describe_backup_policy(
+    self,
+    *,
+    FileSystemId: str,
+) -> BackupPolicyDescriptionTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBackupPolicyRequestRequestTypeDef](./type_defs.md#describebackuppolicyrequestrequesttypedef).
+1. See [:material-code-braces: BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBackupPolicyRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
+parent.describe_backup_policy(**kwargs)
+```
 
-<a id="describe\_file\_system\_policy"></a>
+1. See [:material-code-braces: DescribeBackupPolicyRequestRequestTypeDef](./type_defs.md#describebackuppolicyrequestrequesttypedef) 
 
-### describe_file_system_policy
+### describe\_file\_system\_policy
 
 Returns the `FileSystemPolicy` for the specified EFS file system.
 
-Type annotations for `boto3.client("efs").describe_file_system_policy` method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_file_system_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_system_policy)
 
-Boto3 documentation:
-[EFS.Client.describe_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_system_policy)
+```python title="Method definition"
+def describe_file_system_policy(
+    self,
+    *,
+    FileSystemId: str,
+) -> FileSystemPolicyDescriptionTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFileSystemPolicyRequestRequestTypeDef](./type_defs.md#describefilesystempolicyrequestrequesttypedef).
+1. See [:material-code-braces: FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFileSystemPolicyRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
+parent.describe_file_system_policy(**kwargs)
+```
 
-<a id="describe\_file\_systems"></a>
+1. See [:material-code-braces: DescribeFileSystemPolicyRequestRequestTypeDef](./type_defs.md#describefilesystempolicyrequestrequesttypedef) 
 
-### describe_file_systems
+### describe\_file\_systems
 
 Returns the description of a specific Amazon EFS file system if either the file
 system `CreationToken` or the `FileSystemId` is provided.
 
-Type annotations for `boto3.client("efs").describe_file_systems` method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_file_systems` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_systems)
 
-Boto3 documentation:
-[EFS.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_systems)
+```python title="Method definition"
+def describe_file_systems(
+    self,
+    *,
+    MaxItems: int = ...,
+    Marker: str = ...,
+    CreationToken: str = ...,
+    FileSystemId: str = ...,
+) -> DescribeFileSystemsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFileSystemsRequestRequestTypeDef](./type_defs.md#describefilesystemsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxItems`: `int`
-- `Marker`: `str`
-- `CreationToken`: `str`
-- `FileSystemId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFileSystemsRequestRequestTypeDef = {  # (1)
+    "MaxItems": ...,
+}
 
-Returns
-[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
+parent.describe_file_systems(**kwargs)
+```
 
-<a id="describe\_lifecycle\_configuration"></a>
+1. See [:material-code-braces: DescribeFileSystemsRequestRequestTypeDef](./type_defs.md#describefilesystemsrequestrequesttypedef) 
 
-### describe_lifecycle_configuration
+### describe\_lifecycle\_configuration
 
-Returns the current `LifecycleConfiguration` object for the specified Amazon
-EFS file system.
+Returns the current `LifecycleConfiguration` object for the specified Amazon EFS
+file system.
 
-Type annotations for `boto3.client("efs").describe_lifecycle_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_lifecycle_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_lifecycle_configuration)
 
-Boto3 documentation:
-[EFS.Client.describe_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_lifecycle_configuration)
+```python title="Method definition"
+def describe_lifecycle_configuration(
+    self,
+    *,
+    FileSystemId: str,
+) -> LifecycleConfigurationDescriptionTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#describelifecycleconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLifecycleConfigurationRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
+parent.describe_lifecycle_configuration(**kwargs)
+```
 
-<a id="describe\_mount\_target\_security\_groups"></a>
+1. See [:material-code-braces: DescribeLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#describelifecycleconfigurationrequestrequesttypedef) 
 
-### describe_mount_target_security_groups
+### describe\_mount\_target\_security\_groups
 
 Returns the security groups currently in effect for a mount target.
 
-Type annotations for
-`boto3.client("efs").describe_mount_target_security_groups` method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_mount_target_security_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_target_security_groups)
 
-Boto3 documentation:
-[EFS.Client.describe_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_target_security_groups)
+```python title="Method definition"
+def describe_mount_target_security_groups(
+    self,
+    *,
+    MountTargetId: str,
+) -> DescribeMountTargetSecurityGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#describemounttargetsecuritygroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMountTargetSecurityGroupsResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MountTargetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMountTargetSecurityGroupsRequestRequestTypeDef = {  # (1)
+    "MountTargetId": ...,
+}
 
-Returns
-[DescribeMountTargetSecurityGroupsResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponsetypedef).
+parent.describe_mount_target_security_groups(**kwargs)
+```
 
-<a id="describe\_mount\_targets"></a>
+1. See [:material-code-braces: DescribeMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#describemounttargetsecuritygroupsrequestrequesttypedef) 
 
-### describe_mount_targets
+### describe\_mount\_targets
 
 Returns the descriptions of all the current mount targets, or a specific mount
 target, for a file system.
 
-Type annotations for `boto3.client("efs").describe_mount_targets` method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_mount_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_targets)
 
-Boto3 documentation:
-[EFS.Client.describe_mount_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_targets)
+```python title="Method definition"
+def describe_mount_targets(
+    self,
+    *,
+    MaxItems: int = ...,
+    Marker: str = ...,
+    FileSystemId: str = ...,
+    MountTargetId: str = ...,
+    AccessPointId: str = ...,
+) -> DescribeMountTargetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMountTargetsRequestRequestTypeDef](./type_defs.md#describemounttargetsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxItems`: `int`
-- `Marker`: `str`
-- `FileSystemId`: `str`
-- `MountTargetId`: `str`
-- `AccessPointId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeMountTargetsRequestRequestTypeDef = {  # (1)
+    "MaxItems": ...,
+}
 
-Returns
-[DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef).
+parent.describe_mount_targets(**kwargs)
+```
 
-<a id="describe\_replication\_configurations"></a>
+1. See [:material-code-braces: DescribeMountTargetsRequestRequestTypeDef](./type_defs.md#describemounttargetsrequestrequesttypedef) 
 
-### describe_replication_configurations
+### describe\_replication\_configurations
 
 Retrieves the replication configurations for either a specific file system, or
-all configurations for the Amazon Web Services account in an Amazon Web
-Services Region if a file system is not specified.
+all configurations for the Amazon Web Services account in an Amazon Web Services
+Region if a file system is not specified.
 
-Type annotations for `boto3.client("efs").describe_replication_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_replication_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_replication_configurations)
 
-Boto3 documentation:
-[EFS.Client.describe_replication_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_replication_configurations)
+```python title="Method definition"
+def describe_replication_configurations(
+    self,
+    *,
+    FileSystemId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeReplicationConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationConfigurationsRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReplicationConfigurationsResponseTypeDef](./type_defs.md#describereplicationconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationConfigurationsRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[DescribeReplicationConfigurationsResponseTypeDef](./type_defs.md#describereplicationconfigurationsresponsetypedef).
+parent.describe_replication_configurations(**kwargs)
+```
 
-<a id="describe\_tags"></a>
+1. See [:material-code-braces: DescribeReplicationConfigurationsRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationsrequestrequesttypedef) 
 
-### describe_tags
+### describe\_tags
 
 .
 
-Type annotations for `boto3.client("efs").describe_tags` method.
+Type annotations and code completion for `#!python boto3.client("efs").describe_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_tags)
 
-Boto3 documentation:
-[EFS.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_tags)
+```python title="Method definition"
+def describe_tags(
+    self,
+    *,
+    FileSystemId: str,
+    MaxItems: int = ...,
+    Marker: str = ...,
+) -> DescribeTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `MaxItems`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeTagsRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
+parent.describe_tags(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("efs").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("efs").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[EFS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_tags\_for\_resource"></a>
-
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags for a top-level EFS resource.
 
-Type annotations for `boto3.client("efs").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("efs").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[EFS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="modify\_mount\_target\_security\_groups"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### modify_mount_target_security_groups
+### modify\_mount\_target\_security\_groups
 
 Modifies the set of security groups in effect for a mount target.
 
-Type annotations for `boto3.client("efs").modify_mount_target_security_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("efs").modify_mount_target_security_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.modify_mount_target_security_groups)
 
-Boto3 documentation:
-[EFS.Client.modify_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.modify_mount_target_security_groups)
+```python title="Method definition"
+def modify_mount_target_security_groups(
+    self,
+    *,
+    MountTargetId: str,
+    SecurityGroups: Sequence[str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ModifyMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#modifymounttargetsecuritygroupsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MountTargetId`: `str` *(required)*
-- `SecurityGroups`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ModifyMountTargetSecurityGroupsRequestRequestTypeDef = {  # (1)
+    "MountTargetId": ...,
+}
 
-<a id="put\_account\_preferences"></a>
+parent.modify_mount_target_security_groups(**kwargs)
+```
 
-### put_account_preferences
+1. See [:material-code-braces: ModifyMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#modifymounttargetsecuritygroupsrequestrequesttypedef) 
+
+### put\_account\_preferences
 
 Use this operation to set the account preference in the current Amazon Web
 Services Region to use long 17 character (63 bit) or short 8 character (32 bit)
 resource IDs for new EFS file system and mount target resources.
 
-Type annotations for `boto3.client("efs").put_account_preferences` method.
+Type annotations and code completion for `#!python boto3.client("efs").put_account_preferences` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_account_preferences)
 
-Boto3 documentation:
-[EFS.Client.put_account_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_account_preferences)
+```python title="Method definition"
+def put_account_preferences(
+    self,
+    *,
+    ResourceIdType: ResourceIdTypeType,  # (1)
+) -> PutAccountPreferencesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutAccountPreferencesRequestRequestTypeDef](./type_defs.md#putaccountpreferencesrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceIdTypeType](./literals.md#resourceidtypetype) 
+2. See [:material-code-braces: PutAccountPreferencesResponseTypeDef](./type_defs.md#putaccountpreferencesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceIdType`: [ResourceIdTypeType](./literals.md#resourceidtypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutAccountPreferencesRequestRequestTypeDef = {  # (1)
+    "ResourceIdType": ...,
+}
 
-Returns
-[PutAccountPreferencesResponseTypeDef](./type_defs.md#putaccountpreferencesresponsetypedef).
+parent.put_account_preferences(**kwargs)
+```
 
-<a id="put\_backup\_policy"></a>
+1. See [:material-code-braces: PutAccountPreferencesRequestRequestTypeDef](./type_defs.md#putaccountpreferencesrequestrequesttypedef) 
 
-### put_backup_policy
+### put\_backup\_policy
 
 Updates the file system's backup policy.
 
-Type annotations for `boto3.client("efs").put_backup_policy` method.
+Type annotations and code completion for `#!python boto3.client("efs").put_backup_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_backup_policy)
 
-Boto3 documentation:
-[EFS.Client.put_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_backup_policy)
+```python title="Method definition"
+def put_backup_policy(
+    self,
+    *,
+    FileSystemId: str,
+    BackupPolicy: BackupPolicyTypeDef,  # (1)
+) -> BackupPolicyDescriptionTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutBackupPolicyRequestRequestTypeDef](./type_defs.md#putbackuppolicyrequestrequesttypedef).
+1. See [:material-code-braces: BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef) 
+2. See [:material-code-braces: BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `BackupPolicy`: [BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutBackupPolicyRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "BackupPolicy": ...,
+}
 
-Returns
-[BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
+parent.put_backup_policy(**kwargs)
+```
 
-<a id="put\_file\_system\_policy"></a>
+1. See [:material-code-braces: PutBackupPolicyRequestRequestTypeDef](./type_defs.md#putbackuppolicyrequestrequesttypedef) 
 
-### put_file_system_policy
+### put\_file\_system\_policy
 
 Applies an Amazon EFS `FileSystemPolicy` to an Amazon EFS file system.
 
-Type annotations for `boto3.client("efs").put_file_system_policy` method.
+Type annotations and code completion for `#!python boto3.client("efs").put_file_system_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_file_system_policy)
 
-Boto3 documentation:
-[EFS.Client.put_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_file_system_policy)
+```python title="Method definition"
+def put_file_system_policy(
+    self,
+    *,
+    FileSystemId: str,
+    Policy: str,
+    BypassPolicyLockoutSafetyCheck: bool = ...,
+) -> FileSystemPolicyDescriptionTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutFileSystemPolicyRequestRequestTypeDef](./type_defs.md#putfilesystempolicyrequestrequesttypedef).
+1. See [:material-code-braces: FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `Policy`: `str` *(required)*
-- `BypassPolicyLockoutSafetyCheck`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutFileSystemPolicyRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "Policy": ...,
+}
 
-Returns
-[FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
+parent.put_file_system_policy(**kwargs)
+```
 
-<a id="put\_lifecycle\_configuration"></a>
+1. See [:material-code-braces: PutFileSystemPolicyRequestRequestTypeDef](./type_defs.md#putfilesystempolicyrequestrequesttypedef) 
 
-### put_lifecycle_configuration
+### put\_lifecycle\_configuration
 
 Enables lifecycle management by creating a new `LifecycleConfiguration` object.
 
-Type annotations for `boto3.client("efs").put_lifecycle_configuration` method.
+Type annotations and code completion for `#!python boto3.client("efs").put_lifecycle_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration)
 
-Boto3 documentation:
-[EFS.Client.put_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration)
+```python title="Method definition"
+def put_lifecycle_configuration(
+    self,
+    *,
+    FileSystemId: str,
+    LifecyclePolicies: Sequence[LifecyclePolicyTypeDef],  # (1)
+) -> LifecycleConfigurationDescriptionTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putlifecycleconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef) 
+2. See [:material-code-braces: LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `LifecyclePolicies`:
-  `Sequence`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutLifecycleConfigurationRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "LifecyclePolicies": ...,
+}
 
-Returns
-[LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
+parent.put_lifecycle_configuration(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putlifecycleconfigurationrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Creates a tag for an EFS resource.
 
-Type annotations for `boto3.client("efs").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("efs").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.tag_resource)
 
-Boto3 documentation:
-[EFS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Removes tags from an EFS resource.
 
-Type annotations for `boto3.client("efs").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("efs").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.untag_resource)
 
-Boto3 documentation:
-[EFS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceId: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_file\_system"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_file_system
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_file\_system
 
 Updates the throughput mode or the amount of provisioned throughput of an
 existing file system.
 
-Type annotations for `boto3.client("efs").update_file_system` method.
+Type annotations and code completion for `#!python boto3.client("efs").update_file_system` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.update_file_system)
 
-Boto3 documentation:
-[EFS.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.update_file_system)
+```python title="Method definition"
+def update_file_system(
+    self,
+    *,
+    FileSystemId: str,
+    ThroughputMode: ThroughputModeType = ...,  # (1)
+    ProvisionedThroughputInMibps: float = ...,
+) -> FileSystemDescriptionResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFileSystemRequestRequestTypeDef](./type_defs.md#updatefilesystemrequestrequesttypedef).
+1. See [:material-code-brackets: ThroughputModeType](./literals.md#throughputmodetype) 
+2. See [:material-code-braces: FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `ThroughputMode`: [ThroughputModeType](./literals.md#throughputmodetype)
-- `ProvisionedThroughputInMibps`: `float`
+```python title="Usage example with kwargs"
+kwargs: UpdateFileSystemRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef).
+parent.update_file_system(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateFileSystemRequestRequestTypeDef](./type_defs.md#updatefilesystemrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("efs").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("efs").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_file_systems")` ->
-  [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
-- `client.get_paginator("describe_mount_targets")` ->
-  [DescribeMountTargetsPaginator](./paginators.md#describemounttargetspaginator)
-- `client.get_paginator("describe_tags")` ->
-  [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+- `client.get_paginator("describe_file_systems")` -> [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
+- `client.get_paginator("describe_mount_targets")` -> [DescribeMountTargetsPaginator](./paginators.md#describemounttargetspaginator)
+- `client.get_paginator("describe_tags")` -> [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+
+
+

@@ -1,527 +1,710 @@
-<a id="typed-dictionaries-for-boto3-codestarnotifications-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 CodeStarNotifications module
+> [Index](../README.md) > [CodeStarNotifications](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [CodeStarNotifications](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
-type annotations stubs module
-[mypy-boto3-codestar-notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
-
-- [Typed dictionaries for boto3 CodeStarNotifications module](#typed-dictionaries-for-boto3-codestarnotifications-module)
-  - [CreateNotificationRuleRequestRequestTypeDef](#createnotificationrulerequestrequesttypedef)
-  - [CreateNotificationRuleResultTypeDef](#createnotificationruleresulttypedef)
-  - [DeleteNotificationRuleRequestRequestTypeDef](#deletenotificationrulerequestrequesttypedef)
-  - [DeleteNotificationRuleResultTypeDef](#deletenotificationruleresulttypedef)
-  - [DeleteTargetRequestRequestTypeDef](#deletetargetrequestrequesttypedef)
-  - [DescribeNotificationRuleRequestRequestTypeDef](#describenotificationrulerequestrequesttypedef)
-  - [DescribeNotificationRuleResultTypeDef](#describenotificationruleresulttypedef)
-  - [EventTypeSummaryTypeDef](#eventtypesummarytypedef)
-  - [ListEventTypesFilterTypeDef](#listeventtypesfiltertypedef)
-  - [ListEventTypesRequestRequestTypeDef](#listeventtypesrequestrequesttypedef)
-  - [ListEventTypesResultTypeDef](#listeventtypesresulttypedef)
-  - [ListNotificationRulesFilterTypeDef](#listnotificationrulesfiltertypedef)
-  - [ListNotificationRulesRequestRequestTypeDef](#listnotificationrulesrequestrequesttypedef)
-  - [ListNotificationRulesResultTypeDef](#listnotificationrulesresulttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
-  - [ListTargetsFilterTypeDef](#listtargetsfiltertypedef)
-  - [ListTargetsRequestRequestTypeDef](#listtargetsrequestrequesttypedef)
-  - [ListTargetsResultTypeDef](#listtargetsresulttypedef)
-  - [NotificationRuleSummaryTypeDef](#notificationrulesummarytypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SubscribeRequestRequestTypeDef](#subscriberequestrequesttypedef)
-  - [SubscribeResultTypeDef](#subscriberesulttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagResourceResultTypeDef](#tagresourceresulttypedef)
-  - [TargetSummaryTypeDef](#targetsummarytypedef)
-  - [TargetTypeDef](#targettypedef)
-  - [UnsubscribeRequestRequestTypeDef](#unsubscriberequestrequesttypedef)
-  - [UnsubscribeResultTypeDef](#unsubscriberesulttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateNotificationRuleRequestRequestTypeDef](#updatenotificationrulerequestrequesttypedef)
-
-<a id="createnotificationrulerequestrequesttypedef"></a>
+    Auto-generated documentation for [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
+    type annotations stubs module [mypy-boto3-codestar-notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 ## CreateNotificationRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import CreateNotificationRuleRequestRequestTypeDef
+
+def get_value() -> CreateNotificationRuleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "EventTypeIds": ...,
+        "Resource": ...,
+        "Targets": ...,
+        "DetailType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNotificationRuleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    EventTypeIds: Sequence[str],
+    Resource: str,
+    Targets: Sequence[TargetTypeDef],  # (1)
+    DetailType: DetailTypeType,  # (2)
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    Status: NotRequired[NotificationRuleStatusType],  # (3)
+```
 
-- `Name`: `str`
-- `EventTypeIds`: `Sequence`\[`str`\]
-- `Resource`: `str`
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `DetailType`: [DetailTypeType](./literals.md#detailtypetype)
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Status`:
-  [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
-
-<a id="createnotificationruleresulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: DetailTypeType](./literals.md#detailtypetype) 
+3. See [:material-code-brackets: NotificationRuleStatusType](./literals.md#notificationrulestatustype) 
 ## CreateNotificationRuleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import CreateNotificationRuleResultTypeDef
+
+def get_value() -> CreateNotificationRuleResultTypeDef:
+    return {
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNotificationRuleResultTypeDef(TypedDict):
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletenotificationrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteNotificationRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import DeleteNotificationRuleRequestRequestTypeDef
+
+def get_value() -> DeleteNotificationRuleRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="deletenotificationruleresulttypedef"></a>
+```python title="Definition"
+class DeleteNotificationRuleRequestRequestTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## DeleteNotificationRuleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import DeleteNotificationRuleResultTypeDef
+
+def get_value() -> DeleteNotificationRuleResultTypeDef:
+    return {
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteNotificationRuleResultTypeDef(TypedDict):
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetargetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTargetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import DeleteTargetRequestRequestTypeDef
+
+def get_value() -> DeleteTargetRequestRequestTypeDef:
+    return {
+        "TargetAddress": ...,
+    }
 ```
 
-Required fields:
-
-- `TargetAddress`: `str`
-
-Optional fields:
-
-- `ForceUnsubscribeAll`: `bool`
-
-<a id="describenotificationrulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTargetRequestRequestTypeDef(TypedDict):
+    TargetAddress: str,
+    ForceUnsubscribeAll: NotRequired[bool],
+```
 
 ## DescribeNotificationRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import DescribeNotificationRuleRequestRequestTypeDef
+
+def get_value() -> DescribeNotificationRuleRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="describenotificationruleresulttypedef"></a>
+```python title="Definition"
+class DescribeNotificationRuleRequestRequestTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## DescribeNotificationRuleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import DescribeNotificationRuleResultTypeDef
+
+def get_value() -> DescribeNotificationRuleResultTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "EventTypes": ...,
+        "Resource": ...,
+        "Targets": ...,
+        "DetailType": ...,
+        "CreatedBy": ...,
+        "Status": ...,
+        "CreatedTimestamp": ...,
+        "LastModifiedTimestamp": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNotificationRuleResultTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    EventTypes: List[EventTypeSummaryTypeDef],  # (1)
+    Resource: str,
+    Targets: List[TargetSummaryTypeDef],  # (2)
+    DetailType: DetailTypeType,  # (3)
+    CreatedBy: str,
+    Status: NotificationRuleStatusType,  # (4)
+    CreatedTimestamp: datetime,
+    LastModifiedTimestamp: datetime,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `EventTypes`:
-  `List`\[[EventTypeSummaryTypeDef](./type_defs.md#eventtypesummarytypedef)\]
-- `Resource`: `str`
-- `Targets`:
-  `List`\[[TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef)\]
-- `DetailType`: [DetailTypeType](./literals.md#detailtypetype)
-- `CreatedBy`: `str`
-- `Status`:
-  [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
-- `CreatedTimestamp`: `datetime`
-- `LastModifiedTimestamp`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="eventtypesummarytypedef"></a>
-
+1. See [:material-code-braces: EventTypeSummaryTypeDef](./type_defs.md#eventtypesummarytypedef) 
+2. See [:material-code-braces: TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef) 
+3. See [:material-code-brackets: DetailTypeType](./literals.md#detailtypetype) 
+4. See [:material-code-brackets: NotificationRuleStatusType](./literals.md#notificationrulestatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventTypeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import EventTypeSummaryTypeDef
+
+def get_value() -> EventTypeSummaryTypeDef:
+    return {
+        "EventTypeId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EventTypeId`: `str`
-- `ServiceName`: `str`
-- `EventTypeName`: `str`
-- `ResourceType`: `str`
-
-<a id="listeventtypesfiltertypedef"></a>
+```python title="Definition"
+class EventTypeSummaryTypeDef(TypedDict):
+    EventTypeId: NotRequired[str],
+    ServiceName: NotRequired[str],
+    EventTypeName: NotRequired[str],
+    ResourceType: NotRequired[str],
+```
 
 ## ListEventTypesFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListEventTypesFilterTypeDef
+
+def get_value() -> ListEventTypesFilterTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventTypesFilterTypeDef(TypedDict):
+    Name: ListEventTypesFilterNameType,  # (1)
+    Value: str,
+```
 
-- `Name`:
-  [ListEventTypesFilterNameType](./literals.md#listeventtypesfilternametype)
-- `Value`: `str`
+1. See [:material-code-brackets: ListEventTypesFilterNameType](./literals.md#listeventtypesfilternametype) 
+## ListEventTypesRequestListEventTypesPaginateTypeDef
 
-<a id="listeventtypesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codestar_notifications.type_defs import ListEventTypesRequestListEventTypesPaginateTypeDef
 
+def get_value() -> ListEventTypesRequestListEventTypesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListEventTypesRequestListEventTypesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ListEventTypesFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEventTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListEventTypesRequestRequestTypeDef
+
+def get_value() -> ListEventTypesRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListEventTypesRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ListEventTypesFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`:
-  `Sequence`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listeventtypesresulttypedef"></a>
-
+1. See [:material-code-braces: ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef) 
 ## ListEventTypesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListEventTypesResultTypeDef
+
+def get_value() -> ListEventTypesResultTypeDef:
+    return {
+        "EventTypes": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventTypesResultTypeDef(TypedDict):
+    EventTypes: List[EventTypeSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventTypes`:
-  `List`\[[EventTypeSummaryTypeDef](./type_defs.md#eventtypesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listnotificationrulesfiltertypedef"></a>
-
+1. See [:material-code-braces: EventTypeSummaryTypeDef](./type_defs.md#eventtypesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListNotificationRulesFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesFilterTypeDef
+
+def get_value() -> ListNotificationRulesFilterTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNotificationRulesFilterTypeDef(TypedDict):
+    Name: ListNotificationRulesFilterNameType,  # (1)
+    Value: str,
+```
 
-- `Name`:
-  [ListNotificationRulesFilterNameType](./literals.md#listnotificationrulesfilternametype)
-- `Value`: `str`
+1. See [:material-code-brackets: ListNotificationRulesFilterNameType](./literals.md#listnotificationrulesfilternametype) 
+## ListNotificationRulesRequestListNotificationRulesPaginateTypeDef
 
-<a id="listnotificationrulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesRequestListNotificationRulesPaginateTypeDef
 
+def get_value() -> ListNotificationRulesRequestListNotificationRulesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListNotificationRulesRequestListNotificationRulesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ListNotificationRulesFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListNotificationRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesRequestRequestTypeDef
+
+def get_value() -> ListNotificationRulesRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListNotificationRulesRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ListNotificationRulesFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`:
-  `Sequence`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listnotificationrulesresulttypedef"></a>
-
+1. See [:material-code-braces: ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef) 
 ## ListNotificationRulesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListNotificationRulesResultTypeDef
+
+def get_value() -> ListNotificationRulesResultTypeDef:
+    return {
+        "NextToken": ...,
+        "NotificationRules": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNotificationRulesResultTypeDef(TypedDict):
+    NextToken: str,
+    NotificationRules: List[NotificationRuleSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `NotificationRules`:
-  `List`\[[NotificationRuleSummaryTypeDef](./type_defs.md#notificationrulesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationRuleSummaryTypeDef](./type_defs.md#notificationrulesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="listtagsforresourceresulttypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## ListTagsForResourceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListTagsForResourceResultTypeDef
+
+def get_value() -> ListTagsForResourceResultTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResultTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtargetsfiltertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTargetsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListTargetsFilterTypeDef
+
+def get_value() -> ListTargetsFilterTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTargetsFilterTypeDef(TypedDict):
+    Name: ListTargetsFilterNameType,  # (1)
+    Value: str,
+```
 
-- `Name`: [ListTargetsFilterNameType](./literals.md#listtargetsfilternametype)
-- `Value`: `str`
+1. See [:material-code-brackets: ListTargetsFilterNameType](./literals.md#listtargetsfilternametype) 
+## ListTargetsRequestListTargetsPaginateTypeDef
 
-<a id="listtargetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codestar_notifications.type_defs import ListTargetsRequestListTargetsPaginateTypeDef
 
+def get_value() -> ListTargetsRequestListTargetsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListTargetsRequestListTargetsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ListTargetsFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTargetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListTargetsRequestRequestTypeDef
+
+def get_value() -> ListTargetsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTargetsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ListTargetsFilterTypeDef]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`:
-  `Sequence`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listtargetsresulttypedef"></a>
-
+1. See [:material-code-braces: ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef) 
 ## ListTargetsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ListTargetsResultTypeDef
+
+def get_value() -> ListTargetsResultTypeDef:
+    return {
+        "Targets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTargetsResultTypeDef(TypedDict):
+    Targets: List[TargetSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Targets`:
-  `List`\[[TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notificationrulesummarytypedef"></a>
-
+1. See [:material-code-braces: TargetSummaryTypeDef](./type_defs.md#targetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotificationRuleSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import NotificationRuleSummaryTypeDef
+
+def get_value() -> NotificationRuleSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class NotificationRuleSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="subscriberequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SubscribeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import SubscribeRequestRequestTypeDef
+
+def get_value() -> SubscribeRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "Target": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubscribeRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    Target: TargetTypeDef,  # (1)
+    ClientRequestToken: NotRequired[str],
+```
 
-- `Arn`: `str`
-- `Target`: [TargetTypeDef](./type_defs.md#targettypedef)
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-
-<a id="subscriberesulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 ## SubscribeResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import SubscribeResultTypeDef
+
+def get_value() -> SubscribeResultTypeDef:
+    return {
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubscribeResultTypeDef(TypedDict):
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="tagresourceresulttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TagResourceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import TagResourceResultTypeDef
+
+def get_value() -> TagResourceResultTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceResultTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="targetsummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TargetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import TargetSummaryTypeDef
+
+def get_value() -> TargetSummaryTypeDef:
+    return {
+        "TargetAddress": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TargetSummaryTypeDef(TypedDict):
+    TargetAddress: NotRequired[str],
+    TargetType: NotRequired[str],
+    TargetStatus: NotRequired[TargetStatusType],  # (1)
+```
 
-- `TargetAddress`: `str`
-- `TargetType`: `str`
-- `TargetStatus`: [TargetStatusType](./literals.md#targetstatustype)
-
-<a id="targettypedef"></a>
-
+1. See [:material-code-brackets: TargetStatusType](./literals.md#targetstatustype) 
 ## TargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import TargetTypeDef
+
+def get_value() -> TargetTypeDef:
+    return {
+        "TargetType": ...,
+    }
 ```
 
-Optional fields:
-
-- `TargetType`: `str`
-- `TargetAddress`: `str`
-
-<a id="unsubscriberequestrequesttypedef"></a>
+```python title="Definition"
+class TargetTypeDef(TypedDict):
+    TargetType: NotRequired[str],
+    TargetAddress: NotRequired[str],
+```
 
 ## UnsubscribeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import UnsubscribeRequestRequestTypeDef
+
+def get_value() -> UnsubscribeRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "TargetAddress": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `TargetAddress`: `str`
-
-<a id="unsubscriberesulttypedef"></a>
+```python title="Definition"
+class UnsubscribeRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    TargetAddress: str,
+```
 
 ## UnsubscribeResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import UnsubscribeResultTypeDef
+
+def get_value() -> UnsubscribeResultTypeDef:
+    return {
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UnsubscribeResultTypeDef(TypedDict):
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatenotificationrulerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateNotificationRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_notifications.type_defs import UpdateNotificationRuleRequestRequestTypeDef
+
+def get_value() -> UpdateNotificationRuleRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNotificationRuleRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    Name: NotRequired[str],
+    Status: NotRequired[NotificationRuleStatusType],  # (1)
+    EventTypeIds: NotRequired[Sequence[str]],
+    Targets: NotRequired[Sequence[TargetTypeDef]],  # (2)
+    DetailType: NotRequired[DetailTypeType],  # (3)
+```
 
-- `Arn`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Status`:
-  [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
-- `EventTypeIds`: `Sequence`\[`str`\]
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `DetailType`: [DetailTypeType](./literals.md#detailtypetype)
+1. See [:material-code-brackets: NotificationRuleStatusType](./literals.md#notificationrulestatustype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-brackets: DetailTypeType](./literals.md#detailtypetype) 

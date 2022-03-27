@@ -1,788 +1,987 @@
-<a id="typed-dictionaries-for-boto3-qldb-module"></a>
-
-# Typed dictionaries for boto3 QLDB module
+# Typed dictionaries
 
 > [Index](../README.md) > [QLDB](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
-type annotations stubs module
-[mypy-boto3-qldb](https://pypi.org/project/mypy-boto3-qldb/).
+!!! note ""
 
-- [Typed dictionaries for boto3 QLDB module](#typed-dictionaries-for-boto3-qldb-module)
-  - [CancelJournalKinesisStreamRequestRequestTypeDef](#canceljournalkinesisstreamrequestrequesttypedef)
-  - [CancelJournalKinesisStreamResponseTypeDef](#canceljournalkinesisstreamresponsetypedef)
-  - [CreateLedgerRequestRequestTypeDef](#createledgerrequestrequesttypedef)
-  - [CreateLedgerResponseTypeDef](#createledgerresponsetypedef)
-  - [DeleteLedgerRequestRequestTypeDef](#deleteledgerrequestrequesttypedef)
-  - [DescribeJournalKinesisStreamRequestRequestTypeDef](#describejournalkinesisstreamrequestrequesttypedef)
-  - [DescribeJournalKinesisStreamResponseTypeDef](#describejournalkinesisstreamresponsetypedef)
-  - [DescribeJournalS3ExportRequestRequestTypeDef](#describejournals3exportrequestrequesttypedef)
-  - [DescribeJournalS3ExportResponseTypeDef](#describejournals3exportresponsetypedef)
-  - [DescribeLedgerRequestRequestTypeDef](#describeledgerrequestrequesttypedef)
-  - [DescribeLedgerResponseTypeDef](#describeledgerresponsetypedef)
-  - [ExportJournalToS3RequestRequestTypeDef](#exportjournaltos3requestrequesttypedef)
-  - [ExportJournalToS3ResponseTypeDef](#exportjournaltos3responsetypedef)
-  - [GetBlockRequestRequestTypeDef](#getblockrequestrequesttypedef)
-  - [GetBlockResponseTypeDef](#getblockresponsetypedef)
-  - [GetDigestRequestRequestTypeDef](#getdigestrequestrequesttypedef)
-  - [GetDigestResponseTypeDef](#getdigestresponsetypedef)
-  - [GetRevisionRequestRequestTypeDef](#getrevisionrequestrequesttypedef)
-  - [GetRevisionResponseTypeDef](#getrevisionresponsetypedef)
-  - [JournalKinesisStreamDescriptionTypeDef](#journalkinesisstreamdescriptiontypedef)
-  - [JournalS3ExportDescriptionTypeDef](#journals3exportdescriptiontypedef)
-  - [KinesisConfigurationTypeDef](#kinesisconfigurationtypedef)
-  - [LedgerEncryptionDescriptionTypeDef](#ledgerencryptiondescriptiontypedef)
-  - [LedgerSummaryTypeDef](#ledgersummarytypedef)
-  - [ListJournalKinesisStreamsForLedgerRequestRequestTypeDef](#listjournalkinesisstreamsforledgerrequestrequesttypedef)
-  - [ListJournalKinesisStreamsForLedgerResponseTypeDef](#listjournalkinesisstreamsforledgerresponsetypedef)
-  - [ListJournalS3ExportsForLedgerRequestRequestTypeDef](#listjournals3exportsforledgerrequestrequesttypedef)
-  - [ListJournalS3ExportsForLedgerResponseTypeDef](#listjournals3exportsforledgerresponsetypedef)
-  - [ListJournalS3ExportsRequestRequestTypeDef](#listjournals3exportsrequestrequesttypedef)
-  - [ListJournalS3ExportsResponseTypeDef](#listjournals3exportsresponsetypedef)
-  - [ListLedgersRequestRequestTypeDef](#listledgersrequestrequesttypedef)
-  - [ListLedgersResponseTypeDef](#listledgersresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3EncryptionConfigurationTypeDef](#s3encryptionconfigurationtypedef)
-  - [S3ExportConfigurationTypeDef](#s3exportconfigurationtypedef)
-  - [StreamJournalToKinesisRequestRequestTypeDef](#streamjournaltokinesisrequestrequesttypedef)
-  - [StreamJournalToKinesisResponseTypeDef](#streamjournaltokinesisresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateLedgerPermissionsModeRequestRequestTypeDef](#updateledgerpermissionsmoderequestrequesttypedef)
-  - [UpdateLedgerPermissionsModeResponseTypeDef](#updateledgerpermissionsmoderesponsetypedef)
-  - [UpdateLedgerRequestRequestTypeDef](#updateledgerrequestrequesttypedef)
-  - [UpdateLedgerResponseTypeDef](#updateledgerresponsetypedef)
-  - [ValueHolderTypeDef](#valueholdertypedef)
-
-<a id="canceljournalkinesisstreamrequestrequesttypedef"></a>
+    Auto-generated documentation for [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
+    type annotations stubs module [mypy-boto3-qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
 ## CancelJournalKinesisStreamRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import CancelJournalKinesisStreamRequestRequestTypeDef
+
+def get_value() -> CancelJournalKinesisStreamRequestRequestTypeDef:
+    return {
+        "LedgerName": ...,
+        "StreamId": ...,
+    }
 ```
 
-Required fields:
-
-- `LedgerName`: `str`
-- `StreamId`: `str`
-
-<a id="canceljournalkinesisstreamresponsetypedef"></a>
+```python title="Definition"
+class CancelJournalKinesisStreamRequestRequestTypeDef(TypedDict):
+    LedgerName: str,
+    StreamId: str,
+```
 
 ## CancelJournalKinesisStreamResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import CancelJournalKinesisStreamResponseTypeDef
+
+def get_value() -> CancelJournalKinesisStreamResponseTypeDef:
+    return {
+        "StreamId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelJournalKinesisStreamResponseTypeDef(TypedDict):
+    StreamId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StreamId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createledgerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLedgerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import CreateLedgerRequestRequestTypeDef
+
+def get_value() -> CreateLedgerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "PermissionsMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLedgerRequestRequestTypeDef(TypedDict):
+    Name: str,
+    PermissionsMode: PermissionsModeType,  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+    DeletionProtection: NotRequired[bool],
+    KmsKey: NotRequired[str],
+```
 
-- `Name`: `str`
-- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `DeletionProtection`: `bool`
-- `KmsKey`: `str`
-
-<a id="createledgerresponsetypedef"></a>
-
+1. See [:material-code-brackets: PermissionsModeType](./literals.md#permissionsmodetype) 
 ## CreateLedgerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import CreateLedgerResponseTypeDef
+
+def get_value() -> CreateLedgerResponseTypeDef:
+    return {
+        "Name": ...,
+        "Arn": ...,
+        "State": ...,
+        "CreationDateTime": ...,
+        "PermissionsMode": ...,
+        "DeletionProtection": ...,
+        "KmsKeyArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLedgerResponseTypeDef(TypedDict):
+    Name: str,
+    Arn: str,
+    State: LedgerStateType,  # (1)
+    CreationDateTime: datetime,
+    PermissionsMode: PermissionsModeType,  # (2)
+    DeletionProtection: bool,
+    KmsKeyArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Name`: `str`
-- `Arn`: `str`
-- `State`: [LedgerStateType](./literals.md#ledgerstatetype)
-- `CreationDateTime`: `datetime`
-- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
-- `DeletionProtection`: `bool`
-- `KmsKeyArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteledgerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LedgerStateType](./literals.md#ledgerstatetype) 
+2. See [:material-code-brackets: PermissionsModeType](./literals.md#permissionsmodetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteLedgerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import DeleteLedgerRequestRequestTypeDef
+
+def get_value() -> DeleteLedgerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describejournalkinesisstreamrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteLedgerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribeJournalKinesisStreamRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import DescribeJournalKinesisStreamRequestRequestTypeDef
+
+def get_value() -> DescribeJournalKinesisStreamRequestRequestTypeDef:
+    return {
+        "LedgerName": ...,
+        "StreamId": ...,
+    }
 ```
 
-Required fields:
-
-- `LedgerName`: `str`
-- `StreamId`: `str`
-
-<a id="describejournalkinesisstreamresponsetypedef"></a>
+```python title="Definition"
+class DescribeJournalKinesisStreamRequestRequestTypeDef(TypedDict):
+    LedgerName: str,
+    StreamId: str,
+```
 
 ## DescribeJournalKinesisStreamResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import DescribeJournalKinesisStreamResponseTypeDef
+
+def get_value() -> DescribeJournalKinesisStreamResponseTypeDef:
+    return {
+        "Stream": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeJournalKinesisStreamResponseTypeDef(TypedDict):
+    Stream: JournalKinesisStreamDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Stream`:
-  [JournalKinesisStreamDescriptionTypeDef](./type_defs.md#journalkinesisstreamdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describejournals3exportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JournalKinesisStreamDescriptionTypeDef](./type_defs.md#journalkinesisstreamdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeJournalS3ExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import DescribeJournalS3ExportRequestRequestTypeDef
+
+def get_value() -> DescribeJournalS3ExportRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ExportId": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ExportId`: `str`
-
-<a id="describejournals3exportresponsetypedef"></a>
+```python title="Definition"
+class DescribeJournalS3ExportRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ExportId: str,
+```
 
 ## DescribeJournalS3ExportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import DescribeJournalS3ExportResponseTypeDef
+
+def get_value() -> DescribeJournalS3ExportResponseTypeDef:
+    return {
+        "ExportDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeJournalS3ExportResponseTypeDef(TypedDict):
+    ExportDescription: JournalS3ExportDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExportDescription`:
-  [JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeledgerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLedgerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import DescribeLedgerRequestRequestTypeDef
+
+def get_value() -> DescribeLedgerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describeledgerresponsetypedef"></a>
+```python title="Definition"
+class DescribeLedgerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribeLedgerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import DescribeLedgerResponseTypeDef
+
+def get_value() -> DescribeLedgerResponseTypeDef:
+    return {
+        "Name": ...,
+        "Arn": ...,
+        "State": ...,
+        "CreationDateTime": ...,
+        "PermissionsMode": ...,
+        "DeletionProtection": ...,
+        "EncryptionDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLedgerResponseTypeDef(TypedDict):
+    Name: str,
+    Arn: str,
+    State: LedgerStateType,  # (1)
+    CreationDateTime: datetime,
+    PermissionsMode: PermissionsModeType,  # (2)
+    DeletionProtection: bool,
+    EncryptionDescription: LedgerEncryptionDescriptionTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Name`: `str`
-- `Arn`: `str`
-- `State`: [LedgerStateType](./literals.md#ledgerstatetype)
-- `CreationDateTime`: `datetime`
-- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
-- `DeletionProtection`: `bool`
-- `EncryptionDescription`:
-  [LedgerEncryptionDescriptionTypeDef](./type_defs.md#ledgerencryptiondescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="exportjournaltos3requestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LedgerStateType](./literals.md#ledgerstatetype) 
+2. See [:material-code-brackets: PermissionsModeType](./literals.md#permissionsmodetype) 
+3. See [:material-code-braces: LedgerEncryptionDescriptionTypeDef](./type_defs.md#ledgerencryptiondescriptiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExportJournalToS3RequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ExportJournalToS3RequestRequestTypeDef
+
+def get_value() -> ExportJournalToS3RequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "InclusiveStartTime": ...,
+        "ExclusiveEndTime": ...,
+        "S3ExportConfiguration": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportJournalToS3RequestRequestTypeDef(TypedDict):
+    Name: str,
+    InclusiveStartTime: Union[datetime, str],
+    ExclusiveEndTime: Union[datetime, str],
+    S3ExportConfiguration: S3ExportConfigurationTypeDef,  # (1)
+    RoleArn: str,
+    OutputFormat: NotRequired[OutputFormatType],  # (2)
+```
 
-- `Name`: `str`
-- `InclusiveStartTime`: `Union`\[`datetime`, `str`\]
-- `ExclusiveEndTime`: `Union`\[`datetime`, `str`\]
-- `S3ExportConfiguration`:
-  [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
-
-<a id="exportjournaltos3responsetypedef"></a>
-
+1. See [:material-code-braces: S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef) 
+2. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
 ## ExportJournalToS3ResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ExportJournalToS3ResponseTypeDef
+
+def get_value() -> ExportJournalToS3ResponseTypeDef:
+    return {
+        "ExportId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportJournalToS3ResponseTypeDef(TypedDict):
+    ExportId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ExportId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getblockrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBlockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import GetBlockRequestRequestTypeDef
+
+def get_value() -> GetBlockRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "BlockAddress": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBlockRequestRequestTypeDef(TypedDict):
+    Name: str,
+    BlockAddress: ValueHolderTypeDef,  # (1)
+    DigestTipAddress: NotRequired[ValueHolderTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `BlockAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-
-Optional fields:
-
-- `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-
-<a id="getblockresponsetypedef"></a>
-
+1. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+2. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
 ## GetBlockResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import GetBlockResponseTypeDef
+
+def get_value() -> GetBlockResponseTypeDef:
+    return {
+        "Block": ...,
+        "Proof": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBlockResponseTypeDef(TypedDict):
+    Block: ValueHolderTypeDef,  # (1)
+    Proof: ValueHolderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Block`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-- `Proof`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdigestrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+2. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDigestRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import GetDigestRequestRequestTypeDef
+
+def get_value() -> GetDigestRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getdigestresponsetypedef"></a>
+```python title="Definition"
+class GetDigestRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetDigestResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import GetDigestResponseTypeDef
+
+def get_value() -> GetDigestResponseTypeDef:
+    return {
+        "Digest": ...,
+        "DigestTipAddress": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDigestResponseTypeDef(TypedDict):
+    Digest: bytes,
+    DigestTipAddress: ValueHolderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Digest`: `bytes`
-- `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrevisionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRevisionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import GetRevisionRequestRequestTypeDef
+
+def get_value() -> GetRevisionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "BlockAddress": ...,
+        "DocumentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRevisionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    BlockAddress: ValueHolderTypeDef,  # (1)
+    DocumentId: str,
+    DigestTipAddress: NotRequired[ValueHolderTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `BlockAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-- `DocumentId`: `str`
-
-Optional fields:
-
-- `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-
-<a id="getrevisionresponsetypedef"></a>
-
+1. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+2. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
 ## GetRevisionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import GetRevisionResponseTypeDef
+
+def get_value() -> GetRevisionResponseTypeDef:
+    return {
+        "Proof": ...,
+        "Revision": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRevisionResponseTypeDef(TypedDict):
+    Proof: ValueHolderTypeDef,  # (1)
+    Revision: ValueHolderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Proof`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-- `Revision`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="journalkinesisstreamdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+2. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## JournalKinesisStreamDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import JournalKinesisStreamDescriptionTypeDef
+
+def get_value() -> JournalKinesisStreamDescriptionTypeDef:
+    return {
+        "LedgerName": ...,
+        "RoleArn": ...,
+        "StreamId": ...,
+        "Status": ...,
+        "KinesisConfiguration": ...,
+        "StreamName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JournalKinesisStreamDescriptionTypeDef(TypedDict):
+    LedgerName: str,
+    RoleArn: str,
+    StreamId: str,
+    Status: StreamStatusType,  # (1)
+    KinesisConfiguration: KinesisConfigurationTypeDef,  # (2)
+    StreamName: str,
+    CreationTime: NotRequired[datetime],
+    InclusiveStartTime: NotRequired[datetime],
+    ExclusiveEndTime: NotRequired[datetime],
+    Arn: NotRequired[str],
+    ErrorCause: NotRequired[ErrorCauseType],  # (3)
+```
 
-- `LedgerName`: `str`
-- `RoleArn`: `str`
-- `StreamId`: `str`
-- `Status`: [StreamStatusType](./literals.md#streamstatustype)
-- `KinesisConfiguration`:
-  [KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef)
-- `StreamName`: `str`
-
-Optional fields:
-
-- `CreationTime`: `datetime`
-- `InclusiveStartTime`: `datetime`
-- `ExclusiveEndTime`: `datetime`
-- `Arn`: `str`
-- `ErrorCause`: [ErrorCauseType](./literals.md#errorcausetype)
-
-<a id="journals3exportdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: StreamStatusType](./literals.md#streamstatustype) 
+2. See [:material-code-braces: KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef) 
+3. See [:material-code-brackets: ErrorCauseType](./literals.md#errorcausetype) 
 ## JournalS3ExportDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import JournalS3ExportDescriptionTypeDef
+
+def get_value() -> JournalS3ExportDescriptionTypeDef:
+    return {
+        "LedgerName": ...,
+        "ExportId": ...,
+        "ExportCreationTime": ...,
+        "Status": ...,
+        "InclusiveStartTime": ...,
+        "ExclusiveEndTime": ...,
+        "S3ExportConfiguration": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JournalS3ExportDescriptionTypeDef(TypedDict):
+    LedgerName: str,
+    ExportId: str,
+    ExportCreationTime: datetime,
+    Status: ExportStatusType,  # (1)
+    InclusiveStartTime: datetime,
+    ExclusiveEndTime: datetime,
+    S3ExportConfiguration: S3ExportConfigurationTypeDef,  # (2)
+    RoleArn: str,
+    OutputFormat: NotRequired[OutputFormatType],  # (3)
+```
 
-- `LedgerName`: `str`
-- `ExportId`: `str`
-- `ExportCreationTime`: `datetime`
-- `Status`: [ExportStatusType](./literals.md#exportstatustype)
-- `InclusiveStartTime`: `datetime`
-- `ExclusiveEndTime`: `datetime`
-- `S3ExportConfiguration`:
-  [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
-
-<a id="kinesisconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ExportStatusType](./literals.md#exportstatustype) 
+2. See [:material-code-braces: S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef) 
+3. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
 ## KinesisConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import KinesisConfigurationTypeDef
+
+def get_value() -> KinesisConfigurationTypeDef:
+    return {
+        "StreamArn": ...,
+    }
 ```
 
-Required fields:
-
-- `StreamArn`: `str`
-
-Optional fields:
-
-- `AggregationEnabled`: `bool`
-
-<a id="ledgerencryptiondescriptiontypedef"></a>
+```python title="Definition"
+class KinesisConfigurationTypeDef(TypedDict):
+    StreamArn: str,
+    AggregationEnabled: NotRequired[bool],
+```
 
 ## LedgerEncryptionDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import LedgerEncryptionDescriptionTypeDef
+
+def get_value() -> LedgerEncryptionDescriptionTypeDef:
+    return {
+        "KmsKeyArn": ...,
+        "EncryptionStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LedgerEncryptionDescriptionTypeDef(TypedDict):
+    KmsKeyArn: str,
+    EncryptionStatus: EncryptionStatusType,  # (1)
+    InaccessibleKmsKeyDateTime: NotRequired[datetime],
+```
 
-- `KmsKeyArn`: `str`
-- `EncryptionStatus`:
-  [EncryptionStatusType](./literals.md#encryptionstatustype)
-
-Optional fields:
-
-- `InaccessibleKmsKeyDateTime`: `datetime`
-
-<a id="ledgersummarytypedef"></a>
-
+1. See [:material-code-brackets: EncryptionStatusType](./literals.md#encryptionstatustype) 
 ## LedgerSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import LedgerSummaryTypeDef
+
+def get_value() -> LedgerSummaryTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LedgerSummaryTypeDef(TypedDict):
+    Name: NotRequired[str],
+    State: NotRequired[LedgerStateType],  # (1)
+    CreationDateTime: NotRequired[datetime],
+```
 
-- `Name`: `str`
-- `State`: [LedgerStateType](./literals.md#ledgerstatetype)
-- `CreationDateTime`: `datetime`
-
-<a id="listjournalkinesisstreamsforledgerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LedgerStateType](./literals.md#ledgerstatetype) 
 ## ListJournalKinesisStreamsForLedgerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListJournalKinesisStreamsForLedgerRequestRequestTypeDef
+
+def get_value() -> ListJournalKinesisStreamsForLedgerRequestRequestTypeDef:
+    return {
+        "LedgerName": ...,
+    }
 ```
 
-Required fields:
-
-- `LedgerName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listjournalkinesisstreamsforledgerresponsetypedef"></a>
+```python title="Definition"
+class ListJournalKinesisStreamsForLedgerRequestRequestTypeDef(TypedDict):
+    LedgerName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListJournalKinesisStreamsForLedgerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListJournalKinesisStreamsForLedgerResponseTypeDef
+
+def get_value() -> ListJournalKinesisStreamsForLedgerResponseTypeDef:
+    return {
+        "Streams": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJournalKinesisStreamsForLedgerResponseTypeDef(TypedDict):
+    Streams: List[JournalKinesisStreamDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Streams`:
-  `List`\[[JournalKinesisStreamDescriptionTypeDef](./type_defs.md#journalkinesisstreamdescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listjournals3exportsforledgerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JournalKinesisStreamDescriptionTypeDef](./type_defs.md#journalkinesisstreamdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListJournalS3ExportsForLedgerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListJournalS3ExportsForLedgerRequestRequestTypeDef
+
+def get_value() -> ListJournalS3ExportsForLedgerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listjournals3exportsforledgerresponsetypedef"></a>
+```python title="Definition"
+class ListJournalS3ExportsForLedgerRequestRequestTypeDef(TypedDict):
+    Name: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListJournalS3ExportsForLedgerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListJournalS3ExportsForLedgerResponseTypeDef
+
+def get_value() -> ListJournalS3ExportsForLedgerResponseTypeDef:
+    return {
+        "JournalS3Exports": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJournalS3ExportsForLedgerResponseTypeDef(TypedDict):
+    JournalS3Exports: List[JournalS3ExportDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JournalS3Exports`:
-  `List`\[[JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listjournals3exportsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListJournalS3ExportsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListJournalS3ExportsRequestRequestTypeDef
+
+def get_value() -> ListJournalS3ExportsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listjournals3exportsresponsetypedef"></a>
+```python title="Definition"
+class ListJournalS3ExportsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListJournalS3ExportsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListJournalS3ExportsResponseTypeDef
+
+def get_value() -> ListJournalS3ExportsResponseTypeDef:
+    return {
+        "JournalS3Exports": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJournalS3ExportsResponseTypeDef(TypedDict):
+    JournalS3Exports: List[JournalS3ExportDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JournalS3Exports`:
-  `List`\[[JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listledgersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JournalS3ExportDescriptionTypeDef](./type_defs.md#journals3exportdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListLedgersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListLedgersRequestRequestTypeDef
+
+def get_value() -> ListLedgersRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listledgersresponsetypedef"></a>
+```python title="Definition"
+class ListLedgersRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListLedgersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListLedgersResponseTypeDef
+
+def get_value() -> ListLedgersResponseTypeDef:
+    return {
+        "Ledgers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLedgersResponseTypeDef(TypedDict):
+    Ledgers: List[LedgerSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Ledgers`:
-  `List`\[[LedgerSummaryTypeDef](./type_defs.md#ledgersummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LedgerSummaryTypeDef](./type_defs.md#ledgersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3encryptionconfigurationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3EncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import S3EncryptionConfigurationTypeDef
+
+def get_value() -> S3EncryptionConfigurationTypeDef:
+    return {
+        "ObjectEncryptionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3EncryptionConfigurationTypeDef(TypedDict):
+    ObjectEncryptionType: S3ObjectEncryptionTypeType,  # (1)
+    KmsKeyArn: NotRequired[str],
+```
 
-- `ObjectEncryptionType`:
-  [S3ObjectEncryptionTypeType](./literals.md#s3objectencryptiontypetype)
-
-Optional fields:
-
-- `KmsKeyArn`: `str`
-
-<a id="s3exportconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: S3ObjectEncryptionTypeType](./literals.md#s3objectencryptiontypetype) 
 ## S3ExportConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import S3ExportConfigurationTypeDef
+
+def get_value() -> S3ExportConfigurationTypeDef:
+    return {
+        "Bucket": ...,
+        "Prefix": ...,
+        "EncryptionConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3ExportConfigurationTypeDef(TypedDict):
+    Bucket: str,
+    Prefix: str,
+    EncryptionConfiguration: S3EncryptionConfigurationTypeDef,  # (1)
+```
 
-- `Bucket`: `str`
-- `Prefix`: `str`
-- `EncryptionConfiguration`:
-  [S3EncryptionConfigurationTypeDef](./type_defs.md#s3encryptionconfigurationtypedef)
-
-<a id="streamjournaltokinesisrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3EncryptionConfigurationTypeDef](./type_defs.md#s3encryptionconfigurationtypedef) 
 ## StreamJournalToKinesisRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import StreamJournalToKinesisRequestRequestTypeDef
+
+def get_value() -> StreamJournalToKinesisRequestRequestTypeDef:
+    return {
+        "LedgerName": ...,
+        "RoleArn": ...,
+        "InclusiveStartTime": ...,
+        "KinesisConfiguration": ...,
+        "StreamName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StreamJournalToKinesisRequestRequestTypeDef(TypedDict):
+    LedgerName: str,
+    RoleArn: str,
+    InclusiveStartTime: Union[datetime, str],
+    KinesisConfiguration: KinesisConfigurationTypeDef,  # (1)
+    StreamName: str,
+    Tags: NotRequired[Mapping[str, str]],
+    ExclusiveEndTime: NotRequired[Union[datetime, str]],
+```
 
-- `LedgerName`: `str`
-- `RoleArn`: `str`
-- `InclusiveStartTime`: `Union`\[`datetime`, `str`\]
-- `KinesisConfiguration`:
-  [KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef)
-- `StreamName`: `str`
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `ExclusiveEndTime`: `Union`\[`datetime`, `str`\]
-
-<a id="streamjournaltokinesisresponsetypedef"></a>
-
+1. See [:material-code-braces: KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef) 
 ## StreamJournalToKinesisResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import StreamJournalToKinesisResponseTypeDef
+
+def get_value() -> StreamJournalToKinesisResponseTypeDef:
+    return {
+        "StreamId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StreamJournalToKinesisResponseTypeDef(TypedDict):
+    StreamId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StreamId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateledgerpermissionsmoderequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateLedgerPermissionsModeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import UpdateLedgerPermissionsModeRequestRequestTypeDef
+
+def get_value() -> UpdateLedgerPermissionsModeRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "PermissionsMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateLedgerPermissionsModeRequestRequestTypeDef(TypedDict):
+    Name: str,
+    PermissionsMode: PermissionsModeType,  # (1)
+```
 
-- `Name`: `str`
-- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
-
-<a id="updateledgerpermissionsmoderesponsetypedef"></a>
-
+1. See [:material-code-brackets: PermissionsModeType](./literals.md#permissionsmodetype) 
 ## UpdateLedgerPermissionsModeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import UpdateLedgerPermissionsModeResponseTypeDef
+
+def get_value() -> UpdateLedgerPermissionsModeResponseTypeDef:
+    return {
+        "Name": ...,
+        "Arn": ...,
+        "PermissionsMode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateLedgerPermissionsModeResponseTypeDef(TypedDict):
+    Name: str,
+    Arn: str,
+    PermissionsMode: PermissionsModeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Name`: `str`
-- `Arn`: `str`
-- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateledgerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PermissionsModeType](./literals.md#permissionsmodetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateLedgerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import UpdateLedgerRequestRequestTypeDef
+
+def get_value() -> UpdateLedgerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `DeletionProtection`: `bool`
-- `KmsKey`: `str`
-
-<a id="updateledgerresponsetypedef"></a>
+```python title="Definition"
+class UpdateLedgerRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DeletionProtection: NotRequired[bool],
+    KmsKey: NotRequired[str],
+```
 
 ## UpdateLedgerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import UpdateLedgerResponseTypeDef
+
+def get_value() -> UpdateLedgerResponseTypeDef:
+    return {
+        "Name": ...,
+        "Arn": ...,
+        "State": ...,
+        "CreationDateTime": ...,
+        "DeletionProtection": ...,
+        "EncryptionDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateLedgerResponseTypeDef(TypedDict):
+    Name: str,
+    Arn: str,
+    State: LedgerStateType,  # (1)
+    CreationDateTime: datetime,
+    DeletionProtection: bool,
+    EncryptionDescription: LedgerEncryptionDescriptionTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Name`: `str`
-- `Arn`: `str`
-- `State`: [LedgerStateType](./literals.md#ledgerstatetype)
-- `CreationDateTime`: `datetime`
-- `DeletionProtection`: `bool`
-- `EncryptionDescription`:
-  [LedgerEncryptionDescriptionTypeDef](./type_defs.md#ledgerencryptiondescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="valueholdertypedef"></a>
-
+1. See [:material-code-brackets: LedgerStateType](./literals.md#ledgerstatetype) 
+2. See [:material-code-braces: LedgerEncryptionDescriptionTypeDef](./type_defs.md#ledgerencryptiondescriptiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ValueHolderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_qldb.type_defs import ValueHolderTypeDef
+
+def get_value() -> ValueHolderTypeDef:
+    return {
+        "IonText": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ValueHolderTypeDef(TypedDict):
+    IonText: NotRequired[str],
+```
 
-- `IonText`: `str`

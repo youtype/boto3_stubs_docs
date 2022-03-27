@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-codeartifact-module"></a>
-
-# Examples for boto3 CodeArtifact module
+# Examples
 
 > [Index](../README.md) > [CodeArtifact](./README.md) > Examples
 
-- [Examples for boto3 CodeArtifact module](#examples-for-boto3-codeartifact-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
+    type annotations stubs module [mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[codeartifact]` package installed.
 
-Write your `CodeArtifact` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `CodeArtifact` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CodeArtifactClient
-# and provides type checking and code completion
-client = session.client("codeartifact")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateExternalConnectionResultTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_external_connection()
 
-# paginator has type ListDomainsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_domains")
-for item in paginator.paginate(...):
-    # item has type ListDomainsResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("codeartifact")  # (1)
+    result = client.associate_external_connection()  # (2)
+    ```
+
+    1. client: [CodeArtifactClient](./client.md)
+    2. result: [:material-code-braces: AssociateExternalConnectionResultTypeDef](./type_defs.md#associateexternalconnectionresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("codeartifact")  # (1)
+
+    paginator = client.get_paginator("list_domains")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CodeArtifactClient](./client.md)
+    2. paginator: [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+    3. item: [:material-code-braces: ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[codeartifact]` or a standalone `mypy_boto3_codeartifact`
-package, you have to explicitly specify `client: CodeArtifactClient` type
-annotation.
+With `boto3-stubs-lite[codeartifact]`
+or a standalone `mypy_boto3_codeartifact` package, you have to explicitly specify `client: CodeArtifactClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_codeartifact.client import CodeArtifactClient
-from mypy_boto3_codeartifact.paginator import ListDomainsPaginator
-
-from mypy_boto3_codeartifact.literals import PaginatorName
-
-from mypy_boto3_codeartifact.type_defs import AssociateExternalConnectionResultTypeDef
-from mypy_boto3_codeartifact.type_defs import ListDomainsResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CodeArtifactClient = session.client("codeartifact")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AssociateExternalConnectionResultTypeDef = client.associate_external_connection()
+    from mypy_boto3_codeartifact.client import CodeArtifactClient
+    from mypy_boto3_codeartifact.type_defs import AssociateExternalConnectionResultTypeDef
+    from mypy_boto3_codeartifact.type_defs import AssociateExternalConnectionRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_domains"
-paginator: ListDomainsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListDomainsResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: CodeArtifactClient = session.client("codeartifact")
+
+    kwargs: AssociateExternalConnectionRequestRequestTypeDef = {...}
+    result: AssociateExternalConnectionResultTypeDef = client.associate_external_connection(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_codeartifact.client import CodeArtifactClient
+    from mypy_boto3_codeartifact.paginator import ListDomainsPaginator
+    from mypy_boto3_codeartifact.type_defs import ListDomainsResultTypeDef
+
+
+    session = Session()
+    client: CodeArtifactClient = session.client("codeartifact")
+
+    paginator: ListDomainsPaginator = client.get_paginator("list_domains")
+    for item in paginator.paginate(...):
+        item: ListDomainsResultTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,1589 +1,2027 @@
-<a id="typed-dictionaries-for-boto3-pinpointemail-module"></a>
-
-# Typed dictionaries for boto3 PinpointEmail module
+# Typed dictionaries
 
 > [Index](../README.md) > [PinpointEmail](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
-type annotations stubs module
-[mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+!!! note ""
 
-- [Typed dictionaries for boto3 PinpointEmail module](#typed-dictionaries-for-boto3-pinpointemail-module)
-  - [BlacklistEntryTypeDef](#blacklistentrytypedef)
-  - [BodyTypeDef](#bodytypedef)
-  - [CloudWatchDestinationTypeDef](#cloudwatchdestinationtypedef)
-  - [CloudWatchDimensionConfigurationTypeDef](#cloudwatchdimensionconfigurationtypedef)
-  - [ContentTypeDef](#contenttypedef)
-  - [CreateConfigurationSetEventDestinationRequestRequestTypeDef](#createconfigurationseteventdestinationrequestrequesttypedef)
-  - [CreateConfigurationSetRequestRequestTypeDef](#createconfigurationsetrequestrequesttypedef)
-  - [CreateDedicatedIpPoolRequestRequestTypeDef](#creatededicatedippoolrequestrequesttypedef)
-  - [CreateDeliverabilityTestReportRequestRequestTypeDef](#createdeliverabilitytestreportrequestrequesttypedef)
-  - [CreateDeliverabilityTestReportResponseTypeDef](#createdeliverabilitytestreportresponsetypedef)
-  - [CreateEmailIdentityRequestRequestTypeDef](#createemailidentityrequestrequesttypedef)
-  - [CreateEmailIdentityResponseTypeDef](#createemailidentityresponsetypedef)
-  - [DailyVolumeTypeDef](#dailyvolumetypedef)
-  - [DedicatedIpTypeDef](#dedicatediptypedef)
-  - [DeleteConfigurationSetEventDestinationRequestRequestTypeDef](#deleteconfigurationseteventdestinationrequestrequesttypedef)
-  - [DeleteConfigurationSetRequestRequestTypeDef](#deleteconfigurationsetrequestrequesttypedef)
-  - [DeleteDedicatedIpPoolRequestRequestTypeDef](#deletededicatedippoolrequestrequesttypedef)
-  - [DeleteEmailIdentityRequestRequestTypeDef](#deleteemailidentityrequestrequesttypedef)
-  - [DeliverabilityTestReportTypeDef](#deliverabilitytestreporttypedef)
-  - [DeliveryOptionsTypeDef](#deliveryoptionstypedef)
-  - [DestinationTypeDef](#destinationtypedef)
-  - [DkimAttributesTypeDef](#dkimattributestypedef)
-  - [DomainDeliverabilityCampaignTypeDef](#domaindeliverabilitycampaigntypedef)
-  - [DomainDeliverabilityTrackingOptionTypeDef](#domaindeliverabilitytrackingoptiontypedef)
-  - [DomainIspPlacementTypeDef](#domainispplacementtypedef)
-  - [EmailContentTypeDef](#emailcontenttypedef)
-  - [EventDestinationDefinitionTypeDef](#eventdestinationdefinitiontypedef)
-  - [EventDestinationTypeDef](#eventdestinationtypedef)
-  - [GetAccountResponseTypeDef](#getaccountresponsetypedef)
-  - [GetBlacklistReportsRequestRequestTypeDef](#getblacklistreportsrequestrequesttypedef)
-  - [GetBlacklistReportsResponseTypeDef](#getblacklistreportsresponsetypedef)
-  - [GetConfigurationSetEventDestinationsRequestRequestTypeDef](#getconfigurationseteventdestinationsrequestrequesttypedef)
-  - [GetConfigurationSetEventDestinationsResponseTypeDef](#getconfigurationseteventdestinationsresponsetypedef)
-  - [GetConfigurationSetRequestRequestTypeDef](#getconfigurationsetrequestrequesttypedef)
-  - [GetConfigurationSetResponseTypeDef](#getconfigurationsetresponsetypedef)
-  - [GetDedicatedIpRequestRequestTypeDef](#getdedicatediprequestrequesttypedef)
-  - [GetDedicatedIpResponseTypeDef](#getdedicatedipresponsetypedef)
-  - [GetDedicatedIpsRequestRequestTypeDef](#getdedicatedipsrequestrequesttypedef)
-  - [GetDedicatedIpsResponseTypeDef](#getdedicatedipsresponsetypedef)
-  - [GetDeliverabilityDashboardOptionsResponseTypeDef](#getdeliverabilitydashboardoptionsresponsetypedef)
-  - [GetDeliverabilityTestReportRequestRequestTypeDef](#getdeliverabilitytestreportrequestrequesttypedef)
-  - [GetDeliverabilityTestReportResponseTypeDef](#getdeliverabilitytestreportresponsetypedef)
-  - [GetDomainDeliverabilityCampaignRequestRequestTypeDef](#getdomaindeliverabilitycampaignrequestrequesttypedef)
-  - [GetDomainDeliverabilityCampaignResponseTypeDef](#getdomaindeliverabilitycampaignresponsetypedef)
-  - [GetDomainStatisticsReportRequestRequestTypeDef](#getdomainstatisticsreportrequestrequesttypedef)
-  - [GetDomainStatisticsReportResponseTypeDef](#getdomainstatisticsreportresponsetypedef)
-  - [GetEmailIdentityRequestRequestTypeDef](#getemailidentityrequestrequesttypedef)
-  - [GetEmailIdentityResponseTypeDef](#getemailidentityresponsetypedef)
-  - [IdentityInfoTypeDef](#identityinfotypedef)
-  - [InboxPlacementTrackingOptionTypeDef](#inboxplacementtrackingoptiontypedef)
-  - [IspPlacementTypeDef](#ispplacementtypedef)
-  - [KinesisFirehoseDestinationTypeDef](#kinesisfirehosedestinationtypedef)
-  - [ListConfigurationSetsRequestRequestTypeDef](#listconfigurationsetsrequestrequesttypedef)
-  - [ListConfigurationSetsResponseTypeDef](#listconfigurationsetsresponsetypedef)
-  - [ListDedicatedIpPoolsRequestRequestTypeDef](#listdedicatedippoolsrequestrequesttypedef)
-  - [ListDedicatedIpPoolsResponseTypeDef](#listdedicatedippoolsresponsetypedef)
-  - [ListDeliverabilityTestReportsRequestRequestTypeDef](#listdeliverabilitytestreportsrequestrequesttypedef)
-  - [ListDeliverabilityTestReportsResponseTypeDef](#listdeliverabilitytestreportsresponsetypedef)
-  - [ListDomainDeliverabilityCampaignsRequestRequestTypeDef](#listdomaindeliverabilitycampaignsrequestrequesttypedef)
-  - [ListDomainDeliverabilityCampaignsResponseTypeDef](#listdomaindeliverabilitycampaignsresponsetypedef)
-  - [ListEmailIdentitiesRequestRequestTypeDef](#listemailidentitiesrequestrequesttypedef)
-  - [ListEmailIdentitiesResponseTypeDef](#listemailidentitiesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MailFromAttributesTypeDef](#mailfromattributestypedef)
-  - [MessageTagTypeDef](#messagetagtypedef)
-  - [MessageTypeDef](#messagetypedef)
-  - [OverallVolumeTypeDef](#overallvolumetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PinpointDestinationTypeDef](#pinpointdestinationtypedef)
-  - [PlacementStatisticsTypeDef](#placementstatisticstypedef)
-  - [PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef](#putaccountdedicatedipwarmupattributesrequestrequesttypedef)
-  - [PutAccountSendingAttributesRequestRequestTypeDef](#putaccountsendingattributesrequestrequesttypedef)
-  - [PutConfigurationSetDeliveryOptionsRequestRequestTypeDef](#putconfigurationsetdeliveryoptionsrequestrequesttypedef)
-  - [PutConfigurationSetReputationOptionsRequestRequestTypeDef](#putconfigurationsetreputationoptionsrequestrequesttypedef)
-  - [PutConfigurationSetSendingOptionsRequestRequestTypeDef](#putconfigurationsetsendingoptionsrequestrequesttypedef)
-  - [PutConfigurationSetTrackingOptionsRequestRequestTypeDef](#putconfigurationsettrackingoptionsrequestrequesttypedef)
-  - [PutDedicatedIpInPoolRequestRequestTypeDef](#putdedicatedipinpoolrequestrequesttypedef)
-  - [PutDedicatedIpWarmupAttributesRequestRequestTypeDef](#putdedicatedipwarmupattributesrequestrequesttypedef)
-  - [PutDeliverabilityDashboardOptionRequestRequestTypeDef](#putdeliverabilitydashboardoptionrequestrequesttypedef)
-  - [PutEmailIdentityDkimAttributesRequestRequestTypeDef](#putemailidentitydkimattributesrequestrequesttypedef)
-  - [PutEmailIdentityFeedbackAttributesRequestRequestTypeDef](#putemailidentityfeedbackattributesrequestrequesttypedef)
-  - [PutEmailIdentityMailFromAttributesRequestRequestTypeDef](#putemailidentitymailfromattributesrequestrequesttypedef)
-  - [RawMessageTypeDef](#rawmessagetypedef)
-  - [ReputationOptionsTypeDef](#reputationoptionstypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendEmailRequestRequestTypeDef](#sendemailrequestrequesttypedef)
-  - [SendEmailResponseTypeDef](#sendemailresponsetypedef)
-  - [SendQuotaTypeDef](#sendquotatypedef)
-  - [SendingOptionsTypeDef](#sendingoptionstypedef)
-  - [SnsDestinationTypeDef](#snsdestinationtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TemplateTypeDef](#templatetypedef)
-  - [TrackingOptionsTypeDef](#trackingoptionstypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateConfigurationSetEventDestinationRequestRequestTypeDef](#updateconfigurationseteventdestinationrequestrequesttypedef)
-  - [VolumeStatisticsTypeDef](#volumestatisticstypedef)
-
-<a id="blacklistentrytypedef"></a>
+    Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+    type annotations stubs module [mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 ## BlacklistEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import BlacklistEntryTypeDef
+
+def get_value() -> BlacklistEntryTypeDef:
+    return {
+        "RblName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RblName`: `str`
-- `ListingTime`: `datetime`
-- `Description`: `str`
-
-<a id="bodytypedef"></a>
+```python title="Definition"
+class BlacklistEntryTypeDef(TypedDict):
+    RblName: NotRequired[str],
+    ListingTime: NotRequired[datetime],
+    Description: NotRequired[str],
+```
 
 ## BodyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import BodyTypeDef
+
+def get_value() -> BodyTypeDef:
+    return {
+        "Text": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BodyTypeDef(TypedDict):
+    Text: NotRequired[ContentTypeDef],  # (1)
+    Html: NotRequired[ContentTypeDef],  # (1)
+```
 
-- `Text`: [ContentTypeDef](./type_defs.md#contenttypedef)
-- `Html`: [ContentTypeDef](./type_defs.md#contenttypedef)
-
-<a id="cloudwatchdestinationtypedef"></a>
-
+1. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
+2. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
 ## CloudWatchDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import CloudWatchDestinationTypeDef
+
+def get_value() -> CloudWatchDestinationTypeDef:
+    return {
+        "DimensionConfigurations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudWatchDestinationTypeDef(TypedDict):
+    DimensionConfigurations: Sequence[CloudWatchDimensionConfigurationTypeDef],  # (1)
+```
 
-- `DimensionConfigurations`:
-  `Sequence`\[[CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef)\]
-
-<a id="cloudwatchdimensionconfigurationtypedef"></a>
-
+1. See [:material-code-braces: CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef) 
 ## CloudWatchDimensionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import CloudWatchDimensionConfigurationTypeDef
+
+def get_value() -> CloudWatchDimensionConfigurationTypeDef:
+    return {
+        "DimensionName": ...,
+        "DimensionValueSource": ...,
+        "DefaultDimensionValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudWatchDimensionConfigurationTypeDef(TypedDict):
+    DimensionName: str,
+    DimensionValueSource: DimensionValueSourceType,  # (1)
+    DefaultDimensionValue: str,
+```
 
-- `DimensionName`: `str`
-- `DimensionValueSource`:
-  [DimensionValueSourceType](./literals.md#dimensionvaluesourcetype)
-- `DefaultDimensionValue`: `str`
-
-<a id="contenttypedef"></a>
-
+1. See [:material-code-brackets: DimensionValueSourceType](./literals.md#dimensionvaluesourcetype) 
 ## ContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ContentTypeDef
+
+def get_value() -> ContentTypeDef:
+    return {
+        "Data": ...,
+    }
 ```
 
-Required fields:
-
-- `Data`: `str`
-
-Optional fields:
-
-- `Charset`: `str`
-
-<a id="createconfigurationseteventdestinationrequestrequesttypedef"></a>
+```python title="Definition"
+class ContentTypeDef(TypedDict):
+    Data: str,
+    Charset: NotRequired[str],
+```
 
 ## CreateConfigurationSetEventDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import CreateConfigurationSetEventDestinationRequestRequestTypeDef
+
+def get_value() -> CreateConfigurationSetEventDestinationRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+        "EventDestinationName": ...,
+        "EventDestination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConfigurationSetEventDestinationRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+    EventDestination: EventDestinationDefinitionTypeDef,  # (1)
+```
 
-- `ConfigurationSetName`: `str`
-- `EventDestinationName`: `str`
-- `EventDestination`:
-  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
-
-<a id="createconfigurationsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
 ## CreateConfigurationSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import CreateConfigurationSetRequestRequestTypeDef
+
+def get_value() -> CreateConfigurationSetRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConfigurationSetRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    TrackingOptions: NotRequired[TrackingOptionsTypeDef],  # (1)
+    DeliveryOptions: NotRequired[DeliveryOptionsTypeDef],  # (2)
+    ReputationOptions: NotRequired[ReputationOptionsTypeDef],  # (3)
+    SendingOptions: NotRequired[SendingOptionsTypeDef],  # (4)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+```
 
-- `ConfigurationSetName`: `str`
-
-Optional fields:
-
-- `TrackingOptions`:
-  [TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef)
-- `DeliveryOptions`:
-  [DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef)
-- `ReputationOptions`:
-  [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
-- `SendingOptions`:
-  [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="creatededicatedippoolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef) 
+2. See [:material-code-braces: DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef) 
+3. See [:material-code-braces: ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef) 
+4. See [:material-code-braces: SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDedicatedIpPoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import CreateDedicatedIpPoolRequestRequestTypeDef
+
+def get_value() -> CreateDedicatedIpPoolRequestRequestTypeDef:
+    return {
+        "PoolName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDedicatedIpPoolRequestRequestTypeDef(TypedDict):
+    PoolName: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `PoolName`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdeliverabilitytestreportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDeliverabilityTestReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import CreateDeliverabilityTestReportRequestRequestTypeDef
+
+def get_value() -> CreateDeliverabilityTestReportRequestRequestTypeDef:
+    return {
+        "FromEmailAddress": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeliverabilityTestReportRequestRequestTypeDef(TypedDict):
+    FromEmailAddress: str,
+    Content: EmailContentTypeDef,  # (1)
+    ReportName: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `FromEmailAddress`: `str`
-- `Content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
-
-Optional fields:
-
-- `ReportName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdeliverabilitytestreportresponsetypedef"></a>
-
+1. See [:material-code-braces: EmailContentTypeDef](./type_defs.md#emailcontenttypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDeliverabilityTestReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import CreateDeliverabilityTestReportResponseTypeDef
+
+def get_value() -> CreateDeliverabilityTestReportResponseTypeDef:
+    return {
+        "ReportId": ...,
+        "DeliverabilityTestStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeliverabilityTestReportResponseTypeDef(TypedDict):
+    ReportId: str,
+    DeliverabilityTestStatus: DeliverabilityTestStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReportId`: `str`
-- `DeliverabilityTestStatus`:
-  [DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createemailidentityrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEmailIdentityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import CreateEmailIdentityRequestRequestTypeDef
+
+def get_value() -> CreateEmailIdentityRequestRequestTypeDef:
+    return {
+        "EmailIdentity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEmailIdentityRequestRequestTypeDef(TypedDict):
+    EmailIdentity: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `EmailIdentity`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createemailidentityresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEmailIdentityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import CreateEmailIdentityResponseTypeDef
+
+def get_value() -> CreateEmailIdentityResponseTypeDef:
+    return {
+        "IdentityType": ...,
+        "VerifiedForSendingStatus": ...,
+        "DkimAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEmailIdentityResponseTypeDef(TypedDict):
+    IdentityType: IdentityTypeType,  # (1)
+    VerifiedForSendingStatus: bool,
+    DkimAttributes: DkimAttributesTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `VerifiedForSendingStatus`: `bool`
-- `DkimAttributes`:
-  [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dailyvolumetypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-braces: DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DailyVolumeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DailyVolumeTypeDef
+
+def get_value() -> DailyVolumeTypeDef:
+    return {
+        "StartDate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DailyVolumeTypeDef(TypedDict):
+    StartDate: NotRequired[datetime],
+    VolumeStatistics: NotRequired[VolumeStatisticsTypeDef],  # (1)
+    DomainIspPlacements: NotRequired[List[DomainIspPlacementTypeDef]],  # (2)
+```
 
-- `StartDate`: `datetime`
-- `VolumeStatistics`:
-  [VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef)
-- `DomainIspPlacements`:
-  `List`\[[DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef)\]
-
-<a id="dedicatediptypedef"></a>
-
+1. See [:material-code-braces: VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef) 
+2. See [:material-code-braces: DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef) 
 ## DedicatedIpTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DedicatedIpTypeDef
+
+def get_value() -> DedicatedIpTypeDef:
+    return {
+        "Ip": ...,
+        "WarmupStatus": ...,
+        "WarmupPercentage": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DedicatedIpTypeDef(TypedDict):
+    Ip: str,
+    WarmupStatus: WarmupStatusType,  # (1)
+    WarmupPercentage: int,
+    PoolName: NotRequired[str],
+```
 
-- `Ip`: `str`
-- `WarmupStatus`: [WarmupStatusType](./literals.md#warmupstatustype)
-- `WarmupPercentage`: `int`
-
-Optional fields:
-
-- `PoolName`: `str`
-
-<a id="deleteconfigurationseteventdestinationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WarmupStatusType](./literals.md#warmupstatustype) 
 ## DeleteConfigurationSetEventDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DeleteConfigurationSetEventDestinationRequestRequestTypeDef
+
+def get_value() -> DeleteConfigurationSetEventDestinationRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+        "EventDestinationName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationSetName`: `str`
-- `EventDestinationName`: `str`
-
-<a id="deleteconfigurationsetrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConfigurationSetEventDestinationRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+```
 
 ## DeleteConfigurationSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DeleteConfigurationSetRequestRequestTypeDef
+
+def get_value() -> DeleteConfigurationSetRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationSetName`: `str`
-
-<a id="deletededicatedippoolrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConfigurationSetRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+```
 
 ## DeleteDedicatedIpPoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DeleteDedicatedIpPoolRequestRequestTypeDef
+
+def get_value() -> DeleteDedicatedIpPoolRequestRequestTypeDef:
+    return {
+        "PoolName": ...,
+    }
 ```
 
-Required fields:
-
-- `PoolName`: `str`
-
-<a id="deleteemailidentityrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDedicatedIpPoolRequestRequestTypeDef(TypedDict):
+    PoolName: str,
+```
 
 ## DeleteEmailIdentityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DeleteEmailIdentityRequestRequestTypeDef
+
+def get_value() -> DeleteEmailIdentityRequestRequestTypeDef:
+    return {
+        "EmailIdentity": ...,
+    }
 ```
 
-Required fields:
-
-- `EmailIdentity`: `str`
-
-<a id="deliverabilitytestreporttypedef"></a>
+```python title="Definition"
+class DeleteEmailIdentityRequestRequestTypeDef(TypedDict):
+    EmailIdentity: str,
+```
 
 ## DeliverabilityTestReportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DeliverabilityTestReportTypeDef
+
+def get_value() -> DeliverabilityTestReportTypeDef:
+    return {
+        "ReportId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeliverabilityTestReportTypeDef(TypedDict):
+    ReportId: NotRequired[str],
+    ReportName: NotRequired[str],
+    Subject: NotRequired[str],
+    FromEmailAddress: NotRequired[str],
+    CreateDate: NotRequired[datetime],
+    DeliverabilityTestStatus: NotRequired[DeliverabilityTestStatusType],  # (1)
+```
 
-- `ReportId`: `str`
-- `ReportName`: `str`
-- `Subject`: `str`
-- `FromEmailAddress`: `str`
-- `CreateDate`: `datetime`
-- `DeliverabilityTestStatus`:
-  [DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype)
-
-<a id="deliveryoptionstypedef"></a>
-
+1. See [:material-code-brackets: DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype) 
 ## DeliveryOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DeliveryOptionsTypeDef
+
+def get_value() -> DeliveryOptionsTypeDef:
+    return {
+        "TlsPolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeliveryOptionsTypeDef(TypedDict):
+    TlsPolicy: NotRequired[TlsPolicyType],  # (1)
+    SendingPoolName: NotRequired[str],
+```
 
-- `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
-- `SendingPoolName`: `str`
-
-<a id="destinationtypedef"></a>
-
+1. See [:material-code-brackets: TlsPolicyType](./literals.md#tlspolicytype) 
 ## DestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DestinationTypeDef
+
+def get_value() -> DestinationTypeDef:
+    return {
+        "ToAddresses": ...,
+    }
 ```
 
-Optional fields:
-
-- `ToAddresses`: `Sequence`\[`str`\]
-- `CcAddresses`: `Sequence`\[`str`\]
-- `BccAddresses`: `Sequence`\[`str`\]
-
-<a id="dkimattributestypedef"></a>
+```python title="Definition"
+class DestinationTypeDef(TypedDict):
+    ToAddresses: NotRequired[Sequence[str]],
+    CcAddresses: NotRequired[Sequence[str]],
+    BccAddresses: NotRequired[Sequence[str]],
+```
 
 ## DkimAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DkimAttributesTypeDef
+
+def get_value() -> DkimAttributesTypeDef:
+    return {
+        "SigningEnabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DkimAttributesTypeDef(TypedDict):
+    SigningEnabled: NotRequired[bool],
+    Status: NotRequired[DkimStatusType],  # (1)
+    Tokens: NotRequired[List[str]],
+```
 
-- `SigningEnabled`: `bool`
-- `Status`: [DkimStatusType](./literals.md#dkimstatustype)
-- `Tokens`: `List`\[`str`\]
-
-<a id="domaindeliverabilitycampaigntypedef"></a>
-
+1. See [:material-code-brackets: DkimStatusType](./literals.md#dkimstatustype) 
 ## DomainDeliverabilityCampaignTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DomainDeliverabilityCampaignTypeDef
+
+def get_value() -> DomainDeliverabilityCampaignTypeDef:
+    return {
+        "CampaignId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CampaignId`: `str`
-- `ImageUrl`: `str`
-- `Subject`: `str`
-- `FromAddress`: `str`
-- `SendingIps`: `List`\[`str`\]
-- `FirstSeenDateTime`: `datetime`
-- `LastSeenDateTime`: `datetime`
-- `InboxCount`: `int`
-- `SpamCount`: `int`
-- `ReadRate`: `float`
-- `DeleteRate`: `float`
-- `ReadDeleteRate`: `float`
-- `ProjectedVolume`: `int`
-- `Esps`: `List`\[`str`\]
-
-<a id="domaindeliverabilitytrackingoptiontypedef"></a>
+```python title="Definition"
+class DomainDeliverabilityCampaignTypeDef(TypedDict):
+    CampaignId: NotRequired[str],
+    ImageUrl: NotRequired[str],
+    Subject: NotRequired[str],
+    FromAddress: NotRequired[str],
+    SendingIps: NotRequired[List[str]],
+    FirstSeenDateTime: NotRequired[datetime],
+    LastSeenDateTime: NotRequired[datetime],
+    InboxCount: NotRequired[int],
+    SpamCount: NotRequired[int],
+    ReadRate: NotRequired[float],
+    DeleteRate: NotRequired[float],
+    ReadDeleteRate: NotRequired[float],
+    ProjectedVolume: NotRequired[int],
+    Esps: NotRequired[List[str]],
+```
 
 ## DomainDeliverabilityTrackingOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DomainDeliverabilityTrackingOptionTypeDef
+
+def get_value() -> DomainDeliverabilityTrackingOptionTypeDef:
+    return {
+        "Domain": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DomainDeliverabilityTrackingOptionTypeDef(TypedDict):
+    Domain: NotRequired[str],
+    SubscriptionStartDate: NotRequired[datetime],
+    InboxPlacementTrackingOption: NotRequired[InboxPlacementTrackingOptionTypeDef],  # (1)
+```
 
-- `Domain`: `str`
-- `SubscriptionStartDate`: `datetime`
-- `InboxPlacementTrackingOption`:
-  [InboxPlacementTrackingOptionTypeDef](./type_defs.md#inboxplacementtrackingoptiontypedef)
-
-<a id="domainispplacementtypedef"></a>
-
+1. See [:material-code-braces: InboxPlacementTrackingOptionTypeDef](./type_defs.md#inboxplacementtrackingoptiontypedef) 
 ## DomainIspPlacementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import DomainIspPlacementTypeDef
+
+def get_value() -> DomainIspPlacementTypeDef:
+    return {
+        "IspName": ...,
+    }
 ```
 
-Optional fields:
-
-- `IspName`: `str`
-- `InboxRawCount`: `int`
-- `SpamRawCount`: `int`
-- `InboxPercentage`: `float`
-- `SpamPercentage`: `float`
-
-<a id="emailcontenttypedef"></a>
+```python title="Definition"
+class DomainIspPlacementTypeDef(TypedDict):
+    IspName: NotRequired[str],
+    InboxRawCount: NotRequired[int],
+    SpamRawCount: NotRequired[int],
+    InboxPercentage: NotRequired[float],
+    SpamPercentage: NotRequired[float],
+```
 
 ## EmailContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import EmailContentTypeDef
+
+def get_value() -> EmailContentTypeDef:
+    return {
+        "Simple": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EmailContentTypeDef(TypedDict):
+    Simple: NotRequired[MessageTypeDef],  # (1)
+    Raw: NotRequired[RawMessageTypeDef],  # (2)
+    Template: NotRequired[TemplateTypeDef],  # (3)
+```
 
-- `Simple`: [MessageTypeDef](./type_defs.md#messagetypedef)
-- `Raw`: [RawMessageTypeDef](./type_defs.md#rawmessagetypedef)
-- `Template`: [TemplateTypeDef](./type_defs.md#templatetypedef)
-
-<a id="eventdestinationdefinitiontypedef"></a>
-
+1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+2. See [:material-code-braces: RawMessageTypeDef](./type_defs.md#rawmessagetypedef) 
+3. See [:material-code-braces: TemplateTypeDef](./type_defs.md#templatetypedef) 
 ## EventDestinationDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import EventDestinationDefinitionTypeDef
+
+def get_value() -> EventDestinationDefinitionTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventDestinationDefinitionTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    MatchingEventTypes: NotRequired[Sequence[EventTypeType]],  # (1)
+    KinesisFirehoseDestination: NotRequired[KinesisFirehoseDestinationTypeDef],  # (2)
+    CloudWatchDestination: NotRequired[CloudWatchDestinationTypeDef],  # (3)
+    SnsDestination: NotRequired[SnsDestinationTypeDef],  # (4)
+    PinpointDestination: NotRequired[PinpointDestinationTypeDef],  # (5)
+```
 
-- `Enabled`: `bool`
-- `MatchingEventTypes`:
-  `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
-- `KinesisFirehoseDestination`:
-  [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
-- `CloudWatchDestination`:
-  [CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef)
-- `SnsDestination`:
-  [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
-- `PinpointDestination`:
-  [PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef)
-
-<a id="eventdestinationtypedef"></a>
-
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
+2. See [:material-code-braces: KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef) 
+3. See [:material-code-braces: CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef) 
+4. See [:material-code-braces: SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef) 
+5. See [:material-code-braces: PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef) 
 ## EventDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import EventDestinationTypeDef
+
+def get_value() -> EventDestinationTypeDef:
+    return {
+        "Name": ...,
+        "MatchingEventTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventDestinationTypeDef(TypedDict):
+    Name: str,
+    MatchingEventTypes: List[EventTypeType],  # (1)
+    Enabled: NotRequired[bool],
+    KinesisFirehoseDestination: NotRequired[KinesisFirehoseDestinationTypeDef],  # (2)
+    CloudWatchDestination: NotRequired[CloudWatchDestinationTypeDef],  # (3)
+    SnsDestination: NotRequired[SnsDestinationTypeDef],  # (4)
+    PinpointDestination: NotRequired[PinpointDestinationTypeDef],  # (5)
+```
 
-- `Name`: `str`
-- `MatchingEventTypes`: `List`\[[EventTypeType](./literals.md#eventtypetype)\]
-
-Optional fields:
-
-- `Enabled`: `bool`
-- `KinesisFirehoseDestination`:
-  [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
-- `CloudWatchDestination`:
-  [CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef)
-- `SnsDestination`:
-  [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
-- `PinpointDestination`:
-  [PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef)
-
-<a id="getaccountresponsetypedef"></a>
-
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
+2. See [:material-code-braces: KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef) 
+3. See [:material-code-braces: CloudWatchDestinationTypeDef](./type_defs.md#cloudwatchdestinationtypedef) 
+4. See [:material-code-braces: SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef) 
+5. See [:material-code-braces: PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef) 
 ## GetAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetAccountResponseTypeDef
+
+def get_value() -> GetAccountResponseTypeDef:
+    return {
+        "SendQuota": ...,
+        "SendingEnabled": ...,
+        "DedicatedIpAutoWarmupEnabled": ...,
+        "EnforcementStatus": ...,
+        "ProductionAccessEnabled": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountResponseTypeDef(TypedDict):
+    SendQuota: SendQuotaTypeDef,  # (1)
+    SendingEnabled: bool,
+    DedicatedIpAutoWarmupEnabled: bool,
+    EnforcementStatus: str,
+    ProductionAccessEnabled: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SendQuota`: [SendQuotaTypeDef](./type_defs.md#sendquotatypedef)
-- `SendingEnabled`: `bool`
-- `DedicatedIpAutoWarmupEnabled`: `bool`
-- `EnforcementStatus`: `str`
-- `ProductionAccessEnabled`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getblacklistreportsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SendQuotaTypeDef](./type_defs.md#sendquotatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBlacklistReportsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetBlacklistReportsRequestRequestTypeDef
+
+def get_value() -> GetBlacklistReportsRequestRequestTypeDef:
+    return {
+        "BlacklistItemNames": ...,
+    }
 ```
 
-Required fields:
-
-- `BlacklistItemNames`: `Sequence`\[`str`\]
-
-<a id="getblacklistreportsresponsetypedef"></a>
+```python title="Definition"
+class GetBlacklistReportsRequestRequestTypeDef(TypedDict):
+    BlacklistItemNames: Sequence[str],
+```
 
 ## GetBlacklistReportsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetBlacklistReportsResponseTypeDef
+
+def get_value() -> GetBlacklistReportsResponseTypeDef:
+    return {
+        "BlacklistReport": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBlacklistReportsResponseTypeDef(TypedDict):
+    BlacklistReport: Dict[str, List[BlacklistEntryTypeDef]],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BlacklistReport`: `Dict`\[`str`,
-  `List`\[[BlacklistEntryTypeDef](./type_defs.md#blacklistentrytypedef)\]\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconfigurationseteventdestinationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BlacklistEntryTypeDef](./type_defs.md#blacklistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConfigurationSetEventDestinationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetConfigurationSetEventDestinationsRequestRequestTypeDef
+
+def get_value() -> GetConfigurationSetEventDestinationsRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationSetName`: `str`
-
-<a id="getconfigurationseteventdestinationsresponsetypedef"></a>
+```python title="Definition"
+class GetConfigurationSetEventDestinationsRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+```
 
 ## GetConfigurationSetEventDestinationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetConfigurationSetEventDestinationsResponseTypeDef
+
+def get_value() -> GetConfigurationSetEventDestinationsResponseTypeDef:
+    return {
+        "EventDestinations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConfigurationSetEventDestinationsResponseTypeDef(TypedDict):
+    EventDestinations: List[EventDestinationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventDestinations`:
-  `List`\[[EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconfigurationsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventDestinationTypeDef](./type_defs.md#eventdestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConfigurationSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetConfigurationSetRequestRequestTypeDef
+
+def get_value() -> GetConfigurationSetRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationSetName`: `str`
-
-<a id="getconfigurationsetresponsetypedef"></a>
+```python title="Definition"
+class GetConfigurationSetRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+```
 
 ## GetConfigurationSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetConfigurationSetResponseTypeDef
+
+def get_value() -> GetConfigurationSetResponseTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+        "TrackingOptions": ...,
+        "DeliveryOptions": ...,
+        "ReputationOptions": ...,
+        "SendingOptions": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConfigurationSetResponseTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    TrackingOptions: TrackingOptionsTypeDef,  # (1)
+    DeliveryOptions: DeliveryOptionsTypeDef,  # (2)
+    ReputationOptions: ReputationOptionsTypeDef,  # (3)
+    SendingOptions: SendingOptionsTypeDef,  # (4)
+    Tags: List[TagTypeDef],  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `ConfigurationSetName`: `str`
-- `TrackingOptions`:
-  [TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef)
-- `DeliveryOptions`:
-  [DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef)
-- `ReputationOptions`:
-  [ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef)
-- `SendingOptions`:
-  [SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdedicatediprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef) 
+2. See [:material-code-braces: DeliveryOptionsTypeDef](./type_defs.md#deliveryoptionstypedef) 
+3. See [:material-code-braces: ReputationOptionsTypeDef](./type_defs.md#reputationoptionstypedef) 
+4. See [:material-code-braces: SendingOptionsTypeDef](./type_defs.md#sendingoptionstypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDedicatedIpRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDedicatedIpRequestRequestTypeDef
+
+def get_value() -> GetDedicatedIpRequestRequestTypeDef:
+    return {
+        "Ip": ...,
+    }
 ```
 
-Required fields:
-
-- `Ip`: `str`
-
-<a id="getdedicatedipresponsetypedef"></a>
+```python title="Definition"
+class GetDedicatedIpRequestRequestTypeDef(TypedDict):
+    Ip: str,
+```
 
 ## GetDedicatedIpResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDedicatedIpResponseTypeDef
+
+def get_value() -> GetDedicatedIpResponseTypeDef:
+    return {
+        "DedicatedIp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDedicatedIpResponseTypeDef(TypedDict):
+    DedicatedIp: DedicatedIpTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DedicatedIp`: [DedicatedIpTypeDef](./type_defs.md#dedicatediptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DedicatedIpTypeDef](./type_defs.md#dedicatediptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDedicatedIpsRequestGetDedicatedIpsPaginateTypeDef
 
-<a id="getdedicatedipsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_pinpoint_email.type_defs import GetDedicatedIpsRequestGetDedicatedIpsPaginateTypeDef
 
+def get_value() -> GetDedicatedIpsRequestGetDedicatedIpsPaginateTypeDef:
+    return {
+        "PoolName": ...,
+    }
+```
+
+```python title="Definition"
+class GetDedicatedIpsRequestGetDedicatedIpsPaginateTypeDef(TypedDict):
+    PoolName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDedicatedIpsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDedicatedIpsRequestRequestTypeDef
+
+def get_value() -> GetDedicatedIpsRequestRequestTypeDef:
+    return {
+        "PoolName": ...,
+    }
 ```
 
-Optional fields:
-
-- `PoolName`: `str`
-- `NextToken`: `str`
-- `PageSize`: `int`
-
-<a id="getdedicatedipsresponsetypedef"></a>
+```python title="Definition"
+class GetDedicatedIpsRequestRequestTypeDef(TypedDict):
+    PoolName: NotRequired[str],
+    NextToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
 
 ## GetDedicatedIpsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDedicatedIpsResponseTypeDef
+
+def get_value() -> GetDedicatedIpsResponseTypeDef:
+    return {
+        "DedicatedIps": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDedicatedIpsResponseTypeDef(TypedDict):
+    DedicatedIps: List[DedicatedIpTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DedicatedIps`:
-  `List`\[[DedicatedIpTypeDef](./type_defs.md#dedicatediptypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeliverabilitydashboardoptionsresponsetypedef"></a>
-
+1. See [:material-code-braces: DedicatedIpTypeDef](./type_defs.md#dedicatediptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeliverabilityDashboardOptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDeliverabilityDashboardOptionsResponseTypeDef
+
+def get_value() -> GetDeliverabilityDashboardOptionsResponseTypeDef:
+    return {
+        "DashboardEnabled": ...,
+        "SubscriptionExpiryDate": ...,
+        "AccountStatus": ...,
+        "ActiveSubscribedDomains": ...,
+        "PendingExpirationSubscribedDomains": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeliverabilityDashboardOptionsResponseTypeDef(TypedDict):
+    DashboardEnabled: bool,
+    SubscriptionExpiryDate: datetime,
+    AccountStatus: DeliverabilityDashboardAccountStatusType,  # (1)
+    ActiveSubscribedDomains: List[DomainDeliverabilityTrackingOptionTypeDef],  # (2)
+    PendingExpirationSubscribedDomains: List[DomainDeliverabilityTrackingOptionTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `DashboardEnabled`: `bool`
-- `SubscriptionExpiryDate`: `datetime`
-- `AccountStatus`:
-  [DeliverabilityDashboardAccountStatusType](./literals.md#deliverabilitydashboardaccountstatustype)
-- `ActiveSubscribedDomains`:
-  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
-- `PendingExpirationSubscribedDomains`:
-  `List`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeliverabilitytestreportrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeliverabilityDashboardAccountStatusType](./literals.md#deliverabilitydashboardaccountstatustype) 
+2. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
+3. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeliverabilityTestReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDeliverabilityTestReportRequestRequestTypeDef
+
+def get_value() -> GetDeliverabilityTestReportRequestRequestTypeDef:
+    return {
+        "ReportId": ...,
+    }
 ```
 
-Required fields:
-
-- `ReportId`: `str`
-
-<a id="getdeliverabilitytestreportresponsetypedef"></a>
+```python title="Definition"
+class GetDeliverabilityTestReportRequestRequestTypeDef(TypedDict):
+    ReportId: str,
+```
 
 ## GetDeliverabilityTestReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDeliverabilityTestReportResponseTypeDef
+
+def get_value() -> GetDeliverabilityTestReportResponseTypeDef:
+    return {
+        "DeliverabilityTestReport": ...,
+        "OverallPlacement": ...,
+        "IspPlacements": ...,
+        "Message": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeliverabilityTestReportResponseTypeDef(TypedDict):
+    DeliverabilityTestReport: DeliverabilityTestReportTypeDef,  # (1)
+    OverallPlacement: PlacementStatisticsTypeDef,  # (2)
+    IspPlacements: List[IspPlacementTypeDef],  # (3)
+    Message: str,
+    Tags: List[TagTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `DeliverabilityTestReport`:
-  [DeliverabilityTestReportTypeDef](./type_defs.md#deliverabilitytestreporttypedef)
-- `OverallPlacement`:
-  [PlacementStatisticsTypeDef](./type_defs.md#placementstatisticstypedef)
-- `IspPlacements`:
-  `List`\[[IspPlacementTypeDef](./type_defs.md#ispplacementtypedef)\]
-- `Message`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdomaindeliverabilitycampaignrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeliverabilityTestReportTypeDef](./type_defs.md#deliverabilitytestreporttypedef) 
+2. See [:material-code-braces: PlacementStatisticsTypeDef](./type_defs.md#placementstatisticstypedef) 
+3. See [:material-code-braces: IspPlacementTypeDef](./type_defs.md#ispplacementtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDomainDeliverabilityCampaignRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDomainDeliverabilityCampaignRequestRequestTypeDef
+
+def get_value() -> GetDomainDeliverabilityCampaignRequestRequestTypeDef:
+    return {
+        "CampaignId": ...,
+    }
 ```
 
-Required fields:
-
-- `CampaignId`: `str`
-
-<a id="getdomaindeliverabilitycampaignresponsetypedef"></a>
+```python title="Definition"
+class GetDomainDeliverabilityCampaignRequestRequestTypeDef(TypedDict):
+    CampaignId: str,
+```
 
 ## GetDomainDeliverabilityCampaignResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDomainDeliverabilityCampaignResponseTypeDef
+
+def get_value() -> GetDomainDeliverabilityCampaignResponseTypeDef:
+    return {
+        "DomainDeliverabilityCampaign": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDomainDeliverabilityCampaignResponseTypeDef(TypedDict):
+    DomainDeliverabilityCampaign: DomainDeliverabilityCampaignTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainDeliverabilityCampaign`:
-  [DomainDeliverabilityCampaignTypeDef](./type_defs.md#domaindeliverabilitycampaigntypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdomainstatisticsreportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainDeliverabilityCampaignTypeDef](./type_defs.md#domaindeliverabilitycampaigntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDomainStatisticsReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDomainStatisticsReportRequestRequestTypeDef
+
+def get_value() -> GetDomainStatisticsReportRequestRequestTypeDef:
+    return {
+        "Domain": ...,
+        "StartDate": ...,
+        "EndDate": ...,
+    }
 ```
 
-Required fields:
-
-- `Domain`: `str`
-- `StartDate`: `Union`\[`datetime`, `str`\]
-- `EndDate`: `Union`\[`datetime`, `str`\]
-
-<a id="getdomainstatisticsreportresponsetypedef"></a>
+```python title="Definition"
+class GetDomainStatisticsReportRequestRequestTypeDef(TypedDict):
+    Domain: str,
+    StartDate: Union[datetime, str],
+    EndDate: Union[datetime, str],
+```
 
 ## GetDomainStatisticsReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetDomainStatisticsReportResponseTypeDef
+
+def get_value() -> GetDomainStatisticsReportResponseTypeDef:
+    return {
+        "OverallVolume": ...,
+        "DailyVolumes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDomainStatisticsReportResponseTypeDef(TypedDict):
+    OverallVolume: OverallVolumeTypeDef,  # (1)
+    DailyVolumes: List[DailyVolumeTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `OverallVolume`: [OverallVolumeTypeDef](./type_defs.md#overallvolumetypedef)
-- `DailyVolumes`:
-  `List`\[[DailyVolumeTypeDef](./type_defs.md#dailyvolumetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getemailidentityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OverallVolumeTypeDef](./type_defs.md#overallvolumetypedef) 
+2. See [:material-code-braces: DailyVolumeTypeDef](./type_defs.md#dailyvolumetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEmailIdentityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetEmailIdentityRequestRequestTypeDef
+
+def get_value() -> GetEmailIdentityRequestRequestTypeDef:
+    return {
+        "EmailIdentity": ...,
+    }
 ```
 
-Required fields:
-
-- `EmailIdentity`: `str`
-
-<a id="getemailidentityresponsetypedef"></a>
+```python title="Definition"
+class GetEmailIdentityRequestRequestTypeDef(TypedDict):
+    EmailIdentity: str,
+```
 
 ## GetEmailIdentityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import GetEmailIdentityResponseTypeDef
+
+def get_value() -> GetEmailIdentityResponseTypeDef:
+    return {
+        "IdentityType": ...,
+        "FeedbackForwardingStatus": ...,
+        "VerifiedForSendingStatus": ...,
+        "DkimAttributes": ...,
+        "MailFromAttributes": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEmailIdentityResponseTypeDef(TypedDict):
+    IdentityType: IdentityTypeType,  # (1)
+    FeedbackForwardingStatus: bool,
+    VerifiedForSendingStatus: bool,
+    DkimAttributes: DkimAttributesTypeDef,  # (2)
+    MailFromAttributes: MailFromAttributesTypeDef,  # (3)
+    Tags: List[TagTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `FeedbackForwardingStatus`: `bool`
-- `VerifiedForSendingStatus`: `bool`
-- `DkimAttributes`:
-  [DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef)
-- `MailFromAttributes`:
-  [MailFromAttributesTypeDef](./type_defs.md#mailfromattributestypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="identityinfotypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-braces: DkimAttributesTypeDef](./type_defs.md#dkimattributestypedef) 
+3. See [:material-code-braces: MailFromAttributesTypeDef](./type_defs.md#mailfromattributestypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IdentityInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import IdentityInfoTypeDef
+
+def get_value() -> IdentityInfoTypeDef:
+    return {
+        "IdentityType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IdentityInfoTypeDef(TypedDict):
+    IdentityType: NotRequired[IdentityTypeType],  # (1)
+    IdentityName: NotRequired[str],
+    SendingEnabled: NotRequired[bool],
+```
 
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `IdentityName`: `str`
-- `SendingEnabled`: `bool`
-
-<a id="inboxplacementtrackingoptiontypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 ## InboxPlacementTrackingOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import InboxPlacementTrackingOptionTypeDef
+
+def get_value() -> InboxPlacementTrackingOptionTypeDef:
+    return {
+        "Global": ...,
+    }
 ```
 
-Optional fields:
-
-- `Global`: `bool`
-- `TrackedIsps`: `List`\[`str`\]
-
-<a id="ispplacementtypedef"></a>
+```python title="Definition"
+class InboxPlacementTrackingOptionTypeDef(TypedDict):
+    Global: NotRequired[bool],
+    TrackedIsps: NotRequired[List[str]],
+```
 
 ## IspPlacementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import IspPlacementTypeDef
+
+def get_value() -> IspPlacementTypeDef:
+    return {
+        "IspName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IspPlacementTypeDef(TypedDict):
+    IspName: NotRequired[str],
+    PlacementStatistics: NotRequired[PlacementStatisticsTypeDef],  # (1)
+```
 
-- `IspName`: `str`
-- `PlacementStatistics`:
-  [PlacementStatisticsTypeDef](./type_defs.md#placementstatisticstypedef)
-
-<a id="kinesisfirehosedestinationtypedef"></a>
-
+1. See [:material-code-braces: PlacementStatisticsTypeDef](./type_defs.md#placementstatisticstypedef) 
 ## KinesisFirehoseDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import KinesisFirehoseDestinationTypeDef
+
+def get_value() -> KinesisFirehoseDestinationTypeDef:
+    return {
+        "IamRoleArn": ...,
+        "DeliveryStreamArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KinesisFirehoseDestinationTypeDef(TypedDict):
+    IamRoleArn: str,
+    DeliveryStreamArn: str,
+```
 
-- `IamRoleArn`: `str`
-- `DeliveryStreamArn`: `str`
+## ListConfigurationSetsRequestListConfigurationSetsPaginateTypeDef
 
-<a id="listconfigurationsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_pinpoint_email.type_defs import ListConfigurationSetsRequestListConfigurationSetsPaginateTypeDef
 
+def get_value() -> ListConfigurationSetsRequestListConfigurationSetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListConfigurationSetsRequestListConfigurationSetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListConfigurationSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListConfigurationSetsRequestRequestTypeDef
+
+def get_value() -> ListConfigurationSetsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `PageSize`: `int`
-
-<a id="listconfigurationsetsresponsetypedef"></a>
+```python title="Definition"
+class ListConfigurationSetsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
 
 ## ListConfigurationSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListConfigurationSetsResponseTypeDef
+
+def get_value() -> ListConfigurationSetsResponseTypeDef:
+    return {
+        "ConfigurationSets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConfigurationSetsResponseTypeDef(TypedDict):
+    ConfigurationSets: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ConfigurationSets`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDedicatedIpPoolsRequestListDedicatedIpPoolsPaginateTypeDef
 
-<a id="listdedicatedippoolsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_pinpoint_email.type_defs import ListDedicatedIpPoolsRequestListDedicatedIpPoolsPaginateTypeDef
 
+def get_value() -> ListDedicatedIpPoolsRequestListDedicatedIpPoolsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDedicatedIpPoolsRequestListDedicatedIpPoolsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDedicatedIpPoolsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListDedicatedIpPoolsRequestRequestTypeDef
+
+def get_value() -> ListDedicatedIpPoolsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `PageSize`: `int`
-
-<a id="listdedicatedippoolsresponsetypedef"></a>
+```python title="Definition"
+class ListDedicatedIpPoolsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
 
 ## ListDedicatedIpPoolsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListDedicatedIpPoolsResponseTypeDef
+
+def get_value() -> ListDedicatedIpPoolsResponseTypeDef:
+    return {
+        "DedicatedIpPools": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDedicatedIpPoolsResponseTypeDef(TypedDict):
+    DedicatedIpPools: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DedicatedIpPools`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeliverabilityTestReportsRequestListDeliverabilityTestReportsPaginateTypeDef
 
-<a id="listdeliverabilitytestreportsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_pinpoint_email.type_defs import ListDeliverabilityTestReportsRequestListDeliverabilityTestReportsPaginateTypeDef
 
+def get_value() -> ListDeliverabilityTestReportsRequestListDeliverabilityTestReportsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeliverabilityTestReportsRequestListDeliverabilityTestReportsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeliverabilityTestReportsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListDeliverabilityTestReportsRequestRequestTypeDef
+
+def get_value() -> ListDeliverabilityTestReportsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `PageSize`: `int`
-
-<a id="listdeliverabilitytestreportsresponsetypedef"></a>
+```python title="Definition"
+class ListDeliverabilityTestReportsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
 
 ## ListDeliverabilityTestReportsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListDeliverabilityTestReportsResponseTypeDef
+
+def get_value() -> ListDeliverabilityTestReportsResponseTypeDef:
+    return {
+        "DeliverabilityTestReports": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeliverabilityTestReportsResponseTypeDef(TypedDict):
+    DeliverabilityTestReports: List[DeliverabilityTestReportTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeliverabilityTestReports`:
-  `List`\[[DeliverabilityTestReportTypeDef](./type_defs.md#deliverabilitytestreporttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdomaindeliverabilitycampaignsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeliverabilityTestReportTypeDef](./type_defs.md#deliverabilitytestreporttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDomainDeliverabilityCampaignsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListDomainDeliverabilityCampaignsRequestRequestTypeDef
+
+def get_value() -> ListDomainDeliverabilityCampaignsRequestRequestTypeDef:
+    return {
+        "StartDate": ...,
+        "EndDate": ...,
+        "SubscribedDomain": ...,
+    }
 ```
 
-Required fields:
-
-- `StartDate`: `Union`\[`datetime`, `str`\]
-- `EndDate`: `Union`\[`datetime`, `str`\]
-- `SubscribedDomain`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `PageSize`: `int`
-
-<a id="listdomaindeliverabilitycampaignsresponsetypedef"></a>
+```python title="Definition"
+class ListDomainDeliverabilityCampaignsRequestRequestTypeDef(TypedDict):
+    StartDate: Union[datetime, str],
+    EndDate: Union[datetime, str],
+    SubscribedDomain: str,
+    NextToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
 
 ## ListDomainDeliverabilityCampaignsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListDomainDeliverabilityCampaignsResponseTypeDef
+
+def get_value() -> ListDomainDeliverabilityCampaignsResponseTypeDef:
+    return {
+        "DomainDeliverabilityCampaigns": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDomainDeliverabilityCampaignsResponseTypeDef(TypedDict):
+    DomainDeliverabilityCampaigns: List[DomainDeliverabilityCampaignTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainDeliverabilityCampaigns`:
-  `List`\[[DomainDeliverabilityCampaignTypeDef](./type_defs.md#domaindeliverabilitycampaigntypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DomainDeliverabilityCampaignTypeDef](./type_defs.md#domaindeliverabilitycampaigntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEmailIdentitiesRequestListEmailIdentitiesPaginateTypeDef
 
-<a id="listemailidentitiesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_pinpoint_email.type_defs import ListEmailIdentitiesRequestListEmailIdentitiesPaginateTypeDef
 
+def get_value() -> ListEmailIdentitiesRequestListEmailIdentitiesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListEmailIdentitiesRequestListEmailIdentitiesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEmailIdentitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListEmailIdentitiesRequestRequestTypeDef
+
+def get_value() -> ListEmailIdentitiesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `PageSize`: `int`
-
-<a id="listemailidentitiesresponsetypedef"></a>
+```python title="Definition"
+class ListEmailIdentitiesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
 
 ## ListEmailIdentitiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListEmailIdentitiesResponseTypeDef
+
+def get_value() -> ListEmailIdentitiesResponseTypeDef:
+    return {
+        "EmailIdentities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEmailIdentitiesResponseTypeDef(TypedDict):
+    EmailIdentities: List[IdentityInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EmailIdentities`:
-  `List`\[[IdentityInfoTypeDef](./type_defs.md#identityinfotypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityInfoTypeDef](./type_defs.md#identityinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mailfromattributestypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MailFromAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import MailFromAttributesTypeDef
+
+def get_value() -> MailFromAttributesTypeDef:
+    return {
+        "MailFromDomain": ...,
+        "MailFromDomainStatus": ...,
+        "BehaviorOnMxFailure": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MailFromAttributesTypeDef(TypedDict):
+    MailFromDomain: str,
+    MailFromDomainStatus: MailFromDomainStatusType,  # (1)
+    BehaviorOnMxFailure: BehaviorOnMxFailureType,  # (2)
+```
 
-- `MailFromDomain`: `str`
-- `MailFromDomainStatus`:
-  [MailFromDomainStatusType](./literals.md#mailfromdomainstatustype)
-- `BehaviorOnMxFailure`:
-  [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
-
-<a id="messagetagtypedef"></a>
-
+1. See [:material-code-brackets: MailFromDomainStatusType](./literals.md#mailfromdomainstatustype) 
+2. See [:material-code-brackets: BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype) 
 ## MessageTagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import MessageTagTypeDef
+
+def get_value() -> MessageTagTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="messagetypedef"></a>
+```python title="Definition"
+class MessageTagTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
 
 ## MessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import MessageTypeDef
+
+def get_value() -> MessageTypeDef:
+    return {
+        "Subject": ...,
+        "Body": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MessageTypeDef(TypedDict):
+    Subject: ContentTypeDef,  # (1)
+    Body: BodyTypeDef,  # (2)
+```
 
-- `Subject`: [ContentTypeDef](./type_defs.md#contenttypedef)
-- `Body`: [BodyTypeDef](./type_defs.md#bodytypedef)
-
-<a id="overallvolumetypedef"></a>
-
+1. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
+2. See [:material-code-braces: BodyTypeDef](./type_defs.md#bodytypedef) 
 ## OverallVolumeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import OverallVolumeTypeDef
+
+def get_value() -> OverallVolumeTypeDef:
+    return {
+        "VolumeStatistics": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OverallVolumeTypeDef(TypedDict):
+    VolumeStatistics: NotRequired[VolumeStatisticsTypeDef],  # (1)
+    ReadRatePercent: NotRequired[float],
+    DomainIspPlacements: NotRequired[List[DomainIspPlacementTypeDef]],  # (2)
+```
 
-- `VolumeStatistics`:
-  [VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef)
-- `ReadRatePercent`: `float`
-- `DomainIspPlacements`:
-  `List`\[[DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef)\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef) 
+2. See [:material-code-braces: DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="pinpointdestinationtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PinpointDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PinpointDestinationTypeDef
+
+def get_value() -> PinpointDestinationTypeDef:
+    return {
+        "ApplicationArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApplicationArn`: `str`
-
-<a id="placementstatisticstypedef"></a>
+```python title="Definition"
+class PinpointDestinationTypeDef(TypedDict):
+    ApplicationArn: NotRequired[str],
+```
 
 ## PlacementStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PlacementStatisticsTypeDef
+
+def get_value() -> PlacementStatisticsTypeDef:
+    return {
+        "InboxPercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `InboxPercentage`: `float`
-- `SpamPercentage`: `float`
-- `MissingPercentage`: `float`
-- `SpfPercentage`: `float`
-- `DkimPercentage`: `float`
-
-<a id="putaccountdedicatedipwarmupattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class PlacementStatisticsTypeDef(TypedDict):
+    InboxPercentage: NotRequired[float],
+    SpamPercentage: NotRequired[float],
+    MissingPercentage: NotRequired[float],
+    SpfPercentage: NotRequired[float],
+    DkimPercentage: NotRequired[float],
+```
 
 ## PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef
+
+def get_value() -> PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef:
+    return {
+        "AutoWarmupEnabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `AutoWarmupEnabled`: `bool`
-
-<a id="putaccountsendingattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef(TypedDict):
+    AutoWarmupEnabled: NotRequired[bool],
+```
 
 ## PutAccountSendingAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutAccountSendingAttributesRequestRequestTypeDef
+
+def get_value() -> PutAccountSendingAttributesRequestRequestTypeDef:
+    return {
+        "SendingEnabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `SendingEnabled`: `bool`
-
-<a id="putconfigurationsetdeliveryoptionsrequestrequesttypedef"></a>
+```python title="Definition"
+class PutAccountSendingAttributesRequestRequestTypeDef(TypedDict):
+    SendingEnabled: NotRequired[bool],
+```
 
 ## PutConfigurationSetDeliveryOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutConfigurationSetDeliveryOptionsRequestRequestTypeDef
+
+def get_value() -> PutConfigurationSetDeliveryOptionsRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutConfigurationSetDeliveryOptionsRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    TlsPolicy: NotRequired[TlsPolicyType],  # (1)
+    SendingPoolName: NotRequired[str],
+```
 
-- `ConfigurationSetName`: `str`
-
-Optional fields:
-
-- `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
-- `SendingPoolName`: `str`
-
-<a id="putconfigurationsetreputationoptionsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TlsPolicyType](./literals.md#tlspolicytype) 
 ## PutConfigurationSetReputationOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutConfigurationSetReputationOptionsRequestRequestTypeDef
+
+def get_value() -> PutConfigurationSetReputationOptionsRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationSetName`: `str`
-
-Optional fields:
-
-- `ReputationMetricsEnabled`: `bool`
-
-<a id="putconfigurationsetsendingoptionsrequestrequesttypedef"></a>
+```python title="Definition"
+class PutConfigurationSetReputationOptionsRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    ReputationMetricsEnabled: NotRequired[bool],
+```
 
 ## PutConfigurationSetSendingOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutConfigurationSetSendingOptionsRequestRequestTypeDef
+
+def get_value() -> PutConfigurationSetSendingOptionsRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationSetName`: `str`
-
-Optional fields:
-
-- `SendingEnabled`: `bool`
-
-<a id="putconfigurationsettrackingoptionsrequestrequesttypedef"></a>
+```python title="Definition"
+class PutConfigurationSetSendingOptionsRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    SendingEnabled: NotRequired[bool],
+```
 
 ## PutConfigurationSetTrackingOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutConfigurationSetTrackingOptionsRequestRequestTypeDef
+
+def get_value() -> PutConfigurationSetTrackingOptionsRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationSetName`: `str`
-
-Optional fields:
-
-- `CustomRedirectDomain`: `str`
-
-<a id="putdedicatedipinpoolrequestrequesttypedef"></a>
+```python title="Definition"
+class PutConfigurationSetTrackingOptionsRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    CustomRedirectDomain: NotRequired[str],
+```
 
 ## PutDedicatedIpInPoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutDedicatedIpInPoolRequestRequestTypeDef
+
+def get_value() -> PutDedicatedIpInPoolRequestRequestTypeDef:
+    return {
+        "Ip": ...,
+        "DestinationPoolName": ...,
+    }
 ```
 
-Required fields:
-
-- `Ip`: `str`
-- `DestinationPoolName`: `str`
-
-<a id="putdedicatedipwarmupattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class PutDedicatedIpInPoolRequestRequestTypeDef(TypedDict):
+    Ip: str,
+    DestinationPoolName: str,
+```
 
 ## PutDedicatedIpWarmupAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutDedicatedIpWarmupAttributesRequestRequestTypeDef
+
+def get_value() -> PutDedicatedIpWarmupAttributesRequestRequestTypeDef:
+    return {
+        "Ip": ...,
+        "WarmupPercentage": ...,
+    }
 ```
 
-Required fields:
-
-- `Ip`: `str`
-- `WarmupPercentage`: `int`
-
-<a id="putdeliverabilitydashboardoptionrequestrequesttypedef"></a>
+```python title="Definition"
+class PutDedicatedIpWarmupAttributesRequestRequestTypeDef(TypedDict):
+    Ip: str,
+    WarmupPercentage: int,
+```
 
 ## PutDeliverabilityDashboardOptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutDeliverabilityDashboardOptionRequestRequestTypeDef
+
+def get_value() -> PutDeliverabilityDashboardOptionRequestRequestTypeDef:
+    return {
+        "DashboardEnabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutDeliverabilityDashboardOptionRequestRequestTypeDef(TypedDict):
+    DashboardEnabled: bool,
+    SubscribedDomains: NotRequired[Sequence[DomainDeliverabilityTrackingOptionTypeDef]],  # (1)
+```
 
-- `DashboardEnabled`: `bool`
-
-Optional fields:
-
-- `SubscribedDomains`:
-  `Sequence`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
-
-<a id="putemailidentitydkimattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef) 
 ## PutEmailIdentityDkimAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutEmailIdentityDkimAttributesRequestRequestTypeDef
+
+def get_value() -> PutEmailIdentityDkimAttributesRequestRequestTypeDef:
+    return {
+        "EmailIdentity": ...,
+    }
 ```
 
-Required fields:
-
-- `EmailIdentity`: `str`
-
-Optional fields:
-
-- `SigningEnabled`: `bool`
-
-<a id="putemailidentityfeedbackattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class PutEmailIdentityDkimAttributesRequestRequestTypeDef(TypedDict):
+    EmailIdentity: str,
+    SigningEnabled: NotRequired[bool],
+```
 
 ## PutEmailIdentityFeedbackAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutEmailIdentityFeedbackAttributesRequestRequestTypeDef
+
+def get_value() -> PutEmailIdentityFeedbackAttributesRequestRequestTypeDef:
+    return {
+        "EmailIdentity": ...,
+    }
 ```
 
-Required fields:
-
-- `EmailIdentity`: `str`
-
-Optional fields:
-
-- `EmailForwardingEnabled`: `bool`
-
-<a id="putemailidentitymailfromattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class PutEmailIdentityFeedbackAttributesRequestRequestTypeDef(TypedDict):
+    EmailIdentity: str,
+    EmailForwardingEnabled: NotRequired[bool],
+```
 
 ## PutEmailIdentityMailFromAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import PutEmailIdentityMailFromAttributesRequestRequestTypeDef
+
+def get_value() -> PutEmailIdentityMailFromAttributesRequestRequestTypeDef:
+    return {
+        "EmailIdentity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEmailIdentityMailFromAttributesRequestRequestTypeDef(TypedDict):
+    EmailIdentity: str,
+    MailFromDomain: NotRequired[str],
+    BehaviorOnMxFailure: NotRequired[BehaviorOnMxFailureType],  # (1)
+```
 
-- `EmailIdentity`: `str`
-
-Optional fields:
-
-- `MailFromDomain`: `str`
-- `BehaviorOnMxFailure`:
-  [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
-
-<a id="rawmessagetypedef"></a>
-
+1. See [:material-code-brackets: BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype) 
 ## RawMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import RawMessageTypeDef
+
+def get_value() -> RawMessageTypeDef:
+    return {
+        "Data": ...,
+    }
 ```
 
-Required fields:
-
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="reputationoptionstypedef"></a>
+```python title="Definition"
+class RawMessageTypeDef(TypedDict):
+    Data: Union[bytes, IO[bytes], StreamingBody],
+```
 
 ## ReputationOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ReputationOptionsTypeDef
+
+def get_value() -> ReputationOptionsTypeDef:
+    return {
+        "ReputationMetricsEnabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReputationMetricsEnabled`: `bool`
-- `LastFreshStart`: `Union`\[`datetime`, `str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ReputationOptionsTypeDef(TypedDict):
+    ReputationMetricsEnabled: NotRequired[bool],
+    LastFreshStart: NotRequired[Union[datetime, str]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sendemailrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SendEmailRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import SendEmailRequestRequestTypeDef
+
+def get_value() -> SendEmailRequestRequestTypeDef:
+    return {
+        "Destination": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendEmailRequestRequestTypeDef(TypedDict):
+    Destination: DestinationTypeDef,  # (1)
+    Content: EmailContentTypeDef,  # (2)
+    FromEmailAddress: NotRequired[str],
+    ReplyToAddresses: NotRequired[Sequence[str]],
+    FeedbackForwardingEmailAddress: NotRequired[str],
+    EmailTags: NotRequired[Sequence[MessageTagTypeDef]],  # (3)
+    ConfigurationSetName: NotRequired[str],
+```
 
-- `Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-- `Content`: [EmailContentTypeDef](./type_defs.md#emailcontenttypedef)
-
-Optional fields:
-
-- `FromEmailAddress`: `str`
-- `ReplyToAddresses`: `Sequence`\[`str`\]
-- `FeedbackForwardingEmailAddress`: `str`
-- `EmailTags`:
-  `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
-- `ConfigurationSetName`: `str`
-
-<a id="sendemailresponsetypedef"></a>
-
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-braces: EmailContentTypeDef](./type_defs.md#emailcontenttypedef) 
+3. See [:material-code-braces: MessageTagTypeDef](./type_defs.md#messagetagtypedef) 
 ## SendEmailResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import SendEmailResponseTypeDef
+
+def get_value() -> SendEmailResponseTypeDef:
+    return {
+        "MessageId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendEmailResponseTypeDef(TypedDict):
+    MessageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MessageId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="sendquotatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SendQuotaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import SendQuotaTypeDef
+
+def get_value() -> SendQuotaTypeDef:
+    return {
+        "Max24HourSend": ...,
+    }
 ```
 
-Optional fields:
-
-- `Max24HourSend`: `float`
-- `MaxSendRate`: `float`
-- `SentLast24Hours`: `float`
-
-<a id="sendingoptionstypedef"></a>
+```python title="Definition"
+class SendQuotaTypeDef(TypedDict):
+    Max24HourSend: NotRequired[float],
+    MaxSendRate: NotRequired[float],
+    SentLast24Hours: NotRequired[float],
+```
 
 ## SendingOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import SendingOptionsTypeDef
+
+def get_value() -> SendingOptionsTypeDef:
+    return {
+        "SendingEnabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `SendingEnabled`: `bool`
-
-<a id="snsdestinationtypedef"></a>
+```python title="Definition"
+class SendingOptionsTypeDef(TypedDict):
+    SendingEnabled: NotRequired[bool],
+```
 
 ## SnsDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import SnsDestinationTypeDef
+
+def get_value() -> SnsDestinationTypeDef:
+    return {
+        "TopicArn": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SnsDestinationTypeDef(TypedDict):
+    TopicArn: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="templatetypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import TemplateTypeDef
+
+def get_value() -> TemplateTypeDef:
+    return {
+        "TemplateArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `TemplateArn`: `str`
-- `TemplateData`: `str`
-
-<a id="trackingoptionstypedef"></a>
+```python title="Definition"
+class TemplateTypeDef(TypedDict):
+    TemplateArn: NotRequired[str],
+    TemplateData: NotRequired[str],
+```
 
 ## TrackingOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import TrackingOptionsTypeDef
+
+def get_value() -> TrackingOptionsTypeDef:
+    return {
+        "CustomRedirectDomain": ...,
+    }
 ```
 
-Required fields:
-
-- `CustomRedirectDomain`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TrackingOptionsTypeDef(TypedDict):
+    CustomRedirectDomain: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateconfigurationseteventdestinationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateConfigurationSetEventDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import UpdateConfigurationSetEventDestinationRequestRequestTypeDef
+
+def get_value() -> UpdateConfigurationSetEventDestinationRequestRequestTypeDef:
+    return {
+        "ConfigurationSetName": ...,
+        "EventDestinationName": ...,
+        "EventDestination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConfigurationSetEventDestinationRequestRequestTypeDef(TypedDict):
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+    EventDestination: EventDestinationDefinitionTypeDef,  # (1)
+```
 
-- `ConfigurationSetName`: `str`
-- `EventDestinationName`: `str`
-- `EventDestination`:
-  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
-
-<a id="volumestatisticstypedef"></a>
-
+1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
 ## VolumeStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pinpoint_email.type_defs import VolumeStatisticsTypeDef
+
+def get_value() -> VolumeStatisticsTypeDef:
+    return {
+        "InboxRawCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VolumeStatisticsTypeDef(TypedDict):
+    InboxRawCount: NotRequired[int],
+    SpamRawCount: NotRequired[int],
+    ProjectedInbox: NotRequired[int],
+    ProjectedSpam: NotRequired[int],
+```
 
-- `InboxRawCount`: `int`
-- `SpamRawCount`: `int`
-- `ProjectedInbox`: `int`
-- `ProjectedSpam`: `int`

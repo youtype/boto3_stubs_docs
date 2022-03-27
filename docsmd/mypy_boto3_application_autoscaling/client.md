@@ -1,43 +1,18 @@
-<a id="applicationautoscalingclient-for-boto3-applicationautoscaling-module"></a>
+# ApplicationAutoScalingClient
 
-# ApplicationAutoScalingClient for boto3 ApplicationAutoScaling module
+> [Index](../README.md) > [ApplicationAutoScaling](./README.md) > ApplicationAutoScalingClient
 
-> [Index](../README.md) > [ApplicationAutoScaling](./README.md) >
-> ApplicationAutoScalingClient
+!!! note ""
 
-Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
-type annotations stubs module
-[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
-
-- [ApplicationAutoScalingClient for boto3 ApplicationAutoScaling module](#applicationautoscalingclient-for-boto3-applicationautoscaling-module)
-  - [ApplicationAutoScalingClient](#applicationautoscalingclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [delete_scaling_policy](#delete_scaling_policy)
-    - [delete_scheduled_action](#delete_scheduled_action)
-    - [deregister_scalable_target](#deregister_scalable_target)
-    - [describe_scalable_targets](#describe_scalable_targets)
-    - [describe_scaling_activities](#describe_scaling_activities)
-    - [describe_scaling_policies](#describe_scaling_policies)
-    - [describe_scheduled_actions](#describe_scheduled_actions)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [put_scaling_policy](#put_scaling_policy)
-    - [put_scheduled_action](#put_scheduled_action)
-    - [register_scalable_target](#register_scalable_target)
-    - [get_paginator](#get_paginator)
-
-<a id="applicationautoscalingclient"></a>
+    Auto-generated documentation for [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+    type annotations stubs module [mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 ## ApplicationAutoScalingClient
 
-Type annotations for `boto3.client("application-autoscaling")`
+Type annotations and code completion for `#!python boto3.client("application-autoscaling")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_application_autoscaling.client import ApplicationAutoScalingClient
 
@@ -45,396 +20,466 @@ def get_application-autoscaling_client() -> ApplicationAutoScalingClient:
     return Session().client("application-autoscaling")
 ```
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("application-autoscaling").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("application-autoscaling")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentUpdateException,
+    client.FailedResourceAccessException,
+    client.InternalServiceException,
+    client.InvalidNextTokenException,
+    client.LimitExceededException,
+    client.ObjectNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_application_autoscaling.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentUpdateException`
-- `Exceptions.FailedResourceAccessException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ObjectNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ApplicationAutoScalingClient exceptions.
-
-Type annotations for `boto3.client("application-autoscaling").exceptions`
-method.
-
-Boto3 documentation:
-[ApplicationAutoScaling.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("application-autoscaling").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.can_paginate)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_scaling\_policy"></a>
-
-### delete_scaling_policy
+### delete\_scaling\_policy
 
 Deletes the specified scaling policy for an Application Auto Scaling scalable
 target.
 
-Type annotations for
-`boto3.client("application-autoscaling").delete_scaling_policy` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").delete_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scaling_policy)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.delete_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scaling_policy)
+```python title="Method definition"
+def delete_scaling_policy(
+    self,
+    *,
+    PolicyName: str,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteScalingPolicyRequestRequestTypeDef](./type_defs.md#deletescalingpolicyrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 
-Keyword-only arguments:
 
-- `PolicyName`: `str` *(required)*
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScalingPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyName": ...,
+    "ServiceNamespace": ...,
+    "ResourceId": ...,
+    "ScalableDimension": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_scaling_policy(**kwargs)
+```
 
-<a id="delete\_scheduled\_action"></a>
+1. See [:material-code-braces: DeleteScalingPolicyRequestRequestTypeDef](./type_defs.md#deletescalingpolicyrequestrequesttypedef) 
 
-### delete_scheduled_action
+### delete\_scheduled\_action
 
 Deletes the specified scheduled action for an Application Auto Scaling scalable
 target.
 
-Type annotations for
-`boto3.client("application-autoscaling").delete_scheduled_action` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").delete_scheduled_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scheduled_action)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.delete_scheduled_action)
+```python title="Method definition"
+def delete_scheduled_action(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ScheduledActionName: str,
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteScheduledActionRequestRequestTypeDef](./type_defs.md#deletescheduledactionrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 
-Keyword-only arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ScheduledActionName`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScheduledActionRequestRequestTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+    "ScheduledActionName": ...,
+    "ResourceId": ...,
+    "ScalableDimension": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_scheduled_action(**kwargs)
+```
 
-<a id="deregister\_scalable\_target"></a>
+1. See [:material-code-braces: DeleteScheduledActionRequestRequestTypeDef](./type_defs.md#deletescheduledactionrequestrequesttypedef) 
 
-### deregister_scalable_target
+### deregister\_scalable\_target
 
 Deregisters an Application Auto Scaling scalable target when you have finished
 using it.
 
-Type annotations for
-`boto3.client("application-autoscaling").deregister_scalable_target` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").deregister_scalable_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.deregister_scalable_target)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.deregister_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.deregister_scalable_target)
+```python title="Method definition"
+def deregister_scalable_target(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterScalableTargetRequestRequestTypeDef](./type_defs.md#deregisterscalabletargetrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 
-Keyword-only arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterScalableTargetRequestRequestTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+    "ResourceId": ...,
+    "ScalableDimension": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_scalable_target(**kwargs)
+```
 
-<a id="describe\_scalable\_targets"></a>
+1. See [:material-code-braces: DeregisterScalableTargetRequestRequestTypeDef](./type_defs.md#deregisterscalabletargetrequestrequesttypedef) 
 
-### describe_scalable_targets
+### describe\_scalable\_targets
 
 Gets information about the scalable targets in the specified namespace.
 
-Type annotations for
-`boto3.client("application-autoscaling").describe_scalable_targets` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").describe_scalable_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scalable_targets)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.describe_scalable_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scalable_targets)
+```python title="Method definition"
+def describe_scalable_targets(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceIds: Sequence[str] = ...,
+    ScalableDimension: ScalableDimensionType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeScalableTargetsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScalableTargetsRequestRequestTypeDef](./type_defs.md#describescalabletargetsrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceIds`: `Sequence`\[`str`\]
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeScalableTargetsRequestRequestTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+}
 
-Returns
-[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef).
+parent.describe_scalable_targets(**kwargs)
+```
 
-<a id="describe\_scaling\_activities"></a>
+1. See [:material-code-braces: DescribeScalableTargetsRequestRequestTypeDef](./type_defs.md#describescalabletargetsrequestrequesttypedef) 
 
-### describe_scaling_activities
+### describe\_scaling\_activities
 
 Provides descriptive information about the scaling activities in the specified
 namespace from the previous six weeks.
 
-Type annotations for
-`boto3.client("application-autoscaling").describe_scaling_activities` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").describe_scaling_activities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_activities)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.describe_scaling_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_activities)
+```python title="Method definition"
+def describe_scaling_activities(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str = ...,
+    ScalableDimension: ScalableDimensionType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeScalingActivitiesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScalingActivitiesRequestRequestTypeDef](./type_defs.md#describescalingactivitiesrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingActivitiesRequestRequestTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+}
 
-Returns
-[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef).
+parent.describe_scaling_activities(**kwargs)
+```
 
-<a id="describe\_scaling\_policies"></a>
+1. See [:material-code-braces: DescribeScalingActivitiesRequestRequestTypeDef](./type_defs.md#describescalingactivitiesrequestrequesttypedef) 
 
-### describe_scaling_policies
+### describe\_scaling\_policies
 
 Describes the Application Auto Scaling scaling policies for the specified
 service namespace.
 
-Type annotations for
-`boto3.client("application-autoscaling").describe_scaling_policies` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").describe_scaling_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_policies)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.describe_scaling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scaling_policies)
+```python title="Method definition"
+def describe_scaling_policies(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    PolicyNames: Sequence[str] = ...,
+    ResourceId: str = ...,
+    ScalableDimension: ScalableDimensionType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeScalingPoliciesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScalingPoliciesRequestRequestTypeDef](./type_defs.md#describescalingpoliciesrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `PolicyNames`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingPoliciesRequestRequestTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+}
 
-Returns
-[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef).
+parent.describe_scaling_policies(**kwargs)
+```
 
-<a id="describe\_scheduled\_actions"></a>
+1. See [:material-code-braces: DescribeScalingPoliciesRequestRequestTypeDef](./type_defs.md#describescalingpoliciesrequestrequesttypedef) 
 
-### describe_scheduled_actions
+### describe\_scheduled\_actions
 
 Describes the Application Auto Scaling scheduled actions for the specified
 service namespace.
 
-Type annotations for
-`boto3.client("application-autoscaling").describe_scheduled_actions` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").describe_scheduled_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scheduled_actions)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.describe_scheduled_actions)
+```python title="Method definition"
+def describe_scheduled_actions(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ScheduledActionNames: Sequence[str] = ...,
+    ResourceId: str = ...,
+    ScalableDimension: ScalableDimensionType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeScheduledActionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScheduledActionsRequestRequestTypeDef](./type_defs.md#describescheduledactionsrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ScheduledActionNames`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduledActionsRequestRequestTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+}
 
-Returns
-[DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef).
+parent.describe_scheduled_actions(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeScheduledActionsRequestRequestTypeDef](./type_defs.md#describescheduledactionsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("application-autoscaling").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="put\_scaling\_policy"></a>
-
-### put_scaling_policy
+### put\_scaling\_policy
 
 Creates or updates a scaling policy for an Application Auto Scaling scalable
 target.
 
-Type annotations for
-`boto3.client("application-autoscaling").put_scaling_policy` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").put_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scaling_policy)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scaling_policy)
+```python title="Method definition"
+def put_scaling_policy(
+    self,
+    *,
+    PolicyName: str,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    PolicyType: PolicyTypeType = ...,  # (3)
+    StepScalingPolicyConfiguration: StepScalingPolicyConfigurationTypeDef = ...,  # (4)
+    TargetTrackingScalingPolicyConfiguration: TargetTrackingScalingPolicyConfigurationTypeDef = ...,  # (5)
+) -> PutScalingPolicyResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[PutScalingPolicyRequestRequestTypeDef](./type_defs.md#putscalingpolicyrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+4. See [:material-code-braces: StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef) 
+5. See [:material-code-braces: TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef) 
+6. See [:material-code-braces: PutScalingPolicyResponseTypeDef](./type_defs.md#putscalingpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyName`: `str` *(required)*
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
-- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype)
-- `StepScalingPolicyConfiguration`:
-  [StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef)
-- `TargetTrackingScalingPolicyConfiguration`:
-  [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: PutScalingPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyName": ...,
+    "ServiceNamespace": ...,
+    "ResourceId": ...,
+    "ScalableDimension": ...,
+}
 
-Returns
-[PutScalingPolicyResponseTypeDef](./type_defs.md#putscalingpolicyresponsetypedef).
+parent.put_scaling_policy(**kwargs)
+```
 
-<a id="put\_scheduled\_action"></a>
+1. See [:material-code-braces: PutScalingPolicyRequestRequestTypeDef](./type_defs.md#putscalingpolicyrequestrequesttypedef) 
 
-### put_scheduled_action
+### put\_scheduled\_action
 
 Creates or updates a scheduled action for an Application Auto Scaling scalable
 target.
 
-Type annotations for
-`boto3.client("application-autoscaling").put_scheduled_action` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").put_scheduled_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scheduled_action)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.put_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.put_scheduled_action)
+```python title="Method definition"
+def put_scheduled_action(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ScheduledActionName: str,
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    Schedule: str = ...,
+    Timezone: str = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    ScalableTargetAction: ScalableTargetActionTypeDef = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutScheduledActionRequestRequestTypeDef](./type_defs.md#putscheduledactionrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef) 
 
-Keyword-only arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ScheduledActionName`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
-- `Schedule`: `str`
-- `Timezone`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `ScalableTargetAction`:
-  [ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef)
+```python title="Usage example with kwargs"
+kwargs: PutScheduledActionRequestRequestTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+    "ScheduledActionName": ...,
+    "ResourceId": ...,
+    "ScalableDimension": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_scheduled_action(**kwargs)
+```
 
-<a id="register\_scalable\_target"></a>
+1. See [:material-code-braces: PutScheduledActionRequestRequestTypeDef](./type_defs.md#putscheduledactionrequestrequesttypedef) 
 
-### register_scalable_target
+### register\_scalable\_target
 
 Registers or updates a scalable target.
 
-Type annotations for
-`boto3.client("application-autoscaling").register_scalable_target` method.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").register_scalable_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target)
 
-Boto3 documentation:
-[ApplicationAutoScaling.Client.register_scalable_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client.register_scalable_target)
+```python title="Method definition"
+def register_scalable_target(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    MinCapacity: int = ...,
+    MaxCapacity: int = ...,
+    RoleARN: str = ...,
+    SuspendedState: SuspendedStateTypeDef = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RegisterScalableTargetRequestRequestTypeDef](./type_defs.md#registerscalabletargetrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
-- `MinCapacity`: `int`
-- `MaxCapacity`: `int`
-- `RoleARN`: `str`
-- `SuspendedState`:
-  [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
+```python title="Usage example with kwargs"
+kwargs: RegisterScalableTargetRequestRequestTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+    "ResourceId": ...,
+    "ScalableDimension": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.register_scalable_target(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: RegisterScalableTargetRequestRequestTypeDef](./type_defs.md#registerscalabletargetrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("application-autoscaling").get_paginator`
-method with overloads.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_scalable_targets")` ->
-  [DescribeScalableTargetsPaginator](./paginators.md#describescalabletargetspaginator)
-- `client.get_paginator("describe_scaling_activities")` ->
-  [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
-- `client.get_paginator("describe_scaling_policies")` ->
-  [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
-- `client.get_paginator("describe_scheduled_actions")` ->
-  [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
+- `client.get_paginator("describe_scalable_targets")` -> [DescribeScalableTargetsPaginator](./paginators.md#describescalabletargetspaginator)
+- `client.get_paginator("describe_scaling_activities")` -> [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
+- `client.get_paginator("describe_scaling_policies")` -> [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
+- `client.get_paginator("describe_scheduled_actions")` -> [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
+
+
+

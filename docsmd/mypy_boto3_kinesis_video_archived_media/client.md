@@ -1,38 +1,18 @@
-<a id="kinesisvideoarchivedmediaclient-for-boto3-kinesisvideoarchivedmedia-module"></a>
+# KinesisVideoArchivedMediaClient
 
-# KinesisVideoArchivedMediaClient for boto3 KinesisVideoArchivedMedia module
+> [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) > KinesisVideoArchivedMediaClient
 
-> [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) >
-> KinesisVideoArchivedMediaClient
+!!! note ""
 
-Auto-generated documentation for
-[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
-type annotations stubs module
-[mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
-
-- [KinesisVideoArchivedMediaClient for boto3 KinesisVideoArchivedMedia module](#kinesisvideoarchivedmediaclient-for-boto3-kinesisvideoarchivedmedia-module)
-  - [KinesisVideoArchivedMediaClient](#kinesisvideoarchivedmediaclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_clip](#get_clip)
-    - [get_dash_streaming_session_url](#get_dash_streaming_session_url)
-    - [get_hls_streaming_session_url](#get_hls_streaming_session_url)
-    - [get_media_for_fragment_list](#get_media_for_fragment_list)
-    - [list_fragments](#list_fragments)
-    - [get_paginator](#get_paginator)
-
-<a id="kinesisvideoarchivedmediaclient"></a>
+    Auto-generated documentation for [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+    type annotations stubs module [mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
 ## KinesisVideoArchivedMediaClient
 
-Type annotations for `boto3.client("kinesis-video-archived-media")`
+Type annotations and code completion for `#!python boto3.client("kinesis-video-archived-media")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_kinesis_video_archived_media.client import KinesisVideoArchivedMediaClient
 
@@ -40,248 +20,268 @@ def get_kinesis-video-archived-media_client() -> KinesisVideoArchivedMediaClient
     return Session().client("kinesis-video-archived-media")
 ```
 
-Boto3 documentation:
-[KinesisVideoArchivedMedia.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("kinesis-video-archived-media").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("kinesis-video-archived-media")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ClientLimitExceededException,
+    client.InvalidArgumentException,
+    client.InvalidCodecPrivateDataException,
+    client.InvalidMediaFrameException,
+    client.MissingCodecPrivateDataException,
+    client.NoDataRetentionException,
+    client.NotAuthorizedException,
+    client.ResourceNotFoundException,
+    client.UnsupportedStreamMediaTypeException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_kinesis_video_archived_media.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ClientLimitExceededException`
-- `Exceptions.InvalidArgumentException`
-- `Exceptions.InvalidCodecPrivateDataException`
-- `Exceptions.InvalidMediaFrameException`
-- `Exceptions.MissingCodecPrivateDataException`
-- `Exceptions.NoDataRetentionException`
-- `Exceptions.NotAuthorizedException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.UnsupportedStreamMediaTypeException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-KinesisVideoArchivedMediaClient exceptions.
-
-Type annotations for `boto3.client("kinesis-video-archived-media").exceptions`
-method.
-
-Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for
-`boto3.client("kinesis-video-archived-media").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-archived-media").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.can_paginate)
 
-Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("kinesis-video-archived-media").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-archived-media").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.generate_presigned_url)
 
-Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_clip"></a>
-
-### get_clip
+### get\_clip
 
 Downloads an MP4 file (clip) containing the archived, on-demand media from the
 specified video stream over the specified time range.
 
-Type annotations for `boto3.client("kinesis-video-archived-media").get_clip`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-archived-media").get_clip` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_clip)
 
-Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.get_clip](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_clip)
+```python title="Method definition"
+def get_clip(
+    self,
+    *,
+    ClipFragmentSelector: ClipFragmentSelectorTypeDef,  # (1)
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> GetClipOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetClipInputRequestTypeDef](./type_defs.md#getclipinputrequesttypedef).
+1. See [:material-code-braces: ClipFragmentSelectorTypeDef](./type_defs.md#clipfragmentselectortypedef) 
+2. See [:material-code-braces: GetClipOutputTypeDef](./type_defs.md#getclipoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClipFragmentSelector`:
-  [ClipFragmentSelectorTypeDef](./type_defs.md#clipfragmentselectortypedef)
-  *(required)*
-- `StreamName`: `str`
-- `StreamARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetClipInputRequestTypeDef = {  # (1)
+    "ClipFragmentSelector": ...,
+}
 
-Returns [GetClipOutputTypeDef](./type_defs.md#getclipoutputtypedef).
+parent.get_clip(**kwargs)
+```
 
-<a id="get\_dash\_streaming\_session\_url"></a>
+1. See [:material-code-braces: GetClipInputRequestTypeDef](./type_defs.md#getclipinputrequesttypedef) 
 
-### get_dash_streaming_session_url
+### get\_dash\_streaming\_session\_url
 
 Retrieves an MPEG Dynamic Adaptive Streaming over HTTP (DASH) URL for the
 stream.
 
-Type annotations for
-`boto3.client("kinesis-video-archived-media").get_dash_streaming_session_url`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-archived-media").get_dash_streaming_session_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url)
 
-Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_dash_streaming_session_url)
+```python title="Method definition"
+def get_dash_streaming_session_url(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+    PlaybackMode: DASHPlaybackModeType = ...,  # (1)
+    DisplayFragmentTimestamp: DASHDisplayFragmentTimestampType = ...,  # (2)
+    DisplayFragmentNumber: DASHDisplayFragmentNumberType = ...,  # (3)
+    DASHFragmentSelector: DASHFragmentSelectorTypeDef = ...,  # (4)
+    Expires: int = ...,
+    MaxManifestFragmentResults: int = ...,
+) -> GetDASHStreamingSessionURLOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[GetDASHStreamingSessionURLInputRequestTypeDef](./type_defs.md#getdashstreamingsessionurlinputrequesttypedef).
+1. See [:material-code-brackets: DASHPlaybackModeType](./literals.md#dashplaybackmodetype) 
+2. See [:material-code-brackets: DASHDisplayFragmentTimestampType](./literals.md#dashdisplayfragmenttimestamptype) 
+3. See [:material-code-brackets: DASHDisplayFragmentNumberType](./literals.md#dashdisplayfragmentnumbertype) 
+4. See [:material-code-braces: DASHFragmentSelectorTypeDef](./type_defs.md#dashfragmentselectortypedef) 
+5. See [:material-code-braces: GetDASHStreamingSessionURLOutputTypeDef](./type_defs.md#getdashstreamingsessionurloutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str`
-- `StreamARN`: `str`
-- `PlaybackMode`: [DASHPlaybackModeType](./literals.md#dashplaybackmodetype)
-- `DisplayFragmentTimestamp`:
-  [DASHDisplayFragmentTimestampType](./literals.md#dashdisplayfragmenttimestamptype)
-- `DisplayFragmentNumber`:
-  [DASHDisplayFragmentNumberType](./literals.md#dashdisplayfragmentnumbertype)
-- `DASHFragmentSelector`:
-  [DASHFragmentSelectorTypeDef](./type_defs.md#dashfragmentselectortypedef)
-- `Expires`: `int`
-- `MaxManifestFragmentResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetDASHStreamingSessionURLInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-Returns
-[GetDASHStreamingSessionURLOutputTypeDef](./type_defs.md#getdashstreamingsessionurloutputtypedef).
+parent.get_dash_streaming_session_url(**kwargs)
+```
 
-<a id="get\_hls\_streaming\_session\_url"></a>
+1. See [:material-code-braces: GetDASHStreamingSessionURLInputRequestTypeDef](./type_defs.md#getdashstreamingsessionurlinputrequesttypedef) 
 
-### get_hls_streaming_session_url
+### get\_hls\_streaming\_session\_url
 
 Retrieves an HTTP Live Streaming (HLS) URL for the stream.
 
-Type annotations for
-`boto3.client("kinesis-video-archived-media").get_hls_streaming_session_url`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-archived-media").get_hls_streaming_session_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url)
 
-Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_hls_streaming_session_url)
+```python title="Method definition"
+def get_hls_streaming_session_url(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+    PlaybackMode: HLSPlaybackModeType = ...,  # (1)
+    HLSFragmentSelector: HLSFragmentSelectorTypeDef = ...,  # (2)
+    ContainerFormat: ContainerFormatType = ...,  # (3)
+    DiscontinuityMode: HLSDiscontinuityModeType = ...,  # (4)
+    DisplayFragmentTimestamp: HLSDisplayFragmentTimestampType = ...,  # (5)
+    Expires: int = ...,
+    MaxMediaPlaylistFragmentResults: int = ...,
+) -> GetHLSStreamingSessionURLOutputTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[GetHLSStreamingSessionURLInputRequestTypeDef](./type_defs.md#gethlsstreamingsessionurlinputrequesttypedef).
+1. See [:material-code-brackets: HLSPlaybackModeType](./literals.md#hlsplaybackmodetype) 
+2. See [:material-code-braces: HLSFragmentSelectorTypeDef](./type_defs.md#hlsfragmentselectortypedef) 
+3. See [:material-code-brackets: ContainerFormatType](./literals.md#containerformattype) 
+4. See [:material-code-brackets: HLSDiscontinuityModeType](./literals.md#hlsdiscontinuitymodetype) 
+5. See [:material-code-brackets: HLSDisplayFragmentTimestampType](./literals.md#hlsdisplayfragmenttimestamptype) 
+6. See [:material-code-braces: GetHLSStreamingSessionURLOutputTypeDef](./type_defs.md#gethlsstreamingsessionurloutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str`
-- `StreamARN`: `str`
-- `PlaybackMode`: [HLSPlaybackModeType](./literals.md#hlsplaybackmodetype)
-- `HLSFragmentSelector`:
-  [HLSFragmentSelectorTypeDef](./type_defs.md#hlsfragmentselectortypedef)
-- `ContainerFormat`: [ContainerFormatType](./literals.md#containerformattype)
-- `DiscontinuityMode`:
-  [HLSDiscontinuityModeType](./literals.md#hlsdiscontinuitymodetype)
-- `DisplayFragmentTimestamp`:
-  [HLSDisplayFragmentTimestampType](./literals.md#hlsdisplayfragmenttimestamptype)
-- `Expires`: `int`
-- `MaxMediaPlaylistFragmentResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetHLSStreamingSessionURLInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-Returns
-[GetHLSStreamingSessionURLOutputTypeDef](./type_defs.md#gethlsstreamingsessionurloutputtypedef).
+parent.get_hls_streaming_session_url(**kwargs)
+```
 
-<a id="get\_media\_for\_fragment\_list"></a>
+1. See [:material-code-braces: GetHLSStreamingSessionURLInputRequestTypeDef](./type_defs.md#gethlsstreamingsessionurlinputrequesttypedef) 
 
-### get_media_for_fragment_list
+### get\_media\_for\_fragment\_list
 
 Gets media for a list of fragments (specified by fragment number) from the
 archived data in an Amazon Kinesis video stream.
 
-Type annotations for
-`boto3.client("kinesis-video-archived-media").get_media_for_fragment_list`
-method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-archived-media").get_media_for_fragment_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_media_for_fragment_list)
 
-Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.get_media_for_fragment_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.get_media_for_fragment_list)
+```python title="Method definition"
+def get_media_for_fragment_list(
+    self,
+    *,
+    Fragments: Sequence[str],
+    StreamName: str = ...,
+    StreamARN: str = ...,
+) -> GetMediaForFragmentListOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMediaForFragmentListInputRequestTypeDef](./type_defs.md#getmediaforfragmentlistinputrequesttypedef).
+1. See [:material-code-braces: GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Fragments`: `Sequence`\[`str`\] *(required)*
-- `StreamName`: `str`
-- `StreamARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetMediaForFragmentListInputRequestTypeDef = {  # (1)
+    "Fragments": ...,
+}
 
-Returns
-[GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef).
+parent.get_media_for_fragment_list(**kwargs)
+```
 
-<a id="list\_fragments"></a>
+1. See [:material-code-braces: GetMediaForFragmentListInputRequestTypeDef](./type_defs.md#getmediaforfragmentlistinputrequesttypedef) 
 
-### list_fragments
+### list\_fragments
 
-Returns a list of Fragment objects from the specified stream and timestamp
+Returns a list of  Fragment objects from the specified stream and timestamp
 range within the archived data.
 
-Type annotations for
-`boto3.client("kinesis-video-archived-media").list_fragments` method.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-archived-media").list_fragments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.list_fragments)
 
-Boto3 documentation:
-[KinesisVideoArchivedMedia.Client.list_fragments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.list_fragments)
+```python title="Method definition"
+def list_fragments(
+    self,
+    *,
+    StreamName: str = ...,
+    StreamARN: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    FragmentSelector: FragmentSelectorTypeDef = ...,  # (1)
+) -> ListFragmentsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFragmentsInputRequestTypeDef](./type_defs.md#listfragmentsinputrequesttypedef).
+1. See [:material-code-braces: FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef) 
+2. See [:material-code-braces: ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StreamName`: `str`
-- `StreamARN`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `FragmentSelector`:
-  [FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef)
+```python title="Usage example with kwargs"
+kwargs: ListFragmentsInputRequestTypeDef = {  # (1)
+    "StreamName": ...,
+}
 
-Returns
-[ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef).
+parent.list_fragments(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ListFragmentsInputRequestTypeDef](./type_defs.md#listfragmentsinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for
-`boto3.client("kinesis-video-archived-media").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("kinesis-video-archived-media").get_paginator` method with overloads.
 
-- `client.get_paginator("list_fragments")` ->
-  [ListFragmentsPaginator](./paginators.md#listfragmentspaginator)
+- `client.get_paginator("list_fragments")` -> [ListFragmentsPaginator](./paginators.md#listfragmentspaginator)
+
+
+

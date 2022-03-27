@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-iotsitewise-module"></a>
-
-# Type annotations for boto3 IoTSiteWise module
+#  IoTSiteWise module
 
 > [Index](../README.md) > IoTSiteWise
 
-Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
-type annotations stubs module
-[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+!!! note ""
 
-- [Type annotations for boto3 IoTSiteWise module](#type-annotations-for-boto3-iotsitewise-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoTSiteWiseClient](#iotsitewiseclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+    type annotations stubs module [mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoTSiteWise`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iotsitewise]'
 python -m pip install mypy-boto3-iotsitewise
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,129 +42,37 @@ python -m pip install mypy-boto3-iotsitewise
 python -m pip uninstall -y mypy-boto3-iotsitewise
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="iotsitewiseclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoTSiteWiseClient
 
-Type annotations for `boto3.client("iotsitewise")` as
-[IoTSiteWiseClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iotsitewise")` as [IoTSiteWiseClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iotsitewise.client import IoTSiteWiseClient
+
+def get_client() -> IoTSiteWiseClient:
+    return Session().cleint("iotsitewise")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_assets](./client.md#associate_assets)
-- [associate_time_series_to_asset_property](./client.md#associate_time_series_to_asset_property)
-- [batch_associate_project_assets](./client.md#batch_associate_project_assets)
-- [batch_disassociate_project_assets](./client.md#batch_disassociate_project_assets)
-- [batch_put_asset_property_value](./client.md#batch_put_asset_property_value)
-- [can_paginate](./client.md#can_paginate)
-- [create_access_policy](./client.md#create_access_policy)
-- [create_asset](./client.md#create_asset)
-- [create_asset_model](./client.md#create_asset_model)
-- [create_dashboard](./client.md#create_dashboard)
-- [create_gateway](./client.md#create_gateway)
-- [create_portal](./client.md#create_portal)
-- [create_project](./client.md#create_project)
-- [delete_access_policy](./client.md#delete_access_policy)
-- [delete_asset](./client.md#delete_asset)
-- [delete_asset_model](./client.md#delete_asset_model)
-- [delete_dashboard](./client.md#delete_dashboard)
-- [delete_gateway](./client.md#delete_gateway)
-- [delete_portal](./client.md#delete_portal)
-- [delete_project](./client.md#delete_project)
-- [delete_time_series](./client.md#delete_time_series)
-- [describe_access_policy](./client.md#describe_access_policy)
-- [describe_asset](./client.md#describe_asset)
-- [describe_asset_model](./client.md#describe_asset_model)
-- [describe_asset_property](./client.md#describe_asset_property)
-- [describe_dashboard](./client.md#describe_dashboard)
-- [describe_default_encryption_configuration](./client.md#describe_default_encryption_configuration)
-- [describe_gateway](./client.md#describe_gateway)
-- [describe_gateway_capability_configuration](./client.md#describe_gateway_capability_configuration)
-- [describe_logging_options](./client.md#describe_logging_options)
-- [describe_portal](./client.md#describe_portal)
-- [describe_project](./client.md#describe_project)
-- [describe_storage_configuration](./client.md#describe_storage_configuration)
-- [describe_time_series](./client.md#describe_time_series)
-- [disassociate_assets](./client.md#disassociate_assets)
-- [disassociate_time_series_from_asset_property](./client.md#disassociate_time_series_from_asset_property)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_asset_property_aggregates](./client.md#get_asset_property_aggregates)
-- [get_asset_property_value](./client.md#get_asset_property_value)
-- [get_asset_property_value_history](./client.md#get_asset_property_value_history)
-- [get_interpolated_asset_property_values](./client.md#get_interpolated_asset_property_values)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_access_policies](./client.md#list_access_policies)
-- [list_asset_models](./client.md#list_asset_models)
-- [list_asset_relationships](./client.md#list_asset_relationships)
-- [list_assets](./client.md#list_assets)
-- [list_associated_assets](./client.md#list_associated_assets)
-- [list_dashboards](./client.md#list_dashboards)
-- [list_gateways](./client.md#list_gateways)
-- [list_portals](./client.md#list_portals)
-- [list_project_assets](./client.md#list_project_assets)
-- [list_projects](./client.md#list_projects)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_time_series](./client.md#list_time_series)
-- [put_default_encryption_configuration](./client.md#put_default_encryption_configuration)
-- [put_logging_options](./client.md#put_logging_options)
-- [put_storage_configuration](./client.md#put_storage_configuration)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_access_policy](./client.md#update_access_policy)
-- [update_asset](./client.md#update_asset)
-- [update_asset_model](./client.md#update_asset_model)
-- [update_asset_property](./client.md#update_asset_property)
-- [update_dashboard](./client.md#update_dashboard)
-- [update_gateway](./client.md#update_gateway)
-- [update_gateway_capability_configuration](./client.md#update_gateway_capability_configuration)
-- [update_portal](./client.md#update_portal)
-- [update_project](./client.md#update_project)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-IoTSiteWiseClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConflictingOperationException
-- InternalFailureException
-- InvalidRequestException
-- LimitExceededException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-- ServiceUnavailableException
-- ThrottlingException
-- TooManyTagsException
-- UnauthorizedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("iotsitewise").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("iotsitewise").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_iotsitewise.paginator import GetAssetPropertyAggregatesPaginator, ...
+from mypy_boto3_iotsitewise.paginator import GetAssetPropertyAggregatesPaginator
+
+def get_get_asset_property_aggregates_paginator() -> GetAssetPropertyAggregatesPaginator:
+    return Session().client("iotsitewise").get_paginator("get_asset_property_aggregates"))
 ```
 
 - [GetAssetPropertyAggregatesPaginator](./paginators.md#getassetpropertyaggregatespaginator)
@@ -205,17 +90,21 @@ from mypy_boto3_iotsitewise.paginator import GetAssetPropertyAggregatesPaginator
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
 - [ListTimeSeriesPaginator](./paginators.md#listtimeseriespaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("iotsitewise").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("iotsitewise").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_iotsitewise.waiter import AssetActiveWaiter, ...
+from mypy_boto3_iotsitewise.waiter import AssetActiveWaiter
+
+def get_asset_active_waiter() -> AssetActiveWaiter:
+    return Session().client("iotsitewise").get_waiter("asset_active")
 ```
 
 - [AssetActiveWaiter](./waiters.md#assetactivewaiter)
@@ -225,16 +114,21 @@ from mypy_boto3_iotsitewise.waiter import AssetActiveWaiter, ...
 - [PortalActiveWaiter](./waiters.md#portalactivewaiter)
 - [PortalNotExistsWaiter](./waiters.md#portalnotexistswaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotsitewise.literals import AggregateTypeType
 
-```python
-from mypy_boto3_iotsitewise.literals import AggregateTypeType, ...
+def get_value() -> AggregateTypeType:
+    return "AVERAGE"
 ```
 
 - [AggregateTypeType](./literals.md#aggregatetypetype)
@@ -293,18 +187,25 @@ from mypy_boto3_iotsitewise.literals import AggregateTypeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef
 
-```python
-from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef, ...
+def get_value() -> AccessPolicySummaryTypeDef:
+    return {
+        "id": ...,
+        "identity": ...,
+        "resource": ...,
+        "permission": ...,
+    }
 ```
 
 - [AccessPolicySummaryTypeDef](./type_defs.md#accesspolicysummarytypedef)
@@ -372,10 +273,14 @@ from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef, ...
 - [DeleteTimeSeriesRequestRequestTypeDef](./type_defs.md#deletetimeseriesrequestrequesttypedef)
 - [DescribeAccessPolicyRequestRequestTypeDef](./type_defs.md#describeaccesspolicyrequestrequesttypedef)
 - [DescribeAccessPolicyResponseTypeDef](./type_defs.md#describeaccesspolicyresponsetypedef)
+- [DescribeAssetModelRequestAssetModelActiveWaitTypeDef](./type_defs.md#describeassetmodelrequestassetmodelactivewaittypedef)
+- [DescribeAssetModelRequestAssetModelNotExistsWaitTypeDef](./type_defs.md#describeassetmodelrequestassetmodelnotexistswaittypedef)
 - [DescribeAssetModelRequestRequestTypeDef](./type_defs.md#describeassetmodelrequestrequesttypedef)
 - [DescribeAssetModelResponseTypeDef](./type_defs.md#describeassetmodelresponsetypedef)
 - [DescribeAssetPropertyRequestRequestTypeDef](./type_defs.md#describeassetpropertyrequestrequesttypedef)
 - [DescribeAssetPropertyResponseTypeDef](./type_defs.md#describeassetpropertyresponsetypedef)
+- [DescribeAssetRequestAssetActiveWaitTypeDef](./type_defs.md#describeassetrequestassetactivewaittypedef)
+- [DescribeAssetRequestAssetNotExistsWaitTypeDef](./type_defs.md#describeassetrequestassetnotexistswaittypedef)
 - [DescribeAssetRequestRequestTypeDef](./type_defs.md#describeassetrequestrequesttypedef)
 - [DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef)
 - [DescribeDashboardRequestRequestTypeDef](./type_defs.md#describedashboardrequestrequesttypedef)
@@ -386,6 +291,8 @@ from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef, ...
 - [DescribeGatewayRequestRequestTypeDef](./type_defs.md#describegatewayrequestrequesttypedef)
 - [DescribeGatewayResponseTypeDef](./type_defs.md#describegatewayresponsetypedef)
 - [DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef)
+- [DescribePortalRequestPortalActiveWaitTypeDef](./type_defs.md#describeportalrequestportalactivewaittypedef)
+- [DescribePortalRequestPortalNotExistsWaitTypeDef](./type_defs.md#describeportalrequestportalnotexistswaittypedef)
 - [DescribePortalRequestRequestTypeDef](./type_defs.md#describeportalrequestrequesttypedef)
 - [DescribePortalResponseTypeDef](./type_defs.md#describeportalresponsetypedef)
 - [DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef)
@@ -402,12 +309,15 @@ from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef, ...
 - [GatewayCapabilitySummaryTypeDef](./type_defs.md#gatewaycapabilitysummarytypedef)
 - [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef)
 - [GatewaySummaryTypeDef](./type_defs.md#gatewaysummarytypedef)
+- [GetAssetPropertyAggregatesRequestGetAssetPropertyAggregatesPaginateTypeDef](./type_defs.md#getassetpropertyaggregatesrequestgetassetpropertyaggregatespaginatetypedef)
 - [GetAssetPropertyAggregatesRequestRequestTypeDef](./type_defs.md#getassetpropertyaggregatesrequestrequesttypedef)
 - [GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef)
+- [GetAssetPropertyValueHistoryRequestGetAssetPropertyValueHistoryPaginateTypeDef](./type_defs.md#getassetpropertyvaluehistoryrequestgetassetpropertyvaluehistorypaginatetypedef)
 - [GetAssetPropertyValueHistoryRequestRequestTypeDef](./type_defs.md#getassetpropertyvaluehistoryrequestrequesttypedef)
 - [GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef)
 - [GetAssetPropertyValueRequestRequestTypeDef](./type_defs.md#getassetpropertyvaluerequestrequesttypedef)
 - [GetAssetPropertyValueResponseTypeDef](./type_defs.md#getassetpropertyvalueresponsetypedef)
+- [GetInterpolatedAssetPropertyValuesRequestGetInterpolatedAssetPropertyValuesPaginateTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesrequestgetinterpolatedassetpropertyvaluespaginatetypedef)
 - [GetInterpolatedAssetPropertyValuesRequestRequestTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesrequestrequesttypedef)
 - [GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef)
 - [GreengrassTypeDef](./type_defs.md#greengrasstypedef)
@@ -420,28 +330,39 @@ from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef, ...
 - [ImageLocationTypeDef](./type_defs.md#imagelocationtypedef)
 - [ImageTypeDef](./type_defs.md#imagetypedef)
 - [InterpolatedAssetPropertyValueTypeDef](./type_defs.md#interpolatedassetpropertyvaluetypedef)
+- [ListAccessPoliciesRequestListAccessPoliciesPaginateTypeDef](./type_defs.md#listaccesspoliciesrequestlistaccesspoliciespaginatetypedef)
 - [ListAccessPoliciesRequestRequestTypeDef](./type_defs.md#listaccesspoliciesrequestrequesttypedef)
 - [ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef)
+- [ListAssetModelsRequestListAssetModelsPaginateTypeDef](./type_defs.md#listassetmodelsrequestlistassetmodelspaginatetypedef)
 - [ListAssetModelsRequestRequestTypeDef](./type_defs.md#listassetmodelsrequestrequesttypedef)
 - [ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef)
+- [ListAssetRelationshipsRequestListAssetRelationshipsPaginateTypeDef](./type_defs.md#listassetrelationshipsrequestlistassetrelationshipspaginatetypedef)
 - [ListAssetRelationshipsRequestRequestTypeDef](./type_defs.md#listassetrelationshipsrequestrequesttypedef)
 - [ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef)
+- [ListAssetsRequestListAssetsPaginateTypeDef](./type_defs.md#listassetsrequestlistassetspaginatetypedef)
 - [ListAssetsRequestRequestTypeDef](./type_defs.md#listassetsrequestrequesttypedef)
 - [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)
+- [ListAssociatedAssetsRequestListAssociatedAssetsPaginateTypeDef](./type_defs.md#listassociatedassetsrequestlistassociatedassetspaginatetypedef)
 - [ListAssociatedAssetsRequestRequestTypeDef](./type_defs.md#listassociatedassetsrequestrequesttypedef)
 - [ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef)
+- [ListDashboardsRequestListDashboardsPaginateTypeDef](./type_defs.md#listdashboardsrequestlistdashboardspaginatetypedef)
 - [ListDashboardsRequestRequestTypeDef](./type_defs.md#listdashboardsrequestrequesttypedef)
 - [ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef)
+- [ListGatewaysRequestListGatewaysPaginateTypeDef](./type_defs.md#listgatewaysrequestlistgatewayspaginatetypedef)
 - [ListGatewaysRequestRequestTypeDef](./type_defs.md#listgatewaysrequestrequesttypedef)
 - [ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef)
+- [ListPortalsRequestListPortalsPaginateTypeDef](./type_defs.md#listportalsrequestlistportalspaginatetypedef)
 - [ListPortalsRequestRequestTypeDef](./type_defs.md#listportalsrequestrequesttypedef)
 - [ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef)
+- [ListProjectAssetsRequestListProjectAssetsPaginateTypeDef](./type_defs.md#listprojectassetsrequestlistprojectassetspaginatetypedef)
 - [ListProjectAssetsRequestRequestTypeDef](./type_defs.md#listprojectassetsrequestrequesttypedef)
 - [ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef)
+- [ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef)
 - [ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef)
 - [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTimeSeriesRequestListTimeSeriesPaginateTypeDef](./type_defs.md#listtimeseriesrequestlisttimeseriespaginatetypedef)
 - [ListTimeSeriesRequestRequestTypeDef](./type_defs.md#listtimeseriesrequestrequesttypedef)
 - [ListTimeSeriesResponseTypeDef](./type_defs.md#listtimeseriesresponsetypedef)
 - [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
@@ -494,3 +415,4 @@ from mypy_boto3_iotsitewise.type_defs import AccessPolicySummaryTypeDef, ...
 - [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
 - [VariantTypeDef](./type_defs.md#varianttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

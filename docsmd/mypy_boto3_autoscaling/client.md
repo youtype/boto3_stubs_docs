@@ -1,93 +1,18 @@
-<a id="autoscalingclient-for-boto3-autoscaling-module"></a>
-
-# AutoScalingClient for boto3 AutoScaling module
+# AutoScalingClient
 
 > [Index](../README.md) > [AutoScaling](./README.md) > AutoScalingClient
 
-Auto-generated documentation for
-[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
-type annotations stubs module
-[mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+!!! note ""
 
-- [AutoScalingClient for boto3 AutoScaling module](#autoscalingclient-for-boto3-autoscaling-module)
-  - [AutoScalingClient](#autoscalingclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [attach_instances](#attach_instances)
-    - [attach_load_balancer_target_groups](#attach_load_balancer_target_groups)
-    - [attach_load_balancers](#attach_load_balancers)
-    - [batch_delete_scheduled_action](#batch_delete_scheduled_action)
-    - [batch_put_scheduled_update_group_action](#batch_put_scheduled_update_group_action)
-    - [can_paginate](#can_paginate)
-    - [cancel_instance_refresh](#cancel_instance_refresh)
-    - [complete_lifecycle_action](#complete_lifecycle_action)
-    - [create_auto_scaling_group](#create_auto_scaling_group)
-    - [create_launch_configuration](#create_launch_configuration)
-    - [create_or_update_tags](#create_or_update_tags)
-    - [delete_auto_scaling_group](#delete_auto_scaling_group)
-    - [delete_launch_configuration](#delete_launch_configuration)
-    - [delete_lifecycle_hook](#delete_lifecycle_hook)
-    - [delete_notification_configuration](#delete_notification_configuration)
-    - [delete_policy](#delete_policy)
-    - [delete_scheduled_action](#delete_scheduled_action)
-    - [delete_tags](#delete_tags)
-    - [delete_warm_pool](#delete_warm_pool)
-    - [describe_account_limits](#describe_account_limits)
-    - [describe_adjustment_types](#describe_adjustment_types)
-    - [describe_auto_scaling_groups](#describe_auto_scaling_groups)
-    - [describe_auto_scaling_instances](#describe_auto_scaling_instances)
-    - [describe_auto_scaling_notification_types](#describe_auto_scaling_notification_types)
-    - [describe_instance_refreshes](#describe_instance_refreshes)
-    - [describe_launch_configurations](#describe_launch_configurations)
-    - [describe_lifecycle_hook_types](#describe_lifecycle_hook_types)
-    - [describe_lifecycle_hooks](#describe_lifecycle_hooks)
-    - [describe_load_balancer_target_groups](#describe_load_balancer_target_groups)
-    - [describe_load_balancers](#describe_load_balancers)
-    - [describe_metric_collection_types](#describe_metric_collection_types)
-    - [describe_notification_configurations](#describe_notification_configurations)
-    - [describe_policies](#describe_policies)
-    - [describe_scaling_activities](#describe_scaling_activities)
-    - [describe_scaling_process_types](#describe_scaling_process_types)
-    - [describe_scheduled_actions](#describe_scheduled_actions)
-    - [describe_tags](#describe_tags)
-    - [describe_termination_policy_types](#describe_termination_policy_types)
-    - [describe_warm_pool](#describe_warm_pool)
-    - [detach_instances](#detach_instances)
-    - [detach_load_balancer_target_groups](#detach_load_balancer_target_groups)
-    - [detach_load_balancers](#detach_load_balancers)
-    - [disable_metrics_collection](#disable_metrics_collection)
-    - [enable_metrics_collection](#enable_metrics_collection)
-    - [enter_standby](#enter_standby)
-    - [execute_policy](#execute_policy)
-    - [exit_standby](#exit_standby)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_predictive_scaling_forecast](#get_predictive_scaling_forecast)
-    - [put_lifecycle_hook](#put_lifecycle_hook)
-    - [put_notification_configuration](#put_notification_configuration)
-    - [put_scaling_policy](#put_scaling_policy)
-    - [put_scheduled_update_group_action](#put_scheduled_update_group_action)
-    - [put_warm_pool](#put_warm_pool)
-    - [record_lifecycle_action_heartbeat](#record_lifecycle_action_heartbeat)
-    - [resume_processes](#resume_processes)
-    - [set_desired_capacity](#set_desired_capacity)
-    - [set_instance_health](#set_instance_health)
-    - [set_instance_protection](#set_instance_protection)
-    - [start_instance_refresh](#start_instance_refresh)
-    - [suspend_processes](#suspend_processes)
-    - [terminate_instance_in_auto_scaling_group](#terminate_instance_in_auto_scaling_group)
-    - [update_auto_scaling_group](#update_auto_scaling_group)
-    - [get_paginator](#get_paginator)
-
-<a id="autoscalingclient"></a>
+    Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+    type annotations stubs module [mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 ## AutoScalingClient
 
-Type annotations for `boto3.client("autoscaling")`
+Type annotations and code completion for `#!python boto3.client("autoscaling")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_autoscaling.client import AutoScalingClient
 
@@ -95,1524 +20,1987 @@ def get_autoscaling_client() -> AutoScalingClient:
     return Session().client("autoscaling")
 ```
 
-Boto3 documentation:
-[AutoScaling.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("autoscaling").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("autoscaling")
+
+try:
+    do_something(client)
+except (
+    client.ActiveInstanceRefreshNotFoundFault,
+    client.AlreadyExistsFault,
+    client.ClientError,
+    client.InstanceRefreshInProgressFault,
+    client.InvalidNextToken,
+    client.LimitExceededFault,
+    client.ResourceContentionFault,
+    client.ResourceInUseFault,
+    client.ScalingActivityInProgressFault,
+    client.ServiceLinkedRoleFailure,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_autoscaling.client import Exceptions
 
 def handle_error(exc: Exceptions.ActiveInstanceRefreshNotFoundFault) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ActiveInstanceRefreshNotFoundFault`
-- `Exceptions.AlreadyExistsFault`
-- `Exceptions.ClientError`
-- `Exceptions.InstanceRefreshInProgressFault`
-- `Exceptions.InvalidNextToken`
-- `Exceptions.LimitExceededFault`
-- `Exceptions.ResourceContentionFault`
-- `Exceptions.ResourceInUseFault`
-- `Exceptions.ScalingActivityInProgressFault`
-- `Exceptions.ServiceLinkedRoleFailure`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AutoScalingClient exceptions.
-
-Type annotations for `boto3.client("autoscaling").exceptions` method.
-
-Boto3 documentation:
-[AutoScaling.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="attach\_instances"></a>
-
-### attach_instances
+### attach\_instances
 
 Attaches one or more EC2 instances to the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").attach_instances` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").attach_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_instances)
 
-Boto3 documentation:
-[AutoScaling.Client.attach_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_instances)
+```python title="Method definition"
+def attach_instances(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    InstanceIds: Sequence[str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AttachInstancesQueryRequestTypeDef](./type_defs.md#attachinstancesqueryrequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `InstanceIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: AttachInstancesQueryRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-<a id="attach\_load\_balancer\_target\_groups"></a>
+parent.attach_instances(**kwargs)
+```
 
-### attach_load_balancer_target_groups
+1. See [:material-code-braces: AttachInstancesQueryRequestTypeDef](./type_defs.md#attachinstancesqueryrequesttypedef) 
+
+### attach\_load\_balancer\_target\_groups
 
 Attaches one or more target groups to the specified Auto Scaling group.
 
-Type annotations for
-`boto3.client("autoscaling").attach_load_balancer_target_groups` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").attach_load_balancer_target_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancer_target_groups)
 
-Boto3 documentation:
-[AutoScaling.Client.attach_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancer_target_groups)
+```python title="Method definition"
+def attach_load_balancer_target_groups(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    TargetGroupARNs: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AttachLoadBalancerTargetGroupsTypeRequestTypeDef](./type_defs.md#attachloadbalancertargetgroupstyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `TargetGroupARNs`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachLoadBalancerTargetGroupsTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "TargetGroupARNs": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.attach_load_balancer_target_groups(**kwargs)
+```
 
-<a id="attach\_load\_balancers"></a>
+1. See [:material-code-braces: AttachLoadBalancerTargetGroupsTypeRequestTypeDef](./type_defs.md#attachloadbalancertargetgroupstyperequesttypedef) 
 
-### attach_load_balancers
+### attach\_load\_balancers
 
 .
 
-Type annotations for `boto3.client("autoscaling").attach_load_balancers`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").attach_load_balancers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancers)
 
-Boto3 documentation:
-[AutoScaling.Client.attach_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.attach_load_balancers)
+```python title="Method definition"
+def attach_load_balancers(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    LoadBalancerNames: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AttachLoadBalancersTypeRequestTypeDef](./type_defs.md#attachloadbalancerstyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachLoadBalancersTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "LoadBalancerNames": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.attach_load_balancers(**kwargs)
+```
 
-<a id="batch\_delete\_scheduled\_action"></a>
+1. See [:material-code-braces: AttachLoadBalancersTypeRequestTypeDef](./type_defs.md#attachloadbalancerstyperequesttypedef) 
 
-### batch_delete_scheduled_action
+### batch\_delete\_scheduled\_action
 
 Deletes one or more scheduled actions for the specified Auto Scaling group.
 
-Type annotations for
-`boto3.client("autoscaling").batch_delete_scheduled_action` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").batch_delete_scheduled_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_delete_scheduled_action)
 
-Boto3 documentation:
-[AutoScaling.Client.batch_delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_delete_scheduled_action)
+```python title="Method definition"
+def batch_delete_scheduled_action(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ScheduledActionNames: Sequence[str],
+) -> BatchDeleteScheduledActionAnswerTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteScheduledActionTypeRequestTypeDef](./type_defs.md#batchdeletescheduledactiontyperequesttypedef).
+1. See [:material-code-braces: BatchDeleteScheduledActionAnswerTypeDef](./type_defs.md#batchdeletescheduledactionanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ScheduledActionNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteScheduledActionTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "ScheduledActionNames": ...,
+}
 
-Returns
-[BatchDeleteScheduledActionAnswerTypeDef](./type_defs.md#batchdeletescheduledactionanswertypedef).
+parent.batch_delete_scheduled_action(**kwargs)
+```
 
-<a id="batch\_put\_scheduled\_update\_group\_action"></a>
+1. See [:material-code-braces: BatchDeleteScheduledActionTypeRequestTypeDef](./type_defs.md#batchdeletescheduledactiontyperequesttypedef) 
 
-### batch_put_scheduled_update_group_action
+### batch\_put\_scheduled\_update\_group\_action
 
 Creates or updates one or more scheduled scaling actions for an Auto Scaling
 group.
 
-Type annotations for
-`boto3.client("autoscaling").batch_put_scheduled_update_group_action` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").batch_put_scheduled_update_group_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_put_scheduled_update_group_action)
 
-Boto3 documentation:
-[AutoScaling.Client.batch_put_scheduled_update_group_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.batch_put_scheduled_update_group_action)
+```python title="Method definition"
+def batch_put_scheduled_update_group_action(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ScheduledUpdateGroupActions: Sequence[ScheduledUpdateGroupActionRequestTypeDef],  # (1)
+) -> BatchPutScheduledUpdateGroupActionAnswerTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchPutScheduledUpdateGroupActionTypeRequestTypeDef](./type_defs.md#batchputscheduledupdategroupactiontyperequesttypedef).
+1. See [:material-code-braces: ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef) 
+2. See [:material-code-braces: BatchPutScheduledUpdateGroupActionAnswerTypeDef](./type_defs.md#batchputscheduledupdategroupactionanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ScheduledUpdateGroupActions`:
-  `Sequence`\[[ScheduledUpdateGroupActionRequestTypeDef](./type_defs.md#scheduledupdategroupactionrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchPutScheduledUpdateGroupActionTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "ScheduledUpdateGroupActions": ...,
+}
 
-Returns
-[BatchPutScheduledUpdateGroupActionAnswerTypeDef](./type_defs.md#batchputscheduledupdategroupactionanswertypedef).
+parent.batch_put_scheduled_update_group_action(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchPutScheduledUpdateGroupActionTypeRequestTypeDef](./type_defs.md#batchputscheduledupdategroupactiontyperequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("autoscaling").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.can_paginate)
 
-Boto3 documentation:
-[AutoScaling.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_instance\_refresh"></a>
-
-### cancel_instance_refresh
+### cancel\_instance\_refresh
 
 Cancels an instance refresh operation in progress.
 
-Type annotations for `boto3.client("autoscaling").cancel_instance_refresh`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").cancel_instance_refresh` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.cancel_instance_refresh)
 
-Boto3 documentation:
-[AutoScaling.Client.cancel_instance_refresh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.cancel_instance_refresh)
+```python title="Method definition"
+def cancel_instance_refresh(
+    self,
+    *,
+    AutoScalingGroupName: str,
+) -> CancelInstanceRefreshAnswerTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelInstanceRefreshTypeRequestTypeDef](./type_defs.md#cancelinstancerefreshtyperequesttypedef).
+1. See [:material-code-braces: CancelInstanceRefreshAnswerTypeDef](./type_defs.md#cancelinstancerefreshanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelInstanceRefreshTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns
-[CancelInstanceRefreshAnswerTypeDef](./type_defs.md#cancelinstancerefreshanswertypedef).
+parent.cancel_instance_refresh(**kwargs)
+```
 
-<a id="complete\_lifecycle\_action"></a>
+1. See [:material-code-braces: CancelInstanceRefreshTypeRequestTypeDef](./type_defs.md#cancelinstancerefreshtyperequesttypedef) 
 
-### complete_lifecycle_action
+### complete\_lifecycle\_action
 
 Completes the lifecycle action for the specified token or instance with the
 specified result.
 
-Type annotations for `boto3.client("autoscaling").complete_lifecycle_action`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").complete_lifecycle_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.complete_lifecycle_action)
 
-Boto3 documentation:
-[AutoScaling.Client.complete_lifecycle_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.complete_lifecycle_action)
+```python title="Method definition"
+def complete_lifecycle_action(
+    self,
+    *,
+    LifecycleHookName: str,
+    AutoScalingGroupName: str,
+    LifecycleActionResult: str,
+    LifecycleActionToken: str = ...,
+    InstanceId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CompleteLifecycleActionTypeRequestTypeDef](./type_defs.md#completelifecycleactiontyperequesttypedef).
 
-Keyword-only arguments:
 
-- `LifecycleHookName`: `str` *(required)*
-- `AutoScalingGroupName`: `str` *(required)*
-- `LifecycleActionResult`: `str` *(required)*
-- `LifecycleActionToken`: `str`
-- `InstanceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CompleteLifecycleActionTypeRequestTypeDef = {  # (1)
+    "LifecycleHookName": ...,
+    "AutoScalingGroupName": ...,
+    "LifecycleActionResult": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.complete_lifecycle_action(**kwargs)
+```
 
-<a id="create\_auto\_scaling\_group"></a>
+1. See [:material-code-braces: CompleteLifecycleActionTypeRequestTypeDef](./type_defs.md#completelifecycleactiontyperequesttypedef) 
 
-### create_auto_scaling_group
+### create\_auto\_scaling\_group
 
 **We strongly recommend using a launch template when calling this operation to
 ensure full functionality for Amazon EC2 Auto Scaling and Amazon EC2.** Creates
 an Auto Scaling group with the specified name and attributes.
 
-Type annotations for `boto3.client("autoscaling").create_auto_scaling_group`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").create_auto_scaling_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_auto_scaling_group)
 
-Boto3 documentation:
-[AutoScaling.Client.create_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_auto_scaling_group)
+```python title="Method definition"
+def create_auto_scaling_group(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    MinSize: int,
+    MaxSize: int,
+    LaunchConfigurationName: str = ...,
+    LaunchTemplate: LaunchTemplateSpecificationTypeDef = ...,  # (1)
+    MixedInstancesPolicy: MixedInstancesPolicyTypeDef = ...,  # (2)
+    InstanceId: str = ...,
+    DesiredCapacity: int = ...,
+    DefaultCooldown: int = ...,
+    AvailabilityZones: Sequence[str] = ...,
+    LoadBalancerNames: Sequence[str] = ...,
+    TargetGroupARNs: Sequence[str] = ...,
+    HealthCheckType: str = ...,
+    HealthCheckGracePeriod: int = ...,
+    PlacementGroup: str = ...,
+    VPCZoneIdentifier: str = ...,
+    TerminationPolicies: Sequence[str] = ...,
+    NewInstancesProtectedFromScaleIn: bool = ...,
+    CapacityRebalance: bool = ...,
+    LifecycleHookSpecificationList: Sequence[LifecycleHookSpecificationTypeDef] = ...,  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+    ServiceLinkedRoleARN: str = ...,
+    MaxInstanceLifetime: int = ...,
+    Context: str = ...,
+    DesiredCapacityType: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateAutoScalingGroupTypeRequestTypeDef](./type_defs.md#createautoscalinggrouptyperequesttypedef).
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
+3. See [:material-code-braces: LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `MinSize`: `int` *(required)*
-- `MaxSize`: `int` *(required)*
-- `LaunchConfigurationName`: `str`
-- `LaunchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
-- `MixedInstancesPolicy`:
-  [MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef)
-- `InstanceId`: `str`
-- `DesiredCapacity`: `int`
-- `DefaultCooldown`: `int`
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `LoadBalancerNames`: `Sequence`\[`str`\]
-- `TargetGroupARNs`: `Sequence`\[`str`\]
-- `HealthCheckType`: `str`
-- `HealthCheckGracePeriod`: `int`
-- `PlacementGroup`: `str`
-- `VPCZoneIdentifier`: `str`
-- `TerminationPolicies`: `Sequence`\[`str`\]
-- `NewInstancesProtectedFromScaleIn`: `bool`
-- `CapacityRebalance`: `bool`
-- `LifecycleHookSpecificationList`:
-  `Sequence`\[[LifecycleHookSpecificationTypeDef](./type_defs.md#lifecyclehookspecificationtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ServiceLinkedRoleARN`: `str`
-- `MaxInstanceLifetime`: `int`
-- `Context`: `str`
-- `DesiredCapacityType`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateAutoScalingGroupTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "MinSize": ...,
+    "MaxSize": ...,
+}
 
-<a id="create\_launch\_configuration"></a>
+parent.create_auto_scaling_group(**kwargs)
+```
 
-### create_launch_configuration
+1. See [:material-code-braces: CreateAutoScalingGroupTypeRequestTypeDef](./type_defs.md#createautoscalinggrouptyperequesttypedef) 
+
+### create\_launch\_configuration
 
 Creates a launch configuration.
 
-Type annotations for `boto3.client("autoscaling").create_launch_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").create_launch_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_launch_configuration)
 
-Boto3 documentation:
-[AutoScaling.Client.create_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_launch_configuration)
+```python title="Method definition"
+def create_launch_configuration(
+    self,
+    *,
+    LaunchConfigurationName: str,
+    ImageId: str = ...,
+    KeyName: str = ...,
+    SecurityGroups: Sequence[str] = ...,
+    ClassicLinkVPCId: str = ...,
+    ClassicLinkVPCSecurityGroups: Sequence[str] = ...,
+    UserData: str = ...,
+    InstanceId: str = ...,
+    InstanceType: str = ...,
+    KernelId: str = ...,
+    RamdiskId: str = ...,
+    BlockDeviceMappings: Sequence[BlockDeviceMappingTypeDef] = ...,  # (1)
+    InstanceMonitoring: InstanceMonitoringTypeDef = ...,  # (2)
+    SpotPrice: str = ...,
+    IamInstanceProfile: str = ...,
+    EbsOptimized: bool = ...,
+    AssociatePublicIpAddress: bool = ...,
+    PlacementTenancy: str = ...,
+    MetadataOptions: InstanceMetadataOptionsTypeDef = ...,  # (3)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateLaunchConfigurationTypeRequestTypeDef](./type_defs.md#createlaunchconfigurationtyperequesttypedef).
+1. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
+2. See [:material-code-braces: InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef) 
+3. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
 
-Keyword-only arguments:
 
-- `LaunchConfigurationName`: `str` *(required)*
-- `ImageId`: `str`
-- `KeyName`: `str`
-- `SecurityGroups`: `Sequence`\[`str`\]
-- `ClassicLinkVPCId`: `str`
-- `ClassicLinkVPCSecurityGroups`: `Sequence`\[`str`\]
-- `UserData`: `str`
-- `InstanceId`: `str`
-- `InstanceType`: `str`
-- `KernelId`: `str`
-- `RamdiskId`: `str`
-- `BlockDeviceMappings`:
-  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
-- `InstanceMonitoring`:
-  [InstanceMonitoringTypeDef](./type_defs.md#instancemonitoringtypedef)
-- `SpotPrice`: `str`
-- `IamInstanceProfile`: `str`
-- `EbsOptimized`: `bool`
-- `AssociatePublicIpAddress`: `bool`
-- `PlacementTenancy`: `str`
-- `MetadataOptions`:
-  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateLaunchConfigurationTypeRequestTypeDef = {  # (1)
+    "LaunchConfigurationName": ...,
+}
 
-<a id="create\_or\_update\_tags"></a>
+parent.create_launch_configuration(**kwargs)
+```
 
-### create_or_update_tags
+1. See [:material-code-braces: CreateLaunchConfigurationTypeRequestTypeDef](./type_defs.md#createlaunchconfigurationtyperequesttypedef) 
+
+### create\_or\_update\_tags
 
 Creates or updates tags for the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").create_or_update_tags`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").create_or_update_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_or_update_tags)
 
-Boto3 documentation:
-[AutoScaling.Client.create_or_update_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.create_or_update_tags)
+```python title="Method definition"
+def create_or_update_tags(
+    self,
+    *,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateOrUpdateTagsTypeRequestTypeDef](./type_defs.md#createorupdatetagstyperequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateOrUpdateTagsTypeRequestTypeDef = {  # (1)
+    "Tags": ...,
+}
 
-<a id="delete\_auto\_scaling\_group"></a>
+parent.create_or_update_tags(**kwargs)
+```
 
-### delete_auto_scaling_group
+1. See [:material-code-braces: CreateOrUpdateTagsTypeRequestTypeDef](./type_defs.md#createorupdatetagstyperequesttypedef) 
+
+### delete\_auto\_scaling\_group
 
 Deletes the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").delete_auto_scaling_group`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").delete_auto_scaling_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_auto_scaling_group)
 
-Boto3 documentation:
-[AutoScaling.Client.delete_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_auto_scaling_group)
+```python title="Method definition"
+def delete_auto_scaling_group(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ForceDelete: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAutoScalingGroupTypeRequestTypeDef](./type_defs.md#deleteautoscalinggrouptyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ForceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteAutoScalingGroupTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-<a id="delete\_launch\_configuration"></a>
+parent.delete_auto_scaling_group(**kwargs)
+```
 
-### delete_launch_configuration
+1. See [:material-code-braces: DeleteAutoScalingGroupTypeRequestTypeDef](./type_defs.md#deleteautoscalinggrouptyperequesttypedef) 
+
+### delete\_launch\_configuration
 
 Deletes the specified launch configuration.
 
-Type annotations for `boto3.client("autoscaling").delete_launch_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").delete_launch_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_launch_configuration)
 
-Boto3 documentation:
-[AutoScaling.Client.delete_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_launch_configuration)
+```python title="Method definition"
+def delete_launch_configuration(
+    self,
+    *,
+    LaunchConfigurationName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[LaunchConfigurationNameTypeRequestTypeDef](./type_defs.md#launchconfigurationnametyperequesttypedef).
 
-Keyword-only arguments:
 
-- `LaunchConfigurationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: LaunchConfigurationNameTypeRequestTypeDef = {  # (1)
+    "LaunchConfigurationName": ...,
+}
 
-<a id="delete\_lifecycle\_hook"></a>
+parent.delete_launch_configuration(**kwargs)
+```
 
-### delete_lifecycle_hook
+1. See [:material-code-braces: LaunchConfigurationNameTypeRequestTypeDef](./type_defs.md#launchconfigurationnametyperequesttypedef) 
+
+### delete\_lifecycle\_hook
 
 Deletes the specified lifecycle hook.
 
-Type annotations for `boto3.client("autoscaling").delete_lifecycle_hook`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").delete_lifecycle_hook` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_lifecycle_hook)
 
-Boto3 documentation:
-[AutoScaling.Client.delete_lifecycle_hook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_lifecycle_hook)
+```python title="Method definition"
+def delete_lifecycle_hook(
+    self,
+    *,
+    LifecycleHookName: str,
+    AutoScalingGroupName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLifecycleHookTypeRequestTypeDef](./type_defs.md#deletelifecyclehooktyperequesttypedef).
 
-Keyword-only arguments:
 
-- `LifecycleHookName`: `str` *(required)*
-- `AutoScalingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLifecycleHookTypeRequestTypeDef = {  # (1)
+    "LifecycleHookName": ...,
+    "AutoScalingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_lifecycle_hook(**kwargs)
+```
 
-<a id="delete\_notification\_configuration"></a>
+1. See [:material-code-braces: DeleteLifecycleHookTypeRequestTypeDef](./type_defs.md#deletelifecyclehooktyperequesttypedef) 
 
-### delete_notification_configuration
+### delete\_notification\_configuration
 
 Deletes the specified notification.
 
-Type annotations for
-`boto3.client("autoscaling").delete_notification_configuration` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").delete_notification_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_notification_configuration)
 
-Boto3 documentation:
-[AutoScaling.Client.delete_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_notification_configuration)
+```python title="Method definition"
+def delete_notification_configuration(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    TopicARN: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteNotificationConfigurationTypeRequestTypeDef](./type_defs.md#deletenotificationconfigurationtyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `TopicARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNotificationConfigurationTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "TopicARN": ...,
+}
 
-<a id="delete\_policy"></a>
+parent.delete_notification_configuration(**kwargs)
+```
 
-### delete_policy
+1. See [:material-code-braces: DeleteNotificationConfigurationTypeRequestTypeDef](./type_defs.md#deletenotificationconfigurationtyperequesttypedef) 
+
+### delete\_policy
 
 Deletes the specified scaling policy.
 
-Type annotations for `boto3.client("autoscaling").delete_policy` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").delete_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_policy)
 
-Boto3 documentation:
-[AutoScaling.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_policy)
+```python title="Method definition"
+def delete_policy(
+    self,
+    *,
+    PolicyName: str,
+    AutoScalingGroupName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePolicyTypeRequestTypeDef](./type_defs.md#deletepolicytyperequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyName`: `str` *(required)*
-- `AutoScalingGroupName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePolicyTypeRequestTypeDef = {  # (1)
+    "PolicyName": ...,
+}
 
-<a id="delete\_scheduled\_action"></a>
+parent.delete_policy(**kwargs)
+```
 
-### delete_scheduled_action
+1. See [:material-code-braces: DeletePolicyTypeRequestTypeDef](./type_defs.md#deletepolicytyperequesttypedef) 
+
+### delete\_scheduled\_action
 
 Deletes the specified scheduled action.
 
-Type annotations for `boto3.client("autoscaling").delete_scheduled_action`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").delete_scheduled_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_scheduled_action)
 
-Boto3 documentation:
-[AutoScaling.Client.delete_scheduled_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_scheduled_action)
+```python title="Method definition"
+def delete_scheduled_action(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ScheduledActionName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteScheduledActionTypeRequestTypeDef](./type_defs.md#deletescheduledactiontyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ScheduledActionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScheduledActionTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "ScheduledActionName": ...,
+}
 
-<a id="delete\_tags"></a>
+parent.delete_scheduled_action(**kwargs)
+```
 
-### delete_tags
+1. See [:material-code-braces: DeleteScheduledActionTypeRequestTypeDef](./type_defs.md#deletescheduledactiontyperequesttypedef) 
+
+### delete\_tags
 
 Deletes the specified tags.
 
-Type annotations for `boto3.client("autoscaling").delete_tags` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").delete_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_tags)
 
-Boto3 documentation:
-[AutoScaling.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_tags)
+```python title="Method definition"
+def delete_tags(
+    self,
+    *,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTagsTypeRequestTypeDef](./type_defs.md#deletetagstyperequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTagsTypeRequestTypeDef = {  # (1)
+    "Tags": ...,
+}
 
-<a id="delete\_warm\_pool"></a>
+parent.delete_tags(**kwargs)
+```
 
-### delete_warm_pool
+1. See [:material-code-braces: DeleteTagsTypeRequestTypeDef](./type_defs.md#deletetagstyperequesttypedef) 
+
+### delete\_warm\_pool
 
 Deletes the warm pool for the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").delete_warm_pool` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").delete_warm_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_warm_pool)
 
-Boto3 documentation:
-[AutoScaling.Client.delete_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.delete_warm_pool)
+```python title="Method definition"
+def delete_warm_pool(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ForceDelete: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWarmPoolTypeRequestTypeDef](./type_defs.md#deletewarmpooltyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ForceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteWarmPoolTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_warm_pool(**kwargs)
+```
 
-<a id="describe\_account\_limits"></a>
+1. See [:material-code-braces: DeleteWarmPoolTypeRequestTypeDef](./type_defs.md#deletewarmpooltyperequesttypedef) 
 
-### describe_account_limits
+### describe\_account\_limits
 
 Describes the current Amazon EC2 Auto Scaling resource quotas for your account.
 
-Type annotations for `boto3.client("autoscaling").describe_account_limits`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_account_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_account_limits)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_account_limits)
+```python title="Method definition"
+def describe_account_limits(
+    self,
+) -> DescribeAccountLimitsAnswerTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeAccountLimitsAnswerTypeDef](./type_defs.md#describeaccountlimitsanswertypedef).
+1. See [:material-code-braces: DescribeAccountLimitsAnswerTypeDef](./type_defs.md#describeaccountlimitsanswertypedef) 
 
-<a id="describe\_adjustment\_types"></a>
-
-### describe_adjustment_types
+### describe\_adjustment\_types
 
 Describes the available adjustment types for step scaling and simple scaling
 policies.
 
-Type annotations for `boto3.client("autoscaling").describe_adjustment_types`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_adjustment_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_adjustment_types)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_adjustment_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_adjustment_types)
+```python title="Method definition"
+def describe_adjustment_types(
+    self,
+) -> DescribeAdjustmentTypesAnswerTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeAdjustmentTypesAnswerTypeDef](./type_defs.md#describeadjustmenttypesanswertypedef).
+1. See [:material-code-braces: DescribeAdjustmentTypesAnswerTypeDef](./type_defs.md#describeadjustmenttypesanswertypedef) 
 
-<a id="describe\_auto\_scaling\_groups"></a>
-
-### describe_auto_scaling_groups
+### describe\_auto\_scaling\_groups
 
 Gets information about the Auto Scaling groups in the account and Region.
 
-Type annotations for `boto3.client("autoscaling").describe_auto_scaling_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_auto_scaling_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_groups)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_auto_scaling_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_groups)
+```python title="Method definition"
+def describe_auto_scaling_groups(
+    self,
+    *,
+    AutoScalingGroupNames: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> AutoScalingGroupsTypeTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AutoScalingGroupNamesTypeRequestTypeDef](./type_defs.md#autoscalinggroupnamestyperequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupNames`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxRecords`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: AutoScalingGroupNamesTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupNames": ...,
+}
 
-Returns
-[AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef).
+parent.describe_auto_scaling_groups(**kwargs)
+```
 
-<a id="describe\_auto\_scaling\_instances"></a>
+1. See [:material-code-braces: AutoScalingGroupNamesTypeRequestTypeDef](./type_defs.md#autoscalinggroupnamestyperequesttypedef) 
 
-### describe_auto_scaling_instances
+### describe\_auto\_scaling\_instances
 
 Gets information about the Auto Scaling instances in the account and Region.
 
-Type annotations for
-`boto3.client("autoscaling").describe_auto_scaling_instances` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_auto_scaling_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_instances)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_auto_scaling_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_instances)
+```python title="Method definition"
+def describe_auto_scaling_instances(
+    self,
+    *,
+    InstanceIds: Sequence[str] = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> AutoScalingInstancesTypeTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAutoScalingInstancesTypeRequestTypeDef](./type_defs.md#describeautoscalinginstancestyperequesttypedef).
+1. See [:material-code-braces: AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceIds`: `Sequence`\[`str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAutoScalingInstancesTypeRequestTypeDef = {  # (1)
+    "InstanceIds": ...,
+}
 
-Returns
-[AutoScalingInstancesTypeTypeDef](./type_defs.md#autoscalinginstancestypetypedef).
+parent.describe_auto_scaling_instances(**kwargs)
+```
 
-<a id="describe\_auto\_scaling\_notification\_types"></a>
+1. See [:material-code-braces: DescribeAutoScalingInstancesTypeRequestTypeDef](./type_defs.md#describeautoscalinginstancestyperequesttypedef) 
 
-### describe_auto_scaling_notification_types
+### describe\_auto\_scaling\_notification\_types
 
 Describes the notification types that are supported by Amazon EC2 Auto Scaling.
 
-Type annotations for
-`boto3.client("autoscaling").describe_auto_scaling_notification_types` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_auto_scaling_notification_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_notification_types)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_auto_scaling_notification_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_auto_scaling_notification_types)
+```python title="Method definition"
+def describe_auto_scaling_notification_types(
+    self,
+) -> DescribeAutoScalingNotificationTypesAnswerTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeAutoScalingNotificationTypesAnswerTypeDef](./type_defs.md#describeautoscalingnotificationtypesanswertypedef).
+1. See [:material-code-braces: DescribeAutoScalingNotificationTypesAnswerTypeDef](./type_defs.md#describeautoscalingnotificationtypesanswertypedef) 
 
-<a id="describe\_instance\_refreshes"></a>
-
-### describe_instance_refreshes
+### describe\_instance\_refreshes
 
 Gets information about the instance refreshes for the specified Auto Scaling
 group.
 
-Type annotations for `boto3.client("autoscaling").describe_instance_refreshes`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_instance_refreshes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_instance_refreshes)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_instance_refreshes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_instance_refreshes)
+```python title="Method definition"
+def describe_instance_refreshes(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    InstanceRefreshIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeInstanceRefreshesAnswerTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInstanceRefreshesTypeRequestTypeDef](./type_defs.md#describeinstancerefreshestyperequesttypedef).
+1. See [:material-code-braces: DescribeInstanceRefreshesAnswerTypeDef](./type_defs.md#describeinstancerefreshesanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `InstanceRefreshIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceRefreshesTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns
-[DescribeInstanceRefreshesAnswerTypeDef](./type_defs.md#describeinstancerefreshesanswertypedef).
+parent.describe_instance_refreshes(**kwargs)
+```
 
-<a id="describe\_launch\_configurations"></a>
+1. See [:material-code-braces: DescribeInstanceRefreshesTypeRequestTypeDef](./type_defs.md#describeinstancerefreshestyperequesttypedef) 
 
-### describe_launch_configurations
+### describe\_launch\_configurations
 
 Gets information about the launch configurations in the account and Region.
 
-Type annotations for
-`boto3.client("autoscaling").describe_launch_configurations` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_launch_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_launch_configurations)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_launch_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_launch_configurations)
+```python title="Method definition"
+def describe_launch_configurations(
+    self,
+    *,
+    LaunchConfigurationNames: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+) -> LaunchConfigurationsTypeTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[LaunchConfigurationNamesTypeRequestTypeDef](./type_defs.md#launchconfigurationnamestyperequesttypedef).
+1. See [:material-code-braces: LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef) 
 
-Keyword-only arguments:
 
-- `LaunchConfigurationNames`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: LaunchConfigurationNamesTypeRequestTypeDef = {  # (1)
+    "LaunchConfigurationNames": ...,
+}
 
-Returns
-[LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef).
+parent.describe_launch_configurations(**kwargs)
+```
 
-<a id="describe\_lifecycle\_hook\_types"></a>
+1. See [:material-code-braces: LaunchConfigurationNamesTypeRequestTypeDef](./type_defs.md#launchconfigurationnamestyperequesttypedef) 
 
-### describe_lifecycle_hook_types
+### describe\_lifecycle\_hook\_types
 
 Describes the available types of lifecycle hooks.
 
-Type annotations for
-`boto3.client("autoscaling").describe_lifecycle_hook_types` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_lifecycle_hook_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hook_types)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_lifecycle_hook_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hook_types)
+```python title="Method definition"
+def describe_lifecycle_hook_types(
+    self,
+) -> DescribeLifecycleHookTypesAnswerTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeLifecycleHookTypesAnswerTypeDef](./type_defs.md#describelifecyclehooktypesanswertypedef).
+1. See [:material-code-braces: DescribeLifecycleHookTypesAnswerTypeDef](./type_defs.md#describelifecyclehooktypesanswertypedef) 
 
-<a id="describe\_lifecycle\_hooks"></a>
+### describe\_lifecycle\_hooks
 
-### describe_lifecycle_hooks
+Gets information about the lifecycle hooks for the specified Auto Scaling group.
 
-Gets information about the lifecycle hooks for the specified Auto Scaling
-group.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_lifecycle_hooks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hooks)
 
-Type annotations for `boto3.client("autoscaling").describe_lifecycle_hooks`
-method.
+```python title="Method definition"
+def describe_lifecycle_hooks(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    LifecycleHookNames: Sequence[str] = ...,
+) -> DescribeLifecycleHooksAnswerTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[AutoScaling.Client.describe_lifecycle_hooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_lifecycle_hooks)
+1. See [:material-code-braces: DescribeLifecycleHooksAnswerTypeDef](./type_defs.md#describelifecyclehooksanswertypedef) 
 
-Arguments mapping described in
-[DescribeLifecycleHooksTypeRequestTypeDef](./type_defs.md#describelifecyclehookstyperequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: DescribeLifecycleHooksTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `LifecycleHookNames`: `Sequence`\[`str`\]
+parent.describe_lifecycle_hooks(**kwargs)
+```
 
-Returns
-[DescribeLifecycleHooksAnswerTypeDef](./type_defs.md#describelifecyclehooksanswertypedef).
+1. See [:material-code-braces: DescribeLifecycleHooksTypeRequestTypeDef](./type_defs.md#describelifecyclehookstyperequesttypedef) 
 
-<a id="describe\_load\_balancer\_target\_groups"></a>
-
-### describe_load_balancer_target_groups
+### describe\_load\_balancer\_target\_groups
 
 Gets information about the load balancer target groups for the specified Auto
 Scaling group.
 
-Type annotations for
-`boto3.client("autoscaling").describe_load_balancer_target_groups` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_load_balancer_target_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancer_target_groups)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancer_target_groups)
+```python title="Method definition"
+def describe_load_balancer_target_groups(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeLoadBalancerTargetGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLoadBalancerTargetGroupsRequestRequestTypeDef](./type_defs.md#describeloadbalancertargetgroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancerTargetGroupsRequestRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns
-[DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef).
+parent.describe_load_balancer_target_groups(**kwargs)
+```
 
-<a id="describe\_load\_balancers"></a>
+1. See [:material-code-braces: DescribeLoadBalancerTargetGroupsRequestRequestTypeDef](./type_defs.md#describeloadbalancertargetgroupsrequestrequesttypedef) 
 
-### describe_load_balancers
+### describe\_load\_balancers
 
 Gets information about the load balancers for the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").describe_load_balancers`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_load_balancers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancers)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_load_balancers)
+```python title="Method definition"
+def describe_load_balancers(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeLoadBalancersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLoadBalancersRequestRequestTypeDef](./type_defs.md#describeloadbalancersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancersRequestRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns
-[DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef).
+parent.describe_load_balancers(**kwargs)
+```
 
-<a id="describe\_metric\_collection\_types"></a>
+1. See [:material-code-braces: DescribeLoadBalancersRequestRequestTypeDef](./type_defs.md#describeloadbalancersrequestrequesttypedef) 
 
-### describe_metric_collection_types
+### describe\_metric\_collection\_types
 
 Describes the available CloudWatch metrics for Amazon EC2 Auto Scaling.
 
-Type annotations for
-`boto3.client("autoscaling").describe_metric_collection_types` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_metric_collection_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_metric_collection_types)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_metric_collection_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_metric_collection_types)
+```python title="Method definition"
+def describe_metric_collection_types(
+    self,
+) -> DescribeMetricCollectionTypesAnswerTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeMetricCollectionTypesAnswerTypeDef](./type_defs.md#describemetriccollectiontypesanswertypedef).
+1. See [:material-code-braces: DescribeMetricCollectionTypesAnswerTypeDef](./type_defs.md#describemetriccollectiontypesanswertypedef) 
 
-<a id="describe\_notification\_configurations"></a>
-
-### describe_notification_configurations
+### describe\_notification\_configurations
 
 Gets information about the Amazon SNS notifications that are configured for one
 or more Auto Scaling groups.
 
-Type annotations for
-`boto3.client("autoscaling").describe_notification_configurations` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_notification_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_notification_configurations)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_notification_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_notification_configurations)
+```python title="Method definition"
+def describe_notification_configurations(
+    self,
+    *,
+    AutoScalingGroupNames: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+) -> DescribeNotificationConfigurationsAnswerTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNotificationConfigurationsTypeRequestTypeDef](./type_defs.md#describenotificationconfigurationstyperequesttypedef).
+1. See [:material-code-braces: DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupNames`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeNotificationConfigurationsTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupNames": ...,
+}
 
-Returns
-[DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef).
+parent.describe_notification_configurations(**kwargs)
+```
 
-<a id="describe\_policies"></a>
+1. See [:material-code-braces: DescribeNotificationConfigurationsTypeRequestTypeDef](./type_defs.md#describenotificationconfigurationstyperequesttypedef) 
 
-### describe_policies
+### describe\_policies
 
 Gets information about the scaling policies in the account and Region.
 
-Type annotations for `boto3.client("autoscaling").describe_policies` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_policies)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_policies)
+```python title="Method definition"
+def describe_policies(
+    self,
+    *,
+    AutoScalingGroupName: str = ...,
+    PolicyNames: Sequence[str] = ...,
+    PolicyTypes: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+) -> PoliciesTypeTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePoliciesTypeRequestTypeDef](./type_defs.md#describepoliciestyperequesttypedef).
+1. See [:material-code-braces: PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str`
-- `PolicyNames`: `Sequence`\[`str`\]
-- `PolicyTypes`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribePoliciesTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns [PoliciesTypeTypeDef](./type_defs.md#policiestypetypedef).
+parent.describe_policies(**kwargs)
+```
 
-<a id="describe\_scaling\_activities"></a>
+1. See [:material-code-braces: DescribePoliciesTypeRequestTypeDef](./type_defs.md#describepoliciestyperequesttypedef) 
 
-### describe_scaling_activities
+### describe\_scaling\_activities
 
 Gets information about the scaling activities in the account and Region.
 
-Type annotations for `boto3.client("autoscaling").describe_scaling_activities`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_scaling_activities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_activities)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_scaling_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_activities)
+```python title="Method definition"
+def describe_scaling_activities(
+    self,
+    *,
+    ActivityIds: Sequence[str] = ...,
+    AutoScalingGroupName: str = ...,
+    IncludeDeletedGroups: bool = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> ActivitiesTypeTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScalingActivitiesTypeRequestTypeDef](./type_defs.md#describescalingactivitiestyperequesttypedef).
+1. See [:material-code-braces: ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef) 
 
-Keyword-only arguments:
 
-- `ActivityIds`: `Sequence`\[`str`\]
-- `AutoScalingGroupName`: `str`
-- `IncludeDeletedGroups`: `bool`
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingActivitiesTypeRequestTypeDef = {  # (1)
+    "ActivityIds": ...,
+}
 
-Returns [ActivitiesTypeTypeDef](./type_defs.md#activitiestypetypedef).
+parent.describe_scaling_activities(**kwargs)
+```
 
-<a id="describe\_scaling\_process\_types"></a>
+1. See [:material-code-braces: DescribeScalingActivitiesTypeRequestTypeDef](./type_defs.md#describescalingactivitiestyperequesttypedef) 
 
-### describe_scaling_process_types
+### describe\_scaling\_process\_types
 
-Describes the scaling process types for use with the ResumeProcesses and
+Describes the scaling process types for use with the  ResumeProcesses and
 SuspendProcesses APIs.
 
-Type annotations for
-`boto3.client("autoscaling").describe_scaling_process_types` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_scaling_process_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_process_types)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_scaling_process_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scaling_process_types)
+```python title="Method definition"
+def describe_scaling_process_types(
+    self,
+) -> ProcessesTypeTypeDef:  # (1)
+    ...
+```
 
-Returns [ProcessesTypeTypeDef](./type_defs.md#processestypetypedef).
+1. See [:material-code-braces: ProcessesTypeTypeDef](./type_defs.md#processestypetypedef) 
 
-<a id="describe\_scheduled\_actions"></a>
-
-### describe_scheduled_actions
+### describe\_scheduled\_actions
 
 Gets information about the scheduled actions that haven't run or that have not
 reached their end time.
 
-Type annotations for `boto3.client("autoscaling").describe_scheduled_actions`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_scheduled_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scheduled_actions)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_scheduled_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_scheduled_actions)
+```python title="Method definition"
+def describe_scheduled_actions(
+    self,
+    *,
+    AutoScalingGroupName: str = ...,
+    ScheduledActionNames: Sequence[str] = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+) -> ScheduledActionsTypeTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScheduledActionsTypeRequestTypeDef](./type_defs.md#describescheduledactionstyperequesttypedef).
+1. See [:material-code-braces: ScheduledActionsTypeTypeDef](./type_defs.md#scheduledactionstypetypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str`
-- `ScheduledActionNames`: `Sequence`\[`str`\]
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduledActionsTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns
-[ScheduledActionsTypeTypeDef](./type_defs.md#scheduledactionstypetypedef).
+parent.describe_scheduled_actions(**kwargs)
+```
 
-<a id="describe\_tags"></a>
+1. See [:material-code-braces: DescribeScheduledActionsTypeRequestTypeDef](./type_defs.md#describescheduledactionstyperequesttypedef) 
 
-### describe_tags
+### describe\_tags
 
 Describes the specified tags.
 
-Type annotations for `boto3.client("autoscaling").describe_tags` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_tags)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_tags)
+```python title="Method definition"
+def describe_tags(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxRecords: int = ...,
+) -> TagsTypeTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTagsTypeRequestTypeDef](./type_defs.md#describetagstyperequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: TagsTypeTypeDef](./type_defs.md#tagstypetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `NextToken`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeTagsTypeRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns [TagsTypeTypeDef](./type_defs.md#tagstypetypedef).
+parent.describe_tags(**kwargs)
+```
 
-<a id="describe\_termination\_policy\_types"></a>
+1. See [:material-code-braces: DescribeTagsTypeRequestTypeDef](./type_defs.md#describetagstyperequesttypedef) 
 
-### describe_termination_policy_types
+### describe\_termination\_policy\_types
 
 Describes the termination policies supported by Amazon EC2 Auto Scaling.
 
-Type annotations for
-`boto3.client("autoscaling").describe_termination_policy_types` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_termination_policy_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_termination_policy_types)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_termination_policy_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_termination_policy_types)
+```python title="Method definition"
+def describe_termination_policy_types(
+    self,
+) -> DescribeTerminationPolicyTypesAnswerTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeTerminationPolicyTypesAnswerTypeDef](./type_defs.md#describeterminationpolicytypesanswertypedef).
+1. See [:material-code-braces: DescribeTerminationPolicyTypesAnswerTypeDef](./type_defs.md#describeterminationpolicytypesanswertypedef) 
 
-<a id="describe\_warm\_pool"></a>
-
-### describe_warm_pool
+### describe\_warm\_pool
 
 Gets information about a warm pool and its instances.
 
-Type annotations for `boto3.client("autoscaling").describe_warm_pool` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").describe_warm_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_warm_pool)
 
-Boto3 documentation:
-[AutoScaling.Client.describe_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.describe_warm_pool)
+```python title="Method definition"
+def describe_warm_pool(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> DescribeWarmPoolAnswerTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWarmPoolTypeRequestTypeDef](./type_defs.md#describewarmpooltyperequesttypedef).
+1. See [:material-code-braces: DescribeWarmPoolAnswerTypeDef](./type_defs.md#describewarmpoolanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeWarmPoolTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns
-[DescribeWarmPoolAnswerTypeDef](./type_defs.md#describewarmpoolanswertypedef).
+parent.describe_warm_pool(**kwargs)
+```
 
-<a id="detach\_instances"></a>
+1. See [:material-code-braces: DescribeWarmPoolTypeRequestTypeDef](./type_defs.md#describewarmpooltyperequesttypedef) 
 
-### detach_instances
+### detach\_instances
 
 Removes one or more instances from the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").detach_instances` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").detach_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_instances)
 
-Boto3 documentation:
-[AutoScaling.Client.detach_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_instances)
+```python title="Method definition"
+def detach_instances(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ShouldDecrementDesiredCapacity: bool,
+    InstanceIds: Sequence[str] = ...,
+) -> DetachInstancesAnswerTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DetachInstancesQueryRequestTypeDef](./type_defs.md#detachinstancesqueryrequesttypedef).
+1. See [:material-code-braces: DetachInstancesAnswerTypeDef](./type_defs.md#detachinstancesanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ShouldDecrementDesiredCapacity`: `bool` *(required)*
-- `InstanceIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DetachInstancesQueryRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "ShouldDecrementDesiredCapacity": ...,
+}
 
-Returns
-[DetachInstancesAnswerTypeDef](./type_defs.md#detachinstancesanswertypedef).
+parent.detach_instances(**kwargs)
+```
 
-<a id="detach\_load\_balancer\_target\_groups"></a>
+1. See [:material-code-braces: DetachInstancesQueryRequestTypeDef](./type_defs.md#detachinstancesqueryrequesttypedef) 
 
-### detach_load_balancer_target_groups
+### detach\_load\_balancer\_target\_groups
 
 Detaches one or more target groups from the specified Auto Scaling group.
 
-Type annotations for
-`boto3.client("autoscaling").detach_load_balancer_target_groups` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").detach_load_balancer_target_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancer_target_groups)
 
-Boto3 documentation:
-[AutoScaling.Client.detach_load_balancer_target_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancer_target_groups)
+```python title="Method definition"
+def detach_load_balancer_target_groups(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    TargetGroupARNs: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DetachLoadBalancerTargetGroupsTypeRequestTypeDef](./type_defs.md#detachloadbalancertargetgroupstyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `TargetGroupARNs`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachLoadBalancerTargetGroupsTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "TargetGroupARNs": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.detach_load_balancer_target_groups(**kwargs)
+```
 
-<a id="detach\_load\_balancers"></a>
+1. See [:material-code-braces: DetachLoadBalancerTargetGroupsTypeRequestTypeDef](./type_defs.md#detachloadbalancertargetgroupstyperequesttypedef) 
 
-### detach_load_balancers
+### detach\_load\_balancers
 
 Detaches one or more Classic Load Balancers from the specified Auto Scaling
 group.
 
-Type annotations for `boto3.client("autoscaling").detach_load_balancers`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").detach_load_balancers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancers)
 
-Boto3 documentation:
-[AutoScaling.Client.detach_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.detach_load_balancers)
+```python title="Method definition"
+def detach_load_balancers(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    LoadBalancerNames: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DetachLoadBalancersTypeRequestTypeDef](./type_defs.md#detachloadbalancerstyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachLoadBalancersTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "LoadBalancerNames": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.detach_load_balancers(**kwargs)
+```
 
-<a id="disable\_metrics\_collection"></a>
+1. See [:material-code-braces: DetachLoadBalancersTypeRequestTypeDef](./type_defs.md#detachloadbalancerstyperequesttypedef) 
 
-### disable_metrics_collection
+### disable\_metrics\_collection
 
 Disables group metrics for the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").disable_metrics_collection`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").disable_metrics_collection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.disable_metrics_collection)
 
-Boto3 documentation:
-[AutoScaling.Client.disable_metrics_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.disable_metrics_collection)
+```python title="Method definition"
+def disable_metrics_collection(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    Metrics: Sequence[str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisableMetricsCollectionQueryRequestTypeDef](./type_defs.md#disablemetricscollectionqueryrequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `Metrics`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DisableMetricsCollectionQueryRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-<a id="enable\_metrics\_collection"></a>
+parent.disable_metrics_collection(**kwargs)
+```
 
-### enable_metrics_collection
+1. See [:material-code-braces: DisableMetricsCollectionQueryRequestTypeDef](./type_defs.md#disablemetricscollectionqueryrequesttypedef) 
+
+### enable\_metrics\_collection
 
 Enables group metrics for the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").enable_metrics_collection`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").enable_metrics_collection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enable_metrics_collection)
 
-Boto3 documentation:
-[AutoScaling.Client.enable_metrics_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enable_metrics_collection)
+```python title="Method definition"
+def enable_metrics_collection(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    Granularity: str,
+    Metrics: Sequence[str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[EnableMetricsCollectionQueryRequestTypeDef](./type_defs.md#enablemetricscollectionqueryrequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `Granularity`: `str` *(required)*
-- `Metrics`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: EnableMetricsCollectionQueryRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "Granularity": ...,
+}
 
-<a id="enter\_standby"></a>
+parent.enable_metrics_collection(**kwargs)
+```
 
-### enter_standby
+1. See [:material-code-braces: EnableMetricsCollectionQueryRequestTypeDef](./type_defs.md#enablemetricscollectionqueryrequesttypedef) 
+
+### enter\_standby
 
 Moves the specified instances into the standby state.
 
-Type annotations for `boto3.client("autoscaling").enter_standby` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").enter_standby` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enter_standby)
 
-Boto3 documentation:
-[AutoScaling.Client.enter_standby](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.enter_standby)
+```python title="Method definition"
+def enter_standby(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ShouldDecrementDesiredCapacity: bool,
+    InstanceIds: Sequence[str] = ...,
+) -> EnterStandbyAnswerTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EnterStandbyQueryRequestTypeDef](./type_defs.md#enterstandbyqueryrequesttypedef).
+1. See [:material-code-braces: EnterStandbyAnswerTypeDef](./type_defs.md#enterstandbyanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ShouldDecrementDesiredCapacity`: `bool` *(required)*
-- `InstanceIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: EnterStandbyQueryRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "ShouldDecrementDesiredCapacity": ...,
+}
 
-Returns [EnterStandbyAnswerTypeDef](./type_defs.md#enterstandbyanswertypedef).
+parent.enter_standby(**kwargs)
+```
 
-<a id="execute\_policy"></a>
+1. See [:material-code-braces: EnterStandbyQueryRequestTypeDef](./type_defs.md#enterstandbyqueryrequesttypedef) 
 
-### execute_policy
+### execute\_policy
 
 Executes the specified policy.
 
-Type annotations for `boto3.client("autoscaling").execute_policy` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").execute_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.execute_policy)
 
-Boto3 documentation:
-[AutoScaling.Client.execute_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.execute_policy)
+```python title="Method definition"
+def execute_policy(
+    self,
+    *,
+    PolicyName: str,
+    AutoScalingGroupName: str = ...,
+    HonorCooldown: bool = ...,
+    MetricValue: float = ...,
+    BreachThreshold: float = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ExecutePolicyTypeRequestTypeDef](./type_defs.md#executepolicytyperequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyName`: `str` *(required)*
-- `AutoScalingGroupName`: `str`
-- `HonorCooldown`: `bool`
-- `MetricValue`: `float`
-- `BreachThreshold`: `float`
+```python title="Usage example with kwargs"
+kwargs: ExecutePolicyTypeRequestTypeDef = {  # (1)
+    "PolicyName": ...,
+}
 
-<a id="exit\_standby"></a>
+parent.execute_policy(**kwargs)
+```
 
-### exit_standby
+1. See [:material-code-braces: ExecutePolicyTypeRequestTypeDef](./type_defs.md#executepolicytyperequesttypedef) 
+
+### exit\_standby
 
 Moves the specified instances out of the standby state.
 
-Type annotations for `boto3.client("autoscaling").exit_standby` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").exit_standby` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exit_standby)
 
-Boto3 documentation:
-[AutoScaling.Client.exit_standby](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.exit_standby)
+```python title="Method definition"
+def exit_standby(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    InstanceIds: Sequence[str] = ...,
+) -> ExitStandbyAnswerTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExitStandbyQueryRequestTypeDef](./type_defs.md#exitstandbyqueryrequesttypedef).
+1. See [:material-code-braces: ExitStandbyAnswerTypeDef](./type_defs.md#exitstandbyanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `InstanceIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ExitStandbyQueryRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns [ExitStandbyAnswerTypeDef](./type_defs.md#exitstandbyanswertypedef).
+parent.exit_standby(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExitStandbyQueryRequestTypeDef](./type_defs.md#exitstandbyqueryrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("autoscaling").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AutoScaling.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_predictive\_scaling\_forecast"></a>
-
-### get_predictive_scaling_forecast
+### get\_predictive\_scaling\_forecast
 
 Retrieves the forecast data for a predictive scaling policy.
 
-Type annotations for
-`boto3.client("autoscaling").get_predictive_scaling_forecast` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").get_predictive_scaling_forecast` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.get_predictive_scaling_forecast)
 
-Boto3 documentation:
-[AutoScaling.Client.get_predictive_scaling_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.get_predictive_scaling_forecast)
+```python title="Method definition"
+def get_predictive_scaling_forecast(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    PolicyName: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+) -> GetPredictiveScalingForecastAnswerTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPredictiveScalingForecastTypeRequestTypeDef](./type_defs.md#getpredictivescalingforecasttyperequesttypedef).
+1. See [:material-code-braces: GetPredictiveScalingForecastAnswerTypeDef](./type_defs.md#getpredictivescalingforecastanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPredictiveScalingForecastTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "PolicyName": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+}
 
-Returns
-[GetPredictiveScalingForecastAnswerTypeDef](./type_defs.md#getpredictivescalingforecastanswertypedef).
+parent.get_predictive_scaling_forecast(**kwargs)
+```
 
-<a id="put\_lifecycle\_hook"></a>
+1. See [:material-code-braces: GetPredictiveScalingForecastTypeRequestTypeDef](./type_defs.md#getpredictivescalingforecasttyperequesttypedef) 
 
-### put_lifecycle_hook
+### put\_lifecycle\_hook
 
 Creates or updates a lifecycle hook for the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").put_lifecycle_hook` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").put_lifecycle_hook` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_lifecycle_hook)
 
-Boto3 documentation:
-[AutoScaling.Client.put_lifecycle_hook](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_lifecycle_hook)
+```python title="Method definition"
+def put_lifecycle_hook(
+    self,
+    *,
+    LifecycleHookName: str,
+    AutoScalingGroupName: str,
+    LifecycleTransition: str = ...,
+    RoleARN: str = ...,
+    NotificationTargetARN: str = ...,
+    NotificationMetadata: str = ...,
+    HeartbeatTimeout: int = ...,
+    DefaultResult: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutLifecycleHookTypeRequestTypeDef](./type_defs.md#putlifecyclehooktyperequesttypedef).
 
-Keyword-only arguments:
 
-- `LifecycleHookName`: `str` *(required)*
-- `AutoScalingGroupName`: `str` *(required)*
-- `LifecycleTransition`: `str`
-- `RoleARN`: `str`
-- `NotificationTargetARN`: `str`
-- `NotificationMetadata`: `str`
-- `HeartbeatTimeout`: `int`
-- `DefaultResult`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutLifecycleHookTypeRequestTypeDef = {  # (1)
+    "LifecycleHookName": ...,
+    "AutoScalingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_lifecycle_hook(**kwargs)
+```
 
-<a id="put\_notification\_configuration"></a>
+1. See [:material-code-braces: PutLifecycleHookTypeRequestTypeDef](./type_defs.md#putlifecyclehooktyperequesttypedef) 
 
-### put_notification_configuration
+### put\_notification\_configuration
 
 Configures an Auto Scaling group to send notifications when specified events
 take place.
 
-Type annotations for
-`boto3.client("autoscaling").put_notification_configuration` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").put_notification_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_notification_configuration)
 
-Boto3 documentation:
-[AutoScaling.Client.put_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_notification_configuration)
+```python title="Method definition"
+def put_notification_configuration(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    TopicARN: str,
+    NotificationTypes: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutNotificationConfigurationTypeRequestTypeDef](./type_defs.md#putnotificationconfigurationtyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `TopicARN`: `str` *(required)*
-- `NotificationTypes`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutNotificationConfigurationTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "TopicARN": ...,
+    "NotificationTypes": ...,
+}
 
-<a id="put\_scaling\_policy"></a>
+parent.put_notification_configuration(**kwargs)
+```
 
-### put_scaling_policy
+1. See [:material-code-braces: PutNotificationConfigurationTypeRequestTypeDef](./type_defs.md#putnotificationconfigurationtyperequesttypedef) 
+
+### put\_scaling\_policy
 
 Creates or updates a scaling policy for an Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").put_scaling_policy` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").put_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scaling_policy)
 
-Boto3 documentation:
-[AutoScaling.Client.put_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scaling_policy)
+```python title="Method definition"
+def put_scaling_policy(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    PolicyName: str,
+    PolicyType: str = ...,
+    AdjustmentType: str = ...,
+    MinAdjustmentStep: int = ...,
+    MinAdjustmentMagnitude: int = ...,
+    ScalingAdjustment: int = ...,
+    Cooldown: int = ...,
+    MetricAggregationType: str = ...,
+    StepAdjustments: Sequence[StepAdjustmentTypeDef] = ...,  # (1)
+    EstimatedInstanceWarmup: int = ...,
+    TargetTrackingConfiguration: TargetTrackingConfigurationTypeDef = ...,  # (2)
+    Enabled: bool = ...,
+    PredictiveScalingConfiguration: PredictiveScalingConfigurationTypeDef = ...,  # (3)
+) -> PolicyARNTypeTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[PutScalingPolicyTypeRequestTypeDef](./type_defs.md#putscalingpolicytyperequesttypedef).
+1. See [:material-code-braces: StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef) 
+2. See [:material-code-braces: TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef) 
+3. See [:material-code-braces: PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef) 
+4. See [:material-code-braces: PolicyARNTypeTypeDef](./type_defs.md#policyarntypetypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `PolicyType`: `str`
-- `AdjustmentType`: `str`
-- `MinAdjustmentStep`: `int`
-- `MinAdjustmentMagnitude`: `int`
-- `ScalingAdjustment`: `int`
-- `Cooldown`: `int`
-- `MetricAggregationType`: `str`
-- `StepAdjustments`:
-  `Sequence`\[[StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef)\]
-- `EstimatedInstanceWarmup`: `int`
-- `TargetTrackingConfiguration`:
-  [TargetTrackingConfigurationTypeDef](./type_defs.md#targettrackingconfigurationtypedef)
-- `Enabled`: `bool`
-- `PredictiveScalingConfiguration`:
-  [PredictiveScalingConfigurationTypeDef](./type_defs.md#predictivescalingconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: PutScalingPolicyTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "PolicyName": ...,
+}
 
-Returns [PolicyARNTypeTypeDef](./type_defs.md#policyarntypetypedef).
+parent.put_scaling_policy(**kwargs)
+```
 
-<a id="put\_scheduled\_update\_group\_action"></a>
+1. See [:material-code-braces: PutScalingPolicyTypeRequestTypeDef](./type_defs.md#putscalingpolicytyperequesttypedef) 
 
-### put_scheduled_update_group_action
+### put\_scheduled\_update\_group\_action
 
 Creates or updates a scheduled scaling action for an Auto Scaling group.
 
-Type annotations for
-`boto3.client("autoscaling").put_scheduled_update_group_action` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").put_scheduled_update_group_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scheduled_update_group_action)
 
-Boto3 documentation:
-[AutoScaling.Client.put_scheduled_update_group_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_scheduled_update_group_action)
+```python title="Method definition"
+def put_scheduled_update_group_action(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ScheduledActionName: str,
+    Time: Union[datetime, str] = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Recurrence: str = ...,
+    MinSize: int = ...,
+    MaxSize: int = ...,
+    DesiredCapacity: int = ...,
+    TimeZone: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutScheduledUpdateGroupActionTypeRequestTypeDef](./type_defs.md#putscheduledupdategroupactiontyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ScheduledActionName`: `str` *(required)*
-- `Time`: `Union`\[`datetime`, `str`\]
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Recurrence`: `str`
-- `MinSize`: `int`
-- `MaxSize`: `int`
-- `DesiredCapacity`: `int`
-- `TimeZone`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutScheduledUpdateGroupActionTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "ScheduledActionName": ...,
+}
 
-<a id="put\_warm\_pool"></a>
+parent.put_scheduled_update_group_action(**kwargs)
+```
 
-### put_warm_pool
+1. See [:material-code-braces: PutScheduledUpdateGroupActionTypeRequestTypeDef](./type_defs.md#putscheduledupdategroupactiontyperequesttypedef) 
+
+### put\_warm\_pool
 
 Creates or updates a warm pool for the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").put_warm_pool` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").put_warm_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_warm_pool)
 
-Boto3 documentation:
-[AutoScaling.Client.put_warm_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.put_warm_pool)
+```python title="Method definition"
+def put_warm_pool(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    MaxGroupPreparedCapacity: int = ...,
+    MinSize: int = ...,
+    PoolState: WarmPoolStateType = ...,  # (1)
+    InstanceReusePolicy: InstanceReusePolicyTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutWarmPoolTypeRequestTypeDef](./type_defs.md#putwarmpooltyperequesttypedef).
+1. See [:material-code-brackets: WarmPoolStateType](./literals.md#warmpoolstatetype) 
+2. See [:material-code-braces: InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `MaxGroupPreparedCapacity`: `int`
-- `MinSize`: `int`
-- `PoolState`: [WarmPoolStateType](./literals.md#warmpoolstatetype)
-- `InstanceReusePolicy`:
-  [InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef)
+```python title="Usage example with kwargs"
+kwargs: PutWarmPoolTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_warm_pool(**kwargs)
+```
 
-<a id="record\_lifecycle\_action\_heartbeat"></a>
+1. See [:material-code-braces: PutWarmPoolTypeRequestTypeDef](./type_defs.md#putwarmpooltyperequesttypedef) 
 
-### record_lifecycle_action_heartbeat
+### record\_lifecycle\_action\_heartbeat
 
-Records a heartbeat for the lifecycle action associated with the specified
-token or instance.
+Records a heartbeat for the lifecycle action associated with the specified token
+or instance.
 
-Type annotations for
-`boto3.client("autoscaling").record_lifecycle_action_heartbeat` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").record_lifecycle_action_heartbeat` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.record_lifecycle_action_heartbeat)
 
-Boto3 documentation:
-[AutoScaling.Client.record_lifecycle_action_heartbeat](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.record_lifecycle_action_heartbeat)
+```python title="Method definition"
+def record_lifecycle_action_heartbeat(
+    self,
+    *,
+    LifecycleHookName: str,
+    AutoScalingGroupName: str,
+    LifecycleActionToken: str = ...,
+    InstanceId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RecordLifecycleActionHeartbeatTypeRequestTypeDef](./type_defs.md#recordlifecycleactionheartbeattyperequesttypedef).
 
-Keyword-only arguments:
 
-- `LifecycleHookName`: `str` *(required)*
-- `AutoScalingGroupName`: `str` *(required)*
-- `LifecycleActionToken`: `str`
-- `InstanceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: RecordLifecycleActionHeartbeatTypeRequestTypeDef = {  # (1)
+    "LifecycleHookName": ...,
+    "AutoScalingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.record_lifecycle_action_heartbeat(**kwargs)
+```
 
-<a id="resume\_processes"></a>
+1. See [:material-code-braces: RecordLifecycleActionHeartbeatTypeRequestTypeDef](./type_defs.md#recordlifecycleactionheartbeattyperequesttypedef) 
 
-### resume_processes
+### resume\_processes
 
 Resumes the specified suspended auto scaling processes, or all suspended
 process, for the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").resume_processes` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").resume_processes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.resume_processes)
 
-Boto3 documentation:
-[AutoScaling.Client.resume_processes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.resume_processes)
+```python title="Method definition"
+def resume_processes(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ScalingProcesses: Sequence[str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ScalingProcessQueryRequestTypeDef](./type_defs.md#scalingprocessqueryrequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ScalingProcesses`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ScalingProcessQueryRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-<a id="set\_desired\_capacity"></a>
+parent.resume_processes(**kwargs)
+```
 
-### set_desired_capacity
+1. See [:material-code-braces: ScalingProcessQueryRequestTypeDef](./type_defs.md#scalingprocessqueryrequesttypedef) 
+
+### set\_desired\_capacity
 
 Sets the size of the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").set_desired_capacity` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").set_desired_capacity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_desired_capacity)
 
-Boto3 documentation:
-[AutoScaling.Client.set_desired_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_desired_capacity)
+```python title="Method definition"
+def set_desired_capacity(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    DesiredCapacity: int,
+    HonorCooldown: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetDesiredCapacityTypeRequestTypeDef](./type_defs.md#setdesiredcapacitytyperequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `DesiredCapacity`: `int` *(required)*
-- `HonorCooldown`: `bool`
+```python title="Usage example with kwargs"
+kwargs: SetDesiredCapacityTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+    "DesiredCapacity": ...,
+}
 
-<a id="set\_instance\_health"></a>
+parent.set_desired_capacity(**kwargs)
+```
 
-### set_instance_health
+1. See [:material-code-braces: SetDesiredCapacityTypeRequestTypeDef](./type_defs.md#setdesiredcapacitytyperequesttypedef) 
+
+### set\_instance\_health
 
 Sets the health status of the specified instance.
 
-Type annotations for `boto3.client("autoscaling").set_instance_health` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").set_instance_health` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_health)
 
-Boto3 documentation:
-[AutoScaling.Client.set_instance_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_health)
+```python title="Method definition"
+def set_instance_health(
+    self,
+    *,
+    InstanceId: str,
+    HealthStatus: str,
+    ShouldRespectGracePeriod: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetInstanceHealthQueryRequestTypeDef](./type_defs.md#setinstancehealthqueryrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceId`: `str` *(required)*
-- `HealthStatus`: `str` *(required)*
-- `ShouldRespectGracePeriod`: `bool`
+```python title="Usage example with kwargs"
+kwargs: SetInstanceHealthQueryRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "HealthStatus": ...,
+}
 
-<a id="set\_instance\_protection"></a>
+parent.set_instance_health(**kwargs)
+```
 
-### set_instance_protection
+1. See [:material-code-braces: SetInstanceHealthQueryRequestTypeDef](./type_defs.md#setinstancehealthqueryrequesttypedef) 
+
+### set\_instance\_protection
 
 Updates the instance protection settings of the specified instances.
 
-Type annotations for `boto3.client("autoscaling").set_instance_protection`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").set_instance_protection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_protection)
 
-Boto3 documentation:
-[AutoScaling.Client.set_instance_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.set_instance_protection)
+```python title="Method definition"
+def set_instance_protection(
+    self,
+    *,
+    InstanceIds: Sequence[str],
+    AutoScalingGroupName: str,
+    ProtectedFromScaleIn: bool,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SetInstanceProtectionQueryRequestTypeDef](./type_defs.md#setinstanceprotectionqueryrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceIds`: `Sequence`\[`str`\] *(required)*
-- `AutoScalingGroupName`: `str` *(required)*
-- `ProtectedFromScaleIn`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetInstanceProtectionQueryRequestTypeDef = {  # (1)
+    "InstanceIds": ...,
+    "AutoScalingGroupName": ...,
+    "ProtectedFromScaleIn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.set_instance_protection(**kwargs)
+```
 
-<a id="start\_instance\_refresh"></a>
+1. See [:material-code-braces: SetInstanceProtectionQueryRequestTypeDef](./type_defs.md#setinstanceprotectionqueryrequesttypedef) 
 
-### start_instance_refresh
+### start\_instance\_refresh
 
 Starts a new instance refresh operation.
 
-Type annotations for `boto3.client("autoscaling").start_instance_refresh`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").start_instance_refresh` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.start_instance_refresh)
 
-Boto3 documentation:
-[AutoScaling.Client.start_instance_refresh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.start_instance_refresh)
+```python title="Method definition"
+def start_instance_refresh(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    Strategy: RefreshStrategyType = ...,  # (1)
+    DesiredConfiguration: DesiredConfigurationTypeDef = ...,  # (2)
+    Preferences: RefreshPreferencesTypeDef = ...,  # (3)
+) -> StartInstanceRefreshAnswerTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartInstanceRefreshTypeRequestTypeDef](./type_defs.md#startinstancerefreshtyperequesttypedef).
+1. See [:material-code-brackets: RefreshStrategyType](./literals.md#refreshstrategytype) 
+2. See [:material-code-braces: DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef) 
+3. See [:material-code-braces: RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef) 
+4. See [:material-code-braces: StartInstanceRefreshAnswerTypeDef](./type_defs.md#startinstancerefreshanswertypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `Strategy`: `Literal['Rolling']` (see
-  [RefreshStrategyType](./literals.md#refreshstrategytype))
-- `DesiredConfiguration`:
-  [DesiredConfigurationTypeDef](./type_defs.md#desiredconfigurationtypedef)
-- `Preferences`:
-  [RefreshPreferencesTypeDef](./type_defs.md#refreshpreferencestypedef)
+```python title="Usage example with kwargs"
+kwargs: StartInstanceRefreshTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-Returns
-[StartInstanceRefreshAnswerTypeDef](./type_defs.md#startinstancerefreshanswertypedef).
+parent.start_instance_refresh(**kwargs)
+```
 
-<a id="suspend\_processes"></a>
+1. See [:material-code-braces: StartInstanceRefreshTypeRequestTypeDef](./type_defs.md#startinstancerefreshtyperequesttypedef) 
 
-### suspend_processes
+### suspend\_processes
 
 Suspends the specified auto scaling processes, or all processes, for the
 specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").suspend_processes` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").suspend_processes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.suspend_processes)
 
-Boto3 documentation:
-[AutoScaling.Client.suspend_processes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.suspend_processes)
+```python title="Method definition"
+def suspend_processes(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    ScalingProcesses: Sequence[str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ScalingProcessQueryRequestTypeDef](./type_defs.md#scalingprocessqueryrequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `ScalingProcesses`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ScalingProcessQueryRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-<a id="terminate\_instance\_in\_auto\_scaling\_group"></a>
+parent.suspend_processes(**kwargs)
+```
 
-### terminate_instance_in_auto_scaling_group
+1. See [:material-code-braces: ScalingProcessQueryRequestTypeDef](./type_defs.md#scalingprocessqueryrequesttypedef) 
 
-Terminates the specified instance and optionally adjusts the desired group
-size.
+### terminate\_instance\_in\_auto\_scaling\_group
 
-Type annotations for
-`boto3.client("autoscaling").terminate_instance_in_auto_scaling_group` method.
+Terminates the specified instance and optionally adjusts the desired group size.
 
-Boto3 documentation:
-[AutoScaling.Client.terminate_instance_in_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.terminate_instance_in_auto_scaling_group)
+Type annotations and code completion for `#!python boto3.client("autoscaling").terminate_instance_in_auto_scaling_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.terminate_instance_in_auto_scaling_group)
 
-Arguments mapping described in
-[TerminateInstanceInAutoScalingGroupTypeRequestTypeDef](./type_defs.md#terminateinstanceinautoscalinggrouptyperequesttypedef).
+```python title="Method definition"
+def terminate_instance_in_auto_scaling_group(
+    self,
+    *,
+    InstanceId: str,
+    ShouldDecrementDesiredCapacity: bool,
+) -> ActivityTypeTypeDef:  # (1)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ActivityTypeTypeDef](./type_defs.md#activitytypetypedef) 
 
-- `InstanceId`: `str` *(required)*
-- `ShouldDecrementDesiredCapacity`: `bool` *(required)*
 
-Returns [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef).
+```python title="Usage example with kwargs"
+kwargs: TerminateInstanceInAutoScalingGroupTypeRequestTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ShouldDecrementDesiredCapacity": ...,
+}
 
-<a id="update\_auto\_scaling\_group"></a>
+parent.terminate_instance_in_auto_scaling_group(**kwargs)
+```
 
-### update_auto_scaling_group
+1. See [:material-code-braces: TerminateInstanceInAutoScalingGroupTypeRequestTypeDef](./type_defs.md#terminateinstanceinautoscalinggrouptyperequesttypedef) 
+
+### update\_auto\_scaling\_group
 
 **We strongly recommend that all Auto Scaling groups use launch templates to
 ensure full functionality for Amazon EC2 Auto Scaling and Amazon EC2.** Updates
 the configuration for the specified Auto Scaling group.
 
-Type annotations for `boto3.client("autoscaling").update_auto_scaling_group`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling").update_auto_scaling_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.update_auto_scaling_group)
 
-Boto3 documentation:
-[AutoScaling.Client.update_auto_scaling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client.update_auto_scaling_group)
+```python title="Method definition"
+def update_auto_scaling_group(
+    self,
+    *,
+    AutoScalingGroupName: str,
+    LaunchConfigurationName: str = ...,
+    LaunchTemplate: LaunchTemplateSpecificationTypeDef = ...,  # (1)
+    MixedInstancesPolicy: MixedInstancesPolicyTypeDef = ...,  # (2)
+    MinSize: int = ...,
+    MaxSize: int = ...,
+    DesiredCapacity: int = ...,
+    DefaultCooldown: int = ...,
+    AvailabilityZones: Sequence[str] = ...,
+    HealthCheckType: str = ...,
+    HealthCheckGracePeriod: int = ...,
+    PlacementGroup: str = ...,
+    VPCZoneIdentifier: str = ...,
+    TerminationPolicies: Sequence[str] = ...,
+    NewInstancesProtectedFromScaleIn: bool = ...,
+    ServiceLinkedRoleARN: str = ...,
+    MaxInstanceLifetime: int = ...,
+    CapacityRebalance: bool = ...,
+    Context: str = ...,
+    DesiredCapacityType: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAutoScalingGroupTypeRequestTypeDef](./type_defs.md#updateautoscalinggrouptyperequesttypedef).
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+2. See [:material-code-braces: MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingGroupName`: `str` *(required)*
-- `LaunchConfigurationName`: `str`
-- `LaunchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
-- `MixedInstancesPolicy`:
-  [MixedInstancesPolicyTypeDef](./type_defs.md#mixedinstancespolicytypedef)
-- `MinSize`: `int`
-- `MaxSize`: `int`
-- `DesiredCapacity`: `int`
-- `DefaultCooldown`: `int`
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `HealthCheckType`: `str`
-- `HealthCheckGracePeriod`: `int`
-- `PlacementGroup`: `str`
-- `VPCZoneIdentifier`: `str`
-- `TerminationPolicies`: `Sequence`\[`str`\]
-- `NewInstancesProtectedFromScaleIn`: `bool`
-- `ServiceLinkedRoleARN`: `str`
-- `MaxInstanceLifetime`: `int`
-- `CapacityRebalance`: `bool`
-- `Context`: `str`
-- `DesiredCapacityType`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAutoScalingGroupTypeRequestTypeDef = {  # (1)
+    "AutoScalingGroupName": ...,
+}
 
-<a id="get_paginator"></a>
+parent.update_auto_scaling_group(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAutoScalingGroupTypeRequestTypeDef](./type_defs.md#updateautoscalinggrouptyperequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("autoscaling").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("autoscaling").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_auto_scaling_groups")` ->
-  [DescribeAutoScalingGroupsPaginator](./paginators.md#describeautoscalinggroupspaginator)
-- `client.get_paginator("describe_auto_scaling_instances")` ->
-  [DescribeAutoScalingInstancesPaginator](./paginators.md#describeautoscalinginstancespaginator)
-- `client.get_paginator("describe_launch_configurations")` ->
-  [DescribeLaunchConfigurationsPaginator](./paginators.md#describelaunchconfigurationspaginator)
-- `client.get_paginator("describe_load_balancer_target_groups")` ->
-  [DescribeLoadBalancerTargetGroupsPaginator](./paginators.md#describeloadbalancertargetgroupspaginator)
-- `client.get_paginator("describe_load_balancers")` ->
-  [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
-- `client.get_paginator("describe_notification_configurations")` ->
-  [DescribeNotificationConfigurationsPaginator](./paginators.md#describenotificationconfigurationspaginator)
-- `client.get_paginator("describe_policies")` ->
-  [DescribePoliciesPaginator](./paginators.md#describepoliciespaginator)
-- `client.get_paginator("describe_scaling_activities")` ->
-  [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
-- `client.get_paginator("describe_scheduled_actions")` ->
-  [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
-- `client.get_paginator("describe_tags")` ->
-  [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+- `client.get_paginator("describe_auto_scaling_groups")` -> [DescribeAutoScalingGroupsPaginator](./paginators.md#describeautoscalinggroupspaginator)
+- `client.get_paginator("describe_auto_scaling_instances")` -> [DescribeAutoScalingInstancesPaginator](./paginators.md#describeautoscalinginstancespaginator)
+- `client.get_paginator("describe_launch_configurations")` -> [DescribeLaunchConfigurationsPaginator](./paginators.md#describelaunchconfigurationspaginator)
+- `client.get_paginator("describe_load_balancer_target_groups")` -> [DescribeLoadBalancerTargetGroupsPaginator](./paginators.md#describeloadbalancertargetgroupspaginator)
+- `client.get_paginator("describe_load_balancers")` -> [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
+- `client.get_paginator("describe_notification_configurations")` -> [DescribeNotificationConfigurationsPaginator](./paginators.md#describenotificationconfigurationspaginator)
+- `client.get_paginator("describe_policies")` -> [DescribePoliciesPaginator](./paginators.md#describepoliciespaginator)
+- `client.get_paginator("describe_scaling_activities")` -> [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
+- `client.get_paginator("describe_scheduled_actions")` -> [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
+- `client.get_paginator("describe_tags")` -> [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+
+
+

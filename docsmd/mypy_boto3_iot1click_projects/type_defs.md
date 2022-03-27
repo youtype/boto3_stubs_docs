@@ -1,492 +1,628 @@
-<a id="typed-dictionaries-for-boto3-iot1clickprojects-module"></a>
-
-# Typed dictionaries for boto3 IoT1ClickProjects module
+# Typed dictionaries
 
 > [Index](../README.md) > [IoT1ClickProjects](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
-type annotations stubs module
-[mypy-boto3-iot1click-projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IoT1ClickProjects module](#typed-dictionaries-for-boto3-iot1clickprojects-module)
-  - [AssociateDeviceWithPlacementRequestRequestTypeDef](#associatedevicewithplacementrequestrequesttypedef)
-  - [CreatePlacementRequestRequestTypeDef](#createplacementrequestrequesttypedef)
-  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
-  - [DeletePlacementRequestRequestTypeDef](#deleteplacementrequestrequesttypedef)
-  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
-  - [DescribePlacementRequestRequestTypeDef](#describeplacementrequestrequesttypedef)
-  - [DescribePlacementResponseTypeDef](#describeplacementresponsetypedef)
-  - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
-  - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
-  - [DeviceTemplateTypeDef](#devicetemplatetypedef)
-  - [DisassociateDeviceFromPlacementRequestRequestTypeDef](#disassociatedevicefromplacementrequestrequesttypedef)
-  - [GetDevicesInPlacementRequestRequestTypeDef](#getdevicesinplacementrequestrequesttypedef)
-  - [GetDevicesInPlacementResponseTypeDef](#getdevicesinplacementresponsetypedef)
-  - [ListPlacementsRequestRequestTypeDef](#listplacementsrequestrequesttypedef)
-  - [ListPlacementsResponseTypeDef](#listplacementsresponsetypedef)
-  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
-  - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PlacementDescriptionTypeDef](#placementdescriptiontypedef)
-  - [PlacementSummaryTypeDef](#placementsummarytypedef)
-  - [PlacementTemplateTypeDef](#placementtemplatetypedef)
-  - [ProjectDescriptionTypeDef](#projectdescriptiontypedef)
-  - [ProjectSummaryTypeDef](#projectsummarytypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdatePlacementRequestRequestTypeDef](#updateplacementrequestrequesttypedef)
-  - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
-
-<a id="associatedevicewithplacementrequestrequesttypedef"></a>
+    Auto-generated documentation for [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
+    type annotations stubs module [mypy-boto3-iot1click-projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 ## AssociateDeviceWithPlacementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import AssociateDeviceWithPlacementRequestRequestTypeDef
+
+def get_value() -> AssociateDeviceWithPlacementRequestRequestTypeDef:
+    return {
+        "projectName": ...,
+        "placementName": ...,
+        "deviceId": ...,
+        "deviceTemplateName": ...,
+    }
 ```
 
-Required fields:
-
-- `projectName`: `str`
-- `placementName`: `str`
-- `deviceId`: `str`
-- `deviceTemplateName`: `str`
-
-<a id="createplacementrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateDeviceWithPlacementRequestRequestTypeDef(TypedDict):
+    projectName: str,
+    placementName: str,
+    deviceId: str,
+    deviceTemplateName: str,
+```
 
 ## CreatePlacementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import CreatePlacementRequestRequestTypeDef
+
+def get_value() -> CreatePlacementRequestRequestTypeDef:
+    return {
+        "placementName": ...,
+        "projectName": ...,
+    }
 ```
 
-Required fields:
-
-- `placementName`: `str`
-- `projectName`: `str`
-
-Optional fields:
-
-- `attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="createprojectrequestrequesttypedef"></a>
+```python title="Definition"
+class CreatePlacementRequestRequestTypeDef(TypedDict):
+    placementName: str,
+    projectName: str,
+    attributes: NotRequired[Mapping[str, str]],
+```
 
 ## CreateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import CreateProjectRequestRequestTypeDef
+
+def get_value() -> CreateProjectRequestRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectRequestRequestTypeDef(TypedDict):
+    projectName: str,
+    description: NotRequired[str],
+    placementTemplate: NotRequired[PlacementTemplateTypeDef],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `projectName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `placementTemplate`:
-  [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="deleteplacementrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef) 
 ## DeletePlacementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import DeletePlacementRequestRequestTypeDef
+
+def get_value() -> DeletePlacementRequestRequestTypeDef:
+    return {
+        "placementName": ...,
+        "projectName": ...,
+    }
 ```
 
-Required fields:
-
-- `placementName`: `str`
-- `projectName`: `str`
-
-<a id="deleteprojectrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePlacementRequestRequestTypeDef(TypedDict):
+    placementName: str,
+    projectName: str,
+```
 
 ## DeleteProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import DeleteProjectRequestRequestTypeDef
+
+def get_value() -> DeleteProjectRequestRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
-
-- `projectName`: `str`
-
-<a id="describeplacementrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteProjectRequestRequestTypeDef(TypedDict):
+    projectName: str,
+```
 
 ## DescribePlacementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import DescribePlacementRequestRequestTypeDef
+
+def get_value() -> DescribePlacementRequestRequestTypeDef:
+    return {
+        "placementName": ...,
+        "projectName": ...,
+    }
 ```
 
-Required fields:
-
-- `placementName`: `str`
-- `projectName`: `str`
-
-<a id="describeplacementresponsetypedef"></a>
+```python title="Definition"
+class DescribePlacementRequestRequestTypeDef(TypedDict):
+    placementName: str,
+    projectName: str,
+```
 
 ## DescribePlacementResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import DescribePlacementResponseTypeDef
+
+def get_value() -> DescribePlacementResponseTypeDef:
+    return {
+        "placement": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePlacementResponseTypeDef(TypedDict):
+    placement: PlacementDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `placement`:
-  [PlacementDescriptionTypeDef](./type_defs.md#placementdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PlacementDescriptionTypeDef](./type_defs.md#placementdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import DescribeProjectRequestRequestTypeDef
+
+def get_value() -> DescribeProjectRequestRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
-
-- `projectName`: `str`
-
-<a id="describeprojectresponsetypedef"></a>
+```python title="Definition"
+class DescribeProjectRequestRequestTypeDef(TypedDict):
+    projectName: str,
+```
 
 ## DescribeProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import DescribeProjectResponseTypeDef
+
+def get_value() -> DescribeProjectResponseTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProjectResponseTypeDef(TypedDict):
+    project: ProjectDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`:
-  [ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="devicetemplatetypedef"></a>
-
+1. See [:material-code-braces: ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import DeviceTemplateTypeDef
+
+def get_value() -> DeviceTemplateTypeDef:
+    return {
+        "deviceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `deviceType`: `str`
-- `callbackOverrides`: `Mapping`\[`str`, `str`\]
-
-<a id="disassociatedevicefromplacementrequestrequesttypedef"></a>
+```python title="Definition"
+class DeviceTemplateTypeDef(TypedDict):
+    deviceType: NotRequired[str],
+    callbackOverrides: NotRequired[Mapping[str, str]],
+```
 
 ## DisassociateDeviceFromPlacementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import DisassociateDeviceFromPlacementRequestRequestTypeDef
+
+def get_value() -> DisassociateDeviceFromPlacementRequestRequestTypeDef:
+    return {
+        "projectName": ...,
+        "placementName": ...,
+        "deviceTemplateName": ...,
+    }
 ```
 
-Required fields:
-
-- `projectName`: `str`
-- `placementName`: `str`
-- `deviceTemplateName`: `str`
-
-<a id="getdevicesinplacementrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateDeviceFromPlacementRequestRequestTypeDef(TypedDict):
+    projectName: str,
+    placementName: str,
+    deviceTemplateName: str,
+```
 
 ## GetDevicesInPlacementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementRequestRequestTypeDef
+
+def get_value() -> GetDevicesInPlacementRequestRequestTypeDef:
+    return {
+        "projectName": ...,
+        "placementName": ...,
+    }
 ```
 
-Required fields:
-
-- `projectName`: `str`
-- `placementName`: `str`
-
-<a id="getdevicesinplacementresponsetypedef"></a>
+```python title="Definition"
+class GetDevicesInPlacementRequestRequestTypeDef(TypedDict):
+    projectName: str,
+    placementName: str,
+```
 
 ## GetDevicesInPlacementResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import GetDevicesInPlacementResponseTypeDef
+
+def get_value() -> GetDevicesInPlacementResponseTypeDef:
+    return {
+        "devices": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDevicesInPlacementResponseTypeDef(TypedDict):
+    devices: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `devices`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPlacementsRequestListPlacementsPaginateTypeDef
 
-<a id="listplacementsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iot1click_projects.type_defs import ListPlacementsRequestListPlacementsPaginateTypeDef
 
+def get_value() -> ListPlacementsRequestListPlacementsPaginateTypeDef:
+    return {
+        "projectName": ...,
+    }
+```
+
+```python title="Definition"
+class ListPlacementsRequestListPlacementsPaginateTypeDef(TypedDict):
+    projectName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPlacementsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import ListPlacementsRequestRequestTypeDef
+
+def get_value() -> ListPlacementsRequestRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
-
-- `projectName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listplacementsresponsetypedef"></a>
+```python title="Definition"
+class ListPlacementsRequestRequestTypeDef(TypedDict):
+    projectName: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListPlacementsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import ListPlacementsResponseTypeDef
+
+def get_value() -> ListPlacementsResponseTypeDef:
+    return {
+        "placements": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPlacementsResponseTypeDef(TypedDict):
+    placements: List[PlacementSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `placements`:
-  `List`\[[PlacementSummaryTypeDef](./type_defs.md#placementsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PlacementSummaryTypeDef](./type_defs.md#placementsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProjectsRequestListProjectsPaginateTypeDef
 
-<a id="listprojectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iot1click_projects.type_defs import ListProjectsRequestListProjectsPaginateTypeDef
 
+def get_value() -> ListProjectsRequestListProjectsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectsRequestListProjectsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import ListProjectsRequestRequestTypeDef
+
+def get_value() -> ListProjectsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listprojectsresponsetypedef"></a>
+```python title="Definition"
+class ListProjectsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListProjectsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import ListProjectsResponseTypeDef
+
+def get_value() -> ListProjectsResponseTypeDef:
+    return {
+        "projects": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProjectsResponseTypeDef(TypedDict):
+    projects: List[ProjectSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `projects`:
-  `List`\[[ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectSummaryTypeDef](./type_defs.md#projectsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="placementdescriptiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PlacementDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import PlacementDescriptionTypeDef
+
+def get_value() -> PlacementDescriptionTypeDef:
+    return {
+        "projectName": ...,
+        "placementName": ...,
+        "attributes": ...,
+        "createdDate": ...,
+        "updatedDate": ...,
+    }
 ```
 
-Required fields:
-
-- `projectName`: `str`
-- `placementName`: `str`
-- `attributes`: `Dict`\[`str`, `str`\]
-- `createdDate`: `datetime`
-- `updatedDate`: `datetime`
-
-<a id="placementsummarytypedef"></a>
+```python title="Definition"
+class PlacementDescriptionTypeDef(TypedDict):
+    projectName: str,
+    placementName: str,
+    attributes: Dict[str, str],
+    createdDate: datetime,
+    updatedDate: datetime,
+```
 
 ## PlacementSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import PlacementSummaryTypeDef
+
+def get_value() -> PlacementSummaryTypeDef:
+    return {
+        "projectName": ...,
+        "placementName": ...,
+        "createdDate": ...,
+        "updatedDate": ...,
+    }
 ```
 
-Required fields:
-
-- `projectName`: `str`
-- `placementName`: `str`
-- `createdDate`: `datetime`
-- `updatedDate`: `datetime`
-
-<a id="placementtemplatetypedef"></a>
+```python title="Definition"
+class PlacementSummaryTypeDef(TypedDict):
+    projectName: str,
+    placementName: str,
+    createdDate: datetime,
+    updatedDate: datetime,
+```
 
 ## PlacementTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import PlacementTemplateTypeDef
+
+def get_value() -> PlacementTemplateTypeDef:
+    return {
+        "defaultAttributes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PlacementTemplateTypeDef(TypedDict):
+    defaultAttributes: NotRequired[Mapping[str, str]],
+    deviceTemplates: NotRequired[Mapping[str, DeviceTemplateTypeDef]],  # (1)
+```
 
-- `defaultAttributes`: `Mapping`\[`str`, `str`\]
-- `deviceTemplates`: `Mapping`\[`str`,
-  [DeviceTemplateTypeDef](./type_defs.md#devicetemplatetypedef)\]
-
-<a id="projectdescriptiontypedef"></a>
-
+1. See [:material-code-braces: DeviceTemplateTypeDef](./type_defs.md#devicetemplatetypedef) 
 ## ProjectDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import ProjectDescriptionTypeDef
+
+def get_value() -> ProjectDescriptionTypeDef:
+    return {
+        "projectName": ...,
+        "createdDate": ...,
+        "updatedDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProjectDescriptionTypeDef(TypedDict):
+    projectName: str,
+    createdDate: datetime,
+    updatedDate: datetime,
+    arn: NotRequired[str],
+    description: NotRequired[str],
+    placementTemplate: NotRequired[PlacementTemplateTypeDef],  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `projectName`: `str`
-- `createdDate`: `datetime`
-- `updatedDate`: `datetime`
-
-Optional fields:
-
-- `arn`: `str`
-- `description`: `str`
-- `placementTemplate`:
-  [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="projectsummarytypedef"></a>
-
+1. See [:material-code-braces: PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef) 
 ## ProjectSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import ProjectSummaryTypeDef
+
+def get_value() -> ProjectSummaryTypeDef:
+    return {
+        "projectName": ...,
+        "createdDate": ...,
+        "updatedDate": ...,
+    }
 ```
 
-Required fields:
-
-- `projectName`: `str`
-- `createdDate`: `datetime`
-- `updatedDate`: `datetime`
-
-Optional fields:
-
-- `arn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ProjectSummaryTypeDef(TypedDict):
+    projectName: str,
+    createdDate: datetime,
+    updatedDate: datetime,
+    arn: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateplacementrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdatePlacementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import UpdatePlacementRequestRequestTypeDef
+
+def get_value() -> UpdatePlacementRequestRequestTypeDef:
+    return {
+        "placementName": ...,
+        "projectName": ...,
+    }
 ```
 
-Required fields:
-
-- `placementName`: `str`
-- `projectName`: `str`
-
-Optional fields:
-
-- `attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="updateprojectrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdatePlacementRequestRequestTypeDef(TypedDict):
+    placementName: str,
+    projectName: str,
+    attributes: NotRequired[Mapping[str, str]],
+```
 
 ## UpdateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_projects.type_defs import UpdateProjectRequestRequestTypeDef
+
+def get_value() -> UpdateProjectRequestRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectRequestRequestTypeDef(TypedDict):
+    projectName: str,
+    description: NotRequired[str],
+    placementTemplate: NotRequired[PlacementTemplateTypeDef],  # (1)
+```
 
-- `projectName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `placementTemplate`:
-  [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
+1. See [:material-code-braces: PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef) 

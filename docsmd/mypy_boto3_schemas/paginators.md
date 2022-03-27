@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-schemas-module"></a>
-
-# Paginators for boto3 Schemas module
+# Paginators
 
 > [Index](../README.md) > [Schemas](./README.md) > Paginators
 
-Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
-type annotations stubs module
-[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
+!!! note ""
 
-- [Paginators for boto3 Schemas module](#paginators-for-boto3-schemas-module)
-  - [ListDiscoverersPaginator](#listdiscovererspaginator)
-  - [ListRegistriesPaginator](#listregistriespaginator)
-  - [ListSchemaVersionsPaginator](#listschemaversionspaginator)
-  - [ListSchemasPaginator](#listschemaspaginator)
-  - [SearchSchemasPaginator](#searchschemaspaginator)
-
-<a id="listdiscovererspaginator"></a>
+    Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+    type annotations stubs module [mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 ## ListDiscoverersPaginator
 
-Type annotations for
-`boto3.client("schemas").get_paginator("list_discoverers")`.
+Type annotations and code completion for `#!python boto3.client("schemas").get_paginator("list_discoverers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListDiscoverers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_schemas.paginator import ListDiscoverersPaginator
@@ -34,29 +21,41 @@ def get_list_discoverers_paginator() -> ListDiscoverersPaginator:
     return Session().client("schemas").get_paginator("list_discoverers")
 ```
 
-Boto3 documentation:
-[Schemas.Paginator.ListDiscoverers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListDiscoverers)
 
-Arguments for `ListDiscoverersPaginator.paginate` method:
+### paginate
 
-- `DiscovererIdPrefix`: `str`
-- `SourceArnPrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDiscoverersPaginator.paginate` method.
 
-`ListDiscoverersPaginator.paginate` returns
-`_PageIterator`\[[ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DiscovererIdPrefix: str = ...,
+    SourceArnPrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDiscoverersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listregistriespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDiscoverersRequestListDiscoverersPaginateTypeDef = {  # (1)
+    "DiscovererIdPrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDiscoverersRequestListDiscoverersPaginateTypeDef](./type_defs.md#listdiscoverersrequestlistdiscovererspaginatetypedef) 
 ## ListRegistriesPaginator
 
-Type annotations for
-`boto3.client("schemas").get_paginator("list_registries")`.
+Type annotations and code completion for `#!python boto3.client("schemas").get_paginator("list_registries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListRegistries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_schemas.paginator import ListRegistriesPaginator
@@ -65,29 +64,41 @@ def get_list_registries_paginator() -> ListRegistriesPaginator:
     return Session().client("schemas").get_paginator("list_registries")
 ```
 
-Boto3 documentation:
-[Schemas.Paginator.ListRegistries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListRegistries)
 
-Arguments for `ListRegistriesPaginator.paginate` method:
+### paginate
 
-- `RegistryNamePrefix`: `str`
-- `Scope`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRegistriesPaginator.paginate` method.
 
-`ListRegistriesPaginator.paginate` returns
-`_PageIterator`\[[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RegistryNamePrefix: str = ...,
+    Scope: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRegistriesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listschemaversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRegistriesRequestListRegistriesPaginateTypeDef = {  # (1)
+    "RegistryNamePrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRegistriesRequestListRegistriesPaginateTypeDef](./type_defs.md#listregistriesrequestlistregistriespaginatetypedef) 
 ## ListSchemaVersionsPaginator
 
-Type annotations for
-`boto3.client("schemas").get_paginator("list_schema_versions")`.
+Type annotations and code completion for `#!python boto3.client("schemas").get_paginator("list_schema_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemaVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_schemas.paginator import ListSchemaVersionsPaginator
@@ -96,28 +107,42 @@ def get_list_schema_versions_paginator() -> ListSchemaVersionsPaginator:
     return Session().client("schemas").get_paginator("list_schema_versions")
 ```
 
-Boto3 documentation:
-[Schemas.Paginator.ListSchemaVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemaVersions)
 
-Arguments for `ListSchemaVersionsPaginator.paginate` method:
+### paginate
 
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSchemaVersionsPaginator.paginate` method.
 
-`ListSchemaVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RegistryName: str,
+    SchemaName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSchemaVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listschemaspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSchemaVersionsRequestListSchemaVersionsPaginateTypeDef = {  # (1)
+    "RegistryName": ...,
+    "SchemaName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSchemaVersionsRequestListSchemaVersionsPaginateTypeDef](./type_defs.md#listschemaversionsrequestlistschemaversionspaginatetypedef) 
 ## ListSchemasPaginator
 
-Type annotations for `boto3.client("schemas").get_paginator("list_schemas")`.
+Type annotations and code completion for `#!python boto3.client("schemas").get_paginator("list_schemas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemas)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_schemas.paginator import ListSchemasPaginator
@@ -126,28 +151,41 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return Session().client("schemas").get_paginator("list_schemas")
 ```
 
-Boto3 documentation:
-[Schemas.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.ListSchemas)
 
-Arguments for `ListSchemasPaginator.paginate` method:
+### paginate
 
-- `RegistryName`: `str` *(required)*
-- `SchemaNamePrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSchemasPaginator.paginate` method.
 
-`ListSchemasPaginator.paginate` returns
-`_PageIterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RegistryName: str,
+    SchemaNamePrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSchemasResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="searchschemaspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSchemasRequestListSchemasPaginateTypeDef = {  # (1)
+    "RegistryName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSchemasRequestListSchemasPaginateTypeDef](./type_defs.md#listschemasrequestlistschemaspaginatetypedef) 
 ## SearchSchemasPaginator
 
-Type annotations for `boto3.client("schemas").get_paginator("search_schemas")`.
+Type annotations and code completion for `#!python boto3.client("schemas").get_paginator("search_schemas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.SearchSchemas)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_schemas.paginator import SearchSchemasPaginator
@@ -156,15 +194,33 @@ def get_search_schemas_paginator() -> SearchSchemasPaginator:
     return Session().client("schemas").get_paginator("search_schemas")
 ```
 
-Boto3 documentation:
-[Schemas.Paginator.SearchSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Paginator.SearchSchemas)
 
-Arguments for `SearchSchemasPaginator.paginate` method:
+### paginate
 
-- `Keywords`: `str` *(required)*
-- `RegistryName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchSchemasPaginator.paginate` method.
 
-`SearchSchemasPaginator.paginate` returns
-`_PageIterator`\[[SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Keywords: str,
+    RegistryName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[SearchSchemasResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchSchemasRequestSearchSchemasPaginateTypeDef = {  # (1)
+    "Keywords": ...,
+    "RegistryName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchSchemasRequestSearchSchemasPaginateTypeDef](./type_defs.md#searchschemasrequestsearchschemaspaginatetypedef) 

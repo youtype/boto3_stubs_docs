@@ -1,4018 +1,4948 @@
-<a id="typed-dictionaries-for-boto3-cognitoidentityprovider-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 CognitoIdentityProvider module
+> [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [CognitoIdentityProvider](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
-type annotations stubs module
-[mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
-
-- [Typed dictionaries for boto3 CognitoIdentityProvider module](#typed-dictionaries-for-boto3-cognitoidentityprovider-module)
-  - [AccountRecoverySettingTypeTypeDef](#accountrecoverysettingtypetypedef)
-  - [AccountTakeoverActionTypeTypeDef](#accounttakeoveractiontypetypedef)
-  - [AccountTakeoverActionsTypeTypeDef](#accounttakeoveractionstypetypedef)
-  - [AccountTakeoverRiskConfigurationTypeTypeDef](#accounttakeoverriskconfigurationtypetypedef)
-  - [AddCustomAttributesRequestRequestTypeDef](#addcustomattributesrequestrequesttypedef)
-  - [AdminAddUserToGroupRequestRequestTypeDef](#adminaddusertogrouprequestrequesttypedef)
-  - [AdminConfirmSignUpRequestRequestTypeDef](#adminconfirmsignuprequestrequesttypedef)
-  - [AdminCreateUserConfigTypeTypeDef](#admincreateuserconfigtypetypedef)
-  - [AdminCreateUserRequestRequestTypeDef](#admincreateuserrequestrequesttypedef)
-  - [AdminCreateUserResponseTypeDef](#admincreateuserresponsetypedef)
-  - [AdminDeleteUserAttributesRequestRequestTypeDef](#admindeleteuserattributesrequestrequesttypedef)
-  - [AdminDeleteUserRequestRequestTypeDef](#admindeleteuserrequestrequesttypedef)
-  - [AdminDisableProviderForUserRequestRequestTypeDef](#admindisableproviderforuserrequestrequesttypedef)
-  - [AdminDisableUserRequestRequestTypeDef](#admindisableuserrequestrequesttypedef)
-  - [AdminEnableUserRequestRequestTypeDef](#adminenableuserrequestrequesttypedef)
-  - [AdminForgetDeviceRequestRequestTypeDef](#adminforgetdevicerequestrequesttypedef)
-  - [AdminGetDeviceRequestRequestTypeDef](#admingetdevicerequestrequesttypedef)
-  - [AdminGetDeviceResponseTypeDef](#admingetdeviceresponsetypedef)
-  - [AdminGetUserRequestRequestTypeDef](#admingetuserrequestrequesttypedef)
-  - [AdminGetUserResponseTypeDef](#admingetuserresponsetypedef)
-  - [AdminInitiateAuthRequestRequestTypeDef](#admininitiateauthrequestrequesttypedef)
-  - [AdminInitiateAuthResponseTypeDef](#admininitiateauthresponsetypedef)
-  - [AdminLinkProviderForUserRequestRequestTypeDef](#adminlinkproviderforuserrequestrequesttypedef)
-  - [AdminListDevicesRequestRequestTypeDef](#adminlistdevicesrequestrequesttypedef)
-  - [AdminListDevicesResponseTypeDef](#adminlistdevicesresponsetypedef)
-  - [AdminListGroupsForUserRequestRequestTypeDef](#adminlistgroupsforuserrequestrequesttypedef)
-  - [AdminListGroupsForUserResponseTypeDef](#adminlistgroupsforuserresponsetypedef)
-  - [AdminListUserAuthEventsRequestRequestTypeDef](#adminlistuserautheventsrequestrequesttypedef)
-  - [AdminListUserAuthEventsResponseTypeDef](#adminlistuserautheventsresponsetypedef)
-  - [AdminRemoveUserFromGroupRequestRequestTypeDef](#adminremoveuserfromgrouprequestrequesttypedef)
-  - [AdminResetUserPasswordRequestRequestTypeDef](#adminresetuserpasswordrequestrequesttypedef)
-  - [AdminRespondToAuthChallengeRequestRequestTypeDef](#adminrespondtoauthchallengerequestrequesttypedef)
-  - [AdminRespondToAuthChallengeResponseTypeDef](#adminrespondtoauthchallengeresponsetypedef)
-  - [AdminSetUserMFAPreferenceRequestRequestTypeDef](#adminsetusermfapreferencerequestrequesttypedef)
-  - [AdminSetUserPasswordRequestRequestTypeDef](#adminsetuserpasswordrequestrequesttypedef)
-  - [AdminSetUserSettingsRequestRequestTypeDef](#adminsetusersettingsrequestrequesttypedef)
-  - [AdminUpdateAuthEventFeedbackRequestRequestTypeDef](#adminupdateautheventfeedbackrequestrequesttypedef)
-  - [AdminUpdateDeviceStatusRequestRequestTypeDef](#adminupdatedevicestatusrequestrequesttypedef)
-  - [AdminUpdateUserAttributesRequestRequestTypeDef](#adminupdateuserattributesrequestrequesttypedef)
-  - [AdminUserGlobalSignOutRequestRequestTypeDef](#adminuserglobalsignoutrequestrequesttypedef)
-  - [AnalyticsConfigurationTypeTypeDef](#analyticsconfigurationtypetypedef)
-  - [AnalyticsMetadataTypeTypeDef](#analyticsmetadatatypetypedef)
-  - [AssociateSoftwareTokenRequestRequestTypeDef](#associatesoftwaretokenrequestrequesttypedef)
-  - [AssociateSoftwareTokenResponseTypeDef](#associatesoftwaretokenresponsetypedef)
-  - [AttributeTypeTypeDef](#attributetypetypedef)
-  - [AuthEventTypeTypeDef](#autheventtypetypedef)
-  - [AuthenticationResultTypeTypeDef](#authenticationresulttypetypedef)
-  - [ChallengeResponseTypeTypeDef](#challengeresponsetypetypedef)
-  - [ChangePasswordRequestRequestTypeDef](#changepasswordrequestrequesttypedef)
-  - [CodeDeliveryDetailsTypeTypeDef](#codedeliverydetailstypetypedef)
-  - [CompromisedCredentialsActionsTypeTypeDef](#compromisedcredentialsactionstypetypedef)
-  - [CompromisedCredentialsRiskConfigurationTypeTypeDef](#compromisedcredentialsriskconfigurationtypetypedef)
-  - [ConfirmDeviceRequestRequestTypeDef](#confirmdevicerequestrequesttypedef)
-  - [ConfirmDeviceResponseTypeDef](#confirmdeviceresponsetypedef)
-  - [ConfirmForgotPasswordRequestRequestTypeDef](#confirmforgotpasswordrequestrequesttypedef)
-  - [ConfirmSignUpRequestRequestTypeDef](#confirmsignuprequestrequesttypedef)
-  - [ContextDataTypeTypeDef](#contextdatatypetypedef)
-  - [CreateGroupRequestRequestTypeDef](#creategrouprequestrequesttypedef)
-  - [CreateGroupResponseTypeDef](#creategroupresponsetypedef)
-  - [CreateIdentityProviderRequestRequestTypeDef](#createidentityproviderrequestrequesttypedef)
-  - [CreateIdentityProviderResponseTypeDef](#createidentityproviderresponsetypedef)
-  - [CreateResourceServerRequestRequestTypeDef](#createresourceserverrequestrequesttypedef)
-  - [CreateResourceServerResponseTypeDef](#createresourceserverresponsetypedef)
-  - [CreateUserImportJobRequestRequestTypeDef](#createuserimportjobrequestrequesttypedef)
-  - [CreateUserImportJobResponseTypeDef](#createuserimportjobresponsetypedef)
-  - [CreateUserPoolClientRequestRequestTypeDef](#createuserpoolclientrequestrequesttypedef)
-  - [CreateUserPoolClientResponseTypeDef](#createuserpoolclientresponsetypedef)
-  - [CreateUserPoolDomainRequestRequestTypeDef](#createuserpooldomainrequestrequesttypedef)
-  - [CreateUserPoolDomainResponseTypeDef](#createuserpooldomainresponsetypedef)
-  - [CreateUserPoolRequestRequestTypeDef](#createuserpoolrequestrequesttypedef)
-  - [CreateUserPoolResponseTypeDef](#createuserpoolresponsetypedef)
-  - [CustomDomainConfigTypeTypeDef](#customdomainconfigtypetypedef)
-  - [CustomEmailLambdaVersionConfigTypeTypeDef](#customemaillambdaversionconfigtypetypedef)
-  - [CustomSMSLambdaVersionConfigTypeTypeDef](#customsmslambdaversionconfigtypetypedef)
-  - [DeleteGroupRequestRequestTypeDef](#deletegrouprequestrequesttypedef)
-  - [DeleteIdentityProviderRequestRequestTypeDef](#deleteidentityproviderrequestrequesttypedef)
-  - [DeleteResourceServerRequestRequestTypeDef](#deleteresourceserverrequestrequesttypedef)
-  - [DeleteUserAttributesRequestRequestTypeDef](#deleteuserattributesrequestrequesttypedef)
-  - [DeleteUserPoolClientRequestRequestTypeDef](#deleteuserpoolclientrequestrequesttypedef)
-  - [DeleteUserPoolDomainRequestRequestTypeDef](#deleteuserpooldomainrequestrequesttypedef)
-  - [DeleteUserPoolRequestRequestTypeDef](#deleteuserpoolrequestrequesttypedef)
-  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
-  - [DescribeIdentityProviderRequestRequestTypeDef](#describeidentityproviderrequestrequesttypedef)
-  - [DescribeIdentityProviderResponseTypeDef](#describeidentityproviderresponsetypedef)
-  - [DescribeResourceServerRequestRequestTypeDef](#describeresourceserverrequestrequesttypedef)
-  - [DescribeResourceServerResponseTypeDef](#describeresourceserverresponsetypedef)
-  - [DescribeRiskConfigurationRequestRequestTypeDef](#describeriskconfigurationrequestrequesttypedef)
-  - [DescribeRiskConfigurationResponseTypeDef](#describeriskconfigurationresponsetypedef)
-  - [DescribeUserImportJobRequestRequestTypeDef](#describeuserimportjobrequestrequesttypedef)
-  - [DescribeUserImportJobResponseTypeDef](#describeuserimportjobresponsetypedef)
-  - [DescribeUserPoolClientRequestRequestTypeDef](#describeuserpoolclientrequestrequesttypedef)
-  - [DescribeUserPoolClientResponseTypeDef](#describeuserpoolclientresponsetypedef)
-  - [DescribeUserPoolDomainRequestRequestTypeDef](#describeuserpooldomainrequestrequesttypedef)
-  - [DescribeUserPoolDomainResponseTypeDef](#describeuserpooldomainresponsetypedef)
-  - [DescribeUserPoolRequestRequestTypeDef](#describeuserpoolrequestrequesttypedef)
-  - [DescribeUserPoolResponseTypeDef](#describeuserpoolresponsetypedef)
-  - [DeviceConfigurationTypeTypeDef](#deviceconfigurationtypetypedef)
-  - [DeviceSecretVerifierConfigTypeTypeDef](#devicesecretverifierconfigtypetypedef)
-  - [DeviceTypeTypeDef](#devicetypetypedef)
-  - [DomainDescriptionTypeTypeDef](#domaindescriptiontypetypedef)
-  - [EmailConfigurationTypeTypeDef](#emailconfigurationtypetypedef)
-  - [EventContextDataTypeTypeDef](#eventcontextdatatypetypedef)
-  - [EventFeedbackTypeTypeDef](#eventfeedbacktypetypedef)
-  - [EventRiskTypeTypeDef](#eventrisktypetypedef)
-  - [ForgetDeviceRequestRequestTypeDef](#forgetdevicerequestrequesttypedef)
-  - [ForgotPasswordRequestRequestTypeDef](#forgotpasswordrequestrequesttypedef)
-  - [ForgotPasswordResponseTypeDef](#forgotpasswordresponsetypedef)
-  - [GetCSVHeaderRequestRequestTypeDef](#getcsvheaderrequestrequesttypedef)
-  - [GetCSVHeaderResponseTypeDef](#getcsvheaderresponsetypedef)
-  - [GetDeviceRequestRequestTypeDef](#getdevicerequestrequesttypedef)
-  - [GetDeviceResponseTypeDef](#getdeviceresponsetypedef)
-  - [GetGroupRequestRequestTypeDef](#getgrouprequestrequesttypedef)
-  - [GetGroupResponseTypeDef](#getgroupresponsetypedef)
-  - [GetIdentityProviderByIdentifierRequestRequestTypeDef](#getidentityproviderbyidentifierrequestrequesttypedef)
-  - [GetIdentityProviderByIdentifierResponseTypeDef](#getidentityproviderbyidentifierresponsetypedef)
-  - [GetSigningCertificateRequestRequestTypeDef](#getsigningcertificaterequestrequesttypedef)
-  - [GetSigningCertificateResponseTypeDef](#getsigningcertificateresponsetypedef)
-  - [GetUICustomizationRequestRequestTypeDef](#getuicustomizationrequestrequesttypedef)
-  - [GetUICustomizationResponseTypeDef](#getuicustomizationresponsetypedef)
-  - [GetUserAttributeVerificationCodeRequestRequestTypeDef](#getuserattributeverificationcoderequestrequesttypedef)
-  - [GetUserAttributeVerificationCodeResponseTypeDef](#getuserattributeverificationcoderesponsetypedef)
-  - [GetUserPoolMfaConfigRequestRequestTypeDef](#getuserpoolmfaconfigrequestrequesttypedef)
-  - [GetUserPoolMfaConfigResponseTypeDef](#getuserpoolmfaconfigresponsetypedef)
-  - [GetUserRequestRequestTypeDef](#getuserrequestrequesttypedef)
-  - [GetUserResponseTypeDef](#getuserresponsetypedef)
-  - [GlobalSignOutRequestRequestTypeDef](#globalsignoutrequestrequesttypedef)
-  - [GroupTypeTypeDef](#grouptypetypedef)
-  - [HttpHeaderTypeDef](#httpheadertypedef)
-  - [IdentityProviderTypeTypeDef](#identityprovidertypetypedef)
-  - [InitiateAuthRequestRequestTypeDef](#initiateauthrequestrequesttypedef)
-  - [InitiateAuthResponseTypeDef](#initiateauthresponsetypedef)
-  - [LambdaConfigTypeTypeDef](#lambdaconfigtypetypedef)
-  - [ListDevicesRequestRequestTypeDef](#listdevicesrequestrequesttypedef)
-  - [ListDevicesResponseTypeDef](#listdevicesresponsetypedef)
-  - [ListGroupsRequestRequestTypeDef](#listgroupsrequestrequesttypedef)
-  - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
-  - [ListIdentityProvidersRequestRequestTypeDef](#listidentityprovidersrequestrequesttypedef)
-  - [ListIdentityProvidersResponseTypeDef](#listidentityprovidersresponsetypedef)
-  - [ListResourceServersRequestRequestTypeDef](#listresourceserversrequestrequesttypedef)
-  - [ListResourceServersResponseTypeDef](#listresourceserversresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListUserImportJobsRequestRequestTypeDef](#listuserimportjobsrequestrequesttypedef)
-  - [ListUserImportJobsResponseTypeDef](#listuserimportjobsresponsetypedef)
-  - [ListUserPoolClientsRequestRequestTypeDef](#listuserpoolclientsrequestrequesttypedef)
-  - [ListUserPoolClientsResponseTypeDef](#listuserpoolclientsresponsetypedef)
-  - [ListUserPoolsRequestRequestTypeDef](#listuserpoolsrequestrequesttypedef)
-  - [ListUserPoolsResponseTypeDef](#listuserpoolsresponsetypedef)
-  - [ListUsersInGroupRequestRequestTypeDef](#listusersingrouprequestrequesttypedef)
-  - [ListUsersInGroupResponseTypeDef](#listusersingroupresponsetypedef)
-  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
-  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
-  - [MFAOptionTypeTypeDef](#mfaoptiontypetypedef)
-  - [MessageTemplateTypeTypeDef](#messagetemplatetypetypedef)
-  - [NewDeviceMetadataTypeTypeDef](#newdevicemetadatatypetypedef)
-  - [NotifyConfigurationTypeTypeDef](#notifyconfigurationtypetypedef)
-  - [NotifyEmailTypeTypeDef](#notifyemailtypetypedef)
-  - [NumberAttributeConstraintsTypeTypeDef](#numberattributeconstraintstypetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PasswordPolicyTypeTypeDef](#passwordpolicytypetypedef)
-  - [ProviderDescriptionTypeDef](#providerdescriptiontypedef)
-  - [ProviderUserIdentifierTypeTypeDef](#provideruseridentifiertypetypedef)
-  - [RecoveryOptionTypeTypeDef](#recoveryoptiontypetypedef)
-  - [ResendConfirmationCodeRequestRequestTypeDef](#resendconfirmationcoderequestrequesttypedef)
-  - [ResendConfirmationCodeResponseTypeDef](#resendconfirmationcoderesponsetypedef)
-  - [ResourceServerScopeTypeTypeDef](#resourceserverscopetypetypedef)
-  - [ResourceServerTypeTypeDef](#resourceservertypetypedef)
-  - [RespondToAuthChallengeRequestRequestTypeDef](#respondtoauthchallengerequestrequesttypedef)
-  - [RespondToAuthChallengeResponseTypeDef](#respondtoauthchallengeresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RevokeTokenRequestRequestTypeDef](#revoketokenrequestrequesttypedef)
-  - [RiskConfigurationTypeTypeDef](#riskconfigurationtypetypedef)
-  - [RiskExceptionConfigurationTypeTypeDef](#riskexceptionconfigurationtypetypedef)
-  - [SMSMfaSettingsTypeTypeDef](#smsmfasettingstypetypedef)
-  - [SchemaAttributeTypeTypeDef](#schemaattributetypetypedef)
-  - [SetRiskConfigurationRequestRequestTypeDef](#setriskconfigurationrequestrequesttypedef)
-  - [SetRiskConfigurationResponseTypeDef](#setriskconfigurationresponsetypedef)
-  - [SetUICustomizationRequestRequestTypeDef](#setuicustomizationrequestrequesttypedef)
-  - [SetUICustomizationResponseTypeDef](#setuicustomizationresponsetypedef)
-  - [SetUserMFAPreferenceRequestRequestTypeDef](#setusermfapreferencerequestrequesttypedef)
-  - [SetUserPoolMfaConfigRequestRequestTypeDef](#setuserpoolmfaconfigrequestrequesttypedef)
-  - [SetUserPoolMfaConfigResponseTypeDef](#setuserpoolmfaconfigresponsetypedef)
-  - [SetUserSettingsRequestRequestTypeDef](#setusersettingsrequestrequesttypedef)
-  - [SignUpRequestRequestTypeDef](#signuprequestrequesttypedef)
-  - [SignUpResponseTypeDef](#signupresponsetypedef)
-  - [SmsConfigurationTypeTypeDef](#smsconfigurationtypetypedef)
-  - [SmsMfaConfigTypeTypeDef](#smsmfaconfigtypetypedef)
-  - [SoftwareTokenMfaConfigTypeTypeDef](#softwaretokenmfaconfigtypetypedef)
-  - [SoftwareTokenMfaSettingsTypeTypeDef](#softwaretokenmfasettingstypetypedef)
-  - [StartUserImportJobRequestRequestTypeDef](#startuserimportjobrequestrequesttypedef)
-  - [StartUserImportJobResponseTypeDef](#startuserimportjobresponsetypedef)
-  - [StopUserImportJobRequestRequestTypeDef](#stopuserimportjobrequestrequesttypedef)
-  - [StopUserImportJobResponseTypeDef](#stopuserimportjobresponsetypedef)
-  - [StringAttributeConstraintsTypeTypeDef](#stringattributeconstraintstypetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TokenValidityUnitsTypeTypeDef](#tokenvalidityunitstypetypedef)
-  - [UICustomizationTypeTypeDef](#uicustomizationtypetypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAuthEventFeedbackRequestRequestTypeDef](#updateautheventfeedbackrequestrequesttypedef)
-  - [UpdateDeviceStatusRequestRequestTypeDef](#updatedevicestatusrequestrequesttypedef)
-  - [UpdateGroupRequestRequestTypeDef](#updategrouprequestrequesttypedef)
-  - [UpdateGroupResponseTypeDef](#updategroupresponsetypedef)
-  - [UpdateIdentityProviderRequestRequestTypeDef](#updateidentityproviderrequestrequesttypedef)
-  - [UpdateIdentityProviderResponseTypeDef](#updateidentityproviderresponsetypedef)
-  - [UpdateResourceServerRequestRequestTypeDef](#updateresourceserverrequestrequesttypedef)
-  - [UpdateResourceServerResponseTypeDef](#updateresourceserverresponsetypedef)
-  - [UpdateUserAttributesRequestRequestTypeDef](#updateuserattributesrequestrequesttypedef)
-  - [UpdateUserAttributesResponseTypeDef](#updateuserattributesresponsetypedef)
-  - [UpdateUserPoolClientRequestRequestTypeDef](#updateuserpoolclientrequestrequesttypedef)
-  - [UpdateUserPoolClientResponseTypeDef](#updateuserpoolclientresponsetypedef)
-  - [UpdateUserPoolDomainRequestRequestTypeDef](#updateuserpooldomainrequestrequesttypedef)
-  - [UpdateUserPoolDomainResponseTypeDef](#updateuserpooldomainresponsetypedef)
-  - [UpdateUserPoolRequestRequestTypeDef](#updateuserpoolrequestrequesttypedef)
-  - [UserContextDataTypeTypeDef](#usercontextdatatypetypedef)
-  - [UserImportJobTypeTypeDef](#userimportjobtypetypedef)
-  - [UserPoolAddOnsTypeTypeDef](#userpooladdonstypetypedef)
-  - [UserPoolClientDescriptionTypeDef](#userpoolclientdescriptiontypedef)
-  - [UserPoolClientTypeTypeDef](#userpoolclienttypetypedef)
-  - [UserPoolDescriptionTypeTypeDef](#userpooldescriptiontypetypedef)
-  - [UserPoolPolicyTypeTypeDef](#userpoolpolicytypetypedef)
-  - [UserPoolTypeTypeDef](#userpooltypetypedef)
-  - [UserTypeTypeDef](#usertypetypedef)
-  - [UsernameConfigurationTypeTypeDef](#usernameconfigurationtypetypedef)
-  - [VerificationMessageTemplateTypeTypeDef](#verificationmessagetemplatetypetypedef)
-  - [VerifySoftwareTokenRequestRequestTypeDef](#verifysoftwaretokenrequestrequesttypedef)
-  - [VerifySoftwareTokenResponseTypeDef](#verifysoftwaretokenresponsetypedef)
-  - [VerifyUserAttributeRequestRequestTypeDef](#verifyuserattributerequestrequesttypedef)
-
-<a id="accountrecoverysettingtypetypedef"></a>
+    Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+    type annotations stubs module [mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 ## AccountRecoverySettingTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AccountRecoverySettingTypeTypeDef
+
+def get_value() -> AccountRecoverySettingTypeTypeDef:
+    return {
+        "RecoveryMechanisms": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountRecoverySettingTypeTypeDef(TypedDict):
+    RecoveryMechanisms: NotRequired[Sequence[RecoveryOptionTypeTypeDef]],  # (1)
+```
 
-- `RecoveryMechanisms`:
-  `Sequence`\[[RecoveryOptionTypeTypeDef](./type_defs.md#recoveryoptiontypetypedef)\]
-
-<a id="accounttakeoveractiontypetypedef"></a>
-
+1. See [:material-code-braces: RecoveryOptionTypeTypeDef](./type_defs.md#recoveryoptiontypetypedef) 
 ## AccountTakeoverActionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AccountTakeoverActionTypeTypeDef
+
+def get_value() -> AccountTakeoverActionTypeTypeDef:
+    return {
+        "Notify": ...,
+        "EventAction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccountTakeoverActionTypeTypeDef(TypedDict):
+    Notify: bool,
+    EventAction: AccountTakeoverEventActionTypeType,  # (1)
+```
 
-- `Notify`: `bool`
-- `EventAction`:
-  [AccountTakeoverEventActionTypeType](./literals.md#accounttakeovereventactiontypetype)
-
-<a id="accounttakeoveractionstypetypedef"></a>
-
+1. See [:material-code-brackets: AccountTakeoverEventActionTypeType](./literals.md#accounttakeovereventactiontypetype) 
 ## AccountTakeoverActionsTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AccountTakeoverActionsTypeTypeDef
+
+def get_value() -> AccountTakeoverActionsTypeTypeDef:
+    return {
+        "LowAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountTakeoverActionsTypeTypeDef(TypedDict):
+    LowAction: NotRequired[AccountTakeoverActionTypeTypeDef],  # (1)
+    MediumAction: NotRequired[AccountTakeoverActionTypeTypeDef],  # (1)
+    HighAction: NotRequired[AccountTakeoverActionTypeTypeDef],  # (1)
+```
 
-- `LowAction`:
-  [AccountTakeoverActionTypeTypeDef](./type_defs.md#accounttakeoveractiontypetypedef)
-- `MediumAction`:
-  [AccountTakeoverActionTypeTypeDef](./type_defs.md#accounttakeoveractiontypetypedef)
-- `HighAction`:
-  [AccountTakeoverActionTypeTypeDef](./type_defs.md#accounttakeoveractiontypetypedef)
-
-<a id="accounttakeoverriskconfigurationtypetypedef"></a>
-
+1. See [:material-code-braces: AccountTakeoverActionTypeTypeDef](./type_defs.md#accounttakeoveractiontypetypedef) 
+2. See [:material-code-braces: AccountTakeoverActionTypeTypeDef](./type_defs.md#accounttakeoveractiontypetypedef) 
+3. See [:material-code-braces: AccountTakeoverActionTypeTypeDef](./type_defs.md#accounttakeoveractiontypetypedef) 
 ## AccountTakeoverRiskConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AccountTakeoverRiskConfigurationTypeTypeDef
+
+def get_value() -> AccountTakeoverRiskConfigurationTypeTypeDef:
+    return {
+        "Actions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccountTakeoverRiskConfigurationTypeTypeDef(TypedDict):
+    Actions: AccountTakeoverActionsTypeTypeDef,  # (2)
+    NotifyConfiguration: NotRequired[NotifyConfigurationTypeTypeDef],  # (1)
+```
 
-- `Actions`:
-  [AccountTakeoverActionsTypeTypeDef](./type_defs.md#accounttakeoveractionstypetypedef)
-
-Optional fields:
-
-- `NotifyConfiguration`:
-  [NotifyConfigurationTypeTypeDef](./type_defs.md#notifyconfigurationtypetypedef)
-
-<a id="addcustomattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotifyConfigurationTypeTypeDef](./type_defs.md#notifyconfigurationtypetypedef) 
+2. See [:material-code-braces: AccountTakeoverActionsTypeTypeDef](./type_defs.md#accounttakeoveractionstypetypedef) 
 ## AddCustomAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AddCustomAttributesRequestRequestTypeDef
+
+def get_value() -> AddCustomAttributesRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "CustomAttributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddCustomAttributesRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    CustomAttributes: Sequence[SchemaAttributeTypeTypeDef],  # (1)
+```
 
-- `UserPoolId`: `str`
-- `CustomAttributes`:
-  `Sequence`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
-
-<a id="adminaddusertogrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef) 
 ## AdminAddUserToGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminAddUserToGroupRequestRequestTypeDef
+
+def get_value() -> AdminAddUserToGroupRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `GroupName`: `str`
-
-<a id="adminconfirmsignuprequestrequesttypedef"></a>
+```python title="Definition"
+class AdminAddUserToGroupRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    GroupName: str,
+```
 
 ## AdminConfirmSignUpRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminConfirmSignUpRequestRequestTypeDef
+
+def get_value() -> AdminConfirmSignUpRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-Optional fields:
-
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="admincreateuserconfigtypetypedef"></a>
+```python title="Definition"
+class AdminConfirmSignUpRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
 ## AdminCreateUserConfigTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminCreateUserConfigTypeTypeDef
+
+def get_value() -> AdminCreateUserConfigTypeTypeDef:
+    return {
+        "AllowAdminCreateUserOnly": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AdminCreateUserConfigTypeTypeDef(TypedDict):
+    AllowAdminCreateUserOnly: NotRequired[bool],
+    UnusedAccountValidityDays: NotRequired[int],
+    InviteMessageTemplate: NotRequired[MessageTemplateTypeTypeDef],  # (1)
+```
 
-- `AllowAdminCreateUserOnly`: `bool`
-- `UnusedAccountValidityDays`: `int`
-- `InviteMessageTemplate`:
-  [MessageTemplateTypeTypeDef](./type_defs.md#messagetemplatetypetypedef)
-
-<a id="admincreateuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MessageTemplateTypeTypeDef](./type_defs.md#messagetemplatetypetypedef) 
 ## AdminCreateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminCreateUserRequestRequestTypeDef
+
+def get_value() -> AdminCreateUserRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminCreateUserRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    UserAttributes: NotRequired[Sequence[AttributeTypeTypeDef]],  # (1)
+    ValidationData: NotRequired[Sequence[AttributeTypeTypeDef]],  # (1)
+    TemporaryPassword: NotRequired[str],
+    ForceAliasCreation: NotRequired[bool],
+    MessageAction: NotRequired[MessageActionTypeType],  # (3)
+    DesiredDeliveryMediums: NotRequired[Sequence[DeliveryMediumTypeType]],  # (4)
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-Optional fields:
-
-- `UserAttributes`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `ValidationData`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `TemporaryPassword`: `str`
-- `ForceAliasCreation`: `bool`
-- `MessageAction`: [MessageActionTypeType](./literals.md#messageactiontypetype)
-- `DesiredDeliveryMediums`:
-  `Sequence`\[[DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)\]
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="admincreateuserresponsetypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+2. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+3. See [:material-code-brackets: MessageActionTypeType](./literals.md#messageactiontypetype) 
+4. See [:material-code-brackets: DeliveryMediumTypeType](./literals.md#deliverymediumtypetype) 
 ## AdminCreateUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminCreateUserResponseTypeDef
+
+def get_value() -> AdminCreateUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminCreateUserResponseTypeDef(TypedDict):
+    User: UserTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeTypeDef](./type_defs.md#usertypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="admindeleteuserattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserTypeTypeDef](./type_defs.md#usertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AdminDeleteUserAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminDeleteUserAttributesRequestRequestTypeDef
+
+def get_value() -> AdminDeleteUserAttributesRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "UserAttributeNames": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `UserAttributeNames`: `Sequence`\[`str`\]
-
-<a id="admindeleteuserrequestrequesttypedef"></a>
+```python title="Definition"
+class AdminDeleteUserAttributesRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    UserAttributeNames: Sequence[str],
+```
 
 ## AdminDeleteUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminDeleteUserRequestRequestTypeDef
+
+def get_value() -> AdminDeleteUserRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-<a id="admindisableproviderforuserrequestrequesttypedef"></a>
+```python title="Definition"
+class AdminDeleteUserRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+```
 
 ## AdminDisableProviderForUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminDisableProviderForUserRequestRequestTypeDef
+
+def get_value() -> AdminDisableProviderForUserRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "User": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminDisableProviderForUserRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    User: ProviderUserIdentifierTypeTypeDef,  # (1)
+```
 
-- `UserPoolId`: `str`
-- `User`:
-  [ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef)
-
-<a id="admindisableuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef) 
 ## AdminDisableUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminDisableUserRequestRequestTypeDef
+
+def get_value() -> AdminDisableUserRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-<a id="adminenableuserrequestrequesttypedef"></a>
+```python title="Definition"
+class AdminDisableUserRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+```
 
 ## AdminEnableUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminEnableUserRequestRequestTypeDef
+
+def get_value() -> AdminEnableUserRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-<a id="adminforgetdevicerequestrequesttypedef"></a>
+```python title="Definition"
+class AdminEnableUserRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+```
 
 ## AdminForgetDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminForgetDeviceRequestRequestTypeDef
+
+def get_value() -> AdminForgetDeviceRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "DeviceKey": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `DeviceKey`: `str`
-
-<a id="admingetdevicerequestrequesttypedef"></a>
+```python title="Definition"
+class AdminForgetDeviceRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    DeviceKey: str,
+```
 
 ## AdminGetDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminGetDeviceRequestRequestTypeDef
+
+def get_value() -> AdminGetDeviceRequestRequestTypeDef:
+    return {
+        "DeviceKey": ...,
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceKey`: `str`
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-<a id="admingetdeviceresponsetypedef"></a>
+```python title="Definition"
+class AdminGetDeviceRequestRequestTypeDef(TypedDict):
+    DeviceKey: str,
+    UserPoolId: str,
+    Username: str,
+```
 
 ## AdminGetDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminGetDeviceResponseTypeDef
+
+def get_value() -> AdminGetDeviceResponseTypeDef:
+    return {
+        "Device": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminGetDeviceResponseTypeDef(TypedDict):
+    Device: DeviceTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Device`: [DeviceTypeTypeDef](./type_defs.md#devicetypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="admingetuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceTypeTypeDef](./type_defs.md#devicetypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AdminGetUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminGetUserRequestRequestTypeDef
+
+def get_value() -> AdminGetUserRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-<a id="admingetuserresponsetypedef"></a>
+```python title="Definition"
+class AdminGetUserRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+```
 
 ## AdminGetUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminGetUserResponseTypeDef
+
+def get_value() -> AdminGetUserResponseTypeDef:
+    return {
+        "Username": ...,
+        "UserAttributes": ...,
+        "UserCreateDate": ...,
+        "UserLastModifiedDate": ...,
+        "Enabled": ...,
+        "UserStatus": ...,
+        "MFAOptions": ...,
+        "PreferredMfaSetting": ...,
+        "UserMFASettingList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminGetUserResponseTypeDef(TypedDict):
+    Username: str,
+    UserAttributes: List[AttributeTypeTypeDef],  # (1)
+    UserCreateDate: datetime,
+    UserLastModifiedDate: datetime,
+    Enabled: bool,
+    UserStatus: UserStatusTypeType,  # (2)
+    MFAOptions: List[MFAOptionTypeTypeDef],  # (3)
+    PreferredMfaSetting: str,
+    UserMFASettingList: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Username`: `str`
-- `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `UserCreateDate`: `datetime`
-- `UserLastModifiedDate`: `datetime`
-- `Enabled`: `bool`
-- `UserStatus`: [UserStatusTypeType](./literals.md#userstatustypetype)
-- `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
-- `PreferredMfaSetting`: `str`
-- `UserMFASettingList`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="admininitiateauthrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+2. See [:material-code-brackets: UserStatusTypeType](./literals.md#userstatustypetype) 
+3. See [:material-code-braces: MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AdminInitiateAuthRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminInitiateAuthRequestRequestTypeDef
+
+def get_value() -> AdminInitiateAuthRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ClientId": ...,
+        "AuthFlow": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminInitiateAuthRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientId: str,
+    AuthFlow: AuthFlowTypeType,  # (1)
+    AuthParameters: NotRequired[Mapping[str, str]],
+    ClientMetadata: NotRequired[Mapping[str, str]],
+    AnalyticsMetadata: NotRequired[AnalyticsMetadataTypeTypeDef],  # (2)
+    ContextData: NotRequired[ContextDataTypeTypeDef],  # (3)
+```
 
-- `UserPoolId`: `str`
-- `ClientId`: `str`
-- `AuthFlow`: [AuthFlowTypeType](./literals.md#authflowtypetype)
-
-Optional fields:
-
-- `AuthParameters`: `Mapping`\[`str`, `str`\]
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ContextData`:
-  [ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef)
-
-<a id="admininitiateauthresponsetypedef"></a>
-
+1. See [:material-code-brackets: AuthFlowTypeType](./literals.md#authflowtypetype) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef) 
 ## AdminInitiateAuthResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminInitiateAuthResponseTypeDef
+
+def get_value() -> AdminInitiateAuthResponseTypeDef:
+    return {
+        "ChallengeName": ...,
+        "Session": ...,
+        "ChallengeParameters": ...,
+        "AuthenticationResult": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminInitiateAuthResponseTypeDef(TypedDict):
+    ChallengeName: ChallengeNameTypeType,  # (1)
+    Session: str,
+    ChallengeParameters: Dict[str, str],
+    AuthenticationResult: AuthenticationResultTypeTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
-- `Session`: `str`
-- `ChallengeParameters`: `Dict`\[`str`, `str`\]
-- `AuthenticationResult`:
-  [AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="adminlinkproviderforuserrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChallengeNameTypeType](./literals.md#challengenametypetype) 
+2. See [:material-code-braces: AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AdminLinkProviderForUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminLinkProviderForUserRequestRequestTypeDef
+
+def get_value() -> AdminLinkProviderForUserRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "DestinationUser": ...,
+        "SourceUser": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminLinkProviderForUserRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    DestinationUser: ProviderUserIdentifierTypeTypeDef,  # (1)
+    SourceUser: ProviderUserIdentifierTypeTypeDef,  # (1)
+```
 
-- `UserPoolId`: `str`
-- `DestinationUser`:
-  [ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef)
-- `SourceUser`:
-  [ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef)
-
-<a id="adminlistdevicesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef) 
+2. See [:material-code-braces: ProviderUserIdentifierTypeTypeDef](./type_defs.md#provideruseridentifiertypetypedef) 
 ## AdminListDevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminListDevicesRequestRequestTypeDef
+
+def get_value() -> AdminListDevicesRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `PaginationToken`: `str`
-
-<a id="adminlistdevicesresponsetypedef"></a>
+```python title="Definition"
+class AdminListDevicesRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    Limit: NotRequired[int],
+    PaginationToken: NotRequired[str],
+```
 
 ## AdminListDevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminListDevicesResponseTypeDef
+
+def get_value() -> AdminListDevicesResponseTypeDef:
+    return {
+        "Devices": ...,
+        "PaginationToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminListDevicesResponseTypeDef(TypedDict):
+    Devices: List[DeviceTypeTypeDef],  # (1)
+    PaginationToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Devices`: `List`\[[DeviceTypeTypeDef](./type_defs.md#devicetypetypedef)\]
-- `PaginationToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeviceTypeTypeDef](./type_defs.md#devicetypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AdminListGroupsForUserRequestAdminListGroupsForUserPaginateTypeDef
 
-<a id="adminlistgroupsforuserrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import AdminListGroupsForUserRequestAdminListGroupsForUserPaginateTypeDef
 
+def get_value() -> AdminListGroupsForUserRequestAdminListGroupsForUserPaginateTypeDef:
+    return {
+        "Username": ...,
+        "UserPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class AdminListGroupsForUserRequestAdminListGroupsForUserPaginateTypeDef(TypedDict):
+    Username: str,
+    UserPoolId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## AdminListGroupsForUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminListGroupsForUserRequestRequestTypeDef
+
+def get_value() -> AdminListGroupsForUserRequestRequestTypeDef:
+    return {
+        "Username": ...,
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `Username`: `str`
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="adminlistgroupsforuserresponsetypedef"></a>
+```python title="Definition"
+class AdminListGroupsForUserRequestRequestTypeDef(TypedDict):
+    Username: str,
+    UserPoolId: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## AdminListGroupsForUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminListGroupsForUserResponseTypeDef
+
+def get_value() -> AdminListGroupsForUserResponseTypeDef:
+    return {
+        "Groups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminListGroupsForUserResponseTypeDef(TypedDict):
+    Groups: List[GroupTypeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Groups`: `List`\[[GroupTypeTypeDef](./type_defs.md#grouptypetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GroupTypeTypeDef](./type_defs.md#grouptypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## AdminListUserAuthEventsRequestAdminListUserAuthEventsPaginateTypeDef
 
-<a id="adminlistuserautheventsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import AdminListUserAuthEventsRequestAdminListUserAuthEventsPaginateTypeDef
 
+def get_value() -> AdminListUserAuthEventsRequestAdminListUserAuthEventsPaginateTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
+```
+
+```python title="Definition"
+class AdminListUserAuthEventsRequestAdminListUserAuthEventsPaginateTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## AdminListUserAuthEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminListUserAuthEventsRequestRequestTypeDef
+
+def get_value() -> AdminListUserAuthEventsRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="adminlistuserautheventsresponsetypedef"></a>
+```python title="Definition"
+class AdminListUserAuthEventsRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## AdminListUserAuthEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminListUserAuthEventsResponseTypeDef
+
+def get_value() -> AdminListUserAuthEventsResponseTypeDef:
+    return {
+        "AuthEvents": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminListUserAuthEventsResponseTypeDef(TypedDict):
+    AuthEvents: List[AuthEventTypeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AuthEvents`:
-  `List`\[[AuthEventTypeTypeDef](./type_defs.md#autheventtypetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="adminremoveuserfromgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AuthEventTypeTypeDef](./type_defs.md#autheventtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AdminRemoveUserFromGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminRemoveUserFromGroupRequestRequestTypeDef
+
+def get_value() -> AdminRemoveUserFromGroupRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `GroupName`: `str`
-
-<a id="adminresetuserpasswordrequestrequesttypedef"></a>
+```python title="Definition"
+class AdminRemoveUserFromGroupRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    GroupName: str,
+```
 
 ## AdminResetUserPasswordRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminResetUserPasswordRequestRequestTypeDef
+
+def get_value() -> AdminResetUserPasswordRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-Optional fields:
-
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="adminrespondtoauthchallengerequestrequesttypedef"></a>
+```python title="Definition"
+class AdminResetUserPasswordRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
 ## AdminRespondToAuthChallengeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminRespondToAuthChallengeRequestRequestTypeDef
+
+def get_value() -> AdminRespondToAuthChallengeRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ClientId": ...,
+        "ChallengeName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminRespondToAuthChallengeRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientId: str,
+    ChallengeName: ChallengeNameTypeType,  # (1)
+    ChallengeResponses: NotRequired[Mapping[str, str]],
+    Session: NotRequired[str],
+    AnalyticsMetadata: NotRequired[AnalyticsMetadataTypeTypeDef],  # (2)
+    ContextData: NotRequired[ContextDataTypeTypeDef],  # (3)
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `UserPoolId`: `str`
-- `ClientId`: `str`
-- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
-
-Optional fields:
-
-- `ChallengeResponses`: `Mapping`\[`str`, `str`\]
-- `Session`: `str`
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ContextData`:
-  [ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="adminrespondtoauthchallengeresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChallengeNameTypeType](./literals.md#challengenametypetype) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: ContextDataTypeTypeDef](./type_defs.md#contextdatatypetypedef) 
 ## AdminRespondToAuthChallengeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminRespondToAuthChallengeResponseTypeDef
+
+def get_value() -> AdminRespondToAuthChallengeResponseTypeDef:
+    return {
+        "ChallengeName": ...,
+        "Session": ...,
+        "ChallengeParameters": ...,
+        "AuthenticationResult": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminRespondToAuthChallengeResponseTypeDef(TypedDict):
+    ChallengeName: ChallengeNameTypeType,  # (1)
+    Session: str,
+    ChallengeParameters: Dict[str, str],
+    AuthenticationResult: AuthenticationResultTypeTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
-- `Session`: `str`
-- `ChallengeParameters`: `Dict`\[`str`, `str`\]
-- `AuthenticationResult`:
-  [AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="adminsetusermfapreferencerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChallengeNameTypeType](./literals.md#challengenametypetype) 
+2. See [:material-code-braces: AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AdminSetUserMFAPreferenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminSetUserMFAPreferenceRequestRequestTypeDef
+
+def get_value() -> AdminSetUserMFAPreferenceRequestRequestTypeDef:
+    return {
+        "Username": ...,
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminSetUserMFAPreferenceRequestRequestTypeDef(TypedDict):
+    Username: str,
+    UserPoolId: str,
+    SMSMfaSettings: NotRequired[SMSMfaSettingsTypeTypeDef],  # (1)
+    SoftwareTokenMfaSettings: NotRequired[SoftwareTokenMfaSettingsTypeTypeDef],  # (2)
+```
 
-- `Username`: `str`
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `SMSMfaSettings`:
-  [SMSMfaSettingsTypeTypeDef](./type_defs.md#smsmfasettingstypetypedef)
-- `SoftwareTokenMfaSettings`:
-  [SoftwareTokenMfaSettingsTypeTypeDef](./type_defs.md#softwaretokenmfasettingstypetypedef)
-
-<a id="adminsetuserpasswordrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SMSMfaSettingsTypeTypeDef](./type_defs.md#smsmfasettingstypetypedef) 
+2. See [:material-code-braces: SoftwareTokenMfaSettingsTypeTypeDef](./type_defs.md#softwaretokenmfasettingstypetypedef) 
 ## AdminSetUserPasswordRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminSetUserPasswordRequestRequestTypeDef
+
+def get_value() -> AdminSetUserPasswordRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `Password`: `str`
-
-Optional fields:
-
-- `Permanent`: `bool`
-
-<a id="adminsetusersettingsrequestrequesttypedef"></a>
+```python title="Definition"
+class AdminSetUserPasswordRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    Password: str,
+    Permanent: NotRequired[bool],
+```
 
 ## AdminSetUserSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminSetUserSettingsRequestRequestTypeDef
+
+def get_value() -> AdminSetUserSettingsRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "MFAOptions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminSetUserSettingsRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    MFAOptions: Sequence[MFAOptionTypeTypeDef],  # (1)
+```
 
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `MFAOptions`:
-  `Sequence`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
-
-<a id="adminupdateautheventfeedbackrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef) 
 ## AdminUpdateAuthEventFeedbackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminUpdateAuthEventFeedbackRequestRequestTypeDef
+
+def get_value() -> AdminUpdateAuthEventFeedbackRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "EventId": ...,
+        "FeedbackValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminUpdateAuthEventFeedbackRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    EventId: str,
+    FeedbackValue: FeedbackValueTypeType,  # (1)
+```
 
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `EventId`: `str`
-- `FeedbackValue`: [FeedbackValueTypeType](./literals.md#feedbackvaluetypetype)
-
-<a id="adminupdatedevicestatusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FeedbackValueTypeType](./literals.md#feedbackvaluetypetype) 
 ## AdminUpdateDeviceStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminUpdateDeviceStatusRequestRequestTypeDef
+
+def get_value() -> AdminUpdateDeviceStatusRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "DeviceKey": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminUpdateDeviceStatusRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    DeviceKey: str,
+    DeviceRememberedStatus: NotRequired[DeviceRememberedStatusTypeType],  # (1)
+```
 
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `DeviceKey`: `str`
-
-Optional fields:
-
-- `DeviceRememberedStatus`:
-  [DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype)
-
-<a id="adminupdateuserattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype) 
 ## AdminUpdateUserAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminUpdateUserAttributesRequestRequestTypeDef
+
+def get_value() -> AdminUpdateUserAttributesRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "UserAttributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdminUpdateUserAttributesRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    UserAttributes: Sequence[AttributeTypeTypeDef],  # (1)
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `UserAttributes`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-
-Optional fields:
-
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="adminuserglobalsignoutrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
 ## AdminUserGlobalSignOutRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AdminUserGlobalSignOutRequestRequestTypeDef
+
+def get_value() -> AdminUserGlobalSignOutRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Username`: `str`
-
-<a id="analyticsconfigurationtypetypedef"></a>
+```python title="Definition"
+class AdminUserGlobalSignOutRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+```
 
 ## AnalyticsConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AnalyticsConfigurationTypeTypeDef
+
+def get_value() -> AnalyticsConfigurationTypeTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApplicationId`: `str`
-- `ApplicationArn`: `str`
-- `RoleArn`: `str`
-- `ExternalId`: `str`
-- `UserDataShared`: `bool`
-
-<a id="analyticsmetadatatypetypedef"></a>
+```python title="Definition"
+class AnalyticsConfigurationTypeTypeDef(TypedDict):
+    ApplicationId: NotRequired[str],
+    ApplicationArn: NotRequired[str],
+    RoleArn: NotRequired[str],
+    ExternalId: NotRequired[str],
+    UserDataShared: NotRequired[bool],
+```
 
 ## AnalyticsMetadataTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AnalyticsMetadataTypeTypeDef
+
+def get_value() -> AnalyticsMetadataTypeTypeDef:
+    return {
+        "AnalyticsEndpointId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AnalyticsEndpointId`: `str`
-
-<a id="associatesoftwaretokenrequestrequesttypedef"></a>
+```python title="Definition"
+class AnalyticsMetadataTypeTypeDef(TypedDict):
+    AnalyticsEndpointId: NotRequired[str],
+```
 
 ## AssociateSoftwareTokenRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AssociateSoftwareTokenRequestRequestTypeDef
+
+def get_value() -> AssociateSoftwareTokenRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccessToken`: `str`
-- `Session`: `str`
-
-<a id="associatesoftwaretokenresponsetypedef"></a>
+```python title="Definition"
+class AssociateSoftwareTokenRequestRequestTypeDef(TypedDict):
+    AccessToken: NotRequired[str],
+    Session: NotRequired[str],
+```
 
 ## AssociateSoftwareTokenResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AssociateSoftwareTokenResponseTypeDef
+
+def get_value() -> AssociateSoftwareTokenResponseTypeDef:
+    return {
+        "SecretCode": ...,
+        "Session": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateSoftwareTokenResponseTypeDef(TypedDict):
+    SecretCode: str,
+    Session: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SecretCode`: `str`
-- `Session`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="attributetypetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AttributeTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AttributeTypeTypeDef
+
+def get_value() -> AttributeTypeTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Value`: `str`
-
-<a id="autheventtypetypedef"></a>
+```python title="Definition"
+class AttributeTypeTypeDef(TypedDict):
+    Name: str,
+    Value: NotRequired[str],
+```
 
 ## AuthEventTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AuthEventTypeTypeDef
+
+def get_value() -> AuthEventTypeTypeDef:
+    return {
+        "EventId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AuthEventTypeTypeDef(TypedDict):
+    EventId: NotRequired[str],
+    EventType: NotRequired[EventTypeType],  # (1)
+    CreationDate: NotRequired[datetime],
+    EventResponse: NotRequired[EventResponseTypeType],  # (2)
+    EventRisk: NotRequired[EventRiskTypeTypeDef],  # (3)
+    ChallengeResponses: NotRequired[List[ChallengeResponseTypeTypeDef]],  # (4)
+    EventContextData: NotRequired[EventContextDataTypeTypeDef],  # (5)
+    EventFeedback: NotRequired[EventFeedbackTypeTypeDef],  # (6)
+```
 
-- `EventId`: `str`
-- `EventType`: [EventTypeType](./literals.md#eventtypetype)
-- `CreationDate`: `datetime`
-- `EventResponse`: [EventResponseTypeType](./literals.md#eventresponsetypetype)
-- `EventRisk`: [EventRiskTypeTypeDef](./type_defs.md#eventrisktypetypedef)
-- `ChallengeResponses`:
-  `List`\[[ChallengeResponseTypeTypeDef](./type_defs.md#challengeresponsetypetypedef)\]
-- `EventContextData`:
-  [EventContextDataTypeTypeDef](./type_defs.md#eventcontextdatatypetypedef)
-- `EventFeedback`:
-  [EventFeedbackTypeTypeDef](./type_defs.md#eventfeedbacktypetypedef)
-
-<a id="authenticationresulttypetypedef"></a>
-
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
+2. See [:material-code-brackets: EventResponseTypeType](./literals.md#eventresponsetypetype) 
+3. See [:material-code-braces: EventRiskTypeTypeDef](./type_defs.md#eventrisktypetypedef) 
+4. See [:material-code-braces: ChallengeResponseTypeTypeDef](./type_defs.md#challengeresponsetypetypedef) 
+5. See [:material-code-braces: EventContextDataTypeTypeDef](./type_defs.md#eventcontextdatatypetypedef) 
+6. See [:material-code-braces: EventFeedbackTypeTypeDef](./type_defs.md#eventfeedbacktypetypedef) 
 ## AuthenticationResultTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import AuthenticationResultTypeTypeDef
+
+def get_value() -> AuthenticationResultTypeTypeDef:
+    return {
+        "AccessToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AuthenticationResultTypeTypeDef(TypedDict):
+    AccessToken: NotRequired[str],
+    ExpiresIn: NotRequired[int],
+    TokenType: NotRequired[str],
+    RefreshToken: NotRequired[str],
+    IdToken: NotRequired[str],
+    NewDeviceMetadata: NotRequired[NewDeviceMetadataTypeTypeDef],  # (1)
+```
 
-- `AccessToken`: `str`
-- `ExpiresIn`: `int`
-- `TokenType`: `str`
-- `RefreshToken`: `str`
-- `IdToken`: `str`
-- `NewDeviceMetadata`:
-  [NewDeviceMetadataTypeTypeDef](./type_defs.md#newdevicemetadatatypetypedef)
-
-<a id="challengeresponsetypetypedef"></a>
-
+1. See [:material-code-braces: NewDeviceMetadataTypeTypeDef](./type_defs.md#newdevicemetadatatypetypedef) 
 ## ChallengeResponseTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ChallengeResponseTypeTypeDef
+
+def get_value() -> ChallengeResponseTypeTypeDef:
+    return {
+        "ChallengeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChallengeResponseTypeTypeDef(TypedDict):
+    ChallengeName: NotRequired[ChallengeNameType],  # (1)
+    ChallengeResponse: NotRequired[ChallengeResponseType],  # (2)
+```
 
-- `ChallengeName`: [ChallengeNameType](./literals.md#challengenametype)
-- `ChallengeResponse`:
-  [ChallengeResponseType](./literals.md#challengeresponsetype)
-
-<a id="changepasswordrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChallengeNameType](./literals.md#challengenametype) 
+2. See [:material-code-brackets: ChallengeResponseType](./literals.md#challengeresponsetype) 
 ## ChangePasswordRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ChangePasswordRequestRequestTypeDef
+
+def get_value() -> ChangePasswordRequestRequestTypeDef:
+    return {
+        "PreviousPassword": ...,
+        "ProposedPassword": ...,
+        "AccessToken": ...,
+    }
 ```
 
-Required fields:
-
-- `PreviousPassword`: `str`
-- `ProposedPassword`: `str`
-- `AccessToken`: `str`
-
-<a id="codedeliverydetailstypetypedef"></a>
+```python title="Definition"
+class ChangePasswordRequestRequestTypeDef(TypedDict):
+    PreviousPassword: str,
+    ProposedPassword: str,
+    AccessToken: str,
+```
 
 ## CodeDeliveryDetailsTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CodeDeliveryDetailsTypeTypeDef
+
+def get_value() -> CodeDeliveryDetailsTypeTypeDef:
+    return {
+        "Destination": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CodeDeliveryDetailsTypeTypeDef(TypedDict):
+    Destination: NotRequired[str],
+    DeliveryMedium: NotRequired[DeliveryMediumTypeType],  # (1)
+    AttributeName: NotRequired[str],
+```
 
-- `Destination`: `str`
-- `DeliveryMedium`:
-  [DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)
-- `AttributeName`: `str`
-
-<a id="compromisedcredentialsactionstypetypedef"></a>
-
+1. See [:material-code-brackets: DeliveryMediumTypeType](./literals.md#deliverymediumtypetype) 
 ## CompromisedCredentialsActionsTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CompromisedCredentialsActionsTypeTypeDef
+
+def get_value() -> CompromisedCredentialsActionsTypeTypeDef:
+    return {
+        "EventAction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CompromisedCredentialsActionsTypeTypeDef(TypedDict):
+    EventAction: CompromisedCredentialsEventActionTypeType,  # (1)
+```
 
-- `EventAction`:
-  [CompromisedCredentialsEventActionTypeType](./literals.md#compromisedcredentialseventactiontypetype)
-
-<a id="compromisedcredentialsriskconfigurationtypetypedef"></a>
-
+1. See [:material-code-brackets: CompromisedCredentialsEventActionTypeType](./literals.md#compromisedcredentialseventactiontypetype) 
 ## CompromisedCredentialsRiskConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CompromisedCredentialsRiskConfigurationTypeTypeDef
+
+def get_value() -> CompromisedCredentialsRiskConfigurationTypeTypeDef:
+    return {
+        "Actions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CompromisedCredentialsRiskConfigurationTypeTypeDef(TypedDict):
+    Actions: CompromisedCredentialsActionsTypeTypeDef,  # (2)
+    EventFilter: NotRequired[List[EventFilterTypeType]],  # (1)
+```
 
-- `Actions`:
-  [CompromisedCredentialsActionsTypeTypeDef](./type_defs.md#compromisedcredentialsactionstypetypedef)
-
-Optional fields:
-
-- `EventFilter`:
-  `List`\[[EventFilterTypeType](./literals.md#eventfiltertypetype)\]
-
-<a id="confirmdevicerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EventFilterTypeType](./literals.md#eventfiltertypetype) 
+2. See [:material-code-braces: CompromisedCredentialsActionsTypeTypeDef](./type_defs.md#compromisedcredentialsactionstypetypedef) 
 ## ConfirmDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ConfirmDeviceRequestRequestTypeDef
+
+def get_value() -> ConfirmDeviceRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+        "DeviceKey": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmDeviceRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+    DeviceKey: str,
+    DeviceSecretVerifierConfig: NotRequired[DeviceSecretVerifierConfigTypeTypeDef],  # (1)
+    DeviceName: NotRequired[str],
+```
 
-- `AccessToken`: `str`
-- `DeviceKey`: `str`
-
-Optional fields:
-
-- `DeviceSecretVerifierConfig`:
-  [DeviceSecretVerifierConfigTypeTypeDef](./type_defs.md#devicesecretverifierconfigtypetypedef)
-- `DeviceName`: `str`
-
-<a id="confirmdeviceresponsetypedef"></a>
-
+1. See [:material-code-braces: DeviceSecretVerifierConfigTypeTypeDef](./type_defs.md#devicesecretverifierconfigtypetypedef) 
 ## ConfirmDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ConfirmDeviceResponseTypeDef
+
+def get_value() -> ConfirmDeviceResponseTypeDef:
+    return {
+        "UserConfirmationNecessary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmDeviceResponseTypeDef(TypedDict):
+    UserConfirmationNecessary: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UserConfirmationNecessary`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="confirmforgotpasswordrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfirmForgotPasswordRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ConfirmForgotPasswordRequestRequestTypeDef
+
+def get_value() -> ConfirmForgotPasswordRequestRequestTypeDef:
+    return {
+        "ClientId": ...,
+        "Username": ...,
+        "ConfirmationCode": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmForgotPasswordRequestRequestTypeDef(TypedDict):
+    ClientId: str,
+    Username: str,
+    ConfirmationCode: str,
+    Password: str,
+    SecretHash: NotRequired[str],
+    AnalyticsMetadata: NotRequired[AnalyticsMetadataTypeTypeDef],  # (1)
+    UserContextData: NotRequired[UserContextDataTypeTypeDef],  # (2)
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `ClientId`: `str`
-- `Username`: `str`
-- `ConfirmationCode`: `str`
-- `Password`: `str`
-
-Optional fields:
-
-- `SecretHash`: `str`
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="confirmsignuprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+2. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
 ## ConfirmSignUpRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ConfirmSignUpRequestRequestTypeDef
+
+def get_value() -> ConfirmSignUpRequestRequestTypeDef:
+    return {
+        "ClientId": ...,
+        "Username": ...,
+        "ConfirmationCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfirmSignUpRequestRequestTypeDef(TypedDict):
+    ClientId: str,
+    Username: str,
+    ConfirmationCode: str,
+    SecretHash: NotRequired[str],
+    ForceAliasCreation: NotRequired[bool],
+    AnalyticsMetadata: NotRequired[AnalyticsMetadataTypeTypeDef],  # (1)
+    UserContextData: NotRequired[UserContextDataTypeTypeDef],  # (2)
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `ClientId`: `str`
-- `Username`: `str`
-- `ConfirmationCode`: `str`
-
-Optional fields:
-
-- `SecretHash`: `str`
-- `ForceAliasCreation`: `bool`
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="contextdatatypetypedef"></a>
-
+1. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+2. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
 ## ContextDataTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ContextDataTypeTypeDef
+
+def get_value() -> ContextDataTypeTypeDef:
+    return {
+        "IpAddress": ...,
+        "ServerName": ...,
+        "ServerPath": ...,
+        "HttpHeaders": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContextDataTypeTypeDef(TypedDict):
+    IpAddress: str,
+    ServerName: str,
+    ServerPath: str,
+    HttpHeaders: Sequence[HttpHeaderTypeDef],  # (1)
+    EncodedData: NotRequired[str],
+```
 
-- `IpAddress`: `str`
-- `ServerName`: `str`
-- `ServerPath`: `str`
-- `HttpHeaders`:
-  `Sequence`\[[HttpHeaderTypeDef](./type_defs.md#httpheadertypedef)\]
-
-Optional fields:
-
-- `EncodedData`: `str`
-
-<a id="creategrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HttpHeaderTypeDef](./type_defs.md#httpheadertypedef) 
 ## CreateGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateGroupRequestRequestTypeDef
+
+def get_value() -> CreateGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `RoleArn`: `str`
-- `Precedence`: `int`
-
-<a id="creategroupresponsetypedef"></a>
+```python title="Definition"
+class CreateGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    UserPoolId: str,
+    Description: NotRequired[str],
+    RoleArn: NotRequired[str],
+    Precedence: NotRequired[int],
+```
 
 ## CreateGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateGroupResponseTypeDef
+
+def get_value() -> CreateGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeTypeDef](./type_defs.md#grouptypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createidentityproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeTypeDef](./type_defs.md#grouptypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIdentityProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateIdentityProviderRequestRequestTypeDef
+
+def get_value() -> CreateIdentityProviderRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ProviderName": ...,
+        "ProviderType": ...,
+        "ProviderDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIdentityProviderRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ProviderName: str,
+    ProviderType: IdentityProviderTypeTypeType,  # (1)
+    ProviderDetails: Mapping[str, str],
+    AttributeMapping: NotRequired[Mapping[str, str]],
+    IdpIdentifiers: NotRequired[Sequence[str]],
+```
 
-- `UserPoolId`: `str`
-- `ProviderName`: `str`
-- `ProviderType`:
-  [IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype)
-- `ProviderDetails`: `Mapping`\[`str`, `str`\]
-
-Optional fields:
-
-- `AttributeMapping`: `Mapping`\[`str`, `str`\]
-- `IdpIdentifiers`: `Sequence`\[`str`\]
-
-<a id="createidentityproviderresponsetypedef"></a>
-
+1. See [:material-code-brackets: IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype) 
 ## CreateIdentityProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateIdentityProviderResponseTypeDef
+
+def get_value() -> CreateIdentityProviderResponseTypeDef:
+    return {
+        "IdentityProvider": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIdentityProviderResponseTypeDef(TypedDict):
+    IdentityProvider: IdentityProviderTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IdentityProvider`:
-  [IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createresourceserverrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResourceServerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateResourceServerRequestRequestTypeDef
+
+def get_value() -> CreateResourceServerRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Identifier": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResourceServerRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Identifier: str,
+    Name: str,
+    Scopes: NotRequired[Sequence[ResourceServerScopeTypeTypeDef]],  # (1)
+```
 
-- `UserPoolId`: `str`
-- `Identifier`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `Scopes`:
-  `Sequence`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
-
-<a id="createresourceserverresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef) 
 ## CreateResourceServerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateResourceServerResponseTypeDef
+
+def get_value() -> CreateResourceServerResponseTypeDef:
+    return {
+        "ResourceServer": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResourceServerResponseTypeDef(TypedDict):
+    ResourceServer: ResourceServerTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceServer`:
-  [ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateUserImportJobRequestRequestTypeDef
+
+def get_value() -> CreateUserImportJobRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+        "UserPoolId": ...,
+        "CloudWatchLogsRoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `JobName`: `str`
-- `UserPoolId`: `str`
-- `CloudWatchLogsRoleArn`: `str`
-
-<a id="createuserimportjobresponsetypedef"></a>
+```python title="Definition"
+class CreateUserImportJobRequestRequestTypeDef(TypedDict):
+    JobName: str,
+    UserPoolId: str,
+    CloudWatchLogsRoleArn: str,
+```
 
 ## CreateUserImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateUserImportJobResponseTypeDef
+
+def get_value() -> CreateUserImportJobResponseTypeDef:
+    return {
+        "UserImportJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserImportJobResponseTypeDef(TypedDict):
+    UserImportJob: UserImportJobTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserImportJob`:
-  [UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserpoolclientrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserPoolClientRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateUserPoolClientRequestRequestTypeDef
+
+def get_value() -> CreateUserPoolClientRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ClientName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserPoolClientRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientName: str,
+    GenerateSecret: NotRequired[bool],
+    RefreshTokenValidity: NotRequired[int],
+    AccessTokenValidity: NotRequired[int],
+    IdTokenValidity: NotRequired[int],
+    TokenValidityUnits: NotRequired[TokenValidityUnitsTypeTypeDef],  # (1)
+    ReadAttributes: NotRequired[Sequence[str]],
+    WriteAttributes: NotRequired[Sequence[str]],
+    ExplicitAuthFlows: NotRequired[Sequence[ExplicitAuthFlowsTypeType]],  # (2)
+    SupportedIdentityProviders: NotRequired[Sequence[str]],
+    CallbackURLs: NotRequired[Sequence[str]],
+    LogoutURLs: NotRequired[Sequence[str]],
+    DefaultRedirectURI: NotRequired[str],
+    AllowedOAuthFlows: NotRequired[Sequence[OAuthFlowTypeType]],  # (3)
+    AllowedOAuthScopes: NotRequired[Sequence[str]],
+    AllowedOAuthFlowsUserPoolClient: NotRequired[bool],
+    AnalyticsConfiguration: NotRequired[AnalyticsConfigurationTypeTypeDef],  # (4)
+    PreventUserExistenceErrors: NotRequired[PreventUserExistenceErrorTypesType],  # (5)
+    EnableTokenRevocation: NotRequired[bool],
+```
 
-- `UserPoolId`: `str`
-- `ClientName`: `str`
-
-Optional fields:
-
-- `GenerateSecret`: `bool`
-- `RefreshTokenValidity`: `int`
-- `AccessTokenValidity`: `int`
-- `IdTokenValidity`: `int`
-- `TokenValidityUnits`:
-  [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
-- `ReadAttributes`: `Sequence`\[`str`\]
-- `WriteAttributes`: `Sequence`\[`str`\]
-- `ExplicitAuthFlows`:
-  `Sequence`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
-- `SupportedIdentityProviders`: `Sequence`\[`str`\]
-- `CallbackURLs`: `Sequence`\[`str`\]
-- `LogoutURLs`: `Sequence`\[`str`\]
-- `DefaultRedirectURI`: `str`
-- `AllowedOAuthFlows`:
-  `Sequence`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
-- `AllowedOAuthScopes`: `Sequence`\[`str`\]
-- `AllowedOAuthFlowsUserPoolClient`: `bool`
-- `AnalyticsConfiguration`:
-  [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
-- `PreventUserExistenceErrors`:
-  [PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype)
-- `EnableTokenRevocation`: `bool`
-
-<a id="createuserpoolclientresponsetypedef"></a>
-
+1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 
+2. See [:material-code-brackets: ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype) 
+3. See [:material-code-brackets: OAuthFlowTypeType](./literals.md#oauthflowtypetype) 
+4. See [:material-code-braces: AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef) 
+5. See [:material-code-brackets: PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype) 
 ## CreateUserPoolClientResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateUserPoolClientResponseTypeDef
+
+def get_value() -> CreateUserPoolClientResponseTypeDef:
+    return {
+        "UserPoolClient": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserPoolClientResponseTypeDef(TypedDict):
+    UserPoolClient: UserPoolClientTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserPoolClient`:
-  [UserPoolClientTypeTypeDef](./type_defs.md#userpoolclienttypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserpooldomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserPoolClientTypeTypeDef](./type_defs.md#userpoolclienttypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserPoolDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateUserPoolDomainRequestRequestTypeDef
+
+def get_value() -> CreateUserPoolDomainRequestRequestTypeDef:
+    return {
+        "Domain": ...,
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserPoolDomainRequestRequestTypeDef(TypedDict):
+    Domain: str,
+    UserPoolId: str,
+    CustomDomainConfig: NotRequired[CustomDomainConfigTypeTypeDef],  # (1)
+```
 
-- `Domain`: `str`
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `CustomDomainConfig`:
-  [CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef)
-
-<a id="createuserpooldomainresponsetypedef"></a>
-
+1. See [:material-code-braces: CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef) 
 ## CreateUserPoolDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateUserPoolDomainResponseTypeDef
+
+def get_value() -> CreateUserPoolDomainResponseTypeDef:
+    return {
+        "CloudFrontDomain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserPoolDomainResponseTypeDef(TypedDict):
+    CloudFrontDomain: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CloudFrontDomain`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserpoolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserPoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateUserPoolRequestRequestTypeDef
+
+def get_value() -> CreateUserPoolRequestRequestTypeDef:
+    return {
+        "PoolName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserPoolRequestRequestTypeDef(TypedDict):
+    PoolName: str,
+    Policies: NotRequired[UserPoolPolicyTypeTypeDef],  # (1)
+    LambdaConfig: NotRequired[LambdaConfigTypeTypeDef],  # (2)
+    AutoVerifiedAttributes: NotRequired[Sequence[VerifiedAttributeTypeType]],  # (3)
+    AliasAttributes: NotRequired[Sequence[AliasAttributeTypeType]],  # (4)
+    UsernameAttributes: NotRequired[Sequence[UsernameAttributeTypeType]],  # (5)
+    SmsVerificationMessage: NotRequired[str],
+    EmailVerificationMessage: NotRequired[str],
+    EmailVerificationSubject: NotRequired[str],
+    VerificationMessageTemplate: NotRequired[VerificationMessageTemplateTypeTypeDef],  # (6)
+    SmsAuthenticationMessage: NotRequired[str],
+    MfaConfiguration: NotRequired[UserPoolMfaTypeType],  # (7)
+    DeviceConfiguration: NotRequired[DeviceConfigurationTypeTypeDef],  # (8)
+    EmailConfiguration: NotRequired[EmailConfigurationTypeTypeDef],  # (9)
+    SmsConfiguration: NotRequired[SmsConfigurationTypeTypeDef],  # (10)
+    UserPoolTags: NotRequired[Mapping[str, str]],
+    AdminCreateUserConfig: NotRequired[AdminCreateUserConfigTypeTypeDef],  # (11)
+    Schema: NotRequired[Sequence[SchemaAttributeTypeTypeDef]],  # (12)
+    UserPoolAddOns: NotRequired[UserPoolAddOnsTypeTypeDef],  # (13)
+    UsernameConfiguration: NotRequired[UsernameConfigurationTypeTypeDef],  # (14)
+    AccountRecoverySetting: NotRequired[AccountRecoverySettingTypeTypeDef],  # (15)
+```
 
-- `PoolName`: `str`
-
-Optional fields:
-
-- `Policies`:
-  [UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef)
-- `LambdaConfig`:
-  [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
-- `AutoVerifiedAttributes`:
-  `Sequence`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
-- `AliasAttributes`:
-  `Sequence`\[[AliasAttributeTypeType](./literals.md#aliasattributetypetype)\]
-- `UsernameAttributes`:
-  `Sequence`\[[UsernameAttributeTypeType](./literals.md#usernameattributetypetype)\]
-- `SmsVerificationMessage`: `str`
-- `EmailVerificationMessage`: `str`
-- `EmailVerificationSubject`: `str`
-- `VerificationMessageTemplate`:
-  [VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef)
-- `SmsAuthenticationMessage`: `str`
-- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
-- `DeviceConfiguration`:
-  [DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef)
-- `EmailConfiguration`:
-  [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
-- `SmsConfiguration`:
-  [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-- `UserPoolTags`: `Mapping`\[`str`, `str`\]
-- `AdminCreateUserConfig`:
-  [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
-- `Schema`:
-  `Sequence`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
-- `UserPoolAddOns`:
-  [UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef)
-- `UsernameConfiguration`:
-  [UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef)
-- `AccountRecoverySetting`:
-  [AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef)
-
-<a id="createuserpoolresponsetypedef"></a>
-
+1. See [:material-code-braces: UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef) 
+2. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
+3. See [:material-code-brackets: VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype) 
+4. See [:material-code-brackets: AliasAttributeTypeType](./literals.md#aliasattributetypetype) 
+5. See [:material-code-brackets: UsernameAttributeTypeType](./literals.md#usernameattributetypetype) 
+6. See [:material-code-braces: VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef) 
+7. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+8. See [:material-code-braces: DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef) 
+9. See [:material-code-braces: EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef) 
+10. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
+11. See [:material-code-braces: AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef) 
+12. See [:material-code-braces: SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef) 
+13. See [:material-code-braces: UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef) 
+14. See [:material-code-braces: UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef) 
+15. See [:material-code-braces: AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef) 
 ## CreateUserPoolResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CreateUserPoolResponseTypeDef
+
+def get_value() -> CreateUserPoolResponseTypeDef:
+    return {
+        "UserPool": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserPoolResponseTypeDef(TypedDict):
+    UserPool: UserPoolTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserPool`: [UserPoolTypeTypeDef](./type_defs.md#userpooltypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customdomainconfigtypetypedef"></a>
-
+1. See [:material-code-braces: UserPoolTypeTypeDef](./type_defs.md#userpooltypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomDomainConfigTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CustomDomainConfigTypeTypeDef
+
+def get_value() -> CustomDomainConfigTypeTypeDef:
+    return {
+        "CertificateArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateArn`: `str`
-
-<a id="customemaillambdaversionconfigtypetypedef"></a>
+```python title="Definition"
+class CustomDomainConfigTypeTypeDef(TypedDict):
+    CertificateArn: str,
+```
 
 ## CustomEmailLambdaVersionConfigTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CustomEmailLambdaVersionConfigTypeTypeDef
+
+def get_value() -> CustomEmailLambdaVersionConfigTypeTypeDef:
+    return {
+        "LambdaVersion": ...,
+        "LambdaArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomEmailLambdaVersionConfigTypeTypeDef(TypedDict):
+    LambdaVersion: CustomEmailSenderLambdaVersionTypeType,  # (1)
+    LambdaArn: str,
+```
 
-- `LambdaVersion`: `Literal['V1_0']` (see
-  [CustomEmailSenderLambdaVersionTypeType](./literals.md#customemailsenderlambdaversiontypetype))
-- `LambdaArn`: `str`
-
-<a id="customsmslambdaversionconfigtypetypedef"></a>
-
+1. See [:material-code-brackets: CustomEmailSenderLambdaVersionTypeType](./literals.md#customemailsenderlambdaversiontypetype) 
 ## CustomSMSLambdaVersionConfigTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import CustomSMSLambdaVersionConfigTypeTypeDef
+
+def get_value() -> CustomSMSLambdaVersionConfigTypeTypeDef:
+    return {
+        "LambdaVersion": ...,
+        "LambdaArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomSMSLambdaVersionConfigTypeTypeDef(TypedDict):
+    LambdaVersion: CustomSMSSenderLambdaVersionTypeType,  # (1)
+    LambdaArn: str,
+```
 
-- `LambdaVersion`: `Literal['V1_0']` (see
-  [CustomSMSSenderLambdaVersionTypeType](./literals.md#customsmssenderlambdaversiontypetype))
-- `LambdaArn`: `str`
-
-<a id="deletegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CustomSMSSenderLambdaVersionTypeType](./literals.md#customsmssenderlambdaversiontypetype) 
 ## DeleteGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeleteGroupRequestRequestTypeDef
+
+def get_value() -> DeleteGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `UserPoolId`: `str`
-
-<a id="deleteidentityproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    UserPoolId: str,
+```
 
 ## DeleteIdentityProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeleteIdentityProviderRequestRequestTypeDef
+
+def get_value() -> DeleteIdentityProviderRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ProviderName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `ProviderName`: `str`
-
-<a id="deleteresourceserverrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteIdentityProviderRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ProviderName: str,
+```
 
 ## DeleteResourceServerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeleteResourceServerRequestRequestTypeDef
+
+def get_value() -> DeleteResourceServerRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Identifier`: `str`
-
-<a id="deleteuserattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourceServerRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Identifier: str,
+```
 
 ## DeleteUserAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeleteUserAttributesRequestRequestTypeDef
+
+def get_value() -> DeleteUserAttributesRequestRequestTypeDef:
+    return {
+        "UserAttributeNames": ...,
+        "AccessToken": ...,
+    }
 ```
 
-Required fields:
-
-- `UserAttributeNames`: `Sequence`\[`str`\]
-- `AccessToken`: `str`
-
-<a id="deleteuserpoolclientrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserAttributesRequestRequestTypeDef(TypedDict):
+    UserAttributeNames: Sequence[str],
+    AccessToken: str,
+```
 
 ## DeleteUserPoolClientRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeleteUserPoolClientRequestRequestTypeDef
+
+def get_value() -> DeleteUserPoolClientRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ClientId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `ClientId`: `str`
-
-<a id="deleteuserpooldomainrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserPoolClientRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientId: str,
+```
 
 ## DeleteUserPoolDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeleteUserPoolDomainRequestRequestTypeDef
+
+def get_value() -> DeleteUserPoolDomainRequestRequestTypeDef:
+    return {
+        "Domain": ...,
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `Domain`: `str`
-- `UserPoolId`: `str`
-
-<a id="deleteuserpoolrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserPoolDomainRequestRequestTypeDef(TypedDict):
+    Domain: str,
+    UserPoolId: str,
+```
 
 ## DeleteUserPoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeleteUserPoolRequestRequestTypeDef
+
+def get_value() -> DeleteUserPoolRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-<a id="deleteuserrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserPoolRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+```
 
 ## DeleteUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeleteUserRequestRequestTypeDef
+
+def get_value() -> DeleteUserRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+    }
 ```
 
-Required fields:
-
-- `AccessToken`: `str`
-
-<a id="describeidentityproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+```
 
 ## DescribeIdentityProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeIdentityProviderRequestRequestTypeDef
+
+def get_value() -> DescribeIdentityProviderRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ProviderName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `ProviderName`: `str`
-
-<a id="describeidentityproviderresponsetypedef"></a>
+```python title="Definition"
+class DescribeIdentityProviderRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ProviderName: str,
+```
 
 ## DescribeIdentityProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeIdentityProviderResponseTypeDef
+
+def get_value() -> DescribeIdentityProviderResponseTypeDef:
+    return {
+        "IdentityProvider": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeIdentityProviderResponseTypeDef(TypedDict):
+    IdentityProvider: IdentityProviderTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IdentityProvider`:
-  [IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeresourceserverrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeResourceServerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeResourceServerRequestRequestTypeDef
+
+def get_value() -> DescribeResourceServerRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `Identifier`: `str`
-
-<a id="describeresourceserverresponsetypedef"></a>
+```python title="Definition"
+class DescribeResourceServerRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Identifier: str,
+```
 
 ## DescribeResourceServerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeResourceServerResponseTypeDef
+
+def get_value() -> DescribeResourceServerResponseTypeDef:
+    return {
+        "ResourceServer": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeResourceServerResponseTypeDef(TypedDict):
+    ResourceServer: ResourceServerTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceServer`:
-  [ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeriskconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRiskConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeRiskConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeRiskConfigurationRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `ClientId`: `str`
-
-<a id="describeriskconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DescribeRiskConfigurationRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientId: NotRequired[str],
+```
 
 ## DescribeRiskConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeRiskConfigurationResponseTypeDef
+
+def get_value() -> DescribeRiskConfigurationResponseTypeDef:
+    return {
+        "RiskConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRiskConfigurationResponseTypeDef(TypedDict):
+    RiskConfiguration: RiskConfigurationTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RiskConfiguration`:
-  [RiskConfigurationTypeTypeDef](./type_defs.md#riskconfigurationtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuserimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RiskConfigurationTypeTypeDef](./type_defs.md#riskconfigurationtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeUserImportJobRequestRequestTypeDef
+
+def get_value() -> DescribeUserImportJobRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `JobId`: `str`
-
-<a id="describeuserimportjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeUserImportJobRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    JobId: str,
+```
 
 ## DescribeUserImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeUserImportJobResponseTypeDef
+
+def get_value() -> DescribeUserImportJobResponseTypeDef:
+    return {
+        "UserImportJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUserImportJobResponseTypeDef(TypedDict):
+    UserImportJob: UserImportJobTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserImportJob`:
-  [UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuserpoolclientrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserPoolClientRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeUserPoolClientRequestRequestTypeDef
+
+def get_value() -> DescribeUserPoolClientRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ClientId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `ClientId`: `str`
-
-<a id="describeuserpoolclientresponsetypedef"></a>
+```python title="Definition"
+class DescribeUserPoolClientRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientId: str,
+```
 
 ## DescribeUserPoolClientResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeUserPoolClientResponseTypeDef
+
+def get_value() -> DescribeUserPoolClientResponseTypeDef:
+    return {
+        "UserPoolClient": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUserPoolClientResponseTypeDef(TypedDict):
+    UserPoolClient: UserPoolClientTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserPoolClient`:
-  [UserPoolClientTypeTypeDef](./type_defs.md#userpoolclienttypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuserpooldomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserPoolClientTypeTypeDef](./type_defs.md#userpoolclienttypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserPoolDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeUserPoolDomainRequestRequestTypeDef
+
+def get_value() -> DescribeUserPoolDomainRequestRequestTypeDef:
+    return {
+        "Domain": ...,
+    }
 ```
 
-Required fields:
-
-- `Domain`: `str`
-
-<a id="describeuserpooldomainresponsetypedef"></a>
+```python title="Definition"
+class DescribeUserPoolDomainRequestRequestTypeDef(TypedDict):
+    Domain: str,
+```
 
 ## DescribeUserPoolDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeUserPoolDomainResponseTypeDef
+
+def get_value() -> DescribeUserPoolDomainResponseTypeDef:
+    return {
+        "DomainDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUserPoolDomainResponseTypeDef(TypedDict):
+    DomainDescription: DomainDescriptionTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainDescription`:
-  [DomainDescriptionTypeTypeDef](./type_defs.md#domaindescriptiontypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuserpoolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainDescriptionTypeTypeDef](./type_defs.md#domaindescriptiontypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserPoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeUserPoolRequestRequestTypeDef
+
+def get_value() -> DescribeUserPoolRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-<a id="describeuserpoolresponsetypedef"></a>
+```python title="Definition"
+class DescribeUserPoolRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+```
 
 ## DescribeUserPoolResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DescribeUserPoolResponseTypeDef
+
+def get_value() -> DescribeUserPoolResponseTypeDef:
+    return {
+        "UserPool": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUserPoolResponseTypeDef(TypedDict):
+    UserPool: UserPoolTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserPool`: [UserPoolTypeTypeDef](./type_defs.md#userpooltypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deviceconfigurationtypetypedef"></a>
-
+1. See [:material-code-braces: UserPoolTypeTypeDef](./type_defs.md#userpooltypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeviceConfigurationTypeTypeDef
+
+def get_value() -> DeviceConfigurationTypeTypeDef:
+    return {
+        "ChallengeRequiredOnNewDevice": ...,
+    }
 ```
 
-Optional fields:
-
-- `ChallengeRequiredOnNewDevice`: `bool`
-- `DeviceOnlyRememberedOnUserPrompt`: `bool`
-
-<a id="devicesecretverifierconfigtypetypedef"></a>
+```python title="Definition"
+class DeviceConfigurationTypeTypeDef(TypedDict):
+    ChallengeRequiredOnNewDevice: NotRequired[bool],
+    DeviceOnlyRememberedOnUserPrompt: NotRequired[bool],
+```
 
 ## DeviceSecretVerifierConfigTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeviceSecretVerifierConfigTypeTypeDef
+
+def get_value() -> DeviceSecretVerifierConfigTypeTypeDef:
+    return {
+        "PasswordVerifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `PasswordVerifier`: `str`
-- `Salt`: `str`
-
-<a id="devicetypetypedef"></a>
+```python title="Definition"
+class DeviceSecretVerifierConfigTypeTypeDef(TypedDict):
+    PasswordVerifier: NotRequired[str],
+    Salt: NotRequired[str],
+```
 
 ## DeviceTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DeviceTypeTypeDef
+
+def get_value() -> DeviceTypeTypeDef:
+    return {
+        "DeviceKey": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceTypeTypeDef(TypedDict):
+    DeviceKey: NotRequired[str],
+    DeviceAttributes: NotRequired[List[AttributeTypeTypeDef]],  # (1)
+    DeviceCreateDate: NotRequired[datetime],
+    DeviceLastModifiedDate: NotRequired[datetime],
+    DeviceLastAuthenticatedDate: NotRequired[datetime],
+```
 
-- `DeviceKey`: `str`
-- `DeviceAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `DeviceCreateDate`: `datetime`
-- `DeviceLastModifiedDate`: `datetime`
-- `DeviceLastAuthenticatedDate`: `datetime`
-
-<a id="domaindescriptiontypetypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
 ## DomainDescriptionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import DomainDescriptionTypeTypeDef
+
+def get_value() -> DomainDescriptionTypeTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DomainDescriptionTypeTypeDef(TypedDict):
+    UserPoolId: NotRequired[str],
+    AWSAccountId: NotRequired[str],
+    Domain: NotRequired[str],
+    S3Bucket: NotRequired[str],
+    CloudFrontDistribution: NotRequired[str],
+    Version: NotRequired[str],
+    Status: NotRequired[DomainStatusTypeType],  # (1)
+    CustomDomainConfig: NotRequired[CustomDomainConfigTypeTypeDef],  # (2)
+```
 
-- `UserPoolId`: `str`
-- `AWSAccountId`: `str`
-- `Domain`: `str`
-- `S3Bucket`: `str`
-- `CloudFrontDistribution`: `str`
-- `Version`: `str`
-- `Status`: [DomainStatusTypeType](./literals.md#domainstatustypetype)
-- `CustomDomainConfig`:
-  [CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef)
-
-<a id="emailconfigurationtypetypedef"></a>
-
+1. See [:material-code-brackets: DomainStatusTypeType](./literals.md#domainstatustypetype) 
+2. See [:material-code-braces: CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef) 
 ## EmailConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import EmailConfigurationTypeTypeDef
+
+def get_value() -> EmailConfigurationTypeTypeDef:
+    return {
+        "SourceArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EmailConfigurationTypeTypeDef(TypedDict):
+    SourceArn: NotRequired[str],
+    ReplyToEmailAddress: NotRequired[str],
+    EmailSendingAccount: NotRequired[EmailSendingAccountTypeType],  # (1)
+    From: NotRequired[str],
+    ConfigurationSet: NotRequired[str],
+```
 
-- `SourceArn`: `str`
-- `ReplyToEmailAddress`: `str`
-- `EmailSendingAccount`:
-  [EmailSendingAccountTypeType](./literals.md#emailsendingaccounttypetype)
-- `From`: `str`
-- `ConfigurationSet`: `str`
-
-<a id="eventcontextdatatypetypedef"></a>
-
+1. See [:material-code-brackets: EmailSendingAccountTypeType](./literals.md#emailsendingaccounttypetype) 
 ## EventContextDataTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import EventContextDataTypeTypeDef
+
+def get_value() -> EventContextDataTypeTypeDef:
+    return {
+        "IpAddress": ...,
+    }
 ```
 
-Optional fields:
-
-- `IpAddress`: `str`
-- `DeviceName`: `str`
-- `Timezone`: `str`
-- `City`: `str`
-- `Country`: `str`
-
-<a id="eventfeedbacktypetypedef"></a>
+```python title="Definition"
+class EventContextDataTypeTypeDef(TypedDict):
+    IpAddress: NotRequired[str],
+    DeviceName: NotRequired[str],
+    Timezone: NotRequired[str],
+    City: NotRequired[str],
+    Country: NotRequired[str],
+```
 
 ## EventFeedbackTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import EventFeedbackTypeTypeDef
+
+def get_value() -> EventFeedbackTypeTypeDef:
+    return {
+        "FeedbackValue": ...,
+        "Provider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventFeedbackTypeTypeDef(TypedDict):
+    FeedbackValue: FeedbackValueTypeType,  # (1)
+    Provider: str,
+    FeedbackDate: NotRequired[datetime],
+```
 
-- `FeedbackValue`: [FeedbackValueTypeType](./literals.md#feedbackvaluetypetype)
-- `Provider`: `str`
-
-Optional fields:
-
-- `FeedbackDate`: `datetime`
-
-<a id="eventrisktypetypedef"></a>
-
+1. See [:material-code-brackets: FeedbackValueTypeType](./literals.md#feedbackvaluetypetype) 
 ## EventRiskTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import EventRiskTypeTypeDef
+
+def get_value() -> EventRiskTypeTypeDef:
+    return {
+        "RiskDecision": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventRiskTypeTypeDef(TypedDict):
+    RiskDecision: NotRequired[RiskDecisionTypeType],  # (1)
+    RiskLevel: NotRequired[RiskLevelTypeType],  # (2)
+    CompromisedCredentialsDetected: NotRequired[bool],
+```
 
-- `RiskDecision`: [RiskDecisionTypeType](./literals.md#riskdecisiontypetype)
-- `RiskLevel`: [RiskLevelTypeType](./literals.md#riskleveltypetype)
-- `CompromisedCredentialsDetected`: `bool`
-
-<a id="forgetdevicerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RiskDecisionTypeType](./literals.md#riskdecisiontypetype) 
+2. See [:material-code-brackets: RiskLevelTypeType](./literals.md#riskleveltypetype) 
 ## ForgetDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ForgetDeviceRequestRequestTypeDef
+
+def get_value() -> ForgetDeviceRequestRequestTypeDef:
+    return {
+        "DeviceKey": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceKey`: `str`
-
-Optional fields:
-
-- `AccessToken`: `str`
-
-<a id="forgotpasswordrequestrequesttypedef"></a>
+```python title="Definition"
+class ForgetDeviceRequestRequestTypeDef(TypedDict):
+    DeviceKey: str,
+    AccessToken: NotRequired[str],
+```
 
 ## ForgotPasswordRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ForgotPasswordRequestRequestTypeDef
+
+def get_value() -> ForgotPasswordRequestRequestTypeDef:
+    return {
+        "ClientId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ForgotPasswordRequestRequestTypeDef(TypedDict):
+    ClientId: str,
+    Username: str,
+    SecretHash: NotRequired[str],
+    UserContextData: NotRequired[UserContextDataTypeTypeDef],  # (1)
+    AnalyticsMetadata: NotRequired[AnalyticsMetadataTypeTypeDef],  # (2)
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `ClientId`: `str`
-- `Username`: `str`
-
-Optional fields:
-
-- `SecretHash`: `str`
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="forgotpasswordresponsetypedef"></a>
-
+1. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
 ## ForgotPasswordResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ForgotPasswordResponseTypeDef
+
+def get_value() -> ForgotPasswordResponseTypeDef:
+    return {
+        "CodeDeliveryDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ForgotPasswordResponseTypeDef(TypedDict):
+    CodeDeliveryDetails: CodeDeliveryDetailsTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CodeDeliveryDetails`:
-  [CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcsvheaderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCSVHeaderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetCSVHeaderRequestRequestTypeDef
+
+def get_value() -> GetCSVHeaderRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-<a id="getcsvheaderresponsetypedef"></a>
+```python title="Definition"
+class GetCSVHeaderRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+```
 
 ## GetCSVHeaderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetCSVHeaderResponseTypeDef
+
+def get_value() -> GetCSVHeaderResponseTypeDef:
+    return {
+        "UserPoolId": ...,
+        "CSVHeader": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCSVHeaderResponseTypeDef(TypedDict):
+    UserPoolId: str,
+    CSVHeader: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UserPoolId`: `str`
-- `CSVHeader`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetDeviceRequestRequestTypeDef
+
+def get_value() -> GetDeviceRequestRequestTypeDef:
+    return {
+        "DeviceKey": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceKey`: `str`
-
-Optional fields:
-
-- `AccessToken`: `str`
-
-<a id="getdeviceresponsetypedef"></a>
+```python title="Definition"
+class GetDeviceRequestRequestTypeDef(TypedDict):
+    DeviceKey: str,
+    AccessToken: NotRequired[str],
+```
 
 ## GetDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetDeviceResponseTypeDef
+
+def get_value() -> GetDeviceResponseTypeDef:
+    return {
+        "Device": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeviceResponseTypeDef(TypedDict):
+    Device: DeviceTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Device`: [DeviceTypeTypeDef](./type_defs.md#devicetypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceTypeTypeDef](./type_defs.md#devicetypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetGroupRequestRequestTypeDef
+
+def get_value() -> GetGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `UserPoolId`: `str`
-
-<a id="getgroupresponsetypedef"></a>
+```python title="Definition"
+class GetGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    UserPoolId: str,
+```
 
 ## GetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetGroupResponseTypeDef
+
+def get_value() -> GetGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeTypeDef](./type_defs.md#grouptypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getidentityproviderbyidentifierrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeTypeDef](./type_defs.md#grouptypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetIdentityProviderByIdentifierRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetIdentityProviderByIdentifierRequestRequestTypeDef
+
+def get_value() -> GetIdentityProviderByIdentifierRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "IdpIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `IdpIdentifier`: `str`
-
-<a id="getidentityproviderbyidentifierresponsetypedef"></a>
+```python title="Definition"
+class GetIdentityProviderByIdentifierRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    IdpIdentifier: str,
+```
 
 ## GetIdentityProviderByIdentifierResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetIdentityProviderByIdentifierResponseTypeDef
+
+def get_value() -> GetIdentityProviderByIdentifierResponseTypeDef:
+    return {
+        "IdentityProvider": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetIdentityProviderByIdentifierResponseTypeDef(TypedDict):
+    IdentityProvider: IdentityProviderTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IdentityProvider`:
-  [IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsigningcertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSigningCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetSigningCertificateRequestRequestTypeDef
+
+def get_value() -> GetSigningCertificateRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-<a id="getsigningcertificateresponsetypedef"></a>
+```python title="Definition"
+class GetSigningCertificateRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+```
 
 ## GetSigningCertificateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetSigningCertificateResponseTypeDef
+
+def get_value() -> GetSigningCertificateResponseTypeDef:
+    return {
+        "Certificate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSigningCertificateResponseTypeDef(TypedDict):
+    Certificate: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Certificate`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getuicustomizationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUICustomizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetUICustomizationRequestRequestTypeDef
+
+def get_value() -> GetUICustomizationRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `ClientId`: `str`
-
-<a id="getuicustomizationresponsetypedef"></a>
+```python title="Definition"
+class GetUICustomizationRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientId: NotRequired[str],
+```
 
 ## GetUICustomizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetUICustomizationResponseTypeDef
+
+def get_value() -> GetUICustomizationResponseTypeDef:
+    return {
+        "UICustomization": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUICustomizationResponseTypeDef(TypedDict):
+    UICustomization: UICustomizationTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UICustomization`:
-  [UICustomizationTypeTypeDef](./type_defs.md#uicustomizationtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getuserattributeverificationcoderequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UICustomizationTypeTypeDef](./type_defs.md#uicustomizationtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserAttributeVerificationCodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetUserAttributeVerificationCodeRequestRequestTypeDef
+
+def get_value() -> GetUserAttributeVerificationCodeRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
-
-- `AccessToken`: `str`
-- `AttributeName`: `str`
-
-Optional fields:
-
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="getuserattributeverificationcoderesponsetypedef"></a>
+```python title="Definition"
+class GetUserAttributeVerificationCodeRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+    AttributeName: str,
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
 ## GetUserAttributeVerificationCodeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetUserAttributeVerificationCodeResponseTypeDef
+
+def get_value() -> GetUserAttributeVerificationCodeResponseTypeDef:
+    return {
+        "CodeDeliveryDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUserAttributeVerificationCodeResponseTypeDef(TypedDict):
+    CodeDeliveryDetails: CodeDeliveryDetailsTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CodeDeliveryDetails`:
-  [CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getuserpoolmfaconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserPoolMfaConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetUserPoolMfaConfigRequestRequestTypeDef
+
+def get_value() -> GetUserPoolMfaConfigRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-<a id="getuserpoolmfaconfigresponsetypedef"></a>
+```python title="Definition"
+class GetUserPoolMfaConfigRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+```
 
 ## GetUserPoolMfaConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetUserPoolMfaConfigResponseTypeDef
+
+def get_value() -> GetUserPoolMfaConfigResponseTypeDef:
+    return {
+        "SmsMfaConfiguration": ...,
+        "SoftwareTokenMfaConfiguration": ...,
+        "MfaConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUserPoolMfaConfigResponseTypeDef(TypedDict):
+    SmsMfaConfiguration: SmsMfaConfigTypeTypeDef,  # (1)
+    SoftwareTokenMfaConfiguration: SoftwareTokenMfaConfigTypeTypeDef,  # (2)
+    MfaConfiguration: UserPoolMfaTypeType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `SmsMfaConfiguration`:
-  [SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef)
-- `SoftwareTokenMfaConfiguration`:
-  [SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef)
-- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef) 
+2. See [:material-code-braces: SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef) 
+3. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetUserRequestRequestTypeDef
+
+def get_value() -> GetUserRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+    }
 ```
 
-Required fields:
-
-- `AccessToken`: `str`
-
-<a id="getuserresponsetypedef"></a>
+```python title="Definition"
+class GetUserRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+```
 
 ## GetUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GetUserResponseTypeDef
+
+def get_value() -> GetUserResponseTypeDef:
+    return {
+        "Username": ...,
+        "UserAttributes": ...,
+        "MFAOptions": ...,
+        "PreferredMfaSetting": ...,
+        "UserMFASettingList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUserResponseTypeDef(TypedDict):
+    Username: str,
+    UserAttributes: List[AttributeTypeTypeDef],  # (1)
+    MFAOptions: List[MFAOptionTypeTypeDef],  # (2)
+    PreferredMfaSetting: str,
+    UserMFASettingList: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Username`: `str`
-- `UserAttributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
-- `PreferredMfaSetting`: `str`
-- `UserMFASettingList`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="globalsignoutrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+2. See [:material-code-braces: MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GlobalSignOutRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GlobalSignOutRequestRequestTypeDef
+
+def get_value() -> GlobalSignOutRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+    }
 ```
 
-Required fields:
-
-- `AccessToken`: `str`
-
-<a id="grouptypetypedef"></a>
+```python title="Definition"
+class GlobalSignOutRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+```
 
 ## GroupTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import GroupTypeTypeDef
+
+def get_value() -> GroupTypeTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupName`: `str`
-- `UserPoolId`: `str`
-- `Description`: `str`
-- `RoleArn`: `str`
-- `Precedence`: `int`
-- `LastModifiedDate`: `datetime`
-- `CreationDate`: `datetime`
-
-<a id="httpheadertypedef"></a>
+```python title="Definition"
+class GroupTypeTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    UserPoolId: NotRequired[str],
+    Description: NotRequired[str],
+    RoleArn: NotRequired[str],
+    Precedence: NotRequired[int],
+    LastModifiedDate: NotRequired[datetime],
+    CreationDate: NotRequired[datetime],
+```
 
 ## HttpHeaderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import HttpHeaderTypeDef
+
+def get_value() -> HttpHeaderTypeDef:
+    return {
+        "headerName": ...,
+    }
 ```
 
-Optional fields:
-
-- `headerName`: `str`
-- `headerValue`: `str`
-
-<a id="identityprovidertypetypedef"></a>
+```python title="Definition"
+class HttpHeaderTypeDef(TypedDict):
+    headerName: NotRequired[str],
+    headerValue: NotRequired[str],
+```
 
 ## IdentityProviderTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import IdentityProviderTypeTypeDef
+
+def get_value() -> IdentityProviderTypeTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IdentityProviderTypeTypeDef(TypedDict):
+    UserPoolId: NotRequired[str],
+    ProviderName: NotRequired[str],
+    ProviderType: NotRequired[IdentityProviderTypeTypeType],  # (1)
+    ProviderDetails: NotRequired[Dict[str, str]],
+    AttributeMapping: NotRequired[Dict[str, str]],
+    IdpIdentifiers: NotRequired[List[str]],
+    LastModifiedDate: NotRequired[datetime],
+    CreationDate: NotRequired[datetime],
+```
 
-- `UserPoolId`: `str`
-- `ProviderName`: `str`
-- `ProviderType`:
-  [IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype)
-- `ProviderDetails`: `Dict`\[`str`, `str`\]
-- `AttributeMapping`: `Dict`\[`str`, `str`\]
-- `IdpIdentifiers`: `List`\[`str`\]
-- `LastModifiedDate`: `datetime`
-- `CreationDate`: `datetime`
-
-<a id="initiateauthrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype) 
 ## InitiateAuthRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import InitiateAuthRequestRequestTypeDef
+
+def get_value() -> InitiateAuthRequestRequestTypeDef:
+    return {
+        "AuthFlow": ...,
+        "ClientId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiateAuthRequestRequestTypeDef(TypedDict):
+    AuthFlow: AuthFlowTypeType,  # (1)
+    ClientId: str,
+    AuthParameters: NotRequired[Mapping[str, str]],
+    ClientMetadata: NotRequired[Mapping[str, str]],
+    AnalyticsMetadata: NotRequired[AnalyticsMetadataTypeTypeDef],  # (2)
+    UserContextData: NotRequired[UserContextDataTypeTypeDef],  # (3)
+```
 
-- `AuthFlow`: [AuthFlowTypeType](./literals.md#authflowtypetype)
-- `ClientId`: `str`
-
-Optional fields:
-
-- `AuthParameters`: `Mapping`\[`str`, `str`\]
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-
-<a id="initiateauthresponsetypedef"></a>
-
+1. See [:material-code-brackets: AuthFlowTypeType](./literals.md#authflowtypetype) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
 ## InitiateAuthResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import InitiateAuthResponseTypeDef
+
+def get_value() -> InitiateAuthResponseTypeDef:
+    return {
+        "ChallengeName": ...,
+        "Session": ...,
+        "ChallengeParameters": ...,
+        "AuthenticationResult": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiateAuthResponseTypeDef(TypedDict):
+    ChallengeName: ChallengeNameTypeType,  # (1)
+    Session: str,
+    ChallengeParameters: Dict[str, str],
+    AuthenticationResult: AuthenticationResultTypeTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
-- `Session`: `str`
-- `ChallengeParameters`: `Dict`\[`str`, `str`\]
-- `AuthenticationResult`:
-  [AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lambdaconfigtypetypedef"></a>
-
+1. See [:material-code-brackets: ChallengeNameTypeType](./literals.md#challengenametypetype) 
+2. See [:material-code-braces: AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LambdaConfigTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import LambdaConfigTypeTypeDef
+
+def get_value() -> LambdaConfigTypeTypeDef:
+    return {
+        "PreSignUp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LambdaConfigTypeTypeDef(TypedDict):
+    PreSignUp: NotRequired[str],
+    CustomMessage: NotRequired[str],
+    PostConfirmation: NotRequired[str],
+    PreAuthentication: NotRequired[str],
+    PostAuthentication: NotRequired[str],
+    DefineAuthChallenge: NotRequired[str],
+    CreateAuthChallenge: NotRequired[str],
+    VerifyAuthChallengeResponse: NotRequired[str],
+    PreTokenGeneration: NotRequired[str],
+    UserMigration: NotRequired[str],
+    CustomSMSSender: NotRequired[CustomSMSLambdaVersionConfigTypeTypeDef],  # (1)
+    CustomEmailSender: NotRequired[CustomEmailLambdaVersionConfigTypeTypeDef],  # (2)
+    KMSKeyID: NotRequired[str],
+```
 
-- `PreSignUp`: `str`
-- `CustomMessage`: `str`
-- `PostConfirmation`: `str`
-- `PreAuthentication`: `str`
-- `PostAuthentication`: `str`
-- `DefineAuthChallenge`: `str`
-- `CreateAuthChallenge`: `str`
-- `VerifyAuthChallengeResponse`: `str`
-- `PreTokenGeneration`: `str`
-- `UserMigration`: `str`
-- `CustomSMSSender`:
-  [CustomSMSLambdaVersionConfigTypeTypeDef](./type_defs.md#customsmslambdaversionconfigtypetypedef)
-- `CustomEmailSender`:
-  [CustomEmailLambdaVersionConfigTypeTypeDef](./type_defs.md#customemaillambdaversionconfigtypetypedef)
-- `KMSKeyID`: `str`
-
-<a id="listdevicesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomSMSLambdaVersionConfigTypeTypeDef](./type_defs.md#customsmslambdaversionconfigtypetypedef) 
+2. See [:material-code-braces: CustomEmailLambdaVersionConfigTypeTypeDef](./type_defs.md#customemaillambdaversionconfigtypetypedef) 
 ## ListDevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListDevicesRequestRequestTypeDef
+
+def get_value() -> ListDevicesRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+    }
 ```
 
-Required fields:
-
-- `AccessToken`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `PaginationToken`: `str`
-
-<a id="listdevicesresponsetypedef"></a>
+```python title="Definition"
+class ListDevicesRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+    Limit: NotRequired[int],
+    PaginationToken: NotRequired[str],
+```
 
 ## ListDevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListDevicesResponseTypeDef
+
+def get_value() -> ListDevicesResponseTypeDef:
+    return {
+        "Devices": ...,
+        "PaginationToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevicesResponseTypeDef(TypedDict):
+    Devices: List[DeviceTypeTypeDef],  # (1)
+    PaginationToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Devices`: `List`\[[DeviceTypeTypeDef](./type_defs.md#devicetypetypedef)\]
-- `PaginationToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeviceTypeTypeDef](./type_defs.md#devicetypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGroupsRequestListGroupsPaginateTypeDef
 
-<a id="listgroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import ListGroupsRequestListGroupsPaginateTypeDef
 
+def get_value() -> ListGroupsRequestListGroupsPaginateTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsRequestListGroupsPaginateTypeDef(TypedDict):
+    UserPoolId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListGroupsRequestRequestTypeDef
+
+def get_value() -> ListGroupsRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="listgroupsresponsetypedef"></a>
+```python title="Definition"
+class ListGroupsRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListGroupsResponseTypeDef
+
+def get_value() -> ListGroupsResponseTypeDef:
+    return {
+        "Groups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGroupsResponseTypeDef(TypedDict):
+    Groups: List[GroupTypeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Groups`: `List`\[[GroupTypeTypeDef](./type_defs.md#grouptypetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GroupTypeTypeDef](./type_defs.md#grouptypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIdentityProvidersRequestListIdentityProvidersPaginateTypeDef
 
-<a id="listidentityprovidersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import ListIdentityProvidersRequestListIdentityProvidersPaginateTypeDef
 
+def get_value() -> ListIdentityProvidersRequestListIdentityProvidersPaginateTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class ListIdentityProvidersRequestListIdentityProvidersPaginateTypeDef(TypedDict):
+    UserPoolId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListIdentityProvidersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListIdentityProvidersRequestRequestTypeDef
+
+def get_value() -> ListIdentityProvidersRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listidentityprovidersresponsetypedef"></a>
+```python title="Definition"
+class ListIdentityProvidersRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListIdentityProvidersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListIdentityProvidersResponseTypeDef
+
+def get_value() -> ListIdentityProvidersResponseTypeDef:
+    return {
+        "Providers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIdentityProvidersResponseTypeDef(TypedDict):
+    Providers: List[ProviderDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Providers`:
-  `List`\[[ProviderDescriptionTypeDef](./type_defs.md#providerdescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ProviderDescriptionTypeDef](./type_defs.md#providerdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceServersRequestListResourceServersPaginateTypeDef
 
-<a id="listresourceserversrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import ListResourceServersRequestListResourceServersPaginateTypeDef
 
+def get_value() -> ListResourceServersRequestListResourceServersPaginateTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceServersRequestListResourceServersPaginateTypeDef(TypedDict):
+    UserPoolId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListResourceServersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListResourceServersRequestRequestTypeDef
+
+def get_value() -> ListResourceServersRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listresourceserversresponsetypedef"></a>
+```python title="Definition"
+class ListResourceServersRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListResourceServersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListResourceServersResponseTypeDef
+
+def get_value() -> ListResourceServersResponseTypeDef:
+    return {
+        "ResourceServers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourceServersResponseTypeDef(TypedDict):
+    ResourceServers: List[ResourceServerTypeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceServers`:
-  `List`\[[ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listuserimportjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListUserImportJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUserImportJobsRequestRequestTypeDef
+
+def get_value() -> ListUserImportJobsRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "MaxResults": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `MaxResults`: `int`
-
-Optional fields:
-
-- `PaginationToken`: `str`
-
-<a id="listuserimportjobsresponsetypedef"></a>
+```python title="Definition"
+class ListUserImportJobsRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    MaxResults: int,
+    PaginationToken: NotRequired[str],
+```
 
 ## ListUserImportJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUserImportJobsResponseTypeDef
+
+def get_value() -> ListUserImportJobsResponseTypeDef:
+    return {
+        "UserImportJobs": ...,
+        "PaginationToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUserImportJobsResponseTypeDef(TypedDict):
+    UserImportJobs: List[UserImportJobTypeTypeDef],  # (1)
+    PaginationToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserImportJobs`:
-  `List`\[[UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)\]
-- `PaginationToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUserPoolClientsRequestListUserPoolClientsPaginateTypeDef
 
-<a id="listuserpoolclientsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import ListUserPoolClientsRequestListUserPoolClientsPaginateTypeDef
 
+def get_value() -> ListUserPoolClientsRequestListUserPoolClientsPaginateTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUserPoolClientsRequestListUserPoolClientsPaginateTypeDef(TypedDict):
+    UserPoolId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUserPoolClientsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUserPoolClientsRequestRequestTypeDef
+
+def get_value() -> ListUserPoolClientsRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listuserpoolclientsresponsetypedef"></a>
+```python title="Definition"
+class ListUserPoolClientsRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListUserPoolClientsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUserPoolClientsResponseTypeDef
+
+def get_value() -> ListUserPoolClientsResponseTypeDef:
+    return {
+        "UserPoolClients": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUserPoolClientsResponseTypeDef(TypedDict):
+    UserPoolClients: List[UserPoolClientDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserPoolClients`:
-  `List`\[[UserPoolClientDescriptionTypeDef](./type_defs.md#userpoolclientdescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: UserPoolClientDescriptionTypeDef](./type_defs.md#userpoolclientdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUserPoolsRequestListUserPoolsPaginateTypeDef
 
-<a id="listuserpoolsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import ListUserPoolsRequestListUserPoolsPaginateTypeDef
 
+def get_value() -> ListUserPoolsRequestListUserPoolsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListUserPoolsRequestListUserPoolsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUserPoolsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUserPoolsRequestRequestTypeDef
+
+def get_value() -> ListUserPoolsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Required fields:
-
-- `MaxResults`: `int`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listuserpoolsresponsetypedef"></a>
+```python title="Definition"
+class ListUserPoolsRequestRequestTypeDef(TypedDict):
+    MaxResults: int,
+    NextToken: NotRequired[str],
+```
 
 ## ListUserPoolsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUserPoolsResponseTypeDef
+
+def get_value() -> ListUserPoolsResponseTypeDef:
+    return {
+        "UserPools": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUserPoolsResponseTypeDef(TypedDict):
+    UserPools: List[UserPoolDescriptionTypeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserPools`:
-  `List`\[[UserPoolDescriptionTypeTypeDef](./type_defs.md#userpooldescriptiontypetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: UserPoolDescriptionTypeTypeDef](./type_defs.md#userpooldescriptiontypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUsersInGroupRequestListUsersInGroupPaginateTypeDef
 
-<a id="listusersingrouprequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import ListUsersInGroupRequestListUsersInGroupPaginateTypeDef
 
+def get_value() -> ListUsersInGroupRequestListUsersInGroupPaginateTypeDef:
+    return {
+        "UserPoolId": ...,
+        "GroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersInGroupRequestListUsersInGroupPaginateTypeDef(TypedDict):
+    UserPoolId: str,
+    GroupName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUsersInGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUsersInGroupRequestRequestTypeDef
+
+def get_value() -> ListUsersInGroupRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `GroupName`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="listusersingroupresponsetypedef"></a>
+```python title="Definition"
+class ListUsersInGroupRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    GroupName: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListUsersInGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUsersInGroupResponseTypeDef
+
+def get_value() -> ListUsersInGroupResponseTypeDef:
+    return {
+        "Users": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUsersInGroupResponseTypeDef(TypedDict):
+    Users: List[UserTypeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Users`: `List`\[[UserTypeTypeDef](./type_defs.md#usertypetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: UserTypeTypeDef](./type_defs.md#usertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUsersRequestListUsersPaginateTypeDef
 
-<a id="listusersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cognito_idp.type_defs import ListUsersRequestListUsersPaginateTypeDef
 
+def get_value() -> ListUsersRequestListUsersPaginateTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersRequestListUsersPaginateTypeDef(TypedDict):
+    UserPoolId: str,
+    AttributesToGet: NotRequired[Sequence[str]],
+    Filter: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUsersRequestRequestTypeDef
+
+def get_value() -> ListUsersRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `PaginationToken`: `str`
-- `Filter`: `str`
-
-<a id="listusersresponsetypedef"></a>
+```python title="Definition"
+class ListUsersRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    AttributesToGet: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    PaginationToken: NotRequired[str],
+    Filter: NotRequired[str],
+```
 
 ## ListUsersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ListUsersResponseTypeDef
+
+def get_value() -> ListUsersResponseTypeDef:
+    return {
+        "Users": ...,
+        "PaginationToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUsersResponseTypeDef(TypedDict):
+    Users: List[UserTypeTypeDef],  # (1)
+    PaginationToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Users`: `List`\[[UserTypeTypeDef](./type_defs.md#usertypetypedef)\]
-- `PaginationToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mfaoptiontypetypedef"></a>
-
+1. See [:material-code-braces: UserTypeTypeDef](./type_defs.md#usertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MFAOptionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import MFAOptionTypeTypeDef
+
+def get_value() -> MFAOptionTypeTypeDef:
+    return {
+        "DeliveryMedium": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MFAOptionTypeTypeDef(TypedDict):
+    DeliveryMedium: NotRequired[DeliveryMediumTypeType],  # (1)
+    AttributeName: NotRequired[str],
+```
 
-- `DeliveryMedium`:
-  [DeliveryMediumTypeType](./literals.md#deliverymediumtypetype)
-- `AttributeName`: `str`
-
-<a id="messagetemplatetypetypedef"></a>
-
+1. See [:material-code-brackets: DeliveryMediumTypeType](./literals.md#deliverymediumtypetype) 
 ## MessageTemplateTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import MessageTemplateTypeTypeDef
+
+def get_value() -> MessageTemplateTypeTypeDef:
+    return {
+        "SMSMessage": ...,
+    }
 ```
 
-Optional fields:
-
-- `SMSMessage`: `str`
-- `EmailMessage`: `str`
-- `EmailSubject`: `str`
-
-<a id="newdevicemetadatatypetypedef"></a>
+```python title="Definition"
+class MessageTemplateTypeTypeDef(TypedDict):
+    SMSMessage: NotRequired[str],
+    EmailMessage: NotRequired[str],
+    EmailSubject: NotRequired[str],
+```
 
 ## NewDeviceMetadataTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import NewDeviceMetadataTypeTypeDef
+
+def get_value() -> NewDeviceMetadataTypeTypeDef:
+    return {
+        "DeviceKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceKey`: `str`
-- `DeviceGroupKey`: `str`
-
-<a id="notifyconfigurationtypetypedef"></a>
+```python title="Definition"
+class NewDeviceMetadataTypeTypeDef(TypedDict):
+    DeviceKey: NotRequired[str],
+    DeviceGroupKey: NotRequired[str],
+```
 
 ## NotifyConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import NotifyConfigurationTypeTypeDef
+
+def get_value() -> NotifyConfigurationTypeTypeDef:
+    return {
+        "SourceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotifyConfigurationTypeTypeDef(TypedDict):
+    SourceArn: str,
+    From: NotRequired[str],
+    ReplyTo: NotRequired[str],
+    BlockEmail: NotRequired[NotifyEmailTypeTypeDef],  # (1)
+    NoActionEmail: NotRequired[NotifyEmailTypeTypeDef],  # (1)
+    MfaEmail: NotRequired[NotifyEmailTypeTypeDef],  # (1)
+```
 
-- `SourceArn`: `str`
-
-Optional fields:
-
-- `From`: `str`
-- `ReplyTo`: `str`
-- `BlockEmail`: [NotifyEmailTypeTypeDef](./type_defs.md#notifyemailtypetypedef)
-- `NoActionEmail`:
-  [NotifyEmailTypeTypeDef](./type_defs.md#notifyemailtypetypedef)
-- `MfaEmail`: [NotifyEmailTypeTypeDef](./type_defs.md#notifyemailtypetypedef)
-
-<a id="notifyemailtypetypedef"></a>
-
+1. See [:material-code-braces: NotifyEmailTypeTypeDef](./type_defs.md#notifyemailtypetypedef) 
+2. See [:material-code-braces: NotifyEmailTypeTypeDef](./type_defs.md#notifyemailtypetypedef) 
+3. See [:material-code-braces: NotifyEmailTypeTypeDef](./type_defs.md#notifyemailtypetypedef) 
 ## NotifyEmailTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import NotifyEmailTypeTypeDef
+
+def get_value() -> NotifyEmailTypeTypeDef:
+    return {
+        "Subject": ...,
+    }
 ```
 
-Required fields:
-
-- `Subject`: `str`
-
-Optional fields:
-
-- `HtmlBody`: `str`
-- `TextBody`: `str`
-
-<a id="numberattributeconstraintstypetypedef"></a>
+```python title="Definition"
+class NotifyEmailTypeTypeDef(TypedDict):
+    Subject: str,
+    HtmlBody: NotRequired[str],
+    TextBody: NotRequired[str],
+```
 
 ## NumberAttributeConstraintsTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import NumberAttributeConstraintsTypeTypeDef
+
+def get_value() -> NumberAttributeConstraintsTypeTypeDef:
+    return {
+        "MinValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinValue`: `str`
-- `MaxValue`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class NumberAttributeConstraintsTypeTypeDef(TypedDict):
+    MinValue: NotRequired[str],
+    MaxValue: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="passwordpolicytypetypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PasswordPolicyTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import PasswordPolicyTypeTypeDef
+
+def get_value() -> PasswordPolicyTypeTypeDef:
+    return {
+        "MinimumLength": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinimumLength`: `int`
-- `RequireUppercase`: `bool`
-- `RequireLowercase`: `bool`
-- `RequireNumbers`: `bool`
-- `RequireSymbols`: `bool`
-- `TemporaryPasswordValidityDays`: `int`
-
-<a id="providerdescriptiontypedef"></a>
+```python title="Definition"
+class PasswordPolicyTypeTypeDef(TypedDict):
+    MinimumLength: NotRequired[int],
+    RequireUppercase: NotRequired[bool],
+    RequireLowercase: NotRequired[bool],
+    RequireNumbers: NotRequired[bool],
+    RequireSymbols: NotRequired[bool],
+    TemporaryPasswordValidityDays: NotRequired[int],
+```
 
 ## ProviderDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ProviderDescriptionTypeDef
+
+def get_value() -> ProviderDescriptionTypeDef:
+    return {
+        "ProviderName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProviderDescriptionTypeDef(TypedDict):
+    ProviderName: NotRequired[str],
+    ProviderType: NotRequired[IdentityProviderTypeTypeType],  # (1)
+    LastModifiedDate: NotRequired[datetime],
+    CreationDate: NotRequired[datetime],
+```
 
-- `ProviderName`: `str`
-- `ProviderType`:
-  [IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype)
-- `LastModifiedDate`: `datetime`
-- `CreationDate`: `datetime`
-
-<a id="provideruseridentifiertypetypedef"></a>
-
+1. See [:material-code-brackets: IdentityProviderTypeTypeType](./literals.md#identityprovidertypetypetype) 
 ## ProviderUserIdentifierTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ProviderUserIdentifierTypeTypeDef
+
+def get_value() -> ProviderUserIdentifierTypeTypeDef:
+    return {
+        "ProviderName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProviderName`: `str`
-- `ProviderAttributeName`: `str`
-- `ProviderAttributeValue`: `str`
-
-<a id="recoveryoptiontypetypedef"></a>
+```python title="Definition"
+class ProviderUserIdentifierTypeTypeDef(TypedDict):
+    ProviderName: NotRequired[str],
+    ProviderAttributeName: NotRequired[str],
+    ProviderAttributeValue: NotRequired[str],
+```
 
 ## RecoveryOptionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import RecoveryOptionTypeTypeDef
+
+def get_value() -> RecoveryOptionTypeTypeDef:
+    return {
+        "Priority": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecoveryOptionTypeTypeDef(TypedDict):
+    Priority: int,
+    Name: RecoveryOptionNameTypeType,  # (1)
+```
 
-- `Priority`: `int`
-- `Name`:
-  [RecoveryOptionNameTypeType](./literals.md#recoveryoptionnametypetype)
-
-<a id="resendconfirmationcoderequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RecoveryOptionNameTypeType](./literals.md#recoveryoptionnametypetype) 
 ## ResendConfirmationCodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ResendConfirmationCodeRequestRequestTypeDef
+
+def get_value() -> ResendConfirmationCodeRequestRequestTypeDef:
+    return {
+        "ClientId": ...,
+        "Username": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResendConfirmationCodeRequestRequestTypeDef(TypedDict):
+    ClientId: str,
+    Username: str,
+    SecretHash: NotRequired[str],
+    UserContextData: NotRequired[UserContextDataTypeTypeDef],  # (1)
+    AnalyticsMetadata: NotRequired[AnalyticsMetadataTypeTypeDef],  # (2)
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `ClientId`: `str`
-- `Username`: `str`
-
-Optional fields:
-
-- `SecretHash`: `str`
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="resendconfirmationcoderesponsetypedef"></a>
-
+1. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
 ## ResendConfirmationCodeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ResendConfirmationCodeResponseTypeDef
+
+def get_value() -> ResendConfirmationCodeResponseTypeDef:
+    return {
+        "CodeDeliveryDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResendConfirmationCodeResponseTypeDef(TypedDict):
+    CodeDeliveryDetails: CodeDeliveryDetailsTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CodeDeliveryDetails`:
-  [CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resourceserverscopetypetypedef"></a>
-
+1. See [:material-code-braces: CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResourceServerScopeTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ResourceServerScopeTypeTypeDef
+
+def get_value() -> ResourceServerScopeTypeTypeDef:
+    return {
+        "ScopeName": ...,
+        "ScopeDescription": ...,
+    }
 ```
 
-Required fields:
-
-- `ScopeName`: `str`
-- `ScopeDescription`: `str`
-
-<a id="resourceservertypetypedef"></a>
+```python title="Definition"
+class ResourceServerScopeTypeTypeDef(TypedDict):
+    ScopeName: str,
+    ScopeDescription: str,
+```
 
 ## ResourceServerTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ResourceServerTypeTypeDef
+
+def get_value() -> ResourceServerTypeTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceServerTypeTypeDef(TypedDict):
+    UserPoolId: NotRequired[str],
+    Identifier: NotRequired[str],
+    Name: NotRequired[str],
+    Scopes: NotRequired[List[ResourceServerScopeTypeTypeDef]],  # (1)
+```
 
-- `UserPoolId`: `str`
-- `Identifier`: `str`
-- `Name`: `str`
-- `Scopes`:
-  `List`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
-
-<a id="respondtoauthchallengerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef) 
 ## RespondToAuthChallengeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import RespondToAuthChallengeRequestRequestTypeDef
+
+def get_value() -> RespondToAuthChallengeRequestRequestTypeDef:
+    return {
+        "ClientId": ...,
+        "ChallengeName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RespondToAuthChallengeRequestRequestTypeDef(TypedDict):
+    ClientId: str,
+    ChallengeName: ChallengeNameTypeType,  # (1)
+    Session: NotRequired[str],
+    ChallengeResponses: NotRequired[Mapping[str, str]],
+    AnalyticsMetadata: NotRequired[AnalyticsMetadataTypeTypeDef],  # (2)
+    UserContextData: NotRequired[UserContextDataTypeTypeDef],  # (3)
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `ClientId`: `str`
-- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
-
-Optional fields:
-
-- `Session`: `str`
-- `ChallengeResponses`: `Mapping`\[`str`, `str`\]
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="respondtoauthchallengeresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChallengeNameTypeType](./literals.md#challengenametypetype) 
+2. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+3. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
 ## RespondToAuthChallengeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import RespondToAuthChallengeResponseTypeDef
+
+def get_value() -> RespondToAuthChallengeResponseTypeDef:
+    return {
+        "ChallengeName": ...,
+        "Session": ...,
+        "ChallengeParameters": ...,
+        "AuthenticationResult": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RespondToAuthChallengeResponseTypeDef(TypedDict):
+    ChallengeName: ChallengeNameTypeType,  # (1)
+    Session: str,
+    ChallengeParameters: Dict[str, str],
+    AuthenticationResult: AuthenticationResultTypeTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ChallengeName`: [ChallengeNameTypeType](./literals.md#challengenametypetype)
-- `Session`: `str`
-- `ChallengeParameters`: `Dict`\[`str`, `str`\]
-- `AuthenticationResult`:
-  [AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ChallengeNameTypeType](./literals.md#challengenametypetype) 
+2. See [:material-code-braces: AuthenticationResultTypeTypeDef](./type_defs.md#authenticationresulttypetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="revoketokenrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RevokeTokenRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import RevokeTokenRequestRequestTypeDef
+
+def get_value() -> RevokeTokenRequestRequestTypeDef:
+    return {
+        "Token": ...,
+        "ClientId": ...,
+    }
 ```
 
-Required fields:
-
-- `Token`: `str`
-- `ClientId`: `str`
-
-Optional fields:
-
-- `ClientSecret`: `str`
-
-<a id="riskconfigurationtypetypedef"></a>
+```python title="Definition"
+class RevokeTokenRequestRequestTypeDef(TypedDict):
+    Token: str,
+    ClientId: str,
+    ClientSecret: NotRequired[str],
+```
 
 ## RiskConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import RiskConfigurationTypeTypeDef
+
+def get_value() -> RiskConfigurationTypeTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RiskConfigurationTypeTypeDef(TypedDict):
+    UserPoolId: NotRequired[str],
+    ClientId: NotRequired[str],
+    CompromisedCredentialsRiskConfiguration: NotRequired[CompromisedCredentialsRiskConfigurationTypeTypeDef],  # (1)
+    AccountTakeoverRiskConfiguration: NotRequired[AccountTakeoverRiskConfigurationTypeTypeDef],  # (2)
+    RiskExceptionConfiguration: NotRequired[RiskExceptionConfigurationTypeTypeDef],  # (3)
+    LastModifiedDate: NotRequired[datetime],
+```
 
-- `UserPoolId`: `str`
-- `ClientId`: `str`
-- `CompromisedCredentialsRiskConfiguration`:
-  [CompromisedCredentialsRiskConfigurationTypeTypeDef](./type_defs.md#compromisedcredentialsriskconfigurationtypetypedef)
-- `AccountTakeoverRiskConfiguration`:
-  [AccountTakeoverRiskConfigurationTypeTypeDef](./type_defs.md#accounttakeoverriskconfigurationtypetypedef)
-- `RiskExceptionConfiguration`:
-  [RiskExceptionConfigurationTypeTypeDef](./type_defs.md#riskexceptionconfigurationtypetypedef)
-- `LastModifiedDate`: `datetime`
-
-<a id="riskexceptionconfigurationtypetypedef"></a>
-
+1. See [:material-code-braces: CompromisedCredentialsRiskConfigurationTypeTypeDef](./type_defs.md#compromisedcredentialsriskconfigurationtypetypedef) 
+2. See [:material-code-braces: AccountTakeoverRiskConfigurationTypeTypeDef](./type_defs.md#accounttakeoverriskconfigurationtypetypedef) 
+3. See [:material-code-braces: RiskExceptionConfigurationTypeTypeDef](./type_defs.md#riskexceptionconfigurationtypetypedef) 
 ## RiskExceptionConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import RiskExceptionConfigurationTypeTypeDef
+
+def get_value() -> RiskExceptionConfigurationTypeTypeDef:
+    return {
+        "BlockedIPRangeList": ...,
+    }
 ```
 
-Optional fields:
-
-- `BlockedIPRangeList`: `List`\[`str`\]
-- `SkippedIPRangeList`: `List`\[`str`\]
-
-<a id="smsmfasettingstypetypedef"></a>
+```python title="Definition"
+class RiskExceptionConfigurationTypeTypeDef(TypedDict):
+    BlockedIPRangeList: NotRequired[List[str]],
+    SkippedIPRangeList: NotRequired[List[str]],
+```
 
 ## SMSMfaSettingsTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SMSMfaSettingsTypeTypeDef
+
+def get_value() -> SMSMfaSettingsTypeTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `Enabled`: `bool`
-- `PreferredMfa`: `bool`
-
-<a id="schemaattributetypetypedef"></a>
+```python title="Definition"
+class SMSMfaSettingsTypeTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    PreferredMfa: NotRequired[bool],
+```
 
 ## SchemaAttributeTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SchemaAttributeTypeTypeDef
+
+def get_value() -> SchemaAttributeTypeTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SchemaAttributeTypeTypeDef(TypedDict):
+    Name: NotRequired[str],
+    AttributeDataType: NotRequired[AttributeDataTypeType],  # (1)
+    DeveloperOnlyAttribute: NotRequired[bool],
+    Mutable: NotRequired[bool],
+    Required: NotRequired[bool],
+    NumberAttributeConstraints: NotRequired[NumberAttributeConstraintsTypeTypeDef],  # (2)
+    StringAttributeConstraints: NotRequired[StringAttributeConstraintsTypeTypeDef],  # (3)
+```
 
-- `Name`: `str`
-- `AttributeDataType`:
-  [AttributeDataTypeType](./literals.md#attributedatatypetype)
-- `DeveloperOnlyAttribute`: `bool`
-- `Mutable`: `bool`
-- `Required`: `bool`
-- `NumberAttributeConstraints`:
-  [NumberAttributeConstraintsTypeTypeDef](./type_defs.md#numberattributeconstraintstypetypedef)
-- `StringAttributeConstraints`:
-  [StringAttributeConstraintsTypeTypeDef](./type_defs.md#stringattributeconstraintstypetypedef)
-
-<a id="setriskconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AttributeDataTypeType](./literals.md#attributedatatypetype) 
+2. See [:material-code-braces: NumberAttributeConstraintsTypeTypeDef](./type_defs.md#numberattributeconstraintstypetypedef) 
+3. See [:material-code-braces: StringAttributeConstraintsTypeTypeDef](./type_defs.md#stringattributeconstraintstypetypedef) 
 ## SetRiskConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SetRiskConfigurationRequestRequestTypeDef
+
+def get_value() -> SetRiskConfigurationRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetRiskConfigurationRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientId: NotRequired[str],
+    CompromisedCredentialsRiskConfiguration: NotRequired[CompromisedCredentialsRiskConfigurationTypeTypeDef],  # (1)
+    AccountTakeoverRiskConfiguration: NotRequired[AccountTakeoverRiskConfigurationTypeTypeDef],  # (2)
+    RiskExceptionConfiguration: NotRequired[RiskExceptionConfigurationTypeTypeDef],  # (3)
+```
 
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `ClientId`: `str`
-- `CompromisedCredentialsRiskConfiguration`:
-  [CompromisedCredentialsRiskConfigurationTypeTypeDef](./type_defs.md#compromisedcredentialsriskconfigurationtypetypedef)
-- `AccountTakeoverRiskConfiguration`:
-  [AccountTakeoverRiskConfigurationTypeTypeDef](./type_defs.md#accounttakeoverriskconfigurationtypetypedef)
-- `RiskExceptionConfiguration`:
-  [RiskExceptionConfigurationTypeTypeDef](./type_defs.md#riskexceptionconfigurationtypetypedef)
-
-<a id="setriskconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: CompromisedCredentialsRiskConfigurationTypeTypeDef](./type_defs.md#compromisedcredentialsriskconfigurationtypetypedef) 
+2. See [:material-code-braces: AccountTakeoverRiskConfigurationTypeTypeDef](./type_defs.md#accounttakeoverriskconfigurationtypetypedef) 
+3. See [:material-code-braces: RiskExceptionConfigurationTypeTypeDef](./type_defs.md#riskexceptionconfigurationtypetypedef) 
 ## SetRiskConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SetRiskConfigurationResponseTypeDef
+
+def get_value() -> SetRiskConfigurationResponseTypeDef:
+    return {
+        "RiskConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetRiskConfigurationResponseTypeDef(TypedDict):
+    RiskConfiguration: RiskConfigurationTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RiskConfiguration`:
-  [RiskConfigurationTypeTypeDef](./type_defs.md#riskconfigurationtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="setuicustomizationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RiskConfigurationTypeTypeDef](./type_defs.md#riskconfigurationtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SetUICustomizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SetUICustomizationRequestRequestTypeDef
+
+def get_value() -> SetUICustomizationRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `ClientId`: `str`
-- `CSS`: `str`
-- `ImageFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="setuicustomizationresponsetypedef"></a>
+```python title="Definition"
+class SetUICustomizationRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientId: NotRequired[str],
+    CSS: NotRequired[str],
+    ImageFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## SetUICustomizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SetUICustomizationResponseTypeDef
+
+def get_value() -> SetUICustomizationResponseTypeDef:
+    return {
+        "UICustomization": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetUICustomizationResponseTypeDef(TypedDict):
+    UICustomization: UICustomizationTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UICustomization`:
-  [UICustomizationTypeTypeDef](./type_defs.md#uicustomizationtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="setusermfapreferencerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UICustomizationTypeTypeDef](./type_defs.md#uicustomizationtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SetUserMFAPreferenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SetUserMFAPreferenceRequestRequestTypeDef
+
+def get_value() -> SetUserMFAPreferenceRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetUserMFAPreferenceRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+    SMSMfaSettings: NotRequired[SMSMfaSettingsTypeTypeDef],  # (1)
+    SoftwareTokenMfaSettings: NotRequired[SoftwareTokenMfaSettingsTypeTypeDef],  # (2)
+```
 
-- `AccessToken`: `str`
-
-Optional fields:
-
-- `SMSMfaSettings`:
-  [SMSMfaSettingsTypeTypeDef](./type_defs.md#smsmfasettingstypetypedef)
-- `SoftwareTokenMfaSettings`:
-  [SoftwareTokenMfaSettingsTypeTypeDef](./type_defs.md#softwaretokenmfasettingstypetypedef)
-
-<a id="setuserpoolmfaconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SMSMfaSettingsTypeTypeDef](./type_defs.md#smsmfasettingstypetypedef) 
+2. See [:material-code-braces: SoftwareTokenMfaSettingsTypeTypeDef](./type_defs.md#softwaretokenmfasettingstypetypedef) 
 ## SetUserPoolMfaConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SetUserPoolMfaConfigRequestRequestTypeDef
+
+def get_value() -> SetUserPoolMfaConfigRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetUserPoolMfaConfigRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    SmsMfaConfiguration: NotRequired[SmsMfaConfigTypeTypeDef],  # (1)
+    SoftwareTokenMfaConfiguration: NotRequired[SoftwareTokenMfaConfigTypeTypeDef],  # (2)
+    MfaConfiguration: NotRequired[UserPoolMfaTypeType],  # (3)
+```
 
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `SmsMfaConfiguration`:
-  [SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef)
-- `SoftwareTokenMfaConfiguration`:
-  [SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef)
-- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
-
-<a id="setuserpoolmfaconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef) 
+2. See [:material-code-braces: SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef) 
+3. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
 ## SetUserPoolMfaConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SetUserPoolMfaConfigResponseTypeDef
+
+def get_value() -> SetUserPoolMfaConfigResponseTypeDef:
+    return {
+        "SmsMfaConfiguration": ...,
+        "SoftwareTokenMfaConfiguration": ...,
+        "MfaConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetUserPoolMfaConfigResponseTypeDef(TypedDict):
+    SmsMfaConfiguration: SmsMfaConfigTypeTypeDef,  # (1)
+    SoftwareTokenMfaConfiguration: SoftwareTokenMfaConfigTypeTypeDef,  # (2)
+    MfaConfiguration: UserPoolMfaTypeType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `SmsMfaConfiguration`:
-  [SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef)
-- `SoftwareTokenMfaConfiguration`:
-  [SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef)
-- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="setusersettingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SmsMfaConfigTypeTypeDef](./type_defs.md#smsmfaconfigtypetypedef) 
+2. See [:material-code-braces: SoftwareTokenMfaConfigTypeTypeDef](./type_defs.md#softwaretokenmfaconfigtypetypedef) 
+3. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SetUserSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SetUserSettingsRequestRequestTypeDef
+
+def get_value() -> SetUserSettingsRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+        "MFAOptions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetUserSettingsRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+    MFAOptions: Sequence[MFAOptionTypeTypeDef],  # (1)
+```
 
-- `AccessToken`: `str`
-- `MFAOptions`:
-  `Sequence`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
-
-<a id="signuprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef) 
 ## SignUpRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SignUpRequestRequestTypeDef
+
+def get_value() -> SignUpRequestRequestTypeDef:
+    return {
+        "ClientId": ...,
+        "Username": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SignUpRequestRequestTypeDef(TypedDict):
+    ClientId: str,
+    Username: str,
+    Password: str,
+    SecretHash: NotRequired[str],
+    UserAttributes: NotRequired[Sequence[AttributeTypeTypeDef]],  # (1)
+    ValidationData: NotRequired[Sequence[AttributeTypeTypeDef]],  # (1)
+    AnalyticsMetadata: NotRequired[AnalyticsMetadataTypeTypeDef],  # (3)
+    UserContextData: NotRequired[UserContextDataTypeTypeDef],  # (4)
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `ClientId`: `str`
-- `Username`: `str`
-- `Password`: `str`
-
-Optional fields:
-
-- `SecretHash`: `str`
-- `UserAttributes`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `ValidationData`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `AnalyticsMetadata`:
-  [AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef)
-- `UserContextData`:
-  [UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef)
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="signupresponsetypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+2. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+3. See [:material-code-braces: AnalyticsMetadataTypeTypeDef](./type_defs.md#analyticsmetadatatypetypedef) 
+4. See [:material-code-braces: UserContextDataTypeTypeDef](./type_defs.md#usercontextdatatypetypedef) 
 ## SignUpResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SignUpResponseTypeDef
+
+def get_value() -> SignUpResponseTypeDef:
+    return {
+        "UserConfirmed": ...,
+        "CodeDeliveryDetails": ...,
+        "UserSub": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SignUpResponseTypeDef(TypedDict):
+    UserConfirmed: bool,
+    CodeDeliveryDetails: CodeDeliveryDetailsTypeTypeDef,  # (1)
+    UserSub: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserConfirmed`: `bool`
-- `CodeDeliveryDetails`:
-  [CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)
-- `UserSub`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="smsconfigurationtypetypedef"></a>
-
+1. See [:material-code-braces: CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SmsConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SmsConfigurationTypeTypeDef
+
+def get_value() -> SmsConfigurationTypeTypeDef:
+    return {
+        "SnsCallerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SnsCallerArn`: `str`
-
-Optional fields:
-
-- `ExternalId`: `str`
-- `SnsRegion`: `str`
-
-<a id="smsmfaconfigtypetypedef"></a>
+```python title="Definition"
+class SmsConfigurationTypeTypeDef(TypedDict):
+    SnsCallerArn: str,
+    ExternalId: NotRequired[str],
+    SnsRegion: NotRequired[str],
+```
 
 ## SmsMfaConfigTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SmsMfaConfigTypeTypeDef
+
+def get_value() -> SmsMfaConfigTypeTypeDef:
+    return {
+        "SmsAuthenticationMessage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SmsMfaConfigTypeTypeDef(TypedDict):
+    SmsAuthenticationMessage: NotRequired[str],
+    SmsConfiguration: NotRequired[SmsConfigurationTypeTypeDef],  # (1)
+```
 
-- `SmsAuthenticationMessage`: `str`
-- `SmsConfiguration`:
-  [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-
-<a id="softwaretokenmfaconfigtypetypedef"></a>
-
+1. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
 ## SoftwareTokenMfaConfigTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SoftwareTokenMfaConfigTypeTypeDef
+
+def get_value() -> SoftwareTokenMfaConfigTypeTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `Enabled`: `bool`
-
-<a id="softwaretokenmfasettingstypetypedef"></a>
+```python title="Definition"
+class SoftwareTokenMfaConfigTypeTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+```
 
 ## SoftwareTokenMfaSettingsTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import SoftwareTokenMfaSettingsTypeTypeDef
+
+def get_value() -> SoftwareTokenMfaSettingsTypeTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `Enabled`: `bool`
-- `PreferredMfa`: `bool`
-
-<a id="startuserimportjobrequestrequesttypedef"></a>
+```python title="Definition"
+class SoftwareTokenMfaSettingsTypeTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    PreferredMfa: NotRequired[bool],
+```
 
 ## StartUserImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import StartUserImportJobRequestRequestTypeDef
+
+def get_value() -> StartUserImportJobRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `JobId`: `str`
-
-<a id="startuserimportjobresponsetypedef"></a>
+```python title="Definition"
+class StartUserImportJobRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    JobId: str,
+```
 
 ## StartUserImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import StartUserImportJobResponseTypeDef
+
+def get_value() -> StartUserImportJobResponseTypeDef:
+    return {
+        "UserImportJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartUserImportJobResponseTypeDef(TypedDict):
+    UserImportJob: UserImportJobTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserImportJob`:
-  [UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopuserimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopUserImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import StopUserImportJobRequestRequestTypeDef
+
+def get_value() -> StopUserImportJobRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `JobId`: `str`
-
-<a id="stopuserimportjobresponsetypedef"></a>
+```python title="Definition"
+class StopUserImportJobRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    JobId: str,
+```
 
 ## StopUserImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import StopUserImportJobResponseTypeDef
+
+def get_value() -> StopUserImportJobResponseTypeDef:
+    return {
+        "UserImportJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopUserImportJobResponseTypeDef(TypedDict):
+    UserImportJob: UserImportJobTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserImportJob`:
-  [UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stringattributeconstraintstypetypedef"></a>
-
+1. See [:material-code-braces: UserImportJobTypeTypeDef](./type_defs.md#userimportjobtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StringAttributeConstraintsTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import StringAttributeConstraintsTypeTypeDef
+
+def get_value() -> StringAttributeConstraintsTypeTypeDef:
+    return {
+        "MinLength": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinLength`: `str`
-- `MaxLength`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StringAttributeConstraintsTypeTypeDef(TypedDict):
+    MinLength: NotRequired[str],
+    MaxLength: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="tokenvalidityunitstypetypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TokenValidityUnitsTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import TokenValidityUnitsTypeTypeDef
+
+def get_value() -> TokenValidityUnitsTypeTypeDef:
+    return {
+        "AccessToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TokenValidityUnitsTypeTypeDef(TypedDict):
+    AccessToken: NotRequired[TimeUnitsTypeType],  # (1)
+    IdToken: NotRequired[TimeUnitsTypeType],  # (1)
+    RefreshToken: NotRequired[TimeUnitsTypeType],  # (1)
+```
 
-- `AccessToken`: [TimeUnitsTypeType](./literals.md#timeunitstypetype)
-- `IdToken`: [TimeUnitsTypeType](./literals.md#timeunitstypetype)
-- `RefreshToken`: [TimeUnitsTypeType](./literals.md#timeunitstypetype)
-
-<a id="uicustomizationtypetypedef"></a>
-
+1. See [:material-code-brackets: TimeUnitsTypeType](./literals.md#timeunitstypetype) 
+2. See [:material-code-brackets: TimeUnitsTypeType](./literals.md#timeunitstypetype) 
+3. See [:material-code-brackets: TimeUnitsTypeType](./literals.md#timeunitstypetype) 
 ## UICustomizationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UICustomizationTypeTypeDef
+
+def get_value() -> UICustomizationTypeTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserPoolId`: `str`
-- `ClientId`: `str`
-- `ImageUrl`: `str`
-- `CSS`: `str`
-- `CSSVersion`: `str`
-- `LastModifiedDate`: `datetime`
-- `CreationDate`: `datetime`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class UICustomizationTypeTypeDef(TypedDict):
+    UserPoolId: NotRequired[str],
+    ClientId: NotRequired[str],
+    ImageUrl: NotRequired[str],
+    CSS: NotRequired[str],
+    CSSVersion: NotRequired[str],
+    LastModifiedDate: NotRequired[datetime],
+    CreationDate: NotRequired[datetime],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateautheventfeedbackrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateAuthEventFeedbackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateAuthEventFeedbackRequestRequestTypeDef
+
+def get_value() -> UpdateAuthEventFeedbackRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Username": ...,
+        "EventId": ...,
+        "FeedbackToken": ...,
+        "FeedbackValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAuthEventFeedbackRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Username: str,
+    EventId: str,
+    FeedbackToken: str,
+    FeedbackValue: FeedbackValueTypeType,  # (1)
+```
 
-- `UserPoolId`: `str`
-- `Username`: `str`
-- `EventId`: `str`
-- `FeedbackToken`: `str`
-- `FeedbackValue`: [FeedbackValueTypeType](./literals.md#feedbackvaluetypetype)
-
-<a id="updatedevicestatusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FeedbackValueTypeType](./literals.md#feedbackvaluetypetype) 
 ## UpdateDeviceStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateDeviceStatusRequestRequestTypeDef
+
+def get_value() -> UpdateDeviceStatusRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+        "DeviceKey": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDeviceStatusRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+    DeviceKey: str,
+    DeviceRememberedStatus: NotRequired[DeviceRememberedStatusTypeType],  # (1)
+```
 
-- `AccessToken`: `str`
-- `DeviceKey`: `str`
-
-Optional fields:
-
-- `DeviceRememberedStatus`:
-  [DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype)
-
-<a id="updategrouprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeviceRememberedStatusTypeType](./literals.md#devicerememberedstatustypetype) 
 ## UpdateGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateGroupRequestRequestTypeDef
+
+def get_value() -> UpdateGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `RoleArn`: `str`
-- `Precedence`: `int`
-
-<a id="updategroupresponsetypedef"></a>
+```python title="Definition"
+class UpdateGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    UserPoolId: str,
+    Description: NotRequired[str],
+    RoleArn: NotRequired[str],
+    Precedence: NotRequired[int],
+```
 
 ## UpdateGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateGroupResponseTypeDef
+
+def get_value() -> UpdateGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeTypeDef](./type_defs.md#grouptypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateidentityproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeTypeDef](./type_defs.md#grouptypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateIdentityProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateIdentityProviderRequestRequestTypeDef
+
+def get_value() -> UpdateIdentityProviderRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ProviderName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserPoolId`: `str`
-- `ProviderName`: `str`
-
-Optional fields:
-
-- `ProviderDetails`: `Mapping`\[`str`, `str`\]
-- `AttributeMapping`: `Mapping`\[`str`, `str`\]
-- `IdpIdentifiers`: `Sequence`\[`str`\]
-
-<a id="updateidentityproviderresponsetypedef"></a>
+```python title="Definition"
+class UpdateIdentityProviderRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ProviderName: str,
+    ProviderDetails: NotRequired[Mapping[str, str]],
+    AttributeMapping: NotRequired[Mapping[str, str]],
+    IdpIdentifiers: NotRequired[Sequence[str]],
+```
 
 ## UpdateIdentityProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateIdentityProviderResponseTypeDef
+
+def get_value() -> UpdateIdentityProviderResponseTypeDef:
+    return {
+        "IdentityProvider": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateIdentityProviderResponseTypeDef(TypedDict):
+    IdentityProvider: IdentityProviderTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IdentityProvider`:
-  [IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateresourceserverrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityProviderTypeTypeDef](./type_defs.md#identityprovidertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResourceServerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateResourceServerRequestRequestTypeDef
+
+def get_value() -> UpdateResourceServerRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "Identifier": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResourceServerRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Identifier: str,
+    Name: str,
+    Scopes: NotRequired[Sequence[ResourceServerScopeTypeTypeDef]],  # (1)
+```
 
-- `UserPoolId`: `str`
-- `Identifier`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `Scopes`:
-  `Sequence`\[[ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef)\]
-
-<a id="updateresourceserverresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceServerScopeTypeTypeDef](./type_defs.md#resourceserverscopetypetypedef) 
 ## UpdateResourceServerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateResourceServerResponseTypeDef
+
+def get_value() -> UpdateResourceServerResponseTypeDef:
+    return {
+        "ResourceServer": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResourceServerResponseTypeDef(TypedDict):
+    ResourceServer: ResourceServerTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceServer`:
-  [ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateuserattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceServerTypeTypeDef](./type_defs.md#resourceservertypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateUserAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateUserAttributesRequestRequestTypeDef
+
+def get_value() -> UpdateUserAttributesRequestRequestTypeDef:
+    return {
+        "UserAttributes": ...,
+        "AccessToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserAttributesRequestRequestTypeDef(TypedDict):
+    UserAttributes: Sequence[AttributeTypeTypeDef],  # (1)
+    AccessToken: str,
+    ClientMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `UserAttributes`:
-  `Sequence`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `AccessToken`: `str`
-
-Optional fields:
-
-- `ClientMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="updateuserattributesresponsetypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
 ## UpdateUserAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateUserAttributesResponseTypeDef
+
+def get_value() -> UpdateUserAttributesResponseTypeDef:
+    return {
+        "CodeDeliveryDetailsList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserAttributesResponseTypeDef(TypedDict):
+    CodeDeliveryDetailsList: List[CodeDeliveryDetailsTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CodeDeliveryDetailsList`:
-  `List`\[[CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateuserpoolclientrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CodeDeliveryDetailsTypeTypeDef](./type_defs.md#codedeliverydetailstypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateUserPoolClientRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateUserPoolClientRequestRequestTypeDef
+
+def get_value() -> UpdateUserPoolClientRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+        "ClientId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserPoolClientRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    ClientId: str,
+    ClientName: NotRequired[str],
+    RefreshTokenValidity: NotRequired[int],
+    AccessTokenValidity: NotRequired[int],
+    IdTokenValidity: NotRequired[int],
+    TokenValidityUnits: NotRequired[TokenValidityUnitsTypeTypeDef],  # (1)
+    ReadAttributes: NotRequired[Sequence[str]],
+    WriteAttributes: NotRequired[Sequence[str]],
+    ExplicitAuthFlows: NotRequired[Sequence[ExplicitAuthFlowsTypeType]],  # (2)
+    SupportedIdentityProviders: NotRequired[Sequence[str]],
+    CallbackURLs: NotRequired[Sequence[str]],
+    LogoutURLs: NotRequired[Sequence[str]],
+    DefaultRedirectURI: NotRequired[str],
+    AllowedOAuthFlows: NotRequired[Sequence[OAuthFlowTypeType]],  # (3)
+    AllowedOAuthScopes: NotRequired[Sequence[str]],
+    AllowedOAuthFlowsUserPoolClient: NotRequired[bool],
+    AnalyticsConfiguration: NotRequired[AnalyticsConfigurationTypeTypeDef],  # (4)
+    PreventUserExistenceErrors: NotRequired[PreventUserExistenceErrorTypesType],  # (5)
+    EnableTokenRevocation: NotRequired[bool],
+```
 
-- `UserPoolId`: `str`
-- `ClientId`: `str`
-
-Optional fields:
-
-- `ClientName`: `str`
-- `RefreshTokenValidity`: `int`
-- `AccessTokenValidity`: `int`
-- `IdTokenValidity`: `int`
-- `TokenValidityUnits`:
-  [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
-- `ReadAttributes`: `Sequence`\[`str`\]
-- `WriteAttributes`: `Sequence`\[`str`\]
-- `ExplicitAuthFlows`:
-  `Sequence`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
-- `SupportedIdentityProviders`: `Sequence`\[`str`\]
-- `CallbackURLs`: `Sequence`\[`str`\]
-- `LogoutURLs`: `Sequence`\[`str`\]
-- `DefaultRedirectURI`: `str`
-- `AllowedOAuthFlows`:
-  `Sequence`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
-- `AllowedOAuthScopes`: `Sequence`\[`str`\]
-- `AllowedOAuthFlowsUserPoolClient`: `bool`
-- `AnalyticsConfiguration`:
-  [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
-- `PreventUserExistenceErrors`:
-  [PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype)
-- `EnableTokenRevocation`: `bool`
-
-<a id="updateuserpoolclientresponsetypedef"></a>
-
+1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 
+2. See [:material-code-brackets: ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype) 
+3. See [:material-code-brackets: OAuthFlowTypeType](./literals.md#oauthflowtypetype) 
+4. See [:material-code-braces: AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef) 
+5. See [:material-code-brackets: PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype) 
 ## UpdateUserPoolClientResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateUserPoolClientResponseTypeDef
+
+def get_value() -> UpdateUserPoolClientResponseTypeDef:
+    return {
+        "UserPoolClient": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserPoolClientResponseTypeDef(TypedDict):
+    UserPoolClient: UserPoolClientTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserPoolClient`:
-  [UserPoolClientTypeTypeDef](./type_defs.md#userpoolclienttypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateuserpooldomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserPoolClientTypeTypeDef](./type_defs.md#userpoolclienttypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateUserPoolDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateUserPoolDomainRequestRequestTypeDef
+
+def get_value() -> UpdateUserPoolDomainRequestRequestTypeDef:
+    return {
+        "Domain": ...,
+        "UserPoolId": ...,
+        "CustomDomainConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserPoolDomainRequestRequestTypeDef(TypedDict):
+    Domain: str,
+    UserPoolId: str,
+    CustomDomainConfig: CustomDomainConfigTypeTypeDef,  # (1)
+```
 
-- `Domain`: `str`
-- `UserPoolId`: `str`
-- `CustomDomainConfig`:
-  [CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef)
-
-<a id="updateuserpooldomainresponsetypedef"></a>
-
+1. See [:material-code-braces: CustomDomainConfigTypeTypeDef](./type_defs.md#customdomainconfigtypetypedef) 
 ## UpdateUserPoolDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateUserPoolDomainResponseTypeDef
+
+def get_value() -> UpdateUserPoolDomainResponseTypeDef:
+    return {
+        "CloudFrontDomain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserPoolDomainResponseTypeDef(TypedDict):
+    CloudFrontDomain: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CloudFrontDomain`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateuserpoolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateUserPoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UpdateUserPoolRequestRequestTypeDef
+
+def get_value() -> UpdateUserPoolRequestRequestTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserPoolRequestRequestTypeDef(TypedDict):
+    UserPoolId: str,
+    Policies: NotRequired[UserPoolPolicyTypeTypeDef],  # (1)
+    LambdaConfig: NotRequired[LambdaConfigTypeTypeDef],  # (2)
+    AutoVerifiedAttributes: NotRequired[Sequence[VerifiedAttributeTypeType]],  # (3)
+    SmsVerificationMessage: NotRequired[str],
+    EmailVerificationMessage: NotRequired[str],
+    EmailVerificationSubject: NotRequired[str],
+    VerificationMessageTemplate: NotRequired[VerificationMessageTemplateTypeTypeDef],  # (4)
+    SmsAuthenticationMessage: NotRequired[str],
+    MfaConfiguration: NotRequired[UserPoolMfaTypeType],  # (5)
+    DeviceConfiguration: NotRequired[DeviceConfigurationTypeTypeDef],  # (6)
+    EmailConfiguration: NotRequired[EmailConfigurationTypeTypeDef],  # (7)
+    SmsConfiguration: NotRequired[SmsConfigurationTypeTypeDef],  # (8)
+    UserPoolTags: NotRequired[Mapping[str, str]],
+    AdminCreateUserConfig: NotRequired[AdminCreateUserConfigTypeTypeDef],  # (9)
+    UserPoolAddOns: NotRequired[UserPoolAddOnsTypeTypeDef],  # (10)
+    AccountRecoverySetting: NotRequired[AccountRecoverySettingTypeTypeDef],  # (11)
+```
 
-- `UserPoolId`: `str`
-
-Optional fields:
-
-- `Policies`:
-  [UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef)
-- `LambdaConfig`:
-  [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
-- `AutoVerifiedAttributes`:
-  `Sequence`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
-- `SmsVerificationMessage`: `str`
-- `EmailVerificationMessage`: `str`
-- `EmailVerificationSubject`: `str`
-- `VerificationMessageTemplate`:
-  [VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef)
-- `SmsAuthenticationMessage`: `str`
-- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
-- `DeviceConfiguration`:
-  [DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef)
-- `EmailConfiguration`:
-  [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
-- `SmsConfiguration`:
-  [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-- `UserPoolTags`: `Mapping`\[`str`, `str`\]
-- `AdminCreateUserConfig`:
-  [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
-- `UserPoolAddOns`:
-  [UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef)
-- `AccountRecoverySetting`:
-  [AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef)
-
-<a id="usercontextdatatypetypedef"></a>
-
+1. See [:material-code-braces: UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef) 
+2. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
+3. See [:material-code-brackets: VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype) 
+4. See [:material-code-braces: VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef) 
+5. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+6. See [:material-code-braces: DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef) 
+7. See [:material-code-braces: EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef) 
+8. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
+9. See [:material-code-braces: AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef) 
+10. See [:material-code-braces: UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef) 
+11. See [:material-code-braces: AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef) 
 ## UserContextDataTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UserContextDataTypeTypeDef
+
+def get_value() -> UserContextDataTypeTypeDef:
+    return {
+        "EncodedData": ...,
+    }
 ```
 
-Optional fields:
-
-- `EncodedData`: `str`
-
-<a id="userimportjobtypetypedef"></a>
+```python title="Definition"
+class UserContextDataTypeTypeDef(TypedDict):
+    EncodedData: NotRequired[str],
+```
 
 ## UserImportJobTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UserImportJobTypeTypeDef
+
+def get_value() -> UserImportJobTypeTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserImportJobTypeTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    JobId: NotRequired[str],
+    UserPoolId: NotRequired[str],
+    PreSignedUrl: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    StartDate: NotRequired[datetime],
+    CompletionDate: NotRequired[datetime],
+    Status: NotRequired[UserImportJobStatusTypeType],  # (1)
+    CloudWatchLogsRoleArn: NotRequired[str],
+    ImportedUsers: NotRequired[int],
+    SkippedUsers: NotRequired[int],
+    FailedUsers: NotRequired[int],
+    CompletionMessage: NotRequired[str],
+```
 
-- `JobName`: `str`
-- `JobId`: `str`
-- `UserPoolId`: `str`
-- `PreSignedUrl`: `str`
-- `CreationDate`: `datetime`
-- `StartDate`: `datetime`
-- `CompletionDate`: `datetime`
-- `Status`:
-  [UserImportJobStatusTypeType](./literals.md#userimportjobstatustypetype)
-- `CloudWatchLogsRoleArn`: `str`
-- `ImportedUsers`: `int`
-- `SkippedUsers`: `int`
-- `FailedUsers`: `int`
-- `CompletionMessage`: `str`
-
-<a id="userpooladdonstypetypedef"></a>
-
+1. See [:material-code-brackets: UserImportJobStatusTypeType](./literals.md#userimportjobstatustypetype) 
 ## UserPoolAddOnsTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UserPoolAddOnsTypeTypeDef
+
+def get_value() -> UserPoolAddOnsTypeTypeDef:
+    return {
+        "AdvancedSecurityMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UserPoolAddOnsTypeTypeDef(TypedDict):
+    AdvancedSecurityMode: AdvancedSecurityModeTypeType,  # (1)
+```
 
-- `AdvancedSecurityMode`:
-  [AdvancedSecurityModeTypeType](./literals.md#advancedsecuritymodetypetype)
-
-<a id="userpoolclientdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: AdvancedSecurityModeTypeType](./literals.md#advancedsecuritymodetypetype) 
 ## UserPoolClientDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UserPoolClientDescriptionTypeDef
+
+def get_value() -> UserPoolClientDescriptionTypeDef:
+    return {
+        "ClientId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClientId`: `str`
-- `UserPoolId`: `str`
-- `ClientName`: `str`
-
-<a id="userpoolclienttypetypedef"></a>
+```python title="Definition"
+class UserPoolClientDescriptionTypeDef(TypedDict):
+    ClientId: NotRequired[str],
+    UserPoolId: NotRequired[str],
+    ClientName: NotRequired[str],
+```
 
 ## UserPoolClientTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UserPoolClientTypeTypeDef
+
+def get_value() -> UserPoolClientTypeTypeDef:
+    return {
+        "UserPoolId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserPoolClientTypeTypeDef(TypedDict):
+    UserPoolId: NotRequired[str],
+    ClientName: NotRequired[str],
+    ClientId: NotRequired[str],
+    ClientSecret: NotRequired[str],
+    LastModifiedDate: NotRequired[datetime],
+    CreationDate: NotRequired[datetime],
+    RefreshTokenValidity: NotRequired[int],
+    AccessTokenValidity: NotRequired[int],
+    IdTokenValidity: NotRequired[int],
+    TokenValidityUnits: NotRequired[TokenValidityUnitsTypeTypeDef],  # (1)
+    ReadAttributes: NotRequired[List[str]],
+    WriteAttributes: NotRequired[List[str]],
+    ExplicitAuthFlows: NotRequired[List[ExplicitAuthFlowsTypeType]],  # (2)
+    SupportedIdentityProviders: NotRequired[List[str]],
+    CallbackURLs: NotRequired[List[str]],
+    LogoutURLs: NotRequired[List[str]],
+    DefaultRedirectURI: NotRequired[str],
+    AllowedOAuthFlows: NotRequired[List[OAuthFlowTypeType]],  # (3)
+    AllowedOAuthScopes: NotRequired[List[str]],
+    AllowedOAuthFlowsUserPoolClient: NotRequired[bool],
+    AnalyticsConfiguration: NotRequired[AnalyticsConfigurationTypeTypeDef],  # (4)
+    PreventUserExistenceErrors: NotRequired[PreventUserExistenceErrorTypesType],  # (5)
+    EnableTokenRevocation: NotRequired[bool],
+```
 
-- `UserPoolId`: `str`
-- `ClientName`: `str`
-- `ClientId`: `str`
-- `ClientSecret`: `str`
-- `LastModifiedDate`: `datetime`
-- `CreationDate`: `datetime`
-- `RefreshTokenValidity`: `int`
-- `AccessTokenValidity`: `int`
-- `IdTokenValidity`: `int`
-- `TokenValidityUnits`:
-  [TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef)
-- `ReadAttributes`: `List`\[`str`\]
-- `WriteAttributes`: `List`\[`str`\]
-- `ExplicitAuthFlows`:
-  `List`\[[ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype)\]
-- `SupportedIdentityProviders`: `List`\[`str`\]
-- `CallbackURLs`: `List`\[`str`\]
-- `LogoutURLs`: `List`\[`str`\]
-- `DefaultRedirectURI`: `str`
-- `AllowedOAuthFlows`:
-  `List`\[[OAuthFlowTypeType](./literals.md#oauthflowtypetype)\]
-- `AllowedOAuthScopes`: `List`\[`str`\]
-- `AllowedOAuthFlowsUserPoolClient`: `bool`
-- `AnalyticsConfiguration`:
-  [AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef)
-- `PreventUserExistenceErrors`:
-  [PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype)
-- `EnableTokenRevocation`: `bool`
-
-<a id="userpooldescriptiontypetypedef"></a>
-
+1. See [:material-code-braces: TokenValidityUnitsTypeTypeDef](./type_defs.md#tokenvalidityunitstypetypedef) 
+2. See [:material-code-brackets: ExplicitAuthFlowsTypeType](./literals.md#explicitauthflowstypetype) 
+3. See [:material-code-brackets: OAuthFlowTypeType](./literals.md#oauthflowtypetype) 
+4. See [:material-code-braces: AnalyticsConfigurationTypeTypeDef](./type_defs.md#analyticsconfigurationtypetypedef) 
+5. See [:material-code-brackets: PreventUserExistenceErrorTypesType](./literals.md#preventuserexistenceerrortypestype) 
 ## UserPoolDescriptionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UserPoolDescriptionTypeTypeDef
+
+def get_value() -> UserPoolDescriptionTypeTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserPoolDescriptionTypeTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    LambdaConfig: NotRequired[LambdaConfigTypeTypeDef],  # (1)
+    Status: NotRequired[StatusTypeType],  # (2)
+    LastModifiedDate: NotRequired[datetime],
+    CreationDate: NotRequired[datetime],
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `LambdaConfig`:
-  [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
-- `Status`: [StatusTypeType](./literals.md#statustypetype)
-- `LastModifiedDate`: `datetime`
-- `CreationDate`: `datetime`
-
-<a id="userpoolpolicytypetypedef"></a>
-
+1. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
+2. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
 ## UserPoolPolicyTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UserPoolPolicyTypeTypeDef
+
+def get_value() -> UserPoolPolicyTypeTypeDef:
+    return {
+        "PasswordPolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserPoolPolicyTypeTypeDef(TypedDict):
+    PasswordPolicy: NotRequired[PasswordPolicyTypeTypeDef],  # (1)
+```
 
-- `PasswordPolicy`:
-  [PasswordPolicyTypeTypeDef](./type_defs.md#passwordpolicytypetypedef)
-
-<a id="userpooltypetypedef"></a>
-
+1. See [:material-code-braces: PasswordPolicyTypeTypeDef](./type_defs.md#passwordpolicytypetypedef) 
 ## UserPoolTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UserPoolTypeTypeDef
+
+def get_value() -> UserPoolTypeTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserPoolTypeTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Policies: NotRequired[UserPoolPolicyTypeTypeDef],  # (1)
+    LambdaConfig: NotRequired[LambdaConfigTypeTypeDef],  # (2)
+    Status: NotRequired[StatusTypeType],  # (3)
+    LastModifiedDate: NotRequired[datetime],
+    CreationDate: NotRequired[datetime],
+    SchemaAttributes: NotRequired[List[SchemaAttributeTypeTypeDef]],  # (4)
+    AutoVerifiedAttributes: NotRequired[List[VerifiedAttributeTypeType]],  # (5)
+    AliasAttributes: NotRequired[List[AliasAttributeTypeType]],  # (6)
+    UsernameAttributes: NotRequired[List[UsernameAttributeTypeType]],  # (7)
+    SmsVerificationMessage: NotRequired[str],
+    EmailVerificationMessage: NotRequired[str],
+    EmailVerificationSubject: NotRequired[str],
+    VerificationMessageTemplate: NotRequired[VerificationMessageTemplateTypeTypeDef],  # (8)
+    SmsAuthenticationMessage: NotRequired[str],
+    MfaConfiguration: NotRequired[UserPoolMfaTypeType],  # (9)
+    DeviceConfiguration: NotRequired[DeviceConfigurationTypeTypeDef],  # (10)
+    EstimatedNumberOfUsers: NotRequired[int],
+    EmailConfiguration: NotRequired[EmailConfigurationTypeTypeDef],  # (11)
+    SmsConfiguration: NotRequired[SmsConfigurationTypeTypeDef],  # (12)
+    UserPoolTags: NotRequired[Dict[str, str]],
+    SmsConfigurationFailure: NotRequired[str],
+    EmailConfigurationFailure: NotRequired[str],
+    Domain: NotRequired[str],
+    CustomDomain: NotRequired[str],
+    AdminCreateUserConfig: NotRequired[AdminCreateUserConfigTypeTypeDef],  # (13)
+    UserPoolAddOns: NotRequired[UserPoolAddOnsTypeTypeDef],  # (14)
+    UsernameConfiguration: NotRequired[UsernameConfigurationTypeTypeDef],  # (15)
+    Arn: NotRequired[str],
+    AccountRecoverySetting: NotRequired[AccountRecoverySettingTypeTypeDef],  # (16)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Policies`:
-  [UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef)
-- `LambdaConfig`:
-  [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
-- `Status`: [StatusTypeType](./literals.md#statustypetype)
-- `LastModifiedDate`: `datetime`
-- `CreationDate`: `datetime`
-- `SchemaAttributes`:
-  `List`\[[SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef)\]
-- `AutoVerifiedAttributes`:
-  `List`\[[VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)\]
-- `AliasAttributes`:
-  `List`\[[AliasAttributeTypeType](./literals.md#aliasattributetypetype)\]
-- `UsernameAttributes`:
-  `List`\[[UsernameAttributeTypeType](./literals.md#usernameattributetypetype)\]
-- `SmsVerificationMessage`: `str`
-- `EmailVerificationMessage`: `str`
-- `EmailVerificationSubject`: `str`
-- `VerificationMessageTemplate`:
-  [VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef)
-- `SmsAuthenticationMessage`: `str`
-- `MfaConfiguration`: [UserPoolMfaTypeType](./literals.md#userpoolmfatypetype)
-- `DeviceConfiguration`:
-  [DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef)
-- `EstimatedNumberOfUsers`: `int`
-- `EmailConfiguration`:
-  [EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef)
-- `SmsConfiguration`:
-  [SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef)
-- `UserPoolTags`: `Dict`\[`str`, `str`\]
-- `SmsConfigurationFailure`: `str`
-- `EmailConfigurationFailure`: `str`
-- `Domain`: `str`
-- `CustomDomain`: `str`
-- `AdminCreateUserConfig`:
-  [AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef)
-- `UserPoolAddOns`:
-  [UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef)
-- `UsernameConfiguration`:
-  [UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef)
-- `Arn`: `str`
-- `AccountRecoverySetting`:
-  [AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef)
-
-<a id="usertypetypedef"></a>
-
+1. See [:material-code-braces: UserPoolPolicyTypeTypeDef](./type_defs.md#userpoolpolicytypetypedef) 
+2. See [:material-code-braces: LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef) 
+3. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
+4. See [:material-code-braces: SchemaAttributeTypeTypeDef](./type_defs.md#schemaattributetypetypedef) 
+5. See [:material-code-brackets: VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype) 
+6. See [:material-code-brackets: AliasAttributeTypeType](./literals.md#aliasattributetypetype) 
+7. See [:material-code-brackets: UsernameAttributeTypeType](./literals.md#usernameattributetypetype) 
+8. See [:material-code-braces: VerificationMessageTemplateTypeTypeDef](./type_defs.md#verificationmessagetemplatetypetypedef) 
+9. See [:material-code-brackets: UserPoolMfaTypeType](./literals.md#userpoolmfatypetype) 
+10. See [:material-code-braces: DeviceConfigurationTypeTypeDef](./type_defs.md#deviceconfigurationtypetypedef) 
+11. See [:material-code-braces: EmailConfigurationTypeTypeDef](./type_defs.md#emailconfigurationtypetypedef) 
+12. See [:material-code-braces: SmsConfigurationTypeTypeDef](./type_defs.md#smsconfigurationtypetypedef) 
+13. See [:material-code-braces: AdminCreateUserConfigTypeTypeDef](./type_defs.md#admincreateuserconfigtypetypedef) 
+14. See [:material-code-braces: UserPoolAddOnsTypeTypeDef](./type_defs.md#userpooladdonstypetypedef) 
+15. See [:material-code-braces: UsernameConfigurationTypeTypeDef](./type_defs.md#usernameconfigurationtypetypedef) 
+16. See [:material-code-braces: AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef) 
 ## UserTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UserTypeTypeDef
+
+def get_value() -> UserTypeTypeDef:
+    return {
+        "Username": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserTypeTypeDef(TypedDict):
+    Username: NotRequired[str],
+    Attributes: NotRequired[List[AttributeTypeTypeDef]],  # (1)
+    UserCreateDate: NotRequired[datetime],
+    UserLastModifiedDate: NotRequired[datetime],
+    Enabled: NotRequired[bool],
+    UserStatus: NotRequired[UserStatusTypeType],  # (2)
+    MFAOptions: NotRequired[List[MFAOptionTypeTypeDef]],  # (3)
+```
 
-- `Username`: `str`
-- `Attributes`:
-  `List`\[[AttributeTypeTypeDef](./type_defs.md#attributetypetypedef)\]
-- `UserCreateDate`: `datetime`
-- `UserLastModifiedDate`: `datetime`
-- `Enabled`: `bool`
-- `UserStatus`: [UserStatusTypeType](./literals.md#userstatustypetype)
-- `MFAOptions`:
-  `List`\[[MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)\]
-
-<a id="usernameconfigurationtypetypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeTypeDef](./type_defs.md#attributetypetypedef) 
+2. See [:material-code-brackets: UserStatusTypeType](./literals.md#userstatustypetype) 
+3. See [:material-code-braces: MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef) 
 ## UsernameConfigurationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import UsernameConfigurationTypeTypeDef
+
+def get_value() -> UsernameConfigurationTypeTypeDef:
+    return {
+        "CaseSensitive": ...,
+    }
 ```
 
-Required fields:
-
-- `CaseSensitive`: `bool`
-
-<a id="verificationmessagetemplatetypetypedef"></a>
+```python title="Definition"
+class UsernameConfigurationTypeTypeDef(TypedDict):
+    CaseSensitive: bool,
+```
 
 ## VerificationMessageTemplateTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import VerificationMessageTemplateTypeTypeDef
+
+def get_value() -> VerificationMessageTemplateTypeTypeDef:
+    return {
+        "SmsMessage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VerificationMessageTemplateTypeTypeDef(TypedDict):
+    SmsMessage: NotRequired[str],
+    EmailMessage: NotRequired[str],
+    EmailSubject: NotRequired[str],
+    EmailMessageByLink: NotRequired[str],
+    EmailSubjectByLink: NotRequired[str],
+    DefaultEmailOption: NotRequired[DefaultEmailOptionTypeType],  # (1)
+```
 
-- `SmsMessage`: `str`
-- `EmailMessage`: `str`
-- `EmailSubject`: `str`
-- `EmailMessageByLink`: `str`
-- `EmailSubjectByLink`: `str`
-- `DefaultEmailOption`:
-  [DefaultEmailOptionTypeType](./literals.md#defaultemailoptiontypetype)
-
-<a id="verifysoftwaretokenrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DefaultEmailOptionTypeType](./literals.md#defaultemailoptiontypetype) 
 ## VerifySoftwareTokenRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import VerifySoftwareTokenRequestRequestTypeDef
+
+def get_value() -> VerifySoftwareTokenRequestRequestTypeDef:
+    return {
+        "UserCode": ...,
+    }
 ```
 
-Required fields:
-
-- `UserCode`: `str`
-
-Optional fields:
-
-- `AccessToken`: `str`
-- `Session`: `str`
-- `FriendlyDeviceName`: `str`
-
-<a id="verifysoftwaretokenresponsetypedef"></a>
+```python title="Definition"
+class VerifySoftwareTokenRequestRequestTypeDef(TypedDict):
+    UserCode: str,
+    AccessToken: NotRequired[str],
+    Session: NotRequired[str],
+    FriendlyDeviceName: NotRequired[str],
+```
 
 ## VerifySoftwareTokenResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import VerifySoftwareTokenResponseTypeDef
+
+def get_value() -> VerifySoftwareTokenResponseTypeDef:
+    return {
+        "Status": ...,
+        "Session": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VerifySoftwareTokenResponseTypeDef(TypedDict):
+    Status: VerifySoftwareTokenResponseTypeType,  # (1)
+    Session: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`:
-  [VerifySoftwareTokenResponseTypeType](./literals.md#verifysoftwaretokenresponsetypetype)
-- `Session`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="verifyuserattributerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VerifySoftwareTokenResponseTypeType](./literals.md#verifysoftwaretokenresponsetypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VerifyUserAttributeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cognito_idp.type_defs import VerifyUserAttributeRequestRequestTypeDef
+
+def get_value() -> VerifyUserAttributeRequestRequestTypeDef:
+    return {
+        "AccessToken": ...,
+        "AttributeName": ...,
+        "Code": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VerifyUserAttributeRequestRequestTypeDef(TypedDict):
+    AccessToken: str,
+    AttributeName: str,
+    Code: str,
+```
 
-- `AccessToken`: `str`
-- `AttributeName`: `str`
-- `Code`: `str`

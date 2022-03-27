@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-kafka-module"></a>
-
-# Type annotations for boto3 Kafka module
+#  Kafka module
 
 > [Index](../README.md) > Kafka
 
-Auto-generated documentation for
-[Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
-type annotations stubs module
-[mypy-boto3-kafka](https://pypi.org/project/mypy-boto3-kafka/).
+!!! note ""
 
-- [Type annotations for boto3 Kafka module](#type-annotations-for-boto3-kafka-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [KafkaClient](#kafkaclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
+    type annotations stubs module [mypy-boto3-kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Kafka`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[kafka]'
 python -m pip install mypy-boto3-kafka
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,95 +42,37 @@ python -m pip install mypy-boto3-kafka
 python -m pip uninstall -y mypy-boto3-kafka
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="kafkaclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## KafkaClient
 
-Type annotations for `boto3.client("kafka")` as [KafkaClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("kafka")` as [KafkaClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_kafka.client import KafkaClient
+
+def get_client() -> KafkaClient:
+    return Session().cleint("kafka")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_associate_scram_secret](./client.md#batch_associate_scram_secret)
-- [batch_disassociate_scram_secret](./client.md#batch_disassociate_scram_secret)
-- [can_paginate](./client.md#can_paginate)
-- [create_cluster](./client.md#create_cluster)
-- [create_cluster_v2](./client.md#create_cluster_v2)
-- [create_configuration](./client.md#create_configuration)
-- [delete_cluster](./client.md#delete_cluster)
-- [delete_configuration](./client.md#delete_configuration)
-- [describe_cluster](./client.md#describe_cluster)
-- [describe_cluster_operation](./client.md#describe_cluster_operation)
-- [describe_cluster_v2](./client.md#describe_cluster_v2)
-- [describe_configuration](./client.md#describe_configuration)
-- [describe_configuration_revision](./client.md#describe_configuration_revision)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_bootstrap_brokers](./client.md#get_bootstrap_brokers)
-- [get_compatible_kafka_versions](./client.md#get_compatible_kafka_versions)
-- [get_paginator](./client.md#get_paginator)
-- [list_cluster_operations](./client.md#list_cluster_operations)
-- [list_clusters](./client.md#list_clusters)
-- [list_clusters_v2](./client.md#list_clusters_v2)
-- [list_configuration_revisions](./client.md#list_configuration_revisions)
-- [list_configurations](./client.md#list_configurations)
-- [list_kafka_versions](./client.md#list_kafka_versions)
-- [list_nodes](./client.md#list_nodes)
-- [list_scram_secrets](./client.md#list_scram_secrets)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [reboot_broker](./client.md#reboot_broker)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_broker_count](./client.md#update_broker_count)
-- [update_broker_storage](./client.md#update_broker_storage)
-- [update_broker_type](./client.md#update_broker_type)
-- [update_cluster_configuration](./client.md#update_cluster_configuration)
-- [update_cluster_kafka_version](./client.md#update_cluster_kafka_version)
-- [update_configuration](./client.md#update_configuration)
-- [update_connectivity](./client.md#update_connectivity)
-- [update_monitoring](./client.md#update_monitoring)
-- [update_security](./client.md#update_security)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-KafkaClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- InternalServerErrorException
-- NotFoundException
-- ServiceUnavailableException
-- TooManyRequestsException
-- UnauthorizedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("kafka").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("kafka").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_kafka.paginator import ListClusterOperationsPaginator, ...
+from mypy_boto3_kafka.paginator import ListClusterOperationsPaginator
+
+def get_list_cluster_operations_paginator() -> ListClusterOperationsPaginator:
+    return Session().client("kafka").get_paginator("list_cluster_operations"))
 ```
 
 - [ListClusterOperationsPaginator](./paginators.md#listclusteroperationspaginator)
@@ -164,16 +84,23 @@ from mypy_boto3_kafka.paginator import ListClusterOperationsPaginator, ...
 - [ListNodesPaginator](./paginators.md#listnodespaginator)
 - [ListScramSecretsPaginator](./paginators.md#listscramsecretspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kafka.literals import BrokerAZDistributionType
 
-```python
-from mypy_boto3_kafka.literals import BrokerAZDistributionType, ...
+def get_value() -> BrokerAZDistributionType:
+    return "DEFAULT"
 ```
 
 - [BrokerAZDistributionType](./literals.md#brokerazdistributiontype)
@@ -196,18 +123,23 @@ from mypy_boto3_kafka.literals import BrokerAZDistributionType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretRequestRequestTypeDef
 
-```python
-from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretRequestRequestTypeDef, ...
+def get_value() -> BatchAssociateScramSecretRequestRequestTypeDef:
+    return {
+        "ClusterArn": ...,
+        "SecretArnList": ...,
+    }
 ```
 
 - [BatchAssociateScramSecretRequestRequestTypeDef](./type_defs.md#batchassociatescramsecretrequestrequesttypedef)
@@ -265,20 +197,28 @@ from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretRequestRequestTy
 - [JmxExporterInfoTypeDef](./type_defs.md#jmxexporterinfotypedef)
 - [JmxExporterTypeDef](./type_defs.md#jmxexportertypedef)
 - [KafkaVersionTypeDef](./type_defs.md#kafkaversiontypedef)
+- [ListClusterOperationsRequestListClusterOperationsPaginateTypeDef](./type_defs.md#listclusteroperationsrequestlistclusteroperationspaginatetypedef)
 - [ListClusterOperationsRequestRequestTypeDef](./type_defs.md#listclusteroperationsrequestrequesttypedef)
 - [ListClusterOperationsResponseTypeDef](./type_defs.md#listclusteroperationsresponsetypedef)
+- [ListClustersRequestListClustersPaginateTypeDef](./type_defs.md#listclustersrequestlistclusterspaginatetypedef)
 - [ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef)
 - [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)
+- [ListClustersV2RequestListClustersV2PaginateTypeDef](./type_defs.md#listclustersv2requestlistclustersv2paginatetypedef)
 - [ListClustersV2RequestRequestTypeDef](./type_defs.md#listclustersv2requestrequesttypedef)
 - [ListClustersV2ResponseTypeDef](./type_defs.md#listclustersv2responsetypedef)
+- [ListConfigurationRevisionsRequestListConfigurationRevisionsPaginateTypeDef](./type_defs.md#listconfigurationrevisionsrequestlistconfigurationrevisionspaginatetypedef)
 - [ListConfigurationRevisionsRequestRequestTypeDef](./type_defs.md#listconfigurationrevisionsrequestrequesttypedef)
 - [ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef)
+- [ListConfigurationsRequestListConfigurationsPaginateTypeDef](./type_defs.md#listconfigurationsrequestlistconfigurationspaginatetypedef)
 - [ListConfigurationsRequestRequestTypeDef](./type_defs.md#listconfigurationsrequestrequesttypedef)
 - [ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef)
+- [ListKafkaVersionsRequestListKafkaVersionsPaginateTypeDef](./type_defs.md#listkafkaversionsrequestlistkafkaversionspaginatetypedef)
 - [ListKafkaVersionsRequestRequestTypeDef](./type_defs.md#listkafkaversionsrequestrequesttypedef)
 - [ListKafkaVersionsResponseTypeDef](./type_defs.md#listkafkaversionsresponsetypedef)
+- [ListNodesRequestListNodesPaginateTypeDef](./type_defs.md#listnodesrequestlistnodespaginatetypedef)
 - [ListNodesRequestRequestTypeDef](./type_defs.md#listnodesrequestrequesttypedef)
 - [ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef)
+- [ListScramSecretsRequestListScramSecretsPaginateTypeDef](./type_defs.md#listscramsecretsrequestlistscramsecretspaginatetypedef)
 - [ListScramSecretsRequestRequestTypeDef](./type_defs.md#listscramsecretsrequestrequesttypedef)
 - [ListScramSecretsResponseTypeDef](./type_defs.md#listscramsecretsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -334,3 +274,4 @@ from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretRequestRequestTy
 - [UpdateSecurityResponseTypeDef](./type_defs.md#updatesecurityresponsetypedef)
 - [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - [ZookeeperNodeInfoTypeDef](./type_defs.md#zookeepernodeinfotypedef)
+

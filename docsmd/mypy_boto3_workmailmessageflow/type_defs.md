@@ -1,104 +1,123 @@
-<a id="typed-dictionaries-for-boto3-workmailmessageflow-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 WorkMailMessageFlow module
+> [Index](../README.md) > [WorkMailMessageFlow](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [WorkMailMessageFlow](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
-type annotations stubs module
-[mypy-boto3-workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
-
-- [Typed dictionaries for boto3 WorkMailMessageFlow module](#typed-dictionaries-for-boto3-workmailmessageflow-module)
-  - [GetRawMessageContentRequestRequestTypeDef](#getrawmessagecontentrequestrequesttypedef)
-  - [GetRawMessageContentResponseTypeDef](#getrawmessagecontentresponsetypedef)
-  - [PutRawMessageContentRequestRequestTypeDef](#putrawmessagecontentrequestrequesttypedef)
-  - [RawMessageContentTypeDef](#rawmessagecontenttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3ReferenceTypeDef](#s3referencetypedef)
-
-<a id="getrawmessagecontentrequestrequesttypedef"></a>
+    Auto-generated documentation for [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
+    type annotations stubs module [mypy-boto3-workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
 ## GetRawMessageContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentRequestRequestTypeDef
+
+def get_value() -> GetRawMessageContentRequestRequestTypeDef:
+    return {
+        "messageId": ...,
+    }
 ```
 
-Required fields:
-
-- `messageId`: `str`
-
-<a id="getrawmessagecontentresponsetypedef"></a>
+```python title="Definition"
+class GetRawMessageContentRequestRequestTypeDef(TypedDict):
+    messageId: str,
+```
 
 ## GetRawMessageContentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentResponseTypeDef
+
+def get_value() -> GetRawMessageContentResponseTypeDef:
+    return {
+        "messageContent": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRawMessageContentResponseTypeDef(TypedDict):
+    messageContent: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `messageContent`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putrawmessagecontentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRawMessageContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workmailmessageflow.type_defs import PutRawMessageContentRequestRequestTypeDef
+
+def get_value() -> PutRawMessageContentRequestRequestTypeDef:
+    return {
+        "messageId": ...,
+        "content": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRawMessageContentRequestRequestTypeDef(TypedDict):
+    messageId: str,
+    content: RawMessageContentTypeDef,  # (1)
+```
 
-- `messageId`: `str`
-- `content`:
-  [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
-
-<a id="rawmessagecontenttypedef"></a>
-
+1. See [:material-code-braces: RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef) 
 ## RawMessageContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workmailmessageflow.type_defs import RawMessageContentTypeDef
+
+def get_value() -> RawMessageContentTypeDef:
+    return {
+        "s3Reference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RawMessageContentTypeDef(TypedDict):
+    s3Reference: S3ReferenceTypeDef,  # (1)
+```
 
-- `s3Reference`: [S3ReferenceTypeDef](./type_defs.md#s3referencetypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: S3ReferenceTypeDef](./type_defs.md#s3referencetypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workmailmessageflow.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3referencetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3ReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workmailmessageflow.type_defs import S3ReferenceTypeDef
+
+def get_value() -> S3ReferenceTypeDef:
+    return {
+        "bucket": ...,
+        "key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3ReferenceTypeDef(TypedDict):
+    bucket: str,
+    key: str,
+    objectVersion: NotRequired[str],
+```
 
-- `bucket`: `str`
-- `key`: `str`
-
-Optional fields:
-
-- `objectVersion`: `str`

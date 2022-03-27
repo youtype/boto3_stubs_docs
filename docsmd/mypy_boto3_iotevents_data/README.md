@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-ioteventsdata-module"></a>
-
-# Type annotations for boto3 IoTEventsData module
+#  IoTEventsData module
 
 > [Index](../README.md) > IoTEventsData
 
-Auto-generated documentation for
-[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
-type annotations stubs module
-[mypy-boto3-iotevents-data](https://pypi.org/project/mypy-boto3-iotevents-data/).
+!!! note ""
 
-- [Type annotations for boto3 IoTEventsData module](#type-annotations-for-boto3-ioteventsdata-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoTEventsDataClient](#ioteventsdataclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
+    type annotations stubs module [mypy-boto3-iotevents-data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoTEventsData`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iotevents-data]'
 python -m pip install mypy-boto3-iotevents-data
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,67 +42,41 @@ python -m pip install mypy-boto3-iotevents-data
 python -m pip uninstall -y mypy-boto3-iotevents-data
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ioteventsdataclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoTEventsDataClient
 
-Type annotations for `boto3.client("iotevents-data")` as
-[IoTEventsDataClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iotevents-data")` as [IoTEventsDataClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iotevents_data.client import IoTEventsDataClient
+
+def get_client() -> IoTEventsDataClient:
+    return Session().cleint("iotevents-data")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [batch_acknowledge_alarm](./client.md#batch_acknowledge_alarm)
-- [batch_disable_alarm](./client.md#batch_disable_alarm)
-- [batch_enable_alarm](./client.md#batch_enable_alarm)
-- [batch_put_message](./client.md#batch_put_message)
-- [batch_reset_alarm](./client.md#batch_reset_alarm)
-- [batch_snooze_alarm](./client.md#batch_snooze_alarm)
-- [batch_update_detector](./client.md#batch_update_detector)
-- [can_paginate](./client.md#can_paginate)
-- [describe_alarm](./client.md#describe_alarm)
-- [describe_detector](./client.md#describe_detector)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_alarms](./client.md#list_alarms)
-- [list_detectors](./client.md#list_detectors)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-IoTEventsDataClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- InternalFailureException
-- InvalidRequestException
-- ResourceNotFoundException
-- ServiceUnavailableException
-- ThrottlingException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotevents_data.literals import AlarmStateNameType
 
-```python
-from mypy_boto3_iotevents_data.literals import AlarmStateNameType, ...
+def get_value() -> AlarmStateNameType:
+    return "ACKNOWLEDGED"
 ```
 
 - [AlarmStateNameType](./literals.md#alarmstatenametype)
@@ -136,17 +89,20 @@ from mypy_boto3_iotevents_data.literals import AlarmStateNameType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotevents_data.type_defs import AcknowledgeActionConfigurationTypeDef
 
-```python
-from mypy_boto3_iotevents_data.type_defs import AcknowledgeActionConfigurationTypeDef, ...
+def get_value() -> AcknowledgeActionConfigurationTypeDef:
+    return {
+        "note": ...,
+    }
 ```
 
 - [AcknowledgeActionConfigurationTypeDef](./type_defs.md#acknowledgeactionconfigurationtypedef)
@@ -205,3 +161,4 @@ from mypy_boto3_iotevents_data.type_defs import AcknowledgeActionConfigurationTy
 - [UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)
 - [VariableDefinitionTypeDef](./type_defs.md#variabledefinitiontypedef)
 - [VariableTypeDef](./type_defs.md#variabletypedef)
+

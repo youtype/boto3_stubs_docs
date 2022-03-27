@@ -1,57 +1,18 @@
-<a id="apprunnerclient-for-boto3-apprunner-module"></a>
-
-# AppRunnerClient for boto3 AppRunner module
+# AppRunnerClient
 
 > [Index](../README.md) > [AppRunner](./README.md) > AppRunnerClient
 
-Auto-generated documentation for
-[AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
-type annotations stubs module
-[mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
+!!! note ""
 
-- [AppRunnerClient for boto3 AppRunner module](#apprunnerclient-for-boto3-apprunner-module)
-  - [AppRunnerClient](#apprunnerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_custom_domain](#associate_custom_domain)
-    - [can_paginate](#can_paginate)
-    - [create_auto_scaling_configuration](#create_auto_scaling_configuration)
-    - [create_connection](#create_connection)
-    - [create_service](#create_service)
-    - [create_vpc_connector](#create_vpc_connector)
-    - [delete_auto_scaling_configuration](#delete_auto_scaling_configuration)
-    - [delete_connection](#delete_connection)
-    - [delete_service](#delete_service)
-    - [delete_vpc_connector](#delete_vpc_connector)
-    - [describe_auto_scaling_configuration](#describe_auto_scaling_configuration)
-    - [describe_custom_domains](#describe_custom_domains)
-    - [describe_service](#describe_service)
-    - [describe_vpc_connector](#describe_vpc_connector)
-    - [disassociate_custom_domain](#disassociate_custom_domain)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_auto_scaling_configurations](#list_auto_scaling_configurations)
-    - [list_connections](#list_connections)
-    - [list_operations](#list_operations)
-    - [list_services](#list_services)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_vpc_connectors](#list_vpc_connectors)
-    - [pause_service](#pause_service)
-    - [resume_service](#resume_service)
-    - [start_deployment](#start_deployment)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_service](#update_service)
-
-<a id="apprunnerclient"></a>
+    Auto-generated documentation for [AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
+    type annotations stubs module [mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
 
 ## AppRunnerClient
 
-Type annotations for `boto3.client("apprunner")`
+Type annotations and code completion for `#!python boto3.client("apprunner")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_apprunner.client import AppRunnerClient
 
@@ -59,689 +20,892 @@ def get_apprunner_client() -> AppRunnerClient:
     return Session().client("apprunner")
 ```
 
-Boto3 documentation:
-[AppRunner.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("apprunner").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("apprunner")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServiceErrorException,
+    client.InvalidRequestException,
+    client.InvalidStateException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_apprunner.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServiceErrorException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.InvalidStateException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AppRunnerClient exceptions.
-
-Type annotations for `boto3.client("apprunner").exceptions` method.
-
-Boto3 documentation:
-[AppRunner.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_custom\_domain"></a>
-
-### associate_custom_domain
+### associate\_custom\_domain
 
 Associate your own domain name with the App Runner subdomain URL of your App
 Runner service.
 
-Type annotations for `boto3.client("apprunner").associate_custom_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("apprunner").associate_custom_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.associate_custom_domain)
 
-Boto3 documentation:
-[AppRunner.Client.associate_custom_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.associate_custom_domain)
+```python title="Method definition"
+def associate_custom_domain(
+    self,
+    *,
+    ServiceArn: str,
+    DomainName: str,
+    EnableWWWSubdomain: bool = ...,
+) -> AssociateCustomDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateCustomDomainRequestRequestTypeDef](./type_defs.md#associatecustomdomainrequestrequesttypedef).
+1. See [:material-code-braces: AssociateCustomDomainResponseTypeDef](./type_defs.md#associatecustomdomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
-- `DomainName`: `str` *(required)*
-- `EnableWWWSubdomain`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AssociateCustomDomainRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+    "DomainName": ...,
+}
 
-Returns
-[AssociateCustomDomainResponseTypeDef](./type_defs.md#associatecustomdomainresponsetypedef).
+parent.associate_custom_domain(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateCustomDomainRequestRequestTypeDef](./type_defs.md#associatecustomdomainrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("apprunner").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.can_paginate)
 
-Boto3 documentation:
-[AppRunner.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_auto\_scaling\_configuration"></a>
-
-### create_auto_scaling_configuration
+### create\_auto\_scaling\_configuration
 
 Create an App Runner automatic scaling configuration resource.
 
-Type annotations for
-`boto3.client("apprunner").create_auto_scaling_configuration` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").create_auto_scaling_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_auto_scaling_configuration)
 
-Boto3 documentation:
-[AppRunner.Client.create_auto_scaling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_auto_scaling_configuration)
+```python title="Method definition"
+def create_auto_scaling_configuration(
+    self,
+    *,
+    AutoScalingConfigurationName: str,
+    MaxConcurrency: int = ...,
+    MinSize: int = ...,
+    MaxSize: int = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateAutoScalingConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAutoScalingConfigurationRequestRequestTypeDef](./type_defs.md#createautoscalingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateAutoScalingConfigurationResponseTypeDef](./type_defs.md#createautoscalingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingConfigurationName`: `str` *(required)*
-- `MaxConcurrency`: `int`
-- `MinSize`: `int`
-- `MaxSize`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAutoScalingConfigurationRequestRequestTypeDef = {  # (1)
+    "AutoScalingConfigurationName": ...,
+}
 
-Returns
-[CreateAutoScalingConfigurationResponseTypeDef](./type_defs.md#createautoscalingconfigurationresponsetypedef).
+parent.create_auto_scaling_configuration(**kwargs)
+```
 
-<a id="create\_connection"></a>
+1. See [:material-code-braces: CreateAutoScalingConfigurationRequestRequestTypeDef](./type_defs.md#createautoscalingconfigurationrequestrequesttypedef) 
 
-### create_connection
+### create\_connection
 
 Create an App Runner connection resource.
 
-Type annotations for `boto3.client("apprunner").create_connection` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").create_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_connection)
 
-Boto3 documentation:
-[AppRunner.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_connection)
+```python title="Method definition"
+def create_connection(
+    self,
+    *,
+    ConnectionName: str,
+    ProviderType: ProviderTypeType,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateConnectionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef).
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionName`: `str` *(required)*
-- `ProviderType`: `Literal['GITHUB']` (see
-  [ProviderTypeType](./literals.md#providertypetype)) *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateConnectionRequestRequestTypeDef = {  # (1)
+    "ConnectionName": ...,
+    "ProviderType": ...,
+}
 
-Returns
-[CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
+parent.create_connection(**kwargs)
+```
 
-<a id="create\_service"></a>
+1. See [:material-code-braces: CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef) 
 
-### create_service
+### create\_service
 
 Create an App Runner service.
 
-Type annotations for `boto3.client("apprunner").create_service` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").create_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_service)
 
-Boto3 documentation:
-[AppRunner.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_service)
+```python title="Method definition"
+def create_service(
+    self,
+    *,
+    ServiceName: str,
+    SourceConfiguration: SourceConfigurationTypeDef,  # (1)
+    InstanceConfiguration: InstanceConfigurationTypeDef = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    EncryptionConfiguration: EncryptionConfigurationTypeDef = ...,  # (4)
+    HealthCheckConfiguration: HealthCheckConfigurationTypeDef = ...,  # (5)
+    AutoScalingConfigurationArn: str = ...,
+    NetworkConfiguration: NetworkConfigurationTypeDef = ...,  # (6)
+) -> CreateServiceResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateServiceRequestRequestTypeDef](./type_defs.md#createservicerequestrequesttypedef).
+1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+2. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+5. See [:material-code-braces: HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef) 
+6. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+7. See [:material-code-braces: CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceName`: `str` *(required)*
-- `SourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-  *(required)*
-- `InstanceConfiguration`:
-  [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-- `HealthCheckConfiguration`:
-  [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
-- `AutoScalingConfigurationArn`: `str`
-- `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateServiceRequestRequestTypeDef = {  # (1)
+    "ServiceName": ...,
+    "SourceConfiguration": ...,
+}
 
-Returns
-[CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
+parent.create_service(**kwargs)
+```
 
-<a id="create\_vpc\_connector"></a>
+1. See [:material-code-braces: CreateServiceRequestRequestTypeDef](./type_defs.md#createservicerequestrequesttypedef) 
 
-### create_vpc_connector
+### create\_vpc\_connector
 
 Create an App Runner VPC connector resource.
 
-Type annotations for `boto3.client("apprunner").create_vpc_connector` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").create_vpc_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_vpc_connector)
 
-Boto3 documentation:
-[AppRunner.Client.create_vpc_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_vpc_connector)
+```python title="Method definition"
+def create_vpc_connector(
+    self,
+    *,
+    VpcConnectorName: str,
+    Subnets: Sequence[str],
+    SecurityGroups: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateVpcConnectorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateVpcConnectorRequestRequestTypeDef](./type_defs.md#createvpcconnectorrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateVpcConnectorResponseTypeDef](./type_defs.md#createvpcconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VpcConnectorName`: `str` *(required)*
-- `Subnets`: `Sequence`\[`str`\] *(required)*
-- `SecurityGroups`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVpcConnectorRequestRequestTypeDef = {  # (1)
+    "VpcConnectorName": ...,
+    "Subnets": ...,
+}
 
-Returns
-[CreateVpcConnectorResponseTypeDef](./type_defs.md#createvpcconnectorresponsetypedef).
+parent.create_vpc_connector(**kwargs)
+```
 
-<a id="delete\_auto\_scaling\_configuration"></a>
+1. See [:material-code-braces: CreateVpcConnectorRequestRequestTypeDef](./type_defs.md#createvpcconnectorrequestrequesttypedef) 
 
-### delete_auto_scaling_configuration
+### delete\_auto\_scaling\_configuration
 
 Delete an App Runner automatic scaling configuration resource.
 
-Type annotations for
-`boto3.client("apprunner").delete_auto_scaling_configuration` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").delete_auto_scaling_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_auto_scaling_configuration)
 
-Boto3 documentation:
-[AppRunner.Client.delete_auto_scaling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_auto_scaling_configuration)
+```python title="Method definition"
+def delete_auto_scaling_configuration(
+    self,
+    *,
+    AutoScalingConfigurationArn: str,
+) -> DeleteAutoScalingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAutoScalingConfigurationRequestRequestTypeDef](./type_defs.md#deleteautoscalingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DeleteAutoScalingConfigurationResponseTypeDef](./type_defs.md#deleteautoscalingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingConfigurationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAutoScalingConfigurationRequestRequestTypeDef = {  # (1)
+    "AutoScalingConfigurationArn": ...,
+}
 
-Returns
-[DeleteAutoScalingConfigurationResponseTypeDef](./type_defs.md#deleteautoscalingconfigurationresponsetypedef).
+parent.delete_auto_scaling_configuration(**kwargs)
+```
 
-<a id="delete\_connection"></a>
+1. See [:material-code-braces: DeleteAutoScalingConfigurationRequestRequestTypeDef](./type_defs.md#deleteautoscalingconfigurationrequestrequesttypedef) 
 
-### delete_connection
+### delete\_connection
 
 Delete an App Runner connection.
 
-Type annotations for `boto3.client("apprunner").delete_connection` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").delete_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_connection)
 
-Boto3 documentation:
-[AppRunner.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_connection)
+```python title="Method definition"
+def delete_connection(
+    self,
+    *,
+    ConnectionArn: str,
+) -> DeleteConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectionRequestRequestTypeDef = {  # (1)
+    "ConnectionArn": ...,
+}
 
-Returns
-[DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
+parent.delete_connection(**kwargs)
+```
 
-<a id="delete\_service"></a>
+1. See [:material-code-braces: DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef) 
 
-### delete_service
+### delete\_service
 
 Delete an App Runner service.
 
-Type annotations for `boto3.client("apprunner").delete_service` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").delete_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_service)
 
-Boto3 documentation:
-[AppRunner.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_service)
+```python title="Method definition"
+def delete_service(
+    self,
+    *,
+    ServiceArn: str,
+) -> DeleteServiceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef).
+1. See [:material-code-braces: DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+}
 
-Returns
-[DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef).
+parent.delete_service(**kwargs)
+```
 
-<a id="delete\_vpc\_connector"></a>
+1. See [:material-code-braces: DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef) 
 
-### delete_vpc_connector
+### delete\_vpc\_connector
 
 Delete an App Runner VPC connector resource.
 
-Type annotations for `boto3.client("apprunner").delete_vpc_connector` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").delete_vpc_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_vpc_connector)
 
-Boto3 documentation:
-[AppRunner.Client.delete_vpc_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_vpc_connector)
+```python title="Method definition"
+def delete_vpc_connector(
+    self,
+    *,
+    VpcConnectorArn: str,
+) -> DeleteVpcConnectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVpcConnectorRequestRequestTypeDef](./type_defs.md#deletevpcconnectorrequestrequesttypedef).
+1. See [:material-code-braces: DeleteVpcConnectorResponseTypeDef](./type_defs.md#deletevpcconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VpcConnectorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVpcConnectorRequestRequestTypeDef = {  # (1)
+    "VpcConnectorArn": ...,
+}
 
-Returns
-[DeleteVpcConnectorResponseTypeDef](./type_defs.md#deletevpcconnectorresponsetypedef).
+parent.delete_vpc_connector(**kwargs)
+```
 
-<a id="describe\_auto\_scaling\_configuration"></a>
+1. See [:material-code-braces: DeleteVpcConnectorRequestRequestTypeDef](./type_defs.md#deletevpcconnectorrequestrequesttypedef) 
 
-### describe_auto_scaling_configuration
+### describe\_auto\_scaling\_configuration
 
 Return a full description of an App Runner automatic scaling configuration
 resource.
 
-Type annotations for
-`boto3.client("apprunner").describe_auto_scaling_configuration` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").describe_auto_scaling_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_auto_scaling_configuration)
 
-Boto3 documentation:
-[AppRunner.Client.describe_auto_scaling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_auto_scaling_configuration)
+```python title="Method definition"
+def describe_auto_scaling_configuration(
+    self,
+    *,
+    AutoScalingConfigurationArn: str,
+) -> DescribeAutoScalingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAutoScalingConfigurationRequestRequestTypeDef](./type_defs.md#describeautoscalingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAutoScalingConfigurationResponseTypeDef](./type_defs.md#describeautoscalingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AutoScalingConfigurationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAutoScalingConfigurationRequestRequestTypeDef = {  # (1)
+    "AutoScalingConfigurationArn": ...,
+}
 
-Returns
-[DescribeAutoScalingConfigurationResponseTypeDef](./type_defs.md#describeautoscalingconfigurationresponsetypedef).
+parent.describe_auto_scaling_configuration(**kwargs)
+```
 
-<a id="describe\_custom\_domains"></a>
+1. See [:material-code-braces: DescribeAutoScalingConfigurationRequestRequestTypeDef](./type_defs.md#describeautoscalingconfigurationrequestrequesttypedef) 
 
-### describe_custom_domains
+### describe\_custom\_domains
 
 Return a description of custom domain names that are associated with an App
 Runner service.
 
-Type annotations for `boto3.client("apprunner").describe_custom_domains`
-method.
+Type annotations and code completion for `#!python boto3.client("apprunner").describe_custom_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_custom_domains)
 
-Boto3 documentation:
-[AppRunner.Client.describe_custom_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_custom_domains)
+```python title="Method definition"
+def describe_custom_domains(
+    self,
+    *,
+    ServiceArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeCustomDomainsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCustomDomainsRequestRequestTypeDef](./type_defs.md#describecustomdomainsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCustomDomainsResponseTypeDef](./type_defs.md#describecustomdomainsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomDomainsRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+}
 
-Returns
-[DescribeCustomDomainsResponseTypeDef](./type_defs.md#describecustomdomainsresponsetypedef).
+parent.describe_custom_domains(**kwargs)
+```
 
-<a id="describe\_service"></a>
+1. See [:material-code-braces: DescribeCustomDomainsRequestRequestTypeDef](./type_defs.md#describecustomdomainsrequestrequesttypedef) 
 
-### describe_service
+### describe\_service
 
 Return a full description of an App Runner service.
 
-Type annotations for `boto3.client("apprunner").describe_service` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").describe_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_service)
 
-Boto3 documentation:
-[AppRunner.Client.describe_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_service)
+```python title="Method definition"
+def describe_service(
+    self,
+    *,
+    ServiceArn: str,
+) -> DescribeServiceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeServiceRequestRequestTypeDef](./type_defs.md#describeservicerequestrequesttypedef).
+1. See [:material-code-braces: DescribeServiceResponseTypeDef](./type_defs.md#describeserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeServiceRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+}
 
-Returns
-[DescribeServiceResponseTypeDef](./type_defs.md#describeserviceresponsetypedef).
+parent.describe_service(**kwargs)
+```
 
-<a id="describe\_vpc\_connector"></a>
+1. See [:material-code-braces: DescribeServiceRequestRequestTypeDef](./type_defs.md#describeservicerequestrequesttypedef) 
 
-### describe_vpc_connector
+### describe\_vpc\_connector
 
 Return a description of an App Runner VPC connector resource.
 
-Type annotations for `boto3.client("apprunner").describe_vpc_connector` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").describe_vpc_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_vpc_connector)
 
-Boto3 documentation:
-[AppRunner.Client.describe_vpc_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_vpc_connector)
+```python title="Method definition"
+def describe_vpc_connector(
+    self,
+    *,
+    VpcConnectorArn: str,
+) -> DescribeVpcConnectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVpcConnectorRequestRequestTypeDef](./type_defs.md#describevpcconnectorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeVpcConnectorResponseTypeDef](./type_defs.md#describevpcconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VpcConnectorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcConnectorRequestRequestTypeDef = {  # (1)
+    "VpcConnectorArn": ...,
+}
 
-Returns
-[DescribeVpcConnectorResponseTypeDef](./type_defs.md#describevpcconnectorresponsetypedef).
+parent.describe_vpc_connector(**kwargs)
+```
 
-<a id="disassociate\_custom\_domain"></a>
+1. See [:material-code-braces: DescribeVpcConnectorRequestRequestTypeDef](./type_defs.md#describevpcconnectorrequestrequesttypedef) 
 
-### disassociate_custom_domain
+### disassociate\_custom\_domain
 
 Disassociate a custom domain name from an App Runner service.
 
-Type annotations for `boto3.client("apprunner").disassociate_custom_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("apprunner").disassociate_custom_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.disassociate_custom_domain)
 
-Boto3 documentation:
-[AppRunner.Client.disassociate_custom_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.disassociate_custom_domain)
+```python title="Method definition"
+def disassociate_custom_domain(
+    self,
+    *,
+    ServiceArn: str,
+    DomainName: str,
+) -> DisassociateCustomDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateCustomDomainRequestRequestTypeDef](./type_defs.md#disassociatecustomdomainrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateCustomDomainResponseTypeDef](./type_defs.md#disassociatecustomdomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateCustomDomainRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+    "DomainName": ...,
+}
 
-Returns
-[DisassociateCustomDomainResponseTypeDef](./type_defs.md#disassociatecustomdomainresponsetypedef).
+parent.disassociate_custom_domain(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateCustomDomainRequestRequestTypeDef](./type_defs.md#disassociatecustomdomainrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("apprunner").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AppRunner.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### list\_auto\_scaling\_configurations
 
-Returns `str`.
+Returns a list of App Runner automatic scaling configurations in your Amazon Web
+Services account.
 
-<a id="list\_auto\_scaling\_configurations"></a>
+Type annotations and code completion for `#!python boto3.client("apprunner").list_auto_scaling_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_auto_scaling_configurations)
 
-### list_auto_scaling_configurations
+```python title="Method definition"
+def list_auto_scaling_configurations(
+    self,
+    *,
+    AutoScalingConfigurationName: str = ...,
+    LatestOnly: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAutoScalingConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns a list of App Runner automatic scaling configurations in your Amazon
-Web Services account.
+1. See [:material-code-braces: ListAutoScalingConfigurationsResponseTypeDef](./type_defs.md#listautoscalingconfigurationsresponsetypedef) 
 
-Type annotations for
-`boto3.client("apprunner").list_auto_scaling_configurations` method.
 
-Boto3 documentation:
-[AppRunner.Client.list_auto_scaling_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_auto_scaling_configurations)
+```python title="Usage example with kwargs"
+kwargs: ListAutoScalingConfigurationsRequestRequestTypeDef = {  # (1)
+    "AutoScalingConfigurationName": ...,
+}
 
-Arguments mapping described in
-[ListAutoScalingConfigurationsRequestRequestTypeDef](./type_defs.md#listautoscalingconfigurationsrequestrequesttypedef).
+parent.list_auto_scaling_configurations(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ListAutoScalingConfigurationsRequestRequestTypeDef](./type_defs.md#listautoscalingconfigurationsrequestrequesttypedef) 
 
-- `AutoScalingConfigurationName`: `str`
-- `LatestOnly`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-Returns
-[ListAutoScalingConfigurationsResponseTypeDef](./type_defs.md#listautoscalingconfigurationsresponsetypedef).
-
-<a id="list\_connections"></a>
-
-### list_connections
+### list\_connections
 
 Returns a list of App Runner connections that are associated with your Amazon
 Web Services account.
 
-Type annotations for `boto3.client("apprunner").list_connections` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").list_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_connections)
 
-Boto3 documentation:
-[AppRunner.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_connections)
+```python title="Method definition"
+def list_connections(
+    self,
+    *,
+    ConnectionName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListConnectionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConnectionsRequestRequestTypeDef](./type_defs.md#listconnectionsrequestrequesttypedef).
+1. See [:material-code-braces: ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConnectionsRequestRequestTypeDef = {  # (1)
+    "ConnectionName": ...,
+}
 
-Returns
-[ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef).
+parent.list_connections(**kwargs)
+```
 
-<a id="list\_operations"></a>
+1. See [:material-code-braces: ListConnectionsRequestRequestTypeDef](./type_defs.md#listconnectionsrequestrequesttypedef) 
 
-### list_operations
+### list\_operations
 
 Return a list of operations that occurred on an App Runner service.
 
-Type annotations for `boto3.client("apprunner").list_operations` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").list_operations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_operations)
 
-Boto3 documentation:
-[AppRunner.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_operations)
+```python title="Method definition"
+def list_operations(
+    self,
+    *,
+    ServiceArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListOperationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOperationsRequestRequestTypeDef](./type_defs.md#listoperationsrequestrequesttypedef).
+1. See [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListOperationsRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+}
 
-Returns
-[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
+parent.list_operations(**kwargs)
+```
 
-<a id="list\_services"></a>
+1. See [:material-code-braces: ListOperationsRequestRequestTypeDef](./type_defs.md#listoperationsrequestrequesttypedef) 
 
-### list_services
+### list\_services
 
 Returns a list of running App Runner services in your Amazon Web Services
 account.
 
-Type annotations for `boto3.client("apprunner").list_services` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").list_services` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_services)
 
-Boto3 documentation:
-[AppRunner.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_services)
+```python title="Method definition"
+def list_services(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListServicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef).
+1. See [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListServicesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
+parent.list_services(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List tags that are associated with for an App Runner resource.
 
-Type annotations for `boto3.client("apprunner").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[AppRunner.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_vpc\_connectors"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_vpc_connectors
+### list\_vpc\_connectors
 
-Returns a list of App Runner VPC connectors in your Amazon Web Services
-account.
+Returns a list of App Runner VPC connectors in your Amazon Web Services account.
 
-Type annotations for `boto3.client("apprunner").list_vpc_connectors` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").list_vpc_connectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_vpc_connectors)
 
-Boto3 documentation:
-[AppRunner.Client.list_vpc_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_vpc_connectors)
+```python title="Method definition"
+def list_vpc_connectors(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListVpcConnectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVpcConnectorsRequestRequestTypeDef](./type_defs.md#listvpcconnectorsrequestrequesttypedef).
+1. See [:material-code-braces: ListVpcConnectorsResponseTypeDef](./type_defs.md#listvpcconnectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVpcConnectorsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListVpcConnectorsResponseTypeDef](./type_defs.md#listvpcconnectorsresponsetypedef).
+parent.list_vpc_connectors(**kwargs)
+```
 
-<a id="pause\_service"></a>
+1. See [:material-code-braces: ListVpcConnectorsRequestRequestTypeDef](./type_defs.md#listvpcconnectorsrequestrequesttypedef) 
 
-### pause_service
+### pause\_service
 
 Pause an active App Runner service.
 
-Type annotations for `boto3.client("apprunner").pause_service` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").pause_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.pause_service)
 
-Boto3 documentation:
-[AppRunner.Client.pause_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.pause_service)
+```python title="Method definition"
+def pause_service(
+    self,
+    *,
+    ServiceArn: str,
+) -> PauseServiceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PauseServiceRequestRequestTypeDef](./type_defs.md#pauseservicerequestrequesttypedef).
+1. See [:material-code-braces: PauseServiceResponseTypeDef](./type_defs.md#pauseserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PauseServiceRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+}
 
-Returns
-[PauseServiceResponseTypeDef](./type_defs.md#pauseserviceresponsetypedef).
+parent.pause_service(**kwargs)
+```
 
-<a id="resume\_service"></a>
+1. See [:material-code-braces: PauseServiceRequestRequestTypeDef](./type_defs.md#pauseservicerequestrequesttypedef) 
 
-### resume_service
+### resume\_service
 
 Resume an active App Runner service.
 
-Type annotations for `boto3.client("apprunner").resume_service` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").resume_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.resume_service)
 
-Boto3 documentation:
-[AppRunner.Client.resume_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.resume_service)
+```python title="Method definition"
+def resume_service(
+    self,
+    *,
+    ServiceArn: str,
+) -> ResumeServiceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResumeServiceRequestRequestTypeDef](./type_defs.md#resumeservicerequestrequesttypedef).
+1. See [:material-code-braces: ResumeServiceResponseTypeDef](./type_defs.md#resumeserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResumeServiceRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+}
 
-Returns
-[ResumeServiceResponseTypeDef](./type_defs.md#resumeserviceresponsetypedef).
+parent.resume_service(**kwargs)
+```
 
-<a id="start\_deployment"></a>
+1. See [:material-code-braces: ResumeServiceRequestRequestTypeDef](./type_defs.md#resumeservicerequestrequesttypedef) 
 
-### start_deployment
+### start\_deployment
 
-Initiate a manual deployment of the latest commit in a source code repository
-or the latest image in a source image repository to an App Runner service.
+Initiate a manual deployment of the latest commit in a source code repository or
+the latest image in a source image repository to an App Runner service.
 
-Type annotations for `boto3.client("apprunner").start_deployment` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").start_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.start_deployment)
 
-Boto3 documentation:
-[AppRunner.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.start_deployment)
+```python title="Method definition"
+def start_deployment(
+    self,
+    *,
+    ServiceArn: str,
+) -> StartDeploymentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartDeploymentRequestRequestTypeDef](./type_defs.md#startdeploymentrequestrequesttypedef).
+1. See [:material-code-braces: StartDeploymentResponseTypeDef](./type_defs.md#startdeploymentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartDeploymentRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+}
 
-Returns
-[StartDeploymentResponseTypeDef](./type_defs.md#startdeploymentresponsetypedef).
+parent.start_deployment(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartDeploymentRequestRequestTypeDef](./type_defs.md#startdeploymentrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Add tags to, or update the tag values of, an App Runner resource.
 
-Type annotations for `boto3.client("apprunner").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.tag_resource)
 
-Boto3 documentation:
-[AppRunner.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Remove tags from an App Runner resource.
 
-Type annotations for `boto3.client("apprunner").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.untag_resource)
 
-Boto3 documentation:
-[AppRunner.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_service"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_service
+### update\_service
 
 Update an App Runner service.
 
-Type annotations for `boto3.client("apprunner").update_service` method.
+Type annotations and code completion for `#!python boto3.client("apprunner").update_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.update_service)
 
-Boto3 documentation:
-[AppRunner.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.update_service)
+```python title="Method definition"
+def update_service(
+    self,
+    *,
+    ServiceArn: str,
+    SourceConfiguration: SourceConfigurationTypeDef = ...,  # (1)
+    InstanceConfiguration: InstanceConfigurationTypeDef = ...,  # (2)
+    AutoScalingConfigurationArn: str = ...,
+    HealthCheckConfiguration: HealthCheckConfigurationTypeDef = ...,  # (3)
+    NetworkConfiguration: NetworkConfigurationTypeDef = ...,  # (4)
+) -> UpdateServiceResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef).
+1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+2. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
+3. See [:material-code-braces: HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef) 
+4. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+5. See [:material-code-braces: UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceArn`: `str` *(required)*
-- `SourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- `InstanceConfiguration`:
-  [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
-- `AutoScalingConfigurationArn`: `str`
-- `HealthCheckConfiguration`:
-  [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
-- `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceRequestRequestTypeDef = {  # (1)
+    "ServiceArn": ...,
+}
 
-Returns
-[UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).
+parent.update_service(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef) 
+
+
+
+

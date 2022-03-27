@@ -1,91 +1,18 @@
-<a id="lambdaclient-for-boto3-lambda-module"></a>
-
-# LambdaClient for boto3 Lambda module
+# LambdaClient
 
 > [Index](../README.md) > [Lambda](./README.md) > LambdaClient
 
-Auto-generated documentation for
-[Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
-type annotations stubs module
-[mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
+!!! note ""
 
-- [LambdaClient for boto3 Lambda module](#lambdaclient-for-boto3-lambda-module)
-  - [LambdaClient](#lambdaclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_layer_version_permission](#add_layer_version_permission)
-    - [add_permission](#add_permission)
-    - [can_paginate](#can_paginate)
-    - [create_alias](#create_alias)
-    - [create_code_signing_config](#create_code_signing_config)
-    - [create_event_source_mapping](#create_event_source_mapping)
-    - [create_function](#create_function)
-    - [delete_alias](#delete_alias)
-    - [delete_code_signing_config](#delete_code_signing_config)
-    - [delete_event_source_mapping](#delete_event_source_mapping)
-    - [delete_function](#delete_function)
-    - [delete_function_code_signing_config](#delete_function_code_signing_config)
-    - [delete_function_concurrency](#delete_function_concurrency)
-    - [delete_function_event_invoke_config](#delete_function_event_invoke_config)
-    - [delete_layer_version](#delete_layer_version)
-    - [delete_provisioned_concurrency_config](#delete_provisioned_concurrency_config)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account_settings](#get_account_settings)
-    - [get_alias](#get_alias)
-    - [get_code_signing_config](#get_code_signing_config)
-    - [get_event_source_mapping](#get_event_source_mapping)
-    - [get_function](#get_function)
-    - [get_function_code_signing_config](#get_function_code_signing_config)
-    - [get_function_concurrency](#get_function_concurrency)
-    - [get_function_configuration](#get_function_configuration)
-    - [get_function_event_invoke_config](#get_function_event_invoke_config)
-    - [get_layer_version](#get_layer_version)
-    - [get_layer_version_by_arn](#get_layer_version_by_arn)
-    - [get_layer_version_policy](#get_layer_version_policy)
-    - [get_policy](#get_policy)
-    - [get_provisioned_concurrency_config](#get_provisioned_concurrency_config)
-    - [invoke](#invoke)
-    - [invoke_async](#invoke_async)
-    - [list_aliases](#list_aliases)
-    - [list_code_signing_configs](#list_code_signing_configs)
-    - [list_event_source_mappings](#list_event_source_mappings)
-    - [list_function_event_invoke_configs](#list_function_event_invoke_configs)
-    - [list_functions](#list_functions)
-    - [list_functions_by_code_signing_config](#list_functions_by_code_signing_config)
-    - [list_layer_versions](#list_layer_versions)
-    - [list_layers](#list_layers)
-    - [list_provisioned_concurrency_configs](#list_provisioned_concurrency_configs)
-    - [list_tags](#list_tags)
-    - [list_versions_by_function](#list_versions_by_function)
-    - [publish_layer_version](#publish_layer_version)
-    - [publish_version](#publish_version)
-    - [put_function_code_signing_config](#put_function_code_signing_config)
-    - [put_function_concurrency](#put_function_concurrency)
-    - [put_function_event_invoke_config](#put_function_event_invoke_config)
-    - [put_provisioned_concurrency_config](#put_provisioned_concurrency_config)
-    - [remove_layer_version_permission](#remove_layer_version_permission)
-    - [remove_permission](#remove_permission)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_alias](#update_alias)
-    - [update_code_signing_config](#update_code_signing_config)
-    - [update_event_source_mapping](#update_event_source_mapping)
-    - [update_function_code](#update_function_code)
-    - [update_function_configuration](#update_function_configuration)
-    - [update_function_event_invoke_config](#update_function_event_invoke_config)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="lambdaclient"></a>
+    Auto-generated documentation for [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
+    type annotations stubs module [mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 ## LambdaClient
 
-Type annotations for `boto3.client("lambda")`
+Type annotations and code completion for `#!python boto3.client("lambda")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_lambda.client import LambdaClient
 
@@ -93,1612 +20,2086 @@ def get_lambda_client() -> LambdaClient:
     return Session().client("lambda")
 ```
 
-Boto3 documentation:
-[Lambda.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("lambda").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("lambda")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.CodeSigningConfigNotFoundException,
+    client.CodeStorageExceededException,
+    client.CodeVerificationFailedException,
+    client.EC2AccessDeniedException,
+    client.EC2ThrottledException,
+    client.EC2UnexpectedException,
+    client.EFSIOException,
+    client.EFSMountConnectivityException,
+    client.EFSMountFailureException,
+    client.EFSMountTimeoutException,
+    client.ENILimitReachedException,
+    client.InvalidCodeSignatureException,
+    client.InvalidParameterValueException,
+    client.InvalidRequestContentException,
+    client.InvalidRuntimeException,
+    client.InvalidSecurityGroupIDException,
+    client.InvalidSubnetIDException,
+    client.InvalidZipFileException,
+    client.KMSAccessDeniedException,
+    client.KMSDisabledException,
+    client.KMSInvalidStateException,
+    client.KMSNotFoundException,
+    client.PolicyLengthExceededException,
+    client.PreconditionFailedException,
+    client.ProvisionedConcurrencyConfigNotFoundException,
+    client.RequestTooLargeException,
+    client.ResourceConflictException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ResourceNotReadyException,
+    client.ServiceException,
+    client.SubnetIPAddressLimitReachedException,
+    client.TooManyRequestsException,
+    client.UnsupportedMediaTypeException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_lambda.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.CodeSigningConfigNotFoundException`
-- `Exceptions.CodeStorageExceededException`
-- `Exceptions.CodeVerificationFailedException`
-- `Exceptions.EC2AccessDeniedException`
-- `Exceptions.EC2ThrottledException`
-- `Exceptions.EC2UnexpectedException`
-- `Exceptions.EFSIOException`
-- `Exceptions.EFSMountConnectivityException`
-- `Exceptions.EFSMountFailureException`
-- `Exceptions.EFSMountTimeoutException`
-- `Exceptions.ENILimitReachedException`
-- `Exceptions.InvalidCodeSignatureException`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.InvalidRequestContentException`
-- `Exceptions.InvalidRuntimeException`
-- `Exceptions.InvalidSecurityGroupIDException`
-- `Exceptions.InvalidSubnetIDException`
-- `Exceptions.InvalidZipFileException`
-- `Exceptions.KMSAccessDeniedException`
-- `Exceptions.KMSDisabledException`
-- `Exceptions.KMSInvalidStateException`
-- `Exceptions.KMSNotFoundException`
-- `Exceptions.PolicyLengthExceededException`
-- `Exceptions.PreconditionFailedException`
-- `Exceptions.ProvisionedConcurrencyConfigNotFoundException`
-- `Exceptions.RequestTooLargeException`
-- `Exceptions.ResourceConflictException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceNotReadyException`
-- `Exceptions.ServiceException`
-- `Exceptions.SubnetIPAddressLimitReachedException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnsupportedMediaTypeException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### add\_layer\_version\_permission
 
-LambdaClient exceptions.
+Adds permissions to the resource-based policy of a version of an [Lambda
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_.
 
-Type annotations for `boto3.client("lambda").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("lambda").add_layer_version_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_layer_version_permission)
 
-Boto3 documentation:
-[Lambda.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.exceptions)
+```python title="Method definition"
+def add_layer_version_permission(
+    self,
+    *,
+    LayerName: str,
+    VersionNumber: int,
+    StatementId: str,
+    Action: str,
+    Principal: str,
+    OrganizationId: str = ...,
+    RevisionId: str = ...,
+) -> AddLayerVersionPermissionResponseTypeDef:  # (1)
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: AddLayerVersionPermissionResponseTypeDef](./type_defs.md#addlayerversionpermissionresponsetypedef) 
 
-<a id="add\_layer\_version\_permission"></a>
 
-### add_layer_version_permission
+```python title="Usage example with kwargs"
+kwargs: AddLayerVersionPermissionRequestRequestTypeDef = {  # (1)
+    "LayerName": ...,
+    "VersionNumber": ...,
+    "StatementId": ...,
+    "Action": ...,
+    "Principal": ...,
+}
 
-Adds permissions to the resource-based policy of a version of an
-[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
+parent.add_layer_version_permission(**kwargs)
+```
 
-Type annotations for `boto3.client("lambda").add_layer_version_permission`
-method.
+1. See [:material-code-braces: AddLayerVersionPermissionRequestRequestTypeDef](./type_defs.md#addlayerversionpermissionrequestrequesttypedef) 
 
-Boto3 documentation:
-[Lambda.Client.add_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_layer_version_permission)
-
-Arguments mapping described in
-[AddLayerVersionPermissionRequestRequestTypeDef](./type_defs.md#addlayerversionpermissionrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `LayerName`: `str` *(required)*
-- `VersionNumber`: `int` *(required)*
-- `StatementId`: `str` *(required)*
-- `Action`: `str` *(required)*
-- `Principal`: `str` *(required)*
-- `OrganizationId`: `str`
-- `RevisionId`: `str`
-
-Returns
-[AddLayerVersionPermissionResponseTypeDef](./type_defs.md#addlayerversionpermissionresponsetypedef).
-
-<a id="add\_permission"></a>
-
-### add_permission
+### add\_permission
 
 Grants an Amazon Web Services service, account, or organization permission to
 use a function.
 
-Type annotations for `boto3.client("lambda").add_permission` method.
+Type annotations and code completion for `#!python boto3.client("lambda").add_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission)
 
-Boto3 documentation:
-[Lambda.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.add_permission)
+```python title="Method definition"
+def add_permission(
+    self,
+    *,
+    FunctionName: str,
+    StatementId: str,
+    Action: str,
+    Principal: str,
+    SourceArn: str = ...,
+    SourceAccount: str = ...,
+    EventSourceToken: str = ...,
+    Qualifier: str = ...,
+    RevisionId: str = ...,
+    PrincipalOrgID: str = ...,
+) -> AddPermissionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AddPermissionRequestRequestTypeDef](./type_defs.md#addpermissionrequestrequesttypedef).
+1. See [:material-code-braces: AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `StatementId`: `str` *(required)*
-- `Action`: `str` *(required)*
-- `Principal`: `str` *(required)*
-- `SourceArn`: `str`
-- `SourceAccount`: `str`
-- `EventSourceToken`: `str`
-- `Qualifier`: `str`
-- `RevisionId`: `str`
-- `PrincipalOrgID`: `str`
+```python title="Usage example with kwargs"
+kwargs: AddPermissionRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "StatementId": ...,
+    "Action": ...,
+    "Principal": ...,
+}
 
-Returns
-[AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef).
+parent.add_permission(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddPermissionRequestRequestTypeDef](./type_defs.md#addpermissionrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("lambda").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("lambda").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.can_paginate)
 
-Boto3 documentation:
-[Lambda.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### create\_alias
 
-Returns `bool`.
+Creates an [alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
+aliases.html)_ for a Lambda function version.
 
-<a id="create\_alias"></a>
+Type annotations and code completion for `#!python boto3.client("lambda").create_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_alias)
 
-### create_alias
+```python title="Method definition"
+def create_alias(
+    self,
+    *,
+    FunctionName: str,
+    Name: str,
+    FunctionVersion: str,
+    Description: str = ...,
+    RoutingConfig: AliasRoutingConfigurationTypeDef = ...,  # (1)
+) -> AliasConfigurationResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Creates an \[alias\](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
-aliases.html)\_ for a Lambda function version.
+1. See [:material-code-braces: AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef) 
+2. See [:material-code-braces: AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef) 
 
-Type annotations for `boto3.client("lambda").create_alias` method.
 
-Boto3 documentation:
-[Lambda.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_alias)
+```python title="Usage example with kwargs"
+kwargs: CreateAliasRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "Name": ...,
+    "FunctionVersion": ...,
+}
 
-Arguments mapping described in
-[CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef).
+parent.create_alias(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef) 
 
-- `FunctionName`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `FunctionVersion`: `str` *(required)*
-- `Description`: `str`
-- `RoutingConfig`:
-  [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
-
-Returns
-[AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef).
-
-<a id="create\_code\_signing\_config"></a>
-
-### create_code_signing_config
+### create\_code\_signing\_config
 
 Creates a code signing configuration.
 
-Type annotations for `boto3.client("lambda").create_code_signing_config`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").create_code_signing_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_code_signing_config)
 
-Boto3 documentation:
-[Lambda.Client.create_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_code_signing_config)
+```python title="Method definition"
+def create_code_signing_config(
+    self,
+    *,
+    AllowedPublishers: AllowedPublishersTypeDef,  # (1)
+    Description: str = ...,
+    CodeSigningPolicies: CodeSigningPoliciesTypeDef = ...,  # (2)
+) -> CreateCodeSigningConfigResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateCodeSigningConfigRequestRequestTypeDef](./type_defs.md#createcodesigningconfigrequestrequesttypedef).
+1. See [:material-code-braces: AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef) 
+2. See [:material-code-braces: CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef) 
+3. See [:material-code-braces: CreateCodeSigningConfigResponseTypeDef](./type_defs.md#createcodesigningconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AllowedPublishers`:
-  [AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef)
-  *(required)*
-- `Description`: `str`
-- `CodeSigningPolicies`:
-  [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateCodeSigningConfigRequestRequestTypeDef = {  # (1)
+    "AllowedPublishers": ...,
+}
 
-Returns
-[CreateCodeSigningConfigResponseTypeDef](./type_defs.md#createcodesigningconfigresponsetypedef).
+parent.create_code_signing_config(**kwargs)
+```
 
-<a id="create\_event\_source\_mapping"></a>
+1. See [:material-code-braces: CreateCodeSigningConfigRequestRequestTypeDef](./type_defs.md#createcodesigningconfigrequestrequesttypedef) 
 
-### create_event_source_mapping
+### create\_event\_source\_mapping
 
 Creates a mapping between an event source and an Lambda function.
 
-Type annotations for `boto3.client("lambda").create_event_source_mapping`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").create_event_source_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_event_source_mapping)
 
-Boto3 documentation:
-[Lambda.Client.create_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_event_source_mapping)
+```python title="Method definition"
+def create_event_source_mapping(
+    self,
+    *,
+    FunctionName: str,
+    EventSourceArn: str = ...,
+    Enabled: bool = ...,
+    BatchSize: int = ...,
+    FilterCriteria: FilterCriteriaTypeDef = ...,  # (1)
+    MaximumBatchingWindowInSeconds: int = ...,
+    ParallelizationFactor: int = ...,
+    StartingPosition: EventSourcePositionType = ...,  # (2)
+    StartingPositionTimestamp: Union[datetime, str] = ...,
+    DestinationConfig: DestinationConfigTypeDef = ...,  # (3)
+    MaximumRecordAgeInSeconds: int = ...,
+    BisectBatchOnFunctionError: bool = ...,
+    MaximumRetryAttempts: int = ...,
+    TumblingWindowInSeconds: int = ...,
+    Topics: Sequence[str] = ...,
+    Queues: Sequence[str] = ...,
+    SourceAccessConfigurations: Sequence[SourceAccessConfigurationTypeDef] = ...,  # (4)
+    SelfManagedEventSource: SelfManagedEventSourceTypeDef = ...,  # (5)
+    FunctionResponseTypes: Sequence[FunctionResponseTypeType] = ...,  # (6)
+) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateEventSourceMappingRequestRequestTypeDef](./type_defs.md#createeventsourcemappingrequestrequesttypedef).
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-brackets: EventSourcePositionType](./literals.md#eventsourcepositiontype) 
+3. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+4. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
+5. See [:material-code-braces: SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef) 
+6. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
+7. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `EventSourceArn`: `str`
-- `Enabled`: `bool`
-- `BatchSize`: `int`
-- `FilterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `MaximumBatchingWindowInSeconds`: `int`
-- `ParallelizationFactor`: `int`
-- `StartingPosition`:
-  [EventSourcePositionType](./literals.md#eventsourcepositiontype)
-- `StartingPositionTimestamp`: `Union`\[`datetime`, `str`\]
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- `MaximumRecordAgeInSeconds`: `int`
-- `BisectBatchOnFunctionError`: `bool`
-- `MaximumRetryAttempts`: `int`
-- `TumblingWindowInSeconds`: `int`
-- `Topics`: `Sequence`\[`str`\]
-- `Queues`: `Sequence`\[`str`\]
-- `SourceAccessConfigurations`:
-  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
-- `SelfManagedEventSource`:
-  [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
-- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
-  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
+```python title="Usage example with kwargs"
+kwargs: CreateEventSourceMappingRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
+parent.create_event_source_mapping(**kwargs)
+```
 
-<a id="create\_function"></a>
+1. See [:material-code-braces: CreateEventSourceMappingRequestRequestTypeDef](./type_defs.md#createeventsourcemappingrequestrequesttypedef) 
 
-### create_function
+### create\_function
 
 Creates a Lambda function.
 
-Type annotations for `boto3.client("lambda").create_function` method.
+Type annotations and code completion for `#!python boto3.client("lambda").create_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function)
 
-Boto3 documentation:
-[Lambda.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.create_function)
+```python title="Method definition"
+def create_function(
+    self,
+    *,
+    FunctionName: str,
+    Role: str,
+    Code: FunctionCodeTypeDef,  # (1)
+    Runtime: RuntimeType = ...,  # (2)
+    Handler: str = ...,
+    Description: str = ...,
+    Timeout: int = ...,
+    MemorySize: int = ...,
+    Publish: bool = ...,
+    VpcConfig: VpcConfigTypeDef = ...,  # (3)
+    PackageType: PackageTypeType = ...,  # (4)
+    DeadLetterConfig: DeadLetterConfigTypeDef = ...,  # (5)
+    Environment: EnvironmentTypeDef = ...,  # (6)
+    KMSKeyArn: str = ...,
+    TracingConfig: TracingConfigTypeDef = ...,  # (7)
+    Tags: Mapping[str, str] = ...,
+    Layers: Sequence[str] = ...,
+    FileSystemConfigs: Sequence[FileSystemConfigTypeDef] = ...,  # (8)
+    ImageConfig: ImageConfigTypeDef = ...,  # (9)
+    CodeSigningConfigArn: str = ...,
+    Architectures: Sequence[ArchitectureType] = ...,  # (10)
+    EphemeralStorage: EphemeralStorageTypeDef = ...,  # (11)
+) -> FunctionConfigurationResponseMetadataTypeDef:  # (12)
+    ...
+```
 
-Arguments mapping described in
-[CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef).
+1. See [:material-code-braces: FunctionCodeTypeDef](./type_defs.md#functioncodetypedef) 
+2. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+3. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+4. See [:material-code-brackets: PackageTypeType](./literals.md#packagetypetype) 
+5. See [:material-code-braces: DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef) 
+6. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+7. See [:material-code-braces: TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef) 
+8. See [:material-code-braces: FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef) 
+9. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
+10. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+11. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
+12. See [:material-code-braces: FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Role`: `str` *(required)*
-- `Code`: [FunctionCodeTypeDef](./type_defs.md#functioncodetypedef)
-  *(required)*
-- `Runtime`: [RuntimeType](./literals.md#runtimetype)
-- `Handler`: `str`
-- `Description`: `str`
-- `Timeout`: `int`
-- `MemorySize`: `int`
-- `Publish`: `bool`
-- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `PackageType`: [PackageTypeType](./literals.md#packagetypetype)
-- `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
-- `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `KMSKeyArn`: `str`
-- `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Layers`: `Sequence`\[`str`\]
-- `FileSystemConfigs`:
-  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
-- `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
-- `CodeSigningConfigArn`: `str`
-- `Architectures`:
-  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
-- `EphemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateFunctionRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "Role": ...,
+    "Code": ...,
+}
 
-Returns
-[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
+parent.create_function(**kwargs)
+```
 
-<a id="delete\_alias"></a>
+1. See [:material-code-braces: CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef) 
 
-### delete_alias
+### delete\_alias
 
 Deletes a Lambda function
-[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\_
-.
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_ .
 
-Type annotations for `boto3.client("lambda").delete_alias` method.
+Type annotations and code completion for `#!python boto3.client("lambda").delete_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias)
 
-Boto3 documentation:
-[Lambda.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_alias)
+```python title="Method definition"
+def delete_alias(
+    self,
+    *,
+    FunctionName: str,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAliasRequestRequestTypeDef](./type_defs.md#deletealiasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAliasRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "Name": ...,
+}
 
-<a id="delete\_code\_signing\_config"></a>
+parent.delete_alias(**kwargs)
+```
 
-### delete_code_signing_config
+1. See [:material-code-braces: DeleteAliasRequestRequestTypeDef](./type_defs.md#deletealiasrequestrequesttypedef) 
+
+### delete\_code\_signing\_config
 
 Deletes the code signing configuration.
 
-Type annotations for `boto3.client("lambda").delete_code_signing_config`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").delete_code_signing_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_code_signing_config)
 
-Boto3 documentation:
-[Lambda.Client.delete_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_code_signing_config)
+```python title="Method definition"
+def delete_code_signing_config(
+    self,
+    *,
+    CodeSigningConfigArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCodeSigningConfigRequestRequestTypeDef](./type_defs.md#deletecodesigningconfigrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CodeSigningConfigArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCodeSigningConfigRequestRequestTypeDef = {  # (1)
+    "CodeSigningConfigArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_code_signing_config(**kwargs)
+```
 
-<a id="delete\_event\_source\_mapping"></a>
+1. See [:material-code-braces: DeleteCodeSigningConfigRequestRequestTypeDef](./type_defs.md#deletecodesigningconfigrequestrequesttypedef) 
 
-### delete_event_source_mapping
+### delete\_event\_source\_mapping
 
-Deletes an \[event source
-mapping\](https://docs.aws.amazon.com/lambda/latest/dg/intro-invocation-
-modes.html)\_.
+Deletes an [event source
+mapping](https://docs.aws.amazon.com/lambda/latest/dg/intro-invocation-
+modes.html)_.
 
-Type annotations for `boto3.client("lambda").delete_event_source_mapping`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").delete_event_source_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping)
 
-Boto3 documentation:
-[Lambda.Client.delete_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_event_source_mapping)
+```python title="Method definition"
+def delete_event_source_mapping(
+    self,
+    *,
+    UUID: str,
+) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventSourceMappingRequestRequestTypeDef](./type_defs.md#deleteeventsourcemappingrequestrequesttypedef).
+1. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `UUID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventSourceMappingRequestRequestTypeDef = {  # (1)
+    "UUID": ...,
+}
 
-Returns
-[EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
+parent.delete_event_source_mapping(**kwargs)
+```
 
-<a id="delete\_function"></a>
+1. See [:material-code-braces: DeleteEventSourceMappingRequestRequestTypeDef](./type_defs.md#deleteeventsourcemappingrequestrequesttypedef) 
 
-### delete_function
+### delete\_function
 
 Deletes a Lambda function.
 
-Type annotations for `boto3.client("lambda").delete_function` method.
+Type annotations and code completion for `#!python boto3.client("lambda").delete_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function)
 
-Boto3 documentation:
-[Lambda.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function)
+```python title="Method definition"
+def delete_function(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFunctionRequestRequestTypeDef](./type_defs.md#deletefunctionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteFunctionRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-<a id="delete\_function\_code\_signing\_config"></a>
+parent.delete_function(**kwargs)
+```
 
-### delete_function_code_signing_config
+1. See [:material-code-braces: DeleteFunctionRequestRequestTypeDef](./type_defs.md#deletefunctionrequestrequesttypedef) 
+
+### delete\_function\_code\_signing\_config
 
 Removes the code signing configuration from the function.
 
-Type annotations for
-`boto3.client("lambda").delete_function_code_signing_config` method.
+Type annotations and code completion for `#!python boto3.client("lambda").delete_function_code_signing_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config)
 
-Boto3 documentation:
-[Lambda.Client.delete_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_code_signing_config)
+```python title="Method definition"
+def delete_function_code_signing_config(
+    self,
+    *,
+    FunctionName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFunctionCodeSigningConfigRequestRequestTypeDef](./type_defs.md#deletefunctioncodesigningconfigrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFunctionCodeSigningConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-<a id="delete\_function\_concurrency"></a>
+parent.delete_function_code_signing_config(**kwargs)
+```
 
-### delete_function_concurrency
+1. See [:material-code-braces: DeleteFunctionCodeSigningConfigRequestRequestTypeDef](./type_defs.md#deletefunctioncodesigningconfigrequestrequesttypedef) 
+
+### delete\_function\_concurrency
 
 Removes a concurrent execution limit from a function.
 
-Type annotations for `boto3.client("lambda").delete_function_concurrency`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").delete_function_concurrency` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_concurrency)
 
-Boto3 documentation:
-[Lambda.Client.delete_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_concurrency)
+```python title="Method definition"
+def delete_function_concurrency(
+    self,
+    *,
+    FunctionName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFunctionConcurrencyRequestRequestTypeDef](./type_defs.md#deletefunctionconcurrencyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFunctionConcurrencyRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-<a id="delete\_function\_event\_invoke\_config"></a>
+parent.delete_function_concurrency(**kwargs)
+```
 
-### delete_function_event_invoke_config
+1. See [:material-code-braces: DeleteFunctionConcurrencyRequestRequestTypeDef](./type_defs.md#deletefunctionconcurrencyrequestrequesttypedef) 
+
+### delete\_function\_event\_invoke\_config
 
 Deletes the configuration for asynchronous invocation for a function, version,
 or alias.
 
-Type annotations for
-`boto3.client("lambda").delete_function_event_invoke_config` method.
+Type annotations and code completion for `#!python boto3.client("lambda").delete_function_event_invoke_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config)
 
-Boto3 documentation:
-[Lambda.Client.delete_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_function_event_invoke_config)
+```python title="Method definition"
+def delete_function_event_invoke_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#deletefunctioneventinvokeconfigrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteFunctionEventInvokeConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-<a id="delete\_layer\_version"></a>
+parent.delete_function_event_invoke_config(**kwargs)
+```
 
-### delete_layer_version
+1. See [:material-code-braces: DeleteFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#deletefunctioneventinvokeconfigrequestrequesttypedef) 
 
-Deletes a version of an
-[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
+### delete\_layer\_version
 
-Type annotations for `boto3.client("lambda").delete_layer_version` method.
+Deletes a version of an [Lambda
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_.
 
-Boto3 documentation:
-[Lambda.Client.delete_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_layer_version)
+Type annotations and code completion for `#!python boto3.client("lambda").delete_layer_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_layer_version)
 
-Arguments mapping described in
-[DeleteLayerVersionRequestRequestTypeDef](./type_defs.md#deletelayerversionrequestrequesttypedef).
+```python title="Method definition"
+def delete_layer_version(
+    self,
+    *,
+    LayerName: str,
+    VersionNumber: int,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `LayerName`: `str` *(required)*
-- `VersionNumber`: `int` *(required)*
 
-<a id="delete\_provisioned\_concurrency\_config"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteLayerVersionRequestRequestTypeDef = {  # (1)
+    "LayerName": ...,
+    "VersionNumber": ...,
+}
 
-### delete_provisioned_concurrency_config
+parent.delete_layer_version(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteLayerVersionRequestRequestTypeDef](./type_defs.md#deletelayerversionrequestrequesttypedef) 
+
+### delete\_provisioned\_concurrency\_config
 
 Deletes the provisioned concurrency configuration for a function.
 
-Type annotations for
-`boto3.client("lambda").delete_provisioned_concurrency_config` method.
+Type annotations and code completion for `#!python boto3.client("lambda").delete_provisioned_concurrency_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config)
 
-Boto3 documentation:
-[Lambda.Client.delete_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.delete_provisioned_concurrency_config)
+```python title="Method definition"
+def delete_provisioned_concurrency_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#deleteprovisionedconcurrencyconfigrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProvisionedConcurrencyConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "Qualifier": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_provisioned_concurrency_config(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#deleteprovisionedconcurrencyconfigrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("lambda").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("lambda").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Lambda.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_account\_settings"></a>
-
-### get_account_settings
+### get\_account\_settings
 
 Retrieves details about your account's
-[limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)\_ and usage
-in an Amazon Web Services Region.
+[limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html)_ and usage in
+an Amazon Web Services Region.
 
-Type annotations for `boto3.client("lambda").get_account_settings` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_account_settings)
 
-Boto3 documentation:
-[Lambda.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_account_settings)
+```python title="Method definition"
+def get_account_settings(
+    self,
+) -> GetAccountSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
+1. See [:material-code-braces: GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef) 
 
-<a id="get\_alias"></a>
-
-### get_alias
+### get\_alias
 
 Returns details about a Lambda function
-[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\_
-.
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_ .
 
-Type annotations for `boto3.client("lambda").get_alias` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias)
 
-Boto3 documentation:
-[Lambda.Client.get_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_alias)
+```python title="Method definition"
+def get_alias(
+    self,
+    *,
+    FunctionName: str,
+    Name: str,
+) -> AliasConfigurationResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAliasRequestRequestTypeDef](./type_defs.md#getaliasrequestrequesttypedef).
+1. See [:material-code-braces: AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAliasRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "Name": ...,
+}
 
-Returns
-[AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef).
+parent.get_alias(**kwargs)
+```
 
-<a id="get\_code\_signing\_config"></a>
+1. See [:material-code-braces: GetAliasRequestRequestTypeDef](./type_defs.md#getaliasrequestrequesttypedef) 
 
-### get_code_signing_config
+### get\_code\_signing\_config
 
 Returns information about the specified code signing configuration.
 
-Type annotations for `boto3.client("lambda").get_code_signing_config` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_code_signing_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_code_signing_config)
 
-Boto3 documentation:
-[Lambda.Client.get_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_code_signing_config)
+```python title="Method definition"
+def get_code_signing_config(
+    self,
+    *,
+    CodeSigningConfigArn: str,
+) -> GetCodeSigningConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCodeSigningConfigRequestRequestTypeDef](./type_defs.md#getcodesigningconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetCodeSigningConfigResponseTypeDef](./type_defs.md#getcodesigningconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CodeSigningConfigArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCodeSigningConfigRequestRequestTypeDef = {  # (1)
+    "CodeSigningConfigArn": ...,
+}
 
-Returns
-[GetCodeSigningConfigResponseTypeDef](./type_defs.md#getcodesigningconfigresponsetypedef).
+parent.get_code_signing_config(**kwargs)
+```
 
-<a id="get\_event\_source\_mapping"></a>
+1. See [:material-code-braces: GetCodeSigningConfigRequestRequestTypeDef](./type_defs.md#getcodesigningconfigrequestrequesttypedef) 
 
-### get_event_source_mapping
+### get\_event\_source\_mapping
 
 Returns details about an event source mapping.
 
-Type annotations for `boto3.client("lambda").get_event_source_mapping` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_event_source_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_event_source_mapping)
 
-Boto3 documentation:
-[Lambda.Client.get_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_event_source_mapping)
+```python title="Method definition"
+def get_event_source_mapping(
+    self,
+    *,
+    UUID: str,
+) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEventSourceMappingRequestRequestTypeDef](./type_defs.md#geteventsourcemappingrequestrequesttypedef).
+1. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `UUID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEventSourceMappingRequestRequestTypeDef = {  # (1)
+    "UUID": ...,
+}
 
-Returns
-[EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
+parent.get_event_source_mapping(**kwargs)
+```
 
-<a id="get\_function"></a>
+1. See [:material-code-braces: GetEventSourceMappingRequestRequestTypeDef](./type_defs.md#geteventsourcemappingrequestrequesttypedef) 
 
-### get_function
+### get\_function
 
 Returns information about the function or function version, with a link to
 download the deployment package that's valid for 10 minutes.
 
-Type annotations for `boto3.client("lambda").get_function` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function)
 
-Boto3 documentation:
-[Lambda.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function)
+```python title="Method definition"
+def get_function(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+) -> GetFunctionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFunctionRequestRequestTypeDef](./type_defs.md#getfunctionrequestrequesttypedef).
+1. See [:material-code-braces: GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetFunctionRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef).
+parent.get_function(**kwargs)
+```
 
-<a id="get\_function\_code\_signing\_config"></a>
+1. See [:material-code-braces: GetFunctionRequestRequestTypeDef](./type_defs.md#getfunctionrequestrequesttypedef) 
 
-### get_function_code_signing_config
+### get\_function\_code\_signing\_config
 
 Returns the code signing configuration for the specified function.
 
-Type annotations for `boto3.client("lambda").get_function_code_signing_config`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_function_code_signing_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config)
 
-Boto3 documentation:
-[Lambda.Client.get_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_code_signing_config)
+```python title="Method definition"
+def get_function_code_signing_config(
+    self,
+    *,
+    FunctionName: str,
+) -> GetFunctionCodeSigningConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFunctionCodeSigningConfigRequestRequestTypeDef](./type_defs.md#getfunctioncodesigningconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#getfunctioncodesigningconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFunctionCodeSigningConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[GetFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#getfunctioncodesigningconfigresponsetypedef).
+parent.get_function_code_signing_config(**kwargs)
+```
 
-<a id="get\_function\_concurrency"></a>
+1. See [:material-code-braces: GetFunctionCodeSigningConfigRequestRequestTypeDef](./type_defs.md#getfunctioncodesigningconfigrequestrequesttypedef) 
 
-### get_function_concurrency
+### get\_function\_concurrency
 
 Returns details about the reserved concurrency configuration for a function.
 
-Type annotations for `boto3.client("lambda").get_function_concurrency` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_function_concurrency` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_concurrency)
 
-Boto3 documentation:
-[Lambda.Client.get_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_concurrency)
+```python title="Method definition"
+def get_function_concurrency(
+    self,
+    *,
+    FunctionName: str,
+) -> GetFunctionConcurrencyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFunctionConcurrencyRequestRequestTypeDef](./type_defs.md#getfunctionconcurrencyrequestrequesttypedef).
+1. See [:material-code-braces: GetFunctionConcurrencyResponseTypeDef](./type_defs.md#getfunctionconcurrencyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFunctionConcurrencyRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[GetFunctionConcurrencyResponseTypeDef](./type_defs.md#getfunctionconcurrencyresponsetypedef).
+parent.get_function_concurrency(**kwargs)
+```
 
-<a id="get\_function\_configuration"></a>
+1. See [:material-code-braces: GetFunctionConcurrencyRequestRequestTypeDef](./type_defs.md#getfunctionconcurrencyrequestrequesttypedef) 
 
-### get_function_configuration
+### get\_function\_configuration
 
 Returns the version-specific settings of a Lambda function or version.
 
-Type annotations for `boto3.client("lambda").get_function_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_function_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_configuration)
 
-Boto3 documentation:
-[Lambda.Client.get_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_configuration)
+```python title="Method definition"
+def get_function_configuration(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+) -> FunctionConfigurationResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFunctionConfigurationRequestRequestTypeDef](./type_defs.md#getfunctionconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetFunctionConfigurationRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
+parent.get_function_configuration(**kwargs)
+```
 
-<a id="get\_function\_event\_invoke\_config"></a>
+1. See [:material-code-braces: GetFunctionConfigurationRequestRequestTypeDef](./type_defs.md#getfunctionconfigurationrequestrequesttypedef) 
 
-### get_function_event_invoke_config
+### get\_function\_event\_invoke\_config
 
-Retrieves the configuration for asynchronous invocation for a function,
-version, or alias.
+Retrieves the configuration for asynchronous invocation for a function, version,
+or alias.
 
-Type annotations for `boto3.client("lambda").get_function_event_invoke_config`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_function_event_invoke_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config)
 
-Boto3 documentation:
-[Lambda.Client.get_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_function_event_invoke_config)
+```python title="Method definition"
+def get_function_event_invoke_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+) -> FunctionEventInvokeConfigResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#getfunctioneventinvokeconfigrequestrequesttypedef).
+1. See [:material-code-braces: FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetFunctionEventInvokeConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
+parent.get_function_event_invoke_config(**kwargs)
+```
 
-<a id="get\_layer\_version"></a>
+1. See [:material-code-braces: GetFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#getfunctioneventinvokeconfigrequestrequesttypedef) 
 
-### get_layer_version
+### get\_layer\_version
 
-Returns information about a version of an
-[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_
+Returns information about a version of an [Lambda
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_
 , with a link to download the layer archive that's valid for 10 minutes.
 
-Type annotations for `boto3.client("lambda").get_layer_version` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_layer_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version)
 
-Boto3 documentation:
-[Lambda.Client.get_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version)
+```python title="Method definition"
+def get_layer_version(
+    self,
+    *,
+    LayerName: str,
+    VersionNumber: int,
+) -> GetLayerVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLayerVersionRequestRequestTypeDef](./type_defs.md#getlayerversionrequestrequesttypedef).
+1. See [:material-code-braces: GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LayerName`: `str` *(required)*
-- `VersionNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLayerVersionRequestRequestTypeDef = {  # (1)
+    "LayerName": ...,
+    "VersionNumber": ...,
+}
 
-Returns
-[GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef).
+parent.get_layer_version(**kwargs)
+```
 
-<a id="get\_layer\_version\_by\_arn"></a>
+1. See [:material-code-braces: GetLayerVersionRequestRequestTypeDef](./type_defs.md#getlayerversionrequestrequesttypedef) 
 
-### get_layer_version_by_arn
+### get\_layer\_version\_by\_arn
 
-Returns information about a version of an
-[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_
+Returns information about a version of an [Lambda
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_
 , with a link to download the layer archive that's valid for 10 minutes.
 
-Type annotations for `boto3.client("lambda").get_layer_version_by_arn` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_layer_version_by_arn` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn)
 
-Boto3 documentation:
-[Lambda.Client.get_layer_version_by_arn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_by_arn)
+```python title="Method definition"
+def get_layer_version_by_arn(
+    self,
+    *,
+    Arn: str,
+) -> GetLayerVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLayerVersionByArnRequestRequestTypeDef](./type_defs.md#getlayerversionbyarnrequestrequesttypedef).
+1. See [:material-code-braces: GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLayerVersionByArnRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[GetLayerVersionResponseTypeDef](./type_defs.md#getlayerversionresponsetypedef).
+parent.get_layer_version_by_arn(**kwargs)
+```
 
-<a id="get\_layer\_version\_policy"></a>
+1. See [:material-code-braces: GetLayerVersionByArnRequestRequestTypeDef](./type_defs.md#getlayerversionbyarnrequestrequesttypedef) 
 
-### get_layer_version_policy
+### get\_layer\_version\_policy
 
-Returns the permission policy for a version of an
-[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
+Returns the permission policy for a version of an [Lambda
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_.
 
-Type annotations for `boto3.client("lambda").get_layer_version_policy` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_layer_version_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_policy)
 
-Boto3 documentation:
-[Lambda.Client.get_layer_version_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_layer_version_policy)
+```python title="Method definition"
+def get_layer_version_policy(
+    self,
+    *,
+    LayerName: str,
+    VersionNumber: int,
+) -> GetLayerVersionPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLayerVersionPolicyRequestRequestTypeDef](./type_defs.md#getlayerversionpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetLayerVersionPolicyResponseTypeDef](./type_defs.md#getlayerversionpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LayerName`: `str` *(required)*
-- `VersionNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLayerVersionPolicyRequestRequestTypeDef = {  # (1)
+    "LayerName": ...,
+    "VersionNumber": ...,
+}
 
-Returns
-[GetLayerVersionPolicyResponseTypeDef](./type_defs.md#getlayerversionpolicyresponsetypedef).
+parent.get_layer_version_policy(**kwargs)
+```
 
-<a id="get\_policy"></a>
+1. See [:material-code-braces: GetLayerVersionPolicyRequestRequestTypeDef](./type_defs.md#getlayerversionpolicyrequestrequesttypedef) 
 
-### get_policy
+### get\_policy
 
-Returns the \[resource-based IAM
-policy\](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-
-based.html)\_ for a function, version, or alias.
+Returns the [resource-based IAM
+policy](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-
+based.html)_ for a function, version, or alias.
 
-Type annotations for `boto3.client("lambda").get_policy` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_policy)
 
-Boto3 documentation:
-[Lambda.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_policy)
+```python title="Method definition"
+def get_policy(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+) -> GetPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPolicyRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+parent.get_policy(**kwargs)
+```
 
-<a id="get\_provisioned\_concurrency\_config"></a>
+1. See [:material-code-braces: GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef) 
 
-### get_provisioned_concurrency_config
+### get\_provisioned\_concurrency\_config
 
 Retrieves the provisioned concurrency configuration for a function's alias or
 version.
 
-Type annotations for
-`boto3.client("lambda").get_provisioned_concurrency_config` method.
+Type annotations and code completion for `#!python boto3.client("lambda").get_provisioned_concurrency_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config)
 
-Boto3 documentation:
-[Lambda.Client.get_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.get_provisioned_concurrency_config)
+```python title="Method definition"
+def get_provisioned_concurrency_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str,
+) -> GetProvisionedConcurrencyConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#getprovisionedconcurrencyconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#getprovisionedconcurrencyconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetProvisionedConcurrencyConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "Qualifier": ...,
+}
 
-Returns
-[GetProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#getprovisionedconcurrencyconfigresponsetypedef).
+parent.get_provisioned_concurrency_config(**kwargs)
+```
 
-<a id="invoke"></a>
+1. See [:material-code-braces: GetProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#getprovisionedconcurrencyconfigrequestrequesttypedef) 
 
 ### invoke
 
 Invokes a Lambda function.
 
-Type annotations for `boto3.client("lambda").invoke` method.
+Type annotations and code completion for `#!python boto3.client("lambda").invoke` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke)
 
-Boto3 documentation:
-[Lambda.Client.invoke](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke)
+```python title="Method definition"
+def invoke(
+    self,
+    *,
+    FunctionName: str,
+    InvocationType: InvocationTypeType = ...,  # (1)
+    LogType: LogTypeType = ...,  # (2)
+    ClientContext: str = ...,
+    Payload: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Qualifier: str = ...,
+) -> InvocationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[InvocationRequestRequestTypeDef](./type_defs.md#invocationrequestrequesttypedef).
+1. See [:material-code-brackets: InvocationTypeType](./literals.md#invocationtypetype) 
+2. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
+3. See [:material-code-braces: InvocationResponseTypeDef](./type_defs.md#invocationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `InvocationType`: [InvocationTypeType](./literals.md#invocationtypetype)
-- `LogType`: [LogTypeType](./literals.md#logtypetype)
-- `ClientContext`: `str`
-- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Qualifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: InvocationRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns [InvocationResponseTypeDef](./type_defs.md#invocationresponsetypedef).
+parent.invoke(**kwargs)
+```
 
-<a id="invoke\_async"></a>
+1. See [:material-code-braces: InvocationRequestRequestTypeDef](./type_defs.md#invocationrequestrequesttypedef) 
 
-### invoke_async
+### invoke\_async
 
 .
 
-Type annotations for `boto3.client("lambda").invoke_async` method.
+Type annotations and code completion for `#!python boto3.client("lambda").invoke_async` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke_async)
 
-Boto3 documentation:
-[Lambda.Client.invoke_async](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.invoke_async)
+```python title="Method definition"
+def invoke_async(
+    self,
+    *,
+    FunctionName: str,
+    InvokeArgs: Union[bytes, IO[bytes], StreamingBody],
+) -> InvokeAsyncResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InvokeAsyncRequestRequestTypeDef](./type_defs.md#invokeasyncrequestrequesttypedef).
+1. See [:material-code-braces: InvokeAsyncResponseTypeDef](./type_defs.md#invokeasyncresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `InvokeArgs`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: InvokeAsyncRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "InvokeArgs": ...,
+}
 
-Returns
-[InvokeAsyncResponseTypeDef](./type_defs.md#invokeasyncresponsetypedef).
+parent.invoke_async(**kwargs)
+```
 
-<a id="list\_aliases"></a>
+1. See [:material-code-braces: InvokeAsyncRequestRequestTypeDef](./type_defs.md#invokeasyncrequestrequesttypedef) 
 
-### list_aliases
+### list\_aliases
 
 Returns a list of
-[aliases](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\_
+[aliases](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_
 for a Lambda function.
 
-Type annotations for `boto3.client("lambda").list_aliases` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases)
 
-Boto3 documentation:
-[Lambda.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_aliases)
+```python title="Method definition"
+def list_aliases(
+    self,
+    *,
+    FunctionName: str,
+    FunctionVersion: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef).
+1. See [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `FunctionVersion`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAliasesRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
+parent.list_aliases(**kwargs)
+```
 
-<a id="list\_code\_signing\_configs"></a>
+1. See [:material-code-braces: ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef) 
 
-### list_code_signing_configs
+### list\_code\_signing\_configs
 
-Returns a list of \[code signing
-configurations\](https://docs.aws.amazon.com/lambda/latest/dg/configuring-
-codesigning.html)\_.
+Returns a list of [code signing
+configurations](https://docs.aws.amazon.com/lambda/latest/dg/configuring-
+codesigning.html)_.
 
-Type annotations for `boto3.client("lambda").list_code_signing_configs` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_code_signing_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_code_signing_configs)
 
-Boto3 documentation:
-[Lambda.Client.list_code_signing_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_code_signing_configs)
+```python title="Method definition"
+def list_code_signing_configs(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListCodeSigningConfigsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCodeSigningConfigsRequestRequestTypeDef](./type_defs.md#listcodesigningconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCodeSigningConfigsRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListCodeSigningConfigsResponseTypeDef](./type_defs.md#listcodesigningconfigsresponsetypedef).
+parent.list_code_signing_configs(**kwargs)
+```
 
-<a id="list\_event\_source\_mappings"></a>
+1. See [:material-code-braces: ListCodeSigningConfigsRequestRequestTypeDef](./type_defs.md#listcodesigningconfigsrequestrequesttypedef) 
 
-### list_event_source_mappings
+### list\_event\_source\_mappings
 
 Lists event source mappings.
 
-Type annotations for `boto3.client("lambda").list_event_source_mappings`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_event_source_mappings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_event_source_mappings)
 
-Boto3 documentation:
-[Lambda.Client.list_event_source_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_event_source_mappings)
+```python title="Method definition"
+def list_event_source_mappings(
+    self,
+    *,
+    EventSourceArn: str = ...,
+    FunctionName: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListEventSourceMappingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEventSourceMappingsRequestRequestTypeDef](./type_defs.md#listeventsourcemappingsrequestrequesttypedef).
+1. See [:material-code-braces: ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventSourceArn`: `str`
-- `FunctionName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEventSourceMappingsRequestRequestTypeDef = {  # (1)
+    "EventSourceArn": ...,
+}
 
-Returns
-[ListEventSourceMappingsResponseTypeDef](./type_defs.md#listeventsourcemappingsresponsetypedef).
+parent.list_event_source_mappings(**kwargs)
+```
 
-<a id="list\_function\_event\_invoke\_configs"></a>
+1. See [:material-code-braces: ListEventSourceMappingsRequestRequestTypeDef](./type_defs.md#listeventsourcemappingsrequestrequesttypedef) 
 
-### list_function_event_invoke_configs
+### list\_function\_event\_invoke\_configs
 
 Retrieves a list of configurations for asynchronous invocation for a function.
 
-Type annotations for
-`boto3.client("lambda").list_function_event_invoke_configs` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_function_event_invoke_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs)
 
-Boto3 documentation:
-[Lambda.Client.list_function_event_invoke_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_function_event_invoke_configs)
+```python title="Method definition"
+def list_function_event_invoke_configs(
+    self,
+    *,
+    FunctionName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListFunctionEventInvokeConfigsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFunctionEventInvokeConfigsRequestRequestTypeDef](./type_defs.md#listfunctioneventinvokeconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFunctionEventInvokeConfigsRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[ListFunctionEventInvokeConfigsResponseTypeDef](./type_defs.md#listfunctioneventinvokeconfigsresponsetypedef).
+parent.list_function_event_invoke_configs(**kwargs)
+```
 
-<a id="list\_functions"></a>
+1. See [:material-code-braces: ListFunctionEventInvokeConfigsRequestRequestTypeDef](./type_defs.md#listfunctioneventinvokeconfigsrequestrequesttypedef) 
 
-### list_functions
+### list\_functions
 
 Returns a list of Lambda functions, with the version-specific configuration of
 each.
 
-Type annotations for `boto3.client("lambda").list_functions` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_functions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions)
 
-Boto3 documentation:
-[Lambda.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions)
+```python title="Method definition"
+def list_functions(
+    self,
+    *,
+    MasterRegion: str = ...,
+    FunctionVersion: FunctionVersionType = ...,  # (1)
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListFunctionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFunctionsRequestRequestTypeDef](./type_defs.md#listfunctionsrequestrequesttypedef).
+1. See [:material-code-brackets: FunctionVersionType](./literals.md#functionversiontype) 
+2. See [:material-code-braces: ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MasterRegion`: `str`
-- `FunctionVersion`: `Literal['ALL']` (see
-  [FunctionVersionType](./literals.md#functionversiontype))
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFunctionsRequestRequestTypeDef = {  # (1)
+    "MasterRegion": ...,
+}
 
-Returns
-[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef).
+parent.list_functions(**kwargs)
+```
 
-<a id="list\_functions\_by\_code\_signing\_config"></a>
+1. See [:material-code-braces: ListFunctionsRequestRequestTypeDef](./type_defs.md#listfunctionsrequestrequesttypedef) 
 
-### list_functions_by_code_signing_config
+### list\_functions\_by\_code\_signing\_config
 
 List the functions that use the specified code signing configuration.
 
-Type annotations for
-`boto3.client("lambda").list_functions_by_code_signing_config` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_functions_by_code_signing_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config)
 
-Boto3 documentation:
-[Lambda.Client.list_functions_by_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_functions_by_code_signing_config)
+```python title="Method definition"
+def list_functions_by_code_signing_config(
+    self,
+    *,
+    CodeSigningConfigArn: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListFunctionsByCodeSigningConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFunctionsByCodeSigningConfigRequestRequestTypeDef](./type_defs.md#listfunctionsbycodesigningconfigrequestrequesttypedef).
+1. See [:material-code-braces: ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CodeSigningConfigArn`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFunctionsByCodeSigningConfigRequestRequestTypeDef = {  # (1)
+    "CodeSigningConfigArn": ...,
+}
 
-Returns
-[ListFunctionsByCodeSigningConfigResponseTypeDef](./type_defs.md#listfunctionsbycodesigningconfigresponsetypedef).
+parent.list_functions_by_code_signing_config(**kwargs)
+```
 
-<a id="list\_layer\_versions"></a>
+1. See [:material-code-braces: ListFunctionsByCodeSigningConfigRequestRequestTypeDef](./type_defs.md#listfunctionsbycodesigningconfigrequestrequesttypedef) 
 
-### list_layer_versions
+### list\_layer\_versions
 
-Lists the versions of an
-[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
+Lists the versions of an [Lambda
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_.
 
-Type annotations for `boto3.client("lambda").list_layer_versions` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_layer_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layer_versions)
 
-Boto3 documentation:
-[Lambda.Client.list_layer_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layer_versions)
+```python title="Method definition"
+def list_layer_versions(
+    self,
+    *,
+    LayerName: str,
+    CompatibleRuntime: RuntimeType = ...,  # (1)
+    Marker: str = ...,
+    MaxItems: int = ...,
+    CompatibleArchitecture: ArchitectureType = ...,  # (2)
+) -> ListLayerVersionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListLayerVersionsRequestRequestTypeDef](./type_defs.md#listlayerversionsrequestrequesttypedef).
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+3. See [:material-code-braces: ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LayerName`: `str` *(required)*
-- `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
-- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
+```python title="Usage example with kwargs"
+kwargs: ListLayerVersionsRequestRequestTypeDef = {  # (1)
+    "LayerName": ...,
+}
 
-Returns
-[ListLayerVersionsResponseTypeDef](./type_defs.md#listlayerversionsresponsetypedef).
+parent.list_layer_versions(**kwargs)
+```
 
-<a id="list\_layers"></a>
+1. See [:material-code-braces: ListLayerVersionsRequestRequestTypeDef](./type_defs.md#listlayerversionsrequestrequesttypedef) 
 
-### list_layers
+### list\_layers
 
-Lists \[Lambda
-layers\](https://docs.aws.amazon.com/lambda/latest/dg/invocation-
-layers.html)\_ and shows information about the latest version of each.
+Lists [Lambda layers](https://docs.aws.amazon.com/lambda/latest/dg/invocation-
+layers.html)_ and shows information about the latest version of each.
 
-Type annotations for `boto3.client("lambda").list_layers` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_layers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layers)
 
-Boto3 documentation:
-[Lambda.Client.list_layers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_layers)
+```python title="Method definition"
+def list_layers(
+    self,
+    *,
+    CompatibleRuntime: RuntimeType = ...,  # (1)
+    Marker: str = ...,
+    MaxItems: int = ...,
+    CompatibleArchitecture: ArchitectureType = ...,  # (2)
+) -> ListLayersResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListLayersRequestRequestTypeDef](./type_defs.md#listlayersrequestrequesttypedef).
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+3. See [:material-code-braces: ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
-- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
+```python title="Usage example with kwargs"
+kwargs: ListLayersRequestRequestTypeDef = {  # (1)
+    "CompatibleRuntime": ...,
+}
 
-Returns [ListLayersResponseTypeDef](./type_defs.md#listlayersresponsetypedef).
+parent.list_layers(**kwargs)
+```
 
-<a id="list\_provisioned\_concurrency\_configs"></a>
+1. See [:material-code-braces: ListLayersRequestRequestTypeDef](./type_defs.md#listlayersrequestrequesttypedef) 
 
-### list_provisioned_concurrency_configs
+### list\_provisioned\_concurrency\_configs
 
 Retrieves a list of provisioned concurrency configurations for a function.
 
-Type annotations for
-`boto3.client("lambda").list_provisioned_concurrency_configs` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_provisioned_concurrency_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs)
 
-Boto3 documentation:
-[Lambda.Client.list_provisioned_concurrency_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_provisioned_concurrency_configs)
+```python title="Method definition"
+def list_provisioned_concurrency_configs(
+    self,
+    *,
+    FunctionName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListProvisionedConcurrencyConfigsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProvisionedConcurrencyConfigsRequestRequestTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProvisionedConcurrencyConfigsRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[ListProvisionedConcurrencyConfigsResponseTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsresponsetypedef).
+parent.list_provisioned_concurrency_configs(**kwargs)
+```
 
-<a id="list\_tags"></a>
+1. See [:material-code-braces: ListProvisionedConcurrencyConfigsRequestRequestTypeDef](./type_defs.md#listprovisionedconcurrencyconfigsrequestrequesttypedef) 
 
-### list_tags
+### list\_tags
 
 Returns a function's
-[tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)\_.
+[tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)_.
 
-Type annotations for `boto3.client("lambda").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_tags)
 
-Boto3 documentation:
-[Lambda.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    Resource: str,
+) -> ListTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Resource`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestRequestTypeDef = {  # (1)
+    "Resource": ...,
+}
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="list\_versions\_by\_function"></a>
+1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
-### list_versions_by_function
+### list\_versions\_by\_function
 
 Returns a list of
-\[versions\](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
-aliases.html)\_ , with the version-specific configuration of each.
+[versions](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
+aliases.html)_ , with the version-specific configuration of each.
 
-Type annotations for `boto3.client("lambda").list_versions_by_function` method.
+Type annotations and code completion for `#!python boto3.client("lambda").list_versions_by_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function)
 
-Boto3 documentation:
-[Lambda.Client.list_versions_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.list_versions_by_function)
+```python title="Method definition"
+def list_versions_by_function(
+    self,
+    *,
+    FunctionName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListVersionsByFunctionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVersionsByFunctionRequestRequestTypeDef](./type_defs.md#listversionsbyfunctionrequestrequesttypedef).
+1. See [:material-code-braces: ListVersionsByFunctionResponseTypeDef](./type_defs.md#listversionsbyfunctionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListVersionsByFunctionRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[ListVersionsByFunctionResponseTypeDef](./type_defs.md#listversionsbyfunctionresponsetypedef).
+parent.list_versions_by_function(**kwargs)
+```
 
-<a id="publish\_layer\_version"></a>
+1. See [:material-code-braces: ListVersionsByFunctionRequestRequestTypeDef](./type_defs.md#listversionsbyfunctionrequestrequesttypedef) 
 
-### publish_layer_version
+### publish\_layer\_version
 
-Creates an
-[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_
+Creates an [Lambda
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_
 from a ZIP archive.
 
-Type annotations for `boto3.client("lambda").publish_layer_version` method.
+Type annotations and code completion for `#!python boto3.client("lambda").publish_layer_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_layer_version)
 
-Boto3 documentation:
-[Lambda.Client.publish_layer_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_layer_version)
+```python title="Method definition"
+def publish_layer_version(
+    self,
+    *,
+    LayerName: str,
+    Content: LayerVersionContentInputTypeDef,  # (1)
+    Description: str = ...,
+    CompatibleRuntimes: Sequence[RuntimeType] = ...,  # (2)
+    LicenseInfo: str = ...,
+    CompatibleArchitectures: Sequence[ArchitectureType] = ...,  # (3)
+) -> PublishLayerVersionResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[PublishLayerVersionRequestRequestTypeDef](./type_defs.md#publishlayerversionrequestrequesttypedef).
+1. See [:material-code-braces: LayerVersionContentInputTypeDef](./type_defs.md#layerversioncontentinputtypedef) 
+2. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+3. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+4. See [:material-code-braces: PublishLayerVersionResponseTypeDef](./type_defs.md#publishlayerversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LayerName`: `str` *(required)*
-- `Content`:
-  [LayerVersionContentInputTypeDef](./type_defs.md#layerversioncontentinputtypedef)
-  *(required)*
-- `Description`: `str`
-- `CompatibleRuntimes`: `Sequence`\[[RuntimeType](./literals.md#runtimetype)\]
-- `LicenseInfo`: `str`
-- `CompatibleArchitectures`:
-  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
+```python title="Usage example with kwargs"
+kwargs: PublishLayerVersionRequestRequestTypeDef = {  # (1)
+    "LayerName": ...,
+    "Content": ...,
+}
 
-Returns
-[PublishLayerVersionResponseTypeDef](./type_defs.md#publishlayerversionresponsetypedef).
+parent.publish_layer_version(**kwargs)
+```
 
-<a id="publish\_version"></a>
+1. See [:material-code-braces: PublishLayerVersionRequestRequestTypeDef](./type_defs.md#publishlayerversionrequestrequesttypedef) 
 
-### publish_version
+### publish\_version
 
-Creates a \[version\](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
-aliases.html)\_ from the current code and configuration of a function.
+Creates a [version](https://docs.aws.amazon.com/lambda/latest/dg/versioning-
+aliases.html)_ from the current code and configuration of a function.
 
-Type annotations for `boto3.client("lambda").publish_version` method.
+Type annotations and code completion for `#!python boto3.client("lambda").publish_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_version)
 
-Boto3 documentation:
-[Lambda.Client.publish_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.publish_version)
+```python title="Method definition"
+def publish_version(
+    self,
+    *,
+    FunctionName: str,
+    CodeSha256: str = ...,
+    Description: str = ...,
+    RevisionId: str = ...,
+) -> FunctionConfigurationResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PublishVersionRequestRequestTypeDef](./type_defs.md#publishversionrequestrequesttypedef).
+1. See [:material-code-braces: FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `CodeSha256`: `str`
-- `Description`: `str`
-- `RevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PublishVersionRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
+parent.publish_version(**kwargs)
+```
 
-<a id="put\_function\_code\_signing\_config"></a>
+1. See [:material-code-braces: PublishVersionRequestRequestTypeDef](./type_defs.md#publishversionrequestrequesttypedef) 
 
-### put_function_code_signing_config
+### put\_function\_code\_signing\_config
 
 Update the code signing configuration for the function.
 
-Type annotations for `boto3.client("lambda").put_function_code_signing_config`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").put_function_code_signing_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config)
 
-Boto3 documentation:
-[Lambda.Client.put_function_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_code_signing_config)
+```python title="Method definition"
+def put_function_code_signing_config(
+    self,
+    *,
+    CodeSigningConfigArn: str,
+    FunctionName: str,
+) -> PutFunctionCodeSigningConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutFunctionCodeSigningConfigRequestRequestTypeDef](./type_defs.md#putfunctioncodesigningconfigrequestrequesttypedef).
+1. See [:material-code-braces: PutFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#putfunctioncodesigningconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CodeSigningConfigArn`: `str` *(required)*
-- `FunctionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutFunctionCodeSigningConfigRequestRequestTypeDef = {  # (1)
+    "CodeSigningConfigArn": ...,
+    "FunctionName": ...,
+}
 
-Returns
-[PutFunctionCodeSigningConfigResponseTypeDef](./type_defs.md#putfunctioncodesigningconfigresponsetypedef).
+parent.put_function_code_signing_config(**kwargs)
+```
 
-<a id="put\_function\_concurrency"></a>
+1. See [:material-code-braces: PutFunctionCodeSigningConfigRequestRequestTypeDef](./type_defs.md#putfunctioncodesigningconfigrequestrequesttypedef) 
 
-### put_function_concurrency
+### put\_function\_concurrency
 
 Sets the maximum number of simultaneous executions for a function, and reserves
 capacity for that concurrency level.
 
-Type annotations for `boto3.client("lambda").put_function_concurrency` method.
+Type annotations and code completion for `#!python boto3.client("lambda").put_function_concurrency` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_concurrency)
 
-Boto3 documentation:
-[Lambda.Client.put_function_concurrency](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_concurrency)
+```python title="Method definition"
+def put_function_concurrency(
+    self,
+    *,
+    FunctionName: str,
+    ReservedConcurrentExecutions: int,
+) -> ConcurrencyResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutFunctionConcurrencyRequestRequestTypeDef](./type_defs.md#putfunctionconcurrencyrequestrequesttypedef).
+1. See [:material-code-braces: ConcurrencyResponseMetadataTypeDef](./type_defs.md#concurrencyresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `ReservedConcurrentExecutions`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutFunctionConcurrencyRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "ReservedConcurrentExecutions": ...,
+}
 
-Returns
-[ConcurrencyResponseMetadataTypeDef](./type_defs.md#concurrencyresponsemetadatatypedef).
+parent.put_function_concurrency(**kwargs)
+```
 
-<a id="put\_function\_event\_invoke\_config"></a>
+1. See [:material-code-braces: PutFunctionConcurrencyRequestRequestTypeDef](./type_defs.md#putfunctionconcurrencyrequestrequesttypedef) 
 
-### put_function_event_invoke_config
+### put\_function\_event\_invoke\_config
 
-Configures options for
-[asynchronous invocation](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html)\_
+Configures options for [asynchronous
+invocation](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async.html)_
 on a function, version, or alias.
 
-Type annotations for `boto3.client("lambda").put_function_event_invoke_config`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").put_function_event_invoke_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config)
 
-Boto3 documentation:
-[Lambda.Client.put_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_function_event_invoke_config)
+```python title="Method definition"
+def put_function_event_invoke_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+    MaximumRetryAttempts: int = ...,
+    MaximumEventAgeInSeconds: int = ...,
+    DestinationConfig: DestinationConfigTypeDef = ...,  # (1)
+) -> FunctionEventInvokeConfigResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#putfunctioneventinvokeconfigrequestrequesttypedef).
+1. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+2. See [:material-code-braces: FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-- `MaximumRetryAttempts`: `int`
-- `MaximumEventAgeInSeconds`: `int`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: PutFunctionEventInvokeConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
+parent.put_function_event_invoke_config(**kwargs)
+```
 
-<a id="put\_provisioned\_concurrency\_config"></a>
+1. See [:material-code-braces: PutFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#putfunctioneventinvokeconfigrequestrequesttypedef) 
 
-### put_provisioned_concurrency_config
+### put\_provisioned\_concurrency\_config
 
 Adds a provisioned concurrency configuration to a function's alias or version.
 
-Type annotations for
-`boto3.client("lambda").put_provisioned_concurrency_config` method.
+Type annotations and code completion for `#!python boto3.client("lambda").put_provisioned_concurrency_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config)
 
-Boto3 documentation:
-[Lambda.Client.put_provisioned_concurrency_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.put_provisioned_concurrency_config)
+```python title="Method definition"
+def put_provisioned_concurrency_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str,
+    ProvisionedConcurrentExecutions: int,
+) -> PutProvisionedConcurrencyConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#putprovisionedconcurrencyconfigrequestrequesttypedef).
+1. See [:material-code-braces: PutProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#putprovisionedconcurrencyconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str` *(required)*
-- `ProvisionedConcurrentExecutions`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutProvisionedConcurrencyConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "Qualifier": ...,
+    "ProvisionedConcurrentExecutions": ...,
+}
 
-Returns
-[PutProvisionedConcurrencyConfigResponseTypeDef](./type_defs.md#putprovisionedconcurrencyconfigresponsetypedef).
+parent.put_provisioned_concurrency_config(**kwargs)
+```
 
-<a id="remove\_layer\_version\_permission"></a>
+1. See [:material-code-braces: PutProvisionedConcurrencyConfigRequestRequestTypeDef](./type_defs.md#putprovisionedconcurrencyconfigrequestrequesttypedef) 
 
-### remove_layer_version_permission
+### remove\_layer\_version\_permission
 
-Removes a statement from the permissions policy for a version of an
-[Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)\_.
+Removes a statement from the permissions policy for a version of an [Lambda
+layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html)_.
 
-Type annotations for `boto3.client("lambda").remove_layer_version_permission`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").remove_layer_version_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission)
 
-Boto3 documentation:
-[Lambda.Client.remove_layer_version_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_layer_version_permission)
+```python title="Method definition"
+def remove_layer_version_permission(
+    self,
+    *,
+    LayerName: str,
+    VersionNumber: int,
+    StatementId: str,
+    RevisionId: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveLayerVersionPermissionRequestRequestTypeDef](./type_defs.md#removelayerversionpermissionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LayerName`: `str` *(required)*
-- `VersionNumber`: `int` *(required)*
-- `StatementId`: `str` *(required)*
-- `RevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemoveLayerVersionPermissionRequestRequestTypeDef = {  # (1)
+    "LayerName": ...,
+    "VersionNumber": ...,
+    "StatementId": ...,
+}
 
-<a id="remove\_permission"></a>
+parent.remove_layer_version_permission(**kwargs)
+```
 
-### remove_permission
+1. See [:material-code-braces: RemoveLayerVersionPermissionRequestRequestTypeDef](./type_defs.md#removelayerversionpermissionrequestrequesttypedef) 
+
+### remove\_permission
 
 Revokes function-use permission from an Amazon Web Services service or another
 account.
 
-Type annotations for `boto3.client("lambda").remove_permission` method.
+Type annotations and code completion for `#!python boto3.client("lambda").remove_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission)
 
-Boto3 documentation:
-[Lambda.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.remove_permission)
+```python title="Method definition"
+def remove_permission(
+    self,
+    *,
+    FunctionName: str,
+    StatementId: str,
+    Qualifier: str = ...,
+    RevisionId: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `StatementId`: `str` *(required)*
-- `Qualifier`: `str`
-- `RevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemovePermissionRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "StatementId": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.remove_permission(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef) 
 
-Adds [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)\_ to a
+### tag\_resource
+
+Adds [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)_ to a
 function.
 
-Type annotations for `boto3.client("lambda").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lambda").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.tag_resource)
 
-Boto3 documentation:
-[Lambda.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    Resource: str,
+    Tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Resource`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "Resource": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-Removes [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)\_
-from a function.
+### untag\_resource
 
-Type annotations for `boto3.client("lambda").untag_resource` method.
+Removes [tags](https://docs.aws.amazon.com/lambda/latest/dg/tagging.html)_ from
+a function.
 
-Boto3 documentation:
-[Lambda.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.untag_resource)
+Type annotations and code completion for `#!python boto3.client("lambda").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.untag_resource)
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    Resource: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `Resource`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update\_alias"></a>
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "Resource": ...,
+    "TagKeys": ...,
+}
 
-### update_alias
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_alias
 
 Updates the configuration of a Lambda function
-[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)\_
-.
+[alias](https://docs.aws.amazon.com/lambda/latest/dg/versioning-aliases.html)_ .
 
-Type annotations for `boto3.client("lambda").update_alias` method.
+Type annotations and code completion for `#!python boto3.client("lambda").update_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias)
 
-Boto3 documentation:
-[Lambda.Client.update_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_alias)
+```python title="Method definition"
+def update_alias(
+    self,
+    *,
+    FunctionName: str,
+    Name: str,
+    FunctionVersion: str = ...,
+    Description: str = ...,
+    RoutingConfig: AliasRoutingConfigurationTypeDef = ...,  # (1)
+    RevisionId: str = ...,
+) -> AliasConfigurationResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAliasRequestRequestTypeDef](./type_defs.md#updatealiasrequestrequesttypedef).
+1. See [:material-code-braces: AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef) 
+2. See [:material-code-braces: AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `FunctionVersion`: `str`
-- `Description`: `str`
-- `RoutingConfig`:
-  [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
-- `RevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAliasRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+    "Name": ...,
+}
 
-Returns
-[AliasConfigurationResponseMetadataTypeDef](./type_defs.md#aliasconfigurationresponsemetadatatypedef).
+parent.update_alias(**kwargs)
+```
 
-<a id="update\_code\_signing\_config"></a>
+1. See [:material-code-braces: UpdateAliasRequestRequestTypeDef](./type_defs.md#updatealiasrequestrequesttypedef) 
 
-### update_code_signing_config
+### update\_code\_signing\_config
 
 Update the code signing configuration.
 
-Type annotations for `boto3.client("lambda").update_code_signing_config`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").update_code_signing_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_code_signing_config)
 
-Boto3 documentation:
-[Lambda.Client.update_code_signing_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_code_signing_config)
+```python title="Method definition"
+def update_code_signing_config(
+    self,
+    *,
+    CodeSigningConfigArn: str,
+    Description: str = ...,
+    AllowedPublishers: AllowedPublishersTypeDef = ...,  # (1)
+    CodeSigningPolicies: CodeSigningPoliciesTypeDef = ...,  # (2)
+) -> UpdateCodeSigningConfigResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCodeSigningConfigRequestRequestTypeDef](./type_defs.md#updatecodesigningconfigrequestrequesttypedef).
+1. See [:material-code-braces: AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef) 
+2. See [:material-code-braces: CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef) 
+3. See [:material-code-braces: UpdateCodeSigningConfigResponseTypeDef](./type_defs.md#updatecodesigningconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CodeSigningConfigArn`: `str` *(required)*
-- `Description`: `str`
-- `AllowedPublishers`:
-  [AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef)
-- `CodeSigningPolicies`:
-  [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateCodeSigningConfigRequestRequestTypeDef = {  # (1)
+    "CodeSigningConfigArn": ...,
+}
 
-Returns
-[UpdateCodeSigningConfigResponseTypeDef](./type_defs.md#updatecodesigningconfigresponsetypedef).
+parent.update_code_signing_config(**kwargs)
+```
 
-<a id="update\_event\_source\_mapping"></a>
+1. See [:material-code-braces: UpdateCodeSigningConfigRequestRequestTypeDef](./type_defs.md#updatecodesigningconfigrequestrequesttypedef) 
 
-### update_event_source_mapping
+### update\_event\_source\_mapping
 
 Updates an event source mapping.
 
-Type annotations for `boto3.client("lambda").update_event_source_mapping`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").update_event_source_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_event_source_mapping)
 
-Boto3 documentation:
-[Lambda.Client.update_event_source_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_event_source_mapping)
+```python title="Method definition"
+def update_event_source_mapping(
+    self,
+    *,
+    UUID: str,
+    FunctionName: str = ...,
+    Enabled: bool = ...,
+    BatchSize: int = ...,
+    FilterCriteria: FilterCriteriaTypeDef = ...,  # (1)
+    MaximumBatchingWindowInSeconds: int = ...,
+    DestinationConfig: DestinationConfigTypeDef = ...,  # (2)
+    MaximumRecordAgeInSeconds: int = ...,
+    BisectBatchOnFunctionError: bool = ...,
+    MaximumRetryAttempts: int = ...,
+    ParallelizationFactor: int = ...,
+    SourceAccessConfigurations: Sequence[SourceAccessConfigurationTypeDef] = ...,  # (3)
+    TumblingWindowInSeconds: int = ...,
+    FunctionResponseTypes: Sequence[FunctionResponseTypeType] = ...,  # (4)
+) -> EventSourceMappingConfigurationResponseMetadataTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEventSourceMappingRequestRequestTypeDef](./type_defs.md#updateeventsourcemappingrequestrequesttypedef).
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+3. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
+4. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
+5. See [:material-code-braces: EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `UUID`: `str` *(required)*
-- `FunctionName`: `str`
-- `Enabled`: `bool`
-- `BatchSize`: `int`
-- `FilterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `MaximumBatchingWindowInSeconds`: `int`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- `MaximumRecordAgeInSeconds`: `int`
-- `BisectBatchOnFunctionError`: `bool`
-- `MaximumRetryAttempts`: `int`
-- `ParallelizationFactor`: `int`
-- `SourceAccessConfigurations`:
-  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
-- `TumblingWindowInSeconds`: `int`
-- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
-  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
+```python title="Usage example with kwargs"
+kwargs: UpdateEventSourceMappingRequestRequestTypeDef = {  # (1)
+    "UUID": ...,
+}
 
-Returns
-[EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef).
+parent.update_event_source_mapping(**kwargs)
+```
 
-<a id="update\_function\_code"></a>
+1. See [:material-code-braces: UpdateEventSourceMappingRequestRequestTypeDef](./type_defs.md#updateeventsourcemappingrequestrequesttypedef) 
 
-### update_function_code
+### update\_function\_code
 
 Updates a Lambda function's code.
 
-Type annotations for `boto3.client("lambda").update_function_code` method.
+Type annotations and code completion for `#!python boto3.client("lambda").update_function_code` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_code)
 
-Boto3 documentation:
-[Lambda.Client.update_function_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_code)
+```python title="Method definition"
+def update_function_code(
+    self,
+    *,
+    FunctionName: str,
+    ZipFile: Union[bytes, IO[bytes], StreamingBody] = ...,
+    S3Bucket: str = ...,
+    S3Key: str = ...,
+    S3ObjectVersion: str = ...,
+    ImageUri: str = ...,
+    Publish: bool = ...,
+    DryRun: bool = ...,
+    RevisionId: str = ...,
+    Architectures: Sequence[ArchitectureType] = ...,  # (1)
+) -> FunctionConfigurationResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFunctionCodeRequestRequestTypeDef](./type_defs.md#updatefunctioncoderequestrequesttypedef).
+1. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+2. See [:material-code-braces: FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `S3Bucket`: `str`
-- `S3Key`: `str`
-- `S3ObjectVersion`: `str`
-- `ImageUri`: `str`
-- `Publish`: `bool`
-- `DryRun`: `bool`
-- `RevisionId`: `str`
-- `Architectures`:
-  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateFunctionCodeRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
+parent.update_function_code(**kwargs)
+```
 
-<a id="update\_function\_configuration"></a>
+1. See [:material-code-braces: UpdateFunctionCodeRequestRequestTypeDef](./type_defs.md#updatefunctioncoderequestrequesttypedef) 
 
-### update_function_configuration
+### update\_function\_configuration
 
 Modify the version-specific settings of a Lambda function.
 
-Type annotations for `boto3.client("lambda").update_function_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("lambda").update_function_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_configuration)
 
-Boto3 documentation:
-[Lambda.Client.update_function_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_configuration)
+```python title="Method definition"
+def update_function_configuration(
+    self,
+    *,
+    FunctionName: str,
+    Role: str = ...,
+    Handler: str = ...,
+    Description: str = ...,
+    Timeout: int = ...,
+    MemorySize: int = ...,
+    VpcConfig: VpcConfigTypeDef = ...,  # (1)
+    Environment: EnvironmentTypeDef = ...,  # (2)
+    Runtime: RuntimeType = ...,  # (3)
+    DeadLetterConfig: DeadLetterConfigTypeDef = ...,  # (4)
+    KMSKeyArn: str = ...,
+    TracingConfig: TracingConfigTypeDef = ...,  # (5)
+    RevisionId: str = ...,
+    Layers: Sequence[str] = ...,
+    FileSystemConfigs: Sequence[FileSystemConfigTypeDef] = ...,  # (6)
+    ImageConfig: ImageConfigTypeDef = ...,  # (7)
+    EphemeralStorage: EphemeralStorageTypeDef = ...,  # (8)
+) -> FunctionConfigurationResponseMetadataTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFunctionConfigurationRequestRequestTypeDef](./type_defs.md#updatefunctionconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+2. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+3. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+4. See [:material-code-braces: DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef) 
+5. See [:material-code-braces: TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef) 
+6. See [:material-code-braces: FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef) 
+7. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
+8. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
+9. See [:material-code-braces: FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Role`: `str`
-- `Handler`: `str`
-- `Description`: `str`
-- `Timeout`: `int`
-- `MemorySize`: `int`
-- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `Runtime`: [RuntimeType](./literals.md#runtimetype)
-- `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
-- `KMSKeyArn`: `str`
-- `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
-- `RevisionId`: `str`
-- `Layers`: `Sequence`\[`str`\]
-- `FileSystemConfigs`:
-  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
-- `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
-- `EphemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateFunctionConfigurationRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
+parent.update_function_configuration(**kwargs)
+```
 
-<a id="update\_function\_event\_invoke\_config"></a>
+1. See [:material-code-braces: UpdateFunctionConfigurationRequestRequestTypeDef](./type_defs.md#updatefunctionconfigurationrequestrequesttypedef) 
 
-### update_function_event_invoke_config
+### update\_function\_event\_invoke\_config
 
 Updates the configuration for asynchronous invocation for a function, version,
 or alias.
 
-Type annotations for
-`boto3.client("lambda").update_function_event_invoke_config` method.
+Type annotations and code completion for `#!python boto3.client("lambda").update_function_event_invoke_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config)
 
-Boto3 documentation:
-[Lambda.Client.update_function_event_invoke_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Client.update_function_event_invoke_config)
+```python title="Method definition"
+def update_function_event_invoke_config(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+    MaximumRetryAttempts: int = ...,
+    MaximumEventAgeInSeconds: int = ...,
+    DestinationConfig: DestinationConfigTypeDef = ...,  # (1)
+) -> FunctionEventInvokeConfigResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#updatefunctioneventinvokeconfigrequestrequesttypedef).
+1. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+2. See [:material-code-braces: FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-- `MaximumRetryAttempts`: `int`
-- `MaximumEventAgeInSeconds`: `int`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateFunctionEventInvokeConfigRequestRequestTypeDef = {  # (1)
+    "FunctionName": ...,
+}
 
-Returns
-[FunctionEventInvokeConfigResponseMetadataTypeDef](./type_defs.md#functioneventinvokeconfigresponsemetadatatypedef).
+parent.update_function_event_invoke_config(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateFunctionEventInvokeConfigRequestRequestTypeDef](./type_defs.md#updatefunctioneventinvokeconfigrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("lambda").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("lambda").get_paginator` method with overloads.
 
-- `client.get_paginator("list_aliases")` ->
-  [ListAliasesPaginator](./paginators.md#listaliasespaginator)
-- `client.get_paginator("list_code_signing_configs")` ->
-  [ListCodeSigningConfigsPaginator](./paginators.md#listcodesigningconfigspaginator)
-- `client.get_paginator("list_event_source_mappings")` ->
-  [ListEventSourceMappingsPaginator](./paginators.md#listeventsourcemappingspaginator)
-- `client.get_paginator("list_function_event_invoke_configs")` ->
-  [ListFunctionEventInvokeConfigsPaginator](./paginators.md#listfunctioneventinvokeconfigspaginator)
-- `client.get_paginator("list_functions")` ->
-  [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
-- `client.get_paginator("list_functions_by_code_signing_config")` ->
-  [ListFunctionsByCodeSigningConfigPaginator](./paginators.md#listfunctionsbycodesigningconfigpaginator)
-- `client.get_paginator("list_layer_versions")` ->
-  [ListLayerVersionsPaginator](./paginators.md#listlayerversionspaginator)
-- `client.get_paginator("list_layers")` ->
-  [ListLayersPaginator](./paginators.md#listlayerspaginator)
-- `client.get_paginator("list_provisioned_concurrency_configs")` ->
-  [ListProvisionedConcurrencyConfigsPaginator](./paginators.md#listprovisionedconcurrencyconfigspaginator)
-- `client.get_paginator("list_versions_by_function")` ->
-  [ListVersionsByFunctionPaginator](./paginators.md#listversionsbyfunctionpaginator)
+- `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+- `client.get_paginator("list_code_signing_configs")` -> [ListCodeSigningConfigsPaginator](./paginators.md#listcodesigningconfigspaginator)
+- `client.get_paginator("list_event_source_mappings")` -> [ListEventSourceMappingsPaginator](./paginators.md#listeventsourcemappingspaginator)
+- `client.get_paginator("list_function_event_invoke_configs")` -> [ListFunctionEventInvokeConfigsPaginator](./paginators.md#listfunctioneventinvokeconfigspaginator)
+- `client.get_paginator("list_functions")` -> [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
+- `client.get_paginator("list_functions_by_code_signing_config")` -> [ListFunctionsByCodeSigningConfigPaginator](./paginators.md#listfunctionsbycodesigningconfigpaginator)
+- `client.get_paginator("list_layer_versions")` -> [ListLayerVersionsPaginator](./paginators.md#listlayerversionspaginator)
+- `client.get_paginator("list_layers")` -> [ListLayersPaginator](./paginators.md#listlayerspaginator)
+- `client.get_paginator("list_provisioned_concurrency_configs")` -> [ListProvisionedConcurrencyConfigsPaginator](./paginators.md#listprovisionedconcurrencyconfigspaginator)
+- `client.get_paginator("list_versions_by_function")` -> [ListVersionsByFunctionPaginator](./paginators.md#listversionsbyfunctionpaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("lambda").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("lambda").get_waiter` method with overloads.
 
-- `client.get_waiter("function_active")` ->
-  [FunctionActiveWaiter](./waiters.md#functionactivewaiter)
-- `client.get_waiter("function_active_v2")` ->
-  [FunctionActiveV2Waiter](./waiters.md#functionactivev2waiter)
-- `client.get_waiter("function_exists")` ->
-  [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
-- `client.get_waiter("function_updated")` ->
-  [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)
-- `client.get_waiter("function_updated_v2")` ->
-  [FunctionUpdatedV2Waiter](./waiters.md#functionupdatedv2waiter)
+- `client.get_waiter("function_active")` -> [FunctionActiveWaiter](./waiters.md#functionactivewaiter)
+- `client.get_waiter("function_active_v2")` -> [FunctionActiveV2Waiter](./waiters.md#functionactivev2waiter)
+- `client.get_waiter("function_exists")` -> [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
+- `client.get_waiter("function_updated")` -> [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)
+- `client.get_waiter("function_updated_v2")` -> [FunctionUpdatedV2Waiter](./waiters.md#functionupdatedv2waiter)
+

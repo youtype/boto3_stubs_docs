@@ -1,63 +1,18 @@
-<a id="ssoadminclient-for-boto3-ssoadmin-module"></a>
-
-# SSOAdminClient for boto3 SSOAdmin module
+# SSOAdminClient
 
 > [Index](../README.md) > [SSOAdmin](./README.md) > SSOAdminClient
 
-Auto-generated documentation for
-[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
-type annotations stubs module
-[mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+!!! note ""
 
-- [SSOAdminClient for boto3 SSOAdmin module](#ssoadminclient-for-boto3-ssoadmin-module)
-  - [SSOAdminClient](#ssoadminclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [attach_managed_policy_to_permission_set](#attach_managed_policy_to_permission_set)
-    - [can_paginate](#can_paginate)
-    - [create_account_assignment](#create_account_assignment)
-    - [create_instance_access_control_attribute_configuration](#create_instance_access_control_attribute_configuration)
-    - [create_permission_set](#create_permission_set)
-    - [delete_account_assignment](#delete_account_assignment)
-    - [delete_inline_policy_from_permission_set](#delete_inline_policy_from_permission_set)
-    - [delete_instance_access_control_attribute_configuration](#delete_instance_access_control_attribute_configuration)
-    - [delete_permission_set](#delete_permission_set)
-    - [describe_account_assignment_creation_status](#describe_account_assignment_creation_status)
-    - [describe_account_assignment_deletion_status](#describe_account_assignment_deletion_status)
-    - [describe_instance_access_control_attribute_configuration](#describe_instance_access_control_attribute_configuration)
-    - [describe_permission_set](#describe_permission_set)
-    - [describe_permission_set_provisioning_status](#describe_permission_set_provisioning_status)
-    - [detach_managed_policy_from_permission_set](#detach_managed_policy_from_permission_set)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_inline_policy_for_permission_set](#get_inline_policy_for_permission_set)
-    - [list_account_assignment_creation_status](#list_account_assignment_creation_status)
-    - [list_account_assignment_deletion_status](#list_account_assignment_deletion_status)
-    - [list_account_assignments](#list_account_assignments)
-    - [list_accounts_for_provisioned_permission_set](#list_accounts_for_provisioned_permission_set)
-    - [list_instances](#list_instances)
-    - [list_managed_policies_in_permission_set](#list_managed_policies_in_permission_set)
-    - [list_permission_set_provisioning_status](#list_permission_set_provisioning_status)
-    - [list_permission_sets](#list_permission_sets)
-    - [list_permission_sets_provisioned_to_account](#list_permission_sets_provisioned_to_account)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [provision_permission_set](#provision_permission_set)
-    - [put_inline_policy_to_permission_set](#put_inline_policy_to_permission_set)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_instance_access_control_attribute_configuration](#update_instance_access_control_attribute_configuration)
-    - [update_permission_set](#update_permission_set)
-    - [get_paginator](#get_paginator)
-
-<a id="ssoadminclient"></a>
+    Auto-generated documentation for [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+    type annotations stubs module [mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 ## SSOAdminClient
 
-Type annotations for `boto3.client("sso-admin")`
+Type annotations and code completion for `#!python boto3.client("sso-admin")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sso_admin.client import SSOAdminClient
 
@@ -65,880 +20,1119 @@ def get_sso-admin_client() -> SSOAdminClient:
     return Session().client("sso-admin")
 ```
 
-Boto3 documentation:
-[SSOAdmin.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sso-admin").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sso-admin")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sso_admin.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SSOAdminClient exceptions.
-
-Type annotations for `boto3.client("sso-admin").exceptions` method.
-
-Boto3 documentation:
-[SSOAdmin.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="attach\_managed\_policy\_to\_permission\_set"></a>
-
-### attach_managed_policy_to_permission_set
+### attach\_managed\_policy\_to\_permission\_set
 
 Attaches an IAM managed policy ARN to a permission set.
 
-Type annotations for
-`boto3.client("sso-admin").attach_managed_policy_to_permission_set` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").attach_managed_policy_to_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.attach_managed_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.attach_managed_policy_to_permission_set)
+```python title="Method definition"
+def attach_managed_policy_to_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    ManagedPolicyArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AttachManagedPolicyToPermissionSetRequestRequestTypeDef](./type_defs.md#attachmanagedpolicytopermissionsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `ManagedPolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachManagedPolicyToPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+    "ManagedPolicyArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.attach_managed_policy_to_permission_set(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AttachManagedPolicyToPermissionSetRequestRequestTypeDef](./type_defs.md#attachmanagedpolicytopermissionsetrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sso-admin").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.can_paginate)
 
-Boto3 documentation:
-[SSOAdmin.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_account\_assignment"></a>
-
-### create_account_assignment
+### create\_account\_assignment
 
 Assigns access to a principal for a specified Amazon Web Services account using
 a specified permission set.
 
-Type annotations for `boto3.client("sso-admin").create_account_assignment`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").create_account_assignment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment)
 
-Boto3 documentation:
-[SSOAdmin.Client.create_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_account_assignment)
+```python title="Method definition"
+def create_account_assignment(
+    self,
+    *,
+    InstanceArn: str,
+    TargetId: str,
+    TargetType: TargetTypeType,  # (1)
+    PermissionSetArn: str,
+    PrincipalType: PrincipalTypeType,  # (2)
+    PrincipalId: str,
+) -> CreateAccountAssignmentResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAccountAssignmentRequestRequestTypeDef](./type_defs.md#createaccountassignmentrequestrequesttypedef).
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+2. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
+3. See [:material-code-braces: CreateAccountAssignmentResponseTypeDef](./type_defs.md#createaccountassignmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `TargetId`: `str` *(required)*
-- `TargetType`: `Literal['AWS_ACCOUNT']` (see
-  [TargetTypeType](./literals.md#targettypetype)) *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
-  *(required)*
-- `PrincipalId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAccountAssignmentRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "TargetId": ...,
+    "TargetType": ...,
+    "PermissionSetArn": ...,
+    "PrincipalType": ...,
+    "PrincipalId": ...,
+}
 
-Returns
-[CreateAccountAssignmentResponseTypeDef](./type_defs.md#createaccountassignmentresponsetypedef).
+parent.create_account_assignment(**kwargs)
+```
 
-<a id="create\_instance\_access\_control\_attribute\_configuration"></a>
+1. See [:material-code-braces: CreateAccountAssignmentRequestRequestTypeDef](./type_defs.md#createaccountassignmentrequestrequesttypedef) 
 
-### create_instance_access_control_attribute_configuration
+### create\_instance\_access\_control\_attribute\_configuration
 
 Enables the attributes-based access control (ABAC) feature for the specified
 Amazon Web Services SSO instance.
 
-Type annotations for
-`boto3.client("sso-admin").create_instance_access_control_attribute_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").create_instance_access_control_attribute_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration)
 
-Boto3 documentation:
-[SSOAdmin.Client.create_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_instance_access_control_attribute_configuration)
+```python title="Method definition"
+def create_instance_access_control_attribute_configuration(
+    self,
+    *,
+    InstanceArn: str,
+    InstanceAccessControlAttributeConfiguration: InstanceAccessControlAttributeConfigurationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#createinstanceaccesscontrolattributeconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `InstanceAccessControlAttributeConfiguration`:
-  [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "InstanceAccessControlAttributeConfiguration": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_instance_access_control_attribute_configuration(**kwargs)
+```
 
-<a id="create\_permission\_set"></a>
+1. See [:material-code-braces: CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#createinstanceaccesscontrolattributeconfigurationrequestrequesttypedef) 
 
-### create_permission_set
+### create\_permission\_set
 
 Creates a permission set within a specified SSO instance.
 
-Type annotations for `boto3.client("sso-admin").create_permission_set` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").create_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.create_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.create_permission_set)
+```python title="Method definition"
+def create_permission_set(
+    self,
+    *,
+    Name: str,
+    InstanceArn: str,
+    Description: str = ...,
+    SessionDuration: str = ...,
+    RelayState: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreatePermissionSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePermissionSetRequestRequestTypeDef](./type_defs.md#createpermissionsetrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreatePermissionSetResponseTypeDef](./type_defs.md#createpermissionsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `InstanceArn`: `str` *(required)*
-- `Description`: `str`
-- `SessionDuration`: `str`
-- `RelayState`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePermissionSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "InstanceArn": ...,
+}
 
-Returns
-[CreatePermissionSetResponseTypeDef](./type_defs.md#createpermissionsetresponsetypedef).
+parent.create_permission_set(**kwargs)
+```
 
-<a id="delete\_account\_assignment"></a>
+1. See [:material-code-braces: CreatePermissionSetRequestRequestTypeDef](./type_defs.md#createpermissionsetrequestrequesttypedef) 
 
-### delete_account_assignment
+### delete\_account\_assignment
 
 Deletes a principal's access from a specified Amazon Web Services account using
 a specified permission set.
 
-Type annotations for `boto3.client("sso-admin").delete_account_assignment`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").delete_account_assignment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment)
 
-Boto3 documentation:
-[SSOAdmin.Client.delete_account_assignment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_account_assignment)
+```python title="Method definition"
+def delete_account_assignment(
+    self,
+    *,
+    InstanceArn: str,
+    TargetId: str,
+    TargetType: TargetTypeType,  # (1)
+    PermissionSetArn: str,
+    PrincipalType: PrincipalTypeType,  # (2)
+    PrincipalId: str,
+) -> DeleteAccountAssignmentResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccountAssignmentRequestRequestTypeDef](./type_defs.md#deleteaccountassignmentrequestrequesttypedef).
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+2. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
+3. See [:material-code-braces: DeleteAccountAssignmentResponseTypeDef](./type_defs.md#deleteaccountassignmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `TargetId`: `str` *(required)*
-- `TargetType`: `Literal['AWS_ACCOUNT']` (see
-  [TargetTypeType](./literals.md#targettypetype)) *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
-  *(required)*
-- `PrincipalId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccountAssignmentRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "TargetId": ...,
+    "TargetType": ...,
+    "PermissionSetArn": ...,
+    "PrincipalType": ...,
+    "PrincipalId": ...,
+}
 
-Returns
-[DeleteAccountAssignmentResponseTypeDef](./type_defs.md#deleteaccountassignmentresponsetypedef).
+parent.delete_account_assignment(**kwargs)
+```
 
-<a id="delete\_inline\_policy\_from\_permission\_set"></a>
+1. See [:material-code-braces: DeleteAccountAssignmentRequestRequestTypeDef](./type_defs.md#deleteaccountassignmentrequestrequesttypedef) 
 
-### delete_inline_policy_from_permission_set
+### delete\_inline\_policy\_from\_permission\_set
 
 Deletes the inline policy from a specified permission set.
 
-Type annotations for
-`boto3.client("sso-admin").delete_inline_policy_from_permission_set` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").delete_inline_policy_from_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.delete_inline_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_inline_policy_from_permission_set)
+```python title="Method definition"
+def delete_inline_policy_from_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef](./type_defs.md#deleteinlinepolicyfrompermissionsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_inline_policy_from_permission_set(**kwargs)
+```
 
-<a id="delete\_instance\_access\_control\_attribute\_configuration"></a>
+1. See [:material-code-braces: DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef](./type_defs.md#deleteinlinepolicyfrompermissionsetrequestrequesttypedef) 
 
-### delete_instance_access_control_attribute_configuration
+### delete\_instance\_access\_control\_attribute\_configuration
 
 Disables the attributes-based access control (ABAC) feature for the specified
 Amazon Web Services SSO instance and deletes all of the attribute mappings that
 have been configured.
 
-Type annotations for
-`boto3.client("sso-admin").delete_instance_access_control_attribute_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").delete_instance_access_control_attribute_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration)
 
-Boto3 documentation:
-[SSOAdmin.Client.delete_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_instance_access_control_attribute_configuration)
+```python title="Method definition"
+def delete_instance_access_control_attribute_configuration(
+    self,
+    *,
+    InstanceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#deleteinstanceaccesscontrolattributeconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_instance_access_control_attribute_configuration(**kwargs)
+```
 
-<a id="delete\_permission\_set"></a>
+1. See [:material-code-braces: DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#deleteinstanceaccesscontrolattributeconfigurationrequestrequesttypedef) 
 
-### delete_permission_set
+### delete\_permission\_set
 
 Deletes the specified permission set.
 
-Type annotations for `boto3.client("sso-admin").delete_permission_set` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").delete_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.delete_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.delete_permission_set)
+```python title="Method definition"
+def delete_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePermissionSetRequestRequestTypeDef](./type_defs.md#deletepermissionsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_permission_set(**kwargs)
+```
 
-<a id="describe\_account\_assignment\_creation\_status"></a>
+1. See [:material-code-braces: DeletePermissionSetRequestRequestTypeDef](./type_defs.md#deletepermissionsetrequestrequesttypedef) 
 
-### describe_account_assignment_creation_status
+### describe\_account\_assignment\_creation\_status
 
 Describes the status of the assignment creation request.
 
-Type annotations for
-`boto3.client("sso-admin").describe_account_assignment_creation_status` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").describe_account_assignment_creation_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status)
 
-Boto3 documentation:
-[SSOAdmin.Client.describe_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_creation_status)
+```python title="Method definition"
+def describe_account_assignment_creation_status(
+    self,
+    *,
+    InstanceArn: str,
+    AccountAssignmentCreationRequestId: str,
+) -> DescribeAccountAssignmentCreationStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccountAssignmentCreationStatusRequestRequestTypeDef](./type_defs.md#describeaccountassignmentcreationstatusrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#describeaccountassignmentcreationstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `AccountAssignmentCreationRequestId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountAssignmentCreationStatusRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "AccountAssignmentCreationRequestId": ...,
+}
 
-Returns
-[DescribeAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#describeaccountassignmentcreationstatusresponsetypedef).
+parent.describe_account_assignment_creation_status(**kwargs)
+```
 
-<a id="describe\_account\_assignment\_deletion\_status"></a>
+1. See [:material-code-braces: DescribeAccountAssignmentCreationStatusRequestRequestTypeDef](./type_defs.md#describeaccountassignmentcreationstatusrequestrequesttypedef) 
 
-### describe_account_assignment_deletion_status
+### describe\_account\_assignment\_deletion\_status
 
 Describes the status of the assignment deletion request.
 
-Type annotations for
-`boto3.client("sso-admin").describe_account_assignment_deletion_status` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").describe_account_assignment_deletion_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status)
 
-Boto3 documentation:
-[SSOAdmin.Client.describe_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_account_assignment_deletion_status)
+```python title="Method definition"
+def describe_account_assignment_deletion_status(
+    self,
+    *,
+    InstanceArn: str,
+    AccountAssignmentDeletionRequestId: str,
+) -> DescribeAccountAssignmentDeletionStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef](./type_defs.md#describeaccountassignmentdeletionstatusrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#describeaccountassignmentdeletionstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `AccountAssignmentDeletionRequestId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "AccountAssignmentDeletionRequestId": ...,
+}
 
-Returns
-[DescribeAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#describeaccountassignmentdeletionstatusresponsetypedef).
+parent.describe_account_assignment_deletion_status(**kwargs)
+```
 
-<a id="describe\_instance\_access\_control\_attribute\_configuration"></a>
+1. See [:material-code-braces: DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef](./type_defs.md#describeaccountassignmentdeletionstatusrequestrequesttypedef) 
 
-### describe_instance_access_control_attribute_configuration
+### describe\_instance\_access\_control\_attribute\_configuration
 
 Returns the list of Amazon Web Services SSO identity store attributes that have
 been configured to work with attributes-based access control (ABAC) for the
 specified Amazon Web Services SSO instance.
 
-Type annotations for
-`boto3.client("sso-admin").describe_instance_access_control_attribute_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").describe_instance_access_control_attribute_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration)
 
-Boto3 documentation:
-[SSOAdmin.Client.describe_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_instance_access_control_attribute_configuration)
+```python title="Method definition"
+def describe_instance_access_control_attribute_configuration(
+    self,
+    *,
+    InstanceArn: str,
+) -> DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#describeinstanceaccesscontrolattributeconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef](./type_defs.md#describeinstanceaccesscontrolattributeconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
 
-Returns
-[DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef](./type_defs.md#describeinstanceaccesscontrolattributeconfigurationresponsetypedef).
+parent.describe_instance_access_control_attribute_configuration(**kwargs)
+```
 
-<a id="describe\_permission\_set"></a>
+1. See [:material-code-braces: DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#describeinstanceaccesscontrolattributeconfigurationrequestrequesttypedef) 
 
-### describe_permission_set
+### describe\_permission\_set
 
 Gets the details of the permission set.
 
-Type annotations for `boto3.client("sso-admin").describe_permission_set`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").describe_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.describe_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set)
+```python title="Method definition"
+def describe_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+) -> DescribePermissionSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePermissionSetRequestRequestTypeDef](./type_defs.md#describepermissionsetrequestrequesttypedef).
+1. See [:material-code-braces: DescribePermissionSetResponseTypeDef](./type_defs.md#describepermissionsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
 
-Returns
-[DescribePermissionSetResponseTypeDef](./type_defs.md#describepermissionsetresponsetypedef).
+parent.describe_permission_set(**kwargs)
+```
 
-<a id="describe\_permission\_set\_provisioning\_status"></a>
+1. See [:material-code-braces: DescribePermissionSetRequestRequestTypeDef](./type_defs.md#describepermissionsetrequestrequesttypedef) 
 
-### describe_permission_set_provisioning_status
+### describe\_permission\_set\_provisioning\_status
 
 Describes the status for the given permission set provisioning request.
 
-Type annotations for
-`boto3.client("sso-admin").describe_permission_set_provisioning_status` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").describe_permission_set_provisioning_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status)
 
-Boto3 documentation:
-[SSOAdmin.Client.describe_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.describe_permission_set_provisioning_status)
+```python title="Method definition"
+def describe_permission_set_provisioning_status(
+    self,
+    *,
+    InstanceArn: str,
+    ProvisionPermissionSetRequestId: str,
+) -> DescribePermissionSetProvisioningStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePermissionSetProvisioningStatusRequestRequestTypeDef](./type_defs.md#describepermissionsetprovisioningstatusrequestrequesttypedef).
+1. See [:material-code-braces: DescribePermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#describepermissionsetprovisioningstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `ProvisionPermissionSetRequestId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePermissionSetProvisioningStatusRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "ProvisionPermissionSetRequestId": ...,
+}
 
-Returns
-[DescribePermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#describepermissionsetprovisioningstatusresponsetypedef).
+parent.describe_permission_set_provisioning_status(**kwargs)
+```
 
-<a id="detach\_managed\_policy\_from\_permission\_set"></a>
+1. See [:material-code-braces: DescribePermissionSetProvisioningStatusRequestRequestTypeDef](./type_defs.md#describepermissionsetprovisioningstatusrequestrequesttypedef) 
 
-### detach_managed_policy_from_permission_set
+### detach\_managed\_policy\_from\_permission\_set
 
 Detaches the attached IAM managed policy ARN from the specified permission set.
 
-Type annotations for
-`boto3.client("sso-admin").detach_managed_policy_from_permission_set` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").detach_managed_policy_from_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.detach_managed_policy_from_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.detach_managed_policy_from_permission_set)
+```python title="Method definition"
+def detach_managed_policy_from_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    ManagedPolicyArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DetachManagedPolicyFromPermissionSetRequestRequestTypeDef](./type_defs.md#detachmanagedpolicyfrompermissionsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `ManagedPolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachManagedPolicyFromPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+    "ManagedPolicyArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.detach_managed_policy_from_permission_set(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DetachManagedPolicyFromPermissionSetRequestRequestTypeDef](./type_defs.md#detachmanagedpolicyfrompermissionsetrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("sso-admin").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SSOAdmin.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_inline\_policy\_for\_permission\_set"></a>
-
-### get_inline_policy_for_permission_set
+### get\_inline\_policy\_for\_permission\_set
 
 Obtains the inline policy assigned to the permission set.
 
-Type annotations for
-`boto3.client("sso-admin").get_inline_policy_for_permission_set` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_inline_policy_for_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.get_inline_policy_for_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.get_inline_policy_for_permission_set)
+```python title="Method definition"
+def get_inline_policy_for_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+) -> GetInlinePolicyForPermissionSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInlinePolicyForPermissionSetRequestRequestTypeDef](./type_defs.md#getinlinepolicyforpermissionsetrequestrequesttypedef).
+1. See [:material-code-braces: GetInlinePolicyForPermissionSetResponseTypeDef](./type_defs.md#getinlinepolicyforpermissionsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInlinePolicyForPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
 
-Returns
-[GetInlinePolicyForPermissionSetResponseTypeDef](./type_defs.md#getinlinepolicyforpermissionsetresponsetypedef).
+parent.get_inline_policy_for_permission_set(**kwargs)
+```
 
-<a id="list\_account\_assignment\_creation\_status"></a>
+1. See [:material-code-braces: GetInlinePolicyForPermissionSetRequestRequestTypeDef](./type_defs.md#getinlinepolicyforpermissionsetrequestrequesttypedef) 
 
-### list_account_assignment_creation_status
+### list\_account\_assignment\_creation\_status
 
-Lists the status of the Amazon Web Services account assignment creation
-requests for a specified SSO instance.
+Lists the status of the Amazon Web Services account assignment creation requests
+for a specified SSO instance.
 
-Type annotations for
-`boto3.client("sso-admin").list_account_assignment_creation_status` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_account_assignment_creation_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_account_assignment_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_creation_status)
+```python title="Method definition"
+def list_account_assignment_creation_status(
+    self,
+    *,
+    InstanceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filter: OperationStatusFilterTypeDef = ...,  # (1)
+) -> ListAccountAssignmentCreationStatusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountAssignmentCreationStatusRequestRequestTypeDef](./type_defs.md#listaccountassignmentcreationstatusrequestrequesttypedef).
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
+2. See [:material-code-braces: ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filter`:
-  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListAccountAssignmentCreationStatusRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
 
-Returns
-[ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef).
+parent.list_account_assignment_creation_status(**kwargs)
+```
 
-<a id="list\_account\_assignment\_deletion\_status"></a>
+1. See [:material-code-braces: ListAccountAssignmentCreationStatusRequestRequestTypeDef](./type_defs.md#listaccountassignmentcreationstatusrequestrequesttypedef) 
 
-### list_account_assignment_deletion_status
+### list\_account\_assignment\_deletion\_status
 
-Lists the status of the Amazon Web Services account assignment deletion
-requests for a specified SSO instance.
+Lists the status of the Amazon Web Services account assignment deletion requests
+for a specified SSO instance.
 
-Type annotations for
-`boto3.client("sso-admin").list_account_assignment_deletion_status` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_account_assignment_deletion_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_account_assignment_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignment_deletion_status)
+```python title="Method definition"
+def list_account_assignment_deletion_status(
+    self,
+    *,
+    InstanceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filter: OperationStatusFilterTypeDef = ...,  # (1)
+) -> ListAccountAssignmentDeletionStatusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountAssignmentDeletionStatusRequestRequestTypeDef](./type_defs.md#listaccountassignmentdeletionstatusrequestrequesttypedef).
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
+2. See [:material-code-braces: ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filter`:
-  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListAccountAssignmentDeletionStatusRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
 
-Returns
-[ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef).
+parent.list_account_assignment_deletion_status(**kwargs)
+```
 
-<a id="list\_account\_assignments"></a>
+1. See [:material-code-braces: ListAccountAssignmentDeletionStatusRequestRequestTypeDef](./type_defs.md#listaccountassignmentdeletionstatusrequestrequesttypedef) 
 
-### list_account_assignments
+### list\_account\_assignments
 
 Lists the assignee of the specified Amazon Web Services account with the
 specified permission set.
 
-Type annotations for `boto3.client("sso-admin").list_account_assignments`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_account_assignments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_account_assignments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_account_assignments)
+```python title="Method definition"
+def list_account_assignments(
+    self,
+    *,
+    InstanceArn: str,
+    AccountId: str,
+    PermissionSetArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAccountAssignmentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountAssignmentsRequestRequestTypeDef](./type_defs.md#listaccountassignmentsrequestrequesttypedef).
+1. See [:material-code-braces: ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `AccountId`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAccountAssignmentsRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "AccountId": ...,
+    "PermissionSetArn": ...,
+}
 
-Returns
-[ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef).
+parent.list_account_assignments(**kwargs)
+```
 
-<a id="list\_accounts\_for\_provisioned\_permission\_set"></a>
+1. See [:material-code-braces: ListAccountAssignmentsRequestRequestTypeDef](./type_defs.md#listaccountassignmentsrequestrequesttypedef) 
 
-### list_accounts_for_provisioned_permission_set
+### list\_accounts\_for\_provisioned\_permission\_set
 
-Lists all the Amazon Web Services accounts where the specified permission set
-is provisioned.
+Lists all the Amazon Web Services accounts where the specified permission set is
+provisioned.
 
-Type annotations for
-`boto3.client("sso-admin").list_accounts_for_provisioned_permission_set`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_accounts_for_provisioned_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_accounts_for_provisioned_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_accounts_for_provisioned_permission_set)
+```python title="Method definition"
+def list_accounts_for_provisioned_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    ProvisioningStatus: ProvisioningStatusType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAccountsForProvisionedPermissionSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountsForProvisionedPermissionSetRequestRequestTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetrequestrequesttypedef).
+1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
+2. See [:material-code-braces: ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `ProvisioningStatus`:
-  [ProvisioningStatusType](./literals.md#provisioningstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAccountsForProvisionedPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
 
-Returns
-[ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef).
+parent.list_accounts_for_provisioned_permission_set(**kwargs)
+```
 
-<a id="list\_instances"></a>
+1. See [:material-code-braces: ListAccountsForProvisionedPermissionSetRequestRequestTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetrequestrequesttypedef) 
 
-### list_instances
+### list\_instances
 
 Lists the SSO instances that the caller has access to.
 
-Type annotations for `boto3.client("sso-admin").list_instances` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_instances)
+```python title="Method definition"
+def list_instances(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef).
+1. See [:material-code-braces: ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInstancesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
+parent.list_instances(**kwargs)
+```
 
-<a id="list\_managed\_policies\_in\_permission\_set"></a>
+1. See [:material-code-braces: ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef) 
 
-### list_managed_policies_in_permission_set
+### list\_managed\_policies\_in\_permission\_set
 
 Lists the IAM managed policy that is attached to a specified permission set.
 
-Type annotations for
-`boto3.client("sso-admin").list_managed_policies_in_permission_set` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_managed_policies_in_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_managed_policies_in_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_managed_policies_in_permission_set)
+```python title="Method definition"
+def list_managed_policies_in_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListManagedPoliciesInPermissionSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListManagedPoliciesInPermissionSetRequestRequestTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetrequestrequesttypedef).
+1. See [:material-code-braces: ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListManagedPoliciesInPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
 
-Returns
-[ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef).
+parent.list_managed_policies_in_permission_set(**kwargs)
+```
 
-<a id="list\_permission\_set\_provisioning\_status"></a>
+1. See [:material-code-braces: ListManagedPoliciesInPermissionSetRequestRequestTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetrequestrequesttypedef) 
 
-### list_permission_set_provisioning_status
+### list\_permission\_set\_provisioning\_status
 
-Lists the status of the permission set provisioning requests for a specified
-SSO instance.
+Lists the status of the permission set provisioning requests for a specified SSO
+instance.
 
-Type annotations for
-`boto3.client("sso-admin").list_permission_set_provisioning_status` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_permission_set_provisioning_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_permission_set_provisioning_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_set_provisioning_status)
+```python title="Method definition"
+def list_permission_set_provisioning_status(
+    self,
+    *,
+    InstanceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filter: OperationStatusFilterTypeDef = ...,  # (1)
+) -> ListPermissionSetProvisioningStatusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPermissionSetProvisioningStatusRequestRequestTypeDef](./type_defs.md#listpermissionsetprovisioningstatusrequestrequesttypedef).
+1. See [:material-code-braces: OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef) 
+2. See [:material-code-braces: ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filter`:
-  [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListPermissionSetProvisioningStatusRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
 
-Returns
-[ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef).
+parent.list_permission_set_provisioning_status(**kwargs)
+```
 
-<a id="list\_permission\_sets"></a>
+1. See [:material-code-braces: ListPermissionSetProvisioningStatusRequestRequestTypeDef](./type_defs.md#listpermissionsetprovisioningstatusrequestrequesttypedef) 
 
-### list_permission_sets
+### list\_permission\_sets
 
-Lists the PermissionSet s in an SSO instance.
+Lists the  PermissionSet s in an SSO instance.
 
-Type annotations for `boto3.client("sso-admin").list_permission_sets` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_permission_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_permission_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets)
+```python title="Method definition"
+def list_permission_sets(
+    self,
+    *,
+    InstanceArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPermissionSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPermissionSetsRequestRequestTypeDef](./type_defs.md#listpermissionsetsrequestrequesttypedef).
+1. See [:material-code-braces: ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPermissionSetsRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+}
 
-Returns
-[ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef).
+parent.list_permission_sets(**kwargs)
+```
 
-<a id="list\_permission\_sets\_provisioned\_to\_account"></a>
+1. See [:material-code-braces: ListPermissionSetsRequestRequestTypeDef](./type_defs.md#listpermissionsetsrequestrequesttypedef) 
 
-### list_permission_sets_provisioned_to_account
+### list\_permission\_sets\_provisioned\_to\_account
 
 Lists all the permission sets that are provisioned to a specified Amazon Web
 Services account.
 
-Type annotations for
-`boto3.client("sso-admin").list_permission_sets_provisioned_to_account` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_permission_sets_provisioned_to_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_permission_sets_provisioned_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_permission_sets_provisioned_to_account)
+```python title="Method definition"
+def list_permission_sets_provisioned_to_account(
+    self,
+    *,
+    InstanceArn: str,
+    AccountId: str,
+    ProvisioningStatus: ProvisioningStatusType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPermissionSetsProvisionedToAccountResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPermissionSetsProvisionedToAccountRequestRequestTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountrequestrequesttypedef).
+1. See [:material-code-brackets: ProvisioningStatusType](./literals.md#provisioningstatustype) 
+2. See [:material-code-braces: ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `AccountId`: `str` *(required)*
-- `ProvisioningStatus`:
-  [ProvisioningStatusType](./literals.md#provisioningstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPermissionSetsProvisionedToAccountRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "AccountId": ...,
+}
 
-Returns
-[ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef).
+parent.list_permission_sets_provisioned_to_account(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListPermissionSetsProvisionedToAccountRequestRequestTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags that are attached to a specified resource.
 
-Type annotations for `boto3.client("sso-admin").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[SSOAdmin.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    InstanceArn: str,
+    ResourceArn: str,
+    NextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="provision\_permission\_set"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### provision_permission_set
+### provision\_permission\_set
 
 The process by which a specified permission set is provisioned to the specified
 target.
 
-Type annotations for `boto3.client("sso-admin").provision_permission_set`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").provision_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.provision_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.provision_permission_set)
+```python title="Method definition"
+def provision_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    TargetType: ProvisionTargetTypeType,  # (1)
+    TargetId: str = ...,
+) -> ProvisionPermissionSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ProvisionPermissionSetRequestRequestTypeDef](./type_defs.md#provisionpermissionsetrequestrequesttypedef).
+1. See [:material-code-brackets: ProvisionTargetTypeType](./literals.md#provisiontargettypetype) 
+2. See [:material-code-braces: ProvisionPermissionSetResponseTypeDef](./type_defs.md#provisionpermissionsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `TargetType`:
-  [ProvisionTargetTypeType](./literals.md#provisiontargettypetype) *(required)*
-- `TargetId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ProvisionPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+    "TargetType": ...,
+}
 
-Returns
-[ProvisionPermissionSetResponseTypeDef](./type_defs.md#provisionpermissionsetresponsetypedef).
+parent.provision_permission_set(**kwargs)
+```
 
-<a id="put\_inline\_policy\_to\_permission\_set"></a>
+1. See [:material-code-braces: ProvisionPermissionSetRequestRequestTypeDef](./type_defs.md#provisionpermissionsetrequestrequesttypedef) 
 
-### put_inline_policy_to_permission_set
+### put\_inline\_policy\_to\_permission\_set
 
 Attaches an IAM inline policy to a permission set.
 
-Type annotations for
-`boto3.client("sso-admin").put_inline_policy_to_permission_set` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").put_inline_policy_to_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.put_inline_policy_to_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.put_inline_policy_to_permission_set)
+```python title="Method definition"
+def put_inline_policy_to_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    InlinePolicy: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutInlinePolicyToPermissionSetRequestRequestTypeDef](./type_defs.md#putinlinepolicytopermissionsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `InlinePolicy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutInlinePolicyToPermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+    "InlinePolicy": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_inline_policy_to_permission_set(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutInlinePolicyToPermissionSetRequestRequestTypeDef](./type_defs.md#putinlinepolicytopermissionsetrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates a set of tags with a specified resource.
 
-Type annotations for `boto3.client("sso-admin").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource)
 
-Boto3 documentation:
-[SSOAdmin.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    InstanceArn: str,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Disassociates a set of tags from a specified resource.
 
-Type annotations for `boto3.client("sso-admin").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource)
 
-Boto3 documentation:
-[SSOAdmin.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    InstanceArn: str,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_instance\_access\_control\_attribute\_configuration"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_instance_access_control_attribute_configuration
+### update\_instance\_access\_control\_attribute\_configuration
 
 Updates the Amazon Web Services SSO identity store attributes that you can use
 with the Amazon Web Services SSO instance for attributes-based access control
 (ABAC).
 
-Type annotations for
-`boto3.client("sso-admin").update_instance_access_control_attribute_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").update_instance_access_control_attribute_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration)
 
-Boto3 documentation:
-[SSOAdmin.Client.update_instance_access_control_attribute_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_instance_access_control_attribute_configuration)
+```python title="Method definition"
+def update_instance_access_control_attribute_configuration(
+    self,
+    *,
+    InstanceArn: str,
+    InstanceAccessControlAttributeConfiguration: InstanceAccessControlAttributeConfigurationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#updateinstanceaccesscontrolattributeconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `InstanceAccessControlAttributeConfiguration`:
-  [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "InstanceAccessControlAttributeConfiguration": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_instance_access_control_attribute_configuration(**kwargs)
+```
 
-<a id="update\_permission\_set"></a>
+1. See [:material-code-braces: UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#updateinstanceaccesscontrolattributeconfigurationrequestrequesttypedef) 
 
-### update_permission_set
+### update\_permission\_set
 
 Updates an existing permission set.
 
-Type annotations for `boto3.client("sso-admin").update_permission_set` method.
+Type annotations and code completion for `#!python boto3.client("sso-admin").update_permission_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set)
 
-Boto3 documentation:
-[SSOAdmin.Client.update_permission_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client.update_permission_set)
+```python title="Method definition"
+def update_permission_set(
+    self,
+    *,
+    InstanceArn: str,
+    PermissionSetArn: str,
+    Description: str = ...,
+    SessionDuration: str = ...,
+    RelayState: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdatePermissionSetRequestRequestTypeDef](./type_defs.md#updatepermissionsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceArn`: `str` *(required)*
-- `PermissionSetArn`: `str` *(required)*
-- `Description`: `str`
-- `SessionDuration`: `str`
-- `RelayState`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePermissionSetRequestRequestTypeDef = {  # (1)
+    "InstanceArn": ...,
+    "PermissionSetArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_permission_set(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdatePermissionSetRequestRequestTypeDef](./type_defs.md#updatepermissionsetrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("sso-admin").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("sso-admin").get_paginator` method with overloads.
 
-- `client.get_paginator("list_account_assignment_creation_status")` ->
-  [ListAccountAssignmentCreationStatusPaginator](./paginators.md#listaccountassignmentcreationstatuspaginator)
-- `client.get_paginator("list_account_assignment_deletion_status")` ->
-  [ListAccountAssignmentDeletionStatusPaginator](./paginators.md#listaccountassignmentdeletionstatuspaginator)
-- `client.get_paginator("list_account_assignments")` ->
-  [ListAccountAssignmentsPaginator](./paginators.md#listaccountassignmentspaginator)
-- `client.get_paginator("list_accounts_for_provisioned_permission_set")` ->
-  [ListAccountsForProvisionedPermissionSetPaginator](./paginators.md#listaccountsforprovisionedpermissionsetpaginator)
-- `client.get_paginator("list_instances")` ->
-  [ListInstancesPaginator](./paginators.md#listinstancespaginator)
-- `client.get_paginator("list_managed_policies_in_permission_set")` ->
-  [ListManagedPoliciesInPermissionSetPaginator](./paginators.md#listmanagedpoliciesinpermissionsetpaginator)
-- `client.get_paginator("list_permission_set_provisioning_status")` ->
-  [ListPermissionSetProvisioningStatusPaginator](./paginators.md#listpermissionsetprovisioningstatuspaginator)
-- `client.get_paginator("list_permission_sets")` ->
-  [ListPermissionSetsPaginator](./paginators.md#listpermissionsetspaginator)
-- `client.get_paginator("list_permission_sets_provisioned_to_account")` ->
-  [ListPermissionSetsProvisionedToAccountPaginator](./paginators.md#listpermissionsetsprovisionedtoaccountpaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_account_assignment_creation_status")` -> [ListAccountAssignmentCreationStatusPaginator](./paginators.md#listaccountassignmentcreationstatuspaginator)
+- `client.get_paginator("list_account_assignment_deletion_status")` -> [ListAccountAssignmentDeletionStatusPaginator](./paginators.md#listaccountassignmentdeletionstatuspaginator)
+- `client.get_paginator("list_account_assignments")` -> [ListAccountAssignmentsPaginator](./paginators.md#listaccountassignmentspaginator)
+- `client.get_paginator("list_accounts_for_provisioned_permission_set")` -> [ListAccountsForProvisionedPermissionSetPaginator](./paginators.md#listaccountsforprovisionedpermissionsetpaginator)
+- `client.get_paginator("list_instances")` -> [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+- `client.get_paginator("list_managed_policies_in_permission_set")` -> [ListManagedPoliciesInPermissionSetPaginator](./paginators.md#listmanagedpoliciesinpermissionsetpaginator)
+- `client.get_paginator("list_permission_set_provisioning_status")` -> [ListPermissionSetProvisioningStatusPaginator](./paginators.md#listpermissionsetprovisioningstatuspaginator)
+- `client.get_paginator("list_permission_sets")` -> [ListPermissionSetsPaginator](./paginators.md#listpermissionsetspaginator)
+- `client.get_paginator("list_permission_sets_provisioned_to_account")` -> [ListPermissionSetsProvisionedToAccountPaginator](./paginators.md#listpermissionsetsprovisionedtoaccountpaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+
+

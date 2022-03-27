@@ -1,58 +1,18 @@
-<a id="paginators-for-boto3-redshift-module"></a>
-
-# Paginators for boto3 Redshift module
+# Paginators
 
 > [Index](../README.md) > [Redshift](./README.md) > Paginators
 
-Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
-type annotations stubs module
-[mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
+!!! note ""
 
-- [Paginators for boto3 Redshift module](#paginators-for-boto3-redshift-module)
-  - [DescribeClusterDbRevisionsPaginator](#describeclusterdbrevisionspaginator)
-  - [DescribeClusterParameterGroupsPaginator](#describeclusterparametergroupspaginator)
-  - [DescribeClusterParametersPaginator](#describeclusterparameterspaginator)
-  - [DescribeClusterSecurityGroupsPaginator](#describeclustersecuritygroupspaginator)
-  - [DescribeClusterSnapshotsPaginator](#describeclustersnapshotspaginator)
-  - [DescribeClusterSubnetGroupsPaginator](#describeclustersubnetgroupspaginator)
-  - [DescribeClusterTracksPaginator](#describeclustertrackspaginator)
-  - [DescribeClusterVersionsPaginator](#describeclusterversionspaginator)
-  - [DescribeClustersPaginator](#describeclusterspaginator)
-  - [DescribeDataSharesPaginator](#describedatasharespaginator)
-  - [DescribeDataSharesForConsumerPaginator](#describedatasharesforconsumerpaginator)
-  - [DescribeDataSharesForProducerPaginator](#describedatasharesforproducerpaginator)
-  - [DescribeDefaultClusterParametersPaginator](#describedefaultclusterparameterspaginator)
-  - [DescribeEndpointAccessPaginator](#describeendpointaccesspaginator)
-  - [DescribeEndpointAuthorizationPaginator](#describeendpointauthorizationpaginator)
-  - [DescribeEventSubscriptionsPaginator](#describeeventsubscriptionspaginator)
-  - [DescribeEventsPaginator](#describeeventspaginator)
-  - [DescribeHsmClientCertificatesPaginator](#describehsmclientcertificatespaginator)
-  - [DescribeHsmConfigurationsPaginator](#describehsmconfigurationspaginator)
-  - [DescribeNodeConfigurationOptionsPaginator](#describenodeconfigurationoptionspaginator)
-  - [DescribeOrderableClusterOptionsPaginator](#describeorderableclusteroptionspaginator)
-  - [DescribeReservedNodeExchangeStatusPaginator](#describereservednodeexchangestatuspaginator)
-  - [DescribeReservedNodeOfferingsPaginator](#describereservednodeofferingspaginator)
-  - [DescribeReservedNodesPaginator](#describereservednodespaginator)
-  - [DescribeScheduledActionsPaginator](#describescheduledactionspaginator)
-  - [DescribeSnapshotCopyGrantsPaginator](#describesnapshotcopygrantspaginator)
-  - [DescribeSnapshotSchedulesPaginator](#describesnapshotschedulespaginator)
-  - [DescribeTableRestoreStatusPaginator](#describetablerestorestatuspaginator)
-  - [DescribeTagsPaginator](#describetagspaginator)
-  - [DescribeUsageLimitsPaginator](#describeusagelimitspaginator)
-  - [GetReservedNodeExchangeConfigurationOptionsPaginator](#getreservednodeexchangeconfigurationoptionspaginator)
-  - [GetReservedNodeExchangeOfferingsPaginator](#getreservednodeexchangeofferingspaginator)
-
-<a id="describeclusterdbrevisionspaginator"></a>
+    Auto-generated documentation for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
+    type annotations stubs module [mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 ## DescribeClusterDbRevisionsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_cluster_db_revisions")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_cluster_db_revisions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeClusterDbRevisionsPaginator
@@ -61,28 +21,40 @@ def get_describe_cluster_db_revisions_paginator() -> DescribeClusterDbRevisionsP
     return Session().client("redshift").get_paginator("describe_cluster_db_revisions")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeClusterDbRevisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterDbRevisions)
 
-Arguments for `DescribeClusterDbRevisionsPaginator.paginate` method:
+### paginate
 
-- `ClusterIdentifier`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClusterDbRevisionsPaginator.paginate` method.
 
-`DescribeClusterDbRevisionsPaginator.paginate` returns
-`_PageIterator`\[[ClusterDbRevisionsMessageTypeDef](./type_defs.md#clusterdbrevisionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ClusterDbRevisionsMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeclusterparametergroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ClusterDbRevisionsMessageTypeDef](./type_defs.md#clusterdbrevisionsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterDbRevisionsMessageDescribeClusterDbRevisionsPaginateTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterDbRevisionsMessageDescribeClusterDbRevisionsPaginateTypeDef](./type_defs.md#describeclusterdbrevisionsmessagedescribeclusterdbrevisionspaginatetypedef) 
 ## DescribeClusterParameterGroupsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_cluster_parameter_groups")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_cluster_parameter_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeClusterParameterGroupsPaginator
@@ -91,30 +63,42 @@ def get_describe_cluster_parameter_groups_paginator() -> DescribeClusterParamete
     return Session().client("redshift").get_paginator("describe_cluster_parameter_groups")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameterGroups)
 
-Arguments for `DescribeClusterParameterGroupsPaginator.paginate` method:
+### paginate
 
-- `ParameterGroupName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClusterParameterGroupsPaginator.paginate` method.
 
-`DescribeClusterParameterGroupsPaginator.paginate` returns
-`_PageIterator`\[[ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ParameterGroupName: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ClusterParameterGroupsMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeclusterparameterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterParameterGroupsMessageDescribeClusterParameterGroupsPaginateTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterParameterGroupsMessageDescribeClusterParameterGroupsPaginateTypeDef](./type_defs.md#describeclusterparametergroupsmessagedescribeclusterparametergroupspaginatetypedef) 
 ## DescribeClusterParametersPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_cluster_parameters")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_cluster_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeClusterParametersPaginator
@@ -123,29 +107,41 @@ def get_describe_cluster_parameters_paginator() -> DescribeClusterParametersPagi
     return Session().client("redshift").get_paginator("describe_cluster_parameters")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterParameters)
 
-Arguments for `DescribeClusterParametersPaginator.paginate` method:
+### paginate
 
-- `ParameterGroupName`: `str` *(required)*
-- `Source`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClusterParametersPaginator.paginate` method.
 
-`DescribeClusterParametersPaginator.paginate` returns
-`_PageIterator`\[[ClusterParameterGroupDetailsTypeDef](./type_defs.md#clusterparametergroupdetailstypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ParameterGroupName: str,
+    Source: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ClusterParameterGroupDetailsTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeclustersecuritygroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ClusterParameterGroupDetailsTypeDef](./type_defs.md#clusterparametergroupdetailstypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterParametersMessageDescribeClusterParametersPaginateTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterParametersMessageDescribeClusterParametersPaginateTypeDef](./type_defs.md#describeclusterparametersmessagedescribeclusterparameterspaginatetypedef) 
 ## DescribeClusterSecurityGroupsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_cluster_security_groups")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_cluster_security_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeClusterSecurityGroupsPaginator
@@ -154,30 +150,42 @@ def get_describe_cluster_security_groups_paginator() -> DescribeClusterSecurityG
     return Session().client("redshift").get_paginator("describe_cluster_security_groups")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeClusterSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSecurityGroups)
 
-Arguments for `DescribeClusterSecurityGroupsPaginator.paginate` method:
+### paginate
 
-- `ClusterSecurityGroupName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClusterSecurityGroupsPaginator.paginate` method.
 
-`DescribeClusterSecurityGroupsPaginator.paginate` returns
-`_PageIterator`\[[ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterSecurityGroupName: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ClusterSecurityGroupMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeclustersnapshotspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterSecurityGroupsMessageDescribeClusterSecurityGroupsPaginateTypeDef = {  # (1)
+    "ClusterSecurityGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterSecurityGroupsMessageDescribeClusterSecurityGroupsPaginateTypeDef](./type_defs.md#describeclustersecuritygroupsmessagedescribeclustersecuritygroupspaginatetypedef) 
 ## DescribeClusterSnapshotsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_cluster_snapshots")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_cluster_snapshots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeClusterSnapshotsPaginator
@@ -186,38 +194,50 @@ def get_describe_cluster_snapshots_paginator() -> DescribeClusterSnapshotsPagina
     return Session().client("redshift").get_paginator("describe_cluster_snapshots")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSnapshots)
 
-Arguments for `DescribeClusterSnapshotsPaginator.paginate` method:
+### paginate
 
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `SnapshotType`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `OwnerAccount`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `ClusterExists`: `bool`
-- `SortingEntities`:
-  `Sequence`\[[SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClusterSnapshotsPaginator.paginate` method.
 
-`DescribeClusterSnapshotsPaginator.paginate` returns
-`_PageIterator`\[[SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    SnapshotIdentifier: str = ...,
+    SnapshotType: str = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    OwnerAccount: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    ClusterExists: bool = ...,
+    SortingEntities: Sequence[SnapshotSortingEntityTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SnapshotMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeclustersubnetgroupspaginator"></a>
+1. See [:material-code-braces: SnapshotSortingEntityTypeDef](./type_defs.md#snapshotsortingentitytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterSnapshotsMessageDescribeClusterSnapshotsPaginateTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterSnapshotsMessageDescribeClusterSnapshotsPaginateTypeDef](./type_defs.md#describeclustersnapshotsmessagedescribeclustersnapshotspaginatetypedef) 
 ## DescribeClusterSubnetGroupsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_cluster_subnet_groups")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_cluster_subnet_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeClusterSubnetGroupsPaginator
@@ -226,30 +246,42 @@ def get_describe_cluster_subnet_groups_paginator() -> DescribeClusterSubnetGroup
     return Session().client("redshift").get_paginator("describe_cluster_subnet_groups")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeClusterSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterSubnetGroups)
 
-Arguments for `DescribeClusterSubnetGroupsPaginator.paginate` method:
+### paginate
 
-- `ClusterSubnetGroupName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClusterSubnetGroupsPaginator.paginate` method.
 
-`DescribeClusterSubnetGroupsPaginator.paginate` returns
-`_PageIterator`\[[ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterSubnetGroupName: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ClusterSubnetGroupMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeclustertrackspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterSubnetGroupsMessageDescribeClusterSubnetGroupsPaginateTypeDef = {  # (1)
+    "ClusterSubnetGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterSubnetGroupsMessageDescribeClusterSubnetGroupsPaginateTypeDef](./type_defs.md#describeclustersubnetgroupsmessagedescribeclustersubnetgroupspaginatetypedef) 
 ## DescribeClusterTracksPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_cluster_tracks")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_cluster_tracks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeClusterTracksPaginator
@@ -258,28 +290,40 @@ def get_describe_cluster_tracks_paginator() -> DescribeClusterTracksPaginator:
     return Session().client("redshift").get_paginator("describe_cluster_tracks")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeClusterTracks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterTracks)
 
-Arguments for `DescribeClusterTracksPaginator.paginate` method:
+### paginate
 
-- `MaintenanceTrackName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClusterTracksPaginator.paginate` method.
 
-`DescribeClusterTracksPaginator.paginate` returns
-`_PageIterator`\[[TrackListMessageTypeDef](./type_defs.md#tracklistmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    MaintenanceTrackName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[TrackListMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeclusterversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: TrackListMessageTypeDef](./type_defs.md#tracklistmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterTracksMessageDescribeClusterTracksPaginateTypeDef = {  # (1)
+    "MaintenanceTrackName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterTracksMessageDescribeClusterTracksPaginateTypeDef](./type_defs.md#describeclustertracksmessagedescribeclustertrackspaginatetypedef) 
 ## DescribeClusterVersionsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_cluster_versions")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_cluster_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeClusterVersionsPaginator
@@ -288,29 +332,41 @@ def get_describe_cluster_versions_paginator() -> DescribeClusterVersionsPaginato
     return Session().client("redshift").get_paginator("describe_cluster_versions")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeClusterVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusterVersions)
 
-Arguments for `DescribeClusterVersionsPaginator.paginate` method:
+### paginate
 
-- `ClusterVersion`: `str`
-- `ClusterParameterGroupFamily`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClusterVersionsPaginator.paginate` method.
 
-`DescribeClusterVersionsPaginator.paginate` returns
-`_PageIterator`\[[ClusterVersionsMessageTypeDef](./type_defs.md#clusterversionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterVersion: str = ...,
+    ClusterParameterGroupFamily: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ClusterVersionsMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeclusterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ClusterVersionsMessageTypeDef](./type_defs.md#clusterversionsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterVersionsMessageDescribeClusterVersionsPaginateTypeDef = {  # (1)
+    "ClusterVersion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterVersionsMessageDescribeClusterVersionsPaginateTypeDef](./type_defs.md#describeclusterversionsmessagedescribeclusterversionspaginatetypedef) 
 ## DescribeClustersPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_clusters")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_clusters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeClustersPaginator
@@ -319,30 +375,42 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return Session().client("redshift").get_paginator("describe_clusters")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeClusters)
 
-Arguments for `DescribeClustersPaginator.paginate` method:
+### paginate
 
-- `ClusterIdentifier`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClustersPaginator.paginate` method.
 
-`DescribeClustersPaginator.paginate` returns
-`_PageIterator`\[[ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ClustersMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describedatasharespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClustersMessageDescribeClustersPaginateTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClustersMessageDescribeClustersPaginateTypeDef](./type_defs.md#describeclustersmessagedescribeclusterspaginatetypedef) 
 ## DescribeDataSharesPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_data_shares")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_data_shares")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDataShares)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeDataSharesPaginator
@@ -351,28 +419,40 @@ def get_describe_data_shares_paginator() -> DescribeDataSharesPaginator:
     return Session().client("redshift").get_paginator("describe_data_shares")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeDataShares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDataShares)
 
-Arguments for `DescribeDataSharesPaginator.paginate` method:
+### paginate
 
-- `DataShareArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDataSharesPaginator.paginate` method.
 
-`DescribeDataSharesPaginator.paginate` returns
-`_PageIterator`\[[DescribeDataSharesResultTypeDef](./type_defs.md#describedatasharesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DataShareArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeDataSharesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describedatasharesforconsumerpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeDataSharesResultTypeDef](./type_defs.md#describedatasharesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSharesMessageDescribeDataSharesPaginateTypeDef = {  # (1)
+    "DataShareArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDataSharesMessageDescribeDataSharesPaginateTypeDef](./type_defs.md#describedatasharesmessagedescribedatasharespaginatetypedef) 
 ## DescribeDataSharesForConsumerPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_data_shares_for_consumer")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_data_shares_for_consumer")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDataSharesForConsumer)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeDataSharesForConsumerPaginator
@@ -381,30 +461,42 @@ def get_describe_data_shares_for_consumer_paginator() -> DescribeDataSharesForCo
     return Session().client("redshift").get_paginator("describe_data_shares_for_consumer")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeDataSharesForConsumer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDataSharesForConsumer)
 
-Arguments for `DescribeDataSharesForConsumerPaginator.paginate` method:
+### paginate
 
-- `ConsumerArn`: `str`
-- `Status`:
-  [DataShareStatusForConsumerType](./literals.md#datasharestatusforconsumertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDataSharesForConsumerPaginator.paginate` method.
 
-`DescribeDataSharesForConsumerPaginator.paginate` returns
-`_PageIterator`\[[DescribeDataSharesForConsumerResultTypeDef](./type_defs.md#describedatasharesforconsumerresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConsumerArn: str = ...,
+    Status: DataShareStatusForConsumerType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeDataSharesForConsumerResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedatasharesforproducerpaginator"></a>
+1. See [:material-code-brackets: DataShareStatusForConsumerType](./literals.md#datasharestatusforconsumertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeDataSharesForConsumerResultTypeDef](./type_defs.md#describedatasharesforconsumerresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSharesForConsumerMessageDescribeDataSharesForConsumerPaginateTypeDef = {  # (1)
+    "ConsumerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDataSharesForConsumerMessageDescribeDataSharesForConsumerPaginateTypeDef](./type_defs.md#describedatasharesforconsumermessagedescribedatasharesforconsumerpaginatetypedef) 
 ## DescribeDataSharesForProducerPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_data_shares_for_producer")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_data_shares_for_producer")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDataSharesForProducer)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeDataSharesForProducerPaginator
@@ -413,30 +505,42 @@ def get_describe_data_shares_for_producer_paginator() -> DescribeDataSharesForPr
     return Session().client("redshift").get_paginator("describe_data_shares_for_producer")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeDataSharesForProducer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDataSharesForProducer)
 
-Arguments for `DescribeDataSharesForProducerPaginator.paginate` method:
+### paginate
 
-- `ProducerArn`: `str`
-- `Status`:
-  [DataShareStatusForProducerType](./literals.md#datasharestatusforproducertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDataSharesForProducerPaginator.paginate` method.
 
-`DescribeDataSharesForProducerPaginator.paginate` returns
-`_PageIterator`\[[DescribeDataSharesForProducerResultTypeDef](./type_defs.md#describedatasharesforproducerresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProducerArn: str = ...,
+    Status: DataShareStatusForProducerType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeDataSharesForProducerResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedefaultclusterparameterspaginator"></a>
+1. See [:material-code-brackets: DataShareStatusForProducerType](./literals.md#datasharestatusforproducertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeDataSharesForProducerResultTypeDef](./type_defs.md#describedatasharesforproducerresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSharesForProducerMessageDescribeDataSharesForProducerPaginateTypeDef = {  # (1)
+    "ProducerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDataSharesForProducerMessageDescribeDataSharesForProducerPaginateTypeDef](./type_defs.md#describedatasharesforproducermessagedescribedatasharesforproducerpaginatetypedef) 
 ## DescribeDefaultClusterParametersPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_default_cluster_parameters")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_default_cluster_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeDefaultClusterParametersPaginator
@@ -445,28 +549,40 @@ def get_describe_default_cluster_parameters_paginator() -> DescribeDefaultCluste
     return Session().client("redshift").get_paginator("describe_default_cluster_parameters")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeDefaultClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeDefaultClusterParameters)
 
-Arguments for `DescribeDefaultClusterParametersPaginator.paginate` method:
+### paginate
 
-- `ParameterGroupFamily`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDefaultClusterParametersPaginator.paginate` method.
 
-`DescribeDefaultClusterParametersPaginator.paginate` returns
-`_PageIterator`\[[DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ParameterGroupFamily: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeDefaultClusterParametersResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeendpointaccesspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDefaultClusterParametersMessageDescribeDefaultClusterParametersPaginateTypeDef = {  # (1)
+    "ParameterGroupFamily": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDefaultClusterParametersMessageDescribeDefaultClusterParametersPaginateTypeDef](./type_defs.md#describedefaultclusterparametersmessagedescribedefaultclusterparameterspaginatetypedef) 
 ## DescribeEndpointAccessPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_endpoint_access")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_endpoint_access")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeEndpointAccessPaginator
@@ -475,31 +591,43 @@ def get_describe_endpoint_access_paginator() -> DescribeEndpointAccessPaginator:
     return Session().client("redshift").get_paginator("describe_endpoint_access")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeEndpointAccess](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAccess)
 
-Arguments for `DescribeEndpointAccessPaginator.paginate` method:
+### paginate
 
-- `ClusterIdentifier`: `str`
-- `ResourceOwner`: `str`
-- `EndpointName`: `str`
-- `VpcId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEndpointAccessPaginator.paginate` method.
 
-`DescribeEndpointAccessPaginator.paginate` returns
-`_PageIterator`\[[EndpointAccessListTypeDef](./type_defs.md#endpointaccesslisttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    ResourceOwner: str = ...,
+    EndpointName: str = ...,
+    VpcId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[EndpointAccessListTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeendpointauthorizationpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: EndpointAccessListTypeDef](./type_defs.md#endpointaccesslisttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointAccessMessageDescribeEndpointAccessPaginateTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndpointAccessMessageDescribeEndpointAccessPaginateTypeDef](./type_defs.md#describeendpointaccessmessagedescribeendpointaccesspaginatetypedef) 
 ## DescribeEndpointAuthorizationPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_endpoint_authorization")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_endpoint_authorization")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeEndpointAuthorizationPaginator
@@ -508,30 +636,42 @@ def get_describe_endpoint_authorization_paginator() -> DescribeEndpointAuthoriza
     return Session().client("redshift").get_paginator("describe_endpoint_authorization")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeEndpointAuthorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEndpointAuthorization)
 
-Arguments for `DescribeEndpointAuthorizationPaginator.paginate` method:
+### paginate
 
-- `ClusterIdentifier`: `str`
-- `Account`: `str`
-- `Grantee`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEndpointAuthorizationPaginator.paginate` method.
 
-`DescribeEndpointAuthorizationPaginator.paginate` returns
-`_PageIterator`\[[EndpointAuthorizationListTypeDef](./type_defs.md#endpointauthorizationlisttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    Account: str = ...,
+    Grantee: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[EndpointAuthorizationListTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeeventsubscriptionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: EndpointAuthorizationListTypeDef](./type_defs.md#endpointauthorizationlisttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointAuthorizationMessageDescribeEndpointAuthorizationPaginateTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndpointAuthorizationMessageDescribeEndpointAuthorizationPaginateTypeDef](./type_defs.md#describeendpointauthorizationmessagedescribeendpointauthorizationpaginatetypedef) 
 ## DescribeEventSubscriptionsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_event_subscriptions")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_event_subscriptions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeEventSubscriptionsPaginator
@@ -540,30 +680,42 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return Session().client("redshift").get_paginator("describe_event_subscriptions")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEventSubscriptions)
 
-Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
+### paginate
 
-- `SubscriptionName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventSubscriptionsPaginator.paginate` method.
 
-`DescribeEventSubscriptionsPaginator.paginate` returns
-`_PageIterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SubscriptionName: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[EventSubscriptionsMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeeventspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef = {  # (1)
+    "SubscriptionName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef](./type_defs.md#describeeventsubscriptionsmessagedescribeeventsubscriptionspaginatetypedef) 
 ## DescribeEventsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_events")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeEventsPaginator
@@ -572,32 +724,45 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("redshift").get_paginator("describe_events")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeEvents)
 
-Arguments for `DescribeEventsPaginator.paginate` method:
+### paginate
 
-- `SourceIdentifier`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventsPaginator.paginate` method.
 
-`DescribeEventsPaginator.paginate` returns
-`_PageIterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SourceIdentifier: str = ...,
+    SourceType: SourceTypeType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Duration: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[EventsMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describehsmclientcertificatespaginator"></a>
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsMessageDescribeEventsPaginateTypeDef = {  # (1)
+    "SourceIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef) 
 ## DescribeHsmClientCertificatesPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_hsm_client_certificates")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_hsm_client_certificates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeHsmClientCertificatesPaginator
@@ -606,30 +771,42 @@ def get_describe_hsm_client_certificates_paginator() -> DescribeHsmClientCertifi
     return Session().client("redshift").get_paginator("describe_hsm_client_certificates")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeHsmClientCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmClientCertificates)
 
-Arguments for `DescribeHsmClientCertificatesPaginator.paginate` method:
+### paginate
 
-- `HsmClientCertificateIdentifier`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeHsmClientCertificatesPaginator.paginate` method.
 
-`DescribeHsmClientCertificatesPaginator.paginate` returns
-`_PageIterator`\[[HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    HsmClientCertificateIdentifier: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[HsmClientCertificateMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describehsmconfigurationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHsmClientCertificatesMessageDescribeHsmClientCertificatesPaginateTypeDef = {  # (1)
+    "HsmClientCertificateIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHsmClientCertificatesMessageDescribeHsmClientCertificatesPaginateTypeDef](./type_defs.md#describehsmclientcertificatesmessagedescribehsmclientcertificatespaginatetypedef) 
 ## DescribeHsmConfigurationsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_hsm_configurations")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_hsm_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeHsmConfigurationsPaginator
@@ -638,30 +815,42 @@ def get_describe_hsm_configurations_paginator() -> DescribeHsmConfigurationsPagi
     return Session().client("redshift").get_paginator("describe_hsm_configurations")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeHsmConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeHsmConfigurations)
 
-Arguments for `DescribeHsmConfigurationsPaginator.paginate` method:
+### paginate
 
-- `HsmConfigurationIdentifier`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeHsmConfigurationsPaginator.paginate` method.
 
-`DescribeHsmConfigurationsPaginator.paginate` returns
-`_PageIterator`\[[HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    HsmConfigurationIdentifier: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[HsmConfigurationMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describenodeconfigurationoptionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeHsmConfigurationsMessageDescribeHsmConfigurationsPaginateTypeDef = {  # (1)
+    "HsmConfigurationIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeHsmConfigurationsMessageDescribeHsmConfigurationsPaginateTypeDef](./type_defs.md#describehsmconfigurationsmessagedescribehsmconfigurationspaginatetypedef) 
 ## DescribeNodeConfigurationOptionsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_node_configuration_options")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_node_configuration_options")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeNodeConfigurationOptionsPaginator
@@ -670,33 +859,46 @@ def get_describe_node_configuration_options_paginator() -> DescribeNodeConfigura
     return Session().client("redshift").get_paginator("describe_node_configuration_options")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeNodeConfigurationOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeNodeConfigurationOptions)
 
-Arguments for `DescribeNodeConfigurationOptionsPaginator.paginate` method:
+### paginate
 
-- `ActionType`: [ActionTypeType](./literals.md#actiontypetype) *(required)*
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `OwnerAccount`: `str`
-- `Filters`:
-  `Sequence`\[[NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNodeConfigurationOptionsPaginator.paginate` method.
 
-`DescribeNodeConfigurationOptionsPaginator.paginate` returns
-`_PageIterator`\[[NodeConfigurationOptionsMessageTypeDef](./type_defs.md#nodeconfigurationoptionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ActionType: ActionTypeType,  # (1)
+    ClusterIdentifier: str = ...,
+    SnapshotIdentifier: str = ...,
+    OwnerAccount: str = ...,
+    Filters: Sequence[NodeConfigurationOptionsFilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[NodeConfigurationOptionsMessageTypeDef]:  # (4)
+    ...
+```
 
-<a id="describeorderableclusteroptionspaginator"></a>
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-braces: NodeConfigurationOptionsFilterTypeDef](./type_defs.md#nodeconfigurationoptionsfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: NodeConfigurationOptionsMessageTypeDef](./type_defs.md#nodeconfigurationoptionsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNodeConfigurationOptionsMessageDescribeNodeConfigurationOptionsPaginateTypeDef = {  # (1)
+    "ActionType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNodeConfigurationOptionsMessageDescribeNodeConfigurationOptionsPaginateTypeDef](./type_defs.md#describenodeconfigurationoptionsmessagedescribenodeconfigurationoptionspaginatetypedef) 
 ## DescribeOrderableClusterOptionsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_orderable_cluster_options")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_orderable_cluster_options")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeOrderableClusterOptionsPaginator
@@ -705,29 +907,41 @@ def get_describe_orderable_cluster_options_paginator() -> DescribeOrderableClust
     return Session().client("redshift").get_paginator("describe_orderable_cluster_options")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeOrderableClusterOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeOrderableClusterOptions)
 
-Arguments for `DescribeOrderableClusterOptionsPaginator.paginate` method:
+### paginate
 
-- `ClusterVersion`: `str`
-- `NodeType`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeOrderableClusterOptionsPaginator.paginate` method.
 
-`DescribeOrderableClusterOptionsPaginator.paginate` returns
-`_PageIterator`\[[OrderableClusterOptionsMessageTypeDef](./type_defs.md#orderableclusteroptionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterVersion: str = ...,
+    NodeType: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[OrderableClusterOptionsMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describereservednodeexchangestatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: OrderableClusterOptionsMessageTypeDef](./type_defs.md#orderableclusteroptionsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeOrderableClusterOptionsMessageDescribeOrderableClusterOptionsPaginateTypeDef = {  # (1)
+    "ClusterVersion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeOrderableClusterOptionsMessageDescribeOrderableClusterOptionsPaginateTypeDef](./type_defs.md#describeorderableclusteroptionsmessagedescribeorderableclusteroptionspaginatetypedef) 
 ## DescribeReservedNodeExchangeStatusPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_reserved_node_exchange_status")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_reserved_node_exchange_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeExchangeStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeReservedNodeExchangeStatusPaginator
@@ -736,29 +950,41 @@ def get_describe_reserved_node_exchange_status_paginator() -> DescribeReservedNo
     return Session().client("redshift").get_paginator("describe_reserved_node_exchange_status")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeReservedNodeExchangeStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeExchangeStatus)
 
-Arguments for `DescribeReservedNodeExchangeStatusPaginator.paginate` method:
+### paginate
 
-- `ReservedNodeId`: `str`
-- `ReservedNodeExchangeRequestId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReservedNodeExchangeStatusPaginator.paginate` method.
 
-`DescribeReservedNodeExchangeStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeReservedNodeExchangeStatusOutputMessageTypeDef](./type_defs.md#describereservednodeexchangestatusoutputmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReservedNodeId: str = ...,
+    ReservedNodeExchangeRequestId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeReservedNodeExchangeStatusOutputMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describereservednodeofferingspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeReservedNodeExchangeStatusOutputMessageTypeDef](./type_defs.md#describereservednodeexchangestatusoutputmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedNodeExchangeStatusInputMessageDescribeReservedNodeExchangeStatusPaginateTypeDef = {  # (1)
+    "ReservedNodeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedNodeExchangeStatusInputMessageDescribeReservedNodeExchangeStatusPaginateTypeDef](./type_defs.md#describereservednodeexchangestatusinputmessagedescribereservednodeexchangestatuspaginatetypedef) 
 ## DescribeReservedNodeOfferingsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_reserved_node_offerings")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_reserved_node_offerings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeReservedNodeOfferingsPaginator
@@ -767,28 +993,40 @@ def get_describe_reserved_node_offerings_paginator() -> DescribeReservedNodeOffe
     return Session().client("redshift").get_paginator("describe_reserved_node_offerings")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeReservedNodeOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodeOfferings)
 
-Arguments for `DescribeReservedNodeOfferingsPaginator.paginate` method:
+### paginate
 
-- `ReservedNodeOfferingId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReservedNodeOfferingsPaginator.paginate` method.
 
-`DescribeReservedNodeOfferingsPaginator.paginate` returns
-`_PageIterator`\[[ReservedNodeOfferingsMessageTypeDef](./type_defs.md#reservednodeofferingsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReservedNodeOfferingId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ReservedNodeOfferingsMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describereservednodespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ReservedNodeOfferingsMessageTypeDef](./type_defs.md#reservednodeofferingsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedNodeOfferingsMessageDescribeReservedNodeOfferingsPaginateTypeDef = {  # (1)
+    "ReservedNodeOfferingId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedNodeOfferingsMessageDescribeReservedNodeOfferingsPaginateTypeDef](./type_defs.md#describereservednodeofferingsmessagedescribereservednodeofferingspaginatetypedef) 
 ## DescribeReservedNodesPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_reserved_nodes")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_reserved_nodes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeReservedNodesPaginator
@@ -797,28 +1035,40 @@ def get_describe_reserved_nodes_paginator() -> DescribeReservedNodesPaginator:
     return Session().client("redshift").get_paginator("describe_reserved_nodes")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeReservedNodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeReservedNodes)
 
-Arguments for `DescribeReservedNodesPaginator.paginate` method:
+### paginate
 
-- `ReservedNodeId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReservedNodesPaginator.paginate` method.
 
-`DescribeReservedNodesPaginator.paginate` returns
-`_PageIterator`\[[ReservedNodesMessageTypeDef](./type_defs.md#reservednodesmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReservedNodeId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ReservedNodesMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describescheduledactionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ReservedNodesMessageTypeDef](./type_defs.md#reservednodesmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedNodesMessageDescribeReservedNodesPaginateTypeDef = {  # (1)
+    "ReservedNodeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedNodesMessageDescribeReservedNodesPaginateTypeDef](./type_defs.md#describereservednodesmessagedescribereservednodespaginatetypedef) 
 ## DescribeScheduledActionsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_scheduled_actions")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_scheduled_actions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeScheduledActionsPaginator
@@ -827,35 +1077,47 @@ def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPagina
     return Session().client("redshift").get_paginator("describe_scheduled_actions")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeScheduledActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeScheduledActions)
 
-Arguments for `DescribeScheduledActionsPaginator.paginate` method:
+### paginate
 
-- `ScheduledActionName`: `str`
-- `TargetActionType`:
-  [ScheduledActionTypeValuesType](./literals.md#scheduledactiontypevaluestype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Active`: `bool`
-- `Filters`:
-  `Sequence`\[[ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeScheduledActionsPaginator.paginate` method.
 
-`DescribeScheduledActionsPaginator.paginate` returns
-`_PageIterator`\[[ScheduledActionsMessageTypeDef](./type_defs.md#scheduledactionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ScheduledActionName: str = ...,
+    TargetActionType: ScheduledActionTypeValuesType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Active: bool = ...,
+    Filters: Sequence[ScheduledActionFilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ScheduledActionsMessageTypeDef]:  # (4)
+    ...
+```
 
-<a id="describesnapshotcopygrantspaginator"></a>
+1. See [:material-code-brackets: ScheduledActionTypeValuesType](./literals.md#scheduledactiontypevaluestype) 
+2. See [:material-code-braces: ScheduledActionFilterTypeDef](./type_defs.md#scheduledactionfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ScheduledActionsMessageTypeDef](./type_defs.md#scheduledactionsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduledActionsMessageDescribeScheduledActionsPaginateTypeDef = {  # (1)
+    "ScheduledActionName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeScheduledActionsMessageDescribeScheduledActionsPaginateTypeDef](./type_defs.md#describescheduledactionsmessagedescribescheduledactionspaginatetypedef) 
 ## DescribeSnapshotCopyGrantsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_snapshot_copy_grants")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_snapshot_copy_grants")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeSnapshotCopyGrantsPaginator
@@ -864,30 +1126,42 @@ def get_describe_snapshot_copy_grants_paginator() -> DescribeSnapshotCopyGrantsP
     return Session().client("redshift").get_paginator("describe_snapshot_copy_grants")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeSnapshotCopyGrants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotCopyGrants)
 
-Arguments for `DescribeSnapshotCopyGrantsPaginator.paginate` method:
+### paginate
 
-- `SnapshotCopyGrantName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSnapshotCopyGrantsPaginator.paginate` method.
 
-`DescribeSnapshotCopyGrantsPaginator.paginate` returns
-`_PageIterator`\[[SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SnapshotCopyGrantName: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[SnapshotCopyGrantMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describesnapshotschedulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotCopyGrantsMessageDescribeSnapshotCopyGrantsPaginateTypeDef = {  # (1)
+    "SnapshotCopyGrantName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSnapshotCopyGrantsMessageDescribeSnapshotCopyGrantsPaginateTypeDef](./type_defs.md#describesnapshotcopygrantsmessagedescribesnapshotcopygrantspaginatetypedef) 
 ## DescribeSnapshotSchedulesPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_snapshot_schedules")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_snapshot_schedules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeSnapshotSchedulesPaginator
@@ -896,31 +1170,43 @@ def get_describe_snapshot_schedules_paginator() -> DescribeSnapshotSchedulesPagi
     return Session().client("redshift").get_paginator("describe_snapshot_schedules")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeSnapshotSchedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeSnapshotSchedules)
 
-Arguments for `DescribeSnapshotSchedulesPaginator.paginate` method:
+### paginate
 
-- `ClusterIdentifier`: `str`
-- `ScheduleIdentifier`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSnapshotSchedulesPaginator.paginate` method.
 
-`DescribeSnapshotSchedulesPaginator.paginate` returns
-`_PageIterator`\[[DescribeSnapshotSchedulesOutputMessageTypeDef](./type_defs.md#describesnapshotschedulesoutputmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    ScheduleIdentifier: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeSnapshotSchedulesOutputMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describetablerestorestatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeSnapshotSchedulesOutputMessageTypeDef](./type_defs.md#describesnapshotschedulesoutputmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotSchedulesMessageDescribeSnapshotSchedulesPaginateTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSnapshotSchedulesMessageDescribeSnapshotSchedulesPaginateTypeDef](./type_defs.md#describesnapshotschedulesmessagedescribesnapshotschedulespaginatetypedef) 
 ## DescribeTableRestoreStatusPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_table_restore_status")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_table_restore_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeTableRestoreStatusPaginator
@@ -929,28 +1215,41 @@ def get_describe_table_restore_status_paginator() -> DescribeTableRestoreStatusP
     return Session().client("redshift").get_paginator("describe_table_restore_status")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeTableRestoreStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTableRestoreStatus)
 
-Arguments for `DescribeTableRestoreStatusPaginator.paginate` method:
+### paginate
 
-- `ClusterIdentifier`: `str`
-- `TableRestoreRequestId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTableRestoreStatusPaginator.paginate` method.
 
-`DescribeTableRestoreStatusPaginator.paginate` returns
-`_PageIterator`\[[TableRestoreStatusMessageTypeDef](./type_defs.md#tablerestorestatusmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterIdentifier: str = ...,
+    TableRestoreRequestId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[TableRestoreStatusMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describetagspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: TableRestoreStatusMessageTypeDef](./type_defs.md#tablerestorestatusmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTableRestoreStatusMessageDescribeTableRestoreStatusPaginateTypeDef = {  # (1)
+    "ClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTableRestoreStatusMessageDescribeTableRestoreStatusPaginateTypeDef](./type_defs.md#describetablerestorestatusmessagedescribetablerestorestatuspaginatetypedef) 
 ## DescribeTagsPaginator
 
-Type annotations for `boto3.client("redshift").get_paginator("describe_tags")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_tags")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeTagsPaginator
@@ -959,31 +1258,43 @@ def get_describe_tags_paginator() -> DescribeTagsPaginator:
     return Session().client("redshift").get_paginator("describe_tags")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeTags)
 
-Arguments for `DescribeTagsPaginator.paginate` method:
+### paginate
 
-- `ResourceName`: `str`
-- `ResourceType`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTagsPaginator.paginate` method.
 
-`DescribeTagsPaginator.paginate` returns
-`_PageIterator`\[[TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceName: str = ...,
+    ResourceType: str = ...,
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[TaggedResourceListMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeusagelimitspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTagsMessageDescribeTagsPaginateTypeDef = {  # (1)
+    "ResourceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTagsMessageDescribeTagsPaginateTypeDef](./type_defs.md#describetagsmessagedescribetagspaginatetypedef) 
 ## DescribeUsageLimitsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("describe_usage_limits")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("describe_usage_limits")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import DescribeUsageLimitsPaginator
@@ -992,33 +1303,45 @@ def get_describe_usage_limits_paginator() -> DescribeUsageLimitsPaginator:
     return Session().client("redshift").get_paginator("describe_usage_limits")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.DescribeUsageLimits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.DescribeUsageLimits)
 
-Arguments for `DescribeUsageLimitsPaginator.paginate` method:
+### paginate
 
-- `UsageLimitId`: `str`
-- `ClusterIdentifier`: `str`
-- `FeatureType`:
-  [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
-- `TagKeys`: `Sequence`\[`str`\]
-- `TagValues`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeUsageLimitsPaginator.paginate` method.
 
-`DescribeUsageLimitsPaginator.paginate` returns
-`_PageIterator`\[[UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    UsageLimitId: str = ...,
+    ClusterIdentifier: str = ...,
+    FeatureType: UsageLimitFeatureTypeType = ...,  # (1)
+    TagKeys: Sequence[str] = ...,
+    TagValues: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[UsageLimitListTypeDef]:  # (3)
+    ...
+```
 
-<a id="getreservednodeexchangeconfigurationoptionspaginator"></a>
+1. See [:material-code-brackets: UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeUsageLimitsMessageDescribeUsageLimitsPaginateTypeDef = {  # (1)
+    "UsageLimitId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeUsageLimitsMessageDescribeUsageLimitsPaginateTypeDef](./type_defs.md#describeusagelimitsmessagedescribeusagelimitspaginatetypedef) 
 ## GetReservedNodeExchangeConfigurationOptionsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("get_reserved_node_exchange_configuration_options")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("get_reserved_node_exchange_configuration_options")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeConfigurationOptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import GetReservedNodeExchangeConfigurationOptionsPaginator
@@ -1027,33 +1350,43 @@ def get_get_reserved_node_exchange_configuration_options_paginator() -> GetReser
     return Session().client("redshift").get_paginator("get_reserved_node_exchange_configuration_options")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.GetReservedNodeExchangeConfigurationOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeConfigurationOptions)
 
-Arguments for `GetReservedNodeExchangeConfigurationOptionsPaginator.paginate`
-method:
+### paginate
 
-- `ActionType`:
-  [ReservedNodeExchangeActionTypeType](./literals.md#reservednodeexchangeactiontypetype)
-  *(required)*
-- `ClusterIdentifier`: `str`
-- `SnapshotIdentifier`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetReservedNodeExchangeConfigurationOptionsPaginator.paginate` method.
 
-`GetReservedNodeExchangeConfigurationOptionsPaginator.paginate` returns
-`_PageIterator`\[[GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ActionType: ReservedNodeExchangeActionTypeType,  # (1)
+    ClusterIdentifier: str = ...,
+    SnapshotIdentifier: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="getreservednodeexchangeofferingspaginator"></a>
+1. See [:material-code-brackets: ReservedNodeExchangeActionTypeType](./literals.md#reservednodeexchangeactiontypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetReservedNodeExchangeConfigurationOptionsInputMessageGetReservedNodeExchangeConfigurationOptionsPaginateTypeDef = {  # (1)
+    "ActionType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetReservedNodeExchangeConfigurationOptionsInputMessageGetReservedNodeExchangeConfigurationOptionsPaginateTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsinputmessagegetreservednodeexchangeconfigurationoptionspaginatetypedef) 
 ## GetReservedNodeExchangeOfferingsPaginator
 
-Type annotations for
-`boto3.client("redshift").get_paginator("get_reserved_node_exchange_offerings")`.
+Type annotations and code completion for `#!python boto3.client("redshift").get_paginator("get_reserved_node_exchange_offerings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift.paginator import GetReservedNodeExchangeOfferingsPaginator
@@ -1062,14 +1395,31 @@ def get_get_reserved_node_exchange_offerings_paginator() -> GetReservedNodeExcha
     return Session().client("redshift").get_paginator("get_reserved_node_exchange_offerings")
 ```
 
-Boto3 documentation:
-[Redshift.Paginator.GetReservedNodeExchangeOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Paginator.GetReservedNodeExchangeOfferings)
 
-Arguments for `GetReservedNodeExchangeOfferingsPaginator.paginate` method:
+### paginate
 
-- `ReservedNodeId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetReservedNodeExchangeOfferingsPaginator.paginate` method.
 
-`GetReservedNodeExchangeOfferingsPaginator.paginate` returns
-`_PageIterator`\[[GetReservedNodeExchangeOfferingsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReservedNodeId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetReservedNodeExchangeOfferingsOutputMessageTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetReservedNodeExchangeOfferingsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessagetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetReservedNodeExchangeOfferingsInputMessageGetReservedNodeExchangeOfferingsPaginateTypeDef = {  # (1)
+    "ReservedNodeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetReservedNodeExchangeOfferingsInputMessageGetReservedNodeExchangeOfferingsPaginateTypeDef](./type_defs.md#getreservednodeexchangeofferingsinputmessagegetreservednodeexchangeofferingspaginatetypedef) 

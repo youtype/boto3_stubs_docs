@@ -1,1579 +1,2006 @@
-<a id="typed-dictionaries-for-boto3-amplify-module"></a>
-
-# Typed dictionaries for boto3 Amplify module
+# Typed dictionaries
 
 > [Index](../README.md) > [Amplify](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
-type annotations stubs module
-[mypy-boto3-amplify](https://pypi.org/project/mypy-boto3-amplify/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Amplify module](#typed-dictionaries-for-boto3-amplify-module)
-  - [AppTypeDef](#apptypedef)
-  - [ArtifactTypeDef](#artifacttypedef)
-  - [AutoBranchCreationConfigTypeDef](#autobranchcreationconfigtypedef)
-  - [BackendEnvironmentTypeDef](#backendenvironmenttypedef)
-  - [BranchTypeDef](#branchtypedef)
-  - [CreateAppRequestRequestTypeDef](#createapprequestrequesttypedef)
-  - [CreateAppResultTypeDef](#createappresulttypedef)
-  - [CreateBackendEnvironmentRequestRequestTypeDef](#createbackendenvironmentrequestrequesttypedef)
-  - [CreateBackendEnvironmentResultTypeDef](#createbackendenvironmentresulttypedef)
-  - [CreateBranchRequestRequestTypeDef](#createbranchrequestrequesttypedef)
-  - [CreateBranchResultTypeDef](#createbranchresulttypedef)
-  - [CreateDeploymentRequestRequestTypeDef](#createdeploymentrequestrequesttypedef)
-  - [CreateDeploymentResultTypeDef](#createdeploymentresulttypedef)
-  - [CreateDomainAssociationRequestRequestTypeDef](#createdomainassociationrequestrequesttypedef)
-  - [CreateDomainAssociationResultTypeDef](#createdomainassociationresulttypedef)
-  - [CreateWebhookRequestRequestTypeDef](#createwebhookrequestrequesttypedef)
-  - [CreateWebhookResultTypeDef](#createwebhookresulttypedef)
-  - [CustomRuleTypeDef](#customruletypedef)
-  - [DeleteAppRequestRequestTypeDef](#deleteapprequestrequesttypedef)
-  - [DeleteAppResultTypeDef](#deleteappresulttypedef)
-  - [DeleteBackendEnvironmentRequestRequestTypeDef](#deletebackendenvironmentrequestrequesttypedef)
-  - [DeleteBackendEnvironmentResultTypeDef](#deletebackendenvironmentresulttypedef)
-  - [DeleteBranchRequestRequestTypeDef](#deletebranchrequestrequesttypedef)
-  - [DeleteBranchResultTypeDef](#deletebranchresulttypedef)
-  - [DeleteDomainAssociationRequestRequestTypeDef](#deletedomainassociationrequestrequesttypedef)
-  - [DeleteDomainAssociationResultTypeDef](#deletedomainassociationresulttypedef)
-  - [DeleteJobRequestRequestTypeDef](#deletejobrequestrequesttypedef)
-  - [DeleteJobResultTypeDef](#deletejobresulttypedef)
-  - [DeleteWebhookRequestRequestTypeDef](#deletewebhookrequestrequesttypedef)
-  - [DeleteWebhookResultTypeDef](#deletewebhookresulttypedef)
-  - [DomainAssociationTypeDef](#domainassociationtypedef)
-  - [GenerateAccessLogsRequestRequestTypeDef](#generateaccesslogsrequestrequesttypedef)
-  - [GenerateAccessLogsResultTypeDef](#generateaccesslogsresulttypedef)
-  - [GetAppRequestRequestTypeDef](#getapprequestrequesttypedef)
-  - [GetAppResultTypeDef](#getappresulttypedef)
-  - [GetArtifactUrlRequestRequestTypeDef](#getartifacturlrequestrequesttypedef)
-  - [GetArtifactUrlResultTypeDef](#getartifacturlresulttypedef)
-  - [GetBackendEnvironmentRequestRequestTypeDef](#getbackendenvironmentrequestrequesttypedef)
-  - [GetBackendEnvironmentResultTypeDef](#getbackendenvironmentresulttypedef)
-  - [GetBranchRequestRequestTypeDef](#getbranchrequestrequesttypedef)
-  - [GetBranchResultTypeDef](#getbranchresulttypedef)
-  - [GetDomainAssociationRequestRequestTypeDef](#getdomainassociationrequestrequesttypedef)
-  - [GetDomainAssociationResultTypeDef](#getdomainassociationresulttypedef)
-  - [GetJobRequestRequestTypeDef](#getjobrequestrequesttypedef)
-  - [GetJobResultTypeDef](#getjobresulttypedef)
-  - [GetWebhookRequestRequestTypeDef](#getwebhookrequestrequesttypedef)
-  - [GetWebhookResultTypeDef](#getwebhookresulttypedef)
-  - [JobSummaryTypeDef](#jobsummarytypedef)
-  - [JobTypeDef](#jobtypedef)
-  - [ListAppsRequestRequestTypeDef](#listappsrequestrequesttypedef)
-  - [ListAppsResultTypeDef](#listappsresulttypedef)
-  - [ListArtifactsRequestRequestTypeDef](#listartifactsrequestrequesttypedef)
-  - [ListArtifactsResultTypeDef](#listartifactsresulttypedef)
-  - [ListBackendEnvironmentsRequestRequestTypeDef](#listbackendenvironmentsrequestrequesttypedef)
-  - [ListBackendEnvironmentsResultTypeDef](#listbackendenvironmentsresulttypedef)
-  - [ListBranchesRequestRequestTypeDef](#listbranchesrequestrequesttypedef)
-  - [ListBranchesResultTypeDef](#listbranchesresulttypedef)
-  - [ListDomainAssociationsRequestRequestTypeDef](#listdomainassociationsrequestrequesttypedef)
-  - [ListDomainAssociationsResultTypeDef](#listdomainassociationsresulttypedef)
-  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
-  - [ListJobsResultTypeDef](#listjobsresulttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListWebhooksRequestRequestTypeDef](#listwebhooksrequestrequesttypedef)
-  - [ListWebhooksResultTypeDef](#listwebhooksresulttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProductionBranchTypeDef](#productionbranchtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartDeploymentRequestRequestTypeDef](#startdeploymentrequestrequesttypedef)
-  - [StartDeploymentResultTypeDef](#startdeploymentresulttypedef)
-  - [StartJobRequestRequestTypeDef](#startjobrequestrequesttypedef)
-  - [StartJobResultTypeDef](#startjobresulttypedef)
-  - [StepTypeDef](#steptypedef)
-  - [StopJobRequestRequestTypeDef](#stopjobrequestrequesttypedef)
-  - [StopJobResultTypeDef](#stopjobresulttypedef)
-  - [SubDomainSettingTypeDef](#subdomainsettingtypedef)
-  - [SubDomainTypeDef](#subdomaintypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAppRequestRequestTypeDef](#updateapprequestrequesttypedef)
-  - [UpdateAppResultTypeDef](#updateappresulttypedef)
-  - [UpdateBranchRequestRequestTypeDef](#updatebranchrequestrequesttypedef)
-  - [UpdateBranchResultTypeDef](#updatebranchresulttypedef)
-  - [UpdateDomainAssociationRequestRequestTypeDef](#updatedomainassociationrequestrequesttypedef)
-  - [UpdateDomainAssociationResultTypeDef](#updatedomainassociationresulttypedef)
-  - [UpdateWebhookRequestRequestTypeDef](#updatewebhookrequestrequesttypedef)
-  - [UpdateWebhookResultTypeDef](#updatewebhookresulttypedef)
-  - [WebhookTypeDef](#webhooktypedef)
-
-<a id="apptypedef"></a>
+    Auto-generated documentation for [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+    type annotations stubs module [mypy-boto3-amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 ## AppTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import AppTypeDef
+
+def get_value() -> AppTypeDef:
+    return {
+        "appId": ...,
+        "appArn": ...,
+        "name": ...,
+        "description": ...,
+        "repository": ...,
+        "platform": ...,
+        "createTime": ...,
+        "updateTime": ...,
+        "environmentVariables": ...,
+        "defaultDomain": ...,
+        "enableBranchAutoBuild": ...,
+        "enableBasicAuth": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AppTypeDef(TypedDict):
+    appId: str,
+    appArn: str,
+    name: str,
+    description: str,
+    repository: str,
+    platform: PlatformType,  # (1)
+    createTime: datetime,
+    updateTime: datetime,
+    environmentVariables: Dict[str, str],
+    defaultDomain: str,
+    enableBranchAutoBuild: bool,
+    enableBasicAuth: bool,
+    tags: NotRequired[Dict[str, str]],
+    iamServiceRoleArn: NotRequired[str],
+    enableBranchAutoDeletion: NotRequired[bool],
+    basicAuthCredentials: NotRequired[str],
+    customRules: NotRequired[List[CustomRuleTypeDef]],  # (2)
+    productionBranch: NotRequired[ProductionBranchTypeDef],  # (3)
+    buildSpec: NotRequired[str],
+    customHeaders: NotRequired[str],
+    enableAutoBranchCreation: NotRequired[bool],
+    autoBranchCreationPatterns: NotRequired[List[str]],
+    autoBranchCreationConfig: NotRequired[AutoBranchCreationConfigTypeDef],  # (4)
+    repositoryCloneMethod: NotRequired[RepositoryCloneMethodType],  # (5)
+```
 
-- `appId`: `str`
-- `appArn`: `str`
-- `name`: `str`
-- `description`: `str`
-- `repository`: `str`
-- `platform`: [PlatformType](./literals.md#platformtype)
-- `createTime`: `datetime`
-- `updateTime`: `datetime`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
-- `defaultDomain`: `str`
-- `enableBranchAutoBuild`: `bool`
-- `enableBasicAuth`: `bool`
-
-Optional fields:
-
-- `tags`: `Dict`\[`str`, `str`\]
-- `iamServiceRoleArn`: `str`
-- `enableBranchAutoDeletion`: `bool`
-- `basicAuthCredentials`: `str`
-- `customRules`:
-  `List`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
-- `productionBranch`:
-  [ProductionBranchTypeDef](./type_defs.md#productionbranchtypedef)
-- `buildSpec`: `str`
-- `customHeaders`: `str`
-- `enableAutoBranchCreation`: `bool`
-- `autoBranchCreationPatterns`: `List`\[`str`\]
-- `autoBranchCreationConfig`:
-  [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
-- `repositoryCloneMethod`:
-  [RepositoryCloneMethodType](./literals.md#repositoryclonemethodtype)
-
-<a id="artifacttypedef"></a>
-
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: CustomRuleTypeDef](./type_defs.md#customruletypedef) 
+3. See [:material-code-braces: ProductionBranchTypeDef](./type_defs.md#productionbranchtypedef) 
+4. See [:material-code-braces: AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef) 
+5. See [:material-code-brackets: RepositoryCloneMethodType](./literals.md#repositoryclonemethodtype) 
 ## ArtifactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ArtifactTypeDef
+
+def get_value() -> ArtifactTypeDef:
+    return {
+        "artifactFileName": ...,
+        "artifactId": ...,
+    }
 ```
 
-Required fields:
-
-- `artifactFileName`: `str`
-- `artifactId`: `str`
-
-<a id="autobranchcreationconfigtypedef"></a>
+```python title="Definition"
+class ArtifactTypeDef(TypedDict):
+    artifactFileName: str,
+    artifactId: str,
+```
 
 ## AutoBranchCreationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import AutoBranchCreationConfigTypeDef
+
+def get_value() -> AutoBranchCreationConfigTypeDef:
+    return {
+        "stage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoBranchCreationConfigTypeDef(TypedDict):
+    stage: NotRequired[StageType],  # (1)
+    framework: NotRequired[str],
+    enableAutoBuild: NotRequired[bool],
+    environmentVariables: NotRequired[Mapping[str, str]],
+    basicAuthCredentials: NotRequired[str],
+    enableBasicAuth: NotRequired[bool],
+    enablePerformanceMode: NotRequired[bool],
+    buildSpec: NotRequired[str],
+    enablePullRequestPreview: NotRequired[bool],
+    pullRequestEnvironmentName: NotRequired[str],
+```
 
-- `stage`: [StageType](./literals.md#stagetype)
-- `framework`: `str`
-- `enableAutoBuild`: `bool`
-- `environmentVariables`: `Mapping`\[`str`, `str`\]
-- `basicAuthCredentials`: `str`
-- `enableBasicAuth`: `bool`
-- `enablePerformanceMode`: `bool`
-- `buildSpec`: `str`
-- `enablePullRequestPreview`: `bool`
-- `pullRequestEnvironmentName`: `str`
-
-<a id="backendenvironmenttypedef"></a>
-
+1. See [:material-code-brackets: StageType](./literals.md#stagetype) 
 ## BackendEnvironmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import BackendEnvironmentTypeDef
+
+def get_value() -> BackendEnvironmentTypeDef:
+    return {
+        "backendEnvironmentArn": ...,
+        "environmentName": ...,
+        "createTime": ...,
+        "updateTime": ...,
+    }
 ```
 
-Required fields:
-
-- `backendEnvironmentArn`: `str`
-- `environmentName`: `str`
-- `createTime`: `datetime`
-- `updateTime`: `datetime`
-
-Optional fields:
-
-- `stackName`: `str`
-- `deploymentArtifacts`: `str`
-
-<a id="branchtypedef"></a>
+```python title="Definition"
+class BackendEnvironmentTypeDef(TypedDict):
+    backendEnvironmentArn: str,
+    environmentName: str,
+    createTime: datetime,
+    updateTime: datetime,
+    stackName: NotRequired[str],
+    deploymentArtifacts: NotRequired[str],
+```
 
 ## BranchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import BranchTypeDef
+
+def get_value() -> BranchTypeDef:
+    return {
+        "branchArn": ...,
+        "branchName": ...,
+        "description": ...,
+        "stage": ...,
+        "displayName": ...,
+        "enableNotification": ...,
+        "createTime": ...,
+        "updateTime": ...,
+        "environmentVariables": ...,
+        "enableAutoBuild": ...,
+        "customDomains": ...,
+        "framework": ...,
+        "activeJobId": ...,
+        "totalNumberOfJobs": ...,
+        "enableBasicAuth": ...,
+        "ttl": ...,
+        "enablePullRequestPreview": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BranchTypeDef(TypedDict):
+    branchArn: str,
+    branchName: str,
+    description: str,
+    stage: StageType,  # (1)
+    displayName: str,
+    enableNotification: bool,
+    createTime: datetime,
+    updateTime: datetime,
+    environmentVariables: Dict[str, str],
+    enableAutoBuild: bool,
+    customDomains: List[str],
+    framework: str,
+    activeJobId: str,
+    totalNumberOfJobs: str,
+    enableBasicAuth: bool,
+    ttl: str,
+    enablePullRequestPreview: bool,
+    tags: NotRequired[Dict[str, str]],
+    enablePerformanceMode: NotRequired[bool],
+    thumbnailUrl: NotRequired[str],
+    basicAuthCredentials: NotRequired[str],
+    buildSpec: NotRequired[str],
+    associatedResources: NotRequired[List[str]],
+    pullRequestEnvironmentName: NotRequired[str],
+    destinationBranch: NotRequired[str],
+    sourceBranch: NotRequired[str],
+    backendEnvironmentArn: NotRequired[str],
+```
 
-- `branchArn`: `str`
-- `branchName`: `str`
-- `description`: `str`
-- `stage`: [StageType](./literals.md#stagetype)
-- `displayName`: `str`
-- `enableNotification`: `bool`
-- `createTime`: `datetime`
-- `updateTime`: `datetime`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
-- `enableAutoBuild`: `bool`
-- `customDomains`: `List`\[`str`\]
-- `framework`: `str`
-- `activeJobId`: `str`
-- `totalNumberOfJobs`: `str`
-- `enableBasicAuth`: `bool`
-- `ttl`: `str`
-- `enablePullRequestPreview`: `bool`
-
-Optional fields:
-
-- `tags`: `Dict`\[`str`, `str`\]
-- `enablePerformanceMode`: `bool`
-- `thumbnailUrl`: `str`
-- `basicAuthCredentials`: `str`
-- `buildSpec`: `str`
-- `associatedResources`: `List`\[`str`\]
-- `pullRequestEnvironmentName`: `str`
-- `destinationBranch`: `str`
-- `sourceBranch`: `str`
-- `backendEnvironmentArn`: `str`
-
-<a id="createapprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StageType](./literals.md#stagetype) 
 ## CreateAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateAppRequestRequestTypeDef
+
+def get_value() -> CreateAppRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAppRequestRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    repository: NotRequired[str],
+    platform: NotRequired[PlatformType],  # (1)
+    iamServiceRoleArn: NotRequired[str],
+    oauthToken: NotRequired[str],
+    accessToken: NotRequired[str],
+    environmentVariables: NotRequired[Mapping[str, str]],
+    enableBranchAutoBuild: NotRequired[bool],
+    enableBranchAutoDeletion: NotRequired[bool],
+    enableBasicAuth: NotRequired[bool],
+    basicAuthCredentials: NotRequired[str],
+    customRules: NotRequired[Sequence[CustomRuleTypeDef]],  # (2)
+    tags: NotRequired[Mapping[str, str]],
+    buildSpec: NotRequired[str],
+    customHeaders: NotRequired[str],
+    enableAutoBranchCreation: NotRequired[bool],
+    autoBranchCreationPatterns: NotRequired[Sequence[str]],
+    autoBranchCreationConfig: NotRequired[AutoBranchCreationConfigTypeDef],  # (3)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `repository`: `str`
-- `platform`: [PlatformType](./literals.md#platformtype)
-- `iamServiceRoleArn`: `str`
-- `oauthToken`: `str`
-- `accessToken`: `str`
-- `environmentVariables`: `Mapping`\[`str`, `str`\]
-- `enableBranchAutoBuild`: `bool`
-- `enableBranchAutoDeletion`: `bool`
-- `enableBasicAuth`: `bool`
-- `basicAuthCredentials`: `str`
-- `customRules`:
-  `Sequence`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `buildSpec`: `str`
-- `customHeaders`: `str`
-- `enableAutoBranchCreation`: `bool`
-- `autoBranchCreationPatterns`: `Sequence`\[`str`\]
-- `autoBranchCreationConfig`:
-  [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
-
-<a id="createappresulttypedef"></a>
-
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: CustomRuleTypeDef](./type_defs.md#customruletypedef) 
+3. See [:material-code-braces: AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef) 
 ## CreateAppResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateAppResultTypeDef
+
+def get_value() -> CreateAppResultTypeDef:
+    return {
+        "app": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAppResultTypeDef(TypedDict):
+    app: AppTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `app`: [AppTypeDef](./type_defs.md#apptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbackendenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBackendEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateBackendEnvironmentRequestRequestTypeDef
+
+def get_value() -> CreateBackendEnvironmentRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-
-Optional fields:
-
-- `stackName`: `str`
-- `deploymentArtifacts`: `str`
-
-<a id="createbackendenvironmentresulttypedef"></a>
+```python title="Definition"
+class CreateBackendEnvironmentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    stackName: NotRequired[str],
+    deploymentArtifacts: NotRequired[str],
+```
 
 ## CreateBackendEnvironmentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateBackendEnvironmentResultTypeDef
+
+def get_value() -> CreateBackendEnvironmentResultTypeDef:
+    return {
+        "backendEnvironment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBackendEnvironmentResultTypeDef(TypedDict):
+    backendEnvironment: BackendEnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `backendEnvironment`:
-  [BackendEnvironmentTypeDef](./type_defs.md#backendenvironmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbranchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BackendEnvironmentTypeDef](./type_defs.md#backendenvironmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBranchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateBranchRequestRequestTypeDef
+
+def get_value() -> CreateBranchRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBranchRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    description: NotRequired[str],
+    stage: NotRequired[StageType],  # (1)
+    framework: NotRequired[str],
+    enableNotification: NotRequired[bool],
+    enableAutoBuild: NotRequired[bool],
+    environmentVariables: NotRequired[Mapping[str, str]],
+    basicAuthCredentials: NotRequired[str],
+    enableBasicAuth: NotRequired[bool],
+    enablePerformanceMode: NotRequired[bool],
+    tags: NotRequired[Mapping[str, str]],
+    buildSpec: NotRequired[str],
+    ttl: NotRequired[str],
+    displayName: NotRequired[str],
+    enablePullRequestPreview: NotRequired[bool],
+    pullRequestEnvironmentName: NotRequired[str],
+    backendEnvironmentArn: NotRequired[str],
+```
 
-- `appId`: `str`
-- `branchName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `stage`: [StageType](./literals.md#stagetype)
-- `framework`: `str`
-- `enableNotification`: `bool`
-- `enableAutoBuild`: `bool`
-- `environmentVariables`: `Mapping`\[`str`, `str`\]
-- `basicAuthCredentials`: `str`
-- `enableBasicAuth`: `bool`
-- `enablePerformanceMode`: `bool`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `buildSpec`: `str`
-- `ttl`: `str`
-- `displayName`: `str`
-- `enablePullRequestPreview`: `bool`
-- `pullRequestEnvironmentName`: `str`
-- `backendEnvironmentArn`: `str`
-
-<a id="createbranchresulttypedef"></a>
-
+1. See [:material-code-brackets: StageType](./literals.md#stagetype) 
 ## CreateBranchResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateBranchResultTypeDef
+
+def get_value() -> CreateBranchResultTypeDef:
+    return {
+        "branch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBranchResultTypeDef(TypedDict):
+    branch: BranchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `branch`: [BranchTypeDef](./type_defs.md#branchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdeploymentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BranchTypeDef](./type_defs.md#branchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateDeploymentRequestRequestTypeDef
+
+def get_value() -> CreateDeploymentRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-
-Optional fields:
-
-- `fileMap`: `Mapping`\[`str`, `str`\]
-
-<a id="createdeploymentresulttypedef"></a>
+```python title="Definition"
+class CreateDeploymentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    fileMap: NotRequired[Mapping[str, str]],
+```
 
 ## CreateDeploymentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateDeploymentResultTypeDef
+
+def get_value() -> CreateDeploymentResultTypeDef:
+    return {
+        "jobId": ...,
+        "fileUploadUrls": ...,
+        "zipUploadUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentResultTypeDef(TypedDict):
+    jobId: str,
+    fileUploadUrls: Dict[str, str],
+    zipUploadUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `jobId`: `str`
-- `fileUploadUrls`: `Dict`\[`str`, `str`\]
-- `zipUploadUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdomainassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDomainAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateDomainAssociationRequestRequestTypeDef
+
+def get_value() -> CreateDomainAssociationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "domainName": ...,
+        "subDomainSettings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDomainAssociationRequestRequestTypeDef(TypedDict):
+    appId: str,
+    domainName: str,
+    subDomainSettings: Sequence[SubDomainSettingTypeDef],  # (1)
+    enableAutoSubDomain: NotRequired[bool],
+    autoSubDomainCreationPatterns: NotRequired[Sequence[str]],
+    autoSubDomainIAMRole: NotRequired[str],
+```
 
-- `appId`: `str`
-- `domainName`: `str`
-- `subDomainSettings`:
-  `Sequence`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
-
-Optional fields:
-
-- `enableAutoSubDomain`: `bool`
-- `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
-- `autoSubDomainIAMRole`: `str`
-
-<a id="createdomainassociationresulttypedef"></a>
-
+1. See [:material-code-braces: SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef) 
 ## CreateDomainAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateDomainAssociationResultTypeDef
+
+def get_value() -> CreateDomainAssociationResultTypeDef:
+    return {
+        "domainAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDomainAssociationResultTypeDef(TypedDict):
+    domainAssociation: DomainAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `domainAssociation`:
-  [DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createwebhookrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWebhookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateWebhookRequestRequestTypeDef
+
+def get_value() -> CreateWebhookRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="createwebhookresulttypedef"></a>
+```python title="Definition"
+class CreateWebhookRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    description: NotRequired[str],
+```
 
 ## CreateWebhookResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CreateWebhookResultTypeDef
+
+def get_value() -> CreateWebhookResultTypeDef:
+    return {
+        "webhook": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWebhookResultTypeDef(TypedDict):
+    webhook: WebhookTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customruletypedef"></a>
-
+1. See [:material-code-braces: WebhookTypeDef](./type_defs.md#webhooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import CustomRuleTypeDef
+
+def get_value() -> CustomRuleTypeDef:
+    return {
+        "source": ...,
+        "target": ...,
+    }
 ```
 
-Required fields:
-
-- `source`: `str`
-- `target`: `str`
-
-Optional fields:
-
-- `status`: `str`
-- `condition`: `str`
-
-<a id="deleteapprequestrequesttypedef"></a>
+```python title="Definition"
+class CustomRuleTypeDef(TypedDict):
+    source: str,
+    target: str,
+    status: NotRequired[str],
+    condition: NotRequired[str],
+```
 
 ## DeleteAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteAppRequestRequestTypeDef
+
+def get_value() -> DeleteAppRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-<a id="deleteappresulttypedef"></a>
+```python title="Definition"
+class DeleteAppRequestRequestTypeDef(TypedDict):
+    appId: str,
+```
 
 ## DeleteAppResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteAppResultTypeDef
+
+def get_value() -> DeleteAppResultTypeDef:
+    return {
+        "app": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAppResultTypeDef(TypedDict):
+    app: AppTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `app`: [AppTypeDef](./type_defs.md#apptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebackendenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBackendEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteBackendEnvironmentRequestRequestTypeDef
+
+def get_value() -> DeleteBackendEnvironmentRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-
-<a id="deletebackendenvironmentresulttypedef"></a>
+```python title="Definition"
+class DeleteBackendEnvironmentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+```
 
 ## DeleteBackendEnvironmentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteBackendEnvironmentResultTypeDef
+
+def get_value() -> DeleteBackendEnvironmentResultTypeDef:
+    return {
+        "backendEnvironment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBackendEnvironmentResultTypeDef(TypedDict):
+    backendEnvironment: BackendEnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `backendEnvironment`:
-  [BackendEnvironmentTypeDef](./type_defs.md#backendenvironmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebranchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BackendEnvironmentTypeDef](./type_defs.md#backendenvironmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBranchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteBranchRequestRequestTypeDef
+
+def get_value() -> DeleteBranchRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-
-<a id="deletebranchresulttypedef"></a>
+```python title="Definition"
+class DeleteBranchRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+```
 
 ## DeleteBranchResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteBranchResultTypeDef
+
+def get_value() -> DeleteBranchResultTypeDef:
+    return {
+        "branch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBranchResultTypeDef(TypedDict):
+    branch: BranchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `branch`: [BranchTypeDef](./type_defs.md#branchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedomainassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BranchTypeDef](./type_defs.md#branchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDomainAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteDomainAssociationRequestRequestTypeDef
+
+def get_value() -> DeleteDomainAssociationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "domainName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `domainName`: `str`
-
-<a id="deletedomainassociationresulttypedef"></a>
+```python title="Definition"
+class DeleteDomainAssociationRequestRequestTypeDef(TypedDict):
+    appId: str,
+    domainName: str,
+```
 
 ## DeleteDomainAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteDomainAssociationResultTypeDef
+
+def get_value() -> DeleteDomainAssociationResultTypeDef:
+    return {
+        "domainAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDomainAssociationResultTypeDef(TypedDict):
+    domainAssociation: DomainAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `domainAssociation`:
-  [DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletejobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteJobRequestRequestTypeDef
+
+def get_value() -> DeleteJobRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-- `jobId`: `str`
-
-<a id="deletejobresulttypedef"></a>
+```python title="Definition"
+class DeleteJobRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    jobId: str,
+```
 
 ## DeleteJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteJobResultTypeDef
+
+def get_value() -> DeleteJobResultTypeDef:
+    return {
+        "jobSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteJobResultTypeDef(TypedDict):
+    jobSummary: JobSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobSummary`: [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletewebhookrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteWebhookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteWebhookRequestRequestTypeDef
+
+def get_value() -> DeleteWebhookRequestRequestTypeDef:
+    return {
+        "webhookId": ...,
+    }
 ```
 
-Required fields:
-
-- `webhookId`: `str`
-
-<a id="deletewebhookresulttypedef"></a>
+```python title="Definition"
+class DeleteWebhookRequestRequestTypeDef(TypedDict):
+    webhookId: str,
+```
 
 ## DeleteWebhookResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DeleteWebhookResultTypeDef
+
+def get_value() -> DeleteWebhookResultTypeDef:
+    return {
+        "webhook": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteWebhookResultTypeDef(TypedDict):
+    webhook: WebhookTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="domainassociationtypedef"></a>
-
+1. See [:material-code-braces: WebhookTypeDef](./type_defs.md#webhooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DomainAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import DomainAssociationTypeDef
+
+def get_value() -> DomainAssociationTypeDef:
+    return {
+        "domainAssociationArn": ...,
+        "domainName": ...,
+        "enableAutoSubDomain": ...,
+        "domainStatus": ...,
+        "statusReason": ...,
+        "subDomains": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DomainAssociationTypeDef(TypedDict):
+    domainAssociationArn: str,
+    domainName: str,
+    enableAutoSubDomain: bool,
+    domainStatus: DomainStatusType,  # (1)
+    statusReason: str,
+    subDomains: List[SubDomainTypeDef],  # (2)
+    autoSubDomainCreationPatterns: NotRequired[List[str]],
+    autoSubDomainIAMRole: NotRequired[str],
+    certificateVerificationDNSRecord: NotRequired[str],
+```
 
-- `domainAssociationArn`: `str`
-- `domainName`: `str`
-- `enableAutoSubDomain`: `bool`
-- `domainStatus`: [DomainStatusType](./literals.md#domainstatustype)
-- `statusReason`: `str`
-- `subDomains`: `List`\[[SubDomainTypeDef](./type_defs.md#subdomaintypedef)\]
-
-Optional fields:
-
-- `autoSubDomainCreationPatterns`: `List`\[`str`\]
-- `autoSubDomainIAMRole`: `str`
-- `certificateVerificationDNSRecord`: `str`
-
-<a id="generateaccesslogsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
+2. See [:material-code-braces: SubDomainTypeDef](./type_defs.md#subdomaintypedef) 
 ## GenerateAccessLogsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GenerateAccessLogsRequestRequestTypeDef
+
+def get_value() -> GenerateAccessLogsRequestRequestTypeDef:
+    return {
+        "domainName": ...,
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `domainName`: `str`
-- `appId`: `str`
-
-Optional fields:
-
-- `startTime`: `Union`\[`datetime`, `str`\]
-- `endTime`: `Union`\[`datetime`, `str`\]
-
-<a id="generateaccesslogsresulttypedef"></a>
+```python title="Definition"
+class GenerateAccessLogsRequestRequestTypeDef(TypedDict):
+    domainName: str,
+    appId: str,
+    startTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[Union[datetime, str]],
+```
 
 ## GenerateAccessLogsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GenerateAccessLogsResultTypeDef
+
+def get_value() -> GenerateAccessLogsResultTypeDef:
+    return {
+        "logUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GenerateAccessLogsResultTypeDef(TypedDict):
+    logUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `logUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getapprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetAppRequestRequestTypeDef
+
+def get_value() -> GetAppRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-<a id="getappresulttypedef"></a>
+```python title="Definition"
+class GetAppRequestRequestTypeDef(TypedDict):
+    appId: str,
+```
 
 ## GetAppResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetAppResultTypeDef
+
+def get_value() -> GetAppResultTypeDef:
+    return {
+        "app": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAppResultTypeDef(TypedDict):
+    app: AppTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `app`: [AppTypeDef](./type_defs.md#apptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getartifacturlrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetArtifactUrlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetArtifactUrlRequestRequestTypeDef
+
+def get_value() -> GetArtifactUrlRequestRequestTypeDef:
+    return {
+        "artifactId": ...,
+    }
 ```
 
-Required fields:
-
-- `artifactId`: `str`
-
-<a id="getartifacturlresulttypedef"></a>
+```python title="Definition"
+class GetArtifactUrlRequestRequestTypeDef(TypedDict):
+    artifactId: str,
+```
 
 ## GetArtifactUrlResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetArtifactUrlResultTypeDef
+
+def get_value() -> GetArtifactUrlResultTypeDef:
+    return {
+        "artifactId": ...,
+        "artifactUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetArtifactUrlResultTypeDef(TypedDict):
+    artifactId: str,
+    artifactUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `artifactId`: `str`
-- `artifactUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbackendenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBackendEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetBackendEnvironmentRequestRequestTypeDef
+
+def get_value() -> GetBackendEnvironmentRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-
-<a id="getbackendenvironmentresulttypedef"></a>
+```python title="Definition"
+class GetBackendEnvironmentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+```
 
 ## GetBackendEnvironmentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetBackendEnvironmentResultTypeDef
+
+def get_value() -> GetBackendEnvironmentResultTypeDef:
+    return {
+        "backendEnvironment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBackendEnvironmentResultTypeDef(TypedDict):
+    backendEnvironment: BackendEnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `backendEnvironment`:
-  [BackendEnvironmentTypeDef](./type_defs.md#backendenvironmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getbranchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BackendEnvironmentTypeDef](./type_defs.md#backendenvironmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBranchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetBranchRequestRequestTypeDef
+
+def get_value() -> GetBranchRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-
-<a id="getbranchresulttypedef"></a>
+```python title="Definition"
+class GetBranchRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+```
 
 ## GetBranchResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetBranchResultTypeDef
+
+def get_value() -> GetBranchResultTypeDef:
+    return {
+        "branch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBranchResultTypeDef(TypedDict):
+    branch: BranchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `branch`: [BranchTypeDef](./type_defs.md#branchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdomainassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BranchTypeDef](./type_defs.md#branchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDomainAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetDomainAssociationRequestRequestTypeDef
+
+def get_value() -> GetDomainAssociationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "domainName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `domainName`: `str`
-
-<a id="getdomainassociationresulttypedef"></a>
+```python title="Definition"
+class GetDomainAssociationRequestRequestTypeDef(TypedDict):
+    appId: str,
+    domainName: str,
+```
 
 ## GetDomainAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetDomainAssociationResultTypeDef
+
+def get_value() -> GetDomainAssociationResultTypeDef:
+    return {
+        "domainAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDomainAssociationResultTypeDef(TypedDict):
+    domainAssociation: DomainAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `domainAssociation`:
-  [DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetJobRequestRequestTypeDef
+
+def get_value() -> GetJobRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-- `jobId`: `str`
-
-<a id="getjobresulttypedef"></a>
+```python title="Definition"
+class GetJobRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    jobId: str,
+```
 
 ## GetJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetJobResultTypeDef
+
+def get_value() -> GetJobResultTypeDef:
+    return {
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobResultTypeDef(TypedDict):
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `job`: [JobTypeDef](./type_defs.md#jobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwebhookrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWebhookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetWebhookRequestRequestTypeDef
+
+def get_value() -> GetWebhookRequestRequestTypeDef:
+    return {
+        "webhookId": ...,
+    }
 ```
 
-Required fields:
-
-- `webhookId`: `str`
-
-<a id="getwebhookresulttypedef"></a>
+```python title="Definition"
+class GetWebhookRequestRequestTypeDef(TypedDict):
+    webhookId: str,
+```
 
 ## GetWebhookResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import GetWebhookResultTypeDef
+
+def get_value() -> GetWebhookResultTypeDef:
+    return {
+        "webhook": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWebhookResultTypeDef(TypedDict):
+    webhook: WebhookTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="jobsummarytypedef"></a>
-
+1. See [:material-code-braces: WebhookTypeDef](./type_defs.md#webhooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## JobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import JobSummaryTypeDef
+
+def get_value() -> JobSummaryTypeDef:
+    return {
+        "jobArn": ...,
+        "jobId": ...,
+        "commitId": ...,
+        "commitMessage": ...,
+        "commitTime": ...,
+        "startTime": ...,
+        "status": ...,
+        "jobType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobSummaryTypeDef(TypedDict):
+    jobArn: str,
+    jobId: str,
+    commitId: str,
+    commitMessage: str,
+    commitTime: datetime,
+    startTime: datetime,
+    status: JobStatusType,  # (1)
+    jobType: JobTypeType,  # (2)
+    endTime: NotRequired[datetime],
+```
 
-- `jobArn`: `str`
-- `jobId`: `str`
-- `commitId`: `str`
-- `commitMessage`: `str`
-- `commitTime`: `datetime`
-- `startTime`: `datetime`
-- `status`: [JobStatusType](./literals.md#jobstatustype)
-- `jobType`: [JobTypeType](./literals.md#jobtypetype)
-
-Optional fields:
-
-- `endTime`: `datetime`
-
-<a id="jobtypedef"></a>
-
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
 ## JobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import JobTypeDef
+
+def get_value() -> JobTypeDef:
+    return {
+        "summary": ...,
+        "steps": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobTypeDef(TypedDict):
+    summary: JobSummaryTypeDef,  # (1)
+    steps: List[StepTypeDef],  # (2)
+```
 
-- `summary`: [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
-- `steps`: `List`\[[StepTypeDef](./type_defs.md#steptypedef)\]
+1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
+2. See [:material-code-braces: StepTypeDef](./type_defs.md#steptypedef) 
+## ListAppsRequestListAppsPaginateTypeDef
 
-<a id="listappsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_amplify.type_defs import ListAppsRequestListAppsPaginateTypeDef
 
+def get_value() -> ListAppsRequestListAppsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppsRequestListAppsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAppsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListAppsRequestRequestTypeDef
+
+def get_value() -> ListAppsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listappsresulttypedef"></a>
+```python title="Definition"
+class ListAppsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListAppsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListAppsResultTypeDef
+
+def get_value() -> ListAppsResultTypeDef:
+    return {
+        "apps": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppsResultTypeDef(TypedDict):
+    apps: List[AppTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `apps`: `List`\[[AppTypeDef](./type_defs.md#apptypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listartifactsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListArtifactsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListArtifactsRequestRequestTypeDef
+
+def get_value() -> ListArtifactsRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-- `jobId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listartifactsresulttypedef"></a>
+```python title="Definition"
+class ListArtifactsRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    jobId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListArtifactsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListArtifactsResultTypeDef
+
+def get_value() -> ListArtifactsResultTypeDef:
+    return {
+        "artifacts": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListArtifactsResultTypeDef(TypedDict):
+    artifacts: List[ArtifactTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `artifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listbackendenvironmentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ArtifactTypeDef](./type_defs.md#artifacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListBackendEnvironmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListBackendEnvironmentsRequestRequestTypeDef
+
+def get_value() -> ListBackendEnvironmentsRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-Optional fields:
-
-- `environmentName`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listbackendenvironmentsresulttypedef"></a>
+```python title="Definition"
+class ListBackendEnvironmentsRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListBackendEnvironmentsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListBackendEnvironmentsResultTypeDef
+
+def get_value() -> ListBackendEnvironmentsResultTypeDef:
+    return {
+        "backendEnvironments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBackendEnvironmentsResultTypeDef(TypedDict):
+    backendEnvironments: List[BackendEnvironmentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `backendEnvironments`:
-  `List`\[[BackendEnvironmentTypeDef](./type_defs.md#backendenvironmenttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BackendEnvironmentTypeDef](./type_defs.md#backendenvironmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBranchesRequestListBranchesPaginateTypeDef
 
-<a id="listbranchesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_amplify.type_defs import ListBranchesRequestListBranchesPaginateTypeDef
 
+def get_value() -> ListBranchesRequestListBranchesPaginateTypeDef:
+    return {
+        "appId": ...,
+    }
+```
+
+```python title="Definition"
+class ListBranchesRequestListBranchesPaginateTypeDef(TypedDict):
+    appId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBranchesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListBranchesRequestRequestTypeDef
+
+def get_value() -> ListBranchesRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listbranchesresulttypedef"></a>
+```python title="Definition"
+class ListBranchesRequestRequestTypeDef(TypedDict):
+    appId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListBranchesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListBranchesResultTypeDef
+
+def get_value() -> ListBranchesResultTypeDef:
+    return {
+        "branches": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBranchesResultTypeDef(TypedDict):
+    branches: List[BranchTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `branches`: `List`\[[BranchTypeDef](./type_defs.md#branchtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BranchTypeDef](./type_defs.md#branchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDomainAssociationsRequestListDomainAssociationsPaginateTypeDef
 
-<a id="listdomainassociationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_amplify.type_defs import ListDomainAssociationsRequestListDomainAssociationsPaginateTypeDef
 
+def get_value() -> ListDomainAssociationsRequestListDomainAssociationsPaginateTypeDef:
+    return {
+        "appId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDomainAssociationsRequestListDomainAssociationsPaginateTypeDef(TypedDict):
+    appId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDomainAssociationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListDomainAssociationsRequestRequestTypeDef
+
+def get_value() -> ListDomainAssociationsRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listdomainassociationsresulttypedef"></a>
+```python title="Definition"
+class ListDomainAssociationsRequestRequestTypeDef(TypedDict):
+    appId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListDomainAssociationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListDomainAssociationsResultTypeDef
+
+def get_value() -> ListDomainAssociationsResultTypeDef:
+    return {
+        "domainAssociations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDomainAssociationsResultTypeDef(TypedDict):
+    domainAssociations: List[DomainAssociationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `domainAssociations`:
-  `List`\[[DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListJobsRequestListJobsPaginateTypeDef
 
-<a id="listjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_amplify.type_defs import ListJobsRequestListJobsPaginateTypeDef
 
+def get_value() -> ListJobsRequestListJobsPaginateTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsRequestListJobsPaginateTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListJobsRequestRequestTypeDef
+
+def get_value() -> ListJobsRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listjobsresulttypedef"></a>
+```python title="Definition"
+class ListJobsRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListJobsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListJobsResultTypeDef
+
+def get_value() -> ListJobsResultTypeDef:
+    return {
+        "jobSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobsResultTypeDef(TypedDict):
+    jobSummaries: List[JobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobSummaries`:
-  `List`\[[JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listwebhooksrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWebhooksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListWebhooksRequestRequestTypeDef
+
+def get_value() -> ListWebhooksRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listwebhooksresulttypedef"></a>
+```python title="Definition"
+class ListWebhooksRequestRequestTypeDef(TypedDict):
+    appId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListWebhooksResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ListWebhooksResultTypeDef
+
+def get_value() -> ListWebhooksResultTypeDef:
+    return {
+        "webhooks": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWebhooksResultTypeDef(TypedDict):
+    webhooks: List[WebhookTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `webhooks`: `List`\[[WebhookTypeDef](./type_defs.md#webhooktypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: WebhookTypeDef](./type_defs.md#webhooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="productionbranchtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProductionBranchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ProductionBranchTypeDef
+
+def get_value() -> ProductionBranchTypeDef:
+    return {
+        "lastDeployTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `lastDeployTime`: `datetime`
-- `status`: `str`
-- `thumbnailUrl`: `str`
-- `branchName`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ProductionBranchTypeDef(TypedDict):
+    lastDeployTime: NotRequired[datetime],
+    status: NotRequired[str],
+    thumbnailUrl: NotRequired[str],
+    branchName: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startdeploymentrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import StartDeploymentRequestRequestTypeDef
+
+def get_value() -> StartDeploymentRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-
-Optional fields:
-
-- `jobId`: `str`
-- `sourceUrl`: `str`
-
-<a id="startdeploymentresulttypedef"></a>
+```python title="Definition"
+class StartDeploymentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    jobId: NotRequired[str],
+    sourceUrl: NotRequired[str],
+```
 
 ## StartDeploymentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import StartDeploymentResultTypeDef
+
+def get_value() -> StartDeploymentResultTypeDef:
+    return {
+        "jobSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDeploymentResultTypeDef(TypedDict):
+    jobSummary: JobSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobSummary`: [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import StartJobRequestRequestTypeDef
+
+def get_value() -> StartJobRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+        "jobType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartJobRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    jobType: JobTypeType,  # (1)
+    jobId: NotRequired[str],
+    jobReason: NotRequired[str],
+    commitId: NotRequired[str],
+    commitMessage: NotRequired[str],
+    commitTime: NotRequired[Union[datetime, str]],
+```
 
-- `appId`: `str`
-- `branchName`: `str`
-- `jobType`: [JobTypeType](./literals.md#jobtypetype)
-
-Optional fields:
-
-- `jobId`: `str`
-- `jobReason`: `str`
-- `commitId`: `str`
-- `commitMessage`: `str`
-- `commitTime`: `Union`\[`datetime`, `str`\]
-
-<a id="startjobresulttypedef"></a>
-
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
 ## StartJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import StartJobResultTypeDef
+
+def get_value() -> StartJobResultTypeDef:
+    return {
+        "jobSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartJobResultTypeDef(TypedDict):
+    jobSummary: JobSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobSummary`: [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="steptypedef"></a>
-
+1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StepTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import StepTypeDef
+
+def get_value() -> StepTypeDef:
+    return {
+        "stepName": ...,
+        "startTime": ...,
+        "status": ...,
+        "endTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StepTypeDef(TypedDict):
+    stepName: str,
+    startTime: datetime,
+    status: JobStatusType,  # (1)
+    endTime: datetime,
+    logUrl: NotRequired[str],
+    artifactsUrl: NotRequired[str],
+    testArtifactsUrl: NotRequired[str],
+    testConfigUrl: NotRequired[str],
+    screenshots: NotRequired[Dict[str, str]],
+    statusReason: NotRequired[str],
+    context: NotRequired[str],
+```
 
-- `stepName`: `str`
-- `startTime`: `datetime`
-- `status`: [JobStatusType](./literals.md#jobstatustype)
-- `endTime`: `datetime`
-
-Optional fields:
-
-- `logUrl`: `str`
-- `artifactsUrl`: `str`
-- `testArtifactsUrl`: `str`
-- `testConfigUrl`: `str`
-- `screenshots`: `Dict`\[`str`, `str`\]
-- `statusReason`: `str`
-- `context`: `str`
-
-<a id="stopjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 ## StopJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import StopJobRequestRequestTypeDef
+
+def get_value() -> StopJobRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `branchName`: `str`
-- `jobId`: `str`
-
-<a id="stopjobresulttypedef"></a>
+```python title="Definition"
+class StopJobRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    jobId: str,
+```
 
 ## StopJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import StopJobResultTypeDef
+
+def get_value() -> StopJobResultTypeDef:
+    return {
+        "jobSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopJobResultTypeDef(TypedDict):
+    jobSummary: JobSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobSummary`: [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="subdomainsettingtypedef"></a>
-
+1. See [:material-code-braces: JobSummaryTypeDef](./type_defs.md#jobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SubDomainSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import SubDomainSettingTypeDef
+
+def get_value() -> SubDomainSettingTypeDef:
+    return {
+        "prefix": ...,
+        "branchName": ...,
+    }
 ```
 
-Required fields:
-
-- `prefix`: `str`
-- `branchName`: `str`
-
-<a id="subdomaintypedef"></a>
+```python title="Definition"
+class SubDomainSettingTypeDef(TypedDict):
+    prefix: str,
+    branchName: str,
+```
 
 ## SubDomainTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import SubDomainTypeDef
+
+def get_value() -> SubDomainTypeDef:
+    return {
+        "subDomainSetting": ...,
+        "verified": ...,
+        "dnsRecord": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubDomainTypeDef(TypedDict):
+    subDomainSetting: SubDomainSettingTypeDef,  # (1)
+    verified: bool,
+    dnsRecord: str,
+```
 
-- `subDomainSetting`:
-  [SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)
-- `verified`: `bool`
-- `dnsRecord`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateapprequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import UpdateAppRequestRequestTypeDef
+
+def get_value() -> UpdateAppRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAppRequestRequestTypeDef(TypedDict):
+    appId: str,
+    name: NotRequired[str],
+    description: NotRequired[str],
+    platform: NotRequired[PlatformType],  # (1)
+    iamServiceRoleArn: NotRequired[str],
+    environmentVariables: NotRequired[Mapping[str, str]],
+    enableBranchAutoBuild: NotRequired[bool],
+    enableBranchAutoDeletion: NotRequired[bool],
+    enableBasicAuth: NotRequired[bool],
+    basicAuthCredentials: NotRequired[str],
+    customRules: NotRequired[Sequence[CustomRuleTypeDef]],  # (2)
+    buildSpec: NotRequired[str],
+    customHeaders: NotRequired[str],
+    enableAutoBranchCreation: NotRequired[bool],
+    autoBranchCreationPatterns: NotRequired[Sequence[str]],
+    autoBranchCreationConfig: NotRequired[AutoBranchCreationConfigTypeDef],  # (3)
+    repository: NotRequired[str],
+    oauthToken: NotRequired[str],
+    accessToken: NotRequired[str],
+```
 
-- `appId`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`
-- `platform`: [PlatformType](./literals.md#platformtype)
-- `iamServiceRoleArn`: `str`
-- `environmentVariables`: `Mapping`\[`str`, `str`\]
-- `enableBranchAutoBuild`: `bool`
-- `enableBranchAutoDeletion`: `bool`
-- `enableBasicAuth`: `bool`
-- `basicAuthCredentials`: `str`
-- `customRules`:
-  `Sequence`\[[CustomRuleTypeDef](./type_defs.md#customruletypedef)\]
-- `buildSpec`: `str`
-- `customHeaders`: `str`
-- `enableAutoBranchCreation`: `bool`
-- `autoBranchCreationPatterns`: `Sequence`\[`str`\]
-- `autoBranchCreationConfig`:
-  [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
-- `repository`: `str`
-- `oauthToken`: `str`
-- `accessToken`: `str`
-
-<a id="updateappresulttypedef"></a>
-
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: CustomRuleTypeDef](./type_defs.md#customruletypedef) 
+3. See [:material-code-braces: AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef) 
 ## UpdateAppResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import UpdateAppResultTypeDef
+
+def get_value() -> UpdateAppResultTypeDef:
+    return {
+        "app": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAppResultTypeDef(TypedDict):
+    app: AppTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `app`: [AppTypeDef](./type_defs.md#apptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatebranchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBranchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import UpdateBranchRequestRequestTypeDef
+
+def get_value() -> UpdateBranchRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "branchName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBranchRequestRequestTypeDef(TypedDict):
+    appId: str,
+    branchName: str,
+    description: NotRequired[str],
+    framework: NotRequired[str],
+    stage: NotRequired[StageType],  # (1)
+    enableNotification: NotRequired[bool],
+    enableAutoBuild: NotRequired[bool],
+    environmentVariables: NotRequired[Mapping[str, str]],
+    basicAuthCredentials: NotRequired[str],
+    enableBasicAuth: NotRequired[bool],
+    enablePerformanceMode: NotRequired[bool],
+    buildSpec: NotRequired[str],
+    ttl: NotRequired[str],
+    displayName: NotRequired[str],
+    enablePullRequestPreview: NotRequired[bool],
+    pullRequestEnvironmentName: NotRequired[str],
+    backendEnvironmentArn: NotRequired[str],
+```
 
-- `appId`: `str`
-- `branchName`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `framework`: `str`
-- `stage`: [StageType](./literals.md#stagetype)
-- `enableNotification`: `bool`
-- `enableAutoBuild`: `bool`
-- `environmentVariables`: `Mapping`\[`str`, `str`\]
-- `basicAuthCredentials`: `str`
-- `enableBasicAuth`: `bool`
-- `enablePerformanceMode`: `bool`
-- `buildSpec`: `str`
-- `ttl`: `str`
-- `displayName`: `str`
-- `enablePullRequestPreview`: `bool`
-- `pullRequestEnvironmentName`: `str`
-- `backendEnvironmentArn`: `str`
-
-<a id="updatebranchresulttypedef"></a>
-
+1. See [:material-code-brackets: StageType](./literals.md#stagetype) 
 ## UpdateBranchResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import UpdateBranchResultTypeDef
+
+def get_value() -> UpdateBranchResultTypeDef:
+    return {
+        "branch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBranchResultTypeDef(TypedDict):
+    branch: BranchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `branch`: [BranchTypeDef](./type_defs.md#branchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedomainassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BranchTypeDef](./type_defs.md#branchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDomainAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import UpdateDomainAssociationRequestRequestTypeDef
+
+def get_value() -> UpdateDomainAssociationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "domainName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainAssociationRequestRequestTypeDef(TypedDict):
+    appId: str,
+    domainName: str,
+    enableAutoSubDomain: NotRequired[bool],
+    subDomainSettings: NotRequired[Sequence[SubDomainSettingTypeDef]],  # (1)
+    autoSubDomainCreationPatterns: NotRequired[Sequence[str]],
+    autoSubDomainIAMRole: NotRequired[str],
+```
 
-- `appId`: `str`
-- `domainName`: `str`
-
-Optional fields:
-
-- `enableAutoSubDomain`: `bool`
-- `subDomainSettings`:
-  `Sequence`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
-- `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
-- `autoSubDomainIAMRole`: `str`
-
-<a id="updatedomainassociationresulttypedef"></a>
-
+1. See [:material-code-braces: SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef) 
 ## UpdateDomainAssociationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import UpdateDomainAssociationResultTypeDef
+
+def get_value() -> UpdateDomainAssociationResultTypeDef:
+    return {
+        "domainAssociation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainAssociationResultTypeDef(TypedDict):
+    domainAssociation: DomainAssociationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `domainAssociation`:
-  [DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatewebhookrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateWebhookRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import UpdateWebhookRequestRequestTypeDef
+
+def get_value() -> UpdateWebhookRequestRequestTypeDef:
+    return {
+        "webhookId": ...,
+    }
 ```
 
-Required fields:
-
-- `webhookId`: `str`
-
-Optional fields:
-
-- `branchName`: `str`
-- `description`: `str`
-
-<a id="updatewebhookresulttypedef"></a>
+```python title="Definition"
+class UpdateWebhookRequestRequestTypeDef(TypedDict):
+    webhookId: str,
+    branchName: NotRequired[str],
+    description: NotRequired[str],
+```
 
 ## UpdateWebhookResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import UpdateWebhookResultTypeDef
+
+def get_value() -> UpdateWebhookResultTypeDef:
+    return {
+        "webhook": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWebhookResultTypeDef(TypedDict):
+    webhook: WebhookTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="webhooktypedef"></a>
-
+1. See [:material-code-braces: WebhookTypeDef](./type_defs.md#webhooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WebhookTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplify.type_defs import WebhookTypeDef
+
+def get_value() -> WebhookTypeDef:
+    return {
+        "webhookArn": ...,
+        "webhookId": ...,
+        "webhookUrl": ...,
+        "branchName": ...,
+        "description": ...,
+        "createTime": ...,
+        "updateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WebhookTypeDef(TypedDict):
+    webhookArn: str,
+    webhookId: str,
+    webhookUrl: str,
+    branchName: str,
+    description: str,
+    createTime: datetime,
+    updateTime: datetime,
+```
 
-- `webhookArn`: `str`
-- `webhookId`: `str`
-- `webhookUrl`: `str`
-- `branchName`: `str`
-- `description`: `str`
-- `createTime`: `datetime`
-- `updateTime`: `datetime`

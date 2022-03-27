@@ -1,91 +1,139 @@
-<a id="examples-for-boto3-docdb-module"></a>
-
-# Examples for boto3 DocDB module
+# Examples
 
 > [Index](../README.md) > [DocDB](./README.md) > Examples
 
-- [Examples for boto3 DocDB module](#examples-for-boto3-docdb-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
+    type annotations stubs module [mypy-boto3-docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[docdb]` package installed.
 
-Write your `DocDB` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `DocDB` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type DocDBClient
-# and provides type checking and code completion
-client = session.client("docdb")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AddSourceIdentifierToSubscriptionResultTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_source_identifier_to_subscription()
 
-# paginator has type DescribeCertificatesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_certificates")
-for item in paginator.paginate(...):
-    # item has type CertificateMessageTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type DBInstanceAvailableWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("db_instance_available")
-waiter.wait()
-```
+    client = session.client("docdb")  # (1)
+    result = client.add_source_identifier_to_subscription()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [DocDBClient](./client.md)
+    2. result: [:material-code-braces: AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("docdb")  # (1)
+
+    paginator = client.get_paginator("describe_certificates")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [DocDBClient](./client.md)
+    2. paginator: [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
+    3. item: [:material-code-braces: CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("docdb")  # (1)
+
+    waiter = client.get_waiter("db_instance_available")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [DocDBClient](./client.md)
+    2. waiter: [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[docdb]` or a standalone `mypy_boto3_docdb` package, you
-have to explicitly specify `client: DocDBClient` type annotation.
+With `boto3-stubs-lite[docdb]`
+or a standalone `mypy_boto3_docdb` package, you have to explicitly specify `client: DocDBClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_docdb.client import DocDBClient
-from mypy_boto3_docdb.paginator import DescribeCertificatesPaginator
-from mypy_boto3_docdb.waiter import DBInstanceAvailableWaiter
-from mypy_boto3_docdb.literals import PaginatorName
-from mypy_boto3_docdb.literals import WaiterName
-from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionResultTypeDef
-from mypy_boto3_docdb.type_defs import CertificateMessageTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: DocDBClient = session.client("docdb")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AddSourceIdentifierToSubscriptionResultTypeDef = client.add_source_identifier_to_subscription()
+    from mypy_boto3_docdb.client import DocDBClient
+    from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionResultTypeDef
+    from mypy_boto3_docdb.type_defs import AddSourceIdentifierToSubscriptionMessageRequestTypeDef
 
-paginator_name: PaginatorName = "describe_certificates"
-paginator: DescribeCertificatesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: CertificateMessageTypeDef
-    print(item)
 
-waiter_name: WaiterName = "db_instance_available"
-waiter: DBInstanceAvailableWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: DocDBClient = session.client("docdb")
+
+    kwargs: AddSourceIdentifierToSubscriptionMessageRequestTypeDef = {...}
+    result: AddSourceIdentifierToSubscriptionResultTypeDef = client.add_source_identifier_to_subscription(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_docdb.client import DocDBClient
+    from mypy_boto3_docdb.paginator import DescribeCertificatesPaginator
+    from mypy_boto3_docdb.type_defs import CertificateMessageTypeDef
+
+
+    session = Session()
+    client: DocDBClient = session.client("docdb")
+
+    paginator: DescribeCertificatesPaginator = client.get_paginator("describe_certificates")
+    for item in paginator.paginate(...):
+        item: CertificateMessageTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_docdb.client import DocDBClient
+    from mypy_boto3_docdb.waiter import DBInstanceAvailableWaiter
+
+    session = Session()
+    client: DocDBClient = session.client("docdb")
+
+    waiter: DBInstanceAvailableWaiter = client.get_waiter("db_instance_available")
+    waiter.wait()
+    ```
+
+

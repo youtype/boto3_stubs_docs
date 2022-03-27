@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-chimesdkmeetings-module"></a>
-
-# Examples for boto3 ChimeSDKMeetings module
+# Examples
 
 > [Index](../README.md) > [ChimeSDKMeetings](./README.md) > Examples
 
-- [Examples for boto3 ChimeSDKMeetings module](#examples-for-boto3-chimesdkmeetings-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
+    type annotations stubs module [mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[chime-sdk-meetings]` package installed.
 
-Write your `ChimeSDKMeetings` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `ChimeSDKMeetings` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ChimeSDKMeetingsClient
-# and provides type checking and code completion
-client = session.client("chime-sdk-meetings")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BatchCreateAttendeeResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_create_attendee()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("chime-sdk-meetings")  # (1)
+    result = client.batch_create_attendee()  # (2)
+    ```
+
+    1. client: [ChimeSDKMeetingsClient](./client.md)
+    2. result: [:material-code-braces: BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[chime-sdk-meetings]` or a standalone
-`mypy_boto3_chime_sdk_meetings` package, you have to explicitly specify
-`client: ChimeSDKMeetingsClient` type annotation.
+With `boto3-stubs-lite[chime-sdk-meetings]`
+or a standalone `mypy_boto3_chime_sdk_meetings` package, you have to explicitly specify `client: ChimeSDKMeetingsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_chime_sdk_meetings.client import ChimeSDKMeetingsClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_chime_sdk_meetings.client import ChimeSDKMeetingsClient
+    from mypy_boto3_chime_sdk_meetings.type_defs import BatchCreateAttendeeResponseTypeDef
+    from mypy_boto3_chime_sdk_meetings.type_defs import BatchCreateAttendeeRequestRequestTypeDef
 
 
-from mypy_boto3_chime_sdk_meetings.type_defs import BatchCreateAttendeeResponseTypeDef
+    session = Session()
+
+    client: ChimeSDKMeetingsClient = session.client("chime-sdk-meetings")
+
+    kwargs: BatchCreateAttendeeRequestRequestTypeDef = {...}
+    result: BatchCreateAttendeeResponseTypeDef = client.batch_create_attendee(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: ChimeSDKMeetingsClient = session.client("chime-sdk-meetings")
 
-result: BatchCreateAttendeeResponseTypeDef = client.batch_create_attendee()
-```
+

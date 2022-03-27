@@ -1,3082 +1,3810 @@
-<a id="typed-dictionaries-for-boto3-iotwireless-module"></a>
-
-# Typed dictionaries for boto3 IoTWireless module
+# Typed dictionaries
 
 > [Index](../README.md) > [IoTWireless](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
-type annotations stubs module
-[mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IoTWireless module](#typed-dictionaries-for-boto3-iotwireless-module)
-  - [AbpV1_0_xTypeDef](#abpv1_0_xtypedef)
-  - [AbpV1_1TypeDef](#abpv1_1typedef)
-  - [AssociateAwsAccountWithPartnerAccountRequestRequestTypeDef](#associateawsaccountwithpartneraccountrequestrequesttypedef)
-  - [AssociateAwsAccountWithPartnerAccountResponseTypeDef](#associateawsaccountwithpartneraccountresponsetypedef)
-  - [AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef](#associatemulticastgroupwithfuotataskrequestrequesttypedef)
-  - [AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef](#associatewirelessdevicewithfuotataskrequestrequesttypedef)
-  - [AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef](#associatewirelessdevicewithmulticastgrouprequestrequesttypedef)
-  - [AssociateWirelessDeviceWithThingRequestRequestTypeDef](#associatewirelessdevicewiththingrequestrequesttypedef)
-  - [AssociateWirelessGatewayWithCertificateRequestRequestTypeDef](#associatewirelessgatewaywithcertificaterequestrequesttypedef)
-  - [AssociateWirelessGatewayWithCertificateResponseTypeDef](#associatewirelessgatewaywithcertificateresponsetypedef)
-  - [AssociateWirelessGatewayWithThingRequestRequestTypeDef](#associatewirelessgatewaywiththingrequestrequesttypedef)
-  - [CancelMulticastGroupSessionRequestRequestTypeDef](#cancelmulticastgroupsessionrequestrequesttypedef)
-  - [CertificateListTypeDef](#certificatelisttypedef)
-  - [CreateDestinationRequestRequestTypeDef](#createdestinationrequestrequesttypedef)
-  - [CreateDestinationResponseTypeDef](#createdestinationresponsetypedef)
-  - [CreateDeviceProfileRequestRequestTypeDef](#createdeviceprofilerequestrequesttypedef)
-  - [CreateDeviceProfileResponseTypeDef](#createdeviceprofileresponsetypedef)
-  - [CreateFuotaTaskRequestRequestTypeDef](#createfuotataskrequestrequesttypedef)
-  - [CreateFuotaTaskResponseTypeDef](#createfuotataskresponsetypedef)
-  - [CreateMulticastGroupRequestRequestTypeDef](#createmulticastgrouprequestrequesttypedef)
-  - [CreateMulticastGroupResponseTypeDef](#createmulticastgroupresponsetypedef)
-  - [CreateServiceProfileRequestRequestTypeDef](#createserviceprofilerequestrequesttypedef)
-  - [CreateServiceProfileResponseTypeDef](#createserviceprofileresponsetypedef)
-  - [CreateWirelessDeviceRequestRequestTypeDef](#createwirelessdevicerequestrequesttypedef)
-  - [CreateWirelessDeviceResponseTypeDef](#createwirelessdeviceresponsetypedef)
-  - [CreateWirelessGatewayRequestRequestTypeDef](#createwirelessgatewayrequestrequesttypedef)
-  - [CreateWirelessGatewayResponseTypeDef](#createwirelessgatewayresponsetypedef)
-  - [CreateWirelessGatewayTaskDefinitionRequestRequestTypeDef](#createwirelessgatewaytaskdefinitionrequestrequesttypedef)
-  - [CreateWirelessGatewayTaskDefinitionResponseTypeDef](#createwirelessgatewaytaskdefinitionresponsetypedef)
-  - [CreateWirelessGatewayTaskRequestRequestTypeDef](#createwirelessgatewaytaskrequestrequesttypedef)
-  - [CreateWirelessGatewayTaskResponseTypeDef](#createwirelessgatewaytaskresponsetypedef)
-  - [DeleteDestinationRequestRequestTypeDef](#deletedestinationrequestrequesttypedef)
-  - [DeleteDeviceProfileRequestRequestTypeDef](#deletedeviceprofilerequestrequesttypedef)
-  - [DeleteFuotaTaskRequestRequestTypeDef](#deletefuotataskrequestrequesttypedef)
-  - [DeleteMulticastGroupRequestRequestTypeDef](#deletemulticastgrouprequestrequesttypedef)
-  - [DeleteQueuedMessagesRequestRequestTypeDef](#deletequeuedmessagesrequestrequesttypedef)
-  - [DeleteServiceProfileRequestRequestTypeDef](#deleteserviceprofilerequestrequesttypedef)
-  - [DeleteWirelessDeviceRequestRequestTypeDef](#deletewirelessdevicerequestrequesttypedef)
-  - [DeleteWirelessGatewayRequestRequestTypeDef](#deletewirelessgatewayrequestrequesttypedef)
-  - [DeleteWirelessGatewayTaskDefinitionRequestRequestTypeDef](#deletewirelessgatewaytaskdefinitionrequestrequesttypedef)
-  - [DeleteWirelessGatewayTaskRequestRequestTypeDef](#deletewirelessgatewaytaskrequestrequesttypedef)
-  - [DestinationsTypeDef](#destinationstypedef)
-  - [DeviceProfileTypeDef](#deviceprofiletypedef)
-  - [DeviceRegistrationStateEventConfigurationTypeDef](#deviceregistrationstateeventconfigurationtypedef)
-  - [DisassociateAwsAccountFromPartnerAccountRequestRequestTypeDef](#disassociateawsaccountfrompartneraccountrequestrequesttypedef)
-  - [DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef](#disassociatemulticastgroupfromfuotataskrequestrequesttypedef)
-  - [DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef](#disassociatewirelessdevicefromfuotataskrequestrequesttypedef)
-  - [DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef](#disassociatewirelessdevicefrommulticastgrouprequestrequesttypedef)
-  - [DisassociateWirelessDeviceFromThingRequestRequestTypeDef](#disassociatewirelessdevicefromthingrequestrequesttypedef)
-  - [DisassociateWirelessGatewayFromCertificateRequestRequestTypeDef](#disassociatewirelessgatewayfromcertificaterequestrequesttypedef)
-  - [DisassociateWirelessGatewayFromThingRequestRequestTypeDef](#disassociatewirelessgatewayfromthingrequestrequesttypedef)
-  - [DownlinkQueueMessageTypeDef](#downlinkqueuemessagetypedef)
-  - [FPortsTypeDef](#fportstypedef)
-  - [FuotaTaskTypeDef](#fuotatasktypedef)
-  - [GetDestinationRequestRequestTypeDef](#getdestinationrequestrequesttypedef)
-  - [GetDestinationResponseTypeDef](#getdestinationresponsetypedef)
-  - [GetDeviceProfileRequestRequestTypeDef](#getdeviceprofilerequestrequesttypedef)
-  - [GetDeviceProfileResponseTypeDef](#getdeviceprofileresponsetypedef)
-  - [GetFuotaTaskRequestRequestTypeDef](#getfuotataskrequestrequesttypedef)
-  - [GetFuotaTaskResponseTypeDef](#getfuotataskresponsetypedef)
-  - [GetLogLevelsByResourceTypesResponseTypeDef](#getloglevelsbyresourcetypesresponsetypedef)
-  - [GetMulticastGroupRequestRequestTypeDef](#getmulticastgrouprequestrequesttypedef)
-  - [GetMulticastGroupResponseTypeDef](#getmulticastgroupresponsetypedef)
-  - [GetMulticastGroupSessionRequestRequestTypeDef](#getmulticastgroupsessionrequestrequesttypedef)
-  - [GetMulticastGroupSessionResponseTypeDef](#getmulticastgroupsessionresponsetypedef)
-  - [GetNetworkAnalyzerConfigurationRequestRequestTypeDef](#getnetworkanalyzerconfigurationrequestrequesttypedef)
-  - [GetNetworkAnalyzerConfigurationResponseTypeDef](#getnetworkanalyzerconfigurationresponsetypedef)
-  - [GetPartnerAccountRequestRequestTypeDef](#getpartneraccountrequestrequesttypedef)
-  - [GetPartnerAccountResponseTypeDef](#getpartneraccountresponsetypedef)
-  - [GetResourceEventConfigurationRequestRequestTypeDef](#getresourceeventconfigurationrequestrequesttypedef)
-  - [GetResourceEventConfigurationResponseTypeDef](#getresourceeventconfigurationresponsetypedef)
-  - [GetResourceLogLevelRequestRequestTypeDef](#getresourceloglevelrequestrequesttypedef)
-  - [GetResourceLogLevelResponseTypeDef](#getresourceloglevelresponsetypedef)
-  - [GetServiceEndpointRequestRequestTypeDef](#getserviceendpointrequestrequesttypedef)
-  - [GetServiceEndpointResponseTypeDef](#getserviceendpointresponsetypedef)
-  - [GetServiceProfileRequestRequestTypeDef](#getserviceprofilerequestrequesttypedef)
-  - [GetServiceProfileResponseTypeDef](#getserviceprofileresponsetypedef)
-  - [GetWirelessDeviceRequestRequestTypeDef](#getwirelessdevicerequestrequesttypedef)
-  - [GetWirelessDeviceResponseTypeDef](#getwirelessdeviceresponsetypedef)
-  - [GetWirelessDeviceStatisticsRequestRequestTypeDef](#getwirelessdevicestatisticsrequestrequesttypedef)
-  - [GetWirelessDeviceStatisticsResponseTypeDef](#getwirelessdevicestatisticsresponsetypedef)
-  - [GetWirelessGatewayCertificateRequestRequestTypeDef](#getwirelessgatewaycertificaterequestrequesttypedef)
-  - [GetWirelessGatewayCertificateResponseTypeDef](#getwirelessgatewaycertificateresponsetypedef)
-  - [GetWirelessGatewayFirmwareInformationRequestRequestTypeDef](#getwirelessgatewayfirmwareinformationrequestrequesttypedef)
-  - [GetWirelessGatewayFirmwareInformationResponseTypeDef](#getwirelessgatewayfirmwareinformationresponsetypedef)
-  - [GetWirelessGatewayRequestRequestTypeDef](#getwirelessgatewayrequestrequesttypedef)
-  - [GetWirelessGatewayResponseTypeDef](#getwirelessgatewayresponsetypedef)
-  - [GetWirelessGatewayStatisticsRequestRequestTypeDef](#getwirelessgatewaystatisticsrequestrequesttypedef)
-  - [GetWirelessGatewayStatisticsResponseTypeDef](#getwirelessgatewaystatisticsresponsetypedef)
-  - [GetWirelessGatewayTaskDefinitionRequestRequestTypeDef](#getwirelessgatewaytaskdefinitionrequestrequesttypedef)
-  - [GetWirelessGatewayTaskDefinitionResponseTypeDef](#getwirelessgatewaytaskdefinitionresponsetypedef)
-  - [GetWirelessGatewayTaskRequestRequestTypeDef](#getwirelessgatewaytaskrequestrequesttypedef)
-  - [GetWirelessGatewayTaskResponseTypeDef](#getwirelessgatewaytaskresponsetypedef)
-  - [ListDestinationsRequestRequestTypeDef](#listdestinationsrequestrequesttypedef)
-  - [ListDestinationsResponseTypeDef](#listdestinationsresponsetypedef)
-  - [ListDeviceProfilesRequestRequestTypeDef](#listdeviceprofilesrequestrequesttypedef)
-  - [ListDeviceProfilesResponseTypeDef](#listdeviceprofilesresponsetypedef)
-  - [ListFuotaTasksRequestRequestTypeDef](#listfuotatasksrequestrequesttypedef)
-  - [ListFuotaTasksResponseTypeDef](#listfuotatasksresponsetypedef)
-  - [ListMulticastGroupsByFuotaTaskRequestRequestTypeDef](#listmulticastgroupsbyfuotataskrequestrequesttypedef)
-  - [ListMulticastGroupsByFuotaTaskResponseTypeDef](#listmulticastgroupsbyfuotataskresponsetypedef)
-  - [ListMulticastGroupsRequestRequestTypeDef](#listmulticastgroupsrequestrequesttypedef)
-  - [ListMulticastGroupsResponseTypeDef](#listmulticastgroupsresponsetypedef)
-  - [ListPartnerAccountsRequestRequestTypeDef](#listpartneraccountsrequestrequesttypedef)
-  - [ListPartnerAccountsResponseTypeDef](#listpartneraccountsresponsetypedef)
-  - [ListQueuedMessagesRequestRequestTypeDef](#listqueuedmessagesrequestrequesttypedef)
-  - [ListQueuedMessagesResponseTypeDef](#listqueuedmessagesresponsetypedef)
-  - [ListServiceProfilesRequestRequestTypeDef](#listserviceprofilesrequestrequesttypedef)
-  - [ListServiceProfilesResponseTypeDef](#listserviceprofilesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListWirelessDevicesRequestRequestTypeDef](#listwirelessdevicesrequestrequesttypedef)
-  - [ListWirelessDevicesResponseTypeDef](#listwirelessdevicesresponsetypedef)
-  - [ListWirelessGatewayTaskDefinitionsRequestRequestTypeDef](#listwirelessgatewaytaskdefinitionsrequestrequesttypedef)
-  - [ListWirelessGatewayTaskDefinitionsResponseTypeDef](#listwirelessgatewaytaskdefinitionsresponsetypedef)
-  - [ListWirelessGatewaysRequestRequestTypeDef](#listwirelessgatewaysrequestrequesttypedef)
-  - [ListWirelessGatewaysResponseTypeDef](#listwirelessgatewaysresponsetypedef)
-  - [LoRaWANDeviceMetadataTypeDef](#lorawandevicemetadatatypedef)
-  - [LoRaWANDeviceProfileTypeDef](#lorawandeviceprofiletypedef)
-  - [LoRaWANDeviceTypeDef](#lorawandevicetypedef)
-  - [LoRaWANFuotaTaskGetInfoTypeDef](#lorawanfuotataskgetinfotypedef)
-  - [LoRaWANFuotaTaskTypeDef](#lorawanfuotatasktypedef)
-  - [LoRaWANGatewayCurrentVersionTypeDef](#lorawangatewaycurrentversiontypedef)
-  - [LoRaWANGatewayMetadataTypeDef](#lorawangatewaymetadatatypedef)
-  - [LoRaWANGatewayTypeDef](#lorawangatewaytypedef)
-  - [LoRaWANGatewayVersionTypeDef](#lorawangatewayversiontypedef)
-  - [LoRaWANGetServiceProfileInfoTypeDef](#lorawangetserviceprofileinfotypedef)
-  - [LoRaWANListDeviceTypeDef](#lorawanlistdevicetypedef)
-  - [LoRaWANMulticastGetTypeDef](#lorawanmulticastgettypedef)
-  - [LoRaWANMulticastMetadataTypeDef](#lorawanmulticastmetadatatypedef)
-  - [LoRaWANMulticastSessionTypeDef](#lorawanmulticastsessiontypedef)
-  - [LoRaWANMulticastTypeDef](#lorawanmulticasttypedef)
-  - [LoRaWANSendDataToDeviceTypeDef](#lorawansenddatatodevicetypedef)
-  - [LoRaWANServiceProfileTypeDef](#lorawanserviceprofiletypedef)
-  - [LoRaWANStartFuotaTaskTypeDef](#lorawanstartfuotatasktypedef)
-  - [LoRaWANUpdateDeviceTypeDef](#lorawanupdatedevicetypedef)
-  - [LoRaWANUpdateGatewayTaskCreateTypeDef](#lorawanupdategatewaytaskcreatetypedef)
-  - [LoRaWANUpdateGatewayTaskEntryTypeDef](#lorawanupdategatewaytaskentrytypedef)
-  - [MulticastGroupByFuotaTaskTypeDef](#multicastgroupbyfuotatasktypedef)
-  - [MulticastGroupTypeDef](#multicastgrouptypedef)
-  - [MulticastWirelessMetadataTypeDef](#multicastwirelessmetadatatypedef)
-  - [OtaaV1_0_xTypeDef](#otaav1_0_xtypedef)
-  - [OtaaV1_1TypeDef](#otaav1_1typedef)
-  - [ProximityEventConfigurationTypeDef](#proximityeventconfigurationtypedef)
-  - [PutResourceLogLevelRequestRequestTypeDef](#putresourceloglevelrequestrequesttypedef)
-  - [ResetResourceLogLevelRequestRequestTypeDef](#resetresourceloglevelrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendDataToMulticastGroupRequestRequestTypeDef](#senddatatomulticastgrouprequestrequesttypedef)
-  - [SendDataToMulticastGroupResponseTypeDef](#senddatatomulticastgroupresponsetypedef)
-  - [SendDataToWirelessDeviceRequestRequestTypeDef](#senddatatowirelessdevicerequestrequesttypedef)
-  - [SendDataToWirelessDeviceResponseTypeDef](#senddatatowirelessdeviceresponsetypedef)
-  - [ServiceProfileTypeDef](#serviceprofiletypedef)
-  - [SessionKeysAbpV1_0_xTypeDef](#sessionkeysabpv1_0_xtypedef)
-  - [SessionKeysAbpV1_1TypeDef](#sessionkeysabpv1_1typedef)
-  - [SidewalkAccountInfoTypeDef](#sidewalkaccountinfotypedef)
-  - [SidewalkAccountInfoWithFingerprintTypeDef](#sidewalkaccountinfowithfingerprinttypedef)
-  - [SidewalkDeviceMetadataTypeDef](#sidewalkdevicemetadatatypedef)
-  - [SidewalkDeviceTypeDef](#sidewalkdevicetypedef)
-  - [SidewalkEventNotificationConfigurationsTypeDef](#sidewalkeventnotificationconfigurationstypedef)
-  - [SidewalkListDeviceTypeDef](#sidewalklistdevicetypedef)
-  - [SidewalkSendDataToDeviceTypeDef](#sidewalksenddatatodevicetypedef)
-  - [SidewalkUpdateAccountTypeDef](#sidewalkupdateaccounttypedef)
-  - [StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef](#startbulkassociatewirelessdevicewithmulticastgrouprequestrequesttypedef)
-  - [StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef](#startbulkdisassociatewirelessdevicefrommulticastgrouprequestrequesttypedef)
-  - [StartFuotaTaskRequestRequestTypeDef](#startfuotataskrequestrequesttypedef)
-  - [StartMulticastGroupSessionRequestRequestTypeDef](#startmulticastgroupsessionrequestrequesttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TestWirelessDeviceRequestRequestTypeDef](#testwirelessdevicerequestrequesttypedef)
-  - [TestWirelessDeviceResponseTypeDef](#testwirelessdeviceresponsetypedef)
-  - [TraceContentTypeDef](#tracecontenttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDestinationRequestRequestTypeDef](#updatedestinationrequestrequesttypedef)
-  - [UpdateFuotaTaskRequestRequestTypeDef](#updatefuotataskrequestrequesttypedef)
-  - [UpdateLogLevelsByResourceTypesRequestRequestTypeDef](#updateloglevelsbyresourcetypesrequestrequesttypedef)
-  - [UpdateMulticastGroupRequestRequestTypeDef](#updatemulticastgrouprequestrequesttypedef)
-  - [UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef](#updatenetworkanalyzerconfigurationrequestrequesttypedef)
-  - [UpdatePartnerAccountRequestRequestTypeDef](#updatepartneraccountrequestrequesttypedef)
-  - [UpdateResourceEventConfigurationRequestRequestTypeDef](#updateresourceeventconfigurationrequestrequesttypedef)
-  - [UpdateWirelessDeviceRequestRequestTypeDef](#updatewirelessdevicerequestrequesttypedef)
-  - [UpdateWirelessGatewayRequestRequestTypeDef](#updatewirelessgatewayrequestrequesttypedef)
-  - [UpdateWirelessGatewayTaskCreateTypeDef](#updatewirelessgatewaytaskcreatetypedef)
-  - [UpdateWirelessGatewayTaskEntryTypeDef](#updatewirelessgatewaytaskentrytypedef)
-  - [WirelessDeviceEventLogOptionTypeDef](#wirelessdeviceeventlogoptiontypedef)
-  - [WirelessDeviceLogOptionTypeDef](#wirelessdevicelogoptiontypedef)
-  - [WirelessDeviceStatisticsTypeDef](#wirelessdevicestatisticstypedef)
-  - [WirelessGatewayEventLogOptionTypeDef](#wirelessgatewayeventlogoptiontypedef)
-  - [WirelessGatewayLogOptionTypeDef](#wirelessgatewaylogoptiontypedef)
-  - [WirelessGatewayStatisticsTypeDef](#wirelessgatewaystatisticstypedef)
-  - [WirelessMetadataTypeDef](#wirelessmetadatatypedef)
-
-<a id="abpv1_0_xtypedef"></a>
+    Auto-generated documentation for [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
+    type annotations stubs module [mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 ## AbpV1_0_xTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AbpV1_0_xTypeDef
+
+def get_value() -> AbpV1_0_xTypeDef:
+    return {
+        "DevAddr": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AbpV1_0_xTypeDef(TypedDict):
+    DevAddr: NotRequired[str],
+    SessionKeys: NotRequired[SessionKeysAbpV1_0_xTypeDef],  # (1)
+```
 
-- `DevAddr`: `str`
-- `SessionKeys`:
-  [SessionKeysAbpV1_0_xTypeDef](./type_defs.md#sessionkeysabpv1_0_xtypedef)
-
-<a id="abpv1_1typedef"></a>
-
+1. See [:material-code-braces: SessionKeysAbpV1_0_xTypeDef](./type_defs.md#sessionkeysabpv1_0_xtypedef) 
 ## AbpV1_1TypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AbpV1_1TypeDef
+
+def get_value() -> AbpV1_1TypeDef:
+    return {
+        "DevAddr": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AbpV1_1TypeDef(TypedDict):
+    DevAddr: NotRequired[str],
+    SessionKeys: NotRequired[SessionKeysAbpV1_1TypeDef],  # (1)
+```
 
-- `DevAddr`: `str`
-- `SessionKeys`:
-  [SessionKeysAbpV1_1TypeDef](./type_defs.md#sessionkeysabpv1_1typedef)
-
-<a id="associateawsaccountwithpartneraccountrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SessionKeysAbpV1_1TypeDef](./type_defs.md#sessionkeysabpv1_1typedef) 
 ## AssociateAwsAccountWithPartnerAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AssociateAwsAccountWithPartnerAccountRequestRequestTypeDef
+
+def get_value() -> AssociateAwsAccountWithPartnerAccountRequestRequestTypeDef:
+    return {
+        "Sidewalk": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateAwsAccountWithPartnerAccountRequestRequestTypeDef(TypedDict):
+    Sidewalk: SidewalkAccountInfoTypeDef,  # (1)
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Sidewalk`:
-  [SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef)
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="associateawsaccountwithpartneraccountresponsetypedef"></a>
-
+1. See [:material-code-braces: SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AssociateAwsAccountWithPartnerAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AssociateAwsAccountWithPartnerAccountResponseTypeDef
+
+def get_value() -> AssociateAwsAccountWithPartnerAccountResponseTypeDef:
+    return {
+        "Sidewalk": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateAwsAccountWithPartnerAccountResponseTypeDef(TypedDict):
+    Sidewalk: SidewalkAccountInfoTypeDef,  # (1)
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Sidewalk`:
-  [SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef)
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associatemulticastgroupwithfuotataskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SidewalkAccountInfoTypeDef](./type_defs.md#sidewalkaccountinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef
+
+def get_value() -> AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "MulticastGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `MulticastGroupId`: `str`
-
-<a id="associatewirelessdevicewithfuotataskrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateMulticastGroupWithFuotaTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+    MulticastGroupId: str,
+```
 
 ## AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef
+
+def get_value() -> AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "WirelessDeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `WirelessDeviceId`: `str`
-
-<a id="associatewirelessdevicewithmulticastgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateWirelessDeviceWithFuotaTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+    WirelessDeviceId: str,
+```
 
 ## AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
+
+def get_value() -> AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "WirelessDeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `WirelessDeviceId`: `str`
-
-<a id="associatewirelessdevicewiththingrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+    WirelessDeviceId: str,
+```
 
 ## AssociateWirelessDeviceWithThingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AssociateWirelessDeviceWithThingRequestRequestTypeDef
+
+def get_value() -> AssociateWirelessDeviceWithThingRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "ThingArn": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `ThingArn`: `str`
-
-<a id="associatewirelessgatewaywithcertificaterequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateWirelessDeviceWithThingRequestRequestTypeDef(TypedDict):
+    Id: str,
+    ThingArn: str,
+```
 
 ## AssociateWirelessGatewayWithCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AssociateWirelessGatewayWithCertificateRequestRequestTypeDef
+
+def get_value() -> AssociateWirelessGatewayWithCertificateRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "IotCertificateId": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `IotCertificateId`: `str`
-
-<a id="associatewirelessgatewaywithcertificateresponsetypedef"></a>
+```python title="Definition"
+class AssociateWirelessGatewayWithCertificateRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IotCertificateId: str,
+```
 
 ## AssociateWirelessGatewayWithCertificateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AssociateWirelessGatewayWithCertificateResponseTypeDef
+
+def get_value() -> AssociateWirelessGatewayWithCertificateResponseTypeDef:
+    return {
+        "IotCertificateId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateWirelessGatewayWithCertificateResponseTypeDef(TypedDict):
+    IotCertificateId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `IotCertificateId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associatewirelessgatewaywiththingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateWirelessGatewayWithThingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import AssociateWirelessGatewayWithThingRequestRequestTypeDef
+
+def get_value() -> AssociateWirelessGatewayWithThingRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "ThingArn": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `ThingArn`: `str`
-
-<a id="cancelmulticastgroupsessionrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateWirelessGatewayWithThingRequestRequestTypeDef(TypedDict):
+    Id: str,
+    ThingArn: str,
+```
 
 ## CancelMulticastGroupSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CancelMulticastGroupSessionRequestRequestTypeDef
+
+def get_value() -> CancelMulticastGroupSessionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="certificatelisttypedef"></a>
+```python title="Definition"
+class CancelMulticastGroupSessionRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## CertificateListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CertificateListTypeDef
+
+def get_value() -> CertificateListTypeDef:
+    return {
+        "SigningAlg": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CertificateListTypeDef(TypedDict):
+    SigningAlg: SigningAlgType,  # (1)
+    Value: str,
+```
 
-- `SigningAlg`: [SigningAlgType](./literals.md#signingalgtype)
-- `Value`: `str`
-
-<a id="createdestinationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SigningAlgType](./literals.md#signingalgtype) 
 ## CreateDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateDestinationRequestRequestTypeDef
+
+def get_value() -> CreateDestinationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ExpressionType": ...,
+        "Expression": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDestinationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ExpressionType: ExpressionTypeType,  # (1)
+    Expression: str,
+    RoleArn: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ClientRequestToken: NotRequired[str],
+```
 
-- `Name`: `str`
-- `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
-- `Expression`: `str`
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientRequestToken`: `str`
-
-<a id="createdestinationresponsetypedef"></a>
-
+1. See [:material-code-brackets: ExpressionTypeType](./literals.md#expressiontypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDestinationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateDestinationResponseTypeDef
+
+def get_value() -> CreateDestinationResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDestinationResponseTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdeviceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDeviceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateDeviceProfileRequestRequestTypeDef
+
+def get_value() -> CreateDeviceProfileRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateDeviceProfileRequestRequestTypeDef(TypedDict):
+    Name: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANDeviceProfileTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ClientRequestToken: NotRequired[str],
+```
 
-- `Name`: `str`
-- `LoRaWAN`:
-  [LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientRequestToken`: `str`
-
-<a id="createdeviceprofileresponsetypedef"></a>
-
+1. See [:material-code-braces: LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDeviceProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateDeviceProfileResponseTypeDef
+
+def get_value() -> CreateDeviceProfileResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeviceProfileResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfuotataskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateFuotaTaskRequestRequestTypeDef
+
+def get_value() -> CreateFuotaTaskRequestRequestTypeDef:
+    return {
+        "FirmwareUpdateImage": ...,
+        "FirmwareUpdateRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFuotaTaskRequestRequestTypeDef(TypedDict):
+    FirmwareUpdateImage: str,
+    FirmwareUpdateRole: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANFuotaTaskTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `FirmwareUpdateImage`: `str`
-- `FirmwareUpdateRole`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `ClientRequestToken`: `str`
-- `LoRaWAN`: [LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createfuotataskresponsetypedef"></a>
-
+1. See [:material-code-braces: LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateFuotaTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateFuotaTaskResponseTypeDef
+
+def get_value() -> CreateFuotaTaskResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFuotaTaskResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmulticastgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMulticastGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateMulticastGroupRequestRequestTypeDef
+
+def get_value() -> CreateMulticastGroupRequestRequestTypeDef:
+    return {
+        "LoRaWAN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMulticastGroupRequestRequestTypeDef(TypedDict):
+    LoRaWAN: LoRaWANMulticastTypeDef,  # (1)
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `LoRaWAN`: [LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef)
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createmulticastgroupresponsetypedef"></a>
-
+1. See [:material-code-braces: LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateMulticastGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateMulticastGroupResponseTypeDef
+
+def get_value() -> CreateMulticastGroupResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMulticastGroupResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createserviceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateServiceProfileRequestRequestTypeDef
+
+def get_value() -> CreateServiceProfileRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateServiceProfileRequestRequestTypeDef(TypedDict):
+    Name: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANServiceProfileTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ClientRequestToken: NotRequired[str],
+```
 
-- `Name`: `str`
-- `LoRaWAN`:
-  [LoRaWANServiceProfileTypeDef](./type_defs.md#lorawanserviceprofiletypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientRequestToken`: `str`
-
-<a id="createserviceprofileresponsetypedef"></a>
-
+1. See [:material-code-braces: LoRaWANServiceProfileTypeDef](./type_defs.md#lorawanserviceprofiletypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateServiceProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateServiceProfileResponseTypeDef
+
+def get_value() -> CreateServiceProfileResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceProfileResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createwirelessdevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWirelessDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateWirelessDeviceRequestRequestTypeDef
+
+def get_value() -> CreateWirelessDeviceRequestRequestTypeDef:
+    return {
+        "Type": ...,
+        "DestinationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWirelessDeviceRequestRequestTypeDef(TypedDict):
+    Type: WirelessDeviceTypeType,  # (1)
+    DestinationName: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANDeviceTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
-- `DestinationName`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `ClientRequestToken`: `str`
-- `LoRaWAN`: [LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createwirelessdeviceresponsetypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
+2. See [:material-code-braces: LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateWirelessDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateWirelessDeviceResponseTypeDef
+
+def get_value() -> CreateWirelessDeviceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWirelessDeviceResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createwirelessgatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWirelessGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayRequestRequestTypeDef
+
+def get_value() -> CreateWirelessGatewayRequestRequestTypeDef:
+    return {
+        "LoRaWAN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWirelessGatewayRequestRequestTypeDef(TypedDict):
+    LoRaWAN: LoRaWANGatewayTypeDef,  # (1)
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    ClientRequestToken: NotRequired[str],
+```
 
-- `LoRaWAN`: [LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef)
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientRequestToken`: `str`
-
-<a id="createwirelessgatewayresponsetypedef"></a>
-
+1. See [:material-code-braces: LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateWirelessGatewayResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayResponseTypeDef
+
+def get_value() -> CreateWirelessGatewayResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWirelessGatewayResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createwirelessgatewaytaskdefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWirelessGatewayTaskDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskDefinitionRequestRequestTypeDef
+
+def get_value() -> CreateWirelessGatewayTaskDefinitionRequestRequestTypeDef:
+    return {
+        "AutoCreateTasks": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWirelessGatewayTaskDefinitionRequestRequestTypeDef(TypedDict):
+    AutoCreateTasks: bool,
+    Name: NotRequired[str],
+    Update: NotRequired[UpdateWirelessGatewayTaskCreateTypeDef],  # (1)
+    ClientRequestToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `AutoCreateTasks`: `bool`
-
-Optional fields:
-
-- `Name`: `str`
-- `Update`:
-  [UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef)
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createwirelessgatewaytaskdefinitionresponsetypedef"></a>
-
+1. See [:material-code-braces: UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateWirelessGatewayTaskDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskDefinitionResponseTypeDef
+
+def get_value() -> CreateWirelessGatewayTaskDefinitionResponseTypeDef:
+    return {
+        "Id": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWirelessGatewayTaskDefinitionResponseTypeDef(TypedDict):
+    Id: str,
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createwirelessgatewaytaskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWirelessGatewayTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskRequestRequestTypeDef
+
+def get_value() -> CreateWirelessGatewayTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "WirelessGatewayTaskDefinitionId": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `WirelessGatewayTaskDefinitionId`: `str`
-
-<a id="createwirelessgatewaytaskresponsetypedef"></a>
+```python title="Definition"
+class CreateWirelessGatewayTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+    WirelessGatewayTaskDefinitionId: str,
+```
 
 ## CreateWirelessGatewayTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import CreateWirelessGatewayTaskResponseTypeDef
+
+def get_value() -> CreateWirelessGatewayTaskResponseTypeDef:
+    return {
+        "WirelessGatewayTaskDefinitionId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWirelessGatewayTaskResponseTypeDef(TypedDict):
+    WirelessGatewayTaskDefinitionId: str,
+    Status: WirelessGatewayTaskStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WirelessGatewayTaskDefinitionId`: `str`
-- `Status`:
-  [WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedestinationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteDestinationRequestRequestTypeDef
+
+def get_value() -> DeleteDestinationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletedeviceprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDestinationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteDeviceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteDeviceProfileRequestRequestTypeDef
+
+def get_value() -> DeleteDeviceProfileRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletefuotataskrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDeviceProfileRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteFuotaTaskRequestRequestTypeDef
+
+def get_value() -> DeleteFuotaTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletemulticastgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFuotaTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteMulticastGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteMulticastGroupRequestRequestTypeDef
+
+def get_value() -> DeleteMulticastGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletequeuedmessagesrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteMulticastGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteQueuedMessagesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteQueuedMessagesRequestRequestTypeDef
+
+def get_value() -> DeleteQueuedMessagesRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "MessageId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteQueuedMessagesRequestRequestTypeDef(TypedDict):
+    Id: str,
+    MessageId: str,
+    WirelessDeviceType: NotRequired[WirelessDeviceTypeType],  # (1)
+```
 
-- `Id`: `str`
-- `MessageId`: `str`
-
-Optional fields:
-
-- `WirelessDeviceType`:
-  [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
-
-<a id="deleteserviceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
 ## DeleteServiceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteServiceProfileRequestRequestTypeDef
+
+def get_value() -> DeleteServiceProfileRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletewirelessdevicerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteServiceProfileRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteWirelessDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteWirelessDeviceRequestRequestTypeDef
+
+def get_value() -> DeleteWirelessDeviceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletewirelessgatewayrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteWirelessDeviceRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteWirelessGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteWirelessGatewayRequestRequestTypeDef
+
+def get_value() -> DeleteWirelessGatewayRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletewirelessgatewaytaskdefinitionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteWirelessGatewayRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteWirelessGatewayTaskDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteWirelessGatewayTaskDefinitionRequestRequestTypeDef
+
+def get_value() -> DeleteWirelessGatewayTaskDefinitionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletewirelessgatewaytaskrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteWirelessGatewayTaskDefinitionRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteWirelessGatewayTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeleteWirelessGatewayTaskRequestRequestTypeDef
+
+def get_value() -> DeleteWirelessGatewayTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="destinationstypedef"></a>
+```python title="Definition"
+class DeleteWirelessGatewayTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DestinationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DestinationsTypeDef
+
+def get_value() -> DestinationsTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DestinationsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    ExpressionType: NotRequired[ExpressionTypeType],  # (1)
+    Expression: NotRequired[str],
+    Description: NotRequired[str],
+    RoleArn: NotRequired[str],
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
-- `Expression`: `str`
-- `Description`: `str`
-- `RoleArn`: `str`
-
-<a id="deviceprofiletypedef"></a>
-
+1. See [:material-code-brackets: ExpressionTypeType](./literals.md#expressiontypetype) 
 ## DeviceProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeviceProfileTypeDef
+
+def get_value() -> DeviceProfileTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Name`: `str`
-- `Id`: `str`
-
-<a id="deviceregistrationstateeventconfigurationtypedef"></a>
+```python title="Definition"
+class DeviceProfileTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Id: NotRequired[str],
+```
 
 ## DeviceRegistrationStateEventConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DeviceRegistrationStateEventConfigurationTypeDef
+
+def get_value() -> DeviceRegistrationStateEventConfigurationTypeDef:
+    return {
+        "Sidewalk": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceRegistrationStateEventConfigurationTypeDef(TypedDict):
+    Sidewalk: NotRequired[SidewalkEventNotificationConfigurationsTypeDef],  # (1)
+```
 
-- `Sidewalk`:
-  [SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef)
-
-<a id="disassociateawsaccountfrompartneraccountrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef) 
 ## DisassociateAwsAccountFromPartnerAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DisassociateAwsAccountFromPartnerAccountRequestRequestTypeDef
+
+def get_value() -> DisassociateAwsAccountFromPartnerAccountRequestRequestTypeDef:
+    return {
+        "PartnerAccountId": ...,
+        "PartnerType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateAwsAccountFromPartnerAccountRequestRequestTypeDef(TypedDict):
+    PartnerAccountId: str,
+    PartnerType: PartnerTypeType,  # (1)
+```
 
-- `PartnerAccountId`: `str`
-- `PartnerType`: `Literal['Sidewalk']` (see
-  [PartnerTypeType](./literals.md#partnertypetype))
-
-<a id="disassociatemulticastgroupfromfuotataskrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PartnerTypeType](./literals.md#partnertypetype) 
 ## DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef
+
+def get_value() -> DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "MulticastGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `MulticastGroupId`: `str`
-
-<a id="disassociatewirelessdevicefromfuotataskrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateMulticastGroupFromFuotaTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+    MulticastGroupId: str,
+```
 
 ## DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef
+
+def get_value() -> DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "WirelessDeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `WirelessDeviceId`: `str`
-
-<a id="disassociatewirelessdevicefrommulticastgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateWirelessDeviceFromFuotaTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+    WirelessDeviceId: str,
+```
 
 ## DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
+
+def get_value() -> DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "WirelessDeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `WirelessDeviceId`: `str`
-
-<a id="disassociatewirelessdevicefromthingrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+    WirelessDeviceId: str,
+```
 
 ## DisassociateWirelessDeviceFromThingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DisassociateWirelessDeviceFromThingRequestRequestTypeDef
+
+def get_value() -> DisassociateWirelessDeviceFromThingRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="disassociatewirelessgatewayfromcertificaterequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateWirelessDeviceFromThingRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DisassociateWirelessGatewayFromCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DisassociateWirelessGatewayFromCertificateRequestRequestTypeDef
+
+def get_value() -> DisassociateWirelessGatewayFromCertificateRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="disassociatewirelessgatewayfromthingrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateWirelessGatewayFromCertificateRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DisassociateWirelessGatewayFromThingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DisassociateWirelessGatewayFromThingRequestRequestTypeDef
+
+def get_value() -> DisassociateWirelessGatewayFromThingRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="downlinkqueuemessagetypedef"></a>
+```python title="Definition"
+class DisassociateWirelessGatewayFromThingRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DownlinkQueueMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import DownlinkQueueMessageTypeDef
+
+def get_value() -> DownlinkQueueMessageTypeDef:
+    return {
+        "MessageId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DownlinkQueueMessageTypeDef(TypedDict):
+    MessageId: NotRequired[str],
+    TransmitMode: NotRequired[int],
+    ReceivedAt: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANSendDataToDeviceTypeDef],  # (1)
+```
 
-- `MessageId`: `str`
-- `TransmitMode`: `int`
-- `ReceivedAt`: `str`
-- `LoRaWAN`:
-  [LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef)
-
-<a id="fportstypedef"></a>
-
+1. See [:material-code-braces: LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef) 
 ## FPortsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import FPortsTypeDef
+
+def get_value() -> FPortsTypeDef:
+    return {
+        "Fuota": ...,
+    }
 ```
 
-Optional fields:
-
-- `Fuota`: `int`
-- `Multicast`: `int`
-- `ClockSync`: `int`
-
-<a id="fuotatasktypedef"></a>
+```python title="Definition"
+class FPortsTypeDef(TypedDict):
+    Fuota: NotRequired[int],
+    Multicast: NotRequired[int],
+    ClockSync: NotRequired[int],
+```
 
 ## FuotaTaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import FuotaTaskTypeDef
+
+def get_value() -> FuotaTaskTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="getdestinationrequestrequesttypedef"></a>
+```python title="Definition"
+class FuotaTaskTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## GetDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetDestinationRequestRequestTypeDef
+
+def get_value() -> GetDestinationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getdestinationresponsetypedef"></a>
+```python title="Definition"
+class GetDestinationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetDestinationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetDestinationResponseTypeDef
+
+def get_value() -> GetDestinationResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "Expression": ...,
+        "ExpressionType": ...,
+        "Description": ...,
+        "RoleArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDestinationResponseTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    Expression: str,
+    ExpressionType: ExpressionTypeType,  # (1)
+    Description: str,
+    RoleArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `Expression`: `str`
-- `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
-- `Description`: `str`
-- `RoleArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeviceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ExpressionTypeType](./literals.md#expressiontypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeviceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetDeviceProfileRequestRequestTypeDef
+
+def get_value() -> GetDeviceProfileRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getdeviceprofileresponsetypedef"></a>
+```python title="Definition"
+class GetDeviceProfileRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetDeviceProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetDeviceProfileResponseTypeDef
+
+def get_value() -> GetDeviceProfileResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "Id": ...,
+        "LoRaWAN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeviceProfileResponseTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    Id: str,
+    LoRaWAN: LoRaWANDeviceProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `Id`: `str`
-- `LoRaWAN`:
-  [LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfuotataskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANDeviceProfileTypeDef](./type_defs.md#lorawandeviceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetFuotaTaskRequestRequestTypeDef
+
+def get_value() -> GetFuotaTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getfuotataskresponsetypedef"></a>
+```python title="Definition"
+class GetFuotaTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetFuotaTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetFuotaTaskResponseTypeDef
+
+def get_value() -> GetFuotaTaskResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "Status": ...,
+        "Name": ...,
+        "Description": ...,
+        "LoRaWAN": ...,
+        "FirmwareUpdateImage": ...,
+        "FirmwareUpdateRole": ...,
+        "CreatedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFuotaTaskResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    Status: FuotaTaskStatusType,  # (1)
+    Name: str,
+    Description: str,
+    LoRaWAN: LoRaWANFuotaTaskGetInfoTypeDef,  # (2)
+    FirmwareUpdateImage: str,
+    FirmwareUpdateRole: str,
+    CreatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `Status`: [FuotaTaskStatusType](./literals.md#fuotataskstatustype)
-- `Name`: `str`
-- `Description`: `str`
-- `LoRaWAN`:
-  [LoRaWANFuotaTaskGetInfoTypeDef](./type_defs.md#lorawanfuotataskgetinfotypedef)
-- `FirmwareUpdateImage`: `str`
-- `FirmwareUpdateRole`: `str`
-- `CreatedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getloglevelsbyresourcetypesresponsetypedef"></a>
-
+1. See [:material-code-brackets: FuotaTaskStatusType](./literals.md#fuotataskstatustype) 
+2. See [:material-code-braces: LoRaWANFuotaTaskGetInfoTypeDef](./type_defs.md#lorawanfuotataskgetinfotypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLogLevelsByResourceTypesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetLogLevelsByResourceTypesResponseTypeDef
+
+def get_value() -> GetLogLevelsByResourceTypesResponseTypeDef:
+    return {
+        "DefaultLogLevel": ...,
+        "WirelessGatewayLogOptions": ...,
+        "WirelessDeviceLogOptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLogLevelsByResourceTypesResponseTypeDef(TypedDict):
+    DefaultLogLevel: LogLevelType,  # (1)
+    WirelessGatewayLogOptions: List[WirelessGatewayLogOptionTypeDef],  # (2)
+    WirelessDeviceLogOptions: List[WirelessDeviceLogOptionTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
-- `WirelessGatewayLogOptions`:
-  `List`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
-- `WirelessDeviceLogOptions`:
-  `List`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmulticastgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+2. See [:material-code-braces: WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef) 
+3. See [:material-code-braces: WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMulticastGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetMulticastGroupRequestRequestTypeDef
+
+def get_value() -> GetMulticastGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getmulticastgroupresponsetypedef"></a>
+```python title="Definition"
+class GetMulticastGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetMulticastGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetMulticastGroupResponseTypeDef
+
+def get_value() -> GetMulticastGroupResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "Name": ...,
+        "Description": ...,
+        "Status": ...,
+        "LoRaWAN": ...,
+        "CreatedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMulticastGroupResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    Name: str,
+    Description: str,
+    Status: str,
+    LoRaWAN: LoRaWANMulticastGetTypeDef,  # (1)
+    CreatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Status`: `str`
-- `LoRaWAN`:
-  [LoRaWANMulticastGetTypeDef](./type_defs.md#lorawanmulticastgettypedef)
-- `CreatedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmulticastgroupsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANMulticastGetTypeDef](./type_defs.md#lorawanmulticastgettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMulticastGroupSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetMulticastGroupSessionRequestRequestTypeDef
+
+def get_value() -> GetMulticastGroupSessionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getmulticastgroupsessionresponsetypedef"></a>
+```python title="Definition"
+class GetMulticastGroupSessionRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetMulticastGroupSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetMulticastGroupSessionResponseTypeDef
+
+def get_value() -> GetMulticastGroupSessionResponseTypeDef:
+    return {
+        "LoRaWAN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMulticastGroupSessionResponseTypeDef(TypedDict):
+    LoRaWAN: LoRaWANMulticastSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LoRaWAN`:
-  [LoRaWANMulticastSessionTypeDef](./type_defs.md#lorawanmulticastsessiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getnetworkanalyzerconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANMulticastSessionTypeDef](./type_defs.md#lorawanmulticastsessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetNetworkAnalyzerConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetNetworkAnalyzerConfigurationRequestRequestTypeDef
+
+def get_value() -> GetNetworkAnalyzerConfigurationRequestRequestTypeDef:
+    return {
+        "ConfigurationName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationName`: `str`
-
-<a id="getnetworkanalyzerconfigurationresponsetypedef"></a>
+```python title="Definition"
+class GetNetworkAnalyzerConfigurationRequestRequestTypeDef(TypedDict):
+    ConfigurationName: str,
+```
 
 ## GetNetworkAnalyzerConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetNetworkAnalyzerConfigurationResponseTypeDef
+
+def get_value() -> GetNetworkAnalyzerConfigurationResponseTypeDef:
+    return {
+        "TraceContent": ...,
+        "WirelessDevices": ...,
+        "WirelessGateways": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetNetworkAnalyzerConfigurationResponseTypeDef(TypedDict):
+    TraceContent: TraceContentTypeDef,  # (1)
+    WirelessDevices: List[str],
+    WirelessGateways: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TraceContent`: [TraceContentTypeDef](./type_defs.md#tracecontenttypedef)
-- `WirelessDevices`: `List`\[`str`\]
-- `WirelessGateways`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpartneraccountrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TraceContentTypeDef](./type_defs.md#tracecontenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPartnerAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetPartnerAccountRequestRequestTypeDef
+
+def get_value() -> GetPartnerAccountRequestRequestTypeDef:
+    return {
+        "PartnerAccountId": ...,
+        "PartnerType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPartnerAccountRequestRequestTypeDef(TypedDict):
+    PartnerAccountId: str,
+    PartnerType: PartnerTypeType,  # (1)
+```
 
-- `PartnerAccountId`: `str`
-- `PartnerType`: `Literal['Sidewalk']` (see
-  [PartnerTypeType](./literals.md#partnertypetype))
-
-<a id="getpartneraccountresponsetypedef"></a>
-
+1. See [:material-code-brackets: PartnerTypeType](./literals.md#partnertypetype) 
 ## GetPartnerAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetPartnerAccountResponseTypeDef
+
+def get_value() -> GetPartnerAccountResponseTypeDef:
+    return {
+        "Sidewalk": ...,
+        "AccountLinked": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPartnerAccountResponseTypeDef(TypedDict):
+    Sidewalk: SidewalkAccountInfoWithFingerprintTypeDef,  # (1)
+    AccountLinked: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Sidewalk`:
-  [SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)
-- `AccountLinked`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourceeventconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourceEventConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetResourceEventConfigurationRequestRequestTypeDef
+
+def get_value() -> GetResourceEventConfigurationRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+        "IdentifierType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceEventConfigurationRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+    IdentifierType: IdentifierTypeType,  # (1)
+    PartnerType: NotRequired[EventNotificationPartnerTypeType],  # (2)
+```
 
-- `Identifier`: `str`
-- `IdentifierType`: `Literal['PartnerAccountId']` (see
-  [IdentifierTypeType](./literals.md#identifiertypetype))
-
-Optional fields:
-
-- `PartnerType`: `Literal['Sidewalk']` (see
-  [EventNotificationPartnerTypeType](./literals.md#eventnotificationpartnertypetype))
-
-<a id="getresourceeventconfigurationresponsetypedef"></a>
-
+1. See [:material-code-brackets: IdentifierTypeType](./literals.md#identifiertypetype) 
+2. See [:material-code-brackets: EventNotificationPartnerTypeType](./literals.md#eventnotificationpartnertypetype) 
 ## GetResourceEventConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetResourceEventConfigurationResponseTypeDef
+
+def get_value() -> GetResourceEventConfigurationResponseTypeDef:
+    return {
+        "DeviceRegistrationState": ...,
+        "Proximity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceEventConfigurationResponseTypeDef(TypedDict):
+    DeviceRegistrationState: DeviceRegistrationStateEventConfigurationTypeDef,  # (1)
+    Proximity: ProximityEventConfigurationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `DeviceRegistrationState`:
-  [DeviceRegistrationStateEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateeventconfigurationtypedef)
-- `Proximity`:
-  [ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourceloglevelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceRegistrationStateEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateeventconfigurationtypedef) 
+2. See [:material-code-braces: ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourceLogLevelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetResourceLogLevelRequestRequestTypeDef
+
+def get_value() -> GetResourceLogLevelRequestRequestTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceIdentifier`: `str`
-- `ResourceType`: `str`
-
-<a id="getresourceloglevelresponsetypedef"></a>
+```python title="Definition"
+class GetResourceLogLevelRequestRequestTypeDef(TypedDict):
+    ResourceIdentifier: str,
+    ResourceType: str,
+```
 
 ## GetResourceLogLevelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetResourceLogLevelResponseTypeDef
+
+def get_value() -> GetResourceLogLevelResponseTypeDef:
+    return {
+        "LogLevel": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceLogLevelResponseTypeDef(TypedDict):
+    LogLevel: LogLevelType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getserviceendpointrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetServiceEndpointRequestRequestTypeDef
+
+def get_value() -> GetServiceEndpointRequestRequestTypeDef:
+    return {
+        "ServiceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetServiceEndpointRequestRequestTypeDef(TypedDict):
+    ServiceType: NotRequired[WirelessGatewayServiceTypeType],  # (1)
+```
 
-- `ServiceType`:
-  [WirelessGatewayServiceTypeType](./literals.md#wirelessgatewayservicetypetype)
-
-<a id="getserviceendpointresponsetypedef"></a>
-
+1. See [:material-code-brackets: WirelessGatewayServiceTypeType](./literals.md#wirelessgatewayservicetypetype) 
 ## GetServiceEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetServiceEndpointResponseTypeDef
+
+def get_value() -> GetServiceEndpointResponseTypeDef:
+    return {
+        "ServiceType": ...,
+        "ServiceEndpoint": ...,
+        "ServerTrust": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceEndpointResponseTypeDef(TypedDict):
+    ServiceType: WirelessGatewayServiceTypeType,  # (1)
+    ServiceEndpoint: str,
+    ServerTrust: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServiceType`:
-  [WirelessGatewayServiceTypeType](./literals.md#wirelessgatewayservicetypetype)
-- `ServiceEndpoint`: `str`
-- `ServerTrust`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getserviceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WirelessGatewayServiceTypeType](./literals.md#wirelessgatewayservicetypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetServiceProfileRequestRequestTypeDef
+
+def get_value() -> GetServiceProfileRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getserviceprofileresponsetypedef"></a>
+```python title="Definition"
+class GetServiceProfileRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetServiceProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetServiceProfileResponseTypeDef
+
+def get_value() -> GetServiceProfileResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "Id": ...,
+        "LoRaWAN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceProfileResponseTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    Id: str,
+    LoRaWAN: LoRaWANGetServiceProfileInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `Id`: `str`
-- `LoRaWAN`:
-  [LoRaWANGetServiceProfileInfoTypeDef](./type_defs.md#lorawangetserviceprofileinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwirelessdevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANGetServiceProfileInfoTypeDef](./type_defs.md#lorawangetserviceprofileinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWirelessDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceRequestRequestTypeDef
+
+def get_value() -> GetWirelessDeviceRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+        "IdentifierType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessDeviceRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+    IdentifierType: WirelessDeviceIdTypeType,  # (1)
+```
 
-- `Identifier`: `str`
-- `IdentifierType`:
-  [WirelessDeviceIdTypeType](./literals.md#wirelessdeviceidtypetype)
-
-<a id="getwirelessdeviceresponsetypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceIdTypeType](./literals.md#wirelessdeviceidtypetype) 
 ## GetWirelessDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceResponseTypeDef
+
+def get_value() -> GetWirelessDeviceResponseTypeDef:
+    return {
+        "Type": ...,
+        "Name": ...,
+        "Description": ...,
+        "DestinationName": ...,
+        "Id": ...,
+        "Arn": ...,
+        "ThingName": ...,
+        "ThingArn": ...,
+        "LoRaWAN": ...,
+        "Sidewalk": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessDeviceResponseTypeDef(TypedDict):
+    Type: WirelessDeviceTypeType,  # (1)
+    Name: str,
+    Description: str,
+    DestinationName: str,
+    Id: str,
+    Arn: str,
+    ThingName: str,
+    ThingArn: str,
+    LoRaWAN: LoRaWANDeviceTypeDef,  # (2)
+    Sidewalk: SidewalkDeviceTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
-- `Name`: `str`
-- `Description`: `str`
-- `DestinationName`: `str`
-- `Id`: `str`
-- `Arn`: `str`
-- `ThingName`: `str`
-- `ThingArn`: `str`
-- `LoRaWAN`: [LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef)
-- `Sidewalk`: [SidewalkDeviceTypeDef](./type_defs.md#sidewalkdevicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwirelessdevicestatisticsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
+2. See [:material-code-braces: LoRaWANDeviceTypeDef](./type_defs.md#lorawandevicetypedef) 
+3. See [:material-code-braces: SidewalkDeviceTypeDef](./type_defs.md#sidewalkdevicetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWirelessDeviceStatisticsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceStatisticsRequestRequestTypeDef
+
+def get_value() -> GetWirelessDeviceStatisticsRequestRequestTypeDef:
+    return {
+        "WirelessDeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `WirelessDeviceId`: `str`
-
-<a id="getwirelessdevicestatisticsresponsetypedef"></a>
+```python title="Definition"
+class GetWirelessDeviceStatisticsRequestRequestTypeDef(TypedDict):
+    WirelessDeviceId: str,
+```
 
 ## GetWirelessDeviceStatisticsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessDeviceStatisticsResponseTypeDef
+
+def get_value() -> GetWirelessDeviceStatisticsResponseTypeDef:
+    return {
+        "WirelessDeviceId": ...,
+        "LastUplinkReceivedAt": ...,
+        "LoRaWAN": ...,
+        "Sidewalk": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessDeviceStatisticsResponseTypeDef(TypedDict):
+    WirelessDeviceId: str,
+    LastUplinkReceivedAt: str,
+    LoRaWAN: LoRaWANDeviceMetadataTypeDef,  # (1)
+    Sidewalk: SidewalkDeviceMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `WirelessDeviceId`: `str`
-- `LastUplinkReceivedAt`: `str`
-- `LoRaWAN`:
-  [LoRaWANDeviceMetadataTypeDef](./type_defs.md#lorawandevicemetadatatypedef)
-- `Sidewalk`:
-  [SidewalkDeviceMetadataTypeDef](./type_defs.md#sidewalkdevicemetadatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwirelessgatewaycertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANDeviceMetadataTypeDef](./type_defs.md#lorawandevicemetadatatypedef) 
+2. See [:material-code-braces: SidewalkDeviceMetadataTypeDef](./type_defs.md#sidewalkdevicemetadatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWirelessGatewayCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayCertificateRequestRequestTypeDef
+
+def get_value() -> GetWirelessGatewayCertificateRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getwirelessgatewaycertificateresponsetypedef"></a>
+```python title="Definition"
+class GetWirelessGatewayCertificateRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetWirelessGatewayCertificateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayCertificateResponseTypeDef
+
+def get_value() -> GetWirelessGatewayCertificateResponseTypeDef:
+    return {
+        "IotCertificateId": ...,
+        "LoRaWANNetworkServerCertificateId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessGatewayCertificateResponseTypeDef(TypedDict):
+    IotCertificateId: str,
+    LoRaWANNetworkServerCertificateId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `IotCertificateId`: `str`
-- `LoRaWANNetworkServerCertificateId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwirelessgatewayfirmwareinformationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWirelessGatewayFirmwareInformationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayFirmwareInformationRequestRequestTypeDef
+
+def get_value() -> GetWirelessGatewayFirmwareInformationRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getwirelessgatewayfirmwareinformationresponsetypedef"></a>
+```python title="Definition"
+class GetWirelessGatewayFirmwareInformationRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetWirelessGatewayFirmwareInformationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayFirmwareInformationResponseTypeDef
+
+def get_value() -> GetWirelessGatewayFirmwareInformationResponseTypeDef:
+    return {
+        "LoRaWAN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessGatewayFirmwareInformationResponseTypeDef(TypedDict):
+    LoRaWAN: LoRaWANGatewayCurrentVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LoRaWAN`:
-  [LoRaWANGatewayCurrentVersionTypeDef](./type_defs.md#lorawangatewaycurrentversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwirelessgatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANGatewayCurrentVersionTypeDef](./type_defs.md#lorawangatewaycurrentversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWirelessGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayRequestRequestTypeDef
+
+def get_value() -> GetWirelessGatewayRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+        "IdentifierType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessGatewayRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+    IdentifierType: WirelessGatewayIdTypeType,  # (1)
+```
 
-- `Identifier`: `str`
-- `IdentifierType`:
-  [WirelessGatewayIdTypeType](./literals.md#wirelessgatewayidtypetype)
-
-<a id="getwirelessgatewayresponsetypedef"></a>
-
+1. See [:material-code-brackets: WirelessGatewayIdTypeType](./literals.md#wirelessgatewayidtypetype) 
 ## GetWirelessGatewayResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayResponseTypeDef
+
+def get_value() -> GetWirelessGatewayResponseTypeDef:
+    return {
+        "Name": ...,
+        "Id": ...,
+        "Description": ...,
+        "LoRaWAN": ...,
+        "Arn": ...,
+        "ThingName": ...,
+        "ThingArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessGatewayResponseTypeDef(TypedDict):
+    Name: str,
+    Id: str,
+    Description: str,
+    LoRaWAN: LoRaWANGatewayTypeDef,  # (1)
+    Arn: str,
+    ThingName: str,
+    ThingArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Name`: `str`
-- `Id`: `str`
-- `Description`: `str`
-- `LoRaWAN`: [LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef)
-- `Arn`: `str`
-- `ThingName`: `str`
-- `ThingArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwirelessgatewaystatisticsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWirelessGatewayStatisticsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayStatisticsRequestRequestTypeDef
+
+def get_value() -> GetWirelessGatewayStatisticsRequestRequestTypeDef:
+    return {
+        "WirelessGatewayId": ...,
+    }
 ```
 
-Required fields:
-
-- `WirelessGatewayId`: `str`
-
-<a id="getwirelessgatewaystatisticsresponsetypedef"></a>
+```python title="Definition"
+class GetWirelessGatewayStatisticsRequestRequestTypeDef(TypedDict):
+    WirelessGatewayId: str,
+```
 
 ## GetWirelessGatewayStatisticsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayStatisticsResponseTypeDef
+
+def get_value() -> GetWirelessGatewayStatisticsResponseTypeDef:
+    return {
+        "WirelessGatewayId": ...,
+        "LastUplinkReceivedAt": ...,
+        "ConnectionStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessGatewayStatisticsResponseTypeDef(TypedDict):
+    WirelessGatewayId: str,
+    LastUplinkReceivedAt: str,
+    ConnectionStatus: ConnectionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WirelessGatewayId`: `str`
-- `LastUplinkReceivedAt`: `str`
-- `ConnectionStatus`:
-  [ConnectionStatusType](./literals.md#connectionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwirelessgatewaytaskdefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStatusType](./literals.md#connectionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWirelessGatewayTaskDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskDefinitionRequestRequestTypeDef
+
+def get_value() -> GetWirelessGatewayTaskDefinitionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getwirelessgatewaytaskdefinitionresponsetypedef"></a>
+```python title="Definition"
+class GetWirelessGatewayTaskDefinitionRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetWirelessGatewayTaskDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskDefinitionResponseTypeDef
+
+def get_value() -> GetWirelessGatewayTaskDefinitionResponseTypeDef:
+    return {
+        "AutoCreateTasks": ...,
+        "Name": ...,
+        "Update": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessGatewayTaskDefinitionResponseTypeDef(TypedDict):
+    AutoCreateTasks: bool,
+    Name: str,
+    Update: UpdateWirelessGatewayTaskCreateTypeDef,  # (1)
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AutoCreateTasks`: `bool`
-- `Name`: `str`
-- `Update`:
-  [UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef)
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getwirelessgatewaytaskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateWirelessGatewayTaskCreateTypeDef](./type_defs.md#updatewirelessgatewaytaskcreatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWirelessGatewayTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskRequestRequestTypeDef
+
+def get_value() -> GetWirelessGatewayTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getwirelessgatewaytaskresponsetypedef"></a>
+```python title="Definition"
+class GetWirelessGatewayTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetWirelessGatewayTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import GetWirelessGatewayTaskResponseTypeDef
+
+def get_value() -> GetWirelessGatewayTaskResponseTypeDef:
+    return {
+        "WirelessGatewayId": ...,
+        "WirelessGatewayTaskDefinitionId": ...,
+        "LastUplinkReceivedAt": ...,
+        "TaskCreatedAt": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWirelessGatewayTaskResponseTypeDef(TypedDict):
+    WirelessGatewayId: str,
+    WirelessGatewayTaskDefinitionId: str,
+    LastUplinkReceivedAt: str,
+    TaskCreatedAt: str,
+    Status: WirelessGatewayTaskStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WirelessGatewayId`: `str`
-- `WirelessGatewayTaskDefinitionId`: `str`
-- `LastUplinkReceivedAt`: `str`
-- `TaskCreatedAt`: `str`
-- `Status`:
-  [WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdestinationsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDestinationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListDestinationsRequestRequestTypeDef
+
+def get_value() -> ListDestinationsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdestinationsresponsetypedef"></a>
+```python title="Definition"
+class ListDestinationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDestinationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListDestinationsResponseTypeDef
+
+def get_value() -> ListDestinationsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "DestinationList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDestinationsResponseTypeDef(TypedDict):
+    NextToken: str,
+    DestinationList: List[DestinationsTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `DestinationList`:
-  `List`\[[DestinationsTypeDef](./type_defs.md#destinationstypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdeviceprofilesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DestinationsTypeDef](./type_defs.md#destinationstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDeviceProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListDeviceProfilesRequestRequestTypeDef
+
+def get_value() -> ListDeviceProfilesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdeviceprofilesresponsetypedef"></a>
+```python title="Definition"
+class ListDeviceProfilesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDeviceProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListDeviceProfilesResponseTypeDef
+
+def get_value() -> ListDeviceProfilesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "DeviceProfileList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeviceProfilesResponseTypeDef(TypedDict):
+    NextToken: str,
+    DeviceProfileList: List[DeviceProfileTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `DeviceProfileList`:
-  `List`\[[DeviceProfileTypeDef](./type_defs.md#deviceprofiletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listfuotatasksrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceProfileTypeDef](./type_defs.md#deviceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFuotaTasksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListFuotaTasksRequestRequestTypeDef
+
+def get_value() -> ListFuotaTasksRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listfuotatasksresponsetypedef"></a>
+```python title="Definition"
+class ListFuotaTasksRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListFuotaTasksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListFuotaTasksResponseTypeDef
+
+def get_value() -> ListFuotaTasksResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "FuotaTaskList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFuotaTasksResponseTypeDef(TypedDict):
+    NextToken: str,
+    FuotaTaskList: List[FuotaTaskTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `FuotaTaskList`:
-  `List`\[[FuotaTaskTypeDef](./type_defs.md#fuotatasktypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmulticastgroupsbyfuotataskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FuotaTaskTypeDef](./type_defs.md#fuotatasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMulticastGroupsByFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListMulticastGroupsByFuotaTaskRequestRequestTypeDef
+
+def get_value() -> ListMulticastGroupsByFuotaTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listmulticastgroupsbyfuotataskresponsetypedef"></a>
+```python title="Definition"
+class ListMulticastGroupsByFuotaTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListMulticastGroupsByFuotaTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListMulticastGroupsByFuotaTaskResponseTypeDef
+
+def get_value() -> ListMulticastGroupsByFuotaTaskResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "MulticastGroupList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMulticastGroupsByFuotaTaskResponseTypeDef(TypedDict):
+    NextToken: str,
+    MulticastGroupList: List[MulticastGroupByFuotaTaskTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `MulticastGroupList`:
-  `List`\[[MulticastGroupByFuotaTaskTypeDef](./type_defs.md#multicastgroupbyfuotatasktypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmulticastgroupsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MulticastGroupByFuotaTaskTypeDef](./type_defs.md#multicastgroupbyfuotatasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMulticastGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListMulticastGroupsRequestRequestTypeDef
+
+def get_value() -> ListMulticastGroupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listmulticastgroupsresponsetypedef"></a>
+```python title="Definition"
+class ListMulticastGroupsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListMulticastGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListMulticastGroupsResponseTypeDef
+
+def get_value() -> ListMulticastGroupsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "MulticastGroupList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMulticastGroupsResponseTypeDef(TypedDict):
+    NextToken: str,
+    MulticastGroupList: List[MulticastGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `MulticastGroupList`:
-  `List`\[[MulticastGroupTypeDef](./type_defs.md#multicastgrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpartneraccountsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MulticastGroupTypeDef](./type_defs.md#multicastgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPartnerAccountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListPartnerAccountsRequestRequestTypeDef
+
+def get_value() -> ListPartnerAccountsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listpartneraccountsresponsetypedef"></a>
+```python title="Definition"
+class ListPartnerAccountsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListPartnerAccountsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListPartnerAccountsResponseTypeDef
+
+def get_value() -> ListPartnerAccountsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Sidewalk": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPartnerAccountsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Sidewalk: List[SidewalkAccountInfoWithFingerprintTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Sidewalk`:
-  `List`\[[SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listqueuedmessagesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListQueuedMessagesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListQueuedMessagesRequestRequestTypeDef
+
+def get_value() -> ListQueuedMessagesRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQueuedMessagesRequestRequestTypeDef(TypedDict):
+    Id: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    WirelessDeviceType: NotRequired[WirelessDeviceTypeType],  # (1)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WirelessDeviceType`:
-  [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
-
-<a id="listqueuedmessagesresponsetypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
 ## ListQueuedMessagesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListQueuedMessagesResponseTypeDef
+
+def get_value() -> ListQueuedMessagesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "DownlinkQueueMessagesList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQueuedMessagesResponseTypeDef(TypedDict):
+    NextToken: str,
+    DownlinkQueueMessagesList: List[DownlinkQueueMessageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `DownlinkQueueMessagesList`:
-  `List`\[[DownlinkQueueMessageTypeDef](./type_defs.md#downlinkqueuemessagetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listserviceprofilesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DownlinkQueueMessageTypeDef](./type_defs.md#downlinkqueuemessagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListServiceProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListServiceProfilesRequestRequestTypeDef
+
+def get_value() -> ListServiceProfilesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listserviceprofilesresponsetypedef"></a>
+```python title="Definition"
+class ListServiceProfilesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListServiceProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListServiceProfilesResponseTypeDef
+
+def get_value() -> ListServiceProfilesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ServiceProfileList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServiceProfilesResponseTypeDef(TypedDict):
+    NextToken: str,
+    ServiceProfileList: List[ServiceProfileTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `ServiceProfileList`:
-  `List`\[[ServiceProfileTypeDef](./type_defs.md#serviceprofiletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceProfileTypeDef](./type_defs.md#serviceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listwirelessdevicesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWirelessDevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListWirelessDevicesRequestRequestTypeDef
+
+def get_value() -> ListWirelessDevicesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListWirelessDevicesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    DestinationName: NotRequired[str],
+    DeviceProfileId: NotRequired[str],
+    ServiceProfileId: NotRequired[str],
+    WirelessDeviceType: NotRequired[WirelessDeviceTypeType],  # (1)
+    FuotaTaskId: NotRequired[str],
+    MulticastGroupId: NotRequired[str],
+```
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `DestinationName`: `str`
-- `DeviceProfileId`: `str`
-- `ServiceProfileId`: `str`
-- `WirelessDeviceType`:
-  [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
-- `FuotaTaskId`: `str`
-- `MulticastGroupId`: `str`
-
-<a id="listwirelessdevicesresponsetypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
 ## ListWirelessDevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListWirelessDevicesResponseTypeDef
+
+def get_value() -> ListWirelessDevicesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "WirelessDeviceList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWirelessDevicesResponseTypeDef(TypedDict):
+    NextToken: str,
+    WirelessDeviceList: List[WirelessDeviceStatisticsTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `WirelessDeviceList`:
-  `List`\[[WirelessDeviceStatisticsTypeDef](./type_defs.md#wirelessdevicestatisticstypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listwirelessgatewaytaskdefinitionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WirelessDeviceStatisticsTypeDef](./type_defs.md#wirelessdevicestatisticstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWirelessGatewayTaskDefinitionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListWirelessGatewayTaskDefinitionsRequestRequestTypeDef
+
+def get_value() -> ListWirelessGatewayTaskDefinitionsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListWirelessGatewayTaskDefinitionsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    TaskDefinitionType: NotRequired[WirelessGatewayTaskDefinitionTypeType],  # (1)
+```
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `TaskDefinitionType`: `Literal['UPDATE']` (see
-  [WirelessGatewayTaskDefinitionTypeType](./literals.md#wirelessgatewaytaskdefinitiontypetype))
-
-<a id="listwirelessgatewaytaskdefinitionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: WirelessGatewayTaskDefinitionTypeType](./literals.md#wirelessgatewaytaskdefinitiontypetype) 
 ## ListWirelessGatewayTaskDefinitionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListWirelessGatewayTaskDefinitionsResponseTypeDef
+
+def get_value() -> ListWirelessGatewayTaskDefinitionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "TaskDefinitions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWirelessGatewayTaskDefinitionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    TaskDefinitions: List[UpdateWirelessGatewayTaskEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `TaskDefinitions`:
-  `List`\[[UpdateWirelessGatewayTaskEntryTypeDef](./type_defs.md#updatewirelessgatewaytaskentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listwirelessgatewaysrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateWirelessGatewayTaskEntryTypeDef](./type_defs.md#updatewirelessgatewaytaskentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWirelessGatewaysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListWirelessGatewaysRequestRequestTypeDef
+
+def get_value() -> ListWirelessGatewaysRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listwirelessgatewaysresponsetypedef"></a>
+```python title="Definition"
+class ListWirelessGatewaysRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListWirelessGatewaysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ListWirelessGatewaysResponseTypeDef
+
+def get_value() -> ListWirelessGatewaysResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "WirelessGatewayList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWirelessGatewaysResponseTypeDef(TypedDict):
+    NextToken: str,
+    WirelessGatewayList: List[WirelessGatewayStatisticsTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `WirelessGatewayList`:
-  `List`\[[WirelessGatewayStatisticsTypeDef](./type_defs.md#wirelessgatewaystatisticstypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lorawandevicemetadatatypedef"></a>
-
+1. See [:material-code-braces: WirelessGatewayStatisticsTypeDef](./type_defs.md#wirelessgatewaystatisticstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoRaWANDeviceMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANDeviceMetadataTypeDef
+
+def get_value() -> LoRaWANDeviceMetadataTypeDef:
+    return {
+        "DevEui": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoRaWANDeviceMetadataTypeDef(TypedDict):
+    DevEui: NotRequired[str],
+    FPort: NotRequired[int],
+    DataRate: NotRequired[int],
+    Frequency: NotRequired[int],
+    Timestamp: NotRequired[str],
+    Gateways: NotRequired[List[LoRaWANGatewayMetadataTypeDef]],  # (1)
+```
 
-- `DevEui`: `str`
-- `FPort`: `int`
-- `DataRate`: `int`
-- `Frequency`: `int`
-- `Timestamp`: `str`
-- `Gateways`:
-  `List`\[[LoRaWANGatewayMetadataTypeDef](./type_defs.md#lorawangatewaymetadatatypedef)\]
-
-<a id="lorawandeviceprofiletypedef"></a>
-
+1. See [:material-code-braces: LoRaWANGatewayMetadataTypeDef](./type_defs.md#lorawangatewaymetadatatypedef) 
 ## LoRaWANDeviceProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANDeviceProfileTypeDef
+
+def get_value() -> LoRaWANDeviceProfileTypeDef:
+    return {
+        "SupportsClassB": ...,
+    }
 ```
 
-Optional fields:
-
-- `SupportsClassB`: `bool`
-- `ClassBTimeout`: `int`
-- `PingSlotPeriod`: `int`
-- `PingSlotDr`: `int`
-- `PingSlotFreq`: `int`
-- `SupportsClassC`: `bool`
-- `ClassCTimeout`: `int`
-- `MacVersion`: `str`
-- `RegParamsRevision`: `str`
-- `RxDelay1`: `int`
-- `RxDrOffset1`: `int`
-- `RxDataRate2`: `int`
-- `RxFreq2`: `int`
-- `FactoryPresetFreqsList`: `Sequence`\[`int`\]
-- `MaxEirp`: `int`
-- `MaxDutyCycle`: `int`
-- `RfRegion`: `str`
-- `SupportsJoin`: `bool`
-- `Supports32BitFCnt`: `bool`
-
-<a id="lorawandevicetypedef"></a>
+```python title="Definition"
+class LoRaWANDeviceProfileTypeDef(TypedDict):
+    SupportsClassB: NotRequired[bool],
+    ClassBTimeout: NotRequired[int],
+    PingSlotPeriod: NotRequired[int],
+    PingSlotDr: NotRequired[int],
+    PingSlotFreq: NotRequired[int],
+    SupportsClassC: NotRequired[bool],
+    ClassCTimeout: NotRequired[int],
+    MacVersion: NotRequired[str],
+    RegParamsRevision: NotRequired[str],
+    RxDelay1: NotRequired[int],
+    RxDrOffset1: NotRequired[int],
+    RxDataRate2: NotRequired[int],
+    RxFreq2: NotRequired[int],
+    FactoryPresetFreqsList: NotRequired[Sequence[int]],
+    MaxEirp: NotRequired[int],
+    MaxDutyCycle: NotRequired[int],
+    RfRegion: NotRequired[str],
+    SupportsJoin: NotRequired[bool],
+    Supports32BitFCnt: NotRequired[bool],
+```
 
 ## LoRaWANDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANDeviceTypeDef
+
+def get_value() -> LoRaWANDeviceTypeDef:
+    return {
+        "DevEui": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoRaWANDeviceTypeDef(TypedDict):
+    DevEui: NotRequired[str],
+    DeviceProfileId: NotRequired[str],
+    ServiceProfileId: NotRequired[str],
+    OtaaV1_1: NotRequired[OtaaV1_1TypeDef],  # (1)
+    OtaaV1_0_x: NotRequired[OtaaV1_0_xTypeDef],  # (2)
+    AbpV1_1: NotRequired[AbpV1_1TypeDef],  # (3)
+    AbpV1_0_x: NotRequired[AbpV1_0_xTypeDef],  # (4)
+    FPorts: NotRequired[FPortsTypeDef],  # (5)
+```
 
-- `DevEui`: `str`
-- `DeviceProfileId`: `str`
-- `ServiceProfileId`: `str`
-- `OtaaV1_1`: [OtaaV1_1TypeDef](./type_defs.md#otaav1_1typedef)
-- `OtaaV1_0_x`: [OtaaV1_0_xTypeDef](./type_defs.md#otaav1_0_xtypedef)
-- `AbpV1_1`: [AbpV1_1TypeDef](./type_defs.md#abpv1_1typedef)
-- `AbpV1_0_x`: [AbpV1_0_xTypeDef](./type_defs.md#abpv1_0_xtypedef)
-- `FPorts`: [FPortsTypeDef](./type_defs.md#fportstypedef)
-
-<a id="lorawanfuotataskgetinfotypedef"></a>
-
+1. See [:material-code-braces: OtaaV1_1TypeDef](./type_defs.md#otaav1_1typedef) 
+2. See [:material-code-braces: OtaaV1_0_xTypeDef](./type_defs.md#otaav1_0_xtypedef) 
+3. See [:material-code-braces: AbpV1_1TypeDef](./type_defs.md#abpv1_1typedef) 
+4. See [:material-code-braces: AbpV1_0_xTypeDef](./type_defs.md#abpv1_0_xtypedef) 
+5. See [:material-code-braces: FPortsTypeDef](./type_defs.md#fportstypedef) 
 ## LoRaWANFuotaTaskGetInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANFuotaTaskGetInfoTypeDef
+
+def get_value() -> LoRaWANFuotaTaskGetInfoTypeDef:
+    return {
+        "RfRegion": ...,
+    }
 ```
 
-Optional fields:
-
-- `RfRegion`: `str`
-- `StartTime`: `datetime`
-
-<a id="lorawanfuotatasktypedef"></a>
+```python title="Definition"
+class LoRaWANFuotaTaskGetInfoTypeDef(TypedDict):
+    RfRegion: NotRequired[str],
+    StartTime: NotRequired[datetime],
+```
 
 ## LoRaWANFuotaTaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANFuotaTaskTypeDef
+
+def get_value() -> LoRaWANFuotaTaskTypeDef:
+    return {
+        "RfRegion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoRaWANFuotaTaskTypeDef(TypedDict):
+    RfRegion: NotRequired[SupportedRfRegionType],  # (1)
+```
 
-- `RfRegion`: [SupportedRfRegionType](./literals.md#supportedrfregiontype)
-
-<a id="lorawangatewaycurrentversiontypedef"></a>
-
+1. See [:material-code-brackets: SupportedRfRegionType](./literals.md#supportedrfregiontype) 
 ## LoRaWANGatewayCurrentVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANGatewayCurrentVersionTypeDef
+
+def get_value() -> LoRaWANGatewayCurrentVersionTypeDef:
+    return {
+        "CurrentVersion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoRaWANGatewayCurrentVersionTypeDef(TypedDict):
+    CurrentVersion: NotRequired[LoRaWANGatewayVersionTypeDef],  # (1)
+```
 
-- `CurrentVersion`:
-  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
-
-<a id="lorawangatewaymetadatatypedef"></a>
-
+1. See [:material-code-braces: LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef) 
 ## LoRaWANGatewayMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANGatewayMetadataTypeDef
+
+def get_value() -> LoRaWANGatewayMetadataTypeDef:
+    return {
+        "GatewayEui": ...,
+    }
 ```
 
-Optional fields:
-
-- `GatewayEui`: `str`
-- `Snr`: `float`
-- `Rssi`: `float`
-
-<a id="lorawangatewaytypedef"></a>
+```python title="Definition"
+class LoRaWANGatewayMetadataTypeDef(TypedDict):
+    GatewayEui: NotRequired[str],
+    Snr: NotRequired[float],
+    Rssi: NotRequired[float],
+```
 
 ## LoRaWANGatewayTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANGatewayTypeDef
+
+def get_value() -> LoRaWANGatewayTypeDef:
+    return {
+        "GatewayEui": ...,
+    }
 ```
 
-Optional fields:
-
-- `GatewayEui`: `str`
-- `RfRegion`: `str`
-- `JoinEuiFilters`: `Sequence`\[`Sequence`\[`str`\]\]
-- `NetIdFilters`: `Sequence`\[`str`\]
-- `SubBands`: `Sequence`\[`int`\]
-
-<a id="lorawangatewayversiontypedef"></a>
+```python title="Definition"
+class LoRaWANGatewayTypeDef(TypedDict):
+    GatewayEui: NotRequired[str],
+    RfRegion: NotRequired[str],
+    JoinEuiFilters: NotRequired[Sequence[Sequence[str]]],
+    NetIdFilters: NotRequired[Sequence[str]],
+    SubBands: NotRequired[Sequence[int]],
+```
 
 ## LoRaWANGatewayVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANGatewayVersionTypeDef
+
+def get_value() -> LoRaWANGatewayVersionTypeDef:
+    return {
+        "PackageVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `PackageVersion`: `str`
-- `Model`: `str`
-- `Station`: `str`
-
-<a id="lorawangetserviceprofileinfotypedef"></a>
+```python title="Definition"
+class LoRaWANGatewayVersionTypeDef(TypedDict):
+    PackageVersion: NotRequired[str],
+    Model: NotRequired[str],
+    Station: NotRequired[str],
+```
 
 ## LoRaWANGetServiceProfileInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANGetServiceProfileInfoTypeDef
+
+def get_value() -> LoRaWANGetServiceProfileInfoTypeDef:
+    return {
+        "UlRate": ...,
+    }
 ```
 
-Optional fields:
-
-- `UlRate`: `int`
-- `UlBucketSize`: `int`
-- `UlRatePolicy`: `str`
-- `DlRate`: `int`
-- `DlBucketSize`: `int`
-- `DlRatePolicy`: `str`
-- `AddGwMetadata`: `bool`
-- `DevStatusReqFreq`: `int`
-- `ReportDevStatusBattery`: `bool`
-- `ReportDevStatusMargin`: `bool`
-- `DrMin`: `int`
-- `DrMax`: `int`
-- `ChannelMask`: `str`
-- `PrAllowed`: `bool`
-- `HrAllowed`: `bool`
-- `RaAllowed`: `bool`
-- `NwkGeoLoc`: `bool`
-- `TargetPer`: `int`
-- `MinGwDiversity`: `int`
-
-<a id="lorawanlistdevicetypedef"></a>
+```python title="Definition"
+class LoRaWANGetServiceProfileInfoTypeDef(TypedDict):
+    UlRate: NotRequired[int],
+    UlBucketSize: NotRequired[int],
+    UlRatePolicy: NotRequired[str],
+    DlRate: NotRequired[int],
+    DlBucketSize: NotRequired[int],
+    DlRatePolicy: NotRequired[str],
+    AddGwMetadata: NotRequired[bool],
+    DevStatusReqFreq: NotRequired[int],
+    ReportDevStatusBattery: NotRequired[bool],
+    ReportDevStatusMargin: NotRequired[bool],
+    DrMin: NotRequired[int],
+    DrMax: NotRequired[int],
+    ChannelMask: NotRequired[str],
+    PrAllowed: NotRequired[bool],
+    HrAllowed: NotRequired[bool],
+    RaAllowed: NotRequired[bool],
+    NwkGeoLoc: NotRequired[bool],
+    TargetPer: NotRequired[int],
+    MinGwDiversity: NotRequired[int],
+```
 
 ## LoRaWANListDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANListDeviceTypeDef
+
+def get_value() -> LoRaWANListDeviceTypeDef:
+    return {
+        "DevEui": ...,
+    }
 ```
 
-Optional fields:
-
-- `DevEui`: `str`
-
-<a id="lorawanmulticastgettypedef"></a>
+```python title="Definition"
+class LoRaWANListDeviceTypeDef(TypedDict):
+    DevEui: NotRequired[str],
+```
 
 ## LoRaWANMulticastGetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANMulticastGetTypeDef
+
+def get_value() -> LoRaWANMulticastGetTypeDef:
+    return {
+        "RfRegion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoRaWANMulticastGetTypeDef(TypedDict):
+    RfRegion: NotRequired[SupportedRfRegionType],  # (1)
+    DlClass: NotRequired[DlClassType],  # (2)
+    NumberOfDevicesRequested: NotRequired[int],
+    NumberOfDevicesInGroup: NotRequired[int],
+```
 
-- `RfRegion`: [SupportedRfRegionType](./literals.md#supportedrfregiontype)
-- `DlClass`: [DlClassType](./literals.md#dlclasstype)
-- `NumberOfDevicesRequested`: `int`
-- `NumberOfDevicesInGroup`: `int`
-
-<a id="lorawanmulticastmetadatatypedef"></a>
-
+1. See [:material-code-brackets: SupportedRfRegionType](./literals.md#supportedrfregiontype) 
+2. See [:material-code-brackets: DlClassType](./literals.md#dlclasstype) 
 ## LoRaWANMulticastMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANMulticastMetadataTypeDef
+
+def get_value() -> LoRaWANMulticastMetadataTypeDef:
+    return {
+        "FPort": ...,
+    }
 ```
 
-Optional fields:
-
-- `FPort`: `int`
-
-<a id="lorawanmulticastsessiontypedef"></a>
+```python title="Definition"
+class LoRaWANMulticastMetadataTypeDef(TypedDict):
+    FPort: NotRequired[int],
+```
 
 ## LoRaWANMulticastSessionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANMulticastSessionTypeDef
+
+def get_value() -> LoRaWANMulticastSessionTypeDef:
+    return {
+        "DlDr": ...,
+    }
 ```
 
-Optional fields:
-
-- `DlDr`: `int`
-- `DlFreq`: `int`
-- `SessionStartTime`: `datetime`
-- `SessionTimeout`: `int`
-
-<a id="lorawanmulticasttypedef"></a>
+```python title="Definition"
+class LoRaWANMulticastSessionTypeDef(TypedDict):
+    DlDr: NotRequired[int],
+    DlFreq: NotRequired[int],
+    SessionStartTime: NotRequired[datetime],
+    SessionTimeout: NotRequired[int],
+```
 
 ## LoRaWANMulticastTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANMulticastTypeDef
+
+def get_value() -> LoRaWANMulticastTypeDef:
+    return {
+        "RfRegion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoRaWANMulticastTypeDef(TypedDict):
+    RfRegion: NotRequired[SupportedRfRegionType],  # (1)
+    DlClass: NotRequired[DlClassType],  # (2)
+```
 
-- `RfRegion`: [SupportedRfRegionType](./literals.md#supportedrfregiontype)
-- `DlClass`: [DlClassType](./literals.md#dlclasstype)
-
-<a id="lorawansenddatatodevicetypedef"></a>
-
+1. See [:material-code-brackets: SupportedRfRegionType](./literals.md#supportedrfregiontype) 
+2. See [:material-code-brackets: DlClassType](./literals.md#dlclasstype) 
 ## LoRaWANSendDataToDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANSendDataToDeviceTypeDef
+
+def get_value() -> LoRaWANSendDataToDeviceTypeDef:
+    return {
+        "FPort": ...,
+    }
 ```
 
-Optional fields:
-
-- `FPort`: `int`
-
-<a id="lorawanserviceprofiletypedef"></a>
+```python title="Definition"
+class LoRaWANSendDataToDeviceTypeDef(TypedDict):
+    FPort: NotRequired[int],
+```
 
 ## LoRaWANServiceProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANServiceProfileTypeDef
+
+def get_value() -> LoRaWANServiceProfileTypeDef:
+    return {
+        "AddGwMetadata": ...,
+    }
 ```
 
-Optional fields:
-
-- `AddGwMetadata`: `bool`
-
-<a id="lorawanstartfuotatasktypedef"></a>
+```python title="Definition"
+class LoRaWANServiceProfileTypeDef(TypedDict):
+    AddGwMetadata: NotRequired[bool],
+```
 
 ## LoRaWANStartFuotaTaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANStartFuotaTaskTypeDef
+
+def get_value() -> LoRaWANStartFuotaTaskTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartTime`: `Union`\[`datetime`, `str`\]
-
-<a id="lorawanupdatedevicetypedef"></a>
+```python title="Definition"
+class LoRaWANStartFuotaTaskTypeDef(TypedDict):
+    StartTime: NotRequired[Union[datetime, str]],
+```
 
 ## LoRaWANUpdateDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANUpdateDeviceTypeDef
+
+def get_value() -> LoRaWANUpdateDeviceTypeDef:
+    return {
+        "DeviceProfileId": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceProfileId`: `str`
-- `ServiceProfileId`: `str`
-
-<a id="lorawanupdategatewaytaskcreatetypedef"></a>
+```python title="Definition"
+class LoRaWANUpdateDeviceTypeDef(TypedDict):
+    DeviceProfileId: NotRequired[str],
+    ServiceProfileId: NotRequired[str],
+```
 
 ## LoRaWANUpdateGatewayTaskCreateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANUpdateGatewayTaskCreateTypeDef
+
+def get_value() -> LoRaWANUpdateGatewayTaskCreateTypeDef:
+    return {
+        "UpdateSignature": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoRaWANUpdateGatewayTaskCreateTypeDef(TypedDict):
+    UpdateSignature: NotRequired[str],
+    SigKeyCrc: NotRequired[int],
+    CurrentVersion: NotRequired[LoRaWANGatewayVersionTypeDef],  # (1)
+    UpdateVersion: NotRequired[LoRaWANGatewayVersionTypeDef],  # (1)
+```
 
-- `UpdateSignature`: `str`
-- `SigKeyCrc`: `int`
-- `CurrentVersion`:
-  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
-- `UpdateVersion`:
-  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
-
-<a id="lorawanupdategatewaytaskentrytypedef"></a>
-
+1. See [:material-code-braces: LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef) 
+2. See [:material-code-braces: LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef) 
 ## LoRaWANUpdateGatewayTaskEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import LoRaWANUpdateGatewayTaskEntryTypeDef
+
+def get_value() -> LoRaWANUpdateGatewayTaskEntryTypeDef:
+    return {
+        "CurrentVersion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoRaWANUpdateGatewayTaskEntryTypeDef(TypedDict):
+    CurrentVersion: NotRequired[LoRaWANGatewayVersionTypeDef],  # (1)
+    UpdateVersion: NotRequired[LoRaWANGatewayVersionTypeDef],  # (1)
+```
 
-- `CurrentVersion`:
-  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
-- `UpdateVersion`:
-  [LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef)
-
-<a id="multicastgroupbyfuotatasktypedef"></a>
-
+1. See [:material-code-braces: LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef) 
+2. See [:material-code-braces: LoRaWANGatewayVersionTypeDef](./type_defs.md#lorawangatewayversiontypedef) 
 ## MulticastGroupByFuotaTaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import MulticastGroupByFuotaTaskTypeDef
+
+def get_value() -> MulticastGroupByFuotaTaskTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-
-<a id="multicastgrouptypedef"></a>
+```python title="Definition"
+class MulticastGroupByFuotaTaskTypeDef(TypedDict):
+    Id: NotRequired[str],
+```
 
 ## MulticastGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import MulticastGroupTypeDef
+
+def get_value() -> MulticastGroupTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="multicastwirelessmetadatatypedef"></a>
+```python title="Definition"
+class MulticastGroupTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## MulticastWirelessMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import MulticastWirelessMetadataTypeDef
+
+def get_value() -> MulticastWirelessMetadataTypeDef:
+    return {
+        "LoRaWAN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MulticastWirelessMetadataTypeDef(TypedDict):
+    LoRaWAN: NotRequired[LoRaWANMulticastMetadataTypeDef],  # (1)
+```
 
-- `LoRaWAN`:
-  [LoRaWANMulticastMetadataTypeDef](./type_defs.md#lorawanmulticastmetadatatypedef)
-
-<a id="otaav1_0_xtypedef"></a>
-
+1. See [:material-code-braces: LoRaWANMulticastMetadataTypeDef](./type_defs.md#lorawanmulticastmetadatatypedef) 
 ## OtaaV1_0_xTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import OtaaV1_0_xTypeDef
+
+def get_value() -> OtaaV1_0_xTypeDef:
+    return {
+        "AppKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `AppKey`: `str`
-- `AppEui`: `str`
-- `GenAppKey`: `str`
-
-<a id="otaav1_1typedef"></a>
+```python title="Definition"
+class OtaaV1_0_xTypeDef(TypedDict):
+    AppKey: NotRequired[str],
+    AppEui: NotRequired[str],
+    GenAppKey: NotRequired[str],
+```
 
 ## OtaaV1_1TypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import OtaaV1_1TypeDef
+
+def get_value() -> OtaaV1_1TypeDef:
+    return {
+        "AppKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `AppKey`: `str`
-- `NwkKey`: `str`
-- `JoinEui`: `str`
-
-<a id="proximityeventconfigurationtypedef"></a>
+```python title="Definition"
+class OtaaV1_1TypeDef(TypedDict):
+    AppKey: NotRequired[str],
+    NwkKey: NotRequired[str],
+    JoinEui: NotRequired[str],
+```
 
 ## ProximityEventConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ProximityEventConfigurationTypeDef
+
+def get_value() -> ProximityEventConfigurationTypeDef:
+    return {
+        "Sidewalk": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProximityEventConfigurationTypeDef(TypedDict):
+    Sidewalk: NotRequired[SidewalkEventNotificationConfigurationsTypeDef],  # (1)
+```
 
-- `Sidewalk`:
-  [SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef)
-
-<a id="putresourceloglevelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SidewalkEventNotificationConfigurationsTypeDef](./type_defs.md#sidewalkeventnotificationconfigurationstypedef) 
 ## PutResourceLogLevelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import PutResourceLogLevelRequestRequestTypeDef
+
+def get_value() -> PutResourceLogLevelRequestRequestTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+        "ResourceType": ...,
+        "LogLevel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutResourceLogLevelRequestRequestTypeDef(TypedDict):
+    ResourceIdentifier: str,
+    ResourceType: str,
+    LogLevel: LogLevelType,  # (1)
+```
 
-- `ResourceIdentifier`: `str`
-- `ResourceType`: `str`
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-<a id="resetresourceloglevelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## ResetResourceLogLevelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ResetResourceLogLevelRequestRequestTypeDef
+
+def get_value() -> ResetResourceLogLevelRequestRequestTypeDef:
+    return {
+        "ResourceIdentifier": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceIdentifier`: `str`
-- `ResourceType`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResetResourceLogLevelRequestRequestTypeDef(TypedDict):
+    ResourceIdentifier: str,
+    ResourceType: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="senddatatomulticastgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SendDataToMulticastGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SendDataToMulticastGroupRequestRequestTypeDef
+
+def get_value() -> SendDataToMulticastGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "PayloadData": ...,
+        "WirelessMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendDataToMulticastGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+    PayloadData: str,
+    WirelessMetadata: MulticastWirelessMetadataTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `PayloadData`: `str`
-- `WirelessMetadata`:
-  [MulticastWirelessMetadataTypeDef](./type_defs.md#multicastwirelessmetadatatypedef)
-
-<a id="senddatatomulticastgroupresponsetypedef"></a>
-
+1. See [:material-code-braces: MulticastWirelessMetadataTypeDef](./type_defs.md#multicastwirelessmetadatatypedef) 
 ## SendDataToMulticastGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SendDataToMulticastGroupResponseTypeDef
+
+def get_value() -> SendDataToMulticastGroupResponseTypeDef:
+    return {
+        "MessageId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendDataToMulticastGroupResponseTypeDef(TypedDict):
+    MessageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MessageId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="senddatatowirelessdevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SendDataToWirelessDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SendDataToWirelessDeviceRequestRequestTypeDef
+
+def get_value() -> SendDataToWirelessDeviceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "TransmitMode": ...,
+        "PayloadData": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendDataToWirelessDeviceRequestRequestTypeDef(TypedDict):
+    Id: str,
+    TransmitMode: int,
+    PayloadData: str,
+    WirelessMetadata: NotRequired[WirelessMetadataTypeDef],  # (1)
+```
 
-- `Id`: `str`
-- `TransmitMode`: `int`
-- `PayloadData`: `str`
-
-Optional fields:
-
-- `WirelessMetadata`:
-  [WirelessMetadataTypeDef](./type_defs.md#wirelessmetadatatypedef)
-
-<a id="senddatatowirelessdeviceresponsetypedef"></a>
-
+1. See [:material-code-braces: WirelessMetadataTypeDef](./type_defs.md#wirelessmetadatatypedef) 
 ## SendDataToWirelessDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SendDataToWirelessDeviceResponseTypeDef
+
+def get_value() -> SendDataToWirelessDeviceResponseTypeDef:
+    return {
+        "MessageId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendDataToWirelessDeviceResponseTypeDef(TypedDict):
+    MessageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MessageId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="serviceprofiletypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import ServiceProfileTypeDef
+
+def get_value() -> ServiceProfileTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Name`: `str`
-- `Id`: `str`
-
-<a id="sessionkeysabpv1_0_xtypedef"></a>
+```python title="Definition"
+class ServiceProfileTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Id: NotRequired[str],
+```
 
 ## SessionKeysAbpV1_0_xTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SessionKeysAbpV1_0_xTypeDef
+
+def get_value() -> SessionKeysAbpV1_0_xTypeDef:
+    return {
+        "NwkSKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `NwkSKey`: `str`
-- `AppSKey`: `str`
-
-<a id="sessionkeysabpv1_1typedef"></a>
+```python title="Definition"
+class SessionKeysAbpV1_0_xTypeDef(TypedDict):
+    NwkSKey: NotRequired[str],
+    AppSKey: NotRequired[str],
+```
 
 ## SessionKeysAbpV1_1TypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SessionKeysAbpV1_1TypeDef
+
+def get_value() -> SessionKeysAbpV1_1TypeDef:
+    return {
+        "FNwkSIntKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `FNwkSIntKey`: `str`
-- `SNwkSIntKey`: `str`
-- `NwkSEncKey`: `str`
-- `AppSKey`: `str`
-
-<a id="sidewalkaccountinfotypedef"></a>
+```python title="Definition"
+class SessionKeysAbpV1_1TypeDef(TypedDict):
+    FNwkSIntKey: NotRequired[str],
+    SNwkSIntKey: NotRequired[str],
+    NwkSEncKey: NotRequired[str],
+    AppSKey: NotRequired[str],
+```
 
 ## SidewalkAccountInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SidewalkAccountInfoTypeDef
+
+def get_value() -> SidewalkAccountInfoTypeDef:
+    return {
+        "AmazonId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AmazonId`: `str`
-- `AppServerPrivateKey`: `str`
-
-<a id="sidewalkaccountinfowithfingerprinttypedef"></a>
+```python title="Definition"
+class SidewalkAccountInfoTypeDef(TypedDict):
+    AmazonId: NotRequired[str],
+    AppServerPrivateKey: NotRequired[str],
+```
 
 ## SidewalkAccountInfoWithFingerprintTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SidewalkAccountInfoWithFingerprintTypeDef
+
+def get_value() -> SidewalkAccountInfoWithFingerprintTypeDef:
+    return {
+        "AmazonId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AmazonId`: `str`
-- `Fingerprint`: `str`
-- `Arn`: `str`
-
-<a id="sidewalkdevicemetadatatypedef"></a>
+```python title="Definition"
+class SidewalkAccountInfoWithFingerprintTypeDef(TypedDict):
+    AmazonId: NotRequired[str],
+    Fingerprint: NotRequired[str],
+    Arn: NotRequired[str],
+```
 
 ## SidewalkDeviceMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SidewalkDeviceMetadataTypeDef
+
+def get_value() -> SidewalkDeviceMetadataTypeDef:
+    return {
+        "Rssi": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SidewalkDeviceMetadataTypeDef(TypedDict):
+    Rssi: NotRequired[int],
+    BatteryLevel: NotRequired[BatteryLevelType],  # (1)
+    Event: NotRequired[EventType],  # (2)
+    DeviceState: NotRequired[DeviceStateType],  # (3)
+```
 
-- `Rssi`: `int`
-- `BatteryLevel`: [BatteryLevelType](./literals.md#batteryleveltype)
-- `Event`: [EventType](./literals.md#eventtype)
-- `DeviceState`: [DeviceStateType](./literals.md#devicestatetype)
-
-<a id="sidewalkdevicetypedef"></a>
-
+1. See [:material-code-brackets: BatteryLevelType](./literals.md#batteryleveltype) 
+2. See [:material-code-brackets: EventType](./literals.md#eventtype) 
+3. See [:material-code-brackets: DeviceStateType](./literals.md#devicestatetype) 
 ## SidewalkDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SidewalkDeviceTypeDef
+
+def get_value() -> SidewalkDeviceTypeDef:
+    return {
+        "AmazonId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SidewalkDeviceTypeDef(TypedDict):
+    AmazonId: NotRequired[str],
+    SidewalkId: NotRequired[str],
+    SidewalkManufacturingSn: NotRequired[str],
+    DeviceCertificates: NotRequired[List[CertificateListTypeDef]],  # (1)
+```
 
-- `AmazonId`: `str`
-- `SidewalkId`: `str`
-- `SidewalkManufacturingSn`: `str`
-- `DeviceCertificates`:
-  `List`\[[CertificateListTypeDef](./type_defs.md#certificatelisttypedef)\]
-
-<a id="sidewalkeventnotificationconfigurationstypedef"></a>
-
+1. See [:material-code-braces: CertificateListTypeDef](./type_defs.md#certificatelisttypedef) 
 ## SidewalkEventNotificationConfigurationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SidewalkEventNotificationConfigurationsTypeDef
+
+def get_value() -> SidewalkEventNotificationConfigurationsTypeDef:
+    return {
+        "AmazonIdEventTopic": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SidewalkEventNotificationConfigurationsTypeDef(TypedDict):
+    AmazonIdEventTopic: NotRequired[EventNotificationTopicStatusType],  # (1)
+```
 
-- `AmazonIdEventTopic`:
-  [EventNotificationTopicStatusType](./literals.md#eventnotificationtopicstatustype)
-
-<a id="sidewalklistdevicetypedef"></a>
-
+1. See [:material-code-brackets: EventNotificationTopicStatusType](./literals.md#eventnotificationtopicstatustype) 
 ## SidewalkListDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SidewalkListDeviceTypeDef
+
+def get_value() -> SidewalkListDeviceTypeDef:
+    return {
+        "AmazonId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SidewalkListDeviceTypeDef(TypedDict):
+    AmazonId: NotRequired[str],
+    SidewalkId: NotRequired[str],
+    SidewalkManufacturingSn: NotRequired[str],
+    DeviceCertificates: NotRequired[List[CertificateListTypeDef]],  # (1)
+```
 
-- `AmazonId`: `str`
-- `SidewalkId`: `str`
-- `SidewalkManufacturingSn`: `str`
-- `DeviceCertificates`:
-  `List`\[[CertificateListTypeDef](./type_defs.md#certificatelisttypedef)\]
-
-<a id="sidewalksenddatatodevicetypedef"></a>
-
+1. See [:material-code-braces: CertificateListTypeDef](./type_defs.md#certificatelisttypedef) 
 ## SidewalkSendDataToDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SidewalkSendDataToDeviceTypeDef
+
+def get_value() -> SidewalkSendDataToDeviceTypeDef:
+    return {
+        "Seq": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SidewalkSendDataToDeviceTypeDef(TypedDict):
+    Seq: NotRequired[int],
+    MessageType: NotRequired[MessageTypeType],  # (1)
+```
 
-- `Seq`: `int`
-- `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
-
-<a id="sidewalkupdateaccounttypedef"></a>
-
+1. See [:material-code-brackets: MessageTypeType](./literals.md#messagetypetype) 
 ## SidewalkUpdateAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import SidewalkUpdateAccountTypeDef
+
+def get_value() -> SidewalkUpdateAccountTypeDef:
+    return {
+        "AppServerPrivateKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `AppServerPrivateKey`: `str`
-
-<a id="startbulkassociatewirelessdevicewithmulticastgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class SidewalkUpdateAccountTypeDef(TypedDict):
+    AppServerPrivateKey: NotRequired[str],
+```
 
 ## StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef
+
+def get_value() -> StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBulkAssociateWirelessDeviceWithMulticastGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+    QueryString: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `QueryString`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="startbulkdisassociatewirelessdevicefrommulticastgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef
+
+def get_value() -> StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBulkDisassociateWirelessDeviceFromMulticastGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+    QueryString: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `QueryString`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="startfuotataskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## StartFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import StartFuotaTaskRequestRequestTypeDef
+
+def get_value() -> StartFuotaTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartFuotaTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+    LoRaWAN: NotRequired[LoRaWANStartFuotaTaskTypeDef],  # (1)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `LoRaWAN`:
-  [LoRaWANStartFuotaTaskTypeDef](./type_defs.md#lorawanstartfuotatasktypedef)
-
-<a id="startmulticastgroupsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANStartFuotaTaskTypeDef](./type_defs.md#lorawanstartfuotatasktypedef) 
 ## StartMulticastGroupSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import StartMulticastGroupSessionRequestRequestTypeDef
+
+def get_value() -> StartMulticastGroupSessionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "LoRaWAN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartMulticastGroupSessionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    LoRaWAN: LoRaWANMulticastSessionTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `LoRaWAN`:
-  [LoRaWANMulticastSessionTypeDef](./type_defs.md#lorawanmulticastsessiontypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANMulticastSessionTypeDef](./type_defs.md#lorawanmulticastsessiontypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="testwirelessdevicerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TestWirelessDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import TestWirelessDeviceRequestRequestTypeDef
+
+def get_value() -> TestWirelessDeviceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="testwirelessdeviceresponsetypedef"></a>
+```python title="Definition"
+class TestWirelessDeviceRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## TestWirelessDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import TestWirelessDeviceResponseTypeDef
+
+def get_value() -> TestWirelessDeviceResponseTypeDef:
+    return {
+        "Result": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestWirelessDeviceResponseTypeDef(TypedDict):
+    Result: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Result`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tracecontenttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TraceContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import TraceContentTypeDef
+
+def get_value() -> TraceContentTypeDef:
+    return {
+        "WirelessDeviceFrameInfo": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TraceContentTypeDef(TypedDict):
+    WirelessDeviceFrameInfo: NotRequired[WirelessDeviceFrameInfoType],  # (1)
+    LogLevel: NotRequired[LogLevelType],  # (2)
+```
 
-- `WirelessDeviceFrameInfo`:
-  [WirelessDeviceFrameInfoType](./literals.md#wirelessdeviceframeinfotype)
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceFrameInfoType](./literals.md#wirelessdeviceframeinfotype) 
+2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedestinationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateDestinationRequestRequestTypeDef
+
+def get_value() -> UpdateDestinationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDestinationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ExpressionType: NotRequired[ExpressionTypeType],  # (1)
+    Expression: NotRequired[str],
+    Description: NotRequired[str],
+    RoleArn: NotRequired[str],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `ExpressionType`: [ExpressionTypeType](./literals.md#expressiontypetype)
-- `Expression`: `str`
-- `Description`: `str`
-- `RoleArn`: `str`
-
-<a id="updatefuotataskrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ExpressionTypeType](./literals.md#expressiontypetype) 
 ## UpdateFuotaTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateFuotaTaskRequestRequestTypeDef
+
+def get_value() -> UpdateFuotaTaskRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFuotaTaskRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANFuotaTaskTypeDef],  # (1)
+    FirmwareUpdateImage: NotRequired[str],
+    FirmwareUpdateRole: NotRequired[str],
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `LoRaWAN`: [LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef)
-- `FirmwareUpdateImage`: `str`
-- `FirmwareUpdateRole`: `str`
-
-<a id="updateloglevelsbyresourcetypesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANFuotaTaskTypeDef](./type_defs.md#lorawanfuotatasktypedef) 
 ## UpdateLogLevelsByResourceTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateLogLevelsByResourceTypesRequestRequestTypeDef
+
+def get_value() -> UpdateLogLevelsByResourceTypesRequestRequestTypeDef:
+    return {
+        "DefaultLogLevel": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateLogLevelsByResourceTypesRequestRequestTypeDef(TypedDict):
+    DefaultLogLevel: NotRequired[LogLevelType],  # (1)
+    WirelessDeviceLogOptions: NotRequired[Sequence[WirelessDeviceLogOptionTypeDef]],  # (2)
+    WirelessGatewayLogOptions: NotRequired[Sequence[WirelessGatewayLogOptionTypeDef]],  # (3)
+```
 
-- `DefaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
-- `WirelessDeviceLogOptions`:
-  `Sequence`\[[WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef)\]
-- `WirelessGatewayLogOptions`:
-  `Sequence`\[[WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)\]
-
-<a id="updatemulticastgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+2. See [:material-code-braces: WirelessDeviceLogOptionTypeDef](./type_defs.md#wirelessdevicelogoptiontypedef) 
+3. See [:material-code-braces: WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef) 
 ## UpdateMulticastGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateMulticastGroupRequestRequestTypeDef
+
+def get_value() -> UpdateMulticastGroupRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMulticastGroupRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANMulticastTypeDef],  # (1)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `LoRaWAN`: [LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef)
-
-<a id="updatenetworkanalyzerconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANMulticastTypeDef](./type_defs.md#lorawanmulticasttypedef) 
 ## UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef:
+    return {
+        "ConfigurationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNetworkAnalyzerConfigurationRequestRequestTypeDef(TypedDict):
+    ConfigurationName: str,
+    TraceContent: NotRequired[TraceContentTypeDef],  # (1)
+    WirelessDevicesToAdd: NotRequired[Sequence[str]],
+    WirelessDevicesToRemove: NotRequired[Sequence[str]],
+    WirelessGatewaysToAdd: NotRequired[Sequence[str]],
+    WirelessGatewaysToRemove: NotRequired[Sequence[str]],
+```
 
-- `ConfigurationName`: `str`
-
-Optional fields:
-
-- `TraceContent`: [TraceContentTypeDef](./type_defs.md#tracecontenttypedef)
-- `WirelessDevicesToAdd`: `Sequence`\[`str`\]
-- `WirelessDevicesToRemove`: `Sequence`\[`str`\]
-- `WirelessGatewaysToAdd`: `Sequence`\[`str`\]
-- `WirelessGatewaysToRemove`: `Sequence`\[`str`\]
-
-<a id="updatepartneraccountrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TraceContentTypeDef](./type_defs.md#tracecontenttypedef) 
 ## UpdatePartnerAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdatePartnerAccountRequestRequestTypeDef
+
+def get_value() -> UpdatePartnerAccountRequestRequestTypeDef:
+    return {
+        "Sidewalk": ...,
+        "PartnerAccountId": ...,
+        "PartnerType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePartnerAccountRequestRequestTypeDef(TypedDict):
+    Sidewalk: SidewalkUpdateAccountTypeDef,  # (1)
+    PartnerAccountId: str,
+    PartnerType: PartnerTypeType,  # (2)
+```
 
-- `Sidewalk`:
-  [SidewalkUpdateAccountTypeDef](./type_defs.md#sidewalkupdateaccounttypedef)
-- `PartnerAccountId`: `str`
-- `PartnerType`: `Literal['Sidewalk']` (see
-  [PartnerTypeType](./literals.md#partnertypetype))
-
-<a id="updateresourceeventconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SidewalkUpdateAccountTypeDef](./type_defs.md#sidewalkupdateaccounttypedef) 
+2. See [:material-code-brackets: PartnerTypeType](./literals.md#partnertypetype) 
 ## UpdateResourceEventConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateResourceEventConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateResourceEventConfigurationRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+        "IdentifierType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResourceEventConfigurationRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+    IdentifierType: IdentifierTypeType,  # (1)
+    PartnerType: NotRequired[EventNotificationPartnerTypeType],  # (2)
+    DeviceRegistrationState: NotRequired[DeviceRegistrationStateEventConfigurationTypeDef],  # (3)
+    Proximity: NotRequired[ProximityEventConfigurationTypeDef],  # (4)
+```
 
-- `Identifier`: `str`
-- `IdentifierType`: `Literal['PartnerAccountId']` (see
-  [IdentifierTypeType](./literals.md#identifiertypetype))
-
-Optional fields:
-
-- `PartnerType`: `Literal['Sidewalk']` (see
-  [EventNotificationPartnerTypeType](./literals.md#eventnotificationpartnertypetype))
-- `DeviceRegistrationState`:
-  [DeviceRegistrationStateEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateeventconfigurationtypedef)
-- `Proximity`:
-  [ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef)
-
-<a id="updatewirelessdevicerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: IdentifierTypeType](./literals.md#identifiertypetype) 
+2. See [:material-code-brackets: EventNotificationPartnerTypeType](./literals.md#eventnotificationpartnertypetype) 
+3. See [:material-code-braces: DeviceRegistrationStateEventConfigurationTypeDef](./type_defs.md#deviceregistrationstateeventconfigurationtypedef) 
+4. See [:material-code-braces: ProximityEventConfigurationTypeDef](./type_defs.md#proximityeventconfigurationtypedef) 
 ## UpdateWirelessDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateWirelessDeviceRequestRequestTypeDef
+
+def get_value() -> UpdateWirelessDeviceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWirelessDeviceRequestRequestTypeDef(TypedDict):
+    Id: str,
+    DestinationName: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANUpdateDeviceTypeDef],  # (1)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `DestinationName`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `LoRaWAN`:
-  [LoRaWANUpdateDeviceTypeDef](./type_defs.md#lorawanupdatedevicetypedef)
-
-<a id="updatewirelessgatewayrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoRaWANUpdateDeviceTypeDef](./type_defs.md#lorawanupdatedevicetypedef) 
 ## UpdateWirelessGatewayRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateWirelessGatewayRequestRequestTypeDef
+
+def get_value() -> UpdateWirelessGatewayRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `JoinEuiFilters`: `Sequence`\[`Sequence`\[`str`\]\]
-- `NetIdFilters`: `Sequence`\[`str`\]
-
-<a id="updatewirelessgatewaytaskcreatetypedef"></a>
+```python title="Definition"
+class UpdateWirelessGatewayRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    JoinEuiFilters: NotRequired[Sequence[Sequence[str]]],
+    NetIdFilters: NotRequired[Sequence[str]],
+```
 
 ## UpdateWirelessGatewayTaskCreateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateWirelessGatewayTaskCreateTypeDef
+
+def get_value() -> UpdateWirelessGatewayTaskCreateTypeDef:
+    return {
+        "UpdateDataSource": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateWirelessGatewayTaskCreateTypeDef(TypedDict):
+    UpdateDataSource: NotRequired[str],
+    UpdateDataRole: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANUpdateGatewayTaskCreateTypeDef],  # (1)
+```
 
-- `UpdateDataSource`: `str`
-- `UpdateDataRole`: `str`
-- `LoRaWAN`:
-  [LoRaWANUpdateGatewayTaskCreateTypeDef](./type_defs.md#lorawanupdategatewaytaskcreatetypedef)
-
-<a id="updatewirelessgatewaytaskentrytypedef"></a>
-
+1. See [:material-code-braces: LoRaWANUpdateGatewayTaskCreateTypeDef](./type_defs.md#lorawanupdategatewaytaskcreatetypedef) 
 ## UpdateWirelessGatewayTaskEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import UpdateWirelessGatewayTaskEntryTypeDef
+
+def get_value() -> UpdateWirelessGatewayTaskEntryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateWirelessGatewayTaskEntryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANUpdateGatewayTaskEntryTypeDef],  # (1)
+    Arn: NotRequired[str],
+```
 
-- `Id`: `str`
-- `LoRaWAN`:
-  [LoRaWANUpdateGatewayTaskEntryTypeDef](./type_defs.md#lorawanupdategatewaytaskentrytypedef)
-- `Arn`: `str`
-
-<a id="wirelessdeviceeventlogoptiontypedef"></a>
-
+1. See [:material-code-braces: LoRaWANUpdateGatewayTaskEntryTypeDef](./type_defs.md#lorawanupdategatewaytaskentrytypedef) 
 ## WirelessDeviceEventLogOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import WirelessDeviceEventLogOptionTypeDef
+
+def get_value() -> WirelessDeviceEventLogOptionTypeDef:
+    return {
+        "Event": ...,
+        "LogLevel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WirelessDeviceEventLogOptionTypeDef(TypedDict):
+    Event: WirelessDeviceEventType,  # (1)
+    LogLevel: LogLevelType,  # (2)
+```
 
-- `Event`: [WirelessDeviceEventType](./literals.md#wirelessdeviceeventtype)
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-<a id="wirelessdevicelogoptiontypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceEventType](./literals.md#wirelessdeviceeventtype) 
+2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## WirelessDeviceLogOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import WirelessDeviceLogOptionTypeDef
+
+def get_value() -> WirelessDeviceLogOptionTypeDef:
+    return {
+        "Type": ...,
+        "LogLevel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WirelessDeviceLogOptionTypeDef(TypedDict):
+    Type: WirelessDeviceTypeType,  # (1)
+    LogLevel: LogLevelType,  # (2)
+    Events: NotRequired[List[WirelessDeviceEventLogOptionTypeDef]],  # (3)
+```
 
-- `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-Optional fields:
-
-- `Events`:
-  `List`\[[WirelessDeviceEventLogOptionTypeDef](./type_defs.md#wirelessdeviceeventlogoptiontypedef)\]
-
-<a id="wirelessdevicestatisticstypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
+2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+3. See [:material-code-braces: WirelessDeviceEventLogOptionTypeDef](./type_defs.md#wirelessdeviceeventlogoptiontypedef) 
 ## WirelessDeviceStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import WirelessDeviceStatisticsTypeDef
+
+def get_value() -> WirelessDeviceStatisticsTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WirelessDeviceStatisticsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Id: NotRequired[str],
+    Type: NotRequired[WirelessDeviceTypeType],  # (1)
+    Name: NotRequired[str],
+    DestinationName: NotRequired[str],
+    LastUplinkReceivedAt: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANListDeviceTypeDef],  # (2)
+    Sidewalk: NotRequired[SidewalkListDeviceTypeDef],  # (3)
+    FuotaDeviceStatus: NotRequired[FuotaDeviceStatusType],  # (4)
+    MulticastDeviceStatus: NotRequired[str],
+    McGroupId: NotRequired[int],
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `Type`: [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
-- `Name`: `str`
-- `DestinationName`: `str`
-- `LastUplinkReceivedAt`: `str`
-- `LoRaWAN`:
-  [LoRaWANListDeviceTypeDef](./type_defs.md#lorawanlistdevicetypedef)
-- `Sidewalk`:
-  [SidewalkListDeviceTypeDef](./type_defs.md#sidewalklistdevicetypedef)
-- `FuotaDeviceStatus`:
-  [FuotaDeviceStatusType](./literals.md#fuotadevicestatustype)
-- `MulticastDeviceStatus`: `str`
-- `McGroupId`: `int`
-
-<a id="wirelessgatewayeventlogoptiontypedef"></a>
-
+1. See [:material-code-brackets: WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype) 
+2. See [:material-code-braces: LoRaWANListDeviceTypeDef](./type_defs.md#lorawanlistdevicetypedef) 
+3. See [:material-code-braces: SidewalkListDeviceTypeDef](./type_defs.md#sidewalklistdevicetypedef) 
+4. See [:material-code-brackets: FuotaDeviceStatusType](./literals.md#fuotadevicestatustype) 
 ## WirelessGatewayEventLogOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import WirelessGatewayEventLogOptionTypeDef
+
+def get_value() -> WirelessGatewayEventLogOptionTypeDef:
+    return {
+        "Event": ...,
+        "LogLevel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WirelessGatewayEventLogOptionTypeDef(TypedDict):
+    Event: WirelessGatewayEventType,  # (1)
+    LogLevel: LogLevelType,  # (2)
+```
 
-- `Event`: [WirelessGatewayEventType](./literals.md#wirelessgatewayeventtype)
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-<a id="wirelessgatewaylogoptiontypedef"></a>
-
+1. See [:material-code-brackets: WirelessGatewayEventType](./literals.md#wirelessgatewayeventtype) 
+2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## WirelessGatewayLogOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import WirelessGatewayLogOptionTypeDef
+
+def get_value() -> WirelessGatewayLogOptionTypeDef:
+    return {
+        "Type": ...,
+        "LogLevel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WirelessGatewayLogOptionTypeDef(TypedDict):
+    Type: WirelessGatewayTypeType,  # (1)
+    LogLevel: LogLevelType,  # (2)
+    Events: NotRequired[List[WirelessGatewayEventLogOptionTypeDef]],  # (3)
+```
 
-- `Type`: `Literal['LoRaWAN']` (see
-  [WirelessGatewayTypeType](./literals.md#wirelessgatewaytypetype))
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-Optional fields:
-
-- `Events`:
-  `List`\[[WirelessGatewayEventLogOptionTypeDef](./type_defs.md#wirelessgatewayeventlogoptiontypedef)\]
-
-<a id="wirelessgatewaystatisticstypedef"></a>
-
+1. See [:material-code-brackets: WirelessGatewayTypeType](./literals.md#wirelessgatewaytypetype) 
+2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+3. See [:material-code-braces: WirelessGatewayEventLogOptionTypeDef](./type_defs.md#wirelessgatewayeventlogoptiontypedef) 
 ## WirelessGatewayStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import WirelessGatewayStatisticsTypeDef
+
+def get_value() -> WirelessGatewayStatisticsTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WirelessGatewayStatisticsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    LoRaWAN: NotRequired[LoRaWANGatewayTypeDef],  # (1)
+    LastUplinkReceivedAt: NotRequired[str],
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `LoRaWAN`: [LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef)
-- `LastUplinkReceivedAt`: `str`
-
-<a id="wirelessmetadatatypedef"></a>
-
+1. See [:material-code-braces: LoRaWANGatewayTypeDef](./type_defs.md#lorawangatewaytypedef) 
 ## WirelessMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotwireless.type_defs import WirelessMetadataTypeDef
+
+def get_value() -> WirelessMetadataTypeDef:
+    return {
+        "LoRaWAN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WirelessMetadataTypeDef(TypedDict):
+    LoRaWAN: NotRequired[LoRaWANSendDataToDeviceTypeDef],  # (1)
+    Sidewalk: NotRequired[SidewalkSendDataToDeviceTypeDef],  # (2)
+```
 
-- `LoRaWAN`:
-  [LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef)
-- `Sidewalk`:
-  [SidewalkSendDataToDeviceTypeDef](./type_defs.md#sidewalksenddatatodevicetypedef)
+1. See [:material-code-braces: LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef) 
+2. See [:material-code-braces: SidewalkSendDataToDeviceTypeDef](./type_defs.md#sidewalksenddatatodevicetypedef) 

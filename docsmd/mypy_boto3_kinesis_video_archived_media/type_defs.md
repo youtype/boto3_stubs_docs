@@ -1,362 +1,456 @@
-<a id="typed-dictionaries-for-boto3-kinesisvideoarchivedmedia-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 KinesisVideoArchivedMedia module
+> [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [KinesisVideoArchivedMedia](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
-type annotations stubs module
-[mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
-
-- [Typed dictionaries for boto3 KinesisVideoArchivedMedia module](#typed-dictionaries-for-boto3-kinesisvideoarchivedmedia-module)
-  - [ClipFragmentSelectorTypeDef](#clipfragmentselectortypedef)
-  - [ClipTimestampRangeTypeDef](#cliptimestamprangetypedef)
-  - [DASHFragmentSelectorTypeDef](#dashfragmentselectortypedef)
-  - [DASHTimestampRangeTypeDef](#dashtimestamprangetypedef)
-  - [FragmentSelectorTypeDef](#fragmentselectortypedef)
-  - [FragmentTypeDef](#fragmenttypedef)
-  - [GetClipInputRequestTypeDef](#getclipinputrequesttypedef)
-  - [GetClipOutputTypeDef](#getclipoutputtypedef)
-  - [GetDASHStreamingSessionURLInputRequestTypeDef](#getdashstreamingsessionurlinputrequesttypedef)
-  - [GetDASHStreamingSessionURLOutputTypeDef](#getdashstreamingsessionurloutputtypedef)
-  - [GetHLSStreamingSessionURLInputRequestTypeDef](#gethlsstreamingsessionurlinputrequesttypedef)
-  - [GetHLSStreamingSessionURLOutputTypeDef](#gethlsstreamingsessionurloutputtypedef)
-  - [GetMediaForFragmentListInputRequestTypeDef](#getmediaforfragmentlistinputrequesttypedef)
-  - [GetMediaForFragmentListOutputTypeDef](#getmediaforfragmentlistoutputtypedef)
-  - [HLSFragmentSelectorTypeDef](#hlsfragmentselectortypedef)
-  - [HLSTimestampRangeTypeDef](#hlstimestamprangetypedef)
-  - [ListFragmentsInputRequestTypeDef](#listfragmentsinputrequesttypedef)
-  - [ListFragmentsOutputTypeDef](#listfragmentsoutputtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TimestampRangeTypeDef](#timestamprangetypedef)
-
-<a id="clipfragmentselectortypedef"></a>
+    Auto-generated documentation for [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+    type annotations stubs module [mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
 ## ClipFragmentSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import ClipFragmentSelectorTypeDef
+
+def get_value() -> ClipFragmentSelectorTypeDef:
+    return {
+        "FragmentSelectorType": ...,
+        "TimestampRange": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClipFragmentSelectorTypeDef(TypedDict):
+    FragmentSelectorType: ClipFragmentSelectorTypeType,  # (1)
+    TimestampRange: ClipTimestampRangeTypeDef,  # (2)
+```
 
-- `FragmentSelectorType`:
-  [ClipFragmentSelectorTypeType](./literals.md#clipfragmentselectortypetype)
-- `TimestampRange`:
-  [ClipTimestampRangeTypeDef](./type_defs.md#cliptimestamprangetypedef)
-
-<a id="cliptimestamprangetypedef"></a>
-
+1. See [:material-code-brackets: ClipFragmentSelectorTypeType](./literals.md#clipfragmentselectortypetype) 
+2. See [:material-code-braces: ClipTimestampRangeTypeDef](./type_defs.md#cliptimestamprangetypedef) 
 ## ClipTimestampRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import ClipTimestampRangeTypeDef
+
+def get_value() -> ClipTimestampRangeTypeDef:
+    return {
+        "StartTimestamp": ...,
+        "EndTimestamp": ...,
+    }
 ```
 
-Required fields:
-
-- `StartTimestamp`: `Union`\[`datetime`, `str`\]
-- `EndTimestamp`: `Union`\[`datetime`, `str`\]
-
-<a id="dashfragmentselectortypedef"></a>
+```python title="Definition"
+class ClipTimestampRangeTypeDef(TypedDict):
+    StartTimestamp: Union[datetime, str],
+    EndTimestamp: Union[datetime, str],
+```
 
 ## DASHFragmentSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import DASHFragmentSelectorTypeDef
+
+def get_value() -> DASHFragmentSelectorTypeDef:
+    return {
+        "FragmentSelectorType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DASHFragmentSelectorTypeDef(TypedDict):
+    FragmentSelectorType: NotRequired[DASHFragmentSelectorTypeType],  # (1)
+    TimestampRange: NotRequired[DASHTimestampRangeTypeDef],  # (2)
+```
 
-- `FragmentSelectorType`:
-  [DASHFragmentSelectorTypeType](./literals.md#dashfragmentselectortypetype)
-- `TimestampRange`:
-  [DASHTimestampRangeTypeDef](./type_defs.md#dashtimestamprangetypedef)
-
-<a id="dashtimestamprangetypedef"></a>
-
+1. See [:material-code-brackets: DASHFragmentSelectorTypeType](./literals.md#dashfragmentselectortypetype) 
+2. See [:material-code-braces: DASHTimestampRangeTypeDef](./type_defs.md#dashtimestamprangetypedef) 
 ## DASHTimestampRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import DASHTimestampRangeTypeDef
+
+def get_value() -> DASHTimestampRangeTypeDef:
+    return {
+        "StartTimestamp": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartTimestamp`: `Union`\[`datetime`, `str`\]
-- `EndTimestamp`: `Union`\[`datetime`, `str`\]
-
-<a id="fragmentselectortypedef"></a>
+```python title="Definition"
+class DASHTimestampRangeTypeDef(TypedDict):
+    StartTimestamp: NotRequired[Union[datetime, str]],
+    EndTimestamp: NotRequired[Union[datetime, str]],
+```
 
 ## FragmentSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import FragmentSelectorTypeDef
+
+def get_value() -> FragmentSelectorTypeDef:
+    return {
+        "FragmentSelectorType": ...,
+        "TimestampRange": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FragmentSelectorTypeDef(TypedDict):
+    FragmentSelectorType: FragmentSelectorTypeType,  # (1)
+    TimestampRange: TimestampRangeTypeDef,  # (2)
+```
 
-- `FragmentSelectorType`:
-  [FragmentSelectorTypeType](./literals.md#fragmentselectortypetype)
-- `TimestampRange`:
-  [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
-
-<a id="fragmenttypedef"></a>
-
+1. See [:material-code-brackets: FragmentSelectorTypeType](./literals.md#fragmentselectortypetype) 
+2. See [:material-code-braces: TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef) 
 ## FragmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import FragmentTypeDef
+
+def get_value() -> FragmentTypeDef:
+    return {
+        "FragmentNumber": ...,
+    }
 ```
 
-Optional fields:
-
-- `FragmentNumber`: `str`
-- `FragmentSizeInBytes`: `int`
-- `ProducerTimestamp`: `datetime`
-- `ServerTimestamp`: `datetime`
-- `FragmentLengthInMilliseconds`: `int`
-
-<a id="getclipinputrequesttypedef"></a>
+```python title="Definition"
+class FragmentTypeDef(TypedDict):
+    FragmentNumber: NotRequired[str],
+    FragmentSizeInBytes: NotRequired[int],
+    ProducerTimestamp: NotRequired[datetime],
+    ServerTimestamp: NotRequired[datetime],
+    FragmentLengthInMilliseconds: NotRequired[int],
+```
 
 ## GetClipInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import GetClipInputRequestTypeDef
+
+def get_value() -> GetClipInputRequestTypeDef:
+    return {
+        "ClipFragmentSelector": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetClipInputRequestTypeDef(TypedDict):
+    ClipFragmentSelector: ClipFragmentSelectorTypeDef,  # (1)
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+```
 
-- `ClipFragmentSelector`:
-  [ClipFragmentSelectorTypeDef](./type_defs.md#clipfragmentselectortypedef)
-
-Optional fields:
-
-- `StreamName`: `str`
-- `StreamARN`: `str`
-
-<a id="getclipoutputtypedef"></a>
-
+1. See [:material-code-braces: ClipFragmentSelectorTypeDef](./type_defs.md#clipfragmentselectortypedef) 
 ## GetClipOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import GetClipOutputTypeDef
+
+def get_value() -> GetClipOutputTypeDef:
+    return {
+        "ContentType": ...,
+        "Payload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetClipOutputTypeDef(TypedDict):
+    ContentType: str,
+    Payload: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContentType`: `str`
-- `Payload`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdashstreamingsessionurlinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDASHStreamingSessionURLInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import GetDASHStreamingSessionURLInputRequestTypeDef
+
+def get_value() -> GetDASHStreamingSessionURLInputRequestTypeDef:
+    return {
+        "StreamName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetDASHStreamingSessionURLInputRequestTypeDef(TypedDict):
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+    PlaybackMode: NotRequired[DASHPlaybackModeType],  # (1)
+    DisplayFragmentTimestamp: NotRequired[DASHDisplayFragmentTimestampType],  # (2)
+    DisplayFragmentNumber: NotRequired[DASHDisplayFragmentNumberType],  # (3)
+    DASHFragmentSelector: NotRequired[DASHFragmentSelectorTypeDef],  # (4)
+    Expires: NotRequired[int],
+    MaxManifestFragmentResults: NotRequired[int],
+```
 
-- `StreamName`: `str`
-- `StreamARN`: `str`
-- `PlaybackMode`: [DASHPlaybackModeType](./literals.md#dashplaybackmodetype)
-- `DisplayFragmentTimestamp`:
-  [DASHDisplayFragmentTimestampType](./literals.md#dashdisplayfragmenttimestamptype)
-- `DisplayFragmentNumber`:
-  [DASHDisplayFragmentNumberType](./literals.md#dashdisplayfragmentnumbertype)
-- `DASHFragmentSelector`:
-  [DASHFragmentSelectorTypeDef](./type_defs.md#dashfragmentselectortypedef)
-- `Expires`: `int`
-- `MaxManifestFragmentResults`: `int`
-
-<a id="getdashstreamingsessionurloutputtypedef"></a>
-
+1. See [:material-code-brackets: DASHPlaybackModeType](./literals.md#dashplaybackmodetype) 
+2. See [:material-code-brackets: DASHDisplayFragmentTimestampType](./literals.md#dashdisplayfragmenttimestamptype) 
+3. See [:material-code-brackets: DASHDisplayFragmentNumberType](./literals.md#dashdisplayfragmentnumbertype) 
+4. See [:material-code-braces: DASHFragmentSelectorTypeDef](./type_defs.md#dashfragmentselectortypedef) 
 ## GetDASHStreamingSessionURLOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import GetDASHStreamingSessionURLOutputTypeDef
+
+def get_value() -> GetDASHStreamingSessionURLOutputTypeDef:
+    return {
+        "DASHStreamingSessionURL": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDASHStreamingSessionURLOutputTypeDef(TypedDict):
+    DASHStreamingSessionURL: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DASHStreamingSessionURL`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethlsstreamingsessionurlinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHLSStreamingSessionURLInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import GetHLSStreamingSessionURLInputRequestTypeDef
+
+def get_value() -> GetHLSStreamingSessionURLInputRequestTypeDef:
+    return {
+        "StreamName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetHLSStreamingSessionURLInputRequestTypeDef(TypedDict):
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+    PlaybackMode: NotRequired[HLSPlaybackModeType],  # (1)
+    HLSFragmentSelector: NotRequired[HLSFragmentSelectorTypeDef],  # (2)
+    ContainerFormat: NotRequired[ContainerFormatType],  # (3)
+    DiscontinuityMode: NotRequired[HLSDiscontinuityModeType],  # (4)
+    DisplayFragmentTimestamp: NotRequired[HLSDisplayFragmentTimestampType],  # (5)
+    Expires: NotRequired[int],
+    MaxMediaPlaylistFragmentResults: NotRequired[int],
+```
 
-- `StreamName`: `str`
-- `StreamARN`: `str`
-- `PlaybackMode`: [HLSPlaybackModeType](./literals.md#hlsplaybackmodetype)
-- `HLSFragmentSelector`:
-  [HLSFragmentSelectorTypeDef](./type_defs.md#hlsfragmentselectortypedef)
-- `ContainerFormat`: [ContainerFormatType](./literals.md#containerformattype)
-- `DiscontinuityMode`:
-  [HLSDiscontinuityModeType](./literals.md#hlsdiscontinuitymodetype)
-- `DisplayFragmentTimestamp`:
-  [HLSDisplayFragmentTimestampType](./literals.md#hlsdisplayfragmenttimestamptype)
-- `Expires`: `int`
-- `MaxMediaPlaylistFragmentResults`: `int`
-
-<a id="gethlsstreamingsessionurloutputtypedef"></a>
-
+1. See [:material-code-brackets: HLSPlaybackModeType](./literals.md#hlsplaybackmodetype) 
+2. See [:material-code-braces: HLSFragmentSelectorTypeDef](./type_defs.md#hlsfragmentselectortypedef) 
+3. See [:material-code-brackets: ContainerFormatType](./literals.md#containerformattype) 
+4. See [:material-code-brackets: HLSDiscontinuityModeType](./literals.md#hlsdiscontinuitymodetype) 
+5. See [:material-code-brackets: HLSDisplayFragmentTimestampType](./literals.md#hlsdisplayfragmenttimestamptype) 
 ## GetHLSStreamingSessionURLOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import GetHLSStreamingSessionURLOutputTypeDef
+
+def get_value() -> GetHLSStreamingSessionURLOutputTypeDef:
+    return {
+        "HLSStreamingSessionURL": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHLSStreamingSessionURLOutputTypeDef(TypedDict):
+    HLSStreamingSessionURL: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HLSStreamingSessionURL`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmediaforfragmentlistinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMediaForFragmentListInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import GetMediaForFragmentListInputRequestTypeDef
+
+def get_value() -> GetMediaForFragmentListInputRequestTypeDef:
+    return {
+        "Fragments": ...,
+    }
 ```
 
-Required fields:
-
-- `Fragments`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `StreamName`: `str`
-- `StreamARN`: `str`
-
-<a id="getmediaforfragmentlistoutputtypedef"></a>
+```python title="Definition"
+class GetMediaForFragmentListInputRequestTypeDef(TypedDict):
+    Fragments: Sequence[str],
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+```
 
 ## GetMediaForFragmentListOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import GetMediaForFragmentListOutputTypeDef
+
+def get_value() -> GetMediaForFragmentListOutputTypeDef:
+    return {
+        "ContentType": ...,
+        "Payload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMediaForFragmentListOutputTypeDef(TypedDict):
+    ContentType: str,
+    Payload: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContentType`: `str`
-- `Payload`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hlsfragmentselectortypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HLSFragmentSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import HLSFragmentSelectorTypeDef
+
+def get_value() -> HLSFragmentSelectorTypeDef:
+    return {
+        "FragmentSelectorType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HLSFragmentSelectorTypeDef(TypedDict):
+    FragmentSelectorType: NotRequired[HLSFragmentSelectorTypeType],  # (1)
+    TimestampRange: NotRequired[HLSTimestampRangeTypeDef],  # (2)
+```
 
-- `FragmentSelectorType`:
-  [HLSFragmentSelectorTypeType](./literals.md#hlsfragmentselectortypetype)
-- `TimestampRange`:
-  [HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef)
-
-<a id="hlstimestamprangetypedef"></a>
-
+1. See [:material-code-brackets: HLSFragmentSelectorTypeType](./literals.md#hlsfragmentselectortypetype) 
+2. See [:material-code-braces: HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef) 
 ## HLSTimestampRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import HLSTimestampRangeTypeDef
+
+def get_value() -> HLSTimestampRangeTypeDef:
+    return {
+        "StartTimestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HLSTimestampRangeTypeDef(TypedDict):
+    StartTimestamp: NotRequired[Union[datetime, str]],
+    EndTimestamp: NotRequired[Union[datetime, str]],
+```
 
-- `StartTimestamp`: `Union`\[`datetime`, `str`\]
-- `EndTimestamp`: `Union`\[`datetime`, `str`\]
+## ListFragmentsInputListFragmentsPaginateTypeDef
 
-<a id="listfragmentsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_kinesis_video_archived_media.type_defs import ListFragmentsInputListFragmentsPaginateTypeDef
 
+def get_value() -> ListFragmentsInputListFragmentsPaginateTypeDef:
+    return {
+        "StreamName": ...,
+    }
+```
+
+```python title="Definition"
+class ListFragmentsInputListFragmentsPaginateTypeDef(TypedDict):
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+    FragmentSelector: NotRequired[FragmentSelectorTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFragmentsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import ListFragmentsInputRequestTypeDef
+
+def get_value() -> ListFragmentsInputRequestTypeDef:
+    return {
+        "StreamName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListFragmentsInputRequestTypeDef(TypedDict):
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    FragmentSelector: NotRequired[FragmentSelectorTypeDef],  # (1)
+```
 
-- `StreamName`: `str`
-- `StreamARN`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `FragmentSelector`:
-  [FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef)
-
-<a id="listfragmentsoutputtypedef"></a>
-
+1. See [:material-code-braces: FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef) 
 ## ListFragmentsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import ListFragmentsOutputTypeDef
+
+def get_value() -> ListFragmentsOutputTypeDef:
+    return {
+        "Fragments": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFragmentsOutputTypeDef(TypedDict):
+    Fragments: List[FragmentTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Fragments`: `List`\[[FragmentTypeDef](./type_defs.md#fragmenttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: FragmentTypeDef](./type_defs.md#fragmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="timestamprangetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TimestampRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_archived_media.type_defs import TimestampRangeTypeDef
+
+def get_value() -> TimestampRangeTypeDef:
+    return {
+        "StartTimestamp": ...,
+        "EndTimestamp": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TimestampRangeTypeDef(TypedDict):
+    StartTimestamp: Union[datetime, str],
+    EndTimestamp: Union[datetime, str],
+```
 
-- `StartTimestamp`: `Union`\[`datetime`, `str`\]
-- `EndTimestamp`: `Union`\[`datetime`, `str`\]

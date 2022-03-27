@@ -1,88 +1,18 @@
-<a id="securityhubclient-for-boto3-securityhub-module"></a>
-
-# SecurityHubClient for boto3 SecurityHub module
+# SecurityHubClient
 
 > [Index](../README.md) > [SecurityHub](./README.md) > SecurityHubClient
 
-Auto-generated documentation for
-[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
-type annotations stubs module
-[mypy-boto3-securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
+!!! note ""
 
-- [SecurityHubClient for boto3 SecurityHub module](#securityhubclient-for-boto3-securityhub-module)
-  - [SecurityHubClient](#securityhubclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_administrator_invitation](#accept_administrator_invitation)
-    - [accept_invitation](#accept_invitation)
-    - [batch_disable_standards](#batch_disable_standards)
-    - [batch_enable_standards](#batch_enable_standards)
-    - [batch_import_findings](#batch_import_findings)
-    - [batch_update_findings](#batch_update_findings)
-    - [can_paginate](#can_paginate)
-    - [create_action_target](#create_action_target)
-    - [create_finding_aggregator](#create_finding_aggregator)
-    - [create_insight](#create_insight)
-    - [create_members](#create_members)
-    - [decline_invitations](#decline_invitations)
-    - [delete_action_target](#delete_action_target)
-    - [delete_finding_aggregator](#delete_finding_aggregator)
-    - [delete_insight](#delete_insight)
-    - [delete_invitations](#delete_invitations)
-    - [delete_members](#delete_members)
-    - [describe_action_targets](#describe_action_targets)
-    - [describe_hub](#describe_hub)
-    - [describe_organization_configuration](#describe_organization_configuration)
-    - [describe_products](#describe_products)
-    - [describe_standards](#describe_standards)
-    - [describe_standards_controls](#describe_standards_controls)
-    - [disable_import_findings_for_product](#disable_import_findings_for_product)
-    - [disable_organization_admin_account](#disable_organization_admin_account)
-    - [disable_security_hub](#disable_security_hub)
-    - [disassociate_from_administrator_account](#disassociate_from_administrator_account)
-    - [disassociate_from_master_account](#disassociate_from_master_account)
-    - [disassociate_members](#disassociate_members)
-    - [enable_import_findings_for_product](#enable_import_findings_for_product)
-    - [enable_organization_admin_account](#enable_organization_admin_account)
-    - [enable_security_hub](#enable_security_hub)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_administrator_account](#get_administrator_account)
-    - [get_enabled_standards](#get_enabled_standards)
-    - [get_finding_aggregator](#get_finding_aggregator)
-    - [get_findings](#get_findings)
-    - [get_insight_results](#get_insight_results)
-    - [get_insights](#get_insights)
-    - [get_invitations_count](#get_invitations_count)
-    - [get_master_account](#get_master_account)
-    - [get_members](#get_members)
-    - [invite_members](#invite_members)
-    - [list_enabled_products_for_import](#list_enabled_products_for_import)
-    - [list_finding_aggregators](#list_finding_aggregators)
-    - [list_invitations](#list_invitations)
-    - [list_members](#list_members)
-    - [list_organization_admin_accounts](#list_organization_admin_accounts)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_action_target](#update_action_target)
-    - [update_finding_aggregator](#update_finding_aggregator)
-    - [update_findings](#update_findings)
-    - [update_insight](#update_insight)
-    - [update_organization_configuration](#update_organization_configuration)
-    - [update_security_hub_configuration](#update_security_hub_configuration)
-    - [update_standards_control](#update_standards_control)
-    - [get_paginator](#get_paginator)
-
-<a id="securityhubclient"></a>
+    Auto-generated documentation for [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
+    type annotations stubs module [mypy-boto3-securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 ## SecurityHubClient
 
-Type annotations for `boto3.client("securityhub")`
+Type annotations and code completion for `#!python boto3.client("securityhub")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_securityhub.client import SecurityHubClient
 
@@ -90,1336 +20,1701 @@ def get_securityhub_client() -> SecurityHubClient:
     return Session().client("securityhub")
 ```
 
-Boto3 documentation:
-[SecurityHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("securityhub").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("securityhub")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.InternalException,
+    client.InvalidAccessException,
+    client.InvalidInputException,
+    client.LimitExceededException,
+    client.ResourceConflictException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_securityhub.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalException`
-- `Exceptions.InvalidAccessException`
-- `Exceptions.InvalidInputException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceConflictException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SecurityHubClient exceptions.
-
-Type annotations for `boto3.client("securityhub").exceptions` method.
-
-Boto3 documentation:
-[SecurityHub.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_administrator\_invitation"></a>
-
-### accept_administrator_invitation
+### accept\_administrator\_invitation
 
 Accepts the invitation to be a member account and be monitored by the Security
 Hub administrator account that the invitation was sent from.
 
-Type annotations for
-`boto3.client("securityhub").accept_administrator_invitation` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").accept_administrator_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation)
 
-Boto3 documentation:
-[SecurityHub.Client.accept_administrator_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_administrator_invitation)
+```python title="Method definition"
+def accept_administrator_invitation(
+    self,
+    *,
+    AdministratorId: str,
+    InvitationId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AcceptAdministratorInvitationRequestRequestTypeDef](./type_defs.md#acceptadministratorinvitationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AdministratorId`: `str` *(required)*
-- `InvitationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptAdministratorInvitationRequestRequestTypeDef = {  # (1)
+    "AdministratorId": ...,
+    "InvitationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.accept_administrator_invitation(**kwargs)
+```
 
-<a id="accept\_invitation"></a>
+1. See [:material-code-braces: AcceptAdministratorInvitationRequestRequestTypeDef](./type_defs.md#acceptadministratorinvitationrequestrequesttypedef) 
 
-### accept_invitation
+### accept\_invitation
 
 This method is deprecated.
 
-Type annotations for `boto3.client("securityhub").accept_invitation` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").accept_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_invitation)
 
-Boto3 documentation:
-[SecurityHub.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.accept_invitation)
+```python title="Method definition"
+def accept_invitation(
+    self,
+    *,
+    MasterId: str,
+    InvitationId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MasterId`: `str` *(required)*
-- `InvitationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptInvitationRequestRequestTypeDef = {  # (1)
+    "MasterId": ...,
+    "InvitationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.accept_invitation(**kwargs)
+```
 
-<a id="batch\_disable\_standards"></a>
+1. See [:material-code-braces: AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef) 
 
-### batch_disable_standards
+### batch\_disable\_standards
 
 Disables the standards specified by the provided `StandardsSubscriptionArns` .
 
-Type annotations for `boto3.client("securityhub").batch_disable_standards`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").batch_disable_standards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards)
 
-Boto3 documentation:
-[SecurityHub.Client.batch_disable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_disable_standards)
+```python title="Method definition"
+def batch_disable_standards(
+    self,
+    *,
+    StandardsSubscriptionArns: Sequence[str],
+) -> BatchDisableStandardsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDisableStandardsRequestRequestTypeDef](./type_defs.md#batchdisablestandardsrequestrequesttypedef).
+1. See [:material-code-braces: BatchDisableStandardsResponseTypeDef](./type_defs.md#batchdisablestandardsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StandardsSubscriptionArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDisableStandardsRequestRequestTypeDef = {  # (1)
+    "StandardsSubscriptionArns": ...,
+}
 
-Returns
-[BatchDisableStandardsResponseTypeDef](./type_defs.md#batchdisablestandardsresponsetypedef).
+parent.batch_disable_standards(**kwargs)
+```
 
-<a id="batch\_enable\_standards"></a>
+1. See [:material-code-braces: BatchDisableStandardsRequestRequestTypeDef](./type_defs.md#batchdisablestandardsrequestrequesttypedef) 
 
-### batch_enable_standards
+### batch\_enable\_standards
 
 Enables the standards specified by the provided `StandardsArn`.
 
-Type annotations for `boto3.client("securityhub").batch_enable_standards`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").batch_enable_standards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards)
 
-Boto3 documentation:
-[SecurityHub.Client.batch_enable_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_enable_standards)
+```python title="Method definition"
+def batch_enable_standards(
+    self,
+    *,
+    StandardsSubscriptionRequests: Sequence[StandardsSubscriptionRequestTypeDef],  # (1)
+) -> BatchEnableStandardsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchEnableStandardsRequestRequestTypeDef](./type_defs.md#batchenablestandardsrequestrequesttypedef).
+1. See [:material-code-braces: StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef) 
+2. See [:material-code-braces: BatchEnableStandardsResponseTypeDef](./type_defs.md#batchenablestandardsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StandardsSubscriptionRequests`:
-  `Sequence`\[[StandardsSubscriptionRequestTypeDef](./type_defs.md#standardssubscriptionrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchEnableStandardsRequestRequestTypeDef = {  # (1)
+    "StandardsSubscriptionRequests": ...,
+}
 
-Returns
-[BatchEnableStandardsResponseTypeDef](./type_defs.md#batchenablestandardsresponsetypedef).
+parent.batch_enable_standards(**kwargs)
+```
 
-<a id="batch\_import\_findings"></a>
+1. See [:material-code-braces: BatchEnableStandardsRequestRequestTypeDef](./type_defs.md#batchenablestandardsrequestrequesttypedef) 
 
-### batch_import_findings
+### batch\_import\_findings
 
 Imports security findings generated by a finding provider into Security Hub.
 
-Type annotations for `boto3.client("securityhub").batch_import_findings`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").batch_import_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings)
 
-Boto3 documentation:
-[SecurityHub.Client.batch_import_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_import_findings)
+```python title="Method definition"
+def batch_import_findings(
+    self,
+    *,
+    Findings: Sequence[AwsSecurityFindingTypeDef],  # (1)
+) -> BatchImportFindingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchImportFindingsRequestRequestTypeDef](./type_defs.md#batchimportfindingsrequestrequesttypedef).
+1. See [:material-code-braces: AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef) 
+2. See [:material-code-braces: BatchImportFindingsResponseTypeDef](./type_defs.md#batchimportfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Findings`:
-  `Sequence`\[[AwsSecurityFindingTypeDef](./type_defs.md#awssecurityfindingtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchImportFindingsRequestRequestTypeDef = {  # (1)
+    "Findings": ...,
+}
 
-Returns
-[BatchImportFindingsResponseTypeDef](./type_defs.md#batchimportfindingsresponsetypedef).
+parent.batch_import_findings(**kwargs)
+```
 
-<a id="batch\_update\_findings"></a>
+1. See [:material-code-braces: BatchImportFindingsRequestRequestTypeDef](./type_defs.md#batchimportfindingsrequestrequesttypedef) 
 
-### batch_update_findings
+### batch\_update\_findings
 
 Used by Security Hub customers to update information about their investigation
 into a finding.
 
-Type annotations for `boto3.client("securityhub").batch_update_findings`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").batch_update_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings)
 
-Boto3 documentation:
-[SecurityHub.Client.batch_update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.batch_update_findings)
+```python title="Method definition"
+def batch_update_findings(
+    self,
+    *,
+    FindingIdentifiers: Sequence[AwsSecurityFindingIdentifierTypeDef],  # (1)
+    Note: NoteUpdateTypeDef = ...,  # (2)
+    Severity: SeverityUpdateTypeDef = ...,  # (3)
+    VerificationState: VerificationStateType = ...,  # (4)
+    Confidence: int = ...,
+    Criticality: int = ...,
+    Types: Sequence[str] = ...,
+    UserDefinedFields: Mapping[str, str] = ...,
+    Workflow: WorkflowUpdateTypeDef = ...,  # (5)
+    RelatedFindings: Sequence[RelatedFindingTypeDef] = ...,  # (6)
+) -> BatchUpdateFindingsResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[BatchUpdateFindingsRequestRequestTypeDef](./type_defs.md#batchupdatefindingsrequestrequesttypedef).
+1. See [:material-code-braces: AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef) 
+2. See [:material-code-braces: NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef) 
+3. See [:material-code-braces: SeverityUpdateTypeDef](./type_defs.md#severityupdatetypedef) 
+4. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+5. See [:material-code-braces: WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef) 
+6. See [:material-code-braces: RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef) 
+7. See [:material-code-braces: BatchUpdateFindingsResponseTypeDef](./type_defs.md#batchupdatefindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FindingIdentifiers`:
-  `Sequence`\[[AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)\]
-  *(required)*
-- `Note`: [NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef)
-- `Severity`: [SeverityUpdateTypeDef](./type_defs.md#severityupdatetypedef)
-- `VerificationState`:
-  [VerificationStateType](./literals.md#verificationstatetype)
-- `Confidence`: `int`
-- `Criticality`: `int`
-- `Types`: `Sequence`\[`str`\]
-- `UserDefinedFields`: `Mapping`\[`str`, `str`\]
-- `Workflow`: [WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef)
-- `RelatedFindings`:
-  `Sequence`\[[RelatedFindingTypeDef](./type_defs.md#relatedfindingtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: BatchUpdateFindingsRequestRequestTypeDef = {  # (1)
+    "FindingIdentifiers": ...,
+}
 
-Returns
-[BatchUpdateFindingsResponseTypeDef](./type_defs.md#batchupdatefindingsresponsetypedef).
+parent.batch_update_findings(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchUpdateFindingsRequestRequestTypeDef](./type_defs.md#batchupdatefindingsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("securityhub").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.can_paginate)
 
-Boto3 documentation:
-[SecurityHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_action\_target"></a>
-
-### create_action_target
+### create\_action\_target
 
 Creates a custom action target in Security Hub.
 
-Type annotations for `boto3.client("securityhub").create_action_target` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").create_action_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_action_target)
 
-Boto3 documentation:
-[SecurityHub.Client.create_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_action_target)
+```python title="Method definition"
+def create_action_target(
+    self,
+    *,
+    Name: str,
+    Description: str,
+    Id: str,
+) -> CreateActionTargetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateActionTargetRequestRequestTypeDef](./type_defs.md#createactiontargetrequestrequesttypedef).
+1. See [:material-code-braces: CreateActionTargetResponseTypeDef](./type_defs.md#createactiontargetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateActionTargetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Description": ...,
+    "Id": ...,
+}
 
-Returns
-[CreateActionTargetResponseTypeDef](./type_defs.md#createactiontargetresponsetypedef).
+parent.create_action_target(**kwargs)
+```
 
-<a id="create\_finding\_aggregator"></a>
+1. See [:material-code-braces: CreateActionTargetRequestRequestTypeDef](./type_defs.md#createactiontargetrequestrequesttypedef) 
 
-### create_finding_aggregator
+### create\_finding\_aggregator
 
 Used to enable finding aggregation.
 
-Type annotations for `boto3.client("securityhub").create_finding_aggregator`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").create_finding_aggregator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_finding_aggregator)
 
-Boto3 documentation:
-[SecurityHub.Client.create_finding_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_finding_aggregator)
+```python title="Method definition"
+def create_finding_aggregator(
+    self,
+    *,
+    RegionLinkingMode: str,
+    Regions: Sequence[str] = ...,
+) -> CreateFindingAggregatorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateFindingAggregatorRequestRequestTypeDef](./type_defs.md#createfindingaggregatorrequestrequesttypedef).
+1. See [:material-code-braces: CreateFindingAggregatorResponseTypeDef](./type_defs.md#createfindingaggregatorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegionLinkingMode`: `str` *(required)*
-- `Regions`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFindingAggregatorRequestRequestTypeDef = {  # (1)
+    "RegionLinkingMode": ...,
+}
 
-Returns
-[CreateFindingAggregatorResponseTypeDef](./type_defs.md#createfindingaggregatorresponsetypedef).
+parent.create_finding_aggregator(**kwargs)
+```
 
-<a id="create\_insight"></a>
+1. See [:material-code-braces: CreateFindingAggregatorRequestRequestTypeDef](./type_defs.md#createfindingaggregatorrequestrequesttypedef) 
 
-### create_insight
+### create\_insight
 
 Creates a custom insight in Security Hub.
 
-Type annotations for `boto3.client("securityhub").create_insight` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").create_insight` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_insight)
 
-Boto3 documentation:
-[SecurityHub.Client.create_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_insight)
+```python title="Method definition"
+def create_insight(
+    self,
+    *,
+    Name: str,
+    Filters: AwsSecurityFindingFiltersTypeDef,  # (1)
+    GroupByAttribute: str,
+) -> CreateInsightResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateInsightRequestRequestTypeDef](./type_defs.md#createinsightrequestrequesttypedef).
+1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
+2. See [:material-code-braces: CreateInsightResponseTypeDef](./type_defs.md#createinsightresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
-  *(required)*
-- `GroupByAttribute`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateInsightRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Filters": ...,
+    "GroupByAttribute": ...,
+}
 
-Returns
-[CreateInsightResponseTypeDef](./type_defs.md#createinsightresponsetypedef).
+parent.create_insight(**kwargs)
+```
 
-<a id="create\_members"></a>
+1. See [:material-code-braces: CreateInsightRequestRequestTypeDef](./type_defs.md#createinsightrequestrequesttypedef) 
 
-### create_members
+### create\_members
 
 Creates a member association in Security Hub between the specified accounts and
 the account used to make the request, which is the administrator account.
 
-Type annotations for `boto3.client("securityhub").create_members` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").create_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_members)
 
-Boto3 documentation:
-[SecurityHub.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.create_members)
+```python title="Method definition"
+def create_members(
+    self,
+    *,
+    AccountDetails: Sequence[AccountDetailsTypeDef],  # (1)
+) -> CreateMembersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef).
+1. See [:material-code-braces: AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef) 
+2. See [:material-code-braces: CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountDetails`:
-  `Sequence`\[[AccountDetailsTypeDef](./type_defs.md#accountdetailstypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateMembersRequestRequestTypeDef = {  # (1)
+    "AccountDetails": ...,
+}
 
-Returns
-[CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
+parent.create_members(**kwargs)
+```
 
-<a id="decline\_invitations"></a>
+1. See [:material-code-braces: CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef) 
 
-### decline_invitations
+### decline\_invitations
 
 Declines invitations to become a member account.
 
-Type annotations for `boto3.client("securityhub").decline_invitations` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").decline_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.decline_invitations)
 
-Boto3 documentation:
-[SecurityHub.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.decline_invitations)
+```python title="Method definition"
+def decline_invitations(
+    self,
+    *,
+    AccountIds: Sequence[str],
+) -> DeclineInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeclineInvitationsRequestRequestTypeDef](./type_defs.md#declineinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeclineInvitationsRequestRequestTypeDef = {  # (1)
+    "AccountIds": ...,
+}
 
-Returns
-[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
+parent.decline_invitations(**kwargs)
+```
 
-<a id="delete\_action\_target"></a>
+1. See [:material-code-braces: DeclineInvitationsRequestRequestTypeDef](./type_defs.md#declineinvitationsrequestrequesttypedef) 
 
-### delete_action_target
+### delete\_action\_target
 
 Deletes a custom action target from Security Hub.
 
-Type annotations for `boto3.client("securityhub").delete_action_target` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").delete_action_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_action_target)
 
-Boto3 documentation:
-[SecurityHub.Client.delete_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_action_target)
+```python title="Method definition"
+def delete_action_target(
+    self,
+    *,
+    ActionTargetArn: str,
+) -> DeleteActionTargetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteActionTargetRequestRequestTypeDef](./type_defs.md#deleteactiontargetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteActionTargetResponseTypeDef](./type_defs.md#deleteactiontargetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ActionTargetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteActionTargetRequestRequestTypeDef = {  # (1)
+    "ActionTargetArn": ...,
+}
 
-Returns
-[DeleteActionTargetResponseTypeDef](./type_defs.md#deleteactiontargetresponsetypedef).
+parent.delete_action_target(**kwargs)
+```
 
-<a id="delete\_finding\_aggregator"></a>
+1. See [:material-code-braces: DeleteActionTargetRequestRequestTypeDef](./type_defs.md#deleteactiontargetrequestrequesttypedef) 
 
-### delete_finding_aggregator
+### delete\_finding\_aggregator
 
 Deletes a finding aggregator.
 
-Type annotations for `boto3.client("securityhub").delete_finding_aggregator`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").delete_finding_aggregator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_finding_aggregator)
 
-Boto3 documentation:
-[SecurityHub.Client.delete_finding_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_finding_aggregator)
+```python title="Method definition"
+def delete_finding_aggregator(
+    self,
+    *,
+    FindingAggregatorArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFindingAggregatorRequestRequestTypeDef](./type_defs.md#deletefindingaggregatorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FindingAggregatorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFindingAggregatorRequestRequestTypeDef = {  # (1)
+    "FindingAggregatorArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_finding_aggregator(**kwargs)
+```
 
-<a id="delete\_insight"></a>
+1. See [:material-code-braces: DeleteFindingAggregatorRequestRequestTypeDef](./type_defs.md#deletefindingaggregatorrequestrequesttypedef) 
 
-### delete_insight
+### delete\_insight
 
 Deletes the insight specified by the `InsightArn` .
 
-Type annotations for `boto3.client("securityhub").delete_insight` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").delete_insight` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_insight)
 
-Boto3 documentation:
-[SecurityHub.Client.delete_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_insight)
+```python title="Method definition"
+def delete_insight(
+    self,
+    *,
+    InsightArn: str,
+) -> DeleteInsightResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInsightRequestRequestTypeDef](./type_defs.md#deleteinsightrequestrequesttypedef).
+1. See [:material-code-braces: DeleteInsightResponseTypeDef](./type_defs.md#deleteinsightresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InsightArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInsightRequestRequestTypeDef = {  # (1)
+    "InsightArn": ...,
+}
 
-Returns
-[DeleteInsightResponseTypeDef](./type_defs.md#deleteinsightresponsetypedef).
+parent.delete_insight(**kwargs)
+```
 
-<a id="delete\_invitations"></a>
+1. See [:material-code-braces: DeleteInsightRequestRequestTypeDef](./type_defs.md#deleteinsightrequestrequesttypedef) 
 
-### delete_invitations
+### delete\_invitations
 
 Deletes invitations received by the Amazon Web Services account to become a
 member account.
 
-Type annotations for `boto3.client("securityhub").delete_invitations` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").delete_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_invitations)
 
-Boto3 documentation:
-[SecurityHub.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_invitations)
+```python title="Method definition"
+def delete_invitations(
+    self,
+    *,
+    AccountIds: Sequence[str],
+) -> DeleteInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInvitationsRequestRequestTypeDef](./type_defs.md#deleteinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInvitationsRequestRequestTypeDef = {  # (1)
+    "AccountIds": ...,
+}
 
-Returns
-[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
+parent.delete_invitations(**kwargs)
+```
 
-<a id="delete\_members"></a>
+1. See [:material-code-braces: DeleteInvitationsRequestRequestTypeDef](./type_defs.md#deleteinvitationsrequestrequesttypedef) 
 
-### delete_members
+### delete\_members
 
 Deletes the specified member accounts from Security Hub.
 
-Type annotations for `boto3.client("securityhub").delete_members` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").delete_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_members)
 
-Boto3 documentation:
-[SecurityHub.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.delete_members)
+```python title="Method definition"
+def delete_members(
+    self,
+    *,
+    AccountIds: Sequence[str],
+) -> DeleteMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef).
+1. See [:material-code-braces: DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMembersRequestRequestTypeDef = {  # (1)
+    "AccountIds": ...,
+}
 
-Returns
-[DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
+parent.delete_members(**kwargs)
+```
 
-<a id="describe\_action\_targets"></a>
+1. See [:material-code-braces: DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef) 
 
-### describe_action_targets
+### describe\_action\_targets
 
 Returns a list of the custom action targets in Security Hub in your account.
 
-Type annotations for `boto3.client("securityhub").describe_action_targets`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").describe_action_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets)
 
-Boto3 documentation:
-[SecurityHub.Client.describe_action_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_action_targets)
+```python title="Method definition"
+def describe_action_targets(
+    self,
+    *,
+    ActionTargetArns: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeActionTargetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeActionTargetsRequestRequestTypeDef](./type_defs.md#describeactiontargetsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ActionTargetArns`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeActionTargetsRequestRequestTypeDef = {  # (1)
+    "ActionTargetArns": ...,
+}
 
-Returns
-[DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef).
+parent.describe_action_targets(**kwargs)
+```
 
-<a id="describe\_hub"></a>
+1. See [:material-code-braces: DescribeActionTargetsRequestRequestTypeDef](./type_defs.md#describeactiontargetsrequestrequesttypedef) 
 
-### describe_hub
+### describe\_hub
 
 Returns details about the Hub resource in your account, including the `HubArn`
 and the time when you enabled Security Hub.
 
-Type annotations for `boto3.client("securityhub").describe_hub` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").describe_hub` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_hub)
 
-Boto3 documentation:
-[SecurityHub.Client.describe_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_hub)
+```python title="Method definition"
+def describe_hub(
+    self,
+    *,
+    HubArn: str = ...,
+) -> DescribeHubResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeHubRequestRequestTypeDef](./type_defs.md#describehubrequestrequesttypedef).
+1. See [:material-code-braces: DescribeHubResponseTypeDef](./type_defs.md#describehubresponsetypedef) 
 
-Keyword-only arguments:
 
-- `HubArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeHubRequestRequestTypeDef = {  # (1)
+    "HubArn": ...,
+}
 
-Returns
-[DescribeHubResponseTypeDef](./type_defs.md#describehubresponsetypedef).
+parent.describe_hub(**kwargs)
+```
 
-<a id="describe\_organization\_configuration"></a>
+1. See [:material-code-braces: DescribeHubRequestRequestTypeDef](./type_defs.md#describehubrequestrequesttypedef) 
 
-### describe_organization_configuration
+### describe\_organization\_configuration
 
 Returns information about the Organizations configuration for Security Hub.
 
-Type annotations for
-`boto3.client("securityhub").describe_organization_configuration` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").describe_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration)
 
-Boto3 documentation:
-[SecurityHub.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_organization_configuration)
+```python title="Method definition"
+def describe_organization_configuration(
+    self,
+) -> DescribeOrganizationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
+1. See [:material-code-braces: DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef) 
 
-<a id="describe\_products"></a>
-
-### describe_products
+### describe\_products
 
 Returns information about product integrations in Security Hub.
 
-Type annotations for `boto3.client("securityhub").describe_products` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").describe_products` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_products)
 
-Boto3 documentation:
-[SecurityHub.Client.describe_products](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_products)
+```python title="Method definition"
+def describe_products(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ProductArn: str = ...,
+) -> DescribeProductsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProductsRequestRequestTypeDef](./type_defs.md#describeproductsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ProductArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeProductsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef).
+parent.describe_products(**kwargs)
+```
 
-<a id="describe\_standards"></a>
+1. See [:material-code-braces: DescribeProductsRequestRequestTypeDef](./type_defs.md#describeproductsrequestrequesttypedef) 
 
-### describe_standards
+### describe\_standards
 
 Returns a list of the available standards in Security Hub.
 
-Type annotations for `boto3.client("securityhub").describe_standards` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").describe_standards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards)
 
-Boto3 documentation:
-[SecurityHub.Client.describe_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards)
+```python title="Method definition"
+def describe_standards(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeStandardsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStandardsRequestRequestTypeDef](./type_defs.md#describestandardsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeStandardsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef).
+parent.describe_standards(**kwargs)
+```
 
-<a id="describe\_standards\_controls"></a>
+1. See [:material-code-braces: DescribeStandardsRequestRequestTypeDef](./type_defs.md#describestandardsrequestrequesttypedef) 
 
-### describe_standards_controls
+### describe\_standards\_controls
 
 Returns a list of security standards controls.
 
-Type annotations for `boto3.client("securityhub").describe_standards_controls`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").describe_standards_controls` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls)
 
-Boto3 documentation:
-[SecurityHub.Client.describe_standards_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.describe_standards_controls)
+```python title="Method definition"
+def describe_standards_controls(
+    self,
+    *,
+    StandardsSubscriptionArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeStandardsControlsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStandardsControlsRequestRequestTypeDef](./type_defs.md#describestandardscontrolsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StandardsSubscriptionArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeStandardsControlsRequestRequestTypeDef = {  # (1)
+    "StandardsSubscriptionArn": ...,
+}
 
-Returns
-[DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef).
+parent.describe_standards_controls(**kwargs)
+```
 
-<a id="disable\_import\_findings\_for\_product"></a>
+1. See [:material-code-braces: DescribeStandardsControlsRequestRequestTypeDef](./type_defs.md#describestandardscontrolsrequestrequesttypedef) 
 
-### disable_import_findings_for_product
+### disable\_import\_findings\_for\_product
 
 Disables the integration of the specified product with Security Hub.
 
-Type annotations for
-`boto3.client("securityhub").disable_import_findings_for_product` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").disable_import_findings_for_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product)
 
-Boto3 documentation:
-[SecurityHub.Client.disable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_import_findings_for_product)
+```python title="Method definition"
+def disable_import_findings_for_product(
+    self,
+    *,
+    ProductSubscriptionArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableImportFindingsForProductRequestRequestTypeDef](./type_defs.md#disableimportfindingsforproductrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProductSubscriptionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableImportFindingsForProductRequestRequestTypeDef = {  # (1)
+    "ProductSubscriptionArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_import_findings_for_product(**kwargs)
+```
 
-<a id="disable\_organization\_admin\_account"></a>
+1. See [:material-code-braces: DisableImportFindingsForProductRequestRequestTypeDef](./type_defs.md#disableimportfindingsforproductrequestrequesttypedef) 
 
-### disable_organization_admin_account
+### disable\_organization\_admin\_account
 
 Disables a Security Hub administrator account.
 
-Type annotations for
-`boto3.client("securityhub").disable_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").disable_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account)
 
-Boto3 documentation:
-[SecurityHub.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_organization_admin_account)
+```python title="Method definition"
+def disable_organization_admin_account(
+    self,
+    *,
+    AdminAccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AdminAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableOrganizationAdminAccountRequestRequestTypeDef = {  # (1)
+    "AdminAccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_organization_admin_account(**kwargs)
+```
 
-<a id="disable\_security\_hub"></a>
+1. See [:material-code-braces: DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef) 
 
-### disable_security_hub
+### disable\_security\_hub
 
 Disables Security Hub in your account only in the current Region.
 
-Type annotations for `boto3.client("securityhub").disable_security_hub` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").disable_security_hub` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_security_hub)
 
-Boto3 documentation:
-[SecurityHub.Client.disable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disable_security_hub)
+```python title="Method definition"
+def disable_security_hub(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate\_from\_administrator\_account"></a>
-
-### disassociate_from_administrator_account
+### disassociate\_from\_administrator\_account
 
 Disassociates the current Security Hub member account from the associated
 administrator account.
 
-Type annotations for
-`boto3.client("securityhub").disassociate_from_administrator_account` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").disassociate_from_administrator_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_administrator_account)
 
-Boto3 documentation:
-[SecurityHub.Client.disassociate_from_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_administrator_account)
+```python title="Method definition"
+def disassociate_from_administrator_account(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate\_from\_master\_account"></a>
-
-### disassociate_from_master_account
+### disassociate\_from\_master\_account
 
 This method is deprecated.
 
-Type annotations for
-`boto3.client("securityhub").disassociate_from_master_account` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").disassociate_from_master_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_master_account)
 
-Boto3 documentation:
-[SecurityHub.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_from_master_account)
+```python title="Method definition"
+def disassociate_from_master_account(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate\_members"></a>
-
-### disassociate_members
+### disassociate\_members
 
 Disassociates the specified member accounts from the associated administrator
 account.
 
-Type annotations for `boto3.client("securityhub").disassociate_members` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").disassociate_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_members)
 
-Boto3 documentation:
-[SecurityHub.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.disassociate_members)
+```python title="Method definition"
+def disassociate_members(
+    self,
+    *,
+    AccountIds: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateMembersRequestRequestTypeDef](./type_defs.md#disassociatemembersrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateMembersRequestRequestTypeDef = {  # (1)
+    "AccountIds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_members(**kwargs)
+```
 
-<a id="enable\_import\_findings\_for\_product"></a>
+1. See [:material-code-braces: DisassociateMembersRequestRequestTypeDef](./type_defs.md#disassociatemembersrequestrequesttypedef) 
 
-### enable_import_findings_for_product
+### enable\_import\_findings\_for\_product
 
 Enables the integration of a partner product with Security Hub.
 
-Type annotations for
-`boto3.client("securityhub").enable_import_findings_for_product` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").enable_import_findings_for_product` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product)
 
-Boto3 documentation:
-[SecurityHub.Client.enable_import_findings_for_product](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_import_findings_for_product)
+```python title="Method definition"
+def enable_import_findings_for_product(
+    self,
+    *,
+    ProductArn: str,
+) -> EnableImportFindingsForProductResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EnableImportFindingsForProductRequestRequestTypeDef](./type_defs.md#enableimportfindingsforproductrequestrequesttypedef).
+1. See [:material-code-braces: EnableImportFindingsForProductResponseTypeDef](./type_defs.md#enableimportfindingsforproductresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProductArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableImportFindingsForProductRequestRequestTypeDef = {  # (1)
+    "ProductArn": ...,
+}
 
-Returns
-[EnableImportFindingsForProductResponseTypeDef](./type_defs.md#enableimportfindingsforproductresponsetypedef).
+parent.enable_import_findings_for_product(**kwargs)
+```
 
-<a id="enable\_organization\_admin\_account"></a>
+1. See [:material-code-braces: EnableImportFindingsForProductRequestRequestTypeDef](./type_defs.md#enableimportfindingsforproductrequestrequesttypedef) 
 
-### enable_organization_admin_account
+### enable\_organization\_admin\_account
 
 Designates the Security Hub administrator account for an organization.
 
-Type annotations for
-`boto3.client("securityhub").enable_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").enable_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account)
 
-Boto3 documentation:
-[SecurityHub.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_organization_admin_account)
+```python title="Method definition"
+def enable_organization_admin_account(
+    self,
+    *,
+    AdminAccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AdminAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableOrganizationAdminAccountRequestRequestTypeDef = {  # (1)
+    "AdminAccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_organization_admin_account(**kwargs)
+```
 
-<a id="enable\_security\_hub"></a>
+1. See [:material-code-braces: EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef) 
 
-### enable_security_hub
+### enable\_security\_hub
 
 Enables Security Hub for your account in the current Region or the Region you
 specify in the request.
 
-Type annotations for `boto3.client("securityhub").enable_security_hub` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").enable_security_hub` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub)
 
-Boto3 documentation:
-[SecurityHub.Client.enable_security_hub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.enable_security_hub)
+```python title="Method definition"
+def enable_security_hub(
+    self,
+    *,
+    Tags: Mapping[str, str] = ...,
+    EnableDefaultStandards: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableSecurityHubRequestRequestTypeDef](./type_defs.md#enablesecurityhubrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `EnableDefaultStandards`: `bool`
+```python title="Usage example with kwargs"
+kwargs: EnableSecurityHubRequestRequestTypeDef = {  # (1)
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_security_hub(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableSecurityHubRequestRequestTypeDef](./type_defs.md#enablesecurityhubrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("securityhub").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SecurityHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_administrator\_account"></a>
-
-### get_administrator_account
+### get\_administrator\_account
 
 Provides the details for the Security Hub administrator account for the current
 member account.
 
-Type annotations for `boto3.client("securityhub").get_administrator_account`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_administrator_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account)
 
-Boto3 documentation:
-[SecurityHub.Client.get_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_administrator_account)
+```python title="Method definition"
+def get_administrator_account(
+    self,
+) -> GetAdministratorAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
+1. See [:material-code-braces: GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef) 
 
-<a id="get\_enabled\_standards"></a>
-
-### get_enabled_standards
+### get\_enabled\_standards
 
 Returns a list of the standards that are currently enabled.
 
-Type annotations for `boto3.client("securityhub").get_enabled_standards`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_enabled_standards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards)
 
-Boto3 documentation:
-[SecurityHub.Client.get_enabled_standards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_enabled_standards)
+```python title="Method definition"
+def get_enabled_standards(
+    self,
+    *,
+    StandardsSubscriptionArns: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetEnabledStandardsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEnabledStandardsRequestRequestTypeDef](./type_defs.md#getenabledstandardsrequestrequesttypedef).
+1. See [:material-code-braces: GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StandardsSubscriptionArns`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetEnabledStandardsRequestRequestTypeDef = {  # (1)
+    "StandardsSubscriptionArns": ...,
+}
 
-Returns
-[GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef).
+parent.get_enabled_standards(**kwargs)
+```
 
-<a id="get\_finding\_aggregator"></a>
+1. See [:material-code-braces: GetEnabledStandardsRequestRequestTypeDef](./type_defs.md#getenabledstandardsrequestrequesttypedef) 
 
-### get_finding_aggregator
+### get\_finding\_aggregator
 
 Returns the current finding aggregation configuration.
 
-Type annotations for `boto3.client("securityhub").get_finding_aggregator`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_finding_aggregator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_finding_aggregator)
 
-Boto3 documentation:
-[SecurityHub.Client.get_finding_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_finding_aggregator)
+```python title="Method definition"
+def get_finding_aggregator(
+    self,
+    *,
+    FindingAggregatorArn: str,
+) -> GetFindingAggregatorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFindingAggregatorRequestRequestTypeDef](./type_defs.md#getfindingaggregatorrequestrequesttypedef).
+1. See [:material-code-braces: GetFindingAggregatorResponseTypeDef](./type_defs.md#getfindingaggregatorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FindingAggregatorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFindingAggregatorRequestRequestTypeDef = {  # (1)
+    "FindingAggregatorArn": ...,
+}
 
-Returns
-[GetFindingAggregatorResponseTypeDef](./type_defs.md#getfindingaggregatorresponsetypedef).
+parent.get_finding_aggregator(**kwargs)
+```
 
-<a id="get\_findings"></a>
+1. See [:material-code-braces: GetFindingAggregatorRequestRequestTypeDef](./type_defs.md#getfindingaggregatorrequestrequesttypedef) 
 
-### get_findings
+### get\_findings
 
 Returns a list of findings that match the specified criteria.
 
-Type annotations for `boto3.client("securityhub").get_findings` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_findings)
 
-Boto3 documentation:
-[SecurityHub.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_findings)
+```python title="Method definition"
+def get_findings(
+    self,
+    *,
+    Filters: AwsSecurityFindingFiltersTypeDef = ...,  # (1)
+    SortCriteria: Sequence[SortCriterionTypeDef] = ...,  # (2)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetFindingsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef).
+1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
+2. See [:material-code-braces: SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef) 
+3. See [:material-code-braces: GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
-- `SortCriteria`:
-  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetFindingsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
+parent.get_findings(**kwargs)
+```
 
-<a id="get\_insight\_results"></a>
+1. See [:material-code-braces: GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef) 
 
-### get_insight_results
+### get\_insight\_results
 
 Lists the results of the Security Hub insight specified by the insight ARN.
 
-Type annotations for `boto3.client("securityhub").get_insight_results` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_insight_results` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insight_results)
 
-Boto3 documentation:
-[SecurityHub.Client.get_insight_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insight_results)
+```python title="Method definition"
+def get_insight_results(
+    self,
+    *,
+    InsightArn: str,
+) -> GetInsightResultsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInsightResultsRequestRequestTypeDef](./type_defs.md#getinsightresultsrequestrequesttypedef).
+1. See [:material-code-braces: GetInsightResultsResponseTypeDef](./type_defs.md#getinsightresultsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InsightArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInsightResultsRequestRequestTypeDef = {  # (1)
+    "InsightArn": ...,
+}
 
-Returns
-[GetInsightResultsResponseTypeDef](./type_defs.md#getinsightresultsresponsetypedef).
+parent.get_insight_results(**kwargs)
+```
 
-<a id="get\_insights"></a>
+1. See [:material-code-braces: GetInsightResultsRequestRequestTypeDef](./type_defs.md#getinsightresultsrequestrequesttypedef) 
 
-### get_insights
+### get\_insights
 
 Lists and describes insights for the specified insight ARNs.
 
-Type annotations for `boto3.client("securityhub").get_insights` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_insights` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insights)
 
-Boto3 documentation:
-[SecurityHub.Client.get_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_insights)
+```python title="Method definition"
+def get_insights(
+    self,
+    *,
+    InsightArns: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetInsightsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInsightsRequestRequestTypeDef](./type_defs.md#getinsightsrequestrequesttypedef).
+1. See [:material-code-braces: GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InsightArns`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetInsightsRequestRequestTypeDef = {  # (1)
+    "InsightArns": ...,
+}
 
-Returns
-[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef).
+parent.get_insights(**kwargs)
+```
 
-<a id="get\_invitations\_count"></a>
+1. See [:material-code-braces: GetInsightsRequestRequestTypeDef](./type_defs.md#getinsightsrequestrequesttypedef) 
 
-### get_invitations_count
+### get\_invitations\_count
 
 Returns the count of all Security Hub membership invitations that were sent to
 the current member account, not including the currently accepted invitation.
 
-Type annotations for `boto3.client("securityhub").get_invitations_count`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_invitations_count` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count)
 
-Boto3 documentation:
-[SecurityHub.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_invitations_count)
+```python title="Method definition"
+def get_invitations_count(
+    self,
+) -> GetInvitationsCountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
+1. See [:material-code-braces: GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef) 
 
-<a id="get\_master\_account"></a>
-
-### get_master_account
+### get\_master\_account
 
 This method is deprecated.
 
-Type annotations for `boto3.client("securityhub").get_master_account` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_master_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_master_account)
 
-Boto3 documentation:
-[SecurityHub.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_master_account)
+```python title="Method definition"
+def get_master_account(
+    self,
+) -> GetMasterAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
+1. See [:material-code-braces: GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef) 
 
-<a id="get\_members"></a>
-
-### get_members
+### get\_members
 
 Returns the details for the Security Hub member accounts for the specified
 account IDs.
 
-Type annotations for `boto3.client("securityhub").get_members` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_members)
 
-Boto3 documentation:
-[SecurityHub.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.get_members)
+```python title="Method definition"
+def get_members(
+    self,
+    *,
+    AccountIds: Sequence[str],
+) -> GetMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef).
+1. See [:material-code-braces: GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMembersRequestRequestTypeDef = {  # (1)
+    "AccountIds": ...,
+}
 
-Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
+parent.get_members(**kwargs)
+```
 
-<a id="invite\_members"></a>
+1. See [:material-code-braces: GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef) 
 
-### invite_members
+### invite\_members
 
 Invites other Amazon Web Services accounts to become member accounts for the
 Security Hub administrator account that the invitation is sent from.
 
-Type annotations for `boto3.client("securityhub").invite_members` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").invite_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.invite_members)
 
-Boto3 documentation:
-[SecurityHub.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.invite_members)
+```python title="Method definition"
+def invite_members(
+    self,
+    *,
+    AccountIds: Sequence[str],
+) -> InviteMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InviteMembersRequestRequestTypeDef](./type_defs.md#invitemembersrequestrequesttypedef).
+1. See [:material-code-braces: InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: InviteMembersRequestRequestTypeDef = {  # (1)
+    "AccountIds": ...,
+}
 
-Returns
-[InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef).
+parent.invite_members(**kwargs)
+```
 
-<a id="list\_enabled\_products\_for\_import"></a>
+1. See [:material-code-braces: InviteMembersRequestRequestTypeDef](./type_defs.md#invitemembersrequestrequesttypedef) 
 
-### list_enabled_products_for_import
+### list\_enabled\_products\_for\_import
 
 Lists all findings-generating solutions (products) that you are subscribed to
 receive findings from in Security Hub.
 
-Type annotations for
-`boto3.client("securityhub").list_enabled_products_for_import` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").list_enabled_products_for_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import)
 
-Boto3 documentation:
-[SecurityHub.Client.list_enabled_products_for_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_enabled_products_for_import)
+```python title="Method definition"
+def list_enabled_products_for_import(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEnabledProductsForImportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEnabledProductsForImportRequestRequestTypeDef](./type_defs.md#listenabledproductsforimportrequestrequesttypedef).
+1. See [:material-code-braces: ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEnabledProductsForImportRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef).
+parent.list_enabled_products_for_import(**kwargs)
+```
 
-<a id="list\_finding\_aggregators"></a>
+1. See [:material-code-braces: ListEnabledProductsForImportRequestRequestTypeDef](./type_defs.md#listenabledproductsforimportrequestrequesttypedef) 
 
-### list_finding_aggregators
+### list\_finding\_aggregators
 
-If finding aggregation is enabled, then `ListFindingAggregators` returns the
-ARN of the finding aggregator.
+If finding aggregation is enabled, then `ListFindingAggregators` returns the ARN
+of the finding aggregator.
 
-Type annotations for `boto3.client("securityhub").list_finding_aggregators`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").list_finding_aggregators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_finding_aggregators)
 
-Boto3 documentation:
-[SecurityHub.Client.list_finding_aggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_finding_aggregators)
+```python title="Method definition"
+def list_finding_aggregators(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFindingAggregatorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFindingAggregatorsRequestRequestTypeDef](./type_defs.md#listfindingaggregatorsrequestrequesttypedef).
+1. See [:material-code-braces: ListFindingAggregatorsResponseTypeDef](./type_defs.md#listfindingaggregatorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFindingAggregatorsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListFindingAggregatorsResponseTypeDef](./type_defs.md#listfindingaggregatorsresponsetypedef).
+parent.list_finding_aggregators(**kwargs)
+```
 
-<a id="list\_invitations"></a>
+1. See [:material-code-braces: ListFindingAggregatorsRequestRequestTypeDef](./type_defs.md#listfindingaggregatorsrequestrequesttypedef) 
 
-### list_invitations
+### list\_invitations
 
 Lists all Security Hub membership invitations that were sent to the current
 Amazon Web Services account.
 
-Type annotations for `boto3.client("securityhub").list_invitations` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").list_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_invitations)
 
-Boto3 documentation:
-[SecurityHub.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_invitations)
+```python title="Method definition"
+def list_invitations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInvitationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
+parent.list_invitations(**kwargs)
+```
 
-<a id="list\_members"></a>
+1. See [:material-code-braces: ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef) 
 
-### list_members
+### list\_members
 
 Lists details about all member accounts for the current Security Hub
 administrator account.
 
-Type annotations for `boto3.client("securityhub").list_members` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").list_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_members)
 
-Boto3 documentation:
-[SecurityHub.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_members)
+```python title="Method definition"
+def list_members(
+    self,
+    *,
+    OnlyAssociated: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef).
+1. See [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OnlyAssociated`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMembersRequestRequestTypeDef = {  # (1)
+    "OnlyAssociated": ...,
+}
 
-Returns
-[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
+parent.list_members(**kwargs)
+```
 
-<a id="list\_organization\_admin\_accounts"></a>
+1. See [:material-code-braces: ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef) 
 
-### list_organization_admin_accounts
+### list\_organization\_admin\_accounts
 
 Lists the Security Hub administrator accounts.
 
-Type annotations for
-`boto3.client("securityhub").list_organization_admin_accounts` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").list_organization_admin_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts)
 
-Boto3 documentation:
-[SecurityHub.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_organization_admin_accounts)
+```python title="Method definition"
+def list_organization_admin_accounts(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListOrganizationAdminAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationAdminAccountsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
+parent.list_organization_admin_accounts(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of tags associated with a resource.
 
-Type annotations for `boto3.client("securityhub").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[SecurityHub.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags to a resource.
 
-Type annotations for `boto3.client("securityhub").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.tag_resource)
 
-Boto3 documentation:
-[SecurityHub.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from a resource.
 
-Type annotations for `boto3.client("securityhub").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.untag_resource)
 
-Boto3 documentation:
-[SecurityHub.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_action\_target"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_action_target
+### update\_action\_target
 
 Updates the name and description of a custom action target in Security Hub.
 
-Type annotations for `boto3.client("securityhub").update_action_target` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").update_action_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_action_target)
 
-Boto3 documentation:
-[SecurityHub.Client.update_action_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_action_target)
+```python title="Method definition"
+def update_action_target(
+    self,
+    *,
+    ActionTargetArn: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateActionTargetRequestRequestTypeDef](./type_defs.md#updateactiontargetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ActionTargetArn`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateActionTargetRequestRequestTypeDef = {  # (1)
+    "ActionTargetArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_action_target(**kwargs)
+```
 
-<a id="update\_finding\_aggregator"></a>
+1. See [:material-code-braces: UpdateActionTargetRequestRequestTypeDef](./type_defs.md#updateactiontargetrequestrequesttypedef) 
 
-### update_finding_aggregator
+### update\_finding\_aggregator
 
 Updates the finding aggregation configuration.
 
-Type annotations for `boto3.client("securityhub").update_finding_aggregator`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").update_finding_aggregator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_finding_aggregator)
 
-Boto3 documentation:
-[SecurityHub.Client.update_finding_aggregator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_finding_aggregator)
+```python title="Method definition"
+def update_finding_aggregator(
+    self,
+    *,
+    FindingAggregatorArn: str,
+    RegionLinkingMode: str,
+    Regions: Sequence[str] = ...,
+) -> UpdateFindingAggregatorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFindingAggregatorRequestRequestTypeDef](./type_defs.md#updatefindingaggregatorrequestrequesttypedef).
+1. See [:material-code-braces: UpdateFindingAggregatorResponseTypeDef](./type_defs.md#updatefindingaggregatorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FindingAggregatorArn`: `str` *(required)*
-- `RegionLinkingMode`: `str` *(required)*
-- `Regions`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateFindingAggregatorRequestRequestTypeDef = {  # (1)
+    "FindingAggregatorArn": ...,
+    "RegionLinkingMode": ...,
+}
 
-Returns
-[UpdateFindingAggregatorResponseTypeDef](./type_defs.md#updatefindingaggregatorresponsetypedef).
+parent.update_finding_aggregator(**kwargs)
+```
 
-<a id="update\_findings"></a>
+1. See [:material-code-braces: UpdateFindingAggregatorRequestRequestTypeDef](./type_defs.md#updatefindingaggregatorrequestrequesttypedef) 
 
-### update_findings
+### update\_findings
 
 `UpdateFindings` is deprecated.
 
-Type annotations for `boto3.client("securityhub").update_findings` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").update_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_findings)
 
-Boto3 documentation:
-[SecurityHub.Client.update_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_findings)
+```python title="Method definition"
+def update_findings(
+    self,
+    *,
+    Filters: AwsSecurityFindingFiltersTypeDef,  # (1)
+    Note: NoteUpdateTypeDef = ...,  # (2)
+    RecordState: RecordStateType = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateFindingsRequestRequestTypeDef](./type_defs.md#updatefindingsrequestrequesttypedef).
+1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
+2. See [:material-code-braces: NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef) 
+3. See [:material-code-brackets: RecordStateType](./literals.md#recordstatetype) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
-  *(required)*
-- `Note`: [NoteUpdateTypeDef](./type_defs.md#noteupdatetypedef)
-- `RecordState`: [RecordStateType](./literals.md#recordstatetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateFindingsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_findings(**kwargs)
+```
 
-<a id="update\_insight"></a>
+1. See [:material-code-braces: UpdateFindingsRequestRequestTypeDef](./type_defs.md#updatefindingsrequestrequesttypedef) 
 
-### update_insight
+### update\_insight
 
 Updates the Security Hub insight identified by the specified insight ARN.
 
-Type annotations for `boto3.client("securityhub").update_insight` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").update_insight` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_insight)
 
-Boto3 documentation:
-[SecurityHub.Client.update_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_insight)
+```python title="Method definition"
+def update_insight(
+    self,
+    *,
+    InsightArn: str,
+    Name: str = ...,
+    Filters: AwsSecurityFindingFiltersTypeDef = ...,  # (1)
+    GroupByAttribute: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateInsightRequestRequestTypeDef](./type_defs.md#updateinsightrequestrequesttypedef).
+1. See [:material-code-braces: AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef) 
 
-Keyword-only arguments:
 
-- `InsightArn`: `str` *(required)*
-- `Name`: `str`
-- `Filters`:
-  [AwsSecurityFindingFiltersTypeDef](./type_defs.md#awssecurityfindingfilterstypedef)
-- `GroupByAttribute`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateInsightRequestRequestTypeDef = {  # (1)
+    "InsightArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_insight(**kwargs)
+```
 
-<a id="update\_organization\_configuration"></a>
+1. See [:material-code-braces: UpdateInsightRequestRequestTypeDef](./type_defs.md#updateinsightrequestrequesttypedef) 
 
-### update_organization_configuration
+### update\_organization\_configuration
 
 Used to update the configuration related to Organizations.
 
-Type annotations for
-`boto3.client("securityhub").update_organization_configuration` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").update_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration)
 
-Boto3 documentation:
-[SecurityHub.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_organization_configuration)
+```python title="Method definition"
+def update_organization_configuration(
+    self,
+    *,
+    AutoEnable: bool,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoEnable`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateOrganizationConfigurationRequestRequestTypeDef = {  # (1)
+    "AutoEnable": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_organization_configuration(**kwargs)
+```
 
-<a id="update\_security\_hub\_configuration"></a>
+1. See [:material-code-braces: UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef) 
 
-### update_security_hub_configuration
+### update\_security\_hub\_configuration
 
 Updates configuration options for Security Hub.
 
-Type annotations for
-`boto3.client("securityhub").update_security_hub_configuration` method.
+Type annotations and code completion for `#!python boto3.client("securityhub").update_security_hub_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration)
 
-Boto3 documentation:
-[SecurityHub.Client.update_security_hub_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_security_hub_configuration)
+```python title="Method definition"
+def update_security_hub_configuration(
+    self,
+    *,
+    AutoEnableControls: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSecurityHubConfigurationRequestRequestTypeDef](./type_defs.md#updatesecurityhubconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AutoEnableControls`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateSecurityHubConfigurationRequestRequestTypeDef = {  # (1)
+    "AutoEnableControls": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_security_hub_configuration(**kwargs)
+```
 
-<a id="update\_standards\_control"></a>
+1. See [:material-code-braces: UpdateSecurityHubConfigurationRequestRequestTypeDef](./type_defs.md#updatesecurityhubconfigurationrequestrequesttypedef) 
 
-### update_standards_control
+### update\_standards\_control
 
 Used to control whether an individual security standard control is enabled or
 disabled.
 
-Type annotations for `boto3.client("securityhub").update_standards_control`
-method.
+Type annotations and code completion for `#!python boto3.client("securityhub").update_standards_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_standards_control)
 
-Boto3 documentation:
-[SecurityHub.Client.update_standards_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client.update_standards_control)
+```python title="Method definition"
+def update_standards_control(
+    self,
+    *,
+    StandardsControlArn: str,
+    ControlStatus: ControlStatusType = ...,  # (1)
+    DisabledReason: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateStandardsControlRequestRequestTypeDef](./type_defs.md#updatestandardscontrolrequestrequesttypedef).
+1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
 
-Keyword-only arguments:
 
-- `StandardsControlArn`: `str` *(required)*
-- `ControlStatus`: [ControlStatusType](./literals.md#controlstatustype)
-- `DisabledReason`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStandardsControlRequestRequestTypeDef = {  # (1)
+    "StandardsControlArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_standards_control(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateStandardsControlRequestRequestTypeDef](./type_defs.md#updatestandardscontrolrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("securityhub").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("securityhub").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_action_targets")` ->
-  [DescribeActionTargetsPaginator](./paginators.md#describeactiontargetspaginator)
-- `client.get_paginator("describe_products")` ->
-  [DescribeProductsPaginator](./paginators.md#describeproductspaginator)
-- `client.get_paginator("describe_standards")` ->
-  [DescribeStandardsPaginator](./paginators.md#describestandardspaginator)
-- `client.get_paginator("describe_standards_controls")` ->
-  [DescribeStandardsControlsPaginator](./paginators.md#describestandardscontrolspaginator)
-- `client.get_paginator("get_enabled_standards")` ->
-  [GetEnabledStandardsPaginator](./paginators.md#getenabledstandardspaginator)
-- `client.get_paginator("get_findings")` ->
-  [GetFindingsPaginator](./paginators.md#getfindingspaginator)
-- `client.get_paginator("get_insights")` ->
-  [GetInsightsPaginator](./paginators.md#getinsightspaginator)
-- `client.get_paginator("list_enabled_products_for_import")` ->
-  [ListEnabledProductsForImportPaginator](./paginators.md#listenabledproductsforimportpaginator)
-- `client.get_paginator("list_finding_aggregators")` ->
-  [ListFindingAggregatorsPaginator](./paginators.md#listfindingaggregatorspaginator)
-- `client.get_paginator("list_invitations")` ->
-  [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
-- `client.get_paginator("list_members")` ->
-  [ListMembersPaginator](./paginators.md#listmemberspaginator)
-- `client.get_paginator("list_organization_admin_accounts")` ->
-  [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+- `client.get_paginator("describe_action_targets")` -> [DescribeActionTargetsPaginator](./paginators.md#describeactiontargetspaginator)
+- `client.get_paginator("describe_products")` -> [DescribeProductsPaginator](./paginators.md#describeproductspaginator)
+- `client.get_paginator("describe_standards")` -> [DescribeStandardsPaginator](./paginators.md#describestandardspaginator)
+- `client.get_paginator("describe_standards_controls")` -> [DescribeStandardsControlsPaginator](./paginators.md#describestandardscontrolspaginator)
+- `client.get_paginator("get_enabled_standards")` -> [GetEnabledStandardsPaginator](./paginators.md#getenabledstandardspaginator)
+- `client.get_paginator("get_findings")` -> [GetFindingsPaginator](./paginators.md#getfindingspaginator)
+- `client.get_paginator("get_insights")` -> [GetInsightsPaginator](./paginators.md#getinsightspaginator)
+- `client.get_paginator("list_enabled_products_for_import")` -> [ListEnabledProductsForImportPaginator](./paginators.md#listenabledproductsforimportpaginator)
+- `client.get_paginator("list_finding_aggregators")` -> [ListFindingAggregatorsPaginator](./paginators.md#listfindingaggregatorspaginator)
+- `client.get_paginator("list_invitations")` -> [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
+- `client.get_paginator("list_members")` -> [ListMembersPaginator](./paginators.md#listmemberspaginator)
+- `client.get_paginator("list_organization_admin_accounts")` -> [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+
+
+

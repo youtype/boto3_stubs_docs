@@ -1,851 +1,884 @@
-<a id="literals-for-boto3-organizations-module"></a>
-
-# Literals for boto3 Organizations module
+# Literals
 
 > [Index](../README.md) > [Organizations](./README.md) > Literals
 
-Auto-generated documentation for
-[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
-type annotations stubs module
-[mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
+!!! note ""
 
-- [Literals for boto3 Organizations module](#literals-for-boto3-organizations-module)
-  - [AccountJoinedMethodType](#accountjoinedmethodtype)
-  - [AccountStatusType](#accountstatustype)
-  - [ActionTypeType](#actiontypetype)
-  - [ChildTypeType](#childtypetype)
-  - [CreateAccountFailureReasonType](#createaccountfailurereasontype)
-  - [CreateAccountStateType](#createaccountstatetype)
-  - [EffectivePolicyTypeType](#effectivepolicytypetype)
-  - [HandshakePartyTypeType](#handshakepartytypetype)
-  - [HandshakeResourceTypeType](#handshakeresourcetypetype)
-  - [HandshakeStateType](#handshakestatetype)
-  - [IAMUserAccessToBillingType](#iamuseraccesstobillingtype)
-  - [ListAWSServiceAccessForOrganizationPaginatorName](#listawsserviceaccessfororganizationpaginatorname)
-  - [ListAccountsForParentPaginatorName](#listaccountsforparentpaginatorname)
-  - [ListAccountsPaginatorName](#listaccountspaginatorname)
-  - [ListChildrenPaginatorName](#listchildrenpaginatorname)
-  - [ListCreateAccountStatusPaginatorName](#listcreateaccountstatuspaginatorname)
-  - [ListDelegatedAdministratorsPaginatorName](#listdelegatedadministratorspaginatorname)
-  - [ListDelegatedServicesForAccountPaginatorName](#listdelegatedservicesforaccountpaginatorname)
-  - [ListHandshakesForAccountPaginatorName](#listhandshakesforaccountpaginatorname)
-  - [ListHandshakesForOrganizationPaginatorName](#listhandshakesfororganizationpaginatorname)
-  - [ListOrganizationalUnitsForParentPaginatorName](#listorganizationalunitsforparentpaginatorname)
-  - [ListParentsPaginatorName](#listparentspaginatorname)
-  - [ListPoliciesForTargetPaginatorName](#listpoliciesfortargetpaginatorname)
-  - [ListPoliciesPaginatorName](#listpoliciespaginatorname)
-  - [ListRootsPaginatorName](#listrootspaginatorname)
-  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [ListTargetsForPolicyPaginatorName](#listtargetsforpolicypaginatorname)
-  - [OrganizationFeatureSetType](#organizationfeaturesettype)
-  - [ParentTypeType](#parenttypetype)
-  - [PolicyTypeStatusType](#policytypestatustype)
-  - [PolicyTypeType](#policytypetype)
-  - [TargetTypeType](#targettypetype)
-  - [OrganizationsServiceName](#organizationsservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="accountjoinedmethodtype"></a>
+    Auto-generated documentation for [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+    type annotations stubs module [mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 ## AccountJoinedMethodType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import AccountJoinedMethodType
+
+def get_value() -> AccountJoinedMethodType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATED`
-- `INVITED`
-
-<a id="accountstatustype"></a>
-
+```python title="Definition"
+AccountJoinedMethodType = Literal[
+    "CREATED",
+    "INVITED",
+]
+```
 ## AccountStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import AccountStatusType
+
+def get_value() -> AccountStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `SUSPENDED`
-
-<a id="actiontypetype"></a>
-
+```python title="Definition"
+AccountStatusType = Literal[
+    "ACTIVE",
+    "SUSPENDED",
+]
+```
 ## ActionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ActionTypeType
+
+def get_value() -> ActionTypeType:
+    return "ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE"
 ```
 
-Values:
-
-- `ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE`
-- `APPROVE_ALL_FEATURES`
-- `ENABLE_ALL_FEATURES`
-- `INVITE`
-
-<a id="childtypetype"></a>
-
+```python title="Definition"
+ActionTypeType = Literal[
+    "ADD_ORGANIZATIONS_SERVICE_LINKED_ROLE",
+    "APPROVE_ALL_FEATURES",
+    "ENABLE_ALL_FEATURES",
+    "INVITE",
+]
+```
 ## ChildTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ChildTypeType
+
+def get_value() -> ChildTypeType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-- `ORGANIZATIONAL_UNIT`
-
-<a id="createaccountfailurereasontype"></a>
-
+```python title="Definition"
+ChildTypeType = Literal[
+    "ACCOUNT",
+    "ORGANIZATIONAL_UNIT",
+]
+```
 ## CreateAccountFailureReasonType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import CreateAccountFailureReasonType
+
+def get_value() -> CreateAccountFailureReasonType:
+    return "ACCOUNT_LIMIT_EXCEEDED"
 ```
 
-Values:
-
-- `ACCOUNT_LIMIT_EXCEEDED`
-- `CONCURRENT_ACCOUNT_MODIFICATION`
-- `EMAIL_ALREADY_EXISTS`
-- `FAILED_BUSINESS_VALIDATION`
-- `GOVCLOUD_ACCOUNT_ALREADY_EXISTS`
-- `INTERNAL_FAILURE`
-- `INVALID_ADDRESS`
-- `INVALID_EMAIL`
-- `INVALID_IDENTITY_FOR_BUSINESS_VALIDATION`
-- `MISSING_BUSINESS_VALIDATION`
-- `MISSING_PAYMENT_INSTRUMENT`
-- `PENDING_BUSINESS_VALIDATION`
-- `UNKNOWN_BUSINESS_VALIDATION`
-
-<a id="createaccountstatetype"></a>
-
+```python title="Definition"
+CreateAccountFailureReasonType = Literal[
+    "ACCOUNT_LIMIT_EXCEEDED",
+    "CONCURRENT_ACCOUNT_MODIFICATION",
+    "EMAIL_ALREADY_EXISTS",
+    "FAILED_BUSINESS_VALIDATION",
+    "GOVCLOUD_ACCOUNT_ALREADY_EXISTS",
+    "INTERNAL_FAILURE",
+    "INVALID_ADDRESS",
+    "INVALID_EMAIL",
+    "INVALID_IDENTITY_FOR_BUSINESS_VALIDATION",
+    "MISSING_BUSINESS_VALIDATION",
+    "MISSING_PAYMENT_INSTRUMENT",
+    "PENDING_BUSINESS_VALIDATION",
+    "UNKNOWN_BUSINESS_VALIDATION",
+]
+```
 ## CreateAccountStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import CreateAccountStateType
+
+def get_value() -> CreateAccountStateType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `SUCCEEDED`
-
-<a id="effectivepolicytypetype"></a>
-
+```python title="Definition"
+CreateAccountStateType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "SUCCEEDED",
+]
+```
 ## EffectivePolicyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import EffectivePolicyTypeType
+
+def get_value() -> EffectivePolicyTypeType:
+    return "AISERVICES_OPT_OUT_POLICY"
 ```
 
-Values:
-
-- `AISERVICES_OPT_OUT_POLICY`
-- `BACKUP_POLICY`
-- `TAG_POLICY`
-
-<a id="handshakepartytypetype"></a>
-
+```python title="Definition"
+EffectivePolicyTypeType = Literal[
+    "AISERVICES_OPT_OUT_POLICY",
+    "BACKUP_POLICY",
+    "TAG_POLICY",
+]
+```
 ## HandshakePartyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import HandshakePartyTypeType
+
+def get_value() -> HandshakePartyTypeType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-- `EMAIL`
-- `ORGANIZATION`
-
-<a id="handshakeresourcetypetype"></a>
-
+```python title="Definition"
+HandshakePartyTypeType = Literal[
+    "ACCOUNT",
+    "EMAIL",
+    "ORGANIZATION",
+]
+```
 ## HandshakeResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import HandshakeResourceTypeType
+
+def get_value() -> HandshakeResourceTypeType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-- `EMAIL`
-- `MASTER_EMAIL`
-- `MASTER_NAME`
-- `NOTES`
-- `ORGANIZATION`
-- `ORGANIZATION_FEATURE_SET`
-- `PARENT_HANDSHAKE`
-
-<a id="handshakestatetype"></a>
-
+```python title="Definition"
+HandshakeResourceTypeType = Literal[
+    "ACCOUNT",
+    "EMAIL",
+    "MASTER_EMAIL",
+    "MASTER_NAME",
+    "NOTES",
+    "ORGANIZATION",
+    "ORGANIZATION_FEATURE_SET",
+    "PARENT_HANDSHAKE",
+]
+```
 ## HandshakeStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import HandshakeStateType
+
+def get_value() -> HandshakeStateType:
+    return "ACCEPTED"
 ```
 
-Values:
-
-- `ACCEPTED`
-- `CANCELED`
-- `DECLINED`
-- `EXPIRED`
-- `OPEN`
-- `REQUESTED`
-
-<a id="iamuseraccesstobillingtype"></a>
-
+```python title="Definition"
+HandshakeStateType = Literal[
+    "ACCEPTED",
+    "CANCELED",
+    "DECLINED",
+    "EXPIRED",
+    "OPEN",
+    "REQUESTED",
+]
+```
 ## IAMUserAccessToBillingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import IAMUserAccessToBillingType
+
+def get_value() -> IAMUserAccessToBillingType:
+    return "ALLOW"
 ```
 
-Values:
-
-- `ALLOW`
-- `DENY`
-
-<a id="listawsserviceaccessfororganizationpaginatorname"></a>
-
+```python title="Definition"
+IAMUserAccessToBillingType = Literal[
+    "ALLOW",
+    "DENY",
+]
+```
 ## ListAWSServiceAccessForOrganizationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListAWSServiceAccessForOrganizationPaginatorName
+
+def get_value() -> ListAWSServiceAccessForOrganizationPaginatorName:
+    return "list_aws_service_access_for_organization"
 ```
 
-Values:
-
-- `list_aws_service_access_for_organization`
-
-<a id="listaccountsforparentpaginatorname"></a>
-
+```python title="Definition"
+ListAWSServiceAccessForOrganizationPaginatorName = Literal[
+    "list_aws_service_access_for_organization",
+]
+```
 ## ListAccountsForParentPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListAccountsForParentPaginatorName
+
+def get_value() -> ListAccountsForParentPaginatorName:
+    return "list_accounts_for_parent"
 ```
 
-Values:
-
-- `list_accounts_for_parent`
-
-<a id="listaccountspaginatorname"></a>
-
+```python title="Definition"
+ListAccountsForParentPaginatorName = Literal[
+    "list_accounts_for_parent",
+]
+```
 ## ListAccountsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListAccountsPaginatorName
+
+def get_value() -> ListAccountsPaginatorName:
+    return "list_accounts"
 ```
 
-Values:
-
-- `list_accounts`
-
-<a id="listchildrenpaginatorname"></a>
-
+```python title="Definition"
+ListAccountsPaginatorName = Literal[
+    "list_accounts",
+]
+```
 ## ListChildrenPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListChildrenPaginatorName
+
+def get_value() -> ListChildrenPaginatorName:
+    return "list_children"
 ```
 
-Values:
-
-- `list_children`
-
-<a id="listcreateaccountstatuspaginatorname"></a>
-
+```python title="Definition"
+ListChildrenPaginatorName = Literal[
+    "list_children",
+]
+```
 ## ListCreateAccountStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListCreateAccountStatusPaginatorName
+
+def get_value() -> ListCreateAccountStatusPaginatorName:
+    return "list_create_account_status"
 ```
 
-Values:
-
-- `list_create_account_status`
-
-<a id="listdelegatedadministratorspaginatorname"></a>
-
+```python title="Definition"
+ListCreateAccountStatusPaginatorName = Literal[
+    "list_create_account_status",
+]
+```
 ## ListDelegatedAdministratorsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListDelegatedAdministratorsPaginatorName
+
+def get_value() -> ListDelegatedAdministratorsPaginatorName:
+    return "list_delegated_administrators"
 ```
 
-Values:
-
-- `list_delegated_administrators`
-
-<a id="listdelegatedservicesforaccountpaginatorname"></a>
-
+```python title="Definition"
+ListDelegatedAdministratorsPaginatorName = Literal[
+    "list_delegated_administrators",
+]
+```
 ## ListDelegatedServicesForAccountPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListDelegatedServicesForAccountPaginatorName
+
+def get_value() -> ListDelegatedServicesForAccountPaginatorName:
+    return "list_delegated_services_for_account"
 ```
 
-Values:
-
-- `list_delegated_services_for_account`
-
-<a id="listhandshakesforaccountpaginatorname"></a>
-
+```python title="Definition"
+ListDelegatedServicesForAccountPaginatorName = Literal[
+    "list_delegated_services_for_account",
+]
+```
 ## ListHandshakesForAccountPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListHandshakesForAccountPaginatorName
+
+def get_value() -> ListHandshakesForAccountPaginatorName:
+    return "list_handshakes_for_account"
 ```
 
-Values:
-
-- `list_handshakes_for_account`
-
-<a id="listhandshakesfororganizationpaginatorname"></a>
-
+```python title="Definition"
+ListHandshakesForAccountPaginatorName = Literal[
+    "list_handshakes_for_account",
+]
+```
 ## ListHandshakesForOrganizationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListHandshakesForOrganizationPaginatorName
+
+def get_value() -> ListHandshakesForOrganizationPaginatorName:
+    return "list_handshakes_for_organization"
 ```
 
-Values:
-
-- `list_handshakes_for_organization`
-
-<a id="listorganizationalunitsforparentpaginatorname"></a>
-
+```python title="Definition"
+ListHandshakesForOrganizationPaginatorName = Literal[
+    "list_handshakes_for_organization",
+]
+```
 ## ListOrganizationalUnitsForParentPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListOrganizationalUnitsForParentPaginatorName
+
+def get_value() -> ListOrganizationalUnitsForParentPaginatorName:
+    return "list_organizational_units_for_parent"
 ```
 
-Values:
-
-- `list_organizational_units_for_parent`
-
-<a id="listparentspaginatorname"></a>
-
+```python title="Definition"
+ListOrganizationalUnitsForParentPaginatorName = Literal[
+    "list_organizational_units_for_parent",
+]
+```
 ## ListParentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListParentsPaginatorName
+
+def get_value() -> ListParentsPaginatorName:
+    return "list_parents"
 ```
 
-Values:
-
-- `list_parents`
-
-<a id="listpoliciesfortargetpaginatorname"></a>
-
+```python title="Definition"
+ListParentsPaginatorName = Literal[
+    "list_parents",
+]
+```
 ## ListPoliciesForTargetPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListPoliciesForTargetPaginatorName
+
+def get_value() -> ListPoliciesForTargetPaginatorName:
+    return "list_policies_for_target"
 ```
 
-Values:
-
-- `list_policies_for_target`
-
-<a id="listpoliciespaginatorname"></a>
-
+```python title="Definition"
+ListPoliciesForTargetPaginatorName = Literal[
+    "list_policies_for_target",
+]
+```
 ## ListPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListPoliciesPaginatorName
+
+def get_value() -> ListPoliciesPaginatorName:
+    return "list_policies"
 ```
 
-Values:
-
-- `list_policies`
-
-<a id="listrootspaginatorname"></a>
-
+```python title="Definition"
+ListPoliciesPaginatorName = Literal[
+    "list_policies",
+]
+```
 ## ListRootsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListRootsPaginatorName
+
+def get_value() -> ListRootsPaginatorName:
+    return "list_roots"
 ```
 
-Values:
-
-- `list_roots`
-
-<a id="listtagsforresourcepaginatorname"></a>
-
+```python title="Definition"
+ListRootsPaginatorName = Literal[
+    "list_roots",
+]
+```
 ## ListTagsForResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListTagsForResourcePaginatorName
+
+def get_value() -> ListTagsForResourcePaginatorName:
+    return "list_tags_for_resource"
 ```
 
-Values:
-
-- `list_tags_for_resource`
-
-<a id="listtargetsforpolicypaginatorname"></a>
-
+```python title="Definition"
+ListTagsForResourcePaginatorName = Literal[
+    "list_tags_for_resource",
+]
+```
 ## ListTargetsForPolicyPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ListTargetsForPolicyPaginatorName
+
+def get_value() -> ListTargetsForPolicyPaginatorName:
+    return "list_targets_for_policy"
 ```
 
-Values:
-
-- `list_targets_for_policy`
-
-<a id="organizationfeaturesettype"></a>
-
+```python title="Definition"
+ListTargetsForPolicyPaginatorName = Literal[
+    "list_targets_for_policy",
+]
+```
 ## OrganizationFeatureSetType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import OrganizationFeatureSetType
+
+def get_value() -> OrganizationFeatureSetType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CONSOLIDATED_BILLING`
-
-<a id="parenttypetype"></a>
-
+```python title="Definition"
+OrganizationFeatureSetType = Literal[
+    "ALL",
+    "CONSOLIDATED_BILLING",
+]
+```
 ## ParentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ParentTypeType
+
+def get_value() -> ParentTypeType:
+    return "ORGANIZATIONAL_UNIT"
 ```
 
-Values:
-
-- `ORGANIZATIONAL_UNIT`
-- `ROOT`
-
-<a id="policytypestatustype"></a>
-
+```python title="Definition"
+ParentTypeType = Literal[
+    "ORGANIZATIONAL_UNIT",
+    "ROOT",
+]
+```
 ## PolicyTypeStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import PolicyTypeStatusType
+
+def get_value() -> PolicyTypeStatusType:
+    return "ENABLED"
 ```
 
-Values:
-
-- `ENABLED`
-- `PENDING_DISABLE`
-- `PENDING_ENABLE`
-
-<a id="policytypetype"></a>
-
+```python title="Definition"
+PolicyTypeStatusType = Literal[
+    "ENABLED",
+    "PENDING_DISABLE",
+    "PENDING_ENABLE",
+]
+```
 ## PolicyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import PolicyTypeType
+
+def get_value() -> PolicyTypeType:
+    return "AISERVICES_OPT_OUT_POLICY"
 ```
 
-Values:
-
-- `AISERVICES_OPT_OUT_POLICY`
-- `BACKUP_POLICY`
-- `SERVICE_CONTROL_POLICY`
-- `TAG_POLICY`
-
-<a id="targettypetype"></a>
-
+```python title="Definition"
+PolicyTypeType = Literal[
+    "AISERVICES_OPT_OUT_POLICY",
+    "BACKUP_POLICY",
+    "SERVICE_CONTROL_POLICY",
+    "TAG_POLICY",
+]
+```
 ## TargetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import TargetTypeType
+
+def get_value() -> TargetTypeType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-- `ORGANIZATIONAL_UNIT`
-- `ROOT`
-
-<a id="organizationsservicename"></a>
-
+```python title="Definition"
+TargetTypeType = Literal[
+    "ACCOUNT",
+    "ORGANIZATIONAL_UNIT",
+    "ROOT",
+]
+```
 ## OrganizationsServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import OrganizationsServiceName
+
+def get_value() -> OrganizationsServiceName:
+    return "organizations"
 ```
 
-Values:
-
-- `organizations`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+OrganizationsServiceName = Literal[
+    "organizations",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_organizations.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_accounts"
 ```
 
-Values:
-
-- `list_accounts`
-- `list_accounts_for_parent`
-- `list_aws_service_access_for_organization`
-- `list_children`
-- `list_create_account_status`
-- `list_delegated_administrators`
-- `list_delegated_services_for_account`
-- `list_handshakes_for_account`
-- `list_handshakes_for_organization`
-- `list_organizational_units_for_parent`
-- `list_parents`
-- `list_policies`
-- `list_policies_for_target`
-- `list_roots`
-- `list_tags_for_resource`
-- `list_targets_for_policy`
+```python title="Definition"
+PaginatorName = Literal[
+    "list_accounts",
+    "list_accounts_for_parent",
+    "list_aws_service_access_for_organization",
+    "list_children",
+    "list_create_account_status",
+    "list_delegated_administrators",
+    "list_delegated_services_for_account",
+    "list_handshakes_for_account",
+    "list_handshakes_for_organization",
+    "list_organizational_units_for_parent",
+    "list_parents",
+    "list_policies",
+    "list_policies_for_target",
+    "list_roots",
+    "list_tags_for_resource",
+    "list_targets_for_policy",
+]
+```

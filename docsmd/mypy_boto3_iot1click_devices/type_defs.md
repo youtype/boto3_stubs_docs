@@ -1,456 +1,591 @@
-<a id="typed-dictionaries-for-boto3-iot1clickdevicesservice-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 IoT1ClickDevicesService module
+> [Index](../README.md) > [IoT1ClickDevicesService](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [IoT1ClickDevicesService](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
-type annotations stubs module
-[mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
-
-- [Typed dictionaries for boto3 IoT1ClickDevicesService module](#typed-dictionaries-for-boto3-iot1clickdevicesservice-module)
-  - [ClaimDevicesByClaimCodeRequestRequestTypeDef](#claimdevicesbyclaimcoderequestrequesttypedef)
-  - [ClaimDevicesByClaimCodeResponseTypeDef](#claimdevicesbyclaimcoderesponsetypedef)
-  - [DescribeDeviceRequestRequestTypeDef](#describedevicerequestrequesttypedef)
-  - [DescribeDeviceResponseTypeDef](#describedeviceresponsetypedef)
-  - [DeviceDescriptionTypeDef](#devicedescriptiontypedef)
-  - [DeviceEventTypeDef](#deviceeventtypedef)
-  - [DeviceMethodTypeDef](#devicemethodtypedef)
-  - [DeviceTypeDef](#devicetypedef)
-  - [FinalizeDeviceClaimRequestRequestTypeDef](#finalizedeviceclaimrequestrequesttypedef)
-  - [FinalizeDeviceClaimResponseTypeDef](#finalizedeviceclaimresponsetypedef)
-  - [GetDeviceMethodsRequestRequestTypeDef](#getdevicemethodsrequestrequesttypedef)
-  - [GetDeviceMethodsResponseTypeDef](#getdevicemethodsresponsetypedef)
-  - [InitiateDeviceClaimRequestRequestTypeDef](#initiatedeviceclaimrequestrequesttypedef)
-  - [InitiateDeviceClaimResponseTypeDef](#initiatedeviceclaimresponsetypedef)
-  - [InvokeDeviceMethodRequestRequestTypeDef](#invokedevicemethodrequestrequesttypedef)
-  - [InvokeDeviceMethodResponseTypeDef](#invokedevicemethodresponsetypedef)
-  - [ListDeviceEventsRequestRequestTypeDef](#listdeviceeventsrequestrequesttypedef)
-  - [ListDeviceEventsResponseTypeDef](#listdeviceeventsresponsetypedef)
-  - [ListDevicesRequestRequestTypeDef](#listdevicesrequestrequesttypedef)
-  - [ListDevicesResponseTypeDef](#listdevicesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UnclaimDeviceRequestRequestTypeDef](#unclaimdevicerequestrequesttypedef)
-  - [UnclaimDeviceResponseTypeDef](#unclaimdeviceresponsetypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDeviceStateRequestRequestTypeDef](#updatedevicestaterequestrequesttypedef)
-
-<a id="claimdevicesbyclaimcoderequestrequesttypedef"></a>
+    Auto-generated documentation for [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+    type annotations stubs module [mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 ## ClaimDevicesByClaimCodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeRequestRequestTypeDef
+
+def get_value() -> ClaimDevicesByClaimCodeRequestRequestTypeDef:
+    return {
+        "ClaimCode": ...,
+    }
 ```
 
-Required fields:
-
-- `ClaimCode`: `str`
-
-<a id="claimdevicesbyclaimcoderesponsetypedef"></a>
+```python title="Definition"
+class ClaimDevicesByClaimCodeRequestRequestTypeDef(TypedDict):
+    ClaimCode: str,
+```
 
 ## ClaimDevicesByClaimCodeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeResponseTypeDef
+
+def get_value() -> ClaimDevicesByClaimCodeResponseTypeDef:
+    return {
+        "ClaimCode": ...,
+        "Total": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClaimDevicesByClaimCodeResponseTypeDef(TypedDict):
+    ClaimCode: str,
+    Total: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ClaimCode`: `str`
-- `Total`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import DescribeDeviceRequestRequestTypeDef
+
+def get_value() -> DescribeDeviceRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-
-<a id="describedeviceresponsetypedef"></a>
+```python title="Definition"
+class DescribeDeviceRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+```
 
 ## DescribeDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import DescribeDeviceResponseTypeDef
+
+def get_value() -> DescribeDeviceResponseTypeDef:
+    return {
+        "DeviceDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDeviceResponseTypeDef(TypedDict):
+    DeviceDescription: DeviceDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeviceDescription`:
-  [DeviceDescriptionTypeDef](./type_defs.md#devicedescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="devicedescriptiontypedef"></a>
-
+1. See [:material-code-braces: DeviceDescriptionTypeDef](./type_defs.md#devicedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import DeviceDescriptionTypeDef
+
+def get_value() -> DeviceDescriptionTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `DeviceId`: `str`
-- `Enabled`: `bool`
-- `RemainingLife`: `float`
-- `Type`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="deviceeventtypedef"></a>
+```python title="Definition"
+class DeviceDescriptionTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Attributes: NotRequired[Dict[str, str]],
+    DeviceId: NotRequired[str],
+    Enabled: NotRequired[bool],
+    RemainingLife: NotRequired[float],
+    Type: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
 ## DeviceEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import DeviceEventTypeDef
+
+def get_value() -> DeviceEventTypeDef:
+    return {
+        "Device": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceEventTypeDef(TypedDict):
+    Device: NotRequired[DeviceTypeDef],  # (1)
+    StdEvent: NotRequired[str],
+```
 
-- `Device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
-- `StdEvent`: `str`
-
-<a id="devicemethodtypedef"></a>
-
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
 ## DeviceMethodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import DeviceMethodTypeDef
+
+def get_value() -> DeviceMethodTypeDef:
+    return {
+        "DeviceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceType`: `str`
-- `MethodName`: `str`
-
-<a id="devicetypedef"></a>
+```python title="Definition"
+class DeviceMethodTypeDef(TypedDict):
+    DeviceType: NotRequired[str],
+    MethodName: NotRequired[str],
+```
 
 ## DeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import DeviceTypeDef
+
+def get_value() -> DeviceTypeDef:
+    return {
+        "Attributes": ...,
+    }
 ```
 
-Optional fields:
-
-- `Attributes`: `Dict`\[`str`, `Any`\]
-- `DeviceId`: `str`
-- `Type`: `str`
-
-<a id="finalizedeviceclaimrequestrequesttypedef"></a>
+```python title="Definition"
+class DeviceTypeDef(TypedDict):
+    Attributes: NotRequired[Dict[str, Any]],
+    DeviceId: NotRequired[str],
+    Type: NotRequired[str],
+```
 
 ## FinalizeDeviceClaimRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import FinalizeDeviceClaimRequestRequestTypeDef
+
+def get_value() -> FinalizeDeviceClaimRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="finalizedeviceclaimresponsetypedef"></a>
+```python title="Definition"
+class FinalizeDeviceClaimRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## FinalizeDeviceClaimResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import FinalizeDeviceClaimResponseTypeDef
+
+def get_value() -> FinalizeDeviceClaimResponseTypeDef:
+    return {
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FinalizeDeviceClaimResponseTypeDef(TypedDict):
+    State: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `State`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdevicemethodsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeviceMethodsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import GetDeviceMethodsRequestRequestTypeDef
+
+def get_value() -> GetDeviceMethodsRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-
-<a id="getdevicemethodsresponsetypedef"></a>
+```python title="Definition"
+class GetDeviceMethodsRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+```
 
 ## GetDeviceMethodsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import GetDeviceMethodsResponseTypeDef
+
+def get_value() -> GetDeviceMethodsResponseTypeDef:
+    return {
+        "DeviceMethods": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeviceMethodsResponseTypeDef(TypedDict):
+    DeviceMethods: List[DeviceMethodTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeviceMethods`:
-  `List`\[[DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="initiatedeviceclaimrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InitiateDeviceClaimRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import InitiateDeviceClaimRequestRequestTypeDef
+
+def get_value() -> InitiateDeviceClaimRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-
-<a id="initiatedeviceclaimresponsetypedef"></a>
+```python title="Definition"
+class InitiateDeviceClaimRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+```
 
 ## InitiateDeviceClaimResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import InitiateDeviceClaimResponseTypeDef
+
+def get_value() -> InitiateDeviceClaimResponseTypeDef:
+    return {
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiateDeviceClaimResponseTypeDef(TypedDict):
+    State: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `State`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="invokedevicemethodrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InvokeDeviceMethodRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import InvokeDeviceMethodRequestRequestTypeDef
+
+def get_value() -> InvokeDeviceMethodRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvokeDeviceMethodRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+    DeviceMethod: NotRequired[DeviceMethodTypeDef],  # (1)
+    DeviceMethodParameters: NotRequired[str],
+```
 
-- `DeviceId`: `str`
-
-Optional fields:
-
-- `DeviceMethod`: [DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef)
-- `DeviceMethodParameters`: `str`
-
-<a id="invokedevicemethodresponsetypedef"></a>
-
+1. See [:material-code-braces: DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef) 
 ## InvokeDeviceMethodResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import InvokeDeviceMethodResponseTypeDef
+
+def get_value() -> InvokeDeviceMethodResponseTypeDef:
+    return {
+        "DeviceMethodResponse": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvokeDeviceMethodResponseTypeDef(TypedDict):
+    DeviceMethodResponse: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeviceMethodResponse`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeviceEventsRequestListDeviceEventsPaginateTypeDef
 
-<a id="listdeviceeventsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsRequestListDeviceEventsPaginateTypeDef
 
+def get_value() -> ListDeviceEventsRequestListDeviceEventsPaginateTypeDef:
+    return {
+        "DeviceId": ...,
+        "FromTimeStamp": ...,
+        "ToTimeStamp": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeviceEventsRequestListDeviceEventsPaginateTypeDef(TypedDict):
+    DeviceId: str,
+    FromTimeStamp: Union[datetime, str],
+    ToTimeStamp: Union[datetime, str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeviceEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsRequestRequestTypeDef
+
+def get_value() -> ListDeviceEventsRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+        "FromTimeStamp": ...,
+        "ToTimeStamp": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-- `FromTimeStamp`: `Union`\[`datetime`, `str`\]
-- `ToTimeStamp`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdeviceeventsresponsetypedef"></a>
+```python title="Definition"
+class ListDeviceEventsRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+    FromTimeStamp: Union[datetime, str],
+    ToTimeStamp: Union[datetime, str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDeviceEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsResponseTypeDef
+
+def get_value() -> ListDeviceEventsResponseTypeDef:
+    return {
+        "Events": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeviceEventsResponseTypeDef(TypedDict):
+    Events: List[DeviceEventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Events`: `List`\[[DeviceEventTypeDef](./type_defs.md#deviceeventtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeviceEventTypeDef](./type_defs.md#deviceeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDevicesRequestListDevicesPaginateTypeDef
 
-<a id="listdevicesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iot1click_devices.type_defs import ListDevicesRequestListDevicesPaginateTypeDef
 
+def get_value() -> ListDevicesRequestListDevicesPaginateTypeDef:
+    return {
+        "DeviceType": ...,
+    }
+```
+
+```python title="Definition"
+class ListDevicesRequestListDevicesPaginateTypeDef(TypedDict):
+    DeviceType: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import ListDevicesRequestRequestTypeDef
+
+def get_value() -> ListDevicesRequestRequestTypeDef:
+    return {
+        "DeviceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceType`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdevicesresponsetypedef"></a>
+```python title="Definition"
+class ListDevicesRequestRequestTypeDef(TypedDict):
+    DeviceType: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import ListDevicesResponseTypeDef
+
+def get_value() -> ListDevicesResponseTypeDef:
+    return {
+        "Devices": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevicesResponseTypeDef(TypedDict):
+    Devices: List[DeviceDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Devices`:
-  `List`\[[DeviceDescriptionTypeDef](./type_defs.md#devicedescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceDescriptionTypeDef](./type_defs.md#devicedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="unclaimdevicerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UnclaimDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import UnclaimDeviceRequestRequestTypeDef
+
+def get_value() -> UnclaimDeviceRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-
-<a id="unclaimdeviceresponsetypedef"></a>
+```python title="Definition"
+class UnclaimDeviceRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+```
 
 ## UnclaimDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import UnclaimDeviceResponseTypeDef
+
+def get_value() -> UnclaimDeviceResponseTypeDef:
+    return {
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UnclaimDeviceResponseTypeDef(TypedDict):
+    State: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `State`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedevicestaterequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDeviceStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot1click_devices.type_defs import UpdateDeviceStateRequestRequestTypeDef
+
+def get_value() -> UpdateDeviceStateRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDeviceStateRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+    Enabled: NotRequired[bool],
+```
 
-- `DeviceId`: `str`
-
-Optional fields:
-
-- `Enabled`: `bool`

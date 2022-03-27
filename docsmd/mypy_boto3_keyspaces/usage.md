@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-keyspaces-module"></a>
-
-# Examples for boto3 Keyspaces module
+# Examples
 
 > [Index](../README.md) > [Keyspaces](./README.md) > Examples
 
-- [Examples for boto3 Keyspaces module](#examples-for-boto3-keyspaces-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Keyspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces)
+    type annotations stubs module [mypy-boto3-keyspaces](https://pypi.org/project/mypy-boto3-keyspaces/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[keyspaces]` package installed.
 
-Write your `Keyspaces` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Keyspaces` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type KeyspacesClient
-# and provides type checking and code completion
-client = session.client("keyspaces")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListKeyspacesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_keyspaces")
-for item in paginator.paginate(...):
-    # item has type ListKeyspacesResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("keyspaces")  # (1)
+    result = client.create_keyspace()  # (2)
+    ```
+
+    1. client: [KeyspacesClient](./client.md)
+    2. result: [:material-code-braces: CreateKeyspaceResponseTypeDef](./type_defs.md#createkeyspaceresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("keyspaces")  # (1)
+
+    paginator = client.get_paginator("list_keyspaces")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [KeyspacesClient](./client.md)
+    2. paginator: [ListKeyspacesPaginator](./paginators.md#listkeyspacespaginator)
+    3. item: [:material-code-braces: ListKeyspacesResponseTypeDef](./type_defs.md#listkeyspacesresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[keyspaces]` or a standalone `mypy_boto3_keyspaces`
-package, you have to explicitly specify `client: KeyspacesClient` type
-annotation.
+With `boto3-stubs-lite[keyspaces]`
+or a standalone `mypy_boto3_keyspaces` package, you have to explicitly specify `client: KeyspacesClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_keyspaces.client import KeyspacesClient
-from mypy_boto3_keyspaces.paginator import ListKeyspacesPaginator
-
-from mypy_boto3_keyspaces.literals import PaginatorName
-
-from mypy_boto3_keyspaces.type_defs import bool
-from mypy_boto3_keyspaces.type_defs import ListKeyspacesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: KeyspacesClient = session.client("keyspaces")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_keyspaces.client import KeyspacesClient
+    from mypy_boto3_keyspaces.type_defs import CreateKeyspaceResponseTypeDef
+    from mypy_boto3_keyspaces.type_defs import CreateKeyspaceRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_keyspaces"
-paginator: ListKeyspacesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListKeyspacesResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: KeyspacesClient = session.client("keyspaces")
+
+    kwargs: CreateKeyspaceRequestRequestTypeDef = {...}
+    result: CreateKeyspaceResponseTypeDef = client.create_keyspace(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_keyspaces.client import KeyspacesClient
+    from mypy_boto3_keyspaces.paginator import ListKeyspacesPaginator
+    from mypy_boto3_keyspaces.type_defs import ListKeyspacesResponseTypeDef
+
+
+    session = Session()
+    client: KeyspacesClient = session.client("keyspaces")
+
+    paginator: ListKeyspacesPaginator = client.get_paginator("list_keyspaces")
+    for item in paginator.paginate(...):
+        item: ListKeyspacesResponseTypeDef
+        print(item)
+    ```
+
+
+
+

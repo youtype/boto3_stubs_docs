@@ -1,42 +1,18 @@
-<a id="ioteventsdataclient-for-boto3-ioteventsdata-module"></a>
-
-# IoTEventsDataClient for boto3 IoTEventsData module
+# IoTEventsDataClient
 
 > [Index](../README.md) > [IoTEventsData](./README.md) > IoTEventsDataClient
 
-Auto-generated documentation for
-[IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
-type annotations stubs module
-[mypy-boto3-iotevents-data](https://pypi.org/project/mypy-boto3-iotevents-data/).
+!!! note ""
 
-- [IoTEventsDataClient for boto3 IoTEventsData module](#ioteventsdataclient-for-boto3-ioteventsdata-module)
-  - [IoTEventsDataClient](#ioteventsdataclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_acknowledge_alarm](#batch_acknowledge_alarm)
-    - [batch_disable_alarm](#batch_disable_alarm)
-    - [batch_enable_alarm](#batch_enable_alarm)
-    - [batch_put_message](#batch_put_message)
-    - [batch_reset_alarm](#batch_reset_alarm)
-    - [batch_snooze_alarm](#batch_snooze_alarm)
-    - [batch_update_detector](#batch_update_detector)
-    - [can_paginate](#can_paginate)
-    - [describe_alarm](#describe_alarm)
-    - [describe_detector](#describe_detector)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_alarms](#list_alarms)
-    - [list_detectors](#list_detectors)
-
-<a id="ioteventsdataclient"></a>
+    Auto-generated documentation for [IoTEventsData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData)
+    type annotations stubs module [mypy-boto3-iotevents-data](https://pypi.org/project/mypy-boto3-iotevents-data/).
 
 ## IoTEventsDataClient
 
-Type annotations for `boto3.client("iotevents-data")`
+Type annotations and code completion for `#!python boto3.client("iotevents-data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iotevents_data.client import IoTEventsDataClient
 
@@ -44,339 +20,408 @@ def get_iotevents-data_client() -> IoTEventsDataClient:
     return Session().client("iotevents-data")
 ```
 
-Boto3 documentation:
-[IoTEventsData.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iotevents-data").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iotevents-data")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalFailureException,
+    client.InvalidRequestException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.ThrottlingException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iotevents_data.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalFailureException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottlingException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IoTEventsDataClient exceptions.
-
-Type annotations for `boto3.client("iotevents-data").exceptions` method.
-
-Boto3 documentation:
-[IoTEventsData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_acknowledge\_alarm"></a>
-
-### batch_acknowledge_alarm
+### batch\_acknowledge\_alarm
 
 Acknowledges one or more alarms.
 
-Type annotations for `boto3.client("iotevents-data").batch_acknowledge_alarm`
-method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").batch_acknowledge_alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_acknowledge_alarm)
 
-Boto3 documentation:
-[IoTEventsData.Client.batch_acknowledge_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_acknowledge_alarm)
+```python title="Method definition"
+def batch_acknowledge_alarm(
+    self,
+    *,
+    acknowledgeActionRequests: Sequence[AcknowledgeAlarmActionRequestTypeDef],  # (1)
+) -> BatchAcknowledgeAlarmResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchAcknowledgeAlarmRequestRequestTypeDef](./type_defs.md#batchacknowledgealarmrequestrequesttypedef).
+1. See [:material-code-braces: AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef) 
+2. See [:material-code-braces: BatchAcknowledgeAlarmResponseTypeDef](./type_defs.md#batchacknowledgealarmresponsetypedef) 
 
-Keyword-only arguments:
 
-- `acknowledgeActionRequests`:
-  `Sequence`\[[AcknowledgeAlarmActionRequestTypeDef](./type_defs.md#acknowledgealarmactionrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchAcknowledgeAlarmRequestRequestTypeDef = {  # (1)
+    "acknowledgeActionRequests": ...,
+}
 
-Returns
-[BatchAcknowledgeAlarmResponseTypeDef](./type_defs.md#batchacknowledgealarmresponsetypedef).
+parent.batch_acknowledge_alarm(**kwargs)
+```
 
-<a id="batch\_disable\_alarm"></a>
+1. See [:material-code-braces: BatchAcknowledgeAlarmRequestRequestTypeDef](./type_defs.md#batchacknowledgealarmrequestrequesttypedef) 
 
-### batch_disable_alarm
+### batch\_disable\_alarm
 
 Disables one or more alarms.
 
-Type annotations for `boto3.client("iotevents-data").batch_disable_alarm`
-method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").batch_disable_alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_disable_alarm)
 
-Boto3 documentation:
-[IoTEventsData.Client.batch_disable_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_disable_alarm)
+```python title="Method definition"
+def batch_disable_alarm(
+    self,
+    *,
+    disableActionRequests: Sequence[DisableAlarmActionRequestTypeDef],  # (1)
+) -> BatchDisableAlarmResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchDisableAlarmRequestRequestTypeDef](./type_defs.md#batchdisablealarmrequestrequesttypedef).
+1. See [:material-code-braces: DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef) 
+2. See [:material-code-braces: BatchDisableAlarmResponseTypeDef](./type_defs.md#batchdisablealarmresponsetypedef) 
 
-Keyword-only arguments:
 
-- `disableActionRequests`:
-  `Sequence`\[[DisableAlarmActionRequestTypeDef](./type_defs.md#disablealarmactionrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDisableAlarmRequestRequestTypeDef = {  # (1)
+    "disableActionRequests": ...,
+}
 
-Returns
-[BatchDisableAlarmResponseTypeDef](./type_defs.md#batchdisablealarmresponsetypedef).
+parent.batch_disable_alarm(**kwargs)
+```
 
-<a id="batch\_enable\_alarm"></a>
+1. See [:material-code-braces: BatchDisableAlarmRequestRequestTypeDef](./type_defs.md#batchdisablealarmrequestrequesttypedef) 
 
-### batch_enable_alarm
+### batch\_enable\_alarm
 
 Enables one or more alarms.
 
-Type annotations for `boto3.client("iotevents-data").batch_enable_alarm`
-method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").batch_enable_alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_enable_alarm)
 
-Boto3 documentation:
-[IoTEventsData.Client.batch_enable_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_enable_alarm)
+```python title="Method definition"
+def batch_enable_alarm(
+    self,
+    *,
+    enableActionRequests: Sequence[EnableAlarmActionRequestTypeDef],  # (1)
+) -> BatchEnableAlarmResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchEnableAlarmRequestRequestTypeDef](./type_defs.md#batchenablealarmrequestrequesttypedef).
+1. See [:material-code-braces: EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef) 
+2. See [:material-code-braces: BatchEnableAlarmResponseTypeDef](./type_defs.md#batchenablealarmresponsetypedef) 
 
-Keyword-only arguments:
 
-- `enableActionRequests`:
-  `Sequence`\[[EnableAlarmActionRequestTypeDef](./type_defs.md#enablealarmactionrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchEnableAlarmRequestRequestTypeDef = {  # (1)
+    "enableActionRequests": ...,
+}
 
-Returns
-[BatchEnableAlarmResponseTypeDef](./type_defs.md#batchenablealarmresponsetypedef).
+parent.batch_enable_alarm(**kwargs)
+```
 
-<a id="batch\_put\_message"></a>
+1. See [:material-code-braces: BatchEnableAlarmRequestRequestTypeDef](./type_defs.md#batchenablealarmrequestrequesttypedef) 
 
-### batch_put_message
+### batch\_put\_message
 
 Sends a set of messages to the IoT Events system.
 
-Type annotations for `boto3.client("iotevents-data").batch_put_message` method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").batch_put_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_put_message)
 
-Boto3 documentation:
-[IoTEventsData.Client.batch_put_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_put_message)
+```python title="Method definition"
+def batch_put_message(
+    self,
+    *,
+    messages: Sequence[MessageTypeDef],  # (1)
+) -> BatchPutMessageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchPutMessageRequestRequestTypeDef](./type_defs.md#batchputmessagerequestrequesttypedef).
+1. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+2. See [:material-code-braces: BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchPutMessageRequestRequestTypeDef = {  # (1)
+    "messages": ...,
+}
 
-Returns
-[BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
+parent.batch_put_message(**kwargs)
+```
 
-<a id="batch\_reset\_alarm"></a>
+1. See [:material-code-braces: BatchPutMessageRequestRequestTypeDef](./type_defs.md#batchputmessagerequestrequesttypedef) 
 
-### batch_reset_alarm
+### batch\_reset\_alarm
 
 Resets one or more alarms.
 
-Type annotations for `boto3.client("iotevents-data").batch_reset_alarm` method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").batch_reset_alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_reset_alarm)
 
-Boto3 documentation:
-[IoTEventsData.Client.batch_reset_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_reset_alarm)
+```python title="Method definition"
+def batch_reset_alarm(
+    self,
+    *,
+    resetActionRequests: Sequence[ResetAlarmActionRequestTypeDef],  # (1)
+) -> BatchResetAlarmResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchResetAlarmRequestRequestTypeDef](./type_defs.md#batchresetalarmrequestrequesttypedef).
+1. See [:material-code-braces: ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef) 
+2. See [:material-code-braces: BatchResetAlarmResponseTypeDef](./type_defs.md#batchresetalarmresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resetActionRequests`:
-  `Sequence`\[[ResetAlarmActionRequestTypeDef](./type_defs.md#resetalarmactionrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchResetAlarmRequestRequestTypeDef = {  # (1)
+    "resetActionRequests": ...,
+}
 
-Returns
-[BatchResetAlarmResponseTypeDef](./type_defs.md#batchresetalarmresponsetypedef).
+parent.batch_reset_alarm(**kwargs)
+```
 
-<a id="batch\_snooze\_alarm"></a>
+1. See [:material-code-braces: BatchResetAlarmRequestRequestTypeDef](./type_defs.md#batchresetalarmrequestrequesttypedef) 
 
-### batch_snooze_alarm
+### batch\_snooze\_alarm
 
 Changes one or more alarms to the snooze mode.
 
-Type annotations for `boto3.client("iotevents-data").batch_snooze_alarm`
-method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").batch_snooze_alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_snooze_alarm)
 
-Boto3 documentation:
-[IoTEventsData.Client.batch_snooze_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_snooze_alarm)
+```python title="Method definition"
+def batch_snooze_alarm(
+    self,
+    *,
+    snoozeActionRequests: Sequence[SnoozeAlarmActionRequestTypeDef],  # (1)
+) -> BatchSnoozeAlarmResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchSnoozeAlarmRequestRequestTypeDef](./type_defs.md#batchsnoozealarmrequestrequesttypedef).
+1. See [:material-code-braces: SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef) 
+2. See [:material-code-braces: BatchSnoozeAlarmResponseTypeDef](./type_defs.md#batchsnoozealarmresponsetypedef) 
 
-Keyword-only arguments:
 
-- `snoozeActionRequests`:
-  `Sequence`\[[SnoozeAlarmActionRequestTypeDef](./type_defs.md#snoozealarmactionrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchSnoozeAlarmRequestRequestTypeDef = {  # (1)
+    "snoozeActionRequests": ...,
+}
 
-Returns
-[BatchSnoozeAlarmResponseTypeDef](./type_defs.md#batchsnoozealarmresponsetypedef).
+parent.batch_snooze_alarm(**kwargs)
+```
 
-<a id="batch\_update\_detector"></a>
+1. See [:material-code-braces: BatchSnoozeAlarmRequestRequestTypeDef](./type_defs.md#batchsnoozealarmrequestrequesttypedef) 
 
-### batch_update_detector
+### batch\_update\_detector
 
 Updates the state, variable values, and timer settings of one or more detectors
 (instances) of a specified detector model.
 
-Type annotations for `boto3.client("iotevents-data").batch_update_detector`
-method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").batch_update_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_update_detector)
 
-Boto3 documentation:
-[IoTEventsData.Client.batch_update_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.batch_update_detector)
+```python title="Method definition"
+def batch_update_detector(
+    self,
+    *,
+    detectors: Sequence[UpdateDetectorRequestTypeDef],  # (1)
+) -> BatchUpdateDetectorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchUpdateDetectorRequestRequestTypeDef](./type_defs.md#batchupdatedetectorrequestrequesttypedef).
+1. See [:material-code-braces: UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef) 
+2. See [:material-code-braces: BatchUpdateDetectorResponseTypeDef](./type_defs.md#batchupdatedetectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `detectors`:
-  `Sequence`\[[UpdateDetectorRequestTypeDef](./type_defs.md#updatedetectorrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchUpdateDetectorRequestRequestTypeDef = {  # (1)
+    "detectors": ...,
+}
 
-Returns
-[BatchUpdateDetectorResponseTypeDef](./type_defs.md#batchupdatedetectorresponsetypedef).
+parent.batch_update_detector(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchUpdateDetectorRequestRequestTypeDef](./type_defs.md#batchupdatedetectorrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iotevents-data").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.can_paginate)
 
-Boto3 documentation:
-[IoTEventsData.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="describe\_alarm"></a>
-
-### describe_alarm
+### describe\_alarm
 
 Retrieves information about an alarm.
 
-Type annotations for `boto3.client("iotevents-data").describe_alarm` method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").describe_alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.describe_alarm)
 
-Boto3 documentation:
-[IoTEventsData.Client.describe_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.describe_alarm)
+```python title="Method definition"
+def describe_alarm(
+    self,
+    *,
+    alarmModelName: str,
+    keyValue: str = ...,
+) -> DescribeAlarmResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAlarmRequestRequestTypeDef](./type_defs.md#describealarmrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAlarmResponseTypeDef](./type_defs.md#describealarmresponsetypedef) 
 
-Keyword-only arguments:
 
-- `alarmModelName`: `str` *(required)*
-- `keyValue`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAlarmRequestRequestTypeDef = {  # (1)
+    "alarmModelName": ...,
+}
 
-Returns
-[DescribeAlarmResponseTypeDef](./type_defs.md#describealarmresponsetypedef).
+parent.describe_alarm(**kwargs)
+```
 
-<a id="describe\_detector"></a>
+1. See [:material-code-braces: DescribeAlarmRequestRequestTypeDef](./type_defs.md#describealarmrequestrequesttypedef) 
 
-### describe_detector
+### describe\_detector
 
 Returns information about the specified detector (instance).
 
-Type annotations for `boto3.client("iotevents-data").describe_detector` method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").describe_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.describe_detector)
 
-Boto3 documentation:
-[IoTEventsData.Client.describe_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.describe_detector)
+```python title="Method definition"
+def describe_detector(
+    self,
+    *,
+    detectorModelName: str,
+    keyValue: str = ...,
+) -> DescribeDetectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDetectorRequestRequestTypeDef](./type_defs.md#describedetectorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDetectorResponseTypeDef](./type_defs.md#describedetectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `detectorModelName`: `str` *(required)*
-- `keyValue`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDetectorRequestRequestTypeDef = {  # (1)
+    "detectorModelName": ...,
+}
 
-Returns
-[DescribeDetectorResponseTypeDef](./type_defs.md#describedetectorresponsetypedef).
+parent.describe_detector(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeDetectorRequestRequestTypeDef](./type_defs.md#describedetectorrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iotevents-data").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IoTEventsData.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_alarms"></a>
-
-### list_alarms
+### list\_alarms
 
 Lists one or more alarms.
 
-Type annotations for `boto3.client("iotevents-data").list_alarms` method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").list_alarms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_alarms)
 
-Boto3 documentation:
-[IoTEventsData.Client.list_alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_alarms)
+```python title="Method definition"
+def list_alarms(
+    self,
+    *,
+    alarmModelName: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAlarmsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAlarmsRequestRequestTypeDef](./type_defs.md#listalarmsrequestrequesttypedef).
+1. See [:material-code-braces: ListAlarmsResponseTypeDef](./type_defs.md#listalarmsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `alarmModelName`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAlarmsRequestRequestTypeDef = {  # (1)
+    "alarmModelName": ...,
+}
 
-Returns [ListAlarmsResponseTypeDef](./type_defs.md#listalarmsresponsetypedef).
+parent.list_alarms(**kwargs)
+```
 
-<a id="list\_detectors"></a>
+1. See [:material-code-braces: ListAlarmsRequestRequestTypeDef](./type_defs.md#listalarmsrequestrequesttypedef) 
 
-### list_detectors
+### list\_detectors
 
 Lists detectors (the instances of a detector model).
 
-Type annotations for `boto3.client("iotevents-data").list_detectors` method.
+Type annotations and code completion for `#!python boto3.client("iotevents-data").list_detectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_detectors)
 
-Boto3 documentation:
-[IoTEventsData.Client.list_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents-data.html#IoTEventsData.Client.list_detectors)
+```python title="Method definition"
+def list_detectors(
+    self,
+    *,
+    detectorModelName: str,
+    stateName: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDetectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDetectorsRequestRequestTypeDef](./type_defs.md#listdetectorsrequestrequesttypedef).
+1. See [:material-code-braces: ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `detectorModelName`: `str` *(required)*
-- `stateName`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDetectorsRequestRequestTypeDef = {  # (1)
+    "detectorModelName": ...,
+}
 
-Returns
-[ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef).
+parent.list_detectors(**kwargs)
+```
+
+1. See [:material-code-braces: ListDetectorsRequestRequestTypeDef](./type_defs.md#listdetectorsrequestrequesttypedef) 
+
+
+
+

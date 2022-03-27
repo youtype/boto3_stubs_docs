@@ -1,43 +1,18 @@
-<a id="managedgrafanaclient-for-boto3-managedgrafana-module"></a>
-
-# ManagedGrafanaClient for boto3 ManagedGrafana module
+# ManagedGrafanaClient
 
 > [Index](../README.md) > [ManagedGrafana](./README.md) > ManagedGrafanaClient
 
-Auto-generated documentation for
-[ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
-type annotations stubs module
-[mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
+!!! note ""
 
-- [ManagedGrafanaClient for boto3 ManagedGrafana module](#managedgrafanaclient-for-boto3-managedgrafana-module)
-  - [ManagedGrafanaClient](#managedgrafanaclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_license](#associate_license)
-    - [can_paginate](#can_paginate)
-    - [create_workspace](#create_workspace)
-    - [delete_workspace](#delete_workspace)
-    - [describe_workspace](#describe_workspace)
-    - [describe_workspace_authentication](#describe_workspace_authentication)
-    - [disassociate_license](#disassociate_license)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_permissions](#list_permissions)
-    - [list_workspaces](#list_workspaces)
-    - [update_permissions](#update_permissions)
-    - [update_workspace](#update_workspace)
-    - [update_workspace_authentication](#update_workspace_authentication)
-    - [get_paginator](#get_paginator)
-
-<a id="managedgrafanaclient"></a>
+    Auto-generated documentation for [ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
+    type annotations stubs module [mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
 
 ## ManagedGrafanaClient
 
-Type annotations for `boto3.client("grafana")`
+Type annotations and code completion for `#!python boto3.client("grafana")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_grafana.client import ManagedGrafanaClient
 
@@ -45,379 +20,460 @@ def get_grafana_client() -> ManagedGrafanaClient:
     return Session().client("grafana")
 ```
 
-Boto3 documentation:
-[ManagedGrafana.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("grafana").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("grafana")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_grafana.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ManagedGrafanaClient exceptions.
-
-Type annotations for `boto3.client("grafana").exceptions` method.
-
-Boto3 documentation:
-[ManagedGrafana.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_license"></a>
-
-### associate_license
+### associate\_license
 
 Assigns a Grafana Enterprise license to a workspace.
 
-Type annotations for `boto3.client("grafana").associate_license` method.
+Type annotations and code completion for `#!python boto3.client("grafana").associate_license` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.associate_license)
 
-Boto3 documentation:
-[ManagedGrafana.Client.associate_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.associate_license)
+```python title="Method definition"
+def associate_license(
+    self,
+    *,
+    licenseType: LicenseTypeType,  # (1)
+    workspaceId: str,
+) -> AssociateLicenseResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AssociateLicenseRequestRequestTypeDef](./type_defs.md#associatelicenserequestrequesttypedef).
+1. See [:material-code-brackets: LicenseTypeType](./literals.md#licensetypetype) 
+2. See [:material-code-braces: AssociateLicenseResponseTypeDef](./type_defs.md#associatelicenseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype) *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateLicenseRequestRequestTypeDef = {  # (1)
+    "licenseType": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[AssociateLicenseResponseTypeDef](./type_defs.md#associatelicenseresponsetypedef).
+parent.associate_license(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateLicenseRequestRequestTypeDef](./type_defs.md#associatelicenserequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("grafana").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("grafana").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.can_paginate)
 
-Boto3 documentation:
-[ManagedGrafana.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_workspace"></a>
-
-### create_workspace
+### create\_workspace
 
 Creates a *workspace*.
 
-Type annotations for `boto3.client("grafana").create_workspace` method.
+Type annotations and code completion for `#!python boto3.client("grafana").create_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.create_workspace)
 
-Boto3 documentation:
-[ManagedGrafana.Client.create_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.create_workspace)
+```python title="Method definition"
+def create_workspace(
+    self,
+    *,
+    accountAccessType: AccountAccessTypeType,  # (1)
+    authenticationProviders: Sequence[AuthenticationProviderTypesType],  # (2)
+    permissionType: PermissionTypeType,  # (3)
+    clientToken: str = ...,
+    organizationRoleName: str = ...,
+    stackSetName: str = ...,
+    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (4)
+    workspaceDescription: str = ...,
+    workspaceName: str = ...,
+    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (5)
+    workspaceOrganizationalUnits: Sequence[str] = ...,
+    workspaceRoleArn: str = ...,
+) -> CreateWorkspaceResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef).
+1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
+2. See [:material-code-brackets: AuthenticationProviderTypesType](./literals.md#authenticationprovidertypestype) 
+3. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+4. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+5. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+6. See [:material-code-braces: CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountAccessType`:
-  [AccountAccessTypeType](./literals.md#accountaccesstypetype) *(required)*
-- `authenticationProviders`:
-  `Sequence`\[[AuthenticationProviderTypesType](./literals.md#authenticationprovidertypestype)\]
-  *(required)*
-- `permissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
-  *(required)*
-- `clientToken`: `str`
-- `organizationRoleName`: `str`
-- `stackSetName`: `str`
-- `workspaceDataSources`:
-  `Sequence`\[[DataSourceTypeType](./literals.md#datasourcetypetype)\]
-- `workspaceDescription`: `str`
-- `workspaceName`: `str`
-- `workspaceNotificationDestinations`: `Sequence`\[`Literal['SNS']` (see
-  [NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype))\]
-- `workspaceOrganizationalUnits`: `Sequence`\[`str`\]
-- `workspaceRoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateWorkspaceRequestRequestTypeDef = {  # (1)
+    "accountAccessType": ...,
+    "authenticationProviders": ...,
+    "permissionType": ...,
+}
 
-Returns
-[CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
+parent.create_workspace(**kwargs)
+```
 
-<a id="delete\_workspace"></a>
+1. See [:material-code-braces: CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef) 
 
-### delete_workspace
+### delete\_workspace
 
 Deletes an Amazon Managed Grafana workspace.
 
-Type annotations for `boto3.client("grafana").delete_workspace` method.
+Type annotations and code completion for `#!python boto3.client("grafana").delete_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.delete_workspace)
 
-Boto3 documentation:
-[ManagedGrafana.Client.delete_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.delete_workspace)
+```python title="Method definition"
+def delete_workspace(
+    self,
+    *,
+    workspaceId: str,
+) -> DeleteWorkspaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef).
+1. See [:material-code-braces: DeleteWorkspaceResponseTypeDef](./type_defs.md#deleteworkspaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkspaceRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[DeleteWorkspaceResponseTypeDef](./type_defs.md#deleteworkspaceresponsetypedef).
+parent.delete_workspace(**kwargs)
+```
 
-<a id="describe\_workspace"></a>
+1. See [:material-code-braces: DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef) 
 
-### describe_workspace
+### describe\_workspace
 
 Displays information about one Amazon Managed Grafana workspace.
 
-Type annotations for `boto3.client("grafana").describe_workspace` method.
+Type annotations and code completion for `#!python boto3.client("grafana").describe_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.describe_workspace)
 
-Boto3 documentation:
-[ManagedGrafana.Client.describe_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.describe_workspace)
+```python title="Method definition"
+def describe_workspace(
+    self,
+    *,
+    workspaceId: str,
+) -> DescribeWorkspaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspaceRequestRequestTypeDef](./type_defs.md#describeworkspacerequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef).
+parent.describe_workspace(**kwargs)
+```
 
-<a id="describe\_workspace\_authentication"></a>
+1. See [:material-code-braces: DescribeWorkspaceRequestRequestTypeDef](./type_defs.md#describeworkspacerequestrequesttypedef) 
 
-### describe_workspace_authentication
+### describe\_workspace\_authentication
 
-Displays information about the authentication methods used in one Amazon
-Managed Grafana workspace.
+Displays information about the authentication methods used in one Amazon Managed
+Grafana workspace.
 
-Type annotations for
-`boto3.client("grafana").describe_workspace_authentication` method.
+Type annotations and code completion for `#!python boto3.client("grafana").describe_workspace_authentication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.describe_workspace_authentication)
 
-Boto3 documentation:
-[ManagedGrafana.Client.describe_workspace_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.describe_workspace_authentication)
+```python title="Method definition"
+def describe_workspace_authentication(
+    self,
+    *,
+    workspaceId: str,
+) -> DescribeWorkspaceAuthenticationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspaceAuthenticationRequestRequestTypeDef](./type_defs.md#describeworkspaceauthenticationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkspaceAuthenticationResponseTypeDef](./type_defs.md#describeworkspaceauthenticationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceAuthenticationRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[DescribeWorkspaceAuthenticationResponseTypeDef](./type_defs.md#describeworkspaceauthenticationresponsetypedef).
+parent.describe_workspace_authentication(**kwargs)
+```
 
-<a id="disassociate\_license"></a>
+1. See [:material-code-braces: DescribeWorkspaceAuthenticationRequestRequestTypeDef](./type_defs.md#describeworkspaceauthenticationrequestrequesttypedef) 
 
-### disassociate_license
+### disassociate\_license
 
 Removes the Grafana Enterprise license from a workspace.
 
-Type annotations for `boto3.client("grafana").disassociate_license` method.
+Type annotations and code completion for `#!python boto3.client("grafana").disassociate_license` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.disassociate_license)
 
-Boto3 documentation:
-[ManagedGrafana.Client.disassociate_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.disassociate_license)
+```python title="Method definition"
+def disassociate_license(
+    self,
+    *,
+    licenseType: LicenseTypeType,  # (1)
+    workspaceId: str,
+) -> DisassociateLicenseResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateLicenseRequestRequestTypeDef](./type_defs.md#disassociatelicenserequestrequesttypedef).
+1. See [:material-code-brackets: LicenseTypeType](./literals.md#licensetypetype) 
+2. See [:material-code-braces: DisassociateLicenseResponseTypeDef](./type_defs.md#disassociatelicenseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype) *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateLicenseRequestRequestTypeDef = {  # (1)
+    "licenseType": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[DisassociateLicenseResponseTypeDef](./type_defs.md#disassociatelicenseresponsetypedef).
+parent.disassociate_license(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateLicenseRequestRequestTypeDef](./type_defs.md#disassociatelicenserequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("grafana").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("grafana").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ManagedGrafana.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_permissions"></a>
-
-### list_permissions
+### list\_permissions
 
 Lists the users and groups who have the Grafana `Admin` and `Editor` roles in
 this workspace.
 
-Type annotations for `boto3.client("grafana").list_permissions` method.
+Type annotations and code completion for `#!python boto3.client("grafana").list_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.list_permissions)
 
-Boto3 documentation:
-[ManagedGrafana.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.list_permissions)
+```python title="Method definition"
+def list_permissions(
+    self,
+    *,
+    workspaceId: str,
+    groupId: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    userId: str = ...,
+    userType: UserTypeType = ...,  # (1)
+) -> ListPermissionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef).
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-braces: ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `groupId`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `userId`: `str`
-- `userType`: [UserTypeType](./literals.md#usertypetype)
+```python title="Usage example with kwargs"
+kwargs: ListPermissionsRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
+parent.list_permissions(**kwargs)
+```
 
-<a id="list\_workspaces"></a>
+1. See [:material-code-braces: ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef) 
 
-### list_workspaces
+### list\_workspaces
 
 Returns a list of Amazon Managed Grafana workspaces in the account, with some
 information about each workspace.
 
-Type annotations for `boto3.client("grafana").list_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("grafana").list_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.list_workspaces)
 
-Boto3 documentation:
-[ManagedGrafana.Client.list_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.list_workspaces)
+```python title="Method definition"
+def list_workspaces(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListWorkspacesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListWorkspacesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
+parent.list_workspaces(**kwargs)
+```
 
-<a id="update\_permissions"></a>
+1. See [:material-code-braces: ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef) 
 
-### update_permissions
+### update\_permissions
 
 Updates which users in a workspace have the Grafana `Admin` or `Editor` roles.
 
-Type annotations for `boto3.client("grafana").update_permissions` method.
+Type annotations and code completion for `#!python boto3.client("grafana").update_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.update_permissions)
 
-Boto3 documentation:
-[ManagedGrafana.Client.update_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.update_permissions)
+```python title="Method definition"
+def update_permissions(
+    self,
+    *,
+    updateInstructionBatch: Sequence[UpdateInstructionTypeDef],  # (1)
+    workspaceId: str,
+) -> UpdatePermissionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePermissionsRequestRequestTypeDef](./type_defs.md#updatepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: UpdateInstructionTypeDef](./type_defs.md#updateinstructiontypedef) 
+2. See [:material-code-braces: UpdatePermissionsResponseTypeDef](./type_defs.md#updatepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `updateInstructionBatch`:
-  `Sequence`\[[UpdateInstructionTypeDef](./type_defs.md#updateinstructiontypedef)\]
-  *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdatePermissionsRequestRequestTypeDef = {  # (1)
+    "updateInstructionBatch": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[UpdatePermissionsResponseTypeDef](./type_defs.md#updatepermissionsresponsetypedef).
+parent.update_permissions(**kwargs)
+```
 
-<a id="update\_workspace"></a>
+1. See [:material-code-braces: UpdatePermissionsRequestRequestTypeDef](./type_defs.md#updatepermissionsrequestrequesttypedef) 
 
-### update_workspace
+### update\_workspace
 
 Modifies an existing Amazon Managed Grafana workspace.
 
-Type annotations for `boto3.client("grafana").update_workspace` method.
+Type annotations and code completion for `#!python boto3.client("grafana").update_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.update_workspace)
 
-Boto3 documentation:
-[ManagedGrafana.Client.update_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.update_workspace)
+```python title="Method definition"
+def update_workspace(
+    self,
+    *,
+    workspaceId: str,
+    accountAccessType: AccountAccessTypeType = ...,  # (1)
+    organizationRoleName: str = ...,
+    permissionType: PermissionTypeType = ...,  # (2)
+    stackSetName: str = ...,
+    workspaceDataSources: Sequence[DataSourceTypeType] = ...,  # (3)
+    workspaceDescription: str = ...,
+    workspaceName: str = ...,
+    workspaceNotificationDestinations: Sequence[NotificationDestinationTypeType] = ...,  # (4)
+    workspaceOrganizationalUnits: Sequence[str] = ...,
+    workspaceRoleArn: str = ...,
+) -> UpdateWorkspaceResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkspaceRequestRequestTypeDef](./type_defs.md#updateworkspacerequestrequesttypedef).
+1. See [:material-code-brackets: AccountAccessTypeType](./literals.md#accountaccesstypetype) 
+2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+3. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+4. See [:material-code-brackets: NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype) 
+5. See [:material-code-braces: UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `accountAccessType`:
-  [AccountAccessTypeType](./literals.md#accountaccesstypetype)
-- `organizationRoleName`: `str`
-- `permissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
-- `stackSetName`: `str`
-- `workspaceDataSources`:
-  `Sequence`\[[DataSourceTypeType](./literals.md#datasourcetypetype)\]
-- `workspaceDescription`: `str`
-- `workspaceName`: `str`
-- `workspaceNotificationDestinations`: `Sequence`\[`Literal['SNS']` (see
-  [NotificationDestinationTypeType](./literals.md#notificationdestinationtypetype))\]
-- `workspaceOrganizationalUnits`: `Sequence`\[`str`\]
-- `workspaceRoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkspaceRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef).
+parent.update_workspace(**kwargs)
+```
 
-<a id="update\_workspace\_authentication"></a>
+1. See [:material-code-braces: UpdateWorkspaceRequestRequestTypeDef](./type_defs.md#updateworkspacerequestrequesttypedef) 
 
-### update_workspace_authentication
+### update\_workspace\_authentication
 
 Use this operation to define the identity provider (IdP) that this workspace
 authenticates users from, using SAML.
 
-Type annotations for `boto3.client("grafana").update_workspace_authentication`
-method.
+Type annotations and code completion for `#!python boto3.client("grafana").update_workspace_authentication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.update_workspace_authentication)
 
-Boto3 documentation:
-[ManagedGrafana.Client.update_workspace_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana.Client.update_workspace_authentication)
+```python title="Method definition"
+def update_workspace_authentication(
+    self,
+    *,
+    authenticationProviders: Sequence[AuthenticationProviderTypesType],  # (1)
+    workspaceId: str,
+    samlConfiguration: SamlConfigurationTypeDef = ...,  # (2)
+) -> UpdateWorkspaceAuthenticationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkspaceAuthenticationRequestRequestTypeDef](./type_defs.md#updateworkspaceauthenticationrequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationProviderTypesType](./literals.md#authenticationprovidertypestype) 
+2. See [:material-code-braces: SamlConfigurationTypeDef](./type_defs.md#samlconfigurationtypedef) 
+3. See [:material-code-braces: UpdateWorkspaceAuthenticationResponseTypeDef](./type_defs.md#updateworkspaceauthenticationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `authenticationProviders`:
-  `Sequence`\[[AuthenticationProviderTypesType](./literals.md#authenticationprovidertypestype)\]
-  *(required)*
-- `workspaceId`: `str` *(required)*
-- `samlConfiguration`:
-  [SamlConfigurationTypeDef](./type_defs.md#samlconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkspaceAuthenticationRequestRequestTypeDef = {  # (1)
+    "authenticationProviders": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[UpdateWorkspaceAuthenticationResponseTypeDef](./type_defs.md#updateworkspaceauthenticationresponsetypedef).
+parent.update_workspace_authentication(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateWorkspaceAuthenticationRequestRequestTypeDef](./type_defs.md#updateworkspaceauthenticationrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("grafana").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("grafana").get_paginator` method with overloads.
 
-- `client.get_paginator("list_permissions")` ->
-  [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
-- `client.get_paginator("list_workspaces")` ->
-  [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
+- `client.get_paginator("list_permissions")` -> [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
+- `client.get_paginator("list_workspaces")` -> [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
+
+
+

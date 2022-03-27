@@ -1,56 +1,18 @@
-<a id="paginators-for-boto3-configservice-module"></a>
-
-# Paginators for boto3 ConfigService module
+# Paginators
 
 > [Index](../README.md) > [ConfigService](./README.md) > Paginators
 
-Auto-generated documentation for
-[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
-type annotations stubs module
-[mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
+!!! note ""
 
-- [Paginators for boto3 ConfigService module](#paginators-for-boto3-configservice-module)
-  - [DescribeAggregateComplianceByConfigRulesPaginator](#describeaggregatecompliancebyconfigrulespaginator)
-  - [DescribeAggregateComplianceByConformancePacksPaginator](#describeaggregatecompliancebyconformancepackspaginator)
-  - [DescribeAggregationAuthorizationsPaginator](#describeaggregationauthorizationspaginator)
-  - [DescribeComplianceByConfigRulePaginator](#describecompliancebyconfigrulepaginator)
-  - [DescribeComplianceByResourcePaginator](#describecompliancebyresourcepaginator)
-  - [DescribeConfigRuleEvaluationStatusPaginator](#describeconfigruleevaluationstatuspaginator)
-  - [DescribeConfigRulesPaginator](#describeconfigrulespaginator)
-  - [DescribeConfigurationAggregatorSourcesStatusPaginator](#describeconfigurationaggregatorsourcesstatuspaginator)
-  - [DescribeConfigurationAggregatorsPaginator](#describeconfigurationaggregatorspaginator)
-  - [DescribeConformancePackStatusPaginator](#describeconformancepackstatuspaginator)
-  - [DescribeConformancePacksPaginator](#describeconformancepackspaginator)
-  - [DescribeOrganizationConfigRuleStatusesPaginator](#describeorganizationconfigrulestatusespaginator)
-  - [DescribeOrganizationConfigRulesPaginator](#describeorganizationconfigrulespaginator)
-  - [DescribeOrganizationConformancePackStatusesPaginator](#describeorganizationconformancepackstatusespaginator)
-  - [DescribeOrganizationConformancePacksPaginator](#describeorganizationconformancepackspaginator)
-  - [DescribePendingAggregationRequestsPaginator](#describependingaggregationrequestspaginator)
-  - [DescribeRemediationExecutionStatusPaginator](#describeremediationexecutionstatuspaginator)
-  - [DescribeRetentionConfigurationsPaginator](#describeretentionconfigurationspaginator)
-  - [GetAggregateComplianceDetailsByConfigRulePaginator](#getaggregatecompliancedetailsbyconfigrulepaginator)
-  - [GetComplianceDetailsByConfigRulePaginator](#getcompliancedetailsbyconfigrulepaginator)
-  - [GetComplianceDetailsByResourcePaginator](#getcompliancedetailsbyresourcepaginator)
-  - [GetConformancePackComplianceSummaryPaginator](#getconformancepackcompliancesummarypaginator)
-  - [GetOrganizationConfigRuleDetailedStatusPaginator](#getorganizationconfigruledetailedstatuspaginator)
-  - [GetOrganizationConformancePackDetailedStatusPaginator](#getorganizationconformancepackdetailedstatuspaginator)
-  - [GetResourceConfigHistoryPaginator](#getresourceconfighistorypaginator)
-  - [ListAggregateDiscoveredResourcesPaginator](#listaggregatediscoveredresourcespaginator)
-  - [ListDiscoveredResourcesPaginator](#listdiscoveredresourcespaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-  - [SelectAggregateResourceConfigPaginator](#selectaggregateresourceconfigpaginator)
-  - [SelectResourceConfigPaginator](#selectresourceconfigpaginator)
-
-<a id="describeaggregatecompliancebyconfigrulespaginator"></a>
+    Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+    type annotations stubs module [mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
 
 ## DescribeAggregateComplianceByConfigRulesPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_aggregate_compliance_by_config_rules")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_aggregate_compliance_by_config_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConfigRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeAggregateComplianceByConfigRulesPaginator
@@ -59,31 +21,42 @@ def get_describe_aggregate_compliance_by_config_rules_paginator() -> DescribeAgg
     return Session().client("config").get_paginator("describe_aggregate_compliance_by_config_rules")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeAggregateComplianceByConfigRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConfigRules)
 
-Arguments for `DescribeAggregateComplianceByConfigRulesPaginator.paginate`
-method:
+### paginate
 
-- `ConfigurationAggregatorName`: `str` *(required)*
-- `Filters`:
-  [ConfigRuleComplianceFiltersTypeDef](./type_defs.md#configrulecompliancefilterstypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAggregateComplianceByConfigRulesPaginator.paginate` method.
 
-`DescribeAggregateComplianceByConfigRulesPaginator.paginate` returns
-`_PageIterator`\[[DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigurationAggregatorName: str,
+    Filters: ConfigRuleComplianceFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAggregateComplianceByConfigRulesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeaggregatecompliancebyconformancepackspaginator"></a>
+1. See [:material-code-braces: ConfigRuleComplianceFiltersTypeDef](./type_defs.md#configrulecompliancefilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAggregateComplianceByConfigRulesRequestDescribeAggregateComplianceByConfigRulesPaginateTypeDef = {  # (1)
+    "ConfigurationAggregatorName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAggregateComplianceByConfigRulesRequestDescribeAggregateComplianceByConfigRulesPaginateTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesrequestdescribeaggregatecompliancebyconfigrulespaginatetypedef) 
 ## DescribeAggregateComplianceByConformancePacksPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_aggregate_compliance_by_conformance_packs")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_aggregate_compliance_by_conformance_packs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConformancePacks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeAggregateComplianceByConformancePacksPaginator
@@ -92,31 +65,42 @@ def get_describe_aggregate_compliance_by_conformance_packs_paginator() -> Descri
     return Session().client("config").get_paginator("describe_aggregate_compliance_by_conformance_packs")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeAggregateComplianceByConformancePacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregateComplianceByConformancePacks)
 
-Arguments for `DescribeAggregateComplianceByConformancePacksPaginator.paginate`
-method:
+### paginate
 
-- `ConfigurationAggregatorName`: `str` *(required)*
-- `Filters`:
-  [AggregateConformancePackComplianceFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancefilterstypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAggregateComplianceByConformancePacksPaginator.paginate` method.
 
-`DescribeAggregateComplianceByConformancePacksPaginator.paginate` returns
-`_PageIterator`\[[DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigurationAggregatorName: str,
+    Filters: AggregateConformancePackComplianceFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAggregateComplianceByConformancePacksResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeaggregationauthorizationspaginator"></a>
+1. See [:material-code-braces: AggregateConformancePackComplianceFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancefilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAggregateComplianceByConformancePacksRequestDescribeAggregateComplianceByConformancePacksPaginateTypeDef = {  # (1)
+    "ConfigurationAggregatorName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAggregateComplianceByConformancePacksRequestDescribeAggregateComplianceByConformancePacksPaginateTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksrequestdescribeaggregatecompliancebyconformancepackspaginatetypedef) 
 ## DescribeAggregationAuthorizationsPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_aggregation_authorizations")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_aggregation_authorizations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregationAuthorizations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeAggregationAuthorizationsPaginator
@@ -125,27 +109,39 @@ def get_describe_aggregation_authorizations_paginator() -> DescribeAggregationAu
     return Session().client("config").get_paginator("describe_aggregation_authorizations")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeAggregationAuthorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeAggregationAuthorizations)
 
-Arguments for `DescribeAggregationAuthorizationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAggregationAuthorizationsPaginator.paginate` method.
 
-`DescribeAggregationAuthorizationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeAggregationAuthorizationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describecompliancebyconfigrulepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAggregationAuthorizationsRequestDescribeAggregationAuthorizationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAggregationAuthorizationsRequestDescribeAggregationAuthorizationsPaginateTypeDef](./type_defs.md#describeaggregationauthorizationsrequestdescribeaggregationauthorizationspaginatetypedef) 
 ## DescribeComplianceByConfigRulePaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_compliance_by_config_rule")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_compliance_by_config_rule")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByConfigRule)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeComplianceByConfigRulePaginator
@@ -154,30 +150,42 @@ def get_describe_compliance_by_config_rule_paginator() -> DescribeComplianceByCo
     return Session().client("config").get_paginator("describe_compliance_by_config_rule")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeComplianceByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByConfigRule)
 
-Arguments for `DescribeComplianceByConfigRulePaginator.paginate` method:
+### paginate
 
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-- `ComplianceTypes`:
-  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeComplianceByConfigRulePaginator.paginate` method.
 
-`DescribeComplianceByConfigRulePaginator.paginate` returns
-`_PageIterator`\[[DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigRuleNames: Sequence[str] = ...,
+    ComplianceTypes: Sequence[ComplianceTypeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeComplianceByConfigRuleResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describecompliancebyresourcepaginator"></a>
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeComplianceByConfigRuleRequestDescribeComplianceByConfigRulePaginateTypeDef = {  # (1)
+    "ConfigRuleNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeComplianceByConfigRuleRequestDescribeComplianceByConfigRulePaginateTypeDef](./type_defs.md#describecompliancebyconfigrulerequestdescribecompliancebyconfigrulepaginatetypedef) 
 ## DescribeComplianceByResourcePaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_compliance_by_resource")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_compliance_by_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeComplianceByResourcePaginator
@@ -186,31 +194,43 @@ def get_describe_compliance_by_resource_paginator() -> DescribeComplianceByResou
     return Session().client("config").get_paginator("describe_compliance_by_resource")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeComplianceByResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeComplianceByResource)
 
-Arguments for `DescribeComplianceByResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-- `ComplianceTypes`:
-  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeComplianceByResourcePaginator.paginate` method.
 
-`DescribeComplianceByResourcePaginator.paginate` returns
-`_PageIterator`\[[DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceType: str = ...,
+    ResourceId: str = ...,
+    ComplianceTypes: Sequence[ComplianceTypeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeComplianceByResourceResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeconfigruleevaluationstatuspaginator"></a>
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeComplianceByResourceRequestDescribeComplianceByResourcePaginateTypeDef = {  # (1)
+    "ResourceType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeComplianceByResourceRequestDescribeComplianceByResourcePaginateTypeDef](./type_defs.md#describecompliancebyresourcerequestdescribecompliancebyresourcepaginatetypedef) 
 ## DescribeConfigRuleEvaluationStatusPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_config_rule_evaluation_status")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_config_rule_evaluation_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRuleEvaluationStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeConfigRuleEvaluationStatusPaginator
@@ -219,28 +239,40 @@ def get_describe_config_rule_evaluation_status_paginator() -> DescribeConfigRule
     return Session().client("config").get_paginator("describe_config_rule_evaluation_status")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeConfigRuleEvaluationStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRuleEvaluationStatus)
 
-Arguments for `DescribeConfigRuleEvaluationStatusPaginator.paginate` method:
+### paginate
 
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeConfigRuleEvaluationStatusPaginator.paginate` method.
 
-`DescribeConfigRuleEvaluationStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigRuleNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeConfigRuleEvaluationStatusResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeconfigrulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConfigRuleEvaluationStatusRequestDescribeConfigRuleEvaluationStatusPaginateTypeDef = {  # (1)
+    "ConfigRuleNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConfigRuleEvaluationStatusRequestDescribeConfigRuleEvaluationStatusPaginateTypeDef](./type_defs.md#describeconfigruleevaluationstatusrequestdescribeconfigruleevaluationstatuspaginatetypedef) 
 ## DescribeConfigRulesPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_config_rules")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_config_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeConfigRulesPaginator
@@ -249,28 +281,40 @@ def get_describe_config_rules_paginator() -> DescribeConfigRulesPaginator:
     return Session().client("config").get_paginator("describe_config_rules")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeConfigRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigRules)
 
-Arguments for `DescribeConfigRulesPaginator.paginate` method:
+### paginate
 
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeConfigRulesPaginator.paginate` method.
 
-`DescribeConfigRulesPaginator.paginate` returns
-`_PageIterator`\[[DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigRuleNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeConfigRulesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeconfigurationaggregatorsourcesstatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef = {  # (1)
+    "ConfigRuleNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef](./type_defs.md#describeconfigrulesrequestdescribeconfigrulespaginatetypedef) 
 ## DescribeConfigurationAggregatorSourcesStatusPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_configuration_aggregator_sources_status")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_configuration_aggregator_sources_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeConfigurationAggregatorSourcesStatusPaginator
@@ -279,31 +323,42 @@ def get_describe_configuration_aggregator_sources_status_paginator() -> Describe
     return Session().client("config").get_paginator("describe_configuration_aggregator_sources_status")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregatorSourcesStatus)
 
-Arguments for `DescribeConfigurationAggregatorSourcesStatusPaginator.paginate`
-method:
+### paginate
 
-- `ConfigurationAggregatorName`: `str` *(required)*
-- `UpdateStatus`:
-  `Sequence`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeConfigurationAggregatorSourcesStatusPaginator.paginate` method.
 
-`DescribeConfigurationAggregatorSourcesStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigurationAggregatorName: str,
+    UpdateStatus: Sequence[AggregatedSourceStatusTypeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeconfigurationaggregatorspaginator"></a>
+1. See [:material-code-brackets: AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConfigurationAggregatorSourcesStatusRequestDescribeConfigurationAggregatorSourcesStatusPaginateTypeDef = {  # (1)
+    "ConfigurationAggregatorName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConfigurationAggregatorSourcesStatusRequestDescribeConfigurationAggregatorSourcesStatusPaginateTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusrequestdescribeconfigurationaggregatorsourcesstatuspaginatetypedef) 
 ## DescribeConfigurationAggregatorsPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_configuration_aggregators")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_configuration_aggregators")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregators)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeConfigurationAggregatorsPaginator
@@ -312,28 +367,40 @@ def get_describe_configuration_aggregators_paginator() -> DescribeConfigurationA
     return Session().client("config").get_paginator("describe_configuration_aggregators")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeConfigurationAggregators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConfigurationAggregators)
 
-Arguments for `DescribeConfigurationAggregatorsPaginator.paginate` method:
+### paginate
 
-- `ConfigurationAggregatorNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeConfigurationAggregatorsPaginator.paginate` method.
 
-`DescribeConfigurationAggregatorsPaginator.paginate` returns
-`_PageIterator`\[[DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigurationAggregatorNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeConfigurationAggregatorsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeconformancepackstatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConfigurationAggregatorsRequestDescribeConfigurationAggregatorsPaginateTypeDef = {  # (1)
+    "ConfigurationAggregatorNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConfigurationAggregatorsRequestDescribeConfigurationAggregatorsPaginateTypeDef](./type_defs.md#describeconfigurationaggregatorsrequestdescribeconfigurationaggregatorspaginatetypedef) 
 ## DescribeConformancePackStatusPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_conformance_pack_status")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_conformance_pack_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConformancePackStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeConformancePackStatusPaginator
@@ -342,28 +409,40 @@ def get_describe_conformance_pack_status_paginator() -> DescribeConformancePackS
     return Session().client("config").get_paginator("describe_conformance_pack_status")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeConformancePackStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConformancePackStatus)
 
-Arguments for `DescribeConformancePackStatusPaginator.paginate` method:
+### paginate
 
-- `ConformancePackNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeConformancePackStatusPaginator.paginate` method.
 
-`DescribeConformancePackStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConformancePackNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeConformancePackStatusResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeconformancepackspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConformancePackStatusRequestDescribeConformancePackStatusPaginateTypeDef = {  # (1)
+    "ConformancePackNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConformancePackStatusRequestDescribeConformancePackStatusPaginateTypeDef](./type_defs.md#describeconformancepackstatusrequestdescribeconformancepackstatuspaginatetypedef) 
 ## DescribeConformancePacksPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_conformance_packs")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_conformance_packs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConformancePacks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeConformancePacksPaginator
@@ -372,28 +451,40 @@ def get_describe_conformance_packs_paginator() -> DescribeConformancePacksPagina
     return Session().client("config").get_paginator("describe_conformance_packs")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeConformancePacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeConformancePacks)
 
-Arguments for `DescribeConformancePacksPaginator.paginate` method:
+### paginate
 
-- `ConformancePackNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeConformancePacksPaginator.paginate` method.
 
-`DescribeConformancePacksPaginator.paginate` returns
-`_PageIterator`\[[DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConformancePackNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeConformancePacksResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeorganizationconfigrulestatusespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConformancePacksRequestDescribeConformancePacksPaginateTypeDef = {  # (1)
+    "ConformancePackNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConformancePacksRequestDescribeConformancePacksPaginateTypeDef](./type_defs.md#describeconformancepacksrequestdescribeconformancepackspaginatetypedef) 
 ## DescribeOrganizationConfigRuleStatusesPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_organization_config_rule_statuses")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_organization_config_rule_statuses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConfigRuleStatuses)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeOrganizationConfigRuleStatusesPaginator
@@ -402,29 +493,40 @@ def get_describe_organization_config_rule_statuses_paginator() -> DescribeOrgani
     return Session().client("config").get_paginator("describe_organization_config_rule_statuses")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeOrganizationConfigRuleStatuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConfigRuleStatuses)
 
-Arguments for `DescribeOrganizationConfigRuleStatusesPaginator.paginate`
-method:
+### paginate
 
-- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeOrganizationConfigRuleStatusesPaginator.paginate` method.
 
-`DescribeOrganizationConfigRuleStatusesPaginator.paginate` returns
-`_PageIterator`\[[DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationConfigRuleNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeOrganizationConfigRuleStatusesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeorganizationconfigrulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeOrganizationConfigRuleStatusesRequestDescribeOrganizationConfigRuleStatusesPaginateTypeDef = {  # (1)
+    "OrganizationConfigRuleNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeOrganizationConfigRuleStatusesRequestDescribeOrganizationConfigRuleStatusesPaginateTypeDef](./type_defs.md#describeorganizationconfigrulestatusesrequestdescribeorganizationconfigrulestatusespaginatetypedef) 
 ## DescribeOrganizationConfigRulesPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_organization_config_rules")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_organization_config_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConfigRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeOrganizationConfigRulesPaginator
@@ -433,28 +535,40 @@ def get_describe_organization_config_rules_paginator() -> DescribeOrganizationCo
     return Session().client("config").get_paginator("describe_organization_config_rules")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeOrganizationConfigRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConfigRules)
 
-Arguments for `DescribeOrganizationConfigRulesPaginator.paginate` method:
+### paginate
 
-- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeOrganizationConfigRulesPaginator.paginate` method.
 
-`DescribeOrganizationConfigRulesPaginator.paginate` returns
-`_PageIterator`\[[DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationConfigRuleNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeOrganizationConfigRulesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeorganizationconformancepackstatusespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeOrganizationConfigRulesRequestDescribeOrganizationConfigRulesPaginateTypeDef = {  # (1)
+    "OrganizationConfigRuleNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeOrganizationConfigRulesRequestDescribeOrganizationConfigRulesPaginateTypeDef](./type_defs.md#describeorganizationconfigrulesrequestdescribeorganizationconfigrulespaginatetypedef) 
 ## DescribeOrganizationConformancePackStatusesPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_organization_conformance_pack_statuses")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_organization_conformance_pack_statuses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConformancePackStatuses)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeOrganizationConformancePackStatusesPaginator
@@ -463,29 +577,40 @@ def get_describe_organization_conformance_pack_statuses_paginator() -> DescribeO
     return Session().client("config").get_paginator("describe_organization_conformance_pack_statuses")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeOrganizationConformancePackStatuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConformancePackStatuses)
 
-Arguments for `DescribeOrganizationConformancePackStatusesPaginator.paginate`
-method:
+### paginate
 
-- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeOrganizationConformancePackStatusesPaginator.paginate` method.
 
-`DescribeOrganizationConformancePackStatusesPaginator.paginate` returns
-`_PageIterator`\[[DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationConformancePackNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeOrganizationConformancePackStatusesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeorganizationconformancepackspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeOrganizationConformancePackStatusesRequestDescribeOrganizationConformancePackStatusesPaginateTypeDef = {  # (1)
+    "OrganizationConformancePackNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeOrganizationConformancePackStatusesRequestDescribeOrganizationConformancePackStatusesPaginateTypeDef](./type_defs.md#describeorganizationconformancepackstatusesrequestdescribeorganizationconformancepackstatusespaginatetypedef) 
 ## DescribeOrganizationConformancePacksPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_organization_conformance_packs")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_organization_conformance_packs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConformancePacks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeOrganizationConformancePacksPaginator
@@ -494,28 +619,40 @@ def get_describe_organization_conformance_packs_paginator() -> DescribeOrganizat
     return Session().client("config").get_paginator("describe_organization_conformance_packs")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeOrganizationConformancePacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeOrganizationConformancePacks)
 
-Arguments for `DescribeOrganizationConformancePacksPaginator.paginate` method:
+### paginate
 
-- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeOrganizationConformancePacksPaginator.paginate` method.
 
-`DescribeOrganizationConformancePacksPaginator.paginate` returns
-`_PageIterator`\[[DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationConformancePackNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeOrganizationConformancePacksResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describependingaggregationrequestspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeOrganizationConformancePacksRequestDescribeOrganizationConformancePacksPaginateTypeDef = {  # (1)
+    "OrganizationConformancePackNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeOrganizationConformancePacksRequestDescribeOrganizationConformancePacksPaginateTypeDef](./type_defs.md#describeorganizationconformancepacksrequestdescribeorganizationconformancepackspaginatetypedef) 
 ## DescribePendingAggregationRequestsPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_pending_aggregation_requests")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_pending_aggregation_requests")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribePendingAggregationRequests)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribePendingAggregationRequestsPaginator
@@ -524,27 +661,39 @@ def get_describe_pending_aggregation_requests_paginator() -> DescribePendingAggr
     return Session().client("config").get_paginator("describe_pending_aggregation_requests")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribePendingAggregationRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribePendingAggregationRequests)
 
-Arguments for `DescribePendingAggregationRequestsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribePendingAggregationRequestsPaginator.paginate` method.
 
-`DescribePendingAggregationRequestsPaginator.paginate` returns
-`_PageIterator`\[[DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribePendingAggregationRequestsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeremediationexecutionstatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribePendingAggregationRequestsRequestDescribePendingAggregationRequestsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePendingAggregationRequestsRequestDescribePendingAggregationRequestsPaginateTypeDef](./type_defs.md#describependingaggregationrequestsrequestdescribependingaggregationrequestspaginatetypedef) 
 ## DescribeRemediationExecutionStatusPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_remediation_execution_status")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_remediation_execution_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRemediationExecutionStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeRemediationExecutionStatusPaginator
@@ -553,30 +702,42 @@ def get_describe_remediation_execution_status_paginator() -> DescribeRemediation
     return Session().client("config").get_paginator("describe_remediation_execution_status")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeRemediationExecutionStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRemediationExecutionStatus)
 
-Arguments for `DescribeRemediationExecutionStatusPaginator.paginate` method:
+### paginate
 
-- `ConfigRuleName`: `str` *(required)*
-- `ResourceKeys`:
-  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeRemediationExecutionStatusPaginator.paginate` method.
 
-`DescribeRemediationExecutionStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigRuleName: str,
+    ResourceKeys: Sequence[ResourceKeyTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeRemediationExecutionStatusResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeretentionconfigurationspaginator"></a>
+1. See [:material-code-braces: ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRemediationExecutionStatusRequestDescribeRemediationExecutionStatusPaginateTypeDef = {  # (1)
+    "ConfigRuleName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRemediationExecutionStatusRequestDescribeRemediationExecutionStatusPaginateTypeDef](./type_defs.md#describeremediationexecutionstatusrequestdescriberemediationexecutionstatuspaginatetypedef) 
 ## DescribeRetentionConfigurationsPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("describe_retention_configurations")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("describe_retention_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRetentionConfigurations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import DescribeRetentionConfigurationsPaginator
@@ -585,28 +746,40 @@ def get_describe_retention_configurations_paginator() -> DescribeRetentionConfig
     return Session().client("config").get_paginator("describe_retention_configurations")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.DescribeRetentionConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.DescribeRetentionConfigurations)
 
-Arguments for `DescribeRetentionConfigurationsPaginator.paginate` method:
+### paginate
 
-- `RetentionConfigurationNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeRetentionConfigurationsPaginator.paginate` method.
 
-`DescribeRetentionConfigurationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RetentionConfigurationNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeRetentionConfigurationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getaggregatecompliancedetailsbyconfigrulepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRetentionConfigurationsRequestDescribeRetentionConfigurationsPaginateTypeDef = {  # (1)
+    "RetentionConfigurationNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRetentionConfigurationsRequestDescribeRetentionConfigurationsPaginateTypeDef](./type_defs.md#describeretentionconfigurationsrequestdescriberetentionconfigurationspaginatetypedef) 
 ## GetAggregateComplianceDetailsByConfigRulePaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import GetAggregateComplianceDetailsByConfigRulePaginator
@@ -615,33 +788,48 @@ def get_get_aggregate_compliance_details_by_config_rule_paginator() -> GetAggreg
     return Session().client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetAggregateComplianceDetailsByConfigRule)
 
-Arguments for `GetAggregateComplianceDetailsByConfigRulePaginator.paginate`
-method:
+### paginate
 
-- `ConfigurationAggregatorName`: `str` *(required)*
-- `ConfigRuleName`: `str` *(required)*
-- `AccountId`: `str` *(required)*
-- `AwsRegion`: `str` *(required)*
-- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetAggregateComplianceDetailsByConfigRulePaginator.paginate` method.
 
-`GetAggregateComplianceDetailsByConfigRulePaginator.paginate` returns
-`_PageIterator`\[[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigurationAggregatorName: str,
+    ConfigRuleName: str,
+    AccountId: str,
+    AwsRegion: str,
+    ComplianceType: ComplianceTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getcompliancedetailsbyconfigrulepaginator"></a>
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetAggregateComplianceDetailsByConfigRuleRequestGetAggregateComplianceDetailsByConfigRulePaginateTypeDef = {  # (1)
+    "ConfigurationAggregatorName": ...,
+    "ConfigRuleName": ...,
+    "AccountId": ...,
+    "AwsRegion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetAggregateComplianceDetailsByConfigRuleRequestGetAggregateComplianceDetailsByConfigRulePaginateTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigrulerequestgetaggregatecompliancedetailsbyconfigrulepaginatetypedef) 
 ## GetComplianceDetailsByConfigRulePaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("get_compliance_details_by_config_rule")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("get_compliance_details_by_config_rule")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByConfigRule)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import GetComplianceDetailsByConfigRulePaginator
@@ -650,30 +838,42 @@ def get_get_compliance_details_by_config_rule_paginator() -> GetComplianceDetail
     return Session().client("config").get_paginator("get_compliance_details_by_config_rule")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.GetComplianceDetailsByConfigRule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByConfigRule)
 
-Arguments for `GetComplianceDetailsByConfigRulePaginator.paginate` method:
+### paginate
 
-- `ConfigRuleName`: `str` *(required)*
-- `ComplianceTypes`:
-  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetComplianceDetailsByConfigRulePaginator.paginate` method.
 
-`GetComplianceDetailsByConfigRulePaginator.paginate` returns
-`_PageIterator`\[[GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigRuleName: str,
+    ComplianceTypes: Sequence[ComplianceTypeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetComplianceDetailsByConfigRuleResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getcompliancedetailsbyresourcepaginator"></a>
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetComplianceDetailsByConfigRuleRequestGetComplianceDetailsByConfigRulePaginateTypeDef = {  # (1)
+    "ConfigRuleName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetComplianceDetailsByConfigRuleRequestGetComplianceDetailsByConfigRulePaginateTypeDef](./type_defs.md#getcompliancedetailsbyconfigrulerequestgetcompliancedetailsbyconfigrulepaginatetypedef) 
 ## GetComplianceDetailsByResourcePaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("get_compliance_details_by_resource")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("get_compliance_details_by_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import GetComplianceDetailsByResourcePaginator
@@ -682,31 +882,44 @@ def get_get_compliance_details_by_resource_paginator() -> GetComplianceDetailsBy
     return Session().client("config").get_paginator("get_compliance_details_by_resource")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.GetComplianceDetailsByResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetComplianceDetailsByResource)
 
-Arguments for `GetComplianceDetailsByResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceType`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `ComplianceTypes`:
-  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetComplianceDetailsByResourcePaginator.paginate` method.
 
-`GetComplianceDetailsByResourcePaginator.paginate` returns
-`_PageIterator`\[[GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceType: str,
+    ResourceId: str,
+    ComplianceTypes: Sequence[ComplianceTypeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetComplianceDetailsByResourceResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getconformancepackcompliancesummarypaginator"></a>
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef = {  # (1)
+    "ResourceType": ...,
+    "ResourceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef](./type_defs.md#getcompliancedetailsbyresourcerequestgetcompliancedetailsbyresourcepaginatetypedef) 
 ## GetConformancePackComplianceSummaryPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("get_conformance_pack_compliance_summary")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("get_conformance_pack_compliance_summary")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetConformancePackComplianceSummary)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import GetConformancePackComplianceSummaryPaginator
@@ -715,28 +928,40 @@ def get_get_conformance_pack_compliance_summary_paginator() -> GetConformancePac
     return Session().client("config").get_paginator("get_conformance_pack_compliance_summary")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.GetConformancePackComplianceSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetConformancePackComplianceSummary)
 
-Arguments for `GetConformancePackComplianceSummaryPaginator.paginate` method:
+### paginate
 
-- `ConformancePackNames`: `Sequence`\[`str`\] *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetConformancePackComplianceSummaryPaginator.paginate` method.
 
-`GetConformancePackComplianceSummaryPaginator.paginate` returns
-`_PageIterator`\[[GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConformancePackNames: Sequence[str],
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetConformancePackComplianceSummaryResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getorganizationconfigruledetailedstatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetConformancePackComplianceSummaryRequestGetConformancePackComplianceSummaryPaginateTypeDef = {  # (1)
+    "ConformancePackNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetConformancePackComplianceSummaryRequestGetConformancePackComplianceSummaryPaginateTypeDef](./type_defs.md#getconformancepackcompliancesummaryrequestgetconformancepackcompliancesummarypaginatetypedef) 
 ## GetOrganizationConfigRuleDetailedStatusPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("get_organization_config_rule_detailed_status")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("get_organization_config_rule_detailed_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetOrganizationConfigRuleDetailedStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import GetOrganizationConfigRuleDetailedStatusPaginator
@@ -745,31 +970,42 @@ def get_get_organization_config_rule_detailed_status_paginator() -> GetOrganizat
     return Session().client("config").get_paginator("get_organization_config_rule_detailed_status")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.GetOrganizationConfigRuleDetailedStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetOrganizationConfigRuleDetailedStatus)
 
-Arguments for `GetOrganizationConfigRuleDetailedStatusPaginator.paginate`
-method:
+### paginate
 
-- `OrganizationConfigRuleName`: `str` *(required)*
-- `Filters`:
-  [StatusDetailFiltersTypeDef](./type_defs.md#statusdetailfilterstypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetOrganizationConfigRuleDetailedStatusPaginator.paginate` method.
 
-`GetOrganizationConfigRuleDetailedStatusPaginator.paginate` returns
-`_PageIterator`\[[GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationConfigRuleName: str,
+    Filters: StatusDetailFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetOrganizationConfigRuleDetailedStatusResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getorganizationconformancepackdetailedstatuspaginator"></a>
+1. See [:material-code-braces: StatusDetailFiltersTypeDef](./type_defs.md#statusdetailfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetOrganizationConfigRuleDetailedStatusRequestGetOrganizationConfigRuleDetailedStatusPaginateTypeDef = {  # (1)
+    "OrganizationConfigRuleName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetOrganizationConfigRuleDetailedStatusRequestGetOrganizationConfigRuleDetailedStatusPaginateTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusrequestgetorganizationconfigruledetailedstatuspaginatetypedef) 
 ## GetOrganizationConformancePackDetailedStatusPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("get_organization_conformance_pack_detailed_status")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("get_organization_conformance_pack_detailed_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetOrganizationConformancePackDetailedStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import GetOrganizationConformancePackDetailedStatusPaginator
@@ -778,31 +1014,42 @@ def get_get_organization_conformance_pack_detailed_status_paginator() -> GetOrga
     return Session().client("config").get_paginator("get_organization_conformance_pack_detailed_status")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.GetOrganizationConformancePackDetailedStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetOrganizationConformancePackDetailedStatus)
 
-Arguments for `GetOrganizationConformancePackDetailedStatusPaginator.paginate`
-method:
+### paginate
 
-- `OrganizationConformancePackName`: `str` *(required)*
-- `Filters`:
-  [OrganizationResourceDetailedStatusFiltersTypeDef](./type_defs.md#organizationresourcedetailedstatusfilterstypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetOrganizationConformancePackDetailedStatusPaginator.paginate` method.
 
-`GetOrganizationConformancePackDetailedStatusPaginator.paginate` returns
-`_PageIterator`\[[GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationConformancePackName: str,
+    Filters: OrganizationResourceDetailedStatusFiltersTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetOrganizationConformancePackDetailedStatusResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getresourceconfighistorypaginator"></a>
+1. See [:material-code-braces: OrganizationResourceDetailedStatusFiltersTypeDef](./type_defs.md#organizationresourcedetailedstatusfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetOrganizationConformancePackDetailedStatusRequestGetOrganizationConformancePackDetailedStatusPaginateTypeDef = {  # (1)
+    "OrganizationConformancePackName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetOrganizationConformancePackDetailedStatusRequestGetOrganizationConformancePackDetailedStatusPaginateTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusrequestgetorganizationconformancepackdetailedstatuspaginatetypedef) 
 ## GetResourceConfigHistoryPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("get_resource_config_history")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("get_resource_config_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetResourceConfigHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import GetResourceConfigHistoryPaginator
@@ -811,34 +1058,47 @@ def get_get_resource_config_history_paginator() -> GetResourceConfigHistoryPagin
     return Session().client("config").get_paginator("get_resource_config_history")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.GetResourceConfigHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.GetResourceConfigHistory)
 
-Arguments for `GetResourceConfigHistoryPaginator.paginate` method:
+### paginate
 
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-  *(required)*
-- `resourceId`: `str` *(required)*
-- `laterTime`: `Union`\[`datetime`, `str`\]
-- `earlierTime`: `Union`\[`datetime`, `str`\]
-- `chronologicalOrder`:
-  [ChronologicalOrderType](./literals.md#chronologicalordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetResourceConfigHistoryPaginator.paginate` method.
 
-`GetResourceConfigHistoryPaginator.paginate` returns
-`_PageIterator`\[[GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    resourceType: ResourceTypeType,  # (1)
+    resourceId: str,
+    laterTime: Union[datetime, str] = ...,
+    earlierTime: Union[datetime, str] = ...,
+    chronologicalOrder: ChronologicalOrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[GetResourceConfigHistoryResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listaggregatediscoveredresourcespaginator"></a>
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-brackets: ChronologicalOrderType](./literals.md#chronologicalordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetResourceConfigHistoryRequestGetResourceConfigHistoryPaginateTypeDef = {  # (1)
+    "resourceType": ...,
+    "resourceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourceConfigHistoryRequestGetResourceConfigHistoryPaginateTypeDef](./type_defs.md#getresourceconfighistoryrequestgetresourceconfighistorypaginatetypedef) 
 ## ListAggregateDiscoveredResourcesPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("list_aggregate_discovered_resources")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("list_aggregate_discovered_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListAggregateDiscoveredResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import ListAggregateDiscoveredResourcesPaginator
@@ -847,31 +1107,45 @@ def get_list_aggregate_discovered_resources_paginator() -> ListAggregateDiscover
     return Session().client("config").get_paginator("list_aggregate_discovered_resources")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.ListAggregateDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListAggregateDiscoveredResources)
 
-Arguments for `ListAggregateDiscoveredResourcesPaginator.paginate` method:
+### paginate
 
-- `ConfigurationAggregatorName`: `str` *(required)*
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-  *(required)*
-- `Filters`: [ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAggregateDiscoveredResourcesPaginator.paginate` method.
 
-`ListAggregateDiscoveredResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ConfigurationAggregatorName: str,
+    ResourceType: ResourceTypeType,  # (1)
+    Filters: ResourceFiltersTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListAggregateDiscoveredResourcesResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listdiscoveredresourcespaginator"></a>
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAggregateDiscoveredResourcesRequestListAggregateDiscoveredResourcesPaginateTypeDef = {  # (1)
+    "ConfigurationAggregatorName": ...,
+    "ResourceType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAggregateDiscoveredResourcesRequestListAggregateDiscoveredResourcesPaginateTypeDef](./type_defs.md#listaggregatediscoveredresourcesrequestlistaggregatediscoveredresourcespaginatetypedef) 
 ## ListDiscoveredResourcesPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("list_discovered_resources")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("list_discovered_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListDiscoveredResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import ListDiscoveredResourcesPaginator
@@ -880,32 +1154,44 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
     return Session().client("config").get_paginator("list_discovered_resources")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.ListDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListDiscoveredResources)
 
-Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
+### paginate
 
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-  *(required)*
-- `resourceIds`: `Sequence`\[`str`\]
-- `resourceName`: `str`
-- `includeDeletedResources`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDiscoveredResourcesPaginator.paginate` method.
 
-`ListDiscoveredResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    resourceType: ResourceTypeType,  # (1)
+    resourceIds: Sequence[str] = ...,
+    resourceName: str = ...,
+    includeDeletedResources: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListDiscoveredResourcesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef = {  # (1)
+    "resourceType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef](./type_defs.md#listdiscoveredresourcesrequestlistdiscoveredresourcespaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import ListTagsForResourcePaginator
@@ -914,28 +1200,40 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("config").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="selectaggregateresourceconfigpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 
 ## SelectAggregateResourceConfigPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("select_aggregate_resource_config")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("select_aggregate_resource_config")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.SelectAggregateResourceConfig)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import SelectAggregateResourceConfigPaginator
@@ -944,30 +1242,43 @@ def get_select_aggregate_resource_config_paginator() -> SelectAggregateResourceC
     return Session().client("config").get_paginator("select_aggregate_resource_config")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.SelectAggregateResourceConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.SelectAggregateResourceConfig)
 
-Arguments for `SelectAggregateResourceConfigPaginator.paginate` method:
+### paginate
 
-- `Expression`: `str` *(required)*
-- `ConfigurationAggregatorName`: `str` *(required)*
-- `MaxResults`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SelectAggregateResourceConfigPaginator.paginate` method.
 
-`SelectAggregateResourceConfigPaginator.paginate` returns
-`_PageIterator`\[[SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Expression: str,
+    ConfigurationAggregatorName: str,
+    MaxResults: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[SelectAggregateResourceConfigResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="selectresourceconfigpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SelectAggregateResourceConfigRequestSelectAggregateResourceConfigPaginateTypeDef = {  # (1)
+    "Expression": ...,
+    "ConfigurationAggregatorName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SelectAggregateResourceConfigRequestSelectAggregateResourceConfigPaginateTypeDef](./type_defs.md#selectaggregateresourceconfigrequestselectaggregateresourceconfigpaginatetypedef) 
 ## SelectResourceConfigPaginator
 
-Type annotations for
-`boto3.client("config").get_paginator("select_resource_config")`.
+Type annotations and code completion for `#!python boto3.client("config").get_paginator("select_resource_config")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.SelectResourceConfig)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_config.paginator import SelectResourceConfigPaginator
@@ -976,14 +1287,31 @@ def get_select_resource_config_paginator() -> SelectResourceConfigPaginator:
     return Session().client("config").get_paginator("select_resource_config")
 ```
 
-Boto3 documentation:
-[ConfigService.Paginator.SelectResourceConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Paginator.SelectResourceConfig)
 
-Arguments for `SelectResourceConfigPaginator.paginate` method:
+### paginate
 
-- `Expression`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SelectResourceConfigPaginator.paginate` method.
 
-`SelectResourceConfigPaginator.paginate` returns
-`_PageIterator`\[[SelectResourceConfigResponseTypeDef](./type_defs.md#selectresourceconfigresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Expression: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[SelectResourceConfigResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: SelectResourceConfigResponseTypeDef](./type_defs.md#selectresourceconfigresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SelectResourceConfigRequestSelectResourceConfigPaginateTypeDef = {  # (1)
+    "Expression": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SelectResourceConfigRequestSelectResourceConfigPaginateTypeDef](./type_defs.md#selectresourceconfigrequestselectresourceconfigpaginatetypedef) 

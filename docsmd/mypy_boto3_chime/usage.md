@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-chime-module"></a>
-
-# Examples for boto3 Chime module
+# Examples
 
 > [Index](../README.md) > [Chime](./README.md) > Examples
 
-- [Examples for boto3 Chime module](#examples-for-boto3-chime-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+    type annotations stubs module [mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[chime]` package installed.
 
-Write your `Chime` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `Chime` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ChimeClient
-# and provides type checking and code completion
-client = session.client("chime")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_phone_number_with_user()
 
-# paginator has type ListAccountsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_accounts")
-for item in paginator.paginate(...):
-    # item has type ListAccountsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("chime")  # (1)
+    result = client.associate_phone_numbers_with_voice_connector()  # (2)
+    ```
+
+    1. client: [ChimeClient](./client.md)
+    2. result: [:material-code-braces: AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("chime")  # (1)
+
+    paginator = client.get_paginator("list_accounts")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ChimeClient](./client.md)
+    2. paginator: [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+    3. item: [:material-code-braces: ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[chime]` or a standalone `mypy_boto3_chime` package, you
-have to explicitly specify `client: ChimeClient` type annotation.
+With `boto3-stubs-lite[chime]`
+or a standalone `mypy_boto3_chime` package, you have to explicitly specify `client: ChimeClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_chime.client import ChimeClient
-from mypy_boto3_chime.paginator import ListAccountsPaginator
-
-from mypy_boto3_chime.literals import PaginatorName
-
-from mypy_boto3_chime.type_defs import Dict[str, Any]
-from mypy_boto3_chime.type_defs import ListAccountsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ChimeClient = session.client("chime")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.associate_phone_number_with_user()
+    from mypy_boto3_chime.client import ChimeClient
+    from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef
+    from mypy_boto3_chime.type_defs import AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_accounts"
-paginator: ListAccountsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAccountsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ChimeClient = session.client("chime")
+
+    kwargs: AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef = {...}
+    result: AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef = client.associate_phone_numbers_with_voice_connector(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_chime.client import ChimeClient
+    from mypy_boto3_chime.paginator import ListAccountsPaginator
+    from mypy_boto3_chime.type_defs import ListAccountsResponseTypeDef
+
+
+    session = Session()
+    client: ChimeClient = session.client("chime")
+
+    paginator: ListAccountsPaginator = client.get_paginator("list_accounts")
+    for item in paginator.paginate(...):
+        item: ListAccountsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

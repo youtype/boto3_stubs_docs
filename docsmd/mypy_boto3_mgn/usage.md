@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-mgn-module"></a>
-
-# Examples for boto3 mgn module
+# Examples
 
 > [Index](../README.md) > [mgn](./README.md) > Examples
 
-- [Examples for boto3 mgn module](#examples-for-boto3-mgn-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
+    type annotations stubs module [mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[mgn]` package installed.
 
-Write your `mgn` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `mgn` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type mgnClient
-# and provides type checking and code completion
-client = session.client("mgn")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type DescribeJobLogItemsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_job_log_items")
-for item in paginator.paginate(...):
-    # item has type DescribeJobLogItemsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("mgn")  # (1)
+    result = client.change_server_life_cycle_state()  # (2)
+    ```
+
+    1. client: [mgnClient](./client.md)
+    2. result: [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("mgn")  # (1)
+
+    paginator = client.get_paginator("describe_job_log_items")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [mgnClient](./client.md)
+    2. paginator: [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
+    3. item: [:material-code-braces: DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[mgn]` or a standalone `mypy_boto3_mgn` package, you have
-to explicitly specify `client: mgnClient` type annotation.
+With `boto3-stubs-lite[mgn]`
+or a standalone `mypy_boto3_mgn` package, you have to explicitly specify `client: mgnClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_mgn.client import mgnClient
-from mypy_boto3_mgn.paginator import DescribeJobLogItemsPaginator
-
-from mypy_boto3_mgn.literals import PaginatorName
-
-from mypy_boto3_mgn.type_defs import bool
-from mypy_boto3_mgn.type_defs import DescribeJobLogItemsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: mgnClient = session.client("mgn")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_mgn.client import mgnClient
+    from mypy_boto3_mgn.type_defs import SourceServerResponseMetadataTypeDef
+    from mypy_boto3_mgn.type_defs import ChangeServerLifeCycleStateRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_job_log_items"
-paginator: DescribeJobLogItemsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeJobLogItemsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: mgnClient = session.client("mgn")
+
+    kwargs: ChangeServerLifeCycleStateRequestRequestTypeDef = {...}
+    result: SourceServerResponseMetadataTypeDef = client.change_server_life_cycle_state(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_mgn.client import mgnClient
+    from mypy_boto3_mgn.paginator import DescribeJobLogItemsPaginator
+    from mypy_boto3_mgn.type_defs import DescribeJobLogItemsResponseTypeDef
+
+
+    session = Session()
+    client: mgnClient = session.client("mgn")
+
+    paginator: DescribeJobLogItemsPaginator = client.get_paginator("describe_job_log_items")
+    for item in paginator.paginate(...):
+        item: DescribeJobLogItemsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

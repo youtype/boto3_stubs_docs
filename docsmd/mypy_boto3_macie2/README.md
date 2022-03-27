@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-macie2-module"></a>
-
-# Type annotations for boto3 Macie2 module
+#  Macie2 module
 
 > [Index](../README.md) > Macie2
 
-Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
-type annotations stubs module
-[mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
+!!! note ""
 
-- [Type annotations for boto3 Macie2 module](#type-annotations-for-boto3-macie2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [Macie2Client](#macie2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+    type annotations stubs module [mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Macie2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[macie2]'
 python -m pip install mypy-boto3-macie2
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,116 +42,37 @@ python -m pip install mypy-boto3-macie2
 python -m pip uninstall -y mypy-boto3-macie2
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="macie2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## Macie2Client
 
-Type annotations for `boto3.client("macie2")` as [Macie2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("macie2")` as [Macie2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_macie2.client import Macie2Client
+
+def get_client() -> Macie2Client:
+    return Session().cleint("macie2")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_invitation](./client.md#accept_invitation)
-- [batch_get_custom_data_identifiers](./client.md#batch_get_custom_data_identifiers)
-- [can_paginate](./client.md#can_paginate)
-- [create_classification_job](./client.md#create_classification_job)
-- [create_custom_data_identifier](./client.md#create_custom_data_identifier)
-- [create_findings_filter](./client.md#create_findings_filter)
-- [create_invitations](./client.md#create_invitations)
-- [create_member](./client.md#create_member)
-- [create_sample_findings](./client.md#create_sample_findings)
-- [decline_invitations](./client.md#decline_invitations)
-- [delete_custom_data_identifier](./client.md#delete_custom_data_identifier)
-- [delete_findings_filter](./client.md#delete_findings_filter)
-- [delete_invitations](./client.md#delete_invitations)
-- [delete_member](./client.md#delete_member)
-- [describe_buckets](./client.md#describe_buckets)
-- [describe_classification_job](./client.md#describe_classification_job)
-- [describe_organization_configuration](./client.md#describe_organization_configuration)
-- [disable_macie](./client.md#disable_macie)
-- [disable_organization_admin_account](./client.md#disable_organization_admin_account)
-- [disassociate_from_administrator_account](./client.md#disassociate_from_administrator_account)
-- [disassociate_from_master_account](./client.md#disassociate_from_master_account)
-- [disassociate_member](./client.md#disassociate_member)
-- [enable_macie](./client.md#enable_macie)
-- [enable_organization_admin_account](./client.md#enable_organization_admin_account)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_administrator_account](./client.md#get_administrator_account)
-- [get_bucket_statistics](./client.md#get_bucket_statistics)
-- [get_classification_export_configuration](./client.md#get_classification_export_configuration)
-- [get_custom_data_identifier](./client.md#get_custom_data_identifier)
-- [get_finding_statistics](./client.md#get_finding_statistics)
-- [get_findings](./client.md#get_findings)
-- [get_findings_filter](./client.md#get_findings_filter)
-- [get_findings_publication_configuration](./client.md#get_findings_publication_configuration)
-- [get_invitations_count](./client.md#get_invitations_count)
-- [get_macie_session](./client.md#get_macie_session)
-- [get_master_account](./client.md#get_master_account)
-- [get_member](./client.md#get_member)
-- [get_paginator](./client.md#get_paginator)
-- [get_usage_statistics](./client.md#get_usage_statistics)
-- [get_usage_totals](./client.md#get_usage_totals)
-- [list_classification_jobs](./client.md#list_classification_jobs)
-- [list_custom_data_identifiers](./client.md#list_custom_data_identifiers)
-- [list_findings](./client.md#list_findings)
-- [list_findings_filters](./client.md#list_findings_filters)
-- [list_invitations](./client.md#list_invitations)
-- [list_managed_data_identifiers](./client.md#list_managed_data_identifiers)
-- [list_members](./client.md#list_members)
-- [list_organization_admin_accounts](./client.md#list_organization_admin_accounts)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_classification_export_configuration](./client.md#put_classification_export_configuration)
-- [put_findings_publication_configuration](./client.md#put_findings_publication_configuration)
-- [search_resources](./client.md#search_resources)
-- [tag_resource](./client.md#tag_resource)
-- [test_custom_data_identifier](./client.md#test_custom_data_identifier)
-- [untag_resource](./client.md#untag_resource)
-- [update_classification_job](./client.md#update_classification_job)
-- [update_findings_filter](./client.md#update_findings_filter)
-- [update_macie_session](./client.md#update_macie_session)
-- [update_member_session](./client.md#update_member_session)
-- [update_organization_configuration](./client.md#update_organization_configuration)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-Macie2Client [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("macie2").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("macie2").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_macie2.paginator import DescribeBucketsPaginator, ...
+from mypy_boto3_macie2.paginator import DescribeBucketsPaginator
+
+def get_describe_buckets_paginator() -> DescribeBucketsPaginator:
+    return Session().client("macie2").get_paginator("describe_buckets"))
 ```
 
 - [DescribeBucketsPaginator](./paginators.md#describebucketspaginator)
@@ -187,16 +86,23 @@ from mypy_boto3_macie2.paginator import DescribeBucketsPaginator, ...
 - [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
 - [SearchResourcesPaginator](./paginators.md#searchresourcespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_macie2.literals import AdminStatusType
 
-```python
-from mypy_boto3_macie2.literals import AdminStatusType, ...
+def get_value() -> AdminStatusType:
+    return "DISABLING_IN_PROGRESS"
 ```
 
 - [AdminStatusType](./literals.md#adminstatustype)
@@ -259,18 +165,22 @@ from mypy_boto3_macie2.literals import AdminStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef
 
-```python
-from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef, ...
+def get_value() -> AcceptInvitationRequestRequestTypeDef:
+    return {
+        "invitationId": ...,
+    }
 ```
 
 - [AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef)
@@ -328,6 +238,7 @@ from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef, .
 - [DeleteInvitationsRequestRequestTypeDef](./type_defs.md#deleteinvitationsrequestrequesttypedef)
 - [DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef)
 - [DeleteMemberRequestRequestTypeDef](./type_defs.md#deletememberrequestrequesttypedef)
+- [DescribeBucketsRequestDescribeBucketsPaginateTypeDef](./type_defs.md#describebucketsrequestdescribebucketspaginatetypedef)
 - [DescribeBucketsRequestRequestTypeDef](./type_defs.md#describebucketsrequestrequesttypedef)
 - [DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef)
 - [DescribeClassificationJobRequestRequestTypeDef](./type_defs.md#describeclassificationjobrequestrequesttypedef)
@@ -363,6 +274,7 @@ from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef, .
 - [GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef)
 - [GetMemberRequestRequestTypeDef](./type_defs.md#getmemberrequestrequesttypedef)
 - [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef)
+- [GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef](./type_defs.md#getusagestatisticsrequestgetusagestatisticspaginatetypedef)
 - [GetUsageStatisticsRequestRequestTypeDef](./type_defs.md#getusagestatisticsrequestrequesttypedef)
 - [GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef)
 - [GetUsageTotalsRequestRequestTypeDef](./type_defs.md#getusagetotalsrequestrequesttypedef)
@@ -382,14 +294,19 @@ from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef, .
 - [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
 - [KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)
 - [LastRunErrorStatusTypeDef](./type_defs.md#lastrunerrorstatustypedef)
+- [ListClassificationJobsRequestListClassificationJobsPaginateTypeDef](./type_defs.md#listclassificationjobsrequestlistclassificationjobspaginatetypedef)
 - [ListClassificationJobsRequestRequestTypeDef](./type_defs.md#listclassificationjobsrequestrequesttypedef)
 - [ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef)
+- [ListCustomDataIdentifiersRequestListCustomDataIdentifiersPaginateTypeDef](./type_defs.md#listcustomdataidentifiersrequestlistcustomdataidentifierspaginatetypedef)
 - [ListCustomDataIdentifiersRequestRequestTypeDef](./type_defs.md#listcustomdataidentifiersrequestrequesttypedef)
 - [ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef)
+- [ListFindingsFiltersRequestListFindingsFiltersPaginateTypeDef](./type_defs.md#listfindingsfiltersrequestlistfindingsfilterspaginatetypedef)
 - [ListFindingsFiltersRequestRequestTypeDef](./type_defs.md#listfindingsfiltersrequestrequesttypedef)
 - [ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef)
+- [ListFindingsRequestListFindingsPaginateTypeDef](./type_defs.md#listfindingsrequestlistfindingspaginatetypedef)
 - [ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef)
 - [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)
+- [ListInvitationsRequestListInvitationsPaginateTypeDef](./type_defs.md#listinvitationsrequestlistinvitationspaginatetypedef)
 - [ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef)
 - [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)
 - [ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef)
@@ -397,8 +314,10 @@ from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef, .
 - [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
 - [ListManagedDataIdentifiersRequestRequestTypeDef](./type_defs.md#listmanageddataidentifiersrequestrequesttypedef)
 - [ListManagedDataIdentifiersResponseTypeDef](./type_defs.md#listmanageddataidentifiersresponsetypedef)
+- [ListMembersRequestListMembersPaginateTypeDef](./type_defs.md#listmembersrequestlistmemberspaginatetypedef)
 - [ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef)
 - [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)
+- [ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef](./type_defs.md#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef)
 - [ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef)
 - [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -434,6 +353,7 @@ from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef, .
 - [SearchResourcesCriteriaBlockTypeDef](./type_defs.md#searchresourcescriteriablocktypedef)
 - [SearchResourcesCriteriaTypeDef](./type_defs.md#searchresourcescriteriatypedef)
 - [SearchResourcesRequestRequestTypeDef](./type_defs.md#searchresourcesrequestrequesttypedef)
+- [SearchResourcesRequestSearchResourcesPaginateTypeDef](./type_defs.md#searchresourcesrequestsearchresourcespaginatetypedef)
 - [SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef)
 - [SearchResourcesSimpleCriterionTypeDef](./type_defs.md#searchresourcessimplecriteriontypedef)
 - [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
@@ -476,3 +396,4 @@ from mypy_boto3_macie2.type_defs import AcceptInvitationRequestRequestTypeDef, .
 - [UserIdentityTypeDef](./type_defs.md#useridentitytypedef)
 - [UserPausedDetailsTypeDef](./type_defs.md#userpauseddetailstypedef)
 - [WeeklyScheduleTypeDef](./type_defs.md#weeklyscheduletypedef)
+

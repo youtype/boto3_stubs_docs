@@ -1,620 +1,814 @@
-<a id="typed-dictionaries-for-boto3-cloudhsmv2-module"></a>
-
-# Typed dictionaries for boto3 CloudHSMV2 module
+# Typed dictionaries
 
 > [Index](../README.md) > [CloudHSMV2](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
-type annotations stubs module
-[mypy-boto3-cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CloudHSMV2 module](#typed-dictionaries-for-boto3-cloudhsmv2-module)
-  - [BackupRetentionPolicyTypeDef](#backupretentionpolicytypedef)
-  - [BackupTypeDef](#backuptypedef)
-  - [CertificatesTypeDef](#certificatestypedef)
-  - [ClusterTypeDef](#clustertypedef)
-  - [CopyBackupToRegionRequestRequestTypeDef](#copybackuptoregionrequestrequesttypedef)
-  - [CopyBackupToRegionResponseTypeDef](#copybackuptoregionresponsetypedef)
-  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
-  - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
-  - [CreateHsmRequestRequestTypeDef](#createhsmrequestrequesttypedef)
-  - [CreateHsmResponseTypeDef](#createhsmresponsetypedef)
-  - [DeleteBackupRequestRequestTypeDef](#deletebackuprequestrequesttypedef)
-  - [DeleteBackupResponseTypeDef](#deletebackupresponsetypedef)
-  - [DeleteClusterRequestRequestTypeDef](#deleteclusterrequestrequesttypedef)
-  - [DeleteClusterResponseTypeDef](#deleteclusterresponsetypedef)
-  - [DeleteHsmRequestRequestTypeDef](#deletehsmrequestrequesttypedef)
-  - [DeleteHsmResponseTypeDef](#deletehsmresponsetypedef)
-  - [DescribeBackupsRequestRequestTypeDef](#describebackupsrequestrequesttypedef)
-  - [DescribeBackupsResponseTypeDef](#describebackupsresponsetypedef)
-  - [DescribeClustersRequestRequestTypeDef](#describeclustersrequestrequesttypedef)
-  - [DescribeClustersResponseTypeDef](#describeclustersresponsetypedef)
-  - [DestinationBackupTypeDef](#destinationbackuptypedef)
-  - [HsmTypeDef](#hsmtypedef)
-  - [InitializeClusterRequestRequestTypeDef](#initializeclusterrequestrequesttypedef)
-  - [InitializeClusterResponseTypeDef](#initializeclusterresponsetypedef)
-  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
-  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
-  - [ModifyBackupAttributesRequestRequestTypeDef](#modifybackupattributesrequestrequesttypedef)
-  - [ModifyBackupAttributesResponseTypeDef](#modifybackupattributesresponsetypedef)
-  - [ModifyClusterRequestRequestTypeDef](#modifyclusterrequestrequesttypedef)
-  - [ModifyClusterResponseTypeDef](#modifyclusterresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreBackupRequestRequestTypeDef](#restorebackuprequestrequesttypedef)
-  - [RestoreBackupResponseTypeDef](#restorebackupresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-
-<a id="backupretentionpolicytypedef"></a>
+    Auto-generated documentation for [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
+    type annotations stubs module [mypy-boto3-cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 ## BackupRetentionPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import BackupRetentionPolicyTypeDef
+
+def get_value() -> BackupRetentionPolicyTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackupRetentionPolicyTypeDef(TypedDict):
+    Type: NotRequired[BackupRetentionTypeType],  # (1)
+    Value: NotRequired[str],
+```
 
-- `Type`: `Literal['DAYS']` (see
-  [BackupRetentionTypeType](./literals.md#backupretentiontypetype))
-- `Value`: `str`
-
-<a id="backuptypedef"></a>
-
+1. See [:material-code-brackets: BackupRetentionTypeType](./literals.md#backupretentiontypetype) 
 ## BackupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import BackupTypeDef
+
+def get_value() -> BackupTypeDef:
+    return {
+        "BackupId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BackupTypeDef(TypedDict):
+    BackupId: str,
+    BackupState: NotRequired[BackupStateType],  # (1)
+    ClusterId: NotRequired[str],
+    CreateTimestamp: NotRequired[datetime],
+    CopyTimestamp: NotRequired[datetime],
+    NeverExpires: NotRequired[bool],
+    SourceRegion: NotRequired[str],
+    SourceBackup: NotRequired[str],
+    SourceCluster: NotRequired[str],
+    DeleteTimestamp: NotRequired[datetime],
+    TagList: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `BackupId`: `str`
-
-Optional fields:
-
-- `BackupState`: [BackupStateType](./literals.md#backupstatetype)
-- `ClusterId`: `str`
-- `CreateTimestamp`: `datetime`
-- `CopyTimestamp`: `datetime`
-- `NeverExpires`: `bool`
-- `SourceRegion`: `str`
-- `SourceBackup`: `str`
-- `SourceCluster`: `str`
-- `DeleteTimestamp`: `datetime`
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="certificatestypedef"></a>
-
+1. See [:material-code-brackets: BackupStateType](./literals.md#backupstatetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CertificatesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import CertificatesTypeDef
+
+def get_value() -> CertificatesTypeDef:
+    return {
+        "ClusterCsr": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterCsr`: `str`
-- `HsmCertificate`: `str`
-- `AwsHardwareCertificate`: `str`
-- `ManufacturerHardwareCertificate`: `str`
-- `ClusterCertificate`: `str`
-
-<a id="clustertypedef"></a>
+```python title="Definition"
+class CertificatesTypeDef(TypedDict):
+    ClusterCsr: NotRequired[str],
+    HsmCertificate: NotRequired[str],
+    AwsHardwareCertificate: NotRequired[str],
+    ManufacturerHardwareCertificate: NotRequired[str],
+    ClusterCertificate: NotRequired[str],
+```
 
 ## ClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import ClusterTypeDef
+
+def get_value() -> ClusterTypeDef:
+    return {
+        "BackupPolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterTypeDef(TypedDict):
+    BackupPolicy: NotRequired[BackupPolicyType],  # (1)
+    BackupRetentionPolicy: NotRequired[BackupRetentionPolicyTypeDef],  # (2)
+    ClusterId: NotRequired[str],
+    CreateTimestamp: NotRequired[datetime],
+    Hsms: NotRequired[List[HsmTypeDef]],  # (3)
+    HsmType: NotRequired[str],
+    PreCoPassword: NotRequired[str],
+    SecurityGroup: NotRequired[str],
+    SourceBackupId: NotRequired[str],
+    State: NotRequired[ClusterStateType],  # (4)
+    StateMessage: NotRequired[str],
+    SubnetMapping: NotRequired[Dict[str, str]],
+    VpcId: NotRequired[str],
+    Certificates: NotRequired[CertificatesTypeDef],  # (5)
+    TagList: NotRequired[List[TagTypeDef]],  # (6)
+```
 
-- `BackupPolicy`: `Literal['DEFAULT']` (see
-  [BackupPolicyType](./literals.md#backuppolicytype))
-- `BackupRetentionPolicy`:
-  [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
-- `ClusterId`: `str`
-- `CreateTimestamp`: `datetime`
-- `Hsms`: `List`\[[HsmTypeDef](./type_defs.md#hsmtypedef)\]
-- `HsmType`: `str`
-- `PreCoPassword`: `str`
-- `SecurityGroup`: `str`
-- `SourceBackupId`: `str`
-- `State`: [ClusterStateType](./literals.md#clusterstatetype)
-- `StateMessage`: `str`
-- `SubnetMapping`: `Dict`\[`str`, `str`\]
-- `VpcId`: `str`
-- `Certificates`: [CertificatesTypeDef](./type_defs.md#certificatestypedef)
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="copybackuptoregionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BackupPolicyType](./literals.md#backuppolicytype) 
+2. See [:material-code-braces: BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef) 
+3. See [:material-code-braces: HsmTypeDef](./type_defs.md#hsmtypedef) 
+4. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
+5. See [:material-code-braces: CertificatesTypeDef](./type_defs.md#certificatestypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CopyBackupToRegionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import CopyBackupToRegionRequestRequestTypeDef
+
+def get_value() -> CopyBackupToRegionRequestRequestTypeDef:
+    return {
+        "DestinationRegion": ...,
+        "BackupId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyBackupToRegionRequestRequestTypeDef(TypedDict):
+    DestinationRegion: str,
+    BackupId: str,
+    TagList: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `DestinationRegion`: `str`
-- `BackupId`: `str`
-
-Optional fields:
-
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="copybackuptoregionresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CopyBackupToRegionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import CopyBackupToRegionResponseTypeDef
+
+def get_value() -> CopyBackupToRegionResponseTypeDef:
+    return {
+        "DestinationBackup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CopyBackupToRegionResponseTypeDef(TypedDict):
+    DestinationBackup: DestinationBackupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DestinationBackup`:
-  [DestinationBackupTypeDef](./type_defs.md#destinationbackuptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DestinationBackupTypeDef](./type_defs.md#destinationbackuptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import CreateClusterRequestRequestTypeDef
+
+def get_value() -> CreateClusterRequestRequestTypeDef:
+    return {
+        "HsmType": ...,
+        "SubnetIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterRequestRequestTypeDef(TypedDict):
+    HsmType: str,
+    SubnetIds: Sequence[str],
+    BackupRetentionPolicy: NotRequired[BackupRetentionPolicyTypeDef],  # (1)
+    SourceBackupId: NotRequired[str],
+    TagList: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `HsmType`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `BackupRetentionPolicy`:
-  [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
-- `SourceBackupId`: `str`
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import CreateClusterResponseTypeDef
+
+def get_value() -> CreateClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhsmrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHsmRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import CreateHsmRequestRequestTypeDef
+
+def get_value() -> CreateHsmRequestRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "AvailabilityZone": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-- `AvailabilityZone`: `str`
-
-Optional fields:
-
-- `IpAddress`: `str`
-
-<a id="createhsmresponsetypedef"></a>
+```python title="Definition"
+class CreateHsmRequestRequestTypeDef(TypedDict):
+    ClusterId: str,
+    AvailabilityZone: str,
+    IpAddress: NotRequired[str],
+```
 
 ## CreateHsmResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import CreateHsmResponseTypeDef
+
+def get_value() -> CreateHsmResponseTypeDef:
+    return {
+        "Hsm": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHsmResponseTypeDef(TypedDict):
+    Hsm: HsmTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Hsm`: [HsmTypeDef](./type_defs.md#hsmtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebackuprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HsmTypeDef](./type_defs.md#hsmtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBackupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DeleteBackupRequestRequestTypeDef
+
+def get_value() -> DeleteBackupRequestRequestTypeDef:
+    return {
+        "BackupId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupId`: `str`
-
-<a id="deletebackupresponsetypedef"></a>
+```python title="Definition"
+class DeleteBackupRequestRequestTypeDef(TypedDict):
+    BackupId: str,
+```
 
 ## DeleteBackupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DeleteBackupResponseTypeDef
+
+def get_value() -> DeleteBackupResponseTypeDef:
+    return {
+        "Backup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBackupResponseTypeDef(TypedDict):
+    Backup: BackupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Backup`: [BackupTypeDef](./type_defs.md#backuptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupTypeDef](./type_defs.md#backuptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DeleteClusterRequestRequestTypeDef
+
+def get_value() -> DeleteClusterRequestRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-<a id="deleteclusterresponsetypedef"></a>
+```python title="Definition"
+class DeleteClusterRequestRequestTypeDef(TypedDict):
+    ClusterId: str,
+```
 
 ## DeleteClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DeleteClusterResponseTypeDef
+
+def get_value() -> DeleteClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletehsmrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteHsmRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DeleteHsmRequestRequestTypeDef
+
+def get_value() -> DeleteHsmRequestRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `HsmId`: `str`
-- `EniId`: `str`
-- `EniIp`: `str`
-
-<a id="deletehsmresponsetypedef"></a>
+```python title="Definition"
+class DeleteHsmRequestRequestTypeDef(TypedDict):
+    ClusterId: str,
+    HsmId: NotRequired[str],
+    EniId: NotRequired[str],
+    EniIp: NotRequired[str],
+```
 
 ## DeleteHsmResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DeleteHsmResponseTypeDef
+
+def get_value() -> DeleteHsmResponseTypeDef:
+    return {
+        "HsmId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteHsmResponseTypeDef(TypedDict):
+    HsmId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HsmId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBackupsRequestDescribeBackupsPaginateTypeDef
 
-<a id="describebackupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudhsmv2.type_defs import DescribeBackupsRequestDescribeBackupsPaginateTypeDef
 
+def get_value() -> DescribeBackupsRequestDescribeBackupsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBackupsRequestDescribeBackupsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Mapping[str, Sequence[str]]],
+    SortAscending: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBackupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DescribeBackupsRequestRequestTypeDef
+
+def get_value() -> DescribeBackupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `SortAscending`: `bool`
-
-<a id="describebackupsresponsetypedef"></a>
+```python title="Definition"
+class DescribeBackupsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Mapping[str, Sequence[str]]],
+    SortAscending: NotRequired[bool],
+```
 
 ## DescribeBackupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DescribeBackupsResponseTypeDef
+
+def get_value() -> DescribeBackupsResponseTypeDef:
+    return {
+        "Backups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBackupsResponseTypeDef(TypedDict):
+    Backups: List[BackupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Backups`: `List`\[[BackupTypeDef](./type_defs.md#backuptypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BackupTypeDef](./type_defs.md#backuptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeClustersRequestDescribeClustersPaginateTypeDef
 
-<a id="describeclustersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudhsmv2.type_defs import DescribeClustersRequestDescribeClustersPaginateTypeDef
 
+def get_value() -> DescribeClustersRequestDescribeClustersPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClustersRequestDescribeClustersPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Mapping[str, Sequence[str]]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClustersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DescribeClustersRequestRequestTypeDef
+
+def get_value() -> DescribeClustersRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
-
-- `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeclustersresponsetypedef"></a>
+```python title="Definition"
+class DescribeClustersRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Mapping[str, Sequence[str]]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeClustersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DescribeClustersResponseTypeDef
+
+def get_value() -> DescribeClustersResponseTypeDef:
+    return {
+        "Clusters": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClustersResponseTypeDef(TypedDict):
+    Clusters: List[ClusterTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Clusters`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="destinationbackuptypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DestinationBackupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import DestinationBackupTypeDef
+
+def get_value() -> DestinationBackupTypeDef:
+    return {
+        "CreateTimestamp": ...,
+    }
 ```
 
-Optional fields:
-
-- `CreateTimestamp`: `datetime`
-- `SourceRegion`: `str`
-- `SourceBackup`: `str`
-- `SourceCluster`: `str`
-
-<a id="hsmtypedef"></a>
+```python title="Definition"
+class DestinationBackupTypeDef(TypedDict):
+    CreateTimestamp: NotRequired[datetime],
+    SourceRegion: NotRequired[str],
+    SourceBackup: NotRequired[str],
+    SourceCluster: NotRequired[str],
+```
 
 ## HsmTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import HsmTypeDef
+
+def get_value() -> HsmTypeDef:
+    return {
+        "HsmId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HsmTypeDef(TypedDict):
+    HsmId: str,
+    AvailabilityZone: NotRequired[str],
+    ClusterId: NotRequired[str],
+    SubnetId: NotRequired[str],
+    EniId: NotRequired[str],
+    EniIp: NotRequired[str],
+    State: NotRequired[HsmStateType],  # (1)
+    StateMessage: NotRequired[str],
+```
 
-- `HsmId`: `str`
-
-Optional fields:
-
-- `AvailabilityZone`: `str`
-- `ClusterId`: `str`
-- `SubnetId`: `str`
-- `EniId`: `str`
-- `EniIp`: `str`
-- `State`: [HsmStateType](./literals.md#hsmstatetype)
-- `StateMessage`: `str`
-
-<a id="initializeclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: HsmStateType](./literals.md#hsmstatetype) 
 ## InitializeClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import InitializeClusterRequestRequestTypeDef
+
+def get_value() -> InitializeClusterRequestRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "SignedCert": ...,
+        "TrustAnchor": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-- `SignedCert`: `str`
-- `TrustAnchor`: `str`
-
-<a id="initializeclusterresponsetypedef"></a>
+```python title="Definition"
+class InitializeClusterRequestRequestTypeDef(TypedDict):
+    ClusterId: str,
+    SignedCert: str,
+    TrustAnchor: str,
+```
 
 ## InitializeClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import InitializeClusterResponseTypeDef
+
+def get_value() -> InitializeClusterResponseTypeDef:
+    return {
+        "State": ...,
+        "StateMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitializeClusterResponseTypeDef(TypedDict):
+    State: ClusterStateType,  # (1)
+    StateMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `State`: [ClusterStateType](./literals.md#clusterstatetype)
-- `StateMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsRequestListTagsPaginateTypeDef
 
-<a id="listtagsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudhsmv2.type_defs import ListTagsRequestListTagsPaginateTypeDef
 
+def get_value() -> ListTagsRequestListTagsPaginateTypeDef:
+    return {
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsRequestListTagsPaginateTypeDef(TypedDict):
+    ResourceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import ListTagsRequestRequestTypeDef
+
+def get_value() -> ListTagsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listtagsresponsetypedef"></a>
+```python title="Definition"
+class ListTagsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import ListTagsResponseTypeDef
+
+def get_value() -> ListTagsResponseTypeDef:
+    return {
+        "TagList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsResponseTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifybackupattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyBackupAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import ModifyBackupAttributesRequestRequestTypeDef
+
+def get_value() -> ModifyBackupAttributesRequestRequestTypeDef:
+    return {
+        "BackupId": ...,
+        "NeverExpires": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupId`: `str`
-- `NeverExpires`: `bool`
-
-<a id="modifybackupattributesresponsetypedef"></a>
+```python title="Definition"
+class ModifyBackupAttributesRequestRequestTypeDef(TypedDict):
+    BackupId: str,
+    NeverExpires: bool,
+```
 
 ## ModifyBackupAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import ModifyBackupAttributesResponseTypeDef
+
+def get_value() -> ModifyBackupAttributesResponseTypeDef:
+    return {
+        "Backup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyBackupAttributesResponseTypeDef(TypedDict):
+    Backup: BackupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Backup`: [BackupTypeDef](./type_defs.md#backuptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupTypeDef](./type_defs.md#backuptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import ModifyClusterRequestRequestTypeDef
+
+def get_value() -> ModifyClusterRequestRequestTypeDef:
+    return {
+        "BackupRetentionPolicy": ...,
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterRequestRequestTypeDef(TypedDict):
+    BackupRetentionPolicy: BackupRetentionPolicyTypeDef,  # (1)
+    ClusterId: str,
+```
 
-- `BackupRetentionPolicy`:
-  [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
-- `ClusterId`: `str`
-
-<a id="modifyclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef) 
 ## ModifyClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import ModifyClusterResponseTypeDef
+
+def get_value() -> ModifyClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restorebackuprequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreBackupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import RestoreBackupRequestRequestTypeDef
+
+def get_value() -> RestoreBackupRequestRequestTypeDef:
+    return {
+        "BackupId": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupId`: `str`
-
-<a id="restorebackupresponsetypedef"></a>
+```python title="Definition"
+class RestoreBackupRequestRequestTypeDef(TypedDict):
+    BackupId: str,
+```
 
 ## RestoreBackupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import RestoreBackupResponseTypeDef
+
+def get_value() -> RestoreBackupResponseTypeDef:
+    return {
+        "Backup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreBackupResponseTypeDef(TypedDict):
+    Backup: BackupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Backup`: [BackupTypeDef](./type_defs.md#backuptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupTypeDef](./type_defs.md#backuptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "TagList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    TagList: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceId`: `str`
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsmv2.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "TagKeyList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    TagKeyList: Sequence[str],
+```
 
-- `ResourceId`: `str`
-- `TagKeyList`: `Sequence`\[`str`\]

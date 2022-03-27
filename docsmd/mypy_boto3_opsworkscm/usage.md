@@ -1,92 +1,139 @@
-<a id="examples-for-boto3-opsworkscm-module"></a>
-
-# Examples for boto3 OpsWorksCM module
+# Examples
 
 > [Index](../README.md) > [OpsWorksCM](./README.md) > Examples
 
-- [Examples for boto3 OpsWorksCM module](#examples-for-boto3-opsworkscm-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+    type annotations stubs module [mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[opsworkscm]` package installed.
 
-Write your `OpsWorksCM` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `OpsWorksCM` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type OpsWorksCMClient
-# and provides type checking and code completion
-client = session.client("opsworkscm")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateNodeResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_node()
 
-# paginator has type DescribeBackupsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_backups")
-for item in paginator.paginate(...):
-    # item has type DescribeBackupsResponseTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type NodeAssociatedWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("node_associated")
-waiter.wait()
-```
+    client = session.client("opsworkscm")  # (1)
+    result = client.associate_node()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [OpsWorksCMClient](./client.md)
+    2. result: [:material-code-braces: AssociateNodeResponseTypeDef](./type_defs.md#associatenoderesponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("opsworkscm")  # (1)
+
+    paginator = client.get_paginator("describe_backups")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [OpsWorksCMClient](./client.md)
+    2. paginator: [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
+    3. item: [:material-code-braces: DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("opsworkscm")  # (1)
+
+    waiter = client.get_waiter("node_associated")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [OpsWorksCMClient](./client.md)
+    2. waiter: [NodeAssociatedWaiter](./waiters.md#nodeassociatedwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[opsworkscm]` or a standalone `mypy_boto3_opsworkscm`
-package, you have to explicitly specify `client: OpsWorksCMClient` type
-annotation.
+With `boto3-stubs-lite[opsworkscm]`
+or a standalone `mypy_boto3_opsworkscm` package, you have to explicitly specify `client: OpsWorksCMClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_opsworkscm.client import OpsWorksCMClient
-from mypy_boto3_opsworkscm.paginator import DescribeBackupsPaginator
-from mypy_boto3_opsworkscm.waiter import NodeAssociatedWaiter
-from mypy_boto3_opsworkscm.literals import PaginatorName
-from mypy_boto3_opsworkscm.literals import WaiterName
-from mypy_boto3_opsworkscm.type_defs import AssociateNodeResponseTypeDef
-from mypy_boto3_opsworkscm.type_defs import DescribeBackupsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: OpsWorksCMClient = session.client("opsworkscm")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AssociateNodeResponseTypeDef = client.associate_node()
+    from mypy_boto3_opsworkscm.client import OpsWorksCMClient
+    from mypy_boto3_opsworkscm.type_defs import AssociateNodeResponseTypeDef
+    from mypy_boto3_opsworkscm.type_defs import AssociateNodeRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_backups"
-paginator: DescribeBackupsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeBackupsResponseTypeDef
-    print(item)
 
-waiter_name: WaiterName = "node_associated"
-waiter: NodeAssociatedWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: OpsWorksCMClient = session.client("opsworkscm")
+
+    kwargs: AssociateNodeRequestRequestTypeDef = {...}
+    result: AssociateNodeResponseTypeDef = client.associate_node(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_opsworkscm.client import OpsWorksCMClient
+    from mypy_boto3_opsworkscm.paginator import DescribeBackupsPaginator
+    from mypy_boto3_opsworkscm.type_defs import DescribeBackupsResponseTypeDef
+
+
+    session = Session()
+    client: OpsWorksCMClient = session.client("opsworkscm")
+
+    paginator: DescribeBackupsPaginator = client.get_paginator("describe_backups")
+    for item in paginator.paginate(...):
+        item: DescribeBackupsResponseTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_opsworkscm.client import OpsWorksCMClient
+    from mypy_boto3_opsworkscm.waiter import NodeAssociatedWaiter
+
+    session = Session()
+    client: OpsWorksCMClient = session.client("opsworkscm")
+
+    waiter: NodeAssociatedWaiter = client.get_waiter("node_associated")
+    waiter.wait()
+    ```
+
+

@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-lakeformation-module"></a>
-
-# Examples for boto3 LakeFormation module
+# Examples
 
 > [Index](../README.md) > [LakeFormation](./README.md) > Examples
 
-- [Examples for boto3 LakeFormation module](#examples-for-boto3-lakeformation-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+    type annotations stubs module [mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[lakeformation]` package installed.
 
-Write your `LakeFormation` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `LakeFormation` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type LakeFormationClient
-# and provides type checking and code completion
-client = session.client("lakeformation")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AddLFTagsToResourceResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_lf_tags_to_resource()
 
-# paginator has type GetWorkUnitsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_work_units")
-for item in paginator.paginate(...):
-    # item has type GetWorkUnitsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("lakeformation")  # (1)
+    result = client.add_lf_tags_to_resource()  # (2)
+    ```
+
+    1. client: [LakeFormationClient](./client.md)
+    2. result: [:material-code-braces: AddLFTagsToResourceResponseTypeDef](./type_defs.md#addlftagstoresourceresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("lakeformation")  # (1)
+
+    paginator = client.get_paginator("get_work_units")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [LakeFormationClient](./client.md)
+    2. paginator: [GetWorkUnitsPaginator](./paginators.md#getworkunitspaginator)
+    3. item: [:material-code-braces: GetWorkUnitsResponseTypeDef](./type_defs.md#getworkunitsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[lakeformation]` or a standalone
-`mypy_boto3_lakeformation` package, you have to explicitly specify
-`client: LakeFormationClient` type annotation.
+With `boto3-stubs-lite[lakeformation]`
+or a standalone `mypy_boto3_lakeformation` package, you have to explicitly specify `client: LakeFormationClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_lakeformation.client import LakeFormationClient
-from mypy_boto3_lakeformation.paginator import GetWorkUnitsPaginator
-
-from mypy_boto3_lakeformation.literals import PaginatorName
-
-from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceResponseTypeDef
-from mypy_boto3_lakeformation.type_defs import GetWorkUnitsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: LakeFormationClient = session.client("lakeformation")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AddLFTagsToResourceResponseTypeDef = client.add_lf_tags_to_resource()
+    from mypy_boto3_lakeformation.client import LakeFormationClient
+    from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceResponseTypeDef
+    from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_work_units"
-paginator: GetWorkUnitsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetWorkUnitsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: LakeFormationClient = session.client("lakeformation")
+
+    kwargs: AddLFTagsToResourceRequestRequestTypeDef = {...}
+    result: AddLFTagsToResourceResponseTypeDef = client.add_lf_tags_to_resource(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_lakeformation.client import LakeFormationClient
+    from mypy_boto3_lakeformation.paginator import GetWorkUnitsPaginator
+    from mypy_boto3_lakeformation.type_defs import GetWorkUnitsResponseTypeDef
+
+
+    session = Session()
+    client: LakeFormationClient = session.client("lakeformation")
+
+    paginator: GetWorkUnitsPaginator = client.get_paginator("get_work_units")
+    for item in paginator.paginate(...):
+        item: GetWorkUnitsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

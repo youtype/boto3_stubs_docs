@@ -1,64 +1,18 @@
-<a id="appconfigclient-for-boto3-appconfig-module"></a>
-
-# AppConfigClient for boto3 AppConfig module
+# AppConfigClient
 
 > [Index](../README.md) > [AppConfig](./README.md) > AppConfigClient
 
-Auto-generated documentation for
-[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
-type annotations stubs module
-[mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
+!!! note ""
 
-- [AppConfigClient for boto3 AppConfig module](#appconfigclient-for-boto3-appconfig-module)
-  - [AppConfigClient](#appconfigclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_application](#create_application)
-    - [create_configuration_profile](#create_configuration_profile)
-    - [create_deployment_strategy](#create_deployment_strategy)
-    - [create_environment](#create_environment)
-    - [create_hosted_configuration_version](#create_hosted_configuration_version)
-    - [delete_application](#delete_application)
-    - [delete_configuration_profile](#delete_configuration_profile)
-    - [delete_deployment_strategy](#delete_deployment_strategy)
-    - [delete_environment](#delete_environment)
-    - [delete_hosted_configuration_version](#delete_hosted_configuration_version)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_application](#get_application)
-    - [get_configuration](#get_configuration)
-    - [get_configuration_profile](#get_configuration_profile)
-    - [get_deployment](#get_deployment)
-    - [get_deployment_strategy](#get_deployment_strategy)
-    - [get_environment](#get_environment)
-    - [get_hosted_configuration_version](#get_hosted_configuration_version)
-    - [list_applications](#list_applications)
-    - [list_configuration_profiles](#list_configuration_profiles)
-    - [list_deployment_strategies](#list_deployment_strategies)
-    - [list_deployments](#list_deployments)
-    - [list_environments](#list_environments)
-    - [list_hosted_configuration_versions](#list_hosted_configuration_versions)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [start_deployment](#start_deployment)
-    - [stop_deployment](#stop_deployment)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_application](#update_application)
-    - [update_configuration_profile](#update_configuration_profile)
-    - [update_deployment_strategy](#update_deployment_strategy)
-    - [update_environment](#update_environment)
-    - [validate_configuration](#validate_configuration)
-
-<a id="appconfigclient"></a>
+    Auto-generated documentation for [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
+    type annotations stubs module [mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 ## AppConfigClient
 
-Type annotations for `boto3.client("appconfig")`
+Type annotations and code completion for `#!python boto3.client("appconfig")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_appconfig.client import AppConfigClient
 
@@ -66,844 +20,1151 @@ def get_appconfig_client() -> AppConfigClient:
     return Session().client("appconfig")
 ```
 
-Boto3 documentation:
-[AppConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("appconfig").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("appconfig")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.PayloadTooLargeException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_appconfig.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.PayloadTooLargeException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AppConfigClient exceptions.
-
-Type annotations for `boto3.client("appconfig").exceptions` method.
-
-Boto3 documentation:
-[AppConfig.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("appconfig").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.can_paginate)
 
-Boto3 documentation:
-[AppConfig.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_application"></a>
-
-### create_application
+### create\_application
 
 Creates an application.
 
-Type annotations for `boto3.client("appconfig").create_application` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").create_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_application)
 
-Boto3 documentation:
-[AppConfig.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_application)
+```python title="Method definition"
+def create_application(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> ApplicationResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
+parent.create_application(**kwargs)
+```
 
-<a id="create\_configuration\_profile"></a>
+1. See [:material-code-braces: CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef) 
 
-### create_configuration_profile
+### create\_configuration\_profile
 
 Creates a configuration profile, which is information that enables AppConfig to
 access the configuration source.
 
-Type annotations for `boto3.client("appconfig").create_configuration_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").create_configuration_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_configuration_profile)
 
-Boto3 documentation:
-[AppConfig.Client.create_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_configuration_profile)
+```python title="Method definition"
+def create_configuration_profile(
+    self,
+    *,
+    ApplicationId: str,
+    Name: str,
+    LocationUri: str,
+    Description: str = ...,
+    RetrievalRoleArn: str = ...,
+    Validators: Sequence[ValidatorTypeDef] = ...,  # (1)
+    Tags: Mapping[str, str] = ...,
+    Type: str = ...,
+) -> ConfigurationProfileTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateConfigurationProfileRequestRequestTypeDef](./type_defs.md#createconfigurationprofilerequestrequesttypedef).
+1. See [:material-code-braces: ValidatorTypeDef](./type_defs.md#validatortypedef) 
+2. See [:material-code-braces: ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `LocationUri`: `str` *(required)*
-- `Description`: `str`
-- `RetrievalRoleArn`: `str`
-- `Validators`:
-  `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Type`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateConfigurationProfileRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "Name": ...,
+    "LocationUri": ...,
+}
 
-Returns
-[ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
+parent.create_configuration_profile(**kwargs)
+```
 
-<a id="create\_deployment\_strategy"></a>
+1. See [:material-code-braces: CreateConfigurationProfileRequestRequestTypeDef](./type_defs.md#createconfigurationprofilerequestrequesttypedef) 
 
-### create_deployment_strategy
+### create\_deployment\_strategy
 
 Creates a deployment strategy that defines important criteria for rolling out
 your configuration to the designated targets.
 
-Type annotations for `boto3.client("appconfig").create_deployment_strategy`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").create_deployment_strategy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_deployment_strategy)
 
-Boto3 documentation:
-[AppConfig.Client.create_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_deployment_strategy)
+```python title="Method definition"
+def create_deployment_strategy(
+    self,
+    *,
+    Name: str,
+    DeploymentDurationInMinutes: int,
+    GrowthFactor: float,
+    ReplicateTo: ReplicateToType,  # (1)
+    Description: str = ...,
+    FinalBakeTimeInMinutes: int = ...,
+    GrowthType: GrowthTypeType = ...,  # (2)
+    Tags: Mapping[str, str] = ...,
+) -> DeploymentStrategyResponseMetadataTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDeploymentStrategyRequestRequestTypeDef](./type_defs.md#createdeploymentstrategyrequestrequesttypedef).
+1. See [:material-code-brackets: ReplicateToType](./literals.md#replicatetotype) 
+2. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+3. See [:material-code-braces: DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `DeploymentDurationInMinutes`: `int` *(required)*
-- `GrowthFactor`: `float` *(required)*
-- `ReplicateTo`: [ReplicateToType](./literals.md#replicatetotype) *(required)*
-- `Description`: `str`
-- `FinalBakeTimeInMinutes`: `int`
-- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDeploymentStrategyRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "DeploymentDurationInMinutes": ...,
+    "GrowthFactor": ...,
+    "ReplicateTo": ...,
+}
 
-Returns
-[DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
+parent.create_deployment_strategy(**kwargs)
+```
 
-<a id="create\_environment"></a>
+1. See [:material-code-braces: CreateDeploymentStrategyRequestRequestTypeDef](./type_defs.md#createdeploymentstrategyrequestrequesttypedef) 
 
-### create_environment
+### create\_environment
 
 Creates an environment.
 
-Type annotations for `boto3.client("appconfig").create_environment` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").create_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_environment)
 
-Boto3 documentation:
-[AppConfig.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_environment)
+```python title="Method definition"
+def create_environment(
+    self,
+    *,
+    ApplicationId: str,
+    Name: str,
+    Description: str = ...,
+    Monitors: Sequence[MonitorTypeDef] = ...,  # (1)
+    Tags: Mapping[str, str] = ...,
+) -> EnvironmentResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentRequestRequestTypeDef](./type_defs.md#createenvironmentrequestrequesttypedef).
+1. See [:material-code-braces: MonitorTypeDef](./type_defs.md#monitortypedef) 
+2. See [:material-code-braces: EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `Monitors`: `Sequence`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "Name": ...,
+}
 
-Returns
-[EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
+parent.create_environment(**kwargs)
+```
 
-<a id="create\_hosted\_configuration\_version"></a>
+1. See [:material-code-braces: CreateEnvironmentRequestRequestTypeDef](./type_defs.md#createenvironmentrequestrequesttypedef) 
 
-### create_hosted_configuration_version
+### create\_hosted\_configuration\_version
 
 Creates a new configuration in the AppConfig hosted configuration store.
 
-Type annotations for
-`boto3.client("appconfig").create_hosted_configuration_version` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").create_hosted_configuration_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_hosted_configuration_version)
 
-Boto3 documentation:
-[AppConfig.Client.create_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.create_hosted_configuration_version)
+```python title="Method definition"
+def create_hosted_configuration_version(
+    self,
+    *,
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    Content: Union[bytes, IO[bytes], StreamingBody],
+    ContentType: str,
+    Description: str = ...,
+    LatestVersionNumber: int = ...,
+) -> HostedConfigurationVersionTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateHostedConfigurationVersionRequestRequestTypeDef](./type_defs.md#createhostedconfigurationversionrequestrequesttypedef).
+1. See [:material-code-braces: HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ConfigurationProfileId`: `str` *(required)*
-- `Content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `ContentType`: `str` *(required)*
-- `Description`: `str`
-- `LatestVersionNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateHostedConfigurationVersionRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ConfigurationProfileId": ...,
+    "Content": ...,
+    "ContentType": ...,
+}
 
-Returns
-[HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef).
+parent.create_hosted_configuration_version(**kwargs)
+```
 
-<a id="delete\_application"></a>
+1. See [:material-code-braces: CreateHostedConfigurationVersionRequestRequestTypeDef](./type_defs.md#createhostedconfigurationversionrequestrequesttypedef) 
 
-### delete_application
+### delete\_application
 
 Deletes an application.
 
-Type annotations for `boto3.client("appconfig").delete_application` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").delete_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_application)
 
-Boto3 documentation:
-[AppConfig.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_application)
+```python title="Method definition"
+def delete_application(
+    self,
+    *,
+    ApplicationId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-<a id="delete\_configuration\_profile"></a>
+parent.delete_application(**kwargs)
+```
 
-### delete_configuration_profile
+1. See [:material-code-braces: DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef) 
+
+### delete\_configuration\_profile
 
 Deletes a configuration profile.
 
-Type annotations for `boto3.client("appconfig").delete_configuration_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").delete_configuration_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_configuration_profile)
 
-Boto3 documentation:
-[AppConfig.Client.delete_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_configuration_profile)
+```python title="Method definition"
+def delete_configuration_profile(
+    self,
+    *,
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConfigurationProfileRequestRequestTypeDef](./type_defs.md#deleteconfigurationprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ConfigurationProfileId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConfigurationProfileRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ConfigurationProfileId": ...,
+}
 
-<a id="delete\_deployment\_strategy"></a>
+parent.delete_configuration_profile(**kwargs)
+```
 
-### delete_deployment_strategy
+1. See [:material-code-braces: DeleteConfigurationProfileRequestRequestTypeDef](./type_defs.md#deleteconfigurationprofilerequestrequesttypedef) 
+
+### delete\_deployment\_strategy
 
 Deletes a deployment strategy.
 
-Type annotations for `boto3.client("appconfig").delete_deployment_strategy`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").delete_deployment_strategy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_deployment_strategy)
 
-Boto3 documentation:
-[AppConfig.Client.delete_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_deployment_strategy)
+```python title="Method definition"
+def delete_deployment_strategy(
+    self,
+    *,
+    DeploymentStrategyId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDeploymentStrategyRequestRequestTypeDef](./type_defs.md#deletedeploymentstrategyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeploymentStrategyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDeploymentStrategyRequestRequestTypeDef = {  # (1)
+    "DeploymentStrategyId": ...,
+}
 
-<a id="delete\_environment"></a>
+parent.delete_deployment_strategy(**kwargs)
+```
 
-### delete_environment
+1. See [:material-code-braces: DeleteDeploymentStrategyRequestRequestTypeDef](./type_defs.md#deletedeploymentstrategyrequestrequesttypedef) 
+
+### delete\_environment
 
 Deletes an environment.
 
-Type annotations for `boto3.client("appconfig").delete_environment` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").delete_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_environment)
 
-Boto3 documentation:
-[AppConfig.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_environment)
+```python title="Method definition"
+def delete_environment(
+    self,
+    *,
+    ApplicationId: str,
+    EnvironmentId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EnvironmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EnvironmentId": ...,
+}
 
-<a id="delete\_hosted\_configuration\_version"></a>
+parent.delete_environment(**kwargs)
+```
 
-### delete_hosted_configuration_version
+1. See [:material-code-braces: DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef) 
+
+### delete\_hosted\_configuration\_version
 
 Deletes a version of a configuration from the AppConfig hosted configuration
 store.
 
-Type annotations for
-`boto3.client("appconfig").delete_hosted_configuration_version` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").delete_hosted_configuration_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_hosted_configuration_version)
 
-Boto3 documentation:
-[AppConfig.Client.delete_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.delete_hosted_configuration_version)
+```python title="Method definition"
+def delete_hosted_configuration_version(
+    self,
+    *,
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    VersionNumber: int,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteHostedConfigurationVersionRequestRequestTypeDef](./type_defs.md#deletehostedconfigurationversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ConfigurationProfileId`: `str` *(required)*
-- `VersionNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteHostedConfigurationVersionRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ConfigurationProfileId": ...,
+    "VersionNumber": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_hosted_configuration_version(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteHostedConfigurationVersionRequestRequestTypeDef](./type_defs.md#deletehostedconfigurationversionrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("appconfig").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AppConfig.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_application"></a>
-
-### get_application
+### get\_application
 
 Retrieves information about an application.
 
-Type annotations for `boto3.client("appconfig").get_application` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").get_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_application)
 
-Boto3 documentation:
-[AppConfig.Client.get_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_application)
+```python title="Method definition"
+def get_application(
+    self,
+    *,
+    ApplicationId: str,
+) -> ApplicationResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApplicationRequestRequestTypeDef](./type_defs.md#getapplicationrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
+parent.get_application(**kwargs)
+```
 
-<a id="get\_configuration"></a>
+1. See [:material-code-braces: GetApplicationRequestRequestTypeDef](./type_defs.md#getapplicationrequestrequesttypedef) 
 
-### get_configuration
+### get\_configuration
 
 Retrieves the latest deployed configuration.
 
-Type annotations for `boto3.client("appconfig").get_configuration` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").get_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration)
 
-Boto3 documentation:
-[AppConfig.Client.get_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration)
+```python title="Method definition"
+def get_configuration(
+    self,
+    *,
+    Application: str,
+    Environment: str,
+    Configuration: str,
+    ClientId: str,
+    ClientConfigurationVersion: str = ...,
+) -> ConfigurationTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConfigurationRequestRequestTypeDef](./type_defs.md#getconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
 
-Keyword-only arguments:
 
-- `Application`: `str` *(required)*
-- `Environment`: `str` *(required)*
-- `Configuration`: `str` *(required)*
-- `ClientId`: `str` *(required)*
-- `ClientConfigurationVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetConfigurationRequestRequestTypeDef = {  # (1)
+    "Application": ...,
+    "Environment": ...,
+    "Configuration": ...,
+    "ClientId": ...,
+}
 
-Returns [ConfigurationTypeDef](./type_defs.md#configurationtypedef).
+parent.get_configuration(**kwargs)
+```
 
-<a id="get\_configuration\_profile"></a>
+1. See [:material-code-braces: GetConfigurationRequestRequestTypeDef](./type_defs.md#getconfigurationrequestrequesttypedef) 
 
-### get_configuration_profile
+### get\_configuration\_profile
 
 Retrieves information about a configuration profile.
 
-Type annotations for `boto3.client("appconfig").get_configuration_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").get_configuration_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration_profile)
 
-Boto3 documentation:
-[AppConfig.Client.get_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_configuration_profile)
+```python title="Method definition"
+def get_configuration_profile(
+    self,
+    *,
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+) -> ConfigurationProfileTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConfigurationProfileRequestRequestTypeDef](./type_defs.md#getconfigurationprofilerequestrequesttypedef).
+1. See [:material-code-braces: ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ConfigurationProfileId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConfigurationProfileRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ConfigurationProfileId": ...,
+}
 
-Returns
-[ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
+parent.get_configuration_profile(**kwargs)
+```
 
-<a id="get\_deployment"></a>
+1. See [:material-code-braces: GetConfigurationProfileRequestRequestTypeDef](./type_defs.md#getconfigurationprofilerequestrequesttypedef) 
 
-### get_deployment
+### get\_deployment
 
 Retrieves information about a configuration deployment.
 
-Type annotations for `boto3.client("appconfig").get_deployment` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").get_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment)
 
-Boto3 documentation:
-[AppConfig.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment)
+```python title="Method definition"
+def get_deployment(
+    self,
+    *,
+    ApplicationId: str,
+    EnvironmentId: str,
+    DeploymentNumber: int,
+) -> DeploymentTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeploymentRequestRequestTypeDef](./type_defs.md#getdeploymentrequestrequesttypedef).
+1. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EnvironmentId`: `str` *(required)*
-- `DeploymentNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDeploymentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EnvironmentId": ...,
+    "DeploymentNumber": ...,
+}
 
-Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
+parent.get_deployment(**kwargs)
+```
 
-<a id="get\_deployment\_strategy"></a>
+1. See [:material-code-braces: GetDeploymentRequestRequestTypeDef](./type_defs.md#getdeploymentrequestrequesttypedef) 
 
-### get_deployment_strategy
+### get\_deployment\_strategy
 
 Retrieves information about a deployment strategy.
 
-Type annotations for `boto3.client("appconfig").get_deployment_strategy`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").get_deployment_strategy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment_strategy)
 
-Boto3 documentation:
-[AppConfig.Client.get_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_deployment_strategy)
+```python title="Method definition"
+def get_deployment_strategy(
+    self,
+    *,
+    DeploymentStrategyId: str,
+) -> DeploymentStrategyResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeploymentStrategyRequestRequestTypeDef](./type_defs.md#getdeploymentstrategyrequestrequesttypedef).
+1. See [:material-code-braces: DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `DeploymentStrategyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDeploymentStrategyRequestRequestTypeDef = {  # (1)
+    "DeploymentStrategyId": ...,
+}
 
-Returns
-[DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
+parent.get_deployment_strategy(**kwargs)
+```
 
-<a id="get\_environment"></a>
+1. See [:material-code-braces: GetDeploymentStrategyRequestRequestTypeDef](./type_defs.md#getdeploymentstrategyrequestrequesttypedef) 
 
-### get_environment
+### get\_environment
 
 Retrieves information about an environment.
 
-Type annotations for `boto3.client("appconfig").get_environment` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").get_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_environment)
 
-Boto3 documentation:
-[AppConfig.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_environment)
+```python title="Method definition"
+def get_environment(
+    self,
+    *,
+    ApplicationId: str,
+    EnvironmentId: str,
+) -> EnvironmentResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEnvironmentRequestRequestTypeDef](./type_defs.md#getenvironmentrequestrequesttypedef).
+1. See [:material-code-braces: EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EnvironmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEnvironmentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EnvironmentId": ...,
+}
 
-Returns
-[EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
+parent.get_environment(**kwargs)
+```
 
-<a id="get\_hosted\_configuration\_version"></a>
+1. See [:material-code-braces: GetEnvironmentRequestRequestTypeDef](./type_defs.md#getenvironmentrequestrequesttypedef) 
 
-### get_hosted_configuration_version
+### get\_hosted\_configuration\_version
 
 Retrieves information about a specific configuration version.
 
-Type annotations for
-`boto3.client("appconfig").get_hosted_configuration_version` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").get_hosted_configuration_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_hosted_configuration_version)
 
-Boto3 documentation:
-[AppConfig.Client.get_hosted_configuration_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.get_hosted_configuration_version)
+```python title="Method definition"
+def get_hosted_configuration_version(
+    self,
+    *,
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    VersionNumber: int,
+) -> HostedConfigurationVersionTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetHostedConfigurationVersionRequestRequestTypeDef](./type_defs.md#gethostedconfigurationversionrequestrequesttypedef).
+1. See [:material-code-braces: HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ConfigurationProfileId`: `str` *(required)*
-- `VersionNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetHostedConfigurationVersionRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ConfigurationProfileId": ...,
+    "VersionNumber": ...,
+}
 
-Returns
-[HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef).
+parent.get_hosted_configuration_version(**kwargs)
+```
 
-<a id="list\_applications"></a>
+1. See [:material-code-braces: GetHostedConfigurationVersionRequestRequestTypeDef](./type_defs.md#gethostedconfigurationversionrequestrequesttypedef) 
 
-### list_applications
+### list\_applications
 
 Lists all applications in your Amazon Web Services account.
 
-Type annotations for `boto3.client("appconfig").list_applications` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").list_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_applications)
 
-Boto3 documentation:
-[AppConfig.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_applications)
+```python title="Method definition"
+def list_applications(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ApplicationsTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationsTypeDef](./type_defs.md#applicationstypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListApplicationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ApplicationsTypeDef](./type_defs.md#applicationstypedef).
+parent.list_applications(**kwargs)
+```
 
-<a id="list\_configuration\_profiles"></a>
+1. See [:material-code-braces: ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef) 
 
-### list_configuration_profiles
+### list\_configuration\_profiles
 
 Lists the configuration profiles for an application.
 
-Type annotations for `boto3.client("appconfig").list_configuration_profiles`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").list_configuration_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_configuration_profiles)
 
-Boto3 documentation:
-[AppConfig.Client.list_configuration_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_configuration_profiles)
+```python title="Method definition"
+def list_configuration_profiles(
+    self,
+    *,
+    ApplicationId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Type: str = ...,
+) -> ConfigurationProfilesTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConfigurationProfilesRequestRequestTypeDef](./type_defs.md#listconfigurationprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ConfigurationProfilesTypeDef](./type_defs.md#configurationprofilestypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Type`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConfigurationProfilesRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[ConfigurationProfilesTypeDef](./type_defs.md#configurationprofilestypedef).
+parent.list_configuration_profiles(**kwargs)
+```
 
-<a id="list\_deployment\_strategies"></a>
+1. See [:material-code-braces: ListConfigurationProfilesRequestRequestTypeDef](./type_defs.md#listconfigurationprofilesrequestrequesttypedef) 
 
-### list_deployment_strategies
+### list\_deployment\_strategies
 
 Lists deployment strategies.
 
-Type annotations for `boto3.client("appconfig").list_deployment_strategies`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").list_deployment_strategies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployment_strategies)
 
-Boto3 documentation:
-[AppConfig.Client.list_deployment_strategies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployment_strategies)
+```python title="Method definition"
+def list_deployment_strategies(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DeploymentStrategiesTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDeploymentStrategiesRequestRequestTypeDef](./type_defs.md#listdeploymentstrategiesrequestrequesttypedef).
+1. See [:material-code-braces: DeploymentStrategiesTypeDef](./type_defs.md#deploymentstrategiestypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDeploymentStrategiesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[DeploymentStrategiesTypeDef](./type_defs.md#deploymentstrategiestypedef).
+parent.list_deployment_strategies(**kwargs)
+```
 
-<a id="list\_deployments"></a>
+1. See [:material-code-braces: ListDeploymentStrategiesRequestRequestTypeDef](./type_defs.md#listdeploymentstrategiesrequestrequesttypedef) 
 
-### list_deployments
+### list\_deployments
 
 Lists the deployments for an environment in descending deployment number order.
 
-Type annotations for `boto3.client("appconfig").list_deployments` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").list_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployments)
 
-Boto3 documentation:
-[AppConfig.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_deployments)
+```python title="Method definition"
+def list_deployments(
+    self,
+    *,
+    ApplicationId: str,
+    EnvironmentId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DeploymentsTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef).
+1. See [:material-code-braces: DeploymentsTypeDef](./type_defs.md#deploymentstypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EnvironmentId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDeploymentsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EnvironmentId": ...,
+}
 
-Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
+parent.list_deployments(**kwargs)
+```
 
-<a id="list\_environments"></a>
+1. See [:material-code-braces: ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef) 
 
-### list_environments
+### list\_environments
 
 Lists the environments for an application.
 
-Type annotations for `boto3.client("appconfig").list_environments` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").list_environments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_environments)
 
-Boto3 documentation:
-[AppConfig.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_environments)
+```python title="Method definition"
+def list_environments(
+    self,
+    *,
+    ApplicationId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> EnvironmentsTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef).
+1. See [:material-code-braces: EnvironmentsTypeDef](./type_defs.md#environmentstypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns [EnvironmentsTypeDef](./type_defs.md#environmentstypedef).
+parent.list_environments(**kwargs)
+```
 
-<a id="list\_hosted\_configuration\_versions"></a>
+1. See [:material-code-braces: ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef) 
 
-### list_hosted_configuration_versions
+### list\_hosted\_configuration\_versions
 
 Lists configurations stored in the AppConfig hosted configuration store by
 version.
 
-Type annotations for
-`boto3.client("appconfig").list_hosted_configuration_versions` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").list_hosted_configuration_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_hosted_configuration_versions)
 
-Boto3 documentation:
-[AppConfig.Client.list_hosted_configuration_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_hosted_configuration_versions)
+```python title="Method definition"
+def list_hosted_configuration_versions(
+    self,
+    *,
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> HostedConfigurationVersionsTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListHostedConfigurationVersionsRequestRequestTypeDef](./type_defs.md#listhostedconfigurationversionsrequestrequesttypedef).
+1. See [:material-code-braces: HostedConfigurationVersionsTypeDef](./type_defs.md#hostedconfigurationversionstypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ConfigurationProfileId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListHostedConfigurationVersionsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ConfigurationProfileId": ...,
+}
 
-Returns
-[HostedConfigurationVersionsTypeDef](./type_defs.md#hostedconfigurationversionstypedef).
+parent.list_hosted_configuration_versions(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListHostedConfigurationVersionsRequestRequestTypeDef](./type_defs.md#listhostedconfigurationversionsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves the list of key-value tags assigned to the resource.
 
-Type annotations for `boto3.client("appconfig").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[AppConfig.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ResourceTagsTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="start\_deployment"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### start_deployment
+### start\_deployment
 
 Starts a deployment.
 
-Type annotations for `boto3.client("appconfig").start_deployment` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").start_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.start_deployment)
 
-Boto3 documentation:
-[AppConfig.Client.start_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.start_deployment)
+```python title="Method definition"
+def start_deployment(
+    self,
+    *,
+    ApplicationId: str,
+    EnvironmentId: str,
+    DeploymentStrategyId: str,
+    ConfigurationProfileId: str,
+    ConfigurationVersion: str,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> DeploymentTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartDeploymentRequestRequestTypeDef](./type_defs.md#startdeploymentrequestrequesttypedef).
+1. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EnvironmentId`: `str` *(required)*
-- `DeploymentStrategyId`: `str` *(required)*
-- `ConfigurationProfileId`: `str` *(required)*
-- `ConfigurationVersion`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartDeploymentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EnvironmentId": ...,
+    "DeploymentStrategyId": ...,
+    "ConfigurationProfileId": ...,
+    "ConfigurationVersion": ...,
+}
 
-Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
+parent.start_deployment(**kwargs)
+```
 
-<a id="stop\_deployment"></a>
+1. See [:material-code-braces: StartDeploymentRequestRequestTypeDef](./type_defs.md#startdeploymentrequestrequesttypedef) 
 
-### stop_deployment
+### stop\_deployment
 
 Stops a deployment.
 
-Type annotations for `boto3.client("appconfig").stop_deployment` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").stop_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.stop_deployment)
 
-Boto3 documentation:
-[AppConfig.Client.stop_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.stop_deployment)
+```python title="Method definition"
+def stop_deployment(
+    self,
+    *,
+    ApplicationId: str,
+    EnvironmentId: str,
+    DeploymentNumber: int,
+) -> DeploymentTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopDeploymentRequestRequestTypeDef](./type_defs.md#stopdeploymentrequestrequesttypedef).
+1. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EnvironmentId`: `str` *(required)*
-- `DeploymentNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopDeploymentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EnvironmentId": ...,
+    "DeploymentNumber": ...,
+}
 
-Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
+parent.stop_deployment(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopDeploymentRequestRequestTypeDef](./type_defs.md#stopdeploymentrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns metadata to an AppConfig resource.
 
-Type annotations for `boto3.client("appconfig").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.tag_resource)
 
-Boto3 documentation:
-[AppConfig.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Deletes a tag key and value from an AppConfig resource.
 
-Type annotations for `boto3.client("appconfig").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.untag_resource)
 
-Boto3 documentation:
-[AppConfig.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_application"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_application
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_application
 
 Updates an application.
 
-Type annotations for `boto3.client("appconfig").update_application` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").update_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_application)
 
-Boto3 documentation:
-[AppConfig.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_application)
+```python title="Method definition"
+def update_application(
+    self,
+    *,
+    ApplicationId: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> ApplicationResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
+parent.update_application(**kwargs)
+```
 
-<a id="update\_configuration\_profile"></a>
+1. See [:material-code-braces: UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef) 
 
-### update_configuration_profile
+### update\_configuration\_profile
 
 Updates a configuration profile.
 
-Type annotations for `boto3.client("appconfig").update_configuration_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").update_configuration_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_configuration_profile)
 
-Boto3 documentation:
-[AppConfig.Client.update_configuration_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_configuration_profile)
+```python title="Method definition"
+def update_configuration_profile(
+    self,
+    *,
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    Name: str = ...,
+    Description: str = ...,
+    RetrievalRoleArn: str = ...,
+    Validators: Sequence[ValidatorTypeDef] = ...,  # (1)
+) -> ConfigurationProfileTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConfigurationProfileRequestRequestTypeDef](./type_defs.md#updateconfigurationprofilerequestrequesttypedef).
+1. See [:material-code-braces: ValidatorTypeDef](./type_defs.md#validatortypedef) 
+2. See [:material-code-braces: ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ConfigurationProfileId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `RetrievalRoleArn`: `str`
-- `Validators`:
-  `Sequence`\[[ValidatorTypeDef](./type_defs.md#validatortypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateConfigurationProfileRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ConfigurationProfileId": ...,
+}
 
-Returns
-[ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
+parent.update_configuration_profile(**kwargs)
+```
 
-<a id="update\_deployment\_strategy"></a>
+1. See [:material-code-braces: UpdateConfigurationProfileRequestRequestTypeDef](./type_defs.md#updateconfigurationprofilerequestrequesttypedef) 
 
-### update_deployment_strategy
+### update\_deployment\_strategy
 
 Updates a deployment strategy.
 
-Type annotations for `boto3.client("appconfig").update_deployment_strategy`
-method.
+Type annotations and code completion for `#!python boto3.client("appconfig").update_deployment_strategy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_deployment_strategy)
 
-Boto3 documentation:
-[AppConfig.Client.update_deployment_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_deployment_strategy)
+```python title="Method definition"
+def update_deployment_strategy(
+    self,
+    *,
+    DeploymentStrategyId: str,
+    Description: str = ...,
+    DeploymentDurationInMinutes: int = ...,
+    FinalBakeTimeInMinutes: int = ...,
+    GrowthFactor: float = ...,
+    GrowthType: GrowthTypeType = ...,  # (1)
+) -> DeploymentStrategyResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDeploymentStrategyRequestRequestTypeDef](./type_defs.md#updatedeploymentstrategyrequestrequesttypedef).
+1. See [:material-code-brackets: GrowthTypeType](./literals.md#growthtypetype) 
+2. See [:material-code-braces: DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `DeploymentStrategyId`: `str` *(required)*
-- `Description`: `str`
-- `DeploymentDurationInMinutes`: `int`
-- `FinalBakeTimeInMinutes`: `int`
-- `GrowthFactor`: `float`
-- `GrowthType`: [GrowthTypeType](./literals.md#growthtypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateDeploymentStrategyRequestRequestTypeDef = {  # (1)
+    "DeploymentStrategyId": ...,
+}
 
-Returns
-[DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
+parent.update_deployment_strategy(**kwargs)
+```
 
-<a id="update\_environment"></a>
+1. See [:material-code-braces: UpdateDeploymentStrategyRequestRequestTypeDef](./type_defs.md#updatedeploymentstrategyrequestrequesttypedef) 
 
-### update_environment
+### update\_environment
 
 Updates an environment.
 
-Type annotations for `boto3.client("appconfig").update_environment` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").update_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_environment)
 
-Boto3 documentation:
-[AppConfig.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.update_environment)
+```python title="Method definition"
+def update_environment(
+    self,
+    *,
+    ApplicationId: str,
+    EnvironmentId: str,
+    Name: str = ...,
+    Description: str = ...,
+    Monitors: Sequence[MonitorTypeDef] = ...,  # (1)
+) -> EnvironmentResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef).
+1. See [:material-code-braces: MonitorTypeDef](./type_defs.md#monitortypedef) 
+2. See [:material-code-braces: EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EnvironmentId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `Monitors`: `Sequence`\[[MonitorTypeDef](./type_defs.md#monitortypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EnvironmentId": ...,
+}
 
-Returns
-[EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
+parent.update_environment(**kwargs)
+```
 
-<a id="validate\_configuration"></a>
+1. See [:material-code-braces: UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef) 
 
-### validate_configuration
+### validate\_configuration
 
 Uses the validators in a configuration profile to validate a configuration.
 
-Type annotations for `boto3.client("appconfig").validate_configuration` method.
+Type annotations and code completion for `#!python boto3.client("appconfig").validate_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.validate_configuration)
 
-Boto3 documentation:
-[AppConfig.Client.validate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.validate_configuration)
+```python title="Method definition"
+def validate_configuration(
+    self,
+    *,
+    ApplicationId: str,
+    ConfigurationProfileId: str,
+    ConfigurationVersion: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ValidateConfigurationRequestRequestTypeDef](./type_defs.md#validateconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ConfigurationProfileId`: `str` *(required)*
-- `ConfigurationVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ValidateConfigurationRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ConfigurationProfileId": ...,
+    "ConfigurationVersion": ...,
+}
+
+parent.validate_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: ValidateConfigurationRequestRequestTypeDef](./type_defs.md#validateconfigurationrequestrequesttypedef) 
+
+
+
+

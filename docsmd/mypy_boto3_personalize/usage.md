@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-personalize-module"></a>
-
-# Examples for boto3 Personalize module
+# Examples
 
 > [Index](../README.md) > [Personalize](./README.md) > Examples
 
-- [Examples for boto3 Personalize module](#examples-for-boto3-personalize-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+    type annotations stubs module [mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[personalize]` package installed.
 
-Write your `Personalize` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `Personalize` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type PersonalizeClient
-# and provides type checking and code completion
-client = session.client("personalize")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListBatchInferenceJobsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_batch_inference_jobs")
-for item in paginator.paginate(...):
-    # item has type ListBatchInferenceJobsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("personalize")  # (1)
+    result = client.create_batch_inference_job()  # (2)
+    ```
+
+    1. client: [PersonalizeClient](./client.md)
+    2. result: [:material-code-braces: CreateBatchInferenceJobResponseTypeDef](./type_defs.md#createbatchinferencejobresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("personalize")  # (1)
+
+    paginator = client.get_paginator("list_batch_inference_jobs")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [PersonalizeClient](./client.md)
+    2. paginator: [ListBatchInferenceJobsPaginator](./paginators.md#listbatchinferencejobspaginator)
+    3. item: [:material-code-braces: ListBatchInferenceJobsResponseTypeDef](./type_defs.md#listbatchinferencejobsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[personalize]` or a standalone `mypy_boto3_personalize`
-package, you have to explicitly specify `client: PersonalizeClient` type
-annotation.
+With `boto3-stubs-lite[personalize]`
+or a standalone `mypy_boto3_personalize` package, you have to explicitly specify `client: PersonalizeClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_personalize.client import PersonalizeClient
-from mypy_boto3_personalize.paginator import ListBatchInferenceJobsPaginator
-
-from mypy_boto3_personalize.literals import PaginatorName
-
-from mypy_boto3_personalize.type_defs import bool
-from mypy_boto3_personalize.type_defs import ListBatchInferenceJobsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: PersonalizeClient = session.client("personalize")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_personalize.client import PersonalizeClient
+    from mypy_boto3_personalize.type_defs import CreateBatchInferenceJobResponseTypeDef
+    from mypy_boto3_personalize.type_defs import CreateBatchInferenceJobRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_batch_inference_jobs"
-paginator: ListBatchInferenceJobsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListBatchInferenceJobsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: PersonalizeClient = session.client("personalize")
+
+    kwargs: CreateBatchInferenceJobRequestRequestTypeDef = {...}
+    result: CreateBatchInferenceJobResponseTypeDef = client.create_batch_inference_job(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_personalize.client import PersonalizeClient
+    from mypy_boto3_personalize.paginator import ListBatchInferenceJobsPaginator
+    from mypy_boto3_personalize.type_defs import ListBatchInferenceJobsResponseTypeDef
+
+
+    session = Session()
+    client: PersonalizeClient = session.client("personalize")
+
+    paginator: ListBatchInferenceJobsPaginator = client.get_paginator("list_batch_inference_jobs")
+    for item in paginator.paginate(...):
+        item: ListBatchInferenceJobsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

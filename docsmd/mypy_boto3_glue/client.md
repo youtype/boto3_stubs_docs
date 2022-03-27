@@ -1,210 +1,18 @@
-<a id="glueclient-for-boto3-glue-module"></a>
-
-# GlueClient for boto3 Glue module
+# GlueClient
 
 > [Index](../README.md) > [Glue](./README.md) > GlueClient
 
-Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
-type annotations stubs module
-[mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
+!!! note ""
 
-- [GlueClient for boto3 Glue module](#glueclient-for-boto3-glue-module)
-  - [GlueClient](#glueclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_create_partition](#batch_create_partition)
-    - [batch_delete_connection](#batch_delete_connection)
-    - [batch_delete_partition](#batch_delete_partition)
-    - [batch_delete_table](#batch_delete_table)
-    - [batch_delete_table_version](#batch_delete_table_version)
-    - [batch_get_blueprints](#batch_get_blueprints)
-    - [batch_get_crawlers](#batch_get_crawlers)
-    - [batch_get_dev_endpoints](#batch_get_dev_endpoints)
-    - [batch_get_jobs](#batch_get_jobs)
-    - [batch_get_partition](#batch_get_partition)
-    - [batch_get_triggers](#batch_get_triggers)
-    - [batch_get_workflows](#batch_get_workflows)
-    - [batch_stop_job_run](#batch_stop_job_run)
-    - [batch_update_partition](#batch_update_partition)
-    - [can_paginate](#can_paginate)
-    - [cancel_ml_task_run](#cancel_ml_task_run)
-    - [cancel_statement](#cancel_statement)
-    - [check_schema_version_validity](#check_schema_version_validity)
-    - [create_blueprint](#create_blueprint)
-    - [create_classifier](#create_classifier)
-    - [create_connection](#create_connection)
-    - [create_crawler](#create_crawler)
-    - [create_database](#create_database)
-    - [create_dev_endpoint](#create_dev_endpoint)
-    - [create_job](#create_job)
-    - [create_ml_transform](#create_ml_transform)
-    - [create_partition](#create_partition)
-    - [create_partition_index](#create_partition_index)
-    - [create_registry](#create_registry)
-    - [create_schema](#create_schema)
-    - [create_script](#create_script)
-    - [create_security_configuration](#create_security_configuration)
-    - [create_session](#create_session)
-    - [create_table](#create_table)
-    - [create_trigger](#create_trigger)
-    - [create_user_defined_function](#create_user_defined_function)
-    - [create_workflow](#create_workflow)
-    - [delete_blueprint](#delete_blueprint)
-    - [delete_classifier](#delete_classifier)
-    - [delete_column_statistics_for_partition](#delete_column_statistics_for_partition)
-    - [delete_column_statistics_for_table](#delete_column_statistics_for_table)
-    - [delete_connection](#delete_connection)
-    - [delete_crawler](#delete_crawler)
-    - [delete_database](#delete_database)
-    - [delete_dev_endpoint](#delete_dev_endpoint)
-    - [delete_job](#delete_job)
-    - [delete_ml_transform](#delete_ml_transform)
-    - [delete_partition](#delete_partition)
-    - [delete_partition_index](#delete_partition_index)
-    - [delete_registry](#delete_registry)
-    - [delete_resource_policy](#delete_resource_policy)
-    - [delete_schema](#delete_schema)
-    - [delete_schema_versions](#delete_schema_versions)
-    - [delete_security_configuration](#delete_security_configuration)
-    - [delete_session](#delete_session)
-    - [delete_table](#delete_table)
-    - [delete_table_version](#delete_table_version)
-    - [delete_trigger](#delete_trigger)
-    - [delete_user_defined_function](#delete_user_defined_function)
-    - [delete_workflow](#delete_workflow)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_blueprint](#get_blueprint)
-    - [get_blueprint_run](#get_blueprint_run)
-    - [get_blueprint_runs](#get_blueprint_runs)
-    - [get_catalog_import_status](#get_catalog_import_status)
-    - [get_classifier](#get_classifier)
-    - [get_classifiers](#get_classifiers)
-    - [get_column_statistics_for_partition](#get_column_statistics_for_partition)
-    - [get_column_statistics_for_table](#get_column_statistics_for_table)
-    - [get_connection](#get_connection)
-    - [get_connections](#get_connections)
-    - [get_crawler](#get_crawler)
-    - [get_crawler_metrics](#get_crawler_metrics)
-    - [get_crawlers](#get_crawlers)
-    - [get_data_catalog_encryption_settings](#get_data_catalog_encryption_settings)
-    - [get_database](#get_database)
-    - [get_databases](#get_databases)
-    - [get_dataflow_graph](#get_dataflow_graph)
-    - [get_dev_endpoint](#get_dev_endpoint)
-    - [get_dev_endpoints](#get_dev_endpoints)
-    - [get_job](#get_job)
-    - [get_job_bookmark](#get_job_bookmark)
-    - [get_job_run](#get_job_run)
-    - [get_job_runs](#get_job_runs)
-    - [get_jobs](#get_jobs)
-    - [get_mapping](#get_mapping)
-    - [get_ml_task_run](#get_ml_task_run)
-    - [get_ml_task_runs](#get_ml_task_runs)
-    - [get_ml_transform](#get_ml_transform)
-    - [get_ml_transforms](#get_ml_transforms)
-    - [get_partition](#get_partition)
-    - [get_partition_indexes](#get_partition_indexes)
-    - [get_partitions](#get_partitions)
-    - [get_plan](#get_plan)
-    - [get_registry](#get_registry)
-    - [get_resource_policies](#get_resource_policies)
-    - [get_resource_policy](#get_resource_policy)
-    - [get_schema](#get_schema)
-    - [get_schema_by_definition](#get_schema_by_definition)
-    - [get_schema_version](#get_schema_version)
-    - [get_schema_versions_diff](#get_schema_versions_diff)
-    - [get_security_configuration](#get_security_configuration)
-    - [get_security_configurations](#get_security_configurations)
-    - [get_session](#get_session)
-    - [get_statement](#get_statement)
-    - [get_table](#get_table)
-    - [get_table_version](#get_table_version)
-    - [get_table_versions](#get_table_versions)
-    - [get_tables](#get_tables)
-    - [get_tags](#get_tags)
-    - [get_trigger](#get_trigger)
-    - [get_triggers](#get_triggers)
-    - [get_unfiltered_partition_metadata](#get_unfiltered_partition_metadata)
-    - [get_unfiltered_partitions_metadata](#get_unfiltered_partitions_metadata)
-    - [get_unfiltered_table_metadata](#get_unfiltered_table_metadata)
-    - [get_user_defined_function](#get_user_defined_function)
-    - [get_user_defined_functions](#get_user_defined_functions)
-    - [get_workflow](#get_workflow)
-    - [get_workflow_run](#get_workflow_run)
-    - [get_workflow_run_properties](#get_workflow_run_properties)
-    - [get_workflow_runs](#get_workflow_runs)
-    - [import_catalog_to_glue](#import_catalog_to_glue)
-    - [list_blueprints](#list_blueprints)
-    - [list_crawlers](#list_crawlers)
-    - [list_dev_endpoints](#list_dev_endpoints)
-    - [list_jobs](#list_jobs)
-    - [list_ml_transforms](#list_ml_transforms)
-    - [list_registries](#list_registries)
-    - [list_schema_versions](#list_schema_versions)
-    - [list_schemas](#list_schemas)
-    - [list_sessions](#list_sessions)
-    - [list_statements](#list_statements)
-    - [list_triggers](#list_triggers)
-    - [list_workflows](#list_workflows)
-    - [put_data_catalog_encryption_settings](#put_data_catalog_encryption_settings)
-    - [put_resource_policy](#put_resource_policy)
-    - [put_schema_version_metadata](#put_schema_version_metadata)
-    - [put_workflow_run_properties](#put_workflow_run_properties)
-    - [query_schema_version_metadata](#query_schema_version_metadata)
-    - [register_schema_version](#register_schema_version)
-    - [remove_schema_version_metadata](#remove_schema_version_metadata)
-    - [reset_job_bookmark](#reset_job_bookmark)
-    - [resume_workflow_run](#resume_workflow_run)
-    - [run_statement](#run_statement)
-    - [search_tables](#search_tables)
-    - [start_blueprint_run](#start_blueprint_run)
-    - [start_crawler](#start_crawler)
-    - [start_crawler_schedule](#start_crawler_schedule)
-    - [start_export_labels_task_run](#start_export_labels_task_run)
-    - [start_import_labels_task_run](#start_import_labels_task_run)
-    - [start_job_run](#start_job_run)
-    - [start_ml_evaluation_task_run](#start_ml_evaluation_task_run)
-    - [start_ml_labeling_set_generation_task_run](#start_ml_labeling_set_generation_task_run)
-    - [start_trigger](#start_trigger)
-    - [start_workflow_run](#start_workflow_run)
-    - [stop_crawler](#stop_crawler)
-    - [stop_crawler_schedule](#stop_crawler_schedule)
-    - [stop_session](#stop_session)
-    - [stop_trigger](#stop_trigger)
-    - [stop_workflow_run](#stop_workflow_run)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_blueprint](#update_blueprint)
-    - [update_classifier](#update_classifier)
-    - [update_column_statistics_for_partition](#update_column_statistics_for_partition)
-    - [update_column_statistics_for_table](#update_column_statistics_for_table)
-    - [update_connection](#update_connection)
-    - [update_crawler](#update_crawler)
-    - [update_crawler_schedule](#update_crawler_schedule)
-    - [update_database](#update_database)
-    - [update_dev_endpoint](#update_dev_endpoint)
-    - [update_job](#update_job)
-    - [update_ml_transform](#update_ml_transform)
-    - [update_partition](#update_partition)
-    - [update_registry](#update_registry)
-    - [update_schema](#update_schema)
-    - [update_table](#update_table)
-    - [update_trigger](#update_trigger)
-    - [update_user_defined_function](#update_user_defined_function)
-    - [update_workflow](#update_workflow)
-    - [get_paginator](#get_paginator)
-
-<a id="glueclient"></a>
+    Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+    type annotations stubs module [mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
 ## GlueClient
 
-Type annotations for `boto3.client("glue")`
+Type annotations and code completion for `#!python boto3.client("glue")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_glue.client import GlueClient
 
@@ -212,4427 +20,5949 @@ def get_glue_client() -> GlueClient:
     return Session().client("glue")
 ```
 
-Boto3 documentation:
-[Glue.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("glue").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("glue")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AlreadyExistsException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.ConcurrentRunsExceededException,
+    client.ConditionCheckFailureException,
+    client.ConflictException,
+    client.CrawlerNotRunningException,
+    client.CrawlerRunningException,
+    client.CrawlerStoppingException,
+    client.EntityNotFoundException,
+    client.GlueEncryptionException,
+    client.IdempotentParameterMismatchException,
+    client.IllegalBlueprintStateException,
+    client.IllegalSessionStateException,
+    client.IllegalWorkflowStateException,
+    client.InternalServiceException,
+    client.InvalidInputException,
+    client.InvalidStateException,
+    client.MLTransformNotReadyException,
+    client.NoScheduleException,
+    client.OperationTimeoutException,
+    client.PermissionTypeMismatchException,
+    client.ResourceNotReadyException,
+    client.ResourceNumberLimitExceededException,
+    client.SchedulerNotRunningException,
+    client.SchedulerRunningException,
+    client.SchedulerTransitioningException,
+    client.ValidationException,
+    client.VersionMismatchException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_glue.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AlreadyExistsException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.ConcurrentRunsExceededException`
-- `Exceptions.ConditionCheckFailureException`
-- `Exceptions.ConflictException`
-- `Exceptions.CrawlerNotRunningException`
-- `Exceptions.CrawlerRunningException`
-- `Exceptions.CrawlerStoppingException`
-- `Exceptions.EntityNotFoundException`
-- `Exceptions.GlueEncryptionException`
-- `Exceptions.IdempotentParameterMismatchException`
-- `Exceptions.IllegalBlueprintStateException`
-- `Exceptions.IllegalSessionStateException`
-- `Exceptions.IllegalWorkflowStateException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidInputException`
-- `Exceptions.InvalidStateException`
-- `Exceptions.MLTransformNotReadyException`
-- `Exceptions.NoScheduleException`
-- `Exceptions.OperationTimeoutException`
-- `Exceptions.PermissionTypeMismatchException`
-- `Exceptions.ResourceNotReadyException`
-- `Exceptions.ResourceNumberLimitExceededException`
-- `Exceptions.SchedulerNotRunningException`
-- `Exceptions.SchedulerRunningException`
-- `Exceptions.SchedulerTransitioningException`
-- `Exceptions.ValidationException`
-- `Exceptions.VersionMismatchException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-GlueClient exceptions.
-
-Type annotations for `boto3.client("glue").exceptions` method.
-
-Boto3 documentation:
-[Glue.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_create\_partition"></a>
-
-### batch_create_partition
+### batch\_create\_partition
 
 Creates one or more partitions in a batch operation.
 
-Type annotations for `boto3.client("glue").batch_create_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_create_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_create_partition)
 
-Boto3 documentation:
-[Glue.Client.batch_create_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_create_partition)
+```python title="Method definition"
+def batch_create_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionInputList: Sequence[PartitionInputTypeDef],  # (1)
+    CatalogId: str = ...,
+) -> BatchCreatePartitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchCreatePartitionRequestRequestTypeDef](./type_defs.md#batchcreatepartitionrequestrequesttypedef).
+1. See [:material-code-braces: PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) 
+2. See [:material-code-braces: BatchCreatePartitionResponseTypeDef](./type_defs.md#batchcreatepartitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionInputList`:
-  `Sequence`\[[PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchCreatePartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionInputList": ...,
+}
 
-Returns
-[BatchCreatePartitionResponseTypeDef](./type_defs.md#batchcreatepartitionresponsetypedef).
+parent.batch_create_partition(**kwargs)
+```
 
-<a id="batch\_delete\_connection"></a>
+1. See [:material-code-braces: BatchCreatePartitionRequestRequestTypeDef](./type_defs.md#batchcreatepartitionrequestrequesttypedef) 
 
-### batch_delete_connection
+### batch\_delete\_connection
 
 Deletes a list of connection definitions from the Data Catalog.
 
-Type annotations for `boto3.client("glue").batch_delete_connection` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_delete_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_connection)
 
-Boto3 documentation:
-[Glue.Client.batch_delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_connection)
+```python title="Method definition"
+def batch_delete_connection(
+    self,
+    *,
+    ConnectionNameList: Sequence[str],
+    CatalogId: str = ...,
+) -> BatchDeleteConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteConnectionRequestRequestTypeDef](./type_defs.md#batchdeleteconnectionrequestrequesttypedef).
+1. See [:material-code-braces: BatchDeleteConnectionResponseTypeDef](./type_defs.md#batchdeleteconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionNameList`: `Sequence`\[`str`\] *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteConnectionRequestRequestTypeDef = {  # (1)
+    "ConnectionNameList": ...,
+}
 
-Returns
-[BatchDeleteConnectionResponseTypeDef](./type_defs.md#batchdeleteconnectionresponsetypedef).
+parent.batch_delete_connection(**kwargs)
+```
 
-<a id="batch\_delete\_partition"></a>
+1. See [:material-code-braces: BatchDeleteConnectionRequestRequestTypeDef](./type_defs.md#batchdeleteconnectionrequestrequesttypedef) 
 
-### batch_delete_partition
+### batch\_delete\_partition
 
 Deletes one or more partitions in a batch operation.
 
-Type annotations for `boto3.client("glue").batch_delete_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_delete_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_partition)
 
-Boto3 documentation:
-[Glue.Client.batch_delete_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_partition)
+```python title="Method definition"
+def batch_delete_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionsToDelete: Sequence[PartitionValueListTypeDef],  # (1)
+    CatalogId: str = ...,
+) -> BatchDeletePartitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeletePartitionRequestRequestTypeDef](./type_defs.md#batchdeletepartitionrequestrequesttypedef).
+1. See [:material-code-braces: PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef) 
+2. See [:material-code-braces: BatchDeletePartitionResponseTypeDef](./type_defs.md#batchdeletepartitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionsToDelete`:
-  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchDeletePartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionsToDelete": ...,
+}
 
-Returns
-[BatchDeletePartitionResponseTypeDef](./type_defs.md#batchdeletepartitionresponsetypedef).
+parent.batch_delete_partition(**kwargs)
+```
 
-<a id="batch\_delete\_table"></a>
+1. See [:material-code-braces: BatchDeletePartitionRequestRequestTypeDef](./type_defs.md#batchdeletepartitionrequestrequesttypedef) 
 
-### batch_delete_table
+### batch\_delete\_table
 
 Deletes multiple tables at once.
 
-Type annotations for `boto3.client("glue").batch_delete_table` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_delete_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table)
 
-Boto3 documentation:
-[Glue.Client.batch_delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table)
+```python title="Method definition"
+def batch_delete_table(
+    self,
+    *,
+    DatabaseName: str,
+    TablesToDelete: Sequence[str],
+    CatalogId: str = ...,
+    TransactionId: str = ...,
+) -> BatchDeleteTableResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteTableRequestRequestTypeDef](./type_defs.md#batchdeletetablerequestrequesttypedef).
+1. See [:material-code-braces: BatchDeleteTableResponseTypeDef](./type_defs.md#batchdeletetableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TablesToDelete`: `Sequence`\[`str`\] *(required)*
-- `CatalogId`: `str`
-- `TransactionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TablesToDelete": ...,
+}
 
-Returns
-[BatchDeleteTableResponseTypeDef](./type_defs.md#batchdeletetableresponsetypedef).
+parent.batch_delete_table(**kwargs)
+```
 
-<a id="batch\_delete\_table\_version"></a>
+1. See [:material-code-braces: BatchDeleteTableRequestRequestTypeDef](./type_defs.md#batchdeletetablerequestrequesttypedef) 
 
-### batch_delete_table_version
+### batch\_delete\_table\_version
 
 Deletes a specified batch of versions of a table.
 
-Type annotations for `boto3.client("glue").batch_delete_table_version` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_delete_table_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table_version)
 
-Boto3 documentation:
-[Glue.Client.batch_delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_delete_table_version)
+```python title="Method definition"
+def batch_delete_table_version(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    VersionIds: Sequence[str],
+    CatalogId: str = ...,
+) -> BatchDeleteTableVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteTableVersionRequestRequestTypeDef](./type_defs.md#batchdeletetableversionrequestrequesttypedef).
+1. See [:material-code-braces: BatchDeleteTableVersionResponseTypeDef](./type_defs.md#batchdeletetableversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `VersionIds`: `Sequence`\[`str`\] *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteTableVersionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "VersionIds": ...,
+}
 
-Returns
-[BatchDeleteTableVersionResponseTypeDef](./type_defs.md#batchdeletetableversionresponsetypedef).
+parent.batch_delete_table_version(**kwargs)
+```
 
-<a id="batch\_get\_blueprints"></a>
+1. See [:material-code-braces: BatchDeleteTableVersionRequestRequestTypeDef](./type_defs.md#batchdeletetableversionrequestrequesttypedef) 
 
-### batch_get_blueprints
+### batch\_get\_blueprints
 
 Retrieves information about a list of blueprints.
 
-Type annotations for `boto3.client("glue").batch_get_blueprints` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_get_blueprints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_blueprints)
 
-Boto3 documentation:
-[Glue.Client.batch_get_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_blueprints)
+```python title="Method definition"
+def batch_get_blueprints(
+    self,
+    *,
+    Names: Sequence[str],
+    IncludeBlueprint: bool = ...,
+    IncludeParameterSpec: bool = ...,
+) -> BatchGetBlueprintsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetBlueprintsRequestRequestTypeDef](./type_defs.md#batchgetblueprintsrequestrequesttypedef).
+1. See [:material-code-braces: BatchGetBlueprintsResponseTypeDef](./type_defs.md#batchgetblueprintsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\] *(required)*
-- `IncludeBlueprint`: `bool`
-- `IncludeParameterSpec`: `bool`
+```python title="Usage example with kwargs"
+kwargs: BatchGetBlueprintsRequestRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[BatchGetBlueprintsResponseTypeDef](./type_defs.md#batchgetblueprintsresponsetypedef).
+parent.batch_get_blueprints(**kwargs)
+```
 
-<a id="batch\_get\_crawlers"></a>
+1. See [:material-code-braces: BatchGetBlueprintsRequestRequestTypeDef](./type_defs.md#batchgetblueprintsrequestrequesttypedef) 
 
-### batch_get_crawlers
+### batch\_get\_crawlers
 
 Returns a list of resource metadata for a given list of crawler names.
 
-Type annotations for `boto3.client("glue").batch_get_crawlers` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_get_crawlers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_crawlers)
 
-Boto3 documentation:
-[Glue.Client.batch_get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_crawlers)
+```python title="Method definition"
+def batch_get_crawlers(
+    self,
+    *,
+    CrawlerNames: Sequence[str],
+) -> BatchGetCrawlersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetCrawlersRequestRequestTypeDef](./type_defs.md#batchgetcrawlersrequestrequesttypedef).
+1. See [:material-code-braces: BatchGetCrawlersResponseTypeDef](./type_defs.md#batchgetcrawlersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CrawlerNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchGetCrawlersRequestRequestTypeDef = {  # (1)
+    "CrawlerNames": ...,
+}
 
-Returns
-[BatchGetCrawlersResponseTypeDef](./type_defs.md#batchgetcrawlersresponsetypedef).
+parent.batch_get_crawlers(**kwargs)
+```
 
-<a id="batch\_get\_dev\_endpoints"></a>
+1. See [:material-code-braces: BatchGetCrawlersRequestRequestTypeDef](./type_defs.md#batchgetcrawlersrequestrequesttypedef) 
 
-### batch_get_dev_endpoints
+### batch\_get\_dev\_endpoints
 
 Returns a list of resource metadata for a given list of development endpoint
 names.
 
-Type annotations for `boto3.client("glue").batch_get_dev_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_get_dev_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_dev_endpoints)
 
-Boto3 documentation:
-[Glue.Client.batch_get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_dev_endpoints)
+```python title="Method definition"
+def batch_get_dev_endpoints(
+    self,
+    *,
+    DevEndpointNames: Sequence[str],
+) -> BatchGetDevEndpointsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetDevEndpointsRequestRequestTypeDef](./type_defs.md#batchgetdevendpointsrequestrequesttypedef).
+1. See [:material-code-braces: BatchGetDevEndpointsResponseTypeDef](./type_defs.md#batchgetdevendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DevEndpointNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchGetDevEndpointsRequestRequestTypeDef = {  # (1)
+    "DevEndpointNames": ...,
+}
 
-Returns
-[BatchGetDevEndpointsResponseTypeDef](./type_defs.md#batchgetdevendpointsresponsetypedef).
+parent.batch_get_dev_endpoints(**kwargs)
+```
 
-<a id="batch\_get\_jobs"></a>
+1. See [:material-code-braces: BatchGetDevEndpointsRequestRequestTypeDef](./type_defs.md#batchgetdevendpointsrequestrequesttypedef) 
 
-### batch_get_jobs
+### batch\_get\_jobs
 
 Returns a list of resource metadata for a given list of job names.
 
-Type annotations for `boto3.client("glue").batch_get_jobs` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_get_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_jobs)
 
-Boto3 documentation:
-[Glue.Client.batch_get_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_jobs)
+```python title="Method definition"
+def batch_get_jobs(
+    self,
+    *,
+    JobNames: Sequence[str],
+) -> BatchGetJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetJobsRequestRequestTypeDef](./type_defs.md#batchgetjobsrequestrequesttypedef).
+1. See [:material-code-braces: BatchGetJobsResponseTypeDef](./type_defs.md#batchgetjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchGetJobsRequestRequestTypeDef = {  # (1)
+    "JobNames": ...,
+}
 
-Returns
-[BatchGetJobsResponseTypeDef](./type_defs.md#batchgetjobsresponsetypedef).
+parent.batch_get_jobs(**kwargs)
+```
 
-<a id="batch\_get\_partition"></a>
+1. See [:material-code-braces: BatchGetJobsRequestRequestTypeDef](./type_defs.md#batchgetjobsrequestrequesttypedef) 
 
-### batch_get_partition
+### batch\_get\_partition
 
 Retrieves partitions in a batch request.
 
-Type annotations for `boto3.client("glue").batch_get_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_get_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_partition)
 
-Boto3 documentation:
-[Glue.Client.batch_get_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_partition)
+```python title="Method definition"
+def batch_get_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionsToGet: Sequence[PartitionValueListTypeDef],  # (1)
+    CatalogId: str = ...,
+) -> BatchGetPartitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetPartitionRequestRequestTypeDef](./type_defs.md#batchgetpartitionrequestrequesttypedef).
+1. See [:material-code-braces: PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef) 
+2. See [:material-code-braces: BatchGetPartitionResponseTypeDef](./type_defs.md#batchgetpartitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionsToGet`:
-  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchGetPartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionsToGet": ...,
+}
 
-Returns
-[BatchGetPartitionResponseTypeDef](./type_defs.md#batchgetpartitionresponsetypedef).
+parent.batch_get_partition(**kwargs)
+```
 
-<a id="batch\_get\_triggers"></a>
+1. See [:material-code-braces: BatchGetPartitionRequestRequestTypeDef](./type_defs.md#batchgetpartitionrequestrequesttypedef) 
 
-### batch_get_triggers
+### batch\_get\_triggers
 
 Returns a list of resource metadata for a given list of trigger names.
 
-Type annotations for `boto3.client("glue").batch_get_triggers` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_get_triggers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_triggers)
 
-Boto3 documentation:
-[Glue.Client.batch_get_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_triggers)
+```python title="Method definition"
+def batch_get_triggers(
+    self,
+    *,
+    TriggerNames: Sequence[str],
+) -> BatchGetTriggersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetTriggersRequestRequestTypeDef](./type_defs.md#batchgettriggersrequestrequesttypedef).
+1. See [:material-code-braces: BatchGetTriggersResponseTypeDef](./type_defs.md#batchgettriggersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TriggerNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchGetTriggersRequestRequestTypeDef = {  # (1)
+    "TriggerNames": ...,
+}
 
-Returns
-[BatchGetTriggersResponseTypeDef](./type_defs.md#batchgettriggersresponsetypedef).
+parent.batch_get_triggers(**kwargs)
+```
 
-<a id="batch\_get\_workflows"></a>
+1. See [:material-code-braces: BatchGetTriggersRequestRequestTypeDef](./type_defs.md#batchgettriggersrequestrequesttypedef) 
 
-### batch_get_workflows
+### batch\_get\_workflows
 
 Returns a list of resource metadata for a given list of workflow names.
 
-Type annotations for `boto3.client("glue").batch_get_workflows` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_get_workflows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_workflows)
 
-Boto3 documentation:
-[Glue.Client.batch_get_workflows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_get_workflows)
+```python title="Method definition"
+def batch_get_workflows(
+    self,
+    *,
+    Names: Sequence[str],
+    IncludeGraph: bool = ...,
+) -> BatchGetWorkflowsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetWorkflowsRequestRequestTypeDef](./type_defs.md#batchgetworkflowsrequestrequesttypedef).
+1. See [:material-code-braces: BatchGetWorkflowsResponseTypeDef](./type_defs.md#batchgetworkflowsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\] *(required)*
-- `IncludeGraph`: `bool`
+```python title="Usage example with kwargs"
+kwargs: BatchGetWorkflowsRequestRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[BatchGetWorkflowsResponseTypeDef](./type_defs.md#batchgetworkflowsresponsetypedef).
+parent.batch_get_workflows(**kwargs)
+```
 
-<a id="batch\_stop\_job\_run"></a>
+1. See [:material-code-braces: BatchGetWorkflowsRequestRequestTypeDef](./type_defs.md#batchgetworkflowsrequestrequesttypedef) 
 
-### batch_stop_job_run
+### batch\_stop\_job\_run
 
 Stops one or more job runs for a specified job definition.
 
-Type annotations for `boto3.client("glue").batch_stop_job_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_stop_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_stop_job_run)
 
-Boto3 documentation:
-[Glue.Client.batch_stop_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_stop_job_run)
+```python title="Method definition"
+def batch_stop_job_run(
+    self,
+    *,
+    JobName: str,
+    JobRunIds: Sequence[str],
+) -> BatchStopJobRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchStopJobRunRequestRequestTypeDef](./type_defs.md#batchstopjobrunrequestrequesttypedef).
+1. See [:material-code-braces: BatchStopJobRunResponseTypeDef](./type_defs.md#batchstopjobrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
-- `JobRunIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchStopJobRunRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+    "JobRunIds": ...,
+}
 
-Returns
-[BatchStopJobRunResponseTypeDef](./type_defs.md#batchstopjobrunresponsetypedef).
+parent.batch_stop_job_run(**kwargs)
+```
 
-<a id="batch\_update\_partition"></a>
+1. See [:material-code-braces: BatchStopJobRunRequestRequestTypeDef](./type_defs.md#batchstopjobrunrequestrequesttypedef) 
 
-### batch_update_partition
+### batch\_update\_partition
 
 Updates one or more partitions in a batch operation.
 
-Type annotations for `boto3.client("glue").batch_update_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").batch_update_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_update_partition)
 
-Boto3 documentation:
-[Glue.Client.batch_update_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.batch_update_partition)
+```python title="Method definition"
+def batch_update_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    Entries: Sequence[BatchUpdatePartitionRequestEntryTypeDef],  # (1)
+    CatalogId: str = ...,
+) -> BatchUpdatePartitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchUpdatePartitionRequestRequestTypeDef](./type_defs.md#batchupdatepartitionrequestrequesttypedef).
+1. See [:material-code-braces: BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef) 
+2. See [:material-code-braces: BatchUpdatePartitionResponseTypeDef](./type_defs.md#batchupdatepartitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `Entries`:
-  `Sequence`\[[BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchUpdatePartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "Entries": ...,
+}
 
-Returns
-[BatchUpdatePartitionResponseTypeDef](./type_defs.md#batchupdatepartitionresponsetypedef).
+parent.batch_update_partition(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchUpdatePartitionRequestRequestTypeDef](./type_defs.md#batchupdatepartitionrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("glue").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("glue").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.can_paginate)
 
-Boto3 documentation:
-[Glue.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_ml\_task\_run"></a>
-
-### cancel_ml_task_run
+### cancel\_ml\_task\_run
 
 Cancels (stops) a task run.
 
-Type annotations for `boto3.client("glue").cancel_ml_task_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").cancel_ml_task_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_ml_task_run)
 
-Boto3 documentation:
-[Glue.Client.cancel_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_ml_task_run)
+```python title="Method definition"
+def cancel_ml_task_run(
+    self,
+    *,
+    TransformId: str,
+    TaskRunId: str,
+) -> CancelMLTaskRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelMLTaskRunRequestRequestTypeDef](./type_defs.md#cancelmltaskrunrequestrequesttypedef).
+1. See [:material-code-braces: CancelMLTaskRunResponseTypeDef](./type_defs.md#cancelmltaskrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
-- `TaskRunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelMLTaskRunRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+    "TaskRunId": ...,
+}
 
-Returns
-[CancelMLTaskRunResponseTypeDef](./type_defs.md#cancelmltaskrunresponsetypedef).
+parent.cancel_ml_task_run(**kwargs)
+```
 
-<a id="cancel\_statement"></a>
+1. See [:material-code-braces: CancelMLTaskRunRequestRequestTypeDef](./type_defs.md#cancelmltaskrunrequestrequesttypedef) 
 
-### cancel_statement
+### cancel\_statement
 
 Cancels the statement..
 
-Type annotations for `boto3.client("glue").cancel_statement` method.
+Type annotations and code completion for `#!python boto3.client("glue").cancel_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_statement)
 
-Boto3 documentation:
-[Glue.Client.cancel_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_statement)
+```python title="Method definition"
+def cancel_statement(
+    self,
+    *,
+    SessionId: str,
+    Id: int,
+    RequestOrigin: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelStatementRequestRequestTypeDef](./type_defs.md#cancelstatementrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SessionId`: `str` *(required)*
-- `Id`: `int` *(required)*
-- `RequestOrigin`: `str`
+```python title="Usage example with kwargs"
+kwargs: CancelStatementRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_statement(**kwargs)
+```
 
-<a id="check\_schema\_version\_validity"></a>
+1. See [:material-code-braces: CancelStatementRequestRequestTypeDef](./type_defs.md#cancelstatementrequestrequesttypedef) 
 
-### check_schema_version_validity
+### check\_schema\_version\_validity
 
 Validates the supplied schema.
 
-Type annotations for `boto3.client("glue").check_schema_version_validity`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").check_schema_version_validity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.check_schema_version_validity)
 
-Boto3 documentation:
-[Glue.Client.check_schema_version_validity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.check_schema_version_validity)
+```python title="Method definition"
+def check_schema_version_validity(
+    self,
+    *,
+    DataFormat: DataFormatType,  # (1)
+    SchemaDefinition: str,
+) -> CheckSchemaVersionValidityResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CheckSchemaVersionValidityInputRequestTypeDef](./type_defs.md#checkschemaversionvalidityinputrequesttypedef).
+1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
+2. See [:material-code-braces: CheckSchemaVersionValidityResponseTypeDef](./type_defs.md#checkschemaversionvalidityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataFormat`: [DataFormatType](./literals.md#dataformattype) *(required)*
-- `SchemaDefinition`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CheckSchemaVersionValidityInputRequestTypeDef = {  # (1)
+    "DataFormat": ...,
+    "SchemaDefinition": ...,
+}
 
-Returns
-[CheckSchemaVersionValidityResponseTypeDef](./type_defs.md#checkschemaversionvalidityresponsetypedef).
+parent.check_schema_version_validity(**kwargs)
+```
 
-<a id="create\_blueprint"></a>
+1. See [:material-code-braces: CheckSchemaVersionValidityInputRequestTypeDef](./type_defs.md#checkschemaversionvalidityinputrequesttypedef) 
 
-### create_blueprint
+### create\_blueprint
 
 Registers a blueprint with Glue.
 
-Type annotations for `boto3.client("glue").create_blueprint` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_blueprint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_blueprint)
 
-Boto3 documentation:
-[Glue.Client.create_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_blueprint)
+```python title="Method definition"
+def create_blueprint(
+    self,
+    *,
+    Name: str,
+    BlueprintLocation: str,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateBlueprintResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateBlueprintRequestRequestTypeDef](./type_defs.md#createblueprintrequestrequesttypedef).
+1. See [:material-code-braces: CreateBlueprintResponseTypeDef](./type_defs.md#createblueprintresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `BlueprintLocation`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateBlueprintRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "BlueprintLocation": ...,
+}
 
-Returns
-[CreateBlueprintResponseTypeDef](./type_defs.md#createblueprintresponsetypedef).
+parent.create_blueprint(**kwargs)
+```
 
-<a id="create\_classifier"></a>
+1. See [:material-code-braces: CreateBlueprintRequestRequestTypeDef](./type_defs.md#createblueprintrequestrequesttypedef) 
 
-### create_classifier
+### create\_classifier
 
 Creates a classifier in the user's account.
 
-Type annotations for `boto3.client("glue").create_classifier` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_classifier` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_classifier)
 
-Boto3 documentation:
-[Glue.Client.create_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_classifier)
+```python title="Method definition"
+def create_classifier(
+    self,
+    *,
+    GrokClassifier: CreateGrokClassifierRequestTypeDef = ...,  # (1)
+    XMLClassifier: CreateXMLClassifierRequestTypeDef = ...,  # (2)
+    JsonClassifier: CreateJsonClassifierRequestTypeDef = ...,  # (3)
+    CsvClassifier: CreateCsvClassifierRequestTypeDef = ...,  # (4)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateClassifierRequestRequestTypeDef](./type_defs.md#createclassifierrequestrequesttypedef).
+1. See [:material-code-braces: CreateGrokClassifierRequestTypeDef](./type_defs.md#creategrokclassifierrequesttypedef) 
+2. See [:material-code-braces: CreateXMLClassifierRequestTypeDef](./type_defs.md#createxmlclassifierrequesttypedef) 
+3. See [:material-code-braces: CreateJsonClassifierRequestTypeDef](./type_defs.md#createjsonclassifierrequesttypedef) 
+4. See [:material-code-braces: CreateCsvClassifierRequestTypeDef](./type_defs.md#createcsvclassifierrequesttypedef) 
 
-Keyword-only arguments:
 
-- `GrokClassifier`:
-  [CreateGrokClassifierRequestTypeDef](./type_defs.md#creategrokclassifierrequesttypedef)
-- `XMLClassifier`:
-  [CreateXMLClassifierRequestTypeDef](./type_defs.md#createxmlclassifierrequesttypedef)
-- `JsonClassifier`:
-  [CreateJsonClassifierRequestTypeDef](./type_defs.md#createjsonclassifierrequesttypedef)
-- `CsvClassifier`:
-  [CreateCsvClassifierRequestTypeDef](./type_defs.md#createcsvclassifierrequesttypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateClassifierRequestRequestTypeDef = {  # (1)
+    "GrokClassifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_classifier(**kwargs)
+```
 
-<a id="create\_connection"></a>
+1. See [:material-code-braces: CreateClassifierRequestRequestTypeDef](./type_defs.md#createclassifierrequestrequesttypedef) 
 
-### create_connection
+### create\_connection
 
 Creates a connection definition in the Data Catalog.
 
-Type annotations for `boto3.client("glue").create_connection` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_connection)
 
-Boto3 documentation:
-[Glue.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_connection)
+```python title="Method definition"
+def create_connection(
+    self,
+    *,
+    ConnectionInput: ConnectionInputTypeDef,  # (1)
+    CatalogId: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef).
+1. See [:material-code-braces: ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionInput`:
-  [ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) *(required)*
-- `CatalogId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateConnectionRequestRequestTypeDef = {  # (1)
+    "ConnectionInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_connection(**kwargs)
+```
 
-<a id="create\_crawler"></a>
+1. See [:material-code-braces: CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef) 
 
-### create_crawler
+### create\_crawler
 
 Creates a new crawler with specified targets, role, configuration, and optional
 schedule.
 
-Type annotations for `boto3.client("glue").create_crawler` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_crawler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_crawler)
 
-Boto3 documentation:
-[Glue.Client.create_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_crawler)
+```python title="Method definition"
+def create_crawler(
+    self,
+    *,
+    Name: str,
+    Role: str,
+    Targets: CrawlerTargetsTypeDef,  # (1)
+    DatabaseName: str = ...,
+    Description: str = ...,
+    Schedule: str = ...,
+    Classifiers: Sequence[str] = ...,
+    TablePrefix: str = ...,
+    SchemaChangePolicy: SchemaChangePolicyTypeDef = ...,  # (2)
+    RecrawlPolicy: RecrawlPolicyTypeDef = ...,  # (3)
+    LineageConfiguration: LineageConfigurationTypeDef = ...,  # (4)
+    LakeFormationConfiguration: LakeFormationConfigurationTypeDef = ...,  # (5)
+    Configuration: str = ...,
+    CrawlerSecurityConfiguration: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateCrawlerRequestRequestTypeDef](./type_defs.md#createcrawlerrequestrequesttypedef).
+1. See [:material-code-braces: CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef) 
+2. See [:material-code-braces: SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef) 
+3. See [:material-code-braces: RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef) 
+4. See [:material-code-braces: LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef) 
+5. See [:material-code-braces: LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Role`: `str` *(required)*
-- `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
-  *(required)*
-- `DatabaseName`: `str`
-- `Description`: `str`
-- `Schedule`: `str`
-- `Classifiers`: `Sequence`\[`str`\]
-- `TablePrefix`: `str`
-- `SchemaChangePolicy`:
-  [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
-- `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
-- `LineageConfiguration`:
-  [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
-- `LakeFormationConfiguration`:
-  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
-- `Configuration`: `str`
-- `CrawlerSecurityConfiguration`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateCrawlerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Role": ...,
+    "Targets": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_crawler(**kwargs)
+```
 
-<a id="create\_database"></a>
+1. See [:material-code-braces: CreateCrawlerRequestRequestTypeDef](./type_defs.md#createcrawlerrequestrequesttypedef) 
 
-### create_database
+### create\_database
 
 Creates a new database in a Data Catalog.
 
-Type annotations for `boto3.client("glue").create_database` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_database` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_database)
 
-Boto3 documentation:
-[Glue.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_database)
+```python title="Method definition"
+def create_database(
+    self,
+    *,
+    DatabaseInput: DatabaseInputTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateDatabaseRequestRequestTypeDef](./type_defs.md#createdatabaserequestrequesttypedef).
+1. See [:material-code-braces: DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseInput`: [DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef)
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDatabaseRequestRequestTypeDef = {  # (1)
+    "DatabaseInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_database(**kwargs)
+```
 
-<a id="create\_dev\_endpoint"></a>
+1. See [:material-code-braces: CreateDatabaseRequestRequestTypeDef](./type_defs.md#createdatabaserequestrequesttypedef) 
 
-### create_dev_endpoint
+### create\_dev\_endpoint
 
 Creates a new development endpoint.
 
-Type annotations for `boto3.client("glue").create_dev_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_dev_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_dev_endpoint)
 
-Boto3 documentation:
-[Glue.Client.create_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_dev_endpoint)
+```python title="Method definition"
+def create_dev_endpoint(
+    self,
+    *,
+    EndpointName: str,
+    RoleArn: str,
+    SecurityGroupIds: Sequence[str] = ...,
+    SubnetId: str = ...,
+    PublicKey: str = ...,
+    PublicKeys: Sequence[str] = ...,
+    NumberOfNodes: int = ...,
+    WorkerType: WorkerTypeType = ...,  # (1)
+    GlueVersion: str = ...,
+    NumberOfWorkers: int = ...,
+    ExtraPythonLibsS3Path: str = ...,
+    ExtraJarsS3Path: str = ...,
+    SecurityConfiguration: str = ...,
+    Tags: Mapping[str, str] = ...,
+    Arguments: Mapping[str, str] = ...,
+) -> CreateDevEndpointResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDevEndpointRequestRequestTypeDef](./type_defs.md#createdevendpointrequestrequesttypedef).
+1. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+2. See [:material-code-braces: CreateDevEndpointResponseTypeDef](./type_defs.md#createdevendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointName`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `SubnetId`: `str`
-- `PublicKey`: `str`
-- `PublicKeys`: `Sequence`\[`str`\]
-- `NumberOfNodes`: `int`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `GlueVersion`: `str`
-- `NumberOfWorkers`: `int`
-- `ExtraPythonLibsS3Path`: `str`
-- `ExtraJarsS3Path`: `str`
-- `SecurityConfiguration`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Arguments`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDevEndpointRequestRequestTypeDef = {  # (1)
+    "EndpointName": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[CreateDevEndpointResponseTypeDef](./type_defs.md#createdevendpointresponsetypedef).
+parent.create_dev_endpoint(**kwargs)
+```
 
-<a id="create\_job"></a>
+1. See [:material-code-braces: CreateDevEndpointRequestRequestTypeDef](./type_defs.md#createdevendpointrequestrequesttypedef) 
 
-### create_job
+### create\_job
 
 Creates a new job definition.
 
-Type annotations for `boto3.client("glue").create_job` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_job)
 
-Boto3 documentation:
-[Glue.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_job)
+```python title="Method definition"
+def create_job(
+    self,
+    *,
+    Name: str,
+    Role: str,
+    Command: JobCommandTypeDef,  # (1)
+    Description: str = ...,
+    LogUri: str = ...,
+    ExecutionProperty: ExecutionPropertyTypeDef = ...,  # (2)
+    DefaultArguments: Mapping[str, str] = ...,
+    NonOverridableArguments: Mapping[str, str] = ...,
+    Connections: ConnectionsListTypeDef = ...,  # (3)
+    MaxRetries: int = ...,
+    AllocatedCapacity: int = ...,
+    Timeout: int = ...,
+    MaxCapacity: float = ...,
+    SecurityConfiguration: str = ...,
+    Tags: Mapping[str, str] = ...,
+    NotificationProperty: NotificationPropertyTypeDef = ...,  # (4)
+    GlueVersion: str = ...,
+    NumberOfWorkers: int = ...,
+    WorkerType: WorkerTypeType = ...,  # (5)
+) -> CreateJobResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
+1. See [:material-code-braces: JobCommandTypeDef](./type_defs.md#jobcommandtypedef) 
+2. See [:material-code-braces: ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef) 
+3. See [:material-code-braces: ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef) 
+4. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
+5. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+6. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Role`: `str` *(required)*
-- `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef) *(required)*
-- `Description`: `str`
-- `LogUri`: `str`
-- `ExecutionProperty`:
-  [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
-- `DefaultArguments`: `Mapping`\[`str`, `str`\]
-- `NonOverridableArguments`: `Mapping`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
-- `MaxRetries`: `int`
-- `AllocatedCapacity`: `int`
-- `Timeout`: `int`
-- `MaxCapacity`: `float`
-- `SecurityConfiguration`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `NotificationProperty`:
-  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
-- `GlueVersion`: `str`
-- `NumberOfWorkers`: `int`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
+```python title="Usage example with kwargs"
+kwargs: CreateJobRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Role": ...,
+    "Command": ...,
+}
 
-Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+parent.create_job(**kwargs)
+```
 
-<a id="create\_ml\_transform"></a>
+1. See [:material-code-braces: CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef) 
 
-### create_ml_transform
+### create\_ml\_transform
 
 Creates an Glue machine learning transform.
 
-Type annotations for `boto3.client("glue").create_ml_transform` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_ml_transform` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_ml_transform)
 
-Boto3 documentation:
-[Glue.Client.create_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_ml_transform)
+```python title="Method definition"
+def create_ml_transform(
+    self,
+    *,
+    Name: str,
+    InputRecordTables: Sequence[GlueTableTypeDef],  # (1)
+    Parameters: TransformParametersTypeDef,  # (2)
+    Role: str,
+    Description: str = ...,
+    GlueVersion: str = ...,
+    MaxCapacity: float = ...,
+    WorkerType: WorkerTypeType = ...,  # (3)
+    NumberOfWorkers: int = ...,
+    Timeout: int = ...,
+    MaxRetries: int = ...,
+    Tags: Mapping[str, str] = ...,
+    TransformEncryption: TransformEncryptionTypeDef = ...,  # (4)
+) -> CreateMLTransformResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateMLTransformRequestRequestTypeDef](./type_defs.md#createmltransformrequestrequesttypedef).
+1. See [:material-code-braces: GlueTableTypeDef](./type_defs.md#gluetabletypedef) 
+2. See [:material-code-braces: TransformParametersTypeDef](./type_defs.md#transformparameterstypedef) 
+3. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+4. See [:material-code-braces: TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef) 
+5. See [:material-code-braces: CreateMLTransformResponseTypeDef](./type_defs.md#createmltransformresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `InputRecordTables`:
-  `Sequence`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
-  *(required)*
-- `Parameters`:
-  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
-  *(required)*
-- `Role`: `str` *(required)*
-- `Description`: `str`
-- `GlueVersion`: `str`
-- `MaxCapacity`: `float`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-- `Timeout`: `int`
-- `MaxRetries`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `TransformEncryption`:
-  [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateMLTransformRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "InputRecordTables": ...,
+    "Parameters": ...,
+    "Role": ...,
+}
 
-Returns
-[CreateMLTransformResponseTypeDef](./type_defs.md#createmltransformresponsetypedef).
+parent.create_ml_transform(**kwargs)
+```
 
-<a id="create\_partition"></a>
+1. See [:material-code-braces: CreateMLTransformRequestRequestTypeDef](./type_defs.md#createmltransformrequestrequesttypedef) 
 
-### create_partition
+### create\_partition
 
 Creates a new partition.
 
-Type annotations for `boto3.client("glue").create_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition)
 
-Boto3 documentation:
-[Glue.Client.create_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition)
+```python title="Method definition"
+def create_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionInput: PartitionInputTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreatePartitionRequestRequestTypeDef](./type_defs.md#createpartitionrequestrequesttypedef).
+1. See [:material-code-braces: PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionInput`:
-  [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_partition(**kwargs)
+```
 
-<a id="create\_partition\_index"></a>
+1. See [:material-code-braces: CreatePartitionRequestRequestTypeDef](./type_defs.md#createpartitionrequestrequesttypedef) 
 
-### create_partition_index
+### create\_partition\_index
 
 Creates a specified partition index in an existing table.
 
-Type annotations for `boto3.client("glue").create_partition_index` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_partition_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition_index)
 
-Boto3 documentation:
-[Glue.Client.create_partition_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_partition_index)
+```python title="Method definition"
+def create_partition_index(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionIndex: PartitionIndexTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreatePartitionIndexRequestRequestTypeDef](./type_defs.md#createpartitionindexrequestrequesttypedef).
+1. See [:material-code-braces: PartitionIndexTypeDef](./type_defs.md#partitionindextypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionIndex`:
-  [PartitionIndexTypeDef](./type_defs.md#partitionindextypedef) *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePartitionIndexRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionIndex": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_partition_index(**kwargs)
+```
 
-<a id="create\_registry"></a>
+1. See [:material-code-braces: CreatePartitionIndexRequestRequestTypeDef](./type_defs.md#createpartitionindexrequestrequesttypedef) 
 
-### create_registry
+### create\_registry
 
 Creates a new registry which may be used to hold a collection of schemas.
 
-Type annotations for `boto3.client("glue").create_registry` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_registry` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_registry)
 
-Boto3 documentation:
-[Glue.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_registry)
+```python title="Method definition"
+def create_registry(
+    self,
+    *,
+    RegistryName: str,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateRegistryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRegistryInputRequestTypeDef](./type_defs.md#createregistryinputrequesttypedef).
+1. See [:material-code-braces: CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRegistryInputRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+}
 
-Returns
-[CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
+parent.create_registry(**kwargs)
+```
 
-<a id="create\_schema"></a>
+1. See [:material-code-braces: CreateRegistryInputRequestTypeDef](./type_defs.md#createregistryinputrequesttypedef) 
 
-### create_schema
+### create\_schema
 
 Creates a new schema set and registers the schema definition.
 
-Type annotations for `boto3.client("glue").create_schema` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_schema)
 
-Boto3 documentation:
-[Glue.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_schema)
+```python title="Method definition"
+def create_schema(
+    self,
+    *,
+    SchemaName: str,
+    DataFormat: DataFormatType,  # (1)
+    RegistryId: RegistryIdTypeDef = ...,  # (2)
+    Compatibility: CompatibilityType = ...,  # (3)
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+    SchemaDefinition: str = ...,
+) -> CreateSchemaResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateSchemaInputRequestTypeDef](./type_defs.md#createschemainputrequesttypedef).
+1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
+2. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
+3. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
+4. See [:material-code-braces: CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaName`: `str` *(required)*
-- `DataFormat`: [DataFormatType](./literals.md#dataformattype) *(required)*
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-- `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `SchemaDefinition`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateSchemaInputRequestTypeDef = {  # (1)
+    "SchemaName": ...,
+    "DataFormat": ...,
+}
 
-Returns
-[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
+parent.create_schema(**kwargs)
+```
 
-<a id="create\_script"></a>
+1. See [:material-code-braces: CreateSchemaInputRequestTypeDef](./type_defs.md#createschemainputrequesttypedef) 
 
-### create_script
+### create\_script
 
 Transforms a directed acyclic graph (DAG) into code.
 
-Type annotations for `boto3.client("glue").create_script` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_script` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_script)
 
-Boto3 documentation:
-[Glue.Client.create_script](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_script)
+```python title="Method definition"
+def create_script(
+    self,
+    *,
+    DagNodes: Sequence[CodeGenNodeTypeDef] = ...,  # (1)
+    DagEdges: Sequence[CodeGenEdgeTypeDef] = ...,  # (2)
+    Language: LanguageType = ...,  # (3)
+) -> CreateScriptResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateScriptRequestRequestTypeDef](./type_defs.md#createscriptrequestrequesttypedef).
+1. See [:material-code-braces: CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef) 
+2. See [:material-code-braces: CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef) 
+3. See [:material-code-brackets: LanguageType](./literals.md#languagetype) 
+4. See [:material-code-braces: CreateScriptResponseTypeDef](./type_defs.md#createscriptresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DagNodes`:
-  `Sequence`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
-- `DagEdges`:
-  `Sequence`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
-- `Language`: [LanguageType](./literals.md#languagetype)
+```python title="Usage example with kwargs"
+kwargs: CreateScriptRequestRequestTypeDef = {  # (1)
+    "DagNodes": ...,
+}
 
-Returns
-[CreateScriptResponseTypeDef](./type_defs.md#createscriptresponsetypedef).
+parent.create_script(**kwargs)
+```
 
-<a id="create\_security\_configuration"></a>
+1. See [:material-code-braces: CreateScriptRequestRequestTypeDef](./type_defs.md#createscriptrequestrequesttypedef) 
 
-### create_security_configuration
+### create\_security\_configuration
 
 Creates a new security configuration.
 
-Type annotations for `boto3.client("glue").create_security_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").create_security_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_security_configuration)
 
-Boto3 documentation:
-[Glue.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_security_configuration)
+```python title="Method definition"
+def create_security_configuration(
+    self,
+    *,
+    Name: str,
+    EncryptionConfiguration: EncryptionConfigurationTypeDef,  # (1)
+) -> CreateSecurityConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSecurityConfigurationRequestRequestTypeDef](./type_defs.md#createsecurityconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+2. See [:material-code-braces: CreateSecurityConfigurationResponseTypeDef](./type_defs.md#createsecurityconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateSecurityConfigurationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "EncryptionConfiguration": ...,
+}
 
-Returns
-[CreateSecurityConfigurationResponseTypeDef](./type_defs.md#createsecurityconfigurationresponsetypedef).
+parent.create_security_configuration(**kwargs)
+```
 
-<a id="create\_session"></a>
+1. See [:material-code-braces: CreateSecurityConfigurationRequestRequestTypeDef](./type_defs.md#createsecurityconfigurationrequestrequesttypedef) 
 
-### create_session
+### create\_session
 
 Creates a new session.
 
-Type annotations for `boto3.client("glue").create_session` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_session)
 
-Boto3 documentation:
-[Glue.Client.create_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_session)
+```python title="Method definition"
+def create_session(
+    self,
+    *,
+    Id: str,
+    Role: str,
+    Command: SessionCommandTypeDef,  # (1)
+    Description: str = ...,
+    Timeout: int = ...,
+    IdleTimeout: int = ...,
+    DefaultArguments: Mapping[str, str] = ...,
+    Connections: ConnectionsListTypeDef = ...,  # (2)
+    MaxCapacity: float = ...,
+    NumberOfWorkers: int = ...,
+    WorkerType: WorkerTypeType = ...,  # (3)
+    SecurityConfiguration: str = ...,
+    GlueVersion: str = ...,
+    Tags: Mapping[str, str] = ...,
+    RequestOrigin: str = ...,
+) -> CreateSessionResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateSessionRequestRequestTypeDef](./type_defs.md#createsessionrequestrequesttypedef).
+1. See [:material-code-braces: SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef) 
+2. See [:material-code-braces: ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef) 
+3. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+4. See [:material-code-braces: CreateSessionResponseTypeDef](./type_defs.md#createsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Role`: `str` *(required)*
-- `Command`: [SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef)
-  *(required)*
-- `Description`: `str`
-- `Timeout`: `int`
-- `IdleTimeout`: `int`
-- `DefaultArguments`: `Mapping`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
-- `MaxCapacity`: `float`
-- `NumberOfWorkers`: `int`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `SecurityConfiguration`: `str`
-- `GlueVersion`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `RequestOrigin`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateSessionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Role": ...,
+    "Command": ...,
+}
 
-Returns
-[CreateSessionResponseTypeDef](./type_defs.md#createsessionresponsetypedef).
+parent.create_session(**kwargs)
+```
 
-<a id="create\_table"></a>
+1. See [:material-code-braces: CreateSessionRequestRequestTypeDef](./type_defs.md#createsessionrequestrequesttypedef) 
 
-### create_table
+### create\_table
 
 Creates a new table definition in the Data Catalog.
 
-Type annotations for `boto3.client("glue").create_table` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_table)
 
-Boto3 documentation:
-[Glue.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_table)
+```python title="Method definition"
+def create_table(
+    self,
+    *,
+    DatabaseName: str,
+    TableInput: TableInputTypeDef,  # (1)
+    CatalogId: str = ...,
+    PartitionIndexes: Sequence[PartitionIndexTypeDef] = ...,  # (2)
+    TransactionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateTableRequestRequestTypeDef](./type_defs.md#createtablerequestrequesttypedef).
+1. See [:material-code-braces: TableInputTypeDef](./type_defs.md#tableinputtypedef) 
+2. See [:material-code-braces: PartitionIndexTypeDef](./type_defs.md#partitionindextypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableInput`: [TableInputTypeDef](./type_defs.md#tableinputtypedef)
-  *(required)*
-- `CatalogId`: `str`
-- `PartitionIndexes`:
-  `Sequence`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
-- `TransactionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_table(**kwargs)
+```
 
-<a id="create\_trigger"></a>
+1. See [:material-code-braces: CreateTableRequestRequestTypeDef](./type_defs.md#createtablerequestrequesttypedef) 
 
-### create_trigger
+### create\_trigger
 
 Creates a new trigger.
 
-Type annotations for `boto3.client("glue").create_trigger` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_trigger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_trigger)
 
-Boto3 documentation:
-[Glue.Client.create_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_trigger)
+```python title="Method definition"
+def create_trigger(
+    self,
+    *,
+    Name: str,
+    Type: TriggerTypeType,  # (1)
+    Actions: Sequence[ActionTypeDef],  # (2)
+    WorkflowName: str = ...,
+    Schedule: str = ...,
+    Predicate: PredicateTypeDef = ...,  # (3)
+    Description: str = ...,
+    StartOnCreation: bool = ...,
+    Tags: Mapping[str, str] = ...,
+    EventBatchingCondition: EventBatchingConditionTypeDef = ...,  # (4)
+) -> CreateTriggerResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateTriggerRequestRequestTypeDef](./type_defs.md#createtriggerrequestrequesttypedef).
+1. See [:material-code-brackets: TriggerTypeType](./literals.md#triggertypetype) 
+2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+3. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
+4. See [:material-code-braces: EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef) 
+5. See [:material-code-braces: CreateTriggerResponseTypeDef](./type_defs.md#createtriggerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Type`: [TriggerTypeType](./literals.md#triggertypetype) *(required)*
-- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-  *(required)*
-- `WorkflowName`: `str`
-- `Schedule`: `str`
-- `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
-- `Description`: `str`
-- `StartOnCreation`: `bool`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `EventBatchingCondition`:
-  [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateTriggerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Type": ...,
+    "Actions": ...,
+}
 
-Returns
-[CreateTriggerResponseTypeDef](./type_defs.md#createtriggerresponsetypedef).
+parent.create_trigger(**kwargs)
+```
 
-<a id="create\_user\_defined\_function"></a>
+1. See [:material-code-braces: CreateTriggerRequestRequestTypeDef](./type_defs.md#createtriggerrequestrequesttypedef) 
 
-### create_user_defined_function
+### create\_user\_defined\_function
 
 Creates a new function definition in the Data Catalog.
 
-Type annotations for `boto3.client("glue").create_user_defined_function`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").create_user_defined_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_user_defined_function)
 
-Boto3 documentation:
-[Glue.Client.create_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_user_defined_function)
+```python title="Method definition"
+def create_user_defined_function(
+    self,
+    *,
+    DatabaseName: str,
+    FunctionInput: UserDefinedFunctionInputTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#createuserdefinedfunctionrequestrequesttypedef).
+1. See [:material-code-braces: UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `FunctionInput`:
-  [UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef)
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateUserDefinedFunctionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "FunctionInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_user_defined_function(**kwargs)
+```
 
-<a id="create\_workflow"></a>
+1. See [:material-code-braces: CreateUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#createuserdefinedfunctionrequestrequesttypedef) 
 
-### create_workflow
+### create\_workflow
 
 Creates a new workflow.
 
-Type annotations for `boto3.client("glue").create_workflow` method.
+Type annotations and code completion for `#!python boto3.client("glue").create_workflow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_workflow)
 
-Boto3 documentation:
-[Glue.Client.create_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_workflow)
+```python title="Method definition"
+def create_workflow(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    DefaultRunProperties: Mapping[str, str] = ...,
+    Tags: Mapping[str, str] = ...,
+    MaxConcurrentRuns: int = ...,
+) -> CreateWorkflowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkflowRequestRequestTypeDef](./type_defs.md#createworkflowrequestrequesttypedef).
+1. See [:material-code-braces: CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `MaxConcurrentRuns`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateWorkflowRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateWorkflowResponseTypeDef](./type_defs.md#createworkflowresponsetypedef).
+parent.create_workflow(**kwargs)
+```
 
-<a id="delete\_blueprint"></a>
+1. See [:material-code-braces: CreateWorkflowRequestRequestTypeDef](./type_defs.md#createworkflowrequestrequesttypedef) 
 
-### delete_blueprint
+### delete\_blueprint
 
 Deletes an existing blueprint.
 
-Type annotations for `boto3.client("glue").delete_blueprint` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_blueprint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_blueprint)
 
-Boto3 documentation:
-[Glue.Client.delete_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_blueprint)
+```python title="Method definition"
+def delete_blueprint(
+    self,
+    *,
+    Name: str,
+) -> DeleteBlueprintResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBlueprintRequestRequestTypeDef](./type_defs.md#deleteblueprintrequestrequesttypedef).
+1. See [:material-code-braces: DeleteBlueprintResponseTypeDef](./type_defs.md#deleteblueprintresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBlueprintRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteBlueprintResponseTypeDef](./type_defs.md#deleteblueprintresponsetypedef).
+parent.delete_blueprint(**kwargs)
+```
 
-<a id="delete\_classifier"></a>
+1. See [:material-code-braces: DeleteBlueprintRequestRequestTypeDef](./type_defs.md#deleteblueprintrequestrequesttypedef) 
 
-### delete_classifier
+### delete\_classifier
 
 Removes a classifier from the Data Catalog.
 
-Type annotations for `boto3.client("glue").delete_classifier` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_classifier` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_classifier)
 
-Boto3 documentation:
-[Glue.Client.delete_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_classifier)
+```python title="Method definition"
+def delete_classifier(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteClassifierRequestRequestTypeDef](./type_defs.md#deleteclassifierrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteClassifierRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_classifier(**kwargs)
+```
 
-<a id="delete\_column\_statistics\_for\_partition"></a>
+1. See [:material-code-braces: DeleteClassifierRequestRequestTypeDef](./type_defs.md#deleteclassifierrequestrequesttypedef) 
 
-### delete_column_statistics_for_partition
+### delete\_column\_statistics\_for\_partition
 
 Delete the partition column statistics of a column.
 
-Type annotations for
-`boto3.client("glue").delete_column_statistics_for_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_column_statistics_for_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition)
 
-Boto3 documentation:
-[Glue.Client.delete_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_partition)
+```python title="Method definition"
+def delete_column_statistics_for_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    ColumnName: str,
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#deletecolumnstatisticsforpartitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionValues`: `Sequence`\[`str`\] *(required)*
-- `ColumnName`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteColumnStatisticsForPartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionValues": ...,
+    "ColumnName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_column_statistics_for_partition(**kwargs)
+```
 
-<a id="delete\_column\_statistics\_for\_table"></a>
+1. See [:material-code-braces: DeleteColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#deletecolumnstatisticsforpartitionrequestrequesttypedef) 
 
-### delete_column_statistics_for_table
+### delete\_column\_statistics\_for\_table
 
 Retrieves table statistics of columns.
 
-Type annotations for `boto3.client("glue").delete_column_statistics_for_table`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_column_statistics_for_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table)
 
-Boto3 documentation:
-[Glue.Client.delete_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_column_statistics_for_table)
+```python title="Method definition"
+def delete_column_statistics_for_table(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    ColumnName: str,
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteColumnStatisticsForTableRequestRequestTypeDef](./type_defs.md#deletecolumnstatisticsfortablerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `ColumnName`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteColumnStatisticsForTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "ColumnName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_column_statistics_for_table(**kwargs)
+```
 
-<a id="delete\_connection"></a>
+1. See [:material-code-braces: DeleteColumnStatisticsForTableRequestRequestTypeDef](./type_defs.md#deletecolumnstatisticsfortablerequestrequesttypedef) 
 
-### delete_connection
+### delete\_connection
 
 Deletes a connection from the Data Catalog.
 
-Type annotations for `boto3.client("glue").delete_connection` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_connection)
 
-Boto3 documentation:
-[Glue.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_connection)
+```python title="Method definition"
+def delete_connection(
+    self,
+    *,
+    ConnectionName: str,
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConnectionName`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectionRequestRequestTypeDef = {  # (1)
+    "ConnectionName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_connection(**kwargs)
+```
 
-<a id="delete\_crawler"></a>
+1. See [:material-code-braces: DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef) 
 
-### delete_crawler
+### delete\_crawler
 
-Removes a specified crawler from the Glue Data Catalog, unless the crawler
-state is `RUNNING` .
+Removes a specified crawler from the Glue Data Catalog, unless the crawler state
+is `RUNNING` .
 
-Type annotations for `boto3.client("glue").delete_crawler` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_crawler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_crawler)
 
-Boto3 documentation:
-[Glue.Client.delete_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_crawler)
+```python title="Method definition"
+def delete_crawler(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCrawlerRequestRequestTypeDef](./type_defs.md#deletecrawlerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCrawlerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_crawler(**kwargs)
+```
 
-<a id="delete\_database"></a>
+1. See [:material-code-braces: DeleteCrawlerRequestRequestTypeDef](./type_defs.md#deletecrawlerrequestrequesttypedef) 
 
-### delete_database
+### delete\_database
 
 Removes a specified database from a Data Catalog.
 
-Type annotations for `boto3.client("glue").delete_database` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_database` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_database)
 
-Boto3 documentation:
-[Glue.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_database)
+```python title="Method definition"
+def delete_database(
+    self,
+    *,
+    Name: str,
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatabaseRequestRequestTypeDef](./type_defs.md#deletedatabaserequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDatabaseRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_database(**kwargs)
+```
 
-<a id="delete\_dev\_endpoint"></a>
+1. See [:material-code-braces: DeleteDatabaseRequestRequestTypeDef](./type_defs.md#deletedatabaserequestrequesttypedef) 
 
-### delete_dev_endpoint
+### delete\_dev\_endpoint
 
 Deletes a specified development endpoint.
 
-Type annotations for `boto3.client("glue").delete_dev_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_dev_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_dev_endpoint)
 
-Boto3 documentation:
-[Glue.Client.delete_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_dev_endpoint)
+```python title="Method definition"
+def delete_dev_endpoint(
+    self,
+    *,
+    EndpointName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDevEndpointRequestRequestTypeDef](./type_defs.md#deletedevendpointrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EndpointName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDevEndpointRequestRequestTypeDef = {  # (1)
+    "EndpointName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_dev_endpoint(**kwargs)
+```
 
-<a id="delete\_job"></a>
+1. See [:material-code-braces: DeleteDevEndpointRequestRequestTypeDef](./type_defs.md#deletedevendpointrequestrequesttypedef) 
 
-### delete_job
+### delete\_job
 
 Deletes a specified job definition.
 
-Type annotations for `boto3.client("glue").delete_job` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_job)
 
-Boto3 documentation:
-[Glue.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_job)
+```python title="Method definition"
+def delete_job(
+    self,
+    *,
+    JobName: str,
+) -> DeleteJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef).
+1. See [:material-code-braces: DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteJobRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
 
-Returns [DeleteJobResponseTypeDef](./type_defs.md#deletejobresponsetypedef).
+parent.delete_job(**kwargs)
+```
 
-<a id="delete\_ml\_transform"></a>
+1. See [:material-code-braces: DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef) 
 
-### delete_ml_transform
+### delete\_ml\_transform
 
 Deletes an Glue machine learning transform.
 
-Type annotations for `boto3.client("glue").delete_ml_transform` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_ml_transform` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_ml_transform)
 
-Boto3 documentation:
-[Glue.Client.delete_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_ml_transform)
+```python title="Method definition"
+def delete_ml_transform(
+    self,
+    *,
+    TransformId: str,
+) -> DeleteMLTransformResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMLTransformRequestRequestTypeDef](./type_defs.md#deletemltransformrequestrequesttypedef).
+1. See [:material-code-braces: DeleteMLTransformResponseTypeDef](./type_defs.md#deletemltransformresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMLTransformRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+}
 
-Returns
-[DeleteMLTransformResponseTypeDef](./type_defs.md#deletemltransformresponsetypedef).
+parent.delete_ml_transform(**kwargs)
+```
 
-<a id="delete\_partition"></a>
+1. See [:material-code-braces: DeleteMLTransformRequestRequestTypeDef](./type_defs.md#deletemltransformrequestrequesttypedef) 
 
-### delete_partition
+### delete\_partition
 
 Deletes a specified partition.
 
-Type annotations for `boto3.client("glue").delete_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition)
 
-Boto3 documentation:
-[Glue.Client.delete_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition)
+```python title="Method definition"
+def delete_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePartitionRequestRequestTypeDef](./type_defs.md#deletepartitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionValues`: `Sequence`\[`str`\] *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionValues": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_partition(**kwargs)
+```
 
-<a id="delete\_partition\_index"></a>
+1. See [:material-code-braces: DeletePartitionRequestRequestTypeDef](./type_defs.md#deletepartitionrequestrequesttypedef) 
 
-### delete_partition_index
+### delete\_partition\_index
 
 Deletes a specified partition index from an existing table.
 
-Type annotations for `boto3.client("glue").delete_partition_index` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_partition_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition_index)
 
-Boto3 documentation:
-[Glue.Client.delete_partition_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_partition_index)
+```python title="Method definition"
+def delete_partition_index(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    IndexName: str,
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePartitionIndexRequestRequestTypeDef](./type_defs.md#deletepartitionindexrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `IndexName`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePartitionIndexRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "IndexName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_partition_index(**kwargs)
+```
 
-<a id="delete\_registry"></a>
+1. See [:material-code-braces: DeletePartitionIndexRequestRequestTypeDef](./type_defs.md#deletepartitionindexrequestrequesttypedef) 
 
-### delete_registry
+### delete\_registry
 
 Delete the entire registry including schema and all of its versions.
 
-Type annotations for `boto3.client("glue").delete_registry` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_registry` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_registry)
 
-Boto3 documentation:
-[Glue.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_registry)
+```python title="Method definition"
+def delete_registry(
+    self,
+    *,
+    RegistryId: RegistryIdTypeDef,  # (1)
+) -> DeleteRegistryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRegistryInputRequestTypeDef](./type_defs.md#deleteregistryinputrequesttypedef).
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
+2. See [:material-code-braces: DeleteRegistryResponseTypeDef](./type_defs.md#deleteregistryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRegistryInputRequestTypeDef = {  # (1)
+    "RegistryId": ...,
+}
 
-Returns
-[DeleteRegistryResponseTypeDef](./type_defs.md#deleteregistryresponsetypedef).
+parent.delete_registry(**kwargs)
+```
 
-<a id="delete\_resource\_policy"></a>
+1. See [:material-code-braces: DeleteRegistryInputRequestTypeDef](./type_defs.md#deleteregistryinputrequesttypedef) 
 
-### delete_resource_policy
+### delete\_resource\_policy
 
 Deletes a specified policy.
 
-Type annotations for `boto3.client("glue").delete_resource_policy` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_resource_policy)
 
-Boto3 documentation:
-[Glue.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_resource_policy)
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+    *,
+    PolicyHashCondition: str = ...,
+    ResourceArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyHashCondition`: `str`
-- `ResourceArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyHashCondition": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_resource_policy(**kwargs)
+```
 
-<a id="delete\_schema"></a>
+1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
 
-### delete_schema
+### delete\_schema
 
-Deletes the entire schema set, including the schema set and all of its
-versions.
+Deletes the entire schema set, including the schema set and all of its versions.
 
-Type annotations for `boto3.client("glue").delete_schema` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema)
 
-Boto3 documentation:
-[Glue.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema)
+```python title="Method definition"
+def delete_schema(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef,  # (1)
+) -> DeleteSchemaResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSchemaInputRequestTypeDef](./type_defs.md#deleteschemainputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSchemaInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+}
 
-Returns
-[DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef).
+parent.delete_schema(**kwargs)
+```
 
-<a id="delete\_schema\_versions"></a>
+1. See [:material-code-braces: DeleteSchemaInputRequestTypeDef](./type_defs.md#deleteschemainputrequesttypedef) 
 
-### delete_schema_versions
+### delete\_schema\_versions
 
 Remove versions from the specified schema.
 
-Type annotations for `boto3.client("glue").delete_schema_versions` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_schema_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema_versions)
 
-Boto3 documentation:
-[Glue.Client.delete_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_schema_versions)
+```python title="Method definition"
+def delete_schema_versions(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef,  # (1)
+    Versions: str,
+) -> DeleteSchemaVersionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSchemaVersionsInputRequestTypeDef](./type_defs.md#deleteschemaversionsinputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: DeleteSchemaVersionsResponseTypeDef](./type_defs.md#deleteschemaversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
-- `Versions`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSchemaVersionsInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+    "Versions": ...,
+}
 
-Returns
-[DeleteSchemaVersionsResponseTypeDef](./type_defs.md#deleteschemaversionsresponsetypedef).
+parent.delete_schema_versions(**kwargs)
+```
 
-<a id="delete\_security\_configuration"></a>
+1. See [:material-code-braces: DeleteSchemaVersionsInputRequestTypeDef](./type_defs.md#deleteschemaversionsinputrequesttypedef) 
 
-### delete_security_configuration
+### delete\_security\_configuration
 
 Deletes a specified security configuration.
 
-Type annotations for `boto3.client("glue").delete_security_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_security_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_security_configuration)
 
-Boto3 documentation:
-[Glue.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_security_configuration)
+```python title="Method definition"
+def delete_security_configuration(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSecurityConfigurationRequestRequestTypeDef](./type_defs.md#deletesecurityconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSecurityConfigurationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_security_configuration(**kwargs)
+```
 
-<a id="delete\_session"></a>
+1. See [:material-code-braces: DeleteSecurityConfigurationRequestRequestTypeDef](./type_defs.md#deletesecurityconfigurationrequestrequesttypedef) 
 
-### delete_session
+### delete\_session
 
 Deletes the session.
 
-Type annotations for `boto3.client("glue").delete_session` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_session)
 
-Boto3 documentation:
-[Glue.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_session)
+```python title="Method definition"
+def delete_session(
+    self,
+    *,
+    Id: str,
+    RequestOrigin: str = ...,
+) -> DeleteSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSessionRequestRequestTypeDef](./type_defs.md#deletesessionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `RequestOrigin`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSessionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
+parent.delete_session(**kwargs)
+```
 
-<a id="delete\_table"></a>
+1. See [:material-code-braces: DeleteSessionRequestRequestTypeDef](./type_defs.md#deletesessionrequestrequesttypedef) 
 
-### delete_table
+### delete\_table
 
 Removes a table definition from the Data Catalog.
 
-Type annotations for `boto3.client("glue").delete_table` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table)
 
-Boto3 documentation:
-[Glue.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table)
+```python title="Method definition"
+def delete_table(
+    self,
+    *,
+    DatabaseName: str,
+    Name: str,
+    CatalogId: str = ...,
+    TransactionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTableRequestRequestTypeDef](./type_defs.md#deletetablerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `CatalogId`: `str`
-- `TransactionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_table(**kwargs)
+```
 
-<a id="delete\_table\_version"></a>
+1. See [:material-code-braces: DeleteTableRequestRequestTypeDef](./type_defs.md#deletetablerequestrequesttypedef) 
 
-### delete_table_version
+### delete\_table\_version
 
 Deletes a specified version of a table.
 
-Type annotations for `boto3.client("glue").delete_table_version` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_table_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table_version)
 
-Boto3 documentation:
-[Glue.Client.delete_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_table_version)
+```python title="Method definition"
+def delete_table_version(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    VersionId: str,
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTableVersionRequestRequestTypeDef](./type_defs.md#deletetableversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `VersionId`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteTableVersionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "VersionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_table_version(**kwargs)
+```
 
-<a id="delete\_trigger"></a>
+1. See [:material-code-braces: DeleteTableVersionRequestRequestTypeDef](./type_defs.md#deletetableversionrequestrequesttypedef) 
 
-### delete_trigger
+### delete\_trigger
 
 Deletes a specified trigger.
 
-Type annotations for `boto3.client("glue").delete_trigger` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_trigger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_trigger)
 
-Boto3 documentation:
-[Glue.Client.delete_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_trigger)
+```python title="Method definition"
+def delete_trigger(
+    self,
+    *,
+    Name: str,
+) -> DeleteTriggerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTriggerRequestRequestTypeDef](./type_defs.md#deletetriggerrequestrequesttypedef).
+1. See [:material-code-braces: DeleteTriggerResponseTypeDef](./type_defs.md#deletetriggerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTriggerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteTriggerResponseTypeDef](./type_defs.md#deletetriggerresponsetypedef).
+parent.delete_trigger(**kwargs)
+```
 
-<a id="delete\_user\_defined\_function"></a>
+1. See [:material-code-braces: DeleteTriggerRequestRequestTypeDef](./type_defs.md#deletetriggerrequestrequesttypedef) 
 
-### delete_user_defined_function
+### delete\_user\_defined\_function
 
 Deletes an existing function definition from the Data Catalog.
 
-Type annotations for `boto3.client("glue").delete_user_defined_function`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_user_defined_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_user_defined_function)
 
-Boto3 documentation:
-[Glue.Client.delete_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_user_defined_function)
+```python title="Method definition"
+def delete_user_defined_function(
+    self,
+    *,
+    DatabaseName: str,
+    FunctionName: str,
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#deleteuserdefinedfunctionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `FunctionName`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteUserDefinedFunctionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "FunctionName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_user_defined_function(**kwargs)
+```
 
-<a id="delete\_workflow"></a>
+1. See [:material-code-braces: DeleteUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#deleteuserdefinedfunctionrequestrequesttypedef) 
 
-### delete_workflow
+### delete\_workflow
 
 Deletes a workflow.
 
-Type annotations for `boto3.client("glue").delete_workflow` method.
+Type annotations and code completion for `#!python boto3.client("glue").delete_workflow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_workflow)
 
-Boto3 documentation:
-[Glue.Client.delete_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_workflow)
+```python title="Method definition"
+def delete_workflow(
+    self,
+    *,
+    Name: str,
+) -> DeleteWorkflowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkflowRequestRequestTypeDef](./type_defs.md#deleteworkflowrequestrequesttypedef).
+1. See [:material-code-braces: DeleteWorkflowResponseTypeDef](./type_defs.md#deleteworkflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkflowRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteWorkflowResponseTypeDef](./type_defs.md#deleteworkflowresponsetypedef).
+parent.delete_workflow(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteWorkflowRequestRequestTypeDef](./type_defs.md#deleteworkflowrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("glue").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("glue").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Glue.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_blueprint"></a>
-
-### get_blueprint
+### get\_blueprint
 
 Retrieves the details of a blueprint.
 
-Type annotations for `boto3.client("glue").get_blueprint` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_blueprint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint)
 
-Boto3 documentation:
-[Glue.Client.get_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint)
+```python title="Method definition"
+def get_blueprint(
+    self,
+    *,
+    Name: str,
+    IncludeBlueprint: bool = ...,
+    IncludeParameterSpec: bool = ...,
+) -> GetBlueprintResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBlueprintRequestRequestTypeDef](./type_defs.md#getblueprintrequestrequesttypedef).
+1. See [:material-code-braces: GetBlueprintResponseTypeDef](./type_defs.md#getblueprintresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IncludeBlueprint`: `bool`
-- `IncludeParameterSpec`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetBlueprintRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetBlueprintResponseTypeDef](./type_defs.md#getblueprintresponsetypedef).
+parent.get_blueprint(**kwargs)
+```
 
-<a id="get\_blueprint\_run"></a>
+1. See [:material-code-braces: GetBlueprintRequestRequestTypeDef](./type_defs.md#getblueprintrequestrequesttypedef) 
 
-### get_blueprint_run
+### get\_blueprint\_run
 
 Retrieves the details of a blueprint run.
 
-Type annotations for `boto3.client("glue").get_blueprint_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_blueprint_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint_run)
 
-Boto3 documentation:
-[Glue.Client.get_blueprint_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint_run)
+```python title="Method definition"
+def get_blueprint_run(
+    self,
+    *,
+    BlueprintName: str,
+    RunId: str,
+) -> GetBlueprintRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBlueprintRunRequestRequestTypeDef](./type_defs.md#getblueprintrunrequestrequesttypedef).
+1. See [:material-code-braces: GetBlueprintRunResponseTypeDef](./type_defs.md#getblueprintrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BlueprintName`: `str` *(required)*
-- `RunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBlueprintRunRequestRequestTypeDef = {  # (1)
+    "BlueprintName": ...,
+    "RunId": ...,
+}
 
-Returns
-[GetBlueprintRunResponseTypeDef](./type_defs.md#getblueprintrunresponsetypedef).
+parent.get_blueprint_run(**kwargs)
+```
 
-<a id="get\_blueprint\_runs"></a>
+1. See [:material-code-braces: GetBlueprintRunRequestRequestTypeDef](./type_defs.md#getblueprintrunrequestrequesttypedef) 
 
-### get_blueprint_runs
+### get\_blueprint\_runs
 
 Retrieves the details of blueprint runs for a specified blueprint.
 
-Type annotations for `boto3.client("glue").get_blueprint_runs` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_blueprint_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint_runs)
 
-Boto3 documentation:
-[Glue.Client.get_blueprint_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_blueprint_runs)
+```python title="Method definition"
+def get_blueprint_runs(
+    self,
+    *,
+    BlueprintName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetBlueprintRunsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBlueprintRunsRequestRequestTypeDef](./type_defs.md#getblueprintrunsrequestrequesttypedef).
+1. See [:material-code-braces: GetBlueprintRunsResponseTypeDef](./type_defs.md#getblueprintrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BlueprintName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetBlueprintRunsRequestRequestTypeDef = {  # (1)
+    "BlueprintName": ...,
+}
 
-Returns
-[GetBlueprintRunsResponseTypeDef](./type_defs.md#getblueprintrunsresponsetypedef).
+parent.get_blueprint_runs(**kwargs)
+```
 
-<a id="get\_catalog\_import\_status"></a>
+1. See [:material-code-braces: GetBlueprintRunsRequestRequestTypeDef](./type_defs.md#getblueprintrunsrequestrequesttypedef) 
 
-### get_catalog_import_status
+### get\_catalog\_import\_status
 
 Retrieves the status of a migration operation.
 
-Type annotations for `boto3.client("glue").get_catalog_import_status` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_catalog_import_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_catalog_import_status)
 
-Boto3 documentation:
-[Glue.Client.get_catalog_import_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_catalog_import_status)
+```python title="Method definition"
+def get_catalog_import_status(
+    self,
+    *,
+    CatalogId: str = ...,
+) -> GetCatalogImportStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCatalogImportStatusRequestRequestTypeDef](./type_defs.md#getcatalogimportstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetCatalogImportStatusResponseTypeDef](./type_defs.md#getcatalogimportstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCatalogImportStatusRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns
-[GetCatalogImportStatusResponseTypeDef](./type_defs.md#getcatalogimportstatusresponsetypedef).
+parent.get_catalog_import_status(**kwargs)
+```
 
-<a id="get\_classifier"></a>
+1. See [:material-code-braces: GetCatalogImportStatusRequestRequestTypeDef](./type_defs.md#getcatalogimportstatusrequestrequesttypedef) 
 
-### get_classifier
+### get\_classifier
 
 Retrieve a classifier by name.
 
-Type annotations for `boto3.client("glue").get_classifier` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_classifier` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifier)
 
-Boto3 documentation:
-[Glue.Client.get_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifier)
+```python title="Method definition"
+def get_classifier(
+    self,
+    *,
+    Name: str,
+) -> GetClassifierResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetClassifierRequestRequestTypeDef](./type_defs.md#getclassifierrequestrequesttypedef).
+1. See [:material-code-braces: GetClassifierResponseTypeDef](./type_defs.md#getclassifierresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetClassifierRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetClassifierResponseTypeDef](./type_defs.md#getclassifierresponsetypedef).
+parent.get_classifier(**kwargs)
+```
 
-<a id="get\_classifiers"></a>
+1. See [:material-code-braces: GetClassifierRequestRequestTypeDef](./type_defs.md#getclassifierrequestrequesttypedef) 
 
-### get_classifiers
+### get\_classifiers
 
 Lists all classifier objects in the Data Catalog.
 
-Type annotations for `boto3.client("glue").get_classifiers` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_classifiers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifiers)
 
-Boto3 documentation:
-[Glue.Client.get_classifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_classifiers)
+```python title="Method definition"
+def get_classifiers(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetClassifiersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetClassifiersRequestRequestTypeDef](./type_defs.md#getclassifiersrequestrequesttypedef).
+1. See [:material-code-braces: GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetClassifiersRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[GetClassifiersResponseTypeDef](./type_defs.md#getclassifiersresponsetypedef).
+parent.get_classifiers(**kwargs)
+```
 
-<a id="get\_column\_statistics\_for\_partition"></a>
+1. See [:material-code-braces: GetClassifiersRequestRequestTypeDef](./type_defs.md#getclassifiersrequestrequesttypedef) 
 
-### get_column_statistics_for_partition
+### get\_column\_statistics\_for\_partition
 
 Retrieves partition statistics of columns.
 
-Type annotations for `boto3.client("glue").get_column_statistics_for_partition`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").get_column_statistics_for_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition)
 
-Boto3 documentation:
-[Glue.Client.get_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_partition)
+```python title="Method definition"
+def get_column_statistics_for_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    ColumnNames: Sequence[str],
+    CatalogId: str = ...,
+) -> GetColumnStatisticsForPartitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#getcolumnstatisticsforpartitionrequestrequesttypedef).
+1. See [:material-code-braces: GetColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#getcolumnstatisticsforpartitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionValues`: `Sequence`\[`str`\] *(required)*
-- `ColumnNames`: `Sequence`\[`str`\] *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetColumnStatisticsForPartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionValues": ...,
+    "ColumnNames": ...,
+}
 
-Returns
-[GetColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#getcolumnstatisticsforpartitionresponsetypedef).
+parent.get_column_statistics_for_partition(**kwargs)
+```
 
-<a id="get\_column\_statistics\_for\_table"></a>
+1. See [:material-code-braces: GetColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#getcolumnstatisticsforpartitionrequestrequesttypedef) 
 
-### get_column_statistics_for_table
+### get\_column\_statistics\_for\_table
 
 Retrieves table statistics of columns.
 
-Type annotations for `boto3.client("glue").get_column_statistics_for_table`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").get_column_statistics_for_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_table)
 
-Boto3 documentation:
-[Glue.Client.get_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_column_statistics_for_table)
+```python title="Method definition"
+def get_column_statistics_for_table(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    ColumnNames: Sequence[str],
+    CatalogId: str = ...,
+) -> GetColumnStatisticsForTableResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetColumnStatisticsForTableRequestRequestTypeDef](./type_defs.md#getcolumnstatisticsfortablerequestrequesttypedef).
+1. See [:material-code-braces: GetColumnStatisticsForTableResponseTypeDef](./type_defs.md#getcolumnstatisticsfortableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `ColumnNames`: `Sequence`\[`str`\] *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetColumnStatisticsForTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "ColumnNames": ...,
+}
 
-Returns
-[GetColumnStatisticsForTableResponseTypeDef](./type_defs.md#getcolumnstatisticsfortableresponsetypedef).
+parent.get_column_statistics_for_table(**kwargs)
+```
 
-<a id="get\_connection"></a>
+1. See [:material-code-braces: GetColumnStatisticsForTableRequestRequestTypeDef](./type_defs.md#getcolumnstatisticsfortablerequestrequesttypedef) 
 
-### get_connection
+### get\_connection
 
 Retrieves a connection definition from the Data Catalog.
 
-Type annotations for `boto3.client("glue").get_connection` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connection)
 
-Boto3 documentation:
-[Glue.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connection)
+```python title="Method definition"
+def get_connection(
+    self,
+    *,
+    Name: str,
+    CatalogId: str = ...,
+    HidePassword: bool = ...,
+) -> GetConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectionRequestRequestTypeDef](./type_defs.md#getconnectionrequestrequesttypedef).
+1. See [:material-code-braces: GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `CatalogId`: `str`
-- `HidePassword`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetConnectionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef).
+parent.get_connection(**kwargs)
+```
 
-<a id="get\_connections"></a>
+1. See [:material-code-braces: GetConnectionRequestRequestTypeDef](./type_defs.md#getconnectionrequestrequesttypedef) 
 
-### get_connections
+### get\_connections
 
 Retrieves a list of connection definitions from the Data Catalog.
 
-Type annotations for `boto3.client("glue").get_connections` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connections)
 
-Boto3 documentation:
-[Glue.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_connections)
+```python title="Method definition"
+def get_connections(
+    self,
+    *,
+    CatalogId: str = ...,
+    Filter: GetConnectionsFilterTypeDef = ...,  # (1)
+    HidePassword: bool = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetConnectionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectionsRequestRequestTypeDef](./type_defs.md#getconnectionsrequestrequesttypedef).
+1. See [:material-code-braces: GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef) 
+2. See [:material-code-braces: GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
-- `Filter`:
-  [GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef)
-- `HidePassword`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetConnectionsRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns
-[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef).
+parent.get_connections(**kwargs)
+```
 
-<a id="get\_crawler"></a>
+1. See [:material-code-braces: GetConnectionsRequestRequestTypeDef](./type_defs.md#getconnectionsrequestrequesttypedef) 
 
-### get_crawler
+### get\_crawler
 
 Retrieves metadata for a specified crawler.
 
-Type annotations for `boto3.client("glue").get_crawler` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_crawler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler)
 
-Boto3 documentation:
-[Glue.Client.get_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler)
+```python title="Method definition"
+def get_crawler(
+    self,
+    *,
+    Name: str,
+) -> GetCrawlerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCrawlerRequestRequestTypeDef](./type_defs.md#getcrawlerrequestrequesttypedef).
+1. See [:material-code-braces: GetCrawlerResponseTypeDef](./type_defs.md#getcrawlerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCrawlerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [GetCrawlerResponseTypeDef](./type_defs.md#getcrawlerresponsetypedef).
+parent.get_crawler(**kwargs)
+```
 
-<a id="get\_crawler\_metrics"></a>
+1. See [:material-code-braces: GetCrawlerRequestRequestTypeDef](./type_defs.md#getcrawlerrequestrequesttypedef) 
 
-### get_crawler_metrics
+### get\_crawler\_metrics
 
 Retrieves metrics about specified crawlers.
 
-Type annotations for `boto3.client("glue").get_crawler_metrics` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_crawler_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler_metrics)
 
-Boto3 documentation:
-[Glue.Client.get_crawler_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawler_metrics)
+```python title="Method definition"
+def get_crawler_metrics(
+    self,
+    *,
+    CrawlerNameList: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetCrawlerMetricsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCrawlerMetricsRequestRequestTypeDef](./type_defs.md#getcrawlermetricsrequestrequesttypedef).
+1. See [:material-code-braces: GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CrawlerNameList`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCrawlerMetricsRequestRequestTypeDef = {  # (1)
+    "CrawlerNameList": ...,
+}
 
-Returns
-[GetCrawlerMetricsResponseTypeDef](./type_defs.md#getcrawlermetricsresponsetypedef).
+parent.get_crawler_metrics(**kwargs)
+```
 
-<a id="get\_crawlers"></a>
+1. See [:material-code-braces: GetCrawlerMetricsRequestRequestTypeDef](./type_defs.md#getcrawlermetricsrequestrequesttypedef) 
 
-### get_crawlers
+### get\_crawlers
 
 Retrieves metadata for all crawlers defined in the customer account.
 
-Type annotations for `boto3.client("glue").get_crawlers` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_crawlers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawlers)
 
-Boto3 documentation:
-[Glue.Client.get_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_crawlers)
+```python title="Method definition"
+def get_crawlers(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetCrawlersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCrawlersRequestRequestTypeDef](./type_defs.md#getcrawlersrequestrequesttypedef).
+1. See [:material-code-braces: GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCrawlersRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[GetCrawlersResponseTypeDef](./type_defs.md#getcrawlersresponsetypedef).
+parent.get_crawlers(**kwargs)
+```
 
-<a id="get\_data\_catalog\_encryption\_settings"></a>
+1. See [:material-code-braces: GetCrawlersRequestRequestTypeDef](./type_defs.md#getcrawlersrequestrequesttypedef) 
 
-### get_data_catalog_encryption_settings
+### get\_data\_catalog\_encryption\_settings
 
 Retrieves the security configuration for a specified catalog.
 
-Type annotations for
-`boto3.client("glue").get_data_catalog_encryption_settings` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_data_catalog_encryption_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_catalog_encryption_settings)
 
-Boto3 documentation:
-[Glue.Client.get_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_data_catalog_encryption_settings)
+```python title="Method definition"
+def get_data_catalog_encryption_settings(
+    self,
+    *,
+    CatalogId: str = ...,
+) -> GetDataCatalogEncryptionSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataCatalogEncryptionSettingsRequestRequestTypeDef](./type_defs.md#getdatacatalogencryptionsettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetDataCatalogEncryptionSettingsResponseTypeDef](./type_defs.md#getdatacatalogencryptionsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDataCatalogEncryptionSettingsRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns
-[GetDataCatalogEncryptionSettingsResponseTypeDef](./type_defs.md#getdatacatalogencryptionsettingsresponsetypedef).
+parent.get_data_catalog_encryption_settings(**kwargs)
+```
 
-<a id="get\_database"></a>
+1. See [:material-code-braces: GetDataCatalogEncryptionSettingsRequestRequestTypeDef](./type_defs.md#getdatacatalogencryptionsettingsrequestrequesttypedef) 
 
-### get_database
+### get\_database
 
 Retrieves the definition of a specified database.
 
-Type annotations for `boto3.client("glue").get_database` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_database` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_database)
 
-Boto3 documentation:
-[Glue.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_database)
+```python title="Method definition"
+def get_database(
+    self,
+    *,
+    Name: str,
+    CatalogId: str = ...,
+) -> GetDatabaseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDatabaseRequestRequestTypeDef](./type_defs.md#getdatabaserequestrequesttypedef).
+1. See [:material-code-braces: GetDatabaseResponseTypeDef](./type_defs.md#getdatabaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDatabaseRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetDatabaseResponseTypeDef](./type_defs.md#getdatabaseresponsetypedef).
+parent.get_database(**kwargs)
+```
 
-<a id="get\_databases"></a>
+1. See [:material-code-braces: GetDatabaseRequestRequestTypeDef](./type_defs.md#getdatabaserequestrequesttypedef) 
 
-### get_databases
+### get\_databases
 
 Retrieves all databases defined in a given Data Catalog.
 
-Type annotations for `boto3.client("glue").get_databases` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_databases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_databases)
 
-Boto3 documentation:
-[Glue.Client.get_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_databases)
+```python title="Method definition"
+def get_databases(
+    self,
+    *,
+    CatalogId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ResourceShareType: ResourceShareTypeType = ...,  # (1)
+) -> GetDatabasesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetDatabasesRequestRequestTypeDef](./type_defs.md#getdatabasesrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceShareTypeType](./literals.md#resourcesharetypetype) 
+2. See [:material-code-braces: GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ResourceShareType`:
-  [ResourceShareTypeType](./literals.md#resourcesharetypetype)
+```python title="Usage example with kwargs"
+kwargs: GetDatabasesRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns
-[GetDatabasesResponseTypeDef](./type_defs.md#getdatabasesresponsetypedef).
+parent.get_databases(**kwargs)
+```
 
-<a id="get\_dataflow\_graph"></a>
+1. See [:material-code-braces: GetDatabasesRequestRequestTypeDef](./type_defs.md#getdatabasesrequestrequesttypedef) 
 
-### get_dataflow_graph
+### get\_dataflow\_graph
 
 Transforms a Python script into a directed acyclic graph (DAG).
 
-Type annotations for `boto3.client("glue").get_dataflow_graph` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_dataflow_graph` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dataflow_graph)
 
-Boto3 documentation:
-[Glue.Client.get_dataflow_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dataflow_graph)
+```python title="Method definition"
+def get_dataflow_graph(
+    self,
+    *,
+    PythonScript: str = ...,
+) -> GetDataflowGraphResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataflowGraphRequestRequestTypeDef](./type_defs.md#getdataflowgraphrequestrequesttypedef).
+1. See [:material-code-braces: GetDataflowGraphResponseTypeDef](./type_defs.md#getdataflowgraphresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PythonScript`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDataflowGraphRequestRequestTypeDef = {  # (1)
+    "PythonScript": ...,
+}
 
-Returns
-[GetDataflowGraphResponseTypeDef](./type_defs.md#getdataflowgraphresponsetypedef).
+parent.get_dataflow_graph(**kwargs)
+```
 
-<a id="get\_dev\_endpoint"></a>
+1. See [:material-code-braces: GetDataflowGraphRequestRequestTypeDef](./type_defs.md#getdataflowgraphrequestrequesttypedef) 
 
-### get_dev_endpoint
+### get\_dev\_endpoint
 
 Retrieves information about a specified development endpoint.
 
-Type annotations for `boto3.client("glue").get_dev_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_dev_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoint)
 
-Boto3 documentation:
-[Glue.Client.get_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoint)
+```python title="Method definition"
+def get_dev_endpoint(
+    self,
+    *,
+    EndpointName: str,
+) -> GetDevEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDevEndpointRequestRequestTypeDef](./type_defs.md#getdevendpointrequestrequesttypedef).
+1. See [:material-code-braces: GetDevEndpointResponseTypeDef](./type_defs.md#getdevendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDevEndpointRequestRequestTypeDef = {  # (1)
+    "EndpointName": ...,
+}
 
-Returns
-[GetDevEndpointResponseTypeDef](./type_defs.md#getdevendpointresponsetypedef).
+parent.get_dev_endpoint(**kwargs)
+```
 
-<a id="get\_dev\_endpoints"></a>
+1. See [:material-code-braces: GetDevEndpointRequestRequestTypeDef](./type_defs.md#getdevendpointrequestrequesttypedef) 
 
-### get_dev_endpoints
+### get\_dev\_endpoints
 
 Retrieves all the development endpoints in this AWS account.
 
-Type annotations for `boto3.client("glue").get_dev_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_dev_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoints)
 
-Boto3 documentation:
-[Glue.Client.get_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_dev_endpoints)
+```python title="Method definition"
+def get_dev_endpoints(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetDevEndpointsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDevEndpointsRequestRequestTypeDef](./type_defs.md#getdevendpointsrequestrequesttypedef).
+1. See [:material-code-braces: GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDevEndpointsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[GetDevEndpointsResponseTypeDef](./type_defs.md#getdevendpointsresponsetypedef).
+parent.get_dev_endpoints(**kwargs)
+```
 
-<a id="get\_job"></a>
+1. See [:material-code-braces: GetDevEndpointsRequestRequestTypeDef](./type_defs.md#getdevendpointsrequestrequesttypedef) 
 
-### get_job
+### get\_job
 
 Retrieves an existing job definition.
 
-Type annotations for `boto3.client("glue").get_job` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job)
 
-Boto3 documentation:
-[Glue.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job)
+```python title="Method definition"
+def get_job(
+    self,
+    *,
+    JobName: str,
+) -> GetJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef).
+1. See [:material-code-braces: GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
 
-Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
+parent.get_job(**kwargs)
+```
 
-<a id="get\_job\_bookmark"></a>
+1. See [:material-code-braces: GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef) 
 
-### get_job_bookmark
+### get\_job\_bookmark
 
 Returns information on a job bookmark entry.
 
-Type annotations for `boto3.client("glue").get_job_bookmark` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_job_bookmark` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_bookmark)
 
-Boto3 documentation:
-[Glue.Client.get_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_bookmark)
+```python title="Method definition"
+def get_job_bookmark(
+    self,
+    *,
+    JobName: str,
+    RunId: str = ...,
+) -> GetJobBookmarkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobBookmarkRequestRequestTypeDef](./type_defs.md#getjobbookmarkrequestrequesttypedef).
+1. See [:material-code-braces: GetJobBookmarkResponseTypeDef](./type_defs.md#getjobbookmarkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
-- `RunId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetJobBookmarkRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
 
-Returns
-[GetJobBookmarkResponseTypeDef](./type_defs.md#getjobbookmarkresponsetypedef).
+parent.get_job_bookmark(**kwargs)
+```
 
-<a id="get\_job\_run"></a>
+1. See [:material-code-braces: GetJobBookmarkRequestRequestTypeDef](./type_defs.md#getjobbookmarkrequestrequesttypedef) 
 
-### get_job_run
+### get\_job\_run
 
 Retrieves the metadata for a given job run.
 
-Type annotations for `boto3.client("glue").get_job_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_run)
 
-Boto3 documentation:
-[Glue.Client.get_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_run)
+```python title="Method definition"
+def get_job_run(
+    self,
+    *,
+    JobName: str,
+    RunId: str,
+    PredecessorsIncluded: bool = ...,
+) -> GetJobRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobRunRequestRequestTypeDef](./type_defs.md#getjobrunrequestrequesttypedef).
+1. See [:material-code-braces: GetJobRunResponseTypeDef](./type_defs.md#getjobrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
-- `RunId`: `str` *(required)*
-- `PredecessorsIncluded`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetJobRunRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+    "RunId": ...,
+}
 
-Returns [GetJobRunResponseTypeDef](./type_defs.md#getjobrunresponsetypedef).
+parent.get_job_run(**kwargs)
+```
 
-<a id="get\_job\_runs"></a>
+1. See [:material-code-braces: GetJobRunRequestRequestTypeDef](./type_defs.md#getjobrunrequestrequesttypedef) 
 
-### get_job_runs
+### get\_job\_runs
 
 Retrieves metadata for all runs of a given job definition.
 
-Type annotations for `boto3.client("glue").get_job_runs` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_job_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_runs)
 
-Boto3 documentation:
-[Glue.Client.get_job_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_job_runs)
+```python title="Method definition"
+def get_job_runs(
+    self,
+    *,
+    JobName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetJobRunsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobRunsRequestRequestTypeDef](./type_defs.md#getjobrunsrequestrequesttypedef).
+1. See [:material-code-braces: GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetJobRunsRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
 
-Returns [GetJobRunsResponseTypeDef](./type_defs.md#getjobrunsresponsetypedef).
+parent.get_job_runs(**kwargs)
+```
 
-<a id="get\_jobs"></a>
+1. See [:material-code-braces: GetJobRunsRequestRequestTypeDef](./type_defs.md#getjobrunsrequestrequesttypedef) 
 
-### get_jobs
+### get\_jobs
 
 Retrieves all current job definitions.
 
-Type annotations for `boto3.client("glue").get_jobs` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_jobs)
 
-Boto3 documentation:
-[Glue.Client.get_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_jobs)
+```python title="Method definition"
+def get_jobs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobsRequestRequestTypeDef](./type_defs.md#getjobsrequestrequesttypedef).
+1. See [:material-code-braces: GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetJobsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [GetJobsResponseTypeDef](./type_defs.md#getjobsresponsetypedef).
+parent.get_jobs(**kwargs)
+```
 
-<a id="get\_mapping"></a>
+1. See [:material-code-braces: GetJobsRequestRequestTypeDef](./type_defs.md#getjobsrequestrequesttypedef) 
 
-### get_mapping
+### get\_mapping
 
 Creates mappings.
 
-Type annotations for `boto3.client("glue").get_mapping` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_mapping)
 
-Boto3 documentation:
-[Glue.Client.get_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_mapping)
+```python title="Method definition"
+def get_mapping(
+    self,
+    *,
+    Source: CatalogEntryTypeDef,  # (1)
+    Sinks: Sequence[CatalogEntryTypeDef] = ...,  # (2)
+    Location: LocationTypeDef = ...,  # (3)
+) -> GetMappingResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetMappingRequestRequestTypeDef](./type_defs.md#getmappingrequestrequesttypedef).
+1. See [:material-code-braces: CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef) 
+2. See [:material-code-braces: CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef) 
+3. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+4. See [:material-code-braces: GetMappingResponseTypeDef](./type_defs.md#getmappingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
-  *(required)*
-- `Sinks`:
-  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
-- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
+```python title="Usage example with kwargs"
+kwargs: GetMappingRequestRequestTypeDef = {  # (1)
+    "Source": ...,
+}
 
-Returns [GetMappingResponseTypeDef](./type_defs.md#getmappingresponsetypedef).
+parent.get_mapping(**kwargs)
+```
 
-<a id="get\_ml\_task\_run"></a>
+1. See [:material-code-braces: GetMappingRequestRequestTypeDef](./type_defs.md#getmappingrequestrequesttypedef) 
 
-### get_ml_task_run
+### get\_ml\_task\_run
 
 Gets details for a specific task run on a machine learning transform.
 
-Type annotations for `boto3.client("glue").get_ml_task_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_ml_task_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_run)
 
-Boto3 documentation:
-[Glue.Client.get_ml_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_run)
+```python title="Method definition"
+def get_ml_task_run(
+    self,
+    *,
+    TransformId: str,
+    TaskRunId: str,
+) -> GetMLTaskRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMLTaskRunRequestRequestTypeDef](./type_defs.md#getmltaskrunrequestrequesttypedef).
+1. See [:material-code-braces: GetMLTaskRunResponseTypeDef](./type_defs.md#getmltaskrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
-- `TaskRunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMLTaskRunRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+    "TaskRunId": ...,
+}
 
-Returns
-[GetMLTaskRunResponseTypeDef](./type_defs.md#getmltaskrunresponsetypedef).
+parent.get_ml_task_run(**kwargs)
+```
 
-<a id="get\_ml\_task\_runs"></a>
+1. See [:material-code-braces: GetMLTaskRunRequestRequestTypeDef](./type_defs.md#getmltaskrunrequestrequesttypedef) 
 
-### get_ml_task_runs
+### get\_ml\_task\_runs
 
 Gets a list of runs for a machine learning transform.
 
-Type annotations for `boto3.client("glue").get_ml_task_runs` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_ml_task_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_runs)
 
-Boto3 documentation:
-[Glue.Client.get_ml_task_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_task_runs)
+```python title="Method definition"
+def get_ml_task_runs(
+    self,
+    *,
+    TransformId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filter: TaskRunFilterCriteriaTypeDef = ...,  # (1)
+    Sort: TaskRunSortCriteriaTypeDef = ...,  # (2)
+) -> GetMLTaskRunsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetMLTaskRunsRequestRequestTypeDef](./type_defs.md#getmltaskrunsrequestrequesttypedef).
+1. See [:material-code-braces: TaskRunFilterCriteriaTypeDef](./type_defs.md#taskrunfiltercriteriatypedef) 
+2. See [:material-code-braces: TaskRunSortCriteriaTypeDef](./type_defs.md#taskrunsortcriteriatypedef) 
+3. See [:material-code-braces: GetMLTaskRunsResponseTypeDef](./type_defs.md#getmltaskrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filter`:
-  [TaskRunFilterCriteriaTypeDef](./type_defs.md#taskrunfiltercriteriatypedef)
-- `Sort`:
-  [TaskRunSortCriteriaTypeDef](./type_defs.md#taskrunsortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: GetMLTaskRunsRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+}
 
-Returns
-[GetMLTaskRunsResponseTypeDef](./type_defs.md#getmltaskrunsresponsetypedef).
+parent.get_ml_task_runs(**kwargs)
+```
 
-<a id="get\_ml\_transform"></a>
+1. See [:material-code-braces: GetMLTaskRunsRequestRequestTypeDef](./type_defs.md#getmltaskrunsrequestrequesttypedef) 
 
-### get_ml_transform
+### get\_ml\_transform
 
 Gets an Glue machine learning transform artifact and all its corresponding
 metadata.
 
-Type annotations for `boto3.client("glue").get_ml_transform` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_ml_transform` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transform)
 
-Boto3 documentation:
-[Glue.Client.get_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transform)
+```python title="Method definition"
+def get_ml_transform(
+    self,
+    *,
+    TransformId: str,
+) -> GetMLTransformResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMLTransformRequestRequestTypeDef](./type_defs.md#getmltransformrequestrequesttypedef).
+1. See [:material-code-braces: GetMLTransformResponseTypeDef](./type_defs.md#getmltransformresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMLTransformRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+}
 
-Returns
-[GetMLTransformResponseTypeDef](./type_defs.md#getmltransformresponsetypedef).
+parent.get_ml_transform(**kwargs)
+```
 
-<a id="get\_ml\_transforms"></a>
+1. See [:material-code-braces: GetMLTransformRequestRequestTypeDef](./type_defs.md#getmltransformrequestrequesttypedef) 
 
-### get_ml_transforms
+### get\_ml\_transforms
 
 Gets a sortable, filterable list of existing Glue machine learning transforms.
 
-Type annotations for `boto3.client("glue").get_ml_transforms` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_ml_transforms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transforms)
 
-Boto3 documentation:
-[Glue.Client.get_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_ml_transforms)
+```python title="Method definition"
+def get_ml_transforms(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filter: TransformFilterCriteriaTypeDef = ...,  # (1)
+    Sort: TransformSortCriteriaTypeDef = ...,  # (2)
+) -> GetMLTransformsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetMLTransformsRequestRequestTypeDef](./type_defs.md#getmltransformsrequestrequesttypedef).
+1. See [:material-code-braces: TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef) 
+2. See [:material-code-braces: TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef) 
+3. See [:material-code-braces: GetMLTransformsResponseTypeDef](./type_defs.md#getmltransformsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filter`:
-  [TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef)
-- `Sort`:
-  [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: GetMLTransformsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[GetMLTransformsResponseTypeDef](./type_defs.md#getmltransformsresponsetypedef).
+parent.get_ml_transforms(**kwargs)
+```
 
-<a id="get\_partition"></a>
+1. See [:material-code-braces: GetMLTransformsRequestRequestTypeDef](./type_defs.md#getmltransformsrequestrequesttypedef) 
 
-### get_partition
+### get\_partition
 
 Retrieves information about a specified partition.
 
-Type annotations for `boto3.client("glue").get_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition)
 
-Boto3 documentation:
-[Glue.Client.get_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition)
+```python title="Method definition"
+def get_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    CatalogId: str = ...,
+) -> GetPartitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPartitionRequestRequestTypeDef](./type_defs.md#getpartitionrequestrequesttypedef).
+1. See [:material-code-braces: GetPartitionResponseTypeDef](./type_defs.md#getpartitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionValues`: `Sequence`\[`str`\] *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionValues": ...,
+}
 
-Returns
-[GetPartitionResponseTypeDef](./type_defs.md#getpartitionresponsetypedef).
+parent.get_partition(**kwargs)
+```
 
-<a id="get\_partition\_indexes"></a>
+1. See [:material-code-braces: GetPartitionRequestRequestTypeDef](./type_defs.md#getpartitionrequestrequesttypedef) 
 
-### get_partition_indexes
+### get\_partition\_indexes
 
 Retrieves the partition indexes associated with a table.
 
-Type annotations for `boto3.client("glue").get_partition_indexes` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_partition_indexes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition_indexes)
 
-Boto3 documentation:
-[Glue.Client.get_partition_indexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partition_indexes)
+```python title="Method definition"
+def get_partition_indexes(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: str = ...,
+    NextToken: str = ...,
+) -> GetPartitionIndexesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPartitionIndexesRequestRequestTypeDef](./type_defs.md#getpartitionindexesrequestrequesttypedef).
+1. See [:material-code-braces: GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `CatalogId`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPartitionIndexesRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[GetPartitionIndexesResponseTypeDef](./type_defs.md#getpartitionindexesresponsetypedef).
+parent.get_partition_indexes(**kwargs)
+```
 
-<a id="get\_partitions"></a>
+1. See [:material-code-braces: GetPartitionIndexesRequestRequestTypeDef](./type_defs.md#getpartitionindexesrequestrequesttypedef) 
 
-### get_partitions
+### get\_partitions
 
 Retrieves information about the partitions in a table.
 
-Type annotations for `boto3.client("glue").get_partitions` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_partitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partitions)
 
-Boto3 documentation:
-[Glue.Client.get_partitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_partitions)
+```python title="Method definition"
+def get_partitions(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: str = ...,
+    Expression: str = ...,
+    NextToken: str = ...,
+    Segment: SegmentTypeDef = ...,  # (1)
+    MaxResults: int = ...,
+    ExcludeColumnSchema: bool = ...,
+    TransactionId: str = ...,
+    QueryAsOfTime: Union[datetime, str] = ...,
+) -> GetPartitionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetPartitionsRequestRequestTypeDef](./type_defs.md#getpartitionsrequestrequesttypedef).
+1. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
+2. See [:material-code-braces: GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `CatalogId`: `str`
-- `Expression`: `str`
-- `NextToken`: `str`
-- `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
-- `MaxResults`: `int`
-- `ExcludeColumnSchema`: `bool`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetPartitionsRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[GetPartitionsResponseTypeDef](./type_defs.md#getpartitionsresponsetypedef).
+parent.get_partitions(**kwargs)
+```
 
-<a id="get\_plan"></a>
+1. See [:material-code-braces: GetPartitionsRequestRequestTypeDef](./type_defs.md#getpartitionsrequestrequesttypedef) 
 
-### get_plan
+### get\_plan
 
 Gets code to perform a specified mapping.
 
-Type annotations for `boto3.client("glue").get_plan` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_plan)
 
-Boto3 documentation:
-[Glue.Client.get_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_plan)
+```python title="Method definition"
+def get_plan(
+    self,
+    *,
+    Mapping: Sequence[MappingEntryTypeDef],  # (1)
+    Source: CatalogEntryTypeDef,  # (2)
+    Sinks: Sequence[CatalogEntryTypeDef] = ...,  # (3)
+    Location: LocationTypeDef = ...,  # (4)
+    Language: LanguageType = ...,  # (5)
+    AdditionalPlanOptionsMap: Mapping[str, str] = ...,
+) -> GetPlanResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[GetPlanRequestRequestTypeDef](./type_defs.md#getplanrequestrequesttypedef).
+1. See [:material-code-braces: MappingEntryTypeDef](./type_defs.md#mappingentrytypedef) 
+2. See [:material-code-braces: CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef) 
+3. See [:material-code-braces: CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef) 
+4. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+5. See [:material-code-brackets: LanguageType](./literals.md#languagetype) 
+6. See [:material-code-braces: GetPlanResponseTypeDef](./type_defs.md#getplanresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Mapping`:
-  `Sequence`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
-  *(required)*
-- `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
-  *(required)*
-- `Sinks`:
-  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
-- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `Language`: [LanguageType](./literals.md#languagetype)
-- `AdditionalPlanOptionsMap`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetPlanRequestRequestTypeDef = {  # (1)
+    "Mapping": ...,
+    "Source": ...,
+}
 
-Returns [GetPlanResponseTypeDef](./type_defs.md#getplanresponsetypedef).
+parent.get_plan(**kwargs)
+```
 
-<a id="get\_registry"></a>
+1. See [:material-code-braces: GetPlanRequestRequestTypeDef](./type_defs.md#getplanrequestrequesttypedef) 
 
-### get_registry
+### get\_registry
 
 Describes the specified registry in detail.
 
-Type annotations for `boto3.client("glue").get_registry` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_registry` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_registry)
 
-Boto3 documentation:
-[Glue.Client.get_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_registry)
+```python title="Method definition"
+def get_registry(
+    self,
+    *,
+    RegistryId: RegistryIdTypeDef,  # (1)
+) -> GetRegistryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetRegistryInputRequestTypeDef](./type_defs.md#getregistryinputrequesttypedef).
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
+2. See [:material-code-braces: GetRegistryResponseTypeDef](./type_defs.md#getregistryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRegistryInputRequestTypeDef = {  # (1)
+    "RegistryId": ...,
+}
 
-Returns
-[GetRegistryResponseTypeDef](./type_defs.md#getregistryresponsetypedef).
+parent.get_registry(**kwargs)
+```
 
-<a id="get\_resource\_policies"></a>
+1. See [:material-code-braces: GetRegistryInputRequestTypeDef](./type_defs.md#getregistryinputrequesttypedef) 
 
-### get_resource_policies
+### get\_resource\_policies
 
 Retrieves the resource policies set on individual resources by Resource Access
 Manager during cross-account permission grants.
 
-Type annotations for `boto3.client("glue").get_resource_policies` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_resource_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policies)
 
-Boto3 documentation:
-[Glue.Client.get_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policies)
+```python title="Method definition"
+def get_resource_policies(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetResourcePoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourcePoliciesRequestRequestTypeDef](./type_defs.md#getresourcepoliciesrequestrequesttypedef).
+1. See [:material-code-braces: GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetResourcePoliciesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef).
+parent.get_resource_policies(**kwargs)
+```
 
-<a id="get\_resource\_policy"></a>
+1. See [:material-code-braces: GetResourcePoliciesRequestRequestTypeDef](./type_defs.md#getresourcepoliciesrequestrequesttypedef) 
 
-### get_resource_policy
+### get\_resource\_policy
 
 Retrieves a specified resource policy.
 
-Type annotations for `boto3.client("glue").get_resource_policy` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policy)
 
-Boto3 documentation:
-[Glue.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_resource_policy)
+```python title="Method definition"
+def get_resource_policy(
+    self,
+    *,
+    ResourceArn: str = ...,
+) -> GetResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetResourcePolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
+parent.get_resource_policy(**kwargs)
+```
 
-<a id="get\_schema"></a>
+1. See [:material-code-braces: GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef) 
 
-### get_schema
+### get\_schema
 
 Describes the specified schema in detail.
 
-Type annotations for `boto3.client("glue").get_schema` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema)
 
-Boto3 documentation:
-[Glue.Client.get_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema)
+```python title="Method definition"
+def get_schema(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef,  # (1)
+) -> GetSchemaResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetSchemaInputRequestTypeDef](./type_defs.md#getschemainputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: GetSchemaResponseTypeDef](./type_defs.md#getschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSchemaInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+}
 
-Returns [GetSchemaResponseTypeDef](./type_defs.md#getschemaresponsetypedef).
+parent.get_schema(**kwargs)
+```
 
-<a id="get\_schema\_by\_definition"></a>
+1. See [:material-code-braces: GetSchemaInputRequestTypeDef](./type_defs.md#getschemainputrequesttypedef) 
 
-### get_schema_by_definition
+### get\_schema\_by\_definition
 
 Retrieves a schema by the `SchemaDefinition`.
 
-Type annotations for `boto3.client("glue").get_schema_by_definition` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_schema_by_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_by_definition)
 
-Boto3 documentation:
-[Glue.Client.get_schema_by_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_by_definition)
+```python title="Method definition"
+def get_schema_by_definition(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef,  # (1)
+    SchemaDefinition: str,
+) -> GetSchemaByDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetSchemaByDefinitionInputRequestTypeDef](./type_defs.md#getschemabydefinitioninputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: GetSchemaByDefinitionResponseTypeDef](./type_defs.md#getschemabydefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
-- `SchemaDefinition`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSchemaByDefinitionInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+    "SchemaDefinition": ...,
+}
 
-Returns
-[GetSchemaByDefinitionResponseTypeDef](./type_defs.md#getschemabydefinitionresponsetypedef).
+parent.get_schema_by_definition(**kwargs)
+```
 
-<a id="get\_schema\_version"></a>
+1. See [:material-code-braces: GetSchemaByDefinitionInputRequestTypeDef](./type_defs.md#getschemabydefinitioninputrequesttypedef) 
 
-### get_schema_version
+### get\_schema\_version
 
 Get the specified schema by its unique ID assigned when a version of the schema
 is created or registered.
 
-Type annotations for `boto3.client("glue").get_schema_version` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_schema_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_version)
 
-Boto3 documentation:
-[Glue.Client.get_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_version)
+```python title="Method definition"
+def get_schema_version(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef = ...,  # (1)
+    SchemaVersionId: str = ...,
+    SchemaVersionNumber: SchemaVersionNumberTypeDef = ...,  # (2)
+) -> GetSchemaVersionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetSchemaVersionInputRequestTypeDef](./type_defs.md#getschemaversioninputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+3. See [:material-code-braces: GetSchemaVersionResponseTypeDef](./type_defs.md#getschemaversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaVersionId`: `str`
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
+```python title="Usage example with kwargs"
+kwargs: GetSchemaVersionInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+}
 
-Returns
-[GetSchemaVersionResponseTypeDef](./type_defs.md#getschemaversionresponsetypedef).
+parent.get_schema_version(**kwargs)
+```
 
-<a id="get\_schema\_versions\_diff"></a>
+1. See [:material-code-braces: GetSchemaVersionInputRequestTypeDef](./type_defs.md#getschemaversioninputrequesttypedef) 
 
-### get_schema_versions_diff
+### get\_schema\_versions\_diff
 
 Fetches the schema version difference in the specified difference type between
 two stored schema versions in the Schema Registry.
 
-Type annotations for `boto3.client("glue").get_schema_versions_diff` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_schema_versions_diff` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_versions_diff)
 
-Boto3 documentation:
-[Glue.Client.get_schema_versions_diff](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_schema_versions_diff)
+```python title="Method definition"
+def get_schema_versions_diff(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef,  # (1)
+    FirstSchemaVersionNumber: SchemaVersionNumberTypeDef,  # (2)
+    SecondSchemaVersionNumber: SchemaVersionNumberTypeDef,  # (2)
+    SchemaDiffType: SchemaDiffTypeType,  # (4)
+) -> GetSchemaVersionsDiffResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[GetSchemaVersionsDiffInputRequestTypeDef](./type_defs.md#getschemaversionsdiffinputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+3. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+4. See [:material-code-brackets: SchemaDiffTypeType](./literals.md#schemadifftypetype) 
+5. See [:material-code-braces: GetSchemaVersionsDiffResponseTypeDef](./type_defs.md#getschemaversionsdiffresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
-- `FirstSchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-  *(required)*
-- `SecondSchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-  *(required)*
-- `SchemaDiffType`: `Literal['SYNTAX_DIFF']` (see
-  [SchemaDiffTypeType](./literals.md#schemadifftypetype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSchemaVersionsDiffInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+    "FirstSchemaVersionNumber": ...,
+    "SecondSchemaVersionNumber": ...,
+    "SchemaDiffType": ...,
+}
 
-Returns
-[GetSchemaVersionsDiffResponseTypeDef](./type_defs.md#getschemaversionsdiffresponsetypedef).
+parent.get_schema_versions_diff(**kwargs)
+```
 
-<a id="get\_security\_configuration"></a>
+1. See [:material-code-braces: GetSchemaVersionsDiffInputRequestTypeDef](./type_defs.md#getschemaversionsdiffinputrequesttypedef) 
 
-### get_security_configuration
+### get\_security\_configuration
 
 Retrieves a specified security configuration.
 
-Type annotations for `boto3.client("glue").get_security_configuration` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_security_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configuration)
 
-Boto3 documentation:
-[Glue.Client.get_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configuration)
+```python title="Method definition"
+def get_security_configuration(
+    self,
+    *,
+    Name: str,
+) -> GetSecurityConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSecurityConfigurationRequestRequestTypeDef](./type_defs.md#getsecurityconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetSecurityConfigurationResponseTypeDef](./type_defs.md#getsecurityconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSecurityConfigurationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetSecurityConfigurationResponseTypeDef](./type_defs.md#getsecurityconfigurationresponsetypedef).
+parent.get_security_configuration(**kwargs)
+```
 
-<a id="get\_security\_configurations"></a>
+1. See [:material-code-braces: GetSecurityConfigurationRequestRequestTypeDef](./type_defs.md#getsecurityconfigurationrequestrequesttypedef) 
 
-### get_security_configurations
+### get\_security\_configurations
 
 Retrieves a list of all security configurations.
 
-Type annotations for `boto3.client("glue").get_security_configurations` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_security_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configurations)
 
-Boto3 documentation:
-[Glue.Client.get_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_security_configurations)
+```python title="Method definition"
+def get_security_configurations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetSecurityConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSecurityConfigurationsRequestRequestTypeDef](./type_defs.md#getsecurityconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSecurityConfigurationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef).
+parent.get_security_configurations(**kwargs)
+```
 
-<a id="get\_session"></a>
+1. See [:material-code-braces: GetSecurityConfigurationsRequestRequestTypeDef](./type_defs.md#getsecurityconfigurationsrequestrequesttypedef) 
 
-### get_session
+### get\_session
 
 Retrieves the session.
 
-Type annotations for `boto3.client("glue").get_session` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_session)
 
-Boto3 documentation:
-[Glue.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_session)
+```python title="Method definition"
+def get_session(
+    self,
+    *,
+    Id: str,
+    RequestOrigin: str = ...,
+) -> GetSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef).
+1. See [:material-code-braces: GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `RequestOrigin`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSessionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
+parent.get_session(**kwargs)
+```
 
-<a id="get\_statement"></a>
+1. See [:material-code-braces: GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef) 
 
-### get_statement
+### get\_statement
 
 Retrieves the statement.
 
-Type annotations for `boto3.client("glue").get_statement` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_statement)
 
-Boto3 documentation:
-[Glue.Client.get_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_statement)
+```python title="Method definition"
+def get_statement(
+    self,
+    *,
+    SessionId: str,
+    Id: int,
+    RequestOrigin: str = ...,
+) -> GetStatementResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStatementRequestRequestTypeDef](./type_defs.md#getstatementrequestrequesttypedef).
+1. See [:material-code-braces: GetStatementResponseTypeDef](./type_defs.md#getstatementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SessionId`: `str` *(required)*
-- `Id`: `int` *(required)*
-- `RequestOrigin`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetStatementRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+    "Id": ...,
+}
 
-Returns
-[GetStatementResponseTypeDef](./type_defs.md#getstatementresponsetypedef).
+parent.get_statement(**kwargs)
+```
 
-<a id="get\_table"></a>
+1. See [:material-code-braces: GetStatementRequestRequestTypeDef](./type_defs.md#getstatementrequestrequesttypedef) 
 
-### get_table
+### get\_table
 
 Retrieves the `Table` definition in a Data Catalog for a specified table.
 
-Type annotations for `boto3.client("glue").get_table` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table)
 
-Boto3 documentation:
-[Glue.Client.get_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table)
+```python title="Method definition"
+def get_table(
+    self,
+    *,
+    DatabaseName: str,
+    Name: str,
+    CatalogId: str = ...,
+    TransactionId: str = ...,
+    QueryAsOfTime: Union[datetime, str] = ...,
+) -> GetTableResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTableRequestRequestTypeDef](./type_defs.md#gettablerequestrequesttypedef).
+1. See [:material-code-braces: GetTableResponseTypeDef](./type_defs.md#gettableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `CatalogId`: `str`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "Name": ...,
+}
 
-Returns [GetTableResponseTypeDef](./type_defs.md#gettableresponsetypedef).
+parent.get_table(**kwargs)
+```
 
-<a id="get\_table\_version"></a>
+1. See [:material-code-braces: GetTableRequestRequestTypeDef](./type_defs.md#gettablerequestrequesttypedef) 
 
-### get_table_version
+### get\_table\_version
 
 Retrieves a specified version of a table.
 
-Type annotations for `boto3.client("glue").get_table_version` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_table_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_version)
 
-Boto3 documentation:
-[Glue.Client.get_table_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_version)
+```python title="Method definition"
+def get_table_version(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: str = ...,
+    VersionId: str = ...,
+) -> GetTableVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTableVersionRequestRequestTypeDef](./type_defs.md#gettableversionrequestrequesttypedef).
+1. See [:material-code-braces: GetTableVersionResponseTypeDef](./type_defs.md#gettableversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `CatalogId`: `str`
-- `VersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTableVersionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[GetTableVersionResponseTypeDef](./type_defs.md#gettableversionresponsetypedef).
+parent.get_table_version(**kwargs)
+```
 
-<a id="get\_table\_versions"></a>
+1. See [:material-code-braces: GetTableVersionRequestRequestTypeDef](./type_defs.md#gettableversionrequestrequesttypedef) 
 
-### get_table_versions
+### get\_table\_versions
 
 Retrieves a list of strings that identify available versions of a specified
 table.
 
-Type annotations for `boto3.client("glue").get_table_versions` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_table_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_versions)
 
-Boto3 documentation:
-[Glue.Client.get_table_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_table_versions)
+```python title="Method definition"
+def get_table_versions(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetTableVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTableVersionsRequestRequestTypeDef](./type_defs.md#gettableversionsrequestrequesttypedef).
+1. See [:material-code-braces: GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `CatalogId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetTableVersionsRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[GetTableVersionsResponseTypeDef](./type_defs.md#gettableversionsresponsetypedef).
+parent.get_table_versions(**kwargs)
+```
 
-<a id="get\_tables"></a>
+1. See [:material-code-braces: GetTableVersionsRequestRequestTypeDef](./type_defs.md#gettableversionsrequestrequesttypedef) 
 
-### get_tables
+### get\_tables
 
 Retrieves the definitions of some or all of the tables in a given `Database` .
 
-Type annotations for `boto3.client("glue").get_tables` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_tables` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tables)
 
-Boto3 documentation:
-[Glue.Client.get_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tables)
+```python title="Method definition"
+def get_tables(
+    self,
+    *,
+    DatabaseName: str,
+    CatalogId: str = ...,
+    Expression: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    TransactionId: str = ...,
+    QueryAsOfTime: Union[datetime, str] = ...,
+) -> GetTablesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTablesRequestRequestTypeDef](./type_defs.md#gettablesrequestrequesttypedef).
+1. See [:material-code-braces: GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `CatalogId`: `str`
-- `Expression`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetTablesRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+}
 
-Returns [GetTablesResponseTypeDef](./type_defs.md#gettablesresponsetypedef).
+parent.get_tables(**kwargs)
+```
 
-<a id="get\_tags"></a>
+1. See [:material-code-braces: GetTablesRequestRequestTypeDef](./type_defs.md#gettablesrequestrequesttypedef) 
 
-### get_tags
+### get\_tags
 
 Retrieves a list of tags associated with a resource.
 
-Type annotations for `boto3.client("glue").get_tags` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tags)
 
-Boto3 documentation:
-[Glue.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_tags)
+```python title="Method definition"
+def get_tags(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef).
+1. See [:material-code-braces: GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTagsRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
+parent.get_tags(**kwargs)
+```
 
-<a id="get\_trigger"></a>
+1. See [:material-code-braces: GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef) 
 
-### get_trigger
+### get\_trigger
 
 Retrieves the definition of a trigger.
 
-Type annotations for `boto3.client("glue").get_trigger` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_trigger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_trigger)
 
-Boto3 documentation:
-[Glue.Client.get_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_trigger)
+```python title="Method definition"
+def get_trigger(
+    self,
+    *,
+    Name: str,
+) -> GetTriggerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTriggerRequestRequestTypeDef](./type_defs.md#gettriggerrequestrequesttypedef).
+1. See [:material-code-braces: GetTriggerResponseTypeDef](./type_defs.md#gettriggerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTriggerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [GetTriggerResponseTypeDef](./type_defs.md#gettriggerresponsetypedef).
+parent.get_trigger(**kwargs)
+```
 
-<a id="get\_triggers"></a>
+1. See [:material-code-braces: GetTriggerRequestRequestTypeDef](./type_defs.md#gettriggerrequestrequesttypedef) 
 
-### get_triggers
+### get\_triggers
 
 Gets all the triggers associated with a job.
 
-Type annotations for `boto3.client("glue").get_triggers` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_triggers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_triggers)
 
-Boto3 documentation:
-[Glue.Client.get_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_triggers)
+```python title="Method definition"
+def get_triggers(
+    self,
+    *,
+    NextToken: str = ...,
+    DependentJobName: str = ...,
+    MaxResults: int = ...,
+) -> GetTriggersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTriggersRequestRequestTypeDef](./type_defs.md#gettriggersrequestrequesttypedef).
+1. See [:material-code-braces: GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `DependentJobName`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetTriggersRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef).
+parent.get_triggers(**kwargs)
+```
 
-<a id="get\_unfiltered\_partition\_metadata"></a>
+1. See [:material-code-braces: GetTriggersRequestRequestTypeDef](./type_defs.md#gettriggersrequestrequesttypedef) 
 
-### get_unfiltered_partition_metadata
+### get\_unfiltered\_partition\_metadata
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionMetadata).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionMetadata).
 
-Type annotations for `boto3.client("glue").get_unfiltered_partition_metadata`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").get_unfiltered_partition_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_partition_metadata)
 
-Boto3 documentation:
-[Glue.Client.get_unfiltered_partition_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_partition_metadata)
+```python title="Method definition"
+def get_unfiltered_partition_metadata(
+    self,
+    *,
+    CatalogId: str,
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (1)
+    AuditContext: AuditContextTypeDef = ...,  # (2)
+) -> GetUnfilteredPartitionMetadataResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetUnfilteredPartitionMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredpartitionmetadatarequestrequesttypedef).
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
+3. See [:material-code-braces: GetUnfilteredPartitionMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionmetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str` *(required)*
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionValues`: `Sequence`\[`str`\] *(required)*
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-  *(required)*
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+```python title="Usage example with kwargs"
+kwargs: GetUnfilteredPartitionMetadataRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionValues": ...,
+    "SupportedPermissionTypes": ...,
+}
 
-Returns
-[GetUnfilteredPartitionMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionmetadataresponsetypedef).
+parent.get_unfiltered_partition_metadata(**kwargs)
+```
 
-<a id="get\_unfiltered\_partitions\_metadata"></a>
+1. See [:material-code-braces: GetUnfilteredPartitionMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredpartitionmetadatarequestrequesttypedef) 
 
-### get_unfiltered_partitions_metadata
+### get\_unfiltered\_partitions\_metadata
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionsMetadata).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionsMetadata).
 
-Type annotations for `boto3.client("glue").get_unfiltered_partitions_metadata`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").get_unfiltered_partitions_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_partitions_metadata)
 
-Boto3 documentation:
-[Glue.Client.get_unfiltered_partitions_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_partitions_metadata)
+```python title="Method definition"
+def get_unfiltered_partitions_metadata(
+    self,
+    *,
+    CatalogId: str,
+    DatabaseName: str,
+    TableName: str,
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (1)
+    Expression: str = ...,
+    AuditContext: AuditContextTypeDef = ...,  # (2)
+    NextToken: str = ...,
+    Segment: SegmentTypeDef = ...,  # (3)
+    MaxResults: int = ...,
+) -> GetUnfilteredPartitionsMetadataResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetUnfilteredPartitionsMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredpartitionsmetadatarequestrequesttypedef).
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
+3. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
+4. See [:material-code-braces: GetUnfilteredPartitionsMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionsmetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str` *(required)*
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-  *(required)*
-- `Expression`: `str`
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
-- `NextToken`: `str`
-- `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetUnfilteredPartitionsMetadataRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+    "DatabaseName": ...,
+    "TableName": ...,
+    "SupportedPermissionTypes": ...,
+}
 
-Returns
-[GetUnfilteredPartitionsMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionsmetadataresponsetypedef).
+parent.get_unfiltered_partitions_metadata(**kwargs)
+```
 
-<a id="get\_unfiltered\_table\_metadata"></a>
+1. See [:material-code-braces: GetUnfilteredPartitionsMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredpartitionsmetadatarequestrequesttypedef) 
 
-### get_unfiltered_table_metadata
+### get\_unfiltered\_table\_metadata
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredTableMetadata).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredTableMetadata).
 
-Type annotations for `boto3.client("glue").get_unfiltered_table_metadata`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").get_unfiltered_table_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_table_metadata)
 
-Boto3 documentation:
-[Glue.Client.get_unfiltered_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_table_metadata)
+```python title="Method definition"
+def get_unfiltered_table_metadata(
+    self,
+    *,
+    CatalogId: str,
+    DatabaseName: str,
+    Name: str,
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (1)
+    AuditContext: AuditContextTypeDef = ...,  # (2)
+) -> GetUnfilteredTableMetadataResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetUnfilteredTableMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredtablemetadatarequestrequesttypedef).
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
+3. See [:material-code-braces: GetUnfilteredTableMetadataResponseTypeDef](./type_defs.md#getunfilteredtablemetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str` *(required)*
-- `DatabaseName`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-  *(required)*
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+```python title="Usage example with kwargs"
+kwargs: GetUnfilteredTableMetadataRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+    "DatabaseName": ...,
+    "Name": ...,
+    "SupportedPermissionTypes": ...,
+}
 
-Returns
-[GetUnfilteredTableMetadataResponseTypeDef](./type_defs.md#getunfilteredtablemetadataresponsetypedef).
+parent.get_unfiltered_table_metadata(**kwargs)
+```
 
-<a id="get\_user\_defined\_function"></a>
+1. See [:material-code-braces: GetUnfilteredTableMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredtablemetadatarequestrequesttypedef) 
 
-### get_user_defined_function
+### get\_user\_defined\_function
 
 Retrieves a specified function definition from the Data Catalog.
 
-Type annotations for `boto3.client("glue").get_user_defined_function` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_user_defined_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_function)
 
-Boto3 documentation:
-[Glue.Client.get_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_function)
+```python title="Method definition"
+def get_user_defined_function(
+    self,
+    *,
+    DatabaseName: str,
+    FunctionName: str,
+    CatalogId: str = ...,
+) -> GetUserDefinedFunctionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionrequestrequesttypedef).
+1. See [:material-code-braces: GetUserDefinedFunctionResponseTypeDef](./type_defs.md#getuserdefinedfunctionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `FunctionName`: `str` *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetUserDefinedFunctionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "FunctionName": ...,
+}
 
-Returns
-[GetUserDefinedFunctionResponseTypeDef](./type_defs.md#getuserdefinedfunctionresponsetypedef).
+parent.get_user_defined_function(**kwargs)
+```
 
-<a id="get\_user\_defined\_functions"></a>
+1. See [:material-code-braces: GetUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionrequestrequesttypedef) 
 
-### get_user_defined_functions
+### get\_user\_defined\_functions
 
 Retrieves multiple function definitions from the Data Catalog.
 
-Type annotations for `boto3.client("glue").get_user_defined_functions` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_user_defined_functions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_functions)
 
-Boto3 documentation:
-[Glue.Client.get_user_defined_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_user_defined_functions)
+```python title="Method definition"
+def get_user_defined_functions(
+    self,
+    *,
+    Pattern: str,
+    CatalogId: str = ...,
+    DatabaseName: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetUserDefinedFunctionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserDefinedFunctionsRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionsrequestrequesttypedef).
+1. See [:material-code-braces: GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Pattern`: `str` *(required)*
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetUserDefinedFunctionsRequestRequestTypeDef = {  # (1)
+    "Pattern": ...,
+}
 
-Returns
-[GetUserDefinedFunctionsResponseTypeDef](./type_defs.md#getuserdefinedfunctionsresponsetypedef).
+parent.get_user_defined_functions(**kwargs)
+```
 
-<a id="get\_workflow"></a>
+1. See [:material-code-braces: GetUserDefinedFunctionsRequestRequestTypeDef](./type_defs.md#getuserdefinedfunctionsrequestrequesttypedef) 
 
-### get_workflow
+### get\_workflow
 
 Retrieves resource metadata for a workflow.
 
-Type annotations for `boto3.client("glue").get_workflow` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_workflow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow)
 
-Boto3 documentation:
-[Glue.Client.get_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow)
+```python title="Method definition"
+def get_workflow(
+    self,
+    *,
+    Name: str,
+    IncludeGraph: bool = ...,
+) -> GetWorkflowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkflowRequestRequestTypeDef](./type_defs.md#getworkflowrequestrequesttypedef).
+1. See [:material-code-braces: GetWorkflowResponseTypeDef](./type_defs.md#getworkflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IncludeGraph`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetWorkflowRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetWorkflowResponseTypeDef](./type_defs.md#getworkflowresponsetypedef).
+parent.get_workflow(**kwargs)
+```
 
-<a id="get\_workflow\_run"></a>
+1. See [:material-code-braces: GetWorkflowRequestRequestTypeDef](./type_defs.md#getworkflowrequestrequesttypedef) 
 
-### get_workflow_run
+### get\_workflow\_run
 
 Retrieves the metadata for a given workflow run.
 
-Type annotations for `boto3.client("glue").get_workflow_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_workflow_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run)
 
-Boto3 documentation:
-[Glue.Client.get_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run)
+```python title="Method definition"
+def get_workflow_run(
+    self,
+    *,
+    Name: str,
+    RunId: str,
+    IncludeGraph: bool = ...,
+) -> GetWorkflowRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkflowRunRequestRequestTypeDef](./type_defs.md#getworkflowrunrequestrequesttypedef).
+1. See [:material-code-braces: GetWorkflowRunResponseTypeDef](./type_defs.md#getworkflowrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RunId`: `str` *(required)*
-- `IncludeGraph`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetWorkflowRunRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RunId": ...,
+}
 
-Returns
-[GetWorkflowRunResponseTypeDef](./type_defs.md#getworkflowrunresponsetypedef).
+parent.get_workflow_run(**kwargs)
+```
 
-<a id="get\_workflow\_run\_properties"></a>
+1. See [:material-code-braces: GetWorkflowRunRequestRequestTypeDef](./type_defs.md#getworkflowrunrequestrequesttypedef) 
 
-### get_workflow_run_properties
+### get\_workflow\_run\_properties
 
 Retrieves the workflow run properties which were set during the run.
 
-Type annotations for `boto3.client("glue").get_workflow_run_properties` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_workflow_run_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run_properties)
 
-Boto3 documentation:
-[Glue.Client.get_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_run_properties)
+```python title="Method definition"
+def get_workflow_run_properties(
+    self,
+    *,
+    Name: str,
+    RunId: str,
+) -> GetWorkflowRunPropertiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkflowRunPropertiesRequestRequestTypeDef](./type_defs.md#getworkflowrunpropertiesrequestrequesttypedef).
+1. See [:material-code-braces: GetWorkflowRunPropertiesResponseTypeDef](./type_defs.md#getworkflowrunpropertiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetWorkflowRunPropertiesRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RunId": ...,
+}
 
-Returns
-[GetWorkflowRunPropertiesResponseTypeDef](./type_defs.md#getworkflowrunpropertiesresponsetypedef).
+parent.get_workflow_run_properties(**kwargs)
+```
 
-<a id="get\_workflow\_runs"></a>
+1. See [:material-code-braces: GetWorkflowRunPropertiesRequestRequestTypeDef](./type_defs.md#getworkflowrunpropertiesrequestrequesttypedef) 
 
-### get_workflow_runs
+### get\_workflow\_runs
 
 Retrieves metadata for all runs of a given workflow.
 
-Type annotations for `boto3.client("glue").get_workflow_runs` method.
+Type annotations and code completion for `#!python boto3.client("glue").get_workflow_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_runs)
 
-Boto3 documentation:
-[Glue.Client.get_workflow_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_workflow_runs)
+```python title="Method definition"
+def get_workflow_runs(
+    self,
+    *,
+    Name: str,
+    IncludeGraph: bool = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetWorkflowRunsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkflowRunsRequestRequestTypeDef](./type_defs.md#getworkflowrunsrequestrequesttypedef).
+1. See [:material-code-braces: GetWorkflowRunsResponseTypeDef](./type_defs.md#getworkflowrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IncludeGraph`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetWorkflowRunsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetWorkflowRunsResponseTypeDef](./type_defs.md#getworkflowrunsresponsetypedef).
+parent.get_workflow_runs(**kwargs)
+```
 
-<a id="import\_catalog\_to\_glue"></a>
+1. See [:material-code-braces: GetWorkflowRunsRequestRequestTypeDef](./type_defs.md#getworkflowrunsrequestrequesttypedef) 
 
-### import_catalog_to_glue
+### import\_catalog\_to\_glue
 
 Imports an existing Amazon Athena Data Catalog to Glue.
 
-Type annotations for `boto3.client("glue").import_catalog_to_glue` method.
+Type annotations and code completion for `#!python boto3.client("glue").import_catalog_to_glue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.import_catalog_to_glue)
 
-Boto3 documentation:
-[Glue.Client.import_catalog_to_glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.import_catalog_to_glue)
+```python title="Method definition"
+def import_catalog_to_glue(
+    self,
+    *,
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ImportCatalogToGlueRequestRequestTypeDef](./type_defs.md#importcatalogtogluerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ImportCatalogToGlueRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.import_catalog_to_glue(**kwargs)
+```
 
-<a id="list\_blueprints"></a>
+1. See [:material-code-braces: ImportCatalogToGlueRequestRequestTypeDef](./type_defs.md#importcatalogtogluerequestrequesttypedef) 
 
-### list_blueprints
+### list\_blueprints
 
 Lists all the blueprint names in an account.
 
-Type annotations for `boto3.client("glue").list_blueprints` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_blueprints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_blueprints)
 
-Boto3 documentation:
-[Glue.Client.list_blueprints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_blueprints)
+```python title="Method definition"
+def list_blueprints(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Tags: Mapping[str, str] = ...,
+) -> ListBlueprintsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBlueprintsRequestRequestTypeDef](./type_defs.md#listblueprintsrequestrequesttypedef).
+1. See [:material-code-braces: ListBlueprintsResponseTypeDef](./type_defs.md#listblueprintsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListBlueprintsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListBlueprintsResponseTypeDef](./type_defs.md#listblueprintsresponsetypedef).
+parent.list_blueprints(**kwargs)
+```
 
-<a id="list\_crawlers"></a>
+1. See [:material-code-braces: ListBlueprintsRequestRequestTypeDef](./type_defs.md#listblueprintsrequestrequesttypedef) 
 
-### list_crawlers
+### list\_crawlers
 
 Retrieves the names of all crawler resources in this Amazon Web Services
 account, or the resources with the specified tag.
 
-Type annotations for `boto3.client("glue").list_crawlers` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_crawlers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_crawlers)
 
-Boto3 documentation:
-[Glue.Client.list_crawlers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_crawlers)
+```python title="Method definition"
+def list_crawlers(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> ListCrawlersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCrawlersRequestRequestTypeDef](./type_defs.md#listcrawlersrequestrequesttypedef).
+1. See [:material-code-braces: ListCrawlersResponseTypeDef](./type_defs.md#listcrawlersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListCrawlersRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListCrawlersResponseTypeDef](./type_defs.md#listcrawlersresponsetypedef).
+parent.list_crawlers(**kwargs)
+```
 
-<a id="list\_dev\_endpoints"></a>
+1. See [:material-code-braces: ListCrawlersRequestRequestTypeDef](./type_defs.md#listcrawlersrequestrequesttypedef) 
 
-### list_dev_endpoints
+### list\_dev\_endpoints
 
 Retrieves the names of all `DevEndpoint` resources in this Amazon Web Services
 account, or the resources with the specified tag.
 
-Type annotations for `boto3.client("glue").list_dev_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_dev_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_dev_endpoints)
 
-Boto3 documentation:
-[Glue.Client.list_dev_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_dev_endpoints)
+```python title="Method definition"
+def list_dev_endpoints(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Tags: Mapping[str, str] = ...,
+) -> ListDevEndpointsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDevEndpointsRequestRequestTypeDef](./type_defs.md#listdevendpointsrequestrequesttypedef).
+1. See [:material-code-braces: ListDevEndpointsResponseTypeDef](./type_defs.md#listdevendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListDevEndpointsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDevEndpointsResponseTypeDef](./type_defs.md#listdevendpointsresponsetypedef).
+parent.list_dev_endpoints(**kwargs)
+```
 
-<a id="list\_jobs"></a>
+1. See [:material-code-braces: ListDevEndpointsRequestRequestTypeDef](./type_defs.md#listdevendpointsrequestrequesttypedef) 
 
-### list_jobs
+### list\_jobs
 
-Retrieves the names of all job resources in this Amazon Web Services account,
-or the resources with the specified tag.
+Retrieves the names of all job resources in this Amazon Web Services account, or
+the resources with the specified tag.
 
-Type annotations for `boto3.client("glue").list_jobs` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_jobs)
 
-Boto3 documentation:
-[Glue.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_jobs)
+```python title="Method definition"
+def list_jobs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Tags: Mapping[str, str] = ...,
+) -> ListJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+parent.list_jobs(**kwargs)
+```
 
-<a id="list\_ml\_transforms"></a>
+1. See [:material-code-braces: ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef) 
 
-### list_ml_transforms
+### list\_ml\_transforms
 
 Retrieves a sortable, filterable list of existing Glue machine learning
 transforms in this Amazon Web Services account, or the resources with the
 specified tag.
 
-Type annotations for `boto3.client("glue").list_ml_transforms` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_ml_transforms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_ml_transforms)
 
-Boto3 documentation:
-[Glue.Client.list_ml_transforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_ml_transforms)
+```python title="Method definition"
+def list_ml_transforms(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filter: TransformFilterCriteriaTypeDef = ...,  # (1)
+    Sort: TransformSortCriteriaTypeDef = ...,  # (2)
+    Tags: Mapping[str, str] = ...,
+) -> ListMLTransformsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListMLTransformsRequestRequestTypeDef](./type_defs.md#listmltransformsrequestrequesttypedef).
+1. See [:material-code-braces: TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef) 
+2. See [:material-code-braces: TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef) 
+3. See [:material-code-braces: ListMLTransformsResponseTypeDef](./type_defs.md#listmltransformsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filter`:
-  [TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef)
-- `Sort`:
-  [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListMLTransformsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListMLTransformsResponseTypeDef](./type_defs.md#listmltransformsresponsetypedef).
+parent.list_ml_transforms(**kwargs)
+```
 
-<a id="list\_registries"></a>
+1. See [:material-code-braces: ListMLTransformsRequestRequestTypeDef](./type_defs.md#listmltransformsrequestrequesttypedef) 
 
-### list_registries
+### list\_registries
 
 Returns a list of registries that you have created, with minimal registry
 information.
 
-Type annotations for `boto3.client("glue").list_registries` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_registries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_registries)
 
-Boto3 documentation:
-[Glue.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_registries)
+```python title="Method definition"
+def list_registries(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRegistriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRegistriesInputRequestTypeDef](./type_defs.md#listregistriesinputrequesttypedef).
+1. See [:material-code-braces: ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRegistriesInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
+parent.list_registries(**kwargs)
+```
 
-<a id="list\_schema\_versions"></a>
+1. See [:material-code-braces: ListRegistriesInputRequestTypeDef](./type_defs.md#listregistriesinputrequesttypedef) 
 
-### list_schema_versions
+### list\_schema\_versions
 
 Returns a list of schema versions that you have created, with minimal
 information.
 
-Type annotations for `boto3.client("glue").list_schema_versions` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_schema_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schema_versions)
 
-Boto3 documentation:
-[Glue.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schema_versions)
+```python title="Method definition"
+def list_schema_versions(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSchemaVersionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSchemaVersionsInputRequestTypeDef](./type_defs.md#listschemaversionsinputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSchemaVersionsInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+}
 
-Returns
-[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
+parent.list_schema_versions(**kwargs)
+```
 
-<a id="list\_schemas"></a>
+1. See [:material-code-braces: ListSchemaVersionsInputRequestTypeDef](./type_defs.md#listschemaversionsinputrequesttypedef) 
 
-### list_schemas
+### list\_schemas
 
 Returns a list of schemas with minimal details.
 
-Type annotations for `boto3.client("glue").list_schemas` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_schemas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schemas)
 
-Boto3 documentation:
-[Glue.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_schemas)
+```python title="Method definition"
+def list_schemas(
+    self,
+    *,
+    RegistryId: RegistryIdTypeDef = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSchemasResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSchemasInputRequestTypeDef](./type_defs.md#listschemasinputrequesttypedef).
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
+2. See [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSchemasInputRequestTypeDef = {  # (1)
+    "RegistryId": ...,
+}
 
-Returns
-[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
+parent.list_schemas(**kwargs)
+```
 
-<a id="list\_sessions"></a>
+1. See [:material-code-braces: ListSchemasInputRequestTypeDef](./type_defs.md#listschemasinputrequesttypedef) 
 
-### list_sessions
+### list\_sessions
 
 Retrieve a session..
 
-Type annotations for `boto3.client("glue").list_sessions` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_sessions)
 
-Boto3 documentation:
-[Glue.Client.list_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_sessions)
+```python title="Method definition"
+def list_sessions(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Tags: Mapping[str, str] = ...,
+    RequestOrigin: str = ...,
+) -> ListSessionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSessionsRequestRequestTypeDef](./type_defs.md#listsessionsrequestrequesttypedef).
+1. See [:material-code-braces: ListSessionsResponseTypeDef](./type_defs.md#listsessionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `RequestOrigin`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSessionsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListSessionsResponseTypeDef](./type_defs.md#listsessionsresponsetypedef).
+parent.list_sessions(**kwargs)
+```
 
-<a id="list\_statements"></a>
+1. See [:material-code-braces: ListSessionsRequestRequestTypeDef](./type_defs.md#listsessionsrequestrequesttypedef) 
 
-### list_statements
+### list\_statements
 
 Lists statements for the session.
 
-Type annotations for `boto3.client("glue").list_statements` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_statements` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_statements)
 
-Boto3 documentation:
-[Glue.Client.list_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_statements)
+```python title="Method definition"
+def list_statements(
+    self,
+    *,
+    SessionId: str,
+    RequestOrigin: str = ...,
+    NextToken: str = ...,
+) -> ListStatementsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStatementsRequestRequestTypeDef](./type_defs.md#liststatementsrequestrequesttypedef).
+1. See [:material-code-braces: ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SessionId`: `str` *(required)*
-- `RequestOrigin`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStatementsRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+}
 
-Returns
-[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef).
+parent.list_statements(**kwargs)
+```
 
-<a id="list\_triggers"></a>
+1. See [:material-code-braces: ListStatementsRequestRequestTypeDef](./type_defs.md#liststatementsrequestrequesttypedef) 
 
-### list_triggers
+### list\_triggers
 
 Retrieves the names of all trigger resources in this Amazon Web Services
 account, or the resources with the specified tag.
 
-Type annotations for `boto3.client("glue").list_triggers` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_triggers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_triggers)
 
-Boto3 documentation:
-[Glue.Client.list_triggers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_triggers)
+```python title="Method definition"
+def list_triggers(
+    self,
+    *,
+    NextToken: str = ...,
+    DependentJobName: str = ...,
+    MaxResults: int = ...,
+    Tags: Mapping[str, str] = ...,
+) -> ListTriggersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTriggersRequestRequestTypeDef](./type_defs.md#listtriggersrequestrequesttypedef).
+1. See [:material-code-braces: ListTriggersResponseTypeDef](./type_defs.md#listtriggersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `DependentJobName`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListTriggersRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListTriggersResponseTypeDef](./type_defs.md#listtriggersresponsetypedef).
+parent.list_triggers(**kwargs)
+```
 
-<a id="list\_workflows"></a>
+1. See [:material-code-braces: ListTriggersRequestRequestTypeDef](./type_defs.md#listtriggersrequestrequesttypedef) 
 
-### list_workflows
+### list\_workflows
 
 Lists names of workflows created in the account.
 
-Type annotations for `boto3.client("glue").list_workflows` method.
+Type annotations and code completion for `#!python boto3.client("glue").list_workflows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_workflows)
 
-Boto3 documentation:
-[Glue.Client.list_workflows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_workflows)
+```python title="Method definition"
+def list_workflows(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListWorkflowsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkflowsRequestRequestTypeDef](./type_defs.md#listworkflowsrequestrequesttypedef).
+1. See [:material-code-braces: ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListWorkflowsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef).
+parent.list_workflows(**kwargs)
+```
 
-<a id="put\_data\_catalog\_encryption\_settings"></a>
+1. See [:material-code-braces: ListWorkflowsRequestRequestTypeDef](./type_defs.md#listworkflowsrequestrequesttypedef) 
 
-### put_data_catalog_encryption_settings
+### put\_data\_catalog\_encryption\_settings
 
 Sets the security configuration for a specified catalog.
 
-Type annotations for
-`boto3.client("glue").put_data_catalog_encryption_settings` method.
+Type annotations and code completion for `#!python boto3.client("glue").put_data_catalog_encryption_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_data_catalog_encryption_settings)
 
-Boto3 documentation:
-[Glue.Client.put_data_catalog_encryption_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_data_catalog_encryption_settings)
+```python title="Method definition"
+def put_data_catalog_encryption_settings(
+    self,
+    *,
+    DataCatalogEncryptionSettings: DataCatalogEncryptionSettingsTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutDataCatalogEncryptionSettingsRequestRequestTypeDef](./type_defs.md#putdatacatalogencryptionsettingsrequestrequesttypedef).
+1. See [:material-code-braces: DataCatalogEncryptionSettingsTypeDef](./type_defs.md#datacatalogencryptionsettingstypedef) 
 
-Keyword-only arguments:
 
-- `DataCatalogEncryptionSettings`:
-  [DataCatalogEncryptionSettingsTypeDef](./type_defs.md#datacatalogencryptionsettingstypedef)
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutDataCatalogEncryptionSettingsRequestRequestTypeDef = {  # (1)
+    "DataCatalogEncryptionSettings": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_data_catalog_encryption_settings(**kwargs)
+```
 
-<a id="put\_resource\_policy"></a>
+1. See [:material-code-braces: PutDataCatalogEncryptionSettingsRequestRequestTypeDef](./type_defs.md#putdatacatalogencryptionsettingsrequestrequesttypedef) 
 
-### put_resource_policy
+### put\_resource\_policy
 
 Sets the Data Catalog resource policy for access control.
 
-Type annotations for `boto3.client("glue").put_resource_policy` method.
+Type annotations and code completion for `#!python boto3.client("glue").put_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_resource_policy)
 
-Boto3 documentation:
-[Glue.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_resource_policy)
+```python title="Method definition"
+def put_resource_policy(
+    self,
+    *,
+    PolicyInJson: str,
+    ResourceArn: str = ...,
+    PolicyHashCondition: str = ...,
+    PolicyExistsCondition: ExistConditionType = ...,  # (1)
+    EnableHybrid: EnableHybridValuesType = ...,  # (2)
+) -> PutResourcePolicyResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
+1. See [:material-code-brackets: ExistConditionType](./literals.md#existconditiontype) 
+2. See [:material-code-brackets: EnableHybridValuesType](./literals.md#enablehybridvaluestype) 
+3. See [:material-code-braces: PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyInJson`: `str` *(required)*
-- `ResourceArn`: `str`
-- `PolicyHashCondition`: `str`
-- `PolicyExistsCondition`:
-  [ExistConditionType](./literals.md#existconditiontype)
-- `EnableHybrid`:
-  [EnableHybridValuesType](./literals.md#enablehybridvaluestype)
+```python title="Usage example with kwargs"
+kwargs: PutResourcePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyInJson": ...,
+}
 
-Returns
-[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
+parent.put_resource_policy(**kwargs)
+```
 
-<a id="put\_schema\_version\_metadata"></a>
+1. See [:material-code-braces: PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef) 
 
-### put_schema_version_metadata
+### put\_schema\_version\_metadata
 
 Puts the metadata key value pair for a specified schema version ID.
 
-Type annotations for `boto3.client("glue").put_schema_version_metadata` method.
+Type annotations and code completion for `#!python boto3.client("glue").put_schema_version_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_schema_version_metadata)
 
-Boto3 documentation:
-[Glue.Client.put_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_schema_version_metadata)
+```python title="Method definition"
+def put_schema_version_metadata(
+    self,
+    *,
+    MetadataKeyValue: MetadataKeyValuePairTypeDef,  # (1)
+    SchemaId: SchemaIdTypeDef = ...,  # (2)
+    SchemaVersionNumber: SchemaVersionNumberTypeDef = ...,  # (3)
+    SchemaVersionId: str = ...,
+) -> PutSchemaVersionMetadataResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[PutSchemaVersionMetadataInputRequestTypeDef](./type_defs.md#putschemaversionmetadatainputrequesttypedef).
+1. See [:material-code-braces: MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef) 
+2. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+3. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+4. See [:material-code-braces: PutSchemaVersionMetadataResponseTypeDef](./type_defs.md#putschemaversionmetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MetadataKeyValue`:
-  [MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)
-  *(required)*
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `SchemaVersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutSchemaVersionMetadataInputRequestTypeDef = {  # (1)
+    "MetadataKeyValue": ...,
+}
 
-Returns
-[PutSchemaVersionMetadataResponseTypeDef](./type_defs.md#putschemaversionmetadataresponsetypedef).
+parent.put_schema_version_metadata(**kwargs)
+```
 
-<a id="put\_workflow\_run\_properties"></a>
+1. See [:material-code-braces: PutSchemaVersionMetadataInputRequestTypeDef](./type_defs.md#putschemaversionmetadatainputrequesttypedef) 
 
-### put_workflow_run_properties
+### put\_workflow\_run\_properties
 
 Puts the specified workflow run properties for the given workflow run.
 
-Type annotations for `boto3.client("glue").put_workflow_run_properties` method.
+Type annotations and code completion for `#!python boto3.client("glue").put_workflow_run_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_workflow_run_properties)
 
-Boto3 documentation:
-[Glue.Client.put_workflow_run_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_workflow_run_properties)
+```python title="Method definition"
+def put_workflow_run_properties(
+    self,
+    *,
+    Name: str,
+    RunId: str,
+    RunProperties: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutWorkflowRunPropertiesRequestRequestTypeDef](./type_defs.md#putworkflowrunpropertiesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RunId`: `str` *(required)*
-- `RunProperties`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutWorkflowRunPropertiesRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RunId": ...,
+    "RunProperties": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_workflow_run_properties(**kwargs)
+```
 
-<a id="query\_schema\_version\_metadata"></a>
+1. See [:material-code-braces: PutWorkflowRunPropertiesRequestRequestTypeDef](./type_defs.md#putworkflowrunpropertiesrequestrequesttypedef) 
 
-### query_schema_version_metadata
+### query\_schema\_version\_metadata
 
 Queries for the schema version metadata information.
 
-Type annotations for `boto3.client("glue").query_schema_version_metadata`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").query_schema_version_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.query_schema_version_metadata)
 
-Boto3 documentation:
-[Glue.Client.query_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.query_schema_version_metadata)
+```python title="Method definition"
+def query_schema_version_metadata(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef = ...,  # (1)
+    SchemaVersionNumber: SchemaVersionNumberTypeDef = ...,  # (2)
+    SchemaVersionId: str = ...,
+    MetadataList: Sequence[MetadataKeyValuePairTypeDef] = ...,  # (3)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> QuerySchemaVersionMetadataResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[QuerySchemaVersionMetadataInputRequestTypeDef](./type_defs.md#queryschemaversionmetadatainputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+3. See [:material-code-braces: MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef) 
+4. See [:material-code-braces: QuerySchemaVersionMetadataResponseTypeDef](./type_defs.md#queryschemaversionmetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `SchemaVersionId`: `str`
-- `MetadataList`:
-  `Sequence`\[[MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: QuerySchemaVersionMetadataInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+}
 
-Returns
-[QuerySchemaVersionMetadataResponseTypeDef](./type_defs.md#queryschemaversionmetadataresponsetypedef).
+parent.query_schema_version_metadata(**kwargs)
+```
 
-<a id="register\_schema\_version"></a>
+1. See [:material-code-braces: QuerySchemaVersionMetadataInputRequestTypeDef](./type_defs.md#queryschemaversionmetadatainputrequesttypedef) 
 
-### register_schema_version
+### register\_schema\_version
 
 Adds a new version to the existing schema.
 
-Type annotations for `boto3.client("glue").register_schema_version` method.
+Type annotations and code completion for `#!python boto3.client("glue").register_schema_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.register_schema_version)
 
-Boto3 documentation:
-[Glue.Client.register_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.register_schema_version)
+```python title="Method definition"
+def register_schema_version(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef,  # (1)
+    SchemaDefinition: str,
+) -> RegisterSchemaVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RegisterSchemaVersionInputRequestTypeDef](./type_defs.md#registerschemaversioninputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: RegisterSchemaVersionResponseTypeDef](./type_defs.md#registerschemaversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
-- `SchemaDefinition`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterSchemaVersionInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+    "SchemaDefinition": ...,
+}
 
-Returns
-[RegisterSchemaVersionResponseTypeDef](./type_defs.md#registerschemaversionresponsetypedef).
+parent.register_schema_version(**kwargs)
+```
 
-<a id="remove\_schema\_version\_metadata"></a>
+1. See [:material-code-braces: RegisterSchemaVersionInputRequestTypeDef](./type_defs.md#registerschemaversioninputrequesttypedef) 
 
-### remove_schema_version_metadata
+### remove\_schema\_version\_metadata
 
 Removes a key value pair from the schema version metadata for the specified
 schema version ID.
 
-Type annotations for `boto3.client("glue").remove_schema_version_metadata`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").remove_schema_version_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.remove_schema_version_metadata)
 
-Boto3 documentation:
-[Glue.Client.remove_schema_version_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.remove_schema_version_metadata)
+```python title="Method definition"
+def remove_schema_version_metadata(
+    self,
+    *,
+    MetadataKeyValue: MetadataKeyValuePairTypeDef,  # (1)
+    SchemaId: SchemaIdTypeDef = ...,  # (2)
+    SchemaVersionNumber: SchemaVersionNumberTypeDef = ...,  # (3)
+    SchemaVersionId: str = ...,
+) -> RemoveSchemaVersionMetadataResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[RemoveSchemaVersionMetadataInputRequestTypeDef](./type_defs.md#removeschemaversionmetadatainputrequesttypedef).
+1. See [:material-code-braces: MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef) 
+2. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+3. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+4. See [:material-code-braces: RemoveSchemaVersionMetadataResponseTypeDef](./type_defs.md#removeschemaversionmetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MetadataKeyValue`:
-  [MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)
-  *(required)*
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `SchemaVersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemoveSchemaVersionMetadataInputRequestTypeDef = {  # (1)
+    "MetadataKeyValue": ...,
+}
 
-Returns
-[RemoveSchemaVersionMetadataResponseTypeDef](./type_defs.md#removeschemaversionmetadataresponsetypedef).
+parent.remove_schema_version_metadata(**kwargs)
+```
 
-<a id="reset\_job\_bookmark"></a>
+1. See [:material-code-braces: RemoveSchemaVersionMetadataInputRequestTypeDef](./type_defs.md#removeschemaversionmetadatainputrequesttypedef) 
 
-### reset_job_bookmark
+### reset\_job\_bookmark
 
 Resets a bookmark entry.
 
-Type annotations for `boto3.client("glue").reset_job_bookmark` method.
+Type annotations and code completion for `#!python boto3.client("glue").reset_job_bookmark` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.reset_job_bookmark)
 
-Boto3 documentation:
-[Glue.Client.reset_job_bookmark](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.reset_job_bookmark)
+```python title="Method definition"
+def reset_job_bookmark(
+    self,
+    *,
+    JobName: str,
+    RunId: str = ...,
+) -> ResetJobBookmarkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResetJobBookmarkRequestRequestTypeDef](./type_defs.md#resetjobbookmarkrequestrequesttypedef).
+1. See [:material-code-braces: ResetJobBookmarkResponseTypeDef](./type_defs.md#resetjobbookmarkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
-- `RunId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ResetJobBookmarkRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
 
-Returns
-[ResetJobBookmarkResponseTypeDef](./type_defs.md#resetjobbookmarkresponsetypedef).
+parent.reset_job_bookmark(**kwargs)
+```
 
-<a id="resume\_workflow\_run"></a>
+1. See [:material-code-braces: ResetJobBookmarkRequestRequestTypeDef](./type_defs.md#resetjobbookmarkrequestrequesttypedef) 
 
-### resume_workflow_run
+### resume\_workflow\_run
 
 Restarts selected nodes of a previous partially completed workflow run and
 resumes the workflow run.
 
-Type annotations for `boto3.client("glue").resume_workflow_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").resume_workflow_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.resume_workflow_run)
 
-Boto3 documentation:
-[Glue.Client.resume_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.resume_workflow_run)
+```python title="Method definition"
+def resume_workflow_run(
+    self,
+    *,
+    Name: str,
+    RunId: str,
+    NodeIds: Sequence[str],
+) -> ResumeWorkflowRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResumeWorkflowRunRequestRequestTypeDef](./type_defs.md#resumeworkflowrunrequestrequesttypedef).
+1. See [:material-code-braces: ResumeWorkflowRunResponseTypeDef](./type_defs.md#resumeworkflowrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RunId`: `str` *(required)*
-- `NodeIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResumeWorkflowRunRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RunId": ...,
+    "NodeIds": ...,
+}
 
-Returns
-[ResumeWorkflowRunResponseTypeDef](./type_defs.md#resumeworkflowrunresponsetypedef).
+parent.resume_workflow_run(**kwargs)
+```
 
-<a id="run\_statement"></a>
+1. See [:material-code-braces: ResumeWorkflowRunRequestRequestTypeDef](./type_defs.md#resumeworkflowrunrequestrequesttypedef) 
 
-### run_statement
+### run\_statement
 
 Executes the statement.
 
-Type annotations for `boto3.client("glue").run_statement` method.
+Type annotations and code completion for `#!python boto3.client("glue").run_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.run_statement)
 
-Boto3 documentation:
-[Glue.Client.run_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.run_statement)
+```python title="Method definition"
+def run_statement(
+    self,
+    *,
+    SessionId: str,
+    Code: str,
+    RequestOrigin: str = ...,
+) -> RunStatementResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RunStatementRequestRequestTypeDef](./type_defs.md#runstatementrequestrequesttypedef).
+1. See [:material-code-braces: RunStatementResponseTypeDef](./type_defs.md#runstatementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SessionId`: `str` *(required)*
-- `Code`: `str` *(required)*
-- `RequestOrigin`: `str`
+```python title="Usage example with kwargs"
+kwargs: RunStatementRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+    "Code": ...,
+}
 
-Returns
-[RunStatementResponseTypeDef](./type_defs.md#runstatementresponsetypedef).
+parent.run_statement(**kwargs)
+```
 
-<a id="search\_tables"></a>
+1. See [:material-code-braces: RunStatementRequestRequestTypeDef](./type_defs.md#runstatementrequestrequesttypedef) 
 
-### search_tables
+### search\_tables
 
-Searches a set of tables based on properties in the table metadata as well as
-on the parent database.
+Searches a set of tables based on properties in the table metadata as well as on
+the parent database.
 
-Type annotations for `boto3.client("glue").search_tables` method.
+Type annotations and code completion for `#!python boto3.client("glue").search_tables` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.search_tables)
 
-Boto3 documentation:
-[Glue.Client.search_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.search_tables)
+```python title="Method definition"
+def search_tables(
+    self,
+    *,
+    CatalogId: str = ...,
+    NextToken: str = ...,
+    Filters: Sequence[PropertyPredicateTypeDef] = ...,  # (1)
+    SearchText: str = ...,
+    SortCriteria: Sequence[SortCriterionTypeDef] = ...,  # (2)
+    MaxResults: int = ...,
+    ResourceShareType: ResourceShareTypeType = ...,  # (3)
+) -> SearchTablesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[SearchTablesRequestRequestTypeDef](./type_defs.md#searchtablesrequestrequesttypedef).
+1. See [:material-code-braces: PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef) 
+2. See [:material-code-braces: SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef) 
+3. See [:material-code-brackets: ResourceShareTypeType](./literals.md#resourcesharetypetype) 
+4. See [:material-code-braces: SearchTablesResponseTypeDef](./type_defs.md#searchtablesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CatalogId`: `str`
-- `NextToken`: `str`
-- `Filters`:
-  `Sequence`\[[PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef)\]
-- `SearchText`: `str`
-- `SortCriteria`:
-  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
-- `MaxResults`: `int`
-- `ResourceShareType`:
-  [ResourceShareTypeType](./literals.md#resourcesharetypetype)
+```python title="Usage example with kwargs"
+kwargs: SearchTablesRequestRequestTypeDef = {  # (1)
+    "CatalogId": ...,
+}
 
-Returns
-[SearchTablesResponseTypeDef](./type_defs.md#searchtablesresponsetypedef).
+parent.search_tables(**kwargs)
+```
 
-<a id="start\_blueprint\_run"></a>
+1. See [:material-code-braces: SearchTablesRequestRequestTypeDef](./type_defs.md#searchtablesrequestrequesttypedef) 
 
-### start_blueprint_run
+### start\_blueprint\_run
 
 Starts a new run of the specified blueprint.
 
-Type annotations for `boto3.client("glue").start_blueprint_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").start_blueprint_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_blueprint_run)
 
-Boto3 documentation:
-[Glue.Client.start_blueprint_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_blueprint_run)
+```python title="Method definition"
+def start_blueprint_run(
+    self,
+    *,
+    BlueprintName: str,
+    RoleArn: str,
+    Parameters: str = ...,
+) -> StartBlueprintRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartBlueprintRunRequestRequestTypeDef](./type_defs.md#startblueprintrunrequestrequesttypedef).
+1. See [:material-code-braces: StartBlueprintRunResponseTypeDef](./type_defs.md#startblueprintrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BlueprintName`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `Parameters`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartBlueprintRunRequestRequestTypeDef = {  # (1)
+    "BlueprintName": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[StartBlueprintRunResponseTypeDef](./type_defs.md#startblueprintrunresponsetypedef).
+parent.start_blueprint_run(**kwargs)
+```
 
-<a id="start\_crawler"></a>
+1. See [:material-code-braces: StartBlueprintRunRequestRequestTypeDef](./type_defs.md#startblueprintrunrequestrequesttypedef) 
 
-### start_crawler
+### start\_crawler
 
 Starts a crawl using the specified crawler, regardless of what is scheduled.
 
-Type annotations for `boto3.client("glue").start_crawler` method.
+Type annotations and code completion for `#!python boto3.client("glue").start_crawler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler)
 
-Boto3 documentation:
-[Glue.Client.start_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler)
+```python title="Method definition"
+def start_crawler(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartCrawlerRequestRequestTypeDef](./type_defs.md#startcrawlerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartCrawlerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_crawler(**kwargs)
+```
 
-<a id="start\_crawler\_schedule"></a>
+1. See [:material-code-braces: StartCrawlerRequestRequestTypeDef](./type_defs.md#startcrawlerrequestrequesttypedef) 
 
-### start_crawler_schedule
+### start\_crawler\_schedule
 
 Changes the schedule state of the specified crawler to `SCHEDULED` , unless the
 crawler is already running or the schedule state is already `SCHEDULED` .
 
-Type annotations for `boto3.client("glue").start_crawler_schedule` method.
+Type annotations and code completion for `#!python boto3.client("glue").start_crawler_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler_schedule)
 
-Boto3 documentation:
-[Glue.Client.start_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_crawler_schedule)
+```python title="Method definition"
+def start_crawler_schedule(
+    self,
+    *,
+    CrawlerName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartCrawlerScheduleRequestRequestTypeDef](./type_defs.md#startcrawlerschedulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CrawlerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartCrawlerScheduleRequestRequestTypeDef = {  # (1)
+    "CrawlerName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_crawler_schedule(**kwargs)
+```
 
-<a id="start\_export\_labels\_task\_run"></a>
+1. See [:material-code-braces: StartCrawlerScheduleRequestRequestTypeDef](./type_defs.md#startcrawlerschedulerequestrequesttypedef) 
 
-### start_export_labels_task_run
+### start\_export\_labels\_task\_run
 
 Begins an asynchronous task to export all labeled data for a particular
 transform.
 
-Type annotations for `boto3.client("glue").start_export_labels_task_run`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").start_export_labels_task_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_export_labels_task_run)
 
-Boto3 documentation:
-[Glue.Client.start_export_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_export_labels_task_run)
+```python title="Method definition"
+def start_export_labels_task_run(
+    self,
+    *,
+    TransformId: str,
+    OutputS3Path: str,
+) -> StartExportLabelsTaskRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartExportLabelsTaskRunRequestRequestTypeDef](./type_defs.md#startexportlabelstaskrunrequestrequesttypedef).
+1. See [:material-code-braces: StartExportLabelsTaskRunResponseTypeDef](./type_defs.md#startexportlabelstaskrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
-- `OutputS3Path`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartExportLabelsTaskRunRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+    "OutputS3Path": ...,
+}
 
-Returns
-[StartExportLabelsTaskRunResponseTypeDef](./type_defs.md#startexportlabelstaskrunresponsetypedef).
+parent.start_export_labels_task_run(**kwargs)
+```
 
-<a id="start\_import\_labels\_task\_run"></a>
+1. See [:material-code-braces: StartExportLabelsTaskRunRequestRequestTypeDef](./type_defs.md#startexportlabelstaskrunrequestrequesttypedef) 
 
-### start_import_labels_task_run
+### start\_import\_labels\_task\_run
 
-Enables you to provide additional labels (examples of truth) to be used to
-teach the machine learning transform and improve its quality.
+Enables you to provide additional labels (examples of truth) to be used to teach
+the machine learning transform and improve its quality.
 
-Type annotations for `boto3.client("glue").start_import_labels_task_run`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").start_import_labels_task_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_import_labels_task_run)
 
-Boto3 documentation:
-[Glue.Client.start_import_labels_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_import_labels_task_run)
+```python title="Method definition"
+def start_import_labels_task_run(
+    self,
+    *,
+    TransformId: str,
+    InputS3Path: str,
+    ReplaceAllLabels: bool = ...,
+) -> StartImportLabelsTaskRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartImportLabelsTaskRunRequestRequestTypeDef](./type_defs.md#startimportlabelstaskrunrequestrequesttypedef).
+1. See [:material-code-braces: StartImportLabelsTaskRunResponseTypeDef](./type_defs.md#startimportlabelstaskrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
-- `InputS3Path`: `str` *(required)*
-- `ReplaceAllLabels`: `bool`
+```python title="Usage example with kwargs"
+kwargs: StartImportLabelsTaskRunRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+    "InputS3Path": ...,
+}
 
-Returns
-[StartImportLabelsTaskRunResponseTypeDef](./type_defs.md#startimportlabelstaskrunresponsetypedef).
+parent.start_import_labels_task_run(**kwargs)
+```
 
-<a id="start\_job\_run"></a>
+1. See [:material-code-braces: StartImportLabelsTaskRunRequestRequestTypeDef](./type_defs.md#startimportlabelstaskrunrequestrequesttypedef) 
 
-### start_job_run
+### start\_job\_run
 
 Starts a job run using a job definition.
 
-Type annotations for `boto3.client("glue").start_job_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").start_job_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_job_run)
 
-Boto3 documentation:
-[Glue.Client.start_job_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_job_run)
+```python title="Method definition"
+def start_job_run(
+    self,
+    *,
+    JobName: str,
+    JobRunId: str = ...,
+    Arguments: Mapping[str, str] = ...,
+    AllocatedCapacity: int = ...,
+    Timeout: int = ...,
+    MaxCapacity: float = ...,
+    SecurityConfiguration: str = ...,
+    NotificationProperty: NotificationPropertyTypeDef = ...,  # (1)
+    WorkerType: WorkerTypeType = ...,  # (2)
+    NumberOfWorkers: int = ...,
+) -> StartJobRunResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartJobRunRequestRequestTypeDef](./type_defs.md#startjobrunrequestrequesttypedef).
+1. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
+2. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+3. See [:material-code-braces: StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
-- `JobRunId`: `str`
-- `Arguments`: `Mapping`\[`str`, `str`\]
-- `AllocatedCapacity`: `int`
-- `Timeout`: `int`
-- `MaxCapacity`: `float`
-- `SecurityConfiguration`: `str`
-- `NotificationProperty`:
-  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
+```python title="Usage example with kwargs"
+kwargs: StartJobRunRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+}
 
-Returns
-[StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
+parent.start_job_run(**kwargs)
+```
 
-<a id="start\_ml\_evaluation\_task\_run"></a>
+1. See [:material-code-braces: StartJobRunRequestRequestTypeDef](./type_defs.md#startjobrunrequestrequesttypedef) 
 
-### start_ml_evaluation_task_run
+### start\_ml\_evaluation\_task\_run
 
 Starts a task to estimate the quality of the transform.
 
-Type annotations for `boto3.client("glue").start_ml_evaluation_task_run`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").start_ml_evaluation_task_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_evaluation_task_run)
 
-Boto3 documentation:
-[Glue.Client.start_ml_evaluation_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_evaluation_task_run)
+```python title="Method definition"
+def start_ml_evaluation_task_run(
+    self,
+    *,
+    TransformId: str,
+) -> StartMLEvaluationTaskRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartMLEvaluationTaskRunRequestRequestTypeDef](./type_defs.md#startmlevaluationtaskrunrequestrequesttypedef).
+1. See [:material-code-braces: StartMLEvaluationTaskRunResponseTypeDef](./type_defs.md#startmlevaluationtaskrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartMLEvaluationTaskRunRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+}
 
-Returns
-[StartMLEvaluationTaskRunResponseTypeDef](./type_defs.md#startmlevaluationtaskrunresponsetypedef).
+parent.start_ml_evaluation_task_run(**kwargs)
+```
 
-<a id="start\_ml\_labeling\_set\_generation\_task\_run"></a>
+1. See [:material-code-braces: StartMLEvaluationTaskRunRequestRequestTypeDef](./type_defs.md#startmlevaluationtaskrunrequestrequesttypedef) 
 
-### start_ml_labeling_set_generation_task_run
+### start\_ml\_labeling\_set\_generation\_task\_run
 
 Starts the active learning workflow for your machine learning transform to
 improve the transform's quality by generating label sets and adding labels.
 
-Type annotations for
-`boto3.client("glue").start_ml_labeling_set_generation_task_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").start_ml_labeling_set_generation_task_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_labeling_set_generation_task_run)
 
-Boto3 documentation:
-[Glue.Client.start_ml_labeling_set_generation_task_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_ml_labeling_set_generation_task_run)
+```python title="Method definition"
+def start_ml_labeling_set_generation_task_run(
+    self,
+    *,
+    TransformId: str,
+    OutputS3Path: str,
+) -> StartMLLabelingSetGenerationTaskRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunrequestrequesttypedef).
+1. See [:material-code-braces: StartMLLabelingSetGenerationTaskRunResponseTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
-- `OutputS3Path`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+    "OutputS3Path": ...,
+}
 
-Returns
-[StartMLLabelingSetGenerationTaskRunResponseTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunresponsetypedef).
+parent.start_ml_labeling_set_generation_task_run(**kwargs)
+```
 
-<a id="start\_trigger"></a>
+1. See [:material-code-braces: StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef](./type_defs.md#startmllabelingsetgenerationtaskrunrequestrequesttypedef) 
 
-### start_trigger
+### start\_trigger
 
 Starts an existing trigger.
 
-Type annotations for `boto3.client("glue").start_trigger` method.
+Type annotations and code completion for `#!python boto3.client("glue").start_trigger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_trigger)
 
-Boto3 documentation:
-[Glue.Client.start_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_trigger)
+```python title="Method definition"
+def start_trigger(
+    self,
+    *,
+    Name: str,
+) -> StartTriggerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartTriggerRequestRequestTypeDef](./type_defs.md#starttriggerrequestrequesttypedef).
+1. See [:material-code-braces: StartTriggerResponseTypeDef](./type_defs.md#starttriggerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartTriggerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[StartTriggerResponseTypeDef](./type_defs.md#starttriggerresponsetypedef).
+parent.start_trigger(**kwargs)
+```
 
-<a id="start\_workflow\_run"></a>
+1. See [:material-code-braces: StartTriggerRequestRequestTypeDef](./type_defs.md#starttriggerrequestrequesttypedef) 
 
-### start_workflow_run
+### start\_workflow\_run
 
 Starts a new run of the specified workflow.
 
-Type annotations for `boto3.client("glue").start_workflow_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").start_workflow_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_workflow_run)
 
-Boto3 documentation:
-[Glue.Client.start_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.start_workflow_run)
+```python title="Method definition"
+def start_workflow_run(
+    self,
+    *,
+    Name: str,
+    RunProperties: Mapping[str, str] = ...,
+) -> StartWorkflowRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartWorkflowRunRequestRequestTypeDef](./type_defs.md#startworkflowrunrequestrequesttypedef).
+1. See [:material-code-braces: StartWorkflowRunResponseTypeDef](./type_defs.md#startworkflowrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RunProperties`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartWorkflowRunRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[StartWorkflowRunResponseTypeDef](./type_defs.md#startworkflowrunresponsetypedef).
+parent.start_workflow_run(**kwargs)
+```
 
-<a id="stop\_crawler"></a>
+1. See [:material-code-braces: StartWorkflowRunRequestRequestTypeDef](./type_defs.md#startworkflowrunrequestrequesttypedef) 
 
-### stop_crawler
+### stop\_crawler
 
 If the specified crawler is running, stops the crawl.
 
-Type annotations for `boto3.client("glue").stop_crawler` method.
+Type annotations and code completion for `#!python boto3.client("glue").stop_crawler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler)
 
-Boto3 documentation:
-[Glue.Client.stop_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler)
+```python title="Method definition"
+def stop_crawler(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopCrawlerRequestRequestTypeDef](./type_defs.md#stopcrawlerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopCrawlerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_crawler(**kwargs)
+```
 
-<a id="stop\_crawler\_schedule"></a>
+1. See [:material-code-braces: StopCrawlerRequestRequestTypeDef](./type_defs.md#stopcrawlerrequestrequesttypedef) 
 
-### stop_crawler_schedule
+### stop\_crawler\_schedule
 
 Sets the schedule state of the specified crawler to `NOT_SCHEDULED` , but does
 not stop the crawler if it is already running.
 
-Type annotations for `boto3.client("glue").stop_crawler_schedule` method.
+Type annotations and code completion for `#!python boto3.client("glue").stop_crawler_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler_schedule)
 
-Boto3 documentation:
-[Glue.Client.stop_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_crawler_schedule)
+```python title="Method definition"
+def stop_crawler_schedule(
+    self,
+    *,
+    CrawlerName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopCrawlerScheduleRequestRequestTypeDef](./type_defs.md#stopcrawlerschedulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CrawlerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopCrawlerScheduleRequestRequestTypeDef = {  # (1)
+    "CrawlerName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_crawler_schedule(**kwargs)
+```
 
-<a id="stop\_session"></a>
+1. See [:material-code-braces: StopCrawlerScheduleRequestRequestTypeDef](./type_defs.md#stopcrawlerschedulerequestrequesttypedef) 
 
-### stop_session
+### stop\_session
 
 Stops the session.
 
-Type annotations for `boto3.client("glue").stop_session` method.
+Type annotations and code completion for `#!python boto3.client("glue").stop_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_session)
 
-Boto3 documentation:
-[Glue.Client.stop_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_session)
+```python title="Method definition"
+def stop_session(
+    self,
+    *,
+    Id: str,
+    RequestOrigin: str = ...,
+) -> StopSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopSessionRequestRequestTypeDef](./type_defs.md#stopsessionrequestrequesttypedef).
+1. See [:material-code-braces: StopSessionResponseTypeDef](./type_defs.md#stopsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `RequestOrigin`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopSessionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[StopSessionResponseTypeDef](./type_defs.md#stopsessionresponsetypedef).
+parent.stop_session(**kwargs)
+```
 
-<a id="stop\_trigger"></a>
+1. See [:material-code-braces: StopSessionRequestRequestTypeDef](./type_defs.md#stopsessionrequestrequesttypedef) 
 
-### stop_trigger
+### stop\_trigger
 
 Stops a specified trigger.
 
-Type annotations for `boto3.client("glue").stop_trigger` method.
+Type annotations and code completion for `#!python boto3.client("glue").stop_trigger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_trigger)
 
-Boto3 documentation:
-[Glue.Client.stop_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_trigger)
+```python title="Method definition"
+def stop_trigger(
+    self,
+    *,
+    Name: str,
+) -> StopTriggerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopTriggerRequestRequestTypeDef](./type_defs.md#stoptriggerrequestrequesttypedef).
+1. See [:material-code-braces: StopTriggerResponseTypeDef](./type_defs.md#stoptriggerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopTriggerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[StopTriggerResponseTypeDef](./type_defs.md#stoptriggerresponsetypedef).
+parent.stop_trigger(**kwargs)
+```
 
-<a id="stop\_workflow\_run"></a>
+1. See [:material-code-braces: StopTriggerRequestRequestTypeDef](./type_defs.md#stoptriggerrequestrequesttypedef) 
 
-### stop_workflow_run
+### stop\_workflow\_run
 
 Stops the execution of the specified workflow run.
 
-Type annotations for `boto3.client("glue").stop_workflow_run` method.
+Type annotations and code completion for `#!python boto3.client("glue").stop_workflow_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_workflow_run)
 
-Boto3 documentation:
-[Glue.Client.stop_workflow_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_workflow_run)
+```python title="Method definition"
+def stop_workflow_run(
+    self,
+    *,
+    Name: str,
+    RunId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopWorkflowRunRequestRequestTypeDef](./type_defs.md#stopworkflowrunrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopWorkflowRunRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RunId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_workflow_run(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopWorkflowRunRequestRequestTypeDef](./type_defs.md#stopworkflowrunrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to a resource.
 
-Type annotations for `boto3.client("glue").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("glue").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.tag_resource)
 
-Boto3 documentation:
-[Glue.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagsToAdd: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagsToAdd`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagsToAdd": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a resource.
 
-Type annotations for `boto3.client("glue").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("glue").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.untag_resource)
 
-Boto3 documentation:
-[Glue.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagsToRemove: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagsToRemove`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagsToRemove": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_blueprint"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_blueprint
+### update\_blueprint
 
 Updates a registered blueprint.
 
-Type annotations for `boto3.client("glue").update_blueprint` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_blueprint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_blueprint)
 
-Boto3 documentation:
-[Glue.Client.update_blueprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_blueprint)
+```python title="Method definition"
+def update_blueprint(
+    self,
+    *,
+    Name: str,
+    BlueprintLocation: str,
+    Description: str = ...,
+) -> UpdateBlueprintResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBlueprintRequestRequestTypeDef](./type_defs.md#updateblueprintrequestrequesttypedef).
+1. See [:material-code-braces: UpdateBlueprintResponseTypeDef](./type_defs.md#updateblueprintresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `BlueprintLocation`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateBlueprintRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "BlueprintLocation": ...,
+}
 
-Returns
-[UpdateBlueprintResponseTypeDef](./type_defs.md#updateblueprintresponsetypedef).
+parent.update_blueprint(**kwargs)
+```
 
-<a id="update\_classifier"></a>
+1. See [:material-code-braces: UpdateBlueprintRequestRequestTypeDef](./type_defs.md#updateblueprintrequestrequesttypedef) 
 
-### update_classifier
+### update\_classifier
 
 Modifies an existing classifier (a `GrokClassifier` , an `XMLClassifier` , a
 `JsonClassifier` , or a `CsvClassifier` , depending on which field is present).
 
-Type annotations for `boto3.client("glue").update_classifier` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_classifier` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_classifier)
 
-Boto3 documentation:
-[Glue.Client.update_classifier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_classifier)
+```python title="Method definition"
+def update_classifier(
+    self,
+    *,
+    GrokClassifier: UpdateGrokClassifierRequestTypeDef = ...,  # (1)
+    XMLClassifier: UpdateXMLClassifierRequestTypeDef = ...,  # (2)
+    JsonClassifier: UpdateJsonClassifierRequestTypeDef = ...,  # (3)
+    CsvClassifier: UpdateCsvClassifierRequestTypeDef = ...,  # (4)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateClassifierRequestRequestTypeDef](./type_defs.md#updateclassifierrequestrequesttypedef).
+1. See [:material-code-braces: UpdateGrokClassifierRequestTypeDef](./type_defs.md#updategrokclassifierrequesttypedef) 
+2. See [:material-code-braces: UpdateXMLClassifierRequestTypeDef](./type_defs.md#updatexmlclassifierrequesttypedef) 
+3. See [:material-code-braces: UpdateJsonClassifierRequestTypeDef](./type_defs.md#updatejsonclassifierrequesttypedef) 
+4. See [:material-code-braces: UpdateCsvClassifierRequestTypeDef](./type_defs.md#updatecsvclassifierrequesttypedef) 
 
-Keyword-only arguments:
 
-- `GrokClassifier`:
-  [UpdateGrokClassifierRequestTypeDef](./type_defs.md#updategrokclassifierrequesttypedef)
-- `XMLClassifier`:
-  [UpdateXMLClassifierRequestTypeDef](./type_defs.md#updatexmlclassifierrequesttypedef)
-- `JsonClassifier`:
-  [UpdateJsonClassifierRequestTypeDef](./type_defs.md#updatejsonclassifierrequesttypedef)
-- `CsvClassifier`:
-  [UpdateCsvClassifierRequestTypeDef](./type_defs.md#updatecsvclassifierrequesttypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateClassifierRequestRequestTypeDef = {  # (1)
+    "GrokClassifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_classifier(**kwargs)
+```
 
-<a id="update\_column\_statistics\_for\_partition"></a>
+1. See [:material-code-braces: UpdateClassifierRequestRequestTypeDef](./type_defs.md#updateclassifierrequestrequesttypedef) 
 
-### update_column_statistics_for_partition
+### update\_column\_statistics\_for\_partition
 
 Creates or updates partition statistics of columns.
 
-Type annotations for
-`boto3.client("glue").update_column_statistics_for_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_column_statistics_for_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition)
 
-Boto3 documentation:
-[Glue.Client.update_column_statistics_for_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_partition)
+```python title="Method definition"
+def update_column_statistics_for_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    ColumnStatisticsList: Sequence[ColumnStatisticsTypeDef],  # (1)
+    CatalogId: str = ...,
+) -> UpdateColumnStatisticsForPartitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionrequestrequesttypedef).
+1. See [:material-code-braces: ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef) 
+2. See [:material-code-braces: UpdateColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionValues`: `Sequence`\[`str`\] *(required)*
-- `ColumnStatisticsList`:
-  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateColumnStatisticsForPartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionValues": ...,
+    "ColumnStatisticsList": ...,
+}
 
-Returns
-[UpdateColumnStatisticsForPartitionResponseTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionresponsetypedef).
+parent.update_column_statistics_for_partition(**kwargs)
+```
 
-<a id="update\_column\_statistics\_for\_table"></a>
+1. See [:material-code-braces: UpdateColumnStatisticsForPartitionRequestRequestTypeDef](./type_defs.md#updatecolumnstatisticsforpartitionrequestrequesttypedef) 
 
-### update_column_statistics_for_table
+### update\_column\_statistics\_for\_table
 
 Creates or updates table statistics of columns.
 
-Type annotations for `boto3.client("glue").update_column_statistics_for_table`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").update_column_statistics_for_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_table)
 
-Boto3 documentation:
-[Glue.Client.update_column_statistics_for_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_column_statistics_for_table)
+```python title="Method definition"
+def update_column_statistics_for_table(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    ColumnStatisticsList: Sequence[ColumnStatisticsTypeDef],  # (1)
+    CatalogId: str = ...,
+) -> UpdateColumnStatisticsForTableResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateColumnStatisticsForTableRequestRequestTypeDef](./type_defs.md#updatecolumnstatisticsfortablerequestrequesttypedef).
+1. See [:material-code-braces: ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef) 
+2. See [:material-code-braces: UpdateColumnStatisticsForTableResponseTypeDef](./type_defs.md#updatecolumnstatisticsfortableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `ColumnStatisticsList`:
-  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateColumnStatisticsForTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "ColumnStatisticsList": ...,
+}
 
-Returns
-[UpdateColumnStatisticsForTableResponseTypeDef](./type_defs.md#updatecolumnstatisticsfortableresponsetypedef).
+parent.update_column_statistics_for_table(**kwargs)
+```
 
-<a id="update\_connection"></a>
+1. See [:material-code-braces: UpdateColumnStatisticsForTableRequestRequestTypeDef](./type_defs.md#updatecolumnstatisticsfortablerequestrequesttypedef) 
 
-### update_connection
+### update\_connection
 
 Updates a connection definition in the Data Catalog.
 
-Type annotations for `boto3.client("glue").update_connection` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_connection)
 
-Boto3 documentation:
-[Glue.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_connection)
+```python title="Method definition"
+def update_connection(
+    self,
+    *,
+    Name: str,
+    ConnectionInput: ConnectionInputTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef).
+1. See [:material-code-braces: ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ConnectionInput`:
-  [ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ConnectionInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_connection(**kwargs)
+```
 
-<a id="update\_crawler"></a>
+1. See [:material-code-braces: UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef) 
 
-### update_crawler
+### update\_crawler
 
 Updates a crawler.
 
-Type annotations for `boto3.client("glue").update_crawler` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_crawler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler)
 
-Boto3 documentation:
-[Glue.Client.update_crawler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler)
+```python title="Method definition"
+def update_crawler(
+    self,
+    *,
+    Name: str,
+    Role: str = ...,
+    DatabaseName: str = ...,
+    Description: str = ...,
+    Targets: CrawlerTargetsTypeDef = ...,  # (1)
+    Schedule: str = ...,
+    Classifiers: Sequence[str] = ...,
+    TablePrefix: str = ...,
+    SchemaChangePolicy: SchemaChangePolicyTypeDef = ...,  # (2)
+    RecrawlPolicy: RecrawlPolicyTypeDef = ...,  # (3)
+    LineageConfiguration: LineageConfigurationTypeDef = ...,  # (4)
+    LakeFormationConfiguration: LakeFormationConfigurationTypeDef = ...,  # (5)
+    Configuration: str = ...,
+    CrawlerSecurityConfiguration: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateCrawlerRequestRequestTypeDef](./type_defs.md#updatecrawlerrequestrequesttypedef).
+1. See [:material-code-braces: CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef) 
+2. See [:material-code-braces: SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef) 
+3. See [:material-code-braces: RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef) 
+4. See [:material-code-braces: LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef) 
+5. See [:material-code-braces: LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Role`: `str`
-- `DatabaseName`: `str`
-- `Description`: `str`
-- `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
-- `Schedule`: `str`
-- `Classifiers`: `Sequence`\[`str`\]
-- `TablePrefix`: `str`
-- `SchemaChangePolicy`:
-  [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
-- `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
-- `LineageConfiguration`:
-  [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
-- `LakeFormationConfiguration`:
-  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
-- `Configuration`: `str`
-- `CrawlerSecurityConfiguration`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateCrawlerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_crawler(**kwargs)
+```
 
-<a id="update\_crawler\_schedule"></a>
+1. See [:material-code-braces: UpdateCrawlerRequestRequestTypeDef](./type_defs.md#updatecrawlerrequestrequesttypedef) 
 
-### update_crawler_schedule
+### update\_crawler\_schedule
 
 Updates the schedule of a crawler using a `cron` expression.
 
-Type annotations for `boto3.client("glue").update_crawler_schedule` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_crawler_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler_schedule)
 
-Boto3 documentation:
-[Glue.Client.update_crawler_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_crawler_schedule)
+```python title="Method definition"
+def update_crawler_schedule(
+    self,
+    *,
+    CrawlerName: str,
+    Schedule: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateCrawlerScheduleRequestRequestTypeDef](./type_defs.md#updatecrawlerschedulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CrawlerName`: `str` *(required)*
-- `Schedule`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateCrawlerScheduleRequestRequestTypeDef = {  # (1)
+    "CrawlerName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_crawler_schedule(**kwargs)
+```
 
-<a id="update\_database"></a>
+1. See [:material-code-braces: UpdateCrawlerScheduleRequestRequestTypeDef](./type_defs.md#updatecrawlerschedulerequestrequesttypedef) 
 
-### update_database
+### update\_database
 
 Updates an existing database definition in a Data Catalog.
 
-Type annotations for `boto3.client("glue").update_database` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_database` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_database)
 
-Boto3 documentation:
-[Glue.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_database)
+```python title="Method definition"
+def update_database(
+    self,
+    *,
+    Name: str,
+    DatabaseInput: DatabaseInputTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDatabaseRequestRequestTypeDef](./type_defs.md#updatedatabaserequestrequesttypedef).
+1. See [:material-code-braces: DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `DatabaseInput`: [DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef)
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDatabaseRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "DatabaseInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_database(**kwargs)
+```
 
-<a id="update\_dev\_endpoint"></a>
+1. See [:material-code-braces: UpdateDatabaseRequestRequestTypeDef](./type_defs.md#updatedatabaserequestrequesttypedef) 
 
-### update_dev_endpoint
+### update\_dev\_endpoint
 
 Updates a specified development endpoint.
 
-Type annotations for `boto3.client("glue").update_dev_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_dev_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_dev_endpoint)
 
-Boto3 documentation:
-[Glue.Client.update_dev_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_dev_endpoint)
+```python title="Method definition"
+def update_dev_endpoint(
+    self,
+    *,
+    EndpointName: str,
+    PublicKey: str = ...,
+    AddPublicKeys: Sequence[str] = ...,
+    DeletePublicKeys: Sequence[str] = ...,
+    CustomLibraries: DevEndpointCustomLibrariesTypeDef = ...,  # (1)
+    UpdateEtlLibraries: bool = ...,
+    DeleteArguments: Sequence[str] = ...,
+    AddArguments: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDevEndpointRequestRequestTypeDef](./type_defs.md#updatedevendpointrequestrequesttypedef).
+1. See [:material-code-braces: DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef) 
 
-Keyword-only arguments:
 
-- `EndpointName`: `str` *(required)*
-- `PublicKey`: `str`
-- `AddPublicKeys`: `Sequence`\[`str`\]
-- `DeletePublicKeys`: `Sequence`\[`str`\]
-- `CustomLibraries`:
-  [DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef)
-- `UpdateEtlLibraries`: `bool`
-- `DeleteArguments`: `Sequence`\[`str`\]
-- `AddArguments`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateDevEndpointRequestRequestTypeDef = {  # (1)
+    "EndpointName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_dev_endpoint(**kwargs)
+```
 
-<a id="update\_job"></a>
+1. See [:material-code-braces: UpdateDevEndpointRequestRequestTypeDef](./type_defs.md#updatedevendpointrequestrequesttypedef) 
 
-### update_job
+### update\_job
 
 Updates an existing job definition.
 
-Type annotations for `boto3.client("glue").update_job` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_job)
 
-Boto3 documentation:
-[Glue.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_job)
+```python title="Method definition"
+def update_job(
+    self,
+    *,
+    JobName: str,
+    JobUpdate: JobUpdateTypeDef,  # (1)
+) -> UpdateJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateJobRequestRequestTypeDef](./type_defs.md#updatejobrequestrequesttypedef).
+1. See [:material-code-braces: JobUpdateTypeDef](./type_defs.md#jobupdatetypedef) 
+2. See [:material-code-braces: UpdateJobResponseTypeDef](./type_defs.md#updatejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobName`: `str` *(required)*
-- `JobUpdate`: [JobUpdateTypeDef](./type_defs.md#jobupdatetypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateJobRequestRequestTypeDef = {  # (1)
+    "JobName": ...,
+    "JobUpdate": ...,
+}
 
-Returns [UpdateJobResponseTypeDef](./type_defs.md#updatejobresponsetypedef).
+parent.update_job(**kwargs)
+```
 
-<a id="update\_ml\_transform"></a>
+1. See [:material-code-braces: UpdateJobRequestRequestTypeDef](./type_defs.md#updatejobrequestrequesttypedef) 
 
-### update_ml_transform
+### update\_ml\_transform
 
 Updates an existing machine learning transform.
 
-Type annotations for `boto3.client("glue").update_ml_transform` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_ml_transform` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_ml_transform)
 
-Boto3 documentation:
-[Glue.Client.update_ml_transform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_ml_transform)
+```python title="Method definition"
+def update_ml_transform(
+    self,
+    *,
+    TransformId: str,
+    Name: str = ...,
+    Description: str = ...,
+    Parameters: TransformParametersTypeDef = ...,  # (1)
+    Role: str = ...,
+    GlueVersion: str = ...,
+    MaxCapacity: float = ...,
+    WorkerType: WorkerTypeType = ...,  # (2)
+    NumberOfWorkers: int = ...,
+    Timeout: int = ...,
+    MaxRetries: int = ...,
+) -> UpdateMLTransformResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMLTransformRequestRequestTypeDef](./type_defs.md#updatemltransformrequestrequesttypedef).
+1. See [:material-code-braces: TransformParametersTypeDef](./type_defs.md#transformparameterstypedef) 
+2. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+3. See [:material-code-braces: UpdateMLTransformResponseTypeDef](./type_defs.md#updatemltransformresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransformId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `Parameters`:
-  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
-- `Role`: `str`
-- `GlueVersion`: `str`
-- `MaxCapacity`: `float`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-- `Timeout`: `int`
-- `MaxRetries`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateMLTransformRequestRequestTypeDef = {  # (1)
+    "TransformId": ...,
+}
 
-Returns
-[UpdateMLTransformResponseTypeDef](./type_defs.md#updatemltransformresponsetypedef).
+parent.update_ml_transform(**kwargs)
+```
 
-<a id="update\_partition"></a>
+1. See [:material-code-braces: UpdateMLTransformRequestRequestTypeDef](./type_defs.md#updatemltransformrequestrequesttypedef) 
 
-### update_partition
+### update\_partition
 
 Updates a partition.
 
-Type annotations for `boto3.client("glue").update_partition` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_partition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_partition)
 
-Boto3 documentation:
-[Glue.Client.update_partition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_partition)
+```python title="Method definition"
+def update_partition(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    PartitionValueList: Sequence[str],
+    PartitionInput: PartitionInputTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdatePartitionRequestRequestTypeDef](./type_defs.md#updatepartitionrequestrequesttypedef).
+1. See [:material-code-braces: PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `PartitionValueList`: `Sequence`\[`str`\] *(required)*
-- `PartitionInput`:
-  [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePartitionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "PartitionValueList": ...,
+    "PartitionInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_partition(**kwargs)
+```
 
-<a id="update\_registry"></a>
+1. See [:material-code-braces: UpdatePartitionRequestRequestTypeDef](./type_defs.md#updatepartitionrequestrequesttypedef) 
 
-### update_registry
+### update\_registry
 
 Updates an existing registry which is used to hold a collection of schemas.
 
-Type annotations for `boto3.client("glue").update_registry` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_registry` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_registry)
 
-Boto3 documentation:
-[Glue.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_registry)
+```python title="Method definition"
+def update_registry(
+    self,
+    *,
+    RegistryId: RegistryIdTypeDef,  # (1)
+    Description: str,
+) -> UpdateRegistryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRegistryInputRequestTypeDef](./type_defs.md#updateregistryinputrequesttypedef).
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
+2. See [:material-code-braces: UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-  *(required)*
-- `Description`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRegistryInputRequestTypeDef = {  # (1)
+    "RegistryId": ...,
+    "Description": ...,
+}
 
-Returns
-[UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
+parent.update_registry(**kwargs)
+```
 
-<a id="update\_schema"></a>
+1. See [:material-code-braces: UpdateRegistryInputRequestTypeDef](./type_defs.md#updateregistryinputrequesttypedef) 
 
-### update_schema
+### update\_schema
 
 Updates the description, compatibility setting, or version checkpoint for a
 schema set.
 
-Type annotations for `boto3.client("glue").update_schema` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_schema)
 
-Boto3 documentation:
-[Glue.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_schema)
+```python title="Method definition"
+def update_schema(
+    self,
+    *,
+    SchemaId: SchemaIdTypeDef,  # (1)
+    SchemaVersionNumber: SchemaVersionNumberTypeDef = ...,  # (2)
+    Compatibility: CompatibilityType = ...,  # (3)
+    Description: str = ...,
+) -> UpdateSchemaResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSchemaInputRequestTypeDef](./type_defs.md#updateschemainputrequesttypedef).
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+3. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
+4. See [:material-code-braces: UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef) *(required)*
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSchemaInputRequestTypeDef = {  # (1)
+    "SchemaId": ...,
+}
 
-Returns
-[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
+parent.update_schema(**kwargs)
+```
 
-<a id="update\_table"></a>
+1. See [:material-code-braces: UpdateSchemaInputRequestTypeDef](./type_defs.md#updateschemainputrequesttypedef) 
 
-### update_table
+### update\_table
 
 Updates a metadata table in the Data Catalog.
 
-Type annotations for `boto3.client("glue").update_table` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_table)
 
-Boto3 documentation:
-[Glue.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_table)
+```python title="Method definition"
+def update_table(
+    self,
+    *,
+    DatabaseName: str,
+    TableInput: TableInputTypeDef,  # (1)
+    CatalogId: str = ...,
+    SkipArchive: bool = ...,
+    TransactionId: str = ...,
+    VersionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateTableRequestRequestTypeDef](./type_defs.md#updatetablerequestrequesttypedef).
+1. See [:material-code-braces: TableInputTypeDef](./type_defs.md#tableinputtypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableInput`: [TableInputTypeDef](./type_defs.md#tableinputtypedef)
-  *(required)*
-- `CatalogId`: `str`
-- `SkipArchive`: `bool`
-- `TransactionId`: `str`
-- `VersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_table(**kwargs)
+```
 
-<a id="update\_trigger"></a>
+1. See [:material-code-braces: UpdateTableRequestRequestTypeDef](./type_defs.md#updatetablerequestrequesttypedef) 
 
-### update_trigger
+### update\_trigger
 
 Updates a trigger definition.
 
-Type annotations for `boto3.client("glue").update_trigger` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_trigger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_trigger)
 
-Boto3 documentation:
-[Glue.Client.update_trigger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_trigger)
+```python title="Method definition"
+def update_trigger(
+    self,
+    *,
+    Name: str,
+    TriggerUpdate: TriggerUpdateTypeDef,  # (1)
+) -> UpdateTriggerResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTriggerRequestRequestTypeDef](./type_defs.md#updatetriggerrequestrequesttypedef).
+1. See [:material-code-braces: TriggerUpdateTypeDef](./type_defs.md#triggerupdatetypedef) 
+2. See [:material-code-braces: UpdateTriggerResponseTypeDef](./type_defs.md#updatetriggerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `TriggerUpdate`: [TriggerUpdateTypeDef](./type_defs.md#triggerupdatetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTriggerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "TriggerUpdate": ...,
+}
 
-Returns
-[UpdateTriggerResponseTypeDef](./type_defs.md#updatetriggerresponsetypedef).
+parent.update_trigger(**kwargs)
+```
 
-<a id="update\_user\_defined\_function"></a>
+1. See [:material-code-braces: UpdateTriggerRequestRequestTypeDef](./type_defs.md#updatetriggerrequestrequesttypedef) 
 
-### update_user_defined_function
+### update\_user\_defined\_function
 
 Updates an existing function definition in the Data Catalog.
 
-Type annotations for `boto3.client("glue").update_user_defined_function`
-method.
+Type annotations and code completion for `#!python boto3.client("glue").update_user_defined_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_user_defined_function)
 
-Boto3 documentation:
-[Glue.Client.update_user_defined_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_user_defined_function)
+```python title="Method definition"
+def update_user_defined_function(
+    self,
+    *,
+    DatabaseName: str,
+    FunctionName: str,
+    FunctionInput: UserDefinedFunctionInputTypeDef,  # (1)
+    CatalogId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#updateuserdefinedfunctionrequestrequesttypedef).
+1. See [:material-code-braces: UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `FunctionName`: `str` *(required)*
-- `FunctionInput`:
-  [UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef)
-  *(required)*
-- `CatalogId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserDefinedFunctionRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "FunctionName": ...,
+    "FunctionInput": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_user_defined_function(**kwargs)
+```
 
-<a id="update\_workflow"></a>
+1. See [:material-code-braces: UpdateUserDefinedFunctionRequestRequestTypeDef](./type_defs.md#updateuserdefinedfunctionrequestrequesttypedef) 
 
-### update_workflow
+### update\_workflow
 
 Updates an existing workflow.
 
-Type annotations for `boto3.client("glue").update_workflow` method.
+Type annotations and code completion for `#!python boto3.client("glue").update_workflow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_workflow)
 
-Boto3 documentation:
-[Glue.Client.update_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.update_workflow)
+```python title="Method definition"
+def update_workflow(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    DefaultRunProperties: Mapping[str, str] = ...,
+    MaxConcurrentRuns: int = ...,
+) -> UpdateWorkflowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkflowRequestRequestTypeDef](./type_defs.md#updateworkflowrequestrequesttypedef).
+1. See [:material-code-braces: UpdateWorkflowResponseTypeDef](./type_defs.md#updateworkflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
-- `MaxConcurrentRuns`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkflowRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateWorkflowResponseTypeDef](./type_defs.md#updateworkflowresponsetypedef).
+parent.update_workflow(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateWorkflowRequestRequestTypeDef](./type_defs.md#updateworkflowrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("glue").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("glue").get_paginator` method with overloads.
 
-- `client.get_paginator("get_classifiers")` ->
-  [GetClassifiersPaginator](./paginators.md#getclassifierspaginator)
-- `client.get_paginator("get_connections")` ->
-  [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
-- `client.get_paginator("get_crawler_metrics")` ->
-  [GetCrawlerMetricsPaginator](./paginators.md#getcrawlermetricspaginator)
-- `client.get_paginator("get_crawlers")` ->
-  [GetCrawlersPaginator](./paginators.md#getcrawlerspaginator)
-- `client.get_paginator("get_databases")` ->
-  [GetDatabasesPaginator](./paginators.md#getdatabasespaginator)
-- `client.get_paginator("get_dev_endpoints")` ->
-  [GetDevEndpointsPaginator](./paginators.md#getdevendpointspaginator)
-- `client.get_paginator("get_job_runs")` ->
-  [GetJobRunsPaginator](./paginators.md#getjobrunspaginator)
-- `client.get_paginator("get_jobs")` ->
-  [GetJobsPaginator](./paginators.md#getjobspaginator)
-- `client.get_paginator("get_partition_indexes")` ->
-  [GetPartitionIndexesPaginator](./paginators.md#getpartitionindexespaginator)
-- `client.get_paginator("get_partitions")` ->
-  [GetPartitionsPaginator](./paginators.md#getpartitionspaginator)
-- `client.get_paginator("get_resource_policies")` ->
-  [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
-- `client.get_paginator("get_security_configurations")` ->
-  [GetSecurityConfigurationsPaginator](./paginators.md#getsecurityconfigurationspaginator)
-- `client.get_paginator("get_table_versions")` ->
-  [GetTableVersionsPaginator](./paginators.md#gettableversionspaginator)
-- `client.get_paginator("get_tables")` ->
-  [GetTablesPaginator](./paginators.md#gettablespaginator)
-- `client.get_paginator("get_triggers")` ->
-  [GetTriggersPaginator](./paginators.md#gettriggerspaginator)
-- `client.get_paginator("get_user_defined_functions")` ->
-  [GetUserDefinedFunctionsPaginator](./paginators.md#getuserdefinedfunctionspaginator)
-- `client.get_paginator("list_registries")` ->
-  [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
-- `client.get_paginator("list_schema_versions")` ->
-  [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
-- `client.get_paginator("list_schemas")` ->
-  [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+- `client.get_paginator("get_classifiers")` -> [GetClassifiersPaginator](./paginators.md#getclassifierspaginator)
+- `client.get_paginator("get_connections")` -> [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
+- `client.get_paginator("get_crawler_metrics")` -> [GetCrawlerMetricsPaginator](./paginators.md#getcrawlermetricspaginator)
+- `client.get_paginator("get_crawlers")` -> [GetCrawlersPaginator](./paginators.md#getcrawlerspaginator)
+- `client.get_paginator("get_databases")` -> [GetDatabasesPaginator](./paginators.md#getdatabasespaginator)
+- `client.get_paginator("get_dev_endpoints")` -> [GetDevEndpointsPaginator](./paginators.md#getdevendpointspaginator)
+- `client.get_paginator("get_job_runs")` -> [GetJobRunsPaginator](./paginators.md#getjobrunspaginator)
+- `client.get_paginator("get_jobs")` -> [GetJobsPaginator](./paginators.md#getjobspaginator)
+- `client.get_paginator("get_partition_indexes")` -> [GetPartitionIndexesPaginator](./paginators.md#getpartitionindexespaginator)
+- `client.get_paginator("get_partitions")` -> [GetPartitionsPaginator](./paginators.md#getpartitionspaginator)
+- `client.get_paginator("get_resource_policies")` -> [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
+- `client.get_paginator("get_security_configurations")` -> [GetSecurityConfigurationsPaginator](./paginators.md#getsecurityconfigurationspaginator)
+- `client.get_paginator("get_table_versions")` -> [GetTableVersionsPaginator](./paginators.md#gettableversionspaginator)
+- `client.get_paginator("get_tables")` -> [GetTablesPaginator](./paginators.md#gettablespaginator)
+- `client.get_paginator("get_triggers")` -> [GetTriggersPaginator](./paginators.md#gettriggerspaginator)
+- `client.get_paginator("get_user_defined_functions")` -> [GetUserDefinedFunctionsPaginator](./paginators.md#getuserdefinedfunctionspaginator)
+- `client.get_paginator("list_registries")` -> [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
+- `client.get_paginator("list_schema_versions")` -> [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
+- `client.get_paginator("list_schemas")` -> [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+
+
+

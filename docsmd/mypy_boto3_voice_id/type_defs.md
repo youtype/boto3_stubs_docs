@@ -1,1057 +1,1280 @@
-<a id="typed-dictionaries-for-boto3-voiceid-module"></a>
-
-# Typed dictionaries for boto3 VoiceID module
+# Typed dictionaries
 
 > [Index](../README.md) > [VoiceID](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
-type annotations stubs module
-[mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
+!!! note ""
 
-- [Typed dictionaries for boto3 VoiceID module](#typed-dictionaries-for-boto3-voiceid-module)
-  - [AuthenticationConfigurationTypeDef](#authenticationconfigurationtypedef)
-  - [AuthenticationResultTypeDef](#authenticationresulttypedef)
-  - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
-  - [CreateDomainResponseTypeDef](#createdomainresponsetypedef)
-  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
-  - [DeleteFraudsterRequestRequestTypeDef](#deletefraudsterrequestrequesttypedef)
-  - [DeleteSpeakerRequestRequestTypeDef](#deletespeakerrequestrequesttypedef)
-  - [DescribeDomainRequestRequestTypeDef](#describedomainrequestrequesttypedef)
-  - [DescribeDomainResponseTypeDef](#describedomainresponsetypedef)
-  - [DescribeFraudsterRegistrationJobRequestRequestTypeDef](#describefraudsterregistrationjobrequestrequesttypedef)
-  - [DescribeFraudsterRegistrationJobResponseTypeDef](#describefraudsterregistrationjobresponsetypedef)
-  - [DescribeFraudsterRequestRequestTypeDef](#describefraudsterrequestrequesttypedef)
-  - [DescribeFraudsterResponseTypeDef](#describefraudsterresponsetypedef)
-  - [DescribeSpeakerEnrollmentJobRequestRequestTypeDef](#describespeakerenrollmentjobrequestrequesttypedef)
-  - [DescribeSpeakerEnrollmentJobResponseTypeDef](#describespeakerenrollmentjobresponsetypedef)
-  - [DescribeSpeakerRequestRequestTypeDef](#describespeakerrequestrequesttypedef)
-  - [DescribeSpeakerResponseTypeDef](#describespeakerresponsetypedef)
-  - [DomainSummaryTypeDef](#domainsummarytypedef)
-  - [DomainTypeDef](#domaintypedef)
-  - [EnrollmentConfigTypeDef](#enrollmentconfigtypedef)
-  - [EnrollmentJobFraudDetectionConfigTypeDef](#enrollmentjobfrauddetectionconfigtypedef)
-  - [EvaluateSessionRequestRequestTypeDef](#evaluatesessionrequestrequesttypedef)
-  - [EvaluateSessionResponseTypeDef](#evaluatesessionresponsetypedef)
-  - [FailureDetailsTypeDef](#failuredetailstypedef)
-  - [FraudDetectionConfigurationTypeDef](#frauddetectionconfigurationtypedef)
-  - [FraudDetectionResultTypeDef](#frauddetectionresulttypedef)
-  - [FraudRiskDetailsTypeDef](#fraudriskdetailstypedef)
-  - [FraudsterRegistrationJobSummaryTypeDef](#fraudsterregistrationjobsummarytypedef)
-  - [FraudsterRegistrationJobTypeDef](#fraudsterregistrationjobtypedef)
-  - [FraudsterTypeDef](#fraudstertypedef)
-  - [InputDataConfigTypeDef](#inputdataconfigtypedef)
-  - [JobProgressTypeDef](#jobprogresstypedef)
-  - [KnownFraudsterRiskTypeDef](#knownfraudsterrisktypedef)
-  - [ListDomainsRequestRequestTypeDef](#listdomainsrequestrequesttypedef)
-  - [ListDomainsResponseTypeDef](#listdomainsresponsetypedef)
-  - [ListFraudsterRegistrationJobsRequestRequestTypeDef](#listfraudsterregistrationjobsrequestrequesttypedef)
-  - [ListFraudsterRegistrationJobsResponseTypeDef](#listfraudsterregistrationjobsresponsetypedef)
-  - [ListSpeakerEnrollmentJobsRequestRequestTypeDef](#listspeakerenrollmentjobsrequestrequesttypedef)
-  - [ListSpeakerEnrollmentJobsResponseTypeDef](#listspeakerenrollmentjobsresponsetypedef)
-  - [ListSpeakersRequestRequestTypeDef](#listspeakersrequestrequesttypedef)
-  - [ListSpeakersResponseTypeDef](#listspeakersresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [OptOutSpeakerRequestRequestTypeDef](#optoutspeakerrequestrequesttypedef)
-  - [OptOutSpeakerResponseTypeDef](#optoutspeakerresponsetypedef)
-  - [OutputDataConfigTypeDef](#outputdataconfigtypedef)
-  - [RegistrationConfigTypeDef](#registrationconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ServerSideEncryptionConfigurationTypeDef](#serversideencryptionconfigurationtypedef)
-  - [SpeakerEnrollmentJobSummaryTypeDef](#speakerenrollmentjobsummarytypedef)
-  - [SpeakerEnrollmentJobTypeDef](#speakerenrollmentjobtypedef)
-  - [SpeakerSummaryTypeDef](#speakersummarytypedef)
-  - [SpeakerTypeDef](#speakertypedef)
-  - [StartFraudsterRegistrationJobRequestRequestTypeDef](#startfraudsterregistrationjobrequestrequesttypedef)
-  - [StartFraudsterRegistrationJobResponseTypeDef](#startfraudsterregistrationjobresponsetypedef)
-  - [StartSpeakerEnrollmentJobRequestRequestTypeDef](#startspeakerenrollmentjobrequestrequesttypedef)
-  - [StartSpeakerEnrollmentJobResponseTypeDef](#startspeakerenrollmentjobresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDomainRequestRequestTypeDef](#updatedomainrequestrequesttypedef)
-  - [UpdateDomainResponseTypeDef](#updatedomainresponsetypedef)
-
-<a id="authenticationconfigurationtypedef"></a>
+    Auto-generated documentation for [VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
+    type annotations stubs module [mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
 
 ## AuthenticationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import AuthenticationConfigurationTypeDef
+
+def get_value() -> AuthenticationConfigurationTypeDef:
+    return {
+        "AcceptanceThreshold": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceptanceThreshold`: `int`
-
-<a id="authenticationresulttypedef"></a>
+```python title="Definition"
+class AuthenticationConfigurationTypeDef(TypedDict):
+    AcceptanceThreshold: int,
+```
 
 ## AuthenticationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import AuthenticationResultTypeDef
+
+def get_value() -> AuthenticationResultTypeDef:
+    return {
+        "AudioAggregationEndedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AuthenticationResultTypeDef(TypedDict):
+    AudioAggregationEndedAt: NotRequired[datetime],
+    AudioAggregationStartedAt: NotRequired[datetime],
+    AuthenticationResultId: NotRequired[str],
+    Configuration: NotRequired[AuthenticationConfigurationTypeDef],  # (1)
+    CustomerSpeakerId: NotRequired[str],
+    Decision: NotRequired[AuthenticationDecisionType],  # (2)
+    GeneratedSpeakerId: NotRequired[str],
+    Score: NotRequired[int],
+```
 
-- `AudioAggregationEndedAt`: `datetime`
-- `AudioAggregationStartedAt`: `datetime`
-- `AuthenticationResultId`: `str`
-- `Configuration`:
-  [AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef)
-- `CustomerSpeakerId`: `str`
-- `Decision`:
-  [AuthenticationDecisionType](./literals.md#authenticationdecisiontype)
-- `GeneratedSpeakerId`: `str`
-- `Score`: `int`
-
-<a id="createdomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef) 
+2. See [:material-code-brackets: AuthenticationDecisionType](./literals.md#authenticationdecisiontype) 
 ## CreateDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import CreateDomainRequestRequestTypeDef
+
+def get_value() -> CreateDomainRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ServerSideEncryptionConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDomainRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ServerSideEncryptionConfiguration: ServerSideEncryptionConfigurationTypeDef,  # (1)
+    ClientToken: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-- `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdomainresponsetypedef"></a>
-
+1. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import CreateDomainResponseTypeDef
+
+def get_value() -> CreateDomainResponseTypeDef:
+    return {
+        "Domain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDomainResponseTypeDef(TypedDict):
+    Domain: DomainTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Domain`: [DomainTypeDef](./type_defs.md#domaintypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DeleteDomainRequestRequestTypeDef
+
+def get_value() -> DeleteDomainRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-
-<a id="deletefraudsterrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDomainRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+```
 
 ## DeleteFraudsterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DeleteFraudsterRequestRequestTypeDef
+
+def get_value() -> DeleteFraudsterRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "FraudsterId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-- `FraudsterId`: `str`
-
-<a id="deletespeakerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFraudsterRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    FraudsterId: str,
+```
 
 ## DeleteSpeakerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DeleteSpeakerRequestRequestTypeDef
+
+def get_value() -> DeleteSpeakerRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "SpeakerId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-- `SpeakerId`: `str`
-
-<a id="describedomainrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSpeakerRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    SpeakerId: str,
+```
 
 ## DescribeDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeDomainRequestRequestTypeDef
+
+def get_value() -> DescribeDomainRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-
-<a id="describedomainresponsetypedef"></a>
+```python title="Definition"
+class DescribeDomainRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+```
 
 ## DescribeDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeDomainResponseTypeDef
+
+def get_value() -> DescribeDomainResponseTypeDef:
+    return {
+        "Domain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDomainResponseTypeDef(TypedDict):
+    Domain: DomainTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Domain`: [DomainTypeDef](./type_defs.md#domaintypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describefraudsterregistrationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFraudsterRegistrationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeFraudsterRegistrationJobRequestRequestTypeDef
+
+def get_value() -> DescribeFraudsterRegistrationJobRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-- `JobId`: `str`
-
-<a id="describefraudsterregistrationjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeFraudsterRegistrationJobRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    JobId: str,
+```
 
 ## DescribeFraudsterRegistrationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeFraudsterRegistrationJobResponseTypeDef
+
+def get_value() -> DescribeFraudsterRegistrationJobResponseTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFraudsterRegistrationJobResponseTypeDef(TypedDict):
+    Job: FraudsterRegistrationJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Job`:
-  [FraudsterRegistrationJobTypeDef](./type_defs.md#fraudsterregistrationjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describefraudsterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FraudsterRegistrationJobTypeDef](./type_defs.md#fraudsterregistrationjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFraudsterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeFraudsterRequestRequestTypeDef
+
+def get_value() -> DescribeFraudsterRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "FraudsterId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-- `FraudsterId`: `str`
-
-<a id="describefraudsterresponsetypedef"></a>
+```python title="Definition"
+class DescribeFraudsterRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    FraudsterId: str,
+```
 
 ## DescribeFraudsterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeFraudsterResponseTypeDef
+
+def get_value() -> DescribeFraudsterResponseTypeDef:
+    return {
+        "Fraudster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFraudsterResponseTypeDef(TypedDict):
+    Fraudster: FraudsterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Fraudster`: [FraudsterTypeDef](./type_defs.md#fraudstertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describespeakerenrollmentjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FraudsterTypeDef](./type_defs.md#fraudstertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSpeakerEnrollmentJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeSpeakerEnrollmentJobRequestRequestTypeDef
+
+def get_value() -> DescribeSpeakerEnrollmentJobRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-- `JobId`: `str`
-
-<a id="describespeakerenrollmentjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeSpeakerEnrollmentJobRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    JobId: str,
+```
 
 ## DescribeSpeakerEnrollmentJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeSpeakerEnrollmentJobResponseTypeDef
+
+def get_value() -> DescribeSpeakerEnrollmentJobResponseTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSpeakerEnrollmentJobResponseTypeDef(TypedDict):
+    Job: SpeakerEnrollmentJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Job`:
-  [SpeakerEnrollmentJobTypeDef](./type_defs.md#speakerenrollmentjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describespeakerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SpeakerEnrollmentJobTypeDef](./type_defs.md#speakerenrollmentjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSpeakerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeSpeakerRequestRequestTypeDef
+
+def get_value() -> DescribeSpeakerRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "SpeakerId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-- `SpeakerId`: `str`
-
-<a id="describespeakerresponsetypedef"></a>
+```python title="Definition"
+class DescribeSpeakerRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    SpeakerId: str,
+```
 
 ## DescribeSpeakerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DescribeSpeakerResponseTypeDef
+
+def get_value() -> DescribeSpeakerResponseTypeDef:
+    return {
+        "Speaker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSpeakerResponseTypeDef(TypedDict):
+    Speaker: SpeakerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Speaker`: [SpeakerTypeDef](./type_defs.md#speakertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="domainsummarytypedef"></a>
-
+1. See [:material-code-braces: SpeakerTypeDef](./type_defs.md#speakertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DomainSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DomainSummaryTypeDef
+
+def get_value() -> DomainSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DomainSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    Description: NotRequired[str],
+    DomainId: NotRequired[str],
+    DomainStatus: NotRequired[DomainStatusType],  # (1)
+    Name: NotRequired[str],
+    ServerSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (2)
+    UpdatedAt: NotRequired[datetime],
+```
 
-- `Arn`: `str`
-- `CreatedAt`: `datetime`
-- `Description`: `str`
-- `DomainId`: `str`
-- `DomainStatus`: [DomainStatusType](./literals.md#domainstatustype)
-- `Name`: `str`
-- `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `UpdatedAt`: `datetime`
-
-<a id="domaintypedef"></a>
-
+1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
+2. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
 ## DomainTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import DomainTypeDef
+
+def get_value() -> DomainTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DomainTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    Description: NotRequired[str],
+    DomainId: NotRequired[str],
+    DomainStatus: NotRequired[DomainStatusType],  # (1)
+    Name: NotRequired[str],
+    ServerSideEncryptionConfiguration: NotRequired[ServerSideEncryptionConfigurationTypeDef],  # (2)
+    UpdatedAt: NotRequired[datetime],
+```
 
-- `Arn`: `str`
-- `CreatedAt`: `datetime`
-- `Description`: `str`
-- `DomainId`: `str`
-- `DomainStatus`: [DomainStatusType](./literals.md#domainstatustype)
-- `Name`: `str`
-- `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `UpdatedAt`: `datetime`
-
-<a id="enrollmentconfigtypedef"></a>
-
+1. See [:material-code-brackets: DomainStatusType](./literals.md#domainstatustype) 
+2. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
 ## EnrollmentConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import EnrollmentConfigTypeDef
+
+def get_value() -> EnrollmentConfigTypeDef:
+    return {
+        "ExistingEnrollmentAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnrollmentConfigTypeDef(TypedDict):
+    ExistingEnrollmentAction: NotRequired[ExistingEnrollmentActionType],  # (1)
+    FraudDetectionConfig: NotRequired[EnrollmentJobFraudDetectionConfigTypeDef],  # (2)
+```
 
-- `ExistingEnrollmentAction`:
-  [ExistingEnrollmentActionType](./literals.md#existingenrollmentactiontype)
-- `FraudDetectionConfig`:
-  [EnrollmentJobFraudDetectionConfigTypeDef](./type_defs.md#enrollmentjobfrauddetectionconfigtypedef)
-
-<a id="enrollmentjobfrauddetectionconfigtypedef"></a>
-
+1. See [:material-code-brackets: ExistingEnrollmentActionType](./literals.md#existingenrollmentactiontype) 
+2. See [:material-code-braces: EnrollmentJobFraudDetectionConfigTypeDef](./type_defs.md#enrollmentjobfrauddetectionconfigtypedef) 
 ## EnrollmentJobFraudDetectionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import EnrollmentJobFraudDetectionConfigTypeDef
+
+def get_value() -> EnrollmentJobFraudDetectionConfigTypeDef:
+    return {
+        "FraudDetectionAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnrollmentJobFraudDetectionConfigTypeDef(TypedDict):
+    FraudDetectionAction: NotRequired[FraudDetectionActionType],  # (1)
+    RiskThreshold: NotRequired[int],
+```
 
-- `FraudDetectionAction`:
-  [FraudDetectionActionType](./literals.md#frauddetectionactiontype)
-- `RiskThreshold`: `int`
-
-<a id="evaluatesessionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FraudDetectionActionType](./literals.md#frauddetectionactiontype) 
 ## EvaluateSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import EvaluateSessionRequestRequestTypeDef
+
+def get_value() -> EvaluateSessionRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "SessionNameOrId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-- `SessionNameOrId`: `str`
-
-<a id="evaluatesessionresponsetypedef"></a>
+```python title="Definition"
+class EvaluateSessionRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    SessionNameOrId: str,
+```
 
 ## EvaluateSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import EvaluateSessionResponseTypeDef
+
+def get_value() -> EvaluateSessionResponseTypeDef:
+    return {
+        "AuthenticationResult": ...,
+        "DomainId": ...,
+        "FraudDetectionResult": ...,
+        "SessionId": ...,
+        "SessionName": ...,
+        "StreamingStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EvaluateSessionResponseTypeDef(TypedDict):
+    AuthenticationResult: AuthenticationResultTypeDef,  # (1)
+    DomainId: str,
+    FraudDetectionResult: FraudDetectionResultTypeDef,  # (2)
+    SessionId: str,
+    SessionName: str,
+    StreamingStatus: StreamingStatusType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `AuthenticationResult`:
-  [AuthenticationResultTypeDef](./type_defs.md#authenticationresulttypedef)
-- `DomainId`: `str`
-- `FraudDetectionResult`:
-  [FraudDetectionResultTypeDef](./type_defs.md#frauddetectionresulttypedef)
-- `SessionId`: `str`
-- `SessionName`: `str`
-- `StreamingStatus`: [StreamingStatusType](./literals.md#streamingstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="failuredetailstypedef"></a>
-
+1. See [:material-code-braces: AuthenticationResultTypeDef](./type_defs.md#authenticationresulttypedef) 
+2. See [:material-code-braces: FraudDetectionResultTypeDef](./type_defs.md#frauddetectionresulttypedef) 
+3. See [:material-code-brackets: StreamingStatusType](./literals.md#streamingstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FailureDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import FailureDetailsTypeDef
+
+def get_value() -> FailureDetailsTypeDef:
+    return {
+        "Message": ...,
+    }
 ```
 
-Optional fields:
-
-- `Message`: `str`
-- `StatusCode`: `int`
-
-<a id="frauddetectionconfigurationtypedef"></a>
+```python title="Definition"
+class FailureDetailsTypeDef(TypedDict):
+    Message: NotRequired[str],
+    StatusCode: NotRequired[int],
+```
 
 ## FraudDetectionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import FraudDetectionConfigurationTypeDef
+
+def get_value() -> FraudDetectionConfigurationTypeDef:
+    return {
+        "RiskThreshold": ...,
+    }
 ```
 
-Required fields:
-
-- `RiskThreshold`: `int`
-
-<a id="frauddetectionresulttypedef"></a>
+```python title="Definition"
+class FraudDetectionConfigurationTypeDef(TypedDict):
+    RiskThreshold: int,
+```
 
 ## FraudDetectionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import FraudDetectionResultTypeDef
+
+def get_value() -> FraudDetectionResultTypeDef:
+    return {
+        "AudioAggregationEndedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FraudDetectionResultTypeDef(TypedDict):
+    AudioAggregationEndedAt: NotRequired[datetime],
+    AudioAggregationStartedAt: NotRequired[datetime],
+    Configuration: NotRequired[FraudDetectionConfigurationTypeDef],  # (1)
+    Decision: NotRequired[FraudDetectionDecisionType],  # (2)
+    FraudDetectionResultId: NotRequired[str],
+    Reasons: NotRequired[List[FraudDetectionReasonType]],  # (3)
+    RiskDetails: NotRequired[FraudRiskDetailsTypeDef],  # (4)
+```
 
-- `AudioAggregationEndedAt`: `datetime`
-- `AudioAggregationStartedAt`: `datetime`
-- `Configuration`:
-  [FraudDetectionConfigurationTypeDef](./type_defs.md#frauddetectionconfigurationtypedef)
-- `Decision`:
-  [FraudDetectionDecisionType](./literals.md#frauddetectiondecisiontype)
-- `FraudDetectionResultId`: `str`
-- `Reasons`: `List`\[`Literal['KNOWN_FRAUDSTER']` (see
-  [FraudDetectionReasonType](./literals.md#frauddetectionreasontype))\]
-- `RiskDetails`:
-  [FraudRiskDetailsTypeDef](./type_defs.md#fraudriskdetailstypedef)
-
-<a id="fraudriskdetailstypedef"></a>
-
+1. See [:material-code-braces: FraudDetectionConfigurationTypeDef](./type_defs.md#frauddetectionconfigurationtypedef) 
+2. See [:material-code-brackets: FraudDetectionDecisionType](./literals.md#frauddetectiondecisiontype) 
+3. See [:material-code-brackets: FraudDetectionReasonType](./literals.md#frauddetectionreasontype) 
+4. See [:material-code-braces: FraudRiskDetailsTypeDef](./type_defs.md#fraudriskdetailstypedef) 
 ## FraudRiskDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import FraudRiskDetailsTypeDef
+
+def get_value() -> FraudRiskDetailsTypeDef:
+    return {
+        "KnownFraudsterRisk": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FraudRiskDetailsTypeDef(TypedDict):
+    KnownFraudsterRisk: KnownFraudsterRiskTypeDef,  # (1)
+```
 
-- `KnownFraudsterRisk`:
-  [KnownFraudsterRiskTypeDef](./type_defs.md#knownfraudsterrisktypedef)
-
-<a id="fraudsterregistrationjobsummarytypedef"></a>
-
+1. See [:material-code-braces: KnownFraudsterRiskTypeDef](./type_defs.md#knownfraudsterrisktypedef) 
 ## FraudsterRegistrationJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import FraudsterRegistrationJobSummaryTypeDef
+
+def get_value() -> FraudsterRegistrationJobSummaryTypeDef:
+    return {
+        "CreatedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FraudsterRegistrationJobSummaryTypeDef(TypedDict):
+    CreatedAt: NotRequired[datetime],
+    DomainId: NotRequired[str],
+    EndedAt: NotRequired[datetime],
+    FailureDetails: NotRequired[FailureDetailsTypeDef],  # (1)
+    JobId: NotRequired[str],
+    JobName: NotRequired[str],
+    JobProgress: NotRequired[JobProgressTypeDef],  # (2)
+    JobStatus: NotRequired[FraudsterRegistrationJobStatusType],  # (3)
+```
 
-- `CreatedAt`: `datetime`
-- `DomainId`: `str`
-- `EndedAt`: `datetime`
-- `FailureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-- `JobId`: `str`
-- `JobName`: `str`
-- `JobProgress`: [JobProgressTypeDef](./type_defs.md#jobprogresstypedef)
-- `JobStatus`:
-  [FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype)
-
-<a id="fraudsterregistrationjobtypedef"></a>
-
+1. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
+2. See [:material-code-braces: JobProgressTypeDef](./type_defs.md#jobprogresstypedef) 
+3. See [:material-code-brackets: FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype) 
 ## FraudsterRegistrationJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import FraudsterRegistrationJobTypeDef
+
+def get_value() -> FraudsterRegistrationJobTypeDef:
+    return {
+        "CreatedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FraudsterRegistrationJobTypeDef(TypedDict):
+    CreatedAt: NotRequired[datetime],
+    DataAccessRoleArn: NotRequired[str],
+    DomainId: NotRequired[str],
+    EndedAt: NotRequired[datetime],
+    FailureDetails: NotRequired[FailureDetailsTypeDef],  # (1)
+    InputDataConfig: NotRequired[InputDataConfigTypeDef],  # (2)
+    JobId: NotRequired[str],
+    JobName: NotRequired[str],
+    JobProgress: NotRequired[JobProgressTypeDef],  # (3)
+    JobStatus: NotRequired[FraudsterRegistrationJobStatusType],  # (4)
+    OutputDataConfig: NotRequired[OutputDataConfigTypeDef],  # (5)
+    RegistrationConfig: NotRequired[RegistrationConfigTypeDef],  # (6)
+```
 
-- `CreatedAt`: `datetime`
-- `DataAccessRoleArn`: `str`
-- `DomainId`: `str`
-- `EndedAt`: `datetime`
-- `FailureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-- `JobId`: `str`
-- `JobName`: `str`
-- `JobProgress`: [JobProgressTypeDef](./type_defs.md#jobprogresstypedef)
-- `JobStatus`:
-  [FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype)
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-- `RegistrationConfig`:
-  [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
-
-<a id="fraudstertypedef"></a>
-
+1. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
+2. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+3. See [:material-code-braces: JobProgressTypeDef](./type_defs.md#jobprogresstypedef) 
+4. See [:material-code-brackets: FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype) 
+5. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+6. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
 ## FraudsterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import FraudsterTypeDef
+
+def get_value() -> FraudsterTypeDef:
+    return {
+        "CreatedAt": ...,
+    }
 ```
 
-Optional fields:
-
-- `CreatedAt`: `datetime`
-- `DomainId`: `str`
-- `GeneratedFraudsterId`: `str`
-
-<a id="inputdataconfigtypedef"></a>
+```python title="Definition"
+class FraudsterTypeDef(TypedDict):
+    CreatedAt: NotRequired[datetime],
+    DomainId: NotRequired[str],
+    GeneratedFraudsterId: NotRequired[str],
+```
 
 ## InputDataConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import InputDataConfigTypeDef
+
+def get_value() -> InputDataConfigTypeDef:
+    return {
+        "S3Uri": ...,
+    }
 ```
 
-Required fields:
-
-- `S3Uri`: `str`
-
-<a id="jobprogresstypedef"></a>
+```python title="Definition"
+class InputDataConfigTypeDef(TypedDict):
+    S3Uri: str,
+```
 
 ## JobProgressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import JobProgressTypeDef
+
+def get_value() -> JobProgressTypeDef:
+    return {
+        "PercentComplete": ...,
+    }
 ```
 
-Optional fields:
-
-- `PercentComplete`: `int`
-
-<a id="knownfraudsterrisktypedef"></a>
+```python title="Definition"
+class JobProgressTypeDef(TypedDict):
+    PercentComplete: NotRequired[int],
+```
 
 ## KnownFraudsterRiskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import KnownFraudsterRiskTypeDef
+
+def get_value() -> KnownFraudsterRiskTypeDef:
+    return {
+        "RiskScore": ...,
+    }
 ```
 
-Required fields:
-
-- `RiskScore`: `int`
-
-Optional fields:
-
-- `GeneratedFraudsterId`: `str`
-
-<a id="listdomainsrequestrequesttypedef"></a>
+```python title="Definition"
+class KnownFraudsterRiskTypeDef(TypedDict):
+    RiskScore: int,
+    GeneratedFraudsterId: NotRequired[str],
+```
 
 ## ListDomainsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListDomainsRequestRequestTypeDef
+
+def get_value() -> ListDomainsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdomainsresponsetypedef"></a>
+```python title="Definition"
+class ListDomainsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDomainsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListDomainsResponseTypeDef
+
+def get_value() -> ListDomainsResponseTypeDef:
+    return {
+        "DomainSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDomainsResponseTypeDef(TypedDict):
+    DomainSummaries: List[DomainSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainSummaries`:
-  `List`\[[DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listfraudsterregistrationjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFraudsterRegistrationJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListFraudsterRegistrationJobsRequestRequestTypeDef
+
+def get_value() -> ListFraudsterRegistrationJobsRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFraudsterRegistrationJobsRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    JobStatus: NotRequired[FraudsterRegistrationJobStatusType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `DomainId`: `str`
-
-Optional fields:
-
-- `JobStatus`:
-  [FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listfraudsterregistrationjobsresponsetypedef"></a>
-
+1. See [:material-code-brackets: FraudsterRegistrationJobStatusType](./literals.md#fraudsterregistrationjobstatustype) 
 ## ListFraudsterRegistrationJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListFraudsterRegistrationJobsResponseTypeDef
+
+def get_value() -> ListFraudsterRegistrationJobsResponseTypeDef:
+    return {
+        "JobSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFraudsterRegistrationJobsResponseTypeDef(TypedDict):
+    JobSummaries: List[FraudsterRegistrationJobSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobSummaries`:
-  `List`\[[FraudsterRegistrationJobSummaryTypeDef](./type_defs.md#fraudsterregistrationjobsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listspeakerenrollmentjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FraudsterRegistrationJobSummaryTypeDef](./type_defs.md#fraudsterregistrationjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSpeakerEnrollmentJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListSpeakerEnrollmentJobsRequestRequestTypeDef
+
+def get_value() -> ListSpeakerEnrollmentJobsRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSpeakerEnrollmentJobsRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    JobStatus: NotRequired[SpeakerEnrollmentJobStatusType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `DomainId`: `str`
-
-Optional fields:
-
-- `JobStatus`:
-  [SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listspeakerenrollmentjobsresponsetypedef"></a>
-
+1. See [:material-code-brackets: SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype) 
 ## ListSpeakerEnrollmentJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListSpeakerEnrollmentJobsResponseTypeDef
+
+def get_value() -> ListSpeakerEnrollmentJobsResponseTypeDef:
+    return {
+        "JobSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSpeakerEnrollmentJobsResponseTypeDef(TypedDict):
+    JobSummaries: List[SpeakerEnrollmentJobSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobSummaries`:
-  `List`\[[SpeakerEnrollmentJobSummaryTypeDef](./type_defs.md#speakerenrollmentjobsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listspeakersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SpeakerEnrollmentJobSummaryTypeDef](./type_defs.md#speakerenrollmentjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSpeakersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListSpeakersRequestRequestTypeDef
+
+def get_value() -> ListSpeakersRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listspeakersresponsetypedef"></a>
+```python title="Definition"
+class ListSpeakersRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListSpeakersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListSpeakersResponseTypeDef
+
+def get_value() -> ListSpeakersResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "SpeakerSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSpeakersResponseTypeDef(TypedDict):
+    NextToken: str,
+    SpeakerSummaries: List[SpeakerSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `SpeakerSummaries`:
-  `List`\[[SpeakerSummaryTypeDef](./type_defs.md#speakersummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SpeakerSummaryTypeDef](./type_defs.md#speakersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="optoutspeakerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OptOutSpeakerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import OptOutSpeakerRequestRequestTypeDef
+
+def get_value() -> OptOutSpeakerRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "SpeakerId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainId`: `str`
-- `SpeakerId`: `str`
-
-<a id="optoutspeakerresponsetypedef"></a>
+```python title="Definition"
+class OptOutSpeakerRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    SpeakerId: str,
+```
 
 ## OptOutSpeakerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import OptOutSpeakerResponseTypeDef
+
+def get_value() -> OptOutSpeakerResponseTypeDef:
+    return {
+        "Speaker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OptOutSpeakerResponseTypeDef(TypedDict):
+    Speaker: SpeakerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Speaker`: [SpeakerTypeDef](./type_defs.md#speakertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="outputdataconfigtypedef"></a>
-
+1. See [:material-code-braces: SpeakerTypeDef](./type_defs.md#speakertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OutputDataConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import OutputDataConfigTypeDef
+
+def get_value() -> OutputDataConfigTypeDef:
+    return {
+        "S3Uri": ...,
+    }
 ```
 
-Required fields:
-
-- `S3Uri`: `str`
-
-Optional fields:
-
-- `KmsKeyId`: `str`
-
-<a id="registrationconfigtypedef"></a>
+```python title="Definition"
+class OutputDataConfigTypeDef(TypedDict):
+    S3Uri: str,
+    KmsKeyId: NotRequired[str],
+```
 
 ## RegistrationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import RegistrationConfigTypeDef
+
+def get_value() -> RegistrationConfigTypeDef:
+    return {
+        "DuplicateRegistrationAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RegistrationConfigTypeDef(TypedDict):
+    DuplicateRegistrationAction: NotRequired[DuplicateRegistrationActionType],  # (1)
+    FraudsterSimilarityThreshold: NotRequired[int],
+```
 
-- `DuplicateRegistrationAction`:
-  [DuplicateRegistrationActionType](./literals.md#duplicateregistrationactiontype)
-- `FraudsterSimilarityThreshold`: `int`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: DuplicateRegistrationActionType](./literals.md#duplicateregistrationactiontype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="serversideencryptionconfigurationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ServerSideEncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import ServerSideEncryptionConfigurationTypeDef
+
+def get_value() -> ServerSideEncryptionConfigurationTypeDef:
+    return {
+        "KmsKeyId": ...,
+    }
 ```
 
-Required fields:
-
-- `KmsKeyId`: `str`
-
-<a id="speakerenrollmentjobsummarytypedef"></a>
+```python title="Definition"
+class ServerSideEncryptionConfigurationTypeDef(TypedDict):
+    KmsKeyId: str,
+```
 
 ## SpeakerEnrollmentJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import SpeakerEnrollmentJobSummaryTypeDef
+
+def get_value() -> SpeakerEnrollmentJobSummaryTypeDef:
+    return {
+        "CreatedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SpeakerEnrollmentJobSummaryTypeDef(TypedDict):
+    CreatedAt: NotRequired[datetime],
+    DomainId: NotRequired[str],
+    EndedAt: NotRequired[datetime],
+    FailureDetails: NotRequired[FailureDetailsTypeDef],  # (1)
+    JobId: NotRequired[str],
+    JobName: NotRequired[str],
+    JobProgress: NotRequired[JobProgressTypeDef],  # (2)
+    JobStatus: NotRequired[SpeakerEnrollmentJobStatusType],  # (3)
+```
 
-- `CreatedAt`: `datetime`
-- `DomainId`: `str`
-- `EndedAt`: `datetime`
-- `FailureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-- `JobId`: `str`
-- `JobName`: `str`
-- `JobProgress`: [JobProgressTypeDef](./type_defs.md#jobprogresstypedef)
-- `JobStatus`:
-  [SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype)
-
-<a id="speakerenrollmentjobtypedef"></a>
-
+1. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
+2. See [:material-code-braces: JobProgressTypeDef](./type_defs.md#jobprogresstypedef) 
+3. See [:material-code-brackets: SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype) 
 ## SpeakerEnrollmentJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import SpeakerEnrollmentJobTypeDef
+
+def get_value() -> SpeakerEnrollmentJobTypeDef:
+    return {
+        "CreatedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SpeakerEnrollmentJobTypeDef(TypedDict):
+    CreatedAt: NotRequired[datetime],
+    DataAccessRoleArn: NotRequired[str],
+    DomainId: NotRequired[str],
+    EndedAt: NotRequired[datetime],
+    EnrollmentConfig: NotRequired[EnrollmentConfigTypeDef],  # (1)
+    FailureDetails: NotRequired[FailureDetailsTypeDef],  # (2)
+    InputDataConfig: NotRequired[InputDataConfigTypeDef],  # (3)
+    JobId: NotRequired[str],
+    JobName: NotRequired[str],
+    JobProgress: NotRequired[JobProgressTypeDef],  # (4)
+    JobStatus: NotRequired[SpeakerEnrollmentJobStatusType],  # (5)
+    OutputDataConfig: NotRequired[OutputDataConfigTypeDef],  # (6)
+```
 
-- `CreatedAt`: `datetime`
-- `DataAccessRoleArn`: `str`
-- `DomainId`: `str`
-- `EndedAt`: `datetime`
-- `EnrollmentConfig`:
-  [EnrollmentConfigTypeDef](./type_defs.md#enrollmentconfigtypedef)
-- `FailureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-- `JobId`: `str`
-- `JobName`: `str`
-- `JobProgress`: [JobProgressTypeDef](./type_defs.md#jobprogresstypedef)
-- `JobStatus`:
-  [SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype)
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-
-<a id="speakersummarytypedef"></a>
-
+1. See [:material-code-braces: EnrollmentConfigTypeDef](./type_defs.md#enrollmentconfigtypedef) 
+2. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
+3. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+4. See [:material-code-braces: JobProgressTypeDef](./type_defs.md#jobprogresstypedef) 
+5. See [:material-code-brackets: SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype) 
+6. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
 ## SpeakerSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import SpeakerSummaryTypeDef
+
+def get_value() -> SpeakerSummaryTypeDef:
+    return {
+        "CreatedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SpeakerSummaryTypeDef(TypedDict):
+    CreatedAt: NotRequired[datetime],
+    CustomerSpeakerId: NotRequired[str],
+    DomainId: NotRequired[str],
+    GeneratedSpeakerId: NotRequired[str],
+    Status: NotRequired[SpeakerStatusType],  # (1)
+    UpdatedAt: NotRequired[datetime],
+```
 
-- `CreatedAt`: `datetime`
-- `CustomerSpeakerId`: `str`
-- `DomainId`: `str`
-- `GeneratedSpeakerId`: `str`
-- `Status`: [SpeakerStatusType](./literals.md#speakerstatustype)
-- `UpdatedAt`: `datetime`
-
-<a id="speakertypedef"></a>
-
+1. See [:material-code-brackets: SpeakerStatusType](./literals.md#speakerstatustype) 
 ## SpeakerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import SpeakerTypeDef
+
+def get_value() -> SpeakerTypeDef:
+    return {
+        "CreatedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SpeakerTypeDef(TypedDict):
+    CreatedAt: NotRequired[datetime],
+    CustomerSpeakerId: NotRequired[str],
+    DomainId: NotRequired[str],
+    GeneratedSpeakerId: NotRequired[str],
+    Status: NotRequired[SpeakerStatusType],  # (1)
+    UpdatedAt: NotRequired[datetime],
+```
 
-- `CreatedAt`: `datetime`
-- `CustomerSpeakerId`: `str`
-- `DomainId`: `str`
-- `GeneratedSpeakerId`: `str`
-- `Status`: [SpeakerStatusType](./literals.md#speakerstatustype)
-- `UpdatedAt`: `datetime`
-
-<a id="startfraudsterregistrationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SpeakerStatusType](./literals.md#speakerstatustype) 
 ## StartFraudsterRegistrationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import StartFraudsterRegistrationJobRequestRequestTypeDef
+
+def get_value() -> StartFraudsterRegistrationJobRequestRequestTypeDef:
+    return {
+        "DataAccessRoleArn": ...,
+        "DomainId": ...,
+        "InputDataConfig": ...,
+        "OutputDataConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartFraudsterRegistrationJobRequestRequestTypeDef(TypedDict):
+    DataAccessRoleArn: str,
+    DomainId: str,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    ClientToken: NotRequired[str],
+    JobName: NotRequired[str],
+    RegistrationConfig: NotRequired[RegistrationConfigTypeDef],  # (3)
+```
 
-- `DataAccessRoleArn`: `str`
-- `DomainId`: `str`
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `JobName`: `str`
-- `RegistrationConfig`:
-  [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
-
-<a id="startfraudsterregistrationjobresponsetypedef"></a>
-
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
 ## StartFraudsterRegistrationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import StartFraudsterRegistrationJobResponseTypeDef
+
+def get_value() -> StartFraudsterRegistrationJobResponseTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartFraudsterRegistrationJobResponseTypeDef(TypedDict):
+    Job: FraudsterRegistrationJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Job`:
-  [FraudsterRegistrationJobTypeDef](./type_defs.md#fraudsterregistrationjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startspeakerenrollmentjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FraudsterRegistrationJobTypeDef](./type_defs.md#fraudsterregistrationjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartSpeakerEnrollmentJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import StartSpeakerEnrollmentJobRequestRequestTypeDef
+
+def get_value() -> StartSpeakerEnrollmentJobRequestRequestTypeDef:
+    return {
+        "DataAccessRoleArn": ...,
+        "DomainId": ...,
+        "InputDataConfig": ...,
+        "OutputDataConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSpeakerEnrollmentJobRequestRequestTypeDef(TypedDict):
+    DataAccessRoleArn: str,
+    DomainId: str,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    ClientToken: NotRequired[str],
+    EnrollmentConfig: NotRequired[EnrollmentConfigTypeDef],  # (3)
+    JobName: NotRequired[str],
+```
 
-- `DataAccessRoleArn`: `str`
-- `DomainId`: `str`
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `EnrollmentConfig`:
-  [EnrollmentConfigTypeDef](./type_defs.md#enrollmentconfigtypedef)
-- `JobName`: `str`
-
-<a id="startspeakerenrollmentjobresponsetypedef"></a>
-
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-braces: EnrollmentConfigTypeDef](./type_defs.md#enrollmentconfigtypedef) 
 ## StartSpeakerEnrollmentJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import StartSpeakerEnrollmentJobResponseTypeDef
+
+def get_value() -> StartSpeakerEnrollmentJobResponseTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSpeakerEnrollmentJobResponseTypeDef(TypedDict):
+    Job: SpeakerEnrollmentJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Job`:
-  [SpeakerEnrollmentJobTypeDef](./type_defs.md#speakerenrollmentjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SpeakerEnrollmentJobTypeDef](./type_defs.md#speakerenrollmentjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedomainrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import UpdateDomainRequestRequestTypeDef
+
+def get_value() -> UpdateDomainRequestRequestTypeDef:
+    return {
+        "DomainId": ...,
+        "Name": ...,
+        "ServerSideEncryptionConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainRequestRequestTypeDef(TypedDict):
+    DomainId: str,
+    Name: str,
+    ServerSideEncryptionConfiguration: ServerSideEncryptionConfigurationTypeDef,  # (1)
+    Description: NotRequired[str],
+```
 
-- `DomainId`: `str`
-- `Name`: `str`
-- `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="updatedomainresponsetypedef"></a>
-
+1. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
 ## UpdateDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_voice_id.type_defs import UpdateDomainResponseTypeDef
+
+def get_value() -> UpdateDomainResponseTypeDef:
+    return {
+        "Domain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainResponseTypeDef(TypedDict):
+    Domain: DomainTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Domain`: [DomainTypeDef](./type_defs.md#domaintypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

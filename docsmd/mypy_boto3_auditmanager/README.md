@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-auditmanager-module"></a>
-
-# Type annotations for boto3 AuditManager module
+#  AuditManager module
 
 > [Index](../README.md) > AuditManager
 
-Auto-generated documentation for
-[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
-type annotations stubs module
-[mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+!!! note ""
 
-- [Type annotations for boto3 AuditManager module](#type-annotations-for-boto3-auditmanager-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AuditManagerClient](#auditmanagerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
+    type annotations stubs module [mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AuditManager`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[auditmanager]'
 python -m pip install mypy-boto3-auditmanager
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,116 +42,41 @@ python -m pip install mypy-boto3-auditmanager
 python -m pip uninstall -y mypy-boto3-auditmanager
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="auditmanagerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AuditManagerClient
 
-Type annotations for `boto3.client("auditmanager")` as
-[AuditManagerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("auditmanager")` as [AuditManagerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_auditmanager.client import AuditManagerClient
+
+def get_client() -> AuditManagerClient:
+    return Session().cleint("auditmanager")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [associate_assessment_report_evidence_folder](./client.md#associate_assessment_report_evidence_folder)
-- [batch_associate_assessment_report_evidence](./client.md#batch_associate_assessment_report_evidence)
-- [batch_create_delegation_by_assessment](./client.md#batch_create_delegation_by_assessment)
-- [batch_delete_delegation_by_assessment](./client.md#batch_delete_delegation_by_assessment)
-- [batch_disassociate_assessment_report_evidence](./client.md#batch_disassociate_assessment_report_evidence)
-- [batch_import_evidence_to_assessment_control](./client.md#batch_import_evidence_to_assessment_control)
-- [can_paginate](./client.md#can_paginate)
-- [create_assessment](./client.md#create_assessment)
-- [create_assessment_framework](./client.md#create_assessment_framework)
-- [create_assessment_report](./client.md#create_assessment_report)
-- [create_control](./client.md#create_control)
-- [delete_assessment](./client.md#delete_assessment)
-- [delete_assessment_framework](./client.md#delete_assessment_framework)
-- [delete_assessment_framework_share](./client.md#delete_assessment_framework_share)
-- [delete_assessment_report](./client.md#delete_assessment_report)
-- [delete_control](./client.md#delete_control)
-- [deregister_account](./client.md#deregister_account)
-- [deregister_organization_admin_account](./client.md#deregister_organization_admin_account)
-- [disassociate_assessment_report_evidence_folder](./client.md#disassociate_assessment_report_evidence_folder)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_account_status](./client.md#get_account_status)
-- [get_assessment](./client.md#get_assessment)
-- [get_assessment_framework](./client.md#get_assessment_framework)
-- [get_assessment_report_url](./client.md#get_assessment_report_url)
-- [get_change_logs](./client.md#get_change_logs)
-- [get_control](./client.md#get_control)
-- [get_delegations](./client.md#get_delegations)
-- [get_evidence](./client.md#get_evidence)
-- [get_evidence_by_evidence_folder](./client.md#get_evidence_by_evidence_folder)
-- [get_evidence_folder](./client.md#get_evidence_folder)
-- [get_evidence_folders_by_assessment](./client.md#get_evidence_folders_by_assessment)
-- [get_evidence_folders_by_assessment_control](./client.md#get_evidence_folders_by_assessment_control)
-- [get_insights](./client.md#get_insights)
-- [get_insights_by_assessment](./client.md#get_insights_by_assessment)
-- [get_organization_admin_account](./client.md#get_organization_admin_account)
-- [get_services_in_scope](./client.md#get_services_in_scope)
-- [get_settings](./client.md#get_settings)
-- [list_assessment_control_insights_by_control_domain](./client.md#list_assessment_control_insights_by_control_domain)
-- [list_assessment_framework_share_requests](./client.md#list_assessment_framework_share_requests)
-- [list_assessment_frameworks](./client.md#list_assessment_frameworks)
-- [list_assessment_reports](./client.md#list_assessment_reports)
-- [list_assessments](./client.md#list_assessments)
-- [list_control_domain_insights](./client.md#list_control_domain_insights)
-- [list_control_domain_insights_by_assessment](./client.md#list_control_domain_insights_by_assessment)
-- [list_control_insights_by_control_domain](./client.md#list_control_insights_by_control_domain)
-- [list_controls](./client.md#list_controls)
-- [list_keywords_for_data_source](./client.md#list_keywords_for_data_source)
-- [list_notifications](./client.md#list_notifications)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [register_account](./client.md#register_account)
-- [register_organization_admin_account](./client.md#register_organization_admin_account)
-- [start_assessment_framework_share](./client.md#start_assessment_framework_share)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_assessment](./client.md#update_assessment)
-- [update_assessment_control](./client.md#update_assessment_control)
-- [update_assessment_control_set_status](./client.md#update_assessment_control_set_status)
-- [update_assessment_framework](./client.md#update_assessment_framework)
-- [update_assessment_framework_share](./client.md#update_assessment_framework_share)
-- [update_assessment_status](./client.md#update_assessment_status)
-- [update_control](./client.md#update_control)
-- [update_settings](./client.md#update_settings)
-- [validate_assessment_report_integrity](./client.md#validate_assessment_report_integrity)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-AuditManagerClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- InternalServerException
-- ResourceNotFoundException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_auditmanager.literals import AccountStatusType
 
-```python
-from mypy_boto3_auditmanager.literals import AccountStatusType, ...
+def get_value() -> AccountStatusType:
+    return "ACTIVE"
 ```
 
 - [AccountStatusType](./literals.md#accountstatustype)
@@ -199,18 +103,22 @@ from mypy_boto3_auditmanager.literals import AccountStatusType, ...
 - [AuditManagerServiceName](./literals.md#auditmanagerservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_auditmanager.type_defs import AWSAccountTypeDef
 
-```python
-from mypy_boto3_auditmanager.type_defs import AWSAccountTypeDef, ...
+def get_value() -> AWSAccountTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
 - [AWSAccountTypeDef](./type_defs.md#awsaccounttypedef)
@@ -370,3 +278,4 @@ from mypy_boto3_auditmanager.type_defs import AWSAccountTypeDef, ...
 - [UpdateSettingsResponseTypeDef](./type_defs.md#updatesettingsresponsetypedef)
 - [ValidateAssessmentReportIntegrityRequestRequestTypeDef](./type_defs.md#validateassessmentreportintegrityrequestrequesttypedef)
 - [ValidateAssessmentReportIntegrityResponseTypeDef](./type_defs.md#validateassessmentreportintegrityresponsetypedef)
+

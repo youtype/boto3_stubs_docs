@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-cloudwatchlogs-module"></a>
-
-# Examples for boto3 CloudWatchLogs module
+# Examples
 
 > [Index](../README.md) > [CloudWatchLogs](./README.md) > Examples
 
-- [Examples for boto3 CloudWatchLogs module](#examples-for-boto3-cloudwatchlogs-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+    type annotations stubs module [mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[logs]` package installed.
 
-Write your `CloudWatchLogs` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `CloudWatchLogs` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CloudWatchLogsClient
-# and provides type checking and code completion
-client = session.client("logs")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_kms_key()
 
-# paginator has type DescribeDestinationsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_destinations")
-for item in paginator.paginate(...):
-    # item has type DescribeDestinationsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("logs")  # (1)
+    result = client.create_export_task()  # (2)
+    ```
+
+    1. client: [CloudWatchLogsClient](./client.md)
+    2. result: [:material-code-braces: CreateExportTaskResponseTypeDef](./type_defs.md#createexporttaskresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("logs")  # (1)
+
+    paginator = client.get_paginator("describe_destinations")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CloudWatchLogsClient](./client.md)
+    2. paginator: [DescribeDestinationsPaginator](./paginators.md#describedestinationspaginator)
+    3. item: [:material-code-braces: DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[logs]` or a standalone `mypy_boto3_logs` package, you
-have to explicitly specify `client: CloudWatchLogsClient` type annotation.
+With `boto3-stubs-lite[logs]`
+or a standalone `mypy_boto3_logs` package, you have to explicitly specify `client: CloudWatchLogsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_logs.client import CloudWatchLogsClient
-from mypy_boto3_logs.paginator import DescribeDestinationsPaginator
-
-from mypy_boto3_logs.literals import PaginatorName
-
-from mypy_boto3_logs.type_defs import None
-from mypy_boto3_logs.type_defs import DescribeDestinationsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CloudWatchLogsClient = session.client("logs")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.associate_kms_key()
+    from mypy_boto3_logs.client import CloudWatchLogsClient
+    from mypy_boto3_logs.type_defs import CreateExportTaskResponseTypeDef
+    from mypy_boto3_logs.type_defs import CreateExportTaskRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_destinations"
-paginator: DescribeDestinationsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeDestinationsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: CloudWatchLogsClient = session.client("logs")
+
+    kwargs: CreateExportTaskRequestRequestTypeDef = {...}
+    result: CreateExportTaskResponseTypeDef = client.create_export_task(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_logs.client import CloudWatchLogsClient
+    from mypy_boto3_logs.paginator import DescribeDestinationsPaginator
+    from mypy_boto3_logs.type_defs import DescribeDestinationsResponseTypeDef
+
+
+    session = Session()
+    client: CloudWatchLogsClient = session.client("logs")
+
+    paginator: DescribeDestinationsPaginator = client.get_paginator("describe_destinations")
+    for item in paginator.paginate(...):
+        item: DescribeDestinationsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

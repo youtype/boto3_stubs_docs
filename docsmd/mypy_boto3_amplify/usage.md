@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-amplify-module"></a>
-
-# Examples for boto3 Amplify module
+# Examples
 
 > [Index](../README.md) > [Amplify](./README.md) > Examples
 
-- [Examples for boto3 Amplify module](#examples-for-boto3-amplify-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+    type annotations stubs module [mypy-boto3-amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[amplify]` package installed.
 
-Write your `Amplify` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Amplify` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type AmplifyClient
-# and provides type checking and code completion
-client = session.client("amplify")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListAppsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_apps")
-for item in paginator.paginate(...):
-    # item has type ListAppsResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("amplify")  # (1)
+    result = client.create_app()  # (2)
+    ```
+
+    1. client: [AmplifyClient](./client.md)
+    2. result: [:material-code-braces: CreateAppResultTypeDef](./type_defs.md#createappresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("amplify")  # (1)
+
+    paginator = client.get_paginator("list_apps")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [AmplifyClient](./client.md)
+    2. paginator: [ListAppsPaginator](./paginators.md#listappspaginator)
+    3. item: [:material-code-braces: ListAppsResultTypeDef](./type_defs.md#listappsresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[amplify]` or a standalone `mypy_boto3_amplify` package,
-you have to explicitly specify `client: AmplifyClient` type annotation.
+With `boto3-stubs-lite[amplify]`
+or a standalone `mypy_boto3_amplify` package, you have to explicitly specify `client: AmplifyClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_amplify.client import AmplifyClient
-from mypy_boto3_amplify.paginator import ListAppsPaginator
-
-from mypy_boto3_amplify.literals import PaginatorName
-
-from mypy_boto3_amplify.type_defs import bool
-from mypy_boto3_amplify.type_defs import ListAppsResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: AmplifyClient = session.client("amplify")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_amplify.client import AmplifyClient
+    from mypy_boto3_amplify.type_defs import CreateAppResultTypeDef
+    from mypy_boto3_amplify.type_defs import CreateAppRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_apps"
-paginator: ListAppsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAppsResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: AmplifyClient = session.client("amplify")
+
+    kwargs: CreateAppRequestRequestTypeDef = {...}
+    result: CreateAppResultTypeDef = client.create_app(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_amplify.client import AmplifyClient
+    from mypy_boto3_amplify.paginator import ListAppsPaginator
+    from mypy_boto3_amplify.type_defs import ListAppsResultTypeDef
+
+
+    session = Session()
+    client: AmplifyClient = session.client("amplify")
+
+    paginator: ListAppsPaginator = client.get_paginator("list_apps")
+    for item in paginator.paginate(...):
+        item: ListAppsResultTypeDef
+        print(item)
+    ```
+
+
+
+

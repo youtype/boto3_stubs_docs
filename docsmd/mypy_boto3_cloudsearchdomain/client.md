@@ -1,35 +1,18 @@
-<a id="cloudsearchdomainclient-for-boto3-cloudsearchdomain-module"></a>
+# CloudSearchDomainClient
 
-# CloudSearchDomainClient for boto3 CloudSearchDomain module
+> [Index](../README.md) > [CloudSearchDomain](./README.md) > CloudSearchDomainClient
 
-> [Index](../README.md) > [CloudSearchDomain](./README.md) >
-> CloudSearchDomainClient
+!!! note ""
 
-Auto-generated documentation for
-[CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
-type annotations stubs module
-[mypy-boto3-cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
-
-- [CloudSearchDomainClient for boto3 CloudSearchDomain module](#cloudsearchdomainclient-for-boto3-cloudsearchdomain-module)
-  - [CloudSearchDomainClient](#cloudsearchdomainclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [search](#search)
-    - [suggest](#suggest)
-    - [upload_documents](#upload_documents)
-
-<a id="cloudsearchdomainclient"></a>
+    Auto-generated documentation for [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
+    type annotations stubs module [mypy-boto3-cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
 
 ## CloudSearchDomainClient
 
-Type annotations for `boto3.client("cloudsearchdomain")`
+Type annotations and code completion for `#!python boto3.client("cloudsearchdomain")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cloudsearchdomain.client import CloudSearchDomainClient
 
@@ -37,159 +20,178 @@ def get_cloudsearchdomain_client() -> CloudSearchDomainClient:
     return Session().client("cloudsearchdomain")
 ```
 
-Boto3 documentation:
-[CloudSearchDomain.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cloudsearchdomain").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cloudsearchdomain")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.DocumentServiceException,
+    client.SearchException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cloudsearchdomain.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.DocumentServiceException`
-- `Exceptions.SearchException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudSearchDomainClient exceptions.
-
-Type annotations for `boto3.client("cloudsearchdomain").exceptions` method.
-
-Boto3 documentation:
-[CloudSearchDomain.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cloudsearchdomain").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearchdomain").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.can_paginate)
 
-Boto3 documentation:
-[CloudSearchDomain.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cloudsearchdomain").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearchdomain").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudSearchDomain.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
-
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="search"></a>
 
 ### search
 
 Retrieves a list of documents that match the specified search criteria.
 
-Type annotations for `boto3.client("cloudsearchdomain").search` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearchdomain").search` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.search)
 
-Boto3 documentation:
-[CloudSearchDomain.Client.search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.search)
+```python title="Method definition"
+def search(
+    self,
+    *,
+    query: str,
+    cursor: str = ...,
+    expr: str = ...,
+    facet: str = ...,
+    filterQuery: str = ...,
+    highlight: str = ...,
+    partial: bool = ...,
+    queryOptions: str = ...,
+    queryParser: QueryParserType = ...,  # (1)
+    returnFields: str = ...,
+    size: int = ...,
+    sort: str = ...,
+    start: int = ...,
+    stats: str = ...,
+) -> SearchResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchRequestRequestTypeDef](./type_defs.md#searchrequestrequesttypedef).
+1. See [:material-code-brackets: QueryParserType](./literals.md#queryparsertype) 
+2. See [:material-code-braces: SearchResponseTypeDef](./type_defs.md#searchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `query`: `str` *(required)*
-- `cursor`: `str`
-- `expr`: `str`
-- `facet`: `str`
-- `filterQuery`: `str`
-- `highlight`: `str`
-- `partial`: `bool`
-- `queryOptions`: `str`
-- `queryParser`: [QueryParserType](./literals.md#queryparsertype)
-- `returnFields`: `str`
-- `size`: `int`
-- `sort`: `str`
-- `start`: `int`
-- `stats`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchRequestRequestTypeDef = {  # (1)
+    "query": ...,
+}
 
-Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
+parent.search(**kwargs)
+```
 
-<a id="suggest"></a>
+1. See [:material-code-braces: SearchRequestRequestTypeDef](./type_defs.md#searchrequestrequesttypedef) 
 
 ### suggest
 
 Retrieves autocomplete suggestions for a partial query string.
 
-Type annotations for `boto3.client("cloudsearchdomain").suggest` method.
+Type annotations and code completion for `#!python boto3.client("cloudsearchdomain").suggest` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.suggest)
 
-Boto3 documentation:
-[CloudSearchDomain.Client.suggest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.suggest)
+```python title="Method definition"
+def suggest(
+    self,
+    *,
+    query: str,
+    suggester: str,
+    size: int = ...,
+) -> SuggestResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SuggestRequestRequestTypeDef](./type_defs.md#suggestrequestrequesttypedef).
+1. See [:material-code-braces: SuggestResponseTypeDef](./type_defs.md#suggestresponsetypedef) 
 
-Keyword-only arguments:
 
-- `query`: `str` *(required)*
-- `suggester`: `str` *(required)*
-- `size`: `int`
+```python title="Usage example with kwargs"
+kwargs: SuggestRequestRequestTypeDef = {  # (1)
+    "query": ...,
+    "suggester": ...,
+}
 
-Returns [SuggestResponseTypeDef](./type_defs.md#suggestresponsetypedef).
+parent.suggest(**kwargs)
+```
 
-<a id="upload\_documents"></a>
+1. See [:material-code-braces: SuggestRequestRequestTypeDef](./type_defs.md#suggestrequestrequesttypedef) 
 
-### upload_documents
+### upload\_documents
 
 Posts a batch of documents to a search domain for indexing.
 
-Type annotations for `boto3.client("cloudsearchdomain").upload_documents`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudsearchdomain").upload_documents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.upload_documents)
 
-Boto3 documentation:
-[CloudSearchDomain.Client.upload_documents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain.Client.upload_documents)
+```python title="Method definition"
+def upload_documents(
+    self,
+    *,
+    documents: Union[bytes, IO[bytes], StreamingBody],
+    contentType: ContentTypeType,  # (1)
+) -> UploadDocumentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UploadDocumentsRequestRequestTypeDef](./type_defs.md#uploaddocumentsrequestrequesttypedef).
+1. See [:material-code-brackets: ContentTypeType](./literals.md#contenttypetype) 
+2. See [:material-code-braces: UploadDocumentsResponseTypeDef](./type_defs.md#uploaddocumentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `documents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
-- `contentType`: [ContentTypeType](./literals.md#contenttypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UploadDocumentsRequestRequestTypeDef = {  # (1)
+    "documents": ...,
+    "contentType": ...,
+}
 
-Returns
-[UploadDocumentsResponseTypeDef](./type_defs.md#uploaddocumentsresponsetypedef).
+parent.upload_documents(**kwargs)
+```
+
+1. See [:material-code-braces: UploadDocumentsRequestRequestTypeDef](./type_defs.md#uploaddocumentsrequestrequesttypedef) 
+
+
+
+

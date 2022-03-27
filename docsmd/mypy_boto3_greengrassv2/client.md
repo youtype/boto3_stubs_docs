@@ -1,60 +1,18 @@
-<a id="greengrassv2client-for-boto3-greengrassv2-module"></a>
-
-# GreengrassV2Client for boto3 GreengrassV2 module
+# GreengrassV2Client
 
 > [Index](../README.md) > [GreengrassV2](./README.md) > GreengrassV2Client
 
-Auto-generated documentation for
-[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
-type annotations stubs module
-[mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
+!!! note ""
 
-- [GreengrassV2Client for boto3 GreengrassV2 module](#greengrassv2client-for-boto3-greengrassv2-module)
-  - [GreengrassV2Client](#greengrassv2client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_service_role_to_account](#associate_service_role_to_account)
-    - [batch_associate_client_device_with_core_device](#batch_associate_client_device_with_core_device)
-    - [batch_disassociate_client_device_from_core_device](#batch_disassociate_client_device_from_core_device)
-    - [can_paginate](#can_paginate)
-    - [cancel_deployment](#cancel_deployment)
-    - [create_component_version](#create_component_version)
-    - [create_deployment](#create_deployment)
-    - [delete_component](#delete_component)
-    - [delete_core_device](#delete_core_device)
-    - [describe_component](#describe_component)
-    - [disassociate_service_role_from_account](#disassociate_service_role_from_account)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_component](#get_component)
-    - [get_component_version_artifact](#get_component_version_artifact)
-    - [get_connectivity_info](#get_connectivity_info)
-    - [get_core_device](#get_core_device)
-    - [get_deployment](#get_deployment)
-    - [get_service_role_for_account](#get_service_role_for_account)
-    - [list_client_devices_associated_with_core_device](#list_client_devices_associated_with_core_device)
-    - [list_component_versions](#list_component_versions)
-    - [list_components](#list_components)
-    - [list_core_devices](#list_core_devices)
-    - [list_deployments](#list_deployments)
-    - [list_effective_deployments](#list_effective_deployments)
-    - [list_installed_components](#list_installed_components)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [resolve_component_candidates](#resolve_component_candidates)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_connectivity_info](#update_connectivity_info)
-    - [get_paginator](#get_paginator)
-
-<a id="greengrassv2client"></a>
+    Auto-generated documentation for [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+    type annotations stubs module [mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 ## GreengrassV2Client
 
-Type annotations for `boto3.client("greengrassv2")`
+Type annotations and code completion for `#!python boto3.client("greengrassv2")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_greengrassv2.client import GreengrassV2Client
 
@@ -62,748 +20,930 @@ def get_greengrassv2_client() -> GreengrassV2Client:
     return Session().client("greengrassv2")
 ```
 
-Boto3 documentation:
-[GreengrassV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("greengrassv2").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("greengrassv2")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.RequestAlreadyInProgressException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_greengrassv2.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.RequestAlreadyInProgressException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-GreengrassV2Client exceptions.
-
-Type annotations for `boto3.client("greengrassv2").exceptions` method.
-
-Boto3 documentation:
-[GreengrassV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_service\_role\_to\_account"></a>
-
-### associate_service_role_to_account
+### associate\_service\_role\_to\_account
 
 Associates a Greengrass service role with IoT Greengrass for your Amazon Web
 Services account in this Amazon Web Services Region.
 
-Type annotations for
-`boto3.client("greengrassv2").associate_service_role_to_account` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").associate_service_role_to_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.associate_service_role_to_account)
 
-Boto3 documentation:
-[GreengrassV2.Client.associate_service_role_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.associate_service_role_to_account)
+```python title="Method definition"
+def associate_service_role_to_account(
+    self,
+    *,
+    roleArn: str,
+) -> AssociateServiceRoleToAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateServiceRoleToAccountRequestRequestTypeDef](./type_defs.md#associateserviceroletoaccountrequestrequesttypedef).
+1. See [:material-code-braces: AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `roleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateServiceRoleToAccountRequestRequestTypeDef = {  # (1)
+    "roleArn": ...,
+}
 
-Returns
-[AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef).
+parent.associate_service_role_to_account(**kwargs)
+```
 
-<a id="batch\_associate\_client\_device\_with\_core\_device"></a>
+1. See [:material-code-braces: AssociateServiceRoleToAccountRequestRequestTypeDef](./type_defs.md#associateserviceroletoaccountrequestrequesttypedef) 
 
-### batch_associate_client_device_with_core_device
+### batch\_associate\_client\_device\_with\_core\_device
 
 Associates a list of client devices with a core device.
 
-Type annotations for
-`boto3.client("greengrassv2").batch_associate_client_device_with_core_device`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").batch_associate_client_device_with_core_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_associate_client_device_with_core_device)
 
-Boto3 documentation:
-[GreengrassV2.Client.batch_associate_client_device_with_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_associate_client_device_with_core_device)
+```python title="Method definition"
+def batch_associate_client_device_with_core_device(
+    self,
+    *,
+    coreDeviceThingName: str,
+    entries: Sequence[AssociateClientDeviceWithCoreDeviceEntryTypeDef] = ...,  # (1)
+) -> BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef](./type_defs.md#batchassociateclientdevicewithcoredevicerequestrequesttypedef).
+1. See [:material-code-braces: AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef) 
+2. See [:material-code-braces: BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `coreDeviceThingName`: `str` *(required)*
-- `entries`:
-  `Sequence`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef = {  # (1)
+    "coreDeviceThingName": ...,
+}
 
-Returns
-[BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponsetypedef).
+parent.batch_associate_client_device_with_core_device(**kwargs)
+```
 
-<a id="batch\_disassociate\_client\_device\_from\_core\_device"></a>
+1. See [:material-code-braces: BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef](./type_defs.md#batchassociateclientdevicewithcoredevicerequestrequesttypedef) 
 
-### batch_disassociate_client_device_from_core_device
+### batch\_disassociate\_client\_device\_from\_core\_device
 
 Disassociates a list of client devices from a core device.
 
-Type annotations for
-`boto3.client("greengrassv2").batch_disassociate_client_device_from_core_device`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").batch_disassociate_client_device_from_core_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_disassociate_client_device_from_core_device)
 
-Boto3 documentation:
-[GreengrassV2.Client.batch_disassociate_client_device_from_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.batch_disassociate_client_device_from_core_device)
+```python title="Method definition"
+def batch_disassociate_client_device_from_core_device(
+    self,
+    *,
+    coreDeviceThingName: str,
+    entries: Sequence[DisassociateClientDeviceFromCoreDeviceEntryTypeDef] = ...,  # (1)
+) -> BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredevicerequestrequesttypedef).
+1. See [:material-code-braces: DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef) 
+2. See [:material-code-braces: BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `coreDeviceThingName`: `str` *(required)*
-- `entries`:
-  `Sequence`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef = {  # (1)
+    "coreDeviceThingName": ...,
+}
 
-Returns
-[BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponsetypedef).
+parent.batch_disassociate_client_device_from_core_device(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredevicerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("greengrassv2").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.can_paginate)
 
-Boto3 documentation:
-[GreengrassV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_deployment"></a>
-
-### cancel_deployment
+### cancel\_deployment
 
 Cancels a deployment.
 
-Type annotations for `boto3.client("greengrassv2").cancel_deployment` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").cancel_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.cancel_deployment)
 
-Boto3 documentation:
-[GreengrassV2.Client.cancel_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.cancel_deployment)
+```python title="Method definition"
+def cancel_deployment(
+    self,
+    *,
+    deploymentId: str,
+) -> CancelDeploymentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelDeploymentRequestRequestTypeDef](./type_defs.md#canceldeploymentrequestrequesttypedef).
+1. See [:material-code-braces: CancelDeploymentResponseTypeDef](./type_defs.md#canceldeploymentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `deploymentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelDeploymentRequestRequestTypeDef = {  # (1)
+    "deploymentId": ...,
+}
 
-Returns
-[CancelDeploymentResponseTypeDef](./type_defs.md#canceldeploymentresponsetypedef).
+parent.cancel_deployment(**kwargs)
+```
 
-<a id="create\_component\_version"></a>
+1. See [:material-code-braces: CancelDeploymentRequestRequestTypeDef](./type_defs.md#canceldeploymentrequestrequesttypedef) 
 
-### create_component_version
+### create\_component\_version
 
 Creates a component.
 
-Type annotations for `boto3.client("greengrassv2").create_component_version`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").create_component_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_component_version)
 
-Boto3 documentation:
-[GreengrassV2.Client.create_component_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_component_version)
+```python title="Method definition"
+def create_component_version(
+    self,
+    *,
+    inlineRecipe: Union[bytes, IO[bytes], StreamingBody] = ...,
+    lambdaFunction: LambdaFunctionRecipeSourceTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+    clientToken: str = ...,
+) -> CreateComponentVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateComponentVersionRequestRequestTypeDef](./type_defs.md#createcomponentversionrequestrequesttypedef).
+1. See [:material-code-braces: LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef) 
+2. See [:material-code-braces: CreateComponentVersionResponseTypeDef](./type_defs.md#createcomponentversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `inlineRecipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `lambdaFunction`:
-  [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateComponentVersionRequestRequestTypeDef = {  # (1)
+    "inlineRecipe": ...,
+}
 
-Returns
-[CreateComponentVersionResponseTypeDef](./type_defs.md#createcomponentversionresponsetypedef).
+parent.create_component_version(**kwargs)
+```
 
-<a id="create\_deployment"></a>
+1. See [:material-code-braces: CreateComponentVersionRequestRequestTypeDef](./type_defs.md#createcomponentversionrequestrequesttypedef) 
 
-### create_deployment
+### create\_deployment
 
 Creates a continuous deployment for a target, which is a Greengrass core device
 or group of core devices.
 
-Type annotations for `boto3.client("greengrassv2").create_deployment` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").create_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_deployment)
 
-Boto3 documentation:
-[GreengrassV2.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.create_deployment)
+```python title="Method definition"
+def create_deployment(
+    self,
+    *,
+    targetArn: str,
+    deploymentName: str = ...,
+    components: Mapping[str, ComponentDeploymentSpecificationTypeDef] = ...,  # (1)
+    iotJobConfiguration: DeploymentIoTJobConfigurationTypeDef = ...,  # (2)
+    deploymentPolicies: DeploymentPoliciesTypeDef = ...,  # (3)
+    tags: Mapping[str, str] = ...,
+    clientToken: str = ...,
+) -> CreateDeploymentResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateDeploymentRequestRequestTypeDef](./type_defs.md#createdeploymentrequestrequesttypedef).
+1. See [:material-code-braces: ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef) 
+2. See [:material-code-braces: DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef) 
+3. See [:material-code-braces: DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef) 
+4. See [:material-code-braces: CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `targetArn`: `str` *(required)*
-- `deploymentName`: `str`
-- `components`: `Mapping`\[`str`,
-  [ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef)\]
-- `iotJobConfiguration`:
-  [DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef)
-- `deploymentPolicies`:
-  [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDeploymentRequestRequestTypeDef = {  # (1)
+    "targetArn": ...,
+}
 
-Returns
-[CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
+parent.create_deployment(**kwargs)
+```
 
-<a id="delete\_component"></a>
+1. See [:material-code-braces: CreateDeploymentRequestRequestTypeDef](./type_defs.md#createdeploymentrequestrequesttypedef) 
 
-### delete_component
+### delete\_component
 
 Deletes a version of a component from IoT Greengrass.
 
-Type annotations for `boto3.client("greengrassv2").delete_component` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").delete_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_component)
 
-Boto3 documentation:
-[GreengrassV2.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_component)
+```python title="Method definition"
+def delete_component(
+    self,
+    *,
+    arn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteComponentRequestRequestTypeDef](./type_defs.md#deletecomponentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteComponentRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-<a id="delete\_core\_device"></a>
+parent.delete_component(**kwargs)
+```
 
-### delete_core_device
+1. See [:material-code-braces: DeleteComponentRequestRequestTypeDef](./type_defs.md#deletecomponentrequestrequesttypedef) 
+
+### delete\_core\_device
 
 Deletes a Greengrass core device, which is an IoT thing.
 
-Type annotations for `boto3.client("greengrassv2").delete_core_device` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").delete_core_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_core_device)
 
-Boto3 documentation:
-[GreengrassV2.Client.delete_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.delete_core_device)
+```python title="Method definition"
+def delete_core_device(
+    self,
+    *,
+    coreDeviceThingName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCoreDeviceRequestRequestTypeDef](./type_defs.md#deletecoredevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `coreDeviceThingName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCoreDeviceRequestRequestTypeDef = {  # (1)
+    "coreDeviceThingName": ...,
+}
 
-<a id="describe\_component"></a>
+parent.delete_core_device(**kwargs)
+```
 
-### describe_component
+1. See [:material-code-braces: DeleteCoreDeviceRequestRequestTypeDef](./type_defs.md#deletecoredevicerequestrequesttypedef) 
+
+### describe\_component
 
 Retrieves metadata for a version of a component.
 
-Type annotations for `boto3.client("greengrassv2").describe_component` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").describe_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.describe_component)
 
-Boto3 documentation:
-[GreengrassV2.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.describe_component)
+```python title="Method definition"
+def describe_component(
+    self,
+    *,
+    arn: str,
+) -> DescribeComponentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeComponentRequestRequestTypeDef](./type_defs.md#describecomponentrequestrequesttypedef).
+1. See [:material-code-braces: DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeComponentRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
+parent.describe_component(**kwargs)
+```
 
-<a id="disassociate\_service\_role\_from\_account"></a>
+1. See [:material-code-braces: DescribeComponentRequestRequestTypeDef](./type_defs.md#describecomponentrequestrequesttypedef) 
 
-### disassociate_service_role_from_account
+### disassociate\_service\_role\_from\_account
 
 Disassociates the Greengrass service role from IoT Greengrass for your Amazon
 Web Services account in this Amazon Web Services Region.
 
-Type annotations for
-`boto3.client("greengrassv2").disassociate_service_role_from_account` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").disassociate_service_role_from_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.disassociate_service_role_from_account)
 
-Boto3 documentation:
-[GreengrassV2.Client.disassociate_service_role_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.disassociate_service_role_from_account)
+```python title="Method definition"
+def disassociate_service_role_from_account(
+    self,
+) -> DisassociateServiceRoleFromAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef).
+1. See [:material-code-braces: DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef) 
 
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("greengrassv2").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.generate_presigned_url)
 
-Boto3 documentation:
-[GreengrassV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_component"></a>
-
-### get_component
+### get\_component
 
 Gets the recipe for a version of a component.
 
-Type annotations for `boto3.client("greengrassv2").get_component` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").get_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component)
 
-Boto3 documentation:
-[GreengrassV2.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component)
+```python title="Method definition"
+def get_component(
+    self,
+    *,
+    arn: str,
+    recipeOutputFormat: RecipeOutputFormatType = ...,  # (1)
+) -> GetComponentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetComponentRequestRequestTypeDef](./type_defs.md#getcomponentrequestrequesttypedef).
+1. See [:material-code-brackets: RecipeOutputFormatType](./literals.md#recipeoutputformattype) 
+2. See [:material-code-braces: GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `recipeOutputFormat`:
-  [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
+```python title="Usage example with kwargs"
+kwargs: GetComponentRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
+parent.get_component(**kwargs)
+```
 
-<a id="get\_component\_version\_artifact"></a>
+1. See [:material-code-braces: GetComponentRequestRequestTypeDef](./type_defs.md#getcomponentrequestrequesttypedef) 
 
-### get_component_version_artifact
+### get\_component\_version\_artifact
 
 Gets the pre-signed URL to download a public component artifact.
 
-Type annotations for
-`boto3.client("greengrassv2").get_component_version_artifact` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").get_component_version_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component_version_artifact)
 
-Boto3 documentation:
-[GreengrassV2.Client.get_component_version_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_component_version_artifact)
+```python title="Method definition"
+def get_component_version_artifact(
+    self,
+    *,
+    arn: str,
+    artifactName: str,
+) -> GetComponentVersionArtifactResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetComponentVersionArtifactRequestRequestTypeDef](./type_defs.md#getcomponentversionartifactrequestrequesttypedef).
+1. See [:material-code-braces: GetComponentVersionArtifactResponseTypeDef](./type_defs.md#getcomponentversionartifactresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `artifactName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetComponentVersionArtifactRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+    "artifactName": ...,
+}
 
-Returns
-[GetComponentVersionArtifactResponseTypeDef](./type_defs.md#getcomponentversionartifactresponsetypedef).
+parent.get_component_version_artifact(**kwargs)
+```
 
-<a id="get\_connectivity\_info"></a>
+1. See [:material-code-braces: GetComponentVersionArtifactRequestRequestTypeDef](./type_defs.md#getcomponentversionartifactrequestrequesttypedef) 
 
-### get_connectivity_info
+### get\_connectivity\_info
 
 Retrieves connectivity information for a Greengrass core device.
 
-Type annotations for `boto3.client("greengrassv2").get_connectivity_info`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").get_connectivity_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_connectivity_info)
 
-Boto3 documentation:
-[GreengrassV2.Client.get_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_connectivity_info)
+```python title="Method definition"
+def get_connectivity_info(
+    self,
+    *,
+    thingName: str,
+) -> GetConnectivityInfoResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectivityInfoRequestRequestTypeDef](./type_defs.md#getconnectivityinforequestrequesttypedef).
+1. See [:material-code-braces: GetConnectivityInfoResponseTypeDef](./type_defs.md#getconnectivityinforesponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConnectivityInfoRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[GetConnectivityInfoResponseTypeDef](./type_defs.md#getconnectivityinforesponsetypedef).
+parent.get_connectivity_info(**kwargs)
+```
 
-<a id="get\_core\_device"></a>
+1. See [:material-code-braces: GetConnectivityInfoRequestRequestTypeDef](./type_defs.md#getconnectivityinforequestrequesttypedef) 
 
-### get_core_device
+### get\_core\_device
 
 Retrieves metadata for a Greengrass core device.
 
-Type annotations for `boto3.client("greengrassv2").get_core_device` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").get_core_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_core_device)
 
-Boto3 documentation:
-[GreengrassV2.Client.get_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_core_device)
+```python title="Method definition"
+def get_core_device(
+    self,
+    *,
+    coreDeviceThingName: str,
+) -> GetCoreDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCoreDeviceRequestRequestTypeDef](./type_defs.md#getcoredevicerequestrequesttypedef).
+1. See [:material-code-braces: GetCoreDeviceResponseTypeDef](./type_defs.md#getcoredeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `coreDeviceThingName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCoreDeviceRequestRequestTypeDef = {  # (1)
+    "coreDeviceThingName": ...,
+}
 
-Returns
-[GetCoreDeviceResponseTypeDef](./type_defs.md#getcoredeviceresponsetypedef).
+parent.get_core_device(**kwargs)
+```
 
-<a id="get\_deployment"></a>
+1. See [:material-code-braces: GetCoreDeviceRequestRequestTypeDef](./type_defs.md#getcoredevicerequestrequesttypedef) 
 
-### get_deployment
+### get\_deployment
 
 Gets a deployment.
 
-Type annotations for `boto3.client("greengrassv2").get_deployment` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").get_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_deployment)
 
-Boto3 documentation:
-[GreengrassV2.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_deployment)
+```python title="Method definition"
+def get_deployment(
+    self,
+    *,
+    deploymentId: str,
+) -> GetDeploymentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeploymentRequestRequestTypeDef](./type_defs.md#getdeploymentrequestrequesttypedef).
+1. See [:material-code-braces: GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `deploymentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDeploymentRequestRequestTypeDef = {  # (1)
+    "deploymentId": ...,
+}
 
-Returns
-[GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef).
+parent.get_deployment(**kwargs)
+```
 
-<a id="get\_service\_role\_for\_account"></a>
+1. See [:material-code-braces: GetDeploymentRequestRequestTypeDef](./type_defs.md#getdeploymentrequestrequesttypedef) 
 
-### get_service_role_for_account
+### get\_service\_role\_for\_account
 
 Gets the service role associated with IoT Greengrass for your Amazon Web
 Services account in this Amazon Web Services Region.
 
-Type annotations for
-`boto3.client("greengrassv2").get_service_role_for_account` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").get_service_role_for_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_service_role_for_account)
 
-Boto3 documentation:
-[GreengrassV2.Client.get_service_role_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.get_service_role_for_account)
+```python title="Method definition"
+def get_service_role_for_account(
+    self,
+) -> GetServiceRoleForAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef).
+1. See [:material-code-braces: GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef) 
 
-<a id="list\_client\_devices\_associated\_with\_core\_device"></a>
-
-### list_client_devices_associated_with_core_device
+### list\_client\_devices\_associated\_with\_core\_device
 
 Retrieves a paginated list of client devices that are associated with a core
 device.
 
-Type annotations for
-`boto3.client("greengrassv2").list_client_devices_associated_with_core_device`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").list_client_devices_associated_with_core_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_client_devices_associated_with_core_device)
 
-Boto3 documentation:
-[GreengrassV2.Client.list_client_devices_associated_with_core_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_client_devices_associated_with_core_device)
+```python title="Method definition"
+def list_client_devices_associated_with_core_device(
+    self,
+    *,
+    coreDeviceThingName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredevicerequestrequesttypedef).
+1. See [:material-code-braces: ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `coreDeviceThingName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef = {  # (1)
+    "coreDeviceThingName": ...,
+}
 
-Returns
-[ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef).
+parent.list_client_devices_associated_with_core_device(**kwargs)
+```
 
-<a id="list\_component\_versions"></a>
+1. See [:material-code-braces: ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredevicerequestrequesttypedef) 
 
-### list_component_versions
+### list\_component\_versions
 
 Retrieves a paginated list of all versions for a component.
 
-Type annotations for `boto3.client("greengrassv2").list_component_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").list_component_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_component_versions)
 
-Boto3 documentation:
-[GreengrassV2.Client.list_component_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_component_versions)
+```python title="Method definition"
+def list_component_versions(
+    self,
+    *,
+    arn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListComponentVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListComponentVersionsRequestRequestTypeDef](./type_defs.md#listcomponentversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListComponentVersionsRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef).
+parent.list_component_versions(**kwargs)
+```
 
-<a id="list\_components"></a>
+1. See [:material-code-braces: ListComponentVersionsRequestRequestTypeDef](./type_defs.md#listcomponentversionsrequestrequesttypedef) 
 
-### list_components
+### list\_components
 
 Retrieves a paginated list of component summaries.
 
-Type annotations for `boto3.client("greengrassv2").list_components` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").list_components` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_components)
 
-Boto3 documentation:
-[GreengrassV2.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_components)
+```python title="Method definition"
+def list_components(
+    self,
+    *,
+    scope: ComponentVisibilityScopeType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListComponentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef).
+1. See [:material-code-brackets: ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype) 
+2. See [:material-code-braces: ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `scope`:
-  [ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListComponentsRequestRequestTypeDef = {  # (1)
+    "scope": ...,
+}
 
-Returns
-[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
+parent.list_components(**kwargs)
+```
 
-<a id="list\_core\_devices"></a>
+1. See [:material-code-braces: ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef) 
 
-### list_core_devices
+### list\_core\_devices
 
 Retrieves a paginated list of Greengrass core devices.
 
-Type annotations for `boto3.client("greengrassv2").list_core_devices` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").list_core_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_core_devices)
 
-Boto3 documentation:
-[GreengrassV2.Client.list_core_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_core_devices)
+```python title="Method definition"
+def list_core_devices(
+    self,
+    *,
+    thingGroupArn: str = ...,
+    status: CoreDeviceStatusType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListCoreDevicesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListCoreDevicesRequestRequestTypeDef](./type_defs.md#listcoredevicesrequestrequesttypedef).
+1. See [:material-code-brackets: CoreDeviceStatusType](./literals.md#coredevicestatustype) 
+2. See [:material-code-braces: ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingGroupArn`: `str`
-- `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCoreDevicesRequestRequestTypeDef = {  # (1)
+    "thingGroupArn": ...,
+}
 
-Returns
-[ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef).
+parent.list_core_devices(**kwargs)
+```
 
-<a id="list\_deployments"></a>
+1. See [:material-code-braces: ListCoreDevicesRequestRequestTypeDef](./type_defs.md#listcoredevicesrequestrequesttypedef) 
 
-### list_deployments
+### list\_deployments
 
 Retrieves a paginated list of deployments.
 
-Type annotations for `boto3.client("greengrassv2").list_deployments` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").list_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_deployments)
 
-Boto3 documentation:
-[GreengrassV2.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_deployments)
+```python title="Method definition"
+def list_deployments(
+    self,
+    *,
+    targetArn: str = ...,
+    historyFilter: DeploymentHistoryFilterType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListDeploymentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef).
+1. See [:material-code-brackets: DeploymentHistoryFilterType](./literals.md#deploymenthistoryfiltertype) 
+2. See [:material-code-braces: ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `targetArn`: `str`
-- `historyFilter`:
-  [DeploymentHistoryFilterType](./literals.md#deploymenthistoryfiltertype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDeploymentsRequestRequestTypeDef = {  # (1)
+    "targetArn": ...,
+}
 
-Returns
-[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef).
+parent.list_deployments(**kwargs)
+```
 
-<a id="list\_effective\_deployments"></a>
+1. See [:material-code-braces: ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef) 
 
-### list_effective_deployments
+### list\_effective\_deployments
 
 Retrieves a paginated list of deployment jobs that IoT Greengrass sends to
 Greengrass core devices.
 
-Type annotations for `boto3.client("greengrassv2").list_effective_deployments`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").list_effective_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_effective_deployments)
 
-Boto3 documentation:
-[GreengrassV2.Client.list_effective_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_effective_deployments)
+```python title="Method definition"
+def list_effective_deployments(
+    self,
+    *,
+    coreDeviceThingName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListEffectiveDeploymentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEffectiveDeploymentsRequestRequestTypeDef](./type_defs.md#listeffectivedeploymentsrequestrequesttypedef).
+1. See [:material-code-braces: ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `coreDeviceThingName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEffectiveDeploymentsRequestRequestTypeDef = {  # (1)
+    "coreDeviceThingName": ...,
+}
 
-Returns
-[ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef).
+parent.list_effective_deployments(**kwargs)
+```
 
-<a id="list\_installed\_components"></a>
+1. See [:material-code-braces: ListEffectiveDeploymentsRequestRequestTypeDef](./type_defs.md#listeffectivedeploymentsrequestrequesttypedef) 
 
-### list_installed_components
+### list\_installed\_components
 
-Retrieves a paginated list of the components that a Greengrass core device
-runs.
+Retrieves a paginated list of the components that a Greengrass core device runs.
 
-Type annotations for `boto3.client("greengrassv2").list_installed_components`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").list_installed_components` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_installed_components)
 
-Boto3 documentation:
-[GreengrassV2.Client.list_installed_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_installed_components)
+```python title="Method definition"
+def list_installed_components(
+    self,
+    *,
+    coreDeviceThingName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListInstalledComponentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstalledComponentsRequestRequestTypeDef](./type_defs.md#listinstalledcomponentsrequestrequesttypedef).
+1. See [:material-code-braces: ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `coreDeviceThingName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInstalledComponentsRequestRequestTypeDef = {  # (1)
+    "coreDeviceThingName": ...,
+}
 
-Returns
-[ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef).
+parent.list_installed_components(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListInstalledComponentsRequestRequestTypeDef](./type_defs.md#listinstalledcomponentsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves the list of tags for an IoT Greengrass resource.
 
-Type annotations for `boto3.client("greengrassv2").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[GreengrassV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="resolve\_component\_candidates"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### resolve_component_candidates
+### resolve\_component\_candidates
 
 Retrieves a list of components that meet the component, version, and platform
 requirements of a deployment.
 
-Type annotations for
-`boto3.client("greengrassv2").resolve_component_candidates` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").resolve_component_candidates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.resolve_component_candidates)
 
-Boto3 documentation:
-[GreengrassV2.Client.resolve_component_candidates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.resolve_component_candidates)
+```python title="Method definition"
+def resolve_component_candidates(
+    self,
+    *,
+    platform: ComponentPlatformTypeDef,  # (1)
+    componentCandidates: Sequence[ComponentCandidateTypeDef],  # (2)
+) -> ResolveComponentCandidatesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ResolveComponentCandidatesRequestRequestTypeDef](./type_defs.md#resolvecomponentcandidatesrequestrequesttypedef).
+1. See [:material-code-braces: ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef) 
+2. See [:material-code-braces: ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef) 
+3. See [:material-code-braces: ResolveComponentCandidatesResponseTypeDef](./type_defs.md#resolvecomponentcandidatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `platform`:
-  [ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)
-  *(required)*
-- `componentCandidates`:
-  `Sequence`\[[ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResolveComponentCandidatesRequestRequestTypeDef = {  # (1)
+    "platform": ...,
+    "componentCandidates": ...,
+}
 
-Returns
-[ResolveComponentCandidatesResponseTypeDef](./type_defs.md#resolvecomponentcandidatesresponsetypedef).
+parent.resolve_component_candidates(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ResolveComponentCandidatesRequestRequestTypeDef](./type_defs.md#resolvecomponentcandidatesrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to an IoT Greengrass resource.
 
-Type annotations for `boto3.client("greengrassv2").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.tag_resource)
 
-Boto3 documentation:
-[GreengrassV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from an IoT Greengrass resource.
 
-Type annotations for `boto3.client("greengrassv2").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.untag_resource)
 
-Boto3 documentation:
-[GreengrassV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_connectivity\_info"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_connectivity_info
+### update\_connectivity\_info
 
 Updates connectivity information for a Greengrass core device.
 
-Type annotations for `boto3.client("greengrassv2").update_connectivity_info`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").update_connectivity_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.update_connectivity_info)
 
-Boto3 documentation:
-[GreengrassV2.Client.update_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.update_connectivity_info)
+```python title="Method definition"
+def update_connectivity_info(
+    self,
+    *,
+    thingName: str,
+    connectivityInfo: Sequence[ConnectivityInfoTypeDef],  # (1)
+) -> UpdateConnectivityInfoResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectivityInfoRequestRequestTypeDef](./type_defs.md#updateconnectivityinforequestrequesttypedef).
+1. See [:material-code-braces: ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef) 
+2. See [:material-code-braces: UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `connectivityInfo`:
-  `Sequence`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectivityInfoRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+    "connectivityInfo": ...,
+}
 
-Returns
-[UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef).
+parent.update_connectivity_info(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateConnectivityInfoRequestRequestTypeDef](./type_defs.md#updateconnectivityinforequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("greengrassv2").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("greengrassv2").get_paginator` method with overloads.
 
-- `client.get_paginator("list_client_devices_associated_with_core_device")` ->
-  [ListClientDevicesAssociatedWithCoreDevicePaginator](./paginators.md#listclientdevicesassociatedwithcoredevicepaginator)
-- `client.get_paginator("list_component_versions")` ->
-  [ListComponentVersionsPaginator](./paginators.md#listcomponentversionspaginator)
-- `client.get_paginator("list_components")` ->
-  [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
-- `client.get_paginator("list_core_devices")` ->
-  [ListCoreDevicesPaginator](./paginators.md#listcoredevicespaginator)
-- `client.get_paginator("list_deployments")` ->
-  [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
-- `client.get_paginator("list_effective_deployments")` ->
-  [ListEffectiveDeploymentsPaginator](./paginators.md#listeffectivedeploymentspaginator)
-- `client.get_paginator("list_installed_components")` ->
-  [ListInstalledComponentsPaginator](./paginators.md#listinstalledcomponentspaginator)
+- `client.get_paginator("list_client_devices_associated_with_core_device")` -> [ListClientDevicesAssociatedWithCoreDevicePaginator](./paginators.md#listclientdevicesassociatedwithcoredevicepaginator)
+- `client.get_paginator("list_component_versions")` -> [ListComponentVersionsPaginator](./paginators.md#listcomponentversionspaginator)
+- `client.get_paginator("list_components")` -> [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
+- `client.get_paginator("list_core_devices")` -> [ListCoreDevicesPaginator](./paginators.md#listcoredevicespaginator)
+- `client.get_paginator("list_deployments")` -> [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
+- `client.get_paginator("list_effective_deployments")` -> [ListEffectiveDeploymentsPaginator](./paginators.md#listeffectivedeploymentspaginator)
+- `client.get_paginator("list_installed_components")` -> [ListInstalledComponentsPaginator](./paginators.md#listinstalledcomponentspaginator)
+
+
+

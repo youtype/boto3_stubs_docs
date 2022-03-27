@@ -1,75 +1,18 @@
-<a id="workspaceswebclient-for-boto3-workspacesweb-module"></a>
-
-# WorkSpacesWebClient for boto3 WorkSpacesWeb module
+# WorkSpacesWebClient
 
 > [Index](../README.md) > [WorkSpacesWeb](./README.md) > WorkSpacesWebClient
 
-Auto-generated documentation for
-[WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
-type annotations stubs module
-[mypy-boto3-workspaces-web](https://pypi.org/project/mypy-boto3-workspaces-web/).
+!!! note ""
 
-- [WorkSpacesWebClient for boto3 WorkSpacesWeb module](#workspaceswebclient-for-boto3-workspacesweb-module)
-  - [WorkSpacesWebClient](#workspaceswebclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_browser_settings](#associate_browser_settings)
-    - [associate_network_settings](#associate_network_settings)
-    - [associate_trust_store](#associate_trust_store)
-    - [associate_user_settings](#associate_user_settings)
-    - [can_paginate](#can_paginate)
-    - [create_browser_settings](#create_browser_settings)
-    - [create_identity_provider](#create_identity_provider)
-    - [create_network_settings](#create_network_settings)
-    - [create_portal](#create_portal)
-    - [create_trust_store](#create_trust_store)
-    - [create_user_settings](#create_user_settings)
-    - [delete_browser_settings](#delete_browser_settings)
-    - [delete_identity_provider](#delete_identity_provider)
-    - [delete_network_settings](#delete_network_settings)
-    - [delete_portal](#delete_portal)
-    - [delete_trust_store](#delete_trust_store)
-    - [delete_user_settings](#delete_user_settings)
-    - [disassociate_browser_settings](#disassociate_browser_settings)
-    - [disassociate_network_settings](#disassociate_network_settings)
-    - [disassociate_trust_store](#disassociate_trust_store)
-    - [disassociate_user_settings](#disassociate_user_settings)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_browser_settings](#get_browser_settings)
-    - [get_identity_provider](#get_identity_provider)
-    - [get_network_settings](#get_network_settings)
-    - [get_portal](#get_portal)
-    - [get_portal_service_provider_metadata](#get_portal_service_provider_metadata)
-    - [get_trust_store](#get_trust_store)
-    - [get_trust_store_certificate](#get_trust_store_certificate)
-    - [get_user_settings](#get_user_settings)
-    - [list_browser_settings](#list_browser_settings)
-    - [list_identity_providers](#list_identity_providers)
-    - [list_network_settings](#list_network_settings)
-    - [list_portals](#list_portals)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_trust_store_certificates](#list_trust_store_certificates)
-    - [list_trust_stores](#list_trust_stores)
-    - [list_user_settings](#list_user_settings)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_browser_settings](#update_browser_settings)
-    - [update_identity_provider](#update_identity_provider)
-    - [update_network_settings](#update_network_settings)
-    - [update_portal](#update_portal)
-    - [update_trust_store](#update_trust_store)
-    - [update_user_settings](#update_user_settings)
-
-<a id="workspaceswebclient"></a>
+    Auto-generated documentation for [WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
+    type annotations stubs module [mypy-boto3-workspaces-web](https://pypi.org/project/mypy-boto3-workspaces-web/).
 
 ## WorkSpacesWebClient
 
-Type annotations for `boto3.client("workspaces-web")`
+Type annotations and code completion for `#!python boto3.client("workspaces-web")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_workspaces_web.client import WorkSpacesWebClient
 
@@ -77,1100 +20,1436 @@ def get_workspaces-web_client() -> WorkSpacesWebClient:
     return Session().client("workspaces-web")
 ```
 
-Boto3 documentation:
-[WorkSpacesWeb.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("workspaces-web").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("workspaces-web")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.TooManyTagsException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_workspaces_web.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-WorkSpacesWebClient exceptions.
-
-Type annotations for `boto3.client("workspaces-web").exceptions` method.
-
-Boto3 documentation:
-[WorkSpacesWeb.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_browser\_settings"></a>
-
-### associate_browser_settings
+### associate\_browser\_settings
 
 Associates a browser settings resource with a web portal.
 
-Type annotations for
-`boto3.client("workspaces-web").associate_browser_settings` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").associate_browser_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.associate_browser_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.associate_browser_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.associate_browser_settings)
+```python title="Method definition"
+def associate_browser_settings(
+    self,
+    *,
+    browserSettingsArn: str,
+    portalArn: str,
+) -> AssociateBrowserSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateBrowserSettingsRequestRequestTypeDef](./type_defs.md#associatebrowsersettingsrequestrequesttypedef).
+1. See [:material-code-braces: AssociateBrowserSettingsResponseTypeDef](./type_defs.md#associatebrowsersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `browserSettingsArn`: `str` *(required)*
-- `portalArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateBrowserSettingsRequestRequestTypeDef = {  # (1)
+    "browserSettingsArn": ...,
+    "portalArn": ...,
+}
 
-Returns
-[AssociateBrowserSettingsResponseTypeDef](./type_defs.md#associatebrowsersettingsresponsetypedef).
+parent.associate_browser_settings(**kwargs)
+```
 
-<a id="associate\_network\_settings"></a>
+1. See [:material-code-braces: AssociateBrowserSettingsRequestRequestTypeDef](./type_defs.md#associatebrowsersettingsrequestrequesttypedef) 
 
-### associate_network_settings
+### associate\_network\_settings
 
 Associates a network settings resource with a web portal.
 
-Type annotations for
-`boto3.client("workspaces-web").associate_network_settings` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").associate_network_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.associate_network_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.associate_network_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.associate_network_settings)
+```python title="Method definition"
+def associate_network_settings(
+    self,
+    *,
+    networkSettingsArn: str,
+    portalArn: str,
+) -> AssociateNetworkSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateNetworkSettingsRequestRequestTypeDef](./type_defs.md#associatenetworksettingsrequestrequesttypedef).
+1. See [:material-code-braces: AssociateNetworkSettingsResponseTypeDef](./type_defs.md#associatenetworksettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `networkSettingsArn`: `str` *(required)*
-- `portalArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateNetworkSettingsRequestRequestTypeDef = {  # (1)
+    "networkSettingsArn": ...,
+    "portalArn": ...,
+}
 
-Returns
-[AssociateNetworkSettingsResponseTypeDef](./type_defs.md#associatenetworksettingsresponsetypedef).
+parent.associate_network_settings(**kwargs)
+```
 
-<a id="associate\_trust\_store"></a>
+1. See [:material-code-braces: AssociateNetworkSettingsRequestRequestTypeDef](./type_defs.md#associatenetworksettingsrequestrequesttypedef) 
 
-### associate_trust_store
+### associate\_trust\_store
 
 Associates a trust store with a web portal.
 
-Type annotations for `boto3.client("workspaces-web").associate_trust_store`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").associate_trust_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.associate_trust_store)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.associate_trust_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.associate_trust_store)
+```python title="Method definition"
+def associate_trust_store(
+    self,
+    *,
+    portalArn: str,
+    trustStoreArn: str,
+) -> AssociateTrustStoreResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateTrustStoreRequestRequestTypeDef](./type_defs.md#associatetruststorerequestrequesttypedef).
+1. See [:material-code-braces: AssociateTrustStoreResponseTypeDef](./type_defs.md#associatetruststoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
-- `trustStoreArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateTrustStoreRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+    "trustStoreArn": ...,
+}
 
-Returns
-[AssociateTrustStoreResponseTypeDef](./type_defs.md#associatetruststoreresponsetypedef).
+parent.associate_trust_store(**kwargs)
+```
 
-<a id="associate\_user\_settings"></a>
+1. See [:material-code-braces: AssociateTrustStoreRequestRequestTypeDef](./type_defs.md#associatetruststorerequestrequesttypedef) 
 
-### associate_user_settings
+### associate\_user\_settings
 
 Associates a user settings resource with a web portal.
 
-Type annotations for `boto3.client("workspaces-web").associate_user_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").associate_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.associate_user_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.associate_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.associate_user_settings)
+```python title="Method definition"
+def associate_user_settings(
+    self,
+    *,
+    portalArn: str,
+    userSettingsArn: str,
+) -> AssociateUserSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateUserSettingsRequestRequestTypeDef](./type_defs.md#associateusersettingsrequestrequesttypedef).
+1. See [:material-code-braces: AssociateUserSettingsResponseTypeDef](./type_defs.md#associateusersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
-- `userSettingsArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateUserSettingsRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+    "userSettingsArn": ...,
+}
 
-Returns
-[AssociateUserSettingsResponseTypeDef](./type_defs.md#associateusersettingsresponsetypedef).
+parent.associate_user_settings(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateUserSettingsRequestRequestTypeDef](./type_defs.md#associateusersettingsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("workspaces-web").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.can_paginate)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_browser\_settings"></a>
-
-### create_browser_settings
+### create\_browser\_settings
 
 Creates a browser settings resource that can be associated with a web portal.
 
-Type annotations for `boto3.client("workspaces-web").create_browser_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").create_browser_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_browser_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.create_browser_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_browser_settings)
+```python title="Method definition"
+def create_browser_settings(
+    self,
+    *,
+    browserPolicy: str,
+    additionalEncryptionContext: Mapping[str, str] = ...,
+    clientToken: str = ...,
+    customerManagedKey: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateBrowserSettingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBrowserSettingsRequestRequestTypeDef](./type_defs.md#createbrowsersettingsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateBrowserSettingsResponseTypeDef](./type_defs.md#createbrowsersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `browserPolicy`: `str` *(required)*
-- `additionalEncryptionContext`: `Mapping`\[`str`, `str`\]
-- `clientToken`: `str`
-- `customerManagedKey`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateBrowserSettingsRequestRequestTypeDef = {  # (1)
+    "browserPolicy": ...,
+}
 
-Returns
-[CreateBrowserSettingsResponseTypeDef](./type_defs.md#createbrowsersettingsresponsetypedef).
+parent.create_browser_settings(**kwargs)
+```
 
-<a id="create\_identity\_provider"></a>
+1. See [:material-code-braces: CreateBrowserSettingsRequestRequestTypeDef](./type_defs.md#createbrowsersettingsrequestrequesttypedef) 
 
-### create_identity_provider
+### create\_identity\_provider
 
-Creates an identity provider resource that is then associated with a web
-portal.
+Creates an identity provider resource that is then associated with a web portal.
 
-Type annotations for `boto3.client("workspaces-web").create_identity_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").create_identity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_identity_provider)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.create_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_identity_provider)
+```python title="Method definition"
+def create_identity_provider(
+    self,
+    *,
+    identityProviderDetails: Mapping[str, str],
+    identityProviderName: str,
+    identityProviderType: IdentityProviderTypeType,  # (1)
+    portalArn: str,
+    clientToken: str = ...,
+) -> CreateIdentityProviderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateIdentityProviderRequestRequestTypeDef](./type_defs.md#createidentityproviderrequestrequesttypedef).
+1. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
+2. See [:material-code-braces: CreateIdentityProviderResponseTypeDef](./type_defs.md#createidentityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `identityProviderDetails`: `Mapping`\[`str`, `str`\] *(required)*
-- `identityProviderName`: `str` *(required)*
-- `identityProviderType`:
-  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
-  *(required)*
-- `portalArn`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateIdentityProviderRequestRequestTypeDef = {  # (1)
+    "identityProviderDetails": ...,
+    "identityProviderName": ...,
+    "identityProviderType": ...,
+    "portalArn": ...,
+}
 
-Returns
-[CreateIdentityProviderResponseTypeDef](./type_defs.md#createidentityproviderresponsetypedef).
+parent.create_identity_provider(**kwargs)
+```
 
-<a id="create\_network\_settings"></a>
+1. See [:material-code-braces: CreateIdentityProviderRequestRequestTypeDef](./type_defs.md#createidentityproviderrequestrequesttypedef) 
 
-### create_network_settings
+### create\_network\_settings
 
 Creates a network settings resource that can be associated with a web portal.
 
-Type annotations for `boto3.client("workspaces-web").create_network_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").create_network_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_network_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.create_network_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_network_settings)
+```python title="Method definition"
+def create_network_settings(
+    self,
+    *,
+    securityGroupIds: Sequence[str],
+    subnetIds: Sequence[str],
+    vpcId: str,
+    clientToken: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateNetworkSettingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateNetworkSettingsRequestRequestTypeDef](./type_defs.md#createnetworksettingsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateNetworkSettingsResponseTypeDef](./type_defs.md#createnetworksettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `securityGroupIds`: `Sequence`\[`str`\] *(required)*
-- `subnetIds`: `Sequence`\[`str`\] *(required)*
-- `vpcId`: `str` *(required)*
-- `clientToken`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateNetworkSettingsRequestRequestTypeDef = {  # (1)
+    "securityGroupIds": ...,
+    "subnetIds": ...,
+    "vpcId": ...,
+}
 
-Returns
-[CreateNetworkSettingsResponseTypeDef](./type_defs.md#createnetworksettingsresponsetypedef).
+parent.create_network_settings(**kwargs)
+```
 
-<a id="create\_portal"></a>
+1. See [:material-code-braces: CreateNetworkSettingsRequestRequestTypeDef](./type_defs.md#createnetworksettingsrequestrequesttypedef) 
 
-### create_portal
+### create\_portal
 
 Creates a web portal.
 
-Type annotations for `boto3.client("workspaces-web").create_portal` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").create_portal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_portal)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.create_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_portal)
+```python title="Method definition"
+def create_portal(
+    self,
+    *,
+    additionalEncryptionContext: Mapping[str, str] = ...,
+    clientToken: str = ...,
+    customerManagedKey: str = ...,
+    displayName: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreatePortalResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePortalRequestRequestTypeDef](./type_defs.md#createportalrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef) 
 
-Keyword-only arguments:
 
-- `additionalEncryptionContext`: `Mapping`\[`str`, `str`\]
-- `clientToken`: `str`
-- `customerManagedKey`: `str`
-- `displayName`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePortalRequestRequestTypeDef = {  # (1)
+    "additionalEncryptionContext": ...,
+}
 
-Returns
-[CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef).
+parent.create_portal(**kwargs)
+```
 
-<a id="create\_trust\_store"></a>
+1. See [:material-code-braces: CreatePortalRequestRequestTypeDef](./type_defs.md#createportalrequestrequesttypedef) 
 
-### create_trust_store
+### create\_trust\_store
 
 Creates a trust store that can be associated with a web portal.
 
-Type annotations for `boto3.client("workspaces-web").create_trust_store`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").create_trust_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_trust_store)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.create_trust_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_trust_store)
+```python title="Method definition"
+def create_trust_store(
+    self,
+    *,
+    certificateList: Sequence[Union[bytes, IO[bytes], StreamingBody]],
+    clientToken: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateTrustStoreResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateTrustStoreRequestRequestTypeDef](./type_defs.md#createtruststorerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateTrustStoreResponseTypeDef](./type_defs.md#createtruststoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `certificateList`: `Sequence`\[`Union`\[`bytes`, `IO`\[`bytes`\],
-  `StreamingBody`\]\] *(required)*
-- `clientToken`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateTrustStoreRequestRequestTypeDef = {  # (1)
+    "certificateList": ...,
+}
 
-Returns
-[CreateTrustStoreResponseTypeDef](./type_defs.md#createtruststoreresponsetypedef).
+parent.create_trust_store(**kwargs)
+```
 
-<a id="create\_user\_settings"></a>
+1. See [:material-code-braces: CreateTrustStoreRequestRequestTypeDef](./type_defs.md#createtruststorerequestrequesttypedef) 
 
-### create_user_settings
+### create\_user\_settings
 
 Creates a user settings resource that can be associated with a web portal.
 
-Type annotations for `boto3.client("workspaces-web").create_user_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").create_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_user_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.create_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.create_user_settings)
+```python title="Method definition"
+def create_user_settings(
+    self,
+    *,
+    copyAllowed: EnabledTypeType,  # (1)
+    downloadAllowed: EnabledTypeType,  # (1)
+    pasteAllowed: EnabledTypeType,  # (1)
+    printAllowed: EnabledTypeType,  # (1)
+    uploadAllowed: EnabledTypeType,  # (1)
+    clientToken: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (6)
+) -> CreateUserSettingsResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserSettingsRequestRequestTypeDef](./type_defs.md#createusersettingsrequestrequesttypedef).
+1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: CreateUserSettingsResponseTypeDef](./type_defs.md#createusersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `copyAllowed`: [EnabledTypeType](./literals.md#enabledtypetype) *(required)*
-- `downloadAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
-  *(required)*
-- `pasteAllowed`: [EnabledTypeType](./literals.md#enabledtypetype) *(required)*
-- `printAllowed`: [EnabledTypeType](./literals.md#enabledtypetype) *(required)*
-- `uploadAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
-  *(required)*
-- `clientToken`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateUserSettingsRequestRequestTypeDef = {  # (1)
+    "copyAllowed": ...,
+    "downloadAllowed": ...,
+    "pasteAllowed": ...,
+    "printAllowed": ...,
+    "uploadAllowed": ...,
+}
 
-Returns
-[CreateUserSettingsResponseTypeDef](./type_defs.md#createusersettingsresponsetypedef).
+parent.create_user_settings(**kwargs)
+```
 
-<a id="delete\_browser\_settings"></a>
+1. See [:material-code-braces: CreateUserSettingsRequestRequestTypeDef](./type_defs.md#createusersettingsrequestrequesttypedef) 
 
-### delete_browser_settings
+### delete\_browser\_settings
 
 Deletes browser settings.
 
-Type annotations for `boto3.client("workspaces-web").delete_browser_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").delete_browser_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_browser_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.delete_browser_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_browser_settings)
+```python title="Method definition"
+def delete_browser_settings(
+    self,
+    *,
+    browserSettingsArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBrowserSettingsRequestRequestTypeDef](./type_defs.md#deletebrowsersettingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `browserSettingsArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBrowserSettingsRequestRequestTypeDef = {  # (1)
+    "browserSettingsArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_browser_settings(**kwargs)
+```
 
-<a id="delete\_identity\_provider"></a>
+1. See [:material-code-braces: DeleteBrowserSettingsRequestRequestTypeDef](./type_defs.md#deletebrowsersettingsrequestrequesttypedef) 
 
-### delete_identity_provider
+### delete\_identity\_provider
 
 Deletes the identity provider.
 
-Type annotations for `boto3.client("workspaces-web").delete_identity_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").delete_identity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_identity_provider)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.delete_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_identity_provider)
+```python title="Method definition"
+def delete_identity_provider(
+    self,
+    *,
+    identityProviderArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIdentityProviderRequestRequestTypeDef](./type_defs.md#deleteidentityproviderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `identityProviderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIdentityProviderRequestRequestTypeDef = {  # (1)
+    "identityProviderArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_identity_provider(**kwargs)
+```
 
-<a id="delete\_network\_settings"></a>
+1. See [:material-code-braces: DeleteIdentityProviderRequestRequestTypeDef](./type_defs.md#deleteidentityproviderrequestrequesttypedef) 
 
-### delete_network_settings
+### delete\_network\_settings
 
 Deletes network settings.
 
-Type annotations for `boto3.client("workspaces-web").delete_network_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").delete_network_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_network_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.delete_network_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_network_settings)
+```python title="Method definition"
+def delete_network_settings(
+    self,
+    *,
+    networkSettingsArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteNetworkSettingsRequestRequestTypeDef](./type_defs.md#deletenetworksettingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `networkSettingsArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNetworkSettingsRequestRequestTypeDef = {  # (1)
+    "networkSettingsArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_network_settings(**kwargs)
+```
 
-<a id="delete\_portal"></a>
+1. See [:material-code-braces: DeleteNetworkSettingsRequestRequestTypeDef](./type_defs.md#deletenetworksettingsrequestrequesttypedef) 
 
-### delete_portal
+### delete\_portal
 
 Deletes a web portal.
 
-Type annotations for `boto3.client("workspaces-web").delete_portal` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").delete_portal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_portal)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.delete_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_portal)
+```python title="Method definition"
+def delete_portal(
+    self,
+    *,
+    portalArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePortalRequestRequestTypeDef](./type_defs.md#deleteportalrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePortalRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_portal(**kwargs)
+```
 
-<a id="delete\_trust\_store"></a>
+1. See [:material-code-braces: DeletePortalRequestRequestTypeDef](./type_defs.md#deleteportalrequestrequesttypedef) 
 
-### delete_trust_store
+### delete\_trust\_store
 
 Deletes the trust store.
 
-Type annotations for `boto3.client("workspaces-web").delete_trust_store`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").delete_trust_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_trust_store)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.delete_trust_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_trust_store)
+```python title="Method definition"
+def delete_trust_store(
+    self,
+    *,
+    trustStoreArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTrustStoreRequestRequestTypeDef](./type_defs.md#deletetruststorerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `trustStoreArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTrustStoreRequestRequestTypeDef = {  # (1)
+    "trustStoreArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_trust_store(**kwargs)
+```
 
-<a id="delete\_user\_settings"></a>
+1. See [:material-code-braces: DeleteTrustStoreRequestRequestTypeDef](./type_defs.md#deletetruststorerequestrequesttypedef) 
 
-### delete_user_settings
+### delete\_user\_settings
 
 Deletes user settings.
 
-Type annotations for `boto3.client("workspaces-web").delete_user_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").delete_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_user_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.delete_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.delete_user_settings)
+```python title="Method definition"
+def delete_user_settings(
+    self,
+    *,
+    userSettingsArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserSettingsRequestRequestTypeDef](./type_defs.md#deleteusersettingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `userSettingsArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserSettingsRequestRequestTypeDef = {  # (1)
+    "userSettingsArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_user_settings(**kwargs)
+```
 
-<a id="disassociate\_browser\_settings"></a>
+1. See [:material-code-braces: DeleteUserSettingsRequestRequestTypeDef](./type_defs.md#deleteusersettingsrequestrequesttypedef) 
 
-### disassociate_browser_settings
+### disassociate\_browser\_settings
 
 Disassociates browser settings from a web portal.
 
-Type annotations for
-`boto3.client("workspaces-web").disassociate_browser_settings` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").disassociate_browser_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.disassociate_browser_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.disassociate_browser_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.disassociate_browser_settings)
+```python title="Method definition"
+def disassociate_browser_settings(
+    self,
+    *,
+    portalArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateBrowserSettingsRequestRequestTypeDef](./type_defs.md#disassociatebrowsersettingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateBrowserSettingsRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_browser_settings(**kwargs)
+```
 
-<a id="disassociate\_network\_settings"></a>
+1. See [:material-code-braces: DisassociateBrowserSettingsRequestRequestTypeDef](./type_defs.md#disassociatebrowsersettingsrequestrequesttypedef) 
 
-### disassociate_network_settings
+### disassociate\_network\_settings
 
 Disassociates network settings from a web portal.
 
-Type annotations for
-`boto3.client("workspaces-web").disassociate_network_settings` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").disassociate_network_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.disassociate_network_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.disassociate_network_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.disassociate_network_settings)
+```python title="Method definition"
+def disassociate_network_settings(
+    self,
+    *,
+    portalArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateNetworkSettingsRequestRequestTypeDef](./type_defs.md#disassociatenetworksettingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateNetworkSettingsRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_network_settings(**kwargs)
+```
 
-<a id="disassociate\_trust\_store"></a>
+1. See [:material-code-braces: DisassociateNetworkSettingsRequestRequestTypeDef](./type_defs.md#disassociatenetworksettingsrequestrequesttypedef) 
 
-### disassociate_trust_store
+### disassociate\_trust\_store
 
 Disassociates a trust store from a web portal.
 
-Type annotations for `boto3.client("workspaces-web").disassociate_trust_store`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").disassociate_trust_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.disassociate_trust_store)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.disassociate_trust_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.disassociate_trust_store)
+```python title="Method definition"
+def disassociate_trust_store(
+    self,
+    *,
+    portalArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateTrustStoreRequestRequestTypeDef](./type_defs.md#disassociatetruststorerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateTrustStoreRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_trust_store(**kwargs)
+```
 
-<a id="disassociate\_user\_settings"></a>
+1. See [:material-code-braces: DisassociateTrustStoreRequestRequestTypeDef](./type_defs.md#disassociatetruststorerequestrequesttypedef) 
 
-### disassociate_user_settings
+### disassociate\_user\_settings
 
 Disassociates user settings from a web portal.
 
-Type annotations for
-`boto3.client("workspaces-web").disassociate_user_settings` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").disassociate_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.disassociate_user_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.disassociate_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.disassociate_user_settings)
+```python title="Method definition"
+def disassociate_user_settings(
+    self,
+    *,
+    portalArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateUserSettingsRequestRequestTypeDef](./type_defs.md#disassociateusersettingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateUserSettingsRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_user_settings(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateUserSettingsRequestRequestTypeDef](./type_defs.md#disassociateusersettingsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("workspaces-web").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.generate_presigned_url)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_browser\_settings"></a>
-
-### get_browser_settings
+### get\_browser\_settings
 
 Gets browser settings.
 
-Type annotations for `boto3.client("workspaces-web").get_browser_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").get_browser_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_browser_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.get_browser_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_browser_settings)
+```python title="Method definition"
+def get_browser_settings(
+    self,
+    *,
+    browserSettingsArn: str,
+) -> GetBrowserSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBrowserSettingsRequestRequestTypeDef](./type_defs.md#getbrowsersettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetBrowserSettingsResponseTypeDef](./type_defs.md#getbrowsersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `browserSettingsArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBrowserSettingsRequestRequestTypeDef = {  # (1)
+    "browserSettingsArn": ...,
+}
 
-Returns
-[GetBrowserSettingsResponseTypeDef](./type_defs.md#getbrowsersettingsresponsetypedef).
+parent.get_browser_settings(**kwargs)
+```
 
-<a id="get\_identity\_provider"></a>
+1. See [:material-code-braces: GetBrowserSettingsRequestRequestTypeDef](./type_defs.md#getbrowsersettingsrequestrequesttypedef) 
 
-### get_identity_provider
+### get\_identity\_provider
 
 Gets the identity provider.
 
-Type annotations for `boto3.client("workspaces-web").get_identity_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").get_identity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_identity_provider)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.get_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_identity_provider)
+```python title="Method definition"
+def get_identity_provider(
+    self,
+    *,
+    identityProviderArn: str,
+) -> GetIdentityProviderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIdentityProviderRequestRequestTypeDef](./type_defs.md#getidentityproviderrequestrequesttypedef).
+1. See [:material-code-braces: GetIdentityProviderResponseTypeDef](./type_defs.md#getidentityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `identityProviderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetIdentityProviderRequestRequestTypeDef = {  # (1)
+    "identityProviderArn": ...,
+}
 
-Returns
-[GetIdentityProviderResponseTypeDef](./type_defs.md#getidentityproviderresponsetypedef).
+parent.get_identity_provider(**kwargs)
+```
 
-<a id="get\_network\_settings"></a>
+1. See [:material-code-braces: GetIdentityProviderRequestRequestTypeDef](./type_defs.md#getidentityproviderrequestrequesttypedef) 
 
-### get_network_settings
+### get\_network\_settings
 
 Gets the network settings.
 
-Type annotations for `boto3.client("workspaces-web").get_network_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").get_network_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_network_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.get_network_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_network_settings)
+```python title="Method definition"
+def get_network_settings(
+    self,
+    *,
+    networkSettingsArn: str,
+) -> GetNetworkSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNetworkSettingsRequestRequestTypeDef](./type_defs.md#getnetworksettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetNetworkSettingsResponseTypeDef](./type_defs.md#getnetworksettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `networkSettingsArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetNetworkSettingsRequestRequestTypeDef = {  # (1)
+    "networkSettingsArn": ...,
+}
 
-Returns
-[GetNetworkSettingsResponseTypeDef](./type_defs.md#getnetworksettingsresponsetypedef).
+parent.get_network_settings(**kwargs)
+```
 
-<a id="get\_portal"></a>
+1. See [:material-code-braces: GetNetworkSettingsRequestRequestTypeDef](./type_defs.md#getnetworksettingsrequestrequesttypedef) 
 
-### get_portal
+### get\_portal
 
 Gets the web portal.
 
-Type annotations for `boto3.client("workspaces-web").get_portal` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").get_portal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_portal)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.get_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_portal)
+```python title="Method definition"
+def get_portal(
+    self,
+    *,
+    portalArn: str,
+) -> GetPortalResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPortalRequestRequestTypeDef](./type_defs.md#getportalrequestrequesttypedef).
+1. See [:material-code-braces: GetPortalResponseTypeDef](./type_defs.md#getportalresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPortalRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
 
-Returns [GetPortalResponseTypeDef](./type_defs.md#getportalresponsetypedef).
+parent.get_portal(**kwargs)
+```
 
-<a id="get\_portal\_service\_provider\_metadata"></a>
+1. See [:material-code-braces: GetPortalRequestRequestTypeDef](./type_defs.md#getportalrequestrequesttypedef) 
 
-### get_portal_service_provider_metadata
+### get\_portal\_service\_provider\_metadata
 
 Gets the service provider metadata.
 
-Type annotations for
-`boto3.client("workspaces-web").get_portal_service_provider_metadata` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").get_portal_service_provider_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_portal_service_provider_metadata)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.get_portal_service_provider_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_portal_service_provider_metadata)
+```python title="Method definition"
+def get_portal_service_provider_metadata(
+    self,
+    *,
+    portalArn: str,
+) -> GetPortalServiceProviderMetadataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPortalServiceProviderMetadataRequestRequestTypeDef](./type_defs.md#getportalserviceprovidermetadatarequestrequesttypedef).
+1. See [:material-code-braces: GetPortalServiceProviderMetadataResponseTypeDef](./type_defs.md#getportalserviceprovidermetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPortalServiceProviderMetadataRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
 
-Returns
-[GetPortalServiceProviderMetadataResponseTypeDef](./type_defs.md#getportalserviceprovidermetadataresponsetypedef).
+parent.get_portal_service_provider_metadata(**kwargs)
+```
 
-<a id="get\_trust\_store"></a>
+1. See [:material-code-braces: GetPortalServiceProviderMetadataRequestRequestTypeDef](./type_defs.md#getportalserviceprovidermetadatarequestrequesttypedef) 
 
-### get_trust_store
+### get\_trust\_store
 
 Gets the trust store.
 
-Type annotations for `boto3.client("workspaces-web").get_trust_store` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").get_trust_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_trust_store)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.get_trust_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_trust_store)
+```python title="Method definition"
+def get_trust_store(
+    self,
+    *,
+    trustStoreArn: str,
+) -> GetTrustStoreResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTrustStoreRequestRequestTypeDef](./type_defs.md#gettruststorerequestrequesttypedef).
+1. See [:material-code-braces: GetTrustStoreResponseTypeDef](./type_defs.md#gettruststoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `trustStoreArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTrustStoreRequestRequestTypeDef = {  # (1)
+    "trustStoreArn": ...,
+}
 
-Returns
-[GetTrustStoreResponseTypeDef](./type_defs.md#gettruststoreresponsetypedef).
+parent.get_trust_store(**kwargs)
+```
 
-<a id="get\_trust\_store\_certificate"></a>
+1. See [:material-code-braces: GetTrustStoreRequestRequestTypeDef](./type_defs.md#gettruststorerequestrequesttypedef) 
 
-### get_trust_store_certificate
+### get\_trust\_store\_certificate
 
 Gets the trust store certificate.
 
-Type annotations for
-`boto3.client("workspaces-web").get_trust_store_certificate` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").get_trust_store_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_trust_store_certificate)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.get_trust_store_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_trust_store_certificate)
+```python title="Method definition"
+def get_trust_store_certificate(
+    self,
+    *,
+    thumbprint: str,
+    trustStoreArn: str,
+) -> GetTrustStoreCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTrustStoreCertificateRequestRequestTypeDef](./type_defs.md#gettruststorecertificaterequestrequesttypedef).
+1. See [:material-code-braces: GetTrustStoreCertificateResponseTypeDef](./type_defs.md#gettruststorecertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thumbprint`: `str` *(required)*
-- `trustStoreArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTrustStoreCertificateRequestRequestTypeDef = {  # (1)
+    "thumbprint": ...,
+    "trustStoreArn": ...,
+}
 
-Returns
-[GetTrustStoreCertificateResponseTypeDef](./type_defs.md#gettruststorecertificateresponsetypedef).
+parent.get_trust_store_certificate(**kwargs)
+```
 
-<a id="get\_user\_settings"></a>
+1. See [:material-code-braces: GetTrustStoreCertificateRequestRequestTypeDef](./type_defs.md#gettruststorecertificaterequestrequesttypedef) 
 
-### get_user_settings
+### get\_user\_settings
 
 Gets user settings.
 
-Type annotations for `boto3.client("workspaces-web").get_user_settings` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").get_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_user_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.get_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.get_user_settings)
+```python title="Method definition"
+def get_user_settings(
+    self,
+    *,
+    userSettingsArn: str,
+) -> GetUserSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserSettingsRequestRequestTypeDef](./type_defs.md#getusersettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `userSettingsArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUserSettingsRequestRequestTypeDef = {  # (1)
+    "userSettingsArn": ...,
+}
 
-Returns
-[GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef).
+parent.get_user_settings(**kwargs)
+```
 
-<a id="list\_browser\_settings"></a>
+1. See [:material-code-braces: GetUserSettingsRequestRequestTypeDef](./type_defs.md#getusersettingsrequestrequesttypedef) 
 
-### list_browser_settings
+### list\_browser\_settings
 
 Retrieves a list of browser settings.
 
-Type annotations for `boto3.client("workspaces-web").list_browser_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").list_browser_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_browser_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.list_browser_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_browser_settings)
+```python title="Method definition"
+def list_browser_settings(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListBrowserSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBrowserSettingsRequestRequestTypeDef](./type_defs.md#listbrowsersettingsrequestrequesttypedef).
+1. See [:material-code-braces: ListBrowserSettingsResponseTypeDef](./type_defs.md#listbrowsersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBrowserSettingsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListBrowserSettingsResponseTypeDef](./type_defs.md#listbrowsersettingsresponsetypedef).
+parent.list_browser_settings(**kwargs)
+```
 
-<a id="list\_identity\_providers"></a>
+1. See [:material-code-braces: ListBrowserSettingsRequestRequestTypeDef](./type_defs.md#listbrowsersettingsrequestrequesttypedef) 
 
-### list_identity_providers
+### list\_identity\_providers
 
 Retrieves a list of identity providers for a specific web portal.
 
-Type annotations for `boto3.client("workspaces-web").list_identity_providers`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").list_identity_providers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_identity_providers)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.list_identity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_identity_providers)
+```python title="Method definition"
+def list_identity_providers(
+    self,
+    *,
+    portalArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListIdentityProvidersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIdentityProvidersRequestRequestTypeDef](./type_defs.md#listidentityprovidersrequestrequesttypedef).
+1. See [:material-code-braces: ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListIdentityProvidersRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
 
-Returns
-[ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef).
+parent.list_identity_providers(**kwargs)
+```
 
-<a id="list\_network\_settings"></a>
+1. See [:material-code-braces: ListIdentityProvidersRequestRequestTypeDef](./type_defs.md#listidentityprovidersrequestrequesttypedef) 
 
-### list_network_settings
+### list\_network\_settings
 
 Retrieves a list of network settings.
 
-Type annotations for `boto3.client("workspaces-web").list_network_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").list_network_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_network_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.list_network_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_network_settings)
+```python title="Method definition"
+def list_network_settings(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListNetworkSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListNetworkSettingsRequestRequestTypeDef](./type_defs.md#listnetworksettingsrequestrequesttypedef).
+1. See [:material-code-braces: ListNetworkSettingsResponseTypeDef](./type_defs.md#listnetworksettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListNetworkSettingsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListNetworkSettingsResponseTypeDef](./type_defs.md#listnetworksettingsresponsetypedef).
+parent.list_network_settings(**kwargs)
+```
 
-<a id="list\_portals"></a>
+1. See [:material-code-braces: ListNetworkSettingsRequestRequestTypeDef](./type_defs.md#listnetworksettingsrequestrequesttypedef) 
 
-### list_portals
+### list\_portals
 
 Retrieves a list or web portals.
 
-Type annotations for `boto3.client("workspaces-web").list_portals` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").list_portals` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_portals)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.list_portals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_portals)
+```python title="Method definition"
+def list_portals(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListPortalsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPortalsRequestRequestTypeDef](./type_defs.md#listportalsrequestrequesttypedef).
+1. See [:material-code-braces: ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPortalsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef).
+parent.list_portals(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListPortalsRequestRequestTypeDef](./type_defs.md#listportalsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves a list of tags for a resource.
 
-Type annotations for `boto3.client("workspaces-web").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_trust\_store\_certificates"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_trust_store_certificates
+### list\_trust\_store\_certificates
 
 Retrieves a list of trust store certificates.
 
-Type annotations for
-`boto3.client("workspaces-web").list_trust_store_certificates` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").list_trust_store_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_trust_store_certificates)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.list_trust_store_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_trust_store_certificates)
+```python title="Method definition"
+def list_trust_store_certificates(
+    self,
+    *,
+    trustStoreArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTrustStoreCertificatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTrustStoreCertificatesRequestRequestTypeDef](./type_defs.md#listtruststorecertificatesrequestrequesttypedef).
+1. See [:material-code-braces: ListTrustStoreCertificatesResponseTypeDef](./type_defs.md#listtruststorecertificatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `trustStoreArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTrustStoreCertificatesRequestRequestTypeDef = {  # (1)
+    "trustStoreArn": ...,
+}
 
-Returns
-[ListTrustStoreCertificatesResponseTypeDef](./type_defs.md#listtruststorecertificatesresponsetypedef).
+parent.list_trust_store_certificates(**kwargs)
+```
 
-<a id="list\_trust\_stores"></a>
+1. See [:material-code-braces: ListTrustStoreCertificatesRequestRequestTypeDef](./type_defs.md#listtruststorecertificatesrequestrequesttypedef) 
 
-### list_trust_stores
+### list\_trust\_stores
 
 Retrieves a list of trust stores.
 
-Type annotations for `boto3.client("workspaces-web").list_trust_stores` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").list_trust_stores` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_trust_stores)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.list_trust_stores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_trust_stores)
+```python title="Method definition"
+def list_trust_stores(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTrustStoresResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTrustStoresRequestRequestTypeDef](./type_defs.md#listtruststoresrequestrequesttypedef).
+1. See [:material-code-braces: ListTrustStoresResponseTypeDef](./type_defs.md#listtruststoresresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTrustStoresRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListTrustStoresResponseTypeDef](./type_defs.md#listtruststoresresponsetypedef).
+parent.list_trust_stores(**kwargs)
+```
 
-<a id="list\_user\_settings"></a>
+1. See [:material-code-braces: ListTrustStoresRequestRequestTypeDef](./type_defs.md#listtruststoresrequestrequesttypedef) 
 
-### list_user_settings
+### list\_user\_settings
 
 Retrieves a list of user settings.
 
-Type annotations for `boto3.client("workspaces-web").list_user_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").list_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_user_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.list_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.list_user_settings)
+```python title="Method definition"
+def list_user_settings(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListUserSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUserSettingsRequestRequestTypeDef](./type_defs.md#listusersettingsrequestrequesttypedef).
+1. See [:material-code-braces: ListUserSettingsResponseTypeDef](./type_defs.md#listusersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUserSettingsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListUserSettingsResponseTypeDef](./type_defs.md#listusersettingsresponsetypedef).
+parent.list_user_settings(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListUserSettingsRequestRequestTypeDef](./type_defs.md#listusersettingsrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or overwrites one or more tags for the specified resource.
 
-Type annotations for `boto3.client("workspaces-web").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.tag_resource)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from the specified resource.
 
-Type annotations for `boto3.client("workspaces-web").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.untag_resource)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_browser\_settings"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_browser_settings
+### update\_browser\_settings
 
 Updates browser settings.
 
-Type annotations for `boto3.client("workspaces-web").update_browser_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").update_browser_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_browser_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.update_browser_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_browser_settings)
+```python title="Method definition"
+def update_browser_settings(
+    self,
+    *,
+    browserSettingsArn: str,
+    browserPolicy: str = ...,
+    clientToken: str = ...,
+) -> UpdateBrowserSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBrowserSettingsRequestRequestTypeDef](./type_defs.md#updatebrowsersettingsrequestrequesttypedef).
+1. See [:material-code-braces: UpdateBrowserSettingsResponseTypeDef](./type_defs.md#updatebrowsersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `browserSettingsArn`: `str` *(required)*
-- `browserPolicy`: `str`
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateBrowserSettingsRequestRequestTypeDef = {  # (1)
+    "browserSettingsArn": ...,
+}
 
-Returns
-[UpdateBrowserSettingsResponseTypeDef](./type_defs.md#updatebrowsersettingsresponsetypedef).
+parent.update_browser_settings(**kwargs)
+```
 
-<a id="update\_identity\_provider"></a>
+1. See [:material-code-braces: UpdateBrowserSettingsRequestRequestTypeDef](./type_defs.md#updatebrowsersettingsrequestrequesttypedef) 
 
-### update_identity_provider
+### update\_identity\_provider
 
 Updates the identity provider.
 
-Type annotations for `boto3.client("workspaces-web").update_identity_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").update_identity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_identity_provider)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.update_identity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_identity_provider)
+```python title="Method definition"
+def update_identity_provider(
+    self,
+    *,
+    identityProviderArn: str,
+    clientToken: str = ...,
+    identityProviderDetails: Mapping[str, str] = ...,
+    identityProviderName: str = ...,
+    identityProviderType: IdentityProviderTypeType = ...,  # (1)
+) -> UpdateIdentityProviderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateIdentityProviderRequestRequestTypeDef](./type_defs.md#updateidentityproviderrequestrequesttypedef).
+1. See [:material-code-brackets: IdentityProviderTypeType](./literals.md#identityprovidertypetype) 
+2. See [:material-code-braces: UpdateIdentityProviderResponseTypeDef](./type_defs.md#updateidentityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `identityProviderArn`: `str` *(required)*
-- `clientToken`: `str`
-- `identityProviderDetails`: `Mapping`\[`str`, `str`\]
-- `identityProviderName`: `str`
-- `identityProviderType`:
-  [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateIdentityProviderRequestRequestTypeDef = {  # (1)
+    "identityProviderArn": ...,
+}
 
-Returns
-[UpdateIdentityProviderResponseTypeDef](./type_defs.md#updateidentityproviderresponsetypedef).
+parent.update_identity_provider(**kwargs)
+```
 
-<a id="update\_network\_settings"></a>
+1. See [:material-code-braces: UpdateIdentityProviderRequestRequestTypeDef](./type_defs.md#updateidentityproviderrequestrequesttypedef) 
 
-### update_network_settings
+### update\_network\_settings
 
 Updates network settings.
 
-Type annotations for `boto3.client("workspaces-web").update_network_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").update_network_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_network_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.update_network_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_network_settings)
+```python title="Method definition"
+def update_network_settings(
+    self,
+    *,
+    networkSettingsArn: str,
+    clientToken: str = ...,
+    securityGroupIds: Sequence[str] = ...,
+    subnetIds: Sequence[str] = ...,
+    vpcId: str = ...,
+) -> UpdateNetworkSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateNetworkSettingsRequestRequestTypeDef](./type_defs.md#updatenetworksettingsrequestrequesttypedef).
+1. See [:material-code-braces: UpdateNetworkSettingsResponseTypeDef](./type_defs.md#updatenetworksettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `networkSettingsArn`: `str` *(required)*
-- `clientToken`: `str`
-- `securityGroupIds`: `Sequence`\[`str`\]
-- `subnetIds`: `Sequence`\[`str`\]
-- `vpcId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateNetworkSettingsRequestRequestTypeDef = {  # (1)
+    "networkSettingsArn": ...,
+}
 
-Returns
-[UpdateNetworkSettingsResponseTypeDef](./type_defs.md#updatenetworksettingsresponsetypedef).
+parent.update_network_settings(**kwargs)
+```
 
-<a id="update\_portal"></a>
+1. See [:material-code-braces: UpdateNetworkSettingsRequestRequestTypeDef](./type_defs.md#updatenetworksettingsrequestrequesttypedef) 
 
-### update_portal
+### update\_portal
 
 Updates a web portal.
 
-Type annotations for `boto3.client("workspaces-web").update_portal` method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").update_portal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_portal)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.update_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_portal)
+```python title="Method definition"
+def update_portal(
+    self,
+    *,
+    portalArn: str,
+    displayName: str = ...,
+) -> UpdatePortalResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePortalRequestRequestTypeDef](./type_defs.md#updateportalrequestrequesttypedef).
+1. See [:material-code-braces: UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalArn`: `str` *(required)*
-- `displayName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePortalRequestRequestTypeDef = {  # (1)
+    "portalArn": ...,
+}
 
-Returns
-[UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef).
+parent.update_portal(**kwargs)
+```
 
-<a id="update\_trust\_store"></a>
+1. See [:material-code-braces: UpdatePortalRequestRequestTypeDef](./type_defs.md#updateportalrequestrequesttypedef) 
 
-### update_trust_store
+### update\_trust\_store
 
 Updates the trust store.
 
-Type annotations for `boto3.client("workspaces-web").update_trust_store`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").update_trust_store` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_trust_store)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.update_trust_store](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_trust_store)
+```python title="Method definition"
+def update_trust_store(
+    self,
+    *,
+    trustStoreArn: str,
+    certificatesToAdd: Sequence[Union[bytes, IO[bytes], StreamingBody]] = ...,
+    certificatesToDelete: Sequence[str] = ...,
+    clientToken: str = ...,
+) -> UpdateTrustStoreResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTrustStoreRequestRequestTypeDef](./type_defs.md#updatetruststorerequestrequesttypedef).
+1. See [:material-code-braces: UpdateTrustStoreResponseTypeDef](./type_defs.md#updatetruststoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `trustStoreArn`: `str` *(required)*
-- `certificatesToAdd`: `Sequence`\[`Union`\[`bytes`, `IO`\[`bytes`\],
-  `StreamingBody`\]\]
-- `certificatesToDelete`: `Sequence`\[`str`\]
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateTrustStoreRequestRequestTypeDef = {  # (1)
+    "trustStoreArn": ...,
+}
 
-Returns
-[UpdateTrustStoreResponseTypeDef](./type_defs.md#updatetruststoreresponsetypedef).
+parent.update_trust_store(**kwargs)
+```
 
-<a id="update\_user\_settings"></a>
+1. See [:material-code-braces: UpdateTrustStoreRequestRequestTypeDef](./type_defs.md#updatetruststorerequestrequesttypedef) 
 
-### update_user_settings
+### update\_user\_settings
 
 Updates the user settings.
 
-Type annotations for `boto3.client("workspaces-web").update_user_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces-web").update_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_user_settings)
 
-Boto3 documentation:
-[WorkSpacesWeb.Client.update_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.update_user_settings)
+```python title="Method definition"
+def update_user_settings(
+    self,
+    *,
+    userSettingsArn: str,
+    clientToken: str = ...,
+    copyAllowed: EnabledTypeType = ...,  # (1)
+    downloadAllowed: EnabledTypeType = ...,  # (1)
+    pasteAllowed: EnabledTypeType = ...,  # (1)
+    printAllowed: EnabledTypeType = ...,  # (1)
+    uploadAllowed: EnabledTypeType = ...,  # (1)
+) -> UpdateUserSettingsResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserSettingsRequestRequestTypeDef](./type_defs.md#updateusersettingsrequestrequesttypedef).
+1. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+2. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+3. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+4. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+5. See [:material-code-brackets: EnabledTypeType](./literals.md#enabledtypetype) 
+6. See [:material-code-braces: UpdateUserSettingsResponseTypeDef](./type_defs.md#updateusersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `userSettingsArn`: `str` *(required)*
-- `clientToken`: `str`
-- `copyAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
-- `downloadAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
-- `pasteAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
-- `printAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
-- `uploadAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateUserSettingsRequestRequestTypeDef = {  # (1)
+    "userSettingsArn": ...,
+}
 
-Returns
-[UpdateUserSettingsResponseTypeDef](./type_defs.md#updateusersettingsresponsetypedef).
+parent.update_user_settings(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateUserSettingsRequestRequestTypeDef](./type_defs.md#updateusersettingsrequestrequesttypedef) 
+
+
+
+

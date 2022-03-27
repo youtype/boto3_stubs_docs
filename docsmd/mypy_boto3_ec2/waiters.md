@@ -1,58 +1,18 @@
-<a id="waiters-for-boto3-ec2-module"></a>
-
-# Waiters for boto3 EC2 module
+# Waiters
 
 > [Index](../README.md) > [EC2](./README.md) > Waiters
 
-Auto-generated documentation for
-[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
-type annotations stubs module
-[mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
+!!! note ""
 
-- [Waiters for boto3 EC2 module](#waiters-for-boto3-ec2-module)
-  - [BundleTaskCompleteWaiter](#bundletaskcompletewaiter)
-  - [ConversionTaskCancelledWaiter](#conversiontaskcancelledwaiter)
-  - [ConversionTaskCompletedWaiter](#conversiontaskcompletedwaiter)
-  - [ConversionTaskDeletedWaiter](#conversiontaskdeletedwaiter)
-  - [CustomerGatewayAvailableWaiter](#customergatewayavailablewaiter)
-  - [ExportTaskCancelledWaiter](#exporttaskcancelledwaiter)
-  - [ExportTaskCompletedWaiter](#exporttaskcompletedwaiter)
-  - [ImageAvailableWaiter](#imageavailablewaiter)
-  - [ImageExistsWaiter](#imageexistswaiter)
-  - [InstanceExistsWaiter](#instanceexistswaiter)
-  - [InstanceRunningWaiter](#instancerunningwaiter)
-  - [InstanceStatusOkWaiter](#instancestatusokwaiter)
-  - [InstanceStoppedWaiter](#instancestoppedwaiter)
-  - [InstanceTerminatedWaiter](#instanceterminatedwaiter)
-  - [InternetGatewayExistsWaiter](#internetgatewayexistswaiter)
-  - [KeyPairExistsWaiter](#keypairexistswaiter)
-  - [NatGatewayAvailableWaiter](#natgatewayavailablewaiter)
-  - [NetworkInterfaceAvailableWaiter](#networkinterfaceavailablewaiter)
-  - [PasswordDataAvailableWaiter](#passworddataavailablewaiter)
-  - [SecurityGroupExistsWaiter](#securitygroupexistswaiter)
-  - [SnapshotCompletedWaiter](#snapshotcompletedwaiter)
-  - [SpotInstanceRequestFulfilledWaiter](#spotinstancerequestfulfilledwaiter)
-  - [SubnetAvailableWaiter](#subnetavailablewaiter)
-  - [SystemStatusOkWaiter](#systemstatusokwaiter)
-  - [VolumeAvailableWaiter](#volumeavailablewaiter)
-  - [VolumeDeletedWaiter](#volumedeletedwaiter)
-  - [VolumeInUseWaiter](#volumeinusewaiter)
-  - [VpcAvailableWaiter](#vpcavailablewaiter)
-  - [VpcExistsWaiter](#vpcexistswaiter)
-  - [VpcPeeringConnectionDeletedWaiter](#vpcpeeringconnectiondeletedwaiter)
-  - [VpcPeeringConnectionExistsWaiter](#vpcpeeringconnectionexistswaiter)
-  - [VpnConnectionAvailableWaiter](#vpnconnectionavailablewaiter)
-  - [VpnConnectionDeletedWaiter](#vpnconnectiondeletedwaiter)
-
-<a id="bundletaskcompletewaiter"></a>
+    Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+    type annotations stubs module [mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 ## BundleTaskCompleteWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("bundle_task_complete")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("bundle_task_complete")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.BundleTaskComplete)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import BundleTaskCompleteWaiter
@@ -61,26 +21,42 @@ def get_bundle_task_complete_waiter() -> BundleTaskCompleteWaiter:
     return Session().client("ec2").get_waiter("bundle_task_complete")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.bundle_task_complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.BundleTaskComplete)
 
-Arguments for `BundleTaskCompleteWaiter.wait` method:
+### wait
 
-- `BundleIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BundleTaskCompleteWaiter.wait` method.
 
-<a id="conversiontaskcancelledwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    BundleIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBundleTasksRequestBundleTaskCompleteWaitTypeDef = {  # (1)
+    "BundleIds": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBundleTasksRequestBundleTaskCompleteWaitTypeDef](./type_defs.md#describebundletasksrequestbundletaskcompletewaittypedef) 
 ## ConversionTaskCancelledWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("conversion_task_cancelled")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("conversion_task_cancelled")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ConversionTaskCancelled)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ConversionTaskCancelledWaiter
@@ -89,25 +65,40 @@ def get_conversion_task_cancelled_waiter() -> ConversionTaskCancelledWaiter:
     return Session().client("ec2").get_waiter("conversion_task_cancelled")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.conversion_task_cancelled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ConversionTaskCancelled)
 
-Arguments for `ConversionTaskCancelledWaiter.wait` method:
+### wait
 
-- `ConversionTaskIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ConversionTaskCancelledWaiter.wait` method.
 
-<a id="conversiontaskcompletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ConversionTaskIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConversionTasksRequestConversionTaskCancelledWaitTypeDef = {  # (1)
+    "ConversionTaskIds": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConversionTasksRequestConversionTaskCancelledWaitTypeDef](./type_defs.md#describeconversiontasksrequestconversiontaskcancelledwaittypedef) 
 ## ConversionTaskCompletedWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("conversion_task_completed")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("conversion_task_completed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ConversionTaskCompleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ConversionTaskCompletedWaiter
@@ -116,25 +107,40 @@ def get_conversion_task_completed_waiter() -> ConversionTaskCompletedWaiter:
     return Session().client("ec2").get_waiter("conversion_task_completed")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.conversion_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ConversionTaskCompleted)
 
-Arguments for `ConversionTaskCompletedWaiter.wait` method:
+### wait
 
-- `ConversionTaskIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ConversionTaskCompletedWaiter.wait` method.
 
-<a id="conversiontaskdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ConversionTaskIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConversionTasksRequestConversionTaskCompletedWaitTypeDef = {  # (1)
+    "ConversionTaskIds": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConversionTasksRequestConversionTaskCompletedWaitTypeDef](./type_defs.md#describeconversiontasksrequestconversiontaskcompletedwaittypedef) 
 ## ConversionTaskDeletedWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("conversion_task_deleted")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("conversion_task_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ConversionTaskDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ConversionTaskDeletedWaiter
@@ -143,25 +149,40 @@ def get_conversion_task_deleted_waiter() -> ConversionTaskDeletedWaiter:
     return Session().client("ec2").get_waiter("conversion_task_deleted")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.conversion_task_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ConversionTaskDeleted)
 
-Arguments for `ConversionTaskDeletedWaiter.wait` method:
+### wait
 
-- `ConversionTaskIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ConversionTaskDeletedWaiter.wait` method.
 
-<a id="customergatewayavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ConversionTaskIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConversionTasksRequestConversionTaskDeletedWaitTypeDef = {  # (1)
+    "ConversionTaskIds": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConversionTasksRequestConversionTaskDeletedWaitTypeDef](./type_defs.md#describeconversiontasksrequestconversiontaskdeletedwaittypedef) 
 ## CustomerGatewayAvailableWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("customer_gateway_available")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("customer_gateway_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.CustomerGatewayAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import CustomerGatewayAvailableWaiter
@@ -170,25 +191,42 @@ def get_customer_gateway_available_waiter() -> CustomerGatewayAvailableWaiter:
     return Session().client("ec2").get_waiter("customer_gateway_available")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.customer_gateway_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.CustomerGatewayAvailable)
 
-Arguments for `CustomerGatewayAvailableWaiter.wait` method:
+### wait
 
-- `CustomerGatewayIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python CustomerGatewayAvailableWaiter.wait` method.
 
-<a id="exporttaskcancelledwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    CustomerGatewayIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomerGatewaysRequestCustomerGatewayAvailableWaitTypeDef = {  # (1)
+    "CustomerGatewayIds": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCustomerGatewaysRequestCustomerGatewayAvailableWaitTypeDef](./type_defs.md#describecustomergatewaysrequestcustomergatewayavailablewaittypedef) 
 ## ExportTaskCancelledWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("export_task_cancelled")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("export_task_cancelled")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ExportTaskCancelled)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ExportTaskCancelledWaiter
@@ -197,24 +235,41 @@ def get_export_task_cancelled_waiter() -> ExportTaskCancelledWaiter:
     return Session().client("ec2").get_waiter("export_task_cancelled")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.export_task_cancelled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ExportTaskCancelled)
 
-Arguments for `ExportTaskCancelledWaiter.wait` method:
+### wait
 
-- `ExportTaskIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ExportTaskCancelledWaiter.wait` method.
 
-<a id="exporttaskcompletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ExportTaskIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeExportTasksRequestExportTaskCancelledWaitTypeDef = {  # (1)
+    "ExportTaskIds": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeExportTasksRequestExportTaskCancelledWaitTypeDef](./type_defs.md#describeexporttasksrequestexporttaskcancelledwaittypedef) 
 ## ExportTaskCompletedWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("export_task_completed")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("export_task_completed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ExportTaskCompleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ExportTaskCompletedWaiter
@@ -223,24 +278,41 @@ def get_export_task_completed_waiter() -> ExportTaskCompletedWaiter:
     return Session().client("ec2").get_waiter("export_task_completed")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.export_task_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ExportTaskCompleted)
 
-Arguments for `ExportTaskCompletedWaiter.wait` method:
+### wait
 
-- `ExportTaskIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ExportTaskCompletedWaiter.wait` method.
 
-<a id="imageavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ExportTaskIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeExportTasksRequestExportTaskCompletedWaitTypeDef = {  # (1)
+    "ExportTaskIds": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeExportTasksRequestExportTaskCompletedWaitTypeDef](./type_defs.md#describeexporttasksrequestexporttaskcompletedwaittypedef) 
 ## ImageAvailableWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("image_available")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("image_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ImageAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ImageAvailableWaiter
@@ -249,28 +321,45 @@ def get_image_available_waiter() -> ImageAvailableWaiter:
     return Session().client("ec2").get_waiter("image_available")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.image_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ImageAvailable)
 
-Arguments for `ImageAvailableWaiter.wait` method:
+### wait
 
-- `ExecutableUsers`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImageIds`: `Sequence`\[`str`\]
-- `Owners`: `Sequence`\[`str`\]
-- `IncludeDeprecated`: `bool`
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ImageAvailableWaiter.wait` method.
 
-<a id="imageexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ExecutableUsers: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ImageIds: Sequence[str] = ...,
+    Owners: Sequence[str] = ...,
+    IncludeDeprecated: bool = ...,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImagesRequestImageAvailableWaitTypeDef = {  # (1)
+    "ExecutableUsers": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImagesRequestImageAvailableWaitTypeDef](./type_defs.md#describeimagesrequestimageavailablewaittypedef) 
 ## ImageExistsWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("image_exists")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("image_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ImageExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import ImageExistsWaiter
@@ -279,28 +368,45 @@ def get_image_exists_waiter() -> ImageExistsWaiter:
     return Session().client("ec2").get_waiter("image_exists")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.image_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.ImageExists)
 
-Arguments for `ImageExistsWaiter.wait` method:
+### wait
 
-- `ExecutableUsers`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `ImageIds`: `Sequence`\[`str`\]
-- `Owners`: `Sequence`\[`str`\]
-- `IncludeDeprecated`: `bool`
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ImageExistsWaiter.wait` method.
 
-<a id="instanceexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ExecutableUsers: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    ImageIds: Sequence[str] = ...,
+    Owners: Sequence[str] = ...,
+    IncludeDeprecated: bool = ...,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImagesRequestImageExistsWaitTypeDef = {  # (1)
+    "ExecutableUsers": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImagesRequestImageExistsWaitTypeDef](./type_defs.md#describeimagesrequestimageexistswaittypedef) 
 ## InstanceExistsWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("instance_exists")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("instance_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceExistsWaiter
@@ -309,27 +415,44 @@ def get_instance_exists_waiter() -> InstanceExistsWaiter:
     return Session().client("ec2").get_waiter("instance_exists")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.instance_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceExists)
 
-Arguments for `InstanceExistsWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InstanceExistsWaiter.wait` method.
 
-<a id="instancerunningwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    InstanceIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancesRequestInstanceExistsWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstancesRequestInstanceExistsWaitTypeDef](./type_defs.md#describeinstancesrequestinstanceexistswaittypedef) 
 ## InstanceRunningWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("instance_running")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("instance_running")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceRunning)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceRunningWaiter
@@ -338,27 +461,44 @@ def get_instance_running_waiter() -> InstanceRunningWaiter:
     return Session().client("ec2").get_waiter("instance_running")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.instance_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceRunning)
 
-Arguments for `InstanceRunningWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InstanceRunningWaiter.wait` method.
 
-<a id="instancestatusokwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    InstanceIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancesRequestInstanceRunningWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstancesRequestInstanceRunningWaitTypeDef](./type_defs.md#describeinstancesrequestinstancerunningwaittypedef) 
 ## InstanceStatusOkWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("instance_status_ok")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("instance_status_ok")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceStatusOk)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceStatusOkWaiter
@@ -367,28 +507,45 @@ def get_instance_status_ok_waiter() -> InstanceStatusOkWaiter:
     return Session().client("ec2").get_waiter("instance_status_ok")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.instance_status_ok](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceStatusOk)
 
-Arguments for `InstanceStatusOkWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `DryRun`: `bool`
-- `IncludeAllInstances`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InstanceStatusOkWaiter.wait` method.
 
-<a id="instancestoppedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    InstanceIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    DryRun: bool = ...,
+    IncludeAllInstances: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceStatusRequestInstanceStatusOkWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceStatusRequestInstanceStatusOkWaitTypeDef](./type_defs.md#describeinstancestatusrequestinstancestatusokwaittypedef) 
 ## InstanceStoppedWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("instance_stopped")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("instance_stopped")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceStopped)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceStoppedWaiter
@@ -397,27 +554,44 @@ def get_instance_stopped_waiter() -> InstanceStoppedWaiter:
     return Session().client("ec2").get_waiter("instance_stopped")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceStopped)
 
-Arguments for `InstanceStoppedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InstanceStoppedWaiter.wait` method.
 
-<a id="instanceterminatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    InstanceIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancesRequestInstanceStoppedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstancesRequestInstanceStoppedWaitTypeDef](./type_defs.md#describeinstancesrequestinstancestoppedwaittypedef) 
 ## InstanceTerminatedWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("instance_terminated")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("instance_terminated")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceTerminated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InstanceTerminatedWaiter
@@ -426,28 +600,44 @@ def get_instance_terminated_waiter() -> InstanceTerminatedWaiter:
     return Session().client("ec2").get_waiter("instance_terminated")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.instance_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InstanceTerminated)
 
-Arguments for `InstanceTerminatedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InstanceTerminatedWaiter.wait` method.
 
-<a id="internetgatewayexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    InstanceIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancesRequestInstanceTerminatedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstancesRequestInstanceTerminatedWaitTypeDef](./type_defs.md#describeinstancesrequestinstanceterminatedwaittypedef) 
 ## InternetGatewayExistsWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("internet_gateway_exists")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("internet_gateway_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InternetGatewayExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import InternetGatewayExistsWaiter
@@ -456,27 +646,44 @@ def get_internet_gateway_exists_waiter() -> InternetGatewayExistsWaiter:
     return Session().client("ec2").get_waiter("internet_gateway_exists")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.internet_gateway_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.InternetGatewayExists)
 
-Arguments for `InternetGatewayExistsWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `InternetGatewayIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InternetGatewayExistsWaiter.wait` method.
 
-<a id="keypairexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    InternetGatewayIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInternetGatewaysRequestInternetGatewayExistsWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInternetGatewaysRequestInternetGatewayExistsWaitTypeDef](./type_defs.md#describeinternetgatewaysrequestinternetgatewayexistswaittypedef) 
 ## KeyPairExistsWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("key_pair_exists")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("key_pair_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.KeyPairExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import KeyPairExistsWaiter
@@ -485,26 +692,43 @@ def get_key_pair_exists_waiter() -> KeyPairExistsWaiter:
     return Session().client("ec2").get_waiter("key_pair_exists")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.key_pair_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.KeyPairExists)
 
-Arguments for `KeyPairExistsWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `KeyNames`: `Sequence`\[`str`\]
-- `KeyPairIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python KeyPairExistsWaiter.wait` method.
 
-<a id="natgatewayavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    KeyNames: Sequence[str] = ...,
+    KeyPairIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeKeyPairsRequestKeyPairExistsWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeKeyPairsRequestKeyPairExistsWaitTypeDef](./type_defs.md#describekeypairsrequestkeypairexistswaittypedef) 
 ## NatGatewayAvailableWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("nat_gateway_available")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("nat_gateway_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.NatGatewayAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import NatGatewayAvailableWaiter
@@ -513,28 +737,44 @@ def get_nat_gateway_available_waiter() -> NatGatewayAvailableWaiter:
     return Session().client("ec2").get_waiter("nat_gateway_available")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.nat_gateway_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.NatGatewayAvailable)
 
-Arguments for `NatGatewayAvailableWaiter.wait` method:
+### wait
 
-- `DryRun`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NatGatewayIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python NatGatewayAvailableWaiter.wait` method.
 
-<a id="networkinterfaceavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    DryRun: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NatGatewayIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNatGatewaysRequestNatGatewayAvailableWaitTypeDef = {  # (1)
+    "DryRun": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNatGatewaysRequestNatGatewayAvailableWaitTypeDef](./type_defs.md#describenatgatewaysrequestnatgatewayavailablewaittypedef) 
 ## NetworkInterfaceAvailableWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("network_interface_available")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("network_interface_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.NetworkInterfaceAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import NetworkInterfaceAvailableWaiter
@@ -543,28 +783,44 @@ def get_network_interface_available_waiter() -> NetworkInterfaceAvailableWaiter:
     return Session().client("ec2").get_waiter("network_interface_available")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.network_interface_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.NetworkInterfaceAvailable)
 
-Arguments for `NetworkInterfaceAvailableWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `NetworkInterfaceIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python NetworkInterfaceAvailableWaiter.wait` method.
 
-<a id="passworddataavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    NetworkInterfaceIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNetworkInterfacesRequestNetworkInterfaceAvailableWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNetworkInterfacesRequestNetworkInterfaceAvailableWaitTypeDef](./type_defs.md#describenetworkinterfacesrequestnetworkinterfaceavailablewaittypedef) 
 ## PasswordDataAvailableWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("password_data_available")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("password_data_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.PasswordDataAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import PasswordDataAvailableWaiter
@@ -573,24 +829,40 @@ def get_password_data_available_waiter() -> PasswordDataAvailableWaiter:
     return Session().client("ec2").get_waiter("password_data_available")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.password_data_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.PasswordDataAvailable)
 
-Arguments for `PasswordDataAvailableWaiter.wait` method:
+### wait
 
-- `InstanceId`: `str` *(required)*
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python PasswordDataAvailableWaiter.wait` method.
 
-<a id="securitygroupexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    InstanceId: str,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetPasswordDataRequestPasswordDataAvailableWaitTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetPasswordDataRequestPasswordDataAvailableWaitTypeDef](./type_defs.md#getpassworddatarequestpassworddataavailablewaittypedef) 
 ## SecurityGroupExistsWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("security_group_exists")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("security_group_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SecurityGroupExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SecurityGroupExistsWaiter
@@ -599,28 +871,45 @@ def get_security_group_exists_waiter() -> SecurityGroupExistsWaiter:
     return Session().client("ec2").get_waiter("security_group_exists")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.security_group_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SecurityGroupExists)
 
-Arguments for `SecurityGroupExistsWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `GroupIds`: `Sequence`\[`str`\]
-- `GroupNames`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python SecurityGroupExistsWaiter.wait` method.
 
-<a id="snapshotcompletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    GroupIds: Sequence[str] = ...,
+    GroupNames: Sequence[str] = ...,
+    DryRun: bool = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSecurityGroupsRequestSecurityGroupExistsWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSecurityGroupsRequestSecurityGroupExistsWaitTypeDef](./type_defs.md#describesecuritygroupsrequestsecuritygroupexistswaittypedef) 
 ## SnapshotCompletedWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("snapshot_completed")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("snapshot_completed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SnapshotCompleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SnapshotCompletedWaiter
@@ -629,30 +918,46 @@ def get_snapshot_completed_waiter() -> SnapshotCompletedWaiter:
     return Session().client("ec2").get_waiter("snapshot_completed")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.snapshot_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SnapshotCompleted)
 
-Arguments for `SnapshotCompletedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `OwnerIds`: `Sequence`\[`str`\]
-- `RestorableByUserIds`: `Sequence`\[`str`\]
-- `SnapshotIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python SnapshotCompletedWaiter.wait` method.
 
-<a id="spotinstancerequestfulfilledwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    OwnerIds: Sequence[str] = ...,
+    RestorableByUserIds: Sequence[str] = ...,
+    SnapshotIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotsRequestSnapshotCompletedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSnapshotsRequestSnapshotCompletedWaitTypeDef](./type_defs.md#describesnapshotsrequestsnapshotcompletedwaittypedef) 
 ## SpotInstanceRequestFulfilledWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("spot_instance_request_fulfilled")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("spot_instance_request_fulfilled")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SpotInstanceRequestFulfilled)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SpotInstanceRequestFulfilledWaiter
@@ -661,27 +966,44 @@ def get_spot_instance_request_fulfilled_waiter() -> SpotInstanceRequestFulfilled
     return Session().client("ec2").get_waiter("spot_instance_request_fulfilled")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.spot_instance_request_fulfilled](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SpotInstanceRequestFulfilled)
 
-Arguments for `SpotInstanceRequestFulfilledWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `SpotInstanceRequestIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python SpotInstanceRequestFulfilledWaiter.wait` method.
 
-<a id="subnetavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    SpotInstanceRequestIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSpotInstanceRequestsRequestSpotInstanceRequestFulfilledWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSpotInstanceRequestsRequestSpotInstanceRequestFulfilledWaitTypeDef](./type_defs.md#describespotinstancerequestsrequestspotinstancerequestfulfilledwaittypedef) 
 ## SubnetAvailableWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("subnet_available")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("subnet_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SubnetAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SubnetAvailableWaiter
@@ -690,27 +1012,44 @@ def get_subnet_available_waiter() -> SubnetAvailableWaiter:
     return Session().client("ec2").get_waiter("subnet_available")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.subnet_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SubnetAvailable)
 
-Arguments for `SubnetAvailableWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SubnetIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python SubnetAvailableWaiter.wait` method.
 
-<a id="systemstatusokwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SubnetIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSubnetsRequestSubnetAvailableWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSubnetsRequestSubnetAvailableWaitTypeDef](./type_defs.md#describesubnetsrequestsubnetavailablewaittypedef) 
 ## SystemStatusOkWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("system_status_ok")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("system_status_ok")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SystemStatusOk)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import SystemStatusOkWaiter
@@ -719,28 +1058,45 @@ def get_system_status_ok_waiter() -> SystemStatusOkWaiter:
     return Session().client("ec2").get_waiter("system_status_ok")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.system_status_ok](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.SystemStatusOk)
 
-Arguments for `SystemStatusOkWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `InstanceIds`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `DryRun`: `bool`
-- `IncludeAllInstances`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python SystemStatusOkWaiter.wait` method.
 
-<a id="volumeavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    InstanceIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    DryRun: bool = ...,
+    IncludeAllInstances: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceStatusRequestSystemStatusOkWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceStatusRequestSystemStatusOkWaitTypeDef](./type_defs.md#describeinstancestatusrequestsystemstatusokwaittypedef) 
 ## VolumeAvailableWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("volume_available")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("volume_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VolumeAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VolumeAvailableWaiter
@@ -749,27 +1105,44 @@ def get_volume_available_waiter() -> VolumeAvailableWaiter:
     return Session().client("ec2").get_waiter("volume_available")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.volume_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VolumeAvailable)
 
-Arguments for `VolumeAvailableWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VolumeAvailableWaiter.wait` method.
 
-<a id="volumedeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VolumeIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVolumesRequestVolumeAvailableWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVolumesRequestVolumeAvailableWaitTypeDef](./type_defs.md#describevolumesrequestvolumeavailablewaittypedef) 
 ## VolumeDeletedWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("volume_deleted")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("volume_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VolumeDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VolumeDeletedWaiter
@@ -778,27 +1151,44 @@ def get_volume_deleted_waiter() -> VolumeDeletedWaiter:
     return Session().client("ec2").get_waiter("volume_deleted")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.volume_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VolumeDeleted)
 
-Arguments for `VolumeDeletedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VolumeDeletedWaiter.wait` method.
 
-<a id="volumeinusewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VolumeIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVolumesRequestVolumeDeletedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVolumesRequestVolumeDeletedWaitTypeDef](./type_defs.md#describevolumesrequestvolumedeletedwaittypedef) 
 ## VolumeInUseWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("volume_in_use")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("volume_in_use")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VolumeInUse)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VolumeInUseWaiter
@@ -807,27 +1197,44 @@ def get_volume_in_use_waiter() -> VolumeInUseWaiter:
     return Session().client("ec2").get_waiter("volume_in_use")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.volume_in_use](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VolumeInUse)
 
-Arguments for `VolumeInUseWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VolumeIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VolumeInUseWaiter.wait` method.
 
-<a id="vpcavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VolumeIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVolumesRequestVolumeInUseWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVolumesRequestVolumeInUseWaitTypeDef](./type_defs.md#describevolumesrequestvolumeinusewaittypedef) 
 ## VpcAvailableWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("vpc_available")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("vpc_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpcAvailableWaiter
@@ -836,27 +1243,44 @@ def get_vpc_available_waiter() -> VpcAvailableWaiter:
     return Session().client("ec2").get_waiter("vpc_available")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.vpc_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcAvailable)
 
-Arguments for `VpcAvailableWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpcIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VpcAvailableWaiter.wait` method.
 
-<a id="vpcexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VpcIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcsRequestVpcAvailableWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcsRequestVpcAvailableWaitTypeDef](./type_defs.md#describevpcsrequestvpcavailablewaittypedef) 
 ## VpcExistsWaiter
 
-Type annotations for `boto3.client("ec2").get_waiter("vpc_exists")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("vpc_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpcExistsWaiter
@@ -865,28 +1289,44 @@ def get_vpc_exists_waiter() -> VpcExistsWaiter:
     return Session().client("ec2").get_waiter("vpc_exists")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.vpc_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcExists)
 
-Arguments for `VpcExistsWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpcIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VpcExistsWaiter.wait` method.
 
-<a id="vpcpeeringconnectiondeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VpcIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcsRequestVpcExistsWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcsRequestVpcExistsWaitTypeDef](./type_defs.md#describevpcsrequestvpcexistswaittypedef) 
 ## VpcPeeringConnectionDeletedWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("vpc_peering_connection_deleted")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("vpc_peering_connection_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcPeeringConnectionDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpcPeeringConnectionDeletedWaiter
@@ -895,28 +1335,44 @@ def get_vpc_peering_connection_deleted_waiter() -> VpcPeeringConnectionDeletedWa
     return Session().client("ec2").get_waiter("vpc_peering_connection_deleted")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.vpc_peering_connection_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcPeeringConnectionDeleted)
 
-Arguments for `VpcPeeringConnectionDeletedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VpcPeeringConnectionDeletedWaiter.wait` method.
 
-<a id="vpcpeeringconnectionexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    VpcPeeringConnectionIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcPeeringConnectionsRequestVpcPeeringConnectionDeletedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcPeeringConnectionsRequestVpcPeeringConnectionDeletedWaitTypeDef](./type_defs.md#describevpcpeeringconnectionsrequestvpcpeeringconnectiondeletedwaittypedef) 
 ## VpcPeeringConnectionExistsWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("vpc_peering_connection_exists")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("vpc_peering_connection_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcPeeringConnectionExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpcPeeringConnectionExistsWaiter
@@ -925,28 +1381,44 @@ def get_vpc_peering_connection_exists_waiter() -> VpcPeeringConnectionExistsWait
     return Session().client("ec2").get_waiter("vpc_peering_connection_exists")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.vpc_peering_connection_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpcPeeringConnectionExists)
 
-Arguments for `VpcPeeringConnectionExistsWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `VpcPeeringConnectionIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VpcPeeringConnectionExistsWaiter.wait` method.
 
-<a id="vpnconnectionavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DryRun: bool = ...,
+    VpcPeeringConnectionIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpcPeeringConnectionsRequestVpcPeeringConnectionExistsWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpcPeeringConnectionsRequestVpcPeeringConnectionExistsWaitTypeDef](./type_defs.md#describevpcpeeringconnectionsrequestvpcpeeringconnectionexistswaittypedef) 
 ## VpnConnectionAvailableWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("vpn_connection_available")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("vpn_connection_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpnConnectionAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpnConnectionAvailableWaiter
@@ -955,26 +1427,42 @@ def get_vpn_connection_available_waiter() -> VpnConnectionAvailableWaiter:
     return Session().client("ec2").get_waiter("vpn_connection_available")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.vpn_connection_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpnConnectionAvailable)
 
-Arguments for `VpnConnectionAvailableWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpnConnectionIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VpnConnectionAvailableWaiter.wait` method.
 
-<a id="vpnconnectiondeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VpnConnectionIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpnConnectionsRequestVpnConnectionAvailableWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpnConnectionsRequestVpnConnectionAvailableWaitTypeDef](./type_defs.md#describevpnconnectionsrequestvpnconnectionavailablewaittypedef) 
 ## VpnConnectionDeletedWaiter
 
-Type annotations for
-`boto3.client("ec2").get_waiter("vpn_connection_deleted")`.
+Type annotations and code completion for `#!python boto3.client("ec2").get_waiter("vpn_connection_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpnConnectionDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ec2.waiter import VpnConnectionDeletedWaiter
@@ -983,12 +1471,33 @@ def get_vpn_connection_deleted_waiter() -> VpnConnectionDeletedWaiter:
     return Session().client("ec2").get_waiter("vpn_connection_deleted")
 ```
 
-Boto3 documentation:
-[EC2.Waiter.vpn_connection_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Waiter.VpnConnectionDeleted)
 
-Arguments for `VpnConnectionDeletedWaiter.wait` method:
+### wait
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `VpnConnectionIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VpnConnectionDeletedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    VpnConnectionIds: Sequence[str] = ...,
+    DryRun: bool = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVpnConnectionsRequestVpnConnectionDeletedWaitTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVpnConnectionsRequestVpnConnectionDeletedWaitTypeDef](./type_defs.md#describevpnconnectionsrequestvpnconnectiondeletedwaittypedef) 

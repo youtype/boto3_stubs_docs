@@ -1,36 +1,18 @@
-<a id="ssoclient-for-boto3-sso-module"></a>
-
-# SSOClient for boto3 SSO module
+# SSOClient
 
 > [Index](../README.md) > [SSO](./README.md) > SSOClient
 
-Auto-generated documentation for
-[SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
-type annotations stubs module
-[mypy-boto3-sso](https://pypi.org/project/mypy-boto3-sso/).
+!!! note ""
 
-- [SSOClient for boto3 SSO module](#ssoclient-for-boto3-sso-module)
-  - [SSOClient](#ssoclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_role_credentials](#get_role_credentials)
-    - [list_account_roles](#list_account_roles)
-    - [list_accounts](#list_accounts)
-    - [logout](#logout)
-    - [get_paginator](#get_paginator)
-
-<a id="ssoclient"></a>
+    Auto-generated documentation for [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
+    type annotations stubs module [mypy-boto3-sso](https://pypi.org/project/mypy-boto3-sso/).
 
 ## SSOClient
 
-Type annotations for `boto3.client("sso")`
+Type annotations and code completion for `#!python boto3.client("sso")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sso.client import SSOClient
 
@@ -38,181 +20,207 @@ def get_sso_client() -> SSOClient:
     return Session().client("sso")
 ```
 
-Boto3 documentation:
-[SSO.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sso").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sso")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InvalidRequestException,
+    client.ResourceNotFoundException,
+    client.TooManyRequestsException,
+    client.UnauthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sso.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnauthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SSOClient exceptions.
-
-Type annotations for `boto3.client("sso").exceptions` method.
-
-Boto3 documentation:
-[SSO.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sso").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("sso").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.can_paginate)
 
-Boto3 documentation:
-[SSO.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("sso").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sso").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SSO.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_role\_credentials
 
-Returns `str`.
+Returns the STS short-term credentials for a given role name that is assigned to
+the user.
 
-<a id="get\_role\_credentials"></a>
+Type annotations and code completion for `#!python boto3.client("sso").get_role_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.get_role_credentials)
 
-### get_role_credentials
+```python title="Method definition"
+def get_role_credentials(
+    self,
+    *,
+    roleName: str,
+    accountId: str,
+    accessToken: str,
+) -> GetRoleCredentialsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns the STS short-term credentials for a given role name that is assigned
-to the user.
+1. See [:material-code-braces: GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef) 
 
-Type annotations for `boto3.client("sso").get_role_credentials` method.
 
-Boto3 documentation:
-[SSO.Client.get_role_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.get_role_credentials)
+```python title="Usage example with kwargs"
+kwargs: GetRoleCredentialsRequestRequestTypeDef = {  # (1)
+    "roleName": ...,
+    "accountId": ...,
+    "accessToken": ...,
+}
 
-Arguments mapping described in
-[GetRoleCredentialsRequestRequestTypeDef](./type_defs.md#getrolecredentialsrequestrequesttypedef).
+parent.get_role_credentials(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: GetRoleCredentialsRequestRequestTypeDef](./type_defs.md#getrolecredentialsrequestrequesttypedef) 
 
-- `roleName`: `str` *(required)*
-- `accountId`: `str` *(required)*
-- `accessToken`: `str` *(required)*
-
-Returns
-[GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef).
-
-<a id="list\_account\_roles"></a>
-
-### list_account_roles
+### list\_account\_roles
 
 Lists all roles that are assigned to the user for a given AWS account.
 
-Type annotations for `boto3.client("sso").list_account_roles` method.
+Type annotations and code completion for `#!python boto3.client("sso").list_account_roles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles)
 
-Boto3 documentation:
-[SSO.Client.list_account_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_account_roles)
+```python title="Method definition"
+def list_account_roles(
+    self,
+    *,
+    accessToken: str,
+    accountId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAccountRolesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountRolesRequestRequestTypeDef](./type_defs.md#listaccountrolesrequestrequesttypedef).
+1. See [:material-code-braces: ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accessToken`: `str` *(required)*
-- `accountId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccountRolesRequestRequestTypeDef = {  # (1)
+    "accessToken": ...,
+    "accountId": ...,
+}
 
-Returns
-[ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef).
+parent.list_account_roles(**kwargs)
+```
 
-<a id="list\_accounts"></a>
+1. See [:material-code-braces: ListAccountRolesRequestRequestTypeDef](./type_defs.md#listaccountrolesrequestrequesttypedef) 
 
-### list_accounts
+### list\_accounts
 
 Lists all AWS accounts assigned to the user.
 
-Type annotations for `boto3.client("sso").list_accounts` method.
+Type annotations and code completion for `#!python boto3.client("sso").list_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts)
 
-Boto3 documentation:
-[SSO.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.list_accounts)
+```python title="Method definition"
+def list_accounts(
+    self,
+    *,
+    accessToken: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accessToken`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccountsRequestRequestTypeDef = {  # (1)
+    "accessToken": ...,
+}
 
-Returns
-[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
+parent.list_accounts(**kwargs)
+```
 
-<a id="logout"></a>
+1. See [:material-code-braces: ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef) 
 
 ### logout
 
 Removes the client- and server-side session that is associated with the user.
 
-Type annotations for `boto3.client("sso").logout` method.
+Type annotations and code completion for `#!python boto3.client("sso").logout` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout)
 
-Boto3 documentation:
-[SSO.Client.logout](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO.Client.logout)
+```python title="Method definition"
+def logout(
+    self,
+    *,
+    accessToken: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[LogoutRequestRequestTypeDef](./type_defs.md#logoutrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `accessToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: LogoutRequestRequestTypeDef = {  # (1)
+    "accessToken": ...,
+}
 
-<a id="get_paginator"></a>
+parent.logout(**kwargs)
+```
+
+1. See [:material-code-braces: LogoutRequestRequestTypeDef](./type_defs.md#logoutrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("sso").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("sso").get_paginator` method with overloads.
 
-- `client.get_paginator("list_account_roles")` ->
-  [ListAccountRolesPaginator](./paginators.md#listaccountrolespaginator)
-- `client.get_paginator("list_accounts")` ->
-  [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+- `client.get_paginator("list_account_roles")` -> [ListAccountRolesPaginator](./paginators.md#listaccountrolespaginator)
+- `client.get_paginator("list_accounts")` -> [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+
+
+

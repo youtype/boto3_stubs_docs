@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-locationservice-module"></a>
-
-# Examples for boto3 LocationService module
+# Examples
 
 > [Index](../README.md) > [LocationService](./README.md) > Examples
 
-- [Examples for boto3 LocationService module](#examples-for-boto3-locationservice-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+    type annotations stubs module [mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[location]` package installed.
 
-Write your `LocationService` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `LocationService` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type LocationServiceClient
-# and provides type checking and code completion
-client = session.client("location")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_tracker_consumer()
 
-# paginator has type GetDevicePositionHistoryPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_device_position_history")
-for item in paginator.paginate(...):
-    # item has type GetDevicePositionHistoryResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("location")  # (1)
+    result = client.batch_delete_device_position_history()  # (2)
+    ```
+
+    1. client: [LocationServiceClient](./client.md)
+    2. result: [:material-code-braces: BatchDeleteDevicePositionHistoryResponseTypeDef](./type_defs.md#batchdeletedevicepositionhistoryresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("location")  # (1)
+
+    paginator = client.get_paginator("get_device_position_history")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [LocationServiceClient](./client.md)
+    2. paginator: [GetDevicePositionHistoryPaginator](./paginators.md#getdevicepositionhistorypaginator)
+    3. item: [:material-code-braces: GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[location]` or a standalone `mypy_boto3_location`
-package, you have to explicitly specify `client: LocationServiceClient` type
-annotation.
+With `boto3-stubs-lite[location]`
+or a standalone `mypy_boto3_location` package, you have to explicitly specify `client: LocationServiceClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_location.client import LocationServiceClient
-from mypy_boto3_location.paginator import GetDevicePositionHistoryPaginator
-
-from mypy_boto3_location.literals import PaginatorName
-
-from mypy_boto3_location.type_defs import Dict[str, Any]
-from mypy_boto3_location.type_defs import GetDevicePositionHistoryResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: LocationServiceClient = session.client("location")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.associate_tracker_consumer()
+    from mypy_boto3_location.client import LocationServiceClient
+    from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryResponseTypeDef
+    from mypy_boto3_location.type_defs import BatchDeleteDevicePositionHistoryRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_device_position_history"
-paginator: GetDevicePositionHistoryPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetDevicePositionHistoryResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: LocationServiceClient = session.client("location")
+
+    kwargs: BatchDeleteDevicePositionHistoryRequestRequestTypeDef = {...}
+    result: BatchDeleteDevicePositionHistoryResponseTypeDef = client.batch_delete_device_position_history(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_location.client import LocationServiceClient
+    from mypy_boto3_location.paginator import GetDevicePositionHistoryPaginator
+    from mypy_boto3_location.type_defs import GetDevicePositionHistoryResponseTypeDef
+
+
+    session = Session()
+    client: LocationServiceClient = session.client("location")
+
+    paginator: GetDevicePositionHistoryPaginator = client.get_paginator("get_device_position_history")
+    for item in paginator.paginate(...):
+        item: GetDevicePositionHistoryResponseTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,43 +1,18 @@
-<a id="chimesdkmeetingsclient-for-boto3-chimesdkmeetings-module"></a>
+# ChimeSDKMeetingsClient
 
-# ChimeSDKMeetingsClient for boto3 ChimeSDKMeetings module
+> [Index](../README.md) > [ChimeSDKMeetings](./README.md) > ChimeSDKMeetingsClient
 
-> [Index](../README.md) > [ChimeSDKMeetings](./README.md) >
-> ChimeSDKMeetingsClient
+!!! note ""
 
-Auto-generated documentation for
-[ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
-type annotations stubs module
-[mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
-
-- [ChimeSDKMeetingsClient for boto3 ChimeSDKMeetings module](#chimesdkmeetingsclient-for-boto3-chimesdkmeetings-module)
-  - [ChimeSDKMeetingsClient](#chimesdkmeetingsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_create_attendee](#batch_create_attendee)
-    - [can_paginate](#can_paginate)
-    - [create_attendee](#create_attendee)
-    - [create_meeting](#create_meeting)
-    - [create_meeting_with_attendees](#create_meeting_with_attendees)
-    - [delete_attendee](#delete_attendee)
-    - [delete_meeting](#delete_meeting)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_attendee](#get_attendee)
-    - [get_meeting](#get_meeting)
-    - [list_attendees](#list_attendees)
-    - [start_meeting_transcription](#start_meeting_transcription)
-    - [stop_meeting_transcription](#stop_meeting_transcription)
-
-<a id="chimesdkmeetingsclient"></a>
+    Auto-generated documentation for [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
+    type annotations stubs module [mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
 ## ChimeSDKMeetingsClient
 
-Type annotations for `boto3.client("chime-sdk-meetings")`
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_chime_sdk_meetings.client import ChimeSDKMeetingsClient
 
@@ -45,346 +20,432 @@ def get_chime-sdk-meetings_client() -> ChimeSDKMeetingsClient:
     return Session().client("chime-sdk-meetings")
 ```
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("chime-sdk-meetings").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("chime-sdk-meetings")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ForbiddenException,
+    client.LimitExceededException,
+    client.NotFoundException,
+    client.ServiceUnavailableException,
+    client.UnauthorizedException,
+    client.UnprocessableEntityException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_chime_sdk_meetings.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ForbiddenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.UnauthorizedException`
-- `Exceptions.UnprocessableEntityException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ChimeSDKMeetingsClient exceptions.
-
-Type annotations for `boto3.client("chime-sdk-meetings").exceptions` method.
-
-Boto3 documentation:
-[ChimeSDKMeetings.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_create\_attendee"></a>
-
-### batch_create_attendee
+### batch\_create\_attendee
 
 Creates up to 100 attendees for an active Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime-sdk-meetings").batch_create_attendee`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").batch_create_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.batch_create_attendee)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.batch_create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.batch_create_attendee)
+```python title="Method definition"
+def batch_create_attendee(
+    self,
+    *,
+    MeetingId: str,
+    Attendees: Sequence[CreateAttendeeRequestItemTypeDef],  # (1)
+) -> BatchCreateAttendeeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchCreateAttendeeRequestRequestTypeDef](./type_defs.md#batchcreateattendeerequestrequesttypedef).
+1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
+2. See [:material-code-braces: BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `Attendees`:
-  `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchCreateAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "Attendees": ...,
+}
 
-Returns
-[BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef).
+parent.batch_create_attendee(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchCreateAttendeeRequestRequestTypeDef](./type_defs.md#batchcreateattendeerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("chime-sdk-meetings").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.can_paginate)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_attendee"></a>
-
-### create_attendee
+### create\_attendee
 
 Creates a new attendee for an active Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime-sdk-meetings").create_attendee`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").create_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.create_attendee)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.create_attendee)
+```python title="Method definition"
+def create_attendee(
+    self,
+    *,
+    MeetingId: str,
+    ExternalUserId: str,
+) -> CreateAttendeeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAttendeeRequestRequestTypeDef](./type_defs.md#createattendeerequestrequesttypedef).
+1. See [:material-code-braces: CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `ExternalUserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "ExternalUserId": ...,
+}
 
-Returns
-[CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef).
+parent.create_attendee(**kwargs)
+```
 
-<a id="create\_meeting"></a>
+1. See [:material-code-braces: CreateAttendeeRequestRequestTypeDef](./type_defs.md#createattendeerequestrequesttypedef) 
 
-### create_meeting
+### create\_meeting
 
 Creates a new Amazon Chime SDK meeting in the specified media Region with no
 initial attendees.
 
-Type annotations for `boto3.client("chime-sdk-meetings").create_meeting`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").create_meeting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.create_meeting)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.create_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.create_meeting)
+```python title="Method definition"
+def create_meeting(
+    self,
+    *,
+    ClientRequestToken: str,
+    MediaRegion: str,
+    ExternalMeetingId: str,
+    MeetingHostId: str = ...,
+    NotificationsConfiguration: NotificationsConfigurationTypeDef = ...,  # (1)
+    MeetingFeatures: MeetingFeaturesConfigurationTypeDef = ...,  # (2)
+    PrimaryMeetingId: str = ...,
+) -> CreateMeetingResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateMeetingRequestRequestTypeDef](./type_defs.md#createmeetingrequestrequesttypedef).
+1. See [:material-code-braces: NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef) 
+2. See [:material-code-braces: MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef) 
+3. See [:material-code-braces: CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientRequestToken`: `str` *(required)*
-- `MediaRegion`: `str` *(required)*
-- `ExternalMeetingId`: `str` *(required)*
-- `MeetingHostId`: `str`
-- `NotificationsConfiguration`:
-  [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
-- `MeetingFeatures`:
-  [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
-- `PrimaryMeetingId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateMeetingRequestRequestTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+    "MediaRegion": ...,
+    "ExternalMeetingId": ...,
+}
 
-Returns
-[CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
+parent.create_meeting(**kwargs)
+```
 
-<a id="create\_meeting\_with\_attendees"></a>
+1. See [:material-code-braces: CreateMeetingRequestRequestTypeDef](./type_defs.md#createmeetingrequestrequesttypedef) 
 
-### create_meeting_with_attendees
+### create\_meeting\_with\_attendees
 
 Creates a new Amazon Chime SDK meeting in the specified media Region, with
 attendees.
 
-Type annotations for
-`boto3.client("chime-sdk-meetings").create_meeting_with_attendees` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").create_meeting_with_attendees` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.create_meeting_with_attendees)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.create_meeting_with_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.create_meeting_with_attendees)
+```python title="Method definition"
+def create_meeting_with_attendees(
+    self,
+    *,
+    ClientRequestToken: str,
+    MediaRegion: str,
+    ExternalMeetingId: str,
+    Attendees: Sequence[CreateAttendeeRequestItemTypeDef],  # (1)
+    MeetingHostId: str = ...,
+    MeetingFeatures: MeetingFeaturesConfigurationTypeDef = ...,  # (2)
+    NotificationsConfiguration: NotificationsConfigurationTypeDef = ...,  # (3)
+    PrimaryMeetingId: str = ...,
+) -> CreateMeetingWithAttendeesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateMeetingWithAttendeesRequestRequestTypeDef](./type_defs.md#createmeetingwithattendeesrequestrequesttypedef).
+1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
+2. See [:material-code-braces: MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef) 
+3. See [:material-code-braces: NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef) 
+4. See [:material-code-braces: CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientRequestToken`: `str` *(required)*
-- `MediaRegion`: `str` *(required)*
-- `ExternalMeetingId`: `str` *(required)*
-- `Attendees`:
-  `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
-  *(required)*
-- `MeetingHostId`: `str`
-- `MeetingFeatures`:
-  [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
-- `NotificationsConfiguration`:
-  [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
-- `PrimaryMeetingId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateMeetingWithAttendeesRequestRequestTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+    "MediaRegion": ...,
+    "ExternalMeetingId": ...,
+    "Attendees": ...,
+}
 
-Returns
-[CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).
+parent.create_meeting_with_attendees(**kwargs)
+```
 
-<a id="delete\_attendee"></a>
+1. See [:material-code-braces: CreateMeetingWithAttendeesRequestRequestTypeDef](./type_defs.md#createmeetingwithattendeesrequestrequesttypedef) 
 
-### delete_attendee
+### delete\_attendee
 
 Deletes an attendee from the specified Amazon Chime SDK meeting and deletes
 their `JoinToken`.
 
-Type annotations for `boto3.client("chime-sdk-meetings").delete_attendee`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").delete_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.delete_attendee)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.delete_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.delete_attendee)
+```python title="Method definition"
+def delete_attendee(
+    self,
+    *,
+    MeetingId: str,
+    AttendeeId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAttendeeRequestRequestTypeDef](./type_defs.md#deleteattendeerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `AttendeeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "AttendeeId": ...,
+}
 
-<a id="delete\_meeting"></a>
+parent.delete_attendee(**kwargs)
+```
 
-### delete_meeting
+1. See [:material-code-braces: DeleteAttendeeRequestRequestTypeDef](./type_defs.md#deleteattendeerequestrequesttypedef) 
+
+### delete\_meeting
 
 Deletes the specified Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime-sdk-meetings").delete_meeting`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").delete_meeting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.delete_meeting)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.delete_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.delete_meeting)
+```python title="Method definition"
+def delete_meeting(
+    self,
+    *,
+    MeetingId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMeetingRequestRequestTypeDef](./type_defs.md#deletemeetingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMeetingRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_meeting(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteMeetingRequestRequestTypeDef](./type_defs.md#deletemeetingrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("chime-sdk-meetings").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_attendee"></a>
-
-### get_attendee
+### get\_attendee
 
 Gets the Amazon Chime SDK attendee details for a specified meeting ID and
 attendee ID.
 
-Type annotations for `boto3.client("chime-sdk-meetings").get_attendee` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").get_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.get_attendee)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.get_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.get_attendee)
+```python title="Method definition"
+def get_attendee(
+    self,
+    *,
+    MeetingId: str,
+    AttendeeId: str,
+) -> GetAttendeeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAttendeeRequestRequestTypeDef](./type_defs.md#getattendeerequestrequesttypedef).
+1. See [:material-code-braces: GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `AttendeeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "AttendeeId": ...,
+}
 
-Returns
-[GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef).
+parent.get_attendee(**kwargs)
+```
 
-<a id="get\_meeting"></a>
+1. See [:material-code-braces: GetAttendeeRequestRequestTypeDef](./type_defs.md#getattendeerequestrequesttypedef) 
 
-### get_meeting
+### get\_meeting
 
 Gets the Amazon Chime SDK meeting details for the specified meeting ID.
 
-Type annotations for `boto3.client("chime-sdk-meetings").get_meeting` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").get_meeting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.get_meeting)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.get_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.get_meeting)
+```python title="Method definition"
+def get_meeting(
+    self,
+    *,
+    MeetingId: str,
+) -> GetMeetingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMeetingRequestRequestTypeDef](./type_defs.md#getmeetingrequestrequesttypedef).
+1. See [:material-code-braces: GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMeetingRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+}
 
-Returns [GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef).
+parent.get_meeting(**kwargs)
+```
 
-<a id="list\_attendees"></a>
+1. See [:material-code-braces: GetMeetingRequestRequestTypeDef](./type_defs.md#getmeetingrequestrequesttypedef) 
 
-### list_attendees
+### list\_attendees
 
 Lists the attendees for the specified Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime-sdk-meetings").list_attendees`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").list_attendees` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.list_attendees)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.list_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.list_attendees)
+```python title="Method definition"
+def list_attendees(
+    self,
+    *,
+    MeetingId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAttendeesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAttendeesRequestRequestTypeDef](./type_defs.md#listattendeesrequestrequesttypedef).
+1. See [:material-code-braces: ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAttendeesRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+}
 
-Returns
-[ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef).
+parent.list_attendees(**kwargs)
+```
 
-<a id="start\_meeting\_transcription"></a>
+1. See [:material-code-braces: ListAttendeesRequestRequestTypeDef](./type_defs.md#listattendeesrequestrequesttypedef) 
 
-### start_meeting_transcription
+### start\_meeting\_transcription
 
 Starts transcription for the specified `meetingId` .
 
-Type annotations for
-`boto3.client("chime-sdk-meetings").start_meeting_transcription` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").start_meeting_transcription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.start_meeting_transcription)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.start_meeting_transcription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.start_meeting_transcription)
+```python title="Method definition"
+def start_meeting_transcription(
+    self,
+    *,
+    MeetingId: str,
+    TranscriptionConfiguration: TranscriptionConfigurationTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StartMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#startmeetingtranscriptionrequestrequesttypedef).
+1. See [:material-code-braces: TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `TranscriptionConfiguration`:
-  [TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartMeetingTranscriptionRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "TranscriptionConfiguration": ...,
+}
 
-<a id="stop\_meeting\_transcription"></a>
+parent.start_meeting_transcription(**kwargs)
+```
 
-### stop_meeting_transcription
+1. See [:material-code-braces: StartMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#startmeetingtranscriptionrequestrequesttypedef) 
+
+### stop\_meeting\_transcription
 
 Stops transcription for the specified `meetingId` .
 
-Type annotations for
-`boto3.client("chime-sdk-meetings").stop_meeting_transcription` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-meetings").stop_meeting_transcription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.stop_meeting_transcription)
 
-Boto3 documentation:
-[ChimeSDKMeetings.Client.stop_meeting_transcription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings.Client.stop_meeting_transcription)
+```python title="Method definition"
+def stop_meeting_transcription(
+    self,
+    *,
+    MeetingId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#stopmeetingtranscriptionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopMeetingTranscriptionRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+}
+
+parent.stop_meeting_transcription(**kwargs)
+```
+
+1. See [:material-code-braces: StopMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#stopmeetingtranscriptionrequestrequesttypedef) 
+
+
+
+

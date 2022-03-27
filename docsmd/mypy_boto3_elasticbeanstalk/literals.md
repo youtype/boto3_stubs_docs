@@ -1,814 +1,877 @@
-<a id="literals-for-boto3-elasticbeanstalk-module"></a>
-
-# Literals for boto3 ElasticBeanstalk module
+# Literals
 
 > [Index](../README.md) > [ElasticBeanstalk](./README.md) > Literals
 
-Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
-type annotations stubs module
-[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+!!! note ""
 
-- [Literals for boto3 ElasticBeanstalk module](#literals-for-boto3-elasticbeanstalk-module)
-  - [ActionHistoryStatusType](#actionhistorystatustype)
-  - [ActionStatusType](#actionstatustype)
-  - [ActionTypeType](#actiontypetype)
-  - [ApplicationVersionStatusType](#applicationversionstatustype)
-  - [ComputeTypeType](#computetypetype)
-  - [ConfigurationDeploymentStatusType](#configurationdeploymentstatustype)
-  - [ConfigurationOptionValueTypeType](#configurationoptionvaluetypetype)
-  - [DescribeApplicationVersionsPaginatorName](#describeapplicationversionspaginatorname)
-  - [DescribeEnvironmentManagedActionHistoryPaginatorName](#describeenvironmentmanagedactionhistorypaginatorname)
-  - [DescribeEnvironmentsPaginatorName](#describeenvironmentspaginatorname)
-  - [DescribeEventsPaginatorName](#describeeventspaginatorname)
-  - [EnvironmentExistsWaiterName](#environmentexistswaitername)
-  - [EnvironmentHealthAttributeType](#environmenthealthattributetype)
-  - [EnvironmentHealthStatusType](#environmenthealthstatustype)
-  - [EnvironmentHealthType](#environmenthealthtype)
-  - [EnvironmentInfoTypeType](#environmentinfotypetype)
-  - [EnvironmentStatusType](#environmentstatustype)
-  - [EnvironmentTerminatedWaiterName](#environmentterminatedwaitername)
-  - [EnvironmentUpdatedWaiterName](#environmentupdatedwaitername)
-  - [EventSeverityType](#eventseveritytype)
-  - [FailureTypeType](#failuretypetype)
-  - [InstancesHealthAttributeType](#instanceshealthattributetype)
-  - [ListPlatformVersionsPaginatorName](#listplatformversionspaginatorname)
-  - [PlatformStatusType](#platformstatustype)
-  - [SourceRepositoryType](#sourcerepositorytype)
-  - [SourceTypeType](#sourcetypetype)
-  - [ValidationSeverityType](#validationseveritytype)
-  - [ElasticBeanstalkServiceName](#elasticbeanstalkservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="actionhistorystatustype"></a>
+    Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+    type annotations stubs module [mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 ## ActionHistoryStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatusType
+
+def get_value() -> ActionHistoryStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `Unknown`
-
-<a id="actionstatustype"></a>
-
+```python title="Definition"
+ActionHistoryStatusType = Literal[
+    "Completed",
+    "Failed",
+    "Unknown",
+]
+```
 ## ActionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ActionStatusType
+
+def get_value() -> ActionStatusType:
+    return "Pending"
 ```
 
-Values:
-
-- `Pending`
-- `Running`
-- `Scheduled`
-- `Unknown`
-
-<a id="actiontypetype"></a>
-
+```python title="Definition"
+ActionStatusType = Literal[
+    "Pending",
+    "Running",
+    "Scheduled",
+    "Unknown",
+]
+```
 ## ActionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ActionTypeType
+
+def get_value() -> ActionTypeType:
+    return "InstanceRefresh"
 ```
 
-Values:
-
-- `InstanceRefresh`
-- `PlatformUpdate`
-- `Unknown`
-
-<a id="applicationversionstatustype"></a>
-
+```python title="Definition"
+ActionTypeType = Literal[
+    "InstanceRefresh",
+    "PlatformUpdate",
+    "Unknown",
+]
+```
 ## ApplicationVersionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ApplicationVersionStatusType
+
+def get_value() -> ApplicationVersionStatusType:
+    return "Building"
 ```
 
-Values:
-
-- `Building`
-- `Failed`
-- `Processed`
-- `Processing`
-- `Unprocessed`
-
-<a id="computetypetype"></a>
-
+```python title="Definition"
+ApplicationVersionStatusType = Literal[
+    "Building",
+    "Failed",
+    "Processed",
+    "Processing",
+    "Unprocessed",
+]
+```
 ## ComputeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ComputeTypeType
+
+def get_value() -> ComputeTypeType:
+    return "BUILD_GENERAL1_LARGE"
 ```
 
-Values:
-
-- `BUILD_GENERAL1_LARGE`
-- `BUILD_GENERAL1_MEDIUM`
-- `BUILD_GENERAL1_SMALL`
-
-<a id="configurationdeploymentstatustype"></a>
-
+```python title="Definition"
+ComputeTypeType = Literal[
+    "BUILD_GENERAL1_LARGE",
+    "BUILD_GENERAL1_MEDIUM",
+    "BUILD_GENERAL1_SMALL",
+]
+```
 ## ConfigurationDeploymentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ConfigurationDeploymentStatusType
+
+def get_value() -> ConfigurationDeploymentStatusType:
+    return "deployed"
 ```
 
-Values:
-
-- `deployed`
-- `failed`
-- `pending`
-
-<a id="configurationoptionvaluetypetype"></a>
-
+```python title="Definition"
+ConfigurationDeploymentStatusType = Literal[
+    "deployed",
+    "failed",
+    "pending",
+]
+```
 ## ConfigurationOptionValueTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ConfigurationOptionValueTypeType
+
+def get_value() -> ConfigurationOptionValueTypeType:
+    return "List"
 ```
 
-Values:
-
-- `List`
-- `Scalar`
-
-<a id="describeapplicationversionspaginatorname"></a>
-
+```python title="Definition"
+ConfigurationOptionValueTypeType = Literal[
+    "List",
+    "Scalar",
+]
+```
 ## DescribeApplicationVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import DescribeApplicationVersionsPaginatorName
+
+def get_value() -> DescribeApplicationVersionsPaginatorName:
+    return "describe_application_versions"
 ```
 
-Values:
-
-- `describe_application_versions`
-
-<a id="describeenvironmentmanagedactionhistorypaginatorname"></a>
-
+```python title="Definition"
+DescribeApplicationVersionsPaginatorName = Literal[
+    "describe_application_versions",
+]
+```
 ## DescribeEnvironmentManagedActionHistoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import DescribeEnvironmentManagedActionHistoryPaginatorName
+
+def get_value() -> DescribeEnvironmentManagedActionHistoryPaginatorName:
+    return "describe_environment_managed_action_history"
 ```
 
-Values:
-
-- `describe_environment_managed_action_history`
-
-<a id="describeenvironmentspaginatorname"></a>
-
+```python title="Definition"
+DescribeEnvironmentManagedActionHistoryPaginatorName = Literal[
+    "describe_environment_managed_action_history",
+]
+```
 ## DescribeEnvironmentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import DescribeEnvironmentsPaginatorName
+
+def get_value() -> DescribeEnvironmentsPaginatorName:
+    return "describe_environments"
 ```
 
-Values:
-
-- `describe_environments`
-
-<a id="describeeventspaginatorname"></a>
-
+```python title="Definition"
+DescribeEnvironmentsPaginatorName = Literal[
+    "describe_environments",
+]
+```
 ## DescribeEventsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import DescribeEventsPaginatorName
+
+def get_value() -> DescribeEventsPaginatorName:
+    return "describe_events"
 ```
 
-Values:
-
-- `describe_events`
-
-<a id="environmentexistswaitername"></a>
-
+```python title="Definition"
+DescribeEventsPaginatorName = Literal[
+    "describe_events",
+]
+```
 ## EnvironmentExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import EnvironmentExistsWaiterName
+
+def get_value() -> EnvironmentExistsWaiterName:
+    return "environment_exists"
 ```
 
-Values:
-
-- `environment_exists`
-
-<a id="environmenthealthattributetype"></a>
-
+```python title="Definition"
+EnvironmentExistsWaiterName = Literal[
+    "environment_exists",
+]
+```
 ## EnvironmentHealthAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import EnvironmentHealthAttributeType
+
+def get_value() -> EnvironmentHealthAttributeType:
+    return "All"
 ```
 
-Values:
-
-- `All`
-- `ApplicationMetrics`
-- `Causes`
-- `Color`
-- `HealthStatus`
-- `InstancesHealth`
-- `RefreshedAt`
-- `Status`
-
-<a id="environmenthealthstatustype"></a>
-
+```python title="Definition"
+EnvironmentHealthAttributeType = Literal[
+    "All",
+    "ApplicationMetrics",
+    "Causes",
+    "Color",
+    "HealthStatus",
+    "InstancesHealth",
+    "RefreshedAt",
+    "Status",
+]
+```
 ## EnvironmentHealthStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import EnvironmentHealthStatusType
+
+def get_value() -> EnvironmentHealthStatusType:
+    return "Degraded"
 ```
 
-Values:
-
-- `Degraded`
-- `Info`
-- `NoData`
-- `Ok`
-- `Pending`
-- `Severe`
-- `Suspended`
-- `Unknown`
-- `Warning`
-
-<a id="environmenthealthtype"></a>
-
+```python title="Definition"
+EnvironmentHealthStatusType = Literal[
+    "Degraded",
+    "Info",
+    "NoData",
+    "Ok",
+    "Pending",
+    "Severe",
+    "Suspended",
+    "Unknown",
+    "Warning",
+]
+```
 ## EnvironmentHealthType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import EnvironmentHealthType
+
+def get_value() -> EnvironmentHealthType:
+    return "Green"
 ```
 
-Values:
-
-- `Green`
-- `Grey`
-- `Red`
-- `Yellow`
-
-<a id="environmentinfotypetype"></a>
-
+```python title="Definition"
+EnvironmentHealthType = Literal[
+    "Green",
+    "Grey",
+    "Red",
+    "Yellow",
+]
+```
 ## EnvironmentInfoTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import EnvironmentInfoTypeType
+
+def get_value() -> EnvironmentInfoTypeType:
+    return "bundle"
 ```
 
-Values:
-
-- `bundle`
-- `tail`
-
-<a id="environmentstatustype"></a>
-
+```python title="Definition"
+EnvironmentInfoTypeType = Literal[
+    "bundle",
+    "tail",
+]
+```
 ## EnvironmentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import EnvironmentStatusType
+
+def get_value() -> EnvironmentStatusType:
+    return "Aborting"
 ```
 
-Values:
-
-- `Aborting`
-- `Launching`
-- `LinkingFrom`
-- `LinkingTo`
-- `Ready`
-- `Terminated`
-- `Terminating`
-- `Updating`
-
-<a id="environmentterminatedwaitername"></a>
-
+```python title="Definition"
+EnvironmentStatusType = Literal[
+    "Aborting",
+    "Launching",
+    "LinkingFrom",
+    "LinkingTo",
+    "Ready",
+    "Terminated",
+    "Terminating",
+    "Updating",
+]
+```
 ## EnvironmentTerminatedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import EnvironmentTerminatedWaiterName
+
+def get_value() -> EnvironmentTerminatedWaiterName:
+    return "environment_terminated"
 ```
 
-Values:
-
-- `environment_terminated`
-
-<a id="environmentupdatedwaitername"></a>
-
+```python title="Definition"
+EnvironmentTerminatedWaiterName = Literal[
+    "environment_terminated",
+]
+```
 ## EnvironmentUpdatedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import EnvironmentUpdatedWaiterName
+
+def get_value() -> EnvironmentUpdatedWaiterName:
+    return "environment_updated"
 ```
 
-Values:
-
-- `environment_updated`
-
-<a id="eventseveritytype"></a>
-
+```python title="Definition"
+EnvironmentUpdatedWaiterName = Literal[
+    "environment_updated",
+]
+```
 ## EventSeverityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import EventSeverityType
+
+def get_value() -> EventSeverityType:
+    return "DEBUG"
 ```
 
-Values:
-
-- `DEBUG`
-- `ERROR`
-- `FATAL`
-- `INFO`
-- `TRACE`
-- `WARN`
-
-<a id="failuretypetype"></a>
-
+```python title="Definition"
+EventSeverityType = Literal[
+    "DEBUG",
+    "ERROR",
+    "FATAL",
+    "INFO",
+    "TRACE",
+    "WARN",
+]
+```
 ## FailureTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import FailureTypeType
+
+def get_value() -> FailureTypeType:
+    return "CancellationFailed"
 ```
 
-Values:
-
-- `CancellationFailed`
-- `InternalFailure`
-- `InvalidEnvironmentState`
-- `PermissionsError`
-- `RollbackFailed`
-- `RollbackSuccessful`
-- `UpdateCancelled`
-
-<a id="instanceshealthattributetype"></a>
-
+```python title="Definition"
+FailureTypeType = Literal[
+    "CancellationFailed",
+    "InternalFailure",
+    "InvalidEnvironmentState",
+    "PermissionsError",
+    "RollbackFailed",
+    "RollbackSuccessful",
+    "UpdateCancelled",
+]
+```
 ## InstancesHealthAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import InstancesHealthAttributeType
+
+def get_value() -> InstancesHealthAttributeType:
+    return "All"
 ```
 
-Values:
-
-- `All`
-- `ApplicationMetrics`
-- `AvailabilityZone`
-- `Causes`
-- `Color`
-- `Deployment`
-- `HealthStatus`
-- `InstanceType`
-- `LaunchedAt`
-- `RefreshedAt`
-- `System`
-
-<a id="listplatformversionspaginatorname"></a>
-
+```python title="Definition"
+InstancesHealthAttributeType = Literal[
+    "All",
+    "ApplicationMetrics",
+    "AvailabilityZone",
+    "Causes",
+    "Color",
+    "Deployment",
+    "HealthStatus",
+    "InstanceType",
+    "LaunchedAt",
+    "RefreshedAt",
+    "System",
+]
+```
 ## ListPlatformVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ListPlatformVersionsPaginatorName
+
+def get_value() -> ListPlatformVersionsPaginatorName:
+    return "list_platform_versions"
 ```
 
-Values:
-
-- `list_platform_versions`
-
-<a id="platformstatustype"></a>
-
+```python title="Definition"
+ListPlatformVersionsPaginatorName = Literal[
+    "list_platform_versions",
+]
+```
 ## PlatformStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import PlatformStatusType
+
+def get_value() -> PlatformStatusType:
+    return "Creating"
 ```
 
-Values:
-
-- `Creating`
-- `Deleted`
-- `Deleting`
-- `Failed`
-- `Ready`
-
-<a id="sourcerepositorytype"></a>
-
+```python title="Definition"
+PlatformStatusType = Literal[
+    "Creating",
+    "Deleted",
+    "Deleting",
+    "Failed",
+    "Ready",
+]
+```
 ## SourceRepositoryType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import SourceRepositoryType
+
+def get_value() -> SourceRepositoryType:
+    return "CodeCommit"
 ```
 
-Values:
-
-- `CodeCommit`
-- `S3`
-
-<a id="sourcetypetype"></a>
-
+```python title="Definition"
+SourceRepositoryType = Literal[
+    "CodeCommit",
+    "S3",
+]
+```
 ## SourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import SourceTypeType
+
+def get_value() -> SourceTypeType:
+    return "Git"
 ```
 
-Values:
-
-- `Git`
-- `Zip`
-
-<a id="validationseveritytype"></a>
-
+```python title="Definition"
+SourceTypeType = Literal[
+    "Git",
+    "Zip",
+]
+```
 ## ValidationSeverityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ValidationSeverityType
+
+def get_value() -> ValidationSeverityType:
+    return "error"
 ```
 
-Values:
-
-- `error`
-- `warning`
-
-<a id="elasticbeanstalkservicename"></a>
-
+```python title="Definition"
+ValidationSeverityType = Literal[
+    "error",
+    "warning",
+]
+```
 ## ElasticBeanstalkServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ElasticBeanstalkServiceName
+
+def get_value() -> ElasticBeanstalkServiceName:
+    return "elasticbeanstalk"
 ```
 
-Values:
-
-- `elasticbeanstalk`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ElasticBeanstalkServiceName = Literal[
+    "elasticbeanstalk",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_application_versions"
 ```
 
-Values:
-
-- `describe_application_versions`
-- `describe_environment_managed_action_history`
-- `describe_environments`
-- `describe_events`
-- `list_platform_versions`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_application_versions",
+    "describe_environment_managed_action_history",
+    "describe_environments",
+    "describe_events",
+    "list_platform_versions",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "environment_exists"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "environment_exists",
+    "environment_terminated",
+    "environment_updated",
+]
+```
+## RegionName
 
-- `environment_exists`
-- `environment_terminated`
-- `environment_updated`
+```python title="Usage Example"
+from mypy_boto3_elasticbeanstalk.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

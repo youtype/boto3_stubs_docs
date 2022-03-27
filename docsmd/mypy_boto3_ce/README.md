@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-costexplorer-module"></a>
-
-# Type annotations for boto3 CostExplorer module
+#  CostExplorer module
 
 > [Index](../README.md) > CostExplorer
 
-Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
-type annotations stubs module
-[mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
+!!! note ""
 
-- [Type annotations for boto3 CostExplorer module](#type-annotations-for-boto3-costexplorer-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CostExplorerClient](#costexplorerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+    type annotations stubs module [mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CostExplorer`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ce]'
 python -m pip install mypy-boto3-ce
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,94 +42,41 @@ python -m pip install mypy-boto3-ce
 python -m pip uninstall -y mypy-boto3-ce
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="costexplorerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CostExplorerClient
 
-Type annotations for `boto3.client("ce")` as [CostExplorerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ce")` as [CostExplorerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ce.client import CostExplorerClient
+
+def get_client() -> CostExplorerClient:
+    return Session().cleint("ce")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_anomaly_monitor](./client.md#create_anomaly_monitor)
-- [create_anomaly_subscription](./client.md#create_anomaly_subscription)
-- [create_cost_category_definition](./client.md#create_cost_category_definition)
-- [delete_anomaly_monitor](./client.md#delete_anomaly_monitor)
-- [delete_anomaly_subscription](./client.md#delete_anomaly_subscription)
-- [delete_cost_category_definition](./client.md#delete_cost_category_definition)
-- [describe_cost_category_definition](./client.md#describe_cost_category_definition)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_anomalies](./client.md#get_anomalies)
-- [get_anomaly_monitors](./client.md#get_anomaly_monitors)
-- [get_anomaly_subscriptions](./client.md#get_anomaly_subscriptions)
-- [get_cost_and_usage](./client.md#get_cost_and_usage)
-- [get_cost_and_usage_with_resources](./client.md#get_cost_and_usage_with_resources)
-- [get_cost_categories](./client.md#get_cost_categories)
-- [get_cost_forecast](./client.md#get_cost_forecast)
-- [get_dimension_values](./client.md#get_dimension_values)
-- [get_reservation_coverage](./client.md#get_reservation_coverage)
-- [get_reservation_purchase_recommendation](./client.md#get_reservation_purchase_recommendation)
-- [get_reservation_utilization](./client.md#get_reservation_utilization)
-- [get_rightsizing_recommendation](./client.md#get_rightsizing_recommendation)
-- [get_savings_plans_coverage](./client.md#get_savings_plans_coverage)
-- [get_savings_plans_purchase_recommendation](./client.md#get_savings_plans_purchase_recommendation)
-- [get_savings_plans_utilization](./client.md#get_savings_plans_utilization)
-- [get_savings_plans_utilization_details](./client.md#get_savings_plans_utilization_details)
-- [get_tags](./client.md#get_tags)
-- [get_usage_forecast](./client.md#get_usage_forecast)
-- [list_cost_category_definitions](./client.md#list_cost_category_definitions)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [provide_anomaly_feedback](./client.md#provide_anomaly_feedback)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_anomaly_monitor](./client.md#update_anomaly_monitor)
-- [update_anomaly_subscription](./client.md#update_anomaly_subscription)
-- [update_cost_category_definition](./client.md#update_cost_category_definition)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-CostExplorerClient [exceptions](./client.md#exceptions)
 
-- BillExpirationException
-- ClientError
-- DataUnavailableException
-- InvalidNextTokenException
-- LimitExceededException
-- RequestChangedException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- TooManyTagsException
-- UnknownMonitorException
-- UnknownSubscriptionException
-- UnresolvableUsageUnitException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ce.literals import AccountScopeType
 
-```python
-from mypy_boto3_ce.literals import AccountScopeType, ...
+def get_value() -> AccountScopeType:
+    return "LINKED"
 ```
 
 - [AccountScopeType](./literals.md#accountscopetype)
@@ -189,17 +115,20 @@ from mypy_boto3_ce.literals import AccountScopeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef
 
-```python
-from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef, ...
+def get_value() -> AnomalyDateIntervalTypeDef:
+    return {
+        "StartDate": ...,
+    }
 ```
 
 - [AnomalyDateIntervalTypeDef](./type_defs.md#anomalydateintervaltypedef)
@@ -343,3 +272,4 @@ from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef, ...
 - [UpdateCostCategoryDefinitionRequestRequestTypeDef](./type_defs.md#updatecostcategorydefinitionrequestrequesttypedef)
 - [UpdateCostCategoryDefinitionResponseTypeDef](./type_defs.md#updatecostcategorydefinitionresponsetypedef)
 - [UtilizationByTimeTypeDef](./type_defs.md#utilizationbytimetypedef)
+

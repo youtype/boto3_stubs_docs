@@ -1,2532 +1,3319 @@
-<a id="typed-dictionaries-for-boto3-route53-module"></a>
-
-# Typed dictionaries for boto3 Route53 module
+# Typed dictionaries
 
 > [Index](../README.md) > [Route53](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
-type annotations stubs module
-[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Route53 module](#typed-dictionaries-for-boto3-route53-module)
-  - [AccountLimitTypeDef](#accountlimittypedef)
-  - [ActivateKeySigningKeyRequestRequestTypeDef](#activatekeysigningkeyrequestrequesttypedef)
-  - [ActivateKeySigningKeyResponseTypeDef](#activatekeysigningkeyresponsetypedef)
-  - [AlarmIdentifierTypeDef](#alarmidentifiertypedef)
-  - [AliasTargetTypeDef](#aliastargettypedef)
-  - [AssociateVPCWithHostedZoneRequestRequestTypeDef](#associatevpcwithhostedzonerequestrequesttypedef)
-  - [AssociateVPCWithHostedZoneResponseTypeDef](#associatevpcwithhostedzoneresponsetypedef)
-  - [ChangeBatchTypeDef](#changebatchtypedef)
-  - [ChangeInfoTypeDef](#changeinfotypedef)
-  - [ChangeResourceRecordSetsRequestRequestTypeDef](#changeresourcerecordsetsrequestrequesttypedef)
-  - [ChangeResourceRecordSetsResponseTypeDef](#changeresourcerecordsetsresponsetypedef)
-  - [ChangeTagsForResourceRequestRequestTypeDef](#changetagsforresourcerequestrequesttypedef)
-  - [ChangeTypeDef](#changetypedef)
-  - [CloudWatchAlarmConfigurationTypeDef](#cloudwatchalarmconfigurationtypedef)
-  - [CreateHealthCheckRequestRequestTypeDef](#createhealthcheckrequestrequesttypedef)
-  - [CreateHealthCheckResponseTypeDef](#createhealthcheckresponsetypedef)
-  - [CreateHostedZoneRequestRequestTypeDef](#createhostedzonerequestrequesttypedef)
-  - [CreateHostedZoneResponseTypeDef](#createhostedzoneresponsetypedef)
-  - [CreateKeySigningKeyRequestRequestTypeDef](#createkeysigningkeyrequestrequesttypedef)
-  - [CreateKeySigningKeyResponseTypeDef](#createkeysigningkeyresponsetypedef)
-  - [CreateQueryLoggingConfigRequestRequestTypeDef](#createqueryloggingconfigrequestrequesttypedef)
-  - [CreateQueryLoggingConfigResponseTypeDef](#createqueryloggingconfigresponsetypedef)
-  - [CreateReusableDelegationSetRequestRequestTypeDef](#createreusabledelegationsetrequestrequesttypedef)
-  - [CreateReusableDelegationSetResponseTypeDef](#createreusabledelegationsetresponsetypedef)
-  - [CreateTrafficPolicyInstanceRequestRequestTypeDef](#createtrafficpolicyinstancerequestrequesttypedef)
-  - [CreateTrafficPolicyInstanceResponseTypeDef](#createtrafficpolicyinstanceresponsetypedef)
-  - [CreateTrafficPolicyRequestRequestTypeDef](#createtrafficpolicyrequestrequesttypedef)
-  - [CreateTrafficPolicyResponseTypeDef](#createtrafficpolicyresponsetypedef)
-  - [CreateTrafficPolicyVersionRequestRequestTypeDef](#createtrafficpolicyversionrequestrequesttypedef)
-  - [CreateTrafficPolicyVersionResponseTypeDef](#createtrafficpolicyversionresponsetypedef)
-  - [CreateVPCAssociationAuthorizationRequestRequestTypeDef](#createvpcassociationauthorizationrequestrequesttypedef)
-  - [CreateVPCAssociationAuthorizationResponseTypeDef](#createvpcassociationauthorizationresponsetypedef)
-  - [DNSSECStatusTypeDef](#dnssecstatustypedef)
-  - [DeactivateKeySigningKeyRequestRequestTypeDef](#deactivatekeysigningkeyrequestrequesttypedef)
-  - [DeactivateKeySigningKeyResponseTypeDef](#deactivatekeysigningkeyresponsetypedef)
-  - [DelegationSetTypeDef](#delegationsettypedef)
-  - [DeleteHealthCheckRequestRequestTypeDef](#deletehealthcheckrequestrequesttypedef)
-  - [DeleteHostedZoneRequestRequestTypeDef](#deletehostedzonerequestrequesttypedef)
-  - [DeleteHostedZoneResponseTypeDef](#deletehostedzoneresponsetypedef)
-  - [DeleteKeySigningKeyRequestRequestTypeDef](#deletekeysigningkeyrequestrequesttypedef)
-  - [DeleteKeySigningKeyResponseTypeDef](#deletekeysigningkeyresponsetypedef)
-  - [DeleteQueryLoggingConfigRequestRequestTypeDef](#deletequeryloggingconfigrequestrequesttypedef)
-  - [DeleteReusableDelegationSetRequestRequestTypeDef](#deletereusabledelegationsetrequestrequesttypedef)
-  - [DeleteTrafficPolicyInstanceRequestRequestTypeDef](#deletetrafficpolicyinstancerequestrequesttypedef)
-  - [DeleteTrafficPolicyRequestRequestTypeDef](#deletetrafficpolicyrequestrequesttypedef)
-  - [DeleteVPCAssociationAuthorizationRequestRequestTypeDef](#deletevpcassociationauthorizationrequestrequesttypedef)
-  - [DimensionTypeDef](#dimensiontypedef)
-  - [DisableHostedZoneDNSSECRequestRequestTypeDef](#disablehostedzonednssecrequestrequesttypedef)
-  - [DisableHostedZoneDNSSECResponseTypeDef](#disablehostedzonednssecresponsetypedef)
-  - [DisassociateVPCFromHostedZoneRequestRequestTypeDef](#disassociatevpcfromhostedzonerequestrequesttypedef)
-  - [DisassociateVPCFromHostedZoneResponseTypeDef](#disassociatevpcfromhostedzoneresponsetypedef)
-  - [EnableHostedZoneDNSSECRequestRequestTypeDef](#enablehostedzonednssecrequestrequesttypedef)
-  - [EnableHostedZoneDNSSECResponseTypeDef](#enablehostedzonednssecresponsetypedef)
-  - [GeoLocationDetailsTypeDef](#geolocationdetailstypedef)
-  - [GeoLocationTypeDef](#geolocationtypedef)
-  - [GetAccountLimitRequestRequestTypeDef](#getaccountlimitrequestrequesttypedef)
-  - [GetAccountLimitResponseTypeDef](#getaccountlimitresponsetypedef)
-  - [GetChangeRequestRequestTypeDef](#getchangerequestrequesttypedef)
-  - [GetChangeResponseTypeDef](#getchangeresponsetypedef)
-  - [GetCheckerIpRangesResponseTypeDef](#getcheckeriprangesresponsetypedef)
-  - [GetDNSSECRequestRequestTypeDef](#getdnssecrequestrequesttypedef)
-  - [GetDNSSECResponseTypeDef](#getdnssecresponsetypedef)
-  - [GetGeoLocationRequestRequestTypeDef](#getgeolocationrequestrequesttypedef)
-  - [GetGeoLocationResponseTypeDef](#getgeolocationresponsetypedef)
-  - [GetHealthCheckCountResponseTypeDef](#gethealthcheckcountresponsetypedef)
-  - [GetHealthCheckLastFailureReasonRequestRequestTypeDef](#gethealthchecklastfailurereasonrequestrequesttypedef)
-  - [GetHealthCheckLastFailureReasonResponseTypeDef](#gethealthchecklastfailurereasonresponsetypedef)
-  - [GetHealthCheckRequestRequestTypeDef](#gethealthcheckrequestrequesttypedef)
-  - [GetHealthCheckResponseTypeDef](#gethealthcheckresponsetypedef)
-  - [GetHealthCheckStatusRequestRequestTypeDef](#gethealthcheckstatusrequestrequesttypedef)
-  - [GetHealthCheckStatusResponseTypeDef](#gethealthcheckstatusresponsetypedef)
-  - [GetHostedZoneCountResponseTypeDef](#gethostedzonecountresponsetypedef)
-  - [GetHostedZoneLimitRequestRequestTypeDef](#gethostedzonelimitrequestrequesttypedef)
-  - [GetHostedZoneLimitResponseTypeDef](#gethostedzonelimitresponsetypedef)
-  - [GetHostedZoneRequestRequestTypeDef](#gethostedzonerequestrequesttypedef)
-  - [GetHostedZoneResponseTypeDef](#gethostedzoneresponsetypedef)
-  - [GetQueryLoggingConfigRequestRequestTypeDef](#getqueryloggingconfigrequestrequesttypedef)
-  - [GetQueryLoggingConfigResponseTypeDef](#getqueryloggingconfigresponsetypedef)
-  - [GetReusableDelegationSetLimitRequestRequestTypeDef](#getreusabledelegationsetlimitrequestrequesttypedef)
-  - [GetReusableDelegationSetLimitResponseTypeDef](#getreusabledelegationsetlimitresponsetypedef)
-  - [GetReusableDelegationSetRequestRequestTypeDef](#getreusabledelegationsetrequestrequesttypedef)
-  - [GetReusableDelegationSetResponseTypeDef](#getreusabledelegationsetresponsetypedef)
-  - [GetTrafficPolicyInstanceCountResponseTypeDef](#gettrafficpolicyinstancecountresponsetypedef)
-  - [GetTrafficPolicyInstanceRequestRequestTypeDef](#gettrafficpolicyinstancerequestrequesttypedef)
-  - [GetTrafficPolicyInstanceResponseTypeDef](#gettrafficpolicyinstanceresponsetypedef)
-  - [GetTrafficPolicyRequestRequestTypeDef](#gettrafficpolicyrequestrequesttypedef)
-  - [GetTrafficPolicyResponseTypeDef](#gettrafficpolicyresponsetypedef)
-  - [HealthCheckConfigTypeDef](#healthcheckconfigtypedef)
-  - [HealthCheckObservationTypeDef](#healthcheckobservationtypedef)
-  - [HealthCheckTypeDef](#healthchecktypedef)
-  - [HostedZoneConfigTypeDef](#hostedzoneconfigtypedef)
-  - [HostedZoneLimitTypeDef](#hostedzonelimittypedef)
-  - [HostedZoneOwnerTypeDef](#hostedzoneownertypedef)
-  - [HostedZoneSummaryTypeDef](#hostedzonesummarytypedef)
-  - [HostedZoneTypeDef](#hostedzonetypedef)
-  - [KeySigningKeyTypeDef](#keysigningkeytypedef)
-  - [LinkedServiceTypeDef](#linkedservicetypedef)
-  - [ListGeoLocationsRequestRequestTypeDef](#listgeolocationsrequestrequesttypedef)
-  - [ListGeoLocationsResponseTypeDef](#listgeolocationsresponsetypedef)
-  - [ListHealthChecksRequestRequestTypeDef](#listhealthchecksrequestrequesttypedef)
-  - [ListHealthChecksResponseTypeDef](#listhealthchecksresponsetypedef)
-  - [ListHostedZonesByNameRequestRequestTypeDef](#listhostedzonesbynamerequestrequesttypedef)
-  - [ListHostedZonesByNameResponseTypeDef](#listhostedzonesbynameresponsetypedef)
-  - [ListHostedZonesByVPCRequestRequestTypeDef](#listhostedzonesbyvpcrequestrequesttypedef)
-  - [ListHostedZonesByVPCResponseTypeDef](#listhostedzonesbyvpcresponsetypedef)
-  - [ListHostedZonesRequestRequestTypeDef](#listhostedzonesrequestrequesttypedef)
-  - [ListHostedZonesResponseTypeDef](#listhostedzonesresponsetypedef)
-  - [ListQueryLoggingConfigsRequestRequestTypeDef](#listqueryloggingconfigsrequestrequesttypedef)
-  - [ListQueryLoggingConfigsResponseTypeDef](#listqueryloggingconfigsresponsetypedef)
-  - [ListResourceRecordSetsRequestRequestTypeDef](#listresourcerecordsetsrequestrequesttypedef)
-  - [ListResourceRecordSetsResponseTypeDef](#listresourcerecordsetsresponsetypedef)
-  - [ListReusableDelegationSetsRequestRequestTypeDef](#listreusabledelegationsetsrequestrequesttypedef)
-  - [ListReusableDelegationSetsResponseTypeDef](#listreusabledelegationsetsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTagsForResourcesRequestRequestTypeDef](#listtagsforresourcesrequestrequesttypedef)
-  - [ListTagsForResourcesResponseTypeDef](#listtagsforresourcesresponsetypedef)
-  - [ListTrafficPoliciesRequestRequestTypeDef](#listtrafficpoliciesrequestrequesttypedef)
-  - [ListTrafficPoliciesResponseTypeDef](#listtrafficpoliciesresponsetypedef)
-  - [ListTrafficPolicyInstancesByHostedZoneRequestRequestTypeDef](#listtrafficpolicyinstancesbyhostedzonerequestrequesttypedef)
-  - [ListTrafficPolicyInstancesByHostedZoneResponseTypeDef](#listtrafficpolicyinstancesbyhostedzoneresponsetypedef)
-  - [ListTrafficPolicyInstancesByPolicyRequestRequestTypeDef](#listtrafficpolicyinstancesbypolicyrequestrequesttypedef)
-  - [ListTrafficPolicyInstancesByPolicyResponseTypeDef](#listtrafficpolicyinstancesbypolicyresponsetypedef)
-  - [ListTrafficPolicyInstancesRequestRequestTypeDef](#listtrafficpolicyinstancesrequestrequesttypedef)
-  - [ListTrafficPolicyInstancesResponseTypeDef](#listtrafficpolicyinstancesresponsetypedef)
-  - [ListTrafficPolicyVersionsRequestRequestTypeDef](#listtrafficpolicyversionsrequestrequesttypedef)
-  - [ListTrafficPolicyVersionsResponseTypeDef](#listtrafficpolicyversionsresponsetypedef)
-  - [ListVPCAssociationAuthorizationsRequestRequestTypeDef](#listvpcassociationauthorizationsrequestrequesttypedef)
-  - [ListVPCAssociationAuthorizationsResponseTypeDef](#listvpcassociationauthorizationsresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [QueryLoggingConfigTypeDef](#queryloggingconfigtypedef)
-  - [ResourceRecordSetTypeDef](#resourcerecordsettypedef)
-  - [ResourceRecordTypeDef](#resourcerecordtypedef)
-  - [ResourceTagSetTypeDef](#resourcetagsettypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ReusableDelegationSetLimitTypeDef](#reusabledelegationsetlimittypedef)
-  - [StatusReportTypeDef](#statusreporttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TestDNSAnswerRequestRequestTypeDef](#testdnsanswerrequestrequesttypedef)
-  - [TestDNSAnswerResponseTypeDef](#testdnsanswerresponsetypedef)
-  - [TrafficPolicyInstanceTypeDef](#trafficpolicyinstancetypedef)
-  - [TrafficPolicySummaryTypeDef](#trafficpolicysummarytypedef)
-  - [TrafficPolicyTypeDef](#trafficpolicytypedef)
-  - [UpdateHealthCheckRequestRequestTypeDef](#updatehealthcheckrequestrequesttypedef)
-  - [UpdateHealthCheckResponseTypeDef](#updatehealthcheckresponsetypedef)
-  - [UpdateHostedZoneCommentRequestRequestTypeDef](#updatehostedzonecommentrequestrequesttypedef)
-  - [UpdateHostedZoneCommentResponseTypeDef](#updatehostedzonecommentresponsetypedef)
-  - [UpdateTrafficPolicyCommentRequestRequestTypeDef](#updatetrafficpolicycommentrequestrequesttypedef)
-  - [UpdateTrafficPolicyCommentResponseTypeDef](#updatetrafficpolicycommentresponsetypedef)
-  - [UpdateTrafficPolicyInstanceRequestRequestTypeDef](#updatetrafficpolicyinstancerequestrequesttypedef)
-  - [UpdateTrafficPolicyInstanceResponseTypeDef](#updatetrafficpolicyinstanceresponsetypedef)
-  - [VPCTypeDef](#vpctypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="accountlimittypedef"></a>
+    Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+    type annotations stubs module [mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 ## AccountLimitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import AccountLimitTypeDef
+
+def get_value() -> AccountLimitTypeDef:
+    return {
+        "Type": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccountLimitTypeDef(TypedDict):
+    Type: AccountLimitTypeType,  # (1)
+    Value: int,
+```
 
-- `Type`: [AccountLimitTypeType](./literals.md#accountlimittypetype)
-- `Value`: `int`
-
-<a id="activatekeysigningkeyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AccountLimitTypeType](./literals.md#accountlimittypetype) 
 ## ActivateKeySigningKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ActivateKeySigningKeyRequestRequestTypeDef
+
+def get_value() -> ActivateKeySigningKeyRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-- `Name`: `str`
-
-<a id="activatekeysigningkeyresponsetypedef"></a>
+```python title="Definition"
+class ActivateKeySigningKeyRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    Name: str,
+```
 
 ## ActivateKeySigningKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ActivateKeySigningKeyResponseTypeDef
+
+def get_value() -> ActivateKeySigningKeyResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActivateKeySigningKeyResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="alarmidentifiertypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AlarmIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import AlarmIdentifierTypeDef
+
+def get_value() -> AlarmIdentifierTypeDef:
+    return {
+        "Region": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AlarmIdentifierTypeDef(TypedDict):
+    Region: CloudWatchRegionType,  # (1)
+    Name: str,
+```
 
-- `Region`: [CloudWatchRegionType](./literals.md#cloudwatchregiontype)
-- `Name`: `str`
-
-<a id="aliastargettypedef"></a>
-
+1. See [:material-code-brackets: CloudWatchRegionType](./literals.md#cloudwatchregiontype) 
 ## AliasTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import AliasTargetTypeDef
+
+def get_value() -> AliasTargetTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "DNSName": ...,
+        "EvaluateTargetHealth": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-- `DNSName`: `str`
-- `EvaluateTargetHealth`: `bool`
-
-<a id="associatevpcwithhostedzonerequestrequesttypedef"></a>
+```python title="Definition"
+class AliasTargetTypeDef(TypedDict):
+    HostedZoneId: str,
+    DNSName: str,
+    EvaluateTargetHealth: bool,
+```
 
 ## AssociateVPCWithHostedZoneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import AssociateVPCWithHostedZoneRequestRequestTypeDef
+
+def get_value() -> AssociateVPCWithHostedZoneRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "VPC": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateVPCWithHostedZoneRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    VPC: VPCTypeDef,  # (1)
+    Comment: NotRequired[str],
+```
 
-- `HostedZoneId`: `str`
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="associatevpcwithhostedzoneresponsetypedef"></a>
-
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
 ## AssociateVPCWithHostedZoneResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import AssociateVPCWithHostedZoneResponseTypeDef
+
+def get_value() -> AssociateVPCWithHostedZoneResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateVPCWithHostedZoneResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="changebatchtypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChangeBatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ChangeBatchTypeDef
+
+def get_value() -> ChangeBatchTypeDef:
+    return {
+        "Changes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChangeBatchTypeDef(TypedDict):
+    Changes: Sequence[ChangeTypeDef],  # (1)
+    Comment: NotRequired[str],
+```
 
-- `Changes`: `Sequence`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="changeinfotypedef"></a>
-
+1. See [:material-code-braces: ChangeTypeDef](./type_defs.md#changetypedef) 
 ## ChangeInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ChangeInfoTypeDef
+
+def get_value() -> ChangeInfoTypeDef:
+    return {
+        "Id": ...,
+        "Status": ...,
+        "SubmittedAt": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChangeInfoTypeDef(TypedDict):
+    Id: str,
+    Status: ChangeStatusType,  # (1)
+    SubmittedAt: datetime,
+    Comment: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Status`: [ChangeStatusType](./literals.md#changestatustype)
-- `SubmittedAt`: `datetime`
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="changeresourcerecordsetsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChangeStatusType](./literals.md#changestatustype) 
 ## ChangeResourceRecordSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ChangeResourceRecordSetsRequestRequestTypeDef
+
+def get_value() -> ChangeResourceRecordSetsRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "ChangeBatch": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChangeResourceRecordSetsRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    ChangeBatch: ChangeBatchTypeDef,  # (1)
+```
 
-- `HostedZoneId`: `str`
-- `ChangeBatch`: [ChangeBatchTypeDef](./type_defs.md#changebatchtypedef)
-
-<a id="changeresourcerecordsetsresponsetypedef"></a>
-
+1. See [:material-code-braces: ChangeBatchTypeDef](./type_defs.md#changebatchtypedef) 
 ## ChangeResourceRecordSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ChangeResourceRecordSetsResponseTypeDef
+
+def get_value() -> ChangeResourceRecordSetsResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChangeResourceRecordSetsResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="changetagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChangeTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ChangeTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ChangeTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChangeTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceType: TagResourceTypeType,  # (1)
+    ResourceId: str,
+    AddTags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    RemoveTagKeys: NotRequired[Sequence[str]],
+```
 
-- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `AddTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RemoveTagKeys`: `Sequence`\[`str`\]
-
-<a id="changetypedef"></a>
-
+1. See [:material-code-brackets: TagResourceTypeType](./literals.md#tagresourcetypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ChangeTypeDef
+
+def get_value() -> ChangeTypeDef:
+    return {
+        "Action": ...,
+        "ResourceRecordSet": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChangeTypeDef(TypedDict):
+    Action: ChangeActionType,  # (1)
+    ResourceRecordSet: ResourceRecordSetTypeDef,  # (2)
+```
 
-- `Action`: [ChangeActionType](./literals.md#changeactiontype)
-- `ResourceRecordSet`:
-  [ResourceRecordSetTypeDef](./type_defs.md#resourcerecordsettypedef)
-
-<a id="cloudwatchalarmconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ChangeActionType](./literals.md#changeactiontype) 
+2. See [:material-code-braces: ResourceRecordSetTypeDef](./type_defs.md#resourcerecordsettypedef) 
 ## CloudWatchAlarmConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CloudWatchAlarmConfigurationTypeDef
+
+def get_value() -> CloudWatchAlarmConfigurationTypeDef:
+    return {
+        "EvaluationPeriods": ...,
+        "Threshold": ...,
+        "ComparisonOperator": ...,
+        "Period": ...,
+        "MetricName": ...,
+        "Namespace": ...,
+        "Statistic": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudWatchAlarmConfigurationTypeDef(TypedDict):
+    EvaluationPeriods: int,
+    Threshold: float,
+    ComparisonOperator: ComparisonOperatorType,  # (1)
+    Period: int,
+    MetricName: str,
+    Namespace: str,
+    Statistic: StatisticType,  # (2)
+    Dimensions: NotRequired[List[DimensionTypeDef]],  # (3)
+```
 
-- `EvaluationPeriods`: `int`
-- `Threshold`: `float`
-- `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-- `Period`: `int`
-- `MetricName`: `str`
-- `Namespace`: `str`
-- `Statistic`: [StatisticType](./literals.md#statistictype)
-
-Optional fields:
-
-- `Dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-
-<a id="createhealthcheckrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+2. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
+3. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
 ## CreateHealthCheckRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateHealthCheckRequestRequestTypeDef
+
+def get_value() -> CreateHealthCheckRequestRequestTypeDef:
+    return {
+        "CallerReference": ...,
+        "HealthCheckConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHealthCheckRequestRequestTypeDef(TypedDict):
+    CallerReference: str,
+    HealthCheckConfig: HealthCheckConfigTypeDef,  # (1)
+```
 
-- `CallerReference`: `str`
-- `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
-
-<a id="createhealthcheckresponsetypedef"></a>
-
+1. See [:material-code-braces: HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef) 
 ## CreateHealthCheckResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateHealthCheckResponseTypeDef
+
+def get_value() -> CreateHealthCheckResponseTypeDef:
+    return {
+        "HealthCheck": ...,
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHealthCheckResponseTypeDef(TypedDict):
+    HealthCheck: HealthCheckTypeDef,  # (1)
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
-- `Location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhostedzonerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHostedZoneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateHostedZoneRequestRequestTypeDef
+
+def get_value() -> CreateHostedZoneRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "CallerReference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHostedZoneRequestRequestTypeDef(TypedDict):
+    Name: str,
+    CallerReference: str,
+    VPC: NotRequired[VPCTypeDef],  # (1)
+    HostedZoneConfig: NotRequired[HostedZoneConfigTypeDef],  # (2)
+    DelegationSetId: NotRequired[str],
+```
 
-- `Name`: `str`
-- `CallerReference`: `str`
-
-Optional fields:
-
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
-- `HostedZoneConfig`:
-  [HostedZoneConfigTypeDef](./type_defs.md#hostedzoneconfigtypedef)
-- `DelegationSetId`: `str`
-
-<a id="createhostedzoneresponsetypedef"></a>
-
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
+2. See [:material-code-braces: HostedZoneConfigTypeDef](./type_defs.md#hostedzoneconfigtypedef) 
 ## CreateHostedZoneResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateHostedZoneResponseTypeDef
+
+def get_value() -> CreateHostedZoneResponseTypeDef:
+    return {
+        "HostedZone": ...,
+        "ChangeInfo": ...,
+        "DelegationSet": ...,
+        "VPC": ...,
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHostedZoneResponseTypeDef(TypedDict):
+    HostedZone: HostedZoneTypeDef,  # (1)
+    ChangeInfo: ChangeInfoTypeDef,  # (2)
+    DelegationSet: DelegationSetTypeDef,  # (3)
+    VPC: VPCTypeDef,  # (4)
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `HostedZone`: [HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
-- `Location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createkeysigningkeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HostedZoneTypeDef](./type_defs.md#hostedzonetypedef) 
+2. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+3. See [:material-code-braces: DelegationSetTypeDef](./type_defs.md#delegationsettypedef) 
+4. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateKeySigningKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateKeySigningKeyRequestRequestTypeDef
+
+def get_value() -> CreateKeySigningKeyRequestRequestTypeDef:
+    return {
+        "CallerReference": ...,
+        "HostedZoneId": ...,
+        "KeyManagementServiceArn": ...,
+        "Name": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
-
-- `CallerReference`: `str`
-- `HostedZoneId`: `str`
-- `KeyManagementServiceArn`: `str`
-- `Name`: `str`
-- `Status`: `str`
-
-<a id="createkeysigningkeyresponsetypedef"></a>
+```python title="Definition"
+class CreateKeySigningKeyRequestRequestTypeDef(TypedDict):
+    CallerReference: str,
+    HostedZoneId: str,
+    KeyManagementServiceArn: str,
+    Name: str,
+    Status: str,
+```
 
 ## CreateKeySigningKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateKeySigningKeyResponseTypeDef
+
+def get_value() -> CreateKeySigningKeyResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "KeySigningKey": ...,
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateKeySigningKeyResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    KeySigningKey: KeySigningKeyTypeDef,  # (2)
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `KeySigningKey`: [KeySigningKeyTypeDef](./type_defs.md#keysigningkeytypedef)
-- `Location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createqueryloggingconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: KeySigningKeyTypeDef](./type_defs.md#keysigningkeytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateQueryLoggingConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateQueryLoggingConfigRequestRequestTypeDef
+
+def get_value() -> CreateQueryLoggingConfigRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "CloudWatchLogsLogGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-- `CloudWatchLogsLogGroupArn`: `str`
-
-<a id="createqueryloggingconfigresponsetypedef"></a>
+```python title="Definition"
+class CreateQueryLoggingConfigRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    CloudWatchLogsLogGroupArn: str,
+```
 
 ## CreateQueryLoggingConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateQueryLoggingConfigResponseTypeDef
+
+def get_value() -> CreateQueryLoggingConfigResponseTypeDef:
+    return {
+        "QueryLoggingConfig": ...,
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateQueryLoggingConfigResponseTypeDef(TypedDict):
+    QueryLoggingConfig: QueryLoggingConfigTypeDef,  # (1)
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QueryLoggingConfig`:
-  [QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef)
-- `Location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createreusabledelegationsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateReusableDelegationSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateReusableDelegationSetRequestRequestTypeDef
+
+def get_value() -> CreateReusableDelegationSetRequestRequestTypeDef:
+    return {
+        "CallerReference": ...,
+    }
 ```
 
-Required fields:
-
-- `CallerReference`: `str`
-
-Optional fields:
-
-- `HostedZoneId`: `str`
-
-<a id="createreusabledelegationsetresponsetypedef"></a>
+```python title="Definition"
+class CreateReusableDelegationSetRequestRequestTypeDef(TypedDict):
+    CallerReference: str,
+    HostedZoneId: NotRequired[str],
+```
 
 ## CreateReusableDelegationSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateReusableDelegationSetResponseTypeDef
+
+def get_value() -> CreateReusableDelegationSetResponseTypeDef:
+    return {
+        "DelegationSet": ...,
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReusableDelegationSetResponseTypeDef(TypedDict):
+    DelegationSet: DelegationSetTypeDef,  # (1)
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
-- `Location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtrafficpolicyinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DelegationSetTypeDef](./type_defs.md#delegationsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTrafficPolicyInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateTrafficPolicyInstanceRequestRequestTypeDef
+
+def get_value() -> CreateTrafficPolicyInstanceRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "Name": ...,
+        "TTL": ...,
+        "TrafficPolicyId": ...,
+        "TrafficPolicyVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-- `Name`: `str`
-- `TTL`: `int`
-- `TrafficPolicyId`: `str`
-- `TrafficPolicyVersion`: `int`
-
-<a id="createtrafficpolicyinstanceresponsetypedef"></a>
+```python title="Definition"
+class CreateTrafficPolicyInstanceRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    Name: str,
+    TTL: int,
+    TrafficPolicyId: str,
+    TrafficPolicyVersion: int,
+```
 
 ## CreateTrafficPolicyInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateTrafficPolicyInstanceResponseTypeDef
+
+def get_value() -> CreateTrafficPolicyInstanceResponseTypeDef:
+    return {
+        "TrafficPolicyInstance": ...,
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTrafficPolicyInstanceResponseTypeDef(TypedDict):
+    TrafficPolicyInstance: TrafficPolicyInstanceTypeDef,  # (1)
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrafficPolicyInstance`:
-  [TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)
-- `Location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtrafficpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTrafficPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateTrafficPolicyRequestRequestTypeDef
+
+def get_value() -> CreateTrafficPolicyRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Document": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Document`: `str`
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="createtrafficpolicyresponsetypedef"></a>
+```python title="Definition"
+class CreateTrafficPolicyRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Document: str,
+    Comment: NotRequired[str],
+```
 
 ## CreateTrafficPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateTrafficPolicyResponseTypeDef
+
+def get_value() -> CreateTrafficPolicyResponseTypeDef:
+    return {
+        "TrafficPolicy": ...,
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTrafficPolicyResponseTypeDef(TypedDict):
+    TrafficPolicy: TrafficPolicyTypeDef,  # (1)
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
-- `Location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtrafficpolicyversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTrafficPolicyVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateTrafficPolicyVersionRequestRequestTypeDef
+
+def get_value() -> CreateTrafficPolicyVersionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Document": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `Document`: `str`
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="createtrafficpolicyversionresponsetypedef"></a>
+```python title="Definition"
+class CreateTrafficPolicyVersionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Document: str,
+    Comment: NotRequired[str],
+```
 
 ## CreateTrafficPolicyVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateTrafficPolicyVersionResponseTypeDef
+
+def get_value() -> CreateTrafficPolicyVersionResponseTypeDef:
+    return {
+        "TrafficPolicy": ...,
+        "Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTrafficPolicyVersionResponseTypeDef(TypedDict):
+    TrafficPolicy: TrafficPolicyTypeDef,  # (1)
+    Location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
-- `Location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvpcassociationauthorizationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVPCAssociationAuthorizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateVPCAssociationAuthorizationRequestRequestTypeDef
+
+def get_value() -> CreateVPCAssociationAuthorizationRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "VPC": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVPCAssociationAuthorizationRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    VPC: VPCTypeDef,  # (1)
+```
 
-- `HostedZoneId`: `str`
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
-
-<a id="createvpcassociationauthorizationresponsetypedef"></a>
-
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
 ## CreateVPCAssociationAuthorizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import CreateVPCAssociationAuthorizationResponseTypeDef
+
+def get_value() -> CreateVPCAssociationAuthorizationResponseTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "VPC": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVPCAssociationAuthorizationResponseTypeDef(TypedDict):
+    HostedZoneId: str,
+    VPC: VPCTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HostedZoneId`: `str`
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dnssecstatustypedef"></a>
-
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DNSSECStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DNSSECStatusTypeDef
+
+def get_value() -> DNSSECStatusTypeDef:
+    return {
+        "ServeSignature": ...,
+    }
 ```
 
-Optional fields:
-
-- `ServeSignature`: `str`
-- `StatusMessage`: `str`
-
-<a id="deactivatekeysigningkeyrequestrequesttypedef"></a>
+```python title="Definition"
+class DNSSECStatusTypeDef(TypedDict):
+    ServeSignature: NotRequired[str],
+    StatusMessage: NotRequired[str],
+```
 
 ## DeactivateKeySigningKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeactivateKeySigningKeyRequestRequestTypeDef
+
+def get_value() -> DeactivateKeySigningKeyRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-- `Name`: `str`
-
-<a id="deactivatekeysigningkeyresponsetypedef"></a>
+```python title="Definition"
+class DeactivateKeySigningKeyRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    Name: str,
+```
 
 ## DeactivateKeySigningKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeactivateKeySigningKeyResponseTypeDef
+
+def get_value() -> DeactivateKeySigningKeyResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeactivateKeySigningKeyResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="delegationsettypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DelegationSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DelegationSetTypeDef
+
+def get_value() -> DelegationSetTypeDef:
+    return {
+        "NameServers": ...,
+    }
 ```
 
-Required fields:
-
-- `NameServers`: `List`\[`str`\]
-
-Optional fields:
-
-- `Id`: `str`
-- `CallerReference`: `str`
-
-<a id="deletehealthcheckrequestrequesttypedef"></a>
+```python title="Definition"
+class DelegationSetTypeDef(TypedDict):
+    NameServers: List[str],
+    Id: NotRequired[str],
+    CallerReference: NotRequired[str],
+```
 
 ## DeleteHealthCheckRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteHealthCheckRequestRequestTypeDef
+
+def get_value() -> DeleteHealthCheckRequestRequestTypeDef:
+    return {
+        "HealthCheckId": ...,
+    }
 ```
 
-Required fields:
-
-- `HealthCheckId`: `str`
-
-<a id="deletehostedzonerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteHealthCheckRequestRequestTypeDef(TypedDict):
+    HealthCheckId: str,
+```
 
 ## DeleteHostedZoneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteHostedZoneRequestRequestTypeDef
+
+def get_value() -> DeleteHostedZoneRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletehostedzoneresponsetypedef"></a>
+```python title="Definition"
+class DeleteHostedZoneRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteHostedZoneResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteHostedZoneResponseTypeDef
+
+def get_value() -> DeleteHostedZoneResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteHostedZoneResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletekeysigningkeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteKeySigningKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteKeySigningKeyRequestRequestTypeDef
+
+def get_value() -> DeleteKeySigningKeyRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-- `Name`: `str`
-
-<a id="deletekeysigningkeyresponsetypedef"></a>
+```python title="Definition"
+class DeleteKeySigningKeyRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    Name: str,
+```
 
 ## DeleteKeySigningKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteKeySigningKeyResponseTypeDef
+
+def get_value() -> DeleteKeySigningKeyResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteKeySigningKeyResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletequeryloggingconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteQueryLoggingConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteQueryLoggingConfigRequestRequestTypeDef
+
+def get_value() -> DeleteQueryLoggingConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletereusabledelegationsetrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteQueryLoggingConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteReusableDelegationSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteReusableDelegationSetRequestRequestTypeDef
+
+def get_value() -> DeleteReusableDelegationSetRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletetrafficpolicyinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteReusableDelegationSetRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteTrafficPolicyInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteTrafficPolicyInstanceRequestRequestTypeDef
+
+def get_value() -> DeleteTrafficPolicyInstanceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletetrafficpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTrafficPolicyInstanceRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteTrafficPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteTrafficPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteTrafficPolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Version": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `Version`: `int`
-
-<a id="deletevpcassociationauthorizationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTrafficPolicyRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Version: int,
+```
 
 ## DeleteVPCAssociationAuthorizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DeleteVPCAssociationAuthorizationRequestRequestTypeDef
+
+def get_value() -> DeleteVPCAssociationAuthorizationRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "VPC": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteVPCAssociationAuthorizationRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    VPC: VPCTypeDef,  # (1)
+```
 
-- `HostedZoneId`: `str`
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
-
-<a id="dimensiontypedef"></a>
-
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
 ## DimensionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DimensionTypeDef
+
+def get_value() -> DimensionTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="disablehostedzonednssecrequestrequesttypedef"></a>
+```python title="Definition"
+class DimensionTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
 
 ## DisableHostedZoneDNSSECRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DisableHostedZoneDNSSECRequestRequestTypeDef
+
+def get_value() -> DisableHostedZoneDNSSECRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-
-<a id="disablehostedzonednssecresponsetypedef"></a>
+```python title="Definition"
+class DisableHostedZoneDNSSECRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+```
 
 ## DisableHostedZoneDNSSECResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DisableHostedZoneDNSSECResponseTypeDef
+
+def get_value() -> DisableHostedZoneDNSSECResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisableHostedZoneDNSSECResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociatevpcfromhostedzonerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateVPCFromHostedZoneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DisassociateVPCFromHostedZoneRequestRequestTypeDef
+
+def get_value() -> DisassociateVPCFromHostedZoneRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "VPC": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateVPCFromHostedZoneRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    VPC: VPCTypeDef,  # (1)
+    Comment: NotRequired[str],
+```
 
-- `HostedZoneId`: `str`
-- `VPC`: [VPCTypeDef](./type_defs.md#vpctypedef)
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="disassociatevpcfromhostedzoneresponsetypedef"></a>
-
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
 ## DisassociateVPCFromHostedZoneResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import DisassociateVPCFromHostedZoneResponseTypeDef
+
+def get_value() -> DisassociateVPCFromHostedZoneResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateVPCFromHostedZoneResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="enablehostedzonednssecrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnableHostedZoneDNSSECRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import EnableHostedZoneDNSSECRequestRequestTypeDef
+
+def get_value() -> EnableHostedZoneDNSSECRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-
-<a id="enablehostedzonednssecresponsetypedef"></a>
+```python title="Definition"
+class EnableHostedZoneDNSSECRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+```
 
 ## EnableHostedZoneDNSSECResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import EnableHostedZoneDNSSECResponseTypeDef
+
+def get_value() -> EnableHostedZoneDNSSECResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnableHostedZoneDNSSECResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="geolocationdetailstypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GeoLocationDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GeoLocationDetailsTypeDef
+
+def get_value() -> GeoLocationDetailsTypeDef:
+    return {
+        "ContinentCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ContinentCode`: `str`
-- `ContinentName`: `str`
-- `CountryCode`: `str`
-- `CountryName`: `str`
-- `SubdivisionCode`: `str`
-- `SubdivisionName`: `str`
-
-<a id="geolocationtypedef"></a>
+```python title="Definition"
+class GeoLocationDetailsTypeDef(TypedDict):
+    ContinentCode: NotRequired[str],
+    ContinentName: NotRequired[str],
+    CountryCode: NotRequired[str],
+    CountryName: NotRequired[str],
+    SubdivisionCode: NotRequired[str],
+    SubdivisionName: NotRequired[str],
+```
 
 ## GeoLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GeoLocationTypeDef
+
+def get_value() -> GeoLocationTypeDef:
+    return {
+        "ContinentCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ContinentCode`: `str`
-- `CountryCode`: `str`
-- `SubdivisionCode`: `str`
-
-<a id="getaccountlimitrequestrequesttypedef"></a>
+```python title="Definition"
+class GeoLocationTypeDef(TypedDict):
+    ContinentCode: NotRequired[str],
+    CountryCode: NotRequired[str],
+    SubdivisionCode: NotRequired[str],
+```
 
 ## GetAccountLimitRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetAccountLimitRequestRequestTypeDef
+
+def get_value() -> GetAccountLimitRequestRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountLimitRequestRequestTypeDef(TypedDict):
+    Type: AccountLimitTypeType,  # (1)
+```
 
-- `Type`: [AccountLimitTypeType](./literals.md#accountlimittypetype)
-
-<a id="getaccountlimitresponsetypedef"></a>
-
+1. See [:material-code-brackets: AccountLimitTypeType](./literals.md#accountlimittypetype) 
 ## GetAccountLimitResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetAccountLimitResponseTypeDef
+
+def get_value() -> GetAccountLimitResponseTypeDef:
+    return {
+        "Limit": ...,
+        "Count": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountLimitResponseTypeDef(TypedDict):
+    Limit: AccountLimitTypeDef,  # (1)
+    Count: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Limit`: [AccountLimitTypeDef](./type_defs.md#accountlimittypedef)
-- `Count`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getchangerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountLimitTypeDef](./type_defs.md#accountlimittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetChangeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetChangeRequestRequestTypeDef
+
+def get_value() -> GetChangeRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChangeRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
-- `Id`: `str`
+## GetChangeRequestResourceRecordSetsChangedWaitTypeDef
 
-<a id="getchangeresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import GetChangeRequestResourceRecordSetsChangedWaitTypeDef
 
+def get_value() -> GetChangeRequestResourceRecordSetsChangedWaitTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class GetChangeRequestResourceRecordSetsChangedWaitTypeDef(TypedDict):
+    Id: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetChangeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetChangeResponseTypeDef
+
+def get_value() -> GetChangeResponseTypeDef:
+    return {
+        "ChangeInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChangeResponseTypeDef(TypedDict):
+    ChangeInfo: ChangeInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeInfo`: [ChangeInfoTypeDef](./type_defs.md#changeinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcheckeriprangesresponsetypedef"></a>
-
+1. See [:material-code-braces: ChangeInfoTypeDef](./type_defs.md#changeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCheckerIpRangesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetCheckerIpRangesResponseTypeDef
+
+def get_value() -> GetCheckerIpRangesResponseTypeDef:
+    return {
+        "CheckerIpRanges": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCheckerIpRangesResponseTypeDef(TypedDict):
+    CheckerIpRanges: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CheckerIpRanges`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdnssecrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDNSSECRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetDNSSECRequestRequestTypeDef
+
+def get_value() -> GetDNSSECRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-
-<a id="getdnssecresponsetypedef"></a>
+```python title="Definition"
+class GetDNSSECRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+```
 
 ## GetDNSSECResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetDNSSECResponseTypeDef
+
+def get_value() -> GetDNSSECResponseTypeDef:
+    return {
+        "Status": ...,
+        "KeySigningKeys": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDNSSECResponseTypeDef(TypedDict):
+    Status: DNSSECStatusTypeDef,  # (1)
+    KeySigningKeys: List[KeySigningKeyTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`: [DNSSECStatusTypeDef](./type_defs.md#dnssecstatustypedef)
-- `KeySigningKeys`:
-  `List`\[[KeySigningKeyTypeDef](./type_defs.md#keysigningkeytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgeolocationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DNSSECStatusTypeDef](./type_defs.md#dnssecstatustypedef) 
+2. See [:material-code-braces: KeySigningKeyTypeDef](./type_defs.md#keysigningkeytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGeoLocationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetGeoLocationRequestRequestTypeDef
+
+def get_value() -> GetGeoLocationRequestRequestTypeDef:
+    return {
+        "ContinentCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ContinentCode`: `str`
-- `CountryCode`: `str`
-- `SubdivisionCode`: `str`
-
-<a id="getgeolocationresponsetypedef"></a>
+```python title="Definition"
+class GetGeoLocationRequestRequestTypeDef(TypedDict):
+    ContinentCode: NotRequired[str],
+    CountryCode: NotRequired[str],
+    SubdivisionCode: NotRequired[str],
+```
 
 ## GetGeoLocationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetGeoLocationResponseTypeDef
+
+def get_value() -> GetGeoLocationResponseTypeDef:
+    return {
+        "GeoLocationDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGeoLocationResponseTypeDef(TypedDict):
+    GeoLocationDetails: GeoLocationDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GeoLocationDetails`:
-  [GeoLocationDetailsTypeDef](./type_defs.md#geolocationdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethealthcheckcountresponsetypedef"></a>
-
+1. See [:material-code-braces: GeoLocationDetailsTypeDef](./type_defs.md#geolocationdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHealthCheckCountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHealthCheckCountResponseTypeDef
+
+def get_value() -> GetHealthCheckCountResponseTypeDef:
+    return {
+        "HealthCheckCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHealthCheckCountResponseTypeDef(TypedDict):
+    HealthCheckCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HealthCheckCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethealthchecklastfailurereasonrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHealthCheckLastFailureReasonRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHealthCheckLastFailureReasonRequestRequestTypeDef
+
+def get_value() -> GetHealthCheckLastFailureReasonRequestRequestTypeDef:
+    return {
+        "HealthCheckId": ...,
+    }
 ```
 
-Required fields:
-
-- `HealthCheckId`: `str`
-
-<a id="gethealthchecklastfailurereasonresponsetypedef"></a>
+```python title="Definition"
+class GetHealthCheckLastFailureReasonRequestRequestTypeDef(TypedDict):
+    HealthCheckId: str,
+```
 
 ## GetHealthCheckLastFailureReasonResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHealthCheckLastFailureReasonResponseTypeDef
+
+def get_value() -> GetHealthCheckLastFailureReasonResponseTypeDef:
+    return {
+        "HealthCheckObservations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHealthCheckLastFailureReasonResponseTypeDef(TypedDict):
+    HealthCheckObservations: List[HealthCheckObservationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HealthCheckObservations`:
-  `List`\[[HealthCheckObservationTypeDef](./type_defs.md#healthcheckobservationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethealthcheckrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HealthCheckObservationTypeDef](./type_defs.md#healthcheckobservationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHealthCheckRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHealthCheckRequestRequestTypeDef
+
+def get_value() -> GetHealthCheckRequestRequestTypeDef:
+    return {
+        "HealthCheckId": ...,
+    }
 ```
 
-Required fields:
-
-- `HealthCheckId`: `str`
-
-<a id="gethealthcheckresponsetypedef"></a>
+```python title="Definition"
+class GetHealthCheckRequestRequestTypeDef(TypedDict):
+    HealthCheckId: str,
+```
 
 ## GetHealthCheckResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHealthCheckResponseTypeDef
+
+def get_value() -> GetHealthCheckResponseTypeDef:
+    return {
+        "HealthCheck": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHealthCheckResponseTypeDef(TypedDict):
+    HealthCheck: HealthCheckTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethealthcheckstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHealthCheckStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHealthCheckStatusRequestRequestTypeDef
+
+def get_value() -> GetHealthCheckStatusRequestRequestTypeDef:
+    return {
+        "HealthCheckId": ...,
+    }
 ```
 
-Required fields:
-
-- `HealthCheckId`: `str`
-
-<a id="gethealthcheckstatusresponsetypedef"></a>
+```python title="Definition"
+class GetHealthCheckStatusRequestRequestTypeDef(TypedDict):
+    HealthCheckId: str,
+```
 
 ## GetHealthCheckStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHealthCheckStatusResponseTypeDef
+
+def get_value() -> GetHealthCheckStatusResponseTypeDef:
+    return {
+        "HealthCheckObservations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHealthCheckStatusResponseTypeDef(TypedDict):
+    HealthCheckObservations: List[HealthCheckObservationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HealthCheckObservations`:
-  `List`\[[HealthCheckObservationTypeDef](./type_defs.md#healthcheckobservationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethostedzonecountresponsetypedef"></a>
-
+1. See [:material-code-braces: HealthCheckObservationTypeDef](./type_defs.md#healthcheckobservationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHostedZoneCountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHostedZoneCountResponseTypeDef
+
+def get_value() -> GetHostedZoneCountResponseTypeDef:
+    return {
+        "HostedZoneCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHostedZoneCountResponseTypeDef(TypedDict):
+    HostedZoneCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HostedZoneCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethostedzonelimitrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHostedZoneLimitRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHostedZoneLimitRequestRequestTypeDef
+
+def get_value() -> GetHostedZoneLimitRequestRequestTypeDef:
+    return {
+        "Type": ...,
+        "HostedZoneId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHostedZoneLimitRequestRequestTypeDef(TypedDict):
+    Type: HostedZoneLimitTypeType,  # (1)
+    HostedZoneId: str,
+```
 
-- `Type`: [HostedZoneLimitTypeType](./literals.md#hostedzonelimittypetype)
-- `HostedZoneId`: `str`
-
-<a id="gethostedzonelimitresponsetypedef"></a>
-
+1. See [:material-code-brackets: HostedZoneLimitTypeType](./literals.md#hostedzonelimittypetype) 
 ## GetHostedZoneLimitResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHostedZoneLimitResponseTypeDef
+
+def get_value() -> GetHostedZoneLimitResponseTypeDef:
+    return {
+        "Limit": ...,
+        "Count": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHostedZoneLimitResponseTypeDef(TypedDict):
+    Limit: HostedZoneLimitTypeDef,  # (1)
+    Count: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Limit`: [HostedZoneLimitTypeDef](./type_defs.md#hostedzonelimittypedef)
-- `Count`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethostedzonerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HostedZoneLimitTypeDef](./type_defs.md#hostedzonelimittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHostedZoneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHostedZoneRequestRequestTypeDef
+
+def get_value() -> GetHostedZoneRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="gethostedzoneresponsetypedef"></a>
+```python title="Definition"
+class GetHostedZoneRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetHostedZoneResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetHostedZoneResponseTypeDef
+
+def get_value() -> GetHostedZoneResponseTypeDef:
+    return {
+        "HostedZone": ...,
+        "DelegationSet": ...,
+        "VPCs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHostedZoneResponseTypeDef(TypedDict):
+    HostedZone: HostedZoneTypeDef,  # (1)
+    DelegationSet: DelegationSetTypeDef,  # (2)
+    VPCs: List[VPCTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `HostedZone`: [HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)
-- `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
-- `VPCs`: `List`\[[VPCTypeDef](./type_defs.md#vpctypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getqueryloggingconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HostedZoneTypeDef](./type_defs.md#hostedzonetypedef) 
+2. See [:material-code-braces: DelegationSetTypeDef](./type_defs.md#delegationsettypedef) 
+3. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQueryLoggingConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetQueryLoggingConfigRequestRequestTypeDef
+
+def get_value() -> GetQueryLoggingConfigRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getqueryloggingconfigresponsetypedef"></a>
+```python title="Definition"
+class GetQueryLoggingConfigRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetQueryLoggingConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetQueryLoggingConfigResponseTypeDef
+
+def get_value() -> GetQueryLoggingConfigResponseTypeDef:
+    return {
+        "QueryLoggingConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetQueryLoggingConfigResponseTypeDef(TypedDict):
+    QueryLoggingConfig: QueryLoggingConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QueryLoggingConfig`:
-  [QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getreusabledelegationsetlimitrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetReusableDelegationSetLimitRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetReusableDelegationSetLimitRequestRequestTypeDef
+
+def get_value() -> GetReusableDelegationSetLimitRequestRequestTypeDef:
+    return {
+        "Type": ...,
+        "DelegationSetId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReusableDelegationSetLimitRequestRequestTypeDef(TypedDict):
+    Type: ReusableDelegationSetLimitTypeType,  # (1)
+    DelegationSetId: str,
+```
 
-- `Type`: `Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET']` (see
-  [ReusableDelegationSetLimitTypeType](./literals.md#reusabledelegationsetlimittypetype))
-- `DelegationSetId`: `str`
-
-<a id="getreusabledelegationsetlimitresponsetypedef"></a>
-
+1. See [:material-code-brackets: ReusableDelegationSetLimitTypeType](./literals.md#reusabledelegationsetlimittypetype) 
 ## GetReusableDelegationSetLimitResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetReusableDelegationSetLimitResponseTypeDef
+
+def get_value() -> GetReusableDelegationSetLimitResponseTypeDef:
+    return {
+        "Limit": ...,
+        "Count": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReusableDelegationSetLimitResponseTypeDef(TypedDict):
+    Limit: ReusableDelegationSetLimitTypeDef,  # (1)
+    Count: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Limit`:
-  [ReusableDelegationSetLimitTypeDef](./type_defs.md#reusabledelegationsetlimittypedef)
-- `Count`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getreusabledelegationsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ReusableDelegationSetLimitTypeDef](./type_defs.md#reusabledelegationsetlimittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetReusableDelegationSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetReusableDelegationSetRequestRequestTypeDef
+
+def get_value() -> GetReusableDelegationSetRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getreusabledelegationsetresponsetypedef"></a>
+```python title="Definition"
+class GetReusableDelegationSetRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetReusableDelegationSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetReusableDelegationSetResponseTypeDef
+
+def get_value() -> GetReusableDelegationSetResponseTypeDef:
+    return {
+        "DelegationSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReusableDelegationSetResponseTypeDef(TypedDict):
+    DelegationSet: DelegationSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DelegationSet`: [DelegationSetTypeDef](./type_defs.md#delegationsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettrafficpolicyinstancecountresponsetypedef"></a>
-
+1. See [:material-code-braces: DelegationSetTypeDef](./type_defs.md#delegationsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTrafficPolicyInstanceCountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetTrafficPolicyInstanceCountResponseTypeDef
+
+def get_value() -> GetTrafficPolicyInstanceCountResponseTypeDef:
+    return {
+        "TrafficPolicyInstanceCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTrafficPolicyInstanceCountResponseTypeDef(TypedDict):
+    TrafficPolicyInstanceCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TrafficPolicyInstanceCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettrafficpolicyinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTrafficPolicyInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetTrafficPolicyInstanceRequestRequestTypeDef
+
+def get_value() -> GetTrafficPolicyInstanceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="gettrafficpolicyinstanceresponsetypedef"></a>
+```python title="Definition"
+class GetTrafficPolicyInstanceRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetTrafficPolicyInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetTrafficPolicyInstanceResponseTypeDef
+
+def get_value() -> GetTrafficPolicyInstanceResponseTypeDef:
+    return {
+        "TrafficPolicyInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTrafficPolicyInstanceResponseTypeDef(TypedDict):
+    TrafficPolicyInstance: TrafficPolicyInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrafficPolicyInstance`:
-  [TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettrafficpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTrafficPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetTrafficPolicyRequestRequestTypeDef
+
+def get_value() -> GetTrafficPolicyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Version": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `Version`: `int`
-
-<a id="gettrafficpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetTrafficPolicyRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Version: int,
+```
 
 ## GetTrafficPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import GetTrafficPolicyResponseTypeDef
+
+def get_value() -> GetTrafficPolicyResponseTypeDef:
+    return {
+        "TrafficPolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTrafficPolicyResponseTypeDef(TypedDict):
+    TrafficPolicy: TrafficPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="healthcheckconfigtypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HealthCheckConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import HealthCheckConfigTypeDef
+
+def get_value() -> HealthCheckConfigTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HealthCheckConfigTypeDef(TypedDict):
+    Type: HealthCheckTypeType,  # (1)
+    IPAddress: NotRequired[str],
+    Port: NotRequired[int],
+    ResourcePath: NotRequired[str],
+    FullyQualifiedDomainName: NotRequired[str],
+    SearchString: NotRequired[str],
+    RequestInterval: NotRequired[int],
+    FailureThreshold: NotRequired[int],
+    MeasureLatency: NotRequired[bool],
+    Inverted: NotRequired[bool],
+    Disabled: NotRequired[bool],
+    HealthThreshold: NotRequired[int],
+    ChildHealthChecks: NotRequired[Sequence[str]],
+    EnableSNI: NotRequired[bool],
+    Regions: NotRequired[Sequence[HealthCheckRegionType]],  # (2)
+    AlarmIdentifier: NotRequired[AlarmIdentifierTypeDef],  # (3)
+    InsufficientDataHealthStatus: NotRequired[InsufficientDataHealthStatusType],  # (4)
+    RoutingControlArn: NotRequired[str],
+```
 
-- `Type`: [HealthCheckTypeType](./literals.md#healthchecktypetype)
-
-Optional fields:
-
-- `IPAddress`: `str`
-- `Port`: `int`
-- `ResourcePath`: `str`
-- `FullyQualifiedDomainName`: `str`
-- `SearchString`: `str`
-- `RequestInterval`: `int`
-- `FailureThreshold`: `int`
-- `MeasureLatency`: `bool`
-- `Inverted`: `bool`
-- `Disabled`: `bool`
-- `HealthThreshold`: `int`
-- `ChildHealthChecks`: `Sequence`\[`str`\]
-- `EnableSNI`: `bool`
-- `Regions`:
-  `Sequence`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
-- `AlarmIdentifier`:
-  [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
-- `InsufficientDataHealthStatus`:
-  [InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype)
-- `RoutingControlArn`: `str`
-
-<a id="healthcheckobservationtypedef"></a>
-
+1. See [:material-code-brackets: HealthCheckTypeType](./literals.md#healthchecktypetype) 
+2. See [:material-code-brackets: HealthCheckRegionType](./literals.md#healthcheckregiontype) 
+3. See [:material-code-braces: AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef) 
+4. See [:material-code-brackets: InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype) 
 ## HealthCheckObservationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import HealthCheckObservationTypeDef
+
+def get_value() -> HealthCheckObservationTypeDef:
+    return {
+        "Region": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HealthCheckObservationTypeDef(TypedDict):
+    Region: NotRequired[HealthCheckRegionType],  # (1)
+    IPAddress: NotRequired[str],
+    StatusReport: NotRequired[StatusReportTypeDef],  # (2)
+```
 
-- `Region`: [HealthCheckRegionType](./literals.md#healthcheckregiontype)
-- `IPAddress`: `str`
-- `StatusReport`: [StatusReportTypeDef](./type_defs.md#statusreporttypedef)
-
-<a id="healthchecktypedef"></a>
-
+1. See [:material-code-brackets: HealthCheckRegionType](./literals.md#healthcheckregiontype) 
+2. See [:material-code-braces: StatusReportTypeDef](./type_defs.md#statusreporttypedef) 
 ## HealthCheckTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import HealthCheckTypeDef
+
+def get_value() -> HealthCheckTypeDef:
+    return {
+        "Id": ...,
+        "CallerReference": ...,
+        "HealthCheckConfig": ...,
+        "HealthCheckVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HealthCheckTypeDef(TypedDict):
+    Id: str,
+    CallerReference: str,
+    HealthCheckConfig: HealthCheckConfigTypeDef,  # (2)
+    HealthCheckVersion: int,
+    LinkedService: NotRequired[LinkedServiceTypeDef],  # (1)
+    CloudWatchAlarmConfiguration: NotRequired[CloudWatchAlarmConfigurationTypeDef],  # (3)
+```
 
-- `Id`: `str`
-- `CallerReference`: `str`
-- `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
-- `HealthCheckVersion`: `int`
-
-Optional fields:
-
-- `LinkedService`: [LinkedServiceTypeDef](./type_defs.md#linkedservicetypedef)
-- `CloudWatchAlarmConfiguration`:
-  [CloudWatchAlarmConfigurationTypeDef](./type_defs.md#cloudwatchalarmconfigurationtypedef)
-
-<a id="hostedzoneconfigtypedef"></a>
-
+1. See [:material-code-braces: LinkedServiceTypeDef](./type_defs.md#linkedservicetypedef) 
+2. See [:material-code-braces: HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef) 
+3. See [:material-code-braces: CloudWatchAlarmConfigurationTypeDef](./type_defs.md#cloudwatchalarmconfigurationtypedef) 
 ## HostedZoneConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import HostedZoneConfigTypeDef
+
+def get_value() -> HostedZoneConfigTypeDef:
+    return {
+        "Comment": ...,
+    }
 ```
 
-Optional fields:
-
-- `Comment`: `str`
-- `PrivateZone`: `bool`
-
-<a id="hostedzonelimittypedef"></a>
+```python title="Definition"
+class HostedZoneConfigTypeDef(TypedDict):
+    Comment: NotRequired[str],
+    PrivateZone: NotRequired[bool],
+```
 
 ## HostedZoneLimitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import HostedZoneLimitTypeDef
+
+def get_value() -> HostedZoneLimitTypeDef:
+    return {
+        "Type": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HostedZoneLimitTypeDef(TypedDict):
+    Type: HostedZoneLimitTypeType,  # (1)
+    Value: int,
+```
 
-- `Type`: [HostedZoneLimitTypeType](./literals.md#hostedzonelimittypetype)
-- `Value`: `int`
-
-<a id="hostedzoneownertypedef"></a>
-
+1. See [:material-code-brackets: HostedZoneLimitTypeType](./literals.md#hostedzonelimittypetype) 
 ## HostedZoneOwnerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import HostedZoneOwnerTypeDef
+
+def get_value() -> HostedZoneOwnerTypeDef:
+    return {
+        "OwningAccount": ...,
+    }
 ```
 
-Optional fields:
-
-- `OwningAccount`: `str`
-- `OwningService`: `str`
-
-<a id="hostedzonesummarytypedef"></a>
+```python title="Definition"
+class HostedZoneOwnerTypeDef(TypedDict):
+    OwningAccount: NotRequired[str],
+    OwningService: NotRequired[str],
+```
 
 ## HostedZoneSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import HostedZoneSummaryTypeDef
+
+def get_value() -> HostedZoneSummaryTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "Name": ...,
+        "Owner": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HostedZoneSummaryTypeDef(TypedDict):
+    HostedZoneId: str,
+    Name: str,
+    Owner: HostedZoneOwnerTypeDef,  # (1)
+```
 
-- `HostedZoneId`: `str`
-- `Name`: `str`
-- `Owner`: [HostedZoneOwnerTypeDef](./type_defs.md#hostedzoneownertypedef)
-
-<a id="hostedzonetypedef"></a>
-
+1. See [:material-code-braces: HostedZoneOwnerTypeDef](./type_defs.md#hostedzoneownertypedef) 
 ## HostedZoneTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import HostedZoneTypeDef
+
+def get_value() -> HostedZoneTypeDef:
+    return {
+        "Id": ...,
+        "Name": ...,
+        "CallerReference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HostedZoneTypeDef(TypedDict):
+    Id: str,
+    Name: str,
+    CallerReference: str,
+    Config: NotRequired[HostedZoneConfigTypeDef],  # (1)
+    ResourceRecordSetCount: NotRequired[int],
+    LinkedService: NotRequired[LinkedServiceTypeDef],  # (2)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `CallerReference`: `str`
-
-Optional fields:
-
-- `Config`: [HostedZoneConfigTypeDef](./type_defs.md#hostedzoneconfigtypedef)
-- `ResourceRecordSetCount`: `int`
-- `LinkedService`: [LinkedServiceTypeDef](./type_defs.md#linkedservicetypedef)
-
-<a id="keysigningkeytypedef"></a>
-
+1. See [:material-code-braces: HostedZoneConfigTypeDef](./type_defs.md#hostedzoneconfigtypedef) 
+2. See [:material-code-braces: LinkedServiceTypeDef](./type_defs.md#linkedservicetypedef) 
 ## KeySigningKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import KeySigningKeyTypeDef
+
+def get_value() -> KeySigningKeyTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `KmsArn`: `str`
-- `Flag`: `int`
-- `SigningAlgorithmMnemonic`: `str`
-- `SigningAlgorithmType`: `int`
-- `DigestAlgorithmMnemonic`: `str`
-- `DigestAlgorithmType`: `int`
-- `KeyTag`: `int`
-- `DigestValue`: `str`
-- `PublicKey`: `str`
-- `DSRecord`: `str`
-- `DNSKEYRecord`: `str`
-- `Status`: `str`
-- `StatusMessage`: `str`
-- `CreatedDate`: `datetime`
-- `LastModifiedDate`: `datetime`
-
-<a id="linkedservicetypedef"></a>
+```python title="Definition"
+class KeySigningKeyTypeDef(TypedDict):
+    Name: NotRequired[str],
+    KmsArn: NotRequired[str],
+    Flag: NotRequired[int],
+    SigningAlgorithmMnemonic: NotRequired[str],
+    SigningAlgorithmType: NotRequired[int],
+    DigestAlgorithmMnemonic: NotRequired[str],
+    DigestAlgorithmType: NotRequired[int],
+    KeyTag: NotRequired[int],
+    DigestValue: NotRequired[str],
+    PublicKey: NotRequired[str],
+    DSRecord: NotRequired[str],
+    DNSKEYRecord: NotRequired[str],
+    Status: NotRequired[str],
+    StatusMessage: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+    LastModifiedDate: NotRequired[datetime],
+```
 
 ## LinkedServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import LinkedServiceTypeDef
+
+def get_value() -> LinkedServiceTypeDef:
+    return {
+        "ServicePrincipal": ...,
+    }
 ```
 
-Optional fields:
-
-- `ServicePrincipal`: `str`
-- `Description`: `str`
-
-<a id="listgeolocationsrequestrequesttypedef"></a>
+```python title="Definition"
+class LinkedServiceTypeDef(TypedDict):
+    ServicePrincipal: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## ListGeoLocationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListGeoLocationsRequestRequestTypeDef
+
+def get_value() -> ListGeoLocationsRequestRequestTypeDef:
+    return {
+        "StartContinentCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartContinentCode`: `str`
-- `StartCountryCode`: `str`
-- `StartSubdivisionCode`: `str`
-- `MaxItems`: `str`
-
-<a id="listgeolocationsresponsetypedef"></a>
+```python title="Definition"
+class ListGeoLocationsRequestRequestTypeDef(TypedDict):
+    StartContinentCode: NotRequired[str],
+    StartCountryCode: NotRequired[str],
+    StartSubdivisionCode: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListGeoLocationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListGeoLocationsResponseTypeDef
+
+def get_value() -> ListGeoLocationsResponseTypeDef:
+    return {
+        "GeoLocationDetailsList": ...,
+        "IsTruncated": ...,
+        "NextContinentCode": ...,
+        "NextCountryCode": ...,
+        "NextSubdivisionCode": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGeoLocationsResponseTypeDef(TypedDict):
+    GeoLocationDetailsList: List[GeoLocationDetailsTypeDef],  # (1)
+    IsTruncated: bool,
+    NextContinentCode: str,
+    NextCountryCode: str,
+    NextSubdivisionCode: str,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GeoLocationDetailsList`:
-  `List`\[[GeoLocationDetailsTypeDef](./type_defs.md#geolocationdetailstypedef)\]
-- `IsTruncated`: `bool`
-- `NextContinentCode`: `str`
-- `NextCountryCode`: `str`
-- `NextSubdivisionCode`: `str`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GeoLocationDetailsTypeDef](./type_defs.md#geolocationdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHealthChecksRequestListHealthChecksPaginateTypeDef
 
-<a id="listhealthchecksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListHealthChecksRequestListHealthChecksPaginateTypeDef
 
+def get_value() -> ListHealthChecksRequestListHealthChecksPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListHealthChecksRequestListHealthChecksPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHealthChecksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListHealthChecksRequestRequestTypeDef
+
+def get_value() -> ListHealthChecksRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listhealthchecksresponsetypedef"></a>
+```python title="Definition"
+class ListHealthChecksRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListHealthChecksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListHealthChecksResponseTypeDef
+
+def get_value() -> ListHealthChecksResponseTypeDef:
+    return {
+        "HealthChecks": ...,
+        "Marker": ...,
+        "IsTruncated": ...,
+        "NextMarker": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHealthChecksResponseTypeDef(TypedDict):
+    HealthChecks: List[HealthCheckTypeDef],  # (1)
+    Marker: str,
+    IsTruncated: bool,
+    NextMarker: str,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HealthChecks`:
-  `List`\[[HealthCheckTypeDef](./type_defs.md#healthchecktypedef)\]
-- `Marker`: `str`
-- `IsTruncated`: `bool`
-- `NextMarker`: `str`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listhostedzonesbynamerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListHostedZonesByNameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListHostedZonesByNameRequestRequestTypeDef
+
+def get_value() -> ListHostedZonesByNameRequestRequestTypeDef:
+    return {
+        "DNSName": ...,
+    }
 ```
 
-Optional fields:
-
-- `DNSName`: `str`
-- `HostedZoneId`: `str`
-- `MaxItems`: `str`
-
-<a id="listhostedzonesbynameresponsetypedef"></a>
+```python title="Definition"
+class ListHostedZonesByNameRequestRequestTypeDef(TypedDict):
+    DNSName: NotRequired[str],
+    HostedZoneId: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListHostedZonesByNameResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListHostedZonesByNameResponseTypeDef
+
+def get_value() -> ListHostedZonesByNameResponseTypeDef:
+    return {
+        "HostedZones": ...,
+        "DNSName": ...,
+        "HostedZoneId": ...,
+        "IsTruncated": ...,
+        "NextDNSName": ...,
+        "NextHostedZoneId": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHostedZonesByNameResponseTypeDef(TypedDict):
+    HostedZones: List[HostedZoneTypeDef],  # (1)
+    DNSName: str,
+    HostedZoneId: str,
+    IsTruncated: bool,
+    NextDNSName: str,
+    NextHostedZoneId: str,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HostedZones`:
-  `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
-- `DNSName`: `str`
-- `HostedZoneId`: `str`
-- `IsTruncated`: `bool`
-- `NextDNSName`: `str`
-- `NextHostedZoneId`: `str`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listhostedzonesbyvpcrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HostedZoneTypeDef](./type_defs.md#hostedzonetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListHostedZonesByVPCRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListHostedZonesByVPCRequestRequestTypeDef
+
+def get_value() -> ListHostedZonesByVPCRequestRequestTypeDef:
+    return {
+        "VPCId": ...,
+        "VPCRegion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHostedZonesByVPCRequestRequestTypeDef(TypedDict):
+    VPCId: str,
+    VPCRegion: VPCRegionType,  # (1)
+    MaxItems: NotRequired[str],
+    NextToken: NotRequired[str],
+```
 
-- `VPCId`: `str`
-- `VPCRegion`: [VPCRegionType](./literals.md#vpcregiontype)
-
-Optional fields:
-
-- `MaxItems`: `str`
-- `NextToken`: `str`
-
-<a id="listhostedzonesbyvpcresponsetypedef"></a>
-
+1. See [:material-code-brackets: VPCRegionType](./literals.md#vpcregiontype) 
 ## ListHostedZonesByVPCResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListHostedZonesByVPCResponseTypeDef
+
+def get_value() -> ListHostedZonesByVPCResponseTypeDef:
+    return {
+        "HostedZoneSummaries": ...,
+        "MaxItems": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHostedZonesByVPCResponseTypeDef(TypedDict):
+    HostedZoneSummaries: List[HostedZoneSummaryTypeDef],  # (1)
+    MaxItems: str,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HostedZoneSummaries`:
-  `List`\[[HostedZoneSummaryTypeDef](./type_defs.md#hostedzonesummarytypedef)\]
-- `MaxItems`: `str`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: HostedZoneSummaryTypeDef](./type_defs.md#hostedzonesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHostedZonesRequestListHostedZonesPaginateTypeDef
 
-<a id="listhostedzonesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListHostedZonesRequestListHostedZonesPaginateTypeDef
 
+def get_value() -> ListHostedZonesRequestListHostedZonesPaginateTypeDef:
+    return {
+        "DelegationSetId": ...,
+    }
+```
+
+```python title="Definition"
+class ListHostedZonesRequestListHostedZonesPaginateTypeDef(TypedDict):
+    DelegationSetId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHostedZonesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListHostedZonesRequestRequestTypeDef
+
+def get_value() -> ListHostedZonesRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-- `DelegationSetId`: `str`
-
-<a id="listhostedzonesresponsetypedef"></a>
+```python title="Definition"
+class ListHostedZonesRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+    DelegationSetId: NotRequired[str],
+```
 
 ## ListHostedZonesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListHostedZonesResponseTypeDef
+
+def get_value() -> ListHostedZonesResponseTypeDef:
+    return {
+        "HostedZones": ...,
+        "Marker": ...,
+        "IsTruncated": ...,
+        "NextMarker": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHostedZonesResponseTypeDef(TypedDict):
+    HostedZones: List[HostedZoneTypeDef],  # (1)
+    Marker: str,
+    IsTruncated: bool,
+    NextMarker: str,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HostedZones`:
-  `List`\[[HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)\]
-- `Marker`: `str`
-- `IsTruncated`: `bool`
-- `NextMarker`: `str`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: HostedZoneTypeDef](./type_defs.md#hostedzonetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQueryLoggingConfigsRequestListQueryLoggingConfigsPaginateTypeDef
 
-<a id="listqueryloggingconfigsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListQueryLoggingConfigsRequestListQueryLoggingConfigsPaginateTypeDef
 
+def get_value() -> ListQueryLoggingConfigsRequestListQueryLoggingConfigsPaginateTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
+```
+
+```python title="Definition"
+class ListQueryLoggingConfigsRequestListQueryLoggingConfigsPaginateTypeDef(TypedDict):
+    HostedZoneId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListQueryLoggingConfigsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListQueryLoggingConfigsRequestRequestTypeDef
+
+def get_value() -> ListQueryLoggingConfigsRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
 ```
 
-Optional fields:
-
-- `HostedZoneId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `str`
-
-<a id="listqueryloggingconfigsresponsetypedef"></a>
+```python title="Definition"
+class ListQueryLoggingConfigsRequestRequestTypeDef(TypedDict):
+    HostedZoneId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[str],
+```
 
 ## ListQueryLoggingConfigsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListQueryLoggingConfigsResponseTypeDef
+
+def get_value() -> ListQueryLoggingConfigsResponseTypeDef:
+    return {
+        "QueryLoggingConfigs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQueryLoggingConfigsResponseTypeDef(TypedDict):
+    QueryLoggingConfigs: List[QueryLoggingConfigTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QueryLoggingConfigs`:
-  `List`\[[QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: QueryLoggingConfigTypeDef](./type_defs.md#queryloggingconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListResourceRecordSetsRequestListResourceRecordSetsPaginateTypeDef
 
-<a id="listresourcerecordsetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListResourceRecordSetsRequestListResourceRecordSetsPaginateTypeDef
 
+def get_value() -> ListResourceRecordSetsRequestListResourceRecordSetsPaginateTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
+```
+
+```python title="Definition"
+class ListResourceRecordSetsRequestListResourceRecordSetsPaginateTypeDef(TypedDict):
+    HostedZoneId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListResourceRecordSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListResourceRecordSetsRequestRequestTypeDef
+
+def get_value() -> ListResourceRecordSetsRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourceRecordSetsRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    StartRecordName: NotRequired[str],
+    StartRecordType: NotRequired[RRTypeType],  # (1)
+    StartRecordIdentifier: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
-- `HostedZoneId`: `str`
-
-Optional fields:
-
-- `StartRecordName`: `str`
-- `StartRecordType`: [RRTypeType](./literals.md#rrtypetype)
-- `StartRecordIdentifier`: `str`
-- `MaxItems`: `str`
-
-<a id="listresourcerecordsetsresponsetypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
 ## ListResourceRecordSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListResourceRecordSetsResponseTypeDef
+
+def get_value() -> ListResourceRecordSetsResponseTypeDef:
+    return {
+        "ResourceRecordSets": ...,
+        "IsTruncated": ...,
+        "NextRecordName": ...,
+        "NextRecordType": ...,
+        "NextRecordIdentifier": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourceRecordSetsResponseTypeDef(TypedDict):
+    ResourceRecordSets: List[ResourceRecordSetTypeDef],  # (1)
+    IsTruncated: bool,
+    NextRecordName: str,
+    NextRecordType: RRTypeType,  # (2)
+    NextRecordIdentifier: str,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ResourceRecordSets`:
-  `List`\[[ResourceRecordSetTypeDef](./type_defs.md#resourcerecordsettypedef)\]
-- `IsTruncated`: `bool`
-- `NextRecordName`: `str`
-- `NextRecordType`: [RRTypeType](./literals.md#rrtypetype)
-- `NextRecordIdentifier`: `str`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listreusabledelegationsetsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceRecordSetTypeDef](./type_defs.md#resourcerecordsettypedef) 
+2. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListReusableDelegationSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListReusableDelegationSetsRequestRequestTypeDef
+
+def get_value() -> ListReusableDelegationSetsRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `str`
-
-<a id="listreusabledelegationsetsresponsetypedef"></a>
+```python title="Definition"
+class ListReusableDelegationSetsRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListReusableDelegationSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListReusableDelegationSetsResponseTypeDef
+
+def get_value() -> ListReusableDelegationSetsResponseTypeDef:
+    return {
+        "DelegationSets": ...,
+        "Marker": ...,
+        "IsTruncated": ...,
+        "NextMarker": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReusableDelegationSetsResponseTypeDef(TypedDict):
+    DelegationSets: List[DelegationSetTypeDef],  # (1)
+    Marker: str,
+    IsTruncated: bool,
+    NextMarker: str,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DelegationSets`:
-  `List`\[[DelegationSetTypeDef](./type_defs.md#delegationsettypedef)\]
-- `Marker`: `str`
-- `IsTruncated`: `bool`
-- `NextMarker`: `str`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DelegationSetTypeDef](./type_defs.md#delegationsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceType: TagResourceTypeType,  # (1)
+    ResourceId: str,
+```
 
-- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
-- `ResourceId`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
-
+1. See [:material-code-brackets: TagResourceTypeType](./literals.md#tagresourcetypetype) 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "ResourceTagSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    ResourceTagSet: ResourceTagSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceTagSet`:
-  [ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTagsForResourcesRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourcesRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+        "ResourceIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourcesRequestRequestTypeDef(TypedDict):
+    ResourceType: TagResourceTypeType,  # (1)
+    ResourceIds: Sequence[str],
+```
 
-- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
-- `ResourceIds`: `Sequence`\[`str`\]
-
-<a id="listtagsforresourcesresponsetypedef"></a>
-
+1. See [:material-code-brackets: TagResourceTypeType](./literals.md#tagresourcetypetype) 
 ## ListTagsForResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTagsForResourcesResponseTypeDef
+
+def get_value() -> ListTagsForResourcesResponseTypeDef:
+    return {
+        "ResourceTagSets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourcesResponseTypeDef(TypedDict):
+    ResourceTagSets: List[ResourceTagSetTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceTagSets`:
-  `List`\[[ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtrafficpoliciesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceTagSetTypeDef](./type_defs.md#resourcetagsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTrafficPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPoliciesRequestRequestTypeDef
+
+def get_value() -> ListTrafficPoliciesRequestRequestTypeDef:
+    return {
+        "TrafficPolicyIdMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `TrafficPolicyIdMarker`: `str`
-- `MaxItems`: `str`
-
-<a id="listtrafficpoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListTrafficPoliciesRequestRequestTypeDef(TypedDict):
+    TrafficPolicyIdMarker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListTrafficPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPoliciesResponseTypeDef
+
+def get_value() -> ListTrafficPoliciesResponseTypeDef:
+    return {
+        "TrafficPolicySummaries": ...,
+        "IsTruncated": ...,
+        "TrafficPolicyIdMarker": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrafficPoliciesResponseTypeDef(TypedDict):
+    TrafficPolicySummaries: List[TrafficPolicySummaryTypeDef],  # (1)
+    IsTruncated: bool,
+    TrafficPolicyIdMarker: str,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrafficPolicySummaries`:
-  `List`\[[TrafficPolicySummaryTypeDef](./type_defs.md#trafficpolicysummarytypedef)\]
-- `IsTruncated`: `bool`
-- `TrafficPolicyIdMarker`: `str`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtrafficpolicyinstancesbyhostedzonerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicySummaryTypeDef](./type_defs.md#trafficpolicysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTrafficPolicyInstancesByHostedZoneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByHostedZoneRequestRequestTypeDef
+
+def get_value() -> ListTrafficPolicyInstancesByHostedZoneRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrafficPolicyInstancesByHostedZoneRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    TrafficPolicyInstanceNameMarker: NotRequired[str],
+    TrafficPolicyInstanceTypeMarker: NotRequired[RRTypeType],  # (1)
+    MaxItems: NotRequired[str],
+```
 
-- `HostedZoneId`: `str`
-
-Optional fields:
-
-- `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
-- `MaxItems`: `str`
-
-<a id="listtrafficpolicyinstancesbyhostedzoneresponsetypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
 ## ListTrafficPolicyInstancesByHostedZoneResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByHostedZoneResponseTypeDef
+
+def get_value() -> ListTrafficPolicyInstancesByHostedZoneResponseTypeDef:
+    return {
+        "TrafficPolicyInstances": ...,
+        "TrafficPolicyInstanceNameMarker": ...,
+        "TrafficPolicyInstanceTypeMarker": ...,
+        "IsTruncated": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrafficPolicyInstancesByHostedZoneResponseTypeDef(TypedDict):
+    TrafficPolicyInstances: List[TrafficPolicyInstanceTypeDef],  # (1)
+    TrafficPolicyInstanceNameMarker: str,
+    TrafficPolicyInstanceTypeMarker: RRTypeType,  # (2)
+    IsTruncated: bool,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `TrafficPolicyInstances`:
-  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
-- `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
-- `IsTruncated`: `bool`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtrafficpolicyinstancesbypolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef) 
+2. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTrafficPolicyInstancesByPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByPolicyRequestRequestTypeDef
+
+def get_value() -> ListTrafficPolicyInstancesByPolicyRequestRequestTypeDef:
+    return {
+        "TrafficPolicyId": ...,
+        "TrafficPolicyVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrafficPolicyInstancesByPolicyRequestRequestTypeDef(TypedDict):
+    TrafficPolicyId: str,
+    TrafficPolicyVersion: int,
+    HostedZoneIdMarker: NotRequired[str],
+    TrafficPolicyInstanceNameMarker: NotRequired[str],
+    TrafficPolicyInstanceTypeMarker: NotRequired[RRTypeType],  # (1)
+    MaxItems: NotRequired[str],
+```
 
-- `TrafficPolicyId`: `str`
-- `TrafficPolicyVersion`: `int`
-
-Optional fields:
-
-- `HostedZoneIdMarker`: `str`
-- `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
-- `MaxItems`: `str`
-
-<a id="listtrafficpolicyinstancesbypolicyresponsetypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
 ## ListTrafficPolicyInstancesByPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesByPolicyResponseTypeDef
+
+def get_value() -> ListTrafficPolicyInstancesByPolicyResponseTypeDef:
+    return {
+        "TrafficPolicyInstances": ...,
+        "HostedZoneIdMarker": ...,
+        "TrafficPolicyInstanceNameMarker": ...,
+        "TrafficPolicyInstanceTypeMarker": ...,
+        "IsTruncated": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrafficPolicyInstancesByPolicyResponseTypeDef(TypedDict):
+    TrafficPolicyInstances: List[TrafficPolicyInstanceTypeDef],  # (1)
+    HostedZoneIdMarker: str,
+    TrafficPolicyInstanceNameMarker: str,
+    TrafficPolicyInstanceTypeMarker: RRTypeType,  # (2)
+    IsTruncated: bool,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `TrafficPolicyInstances`:
-  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
-- `HostedZoneIdMarker`: `str`
-- `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
-- `IsTruncated`: `bool`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtrafficpolicyinstancesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef) 
+2. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTrafficPolicyInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesRequestRequestTypeDef
+
+def get_value() -> ListTrafficPolicyInstancesRequestRequestTypeDef:
+    return {
+        "HostedZoneIdMarker": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTrafficPolicyInstancesRequestRequestTypeDef(TypedDict):
+    HostedZoneIdMarker: NotRequired[str],
+    TrafficPolicyInstanceNameMarker: NotRequired[str],
+    TrafficPolicyInstanceTypeMarker: NotRequired[RRTypeType],  # (1)
+    MaxItems: NotRequired[str],
+```
 
-- `HostedZoneIdMarker`: `str`
-- `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
-- `MaxItems`: `str`
-
-<a id="listtrafficpolicyinstancesresponsetypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
 ## ListTrafficPolicyInstancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPolicyInstancesResponseTypeDef
+
+def get_value() -> ListTrafficPolicyInstancesResponseTypeDef:
+    return {
+        "TrafficPolicyInstances": ...,
+        "HostedZoneIdMarker": ...,
+        "TrafficPolicyInstanceNameMarker": ...,
+        "TrafficPolicyInstanceTypeMarker": ...,
+        "IsTruncated": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrafficPolicyInstancesResponseTypeDef(TypedDict):
+    TrafficPolicyInstances: List[TrafficPolicyInstanceTypeDef],  # (1)
+    HostedZoneIdMarker: str,
+    TrafficPolicyInstanceNameMarker: str,
+    TrafficPolicyInstanceTypeMarker: RRTypeType,  # (2)
+    IsTruncated: bool,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `TrafficPolicyInstances`:
-  `List`\[[TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)\]
-- `HostedZoneIdMarker`: `str`
-- `TrafficPolicyInstanceNameMarker`: `str`
-- `TrafficPolicyInstanceTypeMarker`: [RRTypeType](./literals.md#rrtypetype)
-- `IsTruncated`: `bool`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtrafficpolicyversionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef) 
+2. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTrafficPolicyVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPolicyVersionsRequestRequestTypeDef
+
+def get_value() -> ListTrafficPolicyVersionsRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `TrafficPolicyVersionMarker`: `str`
-- `MaxItems`: `str`
-
-<a id="listtrafficpolicyversionsresponsetypedef"></a>
+```python title="Definition"
+class ListTrafficPolicyVersionsRequestRequestTypeDef(TypedDict):
+    Id: str,
+    TrafficPolicyVersionMarker: NotRequired[str],
+    MaxItems: NotRequired[str],
+```
 
 ## ListTrafficPolicyVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListTrafficPolicyVersionsResponseTypeDef
+
+def get_value() -> ListTrafficPolicyVersionsResponseTypeDef:
+    return {
+        "TrafficPolicies": ...,
+        "IsTruncated": ...,
+        "TrafficPolicyVersionMarker": ...,
+        "MaxItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTrafficPolicyVersionsResponseTypeDef(TypedDict):
+    TrafficPolicies: List[TrafficPolicyTypeDef],  # (1)
+    IsTruncated: bool,
+    TrafficPolicyVersionMarker: str,
+    MaxItems: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrafficPolicies`:
-  `List`\[[TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)\]
-- `IsTruncated`: `bool`
-- `TrafficPolicyVersionMarker`: `str`
-- `MaxItems`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVPCAssociationAuthorizationsRequestListVPCAssociationAuthorizationsPaginateTypeDef
 
-<a id="listvpcassociationauthorizationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53.type_defs import ListVPCAssociationAuthorizationsRequestListVPCAssociationAuthorizationsPaginateTypeDef
 
+def get_value() -> ListVPCAssociationAuthorizationsRequestListVPCAssociationAuthorizationsPaginateTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
+```
+
+```python title="Definition"
+class ListVPCAssociationAuthorizationsRequestListVPCAssociationAuthorizationsPaginateTypeDef(TypedDict):
+    HostedZoneId: str,
+    MaxResults: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVPCAssociationAuthorizationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListVPCAssociationAuthorizationsRequestRequestTypeDef
+
+def get_value() -> ListVPCAssociationAuthorizationsRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
 ```
 
-Required fields:
-
-- `HostedZoneId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `str`
-
-<a id="listvpcassociationauthorizationsresponsetypedef"></a>
+```python title="Definition"
+class ListVPCAssociationAuthorizationsRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[str],
+```
 
 ## ListVPCAssociationAuthorizationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ListVPCAssociationAuthorizationsResponseTypeDef
+
+def get_value() -> ListVPCAssociationAuthorizationsResponseTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "NextToken": ...,
+        "VPCs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVPCAssociationAuthorizationsResponseTypeDef(TypedDict):
+    HostedZoneId: str,
+    NextToken: str,
+    VPCs: List[VPCTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HostedZoneId`: `str`
-- `NextToken`: `str`
-- `VPCs`: `List`\[[VPCTypeDef](./type_defs.md#vpctypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: VPCTypeDef](./type_defs.md#vpctypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="queryloggingconfigtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## QueryLoggingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import QueryLoggingConfigTypeDef
+
+def get_value() -> QueryLoggingConfigTypeDef:
+    return {
+        "Id": ...,
+        "HostedZoneId": ...,
+        "CloudWatchLogsLogGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `HostedZoneId`: `str`
-- `CloudWatchLogsLogGroupArn`: `str`
-
-<a id="resourcerecordsettypedef"></a>
+```python title="Definition"
+class QueryLoggingConfigTypeDef(TypedDict):
+    Id: str,
+    HostedZoneId: str,
+    CloudWatchLogsLogGroupArn: str,
+```
 
 ## ResourceRecordSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ResourceRecordSetTypeDef
+
+def get_value() -> ResourceRecordSetTypeDef:
+    return {
+        "Name": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceRecordSetTypeDef(TypedDict):
+    Name: str,
+    Type: RRTypeType,  # (1)
+    SetIdentifier: NotRequired[str],
+    Weight: NotRequired[int],
+    Region: NotRequired[ResourceRecordSetRegionType],  # (2)
+    GeoLocation: NotRequired[GeoLocationTypeDef],  # (3)
+    Failover: NotRequired[ResourceRecordSetFailoverType],  # (4)
+    MultiValueAnswer: NotRequired[bool],
+    TTL: NotRequired[int],
+    ResourceRecords: NotRequired[Sequence[ResourceRecordTypeDef]],  # (5)
+    AliasTarget: NotRequired[AliasTargetTypeDef],  # (6)
+    HealthCheckId: NotRequired[str],
+    TrafficPolicyInstanceId: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Type`: [RRTypeType](./literals.md#rrtypetype)
-
-Optional fields:
-
-- `SetIdentifier`: `str`
-- `Weight`: `int`
-- `Region`:
-  [ResourceRecordSetRegionType](./literals.md#resourcerecordsetregiontype)
-- `GeoLocation`: [GeoLocationTypeDef](./type_defs.md#geolocationtypedef)
-- `Failover`:
-  [ResourceRecordSetFailoverType](./literals.md#resourcerecordsetfailovertype)
-- `MultiValueAnswer`: `bool`
-- `TTL`: `int`
-- `ResourceRecords`:
-  `Sequence`\[[ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef)\]
-- `AliasTarget`: [AliasTargetTypeDef](./type_defs.md#aliastargettypedef)
-- `HealthCheckId`: `str`
-- `TrafficPolicyInstanceId`: `str`
-
-<a id="resourcerecordtypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+2. See [:material-code-brackets: ResourceRecordSetRegionType](./literals.md#resourcerecordsetregiontype) 
+3. See [:material-code-braces: GeoLocationTypeDef](./type_defs.md#geolocationtypedef) 
+4. See [:material-code-brackets: ResourceRecordSetFailoverType](./literals.md#resourcerecordsetfailovertype) 
+5. See [:material-code-braces: ResourceRecordTypeDef](./type_defs.md#resourcerecordtypedef) 
+6. See [:material-code-braces: AliasTargetTypeDef](./type_defs.md#aliastargettypedef) 
 ## ResourceRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ResourceRecordTypeDef
+
+def get_value() -> ResourceRecordTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Value`: `str`
-
-<a id="resourcetagsettypedef"></a>
+```python title="Definition"
+class ResourceRecordTypeDef(TypedDict):
+    Value: str,
+```
 
 ## ResourceTagSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ResourceTagSetTypeDef
+
+def get_value() -> ResourceTagSetTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceTagSetTypeDef(TypedDict):
+    ResourceType: NotRequired[TagResourceTypeType],  # (1)
+    ResourceId: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `ResourceType`: [TagResourceTypeType](./literals.md#tagresourcetypetype)
-- `ResourceId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: TagResourceTypeType](./literals.md#tagresourcetypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="reusabledelegationsetlimittypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ReusableDelegationSetLimitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import ReusableDelegationSetLimitTypeDef
+
+def get_value() -> ReusableDelegationSetLimitTypeDef:
+    return {
+        "Type": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReusableDelegationSetLimitTypeDef(TypedDict):
+    Type: ReusableDelegationSetLimitTypeType,  # (1)
+    Value: int,
+```
 
-- `Type`: `Literal['MAX_ZONES_BY_REUSABLE_DELEGATION_SET']` (see
-  [ReusableDelegationSetLimitTypeType](./literals.md#reusabledelegationsetlimittypetype))
-- `Value`: `int`
-
-<a id="statusreporttypedef"></a>
-
+1. See [:material-code-brackets: ReusableDelegationSetLimitTypeType](./literals.md#reusabledelegationsetlimittypetype) 
 ## StatusReportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import StatusReportTypeDef
+
+def get_value() -> StatusReportTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
-
-- `Status`: `str`
-- `CheckedTime`: `datetime`
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class StatusReportTypeDef(TypedDict):
+    Status: NotRequired[str],
+    CheckedTime: NotRequired[datetime],
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="testdnsanswerrequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## TestDNSAnswerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import TestDNSAnswerRequestRequestTypeDef
+
+def get_value() -> TestDNSAnswerRequestRequestTypeDef:
+    return {
+        "HostedZoneId": ...,
+        "RecordName": ...,
+        "RecordType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestDNSAnswerRequestRequestTypeDef(TypedDict):
+    HostedZoneId: str,
+    RecordName: str,
+    RecordType: RRTypeType,  # (1)
+    ResolverIP: NotRequired[str],
+    EDNS0ClientSubnetIP: NotRequired[str],
+    EDNS0ClientSubnetMask: NotRequired[str],
+```
 
-- `HostedZoneId`: `str`
-- `RecordName`: `str`
-- `RecordType`: [RRTypeType](./literals.md#rrtypetype)
-
-Optional fields:
-
-- `ResolverIP`: `str`
-- `EDNS0ClientSubnetIP`: `str`
-- `EDNS0ClientSubnetMask`: `str`
-
-<a id="testdnsanswerresponsetypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
 ## TestDNSAnswerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import TestDNSAnswerResponseTypeDef
+
+def get_value() -> TestDNSAnswerResponseTypeDef:
+    return {
+        "Nameserver": ...,
+        "RecordName": ...,
+        "RecordType": ...,
+        "RecordData": ...,
+        "ResponseCode": ...,
+        "Protocol": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestDNSAnswerResponseTypeDef(TypedDict):
+    Nameserver: str,
+    RecordName: str,
+    RecordType: RRTypeType,  # (1)
+    RecordData: List[str],
+    ResponseCode: str,
+    Protocol: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Nameserver`: `str`
-- `RecordName`: `str`
-- `RecordType`: [RRTypeType](./literals.md#rrtypetype)
-- `RecordData`: `List`\[`str`\]
-- `ResponseCode`: `str`
-- `Protocol`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="trafficpolicyinstancetypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TrafficPolicyInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import TrafficPolicyInstanceTypeDef
+
+def get_value() -> TrafficPolicyInstanceTypeDef:
+    return {
+        "Id": ...,
+        "HostedZoneId": ...,
+        "Name": ...,
+        "TTL": ...,
+        "State": ...,
+        "Message": ...,
+        "TrafficPolicyId": ...,
+        "TrafficPolicyVersion": ...,
+        "TrafficPolicyType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TrafficPolicyInstanceTypeDef(TypedDict):
+    Id: str,
+    HostedZoneId: str,
+    Name: str,
+    TTL: int,
+    State: str,
+    Message: str,
+    TrafficPolicyId: str,
+    TrafficPolicyVersion: int,
+    TrafficPolicyType: RRTypeType,  # (1)
+```
 
-- `Id`: `str`
-- `HostedZoneId`: `str`
-- `Name`: `str`
-- `TTL`: `int`
-- `State`: `str`
-- `Message`: `str`
-- `TrafficPolicyId`: `str`
-- `TrafficPolicyVersion`: `int`
-- `TrafficPolicyType`: [RRTypeType](./literals.md#rrtypetype)
-
-<a id="trafficpolicysummarytypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
 ## TrafficPolicySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import TrafficPolicySummaryTypeDef
+
+def get_value() -> TrafficPolicySummaryTypeDef:
+    return {
+        "Id": ...,
+        "Name": ...,
+        "Type": ...,
+        "LatestVersion": ...,
+        "TrafficPolicyCount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TrafficPolicySummaryTypeDef(TypedDict):
+    Id: str,
+    Name: str,
+    Type: RRTypeType,  # (1)
+    LatestVersion: int,
+    TrafficPolicyCount: int,
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Type`: [RRTypeType](./literals.md#rrtypetype)
-- `LatestVersion`: `int`
-- `TrafficPolicyCount`: `int`
-
-<a id="trafficpolicytypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
 ## TrafficPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import TrafficPolicyTypeDef
+
+def get_value() -> TrafficPolicyTypeDef:
+    return {
+        "Id": ...,
+        "Version": ...,
+        "Name": ...,
+        "Type": ...,
+        "Document": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TrafficPolicyTypeDef(TypedDict):
+    Id: str,
+    Version: int,
+    Name: str,
+    Type: RRTypeType,  # (1)
+    Document: str,
+    Comment: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Version`: `int`
-- `Name`: `str`
-- `Type`: [RRTypeType](./literals.md#rrtypetype)
-- `Document`: `str`
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="updatehealthcheckrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RRTypeType](./literals.md#rrtypetype) 
 ## UpdateHealthCheckRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import UpdateHealthCheckRequestRequestTypeDef
+
+def get_value() -> UpdateHealthCheckRequestRequestTypeDef:
+    return {
+        "HealthCheckId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateHealthCheckRequestRequestTypeDef(TypedDict):
+    HealthCheckId: str,
+    HealthCheckVersion: NotRequired[int],
+    IPAddress: NotRequired[str],
+    Port: NotRequired[int],
+    ResourcePath: NotRequired[str],
+    FullyQualifiedDomainName: NotRequired[str],
+    SearchString: NotRequired[str],
+    FailureThreshold: NotRequired[int],
+    Inverted: NotRequired[bool],
+    Disabled: NotRequired[bool],
+    HealthThreshold: NotRequired[int],
+    ChildHealthChecks: NotRequired[Sequence[str]],
+    EnableSNI: NotRequired[bool],
+    Regions: NotRequired[Sequence[HealthCheckRegionType]],  # (1)
+    AlarmIdentifier: NotRequired[AlarmIdentifierTypeDef],  # (2)
+    InsufficientDataHealthStatus: NotRequired[InsufficientDataHealthStatusType],  # (3)
+    ResetElements: NotRequired[Sequence[ResettableElementNameType]],  # (4)
+```
 
-- `HealthCheckId`: `str`
-
-Optional fields:
-
-- `HealthCheckVersion`: `int`
-- `IPAddress`: `str`
-- `Port`: `int`
-- `ResourcePath`: `str`
-- `FullyQualifiedDomainName`: `str`
-- `SearchString`: `str`
-- `FailureThreshold`: `int`
-- `Inverted`: `bool`
-- `Disabled`: `bool`
-- `HealthThreshold`: `int`
-- `ChildHealthChecks`: `Sequence`\[`str`\]
-- `EnableSNI`: `bool`
-- `Regions`:
-  `Sequence`\[[HealthCheckRegionType](./literals.md#healthcheckregiontype)\]
-- `AlarmIdentifier`:
-  [AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef)
-- `InsufficientDataHealthStatus`:
-  [InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype)
-- `ResetElements`:
-  `Sequence`\[[ResettableElementNameType](./literals.md#resettableelementnametype)\]
-
-<a id="updatehealthcheckresponsetypedef"></a>
-
+1. See [:material-code-brackets: HealthCheckRegionType](./literals.md#healthcheckregiontype) 
+2. See [:material-code-braces: AlarmIdentifierTypeDef](./type_defs.md#alarmidentifiertypedef) 
+3. See [:material-code-brackets: InsufficientDataHealthStatusType](./literals.md#insufficientdatahealthstatustype) 
+4. See [:material-code-brackets: ResettableElementNameType](./literals.md#resettableelementnametype) 
 ## UpdateHealthCheckResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import UpdateHealthCheckResponseTypeDef
+
+def get_value() -> UpdateHealthCheckResponseTypeDef:
+    return {
+        "HealthCheck": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateHealthCheckResponseTypeDef(TypedDict):
+    HealthCheck: HealthCheckTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatehostedzonecommentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateHostedZoneCommentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import UpdateHostedZoneCommentRequestRequestTypeDef
+
+def get_value() -> UpdateHostedZoneCommentRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `Comment`: `str`
-
-<a id="updatehostedzonecommentresponsetypedef"></a>
+```python title="Definition"
+class UpdateHostedZoneCommentRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Comment: NotRequired[str],
+```
 
 ## UpdateHostedZoneCommentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import UpdateHostedZoneCommentResponseTypeDef
+
+def get_value() -> UpdateHostedZoneCommentResponseTypeDef:
+    return {
+        "HostedZone": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateHostedZoneCommentResponseTypeDef(TypedDict):
+    HostedZone: HostedZoneTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HostedZone`: [HostedZoneTypeDef](./type_defs.md#hostedzonetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetrafficpolicycommentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HostedZoneTypeDef](./type_defs.md#hostedzonetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTrafficPolicyCommentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import UpdateTrafficPolicyCommentRequestRequestTypeDef
+
+def get_value() -> UpdateTrafficPolicyCommentRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Version": ...,
+        "Comment": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `Version`: `int`
-- `Comment`: `str`
-
-<a id="updatetrafficpolicycommentresponsetypedef"></a>
+```python title="Definition"
+class UpdateTrafficPolicyCommentRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Version: int,
+    Comment: str,
+```
 
 ## UpdateTrafficPolicyCommentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import UpdateTrafficPolicyCommentResponseTypeDef
+
+def get_value() -> UpdateTrafficPolicyCommentResponseTypeDef:
+    return {
+        "TrafficPolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTrafficPolicyCommentResponseTypeDef(TypedDict):
+    TrafficPolicy: TrafficPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrafficPolicy`: [TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetrafficpolicyinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyTypeDef](./type_defs.md#trafficpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTrafficPolicyInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import UpdateTrafficPolicyInstanceRequestRequestTypeDef
+
+def get_value() -> UpdateTrafficPolicyInstanceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "TTL": ...,
+        "TrafficPolicyId": ...,
+        "TrafficPolicyVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `TTL`: `int`
-- `TrafficPolicyId`: `str`
-- `TrafficPolicyVersion`: `int`
-
-<a id="updatetrafficpolicyinstanceresponsetypedef"></a>
+```python title="Definition"
+class UpdateTrafficPolicyInstanceRequestRequestTypeDef(TypedDict):
+    Id: str,
+    TTL: int,
+    TrafficPolicyId: str,
+    TrafficPolicyVersion: int,
+```
 
 ## UpdateTrafficPolicyInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import UpdateTrafficPolicyInstanceResponseTypeDef
+
+def get_value() -> UpdateTrafficPolicyInstanceResponseTypeDef:
+    return {
+        "TrafficPolicyInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTrafficPolicyInstanceResponseTypeDef(TypedDict):
+    TrafficPolicyInstance: TrafficPolicyInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TrafficPolicyInstance`:
-  [TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vpctypedef"></a>
-
+1. See [:material-code-braces: TrafficPolicyInstanceTypeDef](./type_defs.md#trafficpolicyinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VPCTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import VPCTypeDef
+
+def get_value() -> VPCTypeDef:
+    return {
+        "VPCRegion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VPCTypeDef(TypedDict):
+    VPCRegion: NotRequired[VPCRegionType],  # (1)
+    VPCId: NotRequired[str],
+```
 
-- `VPCRegion`: [VPCRegionType](./literals.md#vpcregiontype)
-- `VPCId`: `str`
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-brackets: VPCRegionType](./literals.md#vpcregiontype) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

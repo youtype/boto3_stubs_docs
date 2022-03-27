@@ -1,98 +1,18 @@
-<a id="clouddirectoryclient-for-boto3-clouddirectory-module"></a>
-
-# CloudDirectoryClient for boto3 CloudDirectory module
+# CloudDirectoryClient
 
 > [Index](../README.md) > [CloudDirectory](./README.md) > CloudDirectoryClient
 
-Auto-generated documentation for
-[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
-type annotations stubs module
-[mypy-boto3-clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
+!!! note ""
 
-- [CloudDirectoryClient for boto3 CloudDirectory module](#clouddirectoryclient-for-boto3-clouddirectory-module)
-  - [CloudDirectoryClient](#clouddirectoryclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_facet_to_object](#add_facet_to_object)
-    - [apply_schema](#apply_schema)
-    - [attach_object](#attach_object)
-    - [attach_policy](#attach_policy)
-    - [attach_to_index](#attach_to_index)
-    - [attach_typed_link](#attach_typed_link)
-    - [batch_read](#batch_read)
-    - [batch_write](#batch_write)
-    - [can_paginate](#can_paginate)
-    - [create_directory](#create_directory)
-    - [create_facet](#create_facet)
-    - [create_index](#create_index)
-    - [create_object](#create_object)
-    - [create_schema](#create_schema)
-    - [create_typed_link_facet](#create_typed_link_facet)
-    - [delete_directory](#delete_directory)
-    - [delete_facet](#delete_facet)
-    - [delete_object](#delete_object)
-    - [delete_schema](#delete_schema)
-    - [delete_typed_link_facet](#delete_typed_link_facet)
-    - [detach_from_index](#detach_from_index)
-    - [detach_object](#detach_object)
-    - [detach_policy](#detach_policy)
-    - [detach_typed_link](#detach_typed_link)
-    - [disable_directory](#disable_directory)
-    - [enable_directory](#enable_directory)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_applied_schema_version](#get_applied_schema_version)
-    - [get_directory](#get_directory)
-    - [get_facet](#get_facet)
-    - [get_link_attributes](#get_link_attributes)
-    - [get_object_attributes](#get_object_attributes)
-    - [get_object_information](#get_object_information)
-    - [get_schema_as_json](#get_schema_as_json)
-    - [get_typed_link_facet_information](#get_typed_link_facet_information)
-    - [list_applied_schema_arns](#list_applied_schema_arns)
-    - [list_attached_indices](#list_attached_indices)
-    - [list_development_schema_arns](#list_development_schema_arns)
-    - [list_directories](#list_directories)
-    - [list_facet_attributes](#list_facet_attributes)
-    - [list_facet_names](#list_facet_names)
-    - [list_incoming_typed_links](#list_incoming_typed_links)
-    - [list_index](#list_index)
-    - [list_managed_schema_arns](#list_managed_schema_arns)
-    - [list_object_attributes](#list_object_attributes)
-    - [list_object_children](#list_object_children)
-    - [list_object_parent_paths](#list_object_parent_paths)
-    - [list_object_parents](#list_object_parents)
-    - [list_object_policies](#list_object_policies)
-    - [list_outgoing_typed_links](#list_outgoing_typed_links)
-    - [list_policy_attachments](#list_policy_attachments)
-    - [list_published_schema_arns](#list_published_schema_arns)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_typed_link_facet_attributes](#list_typed_link_facet_attributes)
-    - [list_typed_link_facet_names](#list_typed_link_facet_names)
-    - [lookup_policy](#lookup_policy)
-    - [publish_schema](#publish_schema)
-    - [put_schema_from_json](#put_schema_from_json)
-    - [remove_facet_from_object](#remove_facet_from_object)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_facet](#update_facet)
-    - [update_link_attributes](#update_link_attributes)
-    - [update_object_attributes](#update_object_attributes)
-    - [update_schema](#update_schema)
-    - [update_typed_link_facet](#update_typed_link_facet)
-    - [upgrade_applied_schema](#upgrade_applied_schema)
-    - [upgrade_published_schema](#upgrade_published_schema)
-    - [get_paginator](#get_paginator)
-
-<a id="clouddirectoryclient"></a>
+    Auto-generated documentation for [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
+    type annotations stubs module [mypy-boto3-clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
 ## CloudDirectoryClient
 
-Type annotations for `boto3.client("clouddirectory")`
+Type annotations and code completion for `#!python boto3.client("clouddirectory")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_clouddirectory.client import CloudDirectoryClient
 
@@ -100,1798 +20,2334 @@ def get_clouddirectory_client() -> CloudDirectoryClient:
     return Session().client("clouddirectory")
 ```
 
-Boto3 documentation:
-[CloudDirectory.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("clouddirectory").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("clouddirectory")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BatchWriteException,
+    client.CannotListParentOfRootException,
+    client.ClientError,
+    client.DirectoryAlreadyExistsException,
+    client.DirectoryDeletedException,
+    client.DirectoryNotDisabledException,
+    client.DirectoryNotEnabledException,
+    client.FacetAlreadyExistsException,
+    client.FacetInUseException,
+    client.FacetNotFoundException,
+    client.FacetValidationException,
+    client.IncompatibleSchemaException,
+    client.IndexedAttributeMissingException,
+    client.InternalServiceException,
+    client.InvalidArnException,
+    client.InvalidAttachmentException,
+    client.InvalidFacetUpdateException,
+    client.InvalidNextTokenException,
+    client.InvalidRuleException,
+    client.InvalidSchemaDocException,
+    client.InvalidTaggingRequestException,
+    client.LimitExceededException,
+    client.LinkNameAlreadyInUseException,
+    client.NotIndexException,
+    client.NotNodeException,
+    client.NotPolicyException,
+    client.ObjectAlreadyDetachedException,
+    client.ObjectNotDetachedException,
+    client.ResourceNotFoundException,
+    client.RetryableConflictException,
+    client.SchemaAlreadyExistsException,
+    client.SchemaAlreadyPublishedException,
+    client.StillContainsLinksException,
+    client.UnsupportedIndexTypeException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_clouddirectory.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BatchWriteException`
-- `Exceptions.CannotListParentOfRootException`
-- `Exceptions.ClientError`
-- `Exceptions.DirectoryAlreadyExistsException`
-- `Exceptions.DirectoryDeletedException`
-- `Exceptions.DirectoryNotDisabledException`
-- `Exceptions.DirectoryNotEnabledException`
-- `Exceptions.FacetAlreadyExistsException`
-- `Exceptions.FacetInUseException`
-- `Exceptions.FacetNotFoundException`
-- `Exceptions.FacetValidationException`
-- `Exceptions.IncompatibleSchemaException`
-- `Exceptions.IndexedAttributeMissingException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidArnException`
-- `Exceptions.InvalidAttachmentException`
-- `Exceptions.InvalidFacetUpdateException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidRuleException`
-- `Exceptions.InvalidSchemaDocException`
-- `Exceptions.InvalidTaggingRequestException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.LinkNameAlreadyInUseException`
-- `Exceptions.NotIndexException`
-- `Exceptions.NotNodeException`
-- `Exceptions.NotPolicyException`
-- `Exceptions.ObjectAlreadyDetachedException`
-- `Exceptions.ObjectNotDetachedException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.RetryableConflictException`
-- `Exceptions.SchemaAlreadyExistsException`
-- `Exceptions.SchemaAlreadyPublishedException`
-- `Exceptions.StillContainsLinksException`
-- `Exceptions.UnsupportedIndexTypeException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### add\_facet\_to\_object
 
-CloudDirectoryClient exceptions.
+Adds a new  Facet to an object.
 
-Type annotations for `boto3.client("clouddirectory").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").add_facet_to_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.add_facet_to_object)
 
-Boto3 documentation:
-[CloudDirectory.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.exceptions)
+```python title="Method definition"
+def add_facet_to_object(
+    self,
+    *,
+    DirectoryArn: str,
+    SchemaFacet: SchemaFacetTypeDef,  # (1)
+    ObjectReference: ObjectReferenceTypeDef,  # (2)
+    ObjectAttributeList: Sequence[AttributeKeyAndValueTypeDef] = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: SchemaFacetTypeDef](./type_defs.md#schemafacettypedef) 
+2. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+3. See [:material-code-braces: AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef) 
 
-<a id="add\_facet\_to\_object"></a>
 
-### add_facet_to_object
+```python title="Usage example with kwargs"
+kwargs: AddFacetToObjectRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "SchemaFacet": ...,
+    "ObjectReference": ...,
+}
 
-Adds a new Facet to an object.
+parent.add_facet_to_object(**kwargs)
+```
 
-Type annotations for `boto3.client("clouddirectory").add_facet_to_object`
-method.
+1. See [:material-code-braces: AddFacetToObjectRequestRequestTypeDef](./type_defs.md#addfacettoobjectrequestrequesttypedef) 
 
-Boto3 documentation:
-[CloudDirectory.Client.add_facet_to_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.add_facet_to_object)
+### apply\_schema
 
-Arguments mapping described in
-[AddFacetToObjectRequestRequestTypeDef](./type_defs.md#addfacettoobjectrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `DirectoryArn`: `str` *(required)*
-- `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
-  *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `ObjectAttributeList`:
-  `Sequence`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="apply\_schema"></a>
-
-### apply_schema
-
-Copies the input published schema, at the specified version, into the Directory
+Copies the input published schema, at the specified version, into the  Directory
 with the same name and version as that of the published schema.
 
-Type annotations for `boto3.client("clouddirectory").apply_schema` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").apply_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.apply_schema)
 
-Boto3 documentation:
-[CloudDirectory.Client.apply_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.apply_schema)
+```python title="Method definition"
+def apply_schema(
+    self,
+    *,
+    PublishedSchemaArn: str,
+    DirectoryArn: str,
+) -> ApplySchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ApplySchemaRequestRequestTypeDef](./type_defs.md#applyschemarequestrequesttypedef).
+1. See [:material-code-braces: ApplySchemaResponseTypeDef](./type_defs.md#applyschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PublishedSchemaArn`: `str` *(required)*
-- `DirectoryArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ApplySchemaRequestRequestTypeDef = {  # (1)
+    "PublishedSchemaArn": ...,
+    "DirectoryArn": ...,
+}
 
-Returns
-[ApplySchemaResponseTypeDef](./type_defs.md#applyschemaresponsetypedef).
+parent.apply_schema(**kwargs)
+```
 
-<a id="attach\_object"></a>
+1. See [:material-code-braces: ApplySchemaRequestRequestTypeDef](./type_defs.md#applyschemarequestrequesttypedef) 
 
-### attach_object
+### attach\_object
 
 Attaches an existing object to another object.
 
-Type annotations for `boto3.client("clouddirectory").attach_object` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").attach_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_object)
 
-Boto3 documentation:
-[CloudDirectory.Client.attach_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_object)
+```python title="Method definition"
+def attach_object(
+    self,
+    *,
+    DirectoryArn: str,
+    ParentReference: ObjectReferenceTypeDef,  # (1)
+    ChildReference: ObjectReferenceTypeDef,  # (1)
+    LinkName: str,
+) -> AttachObjectResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[AttachObjectRequestRequestTypeDef](./type_defs.md#attachobjectrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+3. See [:material-code-braces: AttachObjectResponseTypeDef](./type_defs.md#attachobjectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ParentReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `ChildReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `LinkName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachObjectRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ParentReference": ...,
+    "ChildReference": ...,
+    "LinkName": ...,
+}
 
-Returns
-[AttachObjectResponseTypeDef](./type_defs.md#attachobjectresponsetypedef).
+parent.attach_object(**kwargs)
+```
 
-<a id="attach\_policy"></a>
+1. See [:material-code-braces: AttachObjectRequestRequestTypeDef](./type_defs.md#attachobjectrequestrequesttypedef) 
 
-### attach_policy
+### attach\_policy
 
 Attaches a policy object to a regular object.
 
-Type annotations for `boto3.client("clouddirectory").attach_policy` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").attach_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_policy)
 
-Boto3 documentation:
-[CloudDirectory.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_policy)
+```python title="Method definition"
+def attach_policy(
+    self,
+    *,
+    DirectoryArn: str,
+    PolicyReference: ObjectReferenceTypeDef,  # (1)
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AttachPolicyRequestRequestTypeDef](./type_defs.md#attachpolicyrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `PolicyReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachPolicyRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "PolicyReference": ...,
+    "ObjectReference": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.attach_policy(**kwargs)
+```
 
-<a id="attach\_to\_index"></a>
+1. See [:material-code-braces: AttachPolicyRequestRequestTypeDef](./type_defs.md#attachpolicyrequestrequesttypedef) 
 
-### attach_to_index
+### attach\_to\_index
 
 Attaches the specified object to the specified index.
 
-Type annotations for `boto3.client("clouddirectory").attach_to_index` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").attach_to_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_to_index)
 
-Boto3 documentation:
-[CloudDirectory.Client.attach_to_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_to_index)
+```python title="Method definition"
+def attach_to_index(
+    self,
+    *,
+    DirectoryArn: str,
+    IndexReference: ObjectReferenceTypeDef,  # (1)
+    TargetReference: ObjectReferenceTypeDef,  # (1)
+) -> AttachToIndexResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[AttachToIndexRequestRequestTypeDef](./type_defs.md#attachtoindexrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+3. See [:material-code-braces: AttachToIndexResponseTypeDef](./type_defs.md#attachtoindexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `IndexReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `TargetReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachToIndexRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "IndexReference": ...,
+    "TargetReference": ...,
+}
 
-Returns
-[AttachToIndexResponseTypeDef](./type_defs.md#attachtoindexresponsetypedef).
+parent.attach_to_index(**kwargs)
+```
 
-<a id="attach\_typed\_link"></a>
+1. See [:material-code-braces: AttachToIndexRequestRequestTypeDef](./type_defs.md#attachtoindexrequestrequesttypedef) 
 
-### attach_typed_link
+### attach\_typed\_link
 
 Attaches a typed link to a specified source and target object.
 
-Type annotations for `boto3.client("clouddirectory").attach_typed_link` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").attach_typed_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_typed_link)
 
-Boto3 documentation:
-[CloudDirectory.Client.attach_typed_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.attach_typed_link)
+```python title="Method definition"
+def attach_typed_link(
+    self,
+    *,
+    DirectoryArn: str,
+    SourceObjectReference: ObjectReferenceTypeDef,  # (1)
+    TargetObjectReference: ObjectReferenceTypeDef,  # (1)
+    TypedLinkFacet: TypedLinkSchemaAndFacetNameTypeDef,  # (3)
+    Attributes: Sequence[AttributeNameAndValueTypeDef],  # (4)
+) -> AttachTypedLinkResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[AttachTypedLinkRequestRequestTypeDef](./type_defs.md#attachtypedlinkrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+3. See [:material-code-braces: TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef) 
+4. See [:material-code-braces: AttributeNameAndValueTypeDef](./type_defs.md#attributenameandvaluetypedef) 
+5. See [:material-code-braces: AttachTypedLinkResponseTypeDef](./type_defs.md#attachtypedlinkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `SourceObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `TargetObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `TypedLinkFacet`:
-  [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
-  *(required)*
-- `Attributes`:
-  `Sequence`\[[AttributeNameAndValueTypeDef](./type_defs.md#attributenameandvaluetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachTypedLinkRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "SourceObjectReference": ...,
+    "TargetObjectReference": ...,
+    "TypedLinkFacet": ...,
+    "Attributes": ...,
+}
 
-Returns
-[AttachTypedLinkResponseTypeDef](./type_defs.md#attachtypedlinkresponsetypedef).
+parent.attach_typed_link(**kwargs)
+```
 
-<a id="batch\_read"></a>
+1. See [:material-code-braces: AttachTypedLinkRequestRequestTypeDef](./type_defs.md#attachtypedlinkrequestrequesttypedef) 
 
-### batch_read
+### batch\_read
 
 Performs all the read operations in a batch.
 
-Type annotations for `boto3.client("clouddirectory").batch_read` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").batch_read` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_read)
 
-Boto3 documentation:
-[CloudDirectory.Client.batch_read](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_read)
+```python title="Method definition"
+def batch_read(
+    self,
+    *,
+    DirectoryArn: str,
+    Operations: Sequence[BatchReadOperationTypeDef],  # (1)
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (2)
+) -> BatchReadResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[BatchReadRequestRequestTypeDef](./type_defs.md#batchreadrequestrequesttypedef).
+1. See [:material-code-braces: BatchReadOperationTypeDef](./type_defs.md#batchreadoperationtypedef) 
+2. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+3. See [:material-code-braces: BatchReadResponseTypeDef](./type_defs.md#batchreadresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `Operations`:
-  `Sequence`\[[BatchReadOperationTypeDef](./type_defs.md#batchreadoperationtypedef)\]
-  *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: BatchReadRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "Operations": ...,
+}
 
-Returns [BatchReadResponseTypeDef](./type_defs.md#batchreadresponsetypedef).
+parent.batch_read(**kwargs)
+```
 
-<a id="batch\_write"></a>
+1. See [:material-code-braces: BatchReadRequestRequestTypeDef](./type_defs.md#batchreadrequestrequesttypedef) 
 
-### batch_write
+### batch\_write
 
 Performs all the write operations in a batch.
 
-Type annotations for `boto3.client("clouddirectory").batch_write` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").batch_write` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_write)
 
-Boto3 documentation:
-[CloudDirectory.Client.batch_write](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.batch_write)
+```python title="Method definition"
+def batch_write(
+    self,
+    *,
+    DirectoryArn: str,
+    Operations: Sequence[BatchWriteOperationTypeDef],  # (1)
+) -> BatchWriteResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchWriteRequestRequestTypeDef](./type_defs.md#batchwriterequestrequesttypedef).
+1. See [:material-code-braces: BatchWriteOperationTypeDef](./type_defs.md#batchwriteoperationtypedef) 
+2. See [:material-code-braces: BatchWriteResponseTypeDef](./type_defs.md#batchwriteresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `Operations`:
-  `Sequence`\[[BatchWriteOperationTypeDef](./type_defs.md#batchwriteoperationtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchWriteRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "Operations": ...,
+}
 
-Returns [BatchWriteResponseTypeDef](./type_defs.md#batchwriteresponsetypedef).
+parent.batch_write(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchWriteRequestRequestTypeDef](./type_defs.md#batchwriterequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("clouddirectory").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.can_paginate)
 
-Boto3 documentation:
-[CloudDirectory.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### create\_directory
 
-Returns `bool`.
+Creates a  Directory by copying the published schema into the directory.
 
-<a id="create\_directory"></a>
+Type annotations and code completion for `#!python boto3.client("clouddirectory").create_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_directory)
 
-### create_directory
+```python title="Method definition"
+def create_directory(
+    self,
+    *,
+    Name: str,
+    SchemaArn: str,
+) -> CreateDirectoryResponseTypeDef:  # (1)
+    ...
+```
 
-Creates a Directory by copying the published schema into the directory.
+1. See [:material-code-braces: CreateDirectoryResponseTypeDef](./type_defs.md#createdirectoryresponsetypedef) 
 
-Type annotations for `boto3.client("clouddirectory").create_directory` method.
 
-Boto3 documentation:
-[CloudDirectory.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_directory)
+```python title="Usage example with kwargs"
+kwargs: CreateDirectoryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "SchemaArn": ...,
+}
 
-Arguments mapping described in
-[CreateDirectoryRequestRequestTypeDef](./type_defs.md#createdirectoryrequestrequesttypedef).
+parent.create_directory(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateDirectoryRequestRequestTypeDef](./type_defs.md#createdirectoryrequestrequesttypedef) 
 
-- `Name`: `str` *(required)*
-- `SchemaArn`: `str` *(required)*
+### create\_facet
 
-Returns
-[CreateDirectoryResponseTypeDef](./type_defs.md#createdirectoryresponsetypedef).
+Creates a new  Facet in a schema.
 
-<a id="create\_facet"></a>
+Type annotations and code completion for `#!python boto3.client("clouddirectory").create_facet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_facet)
 
-### create_facet
+```python title="Method definition"
+def create_facet(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+    Attributes: Sequence[FacetAttributeTypeDef] = ...,  # (1)
+    ObjectType: ObjectTypeType = ...,  # (2)
+    FacetStyle: FacetStyleType = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Creates a new Facet in a schema.
+1. See [:material-code-braces: FacetAttributeTypeDef](./type_defs.md#facetattributetypedef) 
+2. See [:material-code-brackets: ObjectTypeType](./literals.md#objecttypetype) 
+3. See [:material-code-brackets: FacetStyleType](./literals.md#facetstyletype) 
 
-Type annotations for `boto3.client("clouddirectory").create_facet` method.
 
-Boto3 documentation:
-[CloudDirectory.Client.create_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_facet)
+```python title="Usage example with kwargs"
+kwargs: CreateFacetRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+}
 
-Arguments mapping described in
-[CreateFacetRequestRequestTypeDef](./type_defs.md#createfacetrequestrequesttypedef).
+parent.create_facet(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateFacetRequestRequestTypeDef](./type_defs.md#createfacetrequestrequesttypedef) 
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Attributes`:
-  `Sequence`\[[FacetAttributeTypeDef](./type_defs.md#facetattributetypedef)\]
-- `ObjectType`: [ObjectTypeType](./literals.md#objecttypetype)
-- `FacetStyle`: [FacetStyleType](./literals.md#facetstyletype)
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="create\_index"></a>
-
-### create_index
+### create\_index
 
 Creates an index object.
 
-Type annotations for `boto3.client("clouddirectory").create_index` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").create_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_index)
 
-Boto3 documentation:
-[CloudDirectory.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_index)
+```python title="Method definition"
+def create_index(
+    self,
+    *,
+    DirectoryArn: str,
+    OrderedIndexedAttributeList: Sequence[AttributeKeyTypeDef],  # (1)
+    IsUnique: bool,
+    ParentReference: ObjectReferenceTypeDef = ...,  # (2)
+    LinkName: str = ...,
+) -> CreateIndexResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateIndexRequestRequestTypeDef](./type_defs.md#createindexrequestrequesttypedef).
+1. See [:material-code-braces: AttributeKeyTypeDef](./type_defs.md#attributekeytypedef) 
+2. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+3. See [:material-code-braces: CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `OrderedIndexedAttributeList`:
-  `Sequence`\[[AttributeKeyTypeDef](./type_defs.md#attributekeytypedef)\]
-  *(required)*
-- `IsUnique`: `bool` *(required)*
-- `ParentReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
-- `LinkName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateIndexRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "OrderedIndexedAttributeList": ...,
+    "IsUnique": ...,
+}
 
-Returns
-[CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
+parent.create_index(**kwargs)
+```
 
-<a id="create\_object"></a>
+1. See [:material-code-braces: CreateIndexRequestRequestTypeDef](./type_defs.md#createindexrequestrequesttypedef) 
 
-### create_object
+### create\_object
 
-Creates an object in a Directory.
+Creates an object in a  Directory.
 
-Type annotations for `boto3.client("clouddirectory").create_object` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").create_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_object)
 
-Boto3 documentation:
-[CloudDirectory.Client.create_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_object)
+```python title="Method definition"
+def create_object(
+    self,
+    *,
+    DirectoryArn: str,
+    SchemaFacets: Sequence[SchemaFacetTypeDef],  # (1)
+    ObjectAttributeList: Sequence[AttributeKeyAndValueTypeDef] = ...,  # (2)
+    ParentReference: ObjectReferenceTypeDef = ...,  # (3)
+    LinkName: str = ...,
+) -> CreateObjectResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateObjectRequestRequestTypeDef](./type_defs.md#createobjectrequestrequesttypedef).
+1. See [:material-code-braces: SchemaFacetTypeDef](./type_defs.md#schemafacettypedef) 
+2. See [:material-code-braces: AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef) 
+3. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+4. See [:material-code-braces: CreateObjectResponseTypeDef](./type_defs.md#createobjectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `SchemaFacets`:
-  `Sequence`\[[SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)\]
-  *(required)*
-- `ObjectAttributeList`:
-  `Sequence`\[[AttributeKeyAndValueTypeDef](./type_defs.md#attributekeyandvaluetypedef)\]
-- `ParentReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef)
-- `LinkName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateObjectRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "SchemaFacets": ...,
+}
 
-Returns
-[CreateObjectResponseTypeDef](./type_defs.md#createobjectresponsetypedef).
+parent.create_object(**kwargs)
+```
 
-<a id="create\_schema"></a>
+1. See [:material-code-braces: CreateObjectRequestRequestTypeDef](./type_defs.md#createobjectrequestrequesttypedef) 
 
-### create_schema
+### create\_schema
 
 Creates a new schema in a development state.
 
-Type annotations for `boto3.client("clouddirectory").create_schema` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").create_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_schema)
 
-Boto3 documentation:
-[CloudDirectory.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_schema)
+```python title="Method definition"
+def create_schema(
+    self,
+    *,
+    Name: str,
+) -> CreateSchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSchemaRequestRequestTypeDef](./type_defs.md#createschemarequestrequesttypedef).
+1. See [:material-code-braces: CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateSchemaRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
+parent.create_schema(**kwargs)
+```
 
-<a id="create\_typed\_link\_facet"></a>
+1. See [:material-code-braces: CreateSchemaRequestRequestTypeDef](./type_defs.md#createschemarequestrequesttypedef) 
 
-### create_typed_link_facet
+### create\_typed\_link\_facet
 
-Creates a TypedLinkFacet.
+Creates a  TypedLinkFacet.
 
-Type annotations for `boto3.client("clouddirectory").create_typed_link_facet`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").create_typed_link_facet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_typed_link_facet)
 
-Boto3 documentation:
-[CloudDirectory.Client.create_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.create_typed_link_facet)
+```python title="Method definition"
+def create_typed_link_facet(
+    self,
+    *,
+    SchemaArn: str,
+    Facet: TypedLinkFacetTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateTypedLinkFacetRequestRequestTypeDef](./type_defs.md#createtypedlinkfacetrequestrequesttypedef).
+1. See [:material-code-braces: TypedLinkFacetTypeDef](./type_defs.md#typedlinkfacettypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Facet`: [TypedLinkFacetTypeDef](./type_defs.md#typedlinkfacettypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTypedLinkFacetRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Facet": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_typed_link_facet(**kwargs)
+```
 
-<a id="delete\_directory"></a>
+1. See [:material-code-braces: CreateTypedLinkFacetRequestRequestTypeDef](./type_defs.md#createtypedlinkfacetrequestrequesttypedef) 
 
-### delete_directory
+### delete\_directory
 
 Deletes a directory.
 
-Type annotations for `boto3.client("clouddirectory").delete_directory` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").delete_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_directory)
 
-Boto3 documentation:
-[CloudDirectory.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_directory)
+```python title="Method definition"
+def delete_directory(
+    self,
+    *,
+    DirectoryArn: str,
+) -> DeleteDirectoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDirectoryRequestRequestTypeDef](./type_defs.md#deletedirectoryrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDirectoryResponseTypeDef](./type_defs.md#deletedirectoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+}
 
-Returns
-[DeleteDirectoryResponseTypeDef](./type_defs.md#deletedirectoryresponsetypedef).
+parent.delete_directory(**kwargs)
+```
 
-<a id="delete\_facet"></a>
+1. See [:material-code-braces: DeleteDirectoryRequestRequestTypeDef](./type_defs.md#deletedirectoryrequestrequesttypedef) 
 
-### delete_facet
+### delete\_facet
 
-Deletes a given Facet.
+Deletes a given  Facet.
 
-Type annotations for `boto3.client("clouddirectory").delete_facet` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").delete_facet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_facet)
 
-Boto3 documentation:
-[CloudDirectory.Client.delete_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_facet)
+```python title="Method definition"
+def delete_facet(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFacetRequestRequestTypeDef](./type_defs.md#deletefacetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFacetRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_facet(**kwargs)
+```
 
-<a id="delete\_object"></a>
+1. See [:material-code-braces: DeleteFacetRequestRequestTypeDef](./type_defs.md#deletefacetrequestrequesttypedef) 
 
-### delete_object
+### delete\_object
 
 Deletes an object and its associated attributes.
 
-Type annotations for `boto3.client("clouddirectory").delete_object` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").delete_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_object)
 
-Boto3 documentation:
-[CloudDirectory.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_object)
+```python title="Method definition"
+def delete_object(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteObjectRequestRequestTypeDef](./type_defs.md#deleteobjectrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteObjectRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_object(**kwargs)
+```
 
-<a id="delete\_schema"></a>
+1. See [:material-code-braces: DeleteObjectRequestRequestTypeDef](./type_defs.md#deleteobjectrequestrequesttypedef) 
 
-### delete_schema
+### delete\_schema
 
 Deletes a given schema.
 
-Type annotations for `boto3.client("clouddirectory").delete_schema` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").delete_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_schema)
 
-Boto3 documentation:
-[CloudDirectory.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_schema)
+```python title="Method definition"
+def delete_schema(
+    self,
+    *,
+    SchemaArn: str,
+) -> DeleteSchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef).
+1. See [:material-code-braces: DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSchemaRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+}
 
-Returns
-[DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef).
+parent.delete_schema(**kwargs)
+```
 
-<a id="delete\_typed\_link\_facet"></a>
+1. See [:material-code-braces: DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef) 
 
-### delete_typed_link_facet
+### delete\_typed\_link\_facet
 
-Deletes a TypedLinkFacet.
+Deletes a  TypedLinkFacet.
 
-Type annotations for `boto3.client("clouddirectory").delete_typed_link_facet`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").delete_typed_link_facet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_typed_link_facet)
 
-Boto3 documentation:
-[CloudDirectory.Client.delete_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.delete_typed_link_facet)
+```python title="Method definition"
+def delete_typed_link_facet(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTypedLinkFacetRequestRequestTypeDef](./type_defs.md#deletetypedlinkfacetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTypedLinkFacetRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_typed_link_facet(**kwargs)
+```
 
-<a id="detach\_from\_index"></a>
+1. See [:material-code-braces: DeleteTypedLinkFacetRequestRequestTypeDef](./type_defs.md#deletetypedlinkfacetrequestrequesttypedef) 
 
-### detach_from_index
+### detach\_from\_index
 
 Detaches the specified object from the specified index.
 
-Type annotations for `boto3.client("clouddirectory").detach_from_index` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").detach_from_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_from_index)
 
-Boto3 documentation:
-[CloudDirectory.Client.detach_from_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_from_index)
+```python title="Method definition"
+def detach_from_index(
+    self,
+    *,
+    DirectoryArn: str,
+    IndexReference: ObjectReferenceTypeDef,  # (1)
+    TargetReference: ObjectReferenceTypeDef,  # (1)
+) -> DetachFromIndexResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DetachFromIndexRequestRequestTypeDef](./type_defs.md#detachfromindexrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+3. See [:material-code-braces: DetachFromIndexResponseTypeDef](./type_defs.md#detachfromindexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `IndexReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `TargetReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachFromIndexRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "IndexReference": ...,
+    "TargetReference": ...,
+}
 
-Returns
-[DetachFromIndexResponseTypeDef](./type_defs.md#detachfromindexresponsetypedef).
+parent.detach_from_index(**kwargs)
+```
 
-<a id="detach\_object"></a>
+1. See [:material-code-braces: DetachFromIndexRequestRequestTypeDef](./type_defs.md#detachfromindexrequestrequesttypedef) 
 
-### detach_object
+### detach\_object
 
 Detaches a given object from the parent object.
 
-Type annotations for `boto3.client("clouddirectory").detach_object` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").detach_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_object)
 
-Boto3 documentation:
-[CloudDirectory.Client.detach_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_object)
+```python title="Method definition"
+def detach_object(
+    self,
+    *,
+    DirectoryArn: str,
+    ParentReference: ObjectReferenceTypeDef,  # (1)
+    LinkName: str,
+) -> DetachObjectResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DetachObjectRequestRequestTypeDef](./type_defs.md#detachobjectrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: DetachObjectResponseTypeDef](./type_defs.md#detachobjectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ParentReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `LinkName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachObjectRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ParentReference": ...,
+    "LinkName": ...,
+}
 
-Returns
-[DetachObjectResponseTypeDef](./type_defs.md#detachobjectresponsetypedef).
+parent.detach_object(**kwargs)
+```
 
-<a id="detach\_policy"></a>
+1. See [:material-code-braces: DetachObjectRequestRequestTypeDef](./type_defs.md#detachobjectrequestrequesttypedef) 
 
-### detach_policy
+### detach\_policy
 
 Detaches a policy from an object.
 
-Type annotations for `boto3.client("clouddirectory").detach_policy` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").detach_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_policy)
 
-Boto3 documentation:
-[CloudDirectory.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_policy)
+```python title="Method definition"
+def detach_policy(
+    self,
+    *,
+    DirectoryArn: str,
+    PolicyReference: ObjectReferenceTypeDef,  # (1)
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DetachPolicyRequestRequestTypeDef](./type_defs.md#detachpolicyrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `PolicyReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachPolicyRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "PolicyReference": ...,
+    "ObjectReference": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.detach_policy(**kwargs)
+```
 
-<a id="detach\_typed\_link"></a>
+1. See [:material-code-braces: DetachPolicyRequestRequestTypeDef](./type_defs.md#detachpolicyrequestrequesttypedef) 
 
-### detach_typed_link
+### detach\_typed\_link
 
 Detaches a typed link from a specified source and target object.
 
-Type annotations for `boto3.client("clouddirectory").detach_typed_link` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").detach_typed_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_typed_link)
 
-Boto3 documentation:
-[CloudDirectory.Client.detach_typed_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.detach_typed_link)
+```python title="Method definition"
+def detach_typed_link(
+    self,
+    *,
+    DirectoryArn: str,
+    TypedLinkSpecifier: TypedLinkSpecifierTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DetachTypedLinkRequestRequestTypeDef](./type_defs.md#detachtypedlinkrequestrequesttypedef).
+1. See [:material-code-braces: TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `TypedLinkSpecifier`:
-  [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachTypedLinkRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "TypedLinkSpecifier": ...,
+}
 
-<a id="disable\_directory"></a>
+parent.detach_typed_link(**kwargs)
+```
 
-### disable_directory
+1. See [:material-code-braces: DetachTypedLinkRequestRequestTypeDef](./type_defs.md#detachtypedlinkrequestrequesttypedef) 
+
+### disable\_directory
 
 Disables the specified directory.
 
-Type annotations for `boto3.client("clouddirectory").disable_directory` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").disable_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.disable_directory)
 
-Boto3 documentation:
-[CloudDirectory.Client.disable_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.disable_directory)
+```python title="Method definition"
+def disable_directory(
+    self,
+    *,
+    DirectoryArn: str,
+) -> DisableDirectoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisableDirectoryRequestRequestTypeDef](./type_defs.md#disabledirectoryrequestrequesttypedef).
+1. See [:material-code-braces: DisableDirectoryResponseTypeDef](./type_defs.md#disabledirectoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+}
 
-Returns
-[DisableDirectoryResponseTypeDef](./type_defs.md#disabledirectoryresponsetypedef).
+parent.disable_directory(**kwargs)
+```
 
-<a id="enable\_directory"></a>
+1. See [:material-code-braces: DisableDirectoryRequestRequestTypeDef](./type_defs.md#disabledirectoryrequestrequesttypedef) 
 
-### enable_directory
+### enable\_directory
 
 Enables the specified directory.
 
-Type annotations for `boto3.client("clouddirectory").enable_directory` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").enable_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.enable_directory)
 
-Boto3 documentation:
-[CloudDirectory.Client.enable_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.enable_directory)
+```python title="Method definition"
+def enable_directory(
+    self,
+    *,
+    DirectoryArn: str,
+) -> EnableDirectoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EnableDirectoryRequestRequestTypeDef](./type_defs.md#enabledirectoryrequestrequesttypedef).
+1. See [:material-code-braces: EnableDirectoryResponseTypeDef](./type_defs.md#enabledirectoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+}
 
-Returns
-[EnableDirectoryResponseTypeDef](./type_defs.md#enabledirectoryresponsetypedef).
+parent.enable_directory(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableDirectoryRequestRequestTypeDef](./type_defs.md#enabledirectoryrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("clouddirectory").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudDirectory.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_applied\_schema\_version"></a>
-
-### get_applied_schema_version
+### get\_applied\_schema\_version
 
 Returns current applied schema version ARN, including the minor version in use.
 
-Type annotations for
-`boto3.client("clouddirectory").get_applied_schema_version` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").get_applied_schema_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_applied_schema_version)
 
-Boto3 documentation:
-[CloudDirectory.Client.get_applied_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_applied_schema_version)
+```python title="Method definition"
+def get_applied_schema_version(
+    self,
+    *,
+    SchemaArn: str,
+) -> GetAppliedSchemaVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppliedSchemaVersionRequestRequestTypeDef](./type_defs.md#getappliedschemaversionrequestrequesttypedef).
+1. See [:material-code-braces: GetAppliedSchemaVersionResponseTypeDef](./type_defs.md#getappliedschemaversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAppliedSchemaVersionRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+}
 
-Returns
-[GetAppliedSchemaVersionResponseTypeDef](./type_defs.md#getappliedschemaversionresponsetypedef).
+parent.get_applied_schema_version(**kwargs)
+```
 
-<a id="get\_directory"></a>
+1. See [:material-code-braces: GetAppliedSchemaVersionRequestRequestTypeDef](./type_defs.md#getappliedschemaversionrequestrequesttypedef) 
 
-### get_directory
+### get\_directory
 
 Retrieves metadata about a directory.
 
-Type annotations for `boto3.client("clouddirectory").get_directory` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").get_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_directory)
 
-Boto3 documentation:
-[CloudDirectory.Client.get_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_directory)
+```python title="Method definition"
+def get_directory(
+    self,
+    *,
+    DirectoryArn: str,
+) -> GetDirectoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDirectoryRequestRequestTypeDef](./type_defs.md#getdirectoryrequestrequesttypedef).
+1. See [:material-code-braces: GetDirectoryResponseTypeDef](./type_defs.md#getdirectoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+}
 
-Returns
-[GetDirectoryResponseTypeDef](./type_defs.md#getdirectoryresponsetypedef).
+parent.get_directory(**kwargs)
+```
 
-<a id="get\_facet"></a>
+1. See [:material-code-braces: GetDirectoryRequestRequestTypeDef](./type_defs.md#getdirectoryrequestrequesttypedef) 
 
-### get_facet
+### get\_facet
 
-Gets details of the Facet , such as facet name, attributes, Rule s, or
+Gets details of the  Facet , such as facet name, attributes,  Rule s, or
 `ObjectType`.
 
-Type annotations for `boto3.client("clouddirectory").get_facet` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").get_facet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_facet)
 
-Boto3 documentation:
-[CloudDirectory.Client.get_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_facet)
+```python title="Method definition"
+def get_facet(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+) -> GetFacetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFacetRequestRequestTypeDef](./type_defs.md#getfacetrequestrequesttypedef).
+1. See [:material-code-braces: GetFacetResponseTypeDef](./type_defs.md#getfacetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFacetRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+}
 
-Returns [GetFacetResponseTypeDef](./type_defs.md#getfacetresponsetypedef).
+parent.get_facet(**kwargs)
+```
 
-<a id="get\_link\_attributes"></a>
+1. See [:material-code-braces: GetFacetRequestRequestTypeDef](./type_defs.md#getfacetrequestrequesttypedef) 
 
-### get_link_attributes
+### get\_link\_attributes
 
 Retrieves attributes that are associated with a typed link.
 
-Type annotations for `boto3.client("clouddirectory").get_link_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").get_link_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_link_attributes)
 
-Boto3 documentation:
-[CloudDirectory.Client.get_link_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_link_attributes)
+```python title="Method definition"
+def get_link_attributes(
+    self,
+    *,
+    DirectoryArn: str,
+    TypedLinkSpecifier: TypedLinkSpecifierTypeDef,  # (1)
+    AttributeNames: Sequence[str],
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (2)
+) -> GetLinkAttributesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetLinkAttributesRequestRequestTypeDef](./type_defs.md#getlinkattributesrequestrequesttypedef).
+1. See [:material-code-braces: TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef) 
+2. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+3. See [:material-code-braces: GetLinkAttributesResponseTypeDef](./type_defs.md#getlinkattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `TypedLinkSpecifier`:
-  [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
-  *(required)*
-- `AttributeNames`: `Sequence`\[`str`\] *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: GetLinkAttributesRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "TypedLinkSpecifier": ...,
+    "AttributeNames": ...,
+}
 
-Returns
-[GetLinkAttributesResponseTypeDef](./type_defs.md#getlinkattributesresponsetypedef).
+parent.get_link_attributes(**kwargs)
+```
 
-<a id="get\_object\_attributes"></a>
+1. See [:material-code-braces: GetLinkAttributesRequestRequestTypeDef](./type_defs.md#getlinkattributesrequestrequesttypedef) 
 
-### get_object_attributes
+### get\_object\_attributes
 
 Retrieves attributes within a facet that are associated with an object.
 
-Type annotations for `boto3.client("clouddirectory").get_object_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").get_object_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_attributes)
 
-Boto3 documentation:
-[CloudDirectory.Client.get_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_attributes)
+```python title="Method definition"
+def get_object_attributes(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    SchemaFacet: SchemaFacetTypeDef,  # (2)
+    AttributeNames: Sequence[str],
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (3)
+) -> GetObjectAttributesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetObjectAttributesRequestRequestTypeDef](./type_defs.md#getobjectattributesrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: SchemaFacetTypeDef](./type_defs.md#schemafacettypedef) 
+3. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+4. See [:material-code-braces: GetObjectAttributesResponseTypeDef](./type_defs.md#getobjectattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
-  *(required)*
-- `AttributeNames`: `Sequence`\[`str`\] *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: GetObjectAttributesRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+    "SchemaFacet": ...,
+    "AttributeNames": ...,
+}
 
-Returns
-[GetObjectAttributesResponseTypeDef](./type_defs.md#getobjectattributesresponsetypedef).
+parent.get_object_attributes(**kwargs)
+```
 
-<a id="get\_object\_information"></a>
+1. See [:material-code-braces: GetObjectAttributesRequestRequestTypeDef](./type_defs.md#getobjectattributesrequestrequesttypedef) 
 
-### get_object_information
+### get\_object\_information
 
 Retrieves metadata about an object.
 
-Type annotations for `boto3.client("clouddirectory").get_object_information`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").get_object_information` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_information)
 
-Boto3 documentation:
-[CloudDirectory.Client.get_object_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_object_information)
+```python title="Method definition"
+def get_object_information(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (2)
+) -> GetObjectInformationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetObjectInformationRequestRequestTypeDef](./type_defs.md#getobjectinformationrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+3. See [:material-code-braces: GetObjectInformationResponseTypeDef](./type_defs.md#getobjectinformationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: GetObjectInformationRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns
-[GetObjectInformationResponseTypeDef](./type_defs.md#getobjectinformationresponsetypedef).
+parent.get_object_information(**kwargs)
+```
 
-<a id="get\_schema\_as\_json"></a>
+1. See [:material-code-braces: GetObjectInformationRequestRequestTypeDef](./type_defs.md#getobjectinformationrequestrequesttypedef) 
 
-### get_schema_as_json
+### get\_schema\_as\_json
 
 Retrieves a JSON representation of the schema.
 
-Type annotations for `boto3.client("clouddirectory").get_schema_as_json`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").get_schema_as_json` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_schema_as_json)
 
-Boto3 documentation:
-[CloudDirectory.Client.get_schema_as_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_schema_as_json)
+```python title="Method definition"
+def get_schema_as_json(
+    self,
+    *,
+    SchemaArn: str,
+) -> GetSchemaAsJsonResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSchemaAsJsonRequestRequestTypeDef](./type_defs.md#getschemaasjsonrequestrequesttypedef).
+1. See [:material-code-braces: GetSchemaAsJsonResponseTypeDef](./type_defs.md#getschemaasjsonresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSchemaAsJsonRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+}
 
-Returns
-[GetSchemaAsJsonResponseTypeDef](./type_defs.md#getschemaasjsonresponsetypedef).
+parent.get_schema_as_json(**kwargs)
+```
 
-<a id="get\_typed\_link\_facet\_information"></a>
+1. See [:material-code-braces: GetSchemaAsJsonRequestRequestTypeDef](./type_defs.md#getschemaasjsonrequestrequesttypedef) 
 
-### get_typed_link_facet_information
+### get\_typed\_link\_facet\_information
 
-Returns the identity attribute order for a specific TypedLinkFacet.
+Returns the identity attribute order for a specific  TypedLinkFacet.
 
-Type annotations for
-`boto3.client("clouddirectory").get_typed_link_facet_information` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").get_typed_link_facet_information` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_typed_link_facet_information)
 
-Boto3 documentation:
-[CloudDirectory.Client.get_typed_link_facet_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.get_typed_link_facet_information)
+```python title="Method definition"
+def get_typed_link_facet_information(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+) -> GetTypedLinkFacetInformationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTypedLinkFacetInformationRequestRequestTypeDef](./type_defs.md#gettypedlinkfacetinformationrequestrequesttypedef).
+1. See [:material-code-braces: GetTypedLinkFacetInformationResponseTypeDef](./type_defs.md#gettypedlinkfacetinformationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTypedLinkFacetInformationRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+}
 
-Returns
-[GetTypedLinkFacetInformationResponseTypeDef](./type_defs.md#gettypedlinkfacetinformationresponsetypedef).
+parent.get_typed_link_facet_information(**kwargs)
+```
 
-<a id="list\_applied\_schema\_arns"></a>
+1. See [:material-code-braces: GetTypedLinkFacetInformationRequestRequestTypeDef](./type_defs.md#gettypedlinkfacetinformationrequestrequesttypedef) 
 
-### list_applied_schema_arns
+### list\_applied\_schema\_arns
 
 Lists schema major versions applied to a directory.
 
-Type annotations for `boto3.client("clouddirectory").list_applied_schema_arns`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_applied_schema_arns` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_applied_schema_arns)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_applied_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_applied_schema_arns)
+```python title="Method definition"
+def list_applied_schema_arns(
+    self,
+    *,
+    DirectoryArn: str,
+    SchemaArn: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAppliedSchemaArnsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppliedSchemaArnsRequestRequestTypeDef](./type_defs.md#listappliedschemaarnsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `SchemaArn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAppliedSchemaArnsRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+}
 
-Returns
-[ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef).
+parent.list_applied_schema_arns(**kwargs)
+```
 
-<a id="list\_attached\_indices"></a>
+1. See [:material-code-braces: ListAppliedSchemaArnsRequestRequestTypeDef](./type_defs.md#listappliedschemaarnsrequestrequesttypedef) 
 
-### list_attached_indices
+### list\_attached\_indices
 
 Lists indices attached to the specified object.
 
-Type annotations for `boto3.client("clouddirectory").list_attached_indices`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_attached_indices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_attached_indices)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_attached_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_attached_indices)
+```python title="Method definition"
+def list_attached_indices(
+    self,
+    *,
+    DirectoryArn: str,
+    TargetReference: ObjectReferenceTypeDef,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (2)
+) -> ListAttachedIndicesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListAttachedIndicesRequestRequestTypeDef](./type_defs.md#listattachedindicesrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+3. See [:material-code-braces: ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `TargetReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: ListAttachedIndicesRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "TargetReference": ...,
+}
 
-Returns
-[ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef).
+parent.list_attached_indices(**kwargs)
+```
 
-<a id="list\_development\_schema\_arns"></a>
+1. See [:material-code-braces: ListAttachedIndicesRequestRequestTypeDef](./type_defs.md#listattachedindicesrequestrequesttypedef) 
 
-### list_development_schema_arns
+### list\_development\_schema\_arns
 
 Retrieves each Amazon Resource Name (ARN) of schemas in the development state.
 
-Type annotations for
-`boto3.client("clouddirectory").list_development_schema_arns` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_development_schema_arns` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_development_schema_arns)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_development_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_development_schema_arns)
+```python title="Method definition"
+def list_development_schema_arns(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDevelopmentSchemaArnsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDevelopmentSchemaArnsRequestRequestTypeDef](./type_defs.md#listdevelopmentschemaarnsrequestrequesttypedef).
+1. See [:material-code-braces: ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDevelopmentSchemaArnsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef).
+parent.list_development_schema_arns(**kwargs)
+```
 
-<a id="list\_directories"></a>
+1. See [:material-code-braces: ListDevelopmentSchemaArnsRequestRequestTypeDef](./type_defs.md#listdevelopmentschemaarnsrequestrequesttypedef) 
 
-### list_directories
+### list\_directories
 
 Lists directories created within an account.
 
-Type annotations for `boto3.client("clouddirectory").list_directories` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_directories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_directories)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_directories)
+```python title="Method definition"
+def list_directories(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    state: DirectoryStateType = ...,  # (1)
+) -> ListDirectoriesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDirectoriesRequestRequestTypeDef](./type_defs.md#listdirectoriesrequestrequesttypedef).
+1. See [:material-code-brackets: DirectoryStateType](./literals.md#directorystatetype) 
+2. See [:material-code-braces: ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `state`: [DirectoryStateType](./literals.md#directorystatetype)
+```python title="Usage example with kwargs"
+kwargs: ListDirectoriesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef).
+parent.list_directories(**kwargs)
+```
 
-<a id="list\_facet\_attributes"></a>
+1. See [:material-code-braces: ListDirectoriesRequestRequestTypeDef](./type_defs.md#listdirectoriesrequestrequesttypedef) 
 
-### list_facet_attributes
+### list\_facet\_attributes
 
 Retrieves attributes attached to the facet.
 
-Type annotations for `boto3.client("clouddirectory").list_facet_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_facet_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_attributes)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_facet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_attributes)
+```python title="Method definition"
+def list_facet_attributes(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFacetAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFacetAttributesRequestRequestTypeDef](./type_defs.md#listfacetattributesrequestrequesttypedef).
+1. See [:material-code-braces: ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFacetAttributesRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+}
 
-Returns
-[ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef).
+parent.list_facet_attributes(**kwargs)
+```
 
-<a id="list\_facet\_names"></a>
+1. See [:material-code-braces: ListFacetAttributesRequestRequestTypeDef](./type_defs.md#listfacetattributesrequestrequesttypedef) 
 
-### list_facet_names
+### list\_facet\_names
 
 Retrieves the names of facets that exist in a schema.
 
-Type annotations for `boto3.client("clouddirectory").list_facet_names` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_facet_names` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_names)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_facet_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_facet_names)
+```python title="Method definition"
+def list_facet_names(
+    self,
+    *,
+    SchemaArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFacetNamesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFacetNamesRequestRequestTypeDef](./type_defs.md#listfacetnamesrequestrequesttypedef).
+1. See [:material-code-braces: ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFacetNamesRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+}
 
-Returns
-[ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef).
+parent.list_facet_names(**kwargs)
+```
 
-<a id="list\_incoming\_typed\_links"></a>
+1. See [:material-code-braces: ListFacetNamesRequestRequestTypeDef](./type_defs.md#listfacetnamesrequestrequesttypedef) 
 
-### list_incoming_typed_links
+### list\_incoming\_typed\_links
 
-Returns a paginated list of all the incoming TypedLinkSpecifier information for
+Returns a paginated list of all the incoming  TypedLinkSpecifier information for
 an object.
 
-Type annotations for `boto3.client("clouddirectory").list_incoming_typed_links`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_incoming_typed_links` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_incoming_typed_links)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_incoming_typed_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_incoming_typed_links)
+```python title="Method definition"
+def list_incoming_typed_links(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    FilterAttributeRanges: Sequence[TypedLinkAttributeRangeTypeDef] = ...,  # (2)
+    FilterTypedLink: TypedLinkSchemaAndFacetNameTypeDef = ...,  # (3)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (4)
+) -> ListIncomingTypedLinksResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[ListIncomingTypedLinksRequestRequestTypeDef](./type_defs.md#listincomingtypedlinksrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef) 
+3. See [:material-code-braces: TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef) 
+4. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+5. See [:material-code-braces: ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `FilterAttributeRanges`:
-  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
-- `FilterTypedLink`:
-  [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: ListIncomingTypedLinksRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns
-[ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef).
+parent.list_incoming_typed_links(**kwargs)
+```
 
-<a id="list\_index"></a>
+1. See [:material-code-braces: ListIncomingTypedLinksRequestRequestTypeDef](./type_defs.md#listincomingtypedlinksrequestrequesttypedef) 
 
-### list_index
+### list\_index
 
 Lists objects attached to the specified index.
 
-Type annotations for `boto3.client("clouddirectory").list_index` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_index)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_index)
+```python title="Method definition"
+def list_index(
+    self,
+    *,
+    DirectoryArn: str,
+    IndexReference: ObjectReferenceTypeDef,  # (1)
+    RangesOnIndexedValues: Sequence[ObjectAttributeRangeTypeDef] = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (3)
+) -> ListIndexResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListIndexRequestRequestTypeDef](./type_defs.md#listindexrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef) 
+3. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+4. See [:material-code-braces: ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `IndexReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `RangesOnIndexedValues`:
-  `Sequence`\[[ObjectAttributeRangeTypeDef](./type_defs.md#objectattributerangetypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: ListIndexRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "IndexReference": ...,
+}
 
-Returns [ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef).
+parent.list_index(**kwargs)
+```
 
-<a id="list\_managed\_schema\_arns"></a>
+1. See [:material-code-braces: ListIndexRequestRequestTypeDef](./type_defs.md#listindexrequestrequesttypedef) 
 
-### list_managed_schema_arns
+### list\_managed\_schema\_arns
 
 Lists the major version families of each managed schema.
 
-Type annotations for `boto3.client("clouddirectory").list_managed_schema_arns`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_managed_schema_arns` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_managed_schema_arns)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_managed_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_managed_schema_arns)
+```python title="Method definition"
+def list_managed_schema_arns(
+    self,
+    *,
+    SchemaArn: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListManagedSchemaArnsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListManagedSchemaArnsRequestRequestTypeDef](./type_defs.md#listmanagedschemaarnsrequestrequesttypedef).
+1. See [:material-code-braces: ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListManagedSchemaArnsRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+}
 
-Returns
-[ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef).
+parent.list_managed_schema_arns(**kwargs)
+```
 
-<a id="list\_object\_attributes"></a>
+1. See [:material-code-braces: ListManagedSchemaArnsRequestRequestTypeDef](./type_defs.md#listmanagedschemaarnsrequestrequesttypedef) 
 
-### list_object_attributes
+### list\_object\_attributes
 
 Lists all attributes that are associated with an object.
 
-Type annotations for `boto3.client("clouddirectory").list_object_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_object_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_attributes)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_attributes)
+```python title="Method definition"
+def list_object_attributes(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (2)
+    FacetFilter: SchemaFacetTypeDef = ...,  # (3)
+) -> ListObjectAttributesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListObjectAttributesRequestRequestTypeDef](./type_defs.md#listobjectattributesrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+3. See [:material-code-braces: SchemaFacetTypeDef](./type_defs.md#schemafacettypedef) 
+4. See [:material-code-braces: ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
-- `FacetFilter`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
+```python title="Usage example with kwargs"
+kwargs: ListObjectAttributesRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns
-[ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef).
+parent.list_object_attributes(**kwargs)
+```
 
-<a id="list\_object\_children"></a>
+1. See [:material-code-braces: ListObjectAttributesRequestRequestTypeDef](./type_defs.md#listobjectattributesrequestrequesttypedef) 
 
-### list_object_children
+### list\_object\_children
 
 Returns a paginated list of child objects that are associated with a given
 object.
 
-Type annotations for `boto3.client("clouddirectory").list_object_children`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_object_children` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_children)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_object_children](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_children)
+```python title="Method definition"
+def list_object_children(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (2)
+) -> ListObjectChildrenResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListObjectChildrenRequestRequestTypeDef](./type_defs.md#listobjectchildrenrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+3. See [:material-code-braces: ListObjectChildrenResponseTypeDef](./type_defs.md#listobjectchildrenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: ListObjectChildrenRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns
-[ListObjectChildrenResponseTypeDef](./type_defs.md#listobjectchildrenresponsetypedef).
+parent.list_object_children(**kwargs)
+```
 
-<a id="list\_object\_parent\_paths"></a>
+1. See [:material-code-braces: ListObjectChildrenRequestRequestTypeDef](./type_defs.md#listobjectchildrenrequestrequesttypedef) 
 
-### list_object_parent_paths
+### list\_object\_parent\_paths
 
 Retrieves all available parent paths for any object type such as node, leaf
 node, policy node, and index node objects.
 
-Type annotations for `boto3.client("clouddirectory").list_object_parent_paths`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_object_parent_paths` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parent_paths)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_object_parent_paths](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parent_paths)
+```python title="Method definition"
+def list_object_parent_paths(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListObjectParentPathsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListObjectParentPathsRequestRequestTypeDef](./type_defs.md#listobjectparentpathsrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListObjectParentPathsRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns
-[ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef).
+parent.list_object_parent_paths(**kwargs)
+```
 
-<a id="list\_object\_parents"></a>
+1. See [:material-code-braces: ListObjectParentPathsRequestRequestTypeDef](./type_defs.md#listobjectparentpathsrequestrequesttypedef) 
 
-### list_object_parents
+### list\_object\_parents
 
 Lists parent objects that are associated with a given object in pagination
 fashion.
 
-Type annotations for `boto3.client("clouddirectory").list_object_parents`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_object_parents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parents)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_object_parents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_parents)
+```python title="Method definition"
+def list_object_parents(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (2)
+    IncludeAllLinksToEachParent: bool = ...,
+) -> ListObjectParentsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListObjectParentsRequestRequestTypeDef](./type_defs.md#listobjectparentsrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+3. See [:material-code-braces: ListObjectParentsResponseTypeDef](./type_defs.md#listobjectparentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
-- `IncludeAllLinksToEachParent`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListObjectParentsRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns
-[ListObjectParentsResponseTypeDef](./type_defs.md#listobjectparentsresponsetypedef).
+parent.list_object_parents(**kwargs)
+```
 
-<a id="list\_object\_policies"></a>
+1. See [:material-code-braces: ListObjectParentsRequestRequestTypeDef](./type_defs.md#listobjectparentsrequestrequesttypedef) 
 
-### list_object_policies
+### list\_object\_policies
 
 Returns policies attached to an object in pagination fashion.
 
-Type annotations for `boto3.client("clouddirectory").list_object_policies`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_object_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_policies)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_object_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_object_policies)
+```python title="Method definition"
+def list_object_policies(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (2)
+) -> ListObjectPoliciesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListObjectPoliciesRequestRequestTypeDef](./type_defs.md#listobjectpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+3. See [:material-code-braces: ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: ListObjectPoliciesRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns
-[ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef).
+parent.list_object_policies(**kwargs)
+```
 
-<a id="list\_outgoing\_typed\_links"></a>
+1. See [:material-code-braces: ListObjectPoliciesRequestRequestTypeDef](./type_defs.md#listobjectpoliciesrequestrequesttypedef) 
 
-### list_outgoing_typed_links
+### list\_outgoing\_typed\_links
 
-Returns a paginated list of all the outgoing TypedLinkSpecifier information for
+Returns a paginated list of all the outgoing  TypedLinkSpecifier information for
 an object.
 
-Type annotations for `boto3.client("clouddirectory").list_outgoing_typed_links`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_outgoing_typed_links` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_outgoing_typed_links)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_outgoing_typed_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_outgoing_typed_links)
+```python title="Method definition"
+def list_outgoing_typed_links(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    FilterAttributeRanges: Sequence[TypedLinkAttributeRangeTypeDef] = ...,  # (2)
+    FilterTypedLink: TypedLinkSchemaAndFacetNameTypeDef = ...,  # (3)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (4)
+) -> ListOutgoingTypedLinksResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[ListOutgoingTypedLinksRequestRequestTypeDef](./type_defs.md#listoutgoingtypedlinksrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef) 
+3. See [:material-code-braces: TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef) 
+4. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+5. See [:material-code-braces: ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `FilterAttributeRanges`:
-  `Sequence`\[[TypedLinkAttributeRangeTypeDef](./type_defs.md#typedlinkattributerangetypedef)\]
-- `FilterTypedLink`:
-  [TypedLinkSchemaAndFacetNameTypeDef](./type_defs.md#typedlinkschemaandfacetnametypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: ListOutgoingTypedLinksRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns
-[ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef).
+parent.list_outgoing_typed_links(**kwargs)
+```
 
-<a id="list\_policy\_attachments"></a>
+1. See [:material-code-braces: ListOutgoingTypedLinksRequestRequestTypeDef](./type_defs.md#listoutgoingtypedlinksrequestrequesttypedef) 
 
-### list_policy_attachments
+### list\_policy\_attachments
 
 Returns all of the `ObjectIdentifiers` to which a given policy is attached.
 
-Type annotations for `boto3.client("clouddirectory").list_policy_attachments`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_policy_attachments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_policy_attachments)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_policy_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_policy_attachments)
+```python title="Method definition"
+def list_policy_attachments(
+    self,
+    *,
+    DirectoryArn: str,
+    PolicyReference: ObjectReferenceTypeDef,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ConsistencyLevel: ConsistencyLevelType = ...,  # (2)
+) -> ListPolicyAttachmentsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListPolicyAttachmentsRequestRequestTypeDef](./type_defs.md#listpolicyattachmentsrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-brackets: ConsistencyLevelType](./literals.md#consistencyleveltype) 
+3. See [:material-code-braces: ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `PolicyReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ConsistencyLevel`:
-  [ConsistencyLevelType](./literals.md#consistencyleveltype)
+```python title="Usage example with kwargs"
+kwargs: ListPolicyAttachmentsRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "PolicyReference": ...,
+}
 
-Returns
-[ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef).
+parent.list_policy_attachments(**kwargs)
+```
 
-<a id="list\_published\_schema\_arns"></a>
+1. See [:material-code-braces: ListPolicyAttachmentsRequestRequestTypeDef](./type_defs.md#listpolicyattachmentsrequestrequesttypedef) 
 
-### list_published_schema_arns
+### list\_published\_schema\_arns
 
 Lists the major version families of each published schema.
 
-Type annotations for
-`boto3.client("clouddirectory").list_published_schema_arns` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_published_schema_arns` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_published_schema_arns)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_published_schema_arns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_published_schema_arns)
+```python title="Method definition"
+def list_published_schema_arns(
+    self,
+    *,
+    SchemaArn: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPublishedSchemaArnsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPublishedSchemaArnsRequestRequestTypeDef](./type_defs.md#listpublishedschemaarnsrequestrequesttypedef).
+1. See [:material-code-braces: ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPublishedSchemaArnsRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+}
 
-Returns
-[ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef).
+parent.list_published_schema_arns(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListPublishedSchemaArnsRequestRequestTypeDef](./type_defs.md#listpublishedschemaarnsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns tags for a resource.
 
-Type annotations for `boto3.client("clouddirectory").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_typed\_link\_facet\_attributes"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_typed_link_facet_attributes
+### list\_typed\_link\_facet\_attributes
 
 Returns a paginated list of all attribute definitions for a particular
 TypedLinkFacet.
 
-Type annotations for
-`boto3.client("clouddirectory").list_typed_link_facet_attributes` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_typed_link_facet_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_attributes)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_typed_link_facet_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_attributes)
+```python title="Method definition"
+def list_typed_link_facet_attributes(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTypedLinkFacetAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTypedLinkFacetAttributesRequestRequestTypeDef](./type_defs.md#listtypedlinkfacetattributesrequestrequesttypedef).
+1. See [:material-code-braces: ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTypedLinkFacetAttributesRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+}
 
-Returns
-[ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef).
+parent.list_typed_link_facet_attributes(**kwargs)
+```
 
-<a id="list\_typed\_link\_facet\_names"></a>
+1. See [:material-code-braces: ListTypedLinkFacetAttributesRequestRequestTypeDef](./type_defs.md#listtypedlinkfacetattributesrequestrequesttypedef) 
 
-### list_typed_link_facet_names
+### list\_typed\_link\_facet\_names
 
 Returns a paginated list of `TypedLink` facet names for a particular schema.
 
-Type annotations for
-`boto3.client("clouddirectory").list_typed_link_facet_names` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").list_typed_link_facet_names` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_names)
 
-Boto3 documentation:
-[CloudDirectory.Client.list_typed_link_facet_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.list_typed_link_facet_names)
+```python title="Method definition"
+def list_typed_link_facet_names(
+    self,
+    *,
+    SchemaArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTypedLinkFacetNamesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTypedLinkFacetNamesRequestRequestTypeDef](./type_defs.md#listtypedlinkfacetnamesrequestrequesttypedef).
+1. See [:material-code-braces: ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTypedLinkFacetNamesRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+}
 
-Returns
-[ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef).
+parent.list_typed_link_facet_names(**kwargs)
+```
 
-<a id="lookup\_policy"></a>
+1. See [:material-code-braces: ListTypedLinkFacetNamesRequestRequestTypeDef](./type_defs.md#listtypedlinkfacetnamesrequestrequesttypedef) 
 
-### lookup_policy
+### lookup\_policy
 
-Lists all policies from the root of the Directory to the object specified.
+Lists all policies from the root of the  Directory to the object specified.
 
-Type annotations for `boto3.client("clouddirectory").lookup_policy` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").lookup_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.lookup_policy)
 
-Boto3 documentation:
-[CloudDirectory.Client.lookup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.lookup_policy)
+```python title="Method definition"
+def lookup_policy(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> LookupPolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[LookupPolicyRequestRequestTypeDef](./type_defs.md#lookuppolicyrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: LookupPolicyResponseTypeDef](./type_defs.md#lookuppolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: LookupPolicyRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+}
 
-Returns
-[LookupPolicyResponseTypeDef](./type_defs.md#lookuppolicyresponsetypedef).
+parent.lookup_policy(**kwargs)
+```
 
-<a id="publish\_schema"></a>
+1. See [:material-code-braces: LookupPolicyRequestRequestTypeDef](./type_defs.md#lookuppolicyrequestrequesttypedef) 
 
-### publish_schema
+### publish\_schema
 
 Publishes a development schema with a major version and a recommended minor
 version.
 
-Type annotations for `boto3.client("clouddirectory").publish_schema` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").publish_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.publish_schema)
 
-Boto3 documentation:
-[CloudDirectory.Client.publish_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.publish_schema)
+```python title="Method definition"
+def publish_schema(
+    self,
+    *,
+    DevelopmentSchemaArn: str,
+    Version: str,
+    MinorVersion: str = ...,
+    Name: str = ...,
+) -> PublishSchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PublishSchemaRequestRequestTypeDef](./type_defs.md#publishschemarequestrequesttypedef).
+1. See [:material-code-braces: PublishSchemaResponseTypeDef](./type_defs.md#publishschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DevelopmentSchemaArn`: `str` *(required)*
-- `Version`: `str` *(required)*
-- `MinorVersion`: `str`
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: PublishSchemaRequestRequestTypeDef = {  # (1)
+    "DevelopmentSchemaArn": ...,
+    "Version": ...,
+}
 
-Returns
-[PublishSchemaResponseTypeDef](./type_defs.md#publishschemaresponsetypedef).
+parent.publish_schema(**kwargs)
+```
 
-<a id="put\_schema\_from\_json"></a>
+1. See [:material-code-braces: PublishSchemaRequestRequestTypeDef](./type_defs.md#publishschemarequestrequesttypedef) 
 
-### put_schema_from_json
+### put\_schema\_from\_json
 
 Allows a schema to be updated using JSON upload.
 
-Type annotations for `boto3.client("clouddirectory").put_schema_from_json`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").put_schema_from_json` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.put_schema_from_json)
 
-Boto3 documentation:
-[CloudDirectory.Client.put_schema_from_json](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.put_schema_from_json)
+```python title="Method definition"
+def put_schema_from_json(
+    self,
+    *,
+    SchemaArn: str,
+    Document: str,
+) -> PutSchemaFromJsonResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutSchemaFromJsonRequestRequestTypeDef](./type_defs.md#putschemafromjsonrequestrequesttypedef).
+1. See [:material-code-braces: PutSchemaFromJsonResponseTypeDef](./type_defs.md#putschemafromjsonresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Document`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutSchemaFromJsonRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Document": ...,
+}
 
-Returns
-[PutSchemaFromJsonResponseTypeDef](./type_defs.md#putschemafromjsonresponsetypedef).
+parent.put_schema_from_json(**kwargs)
+```
 
-<a id="remove\_facet\_from\_object"></a>
+1. See [:material-code-braces: PutSchemaFromJsonRequestRequestTypeDef](./type_defs.md#putschemafromjsonrequestrequesttypedef) 
 
-### remove_facet_from_object
+### remove\_facet\_from\_object
 
 Removes the specified facet from the specified object.
 
-Type annotations for `boto3.client("clouddirectory").remove_facet_from_object`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").remove_facet_from_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.remove_facet_from_object)
 
-Boto3 documentation:
-[CloudDirectory.Client.remove_facet_from_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.remove_facet_from_object)
+```python title="Method definition"
+def remove_facet_from_object(
+    self,
+    *,
+    DirectoryArn: str,
+    SchemaFacet: SchemaFacetTypeDef,  # (1)
+    ObjectReference: ObjectReferenceTypeDef,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveFacetFromObjectRequestRequestTypeDef](./type_defs.md#removefacetfromobjectrequestrequesttypedef).
+1. See [:material-code-braces: SchemaFacetTypeDef](./type_defs.md#schemafacettypedef) 
+2. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `SchemaFacet`: [SchemaFacetTypeDef](./type_defs.md#schemafacettypedef)
-  *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveFacetFromObjectRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "SchemaFacet": ...,
+    "ObjectReference": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_facet_from_object(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RemoveFacetFromObjectRequestRequestTypeDef](./type_defs.md#removefacetfromobjectrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 An API operation for adding tags to a resource.
 
-Type annotations for `boto3.client("clouddirectory").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.tag_resource)
 
-Boto3 documentation:
-[CloudDirectory.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 An API operation for removing tags from a resource.
 
-Type annotations for `boto3.client("clouddirectory").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.untag_resource)
 
-Boto3 documentation:
-[CloudDirectory.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_facet"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_facet
+### update\_facet
 
 Does the following * Adds new `Attributes` , `Rules` , or `ObjectTypes` .
 
-Type annotations for `boto3.client("clouddirectory").update_facet` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").update_facet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_facet)
 
-Boto3 documentation:
-[CloudDirectory.Client.update_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_facet)
+```python title="Method definition"
+def update_facet(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+    AttributeUpdates: Sequence[FacetAttributeUpdateTypeDef] = ...,  # (1)
+    ObjectType: ObjectTypeType = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateFacetRequestRequestTypeDef](./type_defs.md#updatefacetrequestrequesttypedef).
+1. See [:material-code-braces: FacetAttributeUpdateTypeDef](./type_defs.md#facetattributeupdatetypedef) 
+2. See [:material-code-brackets: ObjectTypeType](./literals.md#objecttypetype) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `AttributeUpdates`:
-  `Sequence`\[[FacetAttributeUpdateTypeDef](./type_defs.md#facetattributeupdatetypedef)\]
-- `ObjectType`: [ObjectTypeType](./literals.md#objecttypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateFacetRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_facet(**kwargs)
+```
 
-<a id="update\_link\_attributes"></a>
+1. See [:material-code-braces: UpdateFacetRequestRequestTypeDef](./type_defs.md#updatefacetrequestrequesttypedef) 
 
-### update_link_attributes
+### update\_link\_attributes
 
 Updates a given typed link’s attributes.
 
-Type annotations for `boto3.client("clouddirectory").update_link_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").update_link_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_link_attributes)
 
-Boto3 documentation:
-[CloudDirectory.Client.update_link_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_link_attributes)
+```python title="Method definition"
+def update_link_attributes(
+    self,
+    *,
+    DirectoryArn: str,
+    TypedLinkSpecifier: TypedLinkSpecifierTypeDef,  # (1)
+    AttributeUpdates: Sequence[LinkAttributeUpdateTypeDef],  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLinkAttributesRequestRequestTypeDef](./type_defs.md#updatelinkattributesrequestrequesttypedef).
+1. See [:material-code-braces: TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef) 
+2. See [:material-code-braces: LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `TypedLinkSpecifier`:
-  [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
-  *(required)*
-- `AttributeUpdates`:
-  `Sequence`\[[LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateLinkAttributesRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "TypedLinkSpecifier": ...,
+    "AttributeUpdates": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_link_attributes(**kwargs)
+```
 
-<a id="update\_object\_attributes"></a>
+1. See [:material-code-braces: UpdateLinkAttributesRequestRequestTypeDef](./type_defs.md#updatelinkattributesrequestrequesttypedef) 
 
-### update_object_attributes
+### update\_object\_attributes
 
 Updates a given object's attributes.
 
-Type annotations for `boto3.client("clouddirectory").update_object_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").update_object_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_object_attributes)
 
-Boto3 documentation:
-[CloudDirectory.Client.update_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_object_attributes)
+```python title="Method definition"
+def update_object_attributes(
+    self,
+    *,
+    DirectoryArn: str,
+    ObjectReference: ObjectReferenceTypeDef,  # (1)
+    AttributeUpdates: Sequence[ObjectAttributeUpdateTypeDef],  # (2)
+) -> UpdateObjectAttributesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateObjectAttributesRequestRequestTypeDef](./type_defs.md#updateobjectattributesrequestrequesttypedef).
+1. See [:material-code-braces: ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) 
+2. See [:material-code-braces: ObjectAttributeUpdateTypeDef](./type_defs.md#objectattributeupdatetypedef) 
+3. See [:material-code-braces: UpdateObjectAttributesResponseTypeDef](./type_defs.md#updateobjectattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryArn`: `str` *(required)*
-- `ObjectReference`:
-  [ObjectReferenceTypeDef](./type_defs.md#objectreferencetypedef) *(required)*
-- `AttributeUpdates`:
-  `Sequence`\[[ObjectAttributeUpdateTypeDef](./type_defs.md#objectattributeupdatetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateObjectAttributesRequestRequestTypeDef = {  # (1)
+    "DirectoryArn": ...,
+    "ObjectReference": ...,
+    "AttributeUpdates": ...,
+}
 
-Returns
-[UpdateObjectAttributesResponseTypeDef](./type_defs.md#updateobjectattributesresponsetypedef).
+parent.update_object_attributes(**kwargs)
+```
 
-<a id="update\_schema"></a>
+1. See [:material-code-braces: UpdateObjectAttributesRequestRequestTypeDef](./type_defs.md#updateobjectattributesrequestrequesttypedef) 
 
-### update_schema
+### update\_schema
 
 Updates the schema name with a new name.
 
-Type annotations for `boto3.client("clouddirectory").update_schema` method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").update_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_schema)
 
-Boto3 documentation:
-[CloudDirectory.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_schema)
+```python title="Method definition"
+def update_schema(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+) -> UpdateSchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSchemaRequestRequestTypeDef](./type_defs.md#updateschemarequestrequesttypedef).
+1. See [:material-code-braces: UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSchemaRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
+parent.update_schema(**kwargs)
+```
 
-<a id="update\_typed\_link\_facet"></a>
+1. See [:material-code-braces: UpdateSchemaRequestRequestTypeDef](./type_defs.md#updateschemarequestrequesttypedef) 
 
-### update_typed_link_facet
+### update\_typed\_link\_facet
 
-Updates a TypedLinkFacet.
+Updates a  TypedLinkFacet.
 
-Type annotations for `boto3.client("clouddirectory").update_typed_link_facet`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").update_typed_link_facet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_typed_link_facet)
 
-Boto3 documentation:
-[CloudDirectory.Client.update_typed_link_facet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.update_typed_link_facet)
+```python title="Method definition"
+def update_typed_link_facet(
+    self,
+    *,
+    SchemaArn: str,
+    Name: str,
+    AttributeUpdates: Sequence[TypedLinkFacetAttributeUpdateTypeDef],  # (1)
+    IdentityAttributeOrder: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateTypedLinkFacetRequestRequestTypeDef](./type_defs.md#updatetypedlinkfacetrequestrequesttypedef).
+1. See [:material-code-braces: TypedLinkFacetAttributeUpdateTypeDef](./type_defs.md#typedlinkfacetattributeupdatetypedef) 
 
-Keyword-only arguments:
 
-- `SchemaArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `AttributeUpdates`:
-  `Sequence`\[[TypedLinkFacetAttributeUpdateTypeDef](./type_defs.md#typedlinkfacetattributeupdatetypedef)\]
-  *(required)*
-- `IdentityAttributeOrder`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTypedLinkFacetRequestRequestTypeDef = {  # (1)
+    "SchemaArn": ...,
+    "Name": ...,
+    "AttributeUpdates": ...,
+    "IdentityAttributeOrder": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_typed_link_facet(**kwargs)
+```
 
-<a id="upgrade\_applied\_schema"></a>
+1. See [:material-code-braces: UpdateTypedLinkFacetRequestRequestTypeDef](./type_defs.md#updatetypedlinkfacetrequestrequesttypedef) 
 
-### upgrade_applied_schema
+### upgrade\_applied\_schema
 
 Upgrades a single directory in-place using the `PublishedSchemaArn` with schema
 updates found in `MinorVersion`.
 
-Type annotations for `boto3.client("clouddirectory").upgrade_applied_schema`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").upgrade_applied_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_applied_schema)
 
-Boto3 documentation:
-[CloudDirectory.Client.upgrade_applied_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_applied_schema)
+```python title="Method definition"
+def upgrade_applied_schema(
+    self,
+    *,
+    PublishedSchemaArn: str,
+    DirectoryArn: str,
+    DryRun: bool = ...,
+) -> UpgradeAppliedSchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpgradeAppliedSchemaRequestRequestTypeDef](./type_defs.md#upgradeappliedschemarequestrequesttypedef).
+1. See [:material-code-braces: UpgradeAppliedSchemaResponseTypeDef](./type_defs.md#upgradeappliedschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PublishedSchemaArn`: `str` *(required)*
-- `DirectoryArn`: `str` *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpgradeAppliedSchemaRequestRequestTypeDef = {  # (1)
+    "PublishedSchemaArn": ...,
+    "DirectoryArn": ...,
+}
 
-Returns
-[UpgradeAppliedSchemaResponseTypeDef](./type_defs.md#upgradeappliedschemaresponsetypedef).
+parent.upgrade_applied_schema(**kwargs)
+```
 
-<a id="upgrade\_published\_schema"></a>
+1. See [:material-code-braces: UpgradeAppliedSchemaRequestRequestTypeDef](./type_defs.md#upgradeappliedschemarequestrequesttypedef) 
 
-### upgrade_published_schema
+### upgrade\_published\_schema
 
-Upgrades a published schema under a new minor version revision using the
-current contents of `DevelopmentSchemaArn` .
+Upgrades a published schema under a new minor version revision using the current
+contents of `DevelopmentSchemaArn` .
 
-Type annotations for `boto3.client("clouddirectory").upgrade_published_schema`
-method.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").upgrade_published_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_published_schema)
 
-Boto3 documentation:
-[CloudDirectory.Client.upgrade_published_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client.upgrade_published_schema)
+```python title="Method definition"
+def upgrade_published_schema(
+    self,
+    *,
+    DevelopmentSchemaArn: str,
+    PublishedSchemaArn: str,
+    MinorVersion: str,
+    DryRun: bool = ...,
+) -> UpgradePublishedSchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpgradePublishedSchemaRequestRequestTypeDef](./type_defs.md#upgradepublishedschemarequestrequesttypedef).
+1. See [:material-code-braces: UpgradePublishedSchemaResponseTypeDef](./type_defs.md#upgradepublishedschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DevelopmentSchemaArn`: `str` *(required)*
-- `PublishedSchemaArn`: `str` *(required)*
-- `MinorVersion`: `str` *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpgradePublishedSchemaRequestRequestTypeDef = {  # (1)
+    "DevelopmentSchemaArn": ...,
+    "PublishedSchemaArn": ...,
+    "MinorVersion": ...,
+}
 
-Returns
-[UpgradePublishedSchemaResponseTypeDef](./type_defs.md#upgradepublishedschemaresponsetypedef).
+parent.upgrade_published_schema(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpgradePublishedSchemaRequestRequestTypeDef](./type_defs.md#upgradepublishedschemarequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("clouddirectory").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("clouddirectory").get_paginator` method with overloads.
 
-- `client.get_paginator("list_applied_schema_arns")` ->
-  [ListAppliedSchemaArnsPaginator](./paginators.md#listappliedschemaarnspaginator)
-- `client.get_paginator("list_attached_indices")` ->
-  [ListAttachedIndicesPaginator](./paginators.md#listattachedindicespaginator)
-- `client.get_paginator("list_development_schema_arns")` ->
-  [ListDevelopmentSchemaArnsPaginator](./paginators.md#listdevelopmentschemaarnspaginator)
-- `client.get_paginator("list_directories")` ->
-  [ListDirectoriesPaginator](./paginators.md#listdirectoriespaginator)
-- `client.get_paginator("list_facet_attributes")` ->
-  [ListFacetAttributesPaginator](./paginators.md#listfacetattributespaginator)
-- `client.get_paginator("list_facet_names")` ->
-  [ListFacetNamesPaginator](./paginators.md#listfacetnamespaginator)
-- `client.get_paginator("list_incoming_typed_links")` ->
-  [ListIncomingTypedLinksPaginator](./paginators.md#listincomingtypedlinkspaginator)
-- `client.get_paginator("list_index")` ->
-  [ListIndexPaginator](./paginators.md#listindexpaginator)
-- `client.get_paginator("list_managed_schema_arns")` ->
-  [ListManagedSchemaArnsPaginator](./paginators.md#listmanagedschemaarnspaginator)
-- `client.get_paginator("list_object_attributes")` ->
-  [ListObjectAttributesPaginator](./paginators.md#listobjectattributespaginator)
-- `client.get_paginator("list_object_parent_paths")` ->
-  [ListObjectParentPathsPaginator](./paginators.md#listobjectparentpathspaginator)
-- `client.get_paginator("list_object_policies")` ->
-  [ListObjectPoliciesPaginator](./paginators.md#listobjectpoliciespaginator)
-- `client.get_paginator("list_outgoing_typed_links")` ->
-  [ListOutgoingTypedLinksPaginator](./paginators.md#listoutgoingtypedlinkspaginator)
-- `client.get_paginator("list_policy_attachments")` ->
-  [ListPolicyAttachmentsPaginator](./paginators.md#listpolicyattachmentspaginator)
-- `client.get_paginator("list_published_schema_arns")` ->
-  [ListPublishedSchemaArnsPaginator](./paginators.md#listpublishedschemaarnspaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_typed_link_facet_attributes")` ->
-  [ListTypedLinkFacetAttributesPaginator](./paginators.md#listtypedlinkfacetattributespaginator)
-- `client.get_paginator("list_typed_link_facet_names")` ->
-  [ListTypedLinkFacetNamesPaginator](./paginators.md#listtypedlinkfacetnamespaginator)
-- `client.get_paginator("lookup_policy")` ->
-  [LookupPolicyPaginator](./paginators.md#lookuppolicypaginator)
+- `client.get_paginator("list_applied_schema_arns")` -> [ListAppliedSchemaArnsPaginator](./paginators.md#listappliedschemaarnspaginator)
+- `client.get_paginator("list_attached_indices")` -> [ListAttachedIndicesPaginator](./paginators.md#listattachedindicespaginator)
+- `client.get_paginator("list_development_schema_arns")` -> [ListDevelopmentSchemaArnsPaginator](./paginators.md#listdevelopmentschemaarnspaginator)
+- `client.get_paginator("list_directories")` -> [ListDirectoriesPaginator](./paginators.md#listdirectoriespaginator)
+- `client.get_paginator("list_facet_attributes")` -> [ListFacetAttributesPaginator](./paginators.md#listfacetattributespaginator)
+- `client.get_paginator("list_facet_names")` -> [ListFacetNamesPaginator](./paginators.md#listfacetnamespaginator)
+- `client.get_paginator("list_incoming_typed_links")` -> [ListIncomingTypedLinksPaginator](./paginators.md#listincomingtypedlinkspaginator)
+- `client.get_paginator("list_index")` -> [ListIndexPaginator](./paginators.md#listindexpaginator)
+- `client.get_paginator("list_managed_schema_arns")` -> [ListManagedSchemaArnsPaginator](./paginators.md#listmanagedschemaarnspaginator)
+- `client.get_paginator("list_object_attributes")` -> [ListObjectAttributesPaginator](./paginators.md#listobjectattributespaginator)
+- `client.get_paginator("list_object_parent_paths")` -> [ListObjectParentPathsPaginator](./paginators.md#listobjectparentpathspaginator)
+- `client.get_paginator("list_object_policies")` -> [ListObjectPoliciesPaginator](./paginators.md#listobjectpoliciespaginator)
+- `client.get_paginator("list_outgoing_typed_links")` -> [ListOutgoingTypedLinksPaginator](./paginators.md#listoutgoingtypedlinkspaginator)
+- `client.get_paginator("list_policy_attachments")` -> [ListPolicyAttachmentsPaginator](./paginators.md#listpolicyattachmentspaginator)
+- `client.get_paginator("list_published_schema_arns")` -> [ListPublishedSchemaArnsPaginator](./paginators.md#listpublishedschemaarnspaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_typed_link_facet_attributes")` -> [ListTypedLinkFacetAttributesPaginator](./paginators.md#listtypedlinkfacetattributespaginator)
+- `client.get_paginator("list_typed_link_facet_names")` -> [ListTypedLinkFacetNamesPaginator](./paginators.md#listtypedlinkfacetnamespaginator)
+- `client.get_paginator("lookup_policy")` -> [LookupPolicyPaginator](./paginators.md#lookuppolicypaginator)
+
+
+

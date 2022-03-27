@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-elasticsearchservice-module"></a>
-
-# Type annotations for boto3 ElasticsearchService module
+#  ElasticsearchService module
 
 > [Index](../README.md) > ElasticsearchService
 
-Auto-generated documentation for
-[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
-type annotations stubs module
-[mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
+!!! note ""
 
-- [Type annotations for boto3 ElasticsearchService module](#type-annotations-for-boto3-elasticsearchservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ElasticsearchServiceClient](#elasticsearchserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
+    type annotations stubs module [mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ElasticsearchService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[es]'
 python -m pip install mypy-boto3-es
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,105 +42,37 @@ python -m pip install mypy-boto3-es
 python -m pip uninstall -y mypy-boto3-es
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="elasticsearchserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ElasticsearchServiceClient
 
-Type annotations for `boto3.client("es")` as
-[ElasticsearchServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("es")` as [ElasticsearchServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_es.client import ElasticsearchServiceClient
+
+def get_client() -> ElasticsearchServiceClient:
+    return Session().cleint("es")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_inbound_cross_cluster_search_connection](./client.md#accept_inbound_cross_cluster_search_connection)
-- [add_tags](./client.md#add_tags)
-- [associate_package](./client.md#associate_package)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_elasticsearch_service_software_update](./client.md#cancel_elasticsearch_service_software_update)
-- [create_elasticsearch_domain](./client.md#create_elasticsearch_domain)
-- [create_outbound_cross_cluster_search_connection](./client.md#create_outbound_cross_cluster_search_connection)
-- [create_package](./client.md#create_package)
-- [delete_elasticsearch_domain](./client.md#delete_elasticsearch_domain)
-- [delete_elasticsearch_service_role](./client.md#delete_elasticsearch_service_role)
-- [delete_inbound_cross_cluster_search_connection](./client.md#delete_inbound_cross_cluster_search_connection)
-- [delete_outbound_cross_cluster_search_connection](./client.md#delete_outbound_cross_cluster_search_connection)
-- [delete_package](./client.md#delete_package)
-- [describe_domain_auto_tunes](./client.md#describe_domain_auto_tunes)
-- [describe_domain_change_progress](./client.md#describe_domain_change_progress)
-- [describe_elasticsearch_domain](./client.md#describe_elasticsearch_domain)
-- [describe_elasticsearch_domain_config](./client.md#describe_elasticsearch_domain_config)
-- [describe_elasticsearch_domains](./client.md#describe_elasticsearch_domains)
-- [describe_elasticsearch_instance_type_limits](./client.md#describe_elasticsearch_instance_type_limits)
-- [describe_inbound_cross_cluster_search_connections](./client.md#describe_inbound_cross_cluster_search_connections)
-- [describe_outbound_cross_cluster_search_connections](./client.md#describe_outbound_cross_cluster_search_connections)
-- [describe_packages](./client.md#describe_packages)
-- [describe_reserved_elasticsearch_instance_offerings](./client.md#describe_reserved_elasticsearch_instance_offerings)
-- [describe_reserved_elasticsearch_instances](./client.md#describe_reserved_elasticsearch_instances)
-- [dissociate_package](./client.md#dissociate_package)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_compatible_elasticsearch_versions](./client.md#get_compatible_elasticsearch_versions)
-- [get_package_version_history](./client.md#get_package_version_history)
-- [get_paginator](./client.md#get_paginator)
-- [get_upgrade_history](./client.md#get_upgrade_history)
-- [get_upgrade_status](./client.md#get_upgrade_status)
-- [list_domain_names](./client.md#list_domain_names)
-- [list_domains_for_package](./client.md#list_domains_for_package)
-- [list_elasticsearch_instance_types](./client.md#list_elasticsearch_instance_types)
-- [list_elasticsearch_versions](./client.md#list_elasticsearch_versions)
-- [list_packages_for_domain](./client.md#list_packages_for_domain)
-- [list_tags](./client.md#list_tags)
-- [purchase_reserved_elasticsearch_instance_offering](./client.md#purchase_reserved_elasticsearch_instance_offering)
-- [reject_inbound_cross_cluster_search_connection](./client.md#reject_inbound_cross_cluster_search_connection)
-- [remove_tags](./client.md#remove_tags)
-- [start_elasticsearch_service_software_update](./client.md#start_elasticsearch_service_software_update)
-- [update_elasticsearch_domain_config](./client.md#update_elasticsearch_domain_config)
-- [update_package](./client.md#update_package)
-- [upgrade_elasticsearch_domain](./client.md#upgrade_elasticsearch_domain)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ElasticsearchServiceClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- BaseException
-- ClientError
-- ConflictException
-- DisabledOperationException
-- InternalException
-- InvalidPaginationTokenException
-- InvalidTypeException
-- LimitExceededException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("es").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("es").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferingsPaginator, ...
+from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferingsPaginator
+
+def get_describe_reserved_elasticsearch_instance_offerings_paginator() -> DescribeReservedElasticsearchInstanceOfferingsPaginator:
+    return Session().client("es").get_paginator("describe_reserved_elasticsearch_instance_offerings"))
 ```
 
 - [DescribeReservedElasticsearchInstanceOfferingsPaginator](./paginators.md#describereservedelasticsearchinstanceofferingspaginator)
@@ -171,16 +81,23 @@ from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferin
 - [ListElasticsearchInstanceTypesPaginator](./paginators.md#listelasticsearchinstancetypespaginator)
 - [ListElasticsearchVersionsPaginator](./paginators.md#listelasticsearchversionspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_es.literals import AutoTuneDesiredStateType
 
-```python
-from mypy_boto3_es.literals import AutoTuneDesiredStateType, ...
+def get_value() -> AutoTuneDesiredStateType:
+    return "DISABLED"
 ```
 
 - [AutoTuneDesiredStateType](./literals.md#autotunedesiredstatetype)
@@ -217,18 +134,22 @@ from mypy_boto3_es.literals import AutoTuneDesiredStateType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDef
 
-```python
-from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDef, ...
+def get_value() -> AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDef:
+    return {
+        "CrossClusterSearchConnectionId": ...,
+    }
 ```
 
 - [AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionrequestrequesttypedef)
@@ -292,8 +213,10 @@ from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionReq
 - [DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)
 - [DescribePackagesRequestRequestTypeDef](./type_defs.md#describepackagesrequestrequesttypedef)
 - [DescribePackagesResponseTypeDef](./type_defs.md#describepackagesresponsetypedef)
+- [DescribeReservedElasticsearchInstanceOfferingsRequestDescribeReservedElasticsearchInstanceOfferingsPaginateTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsrequestdescribereservedelasticsearchinstanceofferingspaginatetypedef)
 - [DescribeReservedElasticsearchInstanceOfferingsRequestRequestTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsrequestrequesttypedef)
 - [DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef)
+- [DescribeReservedElasticsearchInstancesRequestDescribeReservedElasticsearchInstancesPaginateTypeDef](./type_defs.md#describereservedelasticsearchinstancesrequestdescribereservedelasticsearchinstancespaginatetypedef)
 - [DescribeReservedElasticsearchInstancesRequestRequestTypeDef](./type_defs.md#describereservedelasticsearchinstancesrequestrequesttypedef)
 - [DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef)
 - [DissociatePackageRequestRequestTypeDef](./type_defs.md#dissociatepackagerequestrequesttypedef)
@@ -320,6 +243,7 @@ from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionReq
 - [GetCompatibleElasticsearchVersionsResponseTypeDef](./type_defs.md#getcompatibleelasticsearchversionsresponsetypedef)
 - [GetPackageVersionHistoryRequestRequestTypeDef](./type_defs.md#getpackageversionhistoryrequestrequesttypedef)
 - [GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef)
+- [GetUpgradeHistoryRequestGetUpgradeHistoryPaginateTypeDef](./type_defs.md#getupgradehistoryrequestgetupgradehistorypaginatetypedef)
 - [GetUpgradeHistoryRequestRequestTypeDef](./type_defs.md#getupgradehistoryrequestrequesttypedef)
 - [GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef)
 - [GetUpgradeStatusRequestRequestTypeDef](./type_defs.md#getupgradestatusrequestrequesttypedef)
@@ -333,8 +257,10 @@ from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionReq
 - [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef)
 - [ListDomainsForPackageRequestRequestTypeDef](./type_defs.md#listdomainsforpackagerequestrequesttypedef)
 - [ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef)
+- [ListElasticsearchInstanceTypesRequestListElasticsearchInstanceTypesPaginateTypeDef](./type_defs.md#listelasticsearchinstancetypesrequestlistelasticsearchinstancetypespaginatetypedef)
 - [ListElasticsearchInstanceTypesRequestRequestTypeDef](./type_defs.md#listelasticsearchinstancetypesrequestrequesttypedef)
 - [ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef)
+- [ListElasticsearchVersionsRequestListElasticsearchVersionsPaginateTypeDef](./type_defs.md#listelasticsearchversionsrequestlistelasticsearchversionspaginatetypedef)
 - [ListElasticsearchVersionsRequestRequestTypeDef](./type_defs.md#listelasticsearchversionsrequestrequesttypedef)
 - [ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef)
 - [ListPackagesForDomainRequestRequestTypeDef](./type_defs.md#listpackagesfordomainrequestrequesttypedef)
@@ -386,3 +312,4 @@ from mypy_boto3_es.type_defs import AcceptInboundCrossClusterSearchConnectionReq
 - [VPCDerivedInfoTypeDef](./type_defs.md#vpcderivedinfotypedef)
 - [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
 - [ZoneAwarenessConfigTypeDef](./type_defs.md#zoneawarenessconfigtypedef)
+

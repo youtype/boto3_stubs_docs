@@ -1,41 +1,18 @@
-<a id="paginators-for-boto3-route53resolver-module"></a>
-
-# Paginators for boto3 Route53Resolver module
+# Paginators
 
 > [Index](../README.md) > [Route53Resolver](./README.md) > Paginators
 
-Auto-generated documentation for
-[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
-type annotations stubs module
-[mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+!!! note ""
 
-- [Paginators for boto3 Route53Resolver module](#paginators-for-boto3-route53resolver-module)
-  - [ListFirewallConfigsPaginator](#listfirewallconfigspaginator)
-  - [ListFirewallDomainListsPaginator](#listfirewalldomainlistspaginator)
-  - [ListFirewallDomainsPaginator](#listfirewalldomainspaginator)
-  - [ListFirewallRuleGroupAssociationsPaginator](#listfirewallrulegroupassociationspaginator)
-  - [ListFirewallRuleGroupsPaginator](#listfirewallrulegroupspaginator)
-  - [ListFirewallRulesPaginator](#listfirewallrulespaginator)
-  - [ListResolverConfigsPaginator](#listresolverconfigspaginator)
-  - [ListResolverDnssecConfigsPaginator](#listresolverdnssecconfigspaginator)
-  - [ListResolverEndpointIpAddressesPaginator](#listresolverendpointipaddressespaginator)
-  - [ListResolverEndpointsPaginator](#listresolverendpointspaginator)
-  - [ListResolverQueryLogConfigAssociationsPaginator](#listresolverquerylogconfigassociationspaginator)
-  - [ListResolverQueryLogConfigsPaginator](#listresolverquerylogconfigspaginator)
-  - [ListResolverRuleAssociationsPaginator](#listresolverruleassociationspaginator)
-  - [ListResolverRulesPaginator](#listresolverrulespaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-
-<a id="listfirewallconfigspaginator"></a>
+    Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+    type annotations stubs module [mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 ## ListFirewallConfigsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_firewall_configs")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_firewall_configs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallConfigs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListFirewallConfigsPaginator
@@ -44,27 +21,39 @@ def get_list_firewall_configs_paginator() -> ListFirewallConfigsPaginator:
     return Session().client("route53resolver").get_paginator("list_firewall_configs")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallConfigs)
 
-Arguments for `ListFirewallConfigsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFirewallConfigsPaginator.paginate` method.
 
-`ListFirewallConfigsPaginator.paginate` returns
-`_PageIterator`\[[ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFirewallConfigsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfirewalldomainlistspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef](./type_defs.md#listfirewallconfigsrequestlistfirewallconfigspaginatetypedef) 
 ## ListFirewallDomainListsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_firewall_domain_lists")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_firewall_domain_lists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomainLists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListFirewallDomainListsPaginator
@@ -73,27 +62,39 @@ def get_list_firewall_domain_lists_paginator() -> ListFirewallDomainListsPaginat
     return Session().client("route53resolver").get_paginator("list_firewall_domain_lists")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallDomainLists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomainLists)
 
-Arguments for `ListFirewallDomainListsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFirewallDomainListsPaginator.paginate` method.
 
-`ListFirewallDomainListsPaginator.paginate` returns
-`_PageIterator`\[[ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFirewallDomainListsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfirewalldomainspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef](./type_defs.md#listfirewalldomainlistsrequestlistfirewalldomainlistspaginatetypedef) 
 ## ListFirewallDomainsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_firewall_domains")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_firewall_domains")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomains)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListFirewallDomainsPaginator
@@ -102,28 +103,40 @@ def get_list_firewall_domains_paginator() -> ListFirewallDomainsPaginator:
     return Session().client("route53resolver").get_paginator("list_firewall_domains")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallDomains)
 
-Arguments for `ListFirewallDomainsPaginator.paginate` method:
+### paginate
 
-- `FirewallDomainListId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFirewallDomainsPaginator.paginate` method.
 
-`ListFirewallDomainsPaginator.paginate` returns
-`_PageIterator`\[[ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FirewallDomainListId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFirewallDomainsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfirewallrulegroupassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef = {  # (1)
+    "FirewallDomainListId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef](./type_defs.md#listfirewalldomainsrequestlistfirewalldomainspaginatetypedef) 
 ## ListFirewallRuleGroupAssociationsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_firewall_rule_group_associations")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_firewall_rule_group_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroupAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListFirewallRuleGroupAssociationsPaginator
@@ -132,32 +145,44 @@ def get_list_firewall_rule_group_associations_paginator() -> ListFirewallRuleGro
     return Session().client("route53resolver").get_paginator("list_firewall_rule_group_associations")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallRuleGroupAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroupAssociations)
 
-Arguments for `ListFirewallRuleGroupAssociationsPaginator.paginate` method:
+### paginate
 
-- `FirewallRuleGroupId`: `str`
-- `VpcId`: `str`
-- `Priority`: `int`
-- `Status`:
-  [FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFirewallRuleGroupAssociationsPaginator.paginate` method.
 
-`ListFirewallRuleGroupAssociationsPaginator.paginate` returns
-`_PageIterator`\[[ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FirewallRuleGroupId: str = ...,
+    VpcId: str = ...,
+    Priority: int = ...,
+    Status: FirewallRuleGroupAssociationStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListFirewallRuleGroupAssociationsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listfirewallrulegroupspaginator"></a>
+1. See [:material-code-brackets: FirewallRuleGroupAssociationStatusType](./literals.md#firewallrulegroupassociationstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef = {  # (1)
+    "FirewallRuleGroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef](./type_defs.md#listfirewallrulegroupassociationsrequestlistfirewallrulegroupassociationspaginatetypedef) 
 ## ListFirewallRuleGroupsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_firewall_rule_groups")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_firewall_rule_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListFirewallRuleGroupsPaginator
@@ -166,27 +191,39 @@ def get_list_firewall_rule_groups_paginator() -> ListFirewallRuleGroupsPaginator
     return Session().client("route53resolver").get_paginator("list_firewall_rule_groups")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRuleGroups)
 
-Arguments for `ListFirewallRuleGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFirewallRuleGroupsPaginator.paginate` method.
 
-`ListFirewallRuleGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFirewallRuleGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfirewallrulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef](./type_defs.md#listfirewallrulegroupsrequestlistfirewallrulegroupspaginatetypedef) 
 ## ListFirewallRulesPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_firewall_rules")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_firewall_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListFirewallRulesPaginator
@@ -195,30 +232,43 @@ def get_list_firewall_rules_paginator() -> ListFirewallRulesPaginator:
     return Session().client("route53resolver").get_paginator("list_firewall_rules")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListFirewallRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListFirewallRules)
 
-Arguments for `ListFirewallRulesPaginator.paginate` method:
+### paginate
 
-- `FirewallRuleGroupId`: `str` *(required)*
-- `Priority`: `int`
-- `Action`: [ActionType](./literals.md#actiontype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFirewallRulesPaginator.paginate` method.
 
-`ListFirewallRulesPaginator.paginate` returns
-`_PageIterator`\[[ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FirewallRuleGroupId: str,
+    Priority: int = ...,
+    Action: ActionType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListFirewallRulesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listresolverconfigspaginator"></a>
+1. See [:material-code-brackets: ActionType](./literals.md#actiontype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFirewallRulesRequestListFirewallRulesPaginateTypeDef = {  # (1)
+    "FirewallRuleGroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFirewallRulesRequestListFirewallRulesPaginateTypeDef](./type_defs.md#listfirewallrulesrequestlistfirewallrulespaginatetypedef) 
 ## ListResolverConfigsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_resolver_configs")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_resolver_configs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverConfigs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListResolverConfigsPaginator
@@ -227,27 +277,39 @@ def get_list_resolver_configs_paginator() -> ListResolverConfigsPaginator:
     return Session().client("route53resolver").get_paginator("list_resolver_configs")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverConfigs)
 
-Arguments for `ListResolverConfigsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolverConfigsPaginator.paginate` method.
 
-`ListResolverConfigsPaginator.paginate` returns
-`_PageIterator`\[[ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResolverConfigsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresolverdnssecconfigspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolverConfigsRequestListResolverConfigsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolverConfigsRequestListResolverConfigsPaginateTypeDef](./type_defs.md#listresolverconfigsrequestlistresolverconfigspaginatetypedef) 
 ## ListResolverDnssecConfigsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_resolver_dnssec_configs")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_resolver_dnssec_configs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverDnssecConfigs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListResolverDnssecConfigsPaginator
@@ -256,28 +318,41 @@ def get_list_resolver_dnssec_configs_paginator() -> ListResolverDnssecConfigsPag
     return Session().client("route53resolver").get_paginator("list_resolver_dnssec_configs")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverDnssecConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverDnssecConfigs)
 
-Arguments for `ListResolverDnssecConfigsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolverDnssecConfigsPaginator.paginate` method.
 
-`ListResolverDnssecConfigsPaginator.paginate` returns
-`_PageIterator`\[[ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListResolverDnssecConfigsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listresolverendpointipaddressespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef](./type_defs.md#listresolverdnssecconfigsrequestlistresolverdnssecconfigspaginatetypedef) 
 ## ListResolverEndpointIpAddressesPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_resolver_endpoint_ip_addresses")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_resolver_endpoint_ip_addresses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpointIpAddresses)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListResolverEndpointIpAddressesPaginator
@@ -286,28 +361,40 @@ def get_list_resolver_endpoint_ip_addresses_paginator() -> ListResolverEndpointI
     return Session().client("route53resolver").get_paginator("list_resolver_endpoint_ip_addresses")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverEndpointIpAddresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpointIpAddresses)
 
-Arguments for `ListResolverEndpointIpAddressesPaginator.paginate` method:
+### paginate
 
-- `ResolverEndpointId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolverEndpointIpAddressesPaginator.paginate` method.
 
-`ListResolverEndpointIpAddressesPaginator.paginate` returns
-`_PageIterator`\[[ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResolverEndpointId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResolverEndpointIpAddressesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresolverendpointspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef = {  # (1)
+    "ResolverEndpointId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef](./type_defs.md#listresolverendpointipaddressesrequestlistresolverendpointipaddressespaginatetypedef) 
 ## ListResolverEndpointsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_resolver_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_resolver_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListResolverEndpointsPaginator
@@ -316,28 +403,41 @@ def get_list_resolver_endpoints_paginator() -> ListResolverEndpointsPaginator:
     return Session().client("route53resolver").get_paginator("list_resolver_endpoints")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverEndpoints)
 
-Arguments for `ListResolverEndpointsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolverEndpointsPaginator.paginate` method.
 
-`ListResolverEndpointsPaginator.paginate` returns
-`_PageIterator`\[[ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListResolverEndpointsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listresolverquerylogconfigassociationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef](./type_defs.md#listresolverendpointsrequestlistresolverendpointspaginatetypedef) 
 ## ListResolverQueryLogConfigAssociationsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_resolver_query_log_config_associations")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_resolver_query_log_config_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListResolverQueryLogConfigAssociationsPaginator
@@ -346,31 +446,44 @@ def get_list_resolver_query_log_config_associations_paginator() -> ListResolverQ
     return Session().client("route53resolver").get_paginator("list_resolver_query_log_config_associations")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigAssociations)
 
-Arguments for `ListResolverQueryLogConfigAssociationsPaginator.paginate`
-method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortBy`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolverQueryLogConfigAssociationsPaginator.paginate` method.
 
-`ListResolverQueryLogConfigAssociationsPaginator.paginate` returns
-`_PageIterator`\[[ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortBy: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListResolverQueryLogConfigAssociationsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listresolverquerylogconfigspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef](./type_defs.md#listresolverquerylogconfigassociationsrequestlistresolverquerylogconfigassociationspaginatetypedef) 
 ## ListResolverQueryLogConfigsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_resolver_query_log_configs")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_resolver_query_log_configs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListResolverQueryLogConfigsPaginator
@@ -379,30 +492,44 @@ def get_list_resolver_query_log_configs_paginator() -> ListResolverQueryLogConfi
     return Session().client("route53resolver").get_paginator("list_resolver_query_log_configs")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverQueryLogConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverQueryLogConfigs)
 
-Arguments for `ListResolverQueryLogConfigsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortBy`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolverQueryLogConfigsPaginator.paginate` method.
 
-`ListResolverQueryLogConfigsPaginator.paginate` returns
-`_PageIterator`\[[ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortBy: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListResolverQueryLogConfigsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listresolverruleassociationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef](./type_defs.md#listresolverquerylogconfigsrequestlistresolverquerylogconfigspaginatetypedef) 
 ## ListResolverRuleAssociationsPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_resolver_rule_associations")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_resolver_rule_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRuleAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListResolverRuleAssociationsPaginator
@@ -411,28 +538,41 @@ def get_list_resolver_rule_associations_paginator() -> ListResolverRuleAssociati
     return Session().client("route53resolver").get_paginator("list_resolver_rule_associations")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverRuleAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRuleAssociations)
 
-Arguments for `ListResolverRuleAssociationsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolverRuleAssociationsPaginator.paginate` method.
 
-`ListResolverRuleAssociationsPaginator.paginate` returns
-`_PageIterator`\[[ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListResolverRuleAssociationsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listresolverrulespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef](./type_defs.md#listresolverruleassociationsrequestlistresolverruleassociationspaginatetypedef) 
 ## ListResolverRulesPaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_resolver_rules")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_resolver_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListResolverRulesPaginator
@@ -441,28 +581,41 @@ def get_list_resolver_rules_paginator() -> ListResolverRulesPaginator:
     return Session().client("route53resolver").get_paginator("list_resolver_rules")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListResolverRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListResolverRules)
 
-Arguments for `ListResolverRulesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolverRulesPaginator.paginate` method.
 
-`ListResolverRulesPaginator.paginate` returns
-`_PageIterator`\[[ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListResolverRulesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolverRulesRequestListResolverRulesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolverRulesRequestListResolverRulesPaginateTypeDef](./type_defs.md#listresolverrulesrequestlistresolverrulespaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("route53resolver").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("route53resolver").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53resolver.paginator import ListTagsForResourcePaginator
@@ -471,14 +624,31 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("route53resolver").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[Route53Resolver.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 

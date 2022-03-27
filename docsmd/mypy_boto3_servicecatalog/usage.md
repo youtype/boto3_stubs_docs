@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-servicecatalog-module"></a>
-
-# Examples for boto3 ServiceCatalog module
+# Examples
 
 > [Index](../README.md) > [ServiceCatalog](./README.md) > Examples
 
-- [Examples for boto3 ServiceCatalog module](#examples-for-boto3-servicecatalog-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+    type annotations stubs module [mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[servicecatalog]` package installed.
 
-Write your `ServiceCatalog` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `ServiceCatalog` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ServiceCatalogClient
-# and provides type checking and code completion
-client = session.client("servicecatalog")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.accept_portfolio_share()
 
-# paginator has type ListAcceptedPortfolioSharesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_accepted_portfolio_shares")
-for item in paginator.paginate(...):
-    # item has type ListAcceptedPortfolioSharesOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("servicecatalog")  # (1)
+    result = client.batch_associate_service_action_with_provisioning_artifact()  # (2)
+    ```
+
+    1. client: [ServiceCatalogClient](./client.md)
+    2. result: [:material-code-braces: BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("servicecatalog")  # (1)
+
+    paginator = client.get_paginator("list_accepted_portfolio_shares")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ServiceCatalogClient](./client.md)
+    2. paginator: [ListAcceptedPortfolioSharesPaginator](./paginators.md#listacceptedportfoliosharespaginator)
+    3. item: [:material-code-braces: ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[servicecatalog]` or a standalone
-`mypy_boto3_servicecatalog` package, you have to explicitly specify
-`client: ServiceCatalogClient` type annotation.
+With `boto3-stubs-lite[servicecatalog]`
+or a standalone `mypy_boto3_servicecatalog` package, you have to explicitly specify `client: ServiceCatalogClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_servicecatalog.client import ServiceCatalogClient
-from mypy_boto3_servicecatalog.paginator import ListAcceptedPortfolioSharesPaginator
-
-from mypy_boto3_servicecatalog.literals import PaginatorName
-
-from mypy_boto3_servicecatalog.type_defs import Dict[str, Any]
-from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ServiceCatalogClient = session.client("servicecatalog")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.accept_portfolio_share()
+    from mypy_boto3_servicecatalog.client import ServiceCatalogClient
+    from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef
+    from mypy_boto3_servicecatalog.type_defs import BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_accepted_portfolio_shares"
-paginator: ListAcceptedPortfolioSharesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAcceptedPortfolioSharesOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ServiceCatalogClient = session.client("servicecatalog")
+
+    kwargs: BatchAssociateServiceActionWithProvisioningArtifactInputRequestTypeDef = {...}
+    result: BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef = client.batch_associate_service_action_with_provisioning_artifact(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_servicecatalog.client import ServiceCatalogClient
+    from mypy_boto3_servicecatalog.paginator import ListAcceptedPortfolioSharesPaginator
+    from mypy_boto3_servicecatalog.type_defs import ListAcceptedPortfolioSharesOutputTypeDef
+
+
+    session = Session()
+    client: ServiceCatalogClient = session.client("servicecatalog")
+
+    paginator: ListAcceptedPortfolioSharesPaginator = client.get_paginator("list_accepted_portfolio_shares")
+    for item in paginator.paginate(...):
+        item: ListAcceptedPortfolioSharesOutputTypeDef
+        print(item)
+    ```
+
+
+
+

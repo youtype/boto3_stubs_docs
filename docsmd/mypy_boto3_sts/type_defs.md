@@ -1,378 +1,478 @@
-<a id="typed-dictionaries-for-boto3-sts-module"></a>
-
-# Typed dictionaries for boto3 STS module
+# Typed dictionaries
 
 > [Index](../README.md) > [STS](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
-type annotations stubs module
-[mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
+!!! note ""
 
-- [Typed dictionaries for boto3 STS module](#typed-dictionaries-for-boto3-sts-module)
-  - [AssumeRoleRequestRequestTypeDef](#assumerolerequestrequesttypedef)
-  - [AssumeRoleResponseTypeDef](#assumeroleresponsetypedef)
-  - [AssumeRoleWithSAMLRequestRequestTypeDef](#assumerolewithsamlrequestrequesttypedef)
-  - [AssumeRoleWithSAMLResponseTypeDef](#assumerolewithsamlresponsetypedef)
-  - [AssumeRoleWithWebIdentityRequestRequestTypeDef](#assumerolewithwebidentityrequestrequesttypedef)
-  - [AssumeRoleWithWebIdentityResponseTypeDef](#assumerolewithwebidentityresponsetypedef)
-  - [AssumedRoleUserTypeDef](#assumedroleusertypedef)
-  - [CredentialsTypeDef](#credentialstypedef)
-  - [DecodeAuthorizationMessageRequestRequestTypeDef](#decodeauthorizationmessagerequestrequesttypedef)
-  - [DecodeAuthorizationMessageResponseTypeDef](#decodeauthorizationmessageresponsetypedef)
-  - [FederatedUserTypeDef](#federatedusertypedef)
-  - [GetAccessKeyInfoRequestRequestTypeDef](#getaccesskeyinforequestrequesttypedef)
-  - [GetAccessKeyInfoResponseTypeDef](#getaccesskeyinforesponsetypedef)
-  - [GetCallerIdentityResponseTypeDef](#getcalleridentityresponsetypedef)
-  - [GetFederationTokenRequestRequestTypeDef](#getfederationtokenrequestrequesttypedef)
-  - [GetFederationTokenResponseTypeDef](#getfederationtokenresponsetypedef)
-  - [GetSessionTokenRequestRequestTypeDef](#getsessiontokenrequestrequesttypedef)
-  - [GetSessionTokenResponseTypeDef](#getsessiontokenresponsetypedef)
-  - [PolicyDescriptorTypeTypeDef](#policydescriptortypetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagTypeDef](#tagtypedef)
-
-<a id="assumerolerequestrequesttypedef"></a>
+    Auto-generated documentation for [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
+    type annotations stubs module [mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
 
 ## AssumeRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import AssumeRoleRequestRequestTypeDef
+
+def get_value() -> AssumeRoleRequestRequestTypeDef:
+    return {
+        "RoleArn": ...,
+        "RoleSessionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssumeRoleRequestRequestTypeDef(TypedDict):
+    RoleArn: str,
+    RoleSessionName: str,
+    PolicyArns: NotRequired[Sequence[PolicyDescriptorTypeTypeDef]],  # (1)
+    Policy: NotRequired[str],
+    DurationSeconds: NotRequired[int],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    TransitiveTagKeys: NotRequired[Sequence[str]],
+    ExternalId: NotRequired[str],
+    SerialNumber: NotRequired[str],
+    TokenCode: NotRequired[str],
+    SourceIdentity: NotRequired[str],
+```
 
-- `RoleArn`: `str`
-- `RoleSessionName`: `str`
-
-Optional fields:
-
-- `PolicyArns`:
-  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
-- `Policy`: `str`
-- `DurationSeconds`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TransitiveTagKeys`: `Sequence`\[`str`\]
-- `ExternalId`: `str`
-- `SerialNumber`: `str`
-- `TokenCode`: `str`
-- `SourceIdentity`: `str`
-
-<a id="assumeroleresponsetypedef"></a>
-
+1. See [:material-code-braces: PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AssumeRoleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import AssumeRoleResponseTypeDef
+
+def get_value() -> AssumeRoleResponseTypeDef:
+    return {
+        "Credentials": ...,
+        "AssumedRoleUser": ...,
+        "PackedPolicySize": ...,
+        "SourceIdentity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssumeRoleResponseTypeDef(TypedDict):
+    Credentials: CredentialsTypeDef,  # (1)
+    AssumedRoleUser: AssumedRoleUserTypeDef,  # (2)
+    PackedPolicySize: int,
+    SourceIdentity: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Credentials`: [CredentialsTypeDef](./type_defs.md#credentialstypedef)
-- `AssumedRoleUser`:
-  [AssumedRoleUserTypeDef](./type_defs.md#assumedroleusertypedef)
-- `PackedPolicySize`: `int`
-- `SourceIdentity`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="assumerolewithsamlrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CredentialsTypeDef](./type_defs.md#credentialstypedef) 
+2. See [:material-code-braces: AssumedRoleUserTypeDef](./type_defs.md#assumedroleusertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssumeRoleWithSAMLRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import AssumeRoleWithSAMLRequestRequestTypeDef
+
+def get_value() -> AssumeRoleWithSAMLRequestRequestTypeDef:
+    return {
+        "RoleArn": ...,
+        "PrincipalArn": ...,
+        "SAMLAssertion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssumeRoleWithSAMLRequestRequestTypeDef(TypedDict):
+    RoleArn: str,
+    PrincipalArn: str,
+    SAMLAssertion: str,
+    PolicyArns: NotRequired[Sequence[PolicyDescriptorTypeTypeDef]],  # (1)
+    Policy: NotRequired[str],
+    DurationSeconds: NotRequired[int],
+```
 
-- `RoleArn`: `str`
-- `PrincipalArn`: `str`
-- `SAMLAssertion`: `str`
-
-Optional fields:
-
-- `PolicyArns`:
-  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
-- `Policy`: `str`
-- `DurationSeconds`: `int`
-
-<a id="assumerolewithsamlresponsetypedef"></a>
-
+1. See [:material-code-braces: PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef) 
 ## AssumeRoleWithSAMLResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import AssumeRoleWithSAMLResponseTypeDef
+
+def get_value() -> AssumeRoleWithSAMLResponseTypeDef:
+    return {
+        "Credentials": ...,
+        "AssumedRoleUser": ...,
+        "PackedPolicySize": ...,
+        "Subject": ...,
+        "SubjectType": ...,
+        "Issuer": ...,
+        "Audience": ...,
+        "NameQualifier": ...,
+        "SourceIdentity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssumeRoleWithSAMLResponseTypeDef(TypedDict):
+    Credentials: CredentialsTypeDef,  # (1)
+    AssumedRoleUser: AssumedRoleUserTypeDef,  # (2)
+    PackedPolicySize: int,
+    Subject: str,
+    SubjectType: str,
+    Issuer: str,
+    Audience: str,
+    NameQualifier: str,
+    SourceIdentity: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Credentials`: [CredentialsTypeDef](./type_defs.md#credentialstypedef)
-- `AssumedRoleUser`:
-  [AssumedRoleUserTypeDef](./type_defs.md#assumedroleusertypedef)
-- `PackedPolicySize`: `int`
-- `Subject`: `str`
-- `SubjectType`: `str`
-- `Issuer`: `str`
-- `Audience`: `str`
-- `NameQualifier`: `str`
-- `SourceIdentity`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="assumerolewithwebidentityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CredentialsTypeDef](./type_defs.md#credentialstypedef) 
+2. See [:material-code-braces: AssumedRoleUserTypeDef](./type_defs.md#assumedroleusertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssumeRoleWithWebIdentityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import AssumeRoleWithWebIdentityRequestRequestTypeDef
+
+def get_value() -> AssumeRoleWithWebIdentityRequestRequestTypeDef:
+    return {
+        "RoleArn": ...,
+        "RoleSessionName": ...,
+        "WebIdentityToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssumeRoleWithWebIdentityRequestRequestTypeDef(TypedDict):
+    RoleArn: str,
+    RoleSessionName: str,
+    WebIdentityToken: str,
+    ProviderId: NotRequired[str],
+    PolicyArns: NotRequired[Sequence[PolicyDescriptorTypeTypeDef]],  # (1)
+    Policy: NotRequired[str],
+    DurationSeconds: NotRequired[int],
+```
 
-- `RoleArn`: `str`
-- `RoleSessionName`: `str`
-- `WebIdentityToken`: `str`
-
-Optional fields:
-
-- `ProviderId`: `str`
-- `PolicyArns`:
-  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
-- `Policy`: `str`
-- `DurationSeconds`: `int`
-
-<a id="assumerolewithwebidentityresponsetypedef"></a>
-
+1. See [:material-code-braces: PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef) 
 ## AssumeRoleWithWebIdentityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import AssumeRoleWithWebIdentityResponseTypeDef
+
+def get_value() -> AssumeRoleWithWebIdentityResponseTypeDef:
+    return {
+        "Credentials": ...,
+        "SubjectFromWebIdentityToken": ...,
+        "AssumedRoleUser": ...,
+        "PackedPolicySize": ...,
+        "Provider": ...,
+        "Audience": ...,
+        "SourceIdentity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssumeRoleWithWebIdentityResponseTypeDef(TypedDict):
+    Credentials: CredentialsTypeDef,  # (1)
+    SubjectFromWebIdentityToken: str,
+    AssumedRoleUser: AssumedRoleUserTypeDef,  # (2)
+    PackedPolicySize: int,
+    Provider: str,
+    Audience: str,
+    SourceIdentity: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Credentials`: [CredentialsTypeDef](./type_defs.md#credentialstypedef)
-- `SubjectFromWebIdentityToken`: `str`
-- `AssumedRoleUser`:
-  [AssumedRoleUserTypeDef](./type_defs.md#assumedroleusertypedef)
-- `PackedPolicySize`: `int`
-- `Provider`: `str`
-- `Audience`: `str`
-- `SourceIdentity`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="assumedroleusertypedef"></a>
-
+1. See [:material-code-braces: CredentialsTypeDef](./type_defs.md#credentialstypedef) 
+2. See [:material-code-braces: AssumedRoleUserTypeDef](./type_defs.md#assumedroleusertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssumedRoleUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import AssumedRoleUserTypeDef
+
+def get_value() -> AssumedRoleUserTypeDef:
+    return {
+        "AssumedRoleId": ...,
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `AssumedRoleId`: `str`
-- `Arn`: `str`
-
-<a id="credentialstypedef"></a>
+```python title="Definition"
+class AssumedRoleUserTypeDef(TypedDict):
+    AssumedRoleId: str,
+    Arn: str,
+```
 
 ## CredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import CredentialsTypeDef
+
+def get_value() -> CredentialsTypeDef:
+    return {
+        "AccessKeyId": ...,
+        "SecretAccessKey": ...,
+        "SessionToken": ...,
+        "Expiration": ...,
+    }
 ```
 
-Required fields:
-
-- `AccessKeyId`: `str`
-- `SecretAccessKey`: `str`
-- `SessionToken`: `str`
-- `Expiration`: `datetime`
-
-<a id="decodeauthorizationmessagerequestrequesttypedef"></a>
+```python title="Definition"
+class CredentialsTypeDef(TypedDict):
+    AccessKeyId: str,
+    SecretAccessKey: str,
+    SessionToken: str,
+    Expiration: datetime,
+```
 
 ## DecodeAuthorizationMessageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import DecodeAuthorizationMessageRequestRequestTypeDef
+
+def get_value() -> DecodeAuthorizationMessageRequestRequestTypeDef:
+    return {
+        "EncodedMessage": ...,
+    }
 ```
 
-Required fields:
-
-- `EncodedMessage`: `str`
-
-<a id="decodeauthorizationmessageresponsetypedef"></a>
+```python title="Definition"
+class DecodeAuthorizationMessageRequestRequestTypeDef(TypedDict):
+    EncodedMessage: str,
+```
 
 ## DecodeAuthorizationMessageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import DecodeAuthorizationMessageResponseTypeDef
+
+def get_value() -> DecodeAuthorizationMessageResponseTypeDef:
+    return {
+        "DecodedMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DecodeAuthorizationMessageResponseTypeDef(TypedDict):
+    DecodedMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DecodedMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="federatedusertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FederatedUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import FederatedUserTypeDef
+
+def get_value() -> FederatedUserTypeDef:
+    return {
+        "FederatedUserId": ...,
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `FederatedUserId`: `str`
-- `Arn`: `str`
-
-<a id="getaccesskeyinforequestrequesttypedef"></a>
+```python title="Definition"
+class FederatedUserTypeDef(TypedDict):
+    FederatedUserId: str,
+    Arn: str,
+```
 
 ## GetAccessKeyInfoRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import GetAccessKeyInfoRequestRequestTypeDef
+
+def get_value() -> GetAccessKeyInfoRequestRequestTypeDef:
+    return {
+        "AccessKeyId": ...,
+    }
 ```
 
-Required fields:
-
-- `AccessKeyId`: `str`
-
-<a id="getaccesskeyinforesponsetypedef"></a>
+```python title="Definition"
+class GetAccessKeyInfoRequestRequestTypeDef(TypedDict):
+    AccessKeyId: str,
+```
 
 ## GetAccessKeyInfoResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import GetAccessKeyInfoResponseTypeDef
+
+def get_value() -> GetAccessKeyInfoResponseTypeDef:
+    return {
+        "Account": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccessKeyInfoResponseTypeDef(TypedDict):
+    Account: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Account`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcalleridentityresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCallerIdentityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import GetCallerIdentityResponseTypeDef
+
+def get_value() -> GetCallerIdentityResponseTypeDef:
+    return {
+        "UserId": ...,
+        "Account": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCallerIdentityResponseTypeDef(TypedDict):
+    UserId: str,
+    Account: str,
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UserId`: `str`
-- `Account`: `str`
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfederationtokenrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFederationTokenRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import GetFederationTokenRequestRequestTypeDef
+
+def get_value() -> GetFederationTokenRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFederationTokenRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Policy: NotRequired[str],
+    PolicyArns: NotRequired[Sequence[PolicyDescriptorTypeTypeDef]],  # (1)
+    DurationSeconds: NotRequired[int],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Policy`: `str`
-- `PolicyArns`:
-  `Sequence`\[[PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef)\]
-- `DurationSeconds`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="getfederationtokenresponsetypedef"></a>
-
+1. See [:material-code-braces: PolicyDescriptorTypeTypeDef](./type_defs.md#policydescriptortypetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## GetFederationTokenResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import GetFederationTokenResponseTypeDef
+
+def get_value() -> GetFederationTokenResponseTypeDef:
+    return {
+        "Credentials": ...,
+        "FederatedUser": ...,
+        "PackedPolicySize": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFederationTokenResponseTypeDef(TypedDict):
+    Credentials: CredentialsTypeDef,  # (1)
+    FederatedUser: FederatedUserTypeDef,  # (2)
+    PackedPolicySize: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Credentials`: [CredentialsTypeDef](./type_defs.md#credentialstypedef)
-- `FederatedUser`: [FederatedUserTypeDef](./type_defs.md#federatedusertypedef)
-- `PackedPolicySize`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsessiontokenrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CredentialsTypeDef](./type_defs.md#credentialstypedef) 
+2. See [:material-code-braces: FederatedUserTypeDef](./type_defs.md#federatedusertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSessionTokenRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import GetSessionTokenRequestRequestTypeDef
+
+def get_value() -> GetSessionTokenRequestRequestTypeDef:
+    return {
+        "DurationSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `DurationSeconds`: `int`
-- `SerialNumber`: `str`
-- `TokenCode`: `str`
-
-<a id="getsessiontokenresponsetypedef"></a>
+```python title="Definition"
+class GetSessionTokenRequestRequestTypeDef(TypedDict):
+    DurationSeconds: NotRequired[int],
+    SerialNumber: NotRequired[str],
+    TokenCode: NotRequired[str],
+```
 
 ## GetSessionTokenResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import GetSessionTokenResponseTypeDef
+
+def get_value() -> GetSessionTokenResponseTypeDef:
+    return {
+        "Credentials": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSessionTokenResponseTypeDef(TypedDict):
+    Credentials: CredentialsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Credentials`: [CredentialsTypeDef](./type_defs.md#credentialstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="policydescriptortypetypedef"></a>
-
+1. See [:material-code-braces: CredentialsTypeDef](./type_defs.md#credentialstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PolicyDescriptorTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import PolicyDescriptorTypeTypeDef
+
+def get_value() -> PolicyDescriptorTypeTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PolicyDescriptorTypeTypeDef(TypedDict):
+    arn: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sts.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
-- `Key`: `str`
-- `Value`: `str`

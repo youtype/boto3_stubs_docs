@@ -1,69 +1,71 @@
-<a id="examples-for-boto3-appflow-module"></a>
-
-# Examples for boto3 Appflow module
+# Examples
 
 > [Index](../README.md) > [Appflow](./README.md) > Examples
 
-- [Examples for boto3 Appflow module](#examples-for-boto3-appflow-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+    type annotations stubs module [mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[appflow]` package installed.
 
-Write your `Appflow` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Appflow` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type AppflowClient
-# and provides type checking and code completion
-client = session.client("appflow")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("appflow")  # (1)
+    result = client.create_connector_profile()  # (2)
+    ```
+
+    1. client: [AppflowClient](./client.md)
+    2. result: [:material-code-braces: CreateConnectorProfileResponseTypeDef](./type_defs.md#createconnectorprofileresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[appflow]` or a standalone `mypy_boto3_appflow` package,
-you have to explicitly specify `client: AppflowClient` type annotation.
+With `boto3-stubs-lite[appflow]`
+or a standalone `mypy_boto3_appflow` package, you have to explicitly specify `client: AppflowClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_appflow.client import AppflowClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_appflow.client import AppflowClient
+    from mypy_boto3_appflow.type_defs import CreateConnectorProfileResponseTypeDef
+    from mypy_boto3_appflow.type_defs import CreateConnectorProfileRequestRequestTypeDef
 
 
-from mypy_boto3_appflow.type_defs import bool
+    session = Session()
+
+    client: AppflowClient = session.client("appflow")
+
+    kwargs: CreateConnectorProfileRequestRequestTypeDef = {...}
+    result: CreateConnectorProfileResponseTypeDef = client.create_connector_profile(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: AppflowClient = session.client("appflow")
 
-result: bool = client.can_paginate()
-```
+

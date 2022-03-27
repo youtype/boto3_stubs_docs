@@ -1,570 +1,584 @@
-<a id="literals-for-boto3-imagebuilder-module"></a>
-
-# Literals for boto3 imagebuilder module
+# Literals
 
 > [Index](../README.md) > [imagebuilder](./README.md) > Literals
 
-Auto-generated documentation for
-[imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
-type annotations stubs module
-[mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
+!!! note ""
 
-- [Literals for boto3 imagebuilder module](#literals-for-boto3-imagebuilder-module)
-  - [BuildTypeType](#buildtypetype)
-  - [ComponentFormatType](#componentformattype)
-  - [ComponentStatusType](#componentstatustype)
-  - [ComponentTypeType](#componenttypetype)
-  - [ContainerRepositoryServiceType](#containerrepositoryservicetype)
-  - [ContainerTypeType](#containertypetype)
-  - [DiskImageFormatType](#diskimageformattype)
-  - [EbsVolumeTypeType](#ebsvolumetypetype)
-  - [ImageStatusType](#imagestatustype)
-  - [ImageTypeType](#imagetypetype)
-  - [OwnershipType](#ownershiptype)
-  - [PipelineExecutionStartConditionType](#pipelineexecutionstartconditiontype)
-  - [PipelineStatusType](#pipelinestatustype)
-  - [PlatformType](#platformtype)
-  - [imagebuilderServiceName](#imagebuilderservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-
-<a id="buildtypetype"></a>
+    Auto-generated documentation for [imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
+    type annotations stubs module [mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 ## BuildTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import BuildTypeType
+
+def get_value() -> BuildTypeType:
+    return "IMPORT"
 ```
 
-Values:
-
-- `IMPORT`
-- `SCHEDULED`
-- `USER_INITIATED`
-
-<a id="componentformattype"></a>
-
+```python title="Definition"
+BuildTypeType = Literal[
+    "IMPORT",
+    "SCHEDULED",
+    "USER_INITIATED",
+]
+```
 ## ComponentFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import ComponentFormatType
+
+def get_value() -> ComponentFormatType:
+    return "SHELL"
 ```
 
-Values:
-
-- `SHELL`
-
-<a id="componentstatustype"></a>
-
+```python title="Definition"
+ComponentFormatType = Literal[
+    "SHELL",
+]
+```
 ## ComponentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import ComponentStatusType
+
+def get_value() -> ComponentStatusType:
+    return "DEPRECATED"
 ```
 
-Values:
-
-- `DEPRECATED`
-
-<a id="componenttypetype"></a>
-
+```python title="Definition"
+ComponentStatusType = Literal[
+    "DEPRECATED",
+]
+```
 ## ComponentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import ComponentTypeType
+
+def get_value() -> ComponentTypeType:
+    return "BUILD"
 ```
 
-Values:
-
-- `BUILD`
-- `TEST`
-
-<a id="containerrepositoryservicetype"></a>
-
+```python title="Definition"
+ComponentTypeType = Literal[
+    "BUILD",
+    "TEST",
+]
+```
 ## ContainerRepositoryServiceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import ContainerRepositoryServiceType
+
+def get_value() -> ContainerRepositoryServiceType:
+    return "ECR"
 ```
 
-Values:
-
-- `ECR`
-
-<a id="containertypetype"></a>
-
+```python title="Definition"
+ContainerRepositoryServiceType = Literal[
+    "ECR",
+]
+```
 ## ContainerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import ContainerTypeType
+
+def get_value() -> ContainerTypeType:
+    return "DOCKER"
 ```
 
-Values:
-
-- `DOCKER`
-
-<a id="diskimageformattype"></a>
-
+```python title="Definition"
+ContainerTypeType = Literal[
+    "DOCKER",
+]
+```
 ## DiskImageFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import DiskImageFormatType
+
+def get_value() -> DiskImageFormatType:
+    return "RAW"
 ```
 
-Values:
-
-- `RAW`
-- `VHD`
-- `VMDK`
-
-<a id="ebsvolumetypetype"></a>
-
+```python title="Definition"
+DiskImageFormatType = Literal[
+    "RAW",
+    "VHD",
+    "VMDK",
+]
+```
 ## EbsVolumeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import EbsVolumeTypeType
+
+def get_value() -> EbsVolumeTypeType:
+    return "gp2"
 ```
 
-Values:
-
-- `gp2`
-- `gp3`
-- `io1`
-- `io2`
-- `sc1`
-- `st1`
-- `standard`
-
-<a id="imagestatustype"></a>
-
+```python title="Definition"
+EbsVolumeTypeType = Literal[
+    "gp2",
+    "gp3",
+    "io1",
+    "io2",
+    "sc1",
+    "st1",
+    "standard",
+]
+```
 ## ImageStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import ImageStatusType
+
+def get_value() -> ImageStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `BUILDING`
-- `CANCELLED`
-- `CREATING`
-- `DELETED`
-- `DEPRECATED`
-- `DISTRIBUTING`
-- `FAILED`
-- `INTEGRATING`
-- `PENDING`
-- `TESTING`
-
-<a id="imagetypetype"></a>
-
+```python title="Definition"
+ImageStatusType = Literal[
+    "AVAILABLE",
+    "BUILDING",
+    "CANCELLED",
+    "CREATING",
+    "DELETED",
+    "DEPRECATED",
+    "DISTRIBUTING",
+    "FAILED",
+    "INTEGRATING",
+    "PENDING",
+    "TESTING",
+]
+```
 ## ImageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import ImageTypeType
+
+def get_value() -> ImageTypeType:
+    return "AMI"
 ```
 
-Values:
-
-- `AMI`
-- `DOCKER`
-
-<a id="ownershiptype"></a>
-
+```python title="Definition"
+ImageTypeType = Literal[
+    "AMI",
+    "DOCKER",
+]
+```
 ## OwnershipType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import OwnershipType
+
+def get_value() -> OwnershipType:
+    return "Amazon"
 ```
 
-Values:
-
-- `Amazon`
-- `Self`
-- `Shared`
-
-<a id="pipelineexecutionstartconditiontype"></a>
-
+```python title="Definition"
+OwnershipType = Literal[
+    "Amazon",
+    "Self",
+    "Shared",
+]
+```
 ## PipelineExecutionStartConditionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import PipelineExecutionStartConditionType
+
+def get_value() -> PipelineExecutionStartConditionType:
+    return "EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE"
 ```
 
-Values:
-
-- `EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE`
-- `EXPRESSION_MATCH_ONLY`
-
-<a id="pipelinestatustype"></a>
-
+```python title="Definition"
+PipelineExecutionStartConditionType = Literal[
+    "EXPRESSION_MATCH_AND_DEPENDENCY_UPDATES_AVAILABLE",
+    "EXPRESSION_MATCH_ONLY",
+]
+```
 ## PipelineStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import PipelineStatusType
+
+def get_value() -> PipelineStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="platformtype"></a>
-
+```python title="Definition"
+PipelineStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## PlatformType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import PlatformType
+
+def get_value() -> PlatformType:
+    return "Linux"
 ```
 
-Values:
-
-- `Linux`
-- `Windows`
-
-<a id="imagebuilderservicename"></a>
-
+```python title="Definition"
+PlatformType = Literal[
+    "Linux",
+    "Windows",
+]
+```
 ## imagebuilderServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import imagebuilderServiceName
+
+def get_value() -> imagebuilderServiceName:
+    return "imagebuilder"
 ```
 
-Values:
-
-- `imagebuilder`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+imagebuilderServiceName = Literal[
+    "imagebuilder",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_imagebuilder.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```

@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-mediapackage-module"></a>
-
-# Examples for boto3 MediaPackage module
+# Examples
 
 > [Index](../README.md) > [MediaPackage](./README.md) > Examples
 
-- [Examples for boto3 MediaPackage module](#examples-for-boto3-mediapackage-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
+    type annotations stubs module [mypy-boto3-mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[mediapackage]` package installed.
 
-Write your `MediaPackage` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `MediaPackage` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MediaPackageClient
-# and provides type checking and code completion
-client = session.client("mediapackage")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListChannelsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_channels")
-for item in paginator.paginate(...):
-    # item has type ListChannelsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("mediapackage")  # (1)
+    result = client.configure_logs()  # (2)
+    ```
+
+    1. client: [MediaPackageClient](./client.md)
+    2. result: [:material-code-braces: ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("mediapackage")  # (1)
+
+    paginator = client.get_paginator("list_channels")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [MediaPackageClient](./client.md)
+    2. paginator: [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+    3. item: [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[mediapackage]` or a standalone `mypy_boto3_mediapackage`
-package, you have to explicitly specify `client: MediaPackageClient` type
-annotation.
+With `boto3-stubs-lite[mediapackage]`
+or a standalone `mypy_boto3_mediapackage` package, you have to explicitly specify `client: MediaPackageClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_mediapackage.client import MediaPackageClient
-from mypy_boto3_mediapackage.paginator import ListChannelsPaginator
-
-from mypy_boto3_mediapackage.literals import PaginatorName
-
-from mypy_boto3_mediapackage.type_defs import bool
-from mypy_boto3_mediapackage.type_defs import ListChannelsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: MediaPackageClient = session.client("mediapackage")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_mediapackage.client import MediaPackageClient
+    from mypy_boto3_mediapackage.type_defs import ConfigureLogsResponseTypeDef
+    from mypy_boto3_mediapackage.type_defs import ConfigureLogsRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_channels"
-paginator: ListChannelsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListChannelsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: MediaPackageClient = session.client("mediapackage")
+
+    kwargs: ConfigureLogsRequestRequestTypeDef = {...}
+    result: ConfigureLogsResponseTypeDef = client.configure_logs(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_mediapackage.client import MediaPackageClient
+    from mypy_boto3_mediapackage.paginator import ListChannelsPaginator
+    from mypy_boto3_mediapackage.type_defs import ListChannelsResponseTypeDef
+
+
+    session = Session()
+    client: MediaPackageClient = session.client("mediapackage")
+
+    paginator: ListChannelsPaginator = client.get_paginator("list_channels")
+    for item in paginator.paginate(...):
+        item: ListChannelsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,1208 +1,1576 @@
-<a id="typed-dictionaries-for-boto3-snowball-module"></a>
-
-# Typed dictionaries for boto3 Snowball module
+# Typed dictionaries
 
 > [Index](../README.md) > [Snowball](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
-type annotations stubs module
-[mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Snowball module](#typed-dictionaries-for-boto3-snowball-module)
-  - [AddressTypeDef](#addresstypedef)
-  - [CancelClusterRequestRequestTypeDef](#cancelclusterrequestrequesttypedef)
-  - [CancelJobRequestRequestTypeDef](#canceljobrequestrequesttypedef)
-  - [ClusterListEntryTypeDef](#clusterlistentrytypedef)
-  - [ClusterMetadataTypeDef](#clustermetadatatypedef)
-  - [CompatibleImageTypeDef](#compatibleimagetypedef)
-  - [CreateAddressRequestRequestTypeDef](#createaddressrequestrequesttypedef)
-  - [CreateAddressResultTypeDef](#createaddressresulttypedef)
-  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
-  - [CreateClusterResultTypeDef](#createclusterresulttypedef)
-  - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
-  - [CreateJobResultTypeDef](#createjobresulttypedef)
-  - [CreateLongTermPricingRequestRequestTypeDef](#createlongtermpricingrequestrequesttypedef)
-  - [CreateLongTermPricingResultTypeDef](#createlongtermpricingresulttypedef)
-  - [CreateReturnShippingLabelRequestRequestTypeDef](#createreturnshippinglabelrequestrequesttypedef)
-  - [CreateReturnShippingLabelResultTypeDef](#createreturnshippinglabelresulttypedef)
-  - [DataTransferTypeDef](#datatransfertypedef)
-  - [DescribeAddressRequestRequestTypeDef](#describeaddressrequestrequesttypedef)
-  - [DescribeAddressResultTypeDef](#describeaddressresulttypedef)
-  - [DescribeAddressesRequestRequestTypeDef](#describeaddressesrequestrequesttypedef)
-  - [DescribeAddressesResultTypeDef](#describeaddressesresulttypedef)
-  - [DescribeClusterRequestRequestTypeDef](#describeclusterrequestrequesttypedef)
-  - [DescribeClusterResultTypeDef](#describeclusterresulttypedef)
-  - [DescribeJobRequestRequestTypeDef](#describejobrequestrequesttypedef)
-  - [DescribeJobResultTypeDef](#describejobresulttypedef)
-  - [DescribeReturnShippingLabelRequestRequestTypeDef](#describereturnshippinglabelrequestrequesttypedef)
-  - [DescribeReturnShippingLabelResultTypeDef](#describereturnshippinglabelresulttypedef)
-  - [DeviceConfigurationTypeDef](#deviceconfigurationtypedef)
-  - [Ec2AmiResourceTypeDef](#ec2amiresourcetypedef)
-  - [EventTriggerDefinitionTypeDef](#eventtriggerdefinitiontypedef)
-  - [GetJobManifestRequestRequestTypeDef](#getjobmanifestrequestrequesttypedef)
-  - [GetJobManifestResultTypeDef](#getjobmanifestresulttypedef)
-  - [GetJobUnlockCodeRequestRequestTypeDef](#getjobunlockcoderequestrequesttypedef)
-  - [GetJobUnlockCodeResultTypeDef](#getjobunlockcoderesulttypedef)
-  - [GetSnowballUsageResultTypeDef](#getsnowballusageresulttypedef)
-  - [GetSoftwareUpdatesRequestRequestTypeDef](#getsoftwareupdatesrequestrequesttypedef)
-  - [GetSoftwareUpdatesResultTypeDef](#getsoftwareupdatesresulttypedef)
-  - [INDTaxDocumentsTypeDef](#indtaxdocumentstypedef)
-  - [JobListEntryTypeDef](#joblistentrytypedef)
-  - [JobLogsTypeDef](#joblogstypedef)
-  - [JobMetadataTypeDef](#jobmetadatatypedef)
-  - [JobResourceTypeDef](#jobresourcetypedef)
-  - [KeyRangeTypeDef](#keyrangetypedef)
-  - [LambdaResourceTypeDef](#lambdaresourcetypedef)
-  - [ListClusterJobsRequestRequestTypeDef](#listclusterjobsrequestrequesttypedef)
-  - [ListClusterJobsResultTypeDef](#listclusterjobsresulttypedef)
-  - [ListClustersRequestRequestTypeDef](#listclustersrequestrequesttypedef)
-  - [ListClustersResultTypeDef](#listclustersresulttypedef)
-  - [ListCompatibleImagesRequestRequestTypeDef](#listcompatibleimagesrequestrequesttypedef)
-  - [ListCompatibleImagesResultTypeDef](#listcompatibleimagesresulttypedef)
-  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
-  - [ListJobsResultTypeDef](#listjobsresulttypedef)
-  - [ListLongTermPricingRequestRequestTypeDef](#listlongtermpricingrequestrequesttypedef)
-  - [ListLongTermPricingResultTypeDef](#listlongtermpricingresulttypedef)
-  - [LongTermPricingListEntryTypeDef](#longtermpricinglistentrytypedef)
-  - [NFSOnDeviceServiceConfigurationTypeDef](#nfsondeviceserviceconfigurationtypedef)
-  - [NotificationTypeDef](#notificationtypedef)
-  - [OnDeviceServiceConfigurationTypeDef](#ondeviceserviceconfigurationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3ResourceTypeDef](#s3resourcetypedef)
-  - [ShipmentTypeDef](#shipmenttypedef)
-  - [ShippingDetailsTypeDef](#shippingdetailstypedef)
-  - [SnowconeDeviceConfigurationTypeDef](#snowconedeviceconfigurationtypedef)
-  - [TGWOnDeviceServiceConfigurationTypeDef](#tgwondeviceserviceconfigurationtypedef)
-  - [TargetOnDeviceServiceTypeDef](#targetondeviceservicetypedef)
-  - [TaxDocumentsTypeDef](#taxdocumentstypedef)
-  - [UpdateClusterRequestRequestTypeDef](#updateclusterrequestrequesttypedef)
-  - [UpdateJobRequestRequestTypeDef](#updatejobrequestrequesttypedef)
-  - [UpdateJobShipmentStateRequestRequestTypeDef](#updatejobshipmentstaterequestrequesttypedef)
-  - [UpdateLongTermPricingRequestRequestTypeDef](#updatelongtermpricingrequestrequesttypedef)
-  - [WirelessConnectionTypeDef](#wirelessconnectiontypedef)
-
-<a id="addresstypedef"></a>
+    Auto-generated documentation for [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+    type annotations stubs module [mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 ## AddressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import AddressTypeDef
+
+def get_value() -> AddressTypeDef:
+    return {
+        "AddressId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AddressId`: `str`
-- `Name`: `str`
-- `Company`: `str`
-- `Street1`: `str`
-- `Street2`: `str`
-- `Street3`: `str`
-- `City`: `str`
-- `StateOrProvince`: `str`
-- `PrefectureOrDistrict`: `str`
-- `Landmark`: `str`
-- `Country`: `str`
-- `PostalCode`: `str`
-- `PhoneNumber`: `str`
-- `IsRestricted`: `bool`
-
-<a id="cancelclusterrequestrequesttypedef"></a>
+```python title="Definition"
+class AddressTypeDef(TypedDict):
+    AddressId: NotRequired[str],
+    Name: NotRequired[str],
+    Company: NotRequired[str],
+    Street1: NotRequired[str],
+    Street2: NotRequired[str],
+    Street3: NotRequired[str],
+    City: NotRequired[str],
+    StateOrProvince: NotRequired[str],
+    PrefectureOrDistrict: NotRequired[str],
+    Landmark: NotRequired[str],
+    Country: NotRequired[str],
+    PostalCode: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    IsRestricted: NotRequired[bool],
+```
 
 ## CancelClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CancelClusterRequestRequestTypeDef
+
+def get_value() -> CancelClusterRequestRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-<a id="canceljobrequestrequesttypedef"></a>
+```python title="Definition"
+class CancelClusterRequestRequestTypeDef(TypedDict):
+    ClusterId: str,
+```
 
 ## CancelJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CancelJobRequestRequestTypeDef
+
+def get_value() -> CancelJobRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="clusterlistentrytypedef"></a>
+```python title="Definition"
+class CancelJobRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## ClusterListEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ClusterListEntryTypeDef
+
+def get_value() -> ClusterListEntryTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterListEntryTypeDef(TypedDict):
+    ClusterId: NotRequired[str],
+    ClusterState: NotRequired[ClusterStateType],  # (1)
+    CreationDate: NotRequired[datetime],
+    Description: NotRequired[str],
+```
 
-- `ClusterId`: `str`
-- `ClusterState`: [ClusterStateType](./literals.md#clusterstatetype)
-- `CreationDate`: `datetime`
-- `Description`: `str`
-
-<a id="clustermetadatatypedef"></a>
-
+1. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
 ## ClusterMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ClusterMetadataTypeDef
+
+def get_value() -> ClusterMetadataTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterMetadataTypeDef(TypedDict):
+    ClusterId: NotRequired[str],
+    Description: NotRequired[str],
+    KmsKeyARN: NotRequired[str],
+    RoleARN: NotRequired[str],
+    ClusterState: NotRequired[ClusterStateType],  # (1)
+    JobType: NotRequired[JobTypeType],  # (2)
+    SnowballType: NotRequired[SnowballTypeType],  # (3)
+    CreationDate: NotRequired[datetime],
+    Resources: NotRequired[JobResourceTypeDef],  # (4)
+    AddressId: NotRequired[str],
+    ShippingOption: NotRequired[ShippingOptionType],  # (5)
+    Notification: NotRequired[NotificationTypeDef],  # (6)
+    ForwardingAddressId: NotRequired[str],
+    TaxDocuments: NotRequired[TaxDocumentsTypeDef],  # (7)
+    OnDeviceServiceConfiguration: NotRequired[OnDeviceServiceConfigurationTypeDef],  # (8)
+```
 
-- `ClusterId`: `str`
-- `Description`: `str`
-- `KmsKeyARN`: `str`
-- `RoleARN`: `str`
-- `ClusterState`: [ClusterStateType](./literals.md#clusterstatetype)
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
-- `CreationDate`: `datetime`
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-- `AddressId`: `str`
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `ForwardingAddressId`: `str`
-- `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-
-<a id="compatibleimagetypedef"></a>
-
+1. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
+4. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+5. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+6. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+7. See [:material-code-braces: TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef) 
+8. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
 ## CompatibleImageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CompatibleImageTypeDef
+
+def get_value() -> CompatibleImageTypeDef:
+    return {
+        "AmiId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AmiId`: `str`
-- `Name`: `str`
-
-<a id="createaddressrequestrequesttypedef"></a>
+```python title="Definition"
+class CompatibleImageTypeDef(TypedDict):
+    AmiId: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## CreateAddressRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateAddressRequestRequestTypeDef
+
+def get_value() -> CreateAddressRequestRequestTypeDef:
+    return {
+        "Address": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAddressRequestRequestTypeDef(TypedDict):
+    Address: AddressTypeDef,  # (1)
+```
 
-- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
-
-<a id="createaddressresulttypedef"></a>
-
+1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
 ## CreateAddressResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateAddressResultTypeDef
+
+def get_value() -> CreateAddressResultTypeDef:
+    return {
+        "AddressId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAddressResultTypeDef(TypedDict):
+    AddressId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AddressId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateClusterRequestRequestTypeDef
+
+def get_value() -> CreateClusterRequestRequestTypeDef:
+    return {
+        "JobType": ...,
+        "Resources": ...,
+        "AddressId": ...,
+        "RoleARN": ...,
+        "SnowballType": ...,
+        "ShippingOption": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterRequestRequestTypeDef(TypedDict):
+    JobType: JobTypeType,  # (1)
+    Resources: JobResourceTypeDef,  # (2)
+    AddressId: str,
+    RoleARN: str,
+    SnowballType: SnowballTypeType,  # (3)
+    ShippingOption: ShippingOptionType,  # (4)
+    OnDeviceServiceConfiguration: NotRequired[OnDeviceServiceConfigurationTypeDef],  # (5)
+    Description: NotRequired[str],
+    KmsKeyARN: NotRequired[str],
+    Notification: NotRequired[NotificationTypeDef],  # (6)
+    ForwardingAddressId: NotRequired[str],
+    TaxDocuments: NotRequired[TaxDocumentsTypeDef],  # (7)
+    RemoteManagement: NotRequired[RemoteManagementType],  # (8)
+```
 
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-- `AddressId`: `str`
-- `RoleARN`: `str`
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-
-Optional fields:
-
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-- `Description`: `str`
-- `KmsKeyARN`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `ForwardingAddressId`: `str`
-- `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
-- `RemoteManagement`:
-  [RemoteManagementType](./literals.md#remotemanagementtype)
-
-<a id="createclusterresulttypedef"></a>
-
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+3. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
+4. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+5. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
+6. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+7. See [:material-code-braces: TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef) 
+8. See [:material-code-brackets: RemoteManagementType](./literals.md#remotemanagementtype) 
 ## CreateClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateClusterResultTypeDef
+
+def get_value() -> CreateClusterResultTypeDef:
+    return {
+        "ClusterId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterResultTypeDef(TypedDict):
+    ClusterId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ClusterId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateJobRequestRequestTypeDef
+
+def get_value() -> CreateJobRequestRequestTypeDef:
+    return {
+        "JobType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateJobRequestRequestTypeDef(TypedDict):
+    JobType: NotRequired[JobTypeType],  # (1)
+    Resources: NotRequired[JobResourceTypeDef],  # (2)
+    OnDeviceServiceConfiguration: NotRequired[OnDeviceServiceConfigurationTypeDef],  # (3)
+    Description: NotRequired[str],
+    AddressId: NotRequired[str],
+    KmsKeyARN: NotRequired[str],
+    RoleARN: NotRequired[str],
+    SnowballCapacityPreference: NotRequired[SnowballCapacityType],  # (4)
+    ShippingOption: NotRequired[ShippingOptionType],  # (5)
+    Notification: NotRequired[NotificationTypeDef],  # (6)
+    ClusterId: NotRequired[str],
+    SnowballType: NotRequired[SnowballTypeType],  # (7)
+    ForwardingAddressId: NotRequired[str],
+    TaxDocuments: NotRequired[TaxDocumentsTypeDef],  # (8)
+    DeviceConfiguration: NotRequired[DeviceConfigurationTypeDef],  # (9)
+    RemoteManagement: NotRequired[RemoteManagementType],  # (10)
+    LongTermPricingId: NotRequired[str],
+```
 
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-- `Description`: `str`
-- `AddressId`: `str`
-- `KmsKeyARN`: `str`
-- `RoleARN`: `str`
-- `SnowballCapacityPreference`:
-  [SnowballCapacityType](./literals.md#snowballcapacitytype)
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `ClusterId`: `str`
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
-- `ForwardingAddressId`: `str`
-- `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
-- `DeviceConfiguration`:
-  [DeviceConfigurationTypeDef](./type_defs.md#deviceconfigurationtypedef)
-- `RemoteManagement`:
-  [RemoteManagementType](./literals.md#remotemanagementtype)
-- `LongTermPricingId`: `str`
-
-<a id="createjobresulttypedef"></a>
-
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+3. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
+4. See [:material-code-brackets: SnowballCapacityType](./literals.md#snowballcapacitytype) 
+5. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+6. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+7. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
+8. See [:material-code-braces: TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef) 
+9. See [:material-code-braces: DeviceConfigurationTypeDef](./type_defs.md#deviceconfigurationtypedef) 
+10. See [:material-code-brackets: RemoteManagementType](./literals.md#remotemanagementtype) 
 ## CreateJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateJobResultTypeDef
+
+def get_value() -> CreateJobResultTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobResultTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createlongtermpricingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLongTermPricingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateLongTermPricingRequestRequestTypeDef
+
+def get_value() -> CreateLongTermPricingRequestRequestTypeDef:
+    return {
+        "LongTermPricingType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLongTermPricingRequestRequestTypeDef(TypedDict):
+    LongTermPricingType: LongTermPricingTypeType,  # (1)
+    IsLongTermPricingAutoRenew: NotRequired[bool],
+    SnowballType: NotRequired[SnowballTypeType],  # (2)
+```
 
-- `LongTermPricingType`:
-  [LongTermPricingTypeType](./literals.md#longtermpricingtypetype)
-
-Optional fields:
-
-- `IsLongTermPricingAutoRenew`: `bool`
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
-
-<a id="createlongtermpricingresulttypedef"></a>
-
+1. See [:material-code-brackets: LongTermPricingTypeType](./literals.md#longtermpricingtypetype) 
+2. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
 ## CreateLongTermPricingResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateLongTermPricingResultTypeDef
+
+def get_value() -> CreateLongTermPricingResultTypeDef:
+    return {
+        "LongTermPricingId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLongTermPricingResultTypeDef(TypedDict):
+    LongTermPricingId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LongTermPricingId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createreturnshippinglabelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateReturnShippingLabelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateReturnShippingLabelRequestRequestTypeDef
+
+def get_value() -> CreateReturnShippingLabelRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReturnShippingLabelRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    ShippingOption: NotRequired[ShippingOptionType],  # (1)
+```
 
-- `JobId`: `str`
-
-Optional fields:
-
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-
-<a id="createreturnshippinglabelresulttypedef"></a>
-
+1. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
 ## CreateReturnShippingLabelResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import CreateReturnShippingLabelResultTypeDef
+
+def get_value() -> CreateReturnShippingLabelResultTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReturnShippingLabelResultTypeDef(TypedDict):
+    Status: ShippingLabelStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [ShippingLabelStatusType](./literals.md#shippinglabelstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datatransfertypedef"></a>
-
+1. See [:material-code-brackets: ShippingLabelStatusType](./literals.md#shippinglabelstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataTransferTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DataTransferTypeDef
+
+def get_value() -> DataTransferTypeDef:
+    return {
+        "BytesTransferred": ...,
+    }
 ```
 
-Optional fields:
-
-- `BytesTransferred`: `int`
-- `ObjectsTransferred`: `int`
-- `TotalBytes`: `int`
-- `TotalObjects`: `int`
-
-<a id="describeaddressrequestrequesttypedef"></a>
+```python title="Definition"
+class DataTransferTypeDef(TypedDict):
+    BytesTransferred: NotRequired[int],
+    ObjectsTransferred: NotRequired[int],
+    TotalBytes: NotRequired[int],
+    TotalObjects: NotRequired[int],
+```
 
 ## DescribeAddressRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeAddressRequestRequestTypeDef
+
+def get_value() -> DescribeAddressRequestRequestTypeDef:
+    return {
+        "AddressId": ...,
+    }
 ```
 
-Required fields:
-
-- `AddressId`: `str`
-
-<a id="describeaddressresulttypedef"></a>
+```python title="Definition"
+class DescribeAddressRequestRequestTypeDef(TypedDict):
+    AddressId: str,
+```
 
 ## DescribeAddressResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeAddressResultTypeDef
+
+def get_value() -> DescribeAddressResultTypeDef:
+    return {
+        "Address": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAddressResultTypeDef(TypedDict):
+    Address: AddressTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAddressesRequestDescribeAddressesPaginateTypeDef
 
-<a id="describeaddressesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import DescribeAddressesRequestDescribeAddressesPaginateTypeDef
 
+def get_value() -> DescribeAddressesRequestDescribeAddressesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAddressesRequestDescribeAddressesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAddressesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeAddressesRequestRequestTypeDef
+
+def get_value() -> DescribeAddressesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeaddressesresulttypedef"></a>
+```python title="Definition"
+class DescribeAddressesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeAddressesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeAddressesResultTypeDef
+
+def get_value() -> DescribeAddressesResultTypeDef:
+    return {
+        "Addresses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAddressesResultTypeDef(TypedDict):
+    Addresses: List[AddressTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Addresses`: `List`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeClusterRequestRequestTypeDef
+
+def get_value() -> DescribeClusterRequestRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-<a id="describeclusterresulttypedef"></a>
+```python title="Definition"
+class DescribeClusterRequestRequestTypeDef(TypedDict):
+    ClusterId: str,
+```
 
 ## DescribeClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeClusterResultTypeDef
+
+def get_value() -> DescribeClusterResultTypeDef:
+    return {
+        "ClusterMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClusterResultTypeDef(TypedDict):
+    ClusterMetadata: ClusterMetadataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClusterMetadata`:
-  [ClusterMetadataTypeDef](./type_defs.md#clustermetadatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describejobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterMetadataTypeDef](./type_defs.md#clustermetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeJobRequestRequestTypeDef
+
+def get_value() -> DescribeJobRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="describejobresulttypedef"></a>
+```python title="Definition"
+class DescribeJobRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## DescribeJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeJobResultTypeDef
+
+def get_value() -> DescribeJobResultTypeDef:
+    return {
+        "JobMetadata": ...,
+        "SubJobMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeJobResultTypeDef(TypedDict):
+    JobMetadata: JobMetadataTypeDef,  # (1)
+    SubJobMetadata: List[JobMetadataTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `JobMetadata`: [JobMetadataTypeDef](./type_defs.md#jobmetadatatypedef)
-- `SubJobMetadata`:
-  `List`\[[JobMetadataTypeDef](./type_defs.md#jobmetadatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describereturnshippinglabelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobMetadataTypeDef](./type_defs.md#jobmetadatatypedef) 
+2. See [:material-code-braces: JobMetadataTypeDef](./type_defs.md#jobmetadatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeReturnShippingLabelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeReturnShippingLabelRequestRequestTypeDef
+
+def get_value() -> DescribeReturnShippingLabelRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="describereturnshippinglabelresulttypedef"></a>
+```python title="Definition"
+class DescribeReturnShippingLabelRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## DescribeReturnShippingLabelResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DescribeReturnShippingLabelResultTypeDef
+
+def get_value() -> DescribeReturnShippingLabelResultTypeDef:
+    return {
+        "Status": ...,
+        "ExpirationDate": ...,
+        "ReturnShippingLabelURI": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeReturnShippingLabelResultTypeDef(TypedDict):
+    Status: ShippingLabelStatusType,  # (1)
+    ExpirationDate: datetime,
+    ReturnShippingLabelURI: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [ShippingLabelStatusType](./literals.md#shippinglabelstatustype)
-- `ExpirationDate`: `datetime`
-- `ReturnShippingLabelURI`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deviceconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ShippingLabelStatusType](./literals.md#shippinglabelstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import DeviceConfigurationTypeDef
+
+def get_value() -> DeviceConfigurationTypeDef:
+    return {
+        "SnowconeDeviceConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceConfigurationTypeDef(TypedDict):
+    SnowconeDeviceConfiguration: NotRequired[SnowconeDeviceConfigurationTypeDef],  # (1)
+```
 
-- `SnowconeDeviceConfiguration`:
-  [SnowconeDeviceConfigurationTypeDef](./type_defs.md#snowconedeviceconfigurationtypedef)
-
-<a id="ec2amiresourcetypedef"></a>
-
+1. See [:material-code-braces: SnowconeDeviceConfigurationTypeDef](./type_defs.md#snowconedeviceconfigurationtypedef) 
 ## Ec2AmiResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import Ec2AmiResourceTypeDef
+
+def get_value() -> Ec2AmiResourceTypeDef:
+    return {
+        "AmiId": ...,
+    }
 ```
 
-Required fields:
-
-- `AmiId`: `str`
-
-Optional fields:
-
-- `SnowballAmiId`: `str`
-
-<a id="eventtriggerdefinitiontypedef"></a>
+```python title="Definition"
+class Ec2AmiResourceTypeDef(TypedDict):
+    AmiId: str,
+    SnowballAmiId: NotRequired[str],
+```
 
 ## EventTriggerDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import EventTriggerDefinitionTypeDef
+
+def get_value() -> EventTriggerDefinitionTypeDef:
+    return {
+        "EventResourceARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `EventResourceARN`: `str`
-
-<a id="getjobmanifestrequestrequesttypedef"></a>
+```python title="Definition"
+class EventTriggerDefinitionTypeDef(TypedDict):
+    EventResourceARN: NotRequired[str],
+```
 
 ## GetJobManifestRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import GetJobManifestRequestRequestTypeDef
+
+def get_value() -> GetJobManifestRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="getjobmanifestresulttypedef"></a>
+```python title="Definition"
+class GetJobManifestRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## GetJobManifestResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import GetJobManifestResultTypeDef
+
+def get_value() -> GetJobManifestResultTypeDef:
+    return {
+        "ManifestURI": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobManifestResultTypeDef(TypedDict):
+    ManifestURI: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ManifestURI`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getjobunlockcoderequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobUnlockCodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import GetJobUnlockCodeRequestRequestTypeDef
+
+def get_value() -> GetJobUnlockCodeRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="getjobunlockcoderesulttypedef"></a>
+```python title="Definition"
+class GetJobUnlockCodeRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## GetJobUnlockCodeResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import GetJobUnlockCodeResultTypeDef
+
+def get_value() -> GetJobUnlockCodeResultTypeDef:
+    return {
+        "UnlockCode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobUnlockCodeResultTypeDef(TypedDict):
+    UnlockCode: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UnlockCode`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsnowballusageresulttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSnowballUsageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import GetSnowballUsageResultTypeDef
+
+def get_value() -> GetSnowballUsageResultTypeDef:
+    return {
+        "SnowballLimit": ...,
+        "SnowballsInUse": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSnowballUsageResultTypeDef(TypedDict):
+    SnowballLimit: int,
+    SnowballsInUse: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SnowballLimit`: `int`
-- `SnowballsInUse`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsoftwareupdatesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSoftwareUpdatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import GetSoftwareUpdatesRequestRequestTypeDef
+
+def get_value() -> GetSoftwareUpdatesRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="getsoftwareupdatesresulttypedef"></a>
+```python title="Definition"
+class GetSoftwareUpdatesRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## GetSoftwareUpdatesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import GetSoftwareUpdatesResultTypeDef
+
+def get_value() -> GetSoftwareUpdatesResultTypeDef:
+    return {
+        "UpdatesURI": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSoftwareUpdatesResultTypeDef(TypedDict):
+    UpdatesURI: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UpdatesURI`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="indtaxdocumentstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## INDTaxDocumentsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import INDTaxDocumentsTypeDef
+
+def get_value() -> INDTaxDocumentsTypeDef:
+    return {
+        "GSTIN": ...,
+    }
 ```
 
-Optional fields:
-
-- `GSTIN`: `str`
-
-<a id="joblistentrytypedef"></a>
+```python title="Definition"
+class INDTaxDocumentsTypeDef(TypedDict):
+    GSTIN: NotRequired[str],
+```
 
 ## JobListEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import JobListEntryTypeDef
+
+def get_value() -> JobListEntryTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobListEntryTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    JobState: NotRequired[JobStateType],  # (1)
+    IsMaster: NotRequired[bool],
+    JobType: NotRequired[JobTypeType],  # (2)
+    SnowballType: NotRequired[SnowballTypeType],  # (3)
+    CreationDate: NotRequired[datetime],
+    Description: NotRequired[str],
+```
 
-- `JobId`: `str`
-- `JobState`: [JobStateType](./literals.md#jobstatetype)
-- `IsMaster`: `bool`
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
-- `CreationDate`: `datetime`
-- `Description`: `str`
-
-<a id="joblogstypedef"></a>
-
+1. See [:material-code-brackets: JobStateType](./literals.md#jobstatetype) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
 ## JobLogsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import JobLogsTypeDef
+
+def get_value() -> JobLogsTypeDef:
+    return {
+        "JobCompletionReportURI": ...,
+    }
 ```
 
-Optional fields:
-
-- `JobCompletionReportURI`: `str`
-- `JobSuccessLogURI`: `str`
-- `JobFailureLogURI`: `str`
-
-<a id="jobmetadatatypedef"></a>
+```python title="Definition"
+class JobLogsTypeDef(TypedDict):
+    JobCompletionReportURI: NotRequired[str],
+    JobSuccessLogURI: NotRequired[str],
+    JobFailureLogURI: NotRequired[str],
+```
 
 ## JobMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import JobMetadataTypeDef
+
+def get_value() -> JobMetadataTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobMetadataTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    JobState: NotRequired[JobStateType],  # (1)
+    JobType: NotRequired[JobTypeType],  # (2)
+    SnowballType: NotRequired[SnowballTypeType],  # (3)
+    CreationDate: NotRequired[datetime],
+    Resources: NotRequired[JobResourceTypeDef],  # (4)
+    Description: NotRequired[str],
+    KmsKeyARN: NotRequired[str],
+    RoleARN: NotRequired[str],
+    AddressId: NotRequired[str],
+    ShippingDetails: NotRequired[ShippingDetailsTypeDef],  # (5)
+    SnowballCapacityPreference: NotRequired[SnowballCapacityType],  # (6)
+    Notification: NotRequired[NotificationTypeDef],  # (7)
+    DataTransferProgress: NotRequired[DataTransferTypeDef],  # (8)
+    JobLogInfo: NotRequired[JobLogsTypeDef],  # (9)
+    ClusterId: NotRequired[str],
+    ForwardingAddressId: NotRequired[str],
+    TaxDocuments: NotRequired[TaxDocumentsTypeDef],  # (10)
+    DeviceConfiguration: NotRequired[DeviceConfigurationTypeDef],  # (11)
+    RemoteManagement: NotRequired[RemoteManagementType],  # (12)
+    LongTermPricingId: NotRequired[str],
+    OnDeviceServiceConfiguration: NotRequired[OnDeviceServiceConfigurationTypeDef],  # (13)
+```
 
-- `JobId`: `str`
-- `JobState`: [JobStateType](./literals.md#jobstatetype)
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
-- `CreationDate`: `datetime`
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-- `Description`: `str`
-- `KmsKeyARN`: `str`
-- `RoleARN`: `str`
-- `AddressId`: `str`
-- `ShippingDetails`:
-  [ShippingDetailsTypeDef](./type_defs.md#shippingdetailstypedef)
-- `SnowballCapacityPreference`:
-  [SnowballCapacityType](./literals.md#snowballcapacitytype)
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `DataTransferProgress`:
-  [DataTransferTypeDef](./type_defs.md#datatransfertypedef)
-- `JobLogInfo`: [JobLogsTypeDef](./type_defs.md#joblogstypedef)
-- `ClusterId`: `str`
-- `ForwardingAddressId`: `str`
-- `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
-- `DeviceConfiguration`:
-  [DeviceConfigurationTypeDef](./type_defs.md#deviceconfigurationtypedef)
-- `RemoteManagement`:
-  [RemoteManagementType](./literals.md#remotemanagementtype)
-- `LongTermPricingId`: `str`
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-
-<a id="jobresourcetypedef"></a>
-
+1. See [:material-code-brackets: JobStateType](./literals.md#jobstatetype) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
+4. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+5. See [:material-code-braces: ShippingDetailsTypeDef](./type_defs.md#shippingdetailstypedef) 
+6. See [:material-code-brackets: SnowballCapacityType](./literals.md#snowballcapacitytype) 
+7. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+8. See [:material-code-braces: DataTransferTypeDef](./type_defs.md#datatransfertypedef) 
+9. See [:material-code-braces: JobLogsTypeDef](./type_defs.md#joblogstypedef) 
+10. See [:material-code-braces: TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef) 
+11. See [:material-code-braces: DeviceConfigurationTypeDef](./type_defs.md#deviceconfigurationtypedef) 
+12. See [:material-code-brackets: RemoteManagementType](./literals.md#remotemanagementtype) 
+13. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
 ## JobResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import JobResourceTypeDef
+
+def get_value() -> JobResourceTypeDef:
+    return {
+        "S3Resources": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobResourceTypeDef(TypedDict):
+    S3Resources: NotRequired[Sequence[S3ResourceTypeDef]],  # (1)
+    LambdaResources: NotRequired[Sequence[LambdaResourceTypeDef]],  # (2)
+    Ec2AmiResources: NotRequired[Sequence[Ec2AmiResourceTypeDef]],  # (3)
+```
 
-- `S3Resources`:
-  `Sequence`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
-- `LambdaResources`:
-  `Sequence`\[[LambdaResourceTypeDef](./type_defs.md#lambdaresourcetypedef)\]
-- `Ec2AmiResources`:
-  `Sequence`\[[Ec2AmiResourceTypeDef](./type_defs.md#ec2amiresourcetypedef)\]
-
-<a id="keyrangetypedef"></a>
-
+1. See [:material-code-braces: S3ResourceTypeDef](./type_defs.md#s3resourcetypedef) 
+2. See [:material-code-braces: LambdaResourceTypeDef](./type_defs.md#lambdaresourcetypedef) 
+3. See [:material-code-braces: Ec2AmiResourceTypeDef](./type_defs.md#ec2amiresourcetypedef) 
 ## KeyRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import KeyRangeTypeDef
+
+def get_value() -> KeyRangeTypeDef:
+    return {
+        "BeginMarker": ...,
+    }
 ```
 
-Optional fields:
-
-- `BeginMarker`: `str`
-- `EndMarker`: `str`
-
-<a id="lambdaresourcetypedef"></a>
+```python title="Definition"
+class KeyRangeTypeDef(TypedDict):
+    BeginMarker: NotRequired[str],
+    EndMarker: NotRequired[str],
+```
 
 ## LambdaResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import LambdaResourceTypeDef
+
+def get_value() -> LambdaResourceTypeDef:
+    return {
+        "LambdaArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LambdaResourceTypeDef(TypedDict):
+    LambdaArn: NotRequired[str],
+    EventTriggers: NotRequired[Sequence[EventTriggerDefinitionTypeDef]],  # (1)
+```
 
-- `LambdaArn`: `str`
-- `EventTriggers`:
-  `Sequence`\[[EventTriggerDefinitionTypeDef](./type_defs.md#eventtriggerdefinitiontypedef)\]
+1. See [:material-code-braces: EventTriggerDefinitionTypeDef](./type_defs.md#eventtriggerdefinitiontypedef) 
+## ListClusterJobsRequestListClusterJobsPaginateTypeDef
 
-<a id="listclusterjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import ListClusterJobsRequestListClusterJobsPaginateTypeDef
 
+def get_value() -> ListClusterJobsRequestListClusterJobsPaginateTypeDef:
+    return {
+        "ClusterId": ...,
+    }
+```
+
+```python title="Definition"
+class ListClusterJobsRequestListClusterJobsPaginateTypeDef(TypedDict):
+    ClusterId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListClusterJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListClusterJobsRequestRequestTypeDef
+
+def get_value() -> ListClusterJobsRequestRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listclusterjobsresulttypedef"></a>
+```python title="Definition"
+class ListClusterJobsRequestRequestTypeDef(TypedDict):
+    ClusterId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListClusterJobsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListClusterJobsResultTypeDef
+
+def get_value() -> ListClusterJobsResultTypeDef:
+    return {
+        "JobListEntries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListClusterJobsResultTypeDef(TypedDict):
+    JobListEntries: List[JobListEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobListEntries`:
-  `List`\[[JobListEntryTypeDef](./type_defs.md#joblistentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobListEntryTypeDef](./type_defs.md#joblistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListClustersRequestListClustersPaginateTypeDef
 
-<a id="listclustersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import ListClustersRequestListClustersPaginateTypeDef
 
+def get_value() -> ListClustersRequestListClustersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListClustersRequestListClustersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListClustersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListClustersRequestRequestTypeDef
+
+def get_value() -> ListClustersRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listclustersresulttypedef"></a>
+```python title="Definition"
+class ListClustersRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListClustersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListClustersResultTypeDef
+
+def get_value() -> ListClustersResultTypeDef:
+    return {
+        "ClusterListEntries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListClustersResultTypeDef(TypedDict):
+    ClusterListEntries: List[ClusterListEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClusterListEntries`:
-  `List`\[[ClusterListEntryTypeDef](./type_defs.md#clusterlistentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ClusterListEntryTypeDef](./type_defs.md#clusterlistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCompatibleImagesRequestListCompatibleImagesPaginateTypeDef
 
-<a id="listcompatibleimagesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import ListCompatibleImagesRequestListCompatibleImagesPaginateTypeDef
 
+def get_value() -> ListCompatibleImagesRequestListCompatibleImagesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCompatibleImagesRequestListCompatibleImagesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCompatibleImagesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListCompatibleImagesRequestRequestTypeDef
+
+def get_value() -> ListCompatibleImagesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listcompatibleimagesresulttypedef"></a>
+```python title="Definition"
+class ListCompatibleImagesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListCompatibleImagesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListCompatibleImagesResultTypeDef
+
+def get_value() -> ListCompatibleImagesResultTypeDef:
+    return {
+        "CompatibleImages": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCompatibleImagesResultTypeDef(TypedDict):
+    CompatibleImages: List[CompatibleImageTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CompatibleImages`:
-  `List`\[[CompatibleImageTypeDef](./type_defs.md#compatibleimagetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CompatibleImageTypeDef](./type_defs.md#compatibleimagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListJobsRequestListJobsPaginateTypeDef
 
-<a id="listjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_snowball.type_defs import ListJobsRequestListJobsPaginateTypeDef
 
+def get_value() -> ListJobsRequestListJobsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsRequestListJobsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListJobsRequestRequestTypeDef
+
+def get_value() -> ListJobsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listjobsresulttypedef"></a>
+```python title="Definition"
+class ListJobsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListJobsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListJobsResultTypeDef
+
+def get_value() -> ListJobsResultTypeDef:
+    return {
+        "JobListEntries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobsResultTypeDef(TypedDict):
+    JobListEntries: List[JobListEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobListEntries`:
-  `List`\[[JobListEntryTypeDef](./type_defs.md#joblistentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listlongtermpricingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobListEntryTypeDef](./type_defs.md#joblistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListLongTermPricingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListLongTermPricingRequestRequestTypeDef
+
+def get_value() -> ListLongTermPricingRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listlongtermpricingresulttypedef"></a>
+```python title="Definition"
+class ListLongTermPricingRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListLongTermPricingResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ListLongTermPricingResultTypeDef
+
+def get_value() -> ListLongTermPricingResultTypeDef:
+    return {
+        "LongTermPricingEntries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLongTermPricingResultTypeDef(TypedDict):
+    LongTermPricingEntries: List[LongTermPricingListEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LongTermPricingEntries`:
-  `List`\[[LongTermPricingListEntryTypeDef](./type_defs.md#longtermpricinglistentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="longtermpricinglistentrytypedef"></a>
-
+1. See [:material-code-braces: LongTermPricingListEntryTypeDef](./type_defs.md#longtermpricinglistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LongTermPricingListEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import LongTermPricingListEntryTypeDef
+
+def get_value() -> LongTermPricingListEntryTypeDef:
+    return {
+        "LongTermPricingId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LongTermPricingListEntryTypeDef(TypedDict):
+    LongTermPricingId: NotRequired[str],
+    LongTermPricingEndDate: NotRequired[datetime],
+    LongTermPricingStartDate: NotRequired[datetime],
+    LongTermPricingType: NotRequired[LongTermPricingTypeType],  # (1)
+    CurrentActiveJob: NotRequired[str],
+    ReplacementJob: NotRequired[str],
+    IsLongTermPricingAutoRenew: NotRequired[bool],
+    LongTermPricingStatus: NotRequired[str],
+    SnowballType: NotRequired[SnowballTypeType],  # (2)
+    JobIds: NotRequired[List[str]],
+```
 
-- `LongTermPricingId`: `str`
-- `LongTermPricingEndDate`: `datetime`
-- `LongTermPricingStartDate`: `datetime`
-- `LongTermPricingType`:
-  [LongTermPricingTypeType](./literals.md#longtermpricingtypetype)
-- `CurrentActiveJob`: `str`
-- `ReplacementJob`: `str`
-- `IsLongTermPricingAutoRenew`: `bool`
-- `LongTermPricingStatus`: `str`
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
-- `JobIds`: `List`\[`str`\]
-
-<a id="nfsondeviceserviceconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: LongTermPricingTypeType](./literals.md#longtermpricingtypetype) 
+2. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
 ## NFSOnDeviceServiceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import NFSOnDeviceServiceConfigurationTypeDef
+
+def get_value() -> NFSOnDeviceServiceConfigurationTypeDef:
+    return {
+        "StorageLimit": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NFSOnDeviceServiceConfigurationTypeDef(TypedDict):
+    StorageLimit: NotRequired[int],
+    StorageUnit: NotRequired[StorageUnitType],  # (1)
+```
 
-- `StorageLimit`: `int`
-- `StorageUnit`: `Literal['TB']` (see
-  [StorageUnitType](./literals.md#storageunittype))
-
-<a id="notificationtypedef"></a>
-
+1. See [:material-code-brackets: StorageUnitType](./literals.md#storageunittype) 
 ## NotificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import NotificationTypeDef
+
+def get_value() -> NotificationTypeDef:
+    return {
+        "SnsTopicARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotificationTypeDef(TypedDict):
+    SnsTopicARN: NotRequired[str],
+    JobStatesToNotify: NotRequired[Sequence[JobStateType]],  # (1)
+    NotifyAll: NotRequired[bool],
+```
 
-- `SnsTopicARN`: `str`
-- `JobStatesToNotify`: `Sequence`\[[JobStateType](./literals.md#jobstatetype)\]
-- `NotifyAll`: `bool`
-
-<a id="ondeviceserviceconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: JobStateType](./literals.md#jobstatetype) 
 ## OnDeviceServiceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import OnDeviceServiceConfigurationTypeDef
+
+def get_value() -> OnDeviceServiceConfigurationTypeDef:
+    return {
+        "NFSOnDeviceService": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OnDeviceServiceConfigurationTypeDef(TypedDict):
+    NFSOnDeviceService: NotRequired[NFSOnDeviceServiceConfigurationTypeDef],  # (1)
+    TGWOnDeviceService: NotRequired[TGWOnDeviceServiceConfigurationTypeDef],  # (2)
+```
 
-- `NFSOnDeviceService`:
-  [NFSOnDeviceServiceConfigurationTypeDef](./type_defs.md#nfsondeviceserviceconfigurationtypedef)
-- `TGWOnDeviceService`:
-  [TGWOnDeviceServiceConfigurationTypeDef](./type_defs.md#tgwondeviceserviceconfigurationtypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: NFSOnDeviceServiceConfigurationTypeDef](./type_defs.md#nfsondeviceserviceconfigurationtypedef) 
+2. See [:material-code-braces: TGWOnDeviceServiceConfigurationTypeDef](./type_defs.md#tgwondeviceserviceconfigurationtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3resourcetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import S3ResourceTypeDef
+
+def get_value() -> S3ResourceTypeDef:
+    return {
+        "BucketArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3ResourceTypeDef(TypedDict):
+    BucketArn: NotRequired[str],
+    KeyRange: NotRequired[KeyRangeTypeDef],  # (1)
+    TargetOnDeviceServices: NotRequired[Sequence[TargetOnDeviceServiceTypeDef]],  # (2)
+```
 
-- `BucketArn`: `str`
-- `KeyRange`: [KeyRangeTypeDef](./type_defs.md#keyrangetypedef)
-- `TargetOnDeviceServices`:
-  `Sequence`\[[TargetOnDeviceServiceTypeDef](./type_defs.md#targetondeviceservicetypedef)\]
-
-<a id="shipmenttypedef"></a>
-
+1. See [:material-code-braces: KeyRangeTypeDef](./type_defs.md#keyrangetypedef) 
+2. See [:material-code-braces: TargetOnDeviceServiceTypeDef](./type_defs.md#targetondeviceservicetypedef) 
 ## ShipmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ShipmentTypeDef
+
+def get_value() -> ShipmentTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
-
-- `Status`: `str`
-- `TrackingNumber`: `str`
-
-<a id="shippingdetailstypedef"></a>
+```python title="Definition"
+class ShipmentTypeDef(TypedDict):
+    Status: NotRequired[str],
+    TrackingNumber: NotRequired[str],
+```
 
 ## ShippingDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import ShippingDetailsTypeDef
+
+def get_value() -> ShippingDetailsTypeDef:
+    return {
+        "ShippingOption": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ShippingDetailsTypeDef(TypedDict):
+    ShippingOption: NotRequired[ShippingOptionType],  # (1)
+    InboundShipment: NotRequired[ShipmentTypeDef],  # (2)
+    OutboundShipment: NotRequired[ShipmentTypeDef],  # (2)
+```
 
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-- `InboundShipment`: [ShipmentTypeDef](./type_defs.md#shipmenttypedef)
-- `OutboundShipment`: [ShipmentTypeDef](./type_defs.md#shipmenttypedef)
-
-<a id="snowconedeviceconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+2. See [:material-code-braces: ShipmentTypeDef](./type_defs.md#shipmenttypedef) 
+3. See [:material-code-braces: ShipmentTypeDef](./type_defs.md#shipmenttypedef) 
 ## SnowconeDeviceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import SnowconeDeviceConfigurationTypeDef
+
+def get_value() -> SnowconeDeviceConfigurationTypeDef:
+    return {
+        "WirelessConnection": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SnowconeDeviceConfigurationTypeDef(TypedDict):
+    WirelessConnection: NotRequired[WirelessConnectionTypeDef],  # (1)
+```
 
-- `WirelessConnection`:
-  [WirelessConnectionTypeDef](./type_defs.md#wirelessconnectiontypedef)
-
-<a id="tgwondeviceserviceconfigurationtypedef"></a>
-
+1. See [:material-code-braces: WirelessConnectionTypeDef](./type_defs.md#wirelessconnectiontypedef) 
 ## TGWOnDeviceServiceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import TGWOnDeviceServiceConfigurationTypeDef
+
+def get_value() -> TGWOnDeviceServiceConfigurationTypeDef:
+    return {
+        "StorageLimit": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TGWOnDeviceServiceConfigurationTypeDef(TypedDict):
+    StorageLimit: NotRequired[int],
+    StorageUnit: NotRequired[StorageUnitType],  # (1)
+```
 
-- `StorageLimit`: `int`
-- `StorageUnit`: `Literal['TB']` (see
-  [StorageUnitType](./literals.md#storageunittype))
-
-<a id="targetondeviceservicetypedef"></a>
-
+1. See [:material-code-brackets: StorageUnitType](./literals.md#storageunittype) 
 ## TargetOnDeviceServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import TargetOnDeviceServiceTypeDef
+
+def get_value() -> TargetOnDeviceServiceTypeDef:
+    return {
+        "ServiceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TargetOnDeviceServiceTypeDef(TypedDict):
+    ServiceName: NotRequired[DeviceServiceNameType],  # (1)
+    TransferOption: NotRequired[TransferOptionType],  # (2)
+```
 
-- `ServiceName`: [DeviceServiceNameType](./literals.md#deviceservicenametype)
-- `TransferOption`: [TransferOptionType](./literals.md#transferoptiontype)
-
-<a id="taxdocumentstypedef"></a>
-
+1. See [:material-code-brackets: DeviceServiceNameType](./literals.md#deviceservicenametype) 
+2. See [:material-code-brackets: TransferOptionType](./literals.md#transferoptiontype) 
 ## TaxDocumentsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import TaxDocumentsTypeDef
+
+def get_value() -> TaxDocumentsTypeDef:
+    return {
+        "IND": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaxDocumentsTypeDef(TypedDict):
+    IND: NotRequired[INDTaxDocumentsTypeDef],  # (1)
+```
 
-- `IND`: [INDTaxDocumentsTypeDef](./type_defs.md#indtaxdocumentstypedef)
-
-<a id="updateclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: INDTaxDocumentsTypeDef](./type_defs.md#indtaxdocumentstypedef) 
 ## UpdateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import UpdateClusterRequestRequestTypeDef
+
+def get_value() -> UpdateClusterRequestRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterRequestRequestTypeDef(TypedDict):
+    ClusterId: str,
+    RoleARN: NotRequired[str],
+    Description: NotRequired[str],
+    Resources: NotRequired[JobResourceTypeDef],  # (1)
+    OnDeviceServiceConfiguration: NotRequired[OnDeviceServiceConfigurationTypeDef],  # (2)
+    AddressId: NotRequired[str],
+    ShippingOption: NotRequired[ShippingOptionType],  # (3)
+    Notification: NotRequired[NotificationTypeDef],  # (4)
+    ForwardingAddressId: NotRequired[str],
+```
 
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-- `Description`: `str`
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-- `AddressId`: `str`
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `ForwardingAddressId`: `str`
-
-<a id="updatejobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+2. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
+3. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+4. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
 ## UpdateJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import UpdateJobRequestRequestTypeDef
+
+def get_value() -> UpdateJobRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    RoleARN: NotRequired[str],
+    Notification: NotRequired[NotificationTypeDef],  # (1)
+    Resources: NotRequired[JobResourceTypeDef],  # (2)
+    OnDeviceServiceConfiguration: NotRequired[OnDeviceServiceConfigurationTypeDef],  # (3)
+    AddressId: NotRequired[str],
+    ShippingOption: NotRequired[ShippingOptionType],  # (4)
+    Description: NotRequired[str],
+    SnowballCapacityPreference: NotRequired[SnowballCapacityType],  # (5)
+    ForwardingAddressId: NotRequired[str],
+```
 
-- `JobId`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-- `AddressId`: `str`
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-- `Description`: `str`
-- `SnowballCapacityPreference`:
-  [SnowballCapacityType](./literals.md#snowballcapacitytype)
-- `ForwardingAddressId`: `str`
-
-<a id="updatejobshipmentstaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+3. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
+4. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+5. See [:material-code-brackets: SnowballCapacityType](./literals.md#snowballcapacitytype) 
 ## UpdateJobShipmentStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import UpdateJobShipmentStateRequestRequestTypeDef
+
+def get_value() -> UpdateJobShipmentStateRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+        "ShipmentState": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobShipmentStateRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    ShipmentState: ShipmentStateType,  # (1)
+```
 
-- `JobId`: `str`
-- `ShipmentState`: [ShipmentStateType](./literals.md#shipmentstatetype)
-
-<a id="updatelongtermpricingrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ShipmentStateType](./literals.md#shipmentstatetype) 
 ## UpdateLongTermPricingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import UpdateLongTermPricingRequestRequestTypeDef
+
+def get_value() -> UpdateLongTermPricingRequestRequestTypeDef:
+    return {
+        "LongTermPricingId": ...,
+    }
 ```
 
-Required fields:
-
-- `LongTermPricingId`: `str`
-
-Optional fields:
-
-- `ReplacementJob`: `str`
-- `IsLongTermPricingAutoRenew`: `bool`
-
-<a id="wirelessconnectiontypedef"></a>
+```python title="Definition"
+class UpdateLongTermPricingRequestRequestTypeDef(TypedDict):
+    LongTermPricingId: str,
+    ReplacementJob: NotRequired[str],
+    IsLongTermPricingAutoRenew: NotRequired[bool],
+```
 
 ## WirelessConnectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_snowball.type_defs import WirelessConnectionTypeDef
+
+def get_value() -> WirelessConnectionTypeDef:
+    return {
+        "IsWifiEnabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WirelessConnectionTypeDef(TypedDict):
+    IsWifiEnabled: NotRequired[bool],
+```
 
-- `IsWifiEnabled`: `bool`

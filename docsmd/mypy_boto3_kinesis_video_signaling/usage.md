@@ -1,71 +1,71 @@
-<a id="examples-for-boto3-kinesisvideosignalingchannels-module"></a>
+# Examples
 
-# Examples for boto3 KinesisVideoSignalingChannels module
+> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) > Examples
 
-> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) >
-> Examples
+!!! note ""
 
-- [Examples for boto3 KinesisVideoSignalingChannels module](#examples-for-boto3-kinesisvideosignalingchannels-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
-
-<a id="client"></a>
+    Auto-generated documentation for [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
+    type annotations stubs module [mypy-boto3-kinesis-video-signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[kinesis-video-signaling]` package installed.
 
-Write your `KinesisVideoSignalingChannels` code as usual, type checking and
-code completion should work out of the box.
-
-```python
-import boto3
+Write your `KinesisVideoSignalingChannels` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type KinesisVideoSignalingChannelsClient
-# and provides type checking and code completion
-client = session.client("kinesis-video-signaling")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("kinesis-video-signaling")  # (1)
+    result = client.get_ice_server_config()  # (2)
+    ```
+
+    1. client: [KinesisVideoSignalingChannelsClient](./client.md)
+    2. result: [:material-code-braces: GetIceServerConfigResponseTypeDef](./type_defs.md#geticeserverconfigresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[kinesis-video-signaling]` or a standalone
-`mypy_boto3_kinesis_video_signaling` package, you have to explicitly specify
-`client: KinesisVideoSignalingChannelsClient` type annotation.
+With `boto3-stubs-lite[kinesis-video-signaling]`
+or a standalone `mypy_boto3_kinesis_video_signaling` package, you have to explicitly specify `client: KinesisVideoSignalingChannelsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_kinesis_video_signaling.client import KinesisVideoSignalingChannelsClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_kinesis_video_signaling.client import KinesisVideoSignalingChannelsClient
+    from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseTypeDef
+    from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigRequestRequestTypeDef
 
 
-from mypy_boto3_kinesis_video_signaling.type_defs import bool
+    session = Session()
+
+    client: KinesisVideoSignalingChannelsClient = session.client("kinesis-video-signaling")
+
+    kwargs: GetIceServerConfigRequestRequestTypeDef = {...}
+    result: GetIceServerConfigResponseTypeDef = client.get_ice_server_config(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: KinesisVideoSignalingChannelsClient = session.client("kinesis-video-signaling")
 
-result: bool = client.can_paginate()
-```
+

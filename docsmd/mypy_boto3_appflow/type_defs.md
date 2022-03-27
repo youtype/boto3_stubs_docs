@@ -1,2806 +1,3284 @@
-<a id="typed-dictionaries-for-boto3-appflow-module"></a>
-
-# Typed dictionaries for boto3 Appflow module
+# Typed dictionaries
 
 > [Index](../README.md) > [Appflow](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
-type annotations stubs module
-[mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Appflow module](#typed-dictionaries-for-boto3-appflow-module)
-  - [AggregationConfigTypeDef](#aggregationconfigtypedef)
-  - [AmplitudeConnectorProfileCredentialsTypeDef](#amplitudeconnectorprofilecredentialstypedef)
-  - [AmplitudeSourcePropertiesTypeDef](#amplitudesourcepropertiestypedef)
-  - [ApiKeyCredentialsTypeDef](#apikeycredentialstypedef)
-  - [AuthParameterTypeDef](#authparametertypedef)
-  - [AuthenticationConfigTypeDef](#authenticationconfigtypedef)
-  - [BasicAuthCredentialsTypeDef](#basicauthcredentialstypedef)
-  - [ConnectorConfigurationTypeDef](#connectorconfigurationtypedef)
-  - [ConnectorDetailTypeDef](#connectordetailtypedef)
-  - [ConnectorEntityFieldTypeDef](#connectorentityfieldtypedef)
-  - [ConnectorEntityTypeDef](#connectorentitytypedef)
-  - [ConnectorMetadataTypeDef](#connectormetadatatypedef)
-  - [ConnectorOAuthRequestTypeDef](#connectoroauthrequesttypedef)
-  - [ConnectorOperatorTypeDef](#connectoroperatortypedef)
-  - [ConnectorProfileConfigTypeDef](#connectorprofileconfigtypedef)
-  - [ConnectorProfileCredentialsTypeDef](#connectorprofilecredentialstypedef)
-  - [ConnectorProfilePropertiesTypeDef](#connectorprofilepropertiestypedef)
-  - [ConnectorProfileTypeDef](#connectorprofiletypedef)
-  - [ConnectorProvisioningConfigTypeDef](#connectorprovisioningconfigtypedef)
-  - [ConnectorRuntimeSettingTypeDef](#connectorruntimesettingtypedef)
-  - [CreateConnectorProfileRequestRequestTypeDef](#createconnectorprofilerequestrequesttypedef)
-  - [CreateConnectorProfileResponseTypeDef](#createconnectorprofileresponsetypedef)
-  - [CreateFlowRequestRequestTypeDef](#createflowrequestrequesttypedef)
-  - [CreateFlowResponseTypeDef](#createflowresponsetypedef)
-  - [CustomAuthConfigTypeDef](#customauthconfigtypedef)
-  - [CustomAuthCredentialsTypeDef](#customauthcredentialstypedef)
-  - [CustomConnectorDestinationPropertiesTypeDef](#customconnectordestinationpropertiestypedef)
-  - [CustomConnectorProfileCredentialsTypeDef](#customconnectorprofilecredentialstypedef)
-  - [CustomConnectorProfilePropertiesTypeDef](#customconnectorprofilepropertiestypedef)
-  - [CustomConnectorSourcePropertiesTypeDef](#customconnectorsourcepropertiestypedef)
-  - [CustomerProfilesDestinationPropertiesTypeDef](#customerprofilesdestinationpropertiestypedef)
-  - [DatadogConnectorProfileCredentialsTypeDef](#datadogconnectorprofilecredentialstypedef)
-  - [DatadogConnectorProfilePropertiesTypeDef](#datadogconnectorprofilepropertiestypedef)
-  - [DatadogSourcePropertiesTypeDef](#datadogsourcepropertiestypedef)
-  - [DeleteConnectorProfileRequestRequestTypeDef](#deleteconnectorprofilerequestrequesttypedef)
-  - [DeleteFlowRequestRequestTypeDef](#deleteflowrequestrequesttypedef)
-  - [DescribeConnectorEntityRequestRequestTypeDef](#describeconnectorentityrequestrequesttypedef)
-  - [DescribeConnectorEntityResponseTypeDef](#describeconnectorentityresponsetypedef)
-  - [DescribeConnectorProfilesRequestRequestTypeDef](#describeconnectorprofilesrequestrequesttypedef)
-  - [DescribeConnectorProfilesResponseTypeDef](#describeconnectorprofilesresponsetypedef)
-  - [DescribeConnectorRequestRequestTypeDef](#describeconnectorrequestrequesttypedef)
-  - [DescribeConnectorResponseTypeDef](#describeconnectorresponsetypedef)
-  - [DescribeConnectorsRequestRequestTypeDef](#describeconnectorsrequestrequesttypedef)
-  - [DescribeConnectorsResponseTypeDef](#describeconnectorsresponsetypedef)
-  - [DescribeFlowExecutionRecordsRequestRequestTypeDef](#describeflowexecutionrecordsrequestrequesttypedef)
-  - [DescribeFlowExecutionRecordsResponseTypeDef](#describeflowexecutionrecordsresponsetypedef)
-  - [DescribeFlowRequestRequestTypeDef](#describeflowrequestrequesttypedef)
-  - [DescribeFlowResponseTypeDef](#describeflowresponsetypedef)
-  - [DestinationConnectorPropertiesTypeDef](#destinationconnectorpropertiestypedef)
-  - [DestinationFieldPropertiesTypeDef](#destinationfieldpropertiestypedef)
-  - [DestinationFlowConfigTypeDef](#destinationflowconfigtypedef)
-  - [DynatraceConnectorProfileCredentialsTypeDef](#dynatraceconnectorprofilecredentialstypedef)
-  - [DynatraceConnectorProfilePropertiesTypeDef](#dynatraceconnectorprofilepropertiestypedef)
-  - [DynatraceSourcePropertiesTypeDef](#dynatracesourcepropertiestypedef)
-  - [ErrorHandlingConfigTypeDef](#errorhandlingconfigtypedef)
-  - [ErrorInfoTypeDef](#errorinfotypedef)
-  - [EventBridgeDestinationPropertiesTypeDef](#eventbridgedestinationpropertiestypedef)
-  - [ExecutionDetailsTypeDef](#executiondetailstypedef)
-  - [ExecutionRecordTypeDef](#executionrecordtypedef)
-  - [ExecutionResultTypeDef](#executionresulttypedef)
-  - [FieldTypeDetailsTypeDef](#fieldtypedetailstypedef)
-  - [FlowDefinitionTypeDef](#flowdefinitiontypedef)
-  - [GoogleAnalyticsConnectorProfileCredentialsTypeDef](#googleanalyticsconnectorprofilecredentialstypedef)
-  - [GoogleAnalyticsMetadataTypeDef](#googleanalyticsmetadatatypedef)
-  - [GoogleAnalyticsSourcePropertiesTypeDef](#googleanalyticssourcepropertiestypedef)
-  - [HoneycodeConnectorProfileCredentialsTypeDef](#honeycodeconnectorprofilecredentialstypedef)
-  - [HoneycodeDestinationPropertiesTypeDef](#honeycodedestinationpropertiestypedef)
-  - [HoneycodeMetadataTypeDef](#honeycodemetadatatypedef)
-  - [IncrementalPullConfigTypeDef](#incrementalpullconfigtypedef)
-  - [InforNexusConnectorProfileCredentialsTypeDef](#infornexusconnectorprofilecredentialstypedef)
-  - [InforNexusConnectorProfilePropertiesTypeDef](#infornexusconnectorprofilepropertiestypedef)
-  - [InforNexusSourcePropertiesTypeDef](#infornexussourcepropertiestypedef)
-  - [LambdaConnectorProvisioningConfigTypeDef](#lambdaconnectorprovisioningconfigtypedef)
-  - [ListConnectorEntitiesRequestRequestTypeDef](#listconnectorentitiesrequestrequesttypedef)
-  - [ListConnectorEntitiesResponseTypeDef](#listconnectorentitiesresponsetypedef)
-  - [ListConnectorsRequestRequestTypeDef](#listconnectorsrequestrequesttypedef)
-  - [ListConnectorsResponseTypeDef](#listconnectorsresponsetypedef)
-  - [ListFlowsRequestRequestTypeDef](#listflowsrequestrequesttypedef)
-  - [ListFlowsResponseTypeDef](#listflowsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MarketoConnectorProfileCredentialsTypeDef](#marketoconnectorprofilecredentialstypedef)
-  - [MarketoConnectorProfilePropertiesTypeDef](#marketoconnectorprofilepropertiestypedef)
-  - [MarketoDestinationPropertiesTypeDef](#marketodestinationpropertiestypedef)
-  - [MarketoSourcePropertiesTypeDef](#marketosourcepropertiestypedef)
-  - [OAuth2CredentialsTypeDef](#oauth2credentialstypedef)
-  - [OAuth2DefaultsTypeDef](#oauth2defaultstypedef)
-  - [OAuth2PropertiesTypeDef](#oauth2propertiestypedef)
-  - [OAuthCredentialsTypeDef](#oauthcredentialstypedef)
-  - [OAuthPropertiesTypeDef](#oauthpropertiestypedef)
-  - [PrefixConfigTypeDef](#prefixconfigtypedef)
-  - [PrivateConnectionProvisioningStateTypeDef](#privateconnectionprovisioningstatetypedef)
-  - [RangeTypeDef](#rangetypedef)
-  - [RedshiftConnectorProfileCredentialsTypeDef](#redshiftconnectorprofilecredentialstypedef)
-  - [RedshiftConnectorProfilePropertiesTypeDef](#redshiftconnectorprofilepropertiestypedef)
-  - [RedshiftDestinationPropertiesTypeDef](#redshiftdestinationpropertiestypedef)
-  - [RegisterConnectorRequestRequestTypeDef](#registerconnectorrequestrequesttypedef)
-  - [RegisterConnectorResponseTypeDef](#registerconnectorresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3DestinationPropertiesTypeDef](#s3destinationpropertiestypedef)
-  - [S3InputFormatConfigTypeDef](#s3inputformatconfigtypedef)
-  - [S3OutputFormatConfigTypeDef](#s3outputformatconfigtypedef)
-  - [S3SourcePropertiesTypeDef](#s3sourcepropertiestypedef)
-  - [SAPODataConnectorProfileCredentialsTypeDef](#sapodataconnectorprofilecredentialstypedef)
-  - [SAPODataConnectorProfilePropertiesTypeDef](#sapodataconnectorprofilepropertiestypedef)
-  - [SAPODataDestinationPropertiesTypeDef](#sapodatadestinationpropertiestypedef)
-  - [SAPODataSourcePropertiesTypeDef](#sapodatasourcepropertiestypedef)
-  - [SalesforceConnectorProfileCredentialsTypeDef](#salesforceconnectorprofilecredentialstypedef)
-  - [SalesforceConnectorProfilePropertiesTypeDef](#salesforceconnectorprofilepropertiestypedef)
-  - [SalesforceDestinationPropertiesTypeDef](#salesforcedestinationpropertiestypedef)
-  - [SalesforceMetadataTypeDef](#salesforcemetadatatypedef)
-  - [SalesforceSourcePropertiesTypeDef](#salesforcesourcepropertiestypedef)
-  - [ScheduledTriggerPropertiesTypeDef](#scheduledtriggerpropertiestypedef)
-  - [ServiceNowConnectorProfileCredentialsTypeDef](#servicenowconnectorprofilecredentialstypedef)
-  - [ServiceNowConnectorProfilePropertiesTypeDef](#servicenowconnectorprofilepropertiestypedef)
-  - [ServiceNowSourcePropertiesTypeDef](#servicenowsourcepropertiestypedef)
-  - [SingularConnectorProfileCredentialsTypeDef](#singularconnectorprofilecredentialstypedef)
-  - [SingularSourcePropertiesTypeDef](#singularsourcepropertiestypedef)
-  - [SlackConnectorProfileCredentialsTypeDef](#slackconnectorprofilecredentialstypedef)
-  - [SlackConnectorProfilePropertiesTypeDef](#slackconnectorprofilepropertiestypedef)
-  - [SlackMetadataTypeDef](#slackmetadatatypedef)
-  - [SlackSourcePropertiesTypeDef](#slacksourcepropertiestypedef)
-  - [SnowflakeConnectorProfileCredentialsTypeDef](#snowflakeconnectorprofilecredentialstypedef)
-  - [SnowflakeConnectorProfilePropertiesTypeDef](#snowflakeconnectorprofilepropertiestypedef)
-  - [SnowflakeDestinationPropertiesTypeDef](#snowflakedestinationpropertiestypedef)
-  - [SnowflakeMetadataTypeDef](#snowflakemetadatatypedef)
-  - [SourceConnectorPropertiesTypeDef](#sourceconnectorpropertiestypedef)
-  - [SourceFieldPropertiesTypeDef](#sourcefieldpropertiestypedef)
-  - [SourceFlowConfigTypeDef](#sourceflowconfigtypedef)
-  - [StartFlowRequestRequestTypeDef](#startflowrequestrequesttypedef)
-  - [StartFlowResponseTypeDef](#startflowresponsetypedef)
-  - [StopFlowRequestRequestTypeDef](#stopflowrequestrequesttypedef)
-  - [StopFlowResponseTypeDef](#stopflowresponsetypedef)
-  - [SuccessResponseHandlingConfigTypeDef](#successresponsehandlingconfigtypedef)
-  - [SupportedFieldTypeDetailsTypeDef](#supportedfieldtypedetailstypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TaskTypeDef](#tasktypedef)
-  - [TrendmicroConnectorProfileCredentialsTypeDef](#trendmicroconnectorprofilecredentialstypedef)
-  - [TrendmicroSourcePropertiesTypeDef](#trendmicrosourcepropertiestypedef)
-  - [TriggerConfigTypeDef](#triggerconfigtypedef)
-  - [TriggerPropertiesTypeDef](#triggerpropertiestypedef)
-  - [UnregisterConnectorRequestRequestTypeDef](#unregisterconnectorrequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateConnectorProfileRequestRequestTypeDef](#updateconnectorprofilerequestrequesttypedef)
-  - [UpdateConnectorProfileResponseTypeDef](#updateconnectorprofileresponsetypedef)
-  - [UpdateFlowRequestRequestTypeDef](#updateflowrequestrequesttypedef)
-  - [UpdateFlowResponseTypeDef](#updateflowresponsetypedef)
-  - [UpsolverDestinationPropertiesTypeDef](#upsolverdestinationpropertiestypedef)
-  - [UpsolverS3OutputFormatConfigTypeDef](#upsolvers3outputformatconfigtypedef)
-  - [VeevaConnectorProfileCredentialsTypeDef](#veevaconnectorprofilecredentialstypedef)
-  - [VeevaConnectorProfilePropertiesTypeDef](#veevaconnectorprofilepropertiestypedef)
-  - [VeevaSourcePropertiesTypeDef](#veevasourcepropertiestypedef)
-  - [ZendeskConnectorProfileCredentialsTypeDef](#zendeskconnectorprofilecredentialstypedef)
-  - [ZendeskConnectorProfilePropertiesTypeDef](#zendeskconnectorprofilepropertiestypedef)
-  - [ZendeskDestinationPropertiesTypeDef](#zendeskdestinationpropertiestypedef)
-  - [ZendeskMetadataTypeDef](#zendeskmetadatatypedef)
-  - [ZendeskSourcePropertiesTypeDef](#zendesksourcepropertiestypedef)
-
-<a id="aggregationconfigtypedef"></a>
+    Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+    type annotations stubs module [mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 ## AggregationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import AggregationConfigTypeDef
+
+def get_value() -> AggregationConfigTypeDef:
+    return {
+        "aggregationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregationConfigTypeDef(TypedDict):
+    aggregationType: NotRequired[AggregationTypeType],  # (1)
+```
 
-- `aggregationType`: [AggregationTypeType](./literals.md#aggregationtypetype)
-
-<a id="amplitudeconnectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-brackets: AggregationTypeType](./literals.md#aggregationtypetype) 
 ## AmplitudeConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import AmplitudeConnectorProfileCredentialsTypeDef
+
+def get_value() -> AmplitudeConnectorProfileCredentialsTypeDef:
+    return {
+        "apiKey": ...,
+        "secretKey": ...,
+    }
 ```
 
-Required fields:
-
-- `apiKey`: `str`
-- `secretKey`: `str`
-
-<a id="amplitudesourcepropertiestypedef"></a>
+```python title="Definition"
+class AmplitudeConnectorProfileCredentialsTypeDef(TypedDict):
+    apiKey: str,
+    secretKey: str,
+```
 
 ## AmplitudeSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import AmplitudeSourcePropertiesTypeDef
+
+def get_value() -> AmplitudeSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="apikeycredentialstypedef"></a>
+```python title="Definition"
+class AmplitudeSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## ApiKeyCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ApiKeyCredentialsTypeDef
+
+def get_value() -> ApiKeyCredentialsTypeDef:
+    return {
+        "apiKey": ...,
+    }
 ```
 
-Required fields:
-
-- `apiKey`: `str`
-
-Optional fields:
-
-- `apiSecretKey`: `str`
-
-<a id="authparametertypedef"></a>
+```python title="Definition"
+class ApiKeyCredentialsTypeDef(TypedDict):
+    apiKey: str,
+    apiSecretKey: NotRequired[str],
+```
 
 ## AuthParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import AuthParameterTypeDef
+
+def get_value() -> AuthParameterTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `isRequired`: `bool`
-- `label`: `str`
-- `description`: `str`
-- `isSensitiveField`: `bool`
-- `connectorSuppliedValues`: `List`\[`str`\]
-
-<a id="authenticationconfigtypedef"></a>
+```python title="Definition"
+class AuthParameterTypeDef(TypedDict):
+    key: NotRequired[str],
+    isRequired: NotRequired[bool],
+    label: NotRequired[str],
+    description: NotRequired[str],
+    isSensitiveField: NotRequired[bool],
+    connectorSuppliedValues: NotRequired[List[str]],
+```
 
 ## AuthenticationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import AuthenticationConfigTypeDef
+
+def get_value() -> AuthenticationConfigTypeDef:
+    return {
+        "isBasicAuthSupported": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AuthenticationConfigTypeDef(TypedDict):
+    isBasicAuthSupported: NotRequired[bool],
+    isApiKeyAuthSupported: NotRequired[bool],
+    isOAuth2Supported: NotRequired[bool],
+    isCustomAuthSupported: NotRequired[bool],
+    oAuth2Defaults: NotRequired[OAuth2DefaultsTypeDef],  # (1)
+    customAuthConfigs: NotRequired[List[CustomAuthConfigTypeDef]],  # (2)
+```
 
-- `isBasicAuthSupported`: `bool`
-- `isApiKeyAuthSupported`: `bool`
-- `isOAuth2Supported`: `bool`
-- `isCustomAuthSupported`: `bool`
-- `oAuth2Defaults`:
-  [OAuth2DefaultsTypeDef](./type_defs.md#oauth2defaultstypedef)
-- `customAuthConfigs`:
-  `List`\[[CustomAuthConfigTypeDef](./type_defs.md#customauthconfigtypedef)\]
-
-<a id="basicauthcredentialstypedef"></a>
-
+1. See [:material-code-braces: OAuth2DefaultsTypeDef](./type_defs.md#oauth2defaultstypedef) 
+2. See [:material-code-braces: CustomAuthConfigTypeDef](./type_defs.md#customauthconfigtypedef) 
 ## BasicAuthCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import BasicAuthCredentialsTypeDef
+
+def get_value() -> BasicAuthCredentialsTypeDef:
+    return {
+        "username": ...,
+        "password": ...,
+    }
 ```
 
-Required fields:
-
-- `username`: `str`
-- `password`: `str`
-
-<a id="connectorconfigurationtypedef"></a>
+```python title="Definition"
+class BasicAuthCredentialsTypeDef(TypedDict):
+    username: str,
+    password: str,
+```
 
 ## ConnectorConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorConfigurationTypeDef
+
+def get_value() -> ConnectorConfigurationTypeDef:
+    return {
+        "canUseAsSource": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorConfigurationTypeDef(TypedDict):
+    canUseAsSource: NotRequired[bool],
+    canUseAsDestination: NotRequired[bool],
+    supportedDestinationConnectors: NotRequired[List[ConnectorTypeType]],  # (1)
+    supportedSchedulingFrequencies: NotRequired[List[ScheduleFrequencyTypeType]],  # (2)
+    isPrivateLinkEnabled: NotRequired[bool],
+    isPrivateLinkEndpointUrlRequired: NotRequired[bool],
+    supportedTriggerTypes: NotRequired[List[TriggerTypeType]],  # (3)
+    connectorMetadata: NotRequired[ConnectorMetadataTypeDef],  # (4)
+    connectorType: NotRequired[ConnectorTypeType],  # (5)
+    connectorLabel: NotRequired[str],
+    connectorDescription: NotRequired[str],
+    connectorOwner: NotRequired[str],
+    connectorName: NotRequired[str],
+    connectorVersion: NotRequired[str],
+    connectorArn: NotRequired[str],
+    connectorModes: NotRequired[List[str]],
+    authenticationConfig: NotRequired[AuthenticationConfigTypeDef],  # (6)
+    connectorRuntimeSettings: NotRequired[List[ConnectorRuntimeSettingTypeDef]],  # (7)
+    supportedApiVersions: NotRequired[List[str]],
+    supportedOperators: NotRequired[List[OperatorsType]],  # (8)
+    supportedWriteOperations: NotRequired[List[WriteOperationTypeType]],  # (9)
+    connectorProvisioningType: NotRequired[ConnectorProvisioningTypeType],  # (10)
+    connectorProvisioningConfig: NotRequired[ConnectorProvisioningConfigTypeDef],  # (11)
+    logoURL: NotRequired[str],
+    registeredAt: NotRequired[datetime],
+    registeredBy: NotRequired[str],
+```
 
-- `canUseAsSource`: `bool`
-- `canUseAsDestination`: `bool`
-- `supportedDestinationConnectors`:
-  `List`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
-- `supportedSchedulingFrequencies`:
-  `List`\[[ScheduleFrequencyTypeType](./literals.md#schedulefrequencytypetype)\]
-- `isPrivateLinkEnabled`: `bool`
-- `isPrivateLinkEndpointUrlRequired`: `bool`
-- `supportedTriggerTypes`:
-  `List`\[[TriggerTypeType](./literals.md#triggertypetype)\]
-- `connectorMetadata`:
-  [ConnectorMetadataTypeDef](./type_defs.md#connectormetadatatypedef)
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `connectorLabel`: `str`
-- `connectorDescription`: `str`
-- `connectorOwner`: `str`
-- `connectorName`: `str`
-- `connectorVersion`: `str`
-- `connectorArn`: `str`
-- `connectorModes`: `List`\[`str`\]
-- `authenticationConfig`:
-  [AuthenticationConfigTypeDef](./type_defs.md#authenticationconfigtypedef)
-- `connectorRuntimeSettings`:
-  `List`\[[ConnectorRuntimeSettingTypeDef](./type_defs.md#connectorruntimesettingtypedef)\]
-- `supportedApiVersions`: `List`\[`str`\]
-- `supportedOperators`: `List`\[[OperatorsType](./literals.md#operatorstype)\]
-- `supportedWriteOperations`:
-  `List`\[[WriteOperationTypeType](./literals.md#writeoperationtypetype)\]
-- `connectorProvisioningType`: `Literal['LAMBDA']` (see
-  [ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype))
-- `connectorProvisioningConfig`:
-  [ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef)
-- `logoURL`: `str`
-- `registeredAt`: `datetime`
-- `registeredBy`: `str`
-
-<a id="connectordetailtypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-brackets: ScheduleFrequencyTypeType](./literals.md#schedulefrequencytypetype) 
+3. See [:material-code-brackets: TriggerTypeType](./literals.md#triggertypetype) 
+4. See [:material-code-braces: ConnectorMetadataTypeDef](./type_defs.md#connectormetadatatypedef) 
+5. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+6. See [:material-code-braces: AuthenticationConfigTypeDef](./type_defs.md#authenticationconfigtypedef) 
+7. See [:material-code-braces: ConnectorRuntimeSettingTypeDef](./type_defs.md#connectorruntimesettingtypedef) 
+8. See [:material-code-brackets: OperatorsType](./literals.md#operatorstype) 
+9. See [:material-code-brackets: WriteOperationTypeType](./literals.md#writeoperationtypetype) 
+10. See [:material-code-brackets: ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype) 
+11. See [:material-code-braces: ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef) 
 ## ConnectorDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorDetailTypeDef
+
+def get_value() -> ConnectorDetailTypeDef:
+    return {
+        "connectorDescription": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorDetailTypeDef(TypedDict):
+    connectorDescription: NotRequired[str],
+    connectorName: NotRequired[str],
+    connectorOwner: NotRequired[str],
+    connectorVersion: NotRequired[str],
+    applicationType: NotRequired[str],
+    connectorType: NotRequired[ConnectorTypeType],  # (1)
+    connectorLabel: NotRequired[str],
+    registeredAt: NotRequired[datetime],
+    registeredBy: NotRequired[str],
+    connectorProvisioningType: NotRequired[ConnectorProvisioningTypeType],  # (2)
+    connectorModes: NotRequired[List[str]],
+```
 
-- `connectorDescription`: `str`
-- `connectorName`: `str`
-- `connectorOwner`: `str`
-- `connectorVersion`: `str`
-- `applicationType`: `str`
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `connectorLabel`: `str`
-- `registeredAt`: `datetime`
-- `registeredBy`: `str`
-- `connectorProvisioningType`: `Literal['LAMBDA']` (see
-  [ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype))
-- `connectorModes`: `List`\[`str`\]
-
-<a id="connectorentityfieldtypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-brackets: ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype) 
 ## ConnectorEntityFieldTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorEntityFieldTypeDef
+
+def get_value() -> ConnectorEntityFieldTypeDef:
+    return {
+        "identifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConnectorEntityFieldTypeDef(TypedDict):
+    identifier: str,
+    parentIdentifier: NotRequired[str],
+    label: NotRequired[str],
+    isPrimaryKey: NotRequired[bool],
+    defaultValue: NotRequired[str],
+    isDeprecated: NotRequired[bool],
+    supportedFieldTypeDetails: NotRequired[SupportedFieldTypeDetailsTypeDef],  # (1)
+    description: NotRequired[str],
+    sourceProperties: NotRequired[SourceFieldPropertiesTypeDef],  # (2)
+    destinationProperties: NotRequired[DestinationFieldPropertiesTypeDef],  # (3)
+    customProperties: NotRequired[Dict[str, str]],
+```
 
-- `identifier`: `str`
-
-Optional fields:
-
-- `parentIdentifier`: `str`
-- `label`: `str`
-- `isPrimaryKey`: `bool`
-- `defaultValue`: `str`
-- `isDeprecated`: `bool`
-- `supportedFieldTypeDetails`:
-  [SupportedFieldTypeDetailsTypeDef](./type_defs.md#supportedfieldtypedetailstypedef)
-- `description`: `str`
-- `sourceProperties`:
-  [SourceFieldPropertiesTypeDef](./type_defs.md#sourcefieldpropertiestypedef)
-- `destinationProperties`:
-  [DestinationFieldPropertiesTypeDef](./type_defs.md#destinationfieldpropertiestypedef)
-- `customProperties`: `Dict`\[`str`, `str`\]
-
-<a id="connectorentitytypedef"></a>
-
+1. See [:material-code-braces: SupportedFieldTypeDetailsTypeDef](./type_defs.md#supportedfieldtypedetailstypedef) 
+2. See [:material-code-braces: SourceFieldPropertiesTypeDef](./type_defs.md#sourcefieldpropertiestypedef) 
+3. See [:material-code-braces: DestinationFieldPropertiesTypeDef](./type_defs.md#destinationfieldpropertiestypedef) 
 ## ConnectorEntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorEntityTypeDef
+
+def get_value() -> ConnectorEntityTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `label`: `str`
-- `hasNestedEntities`: `bool`
-
-<a id="connectormetadatatypedef"></a>
+```python title="Definition"
+class ConnectorEntityTypeDef(TypedDict):
+    name: str,
+    label: NotRequired[str],
+    hasNestedEntities: NotRequired[bool],
+```
 
 ## ConnectorMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorMetadataTypeDef
+
+def get_value() -> ConnectorMetadataTypeDef:
+    return {
+        "Amplitude": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorMetadataTypeDef(TypedDict):
+    Amplitude: NotRequired[Dict[str, Any]],
+    Datadog: NotRequired[Dict[str, Any]],
+    Dynatrace: NotRequired[Dict[str, Any]],
+    GoogleAnalytics: NotRequired[GoogleAnalyticsMetadataTypeDef],  # (1)
+    InforNexus: NotRequired[Dict[str, Any]],
+    Marketo: NotRequired[Dict[str, Any]],
+    Redshift: NotRequired[Dict[str, Any]],
+    S3: NotRequired[Dict[str, Any]],
+    Salesforce: NotRequired[SalesforceMetadataTypeDef],  # (2)
+    ServiceNow: NotRequired[Dict[str, Any]],
+    Singular: NotRequired[Dict[str, Any]],
+    Slack: NotRequired[SlackMetadataTypeDef],  # (3)
+    Snowflake: NotRequired[SnowflakeMetadataTypeDef],  # (4)
+    Trendmicro: NotRequired[Dict[str, Any]],
+    Veeva: NotRequired[Dict[str, Any]],
+    Zendesk: NotRequired[ZendeskMetadataTypeDef],  # (5)
+    EventBridge: NotRequired[Dict[str, Any]],
+    Upsolver: NotRequired[Dict[str, Any]],
+    CustomerProfiles: NotRequired[Dict[str, Any]],
+    Honeycode: NotRequired[HoneycodeMetadataTypeDef],  # (6)
+    SAPOData: NotRequired[Dict[str, Any]],
+```
 
-- `Amplitude`: `Dict`\[`str`, `Any`\]
-- `Datadog`: `Dict`\[`str`, `Any`\]
-- `Dynatrace`: `Dict`\[`str`, `Any`\]
-- `GoogleAnalytics`:
-  [GoogleAnalyticsMetadataTypeDef](./type_defs.md#googleanalyticsmetadatatypedef)
-- `InforNexus`: `Dict`\[`str`, `Any`\]
-- `Marketo`: `Dict`\[`str`, `Any`\]
-- `Redshift`: `Dict`\[`str`, `Any`\]
-- `S3`: `Dict`\[`str`, `Any`\]
-- `Salesforce`:
-  [SalesforceMetadataTypeDef](./type_defs.md#salesforcemetadatatypedef)
-- `ServiceNow`: `Dict`\[`str`, `Any`\]
-- `Singular`: `Dict`\[`str`, `Any`\]
-- `Slack`: [SlackMetadataTypeDef](./type_defs.md#slackmetadatatypedef)
-- `Snowflake`:
-  [SnowflakeMetadataTypeDef](./type_defs.md#snowflakemetadatatypedef)
-- `Trendmicro`: `Dict`\[`str`, `Any`\]
-- `Veeva`: `Dict`\[`str`, `Any`\]
-- `Zendesk`: [ZendeskMetadataTypeDef](./type_defs.md#zendeskmetadatatypedef)
-- `EventBridge`: `Dict`\[`str`, `Any`\]
-- `Upsolver`: `Dict`\[`str`, `Any`\]
-- `CustomerProfiles`: `Dict`\[`str`, `Any`\]
-- `Honeycode`:
-  [HoneycodeMetadataTypeDef](./type_defs.md#honeycodemetadatatypedef)
-- `SAPOData`: `Dict`\[`str`, `Any`\]
-
-<a id="connectoroauthrequesttypedef"></a>
-
+1. See [:material-code-braces: GoogleAnalyticsMetadataTypeDef](./type_defs.md#googleanalyticsmetadatatypedef) 
+2. See [:material-code-braces: SalesforceMetadataTypeDef](./type_defs.md#salesforcemetadatatypedef) 
+3. See [:material-code-braces: SlackMetadataTypeDef](./type_defs.md#slackmetadatatypedef) 
+4. See [:material-code-braces: SnowflakeMetadataTypeDef](./type_defs.md#snowflakemetadatatypedef) 
+5. See [:material-code-braces: ZendeskMetadataTypeDef](./type_defs.md#zendeskmetadatatypedef) 
+6. See [:material-code-braces: HoneycodeMetadataTypeDef](./type_defs.md#honeycodemetadatatypedef) 
 ## ConnectorOAuthRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorOAuthRequestTypeDef
+
+def get_value() -> ConnectorOAuthRequestTypeDef:
+    return {
+        "authCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `authCode`: `str`
-- `redirectUri`: `str`
-
-<a id="connectoroperatortypedef"></a>
+```python title="Definition"
+class ConnectorOAuthRequestTypeDef(TypedDict):
+    authCode: NotRequired[str],
+    redirectUri: NotRequired[str],
+```
 
 ## ConnectorOperatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorOperatorTypeDef
+
+def get_value() -> ConnectorOperatorTypeDef:
+    return {
+        "Amplitude": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorOperatorTypeDef(TypedDict):
+    Amplitude: NotRequired[AmplitudeConnectorOperatorType],  # (1)
+    Datadog: NotRequired[DatadogConnectorOperatorType],  # (2)
+    Dynatrace: NotRequired[DynatraceConnectorOperatorType],  # (3)
+    GoogleAnalytics: NotRequired[GoogleAnalyticsConnectorOperatorType],  # (4)
+    InforNexus: NotRequired[InforNexusConnectorOperatorType],  # (5)
+    Marketo: NotRequired[MarketoConnectorOperatorType],  # (6)
+    S3: NotRequired[S3ConnectorOperatorType],  # (7)
+    Salesforce: NotRequired[SalesforceConnectorOperatorType],  # (8)
+    ServiceNow: NotRequired[ServiceNowConnectorOperatorType],  # (9)
+    Singular: NotRequired[SingularConnectorOperatorType],  # (10)
+    Slack: NotRequired[SlackConnectorOperatorType],  # (11)
+    Trendmicro: NotRequired[TrendmicroConnectorOperatorType],  # (12)
+    Veeva: NotRequired[VeevaConnectorOperatorType],  # (13)
+    Zendesk: NotRequired[ZendeskConnectorOperatorType],  # (14)
+    SAPOData: NotRequired[SAPODataConnectorOperatorType],  # (15)
+    CustomConnector: NotRequired[OperatorType],  # (16)
+```
 
-- `Amplitude`: `Literal['BETWEEN']` (see
-  [AmplitudeConnectorOperatorType](./literals.md#amplitudeconnectoroperatortype))
-- `Datadog`:
-  [DatadogConnectorOperatorType](./literals.md#datadogconnectoroperatortype)
-- `Dynatrace`:
-  [DynatraceConnectorOperatorType](./literals.md#dynatraceconnectoroperatortype)
-- `GoogleAnalytics`:
-  [GoogleAnalyticsConnectorOperatorType](./literals.md#googleanalyticsconnectoroperatortype)
-- `InforNexus`:
-  [InforNexusConnectorOperatorType](./literals.md#infornexusconnectoroperatortype)
-- `Marketo`:
-  [MarketoConnectorOperatorType](./literals.md#marketoconnectoroperatortype)
-- `S3`: [S3ConnectorOperatorType](./literals.md#s3connectoroperatortype)
-- `Salesforce`:
-  [SalesforceConnectorOperatorType](./literals.md#salesforceconnectoroperatortype)
-- `ServiceNow`:
-  [ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype)
-- `Singular`:
-  [SingularConnectorOperatorType](./literals.md#singularconnectoroperatortype)
-- `Slack`:
-  [SlackConnectorOperatorType](./literals.md#slackconnectoroperatortype)
-- `Trendmicro`:
-  [TrendmicroConnectorOperatorType](./literals.md#trendmicroconnectoroperatortype)
-- `Veeva`:
-  [VeevaConnectorOperatorType](./literals.md#veevaconnectoroperatortype)
-- `Zendesk`:
-  [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
-- `SAPOData`:
-  [SAPODataConnectorOperatorType](./literals.md#sapodataconnectoroperatortype)
-- `CustomConnector`: [OperatorType](./literals.md#operatortype)
-
-<a id="connectorprofileconfigtypedef"></a>
-
+1. See [:material-code-brackets: AmplitudeConnectorOperatorType](./literals.md#amplitudeconnectoroperatortype) 
+2. See [:material-code-brackets: DatadogConnectorOperatorType](./literals.md#datadogconnectoroperatortype) 
+3. See [:material-code-brackets: DynatraceConnectorOperatorType](./literals.md#dynatraceconnectoroperatortype) 
+4. See [:material-code-brackets: GoogleAnalyticsConnectorOperatorType](./literals.md#googleanalyticsconnectoroperatortype) 
+5. See [:material-code-brackets: InforNexusConnectorOperatorType](./literals.md#infornexusconnectoroperatortype) 
+6. See [:material-code-brackets: MarketoConnectorOperatorType](./literals.md#marketoconnectoroperatortype) 
+7. See [:material-code-brackets: S3ConnectorOperatorType](./literals.md#s3connectoroperatortype) 
+8. See [:material-code-brackets: SalesforceConnectorOperatorType](./literals.md#salesforceconnectoroperatortype) 
+9. See [:material-code-brackets: ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype) 
+10. See [:material-code-brackets: SingularConnectorOperatorType](./literals.md#singularconnectoroperatortype) 
+11. See [:material-code-brackets: SlackConnectorOperatorType](./literals.md#slackconnectoroperatortype) 
+12. See [:material-code-brackets: TrendmicroConnectorOperatorType](./literals.md#trendmicroconnectoroperatortype) 
+13. See [:material-code-brackets: VeevaConnectorOperatorType](./literals.md#veevaconnectoroperatortype) 
+14. See [:material-code-brackets: ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype) 
+15. See [:material-code-brackets: SAPODataConnectorOperatorType](./literals.md#sapodataconnectoroperatortype) 
+16. See [:material-code-brackets: OperatorType](./literals.md#operatortype) 
 ## ConnectorProfileConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorProfileConfigTypeDef
+
+def get_value() -> ConnectorProfileConfigTypeDef:
+    return {
+        "connectorProfileProperties": ...,
+        "connectorProfileCredentials": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConnectorProfileConfigTypeDef(TypedDict):
+    connectorProfileProperties: ConnectorProfilePropertiesTypeDef,  # (1)
+    connectorProfileCredentials: ConnectorProfileCredentialsTypeDef,  # (2)
+```
 
-- `connectorProfileProperties`:
-  [ConnectorProfilePropertiesTypeDef](./type_defs.md#connectorprofilepropertiestypedef)
-- `connectorProfileCredentials`:
-  [ConnectorProfileCredentialsTypeDef](./type_defs.md#connectorprofilecredentialstypedef)
-
-<a id="connectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-braces: ConnectorProfilePropertiesTypeDef](./type_defs.md#connectorprofilepropertiestypedef) 
+2. See [:material-code-braces: ConnectorProfileCredentialsTypeDef](./type_defs.md#connectorprofilecredentialstypedef) 
 ## ConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorProfileCredentialsTypeDef
+
+def get_value() -> ConnectorProfileCredentialsTypeDef:
+    return {
+        "Amplitude": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorProfileCredentialsTypeDef(TypedDict):
+    Amplitude: NotRequired[AmplitudeConnectorProfileCredentialsTypeDef],  # (1)
+    Datadog: NotRequired[DatadogConnectorProfileCredentialsTypeDef],  # (2)
+    Dynatrace: NotRequired[DynatraceConnectorProfileCredentialsTypeDef],  # (3)
+    GoogleAnalytics: NotRequired[GoogleAnalyticsConnectorProfileCredentialsTypeDef],  # (4)
+    Honeycode: NotRequired[HoneycodeConnectorProfileCredentialsTypeDef],  # (5)
+    InforNexus: NotRequired[InforNexusConnectorProfileCredentialsTypeDef],  # (6)
+    Marketo: NotRequired[MarketoConnectorProfileCredentialsTypeDef],  # (7)
+    Redshift: NotRequired[RedshiftConnectorProfileCredentialsTypeDef],  # (8)
+    Salesforce: NotRequired[SalesforceConnectorProfileCredentialsTypeDef],  # (9)
+    ServiceNow: NotRequired[ServiceNowConnectorProfileCredentialsTypeDef],  # (10)
+    Singular: NotRequired[SingularConnectorProfileCredentialsTypeDef],  # (11)
+    Slack: NotRequired[SlackConnectorProfileCredentialsTypeDef],  # (12)
+    Snowflake: NotRequired[SnowflakeConnectorProfileCredentialsTypeDef],  # (13)
+    Trendmicro: NotRequired[TrendmicroConnectorProfileCredentialsTypeDef],  # (14)
+    Veeva: NotRequired[VeevaConnectorProfileCredentialsTypeDef],  # (15)
+    Zendesk: NotRequired[ZendeskConnectorProfileCredentialsTypeDef],  # (16)
+    SAPOData: NotRequired[SAPODataConnectorProfileCredentialsTypeDef],  # (17)
+    CustomConnector: NotRequired[CustomConnectorProfileCredentialsTypeDef],  # (18)
+```
 
-- `Amplitude`:
-  [AmplitudeConnectorProfileCredentialsTypeDef](./type_defs.md#amplitudeconnectorprofilecredentialstypedef)
-- `Datadog`:
-  [DatadogConnectorProfileCredentialsTypeDef](./type_defs.md#datadogconnectorprofilecredentialstypedef)
-- `Dynatrace`:
-  [DynatraceConnectorProfileCredentialsTypeDef](./type_defs.md#dynatraceconnectorprofilecredentialstypedef)
-- `GoogleAnalytics`:
-  [GoogleAnalyticsConnectorProfileCredentialsTypeDef](./type_defs.md#googleanalyticsconnectorprofilecredentialstypedef)
-- `Honeycode`:
-  [HoneycodeConnectorProfileCredentialsTypeDef](./type_defs.md#honeycodeconnectorprofilecredentialstypedef)
-- `InforNexus`:
-  [InforNexusConnectorProfileCredentialsTypeDef](./type_defs.md#infornexusconnectorprofilecredentialstypedef)
-- `Marketo`:
-  [MarketoConnectorProfileCredentialsTypeDef](./type_defs.md#marketoconnectorprofilecredentialstypedef)
-- `Redshift`:
-  [RedshiftConnectorProfileCredentialsTypeDef](./type_defs.md#redshiftconnectorprofilecredentialstypedef)
-- `Salesforce`:
-  [SalesforceConnectorProfileCredentialsTypeDef](./type_defs.md#salesforceconnectorprofilecredentialstypedef)
-- `ServiceNow`:
-  [ServiceNowConnectorProfileCredentialsTypeDef](./type_defs.md#servicenowconnectorprofilecredentialstypedef)
-- `Singular`:
-  [SingularConnectorProfileCredentialsTypeDef](./type_defs.md#singularconnectorprofilecredentialstypedef)
-- `Slack`:
-  [SlackConnectorProfileCredentialsTypeDef](./type_defs.md#slackconnectorprofilecredentialstypedef)
-- `Snowflake`:
-  [SnowflakeConnectorProfileCredentialsTypeDef](./type_defs.md#snowflakeconnectorprofilecredentialstypedef)
-- `Trendmicro`:
-  [TrendmicroConnectorProfileCredentialsTypeDef](./type_defs.md#trendmicroconnectorprofilecredentialstypedef)
-- `Veeva`:
-  [VeevaConnectorProfileCredentialsTypeDef](./type_defs.md#veevaconnectorprofilecredentialstypedef)
-- `Zendesk`:
-  [ZendeskConnectorProfileCredentialsTypeDef](./type_defs.md#zendeskconnectorprofilecredentialstypedef)
-- `SAPOData`:
-  [SAPODataConnectorProfileCredentialsTypeDef](./type_defs.md#sapodataconnectorprofilecredentialstypedef)
-- `CustomConnector`:
-  [CustomConnectorProfileCredentialsTypeDef](./type_defs.md#customconnectorprofilecredentialstypedef)
-
-<a id="connectorprofilepropertiestypedef"></a>
-
+1. See [:material-code-braces: AmplitudeConnectorProfileCredentialsTypeDef](./type_defs.md#amplitudeconnectorprofilecredentialstypedef) 
+2. See [:material-code-braces: DatadogConnectorProfileCredentialsTypeDef](./type_defs.md#datadogconnectorprofilecredentialstypedef) 
+3. See [:material-code-braces: DynatraceConnectorProfileCredentialsTypeDef](./type_defs.md#dynatraceconnectorprofilecredentialstypedef) 
+4. See [:material-code-braces: GoogleAnalyticsConnectorProfileCredentialsTypeDef](./type_defs.md#googleanalyticsconnectorprofilecredentialstypedef) 
+5. See [:material-code-braces: HoneycodeConnectorProfileCredentialsTypeDef](./type_defs.md#honeycodeconnectorprofilecredentialstypedef) 
+6. See [:material-code-braces: InforNexusConnectorProfileCredentialsTypeDef](./type_defs.md#infornexusconnectorprofilecredentialstypedef) 
+7. See [:material-code-braces: MarketoConnectorProfileCredentialsTypeDef](./type_defs.md#marketoconnectorprofilecredentialstypedef) 
+8. See [:material-code-braces: RedshiftConnectorProfileCredentialsTypeDef](./type_defs.md#redshiftconnectorprofilecredentialstypedef) 
+9. See [:material-code-braces: SalesforceConnectorProfileCredentialsTypeDef](./type_defs.md#salesforceconnectorprofilecredentialstypedef) 
+10. See [:material-code-braces: ServiceNowConnectorProfileCredentialsTypeDef](./type_defs.md#servicenowconnectorprofilecredentialstypedef) 
+11. See [:material-code-braces: SingularConnectorProfileCredentialsTypeDef](./type_defs.md#singularconnectorprofilecredentialstypedef) 
+12. See [:material-code-braces: SlackConnectorProfileCredentialsTypeDef](./type_defs.md#slackconnectorprofilecredentialstypedef) 
+13. See [:material-code-braces: SnowflakeConnectorProfileCredentialsTypeDef](./type_defs.md#snowflakeconnectorprofilecredentialstypedef) 
+14. See [:material-code-braces: TrendmicroConnectorProfileCredentialsTypeDef](./type_defs.md#trendmicroconnectorprofilecredentialstypedef) 
+15. See [:material-code-braces: VeevaConnectorProfileCredentialsTypeDef](./type_defs.md#veevaconnectorprofilecredentialstypedef) 
+16. See [:material-code-braces: ZendeskConnectorProfileCredentialsTypeDef](./type_defs.md#zendeskconnectorprofilecredentialstypedef) 
+17. See [:material-code-braces: SAPODataConnectorProfileCredentialsTypeDef](./type_defs.md#sapodataconnectorprofilecredentialstypedef) 
+18. See [:material-code-braces: CustomConnectorProfileCredentialsTypeDef](./type_defs.md#customconnectorprofilecredentialstypedef) 
 ## ConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorProfilePropertiesTypeDef
+
+def get_value() -> ConnectorProfilePropertiesTypeDef:
+    return {
+        "Amplitude": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorProfilePropertiesTypeDef(TypedDict):
+    Amplitude: NotRequired[Mapping[str, Any]],
+    Datadog: NotRequired[DatadogConnectorProfilePropertiesTypeDef],  # (1)
+    Dynatrace: NotRequired[DynatraceConnectorProfilePropertiesTypeDef],  # (2)
+    GoogleAnalytics: NotRequired[Mapping[str, Any]],
+    Honeycode: NotRequired[Mapping[str, Any]],
+    InforNexus: NotRequired[InforNexusConnectorProfilePropertiesTypeDef],  # (3)
+    Marketo: NotRequired[MarketoConnectorProfilePropertiesTypeDef],  # (4)
+    Redshift: NotRequired[RedshiftConnectorProfilePropertiesTypeDef],  # (5)
+    Salesforce: NotRequired[SalesforceConnectorProfilePropertiesTypeDef],  # (6)
+    ServiceNow: NotRequired[ServiceNowConnectorProfilePropertiesTypeDef],  # (7)
+    Singular: NotRequired[Mapping[str, Any]],
+    Slack: NotRequired[SlackConnectorProfilePropertiesTypeDef],  # (8)
+    Snowflake: NotRequired[SnowflakeConnectorProfilePropertiesTypeDef],  # (9)
+    Trendmicro: NotRequired[Mapping[str, Any]],
+    Veeva: NotRequired[VeevaConnectorProfilePropertiesTypeDef],  # (10)
+    Zendesk: NotRequired[ZendeskConnectorProfilePropertiesTypeDef],  # (11)
+    SAPOData: NotRequired[SAPODataConnectorProfilePropertiesTypeDef],  # (12)
+    CustomConnector: NotRequired[CustomConnectorProfilePropertiesTypeDef],  # (13)
+```
 
-- `Amplitude`: `Mapping`\[`str`, `Any`\]
-- `Datadog`:
-  [DatadogConnectorProfilePropertiesTypeDef](./type_defs.md#datadogconnectorprofilepropertiestypedef)
-- `Dynatrace`:
-  [DynatraceConnectorProfilePropertiesTypeDef](./type_defs.md#dynatraceconnectorprofilepropertiestypedef)
-- `GoogleAnalytics`: `Mapping`\[`str`, `Any`\]
-- `Honeycode`: `Mapping`\[`str`, `Any`\]
-- `InforNexus`:
-  [InforNexusConnectorProfilePropertiesTypeDef](./type_defs.md#infornexusconnectorprofilepropertiestypedef)
-- `Marketo`:
-  [MarketoConnectorProfilePropertiesTypeDef](./type_defs.md#marketoconnectorprofilepropertiestypedef)
-- `Redshift`:
-  [RedshiftConnectorProfilePropertiesTypeDef](./type_defs.md#redshiftconnectorprofilepropertiestypedef)
-- `Salesforce`:
-  [SalesforceConnectorProfilePropertiesTypeDef](./type_defs.md#salesforceconnectorprofilepropertiestypedef)
-- `ServiceNow`:
-  [ServiceNowConnectorProfilePropertiesTypeDef](./type_defs.md#servicenowconnectorprofilepropertiestypedef)
-- `Singular`: `Mapping`\[`str`, `Any`\]
-- `Slack`:
-  [SlackConnectorProfilePropertiesTypeDef](./type_defs.md#slackconnectorprofilepropertiestypedef)
-- `Snowflake`:
-  [SnowflakeConnectorProfilePropertiesTypeDef](./type_defs.md#snowflakeconnectorprofilepropertiestypedef)
-- `Trendmicro`: `Mapping`\[`str`, `Any`\]
-- `Veeva`:
-  [VeevaConnectorProfilePropertiesTypeDef](./type_defs.md#veevaconnectorprofilepropertiestypedef)
-- `Zendesk`:
-  [ZendeskConnectorProfilePropertiesTypeDef](./type_defs.md#zendeskconnectorprofilepropertiestypedef)
-- `SAPOData`:
-  [SAPODataConnectorProfilePropertiesTypeDef](./type_defs.md#sapodataconnectorprofilepropertiestypedef)
-- `CustomConnector`:
-  [CustomConnectorProfilePropertiesTypeDef](./type_defs.md#customconnectorprofilepropertiestypedef)
-
-<a id="connectorprofiletypedef"></a>
-
+1. See [:material-code-braces: DatadogConnectorProfilePropertiesTypeDef](./type_defs.md#datadogconnectorprofilepropertiestypedef) 
+2. See [:material-code-braces: DynatraceConnectorProfilePropertiesTypeDef](./type_defs.md#dynatraceconnectorprofilepropertiestypedef) 
+3. See [:material-code-braces: InforNexusConnectorProfilePropertiesTypeDef](./type_defs.md#infornexusconnectorprofilepropertiestypedef) 
+4. See [:material-code-braces: MarketoConnectorProfilePropertiesTypeDef](./type_defs.md#marketoconnectorprofilepropertiestypedef) 
+5. See [:material-code-braces: RedshiftConnectorProfilePropertiesTypeDef](./type_defs.md#redshiftconnectorprofilepropertiestypedef) 
+6. See [:material-code-braces: SalesforceConnectorProfilePropertiesTypeDef](./type_defs.md#salesforceconnectorprofilepropertiestypedef) 
+7. See [:material-code-braces: ServiceNowConnectorProfilePropertiesTypeDef](./type_defs.md#servicenowconnectorprofilepropertiestypedef) 
+8. See [:material-code-braces: SlackConnectorProfilePropertiesTypeDef](./type_defs.md#slackconnectorprofilepropertiestypedef) 
+9. See [:material-code-braces: SnowflakeConnectorProfilePropertiesTypeDef](./type_defs.md#snowflakeconnectorprofilepropertiestypedef) 
+10. See [:material-code-braces: VeevaConnectorProfilePropertiesTypeDef](./type_defs.md#veevaconnectorprofilepropertiestypedef) 
+11. See [:material-code-braces: ZendeskConnectorProfilePropertiesTypeDef](./type_defs.md#zendeskconnectorprofilepropertiestypedef) 
+12. See [:material-code-braces: SAPODataConnectorProfilePropertiesTypeDef](./type_defs.md#sapodataconnectorprofilepropertiestypedef) 
+13. See [:material-code-braces: CustomConnectorProfilePropertiesTypeDef](./type_defs.md#customconnectorprofilepropertiestypedef) 
 ## ConnectorProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorProfileTypeDef
+
+def get_value() -> ConnectorProfileTypeDef:
+    return {
+        "connectorProfileArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorProfileTypeDef(TypedDict):
+    connectorProfileArn: NotRequired[str],
+    connectorProfileName: NotRequired[str],
+    connectorType: NotRequired[ConnectorTypeType],  # (1)
+    connectorLabel: NotRequired[str],
+    connectionMode: NotRequired[ConnectionModeType],  # (2)
+    credentialsArn: NotRequired[str],
+    connectorProfileProperties: NotRequired[ConnectorProfilePropertiesTypeDef],  # (3)
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    privateConnectionProvisioningState: NotRequired[PrivateConnectionProvisioningStateTypeDef],  # (4)
+```
 
-- `connectorProfileArn`: `str`
-- `connectorProfileName`: `str`
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `connectorLabel`: `str`
-- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
-- `credentialsArn`: `str`
-- `connectorProfileProperties`:
-  [ConnectorProfilePropertiesTypeDef](./type_defs.md#connectorprofilepropertiestypedef)
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `privateConnectionProvisioningState`:
-  [PrivateConnectionProvisioningStateTypeDef](./type_defs.md#privateconnectionprovisioningstatetypedef)
-
-<a id="connectorprovisioningconfigtypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
+3. See [:material-code-braces: ConnectorProfilePropertiesTypeDef](./type_defs.md#connectorprofilepropertiestypedef) 
+4. See [:material-code-braces: PrivateConnectionProvisioningStateTypeDef](./type_defs.md#privateconnectionprovisioningstatetypedef) 
 ## ConnectorProvisioningConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorProvisioningConfigTypeDef
+
+def get_value() -> ConnectorProvisioningConfigTypeDef:
+    return {
+        "lambda": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorProvisioningConfigTypeDef(TypedDict):
+    lambda: NotRequired[LambdaConnectorProvisioningConfigTypeDef],  # (1)
+```
 
-- `lambda`:
-  [LambdaConnectorProvisioningConfigTypeDef](./type_defs.md#lambdaconnectorprovisioningconfigtypedef)
-
-<a id="connectorruntimesettingtypedef"></a>
-
+1. See [:material-code-braces: LambdaConnectorProvisioningConfigTypeDef](./type_defs.md#lambdaconnectorprovisioningconfigtypedef) 
 ## ConnectorRuntimeSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ConnectorRuntimeSettingTypeDef
+
+def get_value() -> ConnectorRuntimeSettingTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `dataType`: `str`
-- `isRequired`: `bool`
-- `label`: `str`
-- `description`: `str`
-- `scope`: `str`
-- `connectorSuppliedValueOptions`: `List`\[`str`\]
-
-<a id="createconnectorprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class ConnectorRuntimeSettingTypeDef(TypedDict):
+    key: NotRequired[str],
+    dataType: NotRequired[str],
+    isRequired: NotRequired[bool],
+    label: NotRequired[str],
+    description: NotRequired[str],
+    scope: NotRequired[str],
+    connectorSuppliedValueOptions: NotRequired[List[str]],
+```
 
 ## CreateConnectorProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CreateConnectorProfileRequestRequestTypeDef
+
+def get_value() -> CreateConnectorProfileRequestRequestTypeDef:
+    return {
+        "connectorProfileName": ...,
+        "connectorType": ...,
+        "connectionMode": ...,
+        "connectorProfileConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectorProfileRequestRequestTypeDef(TypedDict):
+    connectorProfileName: str,
+    connectorType: ConnectorTypeType,  # (1)
+    connectionMode: ConnectionModeType,  # (2)
+    connectorProfileConfig: ConnectorProfileConfigTypeDef,  # (3)
+    kmsArn: NotRequired[str],
+    connectorLabel: NotRequired[str],
+```
 
-- `connectorProfileName`: `str`
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
-- `connectorProfileConfig`:
-  [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
-
-Optional fields:
-
-- `kmsArn`: `str`
-- `connectorLabel`: `str`
-
-<a id="createconnectorprofileresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
+3. See [:material-code-braces: ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef) 
 ## CreateConnectorProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CreateConnectorProfileResponseTypeDef
+
+def get_value() -> CreateConnectorProfileResponseTypeDef:
+    return {
+        "connectorProfileArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectorProfileResponseTypeDef(TypedDict):
+    connectorProfileArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `connectorProfileArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CreateFlowRequestRequestTypeDef
+
+def get_value() -> CreateFlowRequestRequestTypeDef:
+    return {
+        "flowName": ...,
+        "triggerConfig": ...,
+        "sourceFlowConfig": ...,
+        "destinationFlowConfigList": ...,
+        "tasks": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFlowRequestRequestTypeDef(TypedDict):
+    flowName: str,
+    triggerConfig: TriggerConfigTypeDef,  # (1)
+    sourceFlowConfig: SourceFlowConfigTypeDef,  # (2)
+    destinationFlowConfigList: Sequence[DestinationFlowConfigTypeDef],  # (3)
+    tasks: Sequence[TaskTypeDef],  # (4)
+    description: NotRequired[str],
+    kmsArn: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `flowName`: `str`
-- `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
-- `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
-- `destinationFlowConfigList`:
-  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-- `kmsArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createflowresponsetypedef"></a>
-
+1. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
+2. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
+3. See [:material-code-braces: DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef) 
+4. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
 ## CreateFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CreateFlowResponseTypeDef
+
+def get_value() -> CreateFlowResponseTypeDef:
+    return {
+        "flowArn": ...,
+        "flowStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFlowResponseTypeDef(TypedDict):
+    flowArn: str,
+    flowStatus: FlowStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `flowArn`: `str`
-- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customauthconfigtypedef"></a>
-
+1. See [:material-code-brackets: FlowStatusType](./literals.md#flowstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomAuthConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CustomAuthConfigTypeDef
+
+def get_value() -> CustomAuthConfigTypeDef:
+    return {
+        "customAuthenticationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomAuthConfigTypeDef(TypedDict):
+    customAuthenticationType: NotRequired[str],
+    authParameters: NotRequired[List[AuthParameterTypeDef]],  # (1)
+```
 
-- `customAuthenticationType`: `str`
-- `authParameters`:
-  `List`\[[AuthParameterTypeDef](./type_defs.md#authparametertypedef)\]
-
-<a id="customauthcredentialstypedef"></a>
-
+1. See [:material-code-braces: AuthParameterTypeDef](./type_defs.md#authparametertypedef) 
 ## CustomAuthCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CustomAuthCredentialsTypeDef
+
+def get_value() -> CustomAuthCredentialsTypeDef:
+    return {
+        "customAuthenticationType": ...,
+    }
 ```
 
-Required fields:
-
-- `customAuthenticationType`: `str`
-
-Optional fields:
-
-- `credentialsMap`: `Mapping`\[`str`, `str`\]
-
-<a id="customconnectordestinationpropertiestypedef"></a>
+```python title="Definition"
+class CustomAuthCredentialsTypeDef(TypedDict):
+    customAuthenticationType: str,
+    credentialsMap: NotRequired[Mapping[str, str]],
+```
 
 ## CustomConnectorDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CustomConnectorDestinationPropertiesTypeDef
+
+def get_value() -> CustomConnectorDestinationPropertiesTypeDef:
+    return {
+        "entityName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomConnectorDestinationPropertiesTypeDef(TypedDict):
+    entityName: str,
+    errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (1)
+    writeOperationType: NotRequired[WriteOperationTypeType],  # (2)
+    idFieldNames: NotRequired[Sequence[str]],
+    customProperties: NotRequired[Mapping[str, str]],
+```
 
-- `entityName`: `str`
-
-Optional fields:
-
-- `errorHandlingConfig`:
-  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-- `writeOperationType`:
-  [WriteOperationTypeType](./literals.md#writeoperationtypetype)
-- `idFieldNames`: `Sequence`\[`str`\]
-- `customProperties`: `Mapping`\[`str`, `str`\]
-
-<a id="customconnectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
+2. See [:material-code-brackets: WriteOperationTypeType](./literals.md#writeoperationtypetype) 
 ## CustomConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CustomConnectorProfileCredentialsTypeDef
+
+def get_value() -> CustomConnectorProfileCredentialsTypeDef:
+    return {
+        "authenticationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomConnectorProfileCredentialsTypeDef(TypedDict):
+    authenticationType: AuthenticationTypeType,  # (1)
+    basic: NotRequired[BasicAuthCredentialsTypeDef],  # (2)
+    oauth2: NotRequired[OAuth2CredentialsTypeDef],  # (3)
+    apiKey: NotRequired[ApiKeyCredentialsTypeDef],  # (4)
+    custom: NotRequired[CustomAuthCredentialsTypeDef],  # (5)
+```
 
-- `authenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype)
-
-Optional fields:
-
-- `basic`:
-  [BasicAuthCredentialsTypeDef](./type_defs.md#basicauthcredentialstypedef)
-- `oauth2`: [OAuth2CredentialsTypeDef](./type_defs.md#oauth2credentialstypedef)
-- `apiKey`: [ApiKeyCredentialsTypeDef](./type_defs.md#apikeycredentialstypedef)
-- `custom`:
-  [CustomAuthCredentialsTypeDef](./type_defs.md#customauthcredentialstypedef)
-
-<a id="customconnectorprofilepropertiestypedef"></a>
-
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: BasicAuthCredentialsTypeDef](./type_defs.md#basicauthcredentialstypedef) 
+3. See [:material-code-braces: OAuth2CredentialsTypeDef](./type_defs.md#oauth2credentialstypedef) 
+4. See [:material-code-braces: ApiKeyCredentialsTypeDef](./type_defs.md#apikeycredentialstypedef) 
+5. See [:material-code-braces: CustomAuthCredentialsTypeDef](./type_defs.md#customauthcredentialstypedef) 
 ## CustomConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CustomConnectorProfilePropertiesTypeDef
+
+def get_value() -> CustomConnectorProfilePropertiesTypeDef:
+    return {
+        "profileProperties": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomConnectorProfilePropertiesTypeDef(TypedDict):
+    profileProperties: NotRequired[Mapping[str, str]],
+    oAuth2Properties: NotRequired[OAuth2PropertiesTypeDef],  # (1)
+```
 
-- `profileProperties`: `Mapping`\[`str`, `str`\]
-- `oAuth2Properties`:
-  [OAuth2PropertiesTypeDef](./type_defs.md#oauth2propertiestypedef)
-
-<a id="customconnectorsourcepropertiestypedef"></a>
-
+1. See [:material-code-braces: OAuth2PropertiesTypeDef](./type_defs.md#oauth2propertiestypedef) 
 ## CustomConnectorSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CustomConnectorSourcePropertiesTypeDef
+
+def get_value() -> CustomConnectorSourcePropertiesTypeDef:
+    return {
+        "entityName": ...,
+    }
 ```
 
-Required fields:
-
-- `entityName`: `str`
-
-Optional fields:
-
-- `customProperties`: `Mapping`\[`str`, `str`\]
-
-<a id="customerprofilesdestinationpropertiestypedef"></a>
+```python title="Definition"
+class CustomConnectorSourcePropertiesTypeDef(TypedDict):
+    entityName: str,
+    customProperties: NotRequired[Mapping[str, str]],
+```
 
 ## CustomerProfilesDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import CustomerProfilesDestinationPropertiesTypeDef
+
+def get_value() -> CustomerProfilesDestinationPropertiesTypeDef:
+    return {
+        "domainName": ...,
+    }
 ```
 
-Required fields:
-
-- `domainName`: `str`
-
-Optional fields:
-
-- `objectTypeName`: `str`
-
-<a id="datadogconnectorprofilecredentialstypedef"></a>
+```python title="Definition"
+class CustomerProfilesDestinationPropertiesTypeDef(TypedDict):
+    domainName: str,
+    objectTypeName: NotRequired[str],
+```
 
 ## DatadogConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DatadogConnectorProfileCredentialsTypeDef
+
+def get_value() -> DatadogConnectorProfileCredentialsTypeDef:
+    return {
+        "apiKey": ...,
+        "applicationKey": ...,
+    }
 ```
 
-Required fields:
-
-- `apiKey`: `str`
-- `applicationKey`: `str`
-
-<a id="datadogconnectorprofilepropertiestypedef"></a>
+```python title="Definition"
+class DatadogConnectorProfileCredentialsTypeDef(TypedDict):
+    apiKey: str,
+    applicationKey: str,
+```
 
 ## DatadogConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DatadogConnectorProfilePropertiesTypeDef
+
+def get_value() -> DatadogConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceUrl`: `str`
-
-<a id="datadogsourcepropertiestypedef"></a>
+```python title="Definition"
+class DatadogConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: str,
+```
 
 ## DatadogSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DatadogSourcePropertiesTypeDef
+
+def get_value() -> DatadogSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="deleteconnectorprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DatadogSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## DeleteConnectorProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DeleteConnectorProfileRequestRequestTypeDef
+
+def get_value() -> DeleteConnectorProfileRequestRequestTypeDef:
+    return {
+        "connectorProfileName": ...,
+    }
 ```
 
-Required fields:
-
-- `connectorProfileName`: `str`
-
-Optional fields:
-
-- `forceDelete`: `bool`
-
-<a id="deleteflowrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConnectorProfileRequestRequestTypeDef(TypedDict):
+    connectorProfileName: str,
+    forceDelete: NotRequired[bool],
+```
 
 ## DeleteFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DeleteFlowRequestRequestTypeDef
+
+def get_value() -> DeleteFlowRequestRequestTypeDef:
+    return {
+        "flowName": ...,
+    }
 ```
 
-Required fields:
-
-- `flowName`: `str`
-
-Optional fields:
-
-- `forceDelete`: `bool`
-
-<a id="describeconnectorentityrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFlowRequestRequestTypeDef(TypedDict):
+    flowName: str,
+    forceDelete: NotRequired[bool],
+```
 
 ## DescribeConnectorEntityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeConnectorEntityRequestRequestTypeDef
+
+def get_value() -> DescribeConnectorEntityRequestRequestTypeDef:
+    return {
+        "connectorEntityName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectorEntityRequestRequestTypeDef(TypedDict):
+    connectorEntityName: str,
+    connectorType: NotRequired[ConnectorTypeType],  # (1)
+    connectorProfileName: NotRequired[str],
+    apiVersion: NotRequired[str],
+```
 
-- `connectorEntityName`: `str`
-
-Optional fields:
-
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `connectorProfileName`: `str`
-- `apiVersion`: `str`
-
-<a id="describeconnectorentityresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
 ## DescribeConnectorEntityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeConnectorEntityResponseTypeDef
+
+def get_value() -> DescribeConnectorEntityResponseTypeDef:
+    return {
+        "connectorEntityFields": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectorEntityResponseTypeDef(TypedDict):
+    connectorEntityFields: List[ConnectorEntityFieldTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectorEntityFields`:
-  `List`\[[ConnectorEntityFieldTypeDef](./type_defs.md#connectorentityfieldtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectorprofilesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectorEntityFieldTypeDef](./type_defs.md#connectorentityfieldtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectorProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeConnectorProfilesRequestRequestTypeDef
+
+def get_value() -> DescribeConnectorProfilesRequestRequestTypeDef:
+    return {
+        "connectorProfileNames": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeConnectorProfilesRequestRequestTypeDef(TypedDict):
+    connectorProfileNames: NotRequired[Sequence[str]],
+    connectorType: NotRequired[ConnectorTypeType],  # (1)
+    connectorLabel: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `connectorProfileNames`: `Sequence`\[`str`\]
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `connectorLabel`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describeconnectorprofilesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
 ## DescribeConnectorProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeConnectorProfilesResponseTypeDef
+
+def get_value() -> DescribeConnectorProfilesResponseTypeDef:
+    return {
+        "connectorProfileDetails": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectorProfilesResponseTypeDef(TypedDict):
+    connectorProfileDetails: List[ConnectorProfileTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectorProfileDetails`:
-  `List`\[[ConnectorProfileTypeDef](./type_defs.md#connectorprofiletypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectorProfileTypeDef](./type_defs.md#connectorprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeConnectorRequestRequestTypeDef
+
+def get_value() -> DescribeConnectorRequestRequestTypeDef:
+    return {
+        "connectorType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectorRequestRequestTypeDef(TypedDict):
+    connectorType: ConnectorTypeType,  # (1)
+    connectorLabel: NotRequired[str],
+```
 
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-
-Optional fields:
-
-- `connectorLabel`: `str`
-
-<a id="describeconnectorresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
 ## DescribeConnectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeConnectorResponseTypeDef
+
+def get_value() -> DescribeConnectorResponseTypeDef:
+    return {
+        "connectorConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectorResponseTypeDef(TypedDict):
+    connectorConfiguration: ConnectorConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectorConfiguration`:
-  [ConnectorConfigurationTypeDef](./type_defs.md#connectorconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconnectorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectorConfigurationTypeDef](./type_defs.md#connectorconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConnectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeConnectorsRequestRequestTypeDef
+
+def get_value() -> DescribeConnectorsRequestRequestTypeDef:
+    return {
+        "connectorTypes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeConnectorsRequestRequestTypeDef(TypedDict):
+    connectorTypes: NotRequired[Sequence[ConnectorTypeType]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `connectorTypes`:
-  `Sequence`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describeconnectorsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
 ## DescribeConnectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeConnectorsResponseTypeDef
+
+def get_value() -> DescribeConnectorsResponseTypeDef:
+    return {
+        "connectorConfigurations": ...,
+        "connectors": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConnectorsResponseTypeDef(TypedDict):
+    connectorConfigurations: Dict[ConnectorTypeType, ConnectorConfigurationTypeDef],  # (1)
+    connectors: List[ConnectorDetailTypeDef],  # (2)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `connectorConfigurations`:
-  `Dict`\[[ConnectorTypeType](./literals.md#connectortypetype),
-  [ConnectorConfigurationTypeDef](./type_defs.md#connectorconfigurationtypedef)\]
-- `connectors`:
-  `List`\[[ConnectorDetailTypeDef](./type_defs.md#connectordetailtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeflowexecutionrecordsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) [:material-code-braces: ConnectorConfigurationTypeDef](./type_defs.md#connectorconfigurationtypedef) 
+2. See [:material-code-braces: ConnectorDetailTypeDef](./type_defs.md#connectordetailtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFlowExecutionRecordsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeFlowExecutionRecordsRequestRequestTypeDef
+
+def get_value() -> DescribeFlowExecutionRecordsRequestRequestTypeDef:
+    return {
+        "flowName": ...,
+    }
 ```
 
-Required fields:
-
-- `flowName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describeflowexecutionrecordsresponsetypedef"></a>
+```python title="Definition"
+class DescribeFlowExecutionRecordsRequestRequestTypeDef(TypedDict):
+    flowName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## DescribeFlowExecutionRecordsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeFlowExecutionRecordsResponseTypeDef
+
+def get_value() -> DescribeFlowExecutionRecordsResponseTypeDef:
+    return {
+        "flowExecutions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFlowExecutionRecordsResponseTypeDef(TypedDict):
+    flowExecutions: List[ExecutionRecordTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `flowExecutions`:
-  `List`\[[ExecutionRecordTypeDef](./type_defs.md#executionrecordtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExecutionRecordTypeDef](./type_defs.md#executionrecordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeFlowRequestRequestTypeDef
+
+def get_value() -> DescribeFlowRequestRequestTypeDef:
+    return {
+        "flowName": ...,
+    }
 ```
 
-Required fields:
-
-- `flowName`: `str`
-
-<a id="describeflowresponsetypedef"></a>
+```python title="Definition"
+class DescribeFlowRequestRequestTypeDef(TypedDict):
+    flowName: str,
+```
 
 ## DescribeFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DescribeFlowResponseTypeDef
+
+def get_value() -> DescribeFlowResponseTypeDef:
+    return {
+        "flowArn": ...,
+        "description": ...,
+        "flowName": ...,
+        "kmsArn": ...,
+        "flowStatus": ...,
+        "flowStatusMessage": ...,
+        "sourceFlowConfig": ...,
+        "destinationFlowConfigList": ...,
+        "lastRunExecutionDetails": ...,
+        "triggerConfig": ...,
+        "tasks": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "createdBy": ...,
+        "lastUpdatedBy": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFlowResponseTypeDef(TypedDict):
+    flowArn: str,
+    description: str,
+    flowName: str,
+    kmsArn: str,
+    flowStatus: FlowStatusType,  # (1)
+    flowStatusMessage: str,
+    sourceFlowConfig: SourceFlowConfigTypeDef,  # (2)
+    destinationFlowConfigList: List[DestinationFlowConfigTypeDef],  # (3)
+    lastRunExecutionDetails: ExecutionDetailsTypeDef,  # (4)
+    triggerConfig: TriggerConfigTypeDef,  # (5)
+    tasks: List[TaskTypeDef],  # (6)
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    createdBy: str,
+    lastUpdatedBy: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `flowArn`: `str`
-- `description`: `str`
-- `flowName`: `str`
-- `kmsArn`: `str`
-- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
-- `flowStatusMessage`: `str`
-- `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
-- `destinationFlowConfigList`:
-  `List`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-- `lastRunExecutionDetails`:
-  [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
-- `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `createdBy`: `str`
-- `lastUpdatedBy`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="destinationconnectorpropertiestypedef"></a>
-
+1. See [:material-code-brackets: FlowStatusType](./literals.md#flowstatustype) 
+2. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
+3. See [:material-code-braces: DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef) 
+4. See [:material-code-braces: ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef) 
+5. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
+6. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DestinationConnectorPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DestinationConnectorPropertiesTypeDef
+
+def get_value() -> DestinationConnectorPropertiesTypeDef:
+    return {
+        "Redshift": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DestinationConnectorPropertiesTypeDef(TypedDict):
+    Redshift: NotRequired[RedshiftDestinationPropertiesTypeDef],  # (1)
+    S3: NotRequired[S3DestinationPropertiesTypeDef],  # (2)
+    Salesforce: NotRequired[SalesforceDestinationPropertiesTypeDef],  # (3)
+    Snowflake: NotRequired[SnowflakeDestinationPropertiesTypeDef],  # (4)
+    EventBridge: NotRequired[EventBridgeDestinationPropertiesTypeDef],  # (5)
+    LookoutMetrics: NotRequired[Mapping[str, Any]],
+    Upsolver: NotRequired[UpsolverDestinationPropertiesTypeDef],  # (6)
+    Honeycode: NotRequired[HoneycodeDestinationPropertiesTypeDef],  # (7)
+    CustomerProfiles: NotRequired[CustomerProfilesDestinationPropertiesTypeDef],  # (8)
+    Zendesk: NotRequired[ZendeskDestinationPropertiesTypeDef],  # (9)
+    Marketo: NotRequired[MarketoDestinationPropertiesTypeDef],  # (10)
+    CustomConnector: NotRequired[CustomConnectorDestinationPropertiesTypeDef],  # (11)
+    SAPOData: NotRequired[SAPODataDestinationPropertiesTypeDef],  # (12)
+```
 
-- `Redshift`:
-  [RedshiftDestinationPropertiesTypeDef](./type_defs.md#redshiftdestinationpropertiestypedef)
-- `S3`:
-  [S3DestinationPropertiesTypeDef](./type_defs.md#s3destinationpropertiestypedef)
-- `Salesforce`:
-  [SalesforceDestinationPropertiesTypeDef](./type_defs.md#salesforcedestinationpropertiestypedef)
-- `Snowflake`:
-  [SnowflakeDestinationPropertiesTypeDef](./type_defs.md#snowflakedestinationpropertiestypedef)
-- `EventBridge`:
-  [EventBridgeDestinationPropertiesTypeDef](./type_defs.md#eventbridgedestinationpropertiestypedef)
-- `LookoutMetrics`: `Mapping`\[`str`, `Any`\]
-- `Upsolver`:
-  [UpsolverDestinationPropertiesTypeDef](./type_defs.md#upsolverdestinationpropertiestypedef)
-- `Honeycode`:
-  [HoneycodeDestinationPropertiesTypeDef](./type_defs.md#honeycodedestinationpropertiestypedef)
-- `CustomerProfiles`:
-  [CustomerProfilesDestinationPropertiesTypeDef](./type_defs.md#customerprofilesdestinationpropertiestypedef)
-- `Zendesk`:
-  [ZendeskDestinationPropertiesTypeDef](./type_defs.md#zendeskdestinationpropertiestypedef)
-- `Marketo`:
-  [MarketoDestinationPropertiesTypeDef](./type_defs.md#marketodestinationpropertiestypedef)
-- `CustomConnector`:
-  [CustomConnectorDestinationPropertiesTypeDef](./type_defs.md#customconnectordestinationpropertiestypedef)
-- `SAPOData`:
-  [SAPODataDestinationPropertiesTypeDef](./type_defs.md#sapodatadestinationpropertiestypedef)
-
-<a id="destinationfieldpropertiestypedef"></a>
-
+1. See [:material-code-braces: RedshiftDestinationPropertiesTypeDef](./type_defs.md#redshiftdestinationpropertiestypedef) 
+2. See [:material-code-braces: S3DestinationPropertiesTypeDef](./type_defs.md#s3destinationpropertiestypedef) 
+3. See [:material-code-braces: SalesforceDestinationPropertiesTypeDef](./type_defs.md#salesforcedestinationpropertiestypedef) 
+4. See [:material-code-braces: SnowflakeDestinationPropertiesTypeDef](./type_defs.md#snowflakedestinationpropertiestypedef) 
+5. See [:material-code-braces: EventBridgeDestinationPropertiesTypeDef](./type_defs.md#eventbridgedestinationpropertiestypedef) 
+6. See [:material-code-braces: UpsolverDestinationPropertiesTypeDef](./type_defs.md#upsolverdestinationpropertiestypedef) 
+7. See [:material-code-braces: HoneycodeDestinationPropertiesTypeDef](./type_defs.md#honeycodedestinationpropertiestypedef) 
+8. See [:material-code-braces: CustomerProfilesDestinationPropertiesTypeDef](./type_defs.md#customerprofilesdestinationpropertiestypedef) 
+9. See [:material-code-braces: ZendeskDestinationPropertiesTypeDef](./type_defs.md#zendeskdestinationpropertiestypedef) 
+10. See [:material-code-braces: MarketoDestinationPropertiesTypeDef](./type_defs.md#marketodestinationpropertiestypedef) 
+11. See [:material-code-braces: CustomConnectorDestinationPropertiesTypeDef](./type_defs.md#customconnectordestinationpropertiestypedef) 
+12. See [:material-code-braces: SAPODataDestinationPropertiesTypeDef](./type_defs.md#sapodatadestinationpropertiestypedef) 
 ## DestinationFieldPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DestinationFieldPropertiesTypeDef
+
+def get_value() -> DestinationFieldPropertiesTypeDef:
+    return {
+        "isCreatable": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DestinationFieldPropertiesTypeDef(TypedDict):
+    isCreatable: NotRequired[bool],
+    isNullable: NotRequired[bool],
+    isUpsertable: NotRequired[bool],
+    isUpdatable: NotRequired[bool],
+    isDefaultedOnCreate: NotRequired[bool],
+    supportedWriteOperations: NotRequired[List[WriteOperationTypeType]],  # (1)
+```
 
-- `isCreatable`: `bool`
-- `isNullable`: `bool`
-- `isUpsertable`: `bool`
-- `isUpdatable`: `bool`
-- `isDefaultedOnCreate`: `bool`
-- `supportedWriteOperations`:
-  `List`\[[WriteOperationTypeType](./literals.md#writeoperationtypetype)\]
-
-<a id="destinationflowconfigtypedef"></a>
-
+1. See [:material-code-brackets: WriteOperationTypeType](./literals.md#writeoperationtypetype) 
 ## DestinationFlowConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DestinationFlowConfigTypeDef
+
+def get_value() -> DestinationFlowConfigTypeDef:
+    return {
+        "connectorType": ...,
+        "destinationConnectorProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DestinationFlowConfigTypeDef(TypedDict):
+    connectorType: ConnectorTypeType,  # (1)
+    destinationConnectorProperties: DestinationConnectorPropertiesTypeDef,  # (2)
+    apiVersion: NotRequired[str],
+    connectorProfileName: NotRequired[str],
+```
 
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `destinationConnectorProperties`:
-  [DestinationConnectorPropertiesTypeDef](./type_defs.md#destinationconnectorpropertiestypedef)
-
-Optional fields:
-
-- `apiVersion`: `str`
-- `connectorProfileName`: `str`
-
-<a id="dynatraceconnectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-braces: DestinationConnectorPropertiesTypeDef](./type_defs.md#destinationconnectorpropertiestypedef) 
 ## DynatraceConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DynatraceConnectorProfileCredentialsTypeDef
+
+def get_value() -> DynatraceConnectorProfileCredentialsTypeDef:
+    return {
+        "apiToken": ...,
+    }
 ```
 
-Required fields:
-
-- `apiToken`: `str`
-
-<a id="dynatraceconnectorprofilepropertiestypedef"></a>
+```python title="Definition"
+class DynatraceConnectorProfileCredentialsTypeDef(TypedDict):
+    apiToken: str,
+```
 
 ## DynatraceConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DynatraceConnectorProfilePropertiesTypeDef
+
+def get_value() -> DynatraceConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceUrl`: `str`
-
-<a id="dynatracesourcepropertiestypedef"></a>
+```python title="Definition"
+class DynatraceConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: str,
+```
 
 ## DynatraceSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import DynatraceSourcePropertiesTypeDef
+
+def get_value() -> DynatraceSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="errorhandlingconfigtypedef"></a>
+```python title="Definition"
+class DynatraceSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## ErrorHandlingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ErrorHandlingConfigTypeDef
+
+def get_value() -> ErrorHandlingConfigTypeDef:
+    return {
+        "failOnFirstDestinationError": ...,
+    }
 ```
 
-Optional fields:
-
-- `failOnFirstDestinationError`: `bool`
-- `bucketPrefix`: `str`
-- `bucketName`: `str`
-
-<a id="errorinfotypedef"></a>
+```python title="Definition"
+class ErrorHandlingConfigTypeDef(TypedDict):
+    failOnFirstDestinationError: NotRequired[bool],
+    bucketPrefix: NotRequired[str],
+    bucketName: NotRequired[str],
+```
 
 ## ErrorInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ErrorInfoTypeDef
+
+def get_value() -> ErrorInfoTypeDef:
+    return {
+        "putFailuresCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `putFailuresCount`: `int`
-- `executionMessage`: `str`
-
-<a id="eventbridgedestinationpropertiestypedef"></a>
+```python title="Definition"
+class ErrorInfoTypeDef(TypedDict):
+    putFailuresCount: NotRequired[int],
+    executionMessage: NotRequired[str],
+```
 
 ## EventBridgeDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import EventBridgeDestinationPropertiesTypeDef
+
+def get_value() -> EventBridgeDestinationPropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventBridgeDestinationPropertiesTypeDef(TypedDict):
+    object: str,
+    errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (1)
+```
 
-- `object`: `str`
-
-Optional fields:
-
-- `errorHandlingConfig`:
-  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-
-<a id="executiondetailstypedef"></a>
-
+1. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
 ## ExecutionDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ExecutionDetailsTypeDef
+
+def get_value() -> ExecutionDetailsTypeDef:
+    return {
+        "mostRecentExecutionMessage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutionDetailsTypeDef(TypedDict):
+    mostRecentExecutionMessage: NotRequired[str],
+    mostRecentExecutionTime: NotRequired[datetime],
+    mostRecentExecutionStatus: NotRequired[ExecutionStatusType],  # (1)
+```
 
-- `mostRecentExecutionMessage`: `str`
-- `mostRecentExecutionTime`: `datetime`
-- `mostRecentExecutionStatus`:
-  [ExecutionStatusType](./literals.md#executionstatustype)
-
-<a id="executionrecordtypedef"></a>
-
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
 ## ExecutionRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ExecutionRecordTypeDef
+
+def get_value() -> ExecutionRecordTypeDef:
+    return {
+        "executionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutionRecordTypeDef(TypedDict):
+    executionId: NotRequired[str],
+    executionStatus: NotRequired[ExecutionStatusType],  # (1)
+    executionResult: NotRequired[ExecutionResultTypeDef],  # (2)
+    startedAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    dataPullStartTime: NotRequired[datetime],
+    dataPullEndTime: NotRequired[datetime],
+```
 
-- `executionId`: `str`
-- `executionStatus`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `executionResult`:
-  [ExecutionResultTypeDef](./type_defs.md#executionresulttypedef)
-- `startedAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `dataPullStartTime`: `datetime`
-- `dataPullEndTime`: `datetime`
-
-<a id="executionresulttypedef"></a>
-
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+2. See [:material-code-braces: ExecutionResultTypeDef](./type_defs.md#executionresulttypedef) 
 ## ExecutionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ExecutionResultTypeDef
+
+def get_value() -> ExecutionResultTypeDef:
+    return {
+        "errorInfo": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutionResultTypeDef(TypedDict):
+    errorInfo: NotRequired[ErrorInfoTypeDef],  # (1)
+    bytesProcessed: NotRequired[int],
+    bytesWritten: NotRequired[int],
+    recordsProcessed: NotRequired[int],
+```
 
-- `errorInfo`: [ErrorInfoTypeDef](./type_defs.md#errorinfotypedef)
-- `bytesProcessed`: `int`
-- `bytesWritten`: `int`
-- `recordsProcessed`: `int`
-
-<a id="fieldtypedetailstypedef"></a>
-
+1. See [:material-code-braces: ErrorInfoTypeDef](./type_defs.md#errorinfotypedef) 
 ## FieldTypeDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import FieldTypeDetailsTypeDef
+
+def get_value() -> FieldTypeDetailsTypeDef:
+    return {
+        "fieldType": ...,
+        "filterOperators": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FieldTypeDetailsTypeDef(TypedDict):
+    fieldType: str,
+    filterOperators: List[OperatorType],  # (1)
+    supportedValues: NotRequired[List[str]],
+    valueRegexPattern: NotRequired[str],
+    supportedDateFormat: NotRequired[str],
+    fieldValueRange: NotRequired[RangeTypeDef],  # (2)
+    fieldLengthRange: NotRequired[RangeTypeDef],  # (2)
+```
 
-- `fieldType`: `str`
-- `filterOperators`: `List`\[[OperatorType](./literals.md#operatortype)\]
-
-Optional fields:
-
-- `supportedValues`: `List`\[`str`\]
-- `valueRegexPattern`: `str`
-- `supportedDateFormat`: `str`
-- `fieldValueRange`: [RangeTypeDef](./type_defs.md#rangetypedef)
-- `fieldLengthRange`: [RangeTypeDef](./type_defs.md#rangetypedef)
-
-<a id="flowdefinitiontypedef"></a>
-
+1. See [:material-code-brackets: OperatorType](./literals.md#operatortype) 
+2. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
+3. See [:material-code-braces: RangeTypeDef](./type_defs.md#rangetypedef) 
 ## FlowDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import FlowDefinitionTypeDef
+
+def get_value() -> FlowDefinitionTypeDef:
+    return {
+        "flowArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FlowDefinitionTypeDef(TypedDict):
+    flowArn: NotRequired[str],
+    description: NotRequired[str],
+    flowName: NotRequired[str],
+    flowStatus: NotRequired[FlowStatusType],  # (1)
+    sourceConnectorType: NotRequired[ConnectorTypeType],  # (2)
+    sourceConnectorLabel: NotRequired[str],
+    destinationConnectorType: NotRequired[ConnectorTypeType],  # (2)
+    destinationConnectorLabel: NotRequired[str],
+    triggerType: NotRequired[TriggerTypeType],  # (4)
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    createdBy: NotRequired[str],
+    lastUpdatedBy: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    lastRunExecutionDetails: NotRequired[ExecutionDetailsTypeDef],  # (5)
+```
 
-- `flowArn`: `str`
-- `description`: `str`
-- `flowName`: `str`
-- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
-- `sourceConnectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `sourceConnectorLabel`: `str`
-- `destinationConnectorType`:
-  [ConnectorTypeType](./literals.md#connectortypetype)
-- `destinationConnectorLabel`: `str`
-- `triggerType`: [TriggerTypeType](./literals.md#triggertypetype)
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `createdBy`: `str`
-- `lastUpdatedBy`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `lastRunExecutionDetails`:
-  [ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef)
-
-<a id="googleanalyticsconnectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-brackets: FlowStatusType](./literals.md#flowstatustype) 
+2. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+3. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+4. See [:material-code-brackets: TriggerTypeType](./literals.md#triggertypetype) 
+5. See [:material-code-braces: ExecutionDetailsTypeDef](./type_defs.md#executiondetailstypedef) 
 ## GoogleAnalyticsConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import GoogleAnalyticsConnectorProfileCredentialsTypeDef
+
+def get_value() -> GoogleAnalyticsConnectorProfileCredentialsTypeDef:
+    return {
+        "clientId": ...,
+        "clientSecret": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GoogleAnalyticsConnectorProfileCredentialsTypeDef(TypedDict):
+    clientId: str,
+    clientSecret: str,
+    accessToken: NotRequired[str],
+    refreshToken: NotRequired[str],
+    oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+```
 
-- `clientId`: `str`
-- `clientSecret`: `str`
-
-Optional fields:
-
-- `accessToken`: `str`
-- `refreshToken`: `str`
-- `oAuthRequest`:
-  [ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef)
-
-<a id="googleanalyticsmetadatatypedef"></a>
-
+1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
 ## GoogleAnalyticsMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import GoogleAnalyticsMetadataTypeDef
+
+def get_value() -> GoogleAnalyticsMetadataTypeDef:
+    return {
+        "oAuthScopes": ...,
+    }
 ```
 
-Optional fields:
-
-- `oAuthScopes`: `List`\[`str`\]
-
-<a id="googleanalyticssourcepropertiestypedef"></a>
+```python title="Definition"
+class GoogleAnalyticsMetadataTypeDef(TypedDict):
+    oAuthScopes: NotRequired[List[str]],
+```
 
 ## GoogleAnalyticsSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import GoogleAnalyticsSourcePropertiesTypeDef
+
+def get_value() -> GoogleAnalyticsSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="honeycodeconnectorprofilecredentialstypedef"></a>
+```python title="Definition"
+class GoogleAnalyticsSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## HoneycodeConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import HoneycodeConnectorProfileCredentialsTypeDef
+
+def get_value() -> HoneycodeConnectorProfileCredentialsTypeDef:
+    return {
+        "accessToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HoneycodeConnectorProfileCredentialsTypeDef(TypedDict):
+    accessToken: NotRequired[str],
+    refreshToken: NotRequired[str],
+    oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+```
 
-- `accessToken`: `str`
-- `refreshToken`: `str`
-- `oAuthRequest`:
-  [ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef)
-
-<a id="honeycodedestinationpropertiestypedef"></a>
-
+1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
 ## HoneycodeDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import HoneycodeDestinationPropertiesTypeDef
+
+def get_value() -> HoneycodeDestinationPropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HoneycodeDestinationPropertiesTypeDef(TypedDict):
+    object: str,
+    errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (1)
+```
 
-- `object`: `str`
-
-Optional fields:
-
-- `errorHandlingConfig`:
-  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-
-<a id="honeycodemetadatatypedef"></a>
-
+1. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
 ## HoneycodeMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import HoneycodeMetadataTypeDef
+
+def get_value() -> HoneycodeMetadataTypeDef:
+    return {
+        "oAuthScopes": ...,
+    }
 ```
 
-Optional fields:
-
-- `oAuthScopes`: `List`\[`str`\]
-
-<a id="incrementalpullconfigtypedef"></a>
+```python title="Definition"
+class HoneycodeMetadataTypeDef(TypedDict):
+    oAuthScopes: NotRequired[List[str]],
+```
 
 ## IncrementalPullConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import IncrementalPullConfigTypeDef
+
+def get_value() -> IncrementalPullConfigTypeDef:
+    return {
+        "datetimeTypeFieldName": ...,
+    }
 ```
 
-Optional fields:
-
-- `datetimeTypeFieldName`: `str`
-
-<a id="infornexusconnectorprofilecredentialstypedef"></a>
+```python title="Definition"
+class IncrementalPullConfigTypeDef(TypedDict):
+    datetimeTypeFieldName: NotRequired[str],
+```
 
 ## InforNexusConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import InforNexusConnectorProfileCredentialsTypeDef
+
+def get_value() -> InforNexusConnectorProfileCredentialsTypeDef:
+    return {
+        "accessKeyId": ...,
+        "userId": ...,
+        "secretAccessKey": ...,
+        "datakey": ...,
+    }
 ```
 
-Required fields:
-
-- `accessKeyId`: `str`
-- `userId`: `str`
-- `secretAccessKey`: `str`
-- `datakey`: `str`
-
-<a id="infornexusconnectorprofilepropertiestypedef"></a>
+```python title="Definition"
+class InforNexusConnectorProfileCredentialsTypeDef(TypedDict):
+    accessKeyId: str,
+    userId: str,
+    secretAccessKey: str,
+    datakey: str,
+```
 
 ## InforNexusConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import InforNexusConnectorProfilePropertiesTypeDef
+
+def get_value() -> InforNexusConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceUrl`: `str`
-
-<a id="infornexussourcepropertiestypedef"></a>
+```python title="Definition"
+class InforNexusConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: str,
+```
 
 ## InforNexusSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import InforNexusSourcePropertiesTypeDef
+
+def get_value() -> InforNexusSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="lambdaconnectorprovisioningconfigtypedef"></a>
+```python title="Definition"
+class InforNexusSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## LambdaConnectorProvisioningConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import LambdaConnectorProvisioningConfigTypeDef
+
+def get_value() -> LambdaConnectorProvisioningConfigTypeDef:
+    return {
+        "lambdaArn": ...,
+    }
 ```
 
-Required fields:
-
-- `lambdaArn`: `str`
-
-<a id="listconnectorentitiesrequestrequesttypedef"></a>
+```python title="Definition"
+class LambdaConnectorProvisioningConfigTypeDef(TypedDict):
+    lambdaArn: str,
+```
 
 ## ListConnectorEntitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ListConnectorEntitiesRequestRequestTypeDef
+
+def get_value() -> ListConnectorEntitiesRequestRequestTypeDef:
+    return {
+        "connectorProfileName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListConnectorEntitiesRequestRequestTypeDef(TypedDict):
+    connectorProfileName: NotRequired[str],
+    connectorType: NotRequired[ConnectorTypeType],  # (1)
+    entitiesPath: NotRequired[str],
+    apiVersion: NotRequired[str],
+```
 
-- `connectorProfileName`: `str`
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `entitiesPath`: `str`
-- `apiVersion`: `str`
-
-<a id="listconnectorentitiesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
 ## ListConnectorEntitiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ListConnectorEntitiesResponseTypeDef
+
+def get_value() -> ListConnectorEntitiesResponseTypeDef:
+    return {
+        "connectorEntityMap": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConnectorEntitiesResponseTypeDef(TypedDict):
+    connectorEntityMap: Dict[str, List[ConnectorEntityTypeDef]],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectorEntityMap`: `Dict`\[`str`,
-  `List`\[[ConnectorEntityTypeDef](./type_defs.md#connectorentitytypedef)\]\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listconnectorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectorEntityTypeDef](./type_defs.md#connectorentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListConnectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ListConnectorsRequestRequestTypeDef
+
+def get_value() -> ListConnectorsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listconnectorsresponsetypedef"></a>
+```python title="Definition"
+class ListConnectorsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListConnectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ListConnectorsResponseTypeDef
+
+def get_value() -> ListConnectorsResponseTypeDef:
+    return {
+        "connectors": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConnectorsResponseTypeDef(TypedDict):
+    connectors: List[ConnectorDetailTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectors`:
-  `List`\[[ConnectorDetailTypeDef](./type_defs.md#connectordetailtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listflowsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectorDetailTypeDef](./type_defs.md#connectordetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListFlowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ListFlowsRequestRequestTypeDef
+
+def get_value() -> ListFlowsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listflowsresponsetypedef"></a>
+```python title="Definition"
+class ListFlowsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListFlowsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ListFlowsResponseTypeDef
+
+def get_value() -> ListFlowsResponseTypeDef:
+    return {
+        "flows": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFlowsResponseTypeDef(TypedDict):
+    flows: List[FlowDefinitionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `flows`:
-  `List`\[[FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="marketoconnectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MarketoConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import MarketoConnectorProfileCredentialsTypeDef
+
+def get_value() -> MarketoConnectorProfileCredentialsTypeDef:
+    return {
+        "clientId": ...,
+        "clientSecret": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MarketoConnectorProfileCredentialsTypeDef(TypedDict):
+    clientId: str,
+    clientSecret: str,
+    accessToken: NotRequired[str],
+    oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+```
 
-- `clientId`: `str`
-- `clientSecret`: `str`
-
-Optional fields:
-
-- `accessToken`: `str`
-- `oAuthRequest`:
-  [ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef)
-
-<a id="marketoconnectorprofilepropertiestypedef"></a>
-
+1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
 ## MarketoConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import MarketoConnectorProfilePropertiesTypeDef
+
+def get_value() -> MarketoConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceUrl`: `str`
-
-<a id="marketodestinationpropertiestypedef"></a>
+```python title="Definition"
+class MarketoConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: str,
+```
 
 ## MarketoDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import MarketoDestinationPropertiesTypeDef
+
+def get_value() -> MarketoDestinationPropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MarketoDestinationPropertiesTypeDef(TypedDict):
+    object: str,
+    errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (1)
+```
 
-- `object`: `str`
-
-Optional fields:
-
-- `errorHandlingConfig`:
-  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-
-<a id="marketosourcepropertiestypedef"></a>
-
+1. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
 ## MarketoSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import MarketoSourcePropertiesTypeDef
+
+def get_value() -> MarketoSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="oauth2credentialstypedef"></a>
+```python title="Definition"
+class MarketoSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## OAuth2CredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import OAuth2CredentialsTypeDef
+
+def get_value() -> OAuth2CredentialsTypeDef:
+    return {
+        "clientId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OAuth2CredentialsTypeDef(TypedDict):
+    clientId: NotRequired[str],
+    clientSecret: NotRequired[str],
+    accessToken: NotRequired[str],
+    refreshToken: NotRequired[str],
+    oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+```
 
-- `clientId`: `str`
-- `clientSecret`: `str`
-- `accessToken`: `str`
-- `refreshToken`: `str`
-- `oAuthRequest`:
-  [ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef)
-
-<a id="oauth2defaultstypedef"></a>
-
+1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
 ## OAuth2DefaultsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import OAuth2DefaultsTypeDef
+
+def get_value() -> OAuth2DefaultsTypeDef:
+    return {
+        "oauthScopes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OAuth2DefaultsTypeDef(TypedDict):
+    oauthScopes: NotRequired[List[str]],
+    tokenUrls: NotRequired[List[str]],
+    authCodeUrls: NotRequired[List[str]],
+    oauth2GrantTypesSupported: NotRequired[List[OAuth2GrantTypeType]],  # (1)
+```
 
-- `oauthScopes`: `List`\[`str`\]
-- `tokenUrls`: `List`\[`str`\]
-- `authCodeUrls`: `List`\[`str`\]
-- `oauth2GrantTypesSupported`:
-  `List`\[[OAuth2GrantTypeType](./literals.md#oauth2granttypetype)\]
-
-<a id="oauth2propertiestypedef"></a>
-
+1. See [:material-code-brackets: OAuth2GrantTypeType](./literals.md#oauth2granttypetype) 
 ## OAuth2PropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import OAuth2PropertiesTypeDef
+
+def get_value() -> OAuth2PropertiesTypeDef:
+    return {
+        "tokenUrl": ...,
+        "oAuth2GrantType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OAuth2PropertiesTypeDef(TypedDict):
+    tokenUrl: str,
+    oAuth2GrantType: OAuth2GrantTypeType,  # (1)
+```
 
-- `tokenUrl`: `str`
-- `oAuth2GrantType`: [OAuth2GrantTypeType](./literals.md#oauth2granttypetype)
-
-<a id="oauthcredentialstypedef"></a>
-
+1. See [:material-code-brackets: OAuth2GrantTypeType](./literals.md#oauth2granttypetype) 
 ## OAuthCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import OAuthCredentialsTypeDef
+
+def get_value() -> OAuthCredentialsTypeDef:
+    return {
+        "clientId": ...,
+        "clientSecret": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OAuthCredentialsTypeDef(TypedDict):
+    clientId: str,
+    clientSecret: str,
+    accessToken: NotRequired[str],
+    refreshToken: NotRequired[str],
+    oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+```
 
-- `clientId`: `str`
-- `clientSecret`: `str`
-
-Optional fields:
-
-- `accessToken`: `str`
-- `refreshToken`: `str`
-- `oAuthRequest`:
-  [ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef)
-
-<a id="oauthpropertiestypedef"></a>
-
+1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
 ## OAuthPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import OAuthPropertiesTypeDef
+
+def get_value() -> OAuthPropertiesTypeDef:
+    return {
+        "tokenUrl": ...,
+        "authCodeUrl": ...,
+        "oAuthScopes": ...,
+    }
 ```
 
-Required fields:
-
-- `tokenUrl`: `str`
-- `authCodeUrl`: `str`
-- `oAuthScopes`: `Sequence`\[`str`\]
-
-<a id="prefixconfigtypedef"></a>
+```python title="Definition"
+class OAuthPropertiesTypeDef(TypedDict):
+    tokenUrl: str,
+    authCodeUrl: str,
+    oAuthScopes: Sequence[str],
+```
 
 ## PrefixConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import PrefixConfigTypeDef
+
+def get_value() -> PrefixConfigTypeDef:
+    return {
+        "prefixType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PrefixConfigTypeDef(TypedDict):
+    prefixType: NotRequired[PrefixTypeType],  # (1)
+    prefixFormat: NotRequired[PrefixFormatType],  # (2)
+```
 
-- `prefixType`: [PrefixTypeType](./literals.md#prefixtypetype)
-- `prefixFormat`: [PrefixFormatType](./literals.md#prefixformattype)
-
-<a id="privateconnectionprovisioningstatetypedef"></a>
-
+1. See [:material-code-brackets: PrefixTypeType](./literals.md#prefixtypetype) 
+2. See [:material-code-brackets: PrefixFormatType](./literals.md#prefixformattype) 
 ## PrivateConnectionProvisioningStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import PrivateConnectionProvisioningStateTypeDef
+
+def get_value() -> PrivateConnectionProvisioningStateTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PrivateConnectionProvisioningStateTypeDef(TypedDict):
+    status: NotRequired[PrivateConnectionProvisioningStatusType],  # (1)
+    failureMessage: NotRequired[str],
+    failureCause: NotRequired[PrivateConnectionProvisioningFailureCauseType],  # (2)
+```
 
-- `status`:
-  [PrivateConnectionProvisioningStatusType](./literals.md#privateconnectionprovisioningstatustype)
-- `failureMessage`: `str`
-- `failureCause`:
-  [PrivateConnectionProvisioningFailureCauseType](./literals.md#privateconnectionprovisioningfailurecausetype)
-
-<a id="rangetypedef"></a>
-
+1. See [:material-code-brackets: PrivateConnectionProvisioningStatusType](./literals.md#privateconnectionprovisioningstatustype) 
+2. See [:material-code-brackets: PrivateConnectionProvisioningFailureCauseType](./literals.md#privateconnectionprovisioningfailurecausetype) 
 ## RangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import RangeTypeDef
+
+def get_value() -> RangeTypeDef:
+    return {
+        "maximum": ...,
+    }
 ```
 
-Optional fields:
-
-- `maximum`: `float`
-- `minimum`: `float`
-
-<a id="redshiftconnectorprofilecredentialstypedef"></a>
+```python title="Definition"
+class RangeTypeDef(TypedDict):
+    maximum: NotRequired[float],
+    minimum: NotRequired[float],
+```
 
 ## RedshiftConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import RedshiftConnectorProfileCredentialsTypeDef
+
+def get_value() -> RedshiftConnectorProfileCredentialsTypeDef:
+    return {
+        "username": ...,
+        "password": ...,
+    }
 ```
 
-Required fields:
-
-- `username`: `str`
-- `password`: `str`
-
-<a id="redshiftconnectorprofilepropertiestypedef"></a>
+```python title="Definition"
+class RedshiftConnectorProfileCredentialsTypeDef(TypedDict):
+    username: str,
+    password: str,
+```
 
 ## RedshiftConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import RedshiftConnectorProfilePropertiesTypeDef
+
+def get_value() -> RedshiftConnectorProfilePropertiesTypeDef:
+    return {
+        "databaseUrl": ...,
+        "bucketName": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `databaseUrl`: `str`
-- `bucketName`: `str`
-- `roleArn`: `str`
-
-Optional fields:
-
-- `bucketPrefix`: `str`
-
-<a id="redshiftdestinationpropertiestypedef"></a>
+```python title="Definition"
+class RedshiftConnectorProfilePropertiesTypeDef(TypedDict):
+    databaseUrl: str,
+    bucketName: str,
+    roleArn: str,
+    bucketPrefix: NotRequired[str],
+```
 
 ## RedshiftDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import RedshiftDestinationPropertiesTypeDef
+
+def get_value() -> RedshiftDestinationPropertiesTypeDef:
+    return {
+        "object": ...,
+        "intermediateBucketName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RedshiftDestinationPropertiesTypeDef(TypedDict):
+    object: str,
+    intermediateBucketName: str,
+    bucketPrefix: NotRequired[str],
+    errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (1)
+```
 
-- `object`: `str`
-- `intermediateBucketName`: `str`
-
-Optional fields:
-
-- `bucketPrefix`: `str`
-- `errorHandlingConfig`:
-  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-
-<a id="registerconnectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
 ## RegisterConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import RegisterConnectorRequestRequestTypeDef
+
+def get_value() -> RegisterConnectorRequestRequestTypeDef:
+    return {
+        "connectorLabel": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RegisterConnectorRequestRequestTypeDef(TypedDict):
+    connectorLabel: NotRequired[str],
+    description: NotRequired[str],
+    connectorProvisioningType: NotRequired[ConnectorProvisioningTypeType],  # (1)
+    connectorProvisioningConfig: NotRequired[ConnectorProvisioningConfigTypeDef],  # (2)
+```
 
-- `connectorLabel`: `str`
-- `description`: `str`
-- `connectorProvisioningType`: `Literal['LAMBDA']` (see
-  [ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype))
-- `connectorProvisioningConfig`:
-  [ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef)
-
-<a id="registerconnectorresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype) 
+2. See [:material-code-braces: ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef) 
 ## RegisterConnectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import RegisterConnectorResponseTypeDef
+
+def get_value() -> RegisterConnectorResponseTypeDef:
+    return {
+        "connectorArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterConnectorResponseTypeDef(TypedDict):
+    connectorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `connectorArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3destinationpropertiestypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3DestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import S3DestinationPropertiesTypeDef
+
+def get_value() -> S3DestinationPropertiesTypeDef:
+    return {
+        "bucketName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3DestinationPropertiesTypeDef(TypedDict):
+    bucketName: str,
+    bucketPrefix: NotRequired[str],
+    s3OutputFormatConfig: NotRequired[S3OutputFormatConfigTypeDef],  # (1)
+```
 
-- `bucketName`: `str`
-
-Optional fields:
-
-- `bucketPrefix`: `str`
-- `s3OutputFormatConfig`:
-  [S3OutputFormatConfigTypeDef](./type_defs.md#s3outputformatconfigtypedef)
-
-<a id="s3inputformatconfigtypedef"></a>
-
+1. See [:material-code-braces: S3OutputFormatConfigTypeDef](./type_defs.md#s3outputformatconfigtypedef) 
 ## S3InputFormatConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import S3InputFormatConfigTypeDef
+
+def get_value() -> S3InputFormatConfigTypeDef:
+    return {
+        "s3InputFileType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3InputFormatConfigTypeDef(TypedDict):
+    s3InputFileType: NotRequired[S3InputFileTypeType],  # (1)
+```
 
-- `s3InputFileType`: [S3InputFileTypeType](./literals.md#s3inputfiletypetype)
-
-<a id="s3outputformatconfigtypedef"></a>
-
+1. See [:material-code-brackets: S3InputFileTypeType](./literals.md#s3inputfiletypetype) 
 ## S3OutputFormatConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import S3OutputFormatConfigTypeDef
+
+def get_value() -> S3OutputFormatConfigTypeDef:
+    return {
+        "fileType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3OutputFormatConfigTypeDef(TypedDict):
+    fileType: NotRequired[FileTypeType],  # (1)
+    prefixConfig: NotRequired[PrefixConfigTypeDef],  # (2)
+    aggregationConfig: NotRequired[AggregationConfigTypeDef],  # (3)
+```
 
-- `fileType`: [FileTypeType](./literals.md#filetypetype)
-- `prefixConfig`: [PrefixConfigTypeDef](./type_defs.md#prefixconfigtypedef)
-- `aggregationConfig`:
-  [AggregationConfigTypeDef](./type_defs.md#aggregationconfigtypedef)
-
-<a id="s3sourcepropertiestypedef"></a>
-
+1. See [:material-code-brackets: FileTypeType](./literals.md#filetypetype) 
+2. See [:material-code-braces: PrefixConfigTypeDef](./type_defs.md#prefixconfigtypedef) 
+3. See [:material-code-braces: AggregationConfigTypeDef](./type_defs.md#aggregationconfigtypedef) 
 ## S3SourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import S3SourcePropertiesTypeDef
+
+def get_value() -> S3SourcePropertiesTypeDef:
+    return {
+        "bucketName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3SourcePropertiesTypeDef(TypedDict):
+    bucketName: str,
+    bucketPrefix: NotRequired[str],
+    s3InputFormatConfig: NotRequired[S3InputFormatConfigTypeDef],  # (1)
+```
 
-- `bucketName`: `str`
-
-Optional fields:
-
-- `bucketPrefix`: `str`
-- `s3InputFormatConfig`:
-  [S3InputFormatConfigTypeDef](./type_defs.md#s3inputformatconfigtypedef)
-
-<a id="sapodataconnectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-braces: S3InputFormatConfigTypeDef](./type_defs.md#s3inputformatconfigtypedef) 
 ## SAPODataConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SAPODataConnectorProfileCredentialsTypeDef
+
+def get_value() -> SAPODataConnectorProfileCredentialsTypeDef:
+    return {
+        "basicAuthCredentials": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SAPODataConnectorProfileCredentialsTypeDef(TypedDict):
+    basicAuthCredentials: NotRequired[BasicAuthCredentialsTypeDef],  # (1)
+    oAuthCredentials: NotRequired[OAuthCredentialsTypeDef],  # (2)
+```
 
-- `basicAuthCredentials`:
-  [BasicAuthCredentialsTypeDef](./type_defs.md#basicauthcredentialstypedef)
-- `oAuthCredentials`:
-  [OAuthCredentialsTypeDef](./type_defs.md#oauthcredentialstypedef)
-
-<a id="sapodataconnectorprofilepropertiestypedef"></a>
-
+1. See [:material-code-braces: BasicAuthCredentialsTypeDef](./type_defs.md#basicauthcredentialstypedef) 
+2. See [:material-code-braces: OAuthCredentialsTypeDef](./type_defs.md#oauthcredentialstypedef) 
 ## SAPODataConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SAPODataConnectorProfilePropertiesTypeDef
+
+def get_value() -> SAPODataConnectorProfilePropertiesTypeDef:
+    return {
+        "applicationHostUrl": ...,
+        "applicationServicePath": ...,
+        "portNumber": ...,
+        "clientNumber": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SAPODataConnectorProfilePropertiesTypeDef(TypedDict):
+    applicationHostUrl: str,
+    applicationServicePath: str,
+    portNumber: int,
+    clientNumber: str,
+    logonLanguage: NotRequired[str],
+    privateLinkServiceName: NotRequired[str],
+    oAuthProperties: NotRequired[OAuthPropertiesTypeDef],  # (1)
+```
 
-- `applicationHostUrl`: `str`
-- `applicationServicePath`: `str`
-- `portNumber`: `int`
-- `clientNumber`: `str`
-
-Optional fields:
-
-- `logonLanguage`: `str`
-- `privateLinkServiceName`: `str`
-- `oAuthProperties`:
-  [OAuthPropertiesTypeDef](./type_defs.md#oauthpropertiestypedef)
-
-<a id="sapodatadestinationpropertiestypedef"></a>
-
+1. See [:material-code-braces: OAuthPropertiesTypeDef](./type_defs.md#oauthpropertiestypedef) 
 ## SAPODataDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SAPODataDestinationPropertiesTypeDef
+
+def get_value() -> SAPODataDestinationPropertiesTypeDef:
+    return {
+        "objectPath": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SAPODataDestinationPropertiesTypeDef(TypedDict):
+    objectPath: str,
+    successResponseHandlingConfig: NotRequired[SuccessResponseHandlingConfigTypeDef],  # (1)
+    idFieldNames: NotRequired[Sequence[str]],
+    errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (2)
+    writeOperationType: NotRequired[WriteOperationTypeType],  # (3)
+```
 
-- `objectPath`: `str`
-
-Optional fields:
-
-- `successResponseHandlingConfig`:
-  [SuccessResponseHandlingConfigTypeDef](./type_defs.md#successresponsehandlingconfigtypedef)
-- `idFieldNames`: `Sequence`\[`str`\]
-- `errorHandlingConfig`:
-  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-- `writeOperationType`:
-  [WriteOperationTypeType](./literals.md#writeoperationtypetype)
-
-<a id="sapodatasourcepropertiestypedef"></a>
-
+1. See [:material-code-braces: SuccessResponseHandlingConfigTypeDef](./type_defs.md#successresponsehandlingconfigtypedef) 
+2. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
+3. See [:material-code-brackets: WriteOperationTypeType](./literals.md#writeoperationtypetype) 
 ## SAPODataSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SAPODataSourcePropertiesTypeDef
+
+def get_value() -> SAPODataSourcePropertiesTypeDef:
+    return {
+        "objectPath": ...,
+    }
 ```
 
-Optional fields:
-
-- `objectPath`: `str`
-
-<a id="salesforceconnectorprofilecredentialstypedef"></a>
+```python title="Definition"
+class SAPODataSourcePropertiesTypeDef(TypedDict):
+    objectPath: NotRequired[str],
+```
 
 ## SalesforceConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SalesforceConnectorProfileCredentialsTypeDef
+
+def get_value() -> SalesforceConnectorProfileCredentialsTypeDef:
+    return {
+        "accessToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SalesforceConnectorProfileCredentialsTypeDef(TypedDict):
+    accessToken: NotRequired[str],
+    refreshToken: NotRequired[str],
+    oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+    clientCredentialsArn: NotRequired[str],
+```
 
-- `accessToken`: `str`
-- `refreshToken`: `str`
-- `oAuthRequest`:
-  [ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef)
-- `clientCredentialsArn`: `str`
-
-<a id="salesforceconnectorprofilepropertiestypedef"></a>
-
+1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
 ## SalesforceConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SalesforceConnectorProfilePropertiesTypeDef
+
+def get_value() -> SalesforceConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `instanceUrl`: `str`
-- `isSandboxEnvironment`: `bool`
-
-<a id="salesforcedestinationpropertiestypedef"></a>
+```python title="Definition"
+class SalesforceConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: NotRequired[str],
+    isSandboxEnvironment: NotRequired[bool],
+```
 
 ## SalesforceDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SalesforceDestinationPropertiesTypeDef
+
+def get_value() -> SalesforceDestinationPropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SalesforceDestinationPropertiesTypeDef(TypedDict):
+    object: str,
+    idFieldNames: NotRequired[Sequence[str]],
+    errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (1)
+    writeOperationType: NotRequired[WriteOperationTypeType],  # (2)
+```
 
-- `object`: `str`
-
-Optional fields:
-
-- `idFieldNames`: `Sequence`\[`str`\]
-- `errorHandlingConfig`:
-  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-- `writeOperationType`:
-  [WriteOperationTypeType](./literals.md#writeoperationtypetype)
-
-<a id="salesforcemetadatatypedef"></a>
-
+1. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
+2. See [:material-code-brackets: WriteOperationTypeType](./literals.md#writeoperationtypetype) 
 ## SalesforceMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SalesforceMetadataTypeDef
+
+def get_value() -> SalesforceMetadataTypeDef:
+    return {
+        "oAuthScopes": ...,
+    }
 ```
 
-Optional fields:
-
-- `oAuthScopes`: `List`\[`str`\]
-
-<a id="salesforcesourcepropertiestypedef"></a>
+```python title="Definition"
+class SalesforceMetadataTypeDef(TypedDict):
+    oAuthScopes: NotRequired[List[str]],
+```
 
 ## SalesforceSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SalesforceSourcePropertiesTypeDef
+
+def get_value() -> SalesforceSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-Optional fields:
-
-- `enableDynamicFieldUpdate`: `bool`
-- `includeDeletedRecords`: `bool`
-
-<a id="scheduledtriggerpropertiestypedef"></a>
+```python title="Definition"
+class SalesforceSourcePropertiesTypeDef(TypedDict):
+    object: str,
+    enableDynamicFieldUpdate: NotRequired[bool],
+    includeDeletedRecords: NotRequired[bool],
+```
 
 ## ScheduledTriggerPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ScheduledTriggerPropertiesTypeDef
+
+def get_value() -> ScheduledTriggerPropertiesTypeDef:
+    return {
+        "scheduleExpression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduledTriggerPropertiesTypeDef(TypedDict):
+    scheduleExpression: str,
+    dataPullMode: NotRequired[DataPullModeType],  # (1)
+    scheduleStartTime: NotRequired[Union[datetime, str]],
+    scheduleEndTime: NotRequired[Union[datetime, str]],
+    timezone: NotRequired[str],
+    scheduleOffset: NotRequired[int],
+    firstExecutionFrom: NotRequired[Union[datetime, str]],
+```
 
-- `scheduleExpression`: `str`
-
-Optional fields:
-
-- `dataPullMode`: [DataPullModeType](./literals.md#datapullmodetype)
-- `scheduleStartTime`: `Union`\[`datetime`, `str`\]
-- `scheduleEndTime`: `Union`\[`datetime`, `str`\]
-- `timezone`: `str`
-- `scheduleOffset`: `int`
-- `firstExecutionFrom`: `Union`\[`datetime`, `str`\]
-
-<a id="servicenowconnectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-brackets: DataPullModeType](./literals.md#datapullmodetype) 
 ## ServiceNowConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ServiceNowConnectorProfileCredentialsTypeDef
+
+def get_value() -> ServiceNowConnectorProfileCredentialsTypeDef:
+    return {
+        "username": ...,
+        "password": ...,
+    }
 ```
 
-Required fields:
-
-- `username`: `str`
-- `password`: `str`
-
-<a id="servicenowconnectorprofilepropertiestypedef"></a>
+```python title="Definition"
+class ServiceNowConnectorProfileCredentialsTypeDef(TypedDict):
+    username: str,
+    password: str,
+```
 
 ## ServiceNowConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ServiceNowConnectorProfilePropertiesTypeDef
+
+def get_value() -> ServiceNowConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceUrl`: `str`
-
-<a id="servicenowsourcepropertiestypedef"></a>
+```python title="Definition"
+class ServiceNowConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: str,
+```
 
 ## ServiceNowSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ServiceNowSourcePropertiesTypeDef
+
+def get_value() -> ServiceNowSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="singularconnectorprofilecredentialstypedef"></a>
+```python title="Definition"
+class ServiceNowSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## SingularConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SingularConnectorProfileCredentialsTypeDef
+
+def get_value() -> SingularConnectorProfileCredentialsTypeDef:
+    return {
+        "apiKey": ...,
+    }
 ```
 
-Required fields:
-
-- `apiKey`: `str`
-
-<a id="singularsourcepropertiestypedef"></a>
+```python title="Definition"
+class SingularConnectorProfileCredentialsTypeDef(TypedDict):
+    apiKey: str,
+```
 
 ## SingularSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SingularSourcePropertiesTypeDef
+
+def get_value() -> SingularSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="slackconnectorprofilecredentialstypedef"></a>
+```python title="Definition"
+class SingularSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## SlackConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SlackConnectorProfileCredentialsTypeDef
+
+def get_value() -> SlackConnectorProfileCredentialsTypeDef:
+    return {
+        "clientId": ...,
+        "clientSecret": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SlackConnectorProfileCredentialsTypeDef(TypedDict):
+    clientId: str,
+    clientSecret: str,
+    accessToken: NotRequired[str],
+    oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+```
 
-- `clientId`: `str`
-- `clientSecret`: `str`
-
-Optional fields:
-
-- `accessToken`: `str`
-- `oAuthRequest`:
-  [ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef)
-
-<a id="slackconnectorprofilepropertiestypedef"></a>
-
+1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
 ## SlackConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SlackConnectorProfilePropertiesTypeDef
+
+def get_value() -> SlackConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceUrl`: `str`
-
-<a id="slackmetadatatypedef"></a>
+```python title="Definition"
+class SlackConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: str,
+```
 
 ## SlackMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SlackMetadataTypeDef
+
+def get_value() -> SlackMetadataTypeDef:
+    return {
+        "oAuthScopes": ...,
+    }
 ```
 
-Optional fields:
-
-- `oAuthScopes`: `List`\[`str`\]
-
-<a id="slacksourcepropertiestypedef"></a>
+```python title="Definition"
+class SlackMetadataTypeDef(TypedDict):
+    oAuthScopes: NotRequired[List[str]],
+```
 
 ## SlackSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SlackSourcePropertiesTypeDef
+
+def get_value() -> SlackSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="snowflakeconnectorprofilecredentialstypedef"></a>
+```python title="Definition"
+class SlackSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## SnowflakeConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SnowflakeConnectorProfileCredentialsTypeDef
+
+def get_value() -> SnowflakeConnectorProfileCredentialsTypeDef:
+    return {
+        "username": ...,
+        "password": ...,
+    }
 ```
 
-Required fields:
-
-- `username`: `str`
-- `password`: `str`
-
-<a id="snowflakeconnectorprofilepropertiestypedef"></a>
+```python title="Definition"
+class SnowflakeConnectorProfileCredentialsTypeDef(TypedDict):
+    username: str,
+    password: str,
+```
 
 ## SnowflakeConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SnowflakeConnectorProfilePropertiesTypeDef
+
+def get_value() -> SnowflakeConnectorProfilePropertiesTypeDef:
+    return {
+        "warehouse": ...,
+        "stage": ...,
+        "bucketName": ...,
+    }
 ```
 
-Required fields:
-
-- `warehouse`: `str`
-- `stage`: `str`
-- `bucketName`: `str`
-
-Optional fields:
-
-- `bucketPrefix`: `str`
-- `privateLinkServiceName`: `str`
-- `accountName`: `str`
-- `region`: `str`
-
-<a id="snowflakedestinationpropertiestypedef"></a>
+```python title="Definition"
+class SnowflakeConnectorProfilePropertiesTypeDef(TypedDict):
+    warehouse: str,
+    stage: str,
+    bucketName: str,
+    bucketPrefix: NotRequired[str],
+    privateLinkServiceName: NotRequired[str],
+    accountName: NotRequired[str],
+    region: NotRequired[str],
+```
 
 ## SnowflakeDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SnowflakeDestinationPropertiesTypeDef
+
+def get_value() -> SnowflakeDestinationPropertiesTypeDef:
+    return {
+        "object": ...,
+        "intermediateBucketName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SnowflakeDestinationPropertiesTypeDef(TypedDict):
+    object: str,
+    intermediateBucketName: str,
+    bucketPrefix: NotRequired[str],
+    errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (1)
+```
 
-- `object`: `str`
-- `intermediateBucketName`: `str`
-
-Optional fields:
-
-- `bucketPrefix`: `str`
-- `errorHandlingConfig`:
-  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-
-<a id="snowflakemetadatatypedef"></a>
-
+1. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
 ## SnowflakeMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SnowflakeMetadataTypeDef
+
+def get_value() -> SnowflakeMetadataTypeDef:
+    return {
+        "supportedRegions": ...,
+    }
 ```
 
-Optional fields:
-
-- `supportedRegions`: `List`\[`str`\]
-
-<a id="sourceconnectorpropertiestypedef"></a>
+```python title="Definition"
+class SnowflakeMetadataTypeDef(TypedDict):
+    supportedRegions: NotRequired[List[str]],
+```
 
 ## SourceConnectorPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SourceConnectorPropertiesTypeDef
+
+def get_value() -> SourceConnectorPropertiesTypeDef:
+    return {
+        "Amplitude": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceConnectorPropertiesTypeDef(TypedDict):
+    Amplitude: NotRequired[AmplitudeSourcePropertiesTypeDef],  # (1)
+    Datadog: NotRequired[DatadogSourcePropertiesTypeDef],  # (2)
+    Dynatrace: NotRequired[DynatraceSourcePropertiesTypeDef],  # (3)
+    GoogleAnalytics: NotRequired[GoogleAnalyticsSourcePropertiesTypeDef],  # (4)
+    InforNexus: NotRequired[InforNexusSourcePropertiesTypeDef],  # (5)
+    Marketo: NotRequired[MarketoSourcePropertiesTypeDef],  # (6)
+    S3: NotRequired[S3SourcePropertiesTypeDef],  # (7)
+    Salesforce: NotRequired[SalesforceSourcePropertiesTypeDef],  # (8)
+    ServiceNow: NotRequired[ServiceNowSourcePropertiesTypeDef],  # (9)
+    Singular: NotRequired[SingularSourcePropertiesTypeDef],  # (10)
+    Slack: NotRequired[SlackSourcePropertiesTypeDef],  # (11)
+    Trendmicro: NotRequired[TrendmicroSourcePropertiesTypeDef],  # (12)
+    Veeva: NotRequired[VeevaSourcePropertiesTypeDef],  # (13)
+    Zendesk: NotRequired[ZendeskSourcePropertiesTypeDef],  # (14)
+    SAPOData: NotRequired[SAPODataSourcePropertiesTypeDef],  # (15)
+    CustomConnector: NotRequired[CustomConnectorSourcePropertiesTypeDef],  # (16)
+```
 
-- `Amplitude`:
-  [AmplitudeSourcePropertiesTypeDef](./type_defs.md#amplitudesourcepropertiestypedef)
-- `Datadog`:
-  [DatadogSourcePropertiesTypeDef](./type_defs.md#datadogsourcepropertiestypedef)
-- `Dynatrace`:
-  [DynatraceSourcePropertiesTypeDef](./type_defs.md#dynatracesourcepropertiestypedef)
-- `GoogleAnalytics`:
-  [GoogleAnalyticsSourcePropertiesTypeDef](./type_defs.md#googleanalyticssourcepropertiestypedef)
-- `InforNexus`:
-  [InforNexusSourcePropertiesTypeDef](./type_defs.md#infornexussourcepropertiestypedef)
-- `Marketo`:
-  [MarketoSourcePropertiesTypeDef](./type_defs.md#marketosourcepropertiestypedef)
-- `S3`: [S3SourcePropertiesTypeDef](./type_defs.md#s3sourcepropertiestypedef)
-- `Salesforce`:
-  [SalesforceSourcePropertiesTypeDef](./type_defs.md#salesforcesourcepropertiestypedef)
-- `ServiceNow`:
-  [ServiceNowSourcePropertiesTypeDef](./type_defs.md#servicenowsourcepropertiestypedef)
-- `Singular`:
-  [SingularSourcePropertiesTypeDef](./type_defs.md#singularsourcepropertiestypedef)
-- `Slack`:
-  [SlackSourcePropertiesTypeDef](./type_defs.md#slacksourcepropertiestypedef)
-- `Trendmicro`:
-  [TrendmicroSourcePropertiesTypeDef](./type_defs.md#trendmicrosourcepropertiestypedef)
-- `Veeva`:
-  [VeevaSourcePropertiesTypeDef](./type_defs.md#veevasourcepropertiestypedef)
-- `Zendesk`:
-  [ZendeskSourcePropertiesTypeDef](./type_defs.md#zendesksourcepropertiestypedef)
-- `SAPOData`:
-  [SAPODataSourcePropertiesTypeDef](./type_defs.md#sapodatasourcepropertiestypedef)
-- `CustomConnector`:
-  [CustomConnectorSourcePropertiesTypeDef](./type_defs.md#customconnectorsourcepropertiestypedef)
-
-<a id="sourcefieldpropertiestypedef"></a>
-
+1. See [:material-code-braces: AmplitudeSourcePropertiesTypeDef](./type_defs.md#amplitudesourcepropertiestypedef) 
+2. See [:material-code-braces: DatadogSourcePropertiesTypeDef](./type_defs.md#datadogsourcepropertiestypedef) 
+3. See [:material-code-braces: DynatraceSourcePropertiesTypeDef](./type_defs.md#dynatracesourcepropertiestypedef) 
+4. See [:material-code-braces: GoogleAnalyticsSourcePropertiesTypeDef](./type_defs.md#googleanalyticssourcepropertiestypedef) 
+5. See [:material-code-braces: InforNexusSourcePropertiesTypeDef](./type_defs.md#infornexussourcepropertiestypedef) 
+6. See [:material-code-braces: MarketoSourcePropertiesTypeDef](./type_defs.md#marketosourcepropertiestypedef) 
+7. See [:material-code-braces: S3SourcePropertiesTypeDef](./type_defs.md#s3sourcepropertiestypedef) 
+8. See [:material-code-braces: SalesforceSourcePropertiesTypeDef](./type_defs.md#salesforcesourcepropertiestypedef) 
+9. See [:material-code-braces: ServiceNowSourcePropertiesTypeDef](./type_defs.md#servicenowsourcepropertiestypedef) 
+10. See [:material-code-braces: SingularSourcePropertiesTypeDef](./type_defs.md#singularsourcepropertiestypedef) 
+11. See [:material-code-braces: SlackSourcePropertiesTypeDef](./type_defs.md#slacksourcepropertiestypedef) 
+12. See [:material-code-braces: TrendmicroSourcePropertiesTypeDef](./type_defs.md#trendmicrosourcepropertiestypedef) 
+13. See [:material-code-braces: VeevaSourcePropertiesTypeDef](./type_defs.md#veevasourcepropertiestypedef) 
+14. See [:material-code-braces: ZendeskSourcePropertiesTypeDef](./type_defs.md#zendesksourcepropertiestypedef) 
+15. See [:material-code-braces: SAPODataSourcePropertiesTypeDef](./type_defs.md#sapodatasourcepropertiestypedef) 
+16. See [:material-code-braces: CustomConnectorSourcePropertiesTypeDef](./type_defs.md#customconnectorsourcepropertiestypedef) 
 ## SourceFieldPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SourceFieldPropertiesTypeDef
+
+def get_value() -> SourceFieldPropertiesTypeDef:
+    return {
+        "isRetrievable": ...,
+    }
 ```
 
-Optional fields:
-
-- `isRetrievable`: `bool`
-- `isQueryable`: `bool`
-- `isTimestampFieldForIncrementalQueries`: `bool`
-
-<a id="sourceflowconfigtypedef"></a>
+```python title="Definition"
+class SourceFieldPropertiesTypeDef(TypedDict):
+    isRetrievable: NotRequired[bool],
+    isQueryable: NotRequired[bool],
+    isTimestampFieldForIncrementalQueries: NotRequired[bool],
+```
 
 ## SourceFlowConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SourceFlowConfigTypeDef
+
+def get_value() -> SourceFlowConfigTypeDef:
+    return {
+        "connectorType": ...,
+        "sourceConnectorProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceFlowConfigTypeDef(TypedDict):
+    connectorType: ConnectorTypeType,  # (1)
+    sourceConnectorProperties: SourceConnectorPropertiesTypeDef,  # (2)
+    apiVersion: NotRequired[str],
+    connectorProfileName: NotRequired[str],
+    incrementalPullConfig: NotRequired[IncrementalPullConfigTypeDef],  # (3)
+```
 
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `sourceConnectorProperties`:
-  [SourceConnectorPropertiesTypeDef](./type_defs.md#sourceconnectorpropertiestypedef)
-
-Optional fields:
-
-- `apiVersion`: `str`
-- `connectorProfileName`: `str`
-- `incrementalPullConfig`:
-  [IncrementalPullConfigTypeDef](./type_defs.md#incrementalpullconfigtypedef)
-
-<a id="startflowrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectorTypeType](./literals.md#connectortypetype) 
+2. See [:material-code-braces: SourceConnectorPropertiesTypeDef](./type_defs.md#sourceconnectorpropertiestypedef) 
+3. See [:material-code-braces: IncrementalPullConfigTypeDef](./type_defs.md#incrementalpullconfigtypedef) 
 ## StartFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import StartFlowRequestRequestTypeDef
+
+def get_value() -> StartFlowRequestRequestTypeDef:
+    return {
+        "flowName": ...,
+    }
 ```
 
-Required fields:
-
-- `flowName`: `str`
-
-<a id="startflowresponsetypedef"></a>
+```python title="Definition"
+class StartFlowRequestRequestTypeDef(TypedDict):
+    flowName: str,
+```
 
 ## StartFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import StartFlowResponseTypeDef
+
+def get_value() -> StartFlowResponseTypeDef:
+    return {
+        "flowArn": ...,
+        "flowStatus": ...,
+        "executionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartFlowResponseTypeDef(TypedDict):
+    flowArn: str,
+    flowStatus: FlowStatusType,  # (1)
+    executionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `flowArn`: `str`
-- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
-- `executionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopflowrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FlowStatusType](./literals.md#flowstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import StopFlowRequestRequestTypeDef
+
+def get_value() -> StopFlowRequestRequestTypeDef:
+    return {
+        "flowName": ...,
+    }
 ```
 
-Required fields:
-
-- `flowName`: `str`
-
-<a id="stopflowresponsetypedef"></a>
+```python title="Definition"
+class StopFlowRequestRequestTypeDef(TypedDict):
+    flowName: str,
+```
 
 ## StopFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import StopFlowResponseTypeDef
+
+def get_value() -> StopFlowResponseTypeDef:
+    return {
+        "flowArn": ...,
+        "flowStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopFlowResponseTypeDef(TypedDict):
+    flowArn: str,
+    flowStatus: FlowStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `flowArn`: `str`
-- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="successresponsehandlingconfigtypedef"></a>
-
+1. See [:material-code-brackets: FlowStatusType](./literals.md#flowstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SuccessResponseHandlingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SuccessResponseHandlingConfigTypeDef
+
+def get_value() -> SuccessResponseHandlingConfigTypeDef:
+    return {
+        "bucketPrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucketPrefix`: `str`
-- `bucketName`: `str`
-
-<a id="supportedfieldtypedetailstypedef"></a>
+```python title="Definition"
+class SuccessResponseHandlingConfigTypeDef(TypedDict):
+    bucketPrefix: NotRequired[str],
+    bucketName: NotRequired[str],
+```
 
 ## SupportedFieldTypeDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import SupportedFieldTypeDetailsTypeDef
+
+def get_value() -> SupportedFieldTypeDetailsTypeDef:
+    return {
+        "v1": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SupportedFieldTypeDetailsTypeDef(TypedDict):
+    v1: FieldTypeDetailsTypeDef,  # (1)
+```
 
-- `v1`: [FieldTypeDetailsTypeDef](./type_defs.md#fieldtypedetailstypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FieldTypeDetailsTypeDef](./type_defs.md#fieldtypedetailstypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="tasktypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import TaskTypeDef
+
+def get_value() -> TaskTypeDef:
+    return {
+        "sourceFields": ...,
+        "taskType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TaskTypeDef(TypedDict):
+    sourceFields: Sequence[str],
+    taskType: TaskTypeType,  # (2)
+    connectorOperator: NotRequired[ConnectorOperatorTypeDef],  # (1)
+    destinationField: NotRequired[str],
+    taskProperties: NotRequired[Mapping[OperatorPropertiesKeysType, str]],  # (3)
+```
 
-- `sourceFields`: `Sequence`\[`str`\]
-- `taskType`: [TaskTypeType](./literals.md#tasktypetype)
-
-Optional fields:
-
-- `connectorOperator`:
-  [ConnectorOperatorTypeDef](./type_defs.md#connectoroperatortypedef)
-- `destinationField`: `str`
-- `taskProperties`:
-  `Mapping`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
-  `str`\]
-
-<a id="trendmicroconnectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-braces: ConnectorOperatorTypeDef](./type_defs.md#connectoroperatortypedef) 
+2. See [:material-code-brackets: TaskTypeType](./literals.md#tasktypetype) 
+3. See [:material-code-brackets: OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype) 
 ## TrendmicroConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import TrendmicroConnectorProfileCredentialsTypeDef
+
+def get_value() -> TrendmicroConnectorProfileCredentialsTypeDef:
+    return {
+        "apiSecretKey": ...,
+    }
 ```
 
-Required fields:
-
-- `apiSecretKey`: `str`
-
-<a id="trendmicrosourcepropertiestypedef"></a>
+```python title="Definition"
+class TrendmicroConnectorProfileCredentialsTypeDef(TypedDict):
+    apiSecretKey: str,
+```
 
 ## TrendmicroSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import TrendmicroSourcePropertiesTypeDef
+
+def get_value() -> TrendmicroSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-<a id="triggerconfigtypedef"></a>
+```python title="Definition"
+class TrendmicroSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
 ## TriggerConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import TriggerConfigTypeDef
+
+def get_value() -> TriggerConfigTypeDef:
+    return {
+        "triggerType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TriggerConfigTypeDef(TypedDict):
+    triggerType: TriggerTypeType,  # (1)
+    triggerProperties: NotRequired[TriggerPropertiesTypeDef],  # (2)
+```
 
-- `triggerType`: [TriggerTypeType](./literals.md#triggertypetype)
-
-Optional fields:
-
-- `triggerProperties`:
-  [TriggerPropertiesTypeDef](./type_defs.md#triggerpropertiestypedef)
-
-<a id="triggerpropertiestypedef"></a>
-
+1. See [:material-code-brackets: TriggerTypeType](./literals.md#triggertypetype) 
+2. See [:material-code-braces: TriggerPropertiesTypeDef](./type_defs.md#triggerpropertiestypedef) 
 ## TriggerPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import TriggerPropertiesTypeDef
+
+def get_value() -> TriggerPropertiesTypeDef:
+    return {
+        "Scheduled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TriggerPropertiesTypeDef(TypedDict):
+    Scheduled: NotRequired[ScheduledTriggerPropertiesTypeDef],  # (1)
+```
 
-- `Scheduled`:
-  [ScheduledTriggerPropertiesTypeDef](./type_defs.md#scheduledtriggerpropertiestypedef)
-
-<a id="unregisterconnectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ScheduledTriggerPropertiesTypeDef](./type_defs.md#scheduledtriggerpropertiestypedef) 
 ## UnregisterConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import UnregisterConnectorRequestRequestTypeDef
+
+def get_value() -> UnregisterConnectorRequestRequestTypeDef:
+    return {
+        "connectorLabel": ...,
+    }
 ```
 
-Required fields:
-
-- `connectorLabel`: `str`
-
-Optional fields:
-
-- `forceDelete`: `bool`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class UnregisterConnectorRequestRequestTypeDef(TypedDict):
+    connectorLabel: str,
+    forceDelete: NotRequired[bool],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateconnectorprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateConnectorProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import UpdateConnectorProfileRequestRequestTypeDef
+
+def get_value() -> UpdateConnectorProfileRequestRequestTypeDef:
+    return {
+        "connectorProfileName": ...,
+        "connectionMode": ...,
+        "connectorProfileConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectorProfileRequestRequestTypeDef(TypedDict):
+    connectorProfileName: str,
+    connectionMode: ConnectionModeType,  # (1)
+    connectorProfileConfig: ConnectorProfileConfigTypeDef,  # (2)
+```
 
-- `connectorProfileName`: `str`
-- `connectionMode`: [ConnectionModeType](./literals.md#connectionmodetype)
-- `connectorProfileConfig`:
-  [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
-
-<a id="updateconnectorprofileresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectionModeType](./literals.md#connectionmodetype) 
+2. See [:material-code-braces: ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef) 
 ## UpdateConnectorProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import UpdateConnectorProfileResponseTypeDef
+
+def get_value() -> UpdateConnectorProfileResponseTypeDef:
+    return {
+        "connectorProfileArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectorProfileResponseTypeDef(TypedDict):
+    connectorProfileArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `connectorProfileArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import UpdateFlowRequestRequestTypeDef
+
+def get_value() -> UpdateFlowRequestRequestTypeDef:
+    return {
+        "flowName": ...,
+        "triggerConfig": ...,
+        "sourceFlowConfig": ...,
+        "destinationFlowConfigList": ...,
+        "tasks": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFlowRequestRequestTypeDef(TypedDict):
+    flowName: str,
+    triggerConfig: TriggerConfigTypeDef,  # (1)
+    sourceFlowConfig: SourceFlowConfigTypeDef,  # (2)
+    destinationFlowConfigList: Sequence[DestinationFlowConfigTypeDef],  # (3)
+    tasks: Sequence[TaskTypeDef],  # (4)
+    description: NotRequired[str],
+```
 
-- `flowName`: `str`
-- `triggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
-- `sourceFlowConfig`:
-  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
-- `destinationFlowConfigList`:
-  `Sequence`\[[DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef)\]
-- `tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="updateflowresponsetypedef"></a>
-
+1. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
+2. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
+3. See [:material-code-braces: DestinationFlowConfigTypeDef](./type_defs.md#destinationflowconfigtypedef) 
+4. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
 ## UpdateFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import UpdateFlowResponseTypeDef
+
+def get_value() -> UpdateFlowResponseTypeDef:
+    return {
+        "flowStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFlowResponseTypeDef(TypedDict):
+    flowStatus: FlowStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="upsolverdestinationpropertiestypedef"></a>
-
+1. See [:material-code-brackets: FlowStatusType](./literals.md#flowstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpsolverDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import UpsolverDestinationPropertiesTypeDef
+
+def get_value() -> UpsolverDestinationPropertiesTypeDef:
+    return {
+        "bucketName": ...,
+        "s3OutputFormatConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpsolverDestinationPropertiesTypeDef(TypedDict):
+    bucketName: str,
+    s3OutputFormatConfig: UpsolverS3OutputFormatConfigTypeDef,  # (1)
+    bucketPrefix: NotRequired[str],
+```
 
-- `bucketName`: `str`
-- `s3OutputFormatConfig`:
-  [UpsolverS3OutputFormatConfigTypeDef](./type_defs.md#upsolvers3outputformatconfigtypedef)
-
-Optional fields:
-
-- `bucketPrefix`: `str`
-
-<a id="upsolvers3outputformatconfigtypedef"></a>
-
+1. See [:material-code-braces: UpsolverS3OutputFormatConfigTypeDef](./type_defs.md#upsolvers3outputformatconfigtypedef) 
 ## UpsolverS3OutputFormatConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import UpsolverS3OutputFormatConfigTypeDef
+
+def get_value() -> UpsolverS3OutputFormatConfigTypeDef:
+    return {
+        "prefixConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpsolverS3OutputFormatConfigTypeDef(TypedDict):
+    prefixConfig: PrefixConfigTypeDef,  # (2)
+    fileType: NotRequired[FileTypeType],  # (1)
+    aggregationConfig: NotRequired[AggregationConfigTypeDef],  # (3)
+```
 
-- `prefixConfig`: [PrefixConfigTypeDef](./type_defs.md#prefixconfigtypedef)
-
-Optional fields:
-
-- `fileType`: [FileTypeType](./literals.md#filetypetype)
-- `aggregationConfig`:
-  [AggregationConfigTypeDef](./type_defs.md#aggregationconfigtypedef)
-
-<a id="veevaconnectorprofilecredentialstypedef"></a>
-
+1. See [:material-code-brackets: FileTypeType](./literals.md#filetypetype) 
+2. See [:material-code-braces: PrefixConfigTypeDef](./type_defs.md#prefixconfigtypedef) 
+3. See [:material-code-braces: AggregationConfigTypeDef](./type_defs.md#aggregationconfigtypedef) 
 ## VeevaConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import VeevaConnectorProfileCredentialsTypeDef
+
+def get_value() -> VeevaConnectorProfileCredentialsTypeDef:
+    return {
+        "username": ...,
+        "password": ...,
+    }
 ```
 
-Required fields:
-
-- `username`: `str`
-- `password`: `str`
-
-<a id="veevaconnectorprofilepropertiestypedef"></a>
+```python title="Definition"
+class VeevaConnectorProfileCredentialsTypeDef(TypedDict):
+    username: str,
+    password: str,
+```
 
 ## VeevaConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import VeevaConnectorProfilePropertiesTypeDef
+
+def get_value() -> VeevaConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceUrl`: `str`
-
-<a id="veevasourcepropertiestypedef"></a>
+```python title="Definition"
+class VeevaConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: str,
+```
 
 ## VeevaSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import VeevaSourcePropertiesTypeDef
+
+def get_value() -> VeevaSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
-
-- `object`: `str`
-
-Optional fields:
-
-- `documentType`: `str`
-- `includeSourceFiles`: `bool`
-- `includeRenditions`: `bool`
-- `includeAllVersions`: `bool`
-
-<a id="zendeskconnectorprofilecredentialstypedef"></a>
+```python title="Definition"
+class VeevaSourcePropertiesTypeDef(TypedDict):
+    object: str,
+    documentType: NotRequired[str],
+    includeSourceFiles: NotRequired[bool],
+    includeRenditions: NotRequired[bool],
+    includeAllVersions: NotRequired[bool],
+```
 
 ## ZendeskConnectorProfileCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ZendeskConnectorProfileCredentialsTypeDef
+
+def get_value() -> ZendeskConnectorProfileCredentialsTypeDef:
+    return {
+        "clientId": ...,
+        "clientSecret": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ZendeskConnectorProfileCredentialsTypeDef(TypedDict):
+    clientId: str,
+    clientSecret: str,
+    accessToken: NotRequired[str],
+    oAuthRequest: NotRequired[ConnectorOAuthRequestTypeDef],  # (1)
+```
 
-- `clientId`: `str`
-- `clientSecret`: `str`
-
-Optional fields:
-
-- `accessToken`: `str`
-- `oAuthRequest`:
-  [ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef)
-
-<a id="zendeskconnectorprofilepropertiestypedef"></a>
-
+1. See [:material-code-braces: ConnectorOAuthRequestTypeDef](./type_defs.md#connectoroauthrequesttypedef) 
 ## ZendeskConnectorProfilePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ZendeskConnectorProfilePropertiesTypeDef
+
+def get_value() -> ZendeskConnectorProfilePropertiesTypeDef:
+    return {
+        "instanceUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceUrl`: `str`
-
-<a id="zendeskdestinationpropertiestypedef"></a>
+```python title="Definition"
+class ZendeskConnectorProfilePropertiesTypeDef(TypedDict):
+    instanceUrl: str,
+```
 
 ## ZendeskDestinationPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ZendeskDestinationPropertiesTypeDef
+
+def get_value() -> ZendeskDestinationPropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ZendeskDestinationPropertiesTypeDef(TypedDict):
+    object: str,
+    idFieldNames: NotRequired[Sequence[str]],
+    errorHandlingConfig: NotRequired[ErrorHandlingConfigTypeDef],  # (1)
+    writeOperationType: NotRequired[WriteOperationTypeType],  # (2)
+```
 
-- `object`: `str`
-
-Optional fields:
-
-- `idFieldNames`: `Sequence`\[`str`\]
-- `errorHandlingConfig`:
-  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
-- `writeOperationType`:
-  [WriteOperationTypeType](./literals.md#writeoperationtypetype)
-
-<a id="zendeskmetadatatypedef"></a>
-
+1. See [:material-code-braces: ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef) 
+2. See [:material-code-brackets: WriteOperationTypeType](./literals.md#writeoperationtypetype) 
 ## ZendeskMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ZendeskMetadataTypeDef
+
+def get_value() -> ZendeskMetadataTypeDef:
+    return {
+        "oAuthScopes": ...,
+    }
 ```
 
-Optional fields:
-
-- `oAuthScopes`: `List`\[`str`\]
-
-<a id="zendesksourcepropertiestypedef"></a>
+```python title="Definition"
+class ZendeskMetadataTypeDef(TypedDict):
+    oAuthScopes: NotRequired[List[str]],
+```
 
 ## ZendeskSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.type_defs import ZendeskSourcePropertiesTypeDef
+
+def get_value() -> ZendeskSourcePropertiesTypeDef:
+    return {
+        "object": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ZendeskSourcePropertiesTypeDef(TypedDict):
+    object: str,
+```
 
-- `object`: `str`

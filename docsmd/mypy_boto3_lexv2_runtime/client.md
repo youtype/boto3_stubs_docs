@@ -1,36 +1,18 @@
-<a id="lexruntimev2client-for-boto3-lexruntimev2-module"></a>
-
-# LexRuntimeV2Client for boto3 LexRuntimeV2 module
+# LexRuntimeV2Client
 
 > [Index](../README.md) > [LexRuntimeV2](./README.md) > LexRuntimeV2Client
 
-Auto-generated documentation for
-[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
-type annotations stubs module
-[mypy-boto3-lexv2-runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
+!!! note ""
 
-- [LexRuntimeV2Client for boto3 LexRuntimeV2 module](#lexruntimev2client-for-boto3-lexruntimev2-module)
-  - [LexRuntimeV2Client](#lexruntimev2client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [delete_session](#delete_session)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_session](#get_session)
-    - [put_session](#put_session)
-    - [recognize_text](#recognize_text)
-    - [recognize_utterance](#recognize_utterance)
-
-<a id="lexruntimev2client"></a>
+    Auto-generated documentation for [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
+    type annotations stubs module [mypy-boto3-lexv2-runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
 ## LexRuntimeV2Client
 
-Type annotations for `boto3.client("lexv2-runtime")`
+Type annotations and code completion for `#!python boto3.client("lexv2-runtime")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_lexv2_runtime.client import LexRuntimeV2Client
 
@@ -38,219 +20,270 @@ def get_lexv2-runtime_client() -> LexRuntimeV2Client:
     return Session().client("lexv2-runtime")
 ```
 
-Boto3 documentation:
-[LexRuntimeV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("lexv2-runtime").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("lexv2-runtime")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BadGatewayException,
+    client.ClientError,
+    client.ConflictException,
+    client.DependencyFailedException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_lexv2_runtime.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BadGatewayException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.DependencyFailedException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-LexRuntimeV2Client exceptions.
-
-Type annotations for `boto3.client("lexv2-runtime").exceptions` method.
-
-Boto3 documentation:
-[LexRuntimeV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("lexv2-runtime").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-runtime").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.can_paginate)
 
-Boto3 documentation:
-[LexRuntimeV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_session"></a>
-
-### delete_session
+### delete\_session
 
 Removes session information for a specified bot, alias, and user ID.
 
-Type annotations for `boto3.client("lexv2-runtime").delete_session` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-runtime").delete_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.delete_session)
 
-Boto3 documentation:
-[LexRuntimeV2.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.delete_session)
+```python title="Method definition"
+def delete_session(
+    self,
+    *,
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+) -> DeleteSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSessionRequestRequestTypeDef](./type_defs.md#deletesessionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botAliasId`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `sessionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSessionRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botAliasId": ...,
+    "localeId": ...,
+    "sessionId": ...,
+}
 
-Returns
-[DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
+parent.delete_session(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteSessionRequestRequestTypeDef](./type_defs.md#deletesessionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("lexv2-runtime").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-runtime").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.generate_presigned_url)
 
-Boto3 documentation:
-[LexRuntimeV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_session"></a>
-
-### get_session
+### get\_session
 
 Returns session information for a specified bot, alias, and user.
 
-Type annotations for `boto3.client("lexv2-runtime").get_session` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-runtime").get_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.get_session)
 
-Boto3 documentation:
-[LexRuntimeV2.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.get_session)
+```python title="Method definition"
+def get_session(
+    self,
+    *,
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+) -> GetSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef).
+1. See [:material-code-braces: GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botAliasId`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `sessionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSessionRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botAliasId": ...,
+    "localeId": ...,
+    "sessionId": ...,
+}
 
-Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
+parent.get_session(**kwargs)
+```
 
-<a id="put\_session"></a>
+1. See [:material-code-braces: GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef) 
 
-### put_session
+### put\_session
 
-Creates a new session or modifies an existing session with an Amazon Lex V2
-bot.
+Creates a new session or modifies an existing session with an Amazon Lex V2 bot.
 
-Type annotations for `boto3.client("lexv2-runtime").put_session` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-runtime").put_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.put_session)
 
-Boto3 documentation:
-[LexRuntimeV2.Client.put_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.put_session)
+```python title="Method definition"
+def put_session(
+    self,
+    *,
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+    sessionState: SessionStateTypeDef,  # (1)
+    messages: Sequence[MessageTypeDef] = ...,  # (2)
+    requestAttributes: Mapping[str, str] = ...,
+    responseContentType: str = ...,
+) -> PutSessionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutSessionRequestRequestTypeDef](./type_defs.md#putsessionrequestrequesttypedef).
+1. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
+2. See [:material-code-braces: MessageTypeDef](./type_defs.md#messagetypedef) 
+3. See [:material-code-braces: PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botAliasId`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `sessionId`: `str` *(required)*
-- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
-  *(required)*
-- `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
-- `requestAttributes`: `Mapping`\[`str`, `str`\]
-- `responseContentType`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutSessionRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botAliasId": ...,
+    "localeId": ...,
+    "sessionId": ...,
+    "sessionState": ...,
+}
 
-Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).
+parent.put_session(**kwargs)
+```
 
-<a id="recognize\_text"></a>
+1. See [:material-code-braces: PutSessionRequestRequestTypeDef](./type_defs.md#putsessionrequestrequesttypedef) 
 
-### recognize_text
-
-Sends user input to Amazon Lex V2.
-
-Type annotations for `boto3.client("lexv2-runtime").recognize_text` method.
-
-Boto3 documentation:
-[LexRuntimeV2.Client.recognize_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_text)
-
-Arguments mapping described in
-[RecognizeTextRequestRequestTypeDef](./type_defs.md#recognizetextrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `botId`: `str` *(required)*
-- `botAliasId`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `sessionId`: `str` *(required)*
-- `text`: `str` *(required)*
-- `sessionState`: [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
-- `requestAttributes`: `Mapping`\[`str`, `str`\]
-
-Returns
-[RecognizeTextResponseTypeDef](./type_defs.md#recognizetextresponsetypedef).
-
-<a id="recognize\_utterance"></a>
-
-### recognize_utterance
+### recognize\_text
 
 Sends user input to Amazon Lex V2.
 
-Type annotations for `boto3.client("lexv2-runtime").recognize_utterance`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-runtime").recognize_text` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_text)
 
-Boto3 documentation:
-[LexRuntimeV2.Client.recognize_utterance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_utterance)
+```python title="Method definition"
+def recognize_text(
+    self,
+    *,
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+    text: str,
+    sessionState: SessionStateTypeDef = ...,  # (1)
+    requestAttributes: Mapping[str, str] = ...,
+) -> RecognizeTextResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RecognizeUtteranceRequestRequestTypeDef](./type_defs.md#recognizeutterancerequestrequesttypedef).
+1. See [:material-code-braces: SessionStateTypeDef](./type_defs.md#sessionstatetypedef) 
+2. See [:material-code-braces: RecognizeTextResponseTypeDef](./type_defs.md#recognizetextresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botAliasId`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `sessionId`: `str` *(required)*
-- `requestContentType`: `str` *(required)*
-- `sessionState`: `str`
-- `requestAttributes`: `str`
-- `responseContentType`: `str`
-- `inputStream`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+```python title="Usage example with kwargs"
+kwargs: RecognizeTextRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botAliasId": ...,
+    "localeId": ...,
+    "sessionId": ...,
+    "text": ...,
+}
 
-Returns
-[RecognizeUtteranceResponseTypeDef](./type_defs.md#recognizeutteranceresponsetypedef).
+parent.recognize_text(**kwargs)
+```
+
+1. See [:material-code-braces: RecognizeTextRequestRequestTypeDef](./type_defs.md#recognizetextrequestrequesttypedef) 
+
+### recognize\_utterance
+
+Sends user input to Amazon Lex V2.
+
+Type annotations and code completion for `#!python boto3.client("lexv2-runtime").recognize_utterance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.recognize_utterance)
+
+```python title="Method definition"
+def recognize_utterance(
+    self,
+    *,
+    botId: str,
+    botAliasId: str,
+    localeId: str,
+    sessionId: str,
+    requestContentType: str,
+    sessionState: str = ...,
+    requestAttributes: str = ...,
+    responseContentType: str = ...,
+    inputStream: Union[bytes, IO[bytes], StreamingBody] = ...,
+) -> RecognizeUtteranceResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: RecognizeUtteranceResponseTypeDef](./type_defs.md#recognizeutteranceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: RecognizeUtteranceRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botAliasId": ...,
+    "localeId": ...,
+    "sessionId": ...,
+    "requestContentType": ...,
+}
+
+parent.recognize_utterance(**kwargs)
+```
+
+1. See [:material-code-braces: RecognizeUtteranceRequestRequestTypeDef](./type_defs.md#recognizeutterancerequestrequesttypedef) 
+
+
+
+

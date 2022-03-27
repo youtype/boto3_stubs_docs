@@ -1,1137 +1,1494 @@
-<a id="typed-dictionaries-for-boto3-elastictranscoder-module"></a>
-
-# Typed dictionaries for boto3 ElasticTranscoder module
+# Typed dictionaries
 
 > [Index](../README.md) > [ElasticTranscoder](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
-type annotations stubs module
-[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ElasticTranscoder module](#typed-dictionaries-for-boto3-elastictranscoder-module)
-  - [ArtworkTypeDef](#artworktypedef)
-  - [AudioCodecOptionsTypeDef](#audiocodecoptionstypedef)
-  - [AudioParametersTypeDef](#audioparameterstypedef)
-  - [CancelJobRequestRequestTypeDef](#canceljobrequestrequesttypedef)
-  - [CaptionFormatTypeDef](#captionformattypedef)
-  - [CaptionSourceTypeDef](#captionsourcetypedef)
-  - [CaptionsTypeDef](#captionstypedef)
-  - [ClipTypeDef](#cliptypedef)
-  - [CreateJobOutputTypeDef](#createjoboutputtypedef)
-  - [CreateJobPlaylistTypeDef](#createjobplaylisttypedef)
-  - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
-  - [CreateJobResponseTypeDef](#createjobresponsetypedef)
-  - [CreatePipelineRequestRequestTypeDef](#createpipelinerequestrequesttypedef)
-  - [CreatePipelineResponseTypeDef](#createpipelineresponsetypedef)
-  - [CreatePresetRequestRequestTypeDef](#createpresetrequestrequesttypedef)
-  - [CreatePresetResponseTypeDef](#createpresetresponsetypedef)
-  - [DeletePipelineRequestRequestTypeDef](#deletepipelinerequestrequesttypedef)
-  - [DeletePresetRequestRequestTypeDef](#deletepresetrequestrequesttypedef)
-  - [DetectedPropertiesTypeDef](#detectedpropertiestypedef)
-  - [EncryptionTypeDef](#encryptiontypedef)
-  - [HlsContentProtectionTypeDef](#hlscontentprotectiontypedef)
-  - [InputCaptionsTypeDef](#inputcaptionstypedef)
-  - [JobAlbumArtTypeDef](#jobalbumarttypedef)
-  - [JobInputTypeDef](#jobinputtypedef)
-  - [JobOutputTypeDef](#joboutputtypedef)
-  - [JobTypeDef](#jobtypedef)
-  - [JobWatermarkTypeDef](#jobwatermarktypedef)
-  - [ListJobsByPipelineRequestRequestTypeDef](#listjobsbypipelinerequestrequesttypedef)
-  - [ListJobsByPipelineResponseTypeDef](#listjobsbypipelineresponsetypedef)
-  - [ListJobsByStatusRequestRequestTypeDef](#listjobsbystatusrequestrequesttypedef)
-  - [ListJobsByStatusResponseTypeDef](#listjobsbystatusresponsetypedef)
-  - [ListPipelinesRequestRequestTypeDef](#listpipelinesrequestrequesttypedef)
-  - [ListPipelinesResponseTypeDef](#listpipelinesresponsetypedef)
-  - [ListPresetsRequestRequestTypeDef](#listpresetsrequestrequesttypedef)
-  - [ListPresetsResponseTypeDef](#listpresetsresponsetypedef)
-  - [NotificationsTypeDef](#notificationstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PermissionTypeDef](#permissiontypedef)
-  - [PipelineOutputConfigTypeDef](#pipelineoutputconfigtypedef)
-  - [PipelineTypeDef](#pipelinetypedef)
-  - [PlayReadyDrmTypeDef](#playreadydrmtypedef)
-  - [PlaylistTypeDef](#playlisttypedef)
-  - [PresetTypeDef](#presettypedef)
-  - [PresetWatermarkTypeDef](#presetwatermarktypedef)
-  - [ReadJobRequestRequestTypeDef](#readjobrequestrequesttypedef)
-  - [ReadJobResponseTypeDef](#readjobresponsetypedef)
-  - [ReadPipelineRequestRequestTypeDef](#readpipelinerequestrequesttypedef)
-  - [ReadPipelineResponseTypeDef](#readpipelineresponsetypedef)
-  - [ReadPresetRequestRequestTypeDef](#readpresetrequestrequesttypedef)
-  - [ReadPresetResponseTypeDef](#readpresetresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TestRoleRequestRequestTypeDef](#testrolerequestrequesttypedef)
-  - [TestRoleResponseTypeDef](#testroleresponsetypedef)
-  - [ThumbnailsTypeDef](#thumbnailstypedef)
-  - [TimeSpanTypeDef](#timespantypedef)
-  - [TimingTypeDef](#timingtypedef)
-  - [UpdatePipelineNotificationsRequestRequestTypeDef](#updatepipelinenotificationsrequestrequesttypedef)
-  - [UpdatePipelineNotificationsResponseTypeDef](#updatepipelinenotificationsresponsetypedef)
-  - [UpdatePipelineRequestRequestTypeDef](#updatepipelinerequestrequesttypedef)
-  - [UpdatePipelineResponseTypeDef](#updatepipelineresponsetypedef)
-  - [UpdatePipelineStatusRequestRequestTypeDef](#updatepipelinestatusrequestrequesttypedef)
-  - [UpdatePipelineStatusResponseTypeDef](#updatepipelinestatusresponsetypedef)
-  - [VideoParametersTypeDef](#videoparameterstypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-  - [WarningTypeDef](#warningtypedef)
-
-<a id="artworktypedef"></a>
+    Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+    type annotations stubs module [mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 ## ArtworkTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ArtworkTypeDef
+
+def get_value() -> ArtworkTypeDef:
+    return {
+        "InputKey": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ArtworkTypeDef(TypedDict):
+    InputKey: NotRequired[str],
+    MaxWidth: NotRequired[str],
+    MaxHeight: NotRequired[str],
+    SizingPolicy: NotRequired[str],
+    PaddingPolicy: NotRequired[str],
+    AlbumArtFormat: NotRequired[str],
+    Encryption: NotRequired[EncryptionTypeDef],  # (1)
+```
 
-- `InputKey`: `str`
-- `MaxWidth`: `str`
-- `MaxHeight`: `str`
-- `SizingPolicy`: `str`
-- `PaddingPolicy`: `str`
-- `AlbumArtFormat`: `str`
-- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-
-<a id="audiocodecoptionstypedef"></a>
-
+1. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
 ## AudioCodecOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import AudioCodecOptionsTypeDef
+
+def get_value() -> AudioCodecOptionsTypeDef:
+    return {
+        "Profile": ...,
+    }
 ```
 
-Optional fields:
-
-- `Profile`: `str`
-- `BitDepth`: `str`
-- `BitOrder`: `str`
-- `Signed`: `str`
-
-<a id="audioparameterstypedef"></a>
+```python title="Definition"
+class AudioCodecOptionsTypeDef(TypedDict):
+    Profile: NotRequired[str],
+    BitDepth: NotRequired[str],
+    BitOrder: NotRequired[str],
+    Signed: NotRequired[str],
+```
 
 ## AudioParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import AudioParametersTypeDef
+
+def get_value() -> AudioParametersTypeDef:
+    return {
+        "Codec": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AudioParametersTypeDef(TypedDict):
+    Codec: NotRequired[str],
+    SampleRate: NotRequired[str],
+    BitRate: NotRequired[str],
+    Channels: NotRequired[str],
+    AudioPackingMode: NotRequired[str],
+    CodecOptions: NotRequired[AudioCodecOptionsTypeDef],  # (1)
+```
 
-- `Codec`: `str`
-- `SampleRate`: `str`
-- `BitRate`: `str`
-- `Channels`: `str`
-- `AudioPackingMode`: `str`
-- `CodecOptions`:
-  [AudioCodecOptionsTypeDef](./type_defs.md#audiocodecoptionstypedef)
-
-<a id="canceljobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AudioCodecOptionsTypeDef](./type_defs.md#audiocodecoptionstypedef) 
 ## CancelJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CancelJobRequestRequestTypeDef
+
+def get_value() -> CancelJobRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="captionformattypedef"></a>
+```python title="Definition"
+class CancelJobRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## CaptionFormatTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CaptionFormatTypeDef
+
+def get_value() -> CaptionFormatTypeDef:
+    return {
+        "Format": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CaptionFormatTypeDef(TypedDict):
+    Format: NotRequired[str],
+    Pattern: NotRequired[str],
+    Encryption: NotRequired[EncryptionTypeDef],  # (1)
+```
 
-- `Format`: `str`
-- `Pattern`: `str`
-- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-
-<a id="captionsourcetypedef"></a>
-
+1. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
 ## CaptionSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CaptionSourceTypeDef
+
+def get_value() -> CaptionSourceTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CaptionSourceTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Language: NotRequired[str],
+    TimeOffset: NotRequired[str],
+    Label: NotRequired[str],
+    Encryption: NotRequired[EncryptionTypeDef],  # (1)
+```
 
-- `Key`: `str`
-- `Language`: `str`
-- `TimeOffset`: `str`
-- `Label`: `str`
-- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-
-<a id="captionstypedef"></a>
-
+1. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
 ## CaptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CaptionsTypeDef
+
+def get_value() -> CaptionsTypeDef:
+    return {
+        "MergePolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CaptionsTypeDef(TypedDict):
+    MergePolicy: NotRequired[str],
+    CaptionSources: NotRequired[Sequence[CaptionSourceTypeDef]],  # (1)
+    CaptionFormats: NotRequired[Sequence[CaptionFormatTypeDef]],  # (2)
+```
 
-- `MergePolicy`: `str`
-- `CaptionSources`:
-  `Sequence`\[[CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef)\]
-- `CaptionFormats`:
-  `Sequence`\[[CaptionFormatTypeDef](./type_defs.md#captionformattypedef)\]
-
-<a id="cliptypedef"></a>
-
+1. See [:material-code-braces: CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef) 
+2. See [:material-code-braces: CaptionFormatTypeDef](./type_defs.md#captionformattypedef) 
 ## ClipTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ClipTypeDef
+
+def get_value() -> ClipTypeDef:
+    return {
+        "TimeSpan": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClipTypeDef(TypedDict):
+    TimeSpan: NotRequired[TimeSpanTypeDef],  # (1)
+```
 
-- `TimeSpan`: [TimeSpanTypeDef](./type_defs.md#timespantypedef)
-
-<a id="createjoboutputtypedef"></a>
-
+1. See [:material-code-braces: TimeSpanTypeDef](./type_defs.md#timespantypedef) 
 ## CreateJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CreateJobOutputTypeDef
+
+def get_value() -> CreateJobOutputTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateJobOutputTypeDef(TypedDict):
+    Key: NotRequired[str],
+    ThumbnailPattern: NotRequired[str],
+    ThumbnailEncryption: NotRequired[EncryptionTypeDef],  # (1)
+    Rotate: NotRequired[str],
+    PresetId: NotRequired[str],
+    SegmentDuration: NotRequired[str],
+    Watermarks: NotRequired[Sequence[JobWatermarkTypeDef]],  # (2)
+    AlbumArt: NotRequired[JobAlbumArtTypeDef],  # (3)
+    Composition: NotRequired[Sequence[ClipTypeDef]],  # (4)
+    Captions: NotRequired[CaptionsTypeDef],  # (5)
+    Encryption: NotRequired[EncryptionTypeDef],  # (1)
+```
 
-- `Key`: `str`
-- `ThumbnailPattern`: `str`
-- `ThumbnailEncryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `Rotate`: `str`
-- `PresetId`: `str`
-- `SegmentDuration`: `str`
-- `Watermarks`:
-  `Sequence`\[[JobWatermarkTypeDef](./type_defs.md#jobwatermarktypedef)\]
-- `AlbumArt`: [JobAlbumArtTypeDef](./type_defs.md#jobalbumarttypedef)
-- `Composition`: `Sequence`\[[ClipTypeDef](./type_defs.md#cliptypedef)\]
-- `Captions`: [CaptionsTypeDef](./type_defs.md#captionstypedef)
-- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-
-<a id="createjobplaylisttypedef"></a>
-
+1. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
+2. See [:material-code-braces: JobWatermarkTypeDef](./type_defs.md#jobwatermarktypedef) 
+3. See [:material-code-braces: JobAlbumArtTypeDef](./type_defs.md#jobalbumarttypedef) 
+4. See [:material-code-braces: ClipTypeDef](./type_defs.md#cliptypedef) 
+5. See [:material-code-braces: CaptionsTypeDef](./type_defs.md#captionstypedef) 
+6. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
 ## CreateJobPlaylistTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CreateJobPlaylistTypeDef
+
+def get_value() -> CreateJobPlaylistTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateJobPlaylistTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Format: NotRequired[str],
+    OutputKeys: NotRequired[Sequence[str]],
+    HlsContentProtection: NotRequired[HlsContentProtectionTypeDef],  # (1)
+    PlayReadyDrm: NotRequired[PlayReadyDrmTypeDef],  # (2)
+```
 
-- `Name`: `str`
-- `Format`: `str`
-- `OutputKeys`: `Sequence`\[`str`\]
-- `HlsContentProtection`:
-  [HlsContentProtectionTypeDef](./type_defs.md#hlscontentprotectiontypedef)
-- `PlayReadyDrm`: [PlayReadyDrmTypeDef](./type_defs.md#playreadydrmtypedef)
-
-<a id="createjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HlsContentProtectionTypeDef](./type_defs.md#hlscontentprotectiontypedef) 
+2. See [:material-code-braces: PlayReadyDrmTypeDef](./type_defs.md#playreadydrmtypedef) 
 ## CreateJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CreateJobRequestRequestTypeDef
+
+def get_value() -> CreateJobRequestRequestTypeDef:
+    return {
+        "PipelineId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobRequestRequestTypeDef(TypedDict):
+    PipelineId: str,
+    Input: NotRequired[JobInputTypeDef],  # (1)
+    Inputs: NotRequired[Sequence[JobInputTypeDef]],  # (2)
+    Output: NotRequired[CreateJobOutputTypeDef],  # (3)
+    Outputs: NotRequired[Sequence[CreateJobOutputTypeDef]],  # (4)
+    OutputKeyPrefix: NotRequired[str],
+    Playlists: NotRequired[Sequence[CreateJobPlaylistTypeDef]],  # (5)
+    UserMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `PipelineId`: `str`
-
-Optional fields:
-
-- `Input`: [JobInputTypeDef](./type_defs.md#jobinputtypedef)
-- `Inputs`: `Sequence`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
-- `Output`: [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)
-- `Outputs`:
-  `Sequence`\[[CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)\]
-- `OutputKeyPrefix`: `str`
-- `Playlists`:
-  `Sequence`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
-- `UserMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="createjobresponsetypedef"></a>
-
+1. See [:material-code-braces: JobInputTypeDef](./type_defs.md#jobinputtypedef) 
+2. See [:material-code-braces: JobInputTypeDef](./type_defs.md#jobinputtypedef) 
+3. See [:material-code-braces: CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef) 
+4. See [:material-code-braces: CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef) 
+5. See [:material-code-braces: CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef) 
 ## CreateJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CreateJobResponseTypeDef
+
+def get_value() -> CreateJobResponseTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobResponseTypeDef(TypedDict):
+    Job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpipelinerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePipelineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CreatePipelineRequestRequestTypeDef
+
+def get_value() -> CreatePipelineRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "InputBucket": ...,
+        "Role": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePipelineRequestRequestTypeDef(TypedDict):
+    Name: str,
+    InputBucket: str,
+    Role: str,
+    OutputBucket: NotRequired[str],
+    AwsKmsKeyArn: NotRequired[str],
+    Notifications: NotRequired[NotificationsTypeDef],  # (1)
+    ContentConfig: NotRequired[PipelineOutputConfigTypeDef],  # (2)
+    ThumbnailConfig: NotRequired[PipelineOutputConfigTypeDef],  # (2)
+```
 
-- `Name`: `str`
-- `InputBucket`: `str`
-- `Role`: `str`
-
-Optional fields:
-
-- `OutputBucket`: `str`
-- `AwsKmsKeyArn`: `str`
-- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
-- `ContentConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
-- `ThumbnailConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
-
-<a id="createpipelineresponsetypedef"></a>
-
+1. See [:material-code-braces: NotificationsTypeDef](./type_defs.md#notificationstypedef) 
+2. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
+3. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
 ## CreatePipelineResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CreatePipelineResponseTypeDef
+
+def get_value() -> CreatePipelineResponseTypeDef:
+    return {
+        "Pipeline": ...,
+        "Warnings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePipelineResponseTypeDef(TypedDict):
+    Pipeline: PipelineTypeDef,  # (1)
+    Warnings: List[WarningTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
-- `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpresetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PipelineTypeDef](./type_defs.md#pipelinetypedef) 
+2. See [:material-code-braces: WarningTypeDef](./type_defs.md#warningtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePresetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CreatePresetRequestRequestTypeDef
+
+def get_value() -> CreatePresetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Container": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePresetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Container: str,
+    Description: NotRequired[str],
+    Video: NotRequired[VideoParametersTypeDef],  # (1)
+    Audio: NotRequired[AudioParametersTypeDef],  # (2)
+    Thumbnails: NotRequired[ThumbnailsTypeDef],  # (3)
+```
 
-- `Name`: `str`
-- `Container`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Video`: [VideoParametersTypeDef](./type_defs.md#videoparameterstypedef)
-- `Audio`: [AudioParametersTypeDef](./type_defs.md#audioparameterstypedef)
-- `Thumbnails`: [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
-
-<a id="createpresetresponsetypedef"></a>
-
+1. See [:material-code-braces: VideoParametersTypeDef](./type_defs.md#videoparameterstypedef) 
+2. See [:material-code-braces: AudioParametersTypeDef](./type_defs.md#audioparameterstypedef) 
+3. See [:material-code-braces: ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef) 
 ## CreatePresetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import CreatePresetResponseTypeDef
+
+def get_value() -> CreatePresetResponseTypeDef:
+    return {
+        "Preset": ...,
+        "Warning": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePresetResponseTypeDef(TypedDict):
+    Preset: PresetTypeDef,  # (1)
+    Warning: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
-- `Warning`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletepipelinerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PresetTypeDef](./type_defs.md#presettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeletePipelineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import DeletePipelineRequestRequestTypeDef
+
+def get_value() -> DeletePipelineRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletepresetrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePipelineRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeletePresetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import DeletePresetRequestRequestTypeDef
+
+def get_value() -> DeletePresetRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="detectedpropertiestypedef"></a>
+```python title="Definition"
+class DeletePresetRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DetectedPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import DetectedPropertiesTypeDef
+
+def get_value() -> DetectedPropertiesTypeDef:
+    return {
+        "Width": ...,
+    }
 ```
 
-Optional fields:
-
-- `Width`: `int`
-- `Height`: `int`
-- `FrameRate`: `str`
-- `FileSize`: `int`
-- `DurationMillis`: `int`
-
-<a id="encryptiontypedef"></a>
+```python title="Definition"
+class DetectedPropertiesTypeDef(TypedDict):
+    Width: NotRequired[int],
+    Height: NotRequired[int],
+    FrameRate: NotRequired[str],
+    FileSize: NotRequired[int],
+    DurationMillis: NotRequired[int],
+```
 
 ## EncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import EncryptionTypeDef
+
+def get_value() -> EncryptionTypeDef:
+    return {
+        "Mode": ...,
+    }
 ```
 
-Optional fields:
-
-- `Mode`: `str`
-- `Key`: `str`
-- `KeyMd5`: `str`
-- `InitializationVector`: `str`
-
-<a id="hlscontentprotectiontypedef"></a>
+```python title="Definition"
+class EncryptionTypeDef(TypedDict):
+    Mode: NotRequired[str],
+    Key: NotRequired[str],
+    KeyMd5: NotRequired[str],
+    InitializationVector: NotRequired[str],
+```
 
 ## HlsContentProtectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import HlsContentProtectionTypeDef
+
+def get_value() -> HlsContentProtectionTypeDef:
+    return {
+        "Method": ...,
+    }
 ```
 
-Optional fields:
-
-- `Method`: `str`
-- `Key`: `str`
-- `KeyMd5`: `str`
-- `InitializationVector`: `str`
-- `LicenseAcquisitionUrl`: `str`
-- `KeyStoragePolicy`: `str`
-
-<a id="inputcaptionstypedef"></a>
+```python title="Definition"
+class HlsContentProtectionTypeDef(TypedDict):
+    Method: NotRequired[str],
+    Key: NotRequired[str],
+    KeyMd5: NotRequired[str],
+    InitializationVector: NotRequired[str],
+    LicenseAcquisitionUrl: NotRequired[str],
+    KeyStoragePolicy: NotRequired[str],
+```
 
 ## InputCaptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import InputCaptionsTypeDef
+
+def get_value() -> InputCaptionsTypeDef:
+    return {
+        "MergePolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputCaptionsTypeDef(TypedDict):
+    MergePolicy: NotRequired[str],
+    CaptionSources: NotRequired[Sequence[CaptionSourceTypeDef]],  # (1)
+```
 
-- `MergePolicy`: `str`
-- `CaptionSources`:
-  `Sequence`\[[CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef)\]
-
-<a id="jobalbumarttypedef"></a>
-
+1. See [:material-code-braces: CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef) 
 ## JobAlbumArtTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import JobAlbumArtTypeDef
+
+def get_value() -> JobAlbumArtTypeDef:
+    return {
+        "MergePolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobAlbumArtTypeDef(TypedDict):
+    MergePolicy: NotRequired[str],
+    Artwork: NotRequired[Sequence[ArtworkTypeDef]],  # (1)
+```
 
-- `MergePolicy`: `str`
-- `Artwork`: `Sequence`\[[ArtworkTypeDef](./type_defs.md#artworktypedef)\]
-
-<a id="jobinputtypedef"></a>
-
+1. See [:material-code-braces: ArtworkTypeDef](./type_defs.md#artworktypedef) 
 ## JobInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import JobInputTypeDef
+
+def get_value() -> JobInputTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobInputTypeDef(TypedDict):
+    Key: NotRequired[str],
+    FrameRate: NotRequired[str],
+    Resolution: NotRequired[str],
+    AspectRatio: NotRequired[str],
+    Interlaced: NotRequired[str],
+    Container: NotRequired[str],
+    Encryption: NotRequired[EncryptionTypeDef],  # (1)
+    TimeSpan: NotRequired[TimeSpanTypeDef],  # (2)
+    InputCaptions: NotRequired[InputCaptionsTypeDef],  # (3)
+    DetectedProperties: NotRequired[DetectedPropertiesTypeDef],  # (4)
+```
 
-- `Key`: `str`
-- `FrameRate`: `str`
-- `Resolution`: `str`
-- `AspectRatio`: `str`
-- `Interlaced`: `str`
-- `Container`: `str`
-- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `TimeSpan`: [TimeSpanTypeDef](./type_defs.md#timespantypedef)
-- `InputCaptions`: [InputCaptionsTypeDef](./type_defs.md#inputcaptionstypedef)
-- `DetectedProperties`:
-  [DetectedPropertiesTypeDef](./type_defs.md#detectedpropertiestypedef)
-
-<a id="joboutputtypedef"></a>
-
+1. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
+2. See [:material-code-braces: TimeSpanTypeDef](./type_defs.md#timespantypedef) 
+3. See [:material-code-braces: InputCaptionsTypeDef](./type_defs.md#inputcaptionstypedef) 
+4. See [:material-code-braces: DetectedPropertiesTypeDef](./type_defs.md#detectedpropertiestypedef) 
 ## JobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import JobOutputTypeDef
+
+def get_value() -> JobOutputTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobOutputTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Key: NotRequired[str],
+    ThumbnailPattern: NotRequired[str],
+    ThumbnailEncryption: NotRequired[EncryptionTypeDef],  # (1)
+    Rotate: NotRequired[str],
+    PresetId: NotRequired[str],
+    SegmentDuration: NotRequired[str],
+    Status: NotRequired[str],
+    StatusDetail: NotRequired[str],
+    Duration: NotRequired[int],
+    Width: NotRequired[int],
+    Height: NotRequired[int],
+    FrameRate: NotRequired[str],
+    FileSize: NotRequired[int],
+    DurationMillis: NotRequired[int],
+    Watermarks: NotRequired[List[JobWatermarkTypeDef]],  # (2)
+    AlbumArt: NotRequired[JobAlbumArtTypeDef],  # (3)
+    Composition: NotRequired[List[ClipTypeDef]],  # (4)
+    Captions: NotRequired[CaptionsTypeDef],  # (5)
+    Encryption: NotRequired[EncryptionTypeDef],  # (1)
+    AppliedColorSpaceConversion: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Key`: `str`
-- `ThumbnailPattern`: `str`
-- `ThumbnailEncryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `Rotate`: `str`
-- `PresetId`: `str`
-- `SegmentDuration`: `str`
-- `Status`: `str`
-- `StatusDetail`: `str`
-- `Duration`: `int`
-- `Width`: `int`
-- `Height`: `int`
-- `FrameRate`: `str`
-- `FileSize`: `int`
-- `DurationMillis`: `int`
-- `Watermarks`:
-  `List`\[[JobWatermarkTypeDef](./type_defs.md#jobwatermarktypedef)\]
-- `AlbumArt`: [JobAlbumArtTypeDef](./type_defs.md#jobalbumarttypedef)
-- `Composition`: `List`\[[ClipTypeDef](./type_defs.md#cliptypedef)\]
-- `Captions`: [CaptionsTypeDef](./type_defs.md#captionstypedef)
-- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `AppliedColorSpaceConversion`: `str`
-
-<a id="jobtypedef"></a>
-
+1. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
+2. See [:material-code-braces: JobWatermarkTypeDef](./type_defs.md#jobwatermarktypedef) 
+3. See [:material-code-braces: JobAlbumArtTypeDef](./type_defs.md#jobalbumarttypedef) 
+4. See [:material-code-braces: ClipTypeDef](./type_defs.md#cliptypedef) 
+5. See [:material-code-braces: CaptionsTypeDef](./type_defs.md#captionstypedef) 
+6. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
 ## JobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import JobTypeDef
+
+def get_value() -> JobTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    PipelineId: NotRequired[str],
+    Input: NotRequired[JobInputTypeDef],  # (1)
+    Inputs: NotRequired[List[JobInputTypeDef]],  # (2)
+    Output: NotRequired[JobOutputTypeDef],  # (3)
+    Outputs: NotRequired[List[JobOutputTypeDef]],  # (4)
+    OutputKeyPrefix: NotRequired[str],
+    Playlists: NotRequired[List[PlaylistTypeDef]],  # (5)
+    Status: NotRequired[str],
+    UserMetadata: NotRequired[Dict[str, str]],
+    Timing: NotRequired[TimingTypeDef],  # (6)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `PipelineId`: `str`
-- `Input`: [JobInputTypeDef](./type_defs.md#jobinputtypedef)
-- `Inputs`: `List`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
-- `Output`: [JobOutputTypeDef](./type_defs.md#joboutputtypedef)
-- `Outputs`: `List`\[[JobOutputTypeDef](./type_defs.md#joboutputtypedef)\]
-- `OutputKeyPrefix`: `str`
-- `Playlists`: `List`\[[PlaylistTypeDef](./type_defs.md#playlisttypedef)\]
-- `Status`: `str`
-- `UserMetadata`: `Dict`\[`str`, `str`\]
-- `Timing`: [TimingTypeDef](./type_defs.md#timingtypedef)
-
-<a id="jobwatermarktypedef"></a>
-
+1. See [:material-code-braces: JobInputTypeDef](./type_defs.md#jobinputtypedef) 
+2. See [:material-code-braces: JobInputTypeDef](./type_defs.md#jobinputtypedef) 
+3. See [:material-code-braces: JobOutputTypeDef](./type_defs.md#joboutputtypedef) 
+4. See [:material-code-braces: JobOutputTypeDef](./type_defs.md#joboutputtypedef) 
+5. See [:material-code-braces: PlaylistTypeDef](./type_defs.md#playlisttypedef) 
+6. See [:material-code-braces: TimingTypeDef](./type_defs.md#timingtypedef) 
 ## JobWatermarkTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import JobWatermarkTypeDef
+
+def get_value() -> JobWatermarkTypeDef:
+    return {
+        "PresetWatermarkId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobWatermarkTypeDef(TypedDict):
+    PresetWatermarkId: NotRequired[str],
+    InputKey: NotRequired[str],
+    Encryption: NotRequired[EncryptionTypeDef],  # (1)
+```
 
-- `PresetWatermarkId`: `str`
-- `InputKey`: `str`
-- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
+1. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
+## ListJobsByPipelineRequestListJobsByPipelinePaginateTypeDef
 
-<a id="listjobsbypipelinerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elastictranscoder.type_defs import ListJobsByPipelineRequestListJobsByPipelinePaginateTypeDef
 
+def get_value() -> ListJobsByPipelineRequestListJobsByPipelinePaginateTypeDef:
+    return {
+        "PipelineId": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsByPipelineRequestListJobsByPipelinePaginateTypeDef(TypedDict):
+    PipelineId: str,
+    Ascending: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobsByPipelineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ListJobsByPipelineRequestRequestTypeDef
+
+def get_value() -> ListJobsByPipelineRequestRequestTypeDef:
+    return {
+        "PipelineId": ...,
+    }
 ```
 
-Required fields:
-
-- `PipelineId`: `str`
-
-Optional fields:
-
-- `Ascending`: `str`
-- `PageToken`: `str`
-
-<a id="listjobsbypipelineresponsetypedef"></a>
+```python title="Definition"
+class ListJobsByPipelineRequestRequestTypeDef(TypedDict):
+    PipelineId: str,
+    Ascending: NotRequired[str],
+    PageToken: NotRequired[str],
+```
 
 ## ListJobsByPipelineResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ListJobsByPipelineResponseTypeDef
+
+def get_value() -> ListJobsByPipelineResponseTypeDef:
+    return {
+        "Jobs": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobsByPipelineResponseTypeDef(TypedDict):
+    Jobs: List[JobTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListJobsByStatusRequestListJobsByStatusPaginateTypeDef
 
-<a id="listjobsbystatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elastictranscoder.type_defs import ListJobsByStatusRequestListJobsByStatusPaginateTypeDef
 
+def get_value() -> ListJobsByStatusRequestListJobsByStatusPaginateTypeDef:
+    return {
+        "Status": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsByStatusRequestListJobsByStatusPaginateTypeDef(TypedDict):
+    Status: str,
+    Ascending: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobsByStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ListJobsByStatusRequestRequestTypeDef
+
+def get_value() -> ListJobsByStatusRequestRequestTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Required fields:
-
-- `Status`: `str`
-
-Optional fields:
-
-- `Ascending`: `str`
-- `PageToken`: `str`
-
-<a id="listjobsbystatusresponsetypedef"></a>
+```python title="Definition"
+class ListJobsByStatusRequestRequestTypeDef(TypedDict):
+    Status: str,
+    Ascending: NotRequired[str],
+    PageToken: NotRequired[str],
+```
 
 ## ListJobsByStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ListJobsByStatusResponseTypeDef
+
+def get_value() -> ListJobsByStatusResponseTypeDef:
+    return {
+        "Jobs": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobsByStatusResponseTypeDef(TypedDict):
+    Jobs: List[JobTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPipelinesRequestListPipelinesPaginateTypeDef
 
-<a id="listpipelinesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elastictranscoder.type_defs import ListPipelinesRequestListPipelinesPaginateTypeDef
 
+def get_value() -> ListPipelinesRequestListPipelinesPaginateTypeDef:
+    return {
+        "Ascending": ...,
+    }
+```
+
+```python title="Definition"
+class ListPipelinesRequestListPipelinesPaginateTypeDef(TypedDict):
+    Ascending: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPipelinesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ListPipelinesRequestRequestTypeDef
+
+def get_value() -> ListPipelinesRequestRequestTypeDef:
+    return {
+        "Ascending": ...,
+    }
 ```
 
-Optional fields:
-
-- `Ascending`: `str`
-- `PageToken`: `str`
-
-<a id="listpipelinesresponsetypedef"></a>
+```python title="Definition"
+class ListPipelinesRequestRequestTypeDef(TypedDict):
+    Ascending: NotRequired[str],
+    PageToken: NotRequired[str],
+```
 
 ## ListPipelinesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ListPipelinesResponseTypeDef
+
+def get_value() -> ListPipelinesResponseTypeDef:
+    return {
+        "Pipelines": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPipelinesResponseTypeDef(TypedDict):
+    Pipelines: List[PipelineTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Pipelines`: `List`\[[PipelineTypeDef](./type_defs.md#pipelinetypedef)\]
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PipelineTypeDef](./type_defs.md#pipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPresetsRequestListPresetsPaginateTypeDef
 
-<a id="listpresetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elastictranscoder.type_defs import ListPresetsRequestListPresetsPaginateTypeDef
 
+def get_value() -> ListPresetsRequestListPresetsPaginateTypeDef:
+    return {
+        "Ascending": ...,
+    }
+```
+
+```python title="Definition"
+class ListPresetsRequestListPresetsPaginateTypeDef(TypedDict):
+    Ascending: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPresetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ListPresetsRequestRequestTypeDef
+
+def get_value() -> ListPresetsRequestRequestTypeDef:
+    return {
+        "Ascending": ...,
+    }
 ```
 
-Optional fields:
-
-- `Ascending`: `str`
-- `PageToken`: `str`
-
-<a id="listpresetsresponsetypedef"></a>
+```python title="Definition"
+class ListPresetsRequestRequestTypeDef(TypedDict):
+    Ascending: NotRequired[str],
+    PageToken: NotRequired[str],
+```
 
 ## ListPresetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ListPresetsResponseTypeDef
+
+def get_value() -> ListPresetsResponseTypeDef:
+    return {
+        "Presets": ...,
+        "NextPageToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPresetsResponseTypeDef(TypedDict):
+    Presets: List[PresetTypeDef],  # (1)
+    NextPageToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Presets`: `List`\[[PresetTypeDef](./type_defs.md#presettypedef)\]
-- `NextPageToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notificationstypedef"></a>
-
+1. See [:material-code-braces: PresetTypeDef](./type_defs.md#presettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotificationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import NotificationsTypeDef
+
+def get_value() -> NotificationsTypeDef:
+    return {
+        "Progressing": ...,
+    }
 ```
 
-Optional fields:
-
-- `Progressing`: `str`
-- `Completed`: `str`
-- `Warning`: `str`
-- `Error`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class NotificationsTypeDef(TypedDict):
+    Progressing: NotRequired[str],
+    Completed: NotRequired[str],
+    Warning: NotRequired[str],
+    Error: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="permissiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import PermissionTypeDef
+
+def get_value() -> PermissionTypeDef:
+    return {
+        "GranteeType": ...,
+    }
 ```
 
-Optional fields:
-
-- `GranteeType`: `str`
-- `Grantee`: `str`
-- `Access`: `Sequence`\[`str`\]
-
-<a id="pipelineoutputconfigtypedef"></a>
+```python title="Definition"
+class PermissionTypeDef(TypedDict):
+    GranteeType: NotRequired[str],
+    Grantee: NotRequired[str],
+    Access: NotRequired[Sequence[str]],
+```
 
 ## PipelineOutputConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import PipelineOutputConfigTypeDef
+
+def get_value() -> PipelineOutputConfigTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PipelineOutputConfigTypeDef(TypedDict):
+    Bucket: NotRequired[str],
+    StorageClass: NotRequired[str],
+    Permissions: NotRequired[Sequence[PermissionTypeDef]],  # (1)
+```
 
-- `Bucket`: `str`
-- `StorageClass`: `str`
-- `Permissions`:
-  `Sequence`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
-
-<a id="pipelinetypedef"></a>
-
+1. See [:material-code-braces: PermissionTypeDef](./type_defs.md#permissiontypedef) 
 ## PipelineTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import PipelineTypeDef
+
+def get_value() -> PipelineTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PipelineTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Status: NotRequired[str],
+    InputBucket: NotRequired[str],
+    OutputBucket: NotRequired[str],
+    Role: NotRequired[str],
+    AwsKmsKeyArn: NotRequired[str],
+    Notifications: NotRequired[NotificationsTypeDef],  # (1)
+    ContentConfig: NotRequired[PipelineOutputConfigTypeDef],  # (2)
+    ThumbnailConfig: NotRequired[PipelineOutputConfigTypeDef],  # (2)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `Status`: `str`
-- `InputBucket`: `str`
-- `OutputBucket`: `str`
-- `Role`: `str`
-- `AwsKmsKeyArn`: `str`
-- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
-- `ContentConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
-- `ThumbnailConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
-
-<a id="playreadydrmtypedef"></a>
-
+1. See [:material-code-braces: NotificationsTypeDef](./type_defs.md#notificationstypedef) 
+2. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
+3. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
 ## PlayReadyDrmTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import PlayReadyDrmTypeDef
+
+def get_value() -> PlayReadyDrmTypeDef:
+    return {
+        "Format": ...,
+    }
 ```
 
-Optional fields:
-
-- `Format`: `str`
-- `Key`: `str`
-- `KeyMd5`: `str`
-- `KeyId`: `str`
-- `InitializationVector`: `str`
-- `LicenseAcquisitionUrl`: `str`
-
-<a id="playlisttypedef"></a>
+```python title="Definition"
+class PlayReadyDrmTypeDef(TypedDict):
+    Format: NotRequired[str],
+    Key: NotRequired[str],
+    KeyMd5: NotRequired[str],
+    KeyId: NotRequired[str],
+    InitializationVector: NotRequired[str],
+    LicenseAcquisitionUrl: NotRequired[str],
+```
 
 ## PlaylistTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import PlaylistTypeDef
+
+def get_value() -> PlaylistTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PlaylistTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Format: NotRequired[str],
+    OutputKeys: NotRequired[List[str]],
+    HlsContentProtection: NotRequired[HlsContentProtectionTypeDef],  # (1)
+    PlayReadyDrm: NotRequired[PlayReadyDrmTypeDef],  # (2)
+    Status: NotRequired[str],
+    StatusDetail: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Format`: `str`
-- `OutputKeys`: `List`\[`str`\]
-- `HlsContentProtection`:
-  [HlsContentProtectionTypeDef](./type_defs.md#hlscontentprotectiontypedef)
-- `PlayReadyDrm`: [PlayReadyDrmTypeDef](./type_defs.md#playreadydrmtypedef)
-- `Status`: `str`
-- `StatusDetail`: `str`
-
-<a id="presettypedef"></a>
-
+1. See [:material-code-braces: HlsContentProtectionTypeDef](./type_defs.md#hlscontentprotectiontypedef) 
+2. See [:material-code-braces: PlayReadyDrmTypeDef](./type_defs.md#playreadydrmtypedef) 
 ## PresetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import PresetTypeDef
+
+def get_value() -> PresetTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PresetTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Container: NotRequired[str],
+    Audio: NotRequired[AudioParametersTypeDef],  # (1)
+    Video: NotRequired[VideoParametersTypeDef],  # (2)
+    Thumbnails: NotRequired[ThumbnailsTypeDef],  # (3)
+    Type: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Container`: `str`
-- `Audio`: [AudioParametersTypeDef](./type_defs.md#audioparameterstypedef)
-- `Video`: [VideoParametersTypeDef](./type_defs.md#videoparameterstypedef)
-- `Thumbnails`: [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
-- `Type`: `str`
-
-<a id="presetwatermarktypedef"></a>
-
+1. See [:material-code-braces: AudioParametersTypeDef](./type_defs.md#audioparameterstypedef) 
+2. See [:material-code-braces: VideoParametersTypeDef](./type_defs.md#videoparameterstypedef) 
+3. See [:material-code-braces: ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef) 
 ## PresetWatermarkTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import PresetWatermarkTypeDef
+
+def get_value() -> PresetWatermarkTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PresetWatermarkTypeDef(TypedDict):
+    Id: NotRequired[str],
+    MaxWidth: NotRequired[str],
+    MaxHeight: NotRequired[str],
+    SizingPolicy: NotRequired[str],
+    HorizontalAlign: NotRequired[str],
+    HorizontalOffset: NotRequired[str],
+    VerticalAlign: NotRequired[str],
+    VerticalOffset: NotRequired[str],
+    Opacity: NotRequired[str],
+    Target: NotRequired[str],
+```
 
-- `Id`: `str`
-- `MaxWidth`: `str`
-- `MaxHeight`: `str`
-- `SizingPolicy`: `str`
-- `HorizontalAlign`: `str`
-- `HorizontalOffset`: `str`
-- `VerticalAlign`: `str`
-- `VerticalOffset`: `str`
-- `Opacity`: `str`
-- `Target`: `str`
+## ReadJobRequestJobCompleteWaitTypeDef
 
-<a id="readjobrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elastictranscoder.type_defs import ReadJobRequestJobCompleteWaitTypeDef
 
+def get_value() -> ReadJobRequestJobCompleteWaitTypeDef:
+    return {
+        "Id": ...,
+    }
+```
+
+```python title="Definition"
+class ReadJobRequestJobCompleteWaitTypeDef(TypedDict):
+    Id: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## ReadJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ReadJobRequestRequestTypeDef
+
+def get_value() -> ReadJobRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="readjobresponsetypedef"></a>
+```python title="Definition"
+class ReadJobRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## ReadJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ReadJobResponseTypeDef
+
+def get_value() -> ReadJobResponseTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReadJobResponseTypeDef(TypedDict):
+    Job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="readpipelinerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReadPipelineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ReadPipelineRequestRequestTypeDef
+
+def get_value() -> ReadPipelineRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="readpipelineresponsetypedef"></a>
+```python title="Definition"
+class ReadPipelineRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## ReadPipelineResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ReadPipelineResponseTypeDef
+
+def get_value() -> ReadPipelineResponseTypeDef:
+    return {
+        "Pipeline": ...,
+        "Warnings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReadPipelineResponseTypeDef(TypedDict):
+    Pipeline: PipelineTypeDef,  # (1)
+    Warnings: List[WarningTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
-- `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="readpresetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PipelineTypeDef](./type_defs.md#pipelinetypedef) 
+2. See [:material-code-braces: WarningTypeDef](./type_defs.md#warningtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReadPresetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ReadPresetRequestRequestTypeDef
+
+def get_value() -> ReadPresetRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="readpresetresponsetypedef"></a>
+```python title="Definition"
+class ReadPresetRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## ReadPresetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ReadPresetResponseTypeDef
+
+def get_value() -> ReadPresetResponseTypeDef:
+    return {
+        "Preset": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReadPresetResponseTypeDef(TypedDict):
+    Preset: PresetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: PresetTypeDef](./type_defs.md#presettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="testrolerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TestRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import TestRoleRequestRequestTypeDef
+
+def get_value() -> TestRoleRequestRequestTypeDef:
+    return {
+        "Role": ...,
+        "InputBucket": ...,
+        "OutputBucket": ...,
+        "Topics": ...,
+    }
 ```
 
-Required fields:
-
-- `Role`: `str`
-- `InputBucket`: `str`
-- `OutputBucket`: `str`
-- `Topics`: `Sequence`\[`str`\]
-
-<a id="testroleresponsetypedef"></a>
+```python title="Definition"
+class TestRoleRequestRequestTypeDef(TypedDict):
+    Role: str,
+    InputBucket: str,
+    OutputBucket: str,
+    Topics: Sequence[str],
+```
 
 ## TestRoleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import TestRoleResponseTypeDef
+
+def get_value() -> TestRoleResponseTypeDef:
+    return {
+        "Success": ...,
+        "Messages": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestRoleResponseTypeDef(TypedDict):
+    Success: str,
+    Messages: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Success`: `str`
-- `Messages`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="thumbnailstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ThumbnailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import ThumbnailsTypeDef
+
+def get_value() -> ThumbnailsTypeDef:
+    return {
+        "Format": ...,
+    }
 ```
 
-Optional fields:
-
-- `Format`: `str`
-- `Interval`: `str`
-- `Resolution`: `str`
-- `AspectRatio`: `str`
-- `MaxWidth`: `str`
-- `MaxHeight`: `str`
-- `SizingPolicy`: `str`
-- `PaddingPolicy`: `str`
-
-<a id="timespantypedef"></a>
+```python title="Definition"
+class ThumbnailsTypeDef(TypedDict):
+    Format: NotRequired[str],
+    Interval: NotRequired[str],
+    Resolution: NotRequired[str],
+    AspectRatio: NotRequired[str],
+    MaxWidth: NotRequired[str],
+    MaxHeight: NotRequired[str],
+    SizingPolicy: NotRequired[str],
+    PaddingPolicy: NotRequired[str],
+```
 
 ## TimeSpanTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import TimeSpanTypeDef
+
+def get_value() -> TimeSpanTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartTime`: `str`
-- `Duration`: `str`
-
-<a id="timingtypedef"></a>
+```python title="Definition"
+class TimeSpanTypeDef(TypedDict):
+    StartTime: NotRequired[str],
+    Duration: NotRequired[str],
+```
 
 ## TimingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import TimingTypeDef
+
+def get_value() -> TimingTypeDef:
+    return {
+        "SubmitTimeMillis": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubmitTimeMillis`: `int`
-- `StartTimeMillis`: `int`
-- `FinishTimeMillis`: `int`
-
-<a id="updatepipelinenotificationsrequestrequesttypedef"></a>
+```python title="Definition"
+class TimingTypeDef(TypedDict):
+    SubmitTimeMillis: NotRequired[int],
+    StartTimeMillis: NotRequired[int],
+    FinishTimeMillis: NotRequired[int],
+```
 
 ## UpdatePipelineNotificationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineNotificationsRequestRequestTypeDef
+
+def get_value() -> UpdatePipelineNotificationsRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Notifications": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePipelineNotificationsRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Notifications: NotificationsTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
-
-<a id="updatepipelinenotificationsresponsetypedef"></a>
-
+1. See [:material-code-braces: NotificationsTypeDef](./type_defs.md#notificationstypedef) 
 ## UpdatePipelineNotificationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineNotificationsResponseTypeDef
+
+def get_value() -> UpdatePipelineNotificationsResponseTypeDef:
+    return {
+        "Pipeline": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePipelineNotificationsResponseTypeDef(TypedDict):
+    Pipeline: PipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatepipelinerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PipelineTypeDef](./type_defs.md#pipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePipelineRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineRequestRequestTypeDef
+
+def get_value() -> UpdatePipelineRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePipelineRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Name: NotRequired[str],
+    InputBucket: NotRequired[str],
+    Role: NotRequired[str],
+    AwsKmsKeyArn: NotRequired[str],
+    Notifications: NotRequired[NotificationsTypeDef],  # (1)
+    ContentConfig: NotRequired[PipelineOutputConfigTypeDef],  # (2)
+    ThumbnailConfig: NotRequired[PipelineOutputConfigTypeDef],  # (2)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `InputBucket`: `str`
-- `Role`: `str`
-- `AwsKmsKeyArn`: `str`
-- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
-- `ContentConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
-- `ThumbnailConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
-
-<a id="updatepipelineresponsetypedef"></a>
-
+1. See [:material-code-braces: NotificationsTypeDef](./type_defs.md#notificationstypedef) 
+2. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
+3. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
 ## UpdatePipelineResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineResponseTypeDef
+
+def get_value() -> UpdatePipelineResponseTypeDef:
+    return {
+        "Pipeline": ...,
+        "Warnings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePipelineResponseTypeDef(TypedDict):
+    Pipeline: PipelineTypeDef,  # (1)
+    Warnings: List[WarningTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
-- `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatepipelinestatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PipelineTypeDef](./type_defs.md#pipelinetypedef) 
+2. See [:material-code-braces: WarningTypeDef](./type_defs.md#warningtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePipelineStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineStatusRequestRequestTypeDef
+
+def get_value() -> UpdatePipelineStatusRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `Status`: `str`
-
-<a id="updatepipelinestatusresponsetypedef"></a>
+```python title="Definition"
+class UpdatePipelineStatusRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Status: str,
+```
 
 ## UpdatePipelineStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import UpdatePipelineStatusResponseTypeDef
+
+def get_value() -> UpdatePipelineStatusResponseTypeDef:
+    return {
+        "Pipeline": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePipelineStatusResponseTypeDef(TypedDict):
+    Pipeline: PipelineTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="videoparameterstypedef"></a>
-
+1. See [:material-code-braces: PipelineTypeDef](./type_defs.md#pipelinetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VideoParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import VideoParametersTypeDef
+
+def get_value() -> VideoParametersTypeDef:
+    return {
+        "Codec": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VideoParametersTypeDef(TypedDict):
+    Codec: NotRequired[str],
+    CodecOptions: NotRequired[Mapping[str, str]],
+    KeyframesMaxDist: NotRequired[str],
+    FixedGOP: NotRequired[str],
+    BitRate: NotRequired[str],
+    FrameRate: NotRequired[str],
+    MaxFrameRate: NotRequired[str],
+    Resolution: NotRequired[str],
+    AspectRatio: NotRequired[str],
+    MaxWidth: NotRequired[str],
+    MaxHeight: NotRequired[str],
+    DisplayAspectRatio: NotRequired[str],
+    SizingPolicy: NotRequired[str],
+    PaddingPolicy: NotRequired[str],
+    Watermarks: NotRequired[Sequence[PresetWatermarkTypeDef]],  # (1)
+```
 
-- `Codec`: `str`
-- `CodecOptions`: `Mapping`\[`str`, `str`\]
-- `KeyframesMaxDist`: `str`
-- `FixedGOP`: `str`
-- `BitRate`: `str`
-- `FrameRate`: `str`
-- `MaxFrameRate`: `str`
-- `Resolution`: `str`
-- `AspectRatio`: `str`
-- `MaxWidth`: `str`
-- `MaxHeight`: `str`
-- `DisplayAspectRatio`: `str`
-- `SizingPolicy`: `str`
-- `PaddingPolicy`: `str`
-- `Watermarks`:
-  `Sequence`\[[PresetWatermarkTypeDef](./type_defs.md#presetwatermarktypedef)\]
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: PresetWatermarkTypeDef](./type_defs.md#presetwatermarktypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
-
-- `Delay`: `int`
-- `MaxAttempts`: `int`
-
-<a id="warningtypedef"></a>
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
 ## WarningTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elastictranscoder.type_defs import WarningTypeDef
+
+def get_value() -> WarningTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WarningTypeDef(TypedDict):
+    Code: NotRequired[str],
+    Message: NotRequired[str],
+```
 
-- `Code`: `str`
-- `Message`: `str`

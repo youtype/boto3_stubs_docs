@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-mediatailor-module"></a>
-
-# Type annotations for boto3 MediaTailor module
+#  MediaTailor module
 
 > [Index](../README.md) > MediaTailor
 
-Auto-generated documentation for
-[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
-type annotations stubs module
-[mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
+!!! note ""
 
-- [Type annotations for boto3 MediaTailor module](#type-annotations-for-boto3-mediatailor-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MediaTailorClient](#mediatailorclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+    type annotations stubs module [mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `MediaTailor`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[mediatailor]'
 python -m pip install mypy-boto3-mediatailor
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,91 +42,37 @@ python -m pip install mypy-boto3-mediatailor
 python -m pip uninstall -y mypy-boto3-mediatailor
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="mediatailorclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MediaTailorClient
 
-Type annotations for `boto3.client("mediatailor")` as
-[MediaTailorClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("mediatailor")` as [MediaTailorClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_mediatailor.client import MediaTailorClient
+
+def get_client() -> MediaTailorClient:
+    return Session().cleint("mediatailor")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [configure_logs_for_playback_configuration](./client.md#configure_logs_for_playback_configuration)
-- [create_channel](./client.md#create_channel)
-- [create_prefetch_schedule](./client.md#create_prefetch_schedule)
-- [create_program](./client.md#create_program)
-- [create_source_location](./client.md#create_source_location)
-- [create_vod_source](./client.md#create_vod_source)
-- [delete_channel](./client.md#delete_channel)
-- [delete_channel_policy](./client.md#delete_channel_policy)
-- [delete_playback_configuration](./client.md#delete_playback_configuration)
-- [delete_prefetch_schedule](./client.md#delete_prefetch_schedule)
-- [delete_program](./client.md#delete_program)
-- [delete_source_location](./client.md#delete_source_location)
-- [delete_vod_source](./client.md#delete_vod_source)
-- [describe_channel](./client.md#describe_channel)
-- [describe_program](./client.md#describe_program)
-- [describe_source_location](./client.md#describe_source_location)
-- [describe_vod_source](./client.md#describe_vod_source)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_channel_policy](./client.md#get_channel_policy)
-- [get_channel_schedule](./client.md#get_channel_schedule)
-- [get_paginator](./client.md#get_paginator)
-- [get_playback_configuration](./client.md#get_playback_configuration)
-- [get_prefetch_schedule](./client.md#get_prefetch_schedule)
-- [list_alerts](./client.md#list_alerts)
-- [list_channels](./client.md#list_channels)
-- [list_playback_configurations](./client.md#list_playback_configurations)
-- [list_prefetch_schedules](./client.md#list_prefetch_schedules)
-- [list_source_locations](./client.md#list_source_locations)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_vod_sources](./client.md#list_vod_sources)
-- [put_channel_policy](./client.md#put_channel_policy)
-- [put_playback_configuration](./client.md#put_playback_configuration)
-- [start_channel](./client.md#start_channel)
-- [stop_channel](./client.md#stop_channel)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_channel](./client.md#update_channel)
-- [update_source_location](./client.md#update_source_location)
-- [update_vod_source](./client.md#update_vod_source)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-MediaTailorClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("mediatailor").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("mediatailor").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_mediatailor.paginator import GetChannelSchedulePaginator, ...
+from mypy_boto3_mediatailor.paginator import GetChannelSchedulePaginator
+
+def get_get_channel_schedule_paginator() -> GetChannelSchedulePaginator:
+    return Session().client("mediatailor").get_paginator("get_channel_schedule"))
 ```
 
 - [GetChannelSchedulePaginator](./paginators.md#getchannelschedulepaginator)
@@ -159,16 +83,23 @@ from mypy_boto3_mediatailor.paginator import GetChannelSchedulePaginator, ...
 - [ListSourceLocationsPaginator](./paginators.md#listsourcelocationspaginator)
 - [ListVodSourcesPaginator](./paginators.md#listvodsourcespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mediatailor.literals import AccessTypeType
 
-```python
-from mypy_boto3_mediatailor.literals import AccessTypeType, ...
+def get_value() -> AccessTypeType:
+    return "S3_SIGV4"
 ```
 
 - [AccessTypeType](./literals.md#accesstypetype)
@@ -192,18 +123,22 @@ from mypy_boto3_mediatailor.literals import AccessTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef
 
-```python
-from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef, ...
+def get_value() -> AccessConfigurationTypeDef:
+    return {
+        "AccessType": ...,
+    }
 ```
 
 - [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
@@ -248,6 +183,7 @@ from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef, ...
 - [DescribeVodSourceResponseTypeDef](./type_defs.md#describevodsourceresponsetypedef)
 - [GetChannelPolicyRequestRequestTypeDef](./type_defs.md#getchannelpolicyrequestrequesttypedef)
 - [GetChannelPolicyResponseTypeDef](./type_defs.md#getchannelpolicyresponsetypedef)
+- [GetChannelScheduleRequestGetChannelSchedulePaginateTypeDef](./type_defs.md#getchannelschedulerequestgetchannelschedulepaginatetypedef)
 - [GetChannelScheduleRequestRequestTypeDef](./type_defs.md#getchannelschedulerequestrequesttypedef)
 - [GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef)
 - [GetPlaybackConfigurationRequestRequestTypeDef](./type_defs.md#getplaybackconfigurationrequestrequesttypedef)
@@ -258,18 +194,24 @@ from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef, ...
 - [HlsPlaylistSettingsTypeDef](./type_defs.md#hlsplaylistsettingstypedef)
 - [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
 - [HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)
+- [ListAlertsRequestListAlertsPaginateTypeDef](./type_defs.md#listalertsrequestlistalertspaginatetypedef)
 - [ListAlertsRequestRequestTypeDef](./type_defs.md#listalertsrequestrequesttypedef)
 - [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef)
+- [ListChannelsRequestListChannelsPaginateTypeDef](./type_defs.md#listchannelsrequestlistchannelspaginatetypedef)
 - [ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef)
 - [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)
+- [ListPlaybackConfigurationsRequestListPlaybackConfigurationsPaginateTypeDef](./type_defs.md#listplaybackconfigurationsrequestlistplaybackconfigurationspaginatetypedef)
 - [ListPlaybackConfigurationsRequestRequestTypeDef](./type_defs.md#listplaybackconfigurationsrequestrequesttypedef)
 - [ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef)
+- [ListPrefetchSchedulesRequestListPrefetchSchedulesPaginateTypeDef](./type_defs.md#listprefetchschedulesrequestlistprefetchschedulespaginatetypedef)
 - [ListPrefetchSchedulesRequestRequestTypeDef](./type_defs.md#listprefetchschedulesrequestrequesttypedef)
 - [ListPrefetchSchedulesResponseTypeDef](./type_defs.md#listprefetchschedulesresponsetypedef)
+- [ListSourceLocationsRequestListSourceLocationsPaginateTypeDef](./type_defs.md#listsourcelocationsrequestlistsourcelocationspaginatetypedef)
 - [ListSourceLocationsRequestRequestTypeDef](./type_defs.md#listsourcelocationsrequestrequesttypedef)
 - [ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListVodSourcesRequestListVodSourcesPaginateTypeDef](./type_defs.md#listvodsourcesrequestlistvodsourcespaginatetypedef)
 - [ListVodSourcesRequestRequestTypeDef](./type_defs.md#listvodsourcesrequestrequesttypedef)
 - [ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef)
 - [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
@@ -306,3 +248,4 @@ from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef, ...
 - [UpdateVodSourceRequestRequestTypeDef](./type_defs.md#updatevodsourcerequestrequesttypedef)
 - [UpdateVodSourceResponseTypeDef](./type_defs.md#updatevodsourceresponsetypedef)
 - [VodSourceTypeDef](./type_defs.md#vodsourcetypedef)
+

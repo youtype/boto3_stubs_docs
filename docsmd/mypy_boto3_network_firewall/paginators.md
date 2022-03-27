@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-networkfirewall-module"></a>
-
-# Paginators for boto3 NetworkFirewall module
+# Paginators
 
 > [Index](../README.md) > [NetworkFirewall](./README.md) > Paginators
 
-Auto-generated documentation for
-[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
-type annotations stubs module
-[mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+!!! note ""
 
-- [Paginators for boto3 NetworkFirewall module](#paginators-for-boto3-networkfirewall-module)
-  - [ListFirewallPoliciesPaginator](#listfirewallpoliciespaginator)
-  - [ListFirewallsPaginator](#listfirewallspaginator)
-  - [ListRuleGroupsPaginator](#listrulegroupspaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-
-<a id="listfirewallpoliciespaginator"></a>
+    Auto-generated documentation for [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+    type annotations stubs module [mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 ## ListFirewallPoliciesPaginator
 
-Type annotations for
-`boto3.client("network-firewall").get_paginator("list_firewall_policies")`.
+Type annotations and code completion for `#!python boto3.client("network-firewall").get_paginator("list_firewall_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_network_firewall.paginator import ListFirewallPoliciesPaginator
@@ -33,27 +21,39 @@ def get_list_firewall_policies_paginator() -> ListFirewallPoliciesPaginator:
     return Session().client("network-firewall").get_paginator("list_firewall_policies")
 ```
 
-Boto3 documentation:
-[NetworkFirewall.Paginator.ListFirewallPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewallPolicies)
 
-Arguments for `ListFirewallPoliciesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFirewallPoliciesPaginator.paginate` method.
 
-`ListFirewallPoliciesPaginator.paginate` returns
-`_PageIterator`\[[ListFirewallPoliciesResponseTypeDef](./type_defs.md#listfirewallpoliciesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFirewallPoliciesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfirewallspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFirewallPoliciesResponseTypeDef](./type_defs.md#listfirewallpoliciesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFirewallPoliciesRequestListFirewallPoliciesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFirewallPoliciesRequestListFirewallPoliciesPaginateTypeDef](./type_defs.md#listfirewallpoliciesrequestlistfirewallpoliciespaginatetypedef) 
 ## ListFirewallsPaginator
 
-Type annotations for
-`boto3.client("network-firewall").get_paginator("list_firewalls")`.
+Type annotations and code completion for `#!python boto3.client("network-firewall").get_paginator("list_firewalls")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_network_firewall.paginator import ListFirewallsPaginator
@@ -62,28 +62,40 @@ def get_list_firewalls_paginator() -> ListFirewallsPaginator:
     return Session().client("network-firewall").get_paginator("list_firewalls")
 ```
 
-Boto3 documentation:
-[NetworkFirewall.Paginator.ListFirewalls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListFirewalls)
 
-Arguments for `ListFirewallsPaginator.paginate` method:
+### paginate
 
-- `VpcIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFirewallsPaginator.paginate` method.
 
-`ListFirewallsPaginator.paginate` returns
-`_PageIterator`\[[ListFirewallsResponseTypeDef](./type_defs.md#listfirewallsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    VpcIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFirewallsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrulegroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFirewallsResponseTypeDef](./type_defs.md#listfirewallsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFirewallsRequestListFirewallsPaginateTypeDef = {  # (1)
+    "VpcIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFirewallsRequestListFirewallsPaginateTypeDef](./type_defs.md#listfirewallsrequestlistfirewallspaginatetypedef) 
 ## ListRuleGroupsPaginator
 
-Type annotations for
-`boto3.client("network-firewall").get_paginator("list_rule_groups")`.
+Type annotations and code completion for `#!python boto3.client("network-firewall").get_paginator("list_rule_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_network_firewall.paginator import ListRuleGroupsPaginator
@@ -92,28 +104,41 @@ def get_list_rule_groups_paginator() -> ListRuleGroupsPaginator:
     return Session().client("network-firewall").get_paginator("list_rule_groups")
 ```
 
-Boto3 documentation:
-[NetworkFirewall.Paginator.ListRuleGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListRuleGroups)
 
-Arguments for `ListRuleGroupsPaginator.paginate` method:
+### paginate
 
-- `Scope`: [ResourceManagedStatusType](./literals.md#resourcemanagedstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRuleGroupsPaginator.paginate` method.
 
-`ListRuleGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Scope: ResourceManagedStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListRuleGroupsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-brackets: ResourceManagedStatusType](./literals.md#resourcemanagedstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRuleGroupsRequestListRuleGroupsPaginateTypeDef = {  # (1)
+    "Scope": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRuleGroupsRequestListRuleGroupsPaginateTypeDef](./type_defs.md#listrulegroupsrequestlistrulegroupspaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("network-firewall").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("network-firewall").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_network_firewall.paginator import ListTagsForResourcePaginator
@@ -122,14 +147,31 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("network-firewall").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[NetworkFirewall.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 

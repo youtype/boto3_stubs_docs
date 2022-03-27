@@ -1,37 +1,18 @@
-<a id="piclient-for-boto3-pi-module"></a>
-
-# PIClient for boto3 PI module
+# PIClient
 
 > [Index](../README.md) > [PI](./README.md) > PIClient
 
-Auto-generated documentation for
-[PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
-type annotations stubs module
-[mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
+!!! note ""
 
-- [PIClient for boto3 PI module](#piclient-for-boto3-pi-module)
-  - [PIClient](#piclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [describe_dimension_keys](#describe_dimension_keys)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_dimension_key_details](#get_dimension_key_details)
-    - [get_resource_metadata](#get_resource_metadata)
-    - [get_resource_metrics](#get_resource_metrics)
-    - [list_available_resource_dimensions](#list_available_resource_dimensions)
-    - [list_available_resource_metrics](#list_available_resource_metrics)
-
-<a id="piclient"></a>
+    Auto-generated documentation for [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
+    type annotations stubs module [mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
 
 ## PIClient
 
-Type annotations for `boto3.client("pi")`
+Type annotations and code completion for `#!python boto3.client("pi")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_pi.client import PIClient
 
@@ -39,246 +20,307 @@ def get_pi_client() -> PIClient:
     return Session().client("pi")
 ```
 
-Boto3 documentation:
-[PI.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("pi").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("pi")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServiceError,
+    client.InvalidArgumentException,
+    client.NotAuthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_pi.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServiceError`
-- `Exceptions.InvalidArgumentException`
-- `Exceptions.NotAuthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-PIClient exceptions.
-
-Type annotations for `boto3.client("pi").exceptions` method.
-
-Boto3 documentation:
-[PI.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("pi").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("pi").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.can_paginate)
 
-Boto3 documentation:
-[PI.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="describe\_dimension\_keys"></a>
-
-### describe_dimension_keys
+### describe\_dimension\_keys
 
 For a specific time period, retrieve the top `N` dimension keys for a metric.
 
-Type annotations for `boto3.client("pi").describe_dimension_keys` method.
+Type annotations and code completion for `#!python boto3.client("pi").describe_dimension_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys)
 
-Boto3 documentation:
-[PI.Client.describe_dimension_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.describe_dimension_keys)
+```python title="Method definition"
+def describe_dimension_keys(
+    self,
+    *,
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Metric: str,
+    GroupBy: DimensionGroupTypeDef,  # (2)
+    PeriodInSeconds: int = ...,
+    AdditionalMetrics: Sequence[str] = ...,
+    PartitionBy: DimensionGroupTypeDef = ...,  # (2)
+    Filter: Mapping[str, str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeDimensionKeysResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDimensionKeysRequestRequestTypeDef](./type_defs.md#describedimensionkeysrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef) 
+3. See [:material-code-braces: DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef) 
+4. See [:material-code-braces: DescribeDimensionKeysResponseTypeDef](./type_defs.md#describedimensionkeysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
-- `Identifier`: `str` *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `Metric`: `str` *(required)*
-- `GroupBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
-  *(required)*
-- `PeriodInSeconds`: `int`
-- `AdditionalMetrics`: `Sequence`\[`str`\]
-- `PartitionBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
-- `Filter`: `Mapping`\[`str`, `str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDimensionKeysRequestRequestTypeDef = {  # (1)
+    "ServiceType": ...,
+    "Identifier": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+    "Metric": ...,
+    "GroupBy": ...,
+}
 
-Returns
-[DescribeDimensionKeysResponseTypeDef](./type_defs.md#describedimensionkeysresponsetypedef).
+parent.describe_dimension_keys(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeDimensionKeysRequestRequestTypeDef](./type_defs.md#describedimensionkeysrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("pi").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("pi").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.generate_presigned_url)
 
-Boto3 documentation:
-[PI.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_dimension\_key\_details"></a>
-
-### get_dimension_key_details
+### get\_dimension\_key\_details
 
 Get the attributes of the specified dimension group for a DB instance or data
 source.
 
-Type annotations for `boto3.client("pi").get_dimension_key_details` method.
+Type annotations and code completion for `#!python boto3.client("pi").get_dimension_key_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_dimension_key_details)
 
-Boto3 documentation:
-[PI.Client.get_dimension_key_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_dimension_key_details)
+```python title="Method definition"
+def get_dimension_key_details(
+    self,
+    *,
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    Group: str,
+    GroupIdentifier: str,
+    RequestedDimensions: Sequence[str] = ...,
+) -> GetDimensionKeyDetailsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetDimensionKeyDetailsRequestRequestTypeDef](./type_defs.md#getdimensionkeydetailsrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
-- `Identifier`: `str` *(required)*
-- `Group`: `str` *(required)*
-- `GroupIdentifier`: `str` *(required)*
-- `RequestedDimensions`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetDimensionKeyDetailsRequestRequestTypeDef = {  # (1)
+    "ServiceType": ...,
+    "Identifier": ...,
+    "Group": ...,
+    "GroupIdentifier": ...,
+}
 
-Returns
-[GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef).
+parent.get_dimension_key_details(**kwargs)
+```
 
-<a id="get\_resource\_metadata"></a>
+1. See [:material-code-braces: GetDimensionKeyDetailsRequestRequestTypeDef](./type_defs.md#getdimensionkeydetailsrequestrequesttypedef) 
 
-### get_resource_metadata
+### get\_resource\_metadata
 
 Retrieve the metadata for different features.
 
-Type annotations for `boto3.client("pi").get_resource_metadata` method.
+Type annotations and code completion for `#!python boto3.client("pi").get_resource_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metadata)
 
-Boto3 documentation:
-[PI.Client.get_resource_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metadata)
+```python title="Method definition"
+def get_resource_metadata(
+    self,
+    *,
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+) -> GetResourceMetadataResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetResourceMetadataRequestRequestTypeDef](./type_defs.md#getresourcemetadatarequestrequesttypedef).
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: GetResourceMetadataResponseTypeDef](./type_defs.md#getresourcemetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
-- `Identifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResourceMetadataRequestRequestTypeDef = {  # (1)
+    "ServiceType": ...,
+    "Identifier": ...,
+}
 
-Returns
-[GetResourceMetadataResponseTypeDef](./type_defs.md#getresourcemetadataresponsetypedef).
+parent.get_resource_metadata(**kwargs)
+```
 
-<a id="get\_resource\_metrics"></a>
+1. See [:material-code-braces: GetResourceMetadataRequestRequestTypeDef](./type_defs.md#getresourcemetadatarequestrequesttypedef) 
 
-### get_resource_metrics
+### get\_resource\_metrics
 
 Retrieve Performance Insights metrics for a set of data sources, over a time
 period.
 
-Type annotations for `boto3.client("pi").get_resource_metrics` method.
+Type annotations and code completion for `#!python boto3.client("pi").get_resource_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics)
 
-Boto3 documentation:
-[PI.Client.get_resource_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metrics)
+```python title="Method definition"
+def get_resource_metrics(
+    self,
+    *,
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    MetricQueries: Sequence[MetricQueryTypeDef],  # (2)
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    PeriodInSeconds: int = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetResourceMetricsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetResourceMetricsRequestRequestTypeDef](./type_defs.md#getresourcemetricsrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: MetricQueryTypeDef](./type_defs.md#metricquerytypedef) 
+3. See [:material-code-braces: GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
-- `Identifier`: `str` *(required)*
-- `MetricQueries`:
-  `Sequence`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
-  *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `PeriodInSeconds`: `int`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetResourceMetricsRequestRequestTypeDef = {  # (1)
+    "ServiceType": ...,
+    "Identifier": ...,
+    "MetricQueries": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+}
 
-Returns
-[GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef).
+parent.get_resource_metrics(**kwargs)
+```
 
-<a id="list\_available\_resource\_dimensions"></a>
+1. See [:material-code-braces: GetResourceMetricsRequestRequestTypeDef](./type_defs.md#getresourcemetricsrequestrequesttypedef) 
 
-### list_available_resource_dimensions
+### list\_available\_resource\_dimensions
 
 Retrieve the dimensions that can be queried for each specified metric type on a
 specified DB instance.
 
-Type annotations for `boto3.client("pi").list_available_resource_dimensions`
-method.
+Type annotations and code completion for `#!python boto3.client("pi").list_available_resource_dimensions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.list_available_resource_dimensions)
 
-Boto3 documentation:
-[PI.Client.list_available_resource_dimensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.list_available_resource_dimensions)
+```python title="Method definition"
+def list_available_resource_dimensions(
+    self,
+    *,
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    Metrics: Sequence[str],
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAvailableResourceDimensionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAvailableResourceDimensionsRequestRequestTypeDef](./type_defs.md#listavailableresourcedimensionsrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: ListAvailableResourceDimensionsResponseTypeDef](./type_defs.md#listavailableresourcedimensionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
-- `Identifier`: `str` *(required)*
-- `Metrics`: `Sequence`\[`str`\] *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAvailableResourceDimensionsRequestRequestTypeDef = {  # (1)
+    "ServiceType": ...,
+    "Identifier": ...,
+    "Metrics": ...,
+}
 
-Returns
-[ListAvailableResourceDimensionsResponseTypeDef](./type_defs.md#listavailableresourcedimensionsresponsetypedef).
+parent.list_available_resource_dimensions(**kwargs)
+```
 
-<a id="list\_available\_resource\_metrics"></a>
+1. See [:material-code-braces: ListAvailableResourceDimensionsRequestRequestTypeDef](./type_defs.md#listavailableresourcedimensionsrequestrequesttypedef) 
 
-### list_available_resource_metrics
+### list\_available\_resource\_metrics
 
 Retrieve metrics of the specified types that can be queried for a specified DB
 instance.
 
-Type annotations for `boto3.client("pi").list_available_resource_metrics`
-method.
+Type annotations and code completion for `#!python boto3.client("pi").list_available_resource_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.list_available_resource_metrics)
 
-Boto3 documentation:
-[PI.Client.list_available_resource_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.list_available_resource_metrics)
+```python title="Method definition"
+def list_available_resource_metrics(
+    self,
+    *,
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    MetricTypes: Sequence[str],
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAvailableResourceMetricsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAvailableResourceMetricsRequestRequestTypeDef](./type_defs.md#listavailableresourcemetricsrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: ListAvailableResourceMetricsResponseTypeDef](./type_defs.md#listavailableresourcemetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
-- `Identifier`: `str` *(required)*
-- `MetricTypes`: `Sequence`\[`str`\] *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAvailableResourceMetricsRequestRequestTypeDef = {  # (1)
+    "ServiceType": ...,
+    "Identifier": ...,
+    "MetricTypes": ...,
+}
 
-Returns
-[ListAvailableResourceMetricsResponseTypeDef](./type_defs.md#listavailableresourcemetricsresponsetypedef).
+parent.list_available_resource_metrics(**kwargs)
+```
+
+1. See [:material-code-braces: ListAvailableResourceMetricsRequestRequestTypeDef](./type_defs.md#listavailableresourcemetricsrequestrequesttypedef) 
+
+
+
+

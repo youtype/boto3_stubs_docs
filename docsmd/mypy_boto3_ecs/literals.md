@@ -1,1398 +1,1504 @@
-<a id="literals-for-boto3-ecs-module"></a>
-
-# Literals for boto3 ECS module
+# Literals
 
 > [Index](../README.md) > [ECS](./README.md) > Literals
 
-Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
-type annotations stubs module
-[mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
+!!! note ""
 
-- [Literals for boto3 ECS module](#literals-for-boto3-ecs-module)
-  - [AgentUpdateStatusType](#agentupdatestatustype)
-  - [AssignPublicIpType](#assignpubliciptype)
-  - [CPUArchitectureType](#cpuarchitecturetype)
-  - [CapacityProviderFieldType](#capacityproviderfieldtype)
-  - [CapacityProviderStatusType](#capacityproviderstatustype)
-  - [CapacityProviderUpdateStatusType](#capacityproviderupdatestatustype)
-  - [ClusterFieldType](#clusterfieldtype)
-  - [ClusterSettingNameType](#clustersettingnametype)
-  - [CompatibilityType](#compatibilitytype)
-  - [ConnectivityType](#connectivitytype)
-  - [ContainerConditionType](#containerconditiontype)
-  - [ContainerInstanceFieldType](#containerinstancefieldtype)
-  - [ContainerInstanceStatusType](#containerinstancestatustype)
-  - [DeploymentControllerTypeType](#deploymentcontrollertypetype)
-  - [DeploymentRolloutStateType](#deploymentrolloutstatetype)
-  - [DesiredStatusType](#desiredstatustype)
-  - [DeviceCgroupPermissionType](#devicecgrouppermissiontype)
-  - [EFSAuthorizationConfigIAMType](#efsauthorizationconfigiamtype)
-  - [EFSTransitEncryptionType](#efstransitencryptiontype)
-  - [EnvironmentFileTypeType](#environmentfiletypetype)
-  - [ExecuteCommandLoggingType](#executecommandloggingtype)
-  - [FirelensConfigurationTypeType](#firelensconfigurationtypetype)
-  - [HealthStatusType](#healthstatustype)
-  - [InstanceHealthCheckStateType](#instancehealthcheckstatetype)
-  - [InstanceHealthCheckTypeType](#instancehealthchecktypetype)
-  - [IpcModeType](#ipcmodetype)
-  - [LaunchTypeType](#launchtypetype)
-  - [ListAccountSettingsPaginatorName](#listaccountsettingspaginatorname)
-  - [ListAttributesPaginatorName](#listattributespaginatorname)
-  - [ListClustersPaginatorName](#listclusterspaginatorname)
-  - [ListContainerInstancesPaginatorName](#listcontainerinstancespaginatorname)
-  - [ListServicesPaginatorName](#listservicespaginatorname)
-  - [ListTaskDefinitionFamiliesPaginatorName](#listtaskdefinitionfamiliespaginatorname)
-  - [ListTaskDefinitionsPaginatorName](#listtaskdefinitionspaginatorname)
-  - [ListTasksPaginatorName](#listtaskspaginatorname)
-  - [LogDriverType](#logdrivertype)
-  - [ManagedAgentNameType](#managedagentnametype)
-  - [ManagedScalingStatusType](#managedscalingstatustype)
-  - [ManagedTerminationProtectionType](#managedterminationprotectiontype)
-  - [NetworkModeType](#networkmodetype)
-  - [OSFamilyType](#osfamilytype)
-  - [PidModeType](#pidmodetype)
-  - [PlacementConstraintTypeType](#placementconstrainttypetype)
-  - [PlacementStrategyTypeType](#placementstrategytypetype)
-  - [PlatformDeviceTypeType](#platformdevicetypetype)
-  - [PropagateTagsType](#propagatetagstype)
-  - [ProxyConfigurationTypeType](#proxyconfigurationtypetype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [ScaleUnitType](#scaleunittype)
-  - [SchedulingStrategyType](#schedulingstrategytype)
-  - [ScopeType](#scopetype)
-  - [ServiceFieldType](#servicefieldtype)
-  - [ServicesInactiveWaiterName](#servicesinactivewaitername)
-  - [ServicesStableWaiterName](#servicesstablewaitername)
-  - [SettingNameType](#settingnametype)
-  - [SortOrderType](#sortordertype)
-  - [StabilityStatusType](#stabilitystatustype)
-  - [TargetTypeType](#targettypetype)
-  - [TaskDefinitionFamilyStatusType](#taskdefinitionfamilystatustype)
-  - [TaskDefinitionFieldType](#taskdefinitionfieldtype)
-  - [TaskDefinitionPlacementConstraintTypeType](#taskdefinitionplacementconstrainttypetype)
-  - [TaskDefinitionStatusType](#taskdefinitionstatustype)
-  - [TaskFieldType](#taskfieldtype)
-  - [TaskSetFieldType](#tasksetfieldtype)
-  - [TaskStopCodeType](#taskstopcodetype)
-  - [TasksRunningWaiterName](#tasksrunningwaitername)
-  - [TasksStoppedWaiterName](#tasksstoppedwaitername)
-  - [TransportProtocolType](#transportprotocoltype)
-  - [UlimitNameType](#ulimitnametype)
-  - [ECSServiceName](#ecsservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="agentupdatestatustype"></a>
+    Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+    type annotations stubs module [mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 ## AgentUpdateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import AgentUpdateStatusType
+
+def get_value() -> AgentUpdateStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `PENDING`
-- `STAGED`
-- `STAGING`
-- `UPDATED`
-- `UPDATING`
-
-<a id="assignpubliciptype"></a>
-
+```python title="Definition"
+AgentUpdateStatusType = Literal[
+    "FAILED",
+    "PENDING",
+    "STAGED",
+    "STAGING",
+    "UPDATED",
+    "UPDATING",
+]
+```
 ## AssignPublicIpType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import AssignPublicIpType
+
+def get_value() -> AssignPublicIpType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="cpuarchitecturetype"></a>
-
+```python title="Definition"
+AssignPublicIpType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## CPUArchitectureType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import CPUArchitectureType
+
+def get_value() -> CPUArchitectureType:
+    return "ARM64"
 ```
 
-Values:
-
-- `ARM64`
-- `X86_64`
-
-<a id="capacityproviderfieldtype"></a>
-
+```python title="Definition"
+CPUArchitectureType = Literal[
+    "ARM64",
+    "X86_64",
+]
+```
 ## CapacityProviderFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import CapacityProviderFieldType
+
+def get_value() -> CapacityProviderFieldType:
+    return "TAGS"
 ```
 
-Values:
-
-- `TAGS`
-
-<a id="capacityproviderstatustype"></a>
-
+```python title="Definition"
+CapacityProviderFieldType = Literal[
+    "TAGS",
+]
+```
 ## CapacityProviderStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import CapacityProviderStatusType
+
+def get_value() -> CapacityProviderStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `INACTIVE`
-
-<a id="capacityproviderupdatestatustype"></a>
-
+```python title="Definition"
+CapacityProviderStatusType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+]
+```
 ## CapacityProviderUpdateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import CapacityProviderUpdateStatusType
+
+def get_value() -> CapacityProviderUpdateStatusType:
+    return "DELETE_COMPLETE"
 ```
 
-Values:
-
-- `DELETE_COMPLETE`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `UPDATE_COMPLETE`
-- `UPDATE_FAILED`
-- `UPDATE_IN_PROGRESS`
-
-<a id="clusterfieldtype"></a>
-
+```python title="Definition"
+CapacityProviderUpdateStatusType = Literal[
+    "DELETE_COMPLETE",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "UPDATE_COMPLETE",
+    "UPDATE_FAILED",
+    "UPDATE_IN_PROGRESS",
+]
+```
 ## ClusterFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ClusterFieldType
+
+def get_value() -> ClusterFieldType:
+    return "ATTACHMENTS"
 ```
 
-Values:
-
-- `ATTACHMENTS`
-- `CONFIGURATIONS`
-- `SETTINGS`
-- `STATISTICS`
-- `TAGS`
-
-<a id="clustersettingnametype"></a>
-
+```python title="Definition"
+ClusterFieldType = Literal[
+    "ATTACHMENTS",
+    "CONFIGURATIONS",
+    "SETTINGS",
+    "STATISTICS",
+    "TAGS",
+]
+```
 ## ClusterSettingNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ClusterSettingNameType
+
+def get_value() -> ClusterSettingNameType:
+    return "containerInsights"
 ```
 
-Values:
-
-- `containerInsights`
-
-<a id="compatibilitytype"></a>
-
+```python title="Definition"
+ClusterSettingNameType = Literal[
+    "containerInsights",
+]
+```
 ## CompatibilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import CompatibilityType
+
+def get_value() -> CompatibilityType:
+    return "EC2"
 ```
 
-Values:
-
-- `EC2`
-- `EXTERNAL`
-- `FARGATE`
-
-<a id="connectivitytype"></a>
-
+```python title="Definition"
+CompatibilityType = Literal[
+    "EC2",
+    "EXTERNAL",
+    "FARGATE",
+]
+```
 ## ConnectivityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ConnectivityType
+
+def get_value() -> ConnectivityType:
+    return "CONNECTED"
 ```
 
-Values:
-
-- `CONNECTED`
-- `DISCONNECTED`
-
-<a id="containerconditiontype"></a>
-
+```python title="Definition"
+ConnectivityType = Literal[
+    "CONNECTED",
+    "DISCONNECTED",
+]
+```
 ## ContainerConditionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ContainerConditionType
+
+def get_value() -> ContainerConditionType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `HEALTHY`
-- `START`
-- `SUCCESS`
-
-<a id="containerinstancefieldtype"></a>
-
+```python title="Definition"
+ContainerConditionType = Literal[
+    "COMPLETE",
+    "HEALTHY",
+    "START",
+    "SUCCESS",
+]
+```
 ## ContainerInstanceFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ContainerInstanceFieldType
+
+def get_value() -> ContainerInstanceFieldType:
+    return "CONTAINER_INSTANCE_HEALTH"
 ```
 
-Values:
-
-- `CONTAINER_INSTANCE_HEALTH`
-- `TAGS`
-
-<a id="containerinstancestatustype"></a>
-
+```python title="Definition"
+ContainerInstanceFieldType = Literal[
+    "CONTAINER_INSTANCE_HEALTH",
+    "TAGS",
+]
+```
 ## ContainerInstanceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ContainerInstanceStatusType
+
+def get_value() -> ContainerInstanceStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DEREGISTERING`
-- `DRAINING`
-- `REGISTERING`
-- `REGISTRATION_FAILED`
-
-<a id="deploymentcontrollertypetype"></a>
-
+```python title="Definition"
+ContainerInstanceStatusType = Literal[
+    "ACTIVE",
+    "DEREGISTERING",
+    "DRAINING",
+    "REGISTERING",
+    "REGISTRATION_FAILED",
+]
+```
 ## DeploymentControllerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import DeploymentControllerTypeType
+
+def get_value() -> DeploymentControllerTypeType:
+    return "CODE_DEPLOY"
 ```
 
-Values:
-
-- `CODE_DEPLOY`
-- `ECS`
-- `EXTERNAL`
-
-<a id="deploymentrolloutstatetype"></a>
-
+```python title="Definition"
+DeploymentControllerTypeType = Literal[
+    "CODE_DEPLOY",
+    "ECS",
+    "EXTERNAL",
+]
+```
 ## DeploymentRolloutStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import DeploymentRolloutStateType
+
+def get_value() -> DeploymentRolloutStateType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `IN_PROGRESS`
-
-<a id="desiredstatustype"></a>
-
+```python title="Definition"
+DeploymentRolloutStateType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "IN_PROGRESS",
+]
+```
 ## DesiredStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import DesiredStatusType
+
+def get_value() -> DesiredStatusType:
+    return "PENDING"
 ```
 
-Values:
-
-- `PENDING`
-- `RUNNING`
-- `STOPPED`
-
-<a id="devicecgrouppermissiontype"></a>
-
+```python title="Definition"
+DesiredStatusType = Literal[
+    "PENDING",
+    "RUNNING",
+    "STOPPED",
+]
+```
 ## DeviceCgroupPermissionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import DeviceCgroupPermissionType
+
+def get_value() -> DeviceCgroupPermissionType:
+    return "mknod"
 ```
 
-Values:
-
-- `mknod`
-- `read`
-- `write`
-
-<a id="efsauthorizationconfigiamtype"></a>
-
+```python title="Definition"
+DeviceCgroupPermissionType = Literal[
+    "mknod",
+    "read",
+    "write",
+]
+```
 ## EFSAuthorizationConfigIAMType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import EFSAuthorizationConfigIAMType
+
+def get_value() -> EFSAuthorizationConfigIAMType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="efstransitencryptiontype"></a>
-
+```python title="Definition"
+EFSAuthorizationConfigIAMType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## EFSTransitEncryptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import EFSTransitEncryptionType
+
+def get_value() -> EFSTransitEncryptionType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="environmentfiletypetype"></a>
-
+```python title="Definition"
+EFSTransitEncryptionType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## EnvironmentFileTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import EnvironmentFileTypeType
+
+def get_value() -> EnvironmentFileTypeType:
+    return "s3"
 ```
 
-Values:
-
-- `s3`
-
-<a id="executecommandloggingtype"></a>
-
+```python title="Definition"
+EnvironmentFileTypeType = Literal[
+    "s3",
+]
+```
 ## ExecuteCommandLoggingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ExecuteCommandLoggingType
+
+def get_value() -> ExecuteCommandLoggingType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `DEFAULT`
-- `NONE`
-- `OVERRIDE`
-
-<a id="firelensconfigurationtypetype"></a>
-
+```python title="Definition"
+ExecuteCommandLoggingType = Literal[
+    "DEFAULT",
+    "NONE",
+    "OVERRIDE",
+]
+```
 ## FirelensConfigurationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import FirelensConfigurationTypeType
+
+def get_value() -> FirelensConfigurationTypeType:
+    return "fluentbit"
 ```
 
-Values:
-
-- `fluentbit`
-- `fluentd`
-
-<a id="healthstatustype"></a>
-
+```python title="Definition"
+FirelensConfigurationTypeType = Literal[
+    "fluentbit",
+    "fluentd",
+]
+```
 ## HealthStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import HealthStatusType
+
+def get_value() -> HealthStatusType:
+    return "HEALTHY"
 ```
 
-Values:
-
-- `HEALTHY`
-- `UNHEALTHY`
-- `UNKNOWN`
-
-<a id="instancehealthcheckstatetype"></a>
-
+```python title="Definition"
+HealthStatusType = Literal[
+    "HEALTHY",
+    "UNHEALTHY",
+    "UNKNOWN",
+]
+```
 ## InstanceHealthCheckStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import InstanceHealthCheckStateType
+
+def get_value() -> InstanceHealthCheckStateType:
+    return "IMPAIRED"
 ```
 
-Values:
-
-- `IMPAIRED`
-- `INITIALIZING`
-- `INSUFFICIENT_DATA`
-- `OK`
-
-<a id="instancehealthchecktypetype"></a>
-
+```python title="Definition"
+InstanceHealthCheckStateType = Literal[
+    "IMPAIRED",
+    "INITIALIZING",
+    "INSUFFICIENT_DATA",
+    "OK",
+]
+```
 ## InstanceHealthCheckTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import InstanceHealthCheckTypeType
+
+def get_value() -> InstanceHealthCheckTypeType:
+    return "CONTAINER_RUNTIME"
 ```
 
-Values:
-
-- `CONTAINER_RUNTIME`
-
-<a id="ipcmodetype"></a>
-
+```python title="Definition"
+InstanceHealthCheckTypeType = Literal[
+    "CONTAINER_RUNTIME",
+]
+```
 ## IpcModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import IpcModeType
+
+def get_value() -> IpcModeType:
+    return "host"
 ```
 
-Values:
-
-- `host`
-- `none`
-- `task`
-
-<a id="launchtypetype"></a>
-
+```python title="Definition"
+IpcModeType = Literal[
+    "host",
+    "none",
+    "task",
+]
+```
 ## LaunchTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import LaunchTypeType
+
+def get_value() -> LaunchTypeType:
+    return "EC2"
 ```
 
-Values:
-
-- `EC2`
-- `EXTERNAL`
-- `FARGATE`
-
-<a id="listaccountsettingspaginatorname"></a>
-
+```python title="Definition"
+LaunchTypeType = Literal[
+    "EC2",
+    "EXTERNAL",
+    "FARGATE",
+]
+```
 ## ListAccountSettingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ListAccountSettingsPaginatorName
+
+def get_value() -> ListAccountSettingsPaginatorName:
+    return "list_account_settings"
 ```
 
-Values:
-
-- `list_account_settings`
-
-<a id="listattributespaginatorname"></a>
-
+```python title="Definition"
+ListAccountSettingsPaginatorName = Literal[
+    "list_account_settings",
+]
+```
 ## ListAttributesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ListAttributesPaginatorName
+
+def get_value() -> ListAttributesPaginatorName:
+    return "list_attributes"
 ```
 
-Values:
-
-- `list_attributes`
-
-<a id="listclusterspaginatorname"></a>
-
+```python title="Definition"
+ListAttributesPaginatorName = Literal[
+    "list_attributes",
+]
+```
 ## ListClustersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ListClustersPaginatorName
+
+def get_value() -> ListClustersPaginatorName:
+    return "list_clusters"
 ```
 
-Values:
-
-- `list_clusters`
-
-<a id="listcontainerinstancespaginatorname"></a>
-
+```python title="Definition"
+ListClustersPaginatorName = Literal[
+    "list_clusters",
+]
+```
 ## ListContainerInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ListContainerInstancesPaginatorName
+
+def get_value() -> ListContainerInstancesPaginatorName:
+    return "list_container_instances"
 ```
 
-Values:
-
-- `list_container_instances`
-
-<a id="listservicespaginatorname"></a>
-
+```python title="Definition"
+ListContainerInstancesPaginatorName = Literal[
+    "list_container_instances",
+]
+```
 ## ListServicesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ListServicesPaginatorName
+
+def get_value() -> ListServicesPaginatorName:
+    return "list_services"
 ```
 
-Values:
-
-- `list_services`
-
-<a id="listtaskdefinitionfamiliespaginatorname"></a>
-
+```python title="Definition"
+ListServicesPaginatorName = Literal[
+    "list_services",
+]
+```
 ## ListTaskDefinitionFamiliesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ListTaskDefinitionFamiliesPaginatorName
+
+def get_value() -> ListTaskDefinitionFamiliesPaginatorName:
+    return "list_task_definition_families"
 ```
 
-Values:
-
-- `list_task_definition_families`
-
-<a id="listtaskdefinitionspaginatorname"></a>
-
+```python title="Definition"
+ListTaskDefinitionFamiliesPaginatorName = Literal[
+    "list_task_definition_families",
+]
+```
 ## ListTaskDefinitionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ListTaskDefinitionsPaginatorName
+
+def get_value() -> ListTaskDefinitionsPaginatorName:
+    return "list_task_definitions"
 ```
 
-Values:
-
-- `list_task_definitions`
-
-<a id="listtaskspaginatorname"></a>
-
+```python title="Definition"
+ListTaskDefinitionsPaginatorName = Literal[
+    "list_task_definitions",
+]
+```
 ## ListTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ListTasksPaginatorName
+
+def get_value() -> ListTasksPaginatorName:
+    return "list_tasks"
 ```
 
-Values:
-
-- `list_tasks`
-
-<a id="logdrivertype"></a>
-
+```python title="Definition"
+ListTasksPaginatorName = Literal[
+    "list_tasks",
+]
+```
 ## LogDriverType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import LogDriverType
+
+def get_value() -> LogDriverType:
+    return "awsfirelens"
 ```
 
-Values:
-
-- `awsfirelens`
-- `awslogs`
-- `fluentd`
-- `gelf`
-- `journald`
-- `json-file`
-- `splunk`
-- `syslog`
-
-<a id="managedagentnametype"></a>
-
+```python title="Definition"
+LogDriverType = Literal[
+    "awsfirelens",
+    "awslogs",
+    "fluentd",
+    "gelf",
+    "journald",
+    "json-file",
+    "splunk",
+    "syslog",
+]
+```
 ## ManagedAgentNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ManagedAgentNameType
+
+def get_value() -> ManagedAgentNameType:
+    return "ExecuteCommandAgent"
 ```
 
-Values:
-
-- `ExecuteCommandAgent`
-
-<a id="managedscalingstatustype"></a>
-
+```python title="Definition"
+ManagedAgentNameType = Literal[
+    "ExecuteCommandAgent",
+]
+```
 ## ManagedScalingStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ManagedScalingStatusType
+
+def get_value() -> ManagedScalingStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="managedterminationprotectiontype"></a>
-
+```python title="Definition"
+ManagedScalingStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## ManagedTerminationProtectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ManagedTerminationProtectionType
+
+def get_value() -> ManagedTerminationProtectionType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="networkmodetype"></a>
-
+```python title="Definition"
+ManagedTerminationProtectionType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## NetworkModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import NetworkModeType
+
+def get_value() -> NetworkModeType:
+    return "awsvpc"
 ```
 
-Values:
-
-- `awsvpc`
-- `bridge`
-- `host`
-- `none`
-
-<a id="osfamilytype"></a>
-
+```python title="Definition"
+NetworkModeType = Literal[
+    "awsvpc",
+    "bridge",
+    "host",
+    "none",
+]
+```
 ## OSFamilyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import OSFamilyType
+
+def get_value() -> OSFamilyType:
+    return "LINUX"
 ```
 
-Values:
-
-- `LINUX`
-- `WINDOWS_SERVER_2004_CORE`
-- `WINDOWS_SERVER_2016_FULL`
-- `WINDOWS_SERVER_2019_CORE`
-- `WINDOWS_SERVER_2019_FULL`
-- `WINDOWS_SERVER_2022_CORE`
-- `WINDOWS_SERVER_2022_FULL`
-- `WINDOWS_SERVER_20H2_CORE`
-
-<a id="pidmodetype"></a>
-
+```python title="Definition"
+OSFamilyType = Literal[
+    "LINUX",
+    "WINDOWS_SERVER_2004_CORE",
+    "WINDOWS_SERVER_2016_FULL",
+    "WINDOWS_SERVER_2019_CORE",
+    "WINDOWS_SERVER_2019_FULL",
+    "WINDOWS_SERVER_2022_CORE",
+    "WINDOWS_SERVER_2022_FULL",
+    "WINDOWS_SERVER_20H2_CORE",
+]
+```
 ## PidModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import PidModeType
+
+def get_value() -> PidModeType:
+    return "host"
 ```
 
-Values:
-
-- `host`
-- `task`
-
-<a id="placementconstrainttypetype"></a>
-
+```python title="Definition"
+PidModeType = Literal[
+    "host",
+    "task",
+]
+```
 ## PlacementConstraintTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import PlacementConstraintTypeType
+
+def get_value() -> PlacementConstraintTypeType:
+    return "distinctInstance"
 ```
 
-Values:
-
-- `distinctInstance`
-- `memberOf`
-
-<a id="placementstrategytypetype"></a>
-
+```python title="Definition"
+PlacementConstraintTypeType = Literal[
+    "distinctInstance",
+    "memberOf",
+]
+```
 ## PlacementStrategyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import PlacementStrategyTypeType
+
+def get_value() -> PlacementStrategyTypeType:
+    return "binpack"
 ```
 
-Values:
-
-- `binpack`
-- `random`
-- `spread`
-
-<a id="platformdevicetypetype"></a>
-
+```python title="Definition"
+PlacementStrategyTypeType = Literal[
+    "binpack",
+    "random",
+    "spread",
+]
+```
 ## PlatformDeviceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import PlatformDeviceTypeType
+
+def get_value() -> PlatformDeviceTypeType:
+    return "GPU"
 ```
 
-Values:
-
-- `GPU`
-
-<a id="propagatetagstype"></a>
-
+```python title="Definition"
+PlatformDeviceTypeType = Literal[
+    "GPU",
+]
+```
 ## PropagateTagsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import PropagateTagsType
+
+def get_value() -> PropagateTagsType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `SERVICE`
-- `TASK_DEFINITION`
-
-<a id="proxyconfigurationtypetype"></a>
-
+```python title="Definition"
+PropagateTagsType = Literal[
+    "NONE",
+    "SERVICE",
+    "TASK_DEFINITION",
+]
+```
 ## ProxyConfigurationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ProxyConfigurationTypeType
+
+def get_value() -> ProxyConfigurationTypeType:
+    return "APPMESH"
 ```
 
-Values:
-
-- `APPMESH`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+ProxyConfigurationTypeType = Literal[
+    "APPMESH",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "GPU"
 ```
 
-Values:
-
-- `GPU`
-- `InferenceAccelerator`
-
-<a id="scaleunittype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "GPU",
+    "InferenceAccelerator",
+]
+```
 ## ScaleUnitType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ScaleUnitType
+
+def get_value() -> ScaleUnitType:
+    return "PERCENT"
 ```
 
-Values:
-
-- `PERCENT`
-
-<a id="schedulingstrategytype"></a>
-
+```python title="Definition"
+ScaleUnitType = Literal[
+    "PERCENT",
+]
+```
 ## SchedulingStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import SchedulingStrategyType
+
+def get_value() -> SchedulingStrategyType:
+    return "DAEMON"
 ```
 
-Values:
-
-- `DAEMON`
-- `REPLICA`
-
-<a id="scopetype"></a>
-
+```python title="Definition"
+SchedulingStrategyType = Literal[
+    "DAEMON",
+    "REPLICA",
+]
+```
 ## ScopeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ScopeType
+
+def get_value() -> ScopeType:
+    return "shared"
 ```
 
-Values:
-
-- `shared`
-- `task`
-
-<a id="servicefieldtype"></a>
-
+```python title="Definition"
+ScopeType = Literal[
+    "shared",
+    "task",
+]
+```
 ## ServiceFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ServiceFieldType
+
+def get_value() -> ServiceFieldType:
+    return "TAGS"
 ```
 
-Values:
-
-- `TAGS`
-
-<a id="servicesinactivewaitername"></a>
-
+```python title="Definition"
+ServiceFieldType = Literal[
+    "TAGS",
+]
+```
 ## ServicesInactiveWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ServicesInactiveWaiterName
+
+def get_value() -> ServicesInactiveWaiterName:
+    return "services_inactive"
 ```
 
-Values:
-
-- `services_inactive`
-
-<a id="servicesstablewaitername"></a>
-
+```python title="Definition"
+ServicesInactiveWaiterName = Literal[
+    "services_inactive",
+]
+```
 ## ServicesStableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ServicesStableWaiterName
+
+def get_value() -> ServicesStableWaiterName:
+    return "services_stable"
 ```
 
-Values:
-
-- `services_stable`
-
-<a id="settingnametype"></a>
-
+```python title="Definition"
+ServicesStableWaiterName = Literal[
+    "services_stable",
+]
+```
 ## SettingNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import SettingNameType
+
+def get_value() -> SettingNameType:
+    return "awsvpcTrunking"
 ```
 
-Values:
-
-- `awsvpcTrunking`
-- `containerInsights`
-- `containerInstanceLongArnFormat`
-- `serviceLongArnFormat`
-- `taskLongArnFormat`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+SettingNameType = Literal[
+    "awsvpcTrunking",
+    "containerInsights",
+    "containerInstanceLongArnFormat",
+    "serviceLongArnFormat",
+    "taskLongArnFormat",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASC"
 ```
 
-Values:
-
-- `ASC`
-- `DESC`
-
-<a id="stabilitystatustype"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "ASC",
+    "DESC",
+]
+```
 ## StabilityStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import StabilityStatusType
+
+def get_value() -> StabilityStatusType:
+    return "STABILIZING"
 ```
 
-Values:
-
-- `STABILIZING`
-- `STEADY_STATE`
-
-<a id="targettypetype"></a>
-
+```python title="Definition"
+StabilityStatusType = Literal[
+    "STABILIZING",
+    "STEADY_STATE",
+]
+```
 ## TargetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TargetTypeType
+
+def get_value() -> TargetTypeType:
+    return "container-instance"
 ```
 
-Values:
-
-- `container-instance`
-
-<a id="taskdefinitionfamilystatustype"></a>
-
+```python title="Definition"
+TargetTypeType = Literal[
+    "container-instance",
+]
+```
 ## TaskDefinitionFamilyStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TaskDefinitionFamilyStatusType
+
+def get_value() -> TaskDefinitionFamilyStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `ALL`
-- `INACTIVE`
-
-<a id="taskdefinitionfieldtype"></a>
-
+```python title="Definition"
+TaskDefinitionFamilyStatusType = Literal[
+    "ACTIVE",
+    "ALL",
+    "INACTIVE",
+]
+```
 ## TaskDefinitionFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TaskDefinitionFieldType
+
+def get_value() -> TaskDefinitionFieldType:
+    return "TAGS"
 ```
 
-Values:
-
-- `TAGS`
-
-<a id="taskdefinitionplacementconstrainttypetype"></a>
-
+```python title="Definition"
+TaskDefinitionFieldType = Literal[
+    "TAGS",
+]
+```
 ## TaskDefinitionPlacementConstraintTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TaskDefinitionPlacementConstraintTypeType
+
+def get_value() -> TaskDefinitionPlacementConstraintTypeType:
+    return "memberOf"
 ```
 
-Values:
-
-- `memberOf`
-
-<a id="taskdefinitionstatustype"></a>
-
+```python title="Definition"
+TaskDefinitionPlacementConstraintTypeType = Literal[
+    "memberOf",
+]
+```
 ## TaskDefinitionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TaskDefinitionStatusType
+
+def get_value() -> TaskDefinitionStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `INACTIVE`
-
-<a id="taskfieldtype"></a>
-
+```python title="Definition"
+TaskDefinitionStatusType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+]
+```
 ## TaskFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TaskFieldType
+
+def get_value() -> TaskFieldType:
+    return "TAGS"
 ```
 
-Values:
-
-- `TAGS`
-
-<a id="tasksetfieldtype"></a>
-
+```python title="Definition"
+TaskFieldType = Literal[
+    "TAGS",
+]
+```
 ## TaskSetFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TaskSetFieldType
+
+def get_value() -> TaskSetFieldType:
+    return "TAGS"
 ```
 
-Values:
-
-- `TAGS`
-
-<a id="taskstopcodetype"></a>
-
+```python title="Definition"
+TaskSetFieldType = Literal[
+    "TAGS",
+]
+```
 ## TaskStopCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TaskStopCodeType
+
+def get_value() -> TaskStopCodeType:
+    return "EssentialContainerExited"
 ```
 
-Values:
-
-- `EssentialContainerExited`
-- `TaskFailedToStart`
-- `UserInitiated`
-
-<a id="tasksrunningwaitername"></a>
-
+```python title="Definition"
+TaskStopCodeType = Literal[
+    "EssentialContainerExited",
+    "TaskFailedToStart",
+    "UserInitiated",
+]
+```
 ## TasksRunningWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TasksRunningWaiterName
+
+def get_value() -> TasksRunningWaiterName:
+    return "tasks_running"
 ```
 
-Values:
-
-- `tasks_running`
-
-<a id="tasksstoppedwaitername"></a>
-
+```python title="Definition"
+TasksRunningWaiterName = Literal[
+    "tasks_running",
+]
+```
 ## TasksStoppedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TasksStoppedWaiterName
+
+def get_value() -> TasksStoppedWaiterName:
+    return "tasks_stopped"
 ```
 
-Values:
-
-- `tasks_stopped`
-
-<a id="transportprotocoltype"></a>
-
+```python title="Definition"
+TasksStoppedWaiterName = Literal[
+    "tasks_stopped",
+]
+```
 ## TransportProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import TransportProtocolType
+
+def get_value() -> TransportProtocolType:
+    return "tcp"
 ```
 
-Values:
-
-- `tcp`
-- `udp`
-
-<a id="ulimitnametype"></a>
-
+```python title="Definition"
+TransportProtocolType = Literal[
+    "tcp",
+    "udp",
+]
+```
 ## UlimitNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import UlimitNameType
+
+def get_value() -> UlimitNameType:
+    return "core"
 ```
 
-Values:
-
-- `core`
-- `cpu`
-- `data`
-- `fsize`
-- `locks`
-- `memlock`
-- `msgqueue`
-- `nice`
-- `nofile`
-- `nproc`
-- `rss`
-- `rtprio`
-- `rttime`
-- `sigpending`
-- `stack`
-
-<a id="ecsservicename"></a>
-
+```python title="Definition"
+UlimitNameType = Literal[
+    "core",
+    "cpu",
+    "data",
+    "fsize",
+    "locks",
+    "memlock",
+    "msgqueue",
+    "nice",
+    "nofile",
+    "nproc",
+    "rss",
+    "rtprio",
+    "rttime",
+    "sigpending",
+    "stack",
+]
+```
 ## ECSServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ECSServiceName
+
+def get_value() -> ECSServiceName:
+    return "ecs"
 ```
 
-Values:
-
-- `ecs`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ECSServiceName = Literal[
+    "ecs",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_account_settings"
 ```
 
-Values:
-
-- `list_account_settings`
-- `list_attributes`
-- `list_clusters`
-- `list_container_instances`
-- `list_services`
-- `list_task_definition_families`
-- `list_task_definitions`
-- `list_tasks`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "list_account_settings",
+    "list_attributes",
+    "list_clusters",
+    "list_container_instances",
+    "list_services",
+    "list_task_definition_families",
+    "list_task_definitions",
+    "list_tasks",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "services_inactive"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "services_inactive",
+    "services_stable",
+    "tasks_running",
+    "tasks_stopped",
+]
+```
+## RegionName
 
-- `services_inactive`
-- `services_stable`
-- `tasks_running`
-- `tasks_stopped`
+```python title="Usage Example"
+from mypy_boto3_ecs.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-managedblockchain-module"></a>
-
-# Type annotations for boto3 ManagedBlockchain module
+#  ManagedBlockchain module
 
 > [Index](../README.md) > ManagedBlockchain
 
-Auto-generated documentation for
-[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
-type annotations stubs module
-[mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
+!!! note ""
 
-- [Type annotations for boto3 ManagedBlockchain module](#type-annotations-for-boto3-managedblockchain-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ManagedBlockchainClient](#managedblockchainclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
+    type annotations stubs module [mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ManagedBlockchain`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[managedblockchain]'
 python -m pip install mypy-boto3-managedblockchain
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,84 +42,41 @@ python -m pip install mypy-boto3-managedblockchain
 python -m pip uninstall -y mypy-boto3-managedblockchain
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="managedblockchainclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ManagedBlockchainClient
 
-Type annotations for `boto3.client("managedblockchain")` as
-[ManagedBlockchainClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("managedblockchain")` as [ManagedBlockchainClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
+
+def get_client() -> ManagedBlockchainClient:
+    return Session().cleint("managedblockchain")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_member](./client.md#create_member)
-- [create_network](./client.md#create_network)
-- [create_node](./client.md#create_node)
-- [create_proposal](./client.md#create_proposal)
-- [delete_member](./client.md#delete_member)
-- [delete_node](./client.md#delete_node)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_member](./client.md#get_member)
-- [get_network](./client.md#get_network)
-- [get_node](./client.md#get_node)
-- [get_proposal](./client.md#get_proposal)
-- [list_invitations](./client.md#list_invitations)
-- [list_members](./client.md#list_members)
-- [list_networks](./client.md#list_networks)
-- [list_nodes](./client.md#list_nodes)
-- [list_proposal_votes](./client.md#list_proposal_votes)
-- [list_proposals](./client.md#list_proposals)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [reject_invitation](./client.md#reject_invitation)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_member](./client.md#update_member)
-- [update_node](./client.md#update_node)
-- [vote_on_proposal](./client.md#vote_on_proposal)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-ManagedBlockchainClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- IllegalActionException
-- InternalServiceErrorException
-- InvalidRequestException
-- ResourceAlreadyExistsException
-- ResourceLimitExceededException
-- ResourceNotFoundException
-- ResourceNotReadyException
-- ThrottlingException
-- TooManyTagsException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_managedblockchain.literals import EditionType
 
-```python
-from mypy_boto3_managedblockchain.literals import EditionType, ...
+def get_value() -> EditionType:
+    return "STANDARD"
 ```
 
 - [EditionType](./literals.md#editiontype)
@@ -156,18 +92,22 @@ from mypy_boto3_managedblockchain.literals import EditionType, ...
 - [ManagedBlockchainServiceName](./literals.md#managedblockchainservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_managedblockchain.type_defs import ApprovalThresholdPolicyTypeDef
 
-```python
-from mypy_boto3_managedblockchain.type_defs import ApprovalThresholdPolicyTypeDef, ...
+def get_value() -> ApprovalThresholdPolicyTypeDef:
+    return {
+        "ThresholdPercentage": ...,
+    }
 ```
 
 - [ApprovalThresholdPolicyTypeDef](./type_defs.md#approvalthresholdpolicytypedef)
@@ -244,3 +184,4 @@ from mypy_boto3_managedblockchain.type_defs import ApprovalThresholdPolicyTypeDe
 - [VoteOnProposalInputRequestTypeDef](./type_defs.md#voteonproposalinputrequesttypedef)
 - [VoteSummaryTypeDef](./type_defs.md#votesummarytypedef)
 - [VotingPolicyTypeDef](./type_defs.md#votingpolicytypedef)
+

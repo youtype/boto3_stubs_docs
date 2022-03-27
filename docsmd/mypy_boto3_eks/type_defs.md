@@ -1,1851 +1,2529 @@
-<a id="typed-dictionaries-for-boto3-eks-module"></a>
-
-# Typed dictionaries for boto3 EKS module
+# Typed dictionaries
 
 > [Index](../README.md) > [EKS](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
-type annotations stubs module
-[mypy-boto3-eks](https://pypi.org/project/mypy-boto3-eks/).
+!!! note ""
 
-- [Typed dictionaries for boto3 EKS module](#typed-dictionaries-for-boto3-eks-module)
-  - [AddonHealthTypeDef](#addonhealthtypedef)
-  - [AddonInfoTypeDef](#addoninfotypedef)
-  - [AddonIssueTypeDef](#addonissuetypedef)
-  - [AddonTypeDef](#addontypedef)
-  - [AddonVersionInfoTypeDef](#addonversioninfotypedef)
-  - [AssociateEncryptionConfigRequestRequestTypeDef](#associateencryptionconfigrequestrequesttypedef)
-  - [AssociateEncryptionConfigResponseTypeDef](#associateencryptionconfigresponsetypedef)
-  - [AssociateIdentityProviderConfigRequestRequestTypeDef](#associateidentityproviderconfigrequestrequesttypedef)
-  - [AssociateIdentityProviderConfigResponseTypeDef](#associateidentityproviderconfigresponsetypedef)
-  - [AutoScalingGroupTypeDef](#autoscalinggrouptypedef)
-  - [CertificateTypeDef](#certificatetypedef)
-  - [ClusterTypeDef](#clustertypedef)
-  - [CompatibilityTypeDef](#compatibilitytypedef)
-  - [ConnectorConfigRequestTypeDef](#connectorconfigrequesttypedef)
-  - [ConnectorConfigResponseTypeDef](#connectorconfigresponsetypedef)
-  - [CreateAddonRequestRequestTypeDef](#createaddonrequestrequesttypedef)
-  - [CreateAddonResponseTypeDef](#createaddonresponsetypedef)
-  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
-  - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
-  - [CreateFargateProfileRequestRequestTypeDef](#createfargateprofilerequestrequesttypedef)
-  - [CreateFargateProfileResponseTypeDef](#createfargateprofileresponsetypedef)
-  - [CreateNodegroupRequestRequestTypeDef](#createnodegrouprequestrequesttypedef)
-  - [CreateNodegroupResponseTypeDef](#createnodegroupresponsetypedef)
-  - [DeleteAddonRequestRequestTypeDef](#deleteaddonrequestrequesttypedef)
-  - [DeleteAddonResponseTypeDef](#deleteaddonresponsetypedef)
-  - [DeleteClusterRequestRequestTypeDef](#deleteclusterrequestrequesttypedef)
-  - [DeleteClusterResponseTypeDef](#deleteclusterresponsetypedef)
-  - [DeleteFargateProfileRequestRequestTypeDef](#deletefargateprofilerequestrequesttypedef)
-  - [DeleteFargateProfileResponseTypeDef](#deletefargateprofileresponsetypedef)
-  - [DeleteNodegroupRequestRequestTypeDef](#deletenodegrouprequestrequesttypedef)
-  - [DeleteNodegroupResponseTypeDef](#deletenodegroupresponsetypedef)
-  - [DeregisterClusterRequestRequestTypeDef](#deregisterclusterrequestrequesttypedef)
-  - [DeregisterClusterResponseTypeDef](#deregisterclusterresponsetypedef)
-  - [DescribeAddonRequestRequestTypeDef](#describeaddonrequestrequesttypedef)
-  - [DescribeAddonResponseTypeDef](#describeaddonresponsetypedef)
-  - [DescribeAddonVersionsRequestRequestTypeDef](#describeaddonversionsrequestrequesttypedef)
-  - [DescribeAddonVersionsResponseTypeDef](#describeaddonversionsresponsetypedef)
-  - [DescribeClusterRequestRequestTypeDef](#describeclusterrequestrequesttypedef)
-  - [DescribeClusterResponseTypeDef](#describeclusterresponsetypedef)
-  - [DescribeFargateProfileRequestRequestTypeDef](#describefargateprofilerequestrequesttypedef)
-  - [DescribeFargateProfileResponseTypeDef](#describefargateprofileresponsetypedef)
-  - [DescribeIdentityProviderConfigRequestRequestTypeDef](#describeidentityproviderconfigrequestrequesttypedef)
-  - [DescribeIdentityProviderConfigResponseTypeDef](#describeidentityproviderconfigresponsetypedef)
-  - [DescribeNodegroupRequestRequestTypeDef](#describenodegrouprequestrequesttypedef)
-  - [DescribeNodegroupResponseTypeDef](#describenodegroupresponsetypedef)
-  - [DescribeUpdateRequestRequestTypeDef](#describeupdaterequestrequesttypedef)
-  - [DescribeUpdateResponseTypeDef](#describeupdateresponsetypedef)
-  - [DisassociateIdentityProviderConfigRequestRequestTypeDef](#disassociateidentityproviderconfigrequestrequesttypedef)
-  - [DisassociateIdentityProviderConfigResponseTypeDef](#disassociateidentityproviderconfigresponsetypedef)
-  - [EncryptionConfigTypeDef](#encryptionconfigtypedef)
-  - [ErrorDetailTypeDef](#errordetailtypedef)
-  - [FargateProfileSelectorTypeDef](#fargateprofileselectortypedef)
-  - [FargateProfileTypeDef](#fargateprofiletypedef)
-  - [IdentityProviderConfigResponseTypeDef](#identityproviderconfigresponsetypedef)
-  - [IdentityProviderConfigTypeDef](#identityproviderconfigtypedef)
-  - [IdentityTypeDef](#identitytypedef)
-  - [IssueTypeDef](#issuetypedef)
-  - [KubernetesNetworkConfigRequestTypeDef](#kubernetesnetworkconfigrequesttypedef)
-  - [KubernetesNetworkConfigResponseTypeDef](#kubernetesnetworkconfigresponsetypedef)
-  - [LaunchTemplateSpecificationTypeDef](#launchtemplatespecificationtypedef)
-  - [ListAddonsRequestRequestTypeDef](#listaddonsrequestrequesttypedef)
-  - [ListAddonsResponseTypeDef](#listaddonsresponsetypedef)
-  - [ListClustersRequestRequestTypeDef](#listclustersrequestrequesttypedef)
-  - [ListClustersResponseTypeDef](#listclustersresponsetypedef)
-  - [ListFargateProfilesRequestRequestTypeDef](#listfargateprofilesrequestrequesttypedef)
-  - [ListFargateProfilesResponseTypeDef](#listfargateprofilesresponsetypedef)
-  - [ListIdentityProviderConfigsRequestRequestTypeDef](#listidentityproviderconfigsrequestrequesttypedef)
-  - [ListIdentityProviderConfigsResponseTypeDef](#listidentityproviderconfigsresponsetypedef)
-  - [ListNodegroupsRequestRequestTypeDef](#listnodegroupsrequestrequesttypedef)
-  - [ListNodegroupsResponseTypeDef](#listnodegroupsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListUpdatesRequestRequestTypeDef](#listupdatesrequestrequesttypedef)
-  - [ListUpdatesResponseTypeDef](#listupdatesresponsetypedef)
-  - [LogSetupTypeDef](#logsetuptypedef)
-  - [LoggingTypeDef](#loggingtypedef)
-  - [NodegroupHealthTypeDef](#nodegrouphealthtypedef)
-  - [NodegroupResourcesTypeDef](#nodegroupresourcestypedef)
-  - [NodegroupScalingConfigTypeDef](#nodegroupscalingconfigtypedef)
-  - [NodegroupTypeDef](#nodegrouptypedef)
-  - [NodegroupUpdateConfigTypeDef](#nodegroupupdateconfigtypedef)
-  - [OIDCTypeDef](#oidctypedef)
-  - [OidcIdentityProviderConfigRequestTypeDef](#oidcidentityproviderconfigrequesttypedef)
-  - [OidcIdentityProviderConfigTypeDef](#oidcidentityproviderconfigtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProviderTypeDef](#providertypedef)
-  - [RegisterClusterRequestRequestTypeDef](#registerclusterrequestrequesttypedef)
-  - [RegisterClusterResponseTypeDef](#registerclusterresponsetypedef)
-  - [RemoteAccessConfigTypeDef](#remoteaccessconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TaintTypeDef](#tainttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAddonRequestRequestTypeDef](#updateaddonrequestrequesttypedef)
-  - [UpdateAddonResponseTypeDef](#updateaddonresponsetypedef)
-  - [UpdateClusterConfigRequestRequestTypeDef](#updateclusterconfigrequestrequesttypedef)
-  - [UpdateClusterConfigResponseTypeDef](#updateclusterconfigresponsetypedef)
-  - [UpdateClusterVersionRequestRequestTypeDef](#updateclusterversionrequestrequesttypedef)
-  - [UpdateClusterVersionResponseTypeDef](#updateclusterversionresponsetypedef)
-  - [UpdateLabelsPayloadTypeDef](#updatelabelspayloadtypedef)
-  - [UpdateNodegroupConfigRequestRequestTypeDef](#updatenodegroupconfigrequestrequesttypedef)
-  - [UpdateNodegroupConfigResponseTypeDef](#updatenodegroupconfigresponsetypedef)
-  - [UpdateNodegroupVersionRequestRequestTypeDef](#updatenodegroupversionrequestrequesttypedef)
-  - [UpdateNodegroupVersionResponseTypeDef](#updatenodegroupversionresponsetypedef)
-  - [UpdateParamTypeDef](#updateparamtypedef)
-  - [UpdateTaintsPayloadTypeDef](#updatetaintspayloadtypedef)
-  - [UpdateTypeDef](#updatetypedef)
-  - [VpcConfigRequestTypeDef](#vpcconfigrequesttypedef)
-  - [VpcConfigResponseTypeDef](#vpcconfigresponsetypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="addonhealthtypedef"></a>
+    Auto-generated documentation for [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
+    type annotations stubs module [mypy-boto3-eks](https://pypi.org/project/mypy-boto3-eks/).
 
 ## AddonHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AddonHealthTypeDef
+
+def get_value() -> AddonHealthTypeDef:
+    return {
+        "issues": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AddonHealthTypeDef(TypedDict):
+    issues: NotRequired[List[AddonIssueTypeDef]],  # (1)
+```
 
-- `issues`: `List`\[[AddonIssueTypeDef](./type_defs.md#addonissuetypedef)\]
-
-<a id="addoninfotypedef"></a>
-
+1. See [:material-code-braces: AddonIssueTypeDef](./type_defs.md#addonissuetypedef) 
 ## AddonInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AddonInfoTypeDef
+
+def get_value() -> AddonInfoTypeDef:
+    return {
+        "addonName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AddonInfoTypeDef(TypedDict):
+    addonName: NotRequired[str],
+    type: NotRequired[str],
+    addonVersions: NotRequired[List[AddonVersionInfoTypeDef]],  # (1)
+```
 
-- `addonName`: `str`
-- `type`: `str`
-- `addonVersions`:
-  `List`\[[AddonVersionInfoTypeDef](./type_defs.md#addonversioninfotypedef)\]
-
-<a id="addonissuetypedef"></a>
-
+1. See [:material-code-braces: AddonVersionInfoTypeDef](./type_defs.md#addonversioninfotypedef) 
 ## AddonIssueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AddonIssueTypeDef
+
+def get_value() -> AddonIssueTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AddonIssueTypeDef(TypedDict):
+    code: NotRequired[AddonIssueCodeType],  # (1)
+    message: NotRequired[str],
+    resourceIds: NotRequired[List[str]],
+```
 
-- `code`: [AddonIssueCodeType](./literals.md#addonissuecodetype)
-- `message`: `str`
-- `resourceIds`: `List`\[`str`\]
-
-<a id="addontypedef"></a>
-
+1. See [:material-code-brackets: AddonIssueCodeType](./literals.md#addonissuecodetype) 
 ## AddonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AddonTypeDef
+
+def get_value() -> AddonTypeDef:
+    return {
+        "addonName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AddonTypeDef(TypedDict):
+    addonName: NotRequired[str],
+    clusterName: NotRequired[str],
+    status: NotRequired[AddonStatusType],  # (1)
+    addonVersion: NotRequired[str],
+    health: NotRequired[AddonHealthTypeDef],  # (2)
+    addonArn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    modifiedAt: NotRequired[datetime],
+    serviceAccountRoleArn: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `addonName`: `str`
-- `clusterName`: `str`
-- `status`: [AddonStatusType](./literals.md#addonstatustype)
-- `addonVersion`: `str`
-- `health`: [AddonHealthTypeDef](./type_defs.md#addonhealthtypedef)
-- `addonArn`: `str`
-- `createdAt`: `datetime`
-- `modifiedAt`: `datetime`
-- `serviceAccountRoleArn`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="addonversioninfotypedef"></a>
-
+1. See [:material-code-brackets: AddonStatusType](./literals.md#addonstatustype) 
+2. See [:material-code-braces: AddonHealthTypeDef](./type_defs.md#addonhealthtypedef) 
 ## AddonVersionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AddonVersionInfoTypeDef
+
+def get_value() -> AddonVersionInfoTypeDef:
+    return {
+        "addonVersion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AddonVersionInfoTypeDef(TypedDict):
+    addonVersion: NotRequired[str],
+    architecture: NotRequired[List[str]],
+    compatibilities: NotRequired[List[CompatibilityTypeDef]],  # (1)
+```
 
-- `addonVersion`: `str`
-- `architecture`: `List`\[`str`\]
-- `compatibilities`:
-  `List`\[[CompatibilityTypeDef](./type_defs.md#compatibilitytypedef)\]
-
-<a id="associateencryptionconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CompatibilityTypeDef](./type_defs.md#compatibilitytypedef) 
 ## AssociateEncryptionConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AssociateEncryptionConfigRequestRequestTypeDef
+
+def get_value() -> AssociateEncryptionConfigRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "encryptionConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateEncryptionConfigRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    encryptionConfig: Sequence[EncryptionConfigTypeDef],  # (1)
+    clientRequestToken: NotRequired[str],
+```
 
-- `clusterName`: `str`
-- `encryptionConfig`:
-  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-
-<a id="associateencryptionconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
 ## AssociateEncryptionConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AssociateEncryptionConfigResponseTypeDef
+
+def get_value() -> AssociateEncryptionConfigResponseTypeDef:
+    return {
+        "update": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateEncryptionConfigResponseTypeDef(TypedDict):
+    update: UpdateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associateidentityproviderconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateIdentityProviderConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AssociateIdentityProviderConfigRequestRequestTypeDef
+
+def get_value() -> AssociateIdentityProviderConfigRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "oidc": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateIdentityProviderConfigRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    oidc: OidcIdentityProviderConfigRequestTypeDef,  # (1)
+    tags: NotRequired[Mapping[str, str]],
+    clientRequestToken: NotRequired[str],
+```
 
-- `clusterName`: `str`
-- `oidc`:
-  [OidcIdentityProviderConfigRequestTypeDef](./type_defs.md#oidcidentityproviderconfigrequesttypedef)
-
-Optional fields:
-
-- `tags`: `Mapping`\[`str`, `str`\]
-- `clientRequestToken`: `str`
-
-<a id="associateidentityproviderconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: OidcIdentityProviderConfigRequestTypeDef](./type_defs.md#oidcidentityproviderconfigrequesttypedef) 
 ## AssociateIdentityProviderConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AssociateIdentityProviderConfigResponseTypeDef
+
+def get_value() -> AssociateIdentityProviderConfigResponseTypeDef:
+    return {
+        "update": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateIdentityProviderConfigResponseTypeDef(TypedDict):
+    update: UpdateTypeDef,  # (1)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="autoscalinggrouptypedef"></a>
-
+1. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AutoScalingGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import AutoScalingGroupTypeDef
+
+def get_value() -> AutoScalingGroupTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-
-<a id="certificatetypedef"></a>
+```python title="Definition"
+class AutoScalingGroupTypeDef(TypedDict):
+    name: NotRequired[str],
+```
 
 ## CertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CertificateTypeDef
+
+def get_value() -> CertificateTypeDef:
+    return {
+        "data": ...,
+    }
 ```
 
-Optional fields:
-
-- `data`: `str`
-
-<a id="clustertypedef"></a>
+```python title="Definition"
+class CertificateTypeDef(TypedDict):
+    data: NotRequired[str],
+```
 
 ## ClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ClusterTypeDef
+
+def get_value() -> ClusterTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterTypeDef(TypedDict):
+    name: NotRequired[str],
+    arn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    version: NotRequired[str],
+    endpoint: NotRequired[str],
+    roleArn: NotRequired[str],
+    resourcesVpcConfig: NotRequired[VpcConfigResponseTypeDef],  # (1)
+    kubernetesNetworkConfig: NotRequired[KubernetesNetworkConfigResponseTypeDef],  # (2)
+    logging: NotRequired[LoggingTypeDef],  # (3)
+    identity: NotRequired[IdentityTypeDef],  # (4)
+    status: NotRequired[ClusterStatusType],  # (5)
+    certificateAuthority: NotRequired[CertificateTypeDef],  # (6)
+    clientRequestToken: NotRequired[str],
+    platformVersion: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    encryptionConfig: NotRequired[List[EncryptionConfigTypeDef]],  # (7)
+    connectorConfig: NotRequired[ConnectorConfigResponseTypeDef],  # (8)
+```
 
-- `name`: `str`
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `version`: `str`
-- `endpoint`: `str`
-- `roleArn`: `str`
-- `resourcesVpcConfig`:
-  [VpcConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
-- `kubernetesNetworkConfig`:
-  [KubernetesNetworkConfigResponseTypeDef](./type_defs.md#kubernetesnetworkconfigresponsetypedef)
-- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
-- `identity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `status`: [ClusterStatusType](./literals.md#clusterstatustype)
-- `certificateAuthority`:
-  [CertificateTypeDef](./type_defs.md#certificatetypedef)
-- `clientRequestToken`: `str`
-- `platformVersion`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `encryptionConfig`:
-  `List`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
-- `connectorConfig`:
-  [ConnectorConfigResponseTypeDef](./type_defs.md#connectorconfigresponsetypedef)
-
-<a id="compatibilitytypedef"></a>
-
+1. See [:material-code-braces: VpcConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef) 
+2. See [:material-code-braces: KubernetesNetworkConfigResponseTypeDef](./type_defs.md#kubernetesnetworkconfigresponsetypedef) 
+3. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
+4. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+5. See [:material-code-brackets: ClusterStatusType](./literals.md#clusterstatustype) 
+6. See [:material-code-braces: CertificateTypeDef](./type_defs.md#certificatetypedef) 
+7. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+8. See [:material-code-braces: ConnectorConfigResponseTypeDef](./type_defs.md#connectorconfigresponsetypedef) 
 ## CompatibilityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CompatibilityTypeDef
+
+def get_value() -> CompatibilityTypeDef:
+    return {
+        "clusterVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `clusterVersion`: `str`
-- `platformVersions`: `List`\[`str`\]
-- `defaultVersion`: `bool`
-
-<a id="connectorconfigrequesttypedef"></a>
+```python title="Definition"
+class CompatibilityTypeDef(TypedDict):
+    clusterVersion: NotRequired[str],
+    platformVersions: NotRequired[List[str]],
+    defaultVersion: NotRequired[bool],
+```
 
 ## ConnectorConfigRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ConnectorConfigRequestTypeDef
+
+def get_value() -> ConnectorConfigRequestTypeDef:
+    return {
+        "roleArn": ...,
+        "provider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConnectorConfigRequestTypeDef(TypedDict):
+    roleArn: str,
+    provider: ConnectorConfigProviderType,  # (1)
+```
 
-- `roleArn`: `str`
-- `provider`:
-  [ConnectorConfigProviderType](./literals.md#connectorconfigprovidertype)
-
-<a id="connectorconfigresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConnectorConfigProviderType](./literals.md#connectorconfigprovidertype) 
 ## ConnectorConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ConnectorConfigResponseTypeDef
+
+def get_value() -> ConnectorConfigResponseTypeDef:
+    return {
+        "activationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `activationId`: `str`
-- `activationCode`: `str`
-- `activationExpiry`: `datetime`
-- `provider`: `str`
-- `roleArn`: `str`
-
-<a id="createaddonrequestrequesttypedef"></a>
+```python title="Definition"
+class ConnectorConfigResponseTypeDef(TypedDict):
+    activationId: NotRequired[str],
+    activationCode: NotRequired[str],
+    activationExpiry: NotRequired[datetime],
+    provider: NotRequired[str],
+    roleArn: NotRequired[str],
+```
 
 ## CreateAddonRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CreateAddonRequestRequestTypeDef
+
+def get_value() -> CreateAddonRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "addonName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAddonRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    addonName: str,
+    addonVersion: NotRequired[str],
+    serviceAccountRoleArn: NotRequired[str],
+    resolveConflicts: NotRequired[ResolveConflictsType],  # (1)
+    clientRequestToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `clusterName`: `str`
-- `addonName`: `str`
-
-Optional fields:
-
-- `addonVersion`: `str`
-- `serviceAccountRoleArn`: `str`
-- `resolveConflicts`:
-  [ResolveConflictsType](./literals.md#resolveconflictstype)
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createaddonresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResolveConflictsType](./literals.md#resolveconflictstype) 
 ## CreateAddonResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CreateAddonResponseTypeDef
+
+def get_value() -> CreateAddonResponseTypeDef:
+    return {
+        "addon": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAddonResponseTypeDef(TypedDict):
+    addon: AddonTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `addon`: [AddonTypeDef](./type_defs.md#addontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AddonTypeDef](./type_defs.md#addontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CreateClusterRequestRequestTypeDef
+
+def get_value() -> CreateClusterRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "roleArn": ...,
+        "resourcesVpcConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterRequestRequestTypeDef(TypedDict):
+    name: str,
+    roleArn: str,
+    resourcesVpcConfig: VpcConfigRequestTypeDef,  # (1)
+    version: NotRequired[str],
+    kubernetesNetworkConfig: NotRequired[KubernetesNetworkConfigRequestTypeDef],  # (2)
+    logging: NotRequired[LoggingTypeDef],  # (3)
+    clientRequestToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+    encryptionConfig: NotRequired[Sequence[EncryptionConfigTypeDef]],  # (4)
+```
 
-- `name`: `str`
-- `roleArn`: `str`
-- `resourcesVpcConfig`:
-  [VpcConfigRequestTypeDef](./type_defs.md#vpcconfigrequesttypedef)
-
-Optional fields:
-
-- `version`: `str`
-- `kubernetesNetworkConfig`:
-  [KubernetesNetworkConfigRequestTypeDef](./type_defs.md#kubernetesnetworkconfigrequesttypedef)
-- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `encryptionConfig`:
-  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
-
-<a id="createclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: VpcConfigRequestTypeDef](./type_defs.md#vpcconfigrequesttypedef) 
+2. See [:material-code-braces: KubernetesNetworkConfigRequestTypeDef](./type_defs.md#kubernetesnetworkconfigrequesttypedef) 
+3. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
+4. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
 ## CreateClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CreateClusterResponseTypeDef
+
+def get_value() -> CreateClusterResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfargateprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFargateProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CreateFargateProfileRequestRequestTypeDef
+
+def get_value() -> CreateFargateProfileRequestRequestTypeDef:
+    return {
+        "fargateProfileName": ...,
+        "clusterName": ...,
+        "podExecutionRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFargateProfileRequestRequestTypeDef(TypedDict):
+    fargateProfileName: str,
+    clusterName: str,
+    podExecutionRoleArn: str,
+    subnets: NotRequired[Sequence[str]],
+    selectors: NotRequired[Sequence[FargateProfileSelectorTypeDef]],  # (1)
+    clientRequestToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `fargateProfileName`: `str`
-- `clusterName`: `str`
-- `podExecutionRoleArn`: `str`
-
-Optional fields:
-
-- `subnets`: `Sequence`\[`str`\]
-- `selectors`:
-  `Sequence`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createfargateprofileresponsetypedef"></a>
-
+1. See [:material-code-braces: FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef) 
 ## CreateFargateProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CreateFargateProfileResponseTypeDef
+
+def get_value() -> CreateFargateProfileResponseTypeDef:
+    return {
+        "fargateProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFargateProfileResponseTypeDef(TypedDict):
+    fargateProfile: FargateProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `fargateProfile`:
-  [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createnodegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateNodegroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CreateNodegroupRequestRequestTypeDef
+
+def get_value() -> CreateNodegroupRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "nodegroupName": ...,
+        "subnets": ...,
+        "nodeRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNodegroupRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    nodegroupName: str,
+    subnets: Sequence[str],
+    nodeRole: str,
+    scalingConfig: NotRequired[NodegroupScalingConfigTypeDef],  # (1)
+    diskSize: NotRequired[int],
+    instanceTypes: NotRequired[Sequence[str]],
+    amiType: NotRequired[AMITypesType],  # (2)
+    remoteAccess: NotRequired[RemoteAccessConfigTypeDef],  # (3)
+    labels: NotRequired[Mapping[str, str]],
+    taints: NotRequired[Sequence[TaintTypeDef]],  # (4)
+    tags: NotRequired[Mapping[str, str]],
+    clientRequestToken: NotRequired[str],
+    launchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (5)
+    updateConfig: NotRequired[NodegroupUpdateConfigTypeDef],  # (6)
+    capacityType: NotRequired[CapacityTypesType],  # (7)
+    version: NotRequired[str],
+    releaseVersion: NotRequired[str],
+```
 
-- `clusterName`: `str`
-- `nodegroupName`: `str`
-- `subnets`: `Sequence`\[`str`\]
-- `nodeRole`: `str`
-
-Optional fields:
-
-- `scalingConfig`:
-  [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
-- `diskSize`: `int`
-- `instanceTypes`: `Sequence`\[`str`\]
-- `amiType`: [AMITypesType](./literals.md#amitypestype)
-- `remoteAccess`:
-  [RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef)
-- `labels`: `Mapping`\[`str`, `str`\]
-- `taints`: `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `clientRequestToken`: `str`
-- `launchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
-- `updateConfig`:
-  [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
-- `capacityType`: [CapacityTypesType](./literals.md#capacitytypestype)
-- `version`: `str`
-- `releaseVersion`: `str`
-
-<a id="createnodegroupresponsetypedef"></a>
-
+1. See [:material-code-braces: NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef) 
+2. See [:material-code-brackets: AMITypesType](./literals.md#amitypestype) 
+3. See [:material-code-braces: RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef) 
+4. See [:material-code-braces: TaintTypeDef](./type_defs.md#tainttypedef) 
+5. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+6. See [:material-code-braces: NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef) 
+7. See [:material-code-brackets: CapacityTypesType](./literals.md#capacitytypestype) 
 ## CreateNodegroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import CreateNodegroupResponseTypeDef
+
+def get_value() -> CreateNodegroupResponseTypeDef:
+    return {
+        "nodegroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNodegroupResponseTypeDef(TypedDict):
+    nodegroup: NodegroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nodegroup`: [NodegroupTypeDef](./type_defs.md#nodegrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteaddonrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NodegroupTypeDef](./type_defs.md#nodegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAddonRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeleteAddonRequestRequestTypeDef
+
+def get_value() -> DeleteAddonRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "addonName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-- `addonName`: `str`
-
-Optional fields:
-
-- `preserve`: `bool`
-
-<a id="deleteaddonresponsetypedef"></a>
+```python title="Definition"
+class DeleteAddonRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    addonName: str,
+    preserve: NotRequired[bool],
+```
 
 ## DeleteAddonResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeleteAddonResponseTypeDef
+
+def get_value() -> DeleteAddonResponseTypeDef:
+    return {
+        "addon": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAddonResponseTypeDef(TypedDict):
+    addon: AddonTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `addon`: [AddonTypeDef](./type_defs.md#addontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AddonTypeDef](./type_defs.md#addontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeleteClusterRequestRequestTypeDef
+
+def get_value() -> DeleteClusterRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="deleteclusterresponsetypedef"></a>
+```python title="Definition"
+class DeleteClusterRequestRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DeleteClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeleteClusterResponseTypeDef
+
+def get_value() -> DeleteClusterResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteClusterResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletefargateprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteFargateProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeleteFargateProfileRequestRequestTypeDef
+
+def get_value() -> DeleteFargateProfileRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "fargateProfileName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-- `fargateProfileName`: `str`
-
-<a id="deletefargateprofileresponsetypedef"></a>
+```python title="Definition"
+class DeleteFargateProfileRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    fargateProfileName: str,
+```
 
 ## DeleteFargateProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeleteFargateProfileResponseTypeDef
+
+def get_value() -> DeleteFargateProfileResponseTypeDef:
+    return {
+        "fargateProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteFargateProfileResponseTypeDef(TypedDict):
+    fargateProfile: FargateProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `fargateProfile`:
-  [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletenodegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteNodegroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeleteNodegroupRequestRequestTypeDef
+
+def get_value() -> DeleteNodegroupRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "nodegroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-- `nodegroupName`: `str`
-
-<a id="deletenodegroupresponsetypedef"></a>
+```python title="Definition"
+class DeleteNodegroupRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    nodegroupName: str,
+```
 
 ## DeleteNodegroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeleteNodegroupResponseTypeDef
+
+def get_value() -> DeleteNodegroupResponseTypeDef:
+    return {
+        "nodegroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteNodegroupResponseTypeDef(TypedDict):
+    nodegroup: NodegroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nodegroup`: [NodegroupTypeDef](./type_defs.md#nodegrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deregisterclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NodegroupTypeDef](./type_defs.md#nodegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeregisterClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeregisterClusterRequestRequestTypeDef
+
+def get_value() -> DeregisterClusterRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="deregisterclusterresponsetypedef"></a>
+```python title="Definition"
+class DeregisterClusterRequestRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DeregisterClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DeregisterClusterResponseTypeDef
+
+def get_value() -> DeregisterClusterResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterClusterResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAddonRequestAddonActiveWaitTypeDef
 
-<a id="describeaddonrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeAddonRequestAddonActiveWaitTypeDef
 
+def get_value() -> DescribeAddonRequestAddonActiveWaitTypeDef:
+    return {
+        "clusterName": ...,
+        "addonName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAddonRequestAddonActiveWaitTypeDef(TypedDict):
+    clusterName: str,
+    addonName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeAddonRequestAddonDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeAddonRequestAddonDeletedWaitTypeDef
+
+def get_value() -> DescribeAddonRequestAddonDeletedWaitTypeDef:
+    return {
+        "clusterName": ...,
+        "addonName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAddonRequestAddonDeletedWaitTypeDef(TypedDict):
+    clusterName: str,
+    addonName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeAddonRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeAddonRequestRequestTypeDef
+
+def get_value() -> DescribeAddonRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "addonName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-- `addonName`: `str`
-
-<a id="describeaddonresponsetypedef"></a>
+```python title="Definition"
+class DescribeAddonRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    addonName: str,
+```
 
 ## DescribeAddonResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeAddonResponseTypeDef
+
+def get_value() -> DescribeAddonResponseTypeDef:
+    return {
+        "addon": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAddonResponseTypeDef(TypedDict):
+    addon: AddonTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `addon`: [AddonTypeDef](./type_defs.md#addontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AddonTypeDef](./type_defs.md#addontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAddonVersionsRequestDescribeAddonVersionsPaginateTypeDef
 
-<a id="describeaddonversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeAddonVersionsRequestDescribeAddonVersionsPaginateTypeDef
 
+def get_value() -> DescribeAddonVersionsRequestDescribeAddonVersionsPaginateTypeDef:
+    return {
+        "kubernetesVersion": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAddonVersionsRequestDescribeAddonVersionsPaginateTypeDef(TypedDict):
+    kubernetesVersion: NotRequired[str],
+    addonName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAddonVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeAddonVersionsRequestRequestTypeDef
+
+def get_value() -> DescribeAddonVersionsRequestRequestTypeDef:
+    return {
+        "kubernetesVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `kubernetesVersion`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `addonName`: `str`
-
-<a id="describeaddonversionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeAddonVersionsRequestRequestTypeDef(TypedDict):
+    kubernetesVersion: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    addonName: NotRequired[str],
+```
 
 ## DescribeAddonVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeAddonVersionsResponseTypeDef
+
+def get_value() -> DescribeAddonVersionsResponseTypeDef:
+    return {
+        "addons": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAddonVersionsResponseTypeDef(TypedDict):
+    addons: List[AddonInfoTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `addons`: `List`\[[AddonInfoTypeDef](./type_defs.md#addoninfotypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AddonInfoTypeDef](./type_defs.md#addoninfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeClusterRequestClusterActiveWaitTypeDef
 
-<a id="describeclusterrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeClusterRequestClusterActiveWaitTypeDef
 
+def get_value() -> DescribeClusterRequestClusterActiveWaitTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterRequestClusterActiveWaitTypeDef(TypedDict):
+    name: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeClusterRequestClusterDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeClusterRequestClusterDeletedWaitTypeDef
+
+def get_value() -> DescribeClusterRequestClusterDeletedWaitTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterRequestClusterDeletedWaitTypeDef(TypedDict):
+    name: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeClusterRequestRequestTypeDef
+
+def get_value() -> DescribeClusterRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="describeclusterresponsetypedef"></a>
+```python title="Definition"
+class DescribeClusterRequestRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DescribeClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeClusterResponseTypeDef
+
+def get_value() -> DescribeClusterResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClusterResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFargateProfileRequestFargateProfileActiveWaitTypeDef
 
-<a id="describefargateprofilerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeFargateProfileRequestFargateProfileActiveWaitTypeDef
 
+def get_value() -> DescribeFargateProfileRequestFargateProfileActiveWaitTypeDef:
+    return {
+        "clusterName": ...,
+        "fargateProfileName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFargateProfileRequestFargateProfileActiveWaitTypeDef(TypedDict):
+    clusterName: str,
+    fargateProfileName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeFargateProfileRequestFargateProfileDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeFargateProfileRequestFargateProfileDeletedWaitTypeDef
+
+def get_value() -> DescribeFargateProfileRequestFargateProfileDeletedWaitTypeDef:
+    return {
+        "clusterName": ...,
+        "fargateProfileName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFargateProfileRequestFargateProfileDeletedWaitTypeDef(TypedDict):
+    clusterName: str,
+    fargateProfileName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeFargateProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeFargateProfileRequestRequestTypeDef
+
+def get_value() -> DescribeFargateProfileRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "fargateProfileName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-- `fargateProfileName`: `str`
-
-<a id="describefargateprofileresponsetypedef"></a>
+```python title="Definition"
+class DescribeFargateProfileRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    fargateProfileName: str,
+```
 
 ## DescribeFargateProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeFargateProfileResponseTypeDef
+
+def get_value() -> DescribeFargateProfileResponseTypeDef:
+    return {
+        "fargateProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFargateProfileResponseTypeDef(TypedDict):
+    fargateProfile: FargateProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `fargateProfile`:
-  [FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeidentityproviderconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FargateProfileTypeDef](./type_defs.md#fargateprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeIdentityProviderConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeIdentityProviderConfigRequestRequestTypeDef
+
+def get_value() -> DescribeIdentityProviderConfigRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "identityProviderConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeIdentityProviderConfigRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    identityProviderConfig: IdentityProviderConfigTypeDef,  # (1)
+```
 
-- `clusterName`: `str`
-- `identityProviderConfig`:
-  [IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef)
-
-<a id="describeidentityproviderconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef) 
 ## DescribeIdentityProviderConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeIdentityProviderConfigResponseTypeDef
+
+def get_value() -> DescribeIdentityProviderConfigResponseTypeDef:
+    return {
+        "identityProviderConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeIdentityProviderConfigResponseTypeDef(TypedDict):
+    identityProviderConfig: IdentityProviderConfigResponseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `identityProviderConfig`:
-  [IdentityProviderConfigResponseTypeDef](./type_defs.md#identityproviderconfigresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: IdentityProviderConfigResponseTypeDef](./type_defs.md#identityproviderconfigresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeNodegroupRequestNodegroupActiveWaitTypeDef
 
-<a id="describenodegrouprequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeNodegroupRequestNodegroupActiveWaitTypeDef
 
+def get_value() -> DescribeNodegroupRequestNodegroupActiveWaitTypeDef:
+    return {
+        "clusterName": ...,
+        "nodegroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNodegroupRequestNodegroupActiveWaitTypeDef(TypedDict):
+    clusterName: str,
+    nodegroupName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeNodegroupRequestNodegroupDeletedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import DescribeNodegroupRequestNodegroupDeletedWaitTypeDef
+
+def get_value() -> DescribeNodegroupRequestNodegroupDeletedWaitTypeDef:
+    return {
+        "clusterName": ...,
+        "nodegroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNodegroupRequestNodegroupDeletedWaitTypeDef(TypedDict):
+    clusterName: str,
+    nodegroupName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeNodegroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeNodegroupRequestRequestTypeDef
+
+def get_value() -> DescribeNodegroupRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "nodegroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-- `nodegroupName`: `str`
-
-<a id="describenodegroupresponsetypedef"></a>
+```python title="Definition"
+class DescribeNodegroupRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    nodegroupName: str,
+```
 
 ## DescribeNodegroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeNodegroupResponseTypeDef
+
+def get_value() -> DescribeNodegroupResponseTypeDef:
+    return {
+        "nodegroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNodegroupResponseTypeDef(TypedDict):
+    nodegroup: NodegroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nodegroup`: [NodegroupTypeDef](./type_defs.md#nodegrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeupdaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NodegroupTypeDef](./type_defs.md#nodegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUpdateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeUpdateRequestRequestTypeDef
+
+def get_value() -> DescribeUpdateRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "updateId": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `updateId`: `str`
-
-Optional fields:
-
-- `nodegroupName`: `str`
-- `addonName`: `str`
-
-<a id="describeupdateresponsetypedef"></a>
+```python title="Definition"
+class DescribeUpdateRequestRequestTypeDef(TypedDict):
+    name: str,
+    updateId: str,
+    nodegroupName: NotRequired[str],
+    addonName: NotRequired[str],
+```
 
 ## DescribeUpdateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DescribeUpdateResponseTypeDef
+
+def get_value() -> DescribeUpdateResponseTypeDef:
+    return {
+        "update": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUpdateResponseTypeDef(TypedDict):
+    update: UpdateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociateidentityproviderconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateIdentityProviderConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DisassociateIdentityProviderConfigRequestRequestTypeDef
+
+def get_value() -> DisassociateIdentityProviderConfigRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "identityProviderConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateIdentityProviderConfigRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    identityProviderConfig: IdentityProviderConfigTypeDef,  # (1)
+    clientRequestToken: NotRequired[str],
+```
 
-- `clusterName`: `str`
-- `identityProviderConfig`:
-  [IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef)
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-
-<a id="disassociateidentityproviderconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef) 
 ## DisassociateIdentityProviderConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import DisassociateIdentityProviderConfigResponseTypeDef
+
+def get_value() -> DisassociateIdentityProviderConfigResponseTypeDef:
+    return {
+        "update": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateIdentityProviderConfigResponseTypeDef(TypedDict):
+    update: UpdateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="encryptionconfigtypedef"></a>
-
+1. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EncryptionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import EncryptionConfigTypeDef
+
+def get_value() -> EncryptionConfigTypeDef:
+    return {
+        "resources": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EncryptionConfigTypeDef(TypedDict):
+    resources: NotRequired[Sequence[str]],
+    provider: NotRequired[ProviderTypeDef],  # (1)
+```
 
-- `resources`: `Sequence`\[`str`\]
-- `provider`: [ProviderTypeDef](./type_defs.md#providertypedef)
-
-<a id="errordetailtypedef"></a>
-
+1. See [:material-code-braces: ProviderTypeDef](./type_defs.md#providertypedef) 
 ## ErrorDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ErrorDetailTypeDef
+
+def get_value() -> ErrorDetailTypeDef:
+    return {
+        "errorCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ErrorDetailTypeDef(TypedDict):
+    errorCode: NotRequired[ErrorCodeType],  # (1)
+    errorMessage: NotRequired[str],
+    resourceIds: NotRequired[List[str]],
+```
 
-- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
-- `errorMessage`: `str`
-- `resourceIds`: `List`\[`str`\]
-
-<a id="fargateprofileselectortypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## FargateProfileSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import FargateProfileSelectorTypeDef
+
+def get_value() -> FargateProfileSelectorTypeDef:
+    return {
+        "namespace": ...,
+    }
 ```
 
-Optional fields:
-
-- `namespace`: `str`
-- `labels`: `Mapping`\[`str`, `str`\]
-
-<a id="fargateprofiletypedef"></a>
+```python title="Definition"
+class FargateProfileSelectorTypeDef(TypedDict):
+    namespace: NotRequired[str],
+    labels: NotRequired[Mapping[str, str]],
+```
 
 ## FargateProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import FargateProfileTypeDef
+
+def get_value() -> FargateProfileTypeDef:
+    return {
+        "fargateProfileName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FargateProfileTypeDef(TypedDict):
+    fargateProfileName: NotRequired[str],
+    fargateProfileArn: NotRequired[str],
+    clusterName: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    podExecutionRoleArn: NotRequired[str],
+    subnets: NotRequired[List[str]],
+    selectors: NotRequired[List[FargateProfileSelectorTypeDef]],  # (1)
+    status: NotRequired[FargateProfileStatusType],  # (2)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `fargateProfileName`: `str`
-- `fargateProfileArn`: `str`
-- `clusterName`: `str`
-- `createdAt`: `datetime`
-- `podExecutionRoleArn`: `str`
-- `subnets`: `List`\[`str`\]
-- `selectors`:
-  `List`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
-- `status`: [FargateProfileStatusType](./literals.md#fargateprofilestatustype)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="identityproviderconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef) 
+2. See [:material-code-brackets: FargateProfileStatusType](./literals.md#fargateprofilestatustype) 
 ## IdentityProviderConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import IdentityProviderConfigResponseTypeDef
+
+def get_value() -> IdentityProviderConfigResponseTypeDef:
+    return {
+        "oidc": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IdentityProviderConfigResponseTypeDef(TypedDict):
+    oidc: NotRequired[OidcIdentityProviderConfigTypeDef],  # (1)
+```
 
-- `oidc`:
-  [OidcIdentityProviderConfigTypeDef](./type_defs.md#oidcidentityproviderconfigtypedef)
-
-<a id="identityproviderconfigtypedef"></a>
-
+1. See [:material-code-braces: OidcIdentityProviderConfigTypeDef](./type_defs.md#oidcidentityproviderconfigtypedef) 
 ## IdentityProviderConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import IdentityProviderConfigTypeDef
+
+def get_value() -> IdentityProviderConfigTypeDef:
+    return {
+        "type": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `type`: `str`
-- `name`: `str`
-
-<a id="identitytypedef"></a>
+```python title="Definition"
+class IdentityProviderConfigTypeDef(TypedDict):
+    type: str,
+    name: str,
+```
 
 ## IdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import IdentityTypeDef
+
+def get_value() -> IdentityTypeDef:
+    return {
+        "oidc": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IdentityTypeDef(TypedDict):
+    oidc: NotRequired[OIDCTypeDef],  # (1)
+```
 
-- `oidc`: [OIDCTypeDef](./type_defs.md#oidctypedef)
-
-<a id="issuetypedef"></a>
-
+1. See [:material-code-braces: OIDCTypeDef](./type_defs.md#oidctypedef) 
 ## IssueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import IssueTypeDef
+
+def get_value() -> IssueTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IssueTypeDef(TypedDict):
+    code: NotRequired[NodegroupIssueCodeType],  # (1)
+    message: NotRequired[str],
+    resourceIds: NotRequired[List[str]],
+```
 
-- `code`: [NodegroupIssueCodeType](./literals.md#nodegroupissuecodetype)
-- `message`: `str`
-- `resourceIds`: `List`\[`str`\]
-
-<a id="kubernetesnetworkconfigrequesttypedef"></a>
-
+1. See [:material-code-brackets: NodegroupIssueCodeType](./literals.md#nodegroupissuecodetype) 
 ## KubernetesNetworkConfigRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import KubernetesNetworkConfigRequestTypeDef
+
+def get_value() -> KubernetesNetworkConfigRequestTypeDef:
+    return {
+        "serviceIpv4Cidr": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KubernetesNetworkConfigRequestTypeDef(TypedDict):
+    serviceIpv4Cidr: NotRequired[str],
+    ipFamily: NotRequired[IpFamilyType],  # (1)
+```
 
-- `serviceIpv4Cidr`: `str`
-- `ipFamily`: [IpFamilyType](./literals.md#ipfamilytype)
-
-<a id="kubernetesnetworkconfigresponsetypedef"></a>
-
+1. See [:material-code-brackets: IpFamilyType](./literals.md#ipfamilytype) 
 ## KubernetesNetworkConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import KubernetesNetworkConfigResponseTypeDef
+
+def get_value() -> KubernetesNetworkConfigResponseTypeDef:
+    return {
+        "serviceIpv4Cidr": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KubernetesNetworkConfigResponseTypeDef(TypedDict):
+    serviceIpv4Cidr: NotRequired[str],
+    serviceIpv6Cidr: NotRequired[str],
+    ipFamily: NotRequired[IpFamilyType],  # (1)
+```
 
-- `serviceIpv4Cidr`: `str`
-- `serviceIpv6Cidr`: `str`
-- `ipFamily`: [IpFamilyType](./literals.md#ipfamilytype)
-
-<a id="launchtemplatespecificationtypedef"></a>
-
+1. See [:material-code-brackets: IpFamilyType](./literals.md#ipfamilytype) 
 ## LaunchTemplateSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import LaunchTemplateSpecificationTypeDef
+
+def get_value() -> LaunchTemplateSpecificationTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LaunchTemplateSpecificationTypeDef(TypedDict):
+    name: NotRequired[str],
+    version: NotRequired[str],
+    id: NotRequired[str],
+```
 
-- `name`: `str`
-- `version`: `str`
-- `id`: `str`
+## ListAddonsRequestListAddonsPaginateTypeDef
 
-<a id="listaddonsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ListAddonsRequestListAddonsPaginateTypeDef
 
+def get_value() -> ListAddonsRequestListAddonsPaginateTypeDef:
+    return {
+        "clusterName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAddonsRequestListAddonsPaginateTypeDef(TypedDict):
+    clusterName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAddonsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListAddonsRequestRequestTypeDef
+
+def get_value() -> ListAddonsRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listaddonsresponsetypedef"></a>
+```python title="Definition"
+class ListAddonsRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListAddonsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListAddonsResponseTypeDef
+
+def get_value() -> ListAddonsResponseTypeDef:
+    return {
+        "addons": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAddonsResponseTypeDef(TypedDict):
+    addons: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `addons`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListClustersRequestListClustersPaginateTypeDef
 
-<a id="listclustersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ListClustersRequestListClustersPaginateTypeDef
 
+def get_value() -> ListClustersRequestListClustersPaginateTypeDef:
+    return {
+        "include": ...,
+    }
+```
+
+```python title="Definition"
+class ListClustersRequestListClustersPaginateTypeDef(TypedDict):
+    include: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListClustersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListClustersRequestRequestTypeDef
+
+def get_value() -> ListClustersRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `include`: `Sequence`\[`str`\]
-
-<a id="listclustersresponsetypedef"></a>
+```python title="Definition"
+class ListClustersRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    include: NotRequired[Sequence[str]],
+```
 
 ## ListClustersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListClustersResponseTypeDef
+
+def get_value() -> ListClustersResponseTypeDef:
+    return {
+        "clusters": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListClustersResponseTypeDef(TypedDict):
+    clusters: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `clusters`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFargateProfilesRequestListFargateProfilesPaginateTypeDef
 
-<a id="listfargateprofilesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ListFargateProfilesRequestListFargateProfilesPaginateTypeDef
 
+def get_value() -> ListFargateProfilesRequestListFargateProfilesPaginateTypeDef:
+    return {
+        "clusterName": ...,
+    }
+```
+
+```python title="Definition"
+class ListFargateProfilesRequestListFargateProfilesPaginateTypeDef(TypedDict):
+    clusterName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFargateProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListFargateProfilesRequestRequestTypeDef
+
+def get_value() -> ListFargateProfilesRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listfargateprofilesresponsetypedef"></a>
+```python title="Definition"
+class ListFargateProfilesRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListFargateProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListFargateProfilesResponseTypeDef
+
+def get_value() -> ListFargateProfilesResponseTypeDef:
+    return {
+        "fargateProfileNames": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFargateProfilesResponseTypeDef(TypedDict):
+    fargateProfileNames: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `fargateProfileNames`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIdentityProviderConfigsRequestListIdentityProviderConfigsPaginateTypeDef
 
-<a id="listidentityproviderconfigsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ListIdentityProviderConfigsRequestListIdentityProviderConfigsPaginateTypeDef
 
+def get_value() -> ListIdentityProviderConfigsRequestListIdentityProviderConfigsPaginateTypeDef:
+    return {
+        "clusterName": ...,
+    }
+```
+
+```python title="Definition"
+class ListIdentityProviderConfigsRequestListIdentityProviderConfigsPaginateTypeDef(TypedDict):
+    clusterName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListIdentityProviderConfigsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListIdentityProviderConfigsRequestRequestTypeDef
+
+def get_value() -> ListIdentityProviderConfigsRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listidentityproviderconfigsresponsetypedef"></a>
+```python title="Definition"
+class ListIdentityProviderConfigsRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListIdentityProviderConfigsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListIdentityProviderConfigsResponseTypeDef
+
+def get_value() -> ListIdentityProviderConfigsResponseTypeDef:
+    return {
+        "identityProviderConfigs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIdentityProviderConfigsResponseTypeDef(TypedDict):
+    identityProviderConfigs: List[IdentityProviderConfigTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `identityProviderConfigs`:
-  `List`\[[IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListNodegroupsRequestListNodegroupsPaginateTypeDef
 
-<a id="listnodegroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ListNodegroupsRequestListNodegroupsPaginateTypeDef
 
+def get_value() -> ListNodegroupsRequestListNodegroupsPaginateTypeDef:
+    return {
+        "clusterName": ...,
+    }
+```
+
+```python title="Definition"
+class ListNodegroupsRequestListNodegroupsPaginateTypeDef(TypedDict):
+    clusterName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListNodegroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListNodegroupsRequestRequestTypeDef
+
+def get_value() -> ListNodegroupsRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+    }
 ```
 
-Required fields:
-
-- `clusterName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listnodegroupsresponsetypedef"></a>
+```python title="Definition"
+class ListNodegroupsRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListNodegroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListNodegroupsResponseTypeDef
+
+def get_value() -> ListNodegroupsResponseTypeDef:
+    return {
+        "nodegroups": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNodegroupsResponseTypeDef(TypedDict):
+    nodegroups: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nodegroups`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUpdatesRequestListUpdatesPaginateTypeDef
 
-<a id="listupdatesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_eks.type_defs import ListUpdatesRequestListUpdatesPaginateTypeDef
 
+def get_value() -> ListUpdatesRequestListUpdatesPaginateTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ListUpdatesRequestListUpdatesPaginateTypeDef(TypedDict):
+    name: str,
+    nodegroupName: NotRequired[str],
+    addonName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUpdatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListUpdatesRequestRequestTypeDef
+
+def get_value() -> ListUpdatesRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `nodegroupName`: `str`
-- `addonName`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listupdatesresponsetypedef"></a>
+```python title="Definition"
+class ListUpdatesRequestRequestTypeDef(TypedDict):
+    name: str,
+    nodegroupName: NotRequired[str],
+    addonName: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListUpdatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ListUpdatesResponseTypeDef
+
+def get_value() -> ListUpdatesResponseTypeDef:
+    return {
+        "updateIds": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUpdatesResponseTypeDef(TypedDict):
+    updateIds: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `updateIds`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="logsetuptypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogSetupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import LogSetupTypeDef
+
+def get_value() -> LogSetupTypeDef:
+    return {
+        "types": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LogSetupTypeDef(TypedDict):
+    types: NotRequired[Sequence[LogTypeType]],  # (1)
+    enabled: NotRequired[bool],
+```
 
-- `types`: `Sequence`\[[LogTypeType](./literals.md#logtypetype)\]
-- `enabled`: `bool`
-
-<a id="loggingtypedef"></a>
-
+1. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
 ## LoggingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import LoggingTypeDef
+
+def get_value() -> LoggingTypeDef:
+    return {
+        "clusterLogging": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoggingTypeDef(TypedDict):
+    clusterLogging: NotRequired[Sequence[LogSetupTypeDef]],  # (1)
+```
 
-- `clusterLogging`:
-  `Sequence`\[[LogSetupTypeDef](./type_defs.md#logsetuptypedef)\]
-
-<a id="nodegrouphealthtypedef"></a>
-
+1. See [:material-code-braces: LogSetupTypeDef](./type_defs.md#logsetuptypedef) 
 ## NodegroupHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import NodegroupHealthTypeDef
+
+def get_value() -> NodegroupHealthTypeDef:
+    return {
+        "issues": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodegroupHealthTypeDef(TypedDict):
+    issues: NotRequired[List[IssueTypeDef]],  # (1)
+```
 
-- `issues`: `List`\[[IssueTypeDef](./type_defs.md#issuetypedef)\]
-
-<a id="nodegroupresourcestypedef"></a>
-
+1. See [:material-code-braces: IssueTypeDef](./type_defs.md#issuetypedef) 
 ## NodegroupResourcesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import NodegroupResourcesTypeDef
+
+def get_value() -> NodegroupResourcesTypeDef:
+    return {
+        "autoScalingGroups": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodegroupResourcesTypeDef(TypedDict):
+    autoScalingGroups: NotRequired[List[AutoScalingGroupTypeDef]],  # (1)
+    remoteAccessSecurityGroup: NotRequired[str],
+```
 
-- `autoScalingGroups`:
-  `List`\[[AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef)\]
-- `remoteAccessSecurityGroup`: `str`
-
-<a id="nodegroupscalingconfigtypedef"></a>
-
+1. See [:material-code-braces: AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef) 
 ## NodegroupScalingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import NodegroupScalingConfigTypeDef
+
+def get_value() -> NodegroupScalingConfigTypeDef:
+    return {
+        "minSize": ...,
+    }
 ```
 
-Optional fields:
-
-- `minSize`: `int`
-- `maxSize`: `int`
-- `desiredSize`: `int`
-
-<a id="nodegrouptypedef"></a>
+```python title="Definition"
+class NodegroupScalingConfigTypeDef(TypedDict):
+    minSize: NotRequired[int],
+    maxSize: NotRequired[int],
+    desiredSize: NotRequired[int],
+```
 
 ## NodegroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import NodegroupTypeDef
+
+def get_value() -> NodegroupTypeDef:
+    return {
+        "nodegroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodegroupTypeDef(TypedDict):
+    nodegroupName: NotRequired[str],
+    nodegroupArn: NotRequired[str],
+    clusterName: NotRequired[str],
+    version: NotRequired[str],
+    releaseVersion: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    modifiedAt: NotRequired[datetime],
+    status: NotRequired[NodegroupStatusType],  # (1)
+    capacityType: NotRequired[CapacityTypesType],  # (2)
+    scalingConfig: NotRequired[NodegroupScalingConfigTypeDef],  # (3)
+    instanceTypes: NotRequired[List[str]],
+    subnets: NotRequired[List[str]],
+    remoteAccess: NotRequired[RemoteAccessConfigTypeDef],  # (4)
+    amiType: NotRequired[AMITypesType],  # (5)
+    nodeRole: NotRequired[str],
+    labels: NotRequired[Dict[str, str]],
+    taints: NotRequired[List[TaintTypeDef]],  # (6)
+    resources: NotRequired[NodegroupResourcesTypeDef],  # (7)
+    diskSize: NotRequired[int],
+    health: NotRequired[NodegroupHealthTypeDef],  # (8)
+    updateConfig: NotRequired[NodegroupUpdateConfigTypeDef],  # (9)
+    launchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (10)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `nodegroupName`: `str`
-- `nodegroupArn`: `str`
-- `clusterName`: `str`
-- `version`: `str`
-- `releaseVersion`: `str`
-- `createdAt`: `datetime`
-- `modifiedAt`: `datetime`
-- `status`: [NodegroupStatusType](./literals.md#nodegroupstatustype)
-- `capacityType`: [CapacityTypesType](./literals.md#capacitytypestype)
-- `scalingConfig`:
-  [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
-- `instanceTypes`: `List`\[`str`\]
-- `subnets`: `List`\[`str`\]
-- `remoteAccess`:
-  [RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef)
-- `amiType`: [AMITypesType](./literals.md#amitypestype)
-- `nodeRole`: `str`
-- `labels`: `Dict`\[`str`, `str`\]
-- `taints`: `List`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
-- `resources`:
-  [NodegroupResourcesTypeDef](./type_defs.md#nodegroupresourcestypedef)
-- `diskSize`: `int`
-- `health`: [NodegroupHealthTypeDef](./type_defs.md#nodegrouphealthtypedef)
-- `updateConfig`:
-  [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
-- `launchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="nodegroupupdateconfigtypedef"></a>
-
+1. See [:material-code-brackets: NodegroupStatusType](./literals.md#nodegroupstatustype) 
+2. See [:material-code-brackets: CapacityTypesType](./literals.md#capacitytypestype) 
+3. See [:material-code-braces: NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef) 
+4. See [:material-code-braces: RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef) 
+5. See [:material-code-brackets: AMITypesType](./literals.md#amitypestype) 
+6. See [:material-code-braces: TaintTypeDef](./type_defs.md#tainttypedef) 
+7. See [:material-code-braces: NodegroupResourcesTypeDef](./type_defs.md#nodegroupresourcestypedef) 
+8. See [:material-code-braces: NodegroupHealthTypeDef](./type_defs.md#nodegrouphealthtypedef) 
+9. See [:material-code-braces: NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef) 
+10. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
 ## NodegroupUpdateConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import NodegroupUpdateConfigTypeDef
+
+def get_value() -> NodegroupUpdateConfigTypeDef:
+    return {
+        "maxUnavailable": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxUnavailable`: `int`
-- `maxUnavailablePercentage`: `int`
-
-<a id="oidctypedef"></a>
+```python title="Definition"
+class NodegroupUpdateConfigTypeDef(TypedDict):
+    maxUnavailable: NotRequired[int],
+    maxUnavailablePercentage: NotRequired[int],
+```
 
 ## OIDCTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import OIDCTypeDef
+
+def get_value() -> OIDCTypeDef:
+    return {
+        "issuer": ...,
+    }
 ```
 
-Optional fields:
-
-- `issuer`: `str`
-
-<a id="oidcidentityproviderconfigrequesttypedef"></a>
+```python title="Definition"
+class OIDCTypeDef(TypedDict):
+    issuer: NotRequired[str],
+```
 
 ## OidcIdentityProviderConfigRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import OidcIdentityProviderConfigRequestTypeDef
+
+def get_value() -> OidcIdentityProviderConfigRequestTypeDef:
+    return {
+        "identityProviderConfigName": ...,
+        "issuerUrl": ...,
+        "clientId": ...,
+    }
 ```
 
-Required fields:
-
-- `identityProviderConfigName`: `str`
-- `issuerUrl`: `str`
-- `clientId`: `str`
-
-Optional fields:
-
-- `usernameClaim`: `str`
-- `usernamePrefix`: `str`
-- `groupsClaim`: `str`
-- `groupsPrefix`: `str`
-- `requiredClaims`: `Mapping`\[`str`, `str`\]
-
-<a id="oidcidentityproviderconfigtypedef"></a>
+```python title="Definition"
+class OidcIdentityProviderConfigRequestTypeDef(TypedDict):
+    identityProviderConfigName: str,
+    issuerUrl: str,
+    clientId: str,
+    usernameClaim: NotRequired[str],
+    usernamePrefix: NotRequired[str],
+    groupsClaim: NotRequired[str],
+    groupsPrefix: NotRequired[str],
+    requiredClaims: NotRequired[Mapping[str, str]],
+```
 
 ## OidcIdentityProviderConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import OidcIdentityProviderConfigTypeDef
+
+def get_value() -> OidcIdentityProviderConfigTypeDef:
+    return {
+        "identityProviderConfigName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OidcIdentityProviderConfigTypeDef(TypedDict):
+    identityProviderConfigName: NotRequired[str],
+    identityProviderConfigArn: NotRequired[str],
+    clusterName: NotRequired[str],
+    issuerUrl: NotRequired[str],
+    clientId: NotRequired[str],
+    usernameClaim: NotRequired[str],
+    usernamePrefix: NotRequired[str],
+    groupsClaim: NotRequired[str],
+    groupsPrefix: NotRequired[str],
+    requiredClaims: NotRequired[Dict[str, str]],
+    tags: NotRequired[Dict[str, str]],
+    status: NotRequired[configStatusType],  # (1)
+```
 
-- `identityProviderConfigName`: `str`
-- `identityProviderConfigArn`: `str`
-- `clusterName`: `str`
-- `issuerUrl`: `str`
-- `clientId`: `str`
-- `usernameClaim`: `str`
-- `usernamePrefix`: `str`
-- `groupsClaim`: `str`
-- `groupsPrefix`: `str`
-- `requiredClaims`: `Dict`\[`str`, `str`\]
-- `tags`: `Dict`\[`str`, `str`\]
-- `status`: [configStatusType](./literals.md#configstatustype)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: configStatusType](./literals.md#configstatustype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="providertypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ProviderTypeDef
+
+def get_value() -> ProviderTypeDef:
+    return {
+        "keyArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `keyArn`: `str`
-
-<a id="registerclusterrequestrequesttypedef"></a>
+```python title="Definition"
+class ProviderTypeDef(TypedDict):
+    keyArn: NotRequired[str],
+```
 
 ## RegisterClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import RegisterClusterRequestRequestTypeDef
+
+def get_value() -> RegisterClusterRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "connectorConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterClusterRequestRequestTypeDef(TypedDict):
+    name: str,
+    connectorConfig: ConnectorConfigRequestTypeDef,  # (1)
+    clientRequestToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-- `connectorConfig`:
-  [ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef)
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="registerclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef) 
 ## RegisterClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import RegisterClusterResponseTypeDef
+
+def get_value() -> RegisterClusterResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterClusterResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="remoteaccessconfigtypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoteAccessConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import RemoteAccessConfigTypeDef
+
+def get_value() -> RemoteAccessConfigTypeDef:
+    return {
+        "ec2SshKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `ec2SshKey`: `str`
-- `sourceSecurityGroups`: `Sequence`\[`str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RemoteAccessConfigTypeDef(TypedDict):
+    ec2SshKey: NotRequired[str],
+    sourceSecurityGroups: NotRequired[Sequence[str]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="tainttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TaintTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import TaintTypeDef
+
+def get_value() -> TaintTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaintTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+    effect: NotRequired[TaintEffectType],  # (1)
+```
 
-- `key`: `str`
-- `value`: `str`
-- `effect`: [TaintEffectType](./literals.md#tainteffecttype)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TaintEffectType](./literals.md#tainteffecttype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateaddonrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateAddonRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateAddonRequestRequestTypeDef
+
+def get_value() -> UpdateAddonRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "addonName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAddonRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    addonName: str,
+    addonVersion: NotRequired[str],
+    serviceAccountRoleArn: NotRequired[str],
+    resolveConflicts: NotRequired[ResolveConflictsType],  # (1)
+    clientRequestToken: NotRequired[str],
+```
 
-- `clusterName`: `str`
-- `addonName`: `str`
-
-Optional fields:
-
-- `addonVersion`: `str`
-- `serviceAccountRoleArn`: `str`
-- `resolveConflicts`:
-  [ResolveConflictsType](./literals.md#resolveconflictstype)
-- `clientRequestToken`: `str`
-
-<a id="updateaddonresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResolveConflictsType](./literals.md#resolveconflictstype) 
 ## UpdateAddonResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateAddonResponseTypeDef
+
+def get_value() -> UpdateAddonResponseTypeDef:
+    return {
+        "update": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAddonResponseTypeDef(TypedDict):
+    update: UpdateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateclusterconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateClusterConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateClusterConfigRequestRequestTypeDef
+
+def get_value() -> UpdateClusterConfigRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterConfigRequestRequestTypeDef(TypedDict):
+    name: str,
+    resourcesVpcConfig: NotRequired[VpcConfigRequestTypeDef],  # (1)
+    logging: NotRequired[LoggingTypeDef],  # (2)
+    clientRequestToken: NotRequired[str],
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `resourcesVpcConfig`:
-  [VpcConfigRequestTypeDef](./type_defs.md#vpcconfigrequesttypedef)
-- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
-- `clientRequestToken`: `str`
-
-<a id="updateclusterconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: VpcConfigRequestTypeDef](./type_defs.md#vpcconfigrequesttypedef) 
+2. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
 ## UpdateClusterConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateClusterConfigResponseTypeDef
+
+def get_value() -> UpdateClusterConfigResponseTypeDef:
+    return {
+        "update": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterConfigResponseTypeDef(TypedDict):
+    update: UpdateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateclusterversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateClusterVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateClusterVersionRequestRequestTypeDef
+
+def get_value() -> UpdateClusterVersionRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `version`: `str`
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-
-<a id="updateclusterversionresponsetypedef"></a>
+```python title="Definition"
+class UpdateClusterVersionRequestRequestTypeDef(TypedDict):
+    name: str,
+    version: str,
+    clientRequestToken: NotRequired[str],
+```
 
 ## UpdateClusterVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateClusterVersionResponseTypeDef
+
+def get_value() -> UpdateClusterVersionResponseTypeDef:
+    return {
+        "update": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterVersionResponseTypeDef(TypedDict):
+    update: UpdateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatelabelspayloadtypedef"></a>
-
+1. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateLabelsPayloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateLabelsPayloadTypeDef
+
+def get_value() -> UpdateLabelsPayloadTypeDef:
+    return {
+        "addOrUpdateLabels": ...,
+    }
 ```
 
-Optional fields:
-
-- `addOrUpdateLabels`: `Mapping`\[`str`, `str`\]
-- `removeLabels`: `Sequence`\[`str`\]
-
-<a id="updatenodegroupconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateLabelsPayloadTypeDef(TypedDict):
+    addOrUpdateLabels: NotRequired[Mapping[str, str]],
+    removeLabels: NotRequired[Sequence[str]],
+```
 
 ## UpdateNodegroupConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateNodegroupConfigRequestRequestTypeDef
+
+def get_value() -> UpdateNodegroupConfigRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "nodegroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNodegroupConfigRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    nodegroupName: str,
+    labels: NotRequired[UpdateLabelsPayloadTypeDef],  # (1)
+    taints: NotRequired[UpdateTaintsPayloadTypeDef],  # (2)
+    scalingConfig: NotRequired[NodegroupScalingConfigTypeDef],  # (3)
+    updateConfig: NotRequired[NodegroupUpdateConfigTypeDef],  # (4)
+    clientRequestToken: NotRequired[str],
+```
 
-- `clusterName`: `str`
-- `nodegroupName`: `str`
-
-Optional fields:
-
-- `labels`:
-  [UpdateLabelsPayloadTypeDef](./type_defs.md#updatelabelspayloadtypedef)
-- `taints`:
-  [UpdateTaintsPayloadTypeDef](./type_defs.md#updatetaintspayloadtypedef)
-- `scalingConfig`:
-  [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
-- `updateConfig`:
-  [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
-- `clientRequestToken`: `str`
-
-<a id="updatenodegroupconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: UpdateLabelsPayloadTypeDef](./type_defs.md#updatelabelspayloadtypedef) 
+2. See [:material-code-braces: UpdateTaintsPayloadTypeDef](./type_defs.md#updatetaintspayloadtypedef) 
+3. See [:material-code-braces: NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef) 
+4. See [:material-code-braces: NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef) 
 ## UpdateNodegroupConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateNodegroupConfigResponseTypeDef
+
+def get_value() -> UpdateNodegroupConfigResponseTypeDef:
+    return {
+        "update": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNodegroupConfigResponseTypeDef(TypedDict):
+    update: UpdateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatenodegroupversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateNodegroupVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateNodegroupVersionRequestRequestTypeDef
+
+def get_value() -> UpdateNodegroupVersionRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+        "nodegroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNodegroupVersionRequestRequestTypeDef(TypedDict):
+    clusterName: str,
+    nodegroupName: str,
+    version: NotRequired[str],
+    releaseVersion: NotRequired[str],
+    launchTemplate: NotRequired[LaunchTemplateSpecificationTypeDef],  # (1)
+    force: NotRequired[bool],
+    clientRequestToken: NotRequired[str],
+```
 
-- `clusterName`: `str`
-- `nodegroupName`: `str`
-
-Optional fields:
-
-- `version`: `str`
-- `releaseVersion`: `str`
-- `launchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
-- `force`: `bool`
-- `clientRequestToken`: `str`
-
-<a id="updatenodegroupversionresponsetypedef"></a>
-
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
 ## UpdateNodegroupVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateNodegroupVersionResponseTypeDef
+
+def get_value() -> UpdateNodegroupVersionResponseTypeDef:
+    return {
+        "update": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNodegroupVersionResponseTypeDef(TypedDict):
+    update: UpdateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateparamtypedef"></a>
-
+1. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateParamTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateParamTypeDef
+
+def get_value() -> UpdateParamTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateParamTypeDef(TypedDict):
+    type: NotRequired[UpdateParamTypeType],  # (1)
+    value: NotRequired[str],
+```
 
-- `type`: [UpdateParamTypeType](./literals.md#updateparamtypetype)
-- `value`: `str`
-
-<a id="updatetaintspayloadtypedef"></a>
-
+1. See [:material-code-brackets: UpdateParamTypeType](./literals.md#updateparamtypetype) 
 ## UpdateTaintsPayloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateTaintsPayloadTypeDef
+
+def get_value() -> UpdateTaintsPayloadTypeDef:
+    return {
+        "addOrUpdateTaints": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateTaintsPayloadTypeDef(TypedDict):
+    addOrUpdateTaints: NotRequired[Sequence[TaintTypeDef]],  # (1)
+    removeTaints: NotRequired[Sequence[TaintTypeDef]],  # (1)
+```
 
-- `addOrUpdateTaints`:
-  `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
-- `removeTaints`: `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
-
-<a id="updatetypedef"></a>
-
+1. See [:material-code-braces: TaintTypeDef](./type_defs.md#tainttypedef) 
+2. See [:material-code-braces: TaintTypeDef](./type_defs.md#tainttypedef) 
 ## UpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import UpdateTypeDef
+
+def get_value() -> UpdateTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateTypeDef(TypedDict):
+    id: NotRequired[str],
+    status: NotRequired[UpdateStatusType],  # (1)
+    type: NotRequired[UpdateTypeType],  # (2)
+    params: NotRequired[List[UpdateParamTypeDef]],  # (3)
+    createdAt: NotRequired[datetime],
+    errors: NotRequired[List[ErrorDetailTypeDef]],  # (4)
+```
 
-- `id`: `str`
-- `status`: [UpdateStatusType](./literals.md#updatestatustype)
-- `type`: [UpdateTypeType](./literals.md#updatetypetype)
-- `params`: `List`\[[UpdateParamTypeDef](./type_defs.md#updateparamtypedef)\]
-- `createdAt`: `datetime`
-- `errors`: `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
-
-<a id="vpcconfigrequesttypedef"></a>
-
+1. See [:material-code-brackets: UpdateStatusType](./literals.md#updatestatustype) 
+2. See [:material-code-brackets: UpdateTypeType](./literals.md#updatetypetype) 
+3. See [:material-code-braces: UpdateParamTypeDef](./type_defs.md#updateparamtypedef) 
+4. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## VpcConfigRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import VpcConfigRequestTypeDef
+
+def get_value() -> VpcConfigRequestTypeDef:
+    return {
+        "subnetIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `subnetIds`: `Sequence`\[`str`\]
-- `securityGroupIds`: `Sequence`\[`str`\]
-- `endpointPublicAccess`: `bool`
-- `endpointPrivateAccess`: `bool`
-- `publicAccessCidrs`: `Sequence`\[`str`\]
-
-<a id="vpcconfigresponsetypedef"></a>
+```python title="Definition"
+class VpcConfigRequestTypeDef(TypedDict):
+    subnetIds: NotRequired[Sequence[str]],
+    securityGroupIds: NotRequired[Sequence[str]],
+    endpointPublicAccess: NotRequired[bool],
+    endpointPrivateAccess: NotRequired[bool],
+    publicAccessCidrs: NotRequired[Sequence[str]],
+```
 
 ## VpcConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import VpcConfigResponseTypeDef
+
+def get_value() -> VpcConfigResponseTypeDef:
+    return {
+        "subnetIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `subnetIds`: `List`\[`str`\]
-- `securityGroupIds`: `List`\[`str`\]
-- `clusterSecurityGroupId`: `str`
-- `vpcId`: `str`
-- `endpointPublicAccess`: `bool`
-- `endpointPrivateAccess`: `bool`
-- `publicAccessCidrs`: `List`\[`str`\]
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class VpcConfigResponseTypeDef(TypedDict):
+    subnetIds: NotRequired[List[str]],
+    securityGroupIds: NotRequired[List[str]],
+    clusterSecurityGroupId: NotRequired[str],
+    vpcId: NotRequired[str],
+    endpointPublicAccess: NotRequired[bool],
+    endpointPrivateAccess: NotRequired[bool],
+    publicAccessCidrs: NotRequired[List[str]],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_eks.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

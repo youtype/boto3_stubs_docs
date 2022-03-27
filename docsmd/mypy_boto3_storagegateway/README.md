@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-storagegateway-module"></a>
-
-# Type annotations for boto3 StorageGateway module
+#  StorageGateway module
 
 > [Index](../README.md) > StorageGateway
 
-Auto-generated documentation for
-[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
-type annotations stubs module
-[mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
+!!! note ""
 
-- [Type annotations for boto3 StorageGateway module](#type-annotations-for-boto3-storagegateway-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [StorageGatewayClient](#storagegatewayclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
+    type annotations stubs module [mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `StorageGateway`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[storagegateway]'
 python -m pip install mypy-boto3-storagegateway
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,146 +42,37 @@ python -m pip install mypy-boto3-storagegateway
 python -m pip uninstall -y mypy-boto3-storagegateway
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="storagegatewayclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## StorageGatewayClient
 
-Type annotations for `boto3.client("storagegateway")` as
-[StorageGatewayClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("storagegateway")` as [StorageGatewayClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_storagegateway.client import StorageGatewayClient
+
+def get_client() -> StorageGatewayClient:
+    return Session().cleint("storagegateway")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [activate_gateway](./client.md#activate_gateway)
-- [add_cache](./client.md#add_cache)
-- [add_tags_to_resource](./client.md#add_tags_to_resource)
-- [add_upload_buffer](./client.md#add_upload_buffer)
-- [add_working_storage](./client.md#add_working_storage)
-- [assign_tape_pool](./client.md#assign_tape_pool)
-- [associate_file_system](./client.md#associate_file_system)
-- [attach_volume](./client.md#attach_volume)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_archival](./client.md#cancel_archival)
-- [cancel_retrieval](./client.md#cancel_retrieval)
-- [create_cached_iscsi_volume](./client.md#create_cached_iscsi_volume)
-- [create_nfs_file_share](./client.md#create_nfs_file_share)
-- [create_smb_file_share](./client.md#create_smb_file_share)
-- [create_snapshot](./client.md#create_snapshot)
-- [create_snapshot_from_volume_recovery_point](./client.md#create_snapshot_from_volume_recovery_point)
-- [create_stored_iscsi_volume](./client.md#create_stored_iscsi_volume)
-- [create_tape_pool](./client.md#create_tape_pool)
-- [create_tape_with_barcode](./client.md#create_tape_with_barcode)
-- [create_tapes](./client.md#create_tapes)
-- [delete_automatic_tape_creation_policy](./client.md#delete_automatic_tape_creation_policy)
-- [delete_bandwidth_rate_limit](./client.md#delete_bandwidth_rate_limit)
-- [delete_chap_credentials](./client.md#delete_chap_credentials)
-- [delete_file_share](./client.md#delete_file_share)
-- [delete_gateway](./client.md#delete_gateway)
-- [delete_snapshot_schedule](./client.md#delete_snapshot_schedule)
-- [delete_tape](./client.md#delete_tape)
-- [delete_tape_archive](./client.md#delete_tape_archive)
-- [delete_tape_pool](./client.md#delete_tape_pool)
-- [delete_volume](./client.md#delete_volume)
-- [describe_availability_monitor_test](./client.md#describe_availability_monitor_test)
-- [describe_bandwidth_rate_limit](./client.md#describe_bandwidth_rate_limit)
-- [describe_bandwidth_rate_limit_schedule](./client.md#describe_bandwidth_rate_limit_schedule)
-- [describe_cache](./client.md#describe_cache)
-- [describe_cached_iscsi_volumes](./client.md#describe_cached_iscsi_volumes)
-- [describe_chap_credentials](./client.md#describe_chap_credentials)
-- [describe_file_system_associations](./client.md#describe_file_system_associations)
-- [describe_gateway_information](./client.md#describe_gateway_information)
-- [describe_maintenance_start_time](./client.md#describe_maintenance_start_time)
-- [describe_nfs_file_shares](./client.md#describe_nfs_file_shares)
-- [describe_smb_file_shares](./client.md#describe_smb_file_shares)
-- [describe_smb_settings](./client.md#describe_smb_settings)
-- [describe_snapshot_schedule](./client.md#describe_snapshot_schedule)
-- [describe_stored_iscsi_volumes](./client.md#describe_stored_iscsi_volumes)
-- [describe_tape_archives](./client.md#describe_tape_archives)
-- [describe_tape_recovery_points](./client.md#describe_tape_recovery_points)
-- [describe_tapes](./client.md#describe_tapes)
-- [describe_upload_buffer](./client.md#describe_upload_buffer)
-- [describe_vtl_devices](./client.md#describe_vtl_devices)
-- [describe_working_storage](./client.md#describe_working_storage)
-- [detach_volume](./client.md#detach_volume)
-- [disable_gateway](./client.md#disable_gateway)
-- [disassociate_file_system](./client.md#disassociate_file_system)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [join_domain](./client.md#join_domain)
-- [list_automatic_tape_creation_policies](./client.md#list_automatic_tape_creation_policies)
-- [list_file_shares](./client.md#list_file_shares)
-- [list_file_system_associations](./client.md#list_file_system_associations)
-- [list_gateways](./client.md#list_gateways)
-- [list_local_disks](./client.md#list_local_disks)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_tape_pools](./client.md#list_tape_pools)
-- [list_tapes](./client.md#list_tapes)
-- [list_volume_initiators](./client.md#list_volume_initiators)
-- [list_volume_recovery_points](./client.md#list_volume_recovery_points)
-- [list_volumes](./client.md#list_volumes)
-- [notify_when_uploaded](./client.md#notify_when_uploaded)
-- [refresh_cache](./client.md#refresh_cache)
-- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
-- [reset_cache](./client.md#reset_cache)
-- [retrieve_tape_archive](./client.md#retrieve_tape_archive)
-- [retrieve_tape_recovery_point](./client.md#retrieve_tape_recovery_point)
-- [set_local_console_password](./client.md#set_local_console_password)
-- [set_smb_guest_password](./client.md#set_smb_guest_password)
-- [shutdown_gateway](./client.md#shutdown_gateway)
-- [start_availability_monitor_test](./client.md#start_availability_monitor_test)
-- [start_gateway](./client.md#start_gateway)
-- [update_automatic_tape_creation_policy](./client.md#update_automatic_tape_creation_policy)
-- [update_bandwidth_rate_limit](./client.md#update_bandwidth_rate_limit)
-- [update_bandwidth_rate_limit_schedule](./client.md#update_bandwidth_rate_limit_schedule)
-- [update_chap_credentials](./client.md#update_chap_credentials)
-- [update_file_system_association](./client.md#update_file_system_association)
-- [update_gateway_information](./client.md#update_gateway_information)
-- [update_gateway_software_now](./client.md#update_gateway_software_now)
-- [update_maintenance_start_time](./client.md#update_maintenance_start_time)
-- [update_nfs_file_share](./client.md#update_nfs_file_share)
-- [update_smb_file_share](./client.md#update_smb_file_share)
-- [update_smb_file_share_visibility](./client.md#update_smb_file_share_visibility)
-- [update_smb_local_groups](./client.md#update_smb_local_groups)
-- [update_smb_security_strategy](./client.md#update_smb_security_strategy)
-- [update_snapshot_schedule](./client.md#update_snapshot_schedule)
-- [update_vtl_device_type](./client.md#update_vtl_device_type)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-StorageGatewayClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InternalServerError
-- InvalidGatewayRequestException
-- ServiceUnavailableError
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("storagegateway").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("storagegateway").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_storagegateway.paginator import DescribeTapeArchivesPaginator, ...
+from mypy_boto3_storagegateway.paginator import DescribeTapeArchivesPaginator
+
+def get_describe_tape_archives_paginator() -> DescribeTapeArchivesPaginator:
+    return Session().client("storagegateway").get_paginator("describe_tape_archives"))
 ```
 
 - [DescribeTapeArchivesPaginator](./paginators.md#describetapearchivespaginator)
@@ -218,16 +87,23 @@ from mypy_boto3_storagegateway.paginator import DescribeTapeArchivesPaginator, .
 - [ListTapesPaginator](./paginators.md#listtapespaginator)
 - [ListVolumesPaginator](./paginators.md#listvolumespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_storagegateway.literals import ActiveDirectoryStatusType
 
-```python
-from mypy_boto3_storagegateway.literals import ActiveDirectoryStatusType, ...
+def get_value() -> ActiveDirectoryStatusType:
+    return "ACCESS_DENIED"
 ```
 
 - [ActiveDirectoryStatusType](./literals.md#activedirectorystatustype)
@@ -256,18 +132,25 @@ from mypy_boto3_storagegateway.literals import ActiveDirectoryStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeDef
 
-```python
-from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeDef, ...
+def get_value() -> ActivateGatewayInputRequestTypeDef:
+    return {
+        "ActivationKey": ...,
+        "GatewayName": ...,
+        "GatewayTimezone": ...,
+        "GatewayRegion": ...,
+    }
 ```
 
 - [ActivateGatewayInputRequestTypeDef](./type_defs.md#activategatewayinputrequesttypedef)
@@ -362,14 +245,18 @@ from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeD
 - [DescribeSnapshotScheduleOutputTypeDef](./type_defs.md#describesnapshotscheduleoutputtypedef)
 - [DescribeStorediSCSIVolumesInputRequestTypeDef](./type_defs.md#describestorediscsivolumesinputrequesttypedef)
 - [DescribeStorediSCSIVolumesOutputTypeDef](./type_defs.md#describestorediscsivolumesoutputtypedef)
+- [DescribeTapeArchivesInputDescribeTapeArchivesPaginateTypeDef](./type_defs.md#describetapearchivesinputdescribetapearchivespaginatetypedef)
 - [DescribeTapeArchivesInputRequestTypeDef](./type_defs.md#describetapearchivesinputrequesttypedef)
 - [DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef)
+- [DescribeTapeRecoveryPointsInputDescribeTapeRecoveryPointsPaginateTypeDef](./type_defs.md#describetaperecoverypointsinputdescribetaperecoverypointspaginatetypedef)
 - [DescribeTapeRecoveryPointsInputRequestTypeDef](./type_defs.md#describetaperecoverypointsinputrequesttypedef)
 - [DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef)
+- [DescribeTapesInputDescribeTapesPaginateTypeDef](./type_defs.md#describetapesinputdescribetapespaginatetypedef)
 - [DescribeTapesInputRequestTypeDef](./type_defs.md#describetapesinputrequesttypedef)
 - [DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef)
 - [DescribeUploadBufferInputRequestTypeDef](./type_defs.md#describeuploadbufferinputrequesttypedef)
 - [DescribeUploadBufferOutputTypeDef](./type_defs.md#describeuploadbufferoutputtypedef)
+- [DescribeVTLDevicesInputDescribeVTLDevicesPaginateTypeDef](./type_defs.md#describevtldevicesinputdescribevtldevicespaginatetypedef)
 - [DescribeVTLDevicesInputRequestTypeDef](./type_defs.md#describevtldevicesinputrequesttypedef)
 - [DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef)
 - [DescribeWorkingStorageInputRequestTypeDef](./type_defs.md#describeworkingstorageinputrequesttypedef)
@@ -392,24 +279,31 @@ from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeD
 - [JoinDomainOutputTypeDef](./type_defs.md#joindomainoutputtypedef)
 - [ListAutomaticTapeCreationPoliciesInputRequestTypeDef](./type_defs.md#listautomatictapecreationpoliciesinputrequesttypedef)
 - [ListAutomaticTapeCreationPoliciesOutputTypeDef](./type_defs.md#listautomatictapecreationpoliciesoutputtypedef)
+- [ListFileSharesInputListFileSharesPaginateTypeDef](./type_defs.md#listfilesharesinputlistfilesharespaginatetypedef)
 - [ListFileSharesInputRequestTypeDef](./type_defs.md#listfilesharesinputrequesttypedef)
 - [ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef)
+- [ListFileSystemAssociationsInputListFileSystemAssociationsPaginateTypeDef](./type_defs.md#listfilesystemassociationsinputlistfilesystemassociationspaginatetypedef)
 - [ListFileSystemAssociationsInputRequestTypeDef](./type_defs.md#listfilesystemassociationsinputrequesttypedef)
 - [ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef)
+- [ListGatewaysInputListGatewaysPaginateTypeDef](./type_defs.md#listgatewaysinputlistgatewayspaginatetypedef)
 - [ListGatewaysInputRequestTypeDef](./type_defs.md#listgatewaysinputrequesttypedef)
 - [ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef)
 - [ListLocalDisksInputRequestTypeDef](./type_defs.md#listlocaldisksinputrequesttypedef)
 - [ListLocalDisksOutputTypeDef](./type_defs.md#listlocaldisksoutputtypedef)
+- [ListTagsForResourceInputListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourceinputlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
+- [ListTapePoolsInputListTapePoolsPaginateTypeDef](./type_defs.md#listtapepoolsinputlisttapepoolspaginatetypedef)
 - [ListTapePoolsInputRequestTypeDef](./type_defs.md#listtapepoolsinputrequesttypedef)
 - [ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef)
+- [ListTapesInputListTapesPaginateTypeDef](./type_defs.md#listtapesinputlisttapespaginatetypedef)
 - [ListTapesInputRequestTypeDef](./type_defs.md#listtapesinputrequesttypedef)
 - [ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef)
 - [ListVolumeInitiatorsInputRequestTypeDef](./type_defs.md#listvolumeinitiatorsinputrequesttypedef)
 - [ListVolumeInitiatorsOutputTypeDef](./type_defs.md#listvolumeinitiatorsoutputtypedef)
 - [ListVolumeRecoveryPointsInputRequestTypeDef](./type_defs.md#listvolumerecoverypointsinputrequesttypedef)
 - [ListVolumeRecoveryPointsOutputTypeDef](./type_defs.md#listvolumerecoverypointsoutputtypedef)
+- [ListVolumesInputListVolumesPaginateTypeDef](./type_defs.md#listvolumesinputlistvolumespaginatetypedef)
 - [ListVolumesInputRequestTypeDef](./type_defs.md#listvolumesinputrequesttypedef)
 - [ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef)
 - [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
@@ -482,3 +376,4 @@ from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeD
 - [VolumeInfoTypeDef](./type_defs.md#volumeinfotypedef)
 - [VolumeRecoveryPointInfoTypeDef](./type_defs.md#volumerecoverypointinfotypedef)
 - [VolumeiSCSIAttributesTypeDef](./type_defs.md#volumeiscsiattributestypedef)
+

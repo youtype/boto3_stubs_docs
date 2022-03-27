@@ -1,399 +1,495 @@
-<a id="typed-dictionaries-for-boto3-codestarconnections-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 CodeStarconnections module
+> [Index](../README.md) > [CodeStarconnections](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [CodeStarconnections](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
-type annotations stubs module
-[mypy-boto3-codestar-connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
-
-- [Typed dictionaries for boto3 CodeStarconnections module](#typed-dictionaries-for-boto3-codestarconnections-module)
-  - [ConnectionTypeDef](#connectiontypedef)
-  - [CreateConnectionInputRequestTypeDef](#createconnectioninputrequesttypedef)
-  - [CreateConnectionOutputTypeDef](#createconnectionoutputtypedef)
-  - [CreateHostInputRequestTypeDef](#createhostinputrequesttypedef)
-  - [CreateHostOutputTypeDef](#createhostoutputtypedef)
-  - [DeleteConnectionInputRequestTypeDef](#deleteconnectioninputrequesttypedef)
-  - [DeleteHostInputRequestTypeDef](#deletehostinputrequesttypedef)
-  - [GetConnectionInputRequestTypeDef](#getconnectioninputrequesttypedef)
-  - [GetConnectionOutputTypeDef](#getconnectionoutputtypedef)
-  - [GetHostInputRequestTypeDef](#gethostinputrequesttypedef)
-  - [GetHostOutputTypeDef](#gethostoutputtypedef)
-  - [HostTypeDef](#hosttypedef)
-  - [ListConnectionsInputRequestTypeDef](#listconnectionsinputrequesttypedef)
-  - [ListConnectionsOutputTypeDef](#listconnectionsoutputtypedef)
-  - [ListHostsInputRequestTypeDef](#listhostsinputrequesttypedef)
-  - [ListHostsOutputTypeDef](#listhostsoutputtypedef)
-  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-  - [UpdateHostInputRequestTypeDef](#updatehostinputrequesttypedef)
-  - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
-
-<a id="connectiontypedef"></a>
+    Auto-generated documentation for [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
+    type annotations stubs module [mypy-boto3-codestar-connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
 ## ConnectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import ConnectionTypeDef
+
+def get_value() -> ConnectionTypeDef:
+    return {
+        "ConnectionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionTypeDef(TypedDict):
+    ConnectionName: NotRequired[str],
+    ConnectionArn: NotRequired[str],
+    ProviderType: NotRequired[ProviderTypeType],  # (1)
+    OwnerAccountId: NotRequired[str],
+    ConnectionStatus: NotRequired[ConnectionStatusType],  # (2)
+    HostArn: NotRequired[str],
+```
 
-- `ConnectionName`: `str`
-- `ConnectionArn`: `str`
-- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
-- `OwnerAccountId`: `str`
-- `ConnectionStatus`:
-  [ConnectionStatusType](./literals.md#connectionstatustype)
-- `HostArn`: `str`
-
-<a id="createconnectioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-brackets: ConnectionStatusType](./literals.md#connectionstatustype) 
 ## CreateConnectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import CreateConnectionInputRequestTypeDef
+
+def get_value() -> CreateConnectionInputRequestTypeDef:
+    return {
+        "ConnectionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionInputRequestTypeDef(TypedDict):
+    ConnectionName: str,
+    ProviderType: NotRequired[ProviderTypeType],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    HostArn: NotRequired[str],
+```
 
-- `ConnectionName`: `str`
-
-Optional fields:
-
-- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `HostArn`: `str`
-
-<a id="createconnectionoutputtypedef"></a>
-
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateConnectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import CreateConnectionOutputTypeDef
+
+def get_value() -> CreateConnectionOutputTypeDef:
+    return {
+        "ConnectionArn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionOutputTypeDef(TypedDict):
+    ConnectionArn: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConnectionArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhostinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHostInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import CreateHostInputRequestTypeDef
+
+def get_value() -> CreateHostInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "ProviderType": ...,
+        "ProviderEndpoint": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHostInputRequestTypeDef(TypedDict):
+    Name: str,
+    ProviderType: ProviderTypeType,  # (1)
+    ProviderEndpoint: str,
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `Name`: `str`
-- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
-- `ProviderEndpoint`: `str`
-
-Optional fields:
-
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createhostoutputtypedef"></a>
-
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateHostOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import CreateHostOutputTypeDef
+
+def get_value() -> CreateHostOutputTypeDef:
+    return {
+        "HostArn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHostOutputTypeDef(TypedDict):
+    HostArn: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HostArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteconnectioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteConnectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import DeleteConnectionInputRequestTypeDef
+
+def get_value() -> DeleteConnectionInputRequestTypeDef:
+    return {
+        "ConnectionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ConnectionArn`: `str`
-
-<a id="deletehostinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteConnectionInputRequestTypeDef(TypedDict):
+    ConnectionArn: str,
+```
 
 ## DeleteHostInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import DeleteHostInputRequestTypeDef
+
+def get_value() -> DeleteHostInputRequestTypeDef:
+    return {
+        "HostArn": ...,
+    }
 ```
 
-Required fields:
-
-- `HostArn`: `str`
-
-<a id="getconnectioninputrequesttypedef"></a>
+```python title="Definition"
+class DeleteHostInputRequestTypeDef(TypedDict):
+    HostArn: str,
+```
 
 ## GetConnectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import GetConnectionInputRequestTypeDef
+
+def get_value() -> GetConnectionInputRequestTypeDef:
+    return {
+        "ConnectionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ConnectionArn`: `str`
-
-<a id="getconnectionoutputtypedef"></a>
+```python title="Definition"
+class GetConnectionInputRequestTypeDef(TypedDict):
+    ConnectionArn: str,
+```
 
 ## GetConnectionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import GetConnectionOutputTypeDef
+
+def get_value() -> GetConnectionOutputTypeDef:
+    return {
+        "Connection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConnectionOutputTypeDef(TypedDict):
+    Connection: ConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethostinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHostInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import GetHostInputRequestTypeDef
+
+def get_value() -> GetHostInputRequestTypeDef:
+    return {
+        "HostArn": ...,
+    }
 ```
 
-Required fields:
-
-- `HostArn`: `str`
-
-<a id="gethostoutputtypedef"></a>
+```python title="Definition"
+class GetHostInputRequestTypeDef(TypedDict):
+    HostArn: str,
+```
 
 ## GetHostOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import GetHostOutputTypeDef
+
+def get_value() -> GetHostOutputTypeDef:
+    return {
+        "Name": ...,
+        "Status": ...,
+        "ProviderType": ...,
+        "ProviderEndpoint": ...,
+        "VpcConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHostOutputTypeDef(TypedDict):
+    Name: str,
+    Status: str,
+    ProviderType: ProviderTypeType,  # (1)
+    ProviderEndpoint: str,
+    VpcConfiguration: VpcConfigurationTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Name`: `str`
-- `Status`: `str`
-- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
-- `ProviderEndpoint`: `str`
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hosttypedef"></a>
-
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HostTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import HostTypeDef
+
+def get_value() -> HostTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HostTypeDef(TypedDict):
+    Name: NotRequired[str],
+    HostArn: NotRequired[str],
+    ProviderType: NotRequired[ProviderTypeType],  # (1)
+    ProviderEndpoint: NotRequired[str],
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (2)
+    Status: NotRequired[str],
+    StatusMessage: NotRequired[str],
+```
 
-- `Name`: `str`
-- `HostArn`: `str`
-- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
-- `ProviderEndpoint`: `str`
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-- `Status`: `str`
-- `StatusMessage`: `str`
-
-<a id="listconnectionsinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## ListConnectionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import ListConnectionsInputRequestTypeDef
+
+def get_value() -> ListConnectionsInputRequestTypeDef:
+    return {
+        "ProviderTypeFilter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListConnectionsInputRequestTypeDef(TypedDict):
+    ProviderTypeFilter: NotRequired[ProviderTypeType],  # (1)
+    HostArnFilter: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ProviderTypeFilter`: [ProviderTypeType](./literals.md#providertypetype)
-- `HostArnFilter`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listconnectionsoutputtypedef"></a>
-
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
 ## ListConnectionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import ListConnectionsOutputTypeDef
+
+def get_value() -> ListConnectionsOutputTypeDef:
+    return {
+        "Connections": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConnectionsOutputTypeDef(TypedDict):
+    Connections: List[ConnectionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Connections`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listhostsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListHostsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import ListHostsInputRequestTypeDef
+
+def get_value() -> ListHostsInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listhostsoutputtypedef"></a>
+```python title="Definition"
+class ListHostsInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListHostsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import ListHostsOutputTypeDef
+
+def get_value() -> ListHostsOutputTypeDef:
+    return {
+        "Hosts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHostsOutputTypeDef(TypedDict):
+    Hosts: List[HostTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Hosts`: `List`\[[HostTypeDef](./type_defs.md#hosttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: HostTypeDef](./type_defs.md#hosttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatehostinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateHostInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import UpdateHostInputRequestTypeDef
+
+def get_value() -> UpdateHostInputRequestTypeDef:
+    return {
+        "HostArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateHostInputRequestTypeDef(TypedDict):
+    HostArn: str,
+    ProviderEndpoint: NotRequired[str],
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (1)
+```
 
-- `HostArn`: `str`
-
-Optional fields:
-
-- `ProviderEndpoint`: `str`
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-
-<a id="vpcconfigurationtypedef"></a>
-
+1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## VpcConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codestar_connections.type_defs import VpcConfigurationTypeDef
+
+def get_value() -> VpcConfigurationTypeDef:
+    return {
+        "VpcId": ...,
+        "SubnetIds": ...,
+        "SecurityGroupIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VpcConfigurationTypeDef(TypedDict):
+    VpcId: str,
+    SubnetIds: Sequence[str],
+    SecurityGroupIds: Sequence[str],
+    TlsCertificate: NotRequired[str],
+```
 
-- `VpcId`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `TlsCertificate`: `str`

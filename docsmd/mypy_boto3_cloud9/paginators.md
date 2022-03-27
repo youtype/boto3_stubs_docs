@@ -1,28 +1,18 @@
-<a id="paginators-for-boto3-cloud9-module"></a>
-
-# Paginators for boto3 Cloud9 module
+# Paginators
 
 > [Index](../README.md) > [Cloud9](./README.md) > Paginators
 
-Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
-type annotations stubs module
-[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+!!! note ""
 
-- [Paginators for boto3 Cloud9 module](#paginators-for-boto3-cloud9-module)
-  - [DescribeEnvironmentMembershipsPaginator](#describeenvironmentmembershipspaginator)
-  - [ListEnvironmentsPaginator](#listenvironmentspaginator)
-
-<a id="describeenvironmentmembershipspaginator"></a>
+    Auto-generated documentation for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+    type annotations stubs module [mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 ## DescribeEnvironmentMembershipsPaginator
 
-Type annotations for
-`boto3.client("cloud9").get_paginator("describe_environment_memberships")`.
+Type annotations and code completion for `#!python boto3.client("cloud9").get_paginator("describe_environment_memberships")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.DescribeEnvironmentMemberships)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloud9.paginator import DescribeEnvironmentMembershipsPaginator
@@ -31,30 +21,43 @@ def get_describe_environment_memberships_paginator() -> DescribeEnvironmentMembe
     return Session().client("cloud9").get_paginator("describe_environment_memberships")
 ```
 
-Boto3 documentation:
-[Cloud9.Paginator.DescribeEnvironmentMemberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.DescribeEnvironmentMemberships)
 
-Arguments for `DescribeEnvironmentMembershipsPaginator.paginate` method:
+### paginate
 
-- `userArn`: `str`
-- `environmentId`: `str`
-- `permissions`: `Sequence`\[[PermissionsType](./literals.md#permissionstype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEnvironmentMembershipsPaginator.paginate` method.
 
-`DescribeEnvironmentMembershipsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    userArn: str = ...,
+    environmentId: str = ...,
+    permissions: Sequence[PermissionsType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEnvironmentMembershipsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listenvironmentspaginator"></a>
+1. See [:material-code-brackets: PermissionsType](./literals.md#permissionstype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentMembershipsRequestDescribeEnvironmentMembershipsPaginateTypeDef = {  # (1)
+    "userArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEnvironmentMembershipsRequestDescribeEnvironmentMembershipsPaginateTypeDef](./type_defs.md#describeenvironmentmembershipsrequestdescribeenvironmentmembershipspaginatetypedef) 
 ## ListEnvironmentsPaginator
 
-Type annotations for
-`boto3.client("cloud9").get_paginator("list_environments")`.
+Type annotations and code completion for `#!python boto3.client("cloud9").get_paginator("list_environments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.ListEnvironments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloud9.paginator import ListEnvironmentsPaginator
@@ -63,13 +66,30 @@ def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return Session().client("cloud9").get_paginator("list_environments")
 ```
 
-Boto3 documentation:
-[Cloud9.Paginator.ListEnvironments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Paginator.ListEnvironments)
 
-Arguments for `ListEnvironmentsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnvironmentsPaginator.paginate` method.
 
-`ListEnvironmentsPaginator.paginate` returns
-`_PageIterator`\[[ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEnvironmentsResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentsRequestListEnvironmentsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnvironmentsRequestListEnvironmentsPaginateTypeDef](./type_defs.md#listenvironmentsrequestlistenvironmentspaginatetypedef) 

@@ -1,46 +1,18 @@
-<a id="iotdeviceadvisorclient-for-boto3-iotdeviceadvisor-module"></a>
+# IoTDeviceAdvisorClient
 
-# IoTDeviceAdvisorClient for boto3 IoTDeviceAdvisor module
+> [Index](../README.md) > [IoTDeviceAdvisor](./README.md) > IoTDeviceAdvisorClient
 
-> [Index](../README.md) > [IoTDeviceAdvisor](./README.md) >
-> IoTDeviceAdvisorClient
+!!! note ""
 
-Auto-generated documentation for
-[IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
-type annotations stubs module
-[mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
-
-- [IoTDeviceAdvisorClient for boto3 IoTDeviceAdvisor module](#iotdeviceadvisorclient-for-boto3-iotdeviceadvisor-module)
-  - [IoTDeviceAdvisorClient](#iotdeviceadvisorclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_suite_definition](#create_suite_definition)
-    - [delete_suite_definition](#delete_suite_definition)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_endpoint](#get_endpoint)
-    - [get_suite_definition](#get_suite_definition)
-    - [get_suite_run](#get_suite_run)
-    - [get_suite_run_report](#get_suite_run_report)
-    - [list_suite_definitions](#list_suite_definitions)
-    - [list_suite_runs](#list_suite_runs)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [start_suite_run](#start_suite_run)
-    - [stop_suite_run](#stop_suite_run)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_suite_definition](#update_suite_definition)
-
-<a id="iotdeviceadvisorclient"></a>
+    Auto-generated documentation for [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
+    type annotations stubs module [mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 ## IoTDeviceAdvisorClient
 
-Type annotations for `boto3.client("iotdeviceadvisor")`
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iotdeviceadvisor.client import IoTDeviceAdvisorClient
 
@@ -48,399 +20,500 @@ def get_iotdeviceadvisor_client() -> IoTDeviceAdvisorClient:
     return Session().client("iotdeviceadvisor")
 ```
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iotdeviceadvisor").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iotdeviceadvisor")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iotdeviceadvisor.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IoTDeviceAdvisorClient exceptions.
-
-Type annotations for `boto3.client("iotdeviceadvisor").exceptions` method.
-
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iotdeviceadvisor").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.can_paginate)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_suite\_definition"></a>
-
-### create_suite_definition
+### create\_suite\_definition
 
 Creates a Device Advisor test suite.
 
-Type annotations for `boto3.client("iotdeviceadvisor").create_suite_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").create_suite_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.create_suite_definition)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.create_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.create_suite_definition)
+```python title="Method definition"
+def create_suite_definition(
+    self,
+    *,
+    suiteDefinitionConfiguration: SuiteDefinitionConfigurationTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> CreateSuiteDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSuiteDefinitionRequestRequestTypeDef](./type_defs.md#createsuitedefinitionrequestrequesttypedef).
+1. See [:material-code-braces: SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef) 
+2. See [:material-code-braces: CreateSuiteDefinitionResponseTypeDef](./type_defs.md#createsuitedefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `suiteDefinitionConfiguration`:
-  [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSuiteDefinitionRequestRequestTypeDef = {  # (1)
+    "suiteDefinitionConfiguration": ...,
+}
 
-Returns
-[CreateSuiteDefinitionResponseTypeDef](./type_defs.md#createsuitedefinitionresponsetypedef).
+parent.create_suite_definition(**kwargs)
+```
 
-<a id="delete\_suite\_definition"></a>
+1. See [:material-code-braces: CreateSuiteDefinitionRequestRequestTypeDef](./type_defs.md#createsuitedefinitionrequestrequesttypedef) 
 
-### delete_suite_definition
+### delete\_suite\_definition
 
 Deletes a Device Advisor test suite.
 
-Type annotations for `boto3.client("iotdeviceadvisor").delete_suite_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").delete_suite_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.delete_suite_definition)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.delete_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.delete_suite_definition)
+```python title="Method definition"
+def delete_suite_definition(
+    self,
+    *,
+    suiteDefinitionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSuiteDefinitionRequestRequestTypeDef](./type_defs.md#deletesuitedefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `suiteDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSuiteDefinitionRequestRequestTypeDef = {  # (1)
+    "suiteDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_suite_definition(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteSuiteDefinitionRequestRequestTypeDef](./type_defs.md#deletesuitedefinitionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iotdeviceadvisor").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_endpoint"></a>
-
-### get_endpoint
+### get\_endpoint
 
 Gets information about an Device Advisor endpoint.
 
-Type annotations for `boto3.client("iotdeviceadvisor").get_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").get_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_endpoint)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.get_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_endpoint)
+```python title="Method definition"
+def get_endpoint(
+    self,
+    *,
+    thingArn: str = ...,
+    certificateArn: str = ...,
+) -> GetEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEndpointRequestRequestTypeDef](./type_defs.md#getendpointrequestrequesttypedef).
+1. See [:material-code-braces: GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingArn`: `str`
-- `certificateArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetEndpointRequestRequestTypeDef = {  # (1)
+    "thingArn": ...,
+}
 
-Returns
-[GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef).
+parent.get_endpoint(**kwargs)
+```
 
-<a id="get\_suite\_definition"></a>
+1. See [:material-code-braces: GetEndpointRequestRequestTypeDef](./type_defs.md#getendpointrequestrequesttypedef) 
 
-### get_suite_definition
+### get\_suite\_definition
 
 Gets information about a Device Advisor test suite.
 
-Type annotations for `boto3.client("iotdeviceadvisor").get_suite_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").get_suite_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_definition)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.get_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_definition)
+```python title="Method definition"
+def get_suite_definition(
+    self,
+    *,
+    suiteDefinitionId: str,
+    suiteDefinitionVersion: str = ...,
+) -> GetSuiteDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSuiteDefinitionRequestRequestTypeDef](./type_defs.md#getsuitedefinitionrequestrequesttypedef).
+1. See [:material-code-braces: GetSuiteDefinitionResponseTypeDef](./type_defs.md#getsuitedefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `suiteDefinitionId`: `str` *(required)*
-- `suiteDefinitionVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSuiteDefinitionRequestRequestTypeDef = {  # (1)
+    "suiteDefinitionId": ...,
+}
 
-Returns
-[GetSuiteDefinitionResponseTypeDef](./type_defs.md#getsuitedefinitionresponsetypedef).
+parent.get_suite_definition(**kwargs)
+```
 
-<a id="get\_suite\_run"></a>
+1. See [:material-code-braces: GetSuiteDefinitionRequestRequestTypeDef](./type_defs.md#getsuitedefinitionrequestrequesttypedef) 
 
-### get_suite_run
+### get\_suite\_run
 
 Gets information about a Device Advisor test suite run.
 
-Type annotations for `boto3.client("iotdeviceadvisor").get_suite_run` method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").get_suite_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.get_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run)
+```python title="Method definition"
+def get_suite_run(
+    self,
+    *,
+    suiteDefinitionId: str,
+    suiteRunId: str,
+) -> GetSuiteRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSuiteRunRequestRequestTypeDef](./type_defs.md#getsuiterunrequestrequesttypedef).
+1. See [:material-code-braces: GetSuiteRunResponseTypeDef](./type_defs.md#getsuiterunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `suiteDefinitionId`: `str` *(required)*
-- `suiteRunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSuiteRunRequestRequestTypeDef = {  # (1)
+    "suiteDefinitionId": ...,
+    "suiteRunId": ...,
+}
 
-Returns
-[GetSuiteRunResponseTypeDef](./type_defs.md#getsuiterunresponsetypedef).
+parent.get_suite_run(**kwargs)
+```
 
-<a id="get\_suite\_run\_report"></a>
+1. See [:material-code-braces: GetSuiteRunRequestRequestTypeDef](./type_defs.md#getsuiterunrequestrequesttypedef) 
 
-### get_suite_run_report
+### get\_suite\_run\_report
 
 Gets a report download link for a successful Device Advisor qualifying test
 suite run.
 
-Type annotations for `boto3.client("iotdeviceadvisor").get_suite_run_report`
-method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").get_suite_run_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run_report)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.get_suite_run_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.get_suite_run_report)
+```python title="Method definition"
+def get_suite_run_report(
+    self,
+    *,
+    suiteDefinitionId: str,
+    suiteRunId: str,
+) -> GetSuiteRunReportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSuiteRunReportRequestRequestTypeDef](./type_defs.md#getsuiterunreportrequestrequesttypedef).
+1. See [:material-code-braces: GetSuiteRunReportResponseTypeDef](./type_defs.md#getsuiterunreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `suiteDefinitionId`: `str` *(required)*
-- `suiteRunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSuiteRunReportRequestRequestTypeDef = {  # (1)
+    "suiteDefinitionId": ...,
+    "suiteRunId": ...,
+}
 
-Returns
-[GetSuiteRunReportResponseTypeDef](./type_defs.md#getsuiterunreportresponsetypedef).
+parent.get_suite_run_report(**kwargs)
+```
 
-<a id="list\_suite\_definitions"></a>
+1. See [:material-code-braces: GetSuiteRunReportRequestRequestTypeDef](./type_defs.md#getsuiterunreportrequestrequesttypedef) 
 
-### list_suite_definitions
+### list\_suite\_definitions
 
 Lists the Device Advisor test suites you have created.
 
-Type annotations for `boto3.client("iotdeviceadvisor").list_suite_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").list_suite_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_definitions)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.list_suite_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_definitions)
+```python title="Method definition"
+def list_suite_definitions(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSuiteDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSuiteDefinitionsRequestRequestTypeDef](./type_defs.md#listsuitedefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListSuiteDefinitionsResponseTypeDef](./type_defs.md#listsuitedefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSuiteDefinitionsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListSuiteDefinitionsResponseTypeDef](./type_defs.md#listsuitedefinitionsresponsetypedef).
+parent.list_suite_definitions(**kwargs)
+```
 
-<a id="list\_suite\_runs"></a>
+1. See [:material-code-braces: ListSuiteDefinitionsRequestRequestTypeDef](./type_defs.md#listsuitedefinitionsrequestrequesttypedef) 
 
-### list_suite_runs
+### list\_suite\_runs
 
 Lists runs of the specified Device Advisor test suite.
 
-Type annotations for `boto3.client("iotdeviceadvisor").list_suite_runs` method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").list_suite_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_runs)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.list_suite_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_suite_runs)
+```python title="Method definition"
+def list_suite_runs(
+    self,
+    *,
+    suiteDefinitionId: str = ...,
+    suiteDefinitionVersion: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSuiteRunsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSuiteRunsRequestRequestTypeDef](./type_defs.md#listsuiterunsrequestrequesttypedef).
+1. See [:material-code-braces: ListSuiteRunsResponseTypeDef](./type_defs.md#listsuiterunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `suiteDefinitionId`: `str`
-- `suiteDefinitionVersion`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSuiteRunsRequestRequestTypeDef = {  # (1)
+    "suiteDefinitionId": ...,
+}
 
-Returns
-[ListSuiteRunsResponseTypeDef](./type_defs.md#listsuiterunsresponsetypedef).
+parent.list_suite_runs(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSuiteRunsRequestRequestTypeDef](./type_defs.md#listsuiterunsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags attached to an IoT Device Advisor resource.
 
-Type annotations for `boto3.client("iotdeviceadvisor").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="start\_suite\_run"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### start_suite_run
+### start\_suite\_run
 
 Starts a Device Advisor test suite run.
 
-Type annotations for `boto3.client("iotdeviceadvisor").start_suite_run` method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").start_suite_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.start_suite_run)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.start_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.start_suite_run)
+```python title="Method definition"
+def start_suite_run(
+    self,
+    *,
+    suiteDefinitionId: str,
+    suiteDefinitionVersion: str = ...,
+    suiteRunConfiguration: SuiteRunConfigurationTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> StartSuiteRunResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartSuiteRunRequestRequestTypeDef](./type_defs.md#startsuiterunrequestrequesttypedef).
+1. See [:material-code-braces: SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef) 
+2. See [:material-code-braces: StartSuiteRunResponseTypeDef](./type_defs.md#startsuiterunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `suiteDefinitionId`: `str` *(required)*
-- `suiteDefinitionVersion`: `str`
-- `suiteRunConfiguration`:
-  [SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartSuiteRunRequestRequestTypeDef = {  # (1)
+    "suiteDefinitionId": ...,
+}
 
-Returns
-[StartSuiteRunResponseTypeDef](./type_defs.md#startsuiterunresponsetypedef).
+parent.start_suite_run(**kwargs)
+```
 
-<a id="stop\_suite\_run"></a>
+1. See [:material-code-braces: StartSuiteRunRequestRequestTypeDef](./type_defs.md#startsuiterunrequestrequesttypedef) 
 
-### stop_suite_run
+### stop\_suite\_run
 
 Stops a Device Advisor test suite run that is currently running.
 
-Type annotations for `boto3.client("iotdeviceadvisor").stop_suite_run` method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").stop_suite_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.stop_suite_run)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.stop_suite_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.stop_suite_run)
+```python title="Method definition"
+def stop_suite_run(
+    self,
+    *,
+    suiteDefinitionId: str,
+    suiteRunId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopSuiteRunRequestRequestTypeDef](./type_defs.md#stopsuiterunrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `suiteDefinitionId`: `str` *(required)*
-- `suiteRunId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopSuiteRunRequestRequestTypeDef = {  # (1)
+    "suiteDefinitionId": ...,
+    "suiteRunId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_suite_run(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopSuiteRunRequestRequestTypeDef](./type_defs.md#stopsuiterunrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds to and modifies existing tags of an IoT Device Advisor resource.
 
-Type annotations for `boto3.client("iotdeviceadvisor").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.tag_resource)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from an IoT Device Advisor resource.
 
-Type annotations for `boto3.client("iotdeviceadvisor").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.untag_resource)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_suite\_definition"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_suite_definition
+### update\_suite\_definition
 
 Updates a Device Advisor test suite.
 
-Type annotations for `boto3.client("iotdeviceadvisor").update_suite_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("iotdeviceadvisor").update_suite_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.update_suite_definition)
 
-Boto3 documentation:
-[IoTDeviceAdvisor.Client.update_suite_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor.Client.update_suite_definition)
+```python title="Method definition"
+def update_suite_definition(
+    self,
+    *,
+    suiteDefinitionId: str,
+    suiteDefinitionConfiguration: SuiteDefinitionConfigurationTypeDef = ...,  # (1)
+) -> UpdateSuiteDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSuiteDefinitionRequestRequestTypeDef](./type_defs.md#updatesuitedefinitionrequestrequesttypedef).
+1. See [:material-code-braces: SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef) 
+2. See [:material-code-braces: UpdateSuiteDefinitionResponseTypeDef](./type_defs.md#updatesuitedefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `suiteDefinitionId`: `str` *(required)*
-- `suiteDefinitionConfiguration`:
-  [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateSuiteDefinitionRequestRequestTypeDef = {  # (1)
+    "suiteDefinitionId": ...,
+}
 
-Returns
-[UpdateSuiteDefinitionResponseTypeDef](./type_defs.md#updatesuitedefinitionresponsetypedef).
+parent.update_suite_definition(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateSuiteDefinitionRequestRequestTypeDef](./type_defs.md#updatesuitedefinitionrequestrequesttypedef) 
+
+
+
+

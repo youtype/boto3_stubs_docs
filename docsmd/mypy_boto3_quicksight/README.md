@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-quicksight-module"></a>
-
-# Type annotations for boto3 QuickSight module
+#  QuickSight module
 
 > [Index](../README.md) > QuickSight
 
-Auto-generated documentation for
-[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
-type annotations stubs module
-[mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
+!!! note ""
 
-- [Type annotations for boto3 QuickSight module](#type-annotations-for-boto3-quicksight-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [QuickSightClient](#quicksightclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
+    type annotations stubs module [mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `QuickSight`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[quicksight]'
 python -m pip install mypy-boto3-quicksight
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,188 +42,37 @@ python -m pip install mypy-boto3-quicksight
 python -m pip uninstall -y mypy-boto3-quicksight
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="quicksightclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## QuickSightClient
 
-Type annotations for `boto3.client("quicksight")` as
-[QuickSightClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("quicksight")` as [QuickSightClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_quicksight.client import QuickSightClient
+
+def get_client() -> QuickSightClient:
+    return Session().cleint("quicksight")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_ingestion](./client.md#cancel_ingestion)
-- [create_account_customization](./client.md#create_account_customization)
-- [create_analysis](./client.md#create_analysis)
-- [create_dashboard](./client.md#create_dashboard)
-- [create_data_set](./client.md#create_data_set)
-- [create_data_source](./client.md#create_data_source)
-- [create_folder](./client.md#create_folder)
-- [create_folder_membership](./client.md#create_folder_membership)
-- [create_group](./client.md#create_group)
-- [create_group_membership](./client.md#create_group_membership)
-- [create_iam_policy_assignment](./client.md#create_iam_policy_assignment)
-- [create_ingestion](./client.md#create_ingestion)
-- [create_namespace](./client.md#create_namespace)
-- [create_template](./client.md#create_template)
-- [create_template_alias](./client.md#create_template_alias)
-- [create_theme](./client.md#create_theme)
-- [create_theme_alias](./client.md#create_theme_alias)
-- [delete_account_customization](./client.md#delete_account_customization)
-- [delete_analysis](./client.md#delete_analysis)
-- [delete_dashboard](./client.md#delete_dashboard)
-- [delete_data_set](./client.md#delete_data_set)
-- [delete_data_source](./client.md#delete_data_source)
-- [delete_folder](./client.md#delete_folder)
-- [delete_folder_membership](./client.md#delete_folder_membership)
-- [delete_group](./client.md#delete_group)
-- [delete_group_membership](./client.md#delete_group_membership)
-- [delete_iam_policy_assignment](./client.md#delete_iam_policy_assignment)
-- [delete_namespace](./client.md#delete_namespace)
-- [delete_template](./client.md#delete_template)
-- [delete_template_alias](./client.md#delete_template_alias)
-- [delete_theme](./client.md#delete_theme)
-- [delete_theme_alias](./client.md#delete_theme_alias)
-- [delete_user](./client.md#delete_user)
-- [delete_user_by_principal_id](./client.md#delete_user_by_principal_id)
-- [describe_account_customization](./client.md#describe_account_customization)
-- [describe_account_settings](./client.md#describe_account_settings)
-- [describe_analysis](./client.md#describe_analysis)
-- [describe_analysis_permissions](./client.md#describe_analysis_permissions)
-- [describe_dashboard](./client.md#describe_dashboard)
-- [describe_dashboard_permissions](./client.md#describe_dashboard_permissions)
-- [describe_data_set](./client.md#describe_data_set)
-- [describe_data_set_permissions](./client.md#describe_data_set_permissions)
-- [describe_data_source](./client.md#describe_data_source)
-- [describe_data_source_permissions](./client.md#describe_data_source_permissions)
-- [describe_folder](./client.md#describe_folder)
-- [describe_folder_permissions](./client.md#describe_folder_permissions)
-- [describe_folder_resolved_permissions](./client.md#describe_folder_resolved_permissions)
-- [describe_group](./client.md#describe_group)
-- [describe_group_membership](./client.md#describe_group_membership)
-- [describe_iam_policy_assignment](./client.md#describe_iam_policy_assignment)
-- [describe_ingestion](./client.md#describe_ingestion)
-- [describe_ip_restriction](./client.md#describe_ip_restriction)
-- [describe_namespace](./client.md#describe_namespace)
-- [describe_template](./client.md#describe_template)
-- [describe_template_alias](./client.md#describe_template_alias)
-- [describe_template_permissions](./client.md#describe_template_permissions)
-- [describe_theme](./client.md#describe_theme)
-- [describe_theme_alias](./client.md#describe_theme_alias)
-- [describe_theme_permissions](./client.md#describe_theme_permissions)
-- [describe_user](./client.md#describe_user)
-- [exceptions](./client.md#exceptions)
-- [generate_embed_url_for_anonymous_user](./client.md#generate_embed_url_for_anonymous_user)
-- [generate_embed_url_for_registered_user](./client.md#generate_embed_url_for_registered_user)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_dashboard_embed_url](./client.md#get_dashboard_embed_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_session_embed_url](./client.md#get_session_embed_url)
-- [list_analyses](./client.md#list_analyses)
-- [list_dashboard_versions](./client.md#list_dashboard_versions)
-- [list_dashboards](./client.md#list_dashboards)
-- [list_data_sets](./client.md#list_data_sets)
-- [list_data_sources](./client.md#list_data_sources)
-- [list_folder_members](./client.md#list_folder_members)
-- [list_folders](./client.md#list_folders)
-- [list_group_memberships](./client.md#list_group_memberships)
-- [list_groups](./client.md#list_groups)
-- [list_iam_policy_assignments](./client.md#list_iam_policy_assignments)
-- [list_iam_policy_assignments_for_user](./client.md#list_iam_policy_assignments_for_user)
-- [list_ingestions](./client.md#list_ingestions)
-- [list_namespaces](./client.md#list_namespaces)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_template_aliases](./client.md#list_template_aliases)
-- [list_template_versions](./client.md#list_template_versions)
-- [list_templates](./client.md#list_templates)
-- [list_theme_aliases](./client.md#list_theme_aliases)
-- [list_theme_versions](./client.md#list_theme_versions)
-- [list_themes](./client.md#list_themes)
-- [list_user_groups](./client.md#list_user_groups)
-- [list_users](./client.md#list_users)
-- [register_user](./client.md#register_user)
-- [restore_analysis](./client.md#restore_analysis)
-- [search_analyses](./client.md#search_analyses)
-- [search_dashboards](./client.md#search_dashboards)
-- [search_folders](./client.md#search_folders)
-- [search_groups](./client.md#search_groups)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_account_customization](./client.md#update_account_customization)
-- [update_account_settings](./client.md#update_account_settings)
-- [update_analysis](./client.md#update_analysis)
-- [update_analysis_permissions](./client.md#update_analysis_permissions)
-- [update_dashboard](./client.md#update_dashboard)
-- [update_dashboard_permissions](./client.md#update_dashboard_permissions)
-- [update_dashboard_published_version](./client.md#update_dashboard_published_version)
-- [update_data_set](./client.md#update_data_set)
-- [update_data_set_permissions](./client.md#update_data_set_permissions)
-- [update_data_source](./client.md#update_data_source)
-- [update_data_source_permissions](./client.md#update_data_source_permissions)
-- [update_folder](./client.md#update_folder)
-- [update_folder_permissions](./client.md#update_folder_permissions)
-- [update_group](./client.md#update_group)
-- [update_iam_policy_assignment](./client.md#update_iam_policy_assignment)
-- [update_ip_restriction](./client.md#update_ip_restriction)
-- [update_template](./client.md#update_template)
-- [update_template_alias](./client.md#update_template_alias)
-- [update_template_permissions](./client.md#update_template_permissions)
-- [update_theme](./client.md#update_theme)
-- [update_theme_alias](./client.md#update_theme_alias)
-- [update_theme_permissions](./client.md#update_theme_permissions)
-- [update_user](./client.md#update_user)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-QuickSightClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConcurrentUpdatingException
-- ConflictException
-- DomainNotWhitelistedException
-- IdentityTypeNotSupportedException
-- InternalFailureException
-- InvalidNextTokenException
-- InvalidParameterValueException
-- LimitExceededException
-- PreconditionNotMetException
-- QuickSightUserNotFoundException
-- ResourceExistsException
-- ResourceNotFoundException
-- ResourceUnavailableException
-- SessionLifetimeInMinutesInvalidException
-- ThrottlingException
-- UnsupportedPricingPlanException
-- UnsupportedUserEditionException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("quicksight").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("quicksight").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_quicksight.paginator import ListAnalysesPaginator, ...
+from mypy_boto3_quicksight.paginator import ListAnalysesPaginator
+
+def get_list_analyses_paginator() -> ListAnalysesPaginator:
+    return Session().client("quicksight").get_paginator("list_analyses"))
 ```
 
 - [ListAnalysesPaginator](./paginators.md#listanalysespaginator)
@@ -263,16 +90,23 @@ from mypy_boto3_quicksight.paginator import ListAnalysesPaginator, ...
 - [SearchAnalysesPaginator](./paginators.md#searchanalysespaginator)
 - [SearchDashboardsPaginator](./paginators.md#searchdashboardspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_quicksight.literals import AnalysisErrorTypeType
 
-```python
-from mypy_boto3_quicksight.literals import AnalysisErrorTypeType, ...
+def get_value() -> AnalysisErrorTypeType:
+    return "ACCESS_DENIED"
 ```
 
 - [AnalysisErrorTypeType](./literals.md#analysiserrortypetype)
@@ -336,18 +170,22 @@ from mypy_boto3_quicksight.literals import AnalysisErrorTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_quicksight.type_defs import AccountCustomizationTypeDef
 
-```python
-from mypy_boto3_quicksight.type_defs import AccountCustomizationTypeDef, ...
+def get_value() -> AccountCustomizationTypeDef:
+    return {
+        "DefaultTheme": ...,
+    }
 ```
 
 - [AccountCustomizationTypeDef](./type_defs.md#accountcustomizationtypedef)
@@ -554,14 +392,19 @@ from mypy_boto3_quicksight.type_defs import AccountCustomizationTypeDef, ...
 - [JoinInstructionTypeDef](./type_defs.md#joininstructiontypedef)
 - [JoinKeyPropertiesTypeDef](./type_defs.md#joinkeypropertiestypedef)
 - [LinkSharingConfigurationTypeDef](./type_defs.md#linksharingconfigurationtypedef)
+- [ListAnalysesRequestListAnalysesPaginateTypeDef](./type_defs.md#listanalysesrequestlistanalysespaginatetypedef)
 - [ListAnalysesRequestRequestTypeDef](./type_defs.md#listanalysesrequestrequesttypedef)
 - [ListAnalysesResponseTypeDef](./type_defs.md#listanalysesresponsetypedef)
+- [ListDashboardVersionsRequestListDashboardVersionsPaginateTypeDef](./type_defs.md#listdashboardversionsrequestlistdashboardversionspaginatetypedef)
 - [ListDashboardVersionsRequestRequestTypeDef](./type_defs.md#listdashboardversionsrequestrequesttypedef)
 - [ListDashboardVersionsResponseTypeDef](./type_defs.md#listdashboardversionsresponsetypedef)
+- [ListDashboardsRequestListDashboardsPaginateTypeDef](./type_defs.md#listdashboardsrequestlistdashboardspaginatetypedef)
 - [ListDashboardsRequestRequestTypeDef](./type_defs.md#listdashboardsrequestrequesttypedef)
 - [ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef)
+- [ListDataSetsRequestListDataSetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef)
 - [ListDataSetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
 - [ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)
+- [ListDataSourcesRequestListDataSourcesPaginateTypeDef](./type_defs.md#listdatasourcesrequestlistdatasourcespaginatetypedef)
 - [ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef)
 - [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef)
 - [ListFolderMembersRequestRequestTypeDef](./type_defs.md#listfoldermembersrequestrequesttypedef)
@@ -576,22 +419,29 @@ from mypy_boto3_quicksight.type_defs import AccountCustomizationTypeDef, ...
 - [ListIAMPolicyAssignmentsForUserResponseTypeDef](./type_defs.md#listiampolicyassignmentsforuserresponsetypedef)
 - [ListIAMPolicyAssignmentsRequestRequestTypeDef](./type_defs.md#listiampolicyassignmentsrequestrequesttypedef)
 - [ListIAMPolicyAssignmentsResponseTypeDef](./type_defs.md#listiampolicyassignmentsresponsetypedef)
+- [ListIngestionsRequestListIngestionsPaginateTypeDef](./type_defs.md#listingestionsrequestlistingestionspaginatetypedef)
 - [ListIngestionsRequestRequestTypeDef](./type_defs.md#listingestionsrequestrequesttypedef)
 - [ListIngestionsResponseTypeDef](./type_defs.md#listingestionsresponsetypedef)
+- [ListNamespacesRequestListNamespacesPaginateTypeDef](./type_defs.md#listnamespacesrequestlistnamespacespaginatetypedef)
 - [ListNamespacesRequestRequestTypeDef](./type_defs.md#listnamespacesrequestrequesttypedef)
 - [ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTemplateAliasesRequestListTemplateAliasesPaginateTypeDef](./type_defs.md#listtemplatealiasesrequestlisttemplatealiasespaginatetypedef)
 - [ListTemplateAliasesRequestRequestTypeDef](./type_defs.md#listtemplatealiasesrequestrequesttypedef)
 - [ListTemplateAliasesResponseTypeDef](./type_defs.md#listtemplatealiasesresponsetypedef)
+- [ListTemplateVersionsRequestListTemplateVersionsPaginateTypeDef](./type_defs.md#listtemplateversionsrequestlisttemplateversionspaginatetypedef)
 - [ListTemplateVersionsRequestRequestTypeDef](./type_defs.md#listtemplateversionsrequestrequesttypedef)
 - [ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef)
+- [ListTemplatesRequestListTemplatesPaginateTypeDef](./type_defs.md#listtemplatesrequestlisttemplatespaginatetypedef)
 - [ListTemplatesRequestRequestTypeDef](./type_defs.md#listtemplatesrequestrequesttypedef)
 - [ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef)
 - [ListThemeAliasesRequestRequestTypeDef](./type_defs.md#listthemealiasesrequestrequesttypedef)
 - [ListThemeAliasesResponseTypeDef](./type_defs.md#listthemealiasesresponsetypedef)
+- [ListThemeVersionsRequestListThemeVersionsPaginateTypeDef](./type_defs.md#listthemeversionsrequestlistthemeversionspaginatetypedef)
 - [ListThemeVersionsRequestRequestTypeDef](./type_defs.md#listthemeversionsrequestrequesttypedef)
 - [ListThemeVersionsResponseTypeDef](./type_defs.md#listthemeversionsresponsetypedef)
+- [ListThemesRequestListThemesPaginateTypeDef](./type_defs.md#listthemesrequestlistthemespaginatetypedef)
 - [ListThemesRequestRequestTypeDef](./type_defs.md#listthemesrequestrequesttypedef)
 - [ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef)
 - [ListUserGroupsRequestRequestTypeDef](./type_defs.md#listusergroupsrequestrequesttypedef)
@@ -637,8 +487,10 @@ from mypy_boto3_quicksight.type_defs import AccountCustomizationTypeDef, ...
 - [S3ParametersTypeDef](./type_defs.md#s3parameterstypedef)
 - [S3SourceTypeDef](./type_defs.md#s3sourcetypedef)
 - [SearchAnalysesRequestRequestTypeDef](./type_defs.md#searchanalysesrequestrequesttypedef)
+- [SearchAnalysesRequestSearchAnalysesPaginateTypeDef](./type_defs.md#searchanalysesrequestsearchanalysespaginatetypedef)
 - [SearchAnalysesResponseTypeDef](./type_defs.md#searchanalysesresponsetypedef)
 - [SearchDashboardsRequestRequestTypeDef](./type_defs.md#searchdashboardsrequestrequesttypedef)
+- [SearchDashboardsRequestSearchDashboardsPaginateTypeDef](./type_defs.md#searchdashboardsrequestsearchdashboardspaginatetypedef)
 - [SearchDashboardsResponseTypeDef](./type_defs.md#searchdashboardsresponsetypedef)
 - [SearchFoldersRequestRequestTypeDef](./type_defs.md#searchfoldersrequestrequesttypedef)
 - [SearchFoldersResponseTypeDef](./type_defs.md#searchfoldersresponsetypedef)
@@ -732,3 +584,4 @@ from mypy_boto3_quicksight.type_defs import AccountCustomizationTypeDef, ...
 - [UploadSettingsTypeDef](./type_defs.md#uploadsettingstypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
 - [VpcConnectionPropertiesTypeDef](./type_defs.md#vpcconnectionpropertiestypedef)
+

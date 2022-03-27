@@ -1,83 +1,18 @@
-<a id="eventbridgeclient-for-boto3-eventbridge-module"></a>
-
-# EventBridgeClient for boto3 EventBridge module
+# EventBridgeClient
 
 > [Index](../README.md) > [EventBridge](./README.md) > EventBridgeClient
 
-Auto-generated documentation for
-[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
-type annotations stubs module
-[mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
+!!! note ""
 
-- [EventBridgeClient for boto3 EventBridge module](#eventbridgeclient-for-boto3-eventbridge-module)
-  - [EventBridgeClient](#eventbridgeclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [activate_event_source](#activate_event_source)
-    - [can_paginate](#can_paginate)
-    - [cancel_replay](#cancel_replay)
-    - [create_api_destination](#create_api_destination)
-    - [create_archive](#create_archive)
-    - [create_connection](#create_connection)
-    - [create_event_bus](#create_event_bus)
-    - [create_partner_event_source](#create_partner_event_source)
-    - [deactivate_event_source](#deactivate_event_source)
-    - [deauthorize_connection](#deauthorize_connection)
-    - [delete_api_destination](#delete_api_destination)
-    - [delete_archive](#delete_archive)
-    - [delete_connection](#delete_connection)
-    - [delete_event_bus](#delete_event_bus)
-    - [delete_partner_event_source](#delete_partner_event_source)
-    - [delete_rule](#delete_rule)
-    - [describe_api_destination](#describe_api_destination)
-    - [describe_archive](#describe_archive)
-    - [describe_connection](#describe_connection)
-    - [describe_event_bus](#describe_event_bus)
-    - [describe_event_source](#describe_event_source)
-    - [describe_partner_event_source](#describe_partner_event_source)
-    - [describe_replay](#describe_replay)
-    - [describe_rule](#describe_rule)
-    - [disable_rule](#disable_rule)
-    - [enable_rule](#enable_rule)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_api_destinations](#list_api_destinations)
-    - [list_archives](#list_archives)
-    - [list_connections](#list_connections)
-    - [list_event_buses](#list_event_buses)
-    - [list_event_sources](#list_event_sources)
-    - [list_partner_event_source_accounts](#list_partner_event_source_accounts)
-    - [list_partner_event_sources](#list_partner_event_sources)
-    - [list_replays](#list_replays)
-    - [list_rule_names_by_target](#list_rule_names_by_target)
-    - [list_rules](#list_rules)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_targets_by_rule](#list_targets_by_rule)
-    - [put_events](#put_events)
-    - [put_partner_events](#put_partner_events)
-    - [put_permission](#put_permission)
-    - [put_rule](#put_rule)
-    - [put_targets](#put_targets)
-    - [remove_permission](#remove_permission)
-    - [remove_targets](#remove_targets)
-    - [start_replay](#start_replay)
-    - [tag_resource](#tag_resource)
-    - [test_event_pattern](#test_event_pattern)
-    - [untag_resource](#untag_resource)
-    - [update_api_destination](#update_api_destination)
-    - [update_archive](#update_archive)
-    - [update_connection](#update_connection)
-    - [get_paginator](#get_paginator)
-
-<a id="eventbridgeclient"></a>
+    Auto-generated documentation for [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
+    type annotations stubs module [mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
 
 ## EventBridgeClient
 
-Type annotations for `boto3.client("events")`
+Type annotations and code completion for `#!python boto3.client("events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_events.client import EventBridgeClient
 
@@ -85,1262 +20,1692 @@ def get_events_client() -> EventBridgeClient:
     return Session().client("events")
 ```
 
-Boto3 documentation:
-[EventBridge.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("events").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("events")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.IllegalStatusException,
+    client.InternalException,
+    client.InvalidEventPatternException,
+    client.InvalidStateException,
+    client.LimitExceededException,
+    client.ManagedRuleException,
+    client.OperationDisabledException,
+    client.PolicyLengthExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_events.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.IllegalStatusException`
-- `Exceptions.InternalException`
-- `Exceptions.InvalidEventPatternException`
-- `Exceptions.InvalidStateException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ManagedRuleException`
-- `Exceptions.OperationDisabledException`
-- `Exceptions.PolicyLengthExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-EventBridgeClient exceptions.
-
-Type annotations for `boto3.client("events").exceptions` method.
-
-Boto3 documentation:
-[EventBridge.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="activate\_event\_source"></a>
-
-### activate_event_source
+### activate\_event\_source
 
 Activates a partner event source that has been deactivated.
 
-Type annotations for `boto3.client("events").activate_event_source` method.
+Type annotations and code completion for `#!python boto3.client("events").activate_event_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.activate_event_source)
 
-Boto3 documentation:
-[EventBridge.Client.activate_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.activate_event_source)
+```python title="Method definition"
+def activate_event_source(
+    self,
+    *,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ActivateEventSourceRequestRequestTypeDef](./type_defs.md#activateeventsourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ActivateEventSourceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.activate_event_source(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: ActivateEventSourceRequestRequestTypeDef](./type_defs.md#activateeventsourcerequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("events").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("events").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.can_paginate)
 
-Boto3 documentation:
-[EventBridge.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_replay"></a>
-
-### cancel_replay
+### cancel\_replay
 
 Cancels the specified replay.
 
-Type annotations for `boto3.client("events").cancel_replay` method.
+Type annotations and code completion for `#!python boto3.client("events").cancel_replay` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.cancel_replay)
 
-Boto3 documentation:
-[EventBridge.Client.cancel_replay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.cancel_replay)
+```python title="Method definition"
+def cancel_replay(
+    self,
+    *,
+    ReplayName: str,
+) -> CancelReplayResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelReplayRequestRequestTypeDef](./type_defs.md#cancelreplayrequestrequesttypedef).
+1. See [:material-code-braces: CancelReplayResponseTypeDef](./type_defs.md#cancelreplayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplayName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelReplayRequestRequestTypeDef = {  # (1)
+    "ReplayName": ...,
+}
 
-Returns
-[CancelReplayResponseTypeDef](./type_defs.md#cancelreplayresponsetypedef).
+parent.cancel_replay(**kwargs)
+```
 
-<a id="create\_api\_destination"></a>
+1. See [:material-code-braces: CancelReplayRequestRequestTypeDef](./type_defs.md#cancelreplayrequestrequesttypedef) 
 
-### create_api_destination
+### create\_api\_destination
 
-Creates an API destination, which is an HTTP invocation endpoint configured as
-a target for events.
+Creates an API destination, which is an HTTP invocation endpoint configured as a
+target for events.
 
-Type annotations for `boto3.client("events").create_api_destination` method.
+Type annotations and code completion for `#!python boto3.client("events").create_api_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_api_destination)
 
-Boto3 documentation:
-[EventBridge.Client.create_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_api_destination)
+```python title="Method definition"
+def create_api_destination(
+    self,
+    *,
+    Name: str,
+    ConnectionArn: str,
+    InvocationEndpoint: str,
+    HttpMethod: ApiDestinationHttpMethodType,  # (1)
+    Description: str = ...,
+    InvocationRateLimitPerSecond: int = ...,
+) -> CreateApiDestinationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateApiDestinationRequestRequestTypeDef](./type_defs.md#createapidestinationrequestrequesttypedef).
+1. See [:material-code-brackets: ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype) 
+2. See [:material-code-braces: CreateApiDestinationResponseTypeDef](./type_defs.md#createapidestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ConnectionArn`: `str` *(required)*
-- `InvocationEndpoint`: `str` *(required)*
-- `HttpMethod`:
-  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
-  *(required)*
-- `Description`: `str`
-- `InvocationRateLimitPerSecond`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateApiDestinationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ConnectionArn": ...,
+    "InvocationEndpoint": ...,
+    "HttpMethod": ...,
+}
 
-Returns
-[CreateApiDestinationResponseTypeDef](./type_defs.md#createapidestinationresponsetypedef).
+parent.create_api_destination(**kwargs)
+```
 
-<a id="create\_archive"></a>
+1. See [:material-code-braces: CreateApiDestinationRequestRequestTypeDef](./type_defs.md#createapidestinationrequestrequesttypedef) 
 
-### create_archive
+### create\_archive
 
 Creates an archive of events with the specified settings.
 
-Type annotations for `boto3.client("events").create_archive` method.
+Type annotations and code completion for `#!python boto3.client("events").create_archive` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_archive)
 
-Boto3 documentation:
-[EventBridge.Client.create_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_archive)
+```python title="Method definition"
+def create_archive(
+    self,
+    *,
+    ArchiveName: str,
+    EventSourceArn: str,
+    Description: str = ...,
+    EventPattern: str = ...,
+    RetentionDays: int = ...,
+) -> CreateArchiveResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateArchiveRequestRequestTypeDef](./type_defs.md#createarchiverequestrequesttypedef).
+1. See [:material-code-braces: CreateArchiveResponseTypeDef](./type_defs.md#createarchiveresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ArchiveName`: `str` *(required)*
-- `EventSourceArn`: `str` *(required)*
-- `Description`: `str`
-- `EventPattern`: `str`
-- `RetentionDays`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateArchiveRequestRequestTypeDef = {  # (1)
+    "ArchiveName": ...,
+    "EventSourceArn": ...,
+}
 
-Returns
-[CreateArchiveResponseTypeDef](./type_defs.md#createarchiveresponsetypedef).
+parent.create_archive(**kwargs)
+```
 
-<a id="create\_connection"></a>
+1. See [:material-code-braces: CreateArchiveRequestRequestTypeDef](./type_defs.md#createarchiverequestrequesttypedef) 
 
-### create_connection
+### create\_connection
 
 Creates a connection.
 
-Type annotations for `boto3.client("events").create_connection` method.
+Type annotations and code completion for `#!python boto3.client("events").create_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_connection)
 
-Boto3 documentation:
-[EventBridge.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_connection)
+```python title="Method definition"
+def create_connection(
+    self,
+    *,
+    Name: str,
+    AuthorizationType: ConnectionAuthorizationTypeType,  # (1)
+    AuthParameters: CreateConnectionAuthRequestParametersTypeDef,  # (2)
+    Description: str = ...,
+) -> CreateConnectionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype) 
+2. See [:material-code-braces: CreateConnectionAuthRequestParametersTypeDef](./type_defs.md#createconnectionauthrequestparameterstypedef) 
+3. See [:material-code-braces: CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AuthorizationType`:
-  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
-  *(required)*
-- `AuthParameters`:
-  [CreateConnectionAuthRequestParametersTypeDef](./type_defs.md#createconnectionauthrequestparameterstypedef)
-  *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateConnectionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "AuthorizationType": ...,
+    "AuthParameters": ...,
+}
 
-Returns
-[CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
+parent.create_connection(**kwargs)
+```
 
-<a id="create\_event\_bus"></a>
+1. See [:material-code-braces: CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef) 
 
-### create_event_bus
+### create\_event\_bus
 
 Creates a new event bus within your account.
 
-Type annotations for `boto3.client("events").create_event_bus` method.
+Type annotations and code completion for `#!python boto3.client("events").create_event_bus` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_event_bus)
 
-Boto3 documentation:
-[EventBridge.Client.create_event_bus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_event_bus)
+```python title="Method definition"
+def create_event_bus(
+    self,
+    *,
+    Name: str,
+    EventSourceName: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateEventBusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEventBusRequestRequestTypeDef](./type_defs.md#createeventbusrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateEventBusResponseTypeDef](./type_defs.md#createeventbusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `EventSourceName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateEventBusRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateEventBusResponseTypeDef](./type_defs.md#createeventbusresponsetypedef).
+parent.create_event_bus(**kwargs)
+```
 
-<a id="create\_partner\_event\_source"></a>
+1. See [:material-code-braces: CreateEventBusRequestRequestTypeDef](./type_defs.md#createeventbusrequestrequesttypedef) 
 
-### create_partner_event_source
+### create\_partner\_event\_source
 
 Called by an SaaS partner to create a partner event source.
 
-Type annotations for `boto3.client("events").create_partner_event_source`
-method.
+Type annotations and code completion for `#!python boto3.client("events").create_partner_event_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_partner_event_source)
 
-Boto3 documentation:
-[EventBridge.Client.create_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.create_partner_event_source)
+```python title="Method definition"
+def create_partner_event_source(
+    self,
+    *,
+    Name: str,
+    Account: str,
+) -> CreatePartnerEventSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePartnerEventSourceRequestRequestTypeDef](./type_defs.md#createpartnereventsourcerequestrequesttypedef).
+1. See [:material-code-braces: CreatePartnerEventSourceResponseTypeDef](./type_defs.md#createpartnereventsourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Account`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreatePartnerEventSourceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Account": ...,
+}
 
-Returns
-[CreatePartnerEventSourceResponseTypeDef](./type_defs.md#createpartnereventsourceresponsetypedef).
+parent.create_partner_event_source(**kwargs)
+```
 
-<a id="deactivate\_event\_source"></a>
+1. See [:material-code-braces: CreatePartnerEventSourceRequestRequestTypeDef](./type_defs.md#createpartnereventsourcerequestrequesttypedef) 
 
-### deactivate_event_source
+### deactivate\_event\_source
 
 You can use this operation to temporarily stop receiving events from the
 specified partner event source.
 
-Type annotations for `boto3.client("events").deactivate_event_source` method.
+Type annotations and code completion for `#!python boto3.client("events").deactivate_event_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deactivate_event_source)
 
-Boto3 documentation:
-[EventBridge.Client.deactivate_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deactivate_event_source)
+```python title="Method definition"
+def deactivate_event_source(
+    self,
+    *,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeactivateEventSourceRequestRequestTypeDef](./type_defs.md#deactivateeventsourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeactivateEventSourceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="deauthorize\_connection"></a>
+parent.deactivate_event_source(**kwargs)
+```
 
-### deauthorize_connection
+1. See [:material-code-braces: DeactivateEventSourceRequestRequestTypeDef](./type_defs.md#deactivateeventsourcerequestrequesttypedef) 
+
+### deauthorize\_connection
 
 Removes all authorization parameters from the connection.
 
-Type annotations for `boto3.client("events").deauthorize_connection` method.
+Type annotations and code completion for `#!python boto3.client("events").deauthorize_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deauthorize_connection)
 
-Boto3 documentation:
-[EventBridge.Client.deauthorize_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.deauthorize_connection)
+```python title="Method definition"
+def deauthorize_connection(
+    self,
+    *,
+    Name: str,
+) -> DeauthorizeConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeauthorizeConnectionRequestRequestTypeDef](./type_defs.md#deauthorizeconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DeauthorizeConnectionResponseTypeDef](./type_defs.md#deauthorizeconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeauthorizeConnectionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeauthorizeConnectionResponseTypeDef](./type_defs.md#deauthorizeconnectionresponsetypedef).
+parent.deauthorize_connection(**kwargs)
+```
 
-<a id="delete\_api\_destination"></a>
+1. See [:material-code-braces: DeauthorizeConnectionRequestRequestTypeDef](./type_defs.md#deauthorizeconnectionrequestrequesttypedef) 
 
-### delete_api_destination
+### delete\_api\_destination
 
 Deletes the specified API destination.
 
-Type annotations for `boto3.client("events").delete_api_destination` method.
+Type annotations and code completion for `#!python boto3.client("events").delete_api_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_api_destination)
 
-Boto3 documentation:
-[EventBridge.Client.delete_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_api_destination)
+```python title="Method definition"
+def delete_api_destination(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApiDestinationRequestRequestTypeDef](./type_defs.md#deleteapidestinationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApiDestinationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_api_destination(**kwargs)
+```
 
-<a id="delete\_archive"></a>
+1. See [:material-code-braces: DeleteApiDestinationRequestRequestTypeDef](./type_defs.md#deleteapidestinationrequestrequesttypedef) 
 
-### delete_archive
+### delete\_archive
 
 Deletes the specified archive.
 
-Type annotations for `boto3.client("events").delete_archive` method.
+Type annotations and code completion for `#!python boto3.client("events").delete_archive` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_archive)
 
-Boto3 documentation:
-[EventBridge.Client.delete_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_archive)
+```python title="Method definition"
+def delete_archive(
+    self,
+    *,
+    ArchiveName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteArchiveRequestRequestTypeDef](./type_defs.md#deletearchiverequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ArchiveName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteArchiveRequestRequestTypeDef = {  # (1)
+    "ArchiveName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_archive(**kwargs)
+```
 
-<a id="delete\_connection"></a>
+1. See [:material-code-braces: DeleteArchiveRequestRequestTypeDef](./type_defs.md#deletearchiverequestrequesttypedef) 
 
-### delete_connection
+### delete\_connection
 
 Deletes a connection.
 
-Type annotations for `boto3.client("events").delete_connection` method.
+Type annotations and code completion for `#!python boto3.client("events").delete_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_connection)
 
-Boto3 documentation:
-[EventBridge.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_connection)
+```python title="Method definition"
+def delete_connection(
+    self,
+    *,
+    Name: str,
+) -> DeleteConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
+parent.delete_connection(**kwargs)
+```
 
-<a id="delete\_event\_bus"></a>
+1. See [:material-code-braces: DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef) 
 
-### delete_event_bus
+### delete\_event\_bus
 
 Deletes the specified custom event bus or partner event bus.
 
-Type annotations for `boto3.client("events").delete_event_bus` method.
+Type annotations and code completion for `#!python boto3.client("events").delete_event_bus` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_event_bus)
 
-Boto3 documentation:
-[EventBridge.Client.delete_event_bus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_event_bus)
+```python title="Method definition"
+def delete_event_bus(
+    self,
+    *,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventBusRequestRequestTypeDef](./type_defs.md#deleteeventbusrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventBusRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="delete\_partner\_event\_source"></a>
+parent.delete_event_bus(**kwargs)
+```
 
-### delete_partner_event_source
+1. See [:material-code-braces: DeleteEventBusRequestRequestTypeDef](./type_defs.md#deleteeventbusrequestrequesttypedef) 
+
+### delete\_partner\_event\_source
 
 This operation is used by SaaS partners to delete a partner event source.
 
-Type annotations for `boto3.client("events").delete_partner_event_source`
-method.
+Type annotations and code completion for `#!python boto3.client("events").delete_partner_event_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_partner_event_source)
 
-Boto3 documentation:
-[EventBridge.Client.delete_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_partner_event_source)
+```python title="Method definition"
+def delete_partner_event_source(
+    self,
+    *,
+    Name: str,
+    Account: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePartnerEventSourceRequestRequestTypeDef](./type_defs.md#deletepartnereventsourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Account`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePartnerEventSourceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Account": ...,
+}
 
-<a id="delete\_rule"></a>
+parent.delete_partner_event_source(**kwargs)
+```
 
-### delete_rule
+1. See [:material-code-braces: DeletePartnerEventSourceRequestRequestTypeDef](./type_defs.md#deletepartnereventsourcerequestrequesttypedef) 
+
+### delete\_rule
 
 Deletes the specified rule.
 
-Type annotations for `boto3.client("events").delete_rule` method.
+Type annotations and code completion for `#!python boto3.client("events").delete_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_rule)
 
-Boto3 documentation:
-[EventBridge.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.delete_rule)
+```python title="Method definition"
+def delete_rule(
+    self,
+    *,
+    Name: str,
+    EventBusName: str = ...,
+    Force: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `EventBusName`: `str`
-- `Force`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="describe\_api\_destination"></a>
+parent.delete_rule(**kwargs)
+```
 
-### describe_api_destination
+1. See [:material-code-braces: DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef) 
+
+### describe\_api\_destination
 
 Retrieves details about an API destination.
 
-Type annotations for `boto3.client("events").describe_api_destination` method.
+Type annotations and code completion for `#!python boto3.client("events").describe_api_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_api_destination)
 
-Boto3 documentation:
-[EventBridge.Client.describe_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_api_destination)
+```python title="Method definition"
+def describe_api_destination(
+    self,
+    *,
+    Name: str,
+) -> DescribeApiDestinationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApiDestinationRequestRequestTypeDef](./type_defs.md#describeapidestinationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeApiDestinationResponseTypeDef](./type_defs.md#describeapidestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeApiDestinationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeApiDestinationResponseTypeDef](./type_defs.md#describeapidestinationresponsetypedef).
+parent.describe_api_destination(**kwargs)
+```
 
-<a id="describe\_archive"></a>
+1. See [:material-code-braces: DescribeApiDestinationRequestRequestTypeDef](./type_defs.md#describeapidestinationrequestrequesttypedef) 
 
-### describe_archive
+### describe\_archive
 
 Retrieves details about an archive.
 
-Type annotations for `boto3.client("events").describe_archive` method.
+Type annotations and code completion for `#!python boto3.client("events").describe_archive` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_archive)
 
-Boto3 documentation:
-[EventBridge.Client.describe_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_archive)
+```python title="Method definition"
+def describe_archive(
+    self,
+    *,
+    ArchiveName: str,
+) -> DescribeArchiveResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeArchiveRequestRequestTypeDef](./type_defs.md#describearchiverequestrequesttypedef).
+1. See [:material-code-braces: DescribeArchiveResponseTypeDef](./type_defs.md#describearchiveresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ArchiveName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeArchiveRequestRequestTypeDef = {  # (1)
+    "ArchiveName": ...,
+}
 
-Returns
-[DescribeArchiveResponseTypeDef](./type_defs.md#describearchiveresponsetypedef).
+parent.describe_archive(**kwargs)
+```
 
-<a id="describe\_connection"></a>
+1. See [:material-code-braces: DescribeArchiveRequestRequestTypeDef](./type_defs.md#describearchiverequestrequesttypedef) 
 
-### describe_connection
+### describe\_connection
 
 Retrieves details about a connection.
 
-Type annotations for `boto3.client("events").describe_connection` method.
+Type annotations and code completion for `#!python boto3.client("events").describe_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_connection)
 
-Boto3 documentation:
-[EventBridge.Client.describe_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_connection)
+```python title="Method definition"
+def describe_connection(
+    self,
+    *,
+    Name: str,
+) -> DescribeConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectionRequestRequestTypeDef](./type_defs.md#describeconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeConnectionResponseTypeDef](./type_defs.md#describeconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeConnectionResponseTypeDef](./type_defs.md#describeconnectionresponsetypedef).
+parent.describe_connection(**kwargs)
+```
 
-<a id="describe\_event\_bus"></a>
+1. See [:material-code-braces: DescribeConnectionRequestRequestTypeDef](./type_defs.md#describeconnectionrequestrequesttypedef) 
 
-### describe_event_bus
+### describe\_event\_bus
 
 Displays details about an event bus in your account.
 
-Type annotations for `boto3.client("events").describe_event_bus` method.
+Type annotations and code completion for `#!python boto3.client("events").describe_event_bus` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_bus)
 
-Boto3 documentation:
-[EventBridge.Client.describe_event_bus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_bus)
+```python title="Method definition"
+def describe_event_bus(
+    self,
+    *,
+    Name: str = ...,
+) -> DescribeEventBusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventBusRequestRequestTypeDef](./type_defs.md#describeeventbusrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEventBusResponseTypeDef](./type_defs.md#describeeventbusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventBusRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeEventBusResponseTypeDef](./type_defs.md#describeeventbusresponsetypedef).
+parent.describe_event_bus(**kwargs)
+```
 
-<a id="describe\_event\_source"></a>
+1. See [:material-code-braces: DescribeEventBusRequestRequestTypeDef](./type_defs.md#describeeventbusrequestrequesttypedef) 
 
-### describe_event_source
+### describe\_event\_source
 
 This operation lists details about a partner event source that is shared with
 your account.
 
-Type annotations for `boto3.client("events").describe_event_source` method.
+Type annotations and code completion for `#!python boto3.client("events").describe_event_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_source)
 
-Boto3 documentation:
-[EventBridge.Client.describe_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_event_source)
+```python title="Method definition"
+def describe_event_source(
+    self,
+    *,
+    Name: str,
+) -> DescribeEventSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventSourceRequestRequestTypeDef](./type_defs.md#describeeventsourcerequestrequesttypedef).
+1. See [:material-code-braces: DescribeEventSourceResponseTypeDef](./type_defs.md#describeeventsourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeEventSourceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeEventSourceResponseTypeDef](./type_defs.md#describeeventsourceresponsetypedef).
+parent.describe_event_source(**kwargs)
+```
 
-<a id="describe\_partner\_event\_source"></a>
+1. See [:material-code-braces: DescribeEventSourceRequestRequestTypeDef](./type_defs.md#describeeventsourcerequestrequesttypedef) 
 
-### describe_partner_event_source
+### describe\_partner\_event\_source
 
 An SaaS partner can use this operation to list details about a partner event
 source that they have created.
 
-Type annotations for `boto3.client("events").describe_partner_event_source`
-method.
+Type annotations and code completion for `#!python boto3.client("events").describe_partner_event_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_partner_event_source)
 
-Boto3 documentation:
-[EventBridge.Client.describe_partner_event_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_partner_event_source)
+```python title="Method definition"
+def describe_partner_event_source(
+    self,
+    *,
+    Name: str,
+) -> DescribePartnerEventSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePartnerEventSourceRequestRequestTypeDef](./type_defs.md#describepartnereventsourcerequestrequesttypedef).
+1. See [:material-code-braces: DescribePartnerEventSourceResponseTypeDef](./type_defs.md#describepartnereventsourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePartnerEventSourceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribePartnerEventSourceResponseTypeDef](./type_defs.md#describepartnereventsourceresponsetypedef).
+parent.describe_partner_event_source(**kwargs)
+```
 
-<a id="describe\_replay"></a>
+1. See [:material-code-braces: DescribePartnerEventSourceRequestRequestTypeDef](./type_defs.md#describepartnereventsourcerequestrequesttypedef) 
 
-### describe_replay
+### describe\_replay
 
 Retrieves details about a replay.
 
-Type annotations for `boto3.client("events").describe_replay` method.
+Type annotations and code completion for `#!python boto3.client("events").describe_replay` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_replay)
 
-Boto3 documentation:
-[EventBridge.Client.describe_replay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_replay)
+```python title="Method definition"
+def describe_replay(
+    self,
+    *,
+    ReplayName: str,
+) -> DescribeReplayResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplayRequestRequestTypeDef](./type_defs.md#describereplayrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReplayResponseTypeDef](./type_defs.md#describereplayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplayName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeReplayRequestRequestTypeDef = {  # (1)
+    "ReplayName": ...,
+}
 
-Returns
-[DescribeReplayResponseTypeDef](./type_defs.md#describereplayresponsetypedef).
+parent.describe_replay(**kwargs)
+```
 
-<a id="describe\_rule"></a>
+1. See [:material-code-braces: DescribeReplayRequestRequestTypeDef](./type_defs.md#describereplayrequestrequesttypedef) 
 
-### describe_rule
+### describe\_rule
 
 Describes the specified rule.
 
-Type annotations for `boto3.client("events").describe_rule` method.
+Type annotations and code completion for `#!python boto3.client("events").describe_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_rule)
 
-Boto3 documentation:
-[EventBridge.Client.describe_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.describe_rule)
+```python title="Method definition"
+def describe_rule(
+    self,
+    *,
+    Name: str,
+    EventBusName: str = ...,
+) -> DescribeRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRuleRequestRequestTypeDef](./type_defs.md#describerulerequestrequesttypedef).
+1. See [:material-code-braces: DescribeRuleResponseTypeDef](./type_defs.md#describeruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `EventBusName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeRuleResponseTypeDef](./type_defs.md#describeruleresponsetypedef).
+parent.describe_rule(**kwargs)
+```
 
-<a id="disable\_rule"></a>
+1. See [:material-code-braces: DescribeRuleRequestRequestTypeDef](./type_defs.md#describerulerequestrequesttypedef) 
 
-### disable_rule
+### disable\_rule
 
 Disables the specified rule.
 
-Type annotations for `boto3.client("events").disable_rule` method.
+Type annotations and code completion for `#!python boto3.client("events").disable_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.disable_rule)
 
-Boto3 documentation:
-[EventBridge.Client.disable_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.disable_rule)
+```python title="Method definition"
+def disable_rule(
+    self,
+    *,
+    Name: str,
+    EventBusName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisableRuleRequestRequestTypeDef](./type_defs.md#disablerulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `EventBusName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisableRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="enable\_rule"></a>
+parent.disable_rule(**kwargs)
+```
 
-### enable_rule
+1. See [:material-code-braces: DisableRuleRequestRequestTypeDef](./type_defs.md#disablerulerequestrequesttypedef) 
+
+### enable\_rule
 
 Enables the specified rule.
 
-Type annotations for `boto3.client("events").enable_rule` method.
+Type annotations and code completion for `#!python boto3.client("events").enable_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.enable_rule)
 
-Boto3 documentation:
-[EventBridge.Client.enable_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.enable_rule)
+```python title="Method definition"
+def enable_rule(
+    self,
+    *,
+    Name: str,
+    EventBusName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[EnableRuleRequestRequestTypeDef](./type_defs.md#enablerulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `EventBusName`: `str`
+```python title="Usage example with kwargs"
+kwargs: EnableRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.enable_rule(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: EnableRuleRequestRequestTypeDef](./type_defs.md#enablerulerequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("events").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("events").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.generate_presigned_url)
 
-Boto3 documentation:
-[EventBridge.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_api\_destinations"></a>
-
-### list_api_destinations
+### list\_api\_destinations
 
 Retrieves a list of API destination in the account in the current Region.
 
-Type annotations for `boto3.client("events").list_api_destinations` method.
+Type annotations and code completion for `#!python boto3.client("events").list_api_destinations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_api_destinations)
 
-Boto3 documentation:
-[EventBridge.Client.list_api_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_api_destinations)
+```python title="Method definition"
+def list_api_destinations(
+    self,
+    *,
+    NamePrefix: str = ...,
+    ConnectionArn: str = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListApiDestinationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApiDestinationsRequestRequestTypeDef](./type_defs.md#listapidestinationsrequestrequesttypedef).
+1. See [:material-code-braces: ListApiDestinationsResponseTypeDef](./type_defs.md#listapidestinationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NamePrefix`: `str`
-- `ConnectionArn`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListApiDestinationsRequestRequestTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
 
-Returns
-[ListApiDestinationsResponseTypeDef](./type_defs.md#listapidestinationsresponsetypedef).
+parent.list_api_destinations(**kwargs)
+```
 
-<a id="list\_archives"></a>
+1. See [:material-code-braces: ListApiDestinationsRequestRequestTypeDef](./type_defs.md#listapidestinationsrequestrequesttypedef) 
 
-### list_archives
+### list\_archives
 
 Lists your archives.
 
-Type annotations for `boto3.client("events").list_archives` method.
+Type annotations and code completion for `#!python boto3.client("events").list_archives` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_archives)
 
-Boto3 documentation:
-[EventBridge.Client.list_archives](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_archives)
+```python title="Method definition"
+def list_archives(
+    self,
+    *,
+    NamePrefix: str = ...,
+    EventSourceArn: str = ...,
+    State: ArchiveStateType = ...,  # (1)
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListArchivesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListArchivesRequestRequestTypeDef](./type_defs.md#listarchivesrequestrequesttypedef).
+1. See [:material-code-brackets: ArchiveStateType](./literals.md#archivestatetype) 
+2. See [:material-code-braces: ListArchivesResponseTypeDef](./type_defs.md#listarchivesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NamePrefix`: `str`
-- `EventSourceArn`: `str`
-- `State`: [ArchiveStateType](./literals.md#archivestatetype)
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListArchivesRequestRequestTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
 
-Returns
-[ListArchivesResponseTypeDef](./type_defs.md#listarchivesresponsetypedef).
+parent.list_archives(**kwargs)
+```
 
-<a id="list\_connections"></a>
+1. See [:material-code-braces: ListArchivesRequestRequestTypeDef](./type_defs.md#listarchivesrequestrequesttypedef) 
 
-### list_connections
+### list\_connections
 
 Retrieves a list of connections from the account.
 
-Type annotations for `boto3.client("events").list_connections` method.
+Type annotations and code completion for `#!python boto3.client("events").list_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_connections)
 
-Boto3 documentation:
-[EventBridge.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_connections)
+```python title="Method definition"
+def list_connections(
+    self,
+    *,
+    NamePrefix: str = ...,
+    ConnectionState: ConnectionStateType = ...,  # (1)
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListConnectionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListConnectionsRequestRequestTypeDef](./type_defs.md#listconnectionsrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectionStateType](./literals.md#connectionstatetype) 
+2. See [:material-code-braces: ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NamePrefix`: `str`
-- `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListConnectionsRequestRequestTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
 
-Returns
-[ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef).
+parent.list_connections(**kwargs)
+```
 
-<a id="list\_event\_buses"></a>
+1. See [:material-code-braces: ListConnectionsRequestRequestTypeDef](./type_defs.md#listconnectionsrequestrequesttypedef) 
 
-### list_event_buses
+### list\_event\_buses
 
 Lists all the event buses in your account, including the default event bus,
 custom event buses, and partner event buses.
 
-Type annotations for `boto3.client("events").list_event_buses` method.
+Type annotations and code completion for `#!python boto3.client("events").list_event_buses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_buses)
 
-Boto3 documentation:
-[EventBridge.Client.list_event_buses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_buses)
+```python title="Method definition"
+def list_event_buses(
+    self,
+    *,
+    NamePrefix: str = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListEventBusesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEventBusesRequestRequestTypeDef](./type_defs.md#listeventbusesrequestrequesttypedef).
+1. See [:material-code-braces: ListEventBusesResponseTypeDef](./type_defs.md#listeventbusesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NamePrefix`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEventBusesRequestRequestTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
 
-Returns
-[ListEventBusesResponseTypeDef](./type_defs.md#listeventbusesresponsetypedef).
+parent.list_event_buses(**kwargs)
+```
 
-<a id="list\_event\_sources"></a>
+1. See [:material-code-braces: ListEventBusesRequestRequestTypeDef](./type_defs.md#listeventbusesrequestrequesttypedef) 
 
-### list_event_sources
+### list\_event\_sources
 
-You can use this to see all the partner event sources that have been shared
-with your Amazon Web Services account.
+You can use this to see all the partner event sources that have been shared with
+your Amazon Web Services account.
 
-Type annotations for `boto3.client("events").list_event_sources` method.
+Type annotations and code completion for `#!python boto3.client("events").list_event_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_sources)
 
-Boto3 documentation:
-[EventBridge.Client.list_event_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_event_sources)
+```python title="Method definition"
+def list_event_sources(
+    self,
+    *,
+    NamePrefix: str = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListEventSourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEventSourcesRequestRequestTypeDef](./type_defs.md#listeventsourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListEventSourcesResponseTypeDef](./type_defs.md#listeventsourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NamePrefix`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEventSourcesRequestRequestTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
 
-Returns
-[ListEventSourcesResponseTypeDef](./type_defs.md#listeventsourcesresponsetypedef).
+parent.list_event_sources(**kwargs)
+```
 
-<a id="list\_partner\_event\_source\_accounts"></a>
+1. See [:material-code-braces: ListEventSourcesRequestRequestTypeDef](./type_defs.md#listeventsourcesrequestrequesttypedef) 
 
-### list_partner_event_source_accounts
+### list\_partner\_event\_source\_accounts
 
 An SaaS partner can use this operation to display the Amazon Web Services
 account ID that a particular partner event source name is associated with.
 
-Type annotations for
-`boto3.client("events").list_partner_event_source_accounts` method.
+Type annotations and code completion for `#!python boto3.client("events").list_partner_event_source_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_source_accounts)
 
-Boto3 documentation:
-[EventBridge.Client.list_partner_event_source_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_source_accounts)
+```python title="Method definition"
+def list_partner_event_source_accounts(
+    self,
+    *,
+    EventSourceName: str,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListPartnerEventSourceAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPartnerEventSourceAccountsRequestRequestTypeDef](./type_defs.md#listpartnereventsourceaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListPartnerEventSourceAccountsResponseTypeDef](./type_defs.md#listpartnereventsourceaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventSourceName`: `str` *(required)*
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPartnerEventSourceAccountsRequestRequestTypeDef = {  # (1)
+    "EventSourceName": ...,
+}
 
-Returns
-[ListPartnerEventSourceAccountsResponseTypeDef](./type_defs.md#listpartnereventsourceaccountsresponsetypedef).
+parent.list_partner_event_source_accounts(**kwargs)
+```
 
-<a id="list\_partner\_event\_sources"></a>
+1. See [:material-code-braces: ListPartnerEventSourceAccountsRequestRequestTypeDef](./type_defs.md#listpartnereventsourceaccountsrequestrequesttypedef) 
 
-### list_partner_event_sources
+### list\_partner\_event\_sources
 
 An SaaS partner can use this operation to list all the partner event source
 names that they have created.
 
-Type annotations for `boto3.client("events").list_partner_event_sources`
-method.
+Type annotations and code completion for `#!python boto3.client("events").list_partner_event_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_sources)
 
-Boto3 documentation:
-[EventBridge.Client.list_partner_event_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_partner_event_sources)
+```python title="Method definition"
+def list_partner_event_sources(
+    self,
+    *,
+    NamePrefix: str,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListPartnerEventSourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPartnerEventSourcesRequestRequestTypeDef](./type_defs.md#listpartnereventsourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListPartnerEventSourcesResponseTypeDef](./type_defs.md#listpartnereventsourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NamePrefix`: `str` *(required)*
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPartnerEventSourcesRequestRequestTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
 
-Returns
-[ListPartnerEventSourcesResponseTypeDef](./type_defs.md#listpartnereventsourcesresponsetypedef).
+parent.list_partner_event_sources(**kwargs)
+```
 
-<a id="list\_replays"></a>
+1. See [:material-code-braces: ListPartnerEventSourcesRequestRequestTypeDef](./type_defs.md#listpartnereventsourcesrequestrequesttypedef) 
 
-### list_replays
+### list\_replays
 
 Lists your replays.
 
-Type annotations for `boto3.client("events").list_replays` method.
+Type annotations and code completion for `#!python boto3.client("events").list_replays` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_replays)
 
-Boto3 documentation:
-[EventBridge.Client.list_replays](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_replays)
+```python title="Method definition"
+def list_replays(
+    self,
+    *,
+    NamePrefix: str = ...,
+    State: ReplayStateType = ...,  # (1)
+    EventSourceArn: str = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListReplaysResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListReplaysRequestRequestTypeDef](./type_defs.md#listreplaysrequestrequesttypedef).
+1. See [:material-code-brackets: ReplayStateType](./literals.md#replaystatetype) 
+2. See [:material-code-braces: ListReplaysResponseTypeDef](./type_defs.md#listreplaysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NamePrefix`: `str`
-- `State`: [ReplayStateType](./literals.md#replaystatetype)
-- `EventSourceArn`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListReplaysRequestRequestTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
 
-Returns
-[ListReplaysResponseTypeDef](./type_defs.md#listreplaysresponsetypedef).
+parent.list_replays(**kwargs)
+```
 
-<a id="list\_rule\_names\_by\_target"></a>
+1. See [:material-code-braces: ListReplaysRequestRequestTypeDef](./type_defs.md#listreplaysrequestrequesttypedef) 
 
-### list_rule_names_by_target
+### list\_rule\_names\_by\_target
 
 Lists the rules for the specified target.
 
-Type annotations for `boto3.client("events").list_rule_names_by_target` method.
+Type annotations and code completion for `#!python boto3.client("events").list_rule_names_by_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rule_names_by_target)
 
-Boto3 documentation:
-[EventBridge.Client.list_rule_names_by_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rule_names_by_target)
+```python title="Method definition"
+def list_rule_names_by_target(
+    self,
+    *,
+    TargetArn: str,
+    EventBusName: str = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListRuleNamesByTargetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRuleNamesByTargetRequestRequestTypeDef](./type_defs.md#listrulenamesbytargetrequestrequesttypedef).
+1. See [:material-code-braces: ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TargetArn`: `str` *(required)*
-- `EventBusName`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRuleNamesByTargetRequestRequestTypeDef = {  # (1)
+    "TargetArn": ...,
+}
 
-Returns
-[ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef).
+parent.list_rule_names_by_target(**kwargs)
+```
 
-<a id="list\_rules"></a>
+1. See [:material-code-braces: ListRuleNamesByTargetRequestRequestTypeDef](./type_defs.md#listrulenamesbytargetrequestrequesttypedef) 
 
-### list_rules
+### list\_rules
 
 Lists your Amazon EventBridge rules.
 
-Type annotations for `boto3.client("events").list_rules` method.
+Type annotations and code completion for `#!python boto3.client("events").list_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rules)
 
-Boto3 documentation:
-[EventBridge.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_rules)
+```python title="Method definition"
+def list_rules(
+    self,
+    *,
+    NamePrefix: str = ...,
+    EventBusName: str = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListRulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef).
+1. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NamePrefix`: `str`
-- `EventBusName`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRulesRequestRequestTypeDef = {  # (1)
+    "NamePrefix": ...,
+}
 
-Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
+parent.list_rules(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Displays the tags associated with an EventBridge resource.
 
-Type annotations for `boto3.client("events").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("events").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[EventBridge.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_targets\_by\_rule"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_targets_by_rule
+### list\_targets\_by\_rule
 
 Lists the targets assigned to the specified rule.
 
-Type annotations for `boto3.client("events").list_targets_by_rule` method.
+Type annotations and code completion for `#!python boto3.client("events").list_targets_by_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_targets_by_rule)
 
-Boto3 documentation:
-[EventBridge.Client.list_targets_by_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.list_targets_by_rule)
+```python title="Method definition"
+def list_targets_by_rule(
+    self,
+    *,
+    Rule: str,
+    EventBusName: str = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListTargetsByRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTargetsByRuleRequestRequestTypeDef](./type_defs.md#listtargetsbyrulerequestrequesttypedef).
+1. See [:material-code-braces: ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Rule`: `str` *(required)*
-- `EventBusName`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTargetsByRuleRequestRequestTypeDef = {  # (1)
+    "Rule": ...,
+}
 
-Returns
-[ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef).
+parent.list_targets_by_rule(**kwargs)
+```
 
-<a id="put\_events"></a>
+1. See [:material-code-braces: ListTargetsByRuleRequestRequestTypeDef](./type_defs.md#listtargetsbyrulerequestrequesttypedef) 
 
-### put_events
+### put\_events
 
 Sends custom events to Amazon EventBridge so that they can be matched to rules.
 
-Type annotations for `boto3.client("events").put_events` method.
+Type annotations and code completion for `#!python boto3.client("events").put_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_events)
 
-Boto3 documentation:
-[EventBridge.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_events)
+```python title="Method definition"
+def put_events(
+    self,
+    *,
+    Entries: Sequence[PutEventsRequestEntryTypeDef],  # (1)
+) -> PutEventsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef).
+1. See [:material-code-braces: PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef) 
+2. See [:material-code-braces: PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Entries`:
-  `Sequence`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutEventsRequestRequestTypeDef = {  # (1)
+    "Entries": ...,
+}
 
-Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
+parent.put_events(**kwargs)
+```
 
-<a id="put\_partner\_events"></a>
+1. See [:material-code-braces: PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef) 
 
-### put_partner_events
+### put\_partner\_events
 
-This is used by SaaS partners to write events to a customer's partner event
-bus.
+This is used by SaaS partners to write events to a customer's partner event bus.
 
-Type annotations for `boto3.client("events").put_partner_events` method.
+Type annotations and code completion for `#!python boto3.client("events").put_partner_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_partner_events)
 
-Boto3 documentation:
-[EventBridge.Client.put_partner_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_partner_events)
+```python title="Method definition"
+def put_partner_events(
+    self,
+    *,
+    Entries: Sequence[PutPartnerEventsRequestEntryTypeDef],  # (1)
+) -> PutPartnerEventsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutPartnerEventsRequestRequestTypeDef](./type_defs.md#putpartnereventsrequestrequesttypedef).
+1. See [:material-code-braces: PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef) 
+2. See [:material-code-braces: PutPartnerEventsResponseTypeDef](./type_defs.md#putpartnereventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Entries`:
-  `Sequence`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutPartnerEventsRequestRequestTypeDef = {  # (1)
+    "Entries": ...,
+}
 
-Returns
-[PutPartnerEventsResponseTypeDef](./type_defs.md#putpartnereventsresponsetypedef).
+parent.put_partner_events(**kwargs)
+```
 
-<a id="put\_permission"></a>
+1. See [:material-code-braces: PutPartnerEventsRequestRequestTypeDef](./type_defs.md#putpartnereventsrequestrequesttypedef) 
 
-### put_permission
+### put\_permission
 
 Running `PutPermission` permits the specified Amazon Web Services account or
 Amazon Web Services organization to put events to the specified *event bus*.
 
-Type annotations for `boto3.client("events").put_permission` method.
+Type annotations and code completion for `#!python boto3.client("events").put_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_permission)
 
-Boto3 documentation:
-[EventBridge.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_permission)
+```python title="Method definition"
+def put_permission(
+    self,
+    *,
+    EventBusName: str = ...,
+    Action: str = ...,
+    Principal: str = ...,
+    StatementId: str = ...,
+    Condition: ConditionTypeDef = ...,  # (1)
+    Policy: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutPermissionRequestRequestTypeDef](./type_defs.md#putpermissionrequestrequesttypedef).
+1. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 
-Keyword-only arguments:
 
-- `EventBusName`: `str`
-- `Action`: `str`
-- `Principal`: `str`
-- `StatementId`: `str`
-- `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
-- `Policy`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutPermissionRequestRequestTypeDef = {  # (1)
+    "EventBusName": ...,
+}
 
-<a id="put\_rule"></a>
+parent.put_permission(**kwargs)
+```
 
-### put_rule
+1. See [:material-code-braces: PutPermissionRequestRequestTypeDef](./type_defs.md#putpermissionrequestrequesttypedef) 
+
+### put\_rule
 
 Creates or updates the specified rule.
 
-Type annotations for `boto3.client("events").put_rule` method.
+Type annotations and code completion for `#!python boto3.client("events").put_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_rule)
 
-Boto3 documentation:
-[EventBridge.Client.put_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_rule)
+```python title="Method definition"
+def put_rule(
+    self,
+    *,
+    Name: str,
+    ScheduleExpression: str = ...,
+    EventPattern: str = ...,
+    State: RuleStateType = ...,  # (1)
+    Description: str = ...,
+    RoleArn: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    EventBusName: str = ...,
+) -> PutRuleResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutRuleRequestRequestTypeDef](./type_defs.md#putrulerequestrequesttypedef).
+1. See [:material-code-brackets: RuleStateType](./literals.md#rulestatetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: PutRuleResponseTypeDef](./type_defs.md#putruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ScheduleExpression`: `str`
-- `EventPattern`: `str`
-- `State`: [RuleStateType](./literals.md#rulestatetype)
-- `Description`: `str`
-- `RoleArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `EventBusName`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [PutRuleResponseTypeDef](./type_defs.md#putruleresponsetypedef).
+parent.put_rule(**kwargs)
+```
 
-<a id="put\_targets"></a>
+1. See [:material-code-braces: PutRuleRequestRequestTypeDef](./type_defs.md#putrulerequestrequesttypedef) 
 
-### put_targets
+### put\_targets
 
-Adds the specified targets to the specified rule, or updates the targets if
-they are already associated with the rule.
+Adds the specified targets to the specified rule, or updates the targets if they
+are already associated with the rule.
 
-Type annotations for `boto3.client("events").put_targets` method.
+Type annotations and code completion for `#!python boto3.client("events").put_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_targets)
 
-Boto3 documentation:
-[EventBridge.Client.put_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.put_targets)
+```python title="Method definition"
+def put_targets(
+    self,
+    *,
+    Rule: str,
+    Targets: Sequence[TargetTypeDef],  # (1)
+    EventBusName: str = ...,
+) -> PutTargetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutTargetsRequestRequestTypeDef](./type_defs.md#puttargetsrequestrequesttypedef).
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: PutTargetsResponseTypeDef](./type_defs.md#puttargetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Rule`: `str` *(required)*
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-  *(required)*
-- `EventBusName`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutTargetsRequestRequestTypeDef = {  # (1)
+    "Rule": ...,
+    "Targets": ...,
+}
 
-Returns [PutTargetsResponseTypeDef](./type_defs.md#puttargetsresponsetypedef).
+parent.put_targets(**kwargs)
+```
 
-<a id="remove\_permission"></a>
+1. See [:material-code-braces: PutTargetsRequestRequestTypeDef](./type_defs.md#puttargetsrequestrequesttypedef) 
 
-### remove_permission
+### remove\_permission
 
 Revokes the permission of another Amazon Web Services account to be able to put
 events to the specified event bus.
 
-Type annotations for `boto3.client("events").remove_permission` method.
+Type annotations and code completion for `#!python boto3.client("events").remove_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_permission)
 
-Boto3 documentation:
-[EventBridge.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_permission)
+```python title="Method definition"
+def remove_permission(
+    self,
+    *,
+    StatementId: str = ...,
+    RemoveAllPermissions: bool = ...,
+    EventBusName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `StatementId`: `str`
-- `RemoveAllPermissions`: `bool`
-- `EventBusName`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemovePermissionRequestRequestTypeDef = {  # (1)
+    "StatementId": ...,
+}
 
-<a id="remove\_targets"></a>
+parent.remove_permission(**kwargs)
+```
 
-### remove_targets
+1. See [:material-code-braces: RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef) 
+
+### remove\_targets
 
 Removes the specified targets from the specified rule.
 
-Type annotations for `boto3.client("events").remove_targets` method.
+Type annotations and code completion for `#!python boto3.client("events").remove_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_targets)
 
-Boto3 documentation:
-[EventBridge.Client.remove_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.remove_targets)
+```python title="Method definition"
+def remove_targets(
+    self,
+    *,
+    Rule: str,
+    Ids: Sequence[str],
+    EventBusName: str = ...,
+    Force: bool = ...,
+) -> RemoveTargetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveTargetsRequestRequestTypeDef](./type_defs.md#removetargetsrequestrequesttypedef).
+1. See [:material-code-braces: RemoveTargetsResponseTypeDef](./type_defs.md#removetargetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Rule`: `str` *(required)*
-- `Ids`: `Sequence`\[`str`\] *(required)*
-- `EventBusName`: `str`
-- `Force`: `bool`
+```python title="Usage example with kwargs"
+kwargs: RemoveTargetsRequestRequestTypeDef = {  # (1)
+    "Rule": ...,
+    "Ids": ...,
+}
 
-Returns
-[RemoveTargetsResponseTypeDef](./type_defs.md#removetargetsresponsetypedef).
+parent.remove_targets(**kwargs)
+```
 
-<a id="start\_replay"></a>
+1. See [:material-code-braces: RemoveTargetsRequestRequestTypeDef](./type_defs.md#removetargetsrequestrequesttypedef) 
 
-### start_replay
+### start\_replay
 
 Starts the specified replay.
 
-Type annotations for `boto3.client("events").start_replay` method.
+Type annotations and code completion for `#!python boto3.client("events").start_replay` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.start_replay)
 
-Boto3 documentation:
-[EventBridge.Client.start_replay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.start_replay)
+```python title="Method definition"
+def start_replay(
+    self,
+    *,
+    ReplayName: str,
+    EventSourceArn: str,
+    EventStartTime: Union[datetime, str],
+    EventEndTime: Union[datetime, str],
+    Destination: ReplayDestinationTypeDef,  # (1)
+    Description: str = ...,
+) -> StartReplayResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartReplayRequestRequestTypeDef](./type_defs.md#startreplayrequestrequesttypedef).
+1. See [:material-code-braces: ReplayDestinationTypeDef](./type_defs.md#replaydestinationtypedef) 
+2. See [:material-code-braces: StartReplayResponseTypeDef](./type_defs.md#startreplayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplayName`: `str` *(required)*
-- `EventSourceArn`: `str` *(required)*
-- `EventStartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EventEndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `Destination`:
-  [ReplayDestinationTypeDef](./type_defs.md#replaydestinationtypedef)
-  *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartReplayRequestRequestTypeDef = {  # (1)
+    "ReplayName": ...,
+    "EventSourceArn": ...,
+    "EventStartTime": ...,
+    "EventEndTime": ...,
+    "Destination": ...,
+}
 
-Returns
-[StartReplayResponseTypeDef](./type_defs.md#startreplayresponsetypedef).
+parent.start_replay(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartReplayRequestRequestTypeDef](./type_defs.md#startreplayrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns one or more tags (key-value pairs) to the specified EventBridge
 resource.
 
-Type annotations for `boto3.client("events").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("events").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.tag_resource)
 
-Boto3 documentation:
-[EventBridge.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="test\_event\_pattern"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### test_event_pattern
+### test\_event\_pattern
 
 Tests whether the specified event pattern matches the provided event.
 
-Type annotations for `boto3.client("events").test_event_pattern` method.
+Type annotations and code completion for `#!python boto3.client("events").test_event_pattern` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.test_event_pattern)
 
-Boto3 documentation:
-[EventBridge.Client.test_event_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.test_event_pattern)
+```python title="Method definition"
+def test_event_pattern(
+    self,
+    *,
+    EventPattern: str,
+    Event: str,
+) -> TestEventPatternResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TestEventPatternRequestRequestTypeDef](./type_defs.md#testeventpatternrequestrequesttypedef).
+1. See [:material-code-braces: TestEventPatternResponseTypeDef](./type_defs.md#testeventpatternresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventPattern`: `str` *(required)*
-- `Event`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: TestEventPatternRequestRequestTypeDef = {  # (1)
+    "EventPattern": ...,
+    "Event": ...,
+}
 
-Returns
-[TestEventPatternResponseTypeDef](./type_defs.md#testeventpatternresponsetypedef).
+parent.test_event_pattern(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TestEventPatternRequestRequestTypeDef](./type_defs.md#testeventpatternrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from the specified EventBridge resource.
 
-Type annotations for `boto3.client("events").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("events").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.untag_resource)
 
-Boto3 documentation:
-[EventBridge.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_api\_destination"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_api_destination
+### update\_api\_destination
 
 Updates an API destination.
 
-Type annotations for `boto3.client("events").update_api_destination` method.
+Type annotations and code completion for `#!python boto3.client("events").update_api_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_api_destination)
 
-Boto3 documentation:
-[EventBridge.Client.update_api_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_api_destination)
+```python title="Method definition"
+def update_api_destination(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    ConnectionArn: str = ...,
+    InvocationEndpoint: str = ...,
+    HttpMethod: ApiDestinationHttpMethodType = ...,  # (1)
+    InvocationRateLimitPerSecond: int = ...,
+) -> UpdateApiDestinationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApiDestinationRequestRequestTypeDef](./type_defs.md#updateapidestinationrequestrequesttypedef).
+1. See [:material-code-brackets: ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype) 
+2. See [:material-code-braces: UpdateApiDestinationResponseTypeDef](./type_defs.md#updateapidestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `ConnectionArn`: `str`
-- `InvocationEndpoint`: `str`
-- `HttpMethod`:
-  [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
-- `InvocationRateLimitPerSecond`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateApiDestinationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateApiDestinationResponseTypeDef](./type_defs.md#updateapidestinationresponsetypedef).
+parent.update_api_destination(**kwargs)
+```
 
-<a id="update\_archive"></a>
+1. See [:material-code-braces: UpdateApiDestinationRequestRequestTypeDef](./type_defs.md#updateapidestinationrequestrequesttypedef) 
 
-### update_archive
+### update\_archive
 
 Updates the specified archive.
 
-Type annotations for `boto3.client("events").update_archive` method.
+Type annotations and code completion for `#!python boto3.client("events").update_archive` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_archive)
 
-Boto3 documentation:
-[EventBridge.Client.update_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_archive)
+```python title="Method definition"
+def update_archive(
+    self,
+    *,
+    ArchiveName: str,
+    Description: str = ...,
+    EventPattern: str = ...,
+    RetentionDays: int = ...,
+) -> UpdateArchiveResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateArchiveRequestRequestTypeDef](./type_defs.md#updatearchiverequestrequesttypedef).
+1. See [:material-code-braces: UpdateArchiveResponseTypeDef](./type_defs.md#updatearchiveresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ArchiveName`: `str` *(required)*
-- `Description`: `str`
-- `EventPattern`: `str`
-- `RetentionDays`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateArchiveRequestRequestTypeDef = {  # (1)
+    "ArchiveName": ...,
+}
 
-Returns
-[UpdateArchiveResponseTypeDef](./type_defs.md#updatearchiveresponsetypedef).
+parent.update_archive(**kwargs)
+```
 
-<a id="update\_connection"></a>
+1. See [:material-code-braces: UpdateArchiveRequestRequestTypeDef](./type_defs.md#updatearchiverequestrequesttypedef) 
 
-### update_connection
+### update\_connection
 
 Updates settings for a connection.
 
-Type annotations for `boto3.client("events").update_connection` method.
+Type annotations and code completion for `#!python boto3.client("events").update_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_connection)
 
-Boto3 documentation:
-[EventBridge.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.update_connection)
+```python title="Method definition"
+def update_connection(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    AuthorizationType: ConnectionAuthorizationTypeType = ...,  # (1)
+    AuthParameters: UpdateConnectionAuthRequestParametersTypeDef = ...,  # (2)
+) -> UpdateConnectionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype) 
+2. See [:material-code-braces: UpdateConnectionAuthRequestParametersTypeDef](./type_defs.md#updateconnectionauthrequestparameterstypedef) 
+3. See [:material-code-braces: UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `AuthorizationType`:
-  [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
-- `AuthParameters`:
-  [UpdateConnectionAuthRequestParametersTypeDef](./type_defs.md#updateconnectionauthrequestparameterstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef).
+parent.update_connection(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("events").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("events").get_paginator` method with overloads.
 
-- `client.get_paginator("list_rule_names_by_target")` ->
-  [ListRuleNamesByTargetPaginator](./paginators.md#listrulenamesbytargetpaginator)
-- `client.get_paginator("list_rules")` ->
-  [ListRulesPaginator](./paginators.md#listrulespaginator)
-- `client.get_paginator("list_targets_by_rule")` ->
-  [ListTargetsByRulePaginator](./paginators.md#listtargetsbyrulepaginator)
+- `client.get_paginator("list_rule_names_by_target")` -> [ListRuleNamesByTargetPaginator](./paginators.md#listrulenamesbytargetpaginator)
+- `client.get_paginator("list_rules")` -> [ListRulesPaginator](./paginators.md#listrulespaginator)
+- `client.get_paginator("list_targets_by_rule")` -> [ListTargetsByRulePaginator](./paginators.md#listtargetsbyrulepaginator)
+
+
+

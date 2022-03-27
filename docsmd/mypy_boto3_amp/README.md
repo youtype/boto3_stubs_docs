@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-prometheusservice-module"></a>
-
-# Type annotations for boto3 PrometheusService module
+#  PrometheusService module
 
 > [Index](../README.md) > PrometheusService
 
-Auto-generated documentation for
-[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
-type annotations stubs module
-[mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
+!!! note ""
 
-- [Type annotations for boto3 PrometheusService module](#type-annotations-for-boto3-prometheusservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [PrometheusServiceClient](#prometheusserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
+    type annotations stubs module [mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `PrometheusService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[amp]'
 python -m pip install mypy-boto3-amp
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,109 +42,77 @@ python -m pip install mypy-boto3-amp
 python -m pip uninstall -y mypy-boto3-amp
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="prometheusserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## PrometheusServiceClient
 
-Type annotations for `boto3.client("amp")` as
-[PrometheusServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("amp")` as [PrometheusServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_amp.client import PrometheusServiceClient
+
+def get_client() -> PrometheusServiceClient:
+    return Session().cleint("amp")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_alert_manager_definition](./client.md#create_alert_manager_definition)
-- [create_rule_groups_namespace](./client.md#create_rule_groups_namespace)
-- [create_workspace](./client.md#create_workspace)
-- [delete_alert_manager_definition](./client.md#delete_alert_manager_definition)
-- [delete_rule_groups_namespace](./client.md#delete_rule_groups_namespace)
-- [delete_workspace](./client.md#delete_workspace)
-- [describe_alert_manager_definition](./client.md#describe_alert_manager_definition)
-- [describe_rule_groups_namespace](./client.md#describe_rule_groups_namespace)
-- [describe_workspace](./client.md#describe_workspace)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_rule_groups_namespaces](./client.md#list_rule_groups_namespaces)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_workspaces](./client.md#list_workspaces)
-- [put_alert_manager_definition](./client.md#put_alert_manager_definition)
-- [put_rule_groups_namespace](./client.md#put_rule_groups_namespace)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_workspace_alias](./client.md#update_workspace_alias)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-PrometheusServiceClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("amp").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("amp").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_amp.paginator import ListRuleGroupsNamespacesPaginator, ...
+from mypy_boto3_amp.paginator import ListRuleGroupsNamespacesPaginator
+
+def get_list_rule_groups_namespaces_paginator() -> ListRuleGroupsNamespacesPaginator:
+    return Session().client("amp").get_paginator("list_rule_groups_namespaces"))
 ```
 
 - [ListRuleGroupsNamespacesPaginator](./paginators.md#listrulegroupsnamespacespaginator)
 - [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("amp").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("amp").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_amp.waiter import WorkspaceActiveWaiter, ...
+from mypy_boto3_amp.waiter import WorkspaceActiveWaiter
+
+def get_workspace_active_waiter() -> WorkspaceActiveWaiter:
+    return Session().client("amp").get_waiter("workspace_active")
 ```
 
 - [WorkspaceActiveWaiter](./waiters.md#workspaceactivewaiter)
 - [WorkspaceDeletedWaiter](./waiters.md#workspacedeletedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_amp.literals import AlertManagerDefinitionStatusCodeType
 
-```python
-from mypy_boto3_amp.literals import AlertManagerDefinitionStatusCodeType, ...
+def get_value() -> AlertManagerDefinitionStatusCodeType:
+    return "ACTIVE"
 ```
 
 - [AlertManagerDefinitionStatusCodeType](./literals.md#alertmanagerdefinitionstatuscodetype)
@@ -182,18 +127,25 @@ from mypy_boto3_amp.literals import AlertManagerDefinitionStatusCodeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_amp.type_defs import AlertManagerDefinitionDescriptionTypeDef
 
-```python
-from mypy_boto3_amp.type_defs import AlertManagerDefinitionDescriptionTypeDef, ...
+def get_value() -> AlertManagerDefinitionDescriptionTypeDef:
+    return {
+        "createdAt": ...,
+        "data": ...,
+        "modifiedAt": ...,
+        "status": ...,
+    }
 ```
 
 - [AlertManagerDefinitionDescriptionTypeDef](./type_defs.md#alertmanagerdefinitiondescriptiontypedef)
@@ -212,11 +164,15 @@ from mypy_boto3_amp.type_defs import AlertManagerDefinitionDescriptionTypeDef, .
 - [DescribeRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#describerulegroupsnamespacerequestrequesttypedef)
 - [DescribeRuleGroupsNamespaceResponseTypeDef](./type_defs.md#describerulegroupsnamespaceresponsetypedef)
 - [DescribeWorkspaceRequestRequestTypeDef](./type_defs.md#describeworkspacerequestrequesttypedef)
+- [DescribeWorkspaceRequestWorkspaceActiveWaitTypeDef](./type_defs.md#describeworkspacerequestworkspaceactivewaittypedef)
+- [DescribeWorkspaceRequestWorkspaceDeletedWaitTypeDef](./type_defs.md#describeworkspacerequestworkspacedeletedwaittypedef)
 - [DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef)
+- [ListRuleGroupsNamespacesRequestListRuleGroupsNamespacesPaginateTypeDef](./type_defs.md#listrulegroupsnamespacesrequestlistrulegroupsnamespacespaginatetypedef)
 - [ListRuleGroupsNamespacesRequestRequestTypeDef](./type_defs.md#listrulegroupsnamespacesrequestrequesttypedef)
 - [ListRuleGroupsNamespacesResponseTypeDef](./type_defs.md#listrulegroupsnamespacesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListWorkspacesRequestListWorkspacesPaginateTypeDef](./type_defs.md#listworkspacesrequestlistworkspacespaginatetypedef)
 - [ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef)
 - [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -235,3 +191,4 @@ from mypy_boto3_amp.type_defs import AlertManagerDefinitionDescriptionTypeDef, .
 - [WorkspaceDescriptionTypeDef](./type_defs.md#workspacedescriptiontypedef)
 - [WorkspaceStatusTypeDef](./type_defs.md#workspacestatustypedef)
 - [WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef)
+

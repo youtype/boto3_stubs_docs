@@ -1,1380 +1,1744 @@
-<a id="typed-dictionaries-for-boto3-servicediscovery-module"></a>
-
-# Typed dictionaries for boto3 ServiceDiscovery module
+# Typed dictionaries
 
 > [Index](../README.md) > [ServiceDiscovery](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
-type annotations stubs module
-[mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ServiceDiscovery module](#typed-dictionaries-for-boto3-servicediscovery-module)
-  - [CreateHttpNamespaceRequestRequestTypeDef](#createhttpnamespacerequestrequesttypedef)
-  - [CreateHttpNamespaceResponseTypeDef](#createhttpnamespaceresponsetypedef)
-  - [CreatePrivateDnsNamespaceRequestRequestTypeDef](#createprivatednsnamespacerequestrequesttypedef)
-  - [CreatePrivateDnsNamespaceResponseTypeDef](#createprivatednsnamespaceresponsetypedef)
-  - [CreatePublicDnsNamespaceRequestRequestTypeDef](#createpublicdnsnamespacerequestrequesttypedef)
-  - [CreatePublicDnsNamespaceResponseTypeDef](#createpublicdnsnamespaceresponsetypedef)
-  - [CreateServiceRequestRequestTypeDef](#createservicerequestrequesttypedef)
-  - [CreateServiceResponseTypeDef](#createserviceresponsetypedef)
-  - [DeleteNamespaceRequestRequestTypeDef](#deletenamespacerequestrequesttypedef)
-  - [DeleteNamespaceResponseTypeDef](#deletenamespaceresponsetypedef)
-  - [DeleteServiceRequestRequestTypeDef](#deleteservicerequestrequesttypedef)
-  - [DeregisterInstanceRequestRequestTypeDef](#deregisterinstancerequestrequesttypedef)
-  - [DeregisterInstanceResponseTypeDef](#deregisterinstanceresponsetypedef)
-  - [DiscoverInstancesRequestRequestTypeDef](#discoverinstancesrequestrequesttypedef)
-  - [DiscoverInstancesResponseTypeDef](#discoverinstancesresponsetypedef)
-  - [DnsConfigChangeTypeDef](#dnsconfigchangetypedef)
-  - [DnsConfigTypeDef](#dnsconfigtypedef)
-  - [DnsPropertiesTypeDef](#dnspropertiestypedef)
-  - [DnsRecordTypeDef](#dnsrecordtypedef)
-  - [GetInstanceRequestRequestTypeDef](#getinstancerequestrequesttypedef)
-  - [GetInstanceResponseTypeDef](#getinstanceresponsetypedef)
-  - [GetInstancesHealthStatusRequestRequestTypeDef](#getinstanceshealthstatusrequestrequesttypedef)
-  - [GetInstancesHealthStatusResponseTypeDef](#getinstanceshealthstatusresponsetypedef)
-  - [GetNamespaceRequestRequestTypeDef](#getnamespacerequestrequesttypedef)
-  - [GetNamespaceResponseTypeDef](#getnamespaceresponsetypedef)
-  - [GetOperationRequestRequestTypeDef](#getoperationrequestrequesttypedef)
-  - [GetOperationResponseTypeDef](#getoperationresponsetypedef)
-  - [GetServiceRequestRequestTypeDef](#getservicerequestrequesttypedef)
-  - [GetServiceResponseTypeDef](#getserviceresponsetypedef)
-  - [HealthCheckConfigTypeDef](#healthcheckconfigtypedef)
-  - [HealthCheckCustomConfigTypeDef](#healthcheckcustomconfigtypedef)
-  - [HttpInstanceSummaryTypeDef](#httpinstancesummarytypedef)
-  - [HttpNamespaceChangeTypeDef](#httpnamespacechangetypedef)
-  - [HttpPropertiesTypeDef](#httppropertiestypedef)
-  - [InstanceSummaryTypeDef](#instancesummarytypedef)
-  - [InstanceTypeDef](#instancetypedef)
-  - [ListInstancesRequestRequestTypeDef](#listinstancesrequestrequesttypedef)
-  - [ListInstancesResponseTypeDef](#listinstancesresponsetypedef)
-  - [ListNamespacesRequestRequestTypeDef](#listnamespacesrequestrequesttypedef)
-  - [ListNamespacesResponseTypeDef](#listnamespacesresponsetypedef)
-  - [ListOperationsRequestRequestTypeDef](#listoperationsrequestrequesttypedef)
-  - [ListOperationsResponseTypeDef](#listoperationsresponsetypedef)
-  - [ListServicesRequestRequestTypeDef](#listservicesrequestrequesttypedef)
-  - [ListServicesResponseTypeDef](#listservicesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [NamespaceFilterTypeDef](#namespacefiltertypedef)
-  - [NamespacePropertiesTypeDef](#namespacepropertiestypedef)
-  - [NamespaceSummaryTypeDef](#namespacesummarytypedef)
-  - [NamespaceTypeDef](#namespacetypedef)
-  - [OperationFilterTypeDef](#operationfiltertypedef)
-  - [OperationSummaryTypeDef](#operationsummarytypedef)
-  - [OperationTypeDef](#operationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PrivateDnsNamespaceChangeTypeDef](#privatednsnamespacechangetypedef)
-  - [PrivateDnsNamespacePropertiesChangeTypeDef](#privatednsnamespacepropertieschangetypedef)
-  - [PrivateDnsNamespacePropertiesTypeDef](#privatednsnamespacepropertiestypedef)
-  - [PrivateDnsPropertiesMutableChangeTypeDef](#privatednspropertiesmutablechangetypedef)
-  - [PrivateDnsPropertiesMutableTypeDef](#privatednspropertiesmutabletypedef)
-  - [PublicDnsNamespaceChangeTypeDef](#publicdnsnamespacechangetypedef)
-  - [PublicDnsNamespacePropertiesChangeTypeDef](#publicdnsnamespacepropertieschangetypedef)
-  - [PublicDnsNamespacePropertiesTypeDef](#publicdnsnamespacepropertiestypedef)
-  - [PublicDnsPropertiesMutableChangeTypeDef](#publicdnspropertiesmutablechangetypedef)
-  - [PublicDnsPropertiesMutableTypeDef](#publicdnspropertiesmutabletypedef)
-  - [RegisterInstanceRequestRequestTypeDef](#registerinstancerequestrequesttypedef)
-  - [RegisterInstanceResponseTypeDef](#registerinstanceresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SOAChangeTypeDef](#soachangetypedef)
-  - [SOATypeDef](#soatypedef)
-  - [ServiceChangeTypeDef](#servicechangetypedef)
-  - [ServiceFilterTypeDef](#servicefiltertypedef)
-  - [ServiceSummaryTypeDef](#servicesummarytypedef)
-  - [ServiceTypeDef](#servicetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateHttpNamespaceRequestRequestTypeDef](#updatehttpnamespacerequestrequesttypedef)
-  - [UpdateHttpNamespaceResponseTypeDef](#updatehttpnamespaceresponsetypedef)
-  - [UpdateInstanceCustomHealthStatusRequestRequestTypeDef](#updateinstancecustomhealthstatusrequestrequesttypedef)
-  - [UpdatePrivateDnsNamespaceRequestRequestTypeDef](#updateprivatednsnamespacerequestrequesttypedef)
-  - [UpdatePrivateDnsNamespaceResponseTypeDef](#updateprivatednsnamespaceresponsetypedef)
-  - [UpdatePublicDnsNamespaceRequestRequestTypeDef](#updatepublicdnsnamespacerequestrequesttypedef)
-  - [UpdatePublicDnsNamespaceResponseTypeDef](#updatepublicdnsnamespaceresponsetypedef)
-  - [UpdateServiceRequestRequestTypeDef](#updateservicerequestrequesttypedef)
-  - [UpdateServiceResponseTypeDef](#updateserviceresponsetypedef)
-
-<a id="createhttpnamespacerequestrequesttypedef"></a>
+    Auto-generated documentation for [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
+    type annotations stubs module [mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 ## CreateHttpNamespaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import CreateHttpNamespaceRequestRequestTypeDef
+
+def get_value() -> CreateHttpNamespaceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHttpNamespaceRequestRequestTypeDef(TypedDict):
+    Name: str,
+    CreatorRequestId: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `CreatorRequestId`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createhttpnamespaceresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateHttpNamespaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import CreateHttpNamespaceResponseTypeDef
+
+def get_value() -> CreateHttpNamespaceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHttpNamespaceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprivatednsnamespacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePrivateDnsNamespaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import CreatePrivateDnsNamespaceRequestRequestTypeDef
+
+def get_value() -> CreatePrivateDnsNamespaceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Vpc": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePrivateDnsNamespaceRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Vpc: str,
+    CreatorRequestId: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    Properties: NotRequired[PrivateDnsNamespacePropertiesTypeDef],  # (2)
+```
 
-- `Name`: `str`
-- `Vpc`: `str`
-
-Optional fields:
-
-- `CreatorRequestId`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Properties`:
-  [PrivateDnsNamespacePropertiesTypeDef](./type_defs.md#privatednsnamespacepropertiestypedef)
-
-<a id="createprivatednsnamespaceresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PrivateDnsNamespacePropertiesTypeDef](./type_defs.md#privatednsnamespacepropertiestypedef) 
 ## CreatePrivateDnsNamespaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import CreatePrivateDnsNamespaceResponseTypeDef
+
+def get_value() -> CreatePrivateDnsNamespaceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePrivateDnsNamespaceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpublicdnsnamespacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePublicDnsNamespaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import CreatePublicDnsNamespaceRequestRequestTypeDef
+
+def get_value() -> CreatePublicDnsNamespaceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePublicDnsNamespaceRequestRequestTypeDef(TypedDict):
+    Name: str,
+    CreatorRequestId: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    Properties: NotRequired[PublicDnsNamespacePropertiesTypeDef],  # (2)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `CreatorRequestId`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Properties`:
-  [PublicDnsNamespacePropertiesTypeDef](./type_defs.md#publicdnsnamespacepropertiestypedef)
-
-<a id="createpublicdnsnamespaceresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PublicDnsNamespacePropertiesTypeDef](./type_defs.md#publicdnsnamespacepropertiestypedef) 
 ## CreatePublicDnsNamespaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import CreatePublicDnsNamespaceResponseTypeDef
+
+def get_value() -> CreatePublicDnsNamespaceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePublicDnsNamespaceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import CreateServiceRequestRequestTypeDef
+
+def get_value() -> CreateServiceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceRequestRequestTypeDef(TypedDict):
+    Name: str,
+    NamespaceId: NotRequired[str],
+    CreatorRequestId: NotRequired[str],
+    Description: NotRequired[str],
+    DnsConfig: NotRequired[DnsConfigTypeDef],  # (1)
+    HealthCheckConfig: NotRequired[HealthCheckConfigTypeDef],  # (2)
+    HealthCheckCustomConfig: NotRequired[HealthCheckCustomConfigTypeDef],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    Type: NotRequired[ServiceTypeOptionType],  # (5)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `NamespaceId`: `str`
-- `CreatorRequestId`: `str`
-- `Description`: `str`
-- `DnsConfig`: [DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef)
-- `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
-- `HealthCheckCustomConfig`:
-  [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Type`: `Literal['HTTP']` (see
-  [ServiceTypeOptionType](./literals.md#servicetypeoptiontype))
-
-<a id="createserviceresponsetypedef"></a>
-
+1. See [:material-code-braces: DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef) 
+2. See [:material-code-braces: HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef) 
+3. See [:material-code-braces: HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-brackets: ServiceTypeOptionType](./literals.md#servicetypeoptiontype) 
 ## CreateServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import CreateServiceResponseTypeDef
+
+def get_value() -> CreateServiceResponseTypeDef:
+    return {
+        "Service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceResponseTypeDef(TypedDict):
+    Service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletenamespacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteNamespaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DeleteNamespaceRequestRequestTypeDef
+
+def get_value() -> DeleteNamespaceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deletenamespaceresponsetypedef"></a>
+```python title="Definition"
+class DeleteNamespaceRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteNamespaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DeleteNamespaceResponseTypeDef
+
+def get_value() -> DeleteNamespaceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteNamespaceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DeleteServiceRequestRequestTypeDef
+
+def get_value() -> DeleteServiceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deregisterinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteServiceRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeregisterInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DeregisterInstanceRequestRequestTypeDef
+
+def get_value() -> DeregisterInstanceRequestRequestTypeDef:
+    return {
+        "ServiceId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceId`: `str`
-- `InstanceId`: `str`
-
-<a id="deregisterinstanceresponsetypedef"></a>
+```python title="Definition"
+class DeregisterInstanceRequestRequestTypeDef(TypedDict):
+    ServiceId: str,
+    InstanceId: str,
+```
 
 ## DeregisterInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DeregisterInstanceResponseTypeDef
+
+def get_value() -> DeregisterInstanceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterInstanceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="discoverinstancesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DiscoverInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DiscoverInstancesRequestRequestTypeDef
+
+def get_value() -> DiscoverInstancesRequestRequestTypeDef:
+    return {
+        "NamespaceName": ...,
+        "ServiceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DiscoverInstancesRequestRequestTypeDef(TypedDict):
+    NamespaceName: str,
+    ServiceName: str,
+    MaxResults: NotRequired[int],
+    QueryParameters: NotRequired[Mapping[str, str]],
+    OptionalParameters: NotRequired[Mapping[str, str]],
+    HealthStatus: NotRequired[HealthStatusFilterType],  # (1)
+```
 
-- `NamespaceName`: `str`
-- `ServiceName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `QueryParameters`: `Mapping`\[`str`, `str`\]
-- `OptionalParameters`: `Mapping`\[`str`, `str`\]
-- `HealthStatus`:
-  [HealthStatusFilterType](./literals.md#healthstatusfiltertype)
-
-<a id="discoverinstancesresponsetypedef"></a>
-
+1. See [:material-code-brackets: HealthStatusFilterType](./literals.md#healthstatusfiltertype) 
 ## DiscoverInstancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DiscoverInstancesResponseTypeDef
+
+def get_value() -> DiscoverInstancesResponseTypeDef:
+    return {
+        "Instances": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DiscoverInstancesResponseTypeDef(TypedDict):
+    Instances: List[HttpInstanceSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Instances`:
-  `List`\[[HttpInstanceSummaryTypeDef](./type_defs.md#httpinstancesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dnsconfigchangetypedef"></a>
-
+1. See [:material-code-braces: HttpInstanceSummaryTypeDef](./type_defs.md#httpinstancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DnsConfigChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DnsConfigChangeTypeDef
+
+def get_value() -> DnsConfigChangeTypeDef:
+    return {
+        "DnsRecords": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DnsConfigChangeTypeDef(TypedDict):
+    DnsRecords: Sequence[DnsRecordTypeDef],  # (1)
+```
 
-- `DnsRecords`:
-  `Sequence`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
-
-<a id="dnsconfigtypedef"></a>
-
+1. See [:material-code-braces: DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef) 
 ## DnsConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DnsConfigTypeDef
+
+def get_value() -> DnsConfigTypeDef:
+    return {
+        "DnsRecords": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DnsConfigTypeDef(TypedDict):
+    DnsRecords: Sequence[DnsRecordTypeDef],  # (2)
+    NamespaceId: NotRequired[str],
+    RoutingPolicy: NotRequired[RoutingPolicyType],  # (1)
+```
 
-- `DnsRecords`:
-  `Sequence`\[[DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef)\]
-
-Optional fields:
-
-- `NamespaceId`: `str`
-- `RoutingPolicy`: [RoutingPolicyType](./literals.md#routingpolicytype)
-
-<a id="dnspropertiestypedef"></a>
-
+1. See [:material-code-brackets: RoutingPolicyType](./literals.md#routingpolicytype) 
+2. See [:material-code-braces: DnsRecordTypeDef](./type_defs.md#dnsrecordtypedef) 
 ## DnsPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DnsPropertiesTypeDef
+
+def get_value() -> DnsPropertiesTypeDef:
+    return {
+        "HostedZoneId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DnsPropertiesTypeDef(TypedDict):
+    HostedZoneId: NotRequired[str],
+    SOA: NotRequired[SOATypeDef],  # (1)
+```
 
-- `HostedZoneId`: `str`
-- `SOA`: [SOATypeDef](./type_defs.md#soatypedef)
-
-<a id="dnsrecordtypedef"></a>
-
+1. See [:material-code-braces: SOATypeDef](./type_defs.md#soatypedef) 
 ## DnsRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import DnsRecordTypeDef
+
+def get_value() -> DnsRecordTypeDef:
+    return {
+        "Type": ...,
+        "TTL": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DnsRecordTypeDef(TypedDict):
+    Type: RecordTypeType,  # (1)
+    TTL: int,
+```
 
-- `Type`: [RecordTypeType](./literals.md#recordtypetype)
-- `TTL`: `int`
-
-<a id="getinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RecordTypeType](./literals.md#recordtypetype) 
 ## GetInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetInstanceRequestRequestTypeDef
+
+def get_value() -> GetInstanceRequestRequestTypeDef:
+    return {
+        "ServiceId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceId`: `str`
-- `InstanceId`: `str`
-
-<a id="getinstanceresponsetypedef"></a>
+```python title="Definition"
+class GetInstanceRequestRequestTypeDef(TypedDict):
+    ServiceId: str,
+    InstanceId: str,
+```
 
 ## GetInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetInstanceResponseTypeDef
+
+def get_value() -> GetInstanceResponseTypeDef:
+    return {
+        "Instance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInstanceResponseTypeDef(TypedDict):
+    Instance: InstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Instance`: [InstanceTypeDef](./type_defs.md#instancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinstanceshealthstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInstancesHealthStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetInstancesHealthStatusRequestRequestTypeDef
+
+def get_value() -> GetInstancesHealthStatusRequestRequestTypeDef:
+    return {
+        "ServiceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceId`: `str`
-
-Optional fields:
-
-- `Instances`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getinstanceshealthstatusresponsetypedef"></a>
+```python title="Definition"
+class GetInstancesHealthStatusRequestRequestTypeDef(TypedDict):
+    ServiceId: str,
+    Instances: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetInstancesHealthStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetInstancesHealthStatusResponseTypeDef
+
+def get_value() -> GetInstancesHealthStatusResponseTypeDef:
+    return {
+        "Status": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInstancesHealthStatusResponseTypeDef(TypedDict):
+    Status: Dict[str, HealthStatusType],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: `Dict`\[`str`, [HealthStatusType](./literals.md#healthstatustype)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getnamespacerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: HealthStatusType](./literals.md#healthstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetNamespaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetNamespaceRequestRequestTypeDef
+
+def get_value() -> GetNamespaceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getnamespaceresponsetypedef"></a>
+```python title="Definition"
+class GetNamespaceRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetNamespaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetNamespaceResponseTypeDef
+
+def get_value() -> GetNamespaceResponseTypeDef:
+    return {
+        "Namespace": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetNamespaceResponseTypeDef(TypedDict):
+    Namespace: NamespaceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Namespace`: [NamespaceTypeDef](./type_defs.md#namespacetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getoperationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NamespaceTypeDef](./type_defs.md#namespacetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOperationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetOperationRequestRequestTypeDef
+
+def get_value() -> GetOperationRequestRequestTypeDef:
+    return {
+        "OperationId": ...,
+    }
 ```
 
-Required fields:
-
-- `OperationId`: `str`
-
-<a id="getoperationresponsetypedef"></a>
+```python title="Definition"
+class GetOperationRequestRequestTypeDef(TypedDict):
+    OperationId: str,
+```
 
 ## GetOperationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetOperationResponseTypeDef
+
+def get_value() -> GetOperationResponseTypeDef:
+    return {
+        "Operation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOperationResponseTypeDef(TypedDict):
+    Operation: OperationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Operation`: [OperationTypeDef](./type_defs.md#operationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OperationTypeDef](./type_defs.md#operationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetServiceRequestRequestTypeDef
+
+def get_value() -> GetServiceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getserviceresponsetypedef"></a>
+```python title="Definition"
+class GetServiceRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import GetServiceResponseTypeDef
+
+def get_value() -> GetServiceResponseTypeDef:
+    return {
+        "Service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceResponseTypeDef(TypedDict):
+    Service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="healthcheckconfigtypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HealthCheckConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import HealthCheckConfigTypeDef
+
+def get_value() -> HealthCheckConfigTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HealthCheckConfigTypeDef(TypedDict):
+    Type: HealthCheckTypeType,  # (1)
+    ResourcePath: NotRequired[str],
+    FailureThreshold: NotRequired[int],
+```
 
-- `Type`: [HealthCheckTypeType](./literals.md#healthchecktypetype)
-
-Optional fields:
-
-- `ResourcePath`: `str`
-- `FailureThreshold`: `int`
-
-<a id="healthcheckcustomconfigtypedef"></a>
-
+1. See [:material-code-brackets: HealthCheckTypeType](./literals.md#healthchecktypetype) 
 ## HealthCheckCustomConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import HealthCheckCustomConfigTypeDef
+
+def get_value() -> HealthCheckCustomConfigTypeDef:
+    return {
+        "FailureThreshold": ...,
+    }
 ```
 
-Optional fields:
-
-- `FailureThreshold`: `int`
-
-<a id="httpinstancesummarytypedef"></a>
+```python title="Definition"
+class HealthCheckCustomConfigTypeDef(TypedDict):
+    FailureThreshold: NotRequired[int],
+```
 
 ## HttpInstanceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import HttpInstanceSummaryTypeDef
+
+def get_value() -> HttpInstanceSummaryTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HttpInstanceSummaryTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    NamespaceName: NotRequired[str],
+    ServiceName: NotRequired[str],
+    HealthStatus: NotRequired[HealthStatusType],  # (1)
+    Attributes: NotRequired[Dict[str, str]],
+```
 
-- `InstanceId`: `str`
-- `NamespaceName`: `str`
-- `ServiceName`: `str`
-- `HealthStatus`: [HealthStatusType](./literals.md#healthstatustype)
-- `Attributes`: `Dict`\[`str`, `str`\]
-
-<a id="httpnamespacechangetypedef"></a>
-
+1. See [:material-code-brackets: HealthStatusType](./literals.md#healthstatustype) 
 ## HttpNamespaceChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import HttpNamespaceChangeTypeDef
+
+def get_value() -> HttpNamespaceChangeTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Required fields:
-
-- `Description`: `str`
-
-<a id="httppropertiestypedef"></a>
+```python title="Definition"
+class HttpNamespaceChangeTypeDef(TypedDict):
+    Description: str,
+```
 
 ## HttpPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import HttpPropertiesTypeDef
+
+def get_value() -> HttpPropertiesTypeDef:
+    return {
+        "HttpName": ...,
+    }
 ```
 
-Optional fields:
-
-- `HttpName`: `str`
-
-<a id="instancesummarytypedef"></a>
+```python title="Definition"
+class HttpPropertiesTypeDef(TypedDict):
+    HttpName: NotRequired[str],
+```
 
 ## InstanceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import InstanceSummaryTypeDef
+
+def get_value() -> InstanceSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
-
-<a id="instancetypedef"></a>
+```python title="Definition"
+class InstanceSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Attributes: NotRequired[Dict[str, str]],
+```
 
 ## InstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import InstanceTypeDef
+
+def get_value() -> InstanceTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceTypeDef(TypedDict):
+    Id: str,
+    CreatorRequestId: NotRequired[str],
+    Attributes: NotRequired[Dict[str, str]],
+```
 
-- `Id`: `str`
+## ListInstancesRequestListInstancesPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_servicediscovery.type_defs import ListInstancesRequestListInstancesPaginateTypeDef
 
-- `CreatorRequestId`: `str`
-- `Attributes`: `Dict`\[`str`, `str`\]
+def get_value() -> ListInstancesRequestListInstancesPaginateTypeDef:
+    return {
+        "ServiceId": ...,
+    }
+```
 
-<a id="listinstancesrequestrequesttypedef"></a>
+```python title="Definition"
+class ListInstancesRequestListInstancesPaginateTypeDef(TypedDict):
+    ServiceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListInstancesRequestRequestTypeDef
+
+def get_value() -> ListInstancesRequestRequestTypeDef:
+    return {
+        "ServiceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listinstancesresponsetypedef"></a>
+```python title="Definition"
+class ListInstancesRequestRequestTypeDef(TypedDict):
+    ServiceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListInstancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListInstancesResponseTypeDef
+
+def get_value() -> ListInstancesResponseTypeDef:
+    return {
+        "Instances": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstancesResponseTypeDef(TypedDict):
+    Instances: List[InstanceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Instances`:
-  `List`\[[InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListNamespacesRequestListNamespacesPaginateTypeDef
 
-<a id="listnamespacesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_servicediscovery.type_defs import ListNamespacesRequestListNamespacesPaginateTypeDef
 
+def get_value() -> ListNamespacesRequestListNamespacesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListNamespacesRequestListNamespacesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[NamespaceFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListNamespacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListNamespacesRequestRequestTypeDef
+
+def get_value() -> ListNamespacesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListNamespacesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[NamespaceFilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`:
-  `Sequence`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
-
-<a id="listnamespacesresponsetypedef"></a>
-
+1. See [:material-code-braces: NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef) 
 ## ListNamespacesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListNamespacesResponseTypeDef
+
+def get_value() -> ListNamespacesResponseTypeDef:
+    return {
+        "Namespaces": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNamespacesResponseTypeDef(TypedDict):
+    Namespaces: List[NamespaceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Namespaces`:
-  `List`\[[NamespaceSummaryTypeDef](./type_defs.md#namespacesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: NamespaceSummaryTypeDef](./type_defs.md#namespacesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOperationsRequestListOperationsPaginateTypeDef
 
-<a id="listoperationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_servicediscovery.type_defs import ListOperationsRequestListOperationsPaginateTypeDef
 
+def get_value() -> ListOperationsRequestListOperationsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListOperationsRequestListOperationsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[OperationFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OperationFilterTypeDef](./type_defs.md#operationfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOperationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListOperationsRequestRequestTypeDef
+
+def get_value() -> ListOperationsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListOperationsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[OperationFilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`:
-  `Sequence`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
-
-<a id="listoperationsresponsetypedef"></a>
-
+1. See [:material-code-braces: OperationFilterTypeDef](./type_defs.md#operationfiltertypedef) 
 ## ListOperationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListOperationsResponseTypeDef
+
+def get_value() -> ListOperationsResponseTypeDef:
+    return {
+        "Operations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOperationsResponseTypeDef(TypedDict):
+    Operations: List[OperationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Operations`:
-  `List`\[[OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServicesRequestListServicesPaginateTypeDef
 
-<a id="listservicesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_servicediscovery.type_defs import ListServicesRequestListServicesPaginateTypeDef
 
+def get_value() -> ListServicesRequestListServicesPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListServicesRequestListServicesPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[ServiceFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListServicesRequestRequestTypeDef
+
+def get_value() -> ListServicesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListServicesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[ServiceFilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`:
-  `Sequence`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
-
-<a id="listservicesresponsetypedef"></a>
-
+1. See [:material-code-braces: ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef) 
 ## ListServicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListServicesResponseTypeDef
+
+def get_value() -> ListServicesResponseTypeDef:
+    return {
+        "Services": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServicesResponseTypeDef(TypedDict):
+    Services: List[ServiceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Services`:
-  `List`\[[ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="namespacefiltertypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NamespaceFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import NamespaceFilterTypeDef
+
+def get_value() -> NamespaceFilterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NamespaceFilterTypeDef(TypedDict):
+    Name: NamespaceFilterNameType,  # (1)
+    Values: Sequence[str],
+    Condition: NotRequired[FilterConditionType],  # (2)
+```
 
-- `Name`: `Literal['TYPE']` (see
-  [NamespaceFilterNameType](./literals.md#namespacefilternametype))
-- `Values`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Condition`: [FilterConditionType](./literals.md#filterconditiontype)
-
-<a id="namespacepropertiestypedef"></a>
-
+1. See [:material-code-brackets: NamespaceFilterNameType](./literals.md#namespacefilternametype) 
+2. See [:material-code-brackets: FilterConditionType](./literals.md#filterconditiontype) 
 ## NamespacePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import NamespacePropertiesTypeDef
+
+def get_value() -> NamespacePropertiesTypeDef:
+    return {
+        "DnsProperties": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NamespacePropertiesTypeDef(TypedDict):
+    DnsProperties: NotRequired[DnsPropertiesTypeDef],  # (1)
+    HttpProperties: NotRequired[HttpPropertiesTypeDef],  # (2)
+```
 
-- `DnsProperties`: [DnsPropertiesTypeDef](./type_defs.md#dnspropertiestypedef)
-- `HttpProperties`:
-  [HttpPropertiesTypeDef](./type_defs.md#httppropertiestypedef)
-
-<a id="namespacesummarytypedef"></a>
-
+1. See [:material-code-braces: DnsPropertiesTypeDef](./type_defs.md#dnspropertiestypedef) 
+2. See [:material-code-braces: HttpPropertiesTypeDef](./type_defs.md#httppropertiestypedef) 
 ## NamespaceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import NamespaceSummaryTypeDef
+
+def get_value() -> NamespaceSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NamespaceSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[NamespaceTypeType],  # (1)
+    Description: NotRequired[str],
+    ServiceCount: NotRequired[int],
+    Properties: NotRequired[NamespacePropertiesTypeDef],  # (2)
+    CreateDate: NotRequired[datetime],
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `Type`: [NamespaceTypeType](./literals.md#namespacetypetype)
-- `Description`: `str`
-- `ServiceCount`: `int`
-- `Properties`:
-  [NamespacePropertiesTypeDef](./type_defs.md#namespacepropertiestypedef)
-- `CreateDate`: `datetime`
-
-<a id="namespacetypedef"></a>
-
+1. See [:material-code-brackets: NamespaceTypeType](./literals.md#namespacetypetype) 
+2. See [:material-code-braces: NamespacePropertiesTypeDef](./type_defs.md#namespacepropertiestypedef) 
 ## NamespaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import NamespaceTypeDef
+
+def get_value() -> NamespaceTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NamespaceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[NamespaceTypeType],  # (1)
+    Description: NotRequired[str],
+    ServiceCount: NotRequired[int],
+    Properties: NotRequired[NamespacePropertiesTypeDef],  # (2)
+    CreateDate: NotRequired[datetime],
+    CreatorRequestId: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `Type`: [NamespaceTypeType](./literals.md#namespacetypetype)
-- `Description`: `str`
-- `ServiceCount`: `int`
-- `Properties`:
-  [NamespacePropertiesTypeDef](./type_defs.md#namespacepropertiestypedef)
-- `CreateDate`: `datetime`
-- `CreatorRequestId`: `str`
-
-<a id="operationfiltertypedef"></a>
-
+1. See [:material-code-brackets: NamespaceTypeType](./literals.md#namespacetypetype) 
+2. See [:material-code-braces: NamespacePropertiesTypeDef](./type_defs.md#namespacepropertiestypedef) 
 ## OperationFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import OperationFilterTypeDef
+
+def get_value() -> OperationFilterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OperationFilterTypeDef(TypedDict):
+    Name: OperationFilterNameType,  # (1)
+    Values: Sequence[str],
+    Condition: NotRequired[FilterConditionType],  # (2)
+```
 
-- `Name`: [OperationFilterNameType](./literals.md#operationfilternametype)
-- `Values`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Condition`: [FilterConditionType](./literals.md#filterconditiontype)
-
-<a id="operationsummarytypedef"></a>
-
+1. See [:material-code-brackets: OperationFilterNameType](./literals.md#operationfilternametype) 
+2. See [:material-code-brackets: FilterConditionType](./literals.md#filterconditiontype) 
 ## OperationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import OperationSummaryTypeDef
+
+def get_value() -> OperationSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OperationSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Status: NotRequired[OperationStatusType],  # (1)
+```
 
-- `Id`: `str`
-- `Status`: [OperationStatusType](./literals.md#operationstatustype)
-
-<a id="operationtypedef"></a>
-
+1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
 ## OperationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import OperationTypeDef
+
+def get_value() -> OperationTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OperationTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Type: NotRequired[OperationTypeType],  # (1)
+    Status: NotRequired[OperationStatusType],  # (2)
+    ErrorMessage: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    CreateDate: NotRequired[datetime],
+    UpdateDate: NotRequired[datetime],
+    Targets: NotRequired[Dict[OperationTargetTypeType, str]],  # (3)
+```
 
-- `Id`: `str`
-- `Type`: [OperationTypeType](./literals.md#operationtypetype)
-- `Status`: [OperationStatusType](./literals.md#operationstatustype)
-- `ErrorMessage`: `str`
-- `ErrorCode`: `str`
-- `CreateDate`: `datetime`
-- `UpdateDate`: `datetime`
-- `Targets`:
-  `Dict`\[[OperationTargetTypeType](./literals.md#operationtargettypetype),
-  `str`\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+2. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+3. See [:material-code-brackets: OperationTargetTypeType](./literals.md#operationtargettypetype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="privatednsnamespacechangetypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PrivateDnsNamespaceChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PrivateDnsNamespaceChangeTypeDef
+
+def get_value() -> PrivateDnsNamespaceChangeTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PrivateDnsNamespaceChangeTypeDef(TypedDict):
+    Description: NotRequired[str],
+    Properties: NotRequired[PrivateDnsNamespacePropertiesChangeTypeDef],  # (1)
+```
 
-- `Description`: `str`
-- `Properties`:
-  [PrivateDnsNamespacePropertiesChangeTypeDef](./type_defs.md#privatednsnamespacepropertieschangetypedef)
-
-<a id="privatednsnamespacepropertieschangetypedef"></a>
-
+1. See [:material-code-braces: PrivateDnsNamespacePropertiesChangeTypeDef](./type_defs.md#privatednsnamespacepropertieschangetypedef) 
 ## PrivateDnsNamespacePropertiesChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PrivateDnsNamespacePropertiesChangeTypeDef
+
+def get_value() -> PrivateDnsNamespacePropertiesChangeTypeDef:
+    return {
+        "DnsProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PrivateDnsNamespacePropertiesChangeTypeDef(TypedDict):
+    DnsProperties: PrivateDnsPropertiesMutableChangeTypeDef,  # (1)
+```
 
-- `DnsProperties`:
-  [PrivateDnsPropertiesMutableChangeTypeDef](./type_defs.md#privatednspropertiesmutablechangetypedef)
-
-<a id="privatednsnamespacepropertiestypedef"></a>
-
+1. See [:material-code-braces: PrivateDnsPropertiesMutableChangeTypeDef](./type_defs.md#privatednspropertiesmutablechangetypedef) 
 ## PrivateDnsNamespacePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PrivateDnsNamespacePropertiesTypeDef
+
+def get_value() -> PrivateDnsNamespacePropertiesTypeDef:
+    return {
+        "DnsProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PrivateDnsNamespacePropertiesTypeDef(TypedDict):
+    DnsProperties: PrivateDnsPropertiesMutableTypeDef,  # (1)
+```
 
-- `DnsProperties`:
-  [PrivateDnsPropertiesMutableTypeDef](./type_defs.md#privatednspropertiesmutabletypedef)
-
-<a id="privatednspropertiesmutablechangetypedef"></a>
-
+1. See [:material-code-braces: PrivateDnsPropertiesMutableTypeDef](./type_defs.md#privatednspropertiesmutabletypedef) 
 ## PrivateDnsPropertiesMutableChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PrivateDnsPropertiesMutableChangeTypeDef
+
+def get_value() -> PrivateDnsPropertiesMutableChangeTypeDef:
+    return {
+        "SOA": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PrivateDnsPropertiesMutableChangeTypeDef(TypedDict):
+    SOA: SOAChangeTypeDef,  # (1)
+```
 
-- `SOA`: [SOAChangeTypeDef](./type_defs.md#soachangetypedef)
-
-<a id="privatednspropertiesmutabletypedef"></a>
-
+1. See [:material-code-braces: SOAChangeTypeDef](./type_defs.md#soachangetypedef) 
 ## PrivateDnsPropertiesMutableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PrivateDnsPropertiesMutableTypeDef
+
+def get_value() -> PrivateDnsPropertiesMutableTypeDef:
+    return {
+        "SOA": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PrivateDnsPropertiesMutableTypeDef(TypedDict):
+    SOA: SOATypeDef,  # (1)
+```
 
-- `SOA`: [SOATypeDef](./type_defs.md#soatypedef)
-
-<a id="publicdnsnamespacechangetypedef"></a>
-
+1. See [:material-code-braces: SOATypeDef](./type_defs.md#soatypedef) 
 ## PublicDnsNamespaceChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PublicDnsNamespaceChangeTypeDef
+
+def get_value() -> PublicDnsNamespaceChangeTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PublicDnsNamespaceChangeTypeDef(TypedDict):
+    Description: NotRequired[str],
+    Properties: NotRequired[PublicDnsNamespacePropertiesChangeTypeDef],  # (1)
+```
 
-- `Description`: `str`
-- `Properties`:
-  [PublicDnsNamespacePropertiesChangeTypeDef](./type_defs.md#publicdnsnamespacepropertieschangetypedef)
-
-<a id="publicdnsnamespacepropertieschangetypedef"></a>
-
+1. See [:material-code-braces: PublicDnsNamespacePropertiesChangeTypeDef](./type_defs.md#publicdnsnamespacepropertieschangetypedef) 
 ## PublicDnsNamespacePropertiesChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PublicDnsNamespacePropertiesChangeTypeDef
+
+def get_value() -> PublicDnsNamespacePropertiesChangeTypeDef:
+    return {
+        "DnsProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublicDnsNamespacePropertiesChangeTypeDef(TypedDict):
+    DnsProperties: PublicDnsPropertiesMutableChangeTypeDef,  # (1)
+```
 
-- `DnsProperties`:
-  [PublicDnsPropertiesMutableChangeTypeDef](./type_defs.md#publicdnspropertiesmutablechangetypedef)
-
-<a id="publicdnsnamespacepropertiestypedef"></a>
-
+1. See [:material-code-braces: PublicDnsPropertiesMutableChangeTypeDef](./type_defs.md#publicdnspropertiesmutablechangetypedef) 
 ## PublicDnsNamespacePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PublicDnsNamespacePropertiesTypeDef
+
+def get_value() -> PublicDnsNamespacePropertiesTypeDef:
+    return {
+        "DnsProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublicDnsNamespacePropertiesTypeDef(TypedDict):
+    DnsProperties: PublicDnsPropertiesMutableTypeDef,  # (1)
+```
 
-- `DnsProperties`:
-  [PublicDnsPropertiesMutableTypeDef](./type_defs.md#publicdnspropertiesmutabletypedef)
-
-<a id="publicdnspropertiesmutablechangetypedef"></a>
-
+1. See [:material-code-braces: PublicDnsPropertiesMutableTypeDef](./type_defs.md#publicdnspropertiesmutabletypedef) 
 ## PublicDnsPropertiesMutableChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PublicDnsPropertiesMutableChangeTypeDef
+
+def get_value() -> PublicDnsPropertiesMutableChangeTypeDef:
+    return {
+        "SOA": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublicDnsPropertiesMutableChangeTypeDef(TypedDict):
+    SOA: SOAChangeTypeDef,  # (1)
+```
 
-- `SOA`: [SOAChangeTypeDef](./type_defs.md#soachangetypedef)
-
-<a id="publicdnspropertiesmutabletypedef"></a>
-
+1. See [:material-code-braces: SOAChangeTypeDef](./type_defs.md#soachangetypedef) 
 ## PublicDnsPropertiesMutableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import PublicDnsPropertiesMutableTypeDef
+
+def get_value() -> PublicDnsPropertiesMutableTypeDef:
+    return {
+        "SOA": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublicDnsPropertiesMutableTypeDef(TypedDict):
+    SOA: SOATypeDef,  # (1)
+```
 
-- `SOA`: [SOATypeDef](./type_defs.md#soatypedef)
-
-<a id="registerinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SOATypeDef](./type_defs.md#soatypedef) 
 ## RegisterInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import RegisterInstanceRequestRequestTypeDef
+
+def get_value() -> RegisterInstanceRequestRequestTypeDef:
+    return {
+        "ServiceId": ...,
+        "InstanceId": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceId`: `str`
-- `InstanceId`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-Optional fields:
-
-- `CreatorRequestId`: `str`
-
-<a id="registerinstanceresponsetypedef"></a>
+```python title="Definition"
+class RegisterInstanceRequestRequestTypeDef(TypedDict):
+    ServiceId: str,
+    InstanceId: str,
+    Attributes: Mapping[str, str],
+    CreatorRequestId: NotRequired[str],
+```
 
 ## RegisterInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import RegisterInstanceResponseTypeDef
+
+def get_value() -> RegisterInstanceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterInstanceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="soachangetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SOAChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import SOAChangeTypeDef
+
+def get_value() -> SOAChangeTypeDef:
+    return {
+        "TTL": ...,
+    }
 ```
 
-Required fields:
-
-- `TTL`: `int`
-
-<a id="soatypedef"></a>
+```python title="Definition"
+class SOAChangeTypeDef(TypedDict):
+    TTL: int,
+```
 
 ## SOATypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import SOATypeDef
+
+def get_value() -> SOATypeDef:
+    return {
+        "TTL": ...,
+    }
 ```
 
-Required fields:
-
-- `TTL`: `int`
-
-<a id="servicechangetypedef"></a>
+```python title="Definition"
+class SOATypeDef(TypedDict):
+    TTL: int,
+```
 
 ## ServiceChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ServiceChangeTypeDef
+
+def get_value() -> ServiceChangeTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceChangeTypeDef(TypedDict):
+    Description: NotRequired[str],
+    DnsConfig: NotRequired[DnsConfigChangeTypeDef],  # (1)
+    HealthCheckConfig: NotRequired[HealthCheckConfigTypeDef],  # (2)
+```
 
-- `Description`: `str`
-- `DnsConfig`: [DnsConfigChangeTypeDef](./type_defs.md#dnsconfigchangetypedef)
-- `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
-
-<a id="servicefiltertypedef"></a>
-
+1. See [:material-code-braces: DnsConfigChangeTypeDef](./type_defs.md#dnsconfigchangetypedef) 
+2. See [:material-code-braces: HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef) 
 ## ServiceFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ServiceFilterTypeDef
+
+def get_value() -> ServiceFilterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceFilterTypeDef(TypedDict):
+    Name: ServiceFilterNameType,  # (1)
+    Values: Sequence[str],
+    Condition: NotRequired[FilterConditionType],  # (2)
+```
 
-- `Name`: `Literal['NAMESPACE_ID']` (see
-  [ServiceFilterNameType](./literals.md#servicefilternametype))
-- `Values`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Condition`: [FilterConditionType](./literals.md#filterconditiontype)
-
-<a id="servicesummarytypedef"></a>
-
+1. See [:material-code-brackets: ServiceFilterNameType](./literals.md#servicefilternametype) 
+2. See [:material-code-brackets: FilterConditionType](./literals.md#filterconditiontype) 
 ## ServiceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ServiceSummaryTypeDef
+
+def get_value() -> ServiceSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[ServiceTypeType],  # (1)
+    Description: NotRequired[str],
+    InstanceCount: NotRequired[int],
+    DnsConfig: NotRequired[DnsConfigTypeDef],  # (2)
+    HealthCheckConfig: NotRequired[HealthCheckConfigTypeDef],  # (3)
+    HealthCheckCustomConfig: NotRequired[HealthCheckCustomConfigTypeDef],  # (4)
+    CreateDate: NotRequired[datetime],
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `Type`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Description`: `str`
-- `InstanceCount`: `int`
-- `DnsConfig`: [DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef)
-- `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
-- `HealthCheckCustomConfig`:
-  [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
-- `CreateDate`: `datetime`
-
-<a id="servicetypedef"></a>
-
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef) 
+3. See [:material-code-braces: HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef) 
+4. See [:material-code-braces: HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef) 
 ## ServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import ServiceTypeDef
+
+def get_value() -> ServiceTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    NamespaceId: NotRequired[str],
+    Description: NotRequired[str],
+    InstanceCount: NotRequired[int],
+    DnsConfig: NotRequired[DnsConfigTypeDef],  # (1)
+    Type: NotRequired[ServiceTypeType],  # (2)
+    HealthCheckConfig: NotRequired[HealthCheckConfigTypeDef],  # (3)
+    HealthCheckCustomConfig: NotRequired[HealthCheckCustomConfigTypeDef],  # (4)
+    CreateDate: NotRequired[datetime],
+    CreatorRequestId: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `NamespaceId`: `str`
-- `Description`: `str`
-- `InstanceCount`: `int`
-- `DnsConfig`: [DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef)
-- `Type`: [ServiceTypeType](./literals.md#servicetypetype)
-- `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
-- `HealthCheckCustomConfig`:
-  [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
-- `CreateDate`: `datetime`
-- `CreatorRequestId`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef) 
+2. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+3. See [:material-code-braces: HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef) 
+4. See [:material-code-braces: HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatehttpnamespacerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateHttpNamespaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UpdateHttpNamespaceRequestRequestTypeDef
+
+def get_value() -> UpdateHttpNamespaceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Namespace": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateHttpNamespaceRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Namespace: HttpNamespaceChangeTypeDef,  # (1)
+    UpdaterRequestId: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Namespace`:
-  [HttpNamespaceChangeTypeDef](./type_defs.md#httpnamespacechangetypedef)
-
-Optional fields:
-
-- `UpdaterRequestId`: `str`
-
-<a id="updatehttpnamespaceresponsetypedef"></a>
-
+1. See [:material-code-braces: HttpNamespaceChangeTypeDef](./type_defs.md#httpnamespacechangetypedef) 
 ## UpdateHttpNamespaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UpdateHttpNamespaceResponseTypeDef
+
+def get_value() -> UpdateHttpNamespaceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateHttpNamespaceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateinstancecustomhealthstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateInstanceCustomHealthStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UpdateInstanceCustomHealthStatusRequestRequestTypeDef
+
+def get_value() -> UpdateInstanceCustomHealthStatusRequestRequestTypeDef:
+    return {
+        "ServiceId": ...,
+        "InstanceId": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateInstanceCustomHealthStatusRequestRequestTypeDef(TypedDict):
+    ServiceId: str,
+    InstanceId: str,
+    Status: CustomHealthStatusType,  # (1)
+```
 
-- `ServiceId`: `str`
-- `InstanceId`: `str`
-- `Status`: [CustomHealthStatusType](./literals.md#customhealthstatustype)
-
-<a id="updateprivatednsnamespacerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CustomHealthStatusType](./literals.md#customhealthstatustype) 
 ## UpdatePrivateDnsNamespaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UpdatePrivateDnsNamespaceRequestRequestTypeDef
+
+def get_value() -> UpdatePrivateDnsNamespaceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Namespace": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePrivateDnsNamespaceRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Namespace: PrivateDnsNamespaceChangeTypeDef,  # (1)
+    UpdaterRequestId: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Namespace`:
-  [PrivateDnsNamespaceChangeTypeDef](./type_defs.md#privatednsnamespacechangetypedef)
-
-Optional fields:
-
-- `UpdaterRequestId`: `str`
-
-<a id="updateprivatednsnamespaceresponsetypedef"></a>
-
+1. See [:material-code-braces: PrivateDnsNamespaceChangeTypeDef](./type_defs.md#privatednsnamespacechangetypedef) 
 ## UpdatePrivateDnsNamespaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UpdatePrivateDnsNamespaceResponseTypeDef
+
+def get_value() -> UpdatePrivateDnsNamespaceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePrivateDnsNamespaceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatepublicdnsnamespacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePublicDnsNamespaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UpdatePublicDnsNamespaceRequestRequestTypeDef
+
+def get_value() -> UpdatePublicDnsNamespaceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Namespace": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePublicDnsNamespaceRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Namespace: PublicDnsNamespaceChangeTypeDef,  # (1)
+    UpdaterRequestId: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Namespace`:
-  [PublicDnsNamespaceChangeTypeDef](./type_defs.md#publicdnsnamespacechangetypedef)
-
-Optional fields:
-
-- `UpdaterRequestId`: `str`
-
-<a id="updatepublicdnsnamespaceresponsetypedef"></a>
-
+1. See [:material-code-braces: PublicDnsNamespaceChangeTypeDef](./type_defs.md#publicdnsnamespacechangetypedef) 
 ## UpdatePublicDnsNamespaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UpdatePublicDnsNamespaceResponseTypeDef
+
+def get_value() -> UpdatePublicDnsNamespaceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePublicDnsNamespaceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UpdateServiceRequestRequestTypeDef
+
+def get_value() -> UpdateServiceRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Service": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Service: ServiceChangeTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `Service`: [ServiceChangeTypeDef](./type_defs.md#servicechangetypedef)
-
-<a id="updateserviceresponsetypedef"></a>
-
+1. See [:material-code-braces: ServiceChangeTypeDef](./type_defs.md#servicechangetypedef) 
 ## UpdateServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_servicediscovery.type_defs import UpdateServiceResponseTypeDef
+
+def get_value() -> UpdateServiceResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

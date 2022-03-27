@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-ram-module"></a>
-
-# Type annotations for boto3 RAM module
+#  RAM module
 
 > [Index](../README.md) > RAM
 
-Auto-generated documentation for
-[RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
-type annotations stubs module
-[mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
+!!! note ""
 
-- [Type annotations for boto3 RAM module](#type-annotations-for-boto3-ram-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [RAMClient](#ramclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
+    type annotations stubs module [mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `RAM`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ram]'
 python -m pip install mypy-boto3-ram
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,99 +42,37 @@ python -m pip install mypy-boto3-ram
 python -m pip uninstall -y mypy-boto3-ram
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ramclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## RAMClient
 
-Type annotations for `boto3.client("ram")` as [RAMClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ram")` as [RAMClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ram.client import RAMClient
+
+def get_client() -> RAMClient:
+    return Session().cleint("ram")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_resource_share_invitation](./client.md#accept_resource_share_invitation)
-- [associate_resource_share](./client.md#associate_resource_share)
-- [associate_resource_share_permission](./client.md#associate_resource_share_permission)
-- [can_paginate](./client.md#can_paginate)
-- [create_resource_share](./client.md#create_resource_share)
-- [delete_resource_share](./client.md#delete_resource_share)
-- [disassociate_resource_share](./client.md#disassociate_resource_share)
-- [disassociate_resource_share_permission](./client.md#disassociate_resource_share_permission)
-- [enable_sharing_with_aws_organization](./client.md#enable_sharing_with_aws_organization)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_permission](./client.md#get_permission)
-- [get_resource_policies](./client.md#get_resource_policies)
-- [get_resource_share_associations](./client.md#get_resource_share_associations)
-- [get_resource_share_invitations](./client.md#get_resource_share_invitations)
-- [get_resource_shares](./client.md#get_resource_shares)
-- [list_pending_invitation_resources](./client.md#list_pending_invitation_resources)
-- [list_permission_versions](./client.md#list_permission_versions)
-- [list_permissions](./client.md#list_permissions)
-- [list_principals](./client.md#list_principals)
-- [list_resource_share_permissions](./client.md#list_resource_share_permissions)
-- [list_resource_types](./client.md#list_resource_types)
-- [list_resources](./client.md#list_resources)
-- [promote_resource_share_created_from_policy](./client.md#promote_resource_share_created_from_policy)
-- [reject_resource_share_invitation](./client.md#reject_resource_share_invitation)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_resource_share](./client.md#update_resource_share)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-RAMClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- IdempotentParameterMismatchException
-- InvalidClientTokenException
-- InvalidMaxResultsException
-- InvalidNextTokenException
-- InvalidParameterException
-- InvalidResourceTypeException
-- InvalidStateTransitionException
-- MalformedArnException
-- MissingRequiredParameterException
-- OperationNotPermittedException
-- ResourceArnNotFoundException
-- ResourceShareInvitationAlreadyAcceptedException
-- ResourceShareInvitationAlreadyRejectedException
-- ResourceShareInvitationArnNotFoundException
-- ResourceShareInvitationExpiredException
-- ResourceShareLimitExceededException
-- ServerInternalException
-- ServiceUnavailableException
-- TagLimitExceededException
-- TagPolicyViolationException
-- ThrottlingException
-- UnknownResourceException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("ram").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("ram").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ram.paginator import GetResourcePoliciesPaginator, ...
+from mypy_boto3_ram.paginator import GetResourcePoliciesPaginator
+
+def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
+    return Session().client("ram").get_paginator("get_resource_policies"))
 ```
 
 - [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
@@ -166,16 +82,23 @@ from mypy_boto3_ram.paginator import GetResourcePoliciesPaginator, ...
 - [ListPrincipalsPaginator](./paginators.md#listprincipalspaginator)
 - [ListResourcesPaginator](./paginators.md#listresourcespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName
 
-```python
-from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName, ...
+def get_value() -> GetResourcePoliciesPaginatorName:
+    return "get_resource_policies"
 ```
 
 - [GetResourcePoliciesPaginatorName](./literals.md#getresourcepoliciespaginatorname)
@@ -197,18 +120,22 @@ from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationRequestRequestTypeDef
 
-```python
-from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationRequestRequestTypeDef, ...
+def get_value() -> AcceptResourceShareInvitationRequestRequestTypeDef:
+    return {
+        "resourceShareInvitationArn": ...,
+    }
 ```
 
 - [AcceptResourceShareInvitationRequestRequestTypeDef](./type_defs.md#acceptresourceshareinvitationrequestrequesttypedef)
@@ -228,12 +155,16 @@ from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationRequestRequest
 - [EnableSharingWithAwsOrganizationResponseTypeDef](./type_defs.md#enablesharingwithawsorganizationresponsetypedef)
 - [GetPermissionRequestRequestTypeDef](./type_defs.md#getpermissionrequestrequesttypedef)
 - [GetPermissionResponseTypeDef](./type_defs.md#getpermissionresponsetypedef)
+- [GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef](./type_defs.md#getresourcepoliciesrequestgetresourcepoliciespaginatetypedef)
 - [GetResourcePoliciesRequestRequestTypeDef](./type_defs.md#getresourcepoliciesrequestrequesttypedef)
 - [GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef)
+- [GetResourceShareAssociationsRequestGetResourceShareAssociationsPaginateTypeDef](./type_defs.md#getresourceshareassociationsrequestgetresourceshareassociationspaginatetypedef)
 - [GetResourceShareAssociationsRequestRequestTypeDef](./type_defs.md#getresourceshareassociationsrequestrequesttypedef)
 - [GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef)
+- [GetResourceShareInvitationsRequestGetResourceShareInvitationsPaginateTypeDef](./type_defs.md#getresourceshareinvitationsrequestgetresourceshareinvitationspaginatetypedef)
 - [GetResourceShareInvitationsRequestRequestTypeDef](./type_defs.md#getresourceshareinvitationsrequestrequesttypedef)
 - [GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef)
+- [GetResourceSharesRequestGetResourceSharesPaginateTypeDef](./type_defs.md#getresourcesharesrequestgetresourcesharespaginatetypedef)
 - [GetResourceSharesRequestRequestTypeDef](./type_defs.md#getresourcesharesrequestrequesttypedef)
 - [GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef)
 - [ListPendingInvitationResourcesRequestRequestTypeDef](./type_defs.md#listpendinginvitationresourcesrequestrequesttypedef)
@@ -242,12 +173,14 @@ from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationRequestRequest
 - [ListPermissionVersionsResponseTypeDef](./type_defs.md#listpermissionversionsresponsetypedef)
 - [ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef)
 - [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef)
+- [ListPrincipalsRequestListPrincipalsPaginateTypeDef](./type_defs.md#listprincipalsrequestlistprincipalspaginatetypedef)
 - [ListPrincipalsRequestRequestTypeDef](./type_defs.md#listprincipalsrequestrequesttypedef)
 - [ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef)
 - [ListResourceSharePermissionsRequestRequestTypeDef](./type_defs.md#listresourcesharepermissionsrequestrequesttypedef)
 - [ListResourceSharePermissionsResponseTypeDef](./type_defs.md#listresourcesharepermissionsresponsetypedef)
 - [ListResourceTypesRequestRequestTypeDef](./type_defs.md#listresourcetypesrequestrequesttypedef)
 - [ListResourceTypesResponseTypeDef](./type_defs.md#listresourcetypesresponsetypedef)
+- [ListResourcesRequestListResourcesPaginateTypeDef](./type_defs.md#listresourcesrequestlistresourcespaginatetypedef)
 - [ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef)
 - [ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -270,3 +203,4 @@ from mypy_boto3_ram.type_defs import AcceptResourceShareInvitationRequestRequest
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateResourceShareRequestRequestTypeDef](./type_defs.md#updateresourcesharerequestrequesttypedef)
 - [UpdateResourceShareResponseTypeDef](./type_defs.md#updateresourceshareresponsetypedef)
+

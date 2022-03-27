@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-codebuild-module"></a>
-
-# Examples for boto3 CodeBuild module
+# Examples
 
 > [Index](../README.md) > [CodeBuild](./README.md) > Examples
 
-- [Examples for boto3 CodeBuild module](#examples-for-boto3-codebuild-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
+    type annotations stubs module [mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[codebuild]` package installed.
 
-Write your `CodeBuild` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `CodeBuild` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CodeBuildClient
-# and provides type checking and code completion
-client = session.client("codebuild")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BatchDeleteBuildsOutputTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_delete_builds()
 
-# paginator has type DescribeCodeCoveragesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_code_coverages")
-for item in paginator.paginate(...):
-    # item has type DescribeCodeCoveragesOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("codebuild")  # (1)
+    result = client.batch_delete_builds()  # (2)
+    ```
+
+    1. client: [CodeBuildClient](./client.md)
+    2. result: [:material-code-braces: BatchDeleteBuildsOutputTypeDef](./type_defs.md#batchdeletebuildsoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("codebuild")  # (1)
+
+    paginator = client.get_paginator("describe_code_coverages")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CodeBuildClient](./client.md)
+    2. paginator: [DescribeCodeCoveragesPaginator](./paginators.md#describecodecoveragespaginator)
+    3. item: [:material-code-braces: DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[codebuild]` or a standalone `mypy_boto3_codebuild`
-package, you have to explicitly specify `client: CodeBuildClient` type
-annotation.
+With `boto3-stubs-lite[codebuild]`
+or a standalone `mypy_boto3_codebuild` package, you have to explicitly specify `client: CodeBuildClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_codebuild.client import CodeBuildClient
-from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator
-
-from mypy_boto3_codebuild.literals import PaginatorName
-
-from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsOutputTypeDef
-from mypy_boto3_codebuild.type_defs import DescribeCodeCoveragesOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CodeBuildClient = session.client("codebuild")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: BatchDeleteBuildsOutputTypeDef = client.batch_delete_builds()
+    from mypy_boto3_codebuild.client import CodeBuildClient
+    from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsOutputTypeDef
+    from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef
 
-paginator_name: PaginatorName = "describe_code_coverages"
-paginator: DescribeCodeCoveragesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeCodeCoveragesOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: CodeBuildClient = session.client("codebuild")
+
+    kwargs: BatchDeleteBuildsInputRequestTypeDef = {...}
+    result: BatchDeleteBuildsOutputTypeDef = client.batch_delete_builds(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_codebuild.client import CodeBuildClient
+    from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator
+    from mypy_boto3_codebuild.type_defs import DescribeCodeCoveragesOutputTypeDef
+
+
+    session = Session()
+    client: CodeBuildClient = session.client("codebuild")
+
+    paginator: DescribeCodeCoveragesPaginator = client.get_paginator("describe_code_coverages")
+    for item in paginator.paginate(...):
+        item: DescribeCodeCoveragesOutputTypeDef
+        print(item)
+    ```
+
+
+
+

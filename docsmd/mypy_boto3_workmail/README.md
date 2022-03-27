@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-workmail-module"></a>
-
-# Type annotations for boto3 WorkMail module
+#  WorkMail module
 
 > [Index](../README.md) > WorkMail
 
-Auto-generated documentation for
-[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
-type annotations stubs module
-[mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
+!!! note ""
 
-- [Type annotations for boto3 WorkMail module](#type-annotations-for-boto3-workmail-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [WorkMailClient](#workmailclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
+    type annotations stubs module [mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `WorkMail`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[workmail]'
 python -m pip install mypy-boto3-workmail
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,143 +42,37 @@ python -m pip install mypy-boto3-workmail
 python -m pip uninstall -y mypy-boto3-workmail
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="workmailclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## WorkMailClient
 
-Type annotations for `boto3.client("workmail")` as
-[WorkMailClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("workmail")` as [WorkMailClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_workmail.client import WorkMailClient
+
+def get_client() -> WorkMailClient:
+    return Session().cleint("workmail")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_delegate_to_resource](./client.md#associate_delegate_to_resource)
-- [associate_member_to_group](./client.md#associate_member_to_group)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_mailbox_export_job](./client.md#cancel_mailbox_export_job)
-- [create_alias](./client.md#create_alias)
-- [create_group](./client.md#create_group)
-- [create_mobile_device_access_rule](./client.md#create_mobile_device_access_rule)
-- [create_organization](./client.md#create_organization)
-- [create_resource](./client.md#create_resource)
-- [create_user](./client.md#create_user)
-- [delete_access_control_rule](./client.md#delete_access_control_rule)
-- [delete_alias](./client.md#delete_alias)
-- [delete_email_monitoring_configuration](./client.md#delete_email_monitoring_configuration)
-- [delete_group](./client.md#delete_group)
-- [delete_mailbox_permissions](./client.md#delete_mailbox_permissions)
-- [delete_mobile_device_access_override](./client.md#delete_mobile_device_access_override)
-- [delete_mobile_device_access_rule](./client.md#delete_mobile_device_access_rule)
-- [delete_organization](./client.md#delete_organization)
-- [delete_resource](./client.md#delete_resource)
-- [delete_retention_policy](./client.md#delete_retention_policy)
-- [delete_user](./client.md#delete_user)
-- [deregister_from_work_mail](./client.md#deregister_from_work_mail)
-- [deregister_mail_domain](./client.md#deregister_mail_domain)
-- [describe_email_monitoring_configuration](./client.md#describe_email_monitoring_configuration)
-- [describe_group](./client.md#describe_group)
-- [describe_inbound_dmarc_settings](./client.md#describe_inbound_dmarc_settings)
-- [describe_mailbox_export_job](./client.md#describe_mailbox_export_job)
-- [describe_organization](./client.md#describe_organization)
-- [describe_resource](./client.md#describe_resource)
-- [describe_user](./client.md#describe_user)
-- [disassociate_delegate_from_resource](./client.md#disassociate_delegate_from_resource)
-- [disassociate_member_from_group](./client.md#disassociate_member_from_group)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_access_control_effect](./client.md#get_access_control_effect)
-- [get_default_retention_policy](./client.md#get_default_retention_policy)
-- [get_mail_domain](./client.md#get_mail_domain)
-- [get_mailbox_details](./client.md#get_mailbox_details)
-- [get_mobile_device_access_effect](./client.md#get_mobile_device_access_effect)
-- [get_mobile_device_access_override](./client.md#get_mobile_device_access_override)
-- [get_paginator](./client.md#get_paginator)
-- [list_access_control_rules](./client.md#list_access_control_rules)
-- [list_aliases](./client.md#list_aliases)
-- [list_group_members](./client.md#list_group_members)
-- [list_groups](./client.md#list_groups)
-- [list_mail_domains](./client.md#list_mail_domains)
-- [list_mailbox_export_jobs](./client.md#list_mailbox_export_jobs)
-- [list_mailbox_permissions](./client.md#list_mailbox_permissions)
-- [list_mobile_device_access_overrides](./client.md#list_mobile_device_access_overrides)
-- [list_mobile_device_access_rules](./client.md#list_mobile_device_access_rules)
-- [list_organizations](./client.md#list_organizations)
-- [list_resource_delegates](./client.md#list_resource_delegates)
-- [list_resources](./client.md#list_resources)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_users](./client.md#list_users)
-- [put_access_control_rule](./client.md#put_access_control_rule)
-- [put_email_monitoring_configuration](./client.md#put_email_monitoring_configuration)
-- [put_inbound_dmarc_settings](./client.md#put_inbound_dmarc_settings)
-- [put_mailbox_permissions](./client.md#put_mailbox_permissions)
-- [put_mobile_device_access_override](./client.md#put_mobile_device_access_override)
-- [put_retention_policy](./client.md#put_retention_policy)
-- [register_mail_domain](./client.md#register_mail_domain)
-- [register_to_work_mail](./client.md#register_to_work_mail)
-- [reset_password](./client.md#reset_password)
-- [start_mailbox_export_job](./client.md#start_mailbox_export_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_default_mail_domain](./client.md#update_default_mail_domain)
-- [update_mailbox_quota](./client.md#update_mailbox_quota)
-- [update_mobile_device_access_rule](./client.md#update_mobile_device_access_rule)
-- [update_primary_email_address](./client.md#update_primary_email_address)
-- [update_resource](./client.md#update_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-WorkMailClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- DirectoryInUseException
-- DirectoryServiceAuthenticationFailedException
-- DirectoryUnavailableException
-- EmailAddressInUseException
-- EntityAlreadyRegisteredException
-- EntityNotFoundException
-- EntityStateException
-- InvalidConfigurationException
-- InvalidCustomSesConfigurationException
-- InvalidParameterException
-- InvalidPasswordException
-- LimitExceededException
-- MailDomainInUseException
-- MailDomainNotFoundException
-- MailDomainStateException
-- NameAvailabilityException
-- OrganizationNotFoundException
-- OrganizationStateException
-- ReservedNameException
-- ResourceNotFoundException
-- TooManyTagsException
-- UnsupportedOperationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("workmail").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("workmail").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_workmail.paginator import ListAliasesPaginator, ...
+from mypy_boto3_workmail.paginator import ListAliasesPaginator
+
+def get_list_aliases_paginator() -> ListAliasesPaginator:
+    return Session().client("workmail").get_paginator("list_aliases"))
 ```
 
 - [ListAliasesPaginator](./paginators.md#listaliasespaginator)
@@ -212,16 +84,23 @@ from mypy_boto3_workmail.paginator import ListAliasesPaginator, ...
 - [ListResourcesPaginator](./paginators.md#listresourcespaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_workmail.literals import AccessControlRuleEffectType
 
-```python
-from mypy_boto3_workmail.literals import AccessControlRuleEffectType, ...
+def get_value() -> AccessControlRuleEffectType:
+    return "ALLOW"
 ```
 
 - [AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype)
@@ -247,18 +126,22 @@ from mypy_boto3_workmail.literals import AccessControlRuleEffectType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef
 
-```python
-from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef, ...
+def get_value() -> AccessControlRuleTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [AccessControlRuleTypeDef](./type_defs.md#accesscontrolruletypedef)
@@ -326,30 +209,38 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef, ...
 - [GroupTypeDef](./type_defs.md#grouptypedef)
 - [ListAccessControlRulesRequestRequestTypeDef](./type_defs.md#listaccesscontrolrulesrequestrequesttypedef)
 - [ListAccessControlRulesResponseTypeDef](./type_defs.md#listaccesscontrolrulesresponsetypedef)
+- [ListAliasesRequestListAliasesPaginateTypeDef](./type_defs.md#listaliasesrequestlistaliasespaginatetypedef)
 - [ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef)
 - [ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)
+- [ListGroupMembersRequestListGroupMembersPaginateTypeDef](./type_defs.md#listgroupmembersrequestlistgroupmemberspaginatetypedef)
 - [ListGroupMembersRequestRequestTypeDef](./type_defs.md#listgroupmembersrequestrequesttypedef)
 - [ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef)
+- [ListGroupsRequestListGroupsPaginateTypeDef](./type_defs.md#listgroupsrequestlistgroupspaginatetypedef)
 - [ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef)
 - [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)
 - [ListMailDomainsRequestRequestTypeDef](./type_defs.md#listmaildomainsrequestrequesttypedef)
 - [ListMailDomainsResponseTypeDef](./type_defs.md#listmaildomainsresponsetypedef)
 - [ListMailboxExportJobsRequestRequestTypeDef](./type_defs.md#listmailboxexportjobsrequestrequesttypedef)
 - [ListMailboxExportJobsResponseTypeDef](./type_defs.md#listmailboxexportjobsresponsetypedef)
+- [ListMailboxPermissionsRequestListMailboxPermissionsPaginateTypeDef](./type_defs.md#listmailboxpermissionsrequestlistmailboxpermissionspaginatetypedef)
 - [ListMailboxPermissionsRequestRequestTypeDef](./type_defs.md#listmailboxpermissionsrequestrequesttypedef)
 - [ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef)
 - [ListMobileDeviceAccessOverridesRequestRequestTypeDef](./type_defs.md#listmobiledeviceaccessoverridesrequestrequesttypedef)
 - [ListMobileDeviceAccessOverridesResponseTypeDef](./type_defs.md#listmobiledeviceaccessoverridesresponsetypedef)
 - [ListMobileDeviceAccessRulesRequestRequestTypeDef](./type_defs.md#listmobiledeviceaccessrulesrequestrequesttypedef)
 - [ListMobileDeviceAccessRulesResponseTypeDef](./type_defs.md#listmobiledeviceaccessrulesresponsetypedef)
+- [ListOrganizationsRequestListOrganizationsPaginateTypeDef](./type_defs.md#listorganizationsrequestlistorganizationspaginatetypedef)
 - [ListOrganizationsRequestRequestTypeDef](./type_defs.md#listorganizationsrequestrequesttypedef)
 - [ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef)
+- [ListResourceDelegatesRequestListResourceDelegatesPaginateTypeDef](./type_defs.md#listresourcedelegatesrequestlistresourcedelegatespaginatetypedef)
 - [ListResourceDelegatesRequestRequestTypeDef](./type_defs.md#listresourcedelegatesrequestrequesttypedef)
 - [ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef)
+- [ListResourcesRequestListResourcesPaginateTypeDef](./type_defs.md#listresourcesrequestlistresourcespaginatetypedef)
 - [ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef)
 - [ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef)
 - [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
 - [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
 - [MailDomainSummaryTypeDef](./type_defs.md#maildomainsummarytypedef)
@@ -383,3 +274,4 @@ from mypy_boto3_workmail.type_defs import AccessControlRuleTypeDef, ...
 - [UpdatePrimaryEmailAddressRequestRequestTypeDef](./type_defs.md#updateprimaryemailaddressrequestrequesttypedef)
 - [UpdateResourceRequestRequestTypeDef](./type_defs.md#updateresourcerequestrequesttypedef)
 - [UserTypeDef](./type_defs.md#usertypedef)
+

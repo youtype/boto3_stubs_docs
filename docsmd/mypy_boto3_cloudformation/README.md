@@ -1,47 +1,20 @@
-<a id="type-annotations-for-boto3-cloudformation-module"></a>
-
-# Type annotations for boto3 CloudFormation module
+#  CloudFormation module
 
 > [Index](../README.md) > CloudFormation
 
-Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module
-[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+!!! note ""
 
-- [Type annotations for boto3 CloudFormation module](#type-annotations-for-boto3-cloudformation-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-    - [From conda-forge](#from-conda-forge)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudFormationClient](#cloudformationclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [CloudFormationServiceResource](#cloudformationserviceresource)
-    - [Collections](#collections)
-    - [Resources](#resources)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+    type annotations stubs module [mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudFormation`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -61,12 +34,11 @@ python -m pip install 'boto3-stubs-lite[cloudformation]'
 python -m pip install mypy-boto3-cloudformation
 ```
 
-<a id="from-conda-forge"></a>
 
 ### From conda-forge
 
-Installing `mypy-boto3-cloudformation` from the `conda-forge` channel can be
-achieved by adding `conda-forge` to your channels with:
+Installing `mypy-boto3-cloudformation` from the `conda-forge` channel
+can be achieved by adding `conda-forge` to your channels with:
 
 ```bash
 conda config --add channels conda-forge
@@ -87,7 +59,6 @@ available on your platform with:
 conda search mypy-boto3-cloudformation --channel conda-forge
 ```
 
-<a id="how-to-uninstall"></a>
 
 ## How to uninstall
 
@@ -95,187 +66,37 @@ conda search mypy-boto3-cloudformation --channel conda-forge
 python -m pip uninstall -y mypy-boto3-cloudformation
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudformationclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudFormationClient
 
-Type annotations for `boto3.client("cloudformation")` as
-[CloudFormationClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cloudformation")` as [CloudFormationClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cloudformation.client import CloudFormationClient
+
+def get_client() -> CloudFormationClient:
+    return Session().cleint("cloudformation")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [activate_type](./client.md#activate_type)
-- [batch_describe_type_configurations](./client.md#batch_describe_type_configurations)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_update_stack](./client.md#cancel_update_stack)
-- [continue_update_rollback](./client.md#continue_update_rollback)
-- [create_change_set](./client.md#create_change_set)
-- [create_stack](./client.md#create_stack)
-- [create_stack_instances](./client.md#create_stack_instances)
-- [create_stack_set](./client.md#create_stack_set)
-- [deactivate_type](./client.md#deactivate_type)
-- [delete_change_set](./client.md#delete_change_set)
-- [delete_stack](./client.md#delete_stack)
-- [delete_stack_instances](./client.md#delete_stack_instances)
-- [delete_stack_set](./client.md#delete_stack_set)
-- [deregister_type](./client.md#deregister_type)
-- [describe_account_limits](./client.md#describe_account_limits)
-- [describe_change_set](./client.md#describe_change_set)
-- [describe_change_set_hooks](./client.md#describe_change_set_hooks)
-- [describe_publisher](./client.md#describe_publisher)
-- [describe_stack_drift_detection_status](./client.md#describe_stack_drift_detection_status)
-- [describe_stack_events](./client.md#describe_stack_events)
-- [describe_stack_instance](./client.md#describe_stack_instance)
-- [describe_stack_resource](./client.md#describe_stack_resource)
-- [describe_stack_resource_drifts](./client.md#describe_stack_resource_drifts)
-- [describe_stack_resources](./client.md#describe_stack_resources)
-- [describe_stack_set](./client.md#describe_stack_set)
-- [describe_stack_set_operation](./client.md#describe_stack_set_operation)
-- [describe_stacks](./client.md#describe_stacks)
-- [describe_type](./client.md#describe_type)
-- [describe_type_registration](./client.md#describe_type_registration)
-- [detect_stack_drift](./client.md#detect_stack_drift)
-- [detect_stack_resource_drift](./client.md#detect_stack_resource_drift)
-- [detect_stack_set_drift](./client.md#detect_stack_set_drift)
-- [estimate_template_cost](./client.md#estimate_template_cost)
-- [exceptions](./client.md#exceptions)
-- [execute_change_set](./client.md#execute_change_set)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_stack_policy](./client.md#get_stack_policy)
-- [get_template](./client.md#get_template)
-- [get_template_summary](./client.md#get_template_summary)
-- [get_waiter](./client.md#get_waiter)
-- [import_stacks_to_stack_set](./client.md#import_stacks_to_stack_set)
-- [list_change_sets](./client.md#list_change_sets)
-- [list_exports](./client.md#list_exports)
-- [list_imports](./client.md#list_imports)
-- [list_stack_instances](./client.md#list_stack_instances)
-- [list_stack_resources](./client.md#list_stack_resources)
-- [list_stack_set_operation_results](./client.md#list_stack_set_operation_results)
-- [list_stack_set_operations](./client.md#list_stack_set_operations)
-- [list_stack_sets](./client.md#list_stack_sets)
-- [list_stacks](./client.md#list_stacks)
-- [list_type_registrations](./client.md#list_type_registrations)
-- [list_type_versions](./client.md#list_type_versions)
-- [list_types](./client.md#list_types)
-- [publish_type](./client.md#publish_type)
-- [record_handler_progress](./client.md#record_handler_progress)
-- [register_publisher](./client.md#register_publisher)
-- [register_type](./client.md#register_type)
-- [rollback_stack](./client.md#rollback_stack)
-- [set_stack_policy](./client.md#set_stack_policy)
-- [set_type_configuration](./client.md#set_type_configuration)
-- [set_type_default_version](./client.md#set_type_default_version)
-- [signal_resource](./client.md#signal_resource)
-- [stop_stack_set_operation](./client.md#stop_stack_set_operation)
-- [test_type](./client.md#test_type)
-- [update_stack](./client.md#update_stack)
-- [update_stack_instances](./client.md#update_stack_instances)
-- [update_stack_set](./client.md#update_stack_set)
-- [update_termination_protection](./client.md#update_termination_protection)
-- [validate_template](./client.md#validate_template)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CloudFormationClient [exceptions](./client.md#exceptions)
-
-- AlreadyExistsException
-- CFNRegistryException
-- ChangeSetNotFoundException
-- ClientError
-- CreatedButModifiedException
-- InsufficientCapabilitiesException
-- InvalidChangeSetStatusException
-- InvalidOperationException
-- InvalidStateTransitionException
-- LimitExceededException
-- NameAlreadyExistsException
-- OperationIdAlreadyExistsException
-- OperationInProgressException
-- OperationNotFoundException
-- OperationStatusCheckFailedException
-- StackInstanceNotFoundException
-- StackNotFoundException
-- StackSetNotEmptyException
-- StackSetNotFoundException
-- StaleRequestException
-- TokenAlreadyExistsException
-- TypeConfigurationNotFoundException
-- TypeNotFoundException
-
-<a id="cloudformationserviceresource"></a>
-
-## CloudFormationServiceResource
-
-Type annotations for `boto3.resource("cloudformation")` as
-[CloudFormationServiceResource](./service_resource.md#cloudformationserviceresource)
-
-Can be used directly:
-
-```python
-from mypy_boto3_cloudformation.service_resource import CloudFormationServiceResource
-```
-
-<a id="collections"></a>
-
-### Collections
-
-Type annotations for collections from `boto3.resource("cloudformation").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_cloudformation.service_resource import ServiceResourceStacksCollection, ...
-```
-
-- [ServiceResourceStacksCollection](./service_resource.md#cloudformationserviceresourcestacks)
-
-<a id="resources"></a>
-
-### Resources
-
-Type annotations for additional resources from
-`boto3.resource("cloudformation").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_cloudformation.service_resource import Event, ...
-```
-
-- [Event](./service_resource.md#event)
-- [Stack](./service_resource.md#stack)
-- [StackResource](./service_resource.md#stackresource)
-- [StackResourceSummary](./service_resource.md#stackresourcesummary)
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("cloudformation").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cloudformation").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloudformation.paginator import DescribeAccountLimitsPaginator, ...
+from mypy_boto3_cloudformation.paginator import DescribeAccountLimitsPaginator
+
+def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
+    return Session().client("cloudformation").get_paginator("describe_account_limits"))
 ```
 
 - [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
@@ -293,17 +114,21 @@ from mypy_boto3_cloudformation.paginator import DescribeAccountLimitsPaginator, 
 - [ListStacksPaginator](./paginators.md#liststackspaginator)
 - [ListTypesPaginator](./paginators.md#listtypespaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("cloudformation").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("cloudformation").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloudformation.waiter import ChangeSetCreateCompleteWaiter, ...
+from mypy_boto3_cloudformation.waiter import ChangeSetCreateCompleteWaiter
+
+def get_change_set_create_complete_waiter() -> ChangeSetCreateCompleteWaiter:
+    return Session().client("cloudformation").get_waiter("change_set_create_complete")
 ```
 
 - [ChangeSetCreateCompleteWaiter](./waiters.md#changesetcreatecompletewaiter)
@@ -315,16 +140,77 @@ from mypy_boto3_cloudformation.waiter import ChangeSetCreateCompleteWaiter, ...
 - [StackUpdateCompleteWaiter](./waiters.md#stackupdatecompletewaiter)
 - [TypeRegistrationCompleteWaiter](./waiters.md#typeregistrationcompletewaiter)
 
-<a id="literals"></a>
+
+
+
+
+## CloudFormationServiceResource
+
+Type annotations and code completion for `#!python boto3.resource("cloudformation")` as
+[CloudFormationServiceResource](./service_resource.md#cloudformationserviceresource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.ServiceResource)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.service_resource import CloudFormationServiceResource
+
+def get_cloudformation_resource() -> CloudFormationServiceResource:
+    return Session().resource("cloudformation")
+```
+
+
+### Collections
+
+Type annotations and code completion for collections
+from `#!python boto3.resource("cloudformation").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.service_resource import ServiceResourceStacksCollection
+
+def get_collection() -> ServiceResourceStacksCollection:
+    return Session().resource("cloudformation").stacks
+```
+
+- [ServiceResourceStacksCollection](./service_resource.md#cloudformationserviceresourcestacks)
+
+
+
+
+### Resources
+
+Type annotations and code completion for additional resources
+from `#!python boto3.resource("cloudformation").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_cloudformation.service_resource import Event
+
+def get_resource() -> Event:
+    return Session().resource("cloudformation").Event(...)
+```
+
+- [Event](./service_resource.md#event)
+- [Stack](./service_resource.md#stack)
+- [StackResource](./service_resource.md#stackresource)
+- [StackResourceSummary](./service_resource.md#stackresourcesummary)
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudformation.literals import AccountGateStatusType
 
-```python
-from mypy_boto3_cloudformation.literals import AccountGateStatusType, ...
+def get_value() -> AccountGateStatusType:
+    return "FAILED"
 ```
 
 - [AccountGateStatusType](./literals.md#accountgatestatustype)
@@ -405,18 +291,22 @@ from mypy_boto3_cloudformation.literals import AccountGateStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef
 
-```python
-from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
+def get_value() -> AccountGateResultTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
 - [AccountGateResultTypeDef](./type_defs.md#accountgateresulttypedef)
@@ -453,16 +343,20 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [DeleteStackSetInputRequestTypeDef](./type_defs.md#deletestacksetinputrequesttypedef)
 - [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
 - [DeregisterTypeInputRequestTypeDef](./type_defs.md#deregistertypeinputrequesttypedef)
+- [DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef](./type_defs.md#describeaccountlimitsinputdescribeaccountlimitspaginatetypedef)
 - [DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef)
 - [DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)
 - [DescribeChangeSetHooksInputRequestTypeDef](./type_defs.md#describechangesethooksinputrequesttypedef)
 - [DescribeChangeSetHooksOutputTypeDef](./type_defs.md#describechangesethooksoutputtypedef)
+- [DescribeChangeSetInputChangeSetCreateCompleteWaitTypeDef](./type_defs.md#describechangesetinputchangesetcreatecompletewaittypedef)
+- [DescribeChangeSetInputDescribeChangeSetPaginateTypeDef](./type_defs.md#describechangesetinputdescribechangesetpaginatetypedef)
 - [DescribeChangeSetInputRequestTypeDef](./type_defs.md#describechangesetinputrequesttypedef)
 - [DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef)
 - [DescribePublisherInputRequestTypeDef](./type_defs.md#describepublisherinputrequesttypedef)
 - [DescribePublisherOutputTypeDef](./type_defs.md#describepublisheroutputtypedef)
 - [DescribeStackDriftDetectionStatusInputRequestTypeDef](./type_defs.md#describestackdriftdetectionstatusinputrequesttypedef)
 - [DescribeStackDriftDetectionStatusOutputTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputtypedef)
+- [DescribeStackEventsInputDescribeStackEventsPaginateTypeDef](./type_defs.md#describestackeventsinputdescribestackeventspaginatetypedef)
 - [DescribeStackEventsInputRequestTypeDef](./type_defs.md#describestackeventsinputrequesttypedef)
 - [DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef)
 - [DescribeStackInstanceInputRequestTypeDef](./type_defs.md#describestackinstanceinputrequesttypedef)
@@ -477,11 +371,19 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [DescribeStackSetOperationInputRequestTypeDef](./type_defs.md#describestacksetoperationinputrequesttypedef)
 - [DescribeStackSetOperationOutputTypeDef](./type_defs.md#describestacksetoperationoutputtypedef)
 - [DescribeStackSetOutputTypeDef](./type_defs.md#describestacksetoutputtypedef)
+- [DescribeStacksInputDescribeStacksPaginateTypeDef](./type_defs.md#describestacksinputdescribestackspaginatetypedef)
 - [DescribeStacksInputRequestTypeDef](./type_defs.md#describestacksinputrequesttypedef)
+- [DescribeStacksInputStackCreateCompleteWaitTypeDef](./type_defs.md#describestacksinputstackcreatecompletewaittypedef)
+- [DescribeStacksInputStackDeleteCompleteWaitTypeDef](./type_defs.md#describestacksinputstackdeletecompletewaittypedef)
+- [DescribeStacksInputStackExistsWaitTypeDef](./type_defs.md#describestacksinputstackexistswaittypedef)
+- [DescribeStacksInputStackImportCompleteWaitTypeDef](./type_defs.md#describestacksinputstackimportcompletewaittypedef)
+- [DescribeStacksInputStackRollbackCompleteWaitTypeDef](./type_defs.md#describestacksinputstackrollbackcompletewaittypedef)
+- [DescribeStacksInputStackUpdateCompleteWaitTypeDef](./type_defs.md#describestacksinputstackupdatecompletewaittypedef)
 - [DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef)
 - [DescribeTypeInputRequestTypeDef](./type_defs.md#describetypeinputrequesttypedef)
 - [DescribeTypeOutputTypeDef](./type_defs.md#describetypeoutputtypedef)
 - [DescribeTypeRegistrationInputRequestTypeDef](./type_defs.md#describetyperegistrationinputrequesttypedef)
+- [DescribeTypeRegistrationInputTypeRegistrationCompleteWaitTypeDef](./type_defs.md#describetyperegistrationinputtyperegistrationcompletewaittypedef)
 - [DescribeTypeRegistrationOutputTypeDef](./type_defs.md#describetyperegistrationoutputtypedef)
 - [DetectStackDriftInputRequestTypeDef](./type_defs.md#detectstackdriftinputrequesttypedef)
 - [DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef)
@@ -501,28 +403,38 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef)
 - [ImportStacksToStackSetInputRequestTypeDef](./type_defs.md#importstackstostacksetinputrequesttypedef)
 - [ImportStacksToStackSetOutputTypeDef](./type_defs.md#importstackstostacksetoutputtypedef)
+- [ListChangeSetsInputListChangeSetsPaginateTypeDef](./type_defs.md#listchangesetsinputlistchangesetspaginatetypedef)
 - [ListChangeSetsInputRequestTypeDef](./type_defs.md#listchangesetsinputrequesttypedef)
 - [ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef)
+- [ListExportsInputListExportsPaginateTypeDef](./type_defs.md#listexportsinputlistexportspaginatetypedef)
 - [ListExportsInputRequestTypeDef](./type_defs.md#listexportsinputrequesttypedef)
 - [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef)
+- [ListImportsInputListImportsPaginateTypeDef](./type_defs.md#listimportsinputlistimportspaginatetypedef)
 - [ListImportsInputRequestTypeDef](./type_defs.md#listimportsinputrequesttypedef)
 - [ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef)
+- [ListStackInstancesInputListStackInstancesPaginateTypeDef](./type_defs.md#liststackinstancesinputliststackinstancespaginatetypedef)
 - [ListStackInstancesInputRequestTypeDef](./type_defs.md#liststackinstancesinputrequesttypedef)
 - [ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef)
+- [ListStackResourcesInputListStackResourcesPaginateTypeDef](./type_defs.md#liststackresourcesinputliststackresourcespaginatetypedef)
 - [ListStackResourcesInputRequestTypeDef](./type_defs.md#liststackresourcesinputrequesttypedef)
 - [ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef)
+- [ListStackSetOperationResultsInputListStackSetOperationResultsPaginateTypeDef](./type_defs.md#liststacksetoperationresultsinputliststacksetoperationresultspaginatetypedef)
 - [ListStackSetOperationResultsInputRequestTypeDef](./type_defs.md#liststacksetoperationresultsinputrequesttypedef)
 - [ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef)
+- [ListStackSetOperationsInputListStackSetOperationsPaginateTypeDef](./type_defs.md#liststacksetoperationsinputliststacksetoperationspaginatetypedef)
 - [ListStackSetOperationsInputRequestTypeDef](./type_defs.md#liststacksetoperationsinputrequesttypedef)
 - [ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef)
+- [ListStackSetsInputListStackSetsPaginateTypeDef](./type_defs.md#liststacksetsinputliststacksetspaginatetypedef)
 - [ListStackSetsInputRequestTypeDef](./type_defs.md#liststacksetsinputrequesttypedef)
 - [ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef)
+- [ListStacksInputListStacksPaginateTypeDef](./type_defs.md#liststacksinputliststackspaginatetypedef)
 - [ListStacksInputRequestTypeDef](./type_defs.md#liststacksinputrequesttypedef)
 - [ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef)
 - [ListTypeRegistrationsInputRequestTypeDef](./type_defs.md#listtyperegistrationsinputrequesttypedef)
 - [ListTypeRegistrationsOutputTypeDef](./type_defs.md#listtyperegistrationsoutputtypedef)
 - [ListTypeVersionsInputRequestTypeDef](./type_defs.md#listtypeversionsinputrequesttypedef)
 - [ListTypeVersionsOutputTypeDef](./type_defs.md#listtypeversionsoutputtypedef)
+- [ListTypesInputListTypesPaginateTypeDef](./type_defs.md#listtypesinputlisttypespaginatetypedef)
 - [ListTypesInputRequestTypeDef](./type_defs.md#listtypesinputrequesttypedef)
 - [ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef)
 - [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
@@ -612,3 +524,4 @@ from mypy_boto3_cloudformation.type_defs import AccountGateResultTypeDef, ...
 - [ValidateTemplateInputRequestTypeDef](./type_defs.md#validatetemplateinputrequesttypedef)
 - [ValidateTemplateOutputTypeDef](./type_defs.md#validatetemplateoutputtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

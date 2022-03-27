@@ -1,32 +1,18 @@
-<a id="paginators-for-boto3-redshiftdataapiservice-module"></a>
-
-# Paginators for boto3 RedshiftDataAPIService module
+# Paginators
 
 > [Index](../README.md) > [RedshiftDataAPIService](./README.md) > Paginators
 
-Auto-generated documentation for
-[RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
-type annotations stubs module
-[mypy-boto3-redshift-data](https://pypi.org/project/mypy-boto3-redshift-data/).
+!!! note ""
 
-- [Paginators for boto3 RedshiftDataAPIService module](#paginators-for-boto3-redshiftdataapiservice-module)
-  - [DescribeTablePaginator](#describetablepaginator)
-  - [GetStatementResultPaginator](#getstatementresultpaginator)
-  - [ListDatabasesPaginator](#listdatabasespaginator)
-  - [ListSchemasPaginator](#listschemaspaginator)
-  - [ListStatementsPaginator](#liststatementspaginator)
-  - [ListTablesPaginator](#listtablespaginator)
-
-<a id="describetablepaginator"></a>
+    Auto-generated documentation for [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
+    type annotations stubs module [mypy-boto3-redshift-data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 ## DescribeTablePaginator
 
-Type annotations for
-`boto3.client("redshift-data").get_paginator("describe_table")`.
+Type annotations and code completion for `#!python boto3.client("redshift-data").get_paginator("describe_table")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.DescribeTable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift_data.paginator import DescribeTablePaginator
@@ -35,34 +21,46 @@ def get_describe_table_paginator() -> DescribeTablePaginator:
     return Session().client("redshift-data").get_paginator("describe_table")
 ```
 
-Boto3 documentation:
-[RedshiftDataAPIService.Paginator.DescribeTable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.DescribeTable)
 
-Arguments for `DescribeTablePaginator.paginate` method:
+### paginate
 
-- `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
-- `ConnectedDatabase`: `str`
-- `DbUser`: `str`
-- `Schema`: `str`
-- `SecretArn`: `str`
-- `Table`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTablePaginator.paginate` method.
 
-`DescribeTablePaginator.paginate` returns
-`_PageIterator`\[[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Database: str,
+    ClusterIdentifier: str = ...,
+    ConnectedDatabase: str = ...,
+    DbUser: str = ...,
+    Schema: str = ...,
+    SecretArn: str = ...,
+    Table: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeTableResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getstatementresultpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTableRequestDescribeTablePaginateTypeDef = {  # (1)
+    "Database": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTableRequestDescribeTablePaginateTypeDef](./type_defs.md#describetablerequestdescribetablepaginatetypedef) 
 ## GetStatementResultPaginator
 
-Type annotations for
-`boto3.client("redshift-data").get_paginator("get_statement_result")`.
+Type annotations and code completion for `#!python boto3.client("redshift-data").get_paginator("get_statement_result")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.GetStatementResult)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift_data.paginator import GetStatementResultPaginator
@@ -71,28 +69,40 @@ def get_get_statement_result_paginator() -> GetStatementResultPaginator:
     return Session().client("redshift-data").get_paginator("get_statement_result")
 ```
 
-Boto3 documentation:
-[RedshiftDataAPIService.Paginator.GetStatementResult](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.GetStatementResult)
 
-Arguments for `GetStatementResultPaginator.paginate` method:
+### paginate
 
-- `Id`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetStatementResultPaginator.paginate` method.
 
-`GetStatementResultPaginator.paginate` returns
-`_PageIterator`\[[GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Id: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetStatementResultResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatabasespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetStatementResultRequestGetStatementResultPaginateTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetStatementResultRequestGetStatementResultPaginateTypeDef](./type_defs.md#getstatementresultrequestgetstatementresultpaginatetypedef) 
 ## ListDatabasesPaginator
 
-Type annotations for
-`boto3.client("redshift-data").get_paginator("list_databases")`.
+Type annotations and code completion for `#!python boto3.client("redshift-data").get_paginator("list_databases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListDatabases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift_data.paginator import ListDatabasesPaginator
@@ -101,31 +111,43 @@ def get_list_databases_paginator() -> ListDatabasesPaginator:
     return Session().client("redshift-data").get_paginator("list_databases")
 ```
 
-Boto3 documentation:
-[RedshiftDataAPIService.Paginator.ListDatabases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListDatabases)
 
-Arguments for `ListDatabasesPaginator.paginate` method:
+### paginate
 
-- `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
-- `DbUser`: `str`
-- `SecretArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatabasesPaginator.paginate` method.
 
-`ListDatabasesPaginator.paginate` returns
-`_PageIterator`\[[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Database: str,
+    ClusterIdentifier: str = ...,
+    DbUser: str = ...,
+    SecretArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatabasesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listschemaspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatabasesRequestListDatabasesPaginateTypeDef = {  # (1)
+    "Database": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatabasesRequestListDatabasesPaginateTypeDef](./type_defs.md#listdatabasesrequestlistdatabasespaginatetypedef) 
 ## ListSchemasPaginator
 
-Type annotations for
-`boto3.client("redshift-data").get_paginator("list_schemas")`.
+Type annotations and code completion for `#!python boto3.client("redshift-data").get_paginator("list_schemas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListSchemas)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift_data.paginator import ListSchemasPaginator
@@ -134,33 +156,45 @@ def get_list_schemas_paginator() -> ListSchemasPaginator:
     return Session().client("redshift-data").get_paginator("list_schemas")
 ```
 
-Boto3 documentation:
-[RedshiftDataAPIService.Paginator.ListSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListSchemas)
 
-Arguments for `ListSchemasPaginator.paginate` method:
+### paginate
 
-- `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
-- `ConnectedDatabase`: `str`
-- `DbUser`: `str`
-- `SchemaPattern`: `str`
-- `SecretArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSchemasPaginator.paginate` method.
 
-`ListSchemasPaginator.paginate` returns
-`_PageIterator`\[[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Database: str,
+    ClusterIdentifier: str = ...,
+    ConnectedDatabase: str = ...,
+    DbUser: str = ...,
+    SchemaPattern: str = ...,
+    SecretArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSchemasResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="liststatementspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSchemasRequestListSchemasPaginateTypeDef = {  # (1)
+    "Database": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSchemasRequestListSchemasPaginateTypeDef](./type_defs.md#listschemasrequestlistschemaspaginatetypedef) 
 ## ListStatementsPaginator
 
-Type annotations for
-`boto3.client("redshift-data").get_paginator("list_statements")`.
+Type annotations and code completion for `#!python boto3.client("redshift-data").get_paginator("list_statements")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListStatements)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift_data.paginator import ListStatementsPaginator
@@ -169,30 +203,43 @@ def get_list_statements_paginator() -> ListStatementsPaginator:
     return Session().client("redshift-data").get_paginator("list_statements")
 ```
 
-Boto3 documentation:
-[RedshiftDataAPIService.Paginator.ListStatements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListStatements)
 
-Arguments for `ListStatementsPaginator.paginate` method:
+### paginate
 
-- `RoleLevel`: `bool`
-- `StatementName`: `str`
-- `Status`: [StatusStringType](./literals.md#statusstringtype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStatementsPaginator.paginate` method.
 
-`ListStatementsPaginator.paginate` returns
-`_PageIterator`\[[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RoleLevel: bool = ...,
+    StatementName: str = ...,
+    Status: StatusStringType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListStatementsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listtablespaginator"></a>
+1. See [:material-code-brackets: StatusStringType](./literals.md#statusstringtype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListStatementsRequestListStatementsPaginateTypeDef = {  # (1)
+    "RoleLevel": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStatementsRequestListStatementsPaginateTypeDef](./type_defs.md#liststatementsrequestliststatementspaginatetypedef) 
 ## ListTablesPaginator
 
-Type annotations for
-`boto3.client("redshift-data").get_paginator("list_tables")`.
+Type annotations and code completion for `#!python boto3.client("redshift-data").get_paginator("list_tables")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListTables)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_redshift_data.paginator import ListTablesPaginator
@@ -201,20 +248,37 @@ def get_list_tables_paginator() -> ListTablesPaginator:
     return Session().client("redshift-data").get_paginator("list_tables")
 ```
 
-Boto3 documentation:
-[RedshiftDataAPIService.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Paginator.ListTables)
 
-Arguments for `ListTablesPaginator.paginate` method:
+### paginate
 
-- `Database`: `str` *(required)*
-- `ClusterIdentifier`: `str`
-- `ConnectedDatabase`: `str`
-- `DbUser`: `str`
-- `SchemaPattern`: `str`
-- `SecretArn`: `str`
-- `TablePattern`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTablesPaginator.paginate` method.
 
-`ListTablesPaginator.paginate` returns
-`_PageIterator`\[[ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Database: str,
+    ClusterIdentifier: str = ...,
+    ConnectedDatabase: str = ...,
+    DbUser: str = ...,
+    SchemaPattern: str = ...,
+    SecretArn: str = ...,
+    TablePattern: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTablesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTablesRequestListTablesPaginateTypeDef = {  # (1)
+    "Database": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTablesRequestListTablesPaginateTypeDef](./type_defs.md#listtablesrequestlisttablespaginatetypedef) 

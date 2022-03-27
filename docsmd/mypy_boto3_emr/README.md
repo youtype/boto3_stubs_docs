@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-emr-module"></a>
-
-# Type annotations for boto3 EMR module
+#  EMR module
 
 > [Index](../README.md) > EMR
 
-Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
-type annotations stubs module
-[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
+!!! note ""
 
-- [Type annotations for boto3 EMR module](#type-annotations-for-boto3-emr-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [EMRClient](#emrclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+    type annotations stubs module [mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `EMR`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[emr]'
 python -m pip install mypy-boto3-emr
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,108 +42,37 @@ python -m pip install mypy-boto3-emr
 python -m pip uninstall -y mypy-boto3-emr
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="emrclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## EMRClient
 
-Type annotations for `boto3.client("emr")` as [EMRClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("emr")` as [EMRClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_emr.client import EMRClient
+
+def get_client() -> EMRClient:
+    return Session().cleint("emr")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_instance_fleet](./client.md#add_instance_fleet)
-- [add_instance_groups](./client.md#add_instance_groups)
-- [add_job_flow_steps](./client.md#add_job_flow_steps)
-- [add_tags](./client.md#add_tags)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_steps](./client.md#cancel_steps)
-- [create_security_configuration](./client.md#create_security_configuration)
-- [create_studio](./client.md#create_studio)
-- [create_studio_session_mapping](./client.md#create_studio_session_mapping)
-- [delete_security_configuration](./client.md#delete_security_configuration)
-- [delete_studio](./client.md#delete_studio)
-- [delete_studio_session_mapping](./client.md#delete_studio_session_mapping)
-- [describe_cluster](./client.md#describe_cluster)
-- [describe_job_flows](./client.md#describe_job_flows)
-- [describe_notebook_execution](./client.md#describe_notebook_execution)
-- [describe_release_label](./client.md#describe_release_label)
-- [describe_security_configuration](./client.md#describe_security_configuration)
-- [describe_step](./client.md#describe_step)
-- [describe_studio](./client.md#describe_studio)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_auto_termination_policy](./client.md#get_auto_termination_policy)
-- [get_block_public_access_configuration](./client.md#get_block_public_access_configuration)
-- [get_managed_scaling_policy](./client.md#get_managed_scaling_policy)
-- [get_paginator](./client.md#get_paginator)
-- [get_studio_session_mapping](./client.md#get_studio_session_mapping)
-- [get_waiter](./client.md#get_waiter)
-- [list_bootstrap_actions](./client.md#list_bootstrap_actions)
-- [list_clusters](./client.md#list_clusters)
-- [list_instance_fleets](./client.md#list_instance_fleets)
-- [list_instance_groups](./client.md#list_instance_groups)
-- [list_instances](./client.md#list_instances)
-- [list_notebook_executions](./client.md#list_notebook_executions)
-- [list_release_labels](./client.md#list_release_labels)
-- [list_security_configurations](./client.md#list_security_configurations)
-- [list_steps](./client.md#list_steps)
-- [list_studio_session_mappings](./client.md#list_studio_session_mappings)
-- [list_studios](./client.md#list_studios)
-- [modify_cluster](./client.md#modify_cluster)
-- [modify_instance_fleet](./client.md#modify_instance_fleet)
-- [modify_instance_groups](./client.md#modify_instance_groups)
-- [put_auto_scaling_policy](./client.md#put_auto_scaling_policy)
-- [put_auto_termination_policy](./client.md#put_auto_termination_policy)
-- [put_block_public_access_configuration](./client.md#put_block_public_access_configuration)
-- [put_managed_scaling_policy](./client.md#put_managed_scaling_policy)
-- [remove_auto_scaling_policy](./client.md#remove_auto_scaling_policy)
-- [remove_auto_termination_policy](./client.md#remove_auto_termination_policy)
-- [remove_managed_scaling_policy](./client.md#remove_managed_scaling_policy)
-- [remove_tags](./client.md#remove_tags)
-- [run_job_flow](./client.md#run_job_flow)
-- [set_termination_protection](./client.md#set_termination_protection)
-- [set_visible_to_all_users](./client.md#set_visible_to_all_users)
-- [start_notebook_execution](./client.md#start_notebook_execution)
-- [stop_notebook_execution](./client.md#stop_notebook_execution)
-- [terminate_job_flows](./client.md#terminate_job_flows)
-- [update_studio](./client.md#update_studio)
-- [update_studio_session_mapping](./client.md#update_studio_session_mapping)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-EMRClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InternalServerError
-- InternalServerException
-- InvalidRequestException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("emr").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("emr").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator, ...
+from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator
+
+def get_list_bootstrap_actions_paginator() -> ListBootstrapActionsPaginator:
+    return Session().client("emr").get_paginator("list_bootstrap_actions"))
 ```
 
 - [ListBootstrapActionsPaginator](./paginators.md#listbootstrapactionspaginator)
@@ -180,33 +86,42 @@ from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator, ...
 - [ListStudioSessionMappingsPaginator](./paginators.md#liststudiosessionmappingspaginator)
 - [ListStudiosPaginator](./paginators.md#liststudiospaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("emr").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("emr").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_emr.waiter import ClusterRunningWaiter, ...
+from mypy_boto3_emr.waiter import ClusterRunningWaiter
+
+def get_cluster_running_waiter() -> ClusterRunningWaiter:
+    return Session().client("emr").get_waiter("cluster_running")
 ```
 
 - [ClusterRunningWaiter](./waiters.md#clusterrunningwaiter)
 - [ClusterTerminatedWaiter](./waiters.md#clusterterminatedwaiter)
 - [StepCompleteWaiter](./waiters.md#stepcompletewaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_emr.literals import ActionOnFailureType
 
-```python
-from mypy_boto3_emr.literals import ActionOnFailureType, ...
+def get_value() -> ActionOnFailureType:
+    return "CANCEL_AND_WAIT"
 ```
 
 - [ActionOnFailureType](./literals.md#actiononfailuretype)
@@ -266,18 +181,23 @@ from mypy_boto3_emr.literals import ActionOnFailureType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_emr.type_defs import AddInstanceFleetInputRequestTypeDef
 
-```python
-from mypy_boto3_emr.type_defs import AddInstanceFleetInputRequestTypeDef, ...
+def get_value() -> AddInstanceFleetInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "InstanceFleet": ...,
+    }
 ```
 
 - [AddInstanceFleetInputRequestTypeDef](./type_defs.md#addinstancefleetinputrequesttypedef)
@@ -317,6 +237,8 @@ from mypy_boto3_emr.type_defs import AddInstanceFleetInputRequestTypeDef, ...
 - [DeleteSecurityConfigurationInputRequestTypeDef](./type_defs.md#deletesecurityconfigurationinputrequesttypedef)
 - [DeleteStudioInputRequestTypeDef](./type_defs.md#deletestudioinputrequesttypedef)
 - [DeleteStudioSessionMappingInputRequestTypeDef](./type_defs.md#deletestudiosessionmappinginputrequesttypedef)
+- [DescribeClusterInputClusterRunningWaitTypeDef](./type_defs.md#describeclusterinputclusterrunningwaittypedef)
+- [DescribeClusterInputClusterTerminatedWaitTypeDef](./type_defs.md#describeclusterinputclusterterminatedwaittypedef)
 - [DescribeClusterInputRequestTypeDef](./type_defs.md#describeclusterinputrequesttypedef)
 - [DescribeClusterOutputTypeDef](./type_defs.md#describeclusteroutputtypedef)
 - [DescribeJobFlowsInputRequestTypeDef](./type_defs.md#describejobflowsinputrequesttypedef)
@@ -328,6 +250,7 @@ from mypy_boto3_emr.type_defs import AddInstanceFleetInputRequestTypeDef, ...
 - [DescribeSecurityConfigurationInputRequestTypeDef](./type_defs.md#describesecurityconfigurationinputrequesttypedef)
 - [DescribeSecurityConfigurationOutputTypeDef](./type_defs.md#describesecurityconfigurationoutputtypedef)
 - [DescribeStepInputRequestTypeDef](./type_defs.md#describestepinputrequesttypedef)
+- [DescribeStepInputStepCompleteWaitTypeDef](./type_defs.md#describestepinputstepcompletewaittypedef)
 - [DescribeStepOutputTypeDef](./type_defs.md#describestepoutputtypedef)
 - [DescribeStudioInputRequestTypeDef](./type_defs.md#describestudioinputrequesttypedef)
 - [DescribeStudioOutputTypeDef](./type_defs.md#describestudiooutputtypedef)
@@ -374,26 +297,36 @@ from mypy_boto3_emr.type_defs import AddInstanceFleetInputRequestTypeDef, ...
 - [JobFlowInstancesDetailTypeDef](./type_defs.md#jobflowinstancesdetailtypedef)
 - [KerberosAttributesTypeDef](./type_defs.md#kerberosattributestypedef)
 - [KeyValueTypeDef](./type_defs.md#keyvaluetypedef)
+- [ListBootstrapActionsInputListBootstrapActionsPaginateTypeDef](./type_defs.md#listbootstrapactionsinputlistbootstrapactionspaginatetypedef)
 - [ListBootstrapActionsInputRequestTypeDef](./type_defs.md#listbootstrapactionsinputrequesttypedef)
 - [ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef)
+- [ListClustersInputListClustersPaginateTypeDef](./type_defs.md#listclustersinputlistclusterspaginatetypedef)
 - [ListClustersInputRequestTypeDef](./type_defs.md#listclustersinputrequesttypedef)
 - [ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef)
+- [ListInstanceFleetsInputListInstanceFleetsPaginateTypeDef](./type_defs.md#listinstancefleetsinputlistinstancefleetspaginatetypedef)
 - [ListInstanceFleetsInputRequestTypeDef](./type_defs.md#listinstancefleetsinputrequesttypedef)
 - [ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef)
+- [ListInstanceGroupsInputListInstanceGroupsPaginateTypeDef](./type_defs.md#listinstancegroupsinputlistinstancegroupspaginatetypedef)
 - [ListInstanceGroupsInputRequestTypeDef](./type_defs.md#listinstancegroupsinputrequesttypedef)
 - [ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef)
+- [ListInstancesInputListInstancesPaginateTypeDef](./type_defs.md#listinstancesinputlistinstancespaginatetypedef)
 - [ListInstancesInputRequestTypeDef](./type_defs.md#listinstancesinputrequesttypedef)
 - [ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef)
+- [ListNotebookExecutionsInputListNotebookExecutionsPaginateTypeDef](./type_defs.md#listnotebookexecutionsinputlistnotebookexecutionspaginatetypedef)
 - [ListNotebookExecutionsInputRequestTypeDef](./type_defs.md#listnotebookexecutionsinputrequesttypedef)
 - [ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef)
 - [ListReleaseLabelsInputRequestTypeDef](./type_defs.md#listreleaselabelsinputrequesttypedef)
 - [ListReleaseLabelsOutputTypeDef](./type_defs.md#listreleaselabelsoutputtypedef)
+- [ListSecurityConfigurationsInputListSecurityConfigurationsPaginateTypeDef](./type_defs.md#listsecurityconfigurationsinputlistsecurityconfigurationspaginatetypedef)
 - [ListSecurityConfigurationsInputRequestTypeDef](./type_defs.md#listsecurityconfigurationsinputrequesttypedef)
 - [ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef)
+- [ListStepsInputListStepsPaginateTypeDef](./type_defs.md#liststepsinputliststepspaginatetypedef)
 - [ListStepsInputRequestTypeDef](./type_defs.md#liststepsinputrequesttypedef)
 - [ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef)
+- [ListStudioSessionMappingsInputListStudioSessionMappingsPaginateTypeDef](./type_defs.md#liststudiosessionmappingsinputliststudiosessionmappingspaginatetypedef)
 - [ListStudioSessionMappingsInputRequestTypeDef](./type_defs.md#liststudiosessionmappingsinputrequesttypedef)
 - [ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef)
+- [ListStudiosInputListStudiosPaginateTypeDef](./type_defs.md#liststudiosinputliststudiospaginatetypedef)
 - [ListStudiosInputRequestTypeDef](./type_defs.md#liststudiosinputrequesttypedef)
 - [ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef)
 - [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
@@ -457,3 +390,4 @@ from mypy_boto3_emr.type_defs import AddInstanceFleetInputRequestTypeDef, ...
 - [UpdateStudioSessionMappingInputRequestTypeDef](./type_defs.md#updatestudiosessionmappinginputrequesttypedef)
 - [VolumeSpecificationTypeDef](./type_defs.md#volumespecificationtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

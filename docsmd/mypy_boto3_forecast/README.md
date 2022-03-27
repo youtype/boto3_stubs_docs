@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-forecastservice-module"></a>
-
-# Type annotations for boto3 ForecastService module
+#  ForecastService module
 
 > [Index](../README.md) > ForecastService
 
-Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
-type annotations stubs module
-[mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
+!!! note ""
 
-- [Type annotations for boto3 ForecastService module](#type-annotations-for-boto3-forecastservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ForecastServiceClient](#forecastserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+    type annotations stubs module [mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ForecastService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[forecast]'
 python -m pip install mypy-boto3-forecast
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,104 +42,37 @@ python -m pip install mypy-boto3-forecast
 python -m pip uninstall -y mypy-boto3-forecast
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="forecastserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ForecastServiceClient
 
-Type annotations for `boto3.client("forecast")` as
-[ForecastServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("forecast")` as [ForecastServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_forecast.client import ForecastServiceClient
+
+def get_client() -> ForecastServiceClient:
+    return Session().cleint("forecast")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_auto_predictor](./client.md#create_auto_predictor)
-- [create_dataset](./client.md#create_dataset)
-- [create_dataset_group](./client.md#create_dataset_group)
-- [create_dataset_import_job](./client.md#create_dataset_import_job)
-- [create_explainability](./client.md#create_explainability)
-- [create_explainability_export](./client.md#create_explainability_export)
-- [create_forecast](./client.md#create_forecast)
-- [create_forecast_export_job](./client.md#create_forecast_export_job)
-- [create_predictor](./client.md#create_predictor)
-- [create_predictor_backtest_export_job](./client.md#create_predictor_backtest_export_job)
-- [delete_dataset](./client.md#delete_dataset)
-- [delete_dataset_group](./client.md#delete_dataset_group)
-- [delete_dataset_import_job](./client.md#delete_dataset_import_job)
-- [delete_explainability](./client.md#delete_explainability)
-- [delete_explainability_export](./client.md#delete_explainability_export)
-- [delete_forecast](./client.md#delete_forecast)
-- [delete_forecast_export_job](./client.md#delete_forecast_export_job)
-- [delete_predictor](./client.md#delete_predictor)
-- [delete_predictor_backtest_export_job](./client.md#delete_predictor_backtest_export_job)
-- [delete_resource_tree](./client.md#delete_resource_tree)
-- [describe_auto_predictor](./client.md#describe_auto_predictor)
-- [describe_dataset](./client.md#describe_dataset)
-- [describe_dataset_group](./client.md#describe_dataset_group)
-- [describe_dataset_import_job](./client.md#describe_dataset_import_job)
-- [describe_explainability](./client.md#describe_explainability)
-- [describe_explainability_export](./client.md#describe_explainability_export)
-- [describe_forecast](./client.md#describe_forecast)
-- [describe_forecast_export_job](./client.md#describe_forecast_export_job)
-- [describe_predictor](./client.md#describe_predictor)
-- [describe_predictor_backtest_export_job](./client.md#describe_predictor_backtest_export_job)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_accuracy_metrics](./client.md#get_accuracy_metrics)
-- [get_paginator](./client.md#get_paginator)
-- [list_dataset_groups](./client.md#list_dataset_groups)
-- [list_dataset_import_jobs](./client.md#list_dataset_import_jobs)
-- [list_datasets](./client.md#list_datasets)
-- [list_explainabilities](./client.md#list_explainabilities)
-- [list_explainability_exports](./client.md#list_explainability_exports)
-- [list_forecast_export_jobs](./client.md#list_forecast_export_jobs)
-- [list_forecasts](./client.md#list_forecasts)
-- [list_predictor_backtest_export_jobs](./client.md#list_predictor_backtest_export_jobs)
-- [list_predictors](./client.md#list_predictors)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [stop_resource](./client.md#stop_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_dataset_group](./client.md#update_dataset_group)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ForecastServiceClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InvalidInputException
-- InvalidNextTokenException
-- LimitExceededException
-- ResourceAlreadyExistsException
-- ResourceInUseException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("forecast").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("forecast").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_forecast.paginator import ListDatasetGroupsPaginator, ...
+from mypy_boto3_forecast.paginator import ListDatasetGroupsPaginator
+
+def get_list_dataset_groups_paginator() -> ListDatasetGroupsPaginator:
+    return Session().client("forecast").get_paginator("list_dataset_groups"))
 ```
 
 - [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
@@ -172,16 +83,23 @@ from mypy_boto3_forecast.paginator import ListDatasetGroupsPaginator, ...
 - [ListPredictorBacktestExportJobsPaginator](./paginators.md#listpredictorbacktestexportjobspaginator)
 - [ListPredictorsPaginator](./paginators.md#listpredictorspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_forecast.literals import AttributeTypeType
 
-```python
-from mypy_boto3_forecast.literals import AttributeTypeType, ...
+def get_value() -> AttributeTypeType:
+    return "float"
 ```
 
 - [AttributeTypeType](./literals.md#attributetypetype)
@@ -207,18 +125,22 @@ from mypy_boto3_forecast.literals import AttributeTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_forecast.type_defs import AdditionalDatasetTypeDef
 
-```python
-from mypy_boto3_forecast.type_defs import AdditionalDatasetTypeDef, ...
+def get_value() -> AdditionalDatasetTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [AdditionalDatasetTypeDef](./type_defs.md#additionaldatasettypedef)
@@ -300,22 +222,29 @@ from mypy_boto3_forecast.type_defs import AdditionalDatasetTypeDef, ...
 - [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
 - [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
 - [IntegerParameterRangeTypeDef](./type_defs.md#integerparameterrangetypedef)
+- [ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef](./type_defs.md#listdatasetgroupsrequestlistdatasetgroupspaginatetypedef)
 - [ListDatasetGroupsRequestRequestTypeDef](./type_defs.md#listdatasetgroupsrequestrequesttypedef)
 - [ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef)
+- [ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef](./type_defs.md#listdatasetimportjobsrequestlistdatasetimportjobspaginatetypedef)
 - [ListDatasetImportJobsRequestRequestTypeDef](./type_defs.md#listdatasetimportjobsrequestrequesttypedef)
 - [ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef)
+- [ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef)
 - [ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
 - [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)
 - [ListExplainabilitiesRequestRequestTypeDef](./type_defs.md#listexplainabilitiesrequestrequesttypedef)
 - [ListExplainabilitiesResponseTypeDef](./type_defs.md#listexplainabilitiesresponsetypedef)
 - [ListExplainabilityExportsRequestRequestTypeDef](./type_defs.md#listexplainabilityexportsrequestrequesttypedef)
 - [ListExplainabilityExportsResponseTypeDef](./type_defs.md#listexplainabilityexportsresponsetypedef)
+- [ListForecastExportJobsRequestListForecastExportJobsPaginateTypeDef](./type_defs.md#listforecastexportjobsrequestlistforecastexportjobspaginatetypedef)
 - [ListForecastExportJobsRequestRequestTypeDef](./type_defs.md#listforecastexportjobsrequestrequesttypedef)
 - [ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef)
+- [ListForecastsRequestListForecastsPaginateTypeDef](./type_defs.md#listforecastsrequestlistforecastspaginatetypedef)
 - [ListForecastsRequestRequestTypeDef](./type_defs.md#listforecastsrequestrequesttypedef)
 - [ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef)
+- [ListPredictorBacktestExportJobsRequestListPredictorBacktestExportJobsPaginateTypeDef](./type_defs.md#listpredictorbacktestexportjobsrequestlistpredictorbacktestexportjobspaginatetypedef)
 - [ListPredictorBacktestExportJobsRequestRequestTypeDef](./type_defs.md#listpredictorbacktestexportjobsrequestrequesttypedef)
 - [ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef)
+- [ListPredictorsRequestListPredictorsPaginateTypeDef](./type_defs.md#listpredictorsrequestlistpredictorspaginatetypedef)
 - [ListPredictorsRequestRequestTypeDef](./type_defs.md#listpredictorsrequestrequesttypedef)
 - [ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -342,3 +271,4 @@ from mypy_boto3_forecast.type_defs import AdditionalDatasetTypeDef, ...
 - [UpdateDatasetGroupRequestRequestTypeDef](./type_defs.md#updatedatasetgrouprequestrequesttypedef)
 - [WeightedQuantileLossTypeDef](./type_defs.md#weightedquantilelosstypedef)
 - [WindowSummaryTypeDef](./type_defs.md#windowsummarytypedef)
+

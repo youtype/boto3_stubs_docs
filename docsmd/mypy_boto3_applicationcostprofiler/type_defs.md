@@ -1,286 +1,383 @@
-<a id="typed-dictionaries-for-boto3-applicationcostprofiler-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 ApplicationCostProfiler module
+> [Index](../README.md) > [ApplicationCostProfiler](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [ApplicationCostProfiler](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[ApplicationCostProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler)
-type annotations stubs module
-[mypy-boto3-applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
-
-- [Typed dictionaries for boto3 ApplicationCostProfiler module](#typed-dictionaries-for-boto3-applicationcostprofiler-module)
-  - [DeleteReportDefinitionRequestRequestTypeDef](#deletereportdefinitionrequestrequesttypedef)
-  - [DeleteReportDefinitionResultTypeDef](#deletereportdefinitionresulttypedef)
-  - [GetReportDefinitionRequestRequestTypeDef](#getreportdefinitionrequestrequesttypedef)
-  - [GetReportDefinitionResultTypeDef](#getreportdefinitionresulttypedef)
-  - [ImportApplicationUsageRequestRequestTypeDef](#importapplicationusagerequestrequesttypedef)
-  - [ImportApplicationUsageResultTypeDef](#importapplicationusageresulttypedef)
-  - [ListReportDefinitionsRequestRequestTypeDef](#listreportdefinitionsrequestrequesttypedef)
-  - [ListReportDefinitionsResultTypeDef](#listreportdefinitionsresulttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutReportDefinitionRequestRequestTypeDef](#putreportdefinitionrequestrequesttypedef)
-  - [PutReportDefinitionResultTypeDef](#putreportdefinitionresulttypedef)
-  - [ReportDefinitionTypeDef](#reportdefinitiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [SourceS3LocationTypeDef](#sources3locationtypedef)
-  - [UpdateReportDefinitionRequestRequestTypeDef](#updatereportdefinitionrequestrequesttypedef)
-  - [UpdateReportDefinitionResultTypeDef](#updatereportdefinitionresulttypedef)
-
-<a id="deletereportdefinitionrequestrequesttypedef"></a>
+    Auto-generated documentation for [ApplicationCostProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler)
+    type annotations stubs module [mypy-boto3-applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
 
 ## DeleteReportDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import DeleteReportDefinitionRequestRequestTypeDef
+
+def get_value() -> DeleteReportDefinitionRequestRequestTypeDef:
+    return {
+        "reportId": ...,
+    }
 ```
 
-Required fields:
-
-- `reportId`: `str`
-
-<a id="deletereportdefinitionresulttypedef"></a>
+```python title="Definition"
+class DeleteReportDefinitionRequestRequestTypeDef(TypedDict):
+    reportId: str,
+```
 
 ## DeleteReportDefinitionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import DeleteReportDefinitionResultTypeDef
+
+def get_value() -> DeleteReportDefinitionResultTypeDef:
+    return {
+        "reportId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteReportDefinitionResultTypeDef(TypedDict):
+    reportId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `reportId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getreportdefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetReportDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import GetReportDefinitionRequestRequestTypeDef
+
+def get_value() -> GetReportDefinitionRequestRequestTypeDef:
+    return {
+        "reportId": ...,
+    }
 ```
 
-Required fields:
-
-- `reportId`: `str`
-
-<a id="getreportdefinitionresulttypedef"></a>
+```python title="Definition"
+class GetReportDefinitionRequestRequestTypeDef(TypedDict):
+    reportId: str,
+```
 
 ## GetReportDefinitionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import GetReportDefinitionResultTypeDef
+
+def get_value() -> GetReportDefinitionResultTypeDef:
+    return {
+        "reportId": ...,
+        "reportDescription": ...,
+        "reportFrequency": ...,
+        "format": ...,
+        "destinationS3Location": ...,
+        "createdAt": ...,
+        "lastUpdated": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReportDefinitionResultTypeDef(TypedDict):
+    reportId: str,
+    reportDescription: str,
+    reportFrequency: ReportFrequencyType,  # (1)
+    format: FormatType,  # (2)
+    destinationS3Location: S3LocationTypeDef,  # (3)
+    createdAt: datetime,
+    lastUpdated: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `reportId`: `str`
-- `reportDescription`: `str`
-- `reportFrequency`: [ReportFrequencyType](./literals.md#reportfrequencytype)
-- `format`: [FormatType](./literals.md#formattype)
-- `destinationS3Location`:
-  [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `createdAt`: `datetime`
-- `lastUpdated`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="importapplicationusagerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ReportFrequencyType](./literals.md#reportfrequencytype) 
+2. See [:material-code-brackets: FormatType](./literals.md#formattype) 
+3. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportApplicationUsageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import ImportApplicationUsageRequestRequestTypeDef
+
+def get_value() -> ImportApplicationUsageRequestRequestTypeDef:
+    return {
+        "sourceS3Location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportApplicationUsageRequestRequestTypeDef(TypedDict):
+    sourceS3Location: SourceS3LocationTypeDef,  # (1)
+```
 
-- `sourceS3Location`:
-  [SourceS3LocationTypeDef](./type_defs.md#sources3locationtypedef)
-
-<a id="importapplicationusageresulttypedef"></a>
-
+1. See [:material-code-braces: SourceS3LocationTypeDef](./type_defs.md#sources3locationtypedef) 
 ## ImportApplicationUsageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import ImportApplicationUsageResultTypeDef
+
+def get_value() -> ImportApplicationUsageResultTypeDef:
+    return {
+        "importId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportApplicationUsageResultTypeDef(TypedDict):
+    importId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `importId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListReportDefinitionsRequestListReportDefinitionsPaginateTypeDef
 
-<a id="listreportdefinitionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_applicationcostprofiler.type_defs import ListReportDefinitionsRequestListReportDefinitionsPaginateTypeDef
 
+def get_value() -> ListReportDefinitionsRequestListReportDefinitionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListReportDefinitionsRequestListReportDefinitionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListReportDefinitionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import ListReportDefinitionsRequestRequestTypeDef
+
+def get_value() -> ListReportDefinitionsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listreportdefinitionsresulttypedef"></a>
+```python title="Definition"
+class ListReportDefinitionsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListReportDefinitionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import ListReportDefinitionsResultTypeDef
+
+def get_value() -> ListReportDefinitionsResultTypeDef:
+    return {
+        "reportDefinitions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReportDefinitionsResultTypeDef(TypedDict):
+    reportDefinitions: List[ReportDefinitionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `reportDefinitions`:
-  `List`\[[ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putreportdefinitionrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutReportDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import PutReportDefinitionRequestRequestTypeDef
+
+def get_value() -> PutReportDefinitionRequestRequestTypeDef:
+    return {
+        "reportId": ...,
+        "reportDescription": ...,
+        "reportFrequency": ...,
+        "format": ...,
+        "destinationS3Location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutReportDefinitionRequestRequestTypeDef(TypedDict):
+    reportId: str,
+    reportDescription: str,
+    reportFrequency: ReportFrequencyType,  # (1)
+    format: FormatType,  # (2)
+    destinationS3Location: S3LocationTypeDef,  # (3)
+```
 
-- `reportId`: `str`
-- `reportDescription`: `str`
-- `reportFrequency`: [ReportFrequencyType](./literals.md#reportfrequencytype)
-- `format`: [FormatType](./literals.md#formattype)
-- `destinationS3Location`:
-  [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="putreportdefinitionresulttypedef"></a>
-
+1. See [:material-code-brackets: ReportFrequencyType](./literals.md#reportfrequencytype) 
+2. See [:material-code-brackets: FormatType](./literals.md#formattype) 
+3. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## PutReportDefinitionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import PutReportDefinitionResultTypeDef
+
+def get_value() -> PutReportDefinitionResultTypeDef:
+    return {
+        "reportId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutReportDefinitionResultTypeDef(TypedDict):
+    reportId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `reportId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="reportdefinitiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReportDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import ReportDefinitionTypeDef
+
+def get_value() -> ReportDefinitionTypeDef:
+    return {
+        "reportId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReportDefinitionTypeDef(TypedDict):
+    reportId: NotRequired[str],
+    reportDescription: NotRequired[str],
+    reportFrequency: NotRequired[ReportFrequencyType],  # (1)
+    format: NotRequired[FormatType],  # (2)
+    destinationS3Location: NotRequired[S3LocationTypeDef],  # (3)
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+```
 
-- `reportId`: `str`
-- `reportDescription`: `str`
-- `reportFrequency`: [ReportFrequencyType](./literals.md#reportfrequencytype)
-- `format`: [FormatType](./literals.md#formattype)
-- `destinationS3Location`:
-  [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ReportFrequencyType](./literals.md#reportfrequencytype) 
+2. See [:material-code-brackets: FormatType](./literals.md#formattype) 
+3. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3locationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "bucket": ...,
+        "prefix": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket`: `str`
-- `prefix`: `str`
-
-<a id="sources3locationtypedef"></a>
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    bucket: str,
+    prefix: str,
+```
 
 ## SourceS3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import SourceS3LocationTypeDef
+
+def get_value() -> SourceS3LocationTypeDef:
+    return {
+        "bucket": ...,
+        "key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceS3LocationTypeDef(TypedDict):
+    bucket: str,
+    key: str,
+    region: NotRequired[S3BucketRegionType],  # (1)
+```
 
-- `bucket`: `str`
-- `key`: `str`
-
-Optional fields:
-
-- `region`: [S3BucketRegionType](./literals.md#s3bucketregiontype)
-
-<a id="updatereportdefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: S3BucketRegionType](./literals.md#s3bucketregiontype) 
 ## UpdateReportDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import UpdateReportDefinitionRequestRequestTypeDef
+
+def get_value() -> UpdateReportDefinitionRequestRequestTypeDef:
+    return {
+        "reportId": ...,
+        "reportDescription": ...,
+        "reportFrequency": ...,
+        "format": ...,
+        "destinationS3Location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateReportDefinitionRequestRequestTypeDef(TypedDict):
+    reportId: str,
+    reportDescription: str,
+    reportFrequency: ReportFrequencyType,  # (1)
+    format: FormatType,  # (2)
+    destinationS3Location: S3LocationTypeDef,  # (3)
+```
 
-- `reportId`: `str`
-- `reportDescription`: `str`
-- `reportFrequency`: [ReportFrequencyType](./literals.md#reportfrequencytype)
-- `format`: [FormatType](./literals.md#formattype)
-- `destinationS3Location`:
-  [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="updatereportdefinitionresulttypedef"></a>
-
+1. See [:material-code-brackets: ReportFrequencyType](./literals.md#reportfrequencytype) 
+2. See [:material-code-brackets: FormatType](./literals.md#formattype) 
+3. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## UpdateReportDefinitionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_applicationcostprofiler.type_defs import UpdateReportDefinitionResultTypeDef
+
+def get_value() -> UpdateReportDefinitionResultTypeDef:
+    return {
+        "reportId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateReportDefinitionResultTypeDef(TypedDict):
+    reportId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `reportId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

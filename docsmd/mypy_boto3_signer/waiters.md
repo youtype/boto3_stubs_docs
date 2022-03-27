@@ -1,27 +1,18 @@
-<a id="waiters-for-boto3-signer-module"></a>
-
-# Waiters for boto3 signer module
+# Waiters
 
 > [Index](../README.md) > [signer](./README.md) > Waiters
 
-Auto-generated documentation for
-[signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
-type annotations stubs module
-[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
+!!! note ""
 
-- [Waiters for boto3 signer module](#waiters-for-boto3-signer-module)
-  - [SuccessfulSigningJobWaiter](#successfulsigningjobwaiter)
-
-<a id="successfulsigningjobwaiter"></a>
+    Auto-generated documentation for [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
+    type annotations stubs module [mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 ## SuccessfulSigningJobWaiter
 
-Type annotations for
-`boto3.client("signer").get_waiter("successful_signing_job")`.
+Type annotations and code completion for `#!python boto3.client("signer").get_waiter("successful_signing_job")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Waiter.SuccessfulSigningJob)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_signer.waiter import SuccessfulSigningJobWaiter
@@ -30,10 +21,30 @@ def get_successful_signing_job_waiter() -> SuccessfulSigningJobWaiter:
     return Session().client("signer").get_waiter("successful_signing_job")
 ```
 
-Boto3 documentation:
-[signer.Waiter.successful_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Waiter.SuccessfulSigningJob)
 
-Arguments for `SuccessfulSigningJobWaiter.wait` method:
+### wait
 
-- `jobId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python SuccessfulSigningJobWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    jobId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSigningJobRequestSuccessfulSigningJobWaitTypeDef = {  # (1)
+    "jobId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSigningJobRequestSuccessfulSigningJobWaitTypeDef](./type_defs.md#describesigningjobrequestsuccessfulsigningjobwaittypedef) 

@@ -1,72 +1,18 @@
-<a id="snsclient-for-boto3-sns-module"></a>
-
-# SNSClient for boto3 SNS module
+# SNSClient
 
 > [Index](../README.md) > [SNS](./README.md) > SNSClient
 
-Auto-generated documentation for
-[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module
-[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
+!!! note ""
 
-- [SNSClient for boto3 SNS module](#snsclient-for-boto3-sns-module)
-  - [SNSClient](#snsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_permission](#add_permission)
-    - [can_paginate](#can_paginate)
-    - [check_if_phone_number_is_opted_out](#check_if_phone_number_is_opted_out)
-    - [confirm_subscription](#confirm_subscription)
-    - [create_platform_application](#create_platform_application)
-    - [create_platform_endpoint](#create_platform_endpoint)
-    - [create_sms_sandbox_phone_number](#create_sms_sandbox_phone_number)
-    - [create_topic](#create_topic)
-    - [delete_endpoint](#delete_endpoint)
-    - [delete_platform_application](#delete_platform_application)
-    - [delete_sms_sandbox_phone_number](#delete_sms_sandbox_phone_number)
-    - [delete_topic](#delete_topic)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_endpoint_attributes](#get_endpoint_attributes)
-    - [get_platform_application_attributes](#get_platform_application_attributes)
-    - [get_sms_attributes](#get_sms_attributes)
-    - [get_sms_sandbox_account_status](#get_sms_sandbox_account_status)
-    - [get_subscription_attributes](#get_subscription_attributes)
-    - [get_topic_attributes](#get_topic_attributes)
-    - [list_endpoints_by_platform_application](#list_endpoints_by_platform_application)
-    - [list_origination_numbers](#list_origination_numbers)
-    - [list_phone_numbers_opted_out](#list_phone_numbers_opted_out)
-    - [list_platform_applications](#list_platform_applications)
-    - [list_sms_sandbox_phone_numbers](#list_sms_sandbox_phone_numbers)
-    - [list_subscriptions](#list_subscriptions)
-    - [list_subscriptions_by_topic](#list_subscriptions_by_topic)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_topics](#list_topics)
-    - [opt_in_phone_number](#opt_in_phone_number)
-    - [publish](#publish)
-    - [publish_batch](#publish_batch)
-    - [remove_permission](#remove_permission)
-    - [set_endpoint_attributes](#set_endpoint_attributes)
-    - [set_platform_application_attributes](#set_platform_application_attributes)
-    - [set_sms_attributes](#set_sms_attributes)
-    - [set_subscription_attributes](#set_subscription_attributes)
-    - [set_topic_attributes](#set_topic_attributes)
-    - [subscribe](#subscribe)
-    - [tag_resource](#tag_resource)
-    - [unsubscribe](#unsubscribe)
-    - [untag_resource](#untag_resource)
-    - [verify_sms_sandbox_phone_number](#verify_sms_sandbox_phone_number)
-    - [get_paginator](#get_paginator)
-
-<a id="snsclient"></a>
+    Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+    type annotations stubs module [mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 ## SNSClient
 
-Type annotations for `boto3.client("sns")`
+Type annotations and code completion for `#!python boto3.client("sns")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sns.client import SNSClient
 
@@ -74,1004 +20,1333 @@ def get_sns_client() -> SNSClient:
     return Session().client("sns")
 ```
 
-Boto3 documentation:
-[SNS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sns").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sns")
+
+try:
+    do_something(client)
+except (
+    client.AuthorizationErrorException,
+    client.BatchEntryIdsNotDistinctException,
+    client.BatchRequestTooLongException,
+    client.ClientError,
+    client.ConcurrentAccessException,
+    client.EmptyBatchRequestException,
+    client.EndpointDisabledException,
+    client.FilterPolicyLimitExceededException,
+    client.InternalErrorException,
+    client.InvalidBatchEntryIdException,
+    client.InvalidParameterException,
+    client.InvalidParameterValueException,
+    client.InvalidSecurityException,
+    client.KMSAccessDeniedException,
+    client.KMSDisabledException,
+    client.KMSInvalidStateException,
+    client.KMSNotFoundException,
+    client.KMSOptInRequired,
+    client.KMSThrottlingException,
+    client.NotFoundException,
+    client.OptedOutException,
+    client.PlatformApplicationDisabledException,
+    client.ResourceNotFoundException,
+    client.StaleTagException,
+    client.SubscriptionLimitExceededException,
+    client.TagLimitExceededException,
+    client.TagPolicyException,
+    client.ThrottledException,
+    client.TooManyEntriesInBatchRequestException,
+    client.TopicLimitExceededException,
+    client.UserErrorException,
+    client.ValidationException,
+    client.VerificationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sns.client import Exceptions
 
 def handle_error(exc: Exceptions.AuthorizationErrorException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AuthorizationErrorException`
-- `Exceptions.BatchEntryIdsNotDistinctException`
-- `Exceptions.BatchRequestTooLongException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentAccessException`
-- `Exceptions.EmptyBatchRequestException`
-- `Exceptions.EndpointDisabledException`
-- `Exceptions.FilterPolicyLimitExceededException`
-- `Exceptions.InternalErrorException`
-- `Exceptions.InvalidBatchEntryIdException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.InvalidSecurityException`
-- `Exceptions.KMSAccessDeniedException`
-- `Exceptions.KMSDisabledException`
-- `Exceptions.KMSInvalidStateException`
-- `Exceptions.KMSNotFoundException`
-- `Exceptions.KMSOptInRequired`
-- `Exceptions.KMSThrottlingException`
-- `Exceptions.NotFoundException`
-- `Exceptions.OptedOutException`
-- `Exceptions.PlatformApplicationDisabledException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.StaleTagException`
-- `Exceptions.SubscriptionLimitExceededException`
-- `Exceptions.TagLimitExceededException`
-- `Exceptions.TagPolicyException`
-- `Exceptions.ThrottledException`
-- `Exceptions.TooManyEntriesInBatchRequestException`
-- `Exceptions.TopicLimitExceededException`
-- `Exceptions.UserErrorException`
-- `Exceptions.ValidationException`
-- `Exceptions.VerificationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SNSClient exceptions.
-
-Type annotations for `boto3.client("sns").exceptions` method.
-
-Boto3 documentation:
-[SNS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_permission"></a>
-
-### add_permission
+### add\_permission
 
 Adds a statement to a topic's access control policy, granting access for the
 specified Amazon Web Services accounts to the specified actions.
 
-Type annotations for `boto3.client("sns").add_permission` method.
+Type annotations and code completion for `#!python boto3.client("sns").add_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.add_permission)
 
-Boto3 documentation:
-[SNS.Client.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.add_permission)
+```python title="Method definition"
+def add_permission(
+    self,
+    *,
+    TopicArn: str,
+    Label: str,
+    AWSAccountId: Sequence[str],
+    ActionName: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddPermissionInputRequestTypeDef](./type_defs.md#addpermissioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `TopicArn`: `str` *(required)*
-- `Label`: `str` *(required)*
-- `AWSAccountId`: `Sequence`\[`str`\] *(required)*
-- `ActionName`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddPermissionInputRequestTypeDef = {  # (1)
+    "TopicArn": ...,
+    "Label": ...,
+    "AWSAccountId": ...,
+    "ActionName": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.add_permission(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AddPermissionInputRequestTypeDef](./type_defs.md#addpermissioninputrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sns").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("sns").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.can_paginate)
 
-Boto3 documentation:
-[SNS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="check\_if\_phone\_number\_is\_opted\_out"></a>
-
-### check_if_phone_number_is_opted_out
+### check\_if\_phone\_number\_is\_opted\_out
 
 Accepts a phone number and indicates whether the phone holder has opted out of
 receiving SMS messages from your Amazon Web Services account.
 
-Type annotations for `boto3.client("sns").check_if_phone_number_is_opted_out`
-method.
+Type annotations and code completion for `#!python boto3.client("sns").check_if_phone_number_is_opted_out` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out)
 
-Boto3 documentation:
-[SNS.Client.check_if_phone_number_is_opted_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.check_if_phone_number_is_opted_out)
+```python title="Method definition"
+def check_if_phone_number_is_opted_out(
+    self,
+    *,
+    phoneNumber: str,
+) -> CheckIfPhoneNumberIsOptedOutResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CheckIfPhoneNumberIsOptedOutInputRequestTypeDef](./type_defs.md#checkifphonenumberisoptedoutinputrequesttypedef).
+1. See [:material-code-braces: CheckIfPhoneNumberIsOptedOutResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponsetypedef) 
 
-Keyword-only arguments:
 
-- `phoneNumber`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CheckIfPhoneNumberIsOptedOutInputRequestTypeDef = {  # (1)
+    "phoneNumber": ...,
+}
 
-Returns
-[CheckIfPhoneNumberIsOptedOutResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponsetypedef).
+parent.check_if_phone_number_is_opted_out(**kwargs)
+```
 
-<a id="confirm\_subscription"></a>
+1. See [:material-code-braces: CheckIfPhoneNumberIsOptedOutInputRequestTypeDef](./type_defs.md#checkifphonenumberisoptedoutinputrequesttypedef) 
 
-### confirm_subscription
+### confirm\_subscription
 
 Verifies an endpoint owner's intent to receive messages by validating the token
 sent to the endpoint by an earlier `Subscribe` action.
 
-Type annotations for `boto3.client("sns").confirm_subscription` method.
+Type annotations and code completion for `#!python boto3.client("sns").confirm_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.confirm_subscription)
 
-Boto3 documentation:
-[SNS.Client.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.confirm_subscription)
+```python title="Method definition"
+def confirm_subscription(
+    self,
+    *,
+    TopicArn: str,
+    Token: str,
+    AuthenticateOnUnsubscribe: str = ...,
+) -> ConfirmSubscriptionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ConfirmSubscriptionInputRequestTypeDef](./type_defs.md#confirmsubscriptioninputrequesttypedef).
+1. See [:material-code-braces: ConfirmSubscriptionResponseTypeDef](./type_defs.md#confirmsubscriptionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TopicArn`: `str` *(required)*
-- `Token`: `str` *(required)*
-- `AuthenticateOnUnsubscribe`: `str`
+```python title="Usage example with kwargs"
+kwargs: ConfirmSubscriptionInputRequestTypeDef = {  # (1)
+    "TopicArn": ...,
+    "Token": ...,
+}
 
-Returns
-[ConfirmSubscriptionResponseTypeDef](./type_defs.md#confirmsubscriptionresponsetypedef).
+parent.confirm_subscription(**kwargs)
+```
 
-<a id="create\_platform\_application"></a>
+1. See [:material-code-braces: ConfirmSubscriptionInputRequestTypeDef](./type_defs.md#confirmsubscriptioninputrequesttypedef) 
 
-### create_platform_application
+### create\_platform\_application
 
-Creates a platform application object for one of the supported push
-notification services, such as APNS and GCM (Firebase Cloud Messaging), to
-which devices and mobile apps may register.
+Creates a platform application object for one of the supported push notification
+services, such as APNS and GCM (Firebase Cloud Messaging), to which devices and
+mobile apps may register.
 
-Type annotations for `boto3.client("sns").create_platform_application` method.
+Type annotations and code completion for `#!python boto3.client("sns").create_platform_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_application)
 
-Boto3 documentation:
-[SNS.Client.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_application)
+```python title="Method definition"
+def create_platform_application(
+    self,
+    *,
+    Name: str,
+    Platform: str,
+    Attributes: Mapping[str, str],
+) -> CreatePlatformApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePlatformApplicationInputRequestTypeDef](./type_defs.md#createplatformapplicationinputrequesttypedef).
+1. See [:material-code-braces: CreatePlatformApplicationResponseTypeDef](./type_defs.md#createplatformapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Platform`: `str` *(required)*
-- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreatePlatformApplicationInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Platform": ...,
+    "Attributes": ...,
+}
 
-Returns
-[CreatePlatformApplicationResponseTypeDef](./type_defs.md#createplatformapplicationresponsetypedef).
+parent.create_platform_application(**kwargs)
+```
 
-<a id="create\_platform\_endpoint"></a>
+1. See [:material-code-braces: CreatePlatformApplicationInputRequestTypeDef](./type_defs.md#createplatformapplicationinputrequesttypedef) 
 
-### create_platform_endpoint
+### create\_platform\_endpoint
 
 Creates an endpoint for a device and mobile app on one of the supported push
 notification services, such as GCM (Firebase Cloud Messaging) and APNS.
 
-Type annotations for `boto3.client("sns").create_platform_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("sns").create_platform_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_endpoint)
 
-Boto3 documentation:
-[SNS.Client.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_platform_endpoint)
+```python title="Method definition"
+def create_platform_endpoint(
+    self,
+    *,
+    PlatformApplicationArn: str,
+    Token: str,
+    CustomUserData: str = ...,
+    Attributes: Mapping[str, str] = ...,
+) -> CreateEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePlatformEndpointInputRequestTypeDef](./type_defs.md#createplatformendpointinputrequesttypedef).
+1. See [:material-code-braces: CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PlatformApplicationArn`: `str` *(required)*
-- `Token`: `str` *(required)*
-- `CustomUserData`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreatePlatformEndpointInputRequestTypeDef = {  # (1)
+    "PlatformApplicationArn": ...,
+    "Token": ...,
+}
 
-Returns
-[CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
+parent.create_platform_endpoint(**kwargs)
+```
 
-<a id="create\_sms\_sandbox\_phone\_number"></a>
+1. See [:material-code-braces: CreatePlatformEndpointInputRequestTypeDef](./type_defs.md#createplatformendpointinputrequesttypedef) 
 
-### create_sms_sandbox_phone_number
+### create\_sms\_sandbox\_phone\_number
 
 Adds a destination phone number to an Amazon Web Services account in the SMS
 sandbox and sends a one-time password (OTP) to that phone number.
 
-Type annotations for `boto3.client("sns").create_sms_sandbox_phone_number`
-method.
+Type annotations and code completion for `#!python boto3.client("sns").create_sms_sandbox_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_sms_sandbox_phone_number)
 
-Boto3 documentation:
-[SNS.Client.create_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_sms_sandbox_phone_number)
+```python title="Method definition"
+def create_sms_sandbox_phone_number(
+    self,
+    *,
+    PhoneNumber: str,
+    LanguageCode: LanguageCodeStringType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateSMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#createsmssandboxphonenumberinputrequesttypedef).
+1. See [:material-code-brackets: LanguageCodeStringType](./literals.md#languagecodestringtype) 
 
-Keyword-only arguments:
 
-- `PhoneNumber`: `str` *(required)*
-- `LanguageCode`:
-  [LanguageCodeStringType](./literals.md#languagecodestringtype)
+```python title="Usage example with kwargs"
+kwargs: CreateSMSSandboxPhoneNumberInputRequestTypeDef = {  # (1)
+    "PhoneNumber": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_sms_sandbox_phone_number(**kwargs)
+```
 
-<a id="create\_topic"></a>
+1. See [:material-code-braces: CreateSMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#createsmssandboxphonenumberinputrequesttypedef) 
 
-### create_topic
+### create\_topic
 
 Creates a topic to which notifications can be published.
 
-Type annotations for `boto3.client("sns").create_topic` method.
+Type annotations and code completion for `#!python boto3.client("sns").create_topic` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_topic)
 
-Boto3 documentation:
-[SNS.Client.create_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.create_topic)
+```python title="Method definition"
+def create_topic(
+    self,
+    *,
+    Name: str,
+    Attributes: Mapping[str, str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateTopicResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateTopicInputRequestTypeDef](./type_defs.md#createtopicinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateTopicResponseTypeDef](./type_defs.md#createtopicresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateTopicInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateTopicResponseTypeDef](./type_defs.md#createtopicresponsetypedef).
+parent.create_topic(**kwargs)
+```
 
-<a id="delete\_endpoint"></a>
+1. See [:material-code-braces: CreateTopicInputRequestTypeDef](./type_defs.md#createtopicinputrequesttypedef) 
 
-### delete_endpoint
+### delete\_endpoint
 
 Deletes the endpoint for a device and mobile app from Amazon SNS.
 
-Type annotations for `boto3.client("sns").delete_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("sns").delete_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_endpoint)
 
-Boto3 documentation:
-[SNS.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_endpoint)
+```python title="Method definition"
+def delete_endpoint(
+    self,
+    *,
+    EndpointArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEndpointInputRequestTypeDef](./type_defs.md#deleteendpointinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `EndpointArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEndpointInputRequestTypeDef = {  # (1)
+    "EndpointArn": ...,
+}
 
-<a id="delete\_platform\_application"></a>
+parent.delete_endpoint(**kwargs)
+```
 
-### delete_platform_application
+1. See [:material-code-braces: DeleteEndpointInputRequestTypeDef](./type_defs.md#deleteendpointinputrequesttypedef) 
 
-Deletes a platform application object for one of the supported push
-notification services, such as APNS and GCM (Firebase Cloud Messaging).
+### delete\_platform\_application
 
-Type annotations for `boto3.client("sns").delete_platform_application` method.
+Deletes a platform application object for one of the supported push notification
+services, such as APNS and GCM (Firebase Cloud Messaging).
 
-Boto3 documentation:
-[SNS.Client.delete_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_platform_application)
+Type annotations and code completion for `#!python boto3.client("sns").delete_platform_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_platform_application)
 
-Arguments mapping described in
-[DeletePlatformApplicationInputRequestTypeDef](./type_defs.md#deleteplatformapplicationinputrequesttypedef).
+```python title="Method definition"
+def delete_platform_application(
+    self,
+    *,
+    PlatformApplicationArn: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `PlatformApplicationArn`: `str` *(required)*
 
-<a id="delete\_sms\_sandbox\_phone\_number"></a>
+```python title="Usage example with kwargs"
+kwargs: DeletePlatformApplicationInputRequestTypeDef = {  # (1)
+    "PlatformApplicationArn": ...,
+}
 
-### delete_sms_sandbox_phone_number
+parent.delete_platform_application(**kwargs)
+```
+
+1. See [:material-code-braces: DeletePlatformApplicationInputRequestTypeDef](./type_defs.md#deleteplatformapplicationinputrequesttypedef) 
+
+### delete\_sms\_sandbox\_phone\_number
 
 Deletes an Amazon Web Services account's verified or pending phone number from
 the SMS sandbox.
 
-Type annotations for `boto3.client("sns").delete_sms_sandbox_phone_number`
-method.
+Type annotations and code completion for `#!python boto3.client("sns").delete_sms_sandbox_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_sms_sandbox_phone_number)
 
-Boto3 documentation:
-[SNS.Client.delete_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_sms_sandbox_phone_number)
+```python title="Method definition"
+def delete_sms_sandbox_phone_number(
+    self,
+    *,
+    PhoneNumber: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#deletesmssandboxphonenumberinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `PhoneNumber`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSMSSandboxPhoneNumberInputRequestTypeDef = {  # (1)
+    "PhoneNumber": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_sms_sandbox_phone_number(**kwargs)
+```
 
-<a id="delete\_topic"></a>
+1. See [:material-code-braces: DeleteSMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#deletesmssandboxphonenumberinputrequesttypedef) 
 
-### delete_topic
+### delete\_topic
 
 Deletes a topic and all its subscriptions.
 
-Type annotations for `boto3.client("sns").delete_topic` method.
+Type annotations and code completion for `#!python boto3.client("sns").delete_topic` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_topic)
 
-Boto3 documentation:
-[SNS.Client.delete_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.delete_topic)
+```python title="Method definition"
+def delete_topic(
+    self,
+    *,
+    TopicArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTopicInputRequestTypeDef](./type_defs.md#deletetopicinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `TopicArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTopicInputRequestTypeDef = {  # (1)
+    "TopicArn": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_topic(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteTopicInputRequestTypeDef](./type_defs.md#deletetopicinputrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("sns").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sns").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SNS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_endpoint\_attributes"></a>
-
-### get_endpoint_attributes
+### get\_endpoint\_attributes
 
 Retrieves the endpoint attributes for a device on one of the supported push
 notification services, such as GCM (Firebase Cloud Messaging) and APNS.
 
-Type annotations for `boto3.client("sns").get_endpoint_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sns").get_endpoint_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_endpoint_attributes)
 
-Boto3 documentation:
-[SNS.Client.get_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_endpoint_attributes)
+```python title="Method definition"
+def get_endpoint_attributes(
+    self,
+    *,
+    EndpointArn: str,
+) -> GetEndpointAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEndpointAttributesInputRequestTypeDef](./type_defs.md#getendpointattributesinputrequesttypedef).
+1. See [:material-code-braces: GetEndpointAttributesResponseTypeDef](./type_defs.md#getendpointattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEndpointAttributesInputRequestTypeDef = {  # (1)
+    "EndpointArn": ...,
+}
 
-Returns
-[GetEndpointAttributesResponseTypeDef](./type_defs.md#getendpointattributesresponsetypedef).
+parent.get_endpoint_attributes(**kwargs)
+```
 
-<a id="get\_platform\_application\_attributes"></a>
+1. See [:material-code-braces: GetEndpointAttributesInputRequestTypeDef](./type_defs.md#getendpointattributesinputrequesttypedef) 
 
-### get_platform_application_attributes
+### get\_platform\_application\_attributes
 
 Retrieves the attributes of the platform application object for the supported
 push notification services, such as APNS and GCM (Firebase Cloud Messaging).
 
-Type annotations for `boto3.client("sns").get_platform_application_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("sns").get_platform_application_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_platform_application_attributes)
 
-Boto3 documentation:
-[SNS.Client.get_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_platform_application_attributes)
+```python title="Method definition"
+def get_platform_application_attributes(
+    self,
+    *,
+    PlatformApplicationArn: str,
+) -> GetPlatformApplicationAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPlatformApplicationAttributesInputRequestTypeDef](./type_defs.md#getplatformapplicationattributesinputrequesttypedef).
+1. See [:material-code-braces: GetPlatformApplicationAttributesResponseTypeDef](./type_defs.md#getplatformapplicationattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PlatformApplicationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPlatformApplicationAttributesInputRequestTypeDef = {  # (1)
+    "PlatformApplicationArn": ...,
+}
 
-Returns
-[GetPlatformApplicationAttributesResponseTypeDef](./type_defs.md#getplatformapplicationattributesresponsetypedef).
+parent.get_platform_application_attributes(**kwargs)
+```
 
-<a id="get\_sms\_attributes"></a>
+1. See [:material-code-braces: GetPlatformApplicationAttributesInputRequestTypeDef](./type_defs.md#getplatformapplicationattributesinputrequesttypedef) 
 
-### get_sms_attributes
+### get\_sms\_attributes
 
 Returns the settings for sending SMS messages from your Amazon Web Services
 account.
 
-Type annotations for `boto3.client("sns").get_sms_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sns").get_sms_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_attributes)
 
-Boto3 documentation:
-[SNS.Client.get_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_attributes)
+```python title="Method definition"
+def get_sms_attributes(
+    self,
+    *,
+    attributes: Sequence[str] = ...,
+) -> GetSMSAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSMSAttributesInputRequestTypeDef](./type_defs.md#getsmsattributesinputrequesttypedef).
+1. See [:material-code-braces: GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `attributes`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetSMSAttributesInputRequestTypeDef = {  # (1)
+    "attributes": ...,
+}
 
-Returns
-[GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef).
+parent.get_sms_attributes(**kwargs)
+```
 
-<a id="get\_sms\_sandbox\_account\_status"></a>
+1. See [:material-code-braces: GetSMSAttributesInputRequestTypeDef](./type_defs.md#getsmsattributesinputrequesttypedef) 
 
-### get_sms_sandbox_account_status
+### get\_sms\_sandbox\_account\_status
 
 Retrieves the SMS sandbox status for the calling Amazon Web Services account in
 the target Amazon Web Services Region.
 
-Type annotations for `boto3.client("sns").get_sms_sandbox_account_status`
-method.
+Type annotations and code completion for `#!python boto3.client("sns").get_sms_sandbox_account_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_sandbox_account_status)
 
-Boto3 documentation:
-[SNS.Client.get_sms_sandbox_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_sms_sandbox_account_status)
+```python title="Method definition"
+def get_sms_sandbox_account_status(
+    self,
+) -> GetSMSSandboxAccountStatusResultTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetSMSSandboxAccountStatusResultTypeDef](./type_defs.md#getsmssandboxaccountstatusresulttypedef).
+1. See [:material-code-braces: GetSMSSandboxAccountStatusResultTypeDef](./type_defs.md#getsmssandboxaccountstatusresulttypedef) 
 
-<a id="get\_subscription\_attributes"></a>
-
-### get_subscription_attributes
+### get\_subscription\_attributes
 
 Returns all of the properties of a subscription.
 
-Type annotations for `boto3.client("sns").get_subscription_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sns").get_subscription_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_subscription_attributes)
 
-Boto3 documentation:
-[SNS.Client.get_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_subscription_attributes)
+```python title="Method definition"
+def get_subscription_attributes(
+    self,
+    *,
+    SubscriptionArn: str,
+) -> GetSubscriptionAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSubscriptionAttributesInputRequestTypeDef](./type_defs.md#getsubscriptionattributesinputrequesttypedef).
+1. See [:material-code-braces: GetSubscriptionAttributesResponseTypeDef](./type_defs.md#getsubscriptionattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSubscriptionAttributesInputRequestTypeDef = {  # (1)
+    "SubscriptionArn": ...,
+}
 
-Returns
-[GetSubscriptionAttributesResponseTypeDef](./type_defs.md#getsubscriptionattributesresponsetypedef).
+parent.get_subscription_attributes(**kwargs)
+```
 
-<a id="get\_topic\_attributes"></a>
+1. See [:material-code-braces: GetSubscriptionAttributesInputRequestTypeDef](./type_defs.md#getsubscriptionattributesinputrequesttypedef) 
 
-### get_topic_attributes
+### get\_topic\_attributes
 
 Returns all of the properties of a topic.
 
-Type annotations for `boto3.client("sns").get_topic_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sns").get_topic_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_topic_attributes)
 
-Boto3 documentation:
-[SNS.Client.get_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.get_topic_attributes)
+```python title="Method definition"
+def get_topic_attributes(
+    self,
+    *,
+    TopicArn: str,
+) -> GetTopicAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTopicAttributesInputRequestTypeDef](./type_defs.md#gettopicattributesinputrequesttypedef).
+1. See [:material-code-braces: GetTopicAttributesResponseTypeDef](./type_defs.md#gettopicattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TopicArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTopicAttributesInputRequestTypeDef = {  # (1)
+    "TopicArn": ...,
+}
 
-Returns
-[GetTopicAttributesResponseTypeDef](./type_defs.md#gettopicattributesresponsetypedef).
+parent.get_topic_attributes(**kwargs)
+```
 
-<a id="list\_endpoints\_by\_platform\_application"></a>
+1. See [:material-code-braces: GetTopicAttributesInputRequestTypeDef](./type_defs.md#gettopicattributesinputrequesttypedef) 
 
-### list_endpoints_by_platform_application
+### list\_endpoints\_by\_platform\_application
 
 Lists the endpoints and endpoint attributes for devices in a supported push
 notification service, such as GCM (Firebase Cloud Messaging) and APNS.
 
-Type annotations for
-`boto3.client("sns").list_endpoints_by_platform_application` method.
+Type annotations and code completion for `#!python boto3.client("sns").list_endpoints_by_platform_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application)
 
-Boto3 documentation:
-[SNS.Client.list_endpoints_by_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_endpoints_by_platform_application)
+```python title="Method definition"
+def list_endpoints_by_platform_application(
+    self,
+    *,
+    PlatformApplicationArn: str,
+    NextToken: str = ...,
+) -> ListEndpointsByPlatformApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEndpointsByPlatformApplicationInputRequestTypeDef](./type_defs.md#listendpointsbyplatformapplicationinputrequesttypedef).
+1. See [:material-code-braces: ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PlatformApplicationArn`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEndpointsByPlatformApplicationInputRequestTypeDef = {  # (1)
+    "PlatformApplicationArn": ...,
+}
 
-Returns
-[ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef).
+parent.list_endpoints_by_platform_application(**kwargs)
+```
 
-<a id="list\_origination\_numbers"></a>
+1. See [:material-code-braces: ListEndpointsByPlatformApplicationInputRequestTypeDef](./type_defs.md#listendpointsbyplatformapplicationinputrequesttypedef) 
 
-### list_origination_numbers
+### list\_origination\_numbers
 
 Lists the calling Amazon Web Services account's dedicated origination numbers
 and their metadata.
 
-Type annotations for `boto3.client("sns").list_origination_numbers` method.
+Type annotations and code completion for `#!python boto3.client("sns").list_origination_numbers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_origination_numbers)
 
-Boto3 documentation:
-[SNS.Client.list_origination_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_origination_numbers)
+```python title="Method definition"
+def list_origination_numbers(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListOriginationNumbersResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOriginationNumbersRequestRequestTypeDef](./type_defs.md#listoriginationnumbersrequestrequesttypedef).
+1. See [:material-code-braces: ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListOriginationNumbersRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef).
+parent.list_origination_numbers(**kwargs)
+```
 
-<a id="list\_phone\_numbers\_opted\_out"></a>
+1. See [:material-code-braces: ListOriginationNumbersRequestRequestTypeDef](./type_defs.md#listoriginationnumbersrequestrequesttypedef) 
 
-### list_phone_numbers_opted_out
+### list\_phone\_numbers\_opted\_out
 
 Returns a list of phone numbers that are opted out, meaning you cannot send SMS
 messages to them.
 
-Type annotations for `boto3.client("sns").list_phone_numbers_opted_out` method.
+Type annotations and code completion for `#!python boto3.client("sns").list_phone_numbers_opted_out` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out)
 
-Boto3 documentation:
-[SNS.Client.list_phone_numbers_opted_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_phone_numbers_opted_out)
+```python title="Method definition"
+def list_phone_numbers_opted_out(
+    self,
+    *,
+    nextToken: str = ...,
+) -> ListPhoneNumbersOptedOutResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPhoneNumbersOptedOutInputRequestTypeDef](./type_defs.md#listphonenumbersoptedoutinputrequesttypedef).
+1. See [:material-code-braces: ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPhoneNumbersOptedOutInputRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef).
+parent.list_phone_numbers_opted_out(**kwargs)
+```
 
-<a id="list\_platform\_applications"></a>
+1. See [:material-code-braces: ListPhoneNumbersOptedOutInputRequestTypeDef](./type_defs.md#listphonenumbersoptedoutinputrequesttypedef) 
 
-### list_platform_applications
+### list\_platform\_applications
 
 Lists the platform application objects for the supported push notification
 services, such as APNS and GCM (Firebase Cloud Messaging).
 
-Type annotations for `boto3.client("sns").list_platform_applications` method.
+Type annotations and code completion for `#!python boto3.client("sns").list_platform_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_platform_applications)
 
-Boto3 documentation:
-[SNS.Client.list_platform_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_platform_applications)
+```python title="Method definition"
+def list_platform_applications(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListPlatformApplicationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPlatformApplicationsInputRequestTypeDef](./type_defs.md#listplatformapplicationsinputrequesttypedef).
+1. See [:material-code-braces: ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPlatformApplicationsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef).
+parent.list_platform_applications(**kwargs)
+```
 
-<a id="list\_sms\_sandbox\_phone\_numbers"></a>
+1. See [:material-code-braces: ListPlatformApplicationsInputRequestTypeDef](./type_defs.md#listplatformapplicationsinputrequesttypedef) 
 
-### list_sms_sandbox_phone_numbers
+### list\_sms\_sandbox\_phone\_numbers
 
 Lists the calling Amazon Web Services account's current verified and pending
 destination phone numbers in the SMS sandbox.
 
-Type annotations for `boto3.client("sns").list_sms_sandbox_phone_numbers`
-method.
+Type annotations and code completion for `#!python boto3.client("sns").list_sms_sandbox_phone_numbers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_sms_sandbox_phone_numbers)
 
-Boto3 documentation:
-[SNS.Client.list_sms_sandbox_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_sms_sandbox_phone_numbers)
+```python title="Method definition"
+def list_sms_sandbox_phone_numbers(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListSMSSandboxPhoneNumbersResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSMSSandboxPhoneNumbersInputRequestTypeDef](./type_defs.md#listsmssandboxphonenumbersinputrequesttypedef).
+1. See [:material-code-braces: ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSMSSandboxPhoneNumbersInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef).
+parent.list_sms_sandbox_phone_numbers(**kwargs)
+```
 
-<a id="list\_subscriptions"></a>
+1. See [:material-code-braces: ListSMSSandboxPhoneNumbersInputRequestTypeDef](./type_defs.md#listsmssandboxphonenumbersinputrequesttypedef) 
 
-### list_subscriptions
+### list\_subscriptions
 
 Returns a list of the requester's subscriptions.
 
-Type annotations for `boto3.client("sns").list_subscriptions` method.
+Type annotations and code completion for `#!python boto3.client("sns").list_subscriptions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions)
 
-Boto3 documentation:
-[SNS.Client.list_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions)
+```python title="Method definition"
+def list_subscriptions(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListSubscriptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSubscriptionsInputRequestTypeDef](./type_defs.md#listsubscriptionsinputrequesttypedef).
+1. See [:material-code-braces: ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSubscriptionsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef).
+parent.list_subscriptions(**kwargs)
+```
 
-<a id="list\_subscriptions\_by\_topic"></a>
+1. See [:material-code-braces: ListSubscriptionsInputRequestTypeDef](./type_defs.md#listsubscriptionsinputrequesttypedef) 
 
-### list_subscriptions_by_topic
+### list\_subscriptions\_by\_topic
 
 Returns a list of the subscriptions to a specific topic.
 
-Type annotations for `boto3.client("sns").list_subscriptions_by_topic` method.
+Type annotations and code completion for `#!python boto3.client("sns").list_subscriptions_by_topic` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic)
 
-Boto3 documentation:
-[SNS.Client.list_subscriptions_by_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_subscriptions_by_topic)
+```python title="Method definition"
+def list_subscriptions_by_topic(
+    self,
+    *,
+    TopicArn: str,
+    NextToken: str = ...,
+) -> ListSubscriptionsByTopicResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSubscriptionsByTopicInputRequestTypeDef](./type_defs.md#listsubscriptionsbytopicinputrequesttypedef).
+1. See [:material-code-braces: ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TopicArn`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSubscriptionsByTopicInputRequestTypeDef = {  # (1)
+    "TopicArn": ...,
+}
 
-Returns
-[ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef).
+parent.list_subscriptions_by_topic(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSubscriptionsByTopicInputRequestTypeDef](./type_defs.md#listsubscriptionsbytopicinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List all tags added to the specified Amazon SNS topic.
 
-Type annotations for `boto3.client("sns").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("sns").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[SNS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_topics"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_topics
+### list\_topics
 
 Returns a list of the requester's topics.
 
-Type annotations for `boto3.client("sns").list_topics` method.
+Type annotations and code completion for `#!python boto3.client("sns").list_topics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_topics)
 
-Boto3 documentation:
-[SNS.Client.list_topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.list_topics)
+```python title="Method definition"
+def list_topics(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListTopicsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTopicsInputRequestTypeDef](./type_defs.md#listtopicsinputrequesttypedef).
+1. See [:material-code-braces: ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTopicsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef).
+parent.list_topics(**kwargs)
+```
 
-<a id="opt\_in\_phone\_number"></a>
+1. See [:material-code-braces: ListTopicsInputRequestTypeDef](./type_defs.md#listtopicsinputrequesttypedef) 
 
-### opt_in_phone_number
+### opt\_in\_phone\_number
 
 Use this request to opt in a phone number that is opted out, which enables you
 to resume sending SMS messages to the number.
 
-Type annotations for `boto3.client("sns").opt_in_phone_number` method.
+Type annotations and code completion for `#!python boto3.client("sns").opt_in_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.opt_in_phone_number)
 
-Boto3 documentation:
-[SNS.Client.opt_in_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.opt_in_phone_number)
+```python title="Method definition"
+def opt_in_phone_number(
+    self,
+    *,
+    phoneNumber: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[OptInPhoneNumberInputRequestTypeDef](./type_defs.md#optinphonenumberinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `phoneNumber`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: OptInPhoneNumberInputRequestTypeDef = {  # (1)
+    "phoneNumber": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.opt_in_phone_number(**kwargs)
+```
 
-<a id="publish"></a>
+1. See [:material-code-braces: OptInPhoneNumberInputRequestTypeDef](./type_defs.md#optinphonenumberinputrequesttypedef) 
 
 ### publish
 
-Sends a message to an Amazon SNS topic, a text message (SMS message) directly
-to a phone number, or a message to a mobile platform endpoint (when you specify
-the `TargetArn` ).
+Sends a message to an Amazon SNS topic, a text message (SMS message) directly to
+a phone number, or a message to a mobile platform endpoint (when you specify the
+`TargetArn` ).
 
-Type annotations for `boto3.client("sns").publish` method.
+Type annotations and code completion for `#!python boto3.client("sns").publish` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish)
 
-Boto3 documentation:
-[SNS.Client.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish)
+```python title="Method definition"
+def publish(
+    self,
+    *,
+    Message: str,
+    TopicArn: str = ...,
+    TargetArn: str = ...,
+    PhoneNumber: str = ...,
+    Subject: str = ...,
+    MessageStructure: str = ...,
+    MessageAttributes: Mapping[str, MessageAttributeValueTypeDef] = ...,  # (1)
+    MessageDeduplicationId: str = ...,
+    MessageGroupId: str = ...,
+) -> PublishResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PublishInputRequestTypeDef](./type_defs.md#publishinputrequesttypedef).
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
+2. See [:material-code-braces: PublishResponseTypeDef](./type_defs.md#publishresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Message`: `str` *(required)*
-- `TopicArn`: `str`
-- `TargetArn`: `str`
-- `PhoneNumber`: `str`
-- `Subject`: `str`
-- `MessageStructure`: `str`
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageDeduplicationId`: `str`
-- `MessageGroupId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PublishInputRequestTypeDef = {  # (1)
+    "Message": ...,
+}
 
-Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
+parent.publish(**kwargs)
+```
 
-<a id="publish\_batch"></a>
+1. See [:material-code-braces: PublishInputRequestTypeDef](./type_defs.md#publishinputrequesttypedef) 
 
-### publish_batch
+### publish\_batch
 
 Publishes up to ten messages to the specified topic.
 
-Type annotations for `boto3.client("sns").publish_batch` method.
+Type annotations and code completion for `#!python boto3.client("sns").publish_batch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish_batch)
 
-Boto3 documentation:
-[SNS.Client.publish_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.publish_batch)
+```python title="Method definition"
+def publish_batch(
+    self,
+    *,
+    TopicArn: str,
+    PublishBatchRequestEntries: Sequence[PublishBatchRequestEntryTypeDef],  # (1)
+) -> PublishBatchResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PublishBatchInputRequestTypeDef](./type_defs.md#publishbatchinputrequesttypedef).
+1. See [:material-code-braces: PublishBatchRequestEntryTypeDef](./type_defs.md#publishbatchrequestentrytypedef) 
+2. See [:material-code-braces: PublishBatchResponseTypeDef](./type_defs.md#publishbatchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TopicArn`: `str` *(required)*
-- `PublishBatchRequestEntries`:
-  `Sequence`\[[PublishBatchRequestEntryTypeDef](./type_defs.md#publishbatchrequestentrytypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PublishBatchInputRequestTypeDef = {  # (1)
+    "TopicArn": ...,
+    "PublishBatchRequestEntries": ...,
+}
 
-Returns
-[PublishBatchResponseTypeDef](./type_defs.md#publishbatchresponsetypedef).
+parent.publish_batch(**kwargs)
+```
 
-<a id="remove\_permission"></a>
+1. See [:material-code-braces: PublishBatchInputRequestTypeDef](./type_defs.md#publishbatchinputrequesttypedef) 
 
-### remove_permission
+### remove\_permission
 
 Removes a statement from a topic's access control policy.
 
-Type annotations for `boto3.client("sns").remove_permission` method.
+Type annotations and code completion for `#!python boto3.client("sns").remove_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.remove_permission)
 
-Boto3 documentation:
-[SNS.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.remove_permission)
+```python title="Method definition"
+def remove_permission(
+    self,
+    *,
+    TopicArn: str,
+    Label: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemovePermissionInputRequestTypeDef](./type_defs.md#removepermissioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `TopicArn`: `str` *(required)*
-- `Label`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemovePermissionInputRequestTypeDef = {  # (1)
+    "TopicArn": ...,
+    "Label": ...,
+}
 
-<a id="set\_endpoint\_attributes"></a>
+parent.remove_permission(**kwargs)
+```
 
-### set_endpoint_attributes
+1. See [:material-code-braces: RemovePermissionInputRequestTypeDef](./type_defs.md#removepermissioninputrequesttypedef) 
+
+### set\_endpoint\_attributes
 
 Sets the attributes for an endpoint for a device on one of the supported push
 notification services, such as GCM (Firebase Cloud Messaging) and APNS.
 
-Type annotations for `boto3.client("sns").set_endpoint_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sns").set_endpoint_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_endpoint_attributes)
 
-Boto3 documentation:
-[SNS.Client.set_endpoint_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_endpoint_attributes)
+```python title="Method definition"
+def set_endpoint_attributes(
+    self,
+    *,
+    EndpointArn: str,
+    Attributes: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetEndpointAttributesInputRequestTypeDef](./type_defs.md#setendpointattributesinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `EndpointArn`: `str` *(required)*
-- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetEndpointAttributesInputRequestTypeDef = {  # (1)
+    "EndpointArn": ...,
+    "Attributes": ...,
+}
 
-<a id="set\_platform\_application\_attributes"></a>
+parent.set_endpoint_attributes(**kwargs)
+```
 
-### set_platform_application_attributes
+1. See [:material-code-braces: SetEndpointAttributesInputRequestTypeDef](./type_defs.md#setendpointattributesinputrequesttypedef) 
+
+### set\_platform\_application\_attributes
 
 Sets the attributes of the platform application object for the supported push
 notification services, such as APNS and GCM (Firebase Cloud Messaging).
 
-Type annotations for `boto3.client("sns").set_platform_application_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("sns").set_platform_application_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_platform_application_attributes)
 
-Boto3 documentation:
-[SNS.Client.set_platform_application_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_platform_application_attributes)
+```python title="Method definition"
+def set_platform_application_attributes(
+    self,
+    *,
+    PlatformApplicationArn: str,
+    Attributes: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetPlatformApplicationAttributesInputRequestTypeDef](./type_defs.md#setplatformapplicationattributesinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `PlatformApplicationArn`: `str` *(required)*
-- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetPlatformApplicationAttributesInputRequestTypeDef = {  # (1)
+    "PlatformApplicationArn": ...,
+    "Attributes": ...,
+}
 
-<a id="set\_sms\_attributes"></a>
+parent.set_platform_application_attributes(**kwargs)
+```
 
-### set_sms_attributes
+1. See [:material-code-braces: SetPlatformApplicationAttributesInputRequestTypeDef](./type_defs.md#setplatformapplicationattributesinputrequesttypedef) 
+
+### set\_sms\_attributes
 
 Use this request to set the default settings for sending SMS messages and
 receiving daily SMS usage reports.
 
-Type annotations for `boto3.client("sns").set_sms_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sns").set_sms_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_sms_attributes)
 
-Boto3 documentation:
-[SNS.Client.set_sms_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_sms_attributes)
+```python title="Method definition"
+def set_sms_attributes(
+    self,
+    *,
+    attributes: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SetSMSAttributesInputRequestTypeDef](./type_defs.md#setsmsattributesinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `attributes`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetSMSAttributesInputRequestTypeDef = {  # (1)
+    "attributes": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.set_sms_attributes(**kwargs)
+```
 
-<a id="set\_subscription\_attributes"></a>
+1. See [:material-code-braces: SetSMSAttributesInputRequestTypeDef](./type_defs.md#setsmsattributesinputrequesttypedef) 
 
-### set_subscription_attributes
+### set\_subscription\_attributes
 
 Allows a subscription owner to set an attribute of the subscription to a new
 value.
 
-Type annotations for `boto3.client("sns").set_subscription_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sns").set_subscription_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_subscription_attributes)
 
-Boto3 documentation:
-[SNS.Client.set_subscription_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_subscription_attributes)
+```python title="Method definition"
+def set_subscription_attributes(
+    self,
+    *,
+    SubscriptionArn: str,
+    AttributeName: str,
+    AttributeValue: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetSubscriptionAttributesInputRequestTypeDef](./type_defs.md#setsubscriptionattributesinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `SubscriptionArn`: `str` *(required)*
-- `AttributeName`: `str` *(required)*
-- `AttributeValue`: `str`
+```python title="Usage example with kwargs"
+kwargs: SetSubscriptionAttributesInputRequestTypeDef = {  # (1)
+    "SubscriptionArn": ...,
+    "AttributeName": ...,
+}
 
-<a id="set\_topic\_attributes"></a>
+parent.set_subscription_attributes(**kwargs)
+```
 
-### set_topic_attributes
+1. See [:material-code-braces: SetSubscriptionAttributesInputRequestTypeDef](./type_defs.md#setsubscriptionattributesinputrequesttypedef) 
+
+### set\_topic\_attributes
 
 Allows a topic owner to set an attribute of the topic to a new value.
 
-Type annotations for `boto3.client("sns").set_topic_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sns").set_topic_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_topic_attributes)
 
-Boto3 documentation:
-[SNS.Client.set_topic_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.set_topic_attributes)
+```python title="Method definition"
+def set_topic_attributes(
+    self,
+    *,
+    TopicArn: str,
+    AttributeName: str,
+    AttributeValue: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetTopicAttributesInputRequestTypeDef](./type_defs.md#settopicattributesinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `TopicArn`: `str` *(required)*
-- `AttributeName`: `str` *(required)*
-- `AttributeValue`: `str`
+```python title="Usage example with kwargs"
+kwargs: SetTopicAttributesInputRequestTypeDef = {  # (1)
+    "TopicArn": ...,
+    "AttributeName": ...,
+}
 
-<a id="subscribe"></a>
+parent.set_topic_attributes(**kwargs)
+```
+
+1. See [:material-code-braces: SetTopicAttributesInputRequestTypeDef](./type_defs.md#settopicattributesinputrequesttypedef) 
 
 ### subscribe
 
 Subscribes an endpoint to an Amazon SNS topic.
 
-Type annotations for `boto3.client("sns").subscribe` method.
+Type annotations and code completion for `#!python boto3.client("sns").subscribe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.subscribe)
 
-Boto3 documentation:
-[SNS.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.subscribe)
+```python title="Method definition"
+def subscribe(
+    self,
+    *,
+    TopicArn: str,
+    Protocol: str,
+    Endpoint: str = ...,
+    Attributes: Mapping[str, str] = ...,
+    ReturnSubscriptionArn: bool = ...,
+) -> SubscribeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SubscribeInputRequestTypeDef](./type_defs.md#subscribeinputrequesttypedef).
+1. See [:material-code-braces: SubscribeResponseTypeDef](./type_defs.md#subscriberesponsetypedef) 
 
-Keyword-only arguments:
 
-- `TopicArn`: `str` *(required)*
-- `Protocol`: `str` *(required)*
-- `Endpoint`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `ReturnSubscriptionArn`: `bool`
+```python title="Usage example with kwargs"
+kwargs: SubscribeInputRequestTypeDef = {  # (1)
+    "TopicArn": ...,
+    "Protocol": ...,
+}
 
-Returns [SubscribeResponseTypeDef](./type_defs.md#subscriberesponsetypedef).
+parent.subscribe(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SubscribeInputRequestTypeDef](./type_defs.md#subscribeinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Add tags to the specified Amazon SNS topic.
 
-Type annotations for `boto3.client("sns").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("sns").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.tag_resource)
 
-Boto3 documentation:
-[SNS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="unsubscribe"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
 ### unsubscribe
 
 Deletes a subscription.
 
-Type annotations for `boto3.client("sns").unsubscribe` method.
+Type annotations and code completion for `#!python boto3.client("sns").unsubscribe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.unsubscribe)
 
-Boto3 documentation:
-[SNS.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.unsubscribe)
+```python title="Method definition"
+def unsubscribe(
+    self,
+    *,
+    SubscriptionArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UnsubscribeInputRequestTypeDef](./type_defs.md#unsubscribeinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `SubscriptionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnsubscribeInputRequestTypeDef = {  # (1)
+    "SubscriptionArn": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.unsubscribe(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: UnsubscribeInputRequestTypeDef](./type_defs.md#unsubscribeinputrequesttypedef) 
+
+### untag\_resource
 
 Remove tags from the specified Amazon SNS topic.
 
-Type annotations for `boto3.client("sns").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("sns").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.untag_resource)
 
-Boto3 documentation:
-[SNS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="verify\_sms\_sandbox\_phone\_number"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### verify_sms_sandbox_phone_number
+### verify\_sms\_sandbox\_phone\_number
 
 Verifies a destination phone number with a one-time password (OTP) for the
 calling Amazon Web Services account.
 
-Type annotations for `boto3.client("sns").verify_sms_sandbox_phone_number`
-method.
+Type annotations and code completion for `#!python boto3.client("sns").verify_sms_sandbox_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.verify_sms_sandbox_phone_number)
 
-Boto3 documentation:
-[SNS.Client.verify_sms_sandbox_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.verify_sms_sandbox_phone_number)
+```python title="Method definition"
+def verify_sms_sandbox_phone_number(
+    self,
+    *,
+    PhoneNumber: str,
+    OneTimePassword: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[VerifySMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#verifysmssandboxphonenumberinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `PhoneNumber`: `str` *(required)*
-- `OneTimePassword`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: VerifySMSSandboxPhoneNumberInputRequestTypeDef = {  # (1)
+    "PhoneNumber": ...,
+    "OneTimePassword": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.verify_sms_sandbox_phone_number(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: VerifySMSSandboxPhoneNumberInputRequestTypeDef](./type_defs.md#verifysmssandboxphonenumberinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("sns").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("sns").get_paginator` method with overloads.
 
-- `client.get_paginator("list_endpoints_by_platform_application")` ->
-  [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
-- `client.get_paginator("list_origination_numbers")` ->
-  [ListOriginationNumbersPaginator](./paginators.md#listoriginationnumberspaginator)
-- `client.get_paginator("list_phone_numbers_opted_out")` ->
-  [ListPhoneNumbersOptedOutPaginator](./paginators.md#listphonenumbersoptedoutpaginator)
-- `client.get_paginator("list_platform_applications")` ->
-  [ListPlatformApplicationsPaginator](./paginators.md#listplatformapplicationspaginator)
-- `client.get_paginator("list_sms_sandbox_phone_numbers")` ->
-  [ListSMSSandboxPhoneNumbersPaginator](./paginators.md#listsmssandboxphonenumberspaginator)
-- `client.get_paginator("list_subscriptions")` ->
-  [ListSubscriptionsPaginator](./paginators.md#listsubscriptionspaginator)
-- `client.get_paginator("list_subscriptions_by_topic")` ->
-  [ListSubscriptionsByTopicPaginator](./paginators.md#listsubscriptionsbytopicpaginator)
-- `client.get_paginator("list_topics")` ->
-  [ListTopicsPaginator](./paginators.md#listtopicspaginator)
+- `client.get_paginator("list_endpoints_by_platform_application")` -> [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
+- `client.get_paginator("list_origination_numbers")` -> [ListOriginationNumbersPaginator](./paginators.md#listoriginationnumberspaginator)
+- `client.get_paginator("list_phone_numbers_opted_out")` -> [ListPhoneNumbersOptedOutPaginator](./paginators.md#listphonenumbersoptedoutpaginator)
+- `client.get_paginator("list_platform_applications")` -> [ListPlatformApplicationsPaginator](./paginators.md#listplatformapplicationspaginator)
+- `client.get_paginator("list_sms_sandbox_phone_numbers")` -> [ListSMSSandboxPhoneNumbersPaginator](./paginators.md#listsmssandboxphonenumberspaginator)
+- `client.get_paginator("list_subscriptions")` -> [ListSubscriptionsPaginator](./paginators.md#listsubscriptionspaginator)
+- `client.get_paginator("list_subscriptions_by_topic")` -> [ListSubscriptionsByTopicPaginator](./paginators.md#listsubscriptionsbytopicpaginator)
+- `client.get_paginator("list_topics")` -> [ListTopicsPaginator](./paginators.md#listtopicspaginator)
+
+
+

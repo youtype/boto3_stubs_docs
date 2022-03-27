@@ -1,69 +1,71 @@
-<a id="examples-for-boto3-kendra-module"></a>
-
-# Examples for boto3 kendra module
+# Examples
 
 > [Index](../README.md) > [kendra](./README.md) > Examples
 
-- [Examples for boto3 kendra module](#examples-for-boto3-kendra-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
+    type annotations stubs module [mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[kendra]` package installed.
 
-Write your `kendra` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `kendra` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type kendraClient
-# and provides type checking and code completion
-client = session.client("kendra")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateEntitiesToExperienceResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_entities_to_experience()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("kendra")  # (1)
+    result = client.associate_entities_to_experience()  # (2)
+    ```
+
+    1. client: [kendraClient](./client.md)
+    2. result: [:material-code-braces: AssociateEntitiesToExperienceResponseTypeDef](./type_defs.md#associateentitiestoexperienceresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[kendra]` or a standalone `mypy_boto3_kendra` package,
-you have to explicitly specify `client: kendraClient` type annotation.
+With `boto3-stubs-lite[kendra]`
+or a standalone `mypy_boto3_kendra` package, you have to explicitly specify `client: kendraClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_kendra.client import kendraClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_kendra.client import kendraClient
+    from mypy_boto3_kendra.type_defs import AssociateEntitiesToExperienceResponseTypeDef
+    from mypy_boto3_kendra.type_defs import AssociateEntitiesToExperienceRequestRequestTypeDef
 
 
-from mypy_boto3_kendra.type_defs import AssociateEntitiesToExperienceResponseTypeDef
+    session = Session()
+
+    client: kendraClient = session.client("kendra")
+
+    kwargs: AssociateEntitiesToExperienceRequestRequestTypeDef = {...}
+    result: AssociateEntitiesToExperienceResponseTypeDef = client.associate_entities_to_experience(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: kendraClient = session.client("kendra")
 
-result: AssociateEntitiesToExperienceResponseTypeDef = client.associate_entities_to_experience()
-```
+

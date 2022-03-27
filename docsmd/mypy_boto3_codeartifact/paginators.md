@@ -1,32 +1,18 @@
-<a id="paginators-for-boto3-codeartifact-module"></a>
-
-# Paginators for boto3 CodeArtifact module
+# Paginators
 
 > [Index](../README.md) > [CodeArtifact](./README.md) > Paginators
 
-Auto-generated documentation for
-[CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
-type annotations stubs module
-[mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+!!! note ""
 
-- [Paginators for boto3 CodeArtifact module](#paginators-for-boto3-codeartifact-module)
-  - [ListDomainsPaginator](#listdomainspaginator)
-  - [ListPackageVersionAssetsPaginator](#listpackageversionassetspaginator)
-  - [ListPackageVersionsPaginator](#listpackageversionspaginator)
-  - [ListPackagesPaginator](#listpackagespaginator)
-  - [ListRepositoriesPaginator](#listrepositoriespaginator)
-  - [ListRepositoriesInDomainPaginator](#listrepositoriesindomainpaginator)
-
-<a id="listdomainspaginator"></a>
+    Auto-generated documentation for [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
+    type annotations stubs module [mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 ## ListDomainsPaginator
 
-Type annotations for
-`boto3.client("codeartifact").get_paginator("list_domains")`.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_paginator("list_domains")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListDomains)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codeartifact.paginator import ListDomainsPaginator
@@ -35,27 +21,39 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return Session().client("codeartifact").get_paginator("list_domains")
 ```
 
-Boto3 documentation:
-[CodeArtifact.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListDomains)
 
-Arguments for `ListDomainsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDomainsPaginator.paginate` method.
 
-`ListDomainsPaginator.paginate` returns
-`_PageIterator`\[[ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDomainsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpackageversionassetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDomainsRequestListDomainsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDomainsRequestListDomainsPaginateTypeDef](./type_defs.md#listdomainsrequestlistdomainspaginatetypedef) 
 ## ListPackageVersionAssetsPaginator
 
-Type annotations for
-`boto3.client("codeartifact").get_paginator("list_package_version_assets")`.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_paginator("list_package_version_assets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersionAssets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codeartifact.paginator import ListPackageVersionAssetsPaginator
@@ -64,34 +62,51 @@ def get_list_package_version_assets_paginator() -> ListPackageVersionAssetsPagin
     return Session().client("codeartifact").get_paginator("list_package_version_assets")
 ```
 
-Boto3 documentation:
-[CodeArtifact.Paginator.ListPackageVersionAssets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersionAssets)
 
-Arguments for `ListPackageVersionAssetsPaginator.paginate` method:
+### paginate
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `packageVersion`: `str` *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPackageVersionAssetsPaginator.paginate` method.
 
-`ListPackageVersionAssetsPaginator.paginate` returns
-`_PageIterator`\[[ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    packageVersion: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPackageVersionAssetsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listpackageversionspaginator"></a>
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPackageVersionAssetsRequestListPackageVersionAssetsPaginateTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+    "packageVersion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPackageVersionAssetsRequestListPackageVersionAssetsPaginateTypeDef](./type_defs.md#listpackageversionassetsrequestlistpackageversionassetspaginatetypedef) 
 ## ListPackageVersionsPaginator
 
-Type annotations for
-`boto3.client("codeartifact").get_paginator("list_package_versions")`.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_paginator("list_package_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codeartifact.paginator import ListPackageVersionsPaginator
@@ -100,36 +115,53 @@ def get_list_package_versions_paginator() -> ListPackageVersionsPaginator:
     return Session().client("codeartifact").get_paginator("list_package_versions")
 ```
 
-Boto3 documentation:
-[CodeArtifact.Paginator.ListPackageVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackageVersions)
 
-Arguments for `ListPackageVersionsPaginator.paginate` method:
+### paginate
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `format`: [PackageFormatType](./literals.md#packageformattype) *(required)*
-- `package`: `str` *(required)*
-- `domainOwner`: `str`
-- `namespace`: `str`
-- `status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
-- `sortBy`: `Literal['PUBLISHED_TIME']` (see
-  [PackageVersionSortTypeType](./literals.md#packageversionsorttypetype))
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPackageVersionsPaginator.paginate` method.
 
-`ListPackageVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    format: PackageFormatType,  # (1)
+    package: str,
+    domainOwner: str = ...,
+    namespace: str = ...,
+    status: PackageVersionStatusType = ...,  # (2)
+    sortBy: PackageVersionSortTypeType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListPackageVersionsResultTypeDef]:  # (5)
+    ...
+```
 
-<a id="listpackagespaginator"></a>
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+3. See [:material-code-brackets: PackageVersionSortTypeType](./literals.md#packageversionsorttypetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPackageVersionsRequestListPackageVersionsPaginateTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+    "format": ...,
+    "package": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPackageVersionsRequestListPackageVersionsPaginateTypeDef](./type_defs.md#listpackageversionsrequestlistpackageversionspaginatetypedef) 
 ## ListPackagesPaginator
 
-Type annotations for
-`boto3.client("codeartifact").get_paginator("list_packages")`.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_paginator("list_packages")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codeartifact.paginator import ListPackagesPaginator
@@ -138,33 +170,47 @@ def get_list_packages_paginator() -> ListPackagesPaginator:
     return Session().client("codeartifact").get_paginator("list_packages")
 ```
 
-Boto3 documentation:
-[CodeArtifact.Paginator.ListPackages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListPackages)
 
-Arguments for `ListPackagesPaginator.paginate` method:
+### paginate
 
-- `domain`: `str` *(required)*
-- `repository`: `str` *(required)*
-- `domainOwner`: `str`
-- `format`: [PackageFormatType](./literals.md#packageformattype)
-- `namespace`: `str`
-- `packagePrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPackagesPaginator.paginate` method.
 
-`ListPackagesPaginator.paginate` returns
-`_PageIterator`\[[ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    domain: str,
+    repository: str,
+    domainOwner: str = ...,
+    format: PackageFormatType = ...,  # (1)
+    namespace: str = ...,
+    packagePrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPackagesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listrepositoriespaginator"></a>
+1. See [:material-code-brackets: PackageFormatType](./literals.md#packageformattype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPackagesRequestListPackagesPaginateTypeDef = {  # (1)
+    "domain": ...,
+    "repository": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPackagesRequestListPackagesPaginateTypeDef](./type_defs.md#listpackagesrequestlistpackagespaginatetypedef) 
 ## ListRepositoriesPaginator
 
-Type annotations for
-`boto3.client("codeartifact").get_paginator("list_repositories")`.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_paginator("list_repositories")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositories)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codeartifact.paginator import ListRepositoriesPaginator
@@ -173,28 +219,40 @@ def get_list_repositories_paginator() -> ListRepositoriesPaginator:
     return Session().client("codeartifact").get_paginator("list_repositories")
 ```
 
-Boto3 documentation:
-[CodeArtifact.Paginator.ListRepositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositories)
 
-Arguments for `ListRepositoriesPaginator.paginate` method:
+### paginate
 
-- `repositoryPrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRepositoriesPaginator.paginate` method.
 
-`ListRepositoriesPaginator.paginate` returns
-`_PageIterator`\[[ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    repositoryPrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRepositoriesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrepositoriesindomainpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRepositoriesRequestListRepositoriesPaginateTypeDef = {  # (1)
+    "repositoryPrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRepositoriesRequestListRepositoriesPaginateTypeDef](./type_defs.md#listrepositoriesrequestlistrepositoriespaginatetypedef) 
 ## ListRepositoriesInDomainPaginator
 
-Type annotations for
-`boto3.client("codeartifact").get_paginator("list_repositories_in_domain")`.
+Type annotations and code completion for `#!python boto3.client("codeartifact").get_paginator("list_repositories_in_domain")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositoriesInDomain)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codeartifact.paginator import ListRepositoriesInDomainPaginator
@@ -203,17 +261,34 @@ def get_list_repositories_in_domain_paginator() -> ListRepositoriesInDomainPagin
     return Session().client("codeartifact").get_paginator("list_repositories_in_domain")
 ```
 
-Boto3 documentation:
-[CodeArtifact.Paginator.ListRepositoriesInDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact.Paginator.ListRepositoriesInDomain)
 
-Arguments for `ListRepositoriesInDomainPaginator.paginate` method:
+### paginate
 
-- `domain`: `str` *(required)*
-- `domainOwner`: `str`
-- `administratorAccount`: `str`
-- `repositoryPrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRepositoriesInDomainPaginator.paginate` method.
 
-`ListRepositoriesInDomainPaginator.paginate` returns
-`_PageIterator`\[[ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    domain: str,
+    domainOwner: str = ...,
+    administratorAccount: str = ...,
+    repositoryPrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRepositoriesInDomainResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListRepositoriesInDomainRequestListRepositoriesInDomainPaginateTypeDef = {  # (1)
+    "domain": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRepositoriesInDomainRequestListRepositoriesInDomainPaginateTypeDef](./type_defs.md#listrepositoriesindomainrequestlistrepositoriesindomainpaginatetypedef) 

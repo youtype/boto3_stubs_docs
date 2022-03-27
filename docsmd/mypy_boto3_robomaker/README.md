@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-robomaker-module"></a>
-
-# Type annotations for boto3 RoboMaker module
+#  RoboMaker module
 
 > [Index](../README.md) > RoboMaker
 
-Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
-type annotations stubs module
-[mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+!!! note ""
 
-- [Type annotations for boto3 RoboMaker module](#type-annotations-for-boto3-robomaker-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [RoboMakerClient](#robomakerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
+    type annotations stubs module [mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `RoboMaker`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[robomaker]'
 python -m pip install mypy-boto3-robomaker
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,119 +42,37 @@ python -m pip install mypy-boto3-robomaker
 python -m pip uninstall -y mypy-boto3-robomaker
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="robomakerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## RoboMakerClient
 
-Type annotations for `boto3.client("robomaker")` as
-[RoboMakerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("robomaker")` as [RoboMakerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_robomaker.client import RoboMakerClient
+
+def get_client() -> RoboMakerClient:
+    return Session().cleint("robomaker")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_delete_worlds](./client.md#batch_delete_worlds)
-- [batch_describe_simulation_job](./client.md#batch_describe_simulation_job)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_deployment_job](./client.md#cancel_deployment_job)
-- [cancel_simulation_job](./client.md#cancel_simulation_job)
-- [cancel_simulation_job_batch](./client.md#cancel_simulation_job_batch)
-- [cancel_world_export_job](./client.md#cancel_world_export_job)
-- [cancel_world_generation_job](./client.md#cancel_world_generation_job)
-- [create_deployment_job](./client.md#create_deployment_job)
-- [create_fleet](./client.md#create_fleet)
-- [create_robot](./client.md#create_robot)
-- [create_robot_application](./client.md#create_robot_application)
-- [create_robot_application_version](./client.md#create_robot_application_version)
-- [create_simulation_application](./client.md#create_simulation_application)
-- [create_simulation_application_version](./client.md#create_simulation_application_version)
-- [create_simulation_job](./client.md#create_simulation_job)
-- [create_world_export_job](./client.md#create_world_export_job)
-- [create_world_generation_job](./client.md#create_world_generation_job)
-- [create_world_template](./client.md#create_world_template)
-- [delete_fleet](./client.md#delete_fleet)
-- [delete_robot](./client.md#delete_robot)
-- [delete_robot_application](./client.md#delete_robot_application)
-- [delete_simulation_application](./client.md#delete_simulation_application)
-- [delete_world_template](./client.md#delete_world_template)
-- [deregister_robot](./client.md#deregister_robot)
-- [describe_deployment_job](./client.md#describe_deployment_job)
-- [describe_fleet](./client.md#describe_fleet)
-- [describe_robot](./client.md#describe_robot)
-- [describe_robot_application](./client.md#describe_robot_application)
-- [describe_simulation_application](./client.md#describe_simulation_application)
-- [describe_simulation_job](./client.md#describe_simulation_job)
-- [describe_simulation_job_batch](./client.md#describe_simulation_job_batch)
-- [describe_world](./client.md#describe_world)
-- [describe_world_export_job](./client.md#describe_world_export_job)
-- [describe_world_generation_job](./client.md#describe_world_generation_job)
-- [describe_world_template](./client.md#describe_world_template)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_world_template_body](./client.md#get_world_template_body)
-- [list_deployment_jobs](./client.md#list_deployment_jobs)
-- [list_fleets](./client.md#list_fleets)
-- [list_robot_applications](./client.md#list_robot_applications)
-- [list_robots](./client.md#list_robots)
-- [list_simulation_applications](./client.md#list_simulation_applications)
-- [list_simulation_job_batches](./client.md#list_simulation_job_batches)
-- [list_simulation_jobs](./client.md#list_simulation_jobs)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_world_export_jobs](./client.md#list_world_export_jobs)
-- [list_world_generation_jobs](./client.md#list_world_generation_jobs)
-- [list_world_templates](./client.md#list_world_templates)
-- [list_worlds](./client.md#list_worlds)
-- [register_robot](./client.md#register_robot)
-- [restart_simulation_job](./client.md#restart_simulation_job)
-- [start_simulation_job_batch](./client.md#start_simulation_job_batch)
-- [sync_deployment_job](./client.md#sync_deployment_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_robot_application](./client.md#update_robot_application)
-- [update_simulation_application](./client.md#update_simulation_application)
-- [update_world_template](./client.md#update_world_template)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-RoboMakerClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentDeploymentException
-- IdempotentParameterMismatchException
-- InternalServerException
-- InvalidParameterException
-- LimitExceededException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-- ServiceUnavailableException
-- ThrottlingException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("robomaker").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("robomaker").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_robomaker.paginator import ListDeploymentJobsPaginator, ...
+from mypy_boto3_robomaker.paginator import ListDeploymentJobsPaginator
+
+def get_list_deployment_jobs_paginator() -> ListDeploymentJobsPaginator:
+    return Session().client("robomaker").get_paginator("list_deployment_jobs"))
 ```
 
 - [ListDeploymentJobsPaginator](./paginators.md#listdeploymentjobspaginator)
@@ -191,16 +87,23 @@ from mypy_boto3_robomaker.paginator import ListDeploymentJobsPaginator, ...
 - [ListWorldTemplatesPaginator](./paginators.md#listworldtemplatespaginator)
 - [ListWorldsPaginator](./paginators.md#listworldspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_robomaker.literals import ArchitectureType
 
-```python
-from mypy_boto3_robomaker.literals import ArchitectureType, ...
+def get_value() -> ArchitectureType:
+    return "ARM64"
 ```
 
 - [ArchitectureType](./literals.md#architecturetype)
@@ -240,18 +143,22 @@ from mypy_boto3_robomaker.literals import ArchitectureType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsRequestRequestTypeDef
 
-```python
-from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsRequestRequestTypeDef, ...
+def get_value() -> BatchDeleteWorldsRequestRequestTypeDef:
+    return {
+        "worlds": ...,
+    }
 ```
 
 - [BatchDeleteWorldsRequestRequestTypeDef](./type_defs.md#batchdeleteworldsrequestrequesttypedef)
@@ -332,28 +239,39 @@ from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsRequestRequestTypeDe
 - [GetWorldTemplateBodyRequestRequestTypeDef](./type_defs.md#getworldtemplatebodyrequestrequesttypedef)
 - [GetWorldTemplateBodyResponseTypeDef](./type_defs.md#getworldtemplatebodyresponsetypedef)
 - [LaunchConfigTypeDef](./type_defs.md#launchconfigtypedef)
+- [ListDeploymentJobsRequestListDeploymentJobsPaginateTypeDef](./type_defs.md#listdeploymentjobsrequestlistdeploymentjobspaginatetypedef)
 - [ListDeploymentJobsRequestRequestTypeDef](./type_defs.md#listdeploymentjobsrequestrequesttypedef)
 - [ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef)
+- [ListFleetsRequestListFleetsPaginateTypeDef](./type_defs.md#listfleetsrequestlistfleetspaginatetypedef)
 - [ListFleetsRequestRequestTypeDef](./type_defs.md#listfleetsrequestrequesttypedef)
 - [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef)
+- [ListRobotApplicationsRequestListRobotApplicationsPaginateTypeDef](./type_defs.md#listrobotapplicationsrequestlistrobotapplicationspaginatetypedef)
 - [ListRobotApplicationsRequestRequestTypeDef](./type_defs.md#listrobotapplicationsrequestrequesttypedef)
 - [ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef)
+- [ListRobotsRequestListRobotsPaginateTypeDef](./type_defs.md#listrobotsrequestlistrobotspaginatetypedef)
 - [ListRobotsRequestRequestTypeDef](./type_defs.md#listrobotsrequestrequesttypedef)
 - [ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef)
+- [ListSimulationApplicationsRequestListSimulationApplicationsPaginateTypeDef](./type_defs.md#listsimulationapplicationsrequestlistsimulationapplicationspaginatetypedef)
 - [ListSimulationApplicationsRequestRequestTypeDef](./type_defs.md#listsimulationapplicationsrequestrequesttypedef)
 - [ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef)
+- [ListSimulationJobBatchesRequestListSimulationJobBatchesPaginateTypeDef](./type_defs.md#listsimulationjobbatchesrequestlistsimulationjobbatchespaginatetypedef)
 - [ListSimulationJobBatchesRequestRequestTypeDef](./type_defs.md#listsimulationjobbatchesrequestrequesttypedef)
 - [ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef)
+- [ListSimulationJobsRequestListSimulationJobsPaginateTypeDef](./type_defs.md#listsimulationjobsrequestlistsimulationjobspaginatetypedef)
 - [ListSimulationJobsRequestRequestTypeDef](./type_defs.md#listsimulationjobsrequestrequesttypedef)
 - [ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListWorldExportJobsRequestListWorldExportJobsPaginateTypeDef](./type_defs.md#listworldexportjobsrequestlistworldexportjobspaginatetypedef)
 - [ListWorldExportJobsRequestRequestTypeDef](./type_defs.md#listworldexportjobsrequestrequesttypedef)
 - [ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef)
+- [ListWorldGenerationJobsRequestListWorldGenerationJobsPaginateTypeDef](./type_defs.md#listworldgenerationjobsrequestlistworldgenerationjobspaginatetypedef)
 - [ListWorldGenerationJobsRequestRequestTypeDef](./type_defs.md#listworldgenerationjobsrequestrequesttypedef)
 - [ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef)
+- [ListWorldTemplatesRequestListWorldTemplatesPaginateTypeDef](./type_defs.md#listworldtemplatesrequestlistworldtemplatespaginatetypedef)
 - [ListWorldTemplatesRequestRequestTypeDef](./type_defs.md#listworldtemplatesrequestrequesttypedef)
 - [ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef)
+- [ListWorldsRequestListWorldsPaginateTypeDef](./type_defs.md#listworldsrequestlistworldspaginatetypedef)
 - [ListWorldsRequestRequestTypeDef](./type_defs.md#listworldsrequestrequesttypedef)
 - [ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef)
 - [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
@@ -408,3 +326,4 @@ from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsRequestRequestTypeDe
 - [WorldFailureTypeDef](./type_defs.md#worldfailuretypedef)
 - [WorldGenerationJobSummaryTypeDef](./type_defs.md#worldgenerationjobsummarytypedef)
 - [WorldSummaryTypeDef](./type_defs.md#worldsummarytypedef)
+

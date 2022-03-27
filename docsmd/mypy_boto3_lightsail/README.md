@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-lightsail-module"></a>
-
-# Type annotations for boto3 Lightsail module
+#  Lightsail module
 
 > [Index](../README.md) > Lightsail
 
-Auto-generated documentation for
-[Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
-type annotations stubs module
-[mypy-boto3-lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
+!!! note ""
 
-- [Type annotations for boto3 Lightsail module](#type-annotations-for-boto3-lightsail-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [LightsailClient](#lightsailclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
+    type annotations stubs module [mypy-boto3-lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Lightsail`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[lightsail]'
 python -m pip install mypy-boto3-lightsail
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,213 +42,37 @@ python -m pip install mypy-boto3-lightsail
 python -m pip uninstall -y mypy-boto3-lightsail
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="lightsailclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## LightsailClient
 
-Type annotations for `boto3.client("lightsail")` as
-[LightsailClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("lightsail")` as [LightsailClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_lightsail.client import LightsailClient
+
+def get_client() -> LightsailClient:
+    return Session().cleint("lightsail")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [allocate_static_ip](./client.md#allocate_static_ip)
-- [attach_certificate_to_distribution](./client.md#attach_certificate_to_distribution)
-- [attach_disk](./client.md#attach_disk)
-- [attach_instances_to_load_balancer](./client.md#attach_instances_to_load_balancer)
-- [attach_load_balancer_tls_certificate](./client.md#attach_load_balancer_tls_certificate)
-- [attach_static_ip](./client.md#attach_static_ip)
-- [can_paginate](./client.md#can_paginate)
-- [close_instance_public_ports](./client.md#close_instance_public_ports)
-- [copy_snapshot](./client.md#copy_snapshot)
-- [create_bucket](./client.md#create_bucket)
-- [create_bucket_access_key](./client.md#create_bucket_access_key)
-- [create_certificate](./client.md#create_certificate)
-- [create_cloud_formation_stack](./client.md#create_cloud_formation_stack)
-- [create_contact_method](./client.md#create_contact_method)
-- [create_container_service](./client.md#create_container_service)
-- [create_container_service_deployment](./client.md#create_container_service_deployment)
-- [create_container_service_registry_login](./client.md#create_container_service_registry_login)
-- [create_disk](./client.md#create_disk)
-- [create_disk_from_snapshot](./client.md#create_disk_from_snapshot)
-- [create_disk_snapshot](./client.md#create_disk_snapshot)
-- [create_distribution](./client.md#create_distribution)
-- [create_domain](./client.md#create_domain)
-- [create_domain_entry](./client.md#create_domain_entry)
-- [create_instance_snapshot](./client.md#create_instance_snapshot)
-- [create_instances](./client.md#create_instances)
-- [create_instances_from_snapshot](./client.md#create_instances_from_snapshot)
-- [create_key_pair](./client.md#create_key_pair)
-- [create_load_balancer](./client.md#create_load_balancer)
-- [create_load_balancer_tls_certificate](./client.md#create_load_balancer_tls_certificate)
-- [create_relational_database](./client.md#create_relational_database)
-- [create_relational_database_from_snapshot](./client.md#create_relational_database_from_snapshot)
-- [create_relational_database_snapshot](./client.md#create_relational_database_snapshot)
-- [delete_alarm](./client.md#delete_alarm)
-- [delete_auto_snapshot](./client.md#delete_auto_snapshot)
-- [delete_bucket](./client.md#delete_bucket)
-- [delete_bucket_access_key](./client.md#delete_bucket_access_key)
-- [delete_certificate](./client.md#delete_certificate)
-- [delete_contact_method](./client.md#delete_contact_method)
-- [delete_container_image](./client.md#delete_container_image)
-- [delete_container_service](./client.md#delete_container_service)
-- [delete_disk](./client.md#delete_disk)
-- [delete_disk_snapshot](./client.md#delete_disk_snapshot)
-- [delete_distribution](./client.md#delete_distribution)
-- [delete_domain](./client.md#delete_domain)
-- [delete_domain_entry](./client.md#delete_domain_entry)
-- [delete_instance](./client.md#delete_instance)
-- [delete_instance_snapshot](./client.md#delete_instance_snapshot)
-- [delete_key_pair](./client.md#delete_key_pair)
-- [delete_known_host_keys](./client.md#delete_known_host_keys)
-- [delete_load_balancer](./client.md#delete_load_balancer)
-- [delete_load_balancer_tls_certificate](./client.md#delete_load_balancer_tls_certificate)
-- [delete_relational_database](./client.md#delete_relational_database)
-- [delete_relational_database_snapshot](./client.md#delete_relational_database_snapshot)
-- [detach_certificate_from_distribution](./client.md#detach_certificate_from_distribution)
-- [detach_disk](./client.md#detach_disk)
-- [detach_instances_from_load_balancer](./client.md#detach_instances_from_load_balancer)
-- [detach_static_ip](./client.md#detach_static_ip)
-- [disable_add_on](./client.md#disable_add_on)
-- [download_default_key_pair](./client.md#download_default_key_pair)
-- [enable_add_on](./client.md#enable_add_on)
-- [exceptions](./client.md#exceptions)
-- [export_snapshot](./client.md#export_snapshot)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_active_names](./client.md#get_active_names)
-- [get_alarms](./client.md#get_alarms)
-- [get_auto_snapshots](./client.md#get_auto_snapshots)
-- [get_blueprints](./client.md#get_blueprints)
-- [get_bucket_access_keys](./client.md#get_bucket_access_keys)
-- [get_bucket_bundles](./client.md#get_bucket_bundles)
-- [get_bucket_metric_data](./client.md#get_bucket_metric_data)
-- [get_buckets](./client.md#get_buckets)
-- [get_bundles](./client.md#get_bundles)
-- [get_certificates](./client.md#get_certificates)
-- [get_cloud_formation_stack_records](./client.md#get_cloud_formation_stack_records)
-- [get_contact_methods](./client.md#get_contact_methods)
-- [get_container_api_metadata](./client.md#get_container_api_metadata)
-- [get_container_images](./client.md#get_container_images)
-- [get_container_log](./client.md#get_container_log)
-- [get_container_service_deployments](./client.md#get_container_service_deployments)
-- [get_container_service_metric_data](./client.md#get_container_service_metric_data)
-- [get_container_service_powers](./client.md#get_container_service_powers)
-- [get_container_services](./client.md#get_container_services)
-- [get_disk](./client.md#get_disk)
-- [get_disk_snapshot](./client.md#get_disk_snapshot)
-- [get_disk_snapshots](./client.md#get_disk_snapshots)
-- [get_disks](./client.md#get_disks)
-- [get_distribution_bundles](./client.md#get_distribution_bundles)
-- [get_distribution_latest_cache_reset](./client.md#get_distribution_latest_cache_reset)
-- [get_distribution_metric_data](./client.md#get_distribution_metric_data)
-- [get_distributions](./client.md#get_distributions)
-- [get_domain](./client.md#get_domain)
-- [get_domains](./client.md#get_domains)
-- [get_export_snapshot_records](./client.md#get_export_snapshot_records)
-- [get_instance](./client.md#get_instance)
-- [get_instance_access_details](./client.md#get_instance_access_details)
-- [get_instance_metric_data](./client.md#get_instance_metric_data)
-- [get_instance_port_states](./client.md#get_instance_port_states)
-- [get_instance_snapshot](./client.md#get_instance_snapshot)
-- [get_instance_snapshots](./client.md#get_instance_snapshots)
-- [get_instance_state](./client.md#get_instance_state)
-- [get_instances](./client.md#get_instances)
-- [get_key_pair](./client.md#get_key_pair)
-- [get_key_pairs](./client.md#get_key_pairs)
-- [get_load_balancer](./client.md#get_load_balancer)
-- [get_load_balancer_metric_data](./client.md#get_load_balancer_metric_data)
-- [get_load_balancer_tls_certificates](./client.md#get_load_balancer_tls_certificates)
-- [get_load_balancers](./client.md#get_load_balancers)
-- [get_operation](./client.md#get_operation)
-- [get_operations](./client.md#get_operations)
-- [get_operations_for_resource](./client.md#get_operations_for_resource)
-- [get_paginator](./client.md#get_paginator)
-- [get_regions](./client.md#get_regions)
-- [get_relational_database](./client.md#get_relational_database)
-- [get_relational_database_blueprints](./client.md#get_relational_database_blueprints)
-- [get_relational_database_bundles](./client.md#get_relational_database_bundles)
-- [get_relational_database_events](./client.md#get_relational_database_events)
-- [get_relational_database_log_events](./client.md#get_relational_database_log_events)
-- [get_relational_database_log_streams](./client.md#get_relational_database_log_streams)
-- [get_relational_database_master_user_password](./client.md#get_relational_database_master_user_password)
-- [get_relational_database_metric_data](./client.md#get_relational_database_metric_data)
-- [get_relational_database_parameters](./client.md#get_relational_database_parameters)
-- [get_relational_database_snapshot](./client.md#get_relational_database_snapshot)
-- [get_relational_database_snapshots](./client.md#get_relational_database_snapshots)
-- [get_relational_databases](./client.md#get_relational_databases)
-- [get_static_ip](./client.md#get_static_ip)
-- [get_static_ips](./client.md#get_static_ips)
-- [import_key_pair](./client.md#import_key_pair)
-- [is_vpc_peered](./client.md#is_vpc_peered)
-- [open_instance_public_ports](./client.md#open_instance_public_ports)
-- [peer_vpc](./client.md#peer_vpc)
-- [put_alarm](./client.md#put_alarm)
-- [put_instance_public_ports](./client.md#put_instance_public_ports)
-- [reboot_instance](./client.md#reboot_instance)
-- [reboot_relational_database](./client.md#reboot_relational_database)
-- [register_container_image](./client.md#register_container_image)
-- [release_static_ip](./client.md#release_static_ip)
-- [reset_distribution_cache](./client.md#reset_distribution_cache)
-- [send_contact_method_verification](./client.md#send_contact_method_verification)
-- [set_ip_address_type](./client.md#set_ip_address_type)
-- [set_resource_access_for_bucket](./client.md#set_resource_access_for_bucket)
-- [start_instance](./client.md#start_instance)
-- [start_relational_database](./client.md#start_relational_database)
-- [stop_instance](./client.md#stop_instance)
-- [stop_relational_database](./client.md#stop_relational_database)
-- [tag_resource](./client.md#tag_resource)
-- [test_alarm](./client.md#test_alarm)
-- [unpeer_vpc](./client.md#unpeer_vpc)
-- [untag_resource](./client.md#untag_resource)
-- [update_bucket](./client.md#update_bucket)
-- [update_bucket_bundle](./client.md#update_bucket_bundle)
-- [update_container_service](./client.md#update_container_service)
-- [update_distribution](./client.md#update_distribution)
-- [update_distribution_bundle](./client.md#update_distribution_bundle)
-- [update_domain_entry](./client.md#update_domain_entry)
-- [update_load_balancer_attribute](./client.md#update_load_balancer_attribute)
-- [update_relational_database](./client.md#update_relational_database)
-- [update_relational_database_parameters](./client.md#update_relational_database_parameters)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-LightsailClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- AccountSetupInProgressException
-- ClientError
-- InvalidInputException
-- NotFoundException
-- OperationFailureException
-- ServiceException
-- UnauthenticatedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("lightsail").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("lightsail").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_lightsail.paginator import GetActiveNamesPaginator, ...
+from mypy_boto3_lightsail.paginator import GetActiveNamesPaginator
+
+def get_get_active_names_paginator() -> GetActiveNamesPaginator:
+    return Session().client("lightsail").get_paginator("get_active_names"))
 ```
 
 - [GetActiveNamesPaginator](./paginators.md#getactivenamespaginator)
@@ -294,16 +96,23 @@ from mypy_boto3_lightsail.paginator import GetActiveNamesPaginator, ...
 - [GetRelationalDatabasesPaginator](./paginators.md#getrelationaldatabasespaginator)
 - [GetStaticIpsPaginator](./paginators.md#getstaticipspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lightsail.literals import AccessDirectionType
 
-```python
-from mypy_boto3_lightsail.literals import AccessDirectionType, ...
+def get_value() -> AccessDirectionType:
+    return "inbound"
 ```
 
 - [AccessDirectionType](./literals.md#accessdirectiontype)
@@ -392,18 +201,22 @@ from mypy_boto3_lightsail.literals import AccessDirectionType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef
 
-```python
-from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
+def get_value() -> AccessKeyLastUsedTypeDef:
+    return {
+        "lastUsedDate": ...,
+    }
 ```
 
 - [AccessKeyLastUsedTypeDef](./type_defs.md#accesskeylastusedtypedef)
@@ -572,12 +385,14 @@ from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 - [ExportSnapshotRecordTypeDef](./type_defs.md#exportsnapshotrecordtypedef)
 - [ExportSnapshotRequestRequestTypeDef](./type_defs.md#exportsnapshotrequestrequesttypedef)
 - [ExportSnapshotResultTypeDef](./type_defs.md#exportsnapshotresulttypedef)
+- [GetActiveNamesRequestGetActiveNamesPaginateTypeDef](./type_defs.md#getactivenamesrequestgetactivenamespaginatetypedef)
 - [GetActiveNamesRequestRequestTypeDef](./type_defs.md#getactivenamesrequestrequesttypedef)
 - [GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef)
 - [GetAlarmsRequestRequestTypeDef](./type_defs.md#getalarmsrequestrequesttypedef)
 - [GetAlarmsResultTypeDef](./type_defs.md#getalarmsresulttypedef)
 - [GetAutoSnapshotsRequestRequestTypeDef](./type_defs.md#getautosnapshotsrequestrequesttypedef)
 - [GetAutoSnapshotsResultTypeDef](./type_defs.md#getautosnapshotsresulttypedef)
+- [GetBlueprintsRequestGetBlueprintsPaginateTypeDef](./type_defs.md#getblueprintsrequestgetblueprintspaginatetypedef)
 - [GetBlueprintsRequestRequestTypeDef](./type_defs.md#getblueprintsrequestrequesttypedef)
 - [GetBlueprintsResultTypeDef](./type_defs.md#getblueprintsresulttypedef)
 - [GetBucketAccessKeysRequestRequestTypeDef](./type_defs.md#getbucketaccesskeysrequestrequesttypedef)
@@ -588,10 +403,12 @@ from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 - [GetBucketMetricDataResultTypeDef](./type_defs.md#getbucketmetricdataresulttypedef)
 - [GetBucketsRequestRequestTypeDef](./type_defs.md#getbucketsrequestrequesttypedef)
 - [GetBucketsResultTypeDef](./type_defs.md#getbucketsresulttypedef)
+- [GetBundlesRequestGetBundlesPaginateTypeDef](./type_defs.md#getbundlesrequestgetbundlespaginatetypedef)
 - [GetBundlesRequestRequestTypeDef](./type_defs.md#getbundlesrequestrequesttypedef)
 - [GetBundlesResultTypeDef](./type_defs.md#getbundlesresulttypedef)
 - [GetCertificatesRequestRequestTypeDef](./type_defs.md#getcertificatesrequestrequesttypedef)
 - [GetCertificatesResultTypeDef](./type_defs.md#getcertificatesresulttypedef)
+- [GetCloudFormationStackRecordsRequestGetCloudFormationStackRecordsPaginateTypeDef](./type_defs.md#getcloudformationstackrecordsrequestgetcloudformationstackrecordspaginatetypedef)
 - [GetCloudFormationStackRecordsRequestRequestTypeDef](./type_defs.md#getcloudformationstackrecordsrequestrequesttypedef)
 - [GetCloudFormationStackRecordsResultTypeDef](./type_defs.md#getcloudformationstackrecordsresulttypedef)
 - [GetContactMethodsRequestRequestTypeDef](./type_defs.md#getcontactmethodsrequestrequesttypedef)
@@ -611,8 +428,10 @@ from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 - [GetDiskResultTypeDef](./type_defs.md#getdiskresulttypedef)
 - [GetDiskSnapshotRequestRequestTypeDef](./type_defs.md#getdisksnapshotrequestrequesttypedef)
 - [GetDiskSnapshotResultTypeDef](./type_defs.md#getdisksnapshotresulttypedef)
+- [GetDiskSnapshotsRequestGetDiskSnapshotsPaginateTypeDef](./type_defs.md#getdisksnapshotsrequestgetdisksnapshotspaginatetypedef)
 - [GetDiskSnapshotsRequestRequestTypeDef](./type_defs.md#getdisksnapshotsrequestrequesttypedef)
 - [GetDiskSnapshotsResultTypeDef](./type_defs.md#getdisksnapshotsresulttypedef)
+- [GetDisksRequestGetDisksPaginateTypeDef](./type_defs.md#getdisksrequestgetdiskspaginatetypedef)
 - [GetDisksRequestRequestTypeDef](./type_defs.md#getdisksrequestrequesttypedef)
 - [GetDisksResultTypeDef](./type_defs.md#getdisksresulttypedef)
 - [GetDistributionBundlesResultTypeDef](./type_defs.md#getdistributionbundlesresulttypedef)
@@ -624,8 +443,10 @@ from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 - [GetDistributionsResultTypeDef](./type_defs.md#getdistributionsresulttypedef)
 - [GetDomainRequestRequestTypeDef](./type_defs.md#getdomainrequestrequesttypedef)
 - [GetDomainResultTypeDef](./type_defs.md#getdomainresulttypedef)
+- [GetDomainsRequestGetDomainsPaginateTypeDef](./type_defs.md#getdomainsrequestgetdomainspaginatetypedef)
 - [GetDomainsRequestRequestTypeDef](./type_defs.md#getdomainsrequestrequesttypedef)
 - [GetDomainsResultTypeDef](./type_defs.md#getdomainsresulttypedef)
+- [GetExportSnapshotRecordsRequestGetExportSnapshotRecordsPaginateTypeDef](./type_defs.md#getexportsnapshotrecordsrequestgetexportsnapshotrecordspaginatetypedef)
 - [GetExportSnapshotRecordsRequestRequestTypeDef](./type_defs.md#getexportsnapshotrecordsrequestrequesttypedef)
 - [GetExportSnapshotRecordsResultTypeDef](./type_defs.md#getexportsnapshotrecordsresulttypedef)
 - [GetInstanceAccessDetailsRequestRequestTypeDef](./type_defs.md#getinstanceaccessdetailsrequestrequesttypedef)
@@ -638,14 +459,17 @@ from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 - [GetInstanceResultTypeDef](./type_defs.md#getinstanceresulttypedef)
 - [GetInstanceSnapshotRequestRequestTypeDef](./type_defs.md#getinstancesnapshotrequestrequesttypedef)
 - [GetInstanceSnapshotResultTypeDef](./type_defs.md#getinstancesnapshotresulttypedef)
+- [GetInstanceSnapshotsRequestGetInstanceSnapshotsPaginateTypeDef](./type_defs.md#getinstancesnapshotsrequestgetinstancesnapshotspaginatetypedef)
 - [GetInstanceSnapshotsRequestRequestTypeDef](./type_defs.md#getinstancesnapshotsrequestrequesttypedef)
 - [GetInstanceSnapshotsResultTypeDef](./type_defs.md#getinstancesnapshotsresulttypedef)
 - [GetInstanceStateRequestRequestTypeDef](./type_defs.md#getinstancestaterequestrequesttypedef)
 - [GetInstanceStateResultTypeDef](./type_defs.md#getinstancestateresulttypedef)
+- [GetInstancesRequestGetInstancesPaginateTypeDef](./type_defs.md#getinstancesrequestgetinstancespaginatetypedef)
 - [GetInstancesRequestRequestTypeDef](./type_defs.md#getinstancesrequestrequesttypedef)
 - [GetInstancesResultTypeDef](./type_defs.md#getinstancesresulttypedef)
 - [GetKeyPairRequestRequestTypeDef](./type_defs.md#getkeypairrequestrequesttypedef)
 - [GetKeyPairResultTypeDef](./type_defs.md#getkeypairresulttypedef)
+- [GetKeyPairsRequestGetKeyPairsPaginateTypeDef](./type_defs.md#getkeypairsrequestgetkeypairspaginatetypedef)
 - [GetKeyPairsRequestRequestTypeDef](./type_defs.md#getkeypairsrequestrequesttypedef)
 - [GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef)
 - [GetLoadBalancerMetricDataRequestRequestTypeDef](./type_defs.md#getloadbalancermetricdatarequestrequesttypedef)
@@ -654,20 +478,25 @@ from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 - [GetLoadBalancerResultTypeDef](./type_defs.md#getloadbalancerresulttypedef)
 - [GetLoadBalancerTlsCertificatesRequestRequestTypeDef](./type_defs.md#getloadbalancertlscertificatesrequestrequesttypedef)
 - [GetLoadBalancerTlsCertificatesResultTypeDef](./type_defs.md#getloadbalancertlscertificatesresulttypedef)
+- [GetLoadBalancersRequestGetLoadBalancersPaginateTypeDef](./type_defs.md#getloadbalancersrequestgetloadbalancerspaginatetypedef)
 - [GetLoadBalancersRequestRequestTypeDef](./type_defs.md#getloadbalancersrequestrequesttypedef)
 - [GetLoadBalancersResultTypeDef](./type_defs.md#getloadbalancersresulttypedef)
 - [GetOperationRequestRequestTypeDef](./type_defs.md#getoperationrequestrequesttypedef)
 - [GetOperationResultTypeDef](./type_defs.md#getoperationresulttypedef)
 - [GetOperationsForResourceRequestRequestTypeDef](./type_defs.md#getoperationsforresourcerequestrequesttypedef)
 - [GetOperationsForResourceResultTypeDef](./type_defs.md#getoperationsforresourceresulttypedef)
+- [GetOperationsRequestGetOperationsPaginateTypeDef](./type_defs.md#getoperationsrequestgetoperationspaginatetypedef)
 - [GetOperationsRequestRequestTypeDef](./type_defs.md#getoperationsrequestrequesttypedef)
 - [GetOperationsResultTypeDef](./type_defs.md#getoperationsresulttypedef)
 - [GetRegionsRequestRequestTypeDef](./type_defs.md#getregionsrequestrequesttypedef)
 - [GetRegionsResultTypeDef](./type_defs.md#getregionsresulttypedef)
+- [GetRelationalDatabaseBlueprintsRequestGetRelationalDatabaseBlueprintsPaginateTypeDef](./type_defs.md#getrelationaldatabaseblueprintsrequestgetrelationaldatabaseblueprintspaginatetypedef)
 - [GetRelationalDatabaseBlueprintsRequestRequestTypeDef](./type_defs.md#getrelationaldatabaseblueprintsrequestrequesttypedef)
 - [GetRelationalDatabaseBlueprintsResultTypeDef](./type_defs.md#getrelationaldatabaseblueprintsresulttypedef)
+- [GetRelationalDatabaseBundlesRequestGetRelationalDatabaseBundlesPaginateTypeDef](./type_defs.md#getrelationaldatabasebundlesrequestgetrelationaldatabasebundlespaginatetypedef)
 - [GetRelationalDatabaseBundlesRequestRequestTypeDef](./type_defs.md#getrelationaldatabasebundlesrequestrequesttypedef)
 - [GetRelationalDatabaseBundlesResultTypeDef](./type_defs.md#getrelationaldatabasebundlesresulttypedef)
+- [GetRelationalDatabaseEventsRequestGetRelationalDatabaseEventsPaginateTypeDef](./type_defs.md#getrelationaldatabaseeventsrequestgetrelationaldatabaseeventspaginatetypedef)
 - [GetRelationalDatabaseEventsRequestRequestTypeDef](./type_defs.md#getrelationaldatabaseeventsrequestrequesttypedef)
 - [GetRelationalDatabaseEventsResultTypeDef](./type_defs.md#getrelationaldatabaseeventsresulttypedef)
 - [GetRelationalDatabaseLogEventsRequestRequestTypeDef](./type_defs.md#getrelationaldatabaselogeventsrequestrequesttypedef)
@@ -678,18 +507,22 @@ from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 - [GetRelationalDatabaseMasterUserPasswordResultTypeDef](./type_defs.md#getrelationaldatabasemasteruserpasswordresulttypedef)
 - [GetRelationalDatabaseMetricDataRequestRequestTypeDef](./type_defs.md#getrelationaldatabasemetricdatarequestrequesttypedef)
 - [GetRelationalDatabaseMetricDataResultTypeDef](./type_defs.md#getrelationaldatabasemetricdataresulttypedef)
+- [GetRelationalDatabaseParametersRequestGetRelationalDatabaseParametersPaginateTypeDef](./type_defs.md#getrelationaldatabaseparametersrequestgetrelationaldatabaseparameterspaginatetypedef)
 - [GetRelationalDatabaseParametersRequestRequestTypeDef](./type_defs.md#getrelationaldatabaseparametersrequestrequesttypedef)
 - [GetRelationalDatabaseParametersResultTypeDef](./type_defs.md#getrelationaldatabaseparametersresulttypedef)
 - [GetRelationalDatabaseRequestRequestTypeDef](./type_defs.md#getrelationaldatabaserequestrequesttypedef)
 - [GetRelationalDatabaseResultTypeDef](./type_defs.md#getrelationaldatabaseresulttypedef)
 - [GetRelationalDatabaseSnapshotRequestRequestTypeDef](./type_defs.md#getrelationaldatabasesnapshotrequestrequesttypedef)
 - [GetRelationalDatabaseSnapshotResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotresulttypedef)
+- [GetRelationalDatabaseSnapshotsRequestGetRelationalDatabaseSnapshotsPaginateTypeDef](./type_defs.md#getrelationaldatabasesnapshotsrequestgetrelationaldatabasesnapshotspaginatetypedef)
 - [GetRelationalDatabaseSnapshotsRequestRequestTypeDef](./type_defs.md#getrelationaldatabasesnapshotsrequestrequesttypedef)
 - [GetRelationalDatabaseSnapshotsResultTypeDef](./type_defs.md#getrelationaldatabasesnapshotsresulttypedef)
+- [GetRelationalDatabasesRequestGetRelationalDatabasesPaginateTypeDef](./type_defs.md#getrelationaldatabasesrequestgetrelationaldatabasespaginatetypedef)
 - [GetRelationalDatabasesRequestRequestTypeDef](./type_defs.md#getrelationaldatabasesrequestrequesttypedef)
 - [GetRelationalDatabasesResultTypeDef](./type_defs.md#getrelationaldatabasesresulttypedef)
 - [GetStaticIpRequestRequestTypeDef](./type_defs.md#getstaticiprequestrequesttypedef)
 - [GetStaticIpResultTypeDef](./type_defs.md#getstaticipresulttypedef)
+- [GetStaticIpsRequestGetStaticIpsPaginateTypeDef](./type_defs.md#getstaticipsrequestgetstaticipspaginatetypedef)
 - [GetStaticIpsRequestRequestTypeDef](./type_defs.md#getstaticipsrequestrequesttypedef)
 - [GetStaticIpsResultTypeDef](./type_defs.md#getstaticipsresulttypedef)
 - [HeaderObjectTypeDef](./type_defs.md#headerobjecttypedef)
@@ -801,3 +634,4 @@ from mypy_boto3_lightsail.type_defs import AccessKeyLastUsedTypeDef, ...
 - [UpdateRelationalDatabaseParametersResultTypeDef](./type_defs.md#updaterelationaldatabaseparametersresulttypedef)
 - [UpdateRelationalDatabaseRequestRequestTypeDef](./type_defs.md#updaterelationaldatabaserequestrequesttypedef)
 - [UpdateRelationalDatabaseResultTypeDef](./type_defs.md#updaterelationaldatabaseresulttypedef)
+

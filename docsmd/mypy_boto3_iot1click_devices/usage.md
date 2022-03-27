@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-iot1clickdevicesservice-module"></a>
-
-# Examples for boto3 IoT1ClickDevicesService module
+# Examples
 
 > [Index](../README.md) > [IoT1ClickDevicesService](./README.md) > Examples
 
-- [Examples for boto3 IoT1ClickDevicesService module](#examples-for-boto3-iot1clickdevicesservice-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+    type annotations stubs module [mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[iot1click-devices]` package installed.
 
-Write your `IoT1ClickDevicesService` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `IoT1ClickDevicesService` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type IoT1ClickDevicesServiceClient
-# and provides type checking and code completion
-client = session.client("iot1click-devices")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListDeviceEventsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_device_events")
-for item in paginator.paginate(...):
-    # item has type ListDeviceEventsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("iot1click-devices")  # (1)
+    result = client.claim_devices_by_claim_code()  # (2)
+    ```
+
+    1. client: [IoT1ClickDevicesServiceClient](./client.md)
+    2. result: [:material-code-braces: ClaimDevicesByClaimCodeResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("iot1click-devices")  # (1)
+
+    paginator = client.get_paginator("list_device_events")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [IoT1ClickDevicesServiceClient](./client.md)
+    2. paginator: [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
+    3. item: [:material-code-braces: ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[iot1click-devices]` or a standalone
-`mypy_boto3_iot1click_devices` package, you have to explicitly specify
-`client: IoT1ClickDevicesServiceClient` type annotation.
+With `boto3-stubs-lite[iot1click-devices]`
+or a standalone `mypy_boto3_iot1click_devices` package, you have to explicitly specify `client: IoT1ClickDevicesServiceClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
-from mypy_boto3_iot1click_devices.paginator import ListDeviceEventsPaginator
-
-from mypy_boto3_iot1click_devices.literals import PaginatorName
-
-from mypy_boto3_iot1click_devices.type_defs import bool
-from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: IoT1ClickDevicesServiceClient = session.client("iot1click-devices")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
+    from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeResponseTypeDef
+    from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_device_events"
-paginator: ListDeviceEventsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListDeviceEventsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: IoT1ClickDevicesServiceClient = session.client("iot1click-devices")
+
+    kwargs: ClaimDevicesByClaimCodeRequestRequestTypeDef = {...}
+    result: ClaimDevicesByClaimCodeResponseTypeDef = client.claim_devices_by_claim_code(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
+    from mypy_boto3_iot1click_devices.paginator import ListDeviceEventsPaginator
+    from mypy_boto3_iot1click_devices.type_defs import ListDeviceEventsResponseTypeDef
+
+
+    session = Session()
+    client: IoT1ClickDevicesServiceClient = session.client("iot1click-devices")
+
+    paginator: ListDeviceEventsPaginator = client.get_paginator("list_device_events")
+    for item in paginator.paginate(...):
+        item: ListDeviceEventsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

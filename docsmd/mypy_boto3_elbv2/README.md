@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-elasticloadbalancingv2-module"></a>
-
-# Type annotations for boto3 ElasticLoadBalancingv2 module
+#  ElasticLoadBalancingv2 module
 
 > [Index](../README.md) > ElasticLoadBalancingv2
 
-Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
-type annotations stubs module
-[mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
+!!! note ""
 
-- [Type annotations for boto3 ElasticLoadBalancingv2 module](#type-annotations-for-boto3-elasticloadbalancingv2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ElasticLoadBalancingv2Client](#elasticloadbalancingv2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
+    type annotations stubs module [mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ElasticLoadBalancingv2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[elbv2]'
 python -m pip install mypy-boto3-elbv2
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,125 +42,37 @@ python -m pip install mypy-boto3-elbv2
 python -m pip uninstall -y mypy-boto3-elbv2
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="elasticloadbalancingv2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ElasticLoadBalancingv2Client
 
-Type annotations for `boto3.client("elbv2")` as
-[ElasticLoadBalancingv2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("elbv2")` as [ElasticLoadBalancingv2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_elbv2.client import ElasticLoadBalancingv2Client
+
+def get_client() -> ElasticLoadBalancingv2Client:
+    return Session().cleint("elbv2")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_listener_certificates](./client.md#add_listener_certificates)
-- [add_tags](./client.md#add_tags)
-- [can_paginate](./client.md#can_paginate)
-- [create_listener](./client.md#create_listener)
-- [create_load_balancer](./client.md#create_load_balancer)
-- [create_rule](./client.md#create_rule)
-- [create_target_group](./client.md#create_target_group)
-- [delete_listener](./client.md#delete_listener)
-- [delete_load_balancer](./client.md#delete_load_balancer)
-- [delete_rule](./client.md#delete_rule)
-- [delete_target_group](./client.md#delete_target_group)
-- [deregister_targets](./client.md#deregister_targets)
-- [describe_account_limits](./client.md#describe_account_limits)
-- [describe_listener_certificates](./client.md#describe_listener_certificates)
-- [describe_listeners](./client.md#describe_listeners)
-- [describe_load_balancer_attributes](./client.md#describe_load_balancer_attributes)
-- [describe_load_balancers](./client.md#describe_load_balancers)
-- [describe_rules](./client.md#describe_rules)
-- [describe_ssl_policies](./client.md#describe_ssl_policies)
-- [describe_tags](./client.md#describe_tags)
-- [describe_target_group_attributes](./client.md#describe_target_group_attributes)
-- [describe_target_groups](./client.md#describe_target_groups)
-- [describe_target_health](./client.md#describe_target_health)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [modify_listener](./client.md#modify_listener)
-- [modify_load_balancer_attributes](./client.md#modify_load_balancer_attributes)
-- [modify_rule](./client.md#modify_rule)
-- [modify_target_group](./client.md#modify_target_group)
-- [modify_target_group_attributes](./client.md#modify_target_group_attributes)
-- [register_targets](./client.md#register_targets)
-- [remove_listener_certificates](./client.md#remove_listener_certificates)
-- [remove_tags](./client.md#remove_tags)
-- [set_ip_address_type](./client.md#set_ip_address_type)
-- [set_rule_priorities](./client.md#set_rule_priorities)
-- [set_security_groups](./client.md#set_security_groups)
-- [set_subnets](./client.md#set_subnets)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ElasticLoadBalancingv2Client [exceptions](./client.md#exceptions)
-
-- ALPNPolicyNotSupportedException
-- AllocationIdNotFoundException
-- AvailabilityZoneNotSupportedException
-- CertificateNotFoundException
-- ClientError
-- DuplicateListenerException
-- DuplicateLoadBalancerNameException
-- DuplicateTagKeysException
-- DuplicateTargetGroupNameException
-- HealthUnavailableException
-- IncompatibleProtocolsException
-- InvalidConfigurationRequestException
-- InvalidLoadBalancerActionException
-- InvalidSchemeException
-- InvalidSecurityGroupException
-- InvalidSubnetException
-- InvalidTargetException
-- ListenerNotFoundException
-- LoadBalancerNotFoundException
-- OperationNotPermittedException
-- PriorityInUseException
-- ResourceInUseException
-- RuleNotFoundException
-- SSLPolicyNotFoundException
-- SubnetNotFoundException
-- TargetGroupAssociationLimitException
-- TargetGroupNotFoundException
-- TooManyActionsException
-- TooManyCertificatesException
-- TooManyListenersException
-- TooManyLoadBalancersException
-- TooManyRegistrationsForTargetIdException
-- TooManyRulesException
-- TooManyTagsException
-- TooManyTargetGroupsException
-- TooManyTargetsException
-- TooManyUniqueTargetGroupsPerLoadBalancerException
-- UnsupportedProtocolException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("elbv2").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("elbv2").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_elbv2.paginator import DescribeAccountLimitsPaginator, ...
+from mypy_boto3_elbv2.paginator import DescribeAccountLimitsPaginator
+
+def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
+    return Session().client("elbv2").get_paginator("describe_account_limits"))
 ```
 
 - [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
@@ -194,17 +83,21 @@ from mypy_boto3_elbv2.paginator import DescribeAccountLimitsPaginator, ...
 - [DescribeSSLPoliciesPaginator](./paginators.md#describesslpoliciespaginator)
 - [DescribeTargetGroupsPaginator](./paginators.md#describetargetgroupspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("elbv2").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("elbv2").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_elbv2.waiter import LoadBalancerAvailableWaiter, ...
+from mypy_boto3_elbv2.waiter import LoadBalancerAvailableWaiter
+
+def get_load_balancer_available_waiter() -> LoadBalancerAvailableWaiter:
+    return Session().client("elbv2").get_waiter("load_balancer_available")
 ```
 
 - [LoadBalancerAvailableWaiter](./waiters.md#loadbalanceravailablewaiter)
@@ -213,16 +106,21 @@ from mypy_boto3_elbv2.waiter import LoadBalancerAvailableWaiter, ...
 - [TargetDeregisteredWaiter](./waiters.md#targetderegisteredwaiter)
 - [TargetInServiceWaiter](./waiters.md#targetinservicewaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elbv2.literals import ActionTypeEnumType
 
-```python
-from mypy_boto3_elbv2.literals import ActionTypeEnumType, ...
+def get_value() -> ActionTypeEnumType:
+    return "authenticate-cognito"
 ```
 
 - [ActionTypeEnumType](./literals.md#actiontypeenumtype)
@@ -255,18 +153,22 @@ from mypy_boto3_elbv2.literals import ActionTypeEnumType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elbv2.type_defs import ActionTypeDef
 
-```python
-from mypy_boto3_elbv2.type_defs import ActionTypeDef, ...
+def get_value() -> ActionTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
 - [ActionTypeDef](./type_defs.md#actiontypedef)
@@ -291,27 +193,39 @@ from mypy_boto3_elbv2.type_defs import ActionTypeDef, ...
 - [DeleteRuleInputRequestTypeDef](./type_defs.md#deleteruleinputrequesttypedef)
 - [DeleteTargetGroupInputRequestTypeDef](./type_defs.md#deletetargetgroupinputrequesttypedef)
 - [DeregisterTargetsInputRequestTypeDef](./type_defs.md#deregistertargetsinputrequesttypedef)
+- [DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef](./type_defs.md#describeaccountlimitsinputdescribeaccountlimitspaginatetypedef)
 - [DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef)
 - [DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)
+- [DescribeListenerCertificatesInputDescribeListenerCertificatesPaginateTypeDef](./type_defs.md#describelistenercertificatesinputdescribelistenercertificatespaginatetypedef)
 - [DescribeListenerCertificatesInputRequestTypeDef](./type_defs.md#describelistenercertificatesinputrequesttypedef)
 - [DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef)
+- [DescribeListenersInputDescribeListenersPaginateTypeDef](./type_defs.md#describelistenersinputdescribelistenerspaginatetypedef)
 - [DescribeListenersInputRequestTypeDef](./type_defs.md#describelistenersinputrequesttypedef)
 - [DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef)
 - [DescribeLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#describeloadbalancerattributesinputrequesttypedef)
 - [DescribeLoadBalancerAttributesOutputTypeDef](./type_defs.md#describeloadbalancerattributesoutputtypedef)
+- [DescribeLoadBalancersInputDescribeLoadBalancersPaginateTypeDef](./type_defs.md#describeloadbalancersinputdescribeloadbalancerspaginatetypedef)
+- [DescribeLoadBalancersInputLoadBalancerAvailableWaitTypeDef](./type_defs.md#describeloadbalancersinputloadbalanceravailablewaittypedef)
+- [DescribeLoadBalancersInputLoadBalancerExistsWaitTypeDef](./type_defs.md#describeloadbalancersinputloadbalancerexistswaittypedef)
+- [DescribeLoadBalancersInputLoadBalancersDeletedWaitTypeDef](./type_defs.md#describeloadbalancersinputloadbalancersdeletedwaittypedef)
 - [DescribeLoadBalancersInputRequestTypeDef](./type_defs.md#describeloadbalancersinputrequesttypedef)
 - [DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef)
+- [DescribeRulesInputDescribeRulesPaginateTypeDef](./type_defs.md#describerulesinputdescriberulespaginatetypedef)
 - [DescribeRulesInputRequestTypeDef](./type_defs.md#describerulesinputrequesttypedef)
 - [DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef)
+- [DescribeSSLPoliciesInputDescribeSSLPoliciesPaginateTypeDef](./type_defs.md#describesslpoliciesinputdescribesslpoliciespaginatetypedef)
 - [DescribeSSLPoliciesInputRequestTypeDef](./type_defs.md#describesslpoliciesinputrequesttypedef)
 - [DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef)
 - [DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef)
 - [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef)
 - [DescribeTargetGroupAttributesInputRequestTypeDef](./type_defs.md#describetargetgroupattributesinputrequesttypedef)
 - [DescribeTargetGroupAttributesOutputTypeDef](./type_defs.md#describetargetgroupattributesoutputtypedef)
+- [DescribeTargetGroupsInputDescribeTargetGroupsPaginateTypeDef](./type_defs.md#describetargetgroupsinputdescribetargetgroupspaginatetypedef)
 - [DescribeTargetGroupsInputRequestTypeDef](./type_defs.md#describetargetgroupsinputrequesttypedef)
 - [DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef)
 - [DescribeTargetHealthInputRequestTypeDef](./type_defs.md#describetargethealthinputrequesttypedef)
+- [DescribeTargetHealthInputTargetDeregisteredWaitTypeDef](./type_defs.md#describetargethealthinputtargetderegisteredwaittypedef)
+- [DescribeTargetHealthInputTargetInServiceWaitTypeDef](./type_defs.md#describetargethealthinputtargetinservicewaittypedef)
 - [DescribeTargetHealthOutputTypeDef](./type_defs.md#describetargethealthoutputtypedef)
 - [FixedResponseActionConfigTypeDef](./type_defs.md#fixedresponseactionconfigtypedef)
 - [ForwardActionConfigTypeDef](./type_defs.md#forwardactionconfigtypedef)
@@ -368,3 +282,4 @@ from mypy_boto3_elbv2.type_defs import ActionTypeDef, ...
 - [TargetHealthDescriptionTypeDef](./type_defs.md#targethealthdescriptiontypedef)
 - [TargetHealthTypeDef](./type_defs.md#targethealthtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

@@ -1,32 +1,18 @@
-<a id="paginators-for-boto3-appsync-module"></a>
-
-# Paginators for boto3 AppSync module
+# Paginators
 
 > [Index](../README.md) > [AppSync](./README.md) > Paginators
 
-Auto-generated documentation for
-[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
-type annotations stubs module
-[mypy-boto3-appsync](https://pypi.org/project/mypy-boto3-appsync/).
+!!! note ""
 
-- [Paginators for boto3 AppSync module](#paginators-for-boto3-appsync-module)
-  - [ListApiKeysPaginator](#listapikeyspaginator)
-  - [ListDataSourcesPaginator](#listdatasourcespaginator)
-  - [ListFunctionsPaginator](#listfunctionspaginator)
-  - [ListGraphqlApisPaginator](#listgraphqlapispaginator)
-  - [ListResolversPaginator](#listresolverspaginator)
-  - [ListResolversByFunctionPaginator](#listresolversbyfunctionpaginator)
-  - [ListTypesPaginator](#listtypespaginator)
-
-<a id="listapikeyspaginator"></a>
+    Auto-generated documentation for [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
+    type annotations stubs module [mypy-boto3-appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 ## ListApiKeysPaginator
 
-Type annotations for `boto3.client("appsync").get_paginator("list_api_keys")`.
+Type annotations and code completion for `#!python boto3.client("appsync").get_paginator("list_api_keys")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListApiKeys)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appsync.paginator import ListApiKeysPaginator
@@ -35,28 +21,40 @@ def get_list_api_keys_paginator() -> ListApiKeysPaginator:
     return Session().client("appsync").get_paginator("list_api_keys")
 ```
 
-Boto3 documentation:
-[AppSync.Paginator.ListApiKeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListApiKeys)
 
-Arguments for `ListApiKeysPaginator.paginate` method:
+### paginate
 
-- `apiId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListApiKeysPaginator.paginate` method.
 
-`ListApiKeysPaginator.paginate` returns
-`_PageIterator`\[[ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    apiId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListApiKeysResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatasourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListApiKeysRequestListApiKeysPaginateTypeDef = {  # (1)
+    "apiId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApiKeysRequestListApiKeysPaginateTypeDef](./type_defs.md#listapikeysrequestlistapikeyspaginatetypedef) 
 ## ListDataSourcesPaginator
 
-Type annotations for
-`boto3.client("appsync").get_paginator("list_data_sources")`.
+Type annotations and code completion for `#!python boto3.client("appsync").get_paginator("list_data_sources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListDataSources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appsync.paginator import ListDataSourcesPaginator
@@ -65,27 +63,40 @@ def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
     return Session().client("appsync").get_paginator("list_data_sources")
 ```
 
-Boto3 documentation:
-[AppSync.Paginator.ListDataSources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListDataSources)
 
-Arguments for `ListDataSourcesPaginator.paginate` method:
+### paginate
 
-- `apiId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDataSourcesPaginator.paginate` method.
 
-`ListDataSourcesPaginator.paginate` returns
-`_PageIterator`\[[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    apiId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDataSourcesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfunctionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDataSourcesRequestListDataSourcesPaginateTypeDef = {  # (1)
+    "apiId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataSourcesRequestListDataSourcesPaginateTypeDef](./type_defs.md#listdatasourcesrequestlistdatasourcespaginatetypedef) 
 ## ListFunctionsPaginator
 
-Type annotations for `boto3.client("appsync").get_paginator("list_functions")`.
+Type annotations and code completion for `#!python boto3.client("appsync").get_paginator("list_functions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListFunctions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appsync.paginator import ListFunctionsPaginator
@@ -94,28 +105,40 @@ def get_list_functions_paginator() -> ListFunctionsPaginator:
     return Session().client("appsync").get_paginator("list_functions")
 ```
 
-Boto3 documentation:
-[AppSync.Paginator.ListFunctions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListFunctions)
 
-Arguments for `ListFunctionsPaginator.paginate` method:
+### paginate
 
-- `apiId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFunctionsPaginator.paginate` method.
 
-`ListFunctionsPaginator.paginate` returns
-`_PageIterator`\[[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    apiId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFunctionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgraphqlapispaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFunctionsRequestListFunctionsPaginateTypeDef = {  # (1)
+    "apiId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFunctionsRequestListFunctionsPaginateTypeDef](./type_defs.md#listfunctionsrequestlistfunctionspaginatetypedef) 
 ## ListGraphqlApisPaginator
 
-Type annotations for
-`boto3.client("appsync").get_paginator("list_graphql_apis")`.
+Type annotations and code completion for `#!python boto3.client("appsync").get_paginator("list_graphql_apis")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListGraphqlApis)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appsync.paginator import ListGraphqlApisPaginator
@@ -124,26 +147,39 @@ def get_list_graphql_apis_paginator() -> ListGraphqlApisPaginator:
     return Session().client("appsync").get_paginator("list_graphql_apis")
 ```
 
-Boto3 documentation:
-[AppSync.Paginator.ListGraphqlApis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListGraphqlApis)
 
-Arguments for `ListGraphqlApisPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGraphqlApisPaginator.paginate` method.
 
-`ListGraphqlApisPaginator.paginate` returns
-`_PageIterator`\[[ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGraphqlApisResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresolverspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGraphqlApisRequestListGraphqlApisPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGraphqlApisRequestListGraphqlApisPaginateTypeDef](./type_defs.md#listgraphqlapisrequestlistgraphqlapispaginatetypedef) 
 ## ListResolversPaginator
 
-Type annotations for `boto3.client("appsync").get_paginator("list_resolvers")`.
+Type annotations and code completion for `#!python boto3.client("appsync").get_paginator("list_resolvers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolvers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appsync.paginator import ListResolversPaginator
@@ -152,29 +188,42 @@ def get_list_resolvers_paginator() -> ListResolversPaginator:
     return Session().client("appsync").get_paginator("list_resolvers")
 ```
 
-Boto3 documentation:
-[AppSync.Paginator.ListResolvers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolvers)
 
-Arguments for `ListResolversPaginator.paginate` method:
+### paginate
 
-- `apiId`: `str` *(required)*
-- `typeName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolversPaginator.paginate` method.
 
-`ListResolversPaginator.paginate` returns
-`_PageIterator`\[[ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    apiId: str,
+    typeName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResolversResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresolversbyfunctionpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolversRequestListResolversPaginateTypeDef = {  # (1)
+    "apiId": ...,
+    "typeName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolversRequestListResolversPaginateTypeDef](./type_defs.md#listresolversrequestlistresolverspaginatetypedef) 
 ## ListResolversByFunctionPaginator
 
-Type annotations for
-`boto3.client("appsync").get_paginator("list_resolvers_by_function")`.
+Type annotations and code completion for `#!python boto3.client("appsync").get_paginator("list_resolvers_by_function")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolversByFunction)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appsync.paginator import ListResolversByFunctionPaginator
@@ -183,28 +232,42 @@ def get_list_resolvers_by_function_paginator() -> ListResolversByFunctionPaginat
     return Session().client("appsync").get_paginator("list_resolvers_by_function")
 ```
 
-Boto3 documentation:
-[AppSync.Paginator.ListResolversByFunction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListResolversByFunction)
 
-Arguments for `ListResolversByFunctionPaginator.paginate` method:
+### paginate
 
-- `apiId`: `str` *(required)*
-- `functionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResolversByFunctionPaginator.paginate` method.
 
-`ListResolversByFunctionPaginator.paginate` returns
-`_PageIterator`\[[ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    apiId: str,
+    functionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResolversByFunctionResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtypespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResolversByFunctionRequestListResolversByFunctionPaginateTypeDef = {  # (1)
+    "apiId": ...,
+    "functionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResolversByFunctionRequestListResolversByFunctionPaginateTypeDef](./type_defs.md#listresolversbyfunctionrequestlistresolversbyfunctionpaginatetypedef) 
 ## ListTypesPaginator
 
-Type annotations for `boto3.client("appsync").get_paginator("list_types")`.
+Type annotations and code completion for `#!python boto3.client("appsync").get_paginator("list_types")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListTypes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appsync.paginator import ListTypesPaginator
@@ -213,16 +276,34 @@ def get_list_types_paginator() -> ListTypesPaginator:
     return Session().client("appsync").get_paginator("list_types")
 ```
 
-Boto3 documentation:
-[AppSync.Paginator.ListTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Paginator.ListTypes)
 
-Arguments for `ListTypesPaginator.paginate` method:
+### paginate
 
-- `apiId`: `str` *(required)*
-- `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTypesPaginator.paginate` method.
 
-`ListTypesPaginator.paginate` returns
-`_PageIterator`\[[ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    apiId: str,
+    format: TypeDefinitionFormatType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListTypesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: TypeDefinitionFormatType](./literals.md#typedefinitionformattype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTypesRequestListTypesPaginateTypeDef = {  # (1)
+    "apiId": ...,
+    "format": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTypesRequestListTypesPaginateTypeDef](./type_defs.md#listtypesrequestlisttypespaginatetypedef) 

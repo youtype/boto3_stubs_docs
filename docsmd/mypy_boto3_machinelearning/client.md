@@ -1,62 +1,18 @@
-<a id="machinelearningclient-for-boto3-machinelearning-module"></a>
+# MachineLearningClient
 
-# MachineLearningClient for boto3 MachineLearning module
+> [Index](../README.md) > [MachineLearning](./README.md) > MachineLearningClient
 
-> [Index](../README.md) > [MachineLearning](./README.md) >
-> MachineLearningClient
+!!! note ""
 
-Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
-type annotations stubs module
-[mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
-
-- [MachineLearningClient for boto3 MachineLearning module](#machinelearningclient-for-boto3-machinelearning-module)
-  - [MachineLearningClient](#machinelearningclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_tags](#add_tags)
-    - [can_paginate](#can_paginate)
-    - [create_batch_prediction](#create_batch_prediction)
-    - [create_data_source_from_rds](#create_data_source_from_rds)
-    - [create_data_source_from_redshift](#create_data_source_from_redshift)
-    - [create_data_source_from_s3](#create_data_source_from_s3)
-    - [create_evaluation](#create_evaluation)
-    - [create_ml_model](#create_ml_model)
-    - [create_realtime_endpoint](#create_realtime_endpoint)
-    - [delete_batch_prediction](#delete_batch_prediction)
-    - [delete_data_source](#delete_data_source)
-    - [delete_evaluation](#delete_evaluation)
-    - [delete_ml_model](#delete_ml_model)
-    - [delete_realtime_endpoint](#delete_realtime_endpoint)
-    - [delete_tags](#delete_tags)
-    - [describe_batch_predictions](#describe_batch_predictions)
-    - [describe_data_sources](#describe_data_sources)
-    - [describe_evaluations](#describe_evaluations)
-    - [describe_ml_models](#describe_ml_models)
-    - [describe_tags](#describe_tags)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_batch_prediction](#get_batch_prediction)
-    - [get_data_source](#get_data_source)
-    - [get_evaluation](#get_evaluation)
-    - [get_ml_model](#get_ml_model)
-    - [predict](#predict)
-    - [update_batch_prediction](#update_batch_prediction)
-    - [update_data_source](#update_data_source)
-    - [update_evaluation](#update_evaluation)
-    - [update_ml_model](#update_ml_model)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="machinelearningclient"></a>
+    Auto-generated documentation for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+    type annotations stubs module [mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 ## MachineLearningClient
 
-Type annotations for `boto3.client("machinelearning")`
+Type annotations and code completion for `#!python boto3.client("machinelearning")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_machinelearning.client import MachineLearningClient
 
@@ -64,819 +20,1033 @@ def get_machinelearning_client() -> MachineLearningClient:
     return Session().client("machinelearning")
 ```
 
-Boto3 documentation:
-[MachineLearning.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("machinelearning").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("machinelearning")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.IdempotentParameterMismatchException,
+    client.InternalServerException,
+    client.InvalidInputException,
+    client.InvalidTagException,
+    client.LimitExceededException,
+    client.PredictorNotMountedException,
+    client.ResourceNotFoundException,
+    client.TagLimitExceededException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_machinelearning.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.IdempotentParameterMismatchException`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidInputException`
-- `Exceptions.InvalidTagException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.PredictorNotMountedException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TagLimitExceededException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MachineLearningClient exceptions.
-
-Type annotations for `boto3.client("machinelearning").exceptions` method.
-
-Boto3 documentation:
-[MachineLearning.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_tags"></a>
-
-### add_tags
+### add\_tags
 
 Adds one or more tags to an object, up to a limit of 10.
 
-Type annotations for `boto3.client("machinelearning").add_tags` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").add_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.add_tags)
 
-Boto3 documentation:
-[MachineLearning.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.add_tags)
+```python title="Method definition"
+def add_tags(
+    self,
+    *,
+    Tags: Sequence[TagTypeDef],  # (1)
+    ResourceId: str,
+    ResourceType: TaggableResourceTypeType,  # (2)
+) -> AddTagsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: TaggableResourceTypeType](./literals.md#taggableresourcetypetype) 
+3. See [:material-code-braces: AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
-- `ResourceId`: `str` *(required)*
-- `ResourceType`:
-  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsInputRequestTypeDef = {  # (1)
+    "Tags": ...,
+    "ResourceId": ...,
+    "ResourceType": ...,
+}
 
-Returns [AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef).
+parent.add_tags(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("machinelearning").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.can_paginate)
 
-Boto3 documentation:
-[MachineLearning.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_batch\_prediction"></a>
-
-### create_batch_prediction
+### create\_batch\_prediction
 
 Generates predictions for a group of observations.
 
-Type annotations for `boto3.client("machinelearning").create_batch_prediction`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").create_batch_prediction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction)
 
-Boto3 documentation:
-[MachineLearning.Client.create_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_batch_prediction)
+```python title="Method definition"
+def create_batch_prediction(
+    self,
+    *,
+    BatchPredictionId: str,
+    MLModelId: str,
+    BatchPredictionDataSourceId: str,
+    OutputUri: str,
+    BatchPredictionName: str = ...,
+) -> CreateBatchPredictionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateBatchPredictionInputRequestTypeDef](./type_defs.md#createbatchpredictioninputrequesttypedef).
+1. See [:material-code-braces: CreateBatchPredictionOutputTypeDef](./type_defs.md#createbatchpredictionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BatchPredictionId`: `str` *(required)*
-- `MLModelId`: `str` *(required)*
-- `BatchPredictionDataSourceId`: `str` *(required)*
-- `OutputUri`: `str` *(required)*
-- `BatchPredictionName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBatchPredictionInputRequestTypeDef = {  # (1)
+    "BatchPredictionId": ...,
+    "MLModelId": ...,
+    "BatchPredictionDataSourceId": ...,
+    "OutputUri": ...,
+}
 
-Returns
-[CreateBatchPredictionOutputTypeDef](./type_defs.md#createbatchpredictionoutputtypedef).
+parent.create_batch_prediction(**kwargs)
+```
 
-<a id="create\_data\_source\_from\_rds"></a>
+1. See [:material-code-braces: CreateBatchPredictionInputRequestTypeDef](./type_defs.md#createbatchpredictioninputrequesttypedef) 
 
-### create_data_source_from_rds
+### create\_data\_source\_from\_rds
 
-Creates a `DataSource` object from an
-`Amazon Relational Database Service <http://aws.amazon.com/rds/>`\_\_ (Amazon
-RDS).
+Creates a `DataSource` object from an `Amazon Relational Database Service
+<http://aws.amazon.com/rds/>`__ (Amazon RDS).
 
-Type annotations for
-`boto3.client("machinelearning").create_data_source_from_rds` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").create_data_source_from_rds` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds)
 
-Boto3 documentation:
-[MachineLearning.Client.create_data_source_from_rds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_rds)
+```python title="Method definition"
+def create_data_source_from_rds(
+    self,
+    *,
+    DataSourceId: str,
+    RDSData: RDSDataSpecTypeDef,  # (1)
+    RoleARN: str,
+    DataSourceName: str = ...,
+    ComputeStatistics: bool = ...,
+) -> CreateDataSourceFromRDSOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataSourceFromRDSInputRequestTypeDef](./type_defs.md#createdatasourcefromrdsinputrequesttypedef).
+1. See [:material-code-braces: RDSDataSpecTypeDef](./type_defs.md#rdsdataspectypedef) 
+2. See [:material-code-braces: CreateDataSourceFromRDSOutputTypeDef](./type_defs.md#createdatasourcefromrdsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `DataSourceId`: `str` *(required)*
-- `RDSData`: [RDSDataSpecTypeDef](./type_defs.md#rdsdataspectypedef)
-  *(required)*
-- `RoleARN`: `str` *(required)*
-- `DataSourceName`: `str`
-- `ComputeStatistics`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateDataSourceFromRDSInputRequestTypeDef = {  # (1)
+    "DataSourceId": ...,
+    "RDSData": ...,
+    "RoleARN": ...,
+}
 
-Returns
-[CreateDataSourceFromRDSOutputTypeDef](./type_defs.md#createdatasourcefromrdsoutputtypedef).
+parent.create_data_source_from_rds(**kwargs)
+```
 
-<a id="create\_data\_source\_from\_redshift"></a>
+1. See [:material-code-braces: CreateDataSourceFromRDSInputRequestTypeDef](./type_defs.md#createdatasourcefromrdsinputrequesttypedef) 
 
-### create_data_source_from_redshift
+### create\_data\_source\_from\_redshift
 
 Creates a `DataSource` from a database hosted on an Amazon Redshift cluster.
 
-Type annotations for
-`boto3.client("machinelearning").create_data_source_from_redshift` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").create_data_source_from_redshift` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift)
 
-Boto3 documentation:
-[MachineLearning.Client.create_data_source_from_redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_redshift)
+```python title="Method definition"
+def create_data_source_from_redshift(
+    self,
+    *,
+    DataSourceId: str,
+    DataSpec: RedshiftDataSpecTypeDef,  # (1)
+    RoleARN: str,
+    DataSourceName: str = ...,
+    ComputeStatistics: bool = ...,
+) -> CreateDataSourceFromRedshiftOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataSourceFromRedshiftInputRequestTypeDef](./type_defs.md#createdatasourcefromredshiftinputrequesttypedef).
+1. See [:material-code-braces: RedshiftDataSpecTypeDef](./type_defs.md#redshiftdataspectypedef) 
+2. See [:material-code-braces: CreateDataSourceFromRedshiftOutputTypeDef](./type_defs.md#createdatasourcefromredshiftoutputtypedef) 
 
-Keyword-only arguments:
 
-- `DataSourceId`: `str` *(required)*
-- `DataSpec`: [RedshiftDataSpecTypeDef](./type_defs.md#redshiftdataspectypedef)
-  *(required)*
-- `RoleARN`: `str` *(required)*
-- `DataSourceName`: `str`
-- `ComputeStatistics`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateDataSourceFromRedshiftInputRequestTypeDef = {  # (1)
+    "DataSourceId": ...,
+    "DataSpec": ...,
+    "RoleARN": ...,
+}
 
-Returns
-[CreateDataSourceFromRedshiftOutputTypeDef](./type_defs.md#createdatasourcefromredshiftoutputtypedef).
+parent.create_data_source_from_redshift(**kwargs)
+```
 
-<a id="create\_data\_source\_from\_s3"></a>
+1. See [:material-code-braces: CreateDataSourceFromRedshiftInputRequestTypeDef](./type_defs.md#createdatasourcefromredshiftinputrequesttypedef) 
 
-### create_data_source_from_s3
+### create\_data\_source\_from\_s3
 
 Creates a `DataSource` object.
 
-Type annotations for
-`boto3.client("machinelearning").create_data_source_from_s3` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").create_data_source_from_s3` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3)
 
-Boto3 documentation:
-[MachineLearning.Client.create_data_source_from_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_data_source_from_s3)
+```python title="Method definition"
+def create_data_source_from_s3(
+    self,
+    *,
+    DataSourceId: str,
+    DataSpec: S3DataSpecTypeDef,  # (1)
+    DataSourceName: str = ...,
+    ComputeStatistics: bool = ...,
+) -> CreateDataSourceFromS3OutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataSourceFromS3InputRequestTypeDef](./type_defs.md#createdatasourcefroms3inputrequesttypedef).
+1. See [:material-code-braces: S3DataSpecTypeDef](./type_defs.md#s3dataspectypedef) 
+2. See [:material-code-braces: CreateDataSourceFromS3OutputTypeDef](./type_defs.md#createdatasourcefroms3outputtypedef) 
 
-Keyword-only arguments:
 
-- `DataSourceId`: `str` *(required)*
-- `DataSpec`: [S3DataSpecTypeDef](./type_defs.md#s3dataspectypedef)
-  *(required)*
-- `DataSourceName`: `str`
-- `ComputeStatistics`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateDataSourceFromS3InputRequestTypeDef = {  # (1)
+    "DataSourceId": ...,
+    "DataSpec": ...,
+}
 
-Returns
-[CreateDataSourceFromS3OutputTypeDef](./type_defs.md#createdatasourcefroms3outputtypedef).
+parent.create_data_source_from_s3(**kwargs)
+```
 
-<a id="create\_evaluation"></a>
+1. See [:material-code-braces: CreateDataSourceFromS3InputRequestTypeDef](./type_defs.md#createdatasourcefroms3inputrequesttypedef) 
 
-### create_evaluation
+### create\_evaluation
 
 Creates a new `Evaluation` of an `MLModel`.
 
-Type annotations for `boto3.client("machinelearning").create_evaluation`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").create_evaluation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation)
 
-Boto3 documentation:
-[MachineLearning.Client.create_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_evaluation)
+```python title="Method definition"
+def create_evaluation(
+    self,
+    *,
+    EvaluationId: str,
+    MLModelId: str,
+    EvaluationDataSourceId: str,
+    EvaluationName: str = ...,
+) -> CreateEvaluationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateEvaluationInputRequestTypeDef](./type_defs.md#createevaluationinputrequesttypedef).
+1. See [:material-code-braces: CreateEvaluationOutputTypeDef](./type_defs.md#createevaluationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `EvaluationId`: `str` *(required)*
-- `MLModelId`: `str` *(required)*
-- `EvaluationDataSourceId`: `str` *(required)*
-- `EvaluationName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateEvaluationInputRequestTypeDef = {  # (1)
+    "EvaluationId": ...,
+    "MLModelId": ...,
+    "EvaluationDataSourceId": ...,
+}
 
-Returns
-[CreateEvaluationOutputTypeDef](./type_defs.md#createevaluationoutputtypedef).
+parent.create_evaluation(**kwargs)
+```
 
-<a id="create\_ml\_model"></a>
+1. See [:material-code-braces: CreateEvaluationInputRequestTypeDef](./type_defs.md#createevaluationinputrequesttypedef) 
 
-### create_ml_model
+### create\_ml\_model
 
 Creates a new `MLModel` using the `DataSource` and the recipe as information
 sources.
 
-Type annotations for `boto3.client("machinelearning").create_ml_model` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").create_ml_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model)
 
-Boto3 documentation:
-[MachineLearning.Client.create_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_ml_model)
+```python title="Method definition"
+def create_ml_model(
+    self,
+    *,
+    MLModelId: str,
+    MLModelType: MLModelTypeType,  # (1)
+    TrainingDataSourceId: str,
+    MLModelName: str = ...,
+    Parameters: Mapping[str, str] = ...,
+    Recipe: str = ...,
+    RecipeUri: str = ...,
+) -> CreateMLModelOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMLModelInputRequestTypeDef](./type_defs.md#createmlmodelinputrequesttypedef).
+1. See [:material-code-brackets: MLModelTypeType](./literals.md#mlmodeltypetype) 
+2. See [:material-code-braces: CreateMLModelOutputTypeDef](./type_defs.md#createmlmodeloutputtypedef) 
 
-Keyword-only arguments:
 
-- `MLModelId`: `str` *(required)*
-- `MLModelType`: [MLModelTypeType](./literals.md#mlmodeltypetype) *(required)*
-- `TrainingDataSourceId`: `str` *(required)*
-- `MLModelName`: `str`
-- `Parameters`: `Mapping`\[`str`, `str`\]
-- `Recipe`: `str`
-- `RecipeUri`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateMLModelInputRequestTypeDef = {  # (1)
+    "MLModelId": ...,
+    "MLModelType": ...,
+    "TrainingDataSourceId": ...,
+}
 
-Returns
-[CreateMLModelOutputTypeDef](./type_defs.md#createmlmodeloutputtypedef).
+parent.create_ml_model(**kwargs)
+```
 
-<a id="create\_realtime\_endpoint"></a>
+1. See [:material-code-braces: CreateMLModelInputRequestTypeDef](./type_defs.md#createmlmodelinputrequesttypedef) 
 
-### create_realtime_endpoint
+### create\_realtime\_endpoint
 
 Creates a real-time endpoint for the `MLModel`.
 
-Type annotations for `boto3.client("machinelearning").create_realtime_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").create_realtime_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint)
 
-Boto3 documentation:
-[MachineLearning.Client.create_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.create_realtime_endpoint)
+```python title="Method definition"
+def create_realtime_endpoint(
+    self,
+    *,
+    MLModelId: str,
+) -> CreateRealtimeEndpointOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRealtimeEndpointInputRequestTypeDef](./type_defs.md#createrealtimeendpointinputrequesttypedef).
+1. See [:material-code-braces: CreateRealtimeEndpointOutputTypeDef](./type_defs.md#createrealtimeendpointoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MLModelId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateRealtimeEndpointInputRequestTypeDef = {  # (1)
+    "MLModelId": ...,
+}
 
-Returns
-[CreateRealtimeEndpointOutputTypeDef](./type_defs.md#createrealtimeendpointoutputtypedef).
+parent.create_realtime_endpoint(**kwargs)
+```
 
-<a id="delete\_batch\_prediction"></a>
+1. See [:material-code-braces: CreateRealtimeEndpointInputRequestTypeDef](./type_defs.md#createrealtimeendpointinputrequesttypedef) 
 
-### delete_batch_prediction
+### delete\_batch\_prediction
 
 Assigns the DELETED status to a `BatchPrediction` , rendering it unusable.
 
-Type annotations for `boto3.client("machinelearning").delete_batch_prediction`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").delete_batch_prediction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction)
 
-Boto3 documentation:
-[MachineLearning.Client.delete_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_batch_prediction)
+```python title="Method definition"
+def delete_batch_prediction(
+    self,
+    *,
+    BatchPredictionId: str,
+) -> DeleteBatchPredictionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBatchPredictionInputRequestTypeDef](./type_defs.md#deletebatchpredictioninputrequesttypedef).
+1. See [:material-code-braces: DeleteBatchPredictionOutputTypeDef](./type_defs.md#deletebatchpredictionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BatchPredictionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBatchPredictionInputRequestTypeDef = {  # (1)
+    "BatchPredictionId": ...,
+}
 
-Returns
-[DeleteBatchPredictionOutputTypeDef](./type_defs.md#deletebatchpredictionoutputtypedef).
+parent.delete_batch_prediction(**kwargs)
+```
 
-<a id="delete\_data\_source"></a>
+1. See [:material-code-braces: DeleteBatchPredictionInputRequestTypeDef](./type_defs.md#deletebatchpredictioninputrequesttypedef) 
 
-### delete_data_source
+### delete\_data\_source
 
 Assigns the DELETED status to a `DataSource` , rendering it unusable.
 
-Type annotations for `boto3.client("machinelearning").delete_data_source`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").delete_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source)
 
-Boto3 documentation:
-[MachineLearning.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_data_source)
+```python title="Method definition"
+def delete_data_source(
+    self,
+    *,
+    DataSourceId: str,
+) -> DeleteDataSourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataSourceInputRequestTypeDef](./type_defs.md#deletedatasourceinputrequesttypedef).
+1. See [:material-code-braces: DeleteDataSourceOutputTypeDef](./type_defs.md#deletedatasourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `DataSourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDataSourceInputRequestTypeDef = {  # (1)
+    "DataSourceId": ...,
+}
 
-Returns
-[DeleteDataSourceOutputTypeDef](./type_defs.md#deletedatasourceoutputtypedef).
+parent.delete_data_source(**kwargs)
+```
 
-<a id="delete\_evaluation"></a>
+1. See [:material-code-braces: DeleteDataSourceInputRequestTypeDef](./type_defs.md#deletedatasourceinputrequesttypedef) 
 
-### delete_evaluation
+### delete\_evaluation
 
 Assigns the `DELETED` status to an `Evaluation` , rendering it unusable.
 
-Type annotations for `boto3.client("machinelearning").delete_evaluation`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").delete_evaluation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation)
 
-Boto3 documentation:
-[MachineLearning.Client.delete_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_evaluation)
+```python title="Method definition"
+def delete_evaluation(
+    self,
+    *,
+    EvaluationId: str,
+) -> DeleteEvaluationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEvaluationInputRequestTypeDef](./type_defs.md#deleteevaluationinputrequesttypedef).
+1. See [:material-code-braces: DeleteEvaluationOutputTypeDef](./type_defs.md#deleteevaluationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `EvaluationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEvaluationInputRequestTypeDef = {  # (1)
+    "EvaluationId": ...,
+}
 
-Returns
-[DeleteEvaluationOutputTypeDef](./type_defs.md#deleteevaluationoutputtypedef).
+parent.delete_evaluation(**kwargs)
+```
 
-<a id="delete\_ml\_model"></a>
+1. See [:material-code-braces: DeleteEvaluationInputRequestTypeDef](./type_defs.md#deleteevaluationinputrequesttypedef) 
 
-### delete_ml_model
+### delete\_ml\_model
 
 Assigns the `DELETED` status to an `MLModel` , rendering it unusable.
 
-Type annotations for `boto3.client("machinelearning").delete_ml_model` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").delete_ml_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model)
 
-Boto3 documentation:
-[MachineLearning.Client.delete_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_ml_model)
+```python title="Method definition"
+def delete_ml_model(
+    self,
+    *,
+    MLModelId: str,
+) -> DeleteMLModelOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMLModelInputRequestTypeDef](./type_defs.md#deletemlmodelinputrequesttypedef).
+1. See [:material-code-braces: DeleteMLModelOutputTypeDef](./type_defs.md#deletemlmodeloutputtypedef) 
 
-Keyword-only arguments:
 
-- `MLModelId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMLModelInputRequestTypeDef = {  # (1)
+    "MLModelId": ...,
+}
 
-Returns
-[DeleteMLModelOutputTypeDef](./type_defs.md#deletemlmodeloutputtypedef).
+parent.delete_ml_model(**kwargs)
+```
 
-<a id="delete\_realtime\_endpoint"></a>
+1. See [:material-code-braces: DeleteMLModelInputRequestTypeDef](./type_defs.md#deletemlmodelinputrequesttypedef) 
 
-### delete_realtime_endpoint
+### delete\_realtime\_endpoint
 
 Deletes a real time endpoint of an `MLModel` .
 
-Type annotations for `boto3.client("machinelearning").delete_realtime_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").delete_realtime_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint)
 
-Boto3 documentation:
-[MachineLearning.Client.delete_realtime_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_realtime_endpoint)
+```python title="Method definition"
+def delete_realtime_endpoint(
+    self,
+    *,
+    MLModelId: str,
+) -> DeleteRealtimeEndpointOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRealtimeEndpointInputRequestTypeDef](./type_defs.md#deleterealtimeendpointinputrequesttypedef).
+1. See [:material-code-braces: DeleteRealtimeEndpointOutputTypeDef](./type_defs.md#deleterealtimeendpointoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MLModelId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRealtimeEndpointInputRequestTypeDef = {  # (1)
+    "MLModelId": ...,
+}
 
-Returns
-[DeleteRealtimeEndpointOutputTypeDef](./type_defs.md#deleterealtimeendpointoutputtypedef).
+parent.delete_realtime_endpoint(**kwargs)
+```
 
-<a id="delete\_tags"></a>
+1. See [:material-code-braces: DeleteRealtimeEndpointInputRequestTypeDef](./type_defs.md#deleterealtimeendpointinputrequesttypedef) 
 
-### delete_tags
+### delete\_tags
 
 Deletes the specified tags associated with an ML object.
 
-Type annotations for `boto3.client("machinelearning").delete_tags` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").delete_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_tags)
 
-Boto3 documentation:
-[MachineLearning.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.delete_tags)
+```python title="Method definition"
+def delete_tags(
+    self,
+    *,
+    TagKeys: Sequence[str],
+    ResourceId: str,
+    ResourceType: TaggableResourceTypeType,  # (1)
+) -> DeleteTagsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTagsInputRequestTypeDef](./type_defs.md#deletetagsinputrequesttypedef).
+1. See [:material-code-brackets: TaggableResourceTypeType](./literals.md#taggableresourcetypetype) 
+2. See [:material-code-braces: DeleteTagsOutputTypeDef](./type_defs.md#deletetagsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
-- `ResourceId`: `str` *(required)*
-- `ResourceType`:
-  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTagsInputRequestTypeDef = {  # (1)
+    "TagKeys": ...,
+    "ResourceId": ...,
+    "ResourceType": ...,
+}
 
-Returns [DeleteTagsOutputTypeDef](./type_defs.md#deletetagsoutputtypedef).
+parent.delete_tags(**kwargs)
+```
 
-<a id="describe\_batch\_predictions"></a>
+1. See [:material-code-braces: DeleteTagsInputRequestTypeDef](./type_defs.md#deletetagsinputrequesttypedef) 
 
-### describe_batch_predictions
+### describe\_batch\_predictions
 
-Returns a list of `BatchPrediction` operations that match the search criteria
-in the request.
+Returns a list of `BatchPrediction` operations that match the search criteria in
+the request.
 
-Type annotations for
-`boto3.client("machinelearning").describe_batch_predictions` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").describe_batch_predictions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions)
 
-Boto3 documentation:
-[MachineLearning.Client.describe_batch_predictions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_batch_predictions)
+```python title="Method definition"
+def describe_batch_predictions(
+    self,
+    *,
+    FilterVariable: BatchPredictionFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeBatchPredictionsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBatchPredictionsInputRequestTypeDef](./type_defs.md#describebatchpredictionsinputrequesttypedef).
+1. See [:material-code-brackets: BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FilterVariable`:
-  [BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeBatchPredictionsInputRequestTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
 
-Returns
-[DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef).
+parent.describe_batch_predictions(**kwargs)
+```
 
-<a id="describe\_data\_sources"></a>
+1. See [:material-code-braces: DescribeBatchPredictionsInputRequestTypeDef](./type_defs.md#describebatchpredictionsinputrequesttypedef) 
 
-### describe_data_sources
+### describe\_data\_sources
 
 Returns a list of `DataSource` that match the search criteria in the request.
 
-Type annotations for `boto3.client("machinelearning").describe_data_sources`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").describe_data_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources)
 
-Boto3 documentation:
-[MachineLearning.Client.describe_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_data_sources)
+```python title="Method definition"
+def describe_data_sources(
+    self,
+    *,
+    FilterVariable: DataSourceFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeDataSourcesOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDataSourcesInputRequestTypeDef](./type_defs.md#describedatasourcesinputrequesttypedef).
+1. See [:material-code-brackets: DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FilterVariable`:
-  [DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSourcesInputRequestTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
 
-Returns
-[DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef).
+parent.describe_data_sources(**kwargs)
+```
 
-<a id="describe\_evaluations"></a>
+1. See [:material-code-braces: DescribeDataSourcesInputRequestTypeDef](./type_defs.md#describedatasourcesinputrequesttypedef) 
 
-### describe_evaluations
+### describe\_evaluations
 
 Returns a list of `DescribeEvaluations` that match the search criteria in the
 request.
 
-Type annotations for `boto3.client("machinelearning").describe_evaluations`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").describe_evaluations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations)
 
-Boto3 documentation:
-[MachineLearning.Client.describe_evaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_evaluations)
+```python title="Method definition"
+def describe_evaluations(
+    self,
+    *,
+    FilterVariable: EvaluationFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeEvaluationsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEvaluationsInputRequestTypeDef](./type_defs.md#describeevaluationsinputrequesttypedef).
+1. See [:material-code-brackets: EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FilterVariable`:
-  [EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeEvaluationsInputRequestTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
 
-Returns
-[DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef).
+parent.describe_evaluations(**kwargs)
+```
 
-<a id="describe\_ml\_models"></a>
+1. See [:material-code-braces: DescribeEvaluationsInputRequestTypeDef](./type_defs.md#describeevaluationsinputrequesttypedef) 
 
-### describe_ml_models
+### describe\_ml\_models
 
 Returns a list of `MLModel` that match the search criteria in the request.
 
-Type annotations for `boto3.client("machinelearning").describe_ml_models`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").describe_ml_models` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models)
 
-Boto3 documentation:
-[MachineLearning.Client.describe_ml_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_ml_models)
+```python title="Method definition"
+def describe_ml_models(
+    self,
+    *,
+    FilterVariable: MLModelFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeMLModelsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMLModelsInputRequestTypeDef](./type_defs.md#describemlmodelsinputrequesttypedef).
+1. See [:material-code-brackets: MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FilterVariable`:
-  [MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeMLModelsInputRequestTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
 
-Returns
-[DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef).
+parent.describe_ml_models(**kwargs)
+```
 
-<a id="describe\_tags"></a>
+1. See [:material-code-braces: DescribeMLModelsInputRequestTypeDef](./type_defs.md#describemlmodelsinputrequesttypedef) 
 
-### describe_tags
+### describe\_tags
 
 Describes one or more of the tags for your Amazon ML object.
 
-Type annotations for `boto3.client("machinelearning").describe_tags` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").describe_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_tags)
 
-Boto3 documentation:
-[MachineLearning.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.describe_tags)
+```python title="Method definition"
+def describe_tags(
+    self,
+    *,
+    ResourceId: str,
+    ResourceType: TaggableResourceTypeType,  # (1)
+) -> DescribeTagsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef).
+1. See [:material-code-brackets: TaggableResourceTypeType](./literals.md#taggableresourcetypetype) 
+2. See [:material-code-braces: DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `ResourceType`:
-  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTagsInputRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "ResourceType": ...,
+}
 
-Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
+parent.describe_tags(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("machinelearning").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MachineLearning.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_batch\_prediction"></a>
-
-### get_batch_prediction
+### get\_batch\_prediction
 
 Returns a `BatchPrediction` that includes detailed metadata, status, and data
 file information for a `Batch Prediction` request.
 
-Type annotations for `boto3.client("machinelearning").get_batch_prediction`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_batch_prediction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction)
 
-Boto3 documentation:
-[MachineLearning.Client.get_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_batch_prediction)
+```python title="Method definition"
+def get_batch_prediction(
+    self,
+    *,
+    BatchPredictionId: str,
+) -> GetBatchPredictionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBatchPredictionInputRequestTypeDef](./type_defs.md#getbatchpredictioninputrequesttypedef).
+1. See [:material-code-braces: GetBatchPredictionOutputTypeDef](./type_defs.md#getbatchpredictionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BatchPredictionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBatchPredictionInputRequestTypeDef = {  # (1)
+    "BatchPredictionId": ...,
+}
 
-Returns
-[GetBatchPredictionOutputTypeDef](./type_defs.md#getbatchpredictionoutputtypedef).
+parent.get_batch_prediction(**kwargs)
+```
 
-<a id="get\_data\_source"></a>
+1. See [:material-code-braces: GetBatchPredictionInputRequestTypeDef](./type_defs.md#getbatchpredictioninputrequesttypedef) 
 
-### get_data_source
+### get\_data\_source
 
-Returns a `DataSource` that includes metadata and data file information, as
-well as the current status of the `DataSource` .
+Returns a `DataSource` that includes metadata and data file information, as well
+as the current status of the `DataSource` .
 
-Type annotations for `boto3.client("machinelearning").get_data_source` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_data_source)
 
-Boto3 documentation:
-[MachineLearning.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_data_source)
+```python title="Method definition"
+def get_data_source(
+    self,
+    *,
+    DataSourceId: str,
+    Verbose: bool = ...,
+) -> GetDataSourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataSourceInputRequestTypeDef](./type_defs.md#getdatasourceinputrequesttypedef).
+1. See [:material-code-braces: GetDataSourceOutputTypeDef](./type_defs.md#getdatasourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `DataSourceId`: `str` *(required)*
-- `Verbose`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetDataSourceInputRequestTypeDef = {  # (1)
+    "DataSourceId": ...,
+}
 
-Returns
-[GetDataSourceOutputTypeDef](./type_defs.md#getdatasourceoutputtypedef).
+parent.get_data_source(**kwargs)
+```
 
-<a id="get\_evaluation"></a>
+1. See [:material-code-braces: GetDataSourceInputRequestTypeDef](./type_defs.md#getdatasourceinputrequesttypedef) 
 
-### get_evaluation
+### get\_evaluation
 
 Returns an `Evaluation` that includes metadata as well as the current status of
 the `Evaluation` .
 
-Type annotations for `boto3.client("machinelearning").get_evaluation` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_evaluation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation)
 
-Boto3 documentation:
-[MachineLearning.Client.get_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_evaluation)
+```python title="Method definition"
+def get_evaluation(
+    self,
+    *,
+    EvaluationId: str,
+) -> GetEvaluationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEvaluationInputRequestTypeDef](./type_defs.md#getevaluationinputrequesttypedef).
+1. See [:material-code-braces: GetEvaluationOutputTypeDef](./type_defs.md#getevaluationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `EvaluationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEvaluationInputRequestTypeDef = {  # (1)
+    "EvaluationId": ...,
+}
 
-Returns
-[GetEvaluationOutputTypeDef](./type_defs.md#getevaluationoutputtypedef).
+parent.get_evaluation(**kwargs)
+```
 
-<a id="get\_ml\_model"></a>
+1. See [:material-code-braces: GetEvaluationInputRequestTypeDef](./type_defs.md#getevaluationinputrequesttypedef) 
 
-### get_ml_model
+### get\_ml\_model
 
 Returns an `MLModel` that includes detailed metadata, data source information,
 and the current status of the `MLModel` .
 
-Type annotations for `boto3.client("machinelearning").get_ml_model` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_ml_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model)
 
-Boto3 documentation:
-[MachineLearning.Client.get_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.get_ml_model)
+```python title="Method definition"
+def get_ml_model(
+    self,
+    *,
+    MLModelId: str,
+    Verbose: bool = ...,
+) -> GetMLModelOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMLModelInputRequestTypeDef](./type_defs.md#getmlmodelinputrequesttypedef).
+1. See [:material-code-braces: GetMLModelOutputTypeDef](./type_defs.md#getmlmodeloutputtypedef) 
 
-Keyword-only arguments:
 
-- `MLModelId`: `str` *(required)*
-- `Verbose`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetMLModelInputRequestTypeDef = {  # (1)
+    "MLModelId": ...,
+}
 
-Returns [GetMLModelOutputTypeDef](./type_defs.md#getmlmodeloutputtypedef).
+parent.get_ml_model(**kwargs)
+```
 
-<a id="predict"></a>
+1. See [:material-code-braces: GetMLModelInputRequestTypeDef](./type_defs.md#getmlmodelinputrequesttypedef) 
 
 ### predict
 
 Generates a prediction for the observation using the specified `ML Model` .
 
-Type annotations for `boto3.client("machinelearning").predict` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").predict` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.predict)
 
-Boto3 documentation:
-[MachineLearning.Client.predict](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.predict)
+```python title="Method definition"
+def predict(
+    self,
+    *,
+    MLModelId: str,
+    Record: Mapping[str, str],
+    PredictEndpoint: str,
+) -> PredictOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PredictInputRequestTypeDef](./type_defs.md#predictinputrequesttypedef).
+1. See [:material-code-braces: PredictOutputTypeDef](./type_defs.md#predictoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MLModelId`: `str` *(required)*
-- `Record`: `Mapping`\[`str`, `str`\] *(required)*
-- `PredictEndpoint`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PredictInputRequestTypeDef = {  # (1)
+    "MLModelId": ...,
+    "Record": ...,
+    "PredictEndpoint": ...,
+}
 
-Returns [PredictOutputTypeDef](./type_defs.md#predictoutputtypedef).
+parent.predict(**kwargs)
+```
 
-<a id="update\_batch\_prediction"></a>
+1. See [:material-code-braces: PredictInputRequestTypeDef](./type_defs.md#predictinputrequesttypedef) 
 
-### update_batch_prediction
+### update\_batch\_prediction
 
 Updates the `BatchPredictionName` of a `BatchPrediction` .
 
-Type annotations for `boto3.client("machinelearning").update_batch_prediction`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").update_batch_prediction` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction)
 
-Boto3 documentation:
-[MachineLearning.Client.update_batch_prediction](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_batch_prediction)
+```python title="Method definition"
+def update_batch_prediction(
+    self,
+    *,
+    BatchPredictionId: str,
+    BatchPredictionName: str,
+) -> UpdateBatchPredictionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBatchPredictionInputRequestTypeDef](./type_defs.md#updatebatchpredictioninputrequesttypedef).
+1. See [:material-code-braces: UpdateBatchPredictionOutputTypeDef](./type_defs.md#updatebatchpredictionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BatchPredictionId`: `str` *(required)*
-- `BatchPredictionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateBatchPredictionInputRequestTypeDef = {  # (1)
+    "BatchPredictionId": ...,
+    "BatchPredictionName": ...,
+}
 
-Returns
-[UpdateBatchPredictionOutputTypeDef](./type_defs.md#updatebatchpredictionoutputtypedef).
+parent.update_batch_prediction(**kwargs)
+```
 
-<a id="update\_data\_source"></a>
+1. See [:material-code-braces: UpdateBatchPredictionInputRequestTypeDef](./type_defs.md#updatebatchpredictioninputrequesttypedef) 
 
-### update_data_source
+### update\_data\_source
 
 Updates the `DataSourceName` of a `DataSource` .
 
-Type annotations for `boto3.client("machinelearning").update_data_source`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").update_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_data_source)
 
-Boto3 documentation:
-[MachineLearning.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_data_source)
+```python title="Method definition"
+def update_data_source(
+    self,
+    *,
+    DataSourceId: str,
+    DataSourceName: str,
+) -> UpdateDataSourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataSourceInputRequestTypeDef](./type_defs.md#updatedatasourceinputrequesttypedef).
+1. See [:material-code-braces: UpdateDataSourceOutputTypeDef](./type_defs.md#updatedatasourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `DataSourceId`: `str` *(required)*
-- `DataSourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateDataSourceInputRequestTypeDef = {  # (1)
+    "DataSourceId": ...,
+    "DataSourceName": ...,
+}
 
-Returns
-[UpdateDataSourceOutputTypeDef](./type_defs.md#updatedatasourceoutputtypedef).
+parent.update_data_source(**kwargs)
+```
 
-<a id="update\_evaluation"></a>
+1. See [:material-code-braces: UpdateDataSourceInputRequestTypeDef](./type_defs.md#updatedatasourceinputrequesttypedef) 
 
-### update_evaluation
+### update\_evaluation
 
 Updates the `EvaluationName` of an `Evaluation` .
 
-Type annotations for `boto3.client("machinelearning").update_evaluation`
-method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").update_evaluation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation)
 
-Boto3 documentation:
-[MachineLearning.Client.update_evaluation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_evaluation)
+```python title="Method definition"
+def update_evaluation(
+    self,
+    *,
+    EvaluationId: str,
+    EvaluationName: str,
+) -> UpdateEvaluationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEvaluationInputRequestTypeDef](./type_defs.md#updateevaluationinputrequesttypedef).
+1. See [:material-code-braces: UpdateEvaluationOutputTypeDef](./type_defs.md#updateevaluationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `EvaluationId`: `str` *(required)*
-- `EvaluationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateEvaluationInputRequestTypeDef = {  # (1)
+    "EvaluationId": ...,
+    "EvaluationName": ...,
+}
 
-Returns
-[UpdateEvaluationOutputTypeDef](./type_defs.md#updateevaluationoutputtypedef).
+parent.update_evaluation(**kwargs)
+```
 
-<a id="update\_ml\_model"></a>
+1. See [:material-code-braces: UpdateEvaluationInputRequestTypeDef](./type_defs.md#updateevaluationinputrequesttypedef) 
 
-### update_ml_model
+### update\_ml\_model
 
 Updates the `MLModelName` and the `ScoreThreshold` of an `MLModel` .
 
-Type annotations for `boto3.client("machinelearning").update_ml_model` method.
+Type annotations and code completion for `#!python boto3.client("machinelearning").update_ml_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model)
 
-Boto3 documentation:
-[MachineLearning.Client.update_ml_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.update_ml_model)
+```python title="Method definition"
+def update_ml_model(
+    self,
+    *,
+    MLModelId: str,
+    MLModelName: str = ...,
+    ScoreThreshold: float = ...,
+) -> UpdateMLModelOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMLModelInputRequestTypeDef](./type_defs.md#updatemlmodelinputrequesttypedef).
+1. See [:material-code-braces: UpdateMLModelOutputTypeDef](./type_defs.md#updatemlmodeloutputtypedef) 
 
-Keyword-only arguments:
 
-- `MLModelId`: `str` *(required)*
-- `MLModelName`: `str`
-- `ScoreThreshold`: `float`
+```python title="Usage example with kwargs"
+kwargs: UpdateMLModelInputRequestTypeDef = {  # (1)
+    "MLModelId": ...,
+}
 
-Returns
-[UpdateMLModelOutputTypeDef](./type_defs.md#updatemlmodeloutputtypedef).
+parent.update_ml_model(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateMLModelInputRequestTypeDef](./type_defs.md#updatemlmodelinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("machinelearning").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_batch_predictions")` ->
-  [DescribeBatchPredictionsPaginator](./paginators.md#describebatchpredictionspaginator)
-- `client.get_paginator("describe_data_sources")` ->
-  [DescribeDataSourcesPaginator](./paginators.md#describedatasourcespaginator)
-- `client.get_paginator("describe_evaluations")` ->
-  [DescribeEvaluationsPaginator](./paginators.md#describeevaluationspaginator)
-- `client.get_paginator("describe_ml_models")` ->
-  [DescribeMLModelsPaginator](./paginators.md#describemlmodelspaginator)
+- `client.get_paginator("describe_batch_predictions")` -> [DescribeBatchPredictionsPaginator](./paginators.md#describebatchpredictionspaginator)
+- `client.get_paginator("describe_data_sources")` -> [DescribeDataSourcesPaginator](./paginators.md#describedatasourcespaginator)
+- `client.get_paginator("describe_evaluations")` -> [DescribeEvaluationsPaginator](./paginators.md#describeevaluationspaginator)
+- `client.get_paginator("describe_ml_models")` -> [DescribeMLModelsPaginator](./paginators.md#describemlmodelspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("machinelearning").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_waiter` method with overloads.
 
-- `client.get_waiter("batch_prediction_available")` ->
-  [BatchPredictionAvailableWaiter](./waiters.md#batchpredictionavailablewaiter)
-- `client.get_waiter("data_source_available")` ->
-  [DataSourceAvailableWaiter](./waiters.md#datasourceavailablewaiter)
-- `client.get_waiter("evaluation_available")` ->
-  [EvaluationAvailableWaiter](./waiters.md#evaluationavailablewaiter)
-- `client.get_waiter("ml_model_available")` ->
-  [MLModelAvailableWaiter](./waiters.md#mlmodelavailablewaiter)
+- `client.get_waiter("batch_prediction_available")` -> [BatchPredictionAvailableWaiter](./waiters.md#batchpredictionavailablewaiter)
+- `client.get_waiter("data_source_available")` -> [DataSourceAvailableWaiter](./waiters.md#datasourceavailablewaiter)
+- `client.get_waiter("evaluation_available")` -> [EvaluationAvailableWaiter](./waiters.md#evaluationavailablewaiter)
+- `client.get_waiter("ml_model_available")` -> [MLModelAvailableWaiter](./waiters.md#mlmodelavailablewaiter)
+

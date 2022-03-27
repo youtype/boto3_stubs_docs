@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-lexruntimeservice-module"></a>
-
-# Examples for boto3 LexRuntimeService module
+# Examples
 
 > [Index](../README.md) > [LexRuntimeService](./README.md) > Examples
 
-- [Examples for boto3 LexRuntimeService module](#examples-for-boto3-lexruntimeservice-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
+    type annotations stubs module [mypy-boto3-lex-runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[lex-runtime]` package installed.
 
-Write your `LexRuntimeService` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `LexRuntimeService` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type LexRuntimeServiceClient
-# and provides type checking and code completion
-client = session.client("lex-runtime")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("lex-runtime")  # (1)
+    result = client.delete_session()  # (2)
+    ```
+
+    1. client: [LexRuntimeServiceClient](./client.md)
+    2. result: [:material-code-braces: DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[lex-runtime]` or a standalone `mypy_boto3_lex_runtime`
-package, you have to explicitly specify `client: LexRuntimeServiceClient` type
-annotation.
+With `boto3-stubs-lite[lex-runtime]`
+or a standalone `mypy_boto3_lex_runtime` package, you have to explicitly specify `client: LexRuntimeServiceClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_lex_runtime.client import LexRuntimeServiceClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_lex_runtime.client import LexRuntimeServiceClient
+    from mypy_boto3_lex_runtime.type_defs import DeleteSessionResponseTypeDef
+    from mypy_boto3_lex_runtime.type_defs import DeleteSessionRequestRequestTypeDef
 
 
-from mypy_boto3_lex_runtime.type_defs import bool
+    session = Session()
+
+    client: LexRuntimeServiceClient = session.client("lex-runtime")
+
+    kwargs: DeleteSessionRequestRequestTypeDef = {...}
+    result: DeleteSessionResponseTypeDef = client.delete_session(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: LexRuntimeServiceClient = session.client("lex-runtime")
 
-result: bool = client.can_paginate()
-```
+

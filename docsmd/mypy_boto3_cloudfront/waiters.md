@@ -1,29 +1,18 @@
-<a id="waiters-for-boto3-cloudfront-module"></a>
-
-# Waiters for boto3 CloudFront module
+# Waiters
 
 > [Index](../README.md) > [CloudFront](./README.md) > Waiters
 
-Auto-generated documentation for
-[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
-type annotations stubs module
-[mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+!!! note ""
 
-- [Waiters for boto3 CloudFront module](#waiters-for-boto3-cloudfront-module)
-  - [DistributionDeployedWaiter](#distributiondeployedwaiter)
-  - [InvalidationCompletedWaiter](#invalidationcompletedwaiter)
-  - [StreamingDistributionDeployedWaiter](#streamingdistributiondeployedwaiter)
-
-<a id="distributiondeployedwaiter"></a>
+    Auto-generated documentation for [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+    type annotations stubs module [mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 ## DistributionDeployedWaiter
 
-Type annotations for
-`boto3.client("cloudfront").get_waiter("distribution_deployed")`.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_waiter("distribution_deployed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.DistributionDeployed)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudfront.waiter import DistributionDeployedWaiter
@@ -32,24 +21,39 @@ def get_distribution_deployed_waiter() -> DistributionDeployedWaiter:
     return Session().client("cloudfront").get_waiter("distribution_deployed")
 ```
 
-Boto3 documentation:
-[CloudFront.Waiter.distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.DistributionDeployed)
 
-Arguments for `DistributionDeployedWaiter.wait` method:
+### wait
 
-- `Id`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python DistributionDeployedWaiter.wait` method.
 
-<a id="invalidationcompletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Id: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDistributionRequestDistributionDeployedWaitTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetDistributionRequestDistributionDeployedWaitTypeDef](./type_defs.md#getdistributionrequestdistributiondeployedwaittypedef) 
 ## InvalidationCompletedWaiter
 
-Type annotations for
-`boto3.client("cloudfront").get_waiter("invalidation_completed")`.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_waiter("invalidation_completed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.InvalidationCompleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudfront.waiter import InvalidationCompletedWaiter
@@ -58,25 +62,41 @@ def get_invalidation_completed_waiter() -> InvalidationCompletedWaiter:
     return Session().client("cloudfront").get_waiter("invalidation_completed")
 ```
 
-Boto3 documentation:
-[CloudFront.Waiter.invalidation_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.InvalidationCompleted)
 
-Arguments for `InvalidationCompletedWaiter.wait` method:
+### wait
 
-- `DistributionId`: `str` *(required)*
-- `Id`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InvalidationCompletedWaiter.wait` method.
 
-<a id="streamingdistributiondeployedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    DistributionId: str,
+    Id: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetInvalidationRequestInvalidationCompletedWaitTypeDef = {  # (1)
+    "DistributionId": ...,
+    "Id": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetInvalidationRequestInvalidationCompletedWaitTypeDef](./type_defs.md#getinvalidationrequestinvalidationcompletedwaittypedef) 
 ## StreamingDistributionDeployedWaiter
 
-Type annotations for
-`boto3.client("cloudfront").get_waiter("streaming_distribution_deployed")`.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_waiter("streaming_distribution_deployed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.StreamingDistributionDeployed)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cloudfront.waiter import StreamingDistributionDeployedWaiter
@@ -85,10 +105,30 @@ def get_streaming_distribution_deployed_waiter() -> StreamingDistributionDeploye
     return Session().client("cloudfront").get_waiter("streaming_distribution_deployed")
 ```
 
-Boto3 documentation:
-[CloudFront.Waiter.streaming_distribution_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Waiter.StreamingDistributionDeployed)
 
-Arguments for `StreamingDistributionDeployedWaiter.wait` method:
+### wait
 
-- `Id`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StreamingDistributionDeployedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Id: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStreamingDistributionRequestStreamingDistributionDeployedWaitTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStreamingDistributionRequestStreamingDistributionDeployedWaitTypeDef](./type_defs.md#getstreamingdistributionrequeststreamingdistributiondeployedwaittypedef) 

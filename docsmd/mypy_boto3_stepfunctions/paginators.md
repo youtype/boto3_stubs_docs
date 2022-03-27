@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-sfn-module"></a>
-
-# Paginators for boto3 SFN module
+# Paginators
 
 > [Index](../README.md) > [SFN](./README.md) > Paginators
 
-Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
-type annotations stubs module
-[mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+!!! note ""
 
-- [Paginators for boto3 SFN module](#paginators-for-boto3-sfn-module)
-  - [GetExecutionHistoryPaginator](#getexecutionhistorypaginator)
-  - [ListActivitiesPaginator](#listactivitiespaginator)
-  - [ListExecutionsPaginator](#listexecutionspaginator)
-  - [ListStateMachinesPaginator](#liststatemachinespaginator)
-
-<a id="getexecutionhistorypaginator"></a>
+    Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+    type annotations stubs module [mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 ## GetExecutionHistoryPaginator
 
-Type annotations for
-`boto3.client("stepfunctions").get_paginator("get_execution_history")`.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").get_paginator("get_execution_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_stepfunctions.paginator import GetExecutionHistoryPaginator
@@ -33,30 +21,42 @@ def get_get_execution_history_paginator() -> GetExecutionHistoryPaginator:
     return Session().client("stepfunctions").get_paginator("get_execution_history")
 ```
 
-Boto3 documentation:
-[SFN.Paginator.GetExecutionHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.GetExecutionHistory)
 
-Arguments for `GetExecutionHistoryPaginator.paginate` method:
+### paginate
 
-- `executionArn`: `str` *(required)*
-- `reverseOrder`: `bool`
-- `includeExecutionData`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetExecutionHistoryPaginator.paginate` method.
 
-`GetExecutionHistoryPaginator.paginate` returns
-`_PageIterator`\[[GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    executionArn: str,
+    reverseOrder: bool = ...,
+    includeExecutionData: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetExecutionHistoryOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listactivitiespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetExecutionHistoryInputGetExecutionHistoryPaginateTypeDef = {  # (1)
+    "executionArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetExecutionHistoryInputGetExecutionHistoryPaginateTypeDef](./type_defs.md#getexecutionhistoryinputgetexecutionhistorypaginatetypedef) 
 ## ListActivitiesPaginator
 
-Type annotations for
-`boto3.client("stepfunctions").get_paginator("list_activities")`.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").get_paginator("list_activities")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_stepfunctions.paginator import ListActivitiesPaginator
@@ -65,27 +65,39 @@ def get_list_activities_paginator() -> ListActivitiesPaginator:
     return Session().client("stepfunctions").get_paginator("list_activities")
 ```
 
-Boto3 documentation:
-[SFN.Paginator.ListActivities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListActivities)
 
-Arguments for `ListActivitiesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListActivitiesPaginator.paginate` method.
 
-`ListActivitiesPaginator.paginate` returns
-`_PageIterator`\[[ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListActivitiesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listexecutionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListActivitiesInputListActivitiesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListActivitiesInputListActivitiesPaginateTypeDef](./type_defs.md#listactivitiesinputlistactivitiespaginatetypedef) 
 ## ListExecutionsPaginator
 
-Type annotations for
-`boto3.client("stepfunctions").get_paginator("list_executions")`.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").get_paginator("list_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_stepfunctions.paginator import ListExecutionsPaginator
@@ -94,29 +106,42 @@ def get_list_executions_paginator() -> ListExecutionsPaginator:
     return Session().client("stepfunctions").get_paginator("list_executions")
 ```
 
-Boto3 documentation:
-[SFN.Paginator.ListExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListExecutions)
 
-Arguments for `ListExecutionsPaginator.paginate` method:
+### paginate
 
-- `stateMachineArn`: `str` *(required)*
-- `statusFilter`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListExecutionsPaginator.paginate` method.
 
-`ListExecutionsPaginator.paginate` returns
-`_PageIterator`\[[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    stateMachineArn: str,
+    statusFilter: ExecutionStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListExecutionsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="liststatemachinespaginator"></a>
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListExecutionsInputListExecutionsPaginateTypeDef = {  # (1)
+    "stateMachineArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListExecutionsInputListExecutionsPaginateTypeDef](./type_defs.md#listexecutionsinputlistexecutionspaginatetypedef) 
 ## ListStateMachinesPaginator
 
-Type annotations for
-`boto3.client("stepfunctions").get_paginator("list_state_machines")`.
+Type annotations and code completion for `#!python boto3.client("stepfunctions").get_paginator("list_state_machines")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_stepfunctions.paginator import ListStateMachinesPaginator
@@ -125,13 +150,30 @@ def get_list_state_machines_paginator() -> ListStateMachinesPaginator:
     return Session().client("stepfunctions").get_paginator("list_state_machines")
 ```
 
-Boto3 documentation:
-[SFN.Paginator.ListStateMachines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Paginator.ListStateMachines)
 
-Arguments for `ListStateMachinesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStateMachinesPaginator.paginate` method.
 
-`ListStateMachinesPaginator.paginate` returns
-`_PageIterator`\[[ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStateMachinesOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStateMachinesInputListStateMachinesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStateMachinesInputListStateMachinesPaginateTypeDef](./type_defs.md#liststatemachinesinputliststatemachinespaginatetypedef) 

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-snowball-module"></a>
-
-# Type annotations for boto3 Snowball module
+#  Snowball module
 
 > [Index](../README.md) > Snowball
 
-Auto-generated documentation for
-[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
-type annotations stubs module
-[mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
+!!! note ""
 
-- [Type annotations for boto3 Snowball module](#type-annotations-for-boto3-snowball-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SnowballClient](#snowballclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+    type annotations stubs module [mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Snowball`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[snowball]'
 python -m pip install mypy-boto3-snowball
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,89 +42,37 @@ python -m pip install mypy-boto3-snowball
 python -m pip uninstall -y mypy-boto3-snowball
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="snowballclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SnowballClient
 
-Type annotations for `boto3.client("snowball")` as
-[SnowballClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("snowball")` as [SnowballClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_snowball.client import SnowballClient
+
+def get_client() -> SnowballClient:
+    return Session().cleint("snowball")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_cluster](./client.md#cancel_cluster)
-- [cancel_job](./client.md#cancel_job)
-- [create_address](./client.md#create_address)
-- [create_cluster](./client.md#create_cluster)
-- [create_job](./client.md#create_job)
-- [create_long_term_pricing](./client.md#create_long_term_pricing)
-- [create_return_shipping_label](./client.md#create_return_shipping_label)
-- [describe_address](./client.md#describe_address)
-- [describe_addresses](./client.md#describe_addresses)
-- [describe_cluster](./client.md#describe_cluster)
-- [describe_job](./client.md#describe_job)
-- [describe_return_shipping_label](./client.md#describe_return_shipping_label)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_job_manifest](./client.md#get_job_manifest)
-- [get_job_unlock_code](./client.md#get_job_unlock_code)
-- [get_paginator](./client.md#get_paginator)
-- [get_snowball_usage](./client.md#get_snowball_usage)
-- [get_software_updates](./client.md#get_software_updates)
-- [list_cluster_jobs](./client.md#list_cluster_jobs)
-- [list_clusters](./client.md#list_clusters)
-- [list_compatible_images](./client.md#list_compatible_images)
-- [list_jobs](./client.md#list_jobs)
-- [list_long_term_pricing](./client.md#list_long_term_pricing)
-- [update_cluster](./client.md#update_cluster)
-- [update_job](./client.md#update_job)
-- [update_job_shipment_state](./client.md#update_job_shipment_state)
-- [update_long_term_pricing](./client.md#update_long_term_pricing)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SnowballClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ClusterLimitExceededException
-- ConflictException
-- Ec2RequestFailedException
-- InvalidAddressException
-- InvalidInputCombinationException
-- InvalidJobStateException
-- InvalidNextTokenException
-- InvalidResourceException
-- KMSRequestFailedException
-- ReturnShippingLabelAlreadyExistsException
-- UnsupportedAddressException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("snowball").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("snowball").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_snowball.paginator import DescribeAddressesPaginator, ...
+from mypy_boto3_snowball.paginator import DescribeAddressesPaginator
+
+def get_describe_addresses_paginator() -> DescribeAddressesPaginator:
+    return Session().client("snowball").get_paginator("describe_addresses"))
 ```
 
 - [DescribeAddressesPaginator](./paginators.md#describeaddressespaginator)
@@ -155,16 +81,23 @@ from mypy_boto3_snowball.paginator import DescribeAddressesPaginator, ...
 - [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_snowball.literals import ClusterStateType
 
-```python
-from mypy_boto3_snowball.literals import ClusterStateType, ...
+def get_value() -> ClusterStateType:
+    return "AwaitingQuorum"
 ```
 
 - [ClusterStateType](./literals.md#clusterstatetype)
@@ -189,18 +122,22 @@ from mypy_boto3_snowball.literals import ClusterStateType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_snowball.type_defs import AddressTypeDef
 
-```python
-from mypy_boto3_snowball.type_defs import AddressTypeDef, ...
+def get_value() -> AddressTypeDef:
+    return {
+        "AddressId": ...,
+    }
 ```
 
 - [AddressTypeDef](./type_defs.md#addresstypedef)
@@ -222,6 +159,7 @@ from mypy_boto3_snowball.type_defs import AddressTypeDef, ...
 - [DataTransferTypeDef](./type_defs.md#datatransfertypedef)
 - [DescribeAddressRequestRequestTypeDef](./type_defs.md#describeaddressrequestrequesttypedef)
 - [DescribeAddressResultTypeDef](./type_defs.md#describeaddressresulttypedef)
+- [DescribeAddressesRequestDescribeAddressesPaginateTypeDef](./type_defs.md#describeaddressesrequestdescribeaddressespaginatetypedef)
 - [DescribeAddressesRequestRequestTypeDef](./type_defs.md#describeaddressesrequestrequesttypedef)
 - [DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef)
 - [DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef)
@@ -247,12 +185,16 @@ from mypy_boto3_snowball.type_defs import AddressTypeDef, ...
 - [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
 - [KeyRangeTypeDef](./type_defs.md#keyrangetypedef)
 - [LambdaResourceTypeDef](./type_defs.md#lambdaresourcetypedef)
+- [ListClusterJobsRequestListClusterJobsPaginateTypeDef](./type_defs.md#listclusterjobsrequestlistclusterjobspaginatetypedef)
 - [ListClusterJobsRequestRequestTypeDef](./type_defs.md#listclusterjobsrequestrequesttypedef)
 - [ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef)
+- [ListClustersRequestListClustersPaginateTypeDef](./type_defs.md#listclustersrequestlistclusterspaginatetypedef)
 - [ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef)
 - [ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef)
+- [ListCompatibleImagesRequestListCompatibleImagesPaginateTypeDef](./type_defs.md#listcompatibleimagesrequestlistcompatibleimagespaginatetypedef)
 - [ListCompatibleImagesRequestRequestTypeDef](./type_defs.md#listcompatibleimagesrequestrequesttypedef)
 - [ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef)
+- [ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef)
 - [ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef)
 - [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)
 - [ListLongTermPricingRequestRequestTypeDef](./type_defs.md#listlongtermpricingrequestrequesttypedef)
@@ -275,3 +217,4 @@ from mypy_boto3_snowball.type_defs import AddressTypeDef, ...
 - [UpdateJobShipmentStateRequestRequestTypeDef](./type_defs.md#updatejobshipmentstaterequestrequesttypedef)
 - [UpdateLongTermPricingRequestRequestTypeDef](./type_defs.md#updatelongtermpricingrequestrequesttypedef)
 - [WirelessConnectionTypeDef](./type_defs.md#wirelessconnectiontypedef)
+

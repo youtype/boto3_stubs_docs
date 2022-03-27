@@ -1,1462 +1,1787 @@
-<a id="typed-dictionaries-for-boto3-iottwinmaker-module"></a>
-
-# Typed dictionaries for boto3 IoTTwinMaker module
+# Typed dictionaries
 
 > [Index](../README.md) > [IoTTwinMaker](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
-type annotations stubs module
-[mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IoTTwinMaker module](#typed-dictionaries-for-boto3-iottwinmaker-module)
-  - [BatchPutPropertyErrorEntryTypeDef](#batchputpropertyerrorentrytypedef)
-  - [BatchPutPropertyErrorTypeDef](#batchputpropertyerrortypedef)
-  - [BatchPutPropertyValuesRequestRequestTypeDef](#batchputpropertyvaluesrequestrequesttypedef)
-  - [BatchPutPropertyValuesResponseTypeDef](#batchputpropertyvaluesresponsetypedef)
-  - [ComponentRequestTypeDef](#componentrequesttypedef)
-  - [ComponentResponseTypeDef](#componentresponsetypedef)
-  - [ComponentTypeSummaryTypeDef](#componenttypesummarytypedef)
-  - [ComponentUpdateRequestTypeDef](#componentupdaterequesttypedef)
-  - [CreateComponentTypeRequestRequestTypeDef](#createcomponenttyperequestrequesttypedef)
-  - [CreateComponentTypeResponseTypeDef](#createcomponenttyperesponsetypedef)
-  - [CreateEntityRequestRequestTypeDef](#createentityrequestrequesttypedef)
-  - [CreateEntityResponseTypeDef](#createentityresponsetypedef)
-  - [CreateSceneRequestRequestTypeDef](#createscenerequestrequesttypedef)
-  - [CreateSceneResponseTypeDef](#createsceneresponsetypedef)
-  - [CreateWorkspaceRequestRequestTypeDef](#createworkspacerequestrequesttypedef)
-  - [CreateWorkspaceResponseTypeDef](#createworkspaceresponsetypedef)
-  - [DataConnectorTypeDef](#dataconnectortypedef)
-  - [DataTypeTypeDef](#datatypetypedef)
-  - [DataValueTypeDef](#datavaluetypedef)
-  - [DeleteComponentTypeRequestRequestTypeDef](#deletecomponenttyperequestrequesttypedef)
-  - [DeleteComponentTypeResponseTypeDef](#deletecomponenttyperesponsetypedef)
-  - [DeleteEntityRequestRequestTypeDef](#deleteentityrequestrequesttypedef)
-  - [DeleteEntityResponseTypeDef](#deleteentityresponsetypedef)
-  - [DeleteSceneRequestRequestTypeDef](#deletescenerequestrequesttypedef)
-  - [DeleteWorkspaceRequestRequestTypeDef](#deleteworkspacerequestrequesttypedef)
-  - [EntityPropertyReferenceTypeDef](#entitypropertyreferencetypedef)
-  - [EntitySummaryTypeDef](#entitysummarytypedef)
-  - [ErrorDetailsTypeDef](#errordetailstypedef)
-  - [FunctionRequestTypeDef](#functionrequesttypedef)
-  - [FunctionResponseTypeDef](#functionresponsetypedef)
-  - [GetComponentTypeRequestRequestTypeDef](#getcomponenttyperequestrequesttypedef)
-  - [GetComponentTypeResponseTypeDef](#getcomponenttyperesponsetypedef)
-  - [GetEntityRequestRequestTypeDef](#getentityrequestrequesttypedef)
-  - [GetEntityResponseTypeDef](#getentityresponsetypedef)
-  - [GetPropertyValueHistoryRequestRequestTypeDef](#getpropertyvaluehistoryrequestrequesttypedef)
-  - [GetPropertyValueHistoryResponseTypeDef](#getpropertyvaluehistoryresponsetypedef)
-  - [GetPropertyValueRequestRequestTypeDef](#getpropertyvaluerequestrequesttypedef)
-  - [GetPropertyValueResponseTypeDef](#getpropertyvalueresponsetypedef)
-  - [GetSceneRequestRequestTypeDef](#getscenerequestrequesttypedef)
-  - [GetSceneResponseTypeDef](#getsceneresponsetypedef)
-  - [GetWorkspaceRequestRequestTypeDef](#getworkspacerequestrequesttypedef)
-  - [GetWorkspaceResponseTypeDef](#getworkspaceresponsetypedef)
-  - [InterpolationParametersTypeDef](#interpolationparameterstypedef)
-  - [LambdaFunctionTypeDef](#lambdafunctiontypedef)
-  - [ListComponentTypesFilterTypeDef](#listcomponenttypesfiltertypedef)
-  - [ListComponentTypesRequestRequestTypeDef](#listcomponenttypesrequestrequesttypedef)
-  - [ListComponentTypesResponseTypeDef](#listcomponenttypesresponsetypedef)
-  - [ListEntitiesFilterTypeDef](#listentitiesfiltertypedef)
-  - [ListEntitiesRequestRequestTypeDef](#listentitiesrequestrequesttypedef)
-  - [ListEntitiesResponseTypeDef](#listentitiesresponsetypedef)
-  - [ListScenesRequestRequestTypeDef](#listscenesrequestrequesttypedef)
-  - [ListScenesResponseTypeDef](#listscenesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListWorkspacesRequestRequestTypeDef](#listworkspacesrequestrequesttypedef)
-  - [ListWorkspacesResponseTypeDef](#listworkspacesresponsetypedef)
-  - [ParentEntityUpdateRequestTypeDef](#parententityupdaterequesttypedef)
-  - [PropertyDefinitionRequestTypeDef](#propertydefinitionrequesttypedef)
-  - [PropertyDefinitionResponseTypeDef](#propertydefinitionresponsetypedef)
-  - [PropertyFilterTypeDef](#propertyfiltertypedef)
-  - [PropertyLatestValueTypeDef](#propertylatestvaluetypedef)
-  - [PropertyRequestTypeDef](#propertyrequesttypedef)
-  - [PropertyResponseTypeDef](#propertyresponsetypedef)
-  - [PropertyValueEntryTypeDef](#propertyvalueentrytypedef)
-  - [PropertyValueHistoryTypeDef](#propertyvaluehistorytypedef)
-  - [PropertyValueTypeDef](#propertyvaluetypedef)
-  - [RelationshipTypeDef](#relationshiptypedef)
-  - [RelationshipValueTypeDef](#relationshipvaluetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SceneSummaryTypeDef](#scenesummarytypedef)
-  - [StatusTypeDef](#statustypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateComponentTypeRequestRequestTypeDef](#updatecomponenttyperequestrequesttypedef)
-  - [UpdateComponentTypeResponseTypeDef](#updatecomponenttyperesponsetypedef)
-  - [UpdateEntityRequestRequestTypeDef](#updateentityrequestrequesttypedef)
-  - [UpdateEntityResponseTypeDef](#updateentityresponsetypedef)
-  - [UpdateSceneRequestRequestTypeDef](#updatescenerequestrequesttypedef)
-  - [UpdateSceneResponseTypeDef](#updatesceneresponsetypedef)
-  - [UpdateWorkspaceRequestRequestTypeDef](#updateworkspacerequestrequesttypedef)
-  - [UpdateWorkspaceResponseTypeDef](#updateworkspaceresponsetypedef)
-  - [WorkspaceSummaryTypeDef](#workspacesummarytypedef)
-
-<a id="batchputpropertyerrorentrytypedef"></a>
+    Auto-generated documentation for [IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
+    type annotations stubs module [mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
 
 ## BatchPutPropertyErrorEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import BatchPutPropertyErrorEntryTypeDef
+
+def get_value() -> BatchPutPropertyErrorEntryTypeDef:
+    return {
+        "errors": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutPropertyErrorEntryTypeDef(TypedDict):
+    errors: List[BatchPutPropertyErrorTypeDef],  # (1)
+```
 
-- `errors`:
-  `List`\[[BatchPutPropertyErrorTypeDef](./type_defs.md#batchputpropertyerrortypedef)\]
-
-<a id="batchputpropertyerrortypedef"></a>
-
+1. See [:material-code-braces: BatchPutPropertyErrorTypeDef](./type_defs.md#batchputpropertyerrortypedef) 
 ## BatchPutPropertyErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import BatchPutPropertyErrorTypeDef
+
+def get_value() -> BatchPutPropertyErrorTypeDef:
+    return {
+        "entry": ...,
+        "errorCode": ...,
+        "errorMessage": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutPropertyErrorTypeDef(TypedDict):
+    entry: PropertyValueEntryTypeDef,  # (1)
+    errorCode: str,
+    errorMessage: str,
+```
 
-- `entry`:
-  [PropertyValueEntryTypeDef](./type_defs.md#propertyvalueentrytypedef)
-- `errorCode`: `str`
-- `errorMessage`: `str`
-
-<a id="batchputpropertyvaluesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PropertyValueEntryTypeDef](./type_defs.md#propertyvalueentrytypedef) 
 ## BatchPutPropertyValuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import BatchPutPropertyValuesRequestRequestTypeDef
+
+def get_value() -> BatchPutPropertyValuesRequestRequestTypeDef:
+    return {
+        "entries": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutPropertyValuesRequestRequestTypeDef(TypedDict):
+    entries: Sequence[PropertyValueEntryTypeDef],  # (1)
+    workspaceId: str,
+```
 
-- `entries`:
-  `Sequence`\[[PropertyValueEntryTypeDef](./type_defs.md#propertyvalueentrytypedef)\]
-- `workspaceId`: `str`
-
-<a id="batchputpropertyvaluesresponsetypedef"></a>
-
+1. See [:material-code-braces: PropertyValueEntryTypeDef](./type_defs.md#propertyvalueentrytypedef) 
 ## BatchPutPropertyValuesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import BatchPutPropertyValuesResponseTypeDef
+
+def get_value() -> BatchPutPropertyValuesResponseTypeDef:
+    return {
+        "errorEntries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutPropertyValuesResponseTypeDef(TypedDict):
+    errorEntries: List[BatchPutPropertyErrorEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errorEntries`:
-  `List`\[[BatchPutPropertyErrorEntryTypeDef](./type_defs.md#batchputpropertyerrorentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="componentrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchPutPropertyErrorEntryTypeDef](./type_defs.md#batchputpropertyerrorentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ComponentRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ComponentRequestTypeDef
+
+def get_value() -> ComponentRequestTypeDef:
+    return {
+        "componentTypeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentRequestTypeDef(TypedDict):
+    componentTypeId: NotRequired[str],
+    description: NotRequired[str],
+    properties: NotRequired[Mapping[str, PropertyRequestTypeDef]],  # (1)
+```
 
-- `componentTypeId`: `str`
-- `description`: `str`
-- `properties`: `Mapping`\[`str`,
-  [PropertyRequestTypeDef](./type_defs.md#propertyrequesttypedef)\]
-
-<a id="componentresponsetypedef"></a>
-
+1. See [:material-code-braces: PropertyRequestTypeDef](./type_defs.md#propertyrequesttypedef) 
 ## ComponentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ComponentResponseTypeDef
+
+def get_value() -> ComponentResponseTypeDef:
+    return {
+        "componentName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentResponseTypeDef(TypedDict):
+    componentName: NotRequired[str],
+    componentTypeId: NotRequired[str],
+    definedIn: NotRequired[str],
+    description: NotRequired[str],
+    properties: NotRequired[Dict[str, PropertyResponseTypeDef]],  # (1)
+    status: NotRequired[StatusTypeDef],  # (2)
+```
 
-- `componentName`: `str`
-- `componentTypeId`: `str`
-- `definedIn`: `str`
-- `description`: `str`
-- `properties`: `Dict`\[`str`,
-  [PropertyResponseTypeDef](./type_defs.md#propertyresponsetypedef)\]
-- `status`: [StatusTypeDef](./type_defs.md#statustypedef)
-
-<a id="componenttypesummarytypedef"></a>
-
+1. See [:material-code-braces: PropertyResponseTypeDef](./type_defs.md#propertyresponsetypedef) 
+2. See [:material-code-braces: StatusTypeDef](./type_defs.md#statustypedef) 
 ## ComponentTypeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ComponentTypeSummaryTypeDef
+
+def get_value() -> ComponentTypeSummaryTypeDef:
+    return {
+        "arn": ...,
+        "componentTypeId": ...,
+        "creationDateTime": ...,
+        "updateDateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ComponentTypeSummaryTypeDef(TypedDict):
+    arn: str,
+    componentTypeId: str,
+    creationDateTime: datetime,
+    updateDateTime: datetime,
+    description: NotRequired[str],
+    status: NotRequired[StatusTypeDef],  # (1)
+```
 
-- `arn`: `str`
-- `componentTypeId`: `str`
-- `creationDateTime`: `datetime`
-- `updateDateTime`: `datetime`
-
-Optional fields:
-
-- `description`: `str`
-- `status`: [StatusTypeDef](./type_defs.md#statustypedef)
-
-<a id="componentupdaterequesttypedef"></a>
-
+1. See [:material-code-braces: StatusTypeDef](./type_defs.md#statustypedef) 
 ## ComponentUpdateRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ComponentUpdateRequestTypeDef
+
+def get_value() -> ComponentUpdateRequestTypeDef:
+    return {
+        "componentTypeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentUpdateRequestTypeDef(TypedDict):
+    componentTypeId: NotRequired[str],
+    description: NotRequired[str],
+    propertyUpdates: NotRequired[Mapping[str, PropertyRequestTypeDef]],  # (1)
+    updateType: NotRequired[ComponentUpdateTypeType],  # (2)
+```
 
-- `componentTypeId`: `str`
-- `description`: `str`
-- `propertyUpdates`: `Mapping`\[`str`,
-  [PropertyRequestTypeDef](./type_defs.md#propertyrequesttypedef)\]
-- `updateType`:
-  [ComponentUpdateTypeType](./literals.md#componentupdatetypetype)
-
-<a id="createcomponenttyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PropertyRequestTypeDef](./type_defs.md#propertyrequesttypedef) 
+2. See [:material-code-brackets: ComponentUpdateTypeType](./literals.md#componentupdatetypetype) 
 ## CreateComponentTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import CreateComponentTypeRequestRequestTypeDef
+
+def get_value() -> CreateComponentTypeRequestRequestTypeDef:
+    return {
+        "componentTypeId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateComponentTypeRequestRequestTypeDef(TypedDict):
+    componentTypeId: str,
+    workspaceId: str,
+    description: NotRequired[str],
+    extendsFrom: NotRequired[Sequence[str]],
+    functions: NotRequired[Mapping[str, FunctionRequestTypeDef]],  # (1)
+    isSingleton: NotRequired[bool],
+    propertyDefinitions: NotRequired[Mapping[str, PropertyDefinitionRequestTypeDef]],  # (2)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `componentTypeId`: `str`
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `extendsFrom`: `Sequence`\[`str`\]
-- `functions`: `Mapping`\[`str`,
-  [FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef)\]
-- `isSingleton`: `bool`
-- `propertyDefinitions`: `Mapping`\[`str`,
-  [PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createcomponenttyperesponsetypedef"></a>
-
+1. See [:material-code-braces: FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef) 
+2. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
 ## CreateComponentTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import CreateComponentTypeResponseTypeDef
+
+def get_value() -> CreateComponentTypeResponseTypeDef:
+    return {
+        "arn": ...,
+        "creationDateTime": ...,
+        "state": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateComponentTypeResponseTypeDef(TypedDict):
+    arn: str,
+    creationDateTime: datetime,
+    state: StateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `arn`: `str`
-- `creationDateTime`: `datetime`
-- `state`: [StateType](./literals.md#statetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createentityrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StateType](./literals.md#statetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEntityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import CreateEntityRequestRequestTypeDef
+
+def get_value() -> CreateEntityRequestRequestTypeDef:
+    return {
+        "entityName": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEntityRequestRequestTypeDef(TypedDict):
+    entityName: str,
+    workspaceId: str,
+    components: NotRequired[Mapping[str, ComponentRequestTypeDef]],  # (1)
+    description: NotRequired[str],
+    entityId: NotRequired[str],
+    parentEntityId: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `entityName`: `str`
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `components`: `Mapping`\[`str`,
-  [ComponentRequestTypeDef](./type_defs.md#componentrequesttypedef)\]
-- `description`: `str`
-- `entityId`: `str`
-- `parentEntityId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createentityresponsetypedef"></a>
-
+1. See [:material-code-braces: ComponentRequestTypeDef](./type_defs.md#componentrequesttypedef) 
 ## CreateEntityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import CreateEntityResponseTypeDef
+
+def get_value() -> CreateEntityResponseTypeDef:
+    return {
+        "arn": ...,
+        "creationDateTime": ...,
+        "entityId": ...,
+        "state": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEntityResponseTypeDef(TypedDict):
+    arn: str,
+    creationDateTime: datetime,
+    entityId: str,
+    state: StateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `arn`: `str`
-- `creationDateTime`: `datetime`
-- `entityId`: `str`
-- `state`: [StateType](./literals.md#statetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createscenerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StateType](./literals.md#statetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSceneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import CreateSceneRequestRequestTypeDef
+
+def get_value() -> CreateSceneRequestRequestTypeDef:
+    return {
+        "contentLocation": ...,
+        "sceneId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `contentLocation`: `str`
-- `sceneId`: `str`
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `capabilities`: `Sequence`\[`str`\]
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createsceneresponsetypedef"></a>
+```python title="Definition"
+class CreateSceneRequestRequestTypeDef(TypedDict):
+    contentLocation: str,
+    sceneId: str,
+    workspaceId: str,
+    capabilities: NotRequired[Sequence[str]],
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateSceneResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import CreateSceneResponseTypeDef
+
+def get_value() -> CreateSceneResponseTypeDef:
+    return {
+        "arn": ...,
+        "creationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSceneResponseTypeDef(TypedDict):
+    arn: str,
+    creationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `creationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworkspacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkspaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import CreateWorkspaceRequestRequestTypeDef
+
+def get_value() -> CreateWorkspaceRequestRequestTypeDef:
+    return {
+        "role": ...,
+        "s3Location": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `role`: `str`
-- `s3Location`: `str`
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createworkspaceresponsetypedef"></a>
+```python title="Definition"
+class CreateWorkspaceRequestRequestTypeDef(TypedDict):
+    role: str,
+    s3Location: str,
+    workspaceId: str,
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateWorkspaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import CreateWorkspaceResponseTypeDef
+
+def get_value() -> CreateWorkspaceResponseTypeDef:
+    return {
+        "arn": ...,
+        "creationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkspaceResponseTypeDef(TypedDict):
+    arn: str,
+    creationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `creationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dataconnectortypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataConnectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import DataConnectorTypeDef
+
+def get_value() -> DataConnectorTypeDef:
+    return {
+        "isNative": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataConnectorTypeDef(TypedDict):
+    isNative: NotRequired[bool],
+    lambda: NotRequired[LambdaFunctionTypeDef],  # (1)
+```
 
-- `isNative`: `bool`
-- `lambda`: [LambdaFunctionTypeDef](./type_defs.md#lambdafunctiontypedef)
-
-<a id="datatypetypedef"></a>
-
+1. See [:material-code-braces: LambdaFunctionTypeDef](./type_defs.md#lambdafunctiontypedef) 
 ## DataTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import DataTypeTypeDef
+
+def get_value() -> DataTypeTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DataTypeTypeDef(TypedDict):
+    type: TypeType,  # (4)
+    allowedValues: NotRequired[Sequence[DataValueTypeDef]],  # (1)
+    nestedType: NotRequired[DataTypeTypeDef],  # (2)
+    relationship: NotRequired[RelationshipTypeDef],  # (3)
+    unitOfMeasure: NotRequired[str],
+```
 
-- `type`: [TypeType](./literals.md#typetype)
-
-Optional fields:
-
-- `allowedValues`:
-  `Sequence`\[[DataValueTypeDef](./type_defs.md#datavaluetypedef)\]
-- `nestedType`: [DataTypeTypeDef](./type_defs.md#datatypetypedef)
-- `relationship`: [RelationshipTypeDef](./type_defs.md#relationshiptypedef)
-- `unitOfMeasure`: `str`
-
-<a id="datavaluetypedef"></a>
-
+1. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
+2. See [:material-code-braces: DataTypeTypeDef](./type_defs.md#datatypetypedef) 
+3. See [:material-code-braces: RelationshipTypeDef](./type_defs.md#relationshiptypedef) 
+4. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## DataValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import DataValueTypeDef
+
+def get_value() -> DataValueTypeDef:
+    return {
+        "booleanValue": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataValueTypeDef(TypedDict):
+    booleanValue: NotRequired[bool],
+    doubleValue: NotRequired[float],
+    expression: NotRequired[str],
+    integerValue: NotRequired[int],
+    listValue: NotRequired[Sequence[DataValueTypeDef]],  # (1)
+    longValue: NotRequired[int],
+    mapValue: NotRequired[Mapping[str, DataValueTypeDef]],  # (2)
+    relationshipValue: NotRequired[RelationshipValueTypeDef],  # (3)
+    stringValue: NotRequired[str],
+```
 
-- `booleanValue`: `bool`
-- `doubleValue`: `float`
-- `expression`: `str`
-- `integerValue`: `int`
-- `listValue`:
-  `Sequence`\[[DataValueTypeDef](./type_defs.md#datavaluetypedef)\]
-- `longValue`: `int`
-- `mapValue`: `Mapping`\[`str`,
-  [DataValueTypeDef](./type_defs.md#datavaluetypedef)\]
-- `relationshipValue`:
-  [RelationshipValueTypeDef](./type_defs.md#relationshipvaluetypedef)
-- `stringValue`: `str`
-
-<a id="deletecomponenttyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
+2. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
+3. See [:material-code-braces: RelationshipValueTypeDef](./type_defs.md#relationshipvaluetypedef) 
 ## DeleteComponentTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import DeleteComponentTypeRequestRequestTypeDef
+
+def get_value() -> DeleteComponentTypeRequestRequestTypeDef:
+    return {
+        "componentTypeId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `componentTypeId`: `str`
-- `workspaceId`: `str`
-
-<a id="deletecomponenttyperesponsetypedef"></a>
+```python title="Definition"
+class DeleteComponentTypeRequestRequestTypeDef(TypedDict):
+    componentTypeId: str,
+    workspaceId: str,
+```
 
 ## DeleteComponentTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import DeleteComponentTypeResponseTypeDef
+
+def get_value() -> DeleteComponentTypeResponseTypeDef:
+    return {
+        "state": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteComponentTypeResponseTypeDef(TypedDict):
+    state: StateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `state`: [StateType](./literals.md#statetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteentityrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StateType](./literals.md#statetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEntityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import DeleteEntityRequestRequestTypeDef
+
+def get_value() -> DeleteEntityRequestRequestTypeDef:
+    return {
+        "entityId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `entityId`: `str`
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `isRecursive`: `bool`
-
-<a id="deleteentityresponsetypedef"></a>
+```python title="Definition"
+class DeleteEntityRequestRequestTypeDef(TypedDict):
+    entityId: str,
+    workspaceId: str,
+    isRecursive: NotRequired[bool],
+```
 
 ## DeleteEntityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import DeleteEntityResponseTypeDef
+
+def get_value() -> DeleteEntityResponseTypeDef:
+    return {
+        "state": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteEntityResponseTypeDef(TypedDict):
+    state: StateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `state`: [StateType](./literals.md#statetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletescenerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StateType](./literals.md#statetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSceneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import DeleteSceneRequestRequestTypeDef
+
+def get_value() -> DeleteSceneRequestRequestTypeDef:
+    return {
+        "sceneId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `sceneId`: `str`
-- `workspaceId`: `str`
-
-<a id="deleteworkspacerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSceneRequestRequestTypeDef(TypedDict):
+    sceneId: str,
+    workspaceId: str,
+```
 
 ## DeleteWorkspaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import DeleteWorkspaceRequestRequestTypeDef
+
+def get_value() -> DeleteWorkspaceRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `workspaceId`: `str`
-
-<a id="entitypropertyreferencetypedef"></a>
+```python title="Definition"
+class DeleteWorkspaceRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+```
 
 ## EntityPropertyReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import EntityPropertyReferenceTypeDef
+
+def get_value() -> EntityPropertyReferenceTypeDef:
+    return {
+        "propertyName": ...,
+    }
 ```
 
-Required fields:
-
-- `propertyName`: `str`
-
-Optional fields:
-
-- `componentName`: `str`
-- `entityId`: `str`
-- `externalIdProperty`: `Mapping`\[`str`, `str`\]
-
-<a id="entitysummarytypedef"></a>
+```python title="Definition"
+class EntityPropertyReferenceTypeDef(TypedDict):
+    propertyName: str,
+    componentName: NotRequired[str],
+    entityId: NotRequired[str],
+    externalIdProperty: NotRequired[Mapping[str, str]],
+```
 
 ## EntitySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import EntitySummaryTypeDef
+
+def get_value() -> EntitySummaryTypeDef:
+    return {
+        "arn": ...,
+        "creationDateTime": ...,
+        "entityId": ...,
+        "entityName": ...,
+        "status": ...,
+        "updateDateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EntitySummaryTypeDef(TypedDict):
+    arn: str,
+    creationDateTime: datetime,
+    entityId: str,
+    entityName: str,
+    status: StatusTypeDef,  # (1)
+    updateDateTime: datetime,
+    description: NotRequired[str],
+    hasChildEntities: NotRequired[bool],
+    parentEntityId: NotRequired[str],
+```
 
-- `arn`: `str`
-- `creationDateTime`: `datetime`
-- `entityId`: `str`
-- `entityName`: `str`
-- `status`: [StatusTypeDef](./type_defs.md#statustypedef)
-- `updateDateTime`: `datetime`
-
-Optional fields:
-
-- `description`: `str`
-- `hasChildEntities`: `bool`
-- `parentEntityId`: `str`
-
-<a id="errordetailstypedef"></a>
-
+1. See [:material-code-braces: StatusTypeDef](./type_defs.md#statustypedef) 
 ## ErrorDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ErrorDetailsTypeDef
+
+def get_value() -> ErrorDetailsTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ErrorDetailsTypeDef(TypedDict):
+    code: NotRequired[ErrorCodeType],  # (1)
+    message: NotRequired[str],
+```
 
-- `code`: [ErrorCodeType](./literals.md#errorcodetype)
-- `message`: `str`
-
-<a id="functionrequesttypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## FunctionRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import FunctionRequestTypeDef
+
+def get_value() -> FunctionRequestTypeDef:
+    return {
+        "implementedBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FunctionRequestTypeDef(TypedDict):
+    implementedBy: NotRequired[DataConnectorTypeDef],  # (1)
+    requiredProperties: NotRequired[Sequence[str]],
+    scope: NotRequired[ScopeType],  # (2)
+```
 
-- `implementedBy`: [DataConnectorTypeDef](./type_defs.md#dataconnectortypedef)
-- `requiredProperties`: `Sequence`\[`str`\]
-- `scope`: [ScopeType](./literals.md#scopetype)
-
-<a id="functionresponsetypedef"></a>
-
+1. See [:material-code-braces: DataConnectorTypeDef](./type_defs.md#dataconnectortypedef) 
+2. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
 ## FunctionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import FunctionResponseTypeDef
+
+def get_value() -> FunctionResponseTypeDef:
+    return {
+        "implementedBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FunctionResponseTypeDef(TypedDict):
+    implementedBy: NotRequired[DataConnectorTypeDef],  # (1)
+    isInherited: NotRequired[bool],
+    requiredProperties: NotRequired[List[str]],
+    scope: NotRequired[ScopeType],  # (2)
+```
 
-- `implementedBy`: [DataConnectorTypeDef](./type_defs.md#dataconnectortypedef)
-- `isInherited`: `bool`
-- `requiredProperties`: `List`\[`str`\]
-- `scope`: [ScopeType](./literals.md#scopetype)
-
-<a id="getcomponenttyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataConnectorTypeDef](./type_defs.md#dataconnectortypedef) 
+2. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
 ## GetComponentTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetComponentTypeRequestRequestTypeDef
+
+def get_value() -> GetComponentTypeRequestRequestTypeDef:
+    return {
+        "componentTypeId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `componentTypeId`: `str`
-- `workspaceId`: `str`
-
-<a id="getcomponenttyperesponsetypedef"></a>
+```python title="Definition"
+class GetComponentTypeRequestRequestTypeDef(TypedDict):
+    componentTypeId: str,
+    workspaceId: str,
+```
 
 ## GetComponentTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetComponentTypeResponseTypeDef
+
+def get_value() -> GetComponentTypeResponseTypeDef:
+    return {
+        "arn": ...,
+        "componentTypeId": ...,
+        "creationDateTime": ...,
+        "description": ...,
+        "extendsFrom": ...,
+        "functions": ...,
+        "isAbstract": ...,
+        "isSchemaInitialized": ...,
+        "isSingleton": ...,
+        "propertyDefinitions": ...,
+        "status": ...,
+        "updateDateTime": ...,
+        "workspaceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComponentTypeResponseTypeDef(TypedDict):
+    arn: str,
+    componentTypeId: str,
+    creationDateTime: datetime,
+    description: str,
+    extendsFrom: List[str],
+    functions: Dict[str, FunctionResponseTypeDef],  # (1)
+    isAbstract: bool,
+    isSchemaInitialized: bool,
+    isSingleton: bool,
+    propertyDefinitions: Dict[str, PropertyDefinitionResponseTypeDef],  # (2)
+    status: StatusTypeDef,  # (3)
+    updateDateTime: datetime,
+    workspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `arn`: `str`
-- `componentTypeId`: `str`
-- `creationDateTime`: `datetime`
-- `description`: `str`
-- `extendsFrom`: `List`\[`str`\]
-- `functions`: `Dict`\[`str`,
-  [FunctionResponseTypeDef](./type_defs.md#functionresponsetypedef)\]
-- `isAbstract`: `bool`
-- `isSchemaInitialized`: `bool`
-- `isSingleton`: `bool`
-- `propertyDefinitions`: `Dict`\[`str`,
-  [PropertyDefinitionResponseTypeDef](./type_defs.md#propertydefinitionresponsetypedef)\]
-- `status`: [StatusTypeDef](./type_defs.md#statustypedef)
-- `updateDateTime`: `datetime`
-- `workspaceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getentityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FunctionResponseTypeDef](./type_defs.md#functionresponsetypedef) 
+2. See [:material-code-braces: PropertyDefinitionResponseTypeDef](./type_defs.md#propertydefinitionresponsetypedef) 
+3. See [:material-code-braces: StatusTypeDef](./type_defs.md#statustypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEntityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetEntityRequestRequestTypeDef
+
+def get_value() -> GetEntityRequestRequestTypeDef:
+    return {
+        "entityId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `entityId`: `str`
-- `workspaceId`: `str`
-
-<a id="getentityresponsetypedef"></a>
+```python title="Definition"
+class GetEntityRequestRequestTypeDef(TypedDict):
+    entityId: str,
+    workspaceId: str,
+```
 
 ## GetEntityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetEntityResponseTypeDef
+
+def get_value() -> GetEntityResponseTypeDef:
+    return {
+        "arn": ...,
+        "components": ...,
+        "creationDateTime": ...,
+        "description": ...,
+        "entityId": ...,
+        "entityName": ...,
+        "hasChildEntities": ...,
+        "parentEntityId": ...,
+        "status": ...,
+        "updateDateTime": ...,
+        "workspaceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEntityResponseTypeDef(TypedDict):
+    arn: str,
+    components: Dict[str, ComponentResponseTypeDef],  # (1)
+    creationDateTime: datetime,
+    description: str,
+    entityId: str,
+    entityName: str,
+    hasChildEntities: bool,
+    parentEntityId: str,
+    status: StatusTypeDef,  # (2)
+    updateDateTime: datetime,
+    workspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `arn`: `str`
-- `components`: `Dict`\[`str`,
-  [ComponentResponseTypeDef](./type_defs.md#componentresponsetypedef)\]
-- `creationDateTime`: `datetime`
-- `description`: `str`
-- `entityId`: `str`
-- `entityName`: `str`
-- `hasChildEntities`: `bool`
-- `parentEntityId`: `str`
-- `status`: [StatusTypeDef](./type_defs.md#statustypedef)
-- `updateDateTime`: `datetime`
-- `workspaceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpropertyvaluehistoryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComponentResponseTypeDef](./type_defs.md#componentresponsetypedef) 
+2. See [:material-code-braces: StatusTypeDef](./type_defs.md#statustypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPropertyValueHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetPropertyValueHistoryRequestRequestTypeDef
+
+def get_value() -> GetPropertyValueHistoryRequestRequestTypeDef:
+    return {
+        "endDateTime": ...,
+        "selectedProperties": ...,
+        "startDateTime": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPropertyValueHistoryRequestRequestTypeDef(TypedDict):
+    endDateTime: Union[datetime, str],
+    selectedProperties: Sequence[str],
+    startDateTime: Union[datetime, str],
+    workspaceId: str,
+    componentName: NotRequired[str],
+    componentTypeId: NotRequired[str],
+    entityId: NotRequired[str],
+    interpolation: NotRequired[InterpolationParametersTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    orderByTime: NotRequired[OrderByTimeType],  # (2)
+    propertyFilters: NotRequired[Sequence[PropertyFilterTypeDef]],  # (3)
+```
 
-- `endDateTime`: `Union`\[`datetime`, `str`\]
-- `selectedProperties`: `Sequence`\[`str`\]
-- `startDateTime`: `Union`\[`datetime`, `str`\]
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `componentName`: `str`
-- `componentTypeId`: `str`
-- `entityId`: `str`
-- `interpolation`:
-  [InterpolationParametersTypeDef](./type_defs.md#interpolationparameterstypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `orderByTime`: [OrderByTimeType](./literals.md#orderbytimetype)
-- `propertyFilters`:
-  `Sequence`\[[PropertyFilterTypeDef](./type_defs.md#propertyfiltertypedef)\]
-
-<a id="getpropertyvaluehistoryresponsetypedef"></a>
-
+1. See [:material-code-braces: InterpolationParametersTypeDef](./type_defs.md#interpolationparameterstypedef) 
+2. See [:material-code-brackets: OrderByTimeType](./literals.md#orderbytimetype) 
+3. See [:material-code-braces: PropertyFilterTypeDef](./type_defs.md#propertyfiltertypedef) 
 ## GetPropertyValueHistoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetPropertyValueHistoryResponseTypeDef
+
+def get_value() -> GetPropertyValueHistoryResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "propertyValues": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPropertyValueHistoryResponseTypeDef(TypedDict):
+    nextToken: str,
+    propertyValues: List[PropertyValueHistoryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `propertyValues`:
-  `List`\[[PropertyValueHistoryTypeDef](./type_defs.md#propertyvaluehistorytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpropertyvaluerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PropertyValueHistoryTypeDef](./type_defs.md#propertyvaluehistorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPropertyValueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetPropertyValueRequestRequestTypeDef
+
+def get_value() -> GetPropertyValueRequestRequestTypeDef:
+    return {
+        "selectedProperties": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `selectedProperties`: `Sequence`\[`str`\]
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `componentName`: `str`
-- `componentTypeId`: `str`
-- `entityId`: `str`
-
-<a id="getpropertyvalueresponsetypedef"></a>
+```python title="Definition"
+class GetPropertyValueRequestRequestTypeDef(TypedDict):
+    selectedProperties: Sequence[str],
+    workspaceId: str,
+    componentName: NotRequired[str],
+    componentTypeId: NotRequired[str],
+    entityId: NotRequired[str],
+```
 
 ## GetPropertyValueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetPropertyValueResponseTypeDef
+
+def get_value() -> GetPropertyValueResponseTypeDef:
+    return {
+        "propertyValues": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPropertyValueResponseTypeDef(TypedDict):
+    propertyValues: Dict[str, PropertyLatestValueTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `propertyValues`: `Dict`\[`str`,
-  [PropertyLatestValueTypeDef](./type_defs.md#propertylatestvaluetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getscenerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PropertyLatestValueTypeDef](./type_defs.md#propertylatestvaluetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSceneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetSceneRequestRequestTypeDef
+
+def get_value() -> GetSceneRequestRequestTypeDef:
+    return {
+        "sceneId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `sceneId`: `str`
-- `workspaceId`: `str`
-
-<a id="getsceneresponsetypedef"></a>
+```python title="Definition"
+class GetSceneRequestRequestTypeDef(TypedDict):
+    sceneId: str,
+    workspaceId: str,
+```
 
 ## GetSceneResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetSceneResponseTypeDef
+
+def get_value() -> GetSceneResponseTypeDef:
+    return {
+        "arn": ...,
+        "capabilities": ...,
+        "contentLocation": ...,
+        "creationDateTime": ...,
+        "description": ...,
+        "sceneId": ...,
+        "updateDateTime": ...,
+        "workspaceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSceneResponseTypeDef(TypedDict):
+    arn: str,
+    capabilities: List[str],
+    contentLocation: str,
+    creationDateTime: datetime,
+    description: str,
+    sceneId: str,
+    updateDateTime: datetime,
+    workspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `capabilities`: `List`\[`str`\]
-- `contentLocation`: `str`
-- `creationDateTime`: `datetime`
-- `description`: `str`
-- `sceneId`: `str`
-- `updateDateTime`: `datetime`
-- `workspaceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkspacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkspaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetWorkspaceRequestRequestTypeDef
+
+def get_value() -> GetWorkspaceRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `workspaceId`: `str`
-
-<a id="getworkspaceresponsetypedef"></a>
+```python title="Definition"
+class GetWorkspaceRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+```
 
 ## GetWorkspaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import GetWorkspaceResponseTypeDef
+
+def get_value() -> GetWorkspaceResponseTypeDef:
+    return {
+        "arn": ...,
+        "creationDateTime": ...,
+        "description": ...,
+        "role": ...,
+        "s3Location": ...,
+        "updateDateTime": ...,
+        "workspaceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkspaceResponseTypeDef(TypedDict):
+    arn: str,
+    creationDateTime: datetime,
+    description: str,
+    role: str,
+    s3Location: str,
+    updateDateTime: datetime,
+    workspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `creationDateTime`: `datetime`
-- `description`: `str`
-- `role`: `str`
-- `s3Location`: `str`
-- `updateDateTime`: `datetime`
-- `workspaceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="interpolationparameterstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InterpolationParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import InterpolationParametersTypeDef
+
+def get_value() -> InterpolationParametersTypeDef:
+    return {
+        "interpolationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InterpolationParametersTypeDef(TypedDict):
+    interpolationType: NotRequired[InterpolationTypeType],  # (1)
+    intervalInSeconds: NotRequired[int],
+```
 
-- `interpolationType`: `Literal['LINEAR']` (see
-  [InterpolationTypeType](./literals.md#interpolationtypetype))
-- `intervalInSeconds`: `int`
-
-<a id="lambdafunctiontypedef"></a>
-
+1. See [:material-code-brackets: InterpolationTypeType](./literals.md#interpolationtypetype) 
 ## LambdaFunctionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import LambdaFunctionTypeDef
+
+def get_value() -> LambdaFunctionTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="listcomponenttypesfiltertypedef"></a>
+```python title="Definition"
+class LambdaFunctionTypeDef(TypedDict):
+    arn: str,
+```
 
 ## ListComponentTypesFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListComponentTypesFilterTypeDef
+
+def get_value() -> ListComponentTypesFilterTypeDef:
+    return {
+        "extendsFrom": ...,
+    }
 ```
 
-Optional fields:
-
-- `extendsFrom`: `str`
-- `isAbstract`: `bool`
-- `namespace`: `str`
-
-<a id="listcomponenttypesrequestrequesttypedef"></a>
+```python title="Definition"
+class ListComponentTypesFilterTypeDef(TypedDict):
+    extendsFrom: NotRequired[str],
+    isAbstract: NotRequired[bool],
+    namespace: NotRequired[str],
+```
 
 ## ListComponentTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListComponentTypesRequestRequestTypeDef
+
+def get_value() -> ListComponentTypesRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListComponentTypesRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    filters: NotRequired[Sequence[ListComponentTypesFilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `filters`:
-  `Sequence`\[[ListComponentTypesFilterTypeDef](./type_defs.md#listcomponenttypesfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listcomponenttypesresponsetypedef"></a>
-
+1. See [:material-code-braces: ListComponentTypesFilterTypeDef](./type_defs.md#listcomponenttypesfiltertypedef) 
 ## ListComponentTypesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListComponentTypesResponseTypeDef
+
+def get_value() -> ListComponentTypesResponseTypeDef:
+    return {
+        "componentTypeSummaries": ...,
+        "maxResults": ...,
+        "nextToken": ...,
+        "workspaceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListComponentTypesResponseTypeDef(TypedDict):
+    componentTypeSummaries: List[ComponentTypeSummaryTypeDef],  # (1)
+    maxResults: int,
+    nextToken: str,
+    workspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `componentTypeSummaries`:
-  `List`\[[ComponentTypeSummaryTypeDef](./type_defs.md#componenttypesummarytypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `workspaceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listentitiesfiltertypedef"></a>
-
+1. See [:material-code-braces: ComponentTypeSummaryTypeDef](./type_defs.md#componenttypesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEntitiesFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListEntitiesFilterTypeDef
+
+def get_value() -> ListEntitiesFilterTypeDef:
+    return {
+        "componentTypeId": ...,
+    }
 ```
 
-Optional fields:
-
-- `componentTypeId`: `str`
-- `parentEntityId`: `str`
-
-<a id="listentitiesrequestrequesttypedef"></a>
+```python title="Definition"
+class ListEntitiesFilterTypeDef(TypedDict):
+    componentTypeId: NotRequired[str],
+    parentEntityId: NotRequired[str],
+```
 
 ## ListEntitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListEntitiesRequestRequestTypeDef
+
+def get_value() -> ListEntitiesRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEntitiesRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    filters: NotRequired[Sequence[ListEntitiesFilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `filters`:
-  `Sequence`\[[ListEntitiesFilterTypeDef](./type_defs.md#listentitiesfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listentitiesresponsetypedef"></a>
-
+1. See [:material-code-braces: ListEntitiesFilterTypeDef](./type_defs.md#listentitiesfiltertypedef) 
 ## ListEntitiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListEntitiesResponseTypeDef
+
+def get_value() -> ListEntitiesResponseTypeDef:
+    return {
+        "entitySummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEntitiesResponseTypeDef(TypedDict):
+    entitySummaries: List[EntitySummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entitySummaries`:
-  `List`\[[EntitySummaryTypeDef](./type_defs.md#entitysummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listscenesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EntitySummaryTypeDef](./type_defs.md#entitysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListScenesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListScenesRequestRequestTypeDef
+
+def get_value() -> ListScenesRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listscenesresponsetypedef"></a>
+```python title="Definition"
+class ListScenesRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListScenesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListScenesResponseTypeDef
+
+def get_value() -> ListScenesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "sceneSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListScenesResponseTypeDef(TypedDict):
+    nextToken: str,
+    sceneSummaries: List[SceneSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `sceneSummaries`:
-  `List`\[[SceneSummaryTypeDef](./type_defs.md#scenesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SceneSummaryTypeDef](./type_defs.md#scenesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceARN`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceARN: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    nextToken: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nextToken`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listworkspacesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWorkspacesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListWorkspacesRequestRequestTypeDef
+
+def get_value() -> ListWorkspacesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listworkspacesresponsetypedef"></a>
+```python title="Definition"
+class ListWorkspacesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListWorkspacesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ListWorkspacesResponseTypeDef
+
+def get_value() -> ListWorkspacesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "workspaceSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkspacesResponseTypeDef(TypedDict):
+    nextToken: str,
+    workspaceSummaries: List[WorkspaceSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `workspaceSummaries`:
-  `List`\[[WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="parententityupdaterequesttypedef"></a>
-
+1. See [:material-code-braces: WorkspaceSummaryTypeDef](./type_defs.md#workspacesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ParentEntityUpdateRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ParentEntityUpdateRequestTypeDef
+
+def get_value() -> ParentEntityUpdateRequestTypeDef:
+    return {
+        "updateType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ParentEntityUpdateRequestTypeDef(TypedDict):
+    updateType: ParentEntityUpdateTypeType,  # (1)
+    parentEntityId: NotRequired[str],
+```
 
-- `updateType`:
-  [ParentEntityUpdateTypeType](./literals.md#parententityupdatetypetype)
-
-Optional fields:
-
-- `parentEntityId`: `str`
-
-<a id="propertydefinitionrequesttypedef"></a>
-
+1. See [:material-code-brackets: ParentEntityUpdateTypeType](./literals.md#parententityupdatetypetype) 
 ## PropertyDefinitionRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import PropertyDefinitionRequestTypeDef
+
+def get_value() -> PropertyDefinitionRequestTypeDef:
+    return {
+        "configuration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PropertyDefinitionRequestTypeDef(TypedDict):
+    configuration: NotRequired[Mapping[str, str]],
+    dataType: NotRequired[DataTypeTypeDef],  # (1)
+    defaultValue: NotRequired[DataValueTypeDef],  # (2)
+    isExternalId: NotRequired[bool],
+    isRequiredInEntity: NotRequired[bool],
+    isStoredExternally: NotRequired[bool],
+    isTimeSeries: NotRequired[bool],
+```
 
-- `configuration`: `Mapping`\[`str`, `str`\]
-- `dataType`: [DataTypeTypeDef](./type_defs.md#datatypetypedef)
-- `defaultValue`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
-- `isExternalId`: `bool`
-- `isRequiredInEntity`: `bool`
-- `isStoredExternally`: `bool`
-- `isTimeSeries`: `bool`
-
-<a id="propertydefinitionresponsetypedef"></a>
-
+1. See [:material-code-braces: DataTypeTypeDef](./type_defs.md#datatypetypedef) 
+2. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
 ## PropertyDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import PropertyDefinitionResponseTypeDef
+
+def get_value() -> PropertyDefinitionResponseTypeDef:
+    return {
+        "dataType": ...,
+        "isExternalId": ...,
+        "isFinal": ...,
+        "isImported": ...,
+        "isInherited": ...,
+        "isRequiredInEntity": ...,
+        "isStoredExternally": ...,
+        "isTimeSeries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PropertyDefinitionResponseTypeDef(TypedDict):
+    dataType: DataTypeTypeDef,  # (1)
+    isExternalId: bool,
+    isFinal: bool,
+    isImported: bool,
+    isInherited: bool,
+    isRequiredInEntity: bool,
+    isStoredExternally: bool,
+    isTimeSeries: bool,
+    configuration: NotRequired[Dict[str, str]],
+    defaultValue: NotRequired[DataValueTypeDef],  # (2)
+```
 
-- `dataType`: [DataTypeTypeDef](./type_defs.md#datatypetypedef)
-- `isExternalId`: `bool`
-- `isFinal`: `bool`
-- `isImported`: `bool`
-- `isInherited`: `bool`
-- `isRequiredInEntity`: `bool`
-- `isStoredExternally`: `bool`
-- `isTimeSeries`: `bool`
-
-Optional fields:
-
-- `configuration`: `Dict`\[`str`, `str`\]
-- `defaultValue`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
-
-<a id="propertyfiltertypedef"></a>
-
+1. See [:material-code-braces: DataTypeTypeDef](./type_defs.md#datatypetypedef) 
+2. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
 ## PropertyFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import PropertyFilterTypeDef
+
+def get_value() -> PropertyFilterTypeDef:
+    return {
+        "operator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PropertyFilterTypeDef(TypedDict):
+    operator: NotRequired[str],
+    propertyName: NotRequired[str],
+    value: NotRequired[DataValueTypeDef],  # (1)
+```
 
-- `operator`: `str`
-- `propertyName`: `str`
-- `value`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
-
-<a id="propertylatestvaluetypedef"></a>
-
+1. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
 ## PropertyLatestValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import PropertyLatestValueTypeDef
+
+def get_value() -> PropertyLatestValueTypeDef:
+    return {
+        "propertyReference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PropertyLatestValueTypeDef(TypedDict):
+    propertyReference: EntityPropertyReferenceTypeDef,  # (1)
+    propertyValue: NotRequired[DataValueTypeDef],  # (2)
+```
 
-- `propertyReference`:
-  [EntityPropertyReferenceTypeDef](./type_defs.md#entitypropertyreferencetypedef)
-
-Optional fields:
-
-- `propertyValue`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
-
-<a id="propertyrequesttypedef"></a>
-
+1. See [:material-code-braces: EntityPropertyReferenceTypeDef](./type_defs.md#entitypropertyreferencetypedef) 
+2. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
 ## PropertyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import PropertyRequestTypeDef
+
+def get_value() -> PropertyRequestTypeDef:
+    return {
+        "definition": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PropertyRequestTypeDef(TypedDict):
+    definition: NotRequired[PropertyDefinitionRequestTypeDef],  # (1)
+    updateType: NotRequired[PropertyUpdateTypeType],  # (2)
+    value: NotRequired[DataValueTypeDef],  # (3)
+```
 
-- `definition`:
-  [PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef)
-- `updateType`: [PropertyUpdateTypeType](./literals.md#propertyupdatetypetype)
-- `value`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
-
-<a id="propertyresponsetypedef"></a>
-
+1. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
+2. See [:material-code-brackets: PropertyUpdateTypeType](./literals.md#propertyupdatetypetype) 
+3. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
 ## PropertyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import PropertyResponseTypeDef
+
+def get_value() -> PropertyResponseTypeDef:
+    return {
+        "definition": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PropertyResponseTypeDef(TypedDict):
+    definition: NotRequired[PropertyDefinitionResponseTypeDef],  # (1)
+    value: NotRequired[DataValueTypeDef],  # (2)
+```
 
-- `definition`:
-  [PropertyDefinitionResponseTypeDef](./type_defs.md#propertydefinitionresponsetypedef)
-- `value`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
-
-<a id="propertyvalueentrytypedef"></a>
-
+1. See [:material-code-braces: PropertyDefinitionResponseTypeDef](./type_defs.md#propertydefinitionresponsetypedef) 
+2. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
 ## PropertyValueEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import PropertyValueEntryTypeDef
+
+def get_value() -> PropertyValueEntryTypeDef:
+    return {
+        "entityPropertyReference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PropertyValueEntryTypeDef(TypedDict):
+    entityPropertyReference: EntityPropertyReferenceTypeDef,  # (1)
+    propertyValues: NotRequired[Sequence[PropertyValueTypeDef]],  # (2)
+```
 
-- `entityPropertyReference`:
-  [EntityPropertyReferenceTypeDef](./type_defs.md#entitypropertyreferencetypedef)
-
-Optional fields:
-
-- `propertyValues`:
-  `Sequence`\[[PropertyValueTypeDef](./type_defs.md#propertyvaluetypedef)\]
-
-<a id="propertyvaluehistorytypedef"></a>
-
+1. See [:material-code-braces: EntityPropertyReferenceTypeDef](./type_defs.md#entitypropertyreferencetypedef) 
+2. See [:material-code-braces: PropertyValueTypeDef](./type_defs.md#propertyvaluetypedef) 
 ## PropertyValueHistoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import PropertyValueHistoryTypeDef
+
+def get_value() -> PropertyValueHistoryTypeDef:
+    return {
+        "entityPropertyReference": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PropertyValueHistoryTypeDef(TypedDict):
+    entityPropertyReference: EntityPropertyReferenceTypeDef,  # (1)
+    values: NotRequired[List[PropertyValueTypeDef]],  # (2)
+```
 
-- `entityPropertyReference`:
-  [EntityPropertyReferenceTypeDef](./type_defs.md#entitypropertyreferencetypedef)
-
-Optional fields:
-
-- `values`:
-  `List`\[[PropertyValueTypeDef](./type_defs.md#propertyvaluetypedef)\]
-
-<a id="propertyvaluetypedef"></a>
-
+1. See [:material-code-braces: EntityPropertyReferenceTypeDef](./type_defs.md#entitypropertyreferencetypedef) 
+2. See [:material-code-braces: PropertyValueTypeDef](./type_defs.md#propertyvaluetypedef) 
 ## PropertyValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import PropertyValueTypeDef
+
+def get_value() -> PropertyValueTypeDef:
+    return {
+        "timestamp": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PropertyValueTypeDef(TypedDict):
+    timestamp: Union[datetime, str],
+    value: DataValueTypeDef,  # (1)
+```
 
-- `timestamp`: `Union`\[`datetime`, `str`\]
-- `value`: [DataValueTypeDef](./type_defs.md#datavaluetypedef)
-
-<a id="relationshiptypedef"></a>
-
+1. See [:material-code-braces: DataValueTypeDef](./type_defs.md#datavaluetypedef) 
 ## RelationshipTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import RelationshipTypeDef
+
+def get_value() -> RelationshipTypeDef:
+    return {
+        "relationshipType": ...,
+    }
 ```
 
-Optional fields:
-
-- `relationshipType`: `str`
-- `targetComponentTypeId`: `str`
-
-<a id="relationshipvaluetypedef"></a>
+```python title="Definition"
+class RelationshipTypeDef(TypedDict):
+    relationshipType: NotRequired[str],
+    targetComponentTypeId: NotRequired[str],
+```
 
 ## RelationshipValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import RelationshipValueTypeDef
+
+def get_value() -> RelationshipValueTypeDef:
+    return {
+        "targetComponentName": ...,
+    }
 ```
 
-Optional fields:
-
-- `targetComponentName`: `str`
-- `targetEntityId`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RelationshipValueTypeDef(TypedDict):
+    targetComponentName: NotRequired[str],
+    targetEntityId: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="scenesummarytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SceneSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import SceneSummaryTypeDef
+
+def get_value() -> SceneSummaryTypeDef:
+    return {
+        "arn": ...,
+        "contentLocation": ...,
+        "creationDateTime": ...,
+        "sceneId": ...,
+        "updateDateTime": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `contentLocation`: `str`
-- `creationDateTime`: `datetime`
-- `sceneId`: `str`
-- `updateDateTime`: `datetime`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="statustypedef"></a>
+```python title="Definition"
+class SceneSummaryTypeDef(TypedDict):
+    arn: str,
+    contentLocation: str,
+    creationDateTime: datetime,
+    sceneId: str,
+    updateDateTime: datetime,
+    description: NotRequired[str],
+```
 
 ## StatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import StatusTypeDef
+
+def get_value() -> StatusTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StatusTypeDef(TypedDict):
+    error: NotRequired[ErrorDetailsTypeDef],  # (1)
+    state: NotRequired[StateType],  # (2)
+```
 
-- `error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
-- `state`: [StateType](./literals.md#statetype)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
+2. See [:material-code-brackets: StateType](./literals.md#statetype) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceARN": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceARN`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceARN: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceARN": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceARN`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatecomponenttyperequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceARN: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateComponentTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import UpdateComponentTypeRequestRequestTypeDef
+
+def get_value() -> UpdateComponentTypeRequestRequestTypeDef:
+    return {
+        "componentTypeId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateComponentTypeRequestRequestTypeDef(TypedDict):
+    componentTypeId: str,
+    workspaceId: str,
+    description: NotRequired[str],
+    extendsFrom: NotRequired[Sequence[str]],
+    functions: NotRequired[Mapping[str, FunctionRequestTypeDef]],  # (1)
+    isSingleton: NotRequired[bool],
+    propertyDefinitions: NotRequired[Mapping[str, PropertyDefinitionRequestTypeDef]],  # (2)
+```
 
-- `componentTypeId`: `str`
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `extendsFrom`: `Sequence`\[`str`\]
-- `functions`: `Mapping`\[`str`,
-  [FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef)\]
-- `isSingleton`: `bool`
-- `propertyDefinitions`: `Mapping`\[`str`,
-  [PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef)\]
-
-<a id="updatecomponenttyperesponsetypedef"></a>
-
+1. See [:material-code-braces: FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef) 
+2. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
 ## UpdateComponentTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import UpdateComponentTypeResponseTypeDef
+
+def get_value() -> UpdateComponentTypeResponseTypeDef:
+    return {
+        "arn": ...,
+        "componentTypeId": ...,
+        "state": ...,
+        "workspaceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateComponentTypeResponseTypeDef(TypedDict):
+    arn: str,
+    componentTypeId: str,
+    state: StateType,  # (1)
+    workspaceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `arn`: `str`
-- `componentTypeId`: `str`
-- `state`: [StateType](./literals.md#statetype)
-- `workspaceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateentityrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StateType](./literals.md#statetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEntityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import UpdateEntityRequestRequestTypeDef
+
+def get_value() -> UpdateEntityRequestRequestTypeDef:
+    return {
+        "entityId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEntityRequestRequestTypeDef(TypedDict):
+    entityId: str,
+    workspaceId: str,
+    componentUpdates: NotRequired[Mapping[str, ComponentUpdateRequestTypeDef]],  # (1)
+    description: NotRequired[str],
+    entityName: NotRequired[str],
+    parentEntityUpdate: NotRequired[ParentEntityUpdateRequestTypeDef],  # (2)
+```
 
-- `entityId`: `str`
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `componentUpdates`: `Mapping`\[`str`,
-  [ComponentUpdateRequestTypeDef](./type_defs.md#componentupdaterequesttypedef)\]
-- `description`: `str`
-- `entityName`: `str`
-- `parentEntityUpdate`:
-  [ParentEntityUpdateRequestTypeDef](./type_defs.md#parententityupdaterequesttypedef)
-
-<a id="updateentityresponsetypedef"></a>
-
+1. See [:material-code-braces: ComponentUpdateRequestTypeDef](./type_defs.md#componentupdaterequesttypedef) 
+2. See [:material-code-braces: ParentEntityUpdateRequestTypeDef](./type_defs.md#parententityupdaterequesttypedef) 
 ## UpdateEntityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import UpdateEntityResponseTypeDef
+
+def get_value() -> UpdateEntityResponseTypeDef:
+    return {
+        "state": ...,
+        "updateDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEntityResponseTypeDef(TypedDict):
+    state: StateType,  # (1)
+    updateDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `state`: [StateType](./literals.md#statetype)
-- `updateDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatescenerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StateType](./literals.md#statetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSceneRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import UpdateSceneRequestRequestTypeDef
+
+def get_value() -> UpdateSceneRequestRequestTypeDef:
+    return {
+        "sceneId": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `sceneId`: `str`
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `capabilities`: `Sequence`\[`str`\]
-- `contentLocation`: `str`
-- `description`: `str`
-
-<a id="updatesceneresponsetypedef"></a>
+```python title="Definition"
+class UpdateSceneRequestRequestTypeDef(TypedDict):
+    sceneId: str,
+    workspaceId: str,
+    capabilities: NotRequired[Sequence[str]],
+    contentLocation: NotRequired[str],
+    description: NotRequired[str],
+```
 
 ## UpdateSceneResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import UpdateSceneResponseTypeDef
+
+def get_value() -> UpdateSceneResponseTypeDef:
+    return {
+        "updateDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSceneResponseTypeDef(TypedDict):
+    updateDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `updateDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateworkspacerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateWorkspaceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import UpdateWorkspaceRequestRequestTypeDef
+
+def get_value() -> UpdateWorkspaceRequestRequestTypeDef:
+    return {
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `role`: `str`
-
-<a id="updateworkspaceresponsetypedef"></a>
+```python title="Definition"
+class UpdateWorkspaceRequestRequestTypeDef(TypedDict):
+    workspaceId: str,
+    description: NotRequired[str],
+    role: NotRequired[str],
+```
 
 ## UpdateWorkspaceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import UpdateWorkspaceResponseTypeDef
+
+def get_value() -> UpdateWorkspaceResponseTypeDef:
+    return {
+        "updateDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWorkspaceResponseTypeDef(TypedDict):
+    updateDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `updateDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="workspacesummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WorkspaceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iottwinmaker.type_defs import WorkspaceSummaryTypeDef
+
+def get_value() -> WorkspaceSummaryTypeDef:
+    return {
+        "arn": ...,
+        "creationDateTime": ...,
+        "updateDateTime": ...,
+        "workspaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WorkspaceSummaryTypeDef(TypedDict):
+    arn: str,
+    creationDateTime: datetime,
+    updateDateTime: datetime,
+    workspaceId: str,
+    description: NotRequired[str],
+```
 
-- `arn`: `str`
-- `creationDateTime`: `datetime`
-- `updateDateTime`: `datetime`
-- `workspaceId`: `str`
-
-Optional fields:
-
-- `description`: `str`

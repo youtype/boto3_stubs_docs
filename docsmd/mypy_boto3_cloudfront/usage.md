@@ -1,92 +1,139 @@
-<a id="examples-for-boto3-cloudfront-module"></a>
-
-# Examples for boto3 CloudFront module
+# Examples
 
 > [Index](../README.md) > [CloudFront](./README.md) > Examples
 
-- [Examples for boto3 CloudFront module](#examples-for-boto3-cloudfront-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+    type annotations stubs module [mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[cloudfront]` package installed.
 
-Write your `CloudFront` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `CloudFront` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CloudFrontClient
-# and provides type checking and code completion
-client = session.client("cloudfront")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_alias()
 
-# paginator has type ListCloudFrontOriginAccessIdentitiesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_cloud_front_origin_access_identities")
-for item in paginator.paginate(...):
-    # item has type ListCloudFrontOriginAccessIdentitiesResultTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type DistributionDeployedWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("distribution_deployed")
-waiter.wait()
-```
+    client = session.client("cloudfront")  # (1)
+    result = client.create_cache_policy()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [CloudFrontClient](./client.md)
+    2. result: [:material-code-braces: CreateCachePolicyResultTypeDef](./type_defs.md#createcachepolicyresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("cloudfront")  # (1)
+
+    paginator = client.get_paginator("list_cloud_front_origin_access_identities")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CloudFrontClient](./client.md)
+    2. paginator: [ListCloudFrontOriginAccessIdentitiesPaginator](./paginators.md#listcloudfrontoriginaccessidentitiespaginator)
+    3. item: [:material-code-braces: ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("cloudfront")  # (1)
+
+    waiter = client.get_waiter("distribution_deployed")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [CloudFrontClient](./client.md)
+    2. waiter: [DistributionDeployedWaiter](./waiters.md#distributiondeployedwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[cloudfront]` or a standalone `mypy_boto3_cloudfront`
-package, you have to explicitly specify `client: CloudFrontClient` type
-annotation.
+With `boto3-stubs-lite[cloudfront]`
+or a standalone `mypy_boto3_cloudfront` package, you have to explicitly specify `client: CloudFrontClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_cloudfront.client import CloudFrontClient
-from mypy_boto3_cloudfront.paginator import ListCloudFrontOriginAccessIdentitiesPaginator
-from mypy_boto3_cloudfront.waiter import DistributionDeployedWaiter
-from mypy_boto3_cloudfront.literals import PaginatorName
-from mypy_boto3_cloudfront.literals import WaiterName
-from mypy_boto3_cloudfront.type_defs import None
-from mypy_boto3_cloudfront.type_defs import ListCloudFrontOriginAccessIdentitiesResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CloudFrontClient = session.client("cloudfront")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.associate_alias()
+    from mypy_boto3_cloudfront.client import CloudFrontClient
+    from mypy_boto3_cloudfront.type_defs import CreateCachePolicyResultTypeDef
+    from mypy_boto3_cloudfront.type_defs import CreateCachePolicyRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_cloud_front_origin_access_identities"
-paginator: ListCloudFrontOriginAccessIdentitiesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListCloudFrontOriginAccessIdentitiesResultTypeDef
-    print(item)
 
-waiter_name: WaiterName = "distribution_deployed"
-waiter: DistributionDeployedWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: CloudFrontClient = session.client("cloudfront")
+
+    kwargs: CreateCachePolicyRequestRequestTypeDef = {...}
+    result: CreateCachePolicyResultTypeDef = client.create_cache_policy(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cloudfront.client import CloudFrontClient
+    from mypy_boto3_cloudfront.paginator import ListCloudFrontOriginAccessIdentitiesPaginator
+    from mypy_boto3_cloudfront.type_defs import ListCloudFrontOriginAccessIdentitiesResultTypeDef
+
+
+    session = Session()
+    client: CloudFrontClient = session.client("cloudfront")
+
+    paginator: ListCloudFrontOriginAccessIdentitiesPaginator = client.get_paginator("list_cloud_front_origin_access_identities")
+    for item in paginator.paginate(...):
+        item: ListCloudFrontOriginAccessIdentitiesResultTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cloudfront.client import CloudFrontClient
+    from mypy_boto3_cloudfront.waiter import DistributionDeployedWaiter
+
+    session = Session()
+    client: CloudFrontClient = session.client("cloudfront")
+
+    waiter: DistributionDeployedWaiter = client.get_waiter("distribution_deployed")
+    waiter.wait()
+    ```
+
+

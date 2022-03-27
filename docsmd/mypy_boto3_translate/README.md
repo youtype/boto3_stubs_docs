@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-translate-module"></a>
-
-# Type annotations for boto3 Translate module
+#  Translate module
 
 > [Index](../README.md) > Translate
 
-Auto-generated documentation for
-[Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
-type annotations stubs module
-[mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
+!!! note ""
 
-- [Type annotations for boto3 Translate module](#type-annotations-for-boto3-translate-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [TranslateClient](#translateclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
+    type annotations stubs module [mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Translate`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[translate]'
 python -m pip install mypy-boto3-translate
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,94 +42,58 @@ python -m pip install mypy-boto3-translate
 python -m pip uninstall -y mypy-boto3-translate
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="translateclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## TranslateClient
 
-Type annotations for `boto3.client("translate")` as
-[TranslateClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("translate")` as [TranslateClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_translate.client import TranslateClient
+
+def get_client() -> TranslateClient:
+    return Session().cleint("translate")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_parallel_data](./client.md#create_parallel_data)
-- [delete_parallel_data](./client.md#delete_parallel_data)
-- [delete_terminology](./client.md#delete_terminology)
-- [describe_text_translation_job](./client.md#describe_text_translation_job)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_parallel_data](./client.md#get_parallel_data)
-- [get_terminology](./client.md#get_terminology)
-- [import_terminology](./client.md#import_terminology)
-- [list_parallel_data](./client.md#list_parallel_data)
-- [list_terminologies](./client.md#list_terminologies)
-- [list_text_translation_jobs](./client.md#list_text_translation_jobs)
-- [start_text_translation_job](./client.md#start_text_translation_job)
-- [stop_text_translation_job](./client.md#stop_text_translation_job)
-- [translate_text](./client.md#translate_text)
-- [update_parallel_data](./client.md#update_parallel_data)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-TranslateClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentModificationException
-- ConflictException
-- DetectedLanguageLowConfidenceException
-- InternalServerException
-- InvalidFilterException
-- InvalidParameterValueException
-- InvalidRequestException
-- LimitExceededException
-- ResourceNotFoundException
-- ServiceUnavailableException
-- TextSizeLimitExceededException
-- TooManyRequestsException
-- UnsupportedLanguagePairException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("translate").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("translate").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_translate.paginator import ListTerminologiesPaginator, ...
+from mypy_boto3_translate.paginator import ListTerminologiesPaginator
+
+def get_list_terminologies_paginator() -> ListTerminologiesPaginator:
+    return Session().client("translate").get_paginator("list_terminologies"))
 ```
 
 - [ListTerminologiesPaginator](./paginators.md#listterminologiespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_translate.literals import DirectionalityType
 
-```python
-from mypy_boto3_translate.literals import DirectionalityType, ...
+def get_value() -> DirectionalityType:
+    return "MULTI"
 ```
 
 - [DirectionalityType](./literals.md#directionalitytype)
@@ -168,18 +110,22 @@ from mypy_boto3_translate.literals import DirectionalityType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_translate.type_defs import AppliedTerminologyTypeDef
 
-```python
-from mypy_boto3_translate.type_defs import AppliedTerminologyTypeDef, ...
+def get_value() -> AppliedTerminologyTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [AppliedTerminologyTypeDef](./type_defs.md#appliedterminologytypedef)
@@ -201,6 +147,7 @@ from mypy_boto3_translate.type_defs import AppliedTerminologyTypeDef, ...
 - [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
 - [ListParallelDataRequestRequestTypeDef](./type_defs.md#listparalleldatarequestrequesttypedef)
 - [ListParallelDataResponseTypeDef](./type_defs.md#listparalleldataresponsetypedef)
+- [ListTerminologiesRequestListTerminologiesPaginateTypeDef](./type_defs.md#listterminologiesrequestlistterminologiespaginatetypedef)
 - [ListTerminologiesRequestRequestTypeDef](./type_defs.md#listterminologiesrequestrequesttypedef)
 - [ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef)
 - [ListTextTranslationJobsRequestRequestTypeDef](./type_defs.md#listtexttranslationjobsrequestrequesttypedef)
@@ -226,3 +173,4 @@ from mypy_boto3_translate.type_defs import AppliedTerminologyTypeDef, ...
 - [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
 - [UpdateParallelDataRequestRequestTypeDef](./type_defs.md#updateparalleldatarequestrequesttypedef)
 - [UpdateParallelDataResponseTypeDef](./type_defs.md#updateparalleldataresponsetypedef)
+

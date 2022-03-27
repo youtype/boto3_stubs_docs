@@ -1,64 +1,18 @@
-<a id="schemasclient-for-boto3-schemas-module"></a>
-
-# SchemasClient for boto3 Schemas module
+# SchemasClient
 
 > [Index](../README.md) > [Schemas](./README.md) > SchemasClient
 
-Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
-type annotations stubs module
-[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
+!!! note ""
 
-- [SchemasClient for boto3 Schemas module](#schemasclient-for-boto3-schemas-module)
-  - [SchemasClient](#schemasclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_discoverer](#create_discoverer)
-    - [create_registry](#create_registry)
-    - [create_schema](#create_schema)
-    - [delete_discoverer](#delete_discoverer)
-    - [delete_registry](#delete_registry)
-    - [delete_resource_policy](#delete_resource_policy)
-    - [delete_schema](#delete_schema)
-    - [delete_schema_version](#delete_schema_version)
-    - [describe_code_binding](#describe_code_binding)
-    - [describe_discoverer](#describe_discoverer)
-    - [describe_registry](#describe_registry)
-    - [describe_schema](#describe_schema)
-    - [export_schema](#export_schema)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_code_binding_source](#get_code_binding_source)
-    - [get_discovered_schema](#get_discovered_schema)
-    - [get_resource_policy](#get_resource_policy)
-    - [list_discoverers](#list_discoverers)
-    - [list_registries](#list_registries)
-    - [list_schema_versions](#list_schema_versions)
-    - [list_schemas](#list_schemas)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_code_binding](#put_code_binding)
-    - [put_resource_policy](#put_resource_policy)
-    - [search_schemas](#search_schemas)
-    - [start_discoverer](#start_discoverer)
-    - [stop_discoverer](#stop_discoverer)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_discoverer](#update_discoverer)
-    - [update_registry](#update_registry)
-    - [update_schema](#update_schema)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="schemasclient"></a>
+    Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+    type annotations stubs module [mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 ## SchemasClient
 
-Type annotations for `boto3.client("schemas")`
+Type annotations and code completion for `#!python boto3.client("schemas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_schemas.client import SchemasClient
 
@@ -66,807 +20,1075 @@ def get_schemas_client() -> SchemasClient:
     return Session().client("schemas")
 ```
 
-Boto3 documentation:
-[Schemas.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("schemas").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("schemas")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.GoneException,
+    client.InternalServerErrorException,
+    client.NotFoundException,
+    client.PreconditionFailedException,
+    client.ServiceUnavailableException,
+    client.TooManyRequestsException,
+    client.UnauthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_schemas.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.GoneException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.NotFoundException`
-- `Exceptions.PreconditionFailedException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnauthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SchemasClient exceptions.
-
-Type annotations for `boto3.client("schemas").exceptions` method.
-
-Boto3 documentation:
-[Schemas.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("schemas").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("schemas").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.can_paginate)
 
-Boto3 documentation:
-[Schemas.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_discoverer"></a>
-
-### create_discoverer
+### create\_discoverer
 
 Creates a discoverer.
 
-Type annotations for `boto3.client("schemas").create_discoverer` method.
+Type annotations and code completion for `#!python boto3.client("schemas").create_discoverer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_discoverer)
 
-Boto3 documentation:
-[Schemas.Client.create_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_discoverer)
+```python title="Method definition"
+def create_discoverer(
+    self,
+    *,
+    SourceArn: str,
+    Description: str = ...,
+    CrossAccount: bool = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateDiscovererResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateDiscovererRequestRequestTypeDef](./type_defs.md#creatediscovererrequestrequesttypedef).
+1. See [:material-code-braces: CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceArn`: `str` *(required)*
-- `Description`: `str`
-- `CrossAccount`: `bool`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDiscovererRequestRequestTypeDef = {  # (1)
+    "SourceArn": ...,
+}
 
-Returns
-[CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef).
+parent.create_discoverer(**kwargs)
+```
 
-<a id="create\_registry"></a>
+1. See [:material-code-braces: CreateDiscovererRequestRequestTypeDef](./type_defs.md#creatediscovererrequestrequesttypedef) 
 
-### create_registry
+### create\_registry
 
 Creates a registry.
 
-Type annotations for `boto3.client("schemas").create_registry` method.
+Type annotations and code completion for `#!python boto3.client("schemas").create_registry` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_registry)
 
-Boto3 documentation:
-[Schemas.Client.create_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_registry)
+```python title="Method definition"
+def create_registry(
+    self,
+    *,
+    RegistryName: str,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateRegistryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRegistryRequestRequestTypeDef](./type_defs.md#createregistryrequestrequesttypedef).
+1. See [:material-code-braces: CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRegistryRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+}
 
-Returns
-[CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
+parent.create_registry(**kwargs)
+```
 
-<a id="create\_schema"></a>
+1. See [:material-code-braces: CreateRegistryRequestRequestTypeDef](./type_defs.md#createregistryrequestrequesttypedef) 
 
-### create_schema
+### create\_schema
 
 Creates a schema definition.
 
-Type annotations for `boto3.client("schemas").create_schema` method.
+Type annotations and code completion for `#!python boto3.client("schemas").create_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_schema)
 
-Boto3 documentation:
-[Schemas.Client.create_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.create_schema)
+```python title="Method definition"
+def create_schema(
+    self,
+    *,
+    Content: str,
+    RegistryName: str,
+    SchemaName: str,
+    Type: TypeType,  # (1)
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateSchemaResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSchemaRequestRequestTypeDef](./type_defs.md#createschemarequestrequesttypedef).
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+2. See [:material-code-braces: CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Content`: `str` *(required)*
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `Type`: [TypeType](./literals.md#typetype) *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSchemaRequestRequestTypeDef = {  # (1)
+    "Content": ...,
+    "RegistryName": ...,
+    "SchemaName": ...,
+    "Type": ...,
+}
 
-Returns
-[CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
+parent.create_schema(**kwargs)
+```
 
-<a id="delete\_discoverer"></a>
+1. See [:material-code-braces: CreateSchemaRequestRequestTypeDef](./type_defs.md#createschemarequestrequesttypedef) 
 
-### delete_discoverer
+### delete\_discoverer
 
 Deletes a discoverer.
 
-Type annotations for `boto3.client("schemas").delete_discoverer` method.
+Type annotations and code completion for `#!python boto3.client("schemas").delete_discoverer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_discoverer)
 
-Boto3 documentation:
-[Schemas.Client.delete_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_discoverer)
+```python title="Method definition"
+def delete_discoverer(
+    self,
+    *,
+    DiscovererId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDiscovererRequestRequestTypeDef](./type_defs.md#deletediscovererrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DiscovererId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDiscovererRequestRequestTypeDef = {  # (1)
+    "DiscovererId": ...,
+}
 
-<a id="delete\_registry"></a>
+parent.delete_discoverer(**kwargs)
+```
 
-### delete_registry
+1. See [:material-code-braces: DeleteDiscovererRequestRequestTypeDef](./type_defs.md#deletediscovererrequestrequesttypedef) 
+
+### delete\_registry
 
 Deletes a Registry.
 
-Type annotations for `boto3.client("schemas").delete_registry` method.
+Type annotations and code completion for `#!python boto3.client("schemas").delete_registry` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_registry)
 
-Boto3 documentation:
-[Schemas.Client.delete_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_registry)
+```python title="Method definition"
+def delete_registry(
+    self,
+    *,
+    RegistryName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRegistryRequestRequestTypeDef](./type_defs.md#deleteregistryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRegistryRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+}
 
-<a id="delete\_resource\_policy"></a>
+parent.delete_registry(**kwargs)
+```
 
-### delete_resource_policy
+1. See [:material-code-braces: DeleteRegistryRequestRequestTypeDef](./type_defs.md#deleteregistryrequestrequesttypedef) 
+
+### delete\_resource\_policy
 
 Delete the resource-based policy attached to the specified registry.
 
-Type annotations for `boto3.client("schemas").delete_resource_policy` method.
+Type annotations and code completion for `#!python boto3.client("schemas").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_resource_policy)
 
-Boto3 documentation:
-[Schemas.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_resource_policy)
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+    *,
+    RegistryName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RegistryName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+}
 
-<a id="delete\_schema"></a>
+parent.delete_resource_policy(**kwargs)
+```
 
-### delete_schema
+1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
+
+### delete\_schema
 
 Delete a schema definition.
 
-Type annotations for `boto3.client("schemas").delete_schema` method.
+Type annotations and code completion for `#!python boto3.client("schemas").delete_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema)
 
-Boto3 documentation:
-[Schemas.Client.delete_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema)
+```python title="Method definition"
+def delete_schema(
+    self,
+    *,
+    RegistryName: str,
+    SchemaName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSchemaRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+    "SchemaName": ...,
+}
 
-<a id="delete\_schema\_version"></a>
+parent.delete_schema(**kwargs)
+```
 
-### delete_schema_version
+1. See [:material-code-braces: DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef) 
 
-Delete the schema version definition See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/DeleteSchemaVersion).
+### delete\_schema\_version
 
-Type annotations for `boto3.client("schemas").delete_schema_version` method.
+Delete the schema version definition See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/DeleteSchemaVersion).
 
-Boto3 documentation:
-[Schemas.Client.delete_schema_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema_version)
+Type annotations and code completion for `#!python boto3.client("schemas").delete_schema_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.delete_schema_version)
 
-Arguments mapping described in
-[DeleteSchemaVersionRequestRequestTypeDef](./type_defs.md#deleteschemaversionrequestrequesttypedef).
+```python title="Method definition"
+def delete_schema_version(
+    self,
+    *,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `SchemaVersion`: `str` *(required)*
 
-<a id="describe\_code\_binding"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteSchemaVersionRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+    "SchemaName": ...,
+    "SchemaVersion": ...,
+}
 
-### describe_code_binding
+parent.delete_schema_version(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteSchemaVersionRequestRequestTypeDef](./type_defs.md#deleteschemaversionrequestrequesttypedef) 
+
+### describe\_code\_binding
 
 Describe the code binding URI.
 
-Type annotations for `boto3.client("schemas").describe_code_binding` method.
+Type annotations and code completion for `#!python boto3.client("schemas").describe_code_binding` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_code_binding)
 
-Boto3 documentation:
-[Schemas.Client.describe_code_binding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_code_binding)
+```python title="Method definition"
+def describe_code_binding(
+    self,
+    *,
+    Language: str,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: str = ...,
+) -> DescribeCodeBindingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCodeBindingRequestRequestTypeDef](./type_defs.md#describecodebindingrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCodeBindingResponseTypeDef](./type_defs.md#describecodebindingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Language`: `str` *(required)*
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `SchemaVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeCodeBindingRequestRequestTypeDef = {  # (1)
+    "Language": ...,
+    "RegistryName": ...,
+    "SchemaName": ...,
+}
 
-Returns
-[DescribeCodeBindingResponseTypeDef](./type_defs.md#describecodebindingresponsetypedef).
+parent.describe_code_binding(**kwargs)
+```
 
-<a id="describe\_discoverer"></a>
+1. See [:material-code-braces: DescribeCodeBindingRequestRequestTypeDef](./type_defs.md#describecodebindingrequestrequesttypedef) 
 
-### describe_discoverer
+### describe\_discoverer
 
 Describes the discoverer.
 
-Type annotations for `boto3.client("schemas").describe_discoverer` method.
+Type annotations and code completion for `#!python boto3.client("schemas").describe_discoverer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_discoverer)
 
-Boto3 documentation:
-[Schemas.Client.describe_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_discoverer)
+```python title="Method definition"
+def describe_discoverer(
+    self,
+    *,
+    DiscovererId: str,
+) -> DescribeDiscovererResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDiscovererRequestRequestTypeDef](./type_defs.md#describediscovererrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDiscovererResponseTypeDef](./type_defs.md#describediscovererresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DiscovererId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDiscovererRequestRequestTypeDef = {  # (1)
+    "DiscovererId": ...,
+}
 
-Returns
-[DescribeDiscovererResponseTypeDef](./type_defs.md#describediscovererresponsetypedef).
+parent.describe_discoverer(**kwargs)
+```
 
-<a id="describe\_registry"></a>
+1. See [:material-code-braces: DescribeDiscovererRequestRequestTypeDef](./type_defs.md#describediscovererrequestrequesttypedef) 
 
-### describe_registry
+### describe\_registry
 
 Describes the registry.
 
-Type annotations for `boto3.client("schemas").describe_registry` method.
+Type annotations and code completion for `#!python boto3.client("schemas").describe_registry` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_registry)
 
-Boto3 documentation:
-[Schemas.Client.describe_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_registry)
+```python title="Method definition"
+def describe_registry(
+    self,
+    *,
+    RegistryName: str,
+) -> DescribeRegistryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRegistryRequestRequestTypeDef](./type_defs.md#describeregistryrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRegistryRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+}
 
-Returns
-[DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef).
+parent.describe_registry(**kwargs)
+```
 
-<a id="describe\_schema"></a>
+1. See [:material-code-braces: DescribeRegistryRequestRequestTypeDef](./type_defs.md#describeregistryrequestrequesttypedef) 
 
-### describe_schema
+### describe\_schema
 
 Retrieve the schema definition.
 
-Type annotations for `boto3.client("schemas").describe_schema` method.
+Type annotations and code completion for `#!python boto3.client("schemas").describe_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_schema)
 
-Boto3 documentation:
-[Schemas.Client.describe_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.describe_schema)
+```python title="Method definition"
+def describe_schema(
+    self,
+    *,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: str = ...,
+) -> DescribeSchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSchemaRequestRequestTypeDef](./type_defs.md#describeschemarequestrequesttypedef).
+1. See [:material-code-braces: DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `SchemaVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSchemaRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+    "SchemaName": ...,
+}
 
-Returns
-[DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
+parent.describe_schema(**kwargs)
+```
 
-<a id="export\_schema"></a>
+1. See [:material-code-braces: DescribeSchemaRequestRequestTypeDef](./type_defs.md#describeschemarequestrequesttypedef) 
 
-### export_schema
+### export\_schema
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/ExportSchema).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/ExportSchema).
 
-Type annotations for `boto3.client("schemas").export_schema` method.
+Type annotations and code completion for `#!python boto3.client("schemas").export_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.export_schema)
 
-Boto3 documentation:
-[Schemas.Client.export_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.export_schema)
+```python title="Method definition"
+def export_schema(
+    self,
+    *,
+    RegistryName: str,
+    SchemaName: str,
+    Type: str,
+    SchemaVersion: str = ...,
+) -> ExportSchemaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExportSchemaRequestRequestTypeDef](./type_defs.md#exportschemarequestrequesttypedef).
+1. See [:material-code-braces: ExportSchemaResponseTypeDef](./type_defs.md#exportschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `Type`: `str` *(required)*
-- `SchemaVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: ExportSchemaRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+    "SchemaName": ...,
+    "Type": ...,
+}
 
-Returns
-[ExportSchemaResponseTypeDef](./type_defs.md#exportschemaresponsetypedef).
+parent.export_schema(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExportSchemaRequestRequestTypeDef](./type_defs.md#exportschemarequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("schemas").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("schemas").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Schemas.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_code\_binding\_source"></a>
-
-### get_code_binding_source
+### get\_code\_binding\_source
 
 Get the code binding source URI.
 
-Type annotations for `boto3.client("schemas").get_code_binding_source` method.
+Type annotations and code completion for `#!python boto3.client("schemas").get_code_binding_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_code_binding_source)
 
-Boto3 documentation:
-[Schemas.Client.get_code_binding_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_code_binding_source)
+```python title="Method definition"
+def get_code_binding_source(
+    self,
+    *,
+    Language: str,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: str = ...,
+) -> GetCodeBindingSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCodeBindingSourceRequestRequestTypeDef](./type_defs.md#getcodebindingsourcerequestrequesttypedef).
+1. See [:material-code-braces: GetCodeBindingSourceResponseTypeDef](./type_defs.md#getcodebindingsourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Language`: `str` *(required)*
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `SchemaVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCodeBindingSourceRequestRequestTypeDef = {  # (1)
+    "Language": ...,
+    "RegistryName": ...,
+    "SchemaName": ...,
+}
 
-Returns
-[GetCodeBindingSourceResponseTypeDef](./type_defs.md#getcodebindingsourceresponsetypedef).
+parent.get_code_binding_source(**kwargs)
+```
 
-<a id="get\_discovered\_schema"></a>
+1. See [:material-code-braces: GetCodeBindingSourceRequestRequestTypeDef](./type_defs.md#getcodebindingsourcerequestrequesttypedef) 
 
-### get_discovered_schema
+### get\_discovered\_schema
 
 Get the discovered schema that was generated based on sampled events.
 
-Type annotations for `boto3.client("schemas").get_discovered_schema` method.
+Type annotations and code completion for `#!python boto3.client("schemas").get_discovered_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_discovered_schema)
 
-Boto3 documentation:
-[Schemas.Client.get_discovered_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_discovered_schema)
+```python title="Method definition"
+def get_discovered_schema(
+    self,
+    *,
+    Events: Sequence[str],
+    Type: TypeType,  # (1)
+) -> GetDiscoveredSchemaResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetDiscoveredSchemaRequestRequestTypeDef](./type_defs.md#getdiscoveredschemarequestrequesttypedef).
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+2. See [:material-code-braces: GetDiscoveredSchemaResponseTypeDef](./type_defs.md#getdiscoveredschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Events`: `Sequence`\[`str`\] *(required)*
-- `Type`: [TypeType](./literals.md#typetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDiscoveredSchemaRequestRequestTypeDef = {  # (1)
+    "Events": ...,
+    "Type": ...,
+}
 
-Returns
-[GetDiscoveredSchemaResponseTypeDef](./type_defs.md#getdiscoveredschemaresponsetypedef).
+parent.get_discovered_schema(**kwargs)
+```
 
-<a id="get\_resource\_policy"></a>
+1. See [:material-code-braces: GetDiscoveredSchemaRequestRequestTypeDef](./type_defs.md#getdiscoveredschemarequestrequesttypedef) 
 
-### get_resource_policy
+### get\_resource\_policy
 
 Retrieves the resource-based policy attached to a given registry.
 
-Type annotations for `boto3.client("schemas").get_resource_policy` method.
+Type annotations and code completion for `#!python boto3.client("schemas").get_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_resource_policy)
 
-Boto3 documentation:
-[Schemas.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.get_resource_policy)
+```python title="Method definition"
+def get_resource_policy(
+    self,
+    *,
+    RegistryName: str = ...,
+) -> GetResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetResourcePolicyRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+}
 
-Returns
-[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
+parent.get_resource_policy(**kwargs)
+```
 
-<a id="list\_discoverers"></a>
+1. See [:material-code-braces: GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef) 
 
-### list_discoverers
+### list\_discoverers
 
 List the discoverers.
 
-Type annotations for `boto3.client("schemas").list_discoverers` method.
+Type annotations and code completion for `#!python boto3.client("schemas").list_discoverers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_discoverers)
 
-Boto3 documentation:
-[Schemas.Client.list_discoverers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_discoverers)
+```python title="Method definition"
+def list_discoverers(
+    self,
+    *,
+    DiscovererIdPrefix: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+    SourceArnPrefix: str = ...,
+) -> ListDiscoverersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDiscoverersRequestRequestTypeDef](./type_defs.md#listdiscoverersrequestrequesttypedef).
+1. See [:material-code-braces: ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DiscovererIdPrefix`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
-- `SourceArnPrefix`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDiscoverersRequestRequestTypeDef = {  # (1)
+    "DiscovererIdPrefix": ...,
+}
 
-Returns
-[ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef).
+parent.list_discoverers(**kwargs)
+```
 
-<a id="list\_registries"></a>
+1. See [:material-code-braces: ListDiscoverersRequestRequestTypeDef](./type_defs.md#listdiscoverersrequestrequesttypedef) 
 
-### list_registries
+### list\_registries
 
 List the registries.
 
-Type annotations for `boto3.client("schemas").list_registries` method.
+Type annotations and code completion for `#!python boto3.client("schemas").list_registries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_registries)
 
-Boto3 documentation:
-[Schemas.Client.list_registries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_registries)
+```python title="Method definition"
+def list_registries(
+    self,
+    *,
+    Limit: int = ...,
+    NextToken: str = ...,
+    RegistryNamePrefix: str = ...,
+    Scope: str = ...,
+) -> ListRegistriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRegistriesRequestRequestTypeDef](./type_defs.md#listregistriesrequestrequesttypedef).
+1. See [:material-code-braces: ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Limit`: `int`
-- `NextToken`: `str`
-- `RegistryNamePrefix`: `str`
-- `Scope`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRegistriesRequestRequestTypeDef = {  # (1)
+    "Limit": ...,
+}
 
-Returns
-[ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
+parent.list_registries(**kwargs)
+```
 
-<a id="list\_schema\_versions"></a>
+1. See [:material-code-braces: ListRegistriesRequestRequestTypeDef](./type_defs.md#listregistriesrequestrequesttypedef) 
 
-### list_schema_versions
+### list\_schema\_versions
 
 Provides a list of the schema versions and related information.
 
-Type annotations for `boto3.client("schemas").list_schema_versions` method.
+Type annotations and code completion for `#!python boto3.client("schemas").list_schema_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schema_versions)
 
-Boto3 documentation:
-[Schemas.Client.list_schema_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schema_versions)
+```python title="Method definition"
+def list_schema_versions(
+    self,
+    *,
+    RegistryName: str,
+    SchemaName: str,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> ListSchemaVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSchemaVersionsRequestRequestTypeDef](./type_defs.md#listschemaversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSchemaVersionsRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+    "SchemaName": ...,
+}
 
-Returns
-[ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
+parent.list_schema_versions(**kwargs)
+```
 
-<a id="list\_schemas"></a>
+1. See [:material-code-braces: ListSchemaVersionsRequestRequestTypeDef](./type_defs.md#listschemaversionsrequestrequesttypedef) 
 
-### list_schemas
+### list\_schemas
 
 List the schemas.
 
-Type annotations for `boto3.client("schemas").list_schemas` method.
+Type annotations and code completion for `#!python boto3.client("schemas").list_schemas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schemas)
 
-Boto3 documentation:
-[Schemas.Client.list_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_schemas)
+```python title="Method definition"
+def list_schemas(
+    self,
+    *,
+    RegistryName: str,
+    Limit: int = ...,
+    NextToken: str = ...,
+    SchemaNamePrefix: str = ...,
+) -> ListSchemasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef).
+1. See [:material-code-braces: ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `Limit`: `int`
-- `NextToken`: `str`
-- `SchemaNamePrefix`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSchemasRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+}
 
-Returns
-[ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
+parent.list_schemas(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Get tags for resource.
 
-Type annotations for `boto3.client("schemas").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("schemas").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Schemas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_code\_binding"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_code_binding
+### put\_code\_binding
 
-Put code binding URI See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/PutCodeBinding).
+Put code binding URI See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/PutCodeBinding).
 
-Type annotations for `boto3.client("schemas").put_code_binding` method.
+Type annotations and code completion for `#!python boto3.client("schemas").put_code_binding` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_code_binding)
 
-Boto3 documentation:
-[Schemas.Client.put_code_binding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_code_binding)
+```python title="Method definition"
+def put_code_binding(
+    self,
+    *,
+    Language: str,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: str = ...,
+) -> PutCodeBindingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutCodeBindingRequestRequestTypeDef](./type_defs.md#putcodebindingrequestrequesttypedef).
+1. See [:material-code-braces: PutCodeBindingResponseTypeDef](./type_defs.md#putcodebindingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Language`: `str` *(required)*
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `SchemaVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutCodeBindingRequestRequestTypeDef = {  # (1)
+    "Language": ...,
+    "RegistryName": ...,
+    "SchemaName": ...,
+}
 
-Returns
-[PutCodeBindingResponseTypeDef](./type_defs.md#putcodebindingresponsetypedef).
+parent.put_code_binding(**kwargs)
+```
 
-<a id="put\_resource\_policy"></a>
+1. See [:material-code-braces: PutCodeBindingRequestRequestTypeDef](./type_defs.md#putcodebindingrequestrequesttypedef) 
 
-### put_resource_policy
+### put\_resource\_policy
 
 The name of the policy.
 
-Type annotations for `boto3.client("schemas").put_resource_policy` method.
+Type annotations and code completion for `#!python boto3.client("schemas").put_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_resource_policy)
 
-Boto3 documentation:
-[Schemas.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.put_resource_policy)
+```python title="Method definition"
+def put_resource_policy(
+    self,
+    *,
+    Policy: str,
+    RegistryName: str = ...,
+    RevisionId: str = ...,
+) -> PutResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Policy`: `str` *(required)*
-- `RegistryName`: `str`
-- `RevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutResourcePolicyRequestRequestTypeDef = {  # (1)
+    "Policy": ...,
+}
 
-Returns
-[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
+parent.put_resource_policy(**kwargs)
+```
 
-<a id="search\_schemas"></a>
+1. See [:material-code-braces: PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef) 
 
-### search_schemas
+### search\_schemas
 
-Search the schemas See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/SearchSchemas).
+Search the schemas See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/SearchSchemas).
 
-Type annotations for `boto3.client("schemas").search_schemas` method.
+Type annotations and code completion for `#!python boto3.client("schemas").search_schemas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.search_schemas)
 
-Boto3 documentation:
-[Schemas.Client.search_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.search_schemas)
+```python title="Method definition"
+def search_schemas(
+    self,
+    *,
+    Keywords: str,
+    RegistryName: str,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> SearchSchemasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SearchSchemasRequestRequestTypeDef](./type_defs.md#searchschemasrequestrequesttypedef).
+1. See [:material-code-braces: SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Keywords`: `str` *(required)*
-- `RegistryName`: `str` *(required)*
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchSchemasRequestRequestTypeDef = {  # (1)
+    "Keywords": ...,
+    "RegistryName": ...,
+}
 
-Returns
-[SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef).
+parent.search_schemas(**kwargs)
+```
 
-<a id="start\_discoverer"></a>
+1. See [:material-code-braces: SearchSchemasRequestRequestTypeDef](./type_defs.md#searchschemasrequestrequesttypedef) 
 
-### start_discoverer
+### start\_discoverer
 
-Starts the discoverer See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StartDiscoverer).
+Starts the discoverer See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StartDiscoverer).
 
-Type annotations for `boto3.client("schemas").start_discoverer` method.
+Type annotations and code completion for `#!python boto3.client("schemas").start_discoverer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.start_discoverer)
 
-Boto3 documentation:
-[Schemas.Client.start_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.start_discoverer)
+```python title="Method definition"
+def start_discoverer(
+    self,
+    *,
+    DiscovererId: str,
+) -> StartDiscovererResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartDiscovererRequestRequestTypeDef](./type_defs.md#startdiscovererrequestrequesttypedef).
+1. See [:material-code-braces: StartDiscovererResponseTypeDef](./type_defs.md#startdiscovererresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DiscovererId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartDiscovererRequestRequestTypeDef = {  # (1)
+    "DiscovererId": ...,
+}
 
-Returns
-[StartDiscovererResponseTypeDef](./type_defs.md#startdiscovererresponsetypedef).
+parent.start_discoverer(**kwargs)
+```
 
-<a id="stop\_discoverer"></a>
+1. See [:material-code-braces: StartDiscovererRequestRequestTypeDef](./type_defs.md#startdiscovererrequestrequesttypedef) 
 
-### stop_discoverer
+### stop\_discoverer
 
-Stops the discoverer See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StopDiscoverer).
+Stops the discoverer See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/StopDiscoverer).
 
-Type annotations for `boto3.client("schemas").stop_discoverer` method.
+Type annotations and code completion for `#!python boto3.client("schemas").stop_discoverer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.stop_discoverer)
 
-Boto3 documentation:
-[Schemas.Client.stop_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.stop_discoverer)
+```python title="Method definition"
+def stop_discoverer(
+    self,
+    *,
+    DiscovererId: str,
+) -> StopDiscovererResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopDiscovererRequestRequestTypeDef](./type_defs.md#stopdiscovererrequestrequesttypedef).
+1. See [:material-code-braces: StopDiscovererResponseTypeDef](./type_defs.md#stopdiscovererresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DiscovererId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopDiscovererRequestRequestTypeDef = {  # (1)
+    "DiscovererId": ...,
+}
 
-Returns
-[StopDiscovererResponseTypeDef](./type_defs.md#stopdiscovererresponsetypedef).
+parent.stop_discoverer(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopDiscovererRequestRequestTypeDef](./type_defs.md#stopdiscovererrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Add tags to a resource.
 
-Type annotations for `boto3.client("schemas").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("schemas").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.tag_resource)
 
-Boto3 documentation:
-[Schemas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Removes tags from a resource.
 
-Type annotations for `boto3.client("schemas").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("schemas").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.untag_resource)
 
-Boto3 documentation:
-[Schemas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_discoverer"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_discoverer
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-Updates the discoverer See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/UpdateDiscoverer).
+### update\_discoverer
 
-Type annotations for `boto3.client("schemas").update_discoverer` method.
+Updates the discoverer See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/schemas-2019-12-02/UpdateDiscoverer).
 
-Boto3 documentation:
-[Schemas.Client.update_discoverer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_discoverer)
+Type annotations and code completion for `#!python boto3.client("schemas").update_discoverer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_discoverer)
 
-Arguments mapping described in
-[UpdateDiscovererRequestRequestTypeDef](./type_defs.md#updatediscovererrequestrequesttypedef).
+```python title="Method definition"
+def update_discoverer(
+    self,
+    *,
+    DiscovererId: str,
+    Description: str = ...,
+    CrossAccount: bool = ...,
+) -> UpdateDiscovererResponseTypeDef:  # (1)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: UpdateDiscovererResponseTypeDef](./type_defs.md#updatediscovererresponsetypedef) 
 
-- `DiscovererId`: `str` *(required)*
-- `Description`: `str`
-- `CrossAccount`: `bool`
 
-Returns
-[UpdateDiscovererResponseTypeDef](./type_defs.md#updatediscovererresponsetypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateDiscovererRequestRequestTypeDef = {  # (1)
+    "DiscovererId": ...,
+}
 
-<a id="update\_registry"></a>
+parent.update_discoverer(**kwargs)
+```
 
-### update_registry
+1. See [:material-code-braces: UpdateDiscovererRequestRequestTypeDef](./type_defs.md#updatediscovererrequestrequesttypedef) 
+
+### update\_registry
 
 Updates a registry.
 
-Type annotations for `boto3.client("schemas").update_registry` method.
+Type annotations and code completion for `#!python boto3.client("schemas").update_registry` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_registry)
 
-Boto3 documentation:
-[Schemas.Client.update_registry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_registry)
+```python title="Method definition"
+def update_registry(
+    self,
+    *,
+    RegistryName: str,
+    Description: str = ...,
+) -> UpdateRegistryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRegistryRequestRequestTypeDef](./type_defs.md#updateregistryrequestrequesttypedef).
+1. See [:material-code-braces: UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateRegistryRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+}
 
-Returns
-[UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
+parent.update_registry(**kwargs)
+```
 
-<a id="update\_schema"></a>
+1. See [:material-code-braces: UpdateRegistryRequestRequestTypeDef](./type_defs.md#updateregistryrequestrequesttypedef) 
 
-### update_schema
+### update\_schema
 
 Updates the schema definition .
 
-Type annotations for `boto3.client("schemas").update_schema` method.
+Type annotations and code completion for `#!python boto3.client("schemas").update_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_schema)
 
-Boto3 documentation:
-[Schemas.Client.update_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.update_schema)
+```python title="Method definition"
+def update_schema(
+    self,
+    *,
+    RegistryName: str,
+    SchemaName: str,
+    ClientTokenId: str = ...,
+    Content: str = ...,
+    Description: str = ...,
+    Type: TypeType = ...,  # (1)
+) -> UpdateSchemaResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSchemaRequestRequestTypeDef](./type_defs.md#updateschemarequestrequesttypedef).
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+2. See [:material-code-braces: UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RegistryName`: `str` *(required)*
-- `SchemaName`: `str` *(required)*
-- `ClientTokenId`: `str`
-- `Content`: `str`
-- `Description`: `str`
-- `Type`: [TypeType](./literals.md#typetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateSchemaRequestRequestTypeDef = {  # (1)
+    "RegistryName": ...,
+    "SchemaName": ...,
+}
 
-Returns
-[UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
+parent.update_schema(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateSchemaRequestRequestTypeDef](./type_defs.md#updateschemarequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("schemas").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("schemas").get_paginator` method with overloads.
 
-- `client.get_paginator("list_discoverers")` ->
-  [ListDiscoverersPaginator](./paginators.md#listdiscovererspaginator)
-- `client.get_paginator("list_registries")` ->
-  [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
-- `client.get_paginator("list_schema_versions")` ->
-  [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
-- `client.get_paginator("list_schemas")` ->
-  [ListSchemasPaginator](./paginators.md#listschemaspaginator)
-- `client.get_paginator("search_schemas")` ->
-  [SearchSchemasPaginator](./paginators.md#searchschemaspaginator)
+- `client.get_paginator("list_discoverers")` -> [ListDiscoverersPaginator](./paginators.md#listdiscovererspaginator)
+- `client.get_paginator("list_registries")` -> [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
+- `client.get_paginator("list_schema_versions")` -> [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
+- `client.get_paginator("list_schemas")` -> [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+- `client.get_paginator("search_schemas")` -> [SearchSchemasPaginator](./paginators.md#searchschemaspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("schemas").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("schemas").get_waiter` method with overloads.
 
-- `client.get_waiter("code_binding_exists")` ->
-  [CodeBindingExistsWaiter](./waiters.md#codebindingexistswaiter)
+- `client.get_waiter("code_binding_exists")` -> [CodeBindingExistsWaiter](./waiters.md#codebindingexistswaiter)
+

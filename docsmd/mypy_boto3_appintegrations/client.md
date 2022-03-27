@@ -1,47 +1,18 @@
-<a id="appintegrationsserviceclient-for-boto3-appintegrationsservice-module"></a>
+# AppIntegrationsServiceClient
 
-# AppIntegrationsServiceClient for boto3 AppIntegrationsService module
+> [Index](../README.md) > [AppIntegrationsService](./README.md) > AppIntegrationsServiceClient
 
-> [Index](../README.md) > [AppIntegrationsService](./README.md) >
-> AppIntegrationsServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
-type annotations stubs module
-[mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
-
-- [AppIntegrationsServiceClient for boto3 AppIntegrationsService module](#appintegrationsserviceclient-for-boto3-appintegrationsservice-module)
-  - [AppIntegrationsServiceClient](#appintegrationsserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_data_integration](#create_data_integration)
-    - [create_event_integration](#create_event_integration)
-    - [delete_data_integration](#delete_data_integration)
-    - [delete_event_integration](#delete_event_integration)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_data_integration](#get_data_integration)
-    - [get_event_integration](#get_event_integration)
-    - [list_data_integration_associations](#list_data_integration_associations)
-    - [list_data_integrations](#list_data_integrations)
-    - [list_event_integration_associations](#list_event_integration_associations)
-    - [list_event_integrations](#list_event_integrations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_data_integration](#update_data_integration)
-    - [update_event_integration](#update_event_integration)
-
-<a id="appintegrationsserviceclient"></a>
+    Auto-generated documentation for [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
+    type annotations stubs module [mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 ## AppIntegrationsServiceClient
 
-Type annotations for `boto3.client("appintegrations")`
+Type annotations and code completion for `#!python boto3.client("appintegrations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
 
@@ -49,433 +20,535 @@ def get_appintegrations_client() -> AppIntegrationsServiceClient:
     return Session().client("appintegrations")
 ```
 
-Boto3 documentation:
-[AppIntegrationsService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("appintegrations").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("appintegrations")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.DuplicateResourceException,
+    client.InternalServiceError,
+    client.InvalidRequestException,
+    client.ResourceNotFoundException,
+    client.ResourceQuotaExceededException,
+    client.ThrottlingException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_appintegrations.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.DuplicateResourceException`
-- `Exceptions.InternalServiceError`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AppIntegrationsServiceClient exceptions.
-
-Type annotations for `boto3.client("appintegrations").exceptions` method.
-
-Boto3 documentation:
-[AppIntegrationsService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("appintegrations").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.can_paginate)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_data\_integration"></a>
-
-### create_data_integration
+### create\_data\_integration
 
 Creates and persists a DataIntegration resource.
 
-Type annotations for `boto3.client("appintegrations").create_data_integration`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").create_data_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_data_integration)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.create_data_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_data_integration)
+```python title="Method definition"
+def create_data_integration(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    KmsKey: str = ...,
+    SourceURI: str = ...,
+    ScheduleConfig: ScheduleConfigurationTypeDef = ...,  # (1)
+    Tags: Mapping[str, str] = ...,
+    ClientToken: str = ...,
+) -> CreateDataIntegrationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataIntegrationRequestRequestTypeDef](./type_defs.md#createdataintegrationrequestrequesttypedef).
+1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
+2. See [:material-code-braces: CreateDataIntegrationResponseTypeDef](./type_defs.md#createdataintegrationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `KmsKey`: `str`
-- `SourceURI`: `str`
-- `ScheduleConfig`:
-  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDataIntegrationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateDataIntegrationResponseTypeDef](./type_defs.md#createdataintegrationresponsetypedef).
+parent.create_data_integration(**kwargs)
+```
 
-<a id="create\_event\_integration"></a>
+1. See [:material-code-braces: CreateDataIntegrationRequestRequestTypeDef](./type_defs.md#createdataintegrationrequestrequesttypedef) 
 
-### create_event_integration
+### create\_event\_integration
 
 Creates an EventIntegration, given a specified name, description, and a
 reference to an Amazon EventBridge bus in your account and a partner event
 source that pushes events to that bus.
 
-Type annotations for `boto3.client("appintegrations").create_event_integration`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").create_event_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.create_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.create_event_integration)
+```python title="Method definition"
+def create_event_integration(
+    self,
+    *,
+    Name: str,
+    EventFilter: EventFilterTypeDef,  # (1)
+    EventBridgeBus: str,
+    Description: str = ...,
+    ClientToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateEventIntegrationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEventIntegrationRequestRequestTypeDef](./type_defs.md#createeventintegrationrequestrequesttypedef).
+1. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
+2. See [:material-code-braces: CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-  *(required)*
-- `EventBridgeBus`: `str` *(required)*
-- `Description`: `str`
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateEventIntegrationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "EventFilter": ...,
+    "EventBridgeBus": ...,
+}
 
-Returns
-[CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef).
+parent.create_event_integration(**kwargs)
+```
 
-<a id="delete\_data\_integration"></a>
+1. See [:material-code-braces: CreateEventIntegrationRequestRequestTypeDef](./type_defs.md#createeventintegrationrequestrequesttypedef) 
 
-### delete_data_integration
+### delete\_data\_integration
 
 Deletes the DataIntegration.
 
-Type annotations for `boto3.client("appintegrations").delete_data_integration`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").delete_data_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_data_integration)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.delete_data_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_data_integration)
+```python title="Method definition"
+def delete_data_integration(
+    self,
+    *,
+    DataIntegrationIdentifier: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataIntegrationRequestRequestTypeDef](./type_defs.md#deletedataintegrationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DataIntegrationIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDataIntegrationRequestRequestTypeDef = {  # (1)
+    "DataIntegrationIdentifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_data_integration(**kwargs)
+```
 
-<a id="delete\_event\_integration"></a>
+1. See [:material-code-braces: DeleteDataIntegrationRequestRequestTypeDef](./type_defs.md#deletedataintegrationrequestrequesttypedef) 
 
-### delete_event_integration
+### delete\_event\_integration
 
 Deletes the specified existing event integration.
 
-Type annotations for `boto3.client("appintegrations").delete_event_integration`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").delete_event_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.delete_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.delete_event_integration)
+```python title="Method definition"
+def delete_event_integration(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventIntegrationRequestRequestTypeDef](./type_defs.md#deleteeventintegrationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventIntegrationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_event_integration(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteEventIntegrationRequestRequestTypeDef](./type_defs.md#deleteeventintegrationrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("appintegrations").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_data\_integration"></a>
-
-### get_data_integration
+### get\_data\_integration
 
 Returns information about the DataIntegration.
 
-Type annotations for `boto3.client("appintegrations").get_data_integration`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").get_data_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_data_integration)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.get_data_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_data_integration)
+```python title="Method definition"
+def get_data_integration(
+    self,
+    *,
+    Identifier: str,
+) -> GetDataIntegrationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataIntegrationRequestRequestTypeDef](./type_defs.md#getdataintegrationrequestrequesttypedef).
+1. See [:material-code-braces: GetDataIntegrationResponseTypeDef](./type_defs.md#getdataintegrationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Identifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDataIntegrationRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+}
 
-Returns
-[GetDataIntegrationResponseTypeDef](./type_defs.md#getdataintegrationresponsetypedef).
+parent.get_data_integration(**kwargs)
+```
 
-<a id="get\_event\_integration"></a>
+1. See [:material-code-braces: GetDataIntegrationRequestRequestTypeDef](./type_defs.md#getdataintegrationrequestrequesttypedef) 
 
-### get_event_integration
+### get\_event\_integration
 
 Returns information about the event integration.
 
-Type annotations for `boto3.client("appintegrations").get_event_integration`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").get_event_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.get_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.get_event_integration)
+```python title="Method definition"
+def get_event_integration(
+    self,
+    *,
+    Name: str,
+) -> GetEventIntegrationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEventIntegrationRequestRequestTypeDef](./type_defs.md#geteventintegrationrequestrequesttypedef).
+1. See [:material-code-braces: GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEventIntegrationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef).
+parent.get_event_integration(**kwargs)
+```
 
-<a id="list\_data\_integration\_associations"></a>
+1. See [:material-code-braces: GetEventIntegrationRequestRequestTypeDef](./type_defs.md#geteventintegrationrequestrequesttypedef) 
 
-### list_data_integration_associations
+### list\_data\_integration\_associations
 
 Returns a paginated list of DataIntegration associations in the account.
 
-Type annotations for
-`boto3.client("appintegrations").list_data_integration_associations` method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").list_data_integration_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_data_integration_associations)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.list_data_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_data_integration_associations)
+```python title="Method definition"
+def list_data_integration_associations(
+    self,
+    *,
+    DataIntegrationIdentifier: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataIntegrationAssociationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listdataintegrationassociationsrequestrequesttypedef).
+1. See [:material-code-braces: ListDataIntegrationAssociationsResponseTypeDef](./type_defs.md#listdataintegrationassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataIntegrationIdentifier`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDataIntegrationAssociationsRequestRequestTypeDef = {  # (1)
+    "DataIntegrationIdentifier": ...,
+}
 
-Returns
-[ListDataIntegrationAssociationsResponseTypeDef](./type_defs.md#listdataintegrationassociationsresponsetypedef).
+parent.list_data_integration_associations(**kwargs)
+```
 
-<a id="list\_data\_integrations"></a>
+1. See [:material-code-braces: ListDataIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listdataintegrationassociationsrequestrequesttypedef) 
 
-### list_data_integrations
+### list\_data\_integrations
 
 Returns a paginated list of DataIntegrations in the account.
 
-Type annotations for `boto3.client("appintegrations").list_data_integrations`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").list_data_integrations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_data_integrations)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.list_data_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_data_integrations)
+```python title="Method definition"
+def list_data_integrations(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataIntegrationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataIntegrationsRequestRequestTypeDef](./type_defs.md#listdataintegrationsrequestrequesttypedef).
+1. See [:material-code-braces: ListDataIntegrationsResponseTypeDef](./type_defs.md#listdataintegrationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDataIntegrationsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDataIntegrationsResponseTypeDef](./type_defs.md#listdataintegrationsresponsetypedef).
+parent.list_data_integrations(**kwargs)
+```
 
-<a id="list\_event\_integration\_associations"></a>
+1. See [:material-code-braces: ListDataIntegrationsRequestRequestTypeDef](./type_defs.md#listdataintegrationsrequestrequesttypedef) 
 
-### list_event_integration_associations
+### list\_event\_integration\_associations
 
 Returns a paginated list of event integration associations in the account.
 
-Type annotations for
-`boto3.client("appintegrations").list_event_integration_associations` method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").list_event_integration_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.list_event_integration_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integration_associations)
+```python title="Method definition"
+def list_event_integration_associations(
+    self,
+    *,
+    EventIntegrationName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEventIntegrationAssociationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEventIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listeventintegrationassociationsrequestrequesttypedef).
+1. See [:material-code-braces: ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventIntegrationName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEventIntegrationAssociationsRequestRequestTypeDef = {  # (1)
+    "EventIntegrationName": ...,
+}
 
-Returns
-[ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef).
+parent.list_event_integration_associations(**kwargs)
+```
 
-<a id="list\_event\_integrations"></a>
+1. See [:material-code-braces: ListEventIntegrationAssociationsRequestRequestTypeDef](./type_defs.md#listeventintegrationassociationsrequestrequesttypedef) 
 
-### list_event_integrations
+### list\_event\_integrations
 
 Returns a paginated list of event integrations in the account.
 
-Type annotations for `boto3.client("appintegrations").list_event_integrations`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").list_event_integrations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.list_event_integrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_event_integrations)
+```python title="Method definition"
+def list_event_integrations(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEventIntegrationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEventIntegrationsRequestRequestTypeDef](./type_defs.md#listeventintegrationsrequestrequesttypedef).
+1. See [:material-code-braces: ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEventIntegrationsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef).
+parent.list_event_integrations(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListEventIntegrationsRequestRequestTypeDef](./type_defs.md#listeventintegrationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for the specified resource.
 
-Type annotations for `boto3.client("appintegrations").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds the specified tags to the specified resource.
 
-Type annotations for `boto3.client("appintegrations").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the specified tags from the specified resource.
 
-Type annotations for `boto3.client("appintegrations").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_data\_integration"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_data_integration
+### update\_data\_integration
 
 Updates the description of a DataIntegration.
 
-Type annotations for `boto3.client("appintegrations").update_data_integration`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").update_data_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_data_integration)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.update_data_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_data_integration)
+```python title="Method definition"
+def update_data_integration(
+    self,
+    *,
+    Identifier: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataIntegrationRequestRequestTypeDef](./type_defs.md#updatedataintegrationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Identifier`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDataIntegrationRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_data_integration(**kwargs)
+```
 
-<a id="update\_event\_integration"></a>
+1. See [:material-code-braces: UpdateDataIntegrationRequestRequestTypeDef](./type_defs.md#updatedataintegrationrequestrequesttypedef) 
 
-### update_event_integration
+### update\_event\_integration
 
 Updates the description of an event integration.
 
-Type annotations for `boto3.client("appintegrations").update_event_integration`
-method.
+Type annotations and code completion for `#!python boto3.client("appintegrations").update_event_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration)
 
-Boto3 documentation:
-[AppIntegrationsService.Client.update_event_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client.update_event_integration)
+```python title="Method definition"
+def update_event_integration(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateEventIntegrationRequestRequestTypeDef](./type_defs.md#updateeventintegrationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateEventIntegrationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_event_integration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateEventIntegrationRequestRequestTypeDef](./type_defs.md#updateeventintegrationrequestrequesttypedef) 
+
+
+
+

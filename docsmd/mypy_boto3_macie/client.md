@@ -1,39 +1,18 @@
-<a id="macieclient-for-boto3-macie-module"></a>
-
-# MacieClient for boto3 Macie module
+# MacieClient
 
 > [Index](../README.md) > [Macie](./README.md) > MacieClient
 
-Auto-generated documentation for
-[Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
-type annotations stubs module
-[mypy-boto3-macie](https://pypi.org/project/mypy-boto3-macie/).
+!!! note ""
 
-- [MacieClient for boto3 Macie module](#macieclient-for-boto3-macie-module)
-  - [MacieClient](#macieclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_member_account](#associate_member_account)
-    - [associate_s3_resources](#associate_s3_resources)
-    - [can_paginate](#can_paginate)
-    - [disassociate_member_account](#disassociate_member_account)
-    - [disassociate_s3_resources](#disassociate_s3_resources)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_member_accounts](#list_member_accounts)
-    - [list_s3_resources](#list_s3_resources)
-    - [update_s3_resources](#update_s3_resources)
-    - [get_paginator](#get_paginator)
-
-<a id="macieclient"></a>
+    Auto-generated documentation for [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
+    type annotations stubs module [mypy-boto3-macie](https://pypi.org/project/mypy-boto3-macie/).
 
 ## MacieClient
 
-Type annotations for `boto3.client("macie")`
+Type annotations and code completion for `#!python boto3.client("macie")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_macie.client import MacieClient
 
@@ -41,251 +20,295 @@ def get_macie_client() -> MacieClient:
     return Session().client("macie")
 ```
 
-Boto3 documentation:
-[Macie.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("macie").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("macie")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.InternalException,
+    client.InvalidInputException,
+    client.LimitExceededException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_macie.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalException`
-- `Exceptions.InvalidInputException`
-- `Exceptions.LimitExceededException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MacieClient exceptions.
-
-Type annotations for `boto3.client("macie").exceptions` method.
-
-Boto3 documentation:
-[Macie.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_member\_account"></a>
-
-### associate_member_account
+### associate\_member\_account
 
 (Discontinued) Associates a specified Amazon Web Services account with Amazon
 Macie Classic as a member account.
 
-Type annotations for `boto3.client("macie").associate_member_account` method.
+Type annotations and code completion for `#!python boto3.client("macie").associate_member_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_member_account)
 
-Boto3 documentation:
-[Macie.Client.associate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_member_account)
+```python title="Method definition"
+def associate_member_account(
+    self,
+    *,
+    memberAccountId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateMemberAccountRequestRequestTypeDef](./type_defs.md#associatememberaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `memberAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateMemberAccountRequestRequestTypeDef = {  # (1)
+    "memberAccountId": ...,
+}
 
-<a id="associate\_s3\_resources"></a>
+parent.associate_member_account(**kwargs)
+```
 
-### associate_s3_resources
+1. See [:material-code-braces: AssociateMemberAccountRequestRequestTypeDef](./type_defs.md#associatememberaccountrequestrequesttypedef) 
+
+### associate\_s3\_resources
 
 (Discontinued) Associates specified S3 resources with Amazon Macie Classic for
 monitoring and data classification.
 
-Type annotations for `boto3.client("macie").associate_s3_resources` method.
+Type annotations and code completion for `#!python boto3.client("macie").associate_s3_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_s3_resources)
 
-Boto3 documentation:
-[Macie.Client.associate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.associate_s3_resources)
+```python title="Method definition"
+def associate_s3_resources(
+    self,
+    *,
+    s3Resources: Sequence[S3ResourceClassificationTypeDef],  # (1)
+    memberAccountId: str = ...,
+) -> AssociateS3ResourcesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AssociateS3ResourcesRequestRequestTypeDef](./type_defs.md#associates3resourcesrequestrequesttypedef).
+1. See [:material-code-braces: S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef) 
+2. See [:material-code-braces: AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef) 
 
-Keyword-only arguments:
 
-- `s3Resources`:
-  `Sequence`\[[S3ResourceClassificationTypeDef](./type_defs.md#s3resourceclassificationtypedef)\]
-  *(required)*
-- `memberAccountId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateS3ResourcesRequestRequestTypeDef = {  # (1)
+    "s3Resources": ...,
+}
 
-Returns
-[AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef).
+parent.associate_s3_resources(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateS3ResourcesRequestRequestTypeDef](./type_defs.md#associates3resourcesrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("macie").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("macie").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.can_paginate)
 
-Boto3 documentation:
-[Macie.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="disassociate\_member\_account"></a>
-
-### disassociate_member_account
+### disassociate\_member\_account
 
 (Discontinued) Removes the specified member account from Amazon Macie Classic.
 
-Type annotations for `boto3.client("macie").disassociate_member_account`
-method.
+Type annotations and code completion for `#!python boto3.client("macie").disassociate_member_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_member_account)
 
-Boto3 documentation:
-[Macie.Client.disassociate_member_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_member_account)
+```python title="Method definition"
+def disassociate_member_account(
+    self,
+    *,
+    memberAccountId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateMemberAccountRequestRequestTypeDef](./type_defs.md#disassociatememberaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `memberAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateMemberAccountRequestRequestTypeDef = {  # (1)
+    "memberAccountId": ...,
+}
 
-<a id="disassociate\_s3\_resources"></a>
+parent.disassociate_member_account(**kwargs)
+```
 
-### disassociate_s3_resources
+1. See [:material-code-braces: DisassociateMemberAccountRequestRequestTypeDef](./type_defs.md#disassociatememberaccountrequestrequesttypedef) 
+
+### disassociate\_s3\_resources
 
 (Discontinued) Removes specified S3 resources from being monitored by Amazon
 Macie Classic.
 
-Type annotations for `boto3.client("macie").disassociate_s3_resources` method.
+Type annotations and code completion for `#!python boto3.client("macie").disassociate_s3_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_s3_resources)
 
-Boto3 documentation:
-[Macie.Client.disassociate_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.disassociate_s3_resources)
+```python title="Method definition"
+def disassociate_s3_resources(
+    self,
+    *,
+    associatedS3Resources: Sequence[S3ResourceTypeDef],  # (1)
+    memberAccountId: str = ...,
+) -> DisassociateS3ResourcesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateS3ResourcesRequestRequestTypeDef](./type_defs.md#disassociates3resourcesrequestrequesttypedef).
+1. See [:material-code-braces: S3ResourceTypeDef](./type_defs.md#s3resourcetypedef) 
+2. See [:material-code-braces: DisassociateS3ResourcesResultTypeDef](./type_defs.md#disassociates3resourcesresulttypedef) 
 
-Keyword-only arguments:
 
-- `associatedS3Resources`:
-  `Sequence`\[[S3ResourceTypeDef](./type_defs.md#s3resourcetypedef)\]
-  *(required)*
-- `memberAccountId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateS3ResourcesRequestRequestTypeDef = {  # (1)
+    "associatedS3Resources": ...,
+}
 
-Returns
-[DisassociateS3ResourcesResultTypeDef](./type_defs.md#disassociates3resourcesresulttypedef).
+parent.disassociate_s3_resources(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateS3ResourcesRequestRequestTypeDef](./type_defs.md#disassociates3resourcesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("macie").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("macie").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Macie.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_member\_accounts"></a>
-
-### list_member_accounts
+### list\_member\_accounts
 
 (Discontinued) Lists all Amazon Macie Classic member accounts for the current
 Macie Classic administrator account.
 
-Type annotations for `boto3.client("macie").list_member_accounts` method.
+Type annotations and code completion for `#!python boto3.client("macie").list_member_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_member_accounts)
 
-Boto3 documentation:
-[Macie.Client.list_member_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_member_accounts)
+```python title="Method definition"
+def list_member_accounts(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListMemberAccountsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMemberAccountsRequestRequestTypeDef](./type_defs.md#listmemberaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMemberAccountsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef).
+parent.list_member_accounts(**kwargs)
+```
 
-<a id="list\_s3\_resources"></a>
+1. See [:material-code-braces: ListMemberAccountsRequestRequestTypeDef](./type_defs.md#listmemberaccountsrequestrequesttypedef) 
 
-### list_s3_resources
+### list\_s3\_resources
 
 (Discontinued) Lists all the S3 resources associated with Amazon Macie Classic.
 
-Type annotations for `boto3.client("macie").list_s3_resources` method.
+Type annotations and code completion for `#!python boto3.client("macie").list_s3_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_s3_resources)
 
-Boto3 documentation:
-[Macie.Client.list_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.list_s3_resources)
+```python title="Method definition"
+def list_s3_resources(
+    self,
+    *,
+    memberAccountId: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListS3ResourcesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListS3ResourcesRequestRequestTypeDef](./type_defs.md#lists3resourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef) 
 
-Keyword-only arguments:
 
-- `memberAccountId`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListS3ResourcesRequestRequestTypeDef = {  # (1)
+    "memberAccountId": ...,
+}
 
-Returns
-[ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef).
+parent.list_s3_resources(**kwargs)
+```
 
-<a id="update\_s3\_resources"></a>
+1. See [:material-code-braces: ListS3ResourcesRequestRequestTypeDef](./type_defs.md#lists3resourcesrequestrequesttypedef) 
 
-### update_s3_resources
+### update\_s3\_resources
 
 (Discontinued) Updates the classification types for the specified S3 resources.
 
-Type annotations for `boto3.client("macie").update_s3_resources` method.
+Type annotations and code completion for `#!python boto3.client("macie").update_s3_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.update_s3_resources)
 
-Boto3 documentation:
-[Macie.Client.update_s3_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie.Client.update_s3_resources)
+```python title="Method definition"
+def update_s3_resources(
+    self,
+    *,
+    s3ResourcesUpdate: Sequence[S3ResourceClassificationUpdateTypeDef],  # (1)
+    memberAccountId: str = ...,
+) -> UpdateS3ResourcesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateS3ResourcesRequestRequestTypeDef](./type_defs.md#updates3resourcesrequestrequesttypedef).
+1. See [:material-code-braces: S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef) 
+2. See [:material-code-braces: UpdateS3ResourcesResultTypeDef](./type_defs.md#updates3resourcesresulttypedef) 
 
-Keyword-only arguments:
 
-- `s3ResourcesUpdate`:
-  `Sequence`\[[S3ResourceClassificationUpdateTypeDef](./type_defs.md#s3resourceclassificationupdatetypedef)\]
-  *(required)*
-- `memberAccountId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateS3ResourcesRequestRequestTypeDef = {  # (1)
+    "s3ResourcesUpdate": ...,
+}
 
-Returns
-[UpdateS3ResourcesResultTypeDef](./type_defs.md#updates3resourcesresulttypedef).
+parent.update_s3_resources(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateS3ResourcesRequestRequestTypeDef](./type_defs.md#updates3resourcesrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("macie").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("macie").get_paginator` method with overloads.
 
-- `client.get_paginator("list_member_accounts")` ->
-  [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
-- `client.get_paginator("list_s3_resources")` ->
-  [ListS3ResourcesPaginator](./paginators.md#lists3resourcespaginator)
+- `client.get_paginator("list_member_accounts")` -> [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
+- `client.get_paginator("list_s3_resources")` -> [ListS3ResourcesPaginator](./paginators.md#lists3resourcespaginator)
+
+
+

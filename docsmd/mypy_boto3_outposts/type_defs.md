@@ -1,907 +1,1127 @@
-<a id="typed-dictionaries-for-boto3-outposts-module"></a>
-
-# Typed dictionaries for boto3 Outposts module
+# Typed dictionaries
 
 > [Index](../README.md) > [Outposts](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
-type annotations stubs module
-[mypy-boto3-outposts](https://pypi.org/project/mypy-boto3-outposts/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Outposts module](#typed-dictionaries-for-boto3-outposts-module)
-  - [AddressTypeDef](#addresstypedef)
-  - [CancelOrderInputRequestTypeDef](#cancelorderinputrequesttypedef)
-  - [CatalogItemTypeDef](#catalogitemtypedef)
-  - [CreateOrderInputRequestTypeDef](#createorderinputrequesttypedef)
-  - [CreateOrderOutputTypeDef](#createorderoutputtypedef)
-  - [CreateOutpostInputRequestTypeDef](#createoutpostinputrequesttypedef)
-  - [CreateOutpostOutputTypeDef](#createoutpostoutputtypedef)
-  - [CreateSiteInputRequestTypeDef](#createsiteinputrequesttypedef)
-  - [CreateSiteOutputTypeDef](#createsiteoutputtypedef)
-  - [DeleteOutpostInputRequestTypeDef](#deleteoutpostinputrequesttypedef)
-  - [DeleteSiteInputRequestTypeDef](#deletesiteinputrequesttypedef)
-  - [EC2CapacityTypeDef](#ec2capacitytypedef)
-  - [GetCatalogItemInputRequestTypeDef](#getcatalogiteminputrequesttypedef)
-  - [GetCatalogItemOutputTypeDef](#getcatalogitemoutputtypedef)
-  - [GetOrderInputRequestTypeDef](#getorderinputrequesttypedef)
-  - [GetOrderOutputTypeDef](#getorderoutputtypedef)
-  - [GetOutpostInputRequestTypeDef](#getoutpostinputrequesttypedef)
-  - [GetOutpostInstanceTypesInputRequestTypeDef](#getoutpostinstancetypesinputrequesttypedef)
-  - [GetOutpostInstanceTypesOutputTypeDef](#getoutpostinstancetypesoutputtypedef)
-  - [GetOutpostOutputTypeDef](#getoutpostoutputtypedef)
-  - [GetSiteAddressInputRequestTypeDef](#getsiteaddressinputrequesttypedef)
-  - [GetSiteAddressOutputTypeDef](#getsiteaddressoutputtypedef)
-  - [GetSiteInputRequestTypeDef](#getsiteinputrequesttypedef)
-  - [GetSiteOutputTypeDef](#getsiteoutputtypedef)
-  - [InstanceTypeItemTypeDef](#instancetypeitemtypedef)
-  - [LineItemRequestTypeDef](#lineitemrequesttypedef)
-  - [LineItemTypeDef](#lineitemtypedef)
-  - [ListCatalogItemsInputRequestTypeDef](#listcatalogitemsinputrequesttypedef)
-  - [ListCatalogItemsOutputTypeDef](#listcatalogitemsoutputtypedef)
-  - [ListOrdersInputRequestTypeDef](#listordersinputrequesttypedef)
-  - [ListOrdersOutputTypeDef](#listordersoutputtypedef)
-  - [ListOutpostsInputRequestTypeDef](#listoutpostsinputrequesttypedef)
-  - [ListOutpostsOutputTypeDef](#listoutpostsoutputtypedef)
-  - [ListSitesInputRequestTypeDef](#listsitesinputrequesttypedef)
-  - [ListSitesOutputTypeDef](#listsitesoutputtypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [OrderSummaryTypeDef](#ordersummarytypedef)
-  - [OrderTypeDef](#ordertypedef)
-  - [OutpostTypeDef](#outposttypedef)
-  - [RackPhysicalPropertiesTypeDef](#rackphysicalpropertiestypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SiteTypeDef](#sitetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateOutpostInputRequestTypeDef](#updateoutpostinputrequesttypedef)
-  - [UpdateOutpostOutputTypeDef](#updateoutpostoutputtypedef)
-  - [UpdateSiteAddressInputRequestTypeDef](#updatesiteaddressinputrequesttypedef)
-  - [UpdateSiteAddressOutputTypeDef](#updatesiteaddressoutputtypedef)
-  - [UpdateSiteInputRequestTypeDef](#updatesiteinputrequesttypedef)
-  - [UpdateSiteOutputTypeDef](#updatesiteoutputtypedef)
-  - [UpdateSiteRackPhysicalPropertiesInputRequestTypeDef](#updatesiterackphysicalpropertiesinputrequesttypedef)
-  - [UpdateSiteRackPhysicalPropertiesOutputTypeDef](#updatesiterackphysicalpropertiesoutputtypedef)
-
-<a id="addresstypedef"></a>
+    Auto-generated documentation for [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
+    type annotations stubs module [mypy-boto3-outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 ## AddressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import AddressTypeDef
+
+def get_value() -> AddressTypeDef:
+    return {
+        "AddressLine1": ...,
+        "City": ...,
+        "StateOrRegion": ...,
+        "PostalCode": ...,
+        "CountryCode": ...,
+    }
 ```
 
-Required fields:
-
-- `AddressLine1`: `str`
-- `City`: `str`
-- `StateOrRegion`: `str`
-- `PostalCode`: `str`
-- `CountryCode`: `str`
-
-Optional fields:
-
-- `ContactName`: `str`
-- `ContactPhoneNumber`: `str`
-- `AddressLine2`: `str`
-- `AddressLine3`: `str`
-- `DistrictOrCounty`: `str`
-- `Municipality`: `str`
-
-<a id="cancelorderinputrequesttypedef"></a>
+```python title="Definition"
+class AddressTypeDef(TypedDict):
+    AddressLine1: str,
+    City: str,
+    StateOrRegion: str,
+    PostalCode: str,
+    CountryCode: str,
+    ContactName: NotRequired[str],
+    ContactPhoneNumber: NotRequired[str],
+    AddressLine2: NotRequired[str],
+    AddressLine3: NotRequired[str],
+    DistrictOrCounty: NotRequired[str],
+    Municipality: NotRequired[str],
+```
 
 ## CancelOrderInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import CancelOrderInputRequestTypeDef
+
+def get_value() -> CancelOrderInputRequestTypeDef:
+    return {
+        "OrderId": ...,
+    }
 ```
 
-Required fields:
-
-- `OrderId`: `str`
-
-<a id="catalogitemtypedef"></a>
+```python title="Definition"
+class CancelOrderInputRequestTypeDef(TypedDict):
+    OrderId: str,
+```
 
 ## CatalogItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import CatalogItemTypeDef
+
+def get_value() -> CatalogItemTypeDef:
+    return {
+        "CatalogItemId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CatalogItemTypeDef(TypedDict):
+    CatalogItemId: NotRequired[str],
+    ItemStatus: NotRequired[CatalogItemStatusType],  # (1)
+    EC2Capacities: NotRequired[List[EC2CapacityTypeDef]],  # (2)
+    PowerKva: NotRequired[float],
+    WeightLbs: NotRequired[int],
+    SupportedUplinkGbps: NotRequired[List[int]],
+    SupportedStorage: NotRequired[List[SupportedStorageEnumType]],  # (3)
+```
 
-- `CatalogItemId`: `str`
-- `ItemStatus`: [CatalogItemStatusType](./literals.md#catalogitemstatustype)
-- `EC2Capacities`:
-  `List`\[[EC2CapacityTypeDef](./type_defs.md#ec2capacitytypedef)\]
-- `PowerKva`: `float`
-- `WeightLbs`: `int`
-- `SupportedUplinkGbps`: `List`\[`int`\]
-- `SupportedStorage`:
-  `List`\[[SupportedStorageEnumType](./literals.md#supportedstorageenumtype)\]
-
-<a id="createorderinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: CatalogItemStatusType](./literals.md#catalogitemstatustype) 
+2. See [:material-code-braces: EC2CapacityTypeDef](./type_defs.md#ec2capacitytypedef) 
+3. See [:material-code-brackets: SupportedStorageEnumType](./literals.md#supportedstorageenumtype) 
 ## CreateOrderInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import CreateOrderInputRequestTypeDef
+
+def get_value() -> CreateOrderInputRequestTypeDef:
+    return {
+        "OutpostIdentifier": ...,
+        "LineItems": ...,
+        "PaymentOption": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOrderInputRequestTypeDef(TypedDict):
+    OutpostIdentifier: str,
+    LineItems: Sequence[LineItemRequestTypeDef],  # (1)
+    PaymentOption: PaymentOptionType,  # (2)
+    PaymentTerm: NotRequired[PaymentTermType],  # (3)
+```
 
-- `OutpostIdentifier`: `str`
-- `LineItems`:
-  `Sequence`\[[LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)\]
-- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
-
-Optional fields:
-
-- `PaymentTerm`: `Literal['THREE_YEARS']` (see
-  [PaymentTermType](./literals.md#paymenttermtype))
-
-<a id="createorderoutputtypedef"></a>
-
+1. See [:material-code-braces: LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef) 
+2. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+3. See [:material-code-brackets: PaymentTermType](./literals.md#paymenttermtype) 
 ## CreateOrderOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import CreateOrderOutputTypeDef
+
+def get_value() -> CreateOrderOutputTypeDef:
+    return {
+        "Order": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOrderOutputTypeDef(TypedDict):
+    Order: OrderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Order`: [OrderTypeDef](./type_defs.md#ordertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createoutpostinputrequesttypedef"></a>
-
+1. See [:material-code-braces: OrderTypeDef](./type_defs.md#ordertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateOutpostInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import CreateOutpostInputRequestTypeDef
+
+def get_value() -> CreateOutpostInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "SiteId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOutpostInputRequestTypeDef(TypedDict):
+    Name: str,
+    SiteId: str,
+    Description: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    AvailabilityZoneId: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    SupportedHardwareType: NotRequired[SupportedHardwareTypeType],  # (1)
+```
 
-- `Name`: `str`
-- `SiteId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `AvailabilityZone`: `str`
-- `AvailabilityZoneId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `SupportedHardwareType`:
-  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
-
-<a id="createoutpostoutputtypedef"></a>
-
+1. See [:material-code-brackets: SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype) 
 ## CreateOutpostOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import CreateOutpostOutputTypeDef
+
+def get_value() -> CreateOutpostOutputTypeDef:
+    return {
+        "Outpost": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOutpostOutputTypeDef(TypedDict):
+    Outpost: OutpostTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Outpost`: [OutpostTypeDef](./type_defs.md#outposttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsiteinputrequesttypedef"></a>
-
+1. See [:material-code-braces: OutpostTypeDef](./type_defs.md#outposttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSiteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import CreateSiteInputRequestTypeDef
+
+def get_value() -> CreateSiteInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSiteInputRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    Notes: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    OperatingAddress: NotRequired[AddressTypeDef],  # (1)
+    ShippingAddress: NotRequired[AddressTypeDef],  # (1)
+    RackPhysicalProperties: NotRequired[RackPhysicalPropertiesTypeDef],  # (3)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Notes`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `OperatingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `ShippingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `RackPhysicalProperties`:
-  [RackPhysicalPropertiesTypeDef](./type_defs.md#rackphysicalpropertiestypedef)
-
-<a id="createsiteoutputtypedef"></a>
-
+1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+3. See [:material-code-braces: RackPhysicalPropertiesTypeDef](./type_defs.md#rackphysicalpropertiestypedef) 
 ## CreateSiteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import CreateSiteOutputTypeDef
+
+def get_value() -> CreateSiteOutputTypeDef:
+    return {
+        "Site": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSiteOutputTypeDef(TypedDict):
+    Site: SiteTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteoutpostinputrequesttypedef"></a>
-
+1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteOutpostInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import DeleteOutpostInputRequestTypeDef
+
+def get_value() -> DeleteOutpostInputRequestTypeDef:
+    return {
+        "OutpostId": ...,
+    }
 ```
 
-Required fields:
-
-- `OutpostId`: `str`
-
-<a id="deletesiteinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteOutpostInputRequestTypeDef(TypedDict):
+    OutpostId: str,
+```
 
 ## DeleteSiteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import DeleteSiteInputRequestTypeDef
+
+def get_value() -> DeleteSiteInputRequestTypeDef:
+    return {
+        "SiteId": ...,
+    }
 ```
 
-Required fields:
-
-- `SiteId`: `str`
-
-<a id="ec2capacitytypedef"></a>
+```python title="Definition"
+class DeleteSiteInputRequestTypeDef(TypedDict):
+    SiteId: str,
+```
 
 ## EC2CapacityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import EC2CapacityTypeDef
+
+def get_value() -> EC2CapacityTypeDef:
+    return {
+        "Family": ...,
+    }
 ```
 
-Optional fields:
-
-- `Family`: `str`
-- `MaxSize`: `str`
-- `Quantity`: `str`
-
-<a id="getcatalogiteminputrequesttypedef"></a>
+```python title="Definition"
+class EC2CapacityTypeDef(TypedDict):
+    Family: NotRequired[str],
+    MaxSize: NotRequired[str],
+    Quantity: NotRequired[str],
+```
 
 ## GetCatalogItemInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetCatalogItemInputRequestTypeDef
+
+def get_value() -> GetCatalogItemInputRequestTypeDef:
+    return {
+        "CatalogItemId": ...,
+    }
 ```
 
-Required fields:
-
-- `CatalogItemId`: `str`
-
-<a id="getcatalogitemoutputtypedef"></a>
+```python title="Definition"
+class GetCatalogItemInputRequestTypeDef(TypedDict):
+    CatalogItemId: str,
+```
 
 ## GetCatalogItemOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetCatalogItemOutputTypeDef
+
+def get_value() -> GetCatalogItemOutputTypeDef:
+    return {
+        "CatalogItem": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCatalogItemOutputTypeDef(TypedDict):
+    CatalogItem: CatalogItemTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CatalogItem`: [CatalogItemTypeDef](./type_defs.md#catalogitemtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getorderinputrequesttypedef"></a>
-
+1. See [:material-code-braces: CatalogItemTypeDef](./type_defs.md#catalogitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOrderInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetOrderInputRequestTypeDef
+
+def get_value() -> GetOrderInputRequestTypeDef:
+    return {
+        "OrderId": ...,
+    }
 ```
 
-Required fields:
-
-- `OrderId`: `str`
-
-<a id="getorderoutputtypedef"></a>
+```python title="Definition"
+class GetOrderInputRequestTypeDef(TypedDict):
+    OrderId: str,
+```
 
 ## GetOrderOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetOrderOutputTypeDef
+
+def get_value() -> GetOrderOutputTypeDef:
+    return {
+        "Order": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOrderOutputTypeDef(TypedDict):
+    Order: OrderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Order`: [OrderTypeDef](./type_defs.md#ordertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getoutpostinputrequesttypedef"></a>
-
+1. See [:material-code-braces: OrderTypeDef](./type_defs.md#ordertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOutpostInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetOutpostInputRequestTypeDef
+
+def get_value() -> GetOutpostInputRequestTypeDef:
+    return {
+        "OutpostId": ...,
+    }
 ```
 
-Required fields:
-
-- `OutpostId`: `str`
-
-<a id="getoutpostinstancetypesinputrequesttypedef"></a>
+```python title="Definition"
+class GetOutpostInputRequestTypeDef(TypedDict):
+    OutpostId: str,
+```
 
 ## GetOutpostInstanceTypesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetOutpostInstanceTypesInputRequestTypeDef
+
+def get_value() -> GetOutpostInstanceTypesInputRequestTypeDef:
+    return {
+        "OutpostId": ...,
+    }
 ```
 
-Required fields:
-
-- `OutpostId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getoutpostinstancetypesoutputtypedef"></a>
+```python title="Definition"
+class GetOutpostInstanceTypesInputRequestTypeDef(TypedDict):
+    OutpostId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetOutpostInstanceTypesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetOutpostInstanceTypesOutputTypeDef
+
+def get_value() -> GetOutpostInstanceTypesOutputTypeDef:
+    return {
+        "InstanceTypes": ...,
+        "NextToken": ...,
+        "OutpostId": ...,
+        "OutpostArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOutpostInstanceTypesOutputTypeDef(TypedDict):
+    InstanceTypes: List[InstanceTypeItemTypeDef],  # (1)
+    NextToken: str,
+    OutpostId: str,
+    OutpostArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceTypes`:
-  `List`\[[InstanceTypeItemTypeDef](./type_defs.md#instancetypeitemtypedef)\]
-- `NextToken`: `str`
-- `OutpostId`: `str`
-- `OutpostArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getoutpostoutputtypedef"></a>
-
+1. See [:material-code-braces: InstanceTypeItemTypeDef](./type_defs.md#instancetypeitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOutpostOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetOutpostOutputTypeDef
+
+def get_value() -> GetOutpostOutputTypeDef:
+    return {
+        "Outpost": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOutpostOutputTypeDef(TypedDict):
+    Outpost: OutpostTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Outpost`: [OutpostTypeDef](./type_defs.md#outposttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsiteaddressinputrequesttypedef"></a>
-
+1. See [:material-code-braces: OutpostTypeDef](./type_defs.md#outposttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSiteAddressInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetSiteAddressInputRequestTypeDef
+
+def get_value() -> GetSiteAddressInputRequestTypeDef:
+    return {
+        "SiteId": ...,
+        "AddressType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSiteAddressInputRequestTypeDef(TypedDict):
+    SiteId: str,
+    AddressType: AddressTypeType,  # (1)
+```
 
-- `SiteId`: `str`
-- `AddressType`: [AddressTypeType](./literals.md#addresstypetype)
-
-<a id="getsiteaddressoutputtypedef"></a>
-
+1. See [:material-code-brackets: AddressTypeType](./literals.md#addresstypetype) 
 ## GetSiteAddressOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetSiteAddressOutputTypeDef
+
+def get_value() -> GetSiteAddressOutputTypeDef:
+    return {
+        "SiteId": ...,
+        "AddressType": ...,
+        "Address": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSiteAddressOutputTypeDef(TypedDict):
+    SiteId: str,
+    AddressType: AddressTypeType,  # (1)
+    Address: AddressTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `SiteId`: `str`
-- `AddressType`: [AddressTypeType](./literals.md#addresstypetype)
-- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsiteinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: AddressTypeType](./literals.md#addresstypetype) 
+2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSiteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetSiteInputRequestTypeDef
+
+def get_value() -> GetSiteInputRequestTypeDef:
+    return {
+        "SiteId": ...,
+    }
 ```
 
-Required fields:
-
-- `SiteId`: `str`
-
-<a id="getsiteoutputtypedef"></a>
+```python title="Definition"
+class GetSiteInputRequestTypeDef(TypedDict):
+    SiteId: str,
+```
 
 ## GetSiteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import GetSiteOutputTypeDef
+
+def get_value() -> GetSiteOutputTypeDef:
+    return {
+        "Site": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSiteOutputTypeDef(TypedDict):
+    Site: SiteTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="instancetypeitemtypedef"></a>
-
+1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceTypeItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import InstanceTypeItemTypeDef
+
+def get_value() -> InstanceTypeItemTypeDef:
+    return {
+        "InstanceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `InstanceType`: `str`
-
-<a id="lineitemrequesttypedef"></a>
+```python title="Definition"
+class InstanceTypeItemTypeDef(TypedDict):
+    InstanceType: NotRequired[str],
+```
 
 ## LineItemRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import LineItemRequestTypeDef
+
+def get_value() -> LineItemRequestTypeDef:
+    return {
+        "CatalogItemId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CatalogItemId`: `str`
-- `Quantity`: `int`
-
-<a id="lineitemtypedef"></a>
+```python title="Definition"
+class LineItemRequestTypeDef(TypedDict):
+    CatalogItemId: NotRequired[str],
+    Quantity: NotRequired[int],
+```
 
 ## LineItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import LineItemTypeDef
+
+def get_value() -> LineItemTypeDef:
+    return {
+        "CatalogItemId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LineItemTypeDef(TypedDict):
+    CatalogItemId: NotRequired[str],
+    LineItemId: NotRequired[str],
+    Quantity: NotRequired[int],
+    Status: NotRequired[LineItemStatusType],  # (1)
+```
 
-- `CatalogItemId`: `str`
-- `LineItemId`: `str`
-- `Quantity`: `int`
-- `Status`: [LineItemStatusType](./literals.md#lineitemstatustype)
-
-<a id="listcatalogitemsinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: LineItemStatusType](./literals.md#lineitemstatustype) 
 ## ListCatalogItemsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListCatalogItemsInputRequestTypeDef
+
+def get_value() -> ListCatalogItemsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCatalogItemsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ItemClassFilter: NotRequired[Sequence[CatalogItemClassType]],  # (1)
+    SupportedStorageFilter: NotRequired[Sequence[SupportedStorageEnumType]],  # (2)
+    EC2FamilyFilter: NotRequired[Sequence[str]],
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ItemClassFilter`:
-  `Sequence`\[[CatalogItemClassType](./literals.md#catalogitemclasstype)\]
-- `SupportedStorageFilter`:
-  `Sequence`\[[SupportedStorageEnumType](./literals.md#supportedstorageenumtype)\]
-- `EC2FamilyFilter`: `Sequence`\[`str`\]
-
-<a id="listcatalogitemsoutputtypedef"></a>
-
+1. See [:material-code-brackets: CatalogItemClassType](./literals.md#catalogitemclasstype) 
+2. See [:material-code-brackets: SupportedStorageEnumType](./literals.md#supportedstorageenumtype) 
 ## ListCatalogItemsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListCatalogItemsOutputTypeDef
+
+def get_value() -> ListCatalogItemsOutputTypeDef:
+    return {
+        "CatalogItems": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCatalogItemsOutputTypeDef(TypedDict):
+    CatalogItems: List[CatalogItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CatalogItems`:
-  `List`\[[CatalogItemTypeDef](./type_defs.md#catalogitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listordersinputrequesttypedef"></a>
-
+1. See [:material-code-braces: CatalogItemTypeDef](./type_defs.md#catalogitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListOrdersInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListOrdersInputRequestTypeDef
+
+def get_value() -> ListOrdersInputRequestTypeDef:
+    return {
+        "OutpostIdentifierFilter": ...,
+    }
 ```
 
-Optional fields:
-
-- `OutpostIdentifierFilter`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listordersoutputtypedef"></a>
+```python title="Definition"
+class ListOrdersInputRequestTypeDef(TypedDict):
+    OutpostIdentifierFilter: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListOrdersOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListOrdersOutputTypeDef
+
+def get_value() -> ListOrdersOutputTypeDef:
+    return {
+        "Orders": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOrdersOutputTypeDef(TypedDict):
+    Orders: List[OrderSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Orders`: `List`\[[OrderSummaryTypeDef](./type_defs.md#ordersummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listoutpostsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: OrderSummaryTypeDef](./type_defs.md#ordersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListOutpostsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListOutpostsInputRequestTypeDef
+
+def get_value() -> ListOutpostsInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `LifeCycleStatusFilter`: `Sequence`\[`str`\]
-- `AvailabilityZoneFilter`: `Sequence`\[`str`\]
-- `AvailabilityZoneIdFilter`: `Sequence`\[`str`\]
-
-<a id="listoutpostsoutputtypedef"></a>
+```python title="Definition"
+class ListOutpostsInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    LifeCycleStatusFilter: NotRequired[Sequence[str]],
+    AvailabilityZoneFilter: NotRequired[Sequence[str]],
+    AvailabilityZoneIdFilter: NotRequired[Sequence[str]],
+```
 
 ## ListOutpostsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListOutpostsOutputTypeDef
+
+def get_value() -> ListOutpostsOutputTypeDef:
+    return {
+        "Outposts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOutpostsOutputTypeDef(TypedDict):
+    Outposts: List[OutpostTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Outposts`: `List`\[[OutpostTypeDef](./type_defs.md#outposttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsitesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: OutpostTypeDef](./type_defs.md#outposttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSitesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListSitesInputRequestTypeDef
+
+def get_value() -> ListSitesInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `OperatingAddressCountryCodeFilter`: `Sequence`\[`str`\]
-- `OperatingAddressStateOrRegionFilter`: `Sequence`\[`str`\]
-- `OperatingAddressCityFilter`: `Sequence`\[`str`\]
-
-<a id="listsitesoutputtypedef"></a>
+```python title="Definition"
+class ListSitesInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    OperatingAddressCountryCodeFilter: NotRequired[Sequence[str]],
+    OperatingAddressStateOrRegionFilter: NotRequired[Sequence[str]],
+    OperatingAddressCityFilter: NotRequired[Sequence[str]],
+```
 
 ## ListSitesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListSitesOutputTypeDef
+
+def get_value() -> ListSitesOutputTypeDef:
+    return {
+        "Sites": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSitesOutputTypeDef(TypedDict):
+    Sites: List[SiteTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Sites`: `List`\[[SiteTypeDef](./type_defs.md#sitetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ordersummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OrderSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import OrderSummaryTypeDef
+
+def get_value() -> OrderSummaryTypeDef:
+    return {
+        "OutpostId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrderSummaryTypeDef(TypedDict):
+    OutpostId: NotRequired[str],
+    OrderId: NotRequired[str],
+    OrderType: NotRequired[OrderTypeType],  # (1)
+    Status: NotRequired[OrderStatusType],  # (2)
+    LineItemCountsByStatus: NotRequired[Dict[LineItemStatusType, int]],  # (3)
+    OrderSubmissionDate: NotRequired[datetime],
+    OrderFulfilledDate: NotRequired[datetime],
+```
 
-- `OutpostId`: `str`
-- `OrderId`: `str`
-- `OrderType`: [OrderTypeType](./literals.md#ordertypetype)
-- `Status`: [OrderStatusType](./literals.md#orderstatustype)
-- `LineItemCountsByStatus`:
-  `Dict`\[[LineItemStatusType](./literals.md#lineitemstatustype), `int`\]
-- `OrderSubmissionDate`: `datetime`
-- `OrderFulfilledDate`: `datetime`
-
-<a id="ordertypedef"></a>
-
+1. See [:material-code-brackets: OrderTypeType](./literals.md#ordertypetype) 
+2. See [:material-code-brackets: OrderStatusType](./literals.md#orderstatustype) 
+3. See [:material-code-brackets: LineItemStatusType](./literals.md#lineitemstatustype) 
 ## OrderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import OrderTypeDef
+
+def get_value() -> OrderTypeDef:
+    return {
+        "OutpostId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrderTypeDef(TypedDict):
+    OutpostId: NotRequired[str],
+    OrderId: NotRequired[str],
+    Status: NotRequired[OrderStatusType],  # (1)
+    LineItems: NotRequired[List[LineItemTypeDef]],  # (2)
+    PaymentOption: NotRequired[PaymentOptionType],  # (3)
+    OrderSubmissionDate: NotRequired[datetime],
+    OrderFulfilledDate: NotRequired[datetime],
+```
 
-- `OutpostId`: `str`
-- `OrderId`: `str`
-- `Status`: [OrderStatusType](./literals.md#orderstatustype)
-- `LineItems`: `List`\[[LineItemTypeDef](./type_defs.md#lineitemtypedef)\]
-- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
-- `OrderSubmissionDate`: `datetime`
-- `OrderFulfilledDate`: `datetime`
-
-<a id="outposttypedef"></a>
-
+1. See [:material-code-brackets: OrderStatusType](./literals.md#orderstatustype) 
+2. See [:material-code-braces: LineItemTypeDef](./type_defs.md#lineitemtypedef) 
+3. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
 ## OutpostTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import OutpostTypeDef
+
+def get_value() -> OutpostTypeDef:
+    return {
+        "OutpostId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutpostTypeDef(TypedDict):
+    OutpostId: NotRequired[str],
+    OwnerId: NotRequired[str],
+    OutpostArn: NotRequired[str],
+    SiteId: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    LifeCycleStatus: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    AvailabilityZoneId: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+    SiteArn: NotRequired[str],
+    SupportedHardwareType: NotRequired[SupportedHardwareTypeType],  # (1)
+```
 
-- `OutpostId`: `str`
-- `OwnerId`: `str`
-- `OutpostArn`: `str`
-- `SiteId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `LifeCycleStatus`: `str`
-- `AvailabilityZone`: `str`
-- `AvailabilityZoneId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `SiteArn`: `str`
-- `SupportedHardwareType`:
-  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
-
-<a id="rackphysicalpropertiestypedef"></a>
-
+1. See [:material-code-brackets: SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype) 
 ## RackPhysicalPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import RackPhysicalPropertiesTypeDef
+
+def get_value() -> RackPhysicalPropertiesTypeDef:
+    return {
+        "PowerDrawKva": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RackPhysicalPropertiesTypeDef(TypedDict):
+    PowerDrawKva: NotRequired[PowerDrawKvaType],  # (1)
+    PowerPhase: NotRequired[PowerPhaseType],  # (2)
+    PowerConnector: NotRequired[PowerConnectorType],  # (3)
+    PowerFeedDrop: NotRequired[PowerFeedDropType],  # (4)
+    UplinkGbps: NotRequired[UplinkGbpsType],  # (5)
+    UplinkCount: NotRequired[UplinkCountType],  # (6)
+    FiberOpticCableType: NotRequired[FiberOpticCableTypeType],  # (7)
+    OpticalStandard: NotRequired[OpticalStandardType],  # (8)
+    MaximumSupportedWeightLbs: NotRequired[MaximumSupportedWeightLbsType],  # (9)
+```
 
-- `PowerDrawKva`: [PowerDrawKvaType](./literals.md#powerdrawkvatype)
-- `PowerPhase`: [PowerPhaseType](./literals.md#powerphasetype)
-- `PowerConnector`: [PowerConnectorType](./literals.md#powerconnectortype)
-- `PowerFeedDrop`: [PowerFeedDropType](./literals.md#powerfeeddroptype)
-- `UplinkGbps`: [UplinkGbpsType](./literals.md#uplinkgbpstype)
-- `UplinkCount`: [UplinkCountType](./literals.md#uplinkcounttype)
-- `FiberOpticCableType`:
-  [FiberOpticCableTypeType](./literals.md#fiberopticcabletypetype)
-- `OpticalStandard`: [OpticalStandardType](./literals.md#opticalstandardtype)
-- `MaximumSupportedWeightLbs`:
-  [MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: PowerDrawKvaType](./literals.md#powerdrawkvatype) 
+2. See [:material-code-brackets: PowerPhaseType](./literals.md#powerphasetype) 
+3. See [:material-code-brackets: PowerConnectorType](./literals.md#powerconnectortype) 
+4. See [:material-code-brackets: PowerFeedDropType](./literals.md#powerfeeddroptype) 
+5. See [:material-code-brackets: UplinkGbpsType](./literals.md#uplinkgbpstype) 
+6. See [:material-code-brackets: UplinkCountType](./literals.md#uplinkcounttype) 
+7. See [:material-code-brackets: FiberOpticCableTypeType](./literals.md#fiberopticcabletypetype) 
+8. See [:material-code-brackets: OpticalStandardType](./literals.md#opticalstandardtype) 
+9. See [:material-code-brackets: MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sitetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SiteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import SiteTypeDef
+
+def get_value() -> SiteTypeDef:
+    return {
+        "SiteId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SiteTypeDef(TypedDict):
+    SiteId: NotRequired[str],
+    AccountId: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+    SiteArn: NotRequired[str],
+    Notes: NotRequired[str],
+    OperatingAddressCountryCode: NotRequired[str],
+    OperatingAddressStateOrRegion: NotRequired[str],
+    OperatingAddressCity: NotRequired[str],
+    RackPhysicalProperties: NotRequired[RackPhysicalPropertiesTypeDef],  # (1)
+```
 
-- `SiteId`: `str`
-- `AccountId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `SiteArn`: `str`
-- `Notes`: `str`
-- `OperatingAddressCountryCode`: `str`
-- `OperatingAddressStateOrRegion`: `str`
-- `OperatingAddressCity`: `str`
-- `RackPhysicalProperties`:
-  [RackPhysicalPropertiesTypeDef](./type_defs.md#rackphysicalpropertiestypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RackPhysicalPropertiesTypeDef](./type_defs.md#rackphysicalpropertiestypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateoutpostinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateOutpostInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import UpdateOutpostInputRequestTypeDef
+
+def get_value() -> UpdateOutpostInputRequestTypeDef:
+    return {
+        "OutpostId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOutpostInputRequestTypeDef(TypedDict):
+    OutpostId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    SupportedHardwareType: NotRequired[SupportedHardwareTypeType],  # (1)
+```
 
-- `OutpostId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `SupportedHardwareType`:
-  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
-
-<a id="updateoutpostoutputtypedef"></a>
-
+1. See [:material-code-brackets: SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype) 
 ## UpdateOutpostOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import UpdateOutpostOutputTypeDef
+
+def get_value() -> UpdateOutpostOutputTypeDef:
+    return {
+        "Outpost": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOutpostOutputTypeDef(TypedDict):
+    Outpost: OutpostTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Outpost`: [OutpostTypeDef](./type_defs.md#outposttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesiteaddressinputrequesttypedef"></a>
-
+1. See [:material-code-braces: OutpostTypeDef](./type_defs.md#outposttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSiteAddressInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import UpdateSiteAddressInputRequestTypeDef
+
+def get_value() -> UpdateSiteAddressInputRequestTypeDef:
+    return {
+        "SiteId": ...,
+        "AddressType": ...,
+        "Address": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSiteAddressInputRequestTypeDef(TypedDict):
+    SiteId: str,
+    AddressType: AddressTypeType,  # (1)
+    Address: AddressTypeDef,  # (2)
+```
 
-- `SiteId`: `str`
-- `AddressType`: [AddressTypeType](./literals.md#addresstypetype)
-- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
-
-<a id="updatesiteaddressoutputtypedef"></a>
-
+1. See [:material-code-brackets: AddressTypeType](./literals.md#addresstypetype) 
+2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
 ## UpdateSiteAddressOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import UpdateSiteAddressOutputTypeDef
+
+def get_value() -> UpdateSiteAddressOutputTypeDef:
+    return {
+        "AddressType": ...,
+        "Address": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSiteAddressOutputTypeDef(TypedDict):
+    AddressType: AddressTypeType,  # (1)
+    Address: AddressTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `AddressType`: [AddressTypeType](./literals.md#addresstypetype)
-- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesiteinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: AddressTypeType](./literals.md#addresstypetype) 
+2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSiteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import UpdateSiteInputRequestTypeDef
+
+def get_value() -> UpdateSiteInputRequestTypeDef:
+    return {
+        "SiteId": ...,
+    }
 ```
 
-Required fields:
-
-- `SiteId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `Notes`: `str`
-
-<a id="updatesiteoutputtypedef"></a>
+```python title="Definition"
+class UpdateSiteInputRequestTypeDef(TypedDict):
+    SiteId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Notes: NotRequired[str],
+```
 
 ## UpdateSiteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import UpdateSiteOutputTypeDef
+
+def get_value() -> UpdateSiteOutputTypeDef:
+    return {
+        "Site": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSiteOutputTypeDef(TypedDict):
+    Site: SiteTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesiterackphysicalpropertiesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSiteRackPhysicalPropertiesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import UpdateSiteRackPhysicalPropertiesInputRequestTypeDef
+
+def get_value() -> UpdateSiteRackPhysicalPropertiesInputRequestTypeDef:
+    return {
+        "SiteId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSiteRackPhysicalPropertiesInputRequestTypeDef(TypedDict):
+    SiteId: str,
+    PowerDrawKva: NotRequired[PowerDrawKvaType],  # (1)
+    PowerPhase: NotRequired[PowerPhaseType],  # (2)
+    PowerConnector: NotRequired[PowerConnectorType],  # (3)
+    PowerFeedDrop: NotRequired[PowerFeedDropType],  # (4)
+    UplinkGbps: NotRequired[UplinkGbpsType],  # (5)
+    UplinkCount: NotRequired[UplinkCountType],  # (6)
+    FiberOpticCableType: NotRequired[FiberOpticCableTypeType],  # (7)
+    OpticalStandard: NotRequired[OpticalStandardType],  # (8)
+    MaximumSupportedWeightLbs: NotRequired[MaximumSupportedWeightLbsType],  # (9)
+```
 
-- `SiteId`: `str`
-
-Optional fields:
-
-- `PowerDrawKva`: [PowerDrawKvaType](./literals.md#powerdrawkvatype)
-- `PowerPhase`: [PowerPhaseType](./literals.md#powerphasetype)
-- `PowerConnector`: [PowerConnectorType](./literals.md#powerconnectortype)
-- `PowerFeedDrop`: [PowerFeedDropType](./literals.md#powerfeeddroptype)
-- `UplinkGbps`: [UplinkGbpsType](./literals.md#uplinkgbpstype)
-- `UplinkCount`: [UplinkCountType](./literals.md#uplinkcounttype)
-- `FiberOpticCableType`:
-  [FiberOpticCableTypeType](./literals.md#fiberopticcabletypetype)
-- `OpticalStandard`: [OpticalStandardType](./literals.md#opticalstandardtype)
-- `MaximumSupportedWeightLbs`:
-  [MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype)
-
-<a id="updatesiterackphysicalpropertiesoutputtypedef"></a>
-
+1. See [:material-code-brackets: PowerDrawKvaType](./literals.md#powerdrawkvatype) 
+2. See [:material-code-brackets: PowerPhaseType](./literals.md#powerphasetype) 
+3. See [:material-code-brackets: PowerConnectorType](./literals.md#powerconnectortype) 
+4. See [:material-code-brackets: PowerFeedDropType](./literals.md#powerfeeddroptype) 
+5. See [:material-code-brackets: UplinkGbpsType](./literals.md#uplinkgbpstype) 
+6. See [:material-code-brackets: UplinkCountType](./literals.md#uplinkcounttype) 
+7. See [:material-code-brackets: FiberOpticCableTypeType](./literals.md#fiberopticcabletypetype) 
+8. See [:material-code-brackets: OpticalStandardType](./literals.md#opticalstandardtype) 
+9. See [:material-code-brackets: MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype) 
 ## UpdateSiteRackPhysicalPropertiesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_outposts.type_defs import UpdateSiteRackPhysicalPropertiesOutputTypeDef
+
+def get_value() -> UpdateSiteRackPhysicalPropertiesOutputTypeDef:
+    return {
+        "Site": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSiteRackPhysicalPropertiesOutputTypeDef(TypedDict):
+    Site: SiteTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SiteTypeDef](./type_defs.md#sitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

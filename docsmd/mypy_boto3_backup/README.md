@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-backup-module"></a>
-
-# Type annotations for boto3 Backup module
+#  Backup module
 
 > [Index](../README.md) > Backup
 
-Auto-generated documentation for
-[Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
-type annotations stubs module
-[mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
+!!! note ""
 
-- [Type annotations for boto3 Backup module](#type-annotations-for-boto3-backup-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [BackupClient](#backupclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
+    type annotations stubs module [mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Backup`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[backup]'
 python -m pip install mypy-boto3-backup
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,126 +42,41 @@ python -m pip install mypy-boto3-backup
 python -m pip uninstall -y mypy-boto3-backup
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="backupclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## BackupClient
 
-Type annotations for `boto3.client("backup")` as [BackupClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("backup")` as [BackupClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_backup.client import BackupClient
+
+def get_client() -> BackupClient:
+    return Session().cleint("backup")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_backup_plan](./client.md#create_backup_plan)
-- [create_backup_selection](./client.md#create_backup_selection)
-- [create_backup_vault](./client.md#create_backup_vault)
-- [create_framework](./client.md#create_framework)
-- [create_report_plan](./client.md#create_report_plan)
-- [delete_backup_plan](./client.md#delete_backup_plan)
-- [delete_backup_selection](./client.md#delete_backup_selection)
-- [delete_backup_vault](./client.md#delete_backup_vault)
-- [delete_backup_vault_access_policy](./client.md#delete_backup_vault_access_policy)
-- [delete_backup_vault_lock_configuration](./client.md#delete_backup_vault_lock_configuration)
-- [delete_backup_vault_notifications](./client.md#delete_backup_vault_notifications)
-- [delete_framework](./client.md#delete_framework)
-- [delete_recovery_point](./client.md#delete_recovery_point)
-- [delete_report_plan](./client.md#delete_report_plan)
-- [describe_backup_job](./client.md#describe_backup_job)
-- [describe_backup_vault](./client.md#describe_backup_vault)
-- [describe_copy_job](./client.md#describe_copy_job)
-- [describe_framework](./client.md#describe_framework)
-- [describe_global_settings](./client.md#describe_global_settings)
-- [describe_protected_resource](./client.md#describe_protected_resource)
-- [describe_recovery_point](./client.md#describe_recovery_point)
-- [describe_region_settings](./client.md#describe_region_settings)
-- [describe_report_job](./client.md#describe_report_job)
-- [describe_report_plan](./client.md#describe_report_plan)
-- [describe_restore_job](./client.md#describe_restore_job)
-- [disassociate_recovery_point](./client.md#disassociate_recovery_point)
-- [exceptions](./client.md#exceptions)
-- [export_backup_plan_template](./client.md#export_backup_plan_template)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_backup_plan](./client.md#get_backup_plan)
-- [get_backup_plan_from_json](./client.md#get_backup_plan_from_json)
-- [get_backup_plan_from_template](./client.md#get_backup_plan_from_template)
-- [get_backup_selection](./client.md#get_backup_selection)
-- [get_backup_vault_access_policy](./client.md#get_backup_vault_access_policy)
-- [get_backup_vault_notifications](./client.md#get_backup_vault_notifications)
-- [get_recovery_point_restore_metadata](./client.md#get_recovery_point_restore_metadata)
-- [get_supported_resource_types](./client.md#get_supported_resource_types)
-- [list_backup_jobs](./client.md#list_backup_jobs)
-- [list_backup_plan_templates](./client.md#list_backup_plan_templates)
-- [list_backup_plan_versions](./client.md#list_backup_plan_versions)
-- [list_backup_plans](./client.md#list_backup_plans)
-- [list_backup_selections](./client.md#list_backup_selections)
-- [list_backup_vaults](./client.md#list_backup_vaults)
-- [list_copy_jobs](./client.md#list_copy_jobs)
-- [list_frameworks](./client.md#list_frameworks)
-- [list_protected_resources](./client.md#list_protected_resources)
-- [list_recovery_points_by_backup_vault](./client.md#list_recovery_points_by_backup_vault)
-- [list_recovery_points_by_resource](./client.md#list_recovery_points_by_resource)
-- [list_report_jobs](./client.md#list_report_jobs)
-- [list_report_plans](./client.md#list_report_plans)
-- [list_restore_jobs](./client.md#list_restore_jobs)
-- [list_tags](./client.md#list_tags)
-- [put_backup_vault_access_policy](./client.md#put_backup_vault_access_policy)
-- [put_backup_vault_lock_configuration](./client.md#put_backup_vault_lock_configuration)
-- [put_backup_vault_notifications](./client.md#put_backup_vault_notifications)
-- [start_backup_job](./client.md#start_backup_job)
-- [start_copy_job](./client.md#start_copy_job)
-- [start_report_job](./client.md#start_report_job)
-- [start_restore_job](./client.md#start_restore_job)
-- [stop_backup_job](./client.md#stop_backup_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_backup_plan](./client.md#update_backup_plan)
-- [update_framework](./client.md#update_framework)
-- [update_global_settings](./client.md#update_global_settings)
-- [update_recovery_point_lifecycle](./client.md#update_recovery_point_lifecycle)
-- [update_region_settings](./client.md#update_region_settings)
-- [update_report_plan](./client.md#update_report_plan)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-BackupClient [exceptions](./client.md#exceptions)
 
-- AlreadyExistsException
-- ClientError
-- ConflictException
-- DependencyFailureException
-- InvalidParameterValueException
-- InvalidRequestException
-- InvalidResourceStateException
-- LimitExceededException
-- MissingParameterValueException
-- ResourceNotFoundException
-- ServiceUnavailableException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_backup.literals import BackupJobStateType
 
-```python
-from mypy_boto3_backup.literals import BackupJobStateType, ...
+def get_value() -> BackupJobStateType:
+    return "ABORTED"
 ```
 
 - [BackupJobStateType](./literals.md#backupjobstatetype)
@@ -195,18 +89,22 @@ from mypy_boto3_backup.literals import BackupJobStateType, ...
 - [BackupServiceName](./literals.md#backupservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_backup.type_defs import AdvancedBackupSettingTypeDef
 
-```python
-from mypy_boto3_backup.type_defs import AdvancedBackupSettingTypeDef, ...
+def get_value() -> AdvancedBackupSettingTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
 - [AdvancedBackupSettingTypeDef](./type_defs.md#advancedbackupsettingtypedef)
@@ -354,3 +252,4 @@ from mypy_boto3_backup.type_defs import AdvancedBackupSettingTypeDef, ...
 - [UpdateRegionSettingsInputRequestTypeDef](./type_defs.md#updateregionsettingsinputrequesttypedef)
 - [UpdateReportPlanInputRequestTypeDef](./type_defs.md#updatereportplaninputrequesttypedef)
 - [UpdateReportPlanOutputTypeDef](./type_defs.md#updatereportplanoutputtypedef)
+

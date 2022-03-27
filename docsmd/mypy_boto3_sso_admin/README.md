@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-ssoadmin-module"></a>
-
-# Type annotations for boto3 SSOAdmin module
+#  SSOAdmin module
 
 > [Index](../README.md) > SSOAdmin
 
-Auto-generated documentation for
-[SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
-type annotations stubs module
-[mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+!!! note ""
 
-- [Type annotations for boto3 SSOAdmin module](#type-annotations-for-boto3-ssoadmin-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SSOAdminClient](#ssoadminclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+    type annotations stubs module [mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SSOAdmin`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[sso-admin]'
 python -m pip install mypy-boto3-sso-admin
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,91 +42,37 @@ python -m pip install mypy-boto3-sso-admin
 python -m pip uninstall -y mypy-boto3-sso-admin
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ssoadminclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SSOAdminClient
 
-Type annotations for `boto3.client("sso-admin")` as
-[SSOAdminClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("sso-admin")` as [SSOAdminClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_sso_admin.client import SSOAdminClient
+
+def get_client() -> SSOAdminClient:
+    return Session().cleint("sso-admin")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [attach_managed_policy_to_permission_set](./client.md#attach_managed_policy_to_permission_set)
-- [can_paginate](./client.md#can_paginate)
-- [create_account_assignment](./client.md#create_account_assignment)
-- [create_instance_access_control_attribute_configuration](./client.md#create_instance_access_control_attribute_configuration)
-- [create_permission_set](./client.md#create_permission_set)
-- [delete_account_assignment](./client.md#delete_account_assignment)
-- [delete_inline_policy_from_permission_set](./client.md#delete_inline_policy_from_permission_set)
-- [delete_instance_access_control_attribute_configuration](./client.md#delete_instance_access_control_attribute_configuration)
-- [delete_permission_set](./client.md#delete_permission_set)
-- [describe_account_assignment_creation_status](./client.md#describe_account_assignment_creation_status)
-- [describe_account_assignment_deletion_status](./client.md#describe_account_assignment_deletion_status)
-- [describe_instance_access_control_attribute_configuration](./client.md#describe_instance_access_control_attribute_configuration)
-- [describe_permission_set](./client.md#describe_permission_set)
-- [describe_permission_set_provisioning_status](./client.md#describe_permission_set_provisioning_status)
-- [detach_managed_policy_from_permission_set](./client.md#detach_managed_policy_from_permission_set)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_inline_policy_for_permission_set](./client.md#get_inline_policy_for_permission_set)
-- [get_paginator](./client.md#get_paginator)
-- [list_account_assignment_creation_status](./client.md#list_account_assignment_creation_status)
-- [list_account_assignment_deletion_status](./client.md#list_account_assignment_deletion_status)
-- [list_account_assignments](./client.md#list_account_assignments)
-- [list_accounts_for_provisioned_permission_set](./client.md#list_accounts_for_provisioned_permission_set)
-- [list_instances](./client.md#list_instances)
-- [list_managed_policies_in_permission_set](./client.md#list_managed_policies_in_permission_set)
-- [list_permission_set_provisioning_status](./client.md#list_permission_set_provisioning_status)
-- [list_permission_sets](./client.md#list_permission_sets)
-- [list_permission_sets_provisioned_to_account](./client.md#list_permission_sets_provisioned_to_account)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [provision_permission_set](./client.md#provision_permission_set)
-- [put_inline_policy_to_permission_set](./client.md#put_inline_policy_to_permission_set)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_instance_access_control_attribute_configuration](./client.md#update_instance_access_control_attribute_configuration)
-- [update_permission_set](./client.md#update_permission_set)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SSOAdminClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("sso-admin").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("sso-admin").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_sso_admin.paginator import ListAccountAssignmentCreationStatusPaginator, ...
+from mypy_boto3_sso_admin.paginator import ListAccountAssignmentCreationStatusPaginator
+
+def get_list_account_assignment_creation_status_paginator() -> ListAccountAssignmentCreationStatusPaginator:
+    return Session().client("sso-admin").get_paginator("list_account_assignment_creation_status"))
 ```
 
 - [ListAccountAssignmentCreationStatusPaginator](./paginators.md#listaccountassignmentcreationstatuspaginator)
@@ -162,16 +86,23 @@ from mypy_boto3_sso_admin.paginator import ListAccountAssignmentCreationStatusPa
 - [ListPermissionSetsProvisionedToAccountPaginator](./paginators.md#listpermissionsetsprovisionedtoaccountpaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigurationStatusType
 
-```python
-from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigurationStatusType, ...
+def get_value() -> InstanceAccessControlAttributeConfigurationStatusType:
+    return "CREATION_FAILED"
 ```
 
 - [InstanceAccessControlAttributeConfigurationStatusType](./literals.md#instanceaccesscontrolattributeconfigurationstatustype)
@@ -195,17 +126,21 @@ from mypy_boto3_sso_admin.literals import InstanceAccessControlAttributeConfigur
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sso_admin.type_defs import AccessControlAttributeTypeDef
 
-```python
-from mypy_boto3_sso_admin.type_defs import AccessControlAttributeTypeDef, ...
+def get_value() -> AccessControlAttributeTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
 - [AccessControlAttributeTypeDef](./type_defs.md#accesscontrolattributetypedef)
@@ -240,24 +175,34 @@ from mypy_boto3_sso_admin.type_defs import AccessControlAttributeTypeDef, ...
 - [GetInlinePolicyForPermissionSetResponseTypeDef](./type_defs.md#getinlinepolicyforpermissionsetresponsetypedef)
 - [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
 - [InstanceMetadataTypeDef](./type_defs.md#instancemetadatatypedef)
+- [ListAccountAssignmentCreationStatusRequestListAccountAssignmentCreationStatusPaginateTypeDef](./type_defs.md#listaccountassignmentcreationstatusrequestlistaccountassignmentcreationstatuspaginatetypedef)
 - [ListAccountAssignmentCreationStatusRequestRequestTypeDef](./type_defs.md#listaccountassignmentcreationstatusrequestrequesttypedef)
 - [ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef)
+- [ListAccountAssignmentDeletionStatusRequestListAccountAssignmentDeletionStatusPaginateTypeDef](./type_defs.md#listaccountassignmentdeletionstatusrequestlistaccountassignmentdeletionstatuspaginatetypedef)
 - [ListAccountAssignmentDeletionStatusRequestRequestTypeDef](./type_defs.md#listaccountassignmentdeletionstatusrequestrequesttypedef)
 - [ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef)
+- [ListAccountAssignmentsRequestListAccountAssignmentsPaginateTypeDef](./type_defs.md#listaccountassignmentsrequestlistaccountassignmentspaginatetypedef)
 - [ListAccountAssignmentsRequestRequestTypeDef](./type_defs.md#listaccountassignmentsrequestrequesttypedef)
 - [ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef)
+- [ListAccountsForProvisionedPermissionSetRequestListAccountsForProvisionedPermissionSetPaginateTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetrequestlistaccountsforprovisionedpermissionsetpaginatetypedef)
 - [ListAccountsForProvisionedPermissionSetRequestRequestTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetrequestrequesttypedef)
 - [ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef)
+- [ListInstancesRequestListInstancesPaginateTypeDef](./type_defs.md#listinstancesrequestlistinstancespaginatetypedef)
 - [ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef)
 - [ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)
+- [ListManagedPoliciesInPermissionSetRequestListManagedPoliciesInPermissionSetPaginateTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetrequestlistmanagedpoliciesinpermissionsetpaginatetypedef)
 - [ListManagedPoliciesInPermissionSetRequestRequestTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetrequestrequesttypedef)
 - [ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef)
+- [ListPermissionSetProvisioningStatusRequestListPermissionSetProvisioningStatusPaginateTypeDef](./type_defs.md#listpermissionsetprovisioningstatusrequestlistpermissionsetprovisioningstatuspaginatetypedef)
 - [ListPermissionSetProvisioningStatusRequestRequestTypeDef](./type_defs.md#listpermissionsetprovisioningstatusrequestrequesttypedef)
 - [ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef)
+- [ListPermissionSetsProvisionedToAccountRequestListPermissionSetsProvisionedToAccountPaginateTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountrequestlistpermissionsetsprovisionedtoaccountpaginatetypedef)
 - [ListPermissionSetsProvisionedToAccountRequestRequestTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountrequestrequesttypedef)
 - [ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef)
+- [ListPermissionSetsRequestListPermissionSetsPaginateTypeDef](./type_defs.md#listpermissionsetsrequestlistpermissionsetspaginatetypedef)
 - [ListPermissionSetsRequestRequestTypeDef](./type_defs.md#listpermissionsetsrequestrequesttypedef)
 - [ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
@@ -274,3 +219,4 @@ from mypy_boto3_sso_admin.type_defs import AccessControlAttributeTypeDef, ...
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](./type_defs.md#updateinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
 - [UpdatePermissionSetRequestRequestTypeDef](./type_defs.md#updatepermissionsetrequestrequesttypedef)
+

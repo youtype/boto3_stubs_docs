@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-gluedatabrew-module"></a>
-
-# Type annotations for boto3 GlueDataBrew module
+#  GlueDataBrew module
 
 > [Index](../README.md) > GlueDataBrew
 
-Auto-generated documentation for
-[GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
-type annotations stubs module
-[mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
+!!! note ""
 
-- [Type annotations for boto3 GlueDataBrew module](#type-annotations-for-boto3-gluedatabrew-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GlueDataBrewClient](#gluedatabrewclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
+    type annotations stubs module [mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `GlueDataBrew`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[databrew]'
 python -m pip install mypy-boto3-databrew
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,103 +42,37 @@ python -m pip install mypy-boto3-databrew
 python -m pip uninstall -y mypy-boto3-databrew
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="gluedatabrewclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GlueDataBrewClient
 
-Type annotations for `boto3.client("databrew")` as
-[GlueDataBrewClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("databrew")` as [GlueDataBrewClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_databrew.client import GlueDataBrewClient
+
+def get_client() -> GlueDataBrewClient:
+    return Session().cleint("databrew")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_delete_recipe_version](./client.md#batch_delete_recipe_version)
-- [can_paginate](./client.md#can_paginate)
-- [create_dataset](./client.md#create_dataset)
-- [create_profile_job](./client.md#create_profile_job)
-- [create_project](./client.md#create_project)
-- [create_recipe](./client.md#create_recipe)
-- [create_recipe_job](./client.md#create_recipe_job)
-- [create_ruleset](./client.md#create_ruleset)
-- [create_schedule](./client.md#create_schedule)
-- [delete_dataset](./client.md#delete_dataset)
-- [delete_job](./client.md#delete_job)
-- [delete_project](./client.md#delete_project)
-- [delete_recipe_version](./client.md#delete_recipe_version)
-- [delete_ruleset](./client.md#delete_ruleset)
-- [delete_schedule](./client.md#delete_schedule)
-- [describe_dataset](./client.md#describe_dataset)
-- [describe_job](./client.md#describe_job)
-- [describe_job_run](./client.md#describe_job_run)
-- [describe_project](./client.md#describe_project)
-- [describe_recipe](./client.md#describe_recipe)
-- [describe_ruleset](./client.md#describe_ruleset)
-- [describe_schedule](./client.md#describe_schedule)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_datasets](./client.md#list_datasets)
-- [list_job_runs](./client.md#list_job_runs)
-- [list_jobs](./client.md#list_jobs)
-- [list_projects](./client.md#list_projects)
-- [list_recipe_versions](./client.md#list_recipe_versions)
-- [list_recipes](./client.md#list_recipes)
-- [list_rulesets](./client.md#list_rulesets)
-- [list_schedules](./client.md#list_schedules)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [publish_recipe](./client.md#publish_recipe)
-- [send_project_session_action](./client.md#send_project_session_action)
-- [start_job_run](./client.md#start_job_run)
-- [start_project_session](./client.md#start_project_session)
-- [stop_job_run](./client.md#stop_job_run)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_dataset](./client.md#update_dataset)
-- [update_profile_job](./client.md#update_profile_job)
-- [update_project](./client.md#update_project)
-- [update_recipe](./client.md#update_recipe)
-- [update_recipe_job](./client.md#update_recipe_job)
-- [update_ruleset](./client.md#update_ruleset)
-- [update_schedule](./client.md#update_schedule)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-GlueDataBrewClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("databrew").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("databrew").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_databrew.paginator import ListDatasetsPaginator, ...
+from mypy_boto3_databrew.paginator import ListDatasetsPaginator
+
+def get_list_datasets_paginator() -> ListDatasetsPaginator:
+    return Session().client("databrew").get_paginator("list_datasets"))
 ```
 
 - [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
@@ -172,16 +84,23 @@ from mypy_boto3_databrew.paginator import ListDatasetsPaginator, ...
 - [ListRulesetsPaginator](./paginators.md#listrulesetspaginator)
 - [ListSchedulesPaginator](./paginators.md#listschedulespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_databrew.literals import AnalyticsModeType
 
-```python
-from mypy_boto3_databrew.literals import AnalyticsModeType, ...
+def get_value() -> AnalyticsModeType:
+    return "DISABLE"
 ```
 
 - [AnalyticsModeType](./literals.md#analyticsmodetype)
@@ -215,18 +134,22 @@ from mypy_boto3_databrew.literals import AnalyticsModeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_databrew.type_defs import AllowedStatisticsTypeDef
 
-```python
-from mypy_boto3_databrew.type_defs import AllowedStatisticsTypeDef, ...
+def get_value() -> AllowedStatisticsTypeDef:
+    return {
+        "Statistics": ...,
+    }
 ```
 
 - [AllowedStatisticsTypeDef](./type_defs.md#allowedstatisticstypedef)
@@ -295,20 +218,28 @@ from mypy_boto3_databrew.type_defs import AllowedStatisticsTypeDef, ...
 - [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 - [JobTypeDef](./type_defs.md#jobtypedef)
 - [JsonOptionsTypeDef](./type_defs.md#jsonoptionstypedef)
+- [ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef)
 - [ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
 - [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)
+- [ListJobRunsRequestListJobRunsPaginateTypeDef](./type_defs.md#listjobrunsrequestlistjobrunspaginatetypedef)
 - [ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef)
 - [ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)
+- [ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef)
 - [ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef)
 - [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)
+- [ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef)
 - [ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef)
 - [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)
+- [ListRecipeVersionsRequestListRecipeVersionsPaginateTypeDef](./type_defs.md#listrecipeversionsrequestlistrecipeversionspaginatetypedef)
 - [ListRecipeVersionsRequestRequestTypeDef](./type_defs.md#listrecipeversionsrequestrequesttypedef)
 - [ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef)
+- [ListRecipesRequestListRecipesPaginateTypeDef](./type_defs.md#listrecipesrequestlistrecipespaginatetypedef)
 - [ListRecipesRequestRequestTypeDef](./type_defs.md#listrecipesrequestrequesttypedef)
 - [ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef)
+- [ListRulesetsRequestListRulesetsPaginateTypeDef](./type_defs.md#listrulesetsrequestlistrulesetspaginatetypedef)
 - [ListRulesetsRequestRequestTypeDef](./type_defs.md#listrulesetsrequestrequesttypedef)
 - [ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef)
+- [ListSchedulesRequestListSchedulesPaginateTypeDef](./type_defs.md#listschedulesrequestlistschedulespaginatetypedef)
 - [ListSchedulesRequestRequestTypeDef](./type_defs.md#listschedulesrequestrequesttypedef)
 - [ListSchedulesResponseTypeDef](./type_defs.md#listschedulesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -363,3 +294,4 @@ from mypy_boto3_databrew.type_defs import AllowedStatisticsTypeDef, ...
 - [UpdateScheduleResponseTypeDef](./type_defs.md#updatescheduleresponsetypedef)
 - [ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)
 - [ViewFrameTypeDef](./type_defs.md#viewframetypedef)
+

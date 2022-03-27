@@ -1,8383 +1,10497 @@
-<a id="typed-dictionaries-for-boto3-glue-module"></a>
-
-# Typed dictionaries for boto3 Glue module
+# Typed dictionaries
 
 > [Index](../README.md) > [Glue](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
-type annotations stubs module
-[mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Glue module](#typed-dictionaries-for-boto3-glue-module)
-  - [ActionTypeDef](#actiontypedef)
-  - [AuditContextTypeDef](#auditcontexttypedef)
-  - [BackfillErrorTypeDef](#backfillerrortypedef)
-  - [BatchCreatePartitionRequestRequestTypeDef](#batchcreatepartitionrequestrequesttypedef)
-  - [BatchCreatePartitionResponseTypeDef](#batchcreatepartitionresponsetypedef)
-  - [BatchDeleteConnectionRequestRequestTypeDef](#batchdeleteconnectionrequestrequesttypedef)
-  - [BatchDeleteConnectionResponseTypeDef](#batchdeleteconnectionresponsetypedef)
-  - [BatchDeletePartitionRequestRequestTypeDef](#batchdeletepartitionrequestrequesttypedef)
-  - [BatchDeletePartitionResponseTypeDef](#batchdeletepartitionresponsetypedef)
-  - [BatchDeleteTableRequestRequestTypeDef](#batchdeletetablerequestrequesttypedef)
-  - [BatchDeleteTableResponseTypeDef](#batchdeletetableresponsetypedef)
-  - [BatchDeleteTableVersionRequestRequestTypeDef](#batchdeletetableversionrequestrequesttypedef)
-  - [BatchDeleteTableVersionResponseTypeDef](#batchdeletetableversionresponsetypedef)
-  - [BatchGetBlueprintsRequestRequestTypeDef](#batchgetblueprintsrequestrequesttypedef)
-  - [BatchGetBlueprintsResponseTypeDef](#batchgetblueprintsresponsetypedef)
-  - [BatchGetCrawlersRequestRequestTypeDef](#batchgetcrawlersrequestrequesttypedef)
-  - [BatchGetCrawlersResponseTypeDef](#batchgetcrawlersresponsetypedef)
-  - [BatchGetDevEndpointsRequestRequestTypeDef](#batchgetdevendpointsrequestrequesttypedef)
-  - [BatchGetDevEndpointsResponseTypeDef](#batchgetdevendpointsresponsetypedef)
-  - [BatchGetJobsRequestRequestTypeDef](#batchgetjobsrequestrequesttypedef)
-  - [BatchGetJobsResponseTypeDef](#batchgetjobsresponsetypedef)
-  - [BatchGetPartitionRequestRequestTypeDef](#batchgetpartitionrequestrequesttypedef)
-  - [BatchGetPartitionResponseTypeDef](#batchgetpartitionresponsetypedef)
-  - [BatchGetTriggersRequestRequestTypeDef](#batchgettriggersrequestrequesttypedef)
-  - [BatchGetTriggersResponseTypeDef](#batchgettriggersresponsetypedef)
-  - [BatchGetWorkflowsRequestRequestTypeDef](#batchgetworkflowsrequestrequesttypedef)
-  - [BatchGetWorkflowsResponseTypeDef](#batchgetworkflowsresponsetypedef)
-  - [BatchStopJobRunErrorTypeDef](#batchstopjobrunerrortypedef)
-  - [BatchStopJobRunRequestRequestTypeDef](#batchstopjobrunrequestrequesttypedef)
-  - [BatchStopJobRunResponseTypeDef](#batchstopjobrunresponsetypedef)
-  - [BatchStopJobRunSuccessfulSubmissionTypeDef](#batchstopjobrunsuccessfulsubmissiontypedef)
-  - [BatchUpdatePartitionFailureEntryTypeDef](#batchupdatepartitionfailureentrytypedef)
-  - [BatchUpdatePartitionRequestEntryTypeDef](#batchupdatepartitionrequestentrytypedef)
-  - [BatchUpdatePartitionRequestRequestTypeDef](#batchupdatepartitionrequestrequesttypedef)
-  - [BatchUpdatePartitionResponseTypeDef](#batchupdatepartitionresponsetypedef)
-  - [BinaryColumnStatisticsDataTypeDef](#binarycolumnstatisticsdatatypedef)
-  - [BlueprintDetailsTypeDef](#blueprintdetailstypedef)
-  - [BlueprintRunTypeDef](#blueprintruntypedef)
-  - [BlueprintTypeDef](#blueprinttypedef)
-  - [BooleanColumnStatisticsDataTypeDef](#booleancolumnstatisticsdatatypedef)
-  - [CancelMLTaskRunRequestRequestTypeDef](#cancelmltaskrunrequestrequesttypedef)
-  - [CancelMLTaskRunResponseTypeDef](#cancelmltaskrunresponsetypedef)
-  - [CancelStatementRequestRequestTypeDef](#cancelstatementrequestrequesttypedef)
-  - [CatalogEntryTypeDef](#catalogentrytypedef)
-  - [CatalogImportStatusTypeDef](#catalogimportstatustypedef)
-  - [CatalogTargetTypeDef](#catalogtargettypedef)
-  - [CheckSchemaVersionValidityInputRequestTypeDef](#checkschemaversionvalidityinputrequesttypedef)
-  - [CheckSchemaVersionValidityResponseTypeDef](#checkschemaversionvalidityresponsetypedef)
-  - [ClassifierTypeDef](#classifiertypedef)
-  - [CloudWatchEncryptionTypeDef](#cloudwatchencryptiontypedef)
-  - [CodeGenEdgeTypeDef](#codegenedgetypedef)
-  - [CodeGenNodeArgTypeDef](#codegennodeargtypedef)
-  - [CodeGenNodeTypeDef](#codegennodetypedef)
-  - [ColumnErrorTypeDef](#columnerrortypedef)
-  - [ColumnImportanceTypeDef](#columnimportancetypedef)
-  - [ColumnRowFilterTypeDef](#columnrowfiltertypedef)
-  - [ColumnStatisticsDataTypeDef](#columnstatisticsdatatypedef)
-  - [ColumnStatisticsErrorTypeDef](#columnstatisticserrortypedef)
-  - [ColumnStatisticsTypeDef](#columnstatisticstypedef)
-  - [ColumnTypeDef](#columntypedef)
-  - [ConditionTypeDef](#conditiontypedef)
-  - [ConfusionMatrixTypeDef](#confusionmatrixtypedef)
-  - [ConnectionInputTypeDef](#connectioninputtypedef)
-  - [ConnectionPasswordEncryptionTypeDef](#connectionpasswordencryptiontypedef)
-  - [ConnectionTypeDef](#connectiontypedef)
-  - [ConnectionsListTypeDef](#connectionslisttypedef)
-  - [CrawlTypeDef](#crawltypedef)
-  - [CrawlerMetricsTypeDef](#crawlermetricstypedef)
-  - [CrawlerNodeDetailsTypeDef](#crawlernodedetailstypedef)
-  - [CrawlerTargetsTypeDef](#crawlertargetstypedef)
-  - [CrawlerTypeDef](#crawlertypedef)
-  - [CreateBlueprintRequestRequestTypeDef](#createblueprintrequestrequesttypedef)
-  - [CreateBlueprintResponseTypeDef](#createblueprintresponsetypedef)
-  - [CreateClassifierRequestRequestTypeDef](#createclassifierrequestrequesttypedef)
-  - [CreateConnectionRequestRequestTypeDef](#createconnectionrequestrequesttypedef)
-  - [CreateCrawlerRequestRequestTypeDef](#createcrawlerrequestrequesttypedef)
-  - [CreateCsvClassifierRequestTypeDef](#createcsvclassifierrequesttypedef)
-  - [CreateDatabaseRequestRequestTypeDef](#createdatabaserequestrequesttypedef)
-  - [CreateDevEndpointRequestRequestTypeDef](#createdevendpointrequestrequesttypedef)
-  - [CreateDevEndpointResponseTypeDef](#createdevendpointresponsetypedef)
-  - [CreateGrokClassifierRequestTypeDef](#creategrokclassifierrequesttypedef)
-  - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
-  - [CreateJobResponseTypeDef](#createjobresponsetypedef)
-  - [CreateJsonClassifierRequestTypeDef](#createjsonclassifierrequesttypedef)
-  - [CreateMLTransformRequestRequestTypeDef](#createmltransformrequestrequesttypedef)
-  - [CreateMLTransformResponseTypeDef](#createmltransformresponsetypedef)
-  - [CreatePartitionIndexRequestRequestTypeDef](#createpartitionindexrequestrequesttypedef)
-  - [CreatePartitionRequestRequestTypeDef](#createpartitionrequestrequesttypedef)
-  - [CreateRegistryInputRequestTypeDef](#createregistryinputrequesttypedef)
-  - [CreateRegistryResponseTypeDef](#createregistryresponsetypedef)
-  - [CreateSchemaInputRequestTypeDef](#createschemainputrequesttypedef)
-  - [CreateSchemaResponseTypeDef](#createschemaresponsetypedef)
-  - [CreateScriptRequestRequestTypeDef](#createscriptrequestrequesttypedef)
-  - [CreateScriptResponseTypeDef](#createscriptresponsetypedef)
-  - [CreateSecurityConfigurationRequestRequestTypeDef](#createsecurityconfigurationrequestrequesttypedef)
-  - [CreateSecurityConfigurationResponseTypeDef](#createsecurityconfigurationresponsetypedef)
-  - [CreateSessionRequestRequestTypeDef](#createsessionrequestrequesttypedef)
-  - [CreateSessionResponseTypeDef](#createsessionresponsetypedef)
-  - [CreateTableRequestRequestTypeDef](#createtablerequestrequesttypedef)
-  - [CreateTriggerRequestRequestTypeDef](#createtriggerrequestrequesttypedef)
-  - [CreateTriggerResponseTypeDef](#createtriggerresponsetypedef)
-  - [CreateUserDefinedFunctionRequestRequestTypeDef](#createuserdefinedfunctionrequestrequesttypedef)
-  - [CreateWorkflowRequestRequestTypeDef](#createworkflowrequestrequesttypedef)
-  - [CreateWorkflowResponseTypeDef](#createworkflowresponsetypedef)
-  - [CreateXMLClassifierRequestTypeDef](#createxmlclassifierrequesttypedef)
-  - [CsvClassifierTypeDef](#csvclassifiertypedef)
-  - [DataCatalogEncryptionSettingsTypeDef](#datacatalogencryptionsettingstypedef)
-  - [DataLakePrincipalTypeDef](#datalakeprincipaltypedef)
-  - [DatabaseIdentifierTypeDef](#databaseidentifiertypedef)
-  - [DatabaseInputTypeDef](#databaseinputtypedef)
-  - [DatabaseTypeDef](#databasetypedef)
-  - [DateColumnStatisticsDataTypeDef](#datecolumnstatisticsdatatypedef)
-  - [DecimalColumnStatisticsDataTypeDef](#decimalcolumnstatisticsdatatypedef)
-  - [DecimalNumberTypeDef](#decimalnumbertypedef)
-  - [DeleteBlueprintRequestRequestTypeDef](#deleteblueprintrequestrequesttypedef)
-  - [DeleteBlueprintResponseTypeDef](#deleteblueprintresponsetypedef)
-  - [DeleteClassifierRequestRequestTypeDef](#deleteclassifierrequestrequesttypedef)
-  - [DeleteColumnStatisticsForPartitionRequestRequestTypeDef](#deletecolumnstatisticsforpartitionrequestrequesttypedef)
-  - [DeleteColumnStatisticsForTableRequestRequestTypeDef](#deletecolumnstatisticsfortablerequestrequesttypedef)
-  - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
-  - [DeleteCrawlerRequestRequestTypeDef](#deletecrawlerrequestrequesttypedef)
-  - [DeleteDatabaseRequestRequestTypeDef](#deletedatabaserequestrequesttypedef)
-  - [DeleteDevEndpointRequestRequestTypeDef](#deletedevendpointrequestrequesttypedef)
-  - [DeleteJobRequestRequestTypeDef](#deletejobrequestrequesttypedef)
-  - [DeleteJobResponseTypeDef](#deletejobresponsetypedef)
-  - [DeleteMLTransformRequestRequestTypeDef](#deletemltransformrequestrequesttypedef)
-  - [DeleteMLTransformResponseTypeDef](#deletemltransformresponsetypedef)
-  - [DeletePartitionIndexRequestRequestTypeDef](#deletepartitionindexrequestrequesttypedef)
-  - [DeletePartitionRequestRequestTypeDef](#deletepartitionrequestrequesttypedef)
-  - [DeleteRegistryInputRequestTypeDef](#deleteregistryinputrequesttypedef)
-  - [DeleteRegistryResponseTypeDef](#deleteregistryresponsetypedef)
-  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
-  - [DeleteSchemaInputRequestTypeDef](#deleteschemainputrequesttypedef)
-  - [DeleteSchemaResponseTypeDef](#deleteschemaresponsetypedef)
-  - [DeleteSchemaVersionsInputRequestTypeDef](#deleteschemaversionsinputrequesttypedef)
-  - [DeleteSchemaVersionsResponseTypeDef](#deleteschemaversionsresponsetypedef)
-  - [DeleteSecurityConfigurationRequestRequestTypeDef](#deletesecurityconfigurationrequestrequesttypedef)
-  - [DeleteSessionRequestRequestTypeDef](#deletesessionrequestrequesttypedef)
-  - [DeleteSessionResponseTypeDef](#deletesessionresponsetypedef)
-  - [DeleteTableRequestRequestTypeDef](#deletetablerequestrequesttypedef)
-  - [DeleteTableVersionRequestRequestTypeDef](#deletetableversionrequestrequesttypedef)
-  - [DeleteTriggerRequestRequestTypeDef](#deletetriggerrequestrequesttypedef)
-  - [DeleteTriggerResponseTypeDef](#deletetriggerresponsetypedef)
-  - [DeleteUserDefinedFunctionRequestRequestTypeDef](#deleteuserdefinedfunctionrequestrequesttypedef)
-  - [DeleteWorkflowRequestRequestTypeDef](#deleteworkflowrequestrequesttypedef)
-  - [DeleteWorkflowResponseTypeDef](#deleteworkflowresponsetypedef)
-  - [DeltaTargetTypeDef](#deltatargettypedef)
-  - [DevEndpointCustomLibrariesTypeDef](#devendpointcustomlibrariestypedef)
-  - [DevEndpointTypeDef](#devendpointtypedef)
-  - [DoubleColumnStatisticsDataTypeDef](#doublecolumnstatisticsdatatypedef)
-  - [DynamoDBTargetTypeDef](#dynamodbtargettypedef)
-  - [EdgeTypeDef](#edgetypedef)
-  - [EncryptionAtRestTypeDef](#encryptionatresttypedef)
-  - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
-  - [ErrorDetailTypeDef](#errordetailtypedef)
-  - [ErrorDetailsTypeDef](#errordetailstypedef)
-  - [EvaluationMetricsTypeDef](#evaluationmetricstypedef)
-  - [EventBatchingConditionTypeDef](#eventbatchingconditiontypedef)
-  - [ExecutionPropertyTypeDef](#executionpropertytypedef)
-  - [ExportLabelsTaskRunPropertiesTypeDef](#exportlabelstaskrunpropertiestypedef)
-  - [FindMatchesMetricsTypeDef](#findmatchesmetricstypedef)
-  - [FindMatchesParametersTypeDef](#findmatchesparameterstypedef)
-  - [FindMatchesTaskRunPropertiesTypeDef](#findmatchestaskrunpropertiestypedef)
-  - [GetBlueprintRequestRequestTypeDef](#getblueprintrequestrequesttypedef)
-  - [GetBlueprintResponseTypeDef](#getblueprintresponsetypedef)
-  - [GetBlueprintRunRequestRequestTypeDef](#getblueprintrunrequestrequesttypedef)
-  - [GetBlueprintRunResponseTypeDef](#getblueprintrunresponsetypedef)
-  - [GetBlueprintRunsRequestRequestTypeDef](#getblueprintrunsrequestrequesttypedef)
-  - [GetBlueprintRunsResponseTypeDef](#getblueprintrunsresponsetypedef)
-  - [GetCatalogImportStatusRequestRequestTypeDef](#getcatalogimportstatusrequestrequesttypedef)
-  - [GetCatalogImportStatusResponseTypeDef](#getcatalogimportstatusresponsetypedef)
-  - [GetClassifierRequestRequestTypeDef](#getclassifierrequestrequesttypedef)
-  - [GetClassifierResponseTypeDef](#getclassifierresponsetypedef)
-  - [GetClassifiersRequestRequestTypeDef](#getclassifiersrequestrequesttypedef)
-  - [GetClassifiersResponseTypeDef](#getclassifiersresponsetypedef)
-  - [GetColumnStatisticsForPartitionRequestRequestTypeDef](#getcolumnstatisticsforpartitionrequestrequesttypedef)
-  - [GetColumnStatisticsForPartitionResponseTypeDef](#getcolumnstatisticsforpartitionresponsetypedef)
-  - [GetColumnStatisticsForTableRequestRequestTypeDef](#getcolumnstatisticsfortablerequestrequesttypedef)
-  - [GetColumnStatisticsForTableResponseTypeDef](#getcolumnstatisticsfortableresponsetypedef)
-  - [GetConnectionRequestRequestTypeDef](#getconnectionrequestrequesttypedef)
-  - [GetConnectionResponseTypeDef](#getconnectionresponsetypedef)
-  - [GetConnectionsFilterTypeDef](#getconnectionsfiltertypedef)
-  - [GetConnectionsRequestRequestTypeDef](#getconnectionsrequestrequesttypedef)
-  - [GetConnectionsResponseTypeDef](#getconnectionsresponsetypedef)
-  - [GetCrawlerMetricsRequestRequestTypeDef](#getcrawlermetricsrequestrequesttypedef)
-  - [GetCrawlerMetricsResponseTypeDef](#getcrawlermetricsresponsetypedef)
-  - [GetCrawlerRequestRequestTypeDef](#getcrawlerrequestrequesttypedef)
-  - [GetCrawlerResponseTypeDef](#getcrawlerresponsetypedef)
-  - [GetCrawlersRequestRequestTypeDef](#getcrawlersrequestrequesttypedef)
-  - [GetCrawlersResponseTypeDef](#getcrawlersresponsetypedef)
-  - [GetDataCatalogEncryptionSettingsRequestRequestTypeDef](#getdatacatalogencryptionsettingsrequestrequesttypedef)
-  - [GetDataCatalogEncryptionSettingsResponseTypeDef](#getdatacatalogencryptionsettingsresponsetypedef)
-  - [GetDatabaseRequestRequestTypeDef](#getdatabaserequestrequesttypedef)
-  - [GetDatabaseResponseTypeDef](#getdatabaseresponsetypedef)
-  - [GetDatabasesRequestRequestTypeDef](#getdatabasesrequestrequesttypedef)
-  - [GetDatabasesResponseTypeDef](#getdatabasesresponsetypedef)
-  - [GetDataflowGraphRequestRequestTypeDef](#getdataflowgraphrequestrequesttypedef)
-  - [GetDataflowGraphResponseTypeDef](#getdataflowgraphresponsetypedef)
-  - [GetDevEndpointRequestRequestTypeDef](#getdevendpointrequestrequesttypedef)
-  - [GetDevEndpointResponseTypeDef](#getdevendpointresponsetypedef)
-  - [GetDevEndpointsRequestRequestTypeDef](#getdevendpointsrequestrequesttypedef)
-  - [GetDevEndpointsResponseTypeDef](#getdevendpointsresponsetypedef)
-  - [GetJobBookmarkRequestRequestTypeDef](#getjobbookmarkrequestrequesttypedef)
-  - [GetJobBookmarkResponseTypeDef](#getjobbookmarkresponsetypedef)
-  - [GetJobRequestRequestTypeDef](#getjobrequestrequesttypedef)
-  - [GetJobResponseTypeDef](#getjobresponsetypedef)
-  - [GetJobRunRequestRequestTypeDef](#getjobrunrequestrequesttypedef)
-  - [GetJobRunResponseTypeDef](#getjobrunresponsetypedef)
-  - [GetJobRunsRequestRequestTypeDef](#getjobrunsrequestrequesttypedef)
-  - [GetJobRunsResponseTypeDef](#getjobrunsresponsetypedef)
-  - [GetJobsRequestRequestTypeDef](#getjobsrequestrequesttypedef)
-  - [GetJobsResponseTypeDef](#getjobsresponsetypedef)
-  - [GetMLTaskRunRequestRequestTypeDef](#getmltaskrunrequestrequesttypedef)
-  - [GetMLTaskRunResponseTypeDef](#getmltaskrunresponsetypedef)
-  - [GetMLTaskRunsRequestRequestTypeDef](#getmltaskrunsrequestrequesttypedef)
-  - [GetMLTaskRunsResponseTypeDef](#getmltaskrunsresponsetypedef)
-  - [GetMLTransformRequestRequestTypeDef](#getmltransformrequestrequesttypedef)
-  - [GetMLTransformResponseTypeDef](#getmltransformresponsetypedef)
-  - [GetMLTransformsRequestRequestTypeDef](#getmltransformsrequestrequesttypedef)
-  - [GetMLTransformsResponseTypeDef](#getmltransformsresponsetypedef)
-  - [GetMappingRequestRequestTypeDef](#getmappingrequestrequesttypedef)
-  - [GetMappingResponseTypeDef](#getmappingresponsetypedef)
-  - [GetPartitionIndexesRequestRequestTypeDef](#getpartitionindexesrequestrequesttypedef)
-  - [GetPartitionIndexesResponseTypeDef](#getpartitionindexesresponsetypedef)
-  - [GetPartitionRequestRequestTypeDef](#getpartitionrequestrequesttypedef)
-  - [GetPartitionResponseTypeDef](#getpartitionresponsetypedef)
-  - [GetPartitionsRequestRequestTypeDef](#getpartitionsrequestrequesttypedef)
-  - [GetPartitionsResponseTypeDef](#getpartitionsresponsetypedef)
-  - [GetPlanRequestRequestTypeDef](#getplanrequestrequesttypedef)
-  - [GetPlanResponseTypeDef](#getplanresponsetypedef)
-  - [GetRegistryInputRequestTypeDef](#getregistryinputrequesttypedef)
-  - [GetRegistryResponseTypeDef](#getregistryresponsetypedef)
-  - [GetResourcePoliciesRequestRequestTypeDef](#getresourcepoliciesrequestrequesttypedef)
-  - [GetResourcePoliciesResponseTypeDef](#getresourcepoliciesresponsetypedef)
-  - [GetResourcePolicyRequestRequestTypeDef](#getresourcepolicyrequestrequesttypedef)
-  - [GetResourcePolicyResponseTypeDef](#getresourcepolicyresponsetypedef)
-  - [GetSchemaByDefinitionInputRequestTypeDef](#getschemabydefinitioninputrequesttypedef)
-  - [GetSchemaByDefinitionResponseTypeDef](#getschemabydefinitionresponsetypedef)
-  - [GetSchemaInputRequestTypeDef](#getschemainputrequesttypedef)
-  - [GetSchemaResponseTypeDef](#getschemaresponsetypedef)
-  - [GetSchemaVersionInputRequestTypeDef](#getschemaversioninputrequesttypedef)
-  - [GetSchemaVersionResponseTypeDef](#getschemaversionresponsetypedef)
-  - [GetSchemaVersionsDiffInputRequestTypeDef](#getschemaversionsdiffinputrequesttypedef)
-  - [GetSchemaVersionsDiffResponseTypeDef](#getschemaversionsdiffresponsetypedef)
-  - [GetSecurityConfigurationRequestRequestTypeDef](#getsecurityconfigurationrequestrequesttypedef)
-  - [GetSecurityConfigurationResponseTypeDef](#getsecurityconfigurationresponsetypedef)
-  - [GetSecurityConfigurationsRequestRequestTypeDef](#getsecurityconfigurationsrequestrequesttypedef)
-  - [GetSecurityConfigurationsResponseTypeDef](#getsecurityconfigurationsresponsetypedef)
-  - [GetSessionRequestRequestTypeDef](#getsessionrequestrequesttypedef)
-  - [GetSessionResponseTypeDef](#getsessionresponsetypedef)
-  - [GetStatementRequestRequestTypeDef](#getstatementrequestrequesttypedef)
-  - [GetStatementResponseTypeDef](#getstatementresponsetypedef)
-  - [GetTableRequestRequestTypeDef](#gettablerequestrequesttypedef)
-  - [GetTableResponseTypeDef](#gettableresponsetypedef)
-  - [GetTableVersionRequestRequestTypeDef](#gettableversionrequestrequesttypedef)
-  - [GetTableVersionResponseTypeDef](#gettableversionresponsetypedef)
-  - [GetTableVersionsRequestRequestTypeDef](#gettableversionsrequestrequesttypedef)
-  - [GetTableVersionsResponseTypeDef](#gettableversionsresponsetypedef)
-  - [GetTablesRequestRequestTypeDef](#gettablesrequestrequesttypedef)
-  - [GetTablesResponseTypeDef](#gettablesresponsetypedef)
-  - [GetTagsRequestRequestTypeDef](#gettagsrequestrequesttypedef)
-  - [GetTagsResponseTypeDef](#gettagsresponsetypedef)
-  - [GetTriggerRequestRequestTypeDef](#gettriggerrequestrequesttypedef)
-  - [GetTriggerResponseTypeDef](#gettriggerresponsetypedef)
-  - [GetTriggersRequestRequestTypeDef](#gettriggersrequestrequesttypedef)
-  - [GetTriggersResponseTypeDef](#gettriggersresponsetypedef)
-  - [GetUnfilteredPartitionMetadataRequestRequestTypeDef](#getunfilteredpartitionmetadatarequestrequesttypedef)
-  - [GetUnfilteredPartitionMetadataResponseTypeDef](#getunfilteredpartitionmetadataresponsetypedef)
-  - [GetUnfilteredPartitionsMetadataRequestRequestTypeDef](#getunfilteredpartitionsmetadatarequestrequesttypedef)
-  - [GetUnfilteredPartitionsMetadataResponseTypeDef](#getunfilteredpartitionsmetadataresponsetypedef)
-  - [GetUnfilteredTableMetadataRequestRequestTypeDef](#getunfilteredtablemetadatarequestrequesttypedef)
-  - [GetUnfilteredTableMetadataResponseTypeDef](#getunfilteredtablemetadataresponsetypedef)
-  - [GetUserDefinedFunctionRequestRequestTypeDef](#getuserdefinedfunctionrequestrequesttypedef)
-  - [GetUserDefinedFunctionResponseTypeDef](#getuserdefinedfunctionresponsetypedef)
-  - [GetUserDefinedFunctionsRequestRequestTypeDef](#getuserdefinedfunctionsrequestrequesttypedef)
-  - [GetUserDefinedFunctionsResponseTypeDef](#getuserdefinedfunctionsresponsetypedef)
-  - [GetWorkflowRequestRequestTypeDef](#getworkflowrequestrequesttypedef)
-  - [GetWorkflowResponseTypeDef](#getworkflowresponsetypedef)
-  - [GetWorkflowRunPropertiesRequestRequestTypeDef](#getworkflowrunpropertiesrequestrequesttypedef)
-  - [GetWorkflowRunPropertiesResponseTypeDef](#getworkflowrunpropertiesresponsetypedef)
-  - [GetWorkflowRunRequestRequestTypeDef](#getworkflowrunrequestrequesttypedef)
-  - [GetWorkflowRunResponseTypeDef](#getworkflowrunresponsetypedef)
-  - [GetWorkflowRunsRequestRequestTypeDef](#getworkflowrunsrequestrequesttypedef)
-  - [GetWorkflowRunsResponseTypeDef](#getworkflowrunsresponsetypedef)
-  - [GluePolicyTypeDef](#gluepolicytypedef)
-  - [GlueTableTypeDef](#gluetabletypedef)
-  - [GrokClassifierTypeDef](#grokclassifiertypedef)
-  - [ImportCatalogToGlueRequestRequestTypeDef](#importcatalogtogluerequestrequesttypedef)
-  - [ImportLabelsTaskRunPropertiesTypeDef](#importlabelstaskrunpropertiestypedef)
-  - [JdbcTargetTypeDef](#jdbctargettypedef)
-  - [JobBookmarkEntryTypeDef](#jobbookmarkentrytypedef)
-  - [JobBookmarksEncryptionTypeDef](#jobbookmarksencryptiontypedef)
-  - [JobCommandTypeDef](#jobcommandtypedef)
-  - [JobNodeDetailsTypeDef](#jobnodedetailstypedef)
-  - [JobRunTypeDef](#jobruntypedef)
-  - [JobTypeDef](#jobtypedef)
-  - [JobUpdateTypeDef](#jobupdatetypedef)
-  - [JsonClassifierTypeDef](#jsonclassifiertypedef)
-  - [KeySchemaElementTypeDef](#keyschemaelementtypedef)
-  - [LabelingSetGenerationTaskRunPropertiesTypeDef](#labelingsetgenerationtaskrunpropertiestypedef)
-  - [LakeFormationConfigurationTypeDef](#lakeformationconfigurationtypedef)
-  - [LastActiveDefinitionTypeDef](#lastactivedefinitiontypedef)
-  - [LastCrawlInfoTypeDef](#lastcrawlinfotypedef)
-  - [LineageConfigurationTypeDef](#lineageconfigurationtypedef)
-  - [ListBlueprintsRequestRequestTypeDef](#listblueprintsrequestrequesttypedef)
-  - [ListBlueprintsResponseTypeDef](#listblueprintsresponsetypedef)
-  - [ListCrawlersRequestRequestTypeDef](#listcrawlersrequestrequesttypedef)
-  - [ListCrawlersResponseTypeDef](#listcrawlersresponsetypedef)
-  - [ListDevEndpointsRequestRequestTypeDef](#listdevendpointsrequestrequesttypedef)
-  - [ListDevEndpointsResponseTypeDef](#listdevendpointsresponsetypedef)
-  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
-  - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
-  - [ListMLTransformsRequestRequestTypeDef](#listmltransformsrequestrequesttypedef)
-  - [ListMLTransformsResponseTypeDef](#listmltransformsresponsetypedef)
-  - [ListRegistriesInputRequestTypeDef](#listregistriesinputrequesttypedef)
-  - [ListRegistriesResponseTypeDef](#listregistriesresponsetypedef)
-  - [ListSchemaVersionsInputRequestTypeDef](#listschemaversionsinputrequesttypedef)
-  - [ListSchemaVersionsResponseTypeDef](#listschemaversionsresponsetypedef)
-  - [ListSchemasInputRequestTypeDef](#listschemasinputrequesttypedef)
-  - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
-  - [ListSessionsRequestRequestTypeDef](#listsessionsrequestrequesttypedef)
-  - [ListSessionsResponseTypeDef](#listsessionsresponsetypedef)
-  - [ListStatementsRequestRequestTypeDef](#liststatementsrequestrequesttypedef)
-  - [ListStatementsResponseTypeDef](#liststatementsresponsetypedef)
-  - [ListTriggersRequestRequestTypeDef](#listtriggersrequestrequesttypedef)
-  - [ListTriggersResponseTypeDef](#listtriggersresponsetypedef)
-  - [ListWorkflowsRequestRequestTypeDef](#listworkflowsrequestrequesttypedef)
-  - [ListWorkflowsResponseTypeDef](#listworkflowsresponsetypedef)
-  - [LocationTypeDef](#locationtypedef)
-  - [LongColumnStatisticsDataTypeDef](#longcolumnstatisticsdatatypedef)
-  - [MLTransformTypeDef](#mltransformtypedef)
-  - [MLUserDataEncryptionTypeDef](#mluserdataencryptiontypedef)
-  - [MappingEntryTypeDef](#mappingentrytypedef)
-  - [MetadataInfoTypeDef](#metadatainfotypedef)
-  - [MetadataKeyValuePairTypeDef](#metadatakeyvaluepairtypedef)
-  - [MongoDBTargetTypeDef](#mongodbtargettypedef)
-  - [NodeTypeDef](#nodetypedef)
-  - [NotificationPropertyTypeDef](#notificationpropertytypedef)
-  - [OrderTypeDef](#ordertypedef)
-  - [OtherMetadataValueListItemTypeDef](#othermetadatavaluelistitemtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PartitionErrorTypeDef](#partitionerrortypedef)
-  - [PartitionIndexDescriptorTypeDef](#partitionindexdescriptortypedef)
-  - [PartitionIndexTypeDef](#partitionindextypedef)
-  - [PartitionInputTypeDef](#partitioninputtypedef)
-  - [PartitionTypeDef](#partitiontypedef)
-  - [PartitionValueListTypeDef](#partitionvaluelisttypedef)
-  - [PhysicalConnectionRequirementsTypeDef](#physicalconnectionrequirementstypedef)
-  - [PredecessorTypeDef](#predecessortypedef)
-  - [PredicateTypeDef](#predicatetypedef)
-  - [PrincipalPermissionsTypeDef](#principalpermissionstypedef)
-  - [PropertyPredicateTypeDef](#propertypredicatetypedef)
-  - [PutDataCatalogEncryptionSettingsRequestRequestTypeDef](#putdatacatalogencryptionsettingsrequestrequesttypedef)
-  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
-  - [PutResourcePolicyResponseTypeDef](#putresourcepolicyresponsetypedef)
-  - [PutSchemaVersionMetadataInputRequestTypeDef](#putschemaversionmetadatainputrequesttypedef)
-  - [PutSchemaVersionMetadataResponseTypeDef](#putschemaversionmetadataresponsetypedef)
-  - [PutWorkflowRunPropertiesRequestRequestTypeDef](#putworkflowrunpropertiesrequestrequesttypedef)
-  - [QuerySchemaVersionMetadataInputRequestTypeDef](#queryschemaversionmetadatainputrequesttypedef)
-  - [QuerySchemaVersionMetadataResponseTypeDef](#queryschemaversionmetadataresponsetypedef)
-  - [RecrawlPolicyTypeDef](#recrawlpolicytypedef)
-  - [RegisterSchemaVersionInputRequestTypeDef](#registerschemaversioninputrequesttypedef)
-  - [RegisterSchemaVersionResponseTypeDef](#registerschemaversionresponsetypedef)
-  - [RegistryIdTypeDef](#registryidtypedef)
-  - [RegistryListItemTypeDef](#registrylistitemtypedef)
-  - [RemoveSchemaVersionMetadataInputRequestTypeDef](#removeschemaversionmetadatainputrequesttypedef)
-  - [RemoveSchemaVersionMetadataResponseTypeDef](#removeschemaversionmetadataresponsetypedef)
-  - [ResetJobBookmarkRequestRequestTypeDef](#resetjobbookmarkrequestrequesttypedef)
-  - [ResetJobBookmarkResponseTypeDef](#resetjobbookmarkresponsetypedef)
-  - [ResourceUriTypeDef](#resourceuritypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResumeWorkflowRunRequestRequestTypeDef](#resumeworkflowrunrequestrequesttypedef)
-  - [ResumeWorkflowRunResponseTypeDef](#resumeworkflowrunresponsetypedef)
-  - [RunStatementRequestRequestTypeDef](#runstatementrequestrequesttypedef)
-  - [RunStatementResponseTypeDef](#runstatementresponsetypedef)
-  - [S3EncryptionTypeDef](#s3encryptiontypedef)
-  - [S3TargetTypeDef](#s3targettypedef)
-  - [ScheduleTypeDef](#scheduletypedef)
-  - [SchemaChangePolicyTypeDef](#schemachangepolicytypedef)
-  - [SchemaColumnTypeDef](#schemacolumntypedef)
-  - [SchemaIdTypeDef](#schemaidtypedef)
-  - [SchemaListItemTypeDef](#schemalistitemtypedef)
-  - [SchemaReferenceTypeDef](#schemareferencetypedef)
-  - [SchemaVersionErrorItemTypeDef](#schemaversionerroritemtypedef)
-  - [SchemaVersionListItemTypeDef](#schemaversionlistitemtypedef)
-  - [SchemaVersionNumberTypeDef](#schemaversionnumbertypedef)
-  - [SearchTablesRequestRequestTypeDef](#searchtablesrequestrequesttypedef)
-  - [SearchTablesResponseTypeDef](#searchtablesresponsetypedef)
-  - [SecurityConfigurationTypeDef](#securityconfigurationtypedef)
-  - [SegmentTypeDef](#segmenttypedef)
-  - [SerDeInfoTypeDef](#serdeinfotypedef)
-  - [SessionCommandTypeDef](#sessioncommandtypedef)
-  - [SessionTypeDef](#sessiontypedef)
-  - [SkewedInfoTypeDef](#skewedinfotypedef)
-  - [SortCriterionTypeDef](#sortcriteriontypedef)
-  - [StartBlueprintRunRequestRequestTypeDef](#startblueprintrunrequestrequesttypedef)
-  - [StartBlueprintRunResponseTypeDef](#startblueprintrunresponsetypedef)
-  - [StartCrawlerRequestRequestTypeDef](#startcrawlerrequestrequesttypedef)
-  - [StartCrawlerScheduleRequestRequestTypeDef](#startcrawlerschedulerequestrequesttypedef)
-  - [StartExportLabelsTaskRunRequestRequestTypeDef](#startexportlabelstaskrunrequestrequesttypedef)
-  - [StartExportLabelsTaskRunResponseTypeDef](#startexportlabelstaskrunresponsetypedef)
-  - [StartImportLabelsTaskRunRequestRequestTypeDef](#startimportlabelstaskrunrequestrequesttypedef)
-  - [StartImportLabelsTaskRunResponseTypeDef](#startimportlabelstaskrunresponsetypedef)
-  - [StartJobRunRequestRequestTypeDef](#startjobrunrequestrequesttypedef)
-  - [StartJobRunResponseTypeDef](#startjobrunresponsetypedef)
-  - [StartMLEvaluationTaskRunRequestRequestTypeDef](#startmlevaluationtaskrunrequestrequesttypedef)
-  - [StartMLEvaluationTaskRunResponseTypeDef](#startmlevaluationtaskrunresponsetypedef)
-  - [StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef](#startmllabelingsetgenerationtaskrunrequestrequesttypedef)
-  - [StartMLLabelingSetGenerationTaskRunResponseTypeDef](#startmllabelingsetgenerationtaskrunresponsetypedef)
-  - [StartTriggerRequestRequestTypeDef](#starttriggerrequestrequesttypedef)
-  - [StartTriggerResponseTypeDef](#starttriggerresponsetypedef)
-  - [StartWorkflowRunRequestRequestTypeDef](#startworkflowrunrequestrequesttypedef)
-  - [StartWorkflowRunResponseTypeDef](#startworkflowrunresponsetypedef)
-  - [StartingEventBatchConditionTypeDef](#startingeventbatchconditiontypedef)
-  - [StatementOutputDataTypeDef](#statementoutputdatatypedef)
-  - [StatementOutputTypeDef](#statementoutputtypedef)
-  - [StatementTypeDef](#statementtypedef)
-  - [StopCrawlerRequestRequestTypeDef](#stopcrawlerrequestrequesttypedef)
-  - [StopCrawlerScheduleRequestRequestTypeDef](#stopcrawlerschedulerequestrequesttypedef)
-  - [StopSessionRequestRequestTypeDef](#stopsessionrequestrequesttypedef)
-  - [StopSessionResponseTypeDef](#stopsessionresponsetypedef)
-  - [StopTriggerRequestRequestTypeDef](#stoptriggerrequestrequesttypedef)
-  - [StopTriggerResponseTypeDef](#stoptriggerresponsetypedef)
-  - [StopWorkflowRunRequestRequestTypeDef](#stopworkflowrunrequestrequesttypedef)
-  - [StorageDescriptorTypeDef](#storagedescriptortypedef)
-  - [StringColumnStatisticsDataTypeDef](#stringcolumnstatisticsdatatypedef)
-  - [TableErrorTypeDef](#tableerrortypedef)
-  - [TableIdentifierTypeDef](#tableidentifiertypedef)
-  - [TableInputTypeDef](#tableinputtypedef)
-  - [TableTypeDef](#tabletypedef)
-  - [TableVersionErrorTypeDef](#tableversionerrortypedef)
-  - [TableVersionTypeDef](#tableversiontypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TaskRunFilterCriteriaTypeDef](#taskrunfiltercriteriatypedef)
-  - [TaskRunPropertiesTypeDef](#taskrunpropertiestypedef)
-  - [TaskRunSortCriteriaTypeDef](#taskrunsortcriteriatypedef)
-  - [TaskRunTypeDef](#taskruntypedef)
-  - [TransformEncryptionTypeDef](#transformencryptiontypedef)
-  - [TransformFilterCriteriaTypeDef](#transformfiltercriteriatypedef)
-  - [TransformParametersTypeDef](#transformparameterstypedef)
-  - [TransformSortCriteriaTypeDef](#transformsortcriteriatypedef)
-  - [TriggerNodeDetailsTypeDef](#triggernodedetailstypedef)
-  - [TriggerTypeDef](#triggertypedef)
-  - [TriggerUpdateTypeDef](#triggerupdatetypedef)
-  - [UnfilteredPartitionTypeDef](#unfilteredpartitiontypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateBlueprintRequestRequestTypeDef](#updateblueprintrequestrequesttypedef)
-  - [UpdateBlueprintResponseTypeDef](#updateblueprintresponsetypedef)
-  - [UpdateClassifierRequestRequestTypeDef](#updateclassifierrequestrequesttypedef)
-  - [UpdateColumnStatisticsForPartitionRequestRequestTypeDef](#updatecolumnstatisticsforpartitionrequestrequesttypedef)
-  - [UpdateColumnStatisticsForPartitionResponseTypeDef](#updatecolumnstatisticsforpartitionresponsetypedef)
-  - [UpdateColumnStatisticsForTableRequestRequestTypeDef](#updatecolumnstatisticsfortablerequestrequesttypedef)
-  - [UpdateColumnStatisticsForTableResponseTypeDef](#updatecolumnstatisticsfortableresponsetypedef)
-  - [UpdateConnectionRequestRequestTypeDef](#updateconnectionrequestrequesttypedef)
-  - [UpdateCrawlerRequestRequestTypeDef](#updatecrawlerrequestrequesttypedef)
-  - [UpdateCrawlerScheduleRequestRequestTypeDef](#updatecrawlerschedulerequestrequesttypedef)
-  - [UpdateCsvClassifierRequestTypeDef](#updatecsvclassifierrequesttypedef)
-  - [UpdateDatabaseRequestRequestTypeDef](#updatedatabaserequestrequesttypedef)
-  - [UpdateDevEndpointRequestRequestTypeDef](#updatedevendpointrequestrequesttypedef)
-  - [UpdateGrokClassifierRequestTypeDef](#updategrokclassifierrequesttypedef)
-  - [UpdateJobRequestRequestTypeDef](#updatejobrequestrequesttypedef)
-  - [UpdateJobResponseTypeDef](#updatejobresponsetypedef)
-  - [UpdateJsonClassifierRequestTypeDef](#updatejsonclassifierrequesttypedef)
-  - [UpdateMLTransformRequestRequestTypeDef](#updatemltransformrequestrequesttypedef)
-  - [UpdateMLTransformResponseTypeDef](#updatemltransformresponsetypedef)
-  - [UpdatePartitionRequestRequestTypeDef](#updatepartitionrequestrequesttypedef)
-  - [UpdateRegistryInputRequestTypeDef](#updateregistryinputrequesttypedef)
-  - [UpdateRegistryResponseTypeDef](#updateregistryresponsetypedef)
-  - [UpdateSchemaInputRequestTypeDef](#updateschemainputrequesttypedef)
-  - [UpdateSchemaResponseTypeDef](#updateschemaresponsetypedef)
-  - [UpdateTableRequestRequestTypeDef](#updatetablerequestrequesttypedef)
-  - [UpdateTriggerRequestRequestTypeDef](#updatetriggerrequestrequesttypedef)
-  - [UpdateTriggerResponseTypeDef](#updatetriggerresponsetypedef)
-  - [UpdateUserDefinedFunctionRequestRequestTypeDef](#updateuserdefinedfunctionrequestrequesttypedef)
-  - [UpdateWorkflowRequestRequestTypeDef](#updateworkflowrequestrequesttypedef)
-  - [UpdateWorkflowResponseTypeDef](#updateworkflowresponsetypedef)
-  - [UpdateXMLClassifierRequestTypeDef](#updatexmlclassifierrequesttypedef)
-  - [UserDefinedFunctionInputTypeDef](#userdefinedfunctioninputtypedef)
-  - [UserDefinedFunctionTypeDef](#userdefinedfunctiontypedef)
-  - [WorkflowGraphTypeDef](#workflowgraphtypedef)
-  - [WorkflowRunStatisticsTypeDef](#workflowrunstatisticstypedef)
-  - [WorkflowRunTypeDef](#workflowruntypedef)
-  - [WorkflowTypeDef](#workflowtypedef)
-  - [XMLClassifierTypeDef](#xmlclassifiertypedef)
-
-<a id="actiontypedef"></a>
+    Auto-generated documentation for [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
+    type annotations stubs module [mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
 ## ActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    Arguments: NotRequired[Dict[str, str]],
+    Timeout: NotRequired[int],
+    SecurityConfiguration: NotRequired[str],
+    NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (1)
+    CrawlerName: NotRequired[str],
+```
 
-- `JobName`: `str`
-- `Arguments`: `Dict`\[`str`, `str`\]
-- `Timeout`: `int`
-- `SecurityConfiguration`: `str`
-- `NotificationProperty`:
-  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
-- `CrawlerName`: `str`
-
-<a id="auditcontexttypedef"></a>
-
+1. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 ## AuditContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import AuditContextTypeDef
+
+def get_value() -> AuditContextTypeDef:
+    return {
+        "AdditionalAuditContext": ...,
+    }
 ```
 
-Optional fields:
-
-- `AdditionalAuditContext`: `str`
-- `RequestedColumns`: `Sequence`\[`str`\]
-- `AllColumnsRequested`: `bool`
-
-<a id="backfillerrortypedef"></a>
+```python title="Definition"
+class AuditContextTypeDef(TypedDict):
+    AdditionalAuditContext: NotRequired[str],
+    RequestedColumns: NotRequired[Sequence[str]],
+    AllColumnsRequested: NotRequired[bool],
+```
 
 ## BackfillErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BackfillErrorTypeDef
+
+def get_value() -> BackfillErrorTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackfillErrorTypeDef(TypedDict):
+    Code: NotRequired[BackfillErrorCodeType],  # (1)
+    Partitions: NotRequired[List[PartitionValueListTypeDef]],  # (2)
+```
 
-- `Code`: [BackfillErrorCodeType](./literals.md#backfillerrorcodetype)
-- `Partitions`:
-  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
-
-<a id="batchcreatepartitionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BackfillErrorCodeType](./literals.md#backfillerrorcodetype) 
+2. See [:material-code-braces: PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef) 
 ## BatchCreatePartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchCreatePartitionRequestRequestTypeDef
+
+def get_value() -> BatchCreatePartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionInputList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchCreatePartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionInputList: Sequence[PartitionInputTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionInputList`:
-  `Sequence`\[[PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="batchcreatepartitionresponsetypedef"></a>
-
+1. See [:material-code-braces: PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) 
 ## BatchCreatePartitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchCreatePartitionResponseTypeDef
+
+def get_value() -> BatchCreatePartitionResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchCreatePartitionResponseTypeDef(TypedDict):
+    Errors: List[PartitionErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[PartitionErrorTypeDef](./type_defs.md#partitionerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdeleteconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionErrorTypeDef](./type_defs.md#partitionerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDeleteConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchDeleteConnectionRequestRequestTypeDef
+
+def get_value() -> BatchDeleteConnectionRequestRequestTypeDef:
+    return {
+        "ConnectionNameList": ...,
+    }
 ```
 
-Required fields:
-
-- `ConnectionNameList`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="batchdeleteconnectionresponsetypedef"></a>
+```python title="Definition"
+class BatchDeleteConnectionRequestRequestTypeDef(TypedDict):
+    ConnectionNameList: Sequence[str],
+    CatalogId: NotRequired[str],
+```
 
 ## BatchDeleteConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchDeleteConnectionResponseTypeDef
+
+def get_value() -> BatchDeleteConnectionResponseTypeDef:
+    return {
+        "Succeeded": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteConnectionResponseTypeDef(TypedDict):
+    Succeeded: List[str],
+    Errors: Dict[str, ErrorDetailTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Succeeded`: `List`\[`str`\]
-- `Errors`: `Dict`\[`str`,
-  [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdeletepartitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDeletePartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchDeletePartitionRequestRequestTypeDef
+
+def get_value() -> BatchDeletePartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionsToDelete": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeletePartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionsToDelete: Sequence[PartitionValueListTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionsToDelete`:
-  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="batchdeletepartitionresponsetypedef"></a>
-
+1. See [:material-code-braces: PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef) 
 ## BatchDeletePartitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchDeletePartitionResponseTypeDef
+
+def get_value() -> BatchDeletePartitionResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeletePartitionResponseTypeDef(TypedDict):
+    Errors: List[PartitionErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[PartitionErrorTypeDef](./type_defs.md#partitionerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdeletetablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionErrorTypeDef](./type_defs.md#partitionerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDeleteTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchDeleteTableRequestRequestTypeDef
+
+def get_value() -> BatchDeleteTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TablesToDelete": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TablesToDelete`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `TransactionId`: `str`
-
-<a id="batchdeletetableresponsetypedef"></a>
+```python title="Definition"
+class BatchDeleteTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TablesToDelete: Sequence[str],
+    CatalogId: NotRequired[str],
+    TransactionId: NotRequired[str],
+```
 
 ## BatchDeleteTableResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchDeleteTableResponseTypeDef
+
+def get_value() -> BatchDeleteTableResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteTableResponseTypeDef(TypedDict):
+    Errors: List[TableErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`: `List`\[[TableErrorTypeDef](./type_defs.md#tableerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdeletetableversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableErrorTypeDef](./type_defs.md#tableerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDeleteTableVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchDeleteTableVersionRequestRequestTypeDef
+
+def get_value() -> BatchDeleteTableVersionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "VersionIds": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `VersionIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="batchdeletetableversionresponsetypedef"></a>
+```python title="Definition"
+class BatchDeleteTableVersionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    VersionIds: Sequence[str],
+    CatalogId: NotRequired[str],
+```
 
 ## BatchDeleteTableVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchDeleteTableVersionResponseTypeDef
+
+def get_value() -> BatchDeleteTableVersionResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteTableVersionResponseTypeDef(TypedDict):
+    Errors: List[TableVersionErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[TableVersionErrorTypeDef](./type_defs.md#tableversionerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetblueprintsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableVersionErrorTypeDef](./type_defs.md#tableversionerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetBlueprintsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetBlueprintsRequestRequestTypeDef
+
+def get_value() -> BatchGetBlueprintsRequestRequestTypeDef:
+    return {
+        "Names": ...,
+    }
 ```
 
-Required fields:
-
-- `Names`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `IncludeBlueprint`: `bool`
-- `IncludeParameterSpec`: `bool`
-
-<a id="batchgetblueprintsresponsetypedef"></a>
+```python title="Definition"
+class BatchGetBlueprintsRequestRequestTypeDef(TypedDict):
+    Names: Sequence[str],
+    IncludeBlueprint: NotRequired[bool],
+    IncludeParameterSpec: NotRequired[bool],
+```
 
 ## BatchGetBlueprintsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetBlueprintsResponseTypeDef
+
+def get_value() -> BatchGetBlueprintsResponseTypeDef:
+    return {
+        "Blueprints": ...,
+        "MissingBlueprints": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetBlueprintsResponseTypeDef(TypedDict):
+    Blueprints: List[BlueprintTypeDef],  # (1)
+    MissingBlueprints: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Blueprints`: `List`\[[BlueprintTypeDef](./type_defs.md#blueprinttypedef)\]
-- `MissingBlueprints`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetcrawlersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BlueprintTypeDef](./type_defs.md#blueprinttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetCrawlersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetCrawlersRequestRequestTypeDef
+
+def get_value() -> BatchGetCrawlersRequestRequestTypeDef:
+    return {
+        "CrawlerNames": ...,
+    }
 ```
 
-Required fields:
-
-- `CrawlerNames`: `Sequence`\[`str`\]
-
-<a id="batchgetcrawlersresponsetypedef"></a>
+```python title="Definition"
+class BatchGetCrawlersRequestRequestTypeDef(TypedDict):
+    CrawlerNames: Sequence[str],
+```
 
 ## BatchGetCrawlersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetCrawlersResponseTypeDef
+
+def get_value() -> BatchGetCrawlersResponseTypeDef:
+    return {
+        "Crawlers": ...,
+        "CrawlersNotFound": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetCrawlersResponseTypeDef(TypedDict):
+    Crawlers: List[CrawlerTypeDef],  # (1)
+    CrawlersNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Crawlers`: `List`\[[CrawlerTypeDef](./type_defs.md#crawlertypedef)\]
-- `CrawlersNotFound`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetdevendpointsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CrawlerTypeDef](./type_defs.md#crawlertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetDevEndpointsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetDevEndpointsRequestRequestTypeDef
+
+def get_value() -> BatchGetDevEndpointsRequestRequestTypeDef:
+    return {
+        "DevEndpointNames": ...,
+    }
 ```
 
-Required fields:
-
-- `DevEndpointNames`: `Sequence`\[`str`\]
-
-<a id="batchgetdevendpointsresponsetypedef"></a>
+```python title="Definition"
+class BatchGetDevEndpointsRequestRequestTypeDef(TypedDict):
+    DevEndpointNames: Sequence[str],
+```
 
 ## BatchGetDevEndpointsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetDevEndpointsResponseTypeDef
+
+def get_value() -> BatchGetDevEndpointsResponseTypeDef:
+    return {
+        "DevEndpoints": ...,
+        "DevEndpointsNotFound": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetDevEndpointsResponseTypeDef(TypedDict):
+    DevEndpoints: List[DevEndpointTypeDef],  # (1)
+    DevEndpointsNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DevEndpoints`:
-  `List`\[[DevEndpointTypeDef](./type_defs.md#devendpointtypedef)\]
-- `DevEndpointsNotFound`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DevEndpointTypeDef](./type_defs.md#devendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetJobsRequestRequestTypeDef
+
+def get_value() -> BatchGetJobsRequestRequestTypeDef:
+    return {
+        "JobNames": ...,
+    }
 ```
 
-Required fields:
-
-- `JobNames`: `Sequence`\[`str`\]
-
-<a id="batchgetjobsresponsetypedef"></a>
+```python title="Definition"
+class BatchGetJobsRequestRequestTypeDef(TypedDict):
+    JobNames: Sequence[str],
+```
 
 ## BatchGetJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetJobsResponseTypeDef
+
+def get_value() -> BatchGetJobsResponseTypeDef:
+    return {
+        "Jobs": ...,
+        "JobsNotFound": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetJobsResponseTypeDef(TypedDict):
+    Jobs: List[JobTypeDef],  # (1)
+    JobsNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
-- `JobsNotFound`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetpartitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetPartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetPartitionRequestRequestTypeDef
+
+def get_value() -> BatchGetPartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionsToGet": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetPartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionsToGet: Sequence[PartitionValueListTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionsToGet`:
-  `Sequence`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="batchgetpartitionresponsetypedef"></a>
-
+1. See [:material-code-braces: PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef) 
 ## BatchGetPartitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetPartitionResponseTypeDef
+
+def get_value() -> BatchGetPartitionResponseTypeDef:
+    return {
+        "Partitions": ...,
+        "UnprocessedKeys": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetPartitionResponseTypeDef(TypedDict):
+    Partitions: List[PartitionTypeDef],  # (1)
+    UnprocessedKeys: List[PartitionValueListTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Partitions`: `List`\[[PartitionTypeDef](./type_defs.md#partitiontypedef)\]
-- `UnprocessedKeys`:
-  `List`\[[PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgettriggersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionTypeDef](./type_defs.md#partitiontypedef) 
+2. See [:material-code-braces: PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetTriggersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetTriggersRequestRequestTypeDef
+
+def get_value() -> BatchGetTriggersRequestRequestTypeDef:
+    return {
+        "TriggerNames": ...,
+    }
 ```
 
-Required fields:
-
-- `TriggerNames`: `Sequence`\[`str`\]
-
-<a id="batchgettriggersresponsetypedef"></a>
+```python title="Definition"
+class BatchGetTriggersRequestRequestTypeDef(TypedDict):
+    TriggerNames: Sequence[str],
+```
 
 ## BatchGetTriggersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetTriggersResponseTypeDef
+
+def get_value() -> BatchGetTriggersResponseTypeDef:
+    return {
+        "Triggers": ...,
+        "TriggersNotFound": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetTriggersResponseTypeDef(TypedDict):
+    Triggers: List[TriggerTypeDef],  # (1)
+    TriggersNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Triggers`: `List`\[[TriggerTypeDef](./type_defs.md#triggertypedef)\]
-- `TriggersNotFound`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetworkflowsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TriggerTypeDef](./type_defs.md#triggertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetWorkflowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetWorkflowsRequestRequestTypeDef
+
+def get_value() -> BatchGetWorkflowsRequestRequestTypeDef:
+    return {
+        "Names": ...,
+    }
 ```
 
-Required fields:
-
-- `Names`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `IncludeGraph`: `bool`
-
-<a id="batchgetworkflowsresponsetypedef"></a>
+```python title="Definition"
+class BatchGetWorkflowsRequestRequestTypeDef(TypedDict):
+    Names: Sequence[str],
+    IncludeGraph: NotRequired[bool],
+```
 
 ## BatchGetWorkflowsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchGetWorkflowsResponseTypeDef
+
+def get_value() -> BatchGetWorkflowsResponseTypeDef:
+    return {
+        "Workflows": ...,
+        "MissingWorkflows": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetWorkflowsResponseTypeDef(TypedDict):
+    Workflows: List[WorkflowTypeDef],  # (1)
+    MissingWorkflows: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Workflows`: `List`\[[WorkflowTypeDef](./type_defs.md#workflowtypedef)\]
-- `MissingWorkflows`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchstopjobrunerrortypedef"></a>
-
+1. See [:material-code-braces: WorkflowTypeDef](./type_defs.md#workflowtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchStopJobRunErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchStopJobRunErrorTypeDef
+
+def get_value() -> BatchStopJobRunErrorTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchStopJobRunErrorTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    JobRunId: NotRequired[str],
+    ErrorDetail: NotRequired[ErrorDetailTypeDef],  # (1)
+```
 
-- `JobName`: `str`
-- `JobRunId`: `str`
-- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
-
-<a id="batchstopjobrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## BatchStopJobRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchStopJobRunRequestRequestTypeDef
+
+def get_value() -> BatchStopJobRunRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+        "JobRunIds": ...,
+    }
 ```
 
-Required fields:
-
-- `JobName`: `str`
-- `JobRunIds`: `Sequence`\[`str`\]
-
-<a id="batchstopjobrunresponsetypedef"></a>
+```python title="Definition"
+class BatchStopJobRunRequestRequestTypeDef(TypedDict):
+    JobName: str,
+    JobRunIds: Sequence[str],
+```
 
 ## BatchStopJobRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchStopJobRunResponseTypeDef
+
+def get_value() -> BatchStopJobRunResponseTypeDef:
+    return {
+        "SuccessfulSubmissions": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchStopJobRunResponseTypeDef(TypedDict):
+    SuccessfulSubmissions: List[BatchStopJobRunSuccessfulSubmissionTypeDef],  # (1)
+    Errors: List[BatchStopJobRunErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `SuccessfulSubmissions`:
-  `List`\[[BatchStopJobRunSuccessfulSubmissionTypeDef](./type_defs.md#batchstopjobrunsuccessfulsubmissiontypedef)\]
-- `Errors`:
-  `List`\[[BatchStopJobRunErrorTypeDef](./type_defs.md#batchstopjobrunerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchstopjobrunsuccessfulsubmissiontypedef"></a>
-
+1. See [:material-code-braces: BatchStopJobRunSuccessfulSubmissionTypeDef](./type_defs.md#batchstopjobrunsuccessfulsubmissiontypedef) 
+2. See [:material-code-braces: BatchStopJobRunErrorTypeDef](./type_defs.md#batchstopjobrunerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchStopJobRunSuccessfulSubmissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchStopJobRunSuccessfulSubmissionTypeDef
+
+def get_value() -> BatchStopJobRunSuccessfulSubmissionTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Optional fields:
-
-- `JobName`: `str`
-- `JobRunId`: `str`
-
-<a id="batchupdatepartitionfailureentrytypedef"></a>
+```python title="Definition"
+class BatchStopJobRunSuccessfulSubmissionTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    JobRunId: NotRequired[str],
+```
 
 ## BatchUpdatePartitionFailureEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchUpdatePartitionFailureEntryTypeDef
+
+def get_value() -> BatchUpdatePartitionFailureEntryTypeDef:
+    return {
+        "PartitionValueList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchUpdatePartitionFailureEntryTypeDef(TypedDict):
+    PartitionValueList: NotRequired[List[str]],
+    ErrorDetail: NotRequired[ErrorDetailTypeDef],  # (1)
+```
 
-- `PartitionValueList`: `List`\[`str`\]
-- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
-
-<a id="batchupdatepartitionrequestentrytypedef"></a>
-
+1. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## BatchUpdatePartitionRequestEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchUpdatePartitionRequestEntryTypeDef
+
+def get_value() -> BatchUpdatePartitionRequestEntryTypeDef:
+    return {
+        "PartitionValueList": ...,
+        "PartitionInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdatePartitionRequestEntryTypeDef(TypedDict):
+    PartitionValueList: Sequence[str],
+    PartitionInput: PartitionInputTypeDef,  # (1)
+```
 
-- `PartitionValueList`: `Sequence`\[`str`\]
-- `PartitionInput`:
-  [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
-
-<a id="batchupdatepartitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) 
 ## BatchUpdatePartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchUpdatePartitionRequestRequestTypeDef
+
+def get_value() -> BatchUpdatePartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "Entries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdatePartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    Entries: Sequence[BatchUpdatePartitionRequestEntryTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `Entries`:
-  `Sequence`\[[BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="batchupdatepartitionresponsetypedef"></a>
-
+1. See [:material-code-braces: BatchUpdatePartitionRequestEntryTypeDef](./type_defs.md#batchupdatepartitionrequestentrytypedef) 
 ## BatchUpdatePartitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BatchUpdatePartitionResponseTypeDef
+
+def get_value() -> BatchUpdatePartitionResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdatePartitionResponseTypeDef(TypedDict):
+    Errors: List[BatchUpdatePartitionFailureEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[BatchUpdatePartitionFailureEntryTypeDef](./type_defs.md#batchupdatepartitionfailureentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="binarycolumnstatisticsdatatypedef"></a>
-
+1. See [:material-code-braces: BatchUpdatePartitionFailureEntryTypeDef](./type_defs.md#batchupdatepartitionfailureentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BinaryColumnStatisticsDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BinaryColumnStatisticsDataTypeDef
+
+def get_value() -> BinaryColumnStatisticsDataTypeDef:
+    return {
+        "MaximumLength": ...,
+        "AverageLength": ...,
+        "NumberOfNulls": ...,
+    }
 ```
 
-Required fields:
-
-- `MaximumLength`: `int`
-- `AverageLength`: `float`
-- `NumberOfNulls`: `int`
-
-<a id="blueprintdetailstypedef"></a>
+```python title="Definition"
+class BinaryColumnStatisticsDataTypeDef(TypedDict):
+    MaximumLength: int,
+    AverageLength: float,
+    NumberOfNulls: int,
+```
 
 ## BlueprintDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BlueprintDetailsTypeDef
+
+def get_value() -> BlueprintDetailsTypeDef:
+    return {
+        "BlueprintName": ...,
+    }
 ```
 
-Optional fields:
-
-- `BlueprintName`: `str`
-- `RunId`: `str`
-
-<a id="blueprintruntypedef"></a>
+```python title="Definition"
+class BlueprintDetailsTypeDef(TypedDict):
+    BlueprintName: NotRequired[str],
+    RunId: NotRequired[str],
+```
 
 ## BlueprintRunTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BlueprintRunTypeDef
+
+def get_value() -> BlueprintRunTypeDef:
+    return {
+        "BlueprintName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BlueprintRunTypeDef(TypedDict):
+    BlueprintName: NotRequired[str],
+    RunId: NotRequired[str],
+    WorkflowName: NotRequired[str],
+    State: NotRequired[BlueprintRunStateType],  # (1)
+    StartedOn: NotRequired[datetime],
+    CompletedOn: NotRequired[datetime],
+    ErrorMessage: NotRequired[str],
+    RollbackErrorMessage: NotRequired[str],
+    Parameters: NotRequired[str],
+    RoleArn: NotRequired[str],
+```
 
-- `BlueprintName`: `str`
-- `RunId`: `str`
-- `WorkflowName`: `str`
-- `State`: [BlueprintRunStateType](./literals.md#blueprintrunstatetype)
-- `StartedOn`: `datetime`
-- `CompletedOn`: `datetime`
-- `ErrorMessage`: `str`
-- `RollbackErrorMessage`: `str`
-- `Parameters`: `str`
-- `RoleArn`: `str`
-
-<a id="blueprinttypedef"></a>
-
+1. See [:material-code-brackets: BlueprintRunStateType](./literals.md#blueprintrunstatetype) 
 ## BlueprintTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BlueprintTypeDef
+
+def get_value() -> BlueprintTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BlueprintTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CreatedOn: NotRequired[datetime],
+    LastModifiedOn: NotRequired[datetime],
+    ParameterSpec: NotRequired[str],
+    BlueprintLocation: NotRequired[str],
+    BlueprintServiceLocation: NotRequired[str],
+    Status: NotRequired[BlueprintStatusType],  # (1)
+    ErrorMessage: NotRequired[str],
+    LastActiveDefinition: NotRequired[LastActiveDefinitionTypeDef],  # (2)
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `CreatedOn`: `datetime`
-- `LastModifiedOn`: `datetime`
-- `ParameterSpec`: `str`
-- `BlueprintLocation`: `str`
-- `BlueprintServiceLocation`: `str`
-- `Status`: [BlueprintStatusType](./literals.md#blueprintstatustype)
-- `ErrorMessage`: `str`
-- `LastActiveDefinition`:
-  [LastActiveDefinitionTypeDef](./type_defs.md#lastactivedefinitiontypedef)
-
-<a id="booleancolumnstatisticsdatatypedef"></a>
-
+1. See [:material-code-brackets: BlueprintStatusType](./literals.md#blueprintstatustype) 
+2. See [:material-code-braces: LastActiveDefinitionTypeDef](./type_defs.md#lastactivedefinitiontypedef) 
 ## BooleanColumnStatisticsDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import BooleanColumnStatisticsDataTypeDef
+
+def get_value() -> BooleanColumnStatisticsDataTypeDef:
+    return {
+        "NumberOfTrues": ...,
+        "NumberOfFalses": ...,
+        "NumberOfNulls": ...,
+    }
 ```
 
-Required fields:
-
-- `NumberOfTrues`: `int`
-- `NumberOfFalses`: `int`
-- `NumberOfNulls`: `int`
-
-<a id="cancelmltaskrunrequestrequesttypedef"></a>
+```python title="Definition"
+class BooleanColumnStatisticsDataTypeDef(TypedDict):
+    NumberOfTrues: int,
+    NumberOfFalses: int,
+    NumberOfNulls: int,
+```
 
 ## CancelMLTaskRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CancelMLTaskRunRequestRequestTypeDef
+
+def get_value() -> CancelMLTaskRunRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+        "TaskRunId": ...,
+    }
 ```
 
-Required fields:
-
-- `TransformId`: `str`
-- `TaskRunId`: `str`
-
-<a id="cancelmltaskrunresponsetypedef"></a>
+```python title="Definition"
+class CancelMLTaskRunRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+    TaskRunId: str,
+```
 
 ## CancelMLTaskRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CancelMLTaskRunResponseTypeDef
+
+def get_value() -> CancelMLTaskRunResponseTypeDef:
+    return {
+        "TransformId": ...,
+        "TaskRunId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelMLTaskRunResponseTypeDef(TypedDict):
+    TransformId: str,
+    TaskRunId: str,
+    Status: TaskStatusTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TransformId`: `str`
-- `TaskRunId`: `str`
-- `Status`: [TaskStatusTypeType](./literals.md#taskstatustypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cancelstatementrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TaskStatusTypeType](./literals.md#taskstatustypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelStatementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CancelStatementRequestRequestTypeDef
+
+def get_value() -> CancelStatementRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `SessionId`: `str`
-- `Id`: `int`
-
-Optional fields:
-
-- `RequestOrigin`: `str`
-
-<a id="catalogentrytypedef"></a>
+```python title="Definition"
+class CancelStatementRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+    Id: int,
+    RequestOrigin: NotRequired[str],
+```
 
 ## CatalogEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CatalogEntryTypeDef
+
+def get_value() -> CatalogEntryTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-<a id="catalogimportstatustypedef"></a>
+```python title="Definition"
+class CatalogEntryTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+```
 
 ## CatalogImportStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CatalogImportStatusTypeDef
+
+def get_value() -> CatalogImportStatusTypeDef:
+    return {
+        "ImportCompleted": ...,
+    }
 ```
 
-Optional fields:
-
-- `ImportCompleted`: `bool`
-- `ImportTime`: `datetime`
-- `ImportedBy`: `str`
-
-<a id="catalogtargettypedef"></a>
+```python title="Definition"
+class CatalogImportStatusTypeDef(TypedDict):
+    ImportCompleted: NotRequired[bool],
+    ImportTime: NotRequired[datetime],
+    ImportedBy: NotRequired[str],
+```
 
 ## CatalogTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CatalogTargetTypeDef
+
+def get_value() -> CatalogTargetTypeDef:
+    return {
+        "DatabaseName": ...,
+        "Tables": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `Tables`: `List`\[`str`\]
-
-Optional fields:
-
-- `ConnectionName`: `str`
-
-<a id="checkschemaversionvalidityinputrequesttypedef"></a>
+```python title="Definition"
+class CatalogTargetTypeDef(TypedDict):
+    DatabaseName: str,
+    Tables: List[str],
+    ConnectionName: NotRequired[str],
+```
 
 ## CheckSchemaVersionValidityInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CheckSchemaVersionValidityInputRequestTypeDef
+
+def get_value() -> CheckSchemaVersionValidityInputRequestTypeDef:
+    return {
+        "DataFormat": ...,
+        "SchemaDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CheckSchemaVersionValidityInputRequestTypeDef(TypedDict):
+    DataFormat: DataFormatType,  # (1)
+    SchemaDefinition: str,
+```
 
-- `DataFormat`: [DataFormatType](./literals.md#dataformattype)
-- `SchemaDefinition`: `str`
-
-<a id="checkschemaversionvalidityresponsetypedef"></a>
-
+1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
 ## CheckSchemaVersionValidityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CheckSchemaVersionValidityResponseTypeDef
+
+def get_value() -> CheckSchemaVersionValidityResponseTypeDef:
+    return {
+        "Valid": ...,
+        "Error": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CheckSchemaVersionValidityResponseTypeDef(TypedDict):
+    Valid: bool,
+    Error: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Valid`: `bool`
-- `Error`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="classifiertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ClassifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ClassifierTypeDef
+
+def get_value() -> ClassifierTypeDef:
+    return {
+        "GrokClassifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClassifierTypeDef(TypedDict):
+    GrokClassifier: NotRequired[GrokClassifierTypeDef],  # (1)
+    XMLClassifier: NotRequired[XMLClassifierTypeDef],  # (2)
+    JsonClassifier: NotRequired[JsonClassifierTypeDef],  # (3)
+    CsvClassifier: NotRequired[CsvClassifierTypeDef],  # (4)
+```
 
-- `GrokClassifier`:
-  [GrokClassifierTypeDef](./type_defs.md#grokclassifiertypedef)
-- `XMLClassifier`: [XMLClassifierTypeDef](./type_defs.md#xmlclassifiertypedef)
-- `JsonClassifier`:
-  [JsonClassifierTypeDef](./type_defs.md#jsonclassifiertypedef)
-- `CsvClassifier`: [CsvClassifierTypeDef](./type_defs.md#csvclassifiertypedef)
-
-<a id="cloudwatchencryptiontypedef"></a>
-
+1. See [:material-code-braces: GrokClassifierTypeDef](./type_defs.md#grokclassifiertypedef) 
+2. See [:material-code-braces: XMLClassifierTypeDef](./type_defs.md#xmlclassifiertypedef) 
+3. See [:material-code-braces: JsonClassifierTypeDef](./type_defs.md#jsonclassifiertypedef) 
+4. See [:material-code-braces: CsvClassifierTypeDef](./type_defs.md#csvclassifiertypedef) 
 ## CloudWatchEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CloudWatchEncryptionTypeDef
+
+def get_value() -> CloudWatchEncryptionTypeDef:
+    return {
+        "CloudWatchEncryptionMode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CloudWatchEncryptionTypeDef(TypedDict):
+    CloudWatchEncryptionMode: NotRequired[CloudWatchEncryptionModeType],  # (1)
+    KmsKeyArn: NotRequired[str],
+```
 
-- `CloudWatchEncryptionMode`:
-  [CloudWatchEncryptionModeType](./literals.md#cloudwatchencryptionmodetype)
-- `KmsKeyArn`: `str`
-
-<a id="codegenedgetypedef"></a>
-
+1. See [:material-code-brackets: CloudWatchEncryptionModeType](./literals.md#cloudwatchencryptionmodetype) 
 ## CodeGenEdgeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CodeGenEdgeTypeDef
+
+def get_value() -> CodeGenEdgeTypeDef:
+    return {
+        "Source": ...,
+        "Target": ...,
+    }
 ```
 
-Required fields:
-
-- `Source`: `str`
-- `Target`: `str`
-
-Optional fields:
-
-- `TargetParameter`: `str`
-
-<a id="codegennodeargtypedef"></a>
+```python title="Definition"
+class CodeGenEdgeTypeDef(TypedDict):
+    Source: str,
+    Target: str,
+    TargetParameter: NotRequired[str],
+```
 
 ## CodeGenNodeArgTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CodeGenNodeArgTypeDef
+
+def get_value() -> CodeGenNodeArgTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-Optional fields:
-
-- `Param`: `bool`
-
-<a id="codegennodetypedef"></a>
+```python title="Definition"
+class CodeGenNodeArgTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+    Param: NotRequired[bool],
+```
 
 ## CodeGenNodeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CodeGenNodeTypeDef
+
+def get_value() -> CodeGenNodeTypeDef:
+    return {
+        "Id": ...,
+        "NodeType": ...,
+        "Args": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CodeGenNodeTypeDef(TypedDict):
+    Id: str,
+    NodeType: str,
+    Args: Sequence[CodeGenNodeArgTypeDef],  # (1)
+    LineNumber: NotRequired[int],
+```
 
-- `Id`: `str`
-- `NodeType`: `str`
-- `Args`:
-  `Sequence`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
-
-Optional fields:
-
-- `LineNumber`: `int`
-
-<a id="columnerrortypedef"></a>
-
+1. See [:material-code-braces: CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef) 
 ## ColumnErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ColumnErrorTypeDef
+
+def get_value() -> ColumnErrorTypeDef:
+    return {
+        "ColumnName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ColumnErrorTypeDef(TypedDict):
+    ColumnName: NotRequired[str],
+    Error: NotRequired[ErrorDetailTypeDef],  # (1)
+```
 
-- `ColumnName`: `str`
-- `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
-
-<a id="columnimportancetypedef"></a>
-
+1. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## ColumnImportanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ColumnImportanceTypeDef
+
+def get_value() -> ColumnImportanceTypeDef:
+    return {
+        "ColumnName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ColumnName`: `str`
-- `Importance`: `float`
-
-<a id="columnrowfiltertypedef"></a>
+```python title="Definition"
+class ColumnImportanceTypeDef(TypedDict):
+    ColumnName: NotRequired[str],
+    Importance: NotRequired[float],
+```
 
 ## ColumnRowFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ColumnRowFilterTypeDef
+
+def get_value() -> ColumnRowFilterTypeDef:
+    return {
+        "ColumnName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ColumnName`: `str`
-- `RowFilterExpression`: `str`
-
-<a id="columnstatisticsdatatypedef"></a>
+```python title="Definition"
+class ColumnRowFilterTypeDef(TypedDict):
+    ColumnName: NotRequired[str],
+    RowFilterExpression: NotRequired[str],
+```
 
 ## ColumnStatisticsDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ColumnStatisticsDataTypeDef
+
+def get_value() -> ColumnStatisticsDataTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ColumnStatisticsDataTypeDef(TypedDict):
+    Type: ColumnStatisticsTypeType,  # (1)
+    BooleanColumnStatisticsData: NotRequired[BooleanColumnStatisticsDataTypeDef],  # (2)
+    DateColumnStatisticsData: NotRequired[DateColumnStatisticsDataTypeDef],  # (3)
+    DecimalColumnStatisticsData: NotRequired[DecimalColumnStatisticsDataTypeDef],  # (4)
+    DoubleColumnStatisticsData: NotRequired[DoubleColumnStatisticsDataTypeDef],  # (5)
+    LongColumnStatisticsData: NotRequired[LongColumnStatisticsDataTypeDef],  # (6)
+    StringColumnStatisticsData: NotRequired[StringColumnStatisticsDataTypeDef],  # (7)
+    BinaryColumnStatisticsData: NotRequired[BinaryColumnStatisticsDataTypeDef],  # (8)
+```
 
-- `Type`: [ColumnStatisticsTypeType](./literals.md#columnstatisticstypetype)
-
-Optional fields:
-
-- `BooleanColumnStatisticsData`:
-  [BooleanColumnStatisticsDataTypeDef](./type_defs.md#booleancolumnstatisticsdatatypedef)
-- `DateColumnStatisticsData`:
-  [DateColumnStatisticsDataTypeDef](./type_defs.md#datecolumnstatisticsdatatypedef)
-- `DecimalColumnStatisticsData`:
-  [DecimalColumnStatisticsDataTypeDef](./type_defs.md#decimalcolumnstatisticsdatatypedef)
-- `DoubleColumnStatisticsData`:
-  [DoubleColumnStatisticsDataTypeDef](./type_defs.md#doublecolumnstatisticsdatatypedef)
-- `LongColumnStatisticsData`:
-  [LongColumnStatisticsDataTypeDef](./type_defs.md#longcolumnstatisticsdatatypedef)
-- `StringColumnStatisticsData`:
-  [StringColumnStatisticsDataTypeDef](./type_defs.md#stringcolumnstatisticsdatatypedef)
-- `BinaryColumnStatisticsData`:
-  [BinaryColumnStatisticsDataTypeDef](./type_defs.md#binarycolumnstatisticsdatatypedef)
-
-<a id="columnstatisticserrortypedef"></a>
-
+1. See [:material-code-brackets: ColumnStatisticsTypeType](./literals.md#columnstatisticstypetype) 
+2. See [:material-code-braces: BooleanColumnStatisticsDataTypeDef](./type_defs.md#booleancolumnstatisticsdatatypedef) 
+3. See [:material-code-braces: DateColumnStatisticsDataTypeDef](./type_defs.md#datecolumnstatisticsdatatypedef) 
+4. See [:material-code-braces: DecimalColumnStatisticsDataTypeDef](./type_defs.md#decimalcolumnstatisticsdatatypedef) 
+5. See [:material-code-braces: DoubleColumnStatisticsDataTypeDef](./type_defs.md#doublecolumnstatisticsdatatypedef) 
+6. See [:material-code-braces: LongColumnStatisticsDataTypeDef](./type_defs.md#longcolumnstatisticsdatatypedef) 
+7. See [:material-code-braces: StringColumnStatisticsDataTypeDef](./type_defs.md#stringcolumnstatisticsdatatypedef) 
+8. See [:material-code-braces: BinaryColumnStatisticsDataTypeDef](./type_defs.md#binarycolumnstatisticsdatatypedef) 
 ## ColumnStatisticsErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ColumnStatisticsErrorTypeDef
+
+def get_value() -> ColumnStatisticsErrorTypeDef:
+    return {
+        "ColumnStatistics": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ColumnStatisticsErrorTypeDef(TypedDict):
+    ColumnStatistics: NotRequired[ColumnStatisticsTypeDef],  # (1)
+    Error: NotRequired[ErrorDetailTypeDef],  # (2)
+```
 
-- `ColumnStatistics`:
-  [ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)
-- `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
-
-<a id="columnstatisticstypedef"></a>
-
+1. See [:material-code-braces: ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef) 
+2. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## ColumnStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ColumnStatisticsTypeDef
+
+def get_value() -> ColumnStatisticsTypeDef:
+    return {
+        "ColumnName": ...,
+        "ColumnType": ...,
+        "AnalyzedTime": ...,
+        "StatisticsData": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ColumnStatisticsTypeDef(TypedDict):
+    ColumnName: str,
+    ColumnType: str,
+    AnalyzedTime: datetime,
+    StatisticsData: ColumnStatisticsDataTypeDef,  # (1)
+```
 
-- `ColumnName`: `str`
-- `ColumnType`: `str`
-- `AnalyzedTime`: `datetime`
-- `StatisticsData`:
-  [ColumnStatisticsDataTypeDef](./type_defs.md#columnstatisticsdatatypedef)
-
-<a id="columntypedef"></a>
-
+1. See [:material-code-braces: ColumnStatisticsDataTypeDef](./type_defs.md#columnstatisticsdatatypedef) 
 ## ColumnTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ColumnTypeDef
+
+def get_value() -> ColumnTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Type`: `str`
-- `Comment`: `str`
-- `Parameters`: `Mapping`\[`str`, `str`\]
-
-<a id="conditiontypedef"></a>
+```python title="Definition"
+class ColumnTypeDef(TypedDict):
+    Name: str,
+    Type: NotRequired[str],
+    Comment: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, str]],
+```
 
 ## ConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ConditionTypeDef
+
+def get_value() -> ConditionTypeDef:
+    return {
+        "LogicalOperator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConditionTypeDef(TypedDict):
+    LogicalOperator: NotRequired[LogicalOperatorType],  # (1)
+    JobName: NotRequired[str],
+    State: NotRequired[JobRunStateType],  # (2)
+    CrawlerName: NotRequired[str],
+    CrawlState: NotRequired[CrawlStateType],  # (3)
+```
 
-- `LogicalOperator`: `Literal['EQUALS']` (see
-  [LogicalOperatorType](./literals.md#logicaloperatortype))
-- `JobName`: `str`
-- `State`: [JobRunStateType](./literals.md#jobrunstatetype)
-- `CrawlerName`: `str`
-- `CrawlState`: [CrawlStateType](./literals.md#crawlstatetype)
-
-<a id="confusionmatrixtypedef"></a>
-
+1. See [:material-code-brackets: LogicalOperatorType](./literals.md#logicaloperatortype) 
+2. See [:material-code-brackets: JobRunStateType](./literals.md#jobrunstatetype) 
+3. See [:material-code-brackets: CrawlStateType](./literals.md#crawlstatetype) 
 ## ConfusionMatrixTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ConfusionMatrixTypeDef
+
+def get_value() -> ConfusionMatrixTypeDef:
+    return {
+        "NumTruePositives": ...,
+    }
 ```
 
-Optional fields:
-
-- `NumTruePositives`: `int`
-- `NumFalsePositives`: `int`
-- `NumTrueNegatives`: `int`
-- `NumFalseNegatives`: `int`
-
-<a id="connectioninputtypedef"></a>
+```python title="Definition"
+class ConfusionMatrixTypeDef(TypedDict):
+    NumTruePositives: NotRequired[int],
+    NumFalsePositives: NotRequired[int],
+    NumTrueNegatives: NotRequired[int],
+    NumFalseNegatives: NotRequired[int],
+```
 
 ## ConnectionInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ConnectionInputTypeDef
+
+def get_value() -> ConnectionInputTypeDef:
+    return {
+        "Name": ...,
+        "ConnectionType": ...,
+        "ConnectionProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConnectionInputTypeDef(TypedDict):
+    Name: str,
+    ConnectionType: ConnectionTypeType,  # (1)
+    ConnectionProperties: Mapping[ConnectionPropertyKeyType, str],  # (2)
+    Description: NotRequired[str],
+    MatchCriteria: NotRequired[Sequence[str]],
+    PhysicalConnectionRequirements: NotRequired[PhysicalConnectionRequirementsTypeDef],  # (3)
+```
 
-- `Name`: `str`
-- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
-- `ConnectionProperties`:
-  `Mapping`\[[ConnectionPropertyKeyType](./literals.md#connectionpropertykeytype),
-  `str`\]
-
-Optional fields:
-
-- `Description`: `str`
-- `MatchCriteria`: `Sequence`\[`str`\]
-- `PhysicalConnectionRequirements`:
-  [PhysicalConnectionRequirementsTypeDef](./type_defs.md#physicalconnectionrequirementstypedef)
-
-<a id="connectionpasswordencryptiontypedef"></a>
-
+1. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+2. See [:material-code-brackets: ConnectionPropertyKeyType](./literals.md#connectionpropertykeytype) 
+3. See [:material-code-braces: PhysicalConnectionRequirementsTypeDef](./type_defs.md#physicalconnectionrequirementstypedef) 
 ## ConnectionPasswordEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ConnectionPasswordEncryptionTypeDef
+
+def get_value() -> ConnectionPasswordEncryptionTypeDef:
+    return {
+        "ReturnConnectionPasswordEncrypted": ...,
+    }
 ```
 
-Required fields:
-
-- `ReturnConnectionPasswordEncrypted`: `bool`
-
-Optional fields:
-
-- `AwsKmsKeyId`: `str`
-
-<a id="connectiontypedef"></a>
+```python title="Definition"
+class ConnectionPasswordEncryptionTypeDef(TypedDict):
+    ReturnConnectionPasswordEncrypted: bool,
+    AwsKmsKeyId: NotRequired[str],
+```
 
 ## ConnectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ConnectionTypeDef
+
+def get_value() -> ConnectionTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    ConnectionType: NotRequired[ConnectionTypeType],  # (1)
+    MatchCriteria: NotRequired[List[str]],
+    ConnectionProperties: NotRequired[Dict[ConnectionPropertyKeyType, str]],  # (2)
+    PhysicalConnectionRequirements: NotRequired[PhysicalConnectionRequirementsTypeDef],  # (3)
+    CreationTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    LastUpdatedBy: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
-- `MatchCriteria`: `List`\[`str`\]
-- `ConnectionProperties`:
-  `Dict`\[[ConnectionPropertyKeyType](./literals.md#connectionpropertykeytype),
-  `str`\]
-- `PhysicalConnectionRequirements`:
-  [PhysicalConnectionRequirementsTypeDef](./type_defs.md#physicalconnectionrequirementstypedef)
-- `CreationTime`: `datetime`
-- `LastUpdatedTime`: `datetime`
-- `LastUpdatedBy`: `str`
-
-<a id="connectionslisttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+2. See [:material-code-brackets: ConnectionPropertyKeyType](./literals.md#connectionpropertykeytype) 
+3. See [:material-code-braces: PhysicalConnectionRequirementsTypeDef](./type_defs.md#physicalconnectionrequirementstypedef) 
 ## ConnectionsListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ConnectionsListTypeDef
+
+def get_value() -> ConnectionsListTypeDef:
+    return {
+        "Connections": ...,
+    }
 ```
 
-Optional fields:
-
-- `Connections`: `List`\[`str`\]
-
-<a id="crawltypedef"></a>
+```python title="Definition"
+class ConnectionsListTypeDef(TypedDict):
+    Connections: NotRequired[List[str]],
+```
 
 ## CrawlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CrawlTypeDef
+
+def get_value() -> CrawlTypeDef:
+    return {
+        "State": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CrawlTypeDef(TypedDict):
+    State: NotRequired[CrawlStateType],  # (1)
+    StartedOn: NotRequired[datetime],
+    CompletedOn: NotRequired[datetime],
+    ErrorMessage: NotRequired[str],
+    LogGroup: NotRequired[str],
+    LogStream: NotRequired[str],
+```
 
-- `State`: [CrawlStateType](./literals.md#crawlstatetype)
-- `StartedOn`: `datetime`
-- `CompletedOn`: `datetime`
-- `ErrorMessage`: `str`
-- `LogGroup`: `str`
-- `LogStream`: `str`
-
-<a id="crawlermetricstypedef"></a>
-
+1. See [:material-code-brackets: CrawlStateType](./literals.md#crawlstatetype) 
 ## CrawlerMetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CrawlerMetricsTypeDef
+
+def get_value() -> CrawlerMetricsTypeDef:
+    return {
+        "CrawlerName": ...,
+    }
 ```
 
-Optional fields:
-
-- `CrawlerName`: `str`
-- `TimeLeftSeconds`: `float`
-- `StillEstimating`: `bool`
-- `LastRuntimeSeconds`: `float`
-- `MedianRuntimeSeconds`: `float`
-- `TablesCreated`: `int`
-- `TablesUpdated`: `int`
-- `TablesDeleted`: `int`
-
-<a id="crawlernodedetailstypedef"></a>
+```python title="Definition"
+class CrawlerMetricsTypeDef(TypedDict):
+    CrawlerName: NotRequired[str],
+    TimeLeftSeconds: NotRequired[float],
+    StillEstimating: NotRequired[bool],
+    LastRuntimeSeconds: NotRequired[float],
+    MedianRuntimeSeconds: NotRequired[float],
+    TablesCreated: NotRequired[int],
+    TablesUpdated: NotRequired[int],
+    TablesDeleted: NotRequired[int],
+```
 
 ## CrawlerNodeDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CrawlerNodeDetailsTypeDef
+
+def get_value() -> CrawlerNodeDetailsTypeDef:
+    return {
+        "Crawls": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CrawlerNodeDetailsTypeDef(TypedDict):
+    Crawls: NotRequired[List[CrawlTypeDef]],  # (1)
+```
 
-- `Crawls`: `List`\[[CrawlTypeDef](./type_defs.md#crawltypedef)\]
-
-<a id="crawlertargetstypedef"></a>
-
+1. See [:material-code-braces: CrawlTypeDef](./type_defs.md#crawltypedef) 
 ## CrawlerTargetsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CrawlerTargetsTypeDef
+
+def get_value() -> CrawlerTargetsTypeDef:
+    return {
+        "S3Targets": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CrawlerTargetsTypeDef(TypedDict):
+    S3Targets: NotRequired[List[S3TargetTypeDef]],  # (1)
+    JdbcTargets: NotRequired[List[JdbcTargetTypeDef]],  # (2)
+    MongoDBTargets: NotRequired[List[MongoDBTargetTypeDef]],  # (3)
+    DynamoDBTargets: NotRequired[List[DynamoDBTargetTypeDef]],  # (4)
+    CatalogTargets: NotRequired[List[CatalogTargetTypeDef]],  # (5)
+    DeltaTargets: NotRequired[List[DeltaTargetTypeDef]],  # (6)
+```
 
-- `S3Targets`: `List`\[[S3TargetTypeDef](./type_defs.md#s3targettypedef)\]
-- `JdbcTargets`:
-  `List`\[[JdbcTargetTypeDef](./type_defs.md#jdbctargettypedef)\]
-- `MongoDBTargets`:
-  `List`\[[MongoDBTargetTypeDef](./type_defs.md#mongodbtargettypedef)\]
-- `DynamoDBTargets`:
-  `List`\[[DynamoDBTargetTypeDef](./type_defs.md#dynamodbtargettypedef)\]
-- `CatalogTargets`:
-  `List`\[[CatalogTargetTypeDef](./type_defs.md#catalogtargettypedef)\]
-- `DeltaTargets`:
-  `List`\[[DeltaTargetTypeDef](./type_defs.md#deltatargettypedef)\]
-
-<a id="crawlertypedef"></a>
-
+1. See [:material-code-braces: S3TargetTypeDef](./type_defs.md#s3targettypedef) 
+2. See [:material-code-braces: JdbcTargetTypeDef](./type_defs.md#jdbctargettypedef) 
+3. See [:material-code-braces: MongoDBTargetTypeDef](./type_defs.md#mongodbtargettypedef) 
+4. See [:material-code-braces: DynamoDBTargetTypeDef](./type_defs.md#dynamodbtargettypedef) 
+5. See [:material-code-braces: CatalogTargetTypeDef](./type_defs.md#catalogtargettypedef) 
+6. See [:material-code-braces: DeltaTargetTypeDef](./type_defs.md#deltatargettypedef) 
 ## CrawlerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CrawlerTypeDef
+
+def get_value() -> CrawlerTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CrawlerTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Role: NotRequired[str],
+    Targets: NotRequired[CrawlerTargetsTypeDef],  # (1)
+    DatabaseName: NotRequired[str],
+    Description: NotRequired[str],
+    Classifiers: NotRequired[List[str]],
+    RecrawlPolicy: NotRequired[RecrawlPolicyTypeDef],  # (2)
+    SchemaChangePolicy: NotRequired[SchemaChangePolicyTypeDef],  # (3)
+    LineageConfiguration: NotRequired[LineageConfigurationTypeDef],  # (4)
+    State: NotRequired[CrawlerStateType],  # (5)
+    TablePrefix: NotRequired[str],
+    Schedule: NotRequired[ScheduleTypeDef],  # (6)
+    CrawlElapsedTime: NotRequired[int],
+    CreationTime: NotRequired[datetime],
+    LastUpdated: NotRequired[datetime],
+    LastCrawl: NotRequired[LastCrawlInfoTypeDef],  # (7)
+    Version: NotRequired[int],
+    Configuration: NotRequired[str],
+    CrawlerSecurityConfiguration: NotRequired[str],
+    LakeFormationConfiguration: NotRequired[LakeFormationConfigurationTypeDef],  # (8)
+```
 
-- `Name`: `str`
-- `Role`: `str`
-- `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
-- `DatabaseName`: `str`
-- `Description`: `str`
-- `Classifiers`: `List`\[`str`\]
-- `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
-- `SchemaChangePolicy`:
-  [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
-- `LineageConfiguration`:
-  [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
-- `State`: [CrawlerStateType](./literals.md#crawlerstatetype)
-- `TablePrefix`: `str`
-- `Schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
-- `CrawlElapsedTime`: `int`
-- `CreationTime`: `datetime`
-- `LastUpdated`: `datetime`
-- `LastCrawl`: [LastCrawlInfoTypeDef](./type_defs.md#lastcrawlinfotypedef)
-- `Version`: `int`
-- `Configuration`: `str`
-- `CrawlerSecurityConfiguration`: `str`
-- `LakeFormationConfiguration`:
-  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
-
-<a id="createblueprintrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef) 
+2. See [:material-code-braces: RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef) 
+3. See [:material-code-braces: SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef) 
+4. See [:material-code-braces: LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef) 
+5. See [:material-code-brackets: CrawlerStateType](./literals.md#crawlerstatetype) 
+6. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
+7. See [:material-code-braces: LastCrawlInfoTypeDef](./type_defs.md#lastcrawlinfotypedef) 
+8. See [:material-code-braces: LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef) 
 ## CreateBlueprintRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateBlueprintRequestRequestTypeDef
+
+def get_value() -> CreateBlueprintRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "BlueprintLocation": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `BlueprintLocation`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createblueprintresponsetypedef"></a>
+```python title="Definition"
+class CreateBlueprintRequestRequestTypeDef(TypedDict):
+    Name: str,
+    BlueprintLocation: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateBlueprintResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateBlueprintResponseTypeDef
+
+def get_value() -> CreateBlueprintResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBlueprintResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclassifierrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClassifierRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateClassifierRequestRequestTypeDef
+
+def get_value() -> CreateClassifierRequestRequestTypeDef:
+    return {
+        "GrokClassifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateClassifierRequestRequestTypeDef(TypedDict):
+    GrokClassifier: NotRequired[CreateGrokClassifierRequestTypeDef],  # (1)
+    XMLClassifier: NotRequired[CreateXMLClassifierRequestTypeDef],  # (2)
+    JsonClassifier: NotRequired[CreateJsonClassifierRequestTypeDef],  # (3)
+    CsvClassifier: NotRequired[CreateCsvClassifierRequestTypeDef],  # (4)
+```
 
-- `GrokClassifier`:
-  [CreateGrokClassifierRequestTypeDef](./type_defs.md#creategrokclassifierrequesttypedef)
-- `XMLClassifier`:
-  [CreateXMLClassifierRequestTypeDef](./type_defs.md#createxmlclassifierrequesttypedef)
-- `JsonClassifier`:
-  [CreateJsonClassifierRequestTypeDef](./type_defs.md#createjsonclassifierrequesttypedef)
-- `CsvClassifier`:
-  [CreateCsvClassifierRequestTypeDef](./type_defs.md#createcsvclassifierrequesttypedef)
-
-<a id="createconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CreateGrokClassifierRequestTypeDef](./type_defs.md#creategrokclassifierrequesttypedef) 
+2. See [:material-code-braces: CreateXMLClassifierRequestTypeDef](./type_defs.md#createxmlclassifierrequesttypedef) 
+3. See [:material-code-braces: CreateJsonClassifierRequestTypeDef](./type_defs.md#createjsonclassifierrequesttypedef) 
+4. See [:material-code-braces: CreateCsvClassifierRequestTypeDef](./type_defs.md#createcsvclassifierrequesttypedef) 
 ## CreateConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateConnectionRequestRequestTypeDef
+
+def get_value() -> CreateConnectionRequestRequestTypeDef:
+    return {
+        "ConnectionInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionRequestRequestTypeDef(TypedDict):
+    ConnectionInput: ConnectionInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `ConnectionInput`:
-  [ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createcrawlerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) 
 ## CreateCrawlerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateCrawlerRequestRequestTypeDef
+
+def get_value() -> CreateCrawlerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Role": ...,
+        "Targets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCrawlerRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Role: str,
+    Targets: CrawlerTargetsTypeDef,  # (1)
+    DatabaseName: NotRequired[str],
+    Description: NotRequired[str],
+    Schedule: NotRequired[str],
+    Classifiers: NotRequired[Sequence[str]],
+    TablePrefix: NotRequired[str],
+    SchemaChangePolicy: NotRequired[SchemaChangePolicyTypeDef],  # (2)
+    RecrawlPolicy: NotRequired[RecrawlPolicyTypeDef],  # (3)
+    LineageConfiguration: NotRequired[LineageConfigurationTypeDef],  # (4)
+    LakeFormationConfiguration: NotRequired[LakeFormationConfigurationTypeDef],  # (5)
+    Configuration: NotRequired[str],
+    CrawlerSecurityConfiguration: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Name`: `str`
-- `Role`: `str`
-- `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
-
-Optional fields:
-
-- `DatabaseName`: `str`
-- `Description`: `str`
-- `Schedule`: `str`
-- `Classifiers`: `Sequence`\[`str`\]
-- `TablePrefix`: `str`
-- `SchemaChangePolicy`:
-  [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
-- `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
-- `LineageConfiguration`:
-  [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
-- `LakeFormationConfiguration`:
-  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
-- `Configuration`: `str`
-- `CrawlerSecurityConfiguration`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createcsvclassifierrequesttypedef"></a>
-
+1. See [:material-code-braces: CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef) 
+2. See [:material-code-braces: SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef) 
+3. See [:material-code-braces: RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef) 
+4. See [:material-code-braces: LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef) 
+5. See [:material-code-braces: LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef) 
 ## CreateCsvClassifierRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateCsvClassifierRequestTypeDef
+
+def get_value() -> CreateCsvClassifierRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCsvClassifierRequestTypeDef(TypedDict):
+    Name: str,
+    Delimiter: NotRequired[str],
+    QuoteSymbol: NotRequired[str],
+    ContainsHeader: NotRequired[CsvHeaderOptionType],  # (1)
+    Header: NotRequired[Sequence[str]],
+    DisableValueTrimming: NotRequired[bool],
+    AllowSingleColumn: NotRequired[bool],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Delimiter`: `str`
-- `QuoteSymbol`: `str`
-- `ContainsHeader`: [CsvHeaderOptionType](./literals.md#csvheaderoptiontype)
-- `Header`: `Sequence`\[`str`\]
-- `DisableValueTrimming`: `bool`
-- `AllowSingleColumn`: `bool`
-
-<a id="createdatabaserequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CsvHeaderOptionType](./literals.md#csvheaderoptiontype) 
 ## CreateDatabaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateDatabaseRequestRequestTypeDef
+
+def get_value() -> CreateDatabaseRequestRequestTypeDef:
+    return {
+        "DatabaseInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatabaseRequestRequestTypeDef(TypedDict):
+    DatabaseInput: DatabaseInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseInput`: [DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="createdevendpointrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef) 
 ## CreateDevEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateDevEndpointRequestRequestTypeDef
+
+def get_value() -> CreateDevEndpointRequestRequestTypeDef:
+    return {
+        "EndpointName": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDevEndpointRequestRequestTypeDef(TypedDict):
+    EndpointName: str,
+    RoleArn: str,
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    SubnetId: NotRequired[str],
+    PublicKey: NotRequired[str],
+    PublicKeys: NotRequired[Sequence[str]],
+    NumberOfNodes: NotRequired[int],
+    WorkerType: NotRequired[WorkerTypeType],  # (1)
+    GlueVersion: NotRequired[str],
+    NumberOfWorkers: NotRequired[int],
+    ExtraPythonLibsS3Path: NotRequired[str],
+    ExtraJarsS3Path: NotRequired[str],
+    SecurityConfiguration: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    Arguments: NotRequired[Mapping[str, str]],
+```
 
-- `EndpointName`: `str`
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `SubnetId`: `str`
-- `PublicKey`: `str`
-- `PublicKeys`: `Sequence`\[`str`\]
-- `NumberOfNodes`: `int`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `GlueVersion`: `str`
-- `NumberOfWorkers`: `int`
-- `ExtraPythonLibsS3Path`: `str`
-- `ExtraJarsS3Path`: `str`
-- `SecurityConfiguration`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Arguments`: `Mapping`\[`str`, `str`\]
-
-<a id="createdevendpointresponsetypedef"></a>
-
+1. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 ## CreateDevEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateDevEndpointResponseTypeDef
+
+def get_value() -> CreateDevEndpointResponseTypeDef:
+    return {
+        "EndpointName": ...,
+        "Status": ...,
+        "SecurityGroupIds": ...,
+        "SubnetId": ...,
+        "RoleArn": ...,
+        "YarnEndpointAddress": ...,
+        "ZeppelinRemoteSparkInterpreterPort": ...,
+        "NumberOfNodes": ...,
+        "WorkerType": ...,
+        "GlueVersion": ...,
+        "NumberOfWorkers": ...,
+        "AvailabilityZone": ...,
+        "VpcId": ...,
+        "ExtraPythonLibsS3Path": ...,
+        "ExtraJarsS3Path": ...,
+        "FailureReason": ...,
+        "SecurityConfiguration": ...,
+        "CreatedTimestamp": ...,
+        "Arguments": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDevEndpointResponseTypeDef(TypedDict):
+    EndpointName: str,
+    Status: str,
+    SecurityGroupIds: List[str],
+    SubnetId: str,
+    RoleArn: str,
+    YarnEndpointAddress: str,
+    ZeppelinRemoteSparkInterpreterPort: int,
+    NumberOfNodes: int,
+    WorkerType: WorkerTypeType,  # (1)
+    GlueVersion: str,
+    NumberOfWorkers: int,
+    AvailabilityZone: str,
+    VpcId: str,
+    ExtraPythonLibsS3Path: str,
+    ExtraJarsS3Path: str,
+    FailureReason: str,
+    SecurityConfiguration: str,
+    CreatedTimestamp: datetime,
+    Arguments: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointName`: `str`
-- `Status`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SubnetId`: `str`
-- `RoleArn`: `str`
-- `YarnEndpointAddress`: `str`
-- `ZeppelinRemoteSparkInterpreterPort`: `int`
-- `NumberOfNodes`: `int`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `GlueVersion`: `str`
-- `NumberOfWorkers`: `int`
-- `AvailabilityZone`: `str`
-- `VpcId`: `str`
-- `ExtraPythonLibsS3Path`: `str`
-- `ExtraJarsS3Path`: `str`
-- `FailureReason`: `str`
-- `SecurityConfiguration`: `str`
-- `CreatedTimestamp`: `datetime`
-- `Arguments`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="creategrokclassifierrequesttypedef"></a>
-
+1. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateGrokClassifierRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateGrokClassifierRequestTypeDef
+
+def get_value() -> CreateGrokClassifierRequestTypeDef:
+    return {
+        "Classification": ...,
+        "Name": ...,
+        "GrokPattern": ...,
+    }
 ```
 
-Required fields:
-
-- `Classification`: `str`
-- `Name`: `str`
-- `GrokPattern`: `str`
-
-Optional fields:
-
-- `CustomPatterns`: `str`
-
-<a id="createjobrequestrequesttypedef"></a>
+```python title="Definition"
+class CreateGrokClassifierRequestTypeDef(TypedDict):
+    Classification: str,
+    Name: str,
+    GrokPattern: str,
+    CustomPatterns: NotRequired[str],
+```
 
 ## CreateJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateJobRequestRequestTypeDef
+
+def get_value() -> CreateJobRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Role": ...,
+        "Command": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Role: str,
+    Command: JobCommandTypeDef,  # (1)
+    Description: NotRequired[str],
+    LogUri: NotRequired[str],
+    ExecutionProperty: NotRequired[ExecutionPropertyTypeDef],  # (2)
+    DefaultArguments: NotRequired[Mapping[str, str]],
+    NonOverridableArguments: NotRequired[Mapping[str, str]],
+    Connections: NotRequired[ConnectionsListTypeDef],  # (3)
+    MaxRetries: NotRequired[int],
+    AllocatedCapacity: NotRequired[int],
+    Timeout: NotRequired[int],
+    MaxCapacity: NotRequired[float],
+    SecurityConfiguration: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (4)
+    GlueVersion: NotRequired[str],
+    NumberOfWorkers: NotRequired[int],
+    WorkerType: NotRequired[WorkerTypeType],  # (5)
+```
 
-- `Name`: `str`
-- `Role`: `str`
-- `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `LogUri`: `str`
-- `ExecutionProperty`:
-  [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
-- `DefaultArguments`: `Mapping`\[`str`, `str`\]
-- `NonOverridableArguments`: `Mapping`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
-- `MaxRetries`: `int`
-- `AllocatedCapacity`: `int`
-- `Timeout`: `int`
-- `MaxCapacity`: `float`
-- `SecurityConfiguration`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `NotificationProperty`:
-  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
-- `GlueVersion`: `str`
-- `NumberOfWorkers`: `int`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-
-<a id="createjobresponsetypedef"></a>
-
+1. See [:material-code-braces: JobCommandTypeDef](./type_defs.md#jobcommandtypedef) 
+2. See [:material-code-braces: ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef) 
+3. See [:material-code-braces: ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef) 
+4. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
+5. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 ## CreateJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateJobResponseTypeDef
+
+def get_value() -> CreateJobResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createjsonclassifierrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateJsonClassifierRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateJsonClassifierRequestTypeDef
+
+def get_value() -> CreateJsonClassifierRequestTypeDef:
+    return {
+        "Name": ...,
+        "JsonPath": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `JsonPath`: `str`
-
-<a id="createmltransformrequestrequesttypedef"></a>
+```python title="Definition"
+class CreateJsonClassifierRequestTypeDef(TypedDict):
+    Name: str,
+    JsonPath: str,
+```
 
 ## CreateMLTransformRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateMLTransformRequestRequestTypeDef
+
+def get_value() -> CreateMLTransformRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "InputRecordTables": ...,
+        "Parameters": ...,
+        "Role": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMLTransformRequestRequestTypeDef(TypedDict):
+    Name: str,
+    InputRecordTables: Sequence[GlueTableTypeDef],  # (1)
+    Parameters: TransformParametersTypeDef,  # (2)
+    Role: str,
+    Description: NotRequired[str],
+    GlueVersion: NotRequired[str],
+    MaxCapacity: NotRequired[float],
+    WorkerType: NotRequired[WorkerTypeType],  # (3)
+    NumberOfWorkers: NotRequired[int],
+    Timeout: NotRequired[int],
+    MaxRetries: NotRequired[int],
+    Tags: NotRequired[Mapping[str, str]],
+    TransformEncryption: NotRequired[TransformEncryptionTypeDef],  # (4)
+```
 
-- `Name`: `str`
-- `InputRecordTables`:
-  `Sequence`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
-- `Parameters`:
-  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
-- `Role`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `GlueVersion`: `str`
-- `MaxCapacity`: `float`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-- `Timeout`: `int`
-- `MaxRetries`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `TransformEncryption`:
-  [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
-
-<a id="createmltransformresponsetypedef"></a>
-
+1. See [:material-code-braces: GlueTableTypeDef](./type_defs.md#gluetabletypedef) 
+2. See [:material-code-braces: TransformParametersTypeDef](./type_defs.md#transformparameterstypedef) 
+3. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+4. See [:material-code-braces: TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef) 
 ## CreateMLTransformResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateMLTransformResponseTypeDef
+
+def get_value() -> CreateMLTransformResponseTypeDef:
+    return {
+        "TransformId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMLTransformResponseTypeDef(TypedDict):
+    TransformId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TransformId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpartitionindexrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePartitionIndexRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreatePartitionIndexRequestRequestTypeDef
+
+def get_value() -> CreatePartitionIndexRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionIndex": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePartitionIndexRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionIndex: PartitionIndexTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionIndex`:
-  [PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="createpartitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionIndexTypeDef](./type_defs.md#partitionindextypedef) 
 ## CreatePartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreatePartitionRequestRequestTypeDef
+
+def get_value() -> CreatePartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionInput: PartitionInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionInput`:
-  [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="createregistryinputrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) 
 ## CreateRegistryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateRegistryInputRequestTypeDef
+
+def get_value() -> CreateRegistryInputRequestTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createregistryresponsetypedef"></a>
+```python title="Definition"
+class CreateRegistryInputRequestTypeDef(TypedDict):
+    RegistryName: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateRegistryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateRegistryResponseTypeDef
+
+def get_value() -> CreateRegistryResponseTypeDef:
+    return {
+        "RegistryArn": ...,
+        "RegistryName": ...,
+        "Description": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRegistryResponseTypeDef(TypedDict):
+    RegistryArn: str,
+    RegistryName: str,
+    Description: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RegistryArn`: `str`
-- `RegistryName`: `str`
-- `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createschemainputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSchemaInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateSchemaInputRequestTypeDef
+
+def get_value() -> CreateSchemaInputRequestTypeDef:
+    return {
+        "SchemaName": ...,
+        "DataFormat": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSchemaInputRequestTypeDef(TypedDict):
+    SchemaName: str,
+    DataFormat: DataFormatType,  # (1)
+    RegistryId: NotRequired[RegistryIdTypeDef],  # (2)
+    Compatibility: NotRequired[CompatibilityType],  # (3)
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    SchemaDefinition: NotRequired[str],
+```
 
-- `SchemaName`: `str`
-- `DataFormat`: [DataFormatType](./literals.md#dataformattype)
-
-Optional fields:
-
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-- `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `SchemaDefinition`: `str`
-
-<a id="createschemaresponsetypedef"></a>
-
+1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
+2. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
+3. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
 ## CreateSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateSchemaResponseTypeDef
+
+def get_value() -> CreateSchemaResponseTypeDef:
+    return {
+        "RegistryName": ...,
+        "RegistryArn": ...,
+        "SchemaName": ...,
+        "SchemaArn": ...,
+        "Description": ...,
+        "DataFormat": ...,
+        "Compatibility": ...,
+        "SchemaCheckpoint": ...,
+        "LatestSchemaVersion": ...,
+        "NextSchemaVersion": ...,
+        "SchemaStatus": ...,
+        "Tags": ...,
+        "SchemaVersionId": ...,
+        "SchemaVersionStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSchemaResponseTypeDef(TypedDict):
+    RegistryName: str,
+    RegistryArn: str,
+    SchemaName: str,
+    SchemaArn: str,
+    Description: str,
+    DataFormat: DataFormatType,  # (1)
+    Compatibility: CompatibilityType,  # (2)
+    SchemaCheckpoint: int,
+    LatestSchemaVersion: int,
+    NextSchemaVersion: int,
+    SchemaStatus: SchemaStatusType,  # (3)
+    Tags: Dict[str, str],
+    SchemaVersionId: str,
+    SchemaVersionStatus: SchemaVersionStatusType,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `RegistryName`: `str`
-- `RegistryArn`: `str`
-- `SchemaName`: `str`
-- `SchemaArn`: `str`
-- `Description`: `str`
-- `DataFormat`: [DataFormatType](./literals.md#dataformattype)
-- `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
-- `SchemaCheckpoint`: `int`
-- `LatestSchemaVersion`: `int`
-- `NextSchemaVersion`: `int`
-- `SchemaStatus`: [SchemaStatusType](./literals.md#schemastatustype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `SchemaVersionId`: `str`
-- `SchemaVersionStatus`:
-  [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createscriptrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
+2. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
+3. See [:material-code-brackets: SchemaStatusType](./literals.md#schemastatustype) 
+4. See [:material-code-brackets: SchemaVersionStatusType](./literals.md#schemaversionstatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateScriptRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateScriptRequestRequestTypeDef
+
+def get_value() -> CreateScriptRequestRequestTypeDef:
+    return {
+        "DagNodes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateScriptRequestRequestTypeDef(TypedDict):
+    DagNodes: NotRequired[Sequence[CodeGenNodeTypeDef]],  # (1)
+    DagEdges: NotRequired[Sequence[CodeGenEdgeTypeDef]],  # (2)
+    Language: NotRequired[LanguageType],  # (3)
+```
 
-- `DagNodes`:
-  `Sequence`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
-- `DagEdges`:
-  `Sequence`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
-- `Language`: [LanguageType](./literals.md#languagetype)
-
-<a id="createscriptresponsetypedef"></a>
-
+1. See [:material-code-braces: CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef) 
+2. See [:material-code-braces: CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef) 
+3. See [:material-code-brackets: LanguageType](./literals.md#languagetype) 
 ## CreateScriptResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateScriptResponseTypeDef
+
+def get_value() -> CreateScriptResponseTypeDef:
+    return {
+        "PythonScript": ...,
+        "ScalaCode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateScriptResponseTypeDef(TypedDict):
+    PythonScript: str,
+    ScalaCode: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PythonScript`: `str`
-- `ScalaCode`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsecurityconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSecurityConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateSecurityConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateSecurityConfigurationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "EncryptionConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSecurityConfigurationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    EncryptionConfiguration: EncryptionConfigurationTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-
-<a id="createsecurityconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
 ## CreateSecurityConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateSecurityConfigurationResponseTypeDef
+
+def get_value() -> CreateSecurityConfigurationResponseTypeDef:
+    return {
+        "Name": ...,
+        "CreatedTimestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSecurityConfigurationResponseTypeDef(TypedDict):
+    Name: str,
+    CreatedTimestamp: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `CreatedTimestamp`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateSessionRequestRequestTypeDef
+
+def get_value() -> CreateSessionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "Role": ...,
+        "Command": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSessionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Role: str,
+    Command: SessionCommandTypeDef,  # (1)
+    Description: NotRequired[str],
+    Timeout: NotRequired[int],
+    IdleTimeout: NotRequired[int],
+    DefaultArguments: NotRequired[Mapping[str, str]],
+    Connections: NotRequired[ConnectionsListTypeDef],  # (2)
+    MaxCapacity: NotRequired[float],
+    NumberOfWorkers: NotRequired[int],
+    WorkerType: NotRequired[WorkerTypeType],  # (3)
+    SecurityConfiguration: NotRequired[str],
+    GlueVersion: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    RequestOrigin: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Role`: `str`
-- `Command`: [SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `Timeout`: `int`
-- `IdleTimeout`: `int`
-- `DefaultArguments`: `Mapping`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
-- `MaxCapacity`: `float`
-- `NumberOfWorkers`: `int`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `SecurityConfiguration`: `str`
-- `GlueVersion`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `RequestOrigin`: `str`
-
-<a id="createsessionresponsetypedef"></a>
-
+1. See [:material-code-braces: SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef) 
+2. See [:material-code-braces: ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef) 
+3. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 ## CreateSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateSessionResponseTypeDef
+
+def get_value() -> CreateSessionResponseTypeDef:
+    return {
+        "Session": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSessionResponseTypeDef(TypedDict):
+    Session: SessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Session`: [SessionTypeDef](./type_defs.md#sessiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SessionTypeDef](./type_defs.md#sessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateTableRequestRequestTypeDef
+
+def get_value() -> CreateTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableInput: TableInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+    PartitionIndexes: NotRequired[Sequence[PartitionIndexTypeDef]],  # (2)
+    TransactionId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableInput`: [TableInputTypeDef](./type_defs.md#tableinputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `PartitionIndexes`:
-  `Sequence`\[[PartitionIndexTypeDef](./type_defs.md#partitionindextypedef)\]
-- `TransactionId`: `str`
-
-<a id="createtriggerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableInputTypeDef](./type_defs.md#tableinputtypedef) 
+2. See [:material-code-braces: PartitionIndexTypeDef](./type_defs.md#partitionindextypedef) 
 ## CreateTriggerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateTriggerRequestRequestTypeDef
+
+def get_value() -> CreateTriggerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Type": ...,
+        "Actions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTriggerRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Type: TriggerTypeType,  # (1)
+    Actions: Sequence[ActionTypeDef],  # (2)
+    WorkflowName: NotRequired[str],
+    Schedule: NotRequired[str],
+    Predicate: NotRequired[PredicateTypeDef],  # (3)
+    Description: NotRequired[str],
+    StartOnCreation: NotRequired[bool],
+    Tags: NotRequired[Mapping[str, str]],
+    EventBatchingCondition: NotRequired[EventBatchingConditionTypeDef],  # (4)
+```
 
-- `Name`: `str`
-- `Type`: [TriggerTypeType](./literals.md#triggertypetype)
-- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-
-Optional fields:
-
-- `WorkflowName`: `str`
-- `Schedule`: `str`
-- `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
-- `Description`: `str`
-- `StartOnCreation`: `bool`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `EventBatchingCondition`:
-  [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
-
-<a id="createtriggerresponsetypedef"></a>
-
+1. See [:material-code-brackets: TriggerTypeType](./literals.md#triggertypetype) 
+2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+3. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
+4. See [:material-code-braces: EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef) 
 ## CreateTriggerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateTriggerResponseTypeDef
+
+def get_value() -> CreateTriggerResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTriggerResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserdefinedfunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserDefinedFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateUserDefinedFunctionRequestRequestTypeDef
+
+def get_value() -> CreateUserDefinedFunctionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "FunctionInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserDefinedFunctionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    FunctionInput: UserDefinedFunctionInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `FunctionInput`:
-  [UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="createworkflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef) 
 ## CreateWorkflowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateWorkflowRequestRequestTypeDef
+
+def get_value() -> CreateWorkflowRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `MaxConcurrentRuns`: `int`
-
-<a id="createworkflowresponsetypedef"></a>
+```python title="Definition"
+class CreateWorkflowRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    DefaultRunProperties: NotRequired[Mapping[str, str]],
+    Tags: NotRequired[Mapping[str, str]],
+    MaxConcurrentRuns: NotRequired[int],
+```
 
 ## CreateWorkflowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateWorkflowResponseTypeDef
+
+def get_value() -> CreateWorkflowResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkflowResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createxmlclassifierrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateXMLClassifierRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CreateXMLClassifierRequestTypeDef
+
+def get_value() -> CreateXMLClassifierRequestTypeDef:
+    return {
+        "Classification": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Classification`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `RowTag`: `str`
-
-<a id="csvclassifiertypedef"></a>
+```python title="Definition"
+class CreateXMLClassifierRequestTypeDef(TypedDict):
+    Classification: str,
+    Name: str,
+    RowTag: NotRequired[str],
+```
 
 ## CsvClassifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import CsvClassifierTypeDef
+
+def get_value() -> CsvClassifierTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CsvClassifierTypeDef(TypedDict):
+    Name: str,
+    CreationTime: NotRequired[datetime],
+    LastUpdated: NotRequired[datetime],
+    Version: NotRequired[int],
+    Delimiter: NotRequired[str],
+    QuoteSymbol: NotRequired[str],
+    ContainsHeader: NotRequired[CsvHeaderOptionType],  # (1)
+    Header: NotRequired[List[str]],
+    DisableValueTrimming: NotRequired[bool],
+    AllowSingleColumn: NotRequired[bool],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `CreationTime`: `datetime`
-- `LastUpdated`: `datetime`
-- `Version`: `int`
-- `Delimiter`: `str`
-- `QuoteSymbol`: `str`
-- `ContainsHeader`: [CsvHeaderOptionType](./literals.md#csvheaderoptiontype)
-- `Header`: `List`\[`str`\]
-- `DisableValueTrimming`: `bool`
-- `AllowSingleColumn`: `bool`
-
-<a id="datacatalogencryptionsettingstypedef"></a>
-
+1. See [:material-code-brackets: CsvHeaderOptionType](./literals.md#csvheaderoptiontype) 
 ## DataCatalogEncryptionSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DataCatalogEncryptionSettingsTypeDef
+
+def get_value() -> DataCatalogEncryptionSettingsTypeDef:
+    return {
+        "EncryptionAtRest": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataCatalogEncryptionSettingsTypeDef(TypedDict):
+    EncryptionAtRest: NotRequired[EncryptionAtRestTypeDef],  # (1)
+    ConnectionPasswordEncryption: NotRequired[ConnectionPasswordEncryptionTypeDef],  # (2)
+```
 
-- `EncryptionAtRest`:
-  [EncryptionAtRestTypeDef](./type_defs.md#encryptionatresttypedef)
-- `ConnectionPasswordEncryption`:
-  [ConnectionPasswordEncryptionTypeDef](./type_defs.md#connectionpasswordencryptiontypedef)
-
-<a id="datalakeprincipaltypedef"></a>
-
+1. See [:material-code-braces: EncryptionAtRestTypeDef](./type_defs.md#encryptionatresttypedef) 
+2. See [:material-code-braces: ConnectionPasswordEncryptionTypeDef](./type_defs.md#connectionpasswordencryptiontypedef) 
 ## DataLakePrincipalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DataLakePrincipalTypeDef
+
+def get_value() -> DataLakePrincipalTypeDef:
+    return {
+        "DataLakePrincipalIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `DataLakePrincipalIdentifier`: `str`
-
-<a id="databaseidentifiertypedef"></a>
+```python title="Definition"
+class DataLakePrincipalTypeDef(TypedDict):
+    DataLakePrincipalIdentifier: NotRequired[str],
+```
 
 ## DatabaseIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DatabaseIdentifierTypeDef
+
+def get_value() -> DatabaseIdentifierTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-
-<a id="databaseinputtypedef"></a>
+```python title="Definition"
+class DatabaseIdentifierTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+```
 
 ## DatabaseInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DatabaseInputTypeDef
+
+def get_value() -> DatabaseInputTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DatabaseInputTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    LocationUri: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, str]],
+    CreateTableDefaultPermissions: NotRequired[Sequence[PrincipalPermissionsTypeDef]],  # (1)
+    TargetDatabase: NotRequired[DatabaseIdentifierTypeDef],  # (2)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `LocationUri`: `str`
-- `Parameters`: `Mapping`\[`str`, `str`\]
-- `CreateTableDefaultPermissions`:
-  `Sequence`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
-- `TargetDatabase`:
-  [DatabaseIdentifierTypeDef](./type_defs.md#databaseidentifiertypedef)
-
-<a id="databasetypedef"></a>
-
+1. See [:material-code-braces: PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef) 
+2. See [:material-code-braces: DatabaseIdentifierTypeDef](./type_defs.md#databaseidentifiertypedef) 
 ## DatabaseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DatabaseTypeDef
+
+def get_value() -> DatabaseTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DatabaseTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    LocationUri: NotRequired[str],
+    Parameters: NotRequired[Dict[str, str]],
+    CreateTime: NotRequired[datetime],
+    CreateTableDefaultPermissions: NotRequired[List[PrincipalPermissionsTypeDef]],  # (1)
+    TargetDatabase: NotRequired[DatabaseIdentifierTypeDef],  # (2)
+    CatalogId: NotRequired[str],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `LocationUri`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
-- `CreateTime`: `datetime`
-- `CreateTableDefaultPermissions`:
-  `List`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
-- `TargetDatabase`:
-  [DatabaseIdentifierTypeDef](./type_defs.md#databaseidentifiertypedef)
-- `CatalogId`: `str`
-
-<a id="datecolumnstatisticsdatatypedef"></a>
-
+1. See [:material-code-braces: PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef) 
+2. See [:material-code-braces: DatabaseIdentifierTypeDef](./type_defs.md#databaseidentifiertypedef) 
 ## DateColumnStatisticsDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DateColumnStatisticsDataTypeDef
+
+def get_value() -> DateColumnStatisticsDataTypeDef:
+    return {
+        "NumberOfNulls": ...,
+        "NumberOfDistinctValues": ...,
+    }
 ```
 
-Required fields:
-
-- `NumberOfNulls`: `int`
-- `NumberOfDistinctValues`: `int`
-
-Optional fields:
-
-- `MinimumValue`: `datetime`
-- `MaximumValue`: `datetime`
-
-<a id="decimalcolumnstatisticsdatatypedef"></a>
+```python title="Definition"
+class DateColumnStatisticsDataTypeDef(TypedDict):
+    NumberOfNulls: int,
+    NumberOfDistinctValues: int,
+    MinimumValue: NotRequired[datetime],
+    MaximumValue: NotRequired[datetime],
+```
 
 ## DecimalColumnStatisticsDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DecimalColumnStatisticsDataTypeDef
+
+def get_value() -> DecimalColumnStatisticsDataTypeDef:
+    return {
+        "NumberOfNulls": ...,
+        "NumberOfDistinctValues": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DecimalColumnStatisticsDataTypeDef(TypedDict):
+    NumberOfNulls: int,
+    NumberOfDistinctValues: int,
+    MinimumValue: NotRequired[DecimalNumberTypeDef],  # (1)
+    MaximumValue: NotRequired[DecimalNumberTypeDef],  # (1)
+```
 
-- `NumberOfNulls`: `int`
-- `NumberOfDistinctValues`: `int`
-
-Optional fields:
-
-- `MinimumValue`: [DecimalNumberTypeDef](./type_defs.md#decimalnumbertypedef)
-- `MaximumValue`: [DecimalNumberTypeDef](./type_defs.md#decimalnumbertypedef)
-
-<a id="decimalnumbertypedef"></a>
-
+1. See [:material-code-braces: DecimalNumberTypeDef](./type_defs.md#decimalnumbertypedef) 
+2. See [:material-code-braces: DecimalNumberTypeDef](./type_defs.md#decimalnumbertypedef) 
 ## DecimalNumberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DecimalNumberTypeDef
+
+def get_value() -> DecimalNumberTypeDef:
+    return {
+        "UnscaledValue": ...,
+        "Scale": ...,
+    }
 ```
 
-Required fields:
-
-- `UnscaledValue`: `bytes`
-- `Scale`: `int`
-
-<a id="deleteblueprintrequestrequesttypedef"></a>
+```python title="Definition"
+class DecimalNumberTypeDef(TypedDict):
+    UnscaledValue: bytes,
+    Scale: int,
+```
 
 ## DeleteBlueprintRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteBlueprintRequestRequestTypeDef
+
+def get_value() -> DeleteBlueprintRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deleteblueprintresponsetypedef"></a>
+```python title="Definition"
+class DeleteBlueprintRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteBlueprintResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteBlueprintResponseTypeDef
+
+def get_value() -> DeleteBlueprintResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBlueprintResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteclassifierrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteClassifierRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteClassifierRequestRequestTypeDef
+
+def get_value() -> DeleteClassifierRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletecolumnstatisticsforpartitionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteClassifierRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteColumnStatisticsForPartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteColumnStatisticsForPartitionRequestRequestTypeDef
+
+def get_value() -> DeleteColumnStatisticsForPartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionValues": ...,
+        "ColumnName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionValues`: `Sequence`\[`str`\]
-- `ColumnName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deletecolumnstatisticsfortablerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteColumnStatisticsForPartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    ColumnName: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DeleteColumnStatisticsForTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteColumnStatisticsForTableRequestRequestTypeDef
+
+def get_value() -> DeleteColumnStatisticsForTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "ColumnName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `ColumnName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deleteconnectionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteColumnStatisticsForTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    ColumnName: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DeleteConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteConnectionRequestRequestTypeDef
+
+def get_value() -> DeleteConnectionRequestRequestTypeDef:
+    return {
+        "ConnectionName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConnectionName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deletecrawlerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConnectionRequestRequestTypeDef(TypedDict):
+    ConnectionName: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DeleteCrawlerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteCrawlerRequestRequestTypeDef
+
+def get_value() -> DeleteCrawlerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletedatabaserequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCrawlerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteDatabaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteDatabaseRequestRequestTypeDef
+
+def get_value() -> DeleteDatabaseRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deletedevendpointrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatabaseRequestRequestTypeDef(TypedDict):
+    Name: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DeleteDevEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteDevEndpointRequestRequestTypeDef
+
+def get_value() -> DeleteDevEndpointRequestRequestTypeDef:
+    return {
+        "EndpointName": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointName`: `str`
-
-<a id="deletejobrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDevEndpointRequestRequestTypeDef(TypedDict):
+    EndpointName: str,
+```
 
 ## DeleteJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteJobRequestRequestTypeDef
+
+def get_value() -> DeleteJobRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Required fields:
-
-- `JobName`: `str`
-
-<a id="deletejobresponsetypedef"></a>
+```python title="Definition"
+class DeleteJobRequestRequestTypeDef(TypedDict):
+    JobName: str,
+```
 
 ## DeleteJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteJobResponseTypeDef
+
+def get_value() -> DeleteJobResponseTypeDef:
+    return {
+        "JobName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteJobResponseTypeDef(TypedDict):
+    JobName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletemltransformrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteMLTransformRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteMLTransformRequestRequestTypeDef
+
+def get_value() -> DeleteMLTransformRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+    }
 ```
 
-Required fields:
-
-- `TransformId`: `str`
-
-<a id="deletemltransformresponsetypedef"></a>
+```python title="Definition"
+class DeleteMLTransformRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+```
 
 ## DeleteMLTransformResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteMLTransformResponseTypeDef
+
+def get_value() -> DeleteMLTransformResponseTypeDef:
+    return {
+        "TransformId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteMLTransformResponseTypeDef(TypedDict):
+    TransformId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TransformId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletepartitionindexrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeletePartitionIndexRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeletePartitionIndexRequestRequestTypeDef
+
+def get_value() -> DeletePartitionIndexRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `IndexName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deletepartitionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePartitionIndexRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    IndexName: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DeletePartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeletePartitionRequestRequestTypeDef
+
+def get_value() -> DeletePartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionValues": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionValues`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deleteregistryinputrequesttypedef"></a>
+```python title="Definition"
+class DeletePartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    CatalogId: NotRequired[str],
+```
 
 ## DeleteRegistryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteRegistryInputRequestTypeDef
+
+def get_value() -> DeleteRegistryInputRequestTypeDef:
+    return {
+        "RegistryId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRegistryInputRequestTypeDef(TypedDict):
+    RegistryId: RegistryIdTypeDef,  # (1)
+```
 
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-
-<a id="deleteregistryresponsetypedef"></a>
-
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
 ## DeleteRegistryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteRegistryResponseTypeDef
+
+def get_value() -> DeleteRegistryResponseTypeDef:
+    return {
+        "RegistryName": ...,
+        "RegistryArn": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRegistryResponseTypeDef(TypedDict):
+    RegistryName: str,
+    RegistryArn: str,
+    Status: RegistryStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RegistryName`: `str`
-- `RegistryArn`: `str`
-- `Status`: [RegistryStatusType](./literals.md#registrystatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RegistryStatusType](./literals.md#registrystatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
+    return {
+        "PolicyHashCondition": ...,
+    }
 ```
 
-Optional fields:
-
-- `PolicyHashCondition`: `str`
-- `ResourceArn`: `str`
-
-<a id="deleteschemainputrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
+    PolicyHashCondition: NotRequired[str],
+    ResourceArn: NotRequired[str],
+```
 
 ## DeleteSchemaInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteSchemaInputRequestTypeDef
+
+def get_value() -> DeleteSchemaInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSchemaInputRequestTypeDef(TypedDict):
+    SchemaId: SchemaIdTypeDef,  # (1)
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-
-<a id="deleteschemaresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
 ## DeleteSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteSchemaResponseTypeDef
+
+def get_value() -> DeleteSchemaResponseTypeDef:
+    return {
+        "SchemaArn": ...,
+        "SchemaName": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSchemaResponseTypeDef(TypedDict):
+    SchemaArn: str,
+    SchemaName: str,
+    Status: SchemaStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `Status`: [SchemaStatusType](./literals.md#schemastatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteschemaversionsinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: SchemaStatusType](./literals.md#schemastatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSchemaVersionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteSchemaVersionsInputRequestTypeDef
+
+def get_value() -> DeleteSchemaVersionsInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+        "Versions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSchemaVersionsInputRequestTypeDef(TypedDict):
+    SchemaId: SchemaIdTypeDef,  # (1)
+    Versions: str,
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `Versions`: `str`
-
-<a id="deleteschemaversionsresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
 ## DeleteSchemaVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteSchemaVersionsResponseTypeDef
+
+def get_value() -> DeleteSchemaVersionsResponseTypeDef:
+    return {
+        "SchemaVersionErrors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSchemaVersionsResponseTypeDef(TypedDict):
+    SchemaVersionErrors: List[SchemaVersionErrorItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SchemaVersionErrors`:
-  `List`\[[SchemaVersionErrorItemTypeDef](./type_defs.md#schemaversionerroritemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesecurityconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SchemaVersionErrorItemTypeDef](./type_defs.md#schemaversionerroritemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSecurityConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteSecurityConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteSecurityConfigurationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletesessionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSecurityConfigurationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteSessionRequestRequestTypeDef
+
+def get_value() -> DeleteSessionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `RequestOrigin`: `str`
-
-<a id="deletesessionresponsetypedef"></a>
+```python title="Definition"
+class DeleteSessionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    RequestOrigin: NotRequired[str],
+```
 
 ## DeleteSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteSessionResponseTypeDef
+
+def get_value() -> DeleteSessionResponseTypeDef:
+    return {
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSessionResponseTypeDef(TypedDict):
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteTableRequestRequestTypeDef
+
+def get_value() -> DeleteTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `TransactionId`: `str`
-
-<a id="deletetableversionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    Name: str,
+    CatalogId: NotRequired[str],
+    TransactionId: NotRequired[str],
+```
 
 ## DeleteTableVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteTableVersionRequestRequestTypeDef
+
+def get_value() -> DeleteTableVersionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "VersionId": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `VersionId`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deletetriggerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTableVersionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    VersionId: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DeleteTriggerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteTriggerRequestRequestTypeDef
+
+def get_value() -> DeleteTriggerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletetriggerresponsetypedef"></a>
+```python title="Definition"
+class DeleteTriggerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteTriggerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteTriggerResponseTypeDef
+
+def get_value() -> DeleteTriggerResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTriggerResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteuserdefinedfunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteUserDefinedFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteUserDefinedFunctionRequestRequestTypeDef
+
+def get_value() -> DeleteUserDefinedFunctionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deleteworkflowrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserDefinedFunctionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    FunctionName: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DeleteWorkflowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteWorkflowRequestRequestTypeDef
+
+def get_value() -> DeleteWorkflowRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deleteworkflowresponsetypedef"></a>
+```python title="Definition"
+class DeleteWorkflowRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteWorkflowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeleteWorkflowResponseTypeDef
+
+def get_value() -> DeleteWorkflowResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteWorkflowResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deltatargettypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeltaTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DeltaTargetTypeDef
+
+def get_value() -> DeltaTargetTypeDef:
+    return {
+        "DeltaTables": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeltaTables`: `List`\[`str`\]
-- `ConnectionName`: `str`
-- `WriteManifest`: `bool`
-
-<a id="devendpointcustomlibrariestypedef"></a>
+```python title="Definition"
+class DeltaTargetTypeDef(TypedDict):
+    DeltaTables: NotRequired[List[str]],
+    ConnectionName: NotRequired[str],
+    WriteManifest: NotRequired[bool],
+```
 
 ## DevEndpointCustomLibrariesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DevEndpointCustomLibrariesTypeDef
+
+def get_value() -> DevEndpointCustomLibrariesTypeDef:
+    return {
+        "ExtraPythonLibsS3Path": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExtraPythonLibsS3Path`: `str`
-- `ExtraJarsS3Path`: `str`
-
-<a id="devendpointtypedef"></a>
+```python title="Definition"
+class DevEndpointCustomLibrariesTypeDef(TypedDict):
+    ExtraPythonLibsS3Path: NotRequired[str],
+    ExtraJarsS3Path: NotRequired[str],
+```
 
 ## DevEndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DevEndpointTypeDef
+
+def get_value() -> DevEndpointTypeDef:
+    return {
+        "EndpointName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DevEndpointTypeDef(TypedDict):
+    EndpointName: NotRequired[str],
+    RoleArn: NotRequired[str],
+    SecurityGroupIds: NotRequired[List[str]],
+    SubnetId: NotRequired[str],
+    YarnEndpointAddress: NotRequired[str],
+    PrivateAddress: NotRequired[str],
+    ZeppelinRemoteSparkInterpreterPort: NotRequired[int],
+    PublicAddress: NotRequired[str],
+    Status: NotRequired[str],
+    WorkerType: NotRequired[WorkerTypeType],  # (1)
+    GlueVersion: NotRequired[str],
+    NumberOfWorkers: NotRequired[int],
+    NumberOfNodes: NotRequired[int],
+    AvailabilityZone: NotRequired[str],
+    VpcId: NotRequired[str],
+    ExtraPythonLibsS3Path: NotRequired[str],
+    ExtraJarsS3Path: NotRequired[str],
+    FailureReason: NotRequired[str],
+    LastUpdateStatus: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    LastModifiedTimestamp: NotRequired[datetime],
+    PublicKey: NotRequired[str],
+    PublicKeys: NotRequired[List[str]],
+    SecurityConfiguration: NotRequired[str],
+    Arguments: NotRequired[Dict[str, str]],
+```
 
-- `EndpointName`: `str`
-- `RoleArn`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SubnetId`: `str`
-- `YarnEndpointAddress`: `str`
-- `PrivateAddress`: `str`
-- `ZeppelinRemoteSparkInterpreterPort`: `int`
-- `PublicAddress`: `str`
-- `Status`: `str`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `GlueVersion`: `str`
-- `NumberOfWorkers`: `int`
-- `NumberOfNodes`: `int`
-- `AvailabilityZone`: `str`
-- `VpcId`: `str`
-- `ExtraPythonLibsS3Path`: `str`
-- `ExtraJarsS3Path`: `str`
-- `FailureReason`: `str`
-- `LastUpdateStatus`: `str`
-- `CreatedTimestamp`: `datetime`
-- `LastModifiedTimestamp`: `datetime`
-- `PublicKey`: `str`
-- `PublicKeys`: `List`\[`str`\]
-- `SecurityConfiguration`: `str`
-- `Arguments`: `Dict`\[`str`, `str`\]
-
-<a id="doublecolumnstatisticsdatatypedef"></a>
-
+1. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 ## DoubleColumnStatisticsDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DoubleColumnStatisticsDataTypeDef
+
+def get_value() -> DoubleColumnStatisticsDataTypeDef:
+    return {
+        "NumberOfNulls": ...,
+        "NumberOfDistinctValues": ...,
+    }
 ```
 
-Required fields:
-
-- `NumberOfNulls`: `int`
-- `NumberOfDistinctValues`: `int`
-
-Optional fields:
-
-- `MinimumValue`: `float`
-- `MaximumValue`: `float`
-
-<a id="dynamodbtargettypedef"></a>
+```python title="Definition"
+class DoubleColumnStatisticsDataTypeDef(TypedDict):
+    NumberOfNulls: int,
+    NumberOfDistinctValues: int,
+    MinimumValue: NotRequired[float],
+    MaximumValue: NotRequired[float],
+```
 
 ## DynamoDBTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import DynamoDBTargetTypeDef
+
+def get_value() -> DynamoDBTargetTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Optional fields:
-
-- `Path`: `str`
-- `scanAll`: `bool`
-- `scanRate`: `float`
-
-<a id="edgetypedef"></a>
+```python title="Definition"
+class DynamoDBTargetTypeDef(TypedDict):
+    Path: NotRequired[str],
+    scanAll: NotRequired[bool],
+    scanRate: NotRequired[float],
+```
 
 ## EdgeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import EdgeTypeDef
+
+def get_value() -> EdgeTypeDef:
+    return {
+        "SourceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `SourceId`: `str`
-- `DestinationId`: `str`
-
-<a id="encryptionatresttypedef"></a>
+```python title="Definition"
+class EdgeTypeDef(TypedDict):
+    SourceId: NotRequired[str],
+    DestinationId: NotRequired[str],
+```
 
 ## EncryptionAtRestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import EncryptionAtRestTypeDef
+
+def get_value() -> EncryptionAtRestTypeDef:
+    return {
+        "CatalogEncryptionMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EncryptionAtRestTypeDef(TypedDict):
+    CatalogEncryptionMode: CatalogEncryptionModeType,  # (1)
+    SseAwsKmsKeyId: NotRequired[str],
+```
 
-- `CatalogEncryptionMode`:
-  [CatalogEncryptionModeType](./literals.md#catalogencryptionmodetype)
-
-Optional fields:
-
-- `SseAwsKmsKeyId`: `str`
-
-<a id="encryptionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: CatalogEncryptionModeType](./literals.md#catalogencryptionmodetype) 
 ## EncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import EncryptionConfigurationTypeDef
+
+def get_value() -> EncryptionConfigurationTypeDef:
+    return {
+        "S3Encryption": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EncryptionConfigurationTypeDef(TypedDict):
+    S3Encryption: NotRequired[Sequence[S3EncryptionTypeDef]],  # (1)
+    CloudWatchEncryption: NotRequired[CloudWatchEncryptionTypeDef],  # (2)
+    JobBookmarksEncryption: NotRequired[JobBookmarksEncryptionTypeDef],  # (3)
+```
 
-- `S3Encryption`:
-  `Sequence`\[[S3EncryptionTypeDef](./type_defs.md#s3encryptiontypedef)\]
-- `CloudWatchEncryption`:
-  [CloudWatchEncryptionTypeDef](./type_defs.md#cloudwatchencryptiontypedef)
-- `JobBookmarksEncryption`:
-  [JobBookmarksEncryptionTypeDef](./type_defs.md#jobbookmarksencryptiontypedef)
-
-<a id="errordetailtypedef"></a>
-
+1. See [:material-code-braces: S3EncryptionTypeDef](./type_defs.md#s3encryptiontypedef) 
+2. See [:material-code-braces: CloudWatchEncryptionTypeDef](./type_defs.md#cloudwatchencryptiontypedef) 
+3. See [:material-code-braces: JobBookmarksEncryptionTypeDef](./type_defs.md#jobbookmarksencryptiontypedef) 
 ## ErrorDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ErrorDetailTypeDef
+
+def get_value() -> ErrorDetailTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="errordetailstypedef"></a>
+```python title="Definition"
+class ErrorDetailTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## ErrorDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ErrorDetailsTypeDef
+
+def get_value() -> ErrorDetailsTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="evaluationmetricstypedef"></a>
+```python title="Definition"
+class ErrorDetailsTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## EvaluationMetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import EvaluationMetricsTypeDef
+
+def get_value() -> EvaluationMetricsTypeDef:
+    return {
+        "TransformType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EvaluationMetricsTypeDef(TypedDict):
+    TransformType: TransformTypeType,  # (1)
+    FindMatchesMetrics: NotRequired[FindMatchesMetricsTypeDef],  # (2)
+```
 
-- `TransformType`: `Literal['FIND_MATCHES']` (see
-  [TransformTypeType](./literals.md#transformtypetype))
-
-Optional fields:
-
-- `FindMatchesMetrics`:
-  [FindMatchesMetricsTypeDef](./type_defs.md#findmatchesmetricstypedef)
-
-<a id="eventbatchingconditiontypedef"></a>
-
+1. See [:material-code-brackets: TransformTypeType](./literals.md#transformtypetype) 
+2. See [:material-code-braces: FindMatchesMetricsTypeDef](./type_defs.md#findmatchesmetricstypedef) 
 ## EventBatchingConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import EventBatchingConditionTypeDef
+
+def get_value() -> EventBatchingConditionTypeDef:
+    return {
+        "BatchSize": ...,
+    }
 ```
 
-Required fields:
-
-- `BatchSize`: `int`
-
-Optional fields:
-
-- `BatchWindow`: `int`
-
-<a id="executionpropertytypedef"></a>
+```python title="Definition"
+class EventBatchingConditionTypeDef(TypedDict):
+    BatchSize: int,
+    BatchWindow: NotRequired[int],
+```
 
 ## ExecutionPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ExecutionPropertyTypeDef
+
+def get_value() -> ExecutionPropertyTypeDef:
+    return {
+        "MaxConcurrentRuns": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxConcurrentRuns`: `int`
-
-<a id="exportlabelstaskrunpropertiestypedef"></a>
+```python title="Definition"
+class ExecutionPropertyTypeDef(TypedDict):
+    MaxConcurrentRuns: NotRequired[int],
+```
 
 ## ExportLabelsTaskRunPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ExportLabelsTaskRunPropertiesTypeDef
+
+def get_value() -> ExportLabelsTaskRunPropertiesTypeDef:
+    return {
+        "OutputS3Path": ...,
+    }
 ```
 
-Optional fields:
-
-- `OutputS3Path`: `str`
-
-<a id="findmatchesmetricstypedef"></a>
+```python title="Definition"
+class ExportLabelsTaskRunPropertiesTypeDef(TypedDict):
+    OutputS3Path: NotRequired[str],
+```
 
 ## FindMatchesMetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import FindMatchesMetricsTypeDef
+
+def get_value() -> FindMatchesMetricsTypeDef:
+    return {
+        "AreaUnderPRCurve": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FindMatchesMetricsTypeDef(TypedDict):
+    AreaUnderPRCurve: NotRequired[float],
+    Precision: NotRequired[float],
+    Recall: NotRequired[float],
+    F1: NotRequired[float],
+    ConfusionMatrix: NotRequired[ConfusionMatrixTypeDef],  # (1)
+    ColumnImportances: NotRequired[List[ColumnImportanceTypeDef]],  # (2)
+```
 
-- `AreaUnderPRCurve`: `float`
-- `Precision`: `float`
-- `Recall`: `float`
-- `F1`: `float`
-- `ConfusionMatrix`:
-  [ConfusionMatrixTypeDef](./type_defs.md#confusionmatrixtypedef)
-- `ColumnImportances`:
-  `List`\[[ColumnImportanceTypeDef](./type_defs.md#columnimportancetypedef)\]
-
-<a id="findmatchesparameterstypedef"></a>
-
+1. See [:material-code-braces: ConfusionMatrixTypeDef](./type_defs.md#confusionmatrixtypedef) 
+2. See [:material-code-braces: ColumnImportanceTypeDef](./type_defs.md#columnimportancetypedef) 
 ## FindMatchesParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import FindMatchesParametersTypeDef
+
+def get_value() -> FindMatchesParametersTypeDef:
+    return {
+        "PrimaryKeyColumnName": ...,
+    }
 ```
 
-Optional fields:
-
-- `PrimaryKeyColumnName`: `str`
-- `PrecisionRecallTradeoff`: `float`
-- `AccuracyCostTradeoff`: `float`
-- `EnforceProvidedLabels`: `bool`
-
-<a id="findmatchestaskrunpropertiestypedef"></a>
+```python title="Definition"
+class FindMatchesParametersTypeDef(TypedDict):
+    PrimaryKeyColumnName: NotRequired[str],
+    PrecisionRecallTradeoff: NotRequired[float],
+    AccuracyCostTradeoff: NotRequired[float],
+    EnforceProvidedLabels: NotRequired[bool],
+```
 
 ## FindMatchesTaskRunPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import FindMatchesTaskRunPropertiesTypeDef
+
+def get_value() -> FindMatchesTaskRunPropertiesTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Optional fields:
-
-- `JobId`: `str`
-- `JobName`: `str`
-- `JobRunId`: `str`
-
-<a id="getblueprintrequestrequesttypedef"></a>
+```python title="Definition"
+class FindMatchesTaskRunPropertiesTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    JobName: NotRequired[str],
+    JobRunId: NotRequired[str],
+```
 
 ## GetBlueprintRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetBlueprintRequestRequestTypeDef
+
+def get_value() -> GetBlueprintRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `IncludeBlueprint`: `bool`
-- `IncludeParameterSpec`: `bool`
-
-<a id="getblueprintresponsetypedef"></a>
+```python title="Definition"
+class GetBlueprintRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IncludeBlueprint: NotRequired[bool],
+    IncludeParameterSpec: NotRequired[bool],
+```
 
 ## GetBlueprintResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetBlueprintResponseTypeDef
+
+def get_value() -> GetBlueprintResponseTypeDef:
+    return {
+        "Blueprint": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBlueprintResponseTypeDef(TypedDict):
+    Blueprint: BlueprintTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Blueprint`: [BlueprintTypeDef](./type_defs.md#blueprinttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getblueprintrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BlueprintTypeDef](./type_defs.md#blueprinttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBlueprintRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetBlueprintRunRequestRequestTypeDef
+
+def get_value() -> GetBlueprintRunRequestRequestTypeDef:
+    return {
+        "BlueprintName": ...,
+        "RunId": ...,
+    }
 ```
 
-Required fields:
-
-- `BlueprintName`: `str`
-- `RunId`: `str`
-
-<a id="getblueprintrunresponsetypedef"></a>
+```python title="Definition"
+class GetBlueprintRunRequestRequestTypeDef(TypedDict):
+    BlueprintName: str,
+    RunId: str,
+```
 
 ## GetBlueprintRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetBlueprintRunResponseTypeDef
+
+def get_value() -> GetBlueprintRunResponseTypeDef:
+    return {
+        "BlueprintRun": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBlueprintRunResponseTypeDef(TypedDict):
+    BlueprintRun: BlueprintRunTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BlueprintRun`: [BlueprintRunTypeDef](./type_defs.md#blueprintruntypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getblueprintrunsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BlueprintRunTypeDef](./type_defs.md#blueprintruntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBlueprintRunsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetBlueprintRunsRequestRequestTypeDef
+
+def get_value() -> GetBlueprintRunsRequestRequestTypeDef:
+    return {
+        "BlueprintName": ...,
+    }
 ```
 
-Required fields:
-
-- `BlueprintName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getblueprintrunsresponsetypedef"></a>
+```python title="Definition"
+class GetBlueprintRunsRequestRequestTypeDef(TypedDict):
+    BlueprintName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetBlueprintRunsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetBlueprintRunsResponseTypeDef
+
+def get_value() -> GetBlueprintRunsResponseTypeDef:
+    return {
+        "BlueprintRuns": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBlueprintRunsResponseTypeDef(TypedDict):
+    BlueprintRuns: List[BlueprintRunTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BlueprintRuns`:
-  `List`\[[BlueprintRunTypeDef](./type_defs.md#blueprintruntypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcatalogimportstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BlueprintRunTypeDef](./type_defs.md#blueprintruntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCatalogImportStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetCatalogImportStatusRequestRequestTypeDef
+
+def get_value() -> GetCatalogImportStatusRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="getcatalogimportstatusresponsetypedef"></a>
+```python title="Definition"
+class GetCatalogImportStatusRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+```
 
 ## GetCatalogImportStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetCatalogImportStatusResponseTypeDef
+
+def get_value() -> GetCatalogImportStatusResponseTypeDef:
+    return {
+        "ImportStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCatalogImportStatusResponseTypeDef(TypedDict):
+    ImportStatus: CatalogImportStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ImportStatus`:
-  [CatalogImportStatusTypeDef](./type_defs.md#catalogimportstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getclassifierrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CatalogImportStatusTypeDef](./type_defs.md#catalogimportstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetClassifierRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetClassifierRequestRequestTypeDef
+
+def get_value() -> GetClassifierRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getclassifierresponsetypedef"></a>
+```python title="Definition"
+class GetClassifierRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetClassifierResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetClassifierResponseTypeDef
+
+def get_value() -> GetClassifierResponseTypeDef:
+    return {
+        "Classifier": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetClassifierResponseTypeDef(TypedDict):
+    Classifier: ClassifierTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Classifier`: [ClassifierTypeDef](./type_defs.md#classifiertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ClassifierTypeDef](./type_defs.md#classifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetClassifiersRequestGetClassifiersPaginateTypeDef
 
-<a id="getclassifiersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetClassifiersRequestGetClassifiersPaginateTypeDef
 
+def get_value() -> GetClassifiersRequestGetClassifiersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetClassifiersRequestGetClassifiersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetClassifiersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetClassifiersRequestRequestTypeDef
+
+def get_value() -> GetClassifiersRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getclassifiersresponsetypedef"></a>
+```python title="Definition"
+class GetClassifiersRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetClassifiersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetClassifiersResponseTypeDef
+
+def get_value() -> GetClassifiersResponseTypeDef:
+    return {
+        "Classifiers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetClassifiersResponseTypeDef(TypedDict):
+    Classifiers: List[ClassifierTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Classifiers`:
-  `List`\[[ClassifierTypeDef](./type_defs.md#classifiertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcolumnstatisticsforpartitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClassifierTypeDef](./type_defs.md#classifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetColumnStatisticsForPartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetColumnStatisticsForPartitionRequestRequestTypeDef
+
+def get_value() -> GetColumnStatisticsForPartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionValues": ...,
+        "ColumnNames": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionValues`: `Sequence`\[`str`\]
-- `ColumnNames`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="getcolumnstatisticsforpartitionresponsetypedef"></a>
+```python title="Definition"
+class GetColumnStatisticsForPartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    ColumnNames: Sequence[str],
+    CatalogId: NotRequired[str],
+```
 
 ## GetColumnStatisticsForPartitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetColumnStatisticsForPartitionResponseTypeDef
+
+def get_value() -> GetColumnStatisticsForPartitionResponseTypeDef:
+    return {
+        "ColumnStatisticsList": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetColumnStatisticsForPartitionResponseTypeDef(TypedDict):
+    ColumnStatisticsList: List[ColumnStatisticsTypeDef],  # (1)
+    Errors: List[ColumnErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
-- `Errors`: `List`\[[ColumnErrorTypeDef](./type_defs.md#columnerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcolumnstatisticsfortablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef) 
+2. See [:material-code-braces: ColumnErrorTypeDef](./type_defs.md#columnerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetColumnStatisticsForTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetColumnStatisticsForTableRequestRequestTypeDef
+
+def get_value() -> GetColumnStatisticsForTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "ColumnNames": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `ColumnNames`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="getcolumnstatisticsfortableresponsetypedef"></a>
+```python title="Definition"
+class GetColumnStatisticsForTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    ColumnNames: Sequence[str],
+    CatalogId: NotRequired[str],
+```
 
 ## GetColumnStatisticsForTableResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetColumnStatisticsForTableResponseTypeDef
+
+def get_value() -> GetColumnStatisticsForTableResponseTypeDef:
+    return {
+        "ColumnStatisticsList": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetColumnStatisticsForTableResponseTypeDef(TypedDict):
+    ColumnStatisticsList: List[ColumnStatisticsTypeDef],  # (1)
+    Errors: List[ColumnErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ColumnStatisticsList`:
-  `List`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
-- `Errors`: `List`\[[ColumnErrorTypeDef](./type_defs.md#columnerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef) 
+2. See [:material-code-braces: ColumnErrorTypeDef](./type_defs.md#columnerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetConnectionRequestRequestTypeDef
+
+def get_value() -> GetConnectionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `HidePassword`: `bool`
-
-<a id="getconnectionresponsetypedef"></a>
+```python title="Definition"
+class GetConnectionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    CatalogId: NotRequired[str],
+    HidePassword: NotRequired[bool],
+```
 
 ## GetConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetConnectionResponseTypeDef
+
+def get_value() -> GetConnectionResponseTypeDef:
+    return {
+        "Connection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConnectionResponseTypeDef(TypedDict):
+    Connection: ConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconnectionsfiltertypedef"></a>
-
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConnectionsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetConnectionsFilterTypeDef
+
+def get_value() -> GetConnectionsFilterTypeDef:
+    return {
+        "MatchCriteria": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetConnectionsFilterTypeDef(TypedDict):
+    MatchCriteria: NotRequired[Sequence[str]],
+    ConnectionType: NotRequired[ConnectionTypeType],  # (1)
+```
 
-- `MatchCriteria`: `Sequence`\[`str`\]
-- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
+1. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+## GetConnectionsRequestGetConnectionsPaginateTypeDef
 
-<a id="getconnectionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetConnectionsRequestGetConnectionsPaginateTypeDef
 
+def get_value() -> GetConnectionsRequestGetConnectionsPaginateTypeDef:
+    return {
+        "CatalogId": ...,
+    }
+```
+
+```python title="Definition"
+class GetConnectionsRequestGetConnectionsPaginateTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    Filter: NotRequired[GetConnectionsFilterTypeDef],  # (1)
+    HidePassword: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetConnectionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetConnectionsRequestRequestTypeDef
+
+def get_value() -> GetConnectionsRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetConnectionsRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    Filter: NotRequired[GetConnectionsFilterTypeDef],  # (1)
+    HidePassword: NotRequired[bool],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `CatalogId`: `str`
-- `Filter`:
-  [GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef)
-- `HidePassword`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getconnectionsresponsetypedef"></a>
-
+1. See [:material-code-braces: GetConnectionsFilterTypeDef](./type_defs.md#getconnectionsfiltertypedef) 
 ## GetConnectionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetConnectionsResponseTypeDef
+
+def get_value() -> GetConnectionsResponseTypeDef:
+    return {
+        "ConnectionList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConnectionsResponseTypeDef(TypedDict):
+    ConnectionList: List[ConnectionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConnectionList`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCrawlerMetricsRequestGetCrawlerMetricsPaginateTypeDef
 
-<a id="getcrawlermetricsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetCrawlerMetricsRequestGetCrawlerMetricsPaginateTypeDef
 
+def get_value() -> GetCrawlerMetricsRequestGetCrawlerMetricsPaginateTypeDef:
+    return {
+        "CrawlerNameList": ...,
+    }
+```
+
+```python title="Definition"
+class GetCrawlerMetricsRequestGetCrawlerMetricsPaginateTypeDef(TypedDict):
+    CrawlerNameList: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetCrawlerMetricsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetCrawlerMetricsRequestRequestTypeDef
+
+def get_value() -> GetCrawlerMetricsRequestRequestTypeDef:
+    return {
+        "CrawlerNameList": ...,
+    }
 ```
 
-Optional fields:
-
-- `CrawlerNameList`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getcrawlermetricsresponsetypedef"></a>
+```python title="Definition"
+class GetCrawlerMetricsRequestRequestTypeDef(TypedDict):
+    CrawlerNameList: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetCrawlerMetricsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetCrawlerMetricsResponseTypeDef
+
+def get_value() -> GetCrawlerMetricsResponseTypeDef:
+    return {
+        "CrawlerMetricsList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCrawlerMetricsResponseTypeDef(TypedDict):
+    CrawlerMetricsList: List[CrawlerMetricsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CrawlerMetricsList`:
-  `List`\[[CrawlerMetricsTypeDef](./type_defs.md#crawlermetricstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcrawlerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CrawlerMetricsTypeDef](./type_defs.md#crawlermetricstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCrawlerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetCrawlerRequestRequestTypeDef
+
+def get_value() -> GetCrawlerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getcrawlerresponsetypedef"></a>
+```python title="Definition"
+class GetCrawlerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetCrawlerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetCrawlerResponseTypeDef
+
+def get_value() -> GetCrawlerResponseTypeDef:
+    return {
+        "Crawler": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCrawlerResponseTypeDef(TypedDict):
+    Crawler: CrawlerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Crawler`: [CrawlerTypeDef](./type_defs.md#crawlertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CrawlerTypeDef](./type_defs.md#crawlertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetCrawlersRequestGetCrawlersPaginateTypeDef
 
-<a id="getcrawlersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetCrawlersRequestGetCrawlersPaginateTypeDef
 
+def get_value() -> GetCrawlersRequestGetCrawlersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetCrawlersRequestGetCrawlersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetCrawlersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetCrawlersRequestRequestTypeDef
+
+def get_value() -> GetCrawlersRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getcrawlersresponsetypedef"></a>
+```python title="Definition"
+class GetCrawlersRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetCrawlersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetCrawlersResponseTypeDef
+
+def get_value() -> GetCrawlersResponseTypeDef:
+    return {
+        "Crawlers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCrawlersResponseTypeDef(TypedDict):
+    Crawlers: List[CrawlerTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Crawlers`: `List`\[[CrawlerTypeDef](./type_defs.md#crawlertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdatacatalogencryptionsettingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CrawlerTypeDef](./type_defs.md#crawlertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDataCatalogEncryptionSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDataCatalogEncryptionSettingsRequestRequestTypeDef
+
+def get_value() -> GetDataCatalogEncryptionSettingsRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="getdatacatalogencryptionsettingsresponsetypedef"></a>
+```python title="Definition"
+class GetDataCatalogEncryptionSettingsRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+```
 
 ## GetDataCatalogEncryptionSettingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDataCatalogEncryptionSettingsResponseTypeDef
+
+def get_value() -> GetDataCatalogEncryptionSettingsResponseTypeDef:
+    return {
+        "DataCatalogEncryptionSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDataCatalogEncryptionSettingsResponseTypeDef(TypedDict):
+    DataCatalogEncryptionSettings: DataCatalogEncryptionSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataCatalogEncryptionSettings`:
-  [DataCatalogEncryptionSettingsTypeDef](./type_defs.md#datacatalogencryptionsettingstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdatabaserequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataCatalogEncryptionSettingsTypeDef](./type_defs.md#datacatalogencryptionsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDatabaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDatabaseRequestRequestTypeDef
+
+def get_value() -> GetDatabaseRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="getdatabaseresponsetypedef"></a>
+```python title="Definition"
+class GetDatabaseRequestRequestTypeDef(TypedDict):
+    Name: str,
+    CatalogId: NotRequired[str],
+```
 
 ## GetDatabaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDatabaseResponseTypeDef
+
+def get_value() -> GetDatabaseResponseTypeDef:
+    return {
+        "Database": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDatabaseResponseTypeDef(TypedDict):
+    Database: DatabaseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatabaseTypeDef](./type_defs.md#databasetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDatabasesRequestGetDatabasesPaginateTypeDef
 
-<a id="getdatabasesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDatabasesRequestGetDatabasesPaginateTypeDef
 
+def get_value() -> GetDatabasesRequestGetDatabasesPaginateTypeDef:
+    return {
+        "CatalogId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDatabasesRequestGetDatabasesPaginateTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    ResourceShareType: NotRequired[ResourceShareTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceShareTypeType](./literals.md#resourcesharetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDatabasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDatabasesRequestRequestTypeDef
+
+def get_value() -> GetDatabasesRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetDatabasesRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ResourceShareType: NotRequired[ResourceShareTypeType],  # (1)
+```
 
-- `CatalogId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ResourceShareType`:
-  [ResourceShareTypeType](./literals.md#resourcesharetypetype)
-
-<a id="getdatabasesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceShareTypeType](./literals.md#resourcesharetypetype) 
 ## GetDatabasesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDatabasesResponseTypeDef
+
+def get_value() -> GetDatabasesResponseTypeDef:
+    return {
+        "DatabaseList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDatabasesResponseTypeDef(TypedDict):
+    DatabaseList: List[DatabaseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DatabaseList`: `List`\[[DatabaseTypeDef](./type_defs.md#databasetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdataflowgraphrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatabaseTypeDef](./type_defs.md#databasetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDataflowGraphRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDataflowGraphRequestRequestTypeDef
+
+def get_value() -> GetDataflowGraphRequestRequestTypeDef:
+    return {
+        "PythonScript": ...,
+    }
 ```
 
-Optional fields:
-
-- `PythonScript`: `str`
-
-<a id="getdataflowgraphresponsetypedef"></a>
+```python title="Definition"
+class GetDataflowGraphRequestRequestTypeDef(TypedDict):
+    PythonScript: NotRequired[str],
+```
 
 ## GetDataflowGraphResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDataflowGraphResponseTypeDef
+
+def get_value() -> GetDataflowGraphResponseTypeDef:
+    return {
+        "DagNodes": ...,
+        "DagEdges": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDataflowGraphResponseTypeDef(TypedDict):
+    DagNodes: List[CodeGenNodeTypeDef],  # (1)
+    DagEdges: List[CodeGenEdgeTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `DagNodes`: `List`\[[CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef)\]
-- `DagEdges`: `List`\[[CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdevendpointrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CodeGenNodeTypeDef](./type_defs.md#codegennodetypedef) 
+2. See [:material-code-braces: CodeGenEdgeTypeDef](./type_defs.md#codegenedgetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDevEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDevEndpointRequestRequestTypeDef
+
+def get_value() -> GetDevEndpointRequestRequestTypeDef:
+    return {
+        "EndpointName": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointName`: `str`
-
-<a id="getdevendpointresponsetypedef"></a>
+```python title="Definition"
+class GetDevEndpointRequestRequestTypeDef(TypedDict):
+    EndpointName: str,
+```
 
 ## GetDevEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDevEndpointResponseTypeDef
+
+def get_value() -> GetDevEndpointResponseTypeDef:
+    return {
+        "DevEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDevEndpointResponseTypeDef(TypedDict):
+    DevEndpoint: DevEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DevEndpoint`: [DevEndpointTypeDef](./type_defs.md#devendpointtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DevEndpointTypeDef](./type_defs.md#devendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDevEndpointsRequestGetDevEndpointsPaginateTypeDef
 
-<a id="getdevendpointsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetDevEndpointsRequestGetDevEndpointsPaginateTypeDef
 
+def get_value() -> GetDevEndpointsRequestGetDevEndpointsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetDevEndpointsRequestGetDevEndpointsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetDevEndpointsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDevEndpointsRequestRequestTypeDef
+
+def get_value() -> GetDevEndpointsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getdevendpointsresponsetypedef"></a>
+```python title="Definition"
+class GetDevEndpointsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetDevEndpointsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetDevEndpointsResponseTypeDef
+
+def get_value() -> GetDevEndpointsResponseTypeDef:
+    return {
+        "DevEndpoints": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDevEndpointsResponseTypeDef(TypedDict):
+    DevEndpoints: List[DevEndpointTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DevEndpoints`:
-  `List`\[[DevEndpointTypeDef](./type_defs.md#devendpointtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getjobbookmarkrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DevEndpointTypeDef](./type_defs.md#devendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobBookmarkRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobBookmarkRequestRequestTypeDef
+
+def get_value() -> GetJobBookmarkRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Required fields:
-
-- `JobName`: `str`
-
-Optional fields:
-
-- `RunId`: `str`
-
-<a id="getjobbookmarkresponsetypedef"></a>
+```python title="Definition"
+class GetJobBookmarkRequestRequestTypeDef(TypedDict):
+    JobName: str,
+    RunId: NotRequired[str],
+```
 
 ## GetJobBookmarkResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobBookmarkResponseTypeDef
+
+def get_value() -> GetJobBookmarkResponseTypeDef:
+    return {
+        "JobBookmarkEntry": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobBookmarkResponseTypeDef(TypedDict):
+    JobBookmarkEntry: JobBookmarkEntryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobBookmarkEntry`:
-  [JobBookmarkEntryTypeDef](./type_defs.md#jobbookmarkentrytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobBookmarkEntryTypeDef](./type_defs.md#jobbookmarkentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobRequestRequestTypeDef
+
+def get_value() -> GetJobRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Required fields:
-
-- `JobName`: `str`
-
-<a id="getjobresponsetypedef"></a>
+```python title="Definition"
+class GetJobRequestRequestTypeDef(TypedDict):
+    JobName: str,
+```
 
 ## GetJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobResponseTypeDef
+
+def get_value() -> GetJobResponseTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobResponseTypeDef(TypedDict):
+    Job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getjobrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobRunRequestRequestTypeDef
+
+def get_value() -> GetJobRunRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+        "RunId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobName`: `str`
-- `RunId`: `str`
-
-Optional fields:
-
-- `PredecessorsIncluded`: `bool`
-
-<a id="getjobrunresponsetypedef"></a>
+```python title="Definition"
+class GetJobRunRequestRequestTypeDef(TypedDict):
+    JobName: str,
+    RunId: str,
+    PredecessorsIncluded: NotRequired[bool],
+```
 
 ## GetJobRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobRunResponseTypeDef
+
+def get_value() -> GetJobRunResponseTypeDef:
+    return {
+        "JobRun": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobRunResponseTypeDef(TypedDict):
+    JobRun: JobRunTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobRun`: [JobRunTypeDef](./type_defs.md#jobruntypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobRunTypeDef](./type_defs.md#jobruntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetJobRunsRequestGetJobRunsPaginateTypeDef
 
-<a id="getjobrunsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetJobRunsRequestGetJobRunsPaginateTypeDef
 
+def get_value() -> GetJobRunsRequestGetJobRunsPaginateTypeDef:
+    return {
+        "JobName": ...,
+    }
+```
+
+```python title="Definition"
+class GetJobRunsRequestGetJobRunsPaginateTypeDef(TypedDict):
+    JobName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetJobRunsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobRunsRequestRequestTypeDef
+
+def get_value() -> GetJobRunsRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Required fields:
-
-- `JobName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getjobrunsresponsetypedef"></a>
+```python title="Definition"
+class GetJobRunsRequestRequestTypeDef(TypedDict):
+    JobName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetJobRunsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobRunsResponseTypeDef
+
+def get_value() -> GetJobRunsResponseTypeDef:
+    return {
+        "JobRuns": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobRunsResponseTypeDef(TypedDict):
+    JobRuns: List[JobRunTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobRuns`: `List`\[[JobRunTypeDef](./type_defs.md#jobruntypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobRunTypeDef](./type_defs.md#jobruntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetJobsRequestGetJobsPaginateTypeDef
 
-<a id="getjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetJobsRequestGetJobsPaginateTypeDef
 
+def get_value() -> GetJobsRequestGetJobsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetJobsRequestGetJobsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobsRequestRequestTypeDef
+
+def get_value() -> GetJobsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getjobsresponsetypedef"></a>
+```python title="Definition"
+class GetJobsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetJobsResponseTypeDef
+
+def get_value() -> GetJobsResponseTypeDef:
+    return {
+        "Jobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobsResponseTypeDef(TypedDict):
+    Jobs: List[JobTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmltaskrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMLTaskRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMLTaskRunRequestRequestTypeDef
+
+def get_value() -> GetMLTaskRunRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+        "TaskRunId": ...,
+    }
 ```
 
-Required fields:
-
-- `TransformId`: `str`
-- `TaskRunId`: `str`
-
-<a id="getmltaskrunresponsetypedef"></a>
+```python title="Definition"
+class GetMLTaskRunRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+    TaskRunId: str,
+```
 
 ## GetMLTaskRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMLTaskRunResponseTypeDef
+
+def get_value() -> GetMLTaskRunResponseTypeDef:
+    return {
+        "TransformId": ...,
+        "TaskRunId": ...,
+        "Status": ...,
+        "LogGroupName": ...,
+        "Properties": ...,
+        "ErrorString": ...,
+        "StartedOn": ...,
+        "LastModifiedOn": ...,
+        "CompletedOn": ...,
+        "ExecutionTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMLTaskRunResponseTypeDef(TypedDict):
+    TransformId: str,
+    TaskRunId: str,
+    Status: TaskStatusTypeType,  # (1)
+    LogGroupName: str,
+    Properties: TaskRunPropertiesTypeDef,  # (2)
+    ErrorString: str,
+    StartedOn: datetime,
+    LastModifiedOn: datetime,
+    CompletedOn: datetime,
+    ExecutionTime: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `TransformId`: `str`
-- `TaskRunId`: `str`
-- `Status`: [TaskStatusTypeType](./literals.md#taskstatustypetype)
-- `LogGroupName`: `str`
-- `Properties`:
-  [TaskRunPropertiesTypeDef](./type_defs.md#taskrunpropertiestypedef)
-- `ErrorString`: `str`
-- `StartedOn`: `datetime`
-- `LastModifiedOn`: `datetime`
-- `CompletedOn`: `datetime`
-- `ExecutionTime`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmltaskrunsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TaskStatusTypeType](./literals.md#taskstatustypetype) 
+2. See [:material-code-braces: TaskRunPropertiesTypeDef](./type_defs.md#taskrunpropertiestypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMLTaskRunsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMLTaskRunsRequestRequestTypeDef
+
+def get_value() -> GetMLTaskRunsRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMLTaskRunsRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filter: NotRequired[TaskRunFilterCriteriaTypeDef],  # (1)
+    Sort: NotRequired[TaskRunSortCriteriaTypeDef],  # (2)
+```
 
-- `TransformId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filter`:
-  [TaskRunFilterCriteriaTypeDef](./type_defs.md#taskrunfiltercriteriatypedef)
-- `Sort`:
-  [TaskRunSortCriteriaTypeDef](./type_defs.md#taskrunsortcriteriatypedef)
-
-<a id="getmltaskrunsresponsetypedef"></a>
-
+1. See [:material-code-braces: TaskRunFilterCriteriaTypeDef](./type_defs.md#taskrunfiltercriteriatypedef) 
+2. See [:material-code-braces: TaskRunSortCriteriaTypeDef](./type_defs.md#taskrunsortcriteriatypedef) 
 ## GetMLTaskRunsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMLTaskRunsResponseTypeDef
+
+def get_value() -> GetMLTaskRunsResponseTypeDef:
+    return {
+        "TaskRuns": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMLTaskRunsResponseTypeDef(TypedDict):
+    TaskRuns: List[TaskRunTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TaskRuns`: `List`\[[TaskRunTypeDef](./type_defs.md#taskruntypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmltransformrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaskRunTypeDef](./type_defs.md#taskruntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMLTransformRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMLTransformRequestRequestTypeDef
+
+def get_value() -> GetMLTransformRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+    }
 ```
 
-Required fields:
-
-- `TransformId`: `str`
-
-<a id="getmltransformresponsetypedef"></a>
+```python title="Definition"
+class GetMLTransformRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+```
 
 ## GetMLTransformResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMLTransformResponseTypeDef
+
+def get_value() -> GetMLTransformResponseTypeDef:
+    return {
+        "TransformId": ...,
+        "Name": ...,
+        "Description": ...,
+        "Status": ...,
+        "CreatedOn": ...,
+        "LastModifiedOn": ...,
+        "InputRecordTables": ...,
+        "Parameters": ...,
+        "EvaluationMetrics": ...,
+        "LabelCount": ...,
+        "Schema": ...,
+        "Role": ...,
+        "GlueVersion": ...,
+        "MaxCapacity": ...,
+        "WorkerType": ...,
+        "NumberOfWorkers": ...,
+        "Timeout": ...,
+        "MaxRetries": ...,
+        "TransformEncryption": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMLTransformResponseTypeDef(TypedDict):
+    TransformId: str,
+    Name: str,
+    Description: str,
+    Status: TransformStatusTypeType,  # (1)
+    CreatedOn: datetime,
+    LastModifiedOn: datetime,
+    InputRecordTables: List[GlueTableTypeDef],  # (2)
+    Parameters: TransformParametersTypeDef,  # (3)
+    EvaluationMetrics: EvaluationMetricsTypeDef,  # (4)
+    LabelCount: int,
+    Schema: List[SchemaColumnTypeDef],  # (5)
+    Role: str,
+    GlueVersion: str,
+    MaxCapacity: float,
+    WorkerType: WorkerTypeType,  # (6)
+    NumberOfWorkers: int,
+    Timeout: int,
+    MaxRetries: int,
+    TransformEncryption: TransformEncryptionTypeDef,  # (7)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (8)
+```
 
-- `TransformId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Status`: [TransformStatusTypeType](./literals.md#transformstatustypetype)
-- `CreatedOn`: `datetime`
-- `LastModifiedOn`: `datetime`
-- `InputRecordTables`:
-  `List`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
-- `Parameters`:
-  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
-- `EvaluationMetrics`:
-  [EvaluationMetricsTypeDef](./type_defs.md#evaluationmetricstypedef)
-- `LabelCount`: `int`
-- `Schema`: `List`\[[SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef)\]
-- `Role`: `str`
-- `GlueVersion`: `str`
-- `MaxCapacity`: `float`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-- `Timeout`: `int`
-- `MaxRetries`: `int`
-- `TransformEncryption`:
-  [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmltransformsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TransformStatusTypeType](./literals.md#transformstatustypetype) 
+2. See [:material-code-braces: GlueTableTypeDef](./type_defs.md#gluetabletypedef) 
+3. See [:material-code-braces: TransformParametersTypeDef](./type_defs.md#transformparameterstypedef) 
+4. See [:material-code-braces: EvaluationMetricsTypeDef](./type_defs.md#evaluationmetricstypedef) 
+5. See [:material-code-braces: SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef) 
+6. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+7. See [:material-code-braces: TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef) 
+8. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMLTransformsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMLTransformsRequestRequestTypeDef
+
+def get_value() -> GetMLTransformsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetMLTransformsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filter: NotRequired[TransformFilterCriteriaTypeDef],  # (1)
+    Sort: NotRequired[TransformSortCriteriaTypeDef],  # (2)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filter`:
-  [TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef)
-- `Sort`:
-  [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
-
-<a id="getmltransformsresponsetypedef"></a>
-
+1. See [:material-code-braces: TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef) 
+2. See [:material-code-braces: TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef) 
 ## GetMLTransformsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMLTransformsResponseTypeDef
+
+def get_value() -> GetMLTransformsResponseTypeDef:
+    return {
+        "Transforms": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMLTransformsResponseTypeDef(TypedDict):
+    Transforms: List[MLTransformTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Transforms`:
-  `List`\[[MLTransformTypeDef](./type_defs.md#mltransformtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmappingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MLTransformTypeDef](./type_defs.md#mltransformtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMappingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMappingRequestRequestTypeDef
+
+def get_value() -> GetMappingRequestRequestTypeDef:
+    return {
+        "Source": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMappingRequestRequestTypeDef(TypedDict):
+    Source: CatalogEntryTypeDef,  # (1)
+    Sinks: NotRequired[Sequence[CatalogEntryTypeDef]],  # (2)
+    Location: NotRequired[LocationTypeDef],  # (3)
+```
 
-- `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
-
-Optional fields:
-
-- `Sinks`:
-  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
-- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-
-<a id="getmappingresponsetypedef"></a>
-
+1. See [:material-code-braces: CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef) 
+2. See [:material-code-braces: CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef) 
+3. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
 ## GetMappingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetMappingResponseTypeDef
+
+def get_value() -> GetMappingResponseTypeDef:
+    return {
+        "Mapping": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMappingResponseTypeDef(TypedDict):
+    Mapping: List[MappingEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Mapping`:
-  `List`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MappingEntryTypeDef](./type_defs.md#mappingentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPartitionIndexesRequestGetPartitionIndexesPaginateTypeDef
 
-<a id="getpartitionindexesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetPartitionIndexesRequestGetPartitionIndexesPaginateTypeDef
 
+def get_value() -> GetPartitionIndexesRequestGetPartitionIndexesPaginateTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
+```
+
+```python title="Definition"
+class GetPartitionIndexesRequestGetPartitionIndexesPaginateTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetPartitionIndexesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetPartitionIndexesRequestRequestTypeDef
+
+def get_value() -> GetPartitionIndexesRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `NextToken`: `str`
-
-<a id="getpartitionindexesresponsetypedef"></a>
+```python title="Definition"
+class GetPartitionIndexesRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    NextToken: NotRequired[str],
+```
 
 ## GetPartitionIndexesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetPartitionIndexesResponseTypeDef
+
+def get_value() -> GetPartitionIndexesResponseTypeDef:
+    return {
+        "PartitionIndexDescriptorList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPartitionIndexesResponseTypeDef(TypedDict):
+    PartitionIndexDescriptorList: List[PartitionIndexDescriptorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PartitionIndexDescriptorList`:
-  `List`\[[PartitionIndexDescriptorTypeDef](./type_defs.md#partitionindexdescriptortypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpartitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionIndexDescriptorTypeDef](./type_defs.md#partitionindexdescriptortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetPartitionRequestRequestTypeDef
+
+def get_value() -> GetPartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionValues": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionValues`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="getpartitionresponsetypedef"></a>
+```python title="Definition"
+class GetPartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    CatalogId: NotRequired[str],
+```
 
 ## GetPartitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetPartitionResponseTypeDef
+
+def get_value() -> GetPartitionResponseTypeDef:
+    return {
+        "Partition": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPartitionResponseTypeDef(TypedDict):
+    Partition: PartitionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Partition`: [PartitionTypeDef](./type_defs.md#partitiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PartitionTypeDef](./type_defs.md#partitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPartitionsRequestGetPartitionsPaginateTypeDef
 
-<a id="getpartitionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetPartitionsRequestGetPartitionsPaginateTypeDef
 
+def get_value() -> GetPartitionsRequestGetPartitionsPaginateTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
+```
+
+```python title="Definition"
+class GetPartitionsRequestGetPartitionsPaginateTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    Expression: NotRequired[str],
+    Segment: NotRequired[SegmentTypeDef],  # (1)
+    ExcludeColumnSchema: NotRequired[bool],
+    TransactionId: NotRequired[str],
+    QueryAsOfTime: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetPartitionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetPartitionsRequestRequestTypeDef
+
+def get_value() -> GetPartitionsRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPartitionsRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    Expression: NotRequired[str],
+    NextToken: NotRequired[str],
+    Segment: NotRequired[SegmentTypeDef],  # (1)
+    MaxResults: NotRequired[int],
+    ExcludeColumnSchema: NotRequired[bool],
+    TransactionId: NotRequired[str],
+    QueryAsOfTime: NotRequired[Union[datetime, str]],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `Expression`: `str`
-- `NextToken`: `str`
-- `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
-- `MaxResults`: `int`
-- `ExcludeColumnSchema`: `bool`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
-
-<a id="getpartitionsresponsetypedef"></a>
-
+1. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
 ## GetPartitionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetPartitionsResponseTypeDef
+
+def get_value() -> GetPartitionsResponseTypeDef:
+    return {
+        "Partitions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPartitionsResponseTypeDef(TypedDict):
+    Partitions: List[PartitionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Partitions`: `List`\[[PartitionTypeDef](./type_defs.md#partitiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getplanrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionTypeDef](./type_defs.md#partitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPlanRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetPlanRequestRequestTypeDef
+
+def get_value() -> GetPlanRequestRequestTypeDef:
+    return {
+        "Mapping": ...,
+        "Source": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPlanRequestRequestTypeDef(TypedDict):
+    Mapping: Sequence[MappingEntryTypeDef],  # (1)
+    Source: CatalogEntryTypeDef,  # (2)
+    Sinks: NotRequired[Sequence[CatalogEntryTypeDef]],  # (3)
+    Location: NotRequired[LocationTypeDef],  # (4)
+    Language: NotRequired[LanguageType],  # (5)
+    AdditionalPlanOptionsMap: NotRequired[Mapping[str, str]],
+```
 
-- `Mapping`:
-  `Sequence`\[[MappingEntryTypeDef](./type_defs.md#mappingentrytypedef)\]
-- `Source`: [CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)
-
-Optional fields:
-
-- `Sinks`:
-  `Sequence`\[[CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef)\]
-- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `Language`: [LanguageType](./literals.md#languagetype)
-- `AdditionalPlanOptionsMap`: `Mapping`\[`str`, `str`\]
-
-<a id="getplanresponsetypedef"></a>
-
+1. See [:material-code-braces: MappingEntryTypeDef](./type_defs.md#mappingentrytypedef) 
+2. See [:material-code-braces: CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef) 
+3. See [:material-code-braces: CatalogEntryTypeDef](./type_defs.md#catalogentrytypedef) 
+4. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+5. See [:material-code-brackets: LanguageType](./literals.md#languagetype) 
 ## GetPlanResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetPlanResponseTypeDef
+
+def get_value() -> GetPlanResponseTypeDef:
+    return {
+        "PythonScript": ...,
+        "ScalaCode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPlanResponseTypeDef(TypedDict):
+    PythonScript: str,
+    ScalaCode: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PythonScript`: `str`
-- `ScalaCode`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getregistryinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRegistryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetRegistryInputRequestTypeDef
+
+def get_value() -> GetRegistryInputRequestTypeDef:
+    return {
+        "RegistryId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRegistryInputRequestTypeDef(TypedDict):
+    RegistryId: RegistryIdTypeDef,  # (1)
+```
 
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-
-<a id="getregistryresponsetypedef"></a>
-
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
 ## GetRegistryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetRegistryResponseTypeDef
+
+def get_value() -> GetRegistryResponseTypeDef:
+    return {
+        "RegistryName": ...,
+        "RegistryArn": ...,
+        "Description": ...,
+        "Status": ...,
+        "CreatedTime": ...,
+        "UpdatedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRegistryResponseTypeDef(TypedDict):
+    RegistryName: str,
+    RegistryArn: str,
+    Description: str,
+    Status: RegistryStatusType,  # (1)
+    CreatedTime: str,
+    UpdatedTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RegistryName`: `str`
-- `RegistryArn`: `str`
-- `Description`: `str`
-- `Status`: [RegistryStatusType](./literals.md#registrystatustype)
-- `CreatedTime`: `str`
-- `UpdatedTime`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: RegistryStatusType](./literals.md#registrystatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef
 
-<a id="getresourcepoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef
 
+def get_value() -> GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourcePoliciesRequestGetResourcePoliciesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetResourcePoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetResourcePoliciesRequestRequestTypeDef
+
+def get_value() -> GetResourcePoliciesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getresourcepoliciesresponsetypedef"></a>
+```python title="Definition"
+class GetResourcePoliciesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetResourcePoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetResourcePoliciesResponseTypeDef
+
+def get_value() -> GetResourcePoliciesResponseTypeDef:
+    return {
+        "GetResourcePoliciesResponseList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourcePoliciesResponseTypeDef(TypedDict):
+    GetResourcePoliciesResponseList: List[GluePolicyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GetResourcePoliciesResponseList`:
-  `List`\[[GluePolicyTypeDef](./type_defs.md#gluepolicytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GluePolicyTypeDef](./type_defs.md#gluepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetResourcePolicyRequestRequestTypeDef
+
+def get_value() -> GetResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceArn`: `str`
-
-<a id="getresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class GetResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: NotRequired[str],
+```
 
 ## GetResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetResourcePolicyResponseTypeDef
+
+def get_value() -> GetResourcePolicyResponseTypeDef:
+    return {
+        "PolicyInJson": ...,
+        "PolicyHash": ...,
+        "CreateTime": ...,
+        "UpdateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourcePolicyResponseTypeDef(TypedDict):
+    PolicyInJson: str,
+    PolicyHash: str,
+    CreateTime: datetime,
+    UpdateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PolicyInJson`: `str`
-- `PolicyHash`: `str`
-- `CreateTime`: `datetime`
-- `UpdateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getschemabydefinitioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSchemaByDefinitionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSchemaByDefinitionInputRequestTypeDef
+
+def get_value() -> GetSchemaByDefinitionInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+        "SchemaDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSchemaByDefinitionInputRequestTypeDef(TypedDict):
+    SchemaId: SchemaIdTypeDef,  # (1)
+    SchemaDefinition: str,
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaDefinition`: `str`
-
-<a id="getschemabydefinitionresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
 ## GetSchemaByDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSchemaByDefinitionResponseTypeDef
+
+def get_value() -> GetSchemaByDefinitionResponseTypeDef:
+    return {
+        "SchemaVersionId": ...,
+        "SchemaArn": ...,
+        "DataFormat": ...,
+        "Status": ...,
+        "CreatedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSchemaByDefinitionResponseTypeDef(TypedDict):
+    SchemaVersionId: str,
+    SchemaArn: str,
+    DataFormat: DataFormatType,  # (1)
+    Status: SchemaVersionStatusType,  # (2)
+    CreatedTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `SchemaVersionId`: `str`
-- `SchemaArn`: `str`
-- `DataFormat`: [DataFormatType](./literals.md#dataformattype)
-- `Status`: [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
-- `CreatedTime`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getschemainputrequesttypedef"></a>
-
+1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
+2. See [:material-code-brackets: SchemaVersionStatusType](./literals.md#schemaversionstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSchemaInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSchemaInputRequestTypeDef
+
+def get_value() -> GetSchemaInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSchemaInputRequestTypeDef(TypedDict):
+    SchemaId: SchemaIdTypeDef,  # (1)
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-
-<a id="getschemaresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
 ## GetSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSchemaResponseTypeDef
+
+def get_value() -> GetSchemaResponseTypeDef:
+    return {
+        "RegistryName": ...,
+        "RegistryArn": ...,
+        "SchemaName": ...,
+        "SchemaArn": ...,
+        "Description": ...,
+        "DataFormat": ...,
+        "Compatibility": ...,
+        "SchemaCheckpoint": ...,
+        "LatestSchemaVersion": ...,
+        "NextSchemaVersion": ...,
+        "SchemaStatus": ...,
+        "CreatedTime": ...,
+        "UpdatedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSchemaResponseTypeDef(TypedDict):
+    RegistryName: str,
+    RegistryArn: str,
+    SchemaName: str,
+    SchemaArn: str,
+    Description: str,
+    DataFormat: DataFormatType,  # (1)
+    Compatibility: CompatibilityType,  # (2)
+    SchemaCheckpoint: int,
+    LatestSchemaVersion: int,
+    NextSchemaVersion: int,
+    SchemaStatus: SchemaStatusType,  # (3)
+    CreatedTime: str,
+    UpdatedTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `RegistryName`: `str`
-- `RegistryArn`: `str`
-- `SchemaName`: `str`
-- `SchemaArn`: `str`
-- `Description`: `str`
-- `DataFormat`: [DataFormatType](./literals.md#dataformattype)
-- `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
-- `SchemaCheckpoint`: `int`
-- `LatestSchemaVersion`: `int`
-- `NextSchemaVersion`: `int`
-- `SchemaStatus`: [SchemaStatusType](./literals.md#schemastatustype)
-- `CreatedTime`: `str`
-- `UpdatedTime`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getschemaversioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
+2. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
+3. See [:material-code-brackets: SchemaStatusType](./literals.md#schemastatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSchemaVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSchemaVersionInputRequestTypeDef
+
+def get_value() -> GetSchemaVersionInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetSchemaVersionInputRequestTypeDef(TypedDict):
+    SchemaId: NotRequired[SchemaIdTypeDef],  # (1)
+    SchemaVersionId: NotRequired[str],
+    SchemaVersionNumber: NotRequired[SchemaVersionNumberTypeDef],  # (2)
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaVersionId`: `str`
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-
-<a id="getschemaversionresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
 ## GetSchemaVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSchemaVersionResponseTypeDef
+
+def get_value() -> GetSchemaVersionResponseTypeDef:
+    return {
+        "SchemaVersionId": ...,
+        "SchemaDefinition": ...,
+        "DataFormat": ...,
+        "SchemaArn": ...,
+        "VersionNumber": ...,
+        "Status": ...,
+        "CreatedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSchemaVersionResponseTypeDef(TypedDict):
+    SchemaVersionId: str,
+    SchemaDefinition: str,
+    DataFormat: DataFormatType,  # (1)
+    SchemaArn: str,
+    VersionNumber: int,
+    Status: SchemaVersionStatusType,  # (2)
+    CreatedTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `SchemaVersionId`: `str`
-- `SchemaDefinition`: `str`
-- `DataFormat`: [DataFormatType](./literals.md#dataformattype)
-- `SchemaArn`: `str`
-- `VersionNumber`: `int`
-- `Status`: [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
-- `CreatedTime`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getschemaversionsdiffinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: DataFormatType](./literals.md#dataformattype) 
+2. See [:material-code-brackets: SchemaVersionStatusType](./literals.md#schemaversionstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSchemaVersionsDiffInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSchemaVersionsDiffInputRequestTypeDef
+
+def get_value() -> GetSchemaVersionsDiffInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+        "FirstSchemaVersionNumber": ...,
+        "SecondSchemaVersionNumber": ...,
+        "SchemaDiffType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSchemaVersionsDiffInputRequestTypeDef(TypedDict):
+    SchemaId: SchemaIdTypeDef,  # (1)
+    FirstSchemaVersionNumber: SchemaVersionNumberTypeDef,  # (2)
+    SecondSchemaVersionNumber: SchemaVersionNumberTypeDef,  # (2)
+    SchemaDiffType: SchemaDiffTypeType,  # (4)
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `FirstSchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `SecondSchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `SchemaDiffType`: `Literal['SYNTAX_DIFF']` (see
-  [SchemaDiffTypeType](./literals.md#schemadifftypetype))
-
-<a id="getschemaversionsdiffresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+3. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+4. See [:material-code-brackets: SchemaDiffTypeType](./literals.md#schemadifftypetype) 
 ## GetSchemaVersionsDiffResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSchemaVersionsDiffResponseTypeDef
+
+def get_value() -> GetSchemaVersionsDiffResponseTypeDef:
+    return {
+        "Diff": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSchemaVersionsDiffResponseTypeDef(TypedDict):
+    Diff: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Diff`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsecurityconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSecurityConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSecurityConfigurationRequestRequestTypeDef
+
+def get_value() -> GetSecurityConfigurationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getsecurityconfigurationresponsetypedef"></a>
+```python title="Definition"
+class GetSecurityConfigurationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetSecurityConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSecurityConfigurationResponseTypeDef
+
+def get_value() -> GetSecurityConfigurationResponseTypeDef:
+    return {
+        "SecurityConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSecurityConfigurationResponseTypeDef(TypedDict):
+    SecurityConfiguration: SecurityConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SecurityConfiguration`:
-  [SecurityConfigurationTypeDef](./type_defs.md#securityconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SecurityConfigurationTypeDef](./type_defs.md#securityconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSecurityConfigurationsRequestGetSecurityConfigurationsPaginateTypeDef
 
-<a id="getsecurityconfigurationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetSecurityConfigurationsRequestGetSecurityConfigurationsPaginateTypeDef
 
+def get_value() -> GetSecurityConfigurationsRequestGetSecurityConfigurationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetSecurityConfigurationsRequestGetSecurityConfigurationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetSecurityConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSecurityConfigurationsRequestRequestTypeDef
+
+def get_value() -> GetSecurityConfigurationsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getsecurityconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class GetSecurityConfigurationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetSecurityConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSecurityConfigurationsResponseTypeDef
+
+def get_value() -> GetSecurityConfigurationsResponseTypeDef:
+    return {
+        "SecurityConfigurations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSecurityConfigurationsResponseTypeDef(TypedDict):
+    SecurityConfigurations: List[SecurityConfigurationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SecurityConfigurations`:
-  `List`\[[SecurityConfigurationTypeDef](./type_defs.md#securityconfigurationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SecurityConfigurationTypeDef](./type_defs.md#securityconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSessionRequestRequestTypeDef
+
+def get_value() -> GetSessionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `RequestOrigin`: `str`
-
-<a id="getsessionresponsetypedef"></a>
+```python title="Definition"
+class GetSessionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    RequestOrigin: NotRequired[str],
+```
 
 ## GetSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetSessionResponseTypeDef
+
+def get_value() -> GetSessionResponseTypeDef:
+    return {
+        "Session": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSessionResponseTypeDef(TypedDict):
+    Session: SessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Session`: [SessionTypeDef](./type_defs.md#sessiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getstatementrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SessionTypeDef](./type_defs.md#sessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStatementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetStatementRequestRequestTypeDef
+
+def get_value() -> GetStatementRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `SessionId`: `str`
-- `Id`: `int`
-
-Optional fields:
-
-- `RequestOrigin`: `str`
-
-<a id="getstatementresponsetypedef"></a>
+```python title="Definition"
+class GetStatementRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+    Id: int,
+    RequestOrigin: NotRequired[str],
+```
 
 ## GetStatementResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetStatementResponseTypeDef
+
+def get_value() -> GetStatementResponseTypeDef:
+    return {
+        "Statement": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStatementResponseTypeDef(TypedDict):
+    Statement: StatementTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Statement`: [StatementTypeDef](./type_defs.md#statementtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTableRequestRequestTypeDef
+
+def get_value() -> GetTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
-
-<a id="gettableresponsetypedef"></a>
+```python title="Definition"
+class GetTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    Name: str,
+    CatalogId: NotRequired[str],
+    TransactionId: NotRequired[str],
+    QueryAsOfTime: NotRequired[Union[datetime, str]],
+```
 
 ## GetTableResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTableResponseTypeDef
+
+def get_value() -> GetTableResponseTypeDef:
+    return {
+        "Table": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTableResponseTypeDef(TypedDict):
+    Table: TableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettableversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTableVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTableVersionRequestRequestTypeDef
+
+def get_value() -> GetTableVersionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `VersionId`: `str`
-
-<a id="gettableversionresponsetypedef"></a>
+```python title="Definition"
+class GetTableVersionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    VersionId: NotRequired[str],
+```
 
 ## GetTableVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTableVersionResponseTypeDef
+
+def get_value() -> GetTableVersionResponseTypeDef:
+    return {
+        "TableVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTableVersionResponseTypeDef(TypedDict):
+    TableVersion: TableVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableVersion`: [TableVersionTypeDef](./type_defs.md#tableversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TableVersionTypeDef](./type_defs.md#tableversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTableVersionsRequestGetTableVersionsPaginateTypeDef
 
-<a id="gettableversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetTableVersionsRequestGetTableVersionsPaginateTypeDef
 
+def get_value() -> GetTableVersionsRequestGetTableVersionsPaginateTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
+```
+
+```python title="Definition"
+class GetTableVersionsRequestGetTableVersionsPaginateTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetTableVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTableVersionsRequestRequestTypeDef
+
+def get_value() -> GetTableVersionsRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="gettableversionsresponsetypedef"></a>
+```python title="Definition"
+class GetTableVersionsRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetTableVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTableVersionsResponseTypeDef
+
+def get_value() -> GetTableVersionsResponseTypeDef:
+    return {
+        "TableVersions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTableVersionsResponseTypeDef(TypedDict):
+    TableVersions: List[TableVersionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableVersions`:
-  `List`\[[TableVersionTypeDef](./type_defs.md#tableversiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TableVersionTypeDef](./type_defs.md#tableversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTablesRequestGetTablesPaginateTypeDef
 
-<a id="gettablesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetTablesRequestGetTablesPaginateTypeDef
 
+def get_value() -> GetTablesRequestGetTablesPaginateTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
+```
+
+```python title="Definition"
+class GetTablesRequestGetTablesPaginateTypeDef(TypedDict):
+    DatabaseName: str,
+    CatalogId: NotRequired[str],
+    Expression: NotRequired[str],
+    TransactionId: NotRequired[str],
+    QueryAsOfTime: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetTablesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTablesRequestRequestTypeDef
+
+def get_value() -> GetTablesRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `Expression`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
-
-<a id="gettablesresponsetypedef"></a>
+```python title="Definition"
+class GetTablesRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    CatalogId: NotRequired[str],
+    Expression: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    TransactionId: NotRequired[str],
+    QueryAsOfTime: NotRequired[Union[datetime, str]],
+```
 
 ## GetTablesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTablesResponseTypeDef
+
+def get_value() -> GetTablesResponseTypeDef:
+    return {
+        "TableList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTablesResponseTypeDef(TypedDict):
+    TableList: List[TableTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableList`: `List`\[[TableTypeDef](./type_defs.md#tabletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTagsRequestRequestTypeDef
+
+def get_value() -> GetTagsRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="gettagsresponsetypedef"></a>
+```python title="Definition"
+class GetTagsRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## GetTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTagsResponseTypeDef
+
+def get_value() -> GetTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTagsResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettriggerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTriggerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTriggerRequestRequestTypeDef
+
+def get_value() -> GetTriggerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="gettriggerresponsetypedef"></a>
+```python title="Definition"
+class GetTriggerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetTriggerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTriggerResponseTypeDef
+
+def get_value() -> GetTriggerResponseTypeDef:
+    return {
+        "Trigger": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTriggerResponseTypeDef(TypedDict):
+    Trigger: TriggerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Trigger`: [TriggerTypeDef](./type_defs.md#triggertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TriggerTypeDef](./type_defs.md#triggertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTriggersRequestGetTriggersPaginateTypeDef
 
-<a id="gettriggersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetTriggersRequestGetTriggersPaginateTypeDef
 
+def get_value() -> GetTriggersRequestGetTriggersPaginateTypeDef:
+    return {
+        "DependentJobName": ...,
+    }
+```
+
+```python title="Definition"
+class GetTriggersRequestGetTriggersPaginateTypeDef(TypedDict):
+    DependentJobName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetTriggersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTriggersRequestRequestTypeDef
+
+def get_value() -> GetTriggersRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `DependentJobName`: `str`
-- `MaxResults`: `int`
-
-<a id="gettriggersresponsetypedef"></a>
+```python title="Definition"
+class GetTriggersRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    DependentJobName: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetTriggersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetTriggersResponseTypeDef
+
+def get_value() -> GetTriggersResponseTypeDef:
+    return {
+        "Triggers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTriggersResponseTypeDef(TypedDict):
+    Triggers: List[TriggerTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Triggers`: `List`\[[TriggerTypeDef](./type_defs.md#triggertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getunfilteredpartitionmetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TriggerTypeDef](./type_defs.md#triggertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUnfilteredPartitionMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUnfilteredPartitionMetadataRequestRequestTypeDef
+
+def get_value() -> GetUnfilteredPartitionMetadataRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionValues": ...,
+        "SupportedPermissionTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUnfilteredPartitionMetadataRequestRequestTypeDef(TypedDict):
+    CatalogId: str,
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (1)
+    AuditContext: NotRequired[AuditContextTypeDef],  # (2)
+```
 
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionValues`: `Sequence`\[`str`\]
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-
-Optional fields:
-
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
-
-<a id="getunfilteredpartitionmetadataresponsetypedef"></a>
-
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
 ## GetUnfilteredPartitionMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUnfilteredPartitionMetadataResponseTypeDef
+
+def get_value() -> GetUnfilteredPartitionMetadataResponseTypeDef:
+    return {
+        "Partition": ...,
+        "AuthorizedColumns": ...,
+        "IsRegisteredWithLakeFormation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUnfilteredPartitionMetadataResponseTypeDef(TypedDict):
+    Partition: PartitionTypeDef,  # (1)
+    AuthorizedColumns: List[str],
+    IsRegisteredWithLakeFormation: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Partition`: [PartitionTypeDef](./type_defs.md#partitiontypedef)
-- `AuthorizedColumns`: `List`\[`str`\]
-- `IsRegisteredWithLakeFormation`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getunfilteredpartitionsmetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionTypeDef](./type_defs.md#partitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUnfilteredPartitionsMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUnfilteredPartitionsMetadataRequestRequestTypeDef
+
+def get_value() -> GetUnfilteredPartitionsMetadataRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+        "DatabaseName": ...,
+        "TableName": ...,
+        "SupportedPermissionTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUnfilteredPartitionsMetadataRequestRequestTypeDef(TypedDict):
+    CatalogId: str,
+    DatabaseName: str,
+    TableName: str,
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (1)
+    Expression: NotRequired[str],
+    AuditContext: NotRequired[AuditContextTypeDef],  # (2)
+    NextToken: NotRequired[str],
+    Segment: NotRequired[SegmentTypeDef],  # (3)
+    MaxResults: NotRequired[int],
+```
 
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-
-Optional fields:
-
-- `Expression`: `str`
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
-- `NextToken`: `str`
-- `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
-- `MaxResults`: `int`
-
-<a id="getunfilteredpartitionsmetadataresponsetypedef"></a>
-
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
+3. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
 ## GetUnfilteredPartitionsMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUnfilteredPartitionsMetadataResponseTypeDef
+
+def get_value() -> GetUnfilteredPartitionsMetadataResponseTypeDef:
+    return {
+        "UnfilteredPartitions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUnfilteredPartitionsMetadataResponseTypeDef(TypedDict):
+    UnfilteredPartitions: List[UnfilteredPartitionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UnfilteredPartitions`:
-  `List`\[[UnfilteredPartitionTypeDef](./type_defs.md#unfilteredpartitiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getunfilteredtablemetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UnfilteredPartitionTypeDef](./type_defs.md#unfilteredpartitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUnfilteredTableMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUnfilteredTableMetadataRequestRequestTypeDef
+
+def get_value() -> GetUnfilteredTableMetadataRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+        "DatabaseName": ...,
+        "Name": ...,
+        "SupportedPermissionTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUnfilteredTableMetadataRequestRequestTypeDef(TypedDict):
+    CatalogId: str,
+    DatabaseName: str,
+    Name: str,
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (1)
+    AuditContext: NotRequired[AuditContextTypeDef],  # (2)
+```
 
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `Name`: `str`
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-
-Optional fields:
-
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
-
-<a id="getunfilteredtablemetadataresponsetypedef"></a>
-
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
 ## GetUnfilteredTableMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUnfilteredTableMetadataResponseTypeDef
+
+def get_value() -> GetUnfilteredTableMetadataResponseTypeDef:
+    return {
+        "Table": ...,
+        "AuthorizedColumns": ...,
+        "IsRegisteredWithLakeFormation": ...,
+        "CellFilters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUnfilteredTableMetadataResponseTypeDef(TypedDict):
+    Table: TableTypeDef,  # (1)
+    AuthorizedColumns: List[str],
+    IsRegisteredWithLakeFormation: bool,
+    CellFilters: List[ColumnRowFilterTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
-- `AuthorizedColumns`: `List`\[`str`\]
-- `IsRegisteredWithLakeFormation`: `bool`
-- `CellFilters`:
-  `List`\[[ColumnRowFilterTypeDef](./type_defs.md#columnrowfiltertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getuserdefinedfunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ColumnRowFilterTypeDef](./type_defs.md#columnrowfiltertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserDefinedFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUserDefinedFunctionRequestRequestTypeDef
+
+def get_value() -> GetUserDefinedFunctionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="getuserdefinedfunctionresponsetypedef"></a>
+```python title="Definition"
+class GetUserDefinedFunctionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    FunctionName: str,
+    CatalogId: NotRequired[str],
+```
 
 ## GetUserDefinedFunctionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUserDefinedFunctionResponseTypeDef
+
+def get_value() -> GetUserDefinedFunctionResponseTypeDef:
+    return {
+        "UserDefinedFunction": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUserDefinedFunctionResponseTypeDef(TypedDict):
+    UserDefinedFunction: UserDefinedFunctionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserDefinedFunction`:
-  [UserDefinedFunctionTypeDef](./type_defs.md#userdefinedfunctiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: UserDefinedFunctionTypeDef](./type_defs.md#userdefinedfunctiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetUserDefinedFunctionsRequestGetUserDefinedFunctionsPaginateTypeDef
 
-<a id="getuserdefinedfunctionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import GetUserDefinedFunctionsRequestGetUserDefinedFunctionsPaginateTypeDef
 
+def get_value() -> GetUserDefinedFunctionsRequestGetUserDefinedFunctionsPaginateTypeDef:
+    return {
+        "Pattern": ...,
+    }
+```
+
+```python title="Definition"
+class GetUserDefinedFunctionsRequestGetUserDefinedFunctionsPaginateTypeDef(TypedDict):
+    Pattern: str,
+    CatalogId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetUserDefinedFunctionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUserDefinedFunctionsRequestRequestTypeDef
+
+def get_value() -> GetUserDefinedFunctionsRequestRequestTypeDef:
+    return {
+        "Pattern": ...,
+    }
 ```
 
-Required fields:
-
-- `Pattern`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getuserdefinedfunctionsresponsetypedef"></a>
+```python title="Definition"
+class GetUserDefinedFunctionsRequestRequestTypeDef(TypedDict):
+    Pattern: str,
+    CatalogId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetUserDefinedFunctionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetUserDefinedFunctionsResponseTypeDef
+
+def get_value() -> GetUserDefinedFunctionsResponseTypeDef:
+    return {
+        "UserDefinedFunctions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUserDefinedFunctionsResponseTypeDef(TypedDict):
+    UserDefinedFunctions: List[UserDefinedFunctionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserDefinedFunctions`:
-  `List`\[[UserDefinedFunctionTypeDef](./type_defs.md#userdefinedfunctiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserDefinedFunctionTypeDef](./type_defs.md#userdefinedfunctiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkflowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetWorkflowRequestRequestTypeDef
+
+def get_value() -> GetWorkflowRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `IncludeGraph`: `bool`
-
-<a id="getworkflowresponsetypedef"></a>
+```python title="Definition"
+class GetWorkflowRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IncludeGraph: NotRequired[bool],
+```
 
 ## GetWorkflowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetWorkflowResponseTypeDef
+
+def get_value() -> GetWorkflowResponseTypeDef:
+    return {
+        "Workflow": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkflowResponseTypeDef(TypedDict):
+    Workflow: WorkflowTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Workflow`: [WorkflowTypeDef](./type_defs.md#workflowtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkflowrunpropertiesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkflowTypeDef](./type_defs.md#workflowtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkflowRunPropertiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetWorkflowRunPropertiesRequestRequestTypeDef
+
+def get_value() -> GetWorkflowRunPropertiesRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "RunId": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `RunId`: `str`
-
-<a id="getworkflowrunpropertiesresponsetypedef"></a>
+```python title="Definition"
+class GetWorkflowRunPropertiesRequestRequestTypeDef(TypedDict):
+    Name: str,
+    RunId: str,
+```
 
 ## GetWorkflowRunPropertiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetWorkflowRunPropertiesResponseTypeDef
+
+def get_value() -> GetWorkflowRunPropertiesResponseTypeDef:
+    return {
+        "RunProperties": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkflowRunPropertiesResponseTypeDef(TypedDict):
+    RunProperties: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RunProperties`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkflowrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkflowRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetWorkflowRunRequestRequestTypeDef
+
+def get_value() -> GetWorkflowRunRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "RunId": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `RunId`: `str`
-
-Optional fields:
-
-- `IncludeGraph`: `bool`
-
-<a id="getworkflowrunresponsetypedef"></a>
+```python title="Definition"
+class GetWorkflowRunRequestRequestTypeDef(TypedDict):
+    Name: str,
+    RunId: str,
+    IncludeGraph: NotRequired[bool],
+```
 
 ## GetWorkflowRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetWorkflowRunResponseTypeDef
+
+def get_value() -> GetWorkflowRunResponseTypeDef:
+    return {
+        "Run": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkflowRunResponseTypeDef(TypedDict):
+    Run: WorkflowRunTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Run`: [WorkflowRunTypeDef](./type_defs.md#workflowruntypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkflowrunsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkflowRunTypeDef](./type_defs.md#workflowruntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkflowRunsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetWorkflowRunsRequestRequestTypeDef
+
+def get_value() -> GetWorkflowRunsRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `IncludeGraph`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getworkflowrunsresponsetypedef"></a>
+```python title="Definition"
+class GetWorkflowRunsRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IncludeGraph: NotRequired[bool],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetWorkflowRunsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GetWorkflowRunsResponseTypeDef
+
+def get_value() -> GetWorkflowRunsResponseTypeDef:
+    return {
+        "Runs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkflowRunsResponseTypeDef(TypedDict):
+    Runs: List[WorkflowRunTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Runs`: `List`\[[WorkflowRunTypeDef](./type_defs.md#workflowruntypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gluepolicytypedef"></a>
-
+1. See [:material-code-braces: WorkflowRunTypeDef](./type_defs.md#workflowruntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GluePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GluePolicyTypeDef
+
+def get_value() -> GluePolicyTypeDef:
+    return {
+        "PolicyInJson": ...,
+    }
 ```
 
-Optional fields:
-
-- `PolicyInJson`: `str`
-- `PolicyHash`: `str`
-- `CreateTime`: `datetime`
-- `UpdateTime`: `datetime`
-
-<a id="gluetabletypedef"></a>
+```python title="Definition"
+class GluePolicyTypeDef(TypedDict):
+    PolicyInJson: NotRequired[str],
+    PolicyHash: NotRequired[str],
+    CreateTime: NotRequired[datetime],
+    UpdateTime: NotRequired[datetime],
+```
 
 ## GlueTableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GlueTableTypeDef
+
+def get_value() -> GlueTableTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `ConnectionName`: `str`
-
-<a id="grokclassifiertypedef"></a>
+```python title="Definition"
+class GlueTableTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    ConnectionName: NotRequired[str],
+```
 
 ## GrokClassifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import GrokClassifierTypeDef
+
+def get_value() -> GrokClassifierTypeDef:
+    return {
+        "Name": ...,
+        "Classification": ...,
+        "GrokPattern": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Classification`: `str`
-- `GrokPattern`: `str`
-
-Optional fields:
-
-- `CreationTime`: `datetime`
-- `LastUpdated`: `datetime`
-- `Version`: `int`
-- `CustomPatterns`: `str`
-
-<a id="importcatalogtogluerequestrequesttypedef"></a>
+```python title="Definition"
+class GrokClassifierTypeDef(TypedDict):
+    Name: str,
+    Classification: str,
+    GrokPattern: str,
+    CreationTime: NotRequired[datetime],
+    LastUpdated: NotRequired[datetime],
+    Version: NotRequired[int],
+    CustomPatterns: NotRequired[str],
+```
 
 ## ImportCatalogToGlueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ImportCatalogToGlueRequestRequestTypeDef
+
+def get_value() -> ImportCatalogToGlueRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="importlabelstaskrunpropertiestypedef"></a>
+```python title="Definition"
+class ImportCatalogToGlueRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+```
 
 ## ImportLabelsTaskRunPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ImportLabelsTaskRunPropertiesTypeDef
+
+def get_value() -> ImportLabelsTaskRunPropertiesTypeDef:
+    return {
+        "InputS3Path": ...,
+    }
 ```
 
-Optional fields:
-
-- `InputS3Path`: `str`
-- `Replace`: `bool`
-
-<a id="jdbctargettypedef"></a>
+```python title="Definition"
+class ImportLabelsTaskRunPropertiesTypeDef(TypedDict):
+    InputS3Path: NotRequired[str],
+    Replace: NotRequired[bool],
+```
 
 ## JdbcTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import JdbcTargetTypeDef
+
+def get_value() -> JdbcTargetTypeDef:
+    return {
+        "ConnectionName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConnectionName`: `str`
-- `Path`: `str`
-- `Exclusions`: `List`\[`str`\]
-
-<a id="jobbookmarkentrytypedef"></a>
+```python title="Definition"
+class JdbcTargetTypeDef(TypedDict):
+    ConnectionName: NotRequired[str],
+    Path: NotRequired[str],
+    Exclusions: NotRequired[List[str]],
+```
 
 ## JobBookmarkEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import JobBookmarkEntryTypeDef
+
+def get_value() -> JobBookmarkEntryTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Optional fields:
-
-- `JobName`: `str`
-- `Version`: `int`
-- `Run`: `int`
-- `Attempt`: `int`
-- `PreviousRunId`: `str`
-- `RunId`: `str`
-- `JobBookmark`: `str`
-
-<a id="jobbookmarksencryptiontypedef"></a>
+```python title="Definition"
+class JobBookmarkEntryTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    Version: NotRequired[int],
+    Run: NotRequired[int],
+    Attempt: NotRequired[int],
+    PreviousRunId: NotRequired[str],
+    RunId: NotRequired[str],
+    JobBookmark: NotRequired[str],
+```
 
 ## JobBookmarksEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import JobBookmarksEncryptionTypeDef
+
+def get_value() -> JobBookmarksEncryptionTypeDef:
+    return {
+        "JobBookmarksEncryptionMode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobBookmarksEncryptionTypeDef(TypedDict):
+    JobBookmarksEncryptionMode: NotRequired[JobBookmarksEncryptionModeType],  # (1)
+    KmsKeyArn: NotRequired[str],
+```
 
-- `JobBookmarksEncryptionMode`:
-  [JobBookmarksEncryptionModeType](./literals.md#jobbookmarksencryptionmodetype)
-- `KmsKeyArn`: `str`
-
-<a id="jobcommandtypedef"></a>
-
+1. See [:material-code-brackets: JobBookmarksEncryptionModeType](./literals.md#jobbookmarksencryptionmodetype) 
 ## JobCommandTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import JobCommandTypeDef
+
+def get_value() -> JobCommandTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `ScriptLocation`: `str`
-- `PythonVersion`: `str`
-
-<a id="jobnodedetailstypedef"></a>
+```python title="Definition"
+class JobCommandTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ScriptLocation: NotRequired[str],
+    PythonVersion: NotRequired[str],
+```
 
 ## JobNodeDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import JobNodeDetailsTypeDef
+
+def get_value() -> JobNodeDetailsTypeDef:
+    return {
+        "JobRuns": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobNodeDetailsTypeDef(TypedDict):
+    JobRuns: NotRequired[List[JobRunTypeDef]],  # (1)
+```
 
-- `JobRuns`: `List`\[[JobRunTypeDef](./type_defs.md#jobruntypedef)\]
-
-<a id="jobruntypedef"></a>
-
+1. See [:material-code-braces: JobRunTypeDef](./type_defs.md#jobruntypedef) 
 ## JobRunTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import JobRunTypeDef
+
+def get_value() -> JobRunTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobRunTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Attempt: NotRequired[int],
+    PreviousRunId: NotRequired[str],
+    TriggerName: NotRequired[str],
+    JobName: NotRequired[str],
+    StartedOn: NotRequired[datetime],
+    LastModifiedOn: NotRequired[datetime],
+    CompletedOn: NotRequired[datetime],
+    JobRunState: NotRequired[JobRunStateType],  # (1)
+    Arguments: NotRequired[Dict[str, str]],
+    ErrorMessage: NotRequired[str],
+    PredecessorRuns: NotRequired[List[PredecessorTypeDef]],  # (2)
+    AllocatedCapacity: NotRequired[int],
+    ExecutionTime: NotRequired[int],
+    Timeout: NotRequired[int],
+    MaxCapacity: NotRequired[float],
+    WorkerType: NotRequired[WorkerTypeType],  # (3)
+    NumberOfWorkers: NotRequired[int],
+    SecurityConfiguration: NotRequired[str],
+    LogGroupName: NotRequired[str],
+    NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (4)
+    GlueVersion: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Attempt`: `int`
-- `PreviousRunId`: `str`
-- `TriggerName`: `str`
-- `JobName`: `str`
-- `StartedOn`: `datetime`
-- `LastModifiedOn`: `datetime`
-- `CompletedOn`: `datetime`
-- `JobRunState`: [JobRunStateType](./literals.md#jobrunstatetype)
-- `Arguments`: `Dict`\[`str`, `str`\]
-- `ErrorMessage`: `str`
-- `PredecessorRuns`:
-  `List`\[[PredecessorTypeDef](./type_defs.md#predecessortypedef)\]
-- `AllocatedCapacity`: `int`
-- `ExecutionTime`: `int`
-- `Timeout`: `int`
-- `MaxCapacity`: `float`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-- `SecurityConfiguration`: `str`
-- `LogGroupName`: `str`
-- `NotificationProperty`:
-  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
-- `GlueVersion`: `str`
-
-<a id="jobtypedef"></a>
-
+1. See [:material-code-brackets: JobRunStateType](./literals.md#jobrunstatetype) 
+2. See [:material-code-braces: PredecessorTypeDef](./type_defs.md#predecessortypedef) 
+3. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+4. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 ## JobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import JobTypeDef
+
+def get_value() -> JobTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    LogUri: NotRequired[str],
+    Role: NotRequired[str],
+    CreatedOn: NotRequired[datetime],
+    LastModifiedOn: NotRequired[datetime],
+    ExecutionProperty: NotRequired[ExecutionPropertyTypeDef],  # (1)
+    Command: NotRequired[JobCommandTypeDef],  # (2)
+    DefaultArguments: NotRequired[Dict[str, str]],
+    NonOverridableArguments: NotRequired[Dict[str, str]],
+    Connections: NotRequired[ConnectionsListTypeDef],  # (3)
+    MaxRetries: NotRequired[int],
+    AllocatedCapacity: NotRequired[int],
+    Timeout: NotRequired[int],
+    MaxCapacity: NotRequired[float],
+    WorkerType: NotRequired[WorkerTypeType],  # (4)
+    NumberOfWorkers: NotRequired[int],
+    SecurityConfiguration: NotRequired[str],
+    NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (5)
+    GlueVersion: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `LogUri`: `str`
-- `Role`: `str`
-- `CreatedOn`: `datetime`
-- `LastModifiedOn`: `datetime`
-- `ExecutionProperty`:
-  [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
-- `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef)
-- `DefaultArguments`: `Dict`\[`str`, `str`\]
-- `NonOverridableArguments`: `Dict`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
-- `MaxRetries`: `int`
-- `AllocatedCapacity`: `int`
-- `Timeout`: `int`
-- `MaxCapacity`: `float`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-- `SecurityConfiguration`: `str`
-- `NotificationProperty`:
-  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
-- `GlueVersion`: `str`
-
-<a id="jobupdatetypedef"></a>
-
+1. See [:material-code-braces: ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef) 
+2. See [:material-code-braces: JobCommandTypeDef](./type_defs.md#jobcommandtypedef) 
+3. See [:material-code-braces: ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef) 
+4. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+5. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 ## JobUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import JobUpdateTypeDef
+
+def get_value() -> JobUpdateTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobUpdateTypeDef(TypedDict):
+    Description: NotRequired[str],
+    LogUri: NotRequired[str],
+    Role: NotRequired[str],
+    ExecutionProperty: NotRequired[ExecutionPropertyTypeDef],  # (1)
+    Command: NotRequired[JobCommandTypeDef],  # (2)
+    DefaultArguments: NotRequired[Mapping[str, str]],
+    NonOverridableArguments: NotRequired[Mapping[str, str]],
+    Connections: NotRequired[ConnectionsListTypeDef],  # (3)
+    MaxRetries: NotRequired[int],
+    AllocatedCapacity: NotRequired[int],
+    Timeout: NotRequired[int],
+    MaxCapacity: NotRequired[float],
+    WorkerType: NotRequired[WorkerTypeType],  # (4)
+    NumberOfWorkers: NotRequired[int],
+    SecurityConfiguration: NotRequired[str],
+    NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (5)
+    GlueVersion: NotRequired[str],
+```
 
-- `Description`: `str`
-- `LogUri`: `str`
-- `Role`: `str`
-- `ExecutionProperty`:
-  [ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef)
-- `Command`: [JobCommandTypeDef](./type_defs.md#jobcommandtypedef)
-- `DefaultArguments`: `Mapping`\[`str`, `str`\]
-- `NonOverridableArguments`: `Mapping`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
-- `MaxRetries`: `int`
-- `AllocatedCapacity`: `int`
-- `Timeout`: `int`
-- `MaxCapacity`: `float`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-- `SecurityConfiguration`: `str`
-- `NotificationProperty`:
-  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
-- `GlueVersion`: `str`
-
-<a id="jsonclassifiertypedef"></a>
-
+1. See [:material-code-braces: ExecutionPropertyTypeDef](./type_defs.md#executionpropertytypedef) 
+2. See [:material-code-braces: JobCommandTypeDef](./type_defs.md#jobcommandtypedef) 
+3. See [:material-code-braces: ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef) 
+4. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+5. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
 ## JsonClassifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import JsonClassifierTypeDef
+
+def get_value() -> JsonClassifierTypeDef:
+    return {
+        "Name": ...,
+        "JsonPath": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `JsonPath`: `str`
-
-Optional fields:
-
-- `CreationTime`: `datetime`
-- `LastUpdated`: `datetime`
-- `Version`: `int`
-
-<a id="keyschemaelementtypedef"></a>
+```python title="Definition"
+class JsonClassifierTypeDef(TypedDict):
+    Name: str,
+    JsonPath: str,
+    CreationTime: NotRequired[datetime],
+    LastUpdated: NotRequired[datetime],
+    Version: NotRequired[int],
+```
 
 ## KeySchemaElementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import KeySchemaElementTypeDef
+
+def get_value() -> KeySchemaElementTypeDef:
+    return {
+        "Name": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Type`: `str`
-
-<a id="labelingsetgenerationtaskrunpropertiestypedef"></a>
+```python title="Definition"
+class KeySchemaElementTypeDef(TypedDict):
+    Name: str,
+    Type: str,
+```
 
 ## LabelingSetGenerationTaskRunPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import LabelingSetGenerationTaskRunPropertiesTypeDef
+
+def get_value() -> LabelingSetGenerationTaskRunPropertiesTypeDef:
+    return {
+        "OutputS3Path": ...,
+    }
 ```
 
-Optional fields:
-
-- `OutputS3Path`: `str`
-
-<a id="lakeformationconfigurationtypedef"></a>
+```python title="Definition"
+class LabelingSetGenerationTaskRunPropertiesTypeDef(TypedDict):
+    OutputS3Path: NotRequired[str],
+```
 
 ## LakeFormationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import LakeFormationConfigurationTypeDef
+
+def get_value() -> LakeFormationConfigurationTypeDef:
+    return {
+        "UseLakeFormationCredentials": ...,
+    }
 ```
 
-Optional fields:
-
-- `UseLakeFormationCredentials`: `bool`
-- `AccountId`: `str`
-
-<a id="lastactivedefinitiontypedef"></a>
+```python title="Definition"
+class LakeFormationConfigurationTypeDef(TypedDict):
+    UseLakeFormationCredentials: NotRequired[bool],
+    AccountId: NotRequired[str],
+```
 
 ## LastActiveDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import LastActiveDefinitionTypeDef
+
+def get_value() -> LastActiveDefinitionTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
-
-- `Description`: `str`
-- `LastModifiedOn`: `datetime`
-- `ParameterSpec`: `str`
-- `BlueprintLocation`: `str`
-- `BlueprintServiceLocation`: `str`
-
-<a id="lastcrawlinfotypedef"></a>
+```python title="Definition"
+class LastActiveDefinitionTypeDef(TypedDict):
+    Description: NotRequired[str],
+    LastModifiedOn: NotRequired[datetime],
+    ParameterSpec: NotRequired[str],
+    BlueprintLocation: NotRequired[str],
+    BlueprintServiceLocation: NotRequired[str],
+```
 
 ## LastCrawlInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import LastCrawlInfoTypeDef
+
+def get_value() -> LastCrawlInfoTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LastCrawlInfoTypeDef(TypedDict):
+    Status: NotRequired[LastCrawlStatusType],  # (1)
+    ErrorMessage: NotRequired[str],
+    LogGroup: NotRequired[str],
+    LogStream: NotRequired[str],
+    MessagePrefix: NotRequired[str],
+    StartTime: NotRequired[datetime],
+```
 
-- `Status`: [LastCrawlStatusType](./literals.md#lastcrawlstatustype)
-- `ErrorMessage`: `str`
-- `LogGroup`: `str`
-- `LogStream`: `str`
-- `MessagePrefix`: `str`
-- `StartTime`: `datetime`
-
-<a id="lineageconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: LastCrawlStatusType](./literals.md#lastcrawlstatustype) 
 ## LineageConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import LineageConfigurationTypeDef
+
+def get_value() -> LineageConfigurationTypeDef:
+    return {
+        "CrawlerLineageSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LineageConfigurationTypeDef(TypedDict):
+    CrawlerLineageSettings: NotRequired[CrawlerLineageSettingsType],  # (1)
+```
 
-- `CrawlerLineageSettings`:
-  [CrawlerLineageSettingsType](./literals.md#crawlerlineagesettingstype)
-
-<a id="listblueprintsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CrawlerLineageSettingsType](./literals.md#crawlerlineagesettingstype) 
 ## ListBlueprintsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListBlueprintsRequestRequestTypeDef
+
+def get_value() -> ListBlueprintsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="listblueprintsresponsetypedef"></a>
+```python title="Definition"
+class ListBlueprintsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## ListBlueprintsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListBlueprintsResponseTypeDef
+
+def get_value() -> ListBlueprintsResponseTypeDef:
+    return {
+        "Blueprints": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBlueprintsResponseTypeDef(TypedDict):
+    Blueprints: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Blueprints`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcrawlersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListCrawlersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListCrawlersRequestRequestTypeDef
+
+def get_value() -> ListCrawlersRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="listcrawlersresponsetypedef"></a>
+```python title="Definition"
+class ListCrawlersRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## ListCrawlersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListCrawlersResponseTypeDef
+
+def get_value() -> ListCrawlersResponseTypeDef:
+    return {
+        "CrawlerNames": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCrawlersResponseTypeDef(TypedDict):
+    CrawlerNames: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CrawlerNames`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdevendpointsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDevEndpointsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListDevEndpointsRequestRequestTypeDef
+
+def get_value() -> ListDevEndpointsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="listdevendpointsresponsetypedef"></a>
+```python title="Definition"
+class ListDevEndpointsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## ListDevEndpointsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListDevEndpointsResponseTypeDef
+
+def get_value() -> ListDevEndpointsResponseTypeDef:
+    return {
+        "DevEndpointNames": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevEndpointsResponseTypeDef(TypedDict):
+    DevEndpointNames: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DevEndpointNames`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListJobsRequestRequestTypeDef
+
+def get_value() -> ListJobsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="listjobsresponsetypedef"></a>
+```python title="Definition"
+class ListJobsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## ListJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListJobsResponseTypeDef
+
+def get_value() -> ListJobsResponseTypeDef:
+    return {
+        "JobNames": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobsResponseTypeDef(TypedDict):
+    JobNames: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobNames`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmltransformsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMLTransformsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListMLTransformsRequestRequestTypeDef
+
+def get_value() -> ListMLTransformsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListMLTransformsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filter: NotRequired[TransformFilterCriteriaTypeDef],  # (1)
+    Sort: NotRequired[TransformSortCriteriaTypeDef],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filter`:
-  [TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef)
-- `Sort`:
-  [TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="listmltransformsresponsetypedef"></a>
-
+1. See [:material-code-braces: TransformFilterCriteriaTypeDef](./type_defs.md#transformfiltercriteriatypedef) 
+2. See [:material-code-braces: TransformSortCriteriaTypeDef](./type_defs.md#transformsortcriteriatypedef) 
 ## ListMLTransformsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListMLTransformsResponseTypeDef
+
+def get_value() -> ListMLTransformsResponseTypeDef:
+    return {
+        "TransformIds": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMLTransformsResponseTypeDef(TypedDict):
+    TransformIds: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TransformIds`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRegistriesInputListRegistriesPaginateTypeDef
 
-<a id="listregistriesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListRegistriesInputListRegistriesPaginateTypeDef
 
+def get_value() -> ListRegistriesInputListRegistriesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListRegistriesInputListRegistriesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRegistriesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListRegistriesInputRequestTypeDef
+
+def get_value() -> ListRegistriesInputRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listregistriesresponsetypedef"></a>
+```python title="Definition"
+class ListRegistriesInputRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListRegistriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListRegistriesResponseTypeDef
+
+def get_value() -> ListRegistriesResponseTypeDef:
+    return {
+        "Registries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRegistriesResponseTypeDef(TypedDict):
+    Registries: List[RegistryListItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Registries`:
-  `List`\[[RegistryListItemTypeDef](./type_defs.md#registrylistitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RegistryListItemTypeDef](./type_defs.md#registrylistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSchemaVersionsInputListSchemaVersionsPaginateTypeDef
 
-<a id="listschemaversionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListSchemaVersionsInputListSchemaVersionsPaginateTypeDef
 
+def get_value() -> ListSchemaVersionsInputListSchemaVersionsPaginateTypeDef:
+    return {
+        "SchemaId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemaVersionsInputListSchemaVersionsPaginateTypeDef(TypedDict):
+    SchemaId: SchemaIdTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSchemaVersionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListSchemaVersionsInputRequestTypeDef
+
+def get_value() -> ListSchemaVersionsInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSchemaVersionsInputRequestTypeDef(TypedDict):
+    SchemaId: SchemaIdTypeDef,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listschemaversionsresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
 ## ListSchemaVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListSchemaVersionsResponseTypeDef
+
+def get_value() -> ListSchemaVersionsResponseTypeDef:
+    return {
+        "Schemas": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSchemaVersionsResponseTypeDef(TypedDict):
+    Schemas: List[SchemaVersionListItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Schemas`:
-  `List`\[[SchemaVersionListItemTypeDef](./type_defs.md#schemaversionlistitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SchemaVersionListItemTypeDef](./type_defs.md#schemaversionlistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSchemasInputListSchemasPaginateTypeDef
 
-<a id="listschemasinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glue.type_defs import ListSchemasInputListSchemasPaginateTypeDef
 
+def get_value() -> ListSchemasInputListSchemasPaginateTypeDef:
+    return {
+        "RegistryId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemasInputListSchemasPaginateTypeDef(TypedDict):
+    RegistryId: NotRequired[RegistryIdTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSchemasInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListSchemasInputRequestTypeDef
+
+def get_value() -> ListSchemasInputRequestTypeDef:
+    return {
+        "RegistryId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSchemasInputRequestTypeDef(TypedDict):
+    RegistryId: NotRequired[RegistryIdTypeDef],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listschemasresponsetypedef"></a>
-
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
 ## ListSchemasResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListSchemasResponseTypeDef
+
+def get_value() -> ListSchemasResponseTypeDef:
+    return {
+        "Schemas": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSchemasResponseTypeDef(TypedDict):
+    Schemas: List[SchemaListItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Schemas`:
-  `List`\[[SchemaListItemTypeDef](./type_defs.md#schemalistitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsessionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SchemaListItemTypeDef](./type_defs.md#schemalistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSessionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListSessionsRequestRequestTypeDef
+
+def get_value() -> ListSessionsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `RequestOrigin`: `str`
-
-<a id="listsessionsresponsetypedef"></a>
+```python title="Definition"
+class ListSessionsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Tags: NotRequired[Mapping[str, str]],
+    RequestOrigin: NotRequired[str],
+```
 
 ## ListSessionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListSessionsResponseTypeDef
+
+def get_value() -> ListSessionsResponseTypeDef:
+    return {
+        "Ids": ...,
+        "Sessions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSessionsResponseTypeDef(TypedDict):
+    Ids: List[str],
+    Sessions: List[SessionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Ids`: `List`\[`str`\]
-- `Sessions`: `List`\[[SessionTypeDef](./type_defs.md#sessiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="liststatementsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SessionTypeDef](./type_defs.md#sessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStatementsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListStatementsRequestRequestTypeDef
+
+def get_value() -> ListStatementsRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+    }
 ```
 
-Required fields:
-
-- `SessionId`: `str`
-
-Optional fields:
-
-- `RequestOrigin`: `str`
-- `NextToken`: `str`
-
-<a id="liststatementsresponsetypedef"></a>
+```python title="Definition"
+class ListStatementsRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+    RequestOrigin: NotRequired[str],
+    NextToken: NotRequired[str],
+```
 
 ## ListStatementsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListStatementsResponseTypeDef
+
+def get_value() -> ListStatementsResponseTypeDef:
+    return {
+        "Statements": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStatementsResponseTypeDef(TypedDict):
+    Statements: List[StatementTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Statements`: `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtriggersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTriggersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListTriggersRequestRequestTypeDef
+
+def get_value() -> ListTriggersRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `DependentJobName`: `str`
-- `MaxResults`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="listtriggersresponsetypedef"></a>
+```python title="Definition"
+class ListTriggersRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    DependentJobName: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## ListTriggersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListTriggersResponseTypeDef
+
+def get_value() -> ListTriggersResponseTypeDef:
+    return {
+        "TriggerNames": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTriggersResponseTypeDef(TypedDict):
+    TriggerNames: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TriggerNames`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listworkflowsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWorkflowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListWorkflowsRequestRequestTypeDef
+
+def get_value() -> ListWorkflowsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listworkflowsresponsetypedef"></a>
+```python title="Definition"
+class ListWorkflowsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListWorkflowsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ListWorkflowsResponseTypeDef
+
+def get_value() -> ListWorkflowsResponseTypeDef:
+    return {
+        "Workflows": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkflowsResponseTypeDef(TypedDict):
+    Workflows: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Workflows`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="locationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import LocationTypeDef
+
+def get_value() -> LocationTypeDef:
+    return {
+        "Jdbc": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LocationTypeDef(TypedDict):
+    Jdbc: NotRequired[Sequence[CodeGenNodeArgTypeDef]],  # (1)
+    S3: NotRequired[Sequence[CodeGenNodeArgTypeDef]],  # (1)
+    DynamoDB: NotRequired[Sequence[CodeGenNodeArgTypeDef]],  # (1)
+```
 
-- `Jdbc`:
-  `Sequence`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
-- `S3`:
-  `Sequence`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
-- `DynamoDB`:
-  `Sequence`\[[CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef)\]
-
-<a id="longcolumnstatisticsdatatypedef"></a>
-
+1. See [:material-code-braces: CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef) 
+2. See [:material-code-braces: CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef) 
+3. See [:material-code-braces: CodeGenNodeArgTypeDef](./type_defs.md#codegennodeargtypedef) 
 ## LongColumnStatisticsDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import LongColumnStatisticsDataTypeDef
+
+def get_value() -> LongColumnStatisticsDataTypeDef:
+    return {
+        "NumberOfNulls": ...,
+        "NumberOfDistinctValues": ...,
+    }
 ```
 
-Required fields:
-
-- `NumberOfNulls`: `int`
-- `NumberOfDistinctValues`: `int`
-
-Optional fields:
-
-- `MinimumValue`: `int`
-- `MaximumValue`: `int`
-
-<a id="mltransformtypedef"></a>
+```python title="Definition"
+class LongColumnStatisticsDataTypeDef(TypedDict):
+    NumberOfNulls: int,
+    NumberOfDistinctValues: int,
+    MinimumValue: NotRequired[int],
+    MaximumValue: NotRequired[int],
+```
 
 ## MLTransformTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import MLTransformTypeDef
+
+def get_value() -> MLTransformTypeDef:
+    return {
+        "TransformId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MLTransformTypeDef(TypedDict):
+    TransformId: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Status: NotRequired[TransformStatusTypeType],  # (1)
+    CreatedOn: NotRequired[datetime],
+    LastModifiedOn: NotRequired[datetime],
+    InputRecordTables: NotRequired[List[GlueTableTypeDef]],  # (2)
+    Parameters: NotRequired[TransformParametersTypeDef],  # (3)
+    EvaluationMetrics: NotRequired[EvaluationMetricsTypeDef],  # (4)
+    LabelCount: NotRequired[int],
+    Schema: NotRequired[List[SchemaColumnTypeDef]],  # (5)
+    Role: NotRequired[str],
+    GlueVersion: NotRequired[str],
+    MaxCapacity: NotRequired[float],
+    WorkerType: NotRequired[WorkerTypeType],  # (6)
+    NumberOfWorkers: NotRequired[int],
+    Timeout: NotRequired[int],
+    MaxRetries: NotRequired[int],
+    TransformEncryption: NotRequired[TransformEncryptionTypeDef],  # (7)
+```
 
-- `TransformId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Status`: [TransformStatusTypeType](./literals.md#transformstatustypetype)
-- `CreatedOn`: `datetime`
-- `LastModifiedOn`: `datetime`
-- `InputRecordTables`:
-  `List`\[[GlueTableTypeDef](./type_defs.md#gluetabletypedef)\]
-- `Parameters`:
-  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
-- `EvaluationMetrics`:
-  [EvaluationMetricsTypeDef](./type_defs.md#evaluationmetricstypedef)
-- `LabelCount`: `int`
-- `Schema`: `List`\[[SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef)\]
-- `Role`: `str`
-- `GlueVersion`: `str`
-- `MaxCapacity`: `float`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-- `Timeout`: `int`
-- `MaxRetries`: `int`
-- `TransformEncryption`:
-  [TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef)
-
-<a id="mluserdataencryptiontypedef"></a>
-
+1. See [:material-code-brackets: TransformStatusTypeType](./literals.md#transformstatustypetype) 
+2. See [:material-code-braces: GlueTableTypeDef](./type_defs.md#gluetabletypedef) 
+3. See [:material-code-braces: TransformParametersTypeDef](./type_defs.md#transformparameterstypedef) 
+4. See [:material-code-braces: EvaluationMetricsTypeDef](./type_defs.md#evaluationmetricstypedef) 
+5. See [:material-code-braces: SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef) 
+6. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
+7. See [:material-code-braces: TransformEncryptionTypeDef](./type_defs.md#transformencryptiontypedef) 
 ## MLUserDataEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import MLUserDataEncryptionTypeDef
+
+def get_value() -> MLUserDataEncryptionTypeDef:
+    return {
+        "MlUserDataEncryptionMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MLUserDataEncryptionTypeDef(TypedDict):
+    MlUserDataEncryptionMode: MLUserDataEncryptionModeStringType,  # (1)
+    KmsKeyId: NotRequired[str],
+```
 
-- `MlUserDataEncryptionMode`:
-  [MLUserDataEncryptionModeStringType](./literals.md#mluserdataencryptionmodestringtype)
-
-Optional fields:
-
-- `KmsKeyId`: `str`
-
-<a id="mappingentrytypedef"></a>
-
+1. See [:material-code-brackets: MLUserDataEncryptionModeStringType](./literals.md#mluserdataencryptionmodestringtype) 
 ## MappingEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import MappingEntryTypeDef
+
+def get_value() -> MappingEntryTypeDef:
+    return {
+        "SourceTable": ...,
+    }
 ```
 
-Optional fields:
-
-- `SourceTable`: `str`
-- `SourcePath`: `str`
-- `SourceType`: `str`
-- `TargetTable`: `str`
-- `TargetPath`: `str`
-- `TargetType`: `str`
-
-<a id="metadatainfotypedef"></a>
+```python title="Definition"
+class MappingEntryTypeDef(TypedDict):
+    SourceTable: NotRequired[str],
+    SourcePath: NotRequired[str],
+    SourceType: NotRequired[str],
+    TargetTable: NotRequired[str],
+    TargetPath: NotRequired[str],
+    TargetType: NotRequired[str],
+```
 
 ## MetadataInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import MetadataInfoTypeDef
+
+def get_value() -> MetadataInfoTypeDef:
+    return {
+        "MetadataValue": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MetadataInfoTypeDef(TypedDict):
+    MetadataValue: NotRequired[str],
+    CreatedTime: NotRequired[str],
+    OtherMetadataValueList: NotRequired[List[OtherMetadataValueListItemTypeDef]],  # (1)
+```
 
-- `MetadataValue`: `str`
-- `CreatedTime`: `str`
-- `OtherMetadataValueList`:
-  `List`\[[OtherMetadataValueListItemTypeDef](./type_defs.md#othermetadatavaluelistitemtypedef)\]
-
-<a id="metadatakeyvaluepairtypedef"></a>
-
+1. See [:material-code-braces: OtherMetadataValueListItemTypeDef](./type_defs.md#othermetadatavaluelistitemtypedef) 
 ## MetadataKeyValuePairTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import MetadataKeyValuePairTypeDef
+
+def get_value() -> MetadataKeyValuePairTypeDef:
+    return {
+        "MetadataKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `MetadataKey`: `str`
-- `MetadataValue`: `str`
-
-<a id="mongodbtargettypedef"></a>
+```python title="Definition"
+class MetadataKeyValuePairTypeDef(TypedDict):
+    MetadataKey: NotRequired[str],
+    MetadataValue: NotRequired[str],
+```
 
 ## MongoDBTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import MongoDBTargetTypeDef
+
+def get_value() -> MongoDBTargetTypeDef:
+    return {
+        "ConnectionName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConnectionName`: `str`
-- `Path`: `str`
-- `ScanAll`: `bool`
-
-<a id="nodetypedef"></a>
+```python title="Definition"
+class MongoDBTargetTypeDef(TypedDict):
+    ConnectionName: NotRequired[str],
+    Path: NotRequired[str],
+    ScanAll: NotRequired[bool],
+```
 
 ## NodeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import NodeTypeDef
+
+def get_value() -> NodeTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodeTypeDef(TypedDict):
+    Type: NotRequired[NodeTypeType],  # (1)
+    Name: NotRequired[str],
+    UniqueId: NotRequired[str],
+    TriggerDetails: NotRequired[TriggerNodeDetailsTypeDef],  # (2)
+    JobDetails: NotRequired[JobNodeDetailsTypeDef],  # (3)
+    CrawlerDetails: NotRequired[CrawlerNodeDetailsTypeDef],  # (4)
+```
 
-- `Type`: [NodeTypeType](./literals.md#nodetypetype)
-- `Name`: `str`
-- `UniqueId`: `str`
-- `TriggerDetails`:
-  [TriggerNodeDetailsTypeDef](./type_defs.md#triggernodedetailstypedef)
-- `JobDetails`: [JobNodeDetailsTypeDef](./type_defs.md#jobnodedetailstypedef)
-- `CrawlerDetails`:
-  [CrawlerNodeDetailsTypeDef](./type_defs.md#crawlernodedetailstypedef)
-
-<a id="notificationpropertytypedef"></a>
-
+1. See [:material-code-brackets: NodeTypeType](./literals.md#nodetypetype) 
+2. See [:material-code-braces: TriggerNodeDetailsTypeDef](./type_defs.md#triggernodedetailstypedef) 
+3. See [:material-code-braces: JobNodeDetailsTypeDef](./type_defs.md#jobnodedetailstypedef) 
+4. See [:material-code-braces: CrawlerNodeDetailsTypeDef](./type_defs.md#crawlernodedetailstypedef) 
 ## NotificationPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import NotificationPropertyTypeDef
+
+def get_value() -> NotificationPropertyTypeDef:
+    return {
+        "NotifyDelayAfter": ...,
+    }
 ```
 
-Optional fields:
-
-- `NotifyDelayAfter`: `int`
-
-<a id="ordertypedef"></a>
+```python title="Definition"
+class NotificationPropertyTypeDef(TypedDict):
+    NotifyDelayAfter: NotRequired[int],
+```
 
 ## OrderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import OrderTypeDef
+
+def get_value() -> OrderTypeDef:
+    return {
+        "Column": ...,
+        "SortOrder": ...,
+    }
 ```
 
-Required fields:
-
-- `Column`: `str`
-- `SortOrder`: `int`
-
-<a id="othermetadatavaluelistitemtypedef"></a>
+```python title="Definition"
+class OrderTypeDef(TypedDict):
+    Column: str,
+    SortOrder: int,
+```
 
 ## OtherMetadataValueListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import OtherMetadataValueListItemTypeDef
+
+def get_value() -> OtherMetadataValueListItemTypeDef:
+    return {
+        "MetadataValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `MetadataValue`: `str`
-- `CreatedTime`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OtherMetadataValueListItemTypeDef(TypedDict):
+    MetadataValue: NotRequired[str],
+    CreatedTime: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="partitionerrortypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PartitionErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PartitionErrorTypeDef
+
+def get_value() -> PartitionErrorTypeDef:
+    return {
+        "PartitionValues": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PartitionErrorTypeDef(TypedDict):
+    PartitionValues: NotRequired[List[str]],
+    ErrorDetail: NotRequired[ErrorDetailTypeDef],  # (1)
+```
 
-- `PartitionValues`: `List`\[`str`\]
-- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
-
-<a id="partitionindexdescriptortypedef"></a>
-
+1. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## PartitionIndexDescriptorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PartitionIndexDescriptorTypeDef
+
+def get_value() -> PartitionIndexDescriptorTypeDef:
+    return {
+        "IndexName": ...,
+        "Keys": ...,
+        "IndexStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PartitionIndexDescriptorTypeDef(TypedDict):
+    IndexName: str,
+    Keys: List[KeySchemaElementTypeDef],  # (1)
+    IndexStatus: PartitionIndexStatusType,  # (2)
+    BackfillErrors: NotRequired[List[BackfillErrorTypeDef]],  # (3)
+```
 
-- `IndexName`: `str`
-- `Keys`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `IndexStatus`:
-  [PartitionIndexStatusType](./literals.md#partitionindexstatustype)
-
-Optional fields:
-
-- `BackfillErrors`:
-  `List`\[[BackfillErrorTypeDef](./type_defs.md#backfillerrortypedef)\]
-
-<a id="partitionindextypedef"></a>
-
+1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+2. See [:material-code-brackets: PartitionIndexStatusType](./literals.md#partitionindexstatustype) 
+3. See [:material-code-braces: BackfillErrorTypeDef](./type_defs.md#backfillerrortypedef) 
 ## PartitionIndexTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PartitionIndexTypeDef
+
+def get_value() -> PartitionIndexTypeDef:
+    return {
+        "Keys": ...,
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
-
-- `Keys`: `Sequence`\[`str`\]
-- `IndexName`: `str`
-
-<a id="partitioninputtypedef"></a>
+```python title="Definition"
+class PartitionIndexTypeDef(TypedDict):
+    Keys: Sequence[str],
+    IndexName: str,
+```
 
 ## PartitionInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PartitionInputTypeDef
+
+def get_value() -> PartitionInputTypeDef:
+    return {
+        "Values": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PartitionInputTypeDef(TypedDict):
+    Values: NotRequired[Sequence[str]],
+    LastAccessTime: NotRequired[Union[datetime, str]],
+    StorageDescriptor: NotRequired[StorageDescriptorTypeDef],  # (1)
+    Parameters: NotRequired[Mapping[str, str]],
+    LastAnalyzedTime: NotRequired[Union[datetime, str]],
+```
 
-- `Values`: `Sequence`\[`str`\]
-- `LastAccessTime`: `Union`\[`datetime`, `str`\]
-- `StorageDescriptor`:
-  [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
-- `Parameters`: `Mapping`\[`str`, `str`\]
-- `LastAnalyzedTime`: `Union`\[`datetime`, `str`\]
-
-<a id="partitiontypedef"></a>
-
+1. See [:material-code-braces: StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef) 
 ## PartitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PartitionTypeDef
+
+def get_value() -> PartitionTypeDef:
+    return {
+        "Values": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PartitionTypeDef(TypedDict):
+    Values: NotRequired[List[str]],
+    DatabaseName: NotRequired[str],
+    TableName: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastAccessTime: NotRequired[datetime],
+    StorageDescriptor: NotRequired[StorageDescriptorTypeDef],  # (1)
+    Parameters: NotRequired[Dict[str, str]],
+    LastAnalyzedTime: NotRequired[datetime],
+    CatalogId: NotRequired[str],
+```
 
-- `Values`: `List`\[`str`\]
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `CreationTime`: `datetime`
-- `LastAccessTime`: `datetime`
-- `StorageDescriptor`:
-  [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
-- `Parameters`: `Dict`\[`str`, `str`\]
-- `LastAnalyzedTime`: `datetime`
-- `CatalogId`: `str`
-
-<a id="partitionvaluelisttypedef"></a>
-
+1. See [:material-code-braces: StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef) 
 ## PartitionValueListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PartitionValueListTypeDef
+
+def get_value() -> PartitionValueListTypeDef:
+    return {
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Values`: `Sequence`\[`str`\]
-
-<a id="physicalconnectionrequirementstypedef"></a>
+```python title="Definition"
+class PartitionValueListTypeDef(TypedDict):
+    Values: Sequence[str],
+```
 
 ## PhysicalConnectionRequirementsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PhysicalConnectionRequirementsTypeDef
+
+def get_value() -> PhysicalConnectionRequirementsTypeDef:
+    return {
+        "SubnetId": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubnetId`: `str`
-- `SecurityGroupIdList`: `Sequence`\[`str`\]
-- `AvailabilityZone`: `str`
-
-<a id="predecessortypedef"></a>
+```python title="Definition"
+class PhysicalConnectionRequirementsTypeDef(TypedDict):
+    SubnetId: NotRequired[str],
+    SecurityGroupIdList: NotRequired[Sequence[str]],
+    AvailabilityZone: NotRequired[str],
+```
 
 ## PredecessorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PredecessorTypeDef
+
+def get_value() -> PredecessorTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Optional fields:
-
-- `JobName`: `str`
-- `RunId`: `str`
-
-<a id="predicatetypedef"></a>
+```python title="Definition"
+class PredecessorTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    RunId: NotRequired[str],
+```
 
 ## PredicateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PredicateTypeDef
+
+def get_value() -> PredicateTypeDef:
+    return {
+        "Logical": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PredicateTypeDef(TypedDict):
+    Logical: NotRequired[LogicalType],  # (1)
+    Conditions: NotRequired[List[ConditionTypeDef]],  # (2)
+```
 
-- `Logical`: [LogicalType](./literals.md#logicaltype)
-- `Conditions`: `List`\[[ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-
-<a id="principalpermissionstypedef"></a>
-
+1. See [:material-code-brackets: LogicalType](./literals.md#logicaltype) 
+2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
 ## PrincipalPermissionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PrincipalPermissionsTypeDef
+
+def get_value() -> PrincipalPermissionsTypeDef:
+    return {
+        "Principal": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PrincipalPermissionsTypeDef(TypedDict):
+    Principal: NotRequired[DataLakePrincipalTypeDef],  # (1)
+    Permissions: NotRequired[Sequence[PermissionType]],  # (2)
+```
 
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-
-<a id="propertypredicatetypedef"></a>
-
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## PropertyPredicateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PropertyPredicateTypeDef
+
+def get_value() -> PropertyPredicateTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PropertyPredicateTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    Comparator: NotRequired[ComparatorType],  # (1)
+```
 
-- `Key`: `str`
-- `Value`: `str`
-- `Comparator`: [ComparatorType](./literals.md#comparatortype)
-
-<a id="putdatacatalogencryptionsettingsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ComparatorType](./literals.md#comparatortype) 
 ## PutDataCatalogEncryptionSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PutDataCatalogEncryptionSettingsRequestRequestTypeDef
+
+def get_value() -> PutDataCatalogEncryptionSettingsRequestRequestTypeDef:
+    return {
+        "DataCatalogEncryptionSettings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutDataCatalogEncryptionSettingsRequestRequestTypeDef(TypedDict):
+    DataCatalogEncryptionSettings: DataCatalogEncryptionSettingsTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DataCatalogEncryptionSettings`:
-  [DataCatalogEncryptionSettingsTypeDef](./type_defs.md#datacatalogencryptionsettingstypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="putresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataCatalogEncryptionSettingsTypeDef](./type_defs.md#datacatalogencryptionsettingstypedef) 
 ## PutResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PutResourcePolicyRequestRequestTypeDef
+
+def get_value() -> PutResourcePolicyRequestRequestTypeDef:
+    return {
+        "PolicyInJson": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutResourcePolicyRequestRequestTypeDef(TypedDict):
+    PolicyInJson: str,
+    ResourceArn: NotRequired[str],
+    PolicyHashCondition: NotRequired[str],
+    PolicyExistsCondition: NotRequired[ExistConditionType],  # (1)
+    EnableHybrid: NotRequired[EnableHybridValuesType],  # (2)
+```
 
-- `PolicyInJson`: `str`
-
-Optional fields:
-
-- `ResourceArn`: `str`
-- `PolicyHashCondition`: `str`
-- `PolicyExistsCondition`:
-  [ExistConditionType](./literals.md#existconditiontype)
-- `EnableHybrid`:
-  [EnableHybridValuesType](./literals.md#enablehybridvaluestype)
-
-<a id="putresourcepolicyresponsetypedef"></a>
-
+1. See [:material-code-brackets: ExistConditionType](./literals.md#existconditiontype) 
+2. See [:material-code-brackets: EnableHybridValuesType](./literals.md#enablehybridvaluestype) 
 ## PutResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PutResourcePolicyResponseTypeDef
+
+def get_value() -> PutResourcePolicyResponseTypeDef:
+    return {
+        "PolicyHash": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutResourcePolicyResponseTypeDef(TypedDict):
+    PolicyHash: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PolicyHash`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putschemaversionmetadatainputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutSchemaVersionMetadataInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PutSchemaVersionMetadataInputRequestTypeDef
+
+def get_value() -> PutSchemaVersionMetadataInputRequestTypeDef:
+    return {
+        "MetadataKeyValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutSchemaVersionMetadataInputRequestTypeDef(TypedDict):
+    MetadataKeyValue: MetadataKeyValuePairTypeDef,  # (1)
+    SchemaId: NotRequired[SchemaIdTypeDef],  # (2)
+    SchemaVersionNumber: NotRequired[SchemaVersionNumberTypeDef],  # (3)
+    SchemaVersionId: NotRequired[str],
+```
 
-- `MetadataKeyValue`:
-  [MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)
-
-Optional fields:
-
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `SchemaVersionId`: `str`
-
-<a id="putschemaversionmetadataresponsetypedef"></a>
-
+1. See [:material-code-braces: MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef) 
+2. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+3. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
 ## PutSchemaVersionMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PutSchemaVersionMetadataResponseTypeDef
+
+def get_value() -> PutSchemaVersionMetadataResponseTypeDef:
+    return {
+        "SchemaArn": ...,
+        "SchemaName": ...,
+        "RegistryName": ...,
+        "LatestVersion": ...,
+        "VersionNumber": ...,
+        "SchemaVersionId": ...,
+        "MetadataKey": ...,
+        "MetadataValue": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutSchemaVersionMetadataResponseTypeDef(TypedDict):
+    SchemaArn: str,
+    SchemaName: str,
+    RegistryName: str,
+    LatestVersion: bool,
+    VersionNumber: int,
+    SchemaVersionId: str,
+    MetadataKey: str,
+    MetadataValue: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `RegistryName`: `str`
-- `LatestVersion`: `bool`
-- `VersionNumber`: `int`
-- `SchemaVersionId`: `str`
-- `MetadataKey`: `str`
-- `MetadataValue`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putworkflowrunpropertiesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutWorkflowRunPropertiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import PutWorkflowRunPropertiesRequestRequestTypeDef
+
+def get_value() -> PutWorkflowRunPropertiesRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "RunId": ...,
+        "RunProperties": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `RunId`: `str`
-- `RunProperties`: `Mapping`\[`str`, `str`\]
-
-<a id="queryschemaversionmetadatainputrequesttypedef"></a>
+```python title="Definition"
+class PutWorkflowRunPropertiesRequestRequestTypeDef(TypedDict):
+    Name: str,
+    RunId: str,
+    RunProperties: Mapping[str, str],
+```
 
 ## QuerySchemaVersionMetadataInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import QuerySchemaVersionMetadataInputRequestTypeDef
+
+def get_value() -> QuerySchemaVersionMetadataInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QuerySchemaVersionMetadataInputRequestTypeDef(TypedDict):
+    SchemaId: NotRequired[SchemaIdTypeDef],  # (1)
+    SchemaVersionNumber: NotRequired[SchemaVersionNumberTypeDef],  # (2)
+    SchemaVersionId: NotRequired[str],
+    MetadataList: NotRequired[Sequence[MetadataKeyValuePairTypeDef]],  # (3)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `SchemaVersionId`: `str`
-- `MetadataList`:
-  `Sequence`\[[MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="queryschemaversionmetadataresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+3. See [:material-code-braces: MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef) 
 ## QuerySchemaVersionMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import QuerySchemaVersionMetadataResponseTypeDef
+
+def get_value() -> QuerySchemaVersionMetadataResponseTypeDef:
+    return {
+        "MetadataInfoMap": ...,
+        "SchemaVersionId": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QuerySchemaVersionMetadataResponseTypeDef(TypedDict):
+    MetadataInfoMap: Dict[str, MetadataInfoTypeDef],  # (1)
+    SchemaVersionId: str,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MetadataInfoMap`: `Dict`\[`str`,
-  [MetadataInfoTypeDef](./type_defs.md#metadatainfotypedef)\]
-- `SchemaVersionId`: `str`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="recrawlpolicytypedef"></a>
-
+1. See [:material-code-braces: MetadataInfoTypeDef](./type_defs.md#metadatainfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecrawlPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import RecrawlPolicyTypeDef
+
+def get_value() -> RecrawlPolicyTypeDef:
+    return {
+        "RecrawlBehavior": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecrawlPolicyTypeDef(TypedDict):
+    RecrawlBehavior: NotRequired[RecrawlBehaviorType],  # (1)
+```
 
-- `RecrawlBehavior`: [RecrawlBehaviorType](./literals.md#recrawlbehaviortype)
-
-<a id="registerschemaversioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: RecrawlBehaviorType](./literals.md#recrawlbehaviortype) 
 ## RegisterSchemaVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import RegisterSchemaVersionInputRequestTypeDef
+
+def get_value() -> RegisterSchemaVersionInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+        "SchemaDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterSchemaVersionInputRequestTypeDef(TypedDict):
+    SchemaId: SchemaIdTypeDef,  # (1)
+    SchemaDefinition: str,
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaDefinition`: `str`
-
-<a id="registerschemaversionresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
 ## RegisterSchemaVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import RegisterSchemaVersionResponseTypeDef
+
+def get_value() -> RegisterSchemaVersionResponseTypeDef:
+    return {
+        "SchemaVersionId": ...,
+        "VersionNumber": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterSchemaVersionResponseTypeDef(TypedDict):
+    SchemaVersionId: str,
+    VersionNumber: int,
+    Status: SchemaVersionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SchemaVersionId`: `str`
-- `VersionNumber`: `int`
-- `Status`: [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registryidtypedef"></a>
-
+1. See [:material-code-brackets: SchemaVersionStatusType](./literals.md#schemaversionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegistryIdTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import RegistryIdTypeDef
+
+def get_value() -> RegistryIdTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RegistryName`: `str`
-- `RegistryArn`: `str`
-
-<a id="registrylistitemtypedef"></a>
+```python title="Definition"
+class RegistryIdTypeDef(TypedDict):
+    RegistryName: NotRequired[str],
+    RegistryArn: NotRequired[str],
+```
 
 ## RegistryListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import RegistryListItemTypeDef
+
+def get_value() -> RegistryListItemTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RegistryListItemTypeDef(TypedDict):
+    RegistryName: NotRequired[str],
+    RegistryArn: NotRequired[str],
+    Description: NotRequired[str],
+    Status: NotRequired[RegistryStatusType],  # (1)
+    CreatedTime: NotRequired[str],
+    UpdatedTime: NotRequired[str],
+```
 
-- `RegistryName`: `str`
-- `RegistryArn`: `str`
-- `Description`: `str`
-- `Status`: [RegistryStatusType](./literals.md#registrystatustype)
-- `CreatedTime`: `str`
-- `UpdatedTime`: `str`
-
-<a id="removeschemaversionmetadatainputrequesttypedef"></a>
-
+1. See [:material-code-brackets: RegistryStatusType](./literals.md#registrystatustype) 
 ## RemoveSchemaVersionMetadataInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import RemoveSchemaVersionMetadataInputRequestTypeDef
+
+def get_value() -> RemoveSchemaVersionMetadataInputRequestTypeDef:
+    return {
+        "MetadataKeyValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveSchemaVersionMetadataInputRequestTypeDef(TypedDict):
+    MetadataKeyValue: MetadataKeyValuePairTypeDef,  # (1)
+    SchemaId: NotRequired[SchemaIdTypeDef],  # (2)
+    SchemaVersionNumber: NotRequired[SchemaVersionNumberTypeDef],  # (3)
+    SchemaVersionId: NotRequired[str],
+```
 
-- `MetadataKeyValue`:
-  [MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef)
-
-Optional fields:
-
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `SchemaVersionId`: `str`
-
-<a id="removeschemaversionmetadataresponsetypedef"></a>
-
+1. See [:material-code-braces: MetadataKeyValuePairTypeDef](./type_defs.md#metadatakeyvaluepairtypedef) 
+2. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+3. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
 ## RemoveSchemaVersionMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import RemoveSchemaVersionMetadataResponseTypeDef
+
+def get_value() -> RemoveSchemaVersionMetadataResponseTypeDef:
+    return {
+        "SchemaArn": ...,
+        "SchemaName": ...,
+        "RegistryName": ...,
+        "LatestVersion": ...,
+        "VersionNumber": ...,
+        "SchemaVersionId": ...,
+        "MetadataKey": ...,
+        "MetadataValue": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveSchemaVersionMetadataResponseTypeDef(TypedDict):
+    SchemaArn: str,
+    SchemaName: str,
+    RegistryName: str,
+    LatestVersion: bool,
+    VersionNumber: int,
+    SchemaVersionId: str,
+    MetadataKey: str,
+    MetadataValue: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `RegistryName`: `str`
-- `LatestVersion`: `bool`
-- `VersionNumber`: `int`
-- `SchemaVersionId`: `str`
-- `MetadataKey`: `str`
-- `MetadataValue`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resetjobbookmarkrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResetJobBookmarkRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ResetJobBookmarkRequestRequestTypeDef
+
+def get_value() -> ResetJobBookmarkRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Required fields:
-
-- `JobName`: `str`
-
-Optional fields:
-
-- `RunId`: `str`
-
-<a id="resetjobbookmarkresponsetypedef"></a>
+```python title="Definition"
+class ResetJobBookmarkRequestRequestTypeDef(TypedDict):
+    JobName: str,
+    RunId: NotRequired[str],
+```
 
 ## ResetJobBookmarkResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ResetJobBookmarkResponseTypeDef
+
+def get_value() -> ResetJobBookmarkResponseTypeDef:
+    return {
+        "JobBookmarkEntry": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResetJobBookmarkResponseTypeDef(TypedDict):
+    JobBookmarkEntry: JobBookmarkEntryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobBookmarkEntry`:
-  [JobBookmarkEntryTypeDef](./type_defs.md#jobbookmarkentrytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resourceuritypedef"></a>
-
+1. See [:material-code-braces: JobBookmarkEntryTypeDef](./type_defs.md#jobbookmarkentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResourceUriTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ResourceUriTypeDef
+
+def get_value() -> ResourceUriTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceUriTypeDef(TypedDict):
+    ResourceType: NotRequired[ResourceTypeType],  # (1)
+    Uri: NotRequired[str],
+```
 
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `Uri`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="resumeworkflowrunrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResumeWorkflowRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ResumeWorkflowRunRequestRequestTypeDef
+
+def get_value() -> ResumeWorkflowRunRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "RunId": ...,
+        "NodeIds": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `RunId`: `str`
-- `NodeIds`: `Sequence`\[`str`\]
-
-<a id="resumeworkflowrunresponsetypedef"></a>
+```python title="Definition"
+class ResumeWorkflowRunRequestRequestTypeDef(TypedDict):
+    Name: str,
+    RunId: str,
+    NodeIds: Sequence[str],
+```
 
 ## ResumeWorkflowRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ResumeWorkflowRunResponseTypeDef
+
+def get_value() -> ResumeWorkflowRunResponseTypeDef:
+    return {
+        "RunId": ...,
+        "NodeIds": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResumeWorkflowRunResponseTypeDef(TypedDict):
+    RunId: str,
+    NodeIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RunId`: `str`
-- `NodeIds`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="runstatementrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RunStatementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import RunStatementRequestRequestTypeDef
+
+def get_value() -> RunStatementRequestRequestTypeDef:
+    return {
+        "SessionId": ...,
+        "Code": ...,
+    }
 ```
 
-Required fields:
-
-- `SessionId`: `str`
-- `Code`: `str`
-
-Optional fields:
-
-- `RequestOrigin`: `str`
-
-<a id="runstatementresponsetypedef"></a>
+```python title="Definition"
+class RunStatementRequestRequestTypeDef(TypedDict):
+    SessionId: str,
+    Code: str,
+    RequestOrigin: NotRequired[str],
+```
 
 ## RunStatementResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import RunStatementResponseTypeDef
+
+def get_value() -> RunStatementResponseTypeDef:
+    return {
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RunStatementResponseTypeDef(TypedDict):
+    Id: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Id`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="s3encryptiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## S3EncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import S3EncryptionTypeDef
+
+def get_value() -> S3EncryptionTypeDef:
+    return {
+        "S3EncryptionMode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3EncryptionTypeDef(TypedDict):
+    S3EncryptionMode: NotRequired[S3EncryptionModeType],  # (1)
+    KmsKeyArn: NotRequired[str],
+```
 
-- `S3EncryptionMode`:
-  [S3EncryptionModeType](./literals.md#s3encryptionmodetype)
-- `KmsKeyArn`: `str`
-
-<a id="s3targettypedef"></a>
-
+1. See [:material-code-brackets: S3EncryptionModeType](./literals.md#s3encryptionmodetype) 
 ## S3TargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import S3TargetTypeDef
+
+def get_value() -> S3TargetTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Optional fields:
-
-- `Path`: `str`
-- `Exclusions`: `List`\[`str`\]
-- `ConnectionName`: `str`
-- `SampleSize`: `int`
-- `EventQueueArn`: `str`
-- `DlqEventQueueArn`: `str`
-
-<a id="scheduletypedef"></a>
+```python title="Definition"
+class S3TargetTypeDef(TypedDict):
+    Path: NotRequired[str],
+    Exclusions: NotRequired[List[str]],
+    ConnectionName: NotRequired[str],
+    SampleSize: NotRequired[int],
+    EventQueueArn: NotRequired[str],
+    DlqEventQueueArn: NotRequired[str],
+```
 
 ## ScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import ScheduleTypeDef
+
+def get_value() -> ScheduleTypeDef:
+    return {
+        "ScheduleExpression": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScheduleTypeDef(TypedDict):
+    ScheduleExpression: NotRequired[str],
+    State: NotRequired[ScheduleStateType],  # (1)
+```
 
-- `ScheduleExpression`: `str`
-- `State`: [ScheduleStateType](./literals.md#schedulestatetype)
-
-<a id="schemachangepolicytypedef"></a>
-
+1. See [:material-code-brackets: ScheduleStateType](./literals.md#schedulestatetype) 
 ## SchemaChangePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SchemaChangePolicyTypeDef
+
+def get_value() -> SchemaChangePolicyTypeDef:
+    return {
+        "UpdateBehavior": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SchemaChangePolicyTypeDef(TypedDict):
+    UpdateBehavior: NotRequired[UpdateBehaviorType],  # (1)
+    DeleteBehavior: NotRequired[DeleteBehaviorType],  # (2)
+```
 
-- `UpdateBehavior`: [UpdateBehaviorType](./literals.md#updatebehaviortype)
-- `DeleteBehavior`: [DeleteBehaviorType](./literals.md#deletebehaviortype)
-
-<a id="schemacolumntypedef"></a>
-
+1. See [:material-code-brackets: UpdateBehaviorType](./literals.md#updatebehaviortype) 
+2. See [:material-code-brackets: DeleteBehaviorType](./literals.md#deletebehaviortype) 
 ## SchemaColumnTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SchemaColumnTypeDef
+
+def get_value() -> SchemaColumnTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `DataType`: `str`
-
-<a id="schemaidtypedef"></a>
+```python title="Definition"
+class SchemaColumnTypeDef(TypedDict):
+    Name: NotRequired[str],
+    DataType: NotRequired[str],
+```
 
 ## SchemaIdTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SchemaIdTypeDef
+
+def get_value() -> SchemaIdTypeDef:
+    return {
+        "SchemaArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `RegistryName`: `str`
-
-<a id="schemalistitemtypedef"></a>
+```python title="Definition"
+class SchemaIdTypeDef(TypedDict):
+    SchemaArn: NotRequired[str],
+    SchemaName: NotRequired[str],
+    RegistryName: NotRequired[str],
+```
 
 ## SchemaListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SchemaListItemTypeDef
+
+def get_value() -> SchemaListItemTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SchemaListItemTypeDef(TypedDict):
+    RegistryName: NotRequired[str],
+    SchemaName: NotRequired[str],
+    SchemaArn: NotRequired[str],
+    Description: NotRequired[str],
+    SchemaStatus: NotRequired[SchemaStatusType],  # (1)
+    CreatedTime: NotRequired[str],
+    UpdatedTime: NotRequired[str],
+```
 
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-- `SchemaArn`: `str`
-- `Description`: `str`
-- `SchemaStatus`: [SchemaStatusType](./literals.md#schemastatustype)
-- `CreatedTime`: `str`
-- `UpdatedTime`: `str`
-
-<a id="schemareferencetypedef"></a>
-
+1. See [:material-code-brackets: SchemaStatusType](./literals.md#schemastatustype) 
 ## SchemaReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SchemaReferenceTypeDef
+
+def get_value() -> SchemaReferenceTypeDef:
+    return {
+        "SchemaId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SchemaReferenceTypeDef(TypedDict):
+    SchemaId: NotRequired[SchemaIdTypeDef],  # (1)
+    SchemaVersionId: NotRequired[str],
+    SchemaVersionNumber: NotRequired[int],
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-- `SchemaVersionId`: `str`
-- `SchemaVersionNumber`: `int`
-
-<a id="schemaversionerroritemtypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
 ## SchemaVersionErrorItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SchemaVersionErrorItemTypeDef
+
+def get_value() -> SchemaVersionErrorItemTypeDef:
+    return {
+        "VersionNumber": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SchemaVersionErrorItemTypeDef(TypedDict):
+    VersionNumber: NotRequired[int],
+    ErrorDetails: NotRequired[ErrorDetailsTypeDef],  # (1)
+```
 
-- `VersionNumber`: `int`
-- `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
-
-<a id="schemaversionlistitemtypedef"></a>
-
+1. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
 ## SchemaVersionListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SchemaVersionListItemTypeDef
+
+def get_value() -> SchemaVersionListItemTypeDef:
+    return {
+        "SchemaArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SchemaVersionListItemTypeDef(TypedDict):
+    SchemaArn: NotRequired[str],
+    SchemaVersionId: NotRequired[str],
+    VersionNumber: NotRequired[int],
+    Status: NotRequired[SchemaVersionStatusType],  # (1)
+    CreatedTime: NotRequired[str],
+```
 
-- `SchemaArn`: `str`
-- `SchemaVersionId`: `str`
-- `VersionNumber`: `int`
-- `Status`: [SchemaVersionStatusType](./literals.md#schemaversionstatustype)
-- `CreatedTime`: `str`
-
-<a id="schemaversionnumbertypedef"></a>
-
+1. See [:material-code-brackets: SchemaVersionStatusType](./literals.md#schemaversionstatustype) 
 ## SchemaVersionNumberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SchemaVersionNumberTypeDef
+
+def get_value() -> SchemaVersionNumberTypeDef:
+    return {
+        "LatestVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `LatestVersion`: `bool`
-- `VersionNumber`: `int`
-
-<a id="searchtablesrequestrequesttypedef"></a>
+```python title="Definition"
+class SchemaVersionNumberTypeDef(TypedDict):
+    LatestVersion: NotRequired[bool],
+    VersionNumber: NotRequired[int],
+```
 
 ## SearchTablesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SearchTablesRequestRequestTypeDef
+
+def get_value() -> SearchTablesRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchTablesRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[PropertyPredicateTypeDef]],  # (1)
+    SearchText: NotRequired[str],
+    SortCriteria: NotRequired[Sequence[SortCriterionTypeDef]],  # (2)
+    MaxResults: NotRequired[int],
+    ResourceShareType: NotRequired[ResourceShareTypeType],  # (3)
+```
 
-- `CatalogId`: `str`
-- `NextToken`: `str`
-- `Filters`:
-  `Sequence`\[[PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef)\]
-- `SearchText`: `str`
-- `SortCriteria`:
-  `Sequence`\[[SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef)\]
-- `MaxResults`: `int`
-- `ResourceShareType`:
-  [ResourceShareTypeType](./literals.md#resourcesharetypetype)
-
-<a id="searchtablesresponsetypedef"></a>
-
+1. See [:material-code-braces: PropertyPredicateTypeDef](./type_defs.md#propertypredicatetypedef) 
+2. See [:material-code-braces: SortCriterionTypeDef](./type_defs.md#sortcriteriontypedef) 
+3. See [:material-code-brackets: ResourceShareTypeType](./literals.md#resourcesharetypetype) 
 ## SearchTablesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SearchTablesResponseTypeDef
+
+def get_value() -> SearchTablesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "TableList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchTablesResponseTypeDef(TypedDict):
+    NextToken: str,
+    TableList: List[TableTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `TableList`: `List`\[[TableTypeDef](./type_defs.md#tabletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="securityconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SecurityConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SecurityConfigurationTypeDef
+
+def get_value() -> SecurityConfigurationTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SecurityConfigurationTypeDef(TypedDict):
+    Name: NotRequired[str],
+    CreatedTimeStamp: NotRequired[datetime],
+    EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `CreatedTimeStamp`: `datetime`
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-
-<a id="segmenttypedef"></a>
-
+1. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
 ## SegmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SegmentTypeDef
+
+def get_value() -> SegmentTypeDef:
+    return {
+        "SegmentNumber": ...,
+        "TotalSegments": ...,
+    }
 ```
 
-Required fields:
-
-- `SegmentNumber`: `int`
-- `TotalSegments`: `int`
-
-<a id="serdeinfotypedef"></a>
+```python title="Definition"
+class SegmentTypeDef(TypedDict):
+    SegmentNumber: int,
+    TotalSegments: int,
+```
 
 ## SerDeInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SerDeInfoTypeDef
+
+def get_value() -> SerDeInfoTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `SerializationLibrary`: `str`
-- `Parameters`: `Mapping`\[`str`, `str`\]
-
-<a id="sessioncommandtypedef"></a>
+```python title="Definition"
+class SerDeInfoTypeDef(TypedDict):
+    Name: NotRequired[str],
+    SerializationLibrary: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, str]],
+```
 
 ## SessionCommandTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SessionCommandTypeDef
+
+def get_value() -> SessionCommandTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `PythonVersion`: `str`
-
-<a id="sessiontypedef"></a>
+```python title="Definition"
+class SessionCommandTypeDef(TypedDict):
+    Name: NotRequired[str],
+    PythonVersion: NotRequired[str],
+```
 
 ## SessionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SessionTypeDef
+
+def get_value() -> SessionTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SessionTypeDef(TypedDict):
+    Id: NotRequired[str],
+    CreatedOn: NotRequired[datetime],
+    Status: NotRequired[SessionStatusType],  # (1)
+    ErrorMessage: NotRequired[str],
+    Description: NotRequired[str],
+    Role: NotRequired[str],
+    Command: NotRequired[SessionCommandTypeDef],  # (2)
+    DefaultArguments: NotRequired[Dict[str, str]],
+    Connections: NotRequired[ConnectionsListTypeDef],  # (3)
+    Progress: NotRequired[float],
+    MaxCapacity: NotRequired[float],
+    SecurityConfiguration: NotRequired[str],
+    GlueVersion: NotRequired[str],
+```
 
-- `Id`: `str`
-- `CreatedOn`: `datetime`
-- `Status`: [SessionStatusType](./literals.md#sessionstatustype)
-- `ErrorMessage`: `str`
-- `Description`: `str`
-- `Role`: `str`
-- `Command`: [SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef)
-- `DefaultArguments`: `Dict`\[`str`, `str`\]
-- `Connections`:
-  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
-- `Progress`: `float`
-- `MaxCapacity`: `float`
-- `SecurityConfiguration`: `str`
-- `GlueVersion`: `str`
-
-<a id="skewedinfotypedef"></a>
-
+1. See [:material-code-brackets: SessionStatusType](./literals.md#sessionstatustype) 
+2. See [:material-code-braces: SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef) 
+3. See [:material-code-braces: ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef) 
 ## SkewedInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SkewedInfoTypeDef
+
+def get_value() -> SkewedInfoTypeDef:
+    return {
+        "SkewedColumnNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `SkewedColumnNames`: `Sequence`\[`str`\]
-- `SkewedColumnValues`: `Sequence`\[`str`\]
-- `SkewedColumnValueLocationMaps`: `Mapping`\[`str`, `str`\]
-
-<a id="sortcriteriontypedef"></a>
+```python title="Definition"
+class SkewedInfoTypeDef(TypedDict):
+    SkewedColumnNames: NotRequired[Sequence[str]],
+    SkewedColumnValues: NotRequired[Sequence[str]],
+    SkewedColumnValueLocationMaps: NotRequired[Mapping[str, str]],
+```
 
 ## SortCriterionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import SortCriterionTypeDef
+
+def get_value() -> SortCriterionTypeDef:
+    return {
+        "FieldName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SortCriterionTypeDef(TypedDict):
+    FieldName: NotRequired[str],
+    Sort: NotRequired[SortType],  # (1)
+```
 
-- `FieldName`: `str`
-- `Sort`: [SortType](./literals.md#sorttype)
-
-<a id="startblueprintrunrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SortType](./literals.md#sorttype) 
 ## StartBlueprintRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartBlueprintRunRequestRequestTypeDef
+
+def get_value() -> StartBlueprintRunRequestRequestTypeDef:
+    return {
+        "BlueprintName": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `BlueprintName`: `str`
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `Parameters`: `str`
-
-<a id="startblueprintrunresponsetypedef"></a>
+```python title="Definition"
+class StartBlueprintRunRequestRequestTypeDef(TypedDict):
+    BlueprintName: str,
+    RoleArn: str,
+    Parameters: NotRequired[str],
+```
 
 ## StartBlueprintRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartBlueprintRunResponseTypeDef
+
+def get_value() -> StartBlueprintRunResponseTypeDef:
+    return {
+        "RunId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBlueprintRunResponseTypeDef(TypedDict):
+    RunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RunId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startcrawlerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartCrawlerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartCrawlerRequestRequestTypeDef
+
+def get_value() -> StartCrawlerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="startcrawlerschedulerequestrequesttypedef"></a>
+```python title="Definition"
+class StartCrawlerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## StartCrawlerScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartCrawlerScheduleRequestRequestTypeDef
+
+def get_value() -> StartCrawlerScheduleRequestRequestTypeDef:
+    return {
+        "CrawlerName": ...,
+    }
 ```
 
-Required fields:
-
-- `CrawlerName`: `str`
-
-<a id="startexportlabelstaskrunrequestrequesttypedef"></a>
+```python title="Definition"
+class StartCrawlerScheduleRequestRequestTypeDef(TypedDict):
+    CrawlerName: str,
+```
 
 ## StartExportLabelsTaskRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartExportLabelsTaskRunRequestRequestTypeDef
+
+def get_value() -> StartExportLabelsTaskRunRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+        "OutputS3Path": ...,
+    }
 ```
 
-Required fields:
-
-- `TransformId`: `str`
-- `OutputS3Path`: `str`
-
-<a id="startexportlabelstaskrunresponsetypedef"></a>
+```python title="Definition"
+class StartExportLabelsTaskRunRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+    OutputS3Path: str,
+```
 
 ## StartExportLabelsTaskRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartExportLabelsTaskRunResponseTypeDef
+
+def get_value() -> StartExportLabelsTaskRunResponseTypeDef:
+    return {
+        "TaskRunId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartExportLabelsTaskRunResponseTypeDef(TypedDict):
+    TaskRunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TaskRunId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startimportlabelstaskrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartImportLabelsTaskRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartImportLabelsTaskRunRequestRequestTypeDef
+
+def get_value() -> StartImportLabelsTaskRunRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+        "InputS3Path": ...,
+    }
 ```
 
-Required fields:
-
-- `TransformId`: `str`
-- `InputS3Path`: `str`
-
-Optional fields:
-
-- `ReplaceAllLabels`: `bool`
-
-<a id="startimportlabelstaskrunresponsetypedef"></a>
+```python title="Definition"
+class StartImportLabelsTaskRunRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+    InputS3Path: str,
+    ReplaceAllLabels: NotRequired[bool],
+```
 
 ## StartImportLabelsTaskRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartImportLabelsTaskRunResponseTypeDef
+
+def get_value() -> StartImportLabelsTaskRunResponseTypeDef:
+    return {
+        "TaskRunId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartImportLabelsTaskRunResponseTypeDef(TypedDict):
+    TaskRunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TaskRunId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startjobrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartJobRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartJobRunRequestRequestTypeDef
+
+def get_value() -> StartJobRunRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartJobRunRequestRequestTypeDef(TypedDict):
+    JobName: str,
+    JobRunId: NotRequired[str],
+    Arguments: NotRequired[Mapping[str, str]],
+    AllocatedCapacity: NotRequired[int],
+    Timeout: NotRequired[int],
+    MaxCapacity: NotRequired[float],
+    SecurityConfiguration: NotRequired[str],
+    NotificationProperty: NotRequired[NotificationPropertyTypeDef],  # (1)
+    WorkerType: NotRequired[WorkerTypeType],  # (2)
+    NumberOfWorkers: NotRequired[int],
+```
 
-- `JobName`: `str`
-
-Optional fields:
-
-- `JobRunId`: `str`
-- `Arguments`: `Mapping`\[`str`, `str`\]
-- `AllocatedCapacity`: `int`
-- `Timeout`: `int`
-- `MaxCapacity`: `float`
-- `SecurityConfiguration`: `str`
-- `NotificationProperty`:
-  [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-
-<a id="startjobrunresponsetypedef"></a>
-
+1. See [:material-code-braces: NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef) 
+2. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 ## StartJobRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartJobRunResponseTypeDef
+
+def get_value() -> StartJobRunResponseTypeDef:
+    return {
+        "JobRunId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartJobRunResponseTypeDef(TypedDict):
+    JobRunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobRunId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startmlevaluationtaskrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartMLEvaluationTaskRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartMLEvaluationTaskRunRequestRequestTypeDef
+
+def get_value() -> StartMLEvaluationTaskRunRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+    }
 ```
 
-Required fields:
-
-- `TransformId`: `str`
-
-<a id="startmlevaluationtaskrunresponsetypedef"></a>
+```python title="Definition"
+class StartMLEvaluationTaskRunRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+```
 
 ## StartMLEvaluationTaskRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartMLEvaluationTaskRunResponseTypeDef
+
+def get_value() -> StartMLEvaluationTaskRunResponseTypeDef:
+    return {
+        "TaskRunId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartMLEvaluationTaskRunResponseTypeDef(TypedDict):
+    TaskRunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TaskRunId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startmllabelingsetgenerationtaskrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef
+
+def get_value() -> StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+        "OutputS3Path": ...,
+    }
 ```
 
-Required fields:
-
-- `TransformId`: `str`
-- `OutputS3Path`: `str`
-
-<a id="startmllabelingsetgenerationtaskrunresponsetypedef"></a>
+```python title="Definition"
+class StartMLLabelingSetGenerationTaskRunRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+    OutputS3Path: str,
+```
 
 ## StartMLLabelingSetGenerationTaskRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartMLLabelingSetGenerationTaskRunResponseTypeDef
+
+def get_value() -> StartMLLabelingSetGenerationTaskRunResponseTypeDef:
+    return {
+        "TaskRunId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartMLLabelingSetGenerationTaskRunResponseTypeDef(TypedDict):
+    TaskRunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TaskRunId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="starttriggerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartTriggerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartTriggerRequestRequestTypeDef
+
+def get_value() -> StartTriggerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="starttriggerresponsetypedef"></a>
+```python title="Definition"
+class StartTriggerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## StartTriggerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartTriggerResponseTypeDef
+
+def get_value() -> StartTriggerResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTriggerResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startworkflowrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartWorkflowRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartWorkflowRunRequestRequestTypeDef
+
+def get_value() -> StartWorkflowRunRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `RunProperties`: `Mapping`\[`str`, `str`\]
-
-<a id="startworkflowrunresponsetypedef"></a>
+```python title="Definition"
+class StartWorkflowRunRequestRequestTypeDef(TypedDict):
+    Name: str,
+    RunProperties: NotRequired[Mapping[str, str]],
+```
 
 ## StartWorkflowRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartWorkflowRunResponseTypeDef
+
+def get_value() -> StartWorkflowRunResponseTypeDef:
+    return {
+        "RunId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartWorkflowRunResponseTypeDef(TypedDict):
+    RunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RunId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startingeventbatchconditiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartingEventBatchConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StartingEventBatchConditionTypeDef
+
+def get_value() -> StartingEventBatchConditionTypeDef:
+    return {
+        "BatchSize": ...,
+    }
 ```
 
-Optional fields:
-
-- `BatchSize`: `int`
-- `BatchWindow`: `int`
-
-<a id="statementoutputdatatypedef"></a>
+```python title="Definition"
+class StartingEventBatchConditionTypeDef(TypedDict):
+    BatchSize: NotRequired[int],
+    BatchWindow: NotRequired[int],
+```
 
 ## StatementOutputDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StatementOutputDataTypeDef
+
+def get_value() -> StatementOutputDataTypeDef:
+    return {
+        "TextPlain": ...,
+    }
 ```
 
-Optional fields:
-
-- `TextPlain`: `str`
-
-<a id="statementoutputtypedef"></a>
+```python title="Definition"
+class StatementOutputDataTypeDef(TypedDict):
+    TextPlain: NotRequired[str],
+```
 
 ## StatementOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StatementOutputTypeDef
+
+def get_value() -> StatementOutputTypeDef:
+    return {
+        "Data": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StatementOutputTypeDef(TypedDict):
+    Data: NotRequired[StatementOutputDataTypeDef],  # (1)
+    ExecutionCount: NotRequired[int],
+    Status: NotRequired[StatementStateType],  # (2)
+    ErrorName: NotRequired[str],
+    ErrorValue: NotRequired[str],
+    Traceback: NotRequired[List[str]],
+```
 
-- `Data`:
-  [StatementOutputDataTypeDef](./type_defs.md#statementoutputdatatypedef)
-- `ExecutionCount`: `int`
-- `Status`: [StatementStateType](./literals.md#statementstatetype)
-- `ErrorName`: `str`
-- `ErrorValue`: `str`
-- `Traceback`: `List`\[`str`\]
-
-<a id="statementtypedef"></a>
-
+1. See [:material-code-braces: StatementOutputDataTypeDef](./type_defs.md#statementoutputdatatypedef) 
+2. See [:material-code-brackets: StatementStateType](./literals.md#statementstatetype) 
 ## StatementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StatementTypeDef
+
+def get_value() -> StatementTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StatementTypeDef(TypedDict):
+    Id: NotRequired[int],
+    Code: NotRequired[str],
+    State: NotRequired[StatementStateType],  # (1)
+    Output: NotRequired[StatementOutputTypeDef],  # (2)
+    Progress: NotRequired[float],
+    StartedOn: NotRequired[int],
+    CompletedOn: NotRequired[int],
+```
 
-- `Id`: `int`
-- `Code`: `str`
-- `State`: [StatementStateType](./literals.md#statementstatetype)
-- `Output`: [StatementOutputTypeDef](./type_defs.md#statementoutputtypedef)
-- `Progress`: `float`
-- `StartedOn`: `int`
-- `CompletedOn`: `int`
-
-<a id="stopcrawlerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StatementStateType](./literals.md#statementstatetype) 
+2. See [:material-code-braces: StatementOutputTypeDef](./type_defs.md#statementoutputtypedef) 
 ## StopCrawlerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StopCrawlerRequestRequestTypeDef
+
+def get_value() -> StopCrawlerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="stopcrawlerschedulerequestrequesttypedef"></a>
+```python title="Definition"
+class StopCrawlerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## StopCrawlerScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StopCrawlerScheduleRequestRequestTypeDef
+
+def get_value() -> StopCrawlerScheduleRequestRequestTypeDef:
+    return {
+        "CrawlerName": ...,
+    }
 ```
 
-Required fields:
-
-- `CrawlerName`: `str`
-
-<a id="stopsessionrequestrequesttypedef"></a>
+```python title="Definition"
+class StopCrawlerScheduleRequestRequestTypeDef(TypedDict):
+    CrawlerName: str,
+```
 
 ## StopSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StopSessionRequestRequestTypeDef
+
+def get_value() -> StopSessionRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `RequestOrigin`: `str`
-
-<a id="stopsessionresponsetypedef"></a>
+```python title="Definition"
+class StopSessionRequestRequestTypeDef(TypedDict):
+    Id: str,
+    RequestOrigin: NotRequired[str],
+```
 
 ## StopSessionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StopSessionResponseTypeDef
+
+def get_value() -> StopSessionResponseTypeDef:
+    return {
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopSessionResponseTypeDef(TypedDict):
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stoptriggerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopTriggerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StopTriggerRequestRequestTypeDef
+
+def get_value() -> StopTriggerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="stoptriggerresponsetypedef"></a>
+```python title="Definition"
+class StopTriggerRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## StopTriggerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StopTriggerResponseTypeDef
+
+def get_value() -> StopTriggerResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopTriggerResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopworkflowrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopWorkflowRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StopWorkflowRunRequestRequestTypeDef
+
+def get_value() -> StopWorkflowRunRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "RunId": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `RunId`: `str`
-
-<a id="storagedescriptortypedef"></a>
+```python title="Definition"
+class StopWorkflowRunRequestRequestTypeDef(TypedDict):
+    Name: str,
+    RunId: str,
+```
 
 ## StorageDescriptorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StorageDescriptorTypeDef
+
+def get_value() -> StorageDescriptorTypeDef:
+    return {
+        "Columns": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StorageDescriptorTypeDef(TypedDict):
+    Columns: NotRequired[Sequence[ColumnTypeDef]],  # (1)
+    Location: NotRequired[str],
+    AdditionalLocations: NotRequired[Sequence[str]],
+    InputFormat: NotRequired[str],
+    OutputFormat: NotRequired[str],
+    Compressed: NotRequired[bool],
+    NumberOfBuckets: NotRequired[int],
+    SerdeInfo: NotRequired[SerDeInfoTypeDef],  # (2)
+    BucketColumns: NotRequired[Sequence[str]],
+    SortColumns: NotRequired[Sequence[OrderTypeDef]],  # (3)
+    Parameters: NotRequired[Mapping[str, str]],
+    SkewedInfo: NotRequired[SkewedInfoTypeDef],  # (4)
+    StoredAsSubDirectories: NotRequired[bool],
+    SchemaReference: NotRequired[SchemaReferenceTypeDef],  # (5)
+```
 
-- `Columns`: `Sequence`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
-- `Location`: `str`
-- `AdditionalLocations`: `Sequence`\[`str`\]
-- `InputFormat`: `str`
-- `OutputFormat`: `str`
-- `Compressed`: `bool`
-- `NumberOfBuckets`: `int`
-- `SerdeInfo`: [SerDeInfoTypeDef](./type_defs.md#serdeinfotypedef)
-- `BucketColumns`: `Sequence`\[`str`\]
-- `SortColumns`: `Sequence`\[[OrderTypeDef](./type_defs.md#ordertypedef)\]
-- `Parameters`: `Mapping`\[`str`, `str`\]
-- `SkewedInfo`: [SkewedInfoTypeDef](./type_defs.md#skewedinfotypedef)
-- `StoredAsSubDirectories`: `bool`
-- `SchemaReference`:
-  [SchemaReferenceTypeDef](./type_defs.md#schemareferencetypedef)
-
-<a id="stringcolumnstatisticsdatatypedef"></a>
-
+1. See [:material-code-braces: ColumnTypeDef](./type_defs.md#columntypedef) 
+2. See [:material-code-braces: SerDeInfoTypeDef](./type_defs.md#serdeinfotypedef) 
+3. See [:material-code-braces: OrderTypeDef](./type_defs.md#ordertypedef) 
+4. See [:material-code-braces: SkewedInfoTypeDef](./type_defs.md#skewedinfotypedef) 
+5. See [:material-code-braces: SchemaReferenceTypeDef](./type_defs.md#schemareferencetypedef) 
 ## StringColumnStatisticsDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import StringColumnStatisticsDataTypeDef
+
+def get_value() -> StringColumnStatisticsDataTypeDef:
+    return {
+        "MaximumLength": ...,
+        "AverageLength": ...,
+        "NumberOfNulls": ...,
+        "NumberOfDistinctValues": ...,
+    }
 ```
 
-Required fields:
-
-- `MaximumLength`: `int`
-- `AverageLength`: `float`
-- `NumberOfNulls`: `int`
-- `NumberOfDistinctValues`: `int`
-
-<a id="tableerrortypedef"></a>
+```python title="Definition"
+class StringColumnStatisticsDataTypeDef(TypedDict):
+    MaximumLength: int,
+    AverageLength: float,
+    NumberOfNulls: int,
+    NumberOfDistinctValues: int,
+```
 
 ## TableErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TableErrorTypeDef
+
+def get_value() -> TableErrorTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TableErrorTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    ErrorDetail: NotRequired[ErrorDetailTypeDef],  # (1)
+```
 
-- `TableName`: `str`
-- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
-
-<a id="tableidentifiertypedef"></a>
-
+1. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## TableIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TableIdentifierTypeDef
+
+def get_value() -> TableIdentifierTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `Name`: `str`
-
-<a id="tableinputtypedef"></a>
+```python title="Definition"
+class TableIdentifierTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## TableInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TableInputTypeDef
+
+def get_value() -> TableInputTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TableInputTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    Owner: NotRequired[str],
+    LastAccessTime: NotRequired[Union[datetime, str]],
+    LastAnalyzedTime: NotRequired[Union[datetime, str]],
+    Retention: NotRequired[int],
+    StorageDescriptor: NotRequired[StorageDescriptorTypeDef],  # (1)
+    PartitionKeys: NotRequired[Sequence[ColumnTypeDef]],  # (2)
+    ViewOriginalText: NotRequired[str],
+    ViewExpandedText: NotRequired[str],
+    TableType: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, str]],
+    TargetTable: NotRequired[TableIdentifierTypeDef],  # (3)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Owner`: `str`
-- `LastAccessTime`: `Union`\[`datetime`, `str`\]
-- `LastAnalyzedTime`: `Union`\[`datetime`, `str`\]
-- `Retention`: `int`
-- `StorageDescriptor`:
-  [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
-- `PartitionKeys`: `Sequence`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
-- `ViewOriginalText`: `str`
-- `ViewExpandedText`: `str`
-- `TableType`: `str`
-- `Parameters`: `Mapping`\[`str`, `str`\]
-- `TargetTable`:
-  [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
-
-<a id="tabletypedef"></a>
-
+1. See [:material-code-braces: StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef) 
+2. See [:material-code-braces: ColumnTypeDef](./type_defs.md#columntypedef) 
+3. See [:material-code-braces: TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef) 
 ## TableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TableTypeDef
+
+def get_value() -> TableTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TableTypeDef(TypedDict):
+    Name: str,
+    DatabaseName: NotRequired[str],
+    Description: NotRequired[str],
+    Owner: NotRequired[str],
+    CreateTime: NotRequired[datetime],
+    UpdateTime: NotRequired[datetime],
+    LastAccessTime: NotRequired[datetime],
+    LastAnalyzedTime: NotRequired[datetime],
+    Retention: NotRequired[int],
+    StorageDescriptor: NotRequired[StorageDescriptorTypeDef],  # (1)
+    PartitionKeys: NotRequired[List[ColumnTypeDef]],  # (2)
+    ViewOriginalText: NotRequired[str],
+    ViewExpandedText: NotRequired[str],
+    TableType: NotRequired[str],
+    Parameters: NotRequired[Dict[str, str]],
+    CreatedBy: NotRequired[str],
+    IsRegisteredWithLakeFormation: NotRequired[bool],
+    TargetTable: NotRequired[TableIdentifierTypeDef],  # (3)
+    CatalogId: NotRequired[str],
+    VersionId: NotRequired[str],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `DatabaseName`: `str`
-- `Description`: `str`
-- `Owner`: `str`
-- `CreateTime`: `datetime`
-- `UpdateTime`: `datetime`
-- `LastAccessTime`: `datetime`
-- `LastAnalyzedTime`: `datetime`
-- `Retention`: `int`
-- `StorageDescriptor`:
-  [StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef)
-- `PartitionKeys`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
-- `ViewOriginalText`: `str`
-- `ViewExpandedText`: `str`
-- `TableType`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
-- `CreatedBy`: `str`
-- `IsRegisteredWithLakeFormation`: `bool`
-- `TargetTable`:
-  [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
-- `CatalogId`: `str`
-- `VersionId`: `str`
-
-<a id="tableversionerrortypedef"></a>
-
+1. See [:material-code-braces: StorageDescriptorTypeDef](./type_defs.md#storagedescriptortypedef) 
+2. See [:material-code-braces: ColumnTypeDef](./type_defs.md#columntypedef) 
+3. See [:material-code-braces: TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef) 
 ## TableVersionErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TableVersionErrorTypeDef
+
+def get_value() -> TableVersionErrorTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TableVersionErrorTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    VersionId: NotRequired[str],
+    ErrorDetail: NotRequired[ErrorDetailTypeDef],  # (1)
+```
 
-- `TableName`: `str`
-- `VersionId`: `str`
-- `ErrorDetail`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
-
-<a id="tableversiontypedef"></a>
-
+1. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## TableVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TableVersionTypeDef
+
+def get_value() -> TableVersionTypeDef:
+    return {
+        "Table": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TableVersionTypeDef(TypedDict):
+    Table: NotRequired[TableTypeDef],  # (1)
+    VersionId: NotRequired[str],
+```
 
-- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
-- `VersionId`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagsToAdd": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagsToAdd`: `Mapping`\[`str`, `str`\]
-
-<a id="taskrunfiltercriteriatypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagsToAdd: Mapping[str, str],
+```
 
 ## TaskRunFilterCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TaskRunFilterCriteriaTypeDef
+
+def get_value() -> TaskRunFilterCriteriaTypeDef:
+    return {
+        "TaskRunType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaskRunFilterCriteriaTypeDef(TypedDict):
+    TaskRunType: NotRequired[TaskTypeType],  # (1)
+    Status: NotRequired[TaskStatusTypeType],  # (2)
+    StartedBefore: NotRequired[Union[datetime, str]],
+    StartedAfter: NotRequired[Union[datetime, str]],
+```
 
-- `TaskRunType`: [TaskTypeType](./literals.md#tasktypetype)
-- `Status`: [TaskStatusTypeType](./literals.md#taskstatustypetype)
-- `StartedBefore`: `Union`\[`datetime`, `str`\]
-- `StartedAfter`: `Union`\[`datetime`, `str`\]
-
-<a id="taskrunpropertiestypedef"></a>
-
+1. See [:material-code-brackets: TaskTypeType](./literals.md#tasktypetype) 
+2. See [:material-code-brackets: TaskStatusTypeType](./literals.md#taskstatustypetype) 
 ## TaskRunPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TaskRunPropertiesTypeDef
+
+def get_value() -> TaskRunPropertiesTypeDef:
+    return {
+        "TaskType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaskRunPropertiesTypeDef(TypedDict):
+    TaskType: NotRequired[TaskTypeType],  # (1)
+    ImportLabelsTaskRunProperties: NotRequired[ImportLabelsTaskRunPropertiesTypeDef],  # (2)
+    ExportLabelsTaskRunProperties: NotRequired[ExportLabelsTaskRunPropertiesTypeDef],  # (3)
+    LabelingSetGenerationTaskRunProperties: NotRequired[LabelingSetGenerationTaskRunPropertiesTypeDef],  # (4)
+    FindMatchesTaskRunProperties: NotRequired[FindMatchesTaskRunPropertiesTypeDef],  # (5)
+```
 
-- `TaskType`: [TaskTypeType](./literals.md#tasktypetype)
-- `ImportLabelsTaskRunProperties`:
-  [ImportLabelsTaskRunPropertiesTypeDef](./type_defs.md#importlabelstaskrunpropertiestypedef)
-- `ExportLabelsTaskRunProperties`:
-  [ExportLabelsTaskRunPropertiesTypeDef](./type_defs.md#exportlabelstaskrunpropertiestypedef)
-- `LabelingSetGenerationTaskRunProperties`:
-  [LabelingSetGenerationTaskRunPropertiesTypeDef](./type_defs.md#labelingsetgenerationtaskrunpropertiestypedef)
-- `FindMatchesTaskRunProperties`:
-  [FindMatchesTaskRunPropertiesTypeDef](./type_defs.md#findmatchestaskrunpropertiestypedef)
-
-<a id="taskrunsortcriteriatypedef"></a>
-
+1. See [:material-code-brackets: TaskTypeType](./literals.md#tasktypetype) 
+2. See [:material-code-braces: ImportLabelsTaskRunPropertiesTypeDef](./type_defs.md#importlabelstaskrunpropertiestypedef) 
+3. See [:material-code-braces: ExportLabelsTaskRunPropertiesTypeDef](./type_defs.md#exportlabelstaskrunpropertiestypedef) 
+4. See [:material-code-braces: LabelingSetGenerationTaskRunPropertiesTypeDef](./type_defs.md#labelingsetgenerationtaskrunpropertiestypedef) 
+5. See [:material-code-braces: FindMatchesTaskRunPropertiesTypeDef](./type_defs.md#findmatchestaskrunpropertiestypedef) 
 ## TaskRunSortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TaskRunSortCriteriaTypeDef
+
+def get_value() -> TaskRunSortCriteriaTypeDef:
+    return {
+        "Column": ...,
+        "SortDirection": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TaskRunSortCriteriaTypeDef(TypedDict):
+    Column: TaskRunSortColumnTypeType,  # (1)
+    SortDirection: SortDirectionTypeType,  # (2)
+```
 
-- `Column`:
-  [TaskRunSortColumnTypeType](./literals.md#taskrunsortcolumntypetype)
-- `SortDirection`: [SortDirectionTypeType](./literals.md#sortdirectiontypetype)
-
-<a id="taskruntypedef"></a>
-
+1. See [:material-code-brackets: TaskRunSortColumnTypeType](./literals.md#taskrunsortcolumntypetype) 
+2. See [:material-code-brackets: SortDirectionTypeType](./literals.md#sortdirectiontypetype) 
 ## TaskRunTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TaskRunTypeDef
+
+def get_value() -> TaskRunTypeDef:
+    return {
+        "TransformId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaskRunTypeDef(TypedDict):
+    TransformId: NotRequired[str],
+    TaskRunId: NotRequired[str],
+    Status: NotRequired[TaskStatusTypeType],  # (1)
+    LogGroupName: NotRequired[str],
+    Properties: NotRequired[TaskRunPropertiesTypeDef],  # (2)
+    ErrorString: NotRequired[str],
+    StartedOn: NotRequired[datetime],
+    LastModifiedOn: NotRequired[datetime],
+    CompletedOn: NotRequired[datetime],
+    ExecutionTime: NotRequired[int],
+```
 
-- `TransformId`: `str`
-- `TaskRunId`: `str`
-- `Status`: [TaskStatusTypeType](./literals.md#taskstatustypetype)
-- `LogGroupName`: `str`
-- `Properties`:
-  [TaskRunPropertiesTypeDef](./type_defs.md#taskrunpropertiestypedef)
-- `ErrorString`: `str`
-- `StartedOn`: `datetime`
-- `LastModifiedOn`: `datetime`
-- `CompletedOn`: `datetime`
-- `ExecutionTime`: `int`
-
-<a id="transformencryptiontypedef"></a>
-
+1. See [:material-code-brackets: TaskStatusTypeType](./literals.md#taskstatustypetype) 
+2. See [:material-code-braces: TaskRunPropertiesTypeDef](./type_defs.md#taskrunpropertiestypedef) 
 ## TransformEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TransformEncryptionTypeDef
+
+def get_value() -> TransformEncryptionTypeDef:
+    return {
+        "MlUserDataEncryption": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TransformEncryptionTypeDef(TypedDict):
+    MlUserDataEncryption: NotRequired[MLUserDataEncryptionTypeDef],  # (1)
+    TaskRunSecurityConfigurationName: NotRequired[str],
+```
 
-- `MlUserDataEncryption`:
-  [MLUserDataEncryptionTypeDef](./type_defs.md#mluserdataencryptiontypedef)
-- `TaskRunSecurityConfigurationName`: `str`
-
-<a id="transformfiltercriteriatypedef"></a>
-
+1. See [:material-code-braces: MLUserDataEncryptionTypeDef](./type_defs.md#mluserdataencryptiontypedef) 
 ## TransformFilterCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TransformFilterCriteriaTypeDef
+
+def get_value() -> TransformFilterCriteriaTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TransformFilterCriteriaTypeDef(TypedDict):
+    Name: NotRequired[str],
+    TransformType: NotRequired[TransformTypeType],  # (1)
+    Status: NotRequired[TransformStatusTypeType],  # (2)
+    GlueVersion: NotRequired[str],
+    CreatedBefore: NotRequired[Union[datetime, str]],
+    CreatedAfter: NotRequired[Union[datetime, str]],
+    LastModifiedBefore: NotRequired[Union[datetime, str]],
+    LastModifiedAfter: NotRequired[Union[datetime, str]],
+    Schema: NotRequired[Sequence[SchemaColumnTypeDef]],  # (3)
+```
 
-- `Name`: `str`
-- `TransformType`: `Literal['FIND_MATCHES']` (see
-  [TransformTypeType](./literals.md#transformtypetype))
-- `Status`: [TransformStatusTypeType](./literals.md#transformstatustypetype)
-- `GlueVersion`: `str`
-- `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `CreatedAfter`: `Union`\[`datetime`, `str`\]
-- `LastModifiedBefore`: `Union`\[`datetime`, `str`\]
-- `LastModifiedAfter`: `Union`\[`datetime`, `str`\]
-- `Schema`:
-  `Sequence`\[[SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef)\]
-
-<a id="transformparameterstypedef"></a>
-
+1. See [:material-code-brackets: TransformTypeType](./literals.md#transformtypetype) 
+2. See [:material-code-brackets: TransformStatusTypeType](./literals.md#transformstatustypetype) 
+3. See [:material-code-braces: SchemaColumnTypeDef](./type_defs.md#schemacolumntypedef) 
 ## TransformParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TransformParametersTypeDef
+
+def get_value() -> TransformParametersTypeDef:
+    return {
+        "TransformType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransformParametersTypeDef(TypedDict):
+    TransformType: TransformTypeType,  # (1)
+    FindMatchesParameters: NotRequired[FindMatchesParametersTypeDef],  # (2)
+```
 
-- `TransformType`: `Literal['FIND_MATCHES']` (see
-  [TransformTypeType](./literals.md#transformtypetype))
-
-Optional fields:
-
-- `FindMatchesParameters`:
-  [FindMatchesParametersTypeDef](./type_defs.md#findmatchesparameterstypedef)
-
-<a id="transformsortcriteriatypedef"></a>
-
+1. See [:material-code-brackets: TransformTypeType](./literals.md#transformtypetype) 
+2. See [:material-code-braces: FindMatchesParametersTypeDef](./type_defs.md#findmatchesparameterstypedef) 
 ## TransformSortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TransformSortCriteriaTypeDef
+
+def get_value() -> TransformSortCriteriaTypeDef:
+    return {
+        "Column": ...,
+        "SortDirection": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransformSortCriteriaTypeDef(TypedDict):
+    Column: TransformSortColumnTypeType,  # (1)
+    SortDirection: SortDirectionTypeType,  # (2)
+```
 
-- `Column`:
-  [TransformSortColumnTypeType](./literals.md#transformsortcolumntypetype)
-- `SortDirection`: [SortDirectionTypeType](./literals.md#sortdirectiontypetype)
-
-<a id="triggernodedetailstypedef"></a>
-
+1. See [:material-code-brackets: TransformSortColumnTypeType](./literals.md#transformsortcolumntypetype) 
+2. See [:material-code-brackets: SortDirectionTypeType](./literals.md#sortdirectiontypetype) 
 ## TriggerNodeDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TriggerNodeDetailsTypeDef
+
+def get_value() -> TriggerNodeDetailsTypeDef:
+    return {
+        "Trigger": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TriggerNodeDetailsTypeDef(TypedDict):
+    Trigger: NotRequired[TriggerTypeDef],  # (1)
+```
 
-- `Trigger`: [TriggerTypeDef](./type_defs.md#triggertypedef)
-
-<a id="triggertypedef"></a>
-
+1. See [:material-code-braces: TriggerTypeDef](./type_defs.md#triggertypedef) 
 ## TriggerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TriggerTypeDef
+
+def get_value() -> TriggerTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TriggerTypeDef(TypedDict):
+    Name: NotRequired[str],
+    WorkflowName: NotRequired[str],
+    Id: NotRequired[str],
+    Type: NotRequired[TriggerTypeType],  # (1)
+    State: NotRequired[TriggerStateType],  # (2)
+    Description: NotRequired[str],
+    Schedule: NotRequired[str],
+    Actions: NotRequired[List[ActionTypeDef]],  # (3)
+    Predicate: NotRequired[PredicateTypeDef],  # (4)
+    EventBatchingCondition: NotRequired[EventBatchingConditionTypeDef],  # (5)
+```
 
-- `Name`: `str`
-- `WorkflowName`: `str`
-- `Id`: `str`
-- `Type`: [TriggerTypeType](./literals.md#triggertypetype)
-- `State`: [TriggerStateType](./literals.md#triggerstatetype)
-- `Description`: `str`
-- `Schedule`: `str`
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
-- `EventBatchingCondition`:
-  [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
-
-<a id="triggerupdatetypedef"></a>
-
+1. See [:material-code-brackets: TriggerTypeType](./literals.md#triggertypetype) 
+2. See [:material-code-brackets: TriggerStateType](./literals.md#triggerstatetype) 
+3. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+4. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
+5. See [:material-code-braces: EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef) 
 ## TriggerUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import TriggerUpdateTypeDef
+
+def get_value() -> TriggerUpdateTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TriggerUpdateTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Schedule: NotRequired[str],
+    Actions: NotRequired[Sequence[ActionTypeDef]],  # (1)
+    Predicate: NotRequired[PredicateTypeDef],  # (2)
+    EventBatchingCondition: NotRequired[EventBatchingConditionTypeDef],  # (3)
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `Schedule`: `str`
-- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `Predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
-- `EventBatchingCondition`:
-  [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
-
-<a id="unfilteredpartitiontypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
+3. See [:material-code-braces: EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef) 
 ## UnfilteredPartitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UnfilteredPartitionTypeDef
+
+def get_value() -> UnfilteredPartitionTypeDef:
+    return {
+        "Partition": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UnfilteredPartitionTypeDef(TypedDict):
+    Partition: NotRequired[PartitionTypeDef],  # (1)
+    AuthorizedColumns: NotRequired[List[str]],
+    IsRegisteredWithLakeFormation: NotRequired[bool],
+```
 
-- `Partition`: [PartitionTypeDef](./type_defs.md#partitiontypedef)
-- `AuthorizedColumns`: `List`\[`str`\]
-- `IsRegisteredWithLakeFormation`: `bool`
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionTypeDef](./type_defs.md#partitiontypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagsToRemove": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagsToRemove`: `Sequence`\[`str`\]
-
-<a id="updateblueprintrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagsToRemove: Sequence[str],
+```
 
 ## UpdateBlueprintRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateBlueprintRequestRequestTypeDef
+
+def get_value() -> UpdateBlueprintRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "BlueprintLocation": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `BlueprintLocation`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="updateblueprintresponsetypedef"></a>
+```python title="Definition"
+class UpdateBlueprintRequestRequestTypeDef(TypedDict):
+    Name: str,
+    BlueprintLocation: str,
+    Description: NotRequired[str],
+```
 
 ## UpdateBlueprintResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateBlueprintResponseTypeDef
+
+def get_value() -> UpdateBlueprintResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBlueprintResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateclassifierrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateClassifierRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateClassifierRequestRequestTypeDef
+
+def get_value() -> UpdateClassifierRequestRequestTypeDef:
+    return {
+        "GrokClassifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateClassifierRequestRequestTypeDef(TypedDict):
+    GrokClassifier: NotRequired[UpdateGrokClassifierRequestTypeDef],  # (1)
+    XMLClassifier: NotRequired[UpdateXMLClassifierRequestTypeDef],  # (2)
+    JsonClassifier: NotRequired[UpdateJsonClassifierRequestTypeDef],  # (3)
+    CsvClassifier: NotRequired[UpdateCsvClassifierRequestTypeDef],  # (4)
+```
 
-- `GrokClassifier`:
-  [UpdateGrokClassifierRequestTypeDef](./type_defs.md#updategrokclassifierrequesttypedef)
-- `XMLClassifier`:
-  [UpdateXMLClassifierRequestTypeDef](./type_defs.md#updatexmlclassifierrequesttypedef)
-- `JsonClassifier`:
-  [UpdateJsonClassifierRequestTypeDef](./type_defs.md#updatejsonclassifierrequesttypedef)
-- `CsvClassifier`:
-  [UpdateCsvClassifierRequestTypeDef](./type_defs.md#updatecsvclassifierrequesttypedef)
-
-<a id="updatecolumnstatisticsforpartitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateGrokClassifierRequestTypeDef](./type_defs.md#updategrokclassifierrequesttypedef) 
+2. See [:material-code-braces: UpdateXMLClassifierRequestTypeDef](./type_defs.md#updatexmlclassifierrequesttypedef) 
+3. See [:material-code-braces: UpdateJsonClassifierRequestTypeDef](./type_defs.md#updatejsonclassifierrequesttypedef) 
+4. See [:material-code-braces: UpdateCsvClassifierRequestTypeDef](./type_defs.md#updatecsvclassifierrequesttypedef) 
 ## UpdateColumnStatisticsForPartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForPartitionRequestRequestTypeDef
+
+def get_value() -> UpdateColumnStatisticsForPartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionValues": ...,
+        "ColumnStatisticsList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateColumnStatisticsForPartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionValues: Sequence[str],
+    ColumnStatisticsList: Sequence[ColumnStatisticsTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionValues`: `Sequence`\[`str`\]
-- `ColumnStatisticsList`:
-  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="updatecolumnstatisticsforpartitionresponsetypedef"></a>
-
+1. See [:material-code-braces: ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef) 
 ## UpdateColumnStatisticsForPartitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForPartitionResponseTypeDef
+
+def get_value() -> UpdateColumnStatisticsForPartitionResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateColumnStatisticsForPartitionResponseTypeDef(TypedDict):
+    Errors: List[ColumnStatisticsErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[ColumnStatisticsErrorTypeDef](./type_defs.md#columnstatisticserrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecolumnstatisticsfortablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ColumnStatisticsErrorTypeDef](./type_defs.md#columnstatisticserrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateColumnStatisticsForTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForTableRequestRequestTypeDef
+
+def get_value() -> UpdateColumnStatisticsForTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "ColumnStatisticsList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateColumnStatisticsForTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    ColumnStatisticsList: Sequence[ColumnStatisticsTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `ColumnStatisticsList`:
-  `Sequence`\[[ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="updatecolumnstatisticsfortableresponsetypedef"></a>
-
+1. See [:material-code-braces: ColumnStatisticsTypeDef](./type_defs.md#columnstatisticstypedef) 
 ## UpdateColumnStatisticsForTableResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateColumnStatisticsForTableResponseTypeDef
+
+def get_value() -> UpdateColumnStatisticsForTableResponseTypeDef:
+    return {
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateColumnStatisticsForTableResponseTypeDef(TypedDict):
+    Errors: List[ColumnStatisticsErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Errors`:
-  `List`\[[ColumnStatisticsErrorTypeDef](./type_defs.md#columnstatisticserrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ColumnStatisticsErrorTypeDef](./type_defs.md#columnstatisticserrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateConnectionRequestRequestTypeDef
+
+def get_value() -> UpdateConnectionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "ConnectionInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ConnectionInput: ConnectionInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `Name`: `str`
-- `ConnectionInput`:
-  [ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="updatecrawlerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionInputTypeDef](./type_defs.md#connectioninputtypedef) 
 ## UpdateCrawlerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateCrawlerRequestRequestTypeDef
+
+def get_value() -> UpdateCrawlerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCrawlerRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Role: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    Description: NotRequired[str],
+    Targets: NotRequired[CrawlerTargetsTypeDef],  # (1)
+    Schedule: NotRequired[str],
+    Classifiers: NotRequired[Sequence[str]],
+    TablePrefix: NotRequired[str],
+    SchemaChangePolicy: NotRequired[SchemaChangePolicyTypeDef],  # (2)
+    RecrawlPolicy: NotRequired[RecrawlPolicyTypeDef],  # (3)
+    LineageConfiguration: NotRequired[LineageConfigurationTypeDef],  # (4)
+    LakeFormationConfiguration: NotRequired[LakeFormationConfigurationTypeDef],  # (5)
+    Configuration: NotRequired[str],
+    CrawlerSecurityConfiguration: NotRequired[str],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Role`: `str`
-- `DatabaseName`: `str`
-- `Description`: `str`
-- `Targets`: [CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef)
-- `Schedule`: `str`
-- `Classifiers`: `Sequence`\[`str`\]
-- `TablePrefix`: `str`
-- `SchemaChangePolicy`:
-  [SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef)
-- `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
-- `LineageConfiguration`:
-  [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
-- `LakeFormationConfiguration`:
-  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
-- `Configuration`: `str`
-- `CrawlerSecurityConfiguration`: `str`
-
-<a id="updatecrawlerschedulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CrawlerTargetsTypeDef](./type_defs.md#crawlertargetstypedef) 
+2. See [:material-code-braces: SchemaChangePolicyTypeDef](./type_defs.md#schemachangepolicytypedef) 
+3. See [:material-code-braces: RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef) 
+4. See [:material-code-braces: LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef) 
+5. See [:material-code-braces: LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef) 
 ## UpdateCrawlerScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateCrawlerScheduleRequestRequestTypeDef
+
+def get_value() -> UpdateCrawlerScheduleRequestRequestTypeDef:
+    return {
+        "CrawlerName": ...,
+    }
 ```
 
-Required fields:
-
-- `CrawlerName`: `str`
-
-Optional fields:
-
-- `Schedule`: `str`
-
-<a id="updatecsvclassifierrequesttypedef"></a>
+```python title="Definition"
+class UpdateCrawlerScheduleRequestRequestTypeDef(TypedDict):
+    CrawlerName: str,
+    Schedule: NotRequired[str],
+```
 
 ## UpdateCsvClassifierRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateCsvClassifierRequestTypeDef
+
+def get_value() -> UpdateCsvClassifierRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCsvClassifierRequestTypeDef(TypedDict):
+    Name: str,
+    Delimiter: NotRequired[str],
+    QuoteSymbol: NotRequired[str],
+    ContainsHeader: NotRequired[CsvHeaderOptionType],  # (1)
+    Header: NotRequired[Sequence[str]],
+    DisableValueTrimming: NotRequired[bool],
+    AllowSingleColumn: NotRequired[bool],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Delimiter`: `str`
-- `QuoteSymbol`: `str`
-- `ContainsHeader`: [CsvHeaderOptionType](./literals.md#csvheaderoptiontype)
-- `Header`: `Sequence`\[`str`\]
-- `DisableValueTrimming`: `bool`
-- `AllowSingleColumn`: `bool`
-
-<a id="updatedatabaserequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CsvHeaderOptionType](./literals.md#csvheaderoptiontype) 
 ## UpdateDatabaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateDatabaseRequestRequestTypeDef
+
+def get_value() -> UpdateDatabaseRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "DatabaseInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDatabaseRequestRequestTypeDef(TypedDict):
+    Name: str,
+    DatabaseInput: DatabaseInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `Name`: `str`
-- `DatabaseInput`: [DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="updatedevendpointrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatabaseInputTypeDef](./type_defs.md#databaseinputtypedef) 
 ## UpdateDevEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateDevEndpointRequestRequestTypeDef
+
+def get_value() -> UpdateDevEndpointRequestRequestTypeDef:
+    return {
+        "EndpointName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDevEndpointRequestRequestTypeDef(TypedDict):
+    EndpointName: str,
+    PublicKey: NotRequired[str],
+    AddPublicKeys: NotRequired[Sequence[str]],
+    DeletePublicKeys: NotRequired[Sequence[str]],
+    CustomLibraries: NotRequired[DevEndpointCustomLibrariesTypeDef],  # (1)
+    UpdateEtlLibraries: NotRequired[bool],
+    DeleteArguments: NotRequired[Sequence[str]],
+    AddArguments: NotRequired[Mapping[str, str]],
+```
 
-- `EndpointName`: `str`
-
-Optional fields:
-
-- `PublicKey`: `str`
-- `AddPublicKeys`: `Sequence`\[`str`\]
-- `DeletePublicKeys`: `Sequence`\[`str`\]
-- `CustomLibraries`:
-  [DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef)
-- `UpdateEtlLibraries`: `bool`
-- `DeleteArguments`: `Sequence`\[`str`\]
-- `AddArguments`: `Mapping`\[`str`, `str`\]
-
-<a id="updategrokclassifierrequesttypedef"></a>
-
+1. See [:material-code-braces: DevEndpointCustomLibrariesTypeDef](./type_defs.md#devendpointcustomlibrariestypedef) 
 ## UpdateGrokClassifierRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateGrokClassifierRequestTypeDef
+
+def get_value() -> UpdateGrokClassifierRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Classification`: `str`
-- `GrokPattern`: `str`
-- `CustomPatterns`: `str`
-
-<a id="updatejobrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateGrokClassifierRequestTypeDef(TypedDict):
+    Name: str,
+    Classification: NotRequired[str],
+    GrokPattern: NotRequired[str],
+    CustomPatterns: NotRequired[str],
+```
 
 ## UpdateJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateJobRequestRequestTypeDef
+
+def get_value() -> UpdateJobRequestRequestTypeDef:
+    return {
+        "JobName": ...,
+        "JobUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobRequestRequestTypeDef(TypedDict):
+    JobName: str,
+    JobUpdate: JobUpdateTypeDef,  # (1)
+```
 
-- `JobName`: `str`
-- `JobUpdate`: [JobUpdateTypeDef](./type_defs.md#jobupdatetypedef)
-
-<a id="updatejobresponsetypedef"></a>
-
+1. See [:material-code-braces: JobUpdateTypeDef](./type_defs.md#jobupdatetypedef) 
 ## UpdateJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateJobResponseTypeDef
+
+def get_value() -> UpdateJobResponseTypeDef:
+    return {
+        "JobName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobResponseTypeDef(TypedDict):
+    JobName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatejsonclassifierrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateJsonClassifierRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateJsonClassifierRequestTypeDef
+
+def get_value() -> UpdateJsonClassifierRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `JsonPath`: `str`
-
-<a id="updatemltransformrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateJsonClassifierRequestTypeDef(TypedDict):
+    Name: str,
+    JsonPath: NotRequired[str],
+```
 
 ## UpdateMLTransformRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateMLTransformRequestRequestTypeDef
+
+def get_value() -> UpdateMLTransformRequestRequestTypeDef:
+    return {
+        "TransformId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMLTransformRequestRequestTypeDef(TypedDict):
+    TransformId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Parameters: NotRequired[TransformParametersTypeDef],  # (1)
+    Role: NotRequired[str],
+    GlueVersion: NotRequired[str],
+    MaxCapacity: NotRequired[float],
+    WorkerType: NotRequired[WorkerTypeType],  # (2)
+    NumberOfWorkers: NotRequired[int],
+    Timeout: NotRequired[int],
+    MaxRetries: NotRequired[int],
+```
 
-- `TransformId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `Parameters`:
-  [TransformParametersTypeDef](./type_defs.md#transformparameterstypedef)
-- `Role`: `str`
-- `GlueVersion`: `str`
-- `MaxCapacity`: `float`
-- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
-- `NumberOfWorkers`: `int`
-- `Timeout`: `int`
-- `MaxRetries`: `int`
-
-<a id="updatemltransformresponsetypedef"></a>
-
+1. See [:material-code-braces: TransformParametersTypeDef](./type_defs.md#transformparameterstypedef) 
+2. See [:material-code-brackets: WorkerTypeType](./literals.md#workertypetype) 
 ## UpdateMLTransformResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateMLTransformResponseTypeDef
+
+def get_value() -> UpdateMLTransformResponseTypeDef:
+    return {
+        "TransformId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMLTransformResponseTypeDef(TypedDict):
+    TransformId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TransformId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatepartitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePartitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdatePartitionRequestRequestTypeDef
+
+def get_value() -> UpdatePartitionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "PartitionValueList": ...,
+        "PartitionInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePartitionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    PartitionValueList: Sequence[str],
+    PartitionInput: PartitionInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionValueList`: `Sequence`\[`str`\]
-- `PartitionInput`:
-  [PartitionInputTypeDef](./type_defs.md#partitioninputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="updateregistryinputrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionInputTypeDef](./type_defs.md#partitioninputtypedef) 
 ## UpdateRegistryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateRegistryInputRequestTypeDef
+
+def get_value() -> UpdateRegistryInputRequestTypeDef:
+    return {
+        "RegistryId": ...,
+        "Description": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRegistryInputRequestTypeDef(TypedDict):
+    RegistryId: RegistryIdTypeDef,  # (1)
+    Description: str,
+```
 
-- `RegistryId`: [RegistryIdTypeDef](./type_defs.md#registryidtypedef)
-- `Description`: `str`
-
-<a id="updateregistryresponsetypedef"></a>
-
+1. See [:material-code-braces: RegistryIdTypeDef](./type_defs.md#registryidtypedef) 
 ## UpdateRegistryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateRegistryResponseTypeDef
+
+def get_value() -> UpdateRegistryResponseTypeDef:
+    return {
+        "RegistryName": ...,
+        "RegistryArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRegistryResponseTypeDef(TypedDict):
+    RegistryName: str,
+    RegistryArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RegistryName`: `str`
-- `RegistryArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateschemainputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSchemaInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateSchemaInputRequestTypeDef
+
+def get_value() -> UpdateSchemaInputRequestTypeDef:
+    return {
+        "SchemaId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSchemaInputRequestTypeDef(TypedDict):
+    SchemaId: SchemaIdTypeDef,  # (1)
+    SchemaVersionNumber: NotRequired[SchemaVersionNumberTypeDef],  # (2)
+    Compatibility: NotRequired[CompatibilityType],  # (3)
+    Description: NotRequired[str],
+```
 
-- `SchemaId`: [SchemaIdTypeDef](./type_defs.md#schemaidtypedef)
-
-Optional fields:
-
-- `SchemaVersionNumber`:
-  [SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef)
-- `Compatibility`: [CompatibilityType](./literals.md#compatibilitytype)
-- `Description`: `str`
-
-<a id="updateschemaresponsetypedef"></a>
-
+1. See [:material-code-braces: SchemaIdTypeDef](./type_defs.md#schemaidtypedef) 
+2. See [:material-code-braces: SchemaVersionNumberTypeDef](./type_defs.md#schemaversionnumbertypedef) 
+3. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
 ## UpdateSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateSchemaResponseTypeDef
+
+def get_value() -> UpdateSchemaResponseTypeDef:
+    return {
+        "SchemaArn": ...,
+        "SchemaName": ...,
+        "RegistryName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSchemaResponseTypeDef(TypedDict):
+    SchemaArn: str,
+    SchemaName: str,
+    RegistryName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `RegistryName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateTableRequestRequestTypeDef
+
+def get_value() -> UpdateTableRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableInput: TableInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+    SkipArchive: NotRequired[bool],
+    TransactionId: NotRequired[str],
+    VersionId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableInput`: [TableInputTypeDef](./type_defs.md#tableinputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `SkipArchive`: `bool`
-- `TransactionId`: `str`
-- `VersionId`: `str`
-
-<a id="updatetriggerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableInputTypeDef](./type_defs.md#tableinputtypedef) 
 ## UpdateTriggerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateTriggerRequestRequestTypeDef
+
+def get_value() -> UpdateTriggerRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "TriggerUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTriggerRequestRequestTypeDef(TypedDict):
+    Name: str,
+    TriggerUpdate: TriggerUpdateTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `TriggerUpdate`: [TriggerUpdateTypeDef](./type_defs.md#triggerupdatetypedef)
-
-<a id="updatetriggerresponsetypedef"></a>
-
+1. See [:material-code-braces: TriggerUpdateTypeDef](./type_defs.md#triggerupdatetypedef) 
 ## UpdateTriggerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateTriggerResponseTypeDef
+
+def get_value() -> UpdateTriggerResponseTypeDef:
+    return {
+        "Trigger": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTriggerResponseTypeDef(TypedDict):
+    Trigger: TriggerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Trigger`: [TriggerTypeDef](./type_defs.md#triggertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateuserdefinedfunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TriggerTypeDef](./type_defs.md#triggertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateUserDefinedFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateUserDefinedFunctionRequestRequestTypeDef
+
+def get_value() -> UpdateUserDefinedFunctionRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "FunctionName": ...,
+        "FunctionInput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserDefinedFunctionRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    FunctionName: str,
+    FunctionInput: UserDefinedFunctionInputTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `FunctionName`: `str`
-- `FunctionInput`:
-  [UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="updateworkflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserDefinedFunctionInputTypeDef](./type_defs.md#userdefinedfunctioninputtypedef) 
 ## UpdateWorkflowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateWorkflowRequestRequestTypeDef
+
+def get_value() -> UpdateWorkflowRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `DefaultRunProperties`: `Mapping`\[`str`, `str`\]
-- `MaxConcurrentRuns`: `int`
-
-<a id="updateworkflowresponsetypedef"></a>
+```python title="Definition"
+class UpdateWorkflowRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    DefaultRunProperties: NotRequired[Mapping[str, str]],
+    MaxConcurrentRuns: NotRequired[int],
+```
 
 ## UpdateWorkflowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateWorkflowResponseTypeDef
+
+def get_value() -> UpdateWorkflowResponseTypeDef:
+    return {
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWorkflowResponseTypeDef(TypedDict):
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatexmlclassifierrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateXMLClassifierRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UpdateXMLClassifierRequestTypeDef
+
+def get_value() -> UpdateXMLClassifierRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Classification`: `str`
-- `RowTag`: `str`
-
-<a id="userdefinedfunctioninputtypedef"></a>
+```python title="Definition"
+class UpdateXMLClassifierRequestTypeDef(TypedDict):
+    Name: str,
+    Classification: NotRequired[str],
+    RowTag: NotRequired[str],
+```
 
 ## UserDefinedFunctionInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UserDefinedFunctionInputTypeDef
+
+def get_value() -> UserDefinedFunctionInputTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserDefinedFunctionInputTypeDef(TypedDict):
+    FunctionName: NotRequired[str],
+    ClassName: NotRequired[str],
+    OwnerName: NotRequired[str],
+    OwnerType: NotRequired[PrincipalTypeType],  # (1)
+    ResourceUris: NotRequired[Sequence[ResourceUriTypeDef]],  # (2)
+```
 
-- `FunctionName`: `str`
-- `ClassName`: `str`
-- `OwnerName`: `str`
-- `OwnerType`: [PrincipalTypeType](./literals.md#principaltypetype)
-- `ResourceUris`:
-  `Sequence`\[[ResourceUriTypeDef](./type_defs.md#resourceuritypedef)\]
-
-<a id="userdefinedfunctiontypedef"></a>
-
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
+2. See [:material-code-braces: ResourceUriTypeDef](./type_defs.md#resourceuritypedef) 
 ## UserDefinedFunctionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import UserDefinedFunctionTypeDef
+
+def get_value() -> UserDefinedFunctionTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserDefinedFunctionTypeDef(TypedDict):
+    FunctionName: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    ClassName: NotRequired[str],
+    OwnerName: NotRequired[str],
+    OwnerType: NotRequired[PrincipalTypeType],  # (1)
+    CreateTime: NotRequired[datetime],
+    ResourceUris: NotRequired[List[ResourceUriTypeDef]],  # (2)
+    CatalogId: NotRequired[str],
+```
 
-- `FunctionName`: `str`
-- `DatabaseName`: `str`
-- `ClassName`: `str`
-- `OwnerName`: `str`
-- `OwnerType`: [PrincipalTypeType](./literals.md#principaltypetype)
-- `CreateTime`: `datetime`
-- `ResourceUris`:
-  `List`\[[ResourceUriTypeDef](./type_defs.md#resourceuritypedef)\]
-- `CatalogId`: `str`
-
-<a id="workflowgraphtypedef"></a>
-
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
+2. See [:material-code-braces: ResourceUriTypeDef](./type_defs.md#resourceuritypedef) 
 ## WorkflowGraphTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import WorkflowGraphTypeDef
+
+def get_value() -> WorkflowGraphTypeDef:
+    return {
+        "Nodes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkflowGraphTypeDef(TypedDict):
+    Nodes: NotRequired[List[NodeTypeDef]],  # (1)
+    Edges: NotRequired[List[EdgeTypeDef]],  # (2)
+```
 
-- `Nodes`: `List`\[[NodeTypeDef](./type_defs.md#nodetypedef)\]
-- `Edges`: `List`\[[EdgeTypeDef](./type_defs.md#edgetypedef)\]
-
-<a id="workflowrunstatisticstypedef"></a>
-
+1. See [:material-code-braces: NodeTypeDef](./type_defs.md#nodetypedef) 
+2. See [:material-code-braces: EdgeTypeDef](./type_defs.md#edgetypedef) 
 ## WorkflowRunStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import WorkflowRunStatisticsTypeDef
+
+def get_value() -> WorkflowRunStatisticsTypeDef:
+    return {
+        "TotalActions": ...,
+    }
 ```
 
-Optional fields:
-
-- `TotalActions`: `int`
-- `TimeoutActions`: `int`
-- `FailedActions`: `int`
-- `StoppedActions`: `int`
-- `SucceededActions`: `int`
-- `RunningActions`: `int`
-
-<a id="workflowruntypedef"></a>
+```python title="Definition"
+class WorkflowRunStatisticsTypeDef(TypedDict):
+    TotalActions: NotRequired[int],
+    TimeoutActions: NotRequired[int],
+    FailedActions: NotRequired[int],
+    StoppedActions: NotRequired[int],
+    SucceededActions: NotRequired[int],
+    RunningActions: NotRequired[int],
+```
 
 ## WorkflowRunTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import WorkflowRunTypeDef
+
+def get_value() -> WorkflowRunTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkflowRunTypeDef(TypedDict):
+    Name: NotRequired[str],
+    WorkflowRunId: NotRequired[str],
+    PreviousRunId: NotRequired[str],
+    WorkflowRunProperties: NotRequired[Dict[str, str]],
+    StartedOn: NotRequired[datetime],
+    CompletedOn: NotRequired[datetime],
+    Status: NotRequired[WorkflowRunStatusType],  # (1)
+    ErrorMessage: NotRequired[str],
+    Statistics: NotRequired[WorkflowRunStatisticsTypeDef],  # (2)
+    Graph: NotRequired[WorkflowGraphTypeDef],  # (3)
+    StartingEventBatchCondition: NotRequired[StartingEventBatchConditionTypeDef],  # (4)
+```
 
-- `Name`: `str`
-- `WorkflowRunId`: `str`
-- `PreviousRunId`: `str`
-- `WorkflowRunProperties`: `Dict`\[`str`, `str`\]
-- `StartedOn`: `datetime`
-- `CompletedOn`: `datetime`
-- `Status`: [WorkflowRunStatusType](./literals.md#workflowrunstatustype)
-- `ErrorMessage`: `str`
-- `Statistics`:
-  [WorkflowRunStatisticsTypeDef](./type_defs.md#workflowrunstatisticstypedef)
-- `Graph`: [WorkflowGraphTypeDef](./type_defs.md#workflowgraphtypedef)
-- `StartingEventBatchCondition`:
-  [StartingEventBatchConditionTypeDef](./type_defs.md#startingeventbatchconditiontypedef)
-
-<a id="workflowtypedef"></a>
-
+1. See [:material-code-brackets: WorkflowRunStatusType](./literals.md#workflowrunstatustype) 
+2. See [:material-code-braces: WorkflowRunStatisticsTypeDef](./type_defs.md#workflowrunstatisticstypedef) 
+3. See [:material-code-braces: WorkflowGraphTypeDef](./type_defs.md#workflowgraphtypedef) 
+4. See [:material-code-braces: StartingEventBatchConditionTypeDef](./type_defs.md#startingeventbatchconditiontypedef) 
 ## WorkflowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import WorkflowTypeDef
+
+def get_value() -> WorkflowTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkflowTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    DefaultRunProperties: NotRequired[Dict[str, str]],
+    CreatedOn: NotRequired[datetime],
+    LastModifiedOn: NotRequired[datetime],
+    LastRun: NotRequired[WorkflowRunTypeDef],  # (1)
+    Graph: NotRequired[WorkflowGraphTypeDef],  # (2)
+    MaxConcurrentRuns: NotRequired[int],
+    BlueprintDetails: NotRequired[BlueprintDetailsTypeDef],  # (3)
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `DefaultRunProperties`: `Dict`\[`str`, `str`\]
-- `CreatedOn`: `datetime`
-- `LastModifiedOn`: `datetime`
-- `LastRun`: [WorkflowRunTypeDef](./type_defs.md#workflowruntypedef)
-- `Graph`: [WorkflowGraphTypeDef](./type_defs.md#workflowgraphtypedef)
-- `MaxConcurrentRuns`: `int`
-- `BlueprintDetails`:
-  [BlueprintDetailsTypeDef](./type_defs.md#blueprintdetailstypedef)
-
-<a id="xmlclassifiertypedef"></a>
-
+1. See [:material-code-braces: WorkflowRunTypeDef](./type_defs.md#workflowruntypedef) 
+2. See [:material-code-braces: WorkflowGraphTypeDef](./type_defs.md#workflowgraphtypedef) 
+3. See [:material-code-braces: BlueprintDetailsTypeDef](./type_defs.md#blueprintdetailstypedef) 
 ## XMLClassifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glue.type_defs import XMLClassifierTypeDef
+
+def get_value() -> XMLClassifierTypeDef:
+    return {
+        "Name": ...,
+        "Classification": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class XMLClassifierTypeDef(TypedDict):
+    Name: str,
+    Classification: str,
+    CreationTime: NotRequired[datetime],
+    LastUpdated: NotRequired[datetime],
+    Version: NotRequired[int],
+    RowTag: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Classification`: `str`
-
-Optional fields:
-
-- `CreationTime`: `datetime`
-- `LastUpdated`: `datetime`
-- `Version`: `int`
-- `RowTag`: `str`

@@ -1,79 +1,102 @@
-<a id="examples-for-boto3-lexmodelsv2-module"></a>
-
-# Examples for boto3 LexModelsV2 module
+# Examples
 
 > [Index](../README.md) > [LexModelsV2](./README.md) > Examples
 
-- [Examples for boto3 LexModelsV2 module](#examples-for-boto3-lexmodelsv2-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+    type annotations stubs module [mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[lexv2-models]` package installed.
 
-Write your `LexModelsV2` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `LexModelsV2` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type LexModelsV2Client
-# and provides type checking and code completion
-client = session.client("lexv2-models")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BuildBotLocaleResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.build_bot_locale()
 
-# waiter has type BotAliasAvailableWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("bot_alias_available")
-waiter.wait()
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("lexv2-models")  # (1)
+    result = client.build_bot_locale()  # (2)
+    ```
+
+    1. client: [LexModelsV2Client](./client.md)
+    2. result: [:material-code-braces: BuildBotLocaleResponseTypeDef](./type_defs.md#buildbotlocaleresponsetypedef) 
+
+
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("lexv2-models")  # (1)
+
+    waiter = client.get_waiter("bot_alias_available")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [LexModelsV2Client](./client.md)
+    2. waiter: [BotAliasAvailableWaiter](./waiters.md#botaliasavailablewaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[lexv2-models]` or a standalone `mypy_boto3_lexv2_models`
-package, you have to explicitly specify `client: LexModelsV2Client` type
-annotation.
+With `boto3-stubs-lite[lexv2-models]`
+or a standalone `mypy_boto3_lexv2_models` package, you have to explicitly specify `client: LexModelsV2Client` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_lexv2_models.client import LexModelsV2Client
-
-from mypy_boto3_lexv2_models.waiter import BotAliasAvailableWaiter
-
-from mypy_boto3_lexv2_models.literals import WaiterName
-from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
 
-session = boto3.Session()
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-client: LexModelsV2Client = session.client("lexv2-models")
+    from mypy_boto3_lexv2_models.client import LexModelsV2Client
+    from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleResponseTypeDef
+    from mypy_boto3_lexv2_models.type_defs import BuildBotLocaleRequestRequestTypeDef
 
-result: BuildBotLocaleResponseTypeDef = client.build_bot_locale()
 
-waiter_name: WaiterName = "bot_alias_available"
-waiter: BotAliasAvailableWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: LexModelsV2Client = session.client("lexv2-models")
+
+    kwargs: BuildBotLocaleRequestRequestTypeDef = {...}
+    result: BuildBotLocaleResponseTypeDef = client.build_bot_locale(**kwargs)
+    ```
+
+
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_lexv2_models.client import LexModelsV2Client
+    from mypy_boto3_lexv2_models.waiter import BotAliasAvailableWaiter
+
+    session = Session()
+    client: LexModelsV2Client = session.client("lexv2-models")
+
+    waiter: BotAliasAvailableWaiter = client.get_waiter("bot_alias_available")
+    waiter.wait()
+    ```
+
+

@@ -1,1619 +1,2087 @@
-<a id="typed-dictionaries-for-boto3-workdocs-module"></a>
-
-# Typed dictionaries for boto3 WorkDocs module
+# Typed dictionaries
 
 > [Index](../README.md) > [WorkDocs](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
-type annotations stubs module
-[mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+!!! note ""
 
-- [Typed dictionaries for boto3 WorkDocs module](#typed-dictionaries-for-boto3-workdocs-module)
-  - [AbortDocumentVersionUploadRequestRequestTypeDef](#abortdocumentversionuploadrequestrequesttypedef)
-  - [ActivateUserRequestRequestTypeDef](#activateuserrequestrequesttypedef)
-  - [ActivateUserResponseTypeDef](#activateuserresponsetypedef)
-  - [ActivityTypeDef](#activitytypedef)
-  - [AddResourcePermissionsRequestRequestTypeDef](#addresourcepermissionsrequestrequesttypedef)
-  - [AddResourcePermissionsResponseTypeDef](#addresourcepermissionsresponsetypedef)
-  - [CommentMetadataTypeDef](#commentmetadatatypedef)
-  - [CommentTypeDef](#commenttypedef)
-  - [CreateCommentRequestRequestTypeDef](#createcommentrequestrequesttypedef)
-  - [CreateCommentResponseTypeDef](#createcommentresponsetypedef)
-  - [CreateCustomMetadataRequestRequestTypeDef](#createcustommetadatarequestrequesttypedef)
-  - [CreateFolderRequestRequestTypeDef](#createfolderrequestrequesttypedef)
-  - [CreateFolderResponseTypeDef](#createfolderresponsetypedef)
-  - [CreateLabelsRequestRequestTypeDef](#createlabelsrequestrequesttypedef)
-  - [CreateNotificationSubscriptionRequestRequestTypeDef](#createnotificationsubscriptionrequestrequesttypedef)
-  - [CreateNotificationSubscriptionResponseTypeDef](#createnotificationsubscriptionresponsetypedef)
-  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
-  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
-  - [DeactivateUserRequestRequestTypeDef](#deactivateuserrequestrequesttypedef)
-  - [DeleteCommentRequestRequestTypeDef](#deletecommentrequestrequesttypedef)
-  - [DeleteCustomMetadataRequestRequestTypeDef](#deletecustommetadatarequestrequesttypedef)
-  - [DeleteDocumentRequestRequestTypeDef](#deletedocumentrequestrequesttypedef)
-  - [DeleteFolderContentsRequestRequestTypeDef](#deletefoldercontentsrequestrequesttypedef)
-  - [DeleteFolderRequestRequestTypeDef](#deletefolderrequestrequesttypedef)
-  - [DeleteLabelsRequestRequestTypeDef](#deletelabelsrequestrequesttypedef)
-  - [DeleteNotificationSubscriptionRequestRequestTypeDef](#deletenotificationsubscriptionrequestrequesttypedef)
-  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
-  - [DescribeActivitiesRequestRequestTypeDef](#describeactivitiesrequestrequesttypedef)
-  - [DescribeActivitiesResponseTypeDef](#describeactivitiesresponsetypedef)
-  - [DescribeCommentsRequestRequestTypeDef](#describecommentsrequestrequesttypedef)
-  - [DescribeCommentsResponseTypeDef](#describecommentsresponsetypedef)
-  - [DescribeDocumentVersionsRequestRequestTypeDef](#describedocumentversionsrequestrequesttypedef)
-  - [DescribeDocumentVersionsResponseTypeDef](#describedocumentversionsresponsetypedef)
-  - [DescribeFolderContentsRequestRequestTypeDef](#describefoldercontentsrequestrequesttypedef)
-  - [DescribeFolderContentsResponseTypeDef](#describefoldercontentsresponsetypedef)
-  - [DescribeGroupsRequestRequestTypeDef](#describegroupsrequestrequesttypedef)
-  - [DescribeGroupsResponseTypeDef](#describegroupsresponsetypedef)
-  - [DescribeNotificationSubscriptionsRequestRequestTypeDef](#describenotificationsubscriptionsrequestrequesttypedef)
-  - [DescribeNotificationSubscriptionsResponseTypeDef](#describenotificationsubscriptionsresponsetypedef)
-  - [DescribeResourcePermissionsRequestRequestTypeDef](#describeresourcepermissionsrequestrequesttypedef)
-  - [DescribeResourcePermissionsResponseTypeDef](#describeresourcepermissionsresponsetypedef)
-  - [DescribeRootFoldersRequestRequestTypeDef](#describerootfoldersrequestrequesttypedef)
-  - [DescribeRootFoldersResponseTypeDef](#describerootfoldersresponsetypedef)
-  - [DescribeUsersRequestRequestTypeDef](#describeusersrequestrequesttypedef)
-  - [DescribeUsersResponseTypeDef](#describeusersresponsetypedef)
-  - [DocumentMetadataTypeDef](#documentmetadatatypedef)
-  - [DocumentVersionMetadataTypeDef](#documentversionmetadatatypedef)
-  - [FolderMetadataTypeDef](#foldermetadatatypedef)
-  - [GetCurrentUserRequestRequestTypeDef](#getcurrentuserrequestrequesttypedef)
-  - [GetCurrentUserResponseTypeDef](#getcurrentuserresponsetypedef)
-  - [GetDocumentPathRequestRequestTypeDef](#getdocumentpathrequestrequesttypedef)
-  - [GetDocumentPathResponseTypeDef](#getdocumentpathresponsetypedef)
-  - [GetDocumentRequestRequestTypeDef](#getdocumentrequestrequesttypedef)
-  - [GetDocumentResponseTypeDef](#getdocumentresponsetypedef)
-  - [GetDocumentVersionRequestRequestTypeDef](#getdocumentversionrequestrequesttypedef)
-  - [GetDocumentVersionResponseTypeDef](#getdocumentversionresponsetypedef)
-  - [GetFolderPathRequestRequestTypeDef](#getfolderpathrequestrequesttypedef)
-  - [GetFolderPathResponseTypeDef](#getfolderpathresponsetypedef)
-  - [GetFolderRequestRequestTypeDef](#getfolderrequestrequesttypedef)
-  - [GetFolderResponseTypeDef](#getfolderresponsetypedef)
-  - [GetResourcesRequestRequestTypeDef](#getresourcesrequestrequesttypedef)
-  - [GetResourcesResponseTypeDef](#getresourcesresponsetypedef)
-  - [GroupMetadataTypeDef](#groupmetadatatypedef)
-  - [InitiateDocumentVersionUploadRequestRequestTypeDef](#initiatedocumentversionuploadrequestrequesttypedef)
-  - [InitiateDocumentVersionUploadResponseTypeDef](#initiatedocumentversionuploadresponsetypedef)
-  - [NotificationOptionsTypeDef](#notificationoptionstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParticipantsTypeDef](#participantstypedef)
-  - [PermissionInfoTypeDef](#permissioninfotypedef)
-  - [PrincipalTypeDef](#principaltypedef)
-  - [RemoveAllResourcePermissionsRequestRequestTypeDef](#removeallresourcepermissionsrequestrequesttypedef)
-  - [RemoveResourcePermissionRequestRequestTypeDef](#removeresourcepermissionrequestrequesttypedef)
-  - [ResourceMetadataTypeDef](#resourcemetadatatypedef)
-  - [ResourcePathComponentTypeDef](#resourcepathcomponenttypedef)
-  - [ResourcePathTypeDef](#resourcepathtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SharePrincipalTypeDef](#shareprincipaltypedef)
-  - [ShareResultTypeDef](#shareresulttypedef)
-  - [StorageRuleTypeTypeDef](#storageruletypetypedef)
-  - [SubscriptionTypeDef](#subscriptiontypedef)
-  - [UpdateDocumentRequestRequestTypeDef](#updatedocumentrequestrequesttypedef)
-  - [UpdateDocumentVersionRequestRequestTypeDef](#updatedocumentversionrequestrequesttypedef)
-  - [UpdateFolderRequestRequestTypeDef](#updatefolderrequestrequesttypedef)
-  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
-  - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
-  - [UploadMetadataTypeDef](#uploadmetadatatypedef)
-  - [UserMetadataTypeDef](#usermetadatatypedef)
-  - [UserStorageMetadataTypeDef](#userstoragemetadatatypedef)
-  - [UserTypeDef](#usertypedef)
-
-<a id="abortdocumentversionuploadrequestrequesttypedef"></a>
+    Auto-generated documentation for [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
+    type annotations stubs module [mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 ## AbortDocumentVersionUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import AbortDocumentVersionUploadRequestRequestTypeDef
+
+def get_value() -> AbortDocumentVersionUploadRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+        "VersionId": ...,
+    }
 ```
 
-Required fields:
-
-- `DocumentId`: `str`
-- `VersionId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="activateuserrequestrequesttypedef"></a>
+```python title="Definition"
+class AbortDocumentVersionUploadRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    VersionId: str,
+    AuthenticationToken: NotRequired[str],
+```
 
 ## ActivateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import ActivateUserRequestRequestTypeDef
+
+def get_value() -> ActivateUserRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="activateuserresponsetypedef"></a>
+```python title="Definition"
+class ActivateUserRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    AuthenticationToken: NotRequired[str],
+```
 
 ## ActivateUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import ActivateUserResponseTypeDef
+
+def get_value() -> ActivateUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActivateUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="activitytypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ActivityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import ActivityTypeDef
+
+def get_value() -> ActivityTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActivityTypeDef(TypedDict):
+    Type: NotRequired[ActivityTypeType],  # (1)
+    TimeStamp: NotRequired[datetime],
+    IsIndirectActivity: NotRequired[bool],
+    OrganizationId: NotRequired[str],
+    Initiator: NotRequired[UserMetadataTypeDef],  # (2)
+    Participants: NotRequired[ParticipantsTypeDef],  # (3)
+    ResourceMetadata: NotRequired[ResourceMetadataTypeDef],  # (4)
+    OriginalParent: NotRequired[ResourceMetadataTypeDef],  # (4)
+    CommentMetadata: NotRequired[CommentMetadataTypeDef],  # (6)
+```
 
-- `Type`: [ActivityTypeType](./literals.md#activitytypetype)
-- `TimeStamp`: `datetime`
-- `IsIndirectActivity`: `bool`
-- `OrganizationId`: `str`
-- `Initiator`: [UserMetadataTypeDef](./type_defs.md#usermetadatatypedef)
-- `Participants`: [ParticipantsTypeDef](./type_defs.md#participantstypedef)
-- `ResourceMetadata`:
-  [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- `OriginalParent`:
-  [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- `CommentMetadata`:
-  [CommentMetadataTypeDef](./type_defs.md#commentmetadatatypedef)
-
-<a id="addresourcepermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ActivityTypeType](./literals.md#activitytypetype) 
+2. See [:material-code-braces: UserMetadataTypeDef](./type_defs.md#usermetadatatypedef) 
+3. See [:material-code-braces: ParticipantsTypeDef](./type_defs.md#participantstypedef) 
+4. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+5. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+6. See [:material-code-braces: CommentMetadataTypeDef](./type_defs.md#commentmetadatatypedef) 
 ## AddResourcePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import AddResourcePermissionsRequestRequestTypeDef
+
+def get_value() -> AddResourcePermissionsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "Principals": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddResourcePermissionsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Principals: Sequence[SharePrincipalTypeDef],  # (1)
+    AuthenticationToken: NotRequired[str],
+    NotificationOptions: NotRequired[NotificationOptionsTypeDef],  # (2)
+```
 
-- `ResourceId`: `str`
-- `Principals`:
-  `Sequence`\[[SharePrincipalTypeDef](./type_defs.md#shareprincipaltypedef)\]
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `NotificationOptions`:
-  [NotificationOptionsTypeDef](./type_defs.md#notificationoptionstypedef)
-
-<a id="addresourcepermissionsresponsetypedef"></a>
-
+1. See [:material-code-braces: SharePrincipalTypeDef](./type_defs.md#shareprincipaltypedef) 
+2. See [:material-code-braces: NotificationOptionsTypeDef](./type_defs.md#notificationoptionstypedef) 
 ## AddResourcePermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import AddResourcePermissionsResponseTypeDef
+
+def get_value() -> AddResourcePermissionsResponseTypeDef:
+    return {
+        "ShareResults": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddResourcePermissionsResponseTypeDef(TypedDict):
+    ShareResults: List[ShareResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ShareResults`:
-  `List`\[[ShareResultTypeDef](./type_defs.md#shareresulttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="commentmetadatatypedef"></a>
-
+1. See [:material-code-braces: ShareResultTypeDef](./type_defs.md#shareresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CommentMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CommentMetadataTypeDef
+
+def get_value() -> CommentMetadataTypeDef:
+    return {
+        "CommentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CommentMetadataTypeDef(TypedDict):
+    CommentId: NotRequired[str],
+    Contributor: NotRequired[UserTypeDef],  # (1)
+    CreatedTimestamp: NotRequired[datetime],
+    CommentStatus: NotRequired[CommentStatusTypeType],  # (2)
+    RecipientId: NotRequired[str],
+```
 
-- `CommentId`: `str`
-- `Contributor`: [UserTypeDef](./type_defs.md#usertypedef)
-- `CreatedTimestamp`: `datetime`
-- `CommentStatus`: [CommentStatusTypeType](./literals.md#commentstatustypetype)
-- `RecipientId`: `str`
-
-<a id="commenttypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-brackets: CommentStatusTypeType](./literals.md#commentstatustypetype) 
 ## CommentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CommentTypeDef
+
+def get_value() -> CommentTypeDef:
+    return {
+        "CommentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CommentTypeDef(TypedDict):
+    CommentId: str,
+    ParentId: NotRequired[str],
+    ThreadId: NotRequired[str],
+    Text: NotRequired[str],
+    Contributor: NotRequired[UserTypeDef],  # (1)
+    CreatedTimestamp: NotRequired[datetime],
+    Status: NotRequired[CommentStatusTypeType],  # (2)
+    Visibility: NotRequired[CommentVisibilityTypeType],  # (3)
+    RecipientId: NotRequired[str],
+```
 
-- `CommentId`: `str`
-
-Optional fields:
-
-- `ParentId`: `str`
-- `ThreadId`: `str`
-- `Text`: `str`
-- `Contributor`: [UserTypeDef](./type_defs.md#usertypedef)
-- `CreatedTimestamp`: `datetime`
-- `Status`: [CommentStatusTypeType](./literals.md#commentstatustypetype)
-- `Visibility`:
-  [CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype)
-- `RecipientId`: `str`
-
-<a id="createcommentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-brackets: CommentStatusTypeType](./literals.md#commentstatustypetype) 
+3. See [:material-code-brackets: CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype) 
 ## CreateCommentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateCommentRequestRequestTypeDef
+
+def get_value() -> CreateCommentRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+        "VersionId": ...,
+        "Text": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCommentRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    VersionId: str,
+    Text: str,
+    AuthenticationToken: NotRequired[str],
+    ParentId: NotRequired[str],
+    ThreadId: NotRequired[str],
+    Visibility: NotRequired[CommentVisibilityTypeType],  # (1)
+    NotifyCollaborators: NotRequired[bool],
+```
 
-- `DocumentId`: `str`
-- `VersionId`: `str`
-- `Text`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `ParentId`: `str`
-- `ThreadId`: `str`
-- `Visibility`:
-  [CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype)
-- `NotifyCollaborators`: `bool`
-
-<a id="createcommentresponsetypedef"></a>
-
+1. See [:material-code-brackets: CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype) 
 ## CreateCommentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateCommentResponseTypeDef
+
+def get_value() -> CreateCommentResponseTypeDef:
+    return {
+        "Comment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCommentResponseTypeDef(TypedDict):
+    Comment: CommentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Comment`: [CommentTypeDef](./type_defs.md#commenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcustommetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CommentTypeDef](./type_defs.md#commenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCustomMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateCustomMetadataRequestRequestTypeDef
+
+def get_value() -> CreateCustomMetadataRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "CustomMetadata": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-- `CustomMetadata`: `Mapping`\[`str`, `str`\]
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `VersionId`: `str`
-
-<a id="createfolderrequestrequesttypedef"></a>
+```python title="Definition"
+class CreateCustomMetadataRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    CustomMetadata: Mapping[str, str],
+    AuthenticationToken: NotRequired[str],
+    VersionId: NotRequired[str],
+```
 
 ## CreateFolderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateFolderRequestRequestTypeDef
+
+def get_value() -> CreateFolderRequestRequestTypeDef:
+    return {
+        "ParentFolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `ParentFolderId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Name`: `str`
-
-<a id="createfolderresponsetypedef"></a>
+```python title="Definition"
+class CreateFolderRequestRequestTypeDef(TypedDict):
+    ParentFolderId: str,
+    AuthenticationToken: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## CreateFolderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateFolderResponseTypeDef
+
+def get_value() -> CreateFolderResponseTypeDef:
+    return {
+        "Metadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFolderResponseTypeDef(TypedDict):
+    Metadata: FolderMetadataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Metadata`: [FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createlabelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLabelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateLabelsRequestRequestTypeDef
+
+def get_value() -> CreateLabelsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "Labels": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-- `Labels`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="createnotificationsubscriptionrequestrequesttypedef"></a>
+```python title="Definition"
+class CreateLabelsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Labels: Sequence[str],
+    AuthenticationToken: NotRequired[str],
+```
 
 ## CreateNotificationSubscriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateNotificationSubscriptionRequestRequestTypeDef
+
+def get_value() -> CreateNotificationSubscriptionRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+        "Endpoint": ...,
+        "Protocol": ...,
+        "SubscriptionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNotificationSubscriptionRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    Endpoint: str,
+    Protocol: SubscriptionProtocolTypeType,  # (1)
+    SubscriptionType: SubscriptionTypeType,  # (2)
+```
 
-- `OrganizationId`: `str`
-- `Endpoint`: `str`
-- `Protocol`: `Literal['HTTPS']` (see
-  [SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype))
-- `SubscriptionType`: `Literal['ALL']` (see
-  [SubscriptionTypeType](./literals.md#subscriptiontypetype))
-
-<a id="createnotificationsubscriptionresponsetypedef"></a>
-
+1. See [:material-code-brackets: SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype) 
+2. See [:material-code-brackets: SubscriptionTypeType](./literals.md#subscriptiontypetype) 
 ## CreateNotificationSubscriptionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateNotificationSubscriptionResponseTypeDef
+
+def get_value() -> CreateNotificationSubscriptionResponseTypeDef:
+    return {
+        "Subscription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNotificationSubscriptionResponseTypeDef(TypedDict):
+    Subscription: SubscriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Subscription`: [SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubscriptionTypeDef](./type_defs.md#subscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateUserRequestRequestTypeDef
+
+def get_value() -> CreateUserRequestRequestTypeDef:
+    return {
+        "Username": ...,
+        "GivenName": ...,
+        "Surname": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserRequestRequestTypeDef(TypedDict):
+    Username: str,
+    GivenName: str,
+    Surname: str,
+    Password: str,
+    OrganizationId: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    TimeZoneId: NotRequired[str],
+    StorageRule: NotRequired[StorageRuleTypeTypeDef],  # (1)
+    AuthenticationToken: NotRequired[str],
+```
 
-- `Username`: `str`
-- `GivenName`: `str`
-- `Surname`: `str`
-- `Password`: `str`
-
-Optional fields:
-
-- `OrganizationId`: `str`
-- `EmailAddress`: `str`
-- `TimeZoneId`: `str`
-- `StorageRule`:
-  [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
-- `AuthenticationToken`: `str`
-
-<a id="createuserresponsetypedef"></a>
-
+1. See [:material-code-braces: StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef) 
 ## CreateUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import CreateUserResponseTypeDef
+
+def get_value() -> CreateUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deactivateuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeactivateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DeactivateUserRequestRequestTypeDef
+
+def get_value() -> DeactivateUserRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="deletecommentrequestrequesttypedef"></a>
+```python title="Definition"
+class DeactivateUserRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    AuthenticationToken: NotRequired[str],
+```
 
 ## DeleteCommentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DeleteCommentRequestRequestTypeDef
+
+def get_value() -> DeleteCommentRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+        "VersionId": ...,
+        "CommentId": ...,
+    }
 ```
 
-Required fields:
-
-- `DocumentId`: `str`
-- `VersionId`: `str`
-- `CommentId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="deletecustommetadatarequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCommentRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    VersionId: str,
+    CommentId: str,
+    AuthenticationToken: NotRequired[str],
+```
 
 ## DeleteCustomMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DeleteCustomMetadataRequestRequestTypeDef
+
+def get_value() -> DeleteCustomMetadataRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `VersionId`: `str`
-- `Keys`: `Sequence`\[`str`\]
-- `DeleteAll`: `bool`
-
-<a id="deletedocumentrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCustomMetadataRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    AuthenticationToken: NotRequired[str],
+    VersionId: NotRequired[str],
+    Keys: NotRequired[Sequence[str]],
+    DeleteAll: NotRequired[bool],
+```
 
 ## DeleteDocumentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DeleteDocumentRequestRequestTypeDef
+
+def get_value() -> DeleteDocumentRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+    }
 ```
 
-Required fields:
-
-- `DocumentId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="deletefoldercontentsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDocumentRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    AuthenticationToken: NotRequired[str],
+```
 
 ## DeleteFolderContentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DeleteFolderContentsRequestRequestTypeDef
+
+def get_value() -> DeleteFolderContentsRequestRequestTypeDef:
+    return {
+        "FolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `FolderId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="deletefolderrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFolderContentsRequestRequestTypeDef(TypedDict):
+    FolderId: str,
+    AuthenticationToken: NotRequired[str],
+```
 
 ## DeleteFolderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DeleteFolderRequestRequestTypeDef
+
+def get_value() -> DeleteFolderRequestRequestTypeDef:
+    return {
+        "FolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `FolderId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="deletelabelsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFolderRequestRequestTypeDef(TypedDict):
+    FolderId: str,
+    AuthenticationToken: NotRequired[str],
+```
 
 ## DeleteLabelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DeleteLabelsRequestRequestTypeDef
+
+def get_value() -> DeleteLabelsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Labels`: `Sequence`\[`str`\]
-- `DeleteAll`: `bool`
-
-<a id="deletenotificationsubscriptionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteLabelsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    AuthenticationToken: NotRequired[str],
+    Labels: NotRequired[Sequence[str]],
+    DeleteAll: NotRequired[bool],
+```
 
 ## DeleteNotificationSubscriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DeleteNotificationSubscriptionRequestRequestTypeDef
+
+def get_value() -> DeleteNotificationSubscriptionRequestRequestTypeDef:
+    return {
+        "SubscriptionId": ...,
+        "OrganizationId": ...,
+    }
 ```
 
-Required fields:
-
-- `SubscriptionId`: `str`
-- `OrganizationId`: `str`
-
-<a id="deleteuserrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteNotificationSubscriptionRequestRequestTypeDef(TypedDict):
+    SubscriptionId: str,
+    OrganizationId: str,
+```
 
 ## DeleteUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DeleteUserRequestRequestTypeDef
+
+def get_value() -> DeleteUserRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteUserRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    AuthenticationToken: NotRequired[str],
+```
 
-- `UserId`: `str`
+## DescribeActivitiesRequestDescribeActivitiesPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DescribeActivitiesRequestDescribeActivitiesPaginateTypeDef
 
-- `AuthenticationToken`: `str`
+def get_value() -> DescribeActivitiesRequestDescribeActivitiesPaginateTypeDef:
+    return {
+        "AuthenticationToken": ...,
+    }
+```
 
-<a id="describeactivitiesrequestrequesttypedef"></a>
+```python title="Definition"
+class DescribeActivitiesRequestDescribeActivitiesPaginateTypeDef(TypedDict):
+    AuthenticationToken: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    OrganizationId: NotRequired[str],
+    ActivityTypes: NotRequired[str],
+    ResourceId: NotRequired[str],
+    UserId: NotRequired[str],
+    IncludeIndirectActivities: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeActivitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeActivitiesRequestRequestTypeDef
+
+def get_value() -> DescribeActivitiesRequestRequestTypeDef:
+    return {
+        "AuthenticationToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `OrganizationId`: `str`
-- `ActivityTypes`: `str`
-- `ResourceId`: `str`
-- `UserId`: `str`
-- `IncludeIndirectActivities`: `bool`
-- `Limit`: `int`
-- `Marker`: `str`
-
-<a id="describeactivitiesresponsetypedef"></a>
+```python title="Definition"
+class DescribeActivitiesRequestRequestTypeDef(TypedDict):
+    AuthenticationToken: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    OrganizationId: NotRequired[str],
+    ActivityTypes: NotRequired[str],
+    ResourceId: NotRequired[str],
+    UserId: NotRequired[str],
+    IncludeIndirectActivities: NotRequired[bool],
+    Limit: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribeActivitiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeActivitiesResponseTypeDef
+
+def get_value() -> DescribeActivitiesResponseTypeDef:
+    return {
+        "UserActivities": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeActivitiesResponseTypeDef(TypedDict):
+    UserActivities: List[ActivityTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserActivities`: `List`\[[ActivityTypeDef](./type_defs.md#activitytypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ActivityTypeDef](./type_defs.md#activitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCommentsRequestDescribeCommentsPaginateTypeDef
 
-<a id="describecommentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DescribeCommentsRequestDescribeCommentsPaginateTypeDef
 
+def get_value() -> DescribeCommentsRequestDescribeCommentsPaginateTypeDef:
+    return {
+        "DocumentId": ...,
+        "VersionId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCommentsRequestDescribeCommentsPaginateTypeDef(TypedDict):
+    DocumentId: str,
+    VersionId: str,
+    AuthenticationToken: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeCommentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeCommentsRequestRequestTypeDef
+
+def get_value() -> DescribeCommentsRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+        "VersionId": ...,
+    }
 ```
 
-Required fields:
-
-- `DocumentId`: `str`
-- `VersionId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Limit`: `int`
-- `Marker`: `str`
-
-<a id="describecommentsresponsetypedef"></a>
+```python title="Definition"
+class DescribeCommentsRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    VersionId: str,
+    AuthenticationToken: NotRequired[str],
+    Limit: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribeCommentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeCommentsResponseTypeDef
+
+def get_value() -> DescribeCommentsResponseTypeDef:
+    return {
+        "Comments": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCommentsResponseTypeDef(TypedDict):
+    Comments: List[CommentTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Comments`: `List`\[[CommentTypeDef](./type_defs.md#commenttypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CommentTypeDef](./type_defs.md#commenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDocumentVersionsRequestDescribeDocumentVersionsPaginateTypeDef
 
-<a id="describedocumentversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DescribeDocumentVersionsRequestDescribeDocumentVersionsPaginateTypeDef
 
+def get_value() -> DescribeDocumentVersionsRequestDescribeDocumentVersionsPaginateTypeDef:
+    return {
+        "DocumentId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDocumentVersionsRequestDescribeDocumentVersionsPaginateTypeDef(TypedDict):
+    DocumentId: str,
+    AuthenticationToken: NotRequired[str],
+    Include: NotRequired[str],
+    Fields: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDocumentVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeDocumentVersionsRequestRequestTypeDef
+
+def get_value() -> DescribeDocumentVersionsRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+    }
 ```
 
-Required fields:
-
-- `DocumentId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Marker`: `str`
-- `Limit`: `int`
-- `Include`: `str`
-- `Fields`: `str`
-
-<a id="describedocumentversionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeDocumentVersionsRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    AuthenticationToken: NotRequired[str],
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+    Include: NotRequired[str],
+    Fields: NotRequired[str],
+```
 
 ## DescribeDocumentVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeDocumentVersionsResponseTypeDef
+
+def get_value() -> DescribeDocumentVersionsResponseTypeDef:
+    return {
+        "DocumentVersions": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDocumentVersionsResponseTypeDef(TypedDict):
+    DocumentVersions: List[DocumentVersionMetadataTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DocumentVersions`:
-  `List`\[[DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeFolderContentsRequestDescribeFolderContentsPaginateTypeDef
 
-<a id="describefoldercontentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DescribeFolderContentsRequestDescribeFolderContentsPaginateTypeDef
 
+def get_value() -> DescribeFolderContentsRequestDescribeFolderContentsPaginateTypeDef:
+    return {
+        "FolderId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeFolderContentsRequestDescribeFolderContentsPaginateTypeDef(TypedDict):
+    FolderId: str,
+    AuthenticationToken: NotRequired[str],
+    Sort: NotRequired[ResourceSortTypeType],  # (1)
+    Order: NotRequired[OrderTypeType],  # (2)
+    Type: NotRequired[FolderContentTypeType],  # (3)
+    Include: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ResourceSortTypeType](./literals.md#resourcesorttypetype) 
+2. See [:material-code-brackets: OrderTypeType](./literals.md#ordertypetype) 
+3. See [:material-code-brackets: FolderContentTypeType](./literals.md#foldercontenttypetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeFolderContentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeFolderContentsRequestRequestTypeDef
+
+def get_value() -> DescribeFolderContentsRequestRequestTypeDef:
+    return {
+        "FolderId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFolderContentsRequestRequestTypeDef(TypedDict):
+    FolderId: str,
+    AuthenticationToken: NotRequired[str],
+    Sort: NotRequired[ResourceSortTypeType],  # (1)
+    Order: NotRequired[OrderTypeType],  # (2)
+    Limit: NotRequired[int],
+    Marker: NotRequired[str],
+    Type: NotRequired[FolderContentTypeType],  # (3)
+    Include: NotRequired[str],
+```
 
-- `FolderId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Sort`: [ResourceSortTypeType](./literals.md#resourcesorttypetype)
-- `Order`: [OrderTypeType](./literals.md#ordertypetype)
-- `Limit`: `int`
-- `Marker`: `str`
-- `Type`: [FolderContentTypeType](./literals.md#foldercontenttypetype)
-- `Include`: `str`
-
-<a id="describefoldercontentsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceSortTypeType](./literals.md#resourcesorttypetype) 
+2. See [:material-code-brackets: OrderTypeType](./literals.md#ordertypetype) 
+3. See [:material-code-brackets: FolderContentTypeType](./literals.md#foldercontenttypetype) 
 ## DescribeFolderContentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeFolderContentsResponseTypeDef
+
+def get_value() -> DescribeFolderContentsResponseTypeDef:
+    return {
+        "Folders": ...,
+        "Documents": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFolderContentsResponseTypeDef(TypedDict):
+    Folders: List[FolderMetadataTypeDef],  # (1)
+    Documents: List[DocumentMetadataTypeDef],  # (2)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Folders`:
-  `List`\[[FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)\]
-- `Documents`:
-  `List`\[[DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef) 
+2. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeGroupsRequestDescribeGroupsPaginateTypeDef
 
-<a id="describegroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DescribeGroupsRequestDescribeGroupsPaginateTypeDef
 
+def get_value() -> DescribeGroupsRequestDescribeGroupsPaginateTypeDef:
+    return {
+        "SearchQuery": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeGroupsRequestDescribeGroupsPaginateTypeDef(TypedDict):
+    SearchQuery: str,
+    AuthenticationToken: NotRequired[str],
+    OrganizationId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeGroupsRequestRequestTypeDef
+
+def get_value() -> DescribeGroupsRequestRequestTypeDef:
+    return {
+        "SearchQuery": ...,
+    }
 ```
 
-Required fields:
-
-- `SearchQuery`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `OrganizationId`: `str`
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="describegroupsresponsetypedef"></a>
+```python title="Definition"
+class DescribeGroupsRequestRequestTypeDef(TypedDict):
+    SearchQuery: str,
+    AuthenticationToken: NotRequired[str],
+    OrganizationId: NotRequired[str],
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## DescribeGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeGroupsResponseTypeDef
+
+def get_value() -> DescribeGroupsResponseTypeDef:
+    return {
+        "Groups": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGroupsResponseTypeDef(TypedDict):
+    Groups: List[GroupMetadataTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Groups`:
-  `List`\[[GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeNotificationSubscriptionsRequestDescribeNotificationSubscriptionsPaginateTypeDef
 
-<a id="describenotificationsubscriptionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DescribeNotificationSubscriptionsRequestDescribeNotificationSubscriptionsPaginateTypeDef
 
+def get_value() -> DescribeNotificationSubscriptionsRequestDescribeNotificationSubscriptionsPaginateTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNotificationSubscriptionsRequestDescribeNotificationSubscriptionsPaginateTypeDef(TypedDict):
+    OrganizationId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeNotificationSubscriptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeNotificationSubscriptionsRequestRequestTypeDef
+
+def get_value() -> DescribeNotificationSubscriptionsRequestRequestTypeDef:
+    return {
+        "OrganizationId": ...,
+    }
 ```
 
-Required fields:
-
-- `OrganizationId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="describenotificationsubscriptionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeNotificationSubscriptionsRequestRequestTypeDef(TypedDict):
+    OrganizationId: str,
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## DescribeNotificationSubscriptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeNotificationSubscriptionsResponseTypeDef
+
+def get_value() -> DescribeNotificationSubscriptionsResponseTypeDef:
+    return {
+        "Subscriptions": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNotificationSubscriptionsResponseTypeDef(TypedDict):
+    Subscriptions: List[SubscriptionTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Subscriptions`:
-  `List`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SubscriptionTypeDef](./type_defs.md#subscriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeResourcePermissionsRequestDescribeResourcePermissionsPaginateTypeDef
 
-<a id="describeresourcepermissionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DescribeResourcePermissionsRequestDescribeResourcePermissionsPaginateTypeDef
 
+def get_value() -> DescribeResourcePermissionsRequestDescribeResourcePermissionsPaginateTypeDef:
+    return {
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeResourcePermissionsRequestDescribeResourcePermissionsPaginateTypeDef(TypedDict):
+    ResourceId: str,
+    AuthenticationToken: NotRequired[str],
+    PrincipalId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeResourcePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeResourcePermissionsRequestRequestTypeDef
+
+def get_value() -> DescribeResourcePermissionsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `PrincipalId`: `str`
-- `Limit`: `int`
-- `Marker`: `str`
-
-<a id="describeresourcepermissionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeResourcePermissionsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    AuthenticationToken: NotRequired[str],
+    PrincipalId: NotRequired[str],
+    Limit: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribeResourcePermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeResourcePermissionsResponseTypeDef
+
+def get_value() -> DescribeResourcePermissionsResponseTypeDef:
+    return {
+        "Principals": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeResourcePermissionsResponseTypeDef(TypedDict):
+    Principals: List[PrincipalTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Principals`: `List`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRootFoldersRequestDescribeRootFoldersPaginateTypeDef
 
-<a id="describerootfoldersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DescribeRootFoldersRequestDescribeRootFoldersPaginateTypeDef
 
+def get_value() -> DescribeRootFoldersRequestDescribeRootFoldersPaginateTypeDef:
+    return {
+        "AuthenticationToken": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRootFoldersRequestDescribeRootFoldersPaginateTypeDef(TypedDict):
+    AuthenticationToken: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeRootFoldersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeRootFoldersRequestRequestTypeDef
+
+def get_value() -> DescribeRootFoldersRequestRequestTypeDef:
+    return {
+        "AuthenticationToken": ...,
+    }
 ```
 
-Required fields:
-
-- `AuthenticationToken`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `Marker`: `str`
-
-<a id="describerootfoldersresponsetypedef"></a>
+```python title="Definition"
+class DescribeRootFoldersRequestRequestTypeDef(TypedDict):
+    AuthenticationToken: str,
+    Limit: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## DescribeRootFoldersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeRootFoldersResponseTypeDef
+
+def get_value() -> DescribeRootFoldersResponseTypeDef:
+    return {
+        "Folders": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRootFoldersResponseTypeDef(TypedDict):
+    Folders: List[FolderMetadataTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Folders`:
-  `List`\[[FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeUsersRequestDescribeUsersPaginateTypeDef
 
-<a id="describeusersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_workdocs.type_defs import DescribeUsersRequestDescribeUsersPaginateTypeDef
 
+def get_value() -> DescribeUsersRequestDescribeUsersPaginateTypeDef:
+    return {
+        "AuthenticationToken": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeUsersRequestDescribeUsersPaginateTypeDef(TypedDict):
+    AuthenticationToken: NotRequired[str],
+    OrganizationId: NotRequired[str],
+    UserIds: NotRequired[str],
+    Query: NotRequired[str],
+    Include: NotRequired[UserFilterTypeType],  # (1)
+    Order: NotRequired[OrderTypeType],  # (2)
+    Sort: NotRequired[UserSortTypeType],  # (3)
+    Fields: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: UserFilterTypeType](./literals.md#userfiltertypetype) 
+2. See [:material-code-brackets: OrderTypeType](./literals.md#ordertypetype) 
+3. See [:material-code-brackets: UserSortTypeType](./literals.md#usersorttypetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeUsersRequestRequestTypeDef
+
+def get_value() -> DescribeUsersRequestRequestTypeDef:
+    return {
+        "AuthenticationToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeUsersRequestRequestTypeDef(TypedDict):
+    AuthenticationToken: NotRequired[str],
+    OrganizationId: NotRequired[str],
+    UserIds: NotRequired[str],
+    Query: NotRequired[str],
+    Include: NotRequired[UserFilterTypeType],  # (1)
+    Order: NotRequired[OrderTypeType],  # (2)
+    Sort: NotRequired[UserSortTypeType],  # (3)
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+    Fields: NotRequired[str],
+```
 
-- `AuthenticationToken`: `str`
-- `OrganizationId`: `str`
-- `UserIds`: `str`
-- `Query`: `str`
-- `Include`: [UserFilterTypeType](./literals.md#userfiltertypetype)
-- `Order`: [OrderTypeType](./literals.md#ordertypetype)
-- `Sort`: [UserSortTypeType](./literals.md#usersorttypetype)
-- `Marker`: `str`
-- `Limit`: `int`
-- `Fields`: `str`
-
-<a id="describeusersresponsetypedef"></a>
-
+1. See [:material-code-brackets: UserFilterTypeType](./literals.md#userfiltertypetype) 
+2. See [:material-code-brackets: OrderTypeType](./literals.md#ordertypetype) 
+3. See [:material-code-brackets: UserSortTypeType](./literals.md#usersorttypetype) 
 ## DescribeUsersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DescribeUsersResponseTypeDef
+
+def get_value() -> DescribeUsersResponseTypeDef:
+    return {
+        "Users": ...,
+        "TotalNumberOfUsers": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUsersResponseTypeDef(TypedDict):
+    Users: List[UserTypeDef],  # (1)
+    TotalNumberOfUsers: int,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
-- `TotalNumberOfUsers`: `int`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="documentmetadatatypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DocumentMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DocumentMetadataTypeDef
+
+def get_value() -> DocumentMetadataTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentMetadataTypeDef(TypedDict):
+    Id: NotRequired[str],
+    CreatorId: NotRequired[str],
+    ParentFolderId: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    ModifiedTimestamp: NotRequired[datetime],
+    LatestVersionMetadata: NotRequired[DocumentVersionMetadataTypeDef],  # (1)
+    ResourceState: NotRequired[ResourceStateTypeType],  # (2)
+    Labels: NotRequired[List[str]],
+```
 
-- `Id`: `str`
-- `CreatorId`: `str`
-- `ParentFolderId`: `str`
-- `CreatedTimestamp`: `datetime`
-- `ModifiedTimestamp`: `datetime`
-- `LatestVersionMetadata`:
-  [DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef)
-- `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
-- `Labels`: `List`\[`str`\]
-
-<a id="documentversionmetadatatypedef"></a>
-
+1. See [:material-code-braces: DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef) 
+2. See [:material-code-brackets: ResourceStateTypeType](./literals.md#resourcestatetypetype) 
 ## DocumentVersionMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import DocumentVersionMetadataTypeDef
+
+def get_value() -> DocumentVersionMetadataTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DocumentVersionMetadataTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    ContentType: NotRequired[str],
+    Size: NotRequired[int],
+    Signature: NotRequired[str],
+    Status: NotRequired[DocumentStatusTypeType],  # (1)
+    CreatedTimestamp: NotRequired[datetime],
+    ModifiedTimestamp: NotRequired[datetime],
+    ContentCreatedTimestamp: NotRequired[datetime],
+    ContentModifiedTimestamp: NotRequired[datetime],
+    CreatorId: NotRequired[str],
+    Thumbnail: NotRequired[Dict[DocumentThumbnailTypeType, str]],  # (2)
+    Source: NotRequired[Dict[DocumentSourceTypeType, str]],  # (3)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `ContentType`: `str`
-- `Size`: `int`
-- `Signature`: `str`
-- `Status`: [DocumentStatusTypeType](./literals.md#documentstatustypetype)
-- `CreatedTimestamp`: `datetime`
-- `ModifiedTimestamp`: `datetime`
-- `ContentCreatedTimestamp`: `datetime`
-- `ContentModifiedTimestamp`: `datetime`
-- `CreatorId`: `str`
-- `Thumbnail`:
-  `Dict`\[[DocumentThumbnailTypeType](./literals.md#documentthumbnailtypetype),
-  `str`\]
-- `Source`:
-  `Dict`\[[DocumentSourceTypeType](./literals.md#documentsourcetypetype),
-  `str`\]
-
-<a id="foldermetadatatypedef"></a>
-
+1. See [:material-code-brackets: DocumentStatusTypeType](./literals.md#documentstatustypetype) 
+2. See [:material-code-brackets: DocumentThumbnailTypeType](./literals.md#documentthumbnailtypetype) 
+3. See [:material-code-brackets: DocumentSourceTypeType](./literals.md#documentsourcetypetype) 
 ## FolderMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import FolderMetadataTypeDef
+
+def get_value() -> FolderMetadataTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FolderMetadataTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    CreatorId: NotRequired[str],
+    ParentFolderId: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    ModifiedTimestamp: NotRequired[datetime],
+    ResourceState: NotRequired[ResourceStateTypeType],  # (1)
+    Signature: NotRequired[str],
+    Labels: NotRequired[List[str]],
+    Size: NotRequired[int],
+    LatestVersionSize: NotRequired[int],
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `CreatorId`: `str`
-- `ParentFolderId`: `str`
-- `CreatedTimestamp`: `datetime`
-- `ModifiedTimestamp`: `datetime`
-- `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
-- `Signature`: `str`
-- `Labels`: `List`\[`str`\]
-- `Size`: `int`
-- `LatestVersionSize`: `int`
-
-<a id="getcurrentuserrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ResourceStateTypeType](./literals.md#resourcestatetypetype) 
 ## GetCurrentUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetCurrentUserRequestRequestTypeDef
+
+def get_value() -> GetCurrentUserRequestRequestTypeDef:
+    return {
+        "AuthenticationToken": ...,
+    }
 ```
 
-Required fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="getcurrentuserresponsetypedef"></a>
+```python title="Definition"
+class GetCurrentUserRequestRequestTypeDef(TypedDict):
+    AuthenticationToken: str,
+```
 
 ## GetCurrentUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetCurrentUserResponseTypeDef
+
+def get_value() -> GetCurrentUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCurrentUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdocumentpathrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDocumentPathRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetDocumentPathRequestRequestTypeDef
+
+def get_value() -> GetDocumentPathRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+    }
 ```
 
-Required fields:
-
-- `DocumentId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Limit`: `int`
-- `Fields`: `str`
-- `Marker`: `str`
-
-<a id="getdocumentpathresponsetypedef"></a>
+```python title="Definition"
+class GetDocumentPathRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    AuthenticationToken: NotRequired[str],
+    Limit: NotRequired[int],
+    Fields: NotRequired[str],
+    Marker: NotRequired[str],
+```
 
 ## GetDocumentPathResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetDocumentPathResponseTypeDef
+
+def get_value() -> GetDocumentPathResponseTypeDef:
+    return {
+        "Path": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDocumentPathResponseTypeDef(TypedDict):
+    Path: ResourcePathTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Path`: [ResourcePathTypeDef](./type_defs.md#resourcepathtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdocumentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourcePathTypeDef](./type_defs.md#resourcepathtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDocumentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetDocumentRequestRequestTypeDef
+
+def get_value() -> GetDocumentRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+    }
 ```
 
-Required fields:
-
-- `DocumentId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `IncludeCustomMetadata`: `bool`
-
-<a id="getdocumentresponsetypedef"></a>
+```python title="Definition"
+class GetDocumentRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    AuthenticationToken: NotRequired[str],
+    IncludeCustomMetadata: NotRequired[bool],
+```
 
 ## GetDocumentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetDocumentResponseTypeDef
+
+def get_value() -> GetDocumentResponseTypeDef:
+    return {
+        "Metadata": ...,
+        "CustomMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDocumentResponseTypeDef(TypedDict):
+    Metadata: DocumentMetadataTypeDef,  # (1)
+    CustomMetadata: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Metadata`: [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
-- `CustomMetadata`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdocumentversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDocumentVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetDocumentVersionRequestRequestTypeDef
+
+def get_value() -> GetDocumentVersionRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+        "VersionId": ...,
+    }
 ```
 
-Required fields:
-
-- `DocumentId`: `str`
-- `VersionId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Fields`: `str`
-- `IncludeCustomMetadata`: `bool`
-
-<a id="getdocumentversionresponsetypedef"></a>
+```python title="Definition"
+class GetDocumentVersionRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    VersionId: str,
+    AuthenticationToken: NotRequired[str],
+    Fields: NotRequired[str],
+    IncludeCustomMetadata: NotRequired[bool],
+```
 
 ## GetDocumentVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetDocumentVersionResponseTypeDef
+
+def get_value() -> GetDocumentVersionResponseTypeDef:
+    return {
+        "Metadata": ...,
+        "CustomMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDocumentVersionResponseTypeDef(TypedDict):
+    Metadata: DocumentVersionMetadataTypeDef,  # (1)
+    CustomMetadata: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Metadata`:
-  [DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef)
-- `CustomMetadata`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfolderpathrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFolderPathRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetFolderPathRequestRequestTypeDef
+
+def get_value() -> GetFolderPathRequestRequestTypeDef:
+    return {
+        "FolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `FolderId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Limit`: `int`
-- `Fields`: `str`
-- `Marker`: `str`
-
-<a id="getfolderpathresponsetypedef"></a>
+```python title="Definition"
+class GetFolderPathRequestRequestTypeDef(TypedDict):
+    FolderId: str,
+    AuthenticationToken: NotRequired[str],
+    Limit: NotRequired[int],
+    Fields: NotRequired[str],
+    Marker: NotRequired[str],
+```
 
 ## GetFolderPathResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetFolderPathResponseTypeDef
+
+def get_value() -> GetFolderPathResponseTypeDef:
+    return {
+        "Path": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFolderPathResponseTypeDef(TypedDict):
+    Path: ResourcePathTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Path`: [ResourcePathTypeDef](./type_defs.md#resourcepathtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfolderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourcePathTypeDef](./type_defs.md#resourcepathtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFolderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetFolderRequestRequestTypeDef
+
+def get_value() -> GetFolderRequestRequestTypeDef:
+    return {
+        "FolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `FolderId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `IncludeCustomMetadata`: `bool`
-
-<a id="getfolderresponsetypedef"></a>
+```python title="Definition"
+class GetFolderRequestRequestTypeDef(TypedDict):
+    FolderId: str,
+    AuthenticationToken: NotRequired[str],
+    IncludeCustomMetadata: NotRequired[bool],
+```
 
 ## GetFolderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetFolderResponseTypeDef
+
+def get_value() -> GetFolderResponseTypeDef:
+    return {
+        "Metadata": ...,
+        "CustomMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFolderResponseTypeDef(TypedDict):
+    Metadata: FolderMetadataTypeDef,  # (1)
+    CustomMetadata: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Metadata`: [FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)
-- `CustomMetadata`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetResourcesRequestRequestTypeDef
+
+def get_value() -> GetResourcesRequestRequestTypeDef:
+    return {
+        "AuthenticationToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetResourcesRequestRequestTypeDef(TypedDict):
+    AuthenticationToken: NotRequired[str],
+    UserId: NotRequired[str],
+    CollectionType: NotRequired[ResourceCollectionTypeType],  # (1)
+    Limit: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `AuthenticationToken`: `str`
-- `UserId`: `str`
-- `CollectionType`: `Literal['SHARED_WITH_ME']` (see
-  [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype))
-- `Limit`: `int`
-- `Marker`: `str`
-
-<a id="getresourcesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype) 
 ## GetResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GetResourcesResponseTypeDef
+
+def get_value() -> GetResourcesResponseTypeDef:
+    return {
+        "Folders": ...,
+        "Documents": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourcesResponseTypeDef(TypedDict):
+    Folders: List[FolderMetadataTypeDef],  # (1)
+    Documents: List[DocumentMetadataTypeDef],  # (2)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Folders`:
-  `List`\[[FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)\]
-- `Documents`:
-  `List`\[[DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="groupmetadatatypedef"></a>
-
+1. See [:material-code-braces: FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef) 
+2. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import GroupMetadataTypeDef
+
+def get_value() -> GroupMetadataTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Name`: `str`
-
-<a id="initiatedocumentversionuploadrequestrequesttypedef"></a>
+```python title="Definition"
+class GroupMetadataTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## InitiateDocumentVersionUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import InitiateDocumentVersionUploadRequestRequestTypeDef
+
+def get_value() -> InitiateDocumentVersionUploadRequestRequestTypeDef:
+    return {
+        "ParentFolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `ParentFolderId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `ContentCreatedTimestamp`: `Union`\[`datetime`, `str`\]
-- `ContentModifiedTimestamp`: `Union`\[`datetime`, `str`\]
-- `ContentType`: `str`
-- `DocumentSizeInBytes`: `int`
-
-<a id="initiatedocumentversionuploadresponsetypedef"></a>
+```python title="Definition"
+class InitiateDocumentVersionUploadRequestRequestTypeDef(TypedDict):
+    ParentFolderId: str,
+    AuthenticationToken: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    ContentCreatedTimestamp: NotRequired[Union[datetime, str]],
+    ContentModifiedTimestamp: NotRequired[Union[datetime, str]],
+    ContentType: NotRequired[str],
+    DocumentSizeInBytes: NotRequired[int],
+```
 
 ## InitiateDocumentVersionUploadResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import InitiateDocumentVersionUploadResponseTypeDef
+
+def get_value() -> InitiateDocumentVersionUploadResponseTypeDef:
+    return {
+        "Metadata": ...,
+        "UploadMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiateDocumentVersionUploadResponseTypeDef(TypedDict):
+    Metadata: DocumentMetadataTypeDef,  # (1)
+    UploadMetadata: UploadMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Metadata`: [DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef)
-- `UploadMetadata`:
-  [UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notificationoptionstypedef"></a>
-
+1. See [:material-code-braces: DocumentMetadataTypeDef](./type_defs.md#documentmetadatatypedef) 
+2. See [:material-code-braces: UploadMetadataTypeDef](./type_defs.md#uploadmetadatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotificationOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import NotificationOptionsTypeDef
+
+def get_value() -> NotificationOptionsTypeDef:
+    return {
+        "SendEmail": ...,
+    }
 ```
 
-Optional fields:
-
-- `SendEmail`: `bool`
-- `EmailMessage`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class NotificationOptionsTypeDef(TypedDict):
+    SendEmail: NotRequired[bool],
+    EmailMessage: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="participantstypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParticipantsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import ParticipantsTypeDef
+
+def get_value() -> ParticipantsTypeDef:
+    return {
+        "Users": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParticipantsTypeDef(TypedDict):
+    Users: NotRequired[List[UserMetadataTypeDef]],  # (1)
+    Groups: NotRequired[List[GroupMetadataTypeDef]],  # (2)
+```
 
-- `Users`: `List`\[[UserMetadataTypeDef](./type_defs.md#usermetadatatypedef)\]
-- `Groups`:
-  `List`\[[GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef)\]
-
-<a id="permissioninfotypedef"></a>
-
+1. See [:material-code-braces: UserMetadataTypeDef](./type_defs.md#usermetadatatypedef) 
+2. See [:material-code-braces: GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef) 
 ## PermissionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import PermissionInfoTypeDef
+
+def get_value() -> PermissionInfoTypeDef:
+    return {
+        "Role": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PermissionInfoTypeDef(TypedDict):
+    Role: NotRequired[RoleTypeType],  # (1)
+    Type: NotRequired[RolePermissionTypeType],  # (2)
+```
 
-- `Role`: [RoleTypeType](./literals.md#roletypetype)
-- `Type`: [RolePermissionTypeType](./literals.md#rolepermissiontypetype)
-
-<a id="principaltypedef"></a>
-
+1. See [:material-code-brackets: RoleTypeType](./literals.md#roletypetype) 
+2. See [:material-code-brackets: RolePermissionTypeType](./literals.md#rolepermissiontypetype) 
 ## PrincipalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import PrincipalTypeDef
+
+def get_value() -> PrincipalTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PrincipalTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Type: NotRequired[PrincipalTypeType],  # (1)
+    Roles: NotRequired[List[PermissionInfoTypeDef]],  # (2)
+```
 
-- `Id`: `str`
-- `Type`: [PrincipalTypeType](./literals.md#principaltypetype)
-- `Roles`:
-  `List`\[[PermissionInfoTypeDef](./type_defs.md#permissioninfotypedef)\]
-
-<a id="removeallresourcepermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
+2. See [:material-code-braces: PermissionInfoTypeDef](./type_defs.md#permissioninfotypedef) 
 ## RemoveAllResourcePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import RemoveAllResourcePermissionsRequestRequestTypeDef
+
+def get_value() -> RemoveAllResourcePermissionsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-
-<a id="removeresourcepermissionrequestrequesttypedef"></a>
+```python title="Definition"
+class RemoveAllResourcePermissionsRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    AuthenticationToken: NotRequired[str],
+```
 
 ## RemoveResourcePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import RemoveResourcePermissionRequestRequestTypeDef
+
+def get_value() -> RemoveResourcePermissionRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "PrincipalId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveResourcePermissionRequestRequestTypeDef(TypedDict):
+    ResourceId: str,
+    PrincipalId: str,
+    AuthenticationToken: NotRequired[str],
+    PrincipalType: NotRequired[PrincipalTypeType],  # (1)
+```
 
-- `ResourceId`: `str`
-- `PrincipalId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
-
-<a id="resourcemetadatatypedef"></a>
-
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 ## ResourceMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import ResourceMetadataTypeDef
+
+def get_value() -> ResourceMetadataTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceMetadataTypeDef(TypedDict):
+    Type: NotRequired[ResourceTypeType],  # (1)
+    Name: NotRequired[str],
+    OriginalName: NotRequired[str],
+    Id: NotRequired[str],
+    VersionId: NotRequired[str],
+    Owner: NotRequired[UserMetadataTypeDef],  # (2)
+    ParentId: NotRequired[str],
+```
 
-- `Type`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `Name`: `str`
-- `OriginalName`: `str`
-- `Id`: `str`
-- `VersionId`: `str`
-- `Owner`: [UserMetadataTypeDef](./type_defs.md#usermetadatatypedef)
-- `ParentId`: `str`
-
-<a id="resourcepathcomponenttypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: UserMetadataTypeDef](./type_defs.md#usermetadatatypedef) 
 ## ResourcePathComponentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import ResourcePathComponentTypeDef
+
+def get_value() -> ResourcePathComponentTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Name`: `str`
-
-<a id="resourcepathtypedef"></a>
+```python title="Definition"
+class ResourcePathComponentTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## ResourcePathTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import ResourcePathTypeDef
+
+def get_value() -> ResourcePathTypeDef:
+    return {
+        "Components": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourcePathTypeDef(TypedDict):
+    Components: NotRequired[List[ResourcePathComponentTypeDef]],  # (1)
+```
 
-- `Components`:
-  `List`\[[ResourcePathComponentTypeDef](./type_defs.md#resourcepathcomponenttypedef)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResourcePathComponentTypeDef](./type_defs.md#resourcepathcomponenttypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="shareprincipaltypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SharePrincipalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import SharePrincipalTypeDef
+
+def get_value() -> SharePrincipalTypeDef:
+    return {
+        "Id": ...,
+        "Type": ...,
+        "Role": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SharePrincipalTypeDef(TypedDict):
+    Id: str,
+    Type: PrincipalTypeType,  # (1)
+    Role: RoleTypeType,  # (2)
+```
 
-- `Id`: `str`
-- `Type`: [PrincipalTypeType](./literals.md#principaltypetype)
-- `Role`: [RoleTypeType](./literals.md#roletypetype)
-
-<a id="shareresulttypedef"></a>
-
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
+2. See [:material-code-brackets: RoleTypeType](./literals.md#roletypetype) 
 ## ShareResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import ShareResultTypeDef
+
+def get_value() -> ShareResultTypeDef:
+    return {
+        "PrincipalId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ShareResultTypeDef(TypedDict):
+    PrincipalId: NotRequired[str],
+    InviteePrincipalId: NotRequired[str],
+    Role: NotRequired[RoleTypeType],  # (1)
+    Status: NotRequired[ShareStatusTypeType],  # (2)
+    ShareId: NotRequired[str],
+    StatusMessage: NotRequired[str],
+```
 
-- `PrincipalId`: `str`
-- `InviteePrincipalId`: `str`
-- `Role`: [RoleTypeType](./literals.md#roletypetype)
-- `Status`: [ShareStatusTypeType](./literals.md#sharestatustypetype)
-- `ShareId`: `str`
-- `StatusMessage`: `str`
-
-<a id="storageruletypetypedef"></a>
-
+1. See [:material-code-brackets: RoleTypeType](./literals.md#roletypetype) 
+2. See [:material-code-brackets: ShareStatusTypeType](./literals.md#sharestatustypetype) 
 ## StorageRuleTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import StorageRuleTypeTypeDef
+
+def get_value() -> StorageRuleTypeTypeDef:
+    return {
+        "StorageAllocatedInBytes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StorageRuleTypeTypeDef(TypedDict):
+    StorageAllocatedInBytes: NotRequired[int],
+    StorageType: NotRequired[StorageTypeType],  # (1)
+```
 
-- `StorageAllocatedInBytes`: `int`
-- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
-
-<a id="subscriptiontypedef"></a>
-
+1. See [:material-code-brackets: StorageTypeType](./literals.md#storagetypetype) 
 ## SubscriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import SubscriptionTypeDef
+
+def get_value() -> SubscriptionTypeDef:
+    return {
+        "SubscriptionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubscriptionTypeDef(TypedDict):
+    SubscriptionId: NotRequired[str],
+    EndPoint: NotRequired[str],
+    Protocol: NotRequired[SubscriptionProtocolTypeType],  # (1)
+```
 
-- `SubscriptionId`: `str`
-- `EndPoint`: `str`
-- `Protocol`: `Literal['HTTPS']` (see
-  [SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype))
-
-<a id="updatedocumentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype) 
 ## UpdateDocumentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import UpdateDocumentRequestRequestTypeDef
+
+def get_value() -> UpdateDocumentRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDocumentRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    AuthenticationToken: NotRequired[str],
+    Name: NotRequired[str],
+    ParentFolderId: NotRequired[str],
+    ResourceState: NotRequired[ResourceStateTypeType],  # (1)
+```
 
-- `DocumentId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Name`: `str`
-- `ParentFolderId`: `str`
-- `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
-
-<a id="updatedocumentversionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ResourceStateTypeType](./literals.md#resourcestatetypetype) 
 ## UpdateDocumentVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import UpdateDocumentVersionRequestRequestTypeDef
+
+def get_value() -> UpdateDocumentVersionRequestRequestTypeDef:
+    return {
+        "DocumentId": ...,
+        "VersionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDocumentVersionRequestRequestTypeDef(TypedDict):
+    DocumentId: str,
+    VersionId: str,
+    AuthenticationToken: NotRequired[str],
+    VersionStatus: NotRequired[DocumentVersionStatusType],  # (1)
+```
 
-- `DocumentId`: `str`
-- `VersionId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `VersionStatus`: `Literal['ACTIVE']` (see
-  [DocumentVersionStatusType](./literals.md#documentversionstatustype))
-
-<a id="updatefolderrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DocumentVersionStatusType](./literals.md#documentversionstatustype) 
 ## UpdateFolderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import UpdateFolderRequestRequestTypeDef
+
+def get_value() -> UpdateFolderRequestRequestTypeDef:
+    return {
+        "FolderId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFolderRequestRequestTypeDef(TypedDict):
+    FolderId: str,
+    AuthenticationToken: NotRequired[str],
+    Name: NotRequired[str],
+    ParentFolderId: NotRequired[str],
+    ResourceState: NotRequired[ResourceStateTypeType],  # (1)
+```
 
-- `FolderId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `Name`: `str`
-- `ParentFolderId`: `str`
-- `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
-
-<a id="updateuserrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ResourceStateTypeType](./literals.md#resourcestatetypetype) 
 ## UpdateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import UpdateUserRequestRequestTypeDef
+
+def get_value() -> UpdateUserRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    AuthenticationToken: NotRequired[str],
+    GivenName: NotRequired[str],
+    Surname: NotRequired[str],
+    Type: NotRequired[UserTypeType],  # (1)
+    StorageRule: NotRequired[StorageRuleTypeTypeDef],  # (2)
+    TimeZoneId: NotRequired[str],
+    Locale: NotRequired[LocaleTypeType],  # (3)
+    GrantPoweruserPrivileges: NotRequired[BooleanEnumTypeType],  # (4)
+```
 
-- `UserId`: `str`
-
-Optional fields:
-
-- `AuthenticationToken`: `str`
-- `GivenName`: `str`
-- `Surname`: `str`
-- `Type`: [UserTypeType](./literals.md#usertypetype)
-- `StorageRule`:
-  [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
-- `TimeZoneId`: `str`
-- `Locale`: [LocaleTypeType](./literals.md#localetypetype)
-- `GrantPoweruserPrivileges`:
-  [BooleanEnumTypeType](./literals.md#booleanenumtypetype)
-
-<a id="updateuserresponsetypedef"></a>
-
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-braces: StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef) 
+3. See [:material-code-brackets: LocaleTypeType](./literals.md#localetypetype) 
+4. See [:material-code-brackets: BooleanEnumTypeType](./literals.md#booleanenumtypetype) 
 ## UpdateUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import UpdateUserResponseTypeDef
+
+def get_value() -> UpdateUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="uploadmetadatatypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UploadMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import UploadMetadataTypeDef
+
+def get_value() -> UploadMetadataTypeDef:
+    return {
+        "UploadUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `UploadUrl`: `str`
-- `SignedHeaders`: `Dict`\[`str`, `str`\]
-
-<a id="usermetadatatypedef"></a>
+```python title="Definition"
+class UploadMetadataTypeDef(TypedDict):
+    UploadUrl: NotRequired[str],
+    SignedHeaders: NotRequired[Dict[str, str]],
+```
 
 ## UserMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import UserMetadataTypeDef
+
+def get_value() -> UserMetadataTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Username`: `str`
-- `GivenName`: `str`
-- `Surname`: `str`
-- `EmailAddress`: `str`
-
-<a id="userstoragemetadatatypedef"></a>
+```python title="Definition"
+class UserMetadataTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Username: NotRequired[str],
+    GivenName: NotRequired[str],
+    Surname: NotRequired[str],
+    EmailAddress: NotRequired[str],
+```
 
 ## UserStorageMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import UserStorageMetadataTypeDef
+
+def get_value() -> UserStorageMetadataTypeDef:
+    return {
+        "StorageUtilizedInBytes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserStorageMetadataTypeDef(TypedDict):
+    StorageUtilizedInBytes: NotRequired[int],
+    StorageRule: NotRequired[StorageRuleTypeTypeDef],  # (1)
+```
 
-- `StorageUtilizedInBytes`: `int`
-- `StorageRule`:
-  [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
-
-<a id="usertypedef"></a>
-
+1. See [:material-code-braces: StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef) 
 ## UserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workdocs.type_defs import UserTypeDef
+
+def get_value() -> UserTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Username: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    GivenName: NotRequired[str],
+    Surname: NotRequired[str],
+    OrganizationId: NotRequired[str],
+    RootFolderId: NotRequired[str],
+    RecycleBinFolderId: NotRequired[str],
+    Status: NotRequired[UserStatusTypeType],  # (1)
+    Type: NotRequired[UserTypeType],  # (2)
+    CreatedTimestamp: NotRequired[datetime],
+    ModifiedTimestamp: NotRequired[datetime],
+    TimeZoneId: NotRequired[str],
+    Locale: NotRequired[LocaleTypeType],  # (3)
+    Storage: NotRequired[UserStorageMetadataTypeDef],  # (4)
+```
 
-- `Id`: `str`
-- `Username`: `str`
-- `EmailAddress`: `str`
-- `GivenName`: `str`
-- `Surname`: `str`
-- `OrganizationId`: `str`
-- `RootFolderId`: `str`
-- `RecycleBinFolderId`: `str`
-- `Status`: [UserStatusTypeType](./literals.md#userstatustypetype)
-- `Type`: [UserTypeType](./literals.md#usertypetype)
-- `CreatedTimestamp`: `datetime`
-- `ModifiedTimestamp`: `datetime`
-- `TimeZoneId`: `str`
-- `Locale`: [LocaleTypeType](./literals.md#localetypetype)
-- `Storage`:
-  [UserStorageMetadataTypeDef](./type_defs.md#userstoragemetadatatypedef)
+1. See [:material-code-brackets: UserStatusTypeType](./literals.md#userstatustypetype) 
+2. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+3. See [:material-code-brackets: LocaleTypeType](./literals.md#localetypetype) 
+4. See [:material-code-braces: UserStorageMetadataTypeDef](./type_defs.md#userstoragemetadatatypedef) 

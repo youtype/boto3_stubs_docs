@@ -1,36 +1,18 @@
-<a id="paginators-for-boto3-lexmodelbuildingservice-module"></a>
-
-# Paginators for boto3 LexModelBuildingService module
+# Paginators
 
 > [Index](../README.md) > [LexModelBuildingService](./README.md) > Paginators
 
-Auto-generated documentation for
-[LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
-type annotations stubs module
-[mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
+!!! note ""
 
-- [Paginators for boto3 LexModelBuildingService module](#paginators-for-boto3-lexmodelbuildingservice-module)
-  - [GetBotAliasesPaginator](#getbotaliasespaginator)
-  - [GetBotChannelAssociationsPaginator](#getbotchannelassociationspaginator)
-  - [GetBotVersionsPaginator](#getbotversionspaginator)
-  - [GetBotsPaginator](#getbotspaginator)
-  - [GetBuiltinIntentsPaginator](#getbuiltinintentspaginator)
-  - [GetBuiltinSlotTypesPaginator](#getbuiltinslottypespaginator)
-  - [GetIntentVersionsPaginator](#getintentversionspaginator)
-  - [GetIntentsPaginator](#getintentspaginator)
-  - [GetSlotTypeVersionsPaginator](#getslottypeversionspaginator)
-  - [GetSlotTypesPaginator](#getslottypespaginator)
-
-<a id="getbotaliasespaginator"></a>
+    Auto-generated documentation for [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
+    type annotations stubs module [mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 ## GetBotAliasesPaginator
 
-Type annotations for
-`boto3.client("lex-models").get_paginator("get_bot_aliases")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_bot_aliases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotAliases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetBotAliasesPaginator
@@ -39,29 +21,41 @@ def get_get_bot_aliases_paginator() -> GetBotAliasesPaginator:
     return Session().client("lex-models").get_paginator("get_bot_aliases")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBotAliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotAliases)
 
-Arguments for `GetBotAliasesPaginator.paginate` method:
+### paginate
 
-- `botName`: `str` *(required)*
-- `nameContains`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetBotAliasesPaginator.paginate` method.
 
-`GetBotAliasesPaginator.paginate` returns
-`_PageIterator`\[[GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    botName: str,
+    nameContains: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetBotAliasesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getbotchannelassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetBotAliasesResponseTypeDef](./type_defs.md#getbotaliasesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetBotAliasesRequestGetBotAliasesPaginateTypeDef = {  # (1)
+    "botName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetBotAliasesRequestGetBotAliasesPaginateTypeDef](./type_defs.md#getbotaliasesrequestgetbotaliasespaginatetypedef) 
 ## GetBotChannelAssociationsPaginator
 
-Type annotations for
-`boto3.client("lex-models").get_paginator("get_bot_channel_associations")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_bot_channel_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotChannelAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetBotChannelAssociationsPaginator
@@ -70,30 +64,43 @@ def get_get_bot_channel_associations_paginator() -> GetBotChannelAssociationsPag
     return Session().client("lex-models").get_paginator("get_bot_channel_associations")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBotChannelAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotChannelAssociations)
 
-Arguments for `GetBotChannelAssociationsPaginator.paginate` method:
+### paginate
 
-- `botName`: `str` *(required)*
-- `botAlias`: `str` *(required)*
-- `nameContains`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetBotChannelAssociationsPaginator.paginate` method.
 
-`GetBotChannelAssociationsPaginator.paginate` returns
-`_PageIterator`\[[GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    botName: str,
+    botAlias: str,
+    nameContains: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetBotChannelAssociationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getbotversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetBotChannelAssociationsResponseTypeDef](./type_defs.md#getbotchannelassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetBotChannelAssociationsRequestGetBotChannelAssociationsPaginateTypeDef = {  # (1)
+    "botName": ...,
+    "botAlias": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetBotChannelAssociationsRequestGetBotChannelAssociationsPaginateTypeDef](./type_defs.md#getbotchannelassociationsrequestgetbotchannelassociationspaginatetypedef) 
 ## GetBotVersionsPaginator
 
-Type annotations for
-`boto3.client("lex-models").get_paginator("get_bot_versions")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_bot_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetBotVersionsPaginator
@@ -102,27 +109,40 @@ def get_get_bot_versions_paginator() -> GetBotVersionsPaginator:
     return Session().client("lex-models").get_paginator("get_bot_versions")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBotVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBotVersions)
 
-Arguments for `GetBotVersionsPaginator.paginate` method:
+### paginate
 
-- `name`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetBotVersionsPaginator.paginate` method.
 
-`GetBotVersionsPaginator.paginate` returns
-`_PageIterator`\[[GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    name: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetBotVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getbotspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetBotVersionsResponseTypeDef](./type_defs.md#getbotversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetBotVersionsRequestGetBotVersionsPaginateTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetBotVersionsRequestGetBotVersionsPaginateTypeDef](./type_defs.md#getbotversionsrequestgetbotversionspaginatetypedef) 
 ## GetBotsPaginator
 
-Type annotations for `boto3.client("lex-models").get_paginator("get_bots")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_bots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetBotsPaginator
@@ -131,28 +151,40 @@ def get_get_bots_paginator() -> GetBotsPaginator:
     return Session().client("lex-models").get_paginator("get_bots")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBots)
 
-Arguments for `GetBotsPaginator.paginate` method:
+### paginate
 
-- `nameContains`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetBotsPaginator.paginate` method.
 
-`GetBotsPaginator.paginate` returns
-`_PageIterator`\[[GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    nameContains: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetBotsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getbuiltinintentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetBotsResponseTypeDef](./type_defs.md#getbotsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetBotsRequestGetBotsPaginateTypeDef = {  # (1)
+    "nameContains": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetBotsRequestGetBotsPaginateTypeDef](./type_defs.md#getbotsrequestgetbotspaginatetypedef) 
 ## GetBuiltinIntentsPaginator
 
-Type annotations for
-`boto3.client("lex-models").get_paginator("get_builtin_intents")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_builtin_intents")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinIntents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetBuiltinIntentsPaginator
@@ -161,29 +193,42 @@ def get_get_builtin_intents_paginator() -> GetBuiltinIntentsPaginator:
     return Session().client("lex-models").get_paginator("get_builtin_intents")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBuiltinIntents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinIntents)
 
-Arguments for `GetBuiltinIntentsPaginator.paginate` method:
+### paginate
 
-- `locale`: [LocaleType](./literals.md#localetype)
-- `signatureContains`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetBuiltinIntentsPaginator.paginate` method.
 
-`GetBuiltinIntentsPaginator.paginate` returns
-`_PageIterator`\[[GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    locale: LocaleType = ...,  # (1)
+    signatureContains: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetBuiltinIntentsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getbuiltinslottypespaginator"></a>
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetBuiltinIntentsResponseTypeDef](./type_defs.md#getbuiltinintentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetBuiltinIntentsRequestGetBuiltinIntentsPaginateTypeDef = {  # (1)
+    "locale": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetBuiltinIntentsRequestGetBuiltinIntentsPaginateTypeDef](./type_defs.md#getbuiltinintentsrequestgetbuiltinintentspaginatetypedef) 
 ## GetBuiltinSlotTypesPaginator
 
-Type annotations for
-`boto3.client("lex-models").get_paginator("get_builtin_slot_types")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_builtin_slot_types")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinSlotTypes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetBuiltinSlotTypesPaginator
@@ -192,29 +237,42 @@ def get_get_builtin_slot_types_paginator() -> GetBuiltinSlotTypesPaginator:
     return Session().client("lex-models").get_paginator("get_builtin_slot_types")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetBuiltinSlotTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetBuiltinSlotTypes)
 
-Arguments for `GetBuiltinSlotTypesPaginator.paginate` method:
+### paginate
 
-- `locale`: [LocaleType](./literals.md#localetype)
-- `signatureContains`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetBuiltinSlotTypesPaginator.paginate` method.
 
-`GetBuiltinSlotTypesPaginator.paginate` returns
-`_PageIterator`\[[GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    locale: LocaleType = ...,  # (1)
+    signatureContains: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetBuiltinSlotTypesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getintentversionspaginator"></a>
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetBuiltinSlotTypesResponseTypeDef](./type_defs.md#getbuiltinslottypesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetBuiltinSlotTypesRequestGetBuiltinSlotTypesPaginateTypeDef = {  # (1)
+    "locale": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetBuiltinSlotTypesRequestGetBuiltinSlotTypesPaginateTypeDef](./type_defs.md#getbuiltinslottypesrequestgetbuiltinslottypespaginatetypedef) 
 ## GetIntentVersionsPaginator
 
-Type annotations for
-`boto3.client("lex-models").get_paginator("get_intent_versions")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_intent_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntentVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetIntentVersionsPaginator
@@ -223,27 +281,40 @@ def get_get_intent_versions_paginator() -> GetIntentVersionsPaginator:
     return Session().client("lex-models").get_paginator("get_intent_versions")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetIntentVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntentVersions)
 
-Arguments for `GetIntentVersionsPaginator.paginate` method:
+### paginate
 
-- `name`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetIntentVersionsPaginator.paginate` method.
 
-`GetIntentVersionsPaginator.paginate` returns
-`_PageIterator`\[[GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    name: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetIntentVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getintentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetIntentVersionsResponseTypeDef](./type_defs.md#getintentversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetIntentVersionsRequestGetIntentVersionsPaginateTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIntentVersionsRequestGetIntentVersionsPaginateTypeDef](./type_defs.md#getintentversionsrequestgetintentversionspaginatetypedef) 
 ## GetIntentsPaginator
 
-Type annotations for `boto3.client("lex-models").get_paginator("get_intents")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_intents")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetIntentsPaginator
@@ -252,28 +323,40 @@ def get_get_intents_paginator() -> GetIntentsPaginator:
     return Session().client("lex-models").get_paginator("get_intents")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetIntents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetIntents)
 
-Arguments for `GetIntentsPaginator.paginate` method:
+### paginate
 
-- `nameContains`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetIntentsPaginator.paginate` method.
 
-`GetIntentsPaginator.paginate` returns
-`_PageIterator`\[[GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    nameContains: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetIntentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getslottypeversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetIntentsResponseTypeDef](./type_defs.md#getintentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetIntentsRequestGetIntentsPaginateTypeDef = {  # (1)
+    "nameContains": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetIntentsRequestGetIntentsPaginateTypeDef](./type_defs.md#getintentsrequestgetintentspaginatetypedef) 
 ## GetSlotTypeVersionsPaginator
 
-Type annotations for
-`boto3.client("lex-models").get_paginator("get_slot_type_versions")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_slot_type_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypeVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetSlotTypeVersionsPaginator
@@ -282,28 +365,40 @@ def get_get_slot_type_versions_paginator() -> GetSlotTypeVersionsPaginator:
     return Session().client("lex-models").get_paginator("get_slot_type_versions")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetSlotTypeVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypeVersions)
 
-Arguments for `GetSlotTypeVersionsPaginator.paginate` method:
+### paginate
 
-- `name`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetSlotTypeVersionsPaginator.paginate` method.
 
-`GetSlotTypeVersionsPaginator.paginate` returns
-`_PageIterator`\[[GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    name: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetSlotTypeVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getslottypespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetSlotTypeVersionsResponseTypeDef](./type_defs.md#getslottypeversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetSlotTypeVersionsRequestGetSlotTypeVersionsPaginateTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetSlotTypeVersionsRequestGetSlotTypeVersionsPaginateTypeDef](./type_defs.md#getslottypeversionsrequestgetslottypeversionspaginatetypedef) 
 ## GetSlotTypesPaginator
 
-Type annotations for
-`boto3.client("lex-models").get_paginator("get_slot_types")`.
+Type annotations and code completion for `#!python boto3.client("lex-models").get_paginator("get_slot_types")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lex_models.paginator import GetSlotTypesPaginator
@@ -312,14 +407,31 @@ def get_get_slot_types_paginator() -> GetSlotTypesPaginator:
     return Session().client("lex-models").get_paginator("get_slot_types")
 ```
 
-Boto3 documentation:
-[LexModelBuildingService.Paginator.GetSlotTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService.Paginator.GetSlotTypes)
 
-Arguments for `GetSlotTypesPaginator.paginate` method:
+### paginate
 
-- `nameContains`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetSlotTypesPaginator.paginate` method.
 
-`GetSlotTypesPaginator.paginate` returns
-`_PageIterator`\[[GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    nameContains: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetSlotTypesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetSlotTypesResponseTypeDef](./type_defs.md#getslottypesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetSlotTypesRequestGetSlotTypesPaginateTypeDef = {  # (1)
+    "nameContains": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetSlotTypesRequestGetSlotTypesPaginateTypeDef](./type_defs.md#getslottypesrequestgetslottypespaginatetypedef) 

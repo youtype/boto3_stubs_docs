@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-migrationhubstrategyrecommendations-module"></a>
-
-# Type annotations for boto3 MigrationHubStrategyRecommendations module
+#  MigrationHubStrategyRecommendations module
 
 > [Index](../README.md) > MigrationHubStrategyRecommendations
 
-Auto-generated documentation for
-[MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
-type annotations stubs module
-[mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
+!!! note ""
 
-- [Type annotations for boto3 MigrationHubStrategyRecommendations module](#type-annotations-for-boto3-migrationhubstrategyrecommendations-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MigrationHubStrategyRecommendationsClient](#migrationhubstrategyrecommendationsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
+    type annotations stubs module [mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
-Click `Modify` and select `boto3 common` and
-`MigrationHubStrategyRecommendations`.
-
-<a id="from-pypi-with-pip"></a>
+Click `Modify` and select `boto3 common` and `MigrationHubStrategyRecommendations`.
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[migrationhubstrategy]'
 python -m pip install mypy-boto3-migrationhubstrategy
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,81 +42,37 @@ python -m pip install mypy-boto3-migrationhubstrategy
 python -m pip uninstall -y mypy-boto3-migrationhubstrategy
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="migrationhubstrategyrecommendationsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MigrationHubStrategyRecommendationsClient
 
-Type annotations for `boto3.client("migrationhubstrategy")` as
-[MigrationHubStrategyRecommendationsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("migrationhubstrategy")` as [MigrationHubStrategyRecommendationsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_migrationhubstrategy.client import MigrationHubStrategyRecommendationsClient
+
+def get_client() -> MigrationHubStrategyRecommendationsClient:
+    return Session().cleint("migrationhubstrategy")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_application_component_details](./client.md#get_application_component_details)
-- [get_application_component_strategies](./client.md#get_application_component_strategies)
-- [get_assessment](./client.md#get_assessment)
-- [get_import_file_task](./client.md#get_import_file_task)
-- [get_paginator](./client.md#get_paginator)
-- [get_portfolio_preferences](./client.md#get_portfolio_preferences)
-- [get_portfolio_summary](./client.md#get_portfolio_summary)
-- [get_recommendation_report_details](./client.md#get_recommendation_report_details)
-- [get_server_details](./client.md#get_server_details)
-- [get_server_strategies](./client.md#get_server_strategies)
-- [list_application_components](./client.md#list_application_components)
-- [list_collectors](./client.md#list_collectors)
-- [list_import_file_task](./client.md#list_import_file_task)
-- [list_servers](./client.md#list_servers)
-- [put_portfolio_preferences](./client.md#put_portfolio_preferences)
-- [start_assessment](./client.md#start_assessment)
-- [start_import_file_task](./client.md#start_import_file_task)
-- [start_recommendation_report_generation](./client.md#start_recommendation_report_generation)
-- [stop_assessment](./client.md#stop_assessment)
-- [update_application_component_config](./client.md#update_application_component_config)
-- [update_server_config](./client.md#update_server_config)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-MigrationHubStrategyRecommendationsClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceLinkedRoleLockClientException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("migrationhubstrategy").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("migrationhubstrategy").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_migrationhubstrategy.paginator import GetServerDetailsPaginator, ...
+from mypy_boto3_migrationhubstrategy.paginator import GetServerDetailsPaginator
+
+def get_get_server_details_paginator() -> GetServerDetailsPaginator:
+    return Session().client("migrationhubstrategy").get_paginator("get_server_details"))
 ```
 
 - [GetServerDetailsPaginator](./paginators.md#getserverdetailspaginator)
@@ -148,16 +81,23 @@ from mypy_boto3_migrationhubstrategy.paginator import GetServerDetailsPaginator,
 - [ListImportFileTaskPaginator](./paginators.md#listimportfiletaskpaginator)
 - [ListServersPaginator](./paginators.md#listserverspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_migrationhubstrategy.literals import AntipatternReportStatusType
 
-```python
-from mypy_boto3_migrationhubstrategy.literals import AntipatternReportStatusType, ...
+def get_value() -> AntipatternReportStatusType:
+    return "FAILED"
 ```
 
 - [AntipatternReportStatusType](./literals.md#antipatternreportstatustype)
@@ -200,18 +140,22 @@ from mypy_boto3_migrationhubstrategy.literals import AntipatternReportStatusType
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_migrationhubstrategy.type_defs import AntipatternSeveritySummaryTypeDef
 
-```python
-from mypy_boto3_migrationhubstrategy.type_defs import AntipatternSeveritySummaryTypeDef, ...
+def get_value() -> AntipatternSeveritySummaryTypeDef:
+    return {
+        "count": ...,
+    }
 ```
 
 - [AntipatternSeveritySummaryTypeDef](./type_defs.md#antipatternseveritysummarytypedef)
@@ -240,6 +184,7 @@ from mypy_boto3_migrationhubstrategy.type_defs import AntipatternSeveritySummary
 - [GetPortfolioSummaryResponseTypeDef](./type_defs.md#getportfoliosummaryresponsetypedef)
 - [GetRecommendationReportDetailsRequestRequestTypeDef](./type_defs.md#getrecommendationreportdetailsrequestrequesttypedef)
 - [GetRecommendationReportDetailsResponseTypeDef](./type_defs.md#getrecommendationreportdetailsresponsetypedef)
+- [GetServerDetailsRequestGetServerDetailsPaginateTypeDef](./type_defs.md#getserverdetailsrequestgetserverdetailspaginatetypedef)
 - [GetServerDetailsRequestRequestTypeDef](./type_defs.md#getserverdetailsrequestrequesttypedef)
 - [GetServerDetailsResponseTypeDef](./type_defs.md#getserverdetailsresponsetypedef)
 - [GetServerStrategiesRequestRequestTypeDef](./type_defs.md#getserverstrategiesrequestrequesttypedef)
@@ -248,12 +193,16 @@ from mypy_boto3_migrationhubstrategy.type_defs import AntipatternSeveritySummary
 - [HeterogeneousTypeDef](./type_defs.md#heterogeneoustypedef)
 - [HomogeneousTypeDef](./type_defs.md#homogeneoustypedef)
 - [ImportFileTaskInformationTypeDef](./type_defs.md#importfiletaskinformationtypedef)
+- [ListApplicationComponentsRequestListApplicationComponentsPaginateTypeDef](./type_defs.md#listapplicationcomponentsrequestlistapplicationcomponentspaginatetypedef)
 - [ListApplicationComponentsRequestRequestTypeDef](./type_defs.md#listapplicationcomponentsrequestrequesttypedef)
 - [ListApplicationComponentsResponseTypeDef](./type_defs.md#listapplicationcomponentsresponsetypedef)
+- [ListCollectorsRequestListCollectorsPaginateTypeDef](./type_defs.md#listcollectorsrequestlistcollectorspaginatetypedef)
 - [ListCollectorsRequestRequestTypeDef](./type_defs.md#listcollectorsrequestrequesttypedef)
 - [ListCollectorsResponseTypeDef](./type_defs.md#listcollectorsresponsetypedef)
+- [ListImportFileTaskRequestListImportFileTaskPaginateTypeDef](./type_defs.md#listimportfiletaskrequestlistimportfiletaskpaginatetypedef)
 - [ListImportFileTaskRequestRequestTypeDef](./type_defs.md#listimportfiletaskrequestrequesttypedef)
 - [ListImportFileTaskResponseTypeDef](./type_defs.md#listimportfiletaskresponsetypedef)
+- [ListServersRequestListServersPaginateTypeDef](./type_defs.md#listserversrequestlistserverspaginatetypedef)
 - [ListServersRequestRequestTypeDef](./type_defs.md#listserversrequestrequesttypedef)
 - [ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef)
 - [ManagementPreferenceTypeDef](./type_defs.md#managementpreferencetypedef)
@@ -287,3 +236,4 @@ from mypy_boto3_migrationhubstrategy.type_defs import AntipatternSeveritySummary
 - [TransformationToolTypeDef](./type_defs.md#transformationtooltypedef)
 - [UpdateApplicationComponentConfigRequestRequestTypeDef](./type_defs.md#updateapplicationcomponentconfigrequestrequesttypedef)
 - [UpdateServerConfigRequestRequestTypeDef](./type_defs.md#updateserverconfigrequestrequesttypedef)
+

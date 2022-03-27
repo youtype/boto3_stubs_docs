@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-support-module"></a>
-
-# Type annotations for boto3 Support module
+#  Support module
 
 > [Index](../README.md) > Support
 
-Auto-generated documentation for
-[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
-type annotations stubs module
-[mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
+!!! note ""
 
-- [Type annotations for boto3 Support module](#type-annotations-for-boto3-support-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SupportClient](#supportclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+    type annotations stubs module [mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Support`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[support]'
 python -m pip install mypy-boto3-support
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,90 +42,59 @@ python -m pip install mypy-boto3-support
 python -m pip uninstall -y mypy-boto3-support
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="supportclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SupportClient
 
-Type annotations for `boto3.client("support")` as [SupportClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("support")` as [SupportClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_support.client import SupportClient
+
+def get_client() -> SupportClient:
+    return Session().cleint("support")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_attachments_to_set](./client.md#add_attachments_to_set)
-- [add_communication_to_case](./client.md#add_communication_to_case)
-- [can_paginate](./client.md#can_paginate)
-- [create_case](./client.md#create_case)
-- [describe_attachment](./client.md#describe_attachment)
-- [describe_cases](./client.md#describe_cases)
-- [describe_communications](./client.md#describe_communications)
-- [describe_services](./client.md#describe_services)
-- [describe_severity_levels](./client.md#describe_severity_levels)
-- [describe_trusted_advisor_check_refresh_statuses](./client.md#describe_trusted_advisor_check_refresh_statuses)
-- [describe_trusted_advisor_check_result](./client.md#describe_trusted_advisor_check_result)
-- [describe_trusted_advisor_check_summaries](./client.md#describe_trusted_advisor_check_summaries)
-- [describe_trusted_advisor_checks](./client.md#describe_trusted_advisor_checks)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [refresh_trusted_advisor_check](./client.md#refresh_trusted_advisor_check)
-- [resolve_case](./client.md#resolve_case)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SupportClient [exceptions](./client.md#exceptions)
-
-- AttachmentIdNotFound
-- AttachmentLimitExceeded
-- AttachmentSetExpired
-- AttachmentSetIdNotFound
-- AttachmentSetSizeLimitExceeded
-- CaseCreationLimitExceeded
-- CaseIdNotFound
-- ClientError
-- DescribeAttachmentLimitExceeded
-- InternalServerError
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("support").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("support").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_support.paginator import DescribeCasesPaginator, ...
+from mypy_boto3_support.paginator import DescribeCasesPaginator
+
+def get_describe_cases_paginator() -> DescribeCasesPaginator:
+    return Session().client("support").get_paginator("describe_cases"))
 ```
 
 - [DescribeCasesPaginator](./paginators.md#describecasespaginator)
 - [DescribeCommunicationsPaginator](./paginators.md#describecommunicationspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_support.literals import DescribeCasesPaginatorName
 
-```python
-from mypy_boto3_support.literals import DescribeCasesPaginatorName, ...
+def get_value() -> DescribeCasesPaginatorName:
+    return "describe_cases"
 ```
 
 - [DescribeCasesPaginatorName](./literals.md#describecasespaginatorname)
@@ -157,17 +104,20 @@ from mypy_boto3_support.literals import DescribeCasesPaginatorName, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_support.type_defs import AddAttachmentsToSetRequestRequestTypeDef
 
-```python
-from mypy_boto3_support.type_defs import AddAttachmentsToSetRequestRequestTypeDef, ...
+def get_value() -> AddAttachmentsToSetRequestRequestTypeDef:
+    return {
+        "attachments": ...,
+    }
 ```
 
 - [AddAttachmentsToSetRequestRequestTypeDef](./type_defs.md#addattachmentstosetrequestrequesttypedef)
@@ -183,8 +133,10 @@ from mypy_boto3_support.type_defs import AddAttachmentsToSetRequestRequestTypeDe
 - [CreateCaseResponseTypeDef](./type_defs.md#createcaseresponsetypedef)
 - [DescribeAttachmentRequestRequestTypeDef](./type_defs.md#describeattachmentrequestrequesttypedef)
 - [DescribeAttachmentResponseTypeDef](./type_defs.md#describeattachmentresponsetypedef)
+- [DescribeCasesRequestDescribeCasesPaginateTypeDef](./type_defs.md#describecasesrequestdescribecasespaginatetypedef)
 - [DescribeCasesRequestRequestTypeDef](./type_defs.md#describecasesrequestrequesttypedef)
 - [DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef)
+- [DescribeCommunicationsRequestDescribeCommunicationsPaginateTypeDef](./type_defs.md#describecommunicationsrequestdescribecommunicationspaginatetypedef)
 - [DescribeCommunicationsRequestRequestTypeDef](./type_defs.md#describecommunicationsrequestrequesttypedef)
 - [DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef)
 - [DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef)
@@ -216,3 +168,4 @@ from mypy_boto3_support.type_defs import AddAttachmentsToSetRequestRequestTypeDe
 - [TrustedAdvisorCostOptimizingSummaryTypeDef](./type_defs.md#trustedadvisorcostoptimizingsummarytypedef)
 - [TrustedAdvisorResourceDetailTypeDef](./type_defs.md#trustedadvisorresourcedetailtypedef)
 - [TrustedAdvisorResourcesSummaryTypeDef](./type_defs.md#trustedadvisorresourcessummarytypedef)
+

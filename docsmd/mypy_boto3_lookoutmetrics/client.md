@@ -1,58 +1,18 @@
-<a id="lookoutmetricsclient-for-boto3-lookoutmetrics-module"></a>
-
-# LookoutMetricsClient for boto3 LookoutMetrics module
+# LookoutMetricsClient
 
 > [Index](../README.md) > [LookoutMetrics](./README.md) > LookoutMetricsClient
 
-Auto-generated documentation for
-[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
-type annotations stubs module
-[mypy-boto3-lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+!!! note ""
 
-- [LookoutMetricsClient for boto3 LookoutMetrics module](#lookoutmetricsclient-for-boto3-lookoutmetrics-module)
-  - [LookoutMetricsClient](#lookoutmetricsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [activate_anomaly_detector](#activate_anomaly_detector)
-    - [back_test_anomaly_detector](#back_test_anomaly_detector)
-    - [can_paginate](#can_paginate)
-    - [create_alert](#create_alert)
-    - [create_anomaly_detector](#create_anomaly_detector)
-    - [create_metric_set](#create_metric_set)
-    - [deactivate_anomaly_detector](#deactivate_anomaly_detector)
-    - [delete_alert](#delete_alert)
-    - [delete_anomaly_detector](#delete_anomaly_detector)
-    - [describe_alert](#describe_alert)
-    - [describe_anomaly_detection_executions](#describe_anomaly_detection_executions)
-    - [describe_anomaly_detector](#describe_anomaly_detector)
-    - [describe_metric_set](#describe_metric_set)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_anomaly_group](#get_anomaly_group)
-    - [get_feedback](#get_feedback)
-    - [get_sample_data](#get_sample_data)
-    - [list_alerts](#list_alerts)
-    - [list_anomaly_detectors](#list_anomaly_detectors)
-    - [list_anomaly_group_related_metrics](#list_anomaly_group_related_metrics)
-    - [list_anomaly_group_summaries](#list_anomaly_group_summaries)
-    - [list_anomaly_group_time_series](#list_anomaly_group_time_series)
-    - [list_metric_sets](#list_metric_sets)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_feedback](#put_feedback)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_anomaly_detector](#update_anomaly_detector)
-    - [update_metric_set](#update_metric_set)
-
-<a id="lookoutmetricsclient"></a>
+    Auto-generated documentation for [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+    type annotations stubs module [mypy-boto3-lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 ## LookoutMetricsClient
 
-Type annotations for `boto3.client("lookoutmetrics")`
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
 
@@ -60,731 +20,942 @@ def get_lookoutmetrics_client() -> LookoutMetricsClient:
     return Session().client("lookoutmetrics")
 ```
 
-Boto3 documentation:
-[LookoutMetrics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("lookoutmetrics").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("lookoutmetrics")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.TooManyRequestsException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_lookoutmetrics.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-LookoutMetricsClient exceptions.
-
-Type annotations for `boto3.client("lookoutmetrics").exceptions` method.
-
-Boto3 documentation:
-[LookoutMetrics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="activate\_anomaly\_detector"></a>
-
-### activate_anomaly_detector
+### activate\_anomaly\_detector
 
 Activates an anomaly detector.
 
-Type annotations for `boto3.client("lookoutmetrics").activate_anomaly_detector`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").activate_anomaly_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector)
 
-Boto3 documentation:
-[LookoutMetrics.Client.activate_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.activate_anomaly_detector)
+```python title="Method definition"
+def activate_anomaly_detector(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ActivateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#activateanomalydetectorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ActivateAnomalyDetectorRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.activate_anomaly_detector(**kwargs)
+```
 
-<a id="back\_test\_anomaly\_detector"></a>
+1. See [:material-code-braces: ActivateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#activateanomalydetectorrequestrequesttypedef) 
 
-### back_test_anomaly_detector
+### back\_test\_anomaly\_detector
 
 Runs a backtest for anomaly detection for the specified resource.
 
-Type annotations for
-`boto3.client("lookoutmetrics").back_test_anomaly_detector` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").back_test_anomaly_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector)
 
-Boto3 documentation:
-[LookoutMetrics.Client.back_test_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.back_test_anomaly_detector)
+```python title="Method definition"
+def back_test_anomaly_detector(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[BackTestAnomalyDetectorRequestRequestTypeDef](./type_defs.md#backtestanomalydetectorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: BackTestAnomalyDetectorRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.back_test_anomaly_detector(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BackTestAnomalyDetectorRequestRequestTypeDef](./type_defs.md#backtestanomalydetectorrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("lookoutmetrics").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.can_paginate)
 
-Boto3 documentation:
-[LookoutMetrics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_alert"></a>
-
-### create_alert
+### create\_alert
 
 Creates an alert for an anomaly detector.
 
-Type annotations for `boto3.client("lookoutmetrics").create_alert` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").create_alert` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert)
 
-Boto3 documentation:
-[LookoutMetrics.Client.create_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_alert)
+```python title="Method definition"
+def create_alert(
+    self,
+    *,
+    AlertName: str,
+    AlertSensitivityThreshold: int,
+    AnomalyDetectorArn: str,
+    Action: ActionTypeDef,  # (1)
+    AlertDescription: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateAlertResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAlertRequestRequestTypeDef](./type_defs.md#createalertrequestrequesttypedef).
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: CreateAlertResponseTypeDef](./type_defs.md#createalertresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AlertName`: `str` *(required)*
-- `AlertSensitivityThreshold`: `int` *(required)*
-- `AnomalyDetectorArn`: `str` *(required)*
-- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef) *(required)*
-- `AlertDescription`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAlertRequestRequestTypeDef = {  # (1)
+    "AlertName": ...,
+    "AlertSensitivityThreshold": ...,
+    "AnomalyDetectorArn": ...,
+    "Action": ...,
+}
 
-Returns
-[CreateAlertResponseTypeDef](./type_defs.md#createalertresponsetypedef).
+parent.create_alert(**kwargs)
+```
 
-<a id="create\_anomaly\_detector"></a>
+1. See [:material-code-braces: CreateAlertRequestRequestTypeDef](./type_defs.md#createalertrequestrequesttypedef) 
 
-### create_anomaly_detector
+### create\_anomaly\_detector
 
 Creates an anomaly detector.
 
-Type annotations for `boto3.client("lookoutmetrics").create_anomaly_detector`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").create_anomaly_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector)
 
-Boto3 documentation:
-[LookoutMetrics.Client.create_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_anomaly_detector)
+```python title="Method definition"
+def create_anomaly_detector(
+    self,
+    *,
+    AnomalyDetectorName: str,
+    AnomalyDetectorConfig: AnomalyDetectorConfigTypeDef,  # (1)
+    AnomalyDetectorDescription: str = ...,
+    KmsKeyArn: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateAnomalyDetectorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#createanomalydetectorrequestrequesttypedef).
+1. See [:material-code-braces: AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef) 
+2. See [:material-code-braces: CreateAnomalyDetectorResponseTypeDef](./type_defs.md#createanomalydetectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorName`: `str` *(required)*
-- `AnomalyDetectorConfig`:
-  [AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef)
-  *(required)*
-- `AnomalyDetectorDescription`: `str`
-- `KmsKeyArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAnomalyDetectorRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorName": ...,
+    "AnomalyDetectorConfig": ...,
+}
 
-Returns
-[CreateAnomalyDetectorResponseTypeDef](./type_defs.md#createanomalydetectorresponsetypedef).
+parent.create_anomaly_detector(**kwargs)
+```
 
-<a id="create\_metric\_set"></a>
+1. See [:material-code-braces: CreateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#createanomalydetectorrequestrequesttypedef) 
 
-### create_metric_set
+### create\_metric\_set
 
 Creates a dataset.
 
-Type annotations for `boto3.client("lookoutmetrics").create_metric_set` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").create_metric_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set)
 
-Boto3 documentation:
-[LookoutMetrics.Client.create_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.create_metric_set)
+```python title="Method definition"
+def create_metric_set(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    MetricSetName: str,
+    MetricList: Sequence[MetricTypeDef],  # (1)
+    MetricSource: MetricSourceTypeDef,  # (2)
+    MetricSetDescription: str = ...,
+    Offset: int = ...,
+    TimestampColumn: TimestampColumnTypeDef = ...,  # (3)
+    DimensionList: Sequence[str] = ...,
+    MetricSetFrequency: FrequencyType = ...,  # (4)
+    Timezone: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateMetricSetResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateMetricSetRequestRequestTypeDef](./type_defs.md#createmetricsetrequestrequesttypedef).
+1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+2. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
+3. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
+4. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
+5. See [:material-code-braces: CreateMetricSetResponseTypeDef](./type_defs.md#createmetricsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
-- `MetricSetName`: `str` *(required)*
-- `MetricList`: `Sequence`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
-  *(required)*
-- `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
-  *(required)*
-- `MetricSetDescription`: `str`
-- `Offset`: `int`
-- `TimestampColumn`:
-  [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
-- `DimensionList`: `Sequence`\[`str`\]
-- `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
-- `Timezone`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateMetricSetRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+    "MetricSetName": ...,
+    "MetricList": ...,
+    "MetricSource": ...,
+}
 
-Returns
-[CreateMetricSetResponseTypeDef](./type_defs.md#createmetricsetresponsetypedef).
+parent.create_metric_set(**kwargs)
+```
 
-<a id="deactivate\_anomaly\_detector"></a>
+1. See [:material-code-braces: CreateMetricSetRequestRequestTypeDef](./type_defs.md#createmetricsetrequestrequesttypedef) 
 
-### deactivate_anomaly_detector
+### deactivate\_anomaly\_detector
 
 Deactivates an anomaly detector.
 
-Type annotations for
-`boto3.client("lookoutmetrics").deactivate_anomaly_detector` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").deactivate_anomaly_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.deactivate_anomaly_detector)
 
-Boto3 documentation:
-[LookoutMetrics.Client.deactivate_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.deactivate_anomaly_detector)
+```python title="Method definition"
+def deactivate_anomaly_detector(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeactivateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#deactivateanomalydetectorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeactivateAnomalyDetectorRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deactivate_anomaly_detector(**kwargs)
+```
 
-<a id="delete\_alert"></a>
+1. See [:material-code-braces: DeactivateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#deactivateanomalydetectorrequestrequesttypedef) 
 
-### delete_alert
+### delete\_alert
 
 Deletes an alert.
 
-Type annotations for `boto3.client("lookoutmetrics").delete_alert` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").delete_alert` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert)
 
-Boto3 documentation:
-[LookoutMetrics.Client.delete_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_alert)
+```python title="Method definition"
+def delete_alert(
+    self,
+    *,
+    AlertArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAlertRequestRequestTypeDef](./type_defs.md#deletealertrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AlertArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAlertRequestRequestTypeDef = {  # (1)
+    "AlertArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_alert(**kwargs)
+```
 
-<a id="delete\_anomaly\_detector"></a>
+1. See [:material-code-braces: DeleteAlertRequestRequestTypeDef](./type_defs.md#deletealertrequestrequesttypedef) 
 
-### delete_anomaly_detector
+### delete\_anomaly\_detector
 
 Deletes a detector.
 
-Type annotations for `boto3.client("lookoutmetrics").delete_anomaly_detector`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").delete_anomaly_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector)
 
-Boto3 documentation:
-[LookoutMetrics.Client.delete_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.delete_anomaly_detector)
+```python title="Method definition"
+def delete_anomaly_detector(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAnomalyDetectorRequestRequestTypeDef](./type_defs.md#deleteanomalydetectorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAnomalyDetectorRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_anomaly_detector(**kwargs)
+```
 
-<a id="describe\_alert"></a>
+1. See [:material-code-braces: DeleteAnomalyDetectorRequestRequestTypeDef](./type_defs.md#deleteanomalydetectorrequestrequesttypedef) 
 
-### describe_alert
+### describe\_alert
 
 Describes an alert.
 
-Type annotations for `boto3.client("lookoutmetrics").describe_alert` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").describe_alert` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert)
 
-Boto3 documentation:
-[LookoutMetrics.Client.describe_alert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_alert)
+```python title="Method definition"
+def describe_alert(
+    self,
+    *,
+    AlertArn: str,
+) -> DescribeAlertResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAlertRequestRequestTypeDef](./type_defs.md#describealertrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAlertResponseTypeDef](./type_defs.md#describealertresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AlertArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAlertRequestRequestTypeDef = {  # (1)
+    "AlertArn": ...,
+}
 
-Returns
-[DescribeAlertResponseTypeDef](./type_defs.md#describealertresponsetypedef).
+parent.describe_alert(**kwargs)
+```
 
-<a id="describe\_anomaly\_detection\_executions"></a>
+1. See [:material-code-braces: DescribeAlertRequestRequestTypeDef](./type_defs.md#describealertrequestrequesttypedef) 
 
-### describe_anomaly_detection_executions
+### describe\_anomaly\_detection\_executions
 
 Returns information about the status of the specified anomaly detection jobs.
 
-Type annotations for
-`boto3.client("lookoutmetrics").describe_anomaly_detection_executions` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").describe_anomaly_detection_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions)
 
-Boto3 documentation:
-[LookoutMetrics.Client.describe_anomaly_detection_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detection_executions)
+```python title="Method definition"
+def describe_anomaly_detection_executions(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    Timestamp: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeAnomalyDetectionExecutionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAnomalyDetectionExecutionsRequestRequestTypeDef](./type_defs.md#describeanomalydetectionexecutionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAnomalyDetectionExecutionsResponseTypeDef](./type_defs.md#describeanomalydetectionexecutionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
-- `Timestamp`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAnomalyDetectionExecutionsRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
 
-Returns
-[DescribeAnomalyDetectionExecutionsResponseTypeDef](./type_defs.md#describeanomalydetectionexecutionsresponsetypedef).
+parent.describe_anomaly_detection_executions(**kwargs)
+```
 
-<a id="describe\_anomaly\_detector"></a>
+1. See [:material-code-braces: DescribeAnomalyDetectionExecutionsRequestRequestTypeDef](./type_defs.md#describeanomalydetectionexecutionsrequestrequesttypedef) 
 
-### describe_anomaly_detector
+### describe\_anomaly\_detector
 
 Describes a detector.
 
-Type annotations for `boto3.client("lookoutmetrics").describe_anomaly_detector`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").describe_anomaly_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector)
 
-Boto3 documentation:
-[LookoutMetrics.Client.describe_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_anomaly_detector)
+```python title="Method definition"
+def describe_anomaly_detector(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+) -> DescribeAnomalyDetectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAnomalyDetectorRequestRequestTypeDef](./type_defs.md#describeanomalydetectorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAnomalyDetectorResponseTypeDef](./type_defs.md#describeanomalydetectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAnomalyDetectorRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
 
-Returns
-[DescribeAnomalyDetectorResponseTypeDef](./type_defs.md#describeanomalydetectorresponsetypedef).
+parent.describe_anomaly_detector(**kwargs)
+```
 
-<a id="describe\_metric\_set"></a>
+1. See [:material-code-braces: DescribeAnomalyDetectorRequestRequestTypeDef](./type_defs.md#describeanomalydetectorrequestrequesttypedef) 
 
-### describe_metric_set
+### describe\_metric\_set
 
 Describes a dataset.
 
-Type annotations for `boto3.client("lookoutmetrics").describe_metric_set`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").describe_metric_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set)
 
-Boto3 documentation:
-[LookoutMetrics.Client.describe_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.describe_metric_set)
+```python title="Method definition"
+def describe_metric_set(
+    self,
+    *,
+    MetricSetArn: str,
+) -> DescribeMetricSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMetricSetRequestRequestTypeDef](./type_defs.md#describemetricsetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMetricSetResponseTypeDef](./type_defs.md#describemetricsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MetricSetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMetricSetRequestRequestTypeDef = {  # (1)
+    "MetricSetArn": ...,
+}
 
-Returns
-[DescribeMetricSetResponseTypeDef](./type_defs.md#describemetricsetresponsetypedef).
+parent.describe_metric_set(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeMetricSetRequestRequestTypeDef](./type_defs.md#describemetricsetrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("lookoutmetrics").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.generate_presigned_url)
 
-Boto3 documentation:
-[LookoutMetrics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_anomaly\_group"></a>
-
-### get_anomaly_group
+### get\_anomaly\_group
 
 Returns details about a group of anomalous metrics.
 
-Type annotations for `boto3.client("lookoutmetrics").get_anomaly_group` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").get_anomaly_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group)
 
-Boto3 documentation:
-[LookoutMetrics.Client.get_anomaly_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_anomaly_group)
+```python title="Method definition"
+def get_anomaly_group(
+    self,
+    *,
+    AnomalyGroupId: str,
+    AnomalyDetectorArn: str,
+) -> GetAnomalyGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAnomalyGroupRequestRequestTypeDef](./type_defs.md#getanomalygrouprequestrequesttypedef).
+1. See [:material-code-braces: GetAnomalyGroupResponseTypeDef](./type_defs.md#getanomalygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyGroupId`: `str` *(required)*
-- `AnomalyDetectorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAnomalyGroupRequestRequestTypeDef = {  # (1)
+    "AnomalyGroupId": ...,
+    "AnomalyDetectorArn": ...,
+}
 
-Returns
-[GetAnomalyGroupResponseTypeDef](./type_defs.md#getanomalygroupresponsetypedef).
+parent.get_anomaly_group(**kwargs)
+```
 
-<a id="get\_feedback"></a>
+1. See [:material-code-braces: GetAnomalyGroupRequestRequestTypeDef](./type_defs.md#getanomalygrouprequestrequesttypedef) 
 
-### get_feedback
+### get\_feedback
 
 Get feedback for an anomaly group.
 
-Type annotations for `boto3.client("lookoutmetrics").get_feedback` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").get_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback)
 
-Boto3 documentation:
-[LookoutMetrics.Client.get_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_feedback)
+```python title="Method definition"
+def get_feedback(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    AnomalyGroupTimeSeriesFeedback: AnomalyGroupTimeSeriesTypeDef,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetFeedbackResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetFeedbackRequestRequestTypeDef](./type_defs.md#getfeedbackrequestrequesttypedef).
+1. See [:material-code-braces: AnomalyGroupTimeSeriesTypeDef](./type_defs.md#anomalygrouptimeseriestypedef) 
+2. See [:material-code-braces: GetFeedbackResponseTypeDef](./type_defs.md#getfeedbackresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
-- `AnomalyGroupTimeSeriesFeedback`:
-  [AnomalyGroupTimeSeriesTypeDef](./type_defs.md#anomalygrouptimeseriestypedef)
-  *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetFeedbackRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+    "AnomalyGroupTimeSeriesFeedback": ...,
+}
 
-Returns
-[GetFeedbackResponseTypeDef](./type_defs.md#getfeedbackresponsetypedef).
+parent.get_feedback(**kwargs)
+```
 
-<a id="get\_sample\_data"></a>
+1. See [:material-code-braces: GetFeedbackRequestRequestTypeDef](./type_defs.md#getfeedbackrequestrequesttypedef) 
 
-### get_sample_data
+### get\_sample\_data
 
 Returns a selection of sample records from an Amazon S3 datasource.
 
-Type annotations for `boto3.client("lookoutmetrics").get_sample_data` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").get_sample_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data)
 
-Boto3 documentation:
-[LookoutMetrics.Client.get_sample_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.get_sample_data)
+```python title="Method definition"
+def get_sample_data(
+    self,
+    *,
+    S3SourceConfig: SampleDataS3SourceConfigTypeDef = ...,  # (1)
+) -> GetSampleDataResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetSampleDataRequestRequestTypeDef](./type_defs.md#getsampledatarequestrequesttypedef).
+1. See [:material-code-braces: SampleDataS3SourceConfigTypeDef](./type_defs.md#sampledatas3sourceconfigtypedef) 
+2. See [:material-code-braces: GetSampleDataResponseTypeDef](./type_defs.md#getsampledataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `S3SourceConfig`:
-  [SampleDataS3SourceConfigTypeDef](./type_defs.md#sampledatas3sourceconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: GetSampleDataRequestRequestTypeDef = {  # (1)
+    "S3SourceConfig": ...,
+}
 
-Returns
-[GetSampleDataResponseTypeDef](./type_defs.md#getsampledataresponsetypedef).
+parent.get_sample_data(**kwargs)
+```
 
-<a id="list\_alerts"></a>
+1. See [:material-code-braces: GetSampleDataRequestRequestTypeDef](./type_defs.md#getsampledatarequestrequesttypedef) 
 
-### list_alerts
+### list\_alerts
 
 Lists the alerts attached to a detector.
 
-Type annotations for `boto3.client("lookoutmetrics").list_alerts` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").list_alerts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts)
 
-Boto3 documentation:
-[LookoutMetrics.Client.list_alerts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_alerts)
+```python title="Method definition"
+def list_alerts(
+    self,
+    *,
+    AnomalyDetectorArn: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAlertsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAlertsRequestRequestTypeDef](./type_defs.md#listalertsrequestrequesttypedef).
+1. See [:material-code-braces: ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAlertsRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
 
-Returns [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef).
+parent.list_alerts(**kwargs)
+```
 
-<a id="list\_anomaly\_detectors"></a>
+1. See [:material-code-braces: ListAlertsRequestRequestTypeDef](./type_defs.md#listalertsrequestrequesttypedef) 
 
-### list_anomaly_detectors
+### list\_anomaly\_detectors
 
 Lists the detectors in the current AWS Region.
 
-Type annotations for `boto3.client("lookoutmetrics").list_anomaly_detectors`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").list_anomaly_detectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors)
 
-Boto3 documentation:
-[LookoutMetrics.Client.list_anomaly_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_detectors)
+```python title="Method definition"
+def list_anomaly_detectors(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAnomalyDetectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAnomalyDetectorsRequestRequestTypeDef](./type_defs.md#listanomalydetectorsrequestrequesttypedef).
+1. See [:material-code-braces: ListAnomalyDetectorsResponseTypeDef](./type_defs.md#listanomalydetectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAnomalyDetectorsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListAnomalyDetectorsResponseTypeDef](./type_defs.md#listanomalydetectorsresponsetypedef).
+parent.list_anomaly_detectors(**kwargs)
+```
 
-<a id="list\_anomaly\_group\_related\_metrics"></a>
+1. See [:material-code-braces: ListAnomalyDetectorsRequestRequestTypeDef](./type_defs.md#listanomalydetectorsrequestrequesttypedef) 
 
-### list_anomaly_group_related_metrics
+### list\_anomaly\_group\_related\_metrics
 
 Returns a list of measures that are potential causes or effects of an anomaly
 group.
 
-Type annotations for
-`boto3.client("lookoutmetrics").list_anomaly_group_related_metrics` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").list_anomaly_group_related_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_related_metrics)
 
-Boto3 documentation:
-[LookoutMetrics.Client.list_anomaly_group_related_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_related_metrics)
+```python title="Method definition"
+def list_anomaly_group_related_metrics(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    AnomalyGroupId: str,
+    RelationshipTypeFilter: RelationshipTypeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAnomalyGroupRelatedMetricsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAnomalyGroupRelatedMetricsRequestRequestTypeDef](./type_defs.md#listanomalygrouprelatedmetricsrequestrequesttypedef).
+1. See [:material-code-brackets: RelationshipTypeType](./literals.md#relationshiptypetype) 
+2. See [:material-code-braces: ListAnomalyGroupRelatedMetricsResponseTypeDef](./type_defs.md#listanomalygrouprelatedmetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
-- `AnomalyGroupId`: `str` *(required)*
-- `RelationshipTypeFilter`:
-  [RelationshipTypeType](./literals.md#relationshiptypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAnomalyGroupRelatedMetricsRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+    "AnomalyGroupId": ...,
+}
 
-Returns
-[ListAnomalyGroupRelatedMetricsResponseTypeDef](./type_defs.md#listanomalygrouprelatedmetricsresponsetypedef).
+parent.list_anomaly_group_related_metrics(**kwargs)
+```
 
-<a id="list\_anomaly\_group\_summaries"></a>
+1. See [:material-code-braces: ListAnomalyGroupRelatedMetricsRequestRequestTypeDef](./type_defs.md#listanomalygrouprelatedmetricsrequestrequesttypedef) 
 
-### list_anomaly_group_summaries
+### list\_anomaly\_group\_summaries
 
 Returns a list of anomaly groups.
 
-Type annotations for
-`boto3.client("lookoutmetrics").list_anomaly_group_summaries` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").list_anomaly_group_summaries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries)
 
-Boto3 documentation:
-[LookoutMetrics.Client.list_anomaly_group_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_summaries)
+```python title="Method definition"
+def list_anomaly_group_summaries(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    SensitivityThreshold: int,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAnomalyGroupSummariesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAnomalyGroupSummariesRequestRequestTypeDef](./type_defs.md#listanomalygroupsummariesrequestrequesttypedef).
+1. See [:material-code-braces: ListAnomalyGroupSummariesResponseTypeDef](./type_defs.md#listanomalygroupsummariesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
-- `SensitivityThreshold`: `int` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAnomalyGroupSummariesRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+    "SensitivityThreshold": ...,
+}
 
-Returns
-[ListAnomalyGroupSummariesResponseTypeDef](./type_defs.md#listanomalygroupsummariesresponsetypedef).
+parent.list_anomaly_group_summaries(**kwargs)
+```
 
-<a id="list\_anomaly\_group\_time\_series"></a>
+1. See [:material-code-braces: ListAnomalyGroupSummariesRequestRequestTypeDef](./type_defs.md#listanomalygroupsummariesrequestrequesttypedef) 
 
-### list_anomaly_group_time_series
+### list\_anomaly\_group\_time\_series
 
 Gets a list of anomalous metrics for a measure in an anomaly group.
 
-Type annotations for
-`boto3.client("lookoutmetrics").list_anomaly_group_time_series` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").list_anomaly_group_time_series` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series)
 
-Boto3 documentation:
-[LookoutMetrics.Client.list_anomaly_group_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_anomaly_group_time_series)
+```python title="Method definition"
+def list_anomaly_group_time_series(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    AnomalyGroupId: str,
+    MetricName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAnomalyGroupTimeSeriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAnomalyGroupTimeSeriesRequestRequestTypeDef](./type_defs.md#listanomalygrouptimeseriesrequestrequesttypedef).
+1. See [:material-code-braces: ListAnomalyGroupTimeSeriesResponseTypeDef](./type_defs.md#listanomalygrouptimeseriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
-- `AnomalyGroupId`: `str` *(required)*
-- `MetricName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAnomalyGroupTimeSeriesRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+    "AnomalyGroupId": ...,
+    "MetricName": ...,
+}
 
-Returns
-[ListAnomalyGroupTimeSeriesResponseTypeDef](./type_defs.md#listanomalygrouptimeseriesresponsetypedef).
+parent.list_anomaly_group_time_series(**kwargs)
+```
 
-<a id="list\_metric\_sets"></a>
+1. See [:material-code-braces: ListAnomalyGroupTimeSeriesRequestRequestTypeDef](./type_defs.md#listanomalygrouptimeseriesrequestrequesttypedef) 
 
-### list_metric_sets
+### list\_metric\_sets
 
 Lists the datasets in the current AWS Region.
 
-Type annotations for `boto3.client("lookoutmetrics").list_metric_sets` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").list_metric_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets)
 
-Boto3 documentation:
-[LookoutMetrics.Client.list_metric_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_metric_sets)
+```python title="Method definition"
+def list_metric_sets(
+    self,
+    *,
+    AnomalyDetectorArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListMetricSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMetricSetsRequestRequestTypeDef](./type_defs.md#listmetricsetsrequestrequesttypedef).
+1. See [:material-code-braces: ListMetricSetsResponseTypeDef](./type_defs.md#listmetricsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMetricSetsRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
 
-Returns
-[ListMetricSetsResponseTypeDef](./type_defs.md#listmetricsetsresponsetypedef).
+parent.list_metric_sets(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListMetricSetsRequestRequestTypeDef](./type_defs.md#listmetricsetsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Gets a list of
-\[tags\](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
-tags.html)\_ for a detector, dataset, or alert.
+[tags](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
+tags.html)_ for a detector, dataset, or alert.
 
-Type annotations for `boto3.client("lookoutmetrics").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[LookoutMetrics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_feedback"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_feedback
+### put\_feedback
 
 Add feedback for an anomalous metric.
 
-Type annotations for `boto3.client("lookoutmetrics").put_feedback` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").put_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback)
 
-Boto3 documentation:
-[LookoutMetrics.Client.put_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.put_feedback)
+```python title="Method definition"
+def put_feedback(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    AnomalyGroupTimeSeriesFeedback: AnomalyGroupTimeSeriesFeedbackTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutFeedbackRequestRequestTypeDef](./type_defs.md#putfeedbackrequestrequesttypedef).
+1. See [:material-code-braces: AnomalyGroupTimeSeriesFeedbackTypeDef](./type_defs.md#anomalygrouptimeseriesfeedbacktypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
-- `AnomalyGroupTimeSeriesFeedback`:
-  [AnomalyGroupTimeSeriesFeedbackTypeDef](./type_defs.md#anomalygrouptimeseriesfeedbacktypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutFeedbackRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+    "AnomalyGroupTimeSeriesFeedback": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_feedback(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutFeedbackRequestRequestTypeDef](./type_defs.md#putfeedbackrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
-Adds \[tags\](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
-tags.html)\_ to a detector, dataset, or alert.
+Adds [tags](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
+tags.html)_ to a detector, dataset, or alert.
 
-Type annotations for `boto3.client("lookoutmetrics").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource)
 
-Boto3 documentation:
-[LookoutMetrics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
-Removes
-\[tags\](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
-tags.html)\_ from a detector, dataset, or alert.
+Removes [tags](https://docs.aws.amazon.com/lookoutmetrics/latest/dev/detectors-
+tags.html)_ from a detector, dataset, or alert.
 
-Type annotations for `boto3.client("lookoutmetrics").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource)
 
-Boto3 documentation:
-[LookoutMetrics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_anomaly\_detector"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_anomaly_detector
+### update\_anomaly\_detector
 
 Updates a detector.
 
-Type annotations for `boto3.client("lookoutmetrics").update_anomaly_detector`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").update_anomaly_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector)
 
-Boto3 documentation:
-[LookoutMetrics.Client.update_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_anomaly_detector)
+```python title="Method definition"
+def update_anomaly_detector(
+    self,
+    *,
+    AnomalyDetectorArn: str,
+    KmsKeyArn: str = ...,
+    AnomalyDetectorDescription: str = ...,
+    AnomalyDetectorConfig: AnomalyDetectorConfigTypeDef = ...,  # (1)
+) -> UpdateAnomalyDetectorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#updateanomalydetectorrequestrequesttypedef).
+1. See [:material-code-braces: AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef) 
+2. See [:material-code-braces: UpdateAnomalyDetectorResponseTypeDef](./type_defs.md#updateanomalydetectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AnomalyDetectorArn`: `str` *(required)*
-- `KmsKeyArn`: `str`
-- `AnomalyDetectorDescription`: `str`
-- `AnomalyDetectorConfig`:
-  [AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateAnomalyDetectorRequestRequestTypeDef = {  # (1)
+    "AnomalyDetectorArn": ...,
+}
 
-Returns
-[UpdateAnomalyDetectorResponseTypeDef](./type_defs.md#updateanomalydetectorresponsetypedef).
+parent.update_anomaly_detector(**kwargs)
+```
 
-<a id="update\_metric\_set"></a>
+1. See [:material-code-braces: UpdateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#updateanomalydetectorrequestrequesttypedef) 
 
-### update_metric_set
+### update\_metric\_set
 
 Updates a dataset.
 
-Type annotations for `boto3.client("lookoutmetrics").update_metric_set` method.
+Type annotations and code completion for `#!python boto3.client("lookoutmetrics").update_metric_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set)
 
-Boto3 documentation:
-[LookoutMetrics.Client.update_metric_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.update_metric_set)
+```python title="Method definition"
+def update_metric_set(
+    self,
+    *,
+    MetricSetArn: str,
+    MetricSetDescription: str = ...,
+    MetricList: Sequence[MetricTypeDef] = ...,  # (1)
+    Offset: int = ...,
+    TimestampColumn: TimestampColumnTypeDef = ...,  # (2)
+    DimensionList: Sequence[str] = ...,
+    MetricSetFrequency: FrequencyType = ...,  # (3)
+    MetricSource: MetricSourceTypeDef = ...,  # (4)
+) -> UpdateMetricSetResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMetricSetRequestRequestTypeDef](./type_defs.md#updatemetricsetrequestrequesttypedef).
+1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+2. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
+3. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
+4. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
+5. See [:material-code-braces: UpdateMetricSetResponseTypeDef](./type_defs.md#updatemetricsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MetricSetArn`: `str` *(required)*
-- `MetricSetDescription`: `str`
-- `MetricList`: `Sequence`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
-- `Offset`: `int`
-- `TimestampColumn`:
-  [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
-- `DimensionList`: `Sequence`\[`str`\]
-- `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
-- `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateMetricSetRequestRequestTypeDef = {  # (1)
+    "MetricSetArn": ...,
+}
 
-Returns
-[UpdateMetricSetResponseTypeDef](./type_defs.md#updatemetricsetresponsetypedef).
+parent.update_metric_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateMetricSetRequestRequestTypeDef](./type_defs.md#updatemetricsetrequestrequesttypedef) 
+
+
+
+

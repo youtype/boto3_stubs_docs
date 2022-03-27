@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-wafv2-module"></a>
-
-# Type annotations for boto3 WAFV2 module
+#  WAFV2 module
 
 > [Index](../README.md) > WAFV2
 
-Auto-generated documentation for
-[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
-type annotations stubs module
-[mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+!!! note ""
 
-- [Type annotations for boto3 WAFV2 module](#type-annotations-for-boto3-wafv2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [WAFV2Client](#wafv2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+    type annotations stubs module [mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `WAFV2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[wafv2]'
 python -m pip install mypy-boto3-wafv2
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,115 +42,41 @@ python -m pip install mypy-boto3-wafv2
 python -m pip uninstall -y mypy-boto3-wafv2
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="wafv2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## WAFV2Client
 
-Type annotations for `boto3.client("wafv2")` as [WAFV2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("wafv2")` as [WAFV2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_wafv2.client import WAFV2Client
+
+def get_client() -> WAFV2Client:
+    return Session().cleint("wafv2")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [associate_web_acl](./client.md#associate_web_acl)
-- [can_paginate](./client.md#can_paginate)
-- [check_capacity](./client.md#check_capacity)
-- [create_ip_set](./client.md#create_ip_set)
-- [create_regex_pattern_set](./client.md#create_regex_pattern_set)
-- [create_rule_group](./client.md#create_rule_group)
-- [create_web_acl](./client.md#create_web_acl)
-- [delete_firewall_manager_rule_groups](./client.md#delete_firewall_manager_rule_groups)
-- [delete_ip_set](./client.md#delete_ip_set)
-- [delete_logging_configuration](./client.md#delete_logging_configuration)
-- [delete_permission_policy](./client.md#delete_permission_policy)
-- [delete_regex_pattern_set](./client.md#delete_regex_pattern_set)
-- [delete_rule_group](./client.md#delete_rule_group)
-- [delete_web_acl](./client.md#delete_web_acl)
-- [describe_managed_rule_group](./client.md#describe_managed_rule_group)
-- [disassociate_web_acl](./client.md#disassociate_web_acl)
-- [exceptions](./client.md#exceptions)
-- [generate_mobile_sdk_release_url](./client.md#generate_mobile_sdk_release_url)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_ip_set](./client.md#get_ip_set)
-- [get_logging_configuration](./client.md#get_logging_configuration)
-- [get_managed_rule_set](./client.md#get_managed_rule_set)
-- [get_mobile_sdk_release](./client.md#get_mobile_sdk_release)
-- [get_permission_policy](./client.md#get_permission_policy)
-- [get_rate_based_statement_managed_keys](./client.md#get_rate_based_statement_managed_keys)
-- [get_regex_pattern_set](./client.md#get_regex_pattern_set)
-- [get_rule_group](./client.md#get_rule_group)
-- [get_sampled_requests](./client.md#get_sampled_requests)
-- [get_web_acl](./client.md#get_web_acl)
-- [get_web_acl_for_resource](./client.md#get_web_acl_for_resource)
-- [list_available_managed_rule_group_versions](./client.md#list_available_managed_rule_group_versions)
-- [list_available_managed_rule_groups](./client.md#list_available_managed_rule_groups)
-- [list_ip_sets](./client.md#list_ip_sets)
-- [list_logging_configurations](./client.md#list_logging_configurations)
-- [list_managed_rule_sets](./client.md#list_managed_rule_sets)
-- [list_mobile_sdk_releases](./client.md#list_mobile_sdk_releases)
-- [list_regex_pattern_sets](./client.md#list_regex_pattern_sets)
-- [list_resources_for_web_acl](./client.md#list_resources_for_web_acl)
-- [list_rule_groups](./client.md#list_rule_groups)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_web_acls](./client.md#list_web_acls)
-- [put_logging_configuration](./client.md#put_logging_configuration)
-- [put_managed_rule_set_versions](./client.md#put_managed_rule_set_versions)
-- [put_permission_policy](./client.md#put_permission_policy)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_ip_set](./client.md#update_ip_set)
-- [update_managed_rule_set_version_expiry_date](./client.md#update_managed_rule_set_version_expiry_date)
-- [update_regex_pattern_set](./client.md#update_regex_pattern_set)
-- [update_rule_group](./client.md#update_rule_group)
-- [update_web_acl](./client.md#update_web_acl)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-WAFV2Client [exceptions](./client.md#exceptions)
 
-- ClientError
-- WAFAssociatedItemException
-- WAFDuplicateItemException
-- WAFExpiredManagedRuleGroupVersionException
-- WAFInternalErrorException
-- WAFInvalidOperationException
-- WAFInvalidParameterException
-- WAFInvalidPermissionPolicyException
-- WAFInvalidResourceException
-- WAFLimitsExceededException
-- WAFLogDestinationPermissionIssueException
-- WAFNonexistentItemException
-- WAFOptimisticLockException
-- WAFServiceLinkedRoleErrorException
-- WAFSubscriptionNotFoundException
-- WAFTagOperationException
-- WAFTagOperationInternalErrorException
-- WAFUnavailableEntityException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_wafv2.literals import ActionValueType
 
-```python
-from mypy_boto3_wafv2.literals import ActionValueType, ...
+def get_value() -> ActionValueType:
+    return "ALLOW"
 ```
 
 - [ActionValueType](./literals.md#actionvaluetype)
@@ -198,17 +103,20 @@ from mypy_boto3_wafv2.literals import ActionValueType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_wafv2.type_defs import ActionConditionTypeDef
 
-```python
-from mypy_boto3_wafv2.type_defs import ActionConditionTypeDef, ...
+def get_value() -> ActionConditionTypeDef:
+    return {
+        "Action": ...,
+    }
 ```
 
 - [ActionConditionTypeDef](./type_defs.md#actionconditiontypedef)
@@ -376,3 +284,4 @@ from mypy_boto3_wafv2.type_defs import ActionConditionTypeDef, ...
 - [WebACLSummaryTypeDef](./type_defs.md#webaclsummarytypedef)
 - [WebACLTypeDef](./type_defs.md#webacltypedef)
 - [XssMatchStatementTypeDef](./type_defs.md#xssmatchstatementtypedef)
+

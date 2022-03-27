@@ -1,6367 +1,6785 @@
-<a id="literals-for-boto3-mediaconvert-module"></a>
-
-# Literals for boto3 MediaConvert module
+# Literals
 
 > [Index](../README.md) > [MediaConvert](./README.md) > Literals
 
-Auto-generated documentation for
-[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
-type annotations stubs module
-[mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+!!! note ""
 
-- [Literals for boto3 MediaConvert module](#literals-for-boto3-mediaconvert-module)
-  - [AacAudioDescriptionBroadcasterMixType](#aacaudiodescriptionbroadcastermixtype)
-  - [AacCodecProfileType](#aaccodecprofiletype)
-  - [AacCodingModeType](#aaccodingmodetype)
-  - [AacRateControlModeType](#aacratecontrolmodetype)
-  - [AacRawFormatType](#aacrawformattype)
-  - [AacSpecificationType](#aacspecificationtype)
-  - [AacVbrQualityType](#aacvbrqualitytype)
-  - [Ac3BitstreamModeType](#ac3bitstreammodetype)
-  - [Ac3CodingModeType](#ac3codingmodetype)
-  - [Ac3DynamicRangeCompressionLineType](#ac3dynamicrangecompressionlinetype)
-  - [Ac3DynamicRangeCompressionProfileType](#ac3dynamicrangecompressionprofiletype)
-  - [Ac3DynamicRangeCompressionRfType](#ac3dynamicrangecompressionrftype)
-  - [Ac3LfeFilterType](#ac3lfefiltertype)
-  - [Ac3MetadataControlType](#ac3metadatacontroltype)
-  - [AccelerationModeType](#accelerationmodetype)
-  - [AccelerationStatusType](#accelerationstatustype)
-  - [AfdSignalingType](#afdsignalingtype)
-  - [AlphaBehaviorType](#alphabehaviortype)
-  - [AncillaryConvert608To708Type](#ancillaryconvert608to708type)
-  - [AncillaryTerminateCaptionsType](#ancillaryterminatecaptionstype)
-  - [AntiAliasType](#antialiastype)
-  - [AudioChannelTagType](#audiochanneltagtype)
-  - [AudioCodecType](#audiocodectype)
-  - [AudioDefaultSelectionType](#audiodefaultselectiontype)
-  - [AudioLanguageCodeControlType](#audiolanguagecodecontroltype)
-  - [AudioNormalizationAlgorithmControlType](#audionormalizationalgorithmcontroltype)
-  - [AudioNormalizationAlgorithmType](#audionormalizationalgorithmtype)
-  - [AudioNormalizationLoudnessLoggingType](#audionormalizationloudnessloggingtype)
-  - [AudioNormalizationPeakCalculationType](#audionormalizationpeakcalculationtype)
-  - [AudioSelectorTypeType](#audioselectortypetype)
-  - [AudioTypeControlType](#audiotypecontroltype)
-  - [Av1AdaptiveQuantizationType](#av1adaptivequantizationtype)
-  - [Av1BitDepthType](#av1bitdepthtype)
-  - [Av1FramerateControlType](#av1frameratecontroltype)
-  - [Av1FramerateConversionAlgorithmType](#av1framerateconversionalgorithmtype)
-  - [Av1RateControlModeType](#av1ratecontrolmodetype)
-  - [Av1SpatialAdaptiveQuantizationType](#av1spatialadaptivequantizationtype)
-  - [AvcIntraClassType](#avcintraclasstype)
-  - [AvcIntraFramerateControlType](#avcintraframeratecontroltype)
-  - [AvcIntraFramerateConversionAlgorithmType](#avcintraframerateconversionalgorithmtype)
-  - [AvcIntraInterlaceModeType](#avcintrainterlacemodetype)
-  - [AvcIntraScanTypeConversionModeType](#avcintrascantypeconversionmodetype)
-  - [AvcIntraSlowPalType](#avcintraslowpaltype)
-  - [AvcIntraTelecineType](#avcintratelecinetype)
-  - [AvcIntraUhdQualityTuningLevelType](#avcintrauhdqualitytuningleveltype)
-  - [BillingTagsSourceType](#billingtagssourcetype)
-  - [BurnInSubtitleStylePassthroughType](#burninsubtitlestylepassthroughtype)
-  - [BurninSubtitleAlignmentType](#burninsubtitlealignmenttype)
-  - [BurninSubtitleApplyFontColorType](#burninsubtitleapplyfontcolortype)
-  - [BurninSubtitleBackgroundColorType](#burninsubtitlebackgroundcolortype)
-  - [BurninSubtitleFallbackFontType](#burninsubtitlefallbackfonttype)
-  - [BurninSubtitleFontColorType](#burninsubtitlefontcolortype)
-  - [BurninSubtitleOutlineColorType](#burninsubtitleoutlinecolortype)
-  - [BurninSubtitleShadowColorType](#burninsubtitleshadowcolortype)
-  - [BurninSubtitleTeletextSpacingType](#burninsubtitleteletextspacingtype)
-  - [CaptionDestinationTypeType](#captiondestinationtypetype)
-  - [CaptionSourceTypeType](#captionsourcetypetype)
-  - [CmafClientCacheType](#cmafclientcachetype)
-  - [CmafCodecSpecificationType](#cmafcodecspecificationtype)
-  - [CmafEncryptionTypeType](#cmafencryptiontypetype)
-  - [CmafImageBasedTrickPlayType](#cmafimagebasedtrickplaytype)
-  - [CmafInitializationVectorInManifestType](#cmafinitializationvectorinmanifesttype)
-  - [CmafIntervalCadenceType](#cmafintervalcadencetype)
-  - [CmafKeyProviderTypeType](#cmafkeyprovidertypetype)
-  - [CmafManifestCompressionType](#cmafmanifestcompressiontype)
-  - [CmafManifestDurationFormatType](#cmafmanifestdurationformattype)
-  - [CmafMpdProfileType](#cmafmpdprofiletype)
-  - [CmafPtsOffsetHandlingForBFramesType](#cmafptsoffsethandlingforbframestype)
-  - [CmafSegmentControlType](#cmafsegmentcontroltype)
-  - [CmafSegmentLengthControlType](#cmafsegmentlengthcontroltype)
-  - [CmafStreamInfResolutionType](#cmafstreaminfresolutiontype)
-  - [CmafTargetDurationCompatibilityModeType](#cmaftargetdurationcompatibilitymodetype)
-  - [CmafWriteDASHManifestType](#cmafwritedashmanifesttype)
-  - [CmafWriteHLSManifestType](#cmafwritehlsmanifesttype)
-  - [CmafWriteSegmentTimelineInRepresentationType](#cmafwritesegmenttimelineinrepresentationtype)
-  - [CmfcAudioDurationType](#cmfcaudiodurationtype)
-  - [CmfcAudioTrackTypeType](#cmfcaudiotracktypetype)
-  - [CmfcDescriptiveVideoServiceFlagType](#cmfcdescriptivevideoserviceflagtype)
-  - [CmfcIFrameOnlyManifestType](#cmfciframeonlymanifesttype)
-  - [CmfcScte35EsamType](#cmfcscte35esamtype)
-  - [CmfcScte35SourceType](#cmfcscte35sourcetype)
-  - [CmfcTimedMetadataType](#cmfctimedmetadatatype)
-  - [ColorMetadataType](#colormetadatatype)
-  - [ColorSpaceConversionType](#colorspaceconversiontype)
-  - [ColorSpaceType](#colorspacetype)
-  - [ColorSpaceUsageType](#colorspaceusagetype)
-  - [CommitmentType](#commitmenttype)
-  - [ContainerTypeType](#containertypetype)
-  - [CopyProtectionActionType](#copyprotectionactiontype)
-  - [DashIsoGroupAudioChannelConfigSchemeIdUriType](#dashisogroupaudiochannelconfigschemeiduritype)
-  - [DashIsoHbbtvComplianceType](#dashisohbbtvcompliancetype)
-  - [DashIsoImageBasedTrickPlayType](#dashisoimagebasedtrickplaytype)
-  - [DashIsoIntervalCadenceType](#dashisointervalcadencetype)
-  - [DashIsoMpdProfileType](#dashisompdprofiletype)
-  - [DashIsoPlaybackDeviceCompatibilityType](#dashisoplaybackdevicecompatibilitytype)
-  - [DashIsoPtsOffsetHandlingForBFramesType](#dashisoptsoffsethandlingforbframestype)
-  - [DashIsoSegmentControlType](#dashisosegmentcontroltype)
-  - [DashIsoSegmentLengthControlType](#dashisosegmentlengthcontroltype)
-  - [DashIsoWriteSegmentTimelineInRepresentationType](#dashisowritesegmenttimelineinrepresentationtype)
-  - [DecryptionModeType](#decryptionmodetype)
-  - [DeinterlaceAlgorithmType](#deinterlacealgorithmtype)
-  - [DeinterlacerControlType](#deinterlacercontroltype)
-  - [DeinterlacerModeType](#deinterlacermodetype)
-  - [DescribeEndpointsModeType](#describeendpointsmodetype)
-  - [DescribeEndpointsPaginatorName](#describeendpointspaginatorname)
-  - [DolbyVisionLevel6ModeType](#dolbyvisionlevel6modetype)
-  - [DolbyVisionProfileType](#dolbyvisionprofiletype)
-  - [DropFrameTimecodeType](#dropframetimecodetype)
-  - [DvbSubSubtitleFallbackFontType](#dvbsubsubtitlefallbackfonttype)
-  - [DvbSubtitleAlignmentType](#dvbsubtitlealignmenttype)
-  - [DvbSubtitleApplyFontColorType](#dvbsubtitleapplyfontcolortype)
-  - [DvbSubtitleBackgroundColorType](#dvbsubtitlebackgroundcolortype)
-  - [DvbSubtitleFontColorType](#dvbsubtitlefontcolortype)
-  - [DvbSubtitleOutlineColorType](#dvbsubtitleoutlinecolortype)
-  - [DvbSubtitleShadowColorType](#dvbsubtitleshadowcolortype)
-  - [DvbSubtitleStylePassthroughType](#dvbsubtitlestylepassthroughtype)
-  - [DvbSubtitleTeletextSpacingType](#dvbsubtitleteletextspacingtype)
-  - [DvbSubtitlingTypeType](#dvbsubtitlingtypetype)
-  - [DvbddsHandlingType](#dvbddshandlingtype)
-  - [Eac3AtmosBitstreamModeType](#eac3atmosbitstreammodetype)
-  - [Eac3AtmosCodingModeType](#eac3atmoscodingmodetype)
-  - [Eac3AtmosDialogueIntelligenceType](#eac3atmosdialogueintelligencetype)
-  - [Eac3AtmosDownmixControlType](#eac3atmosdownmixcontroltype)
-  - [Eac3AtmosDynamicRangeCompressionLineType](#eac3atmosdynamicrangecompressionlinetype)
-  - [Eac3AtmosDynamicRangeCompressionRfType](#eac3atmosdynamicrangecompressionrftype)
-  - [Eac3AtmosDynamicRangeControlType](#eac3atmosdynamicrangecontroltype)
-  - [Eac3AtmosMeteringModeType](#eac3atmosmeteringmodetype)
-  - [Eac3AtmosStereoDownmixType](#eac3atmosstereodownmixtype)
-  - [Eac3AtmosSurroundExModeType](#eac3atmossurroundexmodetype)
-  - [Eac3AttenuationControlType](#eac3attenuationcontroltype)
-  - [Eac3BitstreamModeType](#eac3bitstreammodetype)
-  - [Eac3CodingModeType](#eac3codingmodetype)
-  - [Eac3DcFilterType](#eac3dcfiltertype)
-  - [Eac3DynamicRangeCompressionLineType](#eac3dynamicrangecompressionlinetype)
-  - [Eac3DynamicRangeCompressionRfType](#eac3dynamicrangecompressionrftype)
-  - [Eac3LfeControlType](#eac3lfecontroltype)
-  - [Eac3LfeFilterType](#eac3lfefiltertype)
-  - [Eac3MetadataControlType](#eac3metadatacontroltype)
-  - [Eac3PassthroughControlType](#eac3passthroughcontroltype)
-  - [Eac3PhaseControlType](#eac3phasecontroltype)
-  - [Eac3StereoDownmixType](#eac3stereodownmixtype)
-  - [Eac3SurroundExModeType](#eac3surroundexmodetype)
-  - [Eac3SurroundModeType](#eac3surroundmodetype)
-  - [EmbeddedConvert608To708Type](#embeddedconvert608to708type)
-  - [EmbeddedTerminateCaptionsType](#embeddedterminatecaptionstype)
-  - [EmbeddedTimecodeOverrideType](#embeddedtimecodeoverridetype)
-  - [F4vMoovPlacementType](#f4vmoovplacementtype)
-  - [FileSourceConvert608To708Type](#filesourceconvert608to708type)
-  - [FileSourceTimeDeltaUnitsType](#filesourcetimedeltaunitstype)
-  - [FontScriptType](#fontscripttype)
-  - [H264AdaptiveQuantizationType](#h264adaptivequantizationtype)
-  - [H264CodecLevelType](#h264codecleveltype)
-  - [H264CodecProfileType](#h264codecprofiletype)
-  - [H264DynamicSubGopType](#h264dynamicsubgoptype)
-  - [H264EntropyEncodingType](#h264entropyencodingtype)
-  - [H264FieldEncodingType](#h264fieldencodingtype)
-  - [H264FlickerAdaptiveQuantizationType](#h264flickeradaptivequantizationtype)
-  - [H264FramerateControlType](#h264frameratecontroltype)
-  - [H264FramerateConversionAlgorithmType](#h264framerateconversionalgorithmtype)
-  - [H264GopBReferenceType](#h264gopbreferencetype)
-  - [H264GopSizeUnitsType](#h264gopsizeunitstype)
-  - [H264InterlaceModeType](#h264interlacemodetype)
-  - [H264ParControlType](#h264parcontroltype)
-  - [H264QualityTuningLevelType](#h264qualitytuningleveltype)
-  - [H264RateControlModeType](#h264ratecontrolmodetype)
-  - [H264RepeatPpsType](#h264repeatppstype)
-  - [H264ScanTypeConversionModeType](#h264scantypeconversionmodetype)
-  - [H264SceneChangeDetectType](#h264scenechangedetecttype)
-  - [H264SlowPalType](#h264slowpaltype)
-  - [H264SpatialAdaptiveQuantizationType](#h264spatialadaptivequantizationtype)
-  - [H264SyntaxType](#h264syntaxtype)
-  - [H264TelecineType](#h264telecinetype)
-  - [H264TemporalAdaptiveQuantizationType](#h264temporaladaptivequantizationtype)
-  - [H264UnregisteredSeiTimecodeType](#h264unregisteredseitimecodetype)
-  - [H265AdaptiveQuantizationType](#h265adaptivequantizationtype)
-  - [H265AlternateTransferFunctionSeiType](#h265alternatetransferfunctionseitype)
-  - [H265CodecLevelType](#h265codecleveltype)
-  - [H265CodecProfileType](#h265codecprofiletype)
-  - [H265DynamicSubGopType](#h265dynamicsubgoptype)
-  - [H265FlickerAdaptiveQuantizationType](#h265flickeradaptivequantizationtype)
-  - [H265FramerateControlType](#h265frameratecontroltype)
-  - [H265FramerateConversionAlgorithmType](#h265framerateconversionalgorithmtype)
-  - [H265GopBReferenceType](#h265gopbreferencetype)
-  - [H265GopSizeUnitsType](#h265gopsizeunitstype)
-  - [H265InterlaceModeType](#h265interlacemodetype)
-  - [H265ParControlType](#h265parcontroltype)
-  - [H265QualityTuningLevelType](#h265qualitytuningleveltype)
-  - [H265RateControlModeType](#h265ratecontrolmodetype)
-  - [H265SampleAdaptiveOffsetFilterModeType](#h265sampleadaptiveoffsetfiltermodetype)
-  - [H265ScanTypeConversionModeType](#h265scantypeconversionmodetype)
-  - [H265SceneChangeDetectType](#h265scenechangedetecttype)
-  - [H265SlowPalType](#h265slowpaltype)
-  - [H265SpatialAdaptiveQuantizationType](#h265spatialadaptivequantizationtype)
-  - [H265TelecineType](#h265telecinetype)
-  - [H265TemporalAdaptiveQuantizationType](#h265temporaladaptivequantizationtype)
-  - [H265TemporalIdsType](#h265temporalidstype)
-  - [H265TilesType](#h265tilestype)
-  - [H265UnregisteredSeiTimecodeType](#h265unregisteredseitimecodetype)
-  - [H265WriteMp4PackagingTypeType](#h265writemp4packagingtypetype)
-  - [HlsAdMarkersType](#hlsadmarkerstype)
-  - [HlsAudioOnlyContainerType](#hlsaudioonlycontainertype)
-  - [HlsAudioOnlyHeaderType](#hlsaudioonlyheadertype)
-  - [HlsAudioTrackTypeType](#hlsaudiotracktypetype)
-  - [HlsCaptionLanguageSettingType](#hlscaptionlanguagesettingtype)
-  - [HlsCaptionSegmentLengthControlType](#hlscaptionsegmentlengthcontroltype)
-  - [HlsClientCacheType](#hlsclientcachetype)
-  - [HlsCodecSpecificationType](#hlscodecspecificationtype)
-  - [HlsDescriptiveVideoServiceFlagType](#hlsdescriptivevideoserviceflagtype)
-  - [HlsDirectoryStructureType](#hlsdirectorystructuretype)
-  - [HlsEncryptionTypeType](#hlsencryptiontypetype)
-  - [HlsIFrameOnlyManifestType](#hlsiframeonlymanifesttype)
-  - [HlsImageBasedTrickPlayType](#hlsimagebasedtrickplaytype)
-  - [HlsInitializationVectorInManifestType](#hlsinitializationvectorinmanifesttype)
-  - [HlsIntervalCadenceType](#hlsintervalcadencetype)
-  - [HlsKeyProviderTypeType](#hlskeyprovidertypetype)
-  - [HlsManifestCompressionType](#hlsmanifestcompressiontype)
-  - [HlsManifestDurationFormatType](#hlsmanifestdurationformattype)
-  - [HlsOfflineEncryptedType](#hlsofflineencryptedtype)
-  - [HlsOutputSelectionType](#hlsoutputselectiontype)
-  - [HlsProgramDateTimeType](#hlsprogramdatetimetype)
-  - [HlsSegmentControlType](#hlssegmentcontroltype)
-  - [HlsSegmentLengthControlType](#hlssegmentlengthcontroltype)
-  - [HlsStreamInfResolutionType](#hlsstreaminfresolutiontype)
-  - [HlsTargetDurationCompatibilityModeType](#hlstargetdurationcompatibilitymodetype)
-  - [HlsTimedMetadataId3FrameType](#hlstimedmetadataid3frametype)
-  - [ImscAccessibilitySubsType](#imscaccessibilitysubstype)
-  - [ImscStylePassthroughType](#imscstylepassthroughtype)
-  - [InputDeblockFilterType](#inputdeblockfiltertype)
-  - [InputDenoiseFilterType](#inputdenoisefiltertype)
-  - [InputFilterEnableType](#inputfilterenabletype)
-  - [InputPolicyType](#inputpolicytype)
-  - [InputPsiControlType](#inputpsicontroltype)
-  - [InputRotateType](#inputrotatetype)
-  - [InputSampleRangeType](#inputsamplerangetype)
-  - [InputScanTypeType](#inputscantypetype)
-  - [InputTimecodeSourceType](#inputtimecodesourcetype)
-  - [JobPhaseType](#jobphasetype)
-  - [JobStatusType](#jobstatustype)
-  - [JobTemplateListByType](#jobtemplatelistbytype)
-  - [LanguageCodeType](#languagecodetype)
-  - [ListJobTemplatesPaginatorName](#listjobtemplatespaginatorname)
-  - [ListJobsPaginatorName](#listjobspaginatorname)
-  - [ListPresetsPaginatorName](#listpresetspaginatorname)
-  - [ListQueuesPaginatorName](#listqueuespaginatorname)
-  - [M2tsAudioBufferModelType](#m2tsaudiobuffermodeltype)
-  - [M2tsAudioDurationType](#m2tsaudiodurationtype)
-  - [M2tsBufferModelType](#m2tsbuffermodeltype)
-  - [M2tsDataPtsControlType](#m2tsdataptscontroltype)
-  - [M2tsEbpAudioIntervalType](#m2tsebpaudiointervaltype)
-  - [M2tsEbpPlacementType](#m2tsebpplacementtype)
-  - [M2tsEsRateInPesType](#m2tsesrateinpestype)
-  - [M2tsForceTsVideoEbpOrderType](#m2tsforcetsvideoebpordertype)
-  - [M2tsNielsenId3Type](#m2tsnielsenid3type)
-  - [M2tsPcrControlType](#m2tspcrcontroltype)
-  - [M2tsRateModeType](#m2tsratemodetype)
-  - [M2tsScte35SourceType](#m2tsscte35sourcetype)
-  - [M2tsSegmentationMarkersType](#m2tssegmentationmarkerstype)
-  - [M2tsSegmentationStyleType](#m2tssegmentationstyletype)
-  - [M3u8AudioDurationType](#m3u8audiodurationtype)
-  - [M3u8DataPtsControlType](#m3u8dataptscontroltype)
-  - [M3u8NielsenId3Type](#m3u8nielsenid3type)
-  - [M3u8PcrControlType](#m3u8pcrcontroltype)
-  - [M3u8Scte35SourceType](#m3u8scte35sourcetype)
-  - [MotionImageInsertionModeType](#motionimageinsertionmodetype)
-  - [MotionImagePlaybackType](#motionimageplaybacktype)
-  - [MovClapAtomType](#movclapatomtype)
-  - [MovCslgAtomType](#movcslgatomtype)
-  - [MovMpeg2FourCCControlType](#movmpeg2fourcccontroltype)
-  - [MovPaddingControlType](#movpaddingcontroltype)
-  - [MovReferenceType](#movreferencetype)
-  - [Mp3RateControlModeType](#mp3ratecontrolmodetype)
-  - [Mp4CslgAtomType](#mp4cslgatomtype)
-  - [Mp4FreeSpaceBoxType](#mp4freespaceboxtype)
-  - [Mp4MoovPlacementType](#mp4moovplacementtype)
-  - [MpdAccessibilityCaptionHintsType](#mpdaccessibilitycaptionhintstype)
-  - [MpdAudioDurationType](#mpdaudiodurationtype)
-  - [MpdCaptionContainerTypeType](#mpdcaptioncontainertypetype)
-  - [MpdScte35EsamType](#mpdscte35esamtype)
-  - [MpdScte35SourceType](#mpdscte35sourcetype)
-  - [MpdTimedMetadataType](#mpdtimedmetadatatype)
-  - [Mpeg2AdaptiveQuantizationType](#mpeg2adaptivequantizationtype)
-  - [Mpeg2CodecLevelType](#mpeg2codecleveltype)
-  - [Mpeg2CodecProfileType](#mpeg2codecprofiletype)
-  - [Mpeg2DynamicSubGopType](#mpeg2dynamicsubgoptype)
-  - [Mpeg2FramerateControlType](#mpeg2frameratecontroltype)
-  - [Mpeg2FramerateConversionAlgorithmType](#mpeg2framerateconversionalgorithmtype)
-  - [Mpeg2GopSizeUnitsType](#mpeg2gopsizeunitstype)
-  - [Mpeg2InterlaceModeType](#mpeg2interlacemodetype)
-  - [Mpeg2IntraDcPrecisionType](#mpeg2intradcprecisiontype)
-  - [Mpeg2ParControlType](#mpeg2parcontroltype)
-  - [Mpeg2QualityTuningLevelType](#mpeg2qualitytuningleveltype)
-  - [Mpeg2RateControlModeType](#mpeg2ratecontrolmodetype)
-  - [Mpeg2ScanTypeConversionModeType](#mpeg2scantypeconversionmodetype)
-  - [Mpeg2SceneChangeDetectType](#mpeg2scenechangedetecttype)
-  - [Mpeg2SlowPalType](#mpeg2slowpaltype)
-  - [Mpeg2SpatialAdaptiveQuantizationType](#mpeg2spatialadaptivequantizationtype)
-  - [Mpeg2SyntaxType](#mpeg2syntaxtype)
-  - [Mpeg2TelecineType](#mpeg2telecinetype)
-  - [Mpeg2TemporalAdaptiveQuantizationType](#mpeg2temporaladaptivequantizationtype)
-  - [MsSmoothAudioDeduplicationType](#mssmoothaudiodeduplicationtype)
-  - [MsSmoothFragmentLengthControlType](#mssmoothfragmentlengthcontroltype)
-  - [MsSmoothManifestEncodingType](#mssmoothmanifestencodingtype)
-  - [MxfAfdSignalingType](#mxfafdsignalingtype)
-  - [MxfProfileType](#mxfprofiletype)
-  - [MxfXavcDurationModeType](#mxfxavcdurationmodetype)
-  - [NielsenActiveWatermarkProcessTypeType](#nielsenactivewatermarkprocesstypetype)
-  - [NielsenSourceWatermarkStatusTypeType](#nielsensourcewatermarkstatustypetype)
-  - [NielsenUniqueTicPerAudioTrackTypeType](#nielsenuniqueticperaudiotracktypetype)
-  - [NoiseFilterPostTemporalSharpeningStrengthType](#noisefilterposttemporalsharpeningstrengthtype)
-  - [NoiseFilterPostTemporalSharpeningType](#noisefilterposttemporalsharpeningtype)
-  - [NoiseReducerFilterType](#noisereducerfiltertype)
-  - [OrderType](#ordertype)
-  - [OutputGroupTypeType](#outputgrouptypetype)
-  - [OutputSdtType](#outputsdttype)
-  - [PresetListByType](#presetlistbytype)
-  - [PricingPlanType](#pricingplantype)
-  - [ProresChromaSamplingType](#proreschromasamplingtype)
-  - [ProresCodecProfileType](#prorescodecprofiletype)
-  - [ProresFramerateControlType](#proresframeratecontroltype)
-  - [ProresFramerateConversionAlgorithmType](#proresframerateconversionalgorithmtype)
-  - [ProresInterlaceModeType](#proresinterlacemodetype)
-  - [ProresParControlType](#proresparcontroltype)
-  - [ProresScanTypeConversionModeType](#proresscantypeconversionmodetype)
-  - [ProresSlowPalType](#proresslowpaltype)
-  - [ProresTelecineType](#prorestelecinetype)
-  - [QueueListByType](#queuelistbytype)
-  - [QueueStatusType](#queuestatustype)
-  - [RenewalTypeType](#renewaltypetype)
-  - [ReservationPlanStatusType](#reservationplanstatustype)
-  - [RespondToAfdType](#respondtoafdtype)
-  - [S3ObjectCannedAclType](#s3objectcannedacltype)
-  - [S3ServerSideEncryptionTypeType](#s3serversideencryptiontypetype)
-  - [SampleRangeConversionType](#samplerangeconversiontype)
-  - [ScalingBehaviorType](#scalingbehaviortype)
-  - [SccDestinationFramerateType](#sccdestinationframeratetype)
-  - [SimulateReservedQueueType](#simulatereservedqueuetype)
-  - [SrtStylePassthroughType](#srtstylepassthroughtype)
-  - [StatusUpdateIntervalType](#statusupdateintervaltype)
-  - [TeletextPageTypeType](#teletextpagetypetype)
-  - [TimecodeBurninPositionType](#timecodeburninpositiontype)
-  - [TimecodeSourceType](#timecodesourcetype)
-  - [TimedMetadataType](#timedmetadatatype)
-  - [TtmlStylePassthroughType](#ttmlstylepassthroughtype)
-  - [TypeType](#typetype)
-  - [Vc3ClassType](#vc3classtype)
-  - [Vc3FramerateControlType](#vc3frameratecontroltype)
-  - [Vc3FramerateConversionAlgorithmType](#vc3framerateconversionalgorithmtype)
-  - [Vc3InterlaceModeType](#vc3interlacemodetype)
-  - [Vc3ScanTypeConversionModeType](#vc3scantypeconversionmodetype)
-  - [Vc3SlowPalType](#vc3slowpaltype)
-  - [Vc3TelecineType](#vc3telecinetype)
-  - [VchipActionType](#vchipactiontype)
-  - [VideoCodecType](#videocodectype)
-  - [VideoTimecodeInsertionType](#videotimecodeinsertiontype)
-  - [Vp8FramerateControlType](#vp8frameratecontroltype)
-  - [Vp8FramerateConversionAlgorithmType](#vp8framerateconversionalgorithmtype)
-  - [Vp8ParControlType](#vp8parcontroltype)
-  - [Vp8QualityTuningLevelType](#vp8qualitytuningleveltype)
-  - [Vp8RateControlModeType](#vp8ratecontrolmodetype)
-  - [Vp9FramerateControlType](#vp9frameratecontroltype)
-  - [Vp9FramerateConversionAlgorithmType](#vp9framerateconversionalgorithmtype)
-  - [Vp9ParControlType](#vp9parcontroltype)
-  - [Vp9QualityTuningLevelType](#vp9qualitytuningleveltype)
-  - [Vp9RateControlModeType](#vp9ratecontrolmodetype)
-  - [WatermarkingStrengthType](#watermarkingstrengthtype)
-  - [WavFormatType](#wavformattype)
-  - [WebvttAccessibilitySubsType](#webvttaccessibilitysubstype)
-  - [WebvttStylePassthroughType](#webvttstylepassthroughtype)
-  - [Xavc4kIntraCbgProfileClassType](#xavc4kintracbgprofileclasstype)
-  - [Xavc4kIntraVbrProfileClassType](#xavc4kintravbrprofileclasstype)
-  - [Xavc4kProfileBitrateClassType](#xavc4kprofilebitrateclasstype)
-  - [Xavc4kProfileCodecProfileType](#xavc4kprofilecodecprofiletype)
-  - [Xavc4kProfileQualityTuningLevelType](#xavc4kprofilequalitytuningleveltype)
-  - [XavcAdaptiveQuantizationType](#xavcadaptivequantizationtype)
-  - [XavcEntropyEncodingType](#xavcentropyencodingtype)
-  - [XavcFlickerAdaptiveQuantizationType](#xavcflickeradaptivequantizationtype)
-  - [XavcFramerateControlType](#xavcframeratecontroltype)
-  - [XavcFramerateConversionAlgorithmType](#xavcframerateconversionalgorithmtype)
-  - [XavcGopBReferenceType](#xavcgopbreferencetype)
-  - [XavcHdIntraCbgProfileClassType](#xavchdintracbgprofileclasstype)
-  - [XavcHdProfileBitrateClassType](#xavchdprofilebitrateclasstype)
-  - [XavcHdProfileQualityTuningLevelType](#xavchdprofilequalitytuningleveltype)
-  - [XavcHdProfileTelecineType](#xavchdprofiletelecinetype)
-  - [XavcInterlaceModeType](#xavcinterlacemodetype)
-  - [XavcProfileType](#xavcprofiletype)
-  - [XavcSlowPalType](#xavcslowpaltype)
-  - [XavcSpatialAdaptiveQuantizationType](#xavcspatialadaptivequantizationtype)
-  - [XavcTemporalAdaptiveQuantizationType](#xavctemporaladaptivequantizationtype)
-  - [MediaConvertServiceName](#mediaconvertservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="aacaudiodescriptionbroadcastermixtype"></a>
+    Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+    type annotations stubs module [mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 ## AacAudioDescriptionBroadcasterMixType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMixType
+
+def get_value() -> AacAudioDescriptionBroadcasterMixType:
+    return "BROADCASTER_MIXED_AD"
 ```
 
-Values:
-
-- `BROADCASTER_MIXED_AD`
-- `NORMAL`
-
-<a id="aaccodecprofiletype"></a>
-
+```python title="Definition"
+AacAudioDescriptionBroadcasterMixType = Literal[
+    "BROADCASTER_MIXED_AD",
+    "NORMAL",
+]
+```
 ## AacCodecProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AacCodecProfileType
+
+def get_value() -> AacCodecProfileType:
+    return "HEV1"
 ```
 
-Values:
-
-- `HEV1`
-- `HEV2`
-- `LC`
-
-<a id="aaccodingmodetype"></a>
-
+```python title="Definition"
+AacCodecProfileType = Literal[
+    "HEV1",
+    "HEV2",
+    "LC",
+]
+```
 ## AacCodingModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AacCodingModeType
+
+def get_value() -> AacCodingModeType:
+    return "AD_RECEIVER_MIX"
 ```
 
-Values:
-
-- `AD_RECEIVER_MIX`
-- `CODING_MODE_1_0`
-- `CODING_MODE_1_1`
-- `CODING_MODE_2_0`
-- `CODING_MODE_5_1`
-
-<a id="aacratecontrolmodetype"></a>
-
+```python title="Definition"
+AacCodingModeType = Literal[
+    "AD_RECEIVER_MIX",
+    "CODING_MODE_1_0",
+    "CODING_MODE_1_1",
+    "CODING_MODE_2_0",
+    "CODING_MODE_5_1",
+]
+```
 ## AacRateControlModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AacRateControlModeType
+
+def get_value() -> AacRateControlModeType:
+    return "CBR"
 ```
 
-Values:
-
-- `CBR`
-- `VBR`
-
-<a id="aacrawformattype"></a>
-
+```python title="Definition"
+AacRateControlModeType = Literal[
+    "CBR",
+    "VBR",
+]
+```
 ## AacRawFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AacRawFormatType
+
+def get_value() -> AacRawFormatType:
+    return "LATM_LOAS"
 ```
 
-Values:
-
-- `LATM_LOAS`
-- `NONE`
-
-<a id="aacspecificationtype"></a>
-
+```python title="Definition"
+AacRawFormatType = Literal[
+    "LATM_LOAS",
+    "NONE",
+]
+```
 ## AacSpecificationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AacSpecificationType
+
+def get_value() -> AacSpecificationType:
+    return "MPEG2"
 ```
 
-Values:
-
-- `MPEG2`
-- `MPEG4`
-
-<a id="aacvbrqualitytype"></a>
-
+```python title="Definition"
+AacSpecificationType = Literal[
+    "MPEG2",
+    "MPEG4",
+]
+```
 ## AacVbrQualityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AacVbrQualityType
+
+def get_value() -> AacVbrQualityType:
+    return "HIGH"
 ```
 
-Values:
-
-- `HIGH`
-- `LOW`
-- `MEDIUM_HIGH`
-- `MEDIUM_LOW`
-
-<a id="ac3bitstreammodetype"></a>
-
+```python title="Definition"
+AacVbrQualityType = Literal[
+    "HIGH",
+    "LOW",
+    "MEDIUM_HIGH",
+    "MEDIUM_LOW",
+]
+```
 ## Ac3BitstreamModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Ac3BitstreamModeType
+
+def get_value() -> Ac3BitstreamModeType:
+    return "COMMENTARY"
 ```
 
-Values:
-
-- `COMMENTARY`
-- `COMPLETE_MAIN`
-- `DIALOGUE`
-- `EMERGENCY`
-- `HEARING_IMPAIRED`
-- `MUSIC_AND_EFFECTS`
-- `VISUALLY_IMPAIRED`
-- `VOICE_OVER`
-
-<a id="ac3codingmodetype"></a>
-
+```python title="Definition"
+Ac3BitstreamModeType = Literal[
+    "COMMENTARY",
+    "COMPLETE_MAIN",
+    "DIALOGUE",
+    "EMERGENCY",
+    "HEARING_IMPAIRED",
+    "MUSIC_AND_EFFECTS",
+    "VISUALLY_IMPAIRED",
+    "VOICE_OVER",
+]
+```
 ## Ac3CodingModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Ac3CodingModeType
+
+def get_value() -> Ac3CodingModeType:
+    return "CODING_MODE_1_0"
 ```
 
-Values:
-
-- `CODING_MODE_1_0`
-- `CODING_MODE_1_1`
-- `CODING_MODE_2_0`
-- `CODING_MODE_3_2_LFE`
-
-<a id="ac3dynamicrangecompressionlinetype"></a>
-
+```python title="Definition"
+Ac3CodingModeType = Literal[
+    "CODING_MODE_1_0",
+    "CODING_MODE_1_1",
+    "CODING_MODE_2_0",
+    "CODING_MODE_3_2_LFE",
+]
+```
 ## Ac3DynamicRangeCompressionLineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Ac3DynamicRangeCompressionLineType
+
+def get_value() -> Ac3DynamicRangeCompressionLineType:
+    return "FILM_LIGHT"
 ```
 
-Values:
-
-- `FILM_LIGHT`
-- `FILM_STANDARD`
-- `MUSIC_LIGHT`
-- `MUSIC_STANDARD`
-- `NONE`
-- `SPEECH`
-
-<a id="ac3dynamicrangecompressionprofiletype"></a>
-
+```python title="Definition"
+Ac3DynamicRangeCompressionLineType = Literal[
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH",
+]
+```
 ## Ac3DynamicRangeCompressionProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Ac3DynamicRangeCompressionProfileType
+
+def get_value() -> Ac3DynamicRangeCompressionProfileType:
+    return "FILM_STANDARD"
 ```
 
-Values:
-
-- `FILM_STANDARD`
-- `NONE`
-
-<a id="ac3dynamicrangecompressionrftype"></a>
-
+```python title="Definition"
+Ac3DynamicRangeCompressionProfileType = Literal[
+    "FILM_STANDARD",
+    "NONE",
+]
+```
 ## Ac3DynamicRangeCompressionRfType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Ac3DynamicRangeCompressionRfType
+
+def get_value() -> Ac3DynamicRangeCompressionRfType:
+    return "FILM_LIGHT"
 ```
 
-Values:
-
-- `FILM_LIGHT`
-- `FILM_STANDARD`
-- `MUSIC_LIGHT`
-- `MUSIC_STANDARD`
-- `NONE`
-- `SPEECH`
-
-<a id="ac3lfefiltertype"></a>
-
+```python title="Definition"
+Ac3DynamicRangeCompressionRfType = Literal[
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH",
+]
+```
 ## Ac3LfeFilterType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Ac3LfeFilterType
+
+def get_value() -> Ac3LfeFilterType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="ac3metadatacontroltype"></a>
-
+```python title="Definition"
+Ac3LfeFilterType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## Ac3MetadataControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Ac3MetadataControlType
+
+def get_value() -> Ac3MetadataControlType:
+    return "FOLLOW_INPUT"
 ```
 
-Values:
-
-- `FOLLOW_INPUT`
-- `USE_CONFIGURED`
-
-<a id="accelerationmodetype"></a>
-
+```python title="Definition"
+Ac3MetadataControlType = Literal[
+    "FOLLOW_INPUT",
+    "USE_CONFIGURED",
+]
+```
 ## AccelerationModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AccelerationModeType
+
+def get_value() -> AccelerationModeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-- `PREFERRED`
-
-<a id="accelerationstatustype"></a>
-
+```python title="Definition"
+AccelerationModeType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "PREFERRED",
+]
+```
 ## AccelerationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AccelerationStatusType
+
+def get_value() -> AccelerationStatusType:
+    return "ACCELERATED"
 ```
 
-Values:
-
-- `ACCELERATED`
-- `IN_PROGRESS`
-- `NOT_ACCELERATED`
-- `NOT_APPLICABLE`
-
-<a id="afdsignalingtype"></a>
-
+```python title="Definition"
+AccelerationStatusType = Literal[
+    "ACCELERATED",
+    "IN_PROGRESS",
+    "NOT_ACCELERATED",
+    "NOT_APPLICABLE",
+]
+```
 ## AfdSignalingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AfdSignalingType
+
+def get_value() -> AfdSignalingType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `FIXED`
-- `NONE`
-
-<a id="alphabehaviortype"></a>
-
+```python title="Definition"
+AfdSignalingType = Literal[
+    "AUTO",
+    "FIXED",
+    "NONE",
+]
+```
 ## AlphaBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AlphaBehaviorType
+
+def get_value() -> AlphaBehaviorType:
+    return "DISCARD"
 ```
 
-Values:
-
-- `DISCARD`
-- `REMAP_TO_LUMA`
-
-<a id="ancillaryconvert608to708type"></a>
-
+```python title="Definition"
+AlphaBehaviorType = Literal[
+    "DISCARD",
+    "REMAP_TO_LUMA",
+]
+```
 ## AncillaryConvert608To708Type
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AncillaryConvert608To708Type
+
+def get_value() -> AncillaryConvert608To708Type:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `UPCONVERT`
-
-<a id="ancillaryterminatecaptionstype"></a>
-
+```python title="Definition"
+AncillaryConvert608To708Type = Literal[
+    "DISABLED",
+    "UPCONVERT",
+]
+```
 ## AncillaryTerminateCaptionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AncillaryTerminateCaptionsType
+
+def get_value() -> AncillaryTerminateCaptionsType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `END_OF_INPUT`
-
-<a id="antialiastype"></a>
-
+```python title="Definition"
+AncillaryTerminateCaptionsType = Literal[
+    "DISABLED",
+    "END_OF_INPUT",
+]
+```
 ## AntiAliasType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AntiAliasType
+
+def get_value() -> AntiAliasType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="audiochanneltagtype"></a>
-
+```python title="Definition"
+AntiAliasType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## AudioChannelTagType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioChannelTagType
+
+def get_value() -> AudioChannelTagType:
+    return "C"
 ```
 
-Values:
-
-- `C`
-- `CS`
-- `L`
-- `LC`
-- `LFE`
-- `LS`
-- `LSD`
-- `R`
-- `RC`
-- `RS`
-- `RSD`
-- `TCS`
-- `VHC`
-- `VHL`
-- `VHR`
-
-<a id="audiocodectype"></a>
-
+```python title="Definition"
+AudioChannelTagType = Literal[
+    "C",
+    "CS",
+    "L",
+    "LC",
+    "LFE",
+    "LS",
+    "LSD",
+    "R",
+    "RC",
+    "RS",
+    "RSD",
+    "TCS",
+    "VHC",
+    "VHL",
+    "VHR",
+]
+```
 ## AudioCodecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioCodecType
+
+def get_value() -> AudioCodecType:
+    return "AAC"
 ```
 
-Values:
-
-- `AAC`
-- `AC3`
-- `AIFF`
-- `EAC3`
-- `EAC3_ATMOS`
-- `MP2`
-- `MP3`
-- `OPUS`
-- `PASSTHROUGH`
-- `VORBIS`
-- `WAV`
-
-<a id="audiodefaultselectiontype"></a>
-
+```python title="Definition"
+AudioCodecType = Literal[
+    "AAC",
+    "AC3",
+    "AIFF",
+    "EAC3",
+    "EAC3_ATMOS",
+    "MP2",
+    "MP3",
+    "OPUS",
+    "PASSTHROUGH",
+    "VORBIS",
+    "WAV",
+]
+```
 ## AudioDefaultSelectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioDefaultSelectionType
+
+def get_value() -> AudioDefaultSelectionType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `DEFAULT`
-- `NOT_DEFAULT`
-
-<a id="audiolanguagecodecontroltype"></a>
-
+```python title="Definition"
+AudioDefaultSelectionType = Literal[
+    "DEFAULT",
+    "NOT_DEFAULT",
+]
+```
 ## AudioLanguageCodeControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioLanguageCodeControlType
+
+def get_value() -> AudioLanguageCodeControlType:
+    return "FOLLOW_INPUT"
 ```
 
-Values:
-
-- `FOLLOW_INPUT`
-- `USE_CONFIGURED`
-
-<a id="audionormalizationalgorithmcontroltype"></a>
-
+```python title="Definition"
+AudioLanguageCodeControlType = Literal[
+    "FOLLOW_INPUT",
+    "USE_CONFIGURED",
+]
+```
 ## AudioNormalizationAlgorithmControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioNormalizationAlgorithmControlType
+
+def get_value() -> AudioNormalizationAlgorithmControlType:
+    return "CORRECT_AUDIO"
 ```
 
-Values:
-
-- `CORRECT_AUDIO`
-- `MEASURE_ONLY`
-
-<a id="audionormalizationalgorithmtype"></a>
-
+```python title="Definition"
+AudioNormalizationAlgorithmControlType = Literal[
+    "CORRECT_AUDIO",
+    "MEASURE_ONLY",
+]
+```
 ## AudioNormalizationAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioNormalizationAlgorithmType
+
+def get_value() -> AudioNormalizationAlgorithmType:
+    return "ITU_BS_1770_1"
 ```
 
-Values:
-
-- `ITU_BS_1770_1`
-- `ITU_BS_1770_2`
-- `ITU_BS_1770_3`
-- `ITU_BS_1770_4`
-
-<a id="audionormalizationloudnessloggingtype"></a>
-
+```python title="Definition"
+AudioNormalizationAlgorithmType = Literal[
+    "ITU_BS_1770_1",
+    "ITU_BS_1770_2",
+    "ITU_BS_1770_3",
+    "ITU_BS_1770_4",
+]
+```
 ## AudioNormalizationLoudnessLoggingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioNormalizationLoudnessLoggingType
+
+def get_value() -> AudioNormalizationLoudnessLoggingType:
+    return "DONT_LOG"
 ```
 
-Values:
-
-- `DONT_LOG`
-- `LOG`
-
-<a id="audionormalizationpeakcalculationtype"></a>
-
+```python title="Definition"
+AudioNormalizationLoudnessLoggingType = Literal[
+    "DONT_LOG",
+    "LOG",
+]
+```
 ## AudioNormalizationPeakCalculationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioNormalizationPeakCalculationType
+
+def get_value() -> AudioNormalizationPeakCalculationType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `TRUE_PEAK`
-
-<a id="audioselectortypetype"></a>
-
+```python title="Definition"
+AudioNormalizationPeakCalculationType = Literal[
+    "NONE",
+    "TRUE_PEAK",
+]
+```
 ## AudioSelectorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioSelectorTypeType
+
+def get_value() -> AudioSelectorTypeType:
+    return "HLS_RENDITION_GROUP"
 ```
 
-Values:
-
-- `HLS_RENDITION_GROUP`
-- `LANGUAGE_CODE`
-- `PID`
-- `TRACK`
-
-<a id="audiotypecontroltype"></a>
-
+```python title="Definition"
+AudioSelectorTypeType = Literal[
+    "HLS_RENDITION_GROUP",
+    "LANGUAGE_CODE",
+    "PID",
+    "TRACK",
+]
+```
 ## AudioTypeControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AudioTypeControlType
+
+def get_value() -> AudioTypeControlType:
+    return "FOLLOW_INPUT"
 ```
 
-Values:
-
-- `FOLLOW_INPUT`
-- `USE_CONFIGURED`
-
-<a id="av1adaptivequantizationtype"></a>
-
+```python title="Definition"
+AudioTypeControlType = Literal[
+    "FOLLOW_INPUT",
+    "USE_CONFIGURED",
+]
+```
 ## Av1AdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Av1AdaptiveQuantizationType
+
+def get_value() -> Av1AdaptiveQuantizationType:
+    return "HIGH"
 ```
 
-Values:
-
-- `HIGH`
-- `HIGHER`
-- `LOW`
-- `MAX`
-- `MEDIUM`
-- `OFF`
-
-<a id="av1bitdepthtype"></a>
-
+```python title="Definition"
+Av1AdaptiveQuantizationType = Literal[
+    "HIGH",
+    "HIGHER",
+    "LOW",
+    "MAX",
+    "MEDIUM",
+    "OFF",
+]
+```
 ## Av1BitDepthType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Av1BitDepthType
+
+def get_value() -> Av1BitDepthType:
+    return "BIT_10"
 ```
 
-Values:
-
-- `BIT_10`
-- `BIT_8`
-
-<a id="av1frameratecontroltype"></a>
-
+```python title="Definition"
+Av1BitDepthType = Literal[
+    "BIT_10",
+    "BIT_8",
+]
+```
 ## Av1FramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Av1FramerateControlType
+
+def get_value() -> Av1FramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="av1framerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+Av1FramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Av1FramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Av1FramerateConversionAlgorithmType
+
+def get_value() -> Av1FramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="av1ratecontrolmodetype"></a>
-
+```python title="Definition"
+Av1FramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## Av1RateControlModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Av1RateControlModeType
+
+def get_value() -> Av1RateControlModeType:
+    return "QVBR"
 ```
 
-Values:
-
-- `QVBR`
-
-<a id="av1spatialadaptivequantizationtype"></a>
-
+```python title="Definition"
+Av1RateControlModeType = Literal[
+    "QVBR",
+]
+```
 ## Av1SpatialAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Av1SpatialAdaptiveQuantizationType
+
+def get_value() -> Av1SpatialAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="avcintraclasstype"></a>
-
+```python title="Definition"
+Av1SpatialAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## AvcIntraClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AvcIntraClassType
+
+def get_value() -> AvcIntraClassType:
+    return "CLASS_100"
 ```
 
-Values:
-
-- `CLASS_100`
-- `CLASS_200`
-- `CLASS_4K_2K`
-- `CLASS_50`
-
-<a id="avcintraframeratecontroltype"></a>
-
+```python title="Definition"
+AvcIntraClassType = Literal[
+    "CLASS_100",
+    "CLASS_200",
+    "CLASS_4K_2K",
+    "CLASS_50",
+]
+```
 ## AvcIntraFramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AvcIntraFramerateControlType
+
+def get_value() -> AvcIntraFramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="avcintraframerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+AvcIntraFramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## AvcIntraFramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AvcIntraFramerateConversionAlgorithmType
+
+def get_value() -> AvcIntraFramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="avcintrainterlacemodetype"></a>
-
+```python title="Definition"
+AvcIntraFramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## AvcIntraInterlaceModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AvcIntraInterlaceModeType
+
+def get_value() -> AvcIntraInterlaceModeType:
+    return "BOTTOM_FIELD"
 ```
 
-Values:
-
-- `BOTTOM_FIELD`
-- `FOLLOW_BOTTOM_FIELD`
-- `FOLLOW_TOP_FIELD`
-- `PROGRESSIVE`
-- `TOP_FIELD`
-
-<a id="avcintrascantypeconversionmodetype"></a>
-
+```python title="Definition"
+AvcIntraInterlaceModeType = Literal[
+    "BOTTOM_FIELD",
+    "FOLLOW_BOTTOM_FIELD",
+    "FOLLOW_TOP_FIELD",
+    "PROGRESSIVE",
+    "TOP_FIELD",
+]
+```
 ## AvcIntraScanTypeConversionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AvcIntraScanTypeConversionModeType
+
+def get_value() -> AvcIntraScanTypeConversionModeType:
+    return "INTERLACED"
 ```
 
-Values:
-
-- `INTERLACED`
-- `INTERLACED_OPTIMIZE`
-
-<a id="avcintraslowpaltype"></a>
-
+```python title="Definition"
+AvcIntraScanTypeConversionModeType = Literal[
+    "INTERLACED",
+    "INTERLACED_OPTIMIZE",
+]
+```
 ## AvcIntraSlowPalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AvcIntraSlowPalType
+
+def get_value() -> AvcIntraSlowPalType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="avcintratelecinetype"></a>
-
+```python title="Definition"
+AvcIntraSlowPalType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## AvcIntraTelecineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AvcIntraTelecineType
+
+def get_value() -> AvcIntraTelecineType:
+    return "HARD"
 ```
 
-Values:
-
-- `HARD`
-- `NONE`
-
-<a id="avcintrauhdqualitytuningleveltype"></a>
-
+```python title="Definition"
+AvcIntraTelecineType = Literal[
+    "HARD",
+    "NONE",
+]
+```
 ## AvcIntraUhdQualityTuningLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import AvcIntraUhdQualityTuningLevelType
+
+def get_value() -> AvcIntraUhdQualityTuningLevelType:
+    return "MULTI_PASS"
 ```
 
-Values:
-
-- `MULTI_PASS`
-- `SINGLE_PASS`
-
-<a id="billingtagssourcetype"></a>
-
+```python title="Definition"
+AvcIntraUhdQualityTuningLevelType = Literal[
+    "MULTI_PASS",
+    "SINGLE_PASS",
+]
+```
 ## BillingTagsSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BillingTagsSourceType
+
+def get_value() -> BillingTagsSourceType:
+    return "JOB"
 ```
 
-Values:
-
-- `JOB`
-- `JOB_TEMPLATE`
-- `PRESET`
-- `QUEUE`
-
-<a id="burninsubtitlestylepassthroughtype"></a>
-
+```python title="Definition"
+BillingTagsSourceType = Literal[
+    "JOB",
+    "JOB_TEMPLATE",
+    "PRESET",
+    "QUEUE",
+]
+```
 ## BurnInSubtitleStylePassthroughType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BurnInSubtitleStylePassthroughType
+
+def get_value() -> BurnInSubtitleStylePassthroughType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="burninsubtitlealignmenttype"></a>
-
+```python title="Definition"
+BurnInSubtitleStylePassthroughType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## BurninSubtitleAlignmentType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BurninSubtitleAlignmentType
+
+def get_value() -> BurninSubtitleAlignmentType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `CENTERED`
-- `LEFT`
-
-<a id="burninsubtitleapplyfontcolortype"></a>
-
+```python title="Definition"
+BurninSubtitleAlignmentType = Literal[
+    "AUTO",
+    "CENTERED",
+    "LEFT",
+]
+```
 ## BurninSubtitleApplyFontColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BurninSubtitleApplyFontColorType
+
+def get_value() -> BurninSubtitleApplyFontColorType:
+    return "ALL_TEXT"
 ```
 
-Values:
-
-- `ALL_TEXT`
-- `WHITE_TEXT_ONLY`
-
-<a id="burninsubtitlebackgroundcolortype"></a>
-
+```python title="Definition"
+BurninSubtitleApplyFontColorType = Literal[
+    "ALL_TEXT",
+    "WHITE_TEXT_ONLY",
+]
+```
 ## BurninSubtitleBackgroundColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BurninSubtitleBackgroundColorType
+
+def get_value() -> BurninSubtitleBackgroundColorType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `BLACK`
-- `NONE`
-- `WHITE`
-
-<a id="burninsubtitlefallbackfonttype"></a>
-
+```python title="Definition"
+BurninSubtitleBackgroundColorType = Literal[
+    "AUTO",
+    "BLACK",
+    "NONE",
+    "WHITE",
+]
+```
 ## BurninSubtitleFallbackFontType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BurninSubtitleFallbackFontType
+
+def get_value() -> BurninSubtitleFallbackFontType:
+    return "BEST_MATCH"
 ```
 
-Values:
-
-- `BEST_MATCH`
-- `MONOSPACED_SANSSERIF`
-- `MONOSPACED_SERIF`
-- `PROPORTIONAL_SANSSERIF`
-- `PROPORTIONAL_SERIF`
-
-<a id="burninsubtitlefontcolortype"></a>
-
+```python title="Definition"
+BurninSubtitleFallbackFontType = Literal[
+    "BEST_MATCH",
+    "MONOSPACED_SANSSERIF",
+    "MONOSPACED_SERIF",
+    "PROPORTIONAL_SANSSERIF",
+    "PROPORTIONAL_SERIF",
+]
+```
 ## BurninSubtitleFontColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BurninSubtitleFontColorType
+
+def get_value() -> BurninSubtitleFontColorType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `BLACK`
-- `BLUE`
-- `GREEN`
-- `HEX`
-- `RED`
-- `WHITE`
-- `YELLOW`
-
-<a id="burninsubtitleoutlinecolortype"></a>
-
+```python title="Definition"
+BurninSubtitleFontColorType = Literal[
+    "AUTO",
+    "BLACK",
+    "BLUE",
+    "GREEN",
+    "HEX",
+    "RED",
+    "WHITE",
+    "YELLOW",
+]
+```
 ## BurninSubtitleOutlineColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BurninSubtitleOutlineColorType
+
+def get_value() -> BurninSubtitleOutlineColorType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `BLACK`
-- `BLUE`
-- `GREEN`
-- `RED`
-- `WHITE`
-- `YELLOW`
-
-<a id="burninsubtitleshadowcolortype"></a>
-
+```python title="Definition"
+BurninSubtitleOutlineColorType = Literal[
+    "AUTO",
+    "BLACK",
+    "BLUE",
+    "GREEN",
+    "RED",
+    "WHITE",
+    "YELLOW",
+]
+```
 ## BurninSubtitleShadowColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BurninSubtitleShadowColorType
+
+def get_value() -> BurninSubtitleShadowColorType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `BLACK`
-- `NONE`
-- `WHITE`
-
-<a id="burninsubtitleteletextspacingtype"></a>
-
+```python title="Definition"
+BurninSubtitleShadowColorType = Literal[
+    "AUTO",
+    "BLACK",
+    "NONE",
+    "WHITE",
+]
+```
 ## BurninSubtitleTeletextSpacingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import BurninSubtitleTeletextSpacingType
+
+def get_value() -> BurninSubtitleTeletextSpacingType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `FIXED_GRID`
-- `PROPORTIONAL`
-
-<a id="captiondestinationtypetype"></a>
-
+```python title="Definition"
+BurninSubtitleTeletextSpacingType = Literal[
+    "AUTO",
+    "FIXED_GRID",
+    "PROPORTIONAL",
+]
+```
 ## CaptionDestinationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CaptionDestinationTypeType
+
+def get_value() -> CaptionDestinationTypeType:
+    return "BURN_IN"
 ```
 
-Values:
-
-- `BURN_IN`
-- `DVB_SUB`
-- `EMBEDDED`
-- `EMBEDDED_PLUS_SCTE20`
-- `IMSC`
-- `SCC`
-- `SCTE20_PLUS_EMBEDDED`
-- `SMI`
-- `SRT`
-- `TELETEXT`
-- `TTML`
-- `WEBVTT`
-
-<a id="captionsourcetypetype"></a>
-
+```python title="Definition"
+CaptionDestinationTypeType = Literal[
+    "BURN_IN",
+    "DVB_SUB",
+    "EMBEDDED",
+    "EMBEDDED_PLUS_SCTE20",
+    "IMSC",
+    "SCC",
+    "SCTE20_PLUS_EMBEDDED",
+    "SMI",
+    "SRT",
+    "TELETEXT",
+    "TTML",
+    "WEBVTT",
+]
+```
 ## CaptionSourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CaptionSourceTypeType
+
+def get_value() -> CaptionSourceTypeType:
+    return "ANCILLARY"
 ```
 
-Values:
-
-- `ANCILLARY`
-- `DVB_SUB`
-- `EMBEDDED`
-- `IMSC`
-- `NULL_SOURCE`
-- `SCC`
-- `SCTE20`
-- `SMI`
-- `SMPTE_TT`
-- `SRT`
-- `STL`
-- `TELETEXT`
-- `TTML`
-- `WEBVTT`
-
-<a id="cmafclientcachetype"></a>
-
+```python title="Definition"
+CaptionSourceTypeType = Literal[
+    "ANCILLARY",
+    "DVB_SUB",
+    "EMBEDDED",
+    "IMSC",
+    "NULL_SOURCE",
+    "SCC",
+    "SCTE20",
+    "SMI",
+    "SMPTE_TT",
+    "SRT",
+    "STL",
+    "TELETEXT",
+    "TTML",
+    "WEBVTT",
+]
+```
 ## CmafClientCacheType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafClientCacheType
+
+def get_value() -> CmafClientCacheType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="cmafcodecspecificationtype"></a>
-
+```python title="Definition"
+CmafClientCacheType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## CmafCodecSpecificationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafCodecSpecificationType
+
+def get_value() -> CmafCodecSpecificationType:
+    return "RFC_4281"
 ```
 
-Values:
-
-- `RFC_4281`
-- `RFC_6381`
-
-<a id="cmafencryptiontypetype"></a>
-
+```python title="Definition"
+CmafCodecSpecificationType = Literal[
+    "RFC_4281",
+    "RFC_6381",
+]
+```
 ## CmafEncryptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafEncryptionTypeType
+
+def get_value() -> CmafEncryptionTypeType:
+    return "AES_CTR"
 ```
 
-Values:
-
-- `AES_CTR`
-- `SAMPLE_AES`
-
-<a id="cmafimagebasedtrickplaytype"></a>
-
+```python title="Definition"
+CmafEncryptionTypeType = Literal[
+    "AES_CTR",
+    "SAMPLE_AES",
+]
+```
 ## CmafImageBasedTrickPlayType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafImageBasedTrickPlayType
+
+def get_value() -> CmafImageBasedTrickPlayType:
+    return "ADVANCED"
 ```
 
-Values:
-
-- `ADVANCED`
-- `NONE`
-- `THUMBNAIL`
-- `THUMBNAIL_AND_FULLFRAME`
-
-<a id="cmafinitializationvectorinmanifesttype"></a>
-
+```python title="Definition"
+CmafImageBasedTrickPlayType = Literal[
+    "ADVANCED",
+    "NONE",
+    "THUMBNAIL",
+    "THUMBNAIL_AND_FULLFRAME",
+]
+```
 ## CmafInitializationVectorInManifestType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafInitializationVectorInManifestType
+
+def get_value() -> CmafInitializationVectorInManifestType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="cmafintervalcadencetype"></a>
-
+```python title="Definition"
+CmafInitializationVectorInManifestType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## CmafIntervalCadenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafIntervalCadenceType
+
+def get_value() -> CmafIntervalCadenceType:
+    return "FOLLOW_CUSTOM"
 ```
 
-Values:
-
-- `FOLLOW_CUSTOM`
-- `FOLLOW_IFRAME`
-
-<a id="cmafkeyprovidertypetype"></a>
-
+```python title="Definition"
+CmafIntervalCadenceType = Literal[
+    "FOLLOW_CUSTOM",
+    "FOLLOW_IFRAME",
+]
+```
 ## CmafKeyProviderTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafKeyProviderTypeType
+
+def get_value() -> CmafKeyProviderTypeType:
+    return "SPEKE"
 ```
 
-Values:
-
-- `SPEKE`
-- `STATIC_KEY`
-
-<a id="cmafmanifestcompressiontype"></a>
-
+```python title="Definition"
+CmafKeyProviderTypeType = Literal[
+    "SPEKE",
+    "STATIC_KEY",
+]
+```
 ## CmafManifestCompressionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafManifestCompressionType
+
+def get_value() -> CmafManifestCompressionType:
+    return "GZIP"
 ```
 
-Values:
-
-- `GZIP`
-- `NONE`
-
-<a id="cmafmanifestdurationformattype"></a>
-
+```python title="Definition"
+CmafManifestCompressionType = Literal[
+    "GZIP",
+    "NONE",
+]
+```
 ## CmafManifestDurationFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafManifestDurationFormatType
+
+def get_value() -> CmafManifestDurationFormatType:
+    return "FLOATING_POINT"
 ```
 
-Values:
-
-- `FLOATING_POINT`
-- `INTEGER`
-
-<a id="cmafmpdprofiletype"></a>
-
+```python title="Definition"
+CmafManifestDurationFormatType = Literal[
+    "FLOATING_POINT",
+    "INTEGER",
+]
+```
 ## CmafMpdProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafMpdProfileType
+
+def get_value() -> CmafMpdProfileType:
+    return "MAIN_PROFILE"
 ```
 
-Values:
-
-- `MAIN_PROFILE`
-- `ON_DEMAND_PROFILE`
-
-<a id="cmafptsoffsethandlingforbframestype"></a>
-
+```python title="Definition"
+CmafMpdProfileType = Literal[
+    "MAIN_PROFILE",
+    "ON_DEMAND_PROFILE",
+]
+```
 ## CmafPtsOffsetHandlingForBFramesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafPtsOffsetHandlingForBFramesType
+
+def get_value() -> CmafPtsOffsetHandlingForBFramesType:
+    return "MATCH_INITIAL_PTS"
 ```
 
-Values:
-
-- `MATCH_INITIAL_PTS`
-- `ZERO_BASED`
-
-<a id="cmafsegmentcontroltype"></a>
-
+```python title="Definition"
+CmafPtsOffsetHandlingForBFramesType = Literal[
+    "MATCH_INITIAL_PTS",
+    "ZERO_BASED",
+]
+```
 ## CmafSegmentControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafSegmentControlType
+
+def get_value() -> CmafSegmentControlType:
+    return "SEGMENTED_FILES"
 ```
 
-Values:
-
-- `SEGMENTED_FILES`
-- `SINGLE_FILE`
-
-<a id="cmafsegmentlengthcontroltype"></a>
-
+```python title="Definition"
+CmafSegmentControlType = Literal[
+    "SEGMENTED_FILES",
+    "SINGLE_FILE",
+]
+```
 ## CmafSegmentLengthControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafSegmentLengthControlType
+
+def get_value() -> CmafSegmentLengthControlType:
+    return "EXACT"
 ```
 
-Values:
-
-- `EXACT`
-- `GOP_MULTIPLE`
-
-<a id="cmafstreaminfresolutiontype"></a>
-
+```python title="Definition"
+CmafSegmentLengthControlType = Literal[
+    "EXACT",
+    "GOP_MULTIPLE",
+]
+```
 ## CmafStreamInfResolutionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafStreamInfResolutionType
+
+def get_value() -> CmafStreamInfResolutionType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="cmaftargetdurationcompatibilitymodetype"></a>
-
+```python title="Definition"
+CmafStreamInfResolutionType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## CmafTargetDurationCompatibilityModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafTargetDurationCompatibilityModeType
+
+def get_value() -> CmafTargetDurationCompatibilityModeType:
+    return "LEGACY"
 ```
 
-Values:
-
-- `LEGACY`
-- `SPEC_COMPLIANT`
-
-<a id="cmafwritedashmanifesttype"></a>
-
+```python title="Definition"
+CmafTargetDurationCompatibilityModeType = Literal[
+    "LEGACY",
+    "SPEC_COMPLIANT",
+]
+```
 ## CmafWriteDASHManifestType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafWriteDASHManifestType
+
+def get_value() -> CmafWriteDASHManifestType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="cmafwritehlsmanifesttype"></a>
-
+```python title="Definition"
+CmafWriteDASHManifestType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## CmafWriteHLSManifestType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafWriteHLSManifestType
+
+def get_value() -> CmafWriteHLSManifestType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="cmafwritesegmenttimelineinrepresentationtype"></a>
-
+```python title="Definition"
+CmafWriteHLSManifestType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## CmafWriteSegmentTimelineInRepresentationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmafWriteSegmentTimelineInRepresentationType
+
+def get_value() -> CmafWriteSegmentTimelineInRepresentationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="cmfcaudiodurationtype"></a>
-
+```python title="Definition"
+CmafWriteSegmentTimelineInRepresentationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## CmfcAudioDurationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmfcAudioDurationType
+
+def get_value() -> CmfcAudioDurationType:
+    return "DEFAULT_CODEC_DURATION"
 ```
 
-Values:
-
-- `DEFAULT_CODEC_DURATION`
-- `MATCH_VIDEO_DURATION`
-
-<a id="cmfcaudiotracktypetype"></a>
-
+```python title="Definition"
+CmfcAudioDurationType = Literal[
+    "DEFAULT_CODEC_DURATION",
+    "MATCH_VIDEO_DURATION",
+]
+```
 ## CmfcAudioTrackTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmfcAudioTrackTypeType
+
+def get_value() -> CmfcAudioTrackTypeType:
+    return "ALTERNATE_AUDIO_AUTO_SELECT"
 ```
 
-Values:
-
-- `ALTERNATE_AUDIO_AUTO_SELECT`
-- `ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT`
-- `ALTERNATE_AUDIO_NOT_AUTO_SELECT`
-
-<a id="cmfcdescriptivevideoserviceflagtype"></a>
-
+```python title="Definition"
+CmfcAudioTrackTypeType = Literal[
+    "ALTERNATE_AUDIO_AUTO_SELECT",
+    "ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT",
+    "ALTERNATE_AUDIO_NOT_AUTO_SELECT",
+]
+```
 ## CmfcDescriptiveVideoServiceFlagType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmfcDescriptiveVideoServiceFlagType
+
+def get_value() -> CmfcDescriptiveVideoServiceFlagType:
+    return "DONT_FLAG"
 ```
 
-Values:
-
-- `DONT_FLAG`
-- `FLAG`
-
-<a id="cmfciframeonlymanifesttype"></a>
-
+```python title="Definition"
+CmfcDescriptiveVideoServiceFlagType = Literal[
+    "DONT_FLAG",
+    "FLAG",
+]
+```
 ## CmfcIFrameOnlyManifestType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmfcIFrameOnlyManifestType
+
+def get_value() -> CmfcIFrameOnlyManifestType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="cmfcscte35esamtype"></a>
-
+```python title="Definition"
+CmfcIFrameOnlyManifestType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## CmfcScte35EsamType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmfcScte35EsamType
+
+def get_value() -> CmfcScte35EsamType:
+    return "INSERT"
 ```
 
-Values:
-
-- `INSERT`
-- `NONE`
-
-<a id="cmfcscte35sourcetype"></a>
-
+```python title="Definition"
+CmfcScte35EsamType = Literal[
+    "INSERT",
+    "NONE",
+]
+```
 ## CmfcScte35SourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmfcScte35SourceType
+
+def get_value() -> CmfcScte35SourceType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PASSTHROUGH`
-
-<a id="cmfctimedmetadatatype"></a>
-
+```python title="Definition"
+CmfcScte35SourceType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+]
+```
 ## CmfcTimedMetadataType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CmfcTimedMetadataType
+
+def get_value() -> CmfcTimedMetadataType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PASSTHROUGH`
-
-<a id="colormetadatatype"></a>
-
+```python title="Definition"
+CmfcTimedMetadataType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+]
+```
 ## ColorMetadataType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ColorMetadataType
+
+def get_value() -> ColorMetadataType:
+    return "IGNORE"
 ```
 
-Values:
-
-- `IGNORE`
-- `INSERT`
-
-<a id="colorspaceconversiontype"></a>
-
+```python title="Definition"
+ColorMetadataType = Literal[
+    "IGNORE",
+    "INSERT",
+]
+```
 ## ColorSpaceConversionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ColorSpaceConversionType
+
+def get_value() -> ColorSpaceConversionType:
+    return "FORCE_601"
 ```
 
-Values:
-
-- `FORCE_601`
-- `FORCE_709`
-- `FORCE_HDR10`
-- `FORCE_HLG_2020`
-- `NONE`
-
-<a id="colorspacetype"></a>
-
+```python title="Definition"
+ColorSpaceConversionType = Literal[
+    "FORCE_601",
+    "FORCE_709",
+    "FORCE_HDR10",
+    "FORCE_HLG_2020",
+    "NONE",
+]
+```
 ## ColorSpaceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ColorSpaceType
+
+def get_value() -> ColorSpaceType:
+    return "FOLLOW"
 ```
 
-Values:
-
-- `FOLLOW`
-- `HDR10`
-- `HLG_2020`
-- `REC_601`
-- `REC_709`
-
-<a id="colorspaceusagetype"></a>
-
+```python title="Definition"
+ColorSpaceType = Literal[
+    "FOLLOW",
+    "HDR10",
+    "HLG_2020",
+    "REC_601",
+    "REC_709",
+]
+```
 ## ColorSpaceUsageType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ColorSpaceUsageType
+
+def get_value() -> ColorSpaceUsageType:
+    return "FALLBACK"
 ```
 
-Values:
-
-- `FALLBACK`
-- `FORCE`
-
-<a id="commitmenttype"></a>
-
+```python title="Definition"
+ColorSpaceUsageType = Literal[
+    "FALLBACK",
+    "FORCE",
+]
+```
 ## CommitmentType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CommitmentType
+
+def get_value() -> CommitmentType:
+    return "ONE_YEAR"
 ```
 
-Values:
-
-- `ONE_YEAR`
-
-<a id="containertypetype"></a>
-
+```python title="Definition"
+CommitmentType = Literal[
+    "ONE_YEAR",
+]
+```
 ## ContainerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ContainerTypeType
+
+def get_value() -> ContainerTypeType:
+    return "CMFC"
 ```
 
-Values:
-
-- `CMFC`
-- `F4V`
-- `ISMV`
-- `M2TS`
-- `M3U8`
-- `MOV`
-- `MP4`
-- `MPD`
-- `MXF`
-- `RAW`
-- `WEBM`
-
-<a id="copyprotectionactiontype"></a>
-
+```python title="Definition"
+ContainerTypeType = Literal[
+    "CMFC",
+    "F4V",
+    "ISMV",
+    "M2TS",
+    "M3U8",
+    "MOV",
+    "MP4",
+    "MPD",
+    "MXF",
+    "RAW",
+    "WEBM",
+]
+```
 ## CopyProtectionActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import CopyProtectionActionType
+
+def get_value() -> CopyProtectionActionType:
+    return "PASSTHROUGH"
 ```
 
-Values:
-
-- `PASSTHROUGH`
-- `STRIP`
-
-<a id="dashisogroupaudiochannelconfigschemeiduritype"></a>
-
+```python title="Definition"
+CopyProtectionActionType = Literal[
+    "PASSTHROUGH",
+    "STRIP",
+]
+```
 ## DashIsoGroupAudioChannelConfigSchemeIdUriType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoGroupAudioChannelConfigSchemeIdUriType
+
+def get_value() -> DashIsoGroupAudioChannelConfigSchemeIdUriType:
+    return "DOLBY_CHANNEL_CONFIGURATION"
 ```
 
-Values:
-
-- `DOLBY_CHANNEL_CONFIGURATION`
-- `MPEG_CHANNEL_CONFIGURATION`
-
-<a id="dashisohbbtvcompliancetype"></a>
-
+```python title="Definition"
+DashIsoGroupAudioChannelConfigSchemeIdUriType = Literal[
+    "DOLBY_CHANNEL_CONFIGURATION",
+    "MPEG_CHANNEL_CONFIGURATION",
+]
+```
 ## DashIsoHbbtvComplianceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoHbbtvComplianceType
+
+def get_value() -> DashIsoHbbtvComplianceType:
+    return "HBBTV_1_5"
 ```
 
-Values:
-
-- `HBBTV_1_5`
-- `NONE`
-
-<a id="dashisoimagebasedtrickplaytype"></a>
-
+```python title="Definition"
+DashIsoHbbtvComplianceType = Literal[
+    "HBBTV_1_5",
+    "NONE",
+]
+```
 ## DashIsoImageBasedTrickPlayType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoImageBasedTrickPlayType
+
+def get_value() -> DashIsoImageBasedTrickPlayType:
+    return "ADVANCED"
 ```
 
-Values:
-
-- `ADVANCED`
-- `NONE`
-- `THUMBNAIL`
-- `THUMBNAIL_AND_FULLFRAME`
-
-<a id="dashisointervalcadencetype"></a>
-
+```python title="Definition"
+DashIsoImageBasedTrickPlayType = Literal[
+    "ADVANCED",
+    "NONE",
+    "THUMBNAIL",
+    "THUMBNAIL_AND_FULLFRAME",
+]
+```
 ## DashIsoIntervalCadenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoIntervalCadenceType
+
+def get_value() -> DashIsoIntervalCadenceType:
+    return "FOLLOW_CUSTOM"
 ```
 
-Values:
-
-- `FOLLOW_CUSTOM`
-- `FOLLOW_IFRAME`
-
-<a id="dashisompdprofiletype"></a>
-
+```python title="Definition"
+DashIsoIntervalCadenceType = Literal[
+    "FOLLOW_CUSTOM",
+    "FOLLOW_IFRAME",
+]
+```
 ## DashIsoMpdProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoMpdProfileType
+
+def get_value() -> DashIsoMpdProfileType:
+    return "MAIN_PROFILE"
 ```
 
-Values:
-
-- `MAIN_PROFILE`
-- `ON_DEMAND_PROFILE`
-
-<a id="dashisoplaybackdevicecompatibilitytype"></a>
-
+```python title="Definition"
+DashIsoMpdProfileType = Literal[
+    "MAIN_PROFILE",
+    "ON_DEMAND_PROFILE",
+]
+```
 ## DashIsoPlaybackDeviceCompatibilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoPlaybackDeviceCompatibilityType
+
+def get_value() -> DashIsoPlaybackDeviceCompatibilityType:
+    return "CENC_V1"
 ```
 
-Values:
-
-- `CENC_V1`
-- `UNENCRYPTED_SEI`
-
-<a id="dashisoptsoffsethandlingforbframestype"></a>
-
+```python title="Definition"
+DashIsoPlaybackDeviceCompatibilityType = Literal[
+    "CENC_V1",
+    "UNENCRYPTED_SEI",
+]
+```
 ## DashIsoPtsOffsetHandlingForBFramesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoPtsOffsetHandlingForBFramesType
+
+def get_value() -> DashIsoPtsOffsetHandlingForBFramesType:
+    return "MATCH_INITIAL_PTS"
 ```
 
-Values:
-
-- `MATCH_INITIAL_PTS`
-- `ZERO_BASED`
-
-<a id="dashisosegmentcontroltype"></a>
-
+```python title="Definition"
+DashIsoPtsOffsetHandlingForBFramesType = Literal[
+    "MATCH_INITIAL_PTS",
+    "ZERO_BASED",
+]
+```
 ## DashIsoSegmentControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoSegmentControlType
+
+def get_value() -> DashIsoSegmentControlType:
+    return "SEGMENTED_FILES"
 ```
 
-Values:
-
-- `SEGMENTED_FILES`
-- `SINGLE_FILE`
-
-<a id="dashisosegmentlengthcontroltype"></a>
-
+```python title="Definition"
+DashIsoSegmentControlType = Literal[
+    "SEGMENTED_FILES",
+    "SINGLE_FILE",
+]
+```
 ## DashIsoSegmentLengthControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoSegmentLengthControlType
+
+def get_value() -> DashIsoSegmentLengthControlType:
+    return "EXACT"
 ```
 
-Values:
-
-- `EXACT`
-- `GOP_MULTIPLE`
-
-<a id="dashisowritesegmenttimelineinrepresentationtype"></a>
-
+```python title="Definition"
+DashIsoSegmentLengthControlType = Literal[
+    "EXACT",
+    "GOP_MULTIPLE",
+]
+```
 ## DashIsoWriteSegmentTimelineInRepresentationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DashIsoWriteSegmentTimelineInRepresentationType
+
+def get_value() -> DashIsoWriteSegmentTimelineInRepresentationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="decryptionmodetype"></a>
-
+```python title="Definition"
+DashIsoWriteSegmentTimelineInRepresentationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## DecryptionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DecryptionModeType
+
+def get_value() -> DecryptionModeType:
+    return "AES_CBC"
 ```
 
-Values:
-
-- `AES_CBC`
-- `AES_CTR`
-- `AES_GCM`
-
-<a id="deinterlacealgorithmtype"></a>
-
+```python title="Definition"
+DecryptionModeType = Literal[
+    "AES_CBC",
+    "AES_CTR",
+    "AES_GCM",
+]
+```
 ## DeinterlaceAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DeinterlaceAlgorithmType
+
+def get_value() -> DeinterlaceAlgorithmType:
+    return "BLEND"
 ```
 
-Values:
-
-- `BLEND`
-- `BLEND_TICKER`
-- `INTERPOLATE`
-- `INTERPOLATE_TICKER`
-
-<a id="deinterlacercontroltype"></a>
-
+```python title="Definition"
+DeinterlaceAlgorithmType = Literal[
+    "BLEND",
+    "BLEND_TICKER",
+    "INTERPOLATE",
+    "INTERPOLATE_TICKER",
+]
+```
 ## DeinterlacerControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DeinterlacerControlType
+
+def get_value() -> DeinterlacerControlType:
+    return "FORCE_ALL_FRAMES"
 ```
 
-Values:
-
-- `FORCE_ALL_FRAMES`
-- `NORMAL`
-
-<a id="deinterlacermodetype"></a>
-
+```python title="Definition"
+DeinterlacerControlType = Literal[
+    "FORCE_ALL_FRAMES",
+    "NORMAL",
+]
+```
 ## DeinterlacerModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DeinterlacerModeType
+
+def get_value() -> DeinterlacerModeType:
+    return "ADAPTIVE"
 ```
 
-Values:
-
-- `ADAPTIVE`
-- `DEINTERLACE`
-- `INVERSE_TELECINE`
-
-<a id="describeendpointsmodetype"></a>
-
+```python title="Definition"
+DeinterlacerModeType = Literal[
+    "ADAPTIVE",
+    "DEINTERLACE",
+    "INVERSE_TELECINE",
+]
+```
 ## DescribeEndpointsModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DescribeEndpointsModeType
+
+def get_value() -> DescribeEndpointsModeType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `DEFAULT`
-- `GET_ONLY`
-
-<a id="describeendpointspaginatorname"></a>
-
+```python title="Definition"
+DescribeEndpointsModeType = Literal[
+    "DEFAULT",
+    "GET_ONLY",
+]
+```
 ## DescribeEndpointsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DescribeEndpointsPaginatorName
+
+def get_value() -> DescribeEndpointsPaginatorName:
+    return "describe_endpoints"
 ```
 
-Values:
-
-- `describe_endpoints`
-
-<a id="dolbyvisionlevel6modetype"></a>
-
+```python title="Definition"
+DescribeEndpointsPaginatorName = Literal[
+    "describe_endpoints",
+]
+```
 ## DolbyVisionLevel6ModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DolbyVisionLevel6ModeType
+
+def get_value() -> DolbyVisionLevel6ModeType:
+    return "PASSTHROUGH"
 ```
 
-Values:
-
-- `PASSTHROUGH`
-- `RECALCULATE`
-- `SPECIFY`
-
-<a id="dolbyvisionprofiletype"></a>
-
+```python title="Definition"
+DolbyVisionLevel6ModeType = Literal[
+    "PASSTHROUGH",
+    "RECALCULATE",
+    "SPECIFY",
+]
+```
 ## DolbyVisionProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DolbyVisionProfileType
+
+def get_value() -> DolbyVisionProfileType:
+    return "PROFILE_5"
 ```
 
-Values:
-
-- `PROFILE_5`
-
-<a id="dropframetimecodetype"></a>
-
+```python title="Definition"
+DolbyVisionProfileType = Literal[
+    "PROFILE_5",
+]
+```
 ## DropFrameTimecodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DropFrameTimecodeType
+
+def get_value() -> DropFrameTimecodeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="dvbsubsubtitlefallbackfonttype"></a>
-
+```python title="Definition"
+DropFrameTimecodeType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## DvbSubSubtitleFallbackFontType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubSubtitleFallbackFontType
+
+def get_value() -> DvbSubSubtitleFallbackFontType:
+    return "BEST_MATCH"
 ```
 
-Values:
-
-- `BEST_MATCH`
-- `MONOSPACED_SANSSERIF`
-- `MONOSPACED_SERIF`
-- `PROPORTIONAL_SANSSERIF`
-- `PROPORTIONAL_SERIF`
-
-<a id="dvbsubtitlealignmenttype"></a>
-
+```python title="Definition"
+DvbSubSubtitleFallbackFontType = Literal[
+    "BEST_MATCH",
+    "MONOSPACED_SANSSERIF",
+    "MONOSPACED_SERIF",
+    "PROPORTIONAL_SANSSERIF",
+    "PROPORTIONAL_SERIF",
+]
+```
 ## DvbSubtitleAlignmentType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubtitleAlignmentType
+
+def get_value() -> DvbSubtitleAlignmentType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `CENTERED`
-- `LEFT`
-
-<a id="dvbsubtitleapplyfontcolortype"></a>
-
+```python title="Definition"
+DvbSubtitleAlignmentType = Literal[
+    "AUTO",
+    "CENTERED",
+    "LEFT",
+]
+```
 ## DvbSubtitleApplyFontColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubtitleApplyFontColorType
+
+def get_value() -> DvbSubtitleApplyFontColorType:
+    return "ALL_TEXT"
 ```
 
-Values:
-
-- `ALL_TEXT`
-- `WHITE_TEXT_ONLY`
-
-<a id="dvbsubtitlebackgroundcolortype"></a>
-
+```python title="Definition"
+DvbSubtitleApplyFontColorType = Literal[
+    "ALL_TEXT",
+    "WHITE_TEXT_ONLY",
+]
+```
 ## DvbSubtitleBackgroundColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubtitleBackgroundColorType
+
+def get_value() -> DvbSubtitleBackgroundColorType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `BLACK`
-- `NONE`
-- `WHITE`
-
-<a id="dvbsubtitlefontcolortype"></a>
-
+```python title="Definition"
+DvbSubtitleBackgroundColorType = Literal[
+    "AUTO",
+    "BLACK",
+    "NONE",
+    "WHITE",
+]
+```
 ## DvbSubtitleFontColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubtitleFontColorType
+
+def get_value() -> DvbSubtitleFontColorType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `BLACK`
-- `BLUE`
-- `GREEN`
-- `HEX`
-- `RED`
-- `WHITE`
-- `YELLOW`
-
-<a id="dvbsubtitleoutlinecolortype"></a>
-
+```python title="Definition"
+DvbSubtitleFontColorType = Literal[
+    "AUTO",
+    "BLACK",
+    "BLUE",
+    "GREEN",
+    "HEX",
+    "RED",
+    "WHITE",
+    "YELLOW",
+]
+```
 ## DvbSubtitleOutlineColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubtitleOutlineColorType
+
+def get_value() -> DvbSubtitleOutlineColorType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `BLACK`
-- `BLUE`
-- `GREEN`
-- `RED`
-- `WHITE`
-- `YELLOW`
-
-<a id="dvbsubtitleshadowcolortype"></a>
-
+```python title="Definition"
+DvbSubtitleOutlineColorType = Literal[
+    "AUTO",
+    "BLACK",
+    "BLUE",
+    "GREEN",
+    "RED",
+    "WHITE",
+    "YELLOW",
+]
+```
 ## DvbSubtitleShadowColorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubtitleShadowColorType
+
+def get_value() -> DvbSubtitleShadowColorType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `BLACK`
-- `NONE`
-- `WHITE`
-
-<a id="dvbsubtitlestylepassthroughtype"></a>
-
+```python title="Definition"
+DvbSubtitleShadowColorType = Literal[
+    "AUTO",
+    "BLACK",
+    "NONE",
+    "WHITE",
+]
+```
 ## DvbSubtitleStylePassthroughType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubtitleStylePassthroughType
+
+def get_value() -> DvbSubtitleStylePassthroughType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="dvbsubtitleteletextspacingtype"></a>
-
+```python title="Definition"
+DvbSubtitleStylePassthroughType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## DvbSubtitleTeletextSpacingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubtitleTeletextSpacingType
+
+def get_value() -> DvbSubtitleTeletextSpacingType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `FIXED_GRID`
-- `PROPORTIONAL`
-
-<a id="dvbsubtitlingtypetype"></a>
-
+```python title="Definition"
+DvbSubtitleTeletextSpacingType = Literal[
+    "AUTO",
+    "FIXED_GRID",
+    "PROPORTIONAL",
+]
+```
 ## DvbSubtitlingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbSubtitlingTypeType
+
+def get_value() -> DvbSubtitlingTypeType:
+    return "HEARING_IMPAIRED"
 ```
 
-Values:
-
-- `HEARING_IMPAIRED`
-- `STANDARD`
-
-<a id="dvbddshandlingtype"></a>
-
+```python title="Definition"
+DvbSubtitlingTypeType = Literal[
+    "HEARING_IMPAIRED",
+    "STANDARD",
+]
+```
 ## DvbddsHandlingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import DvbddsHandlingType
+
+def get_value() -> DvbddsHandlingType:
+    return "NONE"
 ```
 
-Values:
-
-- `NO_DISPLAY_WINDOW`
-- `NONE`
-- `SPECIFIED`
-
-<a id="eac3atmosbitstreammodetype"></a>
-
+```python title="Definition"
+DvbddsHandlingType = Literal[
+    "NO_DISPLAY_WINDOW",
+    "NONE",
+    "SPECIFIED",
+]
+```
 ## Eac3AtmosBitstreamModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosBitstreamModeType
+
+def get_value() -> Eac3AtmosBitstreamModeType:
+    return "COMPLETE_MAIN"
 ```
 
-Values:
-
-- `COMPLETE_MAIN`
-
-<a id="eac3atmoscodingmodetype"></a>
-
+```python title="Definition"
+Eac3AtmosBitstreamModeType = Literal[
+    "COMPLETE_MAIN",
+]
+```
 ## Eac3AtmosCodingModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosCodingModeType
+
+def get_value() -> Eac3AtmosCodingModeType:
+    return "CODING_MODE_5_1_4"
 ```
 
-Values:
-
-- `CODING_MODE_5_1_4`
-- `CODING_MODE_7_1_4`
-- `CODING_MODE_9_1_6`
-- `CODING_MODE_AUTO`
-
-<a id="eac3atmosdialogueintelligencetype"></a>
-
+```python title="Definition"
+Eac3AtmosCodingModeType = Literal[
+    "CODING_MODE_5_1_4",
+    "CODING_MODE_7_1_4",
+    "CODING_MODE_9_1_6",
+    "CODING_MODE_AUTO",
+]
+```
 ## Eac3AtmosDialogueIntelligenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosDialogueIntelligenceType
+
+def get_value() -> Eac3AtmosDialogueIntelligenceType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="eac3atmosdownmixcontroltype"></a>
-
+```python title="Definition"
+Eac3AtmosDialogueIntelligenceType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## Eac3AtmosDownmixControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosDownmixControlType
+
+def get_value() -> Eac3AtmosDownmixControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="eac3atmosdynamicrangecompressionlinetype"></a>
-
+```python title="Definition"
+Eac3AtmosDownmixControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Eac3AtmosDynamicRangeCompressionLineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosDynamicRangeCompressionLineType
+
+def get_value() -> Eac3AtmosDynamicRangeCompressionLineType:
+    return "FILM_LIGHT"
 ```
 
-Values:
-
-- `FILM_LIGHT`
-- `FILM_STANDARD`
-- `MUSIC_LIGHT`
-- `MUSIC_STANDARD`
-- `NONE`
-- `SPEECH`
-
-<a id="eac3atmosdynamicrangecompressionrftype"></a>
-
+```python title="Definition"
+Eac3AtmosDynamicRangeCompressionLineType = Literal[
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH",
+]
+```
 ## Eac3AtmosDynamicRangeCompressionRfType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosDynamicRangeCompressionRfType
+
+def get_value() -> Eac3AtmosDynamicRangeCompressionRfType:
+    return "FILM_LIGHT"
 ```
 
-Values:
-
-- `FILM_LIGHT`
-- `FILM_STANDARD`
-- `MUSIC_LIGHT`
-- `MUSIC_STANDARD`
-- `NONE`
-- `SPEECH`
-
-<a id="eac3atmosdynamicrangecontroltype"></a>
-
+```python title="Definition"
+Eac3AtmosDynamicRangeCompressionRfType = Literal[
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH",
+]
+```
 ## Eac3AtmosDynamicRangeControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosDynamicRangeControlType
+
+def get_value() -> Eac3AtmosDynamicRangeControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="eac3atmosmeteringmodetype"></a>
-
+```python title="Definition"
+Eac3AtmosDynamicRangeControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Eac3AtmosMeteringModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosMeteringModeType
+
+def get_value() -> Eac3AtmosMeteringModeType:
+    return "ITU_BS_1770_1"
 ```
 
-Values:
-
-- `ITU_BS_1770_1`
-- `ITU_BS_1770_2`
-- `ITU_BS_1770_3`
-- `ITU_BS_1770_4`
-- `LEQ_A`
-
-<a id="eac3atmosstereodownmixtype"></a>
-
+```python title="Definition"
+Eac3AtmosMeteringModeType = Literal[
+    "ITU_BS_1770_1",
+    "ITU_BS_1770_2",
+    "ITU_BS_1770_3",
+    "ITU_BS_1770_4",
+    "LEQ_A",
+]
+```
 ## Eac3AtmosStereoDownmixType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosStereoDownmixType
+
+def get_value() -> Eac3AtmosStereoDownmixType:
+    return "DPL2"
 ```
 
-Values:
-
-- `DPL2`
-- `NOT_INDICATED`
-- `STEREO`
-- `SURROUND`
-
-<a id="eac3atmossurroundexmodetype"></a>
-
+```python title="Definition"
+Eac3AtmosStereoDownmixType = Literal[
+    "DPL2",
+    "NOT_INDICATED",
+    "STEREO",
+    "SURROUND",
+]
+```
 ## Eac3AtmosSurroundExModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AtmosSurroundExModeType
+
+def get_value() -> Eac3AtmosSurroundExModeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-- `NOT_INDICATED`
-
-<a id="eac3attenuationcontroltype"></a>
-
+```python title="Definition"
+Eac3AtmosSurroundExModeType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "NOT_INDICATED",
+]
+```
 ## Eac3AttenuationControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3AttenuationControlType
+
+def get_value() -> Eac3AttenuationControlType:
+    return "ATTENUATE_3_DB"
 ```
 
-Values:
-
-- `ATTENUATE_3_DB`
-- `NONE`
-
-<a id="eac3bitstreammodetype"></a>
-
+```python title="Definition"
+Eac3AttenuationControlType = Literal[
+    "ATTENUATE_3_DB",
+    "NONE",
+]
+```
 ## Eac3BitstreamModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3BitstreamModeType
+
+def get_value() -> Eac3BitstreamModeType:
+    return "COMMENTARY"
 ```
 
-Values:
-
-- `COMMENTARY`
-- `COMPLETE_MAIN`
-- `EMERGENCY`
-- `HEARING_IMPAIRED`
-- `VISUALLY_IMPAIRED`
-
-<a id="eac3codingmodetype"></a>
-
+```python title="Definition"
+Eac3BitstreamModeType = Literal[
+    "COMMENTARY",
+    "COMPLETE_MAIN",
+    "EMERGENCY",
+    "HEARING_IMPAIRED",
+    "VISUALLY_IMPAIRED",
+]
+```
 ## Eac3CodingModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3CodingModeType
+
+def get_value() -> Eac3CodingModeType:
+    return "CODING_MODE_1_0"
 ```
 
-Values:
-
-- `CODING_MODE_1_0`
-- `CODING_MODE_2_0`
-- `CODING_MODE_3_2`
-
-<a id="eac3dcfiltertype"></a>
-
+```python title="Definition"
+Eac3CodingModeType = Literal[
+    "CODING_MODE_1_0",
+    "CODING_MODE_2_0",
+    "CODING_MODE_3_2",
+]
+```
 ## Eac3DcFilterType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3DcFilterType
+
+def get_value() -> Eac3DcFilterType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="eac3dynamicrangecompressionlinetype"></a>
-
+```python title="Definition"
+Eac3DcFilterType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## Eac3DynamicRangeCompressionLineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3DynamicRangeCompressionLineType
+
+def get_value() -> Eac3DynamicRangeCompressionLineType:
+    return "FILM_LIGHT"
 ```
 
-Values:
-
-- `FILM_LIGHT`
-- `FILM_STANDARD`
-- `MUSIC_LIGHT`
-- `MUSIC_STANDARD`
-- `NONE`
-- `SPEECH`
-
-<a id="eac3dynamicrangecompressionrftype"></a>
-
+```python title="Definition"
+Eac3DynamicRangeCompressionLineType = Literal[
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH",
+]
+```
 ## Eac3DynamicRangeCompressionRfType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3DynamicRangeCompressionRfType
+
+def get_value() -> Eac3DynamicRangeCompressionRfType:
+    return "FILM_LIGHT"
 ```
 
-Values:
-
-- `FILM_LIGHT`
-- `FILM_STANDARD`
-- `MUSIC_LIGHT`
-- `MUSIC_STANDARD`
-- `NONE`
-- `SPEECH`
-
-<a id="eac3lfecontroltype"></a>
-
+```python title="Definition"
+Eac3DynamicRangeCompressionRfType = Literal[
+    "FILM_LIGHT",
+    "FILM_STANDARD",
+    "MUSIC_LIGHT",
+    "MUSIC_STANDARD",
+    "NONE",
+    "SPEECH",
+]
+```
 ## Eac3LfeControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3LfeControlType
+
+def get_value() -> Eac3LfeControlType:
+    return "LFE"
 ```
 
-Values:
-
-- `LFE`
-- `NO_LFE`
-
-<a id="eac3lfefiltertype"></a>
-
+```python title="Definition"
+Eac3LfeControlType = Literal[
+    "LFE",
+    "NO_LFE",
+]
+```
 ## Eac3LfeFilterType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3LfeFilterType
+
+def get_value() -> Eac3LfeFilterType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="eac3metadatacontroltype"></a>
-
+```python title="Definition"
+Eac3LfeFilterType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## Eac3MetadataControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3MetadataControlType
+
+def get_value() -> Eac3MetadataControlType:
+    return "FOLLOW_INPUT"
 ```
 
-Values:
-
-- `FOLLOW_INPUT`
-- `USE_CONFIGURED`
-
-<a id="eac3passthroughcontroltype"></a>
-
+```python title="Definition"
+Eac3MetadataControlType = Literal[
+    "FOLLOW_INPUT",
+    "USE_CONFIGURED",
+]
+```
 ## Eac3PassthroughControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3PassthroughControlType
+
+def get_value() -> Eac3PassthroughControlType:
+    return "NO_PASSTHROUGH"
 ```
 
-Values:
-
-- `NO_PASSTHROUGH`
-- `WHEN_POSSIBLE`
-
-<a id="eac3phasecontroltype"></a>
-
+```python title="Definition"
+Eac3PassthroughControlType = Literal[
+    "NO_PASSTHROUGH",
+    "WHEN_POSSIBLE",
+]
+```
 ## Eac3PhaseControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3PhaseControlType
+
+def get_value() -> Eac3PhaseControlType:
+    return "NO_SHIFT"
 ```
 
-Values:
-
-- `NO_SHIFT`
-- `SHIFT_90_DEGREES`
-
-<a id="eac3stereodownmixtype"></a>
-
+```python title="Definition"
+Eac3PhaseControlType = Literal[
+    "NO_SHIFT",
+    "SHIFT_90_DEGREES",
+]
+```
 ## Eac3StereoDownmixType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3StereoDownmixType
+
+def get_value() -> Eac3StereoDownmixType:
+    return "DPL2"
 ```
 
-Values:
-
-- `DPL2`
-- `LO_RO`
-- `LT_RT`
-- `NOT_INDICATED`
-
-<a id="eac3surroundexmodetype"></a>
-
+```python title="Definition"
+Eac3StereoDownmixType = Literal[
+    "DPL2",
+    "LO_RO",
+    "LT_RT",
+    "NOT_INDICATED",
+]
+```
 ## Eac3SurroundExModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3SurroundExModeType
+
+def get_value() -> Eac3SurroundExModeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-- `NOT_INDICATED`
-
-<a id="eac3surroundmodetype"></a>
-
+```python title="Definition"
+Eac3SurroundExModeType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "NOT_INDICATED",
+]
+```
 ## Eac3SurroundModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Eac3SurroundModeType
+
+def get_value() -> Eac3SurroundModeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-- `NOT_INDICATED`
-
-<a id="embeddedconvert608to708type"></a>
-
+```python title="Definition"
+Eac3SurroundModeType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "NOT_INDICATED",
+]
+```
 ## EmbeddedConvert608To708Type
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import EmbeddedConvert608To708Type
+
+def get_value() -> EmbeddedConvert608To708Type:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `UPCONVERT`
-
-<a id="embeddedterminatecaptionstype"></a>
-
+```python title="Definition"
+EmbeddedConvert608To708Type = Literal[
+    "DISABLED",
+    "UPCONVERT",
+]
+```
 ## EmbeddedTerminateCaptionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import EmbeddedTerminateCaptionsType
+
+def get_value() -> EmbeddedTerminateCaptionsType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `END_OF_INPUT`
-
-<a id="embeddedtimecodeoverridetype"></a>
-
+```python title="Definition"
+EmbeddedTerminateCaptionsType = Literal[
+    "DISABLED",
+    "END_OF_INPUT",
+]
+```
 ## EmbeddedTimecodeOverrideType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import EmbeddedTimecodeOverrideType
+
+def get_value() -> EmbeddedTimecodeOverrideType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `USE_MDPM`
-
-<a id="f4vmoovplacementtype"></a>
-
+```python title="Definition"
+EmbeddedTimecodeOverrideType = Literal[
+    "NONE",
+    "USE_MDPM",
+]
+```
 ## F4vMoovPlacementType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import F4vMoovPlacementType
+
+def get_value() -> F4vMoovPlacementType:
+    return "NORMAL"
 ```
 
-Values:
-
-- `NORMAL`
-- `PROGRESSIVE_DOWNLOAD`
-
-<a id="filesourceconvert608to708type"></a>
-
+```python title="Definition"
+F4vMoovPlacementType = Literal[
+    "NORMAL",
+    "PROGRESSIVE_DOWNLOAD",
+]
+```
 ## FileSourceConvert608To708Type
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import FileSourceConvert608To708Type
+
+def get_value() -> FileSourceConvert608To708Type:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `UPCONVERT`
-
-<a id="filesourcetimedeltaunitstype"></a>
-
+```python title="Definition"
+FileSourceConvert608To708Type = Literal[
+    "DISABLED",
+    "UPCONVERT",
+]
+```
 ## FileSourceTimeDeltaUnitsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import FileSourceTimeDeltaUnitsType
+
+def get_value() -> FileSourceTimeDeltaUnitsType:
+    return "MILLISECONDS"
 ```
 
-Values:
-
-- `MILLISECONDS`
-- `SECONDS`
-
-<a id="fontscripttype"></a>
-
+```python title="Definition"
+FileSourceTimeDeltaUnitsType = Literal[
+    "MILLISECONDS",
+    "SECONDS",
+]
+```
 ## FontScriptType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import FontScriptType
+
+def get_value() -> FontScriptType:
+    return "AUTOMATIC"
 ```
 
-Values:
-
-- `AUTOMATIC`
-- `HANS`
-- `HANT`
-
-<a id="h264adaptivequantizationtype"></a>
-
+```python title="Definition"
+FontScriptType = Literal[
+    "AUTOMATIC",
+    "HANS",
+    "HANT",
+]
+```
 ## H264AdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264AdaptiveQuantizationType
+
+def get_value() -> H264AdaptiveQuantizationType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `HIGH`
-- `HIGHER`
-- `LOW`
-- `MAX`
-- `MEDIUM`
-- `OFF`
-
-<a id="h264codecleveltype"></a>
-
+```python title="Definition"
+H264AdaptiveQuantizationType = Literal[
+    "AUTO",
+    "HIGH",
+    "HIGHER",
+    "LOW",
+    "MAX",
+    "MEDIUM",
+    "OFF",
+]
+```
 ## H264CodecLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264CodecLevelType
+
+def get_value() -> H264CodecLevelType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `LEVEL_1`
-- `LEVEL_1_1`
-- `LEVEL_1_2`
-- `LEVEL_1_3`
-- `LEVEL_2`
-- `LEVEL_2_1`
-- `LEVEL_2_2`
-- `LEVEL_3`
-- `LEVEL_3_1`
-- `LEVEL_3_2`
-- `LEVEL_4`
-- `LEVEL_4_1`
-- `LEVEL_4_2`
-- `LEVEL_5`
-- `LEVEL_5_1`
-- `LEVEL_5_2`
-
-<a id="h264codecprofiletype"></a>
-
+```python title="Definition"
+H264CodecLevelType = Literal[
+    "AUTO",
+    "LEVEL_1",
+    "LEVEL_1_1",
+    "LEVEL_1_2",
+    "LEVEL_1_3",
+    "LEVEL_2",
+    "LEVEL_2_1",
+    "LEVEL_2_2",
+    "LEVEL_3",
+    "LEVEL_3_1",
+    "LEVEL_3_2",
+    "LEVEL_4",
+    "LEVEL_4_1",
+    "LEVEL_4_2",
+    "LEVEL_5",
+    "LEVEL_5_1",
+    "LEVEL_5_2",
+]
+```
 ## H264CodecProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264CodecProfileType
+
+def get_value() -> H264CodecProfileType:
+    return "BASELINE"
 ```
 
-Values:
-
-- `BASELINE`
-- `HIGH`
-- `HIGH_10BIT`
-- `HIGH_422`
-- `HIGH_422_10BIT`
-- `MAIN`
-
-<a id="h264dynamicsubgoptype"></a>
-
+```python title="Definition"
+H264CodecProfileType = Literal[
+    "BASELINE",
+    "HIGH",
+    "HIGH_10BIT",
+    "HIGH_422",
+    "HIGH_422_10BIT",
+    "MAIN",
+]
+```
 ## H264DynamicSubGopType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264DynamicSubGopType
+
+def get_value() -> H264DynamicSubGopType:
+    return "ADAPTIVE"
 ```
 
-Values:
-
-- `ADAPTIVE`
-- `STATIC`
-
-<a id="h264entropyencodingtype"></a>
-
+```python title="Definition"
+H264DynamicSubGopType = Literal[
+    "ADAPTIVE",
+    "STATIC",
+]
+```
 ## H264EntropyEncodingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264EntropyEncodingType
+
+def get_value() -> H264EntropyEncodingType:
+    return "CABAC"
 ```
 
-Values:
-
-- `CABAC`
-- `CAVLC`
-
-<a id="h264fieldencodingtype"></a>
-
+```python title="Definition"
+H264EntropyEncodingType = Literal[
+    "CABAC",
+    "CAVLC",
+]
+```
 ## H264FieldEncodingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264FieldEncodingType
+
+def get_value() -> H264FieldEncodingType:
+    return "FORCE_FIELD"
 ```
 
-Values:
-
-- `FORCE_FIELD`
-- `MBAFF`
-- `PAFF`
-
-<a id="h264flickeradaptivequantizationtype"></a>
-
+```python title="Definition"
+H264FieldEncodingType = Literal[
+    "FORCE_FIELD",
+    "MBAFF",
+    "PAFF",
+]
+```
 ## H264FlickerAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264FlickerAdaptiveQuantizationType
+
+def get_value() -> H264FlickerAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h264frameratecontroltype"></a>
-
+```python title="Definition"
+H264FlickerAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H264FramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264FramerateControlType
+
+def get_value() -> H264FramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="h264framerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+H264FramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## H264FramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264FramerateConversionAlgorithmType
+
+def get_value() -> H264FramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="h264gopbreferencetype"></a>
-
+```python title="Definition"
+H264FramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## H264GopBReferenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264GopBReferenceType
+
+def get_value() -> H264GopBReferenceType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h264gopsizeunitstype"></a>
-
+```python title="Definition"
+H264GopBReferenceType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H264GopSizeUnitsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264GopSizeUnitsType
+
+def get_value() -> H264GopSizeUnitsType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `FRAMES`
-- `SECONDS`
-
-<a id="h264interlacemodetype"></a>
-
+```python title="Definition"
+H264GopSizeUnitsType = Literal[
+    "AUTO",
+    "FRAMES",
+    "SECONDS",
+]
+```
 ## H264InterlaceModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264InterlaceModeType
+
+def get_value() -> H264InterlaceModeType:
+    return "BOTTOM_FIELD"
 ```
 
-Values:
-
-- `BOTTOM_FIELD`
-- `FOLLOW_BOTTOM_FIELD`
-- `FOLLOW_TOP_FIELD`
-- `PROGRESSIVE`
-- `TOP_FIELD`
-
-<a id="h264parcontroltype"></a>
-
+```python title="Definition"
+H264InterlaceModeType = Literal[
+    "BOTTOM_FIELD",
+    "FOLLOW_BOTTOM_FIELD",
+    "FOLLOW_TOP_FIELD",
+    "PROGRESSIVE",
+    "TOP_FIELD",
+]
+```
 ## H264ParControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264ParControlType
+
+def get_value() -> H264ParControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="h264qualitytuningleveltype"></a>
-
+```python title="Definition"
+H264ParControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## H264QualityTuningLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264QualityTuningLevelType
+
+def get_value() -> H264QualityTuningLevelType:
+    return "MULTI_PASS_HQ"
 ```
 
-Values:
-
-- `MULTI_PASS_HQ`
-- `SINGLE_PASS`
-- `SINGLE_PASS_HQ`
-
-<a id="h264ratecontrolmodetype"></a>
-
+```python title="Definition"
+H264QualityTuningLevelType = Literal[
+    "MULTI_PASS_HQ",
+    "SINGLE_PASS",
+    "SINGLE_PASS_HQ",
+]
+```
 ## H264RateControlModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264RateControlModeType
+
+def get_value() -> H264RateControlModeType:
+    return "CBR"
 ```
 
-Values:
-
-- `CBR`
-- `QVBR`
-- `VBR`
-
-<a id="h264repeatppstype"></a>
-
+```python title="Definition"
+H264RateControlModeType = Literal[
+    "CBR",
+    "QVBR",
+    "VBR",
+]
+```
 ## H264RepeatPpsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264RepeatPpsType
+
+def get_value() -> H264RepeatPpsType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h264scantypeconversionmodetype"></a>
-
+```python title="Definition"
+H264RepeatPpsType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H264ScanTypeConversionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264ScanTypeConversionModeType
+
+def get_value() -> H264ScanTypeConversionModeType:
+    return "INTERLACED"
 ```
 
-Values:
-
-- `INTERLACED`
-- `INTERLACED_OPTIMIZE`
-
-<a id="h264scenechangedetecttype"></a>
-
+```python title="Definition"
+H264ScanTypeConversionModeType = Literal[
+    "INTERLACED",
+    "INTERLACED_OPTIMIZE",
+]
+```
 ## H264SceneChangeDetectType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264SceneChangeDetectType
+
+def get_value() -> H264SceneChangeDetectType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-- `TRANSITION_DETECTION`
-
-<a id="h264slowpaltype"></a>
-
+```python title="Definition"
+H264SceneChangeDetectType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "TRANSITION_DETECTION",
+]
+```
 ## H264SlowPalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264SlowPalType
+
+def get_value() -> H264SlowPalType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h264spatialadaptivequantizationtype"></a>
-
+```python title="Definition"
+H264SlowPalType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H264SpatialAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264SpatialAdaptiveQuantizationType
+
+def get_value() -> H264SpatialAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h264syntaxtype"></a>
-
+```python title="Definition"
+H264SpatialAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H264SyntaxType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264SyntaxType
+
+def get_value() -> H264SyntaxType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `DEFAULT`
-- `RP2027`
-
-<a id="h264telecinetype"></a>
-
+```python title="Definition"
+H264SyntaxType = Literal[
+    "DEFAULT",
+    "RP2027",
+]
+```
 ## H264TelecineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264TelecineType
+
+def get_value() -> H264TelecineType:
+    return "HARD"
 ```
 
-Values:
-
-- `HARD`
-- `NONE`
-- `SOFT`
-
-<a id="h264temporaladaptivequantizationtype"></a>
-
+```python title="Definition"
+H264TelecineType = Literal[
+    "HARD",
+    "NONE",
+    "SOFT",
+]
+```
 ## H264TemporalAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264TemporalAdaptiveQuantizationType
+
+def get_value() -> H264TemporalAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h264unregisteredseitimecodetype"></a>
-
+```python title="Definition"
+H264TemporalAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H264UnregisteredSeiTimecodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H264UnregisteredSeiTimecodeType
+
+def get_value() -> H264UnregisteredSeiTimecodeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265adaptivequantizationtype"></a>
-
+```python title="Definition"
+H264UnregisteredSeiTimecodeType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265AdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265AdaptiveQuantizationType
+
+def get_value() -> H265AdaptiveQuantizationType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `HIGH`
-- `HIGHER`
-- `LOW`
-- `MAX`
-- `MEDIUM`
-- `OFF`
-
-<a id="h265alternatetransferfunctionseitype"></a>
-
+```python title="Definition"
+H265AdaptiveQuantizationType = Literal[
+    "AUTO",
+    "HIGH",
+    "HIGHER",
+    "LOW",
+    "MAX",
+    "MEDIUM",
+    "OFF",
+]
+```
 ## H265AlternateTransferFunctionSeiType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265AlternateTransferFunctionSeiType
+
+def get_value() -> H265AlternateTransferFunctionSeiType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265codecleveltype"></a>
-
+```python title="Definition"
+H265AlternateTransferFunctionSeiType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265CodecLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265CodecLevelType
+
+def get_value() -> H265CodecLevelType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `LEVEL_1`
-- `LEVEL_2`
-- `LEVEL_2_1`
-- `LEVEL_3`
-- `LEVEL_3_1`
-- `LEVEL_4`
-- `LEVEL_4_1`
-- `LEVEL_5`
-- `LEVEL_5_1`
-- `LEVEL_5_2`
-- `LEVEL_6`
-- `LEVEL_6_1`
-- `LEVEL_6_2`
-
-<a id="h265codecprofiletype"></a>
-
+```python title="Definition"
+H265CodecLevelType = Literal[
+    "AUTO",
+    "LEVEL_1",
+    "LEVEL_2",
+    "LEVEL_2_1",
+    "LEVEL_3",
+    "LEVEL_3_1",
+    "LEVEL_4",
+    "LEVEL_4_1",
+    "LEVEL_5",
+    "LEVEL_5_1",
+    "LEVEL_5_2",
+    "LEVEL_6",
+    "LEVEL_6_1",
+    "LEVEL_6_2",
+]
+```
 ## H265CodecProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265CodecProfileType
+
+def get_value() -> H265CodecProfileType:
+    return "MAIN10_HIGH"
 ```
 
-Values:
-
-- `MAIN10_HIGH`
-- `MAIN10_MAIN`
-- `MAIN_422_10BIT_HIGH`
-- `MAIN_422_10BIT_MAIN`
-- `MAIN_422_8BIT_HIGH`
-- `MAIN_422_8BIT_MAIN`
-- `MAIN_HIGH`
-- `MAIN_MAIN`
-
-<a id="h265dynamicsubgoptype"></a>
-
+```python title="Definition"
+H265CodecProfileType = Literal[
+    "MAIN10_HIGH",
+    "MAIN10_MAIN",
+    "MAIN_422_10BIT_HIGH",
+    "MAIN_422_10BIT_MAIN",
+    "MAIN_422_8BIT_HIGH",
+    "MAIN_422_8BIT_MAIN",
+    "MAIN_HIGH",
+    "MAIN_MAIN",
+]
+```
 ## H265DynamicSubGopType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265DynamicSubGopType
+
+def get_value() -> H265DynamicSubGopType:
+    return "ADAPTIVE"
 ```
 
-Values:
-
-- `ADAPTIVE`
-- `STATIC`
-
-<a id="h265flickeradaptivequantizationtype"></a>
-
+```python title="Definition"
+H265DynamicSubGopType = Literal[
+    "ADAPTIVE",
+    "STATIC",
+]
+```
 ## H265FlickerAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265FlickerAdaptiveQuantizationType
+
+def get_value() -> H265FlickerAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265frameratecontroltype"></a>
-
+```python title="Definition"
+H265FlickerAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265FramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265FramerateControlType
+
+def get_value() -> H265FramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="h265framerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+H265FramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## H265FramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265FramerateConversionAlgorithmType
+
+def get_value() -> H265FramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="h265gopbreferencetype"></a>
-
+```python title="Definition"
+H265FramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## H265GopBReferenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265GopBReferenceType
+
+def get_value() -> H265GopBReferenceType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265gopsizeunitstype"></a>
-
+```python title="Definition"
+H265GopBReferenceType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265GopSizeUnitsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265GopSizeUnitsType
+
+def get_value() -> H265GopSizeUnitsType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `FRAMES`
-- `SECONDS`
-
-<a id="h265interlacemodetype"></a>
-
+```python title="Definition"
+H265GopSizeUnitsType = Literal[
+    "AUTO",
+    "FRAMES",
+    "SECONDS",
+]
+```
 ## H265InterlaceModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265InterlaceModeType
+
+def get_value() -> H265InterlaceModeType:
+    return "BOTTOM_FIELD"
 ```
 
-Values:
-
-- `BOTTOM_FIELD`
-- `FOLLOW_BOTTOM_FIELD`
-- `FOLLOW_TOP_FIELD`
-- `PROGRESSIVE`
-- `TOP_FIELD`
-
-<a id="h265parcontroltype"></a>
-
+```python title="Definition"
+H265InterlaceModeType = Literal[
+    "BOTTOM_FIELD",
+    "FOLLOW_BOTTOM_FIELD",
+    "FOLLOW_TOP_FIELD",
+    "PROGRESSIVE",
+    "TOP_FIELD",
+]
+```
 ## H265ParControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265ParControlType
+
+def get_value() -> H265ParControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="h265qualitytuningleveltype"></a>
-
+```python title="Definition"
+H265ParControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## H265QualityTuningLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265QualityTuningLevelType
+
+def get_value() -> H265QualityTuningLevelType:
+    return "MULTI_PASS_HQ"
 ```
 
-Values:
-
-- `MULTI_PASS_HQ`
-- `SINGLE_PASS`
-- `SINGLE_PASS_HQ`
-
-<a id="h265ratecontrolmodetype"></a>
-
+```python title="Definition"
+H265QualityTuningLevelType = Literal[
+    "MULTI_PASS_HQ",
+    "SINGLE_PASS",
+    "SINGLE_PASS_HQ",
+]
+```
 ## H265RateControlModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265RateControlModeType
+
+def get_value() -> H265RateControlModeType:
+    return "CBR"
 ```
 
-Values:
-
-- `CBR`
-- `QVBR`
-- `VBR`
-
-<a id="h265sampleadaptiveoffsetfiltermodetype"></a>
-
+```python title="Definition"
+H265RateControlModeType = Literal[
+    "CBR",
+    "QVBR",
+    "VBR",
+]
+```
 ## H265SampleAdaptiveOffsetFilterModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265SampleAdaptiveOffsetFilterModeType
+
+def get_value() -> H265SampleAdaptiveOffsetFilterModeType:
+    return "ADAPTIVE"
 ```
 
-Values:
-
-- `ADAPTIVE`
-- `DEFAULT`
-- `OFF`
-
-<a id="h265scantypeconversionmodetype"></a>
-
+```python title="Definition"
+H265SampleAdaptiveOffsetFilterModeType = Literal[
+    "ADAPTIVE",
+    "DEFAULT",
+    "OFF",
+]
+```
 ## H265ScanTypeConversionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265ScanTypeConversionModeType
+
+def get_value() -> H265ScanTypeConversionModeType:
+    return "INTERLACED"
 ```
 
-Values:
-
-- `INTERLACED`
-- `INTERLACED_OPTIMIZE`
-
-<a id="h265scenechangedetecttype"></a>
-
+```python title="Definition"
+H265ScanTypeConversionModeType = Literal[
+    "INTERLACED",
+    "INTERLACED_OPTIMIZE",
+]
+```
 ## H265SceneChangeDetectType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265SceneChangeDetectType
+
+def get_value() -> H265SceneChangeDetectType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-- `TRANSITION_DETECTION`
-
-<a id="h265slowpaltype"></a>
-
+```python title="Definition"
+H265SceneChangeDetectType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "TRANSITION_DETECTION",
+]
+```
 ## H265SlowPalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265SlowPalType
+
+def get_value() -> H265SlowPalType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265spatialadaptivequantizationtype"></a>
-
+```python title="Definition"
+H265SlowPalType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265SpatialAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265SpatialAdaptiveQuantizationType
+
+def get_value() -> H265SpatialAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265telecinetype"></a>
-
+```python title="Definition"
+H265SpatialAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265TelecineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265TelecineType
+
+def get_value() -> H265TelecineType:
+    return "HARD"
 ```
 
-Values:
-
-- `HARD`
-- `NONE`
-- `SOFT`
-
-<a id="h265temporaladaptivequantizationtype"></a>
-
+```python title="Definition"
+H265TelecineType = Literal[
+    "HARD",
+    "NONE",
+    "SOFT",
+]
+```
 ## H265TemporalAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265TemporalAdaptiveQuantizationType
+
+def get_value() -> H265TemporalAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265temporalidstype"></a>
-
+```python title="Definition"
+H265TemporalAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265TemporalIdsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265TemporalIdsType
+
+def get_value() -> H265TemporalIdsType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265tilestype"></a>
-
+```python title="Definition"
+H265TemporalIdsType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265TilesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265TilesType
+
+def get_value() -> H265TilesType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265unregisteredseitimecodetype"></a>
-
+```python title="Definition"
+H265TilesType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265UnregisteredSeiTimecodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265UnregisteredSeiTimecodeType
+
+def get_value() -> H265UnregisteredSeiTimecodeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="h265writemp4packagingtypetype"></a>
-
+```python title="Definition"
+H265UnregisteredSeiTimecodeType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## H265WriteMp4PackagingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import H265WriteMp4PackagingTypeType
+
+def get_value() -> H265WriteMp4PackagingTypeType:
+    return "HEV1"
 ```
 
-Values:
-
-- `HEV1`
-- `HVC1`
-
-<a id="hlsadmarkerstype"></a>
-
+```python title="Definition"
+H265WriteMp4PackagingTypeType = Literal[
+    "HEV1",
+    "HVC1",
+]
+```
 ## HlsAdMarkersType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsAdMarkersType
+
+def get_value() -> HlsAdMarkersType:
+    return "ELEMENTAL"
 ```
 
-Values:
-
-- `ELEMENTAL`
-- `ELEMENTAL_SCTE35`
-
-<a id="hlsaudioonlycontainertype"></a>
-
+```python title="Definition"
+HlsAdMarkersType = Literal[
+    "ELEMENTAL",
+    "ELEMENTAL_SCTE35",
+]
+```
 ## HlsAudioOnlyContainerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsAudioOnlyContainerType
+
+def get_value() -> HlsAudioOnlyContainerType:
+    return "AUTOMATIC"
 ```
 
-Values:
-
-- `AUTOMATIC`
-- `M2TS`
-
-<a id="hlsaudioonlyheadertype"></a>
-
+```python title="Definition"
+HlsAudioOnlyContainerType = Literal[
+    "AUTOMATIC",
+    "M2TS",
+]
+```
 ## HlsAudioOnlyHeaderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsAudioOnlyHeaderType
+
+def get_value() -> HlsAudioOnlyHeaderType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="hlsaudiotracktypetype"></a>
-
+```python title="Definition"
+HlsAudioOnlyHeaderType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## HlsAudioTrackTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsAudioTrackTypeType
+
+def get_value() -> HlsAudioTrackTypeType:
+    return "ALTERNATE_AUDIO_AUTO_SELECT"
 ```
 
-Values:
-
-- `ALTERNATE_AUDIO_AUTO_SELECT`
-- `ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT`
-- `ALTERNATE_AUDIO_NOT_AUTO_SELECT`
-- `AUDIO_ONLY_VARIANT_STREAM`
-
-<a id="hlscaptionlanguagesettingtype"></a>
-
+```python title="Definition"
+HlsAudioTrackTypeType = Literal[
+    "ALTERNATE_AUDIO_AUTO_SELECT",
+    "ALTERNATE_AUDIO_AUTO_SELECT_DEFAULT",
+    "ALTERNATE_AUDIO_NOT_AUTO_SELECT",
+    "AUDIO_ONLY_VARIANT_STREAM",
+]
+```
 ## HlsCaptionLanguageSettingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsCaptionLanguageSettingType
+
+def get_value() -> HlsCaptionLanguageSettingType:
+    return "INSERT"
 ```
 
-Values:
-
-- `INSERT`
-- `NONE`
-- `OMIT`
-
-<a id="hlscaptionsegmentlengthcontroltype"></a>
-
+```python title="Definition"
+HlsCaptionLanguageSettingType = Literal[
+    "INSERT",
+    "NONE",
+    "OMIT",
+]
+```
 ## HlsCaptionSegmentLengthControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsCaptionSegmentLengthControlType
+
+def get_value() -> HlsCaptionSegmentLengthControlType:
+    return "LARGE_SEGMENTS"
 ```
 
-Values:
-
-- `LARGE_SEGMENTS`
-- `MATCH_VIDEO`
-
-<a id="hlsclientcachetype"></a>
-
+```python title="Definition"
+HlsCaptionSegmentLengthControlType = Literal[
+    "LARGE_SEGMENTS",
+    "MATCH_VIDEO",
+]
+```
 ## HlsClientCacheType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsClientCacheType
+
+def get_value() -> HlsClientCacheType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="hlscodecspecificationtype"></a>
-
+```python title="Definition"
+HlsClientCacheType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## HlsCodecSpecificationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsCodecSpecificationType
+
+def get_value() -> HlsCodecSpecificationType:
+    return "RFC_4281"
 ```
 
-Values:
-
-- `RFC_4281`
-- `RFC_6381`
-
-<a id="hlsdescriptivevideoserviceflagtype"></a>
-
+```python title="Definition"
+HlsCodecSpecificationType = Literal[
+    "RFC_4281",
+    "RFC_6381",
+]
+```
 ## HlsDescriptiveVideoServiceFlagType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsDescriptiveVideoServiceFlagType
+
+def get_value() -> HlsDescriptiveVideoServiceFlagType:
+    return "DONT_FLAG"
 ```
 
-Values:
-
-- `DONT_FLAG`
-- `FLAG`
-
-<a id="hlsdirectorystructuretype"></a>
-
+```python title="Definition"
+HlsDescriptiveVideoServiceFlagType = Literal[
+    "DONT_FLAG",
+    "FLAG",
+]
+```
 ## HlsDirectoryStructureType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsDirectoryStructureType
+
+def get_value() -> HlsDirectoryStructureType:
+    return "SINGLE_DIRECTORY"
 ```
 
-Values:
-
-- `SINGLE_DIRECTORY`
-- `SUBDIRECTORY_PER_STREAM`
-
-<a id="hlsencryptiontypetype"></a>
-
+```python title="Definition"
+HlsDirectoryStructureType = Literal[
+    "SINGLE_DIRECTORY",
+    "SUBDIRECTORY_PER_STREAM",
+]
+```
 ## HlsEncryptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsEncryptionTypeType
+
+def get_value() -> HlsEncryptionTypeType:
+    return "AES128"
 ```
 
-Values:
-
-- `AES128`
-- `SAMPLE_AES`
-
-<a id="hlsiframeonlymanifesttype"></a>
-
+```python title="Definition"
+HlsEncryptionTypeType = Literal[
+    "AES128",
+    "SAMPLE_AES",
+]
+```
 ## HlsIFrameOnlyManifestType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsIFrameOnlyManifestType
+
+def get_value() -> HlsIFrameOnlyManifestType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="hlsimagebasedtrickplaytype"></a>
-
+```python title="Definition"
+HlsIFrameOnlyManifestType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## HlsImageBasedTrickPlayType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsImageBasedTrickPlayType
+
+def get_value() -> HlsImageBasedTrickPlayType:
+    return "ADVANCED"
 ```
 
-Values:
-
-- `ADVANCED`
-- `NONE`
-- `THUMBNAIL`
-- `THUMBNAIL_AND_FULLFRAME`
-
-<a id="hlsinitializationvectorinmanifesttype"></a>
-
+```python title="Definition"
+HlsImageBasedTrickPlayType = Literal[
+    "ADVANCED",
+    "NONE",
+    "THUMBNAIL",
+    "THUMBNAIL_AND_FULLFRAME",
+]
+```
 ## HlsInitializationVectorInManifestType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsInitializationVectorInManifestType
+
+def get_value() -> HlsInitializationVectorInManifestType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="hlsintervalcadencetype"></a>
-
+```python title="Definition"
+HlsInitializationVectorInManifestType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## HlsIntervalCadenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsIntervalCadenceType
+
+def get_value() -> HlsIntervalCadenceType:
+    return "FOLLOW_CUSTOM"
 ```
 
-Values:
-
-- `FOLLOW_CUSTOM`
-- `FOLLOW_IFRAME`
-
-<a id="hlskeyprovidertypetype"></a>
-
+```python title="Definition"
+HlsIntervalCadenceType = Literal[
+    "FOLLOW_CUSTOM",
+    "FOLLOW_IFRAME",
+]
+```
 ## HlsKeyProviderTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsKeyProviderTypeType
+
+def get_value() -> HlsKeyProviderTypeType:
+    return "SPEKE"
 ```
 
-Values:
-
-- `SPEKE`
-- `STATIC_KEY`
-
-<a id="hlsmanifestcompressiontype"></a>
-
+```python title="Definition"
+HlsKeyProviderTypeType = Literal[
+    "SPEKE",
+    "STATIC_KEY",
+]
+```
 ## HlsManifestCompressionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsManifestCompressionType
+
+def get_value() -> HlsManifestCompressionType:
+    return "GZIP"
 ```
 
-Values:
-
-- `GZIP`
-- `NONE`
-
-<a id="hlsmanifestdurationformattype"></a>
-
+```python title="Definition"
+HlsManifestCompressionType = Literal[
+    "GZIP",
+    "NONE",
+]
+```
 ## HlsManifestDurationFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsManifestDurationFormatType
+
+def get_value() -> HlsManifestDurationFormatType:
+    return "FLOATING_POINT"
 ```
 
-Values:
-
-- `FLOATING_POINT`
-- `INTEGER`
-
-<a id="hlsofflineencryptedtype"></a>
-
+```python title="Definition"
+HlsManifestDurationFormatType = Literal[
+    "FLOATING_POINT",
+    "INTEGER",
+]
+```
 ## HlsOfflineEncryptedType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsOfflineEncryptedType
+
+def get_value() -> HlsOfflineEncryptedType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="hlsoutputselectiontype"></a>
-
+```python title="Definition"
+HlsOfflineEncryptedType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## HlsOutputSelectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsOutputSelectionType
+
+def get_value() -> HlsOutputSelectionType:
+    return "MANIFESTS_AND_SEGMENTS"
 ```
 
-Values:
-
-- `MANIFESTS_AND_SEGMENTS`
-- `SEGMENTS_ONLY`
-
-<a id="hlsprogramdatetimetype"></a>
-
+```python title="Definition"
+HlsOutputSelectionType = Literal[
+    "MANIFESTS_AND_SEGMENTS",
+    "SEGMENTS_ONLY",
+]
+```
 ## HlsProgramDateTimeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsProgramDateTimeType
+
+def get_value() -> HlsProgramDateTimeType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="hlssegmentcontroltype"></a>
-
+```python title="Definition"
+HlsProgramDateTimeType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## HlsSegmentControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsSegmentControlType
+
+def get_value() -> HlsSegmentControlType:
+    return "SEGMENTED_FILES"
 ```
 
-Values:
-
-- `SEGMENTED_FILES`
-- `SINGLE_FILE`
-
-<a id="hlssegmentlengthcontroltype"></a>
-
+```python title="Definition"
+HlsSegmentControlType = Literal[
+    "SEGMENTED_FILES",
+    "SINGLE_FILE",
+]
+```
 ## HlsSegmentLengthControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsSegmentLengthControlType
+
+def get_value() -> HlsSegmentLengthControlType:
+    return "EXACT"
 ```
 
-Values:
-
-- `EXACT`
-- `GOP_MULTIPLE`
-
-<a id="hlsstreaminfresolutiontype"></a>
-
+```python title="Definition"
+HlsSegmentLengthControlType = Literal[
+    "EXACT",
+    "GOP_MULTIPLE",
+]
+```
 ## HlsStreamInfResolutionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsStreamInfResolutionType
+
+def get_value() -> HlsStreamInfResolutionType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="hlstargetdurationcompatibilitymodetype"></a>
-
+```python title="Definition"
+HlsStreamInfResolutionType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## HlsTargetDurationCompatibilityModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsTargetDurationCompatibilityModeType
+
+def get_value() -> HlsTargetDurationCompatibilityModeType:
+    return "LEGACY"
 ```
 
-Values:
-
-- `LEGACY`
-- `SPEC_COMPLIANT`
-
-<a id="hlstimedmetadataid3frametype"></a>
-
+```python title="Definition"
+HlsTargetDurationCompatibilityModeType = Literal[
+    "LEGACY",
+    "SPEC_COMPLIANT",
+]
+```
 ## HlsTimedMetadataId3FrameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import HlsTimedMetadataId3FrameType
+
+def get_value() -> HlsTimedMetadataId3FrameType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PRIV`
-- `TDRL`
-
-<a id="imscaccessibilitysubstype"></a>
-
+```python title="Definition"
+HlsTimedMetadataId3FrameType = Literal[
+    "NONE",
+    "PRIV",
+    "TDRL",
+]
+```
 ## ImscAccessibilitySubsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ImscAccessibilitySubsType
+
+def get_value() -> ImscAccessibilitySubsType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="imscstylepassthroughtype"></a>
-
+```python title="Definition"
+ImscAccessibilitySubsType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## ImscStylePassthroughType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ImscStylePassthroughType
+
+def get_value() -> ImscStylePassthroughType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="inputdeblockfiltertype"></a>
-
+```python title="Definition"
+ImscStylePassthroughType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## InputDeblockFilterType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import InputDeblockFilterType
+
+def get_value() -> InputDeblockFilterType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="inputdenoisefiltertype"></a>
-
+```python title="Definition"
+InputDeblockFilterType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## InputDenoiseFilterType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import InputDenoiseFilterType
+
+def get_value() -> InputDenoiseFilterType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="inputfilterenabletype"></a>
-
+```python title="Definition"
+InputDenoiseFilterType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## InputFilterEnableType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import InputFilterEnableType
+
+def get_value() -> InputFilterEnableType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `DISABLE`
-- `FORCE`
-
-<a id="inputpolicytype"></a>
-
+```python title="Definition"
+InputFilterEnableType = Literal[
+    "AUTO",
+    "DISABLE",
+    "FORCE",
+]
+```
 ## InputPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import InputPolicyType
+
+def get_value() -> InputPolicyType:
+    return "ALLOWED"
 ```
 
-Values:
-
-- `ALLOWED`
-- `DISALLOWED`
-
-<a id="inputpsicontroltype"></a>
-
+```python title="Definition"
+InputPolicyType = Literal[
+    "ALLOWED",
+    "DISALLOWED",
+]
+```
 ## InputPsiControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import InputPsiControlType
+
+def get_value() -> InputPsiControlType:
+    return "IGNORE_PSI"
 ```
 
-Values:
-
-- `IGNORE_PSI`
-- `USE_PSI`
-
-<a id="inputrotatetype"></a>
-
+```python title="Definition"
+InputPsiControlType = Literal[
+    "IGNORE_PSI",
+    "USE_PSI",
+]
+```
 ## InputRotateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import InputRotateType
+
+def get_value() -> InputRotateType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `DEGREE_0`
-- `DEGREES_180`
-- `DEGREES_270`
-- `DEGREES_90`
-
-<a id="inputsamplerangetype"></a>
-
+```python title="Definition"
+InputRotateType = Literal[
+    "AUTO",
+    "DEGREE_0",
+    "DEGREES_180",
+    "DEGREES_270",
+    "DEGREES_90",
+]
+```
 ## InputSampleRangeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import InputSampleRangeType
+
+def get_value() -> InputSampleRangeType:
+    return "FOLLOW"
 ```
 
-Values:
-
-- `FOLLOW`
-- `FULL_RANGE`
-- `LIMITED_RANGE`
-
-<a id="inputscantypetype"></a>
-
+```python title="Definition"
+InputSampleRangeType = Literal[
+    "FOLLOW",
+    "FULL_RANGE",
+    "LIMITED_RANGE",
+]
+```
 ## InputScanTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import InputScanTypeType
+
+def get_value() -> InputScanTypeType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `PSF`
-
-<a id="inputtimecodesourcetype"></a>
-
+```python title="Definition"
+InputScanTypeType = Literal[
+    "AUTO",
+    "PSF",
+]
+```
 ## InputTimecodeSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import InputTimecodeSourceType
+
+def get_value() -> InputTimecodeSourceType:
+    return "EMBEDDED"
 ```
 
-Values:
-
-- `EMBEDDED`
-- `SPECIFIEDSTART`
-- `ZEROBASED`
-
-<a id="jobphasetype"></a>
-
+```python title="Definition"
+InputTimecodeSourceType = Literal[
+    "EMBEDDED",
+    "SPECIFIEDSTART",
+    "ZEROBASED",
+]
+```
 ## JobPhaseType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import JobPhaseType
+
+def get_value() -> JobPhaseType:
+    return "PROBING"
 ```
 
-Values:
-
-- `PROBING`
-- `TRANSCODING`
-- `UPLOADING`
-
-<a id="jobstatustype"></a>
-
+```python title="Definition"
+JobPhaseType = Literal[
+    "PROBING",
+    "TRANSCODING",
+    "UPLOADING",
+]
+```
 ## JobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import JobStatusType
+
+def get_value() -> JobStatusType:
+    return "CANCELED"
 ```
 
-Values:
-
-- `CANCELED`
-- `COMPLETE`
-- `ERROR`
-- `PROGRESSING`
-- `SUBMITTED`
-
-<a id="jobtemplatelistbytype"></a>
-
+```python title="Definition"
+JobStatusType = Literal[
+    "CANCELED",
+    "COMPLETE",
+    "ERROR",
+    "PROGRESSING",
+    "SUBMITTED",
+]
+```
 ## JobTemplateListByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import JobTemplateListByType
+
+def get_value() -> JobTemplateListByType:
+    return "CREATION_DATE"
 ```
 
-Values:
-
-- `CREATION_DATE`
-- `NAME`
-- `SYSTEM`
-
-<a id="languagecodetype"></a>
-
+```python title="Definition"
+JobTemplateListByType = Literal[
+    "CREATION_DATE",
+    "NAME",
+    "SYSTEM",
+]
+```
 ## LanguageCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import LanguageCodeType
+
+def get_value() -> LanguageCodeType:
+    return "AAR"
 ```
 
-Values:
-
-- `AAR`
-- `ABK`
-- `AFR`
-- `AKA`
-- `AMH`
-- `ARA`
-- `ARG`
-- `ASM`
-- `AVA`
-- `AVE`
-- `AYM`
-- `AZE`
-- `BAK`
-- `BAM`
-- `BEL`
-- `BEN`
-- `BIH`
-- `BIS`
-- `BOD`
-- `BOS`
-- `BRE`
-- `BUL`
-- `CAT`
-- `CES`
-- `CHA`
-- `CHE`
-- `CHU`
-- `CHV`
-- `COR`
-- `COS`
-- `CRE`
-- `CYM`
-- `DAN`
-- `DEU`
-- `DIV`
-- `DZO`
-- `ELL`
-- `ENG`
-- `ENM`
-- `EPO`
-- `EST`
-- `EUS`
-- `EWE`
-- `FAO`
-- `FAS`
-- `FIJ`
-- `FIN`
-- `FRA`
-- `FRM`
-- `FRY`
-- `FUL`
-- `GER`
-- `GLA`
-- `GLE`
-- `GLG`
-- `GLV`
-- `GRN`
-- `GUJ`
-- `HAT`
-- `HAU`
-- `HEB`
-- `HER`
-- `HIN`
-- `HMO`
-- `HRV`
-- `HUN`
-- `HYE`
-- `IBO`
-- `IDO`
-- `III`
-- `IKU`
-- `ILE`
-- `INA`
-- `IND`
-- `IPK`
-- `ISL`
-- `ITA`
-- `JAV`
-- `JPN`
-- `KAL`
-- `KAN`
-- `KAS`
-- `KAT`
-- `KAU`
-- `KAZ`
-- `KHM`
-- `KIK`
-- `KIN`
-- `KIR`
-- `KOM`
-- `KON`
-- `KOR`
-- `KUA`
-- `KUR`
-- `LAO`
-- `LAT`
-- `LAV`
-- `LIM`
-- `LIN`
-- `LIT`
-- `LTZ`
-- `LUB`
-- `LUG`
-- `MAH`
-- `MAL`
-- `MAR`
-- `MKD`
-- `MLG`
-- `MLT`
-- `MON`
-- `MRI`
-- `MSA`
-- `MYA`
-- `NAU`
-- `NAV`
-- `NBL`
-- `NDE`
-- `NDO`
-- `NEP`
-- `NLD`
-- `NNO`
-- `NOB`
-- `NOR`
-- `NYA`
-- `OCI`
-- `OJI`
-- `ORI`
-- `ORJ`
-- `ORM`
-- `OSS`
-- `PAN`
-- `PLI`
-- `POL`
-- `POR`
-- `PUS`
-- `QAA`
-- `QPC`
-- `QUE`
-- `ROH`
-- `RON`
-- `RUN`
-- `RUS`
-- `SAG`
-- `SAN`
-- `SIN`
-- `SLK`
-- `SLV`
-- `SME`
-- `SMO`
-- `SNA`
-- `SND`
-- `SOM`
-- `SOT`
-- `SPA`
-- `SQI`
-- `SRB`
-- `SRD`
-- `SRP`
-- `SSW`
-- `SUN`
-- `SWA`
-- `SWE`
-- `TAH`
-- `TAM`
-- `TAT`
-- `TEL`
-- `TGK`
-- `TGL`
-- `THA`
-- `TIR`
-- `TNG`
-- `TON`
-- `TSN`
-- `TSO`
-- `TUK`
-- `TUR`
-- `TWI`
-- `UIG`
-- `UKR`
-- `URD`
-- `UZB`
-- `VEN`
-- `VIE`
-- `VOL`
-- `WLN`
-- `WOL`
-- `XHO`
-- `YID`
-- `YOR`
-- `ZHA`
-- `ZHO`
-- `ZUL`
-
-<a id="listjobtemplatespaginatorname"></a>
-
+```python title="Definition"
+LanguageCodeType = Literal[
+    "AAR",
+    "ABK",
+    "AFR",
+    "AKA",
+    "AMH",
+    "ARA",
+    "ARG",
+    "ASM",
+    "AVA",
+    "AVE",
+    "AYM",
+    "AZE",
+    "BAK",
+    "BAM",
+    "BEL",
+    "BEN",
+    "BIH",
+    "BIS",
+    "BOD",
+    "BOS",
+    "BRE",
+    "BUL",
+    "CAT",
+    "CES",
+    "CHA",
+    "CHE",
+    "CHU",
+    "CHV",
+    "COR",
+    "COS",
+    "CRE",
+    "CYM",
+    "DAN",
+    "DEU",
+    "DIV",
+    "DZO",
+    "ELL",
+    "ENG",
+    "ENM",
+    "EPO",
+    "EST",
+    "EUS",
+    "EWE",
+    "FAO",
+    "FAS",
+    "FIJ",
+    "FIN",
+    "FRA",
+    "FRM",
+    "FRY",
+    "FUL",
+    "GER",
+    "GLA",
+    "GLE",
+    "GLG",
+    "GLV",
+    "GRN",
+    "GUJ",
+    "HAT",
+    "HAU",
+    "HEB",
+    "HER",
+    "HIN",
+    "HMO",
+    "HRV",
+    "HUN",
+    "HYE",
+    "IBO",
+    "IDO",
+    "III",
+    "IKU",
+    "ILE",
+    "INA",
+    "IND",
+    "IPK",
+    "ISL",
+    "ITA",
+    "JAV",
+    "JPN",
+    "KAL",
+    "KAN",
+    "KAS",
+    "KAT",
+    "KAU",
+    "KAZ",
+    "KHM",
+    "KIK",
+    "KIN",
+    "KIR",
+    "KOM",
+    "KON",
+    "KOR",
+    "KUA",
+    "KUR",
+    "LAO",
+    "LAT",
+    "LAV",
+    "LIM",
+    "LIN",
+    "LIT",
+    "LTZ",
+    "LUB",
+    "LUG",
+    "MAH",
+    "MAL",
+    "MAR",
+    "MKD",
+    "MLG",
+    "MLT",
+    "MON",
+    "MRI",
+    "MSA",
+    "MYA",
+    "NAU",
+    "NAV",
+    "NBL",
+    "NDE",
+    "NDO",
+    "NEP",
+    "NLD",
+    "NNO",
+    "NOB",
+    "NOR",
+    "NYA",
+    "OCI",
+    "OJI",
+    "ORI",
+    "ORJ",
+    "ORM",
+    "OSS",
+    "PAN",
+    "PLI",
+    "POL",
+    "POR",
+    "PUS",
+    "QAA",
+    "QPC",
+    "QUE",
+    "ROH",
+    "RON",
+    "RUN",
+    "RUS",
+    "SAG",
+    "SAN",
+    "SIN",
+    "SLK",
+    "SLV",
+    "SME",
+    "SMO",
+    "SNA",
+    "SND",
+    "SOM",
+    "SOT",
+    "SPA",
+    "SQI",
+    "SRB",
+    "SRD",
+    "SRP",
+    "SSW",
+    "SUN",
+    "SWA",
+    "SWE",
+    "TAH",
+    "TAM",
+    "TAT",
+    "TEL",
+    "TGK",
+    "TGL",
+    "THA",
+    "TIR",
+    "TNG",
+    "TON",
+    "TSN",
+    "TSO",
+    "TUK",
+    "TUR",
+    "TWI",
+    "UIG",
+    "UKR",
+    "URD",
+    "UZB",
+    "VEN",
+    "VIE",
+    "VOL",
+    "WLN",
+    "WOL",
+    "XHO",
+    "YID",
+    "YOR",
+    "ZHA",
+    "ZHO",
+    "ZUL",
+]
+```
 ## ListJobTemplatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ListJobTemplatesPaginatorName
+
+def get_value() -> ListJobTemplatesPaginatorName:
+    return "list_job_templates"
 ```
 
-Values:
-
-- `list_job_templates`
-
-<a id="listjobspaginatorname"></a>
-
+```python title="Definition"
+ListJobTemplatesPaginatorName = Literal[
+    "list_job_templates",
+]
+```
 ## ListJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ListJobsPaginatorName
+
+def get_value() -> ListJobsPaginatorName:
+    return "list_jobs"
 ```
 
-Values:
-
-- `list_jobs`
-
-<a id="listpresetspaginatorname"></a>
-
+```python title="Definition"
+ListJobsPaginatorName = Literal[
+    "list_jobs",
+]
+```
 ## ListPresetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ListPresetsPaginatorName
+
+def get_value() -> ListPresetsPaginatorName:
+    return "list_presets"
 ```
 
-Values:
-
-- `list_presets`
-
-<a id="listqueuespaginatorname"></a>
-
+```python title="Definition"
+ListPresetsPaginatorName = Literal[
+    "list_presets",
+]
+```
 ## ListQueuesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ListQueuesPaginatorName
+
+def get_value() -> ListQueuesPaginatorName:
+    return "list_queues"
 ```
 
-Values:
-
-- `list_queues`
-
-<a id="m2tsaudiobuffermodeltype"></a>
-
+```python title="Definition"
+ListQueuesPaginatorName = Literal[
+    "list_queues",
+]
+```
 ## M2tsAudioBufferModelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsAudioBufferModelType
+
+def get_value() -> M2tsAudioBufferModelType:
+    return "ATSC"
 ```
 
-Values:
-
-- `ATSC`
-- `DVB`
-
-<a id="m2tsaudiodurationtype"></a>
-
+```python title="Definition"
+M2tsAudioBufferModelType = Literal[
+    "ATSC",
+    "DVB",
+]
+```
 ## M2tsAudioDurationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsAudioDurationType
+
+def get_value() -> M2tsAudioDurationType:
+    return "DEFAULT_CODEC_DURATION"
 ```
 
-Values:
-
-- `DEFAULT_CODEC_DURATION`
-- `MATCH_VIDEO_DURATION`
-
-<a id="m2tsbuffermodeltype"></a>
-
+```python title="Definition"
+M2tsAudioDurationType = Literal[
+    "DEFAULT_CODEC_DURATION",
+    "MATCH_VIDEO_DURATION",
+]
+```
 ## M2tsBufferModelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsBufferModelType
+
+def get_value() -> M2tsBufferModelType:
+    return "MULTIPLEX"
 ```
 
-Values:
-
-- `MULTIPLEX`
-- `NONE`
-
-<a id="m2tsdataptscontroltype"></a>
-
+```python title="Definition"
+M2tsBufferModelType = Literal[
+    "MULTIPLEX",
+    "NONE",
+]
+```
 ## M2tsDataPtsControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsDataPtsControlType
+
+def get_value() -> M2tsDataPtsControlType:
+    return "ALIGN_TO_VIDEO"
 ```
 
-Values:
-
-- `ALIGN_TO_VIDEO`
-- `AUTO`
-
-<a id="m2tsebpaudiointervaltype"></a>
-
+```python title="Definition"
+M2tsDataPtsControlType = Literal[
+    "ALIGN_TO_VIDEO",
+    "AUTO",
+]
+```
 ## M2tsEbpAudioIntervalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsEbpAudioIntervalType
+
+def get_value() -> M2tsEbpAudioIntervalType:
+    return "VIDEO_AND_FIXED_INTERVALS"
 ```
 
-Values:
-
-- `VIDEO_AND_FIXED_INTERVALS`
-- `VIDEO_INTERVAL`
-
-<a id="m2tsebpplacementtype"></a>
-
+```python title="Definition"
+M2tsEbpAudioIntervalType = Literal[
+    "VIDEO_AND_FIXED_INTERVALS",
+    "VIDEO_INTERVAL",
+]
+```
 ## M2tsEbpPlacementType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsEbpPlacementType
+
+def get_value() -> M2tsEbpPlacementType:
+    return "VIDEO_AND_AUDIO_PIDS"
 ```
 
-Values:
-
-- `VIDEO_AND_AUDIO_PIDS`
-- `VIDEO_PID`
-
-<a id="m2tsesrateinpestype"></a>
-
+```python title="Definition"
+M2tsEbpPlacementType = Literal[
+    "VIDEO_AND_AUDIO_PIDS",
+    "VIDEO_PID",
+]
+```
 ## M2tsEsRateInPesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsEsRateInPesType
+
+def get_value() -> M2tsEsRateInPesType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="m2tsforcetsvideoebpordertype"></a>
-
+```python title="Definition"
+M2tsEsRateInPesType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## M2tsForceTsVideoEbpOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsForceTsVideoEbpOrderType
+
+def get_value() -> M2tsForceTsVideoEbpOrderType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `DEFAULT`
-- `FORCE`
-
-<a id="m2tsnielsenid3type"></a>
-
+```python title="Definition"
+M2tsForceTsVideoEbpOrderType = Literal[
+    "DEFAULT",
+    "FORCE",
+]
+```
 ## M2tsNielsenId3Type
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsNielsenId3Type
+
+def get_value() -> M2tsNielsenId3Type:
+    return "INSERT"
 ```
 
-Values:
-
-- `INSERT`
-- `NONE`
-
-<a id="m2tspcrcontroltype"></a>
-
+```python title="Definition"
+M2tsNielsenId3Type = Literal[
+    "INSERT",
+    "NONE",
+]
+```
 ## M2tsPcrControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsPcrControlType
+
+def get_value() -> M2tsPcrControlType:
+    return "CONFIGURED_PCR_PERIOD"
 ```
 
-Values:
-
-- `CONFIGURED_PCR_PERIOD`
-- `PCR_EVERY_PES_PACKET`
-
-<a id="m2tsratemodetype"></a>
-
+```python title="Definition"
+M2tsPcrControlType = Literal[
+    "CONFIGURED_PCR_PERIOD",
+    "PCR_EVERY_PES_PACKET",
+]
+```
 ## M2tsRateModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsRateModeType
+
+def get_value() -> M2tsRateModeType:
+    return "CBR"
 ```
 
-Values:
-
-- `CBR`
-- `VBR`
-
-<a id="m2tsscte35sourcetype"></a>
-
+```python title="Definition"
+M2tsRateModeType = Literal[
+    "CBR",
+    "VBR",
+]
+```
 ## M2tsScte35SourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsScte35SourceType
+
+def get_value() -> M2tsScte35SourceType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PASSTHROUGH`
-
-<a id="m2tssegmentationmarkerstype"></a>
-
+```python title="Definition"
+M2tsScte35SourceType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+]
+```
 ## M2tsSegmentationMarkersType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsSegmentationMarkersType
+
+def get_value() -> M2tsSegmentationMarkersType:
+    return "EBP"
 ```
 
-Values:
-
-- `EBP`
-- `EBP_LEGACY`
-- `NONE`
-- `PSI_SEGSTART`
-- `RAI_ADAPT`
-- `RAI_SEGSTART`
-
-<a id="m2tssegmentationstyletype"></a>
-
+```python title="Definition"
+M2tsSegmentationMarkersType = Literal[
+    "EBP",
+    "EBP_LEGACY",
+    "NONE",
+    "PSI_SEGSTART",
+    "RAI_ADAPT",
+    "RAI_SEGSTART",
+]
+```
 ## M2tsSegmentationStyleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M2tsSegmentationStyleType
+
+def get_value() -> M2tsSegmentationStyleType:
+    return "MAINTAIN_CADENCE"
 ```
 
-Values:
-
-- `MAINTAIN_CADENCE`
-- `RESET_CADENCE`
-
-<a id="m3u8audiodurationtype"></a>
-
+```python title="Definition"
+M2tsSegmentationStyleType = Literal[
+    "MAINTAIN_CADENCE",
+    "RESET_CADENCE",
+]
+```
 ## M3u8AudioDurationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M3u8AudioDurationType
+
+def get_value() -> M3u8AudioDurationType:
+    return "DEFAULT_CODEC_DURATION"
 ```
 
-Values:
-
-- `DEFAULT_CODEC_DURATION`
-- `MATCH_VIDEO_DURATION`
-
-<a id="m3u8dataptscontroltype"></a>
-
+```python title="Definition"
+M3u8AudioDurationType = Literal[
+    "DEFAULT_CODEC_DURATION",
+    "MATCH_VIDEO_DURATION",
+]
+```
 ## M3u8DataPtsControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M3u8DataPtsControlType
+
+def get_value() -> M3u8DataPtsControlType:
+    return "ALIGN_TO_VIDEO"
 ```
 
-Values:
-
-- `ALIGN_TO_VIDEO`
-- `AUTO`
-
-<a id="m3u8nielsenid3type"></a>
-
+```python title="Definition"
+M3u8DataPtsControlType = Literal[
+    "ALIGN_TO_VIDEO",
+    "AUTO",
+]
+```
 ## M3u8NielsenId3Type
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M3u8NielsenId3Type
+
+def get_value() -> M3u8NielsenId3Type:
+    return "INSERT"
 ```
 
-Values:
-
-- `INSERT`
-- `NONE`
-
-<a id="m3u8pcrcontroltype"></a>
-
+```python title="Definition"
+M3u8NielsenId3Type = Literal[
+    "INSERT",
+    "NONE",
+]
+```
 ## M3u8PcrControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M3u8PcrControlType
+
+def get_value() -> M3u8PcrControlType:
+    return "CONFIGURED_PCR_PERIOD"
 ```
 
-Values:
-
-- `CONFIGURED_PCR_PERIOD`
-- `PCR_EVERY_PES_PACKET`
-
-<a id="m3u8scte35sourcetype"></a>
-
+```python title="Definition"
+M3u8PcrControlType = Literal[
+    "CONFIGURED_PCR_PERIOD",
+    "PCR_EVERY_PES_PACKET",
+]
+```
 ## M3u8Scte35SourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import M3u8Scte35SourceType
+
+def get_value() -> M3u8Scte35SourceType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PASSTHROUGH`
-
-<a id="motionimageinsertionmodetype"></a>
-
+```python title="Definition"
+M3u8Scte35SourceType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+]
+```
 ## MotionImageInsertionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MotionImageInsertionModeType
+
+def get_value() -> MotionImageInsertionModeType:
+    return "MOV"
 ```
 
-Values:
-
-- `MOV`
-- `PNG`
-
-<a id="motionimageplaybacktype"></a>
-
+```python title="Definition"
+MotionImageInsertionModeType = Literal[
+    "MOV",
+    "PNG",
+]
+```
 ## MotionImagePlaybackType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MotionImagePlaybackType
+
+def get_value() -> MotionImagePlaybackType:
+    return "ONCE"
 ```
 
-Values:
-
-- `ONCE`
-- `REPEAT`
-
-<a id="movclapatomtype"></a>
-
+```python title="Definition"
+MotionImagePlaybackType = Literal[
+    "ONCE",
+    "REPEAT",
+]
+```
 ## MovClapAtomType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MovClapAtomType
+
+def get_value() -> MovClapAtomType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="movcslgatomtype"></a>
-
+```python title="Definition"
+MovClapAtomType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## MovCslgAtomType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MovCslgAtomType
+
+def get_value() -> MovCslgAtomType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="movmpeg2fourcccontroltype"></a>
-
+```python title="Definition"
+MovCslgAtomType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## MovMpeg2FourCCControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MovMpeg2FourCCControlType
+
+def get_value() -> MovMpeg2FourCCControlType:
+    return "MPEG"
 ```
 
-Values:
-
-- `MPEG`
-- `XDCAM`
-
-<a id="movpaddingcontroltype"></a>
-
+```python title="Definition"
+MovMpeg2FourCCControlType = Literal[
+    "MPEG",
+    "XDCAM",
+]
+```
 ## MovPaddingControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MovPaddingControlType
+
+def get_value() -> MovPaddingControlType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `OMNEON`
-
-<a id="movreferencetype"></a>
-
+```python title="Definition"
+MovPaddingControlType = Literal[
+    "NONE",
+    "OMNEON",
+]
+```
 ## MovReferenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MovReferenceType
+
+def get_value() -> MovReferenceType:
+    return "EXTERNAL"
 ```
 
-Values:
-
-- `EXTERNAL`
-- `SELF_CONTAINED`
-
-<a id="mp3ratecontrolmodetype"></a>
-
+```python title="Definition"
+MovReferenceType = Literal[
+    "EXTERNAL",
+    "SELF_CONTAINED",
+]
+```
 ## Mp3RateControlModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mp3RateControlModeType
+
+def get_value() -> Mp3RateControlModeType:
+    return "CBR"
 ```
 
-Values:
-
-- `CBR`
-- `VBR`
-
-<a id="mp4cslgatomtype"></a>
-
+```python title="Definition"
+Mp3RateControlModeType = Literal[
+    "CBR",
+    "VBR",
+]
+```
 ## Mp4CslgAtomType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mp4CslgAtomType
+
+def get_value() -> Mp4CslgAtomType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="mp4freespaceboxtype"></a>
-
+```python title="Definition"
+Mp4CslgAtomType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## Mp4FreeSpaceBoxType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mp4FreeSpaceBoxType
+
+def get_value() -> Mp4FreeSpaceBoxType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="mp4moovplacementtype"></a>
-
+```python title="Definition"
+Mp4FreeSpaceBoxType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## Mp4MoovPlacementType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mp4MoovPlacementType
+
+def get_value() -> Mp4MoovPlacementType:
+    return "NORMAL"
 ```
 
-Values:
-
-- `NORMAL`
-- `PROGRESSIVE_DOWNLOAD`
-
-<a id="mpdaccessibilitycaptionhintstype"></a>
-
+```python title="Definition"
+Mp4MoovPlacementType = Literal[
+    "NORMAL",
+    "PROGRESSIVE_DOWNLOAD",
+]
+```
 ## MpdAccessibilityCaptionHintsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MpdAccessibilityCaptionHintsType
+
+def get_value() -> MpdAccessibilityCaptionHintsType:
+    return "EXCLUDE"
 ```
 
-Values:
-
-- `EXCLUDE`
-- `INCLUDE`
-
-<a id="mpdaudiodurationtype"></a>
-
+```python title="Definition"
+MpdAccessibilityCaptionHintsType = Literal[
+    "EXCLUDE",
+    "INCLUDE",
+]
+```
 ## MpdAudioDurationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MpdAudioDurationType
+
+def get_value() -> MpdAudioDurationType:
+    return "DEFAULT_CODEC_DURATION"
 ```
 
-Values:
-
-- `DEFAULT_CODEC_DURATION`
-- `MATCH_VIDEO_DURATION`
-
-<a id="mpdcaptioncontainertypetype"></a>
-
+```python title="Definition"
+MpdAudioDurationType = Literal[
+    "DEFAULT_CODEC_DURATION",
+    "MATCH_VIDEO_DURATION",
+]
+```
 ## MpdCaptionContainerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MpdCaptionContainerTypeType
+
+def get_value() -> MpdCaptionContainerTypeType:
+    return "FRAGMENTED_MP4"
 ```
 
-Values:
-
-- `FRAGMENTED_MP4`
-- `RAW`
-
-<a id="mpdscte35esamtype"></a>
-
+```python title="Definition"
+MpdCaptionContainerTypeType = Literal[
+    "FRAGMENTED_MP4",
+    "RAW",
+]
+```
 ## MpdScte35EsamType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MpdScte35EsamType
+
+def get_value() -> MpdScte35EsamType:
+    return "INSERT"
 ```
 
-Values:
-
-- `INSERT`
-- `NONE`
-
-<a id="mpdscte35sourcetype"></a>
-
+```python title="Definition"
+MpdScte35EsamType = Literal[
+    "INSERT",
+    "NONE",
+]
+```
 ## MpdScte35SourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MpdScte35SourceType
+
+def get_value() -> MpdScte35SourceType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PASSTHROUGH`
-
-<a id="mpdtimedmetadatatype"></a>
-
+```python title="Definition"
+MpdScte35SourceType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+]
+```
 ## MpdTimedMetadataType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MpdTimedMetadataType
+
+def get_value() -> MpdTimedMetadataType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PASSTHROUGH`
-
-<a id="mpeg2adaptivequantizationtype"></a>
-
+```python title="Definition"
+MpdTimedMetadataType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+]
+```
 ## Mpeg2AdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2AdaptiveQuantizationType
+
+def get_value() -> Mpeg2AdaptiveQuantizationType:
+    return "HIGH"
 ```
 
-Values:
-
-- `HIGH`
-- `LOW`
-- `MEDIUM`
-- `OFF`
-
-<a id="mpeg2codecleveltype"></a>
-
+```python title="Definition"
+Mpeg2AdaptiveQuantizationType = Literal[
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+    "OFF",
+]
+```
 ## Mpeg2CodecLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2CodecLevelType
+
+def get_value() -> Mpeg2CodecLevelType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `HIGH`
-- `HIGH1440`
-- `LOW`
-- `MAIN`
-
-<a id="mpeg2codecprofiletype"></a>
-
+```python title="Definition"
+Mpeg2CodecLevelType = Literal[
+    "AUTO",
+    "HIGH",
+    "HIGH1440",
+    "LOW",
+    "MAIN",
+]
+```
 ## Mpeg2CodecProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2CodecProfileType
+
+def get_value() -> Mpeg2CodecProfileType:
+    return "MAIN"
 ```
 
-Values:
-
-- `MAIN`
-- `PROFILE_422`
-
-<a id="mpeg2dynamicsubgoptype"></a>
-
+```python title="Definition"
+Mpeg2CodecProfileType = Literal[
+    "MAIN",
+    "PROFILE_422",
+]
+```
 ## Mpeg2DynamicSubGopType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2DynamicSubGopType
+
+def get_value() -> Mpeg2DynamicSubGopType:
+    return "ADAPTIVE"
 ```
 
-Values:
-
-- `ADAPTIVE`
-- `STATIC`
-
-<a id="mpeg2frameratecontroltype"></a>
-
+```python title="Definition"
+Mpeg2DynamicSubGopType = Literal[
+    "ADAPTIVE",
+    "STATIC",
+]
+```
 ## Mpeg2FramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2FramerateControlType
+
+def get_value() -> Mpeg2FramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="mpeg2framerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+Mpeg2FramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Mpeg2FramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2FramerateConversionAlgorithmType
+
+def get_value() -> Mpeg2FramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="mpeg2gopsizeunitstype"></a>
-
+```python title="Definition"
+Mpeg2FramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## Mpeg2GopSizeUnitsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2GopSizeUnitsType
+
+def get_value() -> Mpeg2GopSizeUnitsType:
+    return "FRAMES"
 ```
 
-Values:
-
-- `FRAMES`
-- `SECONDS`
-
-<a id="mpeg2interlacemodetype"></a>
-
+```python title="Definition"
+Mpeg2GopSizeUnitsType = Literal[
+    "FRAMES",
+    "SECONDS",
+]
+```
 ## Mpeg2InterlaceModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2InterlaceModeType
+
+def get_value() -> Mpeg2InterlaceModeType:
+    return "BOTTOM_FIELD"
 ```
 
-Values:
-
-- `BOTTOM_FIELD`
-- `FOLLOW_BOTTOM_FIELD`
-- `FOLLOW_TOP_FIELD`
-- `PROGRESSIVE`
-- `TOP_FIELD`
-
-<a id="mpeg2intradcprecisiontype"></a>
-
+```python title="Definition"
+Mpeg2InterlaceModeType = Literal[
+    "BOTTOM_FIELD",
+    "FOLLOW_BOTTOM_FIELD",
+    "FOLLOW_TOP_FIELD",
+    "PROGRESSIVE",
+    "TOP_FIELD",
+]
+```
 ## Mpeg2IntraDcPrecisionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2IntraDcPrecisionType
+
+def get_value() -> Mpeg2IntraDcPrecisionType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `INTRA_DC_PRECISION_10`
-- `INTRA_DC_PRECISION_11`
-- `INTRA_DC_PRECISION_8`
-- `INTRA_DC_PRECISION_9`
-
-<a id="mpeg2parcontroltype"></a>
-
+```python title="Definition"
+Mpeg2IntraDcPrecisionType = Literal[
+    "AUTO",
+    "INTRA_DC_PRECISION_10",
+    "INTRA_DC_PRECISION_11",
+    "INTRA_DC_PRECISION_8",
+    "INTRA_DC_PRECISION_9",
+]
+```
 ## Mpeg2ParControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2ParControlType
+
+def get_value() -> Mpeg2ParControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="mpeg2qualitytuningleveltype"></a>
-
+```python title="Definition"
+Mpeg2ParControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Mpeg2QualityTuningLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2QualityTuningLevelType
+
+def get_value() -> Mpeg2QualityTuningLevelType:
+    return "MULTI_PASS"
 ```
 
-Values:
-
-- `MULTI_PASS`
-- `SINGLE_PASS`
-
-<a id="mpeg2ratecontrolmodetype"></a>
-
+```python title="Definition"
+Mpeg2QualityTuningLevelType = Literal[
+    "MULTI_PASS",
+    "SINGLE_PASS",
+]
+```
 ## Mpeg2RateControlModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2RateControlModeType
+
+def get_value() -> Mpeg2RateControlModeType:
+    return "CBR"
 ```
 
-Values:
-
-- `CBR`
-- `VBR`
-
-<a id="mpeg2scantypeconversionmodetype"></a>
-
+```python title="Definition"
+Mpeg2RateControlModeType = Literal[
+    "CBR",
+    "VBR",
+]
+```
 ## Mpeg2ScanTypeConversionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2ScanTypeConversionModeType
+
+def get_value() -> Mpeg2ScanTypeConversionModeType:
+    return "INTERLACED"
 ```
 
-Values:
-
-- `INTERLACED`
-- `INTERLACED_OPTIMIZE`
-
-<a id="mpeg2scenechangedetecttype"></a>
-
+```python title="Definition"
+Mpeg2ScanTypeConversionModeType = Literal[
+    "INTERLACED",
+    "INTERLACED_OPTIMIZE",
+]
+```
 ## Mpeg2SceneChangeDetectType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2SceneChangeDetectType
+
+def get_value() -> Mpeg2SceneChangeDetectType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="mpeg2slowpaltype"></a>
-
+```python title="Definition"
+Mpeg2SceneChangeDetectType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## Mpeg2SlowPalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2SlowPalType
+
+def get_value() -> Mpeg2SlowPalType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="mpeg2spatialadaptivequantizationtype"></a>
-
+```python title="Definition"
+Mpeg2SlowPalType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## Mpeg2SpatialAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2SpatialAdaptiveQuantizationType
+
+def get_value() -> Mpeg2SpatialAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="mpeg2syntaxtype"></a>
-
+```python title="Definition"
+Mpeg2SpatialAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## Mpeg2SyntaxType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2SyntaxType
+
+def get_value() -> Mpeg2SyntaxType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `D_10`
-- `DEFAULT`
-
-<a id="mpeg2telecinetype"></a>
-
+```python title="Definition"
+Mpeg2SyntaxType = Literal[
+    "D_10",
+    "DEFAULT",
+]
+```
 ## Mpeg2TelecineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2TelecineType
+
+def get_value() -> Mpeg2TelecineType:
+    return "HARD"
 ```
 
-Values:
-
-- `HARD`
-- `NONE`
-- `SOFT`
-
-<a id="mpeg2temporaladaptivequantizationtype"></a>
-
+```python title="Definition"
+Mpeg2TelecineType = Literal[
+    "HARD",
+    "NONE",
+    "SOFT",
+]
+```
 ## Mpeg2TemporalAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Mpeg2TemporalAdaptiveQuantizationType
+
+def get_value() -> Mpeg2TemporalAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="mssmoothaudiodeduplicationtype"></a>
-
+```python title="Definition"
+Mpeg2TemporalAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## MsSmoothAudioDeduplicationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MsSmoothAudioDeduplicationType
+
+def get_value() -> MsSmoothAudioDeduplicationType:
+    return "COMBINE_DUPLICATE_STREAMS"
 ```
 
-Values:
-
-- `COMBINE_DUPLICATE_STREAMS`
-- `NONE`
-
-<a id="mssmoothfragmentlengthcontroltype"></a>
-
+```python title="Definition"
+MsSmoothAudioDeduplicationType = Literal[
+    "COMBINE_DUPLICATE_STREAMS",
+    "NONE",
+]
+```
 ## MsSmoothFragmentLengthControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MsSmoothFragmentLengthControlType
+
+def get_value() -> MsSmoothFragmentLengthControlType:
+    return "EXACT"
 ```
 
-Values:
-
-- `EXACT`
-- `GOP_MULTIPLE`
-
-<a id="mssmoothmanifestencodingtype"></a>
-
+```python title="Definition"
+MsSmoothFragmentLengthControlType = Literal[
+    "EXACT",
+    "GOP_MULTIPLE",
+]
+```
 ## MsSmoothManifestEncodingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MsSmoothManifestEncodingType
+
+def get_value() -> MsSmoothManifestEncodingType:
+    return "UTF16"
 ```
 
-Values:
-
-- `UTF16`
-- `UTF8`
-
-<a id="mxfafdsignalingtype"></a>
-
+```python title="Definition"
+MsSmoothManifestEncodingType = Literal[
+    "UTF16",
+    "UTF8",
+]
+```
 ## MxfAfdSignalingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MxfAfdSignalingType
+
+def get_value() -> MxfAfdSignalingType:
+    return "COPY_FROM_VIDEO"
 ```
 
-Values:
-
-- `COPY_FROM_VIDEO`
-- `NO_COPY`
-
-<a id="mxfprofiletype"></a>
-
+```python title="Definition"
+MxfAfdSignalingType = Literal[
+    "COPY_FROM_VIDEO",
+    "NO_COPY",
+]
+```
 ## MxfProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MxfProfileType
+
+def get_value() -> MxfProfileType:
+    return "D_10"
 ```
 
-Values:
-
-- `D_10`
-- `OP1A`
-- `XAVC`
-- `XDCAM`
-
-<a id="mxfxavcdurationmodetype"></a>
-
+```python title="Definition"
+MxfProfileType = Literal[
+    "D_10",
+    "OP1A",
+    "XAVC",
+    "XDCAM",
+]
+```
 ## MxfXavcDurationModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MxfXavcDurationModeType
+
+def get_value() -> MxfXavcDurationModeType:
+    return "ALLOW_ANY_DURATION"
 ```
 
-Values:
-
-- `ALLOW_ANY_DURATION`
-- `DROP_FRAMES_FOR_COMPLIANCE`
-
-<a id="nielsenactivewatermarkprocesstypetype"></a>
-
+```python title="Definition"
+MxfXavcDurationModeType = Literal[
+    "ALLOW_ANY_DURATION",
+    "DROP_FRAMES_FOR_COMPLIANCE",
+]
+```
 ## NielsenActiveWatermarkProcessTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import NielsenActiveWatermarkProcessTypeType
+
+def get_value() -> NielsenActiveWatermarkProcessTypeType:
+    return "CBET"
 ```
 
-Values:
-
-- `CBET`
-- `NAES2_AND_NW`
-- `NAES2_AND_NW_AND_CBET`
-
-<a id="nielsensourcewatermarkstatustypetype"></a>
-
+```python title="Definition"
+NielsenActiveWatermarkProcessTypeType = Literal[
+    "CBET",
+    "NAES2_AND_NW",
+    "NAES2_AND_NW_AND_CBET",
+]
+```
 ## NielsenSourceWatermarkStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import NielsenSourceWatermarkStatusTypeType
+
+def get_value() -> NielsenSourceWatermarkStatusTypeType:
+    return "CLEAN"
 ```
 
-Values:
-
-- `CLEAN`
-- `WATERMARKED`
-
-<a id="nielsenuniqueticperaudiotracktypetype"></a>
-
+```python title="Definition"
+NielsenSourceWatermarkStatusTypeType = Literal[
+    "CLEAN",
+    "WATERMARKED",
+]
+```
 ## NielsenUniqueTicPerAudioTrackTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import NielsenUniqueTicPerAudioTrackTypeType
+
+def get_value() -> NielsenUniqueTicPerAudioTrackTypeType:
+    return "RESERVE_UNIQUE_TICS_PER_TRACK"
 ```
 
-Values:
-
-- `RESERVE_UNIQUE_TICS_PER_TRACK`
-- `SAME_TICS_PER_TRACK`
-
-<a id="noisefilterposttemporalsharpeningstrengthtype"></a>
-
+```python title="Definition"
+NielsenUniqueTicPerAudioTrackTypeType = Literal[
+    "RESERVE_UNIQUE_TICS_PER_TRACK",
+    "SAME_TICS_PER_TRACK",
+]
+```
 ## NoiseFilterPostTemporalSharpeningStrengthType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import NoiseFilterPostTemporalSharpeningStrengthType
+
+def get_value() -> NoiseFilterPostTemporalSharpeningStrengthType:
+    return "HIGH"
 ```
 
-Values:
-
-- `HIGH`
-- `LOW`
-- `MEDIUM`
-
-<a id="noisefilterposttemporalsharpeningtype"></a>
-
+```python title="Definition"
+NoiseFilterPostTemporalSharpeningStrengthType = Literal[
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+]
+```
 ## NoiseFilterPostTemporalSharpeningType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import NoiseFilterPostTemporalSharpeningType
+
+def get_value() -> NoiseFilterPostTemporalSharpeningType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `DISABLED`
-- `ENABLED`
-
-<a id="noisereducerfiltertype"></a>
-
+```python title="Definition"
+NoiseFilterPostTemporalSharpeningType = Literal[
+    "AUTO",
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## NoiseReducerFilterType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import NoiseReducerFilterType
+
+def get_value() -> NoiseReducerFilterType:
+    return "BILATERAL"
 ```
 
-Values:
-
-- `BILATERAL`
-- `CONSERVE`
-- `GAUSSIAN`
-- `LANCZOS`
-- `MEAN`
-- `SHARPEN`
-- `SPATIAL`
-- `TEMPORAL`
-
-<a id="ordertype"></a>
-
+```python title="Definition"
+NoiseReducerFilterType = Literal[
+    "BILATERAL",
+    "CONSERVE",
+    "GAUSSIAN",
+    "LANCZOS",
+    "MEAN",
+    "SHARPEN",
+    "SPATIAL",
+    "TEMPORAL",
+]
+```
 ## OrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import OrderType
+
+def get_value() -> OrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="outputgrouptypetype"></a>
-
+```python title="Definition"
+OrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## OutputGroupTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import OutputGroupTypeType
+
+def get_value() -> OutputGroupTypeType:
+    return "CMAF_GROUP_SETTINGS"
 ```
 
-Values:
-
-- `CMAF_GROUP_SETTINGS`
-- `DASH_ISO_GROUP_SETTINGS`
-- `FILE_GROUP_SETTINGS`
-- `HLS_GROUP_SETTINGS`
-- `MS_SMOOTH_GROUP_SETTINGS`
-
-<a id="outputsdttype"></a>
-
+```python title="Definition"
+OutputGroupTypeType = Literal[
+    "CMAF_GROUP_SETTINGS",
+    "DASH_ISO_GROUP_SETTINGS",
+    "FILE_GROUP_SETTINGS",
+    "HLS_GROUP_SETTINGS",
+    "MS_SMOOTH_GROUP_SETTINGS",
+]
+```
 ## OutputSdtType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import OutputSdtType
+
+def get_value() -> OutputSdtType:
+    return "SDT_FOLLOW"
 ```
 
-Values:
-
-- `SDT_FOLLOW`
-- `SDT_FOLLOW_IF_PRESENT`
-- `SDT_MANUAL`
-- `SDT_NONE`
-
-<a id="presetlistbytype"></a>
-
+```python title="Definition"
+OutputSdtType = Literal[
+    "SDT_FOLLOW",
+    "SDT_FOLLOW_IF_PRESENT",
+    "SDT_MANUAL",
+    "SDT_NONE",
+]
+```
 ## PresetListByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import PresetListByType
+
+def get_value() -> PresetListByType:
+    return "CREATION_DATE"
 ```
 
-Values:
-
-- `CREATION_DATE`
-- `NAME`
-- `SYSTEM`
-
-<a id="pricingplantype"></a>
-
+```python title="Definition"
+PresetListByType = Literal[
+    "CREATION_DATE",
+    "NAME",
+    "SYSTEM",
+]
+```
 ## PricingPlanType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import PricingPlanType
+
+def get_value() -> PricingPlanType:
+    return "ON_DEMAND"
 ```
 
-Values:
-
-- `ON_DEMAND`
-- `RESERVED`
-
-<a id="proreschromasamplingtype"></a>
-
+```python title="Definition"
+PricingPlanType = Literal[
+    "ON_DEMAND",
+    "RESERVED",
+]
+```
 ## ProresChromaSamplingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ProresChromaSamplingType
+
+def get_value() -> ProresChromaSamplingType:
+    return "PRESERVE_444_SAMPLING"
 ```
 
-Values:
-
-- `PRESERVE_444_SAMPLING`
-- `SUBSAMPLE_TO_422`
-
-<a id="prorescodecprofiletype"></a>
-
+```python title="Definition"
+ProresChromaSamplingType = Literal[
+    "PRESERVE_444_SAMPLING",
+    "SUBSAMPLE_TO_422",
+]
+```
 ## ProresCodecProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ProresCodecProfileType
+
+def get_value() -> ProresCodecProfileType:
+    return "APPLE_PRORES_422"
 ```
 
-Values:
-
-- `APPLE_PRORES_422`
-- `APPLE_PRORES_422_HQ`
-- `APPLE_PRORES_422_LT`
-- `APPLE_PRORES_422_PROXY`
-- `APPLE_PRORES_4444`
-- `APPLE_PRORES_4444_XQ`
-
-<a id="proresframeratecontroltype"></a>
-
+```python title="Definition"
+ProresCodecProfileType = Literal[
+    "APPLE_PRORES_422",
+    "APPLE_PRORES_422_HQ",
+    "APPLE_PRORES_422_LT",
+    "APPLE_PRORES_422_PROXY",
+    "APPLE_PRORES_4444",
+    "APPLE_PRORES_4444_XQ",
+]
+```
 ## ProresFramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ProresFramerateControlType
+
+def get_value() -> ProresFramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="proresframerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+ProresFramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## ProresFramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ProresFramerateConversionAlgorithmType
+
+def get_value() -> ProresFramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="proresinterlacemodetype"></a>
-
+```python title="Definition"
+ProresFramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## ProresInterlaceModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ProresInterlaceModeType
+
+def get_value() -> ProresInterlaceModeType:
+    return "BOTTOM_FIELD"
 ```
 
-Values:
-
-- `BOTTOM_FIELD`
-- `FOLLOW_BOTTOM_FIELD`
-- `FOLLOW_TOP_FIELD`
-- `PROGRESSIVE`
-- `TOP_FIELD`
-
-<a id="proresparcontroltype"></a>
-
+```python title="Definition"
+ProresInterlaceModeType = Literal[
+    "BOTTOM_FIELD",
+    "FOLLOW_BOTTOM_FIELD",
+    "FOLLOW_TOP_FIELD",
+    "PROGRESSIVE",
+    "TOP_FIELD",
+]
+```
 ## ProresParControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ProresParControlType
+
+def get_value() -> ProresParControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="proresscantypeconversionmodetype"></a>
-
+```python title="Definition"
+ProresParControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## ProresScanTypeConversionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ProresScanTypeConversionModeType
+
+def get_value() -> ProresScanTypeConversionModeType:
+    return "INTERLACED"
 ```
 
-Values:
-
-- `INTERLACED`
-- `INTERLACED_OPTIMIZE`
-
-<a id="proresslowpaltype"></a>
-
+```python title="Definition"
+ProresScanTypeConversionModeType = Literal[
+    "INTERLACED",
+    "INTERLACED_OPTIMIZE",
+]
+```
 ## ProresSlowPalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ProresSlowPalType
+
+def get_value() -> ProresSlowPalType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="prorestelecinetype"></a>
-
+```python title="Definition"
+ProresSlowPalType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## ProresTelecineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ProresTelecineType
+
+def get_value() -> ProresTelecineType:
+    return "HARD"
 ```
 
-Values:
-
-- `HARD`
-- `NONE`
-
-<a id="queuelistbytype"></a>
-
+```python title="Definition"
+ProresTelecineType = Literal[
+    "HARD",
+    "NONE",
+]
+```
 ## QueueListByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import QueueListByType
+
+def get_value() -> QueueListByType:
+    return "CREATION_DATE"
 ```
 
-Values:
-
-- `CREATION_DATE`
-- `NAME`
-
-<a id="queuestatustype"></a>
-
+```python title="Definition"
+QueueListByType = Literal[
+    "CREATION_DATE",
+    "NAME",
+]
+```
 ## QueueStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import QueueStatusType
+
+def get_value() -> QueueStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `PAUSED`
-
-<a id="renewaltypetype"></a>
-
+```python title="Definition"
+QueueStatusType = Literal[
+    "ACTIVE",
+    "PAUSED",
+]
+```
 ## RenewalTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import RenewalTypeType
+
+def get_value() -> RenewalTypeType:
+    return "AUTO_RENEW"
 ```
 
-Values:
-
-- `AUTO_RENEW`
-- `EXPIRE`
-
-<a id="reservationplanstatustype"></a>
-
+```python title="Definition"
+RenewalTypeType = Literal[
+    "AUTO_RENEW",
+    "EXPIRE",
+]
+```
 ## ReservationPlanStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ReservationPlanStatusType
+
+def get_value() -> ReservationPlanStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `EXPIRED`
-
-<a id="respondtoafdtype"></a>
-
+```python title="Definition"
+ReservationPlanStatusType = Literal[
+    "ACTIVE",
+    "EXPIRED",
+]
+```
 ## RespondToAfdType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import RespondToAfdType
+
+def get_value() -> RespondToAfdType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PASSTHROUGH`
-- `RESPOND`
-
-<a id="s3objectcannedacltype"></a>
-
+```python title="Definition"
+RespondToAfdType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+    "RESPOND",
+]
+```
 ## S3ObjectCannedAclType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import S3ObjectCannedAclType
+
+def get_value() -> S3ObjectCannedAclType:
+    return "AUTHENTICATED_READ"
 ```
 
-Values:
-
-- `AUTHENTICATED_READ`
-- `BUCKET_OWNER_FULL_CONTROL`
-- `BUCKET_OWNER_READ`
-- `PUBLIC_READ`
-
-<a id="s3serversideencryptiontypetype"></a>
-
+```python title="Definition"
+S3ObjectCannedAclType = Literal[
+    "AUTHENTICATED_READ",
+    "BUCKET_OWNER_FULL_CONTROL",
+    "BUCKET_OWNER_READ",
+    "PUBLIC_READ",
+]
+```
 ## S3ServerSideEncryptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import S3ServerSideEncryptionTypeType
+
+def get_value() -> S3ServerSideEncryptionTypeType:
+    return "SERVER_SIDE_ENCRYPTION_KMS"
 ```
 
-Values:
-
-- `SERVER_SIDE_ENCRYPTION_KMS`
-- `SERVER_SIDE_ENCRYPTION_S3`
-
-<a id="samplerangeconversiontype"></a>
-
+```python title="Definition"
+S3ServerSideEncryptionTypeType = Literal[
+    "SERVER_SIDE_ENCRYPTION_KMS",
+    "SERVER_SIDE_ENCRYPTION_S3",
+]
+```
 ## SampleRangeConversionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import SampleRangeConversionType
+
+def get_value() -> SampleRangeConversionType:
+    return "LIMITED_RANGE_SQUEEZE"
 ```
 
-Values:
-
-- `LIMITED_RANGE_SQUEEZE`
-- `NONE`
-
-<a id="scalingbehaviortype"></a>
-
+```python title="Definition"
+SampleRangeConversionType = Literal[
+    "LIMITED_RANGE_SQUEEZE",
+    "NONE",
+]
+```
 ## ScalingBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ScalingBehaviorType
+
+def get_value() -> ScalingBehaviorType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `DEFAULT`
-- `STRETCH_TO_OUTPUT`
-
-<a id="sccdestinationframeratetype"></a>
-
+```python title="Definition"
+ScalingBehaviorType = Literal[
+    "DEFAULT",
+    "STRETCH_TO_OUTPUT",
+]
+```
 ## SccDestinationFramerateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import SccDestinationFramerateType
+
+def get_value() -> SccDestinationFramerateType:
+    return "FRAMERATE_23_97"
 ```
 
-Values:
-
-- `FRAMERATE_23_97`
-- `FRAMERATE_24`
-- `FRAMERATE_25`
-- `FRAMERATE_29_97_DROPFRAME`
-- `FRAMERATE_29_97_NON_DROPFRAME`
-
-<a id="simulatereservedqueuetype"></a>
-
+```python title="Definition"
+SccDestinationFramerateType = Literal[
+    "FRAMERATE_23_97",
+    "FRAMERATE_24",
+    "FRAMERATE_25",
+    "FRAMERATE_29_97_DROPFRAME",
+    "FRAMERATE_29_97_NON_DROPFRAME",
+]
+```
 ## SimulateReservedQueueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import SimulateReservedQueueType
+
+def get_value() -> SimulateReservedQueueType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="srtstylepassthroughtype"></a>
-
+```python title="Definition"
+SimulateReservedQueueType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## SrtStylePassthroughType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import SrtStylePassthroughType
+
+def get_value() -> SrtStylePassthroughType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="statusupdateintervaltype"></a>
-
+```python title="Definition"
+SrtStylePassthroughType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## StatusUpdateIntervalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import StatusUpdateIntervalType
+
+def get_value() -> StatusUpdateIntervalType:
+    return "SECONDS_10"
 ```
 
-Values:
-
-- `SECONDS_10`
-- `SECONDS_12`
-- `SECONDS_120`
-- `SECONDS_15`
-- `SECONDS_180`
-- `SECONDS_20`
-- `SECONDS_240`
-- `SECONDS_30`
-- `SECONDS_300`
-- `SECONDS_360`
-- `SECONDS_420`
-- `SECONDS_480`
-- `SECONDS_540`
-- `SECONDS_60`
-- `SECONDS_600`
-
-<a id="teletextpagetypetype"></a>
-
+```python title="Definition"
+StatusUpdateIntervalType = Literal[
+    "SECONDS_10",
+    "SECONDS_12",
+    "SECONDS_120",
+    "SECONDS_15",
+    "SECONDS_180",
+    "SECONDS_20",
+    "SECONDS_240",
+    "SECONDS_30",
+    "SECONDS_300",
+    "SECONDS_360",
+    "SECONDS_420",
+    "SECONDS_480",
+    "SECONDS_540",
+    "SECONDS_60",
+    "SECONDS_600",
+]
+```
 ## TeletextPageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import TeletextPageTypeType
+
+def get_value() -> TeletextPageTypeType:
+    return "PAGE_TYPE_ADDL_INFO"
 ```
 
-Values:
-
-- `PAGE_TYPE_ADDL_INFO`
-- `PAGE_TYPE_HEARING_IMPAIRED_SUBTITLE`
-- `PAGE_TYPE_INITIAL`
-- `PAGE_TYPE_PROGRAM_SCHEDULE`
-- `PAGE_TYPE_SUBTITLE`
-
-<a id="timecodeburninpositiontype"></a>
-
+```python title="Definition"
+TeletextPageTypeType = Literal[
+    "PAGE_TYPE_ADDL_INFO",
+    "PAGE_TYPE_HEARING_IMPAIRED_SUBTITLE",
+    "PAGE_TYPE_INITIAL",
+    "PAGE_TYPE_PROGRAM_SCHEDULE",
+    "PAGE_TYPE_SUBTITLE",
+]
+```
 ## TimecodeBurninPositionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import TimecodeBurninPositionType
+
+def get_value() -> TimecodeBurninPositionType:
+    return "BOTTOM_CENTER"
 ```
 
-Values:
-
-- `BOTTOM_CENTER`
-- `BOTTOM_LEFT`
-- `BOTTOM_RIGHT`
-- `MIDDLE_CENTER`
-- `MIDDLE_LEFT`
-- `MIDDLE_RIGHT`
-- `TOP_CENTER`
-- `TOP_LEFT`
-- `TOP_RIGHT`
-
-<a id="timecodesourcetype"></a>
-
+```python title="Definition"
+TimecodeBurninPositionType = Literal[
+    "BOTTOM_CENTER",
+    "BOTTOM_LEFT",
+    "BOTTOM_RIGHT",
+    "MIDDLE_CENTER",
+    "MIDDLE_LEFT",
+    "MIDDLE_RIGHT",
+    "TOP_CENTER",
+    "TOP_LEFT",
+    "TOP_RIGHT",
+]
+```
 ## TimecodeSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import TimecodeSourceType
+
+def get_value() -> TimecodeSourceType:
+    return "EMBEDDED"
 ```
 
-Values:
-
-- `EMBEDDED`
-- `SPECIFIEDSTART`
-- `ZEROBASED`
-
-<a id="timedmetadatatype"></a>
-
+```python title="Definition"
+TimecodeSourceType = Literal[
+    "EMBEDDED",
+    "SPECIFIEDSTART",
+    "ZEROBASED",
+]
+```
 ## TimedMetadataType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import TimedMetadataType
+
+def get_value() -> TimedMetadataType:
+    return "NONE"
 ```
 
-Values:
-
-- `NONE`
-- `PASSTHROUGH`
-
-<a id="ttmlstylepassthroughtype"></a>
-
+```python title="Definition"
+TimedMetadataType = Literal[
+    "NONE",
+    "PASSTHROUGH",
+]
+```
 ## TtmlStylePassthroughType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import TtmlStylePassthroughType
+
+def get_value() -> TtmlStylePassthroughType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="typetype"></a>
-
+```python title="Definition"
+TtmlStylePassthroughType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## TypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import TypeType
+
+def get_value() -> TypeType:
+    return "CUSTOM"
 ```
 
-Values:
-
-- `CUSTOM`
-- `SYSTEM`
-
-<a id="vc3classtype"></a>
-
+```python title="Definition"
+TypeType = Literal[
+    "CUSTOM",
+    "SYSTEM",
+]
+```
 ## Vc3ClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vc3ClassType
+
+def get_value() -> Vc3ClassType:
+    return "CLASS_145_8BIT"
 ```
 
-Values:
-
-- `CLASS_145_8BIT`
-- `CLASS_220_10BIT`
-- `CLASS_220_8BIT`
-
-<a id="vc3frameratecontroltype"></a>
-
+```python title="Definition"
+Vc3ClassType = Literal[
+    "CLASS_145_8BIT",
+    "CLASS_220_10BIT",
+    "CLASS_220_8BIT",
+]
+```
 ## Vc3FramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vc3FramerateControlType
+
+def get_value() -> Vc3FramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="vc3framerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+Vc3FramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Vc3FramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vc3FramerateConversionAlgorithmType
+
+def get_value() -> Vc3FramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="vc3interlacemodetype"></a>
-
+```python title="Definition"
+Vc3FramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## Vc3InterlaceModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vc3InterlaceModeType
+
+def get_value() -> Vc3InterlaceModeType:
+    return "INTERLACED"
 ```
 
-Values:
-
-- `INTERLACED`
-- `PROGRESSIVE`
-
-<a id="vc3scantypeconversionmodetype"></a>
-
+```python title="Definition"
+Vc3InterlaceModeType = Literal[
+    "INTERLACED",
+    "PROGRESSIVE",
+]
+```
 ## Vc3ScanTypeConversionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vc3ScanTypeConversionModeType
+
+def get_value() -> Vc3ScanTypeConversionModeType:
+    return "INTERLACED"
 ```
 
-Values:
-
-- `INTERLACED`
-- `INTERLACED_OPTIMIZE`
-
-<a id="vc3slowpaltype"></a>
-
+```python title="Definition"
+Vc3ScanTypeConversionModeType = Literal[
+    "INTERLACED",
+    "INTERLACED_OPTIMIZE",
+]
+```
 ## Vc3SlowPalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vc3SlowPalType
+
+def get_value() -> Vc3SlowPalType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="vc3telecinetype"></a>
-
+```python title="Definition"
+Vc3SlowPalType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## Vc3TelecineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vc3TelecineType
+
+def get_value() -> Vc3TelecineType:
+    return "HARD"
 ```
 
-Values:
-
-- `HARD`
-- `NONE`
-
-<a id="vchipactiontype"></a>
-
+```python title="Definition"
+Vc3TelecineType = Literal[
+    "HARD",
+    "NONE",
+]
+```
 ## VchipActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import VchipActionType
+
+def get_value() -> VchipActionType:
+    return "PASSTHROUGH"
 ```
 
-Values:
-
-- `PASSTHROUGH`
-- `STRIP`
-
-<a id="videocodectype"></a>
-
+```python title="Definition"
+VchipActionType = Literal[
+    "PASSTHROUGH",
+    "STRIP",
+]
+```
 ## VideoCodecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import VideoCodecType
+
+def get_value() -> VideoCodecType:
+    return "AV1"
 ```
 
-Values:
-
-- `AV1`
-- `AVC_INTRA`
-- `FRAME_CAPTURE`
-- `H_264`
-- `H_265`
-- `MPEG2`
-- `PRORES`
-- `VC3`
-- `VP8`
-- `VP9`
-- `XAVC`
-
-<a id="videotimecodeinsertiontype"></a>
-
+```python title="Definition"
+VideoCodecType = Literal[
+    "AV1",
+    "AVC_INTRA",
+    "FRAME_CAPTURE",
+    "H_264",
+    "H_265",
+    "MPEG2",
+    "PRORES",
+    "VC3",
+    "VP8",
+    "VP9",
+    "XAVC",
+]
+```
 ## VideoTimecodeInsertionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import VideoTimecodeInsertionType
+
+def get_value() -> VideoTimecodeInsertionType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `PIC_TIMING_SEI`
-
-<a id="vp8frameratecontroltype"></a>
-
+```python title="Definition"
+VideoTimecodeInsertionType = Literal[
+    "DISABLED",
+    "PIC_TIMING_SEI",
+]
+```
 ## Vp8FramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp8FramerateControlType
+
+def get_value() -> Vp8FramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="vp8framerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+Vp8FramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Vp8FramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp8FramerateConversionAlgorithmType
+
+def get_value() -> Vp8FramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="vp8parcontroltype"></a>
-
+```python title="Definition"
+Vp8FramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## Vp8ParControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp8ParControlType
+
+def get_value() -> Vp8ParControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="vp8qualitytuningleveltype"></a>
-
+```python title="Definition"
+Vp8ParControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Vp8QualityTuningLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp8QualityTuningLevelType
+
+def get_value() -> Vp8QualityTuningLevelType:
+    return "MULTI_PASS"
 ```
 
-Values:
-
-- `MULTI_PASS`
-- `MULTI_PASS_HQ`
-
-<a id="vp8ratecontrolmodetype"></a>
-
+```python title="Definition"
+Vp8QualityTuningLevelType = Literal[
+    "MULTI_PASS",
+    "MULTI_PASS_HQ",
+]
+```
 ## Vp8RateControlModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp8RateControlModeType
+
+def get_value() -> Vp8RateControlModeType:
+    return "VBR"
 ```
 
-Values:
-
-- `VBR`
-
-<a id="vp9frameratecontroltype"></a>
-
+```python title="Definition"
+Vp8RateControlModeType = Literal[
+    "VBR",
+]
+```
 ## Vp9FramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp9FramerateControlType
+
+def get_value() -> Vp9FramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="vp9framerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+Vp9FramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Vp9FramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp9FramerateConversionAlgorithmType
+
+def get_value() -> Vp9FramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="vp9parcontroltype"></a>
-
+```python title="Definition"
+Vp9FramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## Vp9ParControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp9ParControlType
+
+def get_value() -> Vp9ParControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="vp9qualitytuningleveltype"></a>
-
+```python title="Definition"
+Vp9ParControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## Vp9QualityTuningLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp9QualityTuningLevelType
+
+def get_value() -> Vp9QualityTuningLevelType:
+    return "MULTI_PASS"
 ```
 
-Values:
-
-- `MULTI_PASS`
-- `MULTI_PASS_HQ`
-
-<a id="vp9ratecontrolmodetype"></a>
-
+```python title="Definition"
+Vp9QualityTuningLevelType = Literal[
+    "MULTI_PASS",
+    "MULTI_PASS_HQ",
+]
+```
 ## Vp9RateControlModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Vp9RateControlModeType
+
+def get_value() -> Vp9RateControlModeType:
+    return "VBR"
 ```
 
-Values:
-
-- `VBR`
-
-<a id="watermarkingstrengthtype"></a>
-
+```python title="Definition"
+Vp9RateControlModeType = Literal[
+    "VBR",
+]
+```
 ## WatermarkingStrengthType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import WatermarkingStrengthType
+
+def get_value() -> WatermarkingStrengthType:
+    return "DEFAULT"
 ```
 
-Values:
-
-- `DEFAULT`
-- `LIGHTER`
-- `LIGHTEST`
-- `STRONGER`
-- `STRONGEST`
-
-<a id="wavformattype"></a>
-
+```python title="Definition"
+WatermarkingStrengthType = Literal[
+    "DEFAULT",
+    "LIGHTER",
+    "LIGHTEST",
+    "STRONGER",
+    "STRONGEST",
+]
+```
 ## WavFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import WavFormatType
+
+def get_value() -> WavFormatType:
+    return "RF64"
 ```
 
-Values:
-
-- `RF64`
-- `RIFF`
-
-<a id="webvttaccessibilitysubstype"></a>
-
+```python title="Definition"
+WavFormatType = Literal[
+    "RF64",
+    "RIFF",
+]
+```
 ## WebvttAccessibilitySubsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import WebvttAccessibilitySubsType
+
+def get_value() -> WebvttAccessibilitySubsType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="webvttstylepassthroughtype"></a>
-
+```python title="Definition"
+WebvttAccessibilitySubsType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## WebvttStylePassthroughType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import WebvttStylePassthroughType
+
+def get_value() -> WebvttStylePassthroughType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="xavc4kintracbgprofileclasstype"></a>
-
+```python title="Definition"
+WebvttStylePassthroughType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## Xavc4kIntraCbgProfileClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Xavc4kIntraCbgProfileClassType
+
+def get_value() -> Xavc4kIntraCbgProfileClassType:
+    return "CLASS_100"
 ```
 
-Values:
-
-- `CLASS_100`
-- `CLASS_300`
-- `CLASS_480`
-
-<a id="xavc4kintravbrprofileclasstype"></a>
-
+```python title="Definition"
+Xavc4kIntraCbgProfileClassType = Literal[
+    "CLASS_100",
+    "CLASS_300",
+    "CLASS_480",
+]
+```
 ## Xavc4kIntraVbrProfileClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Xavc4kIntraVbrProfileClassType
+
+def get_value() -> Xavc4kIntraVbrProfileClassType:
+    return "CLASS_100"
 ```
 
-Values:
-
-- `CLASS_100`
-- `CLASS_300`
-- `CLASS_480`
-
-<a id="xavc4kprofilebitrateclasstype"></a>
-
+```python title="Definition"
+Xavc4kIntraVbrProfileClassType = Literal[
+    "CLASS_100",
+    "CLASS_300",
+    "CLASS_480",
+]
+```
 ## Xavc4kProfileBitrateClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Xavc4kProfileBitrateClassType
+
+def get_value() -> Xavc4kProfileBitrateClassType:
+    return "BITRATE_CLASS_100"
 ```
 
-Values:
-
-- `BITRATE_CLASS_100`
-- `BITRATE_CLASS_140`
-- `BITRATE_CLASS_200`
-
-<a id="xavc4kprofilecodecprofiletype"></a>
-
+```python title="Definition"
+Xavc4kProfileBitrateClassType = Literal[
+    "BITRATE_CLASS_100",
+    "BITRATE_CLASS_140",
+    "BITRATE_CLASS_200",
+]
+```
 ## Xavc4kProfileCodecProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Xavc4kProfileCodecProfileType
+
+def get_value() -> Xavc4kProfileCodecProfileType:
+    return "HIGH"
 ```
 
-Values:
-
-- `HIGH`
-- `HIGH_422`
-
-<a id="xavc4kprofilequalitytuningleveltype"></a>
-
+```python title="Definition"
+Xavc4kProfileCodecProfileType = Literal[
+    "HIGH",
+    "HIGH_422",
+]
+```
 ## Xavc4kProfileQualityTuningLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import Xavc4kProfileQualityTuningLevelType
+
+def get_value() -> Xavc4kProfileQualityTuningLevelType:
+    return "MULTI_PASS_HQ"
 ```
 
-Values:
-
-- `MULTI_PASS_HQ`
-- `SINGLE_PASS`
-- `SINGLE_PASS_HQ`
-
-<a id="xavcadaptivequantizationtype"></a>
-
+```python title="Definition"
+Xavc4kProfileQualityTuningLevelType = Literal[
+    "MULTI_PASS_HQ",
+    "SINGLE_PASS",
+    "SINGLE_PASS_HQ",
+]
+```
 ## XavcAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcAdaptiveQuantizationType
+
+def get_value() -> XavcAdaptiveQuantizationType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `HIGH`
-- `HIGHER`
-- `LOW`
-- `MAX`
-- `MEDIUM`
-- `OFF`
-
-<a id="xavcentropyencodingtype"></a>
-
+```python title="Definition"
+XavcAdaptiveQuantizationType = Literal[
+    "AUTO",
+    "HIGH",
+    "HIGHER",
+    "LOW",
+    "MAX",
+    "MEDIUM",
+    "OFF",
+]
+```
 ## XavcEntropyEncodingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcEntropyEncodingType
+
+def get_value() -> XavcEntropyEncodingType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `CABAC`
-- `CAVLC`
-
-<a id="xavcflickeradaptivequantizationtype"></a>
-
+```python title="Definition"
+XavcEntropyEncodingType = Literal[
+    "AUTO",
+    "CABAC",
+    "CAVLC",
+]
+```
 ## XavcFlickerAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcFlickerAdaptiveQuantizationType
+
+def get_value() -> XavcFlickerAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="xavcframeratecontroltype"></a>
-
+```python title="Definition"
+XavcFlickerAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## XavcFramerateControlType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcFramerateControlType
+
+def get_value() -> XavcFramerateControlType:
+    return "INITIALIZE_FROM_SOURCE"
 ```
 
-Values:
-
-- `INITIALIZE_FROM_SOURCE`
-- `SPECIFIED`
-
-<a id="xavcframerateconversionalgorithmtype"></a>
-
+```python title="Definition"
+XavcFramerateControlType = Literal[
+    "INITIALIZE_FROM_SOURCE",
+    "SPECIFIED",
+]
+```
 ## XavcFramerateConversionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcFramerateConversionAlgorithmType
+
+def get_value() -> XavcFramerateConversionAlgorithmType:
+    return "DUPLICATE_DROP"
 ```
 
-Values:
-
-- `DUPLICATE_DROP`
-- `FRAMEFORMER`
-- `INTERPOLATE`
-
-<a id="xavcgopbreferencetype"></a>
-
+```python title="Definition"
+XavcFramerateConversionAlgorithmType = Literal[
+    "DUPLICATE_DROP",
+    "FRAMEFORMER",
+    "INTERPOLATE",
+]
+```
 ## XavcGopBReferenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcGopBReferenceType
+
+def get_value() -> XavcGopBReferenceType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="xavchdintracbgprofileclasstype"></a>
-
+```python title="Definition"
+XavcGopBReferenceType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## XavcHdIntraCbgProfileClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcHdIntraCbgProfileClassType
+
+def get_value() -> XavcHdIntraCbgProfileClassType:
+    return "CLASS_100"
 ```
 
-Values:
-
-- `CLASS_100`
-- `CLASS_200`
-- `CLASS_50`
-
-<a id="xavchdprofilebitrateclasstype"></a>
-
+```python title="Definition"
+XavcHdIntraCbgProfileClassType = Literal[
+    "CLASS_100",
+    "CLASS_200",
+    "CLASS_50",
+]
+```
 ## XavcHdProfileBitrateClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcHdProfileBitrateClassType
+
+def get_value() -> XavcHdProfileBitrateClassType:
+    return "BITRATE_CLASS_25"
 ```
 
-Values:
-
-- `BITRATE_CLASS_25`
-- `BITRATE_CLASS_35`
-- `BITRATE_CLASS_50`
-
-<a id="xavchdprofilequalitytuningleveltype"></a>
-
+```python title="Definition"
+XavcHdProfileBitrateClassType = Literal[
+    "BITRATE_CLASS_25",
+    "BITRATE_CLASS_35",
+    "BITRATE_CLASS_50",
+]
+```
 ## XavcHdProfileQualityTuningLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcHdProfileQualityTuningLevelType
+
+def get_value() -> XavcHdProfileQualityTuningLevelType:
+    return "MULTI_PASS_HQ"
 ```
 
-Values:
-
-- `MULTI_PASS_HQ`
-- `SINGLE_PASS`
-- `SINGLE_PASS_HQ`
-
-<a id="xavchdprofiletelecinetype"></a>
-
+```python title="Definition"
+XavcHdProfileQualityTuningLevelType = Literal[
+    "MULTI_PASS_HQ",
+    "SINGLE_PASS",
+    "SINGLE_PASS_HQ",
+]
+```
 ## XavcHdProfileTelecineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcHdProfileTelecineType
+
+def get_value() -> XavcHdProfileTelecineType:
+    return "HARD"
 ```
 
-Values:
-
-- `HARD`
-- `NONE`
-
-<a id="xavcinterlacemodetype"></a>
-
+```python title="Definition"
+XavcHdProfileTelecineType = Literal[
+    "HARD",
+    "NONE",
+]
+```
 ## XavcInterlaceModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcInterlaceModeType
+
+def get_value() -> XavcInterlaceModeType:
+    return "BOTTOM_FIELD"
 ```
 
-Values:
-
-- `BOTTOM_FIELD`
-- `FOLLOW_BOTTOM_FIELD`
-- `FOLLOW_TOP_FIELD`
-- `PROGRESSIVE`
-- `TOP_FIELD`
-
-<a id="xavcprofiletype"></a>
-
+```python title="Definition"
+XavcInterlaceModeType = Literal[
+    "BOTTOM_FIELD",
+    "FOLLOW_BOTTOM_FIELD",
+    "FOLLOW_TOP_FIELD",
+    "PROGRESSIVE",
+    "TOP_FIELD",
+]
+```
 ## XavcProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcProfileType
+
+def get_value() -> XavcProfileType:
+    return "XAVC_4K"
 ```
 
-Values:
-
-- `XAVC_4K`
-- `XAVC_4K_INTRA_CBG`
-- `XAVC_4K_INTRA_VBR`
-- `XAVC_HD`
-- `XAVC_HD_INTRA_CBG`
-
-<a id="xavcslowpaltype"></a>
-
+```python title="Definition"
+XavcProfileType = Literal[
+    "XAVC_4K",
+    "XAVC_4K_INTRA_CBG",
+    "XAVC_4K_INTRA_VBR",
+    "XAVC_HD",
+    "XAVC_HD_INTRA_CBG",
+]
+```
 ## XavcSlowPalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcSlowPalType
+
+def get_value() -> XavcSlowPalType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="xavcspatialadaptivequantizationtype"></a>
-
+```python title="Definition"
+XavcSlowPalType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## XavcSpatialAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcSpatialAdaptiveQuantizationType
+
+def get_value() -> XavcSpatialAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="xavctemporaladaptivequantizationtype"></a>
-
+```python title="Definition"
+XavcSpatialAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## XavcTemporalAdaptiveQuantizationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import XavcTemporalAdaptiveQuantizationType
+
+def get_value() -> XavcTemporalAdaptiveQuantizationType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="mediaconvertservicename"></a>
-
+```python title="Definition"
+XavcTemporalAdaptiveQuantizationType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## MediaConvertServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import MediaConvertServiceName
+
+def get_value() -> MediaConvertServiceName:
+    return "mediaconvert"
 ```
 
-Values:
-
-- `mediaconvert`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+MediaConvertServiceName = Literal[
+    "mediaconvert",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_endpoints"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_endpoints",
+    "list_job_templates",
+    "list_jobs",
+    "list_presets",
+    "list_queues",
+]
+```
+## RegionName
 
-- `describe_endpoints`
-- `list_job_templates`
-- `list_jobs`
-- `list_presets`
-- `list_queues`
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

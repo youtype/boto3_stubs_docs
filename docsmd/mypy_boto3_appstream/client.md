@@ -1,98 +1,18 @@
-<a id="appstreamclient-for-boto3-appstream-module"></a>
-
-# AppStreamClient for boto3 AppStream module
+# AppStreamClient
 
 > [Index](../README.md) > [AppStream](./README.md) > AppStreamClient
 
-Auto-generated documentation for
-[AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
-type annotations stubs module
-[mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
+!!! note ""
 
-- [AppStreamClient for boto3 AppStream module](#appstreamclient-for-boto3-appstream-module)
-  - [AppStreamClient](#appstreamclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_application_fleet](#associate_application_fleet)
-    - [associate_application_to_entitlement](#associate_application_to_entitlement)
-    - [associate_fleet](#associate_fleet)
-    - [batch_associate_user_stack](#batch_associate_user_stack)
-    - [batch_disassociate_user_stack](#batch_disassociate_user_stack)
-    - [can_paginate](#can_paginate)
-    - [copy_image](#copy_image)
-    - [create_app_block](#create_app_block)
-    - [create_application](#create_application)
-    - [create_directory_config](#create_directory_config)
-    - [create_entitlement](#create_entitlement)
-    - [create_fleet](#create_fleet)
-    - [create_image_builder](#create_image_builder)
-    - [create_image_builder_streaming_url](#create_image_builder_streaming_url)
-    - [create_stack](#create_stack)
-    - [create_streaming_url](#create_streaming_url)
-    - [create_updated_image](#create_updated_image)
-    - [create_usage_report_subscription](#create_usage_report_subscription)
-    - [create_user](#create_user)
-    - [delete_app_block](#delete_app_block)
-    - [delete_application](#delete_application)
-    - [delete_directory_config](#delete_directory_config)
-    - [delete_entitlement](#delete_entitlement)
-    - [delete_fleet](#delete_fleet)
-    - [delete_image](#delete_image)
-    - [delete_image_builder](#delete_image_builder)
-    - [delete_image_permissions](#delete_image_permissions)
-    - [delete_stack](#delete_stack)
-    - [delete_usage_report_subscription](#delete_usage_report_subscription)
-    - [delete_user](#delete_user)
-    - [describe_app_blocks](#describe_app_blocks)
-    - [describe_application_fleet_associations](#describe_application_fleet_associations)
-    - [describe_applications](#describe_applications)
-    - [describe_directory_configs](#describe_directory_configs)
-    - [describe_entitlements](#describe_entitlements)
-    - [describe_fleets](#describe_fleets)
-    - [describe_image_builders](#describe_image_builders)
-    - [describe_image_permissions](#describe_image_permissions)
-    - [describe_images](#describe_images)
-    - [describe_sessions](#describe_sessions)
-    - [describe_stacks](#describe_stacks)
-    - [describe_usage_report_subscriptions](#describe_usage_report_subscriptions)
-    - [describe_user_stack_associations](#describe_user_stack_associations)
-    - [describe_users](#describe_users)
-    - [disable_user](#disable_user)
-    - [disassociate_application_fleet](#disassociate_application_fleet)
-    - [disassociate_application_from_entitlement](#disassociate_application_from_entitlement)
-    - [disassociate_fleet](#disassociate_fleet)
-    - [enable_user](#enable_user)
-    - [expire_session](#expire_session)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_associated_fleets](#list_associated_fleets)
-    - [list_associated_stacks](#list_associated_stacks)
-    - [list_entitled_applications](#list_entitled_applications)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [start_fleet](#start_fleet)
-    - [start_image_builder](#start_image_builder)
-    - [stop_fleet](#stop_fleet)
-    - [stop_image_builder](#stop_image_builder)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_application](#update_application)
-    - [update_directory_config](#update_directory_config)
-    - [update_entitlement](#update_entitlement)
-    - [update_fleet](#update_fleet)
-    - [update_image_permissions](#update_image_permissions)
-    - [update_stack](#update_stack)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="appstreamclient"></a>
+    Auto-generated documentation for [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
+    type annotations stubs module [mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 ## AppStreamClient
 
-Type annotations for `boto3.client("appstream")`
+Type annotations and code completion for `#!python boto3.client("appstream")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_appstream.client import AppStreamClient
 
@@ -100,1707 +20,2223 @@ def get_appstream_client() -> AppStreamClient:
     return Session().client("appstream")
 ```
 
-Boto3 documentation:
-[AppStream.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("appstream").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("appstream")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.EntitlementAlreadyExistsException,
+    client.EntitlementNotFoundException,
+    client.IncompatibleImageException,
+    client.InvalidAccountStatusException,
+    client.InvalidParameterCombinationException,
+    client.InvalidRoleException,
+    client.LimitExceededException,
+    client.OperationNotPermittedException,
+    client.RequestLimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceInUseException,
+    client.ResourceNotAvailableException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_appstream.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.EntitlementAlreadyExistsException`
-- `Exceptions.EntitlementNotFoundException`
-- `Exceptions.IncompatibleImageException`
-- `Exceptions.InvalidAccountStatusException`
-- `Exceptions.InvalidParameterCombinationException`
-- `Exceptions.InvalidRoleException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.OperationNotPermittedException`
-- `Exceptions.RequestLimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotAvailableException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AppStreamClient exceptions.
-
-Type annotations for `boto3.client("appstream").exceptions` method.
-
-Boto3 documentation:
-[AppStream.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_application\_fleet"></a>
-
-### associate_application_fleet
+### associate\_application\_fleet
 
 Associates the specified application with the specified fleet.
 
-Type annotations for `boto3.client("appstream").associate_application_fleet`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").associate_application_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_application_fleet)
 
-Boto3 documentation:
-[AppStream.Client.associate_application_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_application_fleet)
+```python title="Method definition"
+def associate_application_fleet(
+    self,
+    *,
+    FleetName: str,
+    ApplicationArn: str,
+) -> AssociateApplicationFleetResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateApplicationFleetRequestRequestTypeDef](./type_defs.md#associateapplicationfleetrequestrequesttypedef).
+1. See [:material-code-braces: AssociateApplicationFleetResultTypeDef](./type_defs.md#associateapplicationfleetresulttypedef) 
 
-Keyword-only arguments:
 
-- `FleetName`: `str` *(required)*
-- `ApplicationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateApplicationFleetRequestRequestTypeDef = {  # (1)
+    "FleetName": ...,
+    "ApplicationArn": ...,
+}
 
-Returns
-[AssociateApplicationFleetResultTypeDef](./type_defs.md#associateapplicationfleetresulttypedef).
+parent.associate_application_fleet(**kwargs)
+```
 
-<a id="associate\_application\_to\_entitlement"></a>
+1. See [:material-code-braces: AssociateApplicationFleetRequestRequestTypeDef](./type_defs.md#associateapplicationfleetrequestrequesttypedef) 
 
-### associate_application_to_entitlement
+### associate\_application\_to\_entitlement
 
 Associates an application to entitle.
 
-Type annotations for
-`boto3.client("appstream").associate_application_to_entitlement` method.
+Type annotations and code completion for `#!python boto3.client("appstream").associate_application_to_entitlement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_application_to_entitlement)
 
-Boto3 documentation:
-[AppStream.Client.associate_application_to_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_application_to_entitlement)
+```python title="Method definition"
+def associate_application_to_entitlement(
+    self,
+    *,
+    StackName: str,
+    EntitlementName: str,
+    ApplicationIdentifier: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateApplicationToEntitlementRequestRequestTypeDef](./type_defs.md#associateapplicationtoentitlementrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `EntitlementName`: `str` *(required)*
-- `ApplicationIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateApplicationToEntitlementRequestRequestTypeDef = {  # (1)
+    "StackName": ...,
+    "EntitlementName": ...,
+    "ApplicationIdentifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_application_to_entitlement(**kwargs)
+```
 
-<a id="associate\_fleet"></a>
+1. See [:material-code-braces: AssociateApplicationToEntitlementRequestRequestTypeDef](./type_defs.md#associateapplicationtoentitlementrequestrequesttypedef) 
 
-### associate_fleet
+### associate\_fleet
 
 Associates the specified fleet with the specified stack.
 
-Type annotations for `boto3.client("appstream").associate_fleet` method.
+Type annotations and code completion for `#!python boto3.client("appstream").associate_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_fleet)
 
-Boto3 documentation:
-[AppStream.Client.associate_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_fleet)
+```python title="Method definition"
+def associate_fleet(
+    self,
+    *,
+    FleetName: str,
+    StackName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateFleetRequestRequestTypeDef](./type_defs.md#associatefleetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FleetName`: `str` *(required)*
-- `StackName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateFleetRequestRequestTypeDef = {  # (1)
+    "FleetName": ...,
+    "StackName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_fleet(**kwargs)
+```
 
-<a id="batch\_associate\_user\_stack"></a>
+1. See [:material-code-braces: AssociateFleetRequestRequestTypeDef](./type_defs.md#associatefleetrequestrequesttypedef) 
 
-### batch_associate_user_stack
+### batch\_associate\_user\_stack
 
 Associates the specified users with the specified stacks.
 
-Type annotations for `boto3.client("appstream").batch_associate_user_stack`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").batch_associate_user_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_associate_user_stack)
 
-Boto3 documentation:
-[AppStream.Client.batch_associate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_associate_user_stack)
+```python title="Method definition"
+def batch_associate_user_stack(
+    self,
+    *,
+    UserStackAssociations: Sequence[UserStackAssociationTypeDef],  # (1)
+) -> BatchAssociateUserStackResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchAssociateUserStackRequestRequestTypeDef](./type_defs.md#batchassociateuserstackrequestrequesttypedef).
+1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
+2. See [:material-code-braces: BatchAssociateUserStackResultTypeDef](./type_defs.md#batchassociateuserstackresulttypedef) 
 
-Keyword-only arguments:
 
-- `UserStackAssociations`:
-  `Sequence`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchAssociateUserStackRequestRequestTypeDef = {  # (1)
+    "UserStackAssociations": ...,
+}
 
-Returns
-[BatchAssociateUserStackResultTypeDef](./type_defs.md#batchassociateuserstackresulttypedef).
+parent.batch_associate_user_stack(**kwargs)
+```
 
-<a id="batch\_disassociate\_user\_stack"></a>
+1. See [:material-code-braces: BatchAssociateUserStackRequestRequestTypeDef](./type_defs.md#batchassociateuserstackrequestrequesttypedef) 
 
-### batch_disassociate_user_stack
+### batch\_disassociate\_user\_stack
 
 Disassociates the specified users from the specified stacks.
 
-Type annotations for `boto3.client("appstream").batch_disassociate_user_stack`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").batch_disassociate_user_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_disassociate_user_stack)
 
-Boto3 documentation:
-[AppStream.Client.batch_disassociate_user_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.batch_disassociate_user_stack)
+```python title="Method definition"
+def batch_disassociate_user_stack(
+    self,
+    *,
+    UserStackAssociations: Sequence[UserStackAssociationTypeDef],  # (1)
+) -> BatchDisassociateUserStackResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchDisassociateUserStackRequestRequestTypeDef](./type_defs.md#batchdisassociateuserstackrequestrequesttypedef).
+1. See [:material-code-braces: UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef) 
+2. See [:material-code-braces: BatchDisassociateUserStackResultTypeDef](./type_defs.md#batchdisassociateuserstackresulttypedef) 
 
-Keyword-only arguments:
 
-- `UserStackAssociations`:
-  `Sequence`\[[UserStackAssociationTypeDef](./type_defs.md#userstackassociationtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDisassociateUserStackRequestRequestTypeDef = {  # (1)
+    "UserStackAssociations": ...,
+}
 
-Returns
-[BatchDisassociateUserStackResultTypeDef](./type_defs.md#batchdisassociateuserstackresulttypedef).
+parent.batch_disassociate_user_stack(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchDisassociateUserStackRequestRequestTypeDef](./type_defs.md#batchdisassociateuserstackrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("appstream").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("appstream").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.can_paginate)
 
-Boto3 documentation:
-[AppStream.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="copy\_image"></a>
-
-### copy_image
+### copy\_image
 
 Copies the image within the same region or to a new region within the same AWS
 account.
 
-Type annotations for `boto3.client("appstream").copy_image` method.
+Type annotations and code completion for `#!python boto3.client("appstream").copy_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.copy_image)
 
-Boto3 documentation:
-[AppStream.Client.copy_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.copy_image)
+```python title="Method definition"
+def copy_image(
+    self,
+    *,
+    SourceImageName: str,
+    DestinationImageName: str,
+    DestinationRegion: str,
+    DestinationImageDescription: str = ...,
+) -> CopyImageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CopyImageRequestRequestTypeDef](./type_defs.md#copyimagerequestrequesttypedef).
+1. See [:material-code-braces: CopyImageResponseTypeDef](./type_defs.md#copyimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceImageName`: `str` *(required)*
-- `DestinationImageName`: `str` *(required)*
-- `DestinationRegion`: `str` *(required)*
-- `DestinationImageDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: CopyImageRequestRequestTypeDef = {  # (1)
+    "SourceImageName": ...,
+    "DestinationImageName": ...,
+    "DestinationRegion": ...,
+}
 
-Returns [CopyImageResponseTypeDef](./type_defs.md#copyimageresponsetypedef).
+parent.copy_image(**kwargs)
+```
 
-<a id="create\_app\_block"></a>
+1. See [:material-code-braces: CopyImageRequestRequestTypeDef](./type_defs.md#copyimagerequestrequesttypedef) 
 
-### create_app_block
+### create\_app\_block
 
 Creates an app block.
 
-Type annotations for `boto3.client("appstream").create_app_block` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_app_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_app_block)
 
-Boto3 documentation:
-[AppStream.Client.create_app_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_app_block)
+```python title="Method definition"
+def create_app_block(
+    self,
+    *,
+    Name: str,
+    SourceS3Location: S3LocationTypeDef,  # (1)
+    SetupScriptDetails: ScriptDetailsTypeDef,  # (2)
+    Description: str = ...,
+    DisplayName: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateAppBlockResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppBlockRequestRequestTypeDef](./type_defs.md#createappblockrequestrequesttypedef).
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: ScriptDetailsTypeDef](./type_defs.md#scriptdetailstypedef) 
+3. See [:material-code-braces: CreateAppBlockResultTypeDef](./type_defs.md#createappblockresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `SourceS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-  *(required)*
-- `SetupScriptDetails`:
-  [ScriptDetailsTypeDef](./type_defs.md#scriptdetailstypedef) *(required)*
-- `Description`: `str`
-- `DisplayName`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAppBlockRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "SourceS3Location": ...,
+    "SetupScriptDetails": ...,
+}
 
-Returns
-[CreateAppBlockResultTypeDef](./type_defs.md#createappblockresulttypedef).
+parent.create_app_block(**kwargs)
+```
 
-<a id="create\_application"></a>
+1. See [:material-code-braces: CreateAppBlockRequestRequestTypeDef](./type_defs.md#createappblockrequestrequesttypedef) 
 
-### create_application
+### create\_application
 
 Creates an application.
 
-Type annotations for `boto3.client("appstream").create_application` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_application)
 
-Boto3 documentation:
-[AppStream.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_application)
+```python title="Method definition"
+def create_application(
+    self,
+    *,
+    Name: str,
+    IconS3Location: S3LocationTypeDef,  # (1)
+    LaunchPath: str,
+    Platforms: Sequence[PlatformTypeType],  # (2)
+    InstanceFamilies: Sequence[str],
+    AppBlockArn: str,
+    DisplayName: str = ...,
+    Description: str = ...,
+    WorkingDirectory: str = ...,
+    LaunchParameters: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateApplicationResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+3. See [:material-code-braces: CreateApplicationResultTypeDef](./type_defs.md#createapplicationresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IconS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-  *(required)*
-- `LaunchPath`: `str` *(required)*
-- `Platforms`: `Sequence`\[[PlatformTypeType](./literals.md#platformtypetype)\]
-  *(required)*
-- `InstanceFamilies`: `Sequence`\[`str`\] *(required)*
-- `AppBlockArn`: `str` *(required)*
-- `DisplayName`: `str`
-- `Description`: `str`
-- `WorkingDirectory`: `str`
-- `LaunchParameters`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "IconS3Location": ...,
+    "LaunchPath": ...,
+    "Platforms": ...,
+    "InstanceFamilies": ...,
+    "AppBlockArn": ...,
+}
 
-Returns
-[CreateApplicationResultTypeDef](./type_defs.md#createapplicationresulttypedef).
+parent.create_application(**kwargs)
+```
 
-<a id="create\_directory\_config"></a>
+1. See [:material-code-braces: CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef) 
 
-### create_directory_config
+### create\_directory\_config
 
 Creates a Directory Config object in AppStream 2.0.
 
-Type annotations for `boto3.client("appstream").create_directory_config`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_directory_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_directory_config)
 
-Boto3 documentation:
-[AppStream.Client.create_directory_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_directory_config)
+```python title="Method definition"
+def create_directory_config(
+    self,
+    *,
+    DirectoryName: str,
+    OrganizationalUnitDistinguishedNames: Sequence[str],
+    ServiceAccountCredentials: ServiceAccountCredentialsTypeDef = ...,  # (1)
+) -> CreateDirectoryConfigResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDirectoryConfigRequestRequestTypeDef](./type_defs.md#createdirectoryconfigrequestrequesttypedef).
+1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+2. See [:material-code-braces: CreateDirectoryConfigResultTypeDef](./type_defs.md#createdirectoryconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryName`: `str` *(required)*
-- `OrganizationalUnitDistinguishedNames`: `Sequence`\[`str`\] *(required)*
-- `ServiceAccountCredentials`:
-  [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateDirectoryConfigRequestRequestTypeDef = {  # (1)
+    "DirectoryName": ...,
+    "OrganizationalUnitDistinguishedNames": ...,
+}
 
-Returns
-[CreateDirectoryConfigResultTypeDef](./type_defs.md#createdirectoryconfigresulttypedef).
+parent.create_directory_config(**kwargs)
+```
 
-<a id="create\_entitlement"></a>
+1. See [:material-code-braces: CreateDirectoryConfigRequestRequestTypeDef](./type_defs.md#createdirectoryconfigrequestrequesttypedef) 
 
-### create_entitlement
+### create\_entitlement
 
 Creates a new entitlement.
 
-Type annotations for `boto3.client("appstream").create_entitlement` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_entitlement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_entitlement)
 
-Boto3 documentation:
-[AppStream.Client.create_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_entitlement)
+```python title="Method definition"
+def create_entitlement(
+    self,
+    *,
+    Name: str,
+    StackName: str,
+    AppVisibility: AppVisibilityType,  # (1)
+    Attributes: Sequence[EntitlementAttributeTypeDef],  # (2)
+    Description: str = ...,
+) -> CreateEntitlementResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateEntitlementRequestRequestTypeDef](./type_defs.md#createentitlementrequestrequesttypedef).
+1. See [:material-code-brackets: AppVisibilityType](./literals.md#appvisibilitytype) 
+2. See [:material-code-braces: EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef) 
+3. See [:material-code-braces: CreateEntitlementResultTypeDef](./type_defs.md#createentitlementresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `StackName`: `str` *(required)*
-- `AppVisibility`: [AppVisibilityType](./literals.md#appvisibilitytype)
-  *(required)*
-- `Attributes`:
-  `Sequence`\[[EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef)\]
-  *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateEntitlementRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "StackName": ...,
+    "AppVisibility": ...,
+    "Attributes": ...,
+}
 
-Returns
-[CreateEntitlementResultTypeDef](./type_defs.md#createentitlementresulttypedef).
+parent.create_entitlement(**kwargs)
+```
 
-<a id="create\_fleet"></a>
+1. See [:material-code-braces: CreateEntitlementRequestRequestTypeDef](./type_defs.md#createentitlementrequestrequesttypedef) 
 
-### create_fleet
+### create\_fleet
 
 Creates a fleet.
 
-Type annotations for `boto3.client("appstream").create_fleet` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_fleet)
 
-Boto3 documentation:
-[AppStream.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_fleet)
+```python title="Method definition"
+def create_fleet(
+    self,
+    *,
+    Name: str,
+    InstanceType: str,
+    ImageName: str = ...,
+    ImageArn: str = ...,
+    FleetType: FleetTypeType = ...,  # (1)
+    ComputeCapacity: ComputeCapacityTypeDef = ...,  # (2)
+    VpcConfig: VpcConfigTypeDef = ...,  # (3)
+    MaxUserDurationInSeconds: int = ...,
+    DisconnectTimeoutInSeconds: int = ...,
+    Description: str = ...,
+    DisplayName: str = ...,
+    EnableDefaultInternetAccess: bool = ...,
+    DomainJoinInfo: DomainJoinInfoTypeDef = ...,  # (4)
+    Tags: Mapping[str, str] = ...,
+    IdleDisconnectTimeoutInSeconds: int = ...,
+    IamRoleArn: str = ...,
+    StreamView: StreamViewType = ...,  # (5)
+    Platform: PlatformTypeType = ...,  # (6)
+    MaxConcurrentSessions: int = ...,
+    UsbDeviceFilterStrings: Sequence[str] = ...,
+) -> CreateFleetResultTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateFleetRequestRequestTypeDef](./type_defs.md#createfleetrequestrequesttypedef).
+1. See [:material-code-brackets: FleetTypeType](./literals.md#fleettypetype) 
+2. See [:material-code-braces: ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef) 
+3. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+4. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
+5. See [:material-code-brackets: StreamViewType](./literals.md#streamviewtype) 
+6. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+7. See [:material-code-braces: CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `InstanceType`: `str` *(required)*
-- `ImageName`: `str`
-- `ImageArn`: `str`
-- `FleetType`: [FleetTypeType](./literals.md#fleettypetype)
-- `ComputeCapacity`:
-  [ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef)
-- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `MaxUserDurationInSeconds`: `int`
-- `DisconnectTimeoutInSeconds`: `int`
-- `Description`: `str`
-- `DisplayName`: `str`
-- `EnableDefaultInternetAccess`: `bool`
-- `DomainJoinInfo`:
-  [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `IdleDisconnectTimeoutInSeconds`: `int`
-- `IamRoleArn`: `str`
-- `StreamView`: [StreamViewType](./literals.md#streamviewtype)
-- `Platform`: [PlatformTypeType](./literals.md#platformtypetype)
-- `MaxConcurrentSessions`: `int`
-- `UsbDeviceFilterStrings`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFleetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "InstanceType": ...,
+}
 
-Returns [CreateFleetResultTypeDef](./type_defs.md#createfleetresulttypedef).
+parent.create_fleet(**kwargs)
+```
 
-<a id="create\_image\_builder"></a>
+1. See [:material-code-braces: CreateFleetRequestRequestTypeDef](./type_defs.md#createfleetrequestrequesttypedef) 
 
-### create_image_builder
+### create\_image\_builder
 
 Creates an image builder.
 
-Type annotations for `boto3.client("appstream").create_image_builder` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_image_builder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder)
 
-Boto3 documentation:
-[AppStream.Client.create_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder)
+```python title="Method definition"
+def create_image_builder(
+    self,
+    *,
+    Name: str,
+    InstanceType: str,
+    ImageName: str = ...,
+    ImageArn: str = ...,
+    Description: str = ...,
+    DisplayName: str = ...,
+    VpcConfig: VpcConfigTypeDef = ...,  # (1)
+    IamRoleArn: str = ...,
+    EnableDefaultInternetAccess: bool = ...,
+    DomainJoinInfo: DomainJoinInfoTypeDef = ...,  # (2)
+    AppstreamAgentVersion: str = ...,
+    Tags: Mapping[str, str] = ...,
+    AccessEndpoints: Sequence[AccessEndpointTypeDef] = ...,  # (3)
+) -> CreateImageBuilderResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateImageBuilderRequestRequestTypeDef](./type_defs.md#createimagebuilderrequestrequesttypedef).
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+2. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
+3. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
+4. See [:material-code-braces: CreateImageBuilderResultTypeDef](./type_defs.md#createimagebuilderresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `InstanceType`: `str` *(required)*
-- `ImageName`: `str`
-- `ImageArn`: `str`
-- `Description`: `str`
-- `DisplayName`: `str`
-- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `IamRoleArn`: `str`
-- `EnableDefaultInternetAccess`: `bool`
-- `DomainJoinInfo`:
-  [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
-- `AppstreamAgentVersion`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `AccessEndpoints`:
-  `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateImageBuilderRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "InstanceType": ...,
+}
 
-Returns
-[CreateImageBuilderResultTypeDef](./type_defs.md#createimagebuilderresulttypedef).
+parent.create_image_builder(**kwargs)
+```
 
-<a id="create\_image\_builder\_streaming\_url"></a>
+1. See [:material-code-braces: CreateImageBuilderRequestRequestTypeDef](./type_defs.md#createimagebuilderrequestrequesttypedef) 
 
-### create_image_builder_streaming_url
+### create\_image\_builder\_streaming\_url
 
 Creates a URL to start an image builder streaming session.
 
-Type annotations for
-`boto3.client("appstream").create_image_builder_streaming_url` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_image_builder_streaming_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder_streaming_url)
 
-Boto3 documentation:
-[AppStream.Client.create_image_builder_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_image_builder_streaming_url)
+```python title="Method definition"
+def create_image_builder_streaming_url(
+    self,
+    *,
+    Name: str,
+    Validity: int = ...,
+) -> CreateImageBuilderStreamingURLResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateImageBuilderStreamingURLRequestRequestTypeDef](./type_defs.md#createimagebuilderstreamingurlrequestrequesttypedef).
+1. See [:material-code-braces: CreateImageBuilderStreamingURLResultTypeDef](./type_defs.md#createimagebuilderstreamingurlresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Validity`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateImageBuilderStreamingURLRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateImageBuilderStreamingURLResultTypeDef](./type_defs.md#createimagebuilderstreamingurlresulttypedef).
+parent.create_image_builder_streaming_url(**kwargs)
+```
 
-<a id="create\_stack"></a>
+1. See [:material-code-braces: CreateImageBuilderStreamingURLRequestRequestTypeDef](./type_defs.md#createimagebuilderstreamingurlrequestrequesttypedef) 
 
-### create_stack
+### create\_stack
 
 Creates a stack to start streaming applications to users.
 
-Type annotations for `boto3.client("appstream").create_stack` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_stack)
 
-Boto3 documentation:
-[AppStream.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_stack)
+```python title="Method definition"
+def create_stack(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    DisplayName: str = ...,
+    StorageConnectors: Sequence[StorageConnectorTypeDef] = ...,  # (1)
+    RedirectURL: str = ...,
+    FeedbackURL: str = ...,
+    UserSettings: Sequence[UserSettingTypeDef] = ...,  # (2)
+    ApplicationSettings: ApplicationSettingsTypeDef = ...,  # (3)
+    Tags: Mapping[str, str] = ...,
+    AccessEndpoints: Sequence[AccessEndpointTypeDef] = ...,  # (4)
+    EmbedHostDomains: Sequence[str] = ...,
+) -> CreateStackResultTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateStackRequestRequestTypeDef](./type_defs.md#createstackrequestrequesttypedef).
+1. See [:material-code-braces: StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef) 
+2. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
+3. See [:material-code-braces: ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef) 
+4. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
+5. See [:material-code-braces: CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `DisplayName`: `str`
-- `StorageConnectors`:
-  `Sequence`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
-- `RedirectURL`: `str`
-- `FeedbackURL`: `str`
-- `UserSettings`:
-  `Sequence`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
-- `ApplicationSettings`:
-  [ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `AccessEndpoints`:
-  `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
-- `EmbedHostDomains`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStackRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [CreateStackResultTypeDef](./type_defs.md#createstackresulttypedef).
+parent.create_stack(**kwargs)
+```
 
-<a id="create\_streaming\_url"></a>
+1. See [:material-code-braces: CreateStackRequestRequestTypeDef](./type_defs.md#createstackrequestrequesttypedef) 
 
-### create_streaming_url
+### create\_streaming\_url
 
 Creates a temporary URL to start an AppStream 2.0 streaming session for the
 specified user.
 
-Type annotations for `boto3.client("appstream").create_streaming_url` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_streaming_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_streaming_url)
 
-Boto3 documentation:
-[AppStream.Client.create_streaming_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_streaming_url)
+```python title="Method definition"
+def create_streaming_url(
+    self,
+    *,
+    StackName: str,
+    FleetName: str,
+    UserId: str,
+    ApplicationId: str = ...,
+    Validity: int = ...,
+    SessionContext: str = ...,
+) -> CreateStreamingURLResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamingURLRequestRequestTypeDef](./type_defs.md#createstreamingurlrequestrequesttypedef).
+1. See [:material-code-braces: CreateStreamingURLResultTypeDef](./type_defs.md#createstreamingurlresulttypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `FleetName`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `ApplicationId`: `str`
-- `Validity`: `int`
-- `SessionContext`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateStreamingURLRequestRequestTypeDef = {  # (1)
+    "StackName": ...,
+    "FleetName": ...,
+    "UserId": ...,
+}
 
-Returns
-[CreateStreamingURLResultTypeDef](./type_defs.md#createstreamingurlresulttypedef).
+parent.create_streaming_url(**kwargs)
+```
 
-<a id="create\_updated\_image"></a>
+1. See [:material-code-braces: CreateStreamingURLRequestRequestTypeDef](./type_defs.md#createstreamingurlrequestrequesttypedef) 
 
-### create_updated_image
+### create\_updated\_image
 
 Creates a new image with the latest Windows operating system updates, driver
 updates, and AppStream 2.0 agent software.
 
-Type annotations for `boto3.client("appstream").create_updated_image` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_updated_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_updated_image)
 
-Boto3 documentation:
-[AppStream.Client.create_updated_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_updated_image)
+```python title="Method definition"
+def create_updated_image(
+    self,
+    *,
+    existingImageName: str,
+    newImageName: str,
+    newImageDescription: str = ...,
+    newImageDisplayName: str = ...,
+    newImageTags: Mapping[str, str] = ...,
+    dryRun: bool = ...,
+) -> CreateUpdatedImageResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateUpdatedImageRequestRequestTypeDef](./type_defs.md#createupdatedimagerequestrequesttypedef).
+1. See [:material-code-braces: CreateUpdatedImageResultTypeDef](./type_defs.md#createupdatedimageresulttypedef) 
 
-Keyword-only arguments:
 
-- `existingImageName`: `str` *(required)*
-- `newImageName`: `str` *(required)*
-- `newImageDescription`: `str`
-- `newImageDisplayName`: `str`
-- `newImageTags`: `Mapping`\[`str`, `str`\]
-- `dryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateUpdatedImageRequestRequestTypeDef = {  # (1)
+    "existingImageName": ...,
+    "newImageName": ...,
+}
 
-Returns
-[CreateUpdatedImageResultTypeDef](./type_defs.md#createupdatedimageresulttypedef).
+parent.create_updated_image(**kwargs)
+```
 
-<a id="create\_usage\_report\_subscription"></a>
+1. See [:material-code-braces: CreateUpdatedImageRequestRequestTypeDef](./type_defs.md#createupdatedimagerequestrequesttypedef) 
 
-### create_usage_report_subscription
+### create\_usage\_report\_subscription
 
 Creates a usage report subscription.
 
-Type annotations for
-`boto3.client("appstream").create_usage_report_subscription` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_usage_report_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_usage_report_subscription)
 
-Boto3 documentation:
-[AppStream.Client.create_usage_report_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_usage_report_subscription)
+```python title="Method definition"
+def create_usage_report_subscription(
+    self,
+) -> CreateUsageReportSubscriptionResultTypeDef:  # (1)
+    ...
+```
 
-Returns
-[CreateUsageReportSubscriptionResultTypeDef](./type_defs.md#createusagereportsubscriptionresulttypedef).
+1. See [:material-code-braces: CreateUsageReportSubscriptionResultTypeDef](./type_defs.md#createusagereportsubscriptionresulttypedef) 
 
-<a id="create\_user"></a>
-
-### create_user
+### create\_user
 
 Creates a new user in the user pool.
 
-Type annotations for `boto3.client("appstream").create_user` method.
+Type annotations and code completion for `#!python boto3.client("appstream").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_user)
 
-Boto3 documentation:
-[AppStream.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    UserName: str,
+    AuthenticationType: AuthenticationTypeType,  # (1)
+    MessageAction: MessageActionType = ...,  # (2)
+    FirstName: str = ...,
+    LastName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-brackets: MessageActionType](./literals.md#messageactiontype) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype) *(required)*
-- `MessageAction`: [MessageActionType](./literals.md#messageactiontype)
-- `FirstName`: `str`
-- `LastName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "AuthenticationType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_user(**kwargs)
+```
 
-<a id="delete\_app\_block"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### delete_app_block
+### delete\_app\_block
 
 Deletes an app block.
 
-Type annotations for `boto3.client("appstream").delete_app_block` method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_app_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_app_block)
 
-Boto3 documentation:
-[AppStream.Client.delete_app_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_app_block)
+```python title="Method definition"
+def delete_app_block(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppBlockRequestRequestTypeDef](./type_defs.md#deleteappblockrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppBlockRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_app_block(**kwargs)
+```
 
-<a id="delete\_application"></a>
+1. See [:material-code-braces: DeleteAppBlockRequestRequestTypeDef](./type_defs.md#deleteappblockrequestrequesttypedef) 
 
-### delete_application
+### delete\_application
 
 Deletes an application.
 
-Type annotations for `boto3.client("appstream").delete_application` method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_application)
 
-Boto3 documentation:
-[AppStream.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_application)
+```python title="Method definition"
+def delete_application(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_application(**kwargs)
+```
 
-<a id="delete\_directory\_config"></a>
+1. See [:material-code-braces: DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef) 
 
-### delete_directory_config
+### delete\_directory\_config
 
 Deletes the specified Directory Config object from AppStream 2.0.
 
-Type annotations for `boto3.client("appstream").delete_directory_config`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_directory_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_directory_config)
 
-Boto3 documentation:
-[AppStream.Client.delete_directory_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_directory_config)
+```python title="Method definition"
+def delete_directory_config(
+    self,
+    *,
+    DirectoryName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDirectoryConfigRequestRequestTypeDef](./type_defs.md#deletedirectoryconfigrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDirectoryConfigRequestRequestTypeDef = {  # (1)
+    "DirectoryName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_directory_config(**kwargs)
+```
 
-<a id="delete\_entitlement"></a>
+1. See [:material-code-braces: DeleteDirectoryConfigRequestRequestTypeDef](./type_defs.md#deletedirectoryconfigrequestrequesttypedef) 
 
-### delete_entitlement
+### delete\_entitlement
 
 Deletes the specified entitlement.
 
-Type annotations for `boto3.client("appstream").delete_entitlement` method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_entitlement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_entitlement)
 
-Boto3 documentation:
-[AppStream.Client.delete_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_entitlement)
+```python title="Method definition"
+def delete_entitlement(
+    self,
+    *,
+    Name: str,
+    StackName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEntitlementRequestRequestTypeDef](./type_defs.md#deleteentitlementrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `StackName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEntitlementRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "StackName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_entitlement(**kwargs)
+```
 
-<a id="delete\_fleet"></a>
+1. See [:material-code-braces: DeleteEntitlementRequestRequestTypeDef](./type_defs.md#deleteentitlementrequestrequesttypedef) 
 
-### delete_fleet
+### delete\_fleet
 
 Deletes the specified fleet.
 
-Type annotations for `boto3.client("appstream").delete_fleet` method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_fleet)
 
-Boto3 documentation:
-[AppStream.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_fleet)
+```python title="Method definition"
+def delete_fleet(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFleetRequestRequestTypeDef](./type_defs.md#deletefleetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFleetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_fleet(**kwargs)
+```
 
-<a id="delete\_image"></a>
+1. See [:material-code-braces: DeleteFleetRequestRequestTypeDef](./type_defs.md#deletefleetrequestrequesttypedef) 
 
-### delete_image
+### delete\_image
 
 Deletes the specified image.
 
-Type annotations for `boto3.client("appstream").delete_image` method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image)
 
-Boto3 documentation:
-[AppStream.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image)
+```python title="Method definition"
+def delete_image(
+    self,
+    *,
+    Name: str,
+) -> DeleteImageResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteImageRequestRequestTypeDef](./type_defs.md#deleteimagerequestrequesttypedef).
+1. See [:material-code-braces: DeleteImageResultTypeDef](./type_defs.md#deleteimageresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteImageRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [DeleteImageResultTypeDef](./type_defs.md#deleteimageresulttypedef).
+parent.delete_image(**kwargs)
+```
 
-<a id="delete\_image\_builder"></a>
+1. See [:material-code-braces: DeleteImageRequestRequestTypeDef](./type_defs.md#deleteimagerequestrequesttypedef) 
 
-### delete_image_builder
+### delete\_image\_builder
 
 Deletes the specified image builder and releases the capacity.
 
-Type annotations for `boto3.client("appstream").delete_image_builder` method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_image_builder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_builder)
 
-Boto3 documentation:
-[AppStream.Client.delete_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_builder)
+```python title="Method definition"
+def delete_image_builder(
+    self,
+    *,
+    Name: str,
+) -> DeleteImageBuilderResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteImageBuilderRequestRequestTypeDef](./type_defs.md#deleteimagebuilderrequestrequesttypedef).
+1. See [:material-code-braces: DeleteImageBuilderResultTypeDef](./type_defs.md#deleteimagebuilderresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteImageBuilderRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteImageBuilderResultTypeDef](./type_defs.md#deleteimagebuilderresulttypedef).
+parent.delete_image_builder(**kwargs)
+```
 
-<a id="delete\_image\_permissions"></a>
+1. See [:material-code-braces: DeleteImageBuilderRequestRequestTypeDef](./type_defs.md#deleteimagebuilderrequestrequesttypedef) 
 
-### delete_image_permissions
+### delete\_image\_permissions
 
 Deletes permissions for the specified private image.
 
-Type annotations for `boto3.client("appstream").delete_image_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_image_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_permissions)
 
-Boto3 documentation:
-[AppStream.Client.delete_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_image_permissions)
+```python title="Method definition"
+def delete_image_permissions(
+    self,
+    *,
+    Name: str,
+    SharedAccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteImagePermissionsRequestRequestTypeDef](./type_defs.md#deleteimagepermissionsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `SharedAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteImagePermissionsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "SharedAccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_image_permissions(**kwargs)
+```
 
-<a id="delete\_stack"></a>
+1. See [:material-code-braces: DeleteImagePermissionsRequestRequestTypeDef](./type_defs.md#deleteimagepermissionsrequestrequesttypedef) 
 
-### delete_stack
+### delete\_stack
 
 Deletes the specified stack.
 
-Type annotations for `boto3.client("appstream").delete_stack` method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_stack)
 
-Boto3 documentation:
-[AppStream.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_stack)
+```python title="Method definition"
+def delete_stack(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStackRequestRequestTypeDef](./type_defs.md#deletestackrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteStackRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_stack(**kwargs)
+```
 
-<a id="delete\_usage\_report\_subscription"></a>
+1. See [:material-code-braces: DeleteStackRequestRequestTypeDef](./type_defs.md#deletestackrequestrequesttypedef) 
 
-### delete_usage_report_subscription
+### delete\_usage\_report\_subscription
 
 Disables usage report generation.
 
-Type annotations for
-`boto3.client("appstream").delete_usage_report_subscription` method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_usage_report_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_usage_report_subscription)
 
-Boto3 documentation:
-[AppStream.Client.delete_usage_report_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_usage_report_subscription)
+```python title="Method definition"
+def delete_usage_report_subscription(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete\_user"></a>
-
-### delete_user
+### delete\_user
 
 Deletes a user from the user pool.
 
-Type annotations for `boto3.client("appstream").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("appstream").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_user)
 
-Boto3 documentation:
-[AppStream.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    UserName: str,
+    AuthenticationType: AuthenticationTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "AuthenticationType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_user(**kwargs)
+```
 
-<a id="describe\_app\_blocks"></a>
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
 
-### describe_app_blocks
+### describe\_app\_blocks
 
 Retrieves a list that describes one or more app blocks.
 
-Type annotations for `boto3.client("appstream").describe_app_blocks` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_app_blocks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_app_blocks)
 
-Boto3 documentation:
-[AppStream.Client.describe_app_blocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_app_blocks)
+```python title="Method definition"
+def describe_app_blocks(
+    self,
+    *,
+    Arns: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeAppBlocksResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppBlocksRequestRequestTypeDef](./type_defs.md#describeappblocksrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppBlocksResultTypeDef](./type_defs.md#describeappblocksresulttypedef) 
 
-Keyword-only arguments:
 
-- `Arns`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeAppBlocksRequestRequestTypeDef = {  # (1)
+    "Arns": ...,
+}
 
-Returns
-[DescribeAppBlocksResultTypeDef](./type_defs.md#describeappblocksresulttypedef).
+parent.describe_app_blocks(**kwargs)
+```
 
-<a id="describe\_application\_fleet\_associations"></a>
+1. See [:material-code-braces: DescribeAppBlocksRequestRequestTypeDef](./type_defs.md#describeappblocksrequestrequesttypedef) 
 
-### describe_application_fleet_associations
+### describe\_application\_fleet\_associations
 
 Retrieves a list that describes one or more application fleet associations.
 
-Type annotations for
-`boto3.client("appstream").describe_application_fleet_associations` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_application_fleet_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_application_fleet_associations)
 
-Boto3 documentation:
-[AppStream.Client.describe_application_fleet_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_application_fleet_associations)
+```python title="Method definition"
+def describe_application_fleet_associations(
+    self,
+    *,
+    FleetName: str = ...,
+    ApplicationArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeApplicationFleetAssociationsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApplicationFleetAssociationsRequestRequestTypeDef](./type_defs.md#describeapplicationfleetassociationsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeApplicationFleetAssociationsResultTypeDef](./type_defs.md#describeapplicationfleetassociationsresulttypedef) 
 
-Keyword-only arguments:
 
-- `FleetName`: `str`
-- `ApplicationArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicationFleetAssociationsRequestRequestTypeDef = {  # (1)
+    "FleetName": ...,
+}
 
-Returns
-[DescribeApplicationFleetAssociationsResultTypeDef](./type_defs.md#describeapplicationfleetassociationsresulttypedef).
+parent.describe_application_fleet_associations(**kwargs)
+```
 
-<a id="describe\_applications"></a>
+1. See [:material-code-braces: DescribeApplicationFleetAssociationsRequestRequestTypeDef](./type_defs.md#describeapplicationfleetassociationsrequestrequesttypedef) 
 
-### describe_applications
+### describe\_applications
 
 Retrieves a list that describes one or more applications.
 
-Type annotations for `boto3.client("appstream").describe_applications` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_applications)
 
-Boto3 documentation:
-[AppStream.Client.describe_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_applications)
+```python title="Method definition"
+def describe_applications(
+    self,
+    *,
+    Arns: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeApplicationsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApplicationsRequestRequestTypeDef](./type_defs.md#describeapplicationsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeApplicationsResultTypeDef](./type_defs.md#describeapplicationsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Arns`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicationsRequestRequestTypeDef = {  # (1)
+    "Arns": ...,
+}
 
-Returns
-[DescribeApplicationsResultTypeDef](./type_defs.md#describeapplicationsresulttypedef).
+parent.describe_applications(**kwargs)
+```
 
-<a id="describe\_directory\_configs"></a>
+1. See [:material-code-braces: DescribeApplicationsRequestRequestTypeDef](./type_defs.md#describeapplicationsrequestrequesttypedef) 
 
-### describe_directory_configs
+### describe\_directory\_configs
 
 Retrieves a list that describes one or more specified Directory Config objects
 for AppStream 2.0, if the names for these objects are provided.
 
-Type annotations for `boto3.client("appstream").describe_directory_configs`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_directory_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_directory_configs)
 
-Boto3 documentation:
-[AppStream.Client.describe_directory_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_directory_configs)
+```python title="Method definition"
+def describe_directory_configs(
+    self,
+    *,
+    DirectoryNames: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeDirectoryConfigsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDirectoryConfigsRequestRequestTypeDef](./type_defs.md#describedirectoryconfigsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryNames`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDirectoryConfigsRequestRequestTypeDef = {  # (1)
+    "DirectoryNames": ...,
+}
 
-Returns
-[DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef).
+parent.describe_directory_configs(**kwargs)
+```
 
-<a id="describe\_entitlements"></a>
+1. See [:material-code-braces: DescribeDirectoryConfigsRequestRequestTypeDef](./type_defs.md#describedirectoryconfigsrequestrequesttypedef) 
 
-### describe_entitlements
+### describe\_entitlements
 
 Retrieves a list that describes one of more entitlements.
 
-Type annotations for `boto3.client("appstream").describe_entitlements` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_entitlements` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_entitlements)
 
-Boto3 documentation:
-[AppStream.Client.describe_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_entitlements)
+```python title="Method definition"
+def describe_entitlements(
+    self,
+    *,
+    StackName: str,
+    Name: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeEntitlementsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEntitlementsRequestRequestTypeDef](./type_defs.md#describeentitlementsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEntitlementsResultTypeDef](./type_defs.md#describeentitlementsresulttypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `Name`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeEntitlementsRequestRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[DescribeEntitlementsResultTypeDef](./type_defs.md#describeentitlementsresulttypedef).
+parent.describe_entitlements(**kwargs)
+```
 
-<a id="describe\_fleets"></a>
+1. See [:material-code-braces: DescribeEntitlementsRequestRequestTypeDef](./type_defs.md#describeentitlementsrequestrequesttypedef) 
 
-### describe_fleets
+### describe\_fleets
 
-Retrieves a list that describes one or more specified fleets, if the fleet
-names are provided.
+Retrieves a list that describes one or more specified fleets, if the fleet names
+are provided.
 
-Type annotations for `boto3.client("appstream").describe_fleets` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_fleets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_fleets)
 
-Boto3 documentation:
-[AppStream.Client.describe_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_fleets)
+```python title="Method definition"
+def describe_fleets(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    NextToken: str = ...,
+) -> DescribeFleetsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetsRequestRequestTypeDef](./type_defs.md#describefleetsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\]
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetsRequestRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef).
+parent.describe_fleets(**kwargs)
+```
 
-<a id="describe\_image\_builders"></a>
+1. See [:material-code-braces: DescribeFleetsRequestRequestTypeDef](./type_defs.md#describefleetsrequestrequesttypedef) 
 
-### describe_image_builders
+### describe\_image\_builders
 
 Retrieves a list that describes one or more specified image builders, if the
 image builder names are provided.
 
-Type annotations for `boto3.client("appstream").describe_image_builders`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_image_builders` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_builders)
 
-Boto3 documentation:
-[AppStream.Client.describe_image_builders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_builders)
+```python title="Method definition"
+def describe_image_builders(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeImageBuildersResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeImageBuildersRequestRequestTypeDef](./type_defs.md#describeimagebuildersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeImageBuildersRequestRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef).
+parent.describe_image_builders(**kwargs)
+```
 
-<a id="describe\_image\_permissions"></a>
+1. See [:material-code-braces: DescribeImageBuildersRequestRequestTypeDef](./type_defs.md#describeimagebuildersrequestrequesttypedef) 
 
-### describe_image_permissions
+### describe\_image\_permissions
 
 Retrieves a list that describes the permissions for shared AWS account IDs on a
 private image that you own.
 
-Type annotations for `boto3.client("appstream").describe_image_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_image_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_permissions)
 
-Boto3 documentation:
-[AppStream.Client.describe_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_image_permissions)
+```python title="Method definition"
+def describe_image_permissions(
+    self,
+    *,
+    Name: str,
+    MaxResults: int = ...,
+    SharedAwsAccountIds: Sequence[str] = ...,
+    NextToken: str = ...,
+) -> DescribeImagePermissionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeImagePermissionsRequestRequestTypeDef](./type_defs.md#describeimagepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeImagePermissionsResultTypeDef](./type_defs.md#describeimagepermissionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `MaxResults`: `int`
-- `SharedAwsAccountIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeImagePermissionsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeImagePermissionsResultTypeDef](./type_defs.md#describeimagepermissionsresulttypedef).
+parent.describe_image_permissions(**kwargs)
+```
 
-<a id="describe\_images"></a>
+1. See [:material-code-braces: DescribeImagePermissionsRequestRequestTypeDef](./type_defs.md#describeimagepermissionsrequestrequesttypedef) 
 
-### describe_images
+### describe\_images
 
-Retrieves a list that describes one or more specified images, if the image
-names or image ARNs are provided.
+Retrieves a list that describes one or more specified images, if the image names
+or image ARNs are provided.
 
-Type annotations for `boto3.client("appstream").describe_images` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_images` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_images)
 
-Boto3 documentation:
-[AppStream.Client.describe_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_images)
+```python title="Method definition"
+def describe_images(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    Arns: Sequence[str] = ...,
+    Type: VisibilityTypeType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeImagesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeImagesRequestRequestTypeDef](./type_defs.md#describeimagesrequestrequesttypedef).
+1. See [:material-code-brackets: VisibilityTypeType](./literals.md#visibilitytypetype) 
+2. See [:material-code-braces: DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\]
-- `Arns`: `Sequence`\[`str`\]
-- `Type`: [VisibilityTypeType](./literals.md#visibilitytypetype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeImagesRequestRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef).
+parent.describe_images(**kwargs)
+```
 
-<a id="describe\_sessions"></a>
+1. See [:material-code-braces: DescribeImagesRequestRequestTypeDef](./type_defs.md#describeimagesrequestrequesttypedef) 
 
-### describe_sessions
+### describe\_sessions
 
-Retrieves a list that describes the streaming sessions for a specified stack
-and fleet.
+Retrieves a list that describes the streaming sessions for a specified stack and
+fleet.
 
-Type annotations for `boto3.client("appstream").describe_sessions` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_sessions)
 
-Boto3 documentation:
-[AppStream.Client.describe_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_sessions)
+```python title="Method definition"
+def describe_sessions(
+    self,
+    *,
+    StackName: str,
+    FleetName: str,
+    UserId: str = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+    AuthenticationType: AuthenticationTypeType = ...,  # (1)
+) -> DescribeSessionsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSessionsRequestRequestTypeDef](./type_defs.md#describesessionsrequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `FleetName`: `str` *(required)*
-- `UserId`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype)
+```python title="Usage example with kwargs"
+kwargs: DescribeSessionsRequestRequestTypeDef = {  # (1)
+    "StackName": ...,
+    "FleetName": ...,
+}
 
-Returns
-[DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef).
+parent.describe_sessions(**kwargs)
+```
 
-<a id="describe\_stacks"></a>
+1. See [:material-code-braces: DescribeSessionsRequestRequestTypeDef](./type_defs.md#describesessionsrequestrequesttypedef) 
 
-### describe_stacks
+### describe\_stacks
 
-Retrieves a list that describes one or more specified stacks, if the stack
-names are provided.
+Retrieves a list that describes one or more specified stacks, if the stack names
+are provided.
 
-Type annotations for `boto3.client("appstream").describe_stacks` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_stacks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_stacks)
 
-Boto3 documentation:
-[AppStream.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_stacks)
+```python title="Method definition"
+def describe_stacks(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    NextToken: str = ...,
+) -> DescribeStacksResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStacksRequestRequestTypeDef](./type_defs.md#describestacksrequestrequesttypedef).
+1. See [:material-code-braces: DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef) 
 
-Keyword-only arguments:
 
-- `Names`: `Sequence`\[`str`\]
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeStacksRequestRequestTypeDef = {  # (1)
+    "Names": ...,
+}
 
-Returns
-[DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef).
+parent.describe_stacks(**kwargs)
+```
 
-<a id="describe\_usage\_report\_subscriptions"></a>
+1. See [:material-code-braces: DescribeStacksRequestRequestTypeDef](./type_defs.md#describestacksrequestrequesttypedef) 
 
-### describe_usage_report_subscriptions
+### describe\_usage\_report\_subscriptions
 
 Retrieves a list that describes one or more usage report subscriptions.
 
-Type annotations for
-`boto3.client("appstream").describe_usage_report_subscriptions` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_usage_report_subscriptions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_usage_report_subscriptions)
 
-Boto3 documentation:
-[AppStream.Client.describe_usage_report_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_usage_report_subscriptions)
+```python title="Method definition"
+def describe_usage_report_subscriptions(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeUsageReportSubscriptionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUsageReportSubscriptionsRequestRequestTypeDef](./type_defs.md#describeusagereportsubscriptionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUsageReportSubscriptionsResultTypeDef](./type_defs.md#describeusagereportsubscriptionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeUsageReportSubscriptionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[DescribeUsageReportSubscriptionsResultTypeDef](./type_defs.md#describeusagereportsubscriptionsresulttypedef).
+parent.describe_usage_report_subscriptions(**kwargs)
+```
 
-<a id="describe\_user\_stack\_associations"></a>
+1. See [:material-code-braces: DescribeUsageReportSubscriptionsRequestRequestTypeDef](./type_defs.md#describeusagereportsubscriptionsrequestrequesttypedef) 
 
-### describe_user_stack_associations
+### describe\_user\_stack\_associations
 
 Retrieves a list that describes the UserStackAssociation objects.
 
-Type annotations for
-`boto3.client("appstream").describe_user_stack_associations` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_user_stack_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_user_stack_associations)
 
-Boto3 documentation:
-[AppStream.Client.describe_user_stack_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_user_stack_associations)
+```python title="Method definition"
+def describe_user_stack_associations(
+    self,
+    *,
+    StackName: str = ...,
+    UserName: str = ...,
+    AuthenticationType: AuthenticationTypeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeUserStackAssociationsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserStackAssociationsRequestRequestTypeDef](./type_defs.md#describeuserstackassociationsrequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str`
-- `UserName`: `str`
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeUserStackAssociationsRequestRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef).
+parent.describe_user_stack_associations(**kwargs)
+```
 
-<a id="describe\_users"></a>
+1. See [:material-code-braces: DescribeUserStackAssociationsRequestRequestTypeDef](./type_defs.md#describeuserstackassociationsrequestrequesttypedef) 
 
-### describe_users
+### describe\_users
 
 Retrieves a list that describes one or more specified users in the user pool.
 
-Type annotations for `boto3.client("appstream").describe_users` method.
+Type annotations and code completion for `#!python boto3.client("appstream").describe_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_users)
 
-Boto3 documentation:
-[AppStream.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_users)
+```python title="Method definition"
+def describe_users(
+    self,
+    *,
+    AuthenticationType: AuthenticationTypeType,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeUsersResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef) 
 
-Keyword-only arguments:
 
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype) *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeUsersRequestRequestTypeDef = {  # (1)
+    "AuthenticationType": ...,
+}
 
-Returns
-[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef).
+parent.describe_users(**kwargs)
+```
 
-<a id="disable\_user"></a>
+1. See [:material-code-braces: DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef) 
 
-### disable_user
+### disable\_user
 
 Disables the specified user in the user pool.
 
-Type annotations for `boto3.client("appstream").disable_user` method.
+Type annotations and code completion for `#!python boto3.client("appstream").disable_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disable_user)
 
-Boto3 documentation:
-[AppStream.Client.disable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disable_user)
+```python title="Method definition"
+def disable_user(
+    self,
+    *,
+    UserName: str,
+    AuthenticationType: AuthenticationTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableUserRequestRequestTypeDef](./type_defs.md#disableuserrequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "AuthenticationType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_user(**kwargs)
+```
 
-<a id="disassociate\_application\_fleet"></a>
+1. See [:material-code-braces: DisableUserRequestRequestTypeDef](./type_defs.md#disableuserrequestrequesttypedef) 
 
-### disassociate_application_fleet
+### disassociate\_application\_fleet
 
 Disassociates the specified application from the fleet.
 
-Type annotations for `boto3.client("appstream").disassociate_application_fleet`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").disassociate_application_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_application_fleet)
 
-Boto3 documentation:
-[AppStream.Client.disassociate_application_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_application_fleet)
+```python title="Method definition"
+def disassociate_application_fleet(
+    self,
+    *,
+    FleetName: str,
+    ApplicationArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateApplicationFleetRequestRequestTypeDef](./type_defs.md#disassociateapplicationfleetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FleetName`: `str` *(required)*
-- `ApplicationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateApplicationFleetRequestRequestTypeDef = {  # (1)
+    "FleetName": ...,
+    "ApplicationArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_application_fleet(**kwargs)
+```
 
-<a id="disassociate\_application\_from\_entitlement"></a>
+1. See [:material-code-braces: DisassociateApplicationFleetRequestRequestTypeDef](./type_defs.md#disassociateapplicationfleetrequestrequesttypedef) 
 
-### disassociate_application_from_entitlement
+### disassociate\_application\_from\_entitlement
 
 Deletes the specified application from the specified entitlement.
 
-Type annotations for
-`boto3.client("appstream").disassociate_application_from_entitlement` method.
+Type annotations and code completion for `#!python boto3.client("appstream").disassociate_application_from_entitlement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_application_from_entitlement)
 
-Boto3 documentation:
-[AppStream.Client.disassociate_application_from_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_application_from_entitlement)
+```python title="Method definition"
+def disassociate_application_from_entitlement(
+    self,
+    *,
+    StackName: str,
+    EntitlementName: str,
+    ApplicationIdentifier: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateApplicationFromEntitlementRequestRequestTypeDef](./type_defs.md#disassociateapplicationfromentitlementrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `EntitlementName`: `str` *(required)*
-- `ApplicationIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateApplicationFromEntitlementRequestRequestTypeDef = {  # (1)
+    "StackName": ...,
+    "EntitlementName": ...,
+    "ApplicationIdentifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_application_from_entitlement(**kwargs)
+```
 
-<a id="disassociate\_fleet"></a>
+1. See [:material-code-braces: DisassociateApplicationFromEntitlementRequestRequestTypeDef](./type_defs.md#disassociateapplicationfromentitlementrequestrequesttypedef) 
 
-### disassociate_fleet
+### disassociate\_fleet
 
 Disassociates the specified fleet from the specified stack.
 
-Type annotations for `boto3.client("appstream").disassociate_fleet` method.
+Type annotations and code completion for `#!python boto3.client("appstream").disassociate_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_fleet)
 
-Boto3 documentation:
-[AppStream.Client.disassociate_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_fleet)
+```python title="Method definition"
+def disassociate_fleet(
+    self,
+    *,
+    FleetName: str,
+    StackName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateFleetRequestRequestTypeDef](./type_defs.md#disassociatefleetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FleetName`: `str` *(required)*
-- `StackName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateFleetRequestRequestTypeDef = {  # (1)
+    "FleetName": ...,
+    "StackName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_fleet(**kwargs)
+```
 
-<a id="enable\_user"></a>
+1. See [:material-code-braces: DisassociateFleetRequestRequestTypeDef](./type_defs.md#disassociatefleetrequestrequesttypedef) 
 
-### enable_user
+### enable\_user
 
 Enables a user in the user pool.
 
-Type annotations for `boto3.client("appstream").enable_user` method.
+Type annotations and code completion for `#!python boto3.client("appstream").enable_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.enable_user)
 
-Boto3 documentation:
-[AppStream.Client.enable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.enable_user)
+```python title="Method definition"
+def enable_user(
+    self,
+    *,
+    UserName: str,
+    AuthenticationType: AuthenticationTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableUserRequestRequestTypeDef](./type_defs.md#enableuserrequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "AuthenticationType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_user(**kwargs)
+```
 
-<a id="expire\_session"></a>
+1. See [:material-code-braces: EnableUserRequestRequestTypeDef](./type_defs.md#enableuserrequestrequesttypedef) 
 
-### expire_session
+### expire\_session
 
 Immediately stops the specified streaming session.
 
-Type annotations for `boto3.client("appstream").expire_session` method.
+Type annotations and code completion for `#!python boto3.client("appstream").expire_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.expire_session)
 
-Boto3 documentation:
-[AppStream.Client.expire_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.expire_session)
+```python title="Method definition"
+def expire_session(
+    self,
+    *,
+    SessionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ExpireSessionRequestRequestTypeDef](./type_defs.md#expiresessionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SessionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ExpireSessionRequestRequestTypeDef = {  # (1)
+    "SessionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.expire_session(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExpireSessionRequestRequestTypeDef](./type_defs.md#expiresessionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("appstream").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("appstream").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AppStream.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_associated\_fleets"></a>
-
-### list_associated_fleets
+### list\_associated\_fleets
 
 Retrieves the name of the fleet that is associated with the specified stack.
 
-Type annotations for `boto3.client("appstream").list_associated_fleets` method.
+Type annotations and code completion for `#!python boto3.client("appstream").list_associated_fleets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_fleets)
 
-Boto3 documentation:
-[AppStream.Client.list_associated_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_fleets)
+```python title="Method definition"
+def list_associated_fleets(
+    self,
+    *,
+    StackName: str,
+    NextToken: str = ...,
+) -> ListAssociatedFleetsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAssociatedFleetsRequestRequestTypeDef](./type_defs.md#listassociatedfleetsrequestrequesttypedef).
+1. See [:material-code-braces: ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAssociatedFleetsRequestRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef).
+parent.list_associated_fleets(**kwargs)
+```
 
-<a id="list\_associated\_stacks"></a>
+1. See [:material-code-braces: ListAssociatedFleetsRequestRequestTypeDef](./type_defs.md#listassociatedfleetsrequestrequesttypedef) 
 
-### list_associated_stacks
+### list\_associated\_stacks
 
 Retrieves the name of the stack with which the specified fleet is associated.
 
-Type annotations for `boto3.client("appstream").list_associated_stacks` method.
+Type annotations and code completion for `#!python boto3.client("appstream").list_associated_stacks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_stacks)
 
-Boto3 documentation:
-[AppStream.Client.list_associated_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_associated_stacks)
+```python title="Method definition"
+def list_associated_stacks(
+    self,
+    *,
+    FleetName: str,
+    NextToken: str = ...,
+) -> ListAssociatedStacksResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAssociatedStacksRequestRequestTypeDef](./type_defs.md#listassociatedstacksrequestrequesttypedef).
+1. See [:material-code-braces: ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef) 
 
-Keyword-only arguments:
 
-- `FleetName`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAssociatedStacksRequestRequestTypeDef = {  # (1)
+    "FleetName": ...,
+}
 
-Returns
-[ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef).
+parent.list_associated_stacks(**kwargs)
+```
 
-<a id="list\_entitled\_applications"></a>
+1. See [:material-code-braces: ListAssociatedStacksRequestRequestTypeDef](./type_defs.md#listassociatedstacksrequestrequesttypedef) 
 
-### list_entitled_applications
+### list\_entitled\_applications
 
 Retrieves a list of entitled applications.
 
-Type annotations for `boto3.client("appstream").list_entitled_applications`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").list_entitled_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_entitled_applications)
 
-Boto3 documentation:
-[AppStream.Client.list_entitled_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_entitled_applications)
+```python title="Method definition"
+def list_entitled_applications(
+    self,
+    *,
+    StackName: str,
+    EntitlementName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEntitledApplicationsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEntitledApplicationsRequestRequestTypeDef](./type_defs.md#listentitledapplicationsrequestrequesttypedef).
+1. See [:material-code-braces: ListEntitledApplicationsResultTypeDef](./type_defs.md#listentitledapplicationsresulttypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `EntitlementName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEntitledApplicationsRequestRequestTypeDef = {  # (1)
+    "StackName": ...,
+    "EntitlementName": ...,
+}
 
-Returns
-[ListEntitledApplicationsResultTypeDef](./type_defs.md#listentitledapplicationsresulttypedef).
+parent.list_entitled_applications(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListEntitledApplicationsRequestRequestTypeDef](./type_defs.md#listentitledapplicationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves a list of all tags for the specified AppStream 2.0 resource.
 
-Type annotations for `boto3.client("appstream").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("appstream").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[AppStream.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="start\_fleet"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### start_fleet
+### start\_fleet
 
 Starts the specified fleet.
 
-Type annotations for `boto3.client("appstream").start_fleet` method.
+Type annotations and code completion for `#!python boto3.client("appstream").start_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_fleet)
 
-Boto3 documentation:
-[AppStream.Client.start_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_fleet)
+```python title="Method definition"
+def start_fleet(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartFleetRequestRequestTypeDef](./type_defs.md#startfleetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartFleetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_fleet(**kwargs)
+```
 
-<a id="start\_image\_builder"></a>
+1. See [:material-code-braces: StartFleetRequestRequestTypeDef](./type_defs.md#startfleetrequestrequesttypedef) 
 
-### start_image_builder
+### start\_image\_builder
 
 Starts the specified image builder.
 
-Type annotations for `boto3.client("appstream").start_image_builder` method.
+Type annotations and code completion for `#!python boto3.client("appstream").start_image_builder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_image_builder)
 
-Boto3 documentation:
-[AppStream.Client.start_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.start_image_builder)
+```python title="Method definition"
+def start_image_builder(
+    self,
+    *,
+    Name: str,
+    AppstreamAgentVersion: str = ...,
+) -> StartImageBuilderResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartImageBuilderRequestRequestTypeDef](./type_defs.md#startimagebuilderrequestrequesttypedef).
+1. See [:material-code-braces: StartImageBuilderResultTypeDef](./type_defs.md#startimagebuilderresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AppstreamAgentVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartImageBuilderRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[StartImageBuilderResultTypeDef](./type_defs.md#startimagebuilderresulttypedef).
+parent.start_image_builder(**kwargs)
+```
 
-<a id="stop\_fleet"></a>
+1. See [:material-code-braces: StartImageBuilderRequestRequestTypeDef](./type_defs.md#startimagebuilderrequestrequesttypedef) 
 
-### stop_fleet
+### stop\_fleet
 
 Stops the specified fleet.
 
-Type annotations for `boto3.client("appstream").stop_fleet` method.
+Type annotations and code completion for `#!python boto3.client("appstream").stop_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_fleet)
 
-Boto3 documentation:
-[AppStream.Client.stop_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_fleet)
+```python title="Method definition"
+def stop_fleet(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopFleetRequestRequestTypeDef](./type_defs.md#stopfleetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopFleetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_fleet(**kwargs)
+```
 
-<a id="stop\_image\_builder"></a>
+1. See [:material-code-braces: StopFleetRequestRequestTypeDef](./type_defs.md#stopfleetrequestrequesttypedef) 
 
-### stop_image_builder
+### stop\_image\_builder
 
 Stops the specified image builder.
 
-Type annotations for `boto3.client("appstream").stop_image_builder` method.
+Type annotations and code completion for `#!python boto3.client("appstream").stop_image_builder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_image_builder)
 
-Boto3 documentation:
-[AppStream.Client.stop_image_builder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.stop_image_builder)
+```python title="Method definition"
+def stop_image_builder(
+    self,
+    *,
+    Name: str,
+) -> StopImageBuilderResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopImageBuilderRequestRequestTypeDef](./type_defs.md#stopimagebuilderrequestrequesttypedef).
+1. See [:material-code-braces: StopImageBuilderResultTypeDef](./type_defs.md#stopimagebuilderresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopImageBuilderRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[StopImageBuilderResultTypeDef](./type_defs.md#stopimagebuilderresulttypedef).
+parent.stop_image_builder(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopImageBuilderRequestRequestTypeDef](./type_defs.md#stopimagebuilderrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or overwrites one or more tags for the specified AppStream 2.0 resource.
 
-Type annotations for `boto3.client("appstream").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appstream").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.tag_resource)
 
-Boto3 documentation:
-[AppStream.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Disassociates one or more specified tags from the specified AppStream 2.0
 resource.
 
-Type annotations for `boto3.client("appstream").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appstream").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.untag_resource)
 
-Boto3 documentation:
-[AppStream.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_application"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_application
+### update\_application
 
 Updates the specified application.
 
-Type annotations for `boto3.client("appstream").update_application` method.
+Type annotations and code completion for `#!python boto3.client("appstream").update_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_application)
 
-Boto3 documentation:
-[AppStream.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_application)
+```python title="Method definition"
+def update_application(
+    self,
+    *,
+    Name: str,
+    DisplayName: str = ...,
+    Description: str = ...,
+    IconS3Location: S3LocationTypeDef = ...,  # (1)
+    LaunchPath: str = ...,
+    WorkingDirectory: str = ...,
+    LaunchParameters: str = ...,
+    AppBlockArn: str = ...,
+    AttributesToDelete: Sequence[ApplicationAttributeType] = ...,  # (2)
+) -> UpdateApplicationResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-brackets: ApplicationAttributeType](./literals.md#applicationattributetype) 
+3. See [:material-code-braces: UpdateApplicationResultTypeDef](./type_defs.md#updateapplicationresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `DisplayName`: `str`
-- `Description`: `str`
-- `IconS3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `LaunchPath`: `str`
-- `WorkingDirectory`: `str`
-- `LaunchParameters`: `str`
-- `AppBlockArn`: `str`
-- `AttributesToDelete`:
-  `Sequence`\[[ApplicationAttributeType](./literals.md#applicationattributetype)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateApplicationResultTypeDef](./type_defs.md#updateapplicationresulttypedef).
+parent.update_application(**kwargs)
+```
 
-<a id="update\_directory\_config"></a>
+1. See [:material-code-braces: UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef) 
 
-### update_directory_config
+### update\_directory\_config
 
 Updates the specified Directory Config object in AppStream 2.0.
 
-Type annotations for `boto3.client("appstream").update_directory_config`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").update_directory_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_directory_config)
 
-Boto3 documentation:
-[AppStream.Client.update_directory_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_directory_config)
+```python title="Method definition"
+def update_directory_config(
+    self,
+    *,
+    DirectoryName: str,
+    OrganizationalUnitDistinguishedNames: Sequence[str] = ...,
+    ServiceAccountCredentials: ServiceAccountCredentialsTypeDef = ...,  # (1)
+) -> UpdateDirectoryConfigResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDirectoryConfigRequestRequestTypeDef](./type_defs.md#updatedirectoryconfigrequestrequesttypedef).
+1. See [:material-code-braces: ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef) 
+2. See [:material-code-braces: UpdateDirectoryConfigResultTypeDef](./type_defs.md#updatedirectoryconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryName`: `str` *(required)*
-- `OrganizationalUnitDistinguishedNames`: `Sequence`\[`str`\]
-- `ServiceAccountCredentials`:
-  [ServiceAccountCredentialsTypeDef](./type_defs.md#serviceaccountcredentialstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateDirectoryConfigRequestRequestTypeDef = {  # (1)
+    "DirectoryName": ...,
+}
 
-Returns
-[UpdateDirectoryConfigResultTypeDef](./type_defs.md#updatedirectoryconfigresulttypedef).
+parent.update_directory_config(**kwargs)
+```
 
-<a id="update\_entitlement"></a>
+1. See [:material-code-braces: UpdateDirectoryConfigRequestRequestTypeDef](./type_defs.md#updatedirectoryconfigrequestrequesttypedef) 
 
-### update_entitlement
+### update\_entitlement
 
 Updates the specified entitlement.
 
-Type annotations for `boto3.client("appstream").update_entitlement` method.
+Type annotations and code completion for `#!python boto3.client("appstream").update_entitlement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_entitlement)
 
-Boto3 documentation:
-[AppStream.Client.update_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_entitlement)
+```python title="Method definition"
+def update_entitlement(
+    self,
+    *,
+    Name: str,
+    StackName: str,
+    Description: str = ...,
+    AppVisibility: AppVisibilityType = ...,  # (1)
+    Attributes: Sequence[EntitlementAttributeTypeDef] = ...,  # (2)
+) -> UpdateEntitlementResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEntitlementRequestRequestTypeDef](./type_defs.md#updateentitlementrequestrequesttypedef).
+1. See [:material-code-brackets: AppVisibilityType](./literals.md#appvisibilitytype) 
+2. See [:material-code-braces: EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef) 
+3. See [:material-code-braces: UpdateEntitlementResultTypeDef](./type_defs.md#updateentitlementresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `StackName`: `str` *(required)*
-- `Description`: `str`
-- `AppVisibility`: [AppVisibilityType](./literals.md#appvisibilitytype)
-- `Attributes`:
-  `Sequence`\[[EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateEntitlementRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "StackName": ...,
+}
 
-Returns
-[UpdateEntitlementResultTypeDef](./type_defs.md#updateentitlementresulttypedef).
+parent.update_entitlement(**kwargs)
+```
 
-<a id="update\_fleet"></a>
+1. See [:material-code-braces: UpdateEntitlementRequestRequestTypeDef](./type_defs.md#updateentitlementrequestrequesttypedef) 
 
-### update_fleet
+### update\_fleet
 
 Updates the specified fleet.
 
-Type annotations for `boto3.client("appstream").update_fleet` method.
+Type annotations and code completion for `#!python boto3.client("appstream").update_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_fleet)
 
-Boto3 documentation:
-[AppStream.Client.update_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_fleet)
+```python title="Method definition"
+def update_fleet(
+    self,
+    *,
+    ImageName: str = ...,
+    ImageArn: str = ...,
+    Name: str = ...,
+    InstanceType: str = ...,
+    ComputeCapacity: ComputeCapacityTypeDef = ...,  # (1)
+    VpcConfig: VpcConfigTypeDef = ...,  # (2)
+    MaxUserDurationInSeconds: int = ...,
+    DisconnectTimeoutInSeconds: int = ...,
+    DeleteVpcConfig: bool = ...,
+    Description: str = ...,
+    DisplayName: str = ...,
+    EnableDefaultInternetAccess: bool = ...,
+    DomainJoinInfo: DomainJoinInfoTypeDef = ...,  # (3)
+    IdleDisconnectTimeoutInSeconds: int = ...,
+    AttributesToDelete: Sequence[FleetAttributeType] = ...,  # (4)
+    IamRoleArn: str = ...,
+    StreamView: StreamViewType = ...,  # (5)
+    Platform: PlatformTypeType = ...,  # (6)
+    MaxConcurrentSessions: int = ...,
+    UsbDeviceFilterStrings: Sequence[str] = ...,
+) -> UpdateFleetResultTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFleetRequestRequestTypeDef](./type_defs.md#updatefleetrequestrequesttypedef).
+1. See [:material-code-braces: ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef) 
+2. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+3. See [:material-code-braces: DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef) 
+4. See [:material-code-brackets: FleetAttributeType](./literals.md#fleetattributetype) 
+5. See [:material-code-brackets: StreamViewType](./literals.md#streamviewtype) 
+6. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+7. See [:material-code-braces: UpdateFleetResultTypeDef](./type_defs.md#updatefleetresulttypedef) 
 
-Keyword-only arguments:
 
-- `ImageName`: `str`
-- `ImageArn`: `str`
-- `Name`: `str`
-- `InstanceType`: `str`
-- `ComputeCapacity`:
-  [ComputeCapacityTypeDef](./type_defs.md#computecapacitytypedef)
-- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `MaxUserDurationInSeconds`: `int`
-- `DisconnectTimeoutInSeconds`: `int`
-- `DeleteVpcConfig`: `bool`
-- `Description`: `str`
-- `DisplayName`: `str`
-- `EnableDefaultInternetAccess`: `bool`
-- `DomainJoinInfo`:
-  [DomainJoinInfoTypeDef](./type_defs.md#domainjoininfotypedef)
-- `IdleDisconnectTimeoutInSeconds`: `int`
-- `AttributesToDelete`:
-  `Sequence`\[[FleetAttributeType](./literals.md#fleetattributetype)\]
-- `IamRoleArn`: `str`
-- `StreamView`: [StreamViewType](./literals.md#streamviewtype)
-- `Platform`: [PlatformTypeType](./literals.md#platformtypetype)
-- `MaxConcurrentSessions`: `int`
-- `UsbDeviceFilterStrings`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateFleetRequestRequestTypeDef = {  # (1)
+    "ImageName": ...,
+}
 
-Returns [UpdateFleetResultTypeDef](./type_defs.md#updatefleetresulttypedef).
+parent.update_fleet(**kwargs)
+```
 
-<a id="update\_image\_permissions"></a>
+1. See [:material-code-braces: UpdateFleetRequestRequestTypeDef](./type_defs.md#updatefleetrequestrequesttypedef) 
 
-### update_image_permissions
+### update\_image\_permissions
 
 Adds or updates permissions for the specified private image.
 
-Type annotations for `boto3.client("appstream").update_image_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("appstream").update_image_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_image_permissions)
 
-Boto3 documentation:
-[AppStream.Client.update_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_image_permissions)
+```python title="Method definition"
+def update_image_permissions(
+    self,
+    *,
+    Name: str,
+    SharedAccountId: str,
+    ImagePermissions: ImagePermissionsTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateImagePermissionsRequestRequestTypeDef](./type_defs.md#updateimagepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `SharedAccountId`: `str` *(required)*
-- `ImagePermissions`:
-  [ImagePermissionsTypeDef](./type_defs.md#imagepermissionstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateImagePermissionsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "SharedAccountId": ...,
+    "ImagePermissions": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_image_permissions(**kwargs)
+```
 
-<a id="update\_stack"></a>
+1. See [:material-code-braces: UpdateImagePermissionsRequestRequestTypeDef](./type_defs.md#updateimagepermissionsrequestrequesttypedef) 
 
-### update_stack
+### update\_stack
 
 Updates the specified fields for the specified stack.
 
-Type annotations for `boto3.client("appstream").update_stack` method.
+Type annotations and code completion for `#!python boto3.client("appstream").update_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_stack)
 
-Boto3 documentation:
-[AppStream.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_stack)
+```python title="Method definition"
+def update_stack(
+    self,
+    *,
+    Name: str,
+    DisplayName: str = ...,
+    Description: str = ...,
+    StorageConnectors: Sequence[StorageConnectorTypeDef] = ...,  # (1)
+    DeleteStorageConnectors: bool = ...,
+    RedirectURL: str = ...,
+    FeedbackURL: str = ...,
+    AttributesToDelete: Sequence[StackAttributeType] = ...,  # (2)
+    UserSettings: Sequence[UserSettingTypeDef] = ...,  # (3)
+    ApplicationSettings: ApplicationSettingsTypeDef = ...,  # (4)
+    AccessEndpoints: Sequence[AccessEndpointTypeDef] = ...,  # (5)
+    EmbedHostDomains: Sequence[str] = ...,
+) -> UpdateStackResultTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStackRequestRequestTypeDef](./type_defs.md#updatestackrequestrequesttypedef).
+1. See [:material-code-braces: StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef) 
+2. See [:material-code-brackets: StackAttributeType](./literals.md#stackattributetype) 
+3. See [:material-code-braces: UserSettingTypeDef](./type_defs.md#usersettingtypedef) 
+4. See [:material-code-braces: ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef) 
+5. See [:material-code-braces: AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef) 
+6. See [:material-code-braces: UpdateStackResultTypeDef](./type_defs.md#updatestackresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `DisplayName`: `str`
-- `Description`: `str`
-- `StorageConnectors`:
-  `Sequence`\[[StorageConnectorTypeDef](./type_defs.md#storageconnectortypedef)\]
-- `DeleteStorageConnectors`: `bool`
-- `RedirectURL`: `str`
-- `FeedbackURL`: `str`
-- `AttributesToDelete`:
-  `Sequence`\[[StackAttributeType](./literals.md#stackattributetype)\]
-- `UserSettings`:
-  `Sequence`\[[UserSettingTypeDef](./type_defs.md#usersettingtypedef)\]
-- `ApplicationSettings`:
-  [ApplicationSettingsTypeDef](./type_defs.md#applicationsettingstypedef)
-- `AccessEndpoints`:
-  `Sequence`\[[AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)\]
-- `EmbedHostDomains`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateStackRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [UpdateStackResultTypeDef](./type_defs.md#updatestackresulttypedef).
+parent.update_stack(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateStackRequestRequestTypeDef](./type_defs.md#updatestackrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("appstream").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_directory_configs")` ->
-  [DescribeDirectoryConfigsPaginator](./paginators.md#describedirectoryconfigspaginator)
-- `client.get_paginator("describe_fleets")` ->
-  [DescribeFleetsPaginator](./paginators.md#describefleetspaginator)
-- `client.get_paginator("describe_image_builders")` ->
-  [DescribeImageBuildersPaginator](./paginators.md#describeimagebuilderspaginator)
-- `client.get_paginator("describe_images")` ->
-  [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
-- `client.get_paginator("describe_sessions")` ->
-  [DescribeSessionsPaginator](./paginators.md#describesessionspaginator)
-- `client.get_paginator("describe_stacks")` ->
-  [DescribeStacksPaginator](./paginators.md#describestackspaginator)
-- `client.get_paginator("describe_user_stack_associations")` ->
-  [DescribeUserStackAssociationsPaginator](./paginators.md#describeuserstackassociationspaginator)
-- `client.get_paginator("describe_users")` ->
-  [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
-- `client.get_paginator("list_associated_fleets")` ->
-  [ListAssociatedFleetsPaginator](./paginators.md#listassociatedfleetspaginator)
-- `client.get_paginator("list_associated_stacks")` ->
-  [ListAssociatedStacksPaginator](./paginators.md#listassociatedstackspaginator)
+- `client.get_paginator("describe_directory_configs")` -> [DescribeDirectoryConfigsPaginator](./paginators.md#describedirectoryconfigspaginator)
+- `client.get_paginator("describe_fleets")` -> [DescribeFleetsPaginator](./paginators.md#describefleetspaginator)
+- `client.get_paginator("describe_image_builders")` -> [DescribeImageBuildersPaginator](./paginators.md#describeimagebuilderspaginator)
+- `client.get_paginator("describe_images")` -> [DescribeImagesPaginator](./paginators.md#describeimagespaginator)
+- `client.get_paginator("describe_sessions")` -> [DescribeSessionsPaginator](./paginators.md#describesessionspaginator)
+- `client.get_paginator("describe_stacks")` -> [DescribeStacksPaginator](./paginators.md#describestackspaginator)
+- `client.get_paginator("describe_user_stack_associations")` -> [DescribeUserStackAssociationsPaginator](./paginators.md#describeuserstackassociationspaginator)
+- `client.get_paginator("describe_users")` -> [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
+- `client.get_paginator("list_associated_fleets")` -> [ListAssociatedFleetsPaginator](./paginators.md#listassociatedfleetspaginator)
+- `client.get_paginator("list_associated_stacks")` -> [ListAssociatedStacksPaginator](./paginators.md#listassociatedstackspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("appstream").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("appstream").get_waiter` method with overloads.
 
-- `client.get_waiter("fleet_started")` ->
-  [FleetStartedWaiter](./waiters.md#fleetstartedwaiter)
-- `client.get_waiter("fleet_stopped")` ->
-  [FleetStoppedWaiter](./waiters.md#fleetstoppedwaiter)
+- `client.get_waiter("fleet_started")` -> [FleetStartedWaiter](./waiters.md#fleetstartedwaiter)
+- `client.get_waiter("fleet_stopped")` -> [FleetStoppedWaiter](./waiters.md#fleetstoppedwaiter)
+

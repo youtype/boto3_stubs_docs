@@ -1,35 +1,18 @@
-<a id="paginators-for-boto3-inspector2-module"></a>
-
-# Paginators for boto3 Inspector2 module
+# Paginators
 
 > [Index](../README.md) > [Inspector2](./README.md) > Paginators
 
-Auto-generated documentation for
-[Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
-type annotations stubs module
-[mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
+!!! note ""
 
-- [Paginators for boto3 Inspector2 module](#paginators-for-boto3-inspector2-module)
-  - [ListAccountPermissionsPaginator](#listaccountpermissionspaginator)
-  - [ListCoveragePaginator](#listcoveragepaginator)
-  - [ListCoverageStatisticsPaginator](#listcoveragestatisticspaginator)
-  - [ListDelegatedAdminAccountsPaginator](#listdelegatedadminaccountspaginator)
-  - [ListFiltersPaginator](#listfilterspaginator)
-  - [ListFindingAggregationsPaginator](#listfindingaggregationspaginator)
-  - [ListFindingsPaginator](#listfindingspaginator)
-  - [ListMembersPaginator](#listmemberspaginator)
-  - [ListUsageTotalsPaginator](#listusagetotalspaginator)
-
-<a id="listaccountpermissionspaginator"></a>
+    Auto-generated documentation for [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
+    type annotations stubs module [mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 ## ListAccountPermissionsPaginator
 
-Type annotations for
-`boto3.client("inspector2").get_paginator("list_account_permissions")`.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator("list_account_permissions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListAccountPermissions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector2.paginator import ListAccountPermissionsPaginator
@@ -38,28 +21,41 @@ def get_list_account_permissions_paginator() -> ListAccountPermissionsPaginator:
     return Session().client("inspector2").get_paginator("list_account_permissions")
 ```
 
-Boto3 documentation:
-[Inspector2.Paginator.ListAccountPermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListAccountPermissions)
 
-Arguments for `ListAccountPermissionsPaginator.paginate` method:
+### paginate
 
-- `service`: [ServiceType](./literals.md#servicetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountPermissionsPaginator.paginate` method.
 
-`ListAccountPermissionsPaginator.paginate` returns
-`_PageIterator`\[[ListAccountPermissionsResponseTypeDef](./type_defs.md#listaccountpermissionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    service: ServiceType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAccountPermissionsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcoveragepaginator"></a>
+1. See [:material-code-brackets: ServiceType](./literals.md#servicetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAccountPermissionsResponseTypeDef](./type_defs.md#listaccountpermissionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountPermissionsRequestListAccountPermissionsPaginateTypeDef = {  # (1)
+    "service": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountPermissionsRequestListAccountPermissionsPaginateTypeDef](./type_defs.md#listaccountpermissionsrequestlistaccountpermissionspaginatetypedef) 
 ## ListCoveragePaginator
 
-Type annotations for
-`boto3.client("inspector2").get_paginator("list_coverage")`.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator("list_coverage")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListCoverage)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector2.paginator import ListCoveragePaginator
@@ -68,29 +64,41 @@ def get_list_coverage_paginator() -> ListCoveragePaginator:
     return Session().client("inspector2").get_paginator("list_coverage")
 ```
 
-Boto3 documentation:
-[Inspector2.Paginator.ListCoverage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListCoverage)
 
-Arguments for `ListCoveragePaginator.paginate` method:
+### paginate
 
-- `filterCriteria`:
-  [CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCoveragePaginator.paginate` method.
 
-`ListCoveragePaginator.paginate` returns
-`_PageIterator`\[[ListCoverageResponseTypeDef](./type_defs.md#listcoverageresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filterCriteria: CoverageFilterCriteriaTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListCoverageResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcoveragestatisticspaginator"></a>
+1. See [:material-code-braces: CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListCoverageResponseTypeDef](./type_defs.md#listcoverageresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCoverageRequestListCoveragePaginateTypeDef = {  # (1)
+    "filterCriteria": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCoverageRequestListCoveragePaginateTypeDef](./type_defs.md#listcoveragerequestlistcoveragepaginatetypedef) 
 ## ListCoverageStatisticsPaginator
 
-Type annotations for
-`boto3.client("inspector2").get_paginator("list_coverage_statistics")`.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator("list_coverage_statistics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListCoverageStatistics)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector2.paginator import ListCoverageStatisticsPaginator
@@ -99,30 +107,43 @@ def get_list_coverage_statistics_paginator() -> ListCoverageStatisticsPaginator:
     return Session().client("inspector2").get_paginator("list_coverage_statistics")
 ```
 
-Boto3 documentation:
-[Inspector2.Paginator.ListCoverageStatistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListCoverageStatistics)
 
-Arguments for `ListCoverageStatisticsPaginator.paginate` method:
+### paginate
 
-- `filterCriteria`:
-  [CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef)
-- `groupBy`: [GroupKeyType](./literals.md#groupkeytype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCoverageStatisticsPaginator.paginate` method.
 
-`ListCoverageStatisticsPaginator.paginate` returns
-`_PageIterator`\[[ListCoverageStatisticsResponseTypeDef](./type_defs.md#listcoveragestatisticsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filterCriteria: CoverageFilterCriteriaTypeDef = ...,  # (1)
+    groupBy: GroupKeyType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListCoverageStatisticsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listdelegatedadminaccountspaginator"></a>
+1. See [:material-code-braces: CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef) 
+2. See [:material-code-brackets: GroupKeyType](./literals.md#groupkeytype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListCoverageStatisticsResponseTypeDef](./type_defs.md#listcoveragestatisticsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCoverageStatisticsRequestListCoverageStatisticsPaginateTypeDef = {  # (1)
+    "filterCriteria": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCoverageStatisticsRequestListCoverageStatisticsPaginateTypeDef](./type_defs.md#listcoveragestatisticsrequestlistcoveragestatisticspaginatetypedef) 
 ## ListDelegatedAdminAccountsPaginator
 
-Type annotations for
-`boto3.client("inspector2").get_paginator("list_delegated_admin_accounts")`.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator("list_delegated_admin_accounts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListDelegatedAdminAccounts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector2.paginator import ListDelegatedAdminAccountsPaginator
@@ -131,27 +152,39 @@ def get_list_delegated_admin_accounts_paginator() -> ListDelegatedAdminAccountsP
     return Session().client("inspector2").get_paginator("list_delegated_admin_accounts")
 ```
 
-Boto3 documentation:
-[Inspector2.Paginator.ListDelegatedAdminAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListDelegatedAdminAccounts)
 
-Arguments for `ListDelegatedAdminAccountsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDelegatedAdminAccountsPaginator.paginate` method.
 
-`ListDelegatedAdminAccountsPaginator.paginate` returns
-`_PageIterator`\[[ListDelegatedAdminAccountsResponseTypeDef](./type_defs.md#listdelegatedadminaccountsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDelegatedAdminAccountsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfilterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDelegatedAdminAccountsResponseTypeDef](./type_defs.md#listdelegatedadminaccountsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDelegatedAdminAccountsRequestListDelegatedAdminAccountsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDelegatedAdminAccountsRequestListDelegatedAdminAccountsPaginateTypeDef](./type_defs.md#listdelegatedadminaccountsrequestlistdelegatedadminaccountspaginatetypedef) 
 ## ListFiltersPaginator
 
-Type annotations for
-`boto3.client("inspector2").get_paginator("list_filters")`.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator("list_filters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListFilters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector2.paginator import ListFiltersPaginator
@@ -160,29 +193,42 @@ def get_list_filters_paginator() -> ListFiltersPaginator:
     return Session().client("inspector2").get_paginator("list_filters")
 ```
 
-Boto3 documentation:
-[Inspector2.Paginator.ListFilters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListFilters)
 
-Arguments for `ListFiltersPaginator.paginate` method:
+### paginate
 
-- `action`: [FilterActionType](./literals.md#filteractiontype)
-- `arns`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFiltersPaginator.paginate` method.
 
-`ListFiltersPaginator.paginate` returns
-`_PageIterator`\[[ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    action: FilterActionType = ...,  # (1)
+    arns: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListFiltersResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listfindingaggregationspaginator"></a>
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFiltersRequestListFiltersPaginateTypeDef = {  # (1)
+    "action": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFiltersRequestListFiltersPaginateTypeDef](./type_defs.md#listfiltersrequestlistfilterspaginatetypedef) 
 ## ListFindingAggregationsPaginator
 
-Type annotations for
-`boto3.client("inspector2").get_paginator("list_finding_aggregations")`.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator("list_finding_aggregations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListFindingAggregations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector2.paginator import ListFindingAggregationsPaginator
@@ -191,33 +237,45 @@ def get_list_finding_aggregations_paginator() -> ListFindingAggregationsPaginato
     return Session().client("inspector2").get_paginator("list_finding_aggregations")
 ```
 
-Boto3 documentation:
-[Inspector2.Paginator.ListFindingAggregations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListFindingAggregations)
 
-Arguments for `ListFindingAggregationsPaginator.paginate` method:
+### paginate
 
-- `aggregationType`: [AggregationTypeType](./literals.md#aggregationtypetype)
-  *(required)*
-- `accountIds`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `aggregationRequest`:
-  [AggregationRequestTypeDef](./type_defs.md#aggregationrequesttypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFindingAggregationsPaginator.paginate` method.
 
-`ListFindingAggregationsPaginator.paginate` returns
-`_PageIterator`\[[ListFindingAggregationsResponseTypeDef](./type_defs.md#listfindingaggregationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    aggregationType: AggregationTypeType,  # (1)
+    accountIds: Sequence[StringFilterTypeDef] = ...,  # (2)
+    aggregationRequest: AggregationRequestTypeDef = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListFindingAggregationsResponseTypeDef]:  # (5)
+    ...
+```
 
-<a id="listfindingspaginator"></a>
+1. See [:material-code-brackets: AggregationTypeType](./literals.md#aggregationtypetype) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: AggregationRequestTypeDef](./type_defs.md#aggregationrequesttypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListFindingAggregationsResponseTypeDef](./type_defs.md#listfindingaggregationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFindingAggregationsRequestListFindingAggregationsPaginateTypeDef = {  # (1)
+    "aggregationType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFindingAggregationsRequestListFindingAggregationsPaginateTypeDef](./type_defs.md#listfindingaggregationsrequestlistfindingaggregationspaginatetypedef) 
 ## ListFindingsPaginator
 
-Type annotations for
-`boto3.client("inspector2").get_paginator("list_findings")`.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator("list_findings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListFindings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector2.paginator import ListFindingsPaginator
@@ -226,30 +284,43 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
     return Session().client("inspector2").get_paginator("list_findings")
 ```
 
-Boto3 documentation:
-[Inspector2.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListFindings)
 
-Arguments for `ListFindingsPaginator.paginate` method:
+### paginate
 
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFindingsPaginator.paginate` method.
 
-`ListFindingsPaginator.paginate` returns
-`_PageIterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filterCriteria: FilterCriteriaTypeDef = ...,  # (1)
+    sortCriteria: SortCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListFindingsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listmemberspaginator"></a>
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFindingsRequestListFindingsPaginateTypeDef = {  # (1)
+    "filterCriteria": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFindingsRequestListFindingsPaginateTypeDef](./type_defs.md#listfindingsrequestlistfindingspaginatetypedef) 
 ## ListMembersPaginator
 
-Type annotations for
-`boto3.client("inspector2").get_paginator("list_members")`.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator("list_members")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListMembers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector2.paginator import ListMembersPaginator
@@ -258,28 +329,40 @@ def get_list_members_paginator() -> ListMembersPaginator:
     return Session().client("inspector2").get_paginator("list_members")
 ```
 
-Boto3 documentation:
-[Inspector2.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListMembers)
 
-Arguments for `ListMembersPaginator.paginate` method:
+### paginate
 
-- `onlyAssociated`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMembersPaginator.paginate` method.
 
-`ListMembersPaginator.paginate` returns
-`_PageIterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    onlyAssociated: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMembersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listusagetotalspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMembersRequestListMembersPaginateTypeDef = {  # (1)
+    "onlyAssociated": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMembersRequestListMembersPaginateTypeDef](./type_defs.md#listmembersrequestlistmemberspaginatetypedef) 
 ## ListUsageTotalsPaginator
 
-Type annotations for
-`boto3.client("inspector2").get_paginator("list_usage_totals")`.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator("list_usage_totals")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListUsageTotals)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector2.paginator import ListUsageTotalsPaginator
@@ -288,14 +371,31 @@ def get_list_usage_totals_paginator() -> ListUsageTotalsPaginator:
     return Session().client("inspector2").get_paginator("list_usage_totals")
 ```
 
-Boto3 documentation:
-[Inspector2.Paginator.ListUsageTotals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Paginator.ListUsageTotals)
 
-Arguments for `ListUsageTotalsPaginator.paginate` method:
+### paginate
 
-- `accountIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUsageTotalsPaginator.paginate` method.
 
-`ListUsageTotalsPaginator.paginate` returns
-`_PageIterator`\[[ListUsageTotalsResponseTypeDef](./type_defs.md#listusagetotalsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    accountIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUsageTotalsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUsageTotalsResponseTypeDef](./type_defs.md#listusagetotalsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListUsageTotalsRequestListUsageTotalsPaginateTypeDef = {  # (1)
+    "accountIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUsageTotalsRequestListUsageTotalsPaginateTypeDef](./type_defs.md#listusagetotalsrequestlistusagetotalspaginatetypedef) 

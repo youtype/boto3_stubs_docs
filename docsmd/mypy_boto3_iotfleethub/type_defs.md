@@ -1,265 +1,338 @@
-<a id="typed-dictionaries-for-boto3-iotfleethub-module"></a>
-
-# Typed dictionaries for boto3 IoTFleetHub module
+# Typed dictionaries
 
 > [Index](../README.md) > [IoTFleetHub](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
-type annotations stubs module
-[mypy-boto3-iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IoTFleetHub module](#typed-dictionaries-for-boto3-iotfleethub-module)
-  - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
-  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
-  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
-  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
-  - [DescribeApplicationRequestRequestTypeDef](#describeapplicationrequestrequesttypedef)
-  - [DescribeApplicationResponseTypeDef](#describeapplicationresponsetypedef)
-  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
-  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
-
-<a id="applicationsummarytypedef"></a>
+    Auto-generated documentation for [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
+    type annotations stubs module [mypy-boto3-iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
 ## ApplicationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import ApplicationSummaryTypeDef
+
+def get_value() -> ApplicationSummaryTypeDef:
+    return {
+        "applicationId": ...,
+        "applicationName": ...,
+        "applicationUrl": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationSummaryTypeDef(TypedDict):
+    applicationId: str,
+    applicationName: str,
+    applicationUrl: str,
+    applicationDescription: NotRequired[str],
+    applicationCreationDate: NotRequired[int],
+    applicationLastUpdateDate: NotRequired[int],
+    applicationState: NotRequired[ApplicationStateType],  # (1)
+```
 
-- `applicationId`: `str`
-- `applicationName`: `str`
-- `applicationUrl`: `str`
-
-Optional fields:
-
-- `applicationDescription`: `str`
-- `applicationCreationDate`: `int`
-- `applicationLastUpdateDate`: `int`
-- `applicationState`:
-  [ApplicationStateType](./literals.md#applicationstatetype)
-
-<a id="createapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
 ## CreateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import CreateApplicationRequestRequestTypeDef
+
+def get_value() -> CreateApplicationRequestRequestTypeDef:
+    return {
+        "applicationName": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationName`: `str`
-- `roleArn`: `str`
-
-Optional fields:
-
-- `applicationDescription`: `str`
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createapplicationresponsetypedef"></a>
+```python title="Definition"
+class CreateApplicationRequestRequestTypeDef(TypedDict):
+    applicationName: str,
+    roleArn: str,
+    applicationDescription: NotRequired[str],
+    clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import CreateApplicationResponseTypeDef
+
+def get_value() -> CreateApplicationResponseTypeDef:
+    return {
+        "applicationId": ...,
+        "applicationArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationResponseTypeDef(TypedDict):
+    applicationId: str,
+    applicationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `applicationId`: `str`
-- `applicationArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import DeleteApplicationRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationRequestRequestTypeDef:
+    return {
+        "applicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="describeapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteApplicationRequestRequestTypeDef(TypedDict):
+    applicationId: str,
+    clientToken: NotRequired[str],
+```
 
 ## DescribeApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import DescribeApplicationRequestRequestTypeDef
+
+def get_value() -> DescribeApplicationRequestRequestTypeDef:
+    return {
+        "applicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationId`: `str`
-
-<a id="describeapplicationresponsetypedef"></a>
+```python title="Definition"
+class DescribeApplicationRequestRequestTypeDef(TypedDict):
+    applicationId: str,
+```
 
 ## DescribeApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import DescribeApplicationResponseTypeDef
+
+def get_value() -> DescribeApplicationResponseTypeDef:
+    return {
+        "applicationId": ...,
+        "applicationArn": ...,
+        "applicationName": ...,
+        "applicationDescription": ...,
+        "applicationUrl": ...,
+        "applicationState": ...,
+        "applicationCreationDate": ...,
+        "applicationLastUpdateDate": ...,
+        "roleArn": ...,
+        "ssoClientId": ...,
+        "errorMessage": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeApplicationResponseTypeDef(TypedDict):
+    applicationId: str,
+    applicationArn: str,
+    applicationName: str,
+    applicationDescription: str,
+    applicationUrl: str,
+    applicationState: ApplicationStateType,  # (1)
+    applicationCreationDate: int,
+    applicationLastUpdateDate: int,
+    roleArn: str,
+    ssoClientId: str,
+    errorMessage: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `applicationId`: `str`
-- `applicationArn`: `str`
-- `applicationName`: `str`
-- `applicationDescription`: `str`
-- `applicationUrl`: `str`
-- `applicationState`:
-  [ApplicationStateType](./literals.md#applicationstatetype)
-- `applicationCreationDate`: `int`
-- `applicationLastUpdateDate`: `int`
-- `roleArn`: `str`
-- `ssoClientId`: `str`
-- `errorMessage`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationsRequestListApplicationsPaginateTypeDef
 
-<a id="listapplicationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestListApplicationsPaginateTypeDef
 
+def get_value() -> ListApplicationsRequestListApplicationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsRequestListApplicationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestRequestTypeDef
+
+def get_value() -> ListApplicationsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listapplicationsresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## ListApplicationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import ListApplicationsResponseTypeDef
+
+def get_value() -> ListApplicationsResponseTypeDef:
+    return {
+        "applicationSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationsResponseTypeDef(TypedDict):
+    applicationSummaries: List[ApplicationSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `applicationSummaries`:
-  `List`\[[ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotfleethub.type_defs import UpdateApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateApplicationRequestRequestTypeDef:
+    return {
+        "applicationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApplicationRequestRequestTypeDef(TypedDict):
+    applicationId: str,
+    applicationName: NotRequired[str],
+    applicationDescription: NotRequired[str],
+    clientToken: NotRequired[str],
+```
 
-- `applicationId`: `str`
-
-Optional fields:
-
-- `applicationName`: `str`
-- `applicationDescription`: `str`
-- `clientToken`: `str`

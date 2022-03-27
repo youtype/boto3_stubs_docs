@@ -1,59 +1,18 @@
-<a id="xrayclient-for-boto3-xray-module"></a>
-
-# XRayClient for boto3 XRay module
+# XRayClient
 
 > [Index](../README.md) > [XRay](./README.md) > XRayClient
 
-Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
-type annotations stubs module
-[mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
+!!! note ""
 
-- [XRayClient for boto3 XRay module](#xrayclient-for-boto3-xray-module)
-  - [XRayClient](#xrayclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_get_traces](#batch_get_traces)
-    - [can_paginate](#can_paginate)
-    - [create_group](#create_group)
-    - [create_sampling_rule](#create_sampling_rule)
-    - [delete_group](#delete_group)
-    - [delete_sampling_rule](#delete_sampling_rule)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_encryption_config](#get_encryption_config)
-    - [get_group](#get_group)
-    - [get_groups](#get_groups)
-    - [get_insight](#get_insight)
-    - [get_insight_events](#get_insight_events)
-    - [get_insight_impact_graph](#get_insight_impact_graph)
-    - [get_insight_summaries](#get_insight_summaries)
-    - [get_sampling_rules](#get_sampling_rules)
-    - [get_sampling_statistic_summaries](#get_sampling_statistic_summaries)
-    - [get_sampling_targets](#get_sampling_targets)
-    - [get_service_graph](#get_service_graph)
-    - [get_time_series_service_statistics](#get_time_series_service_statistics)
-    - [get_trace_graph](#get_trace_graph)
-    - [get_trace_summaries](#get_trace_summaries)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_encryption_config](#put_encryption_config)
-    - [put_telemetry_records](#put_telemetry_records)
-    - [put_trace_segments](#put_trace_segments)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_group](#update_group)
-    - [update_sampling_rule](#update_sampling_rule)
-    - [get_paginator](#get_paginator)
-
-<a id="xrayclient"></a>
+    Auto-generated documentation for [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+    type annotations stubs module [mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
 
 ## XRayClient
 
-Type annotations for `boto3.client("xray")`
+Type annotations and code completion for `#!python boto3.client("xray")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_xray.client import XRayClient
 
@@ -61,722 +20,928 @@ def get_xray_client() -> XRayClient:
     return Session().client("xray")
 ```
 
-Boto3 documentation:
-[XRay.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("xray").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("xray")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InvalidRequestException,
+    client.ResourceNotFoundException,
+    client.RuleLimitExceededException,
+    client.ThrottledException,
+    client.TooManyTagsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_xray.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.RuleLimitExceededException`
-- `Exceptions.ThrottledException`
-- `Exceptions.TooManyTagsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-XRayClient exceptions.
-
-Type annotations for `boto3.client("xray").exceptions` method.
-
-Boto3 documentation:
-[XRay.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_get\_traces"></a>
-
-### batch_get_traces
+### batch\_get\_traces
 
 Retrieves a list of traces specified by ID.
 
-Type annotations for `boto3.client("xray").batch_get_traces` method.
+Type annotations and code completion for `#!python boto3.client("xray").batch_get_traces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.batch_get_traces)
 
-Boto3 documentation:
-[XRay.Client.batch_get_traces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.batch_get_traces)
+```python title="Method definition"
+def batch_get_traces(
+    self,
+    *,
+    TraceIds: Sequence[str],
+    NextToken: str = ...,
+) -> BatchGetTracesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetTracesRequestRequestTypeDef](./type_defs.md#batchgettracesrequestrequesttypedef).
+1. See [:material-code-braces: BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef) 
 
-Keyword-only arguments:
 
-- `TraceIds`: `Sequence`\[`str`\] *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchGetTracesRequestRequestTypeDef = {  # (1)
+    "TraceIds": ...,
+}
 
-Returns
-[BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef).
+parent.batch_get_traces(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchGetTracesRequestRequestTypeDef](./type_defs.md#batchgettracesrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("xray").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("xray").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.can_paginate)
 
-Boto3 documentation:
-[XRay.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_group"></a>
-
-### create_group
+### create\_group
 
 Creates a group resource with a name and a filter expression.
 
-Type annotations for `boto3.client("xray").create_group` method.
+Type annotations and code completion for `#!python boto3.client("xray").create_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_group)
 
-Boto3 documentation:
-[XRay.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_group)
+```python title="Method definition"
+def create_group(
+    self,
+    *,
+    GroupName: str,
+    FilterExpression: str = ...,
+    InsightsConfiguration: InsightsConfigurationTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateGroupResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
+1. See [:material-code-braces: InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateGroupResultTypeDef](./type_defs.md#creategroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `FilterExpression`: `str`
-- `InsightsConfiguration`:
-  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-Returns [CreateGroupResultTypeDef](./type_defs.md#creategroupresulttypedef).
+parent.create_group(**kwargs)
+```
 
-<a id="create\_sampling\_rule"></a>
+1. See [:material-code-braces: CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef) 
 
-### create_sampling_rule
+### create\_sampling\_rule
 
 Creates a rule to control sampling behavior for instrumented applications.
 
-Type annotations for `boto3.client("xray").create_sampling_rule` method.
+Type annotations and code completion for `#!python boto3.client("xray").create_sampling_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_sampling_rule)
 
-Boto3 documentation:
-[XRay.Client.create_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.create_sampling_rule)
+```python title="Method definition"
+def create_sampling_rule(
+    self,
+    *,
+    SamplingRule: SamplingRuleTypeDef,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateSamplingRuleResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateSamplingRuleRequestRequestTypeDef](./type_defs.md#createsamplingrulerequestrequesttypedef).
+1. See [:material-code-braces: SamplingRuleTypeDef](./type_defs.md#samplingruletypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateSamplingRuleResultTypeDef](./type_defs.md#createsamplingruleresulttypedef) 
 
-Keyword-only arguments:
 
-- `SamplingRule`: [SamplingRuleTypeDef](./type_defs.md#samplingruletypedef)
-  *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSamplingRuleRequestRequestTypeDef = {  # (1)
+    "SamplingRule": ...,
+}
 
-Returns
-[CreateSamplingRuleResultTypeDef](./type_defs.md#createsamplingruleresulttypedef).
+parent.create_sampling_rule(**kwargs)
+```
 
-<a id="delete\_group"></a>
+1. See [:material-code-braces: CreateSamplingRuleRequestRequestTypeDef](./type_defs.md#createsamplingrulerequestrequesttypedef) 
 
-### delete_group
+### delete\_group
 
 Deletes a group resource.
 
-Type annotations for `boto3.client("xray").delete_group` method.
+Type annotations and code completion for `#!python boto3.client("xray").delete_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_group)
 
-Boto3 documentation:
-[XRay.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_group)
+```python title="Method definition"
+def delete_group(
+    self,
+    *,
+    GroupName: str = ...,
+    GroupARN: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupName`: `str`
-- `GroupARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_group(**kwargs)
+```
 
-<a id="delete\_sampling\_rule"></a>
+1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
 
-### delete_sampling_rule
+### delete\_sampling\_rule
 
 Deletes a sampling rule.
 
-Type annotations for `boto3.client("xray").delete_sampling_rule` method.
+Type annotations and code completion for `#!python boto3.client("xray").delete_sampling_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_sampling_rule)
 
-Boto3 documentation:
-[XRay.Client.delete_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.delete_sampling_rule)
+```python title="Method definition"
+def delete_sampling_rule(
+    self,
+    *,
+    RuleName: str = ...,
+    RuleARN: str = ...,
+) -> DeleteSamplingRuleResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSamplingRuleRequestRequestTypeDef](./type_defs.md#deletesamplingrulerequestrequesttypedef).
+1. See [:material-code-braces: DeleteSamplingRuleResultTypeDef](./type_defs.md#deletesamplingruleresulttypedef) 
 
-Keyword-only arguments:
 
-- `RuleName`: `str`
-- `RuleARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSamplingRuleRequestRequestTypeDef = {  # (1)
+    "RuleName": ...,
+}
 
-Returns
-[DeleteSamplingRuleResultTypeDef](./type_defs.md#deletesamplingruleresulttypedef).
+parent.delete_sampling_rule(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteSamplingRuleRequestRequestTypeDef](./type_defs.md#deletesamplingrulerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("xray").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("xray").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.generate_presigned_url)
 
-Boto3 documentation:
-[XRay.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_encryption\_config"></a>
-
-### get_encryption_config
+### get\_encryption\_config
 
 Retrieves the current encryption configuration for X-Ray data.
 
-Type annotations for `boto3.client("xray").get_encryption_config` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_encryption_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_encryption_config)
 
-Boto3 documentation:
-[XRay.Client.get_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_encryption_config)
+```python title="Method definition"
+def get_encryption_config(
+    self,
+) -> GetEncryptionConfigResultTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetEncryptionConfigResultTypeDef](./type_defs.md#getencryptionconfigresulttypedef).
+1. See [:material-code-braces: GetEncryptionConfigResultTypeDef](./type_defs.md#getencryptionconfigresulttypedef) 
 
-<a id="get\_group"></a>
-
-### get_group
+### get\_group
 
 Retrieves group resource details.
 
-Type annotations for `boto3.client("xray").get_group` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_group)
 
-Boto3 documentation:
-[XRay.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_group)
+```python title="Method definition"
+def get_group(
+    self,
+    *,
+    GroupName: str = ...,
+    GroupARN: str = ...,
+) -> GetGroupResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef).
+1. See [:material-code-braces: GetGroupResultTypeDef](./type_defs.md#getgroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str`
-- `GroupARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-Returns [GetGroupResultTypeDef](./type_defs.md#getgroupresulttypedef).
+parent.get_group(**kwargs)
+```
 
-<a id="get\_groups"></a>
+1. See [:material-code-braces: GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef) 
 
-### get_groups
+### get\_groups
 
 Retrieves all active group details.
 
-Type annotations for `boto3.client("xray").get_groups` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_groups)
 
-Boto3 documentation:
-[XRay.Client.get_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_groups)
+```python title="Method definition"
+def get_groups(
+    self,
+    *,
+    NextToken: str = ...,
+) -> GetGroupsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGroupsRequestRequestTypeDef](./type_defs.md#getgroupsrequestrequesttypedef).
+1. See [:material-code-braces: GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetGroupsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef).
+parent.get_groups(**kwargs)
+```
 
-<a id="get\_insight"></a>
+1. See [:material-code-braces: GetGroupsRequestRequestTypeDef](./type_defs.md#getgroupsrequestrequesttypedef) 
 
-### get_insight
+### get\_insight
 
 Retrieves the summary information of an insight.
 
-Type annotations for `boto3.client("xray").get_insight` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_insight` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight)
 
-Boto3 documentation:
-[XRay.Client.get_insight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight)
+```python title="Method definition"
+def get_insight(
+    self,
+    *,
+    InsightId: str,
+) -> GetInsightResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInsightRequestRequestTypeDef](./type_defs.md#getinsightrequestrequesttypedef).
+1. See [:material-code-braces: GetInsightResultTypeDef](./type_defs.md#getinsightresulttypedef) 
 
-Keyword-only arguments:
 
-- `InsightId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInsightRequestRequestTypeDef = {  # (1)
+    "InsightId": ...,
+}
 
-Returns [GetInsightResultTypeDef](./type_defs.md#getinsightresulttypedef).
+parent.get_insight(**kwargs)
+```
 
-<a id="get\_insight\_events"></a>
+1. See [:material-code-braces: GetInsightRequestRequestTypeDef](./type_defs.md#getinsightrequestrequesttypedef) 
 
-### get_insight_events
+### get\_insight\_events
 
-X-Ray reevaluates insights periodically until they're resolved, and records
-each intermediate state as an event.
+X-Ray reevaluates insights periodically until they're resolved, and records each
+intermediate state as an event.
 
-Type annotations for `boto3.client("xray").get_insight_events` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_insight_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_events)
 
-Boto3 documentation:
-[XRay.Client.get_insight_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_events)
+```python title="Method definition"
+def get_insight_events(
+    self,
+    *,
+    InsightId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetInsightEventsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInsightEventsRequestRequestTypeDef](./type_defs.md#getinsighteventsrequestrequesttypedef).
+1. See [:material-code-braces: GetInsightEventsResultTypeDef](./type_defs.md#getinsighteventsresulttypedef) 
 
-Keyword-only arguments:
 
-- `InsightId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetInsightEventsRequestRequestTypeDef = {  # (1)
+    "InsightId": ...,
+}
 
-Returns
-[GetInsightEventsResultTypeDef](./type_defs.md#getinsighteventsresulttypedef).
+parent.get_insight_events(**kwargs)
+```
 
-<a id="get\_insight\_impact\_graph"></a>
+1. See [:material-code-braces: GetInsightEventsRequestRequestTypeDef](./type_defs.md#getinsighteventsrequestrequesttypedef) 
 
-### get_insight_impact_graph
+### get\_insight\_impact\_graph
 
 Retrieves a service graph structure filtered by the specified insight.
 
-Type annotations for `boto3.client("xray").get_insight_impact_graph` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_insight_impact_graph` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_impact_graph)
 
-Boto3 documentation:
-[XRay.Client.get_insight_impact_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_impact_graph)
+```python title="Method definition"
+def get_insight_impact_graph(
+    self,
+    *,
+    InsightId: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    NextToken: str = ...,
+) -> GetInsightImpactGraphResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInsightImpactGraphRequestRequestTypeDef](./type_defs.md#getinsightimpactgraphrequestrequesttypedef).
+1. See [:material-code-braces: GetInsightImpactGraphResultTypeDef](./type_defs.md#getinsightimpactgraphresulttypedef) 
 
-Keyword-only arguments:
 
-- `InsightId`: `str` *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetInsightImpactGraphRequestRequestTypeDef = {  # (1)
+    "InsightId": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+}
 
-Returns
-[GetInsightImpactGraphResultTypeDef](./type_defs.md#getinsightimpactgraphresulttypedef).
+parent.get_insight_impact_graph(**kwargs)
+```
 
-<a id="get\_insight\_summaries"></a>
+1. See [:material-code-braces: GetInsightImpactGraphRequestRequestTypeDef](./type_defs.md#getinsightimpactgraphrequestrequesttypedef) 
 
-### get_insight_summaries
+### get\_insight\_summaries
 
 Retrieves the summaries of all insights in the specified group matching the
 provided filter values.
 
-Type annotations for `boto3.client("xray").get_insight_summaries` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_insight_summaries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_summaries)
 
-Boto3 documentation:
-[XRay.Client.get_insight_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_insight_summaries)
+```python title="Method definition"
+def get_insight_summaries(
+    self,
+    *,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    States: Sequence[InsightStateType] = ...,  # (1)
+    GroupARN: str = ...,
+    GroupName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetInsightSummariesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetInsightSummariesRequestRequestTypeDef](./type_defs.md#getinsightsummariesrequestrequesttypedef).
+1. See [:material-code-brackets: InsightStateType](./literals.md#insightstatetype) 
+2. See [:material-code-braces: GetInsightSummariesResultTypeDef](./type_defs.md#getinsightsummariesresulttypedef) 
 
-Keyword-only arguments:
 
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `States`: `Sequence`\[[InsightStateType](./literals.md#insightstatetype)\]
-- `GroupARN`: `str`
-- `GroupName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetInsightSummariesRequestRequestTypeDef = {  # (1)
+    "StartTime": ...,
+    "EndTime": ...,
+}
 
-Returns
-[GetInsightSummariesResultTypeDef](./type_defs.md#getinsightsummariesresulttypedef).
+parent.get_insight_summaries(**kwargs)
+```
 
-<a id="get\_sampling\_rules"></a>
+1. See [:material-code-braces: GetInsightSummariesRequestRequestTypeDef](./type_defs.md#getinsightsummariesrequestrequesttypedef) 
 
-### get_sampling_rules
+### get\_sampling\_rules
 
 Retrieves all sampling rules.
 
-Type annotations for `boto3.client("xray").get_sampling_rules` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_sampling_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_rules)
 
-Boto3 documentation:
-[XRay.Client.get_sampling_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_rules)
+```python title="Method definition"
+def get_sampling_rules(
+    self,
+    *,
+    NextToken: str = ...,
+) -> GetSamplingRulesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSamplingRulesRequestRequestTypeDef](./type_defs.md#getsamplingrulesrequestrequesttypedef).
+1. See [:material-code-braces: GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSamplingRulesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef).
+parent.get_sampling_rules(**kwargs)
+```
 
-<a id="get\_sampling\_statistic\_summaries"></a>
+1. See [:material-code-braces: GetSamplingRulesRequestRequestTypeDef](./type_defs.md#getsamplingrulesrequestrequesttypedef) 
 
-### get_sampling_statistic_summaries
+### get\_sampling\_statistic\_summaries
 
 Retrieves information about recent sampling results for all sampling rules.
 
-Type annotations for `boto3.client("xray").get_sampling_statistic_summaries`
-method.
+Type annotations and code completion for `#!python boto3.client("xray").get_sampling_statistic_summaries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_statistic_summaries)
 
-Boto3 documentation:
-[XRay.Client.get_sampling_statistic_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_statistic_summaries)
+```python title="Method definition"
+def get_sampling_statistic_summaries(
+    self,
+    *,
+    NextToken: str = ...,
+) -> GetSamplingStatisticSummariesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSamplingStatisticSummariesRequestRequestTypeDef](./type_defs.md#getsamplingstatisticsummariesrequestrequesttypedef).
+1. See [:material-code-braces: GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSamplingStatisticSummariesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef).
+parent.get_sampling_statistic_summaries(**kwargs)
+```
 
-<a id="get\_sampling\_targets"></a>
+1. See [:material-code-braces: GetSamplingStatisticSummariesRequestRequestTypeDef](./type_defs.md#getsamplingstatisticsummariesrequestrequesttypedef) 
 
-### get_sampling_targets
+### get\_sampling\_targets
 
 Requests a sampling quota for rules that the service is using to sample
 requests.
 
-Type annotations for `boto3.client("xray").get_sampling_targets` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_sampling_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_targets)
 
-Boto3 documentation:
-[XRay.Client.get_sampling_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_sampling_targets)
+```python title="Method definition"
+def get_sampling_targets(
+    self,
+    *,
+    SamplingStatisticsDocuments: Sequence[SamplingStatisticsDocumentTypeDef],  # (1)
+) -> GetSamplingTargetsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetSamplingTargetsRequestRequestTypeDef](./type_defs.md#getsamplingtargetsrequestrequesttypedef).
+1. See [:material-code-braces: SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef) 
+2. See [:material-code-braces: GetSamplingTargetsResultTypeDef](./type_defs.md#getsamplingtargetsresulttypedef) 
 
-Keyword-only arguments:
 
-- `SamplingStatisticsDocuments`:
-  `Sequence`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSamplingTargetsRequestRequestTypeDef = {  # (1)
+    "SamplingStatisticsDocuments": ...,
+}
 
-Returns
-[GetSamplingTargetsResultTypeDef](./type_defs.md#getsamplingtargetsresulttypedef).
+parent.get_sampling_targets(**kwargs)
+```
 
-<a id="get\_service\_graph"></a>
+1. See [:material-code-braces: GetSamplingTargetsRequestRequestTypeDef](./type_defs.md#getsamplingtargetsrequestrequesttypedef) 
 
-### get_service_graph
+### get\_service\_graph
 
-Retrieves a document that describes services that process incoming requests,
-and downstream services that they call as a result.
+Retrieves a document that describes services that process incoming requests, and
+downstream services that they call as a result.
 
-Type annotations for `boto3.client("xray").get_service_graph` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_service_graph` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_service_graph)
 
-Boto3 documentation:
-[XRay.Client.get_service_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_service_graph)
+```python title="Method definition"
+def get_service_graph(
+    self,
+    *,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    GroupName: str = ...,
+    GroupARN: str = ...,
+    NextToken: str = ...,
+) -> GetServiceGraphResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceGraphRequestRequestTypeDef](./type_defs.md#getservicegraphrequestrequesttypedef).
+1. See [:material-code-braces: GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef) 
 
-Keyword-only arguments:
 
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetServiceGraphRequestRequestTypeDef = {  # (1)
+    "StartTime": ...,
+    "EndTime": ...,
+}
 
-Returns
-[GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef).
+parent.get_service_graph(**kwargs)
+```
 
-<a id="get\_time\_series\_service\_statistics"></a>
+1. See [:material-code-braces: GetServiceGraphRequestRequestTypeDef](./type_defs.md#getservicegraphrequestrequesttypedef) 
 
-### get_time_series_service_statistics
+### get\_time\_series\_service\_statistics
 
 Get an aggregation of service statistics defined by a specific time range.
 
-Type annotations for `boto3.client("xray").get_time_series_service_statistics`
-method.
+Type annotations and code completion for `#!python boto3.client("xray").get_time_series_service_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_time_series_service_statistics)
 
-Boto3 documentation:
-[XRay.Client.get_time_series_service_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_time_series_service_statistics)
+```python title="Method definition"
+def get_time_series_service_statistics(
+    self,
+    *,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    GroupName: str = ...,
+    GroupARN: str = ...,
+    EntitySelectorExpression: str = ...,
+    Period: int = ...,
+    ForecastStatistics: bool = ...,
+    NextToken: str = ...,
+) -> GetTimeSeriesServiceStatisticsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTimeSeriesServiceStatisticsRequestRequestTypeDef](./type_defs.md#gettimeseriesservicestatisticsrequestrequesttypedef).
+1. See [:material-code-braces: GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef) 
 
-Keyword-only arguments:
 
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `EntitySelectorExpression`: `str`
-- `Period`: `int`
-- `ForecastStatistics`: `bool`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTimeSeriesServiceStatisticsRequestRequestTypeDef = {  # (1)
+    "StartTime": ...,
+    "EndTime": ...,
+}
 
-Returns
-[GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef).
+parent.get_time_series_service_statistics(**kwargs)
+```
 
-<a id="get\_trace\_graph"></a>
+1. See [:material-code-braces: GetTimeSeriesServiceStatisticsRequestRequestTypeDef](./type_defs.md#gettimeseriesservicestatisticsrequestrequesttypedef) 
 
-### get_trace_graph
+### get\_trace\_graph
 
 Retrieves a service graph for one or more specific trace IDs.
 
-Type annotations for `boto3.client("xray").get_trace_graph` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_trace_graph` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_graph)
 
-Boto3 documentation:
-[XRay.Client.get_trace_graph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_graph)
+```python title="Method definition"
+def get_trace_graph(
+    self,
+    *,
+    TraceIds: Sequence[str],
+    NextToken: str = ...,
+) -> GetTraceGraphResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTraceGraphRequestRequestTypeDef](./type_defs.md#gettracegraphrequestrequesttypedef).
+1. See [:material-code-braces: GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef) 
 
-Keyword-only arguments:
 
-- `TraceIds`: `Sequence`\[`str`\] *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTraceGraphRequestRequestTypeDef = {  # (1)
+    "TraceIds": ...,
+}
 
-Returns
-[GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef).
+parent.get_trace_graph(**kwargs)
+```
 
-<a id="get\_trace\_summaries"></a>
+1. See [:material-code-braces: GetTraceGraphRequestRequestTypeDef](./type_defs.md#gettracegraphrequestrequesttypedef) 
 
-### get_trace_summaries
+### get\_trace\_summaries
 
 Retrieves IDs and annotations for traces available for a specified time frame
 using an optional filter.
 
-Type annotations for `boto3.client("xray").get_trace_summaries` method.
+Type annotations and code completion for `#!python boto3.client("xray").get_trace_summaries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_summaries)
 
-Boto3 documentation:
-[XRay.Client.get_trace_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.get_trace_summaries)
+```python title="Method definition"
+def get_trace_summaries(
+    self,
+    *,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    TimeRangeType: TimeRangeTypeType = ...,  # (1)
+    Sampling: bool = ...,
+    SamplingStrategy: SamplingStrategyTypeDef = ...,  # (2)
+    FilterExpression: str = ...,
+    NextToken: str = ...,
+) -> GetTraceSummariesResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetTraceSummariesRequestRequestTypeDef](./type_defs.md#gettracesummariesrequestrequesttypedef).
+1. See [:material-code-brackets: TimeRangeTypeType](./literals.md#timerangetypetype) 
+2. See [:material-code-braces: SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef) 
+3. See [:material-code-braces: GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef) 
 
-Keyword-only arguments:
 
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `TimeRangeType`: [TimeRangeTypeType](./literals.md#timerangetypetype)
-- `Sampling`: `bool`
-- `SamplingStrategy`:
-  [SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef)
-- `FilterExpression`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTraceSummariesRequestRequestTypeDef = {  # (1)
+    "StartTime": ...,
+    "EndTime": ...,
+}
 
-Returns
-[GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef).
+parent.get_trace_summaries(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: GetTraceSummariesRequestRequestTypeDef](./type_defs.md#gettracesummariesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of tags that are applied to the specified Amazon Web Services
 X-Ray group or sampling rule.
 
-Type annotations for `boto3.client("xray").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("xray").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[XRay.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+    NextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_encryption\_config"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_encryption_config
+### put\_encryption\_config
 
 Updates the encryption configuration for X-Ray data.
 
-Type annotations for `boto3.client("xray").put_encryption_config` method.
+Type annotations and code completion for `#!python boto3.client("xray").put_encryption_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_encryption_config)
 
-Boto3 documentation:
-[XRay.Client.put_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_encryption_config)
+```python title="Method definition"
+def put_encryption_config(
+    self,
+    *,
+    Type: EncryptionTypeType,  # (1)
+    KeyId: str = ...,
+) -> PutEncryptionConfigResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutEncryptionConfigRequestRequestTypeDef](./type_defs.md#putencryptionconfigrequestrequesttypedef).
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+2. See [:material-code-braces: PutEncryptionConfigResultTypeDef](./type_defs.md#putencryptionconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [EncryptionTypeType](./literals.md#encryptiontypetype) *(required)*
-- `KeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutEncryptionConfigRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns
-[PutEncryptionConfigResultTypeDef](./type_defs.md#putencryptionconfigresulttypedef).
+parent.put_encryption_config(**kwargs)
+```
 
-<a id="put\_telemetry\_records"></a>
+1. See [:material-code-braces: PutEncryptionConfigRequestRequestTypeDef](./type_defs.md#putencryptionconfigrequestrequesttypedef) 
 
-### put_telemetry_records
+### put\_telemetry\_records
 
 Used by the Amazon Web Services X-Ray daemon to upload telemetry.
 
-Type annotations for `boto3.client("xray").put_telemetry_records` method.
+Type annotations and code completion for `#!python boto3.client("xray").put_telemetry_records` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_telemetry_records)
 
-Boto3 documentation:
-[XRay.Client.put_telemetry_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_telemetry_records)
+```python title="Method definition"
+def put_telemetry_records(
+    self,
+    *,
+    TelemetryRecords: Sequence[TelemetryRecordTypeDef],  # (1)
+    EC2InstanceId: str = ...,
+    Hostname: str = ...,
+    ResourceARN: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutTelemetryRecordsRequestRequestTypeDef](./type_defs.md#puttelemetryrecordsrequestrequesttypedef).
+1. See [:material-code-braces: TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef) 
 
-Keyword-only arguments:
 
-- `TelemetryRecords`:
-  `Sequence`\[[TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef)\]
-  *(required)*
-- `EC2InstanceId`: `str`
-- `Hostname`: `str`
-- `ResourceARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutTelemetryRecordsRequestRequestTypeDef = {  # (1)
+    "TelemetryRecords": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_telemetry_records(**kwargs)
+```
 
-<a id="put\_trace\_segments"></a>
+1. See [:material-code-braces: PutTelemetryRecordsRequestRequestTypeDef](./type_defs.md#puttelemetryrecordsrequestrequesttypedef) 
 
-### put_trace_segments
+### put\_trace\_segments
 
 Uploads segment documents to Amazon Web Services X-Ray.
 
-Type annotations for `boto3.client("xray").put_trace_segments` method.
+Type annotations and code completion for `#!python boto3.client("xray").put_trace_segments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_trace_segments)
 
-Boto3 documentation:
-[XRay.Client.put_trace_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.put_trace_segments)
+```python title="Method definition"
+def put_trace_segments(
+    self,
+    *,
+    TraceSegmentDocuments: Sequence[str],
+) -> PutTraceSegmentsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutTraceSegmentsRequestRequestTypeDef](./type_defs.md#puttracesegmentsrequestrequesttypedef).
+1. See [:material-code-braces: PutTraceSegmentsResultTypeDef](./type_defs.md#puttracesegmentsresulttypedef) 
 
-Keyword-only arguments:
 
-- `TraceSegmentDocuments`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutTraceSegmentsRequestRequestTypeDef = {  # (1)
+    "TraceSegmentDocuments": ...,
+}
 
-Returns
-[PutTraceSegmentsResultTypeDef](./type_defs.md#puttracesegmentsresulttypedef).
+parent.put_trace_segments(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutTraceSegmentsRequestRequestTypeDef](./type_defs.md#puttracesegmentsrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Applies tags to an existing Amazon Web Services X-Ray group or sampling rule.
 
-Type annotations for `boto3.client("xray").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("xray").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.tag_resource)
 
-Boto3 documentation:
-[XRay.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from an Amazon Web Services X-Ray group or sampling rule.
 
-Type annotations for `boto3.client("xray").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("xray").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.untag_resource)
 
-Boto3 documentation:
-[XRay.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_group"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_group
+### update\_group
 
 Updates a group resource.
 
-Type annotations for `boto3.client("xray").update_group` method.
+Type annotations and code completion for `#!python boto3.client("xray").update_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_group)
 
-Boto3 documentation:
-[XRay.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_group)
+```python title="Method definition"
+def update_group(
+    self,
+    *,
+    GroupName: str = ...,
+    GroupARN: str = ...,
+    FilterExpression: str = ...,
+    InsightsConfiguration: InsightsConfigurationTypeDef = ...,  # (1)
+) -> UpdateGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef).
+1. See [:material-code-braces: InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef) 
+2. See [:material-code-braces: UpdateGroupResultTypeDef](./type_defs.md#updategroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `FilterExpression`: `str`
-- `InsightsConfiguration`:
-  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-Returns [UpdateGroupResultTypeDef](./type_defs.md#updategroupresulttypedef).
+parent.update_group(**kwargs)
+```
 
-<a id="update\_sampling\_rule"></a>
+1. See [:material-code-braces: UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef) 
 
-### update_sampling_rule
+### update\_sampling\_rule
 
 Modifies a sampling rule's configuration.
 
-Type annotations for `boto3.client("xray").update_sampling_rule` method.
+Type annotations and code completion for `#!python boto3.client("xray").update_sampling_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_sampling_rule)
 
-Boto3 documentation:
-[XRay.Client.update_sampling_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.update_sampling_rule)
+```python title="Method definition"
+def update_sampling_rule(
+    self,
+    *,
+    SamplingRuleUpdate: SamplingRuleUpdateTypeDef,  # (1)
+) -> UpdateSamplingRuleResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSamplingRuleRequestRequestTypeDef](./type_defs.md#updatesamplingrulerequestrequesttypedef).
+1. See [:material-code-braces: SamplingRuleUpdateTypeDef](./type_defs.md#samplingruleupdatetypedef) 
+2. See [:material-code-braces: UpdateSamplingRuleResultTypeDef](./type_defs.md#updatesamplingruleresulttypedef) 
 
-Keyword-only arguments:
 
-- `SamplingRuleUpdate`:
-  [SamplingRuleUpdateTypeDef](./type_defs.md#samplingruleupdatetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSamplingRuleRequestRequestTypeDef = {  # (1)
+    "SamplingRuleUpdate": ...,
+}
 
-Returns
-[UpdateSamplingRuleResultTypeDef](./type_defs.md#updatesamplingruleresulttypedef).
+parent.update_sampling_rule(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateSamplingRuleRequestRequestTypeDef](./type_defs.md#updatesamplingrulerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("xray").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("xray").get_paginator` method with overloads.
 
-- `client.get_paginator("batch_get_traces")` ->
-  [BatchGetTracesPaginator](./paginators.md#batchgettracespaginator)
-- `client.get_paginator("get_groups")` ->
-  [GetGroupsPaginator](./paginators.md#getgroupspaginator)
-- `client.get_paginator("get_sampling_rules")` ->
-  [GetSamplingRulesPaginator](./paginators.md#getsamplingrulespaginator)
-- `client.get_paginator("get_sampling_statistic_summaries")` ->
-  [GetSamplingStatisticSummariesPaginator](./paginators.md#getsamplingstatisticsummariespaginator)
-- `client.get_paginator("get_service_graph")` ->
-  [GetServiceGraphPaginator](./paginators.md#getservicegraphpaginator)
-- `client.get_paginator("get_time_series_service_statistics")` ->
-  [GetTimeSeriesServiceStatisticsPaginator](./paginators.md#gettimeseriesservicestatisticspaginator)
-- `client.get_paginator("get_trace_graph")` ->
-  [GetTraceGraphPaginator](./paginators.md#gettracegraphpaginator)
-- `client.get_paginator("get_trace_summaries")` ->
-  [GetTraceSummariesPaginator](./paginators.md#gettracesummariespaginator)
+- `client.get_paginator("batch_get_traces")` -> [BatchGetTracesPaginator](./paginators.md#batchgettracespaginator)
+- `client.get_paginator("get_groups")` -> [GetGroupsPaginator](./paginators.md#getgroupspaginator)
+- `client.get_paginator("get_sampling_rules")` -> [GetSamplingRulesPaginator](./paginators.md#getsamplingrulespaginator)
+- `client.get_paginator("get_sampling_statistic_summaries")` -> [GetSamplingStatisticSummariesPaginator](./paginators.md#getsamplingstatisticsummariespaginator)
+- `client.get_paginator("get_service_graph")` -> [GetServiceGraphPaginator](./paginators.md#getservicegraphpaginator)
+- `client.get_paginator("get_time_series_service_statistics")` -> [GetTimeSeriesServiceStatisticsPaginator](./paginators.md#gettimeseriesservicestatisticspaginator)
+- `client.get_paginator("get_trace_graph")` -> [GetTraceGraphPaginator](./paginators.md#gettracegraphpaginator)
+- `client.get_paginator("get_trace_summaries")` -> [GetTraceSummariesPaginator](./paginators.md#gettracesummariespaginator)
+
+
+

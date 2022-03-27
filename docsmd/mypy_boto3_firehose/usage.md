@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-firehose-module"></a>
-
-# Examples for boto3 Firehose module
+# Examples
 
 > [Index](../README.md) > [Firehose](./README.md) > Examples
 
-- [Examples for boto3 Firehose module](#examples-for-boto3-firehose-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
+    type annotations stubs module [mypy-boto3-firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[firehose]` package installed.
 
-Write your `Firehose` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Firehose` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type FirehoseClient
-# and provides type checking and code completion
-client = session.client("firehose")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("firehose")  # (1)
+    result = client.create_delivery_stream()  # (2)
+    ```
+
+    1. client: [FirehoseClient](./client.md)
+    2. result: [:material-code-braces: CreateDeliveryStreamOutputTypeDef](./type_defs.md#createdeliverystreamoutputtypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[firehose]` or a standalone `mypy_boto3_firehose`
-package, you have to explicitly specify `client: FirehoseClient` type
-annotation.
+With `boto3-stubs-lite[firehose]`
+or a standalone `mypy_boto3_firehose` package, you have to explicitly specify `client: FirehoseClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_firehose.client import FirehoseClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_firehose.client import FirehoseClient
+    from mypy_boto3_firehose.type_defs import CreateDeliveryStreamOutputTypeDef
+    from mypy_boto3_firehose.type_defs import CreateDeliveryStreamInputRequestTypeDef
 
 
-from mypy_boto3_firehose.type_defs import bool
+    session = Session()
+
+    client: FirehoseClient = session.client("firehose")
+
+    kwargs: CreateDeliveryStreamInputRequestTypeDef = {...}
+    result: CreateDeliveryStreamOutputTypeDef = client.create_delivery_stream(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: FirehoseClient = session.client("firehose")
 
-result: bool = client.can_paginate()
-```
+

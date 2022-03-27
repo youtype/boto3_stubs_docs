@@ -1,4227 +1,5216 @@
-<a id="typed-dictionaries-for-boto3-mediaconvert-module"></a>
-
-# Typed dictionaries for boto3 MediaConvert module
+# Typed dictionaries
 
 > [Index](../README.md) > [MediaConvert](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
-type annotations stubs module
-[mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+!!! note ""
 
-- [Typed dictionaries for boto3 MediaConvert module](#typed-dictionaries-for-boto3-mediaconvert-module)
-  - [AacSettingsTypeDef](#aacsettingstypedef)
-  - [Ac3SettingsTypeDef](#ac3settingstypedef)
-  - [AccelerationSettingsTypeDef](#accelerationsettingstypedef)
-  - [AiffSettingsTypeDef](#aiffsettingstypedef)
-  - [AncillarySourceSettingsTypeDef](#ancillarysourcesettingstypedef)
-  - [AssociateCertificateRequestRequestTypeDef](#associatecertificaterequestrequesttypedef)
-  - [AudioChannelTaggingSettingsTypeDef](#audiochanneltaggingsettingstypedef)
-  - [AudioCodecSettingsTypeDef](#audiocodecsettingstypedef)
-  - [AudioDescriptionTypeDef](#audiodescriptiontypedef)
-  - [AudioNormalizationSettingsTypeDef](#audionormalizationsettingstypedef)
-  - [AudioSelectorGroupTypeDef](#audioselectorgrouptypedef)
-  - [AudioSelectorTypeDef](#audioselectortypedef)
-  - [AutomatedAbrSettingsTypeDef](#automatedabrsettingstypedef)
-  - [AutomatedEncodingSettingsTypeDef](#automatedencodingsettingstypedef)
-  - [Av1QvbrSettingsTypeDef](#av1qvbrsettingstypedef)
-  - [Av1SettingsTypeDef](#av1settingstypedef)
-  - [AvailBlankingTypeDef](#availblankingtypedef)
-  - [AvcIntraSettingsTypeDef](#avcintrasettingstypedef)
-  - [AvcIntraUhdSettingsTypeDef](#avcintrauhdsettingstypedef)
-  - [BurninDestinationSettingsTypeDef](#burnindestinationsettingstypedef)
-  - [CancelJobRequestRequestTypeDef](#canceljobrequestrequesttypedef)
-  - [CaptionDescriptionPresetTypeDef](#captiondescriptionpresettypedef)
-  - [CaptionDescriptionTypeDef](#captiondescriptiontypedef)
-  - [CaptionDestinationSettingsTypeDef](#captiondestinationsettingstypedef)
-  - [CaptionSelectorTypeDef](#captionselectortypedef)
-  - [CaptionSourceFramerateTypeDef](#captionsourceframeratetypedef)
-  - [CaptionSourceSettingsTypeDef](#captionsourcesettingstypedef)
-  - [ChannelMappingTypeDef](#channelmappingtypedef)
-  - [CmafAdditionalManifestTypeDef](#cmafadditionalmanifesttypedef)
-  - [CmafEncryptionSettingsTypeDef](#cmafencryptionsettingstypedef)
-  - [CmafGroupSettingsTypeDef](#cmafgroupsettingstypedef)
-  - [CmafImageBasedTrickPlaySettingsTypeDef](#cmafimagebasedtrickplaysettingstypedef)
-  - [CmfcSettingsTypeDef](#cmfcsettingstypedef)
-  - [ColorCorrectorTypeDef](#colorcorrectortypedef)
-  - [ContainerSettingsTypeDef](#containersettingstypedef)
-  - [CreateJobRequestRequestTypeDef](#createjobrequestrequesttypedef)
-  - [CreateJobResponseTypeDef](#createjobresponsetypedef)
-  - [CreateJobTemplateRequestRequestTypeDef](#createjobtemplaterequestrequesttypedef)
-  - [CreateJobTemplateResponseTypeDef](#createjobtemplateresponsetypedef)
-  - [CreatePresetRequestRequestTypeDef](#createpresetrequestrequesttypedef)
-  - [CreatePresetResponseTypeDef](#createpresetresponsetypedef)
-  - [CreateQueueRequestRequestTypeDef](#createqueuerequestrequesttypedef)
-  - [CreateQueueResponseTypeDef](#createqueueresponsetypedef)
-  - [DashAdditionalManifestTypeDef](#dashadditionalmanifesttypedef)
-  - [DashIsoEncryptionSettingsTypeDef](#dashisoencryptionsettingstypedef)
-  - [DashIsoGroupSettingsTypeDef](#dashisogroupsettingstypedef)
-  - [DashIsoImageBasedTrickPlaySettingsTypeDef](#dashisoimagebasedtrickplaysettingstypedef)
-  - [DeinterlacerTypeDef](#deinterlacertypedef)
-  - [DeleteJobTemplateRequestRequestTypeDef](#deletejobtemplaterequestrequesttypedef)
-  - [DeletePresetRequestRequestTypeDef](#deletepresetrequestrequesttypedef)
-  - [DeleteQueueRequestRequestTypeDef](#deletequeuerequestrequesttypedef)
-  - [DescribeEndpointsRequestRequestTypeDef](#describeendpointsrequestrequesttypedef)
-  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
-  - [DestinationSettingsTypeDef](#destinationsettingstypedef)
-  - [DisassociateCertificateRequestRequestTypeDef](#disassociatecertificaterequestrequesttypedef)
-  - [DolbyVisionLevel6MetadataTypeDef](#dolbyvisionlevel6metadatatypedef)
-  - [DolbyVisionTypeDef](#dolbyvisiontypedef)
-  - [DvbNitSettingsTypeDef](#dvbnitsettingstypedef)
-  - [DvbSdtSettingsTypeDef](#dvbsdtsettingstypedef)
-  - [DvbSubDestinationSettingsTypeDef](#dvbsubdestinationsettingstypedef)
-  - [DvbSubSourceSettingsTypeDef](#dvbsubsourcesettingstypedef)
-  - [DvbTdtSettingsTypeDef](#dvbtdtsettingstypedef)
-  - [Eac3AtmosSettingsTypeDef](#eac3atmossettingstypedef)
-  - [Eac3SettingsTypeDef](#eac3settingstypedef)
-  - [EmbeddedDestinationSettingsTypeDef](#embeddeddestinationsettingstypedef)
-  - [EmbeddedSourceSettingsTypeDef](#embeddedsourcesettingstypedef)
-  - [EndpointTypeDef](#endpointtypedef)
-  - [EsamManifestConfirmConditionNotificationTypeDef](#esammanifestconfirmconditionnotificationtypedef)
-  - [EsamSettingsTypeDef](#esamsettingstypedef)
-  - [EsamSignalProcessingNotificationTypeDef](#esamsignalprocessingnotificationtypedef)
-  - [ExtendedDataServicesTypeDef](#extendeddataservicestypedef)
-  - [F4vSettingsTypeDef](#f4vsettingstypedef)
-  - [FileGroupSettingsTypeDef](#filegroupsettingstypedef)
-  - [FileSourceSettingsTypeDef](#filesourcesettingstypedef)
-  - [FrameCaptureSettingsTypeDef](#framecapturesettingstypedef)
-  - [GetJobRequestRequestTypeDef](#getjobrequestrequesttypedef)
-  - [GetJobResponseTypeDef](#getjobresponsetypedef)
-  - [GetJobTemplateRequestRequestTypeDef](#getjobtemplaterequestrequesttypedef)
-  - [GetJobTemplateResponseTypeDef](#getjobtemplateresponsetypedef)
-  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
-  - [GetPresetRequestRequestTypeDef](#getpresetrequestrequesttypedef)
-  - [GetPresetResponseTypeDef](#getpresetresponsetypedef)
-  - [GetQueueRequestRequestTypeDef](#getqueuerequestrequesttypedef)
-  - [GetQueueResponseTypeDef](#getqueueresponsetypedef)
-  - [H264QvbrSettingsTypeDef](#h264qvbrsettingstypedef)
-  - [H264SettingsTypeDef](#h264settingstypedef)
-  - [H265QvbrSettingsTypeDef](#h265qvbrsettingstypedef)
-  - [H265SettingsTypeDef](#h265settingstypedef)
-  - [Hdr10MetadataTypeDef](#hdr10metadatatypedef)
-  - [Hdr10PlusTypeDef](#hdr10plustypedef)
-  - [HlsAdditionalManifestTypeDef](#hlsadditionalmanifesttypedef)
-  - [HlsCaptionLanguageMappingTypeDef](#hlscaptionlanguagemappingtypedef)
-  - [HlsEncryptionSettingsTypeDef](#hlsencryptionsettingstypedef)
-  - [HlsGroupSettingsTypeDef](#hlsgroupsettingstypedef)
-  - [HlsImageBasedTrickPlaySettingsTypeDef](#hlsimagebasedtrickplaysettingstypedef)
-  - [HlsRenditionGroupSettingsTypeDef](#hlsrenditiongroupsettingstypedef)
-  - [HlsSettingsTypeDef](#hlssettingstypedef)
-  - [HopDestinationTypeDef](#hopdestinationtypedef)
-  - [Id3InsertionTypeDef](#id3insertiontypedef)
-  - [ImageInserterTypeDef](#imageinsertertypedef)
-  - [ImscDestinationSettingsTypeDef](#imscdestinationsettingstypedef)
-  - [InputClippingTypeDef](#inputclippingtypedef)
-  - [InputDecryptionSettingsTypeDef](#inputdecryptionsettingstypedef)
-  - [InputTemplateTypeDef](#inputtemplatetypedef)
-  - [InputTypeDef](#inputtypedef)
-  - [InsertableImageTypeDef](#insertableimagetypedef)
-  - [JobMessagesTypeDef](#jobmessagestypedef)
-  - [JobSettingsTypeDef](#jobsettingstypedef)
-  - [JobTemplateSettingsTypeDef](#jobtemplatesettingstypedef)
-  - [JobTemplateTypeDef](#jobtemplatetypedef)
-  - [JobTypeDef](#jobtypedef)
-  - [KantarWatermarkSettingsTypeDef](#kantarwatermarksettingstypedef)
-  - [ListJobTemplatesRequestRequestTypeDef](#listjobtemplatesrequestrequesttypedef)
-  - [ListJobTemplatesResponseTypeDef](#listjobtemplatesresponsetypedef)
-  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
-  - [ListJobsResponseTypeDef](#listjobsresponsetypedef)
-  - [ListPresetsRequestRequestTypeDef](#listpresetsrequestrequesttypedef)
-  - [ListPresetsResponseTypeDef](#listpresetsresponsetypedef)
-  - [ListQueuesRequestRequestTypeDef](#listqueuesrequestrequesttypedef)
-  - [ListQueuesResponseTypeDef](#listqueuesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [M2tsScte35EsamTypeDef](#m2tsscte35esamtypedef)
-  - [M2tsSettingsTypeDef](#m2tssettingstypedef)
-  - [M3u8SettingsTypeDef](#m3u8settingstypedef)
-  - [MotionImageInserterTypeDef](#motionimageinsertertypedef)
-  - [MotionImageInsertionFramerateTypeDef](#motionimageinsertionframeratetypedef)
-  - [MotionImageInsertionOffsetTypeDef](#motionimageinsertionoffsettypedef)
-  - [MovSettingsTypeDef](#movsettingstypedef)
-  - [Mp2SettingsTypeDef](#mp2settingstypedef)
-  - [Mp3SettingsTypeDef](#mp3settingstypedef)
-  - [Mp4SettingsTypeDef](#mp4settingstypedef)
-  - [MpdSettingsTypeDef](#mpdsettingstypedef)
-  - [Mpeg2SettingsTypeDef](#mpeg2settingstypedef)
-  - [MsSmoothAdditionalManifestTypeDef](#mssmoothadditionalmanifesttypedef)
-  - [MsSmoothEncryptionSettingsTypeDef](#mssmoothencryptionsettingstypedef)
-  - [MsSmoothGroupSettingsTypeDef](#mssmoothgroupsettingstypedef)
-  - [MxfSettingsTypeDef](#mxfsettingstypedef)
-  - [MxfXavcProfileSettingsTypeDef](#mxfxavcprofilesettingstypedef)
-  - [NexGuardFileMarkerSettingsTypeDef](#nexguardfilemarkersettingstypedef)
-  - [NielsenConfigurationTypeDef](#nielsenconfigurationtypedef)
-  - [NielsenNonLinearWatermarkSettingsTypeDef](#nielsennonlinearwatermarksettingstypedef)
-  - [NoiseReducerFilterSettingsTypeDef](#noisereducerfiltersettingstypedef)
-  - [NoiseReducerSpatialFilterSettingsTypeDef](#noisereducerspatialfiltersettingstypedef)
-  - [NoiseReducerTemporalFilterSettingsTypeDef](#noisereducertemporalfiltersettingstypedef)
-  - [NoiseReducerTypeDef](#noisereducertypedef)
-  - [OpusSettingsTypeDef](#opussettingstypedef)
-  - [OutputChannelMappingTypeDef](#outputchannelmappingtypedef)
-  - [OutputDetailTypeDef](#outputdetailtypedef)
-  - [OutputGroupDetailTypeDef](#outputgroupdetailtypedef)
-  - [OutputGroupSettingsTypeDef](#outputgroupsettingstypedef)
-  - [OutputGroupTypeDef](#outputgrouptypedef)
-  - [OutputSettingsTypeDef](#outputsettingstypedef)
-  - [OutputTypeDef](#outputtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PartnerWatermarkingTypeDef](#partnerwatermarkingtypedef)
-  - [PolicyTypeDef](#policytypedef)
-  - [PresetSettingsTypeDef](#presetsettingstypedef)
-  - [PresetTypeDef](#presettypedef)
-  - [ProresSettingsTypeDef](#proressettingstypedef)
-  - [PutPolicyRequestRequestTypeDef](#putpolicyrequestrequesttypedef)
-  - [PutPolicyResponseTypeDef](#putpolicyresponsetypedef)
-  - [QueueTransitionTypeDef](#queuetransitiontypedef)
-  - [QueueTypeDef](#queuetypedef)
-  - [RectangleTypeDef](#rectangletypedef)
-  - [RemixSettingsTypeDef](#remixsettingstypedef)
-  - [ReservationPlanSettingsTypeDef](#reservationplansettingstypedef)
-  - [ReservationPlanTypeDef](#reservationplantypedef)
-  - [ResourceTagsTypeDef](#resourcetagstypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3DestinationAccessControlTypeDef](#s3destinationaccesscontroltypedef)
-  - [S3DestinationSettingsTypeDef](#s3destinationsettingstypedef)
-  - [S3EncryptionSettingsTypeDef](#s3encryptionsettingstypedef)
-  - [SccDestinationSettingsTypeDef](#sccdestinationsettingstypedef)
-  - [SpekeKeyProviderCmafTypeDef](#spekekeyprovidercmaftypedef)
-  - [SpekeKeyProviderTypeDef](#spekekeyprovidertypedef)
-  - [SrtDestinationSettingsTypeDef](#srtdestinationsettingstypedef)
-  - [StaticKeyProviderTypeDef](#statickeyprovidertypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TeletextDestinationSettingsTypeDef](#teletextdestinationsettingstypedef)
-  - [TeletextSourceSettingsTypeDef](#teletextsourcesettingstypedef)
-  - [TimecodeBurninTypeDef](#timecodeburnintypedef)
-  - [TimecodeConfigTypeDef](#timecodeconfigtypedef)
-  - [TimedMetadataInsertionTypeDef](#timedmetadatainsertiontypedef)
-  - [TimingTypeDef](#timingtypedef)
-  - [TrackSourceSettingsTypeDef](#tracksourcesettingstypedef)
-  - [TtmlDestinationSettingsTypeDef](#ttmldestinationsettingstypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateJobTemplateRequestRequestTypeDef](#updatejobtemplaterequestrequesttypedef)
-  - [UpdateJobTemplateResponseTypeDef](#updatejobtemplateresponsetypedef)
-  - [UpdatePresetRequestRequestTypeDef](#updatepresetrequestrequesttypedef)
-  - [UpdatePresetResponseTypeDef](#updatepresetresponsetypedef)
-  - [UpdateQueueRequestRequestTypeDef](#updatequeuerequestrequesttypedef)
-  - [UpdateQueueResponseTypeDef](#updatequeueresponsetypedef)
-  - [Vc3SettingsTypeDef](#vc3settingstypedef)
-  - [VideoCodecSettingsTypeDef](#videocodecsettingstypedef)
-  - [VideoDescriptionTypeDef](#videodescriptiontypedef)
-  - [VideoDetailTypeDef](#videodetailtypedef)
-  - [VideoPreprocessorTypeDef](#videopreprocessortypedef)
-  - [VideoSelectorTypeDef](#videoselectortypedef)
-  - [VorbisSettingsTypeDef](#vorbissettingstypedef)
-  - [Vp8SettingsTypeDef](#vp8settingstypedef)
-  - [Vp9SettingsTypeDef](#vp9settingstypedef)
-  - [WavSettingsTypeDef](#wavsettingstypedef)
-  - [WebvttDestinationSettingsTypeDef](#webvttdestinationsettingstypedef)
-  - [WebvttHlsSourceSettingsTypeDef](#webvtthlssourcesettingstypedef)
-  - [Xavc4kIntraCbgProfileSettingsTypeDef](#xavc4kintracbgprofilesettingstypedef)
-  - [Xavc4kIntraVbrProfileSettingsTypeDef](#xavc4kintravbrprofilesettingstypedef)
-  - [Xavc4kProfileSettingsTypeDef](#xavc4kprofilesettingstypedef)
-  - [XavcHdIntraCbgProfileSettingsTypeDef](#xavchdintracbgprofilesettingstypedef)
-  - [XavcHdProfileSettingsTypeDef](#xavchdprofilesettingstypedef)
-  - [XavcSettingsTypeDef](#xavcsettingstypedef)
-
-<a id="aacsettingstypedef"></a>
+    Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+    type annotations stubs module [mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 ## AacSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AacSettingsTypeDef
+
+def get_value() -> AacSettingsTypeDef:
+    return {
+        "AudioDescriptionBroadcasterMix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AacSettingsTypeDef(TypedDict):
+    AudioDescriptionBroadcasterMix: NotRequired[AacAudioDescriptionBroadcasterMixType],  # (1)
+    Bitrate: NotRequired[int],
+    CodecProfile: NotRequired[AacCodecProfileType],  # (2)
+    CodingMode: NotRequired[AacCodingModeType],  # (3)
+    RateControlMode: NotRequired[AacRateControlModeType],  # (4)
+    RawFormat: NotRequired[AacRawFormatType],  # (5)
+    SampleRate: NotRequired[int],
+    Specification: NotRequired[AacSpecificationType],  # (6)
+    VbrQuality: NotRequired[AacVbrQualityType],  # (7)
+```
 
-- `AudioDescriptionBroadcasterMix`:
-  [AacAudioDescriptionBroadcasterMixType](./literals.md#aacaudiodescriptionbroadcastermixtype)
-- `Bitrate`: `int`
-- `CodecProfile`: [AacCodecProfileType](./literals.md#aaccodecprofiletype)
-- `CodingMode`: [AacCodingModeType](./literals.md#aaccodingmodetype)
-- `RateControlMode`:
-  [AacRateControlModeType](./literals.md#aacratecontrolmodetype)
-- `RawFormat`: [AacRawFormatType](./literals.md#aacrawformattype)
-- `SampleRate`: `int`
-- `Specification`: [AacSpecificationType](./literals.md#aacspecificationtype)
-- `VbrQuality`: [AacVbrQualityType](./literals.md#aacvbrqualitytype)
-
-<a id="ac3settingstypedef"></a>
-
+1. See [:material-code-brackets: AacAudioDescriptionBroadcasterMixType](./literals.md#aacaudiodescriptionbroadcastermixtype) 
+2. See [:material-code-brackets: AacCodecProfileType](./literals.md#aaccodecprofiletype) 
+3. See [:material-code-brackets: AacCodingModeType](./literals.md#aaccodingmodetype) 
+4. See [:material-code-brackets: AacRateControlModeType](./literals.md#aacratecontrolmodetype) 
+5. See [:material-code-brackets: AacRawFormatType](./literals.md#aacrawformattype) 
+6. See [:material-code-brackets: AacSpecificationType](./literals.md#aacspecificationtype) 
+7. See [:material-code-brackets: AacVbrQualityType](./literals.md#aacvbrqualitytype) 
 ## Ac3SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Ac3SettingsTypeDef
+
+def get_value() -> Ac3SettingsTypeDef:
+    return {
+        "Bitrate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Ac3SettingsTypeDef(TypedDict):
+    Bitrate: NotRequired[int],
+    BitstreamMode: NotRequired[Ac3BitstreamModeType],  # (1)
+    CodingMode: NotRequired[Ac3CodingModeType],  # (2)
+    Dialnorm: NotRequired[int],
+    DynamicRangeCompressionLine: NotRequired[Ac3DynamicRangeCompressionLineType],  # (3)
+    DynamicRangeCompressionProfile: NotRequired[Ac3DynamicRangeCompressionProfileType],  # (4)
+    DynamicRangeCompressionRf: NotRequired[Ac3DynamicRangeCompressionRfType],  # (5)
+    LfeFilter: NotRequired[Ac3LfeFilterType],  # (6)
+    MetadataControl: NotRequired[Ac3MetadataControlType],  # (7)
+    SampleRate: NotRequired[int],
+```
 
-- `Bitrate`: `int`
-- `BitstreamMode`: [Ac3BitstreamModeType](./literals.md#ac3bitstreammodetype)
-- `CodingMode`: [Ac3CodingModeType](./literals.md#ac3codingmodetype)
-- `Dialnorm`: `int`
-- `DynamicRangeCompressionLine`:
-  [Ac3DynamicRangeCompressionLineType](./literals.md#ac3dynamicrangecompressionlinetype)
-- `DynamicRangeCompressionProfile`:
-  [Ac3DynamicRangeCompressionProfileType](./literals.md#ac3dynamicrangecompressionprofiletype)
-- `DynamicRangeCompressionRf`:
-  [Ac3DynamicRangeCompressionRfType](./literals.md#ac3dynamicrangecompressionrftype)
-- `LfeFilter`: [Ac3LfeFilterType](./literals.md#ac3lfefiltertype)
-- `MetadataControl`:
-  [Ac3MetadataControlType](./literals.md#ac3metadatacontroltype)
-- `SampleRate`: `int`
-
-<a id="accelerationsettingstypedef"></a>
-
+1. See [:material-code-brackets: Ac3BitstreamModeType](./literals.md#ac3bitstreammodetype) 
+2. See [:material-code-brackets: Ac3CodingModeType](./literals.md#ac3codingmodetype) 
+3. See [:material-code-brackets: Ac3DynamicRangeCompressionLineType](./literals.md#ac3dynamicrangecompressionlinetype) 
+4. See [:material-code-brackets: Ac3DynamicRangeCompressionProfileType](./literals.md#ac3dynamicrangecompressionprofiletype) 
+5. See [:material-code-brackets: Ac3DynamicRangeCompressionRfType](./literals.md#ac3dynamicrangecompressionrftype) 
+6. See [:material-code-brackets: Ac3LfeFilterType](./literals.md#ac3lfefiltertype) 
+7. See [:material-code-brackets: Ac3MetadataControlType](./literals.md#ac3metadatacontroltype) 
 ## AccelerationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AccelerationSettingsTypeDef
+
+def get_value() -> AccelerationSettingsTypeDef:
+    return {
+        "Mode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccelerationSettingsTypeDef(TypedDict):
+    Mode: AccelerationModeType,  # (1)
+```
 
-- `Mode`: [AccelerationModeType](./literals.md#accelerationmodetype)
-
-<a id="aiffsettingstypedef"></a>
-
+1. See [:material-code-brackets: AccelerationModeType](./literals.md#accelerationmodetype) 
 ## AiffSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AiffSettingsTypeDef
+
+def get_value() -> AiffSettingsTypeDef:
+    return {
+        "BitDepth": ...,
+    }
 ```
 
-Optional fields:
-
-- `BitDepth`: `int`
-- `Channels`: `int`
-- `SampleRate`: `int`
-
-<a id="ancillarysourcesettingstypedef"></a>
+```python title="Definition"
+class AiffSettingsTypeDef(TypedDict):
+    BitDepth: NotRequired[int],
+    Channels: NotRequired[int],
+    SampleRate: NotRequired[int],
+```
 
 ## AncillarySourceSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AncillarySourceSettingsTypeDef
+
+def get_value() -> AncillarySourceSettingsTypeDef:
+    return {
+        "Convert608To708": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AncillarySourceSettingsTypeDef(TypedDict):
+    Convert608To708: NotRequired[AncillaryConvert608To708Type],  # (1)
+    SourceAncillaryChannelNumber: NotRequired[int],
+    TerminateCaptions: NotRequired[AncillaryTerminateCaptionsType],  # (2)
+```
 
-- `Convert608To708`:
-  [AncillaryConvert608To708Type](./literals.md#ancillaryconvert608to708type)
-- `SourceAncillaryChannelNumber`: `int`
-- `TerminateCaptions`:
-  [AncillaryTerminateCaptionsType](./literals.md#ancillaryterminatecaptionstype)
-
-<a id="associatecertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AncillaryConvert608To708Type](./literals.md#ancillaryconvert608to708type) 
+2. See [:material-code-brackets: AncillaryTerminateCaptionsType](./literals.md#ancillaryterminatecaptionstype) 
 ## AssociateCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AssociateCertificateRequestRequestTypeDef
+
+def get_value() -> AssociateCertificateRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="audiochanneltaggingsettingstypedef"></a>
+```python title="Definition"
+class AssociateCertificateRequestRequestTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## AudioChannelTaggingSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AudioChannelTaggingSettingsTypeDef
+
+def get_value() -> AudioChannelTaggingSettingsTypeDef:
+    return {
+        "ChannelTag": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AudioChannelTaggingSettingsTypeDef(TypedDict):
+    ChannelTag: NotRequired[AudioChannelTagType],  # (1)
+```
 
-- `ChannelTag`: [AudioChannelTagType](./literals.md#audiochanneltagtype)
-
-<a id="audiocodecsettingstypedef"></a>
-
+1. See [:material-code-brackets: AudioChannelTagType](./literals.md#audiochanneltagtype) 
 ## AudioCodecSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AudioCodecSettingsTypeDef
+
+def get_value() -> AudioCodecSettingsTypeDef:
+    return {
+        "AacSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AudioCodecSettingsTypeDef(TypedDict):
+    AacSettings: NotRequired[AacSettingsTypeDef],  # (1)
+    Ac3Settings: NotRequired[Ac3SettingsTypeDef],  # (2)
+    AiffSettings: NotRequired[AiffSettingsTypeDef],  # (3)
+    Codec: NotRequired[AudioCodecType],  # (4)
+    Eac3AtmosSettings: NotRequired[Eac3AtmosSettingsTypeDef],  # (5)
+    Eac3Settings: NotRequired[Eac3SettingsTypeDef],  # (6)
+    Mp2Settings: NotRequired[Mp2SettingsTypeDef],  # (7)
+    Mp3Settings: NotRequired[Mp3SettingsTypeDef],  # (8)
+    OpusSettings: NotRequired[OpusSettingsTypeDef],  # (9)
+    VorbisSettings: NotRequired[VorbisSettingsTypeDef],  # (10)
+    WavSettings: NotRequired[WavSettingsTypeDef],  # (11)
+```
 
-- `AacSettings`: [AacSettingsTypeDef](./type_defs.md#aacsettingstypedef)
-- `Ac3Settings`: [Ac3SettingsTypeDef](./type_defs.md#ac3settingstypedef)
-- `AiffSettings`: [AiffSettingsTypeDef](./type_defs.md#aiffsettingstypedef)
-- `Codec`: [AudioCodecType](./literals.md#audiocodectype)
-- `Eac3AtmosSettings`:
-  [Eac3AtmosSettingsTypeDef](./type_defs.md#eac3atmossettingstypedef)
-- `Eac3Settings`: [Eac3SettingsTypeDef](./type_defs.md#eac3settingstypedef)
-- `Mp2Settings`: [Mp2SettingsTypeDef](./type_defs.md#mp2settingstypedef)
-- `Mp3Settings`: [Mp3SettingsTypeDef](./type_defs.md#mp3settingstypedef)
-- `OpusSettings`: [OpusSettingsTypeDef](./type_defs.md#opussettingstypedef)
-- `VorbisSettings`:
-  [VorbisSettingsTypeDef](./type_defs.md#vorbissettingstypedef)
-- `WavSettings`: [WavSettingsTypeDef](./type_defs.md#wavsettingstypedef)
-
-<a id="audiodescriptiontypedef"></a>
-
+1. See [:material-code-braces: AacSettingsTypeDef](./type_defs.md#aacsettingstypedef) 
+2. See [:material-code-braces: Ac3SettingsTypeDef](./type_defs.md#ac3settingstypedef) 
+3. See [:material-code-braces: AiffSettingsTypeDef](./type_defs.md#aiffsettingstypedef) 
+4. See [:material-code-brackets: AudioCodecType](./literals.md#audiocodectype) 
+5. See [:material-code-braces: Eac3AtmosSettingsTypeDef](./type_defs.md#eac3atmossettingstypedef) 
+6. See [:material-code-braces: Eac3SettingsTypeDef](./type_defs.md#eac3settingstypedef) 
+7. See [:material-code-braces: Mp2SettingsTypeDef](./type_defs.md#mp2settingstypedef) 
+8. See [:material-code-braces: Mp3SettingsTypeDef](./type_defs.md#mp3settingstypedef) 
+9. See [:material-code-braces: OpusSettingsTypeDef](./type_defs.md#opussettingstypedef) 
+10. See [:material-code-braces: VorbisSettingsTypeDef](./type_defs.md#vorbissettingstypedef) 
+11. See [:material-code-braces: WavSettingsTypeDef](./type_defs.md#wavsettingstypedef) 
 ## AudioDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AudioDescriptionTypeDef
+
+def get_value() -> AudioDescriptionTypeDef:
+    return {
+        "AudioChannelTaggingSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AudioDescriptionTypeDef(TypedDict):
+    AudioChannelTaggingSettings: NotRequired[AudioChannelTaggingSettingsTypeDef],  # (1)
+    AudioNormalizationSettings: NotRequired[AudioNormalizationSettingsTypeDef],  # (2)
+    AudioSourceName: NotRequired[str],
+    AudioType: NotRequired[int],
+    AudioTypeControl: NotRequired[AudioTypeControlType],  # (3)
+    CodecSettings: NotRequired[AudioCodecSettingsTypeDef],  # (4)
+    CustomLanguageCode: NotRequired[str],
+    LanguageCode: NotRequired[LanguageCodeType],  # (5)
+    LanguageCodeControl: NotRequired[AudioLanguageCodeControlType],  # (6)
+    RemixSettings: NotRequired[RemixSettingsTypeDef],  # (7)
+    StreamName: NotRequired[str],
+```
 
-- `AudioChannelTaggingSettings`:
-  [AudioChannelTaggingSettingsTypeDef](./type_defs.md#audiochanneltaggingsettingstypedef)
-- `AudioNormalizationSettings`:
-  [AudioNormalizationSettingsTypeDef](./type_defs.md#audionormalizationsettingstypedef)
-- `AudioSourceName`: `str`
-- `AudioType`: `int`
-- `AudioTypeControl`:
-  [AudioTypeControlType](./literals.md#audiotypecontroltype)
-- `CodecSettings`:
-  [AudioCodecSettingsTypeDef](./type_defs.md#audiocodecsettingstypedef)
-- `CustomLanguageCode`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LanguageCodeControl`:
-  [AudioLanguageCodeControlType](./literals.md#audiolanguagecodecontroltype)
-- `RemixSettings`: [RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef)
-- `StreamName`: `str`
-
-<a id="audionormalizationsettingstypedef"></a>
-
+1. See [:material-code-braces: AudioChannelTaggingSettingsTypeDef](./type_defs.md#audiochanneltaggingsettingstypedef) 
+2. See [:material-code-braces: AudioNormalizationSettingsTypeDef](./type_defs.md#audionormalizationsettingstypedef) 
+3. See [:material-code-brackets: AudioTypeControlType](./literals.md#audiotypecontroltype) 
+4. See [:material-code-braces: AudioCodecSettingsTypeDef](./type_defs.md#audiocodecsettingstypedef) 
+5. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+6. See [:material-code-brackets: AudioLanguageCodeControlType](./literals.md#audiolanguagecodecontroltype) 
+7. See [:material-code-braces: RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef) 
 ## AudioNormalizationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AudioNormalizationSettingsTypeDef
+
+def get_value() -> AudioNormalizationSettingsTypeDef:
+    return {
+        "Algorithm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AudioNormalizationSettingsTypeDef(TypedDict):
+    Algorithm: NotRequired[AudioNormalizationAlgorithmType],  # (1)
+    AlgorithmControl: NotRequired[AudioNormalizationAlgorithmControlType],  # (2)
+    CorrectionGateLevel: NotRequired[int],
+    LoudnessLogging: NotRequired[AudioNormalizationLoudnessLoggingType],  # (3)
+    PeakCalculation: NotRequired[AudioNormalizationPeakCalculationType],  # (4)
+    TargetLkfs: NotRequired[float],
+```
 
-- `Algorithm`:
-  [AudioNormalizationAlgorithmType](./literals.md#audionormalizationalgorithmtype)
-- `AlgorithmControl`:
-  [AudioNormalizationAlgorithmControlType](./literals.md#audionormalizationalgorithmcontroltype)
-- `CorrectionGateLevel`: `int`
-- `LoudnessLogging`:
-  [AudioNormalizationLoudnessLoggingType](./literals.md#audionormalizationloudnessloggingtype)
-- `PeakCalculation`:
-  [AudioNormalizationPeakCalculationType](./literals.md#audionormalizationpeakcalculationtype)
-- `TargetLkfs`: `float`
-
-<a id="audioselectorgrouptypedef"></a>
-
+1. See [:material-code-brackets: AudioNormalizationAlgorithmType](./literals.md#audionormalizationalgorithmtype) 
+2. See [:material-code-brackets: AudioNormalizationAlgorithmControlType](./literals.md#audionormalizationalgorithmcontroltype) 
+3. See [:material-code-brackets: AudioNormalizationLoudnessLoggingType](./literals.md#audionormalizationloudnessloggingtype) 
+4. See [:material-code-brackets: AudioNormalizationPeakCalculationType](./literals.md#audionormalizationpeakcalculationtype) 
 ## AudioSelectorGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AudioSelectorGroupTypeDef
+
+def get_value() -> AudioSelectorGroupTypeDef:
+    return {
+        "AudioSelectorNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `AudioSelectorNames`: `Sequence`\[`str`\]
-
-<a id="audioselectortypedef"></a>
+```python title="Definition"
+class AudioSelectorGroupTypeDef(TypedDict):
+    AudioSelectorNames: NotRequired[Sequence[str]],
+```
 
 ## AudioSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AudioSelectorTypeDef
+
+def get_value() -> AudioSelectorTypeDef:
+    return {
+        "CustomLanguageCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AudioSelectorTypeDef(TypedDict):
+    CustomLanguageCode: NotRequired[str],
+    DefaultSelection: NotRequired[AudioDefaultSelectionType],  # (1)
+    ExternalAudioFileInput: NotRequired[str],
+    HlsRenditionGroupSettings: NotRequired[HlsRenditionGroupSettingsTypeDef],  # (2)
+    LanguageCode: NotRequired[LanguageCodeType],  # (3)
+    Offset: NotRequired[int],
+    Pids: NotRequired[Sequence[int]],
+    ProgramSelection: NotRequired[int],
+    RemixSettings: NotRequired[RemixSettingsTypeDef],  # (4)
+    SelectorType: NotRequired[AudioSelectorTypeType],  # (5)
+    Tracks: NotRequired[Sequence[int]],
+```
 
-- `CustomLanguageCode`: `str`
-- `DefaultSelection`:
-  [AudioDefaultSelectionType](./literals.md#audiodefaultselectiontype)
-- `ExternalAudioFileInput`: `str`
-- `HlsRenditionGroupSettings`:
-  [HlsRenditionGroupSettingsTypeDef](./type_defs.md#hlsrenditiongroupsettingstypedef)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `Offset`: `int`
-- `Pids`: `Sequence`\[`int`\]
-- `ProgramSelection`: `int`
-- `RemixSettings`: [RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef)
-- `SelectorType`: [AudioSelectorTypeType](./literals.md#audioselectortypetype)
-- `Tracks`: `Sequence`\[`int`\]
-
-<a id="automatedabrsettingstypedef"></a>
-
+1. See [:material-code-brackets: AudioDefaultSelectionType](./literals.md#audiodefaultselectiontype) 
+2. See [:material-code-braces: HlsRenditionGroupSettingsTypeDef](./type_defs.md#hlsrenditiongroupsettingstypedef) 
+3. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+4. See [:material-code-braces: RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef) 
+5. See [:material-code-brackets: AudioSelectorTypeType](./literals.md#audioselectortypetype) 
 ## AutomatedAbrSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AutomatedAbrSettingsTypeDef
+
+def get_value() -> AutomatedAbrSettingsTypeDef:
+    return {
+        "MaxAbrBitrate": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxAbrBitrate`: `int`
-- `MaxRenditions`: `int`
-- `MinAbrBitrate`: `int`
-
-<a id="automatedencodingsettingstypedef"></a>
+```python title="Definition"
+class AutomatedAbrSettingsTypeDef(TypedDict):
+    MaxAbrBitrate: NotRequired[int],
+    MaxRenditions: NotRequired[int],
+    MinAbrBitrate: NotRequired[int],
+```
 
 ## AutomatedEncodingSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AutomatedEncodingSettingsTypeDef
+
+def get_value() -> AutomatedEncodingSettingsTypeDef:
+    return {
+        "AbrSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutomatedEncodingSettingsTypeDef(TypedDict):
+    AbrSettings: NotRequired[AutomatedAbrSettingsTypeDef],  # (1)
+```
 
-- `AbrSettings`:
-  [AutomatedAbrSettingsTypeDef](./type_defs.md#automatedabrsettingstypedef)
-
-<a id="av1qvbrsettingstypedef"></a>
-
+1. See [:material-code-braces: AutomatedAbrSettingsTypeDef](./type_defs.md#automatedabrsettingstypedef) 
 ## Av1QvbrSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Av1QvbrSettingsTypeDef
+
+def get_value() -> Av1QvbrSettingsTypeDef:
+    return {
+        "QvbrQualityLevel": ...,
+    }
 ```
 
-Optional fields:
-
-- `QvbrQualityLevel`: `int`
-- `QvbrQualityLevelFineTune`: `float`
-
-<a id="av1settingstypedef"></a>
+```python title="Definition"
+class Av1QvbrSettingsTypeDef(TypedDict):
+    QvbrQualityLevel: NotRequired[int],
+    QvbrQualityLevelFineTune: NotRequired[float],
+```
 
 ## Av1SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Av1SettingsTypeDef
+
+def get_value() -> Av1SettingsTypeDef:
+    return {
+        "AdaptiveQuantization": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Av1SettingsTypeDef(TypedDict):
+    AdaptiveQuantization: NotRequired[Av1AdaptiveQuantizationType],  # (1)
+    BitDepth: NotRequired[Av1BitDepthType],  # (2)
+    FramerateControl: NotRequired[Av1FramerateControlType],  # (3)
+    FramerateConversionAlgorithm: NotRequired[Av1FramerateConversionAlgorithmType],  # (4)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    GopSize: NotRequired[float],
+    MaxBitrate: NotRequired[int],
+    NumberBFramesBetweenReferenceFrames: NotRequired[int],
+    QvbrSettings: NotRequired[Av1QvbrSettingsTypeDef],  # (5)
+    RateControlMode: NotRequired[Av1RateControlModeType],  # (6)
+    Slices: NotRequired[int],
+    SpatialAdaptiveQuantization: NotRequired[Av1SpatialAdaptiveQuantizationType],  # (7)
+```
 
-- `AdaptiveQuantization`:
-  [Av1AdaptiveQuantizationType](./literals.md#av1adaptivequantizationtype)
-- `BitDepth`: [Av1BitDepthType](./literals.md#av1bitdepthtype)
-- `FramerateControl`:
-  [Av1FramerateControlType](./literals.md#av1frameratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [Av1FramerateConversionAlgorithmType](./literals.md#av1framerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `GopSize`: `float`
-- `MaxBitrate`: `int`
-- `NumberBFramesBetweenReferenceFrames`: `int`
-- `QvbrSettings`:
-  [Av1QvbrSettingsTypeDef](./type_defs.md#av1qvbrsettingstypedef)
-- `RateControlMode`: `Literal['QVBR']` (see
-  [Av1RateControlModeType](./literals.md#av1ratecontrolmodetype))
-- `Slices`: `int`
-- `SpatialAdaptiveQuantization`:
-  [Av1SpatialAdaptiveQuantizationType](./literals.md#av1spatialadaptivequantizationtype)
-
-<a id="availblankingtypedef"></a>
-
+1. See [:material-code-brackets: Av1AdaptiveQuantizationType](./literals.md#av1adaptivequantizationtype) 
+2. See [:material-code-brackets: Av1BitDepthType](./literals.md#av1bitdepthtype) 
+3. See [:material-code-brackets: Av1FramerateControlType](./literals.md#av1frameratecontroltype) 
+4. See [:material-code-brackets: Av1FramerateConversionAlgorithmType](./literals.md#av1framerateconversionalgorithmtype) 
+5. See [:material-code-braces: Av1QvbrSettingsTypeDef](./type_defs.md#av1qvbrsettingstypedef) 
+6. See [:material-code-brackets: Av1RateControlModeType](./literals.md#av1ratecontrolmodetype) 
+7. See [:material-code-brackets: Av1SpatialAdaptiveQuantizationType](./literals.md#av1spatialadaptivequantizationtype) 
 ## AvailBlankingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AvailBlankingTypeDef
+
+def get_value() -> AvailBlankingTypeDef:
+    return {
+        "AvailBlankingImage": ...,
+    }
 ```
 
-Optional fields:
-
-- `AvailBlankingImage`: `str`
-
-<a id="avcintrasettingstypedef"></a>
+```python title="Definition"
+class AvailBlankingTypeDef(TypedDict):
+    AvailBlankingImage: NotRequired[str],
+```
 
 ## AvcIntraSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AvcIntraSettingsTypeDef
+
+def get_value() -> AvcIntraSettingsTypeDef:
+    return {
+        "AvcIntraClass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AvcIntraSettingsTypeDef(TypedDict):
+    AvcIntraClass: NotRequired[AvcIntraClassType],  # (1)
+    AvcIntraUhdSettings: NotRequired[AvcIntraUhdSettingsTypeDef],  # (2)
+    FramerateControl: NotRequired[AvcIntraFramerateControlType],  # (3)
+    FramerateConversionAlgorithm: NotRequired[AvcIntraFramerateConversionAlgorithmType],  # (4)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    InterlaceMode: NotRequired[AvcIntraInterlaceModeType],  # (5)
+    ScanTypeConversionMode: NotRequired[AvcIntraScanTypeConversionModeType],  # (6)
+    SlowPal: NotRequired[AvcIntraSlowPalType],  # (7)
+    Telecine: NotRequired[AvcIntraTelecineType],  # (8)
+```
 
-- `AvcIntraClass`: [AvcIntraClassType](./literals.md#avcintraclasstype)
-- `AvcIntraUhdSettings`:
-  [AvcIntraUhdSettingsTypeDef](./type_defs.md#avcintrauhdsettingstypedef)
-- `FramerateControl`:
-  [AvcIntraFramerateControlType](./literals.md#avcintraframeratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [AvcIntraFramerateConversionAlgorithmType](./literals.md#avcintraframerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `InterlaceMode`:
-  [AvcIntraInterlaceModeType](./literals.md#avcintrainterlacemodetype)
-- `ScanTypeConversionMode`:
-  [AvcIntraScanTypeConversionModeType](./literals.md#avcintrascantypeconversionmodetype)
-- `SlowPal`: [AvcIntraSlowPalType](./literals.md#avcintraslowpaltype)
-- `Telecine`: [AvcIntraTelecineType](./literals.md#avcintratelecinetype)
-
-<a id="avcintrauhdsettingstypedef"></a>
-
+1. See [:material-code-brackets: AvcIntraClassType](./literals.md#avcintraclasstype) 
+2. See [:material-code-braces: AvcIntraUhdSettingsTypeDef](./type_defs.md#avcintrauhdsettingstypedef) 
+3. See [:material-code-brackets: AvcIntraFramerateControlType](./literals.md#avcintraframeratecontroltype) 
+4. See [:material-code-brackets: AvcIntraFramerateConversionAlgorithmType](./literals.md#avcintraframerateconversionalgorithmtype) 
+5. See [:material-code-brackets: AvcIntraInterlaceModeType](./literals.md#avcintrainterlacemodetype) 
+6. See [:material-code-brackets: AvcIntraScanTypeConversionModeType](./literals.md#avcintrascantypeconversionmodetype) 
+7. See [:material-code-brackets: AvcIntraSlowPalType](./literals.md#avcintraslowpaltype) 
+8. See [:material-code-brackets: AvcIntraTelecineType](./literals.md#avcintratelecinetype) 
 ## AvcIntraUhdSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import AvcIntraUhdSettingsTypeDef
+
+def get_value() -> AvcIntraUhdSettingsTypeDef:
+    return {
+        "QualityTuningLevel": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AvcIntraUhdSettingsTypeDef(TypedDict):
+    QualityTuningLevel: NotRequired[AvcIntraUhdQualityTuningLevelType],  # (1)
+```
 
-- `QualityTuningLevel`:
-  [AvcIntraUhdQualityTuningLevelType](./literals.md#avcintrauhdqualitytuningleveltype)
-
-<a id="burnindestinationsettingstypedef"></a>
-
+1. See [:material-code-brackets: AvcIntraUhdQualityTuningLevelType](./literals.md#avcintrauhdqualitytuningleveltype) 
 ## BurninDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import BurninDestinationSettingsTypeDef
+
+def get_value() -> BurninDestinationSettingsTypeDef:
+    return {
+        "Alignment": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BurninDestinationSettingsTypeDef(TypedDict):
+    Alignment: NotRequired[BurninSubtitleAlignmentType],  # (1)
+    ApplyFontColor: NotRequired[BurninSubtitleApplyFontColorType],  # (2)
+    BackgroundColor: NotRequired[BurninSubtitleBackgroundColorType],  # (3)
+    BackgroundOpacity: NotRequired[int],
+    FallbackFont: NotRequired[BurninSubtitleFallbackFontType],  # (4)
+    FontColor: NotRequired[BurninSubtitleFontColorType],  # (5)
+    FontOpacity: NotRequired[int],
+    FontResolution: NotRequired[int],
+    FontScript: NotRequired[FontScriptType],  # (6)
+    FontSize: NotRequired[int],
+    HexFontColor: NotRequired[str],
+    OutlineColor: NotRequired[BurninSubtitleOutlineColorType],  # (7)
+    OutlineSize: NotRequired[int],
+    ShadowColor: NotRequired[BurninSubtitleShadowColorType],  # (8)
+    ShadowOpacity: NotRequired[int],
+    ShadowXOffset: NotRequired[int],
+    ShadowYOffset: NotRequired[int],
+    StylePassthrough: NotRequired[BurnInSubtitleStylePassthroughType],  # (9)
+    TeletextSpacing: NotRequired[BurninSubtitleTeletextSpacingType],  # (10)
+    XPosition: NotRequired[int],
+    YPosition: NotRequired[int],
+```
 
-- `Alignment`:
-  [BurninSubtitleAlignmentType](./literals.md#burninsubtitlealignmenttype)
-- `ApplyFontColor`:
-  [BurninSubtitleApplyFontColorType](./literals.md#burninsubtitleapplyfontcolortype)
-- `BackgroundColor`:
-  [BurninSubtitleBackgroundColorType](./literals.md#burninsubtitlebackgroundcolortype)
-- `BackgroundOpacity`: `int`
-- `FallbackFont`:
-  [BurninSubtitleFallbackFontType](./literals.md#burninsubtitlefallbackfonttype)
-- `FontColor`:
-  [BurninSubtitleFontColorType](./literals.md#burninsubtitlefontcolortype)
-- `FontOpacity`: `int`
-- `FontResolution`: `int`
-- `FontScript`: [FontScriptType](./literals.md#fontscripttype)
-- `FontSize`: `int`
-- `HexFontColor`: `str`
-- `OutlineColor`:
-  [BurninSubtitleOutlineColorType](./literals.md#burninsubtitleoutlinecolortype)
-- `OutlineSize`: `int`
-- `ShadowColor`:
-  [BurninSubtitleShadowColorType](./literals.md#burninsubtitleshadowcolortype)
-- `ShadowOpacity`: `int`
-- `ShadowXOffset`: `int`
-- `ShadowYOffset`: `int`
-- `StylePassthrough`:
-  [BurnInSubtitleStylePassthroughType](./literals.md#burninsubtitlestylepassthroughtype)
-- `TeletextSpacing`:
-  [BurninSubtitleTeletextSpacingType](./literals.md#burninsubtitleteletextspacingtype)
-- `XPosition`: `int`
-- `YPosition`: `int`
-
-<a id="canceljobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BurninSubtitleAlignmentType](./literals.md#burninsubtitlealignmenttype) 
+2. See [:material-code-brackets: BurninSubtitleApplyFontColorType](./literals.md#burninsubtitleapplyfontcolortype) 
+3. See [:material-code-brackets: BurninSubtitleBackgroundColorType](./literals.md#burninsubtitlebackgroundcolortype) 
+4. See [:material-code-brackets: BurninSubtitleFallbackFontType](./literals.md#burninsubtitlefallbackfonttype) 
+5. See [:material-code-brackets: BurninSubtitleFontColorType](./literals.md#burninsubtitlefontcolortype) 
+6. See [:material-code-brackets: FontScriptType](./literals.md#fontscripttype) 
+7. See [:material-code-brackets: BurninSubtitleOutlineColorType](./literals.md#burninsubtitleoutlinecolortype) 
+8. See [:material-code-brackets: BurninSubtitleShadowColorType](./literals.md#burninsubtitleshadowcolortype) 
+9. See [:material-code-brackets: BurnInSubtitleStylePassthroughType](./literals.md#burninsubtitlestylepassthroughtype) 
+10. See [:material-code-brackets: BurninSubtitleTeletextSpacingType](./literals.md#burninsubtitleteletextspacingtype) 
 ## CancelJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CancelJobRequestRequestTypeDef
+
+def get_value() -> CancelJobRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="captiondescriptionpresettypedef"></a>
+```python title="Definition"
+class CancelJobRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## CaptionDescriptionPresetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CaptionDescriptionPresetTypeDef
+
+def get_value() -> CaptionDescriptionPresetTypeDef:
+    return {
+        "CustomLanguageCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CaptionDescriptionPresetTypeDef(TypedDict):
+    CustomLanguageCode: NotRequired[str],
+    DestinationSettings: NotRequired[CaptionDestinationSettingsTypeDef],  # (1)
+    LanguageCode: NotRequired[LanguageCodeType],  # (2)
+    LanguageDescription: NotRequired[str],
+```
 
-- `CustomLanguageCode`: `str`
-- `DestinationSettings`:
-  [CaptionDestinationSettingsTypeDef](./type_defs.md#captiondestinationsettingstypedef)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LanguageDescription`: `str`
-
-<a id="captiondescriptiontypedef"></a>
-
+1. See [:material-code-braces: CaptionDestinationSettingsTypeDef](./type_defs.md#captiondestinationsettingstypedef) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## CaptionDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CaptionDescriptionTypeDef
+
+def get_value() -> CaptionDescriptionTypeDef:
+    return {
+        "CaptionSelectorName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CaptionDescriptionTypeDef(TypedDict):
+    CaptionSelectorName: NotRequired[str],
+    CustomLanguageCode: NotRequired[str],
+    DestinationSettings: NotRequired[CaptionDestinationSettingsTypeDef],  # (1)
+    LanguageCode: NotRequired[LanguageCodeType],  # (2)
+    LanguageDescription: NotRequired[str],
+```
 
-- `CaptionSelectorName`: `str`
-- `CustomLanguageCode`: `str`
-- `DestinationSettings`:
-  [CaptionDestinationSettingsTypeDef](./type_defs.md#captiondestinationsettingstypedef)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LanguageDescription`: `str`
-
-<a id="captiondestinationsettingstypedef"></a>
-
+1. See [:material-code-braces: CaptionDestinationSettingsTypeDef](./type_defs.md#captiondestinationsettingstypedef) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## CaptionDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CaptionDestinationSettingsTypeDef
+
+def get_value() -> CaptionDestinationSettingsTypeDef:
+    return {
+        "BurninDestinationSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CaptionDestinationSettingsTypeDef(TypedDict):
+    BurninDestinationSettings: NotRequired[BurninDestinationSettingsTypeDef],  # (1)
+    DestinationType: NotRequired[CaptionDestinationTypeType],  # (2)
+    DvbSubDestinationSettings: NotRequired[DvbSubDestinationSettingsTypeDef],  # (3)
+    EmbeddedDestinationSettings: NotRequired[EmbeddedDestinationSettingsTypeDef],  # (4)
+    ImscDestinationSettings: NotRequired[ImscDestinationSettingsTypeDef],  # (5)
+    SccDestinationSettings: NotRequired[SccDestinationSettingsTypeDef],  # (6)
+    SrtDestinationSettings: NotRequired[SrtDestinationSettingsTypeDef],  # (7)
+    TeletextDestinationSettings: NotRequired[TeletextDestinationSettingsTypeDef],  # (8)
+    TtmlDestinationSettings: NotRequired[TtmlDestinationSettingsTypeDef],  # (9)
+    WebvttDestinationSettings: NotRequired[WebvttDestinationSettingsTypeDef],  # (10)
+```
 
-- `BurninDestinationSettings`:
-  [BurninDestinationSettingsTypeDef](./type_defs.md#burnindestinationsettingstypedef)
-- `DestinationType`:
-  [CaptionDestinationTypeType](./literals.md#captiondestinationtypetype)
-- `DvbSubDestinationSettings`:
-  [DvbSubDestinationSettingsTypeDef](./type_defs.md#dvbsubdestinationsettingstypedef)
-- `EmbeddedDestinationSettings`:
-  [EmbeddedDestinationSettingsTypeDef](./type_defs.md#embeddeddestinationsettingstypedef)
-- `ImscDestinationSettings`:
-  [ImscDestinationSettingsTypeDef](./type_defs.md#imscdestinationsettingstypedef)
-- `SccDestinationSettings`:
-  [SccDestinationSettingsTypeDef](./type_defs.md#sccdestinationsettingstypedef)
-- `SrtDestinationSettings`:
-  [SrtDestinationSettingsTypeDef](./type_defs.md#srtdestinationsettingstypedef)
-- `TeletextDestinationSettings`:
-  [TeletextDestinationSettingsTypeDef](./type_defs.md#teletextdestinationsettingstypedef)
-- `TtmlDestinationSettings`:
-  [TtmlDestinationSettingsTypeDef](./type_defs.md#ttmldestinationsettingstypedef)
-- `WebvttDestinationSettings`:
-  [WebvttDestinationSettingsTypeDef](./type_defs.md#webvttdestinationsettingstypedef)
-
-<a id="captionselectortypedef"></a>
-
+1. See [:material-code-braces: BurninDestinationSettingsTypeDef](./type_defs.md#burnindestinationsettingstypedef) 
+2. See [:material-code-brackets: CaptionDestinationTypeType](./literals.md#captiondestinationtypetype) 
+3. See [:material-code-braces: DvbSubDestinationSettingsTypeDef](./type_defs.md#dvbsubdestinationsettingstypedef) 
+4. See [:material-code-braces: EmbeddedDestinationSettingsTypeDef](./type_defs.md#embeddeddestinationsettingstypedef) 
+5. See [:material-code-braces: ImscDestinationSettingsTypeDef](./type_defs.md#imscdestinationsettingstypedef) 
+6. See [:material-code-braces: SccDestinationSettingsTypeDef](./type_defs.md#sccdestinationsettingstypedef) 
+7. See [:material-code-braces: SrtDestinationSettingsTypeDef](./type_defs.md#srtdestinationsettingstypedef) 
+8. See [:material-code-braces: TeletextDestinationSettingsTypeDef](./type_defs.md#teletextdestinationsettingstypedef) 
+9. See [:material-code-braces: TtmlDestinationSettingsTypeDef](./type_defs.md#ttmldestinationsettingstypedef) 
+10. See [:material-code-braces: WebvttDestinationSettingsTypeDef](./type_defs.md#webvttdestinationsettingstypedef) 
 ## CaptionSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CaptionSelectorTypeDef
+
+def get_value() -> CaptionSelectorTypeDef:
+    return {
+        "CustomLanguageCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CaptionSelectorTypeDef(TypedDict):
+    CustomLanguageCode: NotRequired[str],
+    LanguageCode: NotRequired[LanguageCodeType],  # (1)
+    SourceSettings: NotRequired[CaptionSourceSettingsTypeDef],  # (2)
+```
 
-- `CustomLanguageCode`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `SourceSettings`:
-  [CaptionSourceSettingsTypeDef](./type_defs.md#captionsourcesettingstypedef)
-
-<a id="captionsourceframeratetypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: CaptionSourceSettingsTypeDef](./type_defs.md#captionsourcesettingstypedef) 
 ## CaptionSourceFramerateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CaptionSourceFramerateTypeDef
+
+def get_value() -> CaptionSourceFramerateTypeDef:
+    return {
+        "FramerateDenominator": ...,
+    }
 ```
 
-Optional fields:
-
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-
-<a id="captionsourcesettingstypedef"></a>
+```python title="Definition"
+class CaptionSourceFramerateTypeDef(TypedDict):
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+```
 
 ## CaptionSourceSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CaptionSourceSettingsTypeDef
+
+def get_value() -> CaptionSourceSettingsTypeDef:
+    return {
+        "AncillarySourceSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CaptionSourceSettingsTypeDef(TypedDict):
+    AncillarySourceSettings: NotRequired[AncillarySourceSettingsTypeDef],  # (1)
+    DvbSubSourceSettings: NotRequired[DvbSubSourceSettingsTypeDef],  # (2)
+    EmbeddedSourceSettings: NotRequired[EmbeddedSourceSettingsTypeDef],  # (3)
+    FileSourceSettings: NotRequired[FileSourceSettingsTypeDef],  # (4)
+    SourceType: NotRequired[CaptionSourceTypeType],  # (5)
+    TeletextSourceSettings: NotRequired[TeletextSourceSettingsTypeDef],  # (6)
+    TrackSourceSettings: NotRequired[TrackSourceSettingsTypeDef],  # (7)
+    WebvttHlsSourceSettings: NotRequired[WebvttHlsSourceSettingsTypeDef],  # (8)
+```
 
-- `AncillarySourceSettings`:
-  [AncillarySourceSettingsTypeDef](./type_defs.md#ancillarysourcesettingstypedef)
-- `DvbSubSourceSettings`:
-  [DvbSubSourceSettingsTypeDef](./type_defs.md#dvbsubsourcesettingstypedef)
-- `EmbeddedSourceSettings`:
-  [EmbeddedSourceSettingsTypeDef](./type_defs.md#embeddedsourcesettingstypedef)
-- `FileSourceSettings`:
-  [FileSourceSettingsTypeDef](./type_defs.md#filesourcesettingstypedef)
-- `SourceType`: [CaptionSourceTypeType](./literals.md#captionsourcetypetype)
-- `TeletextSourceSettings`:
-  [TeletextSourceSettingsTypeDef](./type_defs.md#teletextsourcesettingstypedef)
-- `TrackSourceSettings`:
-  [TrackSourceSettingsTypeDef](./type_defs.md#tracksourcesettingstypedef)
-- `WebvttHlsSourceSettings`:
-  [WebvttHlsSourceSettingsTypeDef](./type_defs.md#webvtthlssourcesettingstypedef)
-
-<a id="channelmappingtypedef"></a>
-
+1. See [:material-code-braces: AncillarySourceSettingsTypeDef](./type_defs.md#ancillarysourcesettingstypedef) 
+2. See [:material-code-braces: DvbSubSourceSettingsTypeDef](./type_defs.md#dvbsubsourcesettingstypedef) 
+3. See [:material-code-braces: EmbeddedSourceSettingsTypeDef](./type_defs.md#embeddedsourcesettingstypedef) 
+4. See [:material-code-braces: FileSourceSettingsTypeDef](./type_defs.md#filesourcesettingstypedef) 
+5. See [:material-code-brackets: CaptionSourceTypeType](./literals.md#captionsourcetypetype) 
+6. See [:material-code-braces: TeletextSourceSettingsTypeDef](./type_defs.md#teletextsourcesettingstypedef) 
+7. See [:material-code-braces: TrackSourceSettingsTypeDef](./type_defs.md#tracksourcesettingstypedef) 
+8. See [:material-code-braces: WebvttHlsSourceSettingsTypeDef](./type_defs.md#webvtthlssourcesettingstypedef) 
 ## ChannelMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ChannelMappingTypeDef
+
+def get_value() -> ChannelMappingTypeDef:
+    return {
+        "OutputChannels": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelMappingTypeDef(TypedDict):
+    OutputChannels: NotRequired[Sequence[OutputChannelMappingTypeDef]],  # (1)
+```
 
-- `OutputChannels`:
-  `Sequence`\[[OutputChannelMappingTypeDef](./type_defs.md#outputchannelmappingtypedef)\]
-
-<a id="cmafadditionalmanifesttypedef"></a>
-
+1. See [:material-code-braces: OutputChannelMappingTypeDef](./type_defs.md#outputchannelmappingtypedef) 
 ## CmafAdditionalManifestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CmafAdditionalManifestTypeDef
+
+def get_value() -> CmafAdditionalManifestTypeDef:
+    return {
+        "ManifestNameModifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `ManifestNameModifier`: `str`
-- `SelectedOutputs`: `Sequence`\[`str`\]
-
-<a id="cmafencryptionsettingstypedef"></a>
+```python title="Definition"
+class CmafAdditionalManifestTypeDef(TypedDict):
+    ManifestNameModifier: NotRequired[str],
+    SelectedOutputs: NotRequired[Sequence[str]],
+```
 
 ## CmafEncryptionSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CmafEncryptionSettingsTypeDef
+
+def get_value() -> CmafEncryptionSettingsTypeDef:
+    return {
+        "ConstantInitializationVector": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CmafEncryptionSettingsTypeDef(TypedDict):
+    ConstantInitializationVector: NotRequired[str],
+    EncryptionMethod: NotRequired[CmafEncryptionTypeType],  # (1)
+    InitializationVectorInManifest: NotRequired[CmafInitializationVectorInManifestType],  # (2)
+    SpekeKeyProvider: NotRequired[SpekeKeyProviderCmafTypeDef],  # (3)
+    StaticKeyProvider: NotRequired[StaticKeyProviderTypeDef],  # (4)
+    Type: NotRequired[CmafKeyProviderTypeType],  # (5)
+```
 
-- `ConstantInitializationVector`: `str`
-- `EncryptionMethod`:
-  [CmafEncryptionTypeType](./literals.md#cmafencryptiontypetype)
-- `InitializationVectorInManifest`:
-  [CmafInitializationVectorInManifestType](./literals.md#cmafinitializationvectorinmanifesttype)
-- `SpekeKeyProvider`:
-  [SpekeKeyProviderCmafTypeDef](./type_defs.md#spekekeyprovidercmaftypedef)
-- `StaticKeyProvider`:
-  [StaticKeyProviderTypeDef](./type_defs.md#statickeyprovidertypedef)
-- `Type`: [CmafKeyProviderTypeType](./literals.md#cmafkeyprovidertypetype)
-
-<a id="cmafgroupsettingstypedef"></a>
-
+1. See [:material-code-brackets: CmafEncryptionTypeType](./literals.md#cmafencryptiontypetype) 
+2. See [:material-code-brackets: CmafInitializationVectorInManifestType](./literals.md#cmafinitializationvectorinmanifesttype) 
+3. See [:material-code-braces: SpekeKeyProviderCmafTypeDef](./type_defs.md#spekekeyprovidercmaftypedef) 
+4. See [:material-code-braces: StaticKeyProviderTypeDef](./type_defs.md#statickeyprovidertypedef) 
+5. See [:material-code-brackets: CmafKeyProviderTypeType](./literals.md#cmafkeyprovidertypetype) 
 ## CmafGroupSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CmafGroupSettingsTypeDef
+
+def get_value() -> CmafGroupSettingsTypeDef:
+    return {
+        "AdditionalManifests": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CmafGroupSettingsTypeDef(TypedDict):
+    AdditionalManifests: NotRequired[Sequence[CmafAdditionalManifestTypeDef]],  # (1)
+    BaseUrl: NotRequired[str],
+    ClientCache: NotRequired[CmafClientCacheType],  # (2)
+    CodecSpecification: NotRequired[CmafCodecSpecificationType],  # (3)
+    Destination: NotRequired[str],
+    DestinationSettings: NotRequired[DestinationSettingsTypeDef],  # (4)
+    Encryption: NotRequired[CmafEncryptionSettingsTypeDef],  # (5)
+    FragmentLength: NotRequired[int],
+    ImageBasedTrickPlay: NotRequired[CmafImageBasedTrickPlayType],  # (6)
+    ImageBasedTrickPlaySettings: NotRequired[CmafImageBasedTrickPlaySettingsTypeDef],  # (7)
+    ManifestCompression: NotRequired[CmafManifestCompressionType],  # (8)
+    ManifestDurationFormat: NotRequired[CmafManifestDurationFormatType],  # (9)
+    MinBufferTime: NotRequired[int],
+    MinFinalSegmentLength: NotRequired[float],
+    MpdProfile: NotRequired[CmafMpdProfileType],  # (10)
+    PtsOffsetHandlingForBFrames: NotRequired[CmafPtsOffsetHandlingForBFramesType],  # (11)
+    SegmentControl: NotRequired[CmafSegmentControlType],  # (12)
+    SegmentLength: NotRequired[int],
+    SegmentLengthControl: NotRequired[CmafSegmentLengthControlType],  # (13)
+    StreamInfResolution: NotRequired[CmafStreamInfResolutionType],  # (14)
+    TargetDurationCompatibilityMode: NotRequired[CmafTargetDurationCompatibilityModeType],  # (15)
+    WriteDashManifest: NotRequired[CmafWriteDASHManifestType],  # (16)
+    WriteHlsManifest: NotRequired[CmafWriteHLSManifestType],  # (17)
+    WriteSegmentTimelineInRepresentation: NotRequired[CmafWriteSegmentTimelineInRepresentationType],  # (18)
+```
 
-- `AdditionalManifests`:
-  `Sequence`\[[CmafAdditionalManifestTypeDef](./type_defs.md#cmafadditionalmanifesttypedef)\]
-- `BaseUrl`: `str`
-- `ClientCache`: [CmafClientCacheType](./literals.md#cmafclientcachetype)
-- `CodecSpecification`:
-  [CmafCodecSpecificationType](./literals.md#cmafcodecspecificationtype)
-- `Destination`: `str`
-- `DestinationSettings`:
-  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
-- `Encryption`:
-  [CmafEncryptionSettingsTypeDef](./type_defs.md#cmafencryptionsettingstypedef)
-- `FragmentLength`: `int`
-- `ImageBasedTrickPlay`:
-  [CmafImageBasedTrickPlayType](./literals.md#cmafimagebasedtrickplaytype)
-- `ImageBasedTrickPlaySettings`:
-  [CmafImageBasedTrickPlaySettingsTypeDef](./type_defs.md#cmafimagebasedtrickplaysettingstypedef)
-- `ManifestCompression`:
-  [CmafManifestCompressionType](./literals.md#cmafmanifestcompressiontype)
-- `ManifestDurationFormat`:
-  [CmafManifestDurationFormatType](./literals.md#cmafmanifestdurationformattype)
-- `MinBufferTime`: `int`
-- `MinFinalSegmentLength`: `float`
-- `MpdProfile`: [CmafMpdProfileType](./literals.md#cmafmpdprofiletype)
-- `PtsOffsetHandlingForBFrames`:
-  [CmafPtsOffsetHandlingForBFramesType](./literals.md#cmafptsoffsethandlingforbframestype)
-- `SegmentControl`:
-  [CmafSegmentControlType](./literals.md#cmafsegmentcontroltype)
-- `SegmentLength`: `int`
-- `SegmentLengthControl`:
-  [CmafSegmentLengthControlType](./literals.md#cmafsegmentlengthcontroltype)
-- `StreamInfResolution`:
-  [CmafStreamInfResolutionType](./literals.md#cmafstreaminfresolutiontype)
-- `TargetDurationCompatibilityMode`:
-  [CmafTargetDurationCompatibilityModeType](./literals.md#cmaftargetdurationcompatibilitymodetype)
-- `WriteDashManifest`:
-  [CmafWriteDASHManifestType](./literals.md#cmafwritedashmanifesttype)
-- `WriteHlsManifest`:
-  [CmafWriteHLSManifestType](./literals.md#cmafwritehlsmanifesttype)
-- `WriteSegmentTimelineInRepresentation`:
-  [CmafWriteSegmentTimelineInRepresentationType](./literals.md#cmafwritesegmenttimelineinrepresentationtype)
-
-<a id="cmafimagebasedtrickplaysettingstypedef"></a>
-
+1. See [:material-code-braces: CmafAdditionalManifestTypeDef](./type_defs.md#cmafadditionalmanifesttypedef) 
+2. See [:material-code-brackets: CmafClientCacheType](./literals.md#cmafclientcachetype) 
+3. See [:material-code-brackets: CmafCodecSpecificationType](./literals.md#cmafcodecspecificationtype) 
+4. See [:material-code-braces: DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef) 
+5. See [:material-code-braces: CmafEncryptionSettingsTypeDef](./type_defs.md#cmafencryptionsettingstypedef) 
+6. See [:material-code-brackets: CmafImageBasedTrickPlayType](./literals.md#cmafimagebasedtrickplaytype) 
+7. See [:material-code-braces: CmafImageBasedTrickPlaySettingsTypeDef](./type_defs.md#cmafimagebasedtrickplaysettingstypedef) 
+8. See [:material-code-brackets: CmafManifestCompressionType](./literals.md#cmafmanifestcompressiontype) 
+9. See [:material-code-brackets: CmafManifestDurationFormatType](./literals.md#cmafmanifestdurationformattype) 
+10. See [:material-code-brackets: CmafMpdProfileType](./literals.md#cmafmpdprofiletype) 
+11. See [:material-code-brackets: CmafPtsOffsetHandlingForBFramesType](./literals.md#cmafptsoffsethandlingforbframestype) 
+12. See [:material-code-brackets: CmafSegmentControlType](./literals.md#cmafsegmentcontroltype) 
+13. See [:material-code-brackets: CmafSegmentLengthControlType](./literals.md#cmafsegmentlengthcontroltype) 
+14. See [:material-code-brackets: CmafStreamInfResolutionType](./literals.md#cmafstreaminfresolutiontype) 
+15. See [:material-code-brackets: CmafTargetDurationCompatibilityModeType](./literals.md#cmaftargetdurationcompatibilitymodetype) 
+16. See [:material-code-brackets: CmafWriteDASHManifestType](./literals.md#cmafwritedashmanifesttype) 
+17. See [:material-code-brackets: CmafWriteHLSManifestType](./literals.md#cmafwritehlsmanifesttype) 
+18. See [:material-code-brackets: CmafWriteSegmentTimelineInRepresentationType](./literals.md#cmafwritesegmenttimelineinrepresentationtype) 
 ## CmafImageBasedTrickPlaySettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CmafImageBasedTrickPlaySettingsTypeDef
+
+def get_value() -> CmafImageBasedTrickPlaySettingsTypeDef:
+    return {
+        "IntervalCadence": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CmafImageBasedTrickPlaySettingsTypeDef(TypedDict):
+    IntervalCadence: NotRequired[CmafIntervalCadenceType],  # (1)
+    ThumbnailHeight: NotRequired[int],
+    ThumbnailInterval: NotRequired[float],
+    ThumbnailWidth: NotRequired[int],
+    TileHeight: NotRequired[int],
+    TileWidth: NotRequired[int],
+```
 
-- `IntervalCadence`:
-  [CmafIntervalCadenceType](./literals.md#cmafintervalcadencetype)
-- `ThumbnailHeight`: `int`
-- `ThumbnailInterval`: `float`
-- `ThumbnailWidth`: `int`
-- `TileHeight`: `int`
-- `TileWidth`: `int`
-
-<a id="cmfcsettingstypedef"></a>
-
+1. See [:material-code-brackets: CmafIntervalCadenceType](./literals.md#cmafintervalcadencetype) 
 ## CmfcSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CmfcSettingsTypeDef
+
+def get_value() -> CmfcSettingsTypeDef:
+    return {
+        "AudioDuration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CmfcSettingsTypeDef(TypedDict):
+    AudioDuration: NotRequired[CmfcAudioDurationType],  # (1)
+    AudioGroupId: NotRequired[str],
+    AudioRenditionSets: NotRequired[str],
+    AudioTrackType: NotRequired[CmfcAudioTrackTypeType],  # (2)
+    DescriptiveVideoServiceFlag: NotRequired[CmfcDescriptiveVideoServiceFlagType],  # (3)
+    IFrameOnlyManifest: NotRequired[CmfcIFrameOnlyManifestType],  # (4)
+    Scte35Esam: NotRequired[CmfcScte35EsamType],  # (5)
+    Scte35Source: NotRequired[CmfcScte35SourceType],  # (6)
+    TimedMetadata: NotRequired[CmfcTimedMetadataType],  # (7)
+```
 
-- `AudioDuration`: [CmfcAudioDurationType](./literals.md#cmfcaudiodurationtype)
-- `AudioGroupId`: `str`
-- `AudioRenditionSets`: `str`
-- `AudioTrackType`:
-  [CmfcAudioTrackTypeType](./literals.md#cmfcaudiotracktypetype)
-- `DescriptiveVideoServiceFlag`:
-  [CmfcDescriptiveVideoServiceFlagType](./literals.md#cmfcdescriptivevideoserviceflagtype)
-- `IFrameOnlyManifest`:
-  [CmfcIFrameOnlyManifestType](./literals.md#cmfciframeonlymanifesttype)
-- `Scte35Esam`: [CmfcScte35EsamType](./literals.md#cmfcscte35esamtype)
-- `Scte35Source`: [CmfcScte35SourceType](./literals.md#cmfcscte35sourcetype)
-- `TimedMetadata`: [CmfcTimedMetadataType](./literals.md#cmfctimedmetadatatype)
-
-<a id="colorcorrectortypedef"></a>
-
+1. See [:material-code-brackets: CmfcAudioDurationType](./literals.md#cmfcaudiodurationtype) 
+2. See [:material-code-brackets: CmfcAudioTrackTypeType](./literals.md#cmfcaudiotracktypetype) 
+3. See [:material-code-brackets: CmfcDescriptiveVideoServiceFlagType](./literals.md#cmfcdescriptivevideoserviceflagtype) 
+4. See [:material-code-brackets: CmfcIFrameOnlyManifestType](./literals.md#cmfciframeonlymanifesttype) 
+5. See [:material-code-brackets: CmfcScte35EsamType](./literals.md#cmfcscte35esamtype) 
+6. See [:material-code-brackets: CmfcScte35SourceType](./literals.md#cmfcscte35sourcetype) 
+7. See [:material-code-brackets: CmfcTimedMetadataType](./literals.md#cmfctimedmetadatatype) 
 ## ColorCorrectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ColorCorrectorTypeDef
+
+def get_value() -> ColorCorrectorTypeDef:
+    return {
+        "Brightness": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ColorCorrectorTypeDef(TypedDict):
+    Brightness: NotRequired[int],
+    ColorSpaceConversion: NotRequired[ColorSpaceConversionType],  # (1)
+    Contrast: NotRequired[int],
+    Hdr10Metadata: NotRequired[Hdr10MetadataTypeDef],  # (2)
+    Hue: NotRequired[int],
+    SampleRangeConversion: NotRequired[SampleRangeConversionType],  # (3)
+    Saturation: NotRequired[int],
+```
 
-- `Brightness`: `int`
-- `ColorSpaceConversion`:
-  [ColorSpaceConversionType](./literals.md#colorspaceconversiontype)
-- `Contrast`: `int`
-- `Hdr10Metadata`: [Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef)
-- `Hue`: `int`
-- `SampleRangeConversion`:
-  [SampleRangeConversionType](./literals.md#samplerangeconversiontype)
-- `Saturation`: `int`
-
-<a id="containersettingstypedef"></a>
-
+1. See [:material-code-brackets: ColorSpaceConversionType](./literals.md#colorspaceconversiontype) 
+2. See [:material-code-braces: Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef) 
+3. See [:material-code-brackets: SampleRangeConversionType](./literals.md#samplerangeconversiontype) 
 ## ContainerSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ContainerSettingsTypeDef
+
+def get_value() -> ContainerSettingsTypeDef:
+    return {
+        "CmfcSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContainerSettingsTypeDef(TypedDict):
+    CmfcSettings: NotRequired[CmfcSettingsTypeDef],  # (1)
+    Container: NotRequired[ContainerTypeType],  # (2)
+    F4vSettings: NotRequired[F4vSettingsTypeDef],  # (3)
+    M2tsSettings: NotRequired[M2tsSettingsTypeDef],  # (4)
+    M3u8Settings: NotRequired[M3u8SettingsTypeDef],  # (5)
+    MovSettings: NotRequired[MovSettingsTypeDef],  # (6)
+    Mp4Settings: NotRequired[Mp4SettingsTypeDef],  # (7)
+    MpdSettings: NotRequired[MpdSettingsTypeDef],  # (8)
+    MxfSettings: NotRequired[MxfSettingsTypeDef],  # (9)
+```
 
-- `CmfcSettings`: [CmfcSettingsTypeDef](./type_defs.md#cmfcsettingstypedef)
-- `Container`: [ContainerTypeType](./literals.md#containertypetype)
-- `F4vSettings`: [F4vSettingsTypeDef](./type_defs.md#f4vsettingstypedef)
-- `M2tsSettings`: [M2tsSettingsTypeDef](./type_defs.md#m2tssettingstypedef)
-- `M3u8Settings`: [M3u8SettingsTypeDef](./type_defs.md#m3u8settingstypedef)
-- `MovSettings`: [MovSettingsTypeDef](./type_defs.md#movsettingstypedef)
-- `Mp4Settings`: [Mp4SettingsTypeDef](./type_defs.md#mp4settingstypedef)
-- `MpdSettings`: [MpdSettingsTypeDef](./type_defs.md#mpdsettingstypedef)
-- `MxfSettings`: [MxfSettingsTypeDef](./type_defs.md#mxfsettingstypedef)
-
-<a id="createjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CmfcSettingsTypeDef](./type_defs.md#cmfcsettingstypedef) 
+2. See [:material-code-brackets: ContainerTypeType](./literals.md#containertypetype) 
+3. See [:material-code-braces: F4vSettingsTypeDef](./type_defs.md#f4vsettingstypedef) 
+4. See [:material-code-braces: M2tsSettingsTypeDef](./type_defs.md#m2tssettingstypedef) 
+5. See [:material-code-braces: M3u8SettingsTypeDef](./type_defs.md#m3u8settingstypedef) 
+6. See [:material-code-braces: MovSettingsTypeDef](./type_defs.md#movsettingstypedef) 
+7. See [:material-code-braces: Mp4SettingsTypeDef](./type_defs.md#mp4settingstypedef) 
+8. See [:material-code-braces: MpdSettingsTypeDef](./type_defs.md#mpdsettingstypedef) 
+9. See [:material-code-braces: MxfSettingsTypeDef](./type_defs.md#mxfsettingstypedef) 
 ## CreateJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CreateJobRequestRequestTypeDef
+
+def get_value() -> CreateJobRequestRequestTypeDef:
+    return {
+        "Role": ...,
+        "Settings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobRequestRequestTypeDef(TypedDict):
+    Role: str,
+    Settings: JobSettingsTypeDef,  # (1)
+    AccelerationSettings: NotRequired[AccelerationSettingsTypeDef],  # (2)
+    BillingTagsSource: NotRequired[BillingTagsSourceType],  # (3)
+    ClientRequestToken: NotRequired[str],
+    HopDestinations: NotRequired[Sequence[HopDestinationTypeDef]],  # (4)
+    JobTemplate: NotRequired[str],
+    Priority: NotRequired[int],
+    Queue: NotRequired[str],
+    SimulateReservedQueue: NotRequired[SimulateReservedQueueType],  # (5)
+    StatusUpdateInterval: NotRequired[StatusUpdateIntervalType],  # (6)
+    Tags: NotRequired[Mapping[str, str]],
+    UserMetadata: NotRequired[Mapping[str, str]],
+```
 
-- `Role`: `str`
-- `Settings`: [JobSettingsTypeDef](./type_defs.md#jobsettingstypedef)
-
-Optional fields:
-
-- `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
-- `BillingTagsSource`:
-  [BillingTagsSourceType](./literals.md#billingtagssourcetype)
-- `ClientRequestToken`: `str`
-- `HopDestinations`:
-  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
-- `JobTemplate`: `str`
-- `Priority`: `int`
-- `Queue`: `str`
-- `SimulateReservedQueue`:
-  [SimulateReservedQueueType](./literals.md#simulatereservedqueuetype)
-- `StatusUpdateInterval`:
-  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `UserMetadata`: `Mapping`\[`str`, `str`\]
-
-<a id="createjobresponsetypedef"></a>
-
+1. See [:material-code-braces: JobSettingsTypeDef](./type_defs.md#jobsettingstypedef) 
+2. See [:material-code-braces: AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef) 
+3. See [:material-code-brackets: BillingTagsSourceType](./literals.md#billingtagssourcetype) 
+4. See [:material-code-braces: HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef) 
+5. See [:material-code-brackets: SimulateReservedQueueType](./literals.md#simulatereservedqueuetype) 
+6. See [:material-code-brackets: StatusUpdateIntervalType](./literals.md#statusupdateintervaltype) 
 ## CreateJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CreateJobResponseTypeDef
+
+def get_value() -> CreateJobResponseTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobResponseTypeDef(TypedDict):
+    Job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createjobtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateJobTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateRequestRequestTypeDef
+
+def get_value() -> CreateJobTemplateRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Settings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobTemplateRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Settings: JobTemplateSettingsTypeDef,  # (1)
+    AccelerationSettings: NotRequired[AccelerationSettingsTypeDef],  # (2)
+    Category: NotRequired[str],
+    Description: NotRequired[str],
+    HopDestinations: NotRequired[Sequence[HopDestinationTypeDef]],  # (3)
+    Priority: NotRequired[int],
+    Queue: NotRequired[str],
+    StatusUpdateInterval: NotRequired[StatusUpdateIntervalType],  # (4)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Name`: `str`
-- `Settings`:
-  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
-
-Optional fields:
-
-- `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
-- `Category`: `str`
-- `Description`: `str`
-- `HopDestinations`:
-  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
-- `Priority`: `int`
-- `Queue`: `str`
-- `StatusUpdateInterval`:
-  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createjobtemplateresponsetypedef"></a>
-
+1. See [:material-code-braces: JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef) 
+2. See [:material-code-braces: AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef) 
+3. See [:material-code-braces: HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef) 
+4. See [:material-code-brackets: StatusUpdateIntervalType](./literals.md#statusupdateintervaltype) 
 ## CreateJobTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CreateJobTemplateResponseTypeDef
+
+def get_value() -> CreateJobTemplateResponseTypeDef:
+    return {
+        "JobTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobTemplateResponseTypeDef(TypedDict):
+    JobTemplate: JobTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpresetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePresetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CreatePresetRequestRequestTypeDef
+
+def get_value() -> CreatePresetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Settings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePresetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Settings: PresetSettingsTypeDef,  # (1)
+    Category: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Name`: `str`
-- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
-
-Optional fields:
-
-- `Category`: `str`
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createpresetresponsetypedef"></a>
-
+1. See [:material-code-braces: PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef) 
 ## CreatePresetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CreatePresetResponseTypeDef
+
+def get_value() -> CreatePresetResponseTypeDef:
+    return {
+        "Preset": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePresetResponseTypeDef(TypedDict):
+    Preset: PresetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createqueuerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PresetTypeDef](./type_defs.md#presettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateQueueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CreateQueueRequestRequestTypeDef
+
+def get_value() -> CreateQueueRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateQueueRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+    ReservationPlanSettings: NotRequired[ReservationPlanSettingsTypeDef],  # (2)
+    Status: NotRequired[QueueStatusType],  # (3)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `ReservationPlanSettings`:
-  [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
-- `Status`: [QueueStatusType](./literals.md#queuestatustype)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createqueueresponsetypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
+2. See [:material-code-braces: ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef) 
+3. See [:material-code-brackets: QueueStatusType](./literals.md#queuestatustype) 
 ## CreateQueueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import CreateQueueResponseTypeDef
+
+def get_value() -> CreateQueueResponseTypeDef:
+    return {
+        "Queue": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateQueueResponseTypeDef(TypedDict):
+    Queue: QueueTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dashadditionalmanifesttypedef"></a>
-
+1. See [:material-code-braces: QueueTypeDef](./type_defs.md#queuetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DashAdditionalManifestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DashAdditionalManifestTypeDef
+
+def get_value() -> DashAdditionalManifestTypeDef:
+    return {
+        "ManifestNameModifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `ManifestNameModifier`: `str`
-- `SelectedOutputs`: `Sequence`\[`str`\]
-
-<a id="dashisoencryptionsettingstypedef"></a>
+```python title="Definition"
+class DashAdditionalManifestTypeDef(TypedDict):
+    ManifestNameModifier: NotRequired[str],
+    SelectedOutputs: NotRequired[Sequence[str]],
+```
 
 ## DashIsoEncryptionSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DashIsoEncryptionSettingsTypeDef
+
+def get_value() -> DashIsoEncryptionSettingsTypeDef:
+    return {
+        "PlaybackDeviceCompatibility": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DashIsoEncryptionSettingsTypeDef(TypedDict):
+    PlaybackDeviceCompatibility: NotRequired[DashIsoPlaybackDeviceCompatibilityType],  # (1)
+    SpekeKeyProvider: NotRequired[SpekeKeyProviderTypeDef],  # (2)
+```
 
-- `PlaybackDeviceCompatibility`:
-  [DashIsoPlaybackDeviceCompatibilityType](./literals.md#dashisoplaybackdevicecompatibilitytype)
-- `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
-
-<a id="dashisogroupsettingstypedef"></a>
-
+1. See [:material-code-brackets: DashIsoPlaybackDeviceCompatibilityType](./literals.md#dashisoplaybackdevicecompatibilitytype) 
+2. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
 ## DashIsoGroupSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DashIsoGroupSettingsTypeDef
+
+def get_value() -> DashIsoGroupSettingsTypeDef:
+    return {
+        "AdditionalManifests": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DashIsoGroupSettingsTypeDef(TypedDict):
+    AdditionalManifests: NotRequired[Sequence[DashAdditionalManifestTypeDef]],  # (1)
+    AudioChannelConfigSchemeIdUri: NotRequired[DashIsoGroupAudioChannelConfigSchemeIdUriType],  # (2)
+    BaseUrl: NotRequired[str],
+    Destination: NotRequired[str],
+    DestinationSettings: NotRequired[DestinationSettingsTypeDef],  # (3)
+    Encryption: NotRequired[DashIsoEncryptionSettingsTypeDef],  # (4)
+    FragmentLength: NotRequired[int],
+    HbbtvCompliance: NotRequired[DashIsoHbbtvComplianceType],  # (5)
+    ImageBasedTrickPlay: NotRequired[DashIsoImageBasedTrickPlayType],  # (6)
+    ImageBasedTrickPlaySettings: NotRequired[DashIsoImageBasedTrickPlaySettingsTypeDef],  # (7)
+    MinBufferTime: NotRequired[int],
+    MinFinalSegmentLength: NotRequired[float],
+    MpdProfile: NotRequired[DashIsoMpdProfileType],  # (8)
+    PtsOffsetHandlingForBFrames: NotRequired[DashIsoPtsOffsetHandlingForBFramesType],  # (9)
+    SegmentControl: NotRequired[DashIsoSegmentControlType],  # (10)
+    SegmentLength: NotRequired[int],
+    SegmentLengthControl: NotRequired[DashIsoSegmentLengthControlType],  # (11)
+    WriteSegmentTimelineInRepresentation: NotRequired[DashIsoWriteSegmentTimelineInRepresentationType],  # (12)
+```
 
-- `AdditionalManifests`:
-  `Sequence`\[[DashAdditionalManifestTypeDef](./type_defs.md#dashadditionalmanifesttypedef)\]
-- `AudioChannelConfigSchemeIdUri`:
-  [DashIsoGroupAudioChannelConfigSchemeIdUriType](./literals.md#dashisogroupaudiochannelconfigschemeiduritype)
-- `BaseUrl`: `str`
-- `Destination`: `str`
-- `DestinationSettings`:
-  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
-- `Encryption`:
-  [DashIsoEncryptionSettingsTypeDef](./type_defs.md#dashisoencryptionsettingstypedef)
-- `FragmentLength`: `int`
-- `HbbtvCompliance`:
-  [DashIsoHbbtvComplianceType](./literals.md#dashisohbbtvcompliancetype)
-- `ImageBasedTrickPlay`:
-  [DashIsoImageBasedTrickPlayType](./literals.md#dashisoimagebasedtrickplaytype)
-- `ImageBasedTrickPlaySettings`:
-  [DashIsoImageBasedTrickPlaySettingsTypeDef](./type_defs.md#dashisoimagebasedtrickplaysettingstypedef)
-- `MinBufferTime`: `int`
-- `MinFinalSegmentLength`: `float`
-- `MpdProfile`: [DashIsoMpdProfileType](./literals.md#dashisompdprofiletype)
-- `PtsOffsetHandlingForBFrames`:
-  [DashIsoPtsOffsetHandlingForBFramesType](./literals.md#dashisoptsoffsethandlingforbframestype)
-- `SegmentControl`:
-  [DashIsoSegmentControlType](./literals.md#dashisosegmentcontroltype)
-- `SegmentLength`: `int`
-- `SegmentLengthControl`:
-  [DashIsoSegmentLengthControlType](./literals.md#dashisosegmentlengthcontroltype)
-- `WriteSegmentTimelineInRepresentation`:
-  [DashIsoWriteSegmentTimelineInRepresentationType](./literals.md#dashisowritesegmenttimelineinrepresentationtype)
-
-<a id="dashisoimagebasedtrickplaysettingstypedef"></a>
-
+1. See [:material-code-braces: DashAdditionalManifestTypeDef](./type_defs.md#dashadditionalmanifesttypedef) 
+2. See [:material-code-brackets: DashIsoGroupAudioChannelConfigSchemeIdUriType](./literals.md#dashisogroupaudiochannelconfigschemeiduritype) 
+3. See [:material-code-braces: DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef) 
+4. See [:material-code-braces: DashIsoEncryptionSettingsTypeDef](./type_defs.md#dashisoencryptionsettingstypedef) 
+5. See [:material-code-brackets: DashIsoHbbtvComplianceType](./literals.md#dashisohbbtvcompliancetype) 
+6. See [:material-code-brackets: DashIsoImageBasedTrickPlayType](./literals.md#dashisoimagebasedtrickplaytype) 
+7. See [:material-code-braces: DashIsoImageBasedTrickPlaySettingsTypeDef](./type_defs.md#dashisoimagebasedtrickplaysettingstypedef) 
+8. See [:material-code-brackets: DashIsoMpdProfileType](./literals.md#dashisompdprofiletype) 
+9. See [:material-code-brackets: DashIsoPtsOffsetHandlingForBFramesType](./literals.md#dashisoptsoffsethandlingforbframestype) 
+10. See [:material-code-brackets: DashIsoSegmentControlType](./literals.md#dashisosegmentcontroltype) 
+11. See [:material-code-brackets: DashIsoSegmentLengthControlType](./literals.md#dashisosegmentlengthcontroltype) 
+12. See [:material-code-brackets: DashIsoWriteSegmentTimelineInRepresentationType](./literals.md#dashisowritesegmenttimelineinrepresentationtype) 
 ## DashIsoImageBasedTrickPlaySettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DashIsoImageBasedTrickPlaySettingsTypeDef
+
+def get_value() -> DashIsoImageBasedTrickPlaySettingsTypeDef:
+    return {
+        "IntervalCadence": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DashIsoImageBasedTrickPlaySettingsTypeDef(TypedDict):
+    IntervalCadence: NotRequired[DashIsoIntervalCadenceType],  # (1)
+    ThumbnailHeight: NotRequired[int],
+    ThumbnailInterval: NotRequired[float],
+    ThumbnailWidth: NotRequired[int],
+    TileHeight: NotRequired[int],
+    TileWidth: NotRequired[int],
+```
 
-- `IntervalCadence`:
-  [DashIsoIntervalCadenceType](./literals.md#dashisointervalcadencetype)
-- `ThumbnailHeight`: `int`
-- `ThumbnailInterval`: `float`
-- `ThumbnailWidth`: `int`
-- `TileHeight`: `int`
-- `TileWidth`: `int`
-
-<a id="deinterlacertypedef"></a>
-
+1. See [:material-code-brackets: DashIsoIntervalCadenceType](./literals.md#dashisointervalcadencetype) 
 ## DeinterlacerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DeinterlacerTypeDef
+
+def get_value() -> DeinterlacerTypeDef:
+    return {
+        "Algorithm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeinterlacerTypeDef(TypedDict):
+    Algorithm: NotRequired[DeinterlaceAlgorithmType],  # (1)
+    Control: NotRequired[DeinterlacerControlType],  # (2)
+    Mode: NotRequired[DeinterlacerModeType],  # (3)
+```
 
-- `Algorithm`:
-  [DeinterlaceAlgorithmType](./literals.md#deinterlacealgorithmtype)
-- `Control`: [DeinterlacerControlType](./literals.md#deinterlacercontroltype)
-- `Mode`: [DeinterlacerModeType](./literals.md#deinterlacermodetype)
-
-<a id="deletejobtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeinterlaceAlgorithmType](./literals.md#deinterlacealgorithmtype) 
+2. See [:material-code-brackets: DeinterlacerControlType](./literals.md#deinterlacercontroltype) 
+3. See [:material-code-brackets: DeinterlacerModeType](./literals.md#deinterlacermodetype) 
 ## DeleteJobTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DeleteJobTemplateRequestRequestTypeDef
+
+def get_value() -> DeleteJobTemplateRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletepresetrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteJobTemplateRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeletePresetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DeletePresetRequestRequestTypeDef
+
+def get_value() -> DeletePresetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletequeuerequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePresetRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteQueueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DeleteQueueRequestRequestTypeDef
+
+def get_value() -> DeleteQueueRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteQueueRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
-- `Name`: `str`
+## DescribeEndpointsRequestDescribeEndpointsPaginateTypeDef
 
-<a id="describeendpointsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsRequestDescribeEndpointsPaginateTypeDef
 
+def get_value() -> DescribeEndpointsRequestDescribeEndpointsPaginateTypeDef:
+    return {
+        "Mode": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEndpointsRequestDescribeEndpointsPaginateTypeDef(TypedDict):
+    Mode: NotRequired[DescribeEndpointsModeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: DescribeEndpointsModeType](./literals.md#describeendpointsmodetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEndpointsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsRequestRequestTypeDef
+
+def get_value() -> DescribeEndpointsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEndpointsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    Mode: NotRequired[DescribeEndpointsModeType],  # (1)
+    NextToken: NotRequired[str],
+```
 
-- `MaxResults`: `int`
-- `Mode`: [DescribeEndpointsModeType](./literals.md#describeendpointsmodetype)
-- `NextToken`: `str`
-
-<a id="describeendpointsresponsetypedef"></a>
-
+1. See [:material-code-brackets: DescribeEndpointsModeType](./literals.md#describeendpointsmodetype) 
 ## DescribeEndpointsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DescribeEndpointsResponseTypeDef
+
+def get_value() -> DescribeEndpointsResponseTypeDef:
+    return {
+        "Endpoints": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEndpointsResponseTypeDef(TypedDict):
+    Endpoints: List[EndpointTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="destinationsettingstypedef"></a>
-
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DestinationSettingsTypeDef
+
+def get_value() -> DestinationSettingsTypeDef:
+    return {
+        "S3Settings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DestinationSettingsTypeDef(TypedDict):
+    S3Settings: NotRequired[S3DestinationSettingsTypeDef],  # (1)
+```
 
-- `S3Settings`:
-  [S3DestinationSettingsTypeDef](./type_defs.md#s3destinationsettingstypedef)
-
-<a id="disassociatecertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3DestinationSettingsTypeDef](./type_defs.md#s3destinationsettingstypedef) 
 ## DisassociateCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DisassociateCertificateRequestRequestTypeDef
+
+def get_value() -> DisassociateCertificateRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="dolbyvisionlevel6metadatatypedef"></a>
+```python title="Definition"
+class DisassociateCertificateRequestRequestTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## DolbyVisionLevel6MetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DolbyVisionLevel6MetadataTypeDef
+
+def get_value() -> DolbyVisionLevel6MetadataTypeDef:
+    return {
+        "MaxCll": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxCll`: `int`
-- `MaxFall`: `int`
-
-<a id="dolbyvisiontypedef"></a>
+```python title="Definition"
+class DolbyVisionLevel6MetadataTypeDef(TypedDict):
+    MaxCll: NotRequired[int],
+    MaxFall: NotRequired[int],
+```
 
 ## DolbyVisionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DolbyVisionTypeDef
+
+def get_value() -> DolbyVisionTypeDef:
+    return {
+        "L6Metadata": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DolbyVisionTypeDef(TypedDict):
+    L6Metadata: NotRequired[DolbyVisionLevel6MetadataTypeDef],  # (1)
+    L6Mode: NotRequired[DolbyVisionLevel6ModeType],  # (2)
+    Profile: NotRequired[DolbyVisionProfileType],  # (3)
+```
 
-- `L6Metadata`:
-  [DolbyVisionLevel6MetadataTypeDef](./type_defs.md#dolbyvisionlevel6metadatatypedef)
-- `L6Mode`:
-  [DolbyVisionLevel6ModeType](./literals.md#dolbyvisionlevel6modetype)
-- `Profile`: `Literal['PROFILE_5']` (see
-  [DolbyVisionProfileType](./literals.md#dolbyvisionprofiletype))
-
-<a id="dvbnitsettingstypedef"></a>
-
+1. See [:material-code-braces: DolbyVisionLevel6MetadataTypeDef](./type_defs.md#dolbyvisionlevel6metadatatypedef) 
+2. See [:material-code-brackets: DolbyVisionLevel6ModeType](./literals.md#dolbyvisionlevel6modetype) 
+3. See [:material-code-brackets: DolbyVisionProfileType](./literals.md#dolbyvisionprofiletype) 
 ## DvbNitSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DvbNitSettingsTypeDef
+
+def get_value() -> DvbNitSettingsTypeDef:
+    return {
+        "NetworkId": ...,
+    }
 ```
 
-Optional fields:
-
-- `NetworkId`: `int`
-- `NetworkName`: `str`
-- `NitInterval`: `int`
-
-<a id="dvbsdtsettingstypedef"></a>
+```python title="Definition"
+class DvbNitSettingsTypeDef(TypedDict):
+    NetworkId: NotRequired[int],
+    NetworkName: NotRequired[str],
+    NitInterval: NotRequired[int],
+```
 
 ## DvbSdtSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DvbSdtSettingsTypeDef
+
+def get_value() -> DvbSdtSettingsTypeDef:
+    return {
+        "OutputSdt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DvbSdtSettingsTypeDef(TypedDict):
+    OutputSdt: NotRequired[OutputSdtType],  # (1)
+    SdtInterval: NotRequired[int],
+    ServiceName: NotRequired[str],
+    ServiceProviderName: NotRequired[str],
+```
 
-- `OutputSdt`: [OutputSdtType](./literals.md#outputsdttype)
-- `SdtInterval`: `int`
-- `ServiceName`: `str`
-- `ServiceProviderName`: `str`
-
-<a id="dvbsubdestinationsettingstypedef"></a>
-
+1. See [:material-code-brackets: OutputSdtType](./literals.md#outputsdttype) 
 ## DvbSubDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DvbSubDestinationSettingsTypeDef
+
+def get_value() -> DvbSubDestinationSettingsTypeDef:
+    return {
+        "Alignment": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DvbSubDestinationSettingsTypeDef(TypedDict):
+    Alignment: NotRequired[DvbSubtitleAlignmentType],  # (1)
+    ApplyFontColor: NotRequired[DvbSubtitleApplyFontColorType],  # (2)
+    BackgroundColor: NotRequired[DvbSubtitleBackgroundColorType],  # (3)
+    BackgroundOpacity: NotRequired[int],
+    DdsHandling: NotRequired[DvbddsHandlingType],  # (4)
+    DdsXCoordinate: NotRequired[int],
+    DdsYCoordinate: NotRequired[int],
+    FallbackFont: NotRequired[DvbSubSubtitleFallbackFontType],  # (5)
+    FontColor: NotRequired[DvbSubtitleFontColorType],  # (6)
+    FontOpacity: NotRequired[int],
+    FontResolution: NotRequired[int],
+    FontScript: NotRequired[FontScriptType],  # (7)
+    FontSize: NotRequired[int],
+    Height: NotRequired[int],
+    HexFontColor: NotRequired[str],
+    OutlineColor: NotRequired[DvbSubtitleOutlineColorType],  # (8)
+    OutlineSize: NotRequired[int],
+    ShadowColor: NotRequired[DvbSubtitleShadowColorType],  # (9)
+    ShadowOpacity: NotRequired[int],
+    ShadowXOffset: NotRequired[int],
+    ShadowYOffset: NotRequired[int],
+    StylePassthrough: NotRequired[DvbSubtitleStylePassthroughType],  # (10)
+    SubtitlingType: NotRequired[DvbSubtitlingTypeType],  # (11)
+    TeletextSpacing: NotRequired[DvbSubtitleTeletextSpacingType],  # (12)
+    Width: NotRequired[int],
+    XPosition: NotRequired[int],
+    YPosition: NotRequired[int],
+```
 
-- `Alignment`:
-  [DvbSubtitleAlignmentType](./literals.md#dvbsubtitlealignmenttype)
-- `ApplyFontColor`:
-  [DvbSubtitleApplyFontColorType](./literals.md#dvbsubtitleapplyfontcolortype)
-- `BackgroundColor`:
-  [DvbSubtitleBackgroundColorType](./literals.md#dvbsubtitlebackgroundcolortype)
-- `BackgroundOpacity`: `int`
-- `DdsHandling`: [DvbddsHandlingType](./literals.md#dvbddshandlingtype)
-- `DdsXCoordinate`: `int`
-- `DdsYCoordinate`: `int`
-- `FallbackFont`:
-  [DvbSubSubtitleFallbackFontType](./literals.md#dvbsubsubtitlefallbackfonttype)
-- `FontColor`:
-  [DvbSubtitleFontColorType](./literals.md#dvbsubtitlefontcolortype)
-- `FontOpacity`: `int`
-- `FontResolution`: `int`
-- `FontScript`: [FontScriptType](./literals.md#fontscripttype)
-- `FontSize`: `int`
-- `Height`: `int`
-- `HexFontColor`: `str`
-- `OutlineColor`:
-  [DvbSubtitleOutlineColorType](./literals.md#dvbsubtitleoutlinecolortype)
-- `OutlineSize`: `int`
-- `ShadowColor`:
-  [DvbSubtitleShadowColorType](./literals.md#dvbsubtitleshadowcolortype)
-- `ShadowOpacity`: `int`
-- `ShadowXOffset`: `int`
-- `ShadowYOffset`: `int`
-- `StylePassthrough`:
-  [DvbSubtitleStylePassthroughType](./literals.md#dvbsubtitlestylepassthroughtype)
-- `SubtitlingType`:
-  [DvbSubtitlingTypeType](./literals.md#dvbsubtitlingtypetype)
-- `TeletextSpacing`:
-  [DvbSubtitleTeletextSpacingType](./literals.md#dvbsubtitleteletextspacingtype)
-- `Width`: `int`
-- `XPosition`: `int`
-- `YPosition`: `int`
-
-<a id="dvbsubsourcesettingstypedef"></a>
-
+1. See [:material-code-brackets: DvbSubtitleAlignmentType](./literals.md#dvbsubtitlealignmenttype) 
+2. See [:material-code-brackets: DvbSubtitleApplyFontColorType](./literals.md#dvbsubtitleapplyfontcolortype) 
+3. See [:material-code-brackets: DvbSubtitleBackgroundColorType](./literals.md#dvbsubtitlebackgroundcolortype) 
+4. See [:material-code-brackets: DvbddsHandlingType](./literals.md#dvbddshandlingtype) 
+5. See [:material-code-brackets: DvbSubSubtitleFallbackFontType](./literals.md#dvbsubsubtitlefallbackfonttype) 
+6. See [:material-code-brackets: DvbSubtitleFontColorType](./literals.md#dvbsubtitlefontcolortype) 
+7. See [:material-code-brackets: FontScriptType](./literals.md#fontscripttype) 
+8. See [:material-code-brackets: DvbSubtitleOutlineColorType](./literals.md#dvbsubtitleoutlinecolortype) 
+9. See [:material-code-brackets: DvbSubtitleShadowColorType](./literals.md#dvbsubtitleshadowcolortype) 
+10. See [:material-code-brackets: DvbSubtitleStylePassthroughType](./literals.md#dvbsubtitlestylepassthroughtype) 
+11. See [:material-code-brackets: DvbSubtitlingTypeType](./literals.md#dvbsubtitlingtypetype) 
+12. See [:material-code-brackets: DvbSubtitleTeletextSpacingType](./literals.md#dvbsubtitleteletextspacingtype) 
 ## DvbSubSourceSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DvbSubSourceSettingsTypeDef
+
+def get_value() -> DvbSubSourceSettingsTypeDef:
+    return {
+        "Pid": ...,
+    }
 ```
 
-Optional fields:
-
-- `Pid`: `int`
-
-<a id="dvbtdtsettingstypedef"></a>
+```python title="Definition"
+class DvbSubSourceSettingsTypeDef(TypedDict):
+    Pid: NotRequired[int],
+```
 
 ## DvbTdtSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import DvbTdtSettingsTypeDef
+
+def get_value() -> DvbTdtSettingsTypeDef:
+    return {
+        "TdtInterval": ...,
+    }
 ```
 
-Optional fields:
-
-- `TdtInterval`: `int`
-
-<a id="eac3atmossettingstypedef"></a>
+```python title="Definition"
+class DvbTdtSettingsTypeDef(TypedDict):
+    TdtInterval: NotRequired[int],
+```
 
 ## Eac3AtmosSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Eac3AtmosSettingsTypeDef
+
+def get_value() -> Eac3AtmosSettingsTypeDef:
+    return {
+        "Bitrate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Eac3AtmosSettingsTypeDef(TypedDict):
+    Bitrate: NotRequired[int],
+    BitstreamMode: NotRequired[Eac3AtmosBitstreamModeType],  # (1)
+    CodingMode: NotRequired[Eac3AtmosCodingModeType],  # (2)
+    DialogueIntelligence: NotRequired[Eac3AtmosDialogueIntelligenceType],  # (3)
+    DownmixControl: NotRequired[Eac3AtmosDownmixControlType],  # (4)
+    DynamicRangeCompressionLine: NotRequired[Eac3AtmosDynamicRangeCompressionLineType],  # (5)
+    DynamicRangeCompressionRf: NotRequired[Eac3AtmosDynamicRangeCompressionRfType],  # (6)
+    DynamicRangeControl: NotRequired[Eac3AtmosDynamicRangeControlType],  # (7)
+    LoRoCenterMixLevel: NotRequired[float],
+    LoRoSurroundMixLevel: NotRequired[float],
+    LtRtCenterMixLevel: NotRequired[float],
+    LtRtSurroundMixLevel: NotRequired[float],
+    MeteringMode: NotRequired[Eac3AtmosMeteringModeType],  # (8)
+    SampleRate: NotRequired[int],
+    SpeechThreshold: NotRequired[int],
+    StereoDownmix: NotRequired[Eac3AtmosStereoDownmixType],  # (9)
+    SurroundExMode: NotRequired[Eac3AtmosSurroundExModeType],  # (10)
+```
 
-- `Bitrate`: `int`
-- `BitstreamMode`: `Literal['COMPLETE_MAIN']` (see
-  [Eac3AtmosBitstreamModeType](./literals.md#eac3atmosbitstreammodetype))
-- `CodingMode`:
-  [Eac3AtmosCodingModeType](./literals.md#eac3atmoscodingmodetype)
-- `DialogueIntelligence`:
-  [Eac3AtmosDialogueIntelligenceType](./literals.md#eac3atmosdialogueintelligencetype)
-- `DownmixControl`:
-  [Eac3AtmosDownmixControlType](./literals.md#eac3atmosdownmixcontroltype)
-- `DynamicRangeCompressionLine`:
-  [Eac3AtmosDynamicRangeCompressionLineType](./literals.md#eac3atmosdynamicrangecompressionlinetype)
-- `DynamicRangeCompressionRf`:
-  [Eac3AtmosDynamicRangeCompressionRfType](./literals.md#eac3atmosdynamicrangecompressionrftype)
-- `DynamicRangeControl`:
-  [Eac3AtmosDynamicRangeControlType](./literals.md#eac3atmosdynamicrangecontroltype)
-- `LoRoCenterMixLevel`: `float`
-- `LoRoSurroundMixLevel`: `float`
-- `LtRtCenterMixLevel`: `float`
-- `LtRtSurroundMixLevel`: `float`
-- `MeteringMode`:
-  [Eac3AtmosMeteringModeType](./literals.md#eac3atmosmeteringmodetype)
-- `SampleRate`: `int`
-- `SpeechThreshold`: `int`
-- `StereoDownmix`:
-  [Eac3AtmosStereoDownmixType](./literals.md#eac3atmosstereodownmixtype)
-- `SurroundExMode`:
-  [Eac3AtmosSurroundExModeType](./literals.md#eac3atmossurroundexmodetype)
-
-<a id="eac3settingstypedef"></a>
-
+1. See [:material-code-brackets: Eac3AtmosBitstreamModeType](./literals.md#eac3atmosbitstreammodetype) 
+2. See [:material-code-brackets: Eac3AtmosCodingModeType](./literals.md#eac3atmoscodingmodetype) 
+3. See [:material-code-brackets: Eac3AtmosDialogueIntelligenceType](./literals.md#eac3atmosdialogueintelligencetype) 
+4. See [:material-code-brackets: Eac3AtmosDownmixControlType](./literals.md#eac3atmosdownmixcontroltype) 
+5. See [:material-code-brackets: Eac3AtmosDynamicRangeCompressionLineType](./literals.md#eac3atmosdynamicrangecompressionlinetype) 
+6. See [:material-code-brackets: Eac3AtmosDynamicRangeCompressionRfType](./literals.md#eac3atmosdynamicrangecompressionrftype) 
+7. See [:material-code-brackets: Eac3AtmosDynamicRangeControlType](./literals.md#eac3atmosdynamicrangecontroltype) 
+8. See [:material-code-brackets: Eac3AtmosMeteringModeType](./literals.md#eac3atmosmeteringmodetype) 
+9. See [:material-code-brackets: Eac3AtmosStereoDownmixType](./literals.md#eac3atmosstereodownmixtype) 
+10. See [:material-code-brackets: Eac3AtmosSurroundExModeType](./literals.md#eac3atmossurroundexmodetype) 
 ## Eac3SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Eac3SettingsTypeDef
+
+def get_value() -> Eac3SettingsTypeDef:
+    return {
+        "AttenuationControl": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Eac3SettingsTypeDef(TypedDict):
+    AttenuationControl: NotRequired[Eac3AttenuationControlType],  # (1)
+    Bitrate: NotRequired[int],
+    BitstreamMode: NotRequired[Eac3BitstreamModeType],  # (2)
+    CodingMode: NotRequired[Eac3CodingModeType],  # (3)
+    DcFilter: NotRequired[Eac3DcFilterType],  # (4)
+    Dialnorm: NotRequired[int],
+    DynamicRangeCompressionLine: NotRequired[Eac3DynamicRangeCompressionLineType],  # (5)
+    DynamicRangeCompressionRf: NotRequired[Eac3DynamicRangeCompressionRfType],  # (6)
+    LfeControl: NotRequired[Eac3LfeControlType],  # (7)
+    LfeFilter: NotRequired[Eac3LfeFilterType],  # (8)
+    LoRoCenterMixLevel: NotRequired[float],
+    LoRoSurroundMixLevel: NotRequired[float],
+    LtRtCenterMixLevel: NotRequired[float],
+    LtRtSurroundMixLevel: NotRequired[float],
+    MetadataControl: NotRequired[Eac3MetadataControlType],  # (9)
+    PassthroughControl: NotRequired[Eac3PassthroughControlType],  # (10)
+    PhaseControl: NotRequired[Eac3PhaseControlType],  # (11)
+    SampleRate: NotRequired[int],
+    StereoDownmix: NotRequired[Eac3StereoDownmixType],  # (12)
+    SurroundExMode: NotRequired[Eac3SurroundExModeType],  # (13)
+    SurroundMode: NotRequired[Eac3SurroundModeType],  # (14)
+```
 
-- `AttenuationControl`:
-  [Eac3AttenuationControlType](./literals.md#eac3attenuationcontroltype)
-- `Bitrate`: `int`
-- `BitstreamMode`: [Eac3BitstreamModeType](./literals.md#eac3bitstreammodetype)
-- `CodingMode`: [Eac3CodingModeType](./literals.md#eac3codingmodetype)
-- `DcFilter`: [Eac3DcFilterType](./literals.md#eac3dcfiltertype)
-- `Dialnorm`: `int`
-- `DynamicRangeCompressionLine`:
-  [Eac3DynamicRangeCompressionLineType](./literals.md#eac3dynamicrangecompressionlinetype)
-- `DynamicRangeCompressionRf`:
-  [Eac3DynamicRangeCompressionRfType](./literals.md#eac3dynamicrangecompressionrftype)
-- `LfeControl`: [Eac3LfeControlType](./literals.md#eac3lfecontroltype)
-- `LfeFilter`: [Eac3LfeFilterType](./literals.md#eac3lfefiltertype)
-- `LoRoCenterMixLevel`: `float`
-- `LoRoSurroundMixLevel`: `float`
-- `LtRtCenterMixLevel`: `float`
-- `LtRtSurroundMixLevel`: `float`
-- `MetadataControl`:
-  [Eac3MetadataControlType](./literals.md#eac3metadatacontroltype)
-- `PassthroughControl`:
-  [Eac3PassthroughControlType](./literals.md#eac3passthroughcontroltype)
-- `PhaseControl`: [Eac3PhaseControlType](./literals.md#eac3phasecontroltype)
-- `SampleRate`: `int`
-- `StereoDownmix`: [Eac3StereoDownmixType](./literals.md#eac3stereodownmixtype)
-- `SurroundExMode`:
-  [Eac3SurroundExModeType](./literals.md#eac3surroundexmodetype)
-- `SurroundMode`: [Eac3SurroundModeType](./literals.md#eac3surroundmodetype)
-
-<a id="embeddeddestinationsettingstypedef"></a>
-
+1. See [:material-code-brackets: Eac3AttenuationControlType](./literals.md#eac3attenuationcontroltype) 
+2. See [:material-code-brackets: Eac3BitstreamModeType](./literals.md#eac3bitstreammodetype) 
+3. See [:material-code-brackets: Eac3CodingModeType](./literals.md#eac3codingmodetype) 
+4. See [:material-code-brackets: Eac3DcFilterType](./literals.md#eac3dcfiltertype) 
+5. See [:material-code-brackets: Eac3DynamicRangeCompressionLineType](./literals.md#eac3dynamicrangecompressionlinetype) 
+6. See [:material-code-brackets: Eac3DynamicRangeCompressionRfType](./literals.md#eac3dynamicrangecompressionrftype) 
+7. See [:material-code-brackets: Eac3LfeControlType](./literals.md#eac3lfecontroltype) 
+8. See [:material-code-brackets: Eac3LfeFilterType](./literals.md#eac3lfefiltertype) 
+9. See [:material-code-brackets: Eac3MetadataControlType](./literals.md#eac3metadatacontroltype) 
+10. See [:material-code-brackets: Eac3PassthroughControlType](./literals.md#eac3passthroughcontroltype) 
+11. See [:material-code-brackets: Eac3PhaseControlType](./literals.md#eac3phasecontroltype) 
+12. See [:material-code-brackets: Eac3StereoDownmixType](./literals.md#eac3stereodownmixtype) 
+13. See [:material-code-brackets: Eac3SurroundExModeType](./literals.md#eac3surroundexmodetype) 
+14. See [:material-code-brackets: Eac3SurroundModeType](./literals.md#eac3surroundmodetype) 
 ## EmbeddedDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import EmbeddedDestinationSettingsTypeDef
+
+def get_value() -> EmbeddedDestinationSettingsTypeDef:
+    return {
+        "Destination608ChannelNumber": ...,
+    }
 ```
 
-Optional fields:
-
-- `Destination608ChannelNumber`: `int`
-- `Destination708ServiceNumber`: `int`
-
-<a id="embeddedsourcesettingstypedef"></a>
+```python title="Definition"
+class EmbeddedDestinationSettingsTypeDef(TypedDict):
+    Destination608ChannelNumber: NotRequired[int],
+    Destination708ServiceNumber: NotRequired[int],
+```
 
 ## EmbeddedSourceSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import EmbeddedSourceSettingsTypeDef
+
+def get_value() -> EmbeddedSourceSettingsTypeDef:
+    return {
+        "Convert608To708": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EmbeddedSourceSettingsTypeDef(TypedDict):
+    Convert608To708: NotRequired[EmbeddedConvert608To708Type],  # (1)
+    Source608ChannelNumber: NotRequired[int],
+    Source608TrackNumber: NotRequired[int],
+    TerminateCaptions: NotRequired[EmbeddedTerminateCaptionsType],  # (2)
+```
 
-- `Convert608To708`:
-  [EmbeddedConvert608To708Type](./literals.md#embeddedconvert608to708type)
-- `Source608ChannelNumber`: `int`
-- `Source608TrackNumber`: `int`
-- `TerminateCaptions`:
-  [EmbeddedTerminateCaptionsType](./literals.md#embeddedterminatecaptionstype)
-
-<a id="endpointtypedef"></a>
-
+1. See [:material-code-brackets: EmbeddedConvert608To708Type](./literals.md#embeddedconvert608to708type) 
+2. See [:material-code-brackets: EmbeddedTerminateCaptionsType](./literals.md#embeddedterminatecaptionstype) 
 ## EndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "Url": ...,
+    }
 ```
 
-Optional fields:
-
-- `Url`: `str`
-
-<a id="esammanifestconfirmconditionnotificationtypedef"></a>
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    Url: NotRequired[str],
+```
 
 ## EsamManifestConfirmConditionNotificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import EsamManifestConfirmConditionNotificationTypeDef
+
+def get_value() -> EsamManifestConfirmConditionNotificationTypeDef:
+    return {
+        "MccXml": ...,
+    }
 ```
 
-Optional fields:
-
-- `MccXml`: `str`
-
-<a id="esamsettingstypedef"></a>
+```python title="Definition"
+class EsamManifestConfirmConditionNotificationTypeDef(TypedDict):
+    MccXml: NotRequired[str],
+```
 
 ## EsamSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import EsamSettingsTypeDef
+
+def get_value() -> EsamSettingsTypeDef:
+    return {
+        "ManifestConfirmConditionNotification": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EsamSettingsTypeDef(TypedDict):
+    ManifestConfirmConditionNotification: NotRequired[EsamManifestConfirmConditionNotificationTypeDef],  # (1)
+    ResponseSignalPreroll: NotRequired[int],
+    SignalProcessingNotification: NotRequired[EsamSignalProcessingNotificationTypeDef],  # (2)
+```
 
-- `ManifestConfirmConditionNotification`:
-  [EsamManifestConfirmConditionNotificationTypeDef](./type_defs.md#esammanifestconfirmconditionnotificationtypedef)
-- `ResponseSignalPreroll`: `int`
-- `SignalProcessingNotification`:
-  [EsamSignalProcessingNotificationTypeDef](./type_defs.md#esamsignalprocessingnotificationtypedef)
-
-<a id="esamsignalprocessingnotificationtypedef"></a>
-
+1. See [:material-code-braces: EsamManifestConfirmConditionNotificationTypeDef](./type_defs.md#esammanifestconfirmconditionnotificationtypedef) 
+2. See [:material-code-braces: EsamSignalProcessingNotificationTypeDef](./type_defs.md#esamsignalprocessingnotificationtypedef) 
 ## EsamSignalProcessingNotificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import EsamSignalProcessingNotificationTypeDef
+
+def get_value() -> EsamSignalProcessingNotificationTypeDef:
+    return {
+        "SccXml": ...,
+    }
 ```
 
-Optional fields:
-
-- `SccXml`: `str`
-
-<a id="extendeddataservicestypedef"></a>
+```python title="Definition"
+class EsamSignalProcessingNotificationTypeDef(TypedDict):
+    SccXml: NotRequired[str],
+```
 
 ## ExtendedDataServicesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ExtendedDataServicesTypeDef
+
+def get_value() -> ExtendedDataServicesTypeDef:
+    return {
+        "CopyProtectionAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExtendedDataServicesTypeDef(TypedDict):
+    CopyProtectionAction: NotRequired[CopyProtectionActionType],  # (1)
+    VchipAction: NotRequired[VchipActionType],  # (2)
+```
 
-- `CopyProtectionAction`:
-  [CopyProtectionActionType](./literals.md#copyprotectionactiontype)
-- `VchipAction`: [VchipActionType](./literals.md#vchipactiontype)
-
-<a id="f4vsettingstypedef"></a>
-
+1. See [:material-code-brackets: CopyProtectionActionType](./literals.md#copyprotectionactiontype) 
+2. See [:material-code-brackets: VchipActionType](./literals.md#vchipactiontype) 
 ## F4vSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import F4vSettingsTypeDef
+
+def get_value() -> F4vSettingsTypeDef:
+    return {
+        "MoovPlacement": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class F4vSettingsTypeDef(TypedDict):
+    MoovPlacement: NotRequired[F4vMoovPlacementType],  # (1)
+```
 
-- `MoovPlacement`: [F4vMoovPlacementType](./literals.md#f4vmoovplacementtype)
-
-<a id="filegroupsettingstypedef"></a>
-
+1. See [:material-code-brackets: F4vMoovPlacementType](./literals.md#f4vmoovplacementtype) 
 ## FileGroupSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import FileGroupSettingsTypeDef
+
+def get_value() -> FileGroupSettingsTypeDef:
+    return {
+        "Destination": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FileGroupSettingsTypeDef(TypedDict):
+    Destination: NotRequired[str],
+    DestinationSettings: NotRequired[DestinationSettingsTypeDef],  # (1)
+```
 
-- `Destination`: `str`
-- `DestinationSettings`:
-  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
-
-<a id="filesourcesettingstypedef"></a>
-
+1. See [:material-code-braces: DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef) 
 ## FileSourceSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import FileSourceSettingsTypeDef
+
+def get_value() -> FileSourceSettingsTypeDef:
+    return {
+        "Convert608To708": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FileSourceSettingsTypeDef(TypedDict):
+    Convert608To708: NotRequired[FileSourceConvert608To708Type],  # (1)
+    Framerate: NotRequired[CaptionSourceFramerateTypeDef],  # (2)
+    SourceFile: NotRequired[str],
+    TimeDelta: NotRequired[int],
+    TimeDeltaUnits: NotRequired[FileSourceTimeDeltaUnitsType],  # (3)
+```
 
-- `Convert608To708`:
-  [FileSourceConvert608To708Type](./literals.md#filesourceconvert608to708type)
-- `Framerate`:
-  [CaptionSourceFramerateTypeDef](./type_defs.md#captionsourceframeratetypedef)
-- `SourceFile`: `str`
-- `TimeDelta`: `int`
-- `TimeDeltaUnits`:
-  [FileSourceTimeDeltaUnitsType](./literals.md#filesourcetimedeltaunitstype)
-
-<a id="framecapturesettingstypedef"></a>
-
+1. See [:material-code-brackets: FileSourceConvert608To708Type](./literals.md#filesourceconvert608to708type) 
+2. See [:material-code-braces: CaptionSourceFramerateTypeDef](./type_defs.md#captionsourceframeratetypedef) 
+3. See [:material-code-brackets: FileSourceTimeDeltaUnitsType](./literals.md#filesourcetimedeltaunitstype) 
 ## FrameCaptureSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import FrameCaptureSettingsTypeDef
+
+def get_value() -> FrameCaptureSettingsTypeDef:
+    return {
+        "FramerateDenominator": ...,
+    }
 ```
 
-Optional fields:
-
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `MaxCaptures`: `int`
-- `Quality`: `int`
-
-<a id="getjobrequestrequesttypedef"></a>
+```python title="Definition"
+class FrameCaptureSettingsTypeDef(TypedDict):
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    MaxCaptures: NotRequired[int],
+    Quality: NotRequired[int],
+```
 
 ## GetJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import GetJobRequestRequestTypeDef
+
+def get_value() -> GetJobRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="getjobresponsetypedef"></a>
+```python title="Definition"
+class GetJobRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## GetJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import GetJobResponseTypeDef
+
+def get_value() -> GetJobResponseTypeDef:
+    return {
+        "Job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobResponseTypeDef(TypedDict):
+    Job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getjobtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import GetJobTemplateRequestRequestTypeDef
+
+def get_value() -> GetJobTemplateRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getjobtemplateresponsetypedef"></a>
+```python title="Definition"
+class GetJobTemplateRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetJobTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import GetJobTemplateResponseTypeDef
+
+def get_value() -> GetJobTemplateResponseTypeDef:
+    return {
+        "JobTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobTemplateResponseTypeDef(TypedDict):
+    JobTemplate: JobTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpolicyresponsetypedef"></a>
-
+1. See [:material-code-braces: JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import GetPolicyResponseTypeDef
+
+def get_value() -> GetPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPolicyResponseTypeDef(TypedDict):
+    Policy: PolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpresetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPresetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import GetPresetRequestRequestTypeDef
+
+def get_value() -> GetPresetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getpresetresponsetypedef"></a>
+```python title="Definition"
+class GetPresetRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetPresetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import GetPresetResponseTypeDef
+
+def get_value() -> GetPresetResponseTypeDef:
+    return {
+        "Preset": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPresetResponseTypeDef(TypedDict):
+    Preset: PresetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getqueuerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PresetTypeDef](./type_defs.md#presettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQueueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import GetQueueRequestRequestTypeDef
+
+def get_value() -> GetQueueRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getqueueresponsetypedef"></a>
+```python title="Definition"
+class GetQueueRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetQueueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import GetQueueResponseTypeDef
+
+def get_value() -> GetQueueResponseTypeDef:
+    return {
+        "Queue": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetQueueResponseTypeDef(TypedDict):
+    Queue: QueueTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="h264qvbrsettingstypedef"></a>
-
+1. See [:material-code-braces: QueueTypeDef](./type_defs.md#queuetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## H264QvbrSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import H264QvbrSettingsTypeDef
+
+def get_value() -> H264QvbrSettingsTypeDef:
+    return {
+        "MaxAverageBitrate": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxAverageBitrate`: `int`
-- `QvbrQualityLevel`: `int`
-- `QvbrQualityLevelFineTune`: `float`
-
-<a id="h264settingstypedef"></a>
+```python title="Definition"
+class H264QvbrSettingsTypeDef(TypedDict):
+    MaxAverageBitrate: NotRequired[int],
+    QvbrQualityLevel: NotRequired[int],
+    QvbrQualityLevelFineTune: NotRequired[float],
+```
 
 ## H264SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import H264SettingsTypeDef
+
+def get_value() -> H264SettingsTypeDef:
+    return {
+        "AdaptiveQuantization": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class H264SettingsTypeDef(TypedDict):
+    AdaptiveQuantization: NotRequired[H264AdaptiveQuantizationType],  # (1)
+    Bitrate: NotRequired[int],
+    CodecLevel: NotRequired[H264CodecLevelType],  # (2)
+    CodecProfile: NotRequired[H264CodecProfileType],  # (3)
+    DynamicSubGop: NotRequired[H264DynamicSubGopType],  # (4)
+    EntropyEncoding: NotRequired[H264EntropyEncodingType],  # (5)
+    FieldEncoding: NotRequired[H264FieldEncodingType],  # (6)
+    FlickerAdaptiveQuantization: NotRequired[H264FlickerAdaptiveQuantizationType],  # (7)
+    FramerateControl: NotRequired[H264FramerateControlType],  # (8)
+    FramerateConversionAlgorithm: NotRequired[H264FramerateConversionAlgorithmType],  # (9)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    GopBReference: NotRequired[H264GopBReferenceType],  # (10)
+    GopClosedCadence: NotRequired[int],
+    GopSize: NotRequired[float],
+    GopSizeUnits: NotRequired[H264GopSizeUnitsType],  # (11)
+    HrdBufferInitialFillPercentage: NotRequired[int],
+    HrdBufferSize: NotRequired[int],
+    InterlaceMode: NotRequired[H264InterlaceModeType],  # (12)
+    MaxBitrate: NotRequired[int],
+    MinIInterval: NotRequired[int],
+    NumberBFramesBetweenReferenceFrames: NotRequired[int],
+    NumberReferenceFrames: NotRequired[int],
+    ParControl: NotRequired[H264ParControlType],  # (13)
+    ParDenominator: NotRequired[int],
+    ParNumerator: NotRequired[int],
+    QualityTuningLevel: NotRequired[H264QualityTuningLevelType],  # (14)
+    QvbrSettings: NotRequired[H264QvbrSettingsTypeDef],  # (15)
+    RateControlMode: NotRequired[H264RateControlModeType],  # (16)
+    RepeatPps: NotRequired[H264RepeatPpsType],  # (17)
+    ScanTypeConversionMode: NotRequired[H264ScanTypeConversionModeType],  # (18)
+    SceneChangeDetect: NotRequired[H264SceneChangeDetectType],  # (19)
+    Slices: NotRequired[int],
+    SlowPal: NotRequired[H264SlowPalType],  # (20)
+    Softness: NotRequired[int],
+    SpatialAdaptiveQuantization: NotRequired[H264SpatialAdaptiveQuantizationType],  # (21)
+    Syntax: NotRequired[H264SyntaxType],  # (22)
+    Telecine: NotRequired[H264TelecineType],  # (23)
+    TemporalAdaptiveQuantization: NotRequired[H264TemporalAdaptiveQuantizationType],  # (24)
+    UnregisteredSeiTimecode: NotRequired[H264UnregisteredSeiTimecodeType],  # (25)
+```
 
-- `AdaptiveQuantization`:
-  [H264AdaptiveQuantizationType](./literals.md#h264adaptivequantizationtype)
-- `Bitrate`: `int`
-- `CodecLevel`: [H264CodecLevelType](./literals.md#h264codecleveltype)
-- `CodecProfile`: [H264CodecProfileType](./literals.md#h264codecprofiletype)
-- `DynamicSubGop`: [H264DynamicSubGopType](./literals.md#h264dynamicsubgoptype)
-- `EntropyEncoding`:
-  [H264EntropyEncodingType](./literals.md#h264entropyencodingtype)
-- `FieldEncoding`: [H264FieldEncodingType](./literals.md#h264fieldencodingtype)
-- `FlickerAdaptiveQuantization`:
-  [H264FlickerAdaptiveQuantizationType](./literals.md#h264flickeradaptivequantizationtype)
-- `FramerateControl`:
-  [H264FramerateControlType](./literals.md#h264frameratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [H264FramerateConversionAlgorithmType](./literals.md#h264framerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `GopBReference`: [H264GopBReferenceType](./literals.md#h264gopbreferencetype)
-- `GopClosedCadence`: `int`
-- `GopSize`: `float`
-- `GopSizeUnits`: [H264GopSizeUnitsType](./literals.md#h264gopsizeunitstype)
-- `HrdBufferInitialFillPercentage`: `int`
-- `HrdBufferSize`: `int`
-- `InterlaceMode`: [H264InterlaceModeType](./literals.md#h264interlacemodetype)
-- `MaxBitrate`: `int`
-- `MinIInterval`: `int`
-- `NumberBFramesBetweenReferenceFrames`: `int`
-- `NumberReferenceFrames`: `int`
-- `ParControl`: [H264ParControlType](./literals.md#h264parcontroltype)
-- `ParDenominator`: `int`
-- `ParNumerator`: `int`
-- `QualityTuningLevel`:
-  [H264QualityTuningLevelType](./literals.md#h264qualitytuningleveltype)
-- `QvbrSettings`:
-  [H264QvbrSettingsTypeDef](./type_defs.md#h264qvbrsettingstypedef)
-- `RateControlMode`:
-  [H264RateControlModeType](./literals.md#h264ratecontrolmodetype)
-- `RepeatPps`: [H264RepeatPpsType](./literals.md#h264repeatppstype)
-- `ScanTypeConversionMode`:
-  [H264ScanTypeConversionModeType](./literals.md#h264scantypeconversionmodetype)
-- `SceneChangeDetect`:
-  [H264SceneChangeDetectType](./literals.md#h264scenechangedetecttype)
-- `Slices`: `int`
-- `SlowPal`: [H264SlowPalType](./literals.md#h264slowpaltype)
-- `Softness`: `int`
-- `SpatialAdaptiveQuantization`:
-  [H264SpatialAdaptiveQuantizationType](./literals.md#h264spatialadaptivequantizationtype)
-- `Syntax`: [H264SyntaxType](./literals.md#h264syntaxtype)
-- `Telecine`: [H264TelecineType](./literals.md#h264telecinetype)
-- `TemporalAdaptiveQuantization`:
-  [H264TemporalAdaptiveQuantizationType](./literals.md#h264temporaladaptivequantizationtype)
-- `UnregisteredSeiTimecode`:
-  [H264UnregisteredSeiTimecodeType](./literals.md#h264unregisteredseitimecodetype)
-
-<a id="h265qvbrsettingstypedef"></a>
-
+1. See [:material-code-brackets: H264AdaptiveQuantizationType](./literals.md#h264adaptivequantizationtype) 
+2. See [:material-code-brackets: H264CodecLevelType](./literals.md#h264codecleveltype) 
+3. See [:material-code-brackets: H264CodecProfileType](./literals.md#h264codecprofiletype) 
+4. See [:material-code-brackets: H264DynamicSubGopType](./literals.md#h264dynamicsubgoptype) 
+5. See [:material-code-brackets: H264EntropyEncodingType](./literals.md#h264entropyencodingtype) 
+6. See [:material-code-brackets: H264FieldEncodingType](./literals.md#h264fieldencodingtype) 
+7. See [:material-code-brackets: H264FlickerAdaptiveQuantizationType](./literals.md#h264flickeradaptivequantizationtype) 
+8. See [:material-code-brackets: H264FramerateControlType](./literals.md#h264frameratecontroltype) 
+9. See [:material-code-brackets: H264FramerateConversionAlgorithmType](./literals.md#h264framerateconversionalgorithmtype) 
+10. See [:material-code-brackets: H264GopBReferenceType](./literals.md#h264gopbreferencetype) 
+11. See [:material-code-brackets: H264GopSizeUnitsType](./literals.md#h264gopsizeunitstype) 
+12. See [:material-code-brackets: H264InterlaceModeType](./literals.md#h264interlacemodetype) 
+13. See [:material-code-brackets: H264ParControlType](./literals.md#h264parcontroltype) 
+14. See [:material-code-brackets: H264QualityTuningLevelType](./literals.md#h264qualitytuningleveltype) 
+15. See [:material-code-braces: H264QvbrSettingsTypeDef](./type_defs.md#h264qvbrsettingstypedef) 
+16. See [:material-code-brackets: H264RateControlModeType](./literals.md#h264ratecontrolmodetype) 
+17. See [:material-code-brackets: H264RepeatPpsType](./literals.md#h264repeatppstype) 
+18. See [:material-code-brackets: H264ScanTypeConversionModeType](./literals.md#h264scantypeconversionmodetype) 
+19. See [:material-code-brackets: H264SceneChangeDetectType](./literals.md#h264scenechangedetecttype) 
+20. See [:material-code-brackets: H264SlowPalType](./literals.md#h264slowpaltype) 
+21. See [:material-code-brackets: H264SpatialAdaptiveQuantizationType](./literals.md#h264spatialadaptivequantizationtype) 
+22. See [:material-code-brackets: H264SyntaxType](./literals.md#h264syntaxtype) 
+23. See [:material-code-brackets: H264TelecineType](./literals.md#h264telecinetype) 
+24. See [:material-code-brackets: H264TemporalAdaptiveQuantizationType](./literals.md#h264temporaladaptivequantizationtype) 
+25. See [:material-code-brackets: H264UnregisteredSeiTimecodeType](./literals.md#h264unregisteredseitimecodetype) 
 ## H265QvbrSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import H265QvbrSettingsTypeDef
+
+def get_value() -> H265QvbrSettingsTypeDef:
+    return {
+        "MaxAverageBitrate": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxAverageBitrate`: `int`
-- `QvbrQualityLevel`: `int`
-- `QvbrQualityLevelFineTune`: `float`
-
-<a id="h265settingstypedef"></a>
+```python title="Definition"
+class H265QvbrSettingsTypeDef(TypedDict):
+    MaxAverageBitrate: NotRequired[int],
+    QvbrQualityLevel: NotRequired[int],
+    QvbrQualityLevelFineTune: NotRequired[float],
+```
 
 ## H265SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import H265SettingsTypeDef
+
+def get_value() -> H265SettingsTypeDef:
+    return {
+        "AdaptiveQuantization": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class H265SettingsTypeDef(TypedDict):
+    AdaptiveQuantization: NotRequired[H265AdaptiveQuantizationType],  # (1)
+    AlternateTransferFunctionSei: NotRequired[H265AlternateTransferFunctionSeiType],  # (2)
+    Bitrate: NotRequired[int],
+    CodecLevel: NotRequired[H265CodecLevelType],  # (3)
+    CodecProfile: NotRequired[H265CodecProfileType],  # (4)
+    DynamicSubGop: NotRequired[H265DynamicSubGopType],  # (5)
+    FlickerAdaptiveQuantization: NotRequired[H265FlickerAdaptiveQuantizationType],  # (6)
+    FramerateControl: NotRequired[H265FramerateControlType],  # (7)
+    FramerateConversionAlgorithm: NotRequired[H265FramerateConversionAlgorithmType],  # (8)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    GopBReference: NotRequired[H265GopBReferenceType],  # (9)
+    GopClosedCadence: NotRequired[int],
+    GopSize: NotRequired[float],
+    GopSizeUnits: NotRequired[H265GopSizeUnitsType],  # (10)
+    HrdBufferInitialFillPercentage: NotRequired[int],
+    HrdBufferSize: NotRequired[int],
+    InterlaceMode: NotRequired[H265InterlaceModeType],  # (11)
+    MaxBitrate: NotRequired[int],
+    MinIInterval: NotRequired[int],
+    NumberBFramesBetweenReferenceFrames: NotRequired[int],
+    NumberReferenceFrames: NotRequired[int],
+    ParControl: NotRequired[H265ParControlType],  # (12)
+    ParDenominator: NotRequired[int],
+    ParNumerator: NotRequired[int],
+    QualityTuningLevel: NotRequired[H265QualityTuningLevelType],  # (13)
+    QvbrSettings: NotRequired[H265QvbrSettingsTypeDef],  # (14)
+    RateControlMode: NotRequired[H265RateControlModeType],  # (15)
+    SampleAdaptiveOffsetFilterMode: NotRequired[H265SampleAdaptiveOffsetFilterModeType],  # (16)
+    ScanTypeConversionMode: NotRequired[H265ScanTypeConversionModeType],  # (17)
+    SceneChangeDetect: NotRequired[H265SceneChangeDetectType],  # (18)
+    Slices: NotRequired[int],
+    SlowPal: NotRequired[H265SlowPalType],  # (19)
+    SpatialAdaptiveQuantization: NotRequired[H265SpatialAdaptiveQuantizationType],  # (20)
+    Telecine: NotRequired[H265TelecineType],  # (21)
+    TemporalAdaptiveQuantization: NotRequired[H265TemporalAdaptiveQuantizationType],  # (22)
+    TemporalIds: NotRequired[H265TemporalIdsType],  # (23)
+    Tiles: NotRequired[H265TilesType],  # (24)
+    UnregisteredSeiTimecode: NotRequired[H265UnregisteredSeiTimecodeType],  # (25)
+    WriteMp4PackagingType: NotRequired[H265WriteMp4PackagingTypeType],  # (26)
+```
 
-- `AdaptiveQuantization`:
-  [H265AdaptiveQuantizationType](./literals.md#h265adaptivequantizationtype)
-- `AlternateTransferFunctionSei`:
-  [H265AlternateTransferFunctionSeiType](./literals.md#h265alternatetransferfunctionseitype)
-- `Bitrate`: `int`
-- `CodecLevel`: [H265CodecLevelType](./literals.md#h265codecleveltype)
-- `CodecProfile`: [H265CodecProfileType](./literals.md#h265codecprofiletype)
-- `DynamicSubGop`: [H265DynamicSubGopType](./literals.md#h265dynamicsubgoptype)
-- `FlickerAdaptiveQuantization`:
-  [H265FlickerAdaptiveQuantizationType](./literals.md#h265flickeradaptivequantizationtype)
-- `FramerateControl`:
-  [H265FramerateControlType](./literals.md#h265frameratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [H265FramerateConversionAlgorithmType](./literals.md#h265framerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `GopBReference`: [H265GopBReferenceType](./literals.md#h265gopbreferencetype)
-- `GopClosedCadence`: `int`
-- `GopSize`: `float`
-- `GopSizeUnits`: [H265GopSizeUnitsType](./literals.md#h265gopsizeunitstype)
-- `HrdBufferInitialFillPercentage`: `int`
-- `HrdBufferSize`: `int`
-- `InterlaceMode`: [H265InterlaceModeType](./literals.md#h265interlacemodetype)
-- `MaxBitrate`: `int`
-- `MinIInterval`: `int`
-- `NumberBFramesBetweenReferenceFrames`: `int`
-- `NumberReferenceFrames`: `int`
-- `ParControl`: [H265ParControlType](./literals.md#h265parcontroltype)
-- `ParDenominator`: `int`
-- `ParNumerator`: `int`
-- `QualityTuningLevel`:
-  [H265QualityTuningLevelType](./literals.md#h265qualitytuningleveltype)
-- `QvbrSettings`:
-  [H265QvbrSettingsTypeDef](./type_defs.md#h265qvbrsettingstypedef)
-- `RateControlMode`:
-  [H265RateControlModeType](./literals.md#h265ratecontrolmodetype)
-- `SampleAdaptiveOffsetFilterMode`:
-  [H265SampleAdaptiveOffsetFilterModeType](./literals.md#h265sampleadaptiveoffsetfiltermodetype)
-- `ScanTypeConversionMode`:
-  [H265ScanTypeConversionModeType](./literals.md#h265scantypeconversionmodetype)
-- `SceneChangeDetect`:
-  [H265SceneChangeDetectType](./literals.md#h265scenechangedetecttype)
-- `Slices`: `int`
-- `SlowPal`: [H265SlowPalType](./literals.md#h265slowpaltype)
-- `SpatialAdaptiveQuantization`:
-  [H265SpatialAdaptiveQuantizationType](./literals.md#h265spatialadaptivequantizationtype)
-- `Telecine`: [H265TelecineType](./literals.md#h265telecinetype)
-- `TemporalAdaptiveQuantization`:
-  [H265TemporalAdaptiveQuantizationType](./literals.md#h265temporaladaptivequantizationtype)
-- `TemporalIds`: [H265TemporalIdsType](./literals.md#h265temporalidstype)
-- `Tiles`: [H265TilesType](./literals.md#h265tilestype)
-- `UnregisteredSeiTimecode`:
-  [H265UnregisteredSeiTimecodeType](./literals.md#h265unregisteredseitimecodetype)
-- `WriteMp4PackagingType`:
-  [H265WriteMp4PackagingTypeType](./literals.md#h265writemp4packagingtypetype)
-
-<a id="hdr10metadatatypedef"></a>
-
+1. See [:material-code-brackets: H265AdaptiveQuantizationType](./literals.md#h265adaptivequantizationtype) 
+2. See [:material-code-brackets: H265AlternateTransferFunctionSeiType](./literals.md#h265alternatetransferfunctionseitype) 
+3. See [:material-code-brackets: H265CodecLevelType](./literals.md#h265codecleveltype) 
+4. See [:material-code-brackets: H265CodecProfileType](./literals.md#h265codecprofiletype) 
+5. See [:material-code-brackets: H265DynamicSubGopType](./literals.md#h265dynamicsubgoptype) 
+6. See [:material-code-brackets: H265FlickerAdaptiveQuantizationType](./literals.md#h265flickeradaptivequantizationtype) 
+7. See [:material-code-brackets: H265FramerateControlType](./literals.md#h265frameratecontroltype) 
+8. See [:material-code-brackets: H265FramerateConversionAlgorithmType](./literals.md#h265framerateconversionalgorithmtype) 
+9. See [:material-code-brackets: H265GopBReferenceType](./literals.md#h265gopbreferencetype) 
+10. See [:material-code-brackets: H265GopSizeUnitsType](./literals.md#h265gopsizeunitstype) 
+11. See [:material-code-brackets: H265InterlaceModeType](./literals.md#h265interlacemodetype) 
+12. See [:material-code-brackets: H265ParControlType](./literals.md#h265parcontroltype) 
+13. See [:material-code-brackets: H265QualityTuningLevelType](./literals.md#h265qualitytuningleveltype) 
+14. See [:material-code-braces: H265QvbrSettingsTypeDef](./type_defs.md#h265qvbrsettingstypedef) 
+15. See [:material-code-brackets: H265RateControlModeType](./literals.md#h265ratecontrolmodetype) 
+16. See [:material-code-brackets: H265SampleAdaptiveOffsetFilterModeType](./literals.md#h265sampleadaptiveoffsetfiltermodetype) 
+17. See [:material-code-brackets: H265ScanTypeConversionModeType](./literals.md#h265scantypeconversionmodetype) 
+18. See [:material-code-brackets: H265SceneChangeDetectType](./literals.md#h265scenechangedetecttype) 
+19. See [:material-code-brackets: H265SlowPalType](./literals.md#h265slowpaltype) 
+20. See [:material-code-brackets: H265SpatialAdaptiveQuantizationType](./literals.md#h265spatialadaptivequantizationtype) 
+21. See [:material-code-brackets: H265TelecineType](./literals.md#h265telecinetype) 
+22. See [:material-code-brackets: H265TemporalAdaptiveQuantizationType](./literals.md#h265temporaladaptivequantizationtype) 
+23. See [:material-code-brackets: H265TemporalIdsType](./literals.md#h265temporalidstype) 
+24. See [:material-code-brackets: H265TilesType](./literals.md#h265tilestype) 
+25. See [:material-code-brackets: H265UnregisteredSeiTimecodeType](./literals.md#h265unregisteredseitimecodetype) 
+26. See [:material-code-brackets: H265WriteMp4PackagingTypeType](./literals.md#h265writemp4packagingtypetype) 
 ## Hdr10MetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Hdr10MetadataTypeDef
+
+def get_value() -> Hdr10MetadataTypeDef:
+    return {
+        "BluePrimaryX": ...,
+    }
 ```
 
-Optional fields:
-
-- `BluePrimaryX`: `int`
-- `BluePrimaryY`: `int`
-- `GreenPrimaryX`: `int`
-- `GreenPrimaryY`: `int`
-- `MaxContentLightLevel`: `int`
-- `MaxFrameAverageLightLevel`: `int`
-- `MaxLuminance`: `int`
-- `MinLuminance`: `int`
-- `RedPrimaryX`: `int`
-- `RedPrimaryY`: `int`
-- `WhitePointX`: `int`
-- `WhitePointY`: `int`
-
-<a id="hdr10plustypedef"></a>
+```python title="Definition"
+class Hdr10MetadataTypeDef(TypedDict):
+    BluePrimaryX: NotRequired[int],
+    BluePrimaryY: NotRequired[int],
+    GreenPrimaryX: NotRequired[int],
+    GreenPrimaryY: NotRequired[int],
+    MaxContentLightLevel: NotRequired[int],
+    MaxFrameAverageLightLevel: NotRequired[int],
+    MaxLuminance: NotRequired[int],
+    MinLuminance: NotRequired[int],
+    RedPrimaryX: NotRequired[int],
+    RedPrimaryY: NotRequired[int],
+    WhitePointX: NotRequired[int],
+    WhitePointY: NotRequired[int],
+```
 
 ## Hdr10PlusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Hdr10PlusTypeDef
+
+def get_value() -> Hdr10PlusTypeDef:
+    return {
+        "MasteringMonitorNits": ...,
+    }
 ```
 
-Optional fields:
-
-- `MasteringMonitorNits`: `int`
-- `TargetMonitorNits`: `int`
-
-<a id="hlsadditionalmanifesttypedef"></a>
+```python title="Definition"
+class Hdr10PlusTypeDef(TypedDict):
+    MasteringMonitorNits: NotRequired[int],
+    TargetMonitorNits: NotRequired[int],
+```
 
 ## HlsAdditionalManifestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import HlsAdditionalManifestTypeDef
+
+def get_value() -> HlsAdditionalManifestTypeDef:
+    return {
+        "ManifestNameModifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `ManifestNameModifier`: `str`
-- `SelectedOutputs`: `Sequence`\[`str`\]
-
-<a id="hlscaptionlanguagemappingtypedef"></a>
+```python title="Definition"
+class HlsAdditionalManifestTypeDef(TypedDict):
+    ManifestNameModifier: NotRequired[str],
+    SelectedOutputs: NotRequired[Sequence[str]],
+```
 
 ## HlsCaptionLanguageMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import HlsCaptionLanguageMappingTypeDef
+
+def get_value() -> HlsCaptionLanguageMappingTypeDef:
+    return {
+        "CaptionChannel": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HlsCaptionLanguageMappingTypeDef(TypedDict):
+    CaptionChannel: NotRequired[int],
+    CustomLanguageCode: NotRequired[str],
+    LanguageCode: NotRequired[LanguageCodeType],  # (1)
+    LanguageDescription: NotRequired[str],
+```
 
-- `CaptionChannel`: `int`
-- `CustomLanguageCode`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LanguageDescription`: `str`
-
-<a id="hlsencryptionsettingstypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## HlsEncryptionSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import HlsEncryptionSettingsTypeDef
+
+def get_value() -> HlsEncryptionSettingsTypeDef:
+    return {
+        "ConstantInitializationVector": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HlsEncryptionSettingsTypeDef(TypedDict):
+    ConstantInitializationVector: NotRequired[str],
+    EncryptionMethod: NotRequired[HlsEncryptionTypeType],  # (1)
+    InitializationVectorInManifest: NotRequired[HlsInitializationVectorInManifestType],  # (2)
+    OfflineEncrypted: NotRequired[HlsOfflineEncryptedType],  # (3)
+    SpekeKeyProvider: NotRequired[SpekeKeyProviderTypeDef],  # (4)
+    StaticKeyProvider: NotRequired[StaticKeyProviderTypeDef],  # (5)
+    Type: NotRequired[HlsKeyProviderTypeType],  # (6)
+```
 
-- `ConstantInitializationVector`: `str`
-- `EncryptionMethod`:
-  [HlsEncryptionTypeType](./literals.md#hlsencryptiontypetype)
-- `InitializationVectorInManifest`:
-  [HlsInitializationVectorInManifestType](./literals.md#hlsinitializationvectorinmanifesttype)
-- `OfflineEncrypted`:
-  [HlsOfflineEncryptedType](./literals.md#hlsofflineencryptedtype)
-- `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
-- `StaticKeyProvider`:
-  [StaticKeyProviderTypeDef](./type_defs.md#statickeyprovidertypedef)
-- `Type`: [HlsKeyProviderTypeType](./literals.md#hlskeyprovidertypetype)
-
-<a id="hlsgroupsettingstypedef"></a>
-
+1. See [:material-code-brackets: HlsEncryptionTypeType](./literals.md#hlsencryptiontypetype) 
+2. See [:material-code-brackets: HlsInitializationVectorInManifestType](./literals.md#hlsinitializationvectorinmanifesttype) 
+3. See [:material-code-brackets: HlsOfflineEncryptedType](./literals.md#hlsofflineencryptedtype) 
+4. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
+5. See [:material-code-braces: StaticKeyProviderTypeDef](./type_defs.md#statickeyprovidertypedef) 
+6. See [:material-code-brackets: HlsKeyProviderTypeType](./literals.md#hlskeyprovidertypetype) 
 ## HlsGroupSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import HlsGroupSettingsTypeDef
+
+def get_value() -> HlsGroupSettingsTypeDef:
+    return {
+        "AdMarkers": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HlsGroupSettingsTypeDef(TypedDict):
+    AdMarkers: NotRequired[Sequence[HlsAdMarkersType]],  # (1)
+    AdditionalManifests: NotRequired[Sequence[HlsAdditionalManifestTypeDef]],  # (2)
+    AudioOnlyHeader: NotRequired[HlsAudioOnlyHeaderType],  # (3)
+    BaseUrl: NotRequired[str],
+    CaptionLanguageMappings: NotRequired[Sequence[HlsCaptionLanguageMappingTypeDef]],  # (4)
+    CaptionLanguageSetting: NotRequired[HlsCaptionLanguageSettingType],  # (5)
+    CaptionSegmentLengthControl: NotRequired[HlsCaptionSegmentLengthControlType],  # (6)
+    ClientCache: NotRequired[HlsClientCacheType],  # (7)
+    CodecSpecification: NotRequired[HlsCodecSpecificationType],  # (8)
+    Destination: NotRequired[str],
+    DestinationSettings: NotRequired[DestinationSettingsTypeDef],  # (9)
+    DirectoryStructure: NotRequired[HlsDirectoryStructureType],  # (10)
+    Encryption: NotRequired[HlsEncryptionSettingsTypeDef],  # (11)
+    ImageBasedTrickPlay: NotRequired[HlsImageBasedTrickPlayType],  # (12)
+    ImageBasedTrickPlaySettings: NotRequired[HlsImageBasedTrickPlaySettingsTypeDef],  # (13)
+    ManifestCompression: NotRequired[HlsManifestCompressionType],  # (14)
+    ManifestDurationFormat: NotRequired[HlsManifestDurationFormatType],  # (15)
+    MinFinalSegmentLength: NotRequired[float],
+    MinSegmentLength: NotRequired[int],
+    OutputSelection: NotRequired[HlsOutputSelectionType],  # (16)
+    ProgramDateTime: NotRequired[HlsProgramDateTimeType],  # (17)
+    ProgramDateTimePeriod: NotRequired[int],
+    SegmentControl: NotRequired[HlsSegmentControlType],  # (18)
+    SegmentLength: NotRequired[int],
+    SegmentLengthControl: NotRequired[HlsSegmentLengthControlType],  # (19)
+    SegmentsPerSubdirectory: NotRequired[int],
+    StreamInfResolution: NotRequired[HlsStreamInfResolutionType],  # (20)
+    TargetDurationCompatibilityMode: NotRequired[HlsTargetDurationCompatibilityModeType],  # (21)
+    TimedMetadataId3Frame: NotRequired[HlsTimedMetadataId3FrameType],  # (22)
+    TimedMetadataId3Period: NotRequired[int],
+    TimestampDeltaMilliseconds: NotRequired[int],
+```
 
-- `AdMarkers`: `Sequence`\[[HlsAdMarkersType](./literals.md#hlsadmarkerstype)\]
-- `AdditionalManifests`:
-  `Sequence`\[[HlsAdditionalManifestTypeDef](./type_defs.md#hlsadditionalmanifesttypedef)\]
-- `AudioOnlyHeader`:
-  [HlsAudioOnlyHeaderType](./literals.md#hlsaudioonlyheadertype)
-- `BaseUrl`: `str`
-- `CaptionLanguageMappings`:
-  `Sequence`\[[HlsCaptionLanguageMappingTypeDef](./type_defs.md#hlscaptionlanguagemappingtypedef)\]
-- `CaptionLanguageSetting`:
-  [HlsCaptionLanguageSettingType](./literals.md#hlscaptionlanguagesettingtype)
-- `CaptionSegmentLengthControl`:
-  [HlsCaptionSegmentLengthControlType](./literals.md#hlscaptionsegmentlengthcontroltype)
-- `ClientCache`: [HlsClientCacheType](./literals.md#hlsclientcachetype)
-- `CodecSpecification`:
-  [HlsCodecSpecificationType](./literals.md#hlscodecspecificationtype)
-- `Destination`: `str`
-- `DestinationSettings`:
-  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
-- `DirectoryStructure`:
-  [HlsDirectoryStructureType](./literals.md#hlsdirectorystructuretype)
-- `Encryption`:
-  [HlsEncryptionSettingsTypeDef](./type_defs.md#hlsencryptionsettingstypedef)
-- `ImageBasedTrickPlay`:
-  [HlsImageBasedTrickPlayType](./literals.md#hlsimagebasedtrickplaytype)
-- `ImageBasedTrickPlaySettings`:
-  [HlsImageBasedTrickPlaySettingsTypeDef](./type_defs.md#hlsimagebasedtrickplaysettingstypedef)
-- `ManifestCompression`:
-  [HlsManifestCompressionType](./literals.md#hlsmanifestcompressiontype)
-- `ManifestDurationFormat`:
-  [HlsManifestDurationFormatType](./literals.md#hlsmanifestdurationformattype)
-- `MinFinalSegmentLength`: `float`
-- `MinSegmentLength`: `int`
-- `OutputSelection`:
-  [HlsOutputSelectionType](./literals.md#hlsoutputselectiontype)
-- `ProgramDateTime`:
-  [HlsProgramDateTimeType](./literals.md#hlsprogramdatetimetype)
-- `ProgramDateTimePeriod`: `int`
-- `SegmentControl`:
-  [HlsSegmentControlType](./literals.md#hlssegmentcontroltype)
-- `SegmentLength`: `int`
-- `SegmentLengthControl`:
-  [HlsSegmentLengthControlType](./literals.md#hlssegmentlengthcontroltype)
-- `SegmentsPerSubdirectory`: `int`
-- `StreamInfResolution`:
-  [HlsStreamInfResolutionType](./literals.md#hlsstreaminfresolutiontype)
-- `TargetDurationCompatibilityMode`:
-  [HlsTargetDurationCompatibilityModeType](./literals.md#hlstargetdurationcompatibilitymodetype)
-- `TimedMetadataId3Frame`:
-  [HlsTimedMetadataId3FrameType](./literals.md#hlstimedmetadataid3frametype)
-- `TimedMetadataId3Period`: `int`
-- `TimestampDeltaMilliseconds`: `int`
-
-<a id="hlsimagebasedtrickplaysettingstypedef"></a>
-
+1. See [:material-code-brackets: HlsAdMarkersType](./literals.md#hlsadmarkerstype) 
+2. See [:material-code-braces: HlsAdditionalManifestTypeDef](./type_defs.md#hlsadditionalmanifesttypedef) 
+3. See [:material-code-brackets: HlsAudioOnlyHeaderType](./literals.md#hlsaudioonlyheadertype) 
+4. See [:material-code-braces: HlsCaptionLanguageMappingTypeDef](./type_defs.md#hlscaptionlanguagemappingtypedef) 
+5. See [:material-code-brackets: HlsCaptionLanguageSettingType](./literals.md#hlscaptionlanguagesettingtype) 
+6. See [:material-code-brackets: HlsCaptionSegmentLengthControlType](./literals.md#hlscaptionsegmentlengthcontroltype) 
+7. See [:material-code-brackets: HlsClientCacheType](./literals.md#hlsclientcachetype) 
+8. See [:material-code-brackets: HlsCodecSpecificationType](./literals.md#hlscodecspecificationtype) 
+9. See [:material-code-braces: DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef) 
+10. See [:material-code-brackets: HlsDirectoryStructureType](./literals.md#hlsdirectorystructuretype) 
+11. See [:material-code-braces: HlsEncryptionSettingsTypeDef](./type_defs.md#hlsencryptionsettingstypedef) 
+12. See [:material-code-brackets: HlsImageBasedTrickPlayType](./literals.md#hlsimagebasedtrickplaytype) 
+13. See [:material-code-braces: HlsImageBasedTrickPlaySettingsTypeDef](./type_defs.md#hlsimagebasedtrickplaysettingstypedef) 
+14. See [:material-code-brackets: HlsManifestCompressionType](./literals.md#hlsmanifestcompressiontype) 
+15. See [:material-code-brackets: HlsManifestDurationFormatType](./literals.md#hlsmanifestdurationformattype) 
+16. See [:material-code-brackets: HlsOutputSelectionType](./literals.md#hlsoutputselectiontype) 
+17. See [:material-code-brackets: HlsProgramDateTimeType](./literals.md#hlsprogramdatetimetype) 
+18. See [:material-code-brackets: HlsSegmentControlType](./literals.md#hlssegmentcontroltype) 
+19. See [:material-code-brackets: HlsSegmentLengthControlType](./literals.md#hlssegmentlengthcontroltype) 
+20. See [:material-code-brackets: HlsStreamInfResolutionType](./literals.md#hlsstreaminfresolutiontype) 
+21. See [:material-code-brackets: HlsTargetDurationCompatibilityModeType](./literals.md#hlstargetdurationcompatibilitymodetype) 
+22. See [:material-code-brackets: HlsTimedMetadataId3FrameType](./literals.md#hlstimedmetadataid3frametype) 
 ## HlsImageBasedTrickPlaySettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import HlsImageBasedTrickPlaySettingsTypeDef
+
+def get_value() -> HlsImageBasedTrickPlaySettingsTypeDef:
+    return {
+        "IntervalCadence": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HlsImageBasedTrickPlaySettingsTypeDef(TypedDict):
+    IntervalCadence: NotRequired[HlsIntervalCadenceType],  # (1)
+    ThumbnailHeight: NotRequired[int],
+    ThumbnailInterval: NotRequired[float],
+    ThumbnailWidth: NotRequired[int],
+    TileHeight: NotRequired[int],
+    TileWidth: NotRequired[int],
+```
 
-- `IntervalCadence`:
-  [HlsIntervalCadenceType](./literals.md#hlsintervalcadencetype)
-- `ThumbnailHeight`: `int`
-- `ThumbnailInterval`: `float`
-- `ThumbnailWidth`: `int`
-- `TileHeight`: `int`
-- `TileWidth`: `int`
-
-<a id="hlsrenditiongroupsettingstypedef"></a>
-
+1. See [:material-code-brackets: HlsIntervalCadenceType](./literals.md#hlsintervalcadencetype) 
 ## HlsRenditionGroupSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import HlsRenditionGroupSettingsTypeDef
+
+def get_value() -> HlsRenditionGroupSettingsTypeDef:
+    return {
+        "RenditionGroupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HlsRenditionGroupSettingsTypeDef(TypedDict):
+    RenditionGroupId: NotRequired[str],
+    RenditionLanguageCode: NotRequired[LanguageCodeType],  # (1)
+    RenditionName: NotRequired[str],
+```
 
-- `RenditionGroupId`: `str`
-- `RenditionLanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `RenditionName`: `str`
-
-<a id="hlssettingstypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## HlsSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import HlsSettingsTypeDef
+
+def get_value() -> HlsSettingsTypeDef:
+    return {
+        "AudioGroupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HlsSettingsTypeDef(TypedDict):
+    AudioGroupId: NotRequired[str],
+    AudioOnlyContainer: NotRequired[HlsAudioOnlyContainerType],  # (1)
+    AudioRenditionSets: NotRequired[str],
+    AudioTrackType: NotRequired[HlsAudioTrackTypeType],  # (2)
+    DescriptiveVideoServiceFlag: NotRequired[HlsDescriptiveVideoServiceFlagType],  # (3)
+    IFrameOnlyManifest: NotRequired[HlsIFrameOnlyManifestType],  # (4)
+    SegmentModifier: NotRequired[str],
+```
 
-- `AudioGroupId`: `str`
-- `AudioOnlyContainer`:
-  [HlsAudioOnlyContainerType](./literals.md#hlsaudioonlycontainertype)
-- `AudioRenditionSets`: `str`
-- `AudioTrackType`:
-  [HlsAudioTrackTypeType](./literals.md#hlsaudiotracktypetype)
-- `DescriptiveVideoServiceFlag`:
-  [HlsDescriptiveVideoServiceFlagType](./literals.md#hlsdescriptivevideoserviceflagtype)
-- `IFrameOnlyManifest`:
-  [HlsIFrameOnlyManifestType](./literals.md#hlsiframeonlymanifesttype)
-- `SegmentModifier`: `str`
-
-<a id="hopdestinationtypedef"></a>
-
+1. See [:material-code-brackets: HlsAudioOnlyContainerType](./literals.md#hlsaudioonlycontainertype) 
+2. See [:material-code-brackets: HlsAudioTrackTypeType](./literals.md#hlsaudiotracktypetype) 
+3. See [:material-code-brackets: HlsDescriptiveVideoServiceFlagType](./literals.md#hlsdescriptivevideoserviceflagtype) 
+4. See [:material-code-brackets: HlsIFrameOnlyManifestType](./literals.md#hlsiframeonlymanifesttype) 
 ## HopDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import HopDestinationTypeDef
+
+def get_value() -> HopDestinationTypeDef:
+    return {
+        "Priority": ...,
+    }
 ```
 
-Optional fields:
-
-- `Priority`: `int`
-- `Queue`: `str`
-- `WaitMinutes`: `int`
-
-<a id="id3insertiontypedef"></a>
+```python title="Definition"
+class HopDestinationTypeDef(TypedDict):
+    Priority: NotRequired[int],
+    Queue: NotRequired[str],
+    WaitMinutes: NotRequired[int],
+```
 
 ## Id3InsertionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Id3InsertionTypeDef
+
+def get_value() -> Id3InsertionTypeDef:
+    return {
+        "Id3": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id3`: `str`
-- `Timecode`: `str`
-
-<a id="imageinsertertypedef"></a>
+```python title="Definition"
+class Id3InsertionTypeDef(TypedDict):
+    Id3: NotRequired[str],
+    Timecode: NotRequired[str],
+```
 
 ## ImageInserterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ImageInserterTypeDef
+
+def get_value() -> ImageInserterTypeDef:
+    return {
+        "InsertableImages": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImageInserterTypeDef(TypedDict):
+    InsertableImages: NotRequired[Sequence[InsertableImageTypeDef]],  # (1)
+```
 
-- `InsertableImages`:
-  `Sequence`\[[InsertableImageTypeDef](./type_defs.md#insertableimagetypedef)\]
-
-<a id="imscdestinationsettingstypedef"></a>
-
+1. See [:material-code-braces: InsertableImageTypeDef](./type_defs.md#insertableimagetypedef) 
 ## ImscDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ImscDestinationSettingsTypeDef
+
+def get_value() -> ImscDestinationSettingsTypeDef:
+    return {
+        "Accessibility": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImscDestinationSettingsTypeDef(TypedDict):
+    Accessibility: NotRequired[ImscAccessibilitySubsType],  # (1)
+    StylePassthrough: NotRequired[ImscStylePassthroughType],  # (2)
+```
 
-- `Accessibility`:
-  [ImscAccessibilitySubsType](./literals.md#imscaccessibilitysubstype)
-- `StylePassthrough`:
-  [ImscStylePassthroughType](./literals.md#imscstylepassthroughtype)
-
-<a id="inputclippingtypedef"></a>
-
+1. See [:material-code-brackets: ImscAccessibilitySubsType](./literals.md#imscaccessibilitysubstype) 
+2. See [:material-code-brackets: ImscStylePassthroughType](./literals.md#imscstylepassthroughtype) 
 ## InputClippingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import InputClippingTypeDef
+
+def get_value() -> InputClippingTypeDef:
+    return {
+        "EndTimecode": ...,
+    }
 ```
 
-Optional fields:
-
-- `EndTimecode`: `str`
-- `StartTimecode`: `str`
-
-<a id="inputdecryptionsettingstypedef"></a>
+```python title="Definition"
+class InputClippingTypeDef(TypedDict):
+    EndTimecode: NotRequired[str],
+    StartTimecode: NotRequired[str],
+```
 
 ## InputDecryptionSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import InputDecryptionSettingsTypeDef
+
+def get_value() -> InputDecryptionSettingsTypeDef:
+    return {
+        "DecryptionMode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputDecryptionSettingsTypeDef(TypedDict):
+    DecryptionMode: NotRequired[DecryptionModeType],  # (1)
+    EncryptedDecryptionKey: NotRequired[str],
+    InitializationVector: NotRequired[str],
+    KmsKeyRegion: NotRequired[str],
+```
 
-- `DecryptionMode`: [DecryptionModeType](./literals.md#decryptionmodetype)
-- `EncryptedDecryptionKey`: `str`
-- `InitializationVector`: `str`
-- `KmsKeyRegion`: `str`
-
-<a id="inputtemplatetypedef"></a>
-
+1. See [:material-code-brackets: DecryptionModeType](./literals.md#decryptionmodetype) 
 ## InputTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import InputTemplateTypeDef
+
+def get_value() -> InputTemplateTypeDef:
+    return {
+        "AudioSelectorGroups": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputTemplateTypeDef(TypedDict):
+    AudioSelectorGroups: NotRequired[Mapping[str, AudioSelectorGroupTypeDef]],  # (1)
+    AudioSelectors: NotRequired[Mapping[str, AudioSelectorTypeDef]],  # (2)
+    CaptionSelectors: NotRequired[Mapping[str, CaptionSelectorTypeDef]],  # (3)
+    Crop: NotRequired[RectangleTypeDef],  # (4)
+    DeblockFilter: NotRequired[InputDeblockFilterType],  # (5)
+    DenoiseFilter: NotRequired[InputDenoiseFilterType],  # (6)
+    DolbyVisionMetadataXml: NotRequired[str],
+    FilterEnable: NotRequired[InputFilterEnableType],  # (7)
+    FilterStrength: NotRequired[int],
+    ImageInserter: NotRequired[ImageInserterTypeDef],  # (8)
+    InputClippings: NotRequired[Sequence[InputClippingTypeDef]],  # (9)
+    InputScanType: NotRequired[InputScanTypeType],  # (10)
+    Position: NotRequired[RectangleTypeDef],  # (4)
+    ProgramNumber: NotRequired[int],
+    PsiControl: NotRequired[InputPsiControlType],  # (12)
+    TimecodeSource: NotRequired[InputTimecodeSourceType],  # (13)
+    TimecodeStart: NotRequired[str],
+    VideoSelector: NotRequired[VideoSelectorTypeDef],  # (14)
+```
 
-- `AudioSelectorGroups`: `Mapping`\[`str`,
-  [AudioSelectorGroupTypeDef](./type_defs.md#audioselectorgrouptypedef)\]
-- `AudioSelectors`: `Mapping`\[`str`,
-  [AudioSelectorTypeDef](./type_defs.md#audioselectortypedef)\]
-- `CaptionSelectors`: `Mapping`\[`str`,
-  [CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef)\]
-- `Crop`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
-- `DeblockFilter`:
-  [InputDeblockFilterType](./literals.md#inputdeblockfiltertype)
-- `DenoiseFilter`:
-  [InputDenoiseFilterType](./literals.md#inputdenoisefiltertype)
-- `DolbyVisionMetadataXml`: `str`
-- `FilterEnable`: [InputFilterEnableType](./literals.md#inputfilterenabletype)
-- `FilterStrength`: `int`
-- `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
-- `InputClippings`:
-  `Sequence`\[[InputClippingTypeDef](./type_defs.md#inputclippingtypedef)\]
-- `InputScanType`: [InputScanTypeType](./literals.md#inputscantypetype)
-- `Position`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
-- `ProgramNumber`: `int`
-- `PsiControl`: [InputPsiControlType](./literals.md#inputpsicontroltype)
-- `TimecodeSource`:
-  [InputTimecodeSourceType](./literals.md#inputtimecodesourcetype)
-- `TimecodeStart`: `str`
-- `VideoSelector`: [VideoSelectorTypeDef](./type_defs.md#videoselectortypedef)
-
-<a id="inputtypedef"></a>
-
+1. See [:material-code-braces: AudioSelectorGroupTypeDef](./type_defs.md#audioselectorgrouptypedef) 
+2. See [:material-code-braces: AudioSelectorTypeDef](./type_defs.md#audioselectortypedef) 
+3. See [:material-code-braces: CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef) 
+4. See [:material-code-braces: RectangleTypeDef](./type_defs.md#rectangletypedef) 
+5. See [:material-code-brackets: InputDeblockFilterType](./literals.md#inputdeblockfiltertype) 
+6. See [:material-code-brackets: InputDenoiseFilterType](./literals.md#inputdenoisefiltertype) 
+7. See [:material-code-brackets: InputFilterEnableType](./literals.md#inputfilterenabletype) 
+8. See [:material-code-braces: ImageInserterTypeDef](./type_defs.md#imageinsertertypedef) 
+9. See [:material-code-braces: InputClippingTypeDef](./type_defs.md#inputclippingtypedef) 
+10. See [:material-code-brackets: InputScanTypeType](./literals.md#inputscantypetype) 
+11. See [:material-code-braces: RectangleTypeDef](./type_defs.md#rectangletypedef) 
+12. See [:material-code-brackets: InputPsiControlType](./literals.md#inputpsicontroltype) 
+13. See [:material-code-brackets: InputTimecodeSourceType](./literals.md#inputtimecodesourcetype) 
+14. See [:material-code-braces: VideoSelectorTypeDef](./type_defs.md#videoselectortypedef) 
 ## InputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import InputTypeDef
+
+def get_value() -> InputTypeDef:
+    return {
+        "AudioSelectorGroups": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputTypeDef(TypedDict):
+    AudioSelectorGroups: NotRequired[Mapping[str, AudioSelectorGroupTypeDef]],  # (1)
+    AudioSelectors: NotRequired[Mapping[str, AudioSelectorTypeDef]],  # (2)
+    CaptionSelectors: NotRequired[Mapping[str, CaptionSelectorTypeDef]],  # (3)
+    Crop: NotRequired[RectangleTypeDef],  # (4)
+    DeblockFilter: NotRequired[InputDeblockFilterType],  # (5)
+    DecryptionSettings: NotRequired[InputDecryptionSettingsTypeDef],  # (6)
+    DenoiseFilter: NotRequired[InputDenoiseFilterType],  # (7)
+    DolbyVisionMetadataXml: NotRequired[str],
+    FileInput: NotRequired[str],
+    FilterEnable: NotRequired[InputFilterEnableType],  # (8)
+    FilterStrength: NotRequired[int],
+    ImageInserter: NotRequired[ImageInserterTypeDef],  # (9)
+    InputClippings: NotRequired[Sequence[InputClippingTypeDef]],  # (10)
+    InputScanType: NotRequired[InputScanTypeType],  # (11)
+    Position: NotRequired[RectangleTypeDef],  # (4)
+    ProgramNumber: NotRequired[int],
+    PsiControl: NotRequired[InputPsiControlType],  # (13)
+    SupplementalImps: NotRequired[Sequence[str]],
+    TimecodeSource: NotRequired[InputTimecodeSourceType],  # (14)
+    TimecodeStart: NotRequired[str],
+    VideoSelector: NotRequired[VideoSelectorTypeDef],  # (15)
+```
 
-- `AudioSelectorGroups`: `Mapping`\[`str`,
-  [AudioSelectorGroupTypeDef](./type_defs.md#audioselectorgrouptypedef)\]
-- `AudioSelectors`: `Mapping`\[`str`,
-  [AudioSelectorTypeDef](./type_defs.md#audioselectortypedef)\]
-- `CaptionSelectors`: `Mapping`\[`str`,
-  [CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef)\]
-- `Crop`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
-- `DeblockFilter`:
-  [InputDeblockFilterType](./literals.md#inputdeblockfiltertype)
-- `DecryptionSettings`:
-  [InputDecryptionSettingsTypeDef](./type_defs.md#inputdecryptionsettingstypedef)
-- `DenoiseFilter`:
-  [InputDenoiseFilterType](./literals.md#inputdenoisefiltertype)
-- `DolbyVisionMetadataXml`: `str`
-- `FileInput`: `str`
-- `FilterEnable`: [InputFilterEnableType](./literals.md#inputfilterenabletype)
-- `FilterStrength`: `int`
-- `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
-- `InputClippings`:
-  `Sequence`\[[InputClippingTypeDef](./type_defs.md#inputclippingtypedef)\]
-- `InputScanType`: [InputScanTypeType](./literals.md#inputscantypetype)
-- `Position`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
-- `ProgramNumber`: `int`
-- `PsiControl`: [InputPsiControlType](./literals.md#inputpsicontroltype)
-- `SupplementalImps`: `Sequence`\[`str`\]
-- `TimecodeSource`:
-  [InputTimecodeSourceType](./literals.md#inputtimecodesourcetype)
-- `TimecodeStart`: `str`
-- `VideoSelector`: [VideoSelectorTypeDef](./type_defs.md#videoselectortypedef)
-
-<a id="insertableimagetypedef"></a>
-
+1. See [:material-code-braces: AudioSelectorGroupTypeDef](./type_defs.md#audioselectorgrouptypedef) 
+2. See [:material-code-braces: AudioSelectorTypeDef](./type_defs.md#audioselectortypedef) 
+3. See [:material-code-braces: CaptionSelectorTypeDef](./type_defs.md#captionselectortypedef) 
+4. See [:material-code-braces: RectangleTypeDef](./type_defs.md#rectangletypedef) 
+5. See [:material-code-brackets: InputDeblockFilterType](./literals.md#inputdeblockfiltertype) 
+6. See [:material-code-braces: InputDecryptionSettingsTypeDef](./type_defs.md#inputdecryptionsettingstypedef) 
+7. See [:material-code-brackets: InputDenoiseFilterType](./literals.md#inputdenoisefiltertype) 
+8. See [:material-code-brackets: InputFilterEnableType](./literals.md#inputfilterenabletype) 
+9. See [:material-code-braces: ImageInserterTypeDef](./type_defs.md#imageinsertertypedef) 
+10. See [:material-code-braces: InputClippingTypeDef](./type_defs.md#inputclippingtypedef) 
+11. See [:material-code-brackets: InputScanTypeType](./literals.md#inputscantypetype) 
+12. See [:material-code-braces: RectangleTypeDef](./type_defs.md#rectangletypedef) 
+13. See [:material-code-brackets: InputPsiControlType](./literals.md#inputpsicontroltype) 
+14. See [:material-code-brackets: InputTimecodeSourceType](./literals.md#inputtimecodesourcetype) 
+15. See [:material-code-braces: VideoSelectorTypeDef](./type_defs.md#videoselectortypedef) 
 ## InsertableImageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import InsertableImageTypeDef
+
+def get_value() -> InsertableImageTypeDef:
+    return {
+        "Duration": ...,
+    }
 ```
 
-Optional fields:
-
-- `Duration`: `int`
-- `FadeIn`: `int`
-- `FadeOut`: `int`
-- `Height`: `int`
-- `ImageInserterInput`: `str`
-- `ImageX`: `int`
-- `ImageY`: `int`
-- `Layer`: `int`
-- `Opacity`: `int`
-- `StartTime`: `str`
-- `Width`: `int`
-
-<a id="jobmessagestypedef"></a>
+```python title="Definition"
+class InsertableImageTypeDef(TypedDict):
+    Duration: NotRequired[int],
+    FadeIn: NotRequired[int],
+    FadeOut: NotRequired[int],
+    Height: NotRequired[int],
+    ImageInserterInput: NotRequired[str],
+    ImageX: NotRequired[int],
+    ImageY: NotRequired[int],
+    Layer: NotRequired[int],
+    Opacity: NotRequired[int],
+    StartTime: NotRequired[str],
+    Width: NotRequired[int],
+```
 
 ## JobMessagesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import JobMessagesTypeDef
+
+def get_value() -> JobMessagesTypeDef:
+    return {
+        "Info": ...,
+    }
 ```
 
-Optional fields:
-
-- `Info`: `List`\[`str`\]
-- `Warning`: `List`\[`str`\]
-
-<a id="jobsettingstypedef"></a>
+```python title="Definition"
+class JobMessagesTypeDef(TypedDict):
+    Info: NotRequired[List[str]],
+    Warning: NotRequired[List[str]],
+```
 
 ## JobSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import JobSettingsTypeDef
+
+def get_value() -> JobSettingsTypeDef:
+    return {
+        "AdAvailOffset": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobSettingsTypeDef(TypedDict):
+    AdAvailOffset: NotRequired[int],
+    AvailBlanking: NotRequired[AvailBlankingTypeDef],  # (1)
+    Esam: NotRequired[EsamSettingsTypeDef],  # (2)
+    ExtendedDataServices: NotRequired[ExtendedDataServicesTypeDef],  # (3)
+    Inputs: NotRequired[Sequence[InputTypeDef]],  # (4)
+    KantarWatermark: NotRequired[KantarWatermarkSettingsTypeDef],  # (5)
+    MotionImageInserter: NotRequired[MotionImageInserterTypeDef],  # (6)
+    NielsenConfiguration: NotRequired[NielsenConfigurationTypeDef],  # (7)
+    NielsenNonLinearWatermark: NotRequired[NielsenNonLinearWatermarkSettingsTypeDef],  # (8)
+    OutputGroups: NotRequired[Sequence[OutputGroupTypeDef]],  # (9)
+    TimecodeConfig: NotRequired[TimecodeConfigTypeDef],  # (10)
+    TimedMetadataInsertion: NotRequired[TimedMetadataInsertionTypeDef],  # (11)
+```
 
-- `AdAvailOffset`: `int`
-- `AvailBlanking`: [AvailBlankingTypeDef](./type_defs.md#availblankingtypedef)
-- `Esam`: [EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef)
-- `ExtendedDataServices`:
-  [ExtendedDataServicesTypeDef](./type_defs.md#extendeddataservicestypedef)
-- `Inputs`: `Sequence`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
-- `KantarWatermark`:
-  [KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef)
-- `MotionImageInserter`:
-  [MotionImageInserterTypeDef](./type_defs.md#motionimageinsertertypedef)
-- `NielsenConfiguration`:
-  [NielsenConfigurationTypeDef](./type_defs.md#nielsenconfigurationtypedef)
-- `NielsenNonLinearWatermark`:
-  [NielsenNonLinearWatermarkSettingsTypeDef](./type_defs.md#nielsennonlinearwatermarksettingstypedef)
-- `OutputGroups`:
-  `Sequence`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
-- `TimecodeConfig`:
-  [TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef)
-- `TimedMetadataInsertion`:
-  [TimedMetadataInsertionTypeDef](./type_defs.md#timedmetadatainsertiontypedef)
-
-<a id="jobtemplatesettingstypedef"></a>
-
+1. See [:material-code-braces: AvailBlankingTypeDef](./type_defs.md#availblankingtypedef) 
+2. See [:material-code-braces: EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef) 
+3. See [:material-code-braces: ExtendedDataServicesTypeDef](./type_defs.md#extendeddataservicestypedef) 
+4. See [:material-code-braces: InputTypeDef](./type_defs.md#inputtypedef) 
+5. See [:material-code-braces: KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef) 
+6. See [:material-code-braces: MotionImageInserterTypeDef](./type_defs.md#motionimageinsertertypedef) 
+7. See [:material-code-braces: NielsenConfigurationTypeDef](./type_defs.md#nielsenconfigurationtypedef) 
+8. See [:material-code-braces: NielsenNonLinearWatermarkSettingsTypeDef](./type_defs.md#nielsennonlinearwatermarksettingstypedef) 
+9. See [:material-code-braces: OutputGroupTypeDef](./type_defs.md#outputgrouptypedef) 
+10. See [:material-code-braces: TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef) 
+11. See [:material-code-braces: TimedMetadataInsertionTypeDef](./type_defs.md#timedmetadatainsertiontypedef) 
 ## JobTemplateSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import JobTemplateSettingsTypeDef
+
+def get_value() -> JobTemplateSettingsTypeDef:
+    return {
+        "AdAvailOffset": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobTemplateSettingsTypeDef(TypedDict):
+    AdAvailOffset: NotRequired[int],
+    AvailBlanking: NotRequired[AvailBlankingTypeDef],  # (1)
+    Esam: NotRequired[EsamSettingsTypeDef],  # (2)
+    ExtendedDataServices: NotRequired[ExtendedDataServicesTypeDef],  # (3)
+    Inputs: NotRequired[Sequence[InputTemplateTypeDef]],  # (4)
+    KantarWatermark: NotRequired[KantarWatermarkSettingsTypeDef],  # (5)
+    MotionImageInserter: NotRequired[MotionImageInserterTypeDef],  # (6)
+    NielsenConfiguration: NotRequired[NielsenConfigurationTypeDef],  # (7)
+    NielsenNonLinearWatermark: NotRequired[NielsenNonLinearWatermarkSettingsTypeDef],  # (8)
+    OutputGroups: NotRequired[Sequence[OutputGroupTypeDef]],  # (9)
+    TimecodeConfig: NotRequired[TimecodeConfigTypeDef],  # (10)
+    TimedMetadataInsertion: NotRequired[TimedMetadataInsertionTypeDef],  # (11)
+```
 
-- `AdAvailOffset`: `int`
-- `AvailBlanking`: [AvailBlankingTypeDef](./type_defs.md#availblankingtypedef)
-- `Esam`: [EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef)
-- `ExtendedDataServices`:
-  [ExtendedDataServicesTypeDef](./type_defs.md#extendeddataservicestypedef)
-- `Inputs`:
-  `Sequence`\[[InputTemplateTypeDef](./type_defs.md#inputtemplatetypedef)\]
-- `KantarWatermark`:
-  [KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef)
-- `MotionImageInserter`:
-  [MotionImageInserterTypeDef](./type_defs.md#motionimageinsertertypedef)
-- `NielsenConfiguration`:
-  [NielsenConfigurationTypeDef](./type_defs.md#nielsenconfigurationtypedef)
-- `NielsenNonLinearWatermark`:
-  [NielsenNonLinearWatermarkSettingsTypeDef](./type_defs.md#nielsennonlinearwatermarksettingstypedef)
-- `OutputGroups`:
-  `Sequence`\[[OutputGroupTypeDef](./type_defs.md#outputgrouptypedef)\]
-- `TimecodeConfig`:
-  [TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef)
-- `TimedMetadataInsertion`:
-  [TimedMetadataInsertionTypeDef](./type_defs.md#timedmetadatainsertiontypedef)
-
-<a id="jobtemplatetypedef"></a>
-
+1. See [:material-code-braces: AvailBlankingTypeDef](./type_defs.md#availblankingtypedef) 
+2. See [:material-code-braces: EsamSettingsTypeDef](./type_defs.md#esamsettingstypedef) 
+3. See [:material-code-braces: ExtendedDataServicesTypeDef](./type_defs.md#extendeddataservicestypedef) 
+4. See [:material-code-braces: InputTemplateTypeDef](./type_defs.md#inputtemplatetypedef) 
+5. See [:material-code-braces: KantarWatermarkSettingsTypeDef](./type_defs.md#kantarwatermarksettingstypedef) 
+6. See [:material-code-braces: MotionImageInserterTypeDef](./type_defs.md#motionimageinsertertypedef) 
+7. See [:material-code-braces: NielsenConfigurationTypeDef](./type_defs.md#nielsenconfigurationtypedef) 
+8. See [:material-code-braces: NielsenNonLinearWatermarkSettingsTypeDef](./type_defs.md#nielsennonlinearwatermarksettingstypedef) 
+9. See [:material-code-braces: OutputGroupTypeDef](./type_defs.md#outputgrouptypedef) 
+10. See [:material-code-braces: TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef) 
+11. See [:material-code-braces: TimedMetadataInsertionTypeDef](./type_defs.md#timedmetadatainsertiontypedef) 
 ## JobTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import JobTemplateTypeDef
+
+def get_value() -> JobTemplateTypeDef:
+    return {
+        "Name": ...,
+        "Settings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobTemplateTypeDef(TypedDict):
+    Name: str,
+    Settings: JobTemplateSettingsTypeDef,  # (3)
+    AccelerationSettings: NotRequired[AccelerationSettingsTypeDef],  # (1)
+    Arn: NotRequired[str],
+    Category: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    Description: NotRequired[str],
+    HopDestinations: NotRequired[List[HopDestinationTypeDef]],  # (2)
+    LastUpdated: NotRequired[datetime],
+    Priority: NotRequired[int],
+    Queue: NotRequired[str],
+    StatusUpdateInterval: NotRequired[StatusUpdateIntervalType],  # (4)
+    Type: NotRequired[TypeType],  # (5)
+```
 
-- `Name`: `str`
-- `Settings`:
-  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
-
-Optional fields:
-
-- `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
-- `Arn`: `str`
-- `Category`: `str`
-- `CreatedAt`: `datetime`
-- `Description`: `str`
-- `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
-- `LastUpdated`: `datetime`
-- `Priority`: `int`
-- `Queue`: `str`
-- `StatusUpdateInterval`:
-  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Type`: [TypeType](./literals.md#typetype)
-
-<a id="jobtypedef"></a>
-
+1. See [:material-code-braces: AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef) 
+2. See [:material-code-braces: HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef) 
+3. See [:material-code-braces: JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef) 
+4. See [:material-code-brackets: StatusUpdateIntervalType](./literals.md#statusupdateintervaltype) 
+5. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## JobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import JobTypeDef
+
+def get_value() -> JobTypeDef:
+    return {
+        "Role": ...,
+        "Settings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobTypeDef(TypedDict):
+    Role: str,
+    Settings: JobSettingsTypeDef,  # (9)
+    AccelerationSettings: NotRequired[AccelerationSettingsTypeDef],  # (1)
+    AccelerationStatus: NotRequired[AccelerationStatusType],  # (2)
+    Arn: NotRequired[str],
+    BillingTagsSource: NotRequired[BillingTagsSourceType],  # (3)
+    CreatedAt: NotRequired[datetime],
+    CurrentPhase: NotRequired[JobPhaseType],  # (4)
+    ErrorCode: NotRequired[int],
+    ErrorMessage: NotRequired[str],
+    HopDestinations: NotRequired[List[HopDestinationTypeDef]],  # (5)
+    Id: NotRequired[str],
+    JobPercentComplete: NotRequired[int],
+    JobTemplate: NotRequired[str],
+    Messages: NotRequired[JobMessagesTypeDef],  # (6)
+    OutputGroupDetails: NotRequired[List[OutputGroupDetailTypeDef]],  # (7)
+    Priority: NotRequired[int],
+    Queue: NotRequired[str],
+    QueueTransitions: NotRequired[List[QueueTransitionTypeDef]],  # (8)
+    RetryCount: NotRequired[int],
+    SimulateReservedQueue: NotRequired[SimulateReservedQueueType],  # (10)
+    Status: NotRequired[JobStatusType],  # (11)
+    StatusUpdateInterval: NotRequired[StatusUpdateIntervalType],  # (12)
+    Timing: NotRequired[TimingTypeDef],  # (13)
+    UserMetadata: NotRequired[Dict[str, str]],
+```
 
-- `Role`: `str`
-- `Settings`: [JobSettingsTypeDef](./type_defs.md#jobsettingstypedef)
-
-Optional fields:
-
-- `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
-- `AccelerationStatus`:
-  [AccelerationStatusType](./literals.md#accelerationstatustype)
-- `Arn`: `str`
-- `BillingTagsSource`:
-  [BillingTagsSourceType](./literals.md#billingtagssourcetype)
-- `CreatedAt`: `datetime`
-- `CurrentPhase`: [JobPhaseType](./literals.md#jobphasetype)
-- `ErrorCode`: `int`
-- `ErrorMessage`: `str`
-- `HopDestinations`:
-  `List`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
-- `Id`: `str`
-- `JobPercentComplete`: `int`
-- `JobTemplate`: `str`
-- `Messages`: [JobMessagesTypeDef](./type_defs.md#jobmessagestypedef)
-- `OutputGroupDetails`:
-  `List`\[[OutputGroupDetailTypeDef](./type_defs.md#outputgroupdetailtypedef)\]
-- `Priority`: `int`
-- `Queue`: `str`
-- `QueueTransitions`:
-  `List`\[[QueueTransitionTypeDef](./type_defs.md#queuetransitiontypedef)\]
-- `RetryCount`: `int`
-- `SimulateReservedQueue`:
-  [SimulateReservedQueueType](./literals.md#simulatereservedqueuetype)
-- `Status`: [JobStatusType](./literals.md#jobstatustype)
-- `StatusUpdateInterval`:
-  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-- `Timing`: [TimingTypeDef](./type_defs.md#timingtypedef)
-- `UserMetadata`: `Dict`\[`str`, `str`\]
-
-<a id="kantarwatermarksettingstypedef"></a>
-
+1. See [:material-code-braces: AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef) 
+2. See [:material-code-brackets: AccelerationStatusType](./literals.md#accelerationstatustype) 
+3. See [:material-code-brackets: BillingTagsSourceType](./literals.md#billingtagssourcetype) 
+4. See [:material-code-brackets: JobPhaseType](./literals.md#jobphasetype) 
+5. See [:material-code-braces: HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef) 
+6. See [:material-code-braces: JobMessagesTypeDef](./type_defs.md#jobmessagestypedef) 
+7. See [:material-code-braces: OutputGroupDetailTypeDef](./type_defs.md#outputgroupdetailtypedef) 
+8. See [:material-code-braces: QueueTransitionTypeDef](./type_defs.md#queuetransitiontypedef) 
+9. See [:material-code-braces: JobSettingsTypeDef](./type_defs.md#jobsettingstypedef) 
+10. See [:material-code-brackets: SimulateReservedQueueType](./literals.md#simulatereservedqueuetype) 
+11. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+12. See [:material-code-brackets: StatusUpdateIntervalType](./literals.md#statusupdateintervaltype) 
+13. See [:material-code-braces: TimingTypeDef](./type_defs.md#timingtypedef) 
 ## KantarWatermarkSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import KantarWatermarkSettingsTypeDef
+
+def get_value() -> KantarWatermarkSettingsTypeDef:
+    return {
+        "ChannelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KantarWatermarkSettingsTypeDef(TypedDict):
+    ChannelName: NotRequired[str],
+    ContentReference: NotRequired[str],
+    CredentialsSecretName: NotRequired[str],
+    FileOffset: NotRequired[float],
+    KantarLicenseId: NotRequired[int],
+    KantarServerUrl: NotRequired[str],
+    LogDestination: NotRequired[str],
+    Metadata3: NotRequired[str],
+    Metadata4: NotRequired[str],
+    Metadata5: NotRequired[str],
+    Metadata6: NotRequired[str],
+    Metadata7: NotRequired[str],
+    Metadata8: NotRequired[str],
+```
 
-- `ChannelName`: `str`
-- `ContentReference`: `str`
-- `CredentialsSecretName`: `str`
-- `FileOffset`: `float`
-- `KantarLicenseId`: `int`
-- `KantarServerUrl`: `str`
-- `LogDestination`: `str`
-- `Metadata3`: `str`
-- `Metadata4`: `str`
-- `Metadata5`: `str`
-- `Metadata6`: `str`
-- `Metadata7`: `str`
-- `Metadata8`: `str`
+## ListJobTemplatesRequestListJobTemplatesPaginateTypeDef
 
-<a id="listjobtemplatesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesRequestListJobTemplatesPaginateTypeDef
 
+def get_value() -> ListJobTemplatesRequestListJobTemplatesPaginateTypeDef:
+    return {
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobTemplatesRequestListJobTemplatesPaginateTypeDef(TypedDict):
+    Category: NotRequired[str],
+    ListBy: NotRequired[JobTemplateListByType],  # (1)
+    Order: NotRequired[OrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: JobTemplateListByType](./literals.md#jobtemplatelistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobTemplatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesRequestRequestTypeDef
+
+def get_value() -> ListJobTemplatesRequestRequestTypeDef:
+    return {
+        "Category": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListJobTemplatesRequestRequestTypeDef(TypedDict):
+    Category: NotRequired[str],
+    ListBy: NotRequired[JobTemplateListByType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Order: NotRequired[OrderType],  # (2)
+```
 
-- `Category`: `str`
-- `ListBy`: [JobTemplateListByType](./literals.md#jobtemplatelistbytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Order`: [OrderType](./literals.md#ordertype)
-
-<a id="listjobtemplatesresponsetypedef"></a>
-
+1. See [:material-code-brackets: JobTemplateListByType](./literals.md#jobtemplatelistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
 ## ListJobTemplatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListJobTemplatesResponseTypeDef
+
+def get_value() -> ListJobTemplatesResponseTypeDef:
+    return {
+        "JobTemplates": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobTemplatesResponseTypeDef(TypedDict):
+    JobTemplates: List[JobTemplateTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobTemplates`:
-  `List`\[[JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListJobsRequestListJobsPaginateTypeDef
 
-<a id="listjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import ListJobsRequestListJobsPaginateTypeDef
 
+def get_value() -> ListJobsRequestListJobsPaginateTypeDef:
+    return {
+        "Order": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsRequestListJobsPaginateTypeDef(TypedDict):
+    Order: NotRequired[OrderType],  # (1)
+    Queue: NotRequired[str],
+    Status: NotRequired[JobStatusType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListJobsRequestRequestTypeDef
+
+def get_value() -> ListJobsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListJobsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Order: NotRequired[OrderType],  # (1)
+    Queue: NotRequired[str],
+    Status: NotRequired[JobStatusType],  # (2)
+```
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Order`: [OrderType](./literals.md#ordertype)
-- `Queue`: `str`
-- `Status`: [JobStatusType](./literals.md#jobstatustype)
-
-<a id="listjobsresponsetypedef"></a>
-
+1. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 ## ListJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListJobsResponseTypeDef
+
+def get_value() -> ListJobsResponseTypeDef:
+    return {
+        "Jobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobsResponseTypeDef(TypedDict):
+    Jobs: List[JobTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPresetsRequestListPresetsPaginateTypeDef
 
-<a id="listpresetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import ListPresetsRequestListPresetsPaginateTypeDef
 
+def get_value() -> ListPresetsRequestListPresetsPaginateTypeDef:
+    return {
+        "Category": ...,
+    }
+```
+
+```python title="Definition"
+class ListPresetsRequestListPresetsPaginateTypeDef(TypedDict):
+    Category: NotRequired[str],
+    ListBy: NotRequired[PresetListByType],  # (1)
+    Order: NotRequired[OrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: PresetListByType](./literals.md#presetlistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPresetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListPresetsRequestRequestTypeDef
+
+def get_value() -> ListPresetsRequestRequestTypeDef:
+    return {
+        "Category": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListPresetsRequestRequestTypeDef(TypedDict):
+    Category: NotRequired[str],
+    ListBy: NotRequired[PresetListByType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Order: NotRequired[OrderType],  # (2)
+```
 
-- `Category`: `str`
-- `ListBy`: [PresetListByType](./literals.md#presetlistbytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Order`: [OrderType](./literals.md#ordertype)
-
-<a id="listpresetsresponsetypedef"></a>
-
+1. See [:material-code-brackets: PresetListByType](./literals.md#presetlistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
 ## ListPresetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListPresetsResponseTypeDef
+
+def get_value() -> ListPresetsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Presets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPresetsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Presets: List[PresetTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Presets`: `List`\[[PresetTypeDef](./type_defs.md#presettypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PresetTypeDef](./type_defs.md#presettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQueuesRequestListQueuesPaginateTypeDef
 
-<a id="listqueuesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediaconvert.type_defs import ListQueuesRequestListQueuesPaginateTypeDef
 
+def get_value() -> ListQueuesRequestListQueuesPaginateTypeDef:
+    return {
+        "ListBy": ...,
+    }
+```
+
+```python title="Definition"
+class ListQueuesRequestListQueuesPaginateTypeDef(TypedDict):
+    ListBy: NotRequired[QueueListByType],  # (1)
+    Order: NotRequired[OrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: QueueListByType](./literals.md#queuelistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListQueuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListQueuesRequestRequestTypeDef
+
+def get_value() -> ListQueuesRequestRequestTypeDef:
+    return {
+        "ListBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListQueuesRequestRequestTypeDef(TypedDict):
+    ListBy: NotRequired[QueueListByType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Order: NotRequired[OrderType],  # (2)
+```
 
-- `ListBy`: [QueueListByType](./literals.md#queuelistbytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Order`: [OrderType](./literals.md#ordertype)
-
-<a id="listqueuesresponsetypedef"></a>
-
+1. See [:material-code-brackets: QueueListByType](./literals.md#queuelistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
 ## ListQueuesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListQueuesResponseTypeDef
+
+def get_value() -> ListQueuesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Queues": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQueuesResponseTypeDef(TypedDict):
+    NextToken: str,
+    Queues: List[QueueTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Queues`: `List`\[[QueueTypeDef](./type_defs.md#queuetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QueueTypeDef](./type_defs.md#queuetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "ResourceTags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    ResourceTags: ResourceTagsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceTags`: [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="m2tsscte35esamtypedef"></a>
-
+1. See [:material-code-braces: ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## M2tsScte35EsamTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import M2tsScte35EsamTypeDef
+
+def get_value() -> M2tsScte35EsamTypeDef:
+    return {
+        "Scte35EsamPid": ...,
+    }
 ```
 
-Optional fields:
-
-- `Scte35EsamPid`: `int`
-
-<a id="m2tssettingstypedef"></a>
+```python title="Definition"
+class M2tsScte35EsamTypeDef(TypedDict):
+    Scte35EsamPid: NotRequired[int],
+```
 
 ## M2tsSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import M2tsSettingsTypeDef
+
+def get_value() -> M2tsSettingsTypeDef:
+    return {
+        "AudioBufferModel": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class M2tsSettingsTypeDef(TypedDict):
+    AudioBufferModel: NotRequired[M2tsAudioBufferModelType],  # (1)
+    AudioDuration: NotRequired[M2tsAudioDurationType],  # (2)
+    AudioFramesPerPes: NotRequired[int],
+    AudioPids: NotRequired[Sequence[int]],
+    Bitrate: NotRequired[int],
+    BufferModel: NotRequired[M2tsBufferModelType],  # (3)
+    DataPTSControl: NotRequired[M2tsDataPtsControlType],  # (4)
+    DvbNitSettings: NotRequired[DvbNitSettingsTypeDef],  # (5)
+    DvbSdtSettings: NotRequired[DvbSdtSettingsTypeDef],  # (6)
+    DvbSubPids: NotRequired[Sequence[int]],
+    DvbTdtSettings: NotRequired[DvbTdtSettingsTypeDef],  # (7)
+    DvbTeletextPid: NotRequired[int],
+    EbpAudioInterval: NotRequired[M2tsEbpAudioIntervalType],  # (8)
+    EbpPlacement: NotRequired[M2tsEbpPlacementType],  # (9)
+    EsRateInPes: NotRequired[M2tsEsRateInPesType],  # (10)
+    ForceTsVideoEbpOrder: NotRequired[M2tsForceTsVideoEbpOrderType],  # (11)
+    FragmentTime: NotRequired[float],
+    MaxPcrInterval: NotRequired[int],
+    MinEbpInterval: NotRequired[int],
+    NielsenId3: NotRequired[M2tsNielsenId3Type],  # (12)
+    NullPacketBitrate: NotRequired[float],
+    PatInterval: NotRequired[int],
+    PcrControl: NotRequired[M2tsPcrControlType],  # (13)
+    PcrPid: NotRequired[int],
+    PmtInterval: NotRequired[int],
+    PmtPid: NotRequired[int],
+    PrivateMetadataPid: NotRequired[int],
+    ProgramNumber: NotRequired[int],
+    RateMode: NotRequired[M2tsRateModeType],  # (14)
+    Scte35Esam: NotRequired[M2tsScte35EsamTypeDef],  # (15)
+    Scte35Pid: NotRequired[int],
+    Scte35Source: NotRequired[M2tsScte35SourceType],  # (16)
+    SegmentationMarkers: NotRequired[M2tsSegmentationMarkersType],  # (17)
+    SegmentationStyle: NotRequired[M2tsSegmentationStyleType],  # (18)
+    SegmentationTime: NotRequired[float],
+    TimedMetadataPid: NotRequired[int],
+    TransportStreamId: NotRequired[int],
+    VideoPid: NotRequired[int],
+```
 
-- `AudioBufferModel`:
-  [M2tsAudioBufferModelType](./literals.md#m2tsaudiobuffermodeltype)
-- `AudioDuration`: [M2tsAudioDurationType](./literals.md#m2tsaudiodurationtype)
-- `AudioFramesPerPes`: `int`
-- `AudioPids`: `Sequence`\[`int`\]
-- `Bitrate`: `int`
-- `BufferModel`: [M2tsBufferModelType](./literals.md#m2tsbuffermodeltype)
-- `DataPTSControl`:
-  [M2tsDataPtsControlType](./literals.md#m2tsdataptscontroltype)
-- `DvbNitSettings`:
-  [DvbNitSettingsTypeDef](./type_defs.md#dvbnitsettingstypedef)
-- `DvbSdtSettings`:
-  [DvbSdtSettingsTypeDef](./type_defs.md#dvbsdtsettingstypedef)
-- `DvbSubPids`: `Sequence`\[`int`\]
-- `DvbTdtSettings`:
-  [DvbTdtSettingsTypeDef](./type_defs.md#dvbtdtsettingstypedef)
-- `DvbTeletextPid`: `int`
-- `EbpAudioInterval`:
-  [M2tsEbpAudioIntervalType](./literals.md#m2tsebpaudiointervaltype)
-- `EbpPlacement`: [M2tsEbpPlacementType](./literals.md#m2tsebpplacementtype)
-- `EsRateInPes`: [M2tsEsRateInPesType](./literals.md#m2tsesrateinpestype)
-- `ForceTsVideoEbpOrder`:
-  [M2tsForceTsVideoEbpOrderType](./literals.md#m2tsforcetsvideoebpordertype)
-- `FragmentTime`: `float`
-- `MaxPcrInterval`: `int`
-- `MinEbpInterval`: `int`
-- `NielsenId3`: [M2tsNielsenId3Type](./literals.md#m2tsnielsenid3type)
-- `NullPacketBitrate`: `float`
-- `PatInterval`: `int`
-- `PcrControl`: [M2tsPcrControlType](./literals.md#m2tspcrcontroltype)
-- `PcrPid`: `int`
-- `PmtInterval`: `int`
-- `PmtPid`: `int`
-- `PrivateMetadataPid`: `int`
-- `ProgramNumber`: `int`
-- `RateMode`: [M2tsRateModeType](./literals.md#m2tsratemodetype)
-- `Scte35Esam`: [M2tsScte35EsamTypeDef](./type_defs.md#m2tsscte35esamtypedef)
-- `Scte35Pid`: `int`
-- `Scte35Source`: [M2tsScte35SourceType](./literals.md#m2tsscte35sourcetype)
-- `SegmentationMarkers`:
-  [M2tsSegmentationMarkersType](./literals.md#m2tssegmentationmarkerstype)
-- `SegmentationStyle`:
-  [M2tsSegmentationStyleType](./literals.md#m2tssegmentationstyletype)
-- `SegmentationTime`: `float`
-- `TimedMetadataPid`: `int`
-- `TransportStreamId`: `int`
-- `VideoPid`: `int`
-
-<a id="m3u8settingstypedef"></a>
-
+1. See [:material-code-brackets: M2tsAudioBufferModelType](./literals.md#m2tsaudiobuffermodeltype) 
+2. See [:material-code-brackets: M2tsAudioDurationType](./literals.md#m2tsaudiodurationtype) 
+3. See [:material-code-brackets: M2tsBufferModelType](./literals.md#m2tsbuffermodeltype) 
+4. See [:material-code-brackets: M2tsDataPtsControlType](./literals.md#m2tsdataptscontroltype) 
+5. See [:material-code-braces: DvbNitSettingsTypeDef](./type_defs.md#dvbnitsettingstypedef) 
+6. See [:material-code-braces: DvbSdtSettingsTypeDef](./type_defs.md#dvbsdtsettingstypedef) 
+7. See [:material-code-braces: DvbTdtSettingsTypeDef](./type_defs.md#dvbtdtsettingstypedef) 
+8. See [:material-code-brackets: M2tsEbpAudioIntervalType](./literals.md#m2tsebpaudiointervaltype) 
+9. See [:material-code-brackets: M2tsEbpPlacementType](./literals.md#m2tsebpplacementtype) 
+10. See [:material-code-brackets: M2tsEsRateInPesType](./literals.md#m2tsesrateinpestype) 
+11. See [:material-code-brackets: M2tsForceTsVideoEbpOrderType](./literals.md#m2tsforcetsvideoebpordertype) 
+12. See [:material-code-brackets: M2tsNielsenId3Type](./literals.md#m2tsnielsenid3type) 
+13. See [:material-code-brackets: M2tsPcrControlType](./literals.md#m2tspcrcontroltype) 
+14. See [:material-code-brackets: M2tsRateModeType](./literals.md#m2tsratemodetype) 
+15. See [:material-code-braces: M2tsScte35EsamTypeDef](./type_defs.md#m2tsscte35esamtypedef) 
+16. See [:material-code-brackets: M2tsScte35SourceType](./literals.md#m2tsscte35sourcetype) 
+17. See [:material-code-brackets: M2tsSegmentationMarkersType](./literals.md#m2tssegmentationmarkerstype) 
+18. See [:material-code-brackets: M2tsSegmentationStyleType](./literals.md#m2tssegmentationstyletype) 
 ## M3u8SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import M3u8SettingsTypeDef
+
+def get_value() -> M3u8SettingsTypeDef:
+    return {
+        "AudioDuration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class M3u8SettingsTypeDef(TypedDict):
+    AudioDuration: NotRequired[M3u8AudioDurationType],  # (1)
+    AudioFramesPerPes: NotRequired[int],
+    AudioPids: NotRequired[Sequence[int]],
+    DataPTSControl: NotRequired[M3u8DataPtsControlType],  # (2)
+    MaxPcrInterval: NotRequired[int],
+    NielsenId3: NotRequired[M3u8NielsenId3Type],  # (3)
+    PatInterval: NotRequired[int],
+    PcrControl: NotRequired[M3u8PcrControlType],  # (4)
+    PcrPid: NotRequired[int],
+    PmtInterval: NotRequired[int],
+    PmtPid: NotRequired[int],
+    PrivateMetadataPid: NotRequired[int],
+    ProgramNumber: NotRequired[int],
+    Scte35Pid: NotRequired[int],
+    Scte35Source: NotRequired[M3u8Scte35SourceType],  # (5)
+    TimedMetadata: NotRequired[TimedMetadataType],  # (6)
+    TimedMetadataPid: NotRequired[int],
+    TransportStreamId: NotRequired[int],
+    VideoPid: NotRequired[int],
+```
 
-- `AudioDuration`: [M3u8AudioDurationType](./literals.md#m3u8audiodurationtype)
-- `AudioFramesPerPes`: `int`
-- `AudioPids`: `Sequence`\[`int`\]
-- `DataPTSControl`:
-  [M3u8DataPtsControlType](./literals.md#m3u8dataptscontroltype)
-- `MaxPcrInterval`: `int`
-- `NielsenId3`: [M3u8NielsenId3Type](./literals.md#m3u8nielsenid3type)
-- `PatInterval`: `int`
-- `PcrControl`: [M3u8PcrControlType](./literals.md#m3u8pcrcontroltype)
-- `PcrPid`: `int`
-- `PmtInterval`: `int`
-- `PmtPid`: `int`
-- `PrivateMetadataPid`: `int`
-- `ProgramNumber`: `int`
-- `Scte35Pid`: `int`
-- `Scte35Source`: [M3u8Scte35SourceType](./literals.md#m3u8scte35sourcetype)
-- `TimedMetadata`: [TimedMetadataType](./literals.md#timedmetadatatype)
-- `TimedMetadataPid`: `int`
-- `TransportStreamId`: `int`
-- `VideoPid`: `int`
-
-<a id="motionimageinsertertypedef"></a>
-
+1. See [:material-code-brackets: M3u8AudioDurationType](./literals.md#m3u8audiodurationtype) 
+2. See [:material-code-brackets: M3u8DataPtsControlType](./literals.md#m3u8dataptscontroltype) 
+3. See [:material-code-brackets: M3u8NielsenId3Type](./literals.md#m3u8nielsenid3type) 
+4. See [:material-code-brackets: M3u8PcrControlType](./literals.md#m3u8pcrcontroltype) 
+5. See [:material-code-brackets: M3u8Scte35SourceType](./literals.md#m3u8scte35sourcetype) 
+6. See [:material-code-brackets: TimedMetadataType](./literals.md#timedmetadatatype) 
 ## MotionImageInserterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MotionImageInserterTypeDef
+
+def get_value() -> MotionImageInserterTypeDef:
+    return {
+        "Framerate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MotionImageInserterTypeDef(TypedDict):
+    Framerate: NotRequired[MotionImageInsertionFramerateTypeDef],  # (1)
+    Input: NotRequired[str],
+    InsertionMode: NotRequired[MotionImageInsertionModeType],  # (2)
+    Offset: NotRequired[MotionImageInsertionOffsetTypeDef],  # (3)
+    Playback: NotRequired[MotionImagePlaybackType],  # (4)
+    StartTime: NotRequired[str],
+```
 
-- `Framerate`:
-  [MotionImageInsertionFramerateTypeDef](./type_defs.md#motionimageinsertionframeratetypedef)
-- `Input`: `str`
-- `InsertionMode`:
-  [MotionImageInsertionModeType](./literals.md#motionimageinsertionmodetype)
-- `Offset`:
-  [MotionImageInsertionOffsetTypeDef](./type_defs.md#motionimageinsertionoffsettypedef)
-- `Playback`: [MotionImagePlaybackType](./literals.md#motionimageplaybacktype)
-- `StartTime`: `str`
-
-<a id="motionimageinsertionframeratetypedef"></a>
-
+1. See [:material-code-braces: MotionImageInsertionFramerateTypeDef](./type_defs.md#motionimageinsertionframeratetypedef) 
+2. See [:material-code-brackets: MotionImageInsertionModeType](./literals.md#motionimageinsertionmodetype) 
+3. See [:material-code-braces: MotionImageInsertionOffsetTypeDef](./type_defs.md#motionimageinsertionoffsettypedef) 
+4. See [:material-code-brackets: MotionImagePlaybackType](./literals.md#motionimageplaybacktype) 
 ## MotionImageInsertionFramerateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MotionImageInsertionFramerateTypeDef
+
+def get_value() -> MotionImageInsertionFramerateTypeDef:
+    return {
+        "FramerateDenominator": ...,
+    }
 ```
 
-Optional fields:
-
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-
-<a id="motionimageinsertionoffsettypedef"></a>
+```python title="Definition"
+class MotionImageInsertionFramerateTypeDef(TypedDict):
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+```
 
 ## MotionImageInsertionOffsetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MotionImageInsertionOffsetTypeDef
+
+def get_value() -> MotionImageInsertionOffsetTypeDef:
+    return {
+        "ImageX": ...,
+    }
 ```
 
-Optional fields:
-
-- `ImageX`: `int`
-- `ImageY`: `int`
-
-<a id="movsettingstypedef"></a>
+```python title="Definition"
+class MotionImageInsertionOffsetTypeDef(TypedDict):
+    ImageX: NotRequired[int],
+    ImageY: NotRequired[int],
+```
 
 ## MovSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MovSettingsTypeDef
+
+def get_value() -> MovSettingsTypeDef:
+    return {
+        "ClapAtom": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MovSettingsTypeDef(TypedDict):
+    ClapAtom: NotRequired[MovClapAtomType],  # (1)
+    CslgAtom: NotRequired[MovCslgAtomType],  # (2)
+    Mpeg2FourCCControl: NotRequired[MovMpeg2FourCCControlType],  # (3)
+    PaddingControl: NotRequired[MovPaddingControlType],  # (4)
+    Reference: NotRequired[MovReferenceType],  # (5)
+```
 
-- `ClapAtom`: [MovClapAtomType](./literals.md#movclapatomtype)
-- `CslgAtom`: [MovCslgAtomType](./literals.md#movcslgatomtype)
-- `Mpeg2FourCCControl`:
-  [MovMpeg2FourCCControlType](./literals.md#movmpeg2fourcccontroltype)
-- `PaddingControl`:
-  [MovPaddingControlType](./literals.md#movpaddingcontroltype)
-- `Reference`: [MovReferenceType](./literals.md#movreferencetype)
-
-<a id="mp2settingstypedef"></a>
-
+1. See [:material-code-brackets: MovClapAtomType](./literals.md#movclapatomtype) 
+2. See [:material-code-brackets: MovCslgAtomType](./literals.md#movcslgatomtype) 
+3. See [:material-code-brackets: MovMpeg2FourCCControlType](./literals.md#movmpeg2fourcccontroltype) 
+4. See [:material-code-brackets: MovPaddingControlType](./literals.md#movpaddingcontroltype) 
+5. See [:material-code-brackets: MovReferenceType](./literals.md#movreferencetype) 
 ## Mp2SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Mp2SettingsTypeDef
+
+def get_value() -> Mp2SettingsTypeDef:
+    return {
+        "Bitrate": ...,
+    }
 ```
 
-Optional fields:
-
-- `Bitrate`: `int`
-- `Channels`: `int`
-- `SampleRate`: `int`
-
-<a id="mp3settingstypedef"></a>
+```python title="Definition"
+class Mp2SettingsTypeDef(TypedDict):
+    Bitrate: NotRequired[int],
+    Channels: NotRequired[int],
+    SampleRate: NotRequired[int],
+```
 
 ## Mp3SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Mp3SettingsTypeDef
+
+def get_value() -> Mp3SettingsTypeDef:
+    return {
+        "Bitrate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Mp3SettingsTypeDef(TypedDict):
+    Bitrate: NotRequired[int],
+    Channels: NotRequired[int],
+    RateControlMode: NotRequired[Mp3RateControlModeType],  # (1)
+    SampleRate: NotRequired[int],
+    VbrQuality: NotRequired[int],
+```
 
-- `Bitrate`: `int`
-- `Channels`: `int`
-- `RateControlMode`:
-  [Mp3RateControlModeType](./literals.md#mp3ratecontrolmodetype)
-- `SampleRate`: `int`
-- `VbrQuality`: `int`
-
-<a id="mp4settingstypedef"></a>
-
+1. See [:material-code-brackets: Mp3RateControlModeType](./literals.md#mp3ratecontrolmodetype) 
 ## Mp4SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Mp4SettingsTypeDef
+
+def get_value() -> Mp4SettingsTypeDef:
+    return {
+        "AudioDuration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Mp4SettingsTypeDef(TypedDict):
+    AudioDuration: NotRequired[CmfcAudioDurationType],  # (1)
+    CslgAtom: NotRequired[Mp4CslgAtomType],  # (2)
+    CttsVersion: NotRequired[int],
+    FreeSpaceBox: NotRequired[Mp4FreeSpaceBoxType],  # (3)
+    MoovPlacement: NotRequired[Mp4MoovPlacementType],  # (4)
+    Mp4MajorBrand: NotRequired[str],
+```
 
-- `AudioDuration`: [CmfcAudioDurationType](./literals.md#cmfcaudiodurationtype)
-- `CslgAtom`: [Mp4CslgAtomType](./literals.md#mp4cslgatomtype)
-- `CttsVersion`: `int`
-- `FreeSpaceBox`: [Mp4FreeSpaceBoxType](./literals.md#mp4freespaceboxtype)
-- `MoovPlacement`: [Mp4MoovPlacementType](./literals.md#mp4moovplacementtype)
-- `Mp4MajorBrand`: `str`
-
-<a id="mpdsettingstypedef"></a>
-
+1. See [:material-code-brackets: CmfcAudioDurationType](./literals.md#cmfcaudiodurationtype) 
+2. See [:material-code-brackets: Mp4CslgAtomType](./literals.md#mp4cslgatomtype) 
+3. See [:material-code-brackets: Mp4FreeSpaceBoxType](./literals.md#mp4freespaceboxtype) 
+4. See [:material-code-brackets: Mp4MoovPlacementType](./literals.md#mp4moovplacementtype) 
 ## MpdSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MpdSettingsTypeDef
+
+def get_value() -> MpdSettingsTypeDef:
+    return {
+        "AccessibilityCaptionHints": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MpdSettingsTypeDef(TypedDict):
+    AccessibilityCaptionHints: NotRequired[MpdAccessibilityCaptionHintsType],  # (1)
+    AudioDuration: NotRequired[MpdAudioDurationType],  # (2)
+    CaptionContainerType: NotRequired[MpdCaptionContainerTypeType],  # (3)
+    Scte35Esam: NotRequired[MpdScte35EsamType],  # (4)
+    Scte35Source: NotRequired[MpdScte35SourceType],  # (5)
+    TimedMetadata: NotRequired[MpdTimedMetadataType],  # (6)
+```
 
-- `AccessibilityCaptionHints`:
-  [MpdAccessibilityCaptionHintsType](./literals.md#mpdaccessibilitycaptionhintstype)
-- `AudioDuration`: [MpdAudioDurationType](./literals.md#mpdaudiodurationtype)
-- `CaptionContainerType`:
-  [MpdCaptionContainerTypeType](./literals.md#mpdcaptioncontainertypetype)
-- `Scte35Esam`: [MpdScte35EsamType](./literals.md#mpdscte35esamtype)
-- `Scte35Source`: [MpdScte35SourceType](./literals.md#mpdscte35sourcetype)
-- `TimedMetadata`: [MpdTimedMetadataType](./literals.md#mpdtimedmetadatatype)
-
-<a id="mpeg2settingstypedef"></a>
-
+1. See [:material-code-brackets: MpdAccessibilityCaptionHintsType](./literals.md#mpdaccessibilitycaptionhintstype) 
+2. See [:material-code-brackets: MpdAudioDurationType](./literals.md#mpdaudiodurationtype) 
+3. See [:material-code-brackets: MpdCaptionContainerTypeType](./literals.md#mpdcaptioncontainertypetype) 
+4. See [:material-code-brackets: MpdScte35EsamType](./literals.md#mpdscte35esamtype) 
+5. See [:material-code-brackets: MpdScte35SourceType](./literals.md#mpdscte35sourcetype) 
+6. See [:material-code-brackets: MpdTimedMetadataType](./literals.md#mpdtimedmetadatatype) 
 ## Mpeg2SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Mpeg2SettingsTypeDef
+
+def get_value() -> Mpeg2SettingsTypeDef:
+    return {
+        "AdaptiveQuantization": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Mpeg2SettingsTypeDef(TypedDict):
+    AdaptiveQuantization: NotRequired[Mpeg2AdaptiveQuantizationType],  # (1)
+    Bitrate: NotRequired[int],
+    CodecLevel: NotRequired[Mpeg2CodecLevelType],  # (2)
+    CodecProfile: NotRequired[Mpeg2CodecProfileType],  # (3)
+    DynamicSubGop: NotRequired[Mpeg2DynamicSubGopType],  # (4)
+    FramerateControl: NotRequired[Mpeg2FramerateControlType],  # (5)
+    FramerateConversionAlgorithm: NotRequired[Mpeg2FramerateConversionAlgorithmType],  # (6)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    GopClosedCadence: NotRequired[int],
+    GopSize: NotRequired[float],
+    GopSizeUnits: NotRequired[Mpeg2GopSizeUnitsType],  # (7)
+    HrdBufferInitialFillPercentage: NotRequired[int],
+    HrdBufferSize: NotRequired[int],
+    InterlaceMode: NotRequired[Mpeg2InterlaceModeType],  # (8)
+    IntraDcPrecision: NotRequired[Mpeg2IntraDcPrecisionType],  # (9)
+    MaxBitrate: NotRequired[int],
+    MinIInterval: NotRequired[int],
+    NumberBFramesBetweenReferenceFrames: NotRequired[int],
+    ParControl: NotRequired[Mpeg2ParControlType],  # (10)
+    ParDenominator: NotRequired[int],
+    ParNumerator: NotRequired[int],
+    QualityTuningLevel: NotRequired[Mpeg2QualityTuningLevelType],  # (11)
+    RateControlMode: NotRequired[Mpeg2RateControlModeType],  # (12)
+    ScanTypeConversionMode: NotRequired[Mpeg2ScanTypeConversionModeType],  # (13)
+    SceneChangeDetect: NotRequired[Mpeg2SceneChangeDetectType],  # (14)
+    SlowPal: NotRequired[Mpeg2SlowPalType],  # (15)
+    Softness: NotRequired[int],
+    SpatialAdaptiveQuantization: NotRequired[Mpeg2SpatialAdaptiveQuantizationType],  # (16)
+    Syntax: NotRequired[Mpeg2SyntaxType],  # (17)
+    Telecine: NotRequired[Mpeg2TelecineType],  # (18)
+    TemporalAdaptiveQuantization: NotRequired[Mpeg2TemporalAdaptiveQuantizationType],  # (19)
+```
 
-- `AdaptiveQuantization`:
-  [Mpeg2AdaptiveQuantizationType](./literals.md#mpeg2adaptivequantizationtype)
-- `Bitrate`: `int`
-- `CodecLevel`: [Mpeg2CodecLevelType](./literals.md#mpeg2codecleveltype)
-- `CodecProfile`: [Mpeg2CodecProfileType](./literals.md#mpeg2codecprofiletype)
-- `DynamicSubGop`:
-  [Mpeg2DynamicSubGopType](./literals.md#mpeg2dynamicsubgoptype)
-- `FramerateControl`:
-  [Mpeg2FramerateControlType](./literals.md#mpeg2frameratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [Mpeg2FramerateConversionAlgorithmType](./literals.md#mpeg2framerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `GopClosedCadence`: `int`
-- `GopSize`: `float`
-- `GopSizeUnits`: [Mpeg2GopSizeUnitsType](./literals.md#mpeg2gopsizeunitstype)
-- `HrdBufferInitialFillPercentage`: `int`
-- `HrdBufferSize`: `int`
-- `InterlaceMode`:
-  [Mpeg2InterlaceModeType](./literals.md#mpeg2interlacemodetype)
-- `IntraDcPrecision`:
-  [Mpeg2IntraDcPrecisionType](./literals.md#mpeg2intradcprecisiontype)
-- `MaxBitrate`: `int`
-- `MinIInterval`: `int`
-- `NumberBFramesBetweenReferenceFrames`: `int`
-- `ParControl`: [Mpeg2ParControlType](./literals.md#mpeg2parcontroltype)
-- `ParDenominator`: `int`
-- `ParNumerator`: `int`
-- `QualityTuningLevel`:
-  [Mpeg2QualityTuningLevelType](./literals.md#mpeg2qualitytuningleveltype)
-- `RateControlMode`:
-  [Mpeg2RateControlModeType](./literals.md#mpeg2ratecontrolmodetype)
-- `ScanTypeConversionMode`:
-  [Mpeg2ScanTypeConversionModeType](./literals.md#mpeg2scantypeconversionmodetype)
-- `SceneChangeDetect`:
-  [Mpeg2SceneChangeDetectType](./literals.md#mpeg2scenechangedetecttype)
-- `SlowPal`: [Mpeg2SlowPalType](./literals.md#mpeg2slowpaltype)
-- `Softness`: `int`
-- `SpatialAdaptiveQuantization`:
-  [Mpeg2SpatialAdaptiveQuantizationType](./literals.md#mpeg2spatialadaptivequantizationtype)
-- `Syntax`: [Mpeg2SyntaxType](./literals.md#mpeg2syntaxtype)
-- `Telecine`: [Mpeg2TelecineType](./literals.md#mpeg2telecinetype)
-- `TemporalAdaptiveQuantization`:
-  [Mpeg2TemporalAdaptiveQuantizationType](./literals.md#mpeg2temporaladaptivequantizationtype)
-
-<a id="mssmoothadditionalmanifesttypedef"></a>
-
+1. See [:material-code-brackets: Mpeg2AdaptiveQuantizationType](./literals.md#mpeg2adaptivequantizationtype) 
+2. See [:material-code-brackets: Mpeg2CodecLevelType](./literals.md#mpeg2codecleveltype) 
+3. See [:material-code-brackets: Mpeg2CodecProfileType](./literals.md#mpeg2codecprofiletype) 
+4. See [:material-code-brackets: Mpeg2DynamicSubGopType](./literals.md#mpeg2dynamicsubgoptype) 
+5. See [:material-code-brackets: Mpeg2FramerateControlType](./literals.md#mpeg2frameratecontroltype) 
+6. See [:material-code-brackets: Mpeg2FramerateConversionAlgorithmType](./literals.md#mpeg2framerateconversionalgorithmtype) 
+7. See [:material-code-brackets: Mpeg2GopSizeUnitsType](./literals.md#mpeg2gopsizeunitstype) 
+8. See [:material-code-brackets: Mpeg2InterlaceModeType](./literals.md#mpeg2interlacemodetype) 
+9. See [:material-code-brackets: Mpeg2IntraDcPrecisionType](./literals.md#mpeg2intradcprecisiontype) 
+10. See [:material-code-brackets: Mpeg2ParControlType](./literals.md#mpeg2parcontroltype) 
+11. See [:material-code-brackets: Mpeg2QualityTuningLevelType](./literals.md#mpeg2qualitytuningleveltype) 
+12. See [:material-code-brackets: Mpeg2RateControlModeType](./literals.md#mpeg2ratecontrolmodetype) 
+13. See [:material-code-brackets: Mpeg2ScanTypeConversionModeType](./literals.md#mpeg2scantypeconversionmodetype) 
+14. See [:material-code-brackets: Mpeg2SceneChangeDetectType](./literals.md#mpeg2scenechangedetecttype) 
+15. See [:material-code-brackets: Mpeg2SlowPalType](./literals.md#mpeg2slowpaltype) 
+16. See [:material-code-brackets: Mpeg2SpatialAdaptiveQuantizationType](./literals.md#mpeg2spatialadaptivequantizationtype) 
+17. See [:material-code-brackets: Mpeg2SyntaxType](./literals.md#mpeg2syntaxtype) 
+18. See [:material-code-brackets: Mpeg2TelecineType](./literals.md#mpeg2telecinetype) 
+19. See [:material-code-brackets: Mpeg2TemporalAdaptiveQuantizationType](./literals.md#mpeg2temporaladaptivequantizationtype) 
 ## MsSmoothAdditionalManifestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MsSmoothAdditionalManifestTypeDef
+
+def get_value() -> MsSmoothAdditionalManifestTypeDef:
+    return {
+        "ManifestNameModifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `ManifestNameModifier`: `str`
-- `SelectedOutputs`: `Sequence`\[`str`\]
-
-<a id="mssmoothencryptionsettingstypedef"></a>
+```python title="Definition"
+class MsSmoothAdditionalManifestTypeDef(TypedDict):
+    ManifestNameModifier: NotRequired[str],
+    SelectedOutputs: NotRequired[Sequence[str]],
+```
 
 ## MsSmoothEncryptionSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MsSmoothEncryptionSettingsTypeDef
+
+def get_value() -> MsSmoothEncryptionSettingsTypeDef:
+    return {
+        "SpekeKeyProvider": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MsSmoothEncryptionSettingsTypeDef(TypedDict):
+    SpekeKeyProvider: NotRequired[SpekeKeyProviderTypeDef],  # (1)
+```
 
-- `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
-
-<a id="mssmoothgroupsettingstypedef"></a>
-
+1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
 ## MsSmoothGroupSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MsSmoothGroupSettingsTypeDef
+
+def get_value() -> MsSmoothGroupSettingsTypeDef:
+    return {
+        "AdditionalManifests": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MsSmoothGroupSettingsTypeDef(TypedDict):
+    AdditionalManifests: NotRequired[Sequence[MsSmoothAdditionalManifestTypeDef]],  # (1)
+    AudioDeduplication: NotRequired[MsSmoothAudioDeduplicationType],  # (2)
+    Destination: NotRequired[str],
+    DestinationSettings: NotRequired[DestinationSettingsTypeDef],  # (3)
+    Encryption: NotRequired[MsSmoothEncryptionSettingsTypeDef],  # (4)
+    FragmentLength: NotRequired[int],
+    FragmentLengthControl: NotRequired[MsSmoothFragmentLengthControlType],  # (5)
+    ManifestEncoding: NotRequired[MsSmoothManifestEncodingType],  # (6)
+```
 
-- `AdditionalManifests`:
-  `Sequence`\[[MsSmoothAdditionalManifestTypeDef](./type_defs.md#mssmoothadditionalmanifesttypedef)\]
-- `AudioDeduplication`:
-  [MsSmoothAudioDeduplicationType](./literals.md#mssmoothaudiodeduplicationtype)
-- `Destination`: `str`
-- `DestinationSettings`:
-  [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
-- `Encryption`:
-  [MsSmoothEncryptionSettingsTypeDef](./type_defs.md#mssmoothencryptionsettingstypedef)
-- `FragmentLength`: `int`
-- `FragmentLengthControl`:
-  [MsSmoothFragmentLengthControlType](./literals.md#mssmoothfragmentlengthcontroltype)
-- `ManifestEncoding`:
-  [MsSmoothManifestEncodingType](./literals.md#mssmoothmanifestencodingtype)
-
-<a id="mxfsettingstypedef"></a>
-
+1. See [:material-code-braces: MsSmoothAdditionalManifestTypeDef](./type_defs.md#mssmoothadditionalmanifesttypedef) 
+2. See [:material-code-brackets: MsSmoothAudioDeduplicationType](./literals.md#mssmoothaudiodeduplicationtype) 
+3. See [:material-code-braces: DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef) 
+4. See [:material-code-braces: MsSmoothEncryptionSettingsTypeDef](./type_defs.md#mssmoothencryptionsettingstypedef) 
+5. See [:material-code-brackets: MsSmoothFragmentLengthControlType](./literals.md#mssmoothfragmentlengthcontroltype) 
+6. See [:material-code-brackets: MsSmoothManifestEncodingType](./literals.md#mssmoothmanifestencodingtype) 
 ## MxfSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MxfSettingsTypeDef
+
+def get_value() -> MxfSettingsTypeDef:
+    return {
+        "AfdSignaling": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MxfSettingsTypeDef(TypedDict):
+    AfdSignaling: NotRequired[MxfAfdSignalingType],  # (1)
+    Profile: NotRequired[MxfProfileType],  # (2)
+    XavcProfileSettings: NotRequired[MxfXavcProfileSettingsTypeDef],  # (3)
+```
 
-- `AfdSignaling`: [MxfAfdSignalingType](./literals.md#mxfafdsignalingtype)
-- `Profile`: [MxfProfileType](./literals.md#mxfprofiletype)
-- `XavcProfileSettings`:
-  [MxfXavcProfileSettingsTypeDef](./type_defs.md#mxfxavcprofilesettingstypedef)
-
-<a id="mxfxavcprofilesettingstypedef"></a>
-
+1. See [:material-code-brackets: MxfAfdSignalingType](./literals.md#mxfafdsignalingtype) 
+2. See [:material-code-brackets: MxfProfileType](./literals.md#mxfprofiletype) 
+3. See [:material-code-braces: MxfXavcProfileSettingsTypeDef](./type_defs.md#mxfxavcprofilesettingstypedef) 
 ## MxfXavcProfileSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import MxfXavcProfileSettingsTypeDef
+
+def get_value() -> MxfXavcProfileSettingsTypeDef:
+    return {
+        "DurationMode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MxfXavcProfileSettingsTypeDef(TypedDict):
+    DurationMode: NotRequired[MxfXavcDurationModeType],  # (1)
+    MaxAncDataSize: NotRequired[int],
+```
 
-- `DurationMode`:
-  [MxfXavcDurationModeType](./literals.md#mxfxavcdurationmodetype)
-- `MaxAncDataSize`: `int`
-
-<a id="nexguardfilemarkersettingstypedef"></a>
-
+1. See [:material-code-brackets: MxfXavcDurationModeType](./literals.md#mxfxavcdurationmodetype) 
 ## NexGuardFileMarkerSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import NexGuardFileMarkerSettingsTypeDef
+
+def get_value() -> NexGuardFileMarkerSettingsTypeDef:
+    return {
+        "License": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NexGuardFileMarkerSettingsTypeDef(TypedDict):
+    License: NotRequired[str],
+    Payload: NotRequired[int],
+    Preset: NotRequired[str],
+    Strength: NotRequired[WatermarkingStrengthType],  # (1)
+```
 
-- `License`: `str`
-- `Payload`: `int`
-- `Preset`: `str`
-- `Strength`:
-  [WatermarkingStrengthType](./literals.md#watermarkingstrengthtype)
-
-<a id="nielsenconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: WatermarkingStrengthType](./literals.md#watermarkingstrengthtype) 
 ## NielsenConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import NielsenConfigurationTypeDef
+
+def get_value() -> NielsenConfigurationTypeDef:
+    return {
+        "BreakoutCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `BreakoutCode`: `int`
-- `DistributorId`: `str`
-
-<a id="nielsennonlinearwatermarksettingstypedef"></a>
+```python title="Definition"
+class NielsenConfigurationTypeDef(TypedDict):
+    BreakoutCode: NotRequired[int],
+    DistributorId: NotRequired[str],
+```
 
 ## NielsenNonLinearWatermarkSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import NielsenNonLinearWatermarkSettingsTypeDef
+
+def get_value() -> NielsenNonLinearWatermarkSettingsTypeDef:
+    return {
+        "ActiveWatermarkProcess": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NielsenNonLinearWatermarkSettingsTypeDef(TypedDict):
+    ActiveWatermarkProcess: NotRequired[NielsenActiveWatermarkProcessTypeType],  # (1)
+    AdiFilename: NotRequired[str],
+    AssetId: NotRequired[str],
+    AssetName: NotRequired[str],
+    CbetSourceId: NotRequired[str],
+    EpisodeId: NotRequired[str],
+    MetadataDestination: NotRequired[str],
+    SourceId: NotRequired[int],
+    SourceWatermarkStatus: NotRequired[NielsenSourceWatermarkStatusTypeType],  # (2)
+    TicServerUrl: NotRequired[str],
+    UniqueTicPerAudioTrack: NotRequired[NielsenUniqueTicPerAudioTrackTypeType],  # (3)
+```
 
-- `ActiveWatermarkProcess`:
-  [NielsenActiveWatermarkProcessTypeType](./literals.md#nielsenactivewatermarkprocesstypetype)
-- `AdiFilename`: `str`
-- `AssetId`: `str`
-- `AssetName`: `str`
-- `CbetSourceId`: `str`
-- `EpisodeId`: `str`
-- `MetadataDestination`: `str`
-- `SourceId`: `int`
-- `SourceWatermarkStatus`:
-  [NielsenSourceWatermarkStatusTypeType](./literals.md#nielsensourcewatermarkstatustypetype)
-- `TicServerUrl`: `str`
-- `UniqueTicPerAudioTrack`:
-  [NielsenUniqueTicPerAudioTrackTypeType](./literals.md#nielsenuniqueticperaudiotracktypetype)
-
-<a id="noisereducerfiltersettingstypedef"></a>
-
+1. See [:material-code-brackets: NielsenActiveWatermarkProcessTypeType](./literals.md#nielsenactivewatermarkprocesstypetype) 
+2. See [:material-code-brackets: NielsenSourceWatermarkStatusTypeType](./literals.md#nielsensourcewatermarkstatustypetype) 
+3. See [:material-code-brackets: NielsenUniqueTicPerAudioTrackTypeType](./literals.md#nielsenuniqueticperaudiotracktypetype) 
 ## NoiseReducerFilterSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import NoiseReducerFilterSettingsTypeDef
+
+def get_value() -> NoiseReducerFilterSettingsTypeDef:
+    return {
+        "Strength": ...,
+    }
 ```
 
-Optional fields:
-
-- `Strength`: `int`
-
-<a id="noisereducerspatialfiltersettingstypedef"></a>
+```python title="Definition"
+class NoiseReducerFilterSettingsTypeDef(TypedDict):
+    Strength: NotRequired[int],
+```
 
 ## NoiseReducerSpatialFilterSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import NoiseReducerSpatialFilterSettingsTypeDef
+
+def get_value() -> NoiseReducerSpatialFilterSettingsTypeDef:
+    return {
+        "PostFilterSharpenStrength": ...,
+    }
 ```
 
-Optional fields:
-
-- `PostFilterSharpenStrength`: `int`
-- `Speed`: `int`
-- `Strength`: `int`
-
-<a id="noisereducertemporalfiltersettingstypedef"></a>
+```python title="Definition"
+class NoiseReducerSpatialFilterSettingsTypeDef(TypedDict):
+    PostFilterSharpenStrength: NotRequired[int],
+    Speed: NotRequired[int],
+    Strength: NotRequired[int],
+```
 
 ## NoiseReducerTemporalFilterSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import NoiseReducerTemporalFilterSettingsTypeDef
+
+def get_value() -> NoiseReducerTemporalFilterSettingsTypeDef:
+    return {
+        "AggressiveMode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NoiseReducerTemporalFilterSettingsTypeDef(TypedDict):
+    AggressiveMode: NotRequired[int],
+    PostTemporalSharpening: NotRequired[NoiseFilterPostTemporalSharpeningType],  # (1)
+    PostTemporalSharpeningStrength: NotRequired[NoiseFilterPostTemporalSharpeningStrengthType],  # (2)
+    Speed: NotRequired[int],
+    Strength: NotRequired[int],
+```
 
-- `AggressiveMode`: `int`
-- `PostTemporalSharpening`:
-  [NoiseFilterPostTemporalSharpeningType](./literals.md#noisefilterposttemporalsharpeningtype)
-- `PostTemporalSharpeningStrength`:
-  [NoiseFilterPostTemporalSharpeningStrengthType](./literals.md#noisefilterposttemporalsharpeningstrengthtype)
-- `Speed`: `int`
-- `Strength`: `int`
-
-<a id="noisereducertypedef"></a>
-
+1. See [:material-code-brackets: NoiseFilterPostTemporalSharpeningType](./literals.md#noisefilterposttemporalsharpeningtype) 
+2. See [:material-code-brackets: NoiseFilterPostTemporalSharpeningStrengthType](./literals.md#noisefilterposttemporalsharpeningstrengthtype) 
 ## NoiseReducerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import NoiseReducerTypeDef
+
+def get_value() -> NoiseReducerTypeDef:
+    return {
+        "Filter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NoiseReducerTypeDef(TypedDict):
+    Filter: NotRequired[NoiseReducerFilterType],  # (1)
+    FilterSettings: NotRequired[NoiseReducerFilterSettingsTypeDef],  # (2)
+    SpatialFilterSettings: NotRequired[NoiseReducerSpatialFilterSettingsTypeDef],  # (3)
+    TemporalFilterSettings: NotRequired[NoiseReducerTemporalFilterSettingsTypeDef],  # (4)
+```
 
-- `Filter`: [NoiseReducerFilterType](./literals.md#noisereducerfiltertype)
-- `FilterSettings`:
-  [NoiseReducerFilterSettingsTypeDef](./type_defs.md#noisereducerfiltersettingstypedef)
-- `SpatialFilterSettings`:
-  [NoiseReducerSpatialFilterSettingsTypeDef](./type_defs.md#noisereducerspatialfiltersettingstypedef)
-- `TemporalFilterSettings`:
-  [NoiseReducerTemporalFilterSettingsTypeDef](./type_defs.md#noisereducertemporalfiltersettingstypedef)
-
-<a id="opussettingstypedef"></a>
-
+1. See [:material-code-brackets: NoiseReducerFilterType](./literals.md#noisereducerfiltertype) 
+2. See [:material-code-braces: NoiseReducerFilterSettingsTypeDef](./type_defs.md#noisereducerfiltersettingstypedef) 
+3. See [:material-code-braces: NoiseReducerSpatialFilterSettingsTypeDef](./type_defs.md#noisereducerspatialfiltersettingstypedef) 
+4. See [:material-code-braces: NoiseReducerTemporalFilterSettingsTypeDef](./type_defs.md#noisereducertemporalfiltersettingstypedef) 
 ## OpusSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import OpusSettingsTypeDef
+
+def get_value() -> OpusSettingsTypeDef:
+    return {
+        "Bitrate": ...,
+    }
 ```
 
-Optional fields:
-
-- `Bitrate`: `int`
-- `Channels`: `int`
-- `SampleRate`: `int`
-
-<a id="outputchannelmappingtypedef"></a>
+```python title="Definition"
+class OpusSettingsTypeDef(TypedDict):
+    Bitrate: NotRequired[int],
+    Channels: NotRequired[int],
+    SampleRate: NotRequired[int],
+```
 
 ## OutputChannelMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import OutputChannelMappingTypeDef
+
+def get_value() -> OutputChannelMappingTypeDef:
+    return {
+        "InputChannels": ...,
+    }
 ```
 
-Optional fields:
-
-- `InputChannels`: `Sequence`\[`int`\]
-- `InputChannelsFineTune`: `Sequence`\[`float`\]
-
-<a id="outputdetailtypedef"></a>
+```python title="Definition"
+class OutputChannelMappingTypeDef(TypedDict):
+    InputChannels: NotRequired[Sequence[int]],
+    InputChannelsFineTune: NotRequired[Sequence[float]],
+```
 
 ## OutputDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import OutputDetailTypeDef
+
+def get_value() -> OutputDetailTypeDef:
+    return {
+        "DurationInMs": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputDetailTypeDef(TypedDict):
+    DurationInMs: NotRequired[int],
+    VideoDetails: NotRequired[VideoDetailTypeDef],  # (1)
+```
 
-- `DurationInMs`: `int`
-- `VideoDetails`: [VideoDetailTypeDef](./type_defs.md#videodetailtypedef)
-
-<a id="outputgroupdetailtypedef"></a>
-
+1. See [:material-code-braces: VideoDetailTypeDef](./type_defs.md#videodetailtypedef) 
 ## OutputGroupDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import OutputGroupDetailTypeDef
+
+def get_value() -> OutputGroupDetailTypeDef:
+    return {
+        "OutputDetails": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputGroupDetailTypeDef(TypedDict):
+    OutputDetails: NotRequired[List[OutputDetailTypeDef]],  # (1)
+```
 
-- `OutputDetails`:
-  `List`\[[OutputDetailTypeDef](./type_defs.md#outputdetailtypedef)\]
-
-<a id="outputgroupsettingstypedef"></a>
-
+1. See [:material-code-braces: OutputDetailTypeDef](./type_defs.md#outputdetailtypedef) 
 ## OutputGroupSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import OutputGroupSettingsTypeDef
+
+def get_value() -> OutputGroupSettingsTypeDef:
+    return {
+        "CmafGroupSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputGroupSettingsTypeDef(TypedDict):
+    CmafGroupSettings: NotRequired[CmafGroupSettingsTypeDef],  # (1)
+    DashIsoGroupSettings: NotRequired[DashIsoGroupSettingsTypeDef],  # (2)
+    FileGroupSettings: NotRequired[FileGroupSettingsTypeDef],  # (3)
+    HlsGroupSettings: NotRequired[HlsGroupSettingsTypeDef],  # (4)
+    MsSmoothGroupSettings: NotRequired[MsSmoothGroupSettingsTypeDef],  # (5)
+    Type: NotRequired[OutputGroupTypeType],  # (6)
+```
 
-- `CmafGroupSettings`:
-  [CmafGroupSettingsTypeDef](./type_defs.md#cmafgroupsettingstypedef)
-- `DashIsoGroupSettings`:
-  [DashIsoGroupSettingsTypeDef](./type_defs.md#dashisogroupsettingstypedef)
-- `FileGroupSettings`:
-  [FileGroupSettingsTypeDef](./type_defs.md#filegroupsettingstypedef)
-- `HlsGroupSettings`:
-  [HlsGroupSettingsTypeDef](./type_defs.md#hlsgroupsettingstypedef)
-- `MsSmoothGroupSettings`:
-  [MsSmoothGroupSettingsTypeDef](./type_defs.md#mssmoothgroupsettingstypedef)
-- `Type`: [OutputGroupTypeType](./literals.md#outputgrouptypetype)
-
-<a id="outputgrouptypedef"></a>
-
+1. See [:material-code-braces: CmafGroupSettingsTypeDef](./type_defs.md#cmafgroupsettingstypedef) 
+2. See [:material-code-braces: DashIsoGroupSettingsTypeDef](./type_defs.md#dashisogroupsettingstypedef) 
+3. See [:material-code-braces: FileGroupSettingsTypeDef](./type_defs.md#filegroupsettingstypedef) 
+4. See [:material-code-braces: HlsGroupSettingsTypeDef](./type_defs.md#hlsgroupsettingstypedef) 
+5. See [:material-code-braces: MsSmoothGroupSettingsTypeDef](./type_defs.md#mssmoothgroupsettingstypedef) 
+6. See [:material-code-brackets: OutputGroupTypeType](./literals.md#outputgrouptypetype) 
 ## OutputGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import OutputGroupTypeDef
+
+def get_value() -> OutputGroupTypeDef:
+    return {
+        "AutomatedEncodingSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputGroupTypeDef(TypedDict):
+    AutomatedEncodingSettings: NotRequired[AutomatedEncodingSettingsTypeDef],  # (1)
+    CustomName: NotRequired[str],
+    Name: NotRequired[str],
+    OutputGroupSettings: NotRequired[OutputGroupSettingsTypeDef],  # (2)
+    Outputs: NotRequired[Sequence[OutputTypeDef]],  # (3)
+```
 
-- `AutomatedEncodingSettings`:
-  [AutomatedEncodingSettingsTypeDef](./type_defs.md#automatedencodingsettingstypedef)
-- `CustomName`: `str`
-- `Name`: `str`
-- `OutputGroupSettings`:
-  [OutputGroupSettingsTypeDef](./type_defs.md#outputgroupsettingstypedef)
-- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-
-<a id="outputsettingstypedef"></a>
-
+1. See [:material-code-braces: AutomatedEncodingSettingsTypeDef](./type_defs.md#automatedencodingsettingstypedef) 
+2. See [:material-code-braces: OutputGroupSettingsTypeDef](./type_defs.md#outputgroupsettingstypedef) 
+3. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
 ## OutputSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import OutputSettingsTypeDef
+
+def get_value() -> OutputSettingsTypeDef:
+    return {
+        "HlsSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputSettingsTypeDef(TypedDict):
+    HlsSettings: NotRequired[HlsSettingsTypeDef],  # (1)
+```
 
-- `HlsSettings`: [HlsSettingsTypeDef](./type_defs.md#hlssettingstypedef)
-
-<a id="outputtypedef"></a>
-
+1. See [:material-code-braces: HlsSettingsTypeDef](./type_defs.md#hlssettingstypedef) 
 ## OutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import OutputTypeDef
+
+def get_value() -> OutputTypeDef:
+    return {
+        "AudioDescriptions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputTypeDef(TypedDict):
+    AudioDescriptions: NotRequired[Sequence[AudioDescriptionTypeDef]],  # (1)
+    CaptionDescriptions: NotRequired[Sequence[CaptionDescriptionTypeDef]],  # (2)
+    ContainerSettings: NotRequired[ContainerSettingsTypeDef],  # (3)
+    Extension: NotRequired[str],
+    NameModifier: NotRequired[str],
+    OutputSettings: NotRequired[OutputSettingsTypeDef],  # (4)
+    Preset: NotRequired[str],
+    VideoDescription: NotRequired[VideoDescriptionTypeDef],  # (5)
+```
 
-- `AudioDescriptions`:
-  `Sequence`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
-- `CaptionDescriptions`:
-  `Sequence`\[[CaptionDescriptionTypeDef](./type_defs.md#captiondescriptiontypedef)\]
-- `ContainerSettings`:
-  [ContainerSettingsTypeDef](./type_defs.md#containersettingstypedef)
-- `Extension`: `str`
-- `NameModifier`: `str`
-- `OutputSettings`:
-  [OutputSettingsTypeDef](./type_defs.md#outputsettingstypedef)
-- `Preset`: `str`
-- `VideoDescription`:
-  [VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef) 
+2. See [:material-code-braces: CaptionDescriptionTypeDef](./type_defs.md#captiondescriptiontypedef) 
+3. See [:material-code-braces: ContainerSettingsTypeDef](./type_defs.md#containersettingstypedef) 
+4. See [:material-code-braces: OutputSettingsTypeDef](./type_defs.md#outputsettingstypedef) 
+5. See [:material-code-braces: VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="partnerwatermarkingtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PartnerWatermarkingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import PartnerWatermarkingTypeDef
+
+def get_value() -> PartnerWatermarkingTypeDef:
+    return {
+        "NexguardFileMarkerSettings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PartnerWatermarkingTypeDef(TypedDict):
+    NexguardFileMarkerSettings: NotRequired[NexGuardFileMarkerSettingsTypeDef],  # (1)
+```
 
-- `NexguardFileMarkerSettings`:
-  [NexGuardFileMarkerSettingsTypeDef](./type_defs.md#nexguardfilemarkersettingstypedef)
-
-<a id="policytypedef"></a>
-
+1. See [:material-code-braces: NexGuardFileMarkerSettingsTypeDef](./type_defs.md#nexguardfilemarkersettingstypedef) 
 ## PolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import PolicyTypeDef
+
+def get_value() -> PolicyTypeDef:
+    return {
+        "HttpInputs": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PolicyTypeDef(TypedDict):
+    HttpInputs: NotRequired[InputPolicyType],  # (1)
+    HttpsInputs: NotRequired[InputPolicyType],  # (1)
+    S3Inputs: NotRequired[InputPolicyType],  # (1)
+```
 
-- `HttpInputs`: [InputPolicyType](./literals.md#inputpolicytype)
-- `HttpsInputs`: [InputPolicyType](./literals.md#inputpolicytype)
-- `S3Inputs`: [InputPolicyType](./literals.md#inputpolicytype)
-
-<a id="presetsettingstypedef"></a>
-
+1. See [:material-code-brackets: InputPolicyType](./literals.md#inputpolicytype) 
+2. See [:material-code-brackets: InputPolicyType](./literals.md#inputpolicytype) 
+3. See [:material-code-brackets: InputPolicyType](./literals.md#inputpolicytype) 
 ## PresetSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import PresetSettingsTypeDef
+
+def get_value() -> PresetSettingsTypeDef:
+    return {
+        "AudioDescriptions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PresetSettingsTypeDef(TypedDict):
+    AudioDescriptions: NotRequired[Sequence[AudioDescriptionTypeDef]],  # (1)
+    CaptionDescriptions: NotRequired[Sequence[CaptionDescriptionPresetTypeDef]],  # (2)
+    ContainerSettings: NotRequired[ContainerSettingsTypeDef],  # (3)
+    VideoDescription: NotRequired[VideoDescriptionTypeDef],  # (4)
+```
 
-- `AudioDescriptions`:
-  `Sequence`\[[AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef)\]
-- `CaptionDescriptions`:
-  `Sequence`\[[CaptionDescriptionPresetTypeDef](./type_defs.md#captiondescriptionpresettypedef)\]
-- `ContainerSettings`:
-  [ContainerSettingsTypeDef](./type_defs.md#containersettingstypedef)
-- `VideoDescription`:
-  [VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef)
-
-<a id="presettypedef"></a>
-
+1. See [:material-code-braces: AudioDescriptionTypeDef](./type_defs.md#audiodescriptiontypedef) 
+2. See [:material-code-braces: CaptionDescriptionPresetTypeDef](./type_defs.md#captiondescriptionpresettypedef) 
+3. See [:material-code-braces: ContainerSettingsTypeDef](./type_defs.md#containersettingstypedef) 
+4. See [:material-code-braces: VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef) 
 ## PresetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import PresetTypeDef
+
+def get_value() -> PresetTypeDef:
+    return {
+        "Name": ...,
+        "Settings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PresetTypeDef(TypedDict):
+    Name: str,
+    Settings: PresetSettingsTypeDef,  # (1)
+    Arn: NotRequired[str],
+    Category: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    Description: NotRequired[str],
+    LastUpdated: NotRequired[datetime],
+    Type: NotRequired[TypeType],  # (2)
+```
 
-- `Name`: `str`
-- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
-
-Optional fields:
-
-- `Arn`: `str`
-- `Category`: `str`
-- `CreatedAt`: `datetime`
-- `Description`: `str`
-- `LastUpdated`: `datetime`
-- `Type`: [TypeType](./literals.md#typetype)
-
-<a id="proressettingstypedef"></a>
-
+1. See [:material-code-braces: PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef) 
+2. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## ProresSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ProresSettingsTypeDef
+
+def get_value() -> ProresSettingsTypeDef:
+    return {
+        "ChromaSampling": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProresSettingsTypeDef(TypedDict):
+    ChromaSampling: NotRequired[ProresChromaSamplingType],  # (1)
+    CodecProfile: NotRequired[ProresCodecProfileType],  # (2)
+    FramerateControl: NotRequired[ProresFramerateControlType],  # (3)
+    FramerateConversionAlgorithm: NotRequired[ProresFramerateConversionAlgorithmType],  # (4)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    InterlaceMode: NotRequired[ProresInterlaceModeType],  # (5)
+    ParControl: NotRequired[ProresParControlType],  # (6)
+    ParDenominator: NotRequired[int],
+    ParNumerator: NotRequired[int],
+    ScanTypeConversionMode: NotRequired[ProresScanTypeConversionModeType],  # (7)
+    SlowPal: NotRequired[ProresSlowPalType],  # (8)
+    Telecine: NotRequired[ProresTelecineType],  # (9)
+```
 
-- `ChromaSampling`:
-  [ProresChromaSamplingType](./literals.md#proreschromasamplingtype)
-- `CodecProfile`:
-  [ProresCodecProfileType](./literals.md#prorescodecprofiletype)
-- `FramerateControl`:
-  [ProresFramerateControlType](./literals.md#proresframeratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [ProresFramerateConversionAlgorithmType](./literals.md#proresframerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `InterlaceMode`:
-  [ProresInterlaceModeType](./literals.md#proresinterlacemodetype)
-- `ParControl`: [ProresParControlType](./literals.md#proresparcontroltype)
-- `ParDenominator`: `int`
-- `ParNumerator`: `int`
-- `ScanTypeConversionMode`:
-  [ProresScanTypeConversionModeType](./literals.md#proresscantypeconversionmodetype)
-- `SlowPal`: [ProresSlowPalType](./literals.md#proresslowpaltype)
-- `Telecine`: [ProresTelecineType](./literals.md#prorestelecinetype)
-
-<a id="putpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProresChromaSamplingType](./literals.md#proreschromasamplingtype) 
+2. See [:material-code-brackets: ProresCodecProfileType](./literals.md#prorescodecprofiletype) 
+3. See [:material-code-brackets: ProresFramerateControlType](./literals.md#proresframeratecontroltype) 
+4. See [:material-code-brackets: ProresFramerateConversionAlgorithmType](./literals.md#proresframerateconversionalgorithmtype) 
+5. See [:material-code-brackets: ProresInterlaceModeType](./literals.md#proresinterlacemodetype) 
+6. See [:material-code-brackets: ProresParControlType](./literals.md#proresparcontroltype) 
+7. See [:material-code-brackets: ProresScanTypeConversionModeType](./literals.md#proresscantypeconversionmodetype) 
+8. See [:material-code-brackets: ProresSlowPalType](./literals.md#proresslowpaltype) 
+9. See [:material-code-brackets: ProresTelecineType](./literals.md#prorestelecinetype) 
 ## PutPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import PutPolicyRequestRequestTypeDef
+
+def get_value() -> PutPolicyRequestRequestTypeDef:
+    return {
+        "Policy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutPolicyRequestRequestTypeDef(TypedDict):
+    Policy: PolicyTypeDef,  # (1)
+```
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
-
-<a id="putpolicyresponsetypedef"></a>
-
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
 ## PutPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import PutPolicyResponseTypeDef
+
+def get_value() -> PutPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutPolicyResponseTypeDef(TypedDict):
+    Policy: PolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="queuetransitiontypedef"></a>
-
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## QueueTransitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import QueueTransitionTypeDef
+
+def get_value() -> QueueTransitionTypeDef:
+    return {
+        "DestinationQueue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DestinationQueue`: `str`
-- `SourceQueue`: `str`
-- `Timestamp`: `datetime`
-
-<a id="queuetypedef"></a>
+```python title="Definition"
+class QueueTransitionTypeDef(TypedDict):
+    DestinationQueue: NotRequired[str],
+    SourceQueue: NotRequired[str],
+    Timestamp: NotRequired[datetime],
+```
 
 ## QueueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import QueueTypeDef
+
+def get_value() -> QueueTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueueTypeDef(TypedDict):
+    Name: str,
+    Arn: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    Description: NotRequired[str],
+    LastUpdated: NotRequired[datetime],
+    PricingPlan: NotRequired[PricingPlanType],  # (1)
+    ProgressingJobsCount: NotRequired[int],
+    ReservationPlan: NotRequired[ReservationPlanTypeDef],  # (2)
+    Status: NotRequired[QueueStatusType],  # (3)
+    SubmittedJobsCount: NotRequired[int],
+    Type: NotRequired[TypeType],  # (4)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Arn`: `str`
-- `CreatedAt`: `datetime`
-- `Description`: `str`
-- `LastUpdated`: `datetime`
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
-- `ProgressingJobsCount`: `int`
-- `ReservationPlan`:
-  [ReservationPlanTypeDef](./type_defs.md#reservationplantypedef)
-- `Status`: [QueueStatusType](./literals.md#queuestatustype)
-- `SubmittedJobsCount`: `int`
-- `Type`: [TypeType](./literals.md#typetype)
-
-<a id="rectangletypedef"></a>
-
+1. See [:material-code-brackets: PricingPlanType](./literals.md#pricingplantype) 
+2. See [:material-code-braces: ReservationPlanTypeDef](./type_defs.md#reservationplantypedef) 
+3. See [:material-code-brackets: QueueStatusType](./literals.md#queuestatustype) 
+4. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## RectangleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import RectangleTypeDef
+
+def get_value() -> RectangleTypeDef:
+    return {
+        "Height": ...,
+    }
 ```
 
-Optional fields:
-
-- `Height`: `int`
-- `Width`: `int`
-- `X`: `int`
-- `Y`: `int`
-
-<a id="remixsettingstypedef"></a>
+```python title="Definition"
+class RectangleTypeDef(TypedDict):
+    Height: NotRequired[int],
+    Width: NotRequired[int],
+    X: NotRequired[int],
+    Y: NotRequired[int],
+```
 
 ## RemixSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import RemixSettingsTypeDef
+
+def get_value() -> RemixSettingsTypeDef:
+    return {
+        "ChannelMapping": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RemixSettingsTypeDef(TypedDict):
+    ChannelMapping: NotRequired[ChannelMappingTypeDef],  # (1)
+    ChannelsIn: NotRequired[int],
+    ChannelsOut: NotRequired[int],
+```
 
-- `ChannelMapping`:
-  [ChannelMappingTypeDef](./type_defs.md#channelmappingtypedef)
-- `ChannelsIn`: `int`
-- `ChannelsOut`: `int`
-
-<a id="reservationplansettingstypedef"></a>
-
+1. See [:material-code-braces: ChannelMappingTypeDef](./type_defs.md#channelmappingtypedef) 
 ## ReservationPlanSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ReservationPlanSettingsTypeDef
+
+def get_value() -> ReservationPlanSettingsTypeDef:
+    return {
+        "Commitment": ...,
+        "RenewalType": ...,
+        "ReservedSlots": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReservationPlanSettingsTypeDef(TypedDict):
+    Commitment: CommitmentType,  # (1)
+    RenewalType: RenewalTypeType,  # (2)
+    ReservedSlots: int,
+```
 
-- `Commitment`: `Literal['ONE_YEAR']` (see
-  [CommitmentType](./literals.md#commitmenttype))
-- `RenewalType`: [RenewalTypeType](./literals.md#renewaltypetype)
-- `ReservedSlots`: `int`
-
-<a id="reservationplantypedef"></a>
-
+1. See [:material-code-brackets: CommitmentType](./literals.md#commitmenttype) 
+2. See [:material-code-brackets: RenewalTypeType](./literals.md#renewaltypetype) 
 ## ReservationPlanTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ReservationPlanTypeDef
+
+def get_value() -> ReservationPlanTypeDef:
+    return {
+        "Commitment": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReservationPlanTypeDef(TypedDict):
+    Commitment: NotRequired[CommitmentType],  # (1)
+    ExpiresAt: NotRequired[datetime],
+    PurchasedAt: NotRequired[datetime],
+    RenewalType: NotRequired[RenewalTypeType],  # (2)
+    ReservedSlots: NotRequired[int],
+    Status: NotRequired[ReservationPlanStatusType],  # (3)
+```
 
-- `Commitment`: `Literal['ONE_YEAR']` (see
-  [CommitmentType](./literals.md#commitmenttype))
-- `ExpiresAt`: `datetime`
-- `PurchasedAt`: `datetime`
-- `RenewalType`: [RenewalTypeType](./literals.md#renewaltypetype)
-- `ReservedSlots`: `int`
-- `Status`:
-  [ReservationPlanStatusType](./literals.md#reservationplanstatustype)
-
-<a id="resourcetagstypedef"></a>
-
+1. See [:material-code-brackets: CommitmentType](./literals.md#commitmenttype) 
+2. See [:material-code-brackets: RenewalTypeType](./literals.md#renewaltypetype) 
+3. See [:material-code-brackets: ReservationPlanStatusType](./literals.md#reservationplanstatustype) 
 ## ResourceTagsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ResourceTagsTypeDef
+
+def get_value() -> ResourceTagsTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceTagsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3destinationaccesscontroltypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3DestinationAccessControlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import S3DestinationAccessControlTypeDef
+
+def get_value() -> S3DestinationAccessControlTypeDef:
+    return {
+        "CannedAcl": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3DestinationAccessControlTypeDef(TypedDict):
+    CannedAcl: NotRequired[S3ObjectCannedAclType],  # (1)
+```
 
-- `CannedAcl`: [S3ObjectCannedAclType](./literals.md#s3objectcannedacltype)
-
-<a id="s3destinationsettingstypedef"></a>
-
+1. See [:material-code-brackets: S3ObjectCannedAclType](./literals.md#s3objectcannedacltype) 
 ## S3DestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import S3DestinationSettingsTypeDef
+
+def get_value() -> S3DestinationSettingsTypeDef:
+    return {
+        "AccessControl": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3DestinationSettingsTypeDef(TypedDict):
+    AccessControl: NotRequired[S3DestinationAccessControlTypeDef],  # (1)
+    Encryption: NotRequired[S3EncryptionSettingsTypeDef],  # (2)
+```
 
-- `AccessControl`:
-  [S3DestinationAccessControlTypeDef](./type_defs.md#s3destinationaccesscontroltypedef)
-- `Encryption`:
-  [S3EncryptionSettingsTypeDef](./type_defs.md#s3encryptionsettingstypedef)
-
-<a id="s3encryptionsettingstypedef"></a>
-
+1. See [:material-code-braces: S3DestinationAccessControlTypeDef](./type_defs.md#s3destinationaccesscontroltypedef) 
+2. See [:material-code-braces: S3EncryptionSettingsTypeDef](./type_defs.md#s3encryptionsettingstypedef) 
 ## S3EncryptionSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import S3EncryptionSettingsTypeDef
+
+def get_value() -> S3EncryptionSettingsTypeDef:
+    return {
+        "EncryptionType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3EncryptionSettingsTypeDef(TypedDict):
+    EncryptionType: NotRequired[S3ServerSideEncryptionTypeType],  # (1)
+    KmsEncryptionContext: NotRequired[str],
+    KmsKeyArn: NotRequired[str],
+```
 
-- `EncryptionType`:
-  [S3ServerSideEncryptionTypeType](./literals.md#s3serversideencryptiontypetype)
-- `KmsEncryptionContext`: `str`
-- `KmsKeyArn`: `str`
-
-<a id="sccdestinationsettingstypedef"></a>
-
+1. See [:material-code-brackets: S3ServerSideEncryptionTypeType](./literals.md#s3serversideencryptiontypetype) 
 ## SccDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import SccDestinationSettingsTypeDef
+
+def get_value() -> SccDestinationSettingsTypeDef:
+    return {
+        "Framerate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SccDestinationSettingsTypeDef(TypedDict):
+    Framerate: NotRequired[SccDestinationFramerateType],  # (1)
+```
 
-- `Framerate`:
-  [SccDestinationFramerateType](./literals.md#sccdestinationframeratetype)
-
-<a id="spekekeyprovidercmaftypedef"></a>
-
+1. See [:material-code-brackets: SccDestinationFramerateType](./literals.md#sccdestinationframeratetype) 
 ## SpekeKeyProviderCmafTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import SpekeKeyProviderCmafTypeDef
+
+def get_value() -> SpekeKeyProviderCmafTypeDef:
+    return {
+        "CertificateArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `CertificateArn`: `str`
-- `DashSignaledSystemIds`: `Sequence`\[`str`\]
-- `HlsSignaledSystemIds`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `Url`: `str`
-
-<a id="spekekeyprovidertypedef"></a>
+```python title="Definition"
+class SpekeKeyProviderCmafTypeDef(TypedDict):
+    CertificateArn: NotRequired[str],
+    DashSignaledSystemIds: NotRequired[Sequence[str]],
+    HlsSignaledSystemIds: NotRequired[Sequence[str]],
+    ResourceId: NotRequired[str],
+    Url: NotRequired[str],
+```
 
 ## SpekeKeyProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import SpekeKeyProviderTypeDef
+
+def get_value() -> SpekeKeyProviderTypeDef:
+    return {
+        "CertificateArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `CertificateArn`: `str`
-- `ResourceId`: `str`
-- `SystemIds`: `Sequence`\[`str`\]
-- `Url`: `str`
-
-<a id="srtdestinationsettingstypedef"></a>
+```python title="Definition"
+class SpekeKeyProviderTypeDef(TypedDict):
+    CertificateArn: NotRequired[str],
+    ResourceId: NotRequired[str],
+    SystemIds: NotRequired[Sequence[str]],
+    Url: NotRequired[str],
+```
 
 ## SrtDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import SrtDestinationSettingsTypeDef
+
+def get_value() -> SrtDestinationSettingsTypeDef:
+    return {
+        "StylePassthrough": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SrtDestinationSettingsTypeDef(TypedDict):
+    StylePassthrough: NotRequired[SrtStylePassthroughType],  # (1)
+```
 
-- `StylePassthrough`:
-  [SrtStylePassthroughType](./literals.md#srtstylepassthroughtype)
-
-<a id="statickeyprovidertypedef"></a>
-
+1. See [:material-code-brackets: SrtStylePassthroughType](./literals.md#srtstylepassthroughtype) 
 ## StaticKeyProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import StaticKeyProviderTypeDef
+
+def get_value() -> StaticKeyProviderTypeDef:
+    return {
+        "KeyFormat": ...,
+    }
 ```
 
-Optional fields:
-
-- `KeyFormat`: `str`
-- `KeyFormatVersions`: `str`
-- `StaticKeyValue`: `str`
-- `Url`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StaticKeyProviderTypeDef(TypedDict):
+    KeyFormat: NotRequired[str],
+    KeyFormatVersions: NotRequired[str],
+    StaticKeyValue: NotRequired[str],
+    Url: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="teletextdestinationsettingstypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TeletextDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import TeletextDestinationSettingsTypeDef
+
+def get_value() -> TeletextDestinationSettingsTypeDef:
+    return {
+        "PageNumber": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TeletextDestinationSettingsTypeDef(TypedDict):
+    PageNumber: NotRequired[str],
+    PageTypes: NotRequired[Sequence[TeletextPageTypeType]],  # (1)
+```
 
-- `PageNumber`: `str`
-- `PageTypes`:
-  `Sequence`\[[TeletextPageTypeType](./literals.md#teletextpagetypetype)\]
-
-<a id="teletextsourcesettingstypedef"></a>
-
+1. See [:material-code-brackets: TeletextPageTypeType](./literals.md#teletextpagetypetype) 
 ## TeletextSourceSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import TeletextSourceSettingsTypeDef
+
+def get_value() -> TeletextSourceSettingsTypeDef:
+    return {
+        "PageNumber": ...,
+    }
 ```
 
-Optional fields:
-
-- `PageNumber`: `str`
-
-<a id="timecodeburnintypedef"></a>
+```python title="Definition"
+class TeletextSourceSettingsTypeDef(TypedDict):
+    PageNumber: NotRequired[str],
+```
 
 ## TimecodeBurninTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import TimecodeBurninTypeDef
+
+def get_value() -> TimecodeBurninTypeDef:
+    return {
+        "FontSize": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TimecodeBurninTypeDef(TypedDict):
+    FontSize: NotRequired[int],
+    Position: NotRequired[TimecodeBurninPositionType],  # (1)
+    Prefix: NotRequired[str],
+```
 
-- `FontSize`: `int`
-- `Position`:
-  [TimecodeBurninPositionType](./literals.md#timecodeburninpositiontype)
-- `Prefix`: `str`
-
-<a id="timecodeconfigtypedef"></a>
-
+1. See [:material-code-brackets: TimecodeBurninPositionType](./literals.md#timecodeburninpositiontype) 
 ## TimecodeConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import TimecodeConfigTypeDef
+
+def get_value() -> TimecodeConfigTypeDef:
+    return {
+        "Anchor": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TimecodeConfigTypeDef(TypedDict):
+    Anchor: NotRequired[str],
+    Source: NotRequired[TimecodeSourceType],  # (1)
+    Start: NotRequired[str],
+    TimestampOffset: NotRequired[str],
+```
 
-- `Anchor`: `str`
-- `Source`: [TimecodeSourceType](./literals.md#timecodesourcetype)
-- `Start`: `str`
-- `TimestampOffset`: `str`
-
-<a id="timedmetadatainsertiontypedef"></a>
-
+1. See [:material-code-brackets: TimecodeSourceType](./literals.md#timecodesourcetype) 
 ## TimedMetadataInsertionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import TimedMetadataInsertionTypeDef
+
+def get_value() -> TimedMetadataInsertionTypeDef:
+    return {
+        "Id3Insertions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TimedMetadataInsertionTypeDef(TypedDict):
+    Id3Insertions: NotRequired[Sequence[Id3InsertionTypeDef]],  # (1)
+```
 
-- `Id3Insertions`:
-  `Sequence`\[[Id3InsertionTypeDef](./type_defs.md#id3insertiontypedef)\]
-
-<a id="timingtypedef"></a>
-
+1. See [:material-code-braces: Id3InsertionTypeDef](./type_defs.md#id3insertiontypedef) 
 ## TimingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import TimingTypeDef
+
+def get_value() -> TimingTypeDef:
+    return {
+        "FinishTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `FinishTime`: `datetime`
-- `StartTime`: `datetime`
-- `SubmitTime`: `datetime`
-
-<a id="tracksourcesettingstypedef"></a>
+```python title="Definition"
+class TimingTypeDef(TypedDict):
+    FinishTime: NotRequired[datetime],
+    StartTime: NotRequired[datetime],
+    SubmitTime: NotRequired[datetime],
+```
 
 ## TrackSourceSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import TrackSourceSettingsTypeDef
+
+def get_value() -> TrackSourceSettingsTypeDef:
+    return {
+        "TrackNumber": ...,
+    }
 ```
 
-Optional fields:
-
-- `TrackNumber`: `int`
-
-<a id="ttmldestinationsettingstypedef"></a>
+```python title="Definition"
+class TrackSourceSettingsTypeDef(TypedDict):
+    TrackNumber: NotRequired[int],
+```
 
 ## TtmlDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import TtmlDestinationSettingsTypeDef
+
+def get_value() -> TtmlDestinationSettingsTypeDef:
+    return {
+        "StylePassthrough": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TtmlDestinationSettingsTypeDef(TypedDict):
+    StylePassthrough: NotRequired[TtmlStylePassthroughType],  # (1)
+```
 
-- `StylePassthrough`:
-  [TtmlStylePassthroughType](./literals.md#ttmlstylepassthroughtype)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TtmlStylePassthroughType](./literals.md#ttmlstylepassthroughtype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-Optional fields:
-
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatejobtemplaterequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    TagKeys: NotRequired[Sequence[str]],
+```
 
 ## UpdateJobTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateJobTemplateRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobTemplateRequestRequestTypeDef(TypedDict):
+    Name: str,
+    AccelerationSettings: NotRequired[AccelerationSettingsTypeDef],  # (1)
+    Category: NotRequired[str],
+    Description: NotRequired[str],
+    HopDestinations: NotRequired[Sequence[HopDestinationTypeDef]],  # (2)
+    Priority: NotRequired[int],
+    Queue: NotRequired[str],
+    Settings: NotRequired[JobTemplateSettingsTypeDef],  # (3)
+    StatusUpdateInterval: NotRequired[StatusUpdateIntervalType],  # (4)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `AccelerationSettings`:
-  [AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef)
-- `Category`: `str`
-- `Description`: `str`
-- `HopDestinations`:
-  `Sequence`\[[HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef)\]
-- `Priority`: `int`
-- `Queue`: `str`
-- `Settings`:
-  [JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef)
-- `StatusUpdateInterval`:
-  [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
-
-<a id="updatejobtemplateresponsetypedef"></a>
-
+1. See [:material-code-braces: AccelerationSettingsTypeDef](./type_defs.md#accelerationsettingstypedef) 
+2. See [:material-code-braces: HopDestinationTypeDef](./type_defs.md#hopdestinationtypedef) 
+3. See [:material-code-braces: JobTemplateSettingsTypeDef](./type_defs.md#jobtemplatesettingstypedef) 
+4. See [:material-code-brackets: StatusUpdateIntervalType](./literals.md#statusupdateintervaltype) 
 ## UpdateJobTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import UpdateJobTemplateResponseTypeDef
+
+def get_value() -> UpdateJobTemplateResponseTypeDef:
+    return {
+        "JobTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobTemplateResponseTypeDef(TypedDict):
+    JobTemplate: JobTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatepresetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdatePresetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import UpdatePresetRequestRequestTypeDef
+
+def get_value() -> UpdatePresetRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePresetRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Category: NotRequired[str],
+    Description: NotRequired[str],
+    Settings: NotRequired[PresetSettingsTypeDef],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Category`: `str`
-- `Description`: `str`
-- `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
-
-<a id="updatepresetresponsetypedef"></a>
-
+1. See [:material-code-braces: PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef) 
 ## UpdatePresetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import UpdatePresetResponseTypeDef
+
+def get_value() -> UpdatePresetResponseTypeDef:
+    return {
+        "Preset": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdatePresetResponseTypeDef(TypedDict):
+    Preset: PresetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatequeuerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PresetTypeDef](./type_defs.md#presettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateQueueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import UpdateQueueRequestRequestTypeDef
+
+def get_value() -> UpdateQueueRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateQueueRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    ReservationPlanSettings: NotRequired[ReservationPlanSettingsTypeDef],  # (1)
+    Status: NotRequired[QueueStatusType],  # (2)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `ReservationPlanSettings`:
-  [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
-- `Status`: [QueueStatusType](./literals.md#queuestatustype)
-
-<a id="updatequeueresponsetypedef"></a>
-
+1. See [:material-code-braces: ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef) 
+2. See [:material-code-brackets: QueueStatusType](./literals.md#queuestatustype) 
 ## UpdateQueueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import UpdateQueueResponseTypeDef
+
+def get_value() -> UpdateQueueResponseTypeDef:
+    return {
+        "Queue": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateQueueResponseTypeDef(TypedDict):
+    Queue: QueueTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vc3settingstypedef"></a>
-
+1. See [:material-code-braces: QueueTypeDef](./type_defs.md#queuetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## Vc3SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Vc3SettingsTypeDef
+
+def get_value() -> Vc3SettingsTypeDef:
+    return {
+        "FramerateControl": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Vc3SettingsTypeDef(TypedDict):
+    FramerateControl: NotRequired[Vc3FramerateControlType],  # (1)
+    FramerateConversionAlgorithm: NotRequired[Vc3FramerateConversionAlgorithmType],  # (2)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    InterlaceMode: NotRequired[Vc3InterlaceModeType],  # (3)
+    ScanTypeConversionMode: NotRequired[Vc3ScanTypeConversionModeType],  # (4)
+    SlowPal: NotRequired[Vc3SlowPalType],  # (5)
+    Telecine: NotRequired[Vc3TelecineType],  # (6)
+    Vc3Class: NotRequired[Vc3ClassType],  # (7)
+```
 
-- `FramerateControl`:
-  [Vc3FramerateControlType](./literals.md#vc3frameratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [Vc3FramerateConversionAlgorithmType](./literals.md#vc3framerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `InterlaceMode`: [Vc3InterlaceModeType](./literals.md#vc3interlacemodetype)
-- `ScanTypeConversionMode`:
-  [Vc3ScanTypeConversionModeType](./literals.md#vc3scantypeconversionmodetype)
-- `SlowPal`: [Vc3SlowPalType](./literals.md#vc3slowpaltype)
-- `Telecine`: [Vc3TelecineType](./literals.md#vc3telecinetype)
-- `Vc3Class`: [Vc3ClassType](./literals.md#vc3classtype)
-
-<a id="videocodecsettingstypedef"></a>
-
+1. See [:material-code-brackets: Vc3FramerateControlType](./literals.md#vc3frameratecontroltype) 
+2. See [:material-code-brackets: Vc3FramerateConversionAlgorithmType](./literals.md#vc3framerateconversionalgorithmtype) 
+3. See [:material-code-brackets: Vc3InterlaceModeType](./literals.md#vc3interlacemodetype) 
+4. See [:material-code-brackets: Vc3ScanTypeConversionModeType](./literals.md#vc3scantypeconversionmodetype) 
+5. See [:material-code-brackets: Vc3SlowPalType](./literals.md#vc3slowpaltype) 
+6. See [:material-code-brackets: Vc3TelecineType](./literals.md#vc3telecinetype) 
+7. See [:material-code-brackets: Vc3ClassType](./literals.md#vc3classtype) 
 ## VideoCodecSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import VideoCodecSettingsTypeDef
+
+def get_value() -> VideoCodecSettingsTypeDef:
+    return {
+        "Av1Settings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VideoCodecSettingsTypeDef(TypedDict):
+    Av1Settings: NotRequired[Av1SettingsTypeDef],  # (1)
+    AvcIntraSettings: NotRequired[AvcIntraSettingsTypeDef],  # (2)
+    Codec: NotRequired[VideoCodecType],  # (3)
+    FrameCaptureSettings: NotRequired[FrameCaptureSettingsTypeDef],  # (4)
+    H264Settings: NotRequired[H264SettingsTypeDef],  # (5)
+    H265Settings: NotRequired[H265SettingsTypeDef],  # (6)
+    Mpeg2Settings: NotRequired[Mpeg2SettingsTypeDef],  # (7)
+    ProresSettings: NotRequired[ProresSettingsTypeDef],  # (8)
+    Vc3Settings: NotRequired[Vc3SettingsTypeDef],  # (9)
+    Vp8Settings: NotRequired[Vp8SettingsTypeDef],  # (10)
+    Vp9Settings: NotRequired[Vp9SettingsTypeDef],  # (11)
+    XavcSettings: NotRequired[XavcSettingsTypeDef],  # (12)
+```
 
-- `Av1Settings`: [Av1SettingsTypeDef](./type_defs.md#av1settingstypedef)
-- `AvcIntraSettings`:
-  [AvcIntraSettingsTypeDef](./type_defs.md#avcintrasettingstypedef)
-- `Codec`: [VideoCodecType](./literals.md#videocodectype)
-- `FrameCaptureSettings`:
-  [FrameCaptureSettingsTypeDef](./type_defs.md#framecapturesettingstypedef)
-- `H264Settings`: [H264SettingsTypeDef](./type_defs.md#h264settingstypedef)
-- `H265Settings`: [H265SettingsTypeDef](./type_defs.md#h265settingstypedef)
-- `Mpeg2Settings`: [Mpeg2SettingsTypeDef](./type_defs.md#mpeg2settingstypedef)
-- `ProresSettings`:
-  [ProresSettingsTypeDef](./type_defs.md#proressettingstypedef)
-- `Vc3Settings`: [Vc3SettingsTypeDef](./type_defs.md#vc3settingstypedef)
-- `Vp8Settings`: [Vp8SettingsTypeDef](./type_defs.md#vp8settingstypedef)
-- `Vp9Settings`: [Vp9SettingsTypeDef](./type_defs.md#vp9settingstypedef)
-- `XavcSettings`: [XavcSettingsTypeDef](./type_defs.md#xavcsettingstypedef)
-
-<a id="videodescriptiontypedef"></a>
-
+1. See [:material-code-braces: Av1SettingsTypeDef](./type_defs.md#av1settingstypedef) 
+2. See [:material-code-braces: AvcIntraSettingsTypeDef](./type_defs.md#avcintrasettingstypedef) 
+3. See [:material-code-brackets: VideoCodecType](./literals.md#videocodectype) 
+4. See [:material-code-braces: FrameCaptureSettingsTypeDef](./type_defs.md#framecapturesettingstypedef) 
+5. See [:material-code-braces: H264SettingsTypeDef](./type_defs.md#h264settingstypedef) 
+6. See [:material-code-braces: H265SettingsTypeDef](./type_defs.md#h265settingstypedef) 
+7. See [:material-code-braces: Mpeg2SettingsTypeDef](./type_defs.md#mpeg2settingstypedef) 
+8. See [:material-code-braces: ProresSettingsTypeDef](./type_defs.md#proressettingstypedef) 
+9. See [:material-code-braces: Vc3SettingsTypeDef](./type_defs.md#vc3settingstypedef) 
+10. See [:material-code-braces: Vp8SettingsTypeDef](./type_defs.md#vp8settingstypedef) 
+11. See [:material-code-braces: Vp9SettingsTypeDef](./type_defs.md#vp9settingstypedef) 
+12. See [:material-code-braces: XavcSettingsTypeDef](./type_defs.md#xavcsettingstypedef) 
 ## VideoDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import VideoDescriptionTypeDef
+
+def get_value() -> VideoDescriptionTypeDef:
+    return {
+        "AfdSignaling": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VideoDescriptionTypeDef(TypedDict):
+    AfdSignaling: NotRequired[AfdSignalingType],  # (1)
+    AntiAlias: NotRequired[AntiAliasType],  # (2)
+    CodecSettings: NotRequired[VideoCodecSettingsTypeDef],  # (3)
+    ColorMetadata: NotRequired[ColorMetadataType],  # (4)
+    Crop: NotRequired[RectangleTypeDef],  # (5)
+    DropFrameTimecode: NotRequired[DropFrameTimecodeType],  # (6)
+    FixedAfd: NotRequired[int],
+    Height: NotRequired[int],
+    Position: NotRequired[RectangleTypeDef],  # (5)
+    RespondToAfd: NotRequired[RespondToAfdType],  # (8)
+    ScalingBehavior: NotRequired[ScalingBehaviorType],  # (9)
+    Sharpness: NotRequired[int],
+    TimecodeInsertion: NotRequired[VideoTimecodeInsertionType],  # (10)
+    VideoPreprocessors: NotRequired[VideoPreprocessorTypeDef],  # (11)
+    Width: NotRequired[int],
+```
 
-- `AfdSignaling`: [AfdSignalingType](./literals.md#afdsignalingtype)
-- `AntiAlias`: [AntiAliasType](./literals.md#antialiastype)
-- `CodecSettings`:
-  [VideoCodecSettingsTypeDef](./type_defs.md#videocodecsettingstypedef)
-- `ColorMetadata`: [ColorMetadataType](./literals.md#colormetadatatype)
-- `Crop`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
-- `DropFrameTimecode`:
-  [DropFrameTimecodeType](./literals.md#dropframetimecodetype)
-- `FixedAfd`: `int`
-- `Height`: `int`
-- `Position`: [RectangleTypeDef](./type_defs.md#rectangletypedef)
-- `RespondToAfd`: [RespondToAfdType](./literals.md#respondtoafdtype)
-- `ScalingBehavior`: [ScalingBehaviorType](./literals.md#scalingbehaviortype)
-- `Sharpness`: `int`
-- `TimecodeInsertion`:
-  [VideoTimecodeInsertionType](./literals.md#videotimecodeinsertiontype)
-- `VideoPreprocessors`:
-  [VideoPreprocessorTypeDef](./type_defs.md#videopreprocessortypedef)
-- `Width`: `int`
-
-<a id="videodetailtypedef"></a>
-
+1. See [:material-code-brackets: AfdSignalingType](./literals.md#afdsignalingtype) 
+2. See [:material-code-brackets: AntiAliasType](./literals.md#antialiastype) 
+3. See [:material-code-braces: VideoCodecSettingsTypeDef](./type_defs.md#videocodecsettingstypedef) 
+4. See [:material-code-brackets: ColorMetadataType](./literals.md#colormetadatatype) 
+5. See [:material-code-braces: RectangleTypeDef](./type_defs.md#rectangletypedef) 
+6. See [:material-code-brackets: DropFrameTimecodeType](./literals.md#dropframetimecodetype) 
+7. See [:material-code-braces: RectangleTypeDef](./type_defs.md#rectangletypedef) 
+8. See [:material-code-brackets: RespondToAfdType](./literals.md#respondtoafdtype) 
+9. See [:material-code-brackets: ScalingBehaviorType](./literals.md#scalingbehaviortype) 
+10. See [:material-code-brackets: VideoTimecodeInsertionType](./literals.md#videotimecodeinsertiontype) 
+11. See [:material-code-braces: VideoPreprocessorTypeDef](./type_defs.md#videopreprocessortypedef) 
 ## VideoDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import VideoDetailTypeDef
+
+def get_value() -> VideoDetailTypeDef:
+    return {
+        "HeightInPx": ...,
+    }
 ```
 
-Optional fields:
-
-- `HeightInPx`: `int`
-- `WidthInPx`: `int`
-
-<a id="videopreprocessortypedef"></a>
+```python title="Definition"
+class VideoDetailTypeDef(TypedDict):
+    HeightInPx: NotRequired[int],
+    WidthInPx: NotRequired[int],
+```
 
 ## VideoPreprocessorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import VideoPreprocessorTypeDef
+
+def get_value() -> VideoPreprocessorTypeDef:
+    return {
+        "ColorCorrector": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VideoPreprocessorTypeDef(TypedDict):
+    ColorCorrector: NotRequired[ColorCorrectorTypeDef],  # (1)
+    Deinterlacer: NotRequired[DeinterlacerTypeDef],  # (2)
+    DolbyVision: NotRequired[DolbyVisionTypeDef],  # (3)
+    Hdr10Plus: NotRequired[Hdr10PlusTypeDef],  # (4)
+    ImageInserter: NotRequired[ImageInserterTypeDef],  # (5)
+    NoiseReducer: NotRequired[NoiseReducerTypeDef],  # (6)
+    PartnerWatermarking: NotRequired[PartnerWatermarkingTypeDef],  # (7)
+    TimecodeBurnin: NotRequired[TimecodeBurninTypeDef],  # (8)
+```
 
-- `ColorCorrector`:
-  [ColorCorrectorTypeDef](./type_defs.md#colorcorrectortypedef)
-- `Deinterlacer`: [DeinterlacerTypeDef](./type_defs.md#deinterlacertypedef)
-- `DolbyVision`: [DolbyVisionTypeDef](./type_defs.md#dolbyvisiontypedef)
-- `Hdr10Plus`: [Hdr10PlusTypeDef](./type_defs.md#hdr10plustypedef)
-- `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
-- `NoiseReducer`: [NoiseReducerTypeDef](./type_defs.md#noisereducertypedef)
-- `PartnerWatermarking`:
-  [PartnerWatermarkingTypeDef](./type_defs.md#partnerwatermarkingtypedef)
-- `TimecodeBurnin`:
-  [TimecodeBurninTypeDef](./type_defs.md#timecodeburnintypedef)
-
-<a id="videoselectortypedef"></a>
-
+1. See [:material-code-braces: ColorCorrectorTypeDef](./type_defs.md#colorcorrectortypedef) 
+2. See [:material-code-braces: DeinterlacerTypeDef](./type_defs.md#deinterlacertypedef) 
+3. See [:material-code-braces: DolbyVisionTypeDef](./type_defs.md#dolbyvisiontypedef) 
+4. See [:material-code-braces: Hdr10PlusTypeDef](./type_defs.md#hdr10plustypedef) 
+5. See [:material-code-braces: ImageInserterTypeDef](./type_defs.md#imageinsertertypedef) 
+6. See [:material-code-braces: NoiseReducerTypeDef](./type_defs.md#noisereducertypedef) 
+7. See [:material-code-braces: PartnerWatermarkingTypeDef](./type_defs.md#partnerwatermarkingtypedef) 
+8. See [:material-code-braces: TimecodeBurninTypeDef](./type_defs.md#timecodeburnintypedef) 
 ## VideoSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import VideoSelectorTypeDef
+
+def get_value() -> VideoSelectorTypeDef:
+    return {
+        "AlphaBehavior": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VideoSelectorTypeDef(TypedDict):
+    AlphaBehavior: NotRequired[AlphaBehaviorType],  # (1)
+    ColorSpace: NotRequired[ColorSpaceType],  # (2)
+    ColorSpaceUsage: NotRequired[ColorSpaceUsageType],  # (3)
+    EmbeddedTimecodeOverride: NotRequired[EmbeddedTimecodeOverrideType],  # (4)
+    Hdr10Metadata: NotRequired[Hdr10MetadataTypeDef],  # (5)
+    Pid: NotRequired[int],
+    ProgramNumber: NotRequired[int],
+    Rotate: NotRequired[InputRotateType],  # (6)
+    SampleRange: NotRequired[InputSampleRangeType],  # (7)
+```
 
-- `AlphaBehavior`: [AlphaBehaviorType](./literals.md#alphabehaviortype)
-- `ColorSpace`: [ColorSpaceType](./literals.md#colorspacetype)
-- `ColorSpaceUsage`: [ColorSpaceUsageType](./literals.md#colorspaceusagetype)
-- `EmbeddedTimecodeOverride`:
-  [EmbeddedTimecodeOverrideType](./literals.md#embeddedtimecodeoverridetype)
-- `Hdr10Metadata`: [Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef)
-- `Pid`: `int`
-- `ProgramNumber`: `int`
-- `Rotate`: [InputRotateType](./literals.md#inputrotatetype)
-- `SampleRange`: [InputSampleRangeType](./literals.md#inputsamplerangetype)
-
-<a id="vorbissettingstypedef"></a>
-
+1. See [:material-code-brackets: AlphaBehaviorType](./literals.md#alphabehaviortype) 
+2. See [:material-code-brackets: ColorSpaceType](./literals.md#colorspacetype) 
+3. See [:material-code-brackets: ColorSpaceUsageType](./literals.md#colorspaceusagetype) 
+4. See [:material-code-brackets: EmbeddedTimecodeOverrideType](./literals.md#embeddedtimecodeoverridetype) 
+5. See [:material-code-braces: Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef) 
+6. See [:material-code-brackets: InputRotateType](./literals.md#inputrotatetype) 
+7. See [:material-code-brackets: InputSampleRangeType](./literals.md#inputsamplerangetype) 
 ## VorbisSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import VorbisSettingsTypeDef
+
+def get_value() -> VorbisSettingsTypeDef:
+    return {
+        "Channels": ...,
+    }
 ```
 
-Optional fields:
-
-- `Channels`: `int`
-- `SampleRate`: `int`
-- `VbrQuality`: `int`
-
-<a id="vp8settingstypedef"></a>
+```python title="Definition"
+class VorbisSettingsTypeDef(TypedDict):
+    Channels: NotRequired[int],
+    SampleRate: NotRequired[int],
+    VbrQuality: NotRequired[int],
+```
 
 ## Vp8SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Vp8SettingsTypeDef
+
+def get_value() -> Vp8SettingsTypeDef:
+    return {
+        "Bitrate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Vp8SettingsTypeDef(TypedDict):
+    Bitrate: NotRequired[int],
+    FramerateControl: NotRequired[Vp8FramerateControlType],  # (1)
+    FramerateConversionAlgorithm: NotRequired[Vp8FramerateConversionAlgorithmType],  # (2)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    GopSize: NotRequired[float],
+    HrdBufferSize: NotRequired[int],
+    MaxBitrate: NotRequired[int],
+    ParControl: NotRequired[Vp8ParControlType],  # (3)
+    ParDenominator: NotRequired[int],
+    ParNumerator: NotRequired[int],
+    QualityTuningLevel: NotRequired[Vp8QualityTuningLevelType],  # (4)
+    RateControlMode: NotRequired[Vp8RateControlModeType],  # (5)
+```
 
-- `Bitrate`: `int`
-- `FramerateControl`:
-  [Vp8FramerateControlType](./literals.md#vp8frameratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [Vp8FramerateConversionAlgorithmType](./literals.md#vp8framerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `GopSize`: `float`
-- `HrdBufferSize`: `int`
-- `MaxBitrate`: `int`
-- `ParControl`: [Vp8ParControlType](./literals.md#vp8parcontroltype)
-- `ParDenominator`: `int`
-- `ParNumerator`: `int`
-- `QualityTuningLevel`:
-  [Vp8QualityTuningLevelType](./literals.md#vp8qualitytuningleveltype)
-- `RateControlMode`: `Literal['VBR']` (see
-  [Vp8RateControlModeType](./literals.md#vp8ratecontrolmodetype))
-
-<a id="vp9settingstypedef"></a>
-
+1. See [:material-code-brackets: Vp8FramerateControlType](./literals.md#vp8frameratecontroltype) 
+2. See [:material-code-brackets: Vp8FramerateConversionAlgorithmType](./literals.md#vp8framerateconversionalgorithmtype) 
+3. See [:material-code-brackets: Vp8ParControlType](./literals.md#vp8parcontroltype) 
+4. See [:material-code-brackets: Vp8QualityTuningLevelType](./literals.md#vp8qualitytuningleveltype) 
+5. See [:material-code-brackets: Vp8RateControlModeType](./literals.md#vp8ratecontrolmodetype) 
 ## Vp9SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Vp9SettingsTypeDef
+
+def get_value() -> Vp9SettingsTypeDef:
+    return {
+        "Bitrate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Vp9SettingsTypeDef(TypedDict):
+    Bitrate: NotRequired[int],
+    FramerateControl: NotRequired[Vp9FramerateControlType],  # (1)
+    FramerateConversionAlgorithm: NotRequired[Vp9FramerateConversionAlgorithmType],  # (2)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    GopSize: NotRequired[float],
+    HrdBufferSize: NotRequired[int],
+    MaxBitrate: NotRequired[int],
+    ParControl: NotRequired[Vp9ParControlType],  # (3)
+    ParDenominator: NotRequired[int],
+    ParNumerator: NotRequired[int],
+    QualityTuningLevel: NotRequired[Vp9QualityTuningLevelType],  # (4)
+    RateControlMode: NotRequired[Vp9RateControlModeType],  # (5)
+```
 
-- `Bitrate`: `int`
-- `FramerateControl`:
-  [Vp9FramerateControlType](./literals.md#vp9frameratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [Vp9FramerateConversionAlgorithmType](./literals.md#vp9framerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `GopSize`: `float`
-- `HrdBufferSize`: `int`
-- `MaxBitrate`: `int`
-- `ParControl`: [Vp9ParControlType](./literals.md#vp9parcontroltype)
-- `ParDenominator`: `int`
-- `ParNumerator`: `int`
-- `QualityTuningLevel`:
-  [Vp9QualityTuningLevelType](./literals.md#vp9qualitytuningleveltype)
-- `RateControlMode`: `Literal['VBR']` (see
-  [Vp9RateControlModeType](./literals.md#vp9ratecontrolmodetype))
-
-<a id="wavsettingstypedef"></a>
-
+1. See [:material-code-brackets: Vp9FramerateControlType](./literals.md#vp9frameratecontroltype) 
+2. See [:material-code-brackets: Vp9FramerateConversionAlgorithmType](./literals.md#vp9framerateconversionalgorithmtype) 
+3. See [:material-code-brackets: Vp9ParControlType](./literals.md#vp9parcontroltype) 
+4. See [:material-code-brackets: Vp9QualityTuningLevelType](./literals.md#vp9qualitytuningleveltype) 
+5. See [:material-code-brackets: Vp9RateControlModeType](./literals.md#vp9ratecontrolmodetype) 
 ## WavSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import WavSettingsTypeDef
+
+def get_value() -> WavSettingsTypeDef:
+    return {
+        "BitDepth": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WavSettingsTypeDef(TypedDict):
+    BitDepth: NotRequired[int],
+    Channels: NotRequired[int],
+    Format: NotRequired[WavFormatType],  # (1)
+    SampleRate: NotRequired[int],
+```
 
-- `BitDepth`: `int`
-- `Channels`: `int`
-- `Format`: [WavFormatType](./literals.md#wavformattype)
-- `SampleRate`: `int`
-
-<a id="webvttdestinationsettingstypedef"></a>
-
+1. See [:material-code-brackets: WavFormatType](./literals.md#wavformattype) 
 ## WebvttDestinationSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import WebvttDestinationSettingsTypeDef
+
+def get_value() -> WebvttDestinationSettingsTypeDef:
+    return {
+        "Accessibility": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WebvttDestinationSettingsTypeDef(TypedDict):
+    Accessibility: NotRequired[WebvttAccessibilitySubsType],  # (1)
+    StylePassthrough: NotRequired[WebvttStylePassthroughType],  # (2)
+```
 
-- `Accessibility`:
-  [WebvttAccessibilitySubsType](./literals.md#webvttaccessibilitysubstype)
-- `StylePassthrough`:
-  [WebvttStylePassthroughType](./literals.md#webvttstylepassthroughtype)
-
-<a id="webvtthlssourcesettingstypedef"></a>
-
+1. See [:material-code-brackets: WebvttAccessibilitySubsType](./literals.md#webvttaccessibilitysubstype) 
+2. See [:material-code-brackets: WebvttStylePassthroughType](./literals.md#webvttstylepassthroughtype) 
 ## WebvttHlsSourceSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import WebvttHlsSourceSettingsTypeDef
+
+def get_value() -> WebvttHlsSourceSettingsTypeDef:
+    return {
+        "RenditionGroupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WebvttHlsSourceSettingsTypeDef(TypedDict):
+    RenditionGroupId: NotRequired[str],
+    RenditionLanguageCode: NotRequired[LanguageCodeType],  # (1)
+    RenditionName: NotRequired[str],
+```
 
-- `RenditionGroupId`: `str`
-- `RenditionLanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `RenditionName`: `str`
-
-<a id="xavc4kintracbgprofilesettingstypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## Xavc4kIntraCbgProfileSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Xavc4kIntraCbgProfileSettingsTypeDef
+
+def get_value() -> Xavc4kIntraCbgProfileSettingsTypeDef:
+    return {
+        "XavcClass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Xavc4kIntraCbgProfileSettingsTypeDef(TypedDict):
+    XavcClass: NotRequired[Xavc4kIntraCbgProfileClassType],  # (1)
+```
 
-- `XavcClass`:
-  [Xavc4kIntraCbgProfileClassType](./literals.md#xavc4kintracbgprofileclasstype)
-
-<a id="xavc4kintravbrprofilesettingstypedef"></a>
-
+1. See [:material-code-brackets: Xavc4kIntraCbgProfileClassType](./literals.md#xavc4kintracbgprofileclasstype) 
 ## Xavc4kIntraVbrProfileSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Xavc4kIntraVbrProfileSettingsTypeDef
+
+def get_value() -> Xavc4kIntraVbrProfileSettingsTypeDef:
+    return {
+        "XavcClass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Xavc4kIntraVbrProfileSettingsTypeDef(TypedDict):
+    XavcClass: NotRequired[Xavc4kIntraVbrProfileClassType],  # (1)
+```
 
-- `XavcClass`:
-  [Xavc4kIntraVbrProfileClassType](./literals.md#xavc4kintravbrprofileclasstype)
-
-<a id="xavc4kprofilesettingstypedef"></a>
-
+1. See [:material-code-brackets: Xavc4kIntraVbrProfileClassType](./literals.md#xavc4kintravbrprofileclasstype) 
 ## Xavc4kProfileSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import Xavc4kProfileSettingsTypeDef
+
+def get_value() -> Xavc4kProfileSettingsTypeDef:
+    return {
+        "BitrateClass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Xavc4kProfileSettingsTypeDef(TypedDict):
+    BitrateClass: NotRequired[Xavc4kProfileBitrateClassType],  # (1)
+    CodecProfile: NotRequired[Xavc4kProfileCodecProfileType],  # (2)
+    FlickerAdaptiveQuantization: NotRequired[XavcFlickerAdaptiveQuantizationType],  # (3)
+    GopBReference: NotRequired[XavcGopBReferenceType],  # (4)
+    GopClosedCadence: NotRequired[int],
+    HrdBufferSize: NotRequired[int],
+    QualityTuningLevel: NotRequired[Xavc4kProfileQualityTuningLevelType],  # (5)
+    Slices: NotRequired[int],
+```
 
-- `BitrateClass`:
-  [Xavc4kProfileBitrateClassType](./literals.md#xavc4kprofilebitrateclasstype)
-- `CodecProfile`:
-  [Xavc4kProfileCodecProfileType](./literals.md#xavc4kprofilecodecprofiletype)
-- `FlickerAdaptiveQuantization`:
-  [XavcFlickerAdaptiveQuantizationType](./literals.md#xavcflickeradaptivequantizationtype)
-- `GopBReference`: [XavcGopBReferenceType](./literals.md#xavcgopbreferencetype)
-- `GopClosedCadence`: `int`
-- `HrdBufferSize`: `int`
-- `QualityTuningLevel`:
-  [Xavc4kProfileQualityTuningLevelType](./literals.md#xavc4kprofilequalitytuningleveltype)
-- `Slices`: `int`
-
-<a id="xavchdintracbgprofilesettingstypedef"></a>
-
+1. See [:material-code-brackets: Xavc4kProfileBitrateClassType](./literals.md#xavc4kprofilebitrateclasstype) 
+2. See [:material-code-brackets: Xavc4kProfileCodecProfileType](./literals.md#xavc4kprofilecodecprofiletype) 
+3. See [:material-code-brackets: XavcFlickerAdaptiveQuantizationType](./literals.md#xavcflickeradaptivequantizationtype) 
+4. See [:material-code-brackets: XavcGopBReferenceType](./literals.md#xavcgopbreferencetype) 
+5. See [:material-code-brackets: Xavc4kProfileQualityTuningLevelType](./literals.md#xavc4kprofilequalitytuningleveltype) 
 ## XavcHdIntraCbgProfileSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import XavcHdIntraCbgProfileSettingsTypeDef
+
+def get_value() -> XavcHdIntraCbgProfileSettingsTypeDef:
+    return {
+        "XavcClass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class XavcHdIntraCbgProfileSettingsTypeDef(TypedDict):
+    XavcClass: NotRequired[XavcHdIntraCbgProfileClassType],  # (1)
+```
 
-- `XavcClass`:
-  [XavcHdIntraCbgProfileClassType](./literals.md#xavchdintracbgprofileclasstype)
-
-<a id="xavchdprofilesettingstypedef"></a>
-
+1. See [:material-code-brackets: XavcHdIntraCbgProfileClassType](./literals.md#xavchdintracbgprofileclasstype) 
 ## XavcHdProfileSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import XavcHdProfileSettingsTypeDef
+
+def get_value() -> XavcHdProfileSettingsTypeDef:
+    return {
+        "BitrateClass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class XavcHdProfileSettingsTypeDef(TypedDict):
+    BitrateClass: NotRequired[XavcHdProfileBitrateClassType],  # (1)
+    FlickerAdaptiveQuantization: NotRequired[XavcFlickerAdaptiveQuantizationType],  # (2)
+    GopBReference: NotRequired[XavcGopBReferenceType],  # (3)
+    GopClosedCadence: NotRequired[int],
+    HrdBufferSize: NotRequired[int],
+    InterlaceMode: NotRequired[XavcInterlaceModeType],  # (4)
+    QualityTuningLevel: NotRequired[XavcHdProfileQualityTuningLevelType],  # (5)
+    Slices: NotRequired[int],
+    Telecine: NotRequired[XavcHdProfileTelecineType],  # (6)
+```
 
-- `BitrateClass`:
-  [XavcHdProfileBitrateClassType](./literals.md#xavchdprofilebitrateclasstype)
-- `FlickerAdaptiveQuantization`:
-  [XavcFlickerAdaptiveQuantizationType](./literals.md#xavcflickeradaptivequantizationtype)
-- `GopBReference`: [XavcGopBReferenceType](./literals.md#xavcgopbreferencetype)
-- `GopClosedCadence`: `int`
-- `HrdBufferSize`: `int`
-- `InterlaceMode`: [XavcInterlaceModeType](./literals.md#xavcinterlacemodetype)
-- `QualityTuningLevel`:
-  [XavcHdProfileQualityTuningLevelType](./literals.md#xavchdprofilequalitytuningleveltype)
-- `Slices`: `int`
-- `Telecine`:
-  [XavcHdProfileTelecineType](./literals.md#xavchdprofiletelecinetype)
-
-<a id="xavcsettingstypedef"></a>
-
+1. See [:material-code-brackets: XavcHdProfileBitrateClassType](./literals.md#xavchdprofilebitrateclasstype) 
+2. See [:material-code-brackets: XavcFlickerAdaptiveQuantizationType](./literals.md#xavcflickeradaptivequantizationtype) 
+3. See [:material-code-brackets: XavcGopBReferenceType](./literals.md#xavcgopbreferencetype) 
+4. See [:material-code-brackets: XavcInterlaceModeType](./literals.md#xavcinterlacemodetype) 
+5. See [:material-code-brackets: XavcHdProfileQualityTuningLevelType](./literals.md#xavchdprofilequalitytuningleveltype) 
+6. See [:material-code-brackets: XavcHdProfileTelecineType](./literals.md#xavchdprofiletelecinetype) 
 ## XavcSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconvert.type_defs import XavcSettingsTypeDef
+
+def get_value() -> XavcSettingsTypeDef:
+    return {
+        "AdaptiveQuantization": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class XavcSettingsTypeDef(TypedDict):
+    AdaptiveQuantization: NotRequired[XavcAdaptiveQuantizationType],  # (1)
+    EntropyEncoding: NotRequired[XavcEntropyEncodingType],  # (2)
+    FramerateControl: NotRequired[XavcFramerateControlType],  # (3)
+    FramerateConversionAlgorithm: NotRequired[XavcFramerateConversionAlgorithmType],  # (4)
+    FramerateDenominator: NotRequired[int],
+    FramerateNumerator: NotRequired[int],
+    Profile: NotRequired[XavcProfileType],  # (5)
+    SlowPal: NotRequired[XavcSlowPalType],  # (6)
+    Softness: NotRequired[int],
+    SpatialAdaptiveQuantization: NotRequired[XavcSpatialAdaptiveQuantizationType],  # (7)
+    TemporalAdaptiveQuantization: NotRequired[XavcTemporalAdaptiveQuantizationType],  # (8)
+    Xavc4kIntraCbgProfileSettings: NotRequired[Xavc4kIntraCbgProfileSettingsTypeDef],  # (9)
+    Xavc4kIntraVbrProfileSettings: NotRequired[Xavc4kIntraVbrProfileSettingsTypeDef],  # (10)
+    Xavc4kProfileSettings: NotRequired[Xavc4kProfileSettingsTypeDef],  # (11)
+    XavcHdIntraCbgProfileSettings: NotRequired[XavcHdIntraCbgProfileSettingsTypeDef],  # (12)
+    XavcHdProfileSettings: NotRequired[XavcHdProfileSettingsTypeDef],  # (13)
+```
 
-- `AdaptiveQuantization`:
-  [XavcAdaptiveQuantizationType](./literals.md#xavcadaptivequantizationtype)
-- `EntropyEncoding`:
-  [XavcEntropyEncodingType](./literals.md#xavcentropyencodingtype)
-- `FramerateControl`:
-  [XavcFramerateControlType](./literals.md#xavcframeratecontroltype)
-- `FramerateConversionAlgorithm`:
-  [XavcFramerateConversionAlgorithmType](./literals.md#xavcframerateconversionalgorithmtype)
-- `FramerateDenominator`: `int`
-- `FramerateNumerator`: `int`
-- `Profile`: [XavcProfileType](./literals.md#xavcprofiletype)
-- `SlowPal`: [XavcSlowPalType](./literals.md#xavcslowpaltype)
-- `Softness`: `int`
-- `SpatialAdaptiveQuantization`:
-  [XavcSpatialAdaptiveQuantizationType](./literals.md#xavcspatialadaptivequantizationtype)
-- `TemporalAdaptiveQuantization`:
-  [XavcTemporalAdaptiveQuantizationType](./literals.md#xavctemporaladaptivequantizationtype)
-- `Xavc4kIntraCbgProfileSettings`:
-  [Xavc4kIntraCbgProfileSettingsTypeDef](./type_defs.md#xavc4kintracbgprofilesettingstypedef)
-- `Xavc4kIntraVbrProfileSettings`:
-  [Xavc4kIntraVbrProfileSettingsTypeDef](./type_defs.md#xavc4kintravbrprofilesettingstypedef)
-- `Xavc4kProfileSettings`:
-  [Xavc4kProfileSettingsTypeDef](./type_defs.md#xavc4kprofilesettingstypedef)
-- `XavcHdIntraCbgProfileSettings`:
-  [XavcHdIntraCbgProfileSettingsTypeDef](./type_defs.md#xavchdintracbgprofilesettingstypedef)
-- `XavcHdProfileSettings`:
-  [XavcHdProfileSettingsTypeDef](./type_defs.md#xavchdprofilesettingstypedef)
+1. See [:material-code-brackets: XavcAdaptiveQuantizationType](./literals.md#xavcadaptivequantizationtype) 
+2. See [:material-code-brackets: XavcEntropyEncodingType](./literals.md#xavcentropyencodingtype) 
+3. See [:material-code-brackets: XavcFramerateControlType](./literals.md#xavcframeratecontroltype) 
+4. See [:material-code-brackets: XavcFramerateConversionAlgorithmType](./literals.md#xavcframerateconversionalgorithmtype) 
+5. See [:material-code-brackets: XavcProfileType](./literals.md#xavcprofiletype) 
+6. See [:material-code-brackets: XavcSlowPalType](./literals.md#xavcslowpaltype) 
+7. See [:material-code-brackets: XavcSpatialAdaptiveQuantizationType](./literals.md#xavcspatialadaptivequantizationtype) 
+8. See [:material-code-brackets: XavcTemporalAdaptiveQuantizationType](./literals.md#xavctemporaladaptivequantizationtype) 
+9. See [:material-code-braces: Xavc4kIntraCbgProfileSettingsTypeDef](./type_defs.md#xavc4kintracbgprofilesettingstypedef) 
+10. See [:material-code-braces: Xavc4kIntraVbrProfileSettingsTypeDef](./type_defs.md#xavc4kintravbrprofilesettingstypedef) 
+11. See [:material-code-braces: Xavc4kProfileSettingsTypeDef](./type_defs.md#xavc4kprofilesettingstypedef) 
+12. See [:material-code-braces: XavcHdIntraCbgProfileSettingsTypeDef](./type_defs.md#xavchdintracbgprofilesettingstypedef) 
+13. See [:material-code-braces: XavcHdProfileSettingsTypeDef](./type_defs.md#xavchdprofilesettingstypedef) 

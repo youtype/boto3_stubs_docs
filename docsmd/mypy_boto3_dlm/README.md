@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-dlm-module"></a>
-
-# Type annotations for boto3 DLM module
+#  DLM module
 
 > [Index](../README.md) > DLM
 
-Auto-generated documentation for
-[DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
-type annotations stubs module
-[mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
+!!! note ""
 
-- [Type annotations for boto3 DLM module](#type-annotations-for-boto3-dlm-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DLMClient](#dlmclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+    type annotations stubs module [mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DLM`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[dlm]'
 python -m pip install mypy-boto3-dlm
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,62 +42,41 @@ python -m pip install mypy-boto3-dlm
 python -m pip uninstall -y mypy-boto3-dlm
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="dlmclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DLMClient
 
-Type annotations for `boto3.client("dlm")` as [DLMClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("dlm")` as [DLMClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_dlm.client import DLMClient
+
+def get_client() -> DLMClient:
+    return Session().cleint("dlm")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_lifecycle_policy](./client.md#create_lifecycle_policy)
-- [delete_lifecycle_policy](./client.md#delete_lifecycle_policy)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_lifecycle_policies](./client.md#get_lifecycle_policies)
-- [get_lifecycle_policy](./client.md#get_lifecycle_policy)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_lifecycle_policy](./client.md#update_lifecycle_policy)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-DLMClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- InternalServerException
-- InvalidRequestException
-- LimitExceededException
-- ResourceNotFoundException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dlm.literals import EventSourceValuesType
 
-```python
-from mypy_boto3_dlm.literals import EventSourceValuesType, ...
+def get_value() -> EventSourceValuesType:
+    return "MANAGED_CWE"
 ```
 
 - [EventSourceValuesType](./literals.md#eventsourcevaluestype)
@@ -135,17 +93,21 @@ from mypy_boto3_dlm.literals import EventSourceValuesType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dlm.type_defs import ActionTypeDef
 
-```python
-from mypy_boto3_dlm.type_defs import ActionTypeDef, ...
+def get_value() -> ActionTypeDef:
+    return {
+        "Name": ...,
+        "CrossRegionCopy": ...,
+    }
 ```
 
 - [ActionTypeDef](./type_defs.md#actiontypedef)
@@ -180,3 +142,4 @@ from mypy_boto3_dlm.type_defs import ActionTypeDef, ...
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateLifecyclePolicyRequestRequestTypeDef](./type_defs.md#updatelifecyclepolicyrequestrequesttypedef)
+

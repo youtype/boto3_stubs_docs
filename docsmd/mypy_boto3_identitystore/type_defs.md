@@ -1,201 +1,249 @@
-<a id="typed-dictionaries-for-boto3-identitystore-module"></a>
-
-# Typed dictionaries for boto3 IdentityStore module
+# Typed dictionaries
 
 > [Index](../README.md) > [IdentityStore](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
-type annotations stubs module
-[mypy-boto3-identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IdentityStore module](#typed-dictionaries-for-boto3-identitystore-module)
-  - [DescribeGroupRequestRequestTypeDef](#describegrouprequestrequesttypedef)
-  - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
-  - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
-  - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [GroupTypeDef](#grouptypedef)
-  - [ListGroupsRequestRequestTypeDef](#listgroupsrequestrequesttypedef)
-  - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
-  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
-  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [UserTypeDef](#usertypedef)
-
-<a id="describegrouprequestrequesttypedef"></a>
+    Auto-generated documentation for [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
+    type annotations stubs module [mypy-boto3-identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
 ## DescribeGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import DescribeGroupRequestRequestTypeDef
+
+def get_value() -> DescribeGroupRequestRequestTypeDef:
+    return {
+        "IdentityStoreId": ...,
+        "GroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `IdentityStoreId`: `str`
-- `GroupId`: `str`
-
-<a id="describegroupresponsetypedef"></a>
+```python title="Definition"
+class DescribeGroupRequestRequestTypeDef(TypedDict):
+    IdentityStoreId: str,
+    GroupId: str,
+```
 
 ## DescribeGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import DescribeGroupResponseTypeDef
+
+def get_value() -> DescribeGroupResponseTypeDef:
+    return {
+        "GroupId": ...,
+        "DisplayName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGroupResponseTypeDef(TypedDict):
+    GroupId: str,
+    DisplayName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GroupId`: `str`
-- `DisplayName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import DescribeUserRequestRequestTypeDef
+
+def get_value() -> DescribeUserRequestRequestTypeDef:
+    return {
+        "IdentityStoreId": ...,
+        "UserId": ...,
+    }
 ```
 
-Required fields:
-
-- `IdentityStoreId`: `str`
-- `UserId`: `str`
-
-<a id="describeuserresponsetypedef"></a>
+```python title="Definition"
+class DescribeUserRequestRequestTypeDef(TypedDict):
+    IdentityStoreId: str,
+    UserId: str,
+```
 
 ## DescribeUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import DescribeUserResponseTypeDef
+
+def get_value() -> DescribeUserResponseTypeDef:
+    return {
+        "UserName": ...,
+        "UserId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUserResponseTypeDef(TypedDict):
+    UserName: str,
+    UserId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UserName`: `str`
-- `UserId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "AttributePath": ...,
+        "AttributeValue": ...,
+    }
 ```
 
-Required fields:
-
-- `AttributePath`: `str`
-- `AttributeValue`: `str`
-
-<a id="grouptypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    AttributePath: str,
+    AttributeValue: str,
+```
 
 ## GroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import GroupTypeDef
+
+def get_value() -> GroupTypeDef:
+    return {
+        "GroupId": ...,
+        "DisplayName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupId`: `str`
-- `DisplayName`: `str`
-
-<a id="listgroupsrequestrequesttypedef"></a>
+```python title="Definition"
+class GroupTypeDef(TypedDict):
+    GroupId: str,
+    DisplayName: str,
+```
 
 ## ListGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import ListGroupsRequestRequestTypeDef
+
+def get_value() -> ListGroupsRequestRequestTypeDef:
+    return {
+        "IdentityStoreId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGroupsRequestRequestTypeDef(TypedDict):
+    IdentityStoreId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `IdentityStoreId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listgroupsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import ListGroupsResponseTypeDef
+
+def get_value() -> ListGroupsResponseTypeDef:
+    return {
+        "Groups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGroupsResponseTypeDef(TypedDict):
+    Groups: List[GroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listusersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import ListUsersRequestRequestTypeDef
+
+def get_value() -> ListUsersRequestRequestTypeDef:
+    return {
+        "IdentityStoreId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUsersRequestRequestTypeDef(TypedDict):
+    IdentityStoreId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `IdentityStoreId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listusersresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListUsersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import ListUsersResponseTypeDef
+
+def get_value() -> ListUsersResponseTypeDef:
+    return {
+        "Users": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUsersResponseTypeDef(TypedDict):
+    Users: List[UserTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="usertypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## UserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_identitystore.type_defs import UserTypeDef
+
+def get_value() -> UserTypeDef:
+    return {
+        "UserName": ...,
+        "UserId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UserTypeDef(TypedDict):
+    UserName: str,
+    UserId: str,
+```
 
-- `UserName`: `str`
-- `UserId`: `str`

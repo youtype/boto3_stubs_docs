@@ -1,709 +1,746 @@
-<a id="literals-for-boto3-mturk-module"></a>
-
-# Literals for boto3 MTurk module
+# Literals
 
 > [Index](../README.md) > [MTurk](./README.md) > Literals
 
-Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
-type annotations stubs module
-[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
+!!! note ""
 
-- [Literals for boto3 MTurk module](#literals-for-boto3-mturk-module)
-  - [AssignmentStatusType](#assignmentstatustype)
-  - [ComparatorType](#comparatortype)
-  - [EventTypeType](#eventtypetype)
-  - [HITAccessActionsType](#hitaccessactionstype)
-  - [HITReviewStatusType](#hitreviewstatustype)
-  - [HITStatusType](#hitstatustype)
-  - [ListAssignmentsForHITPaginatorName](#listassignmentsforhitpaginatorname)
-  - [ListBonusPaymentsPaginatorName](#listbonuspaymentspaginatorname)
-  - [ListHITsForQualificationTypePaginatorName](#listhitsforqualificationtypepaginatorname)
-  - [ListHITsPaginatorName](#listhitspaginatorname)
-  - [ListQualificationRequestsPaginatorName](#listqualificationrequestspaginatorname)
-  - [ListQualificationTypesPaginatorName](#listqualificationtypespaginatorname)
-  - [ListReviewableHITsPaginatorName](#listreviewablehitspaginatorname)
-  - [ListWorkerBlocksPaginatorName](#listworkerblockspaginatorname)
-  - [ListWorkersWithQualificationTypePaginatorName](#listworkerswithqualificationtypepaginatorname)
-  - [NotificationTransportType](#notificationtransporttype)
-  - [NotifyWorkersFailureCodeType](#notifyworkersfailurecodetype)
-  - [QualificationStatusType](#qualificationstatustype)
-  - [QualificationTypeStatusType](#qualificationtypestatustype)
-  - [ReviewActionStatusType](#reviewactionstatustype)
-  - [ReviewPolicyLevelType](#reviewpolicyleveltype)
-  - [ReviewableHITStatusType](#reviewablehitstatustype)
-  - [MTurkServiceName](#mturkservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="assignmentstatustype"></a>
+    Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+    type annotations stubs module [mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 ## AssignmentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import AssignmentStatusType
+
+def get_value() -> AssignmentStatusType:
+    return "Approved"
 ```
 
-Values:
-
-- `Approved`
-- `Rejected`
-- `Submitted`
-
-<a id="comparatortype"></a>
-
+```python title="Definition"
+AssignmentStatusType = Literal[
+    "Approved",
+    "Rejected",
+    "Submitted",
+]
+```
 ## ComparatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ComparatorType
+
+def get_value() -> ComparatorType:
+    return "DoesNotExist"
 ```
 
-Values:
-
-- `DoesNotExist`
-- `EqualTo`
-- `Exists`
-- `GreaterThan`
-- `GreaterThanOrEqualTo`
-- `In`
-- `LessThan`
-- `LessThanOrEqualTo`
-- `NotEqualTo`
-- `NotIn`
-
-<a id="eventtypetype"></a>
-
+```python title="Definition"
+ComparatorType = Literal[
+    "DoesNotExist",
+    "EqualTo",
+    "Exists",
+    "GreaterThan",
+    "GreaterThanOrEqualTo",
+    "In",
+    "LessThan",
+    "LessThanOrEqualTo",
+    "NotEqualTo",
+    "NotIn",
+]
+```
 ## EventTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import EventTypeType
+
+def get_value() -> EventTypeType:
+    return "AssignmentAbandoned"
 ```
 
-Values:
-
-- `AssignmentAbandoned`
-- `AssignmentAccepted`
-- `AssignmentApproved`
-- `AssignmentRejected`
-- `AssignmentReturned`
-- `AssignmentSubmitted`
-- `HITCreated`
-- `HITDisposed`
-- `HITExpired`
-- `HITExtended`
-- `HITReviewable`
-- `Ping`
-
-<a id="hitaccessactionstype"></a>
-
+```python title="Definition"
+EventTypeType = Literal[
+    "AssignmentAbandoned",
+    "AssignmentAccepted",
+    "AssignmentApproved",
+    "AssignmentRejected",
+    "AssignmentReturned",
+    "AssignmentSubmitted",
+    "HITCreated",
+    "HITDisposed",
+    "HITExpired",
+    "HITExtended",
+    "HITReviewable",
+    "Ping",
+]
+```
 ## HITAccessActionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import HITAccessActionsType
+
+def get_value() -> HITAccessActionsType:
+    return "Accept"
 ```
 
-Values:
-
-- `Accept`
-- `DiscoverPreviewAndAccept`
-- `PreviewAndAccept`
-
-<a id="hitreviewstatustype"></a>
-
+```python title="Definition"
+HITAccessActionsType = Literal[
+    "Accept",
+    "DiscoverPreviewAndAccept",
+    "PreviewAndAccept",
+]
+```
 ## HITReviewStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import HITReviewStatusType
+
+def get_value() -> HITReviewStatusType:
+    return "MarkedForReview"
 ```
 
-Values:
-
-- `MarkedForReview`
-- `NotReviewed`
-- `ReviewedAppropriate`
-- `ReviewedInappropriate`
-
-<a id="hitstatustype"></a>
-
+```python title="Definition"
+HITReviewStatusType = Literal[
+    "MarkedForReview",
+    "NotReviewed",
+    "ReviewedAppropriate",
+    "ReviewedInappropriate",
+]
+```
 ## HITStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import HITStatusType
+
+def get_value() -> HITStatusType:
+    return "Assignable"
 ```
 
-Values:
-
-- `Assignable`
-- `Disposed`
-- `Reviewable`
-- `Reviewing`
-- `Unassignable`
-
-<a id="listassignmentsforhitpaginatorname"></a>
-
+```python title="Definition"
+HITStatusType = Literal[
+    "Assignable",
+    "Disposed",
+    "Reviewable",
+    "Reviewing",
+    "Unassignable",
+]
+```
 ## ListAssignmentsForHITPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ListAssignmentsForHITPaginatorName
+
+def get_value() -> ListAssignmentsForHITPaginatorName:
+    return "list_assignments_for_hit"
 ```
 
-Values:
-
-- `list_assignments_for_hit`
-
-<a id="listbonuspaymentspaginatorname"></a>
-
+```python title="Definition"
+ListAssignmentsForHITPaginatorName = Literal[
+    "list_assignments_for_hit",
+]
+```
 ## ListBonusPaymentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ListBonusPaymentsPaginatorName
+
+def get_value() -> ListBonusPaymentsPaginatorName:
+    return "list_bonus_payments"
 ```
 
-Values:
-
-- `list_bonus_payments`
-
-<a id="listhitsforqualificationtypepaginatorname"></a>
-
+```python title="Definition"
+ListBonusPaymentsPaginatorName = Literal[
+    "list_bonus_payments",
+]
+```
 ## ListHITsForQualificationTypePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ListHITsForQualificationTypePaginatorName
+
+def get_value() -> ListHITsForQualificationTypePaginatorName:
+    return "list_hits_for_qualification_type"
 ```
 
-Values:
-
-- `list_hits_for_qualification_type`
-
-<a id="listhitspaginatorname"></a>
-
+```python title="Definition"
+ListHITsForQualificationTypePaginatorName = Literal[
+    "list_hits_for_qualification_type",
+]
+```
 ## ListHITsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ListHITsPaginatorName
+
+def get_value() -> ListHITsPaginatorName:
+    return "list_hits"
 ```
 
-Values:
-
-- `list_hits`
-
-<a id="listqualificationrequestspaginatorname"></a>
-
+```python title="Definition"
+ListHITsPaginatorName = Literal[
+    "list_hits",
+]
+```
 ## ListQualificationRequestsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ListQualificationRequestsPaginatorName
+
+def get_value() -> ListQualificationRequestsPaginatorName:
+    return "list_qualification_requests"
 ```
 
-Values:
-
-- `list_qualification_requests`
-
-<a id="listqualificationtypespaginatorname"></a>
-
+```python title="Definition"
+ListQualificationRequestsPaginatorName = Literal[
+    "list_qualification_requests",
+]
+```
 ## ListQualificationTypesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ListQualificationTypesPaginatorName
+
+def get_value() -> ListQualificationTypesPaginatorName:
+    return "list_qualification_types"
 ```
 
-Values:
-
-- `list_qualification_types`
-
-<a id="listreviewablehitspaginatorname"></a>
-
+```python title="Definition"
+ListQualificationTypesPaginatorName = Literal[
+    "list_qualification_types",
+]
+```
 ## ListReviewableHITsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ListReviewableHITsPaginatorName
+
+def get_value() -> ListReviewableHITsPaginatorName:
+    return "list_reviewable_hits"
 ```
 
-Values:
-
-- `list_reviewable_hits`
-
-<a id="listworkerblockspaginatorname"></a>
-
+```python title="Definition"
+ListReviewableHITsPaginatorName = Literal[
+    "list_reviewable_hits",
+]
+```
 ## ListWorkerBlocksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ListWorkerBlocksPaginatorName
+
+def get_value() -> ListWorkerBlocksPaginatorName:
+    return "list_worker_blocks"
 ```
 
-Values:
-
-- `list_worker_blocks`
-
-<a id="listworkerswithqualificationtypepaginatorname"></a>
-
+```python title="Definition"
+ListWorkerBlocksPaginatorName = Literal[
+    "list_worker_blocks",
+]
+```
 ## ListWorkersWithQualificationTypePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ListWorkersWithQualificationTypePaginatorName
+
+def get_value() -> ListWorkersWithQualificationTypePaginatorName:
+    return "list_workers_with_qualification_type"
 ```
 
-Values:
-
-- `list_workers_with_qualification_type`
-
-<a id="notificationtransporttype"></a>
-
+```python title="Definition"
+ListWorkersWithQualificationTypePaginatorName = Literal[
+    "list_workers_with_qualification_type",
+]
+```
 ## NotificationTransportType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import NotificationTransportType
+
+def get_value() -> NotificationTransportType:
+    return "Email"
 ```
 
-Values:
-
-- `Email`
-- `SNS`
-- `SQS`
-
-<a id="notifyworkersfailurecodetype"></a>
-
+```python title="Definition"
+NotificationTransportType = Literal[
+    "Email",
+    "SNS",
+    "SQS",
+]
+```
 ## NotifyWorkersFailureCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import NotifyWorkersFailureCodeType
+
+def get_value() -> NotifyWorkersFailureCodeType:
+    return "HardFailure"
 ```
 
-Values:
-
-- `HardFailure`
-- `SoftFailure`
-
-<a id="qualificationstatustype"></a>
-
+```python title="Definition"
+NotifyWorkersFailureCodeType = Literal[
+    "HardFailure",
+    "SoftFailure",
+]
+```
 ## QualificationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import QualificationStatusType
+
+def get_value() -> QualificationStatusType:
+    return "Granted"
 ```
 
-Values:
-
-- `Granted`
-- `Revoked`
-
-<a id="qualificationtypestatustype"></a>
-
+```python title="Definition"
+QualificationStatusType = Literal[
+    "Granted",
+    "Revoked",
+]
+```
 ## QualificationTypeStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import QualificationTypeStatusType
+
+def get_value() -> QualificationTypeStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Inactive`
-
-<a id="reviewactionstatustype"></a>
-
+```python title="Definition"
+QualificationTypeStatusType = Literal[
+    "Active",
+    "Inactive",
+]
+```
 ## ReviewActionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ReviewActionStatusType
+
+def get_value() -> ReviewActionStatusType:
+    return "Cancelled"
 ```
 
-Values:
-
-- `Cancelled`
-- `Failed`
-- `Intended`
-- `Succeeded`
-
-<a id="reviewpolicyleveltype"></a>
-
+```python title="Definition"
+ReviewActionStatusType = Literal[
+    "Cancelled",
+    "Failed",
+    "Intended",
+    "Succeeded",
+]
+```
 ## ReviewPolicyLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ReviewPolicyLevelType
+
+def get_value() -> ReviewPolicyLevelType:
+    return "Assignment"
 ```
 
-Values:
-
-- `Assignment`
-- `HIT`
-
-<a id="reviewablehitstatustype"></a>
-
+```python title="Definition"
+ReviewPolicyLevelType = Literal[
+    "Assignment",
+    "HIT",
+]
+```
 ## ReviewableHITStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ReviewableHITStatusType
+
+def get_value() -> ReviewableHITStatusType:
+    return "Reviewable"
 ```
 
-Values:
-
-- `Reviewable`
-- `Reviewing`
-
-<a id="mturkservicename"></a>
-
+```python title="Definition"
+ReviewableHITStatusType = Literal[
+    "Reviewable",
+    "Reviewing",
+]
+```
 ## MTurkServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import MTurkServiceName
+
+def get_value() -> MTurkServiceName:
+    return "mturk"
 ```
 
-Values:
-
-- `mturk`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+MTurkServiceName = Literal[
+    "mturk",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_assignments_for_hit"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_assignments_for_hit",
+    "list_bonus_payments",
+    "list_hits",
+    "list_hits_for_qualification_type",
+    "list_qualification_requests",
+    "list_qualification_types",
+    "list_reviewable_hits",
+    "list_worker_blocks",
+    "list_workers_with_qualification_type",
+]
+```
+## RegionName
 
-- `list_assignments_for_hit`
-- `list_bonus_payments`
-- `list_hits`
-- `list_hits_for_qualification_type`
-- `list_qualification_requests`
-- `list_qualification_types`
-- `list_reviewable_hits`
-- `list_worker_blocks`
-- `list_workers_with_qualification_type`
+```python title="Usage Example"
+from mypy_boto3_mturk.literals import RegionName
+
+def get_value() -> RegionName:
+    return "us-east-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "us-east-1",
+]
+```

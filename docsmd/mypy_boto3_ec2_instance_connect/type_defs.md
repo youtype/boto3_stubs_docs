@@ -1,99 +1,115 @@
-<a id="typed-dictionaries-for-boto3-ec2instanceconnect-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 EC2InstanceConnect module
+> [Index](../README.md) > [EC2InstanceConnect](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [EC2InstanceConnect](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
-type annotations stubs module
-[mypy-boto3-ec2-instance-connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
-
-- [Typed dictionaries for boto3 EC2InstanceConnect module](#typed-dictionaries-for-boto3-ec2instanceconnect-module)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendSSHPublicKeyRequestRequestTypeDef](#sendsshpublickeyrequestrequesttypedef)
-  - [SendSSHPublicKeyResponseTypeDef](#sendsshpublickeyresponsetypedef)
-  - [SendSerialConsoleSSHPublicKeyRequestRequestTypeDef](#sendserialconsolesshpublickeyrequestrequesttypedef)
-  - [SendSerialConsoleSSHPublicKeyResponseTypeDef](#sendserialconsolesshpublickeyresponsetypedef)
-
-<a id="responsemetadatatypedef"></a>
+    Auto-generated documentation for [EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
+    type annotations stubs module [mypy-boto3-ec2-instance-connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2_instance_connect.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sendsshpublickeyrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SendSSHPublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2_instance_connect.type_defs import SendSSHPublicKeyRequestRequestTypeDef
+
+def get_value() -> SendSSHPublicKeyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "InstanceOSUser": ...,
+        "SSHPublicKey": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `InstanceOSUser`: `str`
-- `SSHPublicKey`: `str`
-
-Optional fields:
-
-- `AvailabilityZone`: `str`
-
-<a id="sendsshpublickeyresponsetypedef"></a>
+```python title="Definition"
+class SendSSHPublicKeyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    InstanceOSUser: str,
+    SSHPublicKey: str,
+    AvailabilityZone: NotRequired[str],
+```
 
 ## SendSSHPublicKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2_instance_connect.type_defs import SendSSHPublicKeyResponseTypeDef
+
+def get_value() -> SendSSHPublicKeyResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Success": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendSSHPublicKeyResponseTypeDef(TypedDict):
+    RequestId: str,
+    Success: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RequestId`: `str`
-- `Success`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="sendserialconsolesshpublickeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SendSerialConsoleSSHPublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2_instance_connect.type_defs import SendSerialConsoleSSHPublicKeyRequestRequestTypeDef
+
+def get_value() -> SendSerialConsoleSSHPublicKeyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "SSHPublicKey": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `SSHPublicKey`: `str`
-
-Optional fields:
-
-- `SerialPort`: `int`
-
-<a id="sendserialconsolesshpublickeyresponsetypedef"></a>
+```python title="Definition"
+class SendSerialConsoleSSHPublicKeyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    SSHPublicKey: str,
+    SerialPort: NotRequired[int],
+```
 
 ## SendSerialConsoleSSHPublicKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2_instance_connect.type_defs import SendSerialConsoleSSHPublicKeyResponseTypeDef
+
+def get_value() -> SendSerialConsoleSSHPublicKeyResponseTypeDef:
+    return {
+        "RequestId": ...,
+        "Success": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendSerialConsoleSSHPublicKeyResponseTypeDef(TypedDict):
+    RequestId: str,
+    Success: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RequestId`: `str`
-- `Success`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

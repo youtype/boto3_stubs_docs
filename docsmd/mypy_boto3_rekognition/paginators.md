@@ -1,33 +1,18 @@
-<a id="paginators-for-boto3-rekognition-module"></a>
-
-# Paginators for boto3 Rekognition module
+# Paginators
 
 > [Index](../README.md) > [Rekognition](./README.md) > Paginators
 
-Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
-type annotations stubs module
-[mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+!!! note ""
 
-- [Paginators for boto3 Rekognition module](#paginators-for-boto3-rekognition-module)
-  - [DescribeProjectVersionsPaginator](#describeprojectversionspaginator)
-  - [DescribeProjectsPaginator](#describeprojectspaginator)
-  - [ListCollectionsPaginator](#listcollectionspaginator)
-  - [ListDatasetEntriesPaginator](#listdatasetentriespaginator)
-  - [ListDatasetLabelsPaginator](#listdatasetlabelspaginator)
-  - [ListFacesPaginator](#listfacespaginator)
-  - [ListStreamProcessorsPaginator](#liststreamprocessorspaginator)
-
-<a id="describeprojectversionspaginator"></a>
+    Auto-generated documentation for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
+    type annotations stubs module [mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 ## DescribeProjectVersionsPaginator
 
-Type annotations for
-`boto3.client("rekognition").get_paginator("describe_project_versions")`.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator("describe_project_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjectVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rekognition.paginator import DescribeProjectVersionsPaginator
@@ -36,29 +21,41 @@ def get_describe_project_versions_paginator() -> DescribeProjectVersionsPaginato
     return Session().client("rekognition").get_paginator("describe_project_versions")
 ```
 
-Boto3 documentation:
-[Rekognition.Paginator.DescribeProjectVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjectVersions)
 
-Arguments for `DescribeProjectVersionsPaginator.paginate` method:
+### paginate
 
-- `ProjectArn`: `str` *(required)*
-- `VersionNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeProjectVersionsPaginator.paginate` method.
 
-`DescribeProjectVersionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProjectArn: str,
+    VersionNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeProjectVersionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeprojectspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeProjectVersionsRequestDescribeProjectVersionsPaginateTypeDef = {  # (1)
+    "ProjectArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeProjectVersionsRequestDescribeProjectVersionsPaginateTypeDef](./type_defs.md#describeprojectversionsrequestdescribeprojectversionspaginatetypedef) 
 ## DescribeProjectsPaginator
 
-Type annotations for
-`boto3.client("rekognition").get_paginator("describe_projects")`.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator("describe_projects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rekognition.paginator import DescribeProjectsPaginator
@@ -67,28 +64,40 @@ def get_describe_projects_paginator() -> DescribeProjectsPaginator:
     return Session().client("rekognition").get_paginator("describe_projects")
 ```
 
-Boto3 documentation:
-[Rekognition.Paginator.DescribeProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.DescribeProjects)
 
-Arguments for `DescribeProjectsPaginator.paginate` method:
+### paginate
 
-- `ProjectNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeProjectsPaginator.paginate` method.
 
-`DescribeProjectsPaginator.paginate` returns
-`_PageIterator`\[[DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProjectNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeProjectsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcollectionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeProjectsRequestDescribeProjectsPaginateTypeDef = {  # (1)
+    "ProjectNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeProjectsRequestDescribeProjectsPaginateTypeDef](./type_defs.md#describeprojectsrequestdescribeprojectspaginatetypedef) 
 ## ListCollectionsPaginator
 
-Type annotations for
-`boto3.client("rekognition").get_paginator("list_collections")`.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator("list_collections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListCollections)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rekognition.paginator import ListCollectionsPaginator
@@ -97,27 +106,39 @@ def get_list_collections_paginator() -> ListCollectionsPaginator:
     return Session().client("rekognition").get_paginator("list_collections")
 ```
 
-Boto3 documentation:
-[Rekognition.Paginator.ListCollections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListCollections)
 
-Arguments for `ListCollectionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCollectionsPaginator.paginate` method.
 
-`ListCollectionsPaginator.paginate` returns
-`_PageIterator`\[[ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCollectionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatasetentriespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCollectionsRequestListCollectionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCollectionsRequestListCollectionsPaginateTypeDef](./type_defs.md#listcollectionsrequestlistcollectionspaginatetypedef) 
 ## ListDatasetEntriesPaginator
 
-Type annotations for
-`boto3.client("rekognition").get_paginator("list_dataset_entries")`.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator("list_dataset_entries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListDatasetEntries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rekognition.paginator import ListDatasetEntriesPaginator
@@ -126,32 +147,44 @@ def get_list_dataset_entries_paginator() -> ListDatasetEntriesPaginator:
     return Session().client("rekognition").get_paginator("list_dataset_entries")
 ```
 
-Boto3 documentation:
-[Rekognition.Paginator.ListDatasetEntries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListDatasetEntries)
 
-Arguments for `ListDatasetEntriesPaginator.paginate` method:
+### paginate
 
-- `DatasetArn`: `str` *(required)*
-- `ContainsLabels`: `Sequence`\[`str`\]
-- `Labeled`: `bool`
-- `SourceRefContains`: `str`
-- `HasErrors`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetEntriesPaginator.paginate` method.
 
-`ListDatasetEntriesPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DatasetArn: str,
+    ContainsLabels: Sequence[str] = ...,
+    Labeled: bool = ...,
+    SourceRefContains: str = ...,
+    HasErrors: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatasetEntriesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatasetlabelspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef = {  # (1)
+    "DatasetArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef](./type_defs.md#listdatasetentriesrequestlistdatasetentriespaginatetypedef) 
 ## ListDatasetLabelsPaginator
 
-Type annotations for
-`boto3.client("rekognition").get_paginator("list_dataset_labels")`.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator("list_dataset_labels")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListDatasetLabels)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rekognition.paginator import ListDatasetLabelsPaginator
@@ -160,27 +193,40 @@ def get_list_dataset_labels_paginator() -> ListDatasetLabelsPaginator:
     return Session().client("rekognition").get_paginator("list_dataset_labels")
 ```
 
-Boto3 documentation:
-[Rekognition.Paginator.ListDatasetLabels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListDatasetLabels)
 
-Arguments for `ListDatasetLabelsPaginator.paginate` method:
+### paginate
 
-- `DatasetArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetLabelsPaginator.paginate` method.
 
-`ListDatasetLabelsPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DatasetArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatasetLabelsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfacespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetLabelsRequestListDatasetLabelsPaginateTypeDef = {  # (1)
+    "DatasetArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetLabelsRequestListDatasetLabelsPaginateTypeDef](./type_defs.md#listdatasetlabelsrequestlistdatasetlabelspaginatetypedef) 
 ## ListFacesPaginator
 
-Type annotations for `boto3.client("rekognition").get_paginator("list_faces")`.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator("list_faces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListFaces)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rekognition.paginator import ListFacesPaginator
@@ -189,28 +235,40 @@ def get_list_faces_paginator() -> ListFacesPaginator:
     return Session().client("rekognition").get_paginator("list_faces")
 ```
 
-Boto3 documentation:
-[Rekognition.Paginator.ListFaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListFaces)
 
-Arguments for `ListFacesPaginator.paginate` method:
+### paginate
 
-- `CollectionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFacesPaginator.paginate` method.
 
-`ListFacesPaginator.paginate` returns
-`_PageIterator`\[[ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CollectionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFacesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="liststreamprocessorspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFacesRequestListFacesPaginateTypeDef = {  # (1)
+    "CollectionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFacesRequestListFacesPaginateTypeDef](./type_defs.md#listfacesrequestlistfacespaginatetypedef) 
 ## ListStreamProcessorsPaginator
 
-Type annotations for
-`boto3.client("rekognition").get_paginator("list_stream_processors")`.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator("list_stream_processors")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListStreamProcessors)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rekognition.paginator import ListStreamProcessorsPaginator
@@ -219,13 +277,30 @@ def get_list_stream_processors_paginator() -> ListStreamProcessorsPaginator:
     return Session().client("rekognition").get_paginator("list_stream_processors")
 ```
 
-Boto3 documentation:
-[Rekognition.Paginator.ListStreamProcessors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Paginator.ListStreamProcessors)
 
-Arguments for `ListStreamProcessorsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListStreamProcessorsPaginator.paginate` method.
 
-`ListStreamProcessorsPaginator.paginate` returns
-`_PageIterator`\[[ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListStreamProcessorsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListStreamProcessorsRequestListStreamProcessorsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListStreamProcessorsRequestListStreamProcessorsPaginateTypeDef](./type_defs.md#liststreamprocessorsrequestliststreamprocessorspaginatetypedef) 

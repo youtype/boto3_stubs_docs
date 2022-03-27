@@ -1,27 +1,18 @@
-<a id="paginators-for-boto3-s3control-module"></a>
-
-# Paginators for boto3 S3Control module
+# Paginators
 
 > [Index](../README.md) > [S3Control](./README.md) > Paginators
 
-Auto-generated documentation for
-[S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
-type annotations stubs module
-[mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
+!!! note ""
 
-- [Paginators for boto3 S3Control module](#paginators-for-boto3-s3control-module)
-  - [ListAccessPointsForObjectLambdaPaginator](#listaccesspointsforobjectlambdapaginator)
-
-<a id="listaccesspointsforobjectlambdapaginator"></a>
+    Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+    type annotations stubs module [mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 ## ListAccessPointsForObjectLambdaPaginator
 
-Type annotations for
-`boto3.client("s3control").get_paginator("list_access_points_for_object_lambda")`.
+Type annotations and code completion for `#!python boto3.client("s3control").get_paginator("list_access_points_for_object_lambda")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Paginator.ListAccessPointsForObjectLambda)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_s3control.paginator import ListAccessPointsForObjectLambdaPaginator
@@ -30,14 +21,31 @@ def get_list_access_points_for_object_lambda_paginator() -> ListAccessPointsForO
     return Session().client("s3control").get_paginator("list_access_points_for_object_lambda")
 ```
 
-Boto3 documentation:
-[S3Control.Paginator.ListAccessPointsForObjectLambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Paginator.ListAccessPointsForObjectLambda)
 
-Arguments for `ListAccessPointsForObjectLambdaPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccessPointsForObjectLambdaPaginator.paginate` method.
 
-`ListAccessPointsForObjectLambdaPaginator.paginate` returns
-`_PageIterator`\[[ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAccessPointsForObjectLambdaResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef](./type_defs.md#listaccesspointsforobjectlambdarequestlistaccesspointsforobjectlambdapaginatetypedef) 

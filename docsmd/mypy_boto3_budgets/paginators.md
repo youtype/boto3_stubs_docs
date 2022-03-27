@@ -1,34 +1,18 @@
-<a id="paginators-for-boto3-budgets-module"></a>
-
-# Paginators for boto3 Budgets module
+# Paginators
 
 > [Index](../README.md) > [Budgets](./README.md) > Paginators
 
-Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
-type annotations stubs module
-[mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
+!!! note ""
 
-- [Paginators for boto3 Budgets module](#paginators-for-boto3-budgets-module)
-  - [DescribeBudgetActionHistoriesPaginator](#describebudgetactionhistoriespaginator)
-  - [DescribeBudgetActionsForAccountPaginator](#describebudgetactionsforaccountpaginator)
-  - [DescribeBudgetActionsForBudgetPaginator](#describebudgetactionsforbudgetpaginator)
-  - [DescribeBudgetNotificationsForAccountPaginator](#describebudgetnotificationsforaccountpaginator)
-  - [DescribeBudgetPerformanceHistoryPaginator](#describebudgetperformancehistorypaginator)
-  - [DescribeBudgetsPaginator](#describebudgetspaginator)
-  - [DescribeNotificationsForBudgetPaginator](#describenotificationsforbudgetpaginator)
-  - [DescribeSubscribersForNotificationPaginator](#describesubscribersfornotificationpaginator)
-
-<a id="describebudgetactionhistoriespaginator"></a>
+    Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+    type annotations stubs module [mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 ## DescribeBudgetActionHistoriesPaginator
 
-Type annotations for
-`boto3.client("budgets").get_paginator("describe_budget_action_histories")`.
+Type annotations and code completion for `#!python boto3.client("budgets").get_paginator("describe_budget_action_histories")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionHistories)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_budgets.paginator import DescribeBudgetActionHistoriesPaginator
@@ -37,31 +21,46 @@ def get_describe_budget_action_histories_paginator() -> DescribeBudgetActionHist
     return Session().client("budgets").get_paginator("describe_budget_action_histories")
 ```
 
-Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetActionHistories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionHistories)
 
-Arguments for `DescribeBudgetActionHistoriesPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `ActionId`: `str` *(required)*
-- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeBudgetActionHistoriesPaginator.paginate` method.
 
-`DescribeBudgetActionHistoriesPaginator.paginate` returns
-`_PageIterator`\[[DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    TimePeriod: TimePeriodTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeBudgetActionHistoriesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describebudgetactionsforaccountpaginator"></a>
+1. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetActionHistoriesRequestDescribeBudgetActionHistoriesPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "ActionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBudgetActionHistoriesRequestDescribeBudgetActionHistoriesPaginateTypeDef](./type_defs.md#describebudgetactionhistoriesrequestdescribebudgetactionhistoriespaginatetypedef) 
 ## DescribeBudgetActionsForAccountPaginator
 
-Type annotations for
-`boto3.client("budgets").get_paginator("describe_budget_actions_for_account")`.
+Type annotations and code completion for `#!python boto3.client("budgets").get_paginator("describe_budget_actions_for_account")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForAccount)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_budgets.paginator import DescribeBudgetActionsForAccountPaginator
@@ -70,28 +69,40 @@ def get_describe_budget_actions_for_account_paginator() -> DescribeBudgetActions
     return Session().client("budgets").get_paginator("describe_budget_actions_for_account")
 ```
 
-Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetActionsForAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForAccount)
 
-Arguments for `DescribeBudgetActionsForAccountPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeBudgetActionsForAccountPaginator.paginate` method.
 
-`DescribeBudgetActionsForAccountPaginator.paginate` returns
-`_PageIterator`\[[DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeBudgetActionsForAccountResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describebudgetactionsforbudgetpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetActionsForAccountRequestDescribeBudgetActionsForAccountPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBudgetActionsForAccountRequestDescribeBudgetActionsForAccountPaginateTypeDef](./type_defs.md#describebudgetactionsforaccountrequestdescribebudgetactionsforaccountpaginatetypedef) 
 ## DescribeBudgetActionsForBudgetPaginator
 
-Type annotations for
-`boto3.client("budgets").get_paginator("describe_budget_actions_for_budget")`.
+Type annotations and code completion for `#!python boto3.client("budgets").get_paginator("describe_budget_actions_for_budget")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForBudget)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_budgets.paginator import DescribeBudgetActionsForBudgetPaginator
@@ -100,29 +111,42 @@ def get_describe_budget_actions_for_budget_paginator() -> DescribeBudgetActionsF
     return Session().client("budgets").get_paginator("describe_budget_actions_for_budget")
 ```
 
-Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetActionsForBudget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetActionsForBudget)
 
-Arguments for `DescribeBudgetActionsForBudgetPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeBudgetActionsForBudgetPaginator.paginate` method.
 
-`DescribeBudgetActionsForBudgetPaginator.paginate` returns
-`_PageIterator`\[[DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeBudgetActionsForBudgetResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describebudgetnotificationsforaccountpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetActionsForBudgetRequestDescribeBudgetActionsForBudgetPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBudgetActionsForBudgetRequestDescribeBudgetActionsForBudgetPaginateTypeDef](./type_defs.md#describebudgetactionsforbudgetrequestdescribebudgetactionsforbudgetpaginatetypedef) 
 ## DescribeBudgetNotificationsForAccountPaginator
 
-Type annotations for
-`boto3.client("budgets").get_paginator("describe_budget_notifications_for_account")`.
+Type annotations and code completion for `#!python boto3.client("budgets").get_paginator("describe_budget_notifications_for_account")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetNotificationsForAccount)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_budgets.paginator import DescribeBudgetNotificationsForAccountPaginator
@@ -131,28 +155,40 @@ def get_describe_budget_notifications_for_account_paginator() -> DescribeBudgetN
     return Session().client("budgets").get_paginator("describe_budget_notifications_for_account")
 ```
 
-Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetNotificationsForAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetNotificationsForAccount)
 
-Arguments for `DescribeBudgetNotificationsForAccountPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeBudgetNotificationsForAccountPaginator.paginate` method.
 
-`DescribeBudgetNotificationsForAccountPaginator.paginate` returns
-`_PageIterator`\[[DescribeBudgetNotificationsForAccountResponseTypeDef](./type_defs.md#describebudgetnotificationsforaccountresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeBudgetNotificationsForAccountResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describebudgetperformancehistorypaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeBudgetNotificationsForAccountResponseTypeDef](./type_defs.md#describebudgetnotificationsforaccountresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetNotificationsForAccountRequestDescribeBudgetNotificationsForAccountPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBudgetNotificationsForAccountRequestDescribeBudgetNotificationsForAccountPaginateTypeDef](./type_defs.md#describebudgetnotificationsforaccountrequestdescribebudgetnotificationsforaccountpaginatetypedef) 
 ## DescribeBudgetPerformanceHistoryPaginator
 
-Type annotations for
-`boto3.client("budgets").get_paginator("describe_budget_performance_history")`.
+Type annotations and code completion for `#!python boto3.client("budgets").get_paginator("describe_budget_performance_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetPerformanceHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_budgets.paginator import DescribeBudgetPerformanceHistoryPaginator
@@ -161,30 +197,44 @@ def get_describe_budget_performance_history_paginator() -> DescribeBudgetPerform
     return Session().client("budgets").get_paginator("describe_budget_performance_history")
 ```
 
-Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetPerformanceHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetPerformanceHistory)
 
-Arguments for `DescribeBudgetPerformanceHistoryPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeBudgetPerformanceHistoryPaginator.paginate` method.
 
-`DescribeBudgetPerformanceHistoryPaginator.paginate` returns
-`_PageIterator`\[[DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    TimePeriod: TimePeriodTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeBudgetPerformanceHistoryResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describebudgetspaginator"></a>
+1. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetPerformanceHistoryRequestDescribeBudgetPerformanceHistoryPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBudgetPerformanceHistoryRequestDescribeBudgetPerformanceHistoryPaginateTypeDef](./type_defs.md#describebudgetperformancehistoryrequestdescribebudgetperformancehistorypaginatetypedef) 
 ## DescribeBudgetsPaginator
 
-Type annotations for
-`boto3.client("budgets").get_paginator("describe_budgets")`.
+Type annotations and code completion for `#!python boto3.client("budgets").get_paginator("describe_budgets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_budgets.paginator import DescribeBudgetsPaginator
@@ -193,28 +243,40 @@ def get_describe_budgets_paginator() -> DescribeBudgetsPaginator:
     return Session().client("budgets").get_paginator("describe_budgets")
 ```
 
-Boto3 documentation:
-[Budgets.Paginator.DescribeBudgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgets)
 
-Arguments for `DescribeBudgetsPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeBudgetsPaginator.paginate` method.
 
-`DescribeBudgetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeBudgetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describenotificationsforbudgetpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBudgetsRequestDescribeBudgetsPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBudgetsRequestDescribeBudgetsPaginateTypeDef](./type_defs.md#describebudgetsrequestdescribebudgetspaginatetypedef) 
 ## DescribeNotificationsForBudgetPaginator
 
-Type annotations for
-`boto3.client("budgets").get_paginator("describe_notifications_for_budget")`.
+Type annotations and code completion for `#!python boto3.client("budgets").get_paginator("describe_notifications_for_budget")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeNotificationsForBudget)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_budgets.paginator import DescribeNotificationsForBudgetPaginator
@@ -223,29 +285,42 @@ def get_describe_notifications_for_budget_paginator() -> DescribeNotificationsFo
     return Session().client("budgets").get_paginator("describe_notifications_for_budget")
 ```
 
-Boto3 documentation:
-[Budgets.Paginator.DescribeNotificationsForBudget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeNotificationsForBudget)
 
-Arguments for `DescribeNotificationsForBudgetPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeNotificationsForBudgetPaginator.paginate` method.
 
-`DescribeNotificationsForBudgetPaginator.paginate` returns
-`_PageIterator`\[[DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeNotificationsForBudgetResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describesubscribersfornotificationpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNotificationsForBudgetRequestDescribeNotificationsForBudgetPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNotificationsForBudgetRequestDescribeNotificationsForBudgetPaginateTypeDef](./type_defs.md#describenotificationsforbudgetrequestdescribenotificationsforbudgetpaginatetypedef) 
 ## DescribeSubscribersForNotificationPaginator
 
-Type annotations for
-`boto3.client("budgets").get_paginator("describe_subscribers_for_notification")`.
+Type annotations and code completion for `#!python boto3.client("budgets").get_paginator("describe_subscribers_for_notification")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeSubscribersForNotification)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_budgets.paginator import DescribeSubscribersForNotificationPaginator
@@ -254,17 +329,36 @@ def get_describe_subscribers_for_notification_paginator() -> DescribeSubscribers
     return Session().client("budgets").get_paginator("describe_subscribers_for_notification")
 ```
 
-Boto3 documentation:
-[Budgets.Paginator.DescribeSubscribersForNotification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeSubscribersForNotification)
 
-Arguments for `DescribeSubscribersForNotificationPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `BudgetName`: `str` *(required)*
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSubscribersForNotificationPaginator.paginate` method.
 
-`DescribeSubscribersForNotificationPaginator.paginate` returns
-`_PageIterator`\[[DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeSubscribersForNotificationResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSubscribersForNotificationRequestDescribeSubscribersForNotificationPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+    "BudgetName": ...,
+    "Notification": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSubscribersForNotificationRequestDescribeSubscribersForNotificationPaginateTypeDef](./type_defs.md#describesubscribersfornotificationrequestdescribesubscribersfornotificationpaginatetypedef) 

@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-kendra-module"></a>
-
-# Type annotations for boto3 kendra module
+#  kendra module
 
 > [Index](../README.md) > kendra
 
-Auto-generated documentation for
-[kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
-type annotations stubs module
-[mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
+!!! note ""
 
-- [Type annotations for boto3 kendra module](#type-annotations-for-boto3-kendra-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [kendraClient](#kendraclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
+    type annotations stubs module [mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `kendra`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[kendra]'
 python -m pip install mypy-boto3-kendra
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,116 +42,41 @@ python -m pip install mypy-boto3-kendra
 python -m pip uninstall -y mypy-boto3-kendra
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="kendraclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## kendraClient
 
-Type annotations for `boto3.client("kendra")` as [kendraClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("kendra")` as [kendraClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_kendra.client import kendraClient
+
+def get_client() -> kendraClient:
+    return Session().cleint("kendra")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [associate_entities_to_experience](./client.md#associate_entities_to_experience)
-- [associate_personas_to_entities](./client.md#associate_personas_to_entities)
-- [batch_delete_document](./client.md#batch_delete_document)
-- [batch_get_document_status](./client.md#batch_get_document_status)
-- [batch_put_document](./client.md#batch_put_document)
-- [can_paginate](./client.md#can_paginate)
-- [clear_query_suggestions](./client.md#clear_query_suggestions)
-- [create_data_source](./client.md#create_data_source)
-- [create_experience](./client.md#create_experience)
-- [create_faq](./client.md#create_faq)
-- [create_index](./client.md#create_index)
-- [create_query_suggestions_block_list](./client.md#create_query_suggestions_block_list)
-- [create_thesaurus](./client.md#create_thesaurus)
-- [delete_data_source](./client.md#delete_data_source)
-- [delete_experience](./client.md#delete_experience)
-- [delete_faq](./client.md#delete_faq)
-- [delete_index](./client.md#delete_index)
-- [delete_principal_mapping](./client.md#delete_principal_mapping)
-- [delete_query_suggestions_block_list](./client.md#delete_query_suggestions_block_list)
-- [delete_thesaurus](./client.md#delete_thesaurus)
-- [describe_data_source](./client.md#describe_data_source)
-- [describe_experience](./client.md#describe_experience)
-- [describe_faq](./client.md#describe_faq)
-- [describe_index](./client.md#describe_index)
-- [describe_principal_mapping](./client.md#describe_principal_mapping)
-- [describe_query_suggestions_block_list](./client.md#describe_query_suggestions_block_list)
-- [describe_query_suggestions_config](./client.md#describe_query_suggestions_config)
-- [describe_thesaurus](./client.md#describe_thesaurus)
-- [disassociate_entities_from_experience](./client.md#disassociate_entities_from_experience)
-- [disassociate_personas_from_entities](./client.md#disassociate_personas_from_entities)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_query_suggestions](./client.md#get_query_suggestions)
-- [get_snapshots](./client.md#get_snapshots)
-- [list_data_source_sync_jobs](./client.md#list_data_source_sync_jobs)
-- [list_data_sources](./client.md#list_data_sources)
-- [list_entity_personas](./client.md#list_entity_personas)
-- [list_experience_entities](./client.md#list_experience_entities)
-- [list_experiences](./client.md#list_experiences)
-- [list_faqs](./client.md#list_faqs)
-- [list_groups_older_than_ordering_id](./client.md#list_groups_older_than_ordering_id)
-- [list_indices](./client.md#list_indices)
-- [list_query_suggestions_block_lists](./client.md#list_query_suggestions_block_lists)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_thesauri](./client.md#list_thesauri)
-- [put_principal_mapping](./client.md#put_principal_mapping)
-- [query](./client.md#query)
-- [start_data_source_sync_job](./client.md#start_data_source_sync_job)
-- [stop_data_source_sync_job](./client.md#stop_data_source_sync_job)
-- [submit_feedback](./client.md#submit_feedback)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_data_source](./client.md#update_data_source)
-- [update_experience](./client.md#update_experience)
-- [update_index](./client.md#update_index)
-- [update_query_suggestions_block_list](./client.md#update_query_suggestions_block_list)
-- [update_query_suggestions_config](./client.md#update_query_suggestions_config)
-- [update_thesaurus](./client.md#update_thesaurus)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-kendraClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- InvalidRequestException
-- ResourceAlreadyExistException
-- ResourceInUseException
-- ResourceNotFoundException
-- ResourceUnavailableException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType
 
-```python
-from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType, ...
+def get_value() -> AdditionalResultAttributeValueTypeType:
+    return "TEXT_WITH_HIGHLIGHTS_VALUE"
 ```
 
 - [AdditionalResultAttributeValueTypeType](./literals.md#additionalresultattributevaluetypetype)
@@ -230,18 +134,22 @@ from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType, .
 - [kendraServiceName](./literals.md#kendraservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kendra.type_defs import AccessControlListConfigurationTypeDef
 
-```python
-from mypy_boto3_kendra.type_defs import AccessControlListConfigurationTypeDef, ...
+def get_value() -> AccessControlListConfigurationTypeDef:
+    return {
+        "KeyPath": ...,
+    }
 ```
 
 - [AccessControlListConfigurationTypeDef](./type_defs.md#accesscontrollistconfigurationtypedef)
@@ -458,3 +366,4 @@ from mypy_boto3_kendra.type_defs import AccessControlListConfigurationTypeDef, .
 - [WarningTypeDef](./type_defs.md#warningtypedef)
 - [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
 - [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)
+

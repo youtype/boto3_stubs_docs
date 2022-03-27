@@ -1,98 +1,18 @@
-<a id="iotsitewiseclient-for-boto3-iotsitewise-module"></a>
-
-# IoTSiteWiseClient for boto3 IoTSiteWise module
+# IoTSiteWiseClient
 
 > [Index](../README.md) > [IoTSiteWise](./README.md) > IoTSiteWiseClient
 
-Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
-type annotations stubs module
-[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+!!! note ""
 
-- [IoTSiteWiseClient for boto3 IoTSiteWise module](#iotsitewiseclient-for-boto3-iotsitewise-module)
-  - [IoTSiteWiseClient](#iotsitewiseclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_assets](#associate_assets)
-    - [associate_time_series_to_asset_property](#associate_time_series_to_asset_property)
-    - [batch_associate_project_assets](#batch_associate_project_assets)
-    - [batch_disassociate_project_assets](#batch_disassociate_project_assets)
-    - [batch_put_asset_property_value](#batch_put_asset_property_value)
-    - [can_paginate](#can_paginate)
-    - [create_access_policy](#create_access_policy)
-    - [create_asset](#create_asset)
-    - [create_asset_model](#create_asset_model)
-    - [create_dashboard](#create_dashboard)
-    - [create_gateway](#create_gateway)
-    - [create_portal](#create_portal)
-    - [create_project](#create_project)
-    - [delete_access_policy](#delete_access_policy)
-    - [delete_asset](#delete_asset)
-    - [delete_asset_model](#delete_asset_model)
-    - [delete_dashboard](#delete_dashboard)
-    - [delete_gateway](#delete_gateway)
-    - [delete_portal](#delete_portal)
-    - [delete_project](#delete_project)
-    - [delete_time_series](#delete_time_series)
-    - [describe_access_policy](#describe_access_policy)
-    - [describe_asset](#describe_asset)
-    - [describe_asset_model](#describe_asset_model)
-    - [describe_asset_property](#describe_asset_property)
-    - [describe_dashboard](#describe_dashboard)
-    - [describe_default_encryption_configuration](#describe_default_encryption_configuration)
-    - [describe_gateway](#describe_gateway)
-    - [describe_gateway_capability_configuration](#describe_gateway_capability_configuration)
-    - [describe_logging_options](#describe_logging_options)
-    - [describe_portal](#describe_portal)
-    - [describe_project](#describe_project)
-    - [describe_storage_configuration](#describe_storage_configuration)
-    - [describe_time_series](#describe_time_series)
-    - [disassociate_assets](#disassociate_assets)
-    - [disassociate_time_series_from_asset_property](#disassociate_time_series_from_asset_property)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_asset_property_aggregates](#get_asset_property_aggregates)
-    - [get_asset_property_value](#get_asset_property_value)
-    - [get_asset_property_value_history](#get_asset_property_value_history)
-    - [get_interpolated_asset_property_values](#get_interpolated_asset_property_values)
-    - [list_access_policies](#list_access_policies)
-    - [list_asset_models](#list_asset_models)
-    - [list_asset_relationships](#list_asset_relationships)
-    - [list_assets](#list_assets)
-    - [list_associated_assets](#list_associated_assets)
-    - [list_dashboards](#list_dashboards)
-    - [list_gateways](#list_gateways)
-    - [list_portals](#list_portals)
-    - [list_project_assets](#list_project_assets)
-    - [list_projects](#list_projects)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_time_series](#list_time_series)
-    - [put_default_encryption_configuration](#put_default_encryption_configuration)
-    - [put_logging_options](#put_logging_options)
-    - [put_storage_configuration](#put_storage_configuration)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_access_policy](#update_access_policy)
-    - [update_asset](#update_asset)
-    - [update_asset_model](#update_asset_model)
-    - [update_asset_property](#update_asset_property)
-    - [update_dashboard](#update_dashboard)
-    - [update_gateway](#update_gateway)
-    - [update_gateway_capability_configuration](#update_gateway_capability_configuration)
-    - [update_portal](#update_portal)
-    - [update_project](#update_project)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="iotsitewiseclient"></a>
+    Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+    type annotations stubs module [mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 ## IoTSiteWiseClient
 
-Type annotations for `boto3.client("iotsitewise")`
+Type annotations and code completion for `#!python boto3.client("iotsitewise")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iotsitewise.client import IoTSiteWiseClient
 
@@ -100,1680 +20,2201 @@ def get_iotsitewise_client() -> IoTSiteWiseClient:
     return Session().client("iotsitewise")
 ```
 
-Boto3 documentation:
-[IoTSiteWise.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iotsitewise").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iotsitewise")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictingOperationException,
+    client.InternalFailureException,
+    client.InvalidRequestException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.ThrottlingException,
+    client.TooManyTagsException,
+    client.UnauthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iotsitewise.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictingOperationException`
-- `Exceptions.InternalFailureException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.UnauthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### associate\_assets
 
-IoTSiteWiseClient exceptions.
+Associates a child asset with the given parent asset through a hierarchy defined
+in the parent asset's model.
 
-Type annotations for `boto3.client("iotsitewise").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").associate_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_assets)
 
-Boto3 documentation:
-[IoTSiteWise.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.exceptions)
+```python title="Method definition"
+def associate_assets(
+    self,
+    *,
+    assetId: str,
+    hierarchyId: str,
+    childAssetId: str,
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Returns [Exceptions](#exceptions).
 
-<a id="associate\_assets"></a>
 
-### associate_assets
+```python title="Usage example with kwargs"
+kwargs: AssociateAssetsRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+    "hierarchyId": ...,
+    "childAssetId": ...,
+}
 
-Associates a child asset with the given parent asset through a hierarchy
-defined in the parent asset's model.
+parent.associate_assets(**kwargs)
+```
 
-Type annotations for `boto3.client("iotsitewise").associate_assets` method.
+1. See [:material-code-braces: AssociateAssetsRequestRequestTypeDef](./type_defs.md#associateassetsrequestrequesttypedef) 
 
-Boto3 documentation:
-[IoTSiteWise.Client.associate_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_assets)
-
-Arguments mapping described in
-[AssociateAssetsRequestRequestTypeDef](./type_defs.md#associateassetsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `assetId`: `str` *(required)*
-- `hierarchyId`: `str` *(required)*
-- `childAssetId`: `str` *(required)*
-- `clientToken`: `str`
-
-<a id="associate\_time\_series\_to\_asset\_property"></a>
-
-### associate_time_series_to_asset_property
+### associate\_time\_series\_to\_asset\_property
 
 Associates a time series (data stream) with an asset property.
 
-Type annotations for
-`boto3.client("iotsitewise").associate_time_series_to_asset_property` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").associate_time_series_to_asset_property` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_time_series_to_asset_property)
 
-Boto3 documentation:
-[IoTSiteWise.Client.associate_time_series_to_asset_property](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.associate_time_series_to_asset_property)
+```python title="Method definition"
+def associate_time_series_to_asset_property(
+    self,
+    *,
+    alias: str,
+    assetId: str,
+    propertyId: str,
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef](./type_defs.md#associatetimeseriestoassetpropertyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `alias`: `str` *(required)*
-- `assetId`: `str` *(required)*
-- `propertyId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef = {  # (1)
+    "alias": ...,
+    "assetId": ...,
+    "propertyId": ...,
+}
 
-<a id="batch\_associate\_project\_assets"></a>
+parent.associate_time_series_to_asset_property(**kwargs)
+```
 
-### batch_associate_project_assets
+1. See [:material-code-braces: AssociateTimeSeriesToAssetPropertyRequestRequestTypeDef](./type_defs.md#associatetimeseriestoassetpropertyrequestrequesttypedef) 
+
+### batch\_associate\_project\_assets
 
 Associates a group (batch) of assets with an IoT SiteWise Monitor project.
 
-Type annotations for
-`boto3.client("iotsitewise").batch_associate_project_assets` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").batch_associate_project_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_associate_project_assets)
 
-Boto3 documentation:
-[IoTSiteWise.Client.batch_associate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_associate_project_assets)
+```python title="Method definition"
+def batch_associate_project_assets(
+    self,
+    *,
+    projectId: str,
+    assetIds: Sequence[str],
+    clientToken: str = ...,
+) -> BatchAssociateProjectAssetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchAssociateProjectAssetsRequestRequestTypeDef](./type_defs.md#batchassociateprojectassetsrequestrequesttypedef).
+1. See [:material-code-braces: BatchAssociateProjectAssetsResponseTypeDef](./type_defs.md#batchassociateprojectassetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `assetIds`: `Sequence`\[`str`\] *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchAssociateProjectAssetsRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+    "assetIds": ...,
+}
 
-Returns
-[BatchAssociateProjectAssetsResponseTypeDef](./type_defs.md#batchassociateprojectassetsresponsetypedef).
+parent.batch_associate_project_assets(**kwargs)
+```
 
-<a id="batch\_disassociate\_project\_assets"></a>
+1. See [:material-code-braces: BatchAssociateProjectAssetsRequestRequestTypeDef](./type_defs.md#batchassociateprojectassetsrequestrequesttypedef) 
 
-### batch_disassociate_project_assets
+### batch\_disassociate\_project\_assets
 
 Disassociates a group (batch) of assets from an IoT SiteWise Monitor project.
 
-Type annotations for
-`boto3.client("iotsitewise").batch_disassociate_project_assets` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").batch_disassociate_project_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_disassociate_project_assets)
 
-Boto3 documentation:
-[IoTSiteWise.Client.batch_disassociate_project_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_disassociate_project_assets)
+```python title="Method definition"
+def batch_disassociate_project_assets(
+    self,
+    *,
+    projectId: str,
+    assetIds: Sequence[str],
+    clientToken: str = ...,
+) -> BatchDisassociateProjectAssetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDisassociateProjectAssetsRequestRequestTypeDef](./type_defs.md#batchdisassociateprojectassetsrequestrequesttypedef).
+1. See [:material-code-braces: BatchDisassociateProjectAssetsResponseTypeDef](./type_defs.md#batchdisassociateprojectassetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `assetIds`: `Sequence`\[`str`\] *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchDisassociateProjectAssetsRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+    "assetIds": ...,
+}
 
-Returns
-[BatchDisassociateProjectAssetsResponseTypeDef](./type_defs.md#batchdisassociateprojectassetsresponsetypedef).
+parent.batch_disassociate_project_assets(**kwargs)
+```
 
-<a id="batch\_put\_asset\_property\_value"></a>
+1. See [:material-code-braces: BatchDisassociateProjectAssetsRequestRequestTypeDef](./type_defs.md#batchdisassociateprojectassetsrequestrequesttypedef) 
 
-### batch_put_asset_property_value
+### batch\_put\_asset\_property\_value
 
 Sends a list of asset property values to IoT SiteWise.
 
-Type annotations for
-`boto3.client("iotsitewise").batch_put_asset_property_value` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").batch_put_asset_property_value` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_put_asset_property_value)
 
-Boto3 documentation:
-[IoTSiteWise.Client.batch_put_asset_property_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.batch_put_asset_property_value)
+```python title="Method definition"
+def batch_put_asset_property_value(
+    self,
+    *,
+    entries: Sequence[PutAssetPropertyValueEntryTypeDef],  # (1)
+) -> BatchPutAssetPropertyValueResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchPutAssetPropertyValueRequestRequestTypeDef](./type_defs.md#batchputassetpropertyvaluerequestrequesttypedef).
+1. See [:material-code-braces: PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef) 
+2. See [:material-code-braces: BatchPutAssetPropertyValueResponseTypeDef](./type_defs.md#batchputassetpropertyvalueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `entries`:
-  `Sequence`\[[PutAssetPropertyValueEntryTypeDef](./type_defs.md#putassetpropertyvalueentrytypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchPutAssetPropertyValueRequestRequestTypeDef = {  # (1)
+    "entries": ...,
+}
 
-Returns
-[BatchPutAssetPropertyValueResponseTypeDef](./type_defs.md#batchputassetpropertyvalueresponsetypedef).
+parent.batch_put_asset_property_value(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchPutAssetPropertyValueRequestRequestTypeDef](./type_defs.md#batchputassetpropertyvaluerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iotsitewise").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.can_paginate)
 
-Boto3 documentation:
-[IoTSiteWise.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### create\_access\_policy
 
-Returns `bool`.
+Creates an access policy that grants the specified identity (Amazon Web Services
+SSO user, Amazon Web Services SSO group, or IAM user) access to the specified
+IoT SiteWise Monitor portal or project resource.
 
-<a id="create\_access\_policy"></a>
+Type annotations and code completion for `#!python boto3.client("iotsitewise").create_access_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_access_policy)
 
-### create_access_policy
+```python title="Method definition"
+def create_access_policy(
+    self,
+    *,
+    accessPolicyIdentity: IdentityTypeDef,  # (1)
+    accessPolicyResource: ResourceTypeDef,  # (2)
+    accessPolicyPermission: PermissionType,  # (3)
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateAccessPolicyResponseTypeDef:  # (4)
+    ...
+```
 
-Creates an access policy that grants the specified identity (Amazon Web
-Services SSO user, Amazon Web Services SSO group, or IAM user) access to the
-specified IoT SiteWise Monitor portal or project resource.
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-braces: CreateAccessPolicyResponseTypeDef](./type_defs.md#createaccesspolicyresponsetypedef) 
 
-Type annotations for `boto3.client("iotsitewise").create_access_policy` method.
 
-Boto3 documentation:
-[IoTSiteWise.Client.create_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_access_policy)
+```python title="Usage example with kwargs"
+kwargs: CreateAccessPolicyRequestRequestTypeDef = {  # (1)
+    "accessPolicyIdentity": ...,
+    "accessPolicyResource": ...,
+    "accessPolicyPermission": ...,
+}
 
-Arguments mapping described in
-[CreateAccessPolicyRequestRequestTypeDef](./type_defs.md#createaccesspolicyrequestrequesttypedef).
+parent.create_access_policy(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateAccessPolicyRequestRequestTypeDef](./type_defs.md#createaccesspolicyrequestrequesttypedef) 
 
-- `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-  *(required)*
-- `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-  *(required)*
-- `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
-  *(required)*
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-Returns
-[CreateAccessPolicyResponseTypeDef](./type_defs.md#createaccesspolicyresponsetypedef).
-
-<a id="create\_asset"></a>
-
-### create_asset
+### create\_asset
 
 Creates an asset from an existing asset model.
 
-Type annotations for `boto3.client("iotsitewise").create_asset` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").create_asset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset)
 
-Boto3 documentation:
-[IoTSiteWise.Client.create_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset)
+```python title="Method definition"
+def create_asset(
+    self,
+    *,
+    assetName: str,
+    assetModelId: str,
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateAssetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAssetRequestRequestTypeDef](./type_defs.md#createassetrequestrequesttypedef).
+1. See [:material-code-braces: CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetName`: `str` *(required)*
-- `assetModelId`: `str` *(required)*
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAssetRequestRequestTypeDef = {  # (1)
+    "assetName": ...,
+    "assetModelId": ...,
+}
 
-Returns
-[CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
+parent.create_asset(**kwargs)
+```
 
-<a id="create\_asset\_model"></a>
+1. See [:material-code-braces: CreateAssetRequestRequestTypeDef](./type_defs.md#createassetrequestrequesttypedef) 
 
-### create_asset_model
+### create\_asset\_model
 
 Creates an asset model from specified property and hierarchy definitions.
 
-Type annotations for `boto3.client("iotsitewise").create_asset_model` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").create_asset_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset_model)
 
-Boto3 documentation:
-[IoTSiteWise.Client.create_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_asset_model)
+```python title="Method definition"
+def create_asset_model(
+    self,
+    *,
+    assetModelName: str,
+    assetModelDescription: str = ...,
+    assetModelProperties: Sequence[AssetModelPropertyDefinitionTypeDef] = ...,  # (1)
+    assetModelHierarchies: Sequence[AssetModelHierarchyDefinitionTypeDef] = ...,  # (2)
+    assetModelCompositeModels: Sequence[AssetModelCompositeModelDefinitionTypeDef] = ...,  # (3)
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateAssetModelResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateAssetModelRequestRequestTypeDef](./type_defs.md#createassetmodelrequestrequesttypedef).
+1. See [:material-code-braces: AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef) 
+2. See [:material-code-braces: AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef) 
+3. See [:material-code-braces: AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef) 
+4. See [:material-code-braces: CreateAssetModelResponseTypeDef](./type_defs.md#createassetmodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetModelName`: `str` *(required)*
-- `assetModelDescription`: `str`
-- `assetModelProperties`:
-  `Sequence`\[[AssetModelPropertyDefinitionTypeDef](./type_defs.md#assetmodelpropertydefinitiontypedef)\]
-- `assetModelHierarchies`:
-  `Sequence`\[[AssetModelHierarchyDefinitionTypeDef](./type_defs.md#assetmodelhierarchydefinitiontypedef)\]
-- `assetModelCompositeModels`:
-  `Sequence`\[[AssetModelCompositeModelDefinitionTypeDef](./type_defs.md#assetmodelcompositemodeldefinitiontypedef)\]
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAssetModelRequestRequestTypeDef = {  # (1)
+    "assetModelName": ...,
+}
 
-Returns
-[CreateAssetModelResponseTypeDef](./type_defs.md#createassetmodelresponsetypedef).
+parent.create_asset_model(**kwargs)
+```
 
-<a id="create\_dashboard"></a>
+1. See [:material-code-braces: CreateAssetModelRequestRequestTypeDef](./type_defs.md#createassetmodelrequestrequesttypedef) 
 
-### create_dashboard
+### create\_dashboard
 
 Creates a dashboard in an IoT SiteWise Monitor project.
 
-Type annotations for `boto3.client("iotsitewise").create_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").create_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_dashboard)
 
-Boto3 documentation:
-[IoTSiteWise.Client.create_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_dashboard)
+```python title="Method definition"
+def create_dashboard(
+    self,
+    *,
+    projectId: str,
+    dashboardName: str,
+    dashboardDefinition: str,
+    dashboardDescription: str = ...,
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateDashboardResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateDashboardRequestRequestTypeDef](./type_defs.md#createdashboardrequestrequesttypedef).
+1. See [:material-code-braces: CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `dashboardName`: `str` *(required)*
-- `dashboardDefinition`: `str` *(required)*
-- `dashboardDescription`: `str`
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDashboardRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+    "dashboardName": ...,
+    "dashboardDefinition": ...,
+}
 
-Returns
-[CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef).
+parent.create_dashboard(**kwargs)
+```
 
-<a id="create\_gateway"></a>
+1. See [:material-code-braces: CreateDashboardRequestRequestTypeDef](./type_defs.md#createdashboardrequestrequesttypedef) 
 
-### create_gateway
+### create\_gateway
 
 Creates a gateway, which is a virtual or edge device that delivers industrial
 data streams from local servers to IoT SiteWise.
 
-Type annotations for `boto3.client("iotsitewise").create_gateway` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").create_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_gateway)
 
-Boto3 documentation:
-[IoTSiteWise.Client.create_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_gateway)
+```python title="Method definition"
+def create_gateway(
+    self,
+    *,
+    gatewayName: str,
+    gatewayPlatform: GatewayPlatformTypeDef,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> CreateGatewayResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateGatewayRequestRequestTypeDef](./type_defs.md#creategatewayrequestrequesttypedef).
+1. See [:material-code-braces: GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef) 
+2. See [:material-code-braces: CreateGatewayResponseTypeDef](./type_defs.md#creategatewayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `gatewayName`: `str` *(required)*
-- `gatewayPlatform`:
-  [GatewayPlatformTypeDef](./type_defs.md#gatewayplatformtypedef) *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateGatewayRequestRequestTypeDef = {  # (1)
+    "gatewayName": ...,
+    "gatewayPlatform": ...,
+}
 
-Returns
-[CreateGatewayResponseTypeDef](./type_defs.md#creategatewayresponsetypedef).
+parent.create_gateway(**kwargs)
+```
 
-<a id="create\_portal"></a>
+1. See [:material-code-braces: CreateGatewayRequestRequestTypeDef](./type_defs.md#creategatewayrequestrequesttypedef) 
 
-### create_portal
+### create\_portal
 
 Creates a portal, which can contain projects and dashboards.
 
-Type annotations for `boto3.client("iotsitewise").create_portal` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").create_portal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_portal)
 
-Boto3 documentation:
-[IoTSiteWise.Client.create_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_portal)
+```python title="Method definition"
+def create_portal(
+    self,
+    *,
+    portalName: str,
+    portalContactEmail: str,
+    roleArn: str,
+    portalDescription: str = ...,
+    clientToken: str = ...,
+    portalLogoImageFile: ImageFileTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+    portalAuthMode: AuthModeType = ...,  # (2)
+    notificationSenderEmail: str = ...,
+    alarms: AlarmsTypeDef = ...,  # (3)
+) -> CreatePortalResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreatePortalRequestRequestTypeDef](./type_defs.md#createportalrequestrequesttypedef).
+1. See [:material-code-braces: ImageFileTypeDef](./type_defs.md#imagefiletypedef) 
+2. See [:material-code-brackets: AuthModeType](./literals.md#authmodetype) 
+3. See [:material-code-braces: AlarmsTypeDef](./type_defs.md#alarmstypedef) 
+4. See [:material-code-braces: CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalName`: `str` *(required)*
-- `portalContactEmail`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `portalDescription`: `str`
-- `clientToken`: `str`
-- `portalLogoImageFile`: [ImageFileTypeDef](./type_defs.md#imagefiletypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `portalAuthMode`: [AuthModeType](./literals.md#authmodetype)
-- `notificationSenderEmail`: `str`
-- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreatePortalRequestRequestTypeDef = {  # (1)
+    "portalName": ...,
+    "portalContactEmail": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef).
+parent.create_portal(**kwargs)
+```
 
-<a id="create\_project"></a>
+1. See [:material-code-braces: CreatePortalRequestRequestTypeDef](./type_defs.md#createportalrequestrequesttypedef) 
 
-### create_project
+### create\_project
 
 Creates a project in the specified portal.
 
-Type annotations for `boto3.client("iotsitewise").create_project` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").create_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_project)
 
-Boto3 documentation:
-[IoTSiteWise.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.create_project)
+```python title="Method definition"
+def create_project(
+    self,
+    *,
+    portalId: str,
+    projectName: str,
+    projectDescription: str = ...,
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
+1. See [:material-code-braces: CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalId`: `str` *(required)*
-- `projectName`: `str` *(required)*
-- `projectDescription`: `str`
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateProjectRequestRequestTypeDef = {  # (1)
+    "portalId": ...,
+    "projectName": ...,
+}
 
-Returns
-[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
+parent.create_project(**kwargs)
+```
 
-<a id="delete\_access\_policy"></a>
+1. See [:material-code-braces: CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef) 
 
-### delete_access_policy
+### delete\_access\_policy
 
 Deletes an access policy that grants the specified identity access to the
 specified IoT SiteWise Monitor resource.
 
-Type annotations for `boto3.client("iotsitewise").delete_access_policy` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").delete_access_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_access_policy)
 
-Boto3 documentation:
-[IoTSiteWise.Client.delete_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_access_policy)
+```python title="Method definition"
+def delete_access_policy(
+    self,
+    *,
+    accessPolicyId: str,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessPolicyRequestRequestTypeDef](./type_defs.md#deleteaccesspolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `accessPolicyId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessPolicyRequestRequestTypeDef = {  # (1)
+    "accessPolicyId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_access_policy(**kwargs)
+```
 
-<a id="delete\_asset"></a>
+1. See [:material-code-braces: DeleteAccessPolicyRequestRequestTypeDef](./type_defs.md#deleteaccesspolicyrequestrequesttypedef) 
 
-### delete_asset
+### delete\_asset
 
 Deletes an asset.
 
-Type annotations for `boto3.client("iotsitewise").delete_asset` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").delete_asset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset)
 
-Boto3 documentation:
-[IoTSiteWise.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset)
+```python title="Method definition"
+def delete_asset(
+    self,
+    *,
+    assetId: str,
+    clientToken: str = ...,
+) -> DeleteAssetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssetRequestRequestTypeDef](./type_defs.md#deleteassetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteAssetResponseTypeDef](./type_defs.md#deleteassetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAssetRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+}
 
-Returns
-[DeleteAssetResponseTypeDef](./type_defs.md#deleteassetresponsetypedef).
+parent.delete_asset(**kwargs)
+```
 
-<a id="delete\_asset\_model"></a>
+1. See [:material-code-braces: DeleteAssetRequestRequestTypeDef](./type_defs.md#deleteassetrequestrequesttypedef) 
 
-### delete_asset_model
+### delete\_asset\_model
 
 Deletes an asset model.
 
-Type annotations for `boto3.client("iotsitewise").delete_asset_model` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").delete_asset_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset_model)
 
-Boto3 documentation:
-[IoTSiteWise.Client.delete_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_asset_model)
+```python title="Method definition"
+def delete_asset_model(
+    self,
+    *,
+    assetModelId: str,
+    clientToken: str = ...,
+) -> DeleteAssetModelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssetModelRequestRequestTypeDef](./type_defs.md#deleteassetmodelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteAssetModelResponseTypeDef](./type_defs.md#deleteassetmodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetModelId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAssetModelRequestRequestTypeDef = {  # (1)
+    "assetModelId": ...,
+}
 
-Returns
-[DeleteAssetModelResponseTypeDef](./type_defs.md#deleteassetmodelresponsetypedef).
+parent.delete_asset_model(**kwargs)
+```
 
-<a id="delete\_dashboard"></a>
+1. See [:material-code-braces: DeleteAssetModelRequestRequestTypeDef](./type_defs.md#deleteassetmodelrequestrequesttypedef) 
 
-### delete_dashboard
+### delete\_dashboard
 
 Deletes a dashboard from IoT SiteWise Monitor.
 
-Type annotations for `boto3.client("iotsitewise").delete_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").delete_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_dashboard)
 
-Boto3 documentation:
-[IoTSiteWise.Client.delete_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_dashboard)
+```python title="Method definition"
+def delete_dashboard(
+    self,
+    *,
+    dashboardId: str,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDashboardRequestRequestTypeDef](./type_defs.md#deletedashboardrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `dashboardId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDashboardRequestRequestTypeDef = {  # (1)
+    "dashboardId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_dashboard(**kwargs)
+```
 
-<a id="delete\_gateway"></a>
+1. See [:material-code-braces: DeleteDashboardRequestRequestTypeDef](./type_defs.md#deletedashboardrequestrequesttypedef) 
 
-### delete_gateway
+### delete\_gateway
 
 Deletes a gateway from IoT SiteWise.
 
-Type annotations for `boto3.client("iotsitewise").delete_gateway` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").delete_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_gateway)
 
-Boto3 documentation:
-[IoTSiteWise.Client.delete_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_gateway)
+```python title="Method definition"
+def delete_gateway(
+    self,
+    *,
+    gatewayId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGatewayRequestRequestTypeDef](./type_defs.md#deletegatewayrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `gatewayId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGatewayRequestRequestTypeDef = {  # (1)
+    "gatewayId": ...,
+}
 
-<a id="delete\_portal"></a>
+parent.delete_gateway(**kwargs)
+```
 
-### delete_portal
+1. See [:material-code-braces: DeleteGatewayRequestRequestTypeDef](./type_defs.md#deletegatewayrequestrequesttypedef) 
+
+### delete\_portal
 
 Deletes a portal from IoT SiteWise Monitor.
 
-Type annotations for `boto3.client("iotsitewise").delete_portal` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").delete_portal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_portal)
 
-Boto3 documentation:
-[IoTSiteWise.Client.delete_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_portal)
+```python title="Method definition"
+def delete_portal(
+    self,
+    *,
+    portalId: str,
+    clientToken: str = ...,
+) -> DeletePortalResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeletePortalRequestRequestTypeDef](./type_defs.md#deleteportalrequestrequesttypedef).
+1. See [:material-code-braces: DeletePortalResponseTypeDef](./type_defs.md#deleteportalresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePortalRequestRequestTypeDef = {  # (1)
+    "portalId": ...,
+}
 
-Returns
-[DeletePortalResponseTypeDef](./type_defs.md#deleteportalresponsetypedef).
+parent.delete_portal(**kwargs)
+```
 
-<a id="delete\_project"></a>
+1. See [:material-code-braces: DeletePortalRequestRequestTypeDef](./type_defs.md#deleteportalrequestrequesttypedef) 
 
-### delete_project
+### delete\_project
 
 Deletes a project from IoT SiteWise Monitor.
 
-Type annotations for `boto3.client("iotsitewise").delete_project` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").delete_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_project)
 
-Boto3 documentation:
-[IoTSiteWise.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_project)
+```python title="Method definition"
+def delete_project(
+    self,
+    *,
+    projectId: str,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_project(**kwargs)
+```
 
-<a id="delete\_time\_series"></a>
+1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
 
-### delete_time_series
+### delete\_time\_series
 
 Deletes a time series (data stream).
 
-Type annotations for `boto3.client("iotsitewise").delete_time_series` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").delete_time_series` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_time_series)
 
-Boto3 documentation:
-[IoTSiteWise.Client.delete_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.delete_time_series)
+```python title="Method definition"
+def delete_time_series(
+    self,
+    *,
+    alias: str = ...,
+    assetId: str = ...,
+    propertyId: str = ...,
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTimeSeriesRequestRequestTypeDef](./type_defs.md#deletetimeseriesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `alias`: `str`
-- `assetId`: `str`
-- `propertyId`: `str`
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteTimeSeriesRequestRequestTypeDef = {  # (1)
+    "alias": ...,
+}
 
-<a id="describe\_access\_policy"></a>
+parent.delete_time_series(**kwargs)
+```
 
-### describe_access_policy
+1. See [:material-code-braces: DeleteTimeSeriesRequestRequestTypeDef](./type_defs.md#deletetimeseriesrequestrequesttypedef) 
+
+### describe\_access\_policy
 
 Describes an access policy, which specifies an identity's access to an IoT
 SiteWise Monitor portal or project.
 
-Type annotations for `boto3.client("iotsitewise").describe_access_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_access_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_access_policy)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_access_policy)
+```python title="Method definition"
+def describe_access_policy(
+    self,
+    *,
+    accessPolicyId: str,
+) -> DescribeAccessPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccessPolicyRequestRequestTypeDef](./type_defs.md#describeaccesspolicyrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAccessPolicyResponseTypeDef](./type_defs.md#describeaccesspolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accessPolicyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAccessPolicyRequestRequestTypeDef = {  # (1)
+    "accessPolicyId": ...,
+}
 
-Returns
-[DescribeAccessPolicyResponseTypeDef](./type_defs.md#describeaccesspolicyresponsetypedef).
+parent.describe_access_policy(**kwargs)
+```
 
-<a id="describe\_asset"></a>
+1. See [:material-code-braces: DescribeAccessPolicyRequestRequestTypeDef](./type_defs.md#describeaccesspolicyrequestrequesttypedef) 
 
-### describe_asset
+### describe\_asset
 
 Retrieves information about an asset.
 
-Type annotations for `boto3.client("iotsitewise").describe_asset` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_asset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset)
+```python title="Method definition"
+def describe_asset(
+    self,
+    *,
+    assetId: str,
+) -> DescribeAssetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAssetRequestRequestTypeDef](./type_defs.md#describeassetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAssetRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+}
 
-Returns
-[DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef).
+parent.describe_asset(**kwargs)
+```
 
-<a id="describe\_asset\_model"></a>
+1. See [:material-code-braces: DescribeAssetRequestRequestTypeDef](./type_defs.md#describeassetrequestrequesttypedef) 
 
-### describe_asset_model
+### describe\_asset\_model
 
 Retrieves information about an asset model.
 
-Type annotations for `boto3.client("iotsitewise").describe_asset_model` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_asset_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_model)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_model)
+```python title="Method definition"
+def describe_asset_model(
+    self,
+    *,
+    assetModelId: str,
+) -> DescribeAssetModelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAssetModelRequestRequestTypeDef](./type_defs.md#describeassetmodelrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAssetModelResponseTypeDef](./type_defs.md#describeassetmodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetModelId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAssetModelRequestRequestTypeDef = {  # (1)
+    "assetModelId": ...,
+}
 
-Returns
-[DescribeAssetModelResponseTypeDef](./type_defs.md#describeassetmodelresponsetypedef).
+parent.describe_asset_model(**kwargs)
+```
 
-<a id="describe\_asset\_property"></a>
+1. See [:material-code-braces: DescribeAssetModelRequestRequestTypeDef](./type_defs.md#describeassetmodelrequestrequesttypedef) 
 
-### describe_asset_property
+### describe\_asset\_property
 
 Retrieves information about an asset property.
 
-Type annotations for `boto3.client("iotsitewise").describe_asset_property`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_asset_property` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_property)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_asset_property](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_asset_property)
+```python title="Method definition"
+def describe_asset_property(
+    self,
+    *,
+    assetId: str,
+    propertyId: str,
+) -> DescribeAssetPropertyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAssetPropertyRequestRequestTypeDef](./type_defs.md#describeassetpropertyrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAssetPropertyResponseTypeDef](./type_defs.md#describeassetpropertyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetId`: `str` *(required)*
-- `propertyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAssetPropertyRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+    "propertyId": ...,
+}
 
-Returns
-[DescribeAssetPropertyResponseTypeDef](./type_defs.md#describeassetpropertyresponsetypedef).
+parent.describe_asset_property(**kwargs)
+```
 
-<a id="describe\_dashboard"></a>
+1. See [:material-code-braces: DescribeAssetPropertyRequestRequestTypeDef](./type_defs.md#describeassetpropertyrequestrequesttypedef) 
 
-### describe_dashboard
+### describe\_dashboard
 
 Retrieves information about a dashboard.
 
-Type annotations for `boto3.client("iotsitewise").describe_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_dashboard)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_dashboard)
+```python title="Method definition"
+def describe_dashboard(
+    self,
+    *,
+    dashboardId: str,
+) -> DescribeDashboardResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDashboardRequestRequestTypeDef](./type_defs.md#describedashboardrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDashboardResponseTypeDef](./type_defs.md#describedashboardresponsetypedef) 
 
-Keyword-only arguments:
 
-- `dashboardId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDashboardRequestRequestTypeDef = {  # (1)
+    "dashboardId": ...,
+}
 
-Returns
-[DescribeDashboardResponseTypeDef](./type_defs.md#describedashboardresponsetypedef).
+parent.describe_dashboard(**kwargs)
+```
 
-<a id="describe\_default\_encryption\_configuration"></a>
+1. See [:material-code-braces: DescribeDashboardRequestRequestTypeDef](./type_defs.md#describedashboardrequestrequesttypedef) 
 
-### describe_default_encryption_configuration
+### describe\_default\_encryption\_configuration
 
 Retrieves information about the default encryption configuration for the Amazon
 Web Services account in the default or specified Region.
 
-Type annotations for
-`boto3.client("iotsitewise").describe_default_encryption_configuration` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_default_encryption_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_default_encryption_configuration)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_default_encryption_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_default_encryption_configuration)
+```python title="Method definition"
+def describe_default_encryption_configuration(
+    self,
+) -> DescribeDefaultEncryptionConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#describedefaultencryptionconfigurationresponsetypedef).
+1. See [:material-code-braces: DescribeDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#describedefaultencryptionconfigurationresponsetypedef) 
 
-<a id="describe\_gateway"></a>
-
-### describe_gateway
+### describe\_gateway
 
 Retrieves information about a gateway.
 
-Type annotations for `boto3.client("iotsitewise").describe_gateway` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway)
+```python title="Method definition"
+def describe_gateway(
+    self,
+    *,
+    gatewayId: str,
+) -> DescribeGatewayResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGatewayRequestRequestTypeDef](./type_defs.md#describegatewayrequestrequesttypedef).
+1. See [:material-code-braces: DescribeGatewayResponseTypeDef](./type_defs.md#describegatewayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `gatewayId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeGatewayRequestRequestTypeDef = {  # (1)
+    "gatewayId": ...,
+}
 
-Returns
-[DescribeGatewayResponseTypeDef](./type_defs.md#describegatewayresponsetypedef).
+parent.describe_gateway(**kwargs)
+```
 
-<a id="describe\_gateway\_capability\_configuration"></a>
+1. See [:material-code-braces: DescribeGatewayRequestRequestTypeDef](./type_defs.md#describegatewayrequestrequesttypedef) 
 
-### describe_gateway_capability_configuration
+### describe\_gateway\_capability\_configuration
 
 Retrieves information about a gateway capability configuration.
 
-Type annotations for
-`boto3.client("iotsitewise").describe_gateway_capability_configuration` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_gateway_capability_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway_capability_configuration)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_gateway_capability_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_gateway_capability_configuration)
+```python title="Method definition"
+def describe_gateway_capability_configuration(
+    self,
+    *,
+    gatewayId: str,
+    capabilityNamespace: str,
+) -> DescribeGatewayCapabilityConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGatewayCapabilityConfigurationRequestRequestTypeDef](./type_defs.md#describegatewaycapabilityconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#describegatewaycapabilityconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `gatewayId`: `str` *(required)*
-- `capabilityNamespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeGatewayCapabilityConfigurationRequestRequestTypeDef = {  # (1)
+    "gatewayId": ...,
+    "capabilityNamespace": ...,
+}
 
-Returns
-[DescribeGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#describegatewaycapabilityconfigurationresponsetypedef).
+parent.describe_gateway_capability_configuration(**kwargs)
+```
 
-<a id="describe\_logging\_options"></a>
+1. See [:material-code-braces: DescribeGatewayCapabilityConfigurationRequestRequestTypeDef](./type_defs.md#describegatewaycapabilityconfigurationrequestrequesttypedef) 
 
-### describe_logging_options
+### describe\_logging\_options
 
 Retrieves the current IoT SiteWise logging options.
 
-Type annotations for `boto3.client("iotsitewise").describe_logging_options`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_logging_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_logging_options)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_logging_options)
+```python title="Method definition"
+def describe_logging_options(
+    self,
+) -> DescribeLoggingOptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
+1. See [:material-code-braces: DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef) 
 
-<a id="describe\_portal"></a>
-
-### describe_portal
+### describe\_portal
 
 Retrieves information about a portal.
 
-Type annotations for `boto3.client("iotsitewise").describe_portal` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_portal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_portal)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_portal)
+```python title="Method definition"
+def describe_portal(
+    self,
+    *,
+    portalId: str,
+) -> DescribePortalResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePortalRequestRequestTypeDef](./type_defs.md#describeportalrequestrequesttypedef).
+1. See [:material-code-braces: DescribePortalResponseTypeDef](./type_defs.md#describeportalresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePortalRequestRequestTypeDef = {  # (1)
+    "portalId": ...,
+}
 
-Returns
-[DescribePortalResponseTypeDef](./type_defs.md#describeportalresponsetypedef).
+parent.describe_portal(**kwargs)
+```
 
-<a id="describe\_project"></a>
+1. See [:material-code-braces: DescribePortalRequestRequestTypeDef](./type_defs.md#describeportalrequestrequesttypedef) 
 
-### describe_project
+### describe\_project
 
 Retrieves information about a project.
 
-Type annotations for `boto3.client("iotsitewise").describe_project` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_project)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_project)
+```python title="Method definition"
+def describe_project(
+    self,
+    *,
+    projectId: str,
+) -> DescribeProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProjectRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns
-[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
+parent.describe_project(**kwargs)
+```
 
-<a id="describe\_storage\_configuration"></a>
+1. See [:material-code-braces: DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef) 
 
-### describe_storage_configuration
+### describe\_storage\_configuration
 
 Retrieves information about the storage configuration for IoT SiteWise.
 
-Type annotations for
-`boto3.client("iotsitewise").describe_storage_configuration` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_storage_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_storage_configuration)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_storage_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_storage_configuration)
+```python title="Method definition"
+def describe_storage_configuration(
+    self,
+) -> DescribeStorageConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeStorageConfigurationResponseTypeDef](./type_defs.md#describestorageconfigurationresponsetypedef).
+1. See [:material-code-braces: DescribeStorageConfigurationResponseTypeDef](./type_defs.md#describestorageconfigurationresponsetypedef) 
 
-<a id="describe\_time\_series"></a>
-
-### describe_time_series
+### describe\_time\_series
 
 Retrieves information about a time series (data stream).
 
-Type annotations for `boto3.client("iotsitewise").describe_time_series` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").describe_time_series` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_time_series)
 
-Boto3 documentation:
-[IoTSiteWise.Client.describe_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.describe_time_series)
+```python title="Method definition"
+def describe_time_series(
+    self,
+    *,
+    alias: str = ...,
+    assetId: str = ...,
+    propertyId: str = ...,
+) -> DescribeTimeSeriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTimeSeriesRequestRequestTypeDef](./type_defs.md#describetimeseriesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTimeSeriesResponseTypeDef](./type_defs.md#describetimeseriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `alias`: `str`
-- `assetId`: `str`
-- `propertyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeTimeSeriesRequestRequestTypeDef = {  # (1)
+    "alias": ...,
+}
 
-Returns
-[DescribeTimeSeriesResponseTypeDef](./type_defs.md#describetimeseriesresponsetypedef).
+parent.describe_time_series(**kwargs)
+```
 
-<a id="disassociate\_assets"></a>
+1. See [:material-code-braces: DescribeTimeSeriesRequestRequestTypeDef](./type_defs.md#describetimeseriesrequestrequesttypedef) 
 
-### disassociate_assets
+### disassociate\_assets
 
 Disassociates a child asset from the given parent asset through a hierarchy
 defined in the parent asset's model.
 
-Type annotations for `boto3.client("iotsitewise").disassociate_assets` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").disassociate_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_assets)
 
-Boto3 documentation:
-[IoTSiteWise.Client.disassociate_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_assets)
+```python title="Method definition"
+def disassociate_assets(
+    self,
+    *,
+    assetId: str,
+    hierarchyId: str,
+    childAssetId: str,
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateAssetsRequestRequestTypeDef](./type_defs.md#disassociateassetsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assetId`: `str` *(required)*
-- `hierarchyId`: `str` *(required)*
-- `childAssetId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateAssetsRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+    "hierarchyId": ...,
+    "childAssetId": ...,
+}
 
-<a id="disassociate\_time\_series\_from\_asset\_property"></a>
+parent.disassociate_assets(**kwargs)
+```
 
-### disassociate_time_series_from_asset_property
+1. See [:material-code-braces: DisassociateAssetsRequestRequestTypeDef](./type_defs.md#disassociateassetsrequestrequesttypedef) 
+
+### disassociate\_time\_series\_from\_asset\_property
 
 Disassociates a time series (data stream) from an asset property.
 
-Type annotations for
-`boto3.client("iotsitewise").disassociate_time_series_from_asset_property`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").disassociate_time_series_from_asset_property` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_time_series_from_asset_property)
 
-Boto3 documentation:
-[IoTSiteWise.Client.disassociate_time_series_from_asset_property](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.disassociate_time_series_from_asset_property)
+```python title="Method definition"
+def disassociate_time_series_from_asset_property(
+    self,
+    *,
+    alias: str,
+    assetId: str,
+    propertyId: str,
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef](./type_defs.md#disassociatetimeseriesfromassetpropertyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `alias`: `str` *(required)*
-- `assetId`: `str` *(required)*
-- `propertyId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef = {  # (1)
+    "alias": ...,
+    "assetId": ...,
+    "propertyId": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.disassociate_time_series_from_asset_property(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DisassociateTimeSeriesFromAssetPropertyRequestRequestTypeDef](./type_defs.md#disassociatetimeseriesfromassetpropertyrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iotsitewise").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IoTSiteWise.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_asset\_property\_aggregates"></a>
-
-### get_asset_property_aggregates
+### get\_asset\_property\_aggregates
 
 Gets aggregated values for an asset property.
 
-Type annotations for
-`boto3.client("iotsitewise").get_asset_property_aggregates` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_asset_property_aggregates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_aggregates)
 
-Boto3 documentation:
-[IoTSiteWise.Client.get_asset_property_aggregates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_aggregates)
+```python title="Method definition"
+def get_asset_property_aggregates(
+    self,
+    *,
+    aggregateTypes: Sequence[AggregateTypeType],  # (1)
+    resolution: str,
+    startDate: Union[datetime, str],
+    endDate: Union[datetime, str],
+    assetId: str = ...,
+    propertyId: str = ...,
+    propertyAlias: str = ...,
+    qualities: Sequence[QualityType] = ...,  # (2)
+    timeOrdering: TimeOrderingType = ...,  # (3)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetAssetPropertyAggregatesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetAssetPropertyAggregatesRequestRequestTypeDef](./type_defs.md#getassetpropertyaggregatesrequestrequesttypedef).
+1. See [:material-code-brackets: AggregateTypeType](./literals.md#aggregatetypetype) 
+2. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+3. See [:material-code-brackets: TimeOrderingType](./literals.md#timeorderingtype) 
+4. See [:material-code-braces: GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `aggregateTypes`:
-  `Sequence`\[[AggregateTypeType](./literals.md#aggregatetypetype)\]
-  *(required)*
-- `resolution`: `str` *(required)*
-- `startDate`: `Union`\[`datetime`, `str`\] *(required)*
-- `endDate`: `Union`\[`datetime`, `str`\] *(required)*
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
-- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
-- `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetAssetPropertyAggregatesRequestRequestTypeDef = {  # (1)
+    "aggregateTypes": ...,
+    "resolution": ...,
+    "startDate": ...,
+    "endDate": ...,
+}
 
-Returns
-[GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef).
+parent.get_asset_property_aggregates(**kwargs)
+```
 
-<a id="get\_asset\_property\_value"></a>
+1. See [:material-code-braces: GetAssetPropertyAggregatesRequestRequestTypeDef](./type_defs.md#getassetpropertyaggregatesrequestrequesttypedef) 
 
-### get_asset_property_value
+### get\_asset\_property\_value
 
 Gets an asset property's current value.
 
-Type annotations for `boto3.client("iotsitewise").get_asset_property_value`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_asset_property_value` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value)
 
-Boto3 documentation:
-[IoTSiteWise.Client.get_asset_property_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value)
+```python title="Method definition"
+def get_asset_property_value(
+    self,
+    *,
+    assetId: str = ...,
+    propertyId: str = ...,
+    propertyAlias: str = ...,
+) -> GetAssetPropertyValueResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAssetPropertyValueRequestRequestTypeDef](./type_defs.md#getassetpropertyvaluerequestrequesttypedef).
+1. See [:material-code-braces: GetAssetPropertyValueResponseTypeDef](./type_defs.md#getassetpropertyvalueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetAssetPropertyValueRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+}
 
-Returns
-[GetAssetPropertyValueResponseTypeDef](./type_defs.md#getassetpropertyvalueresponsetypedef).
+parent.get_asset_property_value(**kwargs)
+```
 
-<a id="get\_asset\_property\_value\_history"></a>
+1. See [:material-code-braces: GetAssetPropertyValueRequestRequestTypeDef](./type_defs.md#getassetpropertyvaluerequestrequesttypedef) 
 
-### get_asset_property_value_history
+### get\_asset\_property\_value\_history
 
 Gets the history of an asset property's values.
 
-Type annotations for
-`boto3.client("iotsitewise").get_asset_property_value_history` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_asset_property_value_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value_history)
 
-Boto3 documentation:
-[IoTSiteWise.Client.get_asset_property_value_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_asset_property_value_history)
+```python title="Method definition"
+def get_asset_property_value_history(
+    self,
+    *,
+    assetId: str = ...,
+    propertyId: str = ...,
+    propertyAlias: str = ...,
+    startDate: Union[datetime, str] = ...,
+    endDate: Union[datetime, str] = ...,
+    qualities: Sequence[QualityType] = ...,  # (1)
+    timeOrdering: TimeOrderingType = ...,  # (2)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetAssetPropertyValueHistoryResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetAssetPropertyValueHistoryRequestRequestTypeDef](./type_defs.md#getassetpropertyvaluehistoryrequestrequesttypedef).
+1. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+2. See [:material-code-brackets: TimeOrderingType](./literals.md#timeorderingtype) 
+3. See [:material-code-braces: GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
-- `startDate`: `Union`\[`datetime`, `str`\]
-- `endDate`: `Union`\[`datetime`, `str`\]
-- `qualities`: `Sequence`\[[QualityType](./literals.md#qualitytype)\]
-- `timeOrdering`: [TimeOrderingType](./literals.md#timeorderingtype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetAssetPropertyValueHistoryRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+}
 
-Returns
-[GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef).
+parent.get_asset_property_value_history(**kwargs)
+```
 
-<a id="get\_interpolated\_asset\_property\_values"></a>
+1. See [:material-code-braces: GetAssetPropertyValueHistoryRequestRequestTypeDef](./type_defs.md#getassetpropertyvaluehistoryrequestrequesttypedef) 
 
-### get_interpolated_asset_property_values
+### get\_interpolated\_asset\_property\_values
 
 Get interpolated values for an asset property for a specified time interval,
 during a period of time.
 
-Type annotations for
-`boto3.client("iotsitewise").get_interpolated_asset_property_values` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_interpolated_asset_property_values` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_interpolated_asset_property_values)
 
-Boto3 documentation:
-[IoTSiteWise.Client.get_interpolated_asset_property_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.get_interpolated_asset_property_values)
+```python title="Method definition"
+def get_interpolated_asset_property_values(
+    self,
+    *,
+    startTimeInSeconds: int,
+    endTimeInSeconds: int,
+    quality: QualityType,  # (1)
+    intervalInSeconds: int,
+    type: str,
+    assetId: str = ...,
+    propertyId: str = ...,
+    propertyAlias: str = ...,
+    startTimeOffsetInNanos: int = ...,
+    endTimeOffsetInNanos: int = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    intervalWindowInSeconds: int = ...,
+) -> GetInterpolatedAssetPropertyValuesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetInterpolatedAssetPropertyValuesRequestRequestTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesrequestrequesttypedef).
+1. See [:material-code-brackets: QualityType](./literals.md#qualitytype) 
+2. See [:material-code-braces: GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `startTimeInSeconds`: `int` *(required)*
-- `endTimeInSeconds`: `int` *(required)*
-- `quality`: [QualityType](./literals.md#qualitytype) *(required)*
-- `intervalInSeconds`: `int` *(required)*
-- `type`: `str` *(required)*
-- `assetId`: `str`
-- `propertyId`: `str`
-- `propertyAlias`: `str`
-- `startTimeOffsetInNanos`: `int`
-- `endTimeOffsetInNanos`: `int`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `intervalWindowInSeconds`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetInterpolatedAssetPropertyValuesRequestRequestTypeDef = {  # (1)
+    "startTimeInSeconds": ...,
+    "endTimeInSeconds": ...,
+    "quality": ...,
+    "intervalInSeconds": ...,
+    "type": ...,
+}
 
-Returns
-[GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef).
+parent.get_interpolated_asset_property_values(**kwargs)
+```
 
-<a id="list\_access\_policies"></a>
+1. See [:material-code-braces: GetInterpolatedAssetPropertyValuesRequestRequestTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesrequestrequesttypedef) 
 
-### list_access_policies
+### list\_access\_policies
 
 Retrieves a paginated list of access policies for an identity (an Amazon Web
 Services SSO user, an Amazon Web Services SSO group, or an IAM user) or an IoT
 SiteWise Monitor resource (a portal or project).
 
-Type annotations for `boto3.client("iotsitewise").list_access_policies` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_access_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_access_policies)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_access_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_access_policies)
+```python title="Method definition"
+def list_access_policies(
+    self,
+    *,
+    identityType: IdentityTypeType = ...,  # (1)
+    identityId: str = ...,
+    resourceType: ResourceTypeType = ...,  # (2)
+    resourceId: str = ...,
+    iamArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAccessPoliciesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListAccessPoliciesRequestRequestTypeDef](./type_defs.md#listaccesspoliciesrequestrequesttypedef).
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `identityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `identityId`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `resourceId`: `str`
-- `iamArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccessPoliciesRequestRequestTypeDef = {  # (1)
+    "identityType": ...,
+}
 
-Returns
-[ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef).
+parent.list_access_policies(**kwargs)
+```
 
-<a id="list\_asset\_models"></a>
+1. See [:material-code-braces: ListAccessPoliciesRequestRequestTypeDef](./type_defs.md#listaccesspoliciesrequestrequesttypedef) 
 
-### list_asset_models
+### list\_asset\_models
 
 Retrieves a paginated list of summaries of all asset models.
 
-Type annotations for `boto3.client("iotsitewise").list_asset_models` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_asset_models` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_models)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_asset_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_models)
+```python title="Method definition"
+def list_asset_models(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssetModelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAssetModelsRequestRequestTypeDef](./type_defs.md#listassetmodelsrequestrequesttypedef).
+1. See [:material-code-braces: ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssetModelsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef).
+parent.list_asset_models(**kwargs)
+```
 
-<a id="list\_asset\_relationships"></a>
+1. See [:material-code-braces: ListAssetModelsRequestRequestTypeDef](./type_defs.md#listassetmodelsrequestrequesttypedef) 
 
-### list_asset_relationships
+### list\_asset\_relationships
 
 Retrieves a paginated list of asset relationships for an asset.
 
-Type annotations for `boto3.client("iotsitewise").list_asset_relationships`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_asset_relationships` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_relationships)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_asset_relationships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_asset_relationships)
+```python title="Method definition"
+def list_asset_relationships(
+    self,
+    *,
+    assetId: str,
+    traversalType: TraversalTypeType,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssetRelationshipsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssetRelationshipsRequestRequestTypeDef](./type_defs.md#listassetrelationshipsrequestrequesttypedef).
+1. See [:material-code-brackets: TraversalTypeType](./literals.md#traversaltypetype) 
+2. See [:material-code-braces: ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetId`: `str` *(required)*
-- `traversalType`: `Literal['PATH_TO_ROOT']` (see
-  [TraversalTypeType](./literals.md#traversaltypetype)) *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssetRelationshipsRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+    "traversalType": ...,
+}
 
-Returns
-[ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef).
+parent.list_asset_relationships(**kwargs)
+```
 
-<a id="list\_assets"></a>
+1. See [:material-code-braces: ListAssetRelationshipsRequestRequestTypeDef](./type_defs.md#listassetrelationshipsrequestrequesttypedef) 
 
-### list_assets
+### list\_assets
 
 Retrieves a paginated list of asset summaries.
 
-Type annotations for `boto3.client("iotsitewise").list_assets` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_assets)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_assets)
+```python title="Method definition"
+def list_assets(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    assetModelId: str = ...,
+    filter: ListAssetsFilterType = ...,  # (1)
+) -> ListAssetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssetsRequestRequestTypeDef](./type_defs.md#listassetsrequestrequesttypedef).
+1. See [:material-code-brackets: ListAssetsFilterType](./literals.md#listassetsfiltertype) 
+2. See [:material-code-braces: ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `assetModelId`: `str`
-- `filter`: [ListAssetsFilterType](./literals.md#listassetsfiltertype)
+```python title="Usage example with kwargs"
+kwargs: ListAssetsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef).
+parent.list_assets(**kwargs)
+```
 
-<a id="list\_associated\_assets"></a>
+1. See [:material-code-braces: ListAssetsRequestRequestTypeDef](./type_defs.md#listassetsrequestrequesttypedef) 
 
-### list_associated_assets
+### list\_associated\_assets
 
 Retrieves a paginated list of associated assets.
 
-Type annotations for `boto3.client("iotsitewise").list_associated_assets`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_associated_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_associated_assets)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_associated_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_associated_assets)
+```python title="Method definition"
+def list_associated_assets(
+    self,
+    *,
+    assetId: str,
+    hierarchyId: str = ...,
+    traversalDirection: TraversalDirectionType = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssociatedAssetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssociatedAssetsRequestRequestTypeDef](./type_defs.md#listassociatedassetsrequestrequesttypedef).
+1. See [:material-code-brackets: TraversalDirectionType](./literals.md#traversaldirectiontype) 
+2. See [:material-code-braces: ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetId`: `str` *(required)*
-- `hierarchyId`: `str`
-- `traversalDirection`:
-  [TraversalDirectionType](./literals.md#traversaldirectiontype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssociatedAssetsRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+}
 
-Returns
-[ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef).
+parent.list_associated_assets(**kwargs)
+```
 
-<a id="list\_dashboards"></a>
+1. See [:material-code-braces: ListAssociatedAssetsRequestRequestTypeDef](./type_defs.md#listassociatedassetsrequestrequesttypedef) 
 
-### list_dashboards
+### list\_dashboards
 
 Retrieves a paginated list of dashboards for an IoT SiteWise Monitor project.
 
-Type annotations for `boto3.client("iotsitewise").list_dashboards` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_dashboards` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_dashboards)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_dashboards](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_dashboards)
+```python title="Method definition"
+def list_dashboards(
+    self,
+    *,
+    projectId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDashboardsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDashboardsRequestRequestTypeDef](./type_defs.md#listdashboardsrequestrequesttypedef).
+1. See [:material-code-braces: ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDashboardsRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns
-[ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef).
+parent.list_dashboards(**kwargs)
+```
 
-<a id="list\_gateways"></a>
+1. See [:material-code-braces: ListDashboardsRequestRequestTypeDef](./type_defs.md#listdashboardsrequestrequesttypedef) 
 
-### list_gateways
+### list\_gateways
 
 Retrieves a paginated list of gateways.
 
-Type annotations for `boto3.client("iotsitewise").list_gateways` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_gateways` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_gateways)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_gateways)
+```python title="Method definition"
+def list_gateways(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListGatewaysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGatewaysRequestRequestTypeDef](./type_defs.md#listgatewaysrequestrequesttypedef).
+1. See [:material-code-braces: ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGatewaysRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef).
+parent.list_gateways(**kwargs)
+```
 
-<a id="list\_portals"></a>
+1. See [:material-code-braces: ListGatewaysRequestRequestTypeDef](./type_defs.md#listgatewaysrequestrequesttypedef) 
 
-### list_portals
+### list\_portals
 
 Retrieves a paginated list of IoT SiteWise Monitor portals.
 
-Type annotations for `boto3.client("iotsitewise").list_portals` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_portals` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_portals)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_portals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_portals)
+```python title="Method definition"
+def list_portals(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListPortalsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPortalsRequestRequestTypeDef](./type_defs.md#listportalsrequestrequesttypedef).
+1. See [:material-code-braces: ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPortalsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef).
+parent.list_portals(**kwargs)
+```
 
-<a id="list\_project\_assets"></a>
+1. See [:material-code-braces: ListPortalsRequestRequestTypeDef](./type_defs.md#listportalsrequestrequesttypedef) 
 
-### list_project_assets
+### list\_project\_assets
 
 Retrieves a paginated list of assets associated with an IoT SiteWise Monitor
 project.
 
-Type annotations for `boto3.client("iotsitewise").list_project_assets` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_project_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_project_assets)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_project_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_project_assets)
+```python title="Method definition"
+def list_project_assets(
+    self,
+    *,
+    projectId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListProjectAssetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProjectAssetsRequestRequestTypeDef](./type_defs.md#listprojectassetsrequestrequesttypedef).
+1. See [:material-code-braces: ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProjectAssetsRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns
-[ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef).
+parent.list_project_assets(**kwargs)
+```
 
-<a id="list\_projects"></a>
+1. See [:material-code-braces: ListProjectAssetsRequestRequestTypeDef](./type_defs.md#listprojectassetsrequestrequesttypedef) 
 
-### list_projects
+### list\_projects
 
 Retrieves a paginated list of projects for an IoT SiteWise Monitor portal.
 
-Type annotations for `boto3.client("iotsitewise").list_projects` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_projects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_projects)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_projects)
+```python title="Method definition"
+def list_projects(
+    self,
+    *,
+    portalId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListProjectsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
+1. See [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestRequestTypeDef = {  # (1)
+    "portalId": ...,
+}
 
-Returns
-[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
+parent.list_projects(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves the list of tags for an IoT SiteWise resource.
 
-Type annotations for `boto3.client("iotsitewise").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_time\_series"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_time_series
+### list\_time\_series
 
 Retrieves a paginated list of time series (data streams).
 
-Type annotations for `boto3.client("iotsitewise").list_time_series` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").list_time_series` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_time_series)
 
-Boto3 documentation:
-[IoTSiteWise.Client.list_time_series](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.list_time_series)
+```python title="Method definition"
+def list_time_series(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    assetId: str = ...,
+    aliasPrefix: str = ...,
+    timeSeriesType: ListTimeSeriesTypeType = ...,  # (1)
+) -> ListTimeSeriesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTimeSeriesRequestRequestTypeDef](./type_defs.md#listtimeseriesrequestrequesttypedef).
+1. See [:material-code-brackets: ListTimeSeriesTypeType](./literals.md#listtimeseriestypetype) 
+2. See [:material-code-braces: ListTimeSeriesResponseTypeDef](./type_defs.md#listtimeseriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `assetId`: `str`
-- `aliasPrefix`: `str`
-- `timeSeriesType`:
-  [ListTimeSeriesTypeType](./literals.md#listtimeseriestypetype)
+```python title="Usage example with kwargs"
+kwargs: ListTimeSeriesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListTimeSeriesResponseTypeDef](./type_defs.md#listtimeseriesresponsetypedef).
+parent.list_time_series(**kwargs)
+```
 
-<a id="put\_default\_encryption\_configuration"></a>
+1. See [:material-code-braces: ListTimeSeriesRequestRequestTypeDef](./type_defs.md#listtimeseriesrequestrequesttypedef) 
 
-### put_default_encryption_configuration
+### put\_default\_encryption\_configuration
 
 Sets the default encryption configuration for the Amazon Web Services account.
 
-Type annotations for
-`boto3.client("iotsitewise").put_default_encryption_configuration` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").put_default_encryption_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_default_encryption_configuration)
 
-Boto3 documentation:
-[IoTSiteWise.Client.put_default_encryption_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_default_encryption_configuration)
+```python title="Method definition"
+def put_default_encryption_configuration(
+    self,
+    *,
+    encryptionType: EncryptionTypeType,  # (1)
+    kmsKeyId: str = ...,
+) -> PutDefaultEncryptionConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutDefaultEncryptionConfigurationRequestRequestTypeDef](./type_defs.md#putdefaultencryptionconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
+2. See [:material-code-braces: PutDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#putdefaultencryptionconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `encryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-  *(required)*
-- `kmsKeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutDefaultEncryptionConfigurationRequestRequestTypeDef = {  # (1)
+    "encryptionType": ...,
+}
 
-Returns
-[PutDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#putdefaultencryptionconfigurationresponsetypedef).
+parent.put_default_encryption_configuration(**kwargs)
+```
 
-<a id="put\_logging\_options"></a>
+1. See [:material-code-braces: PutDefaultEncryptionConfigurationRequestRequestTypeDef](./type_defs.md#putdefaultencryptionconfigurationrequestrequesttypedef) 
 
-### put_logging_options
+### put\_logging\_options
 
 Sets logging options for IoT SiteWise.
 
-Type annotations for `boto3.client("iotsitewise").put_logging_options` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").put_logging_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_logging_options)
 
-Boto3 documentation:
-[IoTSiteWise.Client.put_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_logging_options)
+```python title="Method definition"
+def put_logging_options(
+    self,
+    *,
+    loggingOptions: LoggingOptionsTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutLoggingOptionsRequestRequestTypeDef](./type_defs.md#putloggingoptionsrequestrequesttypedef).
+1. See [:material-code-braces: LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) 
 
-Keyword-only arguments:
 
-- `loggingOptions`:
-  [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutLoggingOptionsRequestRequestTypeDef = {  # (1)
+    "loggingOptions": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_logging_options(**kwargs)
+```
 
-<a id="put\_storage\_configuration"></a>
+1. See [:material-code-braces: PutLoggingOptionsRequestRequestTypeDef](./type_defs.md#putloggingoptionsrequestrequesttypedef) 
 
-### put_storage_configuration
+### put\_storage\_configuration
 
 Configures storage settings for IoT SiteWise.
 
-Type annotations for `boto3.client("iotsitewise").put_storage_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").put_storage_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_storage_configuration)
 
-Boto3 documentation:
-[IoTSiteWise.Client.put_storage_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.put_storage_configuration)
+```python title="Method definition"
+def put_storage_configuration(
+    self,
+    *,
+    storageType: StorageTypeType,  # (1)
+    multiLayerStorage: MultiLayerStorageTypeDef = ...,  # (2)
+    disassociatedDataStorage: DisassociatedDataStorageStateType = ...,  # (3)
+    retentionPeriod: RetentionPeriodTypeDef = ...,  # (4)
+) -> PutStorageConfigurationResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[PutStorageConfigurationRequestRequestTypeDef](./type_defs.md#putstorageconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: StorageTypeType](./literals.md#storagetypetype) 
+2. See [:material-code-braces: MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef) 
+3. See [:material-code-brackets: DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype) 
+4. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+5. See [:material-code-braces: PutStorageConfigurationResponseTypeDef](./type_defs.md#putstorageconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `storageType`: [StorageTypeType](./literals.md#storagetypetype) *(required)*
-- `multiLayerStorage`:
-  [MultiLayerStorageTypeDef](./type_defs.md#multilayerstoragetypedef)
-- `disassociatedDataStorage`:
-  [DisassociatedDataStorageStateType](./literals.md#disassociateddatastoragestatetype)
-- `retentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
+```python title="Usage example with kwargs"
+kwargs: PutStorageConfigurationRequestRequestTypeDef = {  # (1)
+    "storageType": ...,
+}
 
-Returns
-[PutStorageConfigurationResponseTypeDef](./type_defs.md#putstorageconfigurationresponsetypedef).
+parent.put_storage_configuration(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutStorageConfigurationRequestRequestTypeDef](./type_defs.md#putstorageconfigurationrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to an IoT SiteWise resource.
 
-Type annotations for `boto3.client("iotsitewise").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.tag_resource)
 
-Boto3 documentation:
-[IoTSiteWise.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from an IoT SiteWise resource.
 
-Type annotations for `boto3.client("iotsitewise").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.untag_resource)
 
-Boto3 documentation:
-[IoTSiteWise.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_access\_policy"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_access_policy
+### update\_access\_policy
 
 Updates an existing access policy that specifies an identity's access to an IoT
 SiteWise Monitor portal or project resource.
 
-Type annotations for `boto3.client("iotsitewise").update_access_policy` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").update_access_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_access_policy)
 
-Boto3 documentation:
-[IoTSiteWise.Client.update_access_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_access_policy)
+```python title="Method definition"
+def update_access_policy(
+    self,
+    *,
+    accessPolicyId: str,
+    accessPolicyIdentity: IdentityTypeDef,  # (1)
+    accessPolicyResource: ResourceTypeDef,  # (2)
+    accessPolicyPermission: PermissionType,  # (3)
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccessPolicyRequestRequestTypeDef](./type_defs.md#updateaccesspolicyrequestrequesttypedef).
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 
-Keyword-only arguments:
 
-- `accessPolicyId`: `str` *(required)*
-- `accessPolicyIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-  *(required)*
-- `accessPolicyResource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-  *(required)*
-- `accessPolicyPermission`: [PermissionType](./literals.md#permissiontype)
-  *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAccessPolicyRequestRequestTypeDef = {  # (1)
+    "accessPolicyId": ...,
+    "accessPolicyIdentity": ...,
+    "accessPolicyResource": ...,
+    "accessPolicyPermission": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_access_policy(**kwargs)
+```
 
-<a id="update\_asset"></a>
+1. See [:material-code-braces: UpdateAccessPolicyRequestRequestTypeDef](./type_defs.md#updateaccesspolicyrequestrequesttypedef) 
 
-### update_asset
+### update\_asset
 
 Updates an asset's name.
 
-Type annotations for `boto3.client("iotsitewise").update_asset` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").update_asset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset)
 
-Boto3 documentation:
-[IoTSiteWise.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset)
+```python title="Method definition"
+def update_asset(
+    self,
+    *,
+    assetId: str,
+    assetName: str,
+    clientToken: str = ...,
+) -> UpdateAssetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssetRequestRequestTypeDef](./type_defs.md#updateassetrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetId`: `str` *(required)*
-- `assetName`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAssetRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+    "assetName": ...,
+}
 
-Returns
-[UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef).
+parent.update_asset(**kwargs)
+```
 
-<a id="update\_asset\_model"></a>
+1. See [:material-code-braces: UpdateAssetRequestRequestTypeDef](./type_defs.md#updateassetrequestrequesttypedef) 
 
-### update_asset_model
+### update\_asset\_model
 
 Updates an asset model and all of the assets that were created from the model.
 
-Type annotations for `boto3.client("iotsitewise").update_asset_model` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").update_asset_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_model)
 
-Boto3 documentation:
-[IoTSiteWise.Client.update_asset_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_model)
+```python title="Method definition"
+def update_asset_model(
+    self,
+    *,
+    assetModelId: str,
+    assetModelName: str,
+    assetModelDescription: str = ...,
+    assetModelProperties: Sequence[AssetModelPropertyTypeDef] = ...,  # (1)
+    assetModelHierarchies: Sequence[AssetModelHierarchyTypeDef] = ...,  # (2)
+    assetModelCompositeModels: Sequence[AssetModelCompositeModelTypeDef] = ...,  # (3)
+    clientToken: str = ...,
+) -> UpdateAssetModelResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssetModelRequestRequestTypeDef](./type_defs.md#updateassetmodelrequestrequesttypedef).
+1. See [:material-code-braces: AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef) 
+2. See [:material-code-braces: AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef) 
+3. See [:material-code-braces: AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef) 
+4. See [:material-code-braces: UpdateAssetModelResponseTypeDef](./type_defs.md#updateassetmodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assetModelId`: `str` *(required)*
-- `assetModelName`: `str` *(required)*
-- `assetModelDescription`: `str`
-- `assetModelProperties`:
-  `Sequence`\[[AssetModelPropertyTypeDef](./type_defs.md#assetmodelpropertytypedef)\]
-- `assetModelHierarchies`:
-  `Sequence`\[[AssetModelHierarchyTypeDef](./type_defs.md#assetmodelhierarchytypedef)\]
-- `assetModelCompositeModels`:
-  `Sequence`\[[AssetModelCompositeModelTypeDef](./type_defs.md#assetmodelcompositemodeltypedef)\]
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAssetModelRequestRequestTypeDef = {  # (1)
+    "assetModelId": ...,
+    "assetModelName": ...,
+}
 
-Returns
-[UpdateAssetModelResponseTypeDef](./type_defs.md#updateassetmodelresponsetypedef).
+parent.update_asset_model(**kwargs)
+```
 
-<a id="update\_asset\_property"></a>
+1. See [:material-code-braces: UpdateAssetModelRequestRequestTypeDef](./type_defs.md#updateassetmodelrequestrequesttypedef) 
 
-### update_asset_property
+### update\_asset\_property
 
 Updates an asset property's alias and notification state.
 
-Type annotations for `boto3.client("iotsitewise").update_asset_property`
-method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").update_asset_property` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_property)
 
-Boto3 documentation:
-[IoTSiteWise.Client.update_asset_property](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_asset_property)
+```python title="Method definition"
+def update_asset_property(
+    self,
+    *,
+    assetId: str,
+    propertyId: str,
+    propertyAlias: str = ...,
+    propertyNotificationState: PropertyNotificationStateType = ...,  # (1)
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssetPropertyRequestRequestTypeDef](./type_defs.md#updateassetpropertyrequestrequesttypedef).
+1. See [:material-code-brackets: PropertyNotificationStateType](./literals.md#propertynotificationstatetype) 
 
-Keyword-only arguments:
 
-- `assetId`: `str` *(required)*
-- `propertyId`: `str` *(required)*
-- `propertyAlias`: `str`
-- `propertyNotificationState`:
-  [PropertyNotificationStateType](./literals.md#propertynotificationstatetype)
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAssetPropertyRequestRequestTypeDef = {  # (1)
+    "assetId": ...,
+    "propertyId": ...,
+}
 
-<a id="update\_dashboard"></a>
+parent.update_asset_property(**kwargs)
+```
 
-### update_dashboard
+1. See [:material-code-braces: UpdateAssetPropertyRequestRequestTypeDef](./type_defs.md#updateassetpropertyrequestrequesttypedef) 
+
+### update\_dashboard
 
 Updates an IoT SiteWise Monitor dashboard.
 
-Type annotations for `boto3.client("iotsitewise").update_dashboard` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").update_dashboard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_dashboard)
 
-Boto3 documentation:
-[IoTSiteWise.Client.update_dashboard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_dashboard)
+```python title="Method definition"
+def update_dashboard(
+    self,
+    *,
+    dashboardId: str,
+    dashboardName: str,
+    dashboardDefinition: str,
+    dashboardDescription: str = ...,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDashboardRequestRequestTypeDef](./type_defs.md#updatedashboardrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `dashboardId`: `str` *(required)*
-- `dashboardName`: `str` *(required)*
-- `dashboardDefinition`: `str` *(required)*
-- `dashboardDescription`: `str`
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDashboardRequestRequestTypeDef = {  # (1)
+    "dashboardId": ...,
+    "dashboardName": ...,
+    "dashboardDefinition": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_dashboard(**kwargs)
+```
 
-<a id="update\_gateway"></a>
+1. See [:material-code-braces: UpdateDashboardRequestRequestTypeDef](./type_defs.md#updatedashboardrequestrequesttypedef) 
 
-### update_gateway
+### update\_gateway
 
 Updates a gateway's name.
 
-Type annotations for `boto3.client("iotsitewise").update_gateway` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").update_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway)
 
-Boto3 documentation:
-[IoTSiteWise.Client.update_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway)
+```python title="Method definition"
+def update_gateway(
+    self,
+    *,
+    gatewayId: str,
+    gatewayName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateGatewayRequestRequestTypeDef](./type_defs.md#updategatewayrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `gatewayId`: `str` *(required)*
-- `gatewayName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewayRequestRequestTypeDef = {  # (1)
+    "gatewayId": ...,
+    "gatewayName": ...,
+}
 
-<a id="update\_gateway\_capability\_configuration"></a>
+parent.update_gateway(**kwargs)
+```
 
-### update_gateway_capability_configuration
+1. See [:material-code-braces: UpdateGatewayRequestRequestTypeDef](./type_defs.md#updategatewayrequestrequesttypedef) 
+
+### update\_gateway\_capability\_configuration
 
 Updates a gateway capability configuration or defines a new capability
 configuration.
 
-Type annotations for
-`boto3.client("iotsitewise").update_gateway_capability_configuration` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").update_gateway_capability_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway_capability_configuration)
 
-Boto3 documentation:
-[IoTSiteWise.Client.update_gateway_capability_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_gateway_capability_configuration)
+```python title="Method definition"
+def update_gateway_capability_configuration(
+    self,
+    *,
+    gatewayId: str,
+    capabilityNamespace: str,
+    capabilityConfiguration: str,
+) -> UpdateGatewayCapabilityConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGatewayCapabilityConfigurationRequestRequestTypeDef](./type_defs.md#updategatewaycapabilityconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: UpdateGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#updategatewaycapabilityconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `gatewayId`: `str` *(required)*
-- `capabilityNamespace`: `str` *(required)*
-- `capabilityConfiguration`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewayCapabilityConfigurationRequestRequestTypeDef = {  # (1)
+    "gatewayId": ...,
+    "capabilityNamespace": ...,
+    "capabilityConfiguration": ...,
+}
 
-Returns
-[UpdateGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#updategatewaycapabilityconfigurationresponsetypedef).
+parent.update_gateway_capability_configuration(**kwargs)
+```
 
-<a id="update\_portal"></a>
+1. See [:material-code-braces: UpdateGatewayCapabilityConfigurationRequestRequestTypeDef](./type_defs.md#updategatewaycapabilityconfigurationrequestrequesttypedef) 
 
-### update_portal
+### update\_portal
 
 Updates an IoT SiteWise Monitor portal.
 
-Type annotations for `boto3.client("iotsitewise").update_portal` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").update_portal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_portal)
 
-Boto3 documentation:
-[IoTSiteWise.Client.update_portal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_portal)
+```python title="Method definition"
+def update_portal(
+    self,
+    *,
+    portalId: str,
+    portalName: str,
+    portalContactEmail: str,
+    roleArn: str,
+    portalDescription: str = ...,
+    portalLogoImage: ImageTypeDef = ...,  # (1)
+    clientToken: str = ...,
+    notificationSenderEmail: str = ...,
+    alarms: AlarmsTypeDef = ...,  # (2)
+) -> UpdatePortalResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePortalRequestRequestTypeDef](./type_defs.md#updateportalrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: AlarmsTypeDef](./type_defs.md#alarmstypedef) 
+3. See [:material-code-braces: UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef) 
 
-Keyword-only arguments:
 
-- `portalId`: `str` *(required)*
-- `portalName`: `str` *(required)*
-- `portalContactEmail`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `portalDescription`: `str`
-- `portalLogoImage`: [ImageTypeDef](./type_defs.md#imagetypedef)
-- `clientToken`: `str`
-- `notificationSenderEmail`: `str`
-- `alarms`: [AlarmsTypeDef](./type_defs.md#alarmstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdatePortalRequestRequestTypeDef = {  # (1)
+    "portalId": ...,
+    "portalName": ...,
+    "portalContactEmail": ...,
+    "roleArn": ...,
+}
 
-Returns
-[UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef).
+parent.update_portal(**kwargs)
+```
 
-<a id="update\_project"></a>
+1. See [:material-code-braces: UpdatePortalRequestRequestTypeDef](./type_defs.md#updateportalrequestrequesttypedef) 
 
-### update_project
+### update\_project
 
 Updates an IoT SiteWise Monitor project.
 
-Type annotations for `boto3.client("iotsitewise").update_project` method.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").update_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_project)
 
-Boto3 documentation:
-[IoTSiteWise.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.update_project)
+```python title="Method definition"
+def update_project(
+    self,
+    *,
+    projectId: str,
+    projectName: str,
+    projectDescription: str = ...,
+    clientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `projectName`: `str` *(required)*
-- `projectDescription`: `str`
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateProjectRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+    "projectName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_project(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("iotsitewise").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_paginator` method with overloads.
 
-- `client.get_paginator("get_asset_property_aggregates")` ->
-  [GetAssetPropertyAggregatesPaginator](./paginators.md#getassetpropertyaggregatespaginator)
-- `client.get_paginator("get_asset_property_value_history")` ->
-  [GetAssetPropertyValueHistoryPaginator](./paginators.md#getassetpropertyvaluehistorypaginator)
-- `client.get_paginator("get_interpolated_asset_property_values")` ->
-  [GetInterpolatedAssetPropertyValuesPaginator](./paginators.md#getinterpolatedassetpropertyvaluespaginator)
-- `client.get_paginator("list_access_policies")` ->
-  [ListAccessPoliciesPaginator](./paginators.md#listaccesspoliciespaginator)
-- `client.get_paginator("list_asset_models")` ->
-  [ListAssetModelsPaginator](./paginators.md#listassetmodelspaginator)
-- `client.get_paginator("list_asset_relationships")` ->
-  [ListAssetRelationshipsPaginator](./paginators.md#listassetrelationshipspaginator)
-- `client.get_paginator("list_assets")` ->
-  [ListAssetsPaginator](./paginators.md#listassetspaginator)
-- `client.get_paginator("list_associated_assets")` ->
-  [ListAssociatedAssetsPaginator](./paginators.md#listassociatedassetspaginator)
-- `client.get_paginator("list_dashboards")` ->
-  [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
-- `client.get_paginator("list_gateways")` ->
-  [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
-- `client.get_paginator("list_portals")` ->
-  [ListPortalsPaginator](./paginators.md#listportalspaginator)
-- `client.get_paginator("list_project_assets")` ->
-  [ListProjectAssetsPaginator](./paginators.md#listprojectassetspaginator)
-- `client.get_paginator("list_projects")` ->
-  [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-- `client.get_paginator("list_time_series")` ->
-  [ListTimeSeriesPaginator](./paginators.md#listtimeseriespaginator)
+- `client.get_paginator("get_asset_property_aggregates")` -> [GetAssetPropertyAggregatesPaginator](./paginators.md#getassetpropertyaggregatespaginator)
+- `client.get_paginator("get_asset_property_value_history")` -> [GetAssetPropertyValueHistoryPaginator](./paginators.md#getassetpropertyvaluehistorypaginator)
+- `client.get_paginator("get_interpolated_asset_property_values")` -> [GetInterpolatedAssetPropertyValuesPaginator](./paginators.md#getinterpolatedassetpropertyvaluespaginator)
+- `client.get_paginator("list_access_policies")` -> [ListAccessPoliciesPaginator](./paginators.md#listaccesspoliciespaginator)
+- `client.get_paginator("list_asset_models")` -> [ListAssetModelsPaginator](./paginators.md#listassetmodelspaginator)
+- `client.get_paginator("list_asset_relationships")` -> [ListAssetRelationshipsPaginator](./paginators.md#listassetrelationshipspaginator)
+- `client.get_paginator("list_assets")` -> [ListAssetsPaginator](./paginators.md#listassetspaginator)
+- `client.get_paginator("list_associated_assets")` -> [ListAssociatedAssetsPaginator](./paginators.md#listassociatedassetspaginator)
+- `client.get_paginator("list_dashboards")` -> [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
+- `client.get_paginator("list_gateways")` -> [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
+- `client.get_paginator("list_portals")` -> [ListPortalsPaginator](./paginators.md#listportalspaginator)
+- `client.get_paginator("list_project_assets")` -> [ListProjectAssetsPaginator](./paginators.md#listprojectassetspaginator)
+- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_time_series")` -> [ListTimeSeriesPaginator](./paginators.md#listtimeseriespaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("iotsitewise").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_waiter` method with overloads.
 
-- `client.get_waiter("asset_active")` ->
-  [AssetActiveWaiter](./waiters.md#assetactivewaiter)
-- `client.get_waiter("asset_model_active")` ->
-  [AssetModelActiveWaiter](./waiters.md#assetmodelactivewaiter)
-- `client.get_waiter("asset_model_not_exists")` ->
-  [AssetModelNotExistsWaiter](./waiters.md#assetmodelnotexistswaiter)
-- `client.get_waiter("asset_not_exists")` ->
-  [AssetNotExistsWaiter](./waiters.md#assetnotexistswaiter)
-- `client.get_waiter("portal_active")` ->
-  [PortalActiveWaiter](./waiters.md#portalactivewaiter)
-- `client.get_waiter("portal_not_exists")` ->
-  [PortalNotExistsWaiter](./waiters.md#portalnotexistswaiter)
+- `client.get_waiter("asset_active")` -> [AssetActiveWaiter](./waiters.md#assetactivewaiter)
+- `client.get_waiter("asset_model_active")` -> [AssetModelActiveWaiter](./waiters.md#assetmodelactivewaiter)
+- `client.get_waiter("asset_model_not_exists")` -> [AssetModelNotExistsWaiter](./waiters.md#assetmodelnotexistswaiter)
+- `client.get_waiter("asset_not_exists")` -> [AssetNotExistsWaiter](./waiters.md#assetnotexistswaiter)
+- `client.get_waiter("portal_active")` -> [PortalActiveWaiter](./waiters.md#portalactivewaiter)
+- `client.get_waiter("portal_not_exists")` -> [PortalNotExistsWaiter](./waiters.md#portalnotexistswaiter)
+

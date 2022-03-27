@@ -1,222 +1,18 @@
-<a id="chimeclient-for-boto3-chime-module"></a>
-
-# ChimeClient for boto3 Chime module
+# ChimeClient
 
 > [Index](../README.md) > [Chime](./README.md) > ChimeClient
 
-Auto-generated documentation for
-[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
-type annotations stubs module
-[mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
+!!! note ""
 
-- [ChimeClient for boto3 Chime module](#chimeclient-for-boto3-chime-module)
-  - [ChimeClient](#chimeclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_phone_number_with_user](#associate_phone_number_with_user)
-    - [associate_phone_numbers_with_voice_connector](#associate_phone_numbers_with_voice_connector)
-    - [associate_phone_numbers_with_voice_connector_group](#associate_phone_numbers_with_voice_connector_group)
-    - [associate_signin_delegate_groups_with_account](#associate_signin_delegate_groups_with_account)
-    - [batch_create_attendee](#batch_create_attendee)
-    - [batch_create_channel_membership](#batch_create_channel_membership)
-    - [batch_create_room_membership](#batch_create_room_membership)
-    - [batch_delete_phone_number](#batch_delete_phone_number)
-    - [batch_suspend_user](#batch_suspend_user)
-    - [batch_unsuspend_user](#batch_unsuspend_user)
-    - [batch_update_phone_number](#batch_update_phone_number)
-    - [batch_update_user](#batch_update_user)
-    - [can_paginate](#can_paginate)
-    - [create_account](#create_account)
-    - [create_app_instance](#create_app_instance)
-    - [create_app_instance_admin](#create_app_instance_admin)
-    - [create_app_instance_user](#create_app_instance_user)
-    - [create_attendee](#create_attendee)
-    - [create_bot](#create_bot)
-    - [create_channel](#create_channel)
-    - [create_channel_ban](#create_channel_ban)
-    - [create_channel_membership](#create_channel_membership)
-    - [create_channel_moderator](#create_channel_moderator)
-    - [create_media_capture_pipeline](#create_media_capture_pipeline)
-    - [create_meeting](#create_meeting)
-    - [create_meeting_dial_out](#create_meeting_dial_out)
-    - [create_meeting_with_attendees](#create_meeting_with_attendees)
-    - [create_phone_number_order](#create_phone_number_order)
-    - [create_proxy_session](#create_proxy_session)
-    - [create_room](#create_room)
-    - [create_room_membership](#create_room_membership)
-    - [create_sip_media_application](#create_sip_media_application)
-    - [create_sip_media_application_call](#create_sip_media_application_call)
-    - [create_sip_rule](#create_sip_rule)
-    - [create_user](#create_user)
-    - [create_voice_connector](#create_voice_connector)
-    - [create_voice_connector_group](#create_voice_connector_group)
-    - [delete_account](#delete_account)
-    - [delete_app_instance](#delete_app_instance)
-    - [delete_app_instance_admin](#delete_app_instance_admin)
-    - [delete_app_instance_streaming_configurations](#delete_app_instance_streaming_configurations)
-    - [delete_app_instance_user](#delete_app_instance_user)
-    - [delete_attendee](#delete_attendee)
-    - [delete_channel](#delete_channel)
-    - [delete_channel_ban](#delete_channel_ban)
-    - [delete_channel_membership](#delete_channel_membership)
-    - [delete_channel_message](#delete_channel_message)
-    - [delete_channel_moderator](#delete_channel_moderator)
-    - [delete_events_configuration](#delete_events_configuration)
-    - [delete_media_capture_pipeline](#delete_media_capture_pipeline)
-    - [delete_meeting](#delete_meeting)
-    - [delete_phone_number](#delete_phone_number)
-    - [delete_proxy_session](#delete_proxy_session)
-    - [delete_room](#delete_room)
-    - [delete_room_membership](#delete_room_membership)
-    - [delete_sip_media_application](#delete_sip_media_application)
-    - [delete_sip_rule](#delete_sip_rule)
-    - [delete_voice_connector](#delete_voice_connector)
-    - [delete_voice_connector_emergency_calling_configuration](#delete_voice_connector_emergency_calling_configuration)
-    - [delete_voice_connector_group](#delete_voice_connector_group)
-    - [delete_voice_connector_origination](#delete_voice_connector_origination)
-    - [delete_voice_connector_proxy](#delete_voice_connector_proxy)
-    - [delete_voice_connector_streaming_configuration](#delete_voice_connector_streaming_configuration)
-    - [delete_voice_connector_termination](#delete_voice_connector_termination)
-    - [delete_voice_connector_termination_credentials](#delete_voice_connector_termination_credentials)
-    - [describe_app_instance](#describe_app_instance)
-    - [describe_app_instance_admin](#describe_app_instance_admin)
-    - [describe_app_instance_user](#describe_app_instance_user)
-    - [describe_channel](#describe_channel)
-    - [describe_channel_ban](#describe_channel_ban)
-    - [describe_channel_membership](#describe_channel_membership)
-    - [describe_channel_membership_for_app_instance_user](#describe_channel_membership_for_app_instance_user)
-    - [describe_channel_moderated_by_app_instance_user](#describe_channel_moderated_by_app_instance_user)
-    - [describe_channel_moderator](#describe_channel_moderator)
-    - [disassociate_phone_number_from_user](#disassociate_phone_number_from_user)
-    - [disassociate_phone_numbers_from_voice_connector](#disassociate_phone_numbers_from_voice_connector)
-    - [disassociate_phone_numbers_from_voice_connector_group](#disassociate_phone_numbers_from_voice_connector_group)
-    - [disassociate_signin_delegate_groups_from_account](#disassociate_signin_delegate_groups_from_account)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account](#get_account)
-    - [get_account_settings](#get_account_settings)
-    - [get_app_instance_retention_settings](#get_app_instance_retention_settings)
-    - [get_app_instance_streaming_configurations](#get_app_instance_streaming_configurations)
-    - [get_attendee](#get_attendee)
-    - [get_bot](#get_bot)
-    - [get_channel_message](#get_channel_message)
-    - [get_events_configuration](#get_events_configuration)
-    - [get_global_settings](#get_global_settings)
-    - [get_media_capture_pipeline](#get_media_capture_pipeline)
-    - [get_meeting](#get_meeting)
-    - [get_messaging_session_endpoint](#get_messaging_session_endpoint)
-    - [get_phone_number](#get_phone_number)
-    - [get_phone_number_order](#get_phone_number_order)
-    - [get_phone_number_settings](#get_phone_number_settings)
-    - [get_proxy_session](#get_proxy_session)
-    - [get_retention_settings](#get_retention_settings)
-    - [get_room](#get_room)
-    - [get_sip_media_application](#get_sip_media_application)
-    - [get_sip_media_application_logging_configuration](#get_sip_media_application_logging_configuration)
-    - [get_sip_rule](#get_sip_rule)
-    - [get_user](#get_user)
-    - [get_user_settings](#get_user_settings)
-    - [get_voice_connector](#get_voice_connector)
-    - [get_voice_connector_emergency_calling_configuration](#get_voice_connector_emergency_calling_configuration)
-    - [get_voice_connector_group](#get_voice_connector_group)
-    - [get_voice_connector_logging_configuration](#get_voice_connector_logging_configuration)
-    - [get_voice_connector_origination](#get_voice_connector_origination)
-    - [get_voice_connector_proxy](#get_voice_connector_proxy)
-    - [get_voice_connector_streaming_configuration](#get_voice_connector_streaming_configuration)
-    - [get_voice_connector_termination](#get_voice_connector_termination)
-    - [get_voice_connector_termination_health](#get_voice_connector_termination_health)
-    - [invite_users](#invite_users)
-    - [list_accounts](#list_accounts)
-    - [list_app_instance_admins](#list_app_instance_admins)
-    - [list_app_instance_users](#list_app_instance_users)
-    - [list_app_instances](#list_app_instances)
-    - [list_attendee_tags](#list_attendee_tags)
-    - [list_attendees](#list_attendees)
-    - [list_bots](#list_bots)
-    - [list_channel_bans](#list_channel_bans)
-    - [list_channel_memberships](#list_channel_memberships)
-    - [list_channel_memberships_for_app_instance_user](#list_channel_memberships_for_app_instance_user)
-    - [list_channel_messages](#list_channel_messages)
-    - [list_channel_moderators](#list_channel_moderators)
-    - [list_channels](#list_channels)
-    - [list_channels_moderated_by_app_instance_user](#list_channels_moderated_by_app_instance_user)
-    - [list_media_capture_pipelines](#list_media_capture_pipelines)
-    - [list_meeting_tags](#list_meeting_tags)
-    - [list_meetings](#list_meetings)
-    - [list_phone_number_orders](#list_phone_number_orders)
-    - [list_phone_numbers](#list_phone_numbers)
-    - [list_proxy_sessions](#list_proxy_sessions)
-    - [list_room_memberships](#list_room_memberships)
-    - [list_rooms](#list_rooms)
-    - [list_sip_media_applications](#list_sip_media_applications)
-    - [list_sip_rules](#list_sip_rules)
-    - [list_supported_phone_number_countries](#list_supported_phone_number_countries)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_users](#list_users)
-    - [list_voice_connector_groups](#list_voice_connector_groups)
-    - [list_voice_connector_termination_credentials](#list_voice_connector_termination_credentials)
-    - [list_voice_connectors](#list_voice_connectors)
-    - [logout_user](#logout_user)
-    - [put_app_instance_retention_settings](#put_app_instance_retention_settings)
-    - [put_app_instance_streaming_configurations](#put_app_instance_streaming_configurations)
-    - [put_events_configuration](#put_events_configuration)
-    - [put_retention_settings](#put_retention_settings)
-    - [put_sip_media_application_logging_configuration](#put_sip_media_application_logging_configuration)
-    - [put_voice_connector_emergency_calling_configuration](#put_voice_connector_emergency_calling_configuration)
-    - [put_voice_connector_logging_configuration](#put_voice_connector_logging_configuration)
-    - [put_voice_connector_origination](#put_voice_connector_origination)
-    - [put_voice_connector_proxy](#put_voice_connector_proxy)
-    - [put_voice_connector_streaming_configuration](#put_voice_connector_streaming_configuration)
-    - [put_voice_connector_termination](#put_voice_connector_termination)
-    - [put_voice_connector_termination_credentials](#put_voice_connector_termination_credentials)
-    - [redact_channel_message](#redact_channel_message)
-    - [redact_conversation_message](#redact_conversation_message)
-    - [redact_room_message](#redact_room_message)
-    - [regenerate_security_token](#regenerate_security_token)
-    - [reset_personal_pin](#reset_personal_pin)
-    - [restore_phone_number](#restore_phone_number)
-    - [search_available_phone_numbers](#search_available_phone_numbers)
-    - [send_channel_message](#send_channel_message)
-    - [start_meeting_transcription](#start_meeting_transcription)
-    - [stop_meeting_transcription](#stop_meeting_transcription)
-    - [tag_attendee](#tag_attendee)
-    - [tag_meeting](#tag_meeting)
-    - [tag_resource](#tag_resource)
-    - [untag_attendee](#untag_attendee)
-    - [untag_meeting](#untag_meeting)
-    - [untag_resource](#untag_resource)
-    - [update_account](#update_account)
-    - [update_account_settings](#update_account_settings)
-    - [update_app_instance](#update_app_instance)
-    - [update_app_instance_user](#update_app_instance_user)
-    - [update_bot](#update_bot)
-    - [update_channel](#update_channel)
-    - [update_channel_message](#update_channel_message)
-    - [update_channel_read_marker](#update_channel_read_marker)
-    - [update_global_settings](#update_global_settings)
-    - [update_phone_number](#update_phone_number)
-    - [update_phone_number_settings](#update_phone_number_settings)
-    - [update_proxy_session](#update_proxy_session)
-    - [update_room](#update_room)
-    - [update_room_membership](#update_room_membership)
-    - [update_sip_media_application](#update_sip_media_application)
-    - [update_sip_media_application_call](#update_sip_media_application_call)
-    - [update_sip_rule](#update_sip_rule)
-    - [update_user](#update_user)
-    - [update_user_settings](#update_user_settings)
-    - [update_voice_connector](#update_voice_connector)
-    - [update_voice_connector_group](#update_voice_connector_group)
-    - [get_paginator](#get_paginator)
-
-<a id="chimeclient"></a>
+    Auto-generated documentation for [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+    type annotations stubs module [mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
 
 ## ChimeClient
 
-Type annotations for `boto3.client("chime")`
+Type annotations and code completion for `#!python boto3.client("chime")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_chime.client import ChimeClient
 
@@ -224,4434 +20,6079 @@ def get_chime_client() -> ChimeClient:
     return Session().client("chime")
 ```
 
-Boto3 documentation:
-[Chime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("chime").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("chime")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.NotFoundException,
+    client.ResourceLimitExceededException,
+    client.ServiceFailureException,
+    client.ServiceUnavailableException,
+    client.ThrottledClientException,
+    client.UnauthorizedClientException,
+    client.UnprocessableEntityException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_chime.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ResourceLimitExceededException`
-- `Exceptions.ServiceFailureException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottledClientException`
-- `Exceptions.UnauthorizedClientException`
-- `Exceptions.UnprocessableEntityException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ChimeClient exceptions.
-
-Type annotations for `boto3.client("chime").exceptions` method.
-
-Boto3 documentation:
-[Chime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_phone\_number\_with\_user"></a>
-
-### associate_phone_number_with_user
+### associate\_phone\_number\_with\_user
 
 Associates a phone number with the specified Amazon Chime user.
 
-Type annotations for `boto3.client("chime").associate_phone_number_with_user`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").associate_phone_number_with_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_number_with_user)
 
-Boto3 documentation:
-[Chime.Client.associate_phone_number_with_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_number_with_user)
+```python title="Method definition"
+def associate_phone_number_with_user(
+    self,
+    *,
+    AccountId: str,
+    UserId: str,
+    E164PhoneNumber: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociatePhoneNumberWithUserRequestRequestTypeDef](./type_defs.md#associatephonenumberwithuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `E164PhoneNumber`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociatePhoneNumberWithUserRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserId": ...,
+    "E164PhoneNumber": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_phone_number_with_user(**kwargs)
+```
 
-<a id="associate\_phone\_numbers\_with\_voice\_connector"></a>
+1. See [:material-code-braces: AssociatePhoneNumberWithUserRequestRequestTypeDef](./type_defs.md#associatephonenumberwithuserrequestrequesttypedef) 
 
-### associate_phone_numbers_with_voice_connector
+### associate\_phone\_numbers\_with\_voice\_connector
 
 Associates phone numbers with the specified Amazon Chime Voice Connector.
 
-Type annotations for
-`boto3.client("chime").associate_phone_numbers_with_voice_connector` method.
+Type annotations and code completion for `#!python boto3.client("chime").associate_phone_numbers_with_voice_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector)
 
-Boto3 documentation:
-[Chime.Client.associate_phone_numbers_with_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector)
+```python title="Method definition"
+def associate_phone_numbers_with_voice_connector(
+    self,
+    *,
+    VoiceConnectorId: str,
+    E164PhoneNumbers: Sequence[str],
+    ForceAssociate: bool = ...,
+) -> AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorrequestrequesttypedef).
+1. See [:material-code-braces: AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
-- `ForceAssociate`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "E164PhoneNumbers": ...,
+}
 
-Returns
-[AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponsetypedef).
+parent.associate_phone_numbers_with_voice_connector(**kwargs)
+```
 
-<a id="associate\_phone\_numbers\_with\_voice\_connector\_group"></a>
+1. See [:material-code-braces: AssociatePhoneNumbersWithVoiceConnectorRequestRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorrequestrequesttypedef) 
 
-### associate_phone_numbers_with_voice_connector_group
+### associate\_phone\_numbers\_with\_voice\_connector\_group
 
 Associates phone numbers with the specified Amazon Chime Voice Connector group.
 
-Type annotations for
-`boto3.client("chime").associate_phone_numbers_with_voice_connector_group`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").associate_phone_numbers_with_voice_connector_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group)
 
-Boto3 documentation:
-[Chime.Client.associate_phone_numbers_with_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_phone_numbers_with_voice_connector_group)
+```python title="Method definition"
+def associate_phone_numbers_with_voice_connector_group(
+    self,
+    *,
+    VoiceConnectorGroupId: str,
+    E164PhoneNumbers: Sequence[str],
+    ForceAssociate: bool = ...,
+) -> AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociatePhoneNumbersWithVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgrouprequestrequesttypedef).
+1. See [:material-code-braces: AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorGroupId`: `str` *(required)*
-- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
-- `ForceAssociate`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AssociatePhoneNumbersWithVoiceConnectorGroupRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorGroupId": ...,
+    "E164PhoneNumbers": ...,
+}
 
-Returns
-[AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgroupresponsetypedef).
+parent.associate_phone_numbers_with_voice_connector_group(**kwargs)
+```
 
-<a id="associate\_signin\_delegate\_groups\_with\_account"></a>
+1. See [:material-code-braces: AssociatePhoneNumbersWithVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgrouprequestrequesttypedef) 
 
-### associate_signin_delegate_groups_with_account
+### associate\_signin\_delegate\_groups\_with\_account
 
-Associates the specified sign-in delegate groups with the specified Amazon
-Chime account.
+Associates the specified sign-in delegate groups with the specified Amazon Chime
+account.
 
-Type annotations for
-`boto3.client("chime").associate_signin_delegate_groups_with_account` method.
+Type annotations and code completion for `#!python boto3.client("chime").associate_signin_delegate_groups_with_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account)
 
-Boto3 documentation:
-[Chime.Client.associate_signin_delegate_groups_with_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.associate_signin_delegate_groups_with_account)
+```python title="Method definition"
+def associate_signin_delegate_groups_with_account(
+    self,
+    *,
+    AccountId: str,
+    SigninDelegateGroups: Sequence[SigninDelegateGroupTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef](./type_defs.md#associatesignindelegategroupswithaccountrequestrequesttypedef).
+1. See [:material-code-braces: SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `SigninDelegateGroups`:
-  `Sequence`\[[SigninDelegateGroupTypeDef](./type_defs.md#signindelegategrouptypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "SigninDelegateGroups": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_signin_delegate_groups_with_account(**kwargs)
+```
 
-<a id="batch\_create\_attendee"></a>
+1. See [:material-code-braces: AssociateSigninDelegateGroupsWithAccountRequestRequestTypeDef](./type_defs.md#associatesignindelegategroupswithaccountrequestrequesttypedef) 
 
-### batch_create_attendee
+### batch\_create\_attendee
 
 Creates up to 100 new attendees for an active Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime").batch_create_attendee` method.
+Type annotations and code completion for `#!python boto3.client("chime").batch_create_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_attendee)
 
-Boto3 documentation:
-[Chime.Client.batch_create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_attendee)
+```python title="Method definition"
+def batch_create_attendee(
+    self,
+    *,
+    MeetingId: str,
+    Attendees: Sequence[CreateAttendeeRequestItemTypeDef],  # (1)
+) -> BatchCreateAttendeeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchCreateAttendeeRequestRequestTypeDef](./type_defs.md#batchcreateattendeerequestrequesttypedef).
+1. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
+2. See [:material-code-braces: BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `Attendees`:
-  `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchCreateAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "Attendees": ...,
+}
 
-Returns
-[BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef).
+parent.batch_create_attendee(**kwargs)
+```
 
-<a id="batch\_create\_channel\_membership"></a>
+1. See [:material-code-braces: BatchCreateAttendeeRequestRequestTypeDef](./type_defs.md#batchcreateattendeerequestrequesttypedef) 
 
-### batch_create_channel_membership
+### batch\_create\_channel\_membership
 
 Adds a specified number of users to a channel.
 
-Type annotations for `boto3.client("chime").batch_create_channel_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").batch_create_channel_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_channel_membership)
 
-Boto3 documentation:
-[Chime.Client.batch_create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_channel_membership)
+```python title="Method definition"
+def batch_create_channel_membership(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArns: Sequence[str],
+    Type: ChannelMembershipTypeType = ...,  # (1)
+    ChimeBearer: str = ...,
+) -> BatchCreateChannelMembershipResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchCreateChannelMembershipRequestRequestTypeDef](./type_defs.md#batchcreatechannelmembershiprequestrequesttypedef).
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+2. See [:material-code-braces: BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArns`: `Sequence`\[`str`\] *(required)*
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchCreateChannelMembershipRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArns": ...,
+}
 
-Returns
-[BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef).
+parent.batch_create_channel_membership(**kwargs)
+```
 
-<a id="batch\_create\_room\_membership"></a>
+1. See [:material-code-braces: BatchCreateChannelMembershipRequestRequestTypeDef](./type_defs.md#batchcreatechannelmembershiprequestrequesttypedef) 
 
-### batch_create_room_membership
+### batch\_create\_room\_membership
 
 Adds up to 50 members to a chat room in an Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").batch_create_room_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").batch_create_room_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_room_membership)
 
-Boto3 documentation:
-[Chime.Client.batch_create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_create_room_membership)
+```python title="Method definition"
+def batch_create_room_membership(
+    self,
+    *,
+    AccountId: str,
+    RoomId: str,
+    MembershipItemList: Sequence[MembershipItemTypeDef],  # (1)
+) -> BatchCreateRoomMembershipResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchCreateRoomMembershipRequestRequestTypeDef](./type_defs.md#batchcreateroommembershiprequestrequesttypedef).
+1. See [:material-code-braces: MembershipItemTypeDef](./type_defs.md#membershipitemtypedef) 
+2. See [:material-code-braces: BatchCreateRoomMembershipResponseTypeDef](./type_defs.md#batchcreateroommembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RoomId`: `str` *(required)*
-- `MembershipItemList`:
-  `Sequence`\[[MembershipItemTypeDef](./type_defs.md#membershipitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchCreateRoomMembershipRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RoomId": ...,
+    "MembershipItemList": ...,
+}
 
-Returns
-[BatchCreateRoomMembershipResponseTypeDef](./type_defs.md#batchcreateroommembershipresponsetypedef).
+parent.batch_create_room_membership(**kwargs)
+```
 
-<a id="batch\_delete\_phone\_number"></a>
+1. See [:material-code-braces: BatchCreateRoomMembershipRequestRequestTypeDef](./type_defs.md#batchcreateroommembershiprequestrequesttypedef) 
 
-### batch_delete_phone_number
+### batch\_delete\_phone\_number
 
 Moves phone numbers into the **Deletion queue**.
 
-Type annotations for `boto3.client("chime").batch_delete_phone_number` method.
+Type annotations and code completion for `#!python boto3.client("chime").batch_delete_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_delete_phone_number)
 
-Boto3 documentation:
-[Chime.Client.batch_delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_delete_phone_number)
+```python title="Method definition"
+def batch_delete_phone_number(
+    self,
+    *,
+    PhoneNumberIds: Sequence[str],
+) -> BatchDeletePhoneNumberResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeletePhoneNumberRequestRequestTypeDef](./type_defs.md#batchdeletephonenumberrequestrequesttypedef).
+1. See [:material-code-braces: BatchDeletePhoneNumberResponseTypeDef](./type_defs.md#batchdeletephonenumberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PhoneNumberIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDeletePhoneNumberRequestRequestTypeDef = {  # (1)
+    "PhoneNumberIds": ...,
+}
 
-Returns
-[BatchDeletePhoneNumberResponseTypeDef](./type_defs.md#batchdeletephonenumberresponsetypedef).
+parent.batch_delete_phone_number(**kwargs)
+```
 
-<a id="batch\_suspend\_user"></a>
+1. See [:material-code-braces: BatchDeletePhoneNumberRequestRequestTypeDef](./type_defs.md#batchdeletephonenumberrequestrequesttypedef) 
 
-### batch_suspend_user
+### batch\_suspend\_user
 
 Suspends up to 50 users from a `Team` or `EnterpriseLWA` Amazon Chime account.
 
-Type annotations for `boto3.client("chime").batch_suspend_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").batch_suspend_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_suspend_user)
 
-Boto3 documentation:
-[Chime.Client.batch_suspend_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_suspend_user)
+```python title="Method definition"
+def batch_suspend_user(
+    self,
+    *,
+    AccountId: str,
+    UserIdList: Sequence[str],
+) -> BatchSuspendUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchSuspendUserRequestRequestTypeDef](./type_defs.md#batchsuspenduserrequestrequesttypedef).
+1. See [:material-code-braces: BatchSuspendUserResponseTypeDef](./type_defs.md#batchsuspenduserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserIdList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchSuspendUserRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserIdList": ...,
+}
 
-Returns
-[BatchSuspendUserResponseTypeDef](./type_defs.md#batchsuspenduserresponsetypedef).
+parent.batch_suspend_user(**kwargs)
+```
 
-<a id="batch\_unsuspend\_user"></a>
+1. See [:material-code-braces: BatchSuspendUserRequestRequestTypeDef](./type_defs.md#batchsuspenduserrequestrequesttypedef) 
 
-### batch_unsuspend_user
+### batch\_unsuspend\_user
 
 Removes the suspension from up to 50 previously suspended users for the
 specified Amazon Chime `EnterpriseLWA` account.
 
-Type annotations for `boto3.client("chime").batch_unsuspend_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").batch_unsuspend_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_unsuspend_user)
 
-Boto3 documentation:
-[Chime.Client.batch_unsuspend_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_unsuspend_user)
+```python title="Method definition"
+def batch_unsuspend_user(
+    self,
+    *,
+    AccountId: str,
+    UserIdList: Sequence[str],
+) -> BatchUnsuspendUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchUnsuspendUserRequestRequestTypeDef](./type_defs.md#batchunsuspenduserrequestrequesttypedef).
+1. See [:material-code-braces: BatchUnsuspendUserResponseTypeDef](./type_defs.md#batchunsuspenduserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserIdList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchUnsuspendUserRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserIdList": ...,
+}
 
-Returns
-[BatchUnsuspendUserResponseTypeDef](./type_defs.md#batchunsuspenduserresponsetypedef).
+parent.batch_unsuspend_user(**kwargs)
+```
 
-<a id="batch\_update\_phone\_number"></a>
+1. See [:material-code-braces: BatchUnsuspendUserRequestRequestTypeDef](./type_defs.md#batchunsuspenduserrequestrequesttypedef) 
 
-### batch_update_phone_number
+### batch\_update\_phone\_number
 
 Updates phone number product types or calling names.
 
-Type annotations for `boto3.client("chime").batch_update_phone_number` method.
+Type annotations and code completion for `#!python boto3.client("chime").batch_update_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_phone_number)
 
-Boto3 documentation:
-[Chime.Client.batch_update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_phone_number)
+```python title="Method definition"
+def batch_update_phone_number(
+    self,
+    *,
+    UpdatePhoneNumberRequestItems: Sequence[UpdatePhoneNumberRequestItemTypeDef],  # (1)
+) -> BatchUpdatePhoneNumberResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchUpdatePhoneNumberRequestRequestTypeDef](./type_defs.md#batchupdatephonenumberrequestrequesttypedef).
+1. See [:material-code-braces: UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef) 
+2. See [:material-code-braces: BatchUpdatePhoneNumberResponseTypeDef](./type_defs.md#batchupdatephonenumberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UpdatePhoneNumberRequestItems`:
-  `Sequence`\[[UpdatePhoneNumberRequestItemTypeDef](./type_defs.md#updatephonenumberrequestitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchUpdatePhoneNumberRequestRequestTypeDef = {  # (1)
+    "UpdatePhoneNumberRequestItems": ...,
+}
 
-Returns
-[BatchUpdatePhoneNumberResponseTypeDef](./type_defs.md#batchupdatephonenumberresponsetypedef).
+parent.batch_update_phone_number(**kwargs)
+```
 
-<a id="batch\_update\_user"></a>
+1. See [:material-code-braces: BatchUpdatePhoneNumberRequestRequestTypeDef](./type_defs.md#batchupdatephonenumberrequestrequesttypedef) 
 
-### batch_update_user
+### batch\_update\_user
 
-Updates user details within the UpdateUserRequestItem object for up to 20 users
+Updates user details within the  UpdateUserRequestItem object for up to 20 users
 for the specified Amazon Chime account.
 
-Type annotations for `boto3.client("chime").batch_update_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").batch_update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_user)
 
-Boto3 documentation:
-[Chime.Client.batch_update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.batch_update_user)
+```python title="Method definition"
+def batch_update_user(
+    self,
+    *,
+    AccountId: str,
+    UpdateUserRequestItems: Sequence[UpdateUserRequestItemTypeDef],  # (1)
+) -> BatchUpdateUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchUpdateUserRequestRequestTypeDef](./type_defs.md#batchupdateuserrequestrequesttypedef).
+1. See [:material-code-braces: UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef) 
+2. See [:material-code-braces: BatchUpdateUserResponseTypeDef](./type_defs.md#batchupdateuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UpdateUserRequestItems`:
-  `Sequence`\[[UpdateUserRequestItemTypeDef](./type_defs.md#updateuserrequestitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchUpdateUserRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UpdateUserRequestItems": ...,
+}
 
-Returns
-[BatchUpdateUserResponseTypeDef](./type_defs.md#batchupdateuserresponsetypedef).
+parent.batch_update_user(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchUpdateUserRequestRequestTypeDef](./type_defs.md#batchupdateuserrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("chime").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("chime").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.can_paginate)
 
-Boto3 documentation:
-[Chime.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_account"></a>
-
-### create_account
+### create\_account
 
 Creates an Amazon Chime account under the administrator's AWS account.
 
-Type annotations for `boto3.client("chime").create_account` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_account)
 
-Boto3 documentation:
-[Chime.Client.create_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_account)
+```python title="Method definition"
+def create_account(
+    self,
+    *,
+    Name: str,
+) -> CreateAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAccountRequestRequestTypeDef](./type_defs.md#createaccountrequestrequesttypedef).
+1. See [:material-code-braces: CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAccountRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
+parent.create_account(**kwargs)
+```
 
-<a id="create\_app\_instance"></a>
+1. See [:material-code-braces: CreateAccountRequestRequestTypeDef](./type_defs.md#createaccountrequestrequesttypedef) 
 
-### create_app_instance
+### create\_app\_instance
 
 Creates an Amazon Chime SDK messaging `AppInstance` under an AWS account.
 
-Type annotations for `boto3.client("chime").create_app_instance` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_app_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance)
 
-Boto3 documentation:
-[Chime.Client.create_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance)
+```python title="Method definition"
+def create_app_instance(
+    self,
+    *,
+    Name: str,
+    ClientRequestToken: str,
+    Metadata: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateAppInstanceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppInstanceRequestRequestTypeDef](./type_defs.md#createappinstancerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Metadata`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAppInstanceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef).
+parent.create_app_instance(**kwargs)
+```
 
-<a id="create\_app\_instance\_admin"></a>
+1. See [:material-code-braces: CreateAppInstanceRequestRequestTypeDef](./type_defs.md#createappinstancerequestrequesttypedef) 
 
-### create_app_instance_admin
+### create\_app\_instance\_admin
 
 Promotes an `AppInstanceUser` to an `AppInstanceAdmin`.
 
-Type annotations for `boto3.client("chime").create_app_instance_admin` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_app_instance_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_admin)
 
-Boto3 documentation:
-[Chime.Client.create_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_admin)
+```python title="Method definition"
+def create_app_instance_admin(
+    self,
+    *,
+    AppInstanceAdminArn: str,
+    AppInstanceArn: str,
+) -> CreateAppInstanceAdminResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppInstanceAdminRequestRequestTypeDef](./type_defs.md#createappinstanceadminrequestrequesttypedef).
+1. See [:material-code-braces: CreateAppInstanceAdminResponseTypeDef](./type_defs.md#createappinstanceadminresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceAdminArn`: `str` *(required)*
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAppInstanceAdminRequestRequestTypeDef = {  # (1)
+    "AppInstanceAdminArn": ...,
+    "AppInstanceArn": ...,
+}
 
-Returns
-[CreateAppInstanceAdminResponseTypeDef](./type_defs.md#createappinstanceadminresponsetypedef).
+parent.create_app_instance_admin(**kwargs)
+```
 
-<a id="create\_app\_instance\_user"></a>
+1. See [:material-code-braces: CreateAppInstanceAdminRequestRequestTypeDef](./type_defs.md#createappinstanceadminrequestrequesttypedef) 
 
-### create_app_instance_user
+### create\_app\_instance\_user
 
 Creates a user under an Amazon Chime `AppInstance`.
 
-Type annotations for `boto3.client("chime").create_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_user)
 
-Boto3 documentation:
-[Chime.Client.create_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_app_instance_user)
+```python title="Method definition"
+def create_app_instance_user(
+    self,
+    *,
+    AppInstanceArn: str,
+    AppInstanceUserId: str,
+    Name: str,
+    ClientRequestToken: str,
+    Metadata: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateAppInstanceUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppInstanceUserRequestRequestTypeDef](./type_defs.md#createappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `AppInstanceUserId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Metadata`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "AppInstanceUserId": ...,
+    "Name": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef).
+parent.create_app_instance_user(**kwargs)
+```
 
-<a id="create\_attendee"></a>
+1. See [:material-code-braces: CreateAppInstanceUserRequestRequestTypeDef](./type_defs.md#createappinstanceuserrequestrequesttypedef) 
 
-### create_attendee
+### create\_attendee
 
 Creates a new attendee for an active Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime").create_attendee` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_attendee)
 
-Boto3 documentation:
-[Chime.Client.create_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_attendee)
+```python title="Method definition"
+def create_attendee(
+    self,
+    *,
+    MeetingId: str,
+    ExternalUserId: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateAttendeeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAttendeeRequestRequestTypeDef](./type_defs.md#createattendeerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `ExternalUserId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "ExternalUserId": ...,
+}
 
-Returns
-[CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef).
+parent.create_attendee(**kwargs)
+```
 
-<a id="create\_bot"></a>
+1. See [:material-code-braces: CreateAttendeeRequestRequestTypeDef](./type_defs.md#createattendeerequestrequesttypedef) 
 
-### create_bot
+### create\_bot
 
 Creates a bot for an Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").create_bot` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_bot)
 
-Boto3 documentation:
-[Chime.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_bot)
+```python title="Method definition"
+def create_bot(
+    self,
+    *,
+    AccountId: str,
+    DisplayName: str,
+    Domain: str = ...,
+) -> CreateBotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateBotRequestRequestTypeDef](./type_defs.md#createbotrequestrequesttypedef).
+1. See [:material-code-braces: CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `DisplayName`: `str` *(required)*
-- `Domain`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBotRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "DisplayName": ...,
+}
 
-Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
+parent.create_bot(**kwargs)
+```
 
-<a id="create\_channel"></a>
+1. See [:material-code-braces: CreateBotRequestRequestTypeDef](./type_defs.md#createbotrequestrequesttypedef) 
 
-### create_channel
+### create\_channel
 
 Creates a channel to which you can add users and send messages.
 
-Type annotations for `boto3.client("chime").create_channel` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel)
 
-Boto3 documentation:
-[Chime.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel)
+```python title="Method definition"
+def create_channel(
+    self,
+    *,
+    AppInstanceArn: str,
+    Name: str,
+    ClientRequestToken: str,
+    Mode: ChannelModeType = ...,  # (1)
+    Privacy: ChannelPrivacyType = ...,  # (2)
+    Metadata: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    ChimeBearer: str = ...,
+) -> CreateChannelResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
-- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
-- `Metadata`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateChannelRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "Name": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+parent.create_channel(**kwargs)
+```
 
-<a id="create\_channel\_ban"></a>
+1. See [:material-code-braces: CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef) 
 
-### create_channel_ban
+### create\_channel\_ban
 
 Permanently bans a member from a channel.
 
-Type annotations for `boto3.client("chime").create_channel_ban` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_channel_ban` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_ban)
 
-Boto3 documentation:
-[Chime.Client.create_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_ban)
+```python title="Method definition"
+def create_channel_ban(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str = ...,
+) -> CreateChannelBanResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelBanRequestRequestTypeDef](./type_defs.md#createchannelbanrequestrequesttypedef).
+1. See [:material-code-braces: CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateChannelBanRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+}
 
-Returns
-[CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef).
+parent.create_channel_ban(**kwargs)
+```
 
-<a id="create\_channel\_membership"></a>
+1. See [:material-code-braces: CreateChannelBanRequestRequestTypeDef](./type_defs.md#createchannelbanrequestrequesttypedef) 
 
-### create_channel_membership
+### create\_channel\_membership
 
 Adds a user to a channel.
 
-Type annotations for `boto3.client("chime").create_channel_membership` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_channel_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_membership)
 
-Boto3 documentation:
-[Chime.Client.create_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_membership)
+```python title="Method definition"
+def create_channel_membership(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    Type: ChannelMembershipTypeType,  # (1)
+    ChimeBearer: str = ...,
+) -> CreateChannelMembershipResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelMembershipRequestRequestTypeDef](./type_defs.md#createchannelmembershiprequestrequesttypedef).
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+2. See [:material-code-braces: CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-  *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateChannelMembershipRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+    "Type": ...,
+}
 
-Returns
-[CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef).
+parent.create_channel_membership(**kwargs)
+```
 
-<a id="create\_channel\_moderator"></a>
+1. See [:material-code-braces: CreateChannelMembershipRequestRequestTypeDef](./type_defs.md#createchannelmembershiprequestrequesttypedef) 
 
-### create_channel_moderator
+### create\_channel\_moderator
 
 Creates a new `ChannelModerator`.
 
-Type annotations for `boto3.client("chime").create_channel_moderator` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_channel_moderator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_moderator)
 
-Boto3 documentation:
-[Chime.Client.create_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_channel_moderator)
+```python title="Method definition"
+def create_channel_moderator(
+    self,
+    *,
+    ChannelArn: str,
+    ChannelModeratorArn: str,
+    ChimeBearer: str = ...,
+) -> CreateChannelModeratorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelModeratorRequestRequestTypeDef](./type_defs.md#createchannelmoderatorrequestrequesttypedef).
+1. See [:material-code-braces: CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChannelModeratorArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateChannelModeratorRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChannelModeratorArn": ...,
+}
 
-Returns
-[CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef).
+parent.create_channel_moderator(**kwargs)
+```
 
-<a id="create\_media\_capture\_pipeline"></a>
+1. See [:material-code-braces: CreateChannelModeratorRequestRequestTypeDef](./type_defs.md#createchannelmoderatorrequestrequesttypedef) 
 
-### create_media_capture_pipeline
+### create\_media\_capture\_pipeline
 
 Creates a media capture pipeline.
 
-Type annotations for `boto3.client("chime").create_media_capture_pipeline`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").create_media_capture_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_media_capture_pipeline)
 
-Boto3 documentation:
-[Chime.Client.create_media_capture_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_media_capture_pipeline)
+```python title="Method definition"
+def create_media_capture_pipeline(
+    self,
+    *,
+    SourceType: MediaPipelineSourceTypeType,  # (1)
+    SourceArn: str,
+    SinkType: MediaPipelineSinkTypeType,  # (2)
+    SinkArn: str,
+    ClientRequestToken: str = ...,
+    ChimeSdkMeetingConfiguration: ChimeSdkMeetingConfigurationTypeDef = ...,  # (3)
+) -> CreateMediaCapturePipelineResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#createmediacapturepipelinerequestrequesttypedef).
+1. See [:material-code-brackets: MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype) 
+2. See [:material-code-brackets: MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype) 
+3. See [:material-code-braces: ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef) 
+4. See [:material-code-braces: CreateMediaCapturePipelineResponseTypeDef](./type_defs.md#createmediacapturepipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceType`: `Literal['ChimeSdkMeeting']` (see
-  [MediaPipelineSourceTypeType](./literals.md#mediapipelinesourcetypetype))
-  *(required)*
-- `SourceArn`: `str` *(required)*
-- `SinkType`: `Literal['S3Bucket']` (see
-  [MediaPipelineSinkTypeType](./literals.md#mediapipelinesinktypetype))
-  *(required)*
-- `SinkArn`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `ChimeSdkMeetingConfiguration`:
-  [ChimeSdkMeetingConfigurationTypeDef](./type_defs.md#chimesdkmeetingconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateMediaCapturePipelineRequestRequestTypeDef = {  # (1)
+    "SourceType": ...,
+    "SourceArn": ...,
+    "SinkType": ...,
+    "SinkArn": ...,
+}
 
-Returns
-[CreateMediaCapturePipelineResponseTypeDef](./type_defs.md#createmediacapturepipelineresponsetypedef).
+parent.create_media_capture_pipeline(**kwargs)
+```
 
-<a id="create\_meeting"></a>
+1. See [:material-code-braces: CreateMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#createmediacapturepipelinerequestrequesttypedef) 
 
-### create_meeting
+### create\_meeting
 
 Creates a new Amazon Chime SDK meeting in the specified media Region with no
 initial attendees.
 
-Type annotations for `boto3.client("chime").create_meeting` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_meeting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting)
 
-Boto3 documentation:
-[Chime.Client.create_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting)
+```python title="Method definition"
+def create_meeting(
+    self,
+    *,
+    ClientRequestToken: str,
+    ExternalMeetingId: str = ...,
+    MeetingHostId: str = ...,
+    MediaRegion: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    NotificationsConfiguration: MeetingNotificationConfigurationTypeDef = ...,  # (2)
+) -> CreateMeetingResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateMeetingRequestRequestTypeDef](./type_defs.md#createmeetingrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef) 
+3. See [:material-code-braces: CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientRequestToken`: `str` *(required)*
-- `ExternalMeetingId`: `str`
-- `MeetingHostId`: `str`
-- `MediaRegion`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NotificationsConfiguration`:
-  [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateMeetingRequestRequestTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
+parent.create_meeting(**kwargs)
+```
 
-<a id="create\_meeting\_dial\_out"></a>
+1. See [:material-code-braces: CreateMeetingRequestRequestTypeDef](./type_defs.md#createmeetingrequestrequesttypedef) 
 
-### create_meeting_dial_out
+### create\_meeting\_dial\_out
 
 Uses the join token and call metadata in a meeting request (From number, To
 number, and so forth) to initiate an outbound call to a public switched
 telephone network (PSTN) and join them into a Chime meeting.
 
-Type annotations for `boto3.client("chime").create_meeting_dial_out` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_meeting_dial_out` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_dial_out)
 
-Boto3 documentation:
-[Chime.Client.create_meeting_dial_out](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_dial_out)
+```python title="Method definition"
+def create_meeting_dial_out(
+    self,
+    *,
+    MeetingId: str,
+    FromPhoneNumber: str,
+    ToPhoneNumber: str,
+    JoinToken: str,
+) -> CreateMeetingDialOutResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateMeetingDialOutRequestRequestTypeDef](./type_defs.md#createmeetingdialoutrequestrequesttypedef).
+1. See [:material-code-braces: CreateMeetingDialOutResponseTypeDef](./type_defs.md#createmeetingdialoutresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `FromPhoneNumber`: `str` *(required)*
-- `ToPhoneNumber`: `str` *(required)*
-- `JoinToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateMeetingDialOutRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "FromPhoneNumber": ...,
+    "ToPhoneNumber": ...,
+    "JoinToken": ...,
+}
 
-Returns
-[CreateMeetingDialOutResponseTypeDef](./type_defs.md#createmeetingdialoutresponsetypedef).
+parent.create_meeting_dial_out(**kwargs)
+```
 
-<a id="create\_meeting\_with\_attendees"></a>
+1. See [:material-code-braces: CreateMeetingDialOutRequestRequestTypeDef](./type_defs.md#createmeetingdialoutrequestrequesttypedef) 
 
-### create_meeting_with_attendees
+### create\_meeting\_with\_attendees
 
 Creates a new Amazon Chime SDK meeting in the specified media Region, with
 attendees.
 
-Type annotations for `boto3.client("chime").create_meeting_with_attendees`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").create_meeting_with_attendees` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_with_attendees)
 
-Boto3 documentation:
-[Chime.Client.create_meeting_with_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_meeting_with_attendees)
+```python title="Method definition"
+def create_meeting_with_attendees(
+    self,
+    *,
+    ClientRequestToken: str,
+    ExternalMeetingId: str = ...,
+    MeetingHostId: str = ...,
+    MediaRegion: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    NotificationsConfiguration: MeetingNotificationConfigurationTypeDef = ...,  # (2)
+    Attendees: Sequence[CreateAttendeeRequestItemTypeDef] = ...,  # (3)
+) -> CreateMeetingWithAttendeesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateMeetingWithAttendeesRequestRequestTypeDef](./type_defs.md#createmeetingwithattendeesrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef) 
+3. See [:material-code-braces: CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef) 
+4. See [:material-code-braces: CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientRequestToken`: `str` *(required)*
-- `ExternalMeetingId`: `str`
-- `MeetingHostId`: `str`
-- `MediaRegion`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NotificationsConfiguration`:
-  [MeetingNotificationConfigurationTypeDef](./type_defs.md#meetingnotificationconfigurationtypedef)
-- `Attendees`:
-  `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateMeetingWithAttendeesRequestRequestTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).
+parent.create_meeting_with_attendees(**kwargs)
+```
 
-<a id="create\_phone\_number\_order"></a>
+1. See [:material-code-braces: CreateMeetingWithAttendeesRequestRequestTypeDef](./type_defs.md#createmeetingwithattendeesrequestrequesttypedef) 
 
-### create_phone_number_order
+### create\_phone\_number\_order
 
 Creates an order for phone numbers to be provisioned.
 
-Type annotations for `boto3.client("chime").create_phone_number_order` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_phone_number_order` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_phone_number_order)
 
-Boto3 documentation:
-[Chime.Client.create_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_phone_number_order)
+```python title="Method definition"
+def create_phone_number_order(
+    self,
+    *,
+    ProductType: PhoneNumberProductTypeType,  # (1)
+    E164PhoneNumbers: Sequence[str],
+) -> CreatePhoneNumberOrderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePhoneNumberOrderRequestRequestTypeDef](./type_defs.md#createphonenumberorderrequestrequesttypedef).
+1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
+2. See [:material-code-braces: CreatePhoneNumberOrderResponseTypeDef](./type_defs.md#createphonenumberorderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProductType`:
-  [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
-  *(required)*
-- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreatePhoneNumberOrderRequestRequestTypeDef = {  # (1)
+    "ProductType": ...,
+    "E164PhoneNumbers": ...,
+}
 
-Returns
-[CreatePhoneNumberOrderResponseTypeDef](./type_defs.md#createphonenumberorderresponsetypedef).
+parent.create_phone_number_order(**kwargs)
+```
 
-<a id="create\_proxy\_session"></a>
+1. See [:material-code-braces: CreatePhoneNumberOrderRequestRequestTypeDef](./type_defs.md#createphonenumberorderrequestrequesttypedef) 
 
-### create_proxy_session
+### create\_proxy\_session
 
 Creates a proxy session on the specified Amazon Chime Voice Connector for the
 specified participant phone numbers.
 
-Type annotations for `boto3.client("chime").create_proxy_session` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_proxy_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_proxy_session)
 
-Boto3 documentation:
-[Chime.Client.create_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_proxy_session)
+```python title="Method definition"
+def create_proxy_session(
+    self,
+    *,
+    VoiceConnectorId: str,
+    ParticipantPhoneNumbers: Sequence[str],
+    Capabilities: Sequence[CapabilityType],  # (1)
+    Name: str = ...,
+    ExpiryMinutes: int = ...,
+    NumberSelectionBehavior: NumberSelectionBehaviorType = ...,  # (2)
+    GeoMatchLevel: GeoMatchLevelType = ...,  # (3)
+    GeoMatchParams: GeoMatchParamsTypeDef = ...,  # (4)
+) -> CreateProxySessionResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateProxySessionRequestRequestTypeDef](./type_defs.md#createproxysessionrequestrequesttypedef).
+1. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+2. See [:material-code-brackets: NumberSelectionBehaviorType](./literals.md#numberselectionbehaviortype) 
+3. See [:material-code-brackets: GeoMatchLevelType](./literals.md#geomatchleveltype) 
+4. See [:material-code-braces: GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef) 
+5. See [:material-code-braces: CreateProxySessionResponseTypeDef](./type_defs.md#createproxysessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `ParticipantPhoneNumbers`: `Sequence`\[`str`\] *(required)*
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-  *(required)*
-- `Name`: `str`
-- `ExpiryMinutes`: `int`
-- `NumberSelectionBehavior`:
-  [NumberSelectionBehaviorType](./literals.md#numberselectionbehaviortype)
-- `GeoMatchLevel`: [GeoMatchLevelType](./literals.md#geomatchleveltype)
-- `GeoMatchParams`:
-  [GeoMatchParamsTypeDef](./type_defs.md#geomatchparamstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateProxySessionRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "ParticipantPhoneNumbers": ...,
+    "Capabilities": ...,
+}
 
-Returns
-[CreateProxySessionResponseTypeDef](./type_defs.md#createproxysessionresponsetypedef).
+parent.create_proxy_session(**kwargs)
+```
 
-<a id="create\_room"></a>
+1. See [:material-code-braces: CreateProxySessionRequestRequestTypeDef](./type_defs.md#createproxysessionrequestrequesttypedef) 
 
-### create_room
+### create\_room
 
 Creates a chat room for the specified Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").create_room` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room)
 
-Boto3 documentation:
-[Chime.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room)
+```python title="Method definition"
+def create_room(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+    ClientRequestToken: str = ...,
+) -> CreateRoomResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRoomRequestRequestTypeDef](./type_defs.md#createroomrequestrequesttypedef).
+1. See [:material-code-braces: CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateRoomRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
+parent.create_room(**kwargs)
+```
 
-<a id="create\_room\_membership"></a>
+1. See [:material-code-braces: CreateRoomRequestRequestTypeDef](./type_defs.md#createroomrequestrequesttypedef) 
 
-### create_room_membership
+### create\_room\_membership
 
 Adds a member to a chat room in an Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").create_room_membership` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_room_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room_membership)
 
-Boto3 documentation:
-[Chime.Client.create_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_room_membership)
+```python title="Method definition"
+def create_room_membership(
+    self,
+    *,
+    AccountId: str,
+    RoomId: str,
+    MemberId: str,
+    Role: RoomMembershipRoleType = ...,  # (1)
+) -> CreateRoomMembershipResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRoomMembershipRequestRequestTypeDef](./type_defs.md#createroommembershiprequestrequesttypedef).
+1. See [:material-code-brackets: RoomMembershipRoleType](./literals.md#roommembershiproletype) 
+2. See [:material-code-braces: CreateRoomMembershipResponseTypeDef](./type_defs.md#createroommembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RoomId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
-- `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
+```python title="Usage example with kwargs"
+kwargs: CreateRoomMembershipRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RoomId": ...,
+    "MemberId": ...,
+}
 
-Returns
-[CreateRoomMembershipResponseTypeDef](./type_defs.md#createroommembershipresponsetypedef).
+parent.create_room_membership(**kwargs)
+```
 
-<a id="create\_sip\_media\_application"></a>
+1. See [:material-code-braces: CreateRoomMembershipRequestRequestTypeDef](./type_defs.md#createroommembershiprequestrequesttypedef) 
 
-### create_sip_media_application
+### create\_sip\_media\_application
 
 Creates a SIP media application.
 
-Type annotations for `boto3.client("chime").create_sip_media_application`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").create_sip_media_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application)
 
-Boto3 documentation:
-[Chime.Client.create_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application)
+```python title="Method definition"
+def create_sip_media_application(
+    self,
+    *,
+    AwsRegion: str,
+    Name: str,
+    Endpoints: Sequence[SipMediaApplicationEndpointTypeDef],  # (1)
+) -> CreateSipMediaApplicationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSipMediaApplicationRequestRequestTypeDef](./type_defs.md#createsipmediaapplicationrequestrequesttypedef).
+1. See [:material-code-braces: SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef) 
+2. See [:material-code-braces: CreateSipMediaApplicationResponseTypeDef](./type_defs.md#createsipmediaapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AwsRegion`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Endpoints`:
-  `Sequence`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateSipMediaApplicationRequestRequestTypeDef = {  # (1)
+    "AwsRegion": ...,
+    "Name": ...,
+    "Endpoints": ...,
+}
 
-Returns
-[CreateSipMediaApplicationResponseTypeDef](./type_defs.md#createsipmediaapplicationresponsetypedef).
+parent.create_sip_media_application(**kwargs)
+```
 
-<a id="create\_sip\_media\_application\_call"></a>
+1. See [:material-code-braces: CreateSipMediaApplicationRequestRequestTypeDef](./type_defs.md#createsipmediaapplicationrequestrequesttypedef) 
 
-### create_sip_media_application_call
+### create\_sip\_media\_application\_call
 
 Creates an outbound call to a phone number from the phone number specified in
 the request, and it invokes the endpoint of the specified
 `sipMediaApplicationId` .
 
-Type annotations for `boto3.client("chime").create_sip_media_application_call`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").create_sip_media_application_call` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application_call)
 
-Boto3 documentation:
-[Chime.Client.create_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_media_application_call)
+```python title="Method definition"
+def create_sip_media_application_call(
+    self,
+    *,
+    FromPhoneNumber: str,
+    ToPhoneNumber: str,
+    SipMediaApplicationId: str,
+    SipHeaders: Mapping[str, str] = ...,
+) -> CreateSipMediaApplicationCallResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSipMediaApplicationCallRequestRequestTypeDef](./type_defs.md#createsipmediaapplicationcallrequestrequesttypedef).
+1. See [:material-code-braces: CreateSipMediaApplicationCallResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FromPhoneNumber`: `str` *(required)*
-- `ToPhoneNumber`: `str` *(required)*
-- `SipMediaApplicationId`: `str` *(required)*
-- `SipHeaders`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSipMediaApplicationCallRequestRequestTypeDef = {  # (1)
+    "FromPhoneNumber": ...,
+    "ToPhoneNumber": ...,
+    "SipMediaApplicationId": ...,
+}
 
-Returns
-[CreateSipMediaApplicationCallResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponsetypedef).
+parent.create_sip_media_application_call(**kwargs)
+```
 
-<a id="create\_sip\_rule"></a>
+1. See [:material-code-braces: CreateSipMediaApplicationCallRequestRequestTypeDef](./type_defs.md#createsipmediaapplicationcallrequestrequesttypedef) 
 
-### create_sip_rule
+### create\_sip\_rule
 
 Creates a SIP rule which can be used to run a SIP media application as a target
 for a specific trigger type.
 
-Type annotations for `boto3.client("chime").create_sip_rule` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_sip_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_rule)
 
-Boto3 documentation:
-[Chime.Client.create_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_sip_rule)
+```python title="Method definition"
+def create_sip_rule(
+    self,
+    *,
+    Name: str,
+    TriggerType: SipRuleTriggerTypeType,  # (1)
+    TriggerValue: str,
+    TargetApplications: Sequence[SipRuleTargetApplicationTypeDef],  # (2)
+    Disabled: bool = ...,
+) -> CreateSipRuleResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateSipRuleRequestRequestTypeDef](./type_defs.md#createsiprulerequestrequesttypedef).
+1. See [:material-code-brackets: SipRuleTriggerTypeType](./literals.md#sipruletriggertypetype) 
+2. See [:material-code-braces: SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef) 
+3. See [:material-code-braces: CreateSipRuleResponseTypeDef](./type_defs.md#createsipruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `TriggerType`: [SipRuleTriggerTypeType](./literals.md#sipruletriggertypetype)
-  *(required)*
-- `TriggerValue`: `str` *(required)*
-- `TargetApplications`:
-  `Sequence`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
-  *(required)*
-- `Disabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateSipRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "TriggerType": ...,
+    "TriggerValue": ...,
+    "TargetApplications": ...,
+}
 
-Returns
-[CreateSipRuleResponseTypeDef](./type_defs.md#createsipruleresponsetypedef).
+parent.create_sip_rule(**kwargs)
+```
 
-<a id="create\_user"></a>
+1. See [:material-code-braces: CreateSipRuleRequestRequestTypeDef](./type_defs.md#createsiprulerequestrequesttypedef) 
 
-### create_user
+### create\_user
 
 Creates a user under the specified Amazon Chime account.
 
-Type annotations for `boto3.client("chime").create_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_user)
 
-Boto3 documentation:
-[Chime.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    AccountId: str,
+    Username: str = ...,
+    Email: str = ...,
+    UserType: UserTypeType = ...,  # (1)
+) -> CreateUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Username`: `str`
-- `Email`: `str`
-- `UserType`: [UserTypeType](./literals.md#usertypetype)
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+parent.create_user(**kwargs)
+```
 
-<a id="create\_voice\_connector"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### create_voice_connector
+### create\_voice\_connector
 
 Creates an Amazon Chime Voice Connector under the administrator's AWS account.
 
-Type annotations for `boto3.client("chime").create_voice_connector` method.
+Type annotations and code completion for `#!python boto3.client("chime").create_voice_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector)
 
-Boto3 documentation:
-[Chime.Client.create_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector)
+```python title="Method definition"
+def create_voice_connector(
+    self,
+    *,
+    Name: str,
+    RequireEncryption: bool,
+    AwsRegion: VoiceConnectorAwsRegionType = ...,  # (1)
+) -> CreateVoiceConnectorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateVoiceConnectorRequestRequestTypeDef](./type_defs.md#createvoiceconnectorrequestrequesttypedef).
+1. See [:material-code-brackets: VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype) 
+2. See [:material-code-braces: CreateVoiceConnectorResponseTypeDef](./type_defs.md#createvoiceconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RequireEncryption`: `bool` *(required)*
-- `AwsRegion`:
-  [VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype)
+```python title="Usage example with kwargs"
+kwargs: CreateVoiceConnectorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RequireEncryption": ...,
+}
 
-Returns
-[CreateVoiceConnectorResponseTypeDef](./type_defs.md#createvoiceconnectorresponsetypedef).
+parent.create_voice_connector(**kwargs)
+```
 
-<a id="create\_voice\_connector\_group"></a>
+1. See [:material-code-braces: CreateVoiceConnectorRequestRequestTypeDef](./type_defs.md#createvoiceconnectorrequestrequesttypedef) 
 
-### create_voice_connector_group
+### create\_voice\_connector\_group
 
 Creates an Amazon Chime Voice Connector group under the administrator's AWS
 account.
 
-Type annotations for `boto3.client("chime").create_voice_connector_group`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").create_voice_connector_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector_group)
 
-Boto3 documentation:
-[Chime.Client.create_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.create_voice_connector_group)
+```python title="Method definition"
+def create_voice_connector_group(
+    self,
+    *,
+    Name: str,
+    VoiceConnectorItems: Sequence[VoiceConnectorItemTypeDef] = ...,  # (1)
+) -> CreateVoiceConnectorGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#createvoiceconnectorgrouprequestrequesttypedef).
+1. See [:material-code-braces: VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef) 
+2. See [:material-code-braces: CreateVoiceConnectorGroupResponseTypeDef](./type_defs.md#createvoiceconnectorgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `VoiceConnectorItems`:
-  `Sequence`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVoiceConnectorGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateVoiceConnectorGroupResponseTypeDef](./type_defs.md#createvoiceconnectorgroupresponsetypedef).
+parent.create_voice_connector_group(**kwargs)
+```
 
-<a id="delete\_account"></a>
+1. See [:material-code-braces: CreateVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#createvoiceconnectorgrouprequestrequesttypedef) 
 
-### delete_account
+### delete\_account
 
 Deletes the specified Amazon Chime account.
 
-Type annotations for `boto3.client("chime").delete_account` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_account)
 
-Boto3 documentation:
-[Chime.Client.delete_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_account)
+```python title="Method definition"
+def delete_account(
+    self,
+    *,
+    AccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccountRequestRequestTypeDef](./type_defs.md#deleteaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_account(**kwargs)
+```
 
-<a id="delete\_app\_instance"></a>
+1. See [:material-code-braces: DeleteAccountRequestRequestTypeDef](./type_defs.md#deleteaccountrequestrequesttypedef) 
 
-### delete_app_instance
+### delete\_app\_instance
 
 Deletes an `AppInstance` and all associated data asynchronously.
 
-Type annotations for `boto3.client("chime").delete_app_instance` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_app_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance)
 
-Boto3 documentation:
-[Chime.Client.delete_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance)
+```python title="Method definition"
+def delete_app_instance(
+    self,
+    *,
+    AppInstanceArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppInstanceRequestRequestTypeDef](./type_defs.md#deleteappinstancerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppInstanceRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-<a id="delete\_app\_instance\_admin"></a>
+parent.delete_app_instance(**kwargs)
+```
 
-### delete_app_instance_admin
+1. See [:material-code-braces: DeleteAppInstanceRequestRequestTypeDef](./type_defs.md#deleteappinstancerequestrequesttypedef) 
+
+### delete\_app\_instance\_admin
 
 Demotes an `AppInstanceAdmin` to an `AppInstanceUser`.
 
-Type annotations for `boto3.client("chime").delete_app_instance_admin` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_app_instance_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_admin)
 
-Boto3 documentation:
-[Chime.Client.delete_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_admin)
+```python title="Method definition"
+def delete_app_instance_admin(
+    self,
+    *,
+    AppInstanceAdminArn: str,
+    AppInstanceArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppInstanceAdminRequestRequestTypeDef](./type_defs.md#deleteappinstanceadminrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AppInstanceAdminArn`: `str` *(required)*
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppInstanceAdminRequestRequestTypeDef = {  # (1)
+    "AppInstanceAdminArn": ...,
+    "AppInstanceArn": ...,
+}
 
-<a id="delete\_app\_instance\_streaming\_configurations"></a>
+parent.delete_app_instance_admin(**kwargs)
+```
 
-### delete_app_instance_streaming_configurations
+1. See [:material-code-braces: DeleteAppInstanceAdminRequestRequestTypeDef](./type_defs.md#deleteappinstanceadminrequestrequesttypedef) 
+
+### delete\_app\_instance\_streaming\_configurations
 
 Deletes the streaming configurations of an `AppInstance` .
 
-Type annotations for
-`boto3.client("chime").delete_app_instance_streaming_configurations` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_app_instance_streaming_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations)
 
-Boto3 documentation:
-[Chime.Client.delete_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_streaming_configurations)
+```python title="Method definition"
+def delete_app_instance_streaming_configurations(
+    self,
+    *,
+    AppInstanceArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppInstanceStreamingConfigurationsRequestRequestTypeDef](./type_defs.md#deleteappinstancestreamingconfigurationsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppInstanceStreamingConfigurationsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-<a id="delete\_app\_instance\_user"></a>
+parent.delete_app_instance_streaming_configurations(**kwargs)
+```
 
-### delete_app_instance_user
+1. See [:material-code-braces: DeleteAppInstanceStreamingConfigurationsRequestRequestTypeDef](./type_defs.md#deleteappinstancestreamingconfigurationsrequestrequesttypedef) 
+
+### delete\_app\_instance\_user
 
 Deletes an `AppInstanceUser` .
 
-Type annotations for `boto3.client("chime").delete_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_user)
 
-Boto3 documentation:
-[Chime.Client.delete_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_app_instance_user)
+```python title="Method definition"
+def delete_app_instance_user(
+    self,
+    *,
+    AppInstanceUserArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppInstanceUserRequestRequestTypeDef](./type_defs.md#deleteappinstanceuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+}
 
-<a id="delete\_attendee"></a>
+parent.delete_app_instance_user(**kwargs)
+```
 
-### delete_attendee
+1. See [:material-code-braces: DeleteAppInstanceUserRequestRequestTypeDef](./type_defs.md#deleteappinstanceuserrequestrequesttypedef) 
+
+### delete\_attendee
 
 Deletes an attendee from the specified Amazon Chime SDK meeting and deletes
 their `JoinToken`.
 
-Type annotations for `boto3.client("chime").delete_attendee` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_attendee)
 
-Boto3 documentation:
-[Chime.Client.delete_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_attendee)
+```python title="Method definition"
+def delete_attendee(
+    self,
+    *,
+    MeetingId: str,
+    AttendeeId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAttendeeRequestRequestTypeDef](./type_defs.md#deleteattendeerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `AttendeeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "AttendeeId": ...,
+}
 
-<a id="delete\_channel"></a>
+parent.delete_attendee(**kwargs)
+```
 
-### delete_channel
+1. See [:material-code-braces: DeleteAttendeeRequestRequestTypeDef](./type_defs.md#deleteattendeerequestrequesttypedef) 
+
+### delete\_channel
 
 Immediately makes a channel and its memberships inaccessible and marks them for
 deletion.
 
-Type annotations for `boto3.client("chime").delete_channel` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel)
 
-Boto3 documentation:
-[Chime.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel)
+```python title="Method definition"
+def delete_channel(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+}
 
-<a id="delete\_channel\_ban"></a>
+parent.delete_channel(**kwargs)
+```
 
-### delete_channel_ban
+1. See [:material-code-braces: DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef) 
+
+### delete\_channel\_ban
 
 Removes a user from a channel's ban list.
 
-Type annotations for `boto3.client("chime").delete_channel_ban` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_channel_ban` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_ban)
 
-Boto3 documentation:
-[Chime.Client.delete_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_ban)
+```python title="Method definition"
+def delete_channel_ban(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelBanRequestRequestTypeDef](./type_defs.md#deletechannelbanrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelBanRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+}
 
-<a id="delete\_channel\_membership"></a>
+parent.delete_channel_ban(**kwargs)
+```
 
-### delete_channel_membership
+1. See [:material-code-braces: DeleteChannelBanRequestRequestTypeDef](./type_defs.md#deletechannelbanrequestrequesttypedef) 
+
+### delete\_channel\_membership
 
 Removes a member from a channel.
 
-Type annotations for `boto3.client("chime").delete_channel_membership` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_channel_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_membership)
 
-Boto3 documentation:
-[Chime.Client.delete_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_membership)
+```python title="Method definition"
+def delete_channel_membership(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelMembershipRequestRequestTypeDef](./type_defs.md#deletechannelmembershiprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelMembershipRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+}
 
-<a id="delete\_channel\_message"></a>
+parent.delete_channel_membership(**kwargs)
+```
 
-### delete_channel_message
+1. See [:material-code-braces: DeleteChannelMembershipRequestRequestTypeDef](./type_defs.md#deletechannelmembershiprequestrequesttypedef) 
+
+### delete\_channel\_message
 
 Deletes a channel message.
 
-Type annotations for `boto3.client("chime").delete_channel_message` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_message)
 
-Boto3 documentation:
-[Chime.Client.delete_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_message)
+```python title="Method definition"
+def delete_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelMessageRequestRequestTypeDef](./type_defs.md#deletechannelmessagerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MessageId`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MessageId": ...,
+}
 
-<a id="delete\_channel\_moderator"></a>
+parent.delete_channel_message(**kwargs)
+```
 
-### delete_channel_moderator
+1. See [:material-code-braces: DeleteChannelMessageRequestRequestTypeDef](./type_defs.md#deletechannelmessagerequestrequesttypedef) 
+
+### delete\_channel\_moderator
 
 Deletes a channel moderator.
 
-Type annotations for `boto3.client("chime").delete_channel_moderator` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_channel_moderator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_moderator)
 
-Boto3 documentation:
-[Chime.Client.delete_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_channel_moderator)
+```python title="Method definition"
+def delete_channel_moderator(
+    self,
+    *,
+    ChannelArn: str,
+    ChannelModeratorArn: str,
+    ChimeBearer: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelModeratorRequestRequestTypeDef](./type_defs.md#deletechannelmoderatorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChannelModeratorArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelModeratorRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChannelModeratorArn": ...,
+}
 
-<a id="delete\_events\_configuration"></a>
+parent.delete_channel_moderator(**kwargs)
+```
 
-### delete_events_configuration
+1. See [:material-code-braces: DeleteChannelModeratorRequestRequestTypeDef](./type_defs.md#deletechannelmoderatorrequestrequesttypedef) 
+
+### delete\_events\_configuration
 
 Deletes the events configuration that allows a bot to receive outgoing events.
 
-Type annotations for `boto3.client("chime").delete_events_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_events_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_events_configuration)
 
-Boto3 documentation:
-[Chime.Client.delete_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_events_configuration)
+```python title="Method definition"
+def delete_events_configuration(
+    self,
+    *,
+    AccountId: str,
+    BotId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventsConfigurationRequestRequestTypeDef](./type_defs.md#deleteeventsconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BotId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventsConfigurationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BotId": ...,
+}
 
-<a id="delete\_media\_capture\_pipeline"></a>
+parent.delete_events_configuration(**kwargs)
+```
 
-### delete_media_capture_pipeline
+1. See [:material-code-braces: DeleteEventsConfigurationRequestRequestTypeDef](./type_defs.md#deleteeventsconfigurationrequestrequesttypedef) 
+
+### delete\_media\_capture\_pipeline
 
 Deletes the media capture pipeline.
 
-Type annotations for `boto3.client("chime").delete_media_capture_pipeline`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_media_capture_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_media_capture_pipeline)
 
-Boto3 documentation:
-[Chime.Client.delete_media_capture_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_media_capture_pipeline)
+```python title="Method definition"
+def delete_media_capture_pipeline(
+    self,
+    *,
+    MediaPipelineId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#deletemediacapturepipelinerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MediaPipelineId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMediaCapturePipelineRequestRequestTypeDef = {  # (1)
+    "MediaPipelineId": ...,
+}
 
-<a id="delete\_meeting"></a>
+parent.delete_media_capture_pipeline(**kwargs)
+```
 
-### delete_meeting
+1. See [:material-code-braces: DeleteMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#deletemediacapturepipelinerequestrequesttypedef) 
+
+### delete\_meeting
 
 Deletes the specified Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime").delete_meeting` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_meeting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_meeting)
 
-Boto3 documentation:
-[Chime.Client.delete_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_meeting)
+```python title="Method definition"
+def delete_meeting(
+    self,
+    *,
+    MeetingId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMeetingRequestRequestTypeDef](./type_defs.md#deletemeetingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMeetingRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+}
 
-<a id="delete\_phone\_number"></a>
+parent.delete_meeting(**kwargs)
+```
 
-### delete_phone_number
+1. See [:material-code-braces: DeleteMeetingRequestRequestTypeDef](./type_defs.md#deletemeetingrequestrequesttypedef) 
+
+### delete\_phone\_number
 
 Moves the specified phone number into the **Deletion queue**.
 
-Type annotations for `boto3.client("chime").delete_phone_number` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_phone_number)
 
-Boto3 documentation:
-[Chime.Client.delete_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_phone_number)
+```python title="Method definition"
+def delete_phone_number(
+    self,
+    *,
+    PhoneNumberId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePhoneNumberRequestRequestTypeDef](./type_defs.md#deletephonenumberrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PhoneNumberId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePhoneNumberRequestRequestTypeDef = {  # (1)
+    "PhoneNumberId": ...,
+}
 
-<a id="delete\_proxy\_session"></a>
+parent.delete_phone_number(**kwargs)
+```
 
-### delete_proxy_session
+1. See [:material-code-braces: DeletePhoneNumberRequestRequestTypeDef](./type_defs.md#deletephonenumberrequestrequesttypedef) 
+
+### delete\_proxy\_session
 
 Deletes the specified proxy session from the specified Amazon Chime Voice
 Connector.
 
-Type annotations for `boto3.client("chime").delete_proxy_session` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_proxy_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_proxy_session)
 
-Boto3 documentation:
-[Chime.Client.delete_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_proxy_session)
+```python title="Method definition"
+def delete_proxy_session(
+    self,
+    *,
+    VoiceConnectorId: str,
+    ProxySessionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProxySessionRequestRequestTypeDef](./type_defs.md#deleteproxysessionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `ProxySessionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProxySessionRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "ProxySessionId": ...,
+}
 
-<a id="delete\_room"></a>
+parent.delete_proxy_session(**kwargs)
+```
 
-### delete_room
+1. See [:material-code-braces: DeleteProxySessionRequestRequestTypeDef](./type_defs.md#deleteproxysessionrequestrequesttypedef) 
+
+### delete\_room
 
 Deletes a chat room in an Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").delete_room` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room)
 
-Boto3 documentation:
-[Chime.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room)
+```python title="Method definition"
+def delete_room(
+    self,
+    *,
+    AccountId: str,
+    RoomId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRoomRequestRequestTypeDef](./type_defs.md#deleteroomrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RoomId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRoomRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RoomId": ...,
+}
 
-<a id="delete\_room\_membership"></a>
+parent.delete_room(**kwargs)
+```
 
-### delete_room_membership
+1. See [:material-code-braces: DeleteRoomRequestRequestTypeDef](./type_defs.md#deleteroomrequestrequesttypedef) 
+
+### delete\_room\_membership
 
 Removes a member from a chat room in an Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").delete_room_membership` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_room_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room_membership)
 
-Boto3 documentation:
-[Chime.Client.delete_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_room_membership)
+```python title="Method definition"
+def delete_room_membership(
+    self,
+    *,
+    AccountId: str,
+    RoomId: str,
+    MemberId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRoomMembershipRequestRequestTypeDef](./type_defs.md#deleteroommembershiprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RoomId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRoomMembershipRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RoomId": ...,
+    "MemberId": ...,
+}
 
-<a id="delete\_sip\_media\_application"></a>
+parent.delete_room_membership(**kwargs)
+```
 
-### delete_sip_media_application
+1. See [:material-code-braces: DeleteRoomMembershipRequestRequestTypeDef](./type_defs.md#deleteroommembershiprequestrequesttypedef) 
+
+### delete\_sip\_media\_application
 
 Deletes a SIP media application.
 
-Type annotations for `boto3.client("chime").delete_sip_media_application`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_sip_media_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_media_application)
 
-Boto3 documentation:
-[Chime.Client.delete_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_media_application)
+```python title="Method definition"
+def delete_sip_media_application(
+    self,
+    *,
+    SipMediaApplicationId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSipMediaApplicationRequestRequestTypeDef](./type_defs.md#deletesipmediaapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SipMediaApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSipMediaApplicationRequestRequestTypeDef = {  # (1)
+    "SipMediaApplicationId": ...,
+}
 
-<a id="delete\_sip\_rule"></a>
+parent.delete_sip_media_application(**kwargs)
+```
 
-### delete_sip_rule
+1. See [:material-code-braces: DeleteSipMediaApplicationRequestRequestTypeDef](./type_defs.md#deletesipmediaapplicationrequestrequesttypedef) 
+
+### delete\_sip\_rule
 
 Deletes a SIP rule.
 
-Type annotations for `boto3.client("chime").delete_sip_rule` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_sip_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_rule)
 
-Boto3 documentation:
-[Chime.Client.delete_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_sip_rule)
+```python title="Method definition"
+def delete_sip_rule(
+    self,
+    *,
+    SipRuleId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSipRuleRequestRequestTypeDef](./type_defs.md#deletesiprulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SipRuleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSipRuleRequestRequestTypeDef = {  # (1)
+    "SipRuleId": ...,
+}
 
-<a id="delete\_voice\_connector"></a>
+parent.delete_sip_rule(**kwargs)
+```
 
-### delete_voice_connector
+1. See [:material-code-braces: DeleteSipRuleRequestRequestTypeDef](./type_defs.md#deletesiprulerequestrequesttypedef) 
+
+### delete\_voice\_connector
 
 Deletes the specified Amazon Chime Voice Connector.
 
-Type annotations for `boto3.client("chime").delete_voice_connector` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_voice_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector)
 
-Boto3 documentation:
-[Chime.Client.delete_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector)
+```python title="Method definition"
+def delete_voice_connector(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVoiceConnectorRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceConnectorRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-<a id="delete\_voice\_connector\_emergency\_calling\_configuration"></a>
+parent.delete_voice_connector(**kwargs)
+```
 
-### delete_voice_connector_emergency_calling_configuration
+1. See [:material-code-braces: DeleteVoiceConnectorRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorrequestrequesttypedef) 
+
+### delete\_voice\_connector\_emergency\_calling\_configuration
 
 Deletes the emergency calling configuration details from the specified Amazon
 Chime Voice Connector.
 
-Type annotations for
-`boto3.client("chime").delete_voice_connector_emergency_calling_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_voice_connector_emergency_calling_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration)
 
-Boto3 documentation:
-[Chime.Client.delete_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_emergency_calling_configuration)
+```python title="Method definition"
+def delete_voice_connector_emergency_calling_configuration(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectoremergencycallingconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-<a id="delete\_voice\_connector\_group"></a>
+parent.delete_voice_connector_emergency_calling_configuration(**kwargs)
+```
 
-### delete_voice_connector_group
+1. See [:material-code-braces: DeleteVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectoremergencycallingconfigurationrequestrequesttypedef) 
+
+### delete\_voice\_connector\_group
 
 Deletes the specified Amazon Chime Voice Connector group.
 
-Type annotations for `boto3.client("chime").delete_voice_connector_group`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_voice_connector_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_group)
 
-Boto3 documentation:
-[Chime.Client.delete_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_group)
+```python title="Method definition"
+def delete_voice_connector_group(
+    self,
+    *,
+    VoiceConnectorGroupId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `VoiceConnectorGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceConnectorGroupRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorGroupId": ...,
+}
 
-<a id="delete\_voice\_connector\_origination"></a>
+parent.delete_voice_connector_group(**kwargs)
+```
 
-### delete_voice_connector_origination
+1. See [:material-code-braces: DeleteVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorgrouprequestrequesttypedef) 
 
-Deletes the origination settings for the specified Amazon Chime Voice
-Connector.
+### delete\_voice\_connector\_origination
 
-Type annotations for `boto3.client("chime").delete_voice_connector_origination`
-method.
+Deletes the origination settings for the specified Amazon Chime Voice Connector.
 
-Boto3 documentation:
-[Chime.Client.delete_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_origination)
+Type annotations and code completion for `#!python boto3.client("chime").delete_voice_connector_origination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_origination)
 
-Arguments mapping described in
-[DeleteVoiceConnectorOriginationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectororiginationrequestrequesttypedef).
+```python title="Method definition"
+def delete_voice_connector_origination(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
 
-<a id="delete\_voice\_connector\_proxy"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceConnectorOriginationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-### delete_voice_connector_proxy
+parent.delete_voice_connector_origination(**kwargs)
+```
 
-Deletes the proxy configuration from the specified Amazon Chime Voice
-Connector.
+1. See [:material-code-braces: DeleteVoiceConnectorOriginationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectororiginationrequestrequesttypedef) 
 
-Type annotations for `boto3.client("chime").delete_voice_connector_proxy`
-method.
+### delete\_voice\_connector\_proxy
 
-Boto3 documentation:
-[Chime.Client.delete_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy)
+Deletes the proxy configuration from the specified Amazon Chime Voice Connector.
 
-Arguments mapping described in
-[DeleteVoiceConnectorProxyRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorproxyrequestrequesttypedef).
+Type annotations and code completion for `#!python boto3.client("chime").delete_voice_connector_proxy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_proxy)
 
-Keyword-only arguments:
+```python title="Method definition"
+def delete_voice_connector_proxy(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> None:
+    ...
+```
 
-- `VoiceConnectorId`: `str` *(required)*
 
-<a id="delete\_voice\_connector\_streaming\_configuration"></a>
 
-### delete_voice_connector_streaming_configuration
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceConnectorProxyRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
+
+parent.delete_voice_connector_proxy(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVoiceConnectorProxyRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorproxyrequestrequesttypedef) 
+
+### delete\_voice\_connector\_streaming\_configuration
 
 Deletes the streaming configuration for the specified Amazon Chime Voice
 Connector.
 
-Type annotations for
-`boto3.client("chime").delete_voice_connector_streaming_configuration` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_voice_connector_streaming_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration)
 
-Boto3 documentation:
-[Chime.Client.delete_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_streaming_configuration)
+```python title="Method definition"
+def delete_voice_connector_streaming_configuration(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVoiceConnectorStreamingConfigurationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorstreamingconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceConnectorStreamingConfigurationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-<a id="delete\_voice\_connector\_termination"></a>
+parent.delete_voice_connector_streaming_configuration(**kwargs)
+```
 
-### delete_voice_connector_termination
+1. See [:material-code-braces: DeleteVoiceConnectorStreamingConfigurationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorstreamingconfigurationrequestrequesttypedef) 
 
-Deletes the termination settings for the specified Amazon Chime Voice
-Connector.
+### delete\_voice\_connector\_termination
 
-Type annotations for `boto3.client("chime").delete_voice_connector_termination`
-method.
+Deletes the termination settings for the specified Amazon Chime Voice Connector.
 
-Boto3 documentation:
-[Chime.Client.delete_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination)
+Type annotations and code completion for `#!python boto3.client("chime").delete_voice_connector_termination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination)
 
-Arguments mapping described in
-[DeleteVoiceConnectorTerminationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationrequestrequesttypedef).
+```python title="Method definition"
+def delete_voice_connector_termination(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
 
-<a id="delete\_voice\_connector\_termination\_credentials"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceConnectorTerminationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-### delete_voice_connector_termination_credentials
+parent.delete_voice_connector_termination(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVoiceConnectorTerminationRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationrequestrequesttypedef) 
+
+### delete\_voice\_connector\_termination\_credentials
 
 Deletes the specified SIP credentials used by your equipment to authenticate
 during call termination.
 
-Type annotations for
-`boto3.client("chime").delete_voice_connector_termination_credentials` method.
+Type annotations and code completion for `#!python boto3.client("chime").delete_voice_connector_termination_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials)
 
-Boto3 documentation:
-[Chime.Client.delete_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.delete_voice_connector_termination_credentials)
+```python title="Method definition"
+def delete_voice_connector_termination_credentials(
+    self,
+    *,
+    VoiceConnectorId: str,
+    Usernames: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVoiceConnectorTerminationCredentialsRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationcredentialsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `Usernames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceConnectorTerminationCredentialsRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "Usernames": ...,
+}
 
-<a id="describe\_app\_instance"></a>
+parent.delete_voice_connector_termination_credentials(**kwargs)
+```
 
-### describe_app_instance
+1. See [:material-code-braces: DeleteVoiceConnectorTerminationCredentialsRequestRequestTypeDef](./type_defs.md#deletevoiceconnectorterminationcredentialsrequestrequesttypedef) 
+
+### describe\_app\_instance
 
 Returns the full details of an `AppInstance` .
 
-Type annotations for `boto3.client("chime").describe_app_instance` method.
+Type annotations and code completion for `#!python boto3.client("chime").describe_app_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance)
 
-Boto3 documentation:
-[Chime.Client.describe_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance)
+```python title="Method definition"
+def describe_app_instance(
+    self,
+    *,
+    AppInstanceArn: str,
+) -> DescribeAppInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppInstanceRequestRequestTypeDef](./type_defs.md#describeappinstancerequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppInstanceRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef).
+parent.describe_app_instance(**kwargs)
+```
 
-<a id="describe\_app\_instance\_admin"></a>
+1. See [:material-code-braces: DescribeAppInstanceRequestRequestTypeDef](./type_defs.md#describeappinstancerequestrequesttypedef) 
 
-### describe_app_instance_admin
+### describe\_app\_instance\_admin
 
 Returns the full details of an `AppInstanceAdmin` .
 
-Type annotations for `boto3.client("chime").describe_app_instance_admin`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").describe_app_instance_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_admin)
 
-Boto3 documentation:
-[Chime.Client.describe_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_admin)
+```python title="Method definition"
+def describe_app_instance_admin(
+    self,
+    *,
+    AppInstanceAdminArn: str,
+    AppInstanceArn: str,
+) -> DescribeAppInstanceAdminResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppInstanceAdminRequestRequestTypeDef](./type_defs.md#describeappinstanceadminrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppInstanceAdminResponseTypeDef](./type_defs.md#describeappinstanceadminresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceAdminArn`: `str` *(required)*
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppInstanceAdminRequestRequestTypeDef = {  # (1)
+    "AppInstanceAdminArn": ...,
+    "AppInstanceArn": ...,
+}
 
-Returns
-[DescribeAppInstanceAdminResponseTypeDef](./type_defs.md#describeappinstanceadminresponsetypedef).
+parent.describe_app_instance_admin(**kwargs)
+```
 
-<a id="describe\_app\_instance\_user"></a>
+1. See [:material-code-braces: DescribeAppInstanceAdminRequestRequestTypeDef](./type_defs.md#describeappinstanceadminrequestrequesttypedef) 
 
-### describe_app_instance_user
+### describe\_app\_instance\_user
 
 Returns the full details of an `AppInstanceUser` .
 
-Type annotations for `boto3.client("chime").describe_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").describe_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_user)
 
-Boto3 documentation:
-[Chime.Client.describe_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_app_instance_user)
+```python title="Method definition"
+def describe_app_instance_user(
+    self,
+    *,
+    AppInstanceUserArn: str,
+) -> DescribeAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppInstanceUserRequestRequestTypeDef](./type_defs.md#describeappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+}
 
-Returns
-[DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef).
+parent.describe_app_instance_user(**kwargs)
+```
 
-<a id="describe\_channel"></a>
+1. See [:material-code-braces: DescribeAppInstanceUserRequestRequestTypeDef](./type_defs.md#describeappinstanceuserrequestrequesttypedef) 
 
-### describe_channel
+### describe\_channel
 
 Returns the full details of a channel in an Amazon Chime `AppInstance` .
 
-Type annotations for `boto3.client("chime").describe_channel` method.
+Type annotations and code completion for `#!python boto3.client("chime").describe_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel)
 
-Boto3 documentation:
-[Chime.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel)
+```python title="Method definition"
+def describe_channel(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str = ...,
+) -> DescribeChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+}
 
-Returns
-[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+parent.describe_channel(**kwargs)
+```
 
-<a id="describe\_channel\_ban"></a>
+1. See [:material-code-braces: DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef) 
 
-### describe_channel_ban
+### describe\_channel\_ban
 
 Returns the full details of a channel ban.
 
-Type annotations for `boto3.client("chime").describe_channel_ban` method.
+Type annotations and code completion for `#!python boto3.client("chime").describe_channel_ban` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_ban)
 
-Boto3 documentation:
-[Chime.Client.describe_channel_ban](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_ban)
+```python title="Method definition"
+def describe_channel_ban(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str = ...,
+) -> DescribeChannelBanResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelBanRequestRequestTypeDef](./type_defs.md#describechannelbanrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelBanRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+}
 
-Returns
-[DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef).
+parent.describe_channel_ban(**kwargs)
+```
 
-<a id="describe\_channel\_membership"></a>
+1. See [:material-code-braces: DescribeChannelBanRequestRequestTypeDef](./type_defs.md#describechannelbanrequestrequesttypedef) 
 
-### describe_channel_membership
+### describe\_channel\_membership
 
 Returns the full details of a user's channel membership.
 
-Type annotations for `boto3.client("chime").describe_channel_membership`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").describe_channel_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership)
 
-Boto3 documentation:
-[Chime.Client.describe_channel_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership)
+```python title="Method definition"
+def describe_channel_membership(
+    self,
+    *,
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str = ...,
+) -> DescribeChannelMembershipResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelMembershipRequestRequestTypeDef](./type_defs.md#describechannelmembershiprequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelMembershipResponseTypeDef](./type_defs.md#describechannelmembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MemberArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelMembershipRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MemberArn": ...,
+}
 
-Returns
-[DescribeChannelMembershipResponseTypeDef](./type_defs.md#describechannelmembershipresponsetypedef).
+parent.describe_channel_membership(**kwargs)
+```
 
-<a id="describe\_channel\_membership\_for\_app\_instance\_user"></a>
+1. See [:material-code-braces: DescribeChannelMembershipRequestRequestTypeDef](./type_defs.md#describechannelmembershiprequestrequesttypedef) 
 
-### describe_channel_membership_for_app_instance_user
+### describe\_channel\_membership\_for\_app\_instance\_user
 
 Returns the details of a channel based on the membership of the specified
 `AppInstanceUser` .
 
-Type annotations for
-`boto3.client("chime").describe_channel_membership_for_app_instance_user`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").describe_channel_membership_for_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user)
 
-Boto3 documentation:
-[Chime.Client.describe_channel_membership_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_membership_for_app_instance_user)
+```python title="Method definition"
+def describe_channel_membership_for_app_instance_user(
+    self,
+    *,
+    ChannelArn: str,
+    AppInstanceUserArn: str,
+    ChimeBearer: str = ...,
+) -> DescribeChannelMembershipForAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelMembershipForAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `AppInstanceUserArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "AppInstanceUserArn": ...,
+}
 
-Returns
-[DescribeChannelMembershipForAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponsetypedef).
+parent.describe_channel_membership_for_app_instance_user(**kwargs)
+```
 
-<a id="describe\_channel\_moderated\_by\_app\_instance\_user"></a>
+1. See [:material-code-braces: DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserrequestrequesttypedef) 
 
-### describe_channel_moderated_by_app_instance_user
+### describe\_channel\_moderated\_by\_app\_instance\_user
 
 Returns the full details of a channel moderated by the specified
 `AppInstanceUser` .
 
-Type annotations for
-`boto3.client("chime").describe_channel_moderated_by_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").describe_channel_moderated_by_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user)
 
-Boto3 documentation:
-[Chime.Client.describe_channel_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderated_by_app_instance_user)
+```python title="Method definition"
+def describe_channel_moderated_by_app_instance_user(
+    self,
+    *,
+    ChannelArn: str,
+    AppInstanceUserArn: str,
+    ChimeBearer: str = ...,
+) -> DescribeChannelModeratedByAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `AppInstanceUserArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "AppInstanceUserArn": ...,
+}
 
-Returns
-[DescribeChannelModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponsetypedef).
+parent.describe_channel_moderated_by_app_instance_user(**kwargs)
+```
 
-<a id="describe\_channel\_moderator"></a>
+1. See [:material-code-braces: DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserrequestrequesttypedef) 
 
-### describe_channel_moderator
+### describe\_channel\_moderator
 
 Returns the full details of a single ChannelModerator.
 
-Type annotations for `boto3.client("chime").describe_channel_moderator` method.
+Type annotations and code completion for `#!python boto3.client("chime").describe_channel_moderator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderator)
 
-Boto3 documentation:
-[Chime.Client.describe_channel_moderator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.describe_channel_moderator)
+```python title="Method definition"
+def describe_channel_moderator(
+    self,
+    *,
+    ChannelArn: str,
+    ChannelModeratorArn: str,
+    ChimeBearer: str = ...,
+) -> DescribeChannelModeratorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChannelModeratorRequestRequestTypeDef](./type_defs.md#describechannelmoderatorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChannelModeratorArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelModeratorRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "ChannelModeratorArn": ...,
+}
 
-Returns
-[DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef).
+parent.describe_channel_moderator(**kwargs)
+```
 
-<a id="disassociate\_phone\_number\_from\_user"></a>
+1. See [:material-code-braces: DescribeChannelModeratorRequestRequestTypeDef](./type_defs.md#describechannelmoderatorrequestrequesttypedef) 
 
-### disassociate_phone_number_from_user
+### disassociate\_phone\_number\_from\_user
 
 Disassociates the primary provisioned phone number from the specified Amazon
 Chime user.
 
-Type annotations for
-`boto3.client("chime").disassociate_phone_number_from_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").disassociate_phone_number_from_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user)
 
-Boto3 documentation:
-[Chime.Client.disassociate_phone_number_from_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_number_from_user)
+```python title="Method definition"
+def disassociate_phone_number_from_user(
+    self,
+    *,
+    AccountId: str,
+    UserId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociatePhoneNumberFromUserRequestRequestTypeDef](./type_defs.md#disassociatephonenumberfromuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociatePhoneNumberFromUserRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_phone_number_from_user(**kwargs)
+```
 
-<a id="disassociate\_phone\_numbers\_from\_voice\_connector"></a>
+1. See [:material-code-braces: DisassociatePhoneNumberFromUserRequestRequestTypeDef](./type_defs.md#disassociatephonenumberfromuserrequestrequesttypedef) 
 
-### disassociate_phone_numbers_from_voice_connector
+### disassociate\_phone\_numbers\_from\_voice\_connector
 
 Disassociates the specified phone numbers from the specified Amazon Chime Voice
 Connector.
 
-Type annotations for
-`boto3.client("chime").disassociate_phone_numbers_from_voice_connector` method.
+Type annotations and code completion for `#!python boto3.client("chime").disassociate_phone_numbers_from_voice_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector)
 
-Boto3 documentation:
-[Chime.Client.disassociate_phone_numbers_from_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector)
+```python title="Method definition"
+def disassociate_phone_numbers_from_voice_connector(
+    self,
+    *,
+    VoiceConnectorId: str,
+    E164PhoneNumbers: Sequence[str],
+) -> DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociatePhoneNumbersFromVoiceConnectorRequestRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorrequestrequesttypedef).
+1. See [:material-code-braces: DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociatePhoneNumbersFromVoiceConnectorRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "E164PhoneNumbers": ...,
+}
 
-Returns
-[DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorresponsetypedef).
+parent.disassociate_phone_numbers_from_voice_connector(**kwargs)
+```
 
-<a id="disassociate\_phone\_numbers\_from\_voice\_connector\_group"></a>
+1. See [:material-code-braces: DisassociatePhoneNumbersFromVoiceConnectorRequestRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorrequestrequesttypedef) 
 
-### disassociate_phone_numbers_from_voice_connector_group
+### disassociate\_phone\_numbers\_from\_voice\_connector\_group
 
 Disassociates the specified phone numbers from the specified Amazon Chime Voice
 Connector group.
 
-Type annotations for
-`boto3.client("chime").disassociate_phone_numbers_from_voice_connector_group`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").disassociate_phone_numbers_from_voice_connector_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group)
 
-Boto3 documentation:
-[Chime.Client.disassociate_phone_numbers_from_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_phone_numbers_from_voice_connector_group)
+```python title="Method definition"
+def disassociate_phone_numbers_from_voice_connector_group(
+    self,
+    *,
+    VoiceConnectorGroupId: str,
+    E164PhoneNumbers: Sequence[str],
+) -> DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociatePhoneNumbersFromVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgrouprequestrequesttypedef).
+1. See [:material-code-braces: DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorGroupId`: `str` *(required)*
-- `E164PhoneNumbers`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociatePhoneNumbersFromVoiceConnectorGroupRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorGroupId": ...,
+    "E164PhoneNumbers": ...,
+}
 
-Returns
-[DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef).
+parent.disassociate_phone_numbers_from_voice_connector_group(**kwargs)
+```
 
-<a id="disassociate\_signin\_delegate\_groups\_from\_account"></a>
+1. See [:material-code-braces: DisassociatePhoneNumbersFromVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgrouprequestrequesttypedef) 
 
-### disassociate_signin_delegate_groups_from_account
+### disassociate\_signin\_delegate\_groups\_from\_account
 
 Disassociates the specified sign-in delegate groups from the specified Amazon
 Chime account.
 
-Type annotations for
-`boto3.client("chime").disassociate_signin_delegate_groups_from_account`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").disassociate_signin_delegate_groups_from_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account)
 
-Boto3 documentation:
-[Chime.Client.disassociate_signin_delegate_groups_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.disassociate_signin_delegate_groups_from_account)
+```python title="Method definition"
+def disassociate_signin_delegate_groups_from_account(
+    self,
+    *,
+    AccountId: str,
+    GroupNames: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef](./type_defs.md#disassociatesignindelegategroupsfromaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `GroupNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "GroupNames": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_signin_delegate_groups_from_account(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateSigninDelegateGroupsFromAccountRequestRequestTypeDef](./type_defs.md#disassociatesignindelegategroupsfromaccountrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("chime").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("chime").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Chime.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_account"></a>
-
-### get_account
+### get\_account
 
 Retrieves details for the specified Amazon Chime account, such as account type
 and supported licenses.
 
-Type annotations for `boto3.client("chime").get_account` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account)
 
-Boto3 documentation:
-[Chime.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account)
+```python title="Method definition"
+def get_account(
+    self,
+    *,
+    AccountId: str,
+) -> GetAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccountRequestRequestTypeDef](./type_defs.md#getaccountrequestrequesttypedef).
+1. See [:material-code-braces: GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
+parent.get_account(**kwargs)
+```
 
-<a id="get\_account\_settings"></a>
+1. See [:material-code-braces: GetAccountRequestRequestTypeDef](./type_defs.md#getaccountrequestrequesttypedef) 
 
-### get_account_settings
+### get\_account\_settings
 
 Retrieves account settings for the specified Amazon Chime account ID, such as
 remote control and dialout settings.
 
-Type annotations for `boto3.client("chime").get_account_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account_settings)
 
-Boto3 documentation:
-[Chime.Client.get_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_account_settings)
+```python title="Method definition"
+def get_account_settings(
+    self,
+    *,
+    AccountId: str,
+) -> GetAccountSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccountSettingsRequestRequestTypeDef](./type_defs.md#getaccountsettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccountSettingsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
+parent.get_account_settings(**kwargs)
+```
 
-<a id="get\_app\_instance\_retention\_settings"></a>
+1. See [:material-code-braces: GetAccountSettingsRequestRequestTypeDef](./type_defs.md#getaccountsettingsrequestrequesttypedef) 
 
-### get_app_instance_retention_settings
+### get\_app\_instance\_retention\_settings
 
 Gets the retention settings for an `AppInstance` .
 
-Type annotations for
-`boto3.client("chime").get_app_instance_retention_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_app_instance_retention_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings)
 
-Boto3 documentation:
-[Chime.Client.get_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_retention_settings)
+```python title="Method definition"
+def get_app_instance_retention_settings(
+    self,
+    *,
+    AppInstanceArn: str,
+) -> GetAppInstanceRetentionSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#getappinstanceretentionsettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAppInstanceRetentionSettingsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[GetAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponsetypedef).
+parent.get_app_instance_retention_settings(**kwargs)
+```
 
-<a id="get\_app\_instance\_streaming\_configurations"></a>
+1. See [:material-code-braces: GetAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#getappinstanceretentionsettingsrequestrequesttypedef) 
 
-### get_app_instance_streaming_configurations
+### get\_app\_instance\_streaming\_configurations
 
 Gets the streaming settings for an `AppInstance` .
 
-Type annotations for
-`boto3.client("chime").get_app_instance_streaming_configurations` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_app_instance_streaming_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations)
 
-Boto3 documentation:
-[Chime.Client.get_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_app_instance_streaming_configurations)
+```python title="Method definition"
+def get_app_instance_streaming_configurations(
+    self,
+    *,
+    AppInstanceArn: str,
+) -> GetAppInstanceStreamingConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppInstanceStreamingConfigurationsRequestRequestTypeDef](./type_defs.md#getappinstancestreamingconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: GetAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#getappinstancestreamingconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAppInstanceStreamingConfigurationsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[GetAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#getappinstancestreamingconfigurationsresponsetypedef).
+parent.get_app_instance_streaming_configurations(**kwargs)
+```
 
-<a id="get\_attendee"></a>
+1. See [:material-code-braces: GetAppInstanceStreamingConfigurationsRequestRequestTypeDef](./type_defs.md#getappinstancestreamingconfigurationsrequestrequesttypedef) 
 
-### get_attendee
+### get\_attendee
 
 Gets the Amazon Chime SDK attendee details for a specified meeting ID and
 attendee ID.
 
-Type annotations for `boto3.client("chime").get_attendee` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_attendee)
 
-Boto3 documentation:
-[Chime.Client.get_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_attendee)
+```python title="Method definition"
+def get_attendee(
+    self,
+    *,
+    MeetingId: str,
+    AttendeeId: str,
+) -> GetAttendeeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAttendeeRequestRequestTypeDef](./type_defs.md#getattendeerequestrequesttypedef).
+1. See [:material-code-braces: GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `AttendeeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "AttendeeId": ...,
+}
 
-Returns
-[GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef).
+parent.get_attendee(**kwargs)
+```
 
-<a id="get\_bot"></a>
+1. See [:material-code-braces: GetAttendeeRequestRequestTypeDef](./type_defs.md#getattendeerequestrequesttypedef) 
 
-### get_bot
+### get\_bot
 
 Retrieves details for the specified bot, such as bot email address, bot type,
 status, and display name.
 
-Type annotations for `boto3.client("chime").get_bot` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_bot)
 
-Boto3 documentation:
-[Chime.Client.get_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_bot)
+```python title="Method definition"
+def get_bot(
+    self,
+    *,
+    AccountId: str,
+    BotId: str,
+) -> GetBotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBotRequestRequestTypeDef](./type_defs.md#getbotrequestrequesttypedef).
+1. See [:material-code-braces: GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BotId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBotRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BotId": ...,
+}
 
-Returns [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef).
+parent.get_bot(**kwargs)
+```
 
-<a id="get\_channel\_message"></a>
+1. See [:material-code-braces: GetBotRequestRequestTypeDef](./type_defs.md#getbotrequestrequesttypedef) 
 
-### get_channel_message
+### get\_channel\_message
 
 Gets the full details of a channel message.
 
-Type annotations for `boto3.client("chime").get_channel_message` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_channel_message)
 
-Boto3 documentation:
-[Chime.Client.get_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_channel_message)
+```python title="Method definition"
+def get_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str = ...,
+) -> GetChannelMessageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChannelMessageRequestRequestTypeDef](./type_defs.md#getchannelmessagerequestrequesttypedef).
+1. See [:material-code-braces: GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MessageId`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MessageId": ...,
+}
 
-Returns
-[GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef).
+parent.get_channel_message(**kwargs)
+```
 
-<a id="get\_events\_configuration"></a>
+1. See [:material-code-braces: GetChannelMessageRequestRequestTypeDef](./type_defs.md#getchannelmessagerequestrequesttypedef) 
 
-### get_events_configuration
+### get\_events\_configuration
 
 Gets details for an events configuration that allows a bot to receive outgoing
 events, such as an HTTPS endpoint or Lambda function ARN.
 
-Type annotations for `boto3.client("chime").get_events_configuration` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_events_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_events_configuration)
 
-Boto3 documentation:
-[Chime.Client.get_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_events_configuration)
+```python title="Method definition"
+def get_events_configuration(
+    self,
+    *,
+    AccountId: str,
+    BotId: str,
+) -> GetEventsConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEventsConfigurationRequestRequestTypeDef](./type_defs.md#geteventsconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetEventsConfigurationResponseTypeDef](./type_defs.md#geteventsconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BotId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEventsConfigurationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BotId": ...,
+}
 
-Returns
-[GetEventsConfigurationResponseTypeDef](./type_defs.md#geteventsconfigurationresponsetypedef).
+parent.get_events_configuration(**kwargs)
+```
 
-<a id="get\_global\_settings"></a>
+1. See [:material-code-braces: GetEventsConfigurationRequestRequestTypeDef](./type_defs.md#geteventsconfigurationrequestrequesttypedef) 
 
-### get_global_settings
+### get\_global\_settings
 
 Retrieves global settings for the administrator's AWS account, such as Amazon
 Chime Business Calling and Amazon Chime Voice Connector settings.
 
-Type annotations for `boto3.client("chime").get_global_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_global_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_global_settings)
 
-Boto3 documentation:
-[Chime.Client.get_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_global_settings)
+```python title="Method definition"
+def get_global_settings(
+    self,
+) -> GetGlobalSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetGlobalSettingsResponseTypeDef](./type_defs.md#getglobalsettingsresponsetypedef).
+1. See [:material-code-braces: GetGlobalSettingsResponseTypeDef](./type_defs.md#getglobalsettingsresponsetypedef) 
 
-<a id="get\_media\_capture\_pipeline"></a>
-
-### get_media_capture_pipeline
+### get\_media\_capture\_pipeline
 
 Gets an existing media capture pipeline.
 
-Type annotations for `boto3.client("chime").get_media_capture_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_media_capture_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_media_capture_pipeline)
 
-Boto3 documentation:
-[Chime.Client.get_media_capture_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_media_capture_pipeline)
+```python title="Method definition"
+def get_media_capture_pipeline(
+    self,
+    *,
+    MediaPipelineId: str,
+) -> GetMediaCapturePipelineResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#getmediacapturepipelinerequestrequesttypedef).
+1. See [:material-code-braces: GetMediaCapturePipelineResponseTypeDef](./type_defs.md#getmediacapturepipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MediaPipelineId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMediaCapturePipelineRequestRequestTypeDef = {  # (1)
+    "MediaPipelineId": ...,
+}
 
-Returns
-[GetMediaCapturePipelineResponseTypeDef](./type_defs.md#getmediacapturepipelineresponsetypedef).
+parent.get_media_capture_pipeline(**kwargs)
+```
 
-<a id="get\_meeting"></a>
+1. See [:material-code-braces: GetMediaCapturePipelineRequestRequestTypeDef](./type_defs.md#getmediacapturepipelinerequestrequesttypedef) 
 
-### get_meeting
+### get\_meeting
 
 Gets the Amazon Chime SDK meeting details for the specified meeting ID.
 
-Type annotations for `boto3.client("chime").get_meeting` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_meeting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_meeting)
 
-Boto3 documentation:
-[Chime.Client.get_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_meeting)
+```python title="Method definition"
+def get_meeting(
+    self,
+    *,
+    MeetingId: str,
+) -> GetMeetingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMeetingRequestRequestTypeDef](./type_defs.md#getmeetingrequestrequesttypedef).
+1. See [:material-code-braces: GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMeetingRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+}
 
-Returns [GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef).
+parent.get_meeting(**kwargs)
+```
 
-<a id="get\_messaging\_session\_endpoint"></a>
+1. See [:material-code-braces: GetMeetingRequestRequestTypeDef](./type_defs.md#getmeetingrequestrequesttypedef) 
 
-### get_messaging_session_endpoint
+### get\_messaging\_session\_endpoint
 
 The details of the endpoint for the messaging session.
 
-Type annotations for `boto3.client("chime").get_messaging_session_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").get_messaging_session_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint)
 
-Boto3 documentation:
-[Chime.Client.get_messaging_session_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_messaging_session_endpoint)
+```python title="Method definition"
+def get_messaging_session_endpoint(
+    self,
+) -> GetMessagingSessionEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef).
+1. See [:material-code-braces: GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef) 
 
-<a id="get\_phone\_number"></a>
-
-### get_phone_number
+### get\_phone\_number
 
 Retrieves details for the specified phone number ID, such as associations,
 capabilities, and product type.
 
-Type annotations for `boto3.client("chime").get_phone_number` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number)
 
-Boto3 documentation:
-[Chime.Client.get_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number)
+```python title="Method definition"
+def get_phone_number(
+    self,
+    *,
+    PhoneNumberId: str,
+) -> GetPhoneNumberResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPhoneNumberRequestRequestTypeDef](./type_defs.md#getphonenumberrequestrequesttypedef).
+1. See [:material-code-braces: GetPhoneNumberResponseTypeDef](./type_defs.md#getphonenumberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PhoneNumberId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPhoneNumberRequestRequestTypeDef = {  # (1)
+    "PhoneNumberId": ...,
+}
 
-Returns
-[GetPhoneNumberResponseTypeDef](./type_defs.md#getphonenumberresponsetypedef).
+parent.get_phone_number(**kwargs)
+```
 
-<a id="get\_phone\_number\_order"></a>
+1. See [:material-code-braces: GetPhoneNumberRequestRequestTypeDef](./type_defs.md#getphonenumberrequestrequesttypedef) 
 
-### get_phone_number_order
+### get\_phone\_number\_order
 
 Retrieves details for the specified phone number order, such as the order
 creation timestamp, phone numbers in E.164 format, product type, and order
 status.
 
-Type annotations for `boto3.client("chime").get_phone_number_order` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_phone_number_order` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_order)
 
-Boto3 documentation:
-[Chime.Client.get_phone_number_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_order)
+```python title="Method definition"
+def get_phone_number_order(
+    self,
+    *,
+    PhoneNumberOrderId: str,
+) -> GetPhoneNumberOrderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPhoneNumberOrderRequestRequestTypeDef](./type_defs.md#getphonenumberorderrequestrequesttypedef).
+1. See [:material-code-braces: GetPhoneNumberOrderResponseTypeDef](./type_defs.md#getphonenumberorderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PhoneNumberOrderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPhoneNumberOrderRequestRequestTypeDef = {  # (1)
+    "PhoneNumberOrderId": ...,
+}
 
-Returns
-[GetPhoneNumberOrderResponseTypeDef](./type_defs.md#getphonenumberorderresponsetypedef).
+parent.get_phone_number_order(**kwargs)
+```
 
-<a id="get\_phone\_number\_settings"></a>
+1. See [:material-code-braces: GetPhoneNumberOrderRequestRequestTypeDef](./type_defs.md#getphonenumberorderrequestrequesttypedef) 
 
-### get_phone_number_settings
+### get\_phone\_number\_settings
 
-Retrieves the phone number settings for the administrator's AWS account, such
-as the default outbound calling name.
+Retrieves the phone number settings for the administrator's AWS account, such as
+the default outbound calling name.
 
-Type annotations for `boto3.client("chime").get_phone_number_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_phone_number_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_settings)
 
-Boto3 documentation:
-[Chime.Client.get_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_phone_number_settings)
+```python title="Method definition"
+def get_phone_number_settings(
+    self,
+) -> GetPhoneNumberSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetPhoneNumberSettingsResponseTypeDef](./type_defs.md#getphonenumbersettingsresponsetypedef).
+1. See [:material-code-braces: GetPhoneNumberSettingsResponseTypeDef](./type_defs.md#getphonenumbersettingsresponsetypedef) 
 
-<a id="get\_proxy\_session"></a>
-
-### get_proxy_session
+### get\_proxy\_session
 
 Gets the specified proxy session details for the specified Amazon Chime Voice
 Connector.
 
-Type annotations for `boto3.client("chime").get_proxy_session` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_proxy_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_proxy_session)
 
-Boto3 documentation:
-[Chime.Client.get_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_proxy_session)
+```python title="Method definition"
+def get_proxy_session(
+    self,
+    *,
+    VoiceConnectorId: str,
+    ProxySessionId: str,
+) -> GetProxySessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProxySessionRequestRequestTypeDef](./type_defs.md#getproxysessionrequestrequesttypedef).
+1. See [:material-code-braces: GetProxySessionResponseTypeDef](./type_defs.md#getproxysessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `ProxySessionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetProxySessionRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "ProxySessionId": ...,
+}
 
-Returns
-[GetProxySessionResponseTypeDef](./type_defs.md#getproxysessionresponsetypedef).
+parent.get_proxy_session(**kwargs)
+```
 
-<a id="get\_retention\_settings"></a>
+1. See [:material-code-braces: GetProxySessionRequestRequestTypeDef](./type_defs.md#getproxysessionrequestrequesttypedef) 
 
-### get_retention_settings
+### get\_retention\_settings
 
 Gets the retention settings for the specified Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").get_retention_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_retention_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_retention_settings)
 
-Boto3 documentation:
-[Chime.Client.get_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_retention_settings)
+```python title="Method definition"
+def get_retention_settings(
+    self,
+    *,
+    AccountId: str,
+) -> GetRetentionSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRetentionSettingsRequestRequestTypeDef](./type_defs.md#getretentionsettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetRetentionSettingsResponseTypeDef](./type_defs.md#getretentionsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRetentionSettingsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[GetRetentionSettingsResponseTypeDef](./type_defs.md#getretentionsettingsresponsetypedef).
+parent.get_retention_settings(**kwargs)
+```
 
-<a id="get\_room"></a>
+1. See [:material-code-braces: GetRetentionSettingsRequestRequestTypeDef](./type_defs.md#getretentionsettingsrequestrequesttypedef) 
 
-### get_room
+### get\_room
 
 Retrieves room details, such as the room name, for a room in an Amazon Chime
 Enterprise account.
 
-Type annotations for `boto3.client("chime").get_room` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_room)
 
-Boto3 documentation:
-[Chime.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_room)
+```python title="Method definition"
+def get_room(
+    self,
+    *,
+    AccountId: str,
+    RoomId: str,
+) -> GetRoomResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRoomRequestRequestTypeDef](./type_defs.md#getroomrequestrequesttypedef).
+1. See [:material-code-braces: GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RoomId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRoomRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RoomId": ...,
+}
 
-Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
+parent.get_room(**kwargs)
+```
 
-<a id="get\_sip\_media\_application"></a>
+1. See [:material-code-braces: GetRoomRequestRequestTypeDef](./type_defs.md#getroomrequestrequesttypedef) 
 
-### get_sip_media_application
+### get\_sip\_media\_application
 
 Retrieves the information for a SIP media application, including name, AWS
 Region, and endpoints.
 
-Type annotations for `boto3.client("chime").get_sip_media_application` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_sip_media_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application)
 
-Boto3 documentation:
-[Chime.Client.get_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application)
+```python title="Method definition"
+def get_sip_media_application(
+    self,
+    *,
+    SipMediaApplicationId: str,
+) -> GetSipMediaApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSipMediaApplicationRequestRequestTypeDef](./type_defs.md#getsipmediaapplicationrequestrequesttypedef).
+1. See [:material-code-braces: GetSipMediaApplicationResponseTypeDef](./type_defs.md#getsipmediaapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SipMediaApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSipMediaApplicationRequestRequestTypeDef = {  # (1)
+    "SipMediaApplicationId": ...,
+}
 
-Returns
-[GetSipMediaApplicationResponseTypeDef](./type_defs.md#getsipmediaapplicationresponsetypedef).
+parent.get_sip_media_application(**kwargs)
+```
 
-<a id="get\_sip\_media\_application\_logging\_configuration"></a>
+1. See [:material-code-braces: GetSipMediaApplicationRequestRequestTypeDef](./type_defs.md#getsipmediaapplicationrequestrequesttypedef) 
 
-### get_sip_media_application_logging_configuration
+### get\_sip\_media\_application\_logging\_configuration
 
 Returns the logging configuration for the specified SIP media application.
 
-Type annotations for
-`boto3.client("chime").get_sip_media_application_logging_configuration` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_sip_media_application_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration)
 
-Boto3 documentation:
-[Chime.Client.get_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_media_application_logging_configuration)
+```python title="Method definition"
+def get_sip_media_application_logging_configuration(
+    self,
+    *,
+    SipMediaApplicationId: str,
+) -> GetSipMediaApplicationLoggingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSipMediaApplicationLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SipMediaApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSipMediaApplicationLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "SipMediaApplicationId": ...,
+}
 
-Returns
-[GetSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationresponsetypedef).
+parent.get_sip_media_application_logging_configuration(**kwargs)
+```
 
-<a id="get\_sip\_rule"></a>
+1. See [:material-code-braces: GetSipMediaApplicationLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationrequestrequesttypedef) 
 
-### get_sip_rule
+### get\_sip\_rule
 
 Retrieves the details of a SIP rule, such as the rule ID, name, triggers, and
 target endpoints.
 
-Type annotations for `boto3.client("chime").get_sip_rule` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_sip_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_rule)
 
-Boto3 documentation:
-[Chime.Client.get_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_sip_rule)
+```python title="Method definition"
+def get_sip_rule(
+    self,
+    *,
+    SipRuleId: str,
+) -> GetSipRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSipRuleRequestRequestTypeDef](./type_defs.md#getsiprulerequestrequesttypedef).
+1. See [:material-code-braces: GetSipRuleResponseTypeDef](./type_defs.md#getsipruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SipRuleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSipRuleRequestRequestTypeDef = {  # (1)
+    "SipRuleId": ...,
+}
 
-Returns [GetSipRuleResponseTypeDef](./type_defs.md#getsipruleresponsetypedef).
+parent.get_sip_rule(**kwargs)
+```
 
-<a id="get\_user"></a>
+1. See [:material-code-braces: GetSipRuleRequestRequestTypeDef](./type_defs.md#getsiprulerequestrequesttypedef) 
 
-### get_user
+### get\_user
 
 Retrieves details for the specified user ID, such as primary email address,
 license type,and personal meeting PIN.
 
-Type annotations for `boto3.client("chime").get_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user)
 
-Boto3 documentation:
-[Chime.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user)
+```python title="Method definition"
+def get_user(
+    self,
+    *,
+    AccountId: str,
+    UserId: str,
+) -> GetUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef).
+1. See [:material-code-braces: GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUserRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserId": ...,
+}
 
-Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
+parent.get_user(**kwargs)
+```
 
-<a id="get\_user\_settings"></a>
+1. See [:material-code-braces: GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef) 
 
-### get_user_settings
+### get\_user\_settings
 
 Retrieves settings for the specified user ID, such as any associated phone
 number settings.
 
-Type annotations for `boto3.client("chime").get_user_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user_settings)
 
-Boto3 documentation:
-[Chime.Client.get_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_user_settings)
+```python title="Method definition"
+def get_user_settings(
+    self,
+    *,
+    AccountId: str,
+    UserId: str,
+) -> GetUserSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserSettingsRequestRequestTypeDef](./type_defs.md#getusersettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUserSettingsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserId": ...,
+}
 
-Returns
-[GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef).
+parent.get_user_settings(**kwargs)
+```
 
-<a id="get\_voice\_connector"></a>
+1. See [:material-code-braces: GetUserSettingsRequestRequestTypeDef](./type_defs.md#getusersettingsrequestrequesttypedef) 
 
-### get_voice_connector
+### get\_voice\_connector
 
 Retrieves details for the specified Amazon Chime Voice Connector, such as
 timestamps,name, outbound host, and encryption requirements.
 
-Type annotations for `boto3.client("chime").get_voice_connector` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_voice_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector)
 
-Boto3 documentation:
-[Chime.Client.get_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector)
+```python title="Method definition"
+def get_voice_connector(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> GetVoiceConnectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceConnectorRequestRequestTypeDef](./type_defs.md#getvoiceconnectorrequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceConnectorResponseTypeDef](./type_defs.md#getvoiceconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceConnectorRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[GetVoiceConnectorResponseTypeDef](./type_defs.md#getvoiceconnectorresponsetypedef).
+parent.get_voice_connector(**kwargs)
+```
 
-<a id="get\_voice\_connector\_emergency\_calling\_configuration"></a>
+1. See [:material-code-braces: GetVoiceConnectorRequestRequestTypeDef](./type_defs.md#getvoiceconnectorrequestrequesttypedef) 
 
-### get_voice_connector_emergency_calling_configuration
+### get\_voice\_connector\_emergency\_calling\_configuration
 
 Gets the emergency calling configuration details for the specified Amazon Chime
 Voice Connector.
 
-Type annotations for
-`boto3.client("chime").get_voice_connector_emergency_calling_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").get_voice_connector_emergency_calling_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration)
 
-Boto3 documentation:
-[Chime.Client.get_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_emergency_calling_configuration)
+```python title="Method definition"
+def get_voice_connector_emergency_calling_configuration(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationresponsetypedef).
+parent.get_voice_connector_emergency_calling_configuration(**kwargs)
+```
 
-<a id="get\_voice\_connector\_group"></a>
+1. See [:material-code-braces: GetVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationrequestrequesttypedef) 
 
-### get_voice_connector_group
+### get\_voice\_connector\_group
 
 Retrieves details for the specified Amazon Chime Voice Connector group, such as
 timestamps,name, and associated `VoiceConnectorItems` .
 
-Type annotations for `boto3.client("chime").get_voice_connector_group` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_voice_connector_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_group)
 
-Boto3 documentation:
-[Chime.Client.get_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_group)
+```python title="Method definition"
+def get_voice_connector_group(
+    self,
+    *,
+    VoiceConnectorGroupId: str,
+) -> GetVoiceConnectorGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#getvoiceconnectorgrouprequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceConnectorGroupResponseTypeDef](./type_defs.md#getvoiceconnectorgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceConnectorGroupRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorGroupId": ...,
+}
 
-Returns
-[GetVoiceConnectorGroupResponseTypeDef](./type_defs.md#getvoiceconnectorgroupresponsetypedef).
+parent.get_voice_connector_group(**kwargs)
+```
 
-<a id="get\_voice\_connector\_logging\_configuration"></a>
+1. See [:material-code-braces: GetVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#getvoiceconnectorgrouprequestrequesttypedef) 
 
-### get_voice_connector_logging_configuration
+### get\_voice\_connector\_logging\_configuration
 
-Retrieves the logging configuration details for the specified Amazon Chime
-Voice Connector.
+Retrieves the logging configuration details for the specified Amazon Chime Voice
+Connector.
 
-Type annotations for
-`boto3.client("chime").get_voice_connector_logging_configuration` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_voice_connector_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration)
 
-Boto3 documentation:
-[Chime.Client.get_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_logging_configuration)
+```python title="Method definition"
+def get_voice_connector_logging_configuration(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> GetVoiceConnectorLoggingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceConnectorLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceConnectorLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[GetVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationresponsetypedef).
+parent.get_voice_connector_logging_configuration(**kwargs)
+```
 
-<a id="get\_voice\_connector\_origination"></a>
+1. See [:material-code-braces: GetVoiceConnectorLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationrequestrequesttypedef) 
 
-### get_voice_connector_origination
+### get\_voice\_connector\_origination
 
 Retrieves origination setting details for the specified Amazon Chime Voice
 Connector.
 
-Type annotations for `boto3.client("chime").get_voice_connector_origination`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").get_voice_connector_origination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_origination)
 
-Boto3 documentation:
-[Chime.Client.get_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_origination)
+```python title="Method definition"
+def get_voice_connector_origination(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> GetVoiceConnectorOriginationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceConnectorOriginationRequestRequestTypeDef](./type_defs.md#getvoiceconnectororiginationrequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceConnectorOriginationResponseTypeDef](./type_defs.md#getvoiceconnectororiginationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceConnectorOriginationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[GetVoiceConnectorOriginationResponseTypeDef](./type_defs.md#getvoiceconnectororiginationresponsetypedef).
+parent.get_voice_connector_origination(**kwargs)
+```
 
-<a id="get\_voice\_connector\_proxy"></a>
+1. See [:material-code-braces: GetVoiceConnectorOriginationRequestRequestTypeDef](./type_defs.md#getvoiceconnectororiginationrequestrequesttypedef) 
 
-### get_voice_connector_proxy
+### get\_voice\_connector\_proxy
 
 Gets the proxy configuration details for the specified Amazon Chime Voice
 Connector.
 
-Type annotations for `boto3.client("chime").get_voice_connector_proxy` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_voice_connector_proxy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_proxy)
 
-Boto3 documentation:
-[Chime.Client.get_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_proxy)
+```python title="Method definition"
+def get_voice_connector_proxy(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> GetVoiceConnectorProxyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceConnectorProxyRequestRequestTypeDef](./type_defs.md#getvoiceconnectorproxyrequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceConnectorProxyResponseTypeDef](./type_defs.md#getvoiceconnectorproxyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceConnectorProxyRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[GetVoiceConnectorProxyResponseTypeDef](./type_defs.md#getvoiceconnectorproxyresponsetypedef).
+parent.get_voice_connector_proxy(**kwargs)
+```
 
-<a id="get\_voice\_connector\_streaming\_configuration"></a>
+1. See [:material-code-braces: GetVoiceConnectorProxyRequestRequestTypeDef](./type_defs.md#getvoiceconnectorproxyrequestrequesttypedef) 
 
-### get_voice_connector_streaming_configuration
+### get\_voice\_connector\_streaming\_configuration
 
 Retrieves the streaming configuration details for the specified Amazon Chime
 Voice Connector.
 
-Type annotations for
-`boto3.client("chime").get_voice_connector_streaming_configuration` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_voice_connector_streaming_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration)
 
-Boto3 documentation:
-[Chime.Client.get_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_streaming_configuration)
+```python title="Method definition"
+def get_voice_connector_streaming_configuration(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> GetVoiceConnectorStreamingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceConnectorStreamingConfigurationRequestRequestTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceConnectorStreamingConfigurationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[GetVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationresponsetypedef).
+parent.get_voice_connector_streaming_configuration(**kwargs)
+```
 
-<a id="get\_voice\_connector\_termination"></a>
+1. See [:material-code-braces: GetVoiceConnectorStreamingConfigurationRequestRequestTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationrequestrequesttypedef) 
 
-### get_voice_connector_termination
+### get\_voice\_connector\_termination
 
 Retrieves termination setting details for the specified Amazon Chime Voice
 Connector.
 
-Type annotations for `boto3.client("chime").get_voice_connector_termination`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").get_voice_connector_termination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination)
 
-Boto3 documentation:
-[Chime.Client.get_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination)
+```python title="Method definition"
+def get_voice_connector_termination(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> GetVoiceConnectorTerminationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceConnectorTerminationRequestRequestTypeDef](./type_defs.md#getvoiceconnectorterminationrequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceConnectorTerminationResponseTypeDef](./type_defs.md#getvoiceconnectorterminationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceConnectorTerminationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[GetVoiceConnectorTerminationResponseTypeDef](./type_defs.md#getvoiceconnectorterminationresponsetypedef).
+parent.get_voice_connector_termination(**kwargs)
+```
 
-<a id="get\_voice\_connector\_termination\_health"></a>
+1. See [:material-code-braces: GetVoiceConnectorTerminationRequestRequestTypeDef](./type_defs.md#getvoiceconnectorterminationrequestrequesttypedef) 
 
-### get_voice_connector_termination_health
+### get\_voice\_connector\_termination\_health
 
-Retrieves information about the last time a SIP `OPTIONS` ping was received
-from your SIP infrastructure for the specified Amazon Chime Voice Connector.
+Retrieves information about the last time a SIP `OPTIONS` ping was received from
+your SIP infrastructure for the specified Amazon Chime Voice Connector.
 
-Type annotations for
-`boto3.client("chime").get_voice_connector_termination_health` method.
+Type annotations and code completion for `#!python boto3.client("chime").get_voice_connector_termination_health` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health)
 
-Boto3 documentation:
-[Chime.Client.get_voice_connector_termination_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.get_voice_connector_termination_health)
+```python title="Method definition"
+def get_voice_connector_termination_health(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> GetVoiceConnectorTerminationHealthResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceConnectorTerminationHealthRequestRequestTypeDef](./type_defs.md#getvoiceconnectorterminationhealthrequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceConnectorTerminationHealthResponseTypeDef](./type_defs.md#getvoiceconnectorterminationhealthresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceConnectorTerminationHealthRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[GetVoiceConnectorTerminationHealthResponseTypeDef](./type_defs.md#getvoiceconnectorterminationhealthresponsetypedef).
+parent.get_voice_connector_termination_health(**kwargs)
+```
 
-<a id="invite\_users"></a>
+1. See [:material-code-braces: GetVoiceConnectorTerminationHealthRequestRequestTypeDef](./type_defs.md#getvoiceconnectorterminationhealthrequestrequesttypedef) 
 
-### invite_users
+### invite\_users
 
 Sends email to a maximum of 50 users, inviting them to the specified Amazon
 Chime `Team` account.
 
-Type annotations for `boto3.client("chime").invite_users` method.
+Type annotations and code completion for `#!python boto3.client("chime").invite_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.invite_users)
 
-Boto3 documentation:
-[Chime.Client.invite_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.invite_users)
+```python title="Method definition"
+def invite_users(
+    self,
+    *,
+    AccountId: str,
+    UserEmailList: Sequence[str],
+    UserType: UserTypeType = ...,  # (1)
+) -> InviteUsersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[InviteUsersRequestRequestTypeDef](./type_defs.md#inviteusersrequestrequesttypedef).
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-braces: InviteUsersResponseTypeDef](./type_defs.md#inviteusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserEmailList`: `Sequence`\[`str`\] *(required)*
-- `UserType`: [UserTypeType](./literals.md#usertypetype)
+```python title="Usage example with kwargs"
+kwargs: InviteUsersRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserEmailList": ...,
+}
 
-Returns
-[InviteUsersResponseTypeDef](./type_defs.md#inviteusersresponsetypedef).
+parent.invite_users(**kwargs)
+```
 
-<a id="list\_accounts"></a>
+1. See [:material-code-braces: InviteUsersRequestRequestTypeDef](./type_defs.md#inviteusersrequestrequesttypedef) 
 
-### list_accounts
+### list\_accounts
 
 Lists the Amazon Chime accounts under the administrator's AWS account.
 
-Type annotations for `boto3.client("chime").list_accounts` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_accounts)
 
-Boto3 documentation:
-[Chime.Client.list_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_accounts)
+```python title="Method definition"
+def list_accounts(
+    self,
+    *,
+    Name: str = ...,
+    UserEmail: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str`
-- `UserEmail`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccountsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
+parent.list_accounts(**kwargs)
+```
 
-<a id="list\_app\_instance\_admins"></a>
+1. See [:material-code-braces: ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef) 
 
-### list_app_instance_admins
+### list\_app\_instance\_admins
 
 Returns a list of the administrators in the `AppInstance` .
 
-Type annotations for `boto3.client("chime").list_app_instance_admins` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_app_instance_admins` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_admins)
 
-Boto3 documentation:
-[Chime.Client.list_app_instance_admins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_admins)
+```python title="Method definition"
+def list_app_instance_admins(
+    self,
+    *,
+    AppInstanceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAppInstanceAdminsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppInstanceAdminsRequestRequestTypeDef](./type_defs.md#listappinstanceadminsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppInstanceAdminsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef).
+parent.list_app_instance_admins(**kwargs)
+```
 
-<a id="list\_app\_instance\_users"></a>
+1. See [:material-code-braces: ListAppInstanceAdminsRequestRequestTypeDef](./type_defs.md#listappinstanceadminsrequestrequesttypedef) 
 
-### list_app_instance_users
+### list\_app\_instance\_users
 
 List all `AppInstanceUsers` created under a single `AppInstance` .
 
-Type annotations for `boto3.client("chime").list_app_instance_users` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_app_instance_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_users)
 
-Boto3 documentation:
-[Chime.Client.list_app_instance_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instance_users)
+```python title="Method definition"
+def list_app_instance_users(
+    self,
+    *,
+    AppInstanceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAppInstanceUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppInstanceUsersRequestRequestTypeDef](./type_defs.md#listappinstanceusersrequestrequesttypedef).
+1. See [:material-code-braces: ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppInstanceUsersRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef).
+parent.list_app_instance_users(**kwargs)
+```
 
-<a id="list\_app\_instances"></a>
+1. See [:material-code-braces: ListAppInstanceUsersRequestRequestTypeDef](./type_defs.md#listappinstanceusersrequestrequesttypedef) 
 
-### list_app_instances
+### list\_app\_instances
 
 Lists all Amazon Chime `AppInstance` s created under a single AWS account.
 
-Type annotations for `boto3.client("chime").list_app_instances` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_app_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instances)
 
-Boto3 documentation:
-[Chime.Client.list_app_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_app_instances)
+```python title="Method definition"
+def list_app_instances(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAppInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppInstancesRequestRequestTypeDef](./type_defs.md#listappinstancesrequestrequesttypedef).
+1. See [:material-code-braces: ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppInstancesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef).
+parent.list_app_instances(**kwargs)
+```
 
-<a id="list\_attendee\_tags"></a>
+1. See [:material-code-braces: ListAppInstancesRequestRequestTypeDef](./type_defs.md#listappinstancesrequestrequesttypedef) 
 
-### list_attendee_tags
+### list\_attendee\_tags
 
 Lists the tags applied to an Amazon Chime SDK attendee resource.
 
-Type annotations for `boto3.client("chime").list_attendee_tags` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_attendee_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendee_tags)
 
-Boto3 documentation:
-[Chime.Client.list_attendee_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendee_tags)
+```python title="Method definition"
+def list_attendee_tags(
+    self,
+    *,
+    MeetingId: str,
+    AttendeeId: str,
+) -> ListAttendeeTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAttendeeTagsRequestRequestTypeDef](./type_defs.md#listattendeetagsrequestrequesttypedef).
+1. See [:material-code-braces: ListAttendeeTagsResponseTypeDef](./type_defs.md#listattendeetagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `AttendeeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListAttendeeTagsRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "AttendeeId": ...,
+}
 
-Returns
-[ListAttendeeTagsResponseTypeDef](./type_defs.md#listattendeetagsresponsetypedef).
+parent.list_attendee_tags(**kwargs)
+```
 
-<a id="list\_attendees"></a>
+1. See [:material-code-braces: ListAttendeeTagsRequestRequestTypeDef](./type_defs.md#listattendeetagsrequestrequesttypedef) 
 
-### list_attendees
+### list\_attendees
 
 Lists the attendees for the specified Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime").list_attendees` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_attendees` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendees)
 
-Boto3 documentation:
-[Chime.Client.list_attendees](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_attendees)
+```python title="Method definition"
+def list_attendees(
+    self,
+    *,
+    MeetingId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAttendeesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAttendeesRequestRequestTypeDef](./type_defs.md#listattendeesrequestrequesttypedef).
+1. See [:material-code-braces: ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAttendeesRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+}
 
-Returns
-[ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef).
+parent.list_attendees(**kwargs)
+```
 
-<a id="list\_bots"></a>
+1. See [:material-code-braces: ListAttendeesRequestRequestTypeDef](./type_defs.md#listattendeesrequestrequesttypedef) 
 
-### list_bots
+### list\_bots
 
 Lists the bots associated with the administrator's Amazon Chime Enterprise
 account ID.
 
-Type annotations for `boto3.client("chime").list_bots` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_bots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_bots)
 
-Boto3 documentation:
-[Chime.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_bots)
+```python title="Method definition"
+def list_bots(
+    self,
+    *,
+    AccountId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListBotsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBotsRequestRequestTypeDef](./type_defs.md#listbotsrequestrequesttypedef).
+1. See [:material-code-braces: ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBotsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+parent.list_bots(**kwargs)
+```
 
-<a id="list\_channel\_bans"></a>
+1. See [:material-code-braces: ListBotsRequestRequestTypeDef](./type_defs.md#listbotsrequestrequesttypedef) 
 
-### list_channel_bans
+### list\_channel\_bans
 
 Lists all the users banned from a particular channel.
 
-Type annotations for `boto3.client("chime").list_channel_bans` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_channel_bans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_bans)
 
-Boto3 documentation:
-[Chime.Client.list_channel_bans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_bans)
+```python title="Method definition"
+def list_channel_bans(
+    self,
+    *,
+    ChannelArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ChimeBearer: str = ...,
+) -> ListChannelBansResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelBansRequestRequestTypeDef](./type_defs.md#listchannelbansrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelBansRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+}
 
-Returns
-[ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef).
+parent.list_channel_bans(**kwargs)
+```
 
-<a id="list\_channel\_memberships"></a>
+1. See [:material-code-braces: ListChannelBansRequestRequestTypeDef](./type_defs.md#listchannelbansrequestrequesttypedef) 
 
-### list_channel_memberships
+### list\_channel\_memberships
 
 Lists all channel memberships in a channel.
 
-Type annotations for `boto3.client("chime").list_channel_memberships` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_channel_memberships` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships)
 
-Boto3 documentation:
-[Chime.Client.list_channel_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships)
+```python title="Method definition"
+def list_channel_memberships(
+    self,
+    *,
+    ChannelArn: str,
+    Type: ChannelMembershipTypeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ChimeBearer: str = ...,
+) -> ListChannelMembershipsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelMembershipsRequestRequestTypeDef](./type_defs.md#listchannelmembershipsrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+2. See [:material-code-braces: ListChannelMembershipsResponseTypeDef](./type_defs.md#listchannelmembershipsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelMembershipsRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+}
 
-Returns
-[ListChannelMembershipsResponseTypeDef](./type_defs.md#listchannelmembershipsresponsetypedef).
+parent.list_channel_memberships(**kwargs)
+```
 
-<a id="list\_channel\_memberships\_for\_app\_instance\_user"></a>
+1. See [:material-code-braces: ListChannelMembershipsRequestRequestTypeDef](./type_defs.md#listchannelmembershipsrequestrequesttypedef) 
 
-### list_channel_memberships_for_app_instance_user
+### list\_channel\_memberships\_for\_app\_instance\_user
 
 Lists all channels that a particular `AppInstanceUser` is a part of.
 
-Type annotations for
-`boto3.client("chime").list_channel_memberships_for_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_channel_memberships_for_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user)
 
-Boto3 documentation:
-[Chime.Client.list_channel_memberships_for_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_memberships_for_app_instance_user)
+```python title="Method definition"
+def list_channel_memberships_for_app_instance_user(
+    self,
+    *,
+    AppInstanceUserArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ChimeBearer: str = ...,
+) -> ListChannelMembershipsForAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelMembershipsForAppInstanceUserResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+}
 
-Returns
-[ListChannelMembershipsForAppInstanceUserResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponsetypedef).
+parent.list_channel_memberships_for_app_instance_user(**kwargs)
+```
 
-<a id="list\_channel\_messages"></a>
+1. See [:material-code-braces: ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserrequestrequesttypedef) 
 
-### list_channel_messages
+### list\_channel\_messages
 
 List all the messages in a channel.
 
-Type annotations for `boto3.client("chime").list_channel_messages` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_channel_messages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_messages)
 
-Boto3 documentation:
-[Chime.Client.list_channel_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_messages)
+```python title="Method definition"
+def list_channel_messages(
+    self,
+    *,
+    ChannelArn: str,
+    SortOrder: SortOrderType = ...,  # (1)
+    NotBefore: Union[datetime, str] = ...,
+    NotAfter: Union[datetime, str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ChimeBearer: str = ...,
+) -> ListChannelMessagesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelMessagesRequestRequestTypeDef](./type_defs.md#listchannelmessagesrequestrequesttypedef).
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-braces: ListChannelMessagesResponseTypeDef](./type_defs.md#listchannelmessagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NotBefore`: `Union`\[`datetime`, `str`\]
-- `NotAfter`: `Union`\[`datetime`, `str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelMessagesRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+}
 
-Returns
-[ListChannelMessagesResponseTypeDef](./type_defs.md#listchannelmessagesresponsetypedef).
+parent.list_channel_messages(**kwargs)
+```
 
-<a id="list\_channel\_moderators"></a>
+1. See [:material-code-braces: ListChannelMessagesRequestRequestTypeDef](./type_defs.md#listchannelmessagesrequestrequesttypedef) 
 
-### list_channel_moderators
+### list\_channel\_moderators
 
 Lists all the moderators for a channel.
 
-Type annotations for `boto3.client("chime").list_channel_moderators` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_channel_moderators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_moderators)
 
-Boto3 documentation:
-[Chime.Client.list_channel_moderators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channel_moderators)
+```python title="Method definition"
+def list_channel_moderators(
+    self,
+    *,
+    ChannelArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ChimeBearer: str = ...,
+) -> ListChannelModeratorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelModeratorsRequestRequestTypeDef](./type_defs.md#listchannelmoderatorsrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelModeratorsResponseTypeDef](./type_defs.md#listchannelmoderatorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelModeratorsRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+}
 
-Returns
-[ListChannelModeratorsResponseTypeDef](./type_defs.md#listchannelmoderatorsresponsetypedef).
+parent.list_channel_moderators(**kwargs)
+```
 
-<a id="list\_channels"></a>
+1. See [:material-code-braces: ListChannelModeratorsRequestRequestTypeDef](./type_defs.md#listchannelmoderatorsrequestrequesttypedef) 
 
-### list_channels
+### list\_channels
 
 Lists all Channels created under a single Chime App as a paginated list.
 
-Type annotations for `boto3.client("chime").list_channels` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels)
 
-Boto3 documentation:
-[Chime.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels)
+```python title="Method definition"
+def list_channels(
+    self,
+    *,
+    AppInstanceArn: str,
+    Privacy: ChannelPrivacyType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ChimeBearer: str = ...,
+) -> ListChannelsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
+2. See [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+parent.list_channels(**kwargs)
+```
 
-<a id="list\_channels\_moderated\_by\_app\_instance\_user"></a>
+1. See [:material-code-braces: ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef) 
 
-### list_channels_moderated_by_app_instance_user
+### list\_channels\_moderated\_by\_app\_instance\_user
 
 A list of the channels moderated by an `AppInstanceUser` .
 
-Type annotations for
-`boto3.client("chime").list_channels_moderated_by_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_channels_moderated_by_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user)
 
-Boto3 documentation:
-[Chime.Client.list_channels_moderated_by_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_channels_moderated_by_app_instance_user)
+```python title="Method definition"
+def list_channels_moderated_by_app_instance_user(
+    self,
+    *,
+    AppInstanceUserArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ChimeBearer: str = ...,
+) -> ListChannelsModeratedByAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+}
 
-Returns
-[ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef).
+parent.list_channels_moderated_by_app_instance_user(**kwargs)
+```
 
-<a id="list\_media\_capture\_pipelines"></a>
+1. See [:material-code-braces: ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef) 
 
-### list_media_capture_pipelines
+### list\_media\_capture\_pipelines
 
 Returns a list of media capture pipelines.
 
-Type annotations for `boto3.client("chime").list_media_capture_pipelines`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").list_media_capture_pipelines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_media_capture_pipelines)
 
-Boto3 documentation:
-[Chime.Client.list_media_capture_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_media_capture_pipelines)
+```python title="Method definition"
+def list_media_capture_pipelines(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMediaCapturePipelinesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMediaCapturePipelinesRequestRequestTypeDef](./type_defs.md#listmediacapturepipelinesrequestrequesttypedef).
+1. See [:material-code-braces: ListMediaCapturePipelinesResponseTypeDef](./type_defs.md#listmediacapturepipelinesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMediaCapturePipelinesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListMediaCapturePipelinesResponseTypeDef](./type_defs.md#listmediacapturepipelinesresponsetypedef).
+parent.list_media_capture_pipelines(**kwargs)
+```
 
-<a id="list\_meeting\_tags"></a>
+1. See [:material-code-braces: ListMediaCapturePipelinesRequestRequestTypeDef](./type_defs.md#listmediacapturepipelinesrequestrequesttypedef) 
 
-### list_meeting_tags
+### list\_meeting\_tags
 
 Lists the tags applied to an Amazon Chime SDK meeting resource.
 
-Type annotations for `boto3.client("chime").list_meeting_tags` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_meeting_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meeting_tags)
 
-Boto3 documentation:
-[Chime.Client.list_meeting_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meeting_tags)
+```python title="Method definition"
+def list_meeting_tags(
+    self,
+    *,
+    MeetingId: str,
+) -> ListMeetingTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMeetingTagsRequestRequestTypeDef](./type_defs.md#listmeetingtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListMeetingTagsResponseTypeDef](./type_defs.md#listmeetingtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListMeetingTagsRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+}
 
-Returns
-[ListMeetingTagsResponseTypeDef](./type_defs.md#listmeetingtagsresponsetypedef).
+parent.list_meeting_tags(**kwargs)
+```
 
-<a id="list\_meetings"></a>
+1. See [:material-code-braces: ListMeetingTagsRequestRequestTypeDef](./type_defs.md#listmeetingtagsrequestrequesttypedef) 
 
-### list_meetings
+### list\_meetings
 
 Lists up to 100 active Amazon Chime SDK meetings.
 
-Type annotations for `boto3.client("chime").list_meetings` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_meetings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meetings)
 
-Boto3 documentation:
-[Chime.Client.list_meetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_meetings)
+```python title="Method definition"
+def list_meetings(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMeetingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMeetingsRequestRequestTypeDef](./type_defs.md#listmeetingsrequestrequesttypedef).
+1. See [:material-code-braces: ListMeetingsResponseTypeDef](./type_defs.md#listmeetingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMeetingsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListMeetingsResponseTypeDef](./type_defs.md#listmeetingsresponsetypedef).
+parent.list_meetings(**kwargs)
+```
 
-<a id="list\_phone\_number\_orders"></a>
+1. See [:material-code-braces: ListMeetingsRequestRequestTypeDef](./type_defs.md#listmeetingsrequestrequesttypedef) 
 
-### list_phone_number_orders
+### list\_phone\_number\_orders
 
 Lists the phone number orders for the administrator's Amazon Chime account.
 
-Type annotations for `boto3.client("chime").list_phone_number_orders` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_phone_number_orders` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_number_orders)
 
-Boto3 documentation:
-[Chime.Client.list_phone_number_orders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_number_orders)
+```python title="Method definition"
+def list_phone_number_orders(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPhoneNumberOrdersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPhoneNumberOrdersRequestRequestTypeDef](./type_defs.md#listphonenumberordersrequestrequesttypedef).
+1. See [:material-code-braces: ListPhoneNumberOrdersResponseTypeDef](./type_defs.md#listphonenumberordersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPhoneNumberOrdersRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListPhoneNumberOrdersResponseTypeDef](./type_defs.md#listphonenumberordersresponsetypedef).
+parent.list_phone_number_orders(**kwargs)
+```
 
-<a id="list\_phone\_numbers"></a>
+1. See [:material-code-braces: ListPhoneNumberOrdersRequestRequestTypeDef](./type_defs.md#listphonenumberordersrequestrequesttypedef) 
 
-### list_phone_numbers
+### list\_phone\_numbers
 
 Lists the phone numbers for the specified Amazon Chime account, Amazon Chime
 user, Amazon Chime Voice Connector, or Amazon Chime Voice Connector group.
 
-Type annotations for `boto3.client("chime").list_phone_numbers` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_phone_numbers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_numbers)
 
-Boto3 documentation:
-[Chime.Client.list_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_phone_numbers)
+```python title="Method definition"
+def list_phone_numbers(
+    self,
+    *,
+    Status: PhoneNumberStatusType = ...,  # (1)
+    ProductType: PhoneNumberProductTypeType = ...,  # (2)
+    FilterName: PhoneNumberAssociationNameType = ...,  # (3)
+    FilterValue: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPhoneNumbersResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListPhoneNumbersRequestRequestTypeDef](./type_defs.md#listphonenumbersrequestrequesttypedef).
+1. See [:material-code-brackets: PhoneNumberStatusType](./literals.md#phonenumberstatustype) 
+2. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
+3. See [:material-code-brackets: PhoneNumberAssociationNameType](./literals.md#phonenumberassociationnametype) 
+4. See [:material-code-braces: ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Status`: [PhoneNumberStatusType](./literals.md#phonenumberstatustype)
-- `ProductType`:
-  [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
-- `FilterName`:
-  [PhoneNumberAssociationNameType](./literals.md#phonenumberassociationnametype)
-- `FilterValue`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPhoneNumbersRequestRequestTypeDef = {  # (1)
+    "Status": ...,
+}
 
-Returns
-[ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef).
+parent.list_phone_numbers(**kwargs)
+```
 
-<a id="list\_proxy\_sessions"></a>
+1. See [:material-code-braces: ListPhoneNumbersRequestRequestTypeDef](./type_defs.md#listphonenumbersrequestrequesttypedef) 
 
-### list_proxy_sessions
+### list\_proxy\_sessions
 
 Lists the proxy sessions for the specified Amazon Chime Voice Connector.
 
-Type annotations for `boto3.client("chime").list_proxy_sessions` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_proxy_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_proxy_sessions)
 
-Boto3 documentation:
-[Chime.Client.list_proxy_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_proxy_sessions)
+```python title="Method definition"
+def list_proxy_sessions(
+    self,
+    *,
+    VoiceConnectorId: str,
+    Status: ProxySessionStatusType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListProxySessionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListProxySessionsRequestRequestTypeDef](./type_defs.md#listproxysessionsrequestrequesttypedef).
+1. See [:material-code-brackets: ProxySessionStatusType](./literals.md#proxysessionstatustype) 
+2. See [:material-code-braces: ListProxySessionsResponseTypeDef](./type_defs.md#listproxysessionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `Status`: [ProxySessionStatusType](./literals.md#proxysessionstatustype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProxySessionsRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[ListProxySessionsResponseTypeDef](./type_defs.md#listproxysessionsresponsetypedef).
+parent.list_proxy_sessions(**kwargs)
+```
 
-<a id="list\_room\_memberships"></a>
+1. See [:material-code-braces: ListProxySessionsRequestRequestTypeDef](./type_defs.md#listproxysessionsrequestrequesttypedef) 
 
-### list_room_memberships
+### list\_room\_memberships
 
 Lists the membership details for the specified room in an Amazon Chime
 Enterprise account, such as the members' IDs, email addresses, and names.
 
-Type annotations for `boto3.client("chime").list_room_memberships` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_room_memberships` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_room_memberships)
 
-Boto3 documentation:
-[Chime.Client.list_room_memberships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_room_memberships)
+```python title="Method definition"
+def list_room_memberships(
+    self,
+    *,
+    AccountId: str,
+    RoomId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRoomMembershipsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRoomMembershipsRequestRequestTypeDef](./type_defs.md#listroommembershipsrequestrequesttypedef).
+1. See [:material-code-braces: ListRoomMembershipsResponseTypeDef](./type_defs.md#listroommembershipsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RoomId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRoomMembershipsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RoomId": ...,
+}
 
-Returns
-[ListRoomMembershipsResponseTypeDef](./type_defs.md#listroommembershipsresponsetypedef).
+parent.list_room_memberships(**kwargs)
+```
 
-<a id="list\_rooms"></a>
+1. See [:material-code-braces: ListRoomMembershipsRequestRequestTypeDef](./type_defs.md#listroommembershipsrequestrequesttypedef) 
 
-### list_rooms
+### list\_rooms
 
 Lists the room details for the specified Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").list_rooms` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_rooms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_rooms)
 
-Boto3 documentation:
-[Chime.Client.list_rooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_rooms)
+```python title="Method definition"
+def list_rooms(
+    self,
+    *,
+    AccountId: str,
+    MemberId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRoomsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRoomsRequestRequestTypeDef](./type_defs.md#listroomsrequestrequesttypedef).
+1. See [:material-code-braces: ListRoomsResponseTypeDef](./type_defs.md#listroomsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `MemberId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRoomsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns [ListRoomsResponseTypeDef](./type_defs.md#listroomsresponsetypedef).
+parent.list_rooms(**kwargs)
+```
 
-<a id="list\_sip\_media\_applications"></a>
+1. See [:material-code-braces: ListRoomsRequestRequestTypeDef](./type_defs.md#listroomsrequestrequesttypedef) 
 
-### list_sip_media_applications
+### list\_sip\_media\_applications
 
 Lists the SIP media applications under the administrator's AWS account.
 
-Type annotations for `boto3.client("chime").list_sip_media_applications`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").list_sip_media_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_media_applications)
 
-Boto3 documentation:
-[Chime.Client.list_sip_media_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_media_applications)
+```python title="Method definition"
+def list_sip_media_applications(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSipMediaApplicationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSipMediaApplicationsRequestRequestTypeDef](./type_defs.md#listsipmediaapplicationsrequestrequesttypedef).
+1. See [:material-code-braces: ListSipMediaApplicationsResponseTypeDef](./type_defs.md#listsipmediaapplicationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSipMediaApplicationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListSipMediaApplicationsResponseTypeDef](./type_defs.md#listsipmediaapplicationsresponsetypedef).
+parent.list_sip_media_applications(**kwargs)
+```
 
-<a id="list\_sip\_rules"></a>
+1. See [:material-code-braces: ListSipMediaApplicationsRequestRequestTypeDef](./type_defs.md#listsipmediaapplicationsrequestrequesttypedef) 
 
-### list_sip_rules
+### list\_sip\_rules
 
 Lists the SIP rules under the administrator's AWS account.
 
-Type annotations for `boto3.client("chime").list_sip_rules` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_sip_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_rules)
 
-Boto3 documentation:
-[Chime.Client.list_sip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_sip_rules)
+```python title="Method definition"
+def list_sip_rules(
+    self,
+    *,
+    SipMediaApplicationId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSipRulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSipRulesRequestRequestTypeDef](./type_defs.md#listsiprulesrequestrequesttypedef).
+1. See [:material-code-braces: ListSipRulesResponseTypeDef](./type_defs.md#listsiprulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SipMediaApplicationId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSipRulesRequestRequestTypeDef = {  # (1)
+    "SipMediaApplicationId": ...,
+}
 
-Returns
-[ListSipRulesResponseTypeDef](./type_defs.md#listsiprulesresponsetypedef).
+parent.list_sip_rules(**kwargs)
+```
 
-<a id="list\_supported\_phone\_number\_countries"></a>
+1. See [:material-code-braces: ListSipRulesRequestRequestTypeDef](./type_defs.md#listsiprulesrequestrequesttypedef) 
 
-### list_supported_phone_number_countries
+### list\_supported\_phone\_number\_countries
 
 Lists supported phone number countries.
 
-Type annotations for
-`boto3.client("chime").list_supported_phone_number_countries` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_supported_phone_number_countries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_supported_phone_number_countries)
 
-Boto3 documentation:
-[Chime.Client.list_supported_phone_number_countries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_supported_phone_number_countries)
+```python title="Method definition"
+def list_supported_phone_number_countries(
+    self,
+    *,
+    ProductType: PhoneNumberProductTypeType,  # (1)
+) -> ListSupportedPhoneNumberCountriesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSupportedPhoneNumberCountriesRequestRequestTypeDef](./type_defs.md#listsupportedphonenumbercountriesrequestrequesttypedef).
+1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
+2. See [:material-code-braces: ListSupportedPhoneNumberCountriesResponseTypeDef](./type_defs.md#listsupportedphonenumbercountriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProductType`:
-  [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListSupportedPhoneNumberCountriesRequestRequestTypeDef = {  # (1)
+    "ProductType": ...,
+}
 
-Returns
-[ListSupportedPhoneNumberCountriesResponseTypeDef](./type_defs.md#listsupportedphonenumbercountriesresponsetypedef).
+parent.list_supported_phone_number_countries(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSupportedPhoneNumberCountriesRequestRequestTypeDef](./type_defs.md#listsupportedphonenumbercountriesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags applied to an Amazon Chime SDK meeting resource.
 
-Type annotations for `boto3.client("chime").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Chime.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_users
+### list\_users
 
 Lists the users that belong to the specified Amazon Chime account.
 
-Type annotations for `boto3.client("chime").list_users` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_users)
 
-Boto3 documentation:
-[Chime.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    AccountId: str,
+    UserEmail: str = ...,
+    UserType: UserTypeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListUsersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserEmail`: `str`
-- `UserType`: [UserTypeType](./literals.md#usertypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
 
-<a id="list\_voice\_connector\_groups"></a>
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
-### list_voice_connector_groups
+### list\_voice\_connector\_groups
 
 Lists the Amazon Chime Voice Connector groups for the administrator's AWS
 account.
 
-Type annotations for `boto3.client("chime").list_voice_connector_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").list_voice_connector_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_groups)
 
-Boto3 documentation:
-[Chime.Client.list_voice_connector_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_groups)
+```python title="Method definition"
+def list_voice_connector_groups(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListVoiceConnectorGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVoiceConnectorGroupsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListVoiceConnectorGroupsResponseTypeDef](./type_defs.md#listvoiceconnectorgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListVoiceConnectorGroupsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListVoiceConnectorGroupsResponseTypeDef](./type_defs.md#listvoiceconnectorgroupsresponsetypedef).
+parent.list_voice_connector_groups(**kwargs)
+```
 
-<a id="list\_voice\_connector\_termination\_credentials"></a>
+1. See [:material-code-braces: ListVoiceConnectorGroupsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorgroupsrequestrequesttypedef) 
 
-### list_voice_connector_termination_credentials
+### list\_voice\_connector\_termination\_credentials
 
 Lists the SIP credentials for the specified Amazon Chime Voice Connector.
 
-Type annotations for
-`boto3.client("chime").list_voice_connector_termination_credentials` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_voice_connector_termination_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials)
 
-Boto3 documentation:
-[Chime.Client.list_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connector_termination_credentials)
+```python title="Method definition"
+def list_voice_connector_termination_credentials(
+    self,
+    *,
+    VoiceConnectorId: str,
+) -> ListVoiceConnectorTerminationCredentialsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVoiceConnectorTerminationCredentialsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsrequestrequesttypedef).
+1. See [:material-code-braces: ListVoiceConnectorTerminationCredentialsResponseTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListVoiceConnectorTerminationCredentialsRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-Returns
-[ListVoiceConnectorTerminationCredentialsResponseTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsresponsetypedef).
+parent.list_voice_connector_termination_credentials(**kwargs)
+```
 
-<a id="list\_voice\_connectors"></a>
+1. See [:material-code-braces: ListVoiceConnectorTerminationCredentialsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsrequestrequesttypedef) 
 
-### list_voice_connectors
+### list\_voice\_connectors
 
 Lists the Amazon Chime Voice Connectors for the administrator's AWS account.
 
-Type annotations for `boto3.client("chime").list_voice_connectors` method.
+Type annotations and code completion for `#!python boto3.client("chime").list_voice_connectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connectors)
 
-Boto3 documentation:
-[Chime.Client.list_voice_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.list_voice_connectors)
+```python title="Method definition"
+def list_voice_connectors(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListVoiceConnectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVoiceConnectorsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorsrequestrequesttypedef).
+1. See [:material-code-braces: ListVoiceConnectorsResponseTypeDef](./type_defs.md#listvoiceconnectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListVoiceConnectorsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListVoiceConnectorsResponseTypeDef](./type_defs.md#listvoiceconnectorsresponsetypedef).
+parent.list_voice_connectors(**kwargs)
+```
 
-<a id="logout\_user"></a>
+1. See [:material-code-braces: ListVoiceConnectorsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorsrequestrequesttypedef) 
 
-### logout_user
+### logout\_user
 
 Logs out the specified user from all of the devices they are currently logged
 into.
 
-Type annotations for `boto3.client("chime").logout_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").logout_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.logout_user)
 
-Boto3 documentation:
-[Chime.Client.logout_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.logout_user)
+```python title="Method definition"
+def logout_user(
+    self,
+    *,
+    AccountId: str,
+    UserId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[LogoutUserRequestRequestTypeDef](./type_defs.md#logoutuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: LogoutUserRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.logout_user(**kwargs)
+```
 
-<a id="put\_app\_instance\_retention\_settings"></a>
+1. See [:material-code-braces: LogoutUserRequestRequestTypeDef](./type_defs.md#logoutuserrequestrequesttypedef) 
 
-### put_app_instance_retention_settings
+### put\_app\_instance\_retention\_settings
 
 Sets the amount of time in days that a given `AppInstance` retains data.
 
-Type annotations for
-`boto3.client("chime").put_app_instance_retention_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").put_app_instance_retention_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings)
 
-Boto3 documentation:
-[Chime.Client.put_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_retention_settings)
+```python title="Method definition"
+def put_app_instance_retention_settings(
+    self,
+    *,
+    AppInstanceArn: str,
+    AppInstanceRetentionSettings: AppInstanceRetentionSettingsTypeDef,  # (1)
+) -> PutAppInstanceRetentionSettingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#putappinstanceretentionsettingsrequestrequesttypedef).
+1. See [:material-code-braces: AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef) 
+2. See [:material-code-braces: PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `AppInstanceRetentionSettings`:
-  [AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutAppInstanceRetentionSettingsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "AppInstanceRetentionSettings": ...,
+}
 
-Returns
-[PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef).
+parent.put_app_instance_retention_settings(**kwargs)
+```
 
-<a id="put\_app\_instance\_streaming\_configurations"></a>
+1. See [:material-code-braces: PutAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#putappinstanceretentionsettingsrequestrequesttypedef) 
 
-### put_app_instance_streaming_configurations
+### put\_app\_instance\_streaming\_configurations
 
 The data streaming configurations of an `AppInstance` .
 
-Type annotations for
-`boto3.client("chime").put_app_instance_streaming_configurations` method.
+Type annotations and code completion for `#!python boto3.client("chime").put_app_instance_streaming_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations)
 
-Boto3 documentation:
-[Chime.Client.put_app_instance_streaming_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_app_instance_streaming_configurations)
+```python title="Method definition"
+def put_app_instance_streaming_configurations(
+    self,
+    *,
+    AppInstanceArn: str,
+    AppInstanceStreamingConfigurations: Sequence[AppInstanceStreamingConfigurationTypeDef],  # (1)
+) -> PutAppInstanceStreamingConfigurationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutAppInstanceStreamingConfigurationsRequestRequestTypeDef](./type_defs.md#putappinstancestreamingconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef) 
+2. See [:material-code-braces: PutAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#putappinstancestreamingconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `AppInstanceStreamingConfigurations`:
-  `Sequence`\[[AppInstanceStreamingConfigurationTypeDef](./type_defs.md#appinstancestreamingconfigurationtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutAppInstanceStreamingConfigurationsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "AppInstanceStreamingConfigurations": ...,
+}
 
-Returns
-[PutAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#putappinstancestreamingconfigurationsresponsetypedef).
+parent.put_app_instance_streaming_configurations(**kwargs)
+```
 
-<a id="put\_events\_configuration"></a>
+1. See [:material-code-braces: PutAppInstanceStreamingConfigurationsRequestRequestTypeDef](./type_defs.md#putappinstancestreamingconfigurationsrequestrequesttypedef) 
 
-### put_events_configuration
+### put\_events\_configuration
 
 Creates an events configuration that allows a bot to receive outgoing events
 sent by Amazon Chime.
 
-Type annotations for `boto3.client("chime").put_events_configuration` method.
+Type annotations and code completion for `#!python boto3.client("chime").put_events_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_events_configuration)
 
-Boto3 documentation:
-[Chime.Client.put_events_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_events_configuration)
+```python title="Method definition"
+def put_events_configuration(
+    self,
+    *,
+    AccountId: str,
+    BotId: str,
+    OutboundEventsHTTPSEndpoint: str = ...,
+    LambdaFunctionArn: str = ...,
+) -> PutEventsConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutEventsConfigurationRequestRequestTypeDef](./type_defs.md#puteventsconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: PutEventsConfigurationResponseTypeDef](./type_defs.md#puteventsconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BotId`: `str` *(required)*
-- `OutboundEventsHTTPSEndpoint`: `str`
-- `LambdaFunctionArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutEventsConfigurationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BotId": ...,
+}
 
-Returns
-[PutEventsConfigurationResponseTypeDef](./type_defs.md#puteventsconfigurationresponsetypedef).
+parent.put_events_configuration(**kwargs)
+```
 
-<a id="put\_retention\_settings"></a>
+1. See [:material-code-braces: PutEventsConfigurationRequestRequestTypeDef](./type_defs.md#puteventsconfigurationrequestrequesttypedef) 
 
-### put_retention_settings
+### put\_retention\_settings
 
 Puts retention settings for the specified Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").put_retention_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").put_retention_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_retention_settings)
 
-Boto3 documentation:
-[Chime.Client.put_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_retention_settings)
+```python title="Method definition"
+def put_retention_settings(
+    self,
+    *,
+    AccountId: str,
+    RetentionSettings: RetentionSettingsTypeDef,  # (1)
+) -> PutRetentionSettingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutRetentionSettingsRequestRequestTypeDef](./type_defs.md#putretentionsettingsrequestrequesttypedef).
+1. See [:material-code-braces: RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef) 
+2. See [:material-code-braces: PutRetentionSettingsResponseTypeDef](./type_defs.md#putretentionsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RetentionSettings`:
-  [RetentionSettingsTypeDef](./type_defs.md#retentionsettingstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutRetentionSettingsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RetentionSettings": ...,
+}
 
-Returns
-[PutRetentionSettingsResponseTypeDef](./type_defs.md#putretentionsettingsresponsetypedef).
+parent.put_retention_settings(**kwargs)
+```
 
-<a id="put\_sip\_media\_application\_logging\_configuration"></a>
+1. See [:material-code-braces: PutRetentionSettingsRequestRequestTypeDef](./type_defs.md#putretentionsettingsrequestrequesttypedef) 
 
-### put_sip_media_application_logging_configuration
+### put\_sip\_media\_application\_logging\_configuration
 
 Updates the logging configuration for the specified SIP media application.
 
-Type annotations for
-`boto3.client("chime").put_sip_media_application_logging_configuration` method.
+Type annotations and code completion for `#!python boto3.client("chime").put_sip_media_application_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration)
 
-Boto3 documentation:
-[Chime.Client.put_sip_media_application_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_sip_media_application_logging_configuration)
+```python title="Method definition"
+def put_sip_media_application_logging_configuration(
+    self,
+    *,
+    SipMediaApplicationId: str,
+    SipMediaApplicationLoggingConfiguration: SipMediaApplicationLoggingConfigurationTypeDef = ...,  # (1)
+) -> PutSipMediaApplicationLoggingConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef) 
+2. See [:material-code-braces: PutSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SipMediaApplicationId`: `str` *(required)*
-- `SipMediaApplicationLoggingConfiguration`:
-  [SipMediaApplicationLoggingConfigurationTypeDef](./type_defs.md#sipmediaapplicationloggingconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "SipMediaApplicationId": ...,
+}
 
-Returns
-[PutSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationresponsetypedef).
+parent.put_sip_media_application_logging_configuration(**kwargs)
+```
 
-<a id="put\_voice\_connector\_emergency\_calling\_configuration"></a>
+1. See [:material-code-braces: PutSipMediaApplicationLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationrequestrequesttypedef) 
 
-### put_voice_connector_emergency_calling_configuration
+### put\_voice\_connector\_emergency\_calling\_configuration
 
-Puts emergency calling configuration details to the specified Amazon Chime
-Voice Connector, such as emergency phone numbers and calling countries.
+Puts emergency calling configuration details to the specified Amazon Chime Voice
+Connector, such as emergency phone numbers and calling countries.
 
-Type annotations for
-`boto3.client("chime").put_voice_connector_emergency_calling_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").put_voice_connector_emergency_calling_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration)
 
-Boto3 documentation:
-[Chime.Client.put_voice_connector_emergency_calling_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_emergency_calling_configuration)
+```python title="Method definition"
+def put_voice_connector_emergency_calling_configuration(
+    self,
+    *,
+    VoiceConnectorId: str,
+    EmergencyCallingConfiguration: EmergencyCallingConfigurationTypeDef,  # (1)
+) -> PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef) 
+2. See [:material-code-braces: PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `EmergencyCallingConfiguration`:
-  [EmergencyCallingConfigurationTypeDef](./type_defs.md#emergencycallingconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "EmergencyCallingConfiguration": ...,
+}
 
-Returns
-[PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationresponsetypedef).
+parent.put_voice_connector_emergency_calling_configuration(**kwargs)
+```
 
-<a id="put\_voice\_connector\_logging\_configuration"></a>
+1. See [:material-code-braces: PutVoiceConnectorEmergencyCallingConfigurationRequestRequestTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationrequestrequesttypedef) 
 
-### put_voice_connector_logging_configuration
+### put\_voice\_connector\_logging\_configuration
 
 Adds a logging configuration for the specified Amazon Chime Voice Connector.
 
-Type annotations for
-`boto3.client("chime").put_voice_connector_logging_configuration` method.
+Type annotations and code completion for `#!python boto3.client("chime").put_voice_connector_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration)
 
-Boto3 documentation:
-[Chime.Client.put_voice_connector_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_logging_configuration)
+```python title="Method definition"
+def put_voice_connector_logging_configuration(
+    self,
+    *,
+    VoiceConnectorId: str,
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+) -> PutVoiceConnectorLoggingConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: PutVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "LoggingConfiguration": ...,
+}
 
-Returns
-[PutVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationresponsetypedef).
+parent.put_voice_connector_logging_configuration(**kwargs)
+```
 
-<a id="put\_voice\_connector\_origination"></a>
+1. See [:material-code-braces: PutVoiceConnectorLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationrequestrequesttypedef) 
 
-### put_voice_connector_origination
+### put\_voice\_connector\_origination
 
 Adds origination settings for the specified Amazon Chime Voice Connector.
 
-Type annotations for `boto3.client("chime").put_voice_connector_origination`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").put_voice_connector_origination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_origination)
 
-Boto3 documentation:
-[Chime.Client.put_voice_connector_origination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_origination)
+```python title="Method definition"
+def put_voice_connector_origination(
+    self,
+    *,
+    VoiceConnectorId: str,
+    Origination: OriginationTypeDef,  # (1)
+) -> PutVoiceConnectorOriginationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutVoiceConnectorOriginationRequestRequestTypeDef](./type_defs.md#putvoiceconnectororiginationrequestrequesttypedef).
+1. See [:material-code-braces: OriginationTypeDef](./type_defs.md#originationtypedef) 
+2. See [:material-code-braces: PutVoiceConnectorOriginationResponseTypeDef](./type_defs.md#putvoiceconnectororiginationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `Origination`: [OriginationTypeDef](./type_defs.md#originationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutVoiceConnectorOriginationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "Origination": ...,
+}
 
-Returns
-[PutVoiceConnectorOriginationResponseTypeDef](./type_defs.md#putvoiceconnectororiginationresponsetypedef).
+parent.put_voice_connector_origination(**kwargs)
+```
 
-<a id="put\_voice\_connector\_proxy"></a>
+1. See [:material-code-braces: PutVoiceConnectorOriginationRequestRequestTypeDef](./type_defs.md#putvoiceconnectororiginationrequestrequesttypedef) 
 
-### put_voice_connector_proxy
+### put\_voice\_connector\_proxy
 
 Puts the specified proxy configuration to the specified Amazon Chime Voice
 Connector.
 
-Type annotations for `boto3.client("chime").put_voice_connector_proxy` method.
+Type annotations and code completion for `#!python boto3.client("chime").put_voice_connector_proxy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_proxy)
 
-Boto3 documentation:
-[Chime.Client.put_voice_connector_proxy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_proxy)
+```python title="Method definition"
+def put_voice_connector_proxy(
+    self,
+    *,
+    VoiceConnectorId: str,
+    DefaultSessionExpiryMinutes: int,
+    PhoneNumberPoolCountries: Sequence[str],
+    FallBackPhoneNumber: str = ...,
+    Disabled: bool = ...,
+) -> PutVoiceConnectorProxyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutVoiceConnectorProxyRequestRequestTypeDef](./type_defs.md#putvoiceconnectorproxyrequestrequesttypedef).
+1. See [:material-code-braces: PutVoiceConnectorProxyResponseTypeDef](./type_defs.md#putvoiceconnectorproxyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `DefaultSessionExpiryMinutes`: `int` *(required)*
-- `PhoneNumberPoolCountries`: `Sequence`\[`str`\] *(required)*
-- `FallBackPhoneNumber`: `str`
-- `Disabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutVoiceConnectorProxyRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "DefaultSessionExpiryMinutes": ...,
+    "PhoneNumberPoolCountries": ...,
+}
 
-Returns
-[PutVoiceConnectorProxyResponseTypeDef](./type_defs.md#putvoiceconnectorproxyresponsetypedef).
+parent.put_voice_connector_proxy(**kwargs)
+```
 
-<a id="put\_voice\_connector\_streaming\_configuration"></a>
+1. See [:material-code-braces: PutVoiceConnectorProxyRequestRequestTypeDef](./type_defs.md#putvoiceconnectorproxyrequestrequesttypedef) 
 
-### put_voice_connector_streaming_configuration
+### put\_voice\_connector\_streaming\_configuration
 
 Adds a streaming configuration for the specified Amazon Chime Voice Connector.
 
-Type annotations for
-`boto3.client("chime").put_voice_connector_streaming_configuration` method.
+Type annotations and code completion for `#!python boto3.client("chime").put_voice_connector_streaming_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration)
 
-Boto3 documentation:
-[Chime.Client.put_voice_connector_streaming_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_streaming_configuration)
+```python title="Method definition"
+def put_voice_connector_streaming_configuration(
+    self,
+    *,
+    VoiceConnectorId: str,
+    StreamingConfiguration: StreamingConfigurationTypeDef,  # (1)
+) -> PutVoiceConnectorStreamingConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef) 
+2. See [:material-code-braces: PutVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `StreamingConfiguration`:
-  [StreamingConfigurationTypeDef](./type_defs.md#streamingconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "StreamingConfiguration": ...,
+}
 
-Returns
-[PutVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationresponsetypedef).
+parent.put_voice_connector_streaming_configuration(**kwargs)
+```
 
-<a id="put\_voice\_connector\_termination"></a>
+1. See [:material-code-braces: PutVoiceConnectorStreamingConfigurationRequestRequestTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationrequestrequesttypedef) 
 
-### put_voice_connector_termination
+### put\_voice\_connector\_termination
 
 Adds termination settings for the specified Amazon Chime Voice Connector.
 
-Type annotations for `boto3.client("chime").put_voice_connector_termination`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").put_voice_connector_termination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination)
 
-Boto3 documentation:
-[Chime.Client.put_voice_connector_termination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination)
+```python title="Method definition"
+def put_voice_connector_termination(
+    self,
+    *,
+    VoiceConnectorId: str,
+    Termination: TerminationTypeDef,  # (1)
+) -> PutVoiceConnectorTerminationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutVoiceConnectorTerminationRequestRequestTypeDef](./type_defs.md#putvoiceconnectorterminationrequestrequesttypedef).
+1. See [:material-code-braces: TerminationTypeDef](./type_defs.md#terminationtypedef) 
+2. See [:material-code-braces: PutVoiceConnectorTerminationResponseTypeDef](./type_defs.md#putvoiceconnectorterminationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `Termination`: [TerminationTypeDef](./type_defs.md#terminationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutVoiceConnectorTerminationRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "Termination": ...,
+}
 
-Returns
-[PutVoiceConnectorTerminationResponseTypeDef](./type_defs.md#putvoiceconnectorterminationresponsetypedef).
+parent.put_voice_connector_termination(**kwargs)
+```
 
-<a id="put\_voice\_connector\_termination\_credentials"></a>
+1. See [:material-code-braces: PutVoiceConnectorTerminationRequestRequestTypeDef](./type_defs.md#putvoiceconnectorterminationrequestrequesttypedef) 
 
-### put_voice_connector_termination_credentials
+### put\_voice\_connector\_termination\_credentials
 
-Adds termination SIP credentials for the specified Amazon Chime Voice
-Connector.
+Adds termination SIP credentials for the specified Amazon Chime Voice Connector.
 
-Type annotations for
-`boto3.client("chime").put_voice_connector_termination_credentials` method.
+Type annotations and code completion for `#!python boto3.client("chime").put_voice_connector_termination_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials)
 
-Boto3 documentation:
-[Chime.Client.put_voice_connector_termination_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.put_voice_connector_termination_credentials)
+```python title="Method definition"
+def put_voice_connector_termination_credentials(
+    self,
+    *,
+    VoiceConnectorId: str,
+    Credentials: Sequence[CredentialTypeDef] = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef](./type_defs.md#putvoiceconnectorterminationcredentialsrequestrequesttypedef).
+1. See [:material-code-braces: CredentialTypeDef](./type_defs.md#credentialtypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `Credentials`:
-  `Sequence`\[[CredentialTypeDef](./type_defs.md#credentialtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+}
 
-<a id="redact\_channel\_message"></a>
+parent.put_voice_connector_termination_credentials(**kwargs)
+```
 
-### redact_channel_message
+1. See [:material-code-braces: PutVoiceConnectorTerminationCredentialsRequestRequestTypeDef](./type_defs.md#putvoiceconnectorterminationcredentialsrequestrequesttypedef) 
+
+### redact\_channel\_message
 
 Redacts message content, but not metadata.
 
-Type annotations for `boto3.client("chime").redact_channel_message` method.
+Type annotations and code completion for `#!python boto3.client("chime").redact_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_channel_message)
 
-Boto3 documentation:
-[Chime.Client.redact_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_channel_message)
+```python title="Method definition"
+def redact_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str = ...,
+) -> RedactChannelMessageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RedactChannelMessageRequestRequestTypeDef](./type_defs.md#redactchannelmessagerequestrequesttypedef).
+1. See [:material-code-braces: RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MessageId`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: RedactChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MessageId": ...,
+}
 
-Returns
-[RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef).
+parent.redact_channel_message(**kwargs)
+```
 
-<a id="redact\_conversation\_message"></a>
+1. See [:material-code-braces: RedactChannelMessageRequestRequestTypeDef](./type_defs.md#redactchannelmessagerequestrequesttypedef) 
 
-### redact_conversation_message
+### redact\_conversation\_message
 
 Redacts the specified message from the specified Amazon Chime conversation.
 
-Type annotations for `boto3.client("chime").redact_conversation_message`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").redact_conversation_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_conversation_message)
 
-Boto3 documentation:
-[Chime.Client.redact_conversation_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_conversation_message)
+```python title="Method definition"
+def redact_conversation_message(
+    self,
+    *,
+    AccountId: str,
+    ConversationId: str,
+    MessageId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RedactConversationMessageRequestRequestTypeDef](./type_defs.md#redactconversationmessagerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `ConversationId`: `str` *(required)*
-- `MessageId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RedactConversationMessageRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "ConversationId": ...,
+    "MessageId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.redact_conversation_message(**kwargs)
+```
 
-<a id="redact\_room\_message"></a>
+1. See [:material-code-braces: RedactConversationMessageRequestRequestTypeDef](./type_defs.md#redactconversationmessagerequestrequesttypedef) 
 
-### redact_room_message
+### redact\_room\_message
 
 Redacts the specified message from the specified Amazon Chime channel.
 
-Type annotations for `boto3.client("chime").redact_room_message` method.
+Type annotations and code completion for `#!python boto3.client("chime").redact_room_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_room_message)
 
-Boto3 documentation:
-[Chime.Client.redact_room_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.redact_room_message)
+```python title="Method definition"
+def redact_room_message(
+    self,
+    *,
+    AccountId: str,
+    RoomId: str,
+    MessageId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RedactRoomMessageRequestRequestTypeDef](./type_defs.md#redactroommessagerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RoomId`: `str` *(required)*
-- `MessageId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RedactRoomMessageRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RoomId": ...,
+    "MessageId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.redact_room_message(**kwargs)
+```
 
-<a id="regenerate\_security\_token"></a>
+1. See [:material-code-braces: RedactRoomMessageRequestRequestTypeDef](./type_defs.md#redactroommessagerequestrequesttypedef) 
 
-### regenerate_security_token
+### regenerate\_security\_token
 
 Regenerates the security token for a bot.
 
-Type annotations for `boto3.client("chime").regenerate_security_token` method.
+Type annotations and code completion for `#!python boto3.client("chime").regenerate_security_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.regenerate_security_token)
 
-Boto3 documentation:
-[Chime.Client.regenerate_security_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.regenerate_security_token)
+```python title="Method definition"
+def regenerate_security_token(
+    self,
+    *,
+    AccountId: str,
+    BotId: str,
+) -> RegenerateSecurityTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegenerateSecurityTokenRequestRequestTypeDef](./type_defs.md#regeneratesecuritytokenrequestrequesttypedef).
+1. See [:material-code-braces: RegenerateSecurityTokenResponseTypeDef](./type_defs.md#regeneratesecuritytokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BotId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegenerateSecurityTokenRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BotId": ...,
+}
 
-Returns
-[RegenerateSecurityTokenResponseTypeDef](./type_defs.md#regeneratesecuritytokenresponsetypedef).
+parent.regenerate_security_token(**kwargs)
+```
 
-<a id="reset\_personal\_pin"></a>
+1. See [:material-code-braces: RegenerateSecurityTokenRequestRequestTypeDef](./type_defs.md#regeneratesecuritytokenrequestrequesttypedef) 
 
-### reset_personal_pin
+### reset\_personal\_pin
 
 Resets the personal meeting PIN for the specified user on an Amazon Chime
 account.
 
-Type annotations for `boto3.client("chime").reset_personal_pin` method.
+Type annotations and code completion for `#!python boto3.client("chime").reset_personal_pin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.reset_personal_pin)
 
-Boto3 documentation:
-[Chime.Client.reset_personal_pin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.reset_personal_pin)
+```python title="Method definition"
+def reset_personal_pin(
+    self,
+    *,
+    AccountId: str,
+    UserId: str,
+) -> ResetPersonalPINResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResetPersonalPINRequestRequestTypeDef](./type_defs.md#resetpersonalpinrequestrequesttypedef).
+1. See [:material-code-braces: ResetPersonalPINResponseTypeDef](./type_defs.md#resetpersonalpinresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResetPersonalPINRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserId": ...,
+}
 
-Returns
-[ResetPersonalPINResponseTypeDef](./type_defs.md#resetpersonalpinresponsetypedef).
+parent.reset_personal_pin(**kwargs)
+```
 
-<a id="restore\_phone\_number"></a>
+1. See [:material-code-braces: ResetPersonalPINRequestRequestTypeDef](./type_defs.md#resetpersonalpinrequestrequesttypedef) 
 
-### restore_phone_number
+### restore\_phone\_number
 
 Moves a phone number from the **Deletion queue** back into the phone number
 **Inventory** .
 
-Type annotations for `boto3.client("chime").restore_phone_number` method.
+Type annotations and code completion for `#!python boto3.client("chime").restore_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.restore_phone_number)
 
-Boto3 documentation:
-[Chime.Client.restore_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.restore_phone_number)
+```python title="Method definition"
+def restore_phone_number(
+    self,
+    *,
+    PhoneNumberId: str,
+) -> RestorePhoneNumberResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RestorePhoneNumberRequestRequestTypeDef](./type_defs.md#restorephonenumberrequestrequesttypedef).
+1. See [:material-code-braces: RestorePhoneNumberResponseTypeDef](./type_defs.md#restorephonenumberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PhoneNumberId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RestorePhoneNumberRequestRequestTypeDef = {  # (1)
+    "PhoneNumberId": ...,
+}
 
-Returns
-[RestorePhoneNumberResponseTypeDef](./type_defs.md#restorephonenumberresponsetypedef).
+parent.restore_phone_number(**kwargs)
+```
 
-<a id="search\_available\_phone\_numbers"></a>
+1. See [:material-code-braces: RestorePhoneNumberRequestRequestTypeDef](./type_defs.md#restorephonenumberrequestrequesttypedef) 
 
-### search_available_phone_numbers
+### search\_available\_phone\_numbers
 
 Searches for phone numbers that can be ordered.
 
-Type annotations for `boto3.client("chime").search_available_phone_numbers`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").search_available_phone_numbers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.search_available_phone_numbers)
 
-Boto3 documentation:
-[Chime.Client.search_available_phone_numbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.search_available_phone_numbers)
+```python title="Method definition"
+def search_available_phone_numbers(
+    self,
+    *,
+    AreaCode: str = ...,
+    City: str = ...,
+    Country: str = ...,
+    State: str = ...,
+    TollFreePrefix: str = ...,
+    PhoneNumberType: PhoneNumberTypeType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> SearchAvailablePhoneNumbersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchAvailablePhoneNumbersRequestRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequestrequesttypedef).
+1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+2. See [:material-code-braces: SearchAvailablePhoneNumbersResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AreaCode`: `str`
-- `City`: `str`
-- `Country`: `str`
-- `State`: `str`
-- `TollFreePrefix`: `str`
-- `PhoneNumberType`: [PhoneNumberTypeType](./literals.md#phonenumbertypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchAvailablePhoneNumbersRequestRequestTypeDef = {  # (1)
+    "AreaCode": ...,
+}
 
-Returns
-[SearchAvailablePhoneNumbersResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponsetypedef).
+parent.search_available_phone_numbers(**kwargs)
+```
 
-<a id="send\_channel\_message"></a>
+1. See [:material-code-braces: SearchAvailablePhoneNumbersRequestRequestTypeDef](./type_defs.md#searchavailablephonenumbersrequestrequesttypedef) 
 
-### send_channel_message
+### send\_channel\_message
 
 Sends a message to a particular channel that the member is a part of.
 
-Type annotations for `boto3.client("chime").send_channel_message` method.
+Type annotations and code completion for `#!python boto3.client("chime").send_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.send_channel_message)
 
-Boto3 documentation:
-[Chime.Client.send_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.send_channel_message)
+```python title="Method definition"
+def send_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    Content: str,
+    Type: ChannelMessageTypeType,  # (1)
+    Persistence: ChannelMessagePersistenceTypeType,  # (2)
+    ClientRequestToken: str,
+    Metadata: str = ...,
+    ChimeBearer: str = ...,
+) -> SendChannelMessageResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SendChannelMessageRequestRequestTypeDef](./type_defs.md#sendchannelmessagerequestrequesttypedef).
+1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
+2. See [:material-code-brackets: ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype) 
+3. See [:material-code-braces: SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `Content`: `str` *(required)*
-- `Type`: [ChannelMessageTypeType](./literals.md#channelmessagetypetype)
-  *(required)*
-- `Persistence`:
-  [ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype)
-  *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Metadata`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: SendChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "Content": ...,
+    "Type": ...,
+    "Persistence": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).
+parent.send_channel_message(**kwargs)
+```
 
-<a id="start\_meeting\_transcription"></a>
+1. See [:material-code-braces: SendChannelMessageRequestRequestTypeDef](./type_defs.md#sendchannelmessagerequestrequesttypedef) 
 
-### start_meeting_transcription
+### start\_meeting\_transcription
 
 Starts transcription for the specified `meetingId` .
 
-Type annotations for `boto3.client("chime").start_meeting_transcription`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").start_meeting_transcription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.start_meeting_transcription)
 
-Boto3 documentation:
-[Chime.Client.start_meeting_transcription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.start_meeting_transcription)
+```python title="Method definition"
+def start_meeting_transcription(
+    self,
+    *,
+    MeetingId: str,
+    TranscriptionConfiguration: TranscriptionConfigurationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#startmeetingtranscriptionrequestrequesttypedef).
+1. See [:material-code-braces: TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `TranscriptionConfiguration`:
-  [TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartMeetingTranscriptionRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "TranscriptionConfiguration": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_meeting_transcription(**kwargs)
+```
 
-<a id="stop\_meeting\_transcription"></a>
+1. See [:material-code-braces: StartMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#startmeetingtranscriptionrequestrequesttypedef) 
 
-### stop_meeting_transcription
+### stop\_meeting\_transcription
 
 Stops transcription for the specified `meetingId` .
 
-Type annotations for `boto3.client("chime").stop_meeting_transcription` method.
+Type annotations and code completion for `#!python boto3.client("chime").stop_meeting_transcription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.stop_meeting_transcription)
 
-Boto3 documentation:
-[Chime.Client.stop_meeting_transcription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.stop_meeting_transcription)
+```python title="Method definition"
+def stop_meeting_transcription(
+    self,
+    *,
+    MeetingId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#stopmeetingtranscriptionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopMeetingTranscriptionRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_meeting_transcription(**kwargs)
+```
 
-<a id="tag\_attendee"></a>
+1. See [:material-code-braces: StopMeetingTranscriptionRequestRequestTypeDef](./type_defs.md#stopmeetingtranscriptionrequestrequesttypedef) 
 
-### tag_attendee
+### tag\_attendee
 
 Applies the specified tags to the specified Amazon Chime SDK attendee.
 
-Type annotations for `boto3.client("chime").tag_attendee` method.
+Type annotations and code completion for `#!python boto3.client("chime").tag_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_attendee)
 
-Boto3 documentation:
-[Chime.Client.tag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_attendee)
+```python title="Method definition"
+def tag_attendee(
+    self,
+    *,
+    MeetingId: str,
+    AttendeeId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagAttendeeRequestRequestTypeDef](./type_defs.md#tagattendeerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `AttendeeId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "AttendeeId": ...,
+    "Tags": ...,
+}
 
-<a id="tag\_meeting"></a>
+parent.tag_attendee(**kwargs)
+```
 
-### tag_meeting
+1. See [:material-code-braces: TagAttendeeRequestRequestTypeDef](./type_defs.md#tagattendeerequestrequesttypedef) 
+
+### tag\_meeting
 
 Applies the specified tags to the specified Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime").tag_meeting` method.
+Type annotations and code completion for `#!python boto3.client("chime").tag_meeting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_meeting)
 
-Boto3 documentation:
-[Chime.Client.tag_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_meeting)
+```python title="Method definition"
+def tag_meeting(
+    self,
+    *,
+    MeetingId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagMeetingRequestRequestTypeDef](./type_defs.md#tagmeetingrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagMeetingRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "Tags": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.tag_meeting(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: TagMeetingRequestRequestTypeDef](./type_defs.md#tagmeetingrequestrequesttypedef) 
+
+### tag\_resource
 
 Applies the specified tags to the specified Amazon Chime SDK meeting resource.
 
-Type annotations for `boto3.client("chime").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("chime").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_resource)
 
-Boto3 documentation:
-[Chime.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_attendee"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_attendee
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_attendee
 
 Untags the specified tags from the specified Amazon Chime SDK attendee.
 
-Type annotations for `boto3.client("chime").untag_attendee` method.
+Type annotations and code completion for `#!python boto3.client("chime").untag_attendee` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_attendee)
 
-Boto3 documentation:
-[Chime.Client.untag_attendee](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_attendee)
+```python title="Method definition"
+def untag_attendee(
+    self,
+    *,
+    MeetingId: str,
+    AttendeeId: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagAttendeeRequestRequestTypeDef](./type_defs.md#untagattendeerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `AttendeeId`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagAttendeeRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "AttendeeId": ...,
+    "TagKeys": ...,
+}
 
-<a id="untag\_meeting"></a>
+parent.untag_attendee(**kwargs)
+```
 
-### untag_meeting
+1. See [:material-code-braces: UntagAttendeeRequestRequestTypeDef](./type_defs.md#untagattendeerequestrequesttypedef) 
+
+### untag\_meeting
 
 Untags the specified tags from the specified Amazon Chime SDK meeting.
 
-Type annotations for `boto3.client("chime").untag_meeting` method.
+Type annotations and code completion for `#!python boto3.client("chime").untag_meeting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_meeting)
 
-Boto3 documentation:
-[Chime.Client.untag_meeting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_meeting)
+```python title="Method definition"
+def untag_meeting(
+    self,
+    *,
+    MeetingId: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagMeetingRequestRequestTypeDef](./type_defs.md#untagmeetingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MeetingId`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagMeetingRequestRequestTypeDef = {  # (1)
+    "MeetingId": ...,
+    "TagKeys": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.untag_meeting(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: UntagMeetingRequestRequestTypeDef](./type_defs.md#untagmeetingrequestrequesttypedef) 
+
+### untag\_resource
 
 Untags the specified tags from the specified Amazon Chime SDK meeting resource.
 
-Type annotations for `boto3.client("chime").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("chime").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_resource)
 
-Boto3 documentation:
-[Chime.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_account"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_account
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_account
 
 Updates account details for the specified Amazon Chime account.
 
-Type annotations for `boto3.client("chime").update_account` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account)
 
-Boto3 documentation:
-[Chime.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account)
+```python title="Method definition"
+def update_account(
+    self,
+    *,
+    AccountId: str,
+    Name: str = ...,
+    DefaultLicense: LicenseType = ...,  # (1)
+) -> UpdateAccountResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccountRequestRequestTypeDef](./type_defs.md#updateaccountrequestrequesttypedef).
+1. See [:material-code-brackets: LicenseType](./literals.md#licensetype) 
+2. See [:material-code-braces: UpdateAccountResponseTypeDef](./type_defs.md#updateaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str`
-- `DefaultLicense`: [LicenseType](./literals.md#licensetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateAccountRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[UpdateAccountResponseTypeDef](./type_defs.md#updateaccountresponsetypedef).
+parent.update_account(**kwargs)
+```
 
-<a id="update\_account\_settings"></a>
+1. See [:material-code-braces: UpdateAccountRequestRequestTypeDef](./type_defs.md#updateaccountrequestrequesttypedef) 
 
-### update_account_settings
+### update\_account\_settings
 
 Updates the settings for the specified Amazon Chime account.
 
-Type annotations for `boto3.client("chime").update_account_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account_settings)
 
-Boto3 documentation:
-[Chime.Client.update_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_account_settings)
+```python title="Method definition"
+def update_account_settings(
+    self,
+    *,
+    AccountId: str,
+    AccountSettings: AccountSettingsTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccountSettingsRequestRequestTypeDef](./type_defs.md#updateaccountsettingsrequestrequesttypedef).
+1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `AccountSettings`:
-  [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAccountSettingsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "AccountSettings": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_account_settings(**kwargs)
+```
 
-<a id="update\_app\_instance"></a>
+1. See [:material-code-braces: UpdateAccountSettingsRequestRequestTypeDef](./type_defs.md#updateaccountsettingsrequestrequesttypedef) 
 
-### update_app_instance
+### update\_app\_instance
 
 Updates `AppInstance` metadata.
 
-Type annotations for `boto3.client("chime").update_app_instance` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_app_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance)
 
-Boto3 documentation:
-[Chime.Client.update_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance)
+```python title="Method definition"
+def update_app_instance(
+    self,
+    *,
+    AppInstanceArn: str,
+    Name: str,
+    Metadata: str = ...,
+) -> UpdateAppInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAppInstanceRequestRequestTypeDef](./type_defs.md#updateappinstancerequestrequesttypedef).
+1. See [:material-code-braces: UpdateAppInstanceResponseTypeDef](./type_defs.md#updateappinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Metadata`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAppInstanceRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateAppInstanceResponseTypeDef](./type_defs.md#updateappinstanceresponsetypedef).
+parent.update_app_instance(**kwargs)
+```
 
-<a id="update\_app\_instance\_user"></a>
+1. See [:material-code-braces: UpdateAppInstanceRequestRequestTypeDef](./type_defs.md#updateappinstancerequestrequesttypedef) 
 
-### update_app_instance_user
+### update\_app\_instance\_user
 
 Updates the details of an `AppInstanceUser`.
 
-Type annotations for `boto3.client("chime").update_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance_user)
 
-Boto3 documentation:
-[Chime.Client.update_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_app_instance_user)
+```python title="Method definition"
+def update_app_instance_user(
+    self,
+    *,
+    AppInstanceUserArn: str,
+    Name: str,
+    Metadata: str = ...,
+) -> UpdateAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAppInstanceUserRequestRequestTypeDef](./type_defs.md#updateappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Metadata`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef).
+parent.update_app_instance_user(**kwargs)
+```
 
-<a id="update\_bot"></a>
+1. See [:material-code-braces: UpdateAppInstanceUserRequestRequestTypeDef](./type_defs.md#updateappinstanceuserrequestrequesttypedef) 
 
-### update_bot
+### update\_bot
 
 Updates the status of the specified bot, such as starting or stopping the bot
 from running in your Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").update_bot` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_bot)
 
-Boto3 documentation:
-[Chime.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_bot)
+```python title="Method definition"
+def update_bot(
+    self,
+    *,
+    AccountId: str,
+    BotId: str,
+    Disabled: bool = ...,
+) -> UpdateBotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBotRequestRequestTypeDef](./type_defs.md#updatebotrequestrequesttypedef).
+1. See [:material-code-braces: UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `BotId`: `str` *(required)*
-- `Disabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateBotRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "BotId": ...,
+}
 
-Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
+parent.update_bot(**kwargs)
+```
 
-<a id="update\_channel"></a>
+1. See [:material-code-braces: UpdateBotRequestRequestTypeDef](./type_defs.md#updatebotrequestrequesttypedef) 
 
-### update_channel
+### update\_channel
 
 Update a channel's attributes.
 
-Type annotations for `boto3.client("chime").update_channel` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel)
 
-Boto3 documentation:
-[Chime.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel)
+```python title="Method definition"
+def update_channel(
+    self,
+    *,
+    ChannelArn: str,
+    Name: str,
+    Mode: ChannelModeType,  # (1)
+    Metadata: str = ...,
+    ChimeBearer: str = ...,
+) -> UpdateChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-braces: UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Mode`: [ChannelModeType](./literals.md#channelmodetype) *(required)*
-- `Metadata`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "Name": ...,
+    "Mode": ...,
+}
 
-Returns
-[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+parent.update_channel(**kwargs)
+```
 
-<a id="update\_channel\_message"></a>
+1. See [:material-code-braces: UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef) 
 
-### update_channel_message
+### update\_channel\_message
 
 Updates the content of a message.
 
-Type annotations for `boto3.client("chime").update_channel_message` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_channel_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_message)
 
-Boto3 documentation:
-[Chime.Client.update_channel_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_message)
+```python title="Method definition"
+def update_channel_message(
+    self,
+    *,
+    ChannelArn: str,
+    MessageId: str,
+    Content: str = ...,
+    Metadata: str = ...,
+    ChimeBearer: str = ...,
+) -> UpdateChannelMessageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelMessageRequestRequestTypeDef](./type_defs.md#updatechannelmessagerequestrequesttypedef).
+1. See [:material-code-braces: UpdateChannelMessageResponseTypeDef](./type_defs.md#updatechannelmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `MessageId`: `str` *(required)*
-- `Content`: `str`
-- `Metadata`: `str`
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelMessageRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+    "MessageId": ...,
+}
 
-Returns
-[UpdateChannelMessageResponseTypeDef](./type_defs.md#updatechannelmessageresponsetypedef).
+parent.update_channel_message(**kwargs)
+```
 
-<a id="update\_channel\_read\_marker"></a>
+1. See [:material-code-braces: UpdateChannelMessageRequestRequestTypeDef](./type_defs.md#updatechannelmessagerequestrequesttypedef) 
 
-### update_channel_read_marker
+### update\_channel\_read\_marker
 
 The details of the time when a user last read messages in a channel.
 
-Type annotations for `boto3.client("chime").update_channel_read_marker` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_channel_read_marker` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_read_marker)
 
-Boto3 documentation:
-[Chime.Client.update_channel_read_marker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_channel_read_marker)
+```python title="Method definition"
+def update_channel_read_marker(
+    self,
+    *,
+    ChannelArn: str,
+    ChimeBearer: str = ...,
+) -> UpdateChannelReadMarkerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelReadMarkerRequestRequestTypeDef](./type_defs.md#updatechannelreadmarkerrequestrequesttypedef).
+1. See [:material-code-braces: UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelArn`: `str` *(required)*
-- `ChimeBearer`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelReadMarkerRequestRequestTypeDef = {  # (1)
+    "ChannelArn": ...,
+}
 
-Returns
-[UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef).
+parent.update_channel_read_marker(**kwargs)
+```
 
-<a id="update\_global\_settings"></a>
+1. See [:material-code-braces: UpdateChannelReadMarkerRequestRequestTypeDef](./type_defs.md#updatechannelreadmarkerrequestrequesttypedef) 
 
-### update_global_settings
+### update\_global\_settings
 
 Updates global settings for the administrator's AWS account, such as Amazon
 Chime Business Calling and Amazon Chime Voice Connector settings.
 
-Type annotations for `boto3.client("chime").update_global_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_global_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_global_settings)
 
-Boto3 documentation:
-[Chime.Client.update_global_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_global_settings)
+```python title="Method definition"
+def update_global_settings(
+    self,
+    *,
+    BusinessCalling: BusinessCallingSettingsTypeDef = ...,  # (1)
+    VoiceConnector: VoiceConnectorSettingsTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateGlobalSettingsRequestRequestTypeDef](./type_defs.md#updateglobalsettingsrequestrequesttypedef).
+1. See [:material-code-braces: BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef) 
+2. See [:material-code-braces: VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef) 
 
-Keyword-only arguments:
 
-- `BusinessCalling`:
-  [BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef)
-- `VoiceConnector`:
-  [VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateGlobalSettingsRequestRequestTypeDef = {  # (1)
+    "BusinessCalling": ...,
+}
 
-<a id="update\_phone\_number"></a>
+parent.update_global_settings(**kwargs)
+```
 
-### update_phone_number
+1. See [:material-code-braces: UpdateGlobalSettingsRequestRequestTypeDef](./type_defs.md#updateglobalsettingsrequestrequesttypedef) 
+
+### update\_phone\_number
 
 Updates phone number details, such as product type or calling name, for the
 specified phone number ID.
 
-Type annotations for `boto3.client("chime").update_phone_number` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_phone_number` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number)
 
-Boto3 documentation:
-[Chime.Client.update_phone_number](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number)
+```python title="Method definition"
+def update_phone_number(
+    self,
+    *,
+    PhoneNumberId: str,
+    ProductType: PhoneNumberProductTypeType = ...,  # (1)
+    CallingName: str = ...,
+) -> UpdatePhoneNumberResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePhoneNumberRequestRequestTypeDef](./type_defs.md#updatephonenumberrequestrequesttypedef).
+1. See [:material-code-brackets: PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype) 
+2. See [:material-code-braces: UpdatePhoneNumberResponseTypeDef](./type_defs.md#updatephonenumberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PhoneNumberId`: `str` *(required)*
-- `ProductType`:
-  [PhoneNumberProductTypeType](./literals.md#phonenumberproducttypetype)
-- `CallingName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePhoneNumberRequestRequestTypeDef = {  # (1)
+    "PhoneNumberId": ...,
+}
 
-Returns
-[UpdatePhoneNumberResponseTypeDef](./type_defs.md#updatephonenumberresponsetypedef).
+parent.update_phone_number(**kwargs)
+```
 
-<a id="update\_phone\_number\_settings"></a>
+1. See [:material-code-braces: UpdatePhoneNumberRequestRequestTypeDef](./type_defs.md#updatephonenumberrequestrequesttypedef) 
 
-### update_phone_number_settings
+### update\_phone\_number\_settings
 
 Updates the phone number settings for the administrator's AWS account, such as
 the default outbound calling name.
 
-Type annotations for `boto3.client("chime").update_phone_number_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").update_phone_number_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number_settings)
 
-Boto3 documentation:
-[Chime.Client.update_phone_number_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_phone_number_settings)
+```python title="Method definition"
+def update_phone_number_settings(
+    self,
+    *,
+    CallingName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdatePhoneNumberSettingsRequestRequestTypeDef](./type_defs.md#updatephonenumbersettingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CallingName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdatePhoneNumberSettingsRequestRequestTypeDef = {  # (1)
+    "CallingName": ...,
+}
 
-<a id="update\_proxy\_session"></a>
+parent.update_phone_number_settings(**kwargs)
+```
 
-### update_proxy_session
+1. See [:material-code-braces: UpdatePhoneNumberSettingsRequestRequestTypeDef](./type_defs.md#updatephonenumbersettingsrequestrequesttypedef) 
+
+### update\_proxy\_session
 
 Updates the specified proxy session details, such as voice or SMS capabilities.
 
-Type annotations for `boto3.client("chime").update_proxy_session` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_proxy_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_proxy_session)
 
-Boto3 documentation:
-[Chime.Client.update_proxy_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_proxy_session)
+```python title="Method definition"
+def update_proxy_session(
+    self,
+    *,
+    VoiceConnectorId: str,
+    ProxySessionId: str,
+    Capabilities: Sequence[CapabilityType],  # (1)
+    ExpiryMinutes: int = ...,
+) -> UpdateProxySessionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProxySessionRequestRequestTypeDef](./type_defs.md#updateproxysessionrequestrequesttypedef).
+1. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+2. See [:material-code-braces: UpdateProxySessionResponseTypeDef](./type_defs.md#updateproxysessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `ProxySessionId`: `str` *(required)*
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-  *(required)*
-- `ExpiryMinutes`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateProxySessionRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "ProxySessionId": ...,
+    "Capabilities": ...,
+}
 
-Returns
-[UpdateProxySessionResponseTypeDef](./type_defs.md#updateproxysessionresponsetypedef).
+parent.update_proxy_session(**kwargs)
+```
 
-<a id="update\_room"></a>
+1. See [:material-code-braces: UpdateProxySessionRequestRequestTypeDef](./type_defs.md#updateproxysessionrequestrequesttypedef) 
 
-### update_room
+### update\_room
 
 Updates room details, such as the room name, for a room in an Amazon Chime
 Enterprise account.
 
-Type annotations for `boto3.client("chime").update_room` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room)
 
-Boto3 documentation:
-[Chime.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room)
+```python title="Method definition"
+def update_room(
+    self,
+    *,
+    AccountId: str,
+    RoomId: str,
+    Name: str = ...,
+) -> UpdateRoomResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoomRequestRequestTypeDef](./type_defs.md#updateroomrequestrequesttypedef).
+1. See [:material-code-braces: UpdateRoomResponseTypeDef](./type_defs.md#updateroomresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RoomId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateRoomRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RoomId": ...,
+}
 
-Returns [UpdateRoomResponseTypeDef](./type_defs.md#updateroomresponsetypedef).
+parent.update_room(**kwargs)
+```
 
-<a id="update\_room\_membership"></a>
+1. See [:material-code-braces: UpdateRoomRequestRequestTypeDef](./type_defs.md#updateroomrequestrequesttypedef) 
 
-### update_room_membership
+### update\_room\_membership
 
 Updates room membership details, such as the member role, for a room in an
 Amazon Chime Enterprise account.
 
-Type annotations for `boto3.client("chime").update_room_membership` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_room_membership` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room_membership)
 
-Boto3 documentation:
-[Chime.Client.update_room_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_room_membership)
+```python title="Method definition"
+def update_room_membership(
+    self,
+    *,
+    AccountId: str,
+    RoomId: str,
+    MemberId: str,
+    Role: RoomMembershipRoleType = ...,  # (1)
+) -> UpdateRoomMembershipResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoomMembershipRequestRequestTypeDef](./type_defs.md#updateroommembershiprequestrequesttypedef).
+1. See [:material-code-brackets: RoomMembershipRoleType](./literals.md#roommembershiproletype) 
+2. See [:material-code-braces: UpdateRoomMembershipResponseTypeDef](./type_defs.md#updateroommembershipresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RoomId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
-- `Role`: [RoomMembershipRoleType](./literals.md#roommembershiproletype)
+```python title="Usage example with kwargs"
+kwargs: UpdateRoomMembershipRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RoomId": ...,
+    "MemberId": ...,
+}
 
-Returns
-[UpdateRoomMembershipResponseTypeDef](./type_defs.md#updateroommembershipresponsetypedef).
+parent.update_room_membership(**kwargs)
+```
 
-<a id="update\_sip\_media\_application"></a>
+1. See [:material-code-braces: UpdateRoomMembershipRequestRequestTypeDef](./type_defs.md#updateroommembershiprequestrequesttypedef) 
 
-### update_sip_media_application
+### update\_sip\_media\_application
 
 Updates the details of the specified SIP media application.
 
-Type annotations for `boto3.client("chime").update_sip_media_application`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").update_sip_media_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application)
 
-Boto3 documentation:
-[Chime.Client.update_sip_media_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application)
+```python title="Method definition"
+def update_sip_media_application(
+    self,
+    *,
+    SipMediaApplicationId: str,
+    Name: str = ...,
+    Endpoints: Sequence[SipMediaApplicationEndpointTypeDef] = ...,  # (1)
+) -> UpdateSipMediaApplicationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSipMediaApplicationRequestRequestTypeDef](./type_defs.md#updatesipmediaapplicationrequestrequesttypedef).
+1. See [:material-code-braces: SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef) 
+2. See [:material-code-braces: UpdateSipMediaApplicationResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SipMediaApplicationId`: `str` *(required)*
-- `Name`: `str`
-- `Endpoints`:
-  `Sequence`\[[SipMediaApplicationEndpointTypeDef](./type_defs.md#sipmediaapplicationendpointtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateSipMediaApplicationRequestRequestTypeDef = {  # (1)
+    "SipMediaApplicationId": ...,
+}
 
-Returns
-[UpdateSipMediaApplicationResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponsetypedef).
+parent.update_sip_media_application(**kwargs)
+```
 
-<a id="update\_sip\_media\_application\_call"></a>
+1. See [:material-code-braces: UpdateSipMediaApplicationRequestRequestTypeDef](./type_defs.md#updatesipmediaapplicationrequestrequesttypedef) 
 
-### update_sip_media_application_call
+### update\_sip\_media\_application\_call
 
 Invokes the AWS Lambda function associated with the SIP media application and
 transaction ID in an update request.
 
-Type annotations for `boto3.client("chime").update_sip_media_application_call`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").update_sip_media_application_call` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application_call)
 
-Boto3 documentation:
-[Chime.Client.update_sip_media_application_call](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_media_application_call)
+```python title="Method definition"
+def update_sip_media_application_call(
+    self,
+    *,
+    SipMediaApplicationId: str,
+    TransactionId: str,
+    Arguments: Mapping[str, str],
+) -> UpdateSipMediaApplicationCallResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSipMediaApplicationCallRequestRequestTypeDef](./type_defs.md#updatesipmediaapplicationcallrequestrequesttypedef).
+1. See [:material-code-braces: UpdateSipMediaApplicationCallResponseTypeDef](./type_defs.md#updatesipmediaapplicationcallresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SipMediaApplicationId`: `str` *(required)*
-- `TransactionId`: `str` *(required)*
-- `Arguments`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSipMediaApplicationCallRequestRequestTypeDef = {  # (1)
+    "SipMediaApplicationId": ...,
+    "TransactionId": ...,
+    "Arguments": ...,
+}
 
-Returns
-[UpdateSipMediaApplicationCallResponseTypeDef](./type_defs.md#updatesipmediaapplicationcallresponsetypedef).
+parent.update_sip_media_application_call(**kwargs)
+```
 
-<a id="update\_sip\_rule"></a>
+1. See [:material-code-braces: UpdateSipMediaApplicationCallRequestRequestTypeDef](./type_defs.md#updatesipmediaapplicationcallrequestrequesttypedef) 
 
-### update_sip_rule
+### update\_sip\_rule
 
 Updates the details of the specified SIP rule.
 
-Type annotations for `boto3.client("chime").update_sip_rule` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_sip_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_rule)
 
-Boto3 documentation:
-[Chime.Client.update_sip_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_sip_rule)
+```python title="Method definition"
+def update_sip_rule(
+    self,
+    *,
+    SipRuleId: str,
+    Name: str,
+    Disabled: bool = ...,
+    TargetApplications: Sequence[SipRuleTargetApplicationTypeDef] = ...,  # (1)
+) -> UpdateSipRuleResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSipRuleRequestRequestTypeDef](./type_defs.md#updatesiprulerequestrequesttypedef).
+1. See [:material-code-braces: SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef) 
+2. See [:material-code-braces: UpdateSipRuleResponseTypeDef](./type_defs.md#updatesipruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SipRuleId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Disabled`: `bool`
-- `TargetApplications`:
-  `Sequence`\[[SipRuleTargetApplicationTypeDef](./type_defs.md#sipruletargetapplicationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateSipRuleRequestRequestTypeDef = {  # (1)
+    "SipRuleId": ...,
+    "Name": ...,
+}
 
-Returns
-[UpdateSipRuleResponseTypeDef](./type_defs.md#updatesipruleresponsetypedef).
+parent.update_sip_rule(**kwargs)
+```
 
-<a id="update\_user"></a>
+1. See [:material-code-braces: UpdateSipRuleRequestRequestTypeDef](./type_defs.md#updatesiprulerequestrequesttypedef) 
 
-### update_user
+### update\_user
 
 Updates user details for a specified user ID.
 
-Type annotations for `boto3.client("chime").update_user` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user)
 
-Boto3 documentation:
-[Chime.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user)
+```python title="Method definition"
+def update_user(
+    self,
+    *,
+    AccountId: str,
+    UserId: str,
+    LicenseType: LicenseType = ...,  # (1)
+    UserType: UserTypeType = ...,  # (2)
+    AlexaForBusinessMetadata: AlexaForBusinessMetadataTypeDef = ...,  # (3)
+) -> UpdateUserResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
+1. See [:material-code-brackets: LicenseType](./literals.md#licensetype) 
+2. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+3. See [:material-code-braces: AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef) 
+4. See [:material-code-braces: UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `LicenseType`: [LicenseType](./literals.md#licensetype)
-- `UserType`: [UserTypeType](./literals.md#usertypetype)
-- `AlexaForBusinessMetadata`:
-  [AlexaForBusinessMetadataTypeDef](./type_defs.md#alexaforbusinessmetadatatypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserId": ...,
+}
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+parent.update_user(**kwargs)
+```
 
-<a id="update\_user\_settings"></a>
+1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
 
-### update_user_settings
+### update\_user\_settings
 
 Updates the settings for the specified user, such as phone number settings.
 
-Type annotations for `boto3.client("chime").update_user_settings` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_user_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user_settings)
 
-Boto3 documentation:
-[Chime.Client.update_user_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_user_settings)
+```python title="Method definition"
+def update_user_settings(
+    self,
+    *,
+    AccountId: str,
+    UserId: str,
+    UserSettings: UserSettingsTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserSettingsRequestRequestTypeDef](./type_defs.md#updateusersettingsrequestrequesttypedef).
+1. See [:material-code-braces: UserSettingsTypeDef](./type_defs.md#usersettingstypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateUserSettingsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "UserId": ...,
+    "UserSettings": ...,
+}
 
-<a id="update\_voice\_connector"></a>
+parent.update_user_settings(**kwargs)
+```
 
-### update_voice_connector
+1. See [:material-code-braces: UpdateUserSettingsRequestRequestTypeDef](./type_defs.md#updateusersettingsrequestrequesttypedef) 
+
+### update\_voice\_connector
 
 Updates details for the specified Amazon Chime Voice Connector.
 
-Type annotations for `boto3.client("chime").update_voice_connector` method.
+Type annotations and code completion for `#!python boto3.client("chime").update_voice_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector)
 
-Boto3 documentation:
-[Chime.Client.update_voice_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector)
+```python title="Method definition"
+def update_voice_connector(
+    self,
+    *,
+    VoiceConnectorId: str,
+    Name: str,
+    RequireEncryption: bool,
+) -> UpdateVoiceConnectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVoiceConnectorRequestRequestTypeDef](./type_defs.md#updatevoiceconnectorrequestrequesttypedef).
+1. See [:material-code-braces: UpdateVoiceConnectorResponseTypeDef](./type_defs.md#updatevoiceconnectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `RequireEncryption`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateVoiceConnectorRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorId": ...,
+    "Name": ...,
+    "RequireEncryption": ...,
+}
 
-Returns
-[UpdateVoiceConnectorResponseTypeDef](./type_defs.md#updatevoiceconnectorresponsetypedef).
+parent.update_voice_connector(**kwargs)
+```
 
-<a id="update\_voice\_connector\_group"></a>
+1. See [:material-code-braces: UpdateVoiceConnectorRequestRequestTypeDef](./type_defs.md#updatevoiceconnectorrequestrequesttypedef) 
 
-### update_voice_connector_group
+### update\_voice\_connector\_group
 
-Updates details of the specified Amazon Chime Voice Connector group, such as
-the name and Amazon Chime Voice Connector priority ranking.
+Updates details of the specified Amazon Chime Voice Connector group, such as the
+name and Amazon Chime Voice Connector priority ranking.
 
-Type annotations for `boto3.client("chime").update_voice_connector_group`
-method.
+Type annotations and code completion for `#!python boto3.client("chime").update_voice_connector_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector_group)
 
-Boto3 documentation:
-[Chime.Client.update_voice_connector_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.update_voice_connector_group)
+```python title="Method definition"
+def update_voice_connector_group(
+    self,
+    *,
+    VoiceConnectorGroupId: str,
+    Name: str,
+    VoiceConnectorItems: Sequence[VoiceConnectorItemTypeDef],  # (1)
+) -> UpdateVoiceConnectorGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#updatevoiceconnectorgrouprequestrequesttypedef).
+1. See [:material-code-braces: VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef) 
+2. See [:material-code-braces: UpdateVoiceConnectorGroupResponseTypeDef](./type_defs.md#updatevoiceconnectorgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VoiceConnectorGroupId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `VoiceConnectorItems`:
-  `Sequence`\[[VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateVoiceConnectorGroupRequestRequestTypeDef = {  # (1)
+    "VoiceConnectorGroupId": ...,
+    "Name": ...,
+    "VoiceConnectorItems": ...,
+}
 
-Returns
-[UpdateVoiceConnectorGroupResponseTypeDef](./type_defs.md#updatevoiceconnectorgroupresponsetypedef).
+parent.update_voice_connector_group(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateVoiceConnectorGroupRequestRequestTypeDef](./type_defs.md#updatevoiceconnectorgrouprequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("chime").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("chime").get_paginator` method with overloads.
 
-- `client.get_paginator("list_accounts")` ->
-  [ListAccountsPaginator](./paginators.md#listaccountspaginator)
-- `client.get_paginator("list_users")` ->
-  [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("list_accounts")` -> [ListAccountsPaginator](./paginators.md#listaccountspaginator)
+- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
+
+
+

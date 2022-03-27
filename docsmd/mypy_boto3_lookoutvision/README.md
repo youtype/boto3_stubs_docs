@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-lookoutforvision-module"></a>
-
-# Type annotations for boto3 LookoutforVision module
+#  LookoutforVision module
 
 > [Index](../README.md) > LookoutforVision
 
-Auto-generated documentation for
-[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
-type annotations stubs module
-[mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+!!! note ""
 
-- [Type annotations for boto3 LookoutforVision module](#type-annotations-for-boto3-lookoutforvision-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [LookoutforVisionClient](#lookoutforvisionclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+    type annotations stubs module [mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `LookoutforVision`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[lookoutvision]'
 python -m pip install mypy-boto3-lookoutvision
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,82 +42,37 @@ python -m pip install mypy-boto3-lookoutvision
 python -m pip uninstall -y mypy-boto3-lookoutvision
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="lookoutforvisionclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## LookoutforVisionClient
 
-Type annotations for `boto3.client("lookoutvision")` as
-[LookoutforVisionClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("lookoutvision")` as [LookoutforVisionClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_lookoutvision.client import LookoutforVisionClient
+
+def get_client() -> LookoutforVisionClient:
+    return Session().cleint("lookoutvision")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_dataset](./client.md#create_dataset)
-- [create_model](./client.md#create_model)
-- [create_project](./client.md#create_project)
-- [delete_dataset](./client.md#delete_dataset)
-- [delete_model](./client.md#delete_model)
-- [delete_project](./client.md#delete_project)
-- [describe_dataset](./client.md#describe_dataset)
-- [describe_model](./client.md#describe_model)
-- [describe_model_packaging_job](./client.md#describe_model_packaging_job)
-- [describe_project](./client.md#describe_project)
-- [detect_anomalies](./client.md#detect_anomalies)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_dataset_entries](./client.md#list_dataset_entries)
-- [list_model_packaging_jobs](./client.md#list_model_packaging_jobs)
-- [list_models](./client.md#list_models)
-- [list_projects](./client.md#list_projects)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [start_model](./client.md#start_model)
-- [start_model_packaging_job](./client.md#start_model_packaging_job)
-- [stop_model](./client.md#stop_model)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_dataset_entries](./client.md#update_dataset_entries)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-LookoutforVisionClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("lookoutvision").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("lookoutvision").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_lookoutvision.paginator import ListDatasetEntriesPaginator, ...
+from mypy_boto3_lookoutvision.paginator import ListDatasetEntriesPaginator
+
+def get_list_dataset_entries_paginator() -> ListDatasetEntriesPaginator:
+    return Session().client("lookoutvision").get_paginator("list_dataset_entries"))
 ```
 
 - [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
@@ -147,16 +80,23 @@ from mypy_boto3_lookoutvision.paginator import ListDatasetEntriesPaginator, ...
 - [ListModelsPaginator](./paginators.md#listmodelspaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lookoutvision.literals import DatasetStatusType
 
-```python
-from mypy_boto3_lookoutvision.literals import DatasetStatusType, ...
+def get_value() -> DatasetStatusType:
+    return "CREATE_COMPLETE"
 ```
 
 - [DatasetStatusType](./literals.md#datasetstatustype)
@@ -175,18 +115,23 @@ from mypy_boto3_lookoutvision.literals import DatasetStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lookoutvision.type_defs import CreateDatasetRequestRequestTypeDef
 
-```python
-from mypy_boto3_lookoutvision.type_defs import CreateDatasetRequestRequestTypeDef, ...
+def get_value() -> CreateDatasetRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "DatasetType": ...,
+    }
 ```
 
 - [CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef)
@@ -220,12 +165,16 @@ from mypy_boto3_lookoutvision.type_defs import CreateDatasetRequestRequestTypeDe
 - [GreengrassOutputDetailsTypeDef](./type_defs.md#greengrassoutputdetailstypedef)
 - [ImageSourceTypeDef](./type_defs.md#imagesourcetypedef)
 - [InputS3ObjectTypeDef](./type_defs.md#inputs3objecttypedef)
+- [ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef](./type_defs.md#listdatasetentriesrequestlistdatasetentriespaginatetypedef)
 - [ListDatasetEntriesRequestRequestTypeDef](./type_defs.md#listdatasetentriesrequestrequesttypedef)
 - [ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef)
+- [ListModelPackagingJobsRequestListModelPackagingJobsPaginateTypeDef](./type_defs.md#listmodelpackagingjobsrequestlistmodelpackagingjobspaginatetypedef)
 - [ListModelPackagingJobsRequestRequestTypeDef](./type_defs.md#listmodelpackagingjobsrequestrequesttypedef)
 - [ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef)
+- [ListModelsRequestListModelsPaginateTypeDef](./type_defs.md#listmodelsrequestlistmodelspaginatetypedef)
 - [ListModelsRequestRequestTypeDef](./type_defs.md#listmodelsrequestrequesttypedef)
 - [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef)
+- [ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef)
 - [ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef)
 - [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -256,3 +205,4 @@ from mypy_boto3_lookoutvision.type_defs import CreateDatasetRequestRequestTypeDe
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDatasetEntriesRequestRequestTypeDef](./type_defs.md#updatedatasetentriesrequestrequesttypedef)
 - [UpdateDatasetEntriesResponseTypeDef](./type_defs.md#updatedatasetentriesresponsetypedef)
+

@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-connectcontactlens-module"></a>
-
-# Examples for boto3 ConnectContactLens module
+# Examples
 
 > [Index](../README.md) > [ConnectContactLens](./README.md) > Examples
 
-- [Examples for boto3 ConnectContactLens module](#examples-for-boto3-connectcontactlens-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
+    type annotations stubs module [mypy-boto3-connect-contact-lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[connect-contact-lens]` package installed.
 
-Write your `ConnectContactLens` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `ConnectContactLens` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ConnectContactLensClient
-# and provides type checking and code completion
-client = session.client("connect-contact-lens")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("connect-contact-lens")  # (1)
+    result = client.list_realtime_contact_analysis_segments()  # (2)
+    ```
+
+    1. client: [ConnectContactLensClient](./client.md)
+    2. result: [:material-code-braces: ListRealtimeContactAnalysisSegmentsResponseTypeDef](./type_defs.md#listrealtimecontactanalysissegmentsresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[connect-contact-lens]` or a standalone
-`mypy_boto3_connect_contact_lens` package, you have to explicitly specify
-`client: ConnectContactLensClient` type annotation.
+With `boto3-stubs-lite[connect-contact-lens]`
+or a standalone `mypy_boto3_connect_contact_lens` package, you have to explicitly specify `client: ConnectContactLensClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_connect_contact_lens.client import ConnectContactLensClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_connect_contact_lens.client import ConnectContactLensClient
+    from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsResponseTypeDef
+    from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef
 
 
-from mypy_boto3_connect_contact_lens.type_defs import bool
+    session = Session()
+
+    client: ConnectContactLensClient = session.client("connect-contact-lens")
+
+    kwargs: ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef = {...}
+    result: ListRealtimeContactAnalysisSegmentsResponseTypeDef = client.list_realtime_contact_analysis_segments(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: ConnectContactLensClient = session.client("connect-contact-lens")
 
-result: bool = client.can_paginate()
-```
+

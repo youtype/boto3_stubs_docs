@@ -1,46 +1,18 @@
-<a id="iot1clickdevicesserviceclient-for-boto3-iot1clickdevicesservice-module"></a>
+# IoT1ClickDevicesServiceClient
 
-# IoT1ClickDevicesServiceClient for boto3 IoT1ClickDevicesService module
+> [Index](../README.md) > [IoT1ClickDevicesService](./README.md) > IoT1ClickDevicesServiceClient
 
-> [Index](../README.md) > [IoT1ClickDevicesService](./README.md) >
-> IoT1ClickDevicesServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
-type annotations stubs module
-[mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
-
-- [IoT1ClickDevicesServiceClient for boto3 IoT1ClickDevicesService module](#iot1clickdevicesserviceclient-for-boto3-iot1clickdevicesservice-module)
-  - [IoT1ClickDevicesServiceClient](#iot1clickdevicesserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [claim_devices_by_claim_code](#claim_devices_by_claim_code)
-    - [describe_device](#describe_device)
-    - [finalize_device_claim](#finalize_device_claim)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_device_methods](#get_device_methods)
-    - [initiate_device_claim](#initiate_device_claim)
-    - [invoke_device_method](#invoke_device_method)
-    - [list_device_events](#list_device_events)
-    - [list_devices](#list_devices)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [unclaim_device](#unclaim_device)
-    - [untag_resource](#untag_resource)
-    - [update_device_state](#update_device_state)
-    - [get_paginator](#get_paginator)
-
-<a id="iot1clickdevicesserviceclient"></a>
+    Auto-generated documentation for [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+    type annotations stubs module [mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 ## IoT1ClickDevicesServiceClient
 
-Type annotations for `boto3.client("iot1click-devices")`
+Type annotations and code completion for `#!python boto3.client("iot1click-devices")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
 
@@ -48,390 +20,481 @@ def get_iot1click-devices_client() -> IoT1ClickDevicesServiceClient:
     return Session().client("iot1click-devices")
 ```
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iot1click-devices").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iot1click-devices")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ForbiddenException,
+    client.InternalFailureException,
+    client.InvalidRequestException,
+    client.PreconditionFailedException,
+    client.RangeNotSatisfiableException,
+    client.ResourceConflictException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iot1click_devices.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ForbiddenException`
-- `Exceptions.InternalFailureException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.PreconditionFailedException`
-- `Exceptions.RangeNotSatisfiableException`
-- `Exceptions.ResourceConflictException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IoT1ClickDevicesServiceClient exceptions.
-
-Type annotations for `boto3.client("iot1click-devices").exceptions` method.
-
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iot1click-devices").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.can_paginate)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="claim\_devices\_by\_claim\_code"></a>
-
-### claim_devices_by_claim_code
+### claim\_devices\_by\_claim\_code
 
 Adds device(s) to your account (i.e., claim one or more devices) if and only if
 you received a claim code with the device(s).
 
-Type annotations for
-`boto3.client("iot1click-devices").claim_devices_by_claim_code` method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").claim_devices_by_claim_code` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.claim_devices_by_claim_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.claim_devices_by_claim_code)
+```python title="Method definition"
+def claim_devices_by_claim_code(
+    self,
+    *,
+    ClaimCode: str,
+) -> ClaimDevicesByClaimCodeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ClaimDevicesByClaimCodeRequestRequestTypeDef](./type_defs.md#claimdevicesbyclaimcoderequestrequesttypedef).
+1. See [:material-code-braces: ClaimDevicesByClaimCodeResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClaimCode`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ClaimDevicesByClaimCodeRequestRequestTypeDef = {  # (1)
+    "ClaimCode": ...,
+}
 
-Returns
-[ClaimDevicesByClaimCodeResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponsetypedef).
+parent.claim_devices_by_claim_code(**kwargs)
+```
 
-<a id="describe\_device"></a>
+1. See [:material-code-braces: ClaimDevicesByClaimCodeRequestRequestTypeDef](./type_defs.md#claimdevicesbyclaimcoderequestrequesttypedef) 
 
-### describe_device
+### describe\_device
 
 Given a device ID, returns a DescribeDeviceResponse object describing the
 details of the device.
 
-Type annotations for `boto3.client("iot1click-devices").describe_device`
-method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").describe_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.describe_device)
+```python title="Method definition"
+def describe_device(
+    self,
+    *,
+    DeviceId: str,
+) -> DescribeDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDeviceRequestRequestTypeDef](./type_defs.md#describedevicerequestrequesttypedef).
+1. See [:material-code-braces: DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
+parent.describe_device(**kwargs)
+```
 
-<a id="finalize\_device\_claim"></a>
+1. See [:material-code-braces: DescribeDeviceRequestRequestTypeDef](./type_defs.md#describedevicerequestrequesttypedef) 
 
-### finalize_device_claim
+### finalize\_device\_claim
 
 Given a device ID, finalizes the claim request for the associated device.
 
-Type annotations for `boto3.client("iot1click-devices").finalize_device_claim`
-method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").finalize_device_claim` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.finalize_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.finalize_device_claim)
+```python title="Method definition"
+def finalize_device_claim(
+    self,
+    *,
+    DeviceId: str,
+    Tags: Mapping[str, str] = ...,
+) -> FinalizeDeviceClaimResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[FinalizeDeviceClaimRequestRequestTypeDef](./type_defs.md#finalizedeviceclaimrequestrequesttypedef).
+1. See [:material-code-braces: FinalizeDeviceClaimResponseTypeDef](./type_defs.md#finalizedeviceclaimresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: FinalizeDeviceClaimRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[FinalizeDeviceClaimResponseTypeDef](./type_defs.md#finalizedeviceclaimresponsetypedef).
+parent.finalize_device_claim(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: FinalizeDeviceClaimRequestRequestTypeDef](./type_defs.md#finalizedeviceclaimrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iot1click-devices").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_device\_methods"></a>
-
-### get_device_methods
+### get\_device\_methods
 
 Given a device ID, returns the invokable methods associated with the device.
 
-Type annotations for `boto3.client("iot1click-devices").get_device_methods`
-method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").get_device_methods` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.get_device_methods](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.get_device_methods)
+```python title="Method definition"
+def get_device_methods(
+    self,
+    *,
+    DeviceId: str,
+) -> GetDeviceMethodsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeviceMethodsRequestRequestTypeDef](./type_defs.md#getdevicemethodsrequestrequesttypedef).
+1. See [:material-code-braces: GetDeviceMethodsResponseTypeDef](./type_defs.md#getdevicemethodsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDeviceMethodsRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[GetDeviceMethodsResponseTypeDef](./type_defs.md#getdevicemethodsresponsetypedef).
+parent.get_device_methods(**kwargs)
+```
 
-<a id="initiate\_device\_claim"></a>
+1. See [:material-code-braces: GetDeviceMethodsRequestRequestTypeDef](./type_defs.md#getdevicemethodsrequestrequesttypedef) 
 
-### initiate_device_claim
+### initiate\_device\_claim
 
 Given a device ID, initiates a claim request for the associated device.
 
-Type annotations for `boto3.client("iot1click-devices").initiate_device_claim`
-method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").initiate_device_claim` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.initiate_device_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.initiate_device_claim)
+```python title="Method definition"
+def initiate_device_claim(
+    self,
+    *,
+    DeviceId: str,
+) -> InitiateDeviceClaimResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InitiateDeviceClaimRequestRequestTypeDef](./type_defs.md#initiatedeviceclaimrequestrequesttypedef).
+1. See [:material-code-braces: InitiateDeviceClaimResponseTypeDef](./type_defs.md#initiatedeviceclaimresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: InitiateDeviceClaimRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[InitiateDeviceClaimResponseTypeDef](./type_defs.md#initiatedeviceclaimresponsetypedef).
+parent.initiate_device_claim(**kwargs)
+```
 
-<a id="invoke\_device\_method"></a>
+1. See [:material-code-braces: InitiateDeviceClaimRequestRequestTypeDef](./type_defs.md#initiatedeviceclaimrequestrequesttypedef) 
 
-### invoke_device_method
+### invoke\_device\_method
 
 Given a device ID, issues a request to invoke a named device method (with
 possible parameters).
 
-Type annotations for `boto3.client("iot1click-devices").invoke_device_method`
-method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").invoke_device_method` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.invoke_device_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.invoke_device_method)
+```python title="Method definition"
+def invoke_device_method(
+    self,
+    *,
+    DeviceId: str,
+    DeviceMethod: DeviceMethodTypeDef = ...,  # (1)
+    DeviceMethodParameters: str = ...,
+) -> InvokeDeviceMethodResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[InvokeDeviceMethodRequestRequestTypeDef](./type_defs.md#invokedevicemethodrequestrequesttypedef).
+1. See [:material-code-braces: DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef) 
+2. See [:material-code-braces: InvokeDeviceMethodResponseTypeDef](./type_defs.md#invokedevicemethodresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
-- `DeviceMethod`: [DeviceMethodTypeDef](./type_defs.md#devicemethodtypedef)
-- `DeviceMethodParameters`: `str`
+```python title="Usage example with kwargs"
+kwargs: InvokeDeviceMethodRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[InvokeDeviceMethodResponseTypeDef](./type_defs.md#invokedevicemethodresponsetypedef).
+parent.invoke_device_method(**kwargs)
+```
 
-<a id="list\_device\_events"></a>
+1. See [:material-code-braces: InvokeDeviceMethodRequestRequestTypeDef](./type_defs.md#invokedevicemethodrequestrequesttypedef) 
 
-### list_device_events
+### list\_device\_events
 
 Using a device ID, returns a DeviceEventsResponse object containing an array of
 events for the device.
 
-Type annotations for `boto3.client("iot1click-devices").list_device_events`
-method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").list_device_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_device_events)
+```python title="Method definition"
+def list_device_events(
+    self,
+    *,
+    DeviceId: str,
+    FromTimeStamp: Union[datetime, str],
+    ToTimeStamp: Union[datetime, str],
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDeviceEventsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDeviceEventsRequestRequestTypeDef](./type_defs.md#listdeviceeventsrequestrequesttypedef).
+1. See [:material-code-braces: ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
-- `FromTimeStamp`: `Union`\[`datetime`, `str`\] *(required)*
-- `ToTimeStamp`: `Union`\[`datetime`, `str`\] *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDeviceEventsRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+    "FromTimeStamp": ...,
+    "ToTimeStamp": ...,
+}
 
-Returns
-[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
+parent.list_device_events(**kwargs)
+```
 
-<a id="list\_devices"></a>
+1. See [:material-code-braces: ListDeviceEventsRequestRequestTypeDef](./type_defs.md#listdeviceeventsrequestrequesttypedef) 
 
-### list_devices
+### list\_devices
 
 Lists the 1-Click compatible devices associated with your AWS account.
 
-Type annotations for `boto3.client("iot1click-devices").list_devices` method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").list_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_devices)
+```python title="Method definition"
+def list_devices(
+    self,
+    *,
+    DeviceType: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDevicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef).
+1. See [:material-code-braces: ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceType`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDevicesRequestRequestTypeDef = {  # (1)
+    "DeviceType": ...,
+}
 
-Returns
-[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
+parent.list_devices(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags associated with the specified resource ARN.
 
-Type annotations for `boto3.client("iot1click-devices").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or updates the tags associated with the resource ARN.
 
-Type annotations for `boto3.client("iot1click-devices").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-<a id="unclaim\_device"></a>
+parent.tag_resource(**kwargs)
+```
 
-### unclaim_device
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### unclaim\_device
 
 Disassociates a device from your AWS account using its device ID.
 
-Type annotations for `boto3.client("iot1click-devices").unclaim_device` method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").unclaim_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.unclaim_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.unclaim_device)
+```python title="Method definition"
+def unclaim_device(
+    self,
+    *,
+    DeviceId: str,
+) -> UnclaimDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UnclaimDeviceRequestRequestTypeDef](./type_defs.md#unclaimdevicerequestrequesttypedef).
+1. See [:material-code-braces: UnclaimDeviceResponseTypeDef](./type_defs.md#unclaimdeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnclaimDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[UnclaimDeviceResponseTypeDef](./type_defs.md#unclaimdeviceresponsetypedef).
+parent.unclaim_device(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: UnclaimDeviceRequestRequestTypeDef](./type_defs.md#unclaimdevicerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
-Using tag keys, deletes the tags (key/value pairs) associated with the
-specified resource ARN.
+Using tag keys, deletes the tags (key/value pairs) associated with the specified
+resource ARN.
 
-Type annotations for `boto3.client("iot1click-devices").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_device\_state"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_device_state
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_device\_state
 
 Using a Boolean value (true or false), this operation enables or disables the
 device given a device ID.
 
-Type annotations for `boto3.client("iot1click-devices").update_device_state`
-method.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").update_device_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state)
 
-Boto3 documentation:
-[IoT1ClickDevicesService.Client.update_device_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.update_device_state)
+```python title="Method definition"
+def update_device_state(
+    self,
+    *,
+    DeviceId: str,
+    Enabled: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDeviceStateRequestRequestTypeDef](./type_defs.md#updatedevicestaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
-- `Enabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateDeviceStateRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_device_state(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateDeviceStateRequestRequestTypeDef](./type_defs.md#updatedevicestaterequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("iot1click-devices").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("iot1click-devices").get_paginator` method with overloads.
 
-- `client.get_paginator("list_device_events")` ->
-  [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
-- `client.get_paginator("list_devices")` ->
-  [ListDevicesPaginator](./paginators.md#listdevicespaginator)
+- `client.get_paginator("list_device_events")` -> [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
+- `client.get_paginator("list_devices")` -> [ListDevicesPaginator](./paginators.md#listdevicespaginator)
+
+
+

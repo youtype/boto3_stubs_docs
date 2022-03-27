@@ -1,78 +1,18 @@
-<a id="forecastserviceclient-for-boto3-forecastservice-module"></a>
+# ForecastServiceClient
 
-# ForecastServiceClient for boto3 ForecastService module
+> [Index](../README.md) > [ForecastService](./README.md) > ForecastServiceClient
 
-> [Index](../README.md) > [ForecastService](./README.md) >
-> ForecastServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
-type annotations stubs module
-[mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
-
-- [ForecastServiceClient for boto3 ForecastService module](#forecastserviceclient-for-boto3-forecastservice-module)
-  - [ForecastServiceClient](#forecastserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_auto_predictor](#create_auto_predictor)
-    - [create_dataset](#create_dataset)
-    - [create_dataset_group](#create_dataset_group)
-    - [create_dataset_import_job](#create_dataset_import_job)
-    - [create_explainability](#create_explainability)
-    - [create_explainability_export](#create_explainability_export)
-    - [create_forecast](#create_forecast)
-    - [create_forecast_export_job](#create_forecast_export_job)
-    - [create_predictor](#create_predictor)
-    - [create_predictor_backtest_export_job](#create_predictor_backtest_export_job)
-    - [delete_dataset](#delete_dataset)
-    - [delete_dataset_group](#delete_dataset_group)
-    - [delete_dataset_import_job](#delete_dataset_import_job)
-    - [delete_explainability](#delete_explainability)
-    - [delete_explainability_export](#delete_explainability_export)
-    - [delete_forecast](#delete_forecast)
-    - [delete_forecast_export_job](#delete_forecast_export_job)
-    - [delete_predictor](#delete_predictor)
-    - [delete_predictor_backtest_export_job](#delete_predictor_backtest_export_job)
-    - [delete_resource_tree](#delete_resource_tree)
-    - [describe_auto_predictor](#describe_auto_predictor)
-    - [describe_dataset](#describe_dataset)
-    - [describe_dataset_group](#describe_dataset_group)
-    - [describe_dataset_import_job](#describe_dataset_import_job)
-    - [describe_explainability](#describe_explainability)
-    - [describe_explainability_export](#describe_explainability_export)
-    - [describe_forecast](#describe_forecast)
-    - [describe_forecast_export_job](#describe_forecast_export_job)
-    - [describe_predictor](#describe_predictor)
-    - [describe_predictor_backtest_export_job](#describe_predictor_backtest_export_job)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_accuracy_metrics](#get_accuracy_metrics)
-    - [list_dataset_groups](#list_dataset_groups)
-    - [list_dataset_import_jobs](#list_dataset_import_jobs)
-    - [list_datasets](#list_datasets)
-    - [list_explainabilities](#list_explainabilities)
-    - [list_explainability_exports](#list_explainability_exports)
-    - [list_forecast_export_jobs](#list_forecast_export_jobs)
-    - [list_forecasts](#list_forecasts)
-    - [list_predictor_backtest_export_jobs](#list_predictor_backtest_export_jobs)
-    - [list_predictors](#list_predictors)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [stop_resource](#stop_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_dataset_group](#update_dataset_group)
-    - [get_paginator](#get_paginator)
-
-<a id="forecastserviceclient"></a>
+    Auto-generated documentation for [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+    type annotations stubs module [mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 ## ForecastServiceClient
 
-Type annotations for `boto3.client("forecast")`
+Type annotations and code completion for `#!python boto3.client("forecast")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_forecast.client import ForecastServiceClient
 
@@ -80,1147 +20,1540 @@ def get_forecast_client() -> ForecastServiceClient:
     return Session().client("forecast")
 ```
 
-Boto3 documentation:
-[ForecastService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("forecast").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("forecast")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InvalidInputException,
+    client.InvalidNextTokenException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_forecast.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InvalidInputException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ForecastServiceClient exceptions.
-
-Type annotations for `boto3.client("forecast").exceptions` method.
-
-Boto3 documentation:
-[ForecastService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("forecast").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("forecast").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.can_paginate)
 
-Boto3 documentation:
-[ForecastService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_auto\_predictor"></a>
-
-### create_auto_predictor
+### create\_auto\_predictor
 
 Creates an Amazon Forecast predictor.
 
-Type annotations for `boto3.client("forecast").create_auto_predictor` method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_auto_predictor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_auto_predictor)
 
-Boto3 documentation:
-[ForecastService.Client.create_auto_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_auto_predictor)
+```python title="Method definition"
+def create_auto_predictor(
+    self,
+    *,
+    PredictorName: str,
+    ForecastHorizon: int = ...,
+    ForecastTypes: Sequence[str] = ...,
+    ForecastDimensions: Sequence[str] = ...,
+    ForecastFrequency: str = ...,
+    DataConfig: DataConfigTypeDef = ...,  # (1)
+    EncryptionConfig: EncryptionConfigTypeDef = ...,  # (2)
+    ReferencePredictorArn: str = ...,
+    OptimizationMetric: OptimizationMetricType = ...,  # (3)
+    ExplainPredictor: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateAutoPredictorResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateAutoPredictorRequestRequestTypeDef](./type_defs.md#createautopredictorrequestrequesttypedef).
+1. See [:material-code-braces: DataConfigTypeDef](./type_defs.md#dataconfigtypedef) 
+2. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+3. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateAutoPredictorResponseTypeDef](./type_defs.md#createautopredictorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PredictorName`: `str` *(required)*
-- `ForecastHorizon`: `int`
-- `ForecastTypes`: `Sequence`\[`str`\]
-- `ForecastDimensions`: `Sequence`\[`str`\]
-- `ForecastFrequency`: `str`
-- `DataConfig`: [DataConfigTypeDef](./type_defs.md#dataconfigtypedef)
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `ReferencePredictorArn`: `str`
-- `OptimizationMetric`:
-  [OptimizationMetricType](./literals.md#optimizationmetrictype)
-- `ExplainPredictor`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAutoPredictorRequestRequestTypeDef = {  # (1)
+    "PredictorName": ...,
+}
 
-Returns
-[CreateAutoPredictorResponseTypeDef](./type_defs.md#createautopredictorresponsetypedef).
+parent.create_auto_predictor(**kwargs)
+```
 
-<a id="create\_dataset"></a>
+1. See [:material-code-braces: CreateAutoPredictorRequestRequestTypeDef](./type_defs.md#createautopredictorrequestrequesttypedef) 
 
-### create_dataset
+### create\_dataset
 
 Creates an Amazon Forecast dataset.
 
-Type annotations for `boto3.client("forecast").create_dataset` method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset)
 
-Boto3 documentation:
-[ForecastService.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset)
+```python title="Method definition"
+def create_dataset(
+    self,
+    *,
+    DatasetName: str,
+    Domain: DomainType,  # (1)
+    DatasetType: DatasetTypeType,  # (2)
+    Schema: SchemaTypeDef,  # (3)
+    DataFrequency: str = ...,
+    EncryptionConfig: EncryptionConfigTypeDef = ...,  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+) -> CreateDatasetResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+3. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
+4. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetName`: `str` *(required)*
-- `Domain`: [DomainType](./literals.md#domaintype) *(required)*
-- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype) *(required)*
-- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef) *(required)*
-- `DataFrequency`: `str`
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+    "Domain": ...,
+    "DatasetType": ...,
+    "Schema": ...,
+}
 
-Returns
-[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+parent.create_dataset(**kwargs)
+```
 
-<a id="create\_dataset\_group"></a>
+1. See [:material-code-braces: CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
 
-### create_dataset_group
+### create\_dataset\_group
 
 Creates a dataset group, which holds a collection of related datasets.
 
-Type annotations for `boto3.client("forecast").create_dataset_group` method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_dataset_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_group)
 
-Boto3 documentation:
-[ForecastService.Client.create_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_group)
+```python title="Method definition"
+def create_dataset_group(
+    self,
+    *,
+    DatasetGroupName: str,
+    Domain: DomainType,  # (1)
+    DatasetArns: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDatasetGroupResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetGroupRequestRequestTypeDef](./type_defs.md#createdatasetgrouprequestrequesttypedef).
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetGroupName`: `str` *(required)*
-- `Domain`: [DomainType](./literals.md#domaintype) *(required)*
-- `DatasetArns`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetGroupRequestRequestTypeDef = {  # (1)
+    "DatasetGroupName": ...,
+    "Domain": ...,
+}
 
-Returns
-[CreateDatasetGroupResponseTypeDef](./type_defs.md#createdatasetgroupresponsetypedef).
+parent.create_dataset_group(**kwargs)
+```
 
-<a id="create\_dataset\_import\_job"></a>
+1. See [:material-code-braces: CreateDatasetGroupRequestRequestTypeDef](./type_defs.md#createdatasetgrouprequestrequesttypedef) 
 
-### create_dataset_import_job
+### create\_dataset\_import\_job
 
 Imports your training data to an Amazon Forecast dataset.
 
-Type annotations for `boto3.client("forecast").create_dataset_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_dataset_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_import_job)
 
-Boto3 documentation:
-[ForecastService.Client.create_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_dataset_import_job)
+```python title="Method definition"
+def create_dataset_import_job(
+    self,
+    *,
+    DatasetImportJobName: str,
+    DatasetArn: str,
+    DataSource: DataSourceTypeDef,  # (1)
+    TimestampFormat: str = ...,
+    TimeZone: str = ...,
+    UseGeolocationForTimeZone: bool = ...,
+    GeolocationFormat: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDatasetImportJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetImportJobRequestRequestTypeDef](./type_defs.md#createdatasetimportjobrequestrequesttypedef).
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetImportJobName`: `str` *(required)*
-- `DatasetArn`: `str` *(required)*
-- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-  *(required)*
-- `TimestampFormat`: `str`
-- `TimeZone`: `str`
-- `UseGeolocationForTimeZone`: `bool`
-- `GeolocationFormat`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetImportJobRequestRequestTypeDef = {  # (1)
+    "DatasetImportJobName": ...,
+    "DatasetArn": ...,
+    "DataSource": ...,
+}
 
-Returns
-[CreateDatasetImportJobResponseTypeDef](./type_defs.md#createdatasetimportjobresponsetypedef).
+parent.create_dataset_import_job(**kwargs)
+```
 
-<a id="create\_explainability"></a>
+1. See [:material-code-braces: CreateDatasetImportJobRequestRequestTypeDef](./type_defs.md#createdatasetimportjobrequestrequesttypedef) 
 
-### create_explainability
+### create\_explainability
 
 .
 
-Type annotations for `boto3.client("forecast").create_explainability` method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_explainability` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_explainability)
 
-Boto3 documentation:
-[ForecastService.Client.create_explainability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_explainability)
+```python title="Method definition"
+def create_explainability(
+    self,
+    *,
+    ExplainabilityName: str,
+    ResourceArn: str,
+    ExplainabilityConfig: ExplainabilityConfigTypeDef,  # (1)
+    DataSource: DataSourceTypeDef = ...,  # (2)
+    Schema: SchemaTypeDef = ...,  # (3)
+    EnableVisualization: bool = ...,
+    StartDateTime: str = ...,
+    EndDateTime: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateExplainabilityResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateExplainabilityRequestRequestTypeDef](./type_defs.md#createexplainabilityrequestrequesttypedef).
+1. See [:material-code-braces: ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef) 
+2. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+3. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateExplainabilityResponseTypeDef](./type_defs.md#createexplainabilityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ExplainabilityName`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
-- `ExplainabilityConfig`:
-  [ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef)
-  *(required)*
-- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
-- `EnableVisualization`: `bool`
-- `StartDateTime`: `str`
-- `EndDateTime`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateExplainabilityRequestRequestTypeDef = {  # (1)
+    "ExplainabilityName": ...,
+    "ResourceArn": ...,
+    "ExplainabilityConfig": ...,
+}
 
-Returns
-[CreateExplainabilityResponseTypeDef](./type_defs.md#createexplainabilityresponsetypedef).
+parent.create_explainability(**kwargs)
+```
 
-<a id="create\_explainability\_export"></a>
+1. See [:material-code-braces: CreateExplainabilityRequestRequestTypeDef](./type_defs.md#createexplainabilityrequestrequesttypedef) 
 
-### create_explainability_export
+### create\_explainability\_export
 
-Exports an Explainability resource created by the CreateExplainability
+Exports an Explainability resource created by the  CreateExplainability
 operation.
 
-Type annotations for `boto3.client("forecast").create_explainability_export`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_explainability_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_explainability_export)
 
-Boto3 documentation:
-[ForecastService.Client.create_explainability_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_explainability_export)
+```python title="Method definition"
+def create_explainability_export(
+    self,
+    *,
+    ExplainabilityExportName: str,
+    ExplainabilityArn: str,
+    Destination: DataDestinationTypeDef,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateExplainabilityExportResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateExplainabilityExportRequestRequestTypeDef](./type_defs.md#createexplainabilityexportrequestrequesttypedef).
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateExplainabilityExportResponseTypeDef](./type_defs.md#createexplainabilityexportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ExplainabilityExportName`: `str` *(required)*
-- `ExplainabilityArn`: `str` *(required)*
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateExplainabilityExportRequestRequestTypeDef = {  # (1)
+    "ExplainabilityExportName": ...,
+    "ExplainabilityArn": ...,
+    "Destination": ...,
+}
 
-Returns
-[CreateExplainabilityExportResponseTypeDef](./type_defs.md#createexplainabilityexportresponsetypedef).
+parent.create_explainability_export(**kwargs)
+```
 
-<a id="create\_forecast"></a>
+1. See [:material-code-braces: CreateExplainabilityExportRequestRequestTypeDef](./type_defs.md#createexplainabilityexportrequestrequesttypedef) 
 
-### create_forecast
+### create\_forecast
 
 Creates a forecast for each item in the `TARGET_TIME_SERIES` dataset that was
 used to train the predictor.
 
-Type annotations for `boto3.client("forecast").create_forecast` method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_forecast` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast)
 
-Boto3 documentation:
-[ForecastService.Client.create_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast)
+```python title="Method definition"
+def create_forecast(
+    self,
+    *,
+    ForecastName: str,
+    PredictorArn: str,
+    ForecastTypes: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateForecastResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateForecastRequestRequestTypeDef](./type_defs.md#createforecastrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateForecastResponseTypeDef](./type_defs.md#createforecastresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ForecastName`: `str` *(required)*
-- `PredictorArn`: `str` *(required)*
-- `ForecastTypes`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateForecastRequestRequestTypeDef = {  # (1)
+    "ForecastName": ...,
+    "PredictorArn": ...,
+}
 
-Returns
-[CreateForecastResponseTypeDef](./type_defs.md#createforecastresponsetypedef).
+parent.create_forecast(**kwargs)
+```
 
-<a id="create\_forecast\_export\_job"></a>
+1. See [:material-code-braces: CreateForecastRequestRequestTypeDef](./type_defs.md#createforecastrequestrequesttypedef) 
 
-### create_forecast_export_job
+### create\_forecast\_export\_job
 
-Exports a forecast created by the CreateForecast operation to your Amazon
+Exports a forecast created by the  CreateForecast operation to your Amazon
 Simple Storage Service (Amazon S3) bucket.
 
-Type annotations for `boto3.client("forecast").create_forecast_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_forecast_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast_export_job)
 
-Boto3 documentation:
-[ForecastService.Client.create_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_forecast_export_job)
+```python title="Method definition"
+def create_forecast_export_job(
+    self,
+    *,
+    ForecastExportJobName: str,
+    ForecastArn: str,
+    Destination: DataDestinationTypeDef,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateForecastExportJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateForecastExportJobRequestRequestTypeDef](./type_defs.md#createforecastexportjobrequestrequesttypedef).
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateForecastExportJobResponseTypeDef](./type_defs.md#createforecastexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ForecastExportJobName`: `str` *(required)*
-- `ForecastArn`: `str` *(required)*
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateForecastExportJobRequestRequestTypeDef = {  # (1)
+    "ForecastExportJobName": ...,
+    "ForecastArn": ...,
+    "Destination": ...,
+}
 
-Returns
-[CreateForecastExportJobResponseTypeDef](./type_defs.md#createforecastexportjobresponsetypedef).
+parent.create_forecast_export_job(**kwargs)
+```
 
-<a id="create\_predictor"></a>
+1. See [:material-code-braces: CreateForecastExportJobRequestRequestTypeDef](./type_defs.md#createforecastexportjobrequestrequesttypedef) 
 
-### create_predictor
+### create\_predictor
 
 .
 
-Type annotations for `boto3.client("forecast").create_predictor` method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_predictor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor)
 
-Boto3 documentation:
-[ForecastService.Client.create_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor)
+```python title="Method definition"
+def create_predictor(
+    self,
+    *,
+    PredictorName: str,
+    ForecastHorizon: int,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    FeaturizationConfig: FeaturizationConfigTypeDef,  # (2)
+    AlgorithmArn: str = ...,
+    ForecastTypes: Sequence[str] = ...,
+    PerformAutoML: bool = ...,
+    AutoMLOverrideStrategy: AutoMLOverrideStrategyType = ...,  # (3)
+    PerformHPO: bool = ...,
+    TrainingParameters: Mapping[str, str] = ...,
+    EvaluationParameters: EvaluationParametersTypeDef = ...,  # (4)
+    HPOConfig: HyperParameterTuningJobConfigTypeDef = ...,  # (5)
+    EncryptionConfig: EncryptionConfigTypeDef = ...,  # (6)
+    Tags: Sequence[TagTypeDef] = ...,  # (7)
+    OptimizationMetric: OptimizationMetricType = ...,  # (8)
+) -> CreatePredictorResponseTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[CreatePredictorRequestRequestTypeDef](./type_defs.md#createpredictorrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: FeaturizationConfigTypeDef](./type_defs.md#featurizationconfigtypedef) 
+3. See [:material-code-brackets: AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype) 
+4. See [:material-code-braces: EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef) 
+5. See [:material-code-braces: HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef) 
+6. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
+9. See [:material-code-braces: CreatePredictorResponseTypeDef](./type_defs.md#createpredictorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PredictorName`: `str` *(required)*
-- `ForecastHorizon`: `int` *(required)*
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `FeaturizationConfig`:
-  [FeaturizationConfigTypeDef](./type_defs.md#featurizationconfigtypedef)
-  *(required)*
-- `AlgorithmArn`: `str`
-- `ForecastTypes`: `Sequence`\[`str`\]
-- `PerformAutoML`: `bool`
-- `AutoMLOverrideStrategy`:
-  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
-- `PerformHPO`: `bool`
-- `TrainingParameters`: `Mapping`\[`str`, `str`\]
-- `EvaluationParameters`:
-  [EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef)
-- `HPOConfig`:
-  [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `OptimizationMetric`:
-  [OptimizationMetricType](./literals.md#optimizationmetrictype)
+```python title="Usage example with kwargs"
+kwargs: CreatePredictorRequestRequestTypeDef = {  # (1)
+    "PredictorName": ...,
+    "ForecastHorizon": ...,
+    "InputDataConfig": ...,
+    "FeaturizationConfig": ...,
+}
 
-Returns
-[CreatePredictorResponseTypeDef](./type_defs.md#createpredictorresponsetypedef).
+parent.create_predictor(**kwargs)
+```
 
-<a id="create\_predictor\_backtest\_export\_job"></a>
+1. See [:material-code-braces: CreatePredictorRequestRequestTypeDef](./type_defs.md#createpredictorrequestrequesttypedef) 
 
-### create_predictor_backtest_export_job
+### create\_predictor\_backtest\_export\_job
 
 Exports backtest forecasts and accuracy metrics generated by the
-CreateAutoPredictor or CreatePredictor operations.
+CreateAutoPredictor or  CreatePredictor operations.
 
-Type annotations for
-`boto3.client("forecast").create_predictor_backtest_export_job` method.
+Type annotations and code completion for `#!python boto3.client("forecast").create_predictor_backtest_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor_backtest_export_job)
 
-Boto3 documentation:
-[ForecastService.Client.create_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.create_predictor_backtest_export_job)
+```python title="Method definition"
+def create_predictor_backtest_export_job(
+    self,
+    *,
+    PredictorBacktestExportJobName: str,
+    PredictorArn: str,
+    Destination: DataDestinationTypeDef,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreatePredictorBacktestExportJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#createpredictorbacktestexportjobrequestrequesttypedef).
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreatePredictorBacktestExportJobResponseTypeDef](./type_defs.md#createpredictorbacktestexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PredictorBacktestExportJobName`: `str` *(required)*
-- `PredictorArn`: `str` *(required)*
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePredictorBacktestExportJobRequestRequestTypeDef = {  # (1)
+    "PredictorBacktestExportJobName": ...,
+    "PredictorArn": ...,
+    "Destination": ...,
+}
 
-Returns
-[CreatePredictorBacktestExportJobResponseTypeDef](./type_defs.md#createpredictorbacktestexportjobresponsetypedef).
+parent.create_predictor_backtest_export_job(**kwargs)
+```
 
-<a id="delete\_dataset"></a>
+1. See [:material-code-braces: CreatePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#createpredictorbacktestexportjobrequestrequesttypedef) 
 
-### delete_dataset
+### delete\_dataset
 
-Deletes an Amazon Forecast dataset that was created using the CreateDataset
+Deletes an Amazon Forecast dataset that was created using the  CreateDataset
 operation.
 
-Type annotations for `boto3.client("forecast").delete_dataset` method.
+Type annotations and code completion for `#!python boto3.client("forecast").delete_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset)
 
-Boto3 documentation:
-[ForecastService.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset)
+```python title="Method definition"
+def delete_dataset(
+    self,
+    *,
+    DatasetArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatasetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetArn": ...,
+}
 
-<a id="delete\_dataset\_group"></a>
+parent.delete_dataset(**kwargs)
+```
 
-### delete_dataset_group
+1. See [:material-code-braces: DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
 
-Deletes a dataset group created using the CreateDatasetGroup operation.
+### delete\_dataset\_group
 
-Type annotations for `boto3.client("forecast").delete_dataset_group` method.
+Deletes a dataset group created using the  CreateDatasetGroup operation.
 
-Boto3 documentation:
-[ForecastService.Client.delete_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_group)
+Type annotations and code completion for `#!python boto3.client("forecast").delete_dataset_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_group)
 
-Arguments mapping described in
-[DeleteDatasetGroupRequestRequestTypeDef](./type_defs.md#deletedatasetgrouprequestrequesttypedef).
+```python title="Method definition"
+def delete_dataset_group(
+    self,
+    *,
+    DatasetGroupArn: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `DatasetGroupArn`: `str` *(required)*
 
-<a id="delete\_dataset\_import\_job"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetGroupRequestRequestTypeDef = {  # (1)
+    "DatasetGroupArn": ...,
+}
 
-### delete_dataset_import_job
+parent.delete_dataset_group(**kwargs)
+```
 
-Deletes a dataset import job created using the CreateDatasetImportJob
+1. See [:material-code-braces: DeleteDatasetGroupRequestRequestTypeDef](./type_defs.md#deletedatasetgrouprequestrequesttypedef) 
+
+### delete\_dataset\_import\_job
+
+Deletes a dataset import job created using the  CreateDatasetImportJob
 operation.
 
-Type annotations for `boto3.client("forecast").delete_dataset_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").delete_dataset_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_import_job)
 
-Boto3 documentation:
-[ForecastService.Client.delete_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_dataset_import_job)
+```python title="Method definition"
+def delete_dataset_import_job(
+    self,
+    *,
+    DatasetImportJobArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetImportJobRequestRequestTypeDef](./type_defs.md#deletedatasetimportjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatasetImportJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetImportJobRequestRequestTypeDef = {  # (1)
+    "DatasetImportJobArn": ...,
+}
 
-<a id="delete\_explainability"></a>
+parent.delete_dataset_import_job(**kwargs)
+```
 
-### delete_explainability
+1. See [:material-code-braces: DeleteDatasetImportJobRequestRequestTypeDef](./type_defs.md#deletedatasetimportjobrequestrequesttypedef) 
+
+### delete\_explainability
 
 Deletes an Explainability resource.
 
-Type annotations for `boto3.client("forecast").delete_explainability` method.
+Type annotations and code completion for `#!python boto3.client("forecast").delete_explainability` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_explainability)
 
-Boto3 documentation:
-[ForecastService.Client.delete_explainability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_explainability)
+```python title="Method definition"
+def delete_explainability(
+    self,
+    *,
+    ExplainabilityArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteExplainabilityRequestRequestTypeDef](./type_defs.md#deleteexplainabilityrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ExplainabilityArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteExplainabilityRequestRequestTypeDef = {  # (1)
+    "ExplainabilityArn": ...,
+}
 
-<a id="delete\_explainability\_export"></a>
+parent.delete_explainability(**kwargs)
+```
 
-### delete_explainability_export
+1. See [:material-code-braces: DeleteExplainabilityRequestRequestTypeDef](./type_defs.md#deleteexplainabilityrequestrequesttypedef) 
+
+### delete\_explainability\_export
 
 Deletes an Explainability export.
 
-Type annotations for `boto3.client("forecast").delete_explainability_export`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").delete_explainability_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_explainability_export)
 
-Boto3 documentation:
-[ForecastService.Client.delete_explainability_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_explainability_export)
+```python title="Method definition"
+def delete_explainability_export(
+    self,
+    *,
+    ExplainabilityExportArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteExplainabilityExportRequestRequestTypeDef](./type_defs.md#deleteexplainabilityexportrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ExplainabilityExportArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteExplainabilityExportRequestRequestTypeDef = {  # (1)
+    "ExplainabilityExportArn": ...,
+}
 
-<a id="delete\_forecast"></a>
+parent.delete_explainability_export(**kwargs)
+```
 
-### delete_forecast
+1. See [:material-code-braces: DeleteExplainabilityExportRequestRequestTypeDef](./type_defs.md#deleteexplainabilityexportrequestrequesttypedef) 
 
-Deletes a forecast created using the CreateForecast operation.
+### delete\_forecast
 
-Type annotations for `boto3.client("forecast").delete_forecast` method.
+Deletes a forecast created using the  CreateForecast operation.
 
-Boto3 documentation:
-[ForecastService.Client.delete_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast)
+Type annotations and code completion for `#!python boto3.client("forecast").delete_forecast` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast)
 
-Arguments mapping described in
-[DeleteForecastRequestRequestTypeDef](./type_defs.md#deleteforecastrequestrequesttypedef).
+```python title="Method definition"
+def delete_forecast(
+    self,
+    *,
+    ForecastArn: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `ForecastArn`: `str` *(required)*
 
-<a id="delete\_forecast\_export\_job"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteForecastRequestRequestTypeDef = {  # (1)
+    "ForecastArn": ...,
+}
 
-### delete_forecast_export_job
+parent.delete_forecast(**kwargs)
+```
 
-Deletes a forecast export job created using the CreateForecastExportJob
+1. See [:material-code-braces: DeleteForecastRequestRequestTypeDef](./type_defs.md#deleteforecastrequestrequesttypedef) 
+
+### delete\_forecast\_export\_job
+
+Deletes a forecast export job created using the  CreateForecastExportJob
 operation.
 
-Type annotations for `boto3.client("forecast").delete_forecast_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").delete_forecast_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast_export_job)
 
-Boto3 documentation:
-[ForecastService.Client.delete_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_forecast_export_job)
+```python title="Method definition"
+def delete_forecast_export_job(
+    self,
+    *,
+    ForecastExportJobArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteForecastExportJobRequestRequestTypeDef](./type_defs.md#deleteforecastexportjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ForecastExportJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteForecastExportJobRequestRequestTypeDef = {  # (1)
+    "ForecastExportJobArn": ...,
+}
 
-<a id="delete\_predictor"></a>
+parent.delete_forecast_export_job(**kwargs)
+```
 
-### delete_predictor
+1. See [:material-code-braces: DeleteForecastExportJobRequestRequestTypeDef](./type_defs.md#deleteforecastexportjobrequestrequesttypedef) 
 
-Deletes a predictor created using the DescribePredictor or CreatePredictor
+### delete\_predictor
+
+Deletes a predictor created using the  DescribePredictor or  CreatePredictor
 operations.
 
-Type annotations for `boto3.client("forecast").delete_predictor` method.
+Type annotations and code completion for `#!python boto3.client("forecast").delete_predictor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor)
 
-Boto3 documentation:
-[ForecastService.Client.delete_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor)
+```python title="Method definition"
+def delete_predictor(
+    self,
+    *,
+    PredictorArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePredictorRequestRequestTypeDef](./type_defs.md#deletepredictorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PredictorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePredictorRequestRequestTypeDef = {  # (1)
+    "PredictorArn": ...,
+}
 
-<a id="delete\_predictor\_backtest\_export\_job"></a>
+parent.delete_predictor(**kwargs)
+```
 
-### delete_predictor_backtest_export_job
+1. See [:material-code-braces: DeletePredictorRequestRequestTypeDef](./type_defs.md#deletepredictorrequestrequesttypedef) 
+
+### delete\_predictor\_backtest\_export\_job
 
 Deletes a predictor backtest export job.
 
-Type annotations for
-`boto3.client("forecast").delete_predictor_backtest_export_job` method.
+Type annotations and code completion for `#!python boto3.client("forecast").delete_predictor_backtest_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor_backtest_export_job)
 
-Boto3 documentation:
-[ForecastService.Client.delete_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_predictor_backtest_export_job)
+```python title="Method definition"
+def delete_predictor_backtest_export_job(
+    self,
+    *,
+    PredictorBacktestExportJobArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#deletepredictorbacktestexportjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PredictorBacktestExportJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePredictorBacktestExportJobRequestRequestTypeDef = {  # (1)
+    "PredictorBacktestExportJobArn": ...,
+}
 
-<a id="delete\_resource\_tree"></a>
+parent.delete_predictor_backtest_export_job(**kwargs)
+```
 
-### delete_resource_tree
+1. See [:material-code-braces: DeletePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#deletepredictorbacktestexportjobrequestrequesttypedef) 
+
+### delete\_resource\_tree
 
 Deletes an entire resource tree.
 
-Type annotations for `boto3.client("forecast").delete_resource_tree` method.
+Type annotations and code completion for `#!python boto3.client("forecast").delete_resource_tree` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_resource_tree)
 
-Boto3 documentation:
-[ForecastService.Client.delete_resource_tree](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.delete_resource_tree)
+```python title="Method definition"
+def delete_resource_tree(
+    self,
+    *,
+    ResourceArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourceTreeRequestRequestTypeDef](./type_defs.md#deleteresourcetreerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResourceTreeRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-<a id="describe\_auto\_predictor"></a>
+parent.delete_resource_tree(**kwargs)
+```
 
-### describe_auto_predictor
+1. See [:material-code-braces: DeleteResourceTreeRequestRequestTypeDef](./type_defs.md#deleteresourcetreerequestrequesttypedef) 
+
+### describe\_auto\_predictor
 
 Describes a predictor created using the CreateAutoPredictor operation.
 
-Type annotations for `boto3.client("forecast").describe_auto_predictor` method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_auto_predictor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_auto_predictor)
 
-Boto3 documentation:
-[ForecastService.Client.describe_auto_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_auto_predictor)
+```python title="Method definition"
+def describe_auto_predictor(
+    self,
+    *,
+    PredictorArn: str,
+) -> DescribeAutoPredictorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAutoPredictorRequestRequestTypeDef](./type_defs.md#describeautopredictorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAutoPredictorResponseTypeDef](./type_defs.md#describeautopredictorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PredictorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAutoPredictorRequestRequestTypeDef = {  # (1)
+    "PredictorArn": ...,
+}
 
-Returns
-[DescribeAutoPredictorResponseTypeDef](./type_defs.md#describeautopredictorresponsetypedef).
+parent.describe_auto_predictor(**kwargs)
+```
 
-<a id="describe\_dataset"></a>
+1. See [:material-code-braces: DescribeAutoPredictorRequestRequestTypeDef](./type_defs.md#describeautopredictorrequestrequesttypedef) 
 
-### describe_dataset
+### describe\_dataset
 
-Describes an Amazon Forecast dataset created using the CreateDataset operation.
+Describes an Amazon Forecast dataset created using the  CreateDataset operation.
 
-Type annotations for `boto3.client("forecast").describe_dataset` method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset)
 
-Boto3 documentation:
-[ForecastService.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset)
+```python title="Method definition"
+def describe_dataset(
+    self,
+    *,
+    DatasetArn: str,
+) -> DescribeDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetArn": ...,
+}
 
-Returns
-[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+parent.describe_dataset(**kwargs)
+```
 
-<a id="describe\_dataset\_group"></a>
+1. See [:material-code-braces: DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef) 
 
-### describe_dataset_group
+### describe\_dataset\_group
 
-Describes a dataset group created using the CreateDatasetGroup operation.
+Describes a dataset group created using the  CreateDatasetGroup operation.
 
-Type annotations for `boto3.client("forecast").describe_dataset_group` method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_dataset_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_group)
 
-Boto3 documentation:
-[ForecastService.Client.describe_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_group)
+```python title="Method definition"
+def describe_dataset_group(
+    self,
+    *,
+    DatasetGroupArn: str,
+) -> DescribeDatasetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetGroupRequestRequestTypeDef](./type_defs.md#describedatasetgrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetGroupRequestRequestTypeDef = {  # (1)
+    "DatasetGroupArn": ...,
+}
 
-Returns
-[DescribeDatasetGroupResponseTypeDef](./type_defs.md#describedatasetgroupresponsetypedef).
+parent.describe_dataset_group(**kwargs)
+```
 
-<a id="describe\_dataset\_import\_job"></a>
+1. See [:material-code-braces: DescribeDatasetGroupRequestRequestTypeDef](./type_defs.md#describedatasetgrouprequestrequesttypedef) 
 
-### describe_dataset_import_job
+### describe\_dataset\_import\_job
 
-Describes a dataset import job created using the CreateDatasetImportJob
+Describes a dataset import job created using the  CreateDatasetImportJob
 operation.
 
-Type annotations for `boto3.client("forecast").describe_dataset_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_dataset_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_import_job)
 
-Boto3 documentation:
-[ForecastService.Client.describe_dataset_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_dataset_import_job)
+```python title="Method definition"
+def describe_dataset_import_job(
+    self,
+    *,
+    DatasetImportJobArn: str,
+) -> DescribeDatasetImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetImportJobRequestRequestTypeDef](./type_defs.md#describedatasetimportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetImportJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetImportJobRequestRequestTypeDef = {  # (1)
+    "DatasetImportJobArn": ...,
+}
 
-Returns
-[DescribeDatasetImportJobResponseTypeDef](./type_defs.md#describedatasetimportjobresponsetypedef).
+parent.describe_dataset_import_job(**kwargs)
+```
 
-<a id="describe\_explainability"></a>
+1. See [:material-code-braces: DescribeDatasetImportJobRequestRequestTypeDef](./type_defs.md#describedatasetimportjobrequestrequesttypedef) 
 
-### describe_explainability
+### describe\_explainability
 
-Describes an Explainability resource created using the CreateExplainability
+Describes an Explainability resource created using the  CreateExplainability
 operation.
 
-Type annotations for `boto3.client("forecast").describe_explainability` method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_explainability` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_explainability)
 
-Boto3 documentation:
-[ForecastService.Client.describe_explainability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_explainability)
+```python title="Method definition"
+def describe_explainability(
+    self,
+    *,
+    ExplainabilityArn: str,
+) -> DescribeExplainabilityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExplainabilityRequestRequestTypeDef](./type_defs.md#describeexplainabilityrequestrequesttypedef).
+1. See [:material-code-braces: DescribeExplainabilityResponseTypeDef](./type_defs.md#describeexplainabilityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ExplainabilityArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeExplainabilityRequestRequestTypeDef = {  # (1)
+    "ExplainabilityArn": ...,
+}
 
-Returns
-[DescribeExplainabilityResponseTypeDef](./type_defs.md#describeexplainabilityresponsetypedef).
+parent.describe_explainability(**kwargs)
+```
 
-<a id="describe\_explainability\_export"></a>
+1. See [:material-code-braces: DescribeExplainabilityRequestRequestTypeDef](./type_defs.md#describeexplainabilityrequestrequesttypedef) 
 
-### describe_explainability_export
+### describe\_explainability\_export
 
-Describes an Explainability export created using the CreateExplainabilityExport
+Describes an Explainability export created using the  CreateExplainabilityExport
 operation.
 
-Type annotations for `boto3.client("forecast").describe_explainability_export`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_explainability_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_explainability_export)
 
-Boto3 documentation:
-[ForecastService.Client.describe_explainability_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_explainability_export)
+```python title="Method definition"
+def describe_explainability_export(
+    self,
+    *,
+    ExplainabilityExportArn: str,
+) -> DescribeExplainabilityExportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExplainabilityExportRequestRequestTypeDef](./type_defs.md#describeexplainabilityexportrequestrequesttypedef).
+1. See [:material-code-braces: DescribeExplainabilityExportResponseTypeDef](./type_defs.md#describeexplainabilityexportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ExplainabilityExportArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeExplainabilityExportRequestRequestTypeDef = {  # (1)
+    "ExplainabilityExportArn": ...,
+}
 
-Returns
-[DescribeExplainabilityExportResponseTypeDef](./type_defs.md#describeexplainabilityexportresponsetypedef).
+parent.describe_explainability_export(**kwargs)
+```
 
-<a id="describe\_forecast"></a>
+1. See [:material-code-braces: DescribeExplainabilityExportRequestRequestTypeDef](./type_defs.md#describeexplainabilityexportrequestrequesttypedef) 
 
-### describe_forecast
+### describe\_forecast
 
-Describes a forecast created using the CreateForecast operation.
+Describes a forecast created using the  CreateForecast operation.
 
-Type annotations for `boto3.client("forecast").describe_forecast` method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_forecast` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast)
 
-Boto3 documentation:
-[ForecastService.Client.describe_forecast](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast)
+```python title="Method definition"
+def describe_forecast(
+    self,
+    *,
+    ForecastArn: str,
+) -> DescribeForecastResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeForecastRequestRequestTypeDef](./type_defs.md#describeforecastrequestrequesttypedef).
+1. See [:material-code-braces: DescribeForecastResponseTypeDef](./type_defs.md#describeforecastresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ForecastArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeForecastRequestRequestTypeDef = {  # (1)
+    "ForecastArn": ...,
+}
 
-Returns
-[DescribeForecastResponseTypeDef](./type_defs.md#describeforecastresponsetypedef).
+parent.describe_forecast(**kwargs)
+```
 
-<a id="describe\_forecast\_export\_job"></a>
+1. See [:material-code-braces: DescribeForecastRequestRequestTypeDef](./type_defs.md#describeforecastrequestrequesttypedef) 
 
-### describe_forecast_export_job
+### describe\_forecast\_export\_job
 
-Describes a forecast export job created using the CreateForecastExportJob
+Describes a forecast export job created using the  CreateForecastExportJob
 operation.
 
-Type annotations for `boto3.client("forecast").describe_forecast_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_forecast_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast_export_job)
 
-Boto3 documentation:
-[ForecastService.Client.describe_forecast_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_forecast_export_job)
+```python title="Method definition"
+def describe_forecast_export_job(
+    self,
+    *,
+    ForecastExportJobArn: str,
+) -> DescribeForecastExportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeForecastExportJobRequestRequestTypeDef](./type_defs.md#describeforecastexportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeForecastExportJobResponseTypeDef](./type_defs.md#describeforecastexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ForecastExportJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeForecastExportJobRequestRequestTypeDef = {  # (1)
+    "ForecastExportJobArn": ...,
+}
 
-Returns
-[DescribeForecastExportJobResponseTypeDef](./type_defs.md#describeforecastexportjobresponsetypedef).
+parent.describe_forecast_export_job(**kwargs)
+```
 
-<a id="describe\_predictor"></a>
+1. See [:material-code-braces: DescribeForecastExportJobRequestRequestTypeDef](./type_defs.md#describeforecastexportjobrequestrequesttypedef) 
 
-### describe_predictor
+### describe\_predictor
 
 .
 
-Type annotations for `boto3.client("forecast").describe_predictor` method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_predictor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor)
 
-Boto3 documentation:
-[ForecastService.Client.describe_predictor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor)
+```python title="Method definition"
+def describe_predictor(
+    self,
+    *,
+    PredictorArn: str,
+) -> DescribePredictorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePredictorRequestRequestTypeDef](./type_defs.md#describepredictorrequestrequesttypedef).
+1. See [:material-code-braces: DescribePredictorResponseTypeDef](./type_defs.md#describepredictorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PredictorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePredictorRequestRequestTypeDef = {  # (1)
+    "PredictorArn": ...,
+}
 
-Returns
-[DescribePredictorResponseTypeDef](./type_defs.md#describepredictorresponsetypedef).
+parent.describe_predictor(**kwargs)
+```
 
-<a id="describe\_predictor\_backtest\_export\_job"></a>
+1. See [:material-code-braces: DescribePredictorRequestRequestTypeDef](./type_defs.md#describepredictorrequestrequesttypedef) 
 
-### describe_predictor_backtest_export_job
+### describe\_predictor\_backtest\_export\_job
 
 Describes a predictor backtest export job created using the
 CreatePredictorBacktestExportJob operation.
 
-Type annotations for
-`boto3.client("forecast").describe_predictor_backtest_export_job` method.
+Type annotations and code completion for `#!python boto3.client("forecast").describe_predictor_backtest_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor_backtest_export_job)
 
-Boto3 documentation:
-[ForecastService.Client.describe_predictor_backtest_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.describe_predictor_backtest_export_job)
+```python title="Method definition"
+def describe_predictor_backtest_export_job(
+    self,
+    *,
+    PredictorBacktestExportJobArn: str,
+) -> DescribePredictorBacktestExportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#describepredictorbacktestexportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribePredictorBacktestExportJobResponseTypeDef](./type_defs.md#describepredictorbacktestexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PredictorBacktestExportJobArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePredictorBacktestExportJobRequestRequestTypeDef = {  # (1)
+    "PredictorBacktestExportJobArn": ...,
+}
 
-Returns
-[DescribePredictorBacktestExportJobResponseTypeDef](./type_defs.md#describepredictorbacktestexportjobresponsetypedef).
+parent.describe_predictor_backtest_export_job(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribePredictorBacktestExportJobRequestRequestTypeDef](./type_defs.md#describepredictorbacktestexportjobrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("forecast").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("forecast").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ForecastService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_accuracy\_metrics"></a>
-
-### get_accuracy_metrics
+### get\_accuracy\_metrics
 
 Provides metrics on the accuracy of the models that were trained by the
 CreatePredictor operation.
 
-Type annotations for `boto3.client("forecast").get_accuracy_metrics` method.
+Type annotations and code completion for `#!python boto3.client("forecast").get_accuracy_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.get_accuracy_metrics)
 
-Boto3 documentation:
-[ForecastService.Client.get_accuracy_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.get_accuracy_metrics)
+```python title="Method definition"
+def get_accuracy_metrics(
+    self,
+    *,
+    PredictorArn: str,
+) -> GetAccuracyMetricsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccuracyMetricsRequestRequestTypeDef](./type_defs.md#getaccuracymetricsrequestrequesttypedef).
+1. See [:material-code-braces: GetAccuracyMetricsResponseTypeDef](./type_defs.md#getaccuracymetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PredictorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccuracyMetricsRequestRequestTypeDef = {  # (1)
+    "PredictorArn": ...,
+}
 
-Returns
-[GetAccuracyMetricsResponseTypeDef](./type_defs.md#getaccuracymetricsresponsetypedef).
+parent.get_accuracy_metrics(**kwargs)
+```
 
-<a id="list\_dataset\_groups"></a>
+1. See [:material-code-braces: GetAccuracyMetricsRequestRequestTypeDef](./type_defs.md#getaccuracymetricsrequestrequesttypedef) 
 
-### list_dataset_groups
+### list\_dataset\_groups
 
-Returns a list of dataset groups created using the CreateDatasetGroup
+Returns a list of dataset groups created using the  CreateDatasetGroup
 operation.
 
-Type annotations for `boto3.client("forecast").list_dataset_groups` method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_dataset_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_groups)
 
-Boto3 documentation:
-[ForecastService.Client.list_dataset_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_groups)
+```python title="Method definition"
+def list_dataset_groups(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDatasetGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetGroupsRequestRequestTypeDef](./type_defs.md#listdatasetgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetGroupsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDatasetGroupsResponseTypeDef](./type_defs.md#listdatasetgroupsresponsetypedef).
+parent.list_dataset_groups(**kwargs)
+```
 
-<a id="list\_dataset\_import\_jobs"></a>
+1. See [:material-code-braces: ListDatasetGroupsRequestRequestTypeDef](./type_defs.md#listdatasetgroupsrequestrequesttypedef) 
 
-### list_dataset_import_jobs
+### list\_dataset\_import\_jobs
 
-Returns a list of dataset import jobs created using the CreateDatasetImportJob
+Returns a list of dataset import jobs created using the  CreateDatasetImportJob
 operation.
 
-Type annotations for `boto3.client("forecast").list_dataset_import_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_dataset_import_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_import_jobs)
 
-Boto3 documentation:
-[ForecastService.Client.list_dataset_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_dataset_import_jobs)
+```python title="Method definition"
+def list_dataset_import_jobs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListDatasetImportJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetImportJobsRequestRequestTypeDef](./type_defs.md#listdatasetimportjobsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListDatasetImportJobsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDatasetImportJobsResponseTypeDef](./type_defs.md#listdatasetimportjobsresponsetypedef).
+parent.list_dataset_import_jobs(**kwargs)
+```
 
-<a id="list\_datasets"></a>
+1. See [:material-code-braces: ListDatasetImportJobsRequestRequestTypeDef](./type_defs.md#listdatasetimportjobsrequestrequesttypedef) 
 
-### list_datasets
+### list\_datasets
 
-Returns a list of datasets created using the CreateDataset operation.
+Returns a list of datasets created using the  CreateDataset operation.
 
-Type annotations for `boto3.client("forecast").list_datasets` method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_datasets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_datasets)
 
-Boto3 documentation:
-[ForecastService.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_datasets)
+```python title="Method definition"
+def list_datasets(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDatasetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+parent.list_datasets(**kwargs)
+```
 
-<a id="list\_explainabilities"></a>
+1. See [:material-code-braces: ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef) 
 
-### list_explainabilities
+### list\_explainabilities
 
 Returns a list of Explainability resources created using the
 CreateExplainability operation.
 
-Type annotations for `boto3.client("forecast").list_explainabilities` method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_explainabilities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_explainabilities)
 
-Boto3 documentation:
-[ForecastService.Client.list_explainabilities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_explainabilities)
+```python title="Method definition"
+def list_explainabilities(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListExplainabilitiesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListExplainabilitiesRequestRequestTypeDef](./type_defs.md#listexplainabilitiesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListExplainabilitiesResponseTypeDef](./type_defs.md#listexplainabilitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListExplainabilitiesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListExplainabilitiesResponseTypeDef](./type_defs.md#listexplainabilitiesresponsetypedef).
+parent.list_explainabilities(**kwargs)
+```
 
-<a id="list\_explainability\_exports"></a>
+1. See [:material-code-braces: ListExplainabilitiesRequestRequestTypeDef](./type_defs.md#listexplainabilitiesrequestrequesttypedef) 
 
-### list_explainability_exports
+### list\_explainability\_exports
 
 Returns a list of Explainability exports created using the
 CreateExplainabilityExport operation.
 
-Type annotations for `boto3.client("forecast").list_explainability_exports`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_explainability_exports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_explainability_exports)
 
-Boto3 documentation:
-[ForecastService.Client.list_explainability_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_explainability_exports)
+```python title="Method definition"
+def list_explainability_exports(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListExplainabilityExportsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListExplainabilityExportsRequestRequestTypeDef](./type_defs.md#listexplainabilityexportsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListExplainabilityExportsResponseTypeDef](./type_defs.md#listexplainabilityexportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListExplainabilityExportsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListExplainabilityExportsResponseTypeDef](./type_defs.md#listexplainabilityexportsresponsetypedef).
+parent.list_explainability_exports(**kwargs)
+```
 
-<a id="list\_forecast\_export\_jobs"></a>
+1. See [:material-code-braces: ListExplainabilityExportsRequestRequestTypeDef](./type_defs.md#listexplainabilityexportsrequestrequesttypedef) 
 
-### list_forecast_export_jobs
+### list\_forecast\_export\_jobs
 
 Returns a list of forecast export jobs created using the
 CreateForecastExportJob operation.
 
-Type annotations for `boto3.client("forecast").list_forecast_export_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_forecast_export_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecast_export_jobs)
 
-Boto3 documentation:
-[ForecastService.Client.list_forecast_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecast_export_jobs)
+```python title="Method definition"
+def list_forecast_export_jobs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListForecastExportJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListForecastExportJobsRequestRequestTypeDef](./type_defs.md#listforecastexportjobsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListForecastExportJobsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListForecastExportJobsResponseTypeDef](./type_defs.md#listforecastexportjobsresponsetypedef).
+parent.list_forecast_export_jobs(**kwargs)
+```
 
-<a id="list\_forecasts"></a>
+1. See [:material-code-braces: ListForecastExportJobsRequestRequestTypeDef](./type_defs.md#listforecastexportjobsrequestrequesttypedef) 
 
-### list_forecasts
+### list\_forecasts
 
-Returns a list of forecasts created using the CreateForecast operation.
+Returns a list of forecasts created using the  CreateForecast operation.
 
-Type annotations for `boto3.client("forecast").list_forecasts` method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_forecasts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecasts)
 
-Boto3 documentation:
-[ForecastService.Client.list_forecasts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_forecasts)
+```python title="Method definition"
+def list_forecasts(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListForecastsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListForecastsRequestRequestTypeDef](./type_defs.md#listforecastsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListForecastsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListForecastsResponseTypeDef](./type_defs.md#listforecastsresponsetypedef).
+parent.list_forecasts(**kwargs)
+```
 
-<a id="list\_predictor\_backtest\_export\_jobs"></a>
+1. See [:material-code-braces: ListForecastsRequestRequestTypeDef](./type_defs.md#listforecastsrequestrequesttypedef) 
 
-### list_predictor_backtest_export_jobs
+### list\_predictor\_backtest\_export\_jobs
 
 Returns a list of predictor backtest export jobs created using the
 CreatePredictorBacktestExportJob operation.
 
-Type annotations for
-`boto3.client("forecast").list_predictor_backtest_export_jobs` method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_predictor_backtest_export_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictor_backtest_export_jobs)
 
-Boto3 documentation:
-[ForecastService.Client.list_predictor_backtest_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictor_backtest_export_jobs)
+```python title="Method definition"
+def list_predictor_backtest_export_jobs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListPredictorBacktestExportJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPredictorBacktestExportJobsRequestRequestTypeDef](./type_defs.md#listpredictorbacktestexportjobsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListPredictorBacktestExportJobsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListPredictorBacktestExportJobsResponseTypeDef](./type_defs.md#listpredictorbacktestexportjobsresponsetypedef).
+parent.list_predictor_backtest_export_jobs(**kwargs)
+```
 
-<a id="list\_predictors"></a>
+1. See [:material-code-braces: ListPredictorBacktestExportJobsRequestRequestTypeDef](./type_defs.md#listpredictorbacktestexportjobsrequestrequesttypedef) 
 
-### list_predictors
+### list\_predictors
 
-Returns a list of predictors created using the CreateAutoPredictor or
+Returns a list of predictors created using the  CreateAutoPredictor or
 CreatePredictor operations.
 
-Type annotations for `boto3.client("forecast").list_predictors` method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_predictors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictors)
 
-Boto3 documentation:
-[ForecastService.Client.list_predictors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_predictors)
+```python title="Method definition"
+def list_predictors(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListPredictorsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPredictorsRequestRequestTypeDef](./type_defs.md#listpredictorsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListPredictorsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListPredictorsResponseTypeDef](./type_defs.md#listpredictorsresponsetypedef).
+parent.list_predictors(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListPredictorsRequestRequestTypeDef](./type_defs.md#listpredictorsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for an Amazon Forecast resource.
 
-Type annotations for `boto3.client("forecast").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("forecast").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ForecastService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="stop\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### stop_resource
+### stop\_resource
 
 Stops a resource.
 
-Type annotations for `boto3.client("forecast").stop_resource` method.
+Type annotations and code completion for `#!python boto3.client("forecast").stop_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.stop_resource)
 
-Boto3 documentation:
-[ForecastService.Client.stop_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.stop_resource)
+```python title="Method definition"
+def stop_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopResourceRequestRequestTypeDef](./type_defs.md#stopresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.stop_resource(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: StopResourceRequestRequestTypeDef](./type_defs.md#stopresourcerequestrequesttypedef) 
+
+### tag\_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
 
-Type annotations for `boto3.client("forecast").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("forecast").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.tag_resource)
 
-Boto3 documentation:
-[ForecastService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes the specified tags from a resource.
 
-Type annotations for `boto3.client("forecast").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("forecast").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.untag_resource)
 
-Boto3 documentation:
-[ForecastService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_dataset\_group"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_dataset_group
+### update\_dataset\_group
 
 Replaces the datasets in a dataset group with the specified datasets.
 
-Type annotations for `boto3.client("forecast").update_dataset_group` method.
+Type annotations and code completion for `#!python boto3.client("forecast").update_dataset_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.update_dataset_group)
 
-Boto3 documentation:
-[ForecastService.Client.update_dataset_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.update_dataset_group)
+```python title="Method definition"
+def update_dataset_group(
+    self,
+    *,
+    DatasetGroupArn: str,
+    DatasetArns: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDatasetGroupRequestRequestTypeDef](./type_defs.md#updatedatasetgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatasetGroupArn`: `str` *(required)*
-- `DatasetArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateDatasetGroupRequestRequestTypeDef = {  # (1)
+    "DatasetGroupArn": ...,
+    "DatasetArns": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_dataset_group(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateDatasetGroupRequestRequestTypeDef](./type_defs.md#updatedatasetgrouprequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("forecast").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("forecast").get_paginator` method with overloads.
 
-- `client.get_paginator("list_dataset_groups")` ->
-  [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
-- `client.get_paginator("list_dataset_import_jobs")` ->
-  [ListDatasetImportJobsPaginator](./paginators.md#listdatasetimportjobspaginator)
-- `client.get_paginator("list_datasets")` ->
-  [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
-- `client.get_paginator("list_forecast_export_jobs")` ->
-  [ListForecastExportJobsPaginator](./paginators.md#listforecastexportjobspaginator)
-- `client.get_paginator("list_forecasts")` ->
-  [ListForecastsPaginator](./paginators.md#listforecastspaginator)
-- `client.get_paginator("list_predictor_backtest_export_jobs")` ->
-  [ListPredictorBacktestExportJobsPaginator](./paginators.md#listpredictorbacktestexportjobspaginator)
-- `client.get_paginator("list_predictors")` ->
-  [ListPredictorsPaginator](./paginators.md#listpredictorspaginator)
+- `client.get_paginator("list_dataset_groups")` -> [ListDatasetGroupsPaginator](./paginators.md#listdatasetgroupspaginator)
+- `client.get_paginator("list_dataset_import_jobs")` -> [ListDatasetImportJobsPaginator](./paginators.md#listdatasetimportjobspaginator)
+- `client.get_paginator("list_datasets")` -> [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+- `client.get_paginator("list_forecast_export_jobs")` -> [ListForecastExportJobsPaginator](./paginators.md#listforecastexportjobspaginator)
+- `client.get_paginator("list_forecasts")` -> [ListForecastsPaginator](./paginators.md#listforecastspaginator)
+- `client.get_paginator("list_predictor_backtest_export_jobs")` -> [ListPredictorBacktestExportJobsPaginator](./paginators.md#listpredictorbacktestexportjobspaginator)
+- `client.get_paginator("list_predictors")` -> [ListPredictorsPaginator](./paginators.md#listpredictorspaginator)
+
+
+

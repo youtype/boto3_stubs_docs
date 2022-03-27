@@ -1,121 +1,136 @@
-<a id="typed-dictionaries-for-boto3-account-module"></a>
-
-# Typed dictionaries for boto3 Account module
+# Typed dictionaries
 
 > [Index](../README.md) > [Account](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account)
-type annotations stubs module
-[mypy-boto3-account](https://pypi.org/project/mypy-boto3-account/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Account module](#typed-dictionaries-for-boto3-account-module)
-  - [AlternateContactTypeDef](#alternatecontacttypedef)
-  - [DeleteAlternateContactRequestRequestTypeDef](#deletealternatecontactrequestrequesttypedef)
-  - [GetAlternateContactRequestRequestTypeDef](#getalternatecontactrequestrequesttypedef)
-  - [GetAlternateContactResponseTypeDef](#getalternatecontactresponsetypedef)
-  - [PutAlternateContactRequestRequestTypeDef](#putalternatecontactrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-
-<a id="alternatecontacttypedef"></a>
+    Auto-generated documentation for [Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account)
+    type annotations stubs module [mypy-boto3-account](https://pypi.org/project/mypy-boto3-account/).
 
 ## AlternateContactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_account.type_defs import AlternateContactTypeDef
+
+def get_value() -> AlternateContactTypeDef:
+    return {
+        "AlternateContactType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlternateContactTypeDef(TypedDict):
+    AlternateContactType: NotRequired[AlternateContactTypeType],  # (1)
+    EmailAddress: NotRequired[str],
+    Name: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    Title: NotRequired[str],
+```
 
-- `AlternateContactType`:
-  [AlternateContactTypeType](./literals.md#alternatecontacttypetype)
-- `EmailAddress`: `str`
-- `Name`: `str`
-- `PhoneNumber`: `str`
-- `Title`: `str`
-
-<a id="deletealternatecontactrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
 ## DeleteAlternateContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_account.type_defs import DeleteAlternateContactRequestRequestTypeDef
+
+def get_value() -> DeleteAlternateContactRequestRequestTypeDef:
+    return {
+        "AlternateContactType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAlternateContactRequestRequestTypeDef(TypedDict):
+    AlternateContactType: AlternateContactTypeType,  # (1)
+    AccountId: NotRequired[str],
+```
 
-- `AlternateContactType`:
-  [AlternateContactTypeType](./literals.md#alternatecontacttypetype)
-
-Optional fields:
-
-- `AccountId`: `str`
-
-<a id="getalternatecontactrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
 ## GetAlternateContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_account.type_defs import GetAlternateContactRequestRequestTypeDef
+
+def get_value() -> GetAlternateContactRequestRequestTypeDef:
+    return {
+        "AlternateContactType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAlternateContactRequestRequestTypeDef(TypedDict):
+    AlternateContactType: AlternateContactTypeType,  # (1)
+    AccountId: NotRequired[str],
+```
 
-- `AlternateContactType`:
-  [AlternateContactTypeType](./literals.md#alternatecontacttypetype)
-
-Optional fields:
-
-- `AccountId`: `str`
-
-<a id="getalternatecontactresponsetypedef"></a>
-
+1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
 ## GetAlternateContactResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_account.type_defs import GetAlternateContactResponseTypeDef
+
+def get_value() -> GetAlternateContactResponseTypeDef:
+    return {
+        "AlternateContact": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAlternateContactResponseTypeDef(TypedDict):
+    AlternateContact: AlternateContactTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AlternateContact`:
-  [AlternateContactTypeDef](./type_defs.md#alternatecontacttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putalternatecontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AlternateContactTypeDef](./type_defs.md#alternatecontacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutAlternateContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_account.type_defs import PutAlternateContactRequestRequestTypeDef
+
+def get_value() -> PutAlternateContactRequestRequestTypeDef:
+    return {
+        "AlternateContactType": ...,
+        "EmailAddress": ...,
+        "Name": ...,
+        "PhoneNumber": ...,
+        "Title": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAlternateContactRequestRequestTypeDef(TypedDict):
+    AlternateContactType: AlternateContactTypeType,  # (1)
+    EmailAddress: str,
+    Name: str,
+    PhoneNumber: str,
+    Title: str,
+    AccountId: NotRequired[str],
+```
 
-- `AlternateContactType`:
-  [AlternateContactTypeType](./literals.md#alternatecontacttypetype)
-- `EmailAddress`: `str`
-- `Name`: `str`
-- `PhoneNumber`: `str`
-- `Title`: `str`
-
-Optional fields:
-
-- `AccountId`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: AlternateContactTypeType](./literals.md#alternatecontacttypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_account.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`

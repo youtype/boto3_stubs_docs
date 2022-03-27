@@ -1,37 +1,18 @@
-<a id="mediastoredataclient-for-boto3-mediastoredata-module"></a>
-
-# MediaStoreDataClient for boto3 MediaStoreData module
+# MediaStoreDataClient
 
 > [Index](../README.md) > [MediaStoreData](./README.md) > MediaStoreDataClient
 
-Auto-generated documentation for
-[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
-type annotations stubs module
-[mypy-boto3-mediastore-data](https://pypi.org/project/mypy-boto3-mediastore-data/).
+!!! note ""
 
-- [MediaStoreDataClient for boto3 MediaStoreData module](#mediastoredataclient-for-boto3-mediastoredata-module)
-  - [MediaStoreDataClient](#mediastoredataclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [delete_object](#delete_object)
-    - [describe_object](#describe_object)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_object](#get_object)
-    - [list_items](#list_items)
-    - [put_object](#put_object)
-    - [get_paginator](#get_paginator)
-
-<a id="mediastoredataclient"></a>
+    Auto-generated documentation for [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
+    type annotations stubs module [mypy-boto3-mediastore-data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 ## MediaStoreDataClient
 
-Type annotations for `boto3.client("mediastore-data")`
+Type annotations and code completion for `#!python boto3.client("mediastore-data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mediastore_data.client import MediaStoreDataClient
 
@@ -39,204 +20,236 @@ def get_mediastore-data_client() -> MediaStoreDataClient:
     return Session().client("mediastore-data")
 ```
 
-Boto3 documentation:
-[MediaStoreData.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mediastore-data").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mediastore-data")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ContainerNotFoundException,
+    client.InternalServerError,
+    client.ObjectNotFoundException,
+    client.RequestedRangeNotSatisfiableException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mediastore_data.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ContainerNotFoundException`
-- `Exceptions.InternalServerError`
-- `Exceptions.ObjectNotFoundException`
-- `Exceptions.RequestedRangeNotSatisfiableException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MediaStoreDataClient exceptions.
-
-Type annotations for `boto3.client("mediastore-data").exceptions` method.
-
-Boto3 documentation:
-[MediaStoreData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mediastore-data").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mediastore-data").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.can_paginate)
 
-Boto3 documentation:
-[MediaStoreData.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_object"></a>
-
-### delete_object
+### delete\_object
 
 Deletes an object at the specified path.
 
-Type annotations for `boto3.client("mediastore-data").delete_object` method.
+Type annotations and code completion for `#!python boto3.client("mediastore-data").delete_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.delete_object)
 
-Boto3 documentation:
-[MediaStoreData.Client.delete_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.delete_object)
+```python title="Method definition"
+def delete_object(
+    self,
+    *,
+    Path: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteObjectRequestRequestTypeDef](./type_defs.md#deleteobjectrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Path`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteObjectRequestRequestTypeDef = {  # (1)
+    "Path": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_object(**kwargs)
+```
 
-<a id="describe\_object"></a>
+1. See [:material-code-braces: DeleteObjectRequestRequestTypeDef](./type_defs.md#deleteobjectrequestrequesttypedef) 
 
-### describe_object
+### describe\_object
 
 Gets the headers for an object at the specified path.
 
-Type annotations for `boto3.client("mediastore-data").describe_object` method.
+Type annotations and code completion for `#!python boto3.client("mediastore-data").describe_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.describe_object)
 
-Boto3 documentation:
-[MediaStoreData.Client.describe_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.describe_object)
+```python title="Method definition"
+def describe_object(
+    self,
+    *,
+    Path: str,
+) -> DescribeObjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeObjectRequestRequestTypeDef](./type_defs.md#describeobjectrequestrequesttypedef).
+1. See [:material-code-braces: DescribeObjectResponseTypeDef](./type_defs.md#describeobjectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Path`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeObjectRequestRequestTypeDef = {  # (1)
+    "Path": ...,
+}
 
-Returns
-[DescribeObjectResponseTypeDef](./type_defs.md#describeobjectresponsetypedef).
+parent.describe_object(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeObjectRequestRequestTypeDef](./type_defs.md#describeobjectrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mediastore-data").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("mediastore-data").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MediaStoreData.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_object"></a>
-
-### get_object
+### get\_object
 
 Downloads the object at the specified path.
 
-Type annotations for `boto3.client("mediastore-data").get_object` method.
+Type annotations and code completion for `#!python boto3.client("mediastore-data").get_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.get_object)
 
-Boto3 documentation:
-[MediaStoreData.Client.get_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.get_object)
+```python title="Method definition"
+def get_object(
+    self,
+    *,
+    Path: str,
+    Range: str = ...,
+) -> GetObjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetObjectRequestRequestTypeDef](./type_defs.md#getobjectrequestrequesttypedef).
+1. See [:material-code-braces: GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Path`: `str` *(required)*
-- `Range`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetObjectRequestRequestTypeDef = {  # (1)
+    "Path": ...,
+}
 
-Returns [GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef).
+parent.get_object(**kwargs)
+```
 
-<a id="list\_items"></a>
+1. See [:material-code-braces: GetObjectRequestRequestTypeDef](./type_defs.md#getobjectrequestrequesttypedef) 
 
-### list_items
+### list\_items
 
 Provides a list of metadata entries about folders and objects in the specified
 folder.
 
-Type annotations for `boto3.client("mediastore-data").list_items` method.
+Type annotations and code completion for `#!python boto3.client("mediastore-data").list_items` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.list_items)
 
-Boto3 documentation:
-[MediaStoreData.Client.list_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.list_items)
+```python title="Method definition"
+def list_items(
+    self,
+    *,
+    Path: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListItemsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListItemsRequestRequestTypeDef](./type_defs.md#listitemsrequestrequesttypedef).
+1. See [:material-code-braces: ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Path`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListItemsRequestRequestTypeDef = {  # (1)
+    "Path": ...,
+}
 
-Returns [ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef).
+parent.list_items(**kwargs)
+```
 
-<a id="put\_object"></a>
+1. See [:material-code-braces: ListItemsRequestRequestTypeDef](./type_defs.md#listitemsrequestrequesttypedef) 
 
-### put_object
+### put\_object
 
 Uploads an object to the specified path.
 
-Type annotations for `boto3.client("mediastore-data").put_object` method.
+Type annotations and code completion for `#!python boto3.client("mediastore-data").put_object` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.put_object)
 
-Boto3 documentation:
-[MediaStoreData.Client.put_object](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.put_object)
+```python title="Method definition"
+def put_object(
+    self,
+    *,
+    Body: Union[bytes, IO[bytes], StreamingBody],
+    Path: str,
+    ContentType: str = ...,
+    CacheControl: str = ...,
+    StorageClass: StorageClassType = ...,  # (1)
+    UploadAvailability: UploadAvailabilityType = ...,  # (2)
+) -> PutObjectResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutObjectRequestRequestTypeDef](./type_defs.md#putobjectrequestrequesttypedef).
+1. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
+2. See [:material-code-brackets: UploadAvailabilityType](./literals.md#uploadavailabilitytype) 
+3. See [:material-code-braces: PutObjectResponseTypeDef](./type_defs.md#putobjectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `Path`: `str` *(required)*
-- `ContentType`: `str`
-- `CacheControl`: `str`
-- `StorageClass`: `Literal['TEMPORAL']` (see
-  [StorageClassType](./literals.md#storageclasstype))
-- `UploadAvailability`:
-  [UploadAvailabilityType](./literals.md#uploadavailabilitytype)
+```python title="Usage example with kwargs"
+kwargs: PutObjectRequestRequestTypeDef = {  # (1)
+    "Body": ...,
+    "Path": ...,
+}
 
-Returns [PutObjectResponseTypeDef](./type_defs.md#putobjectresponsetypedef).
+parent.put_object(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: PutObjectRequestRequestTypeDef](./type_defs.md#putobjectrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mediastore-data").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("mediastore-data").get_paginator` method with overloads.
 
-- `client.get_paginator("list_items")` ->
-  [ListItemsPaginator](./paginators.md#listitemspaginator)
+- `client.get_paginator("list_items")` -> [ListItemsPaginator](./paginators.md#listitemspaginator)
+
+
+

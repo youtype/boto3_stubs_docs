@@ -1,61 +1,18 @@
-<a id="drsclient-for-boto3-drs-module"></a>
-
-# drsClient for boto3 drs module
+# drsClient
 
 > [Index](../README.md) > [drs](./README.md) > drsClient
 
-Auto-generated documentation for
-[drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs)
-type annotations stubs module
-[mypy-boto3-drs](https://pypi.org/project/mypy-boto3-drs/).
+!!! note ""
 
-- [drsClient for boto3 drs module](#drsclient-for-boto3-drs-module)
-  - [drsClient](#drsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_replication_configuration_template](#create_replication_configuration_template)
-    - [delete_job](#delete_job)
-    - [delete_recovery_instance](#delete_recovery_instance)
-    - [delete_replication_configuration_template](#delete_replication_configuration_template)
-    - [delete_source_server](#delete_source_server)
-    - [describe_job_log_items](#describe_job_log_items)
-    - [describe_jobs](#describe_jobs)
-    - [describe_recovery_instances](#describe_recovery_instances)
-    - [describe_recovery_snapshots](#describe_recovery_snapshots)
-    - [describe_replication_configuration_templates](#describe_replication_configuration_templates)
-    - [describe_source_servers](#describe_source_servers)
-    - [disconnect_recovery_instance](#disconnect_recovery_instance)
-    - [disconnect_source_server](#disconnect_source_server)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_failback_replication_configuration](#get_failback_replication_configuration)
-    - [get_launch_configuration](#get_launch_configuration)
-    - [get_replication_configuration](#get_replication_configuration)
-    - [initialize_service](#initialize_service)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [retry_data_replication](#retry_data_replication)
-    - [start_failback_launch](#start_failback_launch)
-    - [start_recovery](#start_recovery)
-    - [stop_failback](#stop_failback)
-    - [tag_resource](#tag_resource)
-    - [terminate_recovery_instances](#terminate_recovery_instances)
-    - [untag_resource](#untag_resource)
-    - [update_failback_replication_configuration](#update_failback_replication_configuration)
-    - [update_launch_configuration](#update_launch_configuration)
-    - [update_replication_configuration](#update_replication_configuration)
-    - [update_replication_configuration_template](#update_replication_configuration_template)
-    - [get_paginator](#get_paginator)
-
-<a id="drsclient"></a>
+    Auto-generated documentation for [drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs)
+    type annotations stubs module [mypy-boto3-drs](https://pypi.org/project/mypy-boto3-drs/).
 
 ## drsClient
 
-Type annotations for `boto3.client("drs")`
+Type annotations and code completion for `#!python boto3.client("drs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_drs.client import drsClient
 
@@ -63,800 +20,1021 @@ def get_drs_client() -> drsClient:
     return Session().client("drs")
 ```
 
-Boto3 documentation:
-[drs.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("drs").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("drs")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.UninitializedAccountException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_drs.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.UninitializedAccountException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-drsClient exceptions.
-
-Type annotations for `boto3.client("drs").exceptions` method.
-
-Boto3 documentation:
-[drs.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("drs").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("drs").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.can_paginate)
 
-Boto3 documentation:
-[drs.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_replication\_configuration\_template"></a>
-
-### create_replication_configuration_template
+### create\_replication\_configuration\_template
 
 Creates a new ReplicationConfigurationTemplate.
 
-Type annotations for
-`boto3.client("drs").create_replication_configuration_template` method.
+Type annotations and code completion for `#!python boto3.client("drs").create_replication_configuration_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.create_replication_configuration_template)
 
-Boto3 documentation:
-[drs.Client.create_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.create_replication_configuration_template)
+```python title="Method definition"
+def create_replication_configuration_template(
+    self,
+    *,
+    associateDefaultSecurityGroup: bool,
+    bandwidthThrottling: int,
+    createPublicIP: bool,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType,  # (3)
+    pitPolicy: Sequence[PITPolicyRuleTypeDef],  # (4)
+    replicationServerInstanceType: str,
+    replicationServersSecurityGroupsIDs: Sequence[str],
+    stagingAreaSubnetId: str,
+    stagingAreaTags: Mapping[str, str],
+    useDedicatedReplicationServer: bool,
+    ebsEncryptionKeyArn: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> ReplicationConfigurationTemplateResponseMetadataTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationtemplaterequestrequesttypedef).
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+5. See [:material-code-braces: ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `associateDefaultSecurityGroup`: `bool` *(required)*
-- `bandwidthThrottling`: `int` *(required)*
-- `createPublicIP`: `bool` *(required)*
-- `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
-  *(required)*
-- `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
-  *(required)*
-- `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
-  *(required)*
-- `pitPolicy`:
-  `Sequence`\[[PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef)\]
-  *(required)*
-- `replicationServerInstanceType`: `str` *(required)*
-- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\] *(required)*
-- `stagingAreaSubnetId`: `str` *(required)*
-- `stagingAreaTags`: `Mapping`\[`str`, `str`\] *(required)*
-- `useDedicatedReplicationServer`: `bool` *(required)*
-- `ebsEncryptionKeyArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateReplicationConfigurationTemplateRequestRequestTypeDef = {  # (1)
+    "associateDefaultSecurityGroup": ...,
+    "bandwidthThrottling": ...,
+    "createPublicIP": ...,
+    "dataPlaneRouting": ...,
+    "defaultLargeStagingDiskType": ...,
+    "ebsEncryption": ...,
+    "pitPolicy": ...,
+    "replicationServerInstanceType": ...,
+    "replicationServersSecurityGroupsIDs": ...,
+    "stagingAreaSubnetId": ...,
+    "stagingAreaTags": ...,
+    "useDedicatedReplicationServer": ...,
+}
 
-Returns
-[ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
+parent.create_replication_configuration_template(**kwargs)
+```
 
-<a id="delete\_job"></a>
+1. See [:material-code-braces: CreateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationtemplaterequestrequesttypedef) 
 
-### delete_job
+### delete\_job
 
 Deletes a single Job by ID.
 
-Type annotations for `boto3.client("drs").delete_job` method.
+Type annotations and code completion for `#!python boto3.client("drs").delete_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.delete_job)
 
-Boto3 documentation:
-[drs.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.delete_job)
+```python title="Method definition"
+def delete_job(
+    self,
+    *,
+    jobID: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteJobRequestRequestTypeDef = {  # (1)
+    "jobID": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_job(**kwargs)
+```
 
-<a id="delete\_recovery\_instance"></a>
+1. See [:material-code-braces: DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef) 
 
-### delete_recovery_instance
+### delete\_recovery\_instance
 
 Deletes a single Recovery Instance by ID.
 
-Type annotations for `boto3.client("drs").delete_recovery_instance` method.
+Type annotations and code completion for `#!python boto3.client("drs").delete_recovery_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.delete_recovery_instance)
 
-Boto3 documentation:
-[drs.Client.delete_recovery_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.delete_recovery_instance)
+```python title="Method definition"
+def delete_recovery_instance(
+    self,
+    *,
+    recoveryInstanceID: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRecoveryInstanceRequestRequestTypeDef](./type_defs.md#deleterecoveryinstancerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `recoveryInstanceID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRecoveryInstanceRequestRequestTypeDef = {  # (1)
+    "recoveryInstanceID": ...,
+}
 
-<a id="delete\_replication\_configuration\_template"></a>
+parent.delete_recovery_instance(**kwargs)
+```
 
-### delete_replication_configuration_template
+1. See [:material-code-braces: DeleteRecoveryInstanceRequestRequestTypeDef](./type_defs.md#deleterecoveryinstancerequestrequesttypedef) 
 
-Deletes a single Replication Configuration Template by ID See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/drs-2020-02-26/DeleteReplicationConfigurationTemplate).
+### delete\_replication\_configuration\_template
 
-Type annotations for
-`boto3.client("drs").delete_replication_configuration_template` method.
+Deletes a single Replication Configuration Template by ID See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/drs-2020-02-26/DeleteReplicationConfigurationTemplate).
 
-Boto3 documentation:
-[drs.Client.delete_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.delete_replication_configuration_template)
+Type annotations and code completion for `#!python boto3.client("drs").delete_replication_configuration_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.delete_replication_configuration_template)
 
-Arguments mapping described in
-[DeleteReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationtemplaterequestrequesttypedef).
+```python title="Method definition"
+def delete_replication_configuration_template(
+    self,
+    *,
+    replicationConfigurationTemplateID: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Keyword-only arguments:
 
-- `replicationConfigurationTemplateID`: `str` *(required)*
 
-Returns `Dict`\[`str`, `Any`\].
+```python title="Usage example with kwargs"
+kwargs: DeleteReplicationConfigurationTemplateRequestRequestTypeDef = {  # (1)
+    "replicationConfigurationTemplateID": ...,
+}
 
-<a id="delete\_source\_server"></a>
+parent.delete_replication_configuration_template(**kwargs)
+```
 
-### delete_source_server
+1. See [:material-code-braces: DeleteReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationtemplaterequestrequesttypedef) 
+
+### delete\_source\_server
 
 Deletes a single Source Server by ID.
 
-Type annotations for `boto3.client("drs").delete_source_server` method.
+Type annotations and code completion for `#!python boto3.client("drs").delete_source_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.delete_source_server)
 
-Boto3 documentation:
-[drs.Client.delete_source_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.delete_source_server)
+```python title="Method definition"
+def delete_source_server(
+    self,
+    *,
+    sourceServerID: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSourceServerRequestRequestTypeDef](./type_defs.md#deletesourceserverrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSourceServerRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_source_server(**kwargs)
+```
 
-<a id="describe\_job\_log\_items"></a>
+1. See [:material-code-braces: DeleteSourceServerRequestRequestTypeDef](./type_defs.md#deletesourceserverrequestrequesttypedef) 
 
-### describe_job_log_items
+### describe\_job\_log\_items
 
 Retrieves a detailed Job log with pagination.
 
-Type annotations for `boto3.client("drs").describe_job_log_items` method.
+Type annotations and code completion for `#!python boto3.client("drs").describe_job_log_items` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_job_log_items)
 
-Boto3 documentation:
-[drs.Client.describe_job_log_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_job_log_items)
+```python title="Method definition"
+def describe_job_log_items(
+    self,
+    *,
+    jobID: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeJobLogItemsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobLogItemsRequestRequestTypeDef](./type_defs.md#describejoblogitemsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobID`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeJobLogItemsRequestRequestTypeDef = {  # (1)
+    "jobID": ...,
+}
 
-Returns
-[DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef).
+parent.describe_job_log_items(**kwargs)
+```
 
-<a id="describe\_jobs"></a>
+1. See [:material-code-braces: DescribeJobLogItemsRequestRequestTypeDef](./type_defs.md#describejoblogitemsrequestrequesttypedef) 
 
-### describe_jobs
+### describe\_jobs
 
 Returns a list of Jobs.
 
-Type annotations for `boto3.client("drs").describe_jobs` method.
+Type annotations and code completion for `#!python boto3.client("drs").describe_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_jobs)
 
-Boto3 documentation:
-[drs.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_jobs)
+```python title="Method definition"
+def describe_jobs(
+    self,
+    *,
+    filters: DescribeJobsRequestFiltersTypeDef,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef) 
+2. See [:material-code-braces: DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`:
-  [DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef)
-  *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeJobsRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
+parent.describe_jobs(**kwargs)
+```
 
-<a id="describe\_recovery\_instances"></a>
+1. See [:material-code-braces: DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef) 
 
-### describe_recovery_instances
+### describe\_recovery\_instances
 
 Lists all Recovery Instances or multiple Recovery Instances by ID.
 
-Type annotations for `boto3.client("drs").describe_recovery_instances` method.
+Type annotations and code completion for `#!python boto3.client("drs").describe_recovery_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_recovery_instances)
 
-Boto3 documentation:
-[drs.Client.describe_recovery_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_recovery_instances)
+```python title="Method definition"
+def describe_recovery_instances(
+    self,
+    *,
+    filters: DescribeRecoveryInstancesRequestFiltersTypeDef,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeRecoveryInstancesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRecoveryInstancesRequestRequestTypeDef](./type_defs.md#describerecoveryinstancesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRecoveryInstancesRequestFiltersTypeDef](./type_defs.md#describerecoveryinstancesrequestfilterstypedef) 
+2. See [:material-code-braces: DescribeRecoveryInstancesResponseTypeDef](./type_defs.md#describerecoveryinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`:
-  [DescribeRecoveryInstancesRequestFiltersTypeDef](./type_defs.md#describerecoveryinstancesrequestfilterstypedef)
-  *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeRecoveryInstancesRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[DescribeRecoveryInstancesResponseTypeDef](./type_defs.md#describerecoveryinstancesresponsetypedef).
+parent.describe_recovery_instances(**kwargs)
+```
 
-<a id="describe\_recovery\_snapshots"></a>
+1. See [:material-code-braces: DescribeRecoveryInstancesRequestRequestTypeDef](./type_defs.md#describerecoveryinstancesrequestrequesttypedef) 
 
-### describe_recovery_snapshots
+### describe\_recovery\_snapshots
 
 Lists all Recovery Snapshots for a single Source Server.
 
-Type annotations for `boto3.client("drs").describe_recovery_snapshots` method.
+Type annotations and code completion for `#!python boto3.client("drs").describe_recovery_snapshots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_recovery_snapshots)
 
-Boto3 documentation:
-[drs.Client.describe_recovery_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_recovery_snapshots)
+```python title="Method definition"
+def describe_recovery_snapshots(
+    self,
+    *,
+    sourceServerID: str,
+    filters: DescribeRecoverySnapshotsRequestFiltersTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    order: RecoverySnapshotsOrderType = ...,  # (2)
+) -> DescribeRecoverySnapshotsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRecoverySnapshotsRequestRequestTypeDef](./type_defs.md#describerecoverysnapshotsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRecoverySnapshotsRequestFiltersTypeDef](./type_defs.md#describerecoverysnapshotsrequestfilterstypedef) 
+2. See [:material-code-brackets: RecoverySnapshotsOrderType](./literals.md#recoverysnapshotsordertype) 
+3. See [:material-code-braces: DescribeRecoverySnapshotsResponseTypeDef](./type_defs.md#describerecoverysnapshotsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
-- `filters`:
-  [DescribeRecoverySnapshotsRequestFiltersTypeDef](./type_defs.md#describerecoverysnapshotsrequestfilterstypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `order`:
-  [RecoverySnapshotsOrderType](./literals.md#recoverysnapshotsordertype)
+```python title="Usage example with kwargs"
+kwargs: DescribeRecoverySnapshotsRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[DescribeRecoverySnapshotsResponseTypeDef](./type_defs.md#describerecoverysnapshotsresponsetypedef).
+parent.describe_recovery_snapshots(**kwargs)
+```
 
-<a id="describe\_replication\_configuration\_templates"></a>
+1. See [:material-code-braces: DescribeRecoverySnapshotsRequestRequestTypeDef](./type_defs.md#describerecoverysnapshotsrequestrequesttypedef) 
 
-### describe_replication_configuration_templates
+### describe\_replication\_configuration\_templates
 
 Lists all ReplicationConfigurationTemplates, filtered by Source Server IDs.
 
-Type annotations for
-`boto3.client("drs").describe_replication_configuration_templates` method.
+Type annotations and code completion for `#!python boto3.client("drs").describe_replication_configuration_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_replication_configuration_templates)
 
-Boto3 documentation:
-[drs.Client.describe_replication_configuration_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_replication_configuration_templates)
+```python title="Method definition"
+def describe_replication_configuration_templates(
+    self,
+    *,
+    replicationConfigurationTemplateIDs: Sequence[str],
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeReplicationConfigurationTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationConfigurationTemplatesRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `replicationConfigurationTemplateIDs`: `Sequence`\[`str`\] *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationConfigurationTemplatesRequestRequestTypeDef = {  # (1)
+    "replicationConfigurationTemplateIDs": ...,
+}
 
-Returns
-[DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef).
+parent.describe_replication_configuration_templates(**kwargs)
+```
 
-<a id="describe\_source\_servers"></a>
+1. See [:material-code-braces: DescribeReplicationConfigurationTemplatesRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestrequesttypedef) 
 
-### describe_source_servers
+### describe\_source\_servers
 
 Lists all Source Servers or multiple Source Servers filtered by ID.
 
-Type annotations for `boto3.client("drs").describe_source_servers` method.
+Type annotations and code completion for `#!python boto3.client("drs").describe_source_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_source_servers)
 
-Boto3 documentation:
-[drs.Client.describe_source_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.describe_source_servers)
+```python title="Method definition"
+def describe_source_servers(
+    self,
+    *,
+    filters: DescribeSourceServersRequestFiltersTypeDef,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeSourceServersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSourceServersRequestRequestTypeDef](./type_defs.md#describesourceserversrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef) 
+2. See [:material-code-braces: DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`:
-  [DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef)
-  *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSourceServersRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef).
+parent.describe_source_servers(**kwargs)
+```
 
-<a id="disconnect\_recovery\_instance"></a>
+1. See [:material-code-braces: DescribeSourceServersRequestRequestTypeDef](./type_defs.md#describesourceserversrequestrequesttypedef) 
 
-### disconnect_recovery_instance
+### disconnect\_recovery\_instance
 
 Disconnect a Recovery Instance from Elastic Disaster Recovery.
 
-Type annotations for `boto3.client("drs").disconnect_recovery_instance` method.
+Type annotations and code completion for `#!python boto3.client("drs").disconnect_recovery_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.disconnect_recovery_instance)
 
-Boto3 documentation:
-[drs.Client.disconnect_recovery_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.disconnect_recovery_instance)
+```python title="Method definition"
+def disconnect_recovery_instance(
+    self,
+    *,
+    recoveryInstanceID: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisconnectRecoveryInstanceRequestRequestTypeDef](./type_defs.md#disconnectrecoveryinstancerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `recoveryInstanceID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisconnectRecoveryInstanceRequestRequestTypeDef = {  # (1)
+    "recoveryInstanceID": ...,
+}
 
-<a id="disconnect\_source\_server"></a>
+parent.disconnect_recovery_instance(**kwargs)
+```
 
-### disconnect_source_server
+1. See [:material-code-braces: DisconnectRecoveryInstanceRequestRequestTypeDef](./type_defs.md#disconnectrecoveryinstancerequestrequesttypedef) 
+
+### disconnect\_source\_server
 
 Disconnects a specific Source Server from Elastic Disaster Recovery.
 
-Type annotations for `boto3.client("drs").disconnect_source_server` method.
+Type annotations and code completion for `#!python boto3.client("drs").disconnect_source_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.disconnect_source_server)
 
-Boto3 documentation:
-[drs.Client.disconnect_source_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.disconnect_source_server)
+```python title="Method definition"
+def disconnect_source_server(
+    self,
+    *,
+    sourceServerID: str,
+) -> SourceServerResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisconnectSourceServerRequestRequestTypeDef](./type_defs.md#disconnectsourceserverrequestrequesttypedef).
+1. See [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisconnectSourceServerRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+parent.disconnect_source_server(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisconnectSourceServerRequestRequestTypeDef](./type_defs.md#disconnectsourceserverrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("drs").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("drs").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.generate_presigned_url)
 
-Boto3 documentation:
-[drs.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_failback\_replication\_configuration"></a>
-
-### get_failback_replication_configuration
+### get\_failback\_replication\_configuration
 
 Lists all Failback ReplicationConfigurations, filtered by Recovery Instance ID.
 
-Type annotations for
-`boto3.client("drs").get_failback_replication_configuration` method.
+Type annotations and code completion for `#!python boto3.client("drs").get_failback_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.get_failback_replication_configuration)
 
-Boto3 documentation:
-[drs.Client.get_failback_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.get_failback_replication_configuration)
+```python title="Method definition"
+def get_failback_replication_configuration(
+    self,
+    *,
+    recoveryInstanceID: str,
+) -> GetFailbackReplicationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFailbackReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getfailbackreplicationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetFailbackReplicationConfigurationResponseTypeDef](./type_defs.md#getfailbackreplicationconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `recoveryInstanceID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFailbackReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "recoveryInstanceID": ...,
+}
 
-Returns
-[GetFailbackReplicationConfigurationResponseTypeDef](./type_defs.md#getfailbackreplicationconfigurationresponsetypedef).
+parent.get_failback_replication_configuration(**kwargs)
+```
 
-<a id="get\_launch\_configuration"></a>
+1. See [:material-code-braces: GetFailbackReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getfailbackreplicationconfigurationrequestrequesttypedef) 
 
-### get_launch_configuration
+### get\_launch\_configuration
 
 Gets a LaunchConfiguration, filtered by Source Server IDs.
 
-Type annotations for `boto3.client("drs").get_launch_configuration` method.
+Type annotations and code completion for `#!python boto3.client("drs").get_launch_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.get_launch_configuration)
 
-Boto3 documentation:
-[drs.Client.get_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.get_launch_configuration)
+```python title="Method definition"
+def get_launch_configuration(
+    self,
+    *,
+    sourceServerID: str,
+) -> LaunchConfigurationTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLaunchConfigurationRequestRequestTypeDef](./type_defs.md#getlaunchconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLaunchConfigurationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
+parent.get_launch_configuration(**kwargs)
+```
 
-<a id="get\_replication\_configuration"></a>
+1. See [:material-code-braces: GetLaunchConfigurationRequestRequestTypeDef](./type_defs.md#getlaunchconfigurationrequestrequesttypedef) 
 
-### get_replication_configuration
+### get\_replication\_configuration
 
 Gets a ReplicationConfiguration, filtered by Source Server ID.
 
-Type annotations for `boto3.client("drs").get_replication_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("drs").get_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.get_replication_configuration)
 
-Boto3 documentation:
-[drs.Client.get_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.get_replication_configuration)
+```python title="Method definition"
+def get_replication_configuration(
+    self,
+    *,
+    sourceServerID: str,
+) -> ReplicationConfigurationTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getreplicationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
+parent.get_replication_configuration(**kwargs)
+```
 
-<a id="initialize\_service"></a>
+1. See [:material-code-braces: GetReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getreplicationconfigurationrequestrequesttypedef) 
 
-### initialize_service
+### initialize\_service
 
 Initialize Elastic Disaster Recovery.
 
-Type annotations for `boto3.client("drs").initialize_service` method.
+Type annotations and code completion for `#!python boto3.client("drs").initialize_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.initialize_service)
 
-Boto3 documentation:
-[drs.Client.initialize_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.initialize_service)
+```python title="Method definition"
+def initialize_service(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="list\_tags\_for\_resource"></a>
-
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List all tags for your Elastic Disaster Recovery resources.
 
-Type annotations for `boto3.client("drs").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("drs").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[drs.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="retry\_data\_replication"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### retry_data_replication
+### retry\_data\_replication
 
 Causes the data replication initiation sequence to begin immediately upon next
 Handshake for the specified Source Server ID, regardless of when the previous
 initiation started.
 
-Type annotations for `boto3.client("drs").retry_data_replication` method.
+Type annotations and code completion for `#!python boto3.client("drs").retry_data_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.retry_data_replication)
 
-Boto3 documentation:
-[drs.Client.retry_data_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.retry_data_replication)
+```python title="Method definition"
+def retry_data_replication(
+    self,
+    *,
+    sourceServerID: str,
+) -> SourceServerResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RetryDataReplicationRequestRequestTypeDef](./type_defs.md#retrydatareplicationrequestrequesttypedef).
+1. See [:material-code-braces: SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RetryDataReplicationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
+parent.retry_data_replication(**kwargs)
+```
 
-<a id="start\_failback\_launch"></a>
+1. See [:material-code-braces: RetryDataReplicationRequestRequestTypeDef](./type_defs.md#retrydatareplicationrequestrequesttypedef) 
 
-### start_failback_launch
+### start\_failback\_launch
 
 Initiates a Job for launching the machine that is being failed back to from the
 specified Recovery Instance.
 
-Type annotations for `boto3.client("drs").start_failback_launch` method.
+Type annotations and code completion for `#!python boto3.client("drs").start_failback_launch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.start_failback_launch)
 
-Boto3 documentation:
-[drs.Client.start_failback_launch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.start_failback_launch)
+```python title="Method definition"
+def start_failback_launch(
+    self,
+    *,
+    recoveryInstanceIDs: Sequence[str],
+    tags: Mapping[str, str] = ...,
+) -> StartFailbackLaunchResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartFailbackLaunchRequestRequestTypeDef](./type_defs.md#startfailbacklaunchrequestrequesttypedef).
+1. See [:material-code-braces: StartFailbackLaunchResponseTypeDef](./type_defs.md#startfailbacklaunchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `recoveryInstanceIDs`: `Sequence`\[`str`\] *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartFailbackLaunchRequestRequestTypeDef = {  # (1)
+    "recoveryInstanceIDs": ...,
+}
 
-Returns
-[StartFailbackLaunchResponseTypeDef](./type_defs.md#startfailbacklaunchresponsetypedef).
+parent.start_failback_launch(**kwargs)
+```
 
-<a id="start\_recovery"></a>
+1. See [:material-code-braces: StartFailbackLaunchRequestRequestTypeDef](./type_defs.md#startfailbacklaunchrequestrequesttypedef) 
 
-### start_recovery
+### start\_recovery
 
 Launches Recovery Instances for the specified Source Servers.
 
-Type annotations for `boto3.client("drs").start_recovery` method.
+Type annotations and code completion for `#!python boto3.client("drs").start_recovery` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.start_recovery)
 
-Boto3 documentation:
-[drs.Client.start_recovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.start_recovery)
+```python title="Method definition"
+def start_recovery(
+    self,
+    *,
+    sourceServers: Sequence[StartRecoveryRequestSourceServerTypeDef],  # (1)
+    isDrill: bool = ...,
+    tags: Mapping[str, str] = ...,
+) -> StartRecoveryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartRecoveryRequestRequestTypeDef](./type_defs.md#startrecoveryrequestrequesttypedef).
+1. See [:material-code-braces: StartRecoveryRequestSourceServerTypeDef](./type_defs.md#startrecoveryrequestsourceservertypedef) 
+2. See [:material-code-braces: StartRecoveryResponseTypeDef](./type_defs.md#startrecoveryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sourceServers`:
-  `Sequence`\[[StartRecoveryRequestSourceServerTypeDef](./type_defs.md#startrecoveryrequestsourceservertypedef)\]
-  *(required)*
-- `isDrill`: `bool`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartRecoveryRequestRequestTypeDef = {  # (1)
+    "sourceServers": ...,
+}
 
-Returns
-[StartRecoveryResponseTypeDef](./type_defs.md#startrecoveryresponsetypedef).
+parent.start_recovery(**kwargs)
+```
 
-<a id="stop\_failback"></a>
+1. See [:material-code-braces: StartRecoveryRequestRequestTypeDef](./type_defs.md#startrecoveryrequestrequesttypedef) 
 
-### stop_failback
+### stop\_failback
 
 Stops the failback process for a specified Recovery Instance.
 
-Type annotations for `boto3.client("drs").stop_failback` method.
+Type annotations and code completion for `#!python boto3.client("drs").stop_failback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.stop_failback)
 
-Boto3 documentation:
-[drs.Client.stop_failback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.stop_failback)
+```python title="Method definition"
+def stop_failback(
+    self,
+    *,
+    recoveryInstanceID: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopFailbackRequestRequestTypeDef](./type_defs.md#stopfailbackrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `recoveryInstanceID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopFailbackRequestRequestTypeDef = {  # (1)
+    "recoveryInstanceID": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.stop_failback(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: StopFailbackRequestRequestTypeDef](./type_defs.md#stopfailbackrequestrequesttypedef) 
+
+### tag\_resource
 
 Adds or overwrites only the specified tags for the specified Elastic Disaster
 Recovery resource or resources.
 
-Type annotations for `boto3.client("drs").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("drs").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.tag_resource)
 
-Boto3 documentation:
-[drs.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-<a id="terminate\_recovery\_instances"></a>
+parent.tag_resource(**kwargs)
+```
 
-### terminate_recovery_instances
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### terminate\_recovery\_instances
 
 Initiates a Job for terminating the EC2 resources associated with the specified
-Recovery Instances, and then will delete the Recovery Instances from the
-Elastic Disaster Recovery service.
+Recovery Instances, and then will delete the Recovery Instances from the Elastic
+Disaster Recovery service.
 
-Type annotations for `boto3.client("drs").terminate_recovery_instances` method.
+Type annotations and code completion for `#!python boto3.client("drs").terminate_recovery_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.terminate_recovery_instances)
 
-Boto3 documentation:
-[drs.Client.terminate_recovery_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.terminate_recovery_instances)
+```python title="Method definition"
+def terminate_recovery_instances(
+    self,
+    *,
+    recoveryInstanceIDs: Sequence[str],
+) -> TerminateRecoveryInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TerminateRecoveryInstancesRequestRequestTypeDef](./type_defs.md#terminaterecoveryinstancesrequestrequesttypedef).
+1. See [:material-code-braces: TerminateRecoveryInstancesResponseTypeDef](./type_defs.md#terminaterecoveryinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `recoveryInstanceIDs`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TerminateRecoveryInstancesRequestRequestTypeDef = {  # (1)
+    "recoveryInstanceIDs": ...,
+}
 
-Returns
-[TerminateRecoveryInstancesResponseTypeDef](./type_defs.md#terminaterecoveryinstancesresponsetypedef).
+parent.terminate_recovery_instances(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TerminateRecoveryInstancesRequestRequestTypeDef](./type_defs.md#terminaterecoveryinstancesrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes the specified set of tags from the specified set of Elastic Disaster
 Recovery resources.
 
-Type annotations for `boto3.client("drs").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("drs").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.untag_resource)
 
-Boto3 documentation:
-[drs.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-<a id="update\_failback\_replication\_configuration"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_failback_replication_configuration
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_failback\_replication\_configuration
 
 Allows you to update the failback replication configuration of a Recovery
 Instance by ID.
 
-Type annotations for
-`boto3.client("drs").update_failback_replication_configuration` method.
+Type annotations and code completion for `#!python boto3.client("drs").update_failback_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.update_failback_replication_configuration)
 
-Boto3 documentation:
-[drs.Client.update_failback_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.update_failback_replication_configuration)
+```python title="Method definition"
+def update_failback_replication_configuration(
+    self,
+    *,
+    recoveryInstanceID: str,
+    bandwidthThrottling: int = ...,
+    name: str = ...,
+    usePrivateIP: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateFailbackReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatefailbackreplicationconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `recoveryInstanceID`: `str` *(required)*
-- `bandwidthThrottling`: `int`
-- `name`: `str`
-- `usePrivateIP`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateFailbackReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "recoveryInstanceID": ...,
+}
 
-<a id="update\_launch\_configuration"></a>
+parent.update_failback_replication_configuration(**kwargs)
+```
 
-### update_launch_configuration
+1. See [:material-code-braces: UpdateFailbackReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatefailbackreplicationconfigurationrequestrequesttypedef) 
+
+### update\_launch\_configuration
 
 Updates a LaunchConfiguration by Source Server ID.
 
-Type annotations for `boto3.client("drs").update_launch_configuration` method.
+Type annotations and code completion for `#!python boto3.client("drs").update_launch_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.update_launch_configuration)
 
-Boto3 documentation:
-[drs.Client.update_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.update_launch_configuration)
+```python title="Method definition"
+def update_launch_configuration(
+    self,
+    *,
+    sourceServerID: str,
+    copyPrivateIp: bool = ...,
+    copyTags: bool = ...,
+    launchDisposition: LaunchDispositionType = ...,  # (1)
+    licensing: LicensingTypeDef = ...,  # (2)
+    name: str = ...,
+    targetInstanceTypeRightSizingMethod: TargetInstanceTypeRightSizingMethodType = ...,  # (3)
+) -> LaunchConfigurationTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLaunchConfigurationRequestRequestTypeDef](./type_defs.md#updatelaunchconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: LaunchDispositionType](./literals.md#launchdispositiontype) 
+2. See [:material-code-braces: LicensingTypeDef](./type_defs.md#licensingtypedef) 
+3. See [:material-code-brackets: TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype) 
+4. See [:material-code-braces: LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
-- `copyPrivateIp`: `bool`
-- `copyTags`: `bool`
-- `launchDisposition`:
-  [LaunchDispositionType](./literals.md#launchdispositiontype)
-- `licensing`: [LicensingTypeDef](./type_defs.md#licensingtypedef)
-- `name`: `str`
-- `targetInstanceTypeRightSizingMethod`:
-  [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
+```python title="Usage example with kwargs"
+kwargs: UpdateLaunchConfigurationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
+parent.update_launch_configuration(**kwargs)
+```
 
-<a id="update\_replication\_configuration"></a>
+1. See [:material-code-braces: UpdateLaunchConfigurationRequestRequestTypeDef](./type_defs.md#updatelaunchconfigurationrequestrequesttypedef) 
 
-### update_replication_configuration
+### update\_replication\_configuration
 
 Allows you to update a ReplicationConfiguration by Source Server ID.
 
-Type annotations for `boto3.client("drs").update_replication_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("drs").update_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.update_replication_configuration)
 
-Boto3 documentation:
-[drs.Client.update_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.update_replication_configuration)
+```python title="Method definition"
+def update_replication_configuration(
+    self,
+    *,
+    sourceServerID: str,
+    associateDefaultSecurityGroup: bool = ...,
+    bandwidthThrottling: int = ...,
+    createPublicIP: bool = ...,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType = ...,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType = ...,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType = ...,  # (3)
+    ebsEncryptionKeyArn: str = ...,
+    name: str = ...,
+    pitPolicy: Sequence[PITPolicyRuleTypeDef] = ...,  # (4)
+    replicatedDisks: Sequence[ReplicationConfigurationReplicatedDiskTypeDef] = ...,  # (5)
+    replicationServerInstanceType: str = ...,
+    replicationServersSecurityGroupsIDs: Sequence[str] = ...,
+    stagingAreaSubnetId: str = ...,
+    stagingAreaTags: Mapping[str, str] = ...,
+    useDedicatedReplicationServer: bool = ...,
+) -> ReplicationConfigurationTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[UpdateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+5. See [:material-code-braces: ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef) 
+6. See [:material-code-braces: ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `sourceServerID`: `str` *(required)*
-- `associateDefaultSecurityGroup`: `bool`
-- `bandwidthThrottling`: `int`
-- `createPublicIP`: `bool`
-- `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
-- `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
-- `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
-- `ebsEncryptionKeyArn`: `str`
-- `name`: `str`
-- `pitPolicy`:
-  `Sequence`\[[PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef)\]
-- `replicatedDisks`:
-  `Sequence`\[[ReplicationConfigurationReplicatedDiskTypeDef](./type_defs.md#replicationconfigurationreplicateddisktypedef)\]
-- `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\]
-- `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Mapping`\[`str`, `str`\]
-- `useDedicatedReplicationServer`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "sourceServerID": ...,
+}
 
-Returns
-[ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
+parent.update_replication_configuration(**kwargs)
+```
 
-<a id="update\_replication\_configuration\_template"></a>
+1. See [:material-code-braces: UpdateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationrequestrequesttypedef) 
 
-### update_replication_configuration_template
+### update\_replication\_configuration\_template
 
 Updates a ReplicationConfigurationTemplate by ID.
 
-Type annotations for
-`boto3.client("drs").update_replication_configuration_template` method.
+Type annotations and code completion for `#!python boto3.client("drs").update_replication_configuration_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.update_replication_configuration_template)
 
-Boto3 documentation:
-[drs.Client.update_replication_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.update_replication_configuration_template)
+```python title="Method definition"
+def update_replication_configuration_template(
+    self,
+    *,
+    replicationConfigurationTemplateID: str,
+    arn: str = ...,
+    associateDefaultSecurityGroup: bool = ...,
+    bandwidthThrottling: int = ...,
+    createPublicIP: bool = ...,
+    dataPlaneRouting: ReplicationConfigurationDataPlaneRoutingType = ...,  # (1)
+    defaultLargeStagingDiskType: ReplicationConfigurationDefaultLargeStagingDiskTypeType = ...,  # (2)
+    ebsEncryption: ReplicationConfigurationEbsEncryptionType = ...,  # (3)
+    ebsEncryptionKeyArn: str = ...,
+    pitPolicy: Sequence[PITPolicyRuleTypeDef] = ...,  # (4)
+    replicationServerInstanceType: str = ...,
+    replicationServersSecurityGroupsIDs: Sequence[str] = ...,
+    stagingAreaSubnetId: str = ...,
+    stagingAreaTags: Mapping[str, str] = ...,
+    useDedicatedReplicationServer: bool = ...,
+) -> ReplicationConfigurationTemplateResponseMetadataTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequestrequesttypedef).
+1. See [:material-code-brackets: ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype) 
+2. See [:material-code-brackets: ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype) 
+3. See [:material-code-brackets: ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype) 
+4. See [:material-code-braces: PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef) 
+5. See [:material-code-braces: ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `replicationConfigurationTemplateID`: `str` *(required)*
-- `arn`: `str`
-- `associateDefaultSecurityGroup`: `bool`
-- `bandwidthThrottling`: `int`
-- `createPublicIP`: `bool`
-- `dataPlaneRouting`:
-  [ReplicationConfigurationDataPlaneRoutingType](./literals.md#replicationconfigurationdataplaneroutingtype)
-- `defaultLargeStagingDiskType`:
-  [ReplicationConfigurationDefaultLargeStagingDiskTypeType](./literals.md#replicationconfigurationdefaultlargestagingdisktypetype)
-- `ebsEncryption`:
-  [ReplicationConfigurationEbsEncryptionType](./literals.md#replicationconfigurationebsencryptiontype)
-- `ebsEncryptionKeyArn`: `str`
-- `pitPolicy`:
-  `Sequence`\[[PITPolicyRuleTypeDef](./type_defs.md#pitpolicyruletypedef)\]
-- `replicationServerInstanceType`: `str`
-- `replicationServersSecurityGroupsIDs`: `Sequence`\[`str`\]
-- `stagingAreaSubnetId`: `str`
-- `stagingAreaTags`: `Mapping`\[`str`, `str`\]
-- `useDedicatedReplicationServer`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateReplicationConfigurationTemplateRequestRequestTypeDef = {  # (1)
+    "replicationConfigurationTemplateID": ...,
+}
 
-Returns
-[ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
+parent.update_replication_configuration_template(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("drs").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("drs").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_job_log_items")` ->
-  [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
-- `client.get_paginator("describe_jobs")` ->
-  [DescribeJobsPaginator](./paginators.md#describejobspaginator)
-- `client.get_paginator("describe_recovery_instances")` ->
-  [DescribeRecoveryInstancesPaginator](./paginators.md#describerecoveryinstancespaginator)
-- `client.get_paginator("describe_recovery_snapshots")` ->
-  [DescribeRecoverySnapshotsPaginator](./paginators.md#describerecoverysnapshotspaginator)
-- `client.get_paginator("describe_replication_configuration_templates")` ->
-  [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
-- `client.get_paginator("describe_source_servers")` ->
-  [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+- `client.get_paginator("describe_job_log_items")` -> [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
+- `client.get_paginator("describe_jobs")` -> [DescribeJobsPaginator](./paginators.md#describejobspaginator)
+- `client.get_paginator("describe_recovery_instances")` -> [DescribeRecoveryInstancesPaginator](./paginators.md#describerecoveryinstancespaginator)
+- `client.get_paginator("describe_recovery_snapshots")` -> [DescribeRecoverySnapshotsPaginator](./paginators.md#describerecoverysnapshotspaginator)
+- `client.get_paginator("describe_replication_configuration_templates")` -> [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
+- `client.get_paginator("describe_source_servers")` -> [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
+
+
+

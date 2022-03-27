@@ -1,81 +1,18 @@
-<a id="imagebuilderclient-for-boto3-imagebuilder-module"></a>
-
-# imagebuilderClient for boto3 imagebuilder module
+# imagebuilderClient
 
 > [Index](../README.md) > [imagebuilder](./README.md) > imagebuilderClient
 
-Auto-generated documentation for
-[imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
-type annotations stubs module
-[mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
+!!! note ""
 
-- [imagebuilderClient for boto3 imagebuilder module](#imagebuilderclient-for-boto3-imagebuilder-module)
-  - [imagebuilderClient](#imagebuilderclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_image_creation](#cancel_image_creation)
-    - [create_component](#create_component)
-    - [create_container_recipe](#create_container_recipe)
-    - [create_distribution_configuration](#create_distribution_configuration)
-    - [create_image](#create_image)
-    - [create_image_pipeline](#create_image_pipeline)
-    - [create_image_recipe](#create_image_recipe)
-    - [create_infrastructure_configuration](#create_infrastructure_configuration)
-    - [delete_component](#delete_component)
-    - [delete_container_recipe](#delete_container_recipe)
-    - [delete_distribution_configuration](#delete_distribution_configuration)
-    - [delete_image](#delete_image)
-    - [delete_image_pipeline](#delete_image_pipeline)
-    - [delete_image_recipe](#delete_image_recipe)
-    - [delete_infrastructure_configuration](#delete_infrastructure_configuration)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_component](#get_component)
-    - [get_component_policy](#get_component_policy)
-    - [get_container_recipe](#get_container_recipe)
-    - [get_container_recipe_policy](#get_container_recipe_policy)
-    - [get_distribution_configuration](#get_distribution_configuration)
-    - [get_image](#get_image)
-    - [get_image_pipeline](#get_image_pipeline)
-    - [get_image_policy](#get_image_policy)
-    - [get_image_recipe](#get_image_recipe)
-    - [get_image_recipe_policy](#get_image_recipe_policy)
-    - [get_infrastructure_configuration](#get_infrastructure_configuration)
-    - [import_component](#import_component)
-    - [import_vm_image](#import_vm_image)
-    - [list_component_build_versions](#list_component_build_versions)
-    - [list_components](#list_components)
-    - [list_container_recipes](#list_container_recipes)
-    - [list_distribution_configurations](#list_distribution_configurations)
-    - [list_image_build_versions](#list_image_build_versions)
-    - [list_image_packages](#list_image_packages)
-    - [list_image_pipeline_images](#list_image_pipeline_images)
-    - [list_image_pipelines](#list_image_pipelines)
-    - [list_image_recipes](#list_image_recipes)
-    - [list_images](#list_images)
-    - [list_infrastructure_configurations](#list_infrastructure_configurations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_component_policy](#put_component_policy)
-    - [put_container_recipe_policy](#put_container_recipe_policy)
-    - [put_image_policy](#put_image_policy)
-    - [put_image_recipe_policy](#put_image_recipe_policy)
-    - [start_image_pipeline_execution](#start_image_pipeline_execution)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_distribution_configuration](#update_distribution_configuration)
-    - [update_image_pipeline](#update_image_pipeline)
-    - [update_infrastructure_configuration](#update_infrastructure_configuration)
-
-<a id="imagebuilderclient"></a>
+    Auto-generated documentation for [imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
+    type annotations stubs module [mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 ## imagebuilderClient
 
-Type annotations for `boto3.client("imagebuilder")`
+Type annotations and code completion for `#!python boto3.client("imagebuilder")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_imagebuilder.client import imagebuilderClient
 
@@ -83,1348 +20,1771 @@ def get_imagebuilder_client() -> imagebuilderClient:
     return Session().client("imagebuilder")
 ```
 
-Boto3 documentation:
-[imagebuilder.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("imagebuilder").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("imagebuilder")
+
+try:
+    do_something(client)
+except (
+    client.CallRateLimitExceededException,
+    client.ClientError,
+    client.ClientException,
+    client.ForbiddenException,
+    client.IdempotentParameterMismatchException,
+    client.InvalidPaginationTokenException,
+    client.InvalidParameterCombinationException,
+    client.InvalidParameterException,
+    client.InvalidParameterValueException,
+    client.InvalidRequestException,
+    client.InvalidVersionNumberException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceDependencyException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ServiceException,
+    client.ServiceQuotaExceededException,
+    client.ServiceUnavailableException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_imagebuilder.client import Exceptions
 
 def handle_error(exc: Exceptions.CallRateLimitExceededException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.CallRateLimitExceededException`
-- `Exceptions.ClientError`
-- `Exceptions.ClientException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.IdempotentParameterMismatchException`
-- `Exceptions.InvalidPaginationTokenException`
-- `Exceptions.InvalidParameterCombinationException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.InvalidVersionNumberException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceDependencyException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ServiceUnavailableException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-imagebuilderClient exceptions.
-
-Type annotations for `boto3.client("imagebuilder").exceptions` method.
-
-Boto3 documentation:
-[imagebuilder.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("imagebuilder").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.can_paginate)
 
-Boto3 documentation:
-[imagebuilder.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_image\_creation"></a>
-
-### cancel_image_creation
+### cancel\_image\_creation
 
 CancelImageCreation cancels the creation of Image.
 
-Type annotations for `boto3.client("imagebuilder").cancel_image_creation`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").cancel_image_creation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.cancel_image_creation)
 
-Boto3 documentation:
-[imagebuilder.Client.cancel_image_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.cancel_image_creation)
+```python title="Method definition"
+def cancel_image_creation(
+    self,
+    *,
+    imageBuildVersionArn: str,
+    clientToken: str,
+) -> CancelImageCreationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelImageCreationRequestRequestTypeDef](./type_defs.md#cancelimagecreationrequestrequesttypedef).
+1. See [:material-code-braces: CancelImageCreationResponseTypeDef](./type_defs.md#cancelimagecreationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageBuildVersionArn`: `str` *(required)*
-- `clientToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelImageCreationRequestRequestTypeDef = {  # (1)
+    "imageBuildVersionArn": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CancelImageCreationResponseTypeDef](./type_defs.md#cancelimagecreationresponsetypedef).
+parent.cancel_image_creation(**kwargs)
+```
 
-<a id="create\_component"></a>
+1. See [:material-code-braces: CancelImageCreationRequestRequestTypeDef](./type_defs.md#cancelimagecreationrequestrequesttypedef) 
 
-### create_component
+### create\_component
 
 Creates a new component that can be used to build, validate, test, and assess
 your image.
 
-Type annotations for `boto3.client("imagebuilder").create_component` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").create_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_component)
 
-Boto3 documentation:
-[imagebuilder.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_component)
+```python title="Method definition"
+def create_component(
+    self,
+    *,
+    name: str,
+    semanticVersion: str,
+    platform: PlatformType,  # (1)
+    clientToken: str,
+    description: str = ...,
+    changeDescription: str = ...,
+    supportedOsVersions: Sequence[str] = ...,
+    data: str = ...,
+    uri: str = ...,
+    kmsKeyId: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateComponentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateComponentRequestRequestTypeDef](./type_defs.md#createcomponentrequestrequesttypedef).
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: CreateComponentResponseTypeDef](./type_defs.md#createcomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `semanticVersion`: `str` *(required)*
-- `platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `changeDescription`: `str`
-- `supportedOsVersions`: `Sequence`\[`str`\]
-- `data`: `str`
-- `uri`: `str`
-- `kmsKeyId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateComponentRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "semanticVersion": ...,
+    "platform": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CreateComponentResponseTypeDef](./type_defs.md#createcomponentresponsetypedef).
+parent.create_component(**kwargs)
+```
 
-<a id="create\_container\_recipe"></a>
+1. See [:material-code-braces: CreateComponentRequestRequestTypeDef](./type_defs.md#createcomponentrequestrequesttypedef) 
 
-### create_container_recipe
+### create\_container\_recipe
 
 Creates a new container recipe.
 
-Type annotations for `boto3.client("imagebuilder").create_container_recipe`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").create_container_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_container_recipe)
 
-Boto3 documentation:
-[imagebuilder.Client.create_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_container_recipe)
+```python title="Method definition"
+def create_container_recipe(
+    self,
+    *,
+    containerType: ContainerTypeType,  # (1)
+    name: str,
+    semanticVersion: str,
+    components: Sequence[ComponentConfigurationTypeDef],  # (2)
+    parentImage: str,
+    targetRepository: TargetContainerRepositoryTypeDef,  # (3)
+    clientToken: str,
+    description: str = ...,
+    instanceConfiguration: InstanceConfigurationTypeDef = ...,  # (4)
+    dockerfileTemplateData: str = ...,
+    dockerfileTemplateUri: str = ...,
+    platformOverride: PlatformType = ...,  # (5)
+    imageOsVersionOverride: str = ...,
+    tags: Mapping[str, str] = ...,
+    workingDirectory: str = ...,
+    kmsKeyId: str = ...,
+) -> CreateContainerRecipeResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateContainerRecipeRequestRequestTypeDef](./type_defs.md#createcontainerreciperequestrequesttypedef).
+1. See [:material-code-brackets: ContainerTypeType](./literals.md#containertypetype) 
+2. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
+3. See [:material-code-braces: TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef) 
+4. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
+5. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+6. See [:material-code-braces: CreateContainerRecipeResponseTypeDef](./type_defs.md#createcontainerreciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerType`: `Literal['DOCKER']` (see
-  [ContainerTypeType](./literals.md#containertypetype)) *(required)*
-- `name`: `str` *(required)*
-- `semanticVersion`: `str` *(required)*
-- `components`:
-  `Sequence`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
-  *(required)*
-- `parentImage`: `str` *(required)*
-- `targetRepository`:
-  [TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef)
-  *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `instanceConfiguration`:
-  [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
-- `dockerfileTemplateData`: `str`
-- `dockerfileTemplateUri`: `str`
-- `platformOverride`: [PlatformType](./literals.md#platformtype)
-- `imageOsVersionOverride`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `workingDirectory`: `str`
-- `kmsKeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateContainerRecipeRequestRequestTypeDef = {  # (1)
+    "containerType": ...,
+    "name": ...,
+    "semanticVersion": ...,
+    "components": ...,
+    "parentImage": ...,
+    "targetRepository": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CreateContainerRecipeResponseTypeDef](./type_defs.md#createcontainerreciperesponsetypedef).
+parent.create_container_recipe(**kwargs)
+```
 
-<a id="create\_distribution\_configuration"></a>
+1. See [:material-code-braces: CreateContainerRecipeRequestRequestTypeDef](./type_defs.md#createcontainerreciperequestrequesttypedef) 
 
-### create_distribution_configuration
+### create\_distribution\_configuration
 
 Creates a new distribution configuration.
 
-Type annotations for
-`boto3.client("imagebuilder").create_distribution_configuration` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").create_distribution_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_distribution_configuration)
 
-Boto3 documentation:
-[imagebuilder.Client.create_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_distribution_configuration)
+```python title="Method definition"
+def create_distribution_configuration(
+    self,
+    *,
+    name: str,
+    distributions: Sequence[DistributionTypeDef],  # (1)
+    clientToken: str,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateDistributionConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDistributionConfigurationRequestRequestTypeDef](./type_defs.md#createdistributionconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+2. See [:material-code-braces: CreateDistributionConfigurationResponseTypeDef](./type_defs.md#createdistributionconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `distributions`:
-  `Sequence`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
-  *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDistributionConfigurationRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "distributions": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CreateDistributionConfigurationResponseTypeDef](./type_defs.md#createdistributionconfigurationresponsetypedef).
+parent.create_distribution_configuration(**kwargs)
+```
 
-<a id="create\_image"></a>
+1. See [:material-code-braces: CreateDistributionConfigurationRequestRequestTypeDef](./type_defs.md#createdistributionconfigurationrequestrequesttypedef) 
 
-### create_image
+### create\_image
 
 Creates a new image.
 
-Type annotations for `boto3.client("imagebuilder").create_image` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").create_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image)
 
-Boto3 documentation:
-[imagebuilder.Client.create_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image)
+```python title="Method definition"
+def create_image(
+    self,
+    *,
+    infrastructureConfigurationArn: str,
+    clientToken: str,
+    imageRecipeArn: str = ...,
+    containerRecipeArn: str = ...,
+    distributionConfigurationArn: str = ...,
+    imageTestsConfiguration: ImageTestsConfigurationTypeDef = ...,  # (1)
+    enhancedImageMetadataEnabled: bool = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateImageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateImageRequestRequestTypeDef](./type_defs.md#createimagerequestrequesttypedef).
+1. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
+2. See [:material-code-braces: CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `infrastructureConfigurationArn`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `imageRecipeArn`: `str`
-- `containerRecipeArn`: `str`
-- `distributionConfigurationArn`: `str`
-- `imageTestsConfiguration`:
-  [ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef)
-- `enhancedImageMetadataEnabled`: `bool`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateImageRequestRequestTypeDef = {  # (1)
+    "infrastructureConfigurationArn": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef).
+parent.create_image(**kwargs)
+```
 
-<a id="create\_image\_pipeline"></a>
+1. See [:material-code-braces: CreateImageRequestRequestTypeDef](./type_defs.md#createimagerequestrequesttypedef) 
 
-### create_image_pipeline
+### create\_image\_pipeline
 
 Creates a new image pipeline.
 
-Type annotations for `boto3.client("imagebuilder").create_image_pipeline`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").create_image_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_pipeline)
 
-Boto3 documentation:
-[imagebuilder.Client.create_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_pipeline)
+```python title="Method definition"
+def create_image_pipeline(
+    self,
+    *,
+    name: str,
+    infrastructureConfigurationArn: str,
+    clientToken: str,
+    description: str = ...,
+    imageRecipeArn: str = ...,
+    containerRecipeArn: str = ...,
+    distributionConfigurationArn: str = ...,
+    imageTestsConfiguration: ImageTestsConfigurationTypeDef = ...,  # (1)
+    enhancedImageMetadataEnabled: bool = ...,
+    schedule: ScheduleTypeDef = ...,  # (2)
+    status: PipelineStatusType = ...,  # (3)
+    tags: Mapping[str, str] = ...,
+) -> CreateImagePipelineResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateImagePipelineRequestRequestTypeDef](./type_defs.md#createimagepipelinerequestrequesttypedef).
+1. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
+2. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
+3. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
+4. See [:material-code-braces: CreateImagePipelineResponseTypeDef](./type_defs.md#createimagepipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `infrastructureConfigurationArn`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `imageRecipeArn`: `str`
-- `containerRecipeArn`: `str`
-- `distributionConfigurationArn`: `str`
-- `imageTestsConfiguration`:
-  [ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef)
-- `enhancedImageMetadataEnabled`: `bool`
-- `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
-- `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateImagePipelineRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "infrastructureConfigurationArn": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CreateImagePipelineResponseTypeDef](./type_defs.md#createimagepipelineresponsetypedef).
+parent.create_image_pipeline(**kwargs)
+```
 
-<a id="create\_image\_recipe"></a>
+1. See [:material-code-braces: CreateImagePipelineRequestRequestTypeDef](./type_defs.md#createimagepipelinerequestrequesttypedef) 
 
-### create_image_recipe
+### create\_image\_recipe
 
 Creates a new image recipe.
 
-Type annotations for `boto3.client("imagebuilder").create_image_recipe` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").create_image_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_recipe)
 
-Boto3 documentation:
-[imagebuilder.Client.create_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_image_recipe)
+```python title="Method definition"
+def create_image_recipe(
+    self,
+    *,
+    name: str,
+    semanticVersion: str,
+    components: Sequence[ComponentConfigurationTypeDef],  # (1)
+    parentImage: str,
+    clientToken: str,
+    description: str = ...,
+    blockDeviceMappings: Sequence[InstanceBlockDeviceMappingTypeDef] = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+    workingDirectory: str = ...,
+    additionalInstanceConfiguration: AdditionalInstanceConfigurationTypeDef = ...,  # (3)
+) -> CreateImageRecipeResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateImageRecipeRequestRequestTypeDef](./type_defs.md#createimagereciperequestrequesttypedef).
+1. See [:material-code-braces: ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef) 
+2. See [:material-code-braces: InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef) 
+3. See [:material-code-braces: AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef) 
+4. See [:material-code-braces: CreateImageRecipeResponseTypeDef](./type_defs.md#createimagereciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `semanticVersion`: `str` *(required)*
-- `components`:
-  `Sequence`\[[ComponentConfigurationTypeDef](./type_defs.md#componentconfigurationtypedef)\]
-  *(required)*
-- `parentImage`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `blockDeviceMappings`:
-  `Sequence`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `workingDirectory`: `str`
-- `additionalInstanceConfiguration`:
-  [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateImageRecipeRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "semanticVersion": ...,
+    "components": ...,
+    "parentImage": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CreateImageRecipeResponseTypeDef](./type_defs.md#createimagereciperesponsetypedef).
+parent.create_image_recipe(**kwargs)
+```
 
-<a id="create\_infrastructure\_configuration"></a>
+1. See [:material-code-braces: CreateImageRecipeRequestRequestTypeDef](./type_defs.md#createimagereciperequestrequesttypedef) 
 
-### create_infrastructure_configuration
+### create\_infrastructure\_configuration
 
 Creates a new infrastructure configuration.
 
-Type annotations for
-`boto3.client("imagebuilder").create_infrastructure_configuration` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").create_infrastructure_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_infrastructure_configuration)
 
-Boto3 documentation:
-[imagebuilder.Client.create_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.create_infrastructure_configuration)
+```python title="Method definition"
+def create_infrastructure_configuration(
+    self,
+    *,
+    name: str,
+    instanceProfileName: str,
+    clientToken: str,
+    description: str = ...,
+    instanceTypes: Sequence[str] = ...,
+    securityGroupIds: Sequence[str] = ...,
+    subnetId: str = ...,
+    logging: LoggingTypeDef = ...,  # (1)
+    keyPair: str = ...,
+    terminateInstanceOnFailure: bool = ...,
+    snsTopicArn: str = ...,
+    resourceTags: Mapping[str, str] = ...,
+    instanceMetadataOptions: InstanceMetadataOptionsTypeDef = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> CreateInfrastructureConfigurationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateInfrastructureConfigurationRequestRequestTypeDef](./type_defs.md#createinfrastructureconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
+2. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
+3. See [:material-code-braces: CreateInfrastructureConfigurationResponseTypeDef](./type_defs.md#createinfrastructureconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `instanceProfileName`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `instanceTypes`: `Sequence`\[`str`\]
-- `securityGroupIds`: `Sequence`\[`str`\]
-- `subnetId`: `str`
-- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
-- `keyPair`: `str`
-- `terminateInstanceOnFailure`: `bool`
-- `snsTopicArn`: `str`
-- `resourceTags`: `Mapping`\[`str`, `str`\]
-- `instanceMetadataOptions`:
-  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateInfrastructureConfigurationRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "instanceProfileName": ...,
+    "clientToken": ...,
+}
 
-Returns
-[CreateInfrastructureConfigurationResponseTypeDef](./type_defs.md#createinfrastructureconfigurationresponsetypedef).
+parent.create_infrastructure_configuration(**kwargs)
+```
 
-<a id="delete\_component"></a>
+1. See [:material-code-braces: CreateInfrastructureConfigurationRequestRequestTypeDef](./type_defs.md#createinfrastructureconfigurationrequestrequesttypedef) 
 
-### delete_component
+### delete\_component
 
 Deletes a component build version.
 
-Type annotations for `boto3.client("imagebuilder").delete_component` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").delete_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_component)
 
-Boto3 documentation:
-[imagebuilder.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_component)
+```python title="Method definition"
+def delete_component(
+    self,
+    *,
+    componentBuildVersionArn: str,
+) -> DeleteComponentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteComponentRequestRequestTypeDef](./type_defs.md#deletecomponentrequestrequesttypedef).
+1. See [:material-code-braces: DeleteComponentResponseTypeDef](./type_defs.md#deletecomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `componentBuildVersionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteComponentRequestRequestTypeDef = {  # (1)
+    "componentBuildVersionArn": ...,
+}
 
-Returns
-[DeleteComponentResponseTypeDef](./type_defs.md#deletecomponentresponsetypedef).
+parent.delete_component(**kwargs)
+```
 
-<a id="delete\_container\_recipe"></a>
+1. See [:material-code-braces: DeleteComponentRequestRequestTypeDef](./type_defs.md#deletecomponentrequestrequesttypedef) 
 
-### delete_container_recipe
+### delete\_container\_recipe
 
 Deletes a container recipe.
 
-Type annotations for `boto3.client("imagebuilder").delete_container_recipe`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").delete_container_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_container_recipe)
 
-Boto3 documentation:
-[imagebuilder.Client.delete_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_container_recipe)
+```python title="Method definition"
+def delete_container_recipe(
+    self,
+    *,
+    containerRecipeArn: str,
+) -> DeleteContainerRecipeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteContainerRecipeRequestRequestTypeDef](./type_defs.md#deletecontainerreciperequestrequesttypedef).
+1. See [:material-code-braces: DeleteContainerRecipeResponseTypeDef](./type_defs.md#deletecontainerreciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerRecipeArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteContainerRecipeRequestRequestTypeDef = {  # (1)
+    "containerRecipeArn": ...,
+}
 
-Returns
-[DeleteContainerRecipeResponseTypeDef](./type_defs.md#deletecontainerreciperesponsetypedef).
+parent.delete_container_recipe(**kwargs)
+```
 
-<a id="delete\_distribution\_configuration"></a>
+1. See [:material-code-braces: DeleteContainerRecipeRequestRequestTypeDef](./type_defs.md#deletecontainerreciperequestrequesttypedef) 
 
-### delete_distribution_configuration
+### delete\_distribution\_configuration
 
 Deletes a distribution configuration.
 
-Type annotations for
-`boto3.client("imagebuilder").delete_distribution_configuration` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").delete_distribution_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_distribution_configuration)
 
-Boto3 documentation:
-[imagebuilder.Client.delete_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_distribution_configuration)
+```python title="Method definition"
+def delete_distribution_configuration(
+    self,
+    *,
+    distributionConfigurationArn: str,
+) -> DeleteDistributionConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDistributionConfigurationRequestRequestTypeDef](./type_defs.md#deletedistributionconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDistributionConfigurationResponseTypeDef](./type_defs.md#deletedistributionconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `distributionConfigurationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDistributionConfigurationRequestRequestTypeDef = {  # (1)
+    "distributionConfigurationArn": ...,
+}
 
-Returns
-[DeleteDistributionConfigurationResponseTypeDef](./type_defs.md#deletedistributionconfigurationresponsetypedef).
+parent.delete_distribution_configuration(**kwargs)
+```
 
-<a id="delete\_image"></a>
+1. See [:material-code-braces: DeleteDistributionConfigurationRequestRequestTypeDef](./type_defs.md#deletedistributionconfigurationrequestrequesttypedef) 
 
-### delete_image
+### delete\_image
 
 Deletes an Image Builder image resource.
 
-Type annotations for `boto3.client("imagebuilder").delete_image` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").delete_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image)
 
-Boto3 documentation:
-[imagebuilder.Client.delete_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image)
+```python title="Method definition"
+def delete_image(
+    self,
+    *,
+    imageBuildVersionArn: str,
+) -> DeleteImageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteImageRequestRequestTypeDef](./type_defs.md#deleteimagerequestrequesttypedef).
+1. See [:material-code-braces: DeleteImageResponseTypeDef](./type_defs.md#deleteimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageBuildVersionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteImageRequestRequestTypeDef = {  # (1)
+    "imageBuildVersionArn": ...,
+}
 
-Returns
-[DeleteImageResponseTypeDef](./type_defs.md#deleteimageresponsetypedef).
+parent.delete_image(**kwargs)
+```
 
-<a id="delete\_image\_pipeline"></a>
+1. See [:material-code-braces: DeleteImageRequestRequestTypeDef](./type_defs.md#deleteimagerequestrequesttypedef) 
 
-### delete_image_pipeline
+### delete\_image\_pipeline
 
 Deletes an image pipeline.
 
-Type annotations for `boto3.client("imagebuilder").delete_image_pipeline`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").delete_image_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_pipeline)
 
-Boto3 documentation:
-[imagebuilder.Client.delete_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_pipeline)
+```python title="Method definition"
+def delete_image_pipeline(
+    self,
+    *,
+    imagePipelineArn: str,
+) -> DeleteImagePipelineResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteImagePipelineRequestRequestTypeDef](./type_defs.md#deleteimagepipelinerequestrequesttypedef).
+1. See [:material-code-braces: DeleteImagePipelineResponseTypeDef](./type_defs.md#deleteimagepipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imagePipelineArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteImagePipelineRequestRequestTypeDef = {  # (1)
+    "imagePipelineArn": ...,
+}
 
-Returns
-[DeleteImagePipelineResponseTypeDef](./type_defs.md#deleteimagepipelineresponsetypedef).
+parent.delete_image_pipeline(**kwargs)
+```
 
-<a id="delete\_image\_recipe"></a>
+1. See [:material-code-braces: DeleteImagePipelineRequestRequestTypeDef](./type_defs.md#deleteimagepipelinerequestrequesttypedef) 
 
-### delete_image_recipe
+### delete\_image\_recipe
 
 Deletes an image recipe.
 
-Type annotations for `boto3.client("imagebuilder").delete_image_recipe` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").delete_image_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_recipe)
 
-Boto3 documentation:
-[imagebuilder.Client.delete_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_image_recipe)
+```python title="Method definition"
+def delete_image_recipe(
+    self,
+    *,
+    imageRecipeArn: str,
+) -> DeleteImageRecipeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteImageRecipeRequestRequestTypeDef](./type_defs.md#deleteimagereciperequestrequesttypedef).
+1. See [:material-code-braces: DeleteImageRecipeResponseTypeDef](./type_defs.md#deleteimagereciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageRecipeArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteImageRecipeRequestRequestTypeDef = {  # (1)
+    "imageRecipeArn": ...,
+}
 
-Returns
-[DeleteImageRecipeResponseTypeDef](./type_defs.md#deleteimagereciperesponsetypedef).
+parent.delete_image_recipe(**kwargs)
+```
 
-<a id="delete\_infrastructure\_configuration"></a>
+1. See [:material-code-braces: DeleteImageRecipeRequestRequestTypeDef](./type_defs.md#deleteimagereciperequestrequesttypedef) 
 
-### delete_infrastructure_configuration
+### delete\_infrastructure\_configuration
 
 Deletes an infrastructure configuration.
 
-Type annotations for
-`boto3.client("imagebuilder").delete_infrastructure_configuration` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").delete_infrastructure_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_infrastructure_configuration)
 
-Boto3 documentation:
-[imagebuilder.Client.delete_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.delete_infrastructure_configuration)
+```python title="Method definition"
+def delete_infrastructure_configuration(
+    self,
+    *,
+    infrastructureConfigurationArn: str,
+) -> DeleteInfrastructureConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInfrastructureConfigurationRequestRequestTypeDef](./type_defs.md#deleteinfrastructureconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DeleteInfrastructureConfigurationResponseTypeDef](./type_defs.md#deleteinfrastructureconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `infrastructureConfigurationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInfrastructureConfigurationRequestRequestTypeDef = {  # (1)
+    "infrastructureConfigurationArn": ...,
+}
 
-Returns
-[DeleteInfrastructureConfigurationResponseTypeDef](./type_defs.md#deleteinfrastructureconfigurationresponsetypedef).
+parent.delete_infrastructure_configuration(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteInfrastructureConfigurationRequestRequestTypeDef](./type_defs.md#deleteinfrastructureconfigurationrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("imagebuilder").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.generate_presigned_url)
 
-Boto3 documentation:
-[imagebuilder.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_component"></a>
-
-### get_component
+### get\_component
 
 Gets a component object.
 
-Type annotations for `boto3.client("imagebuilder").get_component` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component)
 
-Boto3 documentation:
-[imagebuilder.Client.get_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component)
+```python title="Method definition"
+def get_component(
+    self,
+    *,
+    componentBuildVersionArn: str,
+) -> GetComponentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetComponentRequestRequestTypeDef](./type_defs.md#getcomponentrequestrequesttypedef).
+1. See [:material-code-braces: GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `componentBuildVersionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetComponentRequestRequestTypeDef = {  # (1)
+    "componentBuildVersionArn": ...,
+}
 
-Returns
-[GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
+parent.get_component(**kwargs)
+```
 
-<a id="get\_component\_policy"></a>
+1. See [:material-code-braces: GetComponentRequestRequestTypeDef](./type_defs.md#getcomponentrequestrequesttypedef) 
 
-### get_component_policy
+### get\_component\_policy
 
 Gets a component policy.
 
-Type annotations for `boto3.client("imagebuilder").get_component_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_component_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component_policy)
 
-Boto3 documentation:
-[imagebuilder.Client.get_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_component_policy)
+```python title="Method definition"
+def get_component_policy(
+    self,
+    *,
+    componentArn: str,
+) -> GetComponentPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetComponentPolicyRequestRequestTypeDef](./type_defs.md#getcomponentpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetComponentPolicyResponseTypeDef](./type_defs.md#getcomponentpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `componentArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetComponentPolicyRequestRequestTypeDef = {  # (1)
+    "componentArn": ...,
+}
 
-Returns
-[GetComponentPolicyResponseTypeDef](./type_defs.md#getcomponentpolicyresponsetypedef).
+parent.get_component_policy(**kwargs)
+```
 
-<a id="get\_container\_recipe"></a>
+1. See [:material-code-braces: GetComponentPolicyRequestRequestTypeDef](./type_defs.md#getcomponentpolicyrequestrequesttypedef) 
 
-### get_container_recipe
+### get\_container\_recipe
 
 Retrieves a container recipe.
 
-Type annotations for `boto3.client("imagebuilder").get_container_recipe`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_container_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe)
 
-Boto3 documentation:
-[imagebuilder.Client.get_container_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe)
+```python title="Method definition"
+def get_container_recipe(
+    self,
+    *,
+    containerRecipeArn: str,
+) -> GetContainerRecipeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContainerRecipeRequestRequestTypeDef](./type_defs.md#getcontainerreciperequestrequesttypedef).
+1. See [:material-code-braces: GetContainerRecipeResponseTypeDef](./type_defs.md#getcontainerreciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerRecipeArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetContainerRecipeRequestRequestTypeDef = {  # (1)
+    "containerRecipeArn": ...,
+}
 
-Returns
-[GetContainerRecipeResponseTypeDef](./type_defs.md#getcontainerreciperesponsetypedef).
+parent.get_container_recipe(**kwargs)
+```
 
-<a id="get\_container\_recipe\_policy"></a>
+1. See [:material-code-braces: GetContainerRecipeRequestRequestTypeDef](./type_defs.md#getcontainerreciperequestrequesttypedef) 
 
-### get_container_recipe_policy
+### get\_container\_recipe\_policy
 
 Retrieves the policy for a container recipe.
 
-Type annotations for `boto3.client("imagebuilder").get_container_recipe_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_container_recipe_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe_policy)
 
-Boto3 documentation:
-[imagebuilder.Client.get_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_container_recipe_policy)
+```python title="Method definition"
+def get_container_recipe_policy(
+    self,
+    *,
+    containerRecipeArn: str,
+) -> GetContainerRecipePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContainerRecipePolicyRequestRequestTypeDef](./type_defs.md#getcontainerrecipepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetContainerRecipePolicyResponseTypeDef](./type_defs.md#getcontainerrecipepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerRecipeArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetContainerRecipePolicyRequestRequestTypeDef = {  # (1)
+    "containerRecipeArn": ...,
+}
 
-Returns
-[GetContainerRecipePolicyResponseTypeDef](./type_defs.md#getcontainerrecipepolicyresponsetypedef).
+parent.get_container_recipe_policy(**kwargs)
+```
 
-<a id="get\_distribution\_configuration"></a>
+1. See [:material-code-braces: GetContainerRecipePolicyRequestRequestTypeDef](./type_defs.md#getcontainerrecipepolicyrequestrequesttypedef) 
 
-### get_distribution_configuration
+### get\_distribution\_configuration
 
 Gets a distribution configuration.
 
-Type annotations for
-`boto3.client("imagebuilder").get_distribution_configuration` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_distribution_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_distribution_configuration)
 
-Boto3 documentation:
-[imagebuilder.Client.get_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_distribution_configuration)
+```python title="Method definition"
+def get_distribution_configuration(
+    self,
+    *,
+    distributionConfigurationArn: str,
+) -> GetDistributionConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDistributionConfigurationRequestRequestTypeDef](./type_defs.md#getdistributionconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetDistributionConfigurationResponseTypeDef](./type_defs.md#getdistributionconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `distributionConfigurationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDistributionConfigurationRequestRequestTypeDef = {  # (1)
+    "distributionConfigurationArn": ...,
+}
 
-Returns
-[GetDistributionConfigurationResponseTypeDef](./type_defs.md#getdistributionconfigurationresponsetypedef).
+parent.get_distribution_configuration(**kwargs)
+```
 
-<a id="get\_image"></a>
+1. See [:material-code-braces: GetDistributionConfigurationRequestRequestTypeDef](./type_defs.md#getdistributionconfigurationrequestrequesttypedef) 
 
-### get_image
+### get\_image
 
 Gets an image.
 
-Type annotations for `boto3.client("imagebuilder").get_image` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image)
 
-Boto3 documentation:
-[imagebuilder.Client.get_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image)
+```python title="Method definition"
+def get_image(
+    self,
+    *,
+    imageBuildVersionArn: str,
+) -> GetImageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImageRequestRequestTypeDef](./type_defs.md#getimagerequestrequesttypedef).
+1. See [:material-code-braces: GetImageResponseTypeDef](./type_defs.md#getimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageBuildVersionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetImageRequestRequestTypeDef = {  # (1)
+    "imageBuildVersionArn": ...,
+}
 
-Returns [GetImageResponseTypeDef](./type_defs.md#getimageresponsetypedef).
+parent.get_image(**kwargs)
+```
 
-<a id="get\_image\_pipeline"></a>
+1. See [:material-code-braces: GetImageRequestRequestTypeDef](./type_defs.md#getimagerequestrequesttypedef) 
 
-### get_image_pipeline
+### get\_image\_pipeline
 
 Gets an image pipeline.
 
-Type annotations for `boto3.client("imagebuilder").get_image_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_image_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_pipeline)
 
-Boto3 documentation:
-[imagebuilder.Client.get_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_pipeline)
+```python title="Method definition"
+def get_image_pipeline(
+    self,
+    *,
+    imagePipelineArn: str,
+) -> GetImagePipelineResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImagePipelineRequestRequestTypeDef](./type_defs.md#getimagepipelinerequestrequesttypedef).
+1. See [:material-code-braces: GetImagePipelineResponseTypeDef](./type_defs.md#getimagepipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imagePipelineArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetImagePipelineRequestRequestTypeDef = {  # (1)
+    "imagePipelineArn": ...,
+}
 
-Returns
-[GetImagePipelineResponseTypeDef](./type_defs.md#getimagepipelineresponsetypedef).
+parent.get_image_pipeline(**kwargs)
+```
 
-<a id="get\_image\_policy"></a>
+1. See [:material-code-braces: GetImagePipelineRequestRequestTypeDef](./type_defs.md#getimagepipelinerequestrequesttypedef) 
 
-### get_image_policy
+### get\_image\_policy
 
 Gets an image policy.
 
-Type annotations for `boto3.client("imagebuilder").get_image_policy` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_image_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_policy)
 
-Boto3 documentation:
-[imagebuilder.Client.get_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_policy)
+```python title="Method definition"
+def get_image_policy(
+    self,
+    *,
+    imageArn: str,
+) -> GetImagePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImagePolicyRequestRequestTypeDef](./type_defs.md#getimagepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetImagePolicyResponseTypeDef](./type_defs.md#getimagepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetImagePolicyRequestRequestTypeDef = {  # (1)
+    "imageArn": ...,
+}
 
-Returns
-[GetImagePolicyResponseTypeDef](./type_defs.md#getimagepolicyresponsetypedef).
+parent.get_image_policy(**kwargs)
+```
 
-<a id="get\_image\_recipe"></a>
+1. See [:material-code-braces: GetImagePolicyRequestRequestTypeDef](./type_defs.md#getimagepolicyrequestrequesttypedef) 
 
-### get_image_recipe
+### get\_image\_recipe
 
 Gets an image recipe.
 
-Type annotations for `boto3.client("imagebuilder").get_image_recipe` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_image_recipe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe)
 
-Boto3 documentation:
-[imagebuilder.Client.get_image_recipe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe)
+```python title="Method definition"
+def get_image_recipe(
+    self,
+    *,
+    imageRecipeArn: str,
+) -> GetImageRecipeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImageRecipeRequestRequestTypeDef](./type_defs.md#getimagereciperequestrequesttypedef).
+1. See [:material-code-braces: GetImageRecipeResponseTypeDef](./type_defs.md#getimagereciperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageRecipeArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetImageRecipeRequestRequestTypeDef = {  # (1)
+    "imageRecipeArn": ...,
+}
 
-Returns
-[GetImageRecipeResponseTypeDef](./type_defs.md#getimagereciperesponsetypedef).
+parent.get_image_recipe(**kwargs)
+```
 
-<a id="get\_image\_recipe\_policy"></a>
+1. See [:material-code-braces: GetImageRecipeRequestRequestTypeDef](./type_defs.md#getimagereciperequestrequesttypedef) 
 
-### get_image_recipe_policy
+### get\_image\_recipe\_policy
 
 Gets an image recipe policy.
 
-Type annotations for `boto3.client("imagebuilder").get_image_recipe_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_image_recipe_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe_policy)
 
-Boto3 documentation:
-[imagebuilder.Client.get_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_image_recipe_policy)
+```python title="Method definition"
+def get_image_recipe_policy(
+    self,
+    *,
+    imageRecipeArn: str,
+) -> GetImageRecipePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImageRecipePolicyRequestRequestTypeDef](./type_defs.md#getimagerecipepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetImageRecipePolicyResponseTypeDef](./type_defs.md#getimagerecipepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageRecipeArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetImageRecipePolicyRequestRequestTypeDef = {  # (1)
+    "imageRecipeArn": ...,
+}
 
-Returns
-[GetImageRecipePolicyResponseTypeDef](./type_defs.md#getimagerecipepolicyresponsetypedef).
+parent.get_image_recipe_policy(**kwargs)
+```
 
-<a id="get\_infrastructure\_configuration"></a>
+1. See [:material-code-braces: GetImageRecipePolicyRequestRequestTypeDef](./type_defs.md#getimagerecipepolicyrequestrequesttypedef) 
 
-### get_infrastructure_configuration
+### get\_infrastructure\_configuration
 
 Gets an infrastructure configuration.
 
-Type annotations for
-`boto3.client("imagebuilder").get_infrastructure_configuration` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").get_infrastructure_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_infrastructure_configuration)
 
-Boto3 documentation:
-[imagebuilder.Client.get_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.get_infrastructure_configuration)
+```python title="Method definition"
+def get_infrastructure_configuration(
+    self,
+    *,
+    infrastructureConfigurationArn: str,
+) -> GetInfrastructureConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInfrastructureConfigurationRequestRequestTypeDef](./type_defs.md#getinfrastructureconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetInfrastructureConfigurationResponseTypeDef](./type_defs.md#getinfrastructureconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `infrastructureConfigurationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInfrastructureConfigurationRequestRequestTypeDef = {  # (1)
+    "infrastructureConfigurationArn": ...,
+}
 
-Returns
-[GetInfrastructureConfigurationResponseTypeDef](./type_defs.md#getinfrastructureconfigurationresponsetypedef).
+parent.get_infrastructure_configuration(**kwargs)
+```
 
-<a id="import\_component"></a>
+1. See [:material-code-braces: GetInfrastructureConfigurationRequestRequestTypeDef](./type_defs.md#getinfrastructureconfigurationrequestrequesttypedef) 
 
-### import_component
+### import\_component
 
 Imports a component and transforms its data into a component document.
 
-Type annotations for `boto3.client("imagebuilder").import_component` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").import_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.import_component)
 
-Boto3 documentation:
-[imagebuilder.Client.import_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.import_component)
+```python title="Method definition"
+def import_component(
+    self,
+    *,
+    name: str,
+    semanticVersion: str,
+    type: ComponentTypeType,  # (1)
+    format: ComponentFormatType,  # (2)
+    platform: PlatformType,  # (3)
+    clientToken: str,
+    description: str = ...,
+    changeDescription: str = ...,
+    data: str = ...,
+    uri: str = ...,
+    kmsKeyId: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> ImportComponentResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ImportComponentRequestRequestTypeDef](./type_defs.md#importcomponentrequestrequesttypedef).
+1. See [:material-code-brackets: ComponentTypeType](./literals.md#componenttypetype) 
+2. See [:material-code-brackets: ComponentFormatType](./literals.md#componentformattype) 
+3. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+4. See [:material-code-braces: ImportComponentResponseTypeDef](./type_defs.md#importcomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `semanticVersion`: `str` *(required)*
-- `type`: [ComponentTypeType](./literals.md#componenttypetype) *(required)*
-- `format`: `Literal['SHELL']` (see
-  [ComponentFormatType](./literals.md#componentformattype)) *(required)*
-- `platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `changeDescription`: `str`
-- `data`: `str`
-- `uri`: `str`
-- `kmsKeyId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ImportComponentRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "semanticVersion": ...,
+    "type": ...,
+    "format": ...,
+    "platform": ...,
+    "clientToken": ...,
+}
 
-Returns
-[ImportComponentResponseTypeDef](./type_defs.md#importcomponentresponsetypedef).
+parent.import_component(**kwargs)
+```
 
-<a id="import\_vm\_image"></a>
+1. See [:material-code-braces: ImportComponentRequestRequestTypeDef](./type_defs.md#importcomponentrequestrequesttypedef) 
 
-### import_vm_image
+### import\_vm\_image
 
 When you export your virtual machine (VM) from its virtualization environment,
 that process creates a set of one or more disk container files that act as
 snapshots of your VM’s environment, settings, and data.
 
-Type annotations for `boto3.client("imagebuilder").import_vm_image` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").import_vm_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.import_vm_image)
 
-Boto3 documentation:
-[imagebuilder.Client.import_vm_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.import_vm_image)
+```python title="Method definition"
+def import_vm_image(
+    self,
+    *,
+    name: str,
+    semanticVersion: str,
+    platform: PlatformType,  # (1)
+    vmImportTaskId: str,
+    clientToken: str,
+    description: str = ...,
+    osVersion: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> ImportVmImageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportVmImageRequestRequestTypeDef](./type_defs.md#importvmimagerequestrequesttypedef).
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: ImportVmImageResponseTypeDef](./type_defs.md#importvmimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `semanticVersion`: `str` *(required)*
-- `platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `vmImportTaskId`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `osVersion`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ImportVmImageRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "semanticVersion": ...,
+    "platform": ...,
+    "vmImportTaskId": ...,
+    "clientToken": ...,
+}
 
-Returns
-[ImportVmImageResponseTypeDef](./type_defs.md#importvmimageresponsetypedef).
+parent.import_vm_image(**kwargs)
+```
 
-<a id="list\_component\_build\_versions"></a>
+1. See [:material-code-braces: ImportVmImageRequestRequestTypeDef](./type_defs.md#importvmimagerequestrequesttypedef) 
 
-### list_component_build_versions
+### list\_component\_build\_versions
 
-Returns the list of component build versions for the specified semantic
-version.
+Returns the list of component build versions for the specified semantic version.
 
-Type annotations for
-`boto3.client("imagebuilder").list_component_build_versions` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_component_build_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_component_build_versions)
 
-Boto3 documentation:
-[imagebuilder.Client.list_component_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_component_build_versions)
+```python title="Method definition"
+def list_component_build_versions(
+    self,
+    *,
+    componentVersionArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListComponentBuildVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListComponentBuildVersionsRequestRequestTypeDef](./type_defs.md#listcomponentbuildversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListComponentBuildVersionsResponseTypeDef](./type_defs.md#listcomponentbuildversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `componentVersionArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListComponentBuildVersionsRequestRequestTypeDef = {  # (1)
+    "componentVersionArn": ...,
+}
 
-Returns
-[ListComponentBuildVersionsResponseTypeDef](./type_defs.md#listcomponentbuildversionsresponsetypedef).
+parent.list_component_build_versions(**kwargs)
+```
 
-<a id="list\_components"></a>
+1. See [:material-code-braces: ListComponentBuildVersionsRequestRequestTypeDef](./type_defs.md#listcomponentbuildversionsrequestrequesttypedef) 
 
-### list_components
+### list\_components
 
-Returns the list of component build versions for the specified semantic
-version.
+Returns the list of component build versions for the specified semantic version.
 
-Type annotations for `boto3.client("imagebuilder").list_components` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_components` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_components)
 
-Boto3 documentation:
-[imagebuilder.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_components)
+```python title="Method definition"
+def list_components(
+    self,
+    *,
+    owner: OwnershipType = ...,  # (1)
+    filters: Sequence[FilterTypeDef] = ...,  # (2)
+    byName: bool = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListComponentsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef).
+1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `byName`: `bool`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListComponentsRequestRequestTypeDef = {  # (1)
+    "owner": ...,
+}
 
-Returns
-[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
+parent.list_components(**kwargs)
+```
 
-<a id="list\_container\_recipes"></a>
+1. See [:material-code-braces: ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef) 
 
-### list_container_recipes
+### list\_container\_recipes
 
 Returns a list of container recipes.
 
-Type annotations for `boto3.client("imagebuilder").list_container_recipes`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_container_recipes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_container_recipes)
 
-Boto3 documentation:
-[imagebuilder.Client.list_container_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_container_recipes)
+```python title="Method definition"
+def list_container_recipes(
+    self,
+    *,
+    owner: OwnershipType = ...,  # (1)
+    filters: Sequence[FilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListContainerRecipesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListContainerRecipesRequestRequestTypeDef](./type_defs.md#listcontainerrecipesrequestrequesttypedef).
+1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: ListContainerRecipesResponseTypeDef](./type_defs.md#listcontainerrecipesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListContainerRecipesRequestRequestTypeDef = {  # (1)
+    "owner": ...,
+}
 
-Returns
-[ListContainerRecipesResponseTypeDef](./type_defs.md#listcontainerrecipesresponsetypedef).
+parent.list_container_recipes(**kwargs)
+```
 
-<a id="list\_distribution\_configurations"></a>
+1. See [:material-code-braces: ListContainerRecipesRequestRequestTypeDef](./type_defs.md#listcontainerrecipesrequestrequesttypedef) 
 
-### list_distribution_configurations
+### list\_distribution\_configurations
 
 Returns a list of distribution configurations.
 
-Type annotations for
-`boto3.client("imagebuilder").list_distribution_configurations` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_distribution_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_distribution_configurations)
 
-Boto3 documentation:
-[imagebuilder.Client.list_distribution_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_distribution_configurations)
+```python title="Method definition"
+def list_distribution_configurations(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListDistributionConfigurationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDistributionConfigurationsRequestRequestTypeDef](./type_defs.md#listdistributionconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListDistributionConfigurationsResponseTypeDef](./type_defs.md#listdistributionconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDistributionConfigurationsRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[ListDistributionConfigurationsResponseTypeDef](./type_defs.md#listdistributionconfigurationsresponsetypedef).
+parent.list_distribution_configurations(**kwargs)
+```
 
-<a id="list\_image\_build\_versions"></a>
+1. See [:material-code-braces: ListDistributionConfigurationsRequestRequestTypeDef](./type_defs.md#listdistributionconfigurationsrequestrequesttypedef) 
 
-### list_image_build_versions
+### list\_image\_build\_versions
 
 Returns a list of image build versions.
 
-Type annotations for `boto3.client("imagebuilder").list_image_build_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_image_build_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_build_versions)
 
-Boto3 documentation:
-[imagebuilder.Client.list_image_build_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_build_versions)
+```python title="Method definition"
+def list_image_build_versions(
+    self,
+    *,
+    imageVersionArn: str,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListImageBuildVersionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListImageBuildVersionsRequestRequestTypeDef](./type_defs.md#listimagebuildversionsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListImageBuildVersionsResponseTypeDef](./type_defs.md#listimagebuildversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageVersionArn`: `str` *(required)*
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListImageBuildVersionsRequestRequestTypeDef = {  # (1)
+    "imageVersionArn": ...,
+}
 
-Returns
-[ListImageBuildVersionsResponseTypeDef](./type_defs.md#listimagebuildversionsresponsetypedef).
+parent.list_image_build_versions(**kwargs)
+```
 
-<a id="list\_image\_packages"></a>
+1. See [:material-code-braces: ListImageBuildVersionsRequestRequestTypeDef](./type_defs.md#listimagebuildversionsrequestrequesttypedef) 
 
-### list_image_packages
+### list\_image\_packages
 
-List the Packages that are associated with an Image Build Version, as
-determined by Amazon Web Services Systems Manager Inventory at build time.
+List the Packages that are associated with an Image Build Version, as determined
+by Amazon Web Services Systems Manager Inventory at build time.
 
-Type annotations for `boto3.client("imagebuilder").list_image_packages` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_image_packages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_packages)
 
-Boto3 documentation:
-[imagebuilder.Client.list_image_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_packages)
+```python title="Method definition"
+def list_image_packages(
+    self,
+    *,
+    imageBuildVersionArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListImagePackagesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListImagePackagesRequestRequestTypeDef](./type_defs.md#listimagepackagesrequestrequesttypedef).
+1. See [:material-code-braces: ListImagePackagesResponseTypeDef](./type_defs.md#listimagepackagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageBuildVersionArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListImagePackagesRequestRequestTypeDef = {  # (1)
+    "imageBuildVersionArn": ...,
+}
 
-Returns
-[ListImagePackagesResponseTypeDef](./type_defs.md#listimagepackagesresponsetypedef).
+parent.list_image_packages(**kwargs)
+```
 
-<a id="list\_image\_pipeline\_images"></a>
+1. See [:material-code-braces: ListImagePackagesRequestRequestTypeDef](./type_defs.md#listimagepackagesrequestrequesttypedef) 
 
-### list_image_pipeline_images
+### list\_image\_pipeline\_images
 
 Returns a list of images created by the specified pipeline.
 
-Type annotations for `boto3.client("imagebuilder").list_image_pipeline_images`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_image_pipeline_images` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipeline_images)
 
-Boto3 documentation:
-[imagebuilder.Client.list_image_pipeline_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipeline_images)
+```python title="Method definition"
+def list_image_pipeline_images(
+    self,
+    *,
+    imagePipelineArn: str,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListImagePipelineImagesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListImagePipelineImagesRequestRequestTypeDef](./type_defs.md#listimagepipelineimagesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListImagePipelineImagesResponseTypeDef](./type_defs.md#listimagepipelineimagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imagePipelineArn`: `str` *(required)*
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListImagePipelineImagesRequestRequestTypeDef = {  # (1)
+    "imagePipelineArn": ...,
+}
 
-Returns
-[ListImagePipelineImagesResponseTypeDef](./type_defs.md#listimagepipelineimagesresponsetypedef).
+parent.list_image_pipeline_images(**kwargs)
+```
 
-<a id="list\_image\_pipelines"></a>
+1. See [:material-code-braces: ListImagePipelineImagesRequestRequestTypeDef](./type_defs.md#listimagepipelineimagesrequestrequesttypedef) 
 
-### list_image_pipelines
+### list\_image\_pipelines
 
 Returns a list of image pipelines.
 
-Type annotations for `boto3.client("imagebuilder").list_image_pipelines`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_image_pipelines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipelines)
 
-Boto3 documentation:
-[imagebuilder.Client.list_image_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_pipelines)
+```python title="Method definition"
+def list_image_pipelines(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListImagePipelinesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListImagePipelinesRequestRequestTypeDef](./type_defs.md#listimagepipelinesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListImagePipelinesResponseTypeDef](./type_defs.md#listimagepipelinesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListImagePipelinesRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[ListImagePipelinesResponseTypeDef](./type_defs.md#listimagepipelinesresponsetypedef).
+parent.list_image_pipelines(**kwargs)
+```
 
-<a id="list\_image\_recipes"></a>
+1. See [:material-code-braces: ListImagePipelinesRequestRequestTypeDef](./type_defs.md#listimagepipelinesrequestrequesttypedef) 
 
-### list_image_recipes
+### list\_image\_recipes
 
 Returns a list of image recipes.
 
-Type annotations for `boto3.client("imagebuilder").list_image_recipes` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_image_recipes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_recipes)
 
-Boto3 documentation:
-[imagebuilder.Client.list_image_recipes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_image_recipes)
+```python title="Method definition"
+def list_image_recipes(
+    self,
+    *,
+    owner: OwnershipType = ...,  # (1)
+    filters: Sequence[FilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListImageRecipesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListImageRecipesRequestRequestTypeDef](./type_defs.md#listimagerecipesrequestrequesttypedef).
+1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: ListImageRecipesResponseTypeDef](./type_defs.md#listimagerecipesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListImageRecipesRequestRequestTypeDef = {  # (1)
+    "owner": ...,
+}
 
-Returns
-[ListImageRecipesResponseTypeDef](./type_defs.md#listimagerecipesresponsetypedef).
+parent.list_image_recipes(**kwargs)
+```
 
-<a id="list\_images"></a>
+1. See [:material-code-braces: ListImageRecipesRequestRequestTypeDef](./type_defs.md#listimagerecipesrequestrequesttypedef) 
 
-### list_images
+### list\_images
 
 Returns the list of images that you have access to.
 
-Type annotations for `boto3.client("imagebuilder").list_images` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_images` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_images)
 
-Boto3 documentation:
-[imagebuilder.Client.list_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_images)
+```python title="Method definition"
+def list_images(
+    self,
+    *,
+    owner: OwnershipType = ...,  # (1)
+    filters: Sequence[FilterTypeDef] = ...,  # (2)
+    byName: bool = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    includeDeprecated: bool = ...,
+) -> ListImagesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListImagesRequestRequestTypeDef](./type_defs.md#listimagesrequestrequesttypedef).
+1. See [:material-code-brackets: OwnershipType](./literals.md#ownershiptype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `owner`: [OwnershipType](./literals.md#ownershiptype)
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `byName`: `bool`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `includeDeprecated`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListImagesRequestRequestTypeDef = {  # (1)
+    "owner": ...,
+}
 
-Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
+parent.list_images(**kwargs)
+```
 
-<a id="list\_infrastructure\_configurations"></a>
+1. See [:material-code-braces: ListImagesRequestRequestTypeDef](./type_defs.md#listimagesrequestrequesttypedef) 
 
-### list_infrastructure_configurations
+### list\_infrastructure\_configurations
 
 Returns a list of infrastructure configurations.
 
-Type annotations for
-`boto3.client("imagebuilder").list_infrastructure_configurations` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_infrastructure_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_infrastructure_configurations)
 
-Boto3 documentation:
-[imagebuilder.Client.list_infrastructure_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_infrastructure_configurations)
+```python title="Method definition"
+def list_infrastructure_configurations(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListInfrastructureConfigurationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListInfrastructureConfigurationsRequestRequestTypeDef](./type_defs.md#listinfrastructureconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListInfrastructureConfigurationsResponseTypeDef](./type_defs.md#listinfrastructureconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInfrastructureConfigurationsRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[ListInfrastructureConfigurationsResponseTypeDef](./type_defs.md#listinfrastructureconfigurationsresponsetypedef).
+parent.list_infrastructure_configurations(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListInfrastructureConfigurationsRequestRequestTypeDef](./type_defs.md#listinfrastructureconfigurationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns the list of tags for the specified resource.
 
-Type annotations for `boto3.client("imagebuilder").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[imagebuilder.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_component\_policy"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_component_policy
+### put\_component\_policy
 
 Applies a policy to a component.
 
-Type annotations for `boto3.client("imagebuilder").put_component_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").put_component_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_component_policy)
 
-Boto3 documentation:
-[imagebuilder.Client.put_component_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_component_policy)
+```python title="Method definition"
+def put_component_policy(
+    self,
+    *,
+    componentArn: str,
+    policy: str,
+) -> PutComponentPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutComponentPolicyRequestRequestTypeDef](./type_defs.md#putcomponentpolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutComponentPolicyResponseTypeDef](./type_defs.md#putcomponentpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `componentArn`: `str` *(required)*
-- `policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutComponentPolicyRequestRequestTypeDef = {  # (1)
+    "componentArn": ...,
+    "policy": ...,
+}
 
-Returns
-[PutComponentPolicyResponseTypeDef](./type_defs.md#putcomponentpolicyresponsetypedef).
+parent.put_component_policy(**kwargs)
+```
 
-<a id="put\_container\_recipe\_policy"></a>
+1. See [:material-code-braces: PutComponentPolicyRequestRequestTypeDef](./type_defs.md#putcomponentpolicyrequestrequesttypedef) 
 
-### put_container_recipe_policy
+### put\_container\_recipe\_policy
 
 Applies a policy to a container image.
 
-Type annotations for `boto3.client("imagebuilder").put_container_recipe_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").put_container_recipe_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_container_recipe_policy)
 
-Boto3 documentation:
-[imagebuilder.Client.put_container_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_container_recipe_policy)
+```python title="Method definition"
+def put_container_recipe_policy(
+    self,
+    *,
+    containerRecipeArn: str,
+    policy: str,
+) -> PutContainerRecipePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutContainerRecipePolicyRequestRequestTypeDef](./type_defs.md#putcontainerrecipepolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutContainerRecipePolicyResponseTypeDef](./type_defs.md#putcontainerrecipepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerRecipeArn`: `str` *(required)*
-- `policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutContainerRecipePolicyRequestRequestTypeDef = {  # (1)
+    "containerRecipeArn": ...,
+    "policy": ...,
+}
 
-Returns
-[PutContainerRecipePolicyResponseTypeDef](./type_defs.md#putcontainerrecipepolicyresponsetypedef).
+parent.put_container_recipe_policy(**kwargs)
+```
 
-<a id="put\_image\_policy"></a>
+1. See [:material-code-braces: PutContainerRecipePolicyRequestRequestTypeDef](./type_defs.md#putcontainerrecipepolicyrequestrequesttypedef) 
 
-### put_image_policy
+### put\_image\_policy
 
 Applies a policy to an image.
 
-Type annotations for `boto3.client("imagebuilder").put_image_policy` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").put_image_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_policy)
 
-Boto3 documentation:
-[imagebuilder.Client.put_image_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_policy)
+```python title="Method definition"
+def put_image_policy(
+    self,
+    *,
+    imageArn: str,
+    policy: str,
+) -> PutImagePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutImagePolicyRequestRequestTypeDef](./type_defs.md#putimagepolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutImagePolicyResponseTypeDef](./type_defs.md#putimagepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageArn`: `str` *(required)*
-- `policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutImagePolicyRequestRequestTypeDef = {  # (1)
+    "imageArn": ...,
+    "policy": ...,
+}
 
-Returns
-[PutImagePolicyResponseTypeDef](./type_defs.md#putimagepolicyresponsetypedef).
+parent.put_image_policy(**kwargs)
+```
 
-<a id="put\_image\_recipe\_policy"></a>
+1. See [:material-code-braces: PutImagePolicyRequestRequestTypeDef](./type_defs.md#putimagepolicyrequestrequesttypedef) 
 
-### put_image_recipe_policy
+### put\_image\_recipe\_policy
 
 Applies a policy to an image recipe.
 
-Type annotations for `boto3.client("imagebuilder").put_image_recipe_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").put_image_recipe_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_recipe_policy)
 
-Boto3 documentation:
-[imagebuilder.Client.put_image_recipe_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.put_image_recipe_policy)
+```python title="Method definition"
+def put_image_recipe_policy(
+    self,
+    *,
+    imageRecipeArn: str,
+    policy: str,
+) -> PutImageRecipePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutImageRecipePolicyRequestRequestTypeDef](./type_defs.md#putimagerecipepolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutImageRecipePolicyResponseTypeDef](./type_defs.md#putimagerecipepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imageRecipeArn`: `str` *(required)*
-- `policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutImageRecipePolicyRequestRequestTypeDef = {  # (1)
+    "imageRecipeArn": ...,
+    "policy": ...,
+}
 
-Returns
-[PutImageRecipePolicyResponseTypeDef](./type_defs.md#putimagerecipepolicyresponsetypedef).
+parent.put_image_recipe_policy(**kwargs)
+```
 
-<a id="start\_image\_pipeline\_execution"></a>
+1. See [:material-code-braces: PutImageRecipePolicyRequestRequestTypeDef](./type_defs.md#putimagerecipepolicyrequestrequesttypedef) 
 
-### start_image_pipeline_execution
+### start\_image\_pipeline\_execution
 
 Manually triggers a pipeline to create an image.
 
-Type annotations for
-`boto3.client("imagebuilder").start_image_pipeline_execution` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").start_image_pipeline_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.start_image_pipeline_execution)
 
-Boto3 documentation:
-[imagebuilder.Client.start_image_pipeline_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.start_image_pipeline_execution)
+```python title="Method definition"
+def start_image_pipeline_execution(
+    self,
+    *,
+    imagePipelineArn: str,
+    clientToken: str,
+) -> StartImagePipelineExecutionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartImagePipelineExecutionRequestRequestTypeDef](./type_defs.md#startimagepipelineexecutionrequestrequesttypedef).
+1. See [:material-code-braces: StartImagePipelineExecutionResponseTypeDef](./type_defs.md#startimagepipelineexecutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imagePipelineArn`: `str` *(required)*
-- `clientToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartImagePipelineExecutionRequestRequestTypeDef = {  # (1)
+    "imagePipelineArn": ...,
+    "clientToken": ...,
+}
 
-Returns
-[StartImagePipelineExecutionResponseTypeDef](./type_defs.md#startimagepipelineexecutionresponsetypedef).
+parent.start_image_pipeline_execution(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartImagePipelineExecutionRequestRequestTypeDef](./type_defs.md#startimagepipelineexecutionrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds a tag to a resource.
 
-Type annotations for `boto3.client("imagebuilder").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.tag_resource)
 
-Boto3 documentation:
-[imagebuilder.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from a resource.
 
-Type annotations for `boto3.client("imagebuilder").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.untag_resource)
 
-Boto3 documentation:
-[imagebuilder.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_distribution\_configuration"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_distribution_configuration
+### update\_distribution\_configuration
 
 Updates a new distribution configuration.
 
-Type annotations for
-`boto3.client("imagebuilder").update_distribution_configuration` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").update_distribution_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_distribution_configuration)
 
-Boto3 documentation:
-[imagebuilder.Client.update_distribution_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_distribution_configuration)
+```python title="Method definition"
+def update_distribution_configuration(
+    self,
+    *,
+    distributionConfigurationArn: str,
+    distributions: Sequence[DistributionTypeDef],  # (1)
+    clientToken: str,
+    description: str = ...,
+) -> UpdateDistributionConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDistributionConfigurationRequestRequestTypeDef](./type_defs.md#updatedistributionconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DistributionTypeDef](./type_defs.md#distributiontypedef) 
+2. See [:material-code-braces: UpdateDistributionConfigurationResponseTypeDef](./type_defs.md#updatedistributionconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `distributionConfigurationArn`: `str` *(required)*
-- `distributions`:
-  `Sequence`\[[DistributionTypeDef](./type_defs.md#distributiontypedef)\]
-  *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDistributionConfigurationRequestRequestTypeDef = {  # (1)
+    "distributionConfigurationArn": ...,
+    "distributions": ...,
+    "clientToken": ...,
+}
 
-Returns
-[UpdateDistributionConfigurationResponseTypeDef](./type_defs.md#updatedistributionconfigurationresponsetypedef).
+parent.update_distribution_configuration(**kwargs)
+```
 
-<a id="update\_image\_pipeline"></a>
+1. See [:material-code-braces: UpdateDistributionConfigurationRequestRequestTypeDef](./type_defs.md#updatedistributionconfigurationrequestrequesttypedef) 
 
-### update_image_pipeline
+### update\_image\_pipeline
 
 Updates an image pipeline.
 
-Type annotations for `boto3.client("imagebuilder").update_image_pipeline`
-method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").update_image_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_image_pipeline)
 
-Boto3 documentation:
-[imagebuilder.Client.update_image_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_image_pipeline)
+```python title="Method definition"
+def update_image_pipeline(
+    self,
+    *,
+    imagePipelineArn: str,
+    infrastructureConfigurationArn: str,
+    clientToken: str,
+    description: str = ...,
+    imageRecipeArn: str = ...,
+    containerRecipeArn: str = ...,
+    distributionConfigurationArn: str = ...,
+    imageTestsConfiguration: ImageTestsConfigurationTypeDef = ...,  # (1)
+    enhancedImageMetadataEnabled: bool = ...,
+    schedule: ScheduleTypeDef = ...,  # (2)
+    status: PipelineStatusType = ...,  # (3)
+) -> UpdateImagePipelineResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateImagePipelineRequestRequestTypeDef](./type_defs.md#updateimagepipelinerequestrequesttypedef).
+1. See [:material-code-braces: ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef) 
+2. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
+3. See [:material-code-brackets: PipelineStatusType](./literals.md#pipelinestatustype) 
+4. See [:material-code-braces: UpdateImagePipelineResponseTypeDef](./type_defs.md#updateimagepipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `imagePipelineArn`: `str` *(required)*
-- `infrastructureConfigurationArn`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `imageRecipeArn`: `str`
-- `containerRecipeArn`: `str`
-- `distributionConfigurationArn`: `str`
-- `imageTestsConfiguration`:
-  [ImageTestsConfigurationTypeDef](./type_defs.md#imagetestsconfigurationtypedef)
-- `enhancedImageMetadataEnabled`: `bool`
-- `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
-- `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
+```python title="Usage example with kwargs"
+kwargs: UpdateImagePipelineRequestRequestTypeDef = {  # (1)
+    "imagePipelineArn": ...,
+    "infrastructureConfigurationArn": ...,
+    "clientToken": ...,
+}
 
-Returns
-[UpdateImagePipelineResponseTypeDef](./type_defs.md#updateimagepipelineresponsetypedef).
+parent.update_image_pipeline(**kwargs)
+```
 
-<a id="update\_infrastructure\_configuration"></a>
+1. See [:material-code-braces: UpdateImagePipelineRequestRequestTypeDef](./type_defs.md#updateimagepipelinerequestrequesttypedef) 
 
-### update_infrastructure_configuration
+### update\_infrastructure\_configuration
 
 Updates a new infrastructure configuration.
 
-Type annotations for
-`boto3.client("imagebuilder").update_infrastructure_configuration` method.
+Type annotations and code completion for `#!python boto3.client("imagebuilder").update_infrastructure_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_infrastructure_configuration)
 
-Boto3 documentation:
-[imagebuilder.Client.update_infrastructure_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client.update_infrastructure_configuration)
+```python title="Method definition"
+def update_infrastructure_configuration(
+    self,
+    *,
+    infrastructureConfigurationArn: str,
+    instanceProfileName: str,
+    clientToken: str,
+    description: str = ...,
+    instanceTypes: Sequence[str] = ...,
+    securityGroupIds: Sequence[str] = ...,
+    subnetId: str = ...,
+    logging: LoggingTypeDef = ...,  # (1)
+    keyPair: str = ...,
+    terminateInstanceOnFailure: bool = ...,
+    snsTopicArn: str = ...,
+    resourceTags: Mapping[str, str] = ...,
+    instanceMetadataOptions: InstanceMetadataOptionsTypeDef = ...,  # (2)
+) -> UpdateInfrastructureConfigurationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateInfrastructureConfigurationRequestRequestTypeDef](./type_defs.md#updateinfrastructureconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
+2. See [:material-code-braces: InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef) 
+3. See [:material-code-braces: UpdateInfrastructureConfigurationResponseTypeDef](./type_defs.md#updateinfrastructureconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `infrastructureConfigurationArn`: `str` *(required)*
-- `instanceProfileName`: `str` *(required)*
-- `clientToken`: `str` *(required)*
-- `description`: `str`
-- `instanceTypes`: `Sequence`\[`str`\]
-- `securityGroupIds`: `Sequence`\[`str`\]
-- `subnetId`: `str`
-- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
-- `keyPair`: `str`
-- `terminateInstanceOnFailure`: `bool`
-- `snsTopicArn`: `str`
-- `resourceTags`: `Mapping`\[`str`, `str`\]
-- `instanceMetadataOptions`:
-  [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateInfrastructureConfigurationRequestRequestTypeDef = {  # (1)
+    "infrastructureConfigurationArn": ...,
+    "instanceProfileName": ...,
+    "clientToken": ...,
+}
 
-Returns
-[UpdateInfrastructureConfigurationResponseTypeDef](./type_defs.md#updateinfrastructureconfigurationresponsetypedef).
+parent.update_infrastructure_configuration(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateInfrastructureConfigurationRequestRequestTypeDef](./type_defs.md#updateinfrastructureconfigurationrequestrequesttypedef) 
+
+
+
+

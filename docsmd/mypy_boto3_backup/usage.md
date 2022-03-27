@@ -1,69 +1,71 @@
-<a id="examples-for-boto3-backup-module"></a>
-
-# Examples for boto3 Backup module
+# Examples
 
 > [Index](../README.md) > [Backup](./README.md) > Examples
 
-- [Examples for boto3 Backup module](#examples-for-boto3-backup-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
+    type annotations stubs module [mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[backup]` package installed.
 
-Write your `Backup` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Backup` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type BackupClient
-# and provides type checking and code completion
-client = session.client("backup")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("backup")  # (1)
+    result = client.create_backup_plan()  # (2)
+    ```
+
+    1. client: [BackupClient](./client.md)
+    2. result: [:material-code-braces: CreateBackupPlanOutputTypeDef](./type_defs.md#createbackupplanoutputtypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[backup]` or a standalone `mypy_boto3_backup` package,
-you have to explicitly specify `client: BackupClient` type annotation.
+With `boto3-stubs-lite[backup]`
+or a standalone `mypy_boto3_backup` package, you have to explicitly specify `client: BackupClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_backup.client import BackupClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_backup.client import BackupClient
+    from mypy_boto3_backup.type_defs import CreateBackupPlanOutputTypeDef
+    from mypy_boto3_backup.type_defs import CreateBackupPlanInputRequestTypeDef
 
 
-from mypy_boto3_backup.type_defs import bool
+    session = Session()
+
+    client: BackupClient = session.client("backup")
+
+    kwargs: CreateBackupPlanInputRequestTypeDef = {...}
+    result: CreateBackupPlanOutputTypeDef = client.create_backup_plan(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: BackupClient = session.client("backup")
 
-result: bool = client.can_paginate()
-```
+

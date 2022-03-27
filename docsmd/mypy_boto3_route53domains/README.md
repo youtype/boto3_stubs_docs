@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-route53domains-module"></a>
-
-# Type annotations for boto3 Route53Domains module
+#  Route53Domains module
 
 > [Index](../README.md) > Route53Domains
 
-Auto-generated documentation for
-[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
-type annotations stubs module
-[mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+!!! note ""
 
-- [Type annotations for boto3 Route53Domains module](#type-annotations-for-boto3-route53domains-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [Route53DomainsClient](#route53domainsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
+    type annotations stubs module [mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Route53Domains`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[route53domains]'
 python -m pip install mypy-boto3-route53domains
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,89 +42,37 @@ python -m pip install mypy-boto3-route53domains
 python -m pip uninstall -y mypy-boto3-route53domains
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="route53domainsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## Route53DomainsClient
 
-Type annotations for `boto3.client("route53domains")` as
-[Route53DomainsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("route53domains")` as [Route53DomainsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_route53domains.client import Route53DomainsClient
+
+def get_client() -> Route53DomainsClient:
+    return Session().cleint("route53domains")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_domain_transfer_from_another_aws_account](./client.md#accept_domain_transfer_from_another_aws_account)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_domain_transfer_to_another_aws_account](./client.md#cancel_domain_transfer_to_another_aws_account)
-- [check_domain_availability](./client.md#check_domain_availability)
-- [check_domain_transferability](./client.md#check_domain_transferability)
-- [delete_domain](./client.md#delete_domain)
-- [delete_tags_for_domain](./client.md#delete_tags_for_domain)
-- [disable_domain_auto_renew](./client.md#disable_domain_auto_renew)
-- [disable_domain_transfer_lock](./client.md#disable_domain_transfer_lock)
-- [enable_domain_auto_renew](./client.md#enable_domain_auto_renew)
-- [enable_domain_transfer_lock](./client.md#enable_domain_transfer_lock)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_contact_reachability_status](./client.md#get_contact_reachability_status)
-- [get_domain_detail](./client.md#get_domain_detail)
-- [get_domain_suggestions](./client.md#get_domain_suggestions)
-- [get_operation_detail](./client.md#get_operation_detail)
-- [get_paginator](./client.md#get_paginator)
-- [list_domains](./client.md#list_domains)
-- [list_operations](./client.md#list_operations)
-- [list_prices](./client.md#list_prices)
-- [list_tags_for_domain](./client.md#list_tags_for_domain)
-- [register_domain](./client.md#register_domain)
-- [reject_domain_transfer_from_another_aws_account](./client.md#reject_domain_transfer_from_another_aws_account)
-- [renew_domain](./client.md#renew_domain)
-- [resend_contact_reachability_email](./client.md#resend_contact_reachability_email)
-- [retrieve_domain_auth_code](./client.md#retrieve_domain_auth_code)
-- [transfer_domain](./client.md#transfer_domain)
-- [transfer_domain_to_another_aws_account](./client.md#transfer_domain_to_another_aws_account)
-- [update_domain_contact](./client.md#update_domain_contact)
-- [update_domain_contact_privacy](./client.md#update_domain_contact_privacy)
-- [update_domain_nameservers](./client.md#update_domain_nameservers)
-- [update_tags_for_domain](./client.md#update_tags_for_domain)
-- [view_billing](./client.md#view_billing)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-Route53DomainsClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- DomainLimitExceeded
-- DuplicateRequest
-- InvalidInput
-- OperationLimitExceeded
-- TLDRulesViolation
-- UnsupportedTLD
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("route53domains").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("route53domains").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_route53domains.paginator import ListDomainsPaginator, ...
+from mypy_boto3_route53domains.paginator import ListDomainsPaginator
+
+def get_list_domains_paginator() -> ListDomainsPaginator:
+    return Session().client("route53domains").get_paginator("list_domains"))
 ```
 
 - [ListDomainsPaginator](./paginators.md#listdomainspaginator)
@@ -154,16 +80,23 @@ from mypy_boto3_route53domains.paginator import ListDomainsPaginator, ...
 - [ListPricesPaginator](./paginators.md#listpricespaginator)
 - [ViewBillingPaginator](./paginators.md#viewbillingpaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53domains.literals import ContactTypeType
 
-```python
-from mypy_boto3_route53domains.literals import ContactTypeType, ...
+def get_value() -> ContactTypeType:
+    return "ASSOCIATION"
 ```
 
 - [ContactTypeType](./literals.md#contacttypetype)
@@ -185,18 +118,23 @@ from mypy_boto3_route53domains.literals import ContactTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef
 
-```python
-from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef, ...
+def get_value() -> AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Password": ...,
+    }
 ```
 
 - [AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef](./type_defs.md#acceptdomaintransferfromanotherawsaccountrequestrequesttypedef)
@@ -232,10 +170,13 @@ from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherA
 - [GetDomainSuggestionsResponseTypeDef](./type_defs.md#getdomainsuggestionsresponsetypedef)
 - [GetOperationDetailRequestRequestTypeDef](./type_defs.md#getoperationdetailrequestrequesttypedef)
 - [GetOperationDetailResponseTypeDef](./type_defs.md#getoperationdetailresponsetypedef)
+- [ListDomainsRequestListDomainsPaginateTypeDef](./type_defs.md#listdomainsrequestlistdomainspaginatetypedef)
 - [ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef)
 - [ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)
+- [ListOperationsRequestListOperationsPaginateTypeDef](./type_defs.md#listoperationsrequestlistoperationspaginatetypedef)
 - [ListOperationsRequestRequestTypeDef](./type_defs.md#listoperationsrequestrequesttypedef)
 - [ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef)
+- [ListPricesRequestListPricesPaginateTypeDef](./type_defs.md#listpricesrequestlistpricespaginatetypedef)
 - [ListPricesRequestRequestTypeDef](./type_defs.md#listpricesrequestrequesttypedef)
 - [ListPricesResponseTypeDef](./type_defs.md#listpricesresponsetypedef)
 - [ListTagsForDomainRequestRequestTypeDef](./type_defs.md#listtagsfordomainrequestrequesttypedef)
@@ -269,4 +210,6 @@ from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherA
 - [UpdateDomainNameserversResponseTypeDef](./type_defs.md#updatedomainnameserversresponsetypedef)
 - [UpdateTagsForDomainRequestRequestTypeDef](./type_defs.md#updatetagsfordomainrequestrequesttypedef)
 - [ViewBillingRequestRequestTypeDef](./type_defs.md#viewbillingrequestrequesttypedef)
+- [ViewBillingRequestViewBillingPaginateTypeDef](./type_defs.md#viewbillingrequestviewbillingpaginatetypedef)
 - [ViewBillingResponseTypeDef](./type_defs.md#viewbillingresponsetypedef)
+

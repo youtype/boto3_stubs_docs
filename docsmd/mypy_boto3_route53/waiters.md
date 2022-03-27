@@ -1,27 +1,18 @@
-<a id="waiters-for-boto3-route53-module"></a>
-
-# Waiters for boto3 Route53 module
+# Waiters
 
 > [Index](../README.md) > [Route53](./README.md) > Waiters
 
-Auto-generated documentation for
-[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
-type annotations stubs module
-[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
+!!! note ""
 
-- [Waiters for boto3 Route53 module](#waiters-for-boto3-route53-module)
-  - [ResourceRecordSetsChangedWaiter](#resourcerecordsetschangedwaiter)
-
-<a id="resourcerecordsetschangedwaiter"></a>
+    Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+    type annotations stubs module [mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 ## ResourceRecordSetsChangedWaiter
 
-Type annotations for
-`boto3.client("route53").get_waiter("resource_record_sets_changed")`.
+Type annotations and code completion for `#!python boto3.client("route53").get_waiter("resource_record_sets_changed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Waiter.ResourceRecordSetsChanged)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53.waiter import ResourceRecordSetsChangedWaiter
@@ -30,10 +21,30 @@ def get_resource_record_sets_changed_waiter() -> ResourceRecordSetsChangedWaiter
     return Session().client("route53").get_waiter("resource_record_sets_changed")
 ```
 
-Boto3 documentation:
-[Route53.Waiter.resource_record_sets_changed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Waiter.ResourceRecordSetsChanged)
 
-Arguments for `ResourceRecordSetsChangedWaiter.wait` method:
+### wait
 
-- `Id`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ResourceRecordSetsChangedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    Id: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetChangeRequestResourceRecordSetsChangedWaitTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetChangeRequestResourceRecordSetsChangedWaitTypeDef](./type_defs.md#getchangerequestresourcerecordsetschangedwaittypedef) 

@@ -1,40 +1,18 @@
-<a id="connectparticipantclient-for-boto3-connectparticipant-module"></a>
+# ConnectParticipantClient
 
-# ConnectParticipantClient for boto3 ConnectParticipant module
+> [Index](../README.md) > [ConnectParticipant](./README.md) > ConnectParticipantClient
 
-> [Index](../README.md) > [ConnectParticipant](./README.md) >
-> ConnectParticipantClient
+!!! note ""
 
-Auto-generated documentation for
-[ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
-type annotations stubs module
-[mypy-boto3-connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
-
-- [ConnectParticipantClient for boto3 ConnectParticipant module](#connectparticipantclient-for-boto3-connectparticipant-module)
-  - [ConnectParticipantClient](#connectparticipantclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [complete_attachment_upload](#complete_attachment_upload)
-    - [create_participant_connection](#create_participant_connection)
-    - [disconnect_participant](#disconnect_participant)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_attachment](#get_attachment)
-    - [get_transcript](#get_transcript)
-    - [send_event](#send_event)
-    - [send_message](#send_message)
-    - [start_attachment_upload](#start_attachment_upload)
-
-<a id="connectparticipantclient"></a>
+    Auto-generated documentation for [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
+    type annotations stubs module [mypy-boto3-connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 ## ConnectParticipantClient
 
-Type annotations for `boto3.client("connectparticipant")`
+Type annotations and code completion for `#!python boto3.client("connectparticipant")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_connectparticipant.client import ConnectParticipantClient
 
@@ -42,280 +20,344 @@ def get_connectparticipant_client() -> ConnectParticipantClient:
     return Session().client("connectparticipant")
 ```
 
-Boto3 documentation:
-[ConnectParticipant.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("connectparticipant").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("connectparticipant")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_connectparticipant.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ConnectParticipantClient exceptions.
-
-Type annotations for `boto3.client("connectparticipant").exceptions` method.
-
-Boto3 documentation:
-[ConnectParticipant.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("connectparticipant").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("connectparticipant").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.can_paginate)
 
-Boto3 documentation:
-[ConnectParticipant.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### complete\_attachment\_upload
 
-Returns `bool`.
+Allows you to confirm that the attachment has been uploaded using the pre-signed
+URL provided in StartAttachmentUpload API.
 
-<a id="complete\_attachment\_upload"></a>
+Type annotations and code completion for `#!python boto3.client("connectparticipant").complete_attachment_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload)
 
-### complete_attachment_upload
+```python title="Method definition"
+def complete_attachment_upload(
+    self,
+    *,
+    AttachmentIds: Sequence[str],
+    ClientToken: str,
+    ConnectionToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Allows you to confirm that the attachment has been uploaded using the
-pre-signed URL provided in StartAttachmentUpload API.
 
-Type annotations for
-`boto3.client("connectparticipant").complete_attachment_upload` method.
 
-Boto3 documentation:
-[ConnectParticipant.Client.complete_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.complete_attachment_upload)
+```python title="Usage example with kwargs"
+kwargs: CompleteAttachmentUploadRequestRequestTypeDef = {  # (1)
+    "AttachmentIds": ...,
+    "ClientToken": ...,
+    "ConnectionToken": ...,
+}
 
-Arguments mapping described in
-[CompleteAttachmentUploadRequestRequestTypeDef](./type_defs.md#completeattachmentuploadrequestrequesttypedef).
+parent.complete_attachment_upload(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CompleteAttachmentUploadRequestRequestTypeDef](./type_defs.md#completeattachmentuploadrequestrequesttypedef) 
 
-- `AttachmentIds`: `Sequence`\[`str`\] *(required)*
-- `ClientToken`: `str` *(required)*
-- `ConnectionToken`: `str` *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="create\_participant\_connection"></a>
-
-### create_participant_connection
+### create\_participant\_connection
 
 Creates the participant's connection.
 
-Type annotations for
-`boto3.client("connectparticipant").create_participant_connection` method.
+Type annotations and code completion for `#!python boto3.client("connectparticipant").create_participant_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection)
 
-Boto3 documentation:
-[ConnectParticipant.Client.create_participant_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.create_participant_connection)
+```python title="Method definition"
+def create_participant_connection(
+    self,
+    *,
+    Type: Sequence[ConnectionTypeType],  # (1)
+    ParticipantToken: str,
+    ConnectParticipant: bool = ...,
+) -> CreateParticipantConnectionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateParticipantConnectionRequestRequestTypeDef](./type_defs.md#createparticipantconnectionrequestrequesttypedef).
+1. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+2. See [:material-code-braces: CreateParticipantConnectionResponseTypeDef](./type_defs.md#createparticipantconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Type`: `Sequence`\[[ConnectionTypeType](./literals.md#connectiontypetype)\]
-  *(required)*
-- `ParticipantToken`: `str` *(required)*
-- `ConnectParticipant`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateParticipantConnectionRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+    "ParticipantToken": ...,
+}
 
-Returns
-[CreateParticipantConnectionResponseTypeDef](./type_defs.md#createparticipantconnectionresponsetypedef).
+parent.create_participant_connection(**kwargs)
+```
 
-<a id="disconnect\_participant"></a>
+1. See [:material-code-braces: CreateParticipantConnectionRequestRequestTypeDef](./type_defs.md#createparticipantconnectionrequestrequesttypedef) 
 
-### disconnect_participant
+### disconnect\_participant
 
 Disconnects a participant.
 
-Type annotations for
-`boto3.client("connectparticipant").disconnect_participant` method.
+Type annotations and code completion for `#!python boto3.client("connectparticipant").disconnect_participant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant)
 
-Boto3 documentation:
-[ConnectParticipant.Client.disconnect_participant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.disconnect_participant)
+```python title="Method definition"
+def disconnect_participant(
+    self,
+    *,
+    ConnectionToken: str,
+    ClientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisconnectParticipantRequestRequestTypeDef](./type_defs.md#disconnectparticipantrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConnectionToken`: `str` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisconnectParticipantRequestRequestTypeDef = {  # (1)
+    "ConnectionToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disconnect_participant(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisconnectParticipantRequestRequestTypeDef](./type_defs.md#disconnectparticipantrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("connectparticipant").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("connectparticipant").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ConnectParticipant.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_attachment"></a>
-
-### get_attachment
+### get\_attachment
 
 Provides a pre-signed URL for download of a completed attachment.
 
-Type annotations for `boto3.client("connectparticipant").get_attachment`
-method.
+Type annotations and code completion for `#!python boto3.client("connectparticipant").get_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment)
 
-Boto3 documentation:
-[ConnectParticipant.Client.get_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_attachment)
+```python title="Method definition"
+def get_attachment(
+    self,
+    *,
+    AttachmentId: str,
+    ConnectionToken: str,
+) -> GetAttachmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAttachmentRequestRequestTypeDef](./type_defs.md#getattachmentrequestrequesttypedef).
+1. See [:material-code-braces: GetAttachmentResponseTypeDef](./type_defs.md#getattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AttachmentId`: `str` *(required)*
-- `ConnectionToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAttachmentRequestRequestTypeDef = {  # (1)
+    "AttachmentId": ...,
+    "ConnectionToken": ...,
+}
 
-Returns
-[GetAttachmentResponseTypeDef](./type_defs.md#getattachmentresponsetypedef).
+parent.get_attachment(**kwargs)
+```
 
-<a id="get\_transcript"></a>
+1. See [:material-code-braces: GetAttachmentRequestRequestTypeDef](./type_defs.md#getattachmentrequestrequesttypedef) 
 
-### get_transcript
+### get\_transcript
 
 Retrieves a transcript of the session, including details about any attachments.
 
-Type annotations for `boto3.client("connectparticipant").get_transcript`
-method.
+Type annotations and code completion for `#!python boto3.client("connectparticipant").get_transcript` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript)
 
-Boto3 documentation:
-[ConnectParticipant.Client.get_transcript](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.get_transcript)
+```python title="Method definition"
+def get_transcript(
+    self,
+    *,
+    ConnectionToken: str,
+    ContactId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ScanDirection: ScanDirectionType = ...,  # (1)
+    SortOrder: SortKeyType = ...,  # (2)
+    StartPosition: StartPositionTypeDef = ...,  # (3)
+) -> GetTranscriptResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetTranscriptRequestRequestTypeDef](./type_defs.md#gettranscriptrequestrequesttypedef).
+1. See [:material-code-brackets: ScanDirectionType](./literals.md#scandirectiontype) 
+2. See [:material-code-brackets: SortKeyType](./literals.md#sortkeytype) 
+3. See [:material-code-braces: StartPositionTypeDef](./type_defs.md#startpositiontypedef) 
+4. See [:material-code-braces: GetTranscriptResponseTypeDef](./type_defs.md#gettranscriptresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionToken`: `str` *(required)*
-- `ContactId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ScanDirection`: [ScanDirectionType](./literals.md#scandirectiontype)
-- `SortOrder`: [SortKeyType](./literals.md#sortkeytype)
-- `StartPosition`: [StartPositionTypeDef](./type_defs.md#startpositiontypedef)
+```python title="Usage example with kwargs"
+kwargs: GetTranscriptRequestRequestTypeDef = {  # (1)
+    "ConnectionToken": ...,
+}
 
-Returns
-[GetTranscriptResponseTypeDef](./type_defs.md#gettranscriptresponsetypedef).
+parent.get_transcript(**kwargs)
+```
 
-<a id="send\_event"></a>
+1. See [:material-code-braces: GetTranscriptRequestRequestTypeDef](./type_defs.md#gettranscriptrequestrequesttypedef) 
 
-### send_event
+### send\_event
 
 Sends an event.
 
-Type annotations for `boto3.client("connectparticipant").send_event` method.
+Type annotations and code completion for `#!python boto3.client("connectparticipant").send_event` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event)
 
-Boto3 documentation:
-[ConnectParticipant.Client.send_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_event)
+```python title="Method definition"
+def send_event(
+    self,
+    *,
+    ContentType: str,
+    ConnectionToken: str,
+    Content: str = ...,
+    ClientToken: str = ...,
+) -> SendEventResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SendEventRequestRequestTypeDef](./type_defs.md#sendeventrequestrequesttypedef).
+1. See [:material-code-braces: SendEventResponseTypeDef](./type_defs.md#sendeventresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ContentType`: `str` *(required)*
-- `ConnectionToken`: `str` *(required)*
-- `Content`: `str`
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SendEventRequestRequestTypeDef = {  # (1)
+    "ContentType": ...,
+    "ConnectionToken": ...,
+}
 
-Returns [SendEventResponseTypeDef](./type_defs.md#sendeventresponsetypedef).
+parent.send_event(**kwargs)
+```
 
-<a id="send\_message"></a>
+1. See [:material-code-braces: SendEventRequestRequestTypeDef](./type_defs.md#sendeventrequestrequesttypedef) 
 
-### send_message
+### send\_message
 
 Sends a message.
 
-Type annotations for `boto3.client("connectparticipant").send_message` method.
+Type annotations and code completion for `#!python boto3.client("connectparticipant").send_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message)
 
-Boto3 documentation:
-[ConnectParticipant.Client.send_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.send_message)
+```python title="Method definition"
+def send_message(
+    self,
+    *,
+    ContentType: str,
+    Content: str,
+    ConnectionToken: str,
+    ClientToken: str = ...,
+) -> SendMessageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SendMessageRequestRequestTypeDef](./type_defs.md#sendmessagerequestrequesttypedef).
+1. See [:material-code-braces: SendMessageResponseTypeDef](./type_defs.md#sendmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ContentType`: `str` *(required)*
-- `Content`: `str` *(required)*
-- `ConnectionToken`: `str` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SendMessageRequestRequestTypeDef = {  # (1)
+    "ContentType": ...,
+    "Content": ...,
+    "ConnectionToken": ...,
+}
 
-Returns
-[SendMessageResponseTypeDef](./type_defs.md#sendmessageresponsetypedef).
+parent.send_message(**kwargs)
+```
 
-<a id="start\_attachment\_upload"></a>
+1. See [:material-code-braces: SendMessageRequestRequestTypeDef](./type_defs.md#sendmessagerequestrequesttypedef) 
 
-### start_attachment_upload
+### start\_attachment\_upload
 
 Provides a pre-signed Amazon S3 URL in response for uploading the file directly
 to S3.
 
-Type annotations for
-`boto3.client("connectparticipant").start_attachment_upload` method.
+Type annotations and code completion for `#!python boto3.client("connectparticipant").start_attachment_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload)
 
-Boto3 documentation:
-[ConnectParticipant.Client.start_attachment_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.start_attachment_upload)
+```python title="Method definition"
+def start_attachment_upload(
+    self,
+    *,
+    ContentType: str,
+    AttachmentSizeInBytes: int,
+    AttachmentName: str,
+    ClientToken: str,
+    ConnectionToken: str,
+) -> StartAttachmentUploadResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartAttachmentUploadRequestRequestTypeDef](./type_defs.md#startattachmentuploadrequestrequesttypedef).
+1. See [:material-code-braces: StartAttachmentUploadResponseTypeDef](./type_defs.md#startattachmentuploadresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ContentType`: `str` *(required)*
-- `AttachmentSizeInBytes`: `int` *(required)*
-- `AttachmentName`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `ConnectionToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartAttachmentUploadRequestRequestTypeDef = {  # (1)
+    "ContentType": ...,
+    "AttachmentSizeInBytes": ...,
+    "AttachmentName": ...,
+    "ClientToken": ...,
+    "ConnectionToken": ...,
+}
 
-Returns
-[StartAttachmentUploadResponseTypeDef](./type_defs.md#startattachmentuploadresponsetypedef).
+parent.start_attachment_upload(**kwargs)
+```
+
+1. See [:material-code-braces: StartAttachmentUploadRequestRequestTypeDef](./type_defs.md#startattachmentuploadrequestrequesttypedef) 
+
+
+
+

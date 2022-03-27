@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-appmesh-module"></a>
-
-# Examples for boto3 AppMesh module
+# Examples
 
 > [Index](../README.md) > [AppMesh](./README.md) > Examples
 
-- [Examples for boto3 AppMesh module](#examples-for-boto3-appmesh-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+    type annotations stubs module [mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[appmesh]` package installed.
 
-Write your `AppMesh` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `AppMesh` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type AppMeshClient
-# and provides type checking and code completion
-client = session.client("appmesh")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListGatewayRoutesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_gateway_routes")
-for item in paginator.paginate(...):
-    # item has type ListGatewayRoutesOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("appmesh")  # (1)
+    result = client.create_gateway_route()  # (2)
+    ```
+
+    1. client: [AppMeshClient](./client.md)
+    2. result: [:material-code-braces: CreateGatewayRouteOutputTypeDef](./type_defs.md#creategatewayrouteoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("appmesh")  # (1)
+
+    paginator = client.get_paginator("list_gateway_routes")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [AppMeshClient](./client.md)
+    2. paginator: [ListGatewayRoutesPaginator](./paginators.md#listgatewayroutespaginator)
+    3. item: [:material-code-braces: ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[appmesh]` or a standalone `mypy_boto3_appmesh` package,
-you have to explicitly specify `client: AppMeshClient` type annotation.
+With `boto3-stubs-lite[appmesh]`
+or a standalone `mypy_boto3_appmesh` package, you have to explicitly specify `client: AppMeshClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_appmesh.client import AppMeshClient
-from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator
-
-from mypy_boto3_appmesh.literals import PaginatorName
-
-from mypy_boto3_appmesh.type_defs import bool
-from mypy_boto3_appmesh.type_defs import ListGatewayRoutesOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: AppMeshClient = session.client("appmesh")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_appmesh.client import AppMeshClient
+    from mypy_boto3_appmesh.type_defs import CreateGatewayRouteOutputTypeDef
+    from mypy_boto3_appmesh.type_defs import CreateGatewayRouteInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_gateway_routes"
-paginator: ListGatewayRoutesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListGatewayRoutesOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: AppMeshClient = session.client("appmesh")
+
+    kwargs: CreateGatewayRouteInputRequestTypeDef = {...}
+    result: CreateGatewayRouteOutputTypeDef = client.create_gateway_route(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_appmesh.client import AppMeshClient
+    from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator
+    from mypy_boto3_appmesh.type_defs import ListGatewayRoutesOutputTypeDef
+
+
+    session = Session()
+    client: AppMeshClient = session.client("appmesh")
+
+    paginator: ListGatewayRoutesPaginator = client.get_paginator("list_gateway_routes")
+    for item in paginator.paginate(...):
+        item: ListGatewayRoutesOutputTypeDef
+        print(item)
+    ```
+
+
+
+

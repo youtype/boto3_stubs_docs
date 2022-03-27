@@ -1,89 +1,18 @@
-<a id="s3controlclient-for-boto3-s3control-module"></a>
-
-# S3ControlClient for boto3 S3Control module
+# S3ControlClient
 
 > [Index](../README.md) > [S3Control](./README.md) > S3ControlClient
 
-Auto-generated documentation for
-[S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
-type annotations stubs module
-[mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
+!!! note ""
 
-- [S3ControlClient for boto3 S3Control module](#s3controlclient-for-boto3-s3control-module)
-  - [S3ControlClient](#s3controlclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_access_point](#create_access_point)
-    - [create_access_point_for_object_lambda](#create_access_point_for_object_lambda)
-    - [create_bucket](#create_bucket)
-    - [create_job](#create_job)
-    - [create_multi_region_access_point](#create_multi_region_access_point)
-    - [delete_access_point](#delete_access_point)
-    - [delete_access_point_for_object_lambda](#delete_access_point_for_object_lambda)
-    - [delete_access_point_policy](#delete_access_point_policy)
-    - [delete_access_point_policy_for_object_lambda](#delete_access_point_policy_for_object_lambda)
-    - [delete_bucket](#delete_bucket)
-    - [delete_bucket_lifecycle_configuration](#delete_bucket_lifecycle_configuration)
-    - [delete_bucket_policy](#delete_bucket_policy)
-    - [delete_bucket_tagging](#delete_bucket_tagging)
-    - [delete_job_tagging](#delete_job_tagging)
-    - [delete_multi_region_access_point](#delete_multi_region_access_point)
-    - [delete_public_access_block](#delete_public_access_block)
-    - [delete_storage_lens_configuration](#delete_storage_lens_configuration)
-    - [delete_storage_lens_configuration_tagging](#delete_storage_lens_configuration_tagging)
-    - [describe_job](#describe_job)
-    - [describe_multi_region_access_point_operation](#describe_multi_region_access_point_operation)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_access_point](#get_access_point)
-    - [get_access_point_configuration_for_object_lambda](#get_access_point_configuration_for_object_lambda)
-    - [get_access_point_for_object_lambda](#get_access_point_for_object_lambda)
-    - [get_access_point_policy](#get_access_point_policy)
-    - [get_access_point_policy_for_object_lambda](#get_access_point_policy_for_object_lambda)
-    - [get_access_point_policy_status](#get_access_point_policy_status)
-    - [get_access_point_policy_status_for_object_lambda](#get_access_point_policy_status_for_object_lambda)
-    - [get_bucket](#get_bucket)
-    - [get_bucket_lifecycle_configuration](#get_bucket_lifecycle_configuration)
-    - [get_bucket_policy](#get_bucket_policy)
-    - [get_bucket_tagging](#get_bucket_tagging)
-    - [get_job_tagging](#get_job_tagging)
-    - [get_multi_region_access_point](#get_multi_region_access_point)
-    - [get_multi_region_access_point_policy](#get_multi_region_access_point_policy)
-    - [get_multi_region_access_point_policy_status](#get_multi_region_access_point_policy_status)
-    - [get_public_access_block](#get_public_access_block)
-    - [get_storage_lens_configuration](#get_storage_lens_configuration)
-    - [get_storage_lens_configuration_tagging](#get_storage_lens_configuration_tagging)
-    - [list_access_points](#list_access_points)
-    - [list_access_points_for_object_lambda](#list_access_points_for_object_lambda)
-    - [list_jobs](#list_jobs)
-    - [list_multi_region_access_points](#list_multi_region_access_points)
-    - [list_regional_buckets](#list_regional_buckets)
-    - [list_storage_lens_configurations](#list_storage_lens_configurations)
-    - [put_access_point_configuration_for_object_lambda](#put_access_point_configuration_for_object_lambda)
-    - [put_access_point_policy](#put_access_point_policy)
-    - [put_access_point_policy_for_object_lambda](#put_access_point_policy_for_object_lambda)
-    - [put_bucket_lifecycle_configuration](#put_bucket_lifecycle_configuration)
-    - [put_bucket_policy](#put_bucket_policy)
-    - [put_bucket_tagging](#put_bucket_tagging)
-    - [put_job_tagging](#put_job_tagging)
-    - [put_multi_region_access_point_policy](#put_multi_region_access_point_policy)
-    - [put_public_access_block](#put_public_access_block)
-    - [put_storage_lens_configuration](#put_storage_lens_configuration)
-    - [put_storage_lens_configuration_tagging](#put_storage_lens_configuration_tagging)
-    - [update_job_priority](#update_job_priority)
-    - [update_job_status](#update_job_status)
-    - [get_paginator](#get_paginator)
-
-<a id="s3controlclient"></a>
+    Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+    type annotations stubs module [mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 ## S3ControlClient
 
-Type annotations for `boto3.client("s3control")`
+Type annotations and code completion for `#!python boto3.client("s3control")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_s3control.client import S3ControlClient
 
@@ -91,1417 +20,1928 @@ def get_s3control_client() -> S3ControlClient:
     return Session().client("s3control")
 ```
 
-Boto3 documentation:
-[S3Control.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("s3control").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("s3control")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.BucketAlreadyExists,
+    client.BucketAlreadyOwnedByYou,
+    client.ClientError,
+    client.IdempotencyException,
+    client.InternalServiceException,
+    client.InvalidNextTokenException,
+    client.InvalidRequestException,
+    client.JobStatusException,
+    client.NoSuchPublicAccessBlockConfiguration,
+    client.NotFoundException,
+    client.TooManyRequestsException,
+    client.TooManyTagsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_s3control.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.BucketAlreadyExists`
-- `Exceptions.BucketAlreadyOwnedByYou`
-- `Exceptions.ClientError`
-- `Exceptions.IdempotencyException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.JobStatusException`
-- `Exceptions.NoSuchPublicAccessBlockConfiguration`
-- `Exceptions.NotFoundException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.TooManyTagsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-S3ControlClient exceptions.
-
-Type annotations for `boto3.client("s3control").exceptions` method.
-
-Boto3 documentation:
-[S3Control.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("s3control").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("s3control").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.can_paginate)
 
-Boto3 documentation:
-[S3Control.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_access\_point"></a>
-
-### create_access_point
+### create\_access\_point
 
 Creates an access point and associates it with the specified bucket.
 
-Type annotations for `boto3.client("s3control").create_access_point` method.
+Type annotations and code completion for `#!python boto3.client("s3control").create_access_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point)
 
-Boto3 documentation:
-[S3Control.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point)
+```python title="Method definition"
+def create_access_point(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+    Bucket: str,
+    VpcConfiguration: VpcConfigurationTypeDef = ...,  # (1)
+    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef = ...,  # (2)
+) -> CreateAccessPointResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef).
+1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+2. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
+3. See [:material-code-braces: CreateAccessPointResultTypeDef](./type_defs.md#createaccesspointresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Bucket`: `str` *(required)*
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-- `PublicAccessBlockConfiguration`:
-  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateAccessPointRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+    "Bucket": ...,
+}
 
-Returns
-[CreateAccessPointResultTypeDef](./type_defs.md#createaccesspointresulttypedef).
+parent.create_access_point(**kwargs)
+```
 
-<a id="create\_access\_point\_for\_object\_lambda"></a>
+1. See [:material-code-braces: CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef) 
 
-### create_access_point_for_object_lambda
+### create\_access\_point\_for\_object\_lambda
 
 Creates an Object Lambda Access Point.
 
-Type annotations for
-`boto3.client("s3control").create_access_point_for_object_lambda` method.
+Type annotations and code completion for `#!python boto3.client("s3control").create_access_point_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.create_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_access_point_for_object_lambda)
+```python title="Method definition"
+def create_access_point_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+    Configuration: ObjectLambdaConfigurationTypeDef,  # (1)
+) -> CreateAccessPointForObjectLambdaResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#createaccesspointforobjectlambdarequestrequesttypedef).
+1. See [:material-code-braces: ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef) 
+2. See [:material-code-braces: CreateAccessPointForObjectLambdaResultTypeDef](./type_defs.md#createaccesspointforobjectlambdaresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Configuration`:
-  [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAccessPointForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+    "Configuration": ...,
+}
 
-Returns
-[CreateAccessPointForObjectLambdaResultTypeDef](./type_defs.md#createaccesspointforobjectlambdaresulttypedef).
+parent.create_access_point_for_object_lambda(**kwargs)
+```
 
-<a id="create\_bucket"></a>
+1. See [:material-code-braces: CreateAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#createaccesspointforobjectlambdarequestrequesttypedef) 
 
-### create_bucket
+### create\_bucket
 
 .
 
-Type annotations for `boto3.client("s3control").create_bucket` method.
+Type annotations and code completion for `#!python boto3.client("s3control").create_bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_bucket)
 
-Boto3 documentation:
-[S3Control.Client.create_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_bucket)
+```python title="Method definition"
+def create_bucket(
+    self,
+    *,
+    Bucket: str,
+    ACL: BucketCannedACLType = ...,  # (1)
+    CreateBucketConfiguration: CreateBucketConfigurationTypeDef = ...,  # (2)
+    GrantFullControl: str = ...,
+    GrantRead: str = ...,
+    GrantReadACP: str = ...,
+    GrantWrite: str = ...,
+    GrantWriteACP: str = ...,
+    ObjectLockEnabledForBucket: bool = ...,
+    OutpostId: str = ...,
+) -> CreateBucketResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateBucketRequestRequestTypeDef](./type_defs.md#createbucketrequestrequesttypedef).
+1. See [:material-code-brackets: BucketCannedACLType](./literals.md#bucketcannedacltype) 
+2. See [:material-code-braces: CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef) 
+3. See [:material-code-braces: CreateBucketResultTypeDef](./type_defs.md#createbucketresulttypedef) 
 
-Keyword-only arguments:
 
-- `Bucket`: `str` *(required)*
-- `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
-- `CreateBucketConfiguration`:
-  [CreateBucketConfigurationTypeDef](./type_defs.md#createbucketconfigurationtypedef)
-- `GrantFullControl`: `str`
-- `GrantRead`: `str`
-- `GrantReadACP`: `str`
-- `GrantWrite`: `str`
-- `GrantWriteACP`: `str`
-- `ObjectLockEnabledForBucket`: `bool`
-- `OutpostId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBucketRequestRequestTypeDef = {  # (1)
+    "Bucket": ...,
+}
 
-Returns [CreateBucketResultTypeDef](./type_defs.md#createbucketresulttypedef).
+parent.create_bucket(**kwargs)
+```
 
-<a id="create\_job"></a>
+1. See [:material-code-braces: CreateBucketRequestRequestTypeDef](./type_defs.md#createbucketrequestrequesttypedef) 
 
-### create_job
+### create\_job
 
 You can use S3 Batch Operations to perform large-scale batch actions on Amazon
 S3 objects.
 
-Type annotations for `boto3.client("s3control").create_job` method.
+Type annotations and code completion for `#!python boto3.client("s3control").create_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_job)
 
-Boto3 documentation:
-[S3Control.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_job)
+```python title="Method definition"
+def create_job(
+    self,
+    *,
+    AccountId: str,
+    Operation: JobOperationTypeDef,  # (1)
+    Report: JobReportTypeDef,  # (2)
+    ClientRequestToken: str,
+    Priority: int,
+    RoleArn: str,
+    ConfirmationRequired: bool = ...,
+    Manifest: JobManifestTypeDef = ...,  # (3)
+    Description: str = ...,
+    Tags: Sequence[S3TagTypeDef] = ...,  # (4)
+    ManifestGenerator: JobManifestGeneratorTypeDef = ...,  # (5)
+) -> CreateJobResultTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
+1. See [:material-code-braces: JobOperationTypeDef](./type_defs.md#joboperationtypedef) 
+2. See [:material-code-braces: JobReportTypeDef](./type_defs.md#jobreporttypedef) 
+3. See [:material-code-braces: JobManifestTypeDef](./type_defs.md#jobmanifesttypedef) 
+4. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
+5. See [:material-code-braces: JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef) 
+6. See [:material-code-braces: CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Operation`: [JobOperationTypeDef](./type_defs.md#joboperationtypedef)
-  *(required)*
-- `Report`: [JobReportTypeDef](./type_defs.md#jobreporttypedef) *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Priority`: `int` *(required)*
-- `RoleArn`: `str` *(required)*
-- `ConfirmationRequired`: `bool`
-- `Manifest`: [JobManifestTypeDef](./type_defs.md#jobmanifesttypedef)
-- `Description`: `str`
-- `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
-- `ManifestGenerator`:
-  [JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateJobRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Operation": ...,
+    "Report": ...,
+    "ClientRequestToken": ...,
+    "Priority": ...,
+    "RoleArn": ...,
+}
 
-Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
+parent.create_job(**kwargs)
+```
 
-<a id="create\_multi\_region\_access\_point"></a>
+1. See [:material-code-braces: CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef) 
 
-### create_multi_region_access_point
+### create\_multi\_region\_access\_point
 
 Creates a Multi-Region Access Point and associates it with the specified
 buckets.
 
-Type annotations for
-`boto3.client("s3control").create_multi_region_access_point` method.
+Type annotations and code completion for `#!python boto3.client("s3control").create_multi_region_access_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_multi_region_access_point)
 
-Boto3 documentation:
-[S3Control.Client.create_multi_region_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.create_multi_region_access_point)
+```python title="Method definition"
+def create_multi_region_access_point(
+    self,
+    *,
+    AccountId: str,
+    ClientToken: str,
+    Details: CreateMultiRegionAccessPointInputTypeDef,  # (1)
+) -> CreateMultiRegionAccessPointResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMultiRegionAccessPointRequestRequestTypeDef](./type_defs.md#createmultiregionaccesspointrequestrequesttypedef).
+1. See [:material-code-braces: CreateMultiRegionAccessPointInputTypeDef](./type_defs.md#createmultiregionaccesspointinputtypedef) 
+2. See [:material-code-braces: CreateMultiRegionAccessPointResultTypeDef](./type_defs.md#createmultiregionaccesspointresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `Details`:
-  [CreateMultiRegionAccessPointInputTypeDef](./type_defs.md#createmultiregionaccesspointinputtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateMultiRegionAccessPointRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "ClientToken": ...,
+    "Details": ...,
+}
 
-Returns
-[CreateMultiRegionAccessPointResultTypeDef](./type_defs.md#createmultiregionaccesspointresulttypedef).
+parent.create_multi_region_access_point(**kwargs)
+```
 
-<a id="delete\_access\_point"></a>
+1. See [:material-code-braces: CreateMultiRegionAccessPointRequestRequestTypeDef](./type_defs.md#createmultiregionaccesspointrequestrequesttypedef) 
 
-### delete_access_point
+### delete\_access\_point
 
 Deletes the specified access point.
 
-Type annotations for `boto3.client("s3control").delete_access_point` method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_access_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point)
 
-Boto3 documentation:
-[S3Control.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point)
+```python title="Method definition"
+def delete_access_point(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessPointRequestRequestTypeDef](./type_defs.md#deleteaccesspointrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessPointRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-<a id="delete\_access\_point\_for\_object\_lambda"></a>
+parent.delete_access_point(**kwargs)
+```
 
-### delete_access_point_for_object_lambda
+1. See [:material-code-braces: DeleteAccessPointRequestRequestTypeDef](./type_defs.md#deleteaccesspointrequestrequesttypedef) 
+
+### delete\_access\_point\_for\_object\_lambda
 
 Deletes the specified Object Lambda Access Point.
 
-Type annotations for
-`boto3.client("s3control").delete_access_point_for_object_lambda` method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_access_point_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.delete_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_for_object_lambda)
+```python title="Method definition"
+def delete_access_point_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#deleteaccesspointforobjectlambdarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessPointForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-<a id="delete\_access\_point\_policy"></a>
+parent.delete_access_point_for_object_lambda(**kwargs)
+```
 
-### delete_access_point_policy
+1. See [:material-code-braces: DeleteAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#deleteaccesspointforobjectlambdarequestrequesttypedef) 
+
+### delete\_access\_point\_policy
 
 Deletes the access point policy for the specified access point.
 
-Type annotations for `boto3.client("s3control").delete_access_point_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_access_point_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy)
 
-Boto3 documentation:
-[S3Control.Client.delete_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy)
+```python title="Method definition"
+def delete_access_point_policy(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessPointPolicyRequestRequestTypeDef](./type_defs.md#deleteaccesspointpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessPointPolicyRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-<a id="delete\_access\_point\_policy\_for\_object\_lambda"></a>
+parent.delete_access_point_policy(**kwargs)
+```
 
-### delete_access_point_policy_for_object_lambda
+1. See [:material-code-braces: DeleteAccessPointPolicyRequestRequestTypeDef](./type_defs.md#deleteaccesspointpolicyrequestrequesttypedef) 
+
+### delete\_access\_point\_policy\_for\_object\_lambda
 
 Removes the resource policy for an Object Lambda Access Point.
 
-Type annotations for
-`boto3.client("s3control").delete_access_point_policy_for_object_lambda`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_access_point_policy_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.delete_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_access_point_policy_for_object_lambda)
+```python title="Method definition"
+def delete_access_point_policy_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessPointPolicyForObjectLambdaRequestRequestTypeDef](./type_defs.md#deleteaccesspointpolicyforobjectlambdarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessPointPolicyForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-<a id="delete\_bucket"></a>
+parent.delete_access_point_policy_for_object_lambda(**kwargs)
+```
 
-### delete_bucket
+1. See [:material-code-braces: DeleteAccessPointPolicyForObjectLambdaRequestRequestTypeDef](./type_defs.md#deleteaccesspointpolicyforobjectlambdarequestrequesttypedef) 
 
-.
-
-Type annotations for `boto3.client("s3control").delete_bucket` method.
-
-Boto3 documentation:
-[S3Control.Client.delete_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket)
-
-Arguments mapping described in
-[DeleteBucketRequestRequestTypeDef](./type_defs.md#deletebucketrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
-
-<a id="delete\_bucket\_lifecycle\_configuration"></a>
-
-### delete_bucket_lifecycle_configuration
+### delete\_bucket
 
 .
 
-Type annotations for
-`boto3.client("s3control").delete_bucket_lifecycle_configuration` method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket)
 
-Boto3 documentation:
-[S3Control.Client.delete_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration)
+```python title="Method definition"
+def delete_bucket(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#deletebucketlifecycleconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
 
-<a id="delete\_bucket\_policy"></a>
+parent.delete_bucket(**kwargs)
+```
 
-### delete_bucket_policy
+1. See [:material-code-braces: DeleteBucketRequestRequestTypeDef](./type_defs.md#deletebucketrequestrequesttypedef) 
 
-.
-
-Type annotations for `boto3.client("s3control").delete_bucket_policy` method.
-
-Boto3 documentation:
-[S3Control.Client.delete_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_policy)
-
-Arguments mapping described in
-[DeleteBucketPolicyRequestRequestTypeDef](./type_defs.md#deletebucketpolicyrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
-
-<a id="delete\_bucket\_tagging"></a>
-
-### delete_bucket_tagging
+### delete\_bucket\_lifecycle\_configuration
 
 .
 
-Type annotations for `boto3.client("s3control").delete_bucket_tagging` method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_bucket_lifecycle_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_lifecycle_configuration)
 
-Boto3 documentation:
-[S3Control.Client.delete_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging)
+```python title="Method definition"
+def delete_bucket_lifecycle_configuration(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBucketTaggingRequestRequestTypeDef](./type_defs.md#deletebuckettaggingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketLifecycleConfigurationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
 
-<a id="delete\_job\_tagging"></a>
+parent.delete_bucket_lifecycle_configuration(**kwargs)
+```
 
-### delete_job_tagging
+1. See [:material-code-braces: DeleteBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#deletebucketlifecycleconfigurationrequestrequesttypedef) 
+
+### delete\_bucket\_policy
+
+.
+
+Type annotations and code completion for `#!python boto3.client("s3control").delete_bucket_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_policy)
+
+```python title="Method definition"
+def delete_bucket_policy(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketPolicyRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
+
+parent.delete_bucket_policy(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteBucketPolicyRequestRequestTypeDef](./type_defs.md#deletebucketpolicyrequestrequesttypedef) 
+
+### delete\_bucket\_tagging
+
+.
+
+Type annotations and code completion for `#!python boto3.client("s3control").delete_bucket_tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_bucket_tagging)
+
+```python title="Method definition"
+def delete_bucket_tagging(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteBucketTaggingRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
+
+parent.delete_bucket_tagging(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteBucketTaggingRequestRequestTypeDef](./type_defs.md#deletebuckettaggingrequestrequesttypedef) 
+
+### delete\_job\_tagging
 
 Removes the entire tag set from the specified S3 Batch Operations job.
 
-Type annotations for `boto3.client("s3control").delete_job_tagging` method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_job_tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_job_tagging)
 
-Boto3 documentation:
-[S3Control.Client.delete_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_job_tagging)
+```python title="Method definition"
+def delete_job_tagging(
+    self,
+    *,
+    AccountId: str,
+    JobId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobTaggingRequestRequestTypeDef](./type_defs.md#deletejobtaggingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteJobTaggingRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "JobId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_job_tagging(**kwargs)
+```
 
-<a id="delete\_multi\_region\_access\_point"></a>
+1. See [:material-code-braces: DeleteJobTaggingRequestRequestTypeDef](./type_defs.md#deletejobtaggingrequestrequesttypedef) 
 
-### delete_multi_region_access_point
+### delete\_multi\_region\_access\_point
 
 Deletes a Multi-Region Access Point.
 
-Type annotations for
-`boto3.client("s3control").delete_multi_region_access_point` method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_multi_region_access_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_multi_region_access_point)
 
-Boto3 documentation:
-[S3Control.Client.delete_multi_region_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_multi_region_access_point)
+```python title="Method definition"
+def delete_multi_region_access_point(
+    self,
+    *,
+    AccountId: str,
+    ClientToken: str,
+    Details: DeleteMultiRegionAccessPointInputTypeDef,  # (1)
+) -> DeleteMultiRegionAccessPointResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMultiRegionAccessPointRequestRequestTypeDef](./type_defs.md#deletemultiregionaccesspointrequestrequesttypedef).
+1. See [:material-code-braces: DeleteMultiRegionAccessPointInputTypeDef](./type_defs.md#deletemultiregionaccesspointinputtypedef) 
+2. See [:material-code-braces: DeleteMultiRegionAccessPointResultTypeDef](./type_defs.md#deletemultiregionaccesspointresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `Details`:
-  [DeleteMultiRegionAccessPointInputTypeDef](./type_defs.md#deletemultiregionaccesspointinputtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMultiRegionAccessPointRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "ClientToken": ...,
+    "Details": ...,
+}
 
-Returns
-[DeleteMultiRegionAccessPointResultTypeDef](./type_defs.md#deletemultiregionaccesspointresulttypedef).
+parent.delete_multi_region_access_point(**kwargs)
+```
 
-<a id="delete\_public\_access\_block"></a>
+1. See [:material-code-braces: DeleteMultiRegionAccessPointRequestRequestTypeDef](./type_defs.md#deletemultiregionaccesspointrequestrequesttypedef) 
 
-### delete_public_access_block
+### delete\_public\_access\_block
 
 Removes the `PublicAccessBlock` configuration for an Amazon Web Services
 account.
 
-Type annotations for `boto3.client("s3control").delete_public_access_block`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_public_access_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_public_access_block)
 
-Boto3 documentation:
-[S3Control.Client.delete_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_public_access_block)
+```python title="Method definition"
+def delete_public_access_block(
+    self,
+    *,
+    AccountId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePublicAccessBlockRequestRequestTypeDef](./type_defs.md#deletepublicaccessblockrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePublicAccessBlockRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-<a id="delete\_storage\_lens\_configuration"></a>
+parent.delete_public_access_block(**kwargs)
+```
 
-### delete_storage_lens_configuration
+1. See [:material-code-braces: DeletePublicAccessBlockRequestRequestTypeDef](./type_defs.md#deletepublicaccessblockrequestrequesttypedef) 
+
+### delete\_storage\_lens\_configuration
 
 Deletes the Amazon S3 Storage Lens configuration.
 
-Type annotations for
-`boto3.client("s3control").delete_storage_lens_configuration` method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_storage_lens_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration)
 
-Boto3 documentation:
-[S3Control.Client.delete_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration)
+```python title="Method definition"
+def delete_storage_lens_configuration(
+    self,
+    *,
+    ConfigId: str,
+    AccountId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStorageLensConfigurationRequestRequestTypeDef](./type_defs.md#deletestoragelensconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigId`: `str` *(required)*
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteStorageLensConfigurationRequestRequestTypeDef = {  # (1)
+    "ConfigId": ...,
+    "AccountId": ...,
+}
 
-<a id="delete\_storage\_lens\_configuration\_tagging"></a>
+parent.delete_storage_lens_configuration(**kwargs)
+```
 
-### delete_storage_lens_configuration_tagging
+1. See [:material-code-braces: DeleteStorageLensConfigurationRequestRequestTypeDef](./type_defs.md#deletestoragelensconfigurationrequestrequesttypedef) 
+
+### delete\_storage\_lens\_configuration\_tagging
 
 Deletes the Amazon S3 Storage Lens configuration tags.
 
-Type annotations for
-`boto3.client("s3control").delete_storage_lens_configuration_tagging` method.
+Type annotations and code completion for `#!python boto3.client("s3control").delete_storage_lens_configuration_tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging)
 
-Boto3 documentation:
-[S3Control.Client.delete_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.delete_storage_lens_configuration_tagging)
+```python title="Method definition"
+def delete_storage_lens_configuration_tagging(
+    self,
+    *,
+    ConfigId: str,
+    AccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#deletestoragelensconfigurationtaggingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigId`: `str` *(required)*
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteStorageLensConfigurationTaggingRequestRequestTypeDef = {  # (1)
+    "ConfigId": ...,
+    "AccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_storage_lens_configuration_tagging(**kwargs)
+```
 
-<a id="describe\_job"></a>
+1. See [:material-code-braces: DeleteStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#deletestoragelensconfigurationtaggingrequestrequesttypedef) 
 
-### describe_job
+### describe\_job
 
 Retrieves the configuration parameters and status for a Batch Operations job.
 
-Type annotations for `boto3.client("s3control").describe_job` method.
+Type annotations and code completion for `#!python boto3.client("s3control").describe_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_job)
 
-Boto3 documentation:
-[S3Control.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_job)
+```python title="Method definition"
+def describe_job(
+    self,
+    *,
+    AccountId: str,
+    JobId: str,
+) -> DescribeJobResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJobRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "JobId": ...,
+}
 
-Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
+parent.describe_job(**kwargs)
+```
 
-<a id="describe\_multi\_region\_access\_point\_operation"></a>
+1. See [:material-code-braces: DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef) 
 
-### describe_multi_region_access_point_operation
+### describe\_multi\_region\_access\_point\_operation
 
 Retrieves the status of an asynchronous request to manage a Multi-Region Access
 Point.
 
-Type annotations for
-`boto3.client("s3control").describe_multi_region_access_point_operation`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").describe_multi_region_access_point_operation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_multi_region_access_point_operation)
 
-Boto3 documentation:
-[S3Control.Client.describe_multi_region_access_point_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.describe_multi_region_access_point_operation)
+```python title="Method definition"
+def describe_multi_region_access_point_operation(
+    self,
+    *,
+    AccountId: str,
+    RequestTokenARN: str,
+) -> DescribeMultiRegionAccessPointOperationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMultiRegionAccessPointOperationRequestRequestTypeDef](./type_defs.md#describemultiregionaccesspointoperationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMultiRegionAccessPointOperationResultTypeDef](./type_defs.md#describemultiregionaccesspointoperationresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `RequestTokenARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMultiRegionAccessPointOperationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "RequestTokenARN": ...,
+}
 
-Returns
-[DescribeMultiRegionAccessPointOperationResultTypeDef](./type_defs.md#describemultiregionaccesspointoperationresulttypedef).
+parent.describe_multi_region_access_point_operation(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeMultiRegionAccessPointOperationRequestRequestTypeDef](./type_defs.md#describemultiregionaccesspointoperationrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("s3control").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("s3control").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.generate_presigned_url)
 
-Boto3 documentation:
-[S3Control.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_access\_point"></a>
-
-### get_access_point
+### get\_access\_point
 
 Returns configuration information about the specified access point.
 
-Type annotations for `boto3.client("s3control").get_access_point` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_access_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point)
 
-Boto3 documentation:
-[S3Control.Client.get_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point)
+```python title="Method definition"
+def get_access_point(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetAccessPointResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessPointRequestRequestTypeDef](./type_defs.md#getaccesspointrequestrequesttypedef).
+1. See [:material-code-braces: GetAccessPointResultTypeDef](./type_defs.md#getaccesspointresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessPointRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetAccessPointResultTypeDef](./type_defs.md#getaccesspointresulttypedef).
+parent.get_access_point(**kwargs)
+```
 
-<a id="get\_access\_point\_configuration\_for\_object\_lambda"></a>
+1. See [:material-code-braces: GetAccessPointRequestRequestTypeDef](./type_defs.md#getaccesspointrequestrequesttypedef) 
 
-### get_access_point_configuration_for_object_lambda
+### get\_access\_point\_configuration\_for\_object\_lambda
 
 Returns configuration for an Object Lambda Access Point.
 
-Type annotations for
-`boto3.client("s3control").get_access_point_configuration_for_object_lambda`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_access_point_configuration_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.get_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_configuration_for_object_lambda)
+```python title="Method definition"
+def get_access_point_configuration_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetAccessPointConfigurationForObjectLambdaResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessPointConfigurationForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdarequestrequesttypedef).
+1. See [:material-code-braces: GetAccessPointConfigurationForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdaresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessPointConfigurationForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetAccessPointConfigurationForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdaresulttypedef).
+parent.get_access_point_configuration_for_object_lambda(**kwargs)
+```
 
-<a id="get\_access\_point\_for\_object\_lambda"></a>
+1. See [:material-code-braces: GetAccessPointConfigurationForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdarequestrequesttypedef) 
 
-### get_access_point_for_object_lambda
+### get\_access\_point\_for\_object\_lambda
 
-Returns configuration information about the specified Object Lambda Access
-Point The following actions are related to `GetAccessPointForObjectLambda` \*
-`CreateAccessPointForObjectLambda <https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPointForObjectLambda.htm...`.
+Returns configuration information about the specified Object Lambda Access Point
+The following actions are related to `GetAccessPointForObjectLambda`  *
+`CreateAccessPointForObjectLambda
+<https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_CreateAccessPointForObjectLambda.htm...`.
 
-Type annotations for
-`boto3.client("s3control").get_access_point_for_object_lambda` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_access_point_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.get_access_point_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_for_object_lambda)
+```python title="Method definition"
+def get_access_point_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetAccessPointForObjectLambdaResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointforobjectlambdarequestrequesttypedef).
+1. See [:material-code-braces: GetAccessPointForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointforobjectlambdaresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessPointForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetAccessPointForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointforobjectlambdaresulttypedef).
+parent.get_access_point_for_object_lambda(**kwargs)
+```
 
-<a id="get\_access\_point\_policy"></a>
+1. See [:material-code-braces: GetAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointforobjectlambdarequestrequesttypedef) 
 
-### get_access_point_policy
+### get\_access\_point\_policy
 
 Returns the access point policy associated with the specified access point.
 
-Type annotations for `boto3.client("s3control").get_access_point_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_access_point_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy)
 
-Boto3 documentation:
-[S3Control.Client.get_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy)
+```python title="Method definition"
+def get_access_point_policy(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetAccessPointPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessPointPolicyRequestRequestTypeDef](./type_defs.md#getaccesspointpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetAccessPointPolicyResultTypeDef](./type_defs.md#getaccesspointpolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessPointPolicyRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetAccessPointPolicyResultTypeDef](./type_defs.md#getaccesspointpolicyresulttypedef).
+parent.get_access_point_policy(**kwargs)
+```
 
-<a id="get\_access\_point\_policy\_for\_object\_lambda"></a>
+1. See [:material-code-braces: GetAccessPointPolicyRequestRequestTypeDef](./type_defs.md#getaccesspointpolicyrequestrequesttypedef) 
 
-### get_access_point_policy_for_object_lambda
+### get\_access\_point\_policy\_for\_object\_lambda
 
 Returns the resource policy for an Object Lambda Access Point.
 
-Type annotations for
-`boto3.client("s3control").get_access_point_policy_for_object_lambda` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_access_point_policy_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.get_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_for_object_lambda)
+```python title="Method definition"
+def get_access_point_policy_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetAccessPointPolicyForObjectLambdaResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessPointPolicyForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdarequestrequesttypedef).
+1. See [:material-code-braces: GetAccessPointPolicyForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdaresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessPointPolicyForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetAccessPointPolicyForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdaresulttypedef).
+parent.get_access_point_policy_for_object_lambda(**kwargs)
+```
 
-<a id="get\_access\_point\_policy\_status"></a>
+1. See [:material-code-braces: GetAccessPointPolicyForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdarequestrequesttypedef) 
 
-### get_access_point_policy_status
+### get\_access\_point\_policy\_status
 
 Indicates whether the specified access point currently has a policy that allows
 public access.
 
-Type annotations for `boto3.client("s3control").get_access_point_policy_status`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_access_point_policy_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status)
 
-Boto3 documentation:
-[S3Control.Client.get_access_point_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status)
+```python title="Method definition"
+def get_access_point_policy_status(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetAccessPointPolicyStatusResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessPointPolicyStatusRequestRequestTypeDef](./type_defs.md#getaccesspointpolicystatusrequestrequesttypedef).
+1. See [:material-code-braces: GetAccessPointPolicyStatusResultTypeDef](./type_defs.md#getaccesspointpolicystatusresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessPointPolicyStatusRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetAccessPointPolicyStatusResultTypeDef](./type_defs.md#getaccesspointpolicystatusresulttypedef).
+parent.get_access_point_policy_status(**kwargs)
+```
 
-<a id="get\_access\_point\_policy\_status\_for\_object\_lambda"></a>
+1. See [:material-code-braces: GetAccessPointPolicyStatusRequestRequestTypeDef](./type_defs.md#getaccesspointpolicystatusrequestrequesttypedef) 
 
-### get_access_point_policy_status_for_object_lambda
+### get\_access\_point\_policy\_status\_for\_object\_lambda
 
 Returns the status of the resource policy associated with an Object Lambda
 Access Point.
 
-Type annotations for
-`boto3.client("s3control").get_access_point_policy_status_for_object_lambda`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_access_point_policy_status_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.get_access_point_policy_status_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_access_point_policy_status_for_object_lambda)
+```python title="Method definition"
+def get_access_point_policy_status_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetAccessPointPolicyStatusForObjectLambdaResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessPointPolicyStatusForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdarequestrequesttypedef).
+1. See [:material-code-braces: GetAccessPointPolicyStatusForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdaresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessPointPolicyStatusForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetAccessPointPolicyStatusForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdaresulttypedef).
+parent.get_access_point_policy_status_for_object_lambda(**kwargs)
+```
 
-<a id="get\_bucket"></a>
+1. See [:material-code-braces: GetAccessPointPolicyStatusForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdarequestrequesttypedef) 
 
-### get_bucket
+### get\_bucket
 
 Gets an Amazon S3 on Outposts bucket.
 
-Type annotations for `boto3.client("s3control").get_bucket` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket)
 
-Boto3 documentation:
-[S3Control.Client.get_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket)
+```python title="Method definition"
+def get_bucket(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+) -> GetBucketResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBucketRequestRequestTypeDef](./type_defs.md#getbucketrequestrequesttypedef).
+1. See [:material-code-braces: GetBucketResultTypeDef](./type_defs.md#getbucketresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBucketRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
 
-Returns [GetBucketResultTypeDef](./type_defs.md#getbucketresulttypedef).
+parent.get_bucket(**kwargs)
+```
 
-<a id="get\_bucket\_lifecycle\_configuration"></a>
+1. See [:material-code-braces: GetBucketRequestRequestTypeDef](./type_defs.md#getbucketrequestrequesttypedef) 
 
-### get_bucket_lifecycle_configuration
-
-.
-
-Type annotations for
-`boto3.client("s3control").get_bucket_lifecycle_configuration` method.
-
-Boto3 documentation:
-[S3Control.Client.get_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration)
-
-Arguments mapping described in
-[GetBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#getbucketlifecycleconfigurationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
-
-Returns
-[GetBucketLifecycleConfigurationResultTypeDef](./type_defs.md#getbucketlifecycleconfigurationresulttypedef).
-
-<a id="get\_bucket\_policy"></a>
-
-### get_bucket_policy
+### get\_bucket\_lifecycle\_configuration
 
 .
 
-Type annotations for `boto3.client("s3control").get_bucket_policy` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_bucket_lifecycle_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_lifecycle_configuration)
 
-Boto3 documentation:
-[S3Control.Client.get_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_policy)
+```python title="Method definition"
+def get_bucket_lifecycle_configuration(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+) -> GetBucketLifecycleConfigurationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBucketPolicyRequestRequestTypeDef](./type_defs.md#getbucketpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetBucketLifecycleConfigurationResultTypeDef](./type_defs.md#getbucketlifecycleconfigurationresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBucketLifecycleConfigurationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
 
-Returns
-[GetBucketPolicyResultTypeDef](./type_defs.md#getbucketpolicyresulttypedef).
+parent.get_bucket_lifecycle_configuration(**kwargs)
+```
 
-<a id="get\_bucket\_tagging"></a>
+1. See [:material-code-braces: GetBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#getbucketlifecycleconfigurationrequestrequesttypedef) 
 
-### get_bucket_tagging
+### get\_bucket\_policy
 
 .
 
-Type annotations for `boto3.client("s3control").get_bucket_tagging` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_bucket_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_policy)
 
-Boto3 documentation:
-[S3Control.Client.get_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_tagging)
+```python title="Method definition"
+def get_bucket_policy(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+) -> GetBucketPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBucketTaggingRequestRequestTypeDef](./type_defs.md#getbuckettaggingrequestrequesttypedef).
+1. See [:material-code-braces: GetBucketPolicyResultTypeDef](./type_defs.md#getbucketpolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBucketPolicyRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
 
-Returns
-[GetBucketTaggingResultTypeDef](./type_defs.md#getbuckettaggingresulttypedef).
+parent.get_bucket_policy(**kwargs)
+```
 
-<a id="get\_job\_tagging"></a>
+1. See [:material-code-braces: GetBucketPolicyRequestRequestTypeDef](./type_defs.md#getbucketpolicyrequestrequesttypedef) 
 
-### get_job_tagging
+### get\_bucket\_tagging
+
+.
+
+Type annotations and code completion for `#!python boto3.client("s3control").get_bucket_tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_bucket_tagging)
+
+```python title="Method definition"
+def get_bucket_tagging(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+) -> GetBucketTaggingResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetBucketTaggingResultTypeDef](./type_defs.md#getbuckettaggingresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetBucketTaggingRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
+
+parent.get_bucket_tagging(**kwargs)
+```
+
+1. See [:material-code-braces: GetBucketTaggingRequestRequestTypeDef](./type_defs.md#getbuckettaggingrequestrequesttypedef) 
+
+### get\_job\_tagging
 
 Returns the tags on an S3 Batch Operations job.
 
-Type annotations for `boto3.client("s3control").get_job_tagging` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_job_tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_job_tagging)
 
-Boto3 documentation:
-[S3Control.Client.get_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_job_tagging)
+```python title="Method definition"
+def get_job_tagging(
+    self,
+    *,
+    AccountId: str,
+    JobId: str,
+) -> GetJobTaggingResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobTaggingRequestRequestTypeDef](./type_defs.md#getjobtaggingrequestrequesttypedef).
+1. See [:material-code-braces: GetJobTaggingResultTypeDef](./type_defs.md#getjobtaggingresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobTaggingRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "JobId": ...,
+}
 
-Returns
-[GetJobTaggingResultTypeDef](./type_defs.md#getjobtaggingresulttypedef).
+parent.get_job_tagging(**kwargs)
+```
 
-<a id="get\_multi\_region\_access\_point"></a>
+1. See [:material-code-braces: GetJobTaggingRequestRequestTypeDef](./type_defs.md#getjobtaggingrequestrequesttypedef) 
 
-### get_multi_region_access_point
+### get\_multi\_region\_access\_point
 
-Returns configuration information about the specified Multi-Region Access
-Point.
+Returns configuration information about the specified Multi-Region Access Point.
 
-Type annotations for `boto3.client("s3control").get_multi_region_access_point`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_multi_region_access_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point)
 
-Boto3 documentation:
-[S3Control.Client.get_multi_region_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point)
+```python title="Method definition"
+def get_multi_region_access_point(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetMultiRegionAccessPointResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMultiRegionAccessPointRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointrequestrequesttypedef).
+1. See [:material-code-braces: GetMultiRegionAccessPointResultTypeDef](./type_defs.md#getmultiregionaccesspointresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMultiRegionAccessPointRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetMultiRegionAccessPointResultTypeDef](./type_defs.md#getmultiregionaccesspointresulttypedef).
+parent.get_multi_region_access_point(**kwargs)
+```
 
-<a id="get\_multi\_region\_access\_point\_policy"></a>
+1. See [:material-code-braces: GetMultiRegionAccessPointRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointrequestrequesttypedef) 
 
-### get_multi_region_access_point_policy
+### get\_multi\_region\_access\_point\_policy
 
 Returns the access control policy of the specified Multi-Region Access Point.
 
-Type annotations for
-`boto3.client("s3control").get_multi_region_access_point_policy` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_multi_region_access_point_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point_policy)
 
-Boto3 documentation:
-[S3Control.Client.get_multi_region_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point_policy)
+```python title="Method definition"
+def get_multi_region_access_point_policy(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetMultiRegionAccessPointPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMultiRegionAccessPointPolicyRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetMultiRegionAccessPointPolicyResultTypeDef](./type_defs.md#getmultiregionaccesspointpolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMultiRegionAccessPointPolicyRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetMultiRegionAccessPointPolicyResultTypeDef](./type_defs.md#getmultiregionaccesspointpolicyresulttypedef).
+parent.get_multi_region_access_point_policy(**kwargs)
+```
 
-<a id="get\_multi\_region\_access\_point\_policy\_status"></a>
+1. See [:material-code-braces: GetMultiRegionAccessPointPolicyRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointpolicyrequestrequesttypedef) 
 
-### get_multi_region_access_point_policy_status
+### get\_multi\_region\_access\_point\_policy\_status
 
 Indicates whether the specified Multi-Region Access Point has an access control
 policy that allows public access.
 
-Type annotations for
-`boto3.client("s3control").get_multi_region_access_point_policy_status` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_multi_region_access_point_policy_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point_policy_status)
 
-Boto3 documentation:
-[S3Control.Client.get_multi_region_access_point_policy_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_multi_region_access_point_policy_status)
+```python title="Method definition"
+def get_multi_region_access_point_policy_status(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+) -> GetMultiRegionAccessPointPolicyStatusResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMultiRegionAccessPointPolicyStatusRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointpolicystatusrequestrequesttypedef).
+1. See [:material-code-braces: GetMultiRegionAccessPointPolicyStatusResultTypeDef](./type_defs.md#getmultiregionaccesspointpolicystatusresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMultiRegionAccessPointPolicyStatusRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+}
 
-Returns
-[GetMultiRegionAccessPointPolicyStatusResultTypeDef](./type_defs.md#getmultiregionaccesspointpolicystatusresulttypedef).
+parent.get_multi_region_access_point_policy_status(**kwargs)
+```
 
-<a id="get\_public\_access\_block"></a>
+1. See [:material-code-braces: GetMultiRegionAccessPointPolicyStatusRequestRequestTypeDef](./type_defs.md#getmultiregionaccesspointpolicystatusrequestrequesttypedef) 
 
-### get_public_access_block
+### get\_public\_access\_block
 
 Retrieves the `PublicAccessBlock` configuration for an Amazon Web Services
 account.
 
-Type annotations for `boto3.client("s3control").get_public_access_block`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_public_access_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_public_access_block)
 
-Boto3 documentation:
-[S3Control.Client.get_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_public_access_block)
+```python title="Method definition"
+def get_public_access_block(
+    self,
+    *,
+    AccountId: str,
+) -> GetPublicAccessBlockOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPublicAccessBlockRequestRequestTypeDef](./type_defs.md#getpublicaccessblockrequestrequesttypedef).
+1. See [:material-code-braces: GetPublicAccessBlockOutputTypeDef](./type_defs.md#getpublicaccessblockoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPublicAccessBlockRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[GetPublicAccessBlockOutputTypeDef](./type_defs.md#getpublicaccessblockoutputtypedef).
+parent.get_public_access_block(**kwargs)
+```
 
-<a id="get\_storage\_lens\_configuration"></a>
+1. See [:material-code-braces: GetPublicAccessBlockRequestRequestTypeDef](./type_defs.md#getpublicaccessblockrequestrequesttypedef) 
 
-### get_storage_lens_configuration
+### get\_storage\_lens\_configuration
 
 Gets the Amazon S3 Storage Lens configuration.
 
-Type annotations for `boto3.client("s3control").get_storage_lens_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_storage_lens_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration)
 
-Boto3 documentation:
-[S3Control.Client.get_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration)
+```python title="Method definition"
+def get_storage_lens_configuration(
+    self,
+    *,
+    ConfigId: str,
+    AccountId: str,
+) -> GetStorageLensConfigurationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStorageLensConfigurationRequestRequestTypeDef](./type_defs.md#getstoragelensconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetStorageLensConfigurationResultTypeDef](./type_defs.md#getstoragelensconfigurationresulttypedef) 
 
-Keyword-only arguments:
 
-- `ConfigId`: `str` *(required)*
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStorageLensConfigurationRequestRequestTypeDef = {  # (1)
+    "ConfigId": ...,
+    "AccountId": ...,
+}
 
-Returns
-[GetStorageLensConfigurationResultTypeDef](./type_defs.md#getstoragelensconfigurationresulttypedef).
+parent.get_storage_lens_configuration(**kwargs)
+```
 
-<a id="get\_storage\_lens\_configuration\_tagging"></a>
+1. See [:material-code-braces: GetStorageLensConfigurationRequestRequestTypeDef](./type_defs.md#getstoragelensconfigurationrequestrequesttypedef) 
 
-### get_storage_lens_configuration_tagging
+### get\_storage\_lens\_configuration\_tagging
 
 Gets the tags of Amazon S3 Storage Lens configuration.
 
-Type annotations for
-`boto3.client("s3control").get_storage_lens_configuration_tagging` method.
+Type annotations and code completion for `#!python boto3.client("s3control").get_storage_lens_configuration_tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging)
 
-Boto3 documentation:
-[S3Control.Client.get_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.get_storage_lens_configuration_tagging)
+```python title="Method definition"
+def get_storage_lens_configuration_tagging(
+    self,
+    *,
+    ConfigId: str,
+    AccountId: str,
+) -> GetStorageLensConfigurationTaggingResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#getstoragelensconfigurationtaggingrequestrequesttypedef).
+1. See [:material-code-braces: GetStorageLensConfigurationTaggingResultTypeDef](./type_defs.md#getstoragelensconfigurationtaggingresulttypedef) 
 
-Keyword-only arguments:
 
-- `ConfigId`: `str` *(required)*
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStorageLensConfigurationTaggingRequestRequestTypeDef = {  # (1)
+    "ConfigId": ...,
+    "AccountId": ...,
+}
 
-Returns
-[GetStorageLensConfigurationTaggingResultTypeDef](./type_defs.md#getstoragelensconfigurationtaggingresulttypedef).
+parent.get_storage_lens_configuration_tagging(**kwargs)
+```
 
-<a id="list\_access\_points"></a>
+1. See [:material-code-braces: GetStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#getstoragelensconfigurationtaggingrequestrequesttypedef) 
 
-### list_access_points
+### list\_access\_points
 
 Returns a list of the access points currently associated with the specified
 bucket.
 
-Type annotations for `boto3.client("s3control").list_access_points` method.
+Type annotations and code completion for `#!python boto3.client("s3control").list_access_points` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points)
 
-Boto3 documentation:
-[S3Control.Client.list_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points)
+```python title="Method definition"
+def list_access_points(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAccessPointsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccessPointsRequestRequestTypeDef](./type_defs.md#listaccesspointsrequestrequesttypedef).
+1. See [:material-code-braces: ListAccessPointsResultTypeDef](./type_defs.md#listaccesspointsresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccessPointsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[ListAccessPointsResultTypeDef](./type_defs.md#listaccesspointsresulttypedef).
+parent.list_access_points(**kwargs)
+```
 
-<a id="list\_access\_points\_for\_object\_lambda"></a>
+1. See [:material-code-braces: ListAccessPointsRequestRequestTypeDef](./type_defs.md#listaccesspointsrequestrequesttypedef) 
 
-### list_access_points_for_object_lambda
+### list\_access\_points\_for\_object\_lambda
 
 Returns some or all (up to 1,000) access points associated with the Object
 Lambda Access Point per call.
 
-Type annotations for
-`boto3.client("s3control").list_access_points_for_object_lambda` method.
+Type annotations and code completion for `#!python boto3.client("s3control").list_access_points_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.list_access_points_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_access_points_for_object_lambda)
+```python title="Method definition"
+def list_access_points_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAccessPointsForObjectLambdaResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccessPointsForObjectLambdaRequestRequestTypeDef](./type_defs.md#listaccesspointsforobjectlambdarequestrequesttypedef).
+1. See [:material-code-braces: ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccessPointsForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef).
+parent.list_access_points_for_object_lambda(**kwargs)
+```
 
-<a id="list\_jobs"></a>
+1. See [:material-code-braces: ListAccessPointsForObjectLambdaRequestRequestTypeDef](./type_defs.md#listaccesspointsforobjectlambdarequestrequesttypedef) 
 
-### list_jobs
+### list\_jobs
 
 Lists current S3 Batch Operations jobs and jobs that have ended within the last
 30 days for the Amazon Web Services account making the request.
 
-Type annotations for `boto3.client("s3control").list_jobs` method.
+Type annotations and code completion for `#!python boto3.client("s3control").list_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_jobs)
 
-Boto3 documentation:
-[S3Control.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_jobs)
+```python title="Method definition"
+def list_jobs(
+    self,
+    *,
+    AccountId: str,
+    JobStatuses: Sequence[JobStatusType] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListJobsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `JobStatuses`: `Sequence`\[[JobStatusType](./literals.md#jobstatustype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
+parent.list_jobs(**kwargs)
+```
 
-<a id="list\_multi\_region\_access\_points"></a>
+1. See [:material-code-braces: ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef) 
 
-### list_multi_region_access_points
+### list\_multi\_region\_access\_points
 
 Returns a list of the Multi-Region Access Points currently associated with the
 specified Amazon Web Services account.
 
-Type annotations for
-`boto3.client("s3control").list_multi_region_access_points` method.
+Type annotations and code completion for `#!python boto3.client("s3control").list_multi_region_access_points` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_multi_region_access_points)
 
-Boto3 documentation:
-[S3Control.Client.list_multi_region_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_multi_region_access_points)
+```python title="Method definition"
+def list_multi_region_access_points(
+    self,
+    *,
+    AccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMultiRegionAccessPointsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMultiRegionAccessPointsRequestRequestTypeDef](./type_defs.md#listmultiregionaccesspointsrequestrequesttypedef).
+1. See [:material-code-braces: ListMultiRegionAccessPointsResultTypeDef](./type_defs.md#listmultiregionaccesspointsresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMultiRegionAccessPointsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[ListMultiRegionAccessPointsResultTypeDef](./type_defs.md#listmultiregionaccesspointsresulttypedef).
+parent.list_multi_region_access_points(**kwargs)
+```
 
-<a id="list\_regional\_buckets"></a>
+1. See [:material-code-braces: ListMultiRegionAccessPointsRequestRequestTypeDef](./type_defs.md#listmultiregionaccesspointsrequestrequesttypedef) 
 
-### list_regional_buckets
+### list\_regional\_buckets
 
 Returns a list of all Outposts buckets in an Outpost that are owned by the
 authenticated sender of the request.
 
-Type annotations for `boto3.client("s3control").list_regional_buckets` method.
+Type annotations and code completion for `#!python boto3.client("s3control").list_regional_buckets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_regional_buckets)
 
-Boto3 documentation:
-[S3Control.Client.list_regional_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_regional_buckets)
+```python title="Method definition"
+def list_regional_buckets(
+    self,
+    *,
+    AccountId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    OutpostId: str = ...,
+) -> ListRegionalBucketsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRegionalBucketsRequestRequestTypeDef](./type_defs.md#listregionalbucketsrequestrequesttypedef).
+1. See [:material-code-braces: ListRegionalBucketsResultTypeDef](./type_defs.md#listregionalbucketsresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `OutpostId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRegionalBucketsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[ListRegionalBucketsResultTypeDef](./type_defs.md#listregionalbucketsresulttypedef).
+parent.list_regional_buckets(**kwargs)
+```
 
-<a id="list\_storage\_lens\_configurations"></a>
+1. See [:material-code-braces: ListRegionalBucketsRequestRequestTypeDef](./type_defs.md#listregionalbucketsrequestrequesttypedef) 
 
-### list_storage_lens_configurations
+### list\_storage\_lens\_configurations
 
 Gets a list of Amazon S3 Storage Lens configurations.
 
-Type annotations for
-`boto3.client("s3control").list_storage_lens_configurations` method.
+Type annotations and code completion for `#!python boto3.client("s3control").list_storage_lens_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations)
 
-Boto3 documentation:
-[S3Control.Client.list_storage_lens_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.list_storage_lens_configurations)
+```python title="Method definition"
+def list_storage_lens_configurations(
+    self,
+    *,
+    AccountId: str,
+    NextToken: str = ...,
+) -> ListStorageLensConfigurationsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStorageLensConfigurationsRequestRequestTypeDef](./type_defs.md#liststoragelensconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: ListStorageLensConfigurationsResultTypeDef](./type_defs.md#liststoragelensconfigurationsresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStorageLensConfigurationsRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+}
 
-Returns
-[ListStorageLensConfigurationsResultTypeDef](./type_defs.md#liststoragelensconfigurationsresulttypedef).
+parent.list_storage_lens_configurations(**kwargs)
+```
 
-<a id="put\_access\_point\_configuration\_for\_object\_lambda"></a>
+1. See [:material-code-braces: ListStorageLensConfigurationsRequestRequestTypeDef](./type_defs.md#liststoragelensconfigurationsrequestrequesttypedef) 
 
-### put_access_point_configuration_for_object_lambda
+### put\_access\_point\_configuration\_for\_object\_lambda
 
 Replaces configuration for an Object Lambda Access Point.
 
-Type annotations for
-`boto3.client("s3control").put_access_point_configuration_for_object_lambda`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_access_point_configuration_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_configuration_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.put_access_point_configuration_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_configuration_for_object_lambda)
+```python title="Method definition"
+def put_access_point_configuration_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+    Configuration: ObjectLambdaConfigurationTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef](./type_defs.md#putaccesspointconfigurationforobjectlambdarequestrequesttypedef).
+1. See [:material-code-braces: ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Configuration`:
-  [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+    "Configuration": ...,
+}
 
-<a id="put\_access\_point\_policy"></a>
+parent.put_access_point_configuration_for_object_lambda(**kwargs)
+```
 
-### put_access_point_policy
+1. See [:material-code-braces: PutAccessPointConfigurationForObjectLambdaRequestRequestTypeDef](./type_defs.md#putaccesspointconfigurationforobjectlambdarequestrequesttypedef) 
+
+### put\_access\_point\_policy
 
 Associates an access policy with the specified access point.
 
-Type annotations for `boto3.client("s3control").put_access_point_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_access_point_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy)
 
-Boto3 documentation:
-[S3Control.Client.put_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy)
+```python title="Method definition"
+def put_access_point_policy(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+    Policy: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutAccessPointPolicyRequestRequestTypeDef](./type_defs.md#putaccesspointpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutAccessPointPolicyRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+    "Policy": ...,
+}
 
-<a id="put\_access\_point\_policy\_for\_object\_lambda"></a>
+parent.put_access_point_policy(**kwargs)
+```
 
-### put_access_point_policy_for_object_lambda
+1. See [:material-code-braces: PutAccessPointPolicyRequestRequestTypeDef](./type_defs.md#putaccesspointpolicyrequestrequesttypedef) 
+
+### put\_access\_point\_policy\_for\_object\_lambda
 
 Creates or replaces resource policy for an Object Lambda Access Point.
 
-Type annotations for
-`boto3.client("s3control").put_access_point_policy_for_object_lambda` method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_access_point_policy_for_object_lambda` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy_for_object_lambda)
 
-Boto3 documentation:
-[S3Control.Client.put_access_point_policy_for_object_lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_access_point_policy_for_object_lambda)
+```python title="Method definition"
+def put_access_point_policy_for_object_lambda(
+    self,
+    *,
+    AccountId: str,
+    Name: str,
+    Policy: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef](./type_defs.md#putaccesspointpolicyforobjectlambdarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Name": ...,
+    "Policy": ...,
+}
 
-<a id="put\_bucket\_lifecycle\_configuration"></a>
+parent.put_access_point_policy_for_object_lambda(**kwargs)
+```
 
-### put_bucket_lifecycle_configuration
+1. See [:material-code-braces: PutAccessPointPolicyForObjectLambdaRequestRequestTypeDef](./type_defs.md#putaccesspointpolicyforobjectlambdarequestrequesttypedef) 
 
-.
-
-Type annotations for
-`boto3.client("s3control").put_bucket_lifecycle_configuration` method.
-
-Boto3 documentation:
-[S3Control.Client.put_bucket_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_lifecycle_configuration)
-
-Arguments mapping described in
-[PutBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putbucketlifecycleconfigurationrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
-- `LifecycleConfiguration`:
-  [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
-
-<a id="put\_bucket\_policy"></a>
-
-### put_bucket_policy
+### put\_bucket\_lifecycle\_configuration
 
 .
 
-Type annotations for `boto3.client("s3control").put_bucket_policy` method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_bucket_lifecycle_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_lifecycle_configuration)
 
-Boto3 documentation:
-[S3Control.Client.put_bucket_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_policy)
+```python title="Method definition"
+def put_bucket_lifecycle_configuration(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+    LifecycleConfiguration: LifecycleConfigurationTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketPolicyRequestRequestTypeDef](./type_defs.md#putbucketpolicyrequestrequesttypedef).
+1. See [:material-code-braces: LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
-- `Policy`: `str` *(required)*
-- `ConfirmRemoveSelfBucketAccess`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutBucketLifecycleConfigurationRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+}
 
-<a id="put\_bucket\_tagging"></a>
+parent.put_bucket_lifecycle_configuration(**kwargs)
+```
 
-### put_bucket_tagging
+1. See [:material-code-braces: PutBucketLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putbucketlifecycleconfigurationrequestrequesttypedef) 
+
+### put\_bucket\_policy
 
 .
 
-Type annotations for `boto3.client("s3control").put_bucket_tagging` method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_bucket_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_policy)
 
-Boto3 documentation:
-[S3Control.Client.put_bucket_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_tagging)
+```python title="Method definition"
+def put_bucket_policy(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+    Policy: str,
+    ConfirmRemoveSelfBucketAccess: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutBucketTaggingRequestRequestTypeDef](./type_defs.md#putbuckettaggingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `Bucket`: `str` *(required)*
-- `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutBucketPolicyRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+    "Policy": ...,
+}
 
-<a id="put\_job\_tagging"></a>
+parent.put_bucket_policy(**kwargs)
+```
 
-### put_job_tagging
+1. See [:material-code-braces: PutBucketPolicyRequestRequestTypeDef](./type_defs.md#putbucketpolicyrequestrequesttypedef) 
+
+### put\_bucket\_tagging
+
+.
+
+Type annotations and code completion for `#!python boto3.client("s3control").put_bucket_tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_bucket_tagging)
+
+```python title="Method definition"
+def put_bucket_tagging(
+    self,
+    *,
+    AccountId: str,
+    Bucket: str,
+    Tagging: TaggingTypeDef,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: TaggingTypeDef](./type_defs.md#taggingtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutBucketTaggingRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "Bucket": ...,
+    "Tagging": ...,
+}
+
+parent.put_bucket_tagging(**kwargs)
+```
+
+1. See [:material-code-braces: PutBucketTaggingRequestRequestTypeDef](./type_defs.md#putbuckettaggingrequestrequesttypedef) 
+
+### put\_job\_tagging
 
 Sets the supplied tag-set on an S3 Batch Operations job.
 
-Type annotations for `boto3.client("s3control").put_job_tagging` method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_job_tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_job_tagging)
 
-Boto3 documentation:
-[S3Control.Client.put_job_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_job_tagging)
+```python title="Method definition"
+def put_job_tagging(
+    self,
+    *,
+    AccountId: str,
+    JobId: str,
+    Tags: Sequence[S3TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutJobTaggingRequestRequestTypeDef](./type_defs.md#putjobtaggingrequestrequesttypedef).
+1. See [:material-code-braces: S3TagTypeDef](./type_defs.md#s3tagtypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `JobId`: `str` *(required)*
-- `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutJobTaggingRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "JobId": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_job_tagging(**kwargs)
+```
 
-<a id="put\_multi\_region\_access\_point\_policy"></a>
+1. See [:material-code-braces: PutJobTaggingRequestRequestTypeDef](./type_defs.md#putjobtaggingrequestrequesttypedef) 
 
-### put_multi_region_access_point_policy
+### put\_multi\_region\_access\_point\_policy
 
 Associates an access control policy with the specified Multi-Region Access
 Point.
 
-Type annotations for
-`boto3.client("s3control").put_multi_region_access_point_policy` method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_multi_region_access_point_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_multi_region_access_point_policy)
 
-Boto3 documentation:
-[S3Control.Client.put_multi_region_access_point_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_multi_region_access_point_policy)
+```python title="Method definition"
+def put_multi_region_access_point_policy(
+    self,
+    *,
+    AccountId: str,
+    ClientToken: str,
+    Details: PutMultiRegionAccessPointPolicyInputTypeDef,  # (1)
+) -> PutMultiRegionAccessPointPolicyResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutMultiRegionAccessPointPolicyRequestRequestTypeDef](./type_defs.md#putmultiregionaccesspointpolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutMultiRegionAccessPointPolicyInputTypeDef](./type_defs.md#putmultiregionaccesspointpolicyinputtypedef) 
+2. See [:material-code-braces: PutMultiRegionAccessPointPolicyResultTypeDef](./type_defs.md#putmultiregionaccesspointpolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `Details`:
-  [PutMultiRegionAccessPointPolicyInputTypeDef](./type_defs.md#putmultiregionaccesspointpolicyinputtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutMultiRegionAccessPointPolicyRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "ClientToken": ...,
+    "Details": ...,
+}
 
-Returns
-[PutMultiRegionAccessPointPolicyResultTypeDef](./type_defs.md#putmultiregionaccesspointpolicyresulttypedef).
+parent.put_multi_region_access_point_policy(**kwargs)
+```
 
-<a id="put\_public\_access\_block"></a>
+1. See [:material-code-braces: PutMultiRegionAccessPointPolicyRequestRequestTypeDef](./type_defs.md#putmultiregionaccesspointpolicyrequestrequesttypedef) 
 
-### put_public_access_block
+### put\_public\_access\_block
 
 Creates or modifies the `PublicAccessBlock` configuration for an Amazon Web
 Services account.
 
-Type annotations for `boto3.client("s3control").put_public_access_block`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_public_access_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_public_access_block)
 
-Boto3 documentation:
-[S3Control.Client.put_public_access_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_public_access_block)
+```python title="Method definition"
+def put_public_access_block(
+    self,
+    *,
+    PublicAccessBlockConfiguration: PublicAccessBlockConfigurationTypeDef,  # (1)
+    AccountId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutPublicAccessBlockRequestRequestTypeDef](./type_defs.md#putpublicaccessblockrequestrequesttypedef).
+1. See [:material-code-braces: PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `PublicAccessBlockConfiguration`:
-  [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
-  *(required)*
-- `AccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutPublicAccessBlockRequestRequestTypeDef = {  # (1)
+    "PublicAccessBlockConfiguration": ...,
+    "AccountId": ...,
+}
 
-<a id="put\_storage\_lens\_configuration"></a>
+parent.put_public_access_block(**kwargs)
+```
 
-### put_storage_lens_configuration
+1. See [:material-code-braces: PutPublicAccessBlockRequestRequestTypeDef](./type_defs.md#putpublicaccessblockrequestrequesttypedef) 
+
+### put\_storage\_lens\_configuration
 
 Puts an Amazon S3 Storage Lens configuration.
 
-Type annotations for `boto3.client("s3control").put_storage_lens_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_storage_lens_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration)
 
-Boto3 documentation:
-[S3Control.Client.put_storage_lens_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration)
+```python title="Method definition"
+def put_storage_lens_configuration(
+    self,
+    *,
+    ConfigId: str,
+    AccountId: str,
+    StorageLensConfiguration: StorageLensConfigurationTypeDef,  # (1)
+    Tags: Sequence[StorageLensTagTypeDef] = ...,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutStorageLensConfigurationRequestRequestTypeDef](./type_defs.md#putstoragelensconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef) 
+2. See [:material-code-braces: StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef) 
 
-Keyword-only arguments:
 
-- `ConfigId`: `str` *(required)*
-- `AccountId`: `str` *(required)*
-- `StorageLensConfiguration`:
-  [StorageLensConfigurationTypeDef](./type_defs.md#storagelensconfigurationtypedef)
-  *(required)*
-- `Tags`:
-  `Sequence`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutStorageLensConfigurationRequestRequestTypeDef = {  # (1)
+    "ConfigId": ...,
+    "AccountId": ...,
+    "StorageLensConfiguration": ...,
+}
 
-<a id="put\_storage\_lens\_configuration\_tagging"></a>
+parent.put_storage_lens_configuration(**kwargs)
+```
 
-### put_storage_lens_configuration_tagging
+1. See [:material-code-braces: PutStorageLensConfigurationRequestRequestTypeDef](./type_defs.md#putstoragelensconfigurationrequestrequesttypedef) 
+
+### put\_storage\_lens\_configuration\_tagging
 
 Put or replace tags on an existing Amazon S3 Storage Lens configuration.
 
-Type annotations for
-`boto3.client("s3control").put_storage_lens_configuration_tagging` method.
+Type annotations and code completion for `#!python boto3.client("s3control").put_storage_lens_configuration_tagging` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration_tagging)
 
-Boto3 documentation:
-[S3Control.Client.put_storage_lens_configuration_tagging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.put_storage_lens_configuration_tagging)
+```python title="Method definition"
+def put_storage_lens_configuration_tagging(
+    self,
+    *,
+    ConfigId: str,
+    AccountId: str,
+    Tags: Sequence[StorageLensTagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#putstoragelensconfigurationtaggingrequestrequesttypedef).
+1. See [:material-code-braces: StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef) 
 
-Keyword-only arguments:
 
-- `ConfigId`: `str` *(required)*
-- `AccountId`: `str` *(required)*
-- `Tags`:
-  `Sequence`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutStorageLensConfigurationTaggingRequestRequestTypeDef = {  # (1)
+    "ConfigId": ...,
+    "AccountId": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_storage_lens_configuration_tagging(**kwargs)
+```
 
-<a id="update\_job\_priority"></a>
+1. See [:material-code-braces: PutStorageLensConfigurationTaggingRequestRequestTypeDef](./type_defs.md#putstoragelensconfigurationtaggingrequestrequesttypedef) 
 
-### update_job_priority
+### update\_job\_priority
 
 Updates an existing S3 Batch Operations job's priority.
 
-Type annotations for `boto3.client("s3control").update_job_priority` method.
+Type annotations and code completion for `#!python boto3.client("s3control").update_job_priority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_priority)
 
-Boto3 documentation:
-[S3Control.Client.update_job_priority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_priority)
+```python title="Method definition"
+def update_job_priority(
+    self,
+    *,
+    AccountId: str,
+    JobId: str,
+    Priority: int,
+) -> UpdateJobPriorityResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateJobPriorityRequestRequestTypeDef](./type_defs.md#updatejobpriorityrequestrequesttypedef).
+1. See [:material-code-braces: UpdateJobPriorityResultTypeDef](./type_defs.md#updatejobpriorityresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `JobId`: `str` *(required)*
-- `Priority`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateJobPriorityRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "JobId": ...,
+    "Priority": ...,
+}
 
-Returns
-[UpdateJobPriorityResultTypeDef](./type_defs.md#updatejobpriorityresulttypedef).
+parent.update_job_priority(**kwargs)
+```
 
-<a id="update\_job\_status"></a>
+1. See [:material-code-braces: UpdateJobPriorityRequestRequestTypeDef](./type_defs.md#updatejobpriorityrequestrequesttypedef) 
 
-### update_job_status
+### update\_job\_status
 
 Updates the status for the specified job.
 
-Type annotations for `boto3.client("s3control").update_job_status` method.
+Type annotations and code completion for `#!python boto3.client("s3control").update_job_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_status)
 
-Boto3 documentation:
-[S3Control.Client.update_job_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.update_job_status)
+```python title="Method definition"
+def update_job_status(
+    self,
+    *,
+    AccountId: str,
+    JobId: str,
+    RequestedJobStatus: RequestedJobStatusType,  # (1)
+    StatusUpdateReason: str = ...,
+) -> UpdateJobStatusResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateJobStatusRequestRequestTypeDef](./type_defs.md#updatejobstatusrequestrequesttypedef).
+1. See [:material-code-brackets: RequestedJobStatusType](./literals.md#requestedjobstatustype) 
+2. See [:material-code-braces: UpdateJobStatusResultTypeDef](./type_defs.md#updatejobstatusresulttypedef) 
 
-Keyword-only arguments:
 
-- `AccountId`: `str` *(required)*
-- `JobId`: `str` *(required)*
-- `RequestedJobStatus`:
-  [RequestedJobStatusType](./literals.md#requestedjobstatustype) *(required)*
-- `StatusUpdateReason`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateJobStatusRequestRequestTypeDef = {  # (1)
+    "AccountId": ...,
+    "JobId": ...,
+    "RequestedJobStatus": ...,
+}
 
-Returns
-[UpdateJobStatusResultTypeDef](./type_defs.md#updatejobstatusresulttypedef).
+parent.update_job_status(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateJobStatusRequestRequestTypeDef](./type_defs.md#updatejobstatusrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("s3control").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("s3control").get_paginator` method with overloads.
 
-- `client.get_paginator("list_access_points_for_object_lambda")` ->
-  [ListAccessPointsForObjectLambdaPaginator](./paginators.md#listaccesspointsforobjectlambdapaginator)
+- `client.get_paginator("list_access_points_for_object_lambda")` -> [ListAccessPointsForObjectLambdaPaginator](./paginators.md#listaccesspointsforobjectlambdapaginator)
+
+
+

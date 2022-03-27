@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-cloudtrail-module"></a>
-
-# Type annotations for boto3 CloudTrail module
+#  CloudTrail module
 
 > [Index](../README.md) > CloudTrail
 
-Auto-generated documentation for
-[CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
-type annotations stubs module
-[mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+!!! note ""
 
-- [Type annotations for boto3 CloudTrail module](#type-annotations-for-boto3-cloudtrail-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudTrailClient](#cloudtrailclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
+    type annotations stubs module [mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudTrail`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cloudtrail]'
 python -m pip install mypy-boto3-cloudtrail
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,140 +42,37 @@ python -m pip install mypy-boto3-cloudtrail
 python -m pip uninstall -y mypy-boto3-cloudtrail
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudtrailclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudTrailClient
 
-Type annotations for `boto3.client("cloudtrail")` as
-[CloudTrailClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cloudtrail")` as [CloudTrailClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cloudtrail.client import CloudTrailClient
+
+def get_client() -> CloudTrailClient:
+    return Session().cleint("cloudtrail")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_tags](./client.md#add_tags)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_query](./client.md#cancel_query)
-- [create_event_data_store](./client.md#create_event_data_store)
-- [create_trail](./client.md#create_trail)
-- [delete_event_data_store](./client.md#delete_event_data_store)
-- [delete_trail](./client.md#delete_trail)
-- [describe_query](./client.md#describe_query)
-- [describe_trails](./client.md#describe_trails)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_event_data_store](./client.md#get_event_data_store)
-- [get_event_selectors](./client.md#get_event_selectors)
-- [get_insight_selectors](./client.md#get_insight_selectors)
-- [get_paginator](./client.md#get_paginator)
-- [get_query_results](./client.md#get_query_results)
-- [get_trail](./client.md#get_trail)
-- [get_trail_status](./client.md#get_trail_status)
-- [list_event_data_stores](./client.md#list_event_data_stores)
-- [list_public_keys](./client.md#list_public_keys)
-- [list_queries](./client.md#list_queries)
-- [list_tags](./client.md#list_tags)
-- [list_trails](./client.md#list_trails)
-- [lookup_events](./client.md#lookup_events)
-- [put_event_selectors](./client.md#put_event_selectors)
-- [put_insight_selectors](./client.md#put_insight_selectors)
-- [remove_tags](./client.md#remove_tags)
-- [restore_event_data_store](./client.md#restore_event_data_store)
-- [start_logging](./client.md#start_logging)
-- [start_query](./client.md#start_query)
-- [stop_logging](./client.md#stop_logging)
-- [update_event_data_store](./client.md#update_event_data_store)
-- [update_trail](./client.md#update_trail)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CloudTrailClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- CloudTrailARNInvalidException
-- CloudTrailAccessNotEnabledException
-- CloudTrailInvalidClientTokenIdException
-- CloudWatchLogsDeliveryUnavailableException
-- ConflictException
-- EventDataStoreARNInvalidException
-- EventDataStoreAlreadyExistsException
-- EventDataStoreMaxLimitExceededException
-- EventDataStoreNotFoundException
-- EventDataStoreTerminationProtectedException
-- InactiveEventDataStoreException
-- InactiveQueryException
-- InsightNotEnabledException
-- InsufficientDependencyServiceAccessPermissionException
-- InsufficientEncryptionPolicyException
-- InsufficientS3BucketPolicyException
-- InsufficientSnsTopicPolicyException
-- InvalidCloudWatchLogsLogGroupArnException
-- InvalidCloudWatchLogsRoleArnException
-- InvalidDateRangeException
-- InvalidEventCategoryException
-- InvalidEventDataStoreStatusException
-- InvalidEventSelectorsException
-- InvalidHomeRegionException
-- InvalidInsightSelectorsException
-- InvalidKmsKeyIdException
-- InvalidLookupAttributesException
-- InvalidMaxResultsException
-- InvalidNextTokenException
-- InvalidParameterCombinationException
-- InvalidParameterException
-- InvalidQueryStatementException
-- InvalidQueryStatusException
-- InvalidS3BucketNameException
-- InvalidS3PrefixException
-- InvalidSnsTopicNameException
-- InvalidTagParameterException
-- InvalidTimeRangeException
-- InvalidTokenException
-- InvalidTrailNameException
-- KmsException
-- KmsKeyDisabledException
-- KmsKeyNotFoundException
-- MaxConcurrentQueriesException
-- MaximumNumberOfTrailsExceededException
-- NotOrganizationMasterAccountException
-- OperationNotPermittedException
-- OrganizationNotInAllFeaturesModeException
-- OrganizationsNotInUseException
-- QueryIdNotFoundException
-- ResourceNotFoundException
-- ResourceTypeNotSupportedException
-- S3BucketDoesNotExistException
-- TagsLimitExceededException
-- TrailAlreadyExistsException
-- TrailNotFoundException
-- TrailNotProvidedException
-- UnsupportedOperationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("cloudtrail").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cloudtrail").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloudtrail.paginator import ListPublicKeysPaginator, ...
+from mypy_boto3_cloudtrail.paginator import ListPublicKeysPaginator
+
+def get_list_public_keys_paginator() -> ListPublicKeysPaginator:
+    return Session().client("cloudtrail").get_paginator("list_public_keys"))
 ```
 
 - [ListPublicKeysPaginator](./paginators.md#listpublickeyspaginator)
@@ -205,16 +80,23 @@ from mypy_boto3_cloudtrail.paginator import ListPublicKeysPaginator, ...
 - [ListTrailsPaginator](./paginators.md#listtrailspaginator)
 - [LookupEventsPaginator](./paginators.md#lookupeventspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudtrail.literals import EventCategoryType
 
-```python
-from mypy_boto3_cloudtrail.literals import EventCategoryType, ...
+def get_value() -> EventCategoryType:
+    return "insight"
 ```
 
 - [EventCategoryType](./literals.md#eventcategorytype)
@@ -231,18 +113,23 @@ from mypy_boto3_cloudtrail.literals import EventCategoryType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudtrail.type_defs import AddTagsRequestRequestTypeDef
 
-```python
-from mypy_boto3_cloudtrail.type_defs import AddTagsRequestRequestTypeDef, ...
+def get_value() -> AddTagsRequestRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "TagsList": ...,
+    }
 ```
 
 - [AddTagsRequestRequestTypeDef](./type_defs.md#addtagsrequestrequesttypedef)
@@ -279,15 +166,19 @@ from mypy_boto3_cloudtrail.type_defs import AddTagsRequestRequestTypeDef, ...
 - [InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)
 - [ListEventDataStoresRequestRequestTypeDef](./type_defs.md#listeventdatastoresrequestrequesttypedef)
 - [ListEventDataStoresResponseTypeDef](./type_defs.md#listeventdatastoresresponsetypedef)
+- [ListPublicKeysRequestListPublicKeysPaginateTypeDef](./type_defs.md#listpublickeysrequestlistpublickeyspaginatetypedef)
 - [ListPublicKeysRequestRequestTypeDef](./type_defs.md#listpublickeysrequestrequesttypedef)
 - [ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef)
 - [ListQueriesRequestRequestTypeDef](./type_defs.md#listqueriesrequestrequesttypedef)
 - [ListQueriesResponseTypeDef](./type_defs.md#listqueriesresponsetypedef)
+- [ListTagsRequestListTagsPaginateTypeDef](./type_defs.md#listtagsrequestlisttagspaginatetypedef)
 - [ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef)
 - [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)
+- [ListTrailsRequestListTrailsPaginateTypeDef](./type_defs.md#listtrailsrequestlisttrailspaginatetypedef)
 - [ListTrailsRequestRequestTypeDef](./type_defs.md#listtrailsrequestrequesttypedef)
 - [ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef)
 - [LookupAttributeTypeDef](./type_defs.md#lookupattributetypedef)
+- [LookupEventsRequestLookupEventsPaginateTypeDef](./type_defs.md#lookupeventsrequestlookupeventspaginatetypedef)
 - [LookupEventsRequestRequestTypeDef](./type_defs.md#lookupeventsrequestrequesttypedef)
 - [LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -316,3 +207,4 @@ from mypy_boto3_cloudtrail.type_defs import AddTagsRequestRequestTypeDef, ...
 - [UpdateEventDataStoreResponseTypeDef](./type_defs.md#updateeventdatastoreresponsetypedef)
 - [UpdateTrailRequestRequestTypeDef](./type_defs.md#updatetrailrequestrequesttypedef)
 - [UpdateTrailResponseTypeDef](./type_defs.md#updatetrailresponsetypedef)
+

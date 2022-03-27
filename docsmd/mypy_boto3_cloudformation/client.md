@@ -1,99 +1,18 @@
-<a id="cloudformationclient-for-boto3-cloudformation-module"></a>
-
-# CloudFormationClient for boto3 CloudFormation module
+# CloudFormationClient
 
 > [Index](../README.md) > [CloudFormation](./README.md) > CloudFormationClient
 
-Auto-generated documentation for
-[CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
-type annotations stubs module
-[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+!!! note ""
 
-- [CloudFormationClient for boto3 CloudFormation module](#cloudformationclient-for-boto3-cloudformation-module)
-  - [CloudFormationClient](#cloudformationclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [activate_type](#activate_type)
-    - [batch_describe_type_configurations](#batch_describe_type_configurations)
-    - [can_paginate](#can_paginate)
-    - [cancel_update_stack](#cancel_update_stack)
-    - [continue_update_rollback](#continue_update_rollback)
-    - [create_change_set](#create_change_set)
-    - [create_stack](#create_stack)
-    - [create_stack_instances](#create_stack_instances)
-    - [create_stack_set](#create_stack_set)
-    - [deactivate_type](#deactivate_type)
-    - [delete_change_set](#delete_change_set)
-    - [delete_stack](#delete_stack)
-    - [delete_stack_instances](#delete_stack_instances)
-    - [delete_stack_set](#delete_stack_set)
-    - [deregister_type](#deregister_type)
-    - [describe_account_limits](#describe_account_limits)
-    - [describe_change_set](#describe_change_set)
-    - [describe_change_set_hooks](#describe_change_set_hooks)
-    - [describe_publisher](#describe_publisher)
-    - [describe_stack_drift_detection_status](#describe_stack_drift_detection_status)
-    - [describe_stack_events](#describe_stack_events)
-    - [describe_stack_instance](#describe_stack_instance)
-    - [describe_stack_resource](#describe_stack_resource)
-    - [describe_stack_resource_drifts](#describe_stack_resource_drifts)
-    - [describe_stack_resources](#describe_stack_resources)
-    - [describe_stack_set](#describe_stack_set)
-    - [describe_stack_set_operation](#describe_stack_set_operation)
-    - [describe_stacks](#describe_stacks)
-    - [describe_type](#describe_type)
-    - [describe_type_registration](#describe_type_registration)
-    - [detect_stack_drift](#detect_stack_drift)
-    - [detect_stack_resource_drift](#detect_stack_resource_drift)
-    - [detect_stack_set_drift](#detect_stack_set_drift)
-    - [estimate_template_cost](#estimate_template_cost)
-    - [execute_change_set](#execute_change_set)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_stack_policy](#get_stack_policy)
-    - [get_template](#get_template)
-    - [get_template_summary](#get_template_summary)
-    - [import_stacks_to_stack_set](#import_stacks_to_stack_set)
-    - [list_change_sets](#list_change_sets)
-    - [list_exports](#list_exports)
-    - [list_imports](#list_imports)
-    - [list_stack_instances](#list_stack_instances)
-    - [list_stack_resources](#list_stack_resources)
-    - [list_stack_set_operation_results](#list_stack_set_operation_results)
-    - [list_stack_set_operations](#list_stack_set_operations)
-    - [list_stack_sets](#list_stack_sets)
-    - [list_stacks](#list_stacks)
-    - [list_type_registrations](#list_type_registrations)
-    - [list_type_versions](#list_type_versions)
-    - [list_types](#list_types)
-    - [publish_type](#publish_type)
-    - [record_handler_progress](#record_handler_progress)
-    - [register_publisher](#register_publisher)
-    - [register_type](#register_type)
-    - [rollback_stack](#rollback_stack)
-    - [set_stack_policy](#set_stack_policy)
-    - [set_type_configuration](#set_type_configuration)
-    - [set_type_default_version](#set_type_default_version)
-    - [signal_resource](#signal_resource)
-    - [stop_stack_set_operation](#stop_stack_set_operation)
-    - [test_type](#test_type)
-    - [update_stack](#update_stack)
-    - [update_stack_instances](#update_stack_instances)
-    - [update_stack_set](#update_stack_set)
-    - [update_termination_protection](#update_termination_protection)
-    - [validate_template](#validate_template)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="cloudformationclient"></a>
+    Auto-generated documentation for [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
+    type annotations stubs module [mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 ## CloudFormationClient
 
-Type annotations for `boto3.client("cloudformation")`
+Type annotations and code completion for `#!python boto3.client("cloudformation")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cloudformation.client import CloudFormationClient
 
@@ -101,1859 +20,2402 @@ def get_cloudformation_client() -> CloudFormationClient:
     return Session().client("cloudformation")
 ```
 
-Boto3 documentation:
-[CloudFormation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cloudformation").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cloudformation")
+
+try:
+    do_something(client)
+except (
+    client.AlreadyExistsException,
+    client.CFNRegistryException,
+    client.ChangeSetNotFoundException,
+    client.ClientError,
+    client.CreatedButModifiedException,
+    client.InsufficientCapabilitiesException,
+    client.InvalidChangeSetStatusException,
+    client.InvalidOperationException,
+    client.InvalidStateTransitionException,
+    client.LimitExceededException,
+    client.NameAlreadyExistsException,
+    client.OperationIdAlreadyExistsException,
+    client.OperationInProgressException,
+    client.OperationNotFoundException,
+    client.OperationStatusCheckFailedException,
+    client.StackInstanceNotFoundException,
+    client.StackNotFoundException,
+    client.StackSetNotEmptyException,
+    client.StackSetNotFoundException,
+    client.StaleRequestException,
+    client.TokenAlreadyExistsException,
+    client.TypeConfigurationNotFoundException,
+    client.TypeNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cloudformation.client import Exceptions
 
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AlreadyExistsException`
-- `Exceptions.CFNRegistryException`
-- `Exceptions.ChangeSetNotFoundException`
-- `Exceptions.ClientError`
-- `Exceptions.CreatedButModifiedException`
-- `Exceptions.InsufficientCapabilitiesException`
-- `Exceptions.InvalidChangeSetStatusException`
-- `Exceptions.InvalidOperationException`
-- `Exceptions.InvalidStateTransitionException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NameAlreadyExistsException`
-- `Exceptions.OperationIdAlreadyExistsException`
-- `Exceptions.OperationInProgressException`
-- `Exceptions.OperationNotFoundException`
-- `Exceptions.OperationStatusCheckFailedException`
-- `Exceptions.StackInstanceNotFoundException`
-- `Exceptions.StackNotFoundException`
-- `Exceptions.StackSetNotEmptyException`
-- `Exceptions.StackSetNotFoundException`
-- `Exceptions.StaleRequestException`
-- `Exceptions.TokenAlreadyExistsException`
-- `Exceptions.TypeConfigurationNotFoundException`
-- `Exceptions.TypeNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudFormationClient exceptions.
-
-Type annotations for `boto3.client("cloudformation").exceptions` method.
-
-Boto3 documentation:
-[CloudFormation.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="activate\_type"></a>
-
-### activate_type
+### activate\_type
 
 Activates a public third-party extension, making it available for use in stack
 templates.
 
-Type annotations for `boto3.client("cloudformation").activate_type` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").activate_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.activate_type)
 
-Boto3 documentation:
-[CloudFormation.Client.activate_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.activate_type)
+```python title="Method definition"
+def activate_type(
+    self,
+    *,
+    Type: ThirdPartyTypeType = ...,  # (1)
+    PublicTypeArn: str = ...,
+    PublisherId: str = ...,
+    TypeName: str = ...,
+    TypeNameAlias: str = ...,
+    AutoUpdate: bool = ...,
+    LoggingConfig: LoggingConfigTypeDef = ...,  # (2)
+    ExecutionRoleArn: str = ...,
+    VersionBump: VersionBumpType = ...,  # (3)
+    MajorVersion: int = ...,
+) -> ActivateTypeOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ActivateTypeInputRequestTypeDef](./type_defs.md#activatetypeinputrequesttypedef).
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
+2. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+3. See [:material-code-brackets: VersionBumpType](./literals.md#versionbumptype) 
+4. See [:material-code-braces: ActivateTypeOutputTypeDef](./type_defs.md#activatetypeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-- `PublicTypeArn`: `str`
-- `PublisherId`: `str`
-- `TypeName`: `str`
-- `TypeNameAlias`: `str`
-- `AutoUpdate`: `bool`
-- `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `ExecutionRoleArn`: `str`
-- `VersionBump`: [VersionBumpType](./literals.md#versionbumptype)
-- `MajorVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: ActivateTypeInputRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns [ActivateTypeOutputTypeDef](./type_defs.md#activatetypeoutputtypedef).
+parent.activate_type(**kwargs)
+```
 
-<a id="batch\_describe\_type\_configurations"></a>
+1. See [:material-code-braces: ActivateTypeInputRequestTypeDef](./type_defs.md#activatetypeinputrequesttypedef) 
 
-### batch_describe_type_configurations
+### batch\_describe\_type\_configurations
 
-Returns configuration data for the specified CloudFormation extensions, from
-the CloudFormation registry for the account and region.
+Returns configuration data for the specified CloudFormation extensions, from the
+CloudFormation registry for the account and region.
 
-Type annotations for
-`boto3.client("cloudformation").batch_describe_type_configurations` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").batch_describe_type_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.batch_describe_type_configurations)
 
-Boto3 documentation:
-[CloudFormation.Client.batch_describe_type_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.batch_describe_type_configurations)
+```python title="Method definition"
+def batch_describe_type_configurations(
+    self,
+    *,
+    TypeConfigurationIdentifiers: Sequence[TypeConfigurationIdentifierTypeDef],  # (1)
+) -> BatchDescribeTypeConfigurationsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchDescribeTypeConfigurationsInputRequestTypeDef](./type_defs.md#batchdescribetypeconfigurationsinputrequesttypedef).
+1. See [:material-code-braces: TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef) 
+2. See [:material-code-braces: BatchDescribeTypeConfigurationsOutputTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TypeConfigurationIdentifiers`:
-  `Sequence`\[[TypeConfigurationIdentifierTypeDef](./type_defs.md#typeconfigurationidentifiertypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDescribeTypeConfigurationsInputRequestTypeDef = {  # (1)
+    "TypeConfigurationIdentifiers": ...,
+}
 
-Returns
-[BatchDescribeTypeConfigurationsOutputTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputtypedef).
+parent.batch_describe_type_configurations(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchDescribeTypeConfigurationsInputRequestTypeDef](./type_defs.md#batchdescribetypeconfigurationsinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cloudformation").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.can_paginate)
 
-Boto3 documentation:
-[CloudFormation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_update\_stack"></a>
-
-### cancel_update_stack
+### cancel\_update\_stack
 
 Cancels an update on the specified stack.
 
-Type annotations for `boto3.client("cloudformation").cancel_update_stack`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").cancel_update_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack)
 
-Boto3 documentation:
-[CloudFormation.Client.cancel_update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.cancel_update_stack)
+```python title="Method definition"
+def cancel_update_stack(
+    self,
+    *,
+    StackName: str,
+    ClientRequestToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CancelUpdateStackInputRequestTypeDef](./type_defs.md#cancelupdatestackinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CancelUpdateStackInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-<a id="continue\_update\_rollback"></a>
+parent.cancel_update_stack(**kwargs)
+```
 
-### continue_update_rollback
+1. See [:material-code-braces: CancelUpdateStackInputRequestTypeDef](./type_defs.md#cancelupdatestackinputrequesttypedef) 
+
+### continue\_update\_rollback
 
 For a specified stack that's in the `UPDATE_ROLLBACK_FAILED` state, continues
 rolling it back to the `UPDATE_ROLLBACK_COMPLETE` state.
 
-Type annotations for `boto3.client("cloudformation").continue_update_rollback`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").continue_update_rollback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback)
 
-Boto3 documentation:
-[CloudFormation.Client.continue_update_rollback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.continue_update_rollback)
+```python title="Method definition"
+def continue_update_rollback(
+    self,
+    *,
+    StackName: str,
+    RoleARN: str = ...,
+    ResourcesToSkip: Sequence[str] = ...,
+    ClientRequestToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ContinueUpdateRollbackInputRequestTypeDef](./type_defs.md#continueupdaterollbackinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `RoleARN`: `str`
-- `ResourcesToSkip`: `Sequence`\[`str`\]
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ContinueUpdateRollbackInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.continue_update_rollback(**kwargs)
+```
 
-<a id="create\_change\_set"></a>
+1. See [:material-code-braces: ContinueUpdateRollbackInputRequestTypeDef](./type_defs.md#continueupdaterollbackinputrequesttypedef) 
 
-### create_change_set
-
-.
-
-Type annotations for `boto3.client("cloudformation").create_change_set` method.
-
-Boto3 documentation:
-[CloudFormation.Client.create_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
-
-Arguments mapping described in
-[CreateChangeSetInputRequestTypeDef](./type_defs.md#createchangesetinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `StackName`: `str` *(required)*
-- `ChangeSetName`: `str` *(required)*
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `UsePreviousTemplate`: `bool`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientToken`: `str`
-- `Description`: `str`
-- `ChangeSetType`: [ChangeSetTypeType](./literals.md#changesettypetype)
-- `ResourcesToImport`:
-  `Sequence`\[[ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef)\]
-- `IncludeNestedStacks`: `bool`
-
-Returns
-[CreateChangeSetOutputTypeDef](./type_defs.md#createchangesetoutputtypedef).
-
-<a id="create\_stack"></a>
-
-### create_stack
+### create\_change\_set
 
 .
 
-Type annotations for `boto3.client("cloudformation").create_stack` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").create_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_change_set)
 
-Boto3 documentation:
-[CloudFormation.Client.create_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
+```python title="Method definition"
+def create_change_set(
+    self,
+    *,
+    StackName: str,
+    ChangeSetName: str,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+    UsePreviousTemplate: bool = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+    Capabilities: Sequence[CapabilityType] = ...,  # (2)
+    ResourceTypes: Sequence[str] = ...,
+    RoleARN: str = ...,
+    RollbackConfiguration: RollbackConfigurationTypeDef = ...,  # (3)
+    NotificationARNs: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+    ClientToken: str = ...,
+    Description: str = ...,
+    ChangeSetType: ChangeSetTypeType = ...,  # (5)
+    ResourcesToImport: Sequence[ResourceToImportTypeDef] = ...,  # (6)
+    IncludeNestedStacks: bool = ...,
+) -> CreateChangeSetOutputTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateStackInputRequestTypeDef](./type_defs.md#createstackinputrequesttypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-brackets: ChangeSetTypeType](./literals.md#changesettypetype) 
+6. See [:material-code-braces: ResourceToImportTypeDef](./type_defs.md#resourcetoimporttypedef) 
+7. See [:material-code-braces: CreateChangeSetOutputTypeDef](./type_defs.md#createchangesetoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `DisableRollback`: `bool`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `TimeoutInMinutes`: `int`
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `OnFailure`: [OnFailureType](./literals.md#onfailuretype)
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientRequestToken`: `str`
-- `EnableTerminationProtection`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateChangeSetInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+    "ChangeSetName": ...,
+}
 
-Returns [CreateStackOutputTypeDef](./type_defs.md#createstackoutputtypedef).
+parent.create_change_set(**kwargs)
+```
 
-<a id="create\_stack\_instances"></a>
+1. See [:material-code-braces: CreateChangeSetInputRequestTypeDef](./type_defs.md#createchangesetinputrequesttypedef) 
 
-### create_stack_instances
-
-.
-
-Type annotations for `boto3.client("cloudformation").create_stack_instances`
-method.
-
-Boto3 documentation:
-[CloudFormation.Client.create_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
-
-Arguments mapping described in
-[CreateStackInstancesInputRequestTypeDef](./type_defs.md#createstackinstancesinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `StackSetName`: `str` *(required)*
-- `Regions`: `Sequence`\[`str`\] *(required)*
-- `Accounts`: `Sequence`\[`str`\]
-- `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
-- `ParameterOverrides`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
-
-Returns
-[CreateStackInstancesOutputTypeDef](./type_defs.md#createstackinstancesoutputtypedef).
-
-<a id="create\_stack\_set"></a>
-
-### create_stack_set
+### create\_stack
 
 .
 
-Type annotations for `boto3.client("cloudformation").create_stack_set` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").create_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack)
 
-Boto3 documentation:
-[CloudFormation.Client.create_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
+```python title="Method definition"
+def create_stack(
+    self,
+    *,
+    StackName: str,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+    DisableRollback: bool = ...,
+    RollbackConfiguration: RollbackConfigurationTypeDef = ...,  # (2)
+    TimeoutInMinutes: int = ...,
+    NotificationARNs: Sequence[str] = ...,
+    Capabilities: Sequence[CapabilityType] = ...,  # (3)
+    ResourceTypes: Sequence[str] = ...,
+    RoleARN: str = ...,
+    OnFailure: OnFailureType = ...,  # (4)
+    StackPolicyBody: str = ...,
+    StackPolicyURL: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+    ClientRequestToken: str = ...,
+    EnableTerminationProtection: bool = ...,
+) -> CreateStackOutputTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateStackSetInputRequestTypeDef](./type_defs.md#createstacksetinputrequesttypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+3. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+4. See [:material-code-brackets: OnFailureType](./literals.md#onfailuretype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: CreateStackOutputTypeDef](./type_defs.md#createstackoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `Description`: `str`
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `StackId`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AdministrationRoleARN`: `str`
-- `ExecutionRoleName`: `str`
-- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
-- `AutoDeployment`:
-  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
-- `CallAs`: [CallAsType](./literals.md#callastype)
-- `ClientRequestToken`: `str`
-- `ManagedExecution`:
-  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateStackInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[CreateStackSetOutputTypeDef](./type_defs.md#createstacksetoutputtypedef).
+parent.create_stack(**kwargs)
+```
 
-<a id="deactivate\_type"></a>
+1. See [:material-code-braces: CreateStackInputRequestTypeDef](./type_defs.md#createstackinputrequesttypedef) 
 
-### deactivate_type
+### create\_stack\_instances
 
-Deactivates a public extension that was previously activated in this account
-and region.
+.
 
-Type annotations for `boto3.client("cloudformation").deactivate_type` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").create_stack_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_instances)
 
-Boto3 documentation:
-[CloudFormation.Client.deactivate_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deactivate_type)
+```python title="Method definition"
+def create_stack_instances(
+    self,
+    *,
+    StackSetName: str,
+    Regions: Sequence[str],
+    Accounts: Sequence[str] = ...,
+    DeploymentTargets: DeploymentTargetsTypeDef = ...,  # (1)
+    ParameterOverrides: Sequence[ParameterTypeDef] = ...,  # (2)
+    OperationPreferences: StackSetOperationPreferencesTypeDef = ...,  # (3)
+    OperationId: str = ...,
+    CallAs: CallAsType = ...,  # (4)
+) -> CreateStackInstancesOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[DeactivateTypeInputRequestTypeDef](./type_defs.md#deactivatetypeinputrequesttypedef).
+1. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+3. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+4. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+5. See [:material-code-braces: CreateStackInstancesOutputTypeDef](./type_defs.md#createstackinstancesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TypeName`: `str`
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-- `Arn`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateStackInstancesInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+    "Regions": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_stack_instances(**kwargs)
+```
 
-<a id="delete\_change\_set"></a>
+1. See [:material-code-braces: CreateStackInstancesInputRequestTypeDef](./type_defs.md#createstackinstancesinputrequesttypedef) 
 
-### delete_change_set
+### create\_stack\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("cloudformation").create_stack_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.create_stack_set)
+
+```python title="Method definition"
+def create_stack_set(
+    self,
+    *,
+    StackSetName: str,
+    Description: str = ...,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+    StackId: str = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+    Capabilities: Sequence[CapabilityType] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    AdministrationRoleARN: str = ...,
+    ExecutionRoleName: str = ...,
+    PermissionModel: PermissionModelsType = ...,  # (4)
+    AutoDeployment: AutoDeploymentTypeDef = ...,  # (5)
+    CallAs: CallAsType = ...,  # (6)
+    ClientRequestToken: str = ...,
+    ManagedExecution: ManagedExecutionTypeDef = ...,  # (7)
+) -> CreateStackSetOutputTypeDef:  # (8)
+    ...
+```
+
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-brackets: PermissionModelsType](./literals.md#permissionmodelstype) 
+5. See [:material-code-braces: AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef) 
+6. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+7. See [:material-code-braces: ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef) 
+8. See [:material-code-braces: CreateStackSetOutputTypeDef](./type_defs.md#createstacksetoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateStackSetInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+}
+
+parent.create_stack_set(**kwargs)
+```
+
+1. See [:material-code-braces: CreateStackSetInputRequestTypeDef](./type_defs.md#createstacksetinputrequesttypedef) 
+
+### deactivate\_type
+
+Deactivates a public extension that was previously activated in this account and
+region.
+
+Type annotations and code completion for `#!python boto3.client("cloudformation").deactivate_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deactivate_type)
+
+```python title="Method definition"
+def deactivate_type(
+    self,
+    *,
+    TypeName: str = ...,
+    Type: ThirdPartyTypeType = ...,  # (1)
+    Arn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeactivateTypeInputRequestTypeDef = {  # (1)
+    "TypeName": ...,
+}
+
+parent.deactivate_type(**kwargs)
+```
+
+1. See [:material-code-braces: DeactivateTypeInputRequestTypeDef](./type_defs.md#deactivatetypeinputrequesttypedef) 
+
+### delete\_change\_set
 
 Deletes the specified change set.
 
-Type annotations for `boto3.client("cloudformation").delete_change_set` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").delete_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set)
 
-Boto3 documentation:
-[CloudFormation.Client.delete_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_change_set)
+```python title="Method definition"
+def delete_change_set(
+    self,
+    *,
+    ChangeSetName: str,
+    StackName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChangeSetInputRequestTypeDef](./type_defs.md#deletechangesetinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChangeSetName`: `str` *(required)*
-- `StackName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteChangeSetInputRequestTypeDef = {  # (1)
+    "ChangeSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_change_set(**kwargs)
+```
 
-<a id="delete\_stack"></a>
+1. See [:material-code-braces: DeleteChangeSetInputRequestTypeDef](./type_defs.md#deletechangesetinputrequesttypedef) 
 
-### delete_stack
+### delete\_stack
 
 Deletes a specified stack.
 
-Type annotations for `boto3.client("cloudformation").delete_stack` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").delete_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack)
 
-Boto3 documentation:
-[CloudFormation.Client.delete_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack)
+```python title="Method definition"
+def delete_stack(
+    self,
+    *,
+    StackName: str,
+    RetainResources: Sequence[str] = ...,
+    RoleARN: str = ...,
+    ClientRequestToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStackInputRequestTypeDef](./type_defs.md#deletestackinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `RetainResources`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStackInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-<a id="delete\_stack\_instances"></a>
+parent.delete_stack(**kwargs)
+```
 
-### delete_stack_instances
+1. See [:material-code-braces: DeleteStackInputRequestTypeDef](./type_defs.md#deletestackinputrequesttypedef) 
+
+### delete\_stack\_instances
 
 Deletes stack instances for the specified accounts, in the specified Amazon Web
 Services Regions.
 
-Type annotations for `boto3.client("cloudformation").delete_stack_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").delete_stack_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances)
 
-Boto3 documentation:
-[CloudFormation.Client.delete_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_instances)
+```python title="Method definition"
+def delete_stack_instances(
+    self,
+    *,
+    StackSetName: str,
+    Regions: Sequence[str],
+    RetainStacks: bool,
+    Accounts: Sequence[str] = ...,
+    DeploymentTargets: DeploymentTargetsTypeDef = ...,  # (1)
+    OperationPreferences: StackSetOperationPreferencesTypeDef = ...,  # (2)
+    OperationId: str = ...,
+    CallAs: CallAsType = ...,  # (3)
+) -> DeleteStackInstancesOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[DeleteStackInstancesInputRequestTypeDef](./type_defs.md#deletestackinstancesinputrequesttypedef).
+1. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+2. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+3. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+4. See [:material-code-braces: DeleteStackInstancesOutputTypeDef](./type_defs.md#deletestackinstancesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `Regions`: `Sequence`\[`str`\] *(required)*
-- `RetainStacks`: `bool` *(required)*
-- `Accounts`: `Sequence`\[`str`\]
-- `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: DeleteStackInstancesInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+    "Regions": ...,
+    "RetainStacks": ...,
+}
 
-Returns
-[DeleteStackInstancesOutputTypeDef](./type_defs.md#deletestackinstancesoutputtypedef).
+parent.delete_stack_instances(**kwargs)
+```
 
-<a id="delete\_stack\_set"></a>
+1. See [:material-code-braces: DeleteStackInstancesInputRequestTypeDef](./type_defs.md#deletestackinstancesinputrequesttypedef) 
 
-### delete_stack_set
+### delete\_stack\_set
 
 Deletes a stack set.
 
-Type annotations for `boto3.client("cloudformation").delete_stack_set` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").delete_stack_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set)
 
-Boto3 documentation:
-[CloudFormation.Client.delete_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.delete_stack_set)
+```python title="Method definition"
+def delete_stack_set(
+    self,
+    *,
+    StackSetName: str,
+    CallAs: CallAsType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStackSetInputRequestTypeDef](./type_defs.md#deletestacksetinputrequesttypedef).
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: DeleteStackSetInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_stack_set(**kwargs)
+```
 
-<a id="deregister\_type"></a>
+1. See [:material-code-braces: DeleteStackSetInputRequestTypeDef](./type_defs.md#deletestacksetinputrequesttypedef) 
 
-### deregister_type
+### deregister\_type
 
 Marks an extension or extension version as `DEPRECATED` in the CloudFormation
 registry, removing it from active use.
 
-Type annotations for `boto3.client("cloudformation").deregister_type` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").deregister_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deregister_type)
 
-Boto3 documentation:
-[CloudFormation.Client.deregister_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.deregister_type)
+```python title="Method definition"
+def deregister_type(
+    self,
+    *,
+    Arn: str = ...,
+    Type: RegistryTypeType = ...,  # (1)
+    TypeName: str = ...,
+    VersionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterTypeInputRequestTypeDef](./type_defs.md#deregistertypeinputrequesttypedef).
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
 
-Keyword-only arguments:
 
-- `Arn`: `str`
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `VersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeregisterTypeInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_type(**kwargs)
+```
 
-<a id="describe\_account\_limits"></a>
+1. See [:material-code-braces: DeregisterTypeInputRequestTypeDef](./type_defs.md#deregistertypeinputrequesttypedef) 
 
-### describe_account_limits
+### describe\_account\_limits
 
 Retrieves your account's CloudFormation limits, such as the maximum number of
 stacks that you can create in your account.
 
-Type annotations for `boto3.client("cloudformation").describe_account_limits`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_account_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_account_limits)
+```python title="Method definition"
+def describe_account_limits(
+    self,
+    *,
+    NextToken: str = ...,
+) -> DescribeAccountLimitsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef).
+1. See [:material-code-braces: DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountLimitsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
+parent.describe_account_limits(**kwargs)
+```
 
-<a id="describe\_change\_set"></a>
+1. See [:material-code-braces: DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef) 
 
-### describe_change_set
+### describe\_change\_set
 
 .
 
-Type annotations for `boto3.client("cloudformation").describe_change_set`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set)
+```python title="Method definition"
+def describe_change_set(
+    self,
+    *,
+    ChangeSetName: str,
+    StackName: str = ...,
+    NextToken: str = ...,
+) -> DescribeChangeSetOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChangeSetInputRequestTypeDef](./type_defs.md#describechangesetinputrequesttypedef).
+1. See [:material-code-braces: DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ChangeSetName`: `str` *(required)*
-- `StackName`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeChangeSetInputRequestTypeDef = {  # (1)
+    "ChangeSetName": ...,
+}
 
-Returns
-[DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef).
+parent.describe_change_set(**kwargs)
+```
 
-<a id="describe\_change\_set\_hooks"></a>
+1. See [:material-code-braces: DescribeChangeSetInputRequestTypeDef](./type_defs.md#describechangesetinputrequesttypedef) 
 
-### describe_change_set_hooks
+### describe\_change\_set\_hooks
 
 Returns hook-related information for the change set and a list of changes that
 CloudFormation makes when you run the change set.
 
-Type annotations for `boto3.client("cloudformation").describe_change_set_hooks`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_change_set_hooks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set_hooks)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_change_set_hooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set_hooks)
+```python title="Method definition"
+def describe_change_set_hooks(
+    self,
+    *,
+    ChangeSetName: str,
+    StackName: str = ...,
+    NextToken: str = ...,
+    LogicalResourceId: str = ...,
+) -> DescribeChangeSetHooksOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChangeSetHooksInputRequestTypeDef](./type_defs.md#describechangesethooksinputrequesttypedef).
+1. See [:material-code-braces: DescribeChangeSetHooksOutputTypeDef](./type_defs.md#describechangesethooksoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ChangeSetName`: `str` *(required)*
-- `StackName`: `str`
-- `NextToken`: `str`
-- `LogicalResourceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeChangeSetHooksInputRequestTypeDef = {  # (1)
+    "ChangeSetName": ...,
+}
 
-Returns
-[DescribeChangeSetHooksOutputTypeDef](./type_defs.md#describechangesethooksoutputtypedef).
+parent.describe_change_set_hooks(**kwargs)
+```
 
-<a id="describe\_publisher"></a>
+1. See [:material-code-braces: DescribeChangeSetHooksInputRequestTypeDef](./type_defs.md#describechangesethooksinputrequesttypedef) 
 
-### describe_publisher
+### describe\_publisher
 
 Returns information about a CloudFormation extension publisher.
 
-Type annotations for `boto3.client("cloudformation").describe_publisher`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_publisher` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_publisher)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_publisher](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_publisher)
+```python title="Method definition"
+def describe_publisher(
+    self,
+    *,
+    PublisherId: str = ...,
+) -> DescribePublisherOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePublisherInputRequestTypeDef](./type_defs.md#describepublisherinputrequesttypedef).
+1. See [:material-code-braces: DescribePublisherOutputTypeDef](./type_defs.md#describepublisheroutputtypedef) 
 
-Keyword-only arguments:
 
-- `PublisherId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribePublisherInputRequestTypeDef = {  # (1)
+    "PublisherId": ...,
+}
 
-Returns
-[DescribePublisherOutputTypeDef](./type_defs.md#describepublisheroutputtypedef).
+parent.describe_publisher(**kwargs)
+```
 
-<a id="describe\_stack\_drift\_detection\_status"></a>
+1. See [:material-code-braces: DescribePublisherInputRequestTypeDef](./type_defs.md#describepublisherinputrequesttypedef) 
 
-### describe_stack_drift_detection_status
+### describe\_stack\_drift\_detection\_status
 
 Returns information about a stack drift detection operation.
 
-Type annotations for
-`boto3.client("cloudformation").describe_stack_drift_detection_status` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_drift_detection_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_stack_drift_detection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_drift_detection_status)
+```python title="Method definition"
+def describe_stack_drift_detection_status(
+    self,
+    *,
+    StackDriftDetectionId: str,
+) -> DescribeStackDriftDetectionStatusOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStackDriftDetectionStatusInputRequestTypeDef](./type_defs.md#describestackdriftdetectionstatusinputrequesttypedef).
+1. See [:material-code-braces: DescribeStackDriftDetectionStatusOutputTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackDriftDetectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStackDriftDetectionStatusInputRequestTypeDef = {  # (1)
+    "StackDriftDetectionId": ...,
+}
 
-Returns
-[DescribeStackDriftDetectionStatusOutputTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputtypedef).
+parent.describe_stack_drift_detection_status(**kwargs)
+```
 
-<a id="describe\_stack\_events"></a>
+1. See [:material-code-braces: DescribeStackDriftDetectionStatusInputRequestTypeDef](./type_defs.md#describestackdriftdetectionstatusinputrequesttypedef) 
 
-### describe_stack_events
+### describe\_stack\_events
 
 Returns all stack related events for a specified stack in reverse chronological
 order.
 
-Type annotations for `boto3.client("cloudformation").describe_stack_events`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_stack_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_events)
+```python title="Method definition"
+def describe_stack_events(
+    self,
+    *,
+    StackName: str = ...,
+    NextToken: str = ...,
+) -> DescribeStackEventsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStackEventsInputRequestTypeDef](./type_defs.md#describestackeventsinputrequesttypedef).
+1. See [:material-code-braces: DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeStackEventsInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef).
+parent.describe_stack_events(**kwargs)
+```
 
-<a id="describe\_stack\_instance"></a>
+1. See [:material-code-braces: DescribeStackEventsInputRequestTypeDef](./type_defs.md#describestackeventsinputrequesttypedef) 
 
-### describe_stack_instance
+### describe\_stack\_instance
 
 .
 
-Type annotations for `boto3.client("cloudformation").describe_stack_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_stack_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_instance)
+```python title="Method definition"
+def describe_stack_instance(
+    self,
+    *,
+    StackSetName: str,
+    StackInstanceAccount: str,
+    StackInstanceRegion: str,
+    CallAs: CallAsType = ...,  # (1)
+) -> DescribeStackInstanceOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStackInstanceInputRequestTypeDef](./type_defs.md#describestackinstanceinputrequesttypedef).
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: DescribeStackInstanceOutputTypeDef](./type_defs.md#describestackinstanceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `StackInstanceAccount`: `str` *(required)*
-- `StackInstanceRegion`: `str` *(required)*
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: DescribeStackInstanceInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+    "StackInstanceAccount": ...,
+    "StackInstanceRegion": ...,
+}
 
-Returns
-[DescribeStackInstanceOutputTypeDef](./type_defs.md#describestackinstanceoutputtypedef).
+parent.describe_stack_instance(**kwargs)
+```
 
-<a id="describe\_stack\_resource"></a>
+1. See [:material-code-braces: DescribeStackInstanceInputRequestTypeDef](./type_defs.md#describestackinstanceinputrequesttypedef) 
 
-### describe_stack_resource
+### describe\_stack\_resource
 
 Returns a description of the specified resource in the specified stack.
 
-Type annotations for `boto3.client("cloudformation").describe_stack_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_stack_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource)
+```python title="Method definition"
+def describe_stack_resource(
+    self,
+    *,
+    StackName: str,
+    LogicalResourceId: str,
+) -> DescribeStackResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStackResourceInputRequestTypeDef](./type_defs.md#describestackresourceinputrequesttypedef).
+1. See [:material-code-braces: DescribeStackResourceOutputTypeDef](./type_defs.md#describestackresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `LogicalResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStackResourceInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+    "LogicalResourceId": ...,
+}
 
-Returns
-[DescribeStackResourceOutputTypeDef](./type_defs.md#describestackresourceoutputtypedef).
+parent.describe_stack_resource(**kwargs)
+```
 
-<a id="describe\_stack\_resource\_drifts"></a>
+1. See [:material-code-braces: DescribeStackResourceInputRequestTypeDef](./type_defs.md#describestackresourceinputrequesttypedef) 
 
-### describe_stack_resource_drifts
+### describe\_stack\_resource\_drifts
 
 Returns drift information for the resources that have been checked for drift in
 the specified stack.
 
-Type annotations for
-`boto3.client("cloudformation").describe_stack_resource_drifts` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_resource_drifts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_stack_resource_drifts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resource_drifts)
+```python title="Method definition"
+def describe_stack_resource_drifts(
+    self,
+    *,
+    StackName: str,
+    StackResourceDriftStatusFilters: Sequence[StackResourceDriftStatusType] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeStackResourceDriftsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStackResourceDriftsInputRequestTypeDef](./type_defs.md#describestackresourcedriftsinputrequesttypedef).
+1. See [:material-code-brackets: StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype) 
+2. See [:material-code-braces: DescribeStackResourceDriftsOutputTypeDef](./type_defs.md#describestackresourcedriftsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `StackResourceDriftStatusFilters`:
-  `Sequence`\[[StackResourceDriftStatusType](./literals.md#stackresourcedriftstatustype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeStackResourceDriftsInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[DescribeStackResourceDriftsOutputTypeDef](./type_defs.md#describestackresourcedriftsoutputtypedef).
+parent.describe_stack_resource_drifts(**kwargs)
+```
 
-<a id="describe\_stack\_resources"></a>
+1. See [:material-code-braces: DescribeStackResourceDriftsInputRequestTypeDef](./type_defs.md#describestackresourcedriftsinputrequesttypedef) 
 
-### describe_stack_resources
+### describe\_stack\_resources
 
 Returns Amazon Web Services resource descriptions for running and deleted
 stacks.
 
-Type annotations for `boto3.client("cloudformation").describe_stack_resources`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_resources)
+```python title="Method definition"
+def describe_stack_resources(
+    self,
+    *,
+    StackName: str = ...,
+    LogicalResourceId: str = ...,
+    PhysicalResourceId: str = ...,
+) -> DescribeStackResourcesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStackResourcesInputRequestTypeDef](./type_defs.md#describestackresourcesinputrequesttypedef).
+1. See [:material-code-braces: DescribeStackResourcesOutputTypeDef](./type_defs.md#describestackresourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str`
-- `LogicalResourceId`: `str`
-- `PhysicalResourceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeStackResourcesInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[DescribeStackResourcesOutputTypeDef](./type_defs.md#describestackresourcesoutputtypedef).
+parent.describe_stack_resources(**kwargs)
+```
 
-<a id="describe\_stack\_set"></a>
+1. See [:material-code-braces: DescribeStackResourcesInputRequestTypeDef](./type_defs.md#describestackresourcesinputrequesttypedef) 
 
-### describe_stack_set
+### describe\_stack\_set
 
 .
 
-Type annotations for `boto3.client("cloudformation").describe_stack_set`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set)
+```python title="Method definition"
+def describe_stack_set(
+    self,
+    *,
+    StackSetName: str,
+    CallAs: CallAsType = ...,  # (1)
+) -> DescribeStackSetOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStackSetInputRequestTypeDef](./type_defs.md#describestacksetinputrequesttypedef).
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: DescribeStackSetOutputTypeDef](./type_defs.md#describestacksetoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: DescribeStackSetInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+}
 
-Returns
-[DescribeStackSetOutputTypeDef](./type_defs.md#describestacksetoutputtypedef).
+parent.describe_stack_set(**kwargs)
+```
 
-<a id="describe\_stack\_set\_operation"></a>
+1. See [:material-code-braces: DescribeStackSetInputRequestTypeDef](./type_defs.md#describestacksetinputrequesttypedef) 
 
-### describe_stack_set_operation
+### describe\_stack\_set\_operation
 
 Returns the description of the specified stack set operation.
 
-Type annotations for
-`boto3.client("cloudformation").describe_stack_set_operation` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stack_set_operation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stack_set_operation)
+```python title="Method definition"
+def describe_stack_set_operation(
+    self,
+    *,
+    StackSetName: str,
+    OperationId: str,
+    CallAs: CallAsType = ...,  # (1)
+) -> DescribeStackSetOperationOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStackSetOperationInputRequestTypeDef](./type_defs.md#describestacksetoperationinputrequesttypedef).
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: DescribeStackSetOperationOutputTypeDef](./type_defs.md#describestacksetoperationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `OperationId`: `str` *(required)*
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: DescribeStackSetOperationInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+    "OperationId": ...,
+}
 
-Returns
-[DescribeStackSetOperationOutputTypeDef](./type_defs.md#describestacksetoperationoutputtypedef).
+parent.describe_stack_set_operation(**kwargs)
+```
 
-<a id="describe\_stacks"></a>
+1. See [:material-code-braces: DescribeStackSetOperationInputRequestTypeDef](./type_defs.md#describestacksetoperationinputrequesttypedef) 
 
-### describe_stacks
+### describe\_stacks
 
 .
 
-Type annotations for `boto3.client("cloudformation").describe_stacks` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_stacks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_stacks)
+```python title="Method definition"
+def describe_stacks(
+    self,
+    *,
+    StackName: str = ...,
+    NextToken: str = ...,
+) -> DescribeStacksOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStacksInputRequestTypeDef](./type_defs.md#describestacksinputrequesttypedef).
+1. See [:material-code-braces: DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeStacksInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef).
+parent.describe_stacks(**kwargs)
+```
 
-<a id="describe\_type"></a>
+1. See [:material-code-braces: DescribeStacksInputRequestTypeDef](./type_defs.md#describestacksinputrequesttypedef) 
 
-### describe_type
+### describe\_type
 
 Returns detailed information about an extension that has been registered.
 
-Type annotations for `boto3.client("cloudformation").describe_type` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type)
+```python title="Method definition"
+def describe_type(
+    self,
+    *,
+    Type: RegistryTypeType = ...,  # (1)
+    TypeName: str = ...,
+    Arn: str = ...,
+    VersionId: str = ...,
+    PublisherId: str = ...,
+    PublicVersionNumber: str = ...,
+) -> DescribeTypeOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTypeInputRequestTypeDef](./type_defs.md#describetypeinputrequesttypedef).
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+2. See [:material-code-braces: DescribeTypeOutputTypeDef](./type_defs.md#describetypeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `Arn`: `str`
-- `VersionId`: `str`
-- `PublisherId`: `str`
-- `PublicVersionNumber`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeTypeInputRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns [DescribeTypeOutputTypeDef](./type_defs.md#describetypeoutputtypedef).
+parent.describe_type(**kwargs)
+```
 
-<a id="describe\_type\_registration"></a>
+1. See [:material-code-braces: DescribeTypeInputRequestTypeDef](./type_defs.md#describetypeinputrequesttypedef) 
 
-### describe_type_registration
+### describe\_type\_registration
 
 Returns information about an extension's registration, including its current
 status and type and version identifiers.
 
-Type annotations for
-`boto3.client("cloudformation").describe_type_registration` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").describe_type_registration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration)
 
-Boto3 documentation:
-[CloudFormation.Client.describe_type_registration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_type_registration)
+```python title="Method definition"
+def describe_type_registration(
+    self,
+    *,
+    RegistrationToken: str,
+) -> DescribeTypeRegistrationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTypeRegistrationInputRequestTypeDef](./type_defs.md#describetyperegistrationinputrequesttypedef).
+1. See [:material-code-braces: DescribeTypeRegistrationOutputTypeDef](./type_defs.md#describetyperegistrationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RegistrationToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTypeRegistrationInputRequestTypeDef = {  # (1)
+    "RegistrationToken": ...,
+}
 
-Returns
-[DescribeTypeRegistrationOutputTypeDef](./type_defs.md#describetyperegistrationoutputtypedef).
+parent.describe_type_registration(**kwargs)
+```
 
-<a id="detect\_stack\_drift"></a>
+1. See [:material-code-braces: DescribeTypeRegistrationInputRequestTypeDef](./type_defs.md#describetyperegistrationinputrequesttypedef) 
 
-### detect_stack_drift
+### detect\_stack\_drift
 
 Detects whether a stack's actual configuration differs, or has *drifted* , from
 it's expected configuration, as defined in the stack template and any values
 specified as template parameters.
 
-Type annotations for `boto3.client("cloudformation").detect_stack_drift`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").detect_stack_drift` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift)
 
-Boto3 documentation:
-[CloudFormation.Client.detect_stack_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_drift)
+```python title="Method definition"
+def detect_stack_drift(
+    self,
+    *,
+    StackName: str,
+    LogicalResourceIds: Sequence[str] = ...,
+) -> DetectStackDriftOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DetectStackDriftInputRequestTypeDef](./type_defs.md#detectstackdriftinputrequesttypedef).
+1. See [:material-code-braces: DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `LogicalResourceIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DetectStackDriftInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef).
+parent.detect_stack_drift(**kwargs)
+```
 
-<a id="detect\_stack\_resource\_drift"></a>
+1. See [:material-code-braces: DetectStackDriftInputRequestTypeDef](./type_defs.md#detectstackdriftinputrequesttypedef) 
 
-### detect_stack_resource_drift
+### detect\_stack\_resource\_drift
 
 Returns information about whether a resource's actual configuration differs, or
 has *drifted* , from it's expected configuration, as defined in the stack
 template and any values specified as template parameters.
 
-Type annotations for
-`boto3.client("cloudformation").detect_stack_resource_drift` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").detect_stack_resource_drift` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift)
 
-Boto3 documentation:
-[CloudFormation.Client.detect_stack_resource_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_resource_drift)
+```python title="Method definition"
+def detect_stack_resource_drift(
+    self,
+    *,
+    StackName: str,
+    LogicalResourceId: str,
+) -> DetectStackResourceDriftOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DetectStackResourceDriftInputRequestTypeDef](./type_defs.md#detectstackresourcedriftinputrequesttypedef).
+1. See [:material-code-braces: DetectStackResourceDriftOutputTypeDef](./type_defs.md#detectstackresourcedriftoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `LogicalResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetectStackResourceDriftInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+    "LogicalResourceId": ...,
+}
 
-Returns
-[DetectStackResourceDriftOutputTypeDef](./type_defs.md#detectstackresourcedriftoutputtypedef).
+parent.detect_stack_resource_drift(**kwargs)
+```
 
-<a id="detect\_stack\_set\_drift"></a>
+1. See [:material-code-braces: DetectStackResourceDriftInputRequestTypeDef](./type_defs.md#detectstackresourcedriftinputrequesttypedef) 
 
-### detect_stack_set_drift
+### detect\_stack\_set\_drift
 
 Detect drift on a stack set.
 
-Type annotations for `boto3.client("cloudformation").detect_stack_set_drift`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").detect_stack_set_drift` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift)
 
-Boto3 documentation:
-[CloudFormation.Client.detect_stack_set_drift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.detect_stack_set_drift)
+```python title="Method definition"
+def detect_stack_set_drift(
+    self,
+    *,
+    StackSetName: str,
+    OperationPreferences: StackSetOperationPreferencesTypeDef = ...,  # (1)
+    OperationId: str = ...,
+    CallAs: CallAsType = ...,  # (2)
+) -> DetectStackSetDriftOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DetectStackSetDriftInputRequestTypeDef](./type_defs.md#detectstacksetdriftinputrequesttypedef).
+1. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+3. See [:material-code-braces: DetectStackSetDriftOutputTypeDef](./type_defs.md#detectstacksetdriftoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: DetectStackSetDriftInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+}
 
-Returns
-[DetectStackSetDriftOutputTypeDef](./type_defs.md#detectstacksetdriftoutputtypedef).
+parent.detect_stack_set_drift(**kwargs)
+```
 
-<a id="estimate\_template\_cost"></a>
+1. See [:material-code-braces: DetectStackSetDriftInputRequestTypeDef](./type_defs.md#detectstacksetdriftinputrequesttypedef) 
 
-### estimate_template_cost
+### estimate\_template\_cost
 
 .
 
-Type annotations for `boto3.client("cloudformation").estimate_template_cost`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").estimate_template_cost` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
 
-Boto3 documentation:
-[CloudFormation.Client.estimate_template_cost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.estimate_template_cost)
+```python title="Method definition"
+def estimate_template_cost(
+    self,
+    *,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+) -> EstimateTemplateCostOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[EstimateTemplateCostInputRequestTypeDef](./type_defs.md#estimatetemplatecostinputrequesttypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: EstimateTemplateCostOutputTypeDef](./type_defs.md#estimatetemplatecostoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: EstimateTemplateCostInputRequestTypeDef = {  # (1)
+    "TemplateBody": ...,
+}
 
-Returns
-[EstimateTemplateCostOutputTypeDef](./type_defs.md#estimatetemplatecostoutputtypedef).
+parent.estimate_template_cost(**kwargs)
+```
 
-<a id="execute\_change\_set"></a>
+1. See [:material-code-braces: EstimateTemplateCostInputRequestTypeDef](./type_defs.md#estimatetemplatecostinputrequesttypedef) 
 
-### execute_change_set
+### execute\_change\_set
 
-Updates a stack using the input information that was provided when the
-specified change set was created.
+Updates a stack using the input information that was provided when the specified
+change set was created.
 
-Type annotations for `boto3.client("cloudformation").execute_change_set`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").execute_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set)
 
-Boto3 documentation:
-[CloudFormation.Client.execute_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.execute_change_set)
+```python title="Method definition"
+def execute_change_set(
+    self,
+    *,
+    ChangeSetName: str,
+    StackName: str = ...,
+    ClientRequestToken: str = ...,
+    DisableRollback: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ExecuteChangeSetInputRequestTypeDef](./type_defs.md#executechangesetinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChangeSetName`: `str` *(required)*
-- `StackName`: `str`
-- `ClientRequestToken`: `str`
-- `DisableRollback`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ExecuteChangeSetInputRequestTypeDef = {  # (1)
+    "ChangeSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.execute_change_set(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExecuteChangeSetInputRequestTypeDef](./type_defs.md#executechangesetinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cloudformation").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudFormation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_stack\_policy"></a>
-
-### get_stack_policy
+### get\_stack\_policy
 
 Returns the stack policy for a specified stack.
 
-Type annotations for `boto3.client("cloudformation").get_stack_policy` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_stack_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy)
 
-Boto3 documentation:
-[CloudFormation.Client.get_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_stack_policy)
+```python title="Method definition"
+def get_stack_policy(
+    self,
+    *,
+    StackName: str,
+) -> GetStackPolicyOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStackPolicyInputRequestTypeDef](./type_defs.md#getstackpolicyinputrequesttypedef).
+1. See [:material-code-braces: GetStackPolicyOutputTypeDef](./type_defs.md#getstackpolicyoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStackPolicyInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[GetStackPolicyOutputTypeDef](./type_defs.md#getstackpolicyoutputtypedef).
+parent.get_stack_policy(**kwargs)
+```
 
-<a id="get\_template"></a>
+1. See [:material-code-braces: GetStackPolicyInputRequestTypeDef](./type_defs.md#getstackpolicyinputrequesttypedef) 
 
-### get_template
+### get\_template
 
 Returns the template body for a specified stack.
 
-Type annotations for `boto3.client("cloudformation").get_template` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template)
 
-Boto3 documentation:
-[CloudFormation.Client.get_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template)
+```python title="Method definition"
+def get_template(
+    self,
+    *,
+    StackName: str = ...,
+    ChangeSetName: str = ...,
+    TemplateStage: TemplateStageType = ...,  # (1)
+) -> GetTemplateOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetTemplateInputRequestTypeDef](./type_defs.md#gettemplateinputrequesttypedef).
+1. See [:material-code-brackets: TemplateStageType](./literals.md#templatestagetype) 
+2. See [:material-code-braces: GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str`
-- `ChangeSetName`: `str`
-- `TemplateStage`: [TemplateStageType](./literals.md#templatestagetype)
+```python title="Usage example with kwargs"
+kwargs: GetTemplateInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns [GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef).
+parent.get_template(**kwargs)
+```
 
-<a id="get\_template\_summary"></a>
+1. See [:material-code-braces: GetTemplateInputRequestTypeDef](./type_defs.md#gettemplateinputrequesttypedef) 
 
-### get_template_summary
+### get\_template\_summary
 
 Returns information about a new or existing template.
 
-Type annotations for `boto3.client("cloudformation").get_template_summary`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_template_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary)
 
-Boto3 documentation:
-[CloudFormation.Client.get_template_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.get_template_summary)
+```python title="Method definition"
+def get_template_summary(
+    self,
+    *,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+    StackName: str = ...,
+    StackSetName: str = ...,
+    CallAs: CallAsType = ...,  # (1)
+) -> GetTemplateSummaryOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetTemplateSummaryInputRequestTypeDef](./type_defs.md#gettemplatesummaryinputrequesttypedef).
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `StackName`: `str`
-- `StackSetName`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: GetTemplateSummaryInputRequestTypeDef = {  # (1)
+    "TemplateBody": ...,
+}
 
-Returns
-[GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef).
+parent.get_template_summary(**kwargs)
+```
 
-<a id="import\_stacks\_to\_stack\_set"></a>
+1. See [:material-code-braces: GetTemplateSummaryInputRequestTypeDef](./type_defs.md#gettemplatesummaryinputrequesttypedef) 
 
-### import_stacks_to_stack_set
+### import\_stacks\_to\_stack\_set
 
 Import existing stacks into a new stack sets.
 
-Type annotations for
-`boto3.client("cloudformation").import_stacks_to_stack_set` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").import_stacks_to_stack_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.import_stacks_to_stack_set)
 
-Boto3 documentation:
-[CloudFormation.Client.import_stacks_to_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.import_stacks_to_stack_set)
+```python title="Method definition"
+def import_stacks_to_stack_set(
+    self,
+    *,
+    StackSetName: str,
+    StackIds: Sequence[str] = ...,
+    StackIdsUrl: str = ...,
+    OrganizationalUnitIds: Sequence[str] = ...,
+    OperationPreferences: StackSetOperationPreferencesTypeDef = ...,  # (1)
+    OperationId: str = ...,
+    CallAs: CallAsType = ...,  # (2)
+) -> ImportStacksToStackSetOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ImportStacksToStackSetInputRequestTypeDef](./type_defs.md#importstackstostacksetinputrequesttypedef).
+1. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+3. See [:material-code-braces: ImportStacksToStackSetOutputTypeDef](./type_defs.md#importstackstostacksetoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `StackIds`: `Sequence`\[`str`\]
-- `StackIdsUrl`: `str`
-- `OrganizationalUnitIds`: `Sequence`\[`str`\]
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: ImportStacksToStackSetInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+}
 
-Returns
-[ImportStacksToStackSetOutputTypeDef](./type_defs.md#importstackstostacksetoutputtypedef).
+parent.import_stacks_to_stack_set(**kwargs)
+```
 
-<a id="list\_change\_sets"></a>
+1. See [:material-code-braces: ImportStacksToStackSetInputRequestTypeDef](./type_defs.md#importstackstostacksetinputrequesttypedef) 
 
-### list_change_sets
+### list\_change\_sets
 
 Returns the ID and status of each active change set for a stack.
 
-Type annotations for `boto3.client("cloudformation").list_change_sets` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_change_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets)
 
-Boto3 documentation:
-[CloudFormation.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_change_sets)
+```python title="Method definition"
+def list_change_sets(
+    self,
+    *,
+    StackName: str,
+    NextToken: str = ...,
+) -> ListChangeSetsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChangeSetsInputRequestTypeDef](./type_defs.md#listchangesetsinputrequesttypedef).
+1. See [:material-code-braces: ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChangeSetsInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef).
+parent.list_change_sets(**kwargs)
+```
 
-<a id="list\_exports"></a>
+1. See [:material-code-braces: ListChangeSetsInputRequestTypeDef](./type_defs.md#listchangesetsinputrequesttypedef) 
 
-### list_exports
-
-.
-
-Type annotations for `boto3.client("cloudformation").list_exports` method.
-
-Boto3 documentation:
-[CloudFormation.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_exports)
-
-Arguments mapping described in
-[ListExportsInputRequestTypeDef](./type_defs.md#listexportsinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `NextToken`: `str`
-
-Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
-
-<a id="list\_imports"></a>
-
-### list_imports
+### list\_exports
 
 .
 
-Type annotations for `boto3.client("cloudformation").list_imports` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_exports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_exports)
 
-Boto3 documentation:
-[CloudFormation.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_imports)
+```python title="Method definition"
+def list_exports(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListExportsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListImportsInputRequestTypeDef](./type_defs.md#listimportsinputrequesttypedef).
+1. See [:material-code-braces: ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ExportName`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListExportsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef).
+parent.list_exports(**kwargs)
+```
 
-<a id="list\_stack\_instances"></a>
+1. See [:material-code-braces: ListExportsInputRequestTypeDef](./type_defs.md#listexportsinputrequesttypedef) 
 
-### list_stack_instances
+### list\_imports
+
+.
+
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_imports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_imports)
+
+```python title="Method definition"
+def list_imports(
+    self,
+    *,
+    ExportName: str,
+    NextToken: str = ...,
+) -> ListImportsOutputTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListImportsInputRequestTypeDef = {  # (1)
+    "ExportName": ...,
+}
+
+parent.list_imports(**kwargs)
+```
+
+1. See [:material-code-braces: ListImportsInputRequestTypeDef](./type_defs.md#listimportsinputrequesttypedef) 
+
+### list\_stack\_instances
 
 Returns summary information about stack instances that are associated with the
 specified stack set.
 
-Type annotations for `boto3.client("cloudformation").list_stack_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_stack_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances)
 
-Boto3 documentation:
-[CloudFormation.Client.list_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_instances)
+```python title="Method definition"
+def list_stack_instances(
+    self,
+    *,
+    StackSetName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[StackInstanceFilterTypeDef] = ...,  # (1)
+    StackInstanceAccount: str = ...,
+    StackInstanceRegion: str = ...,
+    CallAs: CallAsType = ...,  # (2)
+) -> ListStackInstancesOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListStackInstancesInputRequestTypeDef](./type_defs.md#liststackinstancesinputrequesttypedef).
+1. See [:material-code-braces: StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+3. See [:material-code-braces: ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`:
-  `Sequence`\[[StackInstanceFilterTypeDef](./type_defs.md#stackinstancefiltertypedef)\]
-- `StackInstanceAccount`: `str`
-- `StackInstanceRegion`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: ListStackInstancesInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+}
 
-Returns
-[ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef).
+parent.list_stack_instances(**kwargs)
+```
 
-<a id="list\_stack\_resources"></a>
+1. See [:material-code-braces: ListStackInstancesInputRequestTypeDef](./type_defs.md#liststackinstancesinputrequesttypedef) 
 
-### list_stack_resources
+### list\_stack\_resources
 
 Returns descriptions of all resources of the specified stack.
 
-Type annotations for `boto3.client("cloudformation").list_stack_resources`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_stack_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources)
 
-Boto3 documentation:
-[CloudFormation.Client.list_stack_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_resources)
+```python title="Method definition"
+def list_stack_resources(
+    self,
+    *,
+    StackName: str,
+    NextToken: str = ...,
+) -> ListStackResourcesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStackResourcesInputRequestTypeDef](./type_defs.md#liststackresourcesinputrequesttypedef).
+1. See [:material-code-braces: ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStackResourcesInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef).
+parent.list_stack_resources(**kwargs)
+```
 
-<a id="list\_stack\_set\_operation\_results"></a>
+1. See [:material-code-braces: ListStackResourcesInputRequestTypeDef](./type_defs.md#liststackresourcesinputrequesttypedef) 
 
-### list_stack_set_operation_results
+### list\_stack\_set\_operation\_results
 
 Returns summary information about the results of a stack set operation.
 
-Type annotations for
-`boto3.client("cloudformation").list_stack_set_operation_results` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_stack_set_operation_results` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results)
 
-Boto3 documentation:
-[CloudFormation.Client.list_stack_set_operation_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operation_results)
+```python title="Method definition"
+def list_stack_set_operation_results(
+    self,
+    *,
+    StackSetName: str,
+    OperationId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    CallAs: CallAsType = ...,  # (1)
+) -> ListStackSetOperationResultsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListStackSetOperationResultsInputRequestTypeDef](./type_defs.md#liststacksetoperationresultsinputrequesttypedef).
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `OperationId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: ListStackSetOperationResultsInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+    "OperationId": ...,
+}
 
-Returns
-[ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef).
+parent.list_stack_set_operation_results(**kwargs)
+```
 
-<a id="list\_stack\_set\_operations"></a>
+1. See [:material-code-braces: ListStackSetOperationResultsInputRequestTypeDef](./type_defs.md#liststacksetoperationresultsinputrequesttypedef) 
 
-### list_stack_set_operations
+### list\_stack\_set\_operations
 
 Returns summary information about operations performed on a stack set.
 
-Type annotations for `boto3.client("cloudformation").list_stack_set_operations`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_stack_set_operations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations)
 
-Boto3 documentation:
-[CloudFormation.Client.list_stack_set_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_set_operations)
+```python title="Method definition"
+def list_stack_set_operations(
+    self,
+    *,
+    StackSetName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    CallAs: CallAsType = ...,  # (1)
+) -> ListStackSetOperationsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListStackSetOperationsInputRequestTypeDef](./type_defs.md#liststacksetoperationsinputrequesttypedef).
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+2. See [:material-code-braces: ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: ListStackSetOperationsInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+}
 
-Returns
-[ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef).
+parent.list_stack_set_operations(**kwargs)
+```
 
-<a id="list\_stack\_sets"></a>
+1. See [:material-code-braces: ListStackSetOperationsInputRequestTypeDef](./type_defs.md#liststacksetoperationsinputrequesttypedef) 
 
-### list_stack_sets
+### list\_stack\_sets
 
 Returns summary information about stack sets that are associated with the user.
 
-Type annotations for `boto3.client("cloudformation").list_stack_sets` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_stack_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets)
 
-Boto3 documentation:
-[CloudFormation.Client.list_stack_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stack_sets)
+```python title="Method definition"
+def list_stack_sets(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Status: StackSetStatusType = ...,  # (1)
+    CallAs: CallAsType = ...,  # (2)
+) -> ListStackSetsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListStackSetsInputRequestTypeDef](./type_defs.md#liststacksetsinputrequesttypedef).
+1. See [:material-code-brackets: StackSetStatusType](./literals.md#stacksetstatustype) 
+2. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+3. See [:material-code-braces: ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Status`: [StackSetStatusType](./literals.md#stacksetstatustype)
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: ListStackSetsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef).
+parent.list_stack_sets(**kwargs)
+```
 
-<a id="list\_stacks"></a>
+1. See [:material-code-braces: ListStackSetsInputRequestTypeDef](./type_defs.md#liststacksetsinputrequesttypedef) 
 
-### list_stacks
+### list\_stacks
 
 Returns the summary information for stacks whose status matches the specified
 StackStatusFilter.
 
-Type annotations for `boto3.client("cloudformation").list_stacks` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_stacks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stacks)
 
-Boto3 documentation:
-[CloudFormation.Client.list_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_stacks)
+```python title="Method definition"
+def list_stacks(
+    self,
+    *,
+    NextToken: str = ...,
+    StackStatusFilter: Sequence[StackStatusType] = ...,  # (1)
+) -> ListStacksOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListStacksInputRequestTypeDef](./type_defs.md#liststacksinputrequesttypedef).
+1. See [:material-code-brackets: StackStatusType](./literals.md#stackstatustype) 
+2. See [:material-code-braces: ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `StackStatusFilter`:
-  `Sequence`\[[StackStatusType](./literals.md#stackstatustype)\]
+```python title="Usage example with kwargs"
+kwargs: ListStacksInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef).
+parent.list_stacks(**kwargs)
+```
 
-<a id="list\_type\_registrations"></a>
+1. See [:material-code-braces: ListStacksInputRequestTypeDef](./type_defs.md#liststacksinputrequesttypedef) 
 
-### list_type_registrations
+### list\_type\_registrations
 
 Returns a list of registration tokens for the specified extension(s).
 
-Type annotations for `boto3.client("cloudformation").list_type_registrations`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_type_registrations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations)
 
-Boto3 documentation:
-[CloudFormation.Client.list_type_registrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_registrations)
+```python title="Method definition"
+def list_type_registrations(
+    self,
+    *,
+    Type: RegistryTypeType = ...,  # (1)
+    TypeName: str = ...,
+    TypeArn: str = ...,
+    RegistrationStatusFilter: RegistrationStatusType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTypeRegistrationsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListTypeRegistrationsInputRequestTypeDef](./type_defs.md#listtyperegistrationsinputrequesttypedef).
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+2. See [:material-code-brackets: RegistrationStatusType](./literals.md#registrationstatustype) 
+3. See [:material-code-braces: ListTypeRegistrationsOutputTypeDef](./type_defs.md#listtyperegistrationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `TypeArn`: `str`
-- `RegistrationStatusFilter`:
-  [RegistrationStatusType](./literals.md#registrationstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTypeRegistrationsInputRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns
-[ListTypeRegistrationsOutputTypeDef](./type_defs.md#listtyperegistrationsoutputtypedef).
+parent.list_type_registrations(**kwargs)
+```
 
-<a id="list\_type\_versions"></a>
+1. See [:material-code-braces: ListTypeRegistrationsInputRequestTypeDef](./type_defs.md#listtyperegistrationsinputrequesttypedef) 
 
-### list_type_versions
+### list\_type\_versions
 
 Returns summary information about the versions of an extension.
 
-Type annotations for `boto3.client("cloudformation").list_type_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_type_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions)
 
-Boto3 documentation:
-[CloudFormation.Client.list_type_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_type_versions)
+```python title="Method definition"
+def list_type_versions(
+    self,
+    *,
+    Type: RegistryTypeType = ...,  # (1)
+    TypeName: str = ...,
+    Arn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    DeprecatedStatus: DeprecatedStatusType = ...,  # (2)
+    PublisherId: str = ...,
+) -> ListTypeVersionsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListTypeVersionsInputRequestTypeDef](./type_defs.md#listtypeversionsinputrequesttypedef).
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+2. See [:material-code-brackets: DeprecatedStatusType](./literals.md#deprecatedstatustype) 
+3. See [:material-code-braces: ListTypeVersionsOutputTypeDef](./type_defs.md#listtypeversionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `Arn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `DeprecatedStatus`:
-  [DeprecatedStatusType](./literals.md#deprecatedstatustype)
-- `PublisherId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTypeVersionsInputRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns
-[ListTypeVersionsOutputTypeDef](./type_defs.md#listtypeversionsoutputtypedef).
+parent.list_type_versions(**kwargs)
+```
 
-<a id="list\_types"></a>
+1. See [:material-code-braces: ListTypeVersionsInputRequestTypeDef](./type_defs.md#listtypeversionsinputrequesttypedef) 
 
-### list_types
+### list\_types
 
 Returns summary information about extension that have been registered with
 CloudFormation.
 
-Type annotations for `boto3.client("cloudformation").list_types` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").list_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_types)
 
-Boto3 documentation:
-[CloudFormation.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.list_types)
+```python title="Method definition"
+def list_types(
+    self,
+    *,
+    Visibility: VisibilityType = ...,  # (1)
+    ProvisioningType: ProvisioningTypeType = ...,  # (2)
+    DeprecatedStatus: DeprecatedStatusType = ...,  # (3)
+    Type: RegistryTypeType = ...,  # (4)
+    Filters: TypeFiltersTypeDef = ...,  # (5)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTypesOutputTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[ListTypesInputRequestTypeDef](./type_defs.md#listtypesinputrequesttypedef).
+1. See [:material-code-brackets: VisibilityType](./literals.md#visibilitytype) 
+2. See [:material-code-brackets: ProvisioningTypeType](./literals.md#provisioningtypetype) 
+3. See [:material-code-brackets: DeprecatedStatusType](./literals.md#deprecatedstatustype) 
+4. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+5. See [:material-code-braces: TypeFiltersTypeDef](./type_defs.md#typefilterstypedef) 
+6. See [:material-code-braces: ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Visibility`: [VisibilityType](./literals.md#visibilitytype)
-- `ProvisioningType`:
-  [ProvisioningTypeType](./literals.md#provisioningtypetype)
-- `DeprecatedStatus`:
-  [DeprecatedStatusType](./literals.md#deprecatedstatustype)
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `Filters`: [TypeFiltersTypeDef](./type_defs.md#typefilterstypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTypesInputRequestTypeDef = {  # (1)
+    "Visibility": ...,
+}
 
-Returns [ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef).
+parent.list_types(**kwargs)
+```
 
-<a id="publish\_type"></a>
+1. See [:material-code-braces: ListTypesInputRequestTypeDef](./type_defs.md#listtypesinputrequesttypedef) 
 
-### publish_type
+### publish\_type
 
 Publishes the specified extension to the CloudFormation registry as a public
 extension in this region.
 
-Type annotations for `boto3.client("cloudformation").publish_type` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").publish_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.publish_type)
 
-Boto3 documentation:
-[CloudFormation.Client.publish_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.publish_type)
+```python title="Method definition"
+def publish_type(
+    self,
+    *,
+    Type: ThirdPartyTypeType = ...,  # (1)
+    Arn: str = ...,
+    TypeName: str = ...,
+    PublicVersionNumber: str = ...,
+) -> PublishTypeOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PublishTypeInputRequestTypeDef](./type_defs.md#publishtypeinputrequesttypedef).
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
+2. See [:material-code-braces: PublishTypeOutputTypeDef](./type_defs.md#publishtypeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-- `Arn`: `str`
-- `TypeName`: `str`
-- `PublicVersionNumber`: `str`
+```python title="Usage example with kwargs"
+kwargs: PublishTypeInputRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns [PublishTypeOutputTypeDef](./type_defs.md#publishtypeoutputtypedef).
+parent.publish_type(**kwargs)
+```
 
-<a id="record\_handler\_progress"></a>
+1. See [:material-code-braces: PublishTypeInputRequestTypeDef](./type_defs.md#publishtypeinputrequesttypedef) 
 
-### record_handler_progress
+### record\_handler\_progress
 
 Reports progress of a resource handler to CloudFormation.
 
-Type annotations for `boto3.client("cloudformation").record_handler_progress`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").record_handler_progress` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress)
 
-Boto3 documentation:
-[CloudFormation.Client.record_handler_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.record_handler_progress)
+```python title="Method definition"
+def record_handler_progress(
+    self,
+    *,
+    BearerToken: str,
+    OperationStatus: OperationStatusType,  # (1)
+    CurrentOperationStatus: OperationStatusType = ...,  # (1)
+    StatusMessage: str = ...,
+    ErrorCode: HandlerErrorCodeType = ...,  # (3)
+    ResourceModel: str = ...,
+    ClientRequestToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RecordHandlerProgressInputRequestTypeDef](./type_defs.md#recordhandlerprogressinputrequesttypedef).
+1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+2. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+3. See [:material-code-brackets: HandlerErrorCodeType](./literals.md#handlererrorcodetype) 
 
-Keyword-only arguments:
 
-- `BearerToken`: `str` *(required)*
-- `OperationStatus`: [OperationStatusType](./literals.md#operationstatustype)
-  *(required)*
-- `CurrentOperationStatus`:
-  [OperationStatusType](./literals.md#operationstatustype)
-- `StatusMessage`: `str`
-- `ErrorCode`: [HandlerErrorCodeType](./literals.md#handlererrorcodetype)
-- `ResourceModel`: `str`
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: RecordHandlerProgressInputRequestTypeDef = {  # (1)
+    "BearerToken": ...,
+    "OperationStatus": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.record_handler_progress(**kwargs)
+```
 
-<a id="register\_publisher"></a>
+1. See [:material-code-braces: RecordHandlerProgressInputRequestTypeDef](./type_defs.md#recordhandlerprogressinputrequesttypedef) 
 
-### register_publisher
+### register\_publisher
 
-Registers your account as a publisher of public extensions in the
-CloudFormation registry.
+Registers your account as a publisher of public extensions in the CloudFormation
+registry.
 
-Type annotations for `boto3.client("cloudformation").register_publisher`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").register_publisher` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_publisher)
 
-Boto3 documentation:
-[CloudFormation.Client.register_publisher](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_publisher)
+```python title="Method definition"
+def register_publisher(
+    self,
+    *,
+    AcceptTermsAndConditions: bool = ...,
+    ConnectionArn: str = ...,
+) -> RegisterPublisherOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterPublisherInputRequestTypeDef](./type_defs.md#registerpublisherinputrequesttypedef).
+1. See [:material-code-braces: RegisterPublisherOutputTypeDef](./type_defs.md#registerpublisheroutputtypedef) 
 
-Keyword-only arguments:
 
-- `AcceptTermsAndConditions`: `bool`
-- `ConnectionArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterPublisherInputRequestTypeDef = {  # (1)
+    "AcceptTermsAndConditions": ...,
+}
 
-Returns
-[RegisterPublisherOutputTypeDef](./type_defs.md#registerpublisheroutputtypedef).
+parent.register_publisher(**kwargs)
+```
 
-<a id="register\_type"></a>
+1. See [:material-code-braces: RegisterPublisherInputRequestTypeDef](./type_defs.md#registerpublisherinputrequesttypedef) 
 
-### register_type
+### register\_type
 
 Registers an extension with the CloudFormation service.
 
-Type annotations for `boto3.client("cloudformation").register_type` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").register_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_type)
 
-Boto3 documentation:
-[CloudFormation.Client.register_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.register_type)
+```python title="Method definition"
+def register_type(
+    self,
+    *,
+    TypeName: str,
+    SchemaHandlerPackage: str,
+    Type: RegistryTypeType = ...,  # (1)
+    LoggingConfig: LoggingConfigTypeDef = ...,  # (2)
+    ExecutionRoleArn: str = ...,
+    ClientRequestToken: str = ...,
+) -> RegisterTypeOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RegisterTypeInputRequestTypeDef](./type_defs.md#registertypeinputrequesttypedef).
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
+2. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+3. See [:material-code-braces: RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TypeName`: `str` *(required)*
-- `SchemaHandlerPackage`: `str` *(required)*
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `LoggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `ExecutionRoleArn`: `str`
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterTypeInputRequestTypeDef = {  # (1)
+    "TypeName": ...,
+    "SchemaHandlerPackage": ...,
+}
 
-Returns [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef).
+parent.register_type(**kwargs)
+```
 
-<a id="rollback\_stack"></a>
+1. See [:material-code-braces: RegisterTypeInputRequestTypeDef](./type_defs.md#registertypeinputrequesttypedef) 
 
-### rollback_stack
+### rollback\_stack
 
 When specifying `RollbackStack` , you preserve the state of previously
 provisioned resources when an operation fails.
 
-Type annotations for `boto3.client("cloudformation").rollback_stack` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").rollback_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.rollback_stack)
 
-Boto3 documentation:
-[CloudFormation.Client.rollback_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.rollback_stack)
+```python title="Method definition"
+def rollback_stack(
+    self,
+    *,
+    StackName: str,
+    RoleARN: str = ...,
+    ClientRequestToken: str = ...,
+) -> RollbackStackOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RollbackStackInputRequestTypeDef](./type_defs.md#rollbackstackinputrequesttypedef).
+1. See [:material-code-braces: RollbackStackOutputTypeDef](./type_defs.md#rollbackstackoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `RoleARN`: `str`
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: RollbackStackInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[RollbackStackOutputTypeDef](./type_defs.md#rollbackstackoutputtypedef).
+parent.rollback_stack(**kwargs)
+```
 
-<a id="set\_stack\_policy"></a>
+1. See [:material-code-braces: RollbackStackInputRequestTypeDef](./type_defs.md#rollbackstackinputrequesttypedef) 
 
-### set_stack_policy
+### set\_stack\_policy
 
 Sets a stack policy for a specified stack.
 
-Type annotations for `boto3.client("cloudformation").set_stack_policy` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").set_stack_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy)
 
-Boto3 documentation:
-[CloudFormation.Client.set_stack_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_stack_policy)
+```python title="Method definition"
+def set_stack_policy(
+    self,
+    *,
+    StackName: str,
+    StackPolicyBody: str = ...,
+    StackPolicyURL: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetStackPolicyInputRequestTypeDef](./type_defs.md#setstackpolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
+```python title="Usage example with kwargs"
+kwargs: SetStackPolicyInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-<a id="set\_type\_configuration"></a>
+parent.set_stack_policy(**kwargs)
+```
 
-### set_type_configuration
+1. See [:material-code-braces: SetStackPolicyInputRequestTypeDef](./type_defs.md#setstackpolicyinputrequesttypedef) 
+
+### set\_type\_configuration
 
 Specifies the configuration data for a registered CloudFormation extension, in
 the given account and region.
 
-Type annotations for `boto3.client("cloudformation").set_type_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").set_type_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_configuration)
 
-Boto3 documentation:
-[CloudFormation.Client.set_type_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_configuration)
+```python title="Method definition"
+def set_type_configuration(
+    self,
+    *,
+    Configuration: str,
+    TypeArn: str = ...,
+    ConfigurationAlias: str = ...,
+    TypeName: str = ...,
+    Type: ThirdPartyTypeType = ...,  # (1)
+) -> SetTypeConfigurationOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SetTypeConfigurationInputRequestTypeDef](./type_defs.md#settypeconfigurationinputrequesttypedef).
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
+2. See [:material-code-braces: SetTypeConfigurationOutputTypeDef](./type_defs.md#settypeconfigurationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Configuration`: `str` *(required)*
-- `TypeArn`: `str`
-- `ConfigurationAlias`: `str`
-- `TypeName`: `str`
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
+```python title="Usage example with kwargs"
+kwargs: SetTypeConfigurationInputRequestTypeDef = {  # (1)
+    "Configuration": ...,
+}
 
-Returns
-[SetTypeConfigurationOutputTypeDef](./type_defs.md#settypeconfigurationoutputtypedef).
+parent.set_type_configuration(**kwargs)
+```
 
-<a id="set\_type\_default\_version"></a>
+1. See [:material-code-braces: SetTypeConfigurationInputRequestTypeDef](./type_defs.md#settypeconfigurationinputrequesttypedef) 
 
-### set_type_default_version
+### set\_type\_default\_version
 
 Specify the default version of an extension.
 
-Type annotations for `boto3.client("cloudformation").set_type_default_version`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").set_type_default_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version)
 
-Boto3 documentation:
-[CloudFormation.Client.set_type_default_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.set_type_default_version)
+```python title="Method definition"
+def set_type_default_version(
+    self,
+    *,
+    Arn: str = ...,
+    Type: RegistryTypeType = ...,  # (1)
+    TypeName: str = ...,
+    VersionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SetTypeDefaultVersionInputRequestTypeDef](./type_defs.md#settypedefaultversioninputrequesttypedef).
+1. See [:material-code-brackets: RegistryTypeType](./literals.md#registrytypetype) 
 
-Keyword-only arguments:
 
-- `Arn`: `str`
-- `Type`: [RegistryTypeType](./literals.md#registrytypetype)
-- `TypeName`: `str`
-- `VersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: SetTypeDefaultVersionInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.set_type_default_version(**kwargs)
+```
 
-<a id="signal\_resource"></a>
+1. See [:material-code-braces: SetTypeDefaultVersionInputRequestTypeDef](./type_defs.md#settypedefaultversioninputrequesttypedef) 
 
-### signal_resource
+### signal\_resource
 
 Sends a signal to the specified resource with a success or failure status.
 
-Type annotations for `boto3.client("cloudformation").signal_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").signal_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.signal_resource)
 
-Boto3 documentation:
-[CloudFormation.Client.signal_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.signal_resource)
+```python title="Method definition"
+def signal_resource(
+    self,
+    *,
+    StackName: str,
+    LogicalResourceId: str,
+    UniqueId: str,
+    Status: ResourceSignalStatusType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SignalResourceInputRequestTypeDef](./type_defs.md#signalresourceinputrequesttypedef).
+1. See [:material-code-brackets: ResourceSignalStatusType](./literals.md#resourcesignalstatustype) 
 
-Keyword-only arguments:
 
-- `StackName`: `str` *(required)*
-- `LogicalResourceId`: `str` *(required)*
-- `UniqueId`: `str` *(required)*
-- `Status`: [ResourceSignalStatusType](./literals.md#resourcesignalstatustype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SignalResourceInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+    "LogicalResourceId": ...,
+    "UniqueId": ...,
+    "Status": ...,
+}
 
-<a id="stop\_stack\_set\_operation"></a>
+parent.signal_resource(**kwargs)
+```
 
-### stop_stack_set_operation
+1. See [:material-code-braces: SignalResourceInputRequestTypeDef](./type_defs.md#signalresourceinputrequesttypedef) 
+
+### stop\_stack\_set\_operation
 
 Stops an in-progress operation on a stack set and its associated stack
 instances.
 
-Type annotations for `boto3.client("cloudformation").stop_stack_set_operation`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").stop_stack_set_operation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation)
 
-Boto3 documentation:
-[CloudFormation.Client.stop_stack_set_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.stop_stack_set_operation)
+```python title="Method definition"
+def stop_stack_set_operation(
+    self,
+    *,
+    StackSetName: str,
+    OperationId: str,
+    CallAs: CallAsType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopStackSetOperationInputRequestTypeDef](./type_defs.md#stopstacksetoperationinputrequesttypedef).
+1. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `OperationId`: `str` *(required)*
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: StopStackSetOperationInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+    "OperationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_stack_set_operation(**kwargs)
+```
 
-<a id="test\_type"></a>
+1. See [:material-code-braces: StopStackSetOperationInputRequestTypeDef](./type_defs.md#stopstacksetoperationinputrequesttypedef) 
 
-### test_type
+### test\_type
 
 Tests a registered extension to make sure it meets all necessary requirements
 for being published in the CloudFormation registry.
 
-Type annotations for `boto3.client("cloudformation").test_type` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").test_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.test_type)
 
-Boto3 documentation:
-[CloudFormation.Client.test_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.test_type)
+```python title="Method definition"
+def test_type(
+    self,
+    *,
+    Arn: str = ...,
+    Type: ThirdPartyTypeType = ...,  # (1)
+    TypeName: str = ...,
+    VersionId: str = ...,
+    LogDeliveryBucket: str = ...,
+) -> TestTypeOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TestTypeInputRequestTypeDef](./type_defs.md#testtypeinputrequesttypedef).
+1. See [:material-code-brackets: ThirdPartyTypeType](./literals.md#thirdpartytypetype) 
+2. See [:material-code-braces: TestTypeOutputTypeDef](./type_defs.md#testtypeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str`
-- `Type`: [ThirdPartyTypeType](./literals.md#thirdpartytypetype)
-- `TypeName`: `str`
-- `VersionId`: `str`
-- `LogDeliveryBucket`: `str`
+```python title="Usage example with kwargs"
+kwargs: TestTypeInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns [TestTypeOutputTypeDef](./type_defs.md#testtypeoutputtypedef).
+parent.test_type(**kwargs)
+```
 
-<a id="update\_stack"></a>
+1. See [:material-code-braces: TestTypeInputRequestTypeDef](./type_defs.md#testtypeinputrequesttypedef) 
 
-### update_stack
-
-.
-
-Type annotations for `boto3.client("cloudformation").update_stack` method.
-
-Boto3 documentation:
-[CloudFormation.Client.update_stack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
-
-Arguments mapping described in
-[UpdateStackInputRequestTypeDef](./type_defs.md#updatestackinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `StackName`: `str` *(required)*
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `UsePreviousTemplate`: `bool`
-- `StackPolicyDuringUpdateBody`: `str`
-- `StackPolicyDuringUpdateURL`: `str`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `StackPolicyBody`: `str`
-- `StackPolicyURL`: `str`
-- `NotificationARNs`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DisableRollback`: `bool`
-- `ClientRequestToken`: `str`
-
-Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
-
-<a id="update\_stack\_instances"></a>
-
-### update_stack_instances
+### update\_stack
 
 .
 
-Type annotations for `boto3.client("cloudformation").update_stack_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").update_stack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack)
 
-Boto3 documentation:
-[CloudFormation.Client.update_stack_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
+```python title="Method definition"
+def update_stack(
+    self,
+    *,
+    StackName: str,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+    UsePreviousTemplate: bool = ...,
+    StackPolicyDuringUpdateBody: str = ...,
+    StackPolicyDuringUpdateURL: str = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+    Capabilities: Sequence[CapabilityType] = ...,  # (2)
+    ResourceTypes: Sequence[str] = ...,
+    RoleARN: str = ...,
+    RollbackConfiguration: RollbackConfigurationTypeDef = ...,  # (3)
+    StackPolicyBody: str = ...,
+    StackPolicyURL: str = ...,
+    NotificationARNs: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+    DisableRollback: bool = ...,
+    ClientRequestToken: str = ...,
+) -> UpdateStackOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStackInstancesInputRequestTypeDef](./type_defs.md#updatestackinstancesinputrequesttypedef).
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `Regions`: `Sequence`\[`str`\] *(required)*
-- `Accounts`: `Sequence`\[`str`\]
-- `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
-- `ParameterOverrides`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `OperationId`: `str`
-- `CallAs`: [CallAsType](./literals.md#callastype)
+```python title="Usage example with kwargs"
+kwargs: UpdateStackInputRequestTypeDef = {  # (1)
+    "StackName": ...,
+}
 
-Returns
-[UpdateStackInstancesOutputTypeDef](./type_defs.md#updatestackinstancesoutputtypedef).
+parent.update_stack(**kwargs)
+```
 
-<a id="update\_stack\_set"></a>
+1. See [:material-code-braces: UpdateStackInputRequestTypeDef](./type_defs.md#updatestackinputrequesttypedef) 
 
-### update_stack_set
+### update\_stack\_instances
 
 .
 
-Type annotations for `boto3.client("cloudformation").update_stack_set` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").update_stack_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_instances)
 
-Boto3 documentation:
-[CloudFormation.Client.update_stack_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)
+```python title="Method definition"
+def update_stack_instances(
+    self,
+    *,
+    StackSetName: str,
+    Regions: Sequence[str],
+    Accounts: Sequence[str] = ...,
+    DeploymentTargets: DeploymentTargetsTypeDef = ...,  # (1)
+    ParameterOverrides: Sequence[ParameterTypeDef] = ...,  # (2)
+    OperationPreferences: StackSetOperationPreferencesTypeDef = ...,  # (3)
+    OperationId: str = ...,
+    CallAs: CallAsType = ...,  # (4)
+) -> UpdateStackInstancesOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStackSetInputRequestTypeDef](./type_defs.md#updatestacksetinputrequesttypedef).
+1. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+2. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+3. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+4. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+5. See [:material-code-braces: UpdateStackInstancesOutputTypeDef](./type_defs.md#updatestackinstancesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StackSetName`: `str` *(required)*
-- `Description`: `str`
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
-- `UsePreviousTemplate`: `bool`
-- `Parameters`:
-  `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `Capabilities`: `Sequence`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `OperationPreferences`:
-  [StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef)
-- `AdministrationRoleARN`: `str`
-- `ExecutionRoleName`: `str`
-- `DeploymentTargets`:
-  [DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef)
-- `PermissionModel`: [PermissionModelsType](./literals.md#permissionmodelstype)
-- `AutoDeployment`:
-  [AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef)
-- `OperationId`: `str`
-- `Accounts`: `Sequence`\[`str`\]
-- `Regions`: `Sequence`\[`str`\]
-- `CallAs`: [CallAsType](./literals.md#callastype)
-- `ManagedExecution`:
-  [ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateStackInstancesInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+    "Regions": ...,
+}
 
-Returns
-[UpdateStackSetOutputTypeDef](./type_defs.md#updatestacksetoutputtypedef).
+parent.update_stack_instances(**kwargs)
+```
 
-<a id="update\_termination\_protection"></a>
+1. See [:material-code-braces: UpdateStackInstancesInputRequestTypeDef](./type_defs.md#updatestackinstancesinputrequesttypedef) 
 
-### update_termination_protection
+### update\_stack\_set
+
+.
+
+Type annotations and code completion for `#!python boto3.client("cloudformation").update_stack_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_stack_set)
+
+```python title="Method definition"
+def update_stack_set(
+    self,
+    *,
+    StackSetName: str,
+    Description: str = ...,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+    UsePreviousTemplate: bool = ...,
+    Parameters: Sequence[ParameterTypeDef] = ...,  # (1)
+    Capabilities: Sequence[CapabilityType] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    OperationPreferences: StackSetOperationPreferencesTypeDef = ...,  # (4)
+    AdministrationRoleARN: str = ...,
+    ExecutionRoleName: str = ...,
+    DeploymentTargets: DeploymentTargetsTypeDef = ...,  # (5)
+    PermissionModel: PermissionModelsType = ...,  # (6)
+    AutoDeployment: AutoDeploymentTypeDef = ...,  # (7)
+    OperationId: str = ...,
+    Accounts: Sequence[str] = ...,
+    Regions: Sequence[str] = ...,
+    CallAs: CallAsType = ...,  # (8)
+    ManagedExecution: ManagedExecutionTypeDef = ...,  # (9)
+) -> UpdateStackSetOutputTypeDef:  # (10)
+    ...
+```
+
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: StackSetOperationPreferencesTypeDef](./type_defs.md#stacksetoperationpreferencestypedef) 
+5. See [:material-code-braces: DeploymentTargetsTypeDef](./type_defs.md#deploymenttargetstypedef) 
+6. See [:material-code-brackets: PermissionModelsType](./literals.md#permissionmodelstype) 
+7. See [:material-code-braces: AutoDeploymentTypeDef](./type_defs.md#autodeploymenttypedef) 
+8. See [:material-code-brackets: CallAsType](./literals.md#callastype) 
+9. See [:material-code-braces: ManagedExecutionTypeDef](./type_defs.md#managedexecutiontypedef) 
+10. See [:material-code-braces: UpdateStackSetOutputTypeDef](./type_defs.md#updatestacksetoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: UpdateStackSetInputRequestTypeDef = {  # (1)
+    "StackSetName": ...,
+}
+
+parent.update_stack_set(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateStackSetInputRequestTypeDef](./type_defs.md#updatestacksetinputrequesttypedef) 
+
+### update\_termination\_protection
 
 Updates termination protection for the specified stack.
 
-Type annotations for
-`boto3.client("cloudformation").update_termination_protection` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").update_termination_protection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection)
 
-Boto3 documentation:
-[CloudFormation.Client.update_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.update_termination_protection)
+```python title="Method definition"
+def update_termination_protection(
+    self,
+    *,
+    EnableTerminationProtection: bool,
+    StackName: str,
+) -> UpdateTerminationProtectionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTerminationProtectionInputRequestTypeDef](./type_defs.md#updateterminationprotectioninputrequesttypedef).
+1. See [:material-code-braces: UpdateTerminationProtectionOutputTypeDef](./type_defs.md#updateterminationprotectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `EnableTerminationProtection`: `bool` *(required)*
-- `StackName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTerminationProtectionInputRequestTypeDef = {  # (1)
+    "EnableTerminationProtection": ...,
+    "StackName": ...,
+}
 
-Returns
-[UpdateTerminationProtectionOutputTypeDef](./type_defs.md#updateterminationprotectionoutputtypedef).
+parent.update_termination_protection(**kwargs)
+```
 
-<a id="validate\_template"></a>
+1. See [:material-code-braces: UpdateTerminationProtectionInputRequestTypeDef](./type_defs.md#updateterminationprotectioninputrequesttypedef) 
 
-### validate_template
+### validate\_template
 
 Validates a specified template.
 
-Type annotations for `boto3.client("cloudformation").validate_template` method.
+Type annotations and code completion for `#!python boto3.client("cloudformation").validate_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.validate_template)
 
-Boto3 documentation:
-[CloudFormation.Client.validate_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.validate_template)
+```python title="Method definition"
+def validate_template(
+    self,
+    *,
+    TemplateBody: str = ...,
+    TemplateURL: str = ...,
+) -> ValidateTemplateOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ValidateTemplateInputRequestTypeDef](./type_defs.md#validatetemplateinputrequesttypedef).
+1. See [:material-code-braces: ValidateTemplateOutputTypeDef](./type_defs.md#validatetemplateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TemplateBody`: `str`
-- `TemplateURL`: `str`
+```python title="Usage example with kwargs"
+kwargs: ValidateTemplateInputRequestTypeDef = {  # (1)
+    "TemplateBody": ...,
+}
 
-Returns
-[ValidateTemplateOutputTypeDef](./type_defs.md#validatetemplateoutputtypedef).
+parent.validate_template(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ValidateTemplateInputRequestTypeDef](./type_defs.md#validatetemplateinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudformation").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_account_limits")` ->
-  [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
-- `client.get_paginator("describe_change_set")` ->
-  [DescribeChangeSetPaginator](./paginators.md#describechangesetpaginator)
-- `client.get_paginator("describe_stack_events")` ->
-  [DescribeStackEventsPaginator](./paginators.md#describestackeventspaginator)
-- `client.get_paginator("describe_stacks")` ->
-  [DescribeStacksPaginator](./paginators.md#describestackspaginator)
-- `client.get_paginator("list_change_sets")` ->
-  [ListChangeSetsPaginator](./paginators.md#listchangesetspaginator)
-- `client.get_paginator("list_exports")` ->
-  [ListExportsPaginator](./paginators.md#listexportspaginator)
-- `client.get_paginator("list_imports")` ->
-  [ListImportsPaginator](./paginators.md#listimportspaginator)
-- `client.get_paginator("list_stack_instances")` ->
-  [ListStackInstancesPaginator](./paginators.md#liststackinstancespaginator)
-- `client.get_paginator("list_stack_resources")` ->
-  [ListStackResourcesPaginator](./paginators.md#liststackresourcespaginator)
-- `client.get_paginator("list_stack_set_operation_results")` ->
-  [ListStackSetOperationResultsPaginator](./paginators.md#liststacksetoperationresultspaginator)
-- `client.get_paginator("list_stack_set_operations")` ->
-  [ListStackSetOperationsPaginator](./paginators.md#liststacksetoperationspaginator)
-- `client.get_paginator("list_stack_sets")` ->
-  [ListStackSetsPaginator](./paginators.md#liststacksetspaginator)
-- `client.get_paginator("list_stacks")` ->
-  [ListStacksPaginator](./paginators.md#liststackspaginator)
-- `client.get_paginator("list_types")` ->
-  [ListTypesPaginator](./paginators.md#listtypespaginator)
+- `client.get_paginator("describe_account_limits")` -> [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
+- `client.get_paginator("describe_change_set")` -> [DescribeChangeSetPaginator](./paginators.md#describechangesetpaginator)
+- `client.get_paginator("describe_stack_events")` -> [DescribeStackEventsPaginator](./paginators.md#describestackeventspaginator)
+- `client.get_paginator("describe_stacks")` -> [DescribeStacksPaginator](./paginators.md#describestackspaginator)
+- `client.get_paginator("list_change_sets")` -> [ListChangeSetsPaginator](./paginators.md#listchangesetspaginator)
+- `client.get_paginator("list_exports")` -> [ListExportsPaginator](./paginators.md#listexportspaginator)
+- `client.get_paginator("list_imports")` -> [ListImportsPaginator](./paginators.md#listimportspaginator)
+- `client.get_paginator("list_stack_instances")` -> [ListStackInstancesPaginator](./paginators.md#liststackinstancespaginator)
+- `client.get_paginator("list_stack_resources")` -> [ListStackResourcesPaginator](./paginators.md#liststackresourcespaginator)
+- `client.get_paginator("list_stack_set_operation_results")` -> [ListStackSetOperationResultsPaginator](./paginators.md#liststacksetoperationresultspaginator)
+- `client.get_paginator("list_stack_set_operations")` -> [ListStackSetOperationsPaginator](./paginators.md#liststacksetoperationspaginator)
+- `client.get_paginator("list_stack_sets")` -> [ListStackSetsPaginator](./paginators.md#liststacksetspaginator)
+- `client.get_paginator("list_stacks")` -> [ListStacksPaginator](./paginators.md#liststackspaginator)
+- `client.get_paginator("list_types")` -> [ListTypesPaginator](./paginators.md#listtypespaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("cloudformation").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloudformation").get_waiter` method with overloads.
 
-- `client.get_waiter("change_set_create_complete")` ->
-  [ChangeSetCreateCompleteWaiter](./waiters.md#changesetcreatecompletewaiter)
-- `client.get_waiter("stack_create_complete")` ->
-  [StackCreateCompleteWaiter](./waiters.md#stackcreatecompletewaiter)
-- `client.get_waiter("stack_delete_complete")` ->
-  [StackDeleteCompleteWaiter](./waiters.md#stackdeletecompletewaiter)
-- `client.get_waiter("stack_exists")` ->
-  [StackExistsWaiter](./waiters.md#stackexistswaiter)
-- `client.get_waiter("stack_import_complete")` ->
-  [StackImportCompleteWaiter](./waiters.md#stackimportcompletewaiter)
-- `client.get_waiter("stack_rollback_complete")` ->
-  [StackRollbackCompleteWaiter](./waiters.md#stackrollbackcompletewaiter)
-- `client.get_waiter("stack_update_complete")` ->
-  [StackUpdateCompleteWaiter](./waiters.md#stackupdatecompletewaiter)
-- `client.get_waiter("type_registration_complete")` ->
-  [TypeRegistrationCompleteWaiter](./waiters.md#typeregistrationcompletewaiter)
+- `client.get_waiter("change_set_create_complete")` -> [ChangeSetCreateCompleteWaiter](./waiters.md#changesetcreatecompletewaiter)
+- `client.get_waiter("stack_create_complete")` -> [StackCreateCompleteWaiter](./waiters.md#stackcreatecompletewaiter)
+- `client.get_waiter("stack_delete_complete")` -> [StackDeleteCompleteWaiter](./waiters.md#stackdeletecompletewaiter)
+- `client.get_waiter("stack_exists")` -> [StackExistsWaiter](./waiters.md#stackexistswaiter)
+- `client.get_waiter("stack_import_complete")` -> [StackImportCompleteWaiter](./waiters.md#stackimportcompletewaiter)
+- `client.get_waiter("stack_rollback_complete")` -> [StackRollbackCompleteWaiter](./waiters.md#stackrollbackcompletewaiter)
+- `client.get_waiter("stack_update_complete")` -> [StackUpdateCompleteWaiter](./waiters.md#stackupdatecompletewaiter)
+- `client.get_waiter("type_registration_complete")` -> [TypeRegistrationCompleteWaiter](./waiters.md#typeregistrationcompletewaiter)
+

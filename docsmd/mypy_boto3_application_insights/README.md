@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-applicationinsights-module"></a>
-
-# Type annotations for boto3 ApplicationInsights module
+#  ApplicationInsights module
 
 > [Index](../README.md) > ApplicationInsights
 
-Auto-generated documentation for
-[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
-type annotations stubs module
-[mypy-boto3-application-insights](https://pypi.org/project/mypy-boto3-application-insights/).
+!!! note ""
 
-- [Type annotations for boto3 ApplicationInsights module](#type-annotations-for-boto3-applicationinsights-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ApplicationInsightsClient](#applicationinsightsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
+    type annotations stubs module [mypy-boto3-application-insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ApplicationInsights`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[application-insights]'
 python -m pip install mypy-boto3-application-insights
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,86 +42,41 @@ python -m pip install mypy-boto3-application-insights
 python -m pip uninstall -y mypy-boto3-application-insights
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="applicationinsightsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ApplicationInsightsClient
 
-Type annotations for `boto3.client("application-insights")` as
-[ApplicationInsightsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("application-insights")` as [ApplicationInsightsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_application_insights.client import ApplicationInsightsClient
+
+def get_client() -> ApplicationInsightsClient:
+    return Session().cleint("application-insights")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_application](./client.md#create_application)
-- [create_component](./client.md#create_component)
-- [create_log_pattern](./client.md#create_log_pattern)
-- [delete_application](./client.md#delete_application)
-- [delete_component](./client.md#delete_component)
-- [delete_log_pattern](./client.md#delete_log_pattern)
-- [describe_application](./client.md#describe_application)
-- [describe_component](./client.md#describe_component)
-- [describe_component_configuration](./client.md#describe_component_configuration)
-- [describe_component_configuration_recommendation](./client.md#describe_component_configuration_recommendation)
-- [describe_log_pattern](./client.md#describe_log_pattern)
-- [describe_observation](./client.md#describe_observation)
-- [describe_problem](./client.md#describe_problem)
-- [describe_problem_observations](./client.md#describe_problem_observations)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_applications](./client.md#list_applications)
-- [list_components](./client.md#list_components)
-- [list_configuration_history](./client.md#list_configuration_history)
-- [list_log_pattern_sets](./client.md#list_log_pattern_sets)
-- [list_log_patterns](./client.md#list_log_patterns)
-- [list_problems](./client.md#list_problems)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_application](./client.md#update_application)
-- [update_component](./client.md#update_component)
-- [update_component_configuration](./client.md#update_component_configuration)
-- [update_log_pattern](./client.md#update_log_pattern)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-ApplicationInsightsClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- BadRequestException
-- ClientError
-- InternalServerException
-- ResourceInUseException
-- ResourceNotFoundException
-- TagsAlreadyExistException
-- TooManyTagsException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_application_insights.literals import CloudWatchEventSourceType
 
-```python
-from mypy_boto3_application_insights.literals import CloudWatchEventSourceType, ...
+def get_value() -> CloudWatchEventSourceType:
+    return "CODE_DEPLOY"
 ```
 
 - [CloudWatchEventSourceType](./literals.md#cloudwatcheventsourcetype)
@@ -159,18 +93,22 @@ from mypy_boto3_application_insights.literals import CloudWatchEventSourceType, 
 - [ApplicationInsightsServiceName](./literals.md#applicationinsightsservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_application_insights.type_defs import ApplicationComponentTypeDef
 
-```python
-from mypy_boto3_application_insights.type_defs import ApplicationComponentTypeDef, ...
+def get_value() -> ApplicationComponentTypeDef:
+    return {
+        "ComponentName": ...,
+    }
 ```
 
 - [ApplicationComponentTypeDef](./type_defs.md#applicationcomponenttypedef)
@@ -228,3 +166,4 @@ from mypy_boto3_application_insights.type_defs import ApplicationComponentTypeDe
 - [UpdateComponentRequestRequestTypeDef](./type_defs.md#updatecomponentrequestrequesttypedef)
 - [UpdateLogPatternRequestRequestTypeDef](./type_defs.md#updatelogpatternrequestrequesttypedef)
 - [UpdateLogPatternResponseTypeDef](./type_defs.md#updatelogpatternresponsetypedef)
+

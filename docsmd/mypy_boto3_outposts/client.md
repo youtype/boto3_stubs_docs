@@ -1,54 +1,18 @@
-<a id="outpostsclient-for-boto3-outposts-module"></a>
-
-# OutpostsClient for boto3 Outposts module
+# OutpostsClient
 
 > [Index](../README.md) > [Outposts](./README.md) > OutpostsClient
 
-Auto-generated documentation for
-[Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
-type annotations stubs module
-[mypy-boto3-outposts](https://pypi.org/project/mypy-boto3-outposts/).
+!!! note ""
 
-- [OutpostsClient for boto3 Outposts module](#outpostsclient-for-boto3-outposts-module)
-  - [OutpostsClient](#outpostsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_order](#cancel_order)
-    - [create_order](#create_order)
-    - [create_outpost](#create_outpost)
-    - [create_site](#create_site)
-    - [delete_outpost](#delete_outpost)
-    - [delete_site](#delete_site)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_catalog_item](#get_catalog_item)
-    - [get_order](#get_order)
-    - [get_outpost](#get_outpost)
-    - [get_outpost_instance_types](#get_outpost_instance_types)
-    - [get_site](#get_site)
-    - [get_site_address](#get_site_address)
-    - [list_catalog_items](#list_catalog_items)
-    - [list_orders](#list_orders)
-    - [list_outposts](#list_outposts)
-    - [list_sites](#list_sites)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_outpost](#update_outpost)
-    - [update_site](#update_site)
-    - [update_site_address](#update_site_address)
-    - [update_site_rack_physical_properties](#update_site_rack_physical_properties)
-
-<a id="outpostsclient"></a>
+    Auto-generated documentation for [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
+    type annotations stubs module [mypy-boto3-outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 ## OutpostsClient
 
-Type annotations for `boto3.client("outposts")`
+Type annotations and code completion for `#!python boto3.client("outposts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_outposts.client import OutpostsClient
 
@@ -56,616 +20,818 @@ def get_outposts_client() -> OutpostsClient:
     return Session().client("outposts")
 ```
 
-Boto3 documentation:
-[Outposts.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("outposts").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("outposts")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.NotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_outposts.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-OutpostsClient exceptions.
-
-Type annotations for `boto3.client("outposts").exceptions` method.
-
-Boto3 documentation:
-[Outposts.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("outposts").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("outposts").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.can_paginate)
 
-Boto3 documentation:
-[Outposts.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_order"></a>
-
-### cancel_order
+### cancel\_order
 
 Cancels an order for an Outpost.
 
-Type annotations for `boto3.client("outposts").cancel_order` method.
+Type annotations and code completion for `#!python boto3.client("outposts").cancel_order` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.cancel_order)
 
-Boto3 documentation:
-[Outposts.Client.cancel_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.cancel_order)
+```python title="Method definition"
+def cancel_order(
+    self,
+    *,
+    OrderId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelOrderInputRequestTypeDef](./type_defs.md#cancelorderinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelOrderInputRequestTypeDef = {  # (1)
+    "OrderId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_order(**kwargs)
+```
 
-<a id="create\_order"></a>
+1. See [:material-code-braces: CancelOrderInputRequestTypeDef](./type_defs.md#cancelorderinputrequesttypedef) 
 
-### create_order
+### create\_order
 
 Creates an order for an Outpost.
 
-Type annotations for `boto3.client("outposts").create_order` method.
+Type annotations and code completion for `#!python boto3.client("outposts").create_order` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_order)
 
-Boto3 documentation:
-[Outposts.Client.create_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_order)
+```python title="Method definition"
+def create_order(
+    self,
+    *,
+    OutpostIdentifier: str,
+    LineItems: Sequence[LineItemRequestTypeDef],  # (1)
+    PaymentOption: PaymentOptionType,  # (2)
+    PaymentTerm: PaymentTermType = ...,  # (3)
+) -> CreateOrderOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateOrderInputRequestTypeDef](./type_defs.md#createorderinputrequesttypedef).
+1. See [:material-code-braces: LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef) 
+2. See [:material-code-brackets: PaymentOptionType](./literals.md#paymentoptiontype) 
+3. See [:material-code-brackets: PaymentTermType](./literals.md#paymenttermtype) 
+4. See [:material-code-braces: CreateOrderOutputTypeDef](./type_defs.md#createorderoutputtypedef) 
 
-Keyword-only arguments:
 
-- `OutpostIdentifier`: `str` *(required)*
-- `LineItems`:
-  `Sequence`\[[LineItemRequestTypeDef](./type_defs.md#lineitemrequesttypedef)\]
-  *(required)*
-- `PaymentOption`: [PaymentOptionType](./literals.md#paymentoptiontype)
-  *(required)*
-- `PaymentTerm`: `Literal['THREE_YEARS']` (see
-  [PaymentTermType](./literals.md#paymenttermtype))
+```python title="Usage example with kwargs"
+kwargs: CreateOrderInputRequestTypeDef = {  # (1)
+    "OutpostIdentifier": ...,
+    "LineItems": ...,
+    "PaymentOption": ...,
+}
 
-Returns [CreateOrderOutputTypeDef](./type_defs.md#createorderoutputtypedef).
+parent.create_order(**kwargs)
+```
 
-<a id="create\_outpost"></a>
+1. See [:material-code-braces: CreateOrderInputRequestTypeDef](./type_defs.md#createorderinputrequesttypedef) 
 
-### create_outpost
+### create\_outpost
 
 Creates an Outpost.
 
-Type annotations for `boto3.client("outposts").create_outpost` method.
+Type annotations and code completion for `#!python boto3.client("outposts").create_outpost` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_outpost)
 
-Boto3 documentation:
-[Outposts.Client.create_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_outpost)
+```python title="Method definition"
+def create_outpost(
+    self,
+    *,
+    Name: str,
+    SiteId: str,
+    Description: str = ...,
+    AvailabilityZone: str = ...,
+    AvailabilityZoneId: str = ...,
+    Tags: Mapping[str, str] = ...,
+    SupportedHardwareType: SupportedHardwareTypeType = ...,  # (1)
+) -> CreateOutpostOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateOutpostInputRequestTypeDef](./type_defs.md#createoutpostinputrequesttypedef).
+1. See [:material-code-brackets: SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype) 
+2. See [:material-code-braces: CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `SiteId`: `str` *(required)*
-- `Description`: `str`
-- `AvailabilityZone`: `str`
-- `AvailabilityZoneId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `SupportedHardwareType`:
-  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
+```python title="Usage example with kwargs"
+kwargs: CreateOutpostInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "SiteId": ...,
+}
 
-Returns
-[CreateOutpostOutputTypeDef](./type_defs.md#createoutpostoutputtypedef).
+parent.create_outpost(**kwargs)
+```
 
-<a id="create\_site"></a>
+1. See [:material-code-braces: CreateOutpostInputRequestTypeDef](./type_defs.md#createoutpostinputrequesttypedef) 
 
-### create_site
+### create\_site
 
 Creates a site for an Outpost.
 
-Type annotations for `boto3.client("outposts").create_site` method.
+Type annotations and code completion for `#!python boto3.client("outposts").create_site` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_site)
 
-Boto3 documentation:
-[Outposts.Client.create_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.create_site)
+```python title="Method definition"
+def create_site(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    Notes: str = ...,
+    Tags: Mapping[str, str] = ...,
+    OperatingAddress: AddressTypeDef = ...,  # (1)
+    ShippingAddress: AddressTypeDef = ...,  # (1)
+    RackPhysicalProperties: RackPhysicalPropertiesTypeDef = ...,  # (3)
+) -> CreateSiteOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateSiteInputRequestTypeDef](./type_defs.md#createsiteinputrequesttypedef).
+1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+3. See [:material-code-braces: RackPhysicalPropertiesTypeDef](./type_defs.md#rackphysicalpropertiestypedef) 
+4. See [:material-code-braces: CreateSiteOutputTypeDef](./type_defs.md#createsiteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `Notes`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `OperatingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `ShippingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `RackPhysicalProperties`:
-  [RackPhysicalPropertiesTypeDef](./type_defs.md#rackphysicalpropertiestypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateSiteInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [CreateSiteOutputTypeDef](./type_defs.md#createsiteoutputtypedef).
+parent.create_site(**kwargs)
+```
 
-<a id="delete\_outpost"></a>
+1. See [:material-code-braces: CreateSiteInputRequestTypeDef](./type_defs.md#createsiteinputrequesttypedef) 
 
-### delete_outpost
+### delete\_outpost
 
 Deletes the Outpost.
 
-Type annotations for `boto3.client("outposts").delete_outpost` method.
+Type annotations and code completion for `#!python boto3.client("outposts").delete_outpost` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_outpost)
 
-Boto3 documentation:
-[Outposts.Client.delete_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_outpost)
+```python title="Method definition"
+def delete_outpost(
+    self,
+    *,
+    OutpostId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteOutpostInputRequestTypeDef](./type_defs.md#deleteoutpostinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `OutpostId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteOutpostInputRequestTypeDef = {  # (1)
+    "OutpostId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_outpost(**kwargs)
+```
 
-<a id="delete\_site"></a>
+1. See [:material-code-braces: DeleteOutpostInputRequestTypeDef](./type_defs.md#deleteoutpostinputrequesttypedef) 
 
-### delete_site
+### delete\_site
 
 Deletes the site.
 
-Type annotations for `boto3.client("outposts").delete_site` method.
+Type annotations and code completion for `#!python boto3.client("outposts").delete_site` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_site)
 
-Boto3 documentation:
-[Outposts.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.delete_site)
+```python title="Method definition"
+def delete_site(
+    self,
+    *,
+    SiteId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSiteInputRequestTypeDef](./type_defs.md#deletesiteinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `SiteId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSiteInputRequestTypeDef = {  # (1)
+    "SiteId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_site(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteSiteInputRequestTypeDef](./type_defs.md#deletesiteinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("outposts").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("outposts").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Outposts.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_catalog\_item"></a>
-
-### get_catalog_item
+### get\_catalog\_item
 
 Gets information about a catalog item.
 
-Type annotations for `boto3.client("outposts").get_catalog_item` method.
+Type annotations and code completion for `#!python boto3.client("outposts").get_catalog_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_catalog_item)
 
-Boto3 documentation:
-[Outposts.Client.get_catalog_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_catalog_item)
+```python title="Method definition"
+def get_catalog_item(
+    self,
+    *,
+    CatalogItemId: str,
+) -> GetCatalogItemOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCatalogItemInputRequestTypeDef](./type_defs.md#getcatalogiteminputrequesttypedef).
+1. See [:material-code-braces: GetCatalogItemOutputTypeDef](./type_defs.md#getcatalogitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CatalogItemId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCatalogItemInputRequestTypeDef = {  # (1)
+    "CatalogItemId": ...,
+}
 
-Returns
-[GetCatalogItemOutputTypeDef](./type_defs.md#getcatalogitemoutputtypedef).
+parent.get_catalog_item(**kwargs)
+```
 
-<a id="get\_order"></a>
+1. See [:material-code-braces: GetCatalogItemInputRequestTypeDef](./type_defs.md#getcatalogiteminputrequesttypedef) 
 
-### get_order
+### get\_order
 
 Gets an order.
 
-Type annotations for `boto3.client("outposts").get_order` method.
+Type annotations and code completion for `#!python boto3.client("outposts").get_order` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_order)
 
-Boto3 documentation:
-[Outposts.Client.get_order](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_order)
+```python title="Method definition"
+def get_order(
+    self,
+    *,
+    OrderId: str,
+) -> GetOrderOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOrderInputRequestTypeDef](./type_defs.md#getorderinputrequesttypedef).
+1. See [:material-code-braces: GetOrderOutputTypeDef](./type_defs.md#getorderoutputtypedef) 
 
-Keyword-only arguments:
 
-- `OrderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetOrderInputRequestTypeDef = {  # (1)
+    "OrderId": ...,
+}
 
-Returns [GetOrderOutputTypeDef](./type_defs.md#getorderoutputtypedef).
+parent.get_order(**kwargs)
+```
 
-<a id="get\_outpost"></a>
+1. See [:material-code-braces: GetOrderInputRequestTypeDef](./type_defs.md#getorderinputrequesttypedef) 
 
-### get_outpost
+### get\_outpost
 
 Gets information about the specified Outpost.
 
-Type annotations for `boto3.client("outposts").get_outpost` method.
+Type annotations and code completion for `#!python boto3.client("outposts").get_outpost` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost)
 
-Boto3 documentation:
-[Outposts.Client.get_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost)
+```python title="Method definition"
+def get_outpost(
+    self,
+    *,
+    OutpostId: str,
+) -> GetOutpostOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOutpostInputRequestTypeDef](./type_defs.md#getoutpostinputrequesttypedef).
+1. See [:material-code-braces: GetOutpostOutputTypeDef](./type_defs.md#getoutpostoutputtypedef) 
 
-Keyword-only arguments:
 
-- `OutpostId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetOutpostInputRequestTypeDef = {  # (1)
+    "OutpostId": ...,
+}
 
-Returns [GetOutpostOutputTypeDef](./type_defs.md#getoutpostoutputtypedef).
+parent.get_outpost(**kwargs)
+```
 
-<a id="get\_outpost\_instance\_types"></a>
+1. See [:material-code-braces: GetOutpostInputRequestTypeDef](./type_defs.md#getoutpostinputrequesttypedef) 
 
-### get_outpost_instance_types
+### get\_outpost\_instance\_types
 
 Lists the instance types for the specified Outpost.
 
-Type annotations for `boto3.client("outposts").get_outpost_instance_types`
-method.
+Type annotations and code completion for `#!python boto3.client("outposts").get_outpost_instance_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost_instance_types)
 
-Boto3 documentation:
-[Outposts.Client.get_outpost_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_outpost_instance_types)
+```python title="Method definition"
+def get_outpost_instance_types(
+    self,
+    *,
+    OutpostId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetOutpostInstanceTypesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOutpostInstanceTypesInputRequestTypeDef](./type_defs.md#getoutpostinstancetypesinputrequesttypedef).
+1. See [:material-code-braces: GetOutpostInstanceTypesOutputTypeDef](./type_defs.md#getoutpostinstancetypesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `OutpostId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetOutpostInstanceTypesInputRequestTypeDef = {  # (1)
+    "OutpostId": ...,
+}
 
-Returns
-[GetOutpostInstanceTypesOutputTypeDef](./type_defs.md#getoutpostinstancetypesoutputtypedef).
+parent.get_outpost_instance_types(**kwargs)
+```
 
-<a id="get\_site"></a>
+1. See [:material-code-braces: GetOutpostInstanceTypesInputRequestTypeDef](./type_defs.md#getoutpostinstancetypesinputrequesttypedef) 
 
-### get_site
+### get\_site
 
 Gets information about the specified Outpost site.
 
-Type annotations for `boto3.client("outposts").get_site` method.
+Type annotations and code completion for `#!python boto3.client("outposts").get_site` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_site)
 
-Boto3 documentation:
-[Outposts.Client.get_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_site)
+```python title="Method definition"
+def get_site(
+    self,
+    *,
+    SiteId: str,
+) -> GetSiteOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSiteInputRequestTypeDef](./type_defs.md#getsiteinputrequesttypedef).
+1. See [:material-code-braces: GetSiteOutputTypeDef](./type_defs.md#getsiteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `SiteId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSiteInputRequestTypeDef = {  # (1)
+    "SiteId": ...,
+}
 
-Returns [GetSiteOutputTypeDef](./type_defs.md#getsiteoutputtypedef).
+parent.get_site(**kwargs)
+```
 
-<a id="get\_site\_address"></a>
+1. See [:material-code-braces: GetSiteInputRequestTypeDef](./type_defs.md#getsiteinputrequesttypedef) 
 
-### get_site_address
+### get\_site\_address
 
 Gets the site address.
 
-Type annotations for `boto3.client("outposts").get_site_address` method.
+Type annotations and code completion for `#!python boto3.client("outposts").get_site_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_site_address)
 
-Boto3 documentation:
-[Outposts.Client.get_site_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.get_site_address)
+```python title="Method definition"
+def get_site_address(
+    self,
+    *,
+    SiteId: str,
+    AddressType: AddressTypeType,  # (1)
+) -> GetSiteAddressOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetSiteAddressInputRequestTypeDef](./type_defs.md#getsiteaddressinputrequesttypedef).
+1. See [:material-code-brackets: AddressTypeType](./literals.md#addresstypetype) 
+2. See [:material-code-braces: GetSiteAddressOutputTypeDef](./type_defs.md#getsiteaddressoutputtypedef) 
 
-Keyword-only arguments:
 
-- `SiteId`: `str` *(required)*
-- `AddressType`: [AddressTypeType](./literals.md#addresstypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSiteAddressInputRequestTypeDef = {  # (1)
+    "SiteId": ...,
+    "AddressType": ...,
+}
 
-Returns
-[GetSiteAddressOutputTypeDef](./type_defs.md#getsiteaddressoutputtypedef).
+parent.get_site_address(**kwargs)
+```
 
-<a id="list\_catalog\_items"></a>
+1. See [:material-code-braces: GetSiteAddressInputRequestTypeDef](./type_defs.md#getsiteaddressinputrequesttypedef) 
 
-### list_catalog_items
+### list\_catalog\_items
 
 Use to create a list of every item in the catalog.
 
-Type annotations for `boto3.client("outposts").list_catalog_items` method.
+Type annotations and code completion for `#!python boto3.client("outposts").list_catalog_items` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_catalog_items)
 
-Boto3 documentation:
-[Outposts.Client.list_catalog_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_catalog_items)
+```python title="Method definition"
+def list_catalog_items(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ItemClassFilter: Sequence[CatalogItemClassType] = ...,  # (1)
+    SupportedStorageFilter: Sequence[SupportedStorageEnumType] = ...,  # (2)
+    EC2FamilyFilter: Sequence[str] = ...,
+) -> ListCatalogItemsOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListCatalogItemsInputRequestTypeDef](./type_defs.md#listcatalogitemsinputrequesttypedef).
+1. See [:material-code-brackets: CatalogItemClassType](./literals.md#catalogitemclasstype) 
+2. See [:material-code-brackets: SupportedStorageEnumType](./literals.md#supportedstorageenumtype) 
+3. See [:material-code-braces: ListCatalogItemsOutputTypeDef](./type_defs.md#listcatalogitemsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ItemClassFilter`:
-  `Sequence`\[[CatalogItemClassType](./literals.md#catalogitemclasstype)\]
-- `SupportedStorageFilter`:
-  `Sequence`\[[SupportedStorageEnumType](./literals.md#supportedstorageenumtype)\]
-- `EC2FamilyFilter`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ListCatalogItemsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListCatalogItemsOutputTypeDef](./type_defs.md#listcatalogitemsoutputtypedef).
+parent.list_catalog_items(**kwargs)
+```
 
-<a id="list\_orders"></a>
+1. See [:material-code-braces: ListCatalogItemsInputRequestTypeDef](./type_defs.md#listcatalogitemsinputrequesttypedef) 
 
-### list_orders
+### list\_orders
 
 Create a list of the Outpost orders for your Amazon Web Services account.
 
-Type annotations for `boto3.client("outposts").list_orders` method.
+Type annotations and code completion for `#!python boto3.client("outposts").list_orders` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_orders)
 
-Boto3 documentation:
-[Outposts.Client.list_orders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_orders)
+```python title="Method definition"
+def list_orders(
+    self,
+    *,
+    OutpostIdentifierFilter: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListOrdersOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOrdersInputRequestTypeDef](./type_defs.md#listordersinputrequesttypedef).
+1. See [:material-code-braces: ListOrdersOutputTypeDef](./type_defs.md#listordersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `OutpostIdentifierFilter`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListOrdersInputRequestTypeDef = {  # (1)
+    "OutpostIdentifierFilter": ...,
+}
 
-Returns [ListOrdersOutputTypeDef](./type_defs.md#listordersoutputtypedef).
+parent.list_orders(**kwargs)
+```
 
-<a id="list\_outposts"></a>
+1. See [:material-code-braces: ListOrdersInputRequestTypeDef](./type_defs.md#listordersinputrequesttypedef) 
 
-### list_outposts
+### list\_outposts
 
 Create a list of the Outposts for your Amazon Web Services account.
 
-Type annotations for `boto3.client("outposts").list_outposts` method.
+Type annotations and code completion for `#!python boto3.client("outposts").list_outposts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_outposts)
 
-Boto3 documentation:
-[Outposts.Client.list_outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_outposts)
+```python title="Method definition"
+def list_outposts(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    LifeCycleStatusFilter: Sequence[str] = ...,
+    AvailabilityZoneFilter: Sequence[str] = ...,
+    AvailabilityZoneIdFilter: Sequence[str] = ...,
+) -> ListOutpostsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOutpostsInputRequestTypeDef](./type_defs.md#listoutpostsinputrequesttypedef).
+1. See [:material-code-braces: ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `LifeCycleStatusFilter`: `Sequence`\[`str`\]
-- `AvailabilityZoneFilter`: `Sequence`\[`str`\]
-- `AvailabilityZoneIdFilter`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ListOutpostsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
+parent.list_outposts(**kwargs)
+```
 
-<a id="list\_sites"></a>
+1. See [:material-code-braces: ListOutpostsInputRequestTypeDef](./type_defs.md#listoutpostsinputrequesttypedef) 
 
-### list_sites
+### list\_sites
 
 Create a list of the Outpost sites for your Amazon Web Services account.
 
-Type annotations for `boto3.client("outposts").list_sites` method.
+Type annotations and code completion for `#!python boto3.client("outposts").list_sites` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_sites)
 
-Boto3 documentation:
-[Outposts.Client.list_sites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_sites)
+```python title="Method definition"
+def list_sites(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    OperatingAddressCountryCodeFilter: Sequence[str] = ...,
+    OperatingAddressStateOrRegionFilter: Sequence[str] = ...,
+    OperatingAddressCityFilter: Sequence[str] = ...,
+) -> ListSitesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSitesInputRequestTypeDef](./type_defs.md#listsitesinputrequesttypedef).
+1. See [:material-code-braces: ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `OperatingAddressCountryCodeFilter`: `Sequence`\[`str`\]
-- `OperatingAddressStateOrRegionFilter`: `Sequence`\[`str`\]
-- `OperatingAddressCityFilter`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ListSitesInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef).
+parent.list_sites(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSitesInputRequestTypeDef](./type_defs.md#listsitesinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for the specified resource.
 
-Type annotations for `boto3.client("outposts").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("outposts").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Outposts.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to the specified resource.
 
-Type annotations for `boto3.client("outposts").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("outposts").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.tag_resource)
 
-Boto3 documentation:
-[Outposts.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from the specified resource.
 
-Type annotations for `boto3.client("outposts").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("outposts").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.untag_resource)
 
-Boto3 documentation:
-[Outposts.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_outpost"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_outpost
+### update\_outpost
 
 Updates an Outpost.
 
-Type annotations for `boto3.client("outposts").update_outpost` method.
+Type annotations and code completion for `#!python boto3.client("outposts").update_outpost` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_outpost)
 
-Boto3 documentation:
-[Outposts.Client.update_outpost](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_outpost)
+```python title="Method definition"
+def update_outpost(
+    self,
+    *,
+    OutpostId: str,
+    Name: str = ...,
+    Description: str = ...,
+    SupportedHardwareType: SupportedHardwareTypeType = ...,  # (1)
+) -> UpdateOutpostOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateOutpostInputRequestTypeDef](./type_defs.md#updateoutpostinputrequesttypedef).
+1. See [:material-code-brackets: SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype) 
+2. See [:material-code-braces: UpdateOutpostOutputTypeDef](./type_defs.md#updateoutpostoutputtypedef) 
 
-Keyword-only arguments:
 
-- `OutpostId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `SupportedHardwareType`:
-  [SupportedHardwareTypeType](./literals.md#supportedhardwaretypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateOutpostInputRequestTypeDef = {  # (1)
+    "OutpostId": ...,
+}
 
-Returns
-[UpdateOutpostOutputTypeDef](./type_defs.md#updateoutpostoutputtypedef).
+parent.update_outpost(**kwargs)
+```
 
-<a id="update\_site"></a>
+1. See [:material-code-braces: UpdateOutpostInputRequestTypeDef](./type_defs.md#updateoutpostinputrequesttypedef) 
 
-### update_site
+### update\_site
 
 Updates the site.
 
-Type annotations for `boto3.client("outposts").update_site` method.
+Type annotations and code completion for `#!python boto3.client("outposts").update_site` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site)
 
-Boto3 documentation:
-[Outposts.Client.update_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site)
+```python title="Method definition"
+def update_site(
+    self,
+    *,
+    SiteId: str,
+    Name: str = ...,
+    Description: str = ...,
+    Notes: str = ...,
+) -> UpdateSiteOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSiteInputRequestTypeDef](./type_defs.md#updatesiteinputrequesttypedef).
+1. See [:material-code-braces: UpdateSiteOutputTypeDef](./type_defs.md#updatesiteoutputtypedef) 
 
-Keyword-only arguments:
 
-- `SiteId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `Notes`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSiteInputRequestTypeDef = {  # (1)
+    "SiteId": ...,
+}
 
-Returns [UpdateSiteOutputTypeDef](./type_defs.md#updatesiteoutputtypedef).
+parent.update_site(**kwargs)
+```
 
-<a id="update\_site\_address"></a>
+1. See [:material-code-braces: UpdateSiteInputRequestTypeDef](./type_defs.md#updatesiteinputrequesttypedef) 
 
-### update_site_address
+### update\_site\_address
 
 Updates the site address.
 
-Type annotations for `boto3.client("outposts").update_site_address` method.
+Type annotations and code completion for `#!python boto3.client("outposts").update_site_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site_address)
 
-Boto3 documentation:
-[Outposts.Client.update_site_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site_address)
+```python title="Method definition"
+def update_site_address(
+    self,
+    *,
+    SiteId: str,
+    AddressType: AddressTypeType,  # (1)
+    Address: AddressTypeDef,  # (2)
+) -> UpdateSiteAddressOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSiteAddressInputRequestTypeDef](./type_defs.md#updatesiteaddressinputrequesttypedef).
+1. See [:material-code-brackets: AddressTypeType](./literals.md#addresstypetype) 
+2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+3. See [:material-code-braces: UpdateSiteAddressOutputTypeDef](./type_defs.md#updatesiteaddressoutputtypedef) 
 
-Keyword-only arguments:
 
-- `SiteId`: `str` *(required)*
-- `AddressType`: [AddressTypeType](./literals.md#addresstypetype) *(required)*
-- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSiteAddressInputRequestTypeDef = {  # (1)
+    "SiteId": ...,
+    "AddressType": ...,
+    "Address": ...,
+}
 
-Returns
-[UpdateSiteAddressOutputTypeDef](./type_defs.md#updatesiteaddressoutputtypedef).
+parent.update_site_address(**kwargs)
+```
 
-<a id="update\_site\_rack\_physical\_properties"></a>
+1. See [:material-code-braces: UpdateSiteAddressInputRequestTypeDef](./type_defs.md#updatesiteaddressinputrequesttypedef) 
 
-### update_site_rack_physical_properties
+### update\_site\_rack\_physical\_properties
 
 Update the physical and logistical details for a rack at a site.
 
-Type annotations for
-`boto3.client("outposts").update_site_rack_physical_properties` method.
+Type annotations and code completion for `#!python boto3.client("outposts").update_site_rack_physical_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site_rack_physical_properties)
 
-Boto3 documentation:
-[Outposts.Client.update_site_rack_physical_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts.Client.update_site_rack_physical_properties)
+```python title="Method definition"
+def update_site_rack_physical_properties(
+    self,
+    *,
+    SiteId: str,
+    PowerDrawKva: PowerDrawKvaType = ...,  # (1)
+    PowerPhase: PowerPhaseType = ...,  # (2)
+    PowerConnector: PowerConnectorType = ...,  # (3)
+    PowerFeedDrop: PowerFeedDropType = ...,  # (4)
+    UplinkGbps: UplinkGbpsType = ...,  # (5)
+    UplinkCount: UplinkCountType = ...,  # (6)
+    FiberOpticCableType: FiberOpticCableTypeType = ...,  # (7)
+    OpticalStandard: OpticalStandardType = ...,  # (8)
+    MaximumSupportedWeightLbs: MaximumSupportedWeightLbsType = ...,  # (9)
+) -> UpdateSiteRackPhysicalPropertiesOutputTypeDef:  # (10)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSiteRackPhysicalPropertiesInputRequestTypeDef](./type_defs.md#updatesiterackphysicalpropertiesinputrequesttypedef).
+1. See [:material-code-brackets: PowerDrawKvaType](./literals.md#powerdrawkvatype) 
+2. See [:material-code-brackets: PowerPhaseType](./literals.md#powerphasetype) 
+3. See [:material-code-brackets: PowerConnectorType](./literals.md#powerconnectortype) 
+4. See [:material-code-brackets: PowerFeedDropType](./literals.md#powerfeeddroptype) 
+5. See [:material-code-brackets: UplinkGbpsType](./literals.md#uplinkgbpstype) 
+6. See [:material-code-brackets: UplinkCountType](./literals.md#uplinkcounttype) 
+7. See [:material-code-brackets: FiberOpticCableTypeType](./literals.md#fiberopticcabletypetype) 
+8. See [:material-code-brackets: OpticalStandardType](./literals.md#opticalstandardtype) 
+9. See [:material-code-brackets: MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype) 
+10. See [:material-code-braces: UpdateSiteRackPhysicalPropertiesOutputTypeDef](./type_defs.md#updatesiterackphysicalpropertiesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `SiteId`: `str` *(required)*
-- `PowerDrawKva`: [PowerDrawKvaType](./literals.md#powerdrawkvatype)
-- `PowerPhase`: [PowerPhaseType](./literals.md#powerphasetype)
-- `PowerConnector`: [PowerConnectorType](./literals.md#powerconnectortype)
-- `PowerFeedDrop`: [PowerFeedDropType](./literals.md#powerfeeddroptype)
-- `UplinkGbps`: [UplinkGbpsType](./literals.md#uplinkgbpstype)
-- `UplinkCount`: [UplinkCountType](./literals.md#uplinkcounttype)
-- `FiberOpticCableType`:
-  [FiberOpticCableTypeType](./literals.md#fiberopticcabletypetype)
-- `OpticalStandard`: [OpticalStandardType](./literals.md#opticalstandardtype)
-- `MaximumSupportedWeightLbs`:
-  [MaximumSupportedWeightLbsType](./literals.md#maximumsupportedweightlbstype)
+```python title="Usage example with kwargs"
+kwargs: UpdateSiteRackPhysicalPropertiesInputRequestTypeDef = {  # (1)
+    "SiteId": ...,
+}
 
-Returns
-[UpdateSiteRackPhysicalPropertiesOutputTypeDef](./type_defs.md#updatesiterackphysicalpropertiesoutputtypedef).
+parent.update_site_rack_physical_properties(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateSiteRackPhysicalPropertiesInputRequestTypeDef](./type_defs.md#updatesiterackphysicalpropertiesinputrequesttypedef) 
+
+
+
+

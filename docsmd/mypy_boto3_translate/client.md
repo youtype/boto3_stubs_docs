@@ -1,46 +1,18 @@
-<a id="translateclient-for-boto3-translate-module"></a>
-
-# TranslateClient for boto3 Translate module
+# TranslateClient
 
 > [Index](../README.md) > [Translate](./README.md) > TranslateClient
 
-Auto-generated documentation for
-[Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
-type annotations stubs module
-[mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
+!!! note ""
 
-- [TranslateClient for boto3 Translate module](#translateclient-for-boto3-translate-module)
-  - [TranslateClient](#translateclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_parallel_data](#create_parallel_data)
-    - [delete_parallel_data](#delete_parallel_data)
-    - [delete_terminology](#delete_terminology)
-    - [describe_text_translation_job](#describe_text_translation_job)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_parallel_data](#get_parallel_data)
-    - [get_terminology](#get_terminology)
-    - [import_terminology](#import_terminology)
-    - [list_parallel_data](#list_parallel_data)
-    - [list_terminologies](#list_terminologies)
-    - [list_text_translation_jobs](#list_text_translation_jobs)
-    - [start_text_translation_job](#start_text_translation_job)
-    - [stop_text_translation_job](#stop_text_translation_job)
-    - [translate_text](#translate_text)
-    - [update_parallel_data](#update_parallel_data)
-    - [get_paginator](#get_paginator)
-
-<a id="translateclient"></a>
+    Auto-generated documentation for [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
+    type annotations stubs module [mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
 
 ## TranslateClient
 
-Type annotations for `boto3.client("translate")`
+Type annotations and code completion for `#!python boto3.client("translate")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_translate.client import TranslateClient
 
@@ -48,442 +20,553 @@ def get_translate_client() -> TranslateClient:
     return Session().client("translate")
 ```
 
-Boto3 documentation:
-[Translate.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("translate").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("translate")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.ConflictException,
+    client.DetectedLanguageLowConfidenceException,
+    client.InternalServerException,
+    client.InvalidFilterException,
+    client.InvalidParameterValueException,
+    client.InvalidRequestException,
+    client.LimitExceededException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.TextSizeLimitExceededException,
+    client.TooManyRequestsException,
+    client.UnsupportedLanguagePairException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_translate.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.ConflictException`
-- `Exceptions.DetectedLanguageLowConfidenceException`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidFilterException`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TextSizeLimitExceededException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnsupportedLanguagePairException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-TranslateClient exceptions.
-
-Type annotations for `boto3.client("translate").exceptions` method.
-
-Boto3 documentation:
-[Translate.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("translate").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("translate").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.can_paginate)
 
-Boto3 documentation:
-[Translate.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_parallel\_data"></a>
-
-### create_parallel_data
+### create\_parallel\_data
 
 Creates a parallel data resource in Amazon Translate by importing an input file
 from Amazon S3.
 
-Type annotations for `boto3.client("translate").create_parallel_data` method.
+Type annotations and code completion for `#!python boto3.client("translate").create_parallel_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.create_parallel_data)
 
-Boto3 documentation:
-[Translate.Client.create_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.create_parallel_data)
+```python title="Method definition"
+def create_parallel_data(
+    self,
+    *,
+    Name: str,
+    ParallelDataConfig: ParallelDataConfigTypeDef,  # (1)
+    ClientToken: str,
+    Description: str = ...,
+    EncryptionKey: EncryptionKeyTypeDef = ...,  # (2)
+) -> CreateParallelDataResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateParallelDataRequestRequestTypeDef](./type_defs.md#createparalleldatarequestrequesttypedef).
+1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
+2. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
+3. See [:material-code-braces: CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ParallelDataConfig`:
-  [ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef)
-  *(required)*
-- `ClientToken`: `str` *(required)*
-- `Description`: `str`
-- `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateParallelDataRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ParallelDataConfig": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef).
+parent.create_parallel_data(**kwargs)
+```
 
-<a id="delete\_parallel\_data"></a>
+1. See [:material-code-braces: CreateParallelDataRequestRequestTypeDef](./type_defs.md#createparalleldatarequestrequesttypedef) 
 
-### delete_parallel_data
+### delete\_parallel\_data
 
 Deletes a parallel data resource in Amazon Translate.
 
-Type annotations for `boto3.client("translate").delete_parallel_data` method.
+Type annotations and code completion for `#!python boto3.client("translate").delete_parallel_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_parallel_data)
 
-Boto3 documentation:
-[Translate.Client.delete_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_parallel_data)
+```python title="Method definition"
+def delete_parallel_data(
+    self,
+    *,
+    Name: str,
+) -> DeleteParallelDataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteParallelDataRequestRequestTypeDef](./type_defs.md#deleteparalleldatarequestrequesttypedef).
+1. See [:material-code-braces: DeleteParallelDataResponseTypeDef](./type_defs.md#deleteparalleldataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteParallelDataRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DeleteParallelDataResponseTypeDef](./type_defs.md#deleteparalleldataresponsetypedef).
+parent.delete_parallel_data(**kwargs)
+```
 
-<a id="delete\_terminology"></a>
+1. See [:material-code-braces: DeleteParallelDataRequestRequestTypeDef](./type_defs.md#deleteparalleldatarequestrequesttypedef) 
 
-### delete_terminology
+### delete\_terminology
 
 A synchronous action that deletes a custom terminology.
 
-Type annotations for `boto3.client("translate").delete_terminology` method.
+Type annotations and code completion for `#!python boto3.client("translate").delete_terminology` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_terminology)
 
-Boto3 documentation:
-[Translate.Client.delete_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.delete_terminology)
+```python title="Method definition"
+def delete_terminology(
+    self,
+    *,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTerminologyRequestRequestTypeDef](./type_defs.md#deleteterminologyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTerminologyRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="describe\_text\_translation\_job"></a>
+parent.delete_terminology(**kwargs)
+```
 
-### describe_text_translation_job
+1. See [:material-code-braces: DeleteTerminologyRequestRequestTypeDef](./type_defs.md#deleteterminologyrequestrequesttypedef) 
+
+### describe\_text\_translation\_job
 
 Gets the properties associated with an asynchronous batch translation job
 including name, ID, status, source and target languages, input/output S3
 buckets, and so on.
 
-Type annotations for `boto3.client("translate").describe_text_translation_job`
-method.
+Type annotations and code completion for `#!python boto3.client("translate").describe_text_translation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.describe_text_translation_job)
 
-Boto3 documentation:
-[Translate.Client.describe_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.describe_text_translation_job)
+```python title="Method definition"
+def describe_text_translation_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribeTextTranslationJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTextTranslationJobRequestRequestTypeDef](./type_defs.md#describetexttranslationjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTextTranslationJobResponseTypeDef](./type_defs.md#describetexttranslationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTextTranslationJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribeTextTranslationJobResponseTypeDef](./type_defs.md#describetexttranslationjobresponsetypedef).
+parent.describe_text_translation_job(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeTextTranslationJobRequestRequestTypeDef](./type_defs.md#describetexttranslationjobrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("translate").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("translate").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Translate.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_parallel\_data"></a>
-
-### get_parallel_data
+### get\_parallel\_data
 
 Provides information about a parallel data resource.
 
-Type annotations for `boto3.client("translate").get_parallel_data` method.
+Type annotations and code completion for `#!python boto3.client("translate").get_parallel_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_parallel_data)
 
-Boto3 documentation:
-[Translate.Client.get_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_parallel_data)
+```python title="Method definition"
+def get_parallel_data(
+    self,
+    *,
+    Name: str,
+) -> GetParallelDataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetParallelDataRequestRequestTypeDef](./type_defs.md#getparalleldatarequestrequesttypedef).
+1. See [:material-code-braces: GetParallelDataResponseTypeDef](./type_defs.md#getparalleldataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetParallelDataRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetParallelDataResponseTypeDef](./type_defs.md#getparalleldataresponsetypedef).
+parent.get_parallel_data(**kwargs)
+```
 
-<a id="get\_terminology"></a>
+1. See [:material-code-braces: GetParallelDataRequestRequestTypeDef](./type_defs.md#getparalleldatarequestrequesttypedef) 
 
-### get_terminology
+### get\_terminology
 
 Retrieves a custom terminology.
 
-Type annotations for `boto3.client("translate").get_terminology` method.
+Type annotations and code completion for `#!python boto3.client("translate").get_terminology` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_terminology)
 
-Boto3 documentation:
-[Translate.Client.get_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.get_terminology)
+```python title="Method definition"
+def get_terminology(
+    self,
+    *,
+    Name: str,
+    TerminologyDataFormat: TerminologyDataFormatType = ...,  # (1)
+) -> GetTerminologyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetTerminologyRequestRequestTypeDef](./type_defs.md#getterminologyrequestrequesttypedef).
+1. See [:material-code-brackets: TerminologyDataFormatType](./literals.md#terminologydataformattype) 
+2. See [:material-code-braces: GetTerminologyResponseTypeDef](./type_defs.md#getterminologyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `TerminologyDataFormat`:
-  [TerminologyDataFormatType](./literals.md#terminologydataformattype)
+```python title="Usage example with kwargs"
+kwargs: GetTerminologyRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetTerminologyResponseTypeDef](./type_defs.md#getterminologyresponsetypedef).
+parent.get_terminology(**kwargs)
+```
 
-<a id="import\_terminology"></a>
+1. See [:material-code-braces: GetTerminologyRequestRequestTypeDef](./type_defs.md#getterminologyrequestrequesttypedef) 
 
-### import_terminology
+### import\_terminology
 
-Creates or updates a custom terminology, depending on whether or not one
-already exists for the given terminology name.
+Creates or updates a custom terminology, depending on whether or not one already
+exists for the given terminology name.
 
-Type annotations for `boto3.client("translate").import_terminology` method.
+Type annotations and code completion for `#!python boto3.client("translate").import_terminology` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.import_terminology)
 
-Boto3 documentation:
-[Translate.Client.import_terminology](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.import_terminology)
+```python title="Method definition"
+def import_terminology(
+    self,
+    *,
+    Name: str,
+    MergeStrategy: MergeStrategyType,  # (1)
+    TerminologyData: TerminologyDataTypeDef,  # (2)
+    Description: str = ...,
+    EncryptionKey: EncryptionKeyTypeDef = ...,  # (3)
+) -> ImportTerminologyResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ImportTerminologyRequestRequestTypeDef](./type_defs.md#importterminologyrequestrequesttypedef).
+1. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
+2. See [:material-code-braces: TerminologyDataTypeDef](./type_defs.md#terminologydatatypedef) 
+3. See [:material-code-braces: EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef) 
+4. See [:material-code-braces: ImportTerminologyResponseTypeDef](./type_defs.md#importterminologyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `MergeStrategy`: `Literal['OVERWRITE']` (see
-  [MergeStrategyType](./literals.md#mergestrategytype)) *(required)*
-- `TerminologyData`:
-  [TerminologyDataTypeDef](./type_defs.md#terminologydatatypedef) *(required)*
-- `Description`: `str`
-- `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
+```python title="Usage example with kwargs"
+kwargs: ImportTerminologyRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "MergeStrategy": ...,
+    "TerminologyData": ...,
+}
 
-Returns
-[ImportTerminologyResponseTypeDef](./type_defs.md#importterminologyresponsetypedef).
+parent.import_terminology(**kwargs)
+```
 
-<a id="list\_parallel\_data"></a>
+1. See [:material-code-braces: ImportTerminologyRequestRequestTypeDef](./type_defs.md#importterminologyrequestrequesttypedef) 
 
-### list_parallel_data
+### list\_parallel\_data
 
 Provides a list of your parallel data resources in Amazon Translate.
 
-Type annotations for `boto3.client("translate").list_parallel_data` method.
+Type annotations and code completion for `#!python boto3.client("translate").list_parallel_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_parallel_data)
 
-Boto3 documentation:
-[Translate.Client.list_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_parallel_data)
+```python title="Method definition"
+def list_parallel_data(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListParallelDataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListParallelDataRequestRequestTypeDef](./type_defs.md#listparalleldatarequestrequesttypedef).
+1. See [:material-code-braces: ListParallelDataResponseTypeDef](./type_defs.md#listparalleldataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListParallelDataRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListParallelDataResponseTypeDef](./type_defs.md#listparalleldataresponsetypedef).
+parent.list_parallel_data(**kwargs)
+```
 
-<a id="list\_terminologies"></a>
+1. See [:material-code-braces: ListParallelDataRequestRequestTypeDef](./type_defs.md#listparalleldatarequestrequesttypedef) 
 
-### list_terminologies
+### list\_terminologies
 
 Provides a list of custom terminologies associated with your account.
 
-Type annotations for `boto3.client("translate").list_terminologies` method.
+Type annotations and code completion for `#!python boto3.client("translate").list_terminologies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_terminologies)
 
-Boto3 documentation:
-[Translate.Client.list_terminologies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_terminologies)
+```python title="Method definition"
+def list_terminologies(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTerminologiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTerminologiesRequestRequestTypeDef](./type_defs.md#listterminologiesrequestrequesttypedef).
+1. See [:material-code-braces: ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTerminologiesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef).
+parent.list_terminologies(**kwargs)
+```
 
-<a id="list\_text\_translation\_jobs"></a>
+1. See [:material-code-braces: ListTerminologiesRequestRequestTypeDef](./type_defs.md#listterminologiesrequestrequesttypedef) 
 
-### list_text_translation_jobs
+### list\_text\_translation\_jobs
 
 Gets a list of the batch translation jobs that you have submitted.
 
-Type annotations for `boto3.client("translate").list_text_translation_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("translate").list_text_translation_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_text_translation_jobs)
 
-Boto3 documentation:
-[Translate.Client.list_text_translation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.list_text_translation_jobs)
+```python title="Method definition"
+def list_text_translation_jobs(
+    self,
+    *,
+    Filter: TextTranslationJobFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTextTranslationJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTextTranslationJobsRequestRequestTypeDef](./type_defs.md#listtexttranslationjobsrequestrequesttypedef).
+1. See [:material-code-braces: TextTranslationJobFilterTypeDef](./type_defs.md#texttranslationjobfiltertypedef) 
+2. See [:material-code-braces: ListTextTranslationJobsResponseTypeDef](./type_defs.md#listtexttranslationjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`:
-  [TextTranslationJobFilterTypeDef](./type_defs.md#texttranslationjobfiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTextTranslationJobsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListTextTranslationJobsResponseTypeDef](./type_defs.md#listtexttranslationjobsresponsetypedef).
+parent.list_text_translation_jobs(**kwargs)
+```
 
-<a id="start\_text\_translation\_job"></a>
+1. See [:material-code-braces: ListTextTranslationJobsRequestRequestTypeDef](./type_defs.md#listtexttranslationjobsrequestrequesttypedef) 
 
-### start_text_translation_job
+### start\_text\_translation\_job
 
 Starts an asynchronous batch translation job.
 
-Type annotations for `boto3.client("translate").start_text_translation_job`
-method.
+Type annotations and code completion for `#!python boto3.client("translate").start_text_translation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.start_text_translation_job)
 
-Boto3 documentation:
-[Translate.Client.start_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.start_text_translation_job)
+```python title="Method definition"
+def start_text_translation_job(
+    self,
+    *,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    DataAccessRoleArn: str,
+    SourceLanguageCode: str,
+    TargetLanguageCodes: Sequence[str],
+    ClientToken: str,
+    JobName: str = ...,
+    TerminologyNames: Sequence[str] = ...,
+    ParallelDataNames: Sequence[str] = ...,
+    Settings: TranslationSettingsTypeDef = ...,  # (3)
+) -> StartTextTranslationJobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartTextTranslationJobRequestRequestTypeDef](./type_defs.md#starttexttranslationjobrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-braces: TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef) 
+4. See [:material-code-braces: StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `DataAccessRoleArn`: `str` *(required)*
-- `SourceLanguageCode`: `str` *(required)*
-- `TargetLanguageCodes`: `Sequence`\[`str`\] *(required)*
-- `ClientToken`: `str` *(required)*
-- `JobName`: `str`
-- `TerminologyNames`: `Sequence`\[`str`\]
-- `ParallelDataNames`: `Sequence`\[`str`\]
-- `Settings`:
-  [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: StartTextTranslationJobRequestRequestTypeDef = {  # (1)
+    "InputDataConfig": ...,
+    "OutputDataConfig": ...,
+    "DataAccessRoleArn": ...,
+    "SourceLanguageCode": ...,
+    "TargetLanguageCodes": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef).
+parent.start_text_translation_job(**kwargs)
+```
 
-<a id="stop\_text\_translation\_job"></a>
+1. See [:material-code-braces: StartTextTranslationJobRequestRequestTypeDef](./type_defs.md#starttexttranslationjobrequestrequesttypedef) 
 
-### stop_text_translation_job
+### stop\_text\_translation\_job
 
 Stops an asynchronous batch translation job that is in progress.
 
-Type annotations for `boto3.client("translate").stop_text_translation_job`
-method.
+Type annotations and code completion for `#!python boto3.client("translate").stop_text_translation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.stop_text_translation_job)
 
-Boto3 documentation:
-[Translate.Client.stop_text_translation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.stop_text_translation_job)
+```python title="Method definition"
+def stop_text_translation_job(
+    self,
+    *,
+    JobId: str,
+) -> StopTextTranslationJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopTextTranslationJobRequestRequestTypeDef](./type_defs.md#stoptexttranslationjobrequestrequesttypedef).
+1. See [:material-code-braces: StopTextTranslationJobResponseTypeDef](./type_defs.md#stoptexttranslationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopTextTranslationJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[StopTextTranslationJobResponseTypeDef](./type_defs.md#stoptexttranslationjobresponsetypedef).
+parent.stop_text_translation_job(**kwargs)
+```
 
-<a id="translate\_text"></a>
+1. See [:material-code-braces: StopTextTranslationJobRequestRequestTypeDef](./type_defs.md#stoptexttranslationjobrequestrequesttypedef) 
 
-### translate_text
+### translate\_text
 
 Translates input text from the source language to the target language.
 
-Type annotations for `boto3.client("translate").translate_text` method.
+Type annotations and code completion for `#!python boto3.client("translate").translate_text` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.translate_text)
 
-Boto3 documentation:
-[Translate.Client.translate_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.translate_text)
+```python title="Method definition"
+def translate_text(
+    self,
+    *,
+    Text: str,
+    SourceLanguageCode: str,
+    TargetLanguageCode: str,
+    TerminologyNames: Sequence[str] = ...,
+    Settings: TranslationSettingsTypeDef = ...,  # (1)
+) -> TranslateTextResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TranslateTextRequestRequestTypeDef](./type_defs.md#translatetextrequestrequesttypedef).
+1. See [:material-code-braces: TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef) 
+2. See [:material-code-braces: TranslateTextResponseTypeDef](./type_defs.md#translatetextresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Text`: `str` *(required)*
-- `SourceLanguageCode`: `str` *(required)*
-- `TargetLanguageCode`: `str` *(required)*
-- `TerminologyNames`: `Sequence`\[`str`\]
-- `Settings`:
-  [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: TranslateTextRequestRequestTypeDef = {  # (1)
+    "Text": ...,
+    "SourceLanguageCode": ...,
+    "TargetLanguageCode": ...,
+}
 
-Returns
-[TranslateTextResponseTypeDef](./type_defs.md#translatetextresponsetypedef).
+parent.translate_text(**kwargs)
+```
 
-<a id="update\_parallel\_data"></a>
+1. See [:material-code-braces: TranslateTextRequestRequestTypeDef](./type_defs.md#translatetextrequestrequesttypedef) 
 
-### update_parallel_data
+### update\_parallel\_data
 
 Updates a previously created parallel data resource by importing a new input
 file from Amazon S3.
 
-Type annotations for `boto3.client("translate").update_parallel_data` method.
+Type annotations and code completion for `#!python boto3.client("translate").update_parallel_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.update_parallel_data)
 
-Boto3 documentation:
-[Translate.Client.update_parallel_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.update_parallel_data)
+```python title="Method definition"
+def update_parallel_data(
+    self,
+    *,
+    Name: str,
+    ParallelDataConfig: ParallelDataConfigTypeDef,  # (1)
+    ClientToken: str,
+    Description: str = ...,
+) -> UpdateParallelDataResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateParallelDataRequestRequestTypeDef](./type_defs.md#updateparalleldatarequestrequesttypedef).
+1. See [:material-code-braces: ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef) 
+2. See [:material-code-braces: UpdateParallelDataResponseTypeDef](./type_defs.md#updateparalleldataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ParallelDataConfig`:
-  [ParallelDataConfigTypeDef](./type_defs.md#paralleldataconfigtypedef)
-  *(required)*
-- `ClientToken`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateParallelDataRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ParallelDataConfig": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[UpdateParallelDataResponseTypeDef](./type_defs.md#updateparalleldataresponsetypedef).
+parent.update_parallel_data(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateParallelDataRequestRequestTypeDef](./type_defs.md#updateparalleldatarequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("translate").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("translate").get_paginator` method with overloads.
 
-- `client.get_paginator("list_terminologies")` ->
-  [ListTerminologiesPaginator](./paginators.md#listterminologiespaginator)
+- `client.get_paginator("list_terminologies")` -> [ListTerminologiesPaginator](./paginators.md#listterminologiespaginator)
+
+
+

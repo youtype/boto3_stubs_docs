@@ -1,678 +1,915 @@
-<a id="typed-dictionaries-for-boto3-cloudhsm-module"></a>
-
-# Typed dictionaries for boto3 CloudHSM module
+# Typed dictionaries
 
 > [Index](../README.md) > [CloudHSM](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
-type annotations stubs module
-[mypy-boto3-cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CloudHSM module](#typed-dictionaries-for-boto3-cloudhsm-module)
-  - [AddTagsToResourceRequestRequestTypeDef](#addtagstoresourcerequestrequesttypedef)
-  - [AddTagsToResourceResponseTypeDef](#addtagstoresourceresponsetypedef)
-  - [CreateHapgRequestRequestTypeDef](#createhapgrequestrequesttypedef)
-  - [CreateHapgResponseTypeDef](#createhapgresponsetypedef)
-  - [CreateHsmRequestRequestTypeDef](#createhsmrequestrequesttypedef)
-  - [CreateHsmResponseTypeDef](#createhsmresponsetypedef)
-  - [CreateLunaClientRequestRequestTypeDef](#createlunaclientrequestrequesttypedef)
-  - [CreateLunaClientResponseTypeDef](#createlunaclientresponsetypedef)
-  - [DeleteHapgRequestRequestTypeDef](#deletehapgrequestrequesttypedef)
-  - [DeleteHapgResponseTypeDef](#deletehapgresponsetypedef)
-  - [DeleteHsmRequestRequestTypeDef](#deletehsmrequestrequesttypedef)
-  - [DeleteHsmResponseTypeDef](#deletehsmresponsetypedef)
-  - [DeleteLunaClientRequestRequestTypeDef](#deletelunaclientrequestrequesttypedef)
-  - [DeleteLunaClientResponseTypeDef](#deletelunaclientresponsetypedef)
-  - [DescribeHapgRequestRequestTypeDef](#describehapgrequestrequesttypedef)
-  - [DescribeHapgResponseTypeDef](#describehapgresponsetypedef)
-  - [DescribeHsmRequestRequestTypeDef](#describehsmrequestrequesttypedef)
-  - [DescribeHsmResponseTypeDef](#describehsmresponsetypedef)
-  - [DescribeLunaClientRequestRequestTypeDef](#describelunaclientrequestrequesttypedef)
-  - [DescribeLunaClientResponseTypeDef](#describelunaclientresponsetypedef)
-  - [GetConfigRequestRequestTypeDef](#getconfigrequestrequesttypedef)
-  - [GetConfigResponseTypeDef](#getconfigresponsetypedef)
-  - [ListAvailableZonesResponseTypeDef](#listavailablezonesresponsetypedef)
-  - [ListHapgsRequestRequestTypeDef](#listhapgsrequestrequesttypedef)
-  - [ListHapgsResponseTypeDef](#listhapgsresponsetypedef)
-  - [ListHsmsRequestRequestTypeDef](#listhsmsrequestrequesttypedef)
-  - [ListHsmsResponseTypeDef](#listhsmsresponsetypedef)
-  - [ListLunaClientsRequestRequestTypeDef](#listlunaclientsrequestrequesttypedef)
-  - [ListLunaClientsResponseTypeDef](#listlunaclientsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ModifyHapgRequestRequestTypeDef](#modifyhapgrequestrequesttypedef)
-  - [ModifyHapgResponseTypeDef](#modifyhapgresponsetypedef)
-  - [ModifyHsmRequestRequestTypeDef](#modifyhsmrequestrequesttypedef)
-  - [ModifyHsmResponseTypeDef](#modifyhsmresponsetypedef)
-  - [ModifyLunaClientRequestRequestTypeDef](#modifylunaclientrequestrequesttypedef)
-  - [ModifyLunaClientResponseTypeDef](#modifylunaclientresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RemoveTagsFromResourceRequestRequestTypeDef](#removetagsfromresourcerequestrequesttypedef)
-  - [RemoveTagsFromResourceResponseTypeDef](#removetagsfromresourceresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagTypeDef](#tagtypedef)
-
-<a id="addtagstoresourcerequestrequesttypedef"></a>
+    Auto-generated documentation for [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
+    type annotations stubs module [mypy-boto3-cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 ## AddTagsToResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import AddTagsToResourceRequestRequestTypeDef
+
+def get_value() -> AddTagsToResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsToResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagList: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="addtagstoresourceresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AddTagsToResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import AddTagsToResourceResponseTypeDef
+
+def get_value() -> AddTagsToResourceResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsToResourceResponseTypeDef(TypedDict):
+    Status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Status`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhapgrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHapgRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import CreateHapgRequestRequestTypeDef
+
+def get_value() -> CreateHapgRequestRequestTypeDef:
+    return {
+        "Label": ...,
+    }
 ```
 
-Required fields:
-
-- `Label`: `str`
-
-<a id="createhapgresponsetypedef"></a>
+```python title="Definition"
+class CreateHapgRequestRequestTypeDef(TypedDict):
+    Label: str,
+```
 
 ## CreateHapgResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import CreateHapgResponseTypeDef
+
+def get_value() -> CreateHapgResponseTypeDef:
+    return {
+        "HapgArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHapgResponseTypeDef(TypedDict):
+    HapgArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HapgArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhsmrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHsmRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import CreateHsmRequestRequestTypeDef
+
+def get_value() -> CreateHsmRequestRequestTypeDef:
+    return {
+        "SubnetId": ...,
+        "SshKey": ...,
+        "IamRoleArn": ...,
+        "SubscriptionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHsmRequestRequestTypeDef(TypedDict):
+    SubnetId: str,
+    SshKey: str,
+    IamRoleArn: str,
+    SubscriptionType: SubscriptionTypeType,  # (1)
+    EniIp: NotRequired[str],
+    ExternalId: NotRequired[str],
+    ClientToken: NotRequired[str],
+    SyslogIp: NotRequired[str],
+```
 
-- `SubnetId`: `str`
-- `SshKey`: `str`
-- `IamRoleArn`: `str`
-- `SubscriptionType`: `Literal['PRODUCTION']` (see
-  [SubscriptionTypeType](./literals.md#subscriptiontypetype))
-
-Optional fields:
-
-- `EniIp`: `str`
-- `ExternalId`: `str`
-- `ClientToken`: `str`
-- `SyslogIp`: `str`
-
-<a id="createhsmresponsetypedef"></a>
-
+1. See [:material-code-brackets: SubscriptionTypeType](./literals.md#subscriptiontypetype) 
 ## CreateHsmResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import CreateHsmResponseTypeDef
+
+def get_value() -> CreateHsmResponseTypeDef:
+    return {
+        "HsmArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHsmResponseTypeDef(TypedDict):
+    HsmArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HsmArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createlunaclientrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLunaClientRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import CreateLunaClientRequestRequestTypeDef
+
+def get_value() -> CreateLunaClientRequestRequestTypeDef:
+    return {
+        "Certificate": ...,
+    }
 ```
 
-Required fields:
-
-- `Certificate`: `str`
-
-Optional fields:
-
-- `Label`: `str`
-
-<a id="createlunaclientresponsetypedef"></a>
+```python title="Definition"
+class CreateLunaClientRequestRequestTypeDef(TypedDict):
+    Certificate: str,
+    Label: NotRequired[str],
+```
 
 ## CreateLunaClientResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import CreateLunaClientResponseTypeDef
+
+def get_value() -> CreateLunaClientResponseTypeDef:
+    return {
+        "ClientArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLunaClientResponseTypeDef(TypedDict):
+    ClientArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ClientArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletehapgrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteHapgRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DeleteHapgRequestRequestTypeDef
+
+def get_value() -> DeleteHapgRequestRequestTypeDef:
+    return {
+        "HapgArn": ...,
+    }
 ```
 
-Required fields:
-
-- `HapgArn`: `str`
-
-<a id="deletehapgresponsetypedef"></a>
+```python title="Definition"
+class DeleteHapgRequestRequestTypeDef(TypedDict):
+    HapgArn: str,
+```
 
 ## DeleteHapgResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DeleteHapgResponseTypeDef
+
+def get_value() -> DeleteHapgResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteHapgResponseTypeDef(TypedDict):
+    Status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Status`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletehsmrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteHsmRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DeleteHsmRequestRequestTypeDef
+
+def get_value() -> DeleteHsmRequestRequestTypeDef:
+    return {
+        "HsmArn": ...,
+    }
 ```
 
-Required fields:
-
-- `HsmArn`: `str`
-
-<a id="deletehsmresponsetypedef"></a>
+```python title="Definition"
+class DeleteHsmRequestRequestTypeDef(TypedDict):
+    HsmArn: str,
+```
 
 ## DeleteHsmResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DeleteHsmResponseTypeDef
+
+def get_value() -> DeleteHsmResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteHsmResponseTypeDef(TypedDict):
+    Status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Status`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletelunaclientrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteLunaClientRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DeleteLunaClientRequestRequestTypeDef
+
+def get_value() -> DeleteLunaClientRequestRequestTypeDef:
+    return {
+        "ClientArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ClientArn`: `str`
-
-<a id="deletelunaclientresponsetypedef"></a>
+```python title="Definition"
+class DeleteLunaClientRequestRequestTypeDef(TypedDict):
+    ClientArn: str,
+```
 
 ## DeleteLunaClientResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DeleteLunaClientResponseTypeDef
+
+def get_value() -> DeleteLunaClientResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteLunaClientResponseTypeDef(TypedDict):
+    Status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Status`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describehapgrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeHapgRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DescribeHapgRequestRequestTypeDef
+
+def get_value() -> DescribeHapgRequestRequestTypeDef:
+    return {
+        "HapgArn": ...,
+    }
 ```
 
-Required fields:
-
-- `HapgArn`: `str`
-
-<a id="describehapgresponsetypedef"></a>
+```python title="Definition"
+class DescribeHapgRequestRequestTypeDef(TypedDict):
+    HapgArn: str,
+```
 
 ## DescribeHapgResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DescribeHapgResponseTypeDef
+
+def get_value() -> DescribeHapgResponseTypeDef:
+    return {
+        "HapgArn": ...,
+        "HapgSerial": ...,
+        "HsmsLastActionFailed": ...,
+        "HsmsPendingDeletion": ...,
+        "HsmsPendingRegistration": ...,
+        "Label": ...,
+        "LastModifiedTimestamp": ...,
+        "PartitionSerialList": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeHapgResponseTypeDef(TypedDict):
+    HapgArn: str,
+    HapgSerial: str,
+    HsmsLastActionFailed: List[str],
+    HsmsPendingDeletion: List[str],
+    HsmsPendingRegistration: List[str],
+    Label: str,
+    LastModifiedTimestamp: str,
+    PartitionSerialList: List[str],
+    State: CloudHsmObjectStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HapgArn`: `str`
-- `HapgSerial`: `str`
-- `HsmsLastActionFailed`: `List`\[`str`\]
-- `HsmsPendingDeletion`: `List`\[`str`\]
-- `HsmsPendingRegistration`: `List`\[`str`\]
-- `Label`: `str`
-- `LastModifiedTimestamp`: `str`
-- `PartitionSerialList`: `List`\[`str`\]
-- `State`: [CloudHsmObjectStateType](./literals.md#cloudhsmobjectstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describehsmrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CloudHsmObjectStateType](./literals.md#cloudhsmobjectstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeHsmRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DescribeHsmRequestRequestTypeDef
+
+def get_value() -> DescribeHsmRequestRequestTypeDef:
+    return {
+        "HsmArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `HsmArn`: `str`
-- `HsmSerialNumber`: `str`
-
-<a id="describehsmresponsetypedef"></a>
+```python title="Definition"
+class DescribeHsmRequestRequestTypeDef(TypedDict):
+    HsmArn: NotRequired[str],
+    HsmSerialNumber: NotRequired[str],
+```
 
 ## DescribeHsmResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DescribeHsmResponseTypeDef
+
+def get_value() -> DescribeHsmResponseTypeDef:
+    return {
+        "HsmArn": ...,
+        "Status": ...,
+        "StatusDetails": ...,
+        "AvailabilityZone": ...,
+        "EniId": ...,
+        "EniIp": ...,
+        "SubscriptionType": ...,
+        "SubscriptionStartDate": ...,
+        "SubscriptionEndDate": ...,
+        "VpcId": ...,
+        "SubnetId": ...,
+        "IamRoleArn": ...,
+        "SerialNumber": ...,
+        "VendorName": ...,
+        "HsmType": ...,
+        "SoftwareVersion": ...,
+        "SshPublicKey": ...,
+        "SshKeyLastUpdated": ...,
+        "ServerCertUri": ...,
+        "ServerCertLastUpdated": ...,
+        "Partitions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeHsmResponseTypeDef(TypedDict):
+    HsmArn: str,
+    Status: HsmStatusType,  # (1)
+    StatusDetails: str,
+    AvailabilityZone: str,
+    EniId: str,
+    EniIp: str,
+    SubscriptionType: SubscriptionTypeType,  # (2)
+    SubscriptionStartDate: str,
+    SubscriptionEndDate: str,
+    VpcId: str,
+    SubnetId: str,
+    IamRoleArn: str,
+    SerialNumber: str,
+    VendorName: str,
+    HsmType: str,
+    SoftwareVersion: str,
+    SshPublicKey: str,
+    SshKeyLastUpdated: str,
+    ServerCertUri: str,
+    ServerCertLastUpdated: str,
+    Partitions: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `HsmArn`: `str`
-- `Status`: [HsmStatusType](./literals.md#hsmstatustype)
-- `StatusDetails`: `str`
-- `AvailabilityZone`: `str`
-- `EniId`: `str`
-- `EniIp`: `str`
-- `SubscriptionType`: `Literal['PRODUCTION']` (see
-  [SubscriptionTypeType](./literals.md#subscriptiontypetype))
-- `SubscriptionStartDate`: `str`
-- `SubscriptionEndDate`: `str`
-- `VpcId`: `str`
-- `SubnetId`: `str`
-- `IamRoleArn`: `str`
-- `SerialNumber`: `str`
-- `VendorName`: `str`
-- `HsmType`: `str`
-- `SoftwareVersion`: `str`
-- `SshPublicKey`: `str`
-- `SshKeyLastUpdated`: `str`
-- `ServerCertUri`: `str`
-- `ServerCertLastUpdated`: `str`
-- `Partitions`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describelunaclientrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: HsmStatusType](./literals.md#hsmstatustype) 
+2. See [:material-code-brackets: SubscriptionTypeType](./literals.md#subscriptiontypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLunaClientRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DescribeLunaClientRequestRequestTypeDef
+
+def get_value() -> DescribeLunaClientRequestRequestTypeDef:
+    return {
+        "ClientArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClientArn`: `str`
-- `CertificateFingerprint`: `str`
-
-<a id="describelunaclientresponsetypedef"></a>
+```python title="Definition"
+class DescribeLunaClientRequestRequestTypeDef(TypedDict):
+    ClientArn: NotRequired[str],
+    CertificateFingerprint: NotRequired[str],
+```
 
 ## DescribeLunaClientResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import DescribeLunaClientResponseTypeDef
+
+def get_value() -> DescribeLunaClientResponseTypeDef:
+    return {
+        "ClientArn": ...,
+        "Certificate": ...,
+        "CertificateFingerprint": ...,
+        "LastModifiedTimestamp": ...,
+        "Label": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLunaClientResponseTypeDef(TypedDict):
+    ClientArn: str,
+    Certificate: str,
+    CertificateFingerprint: str,
+    LastModifiedTimestamp: str,
+    Label: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ClientArn`: `str`
-- `Certificate`: `str`
-- `CertificateFingerprint`: `str`
-- `LastModifiedTimestamp`: `str`
-- `Label`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import GetConfigRequestRequestTypeDef
+
+def get_value() -> GetConfigRequestRequestTypeDef:
+    return {
+        "ClientArn": ...,
+        "ClientVersion": ...,
+        "HapgList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConfigRequestRequestTypeDef(TypedDict):
+    ClientArn: str,
+    ClientVersion: ClientVersionType,  # (1)
+    HapgList: Sequence[str],
+```
 
-- `ClientArn`: `str`
-- `ClientVersion`: [ClientVersionType](./literals.md#clientversiontype)
-- `HapgList`: `Sequence`\[`str`\]
-
-<a id="getconfigresponsetypedef"></a>
-
+1. See [:material-code-brackets: ClientVersionType](./literals.md#clientversiontype) 
 ## GetConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import GetConfigResponseTypeDef
+
+def get_value() -> GetConfigResponseTypeDef:
+    return {
+        "ConfigType": ...,
+        "ConfigFile": ...,
+        "ConfigCred": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConfigResponseTypeDef(TypedDict):
+    ConfigType: str,
+    ConfigFile: str,
+    ConfigCred: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ConfigType`: `str`
-- `ConfigFile`: `str`
-- `ConfigCred`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listavailablezonesresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAvailableZonesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ListAvailableZonesResponseTypeDef
+
+def get_value() -> ListAvailableZonesResponseTypeDef:
+    return {
+        "AZList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAvailableZonesResponseTypeDef(TypedDict):
+    AZList: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AZList`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHapgsRequestListHapgsPaginateTypeDef
 
-<a id="listhapgsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudhsm.type_defs import ListHapgsRequestListHapgsPaginateTypeDef
 
+def get_value() -> ListHapgsRequestListHapgsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListHapgsRequestListHapgsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHapgsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ListHapgsRequestRequestTypeDef
+
+def get_value() -> ListHapgsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listhapgsresponsetypedef"></a>
+```python title="Definition"
+class ListHapgsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListHapgsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ListHapgsResponseTypeDef
+
+def get_value() -> ListHapgsResponseTypeDef:
+    return {
+        "HapgList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHapgsResponseTypeDef(TypedDict):
+    HapgList: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HapgList`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHsmsRequestListHsmsPaginateTypeDef
 
-<a id="listhsmsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudhsm.type_defs import ListHsmsRequestListHsmsPaginateTypeDef
 
+def get_value() -> ListHsmsRequestListHsmsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListHsmsRequestListHsmsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHsmsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ListHsmsRequestRequestTypeDef
+
+def get_value() -> ListHsmsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listhsmsresponsetypedef"></a>
+```python title="Definition"
+class ListHsmsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListHsmsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ListHsmsResponseTypeDef
+
+def get_value() -> ListHsmsResponseTypeDef:
+    return {
+        "HsmList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHsmsResponseTypeDef(TypedDict):
+    HsmList: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HsmList`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLunaClientsRequestListLunaClientsPaginateTypeDef
 
-<a id="listlunaclientsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloudhsm.type_defs import ListLunaClientsRequestListLunaClientsPaginateTypeDef
 
+def get_value() -> ListLunaClientsRequestListLunaClientsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListLunaClientsRequestListLunaClientsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLunaClientsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ListLunaClientsRequestRequestTypeDef
+
+def get_value() -> ListLunaClientsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listlunaclientsresponsetypedef"></a>
+```python title="Definition"
+class ListLunaClientsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListLunaClientsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ListLunaClientsResponseTypeDef
+
+def get_value() -> ListLunaClientsResponseTypeDef:
+    return {
+        "ClientList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLunaClientsResponseTypeDef(TypedDict):
+    ClientList: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ClientList`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyhapgrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyHapgRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ModifyHapgRequestRequestTypeDef
+
+def get_value() -> ModifyHapgRequestRequestTypeDef:
+    return {
+        "HapgArn": ...,
+    }
 ```
 
-Required fields:
-
-- `HapgArn`: `str`
-
-Optional fields:
-
-- `Label`: `str`
-- `PartitionSerialList`: `Sequence`\[`str`\]
-
-<a id="modifyhapgresponsetypedef"></a>
+```python title="Definition"
+class ModifyHapgRequestRequestTypeDef(TypedDict):
+    HapgArn: str,
+    Label: NotRequired[str],
+    PartitionSerialList: NotRequired[Sequence[str]],
+```
 
 ## ModifyHapgResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ModifyHapgResponseTypeDef
+
+def get_value() -> ModifyHapgResponseTypeDef:
+    return {
+        "HapgArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyHapgResponseTypeDef(TypedDict):
+    HapgArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HapgArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyhsmrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyHsmRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ModifyHsmRequestRequestTypeDef
+
+def get_value() -> ModifyHsmRequestRequestTypeDef:
+    return {
+        "HsmArn": ...,
+    }
 ```
 
-Required fields:
-
-- `HsmArn`: `str`
-
-Optional fields:
-
-- `SubnetId`: `str`
-- `EniIp`: `str`
-- `IamRoleArn`: `str`
-- `ExternalId`: `str`
-- `SyslogIp`: `str`
-
-<a id="modifyhsmresponsetypedef"></a>
+```python title="Definition"
+class ModifyHsmRequestRequestTypeDef(TypedDict):
+    HsmArn: str,
+    SubnetId: NotRequired[str],
+    EniIp: NotRequired[str],
+    IamRoleArn: NotRequired[str],
+    ExternalId: NotRequired[str],
+    SyslogIp: NotRequired[str],
+```
 
 ## ModifyHsmResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ModifyHsmResponseTypeDef
+
+def get_value() -> ModifyHsmResponseTypeDef:
+    return {
+        "HsmArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyHsmResponseTypeDef(TypedDict):
+    HsmArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HsmArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifylunaclientrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyLunaClientRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ModifyLunaClientRequestRequestTypeDef
+
+def get_value() -> ModifyLunaClientRequestRequestTypeDef:
+    return {
+        "ClientArn": ...,
+        "Certificate": ...,
+    }
 ```
 
-Required fields:
-
-- `ClientArn`: `str`
-- `Certificate`: `str`
-
-<a id="modifylunaclientresponsetypedef"></a>
+```python title="Definition"
+class ModifyLunaClientRequestRequestTypeDef(TypedDict):
+    ClientArn: str,
+    Certificate: str,
+```
 
 ## ModifyLunaClientResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ModifyLunaClientResponseTypeDef
+
+def get_value() -> ModifyLunaClientResponseTypeDef:
+    return {
+        "ClientArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyLunaClientResponseTypeDef(TypedDict):
+    ClientArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ClientArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="removetagsfromresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## RemoveTagsFromResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import RemoveTagsFromResourceRequestRequestTypeDef
+
+def get_value() -> RemoveTagsFromResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeyList": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeyList`: `Sequence`\[`str`\]
-
-<a id="removetagsfromresourceresponsetypedef"></a>
+```python title="Definition"
+class RemoveTagsFromResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeyList: Sequence[str],
+```
 
 ## RemoveTagsFromResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import RemoveTagsFromResourceResponseTypeDef
+
+def get_value() -> RemoveTagsFromResourceResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveTagsFromResourceResponseTypeDef(TypedDict):
+    Status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Status`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudhsm.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
-- `Key`: `str`
-- `Value`: `str`

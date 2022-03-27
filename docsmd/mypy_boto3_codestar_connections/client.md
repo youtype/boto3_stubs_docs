@@ -1,44 +1,18 @@
-<a id="codestarconnectionsclient-for-boto3-codestarconnections-module"></a>
+# CodeStarconnectionsClient
 
-# CodeStarconnectionsClient for boto3 CodeStarconnections module
+> [Index](../README.md) > [CodeStarconnections](./README.md) > CodeStarconnectionsClient
 
-> [Index](../README.md) > [CodeStarconnections](./README.md) >
-> CodeStarconnectionsClient
+!!! note ""
 
-Auto-generated documentation for
-[CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
-type annotations stubs module
-[mypy-boto3-codestar-connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
-
-- [CodeStarconnectionsClient for boto3 CodeStarconnections module](#codestarconnectionsclient-for-boto3-codestarconnections-module)
-  - [CodeStarconnectionsClient](#codestarconnectionsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_connection](#create_connection)
-    - [create_host](#create_host)
-    - [delete_connection](#delete_connection)
-    - [delete_host](#delete_host)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_connection](#get_connection)
-    - [get_host](#get_host)
-    - [list_connections](#list_connections)
-    - [list_hosts](#list_hosts)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_host](#update_host)
-
-<a id="codestarconnectionsclient"></a>
+    Auto-generated documentation for [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
+    type annotations stubs module [mypy-boto3-codestar-connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
 ## CodeStarconnectionsClient
 
-Type annotations for `boto3.client("codestar-connections")`
+Type annotations and code completion for `#!python boto3.client("codestar-connections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_codestar_connections.client import CodeStarconnectionsClient
 
@@ -46,358 +20,447 @@ def get_codestar-connections_client() -> CodeStarconnectionsClient:
     return Session().client("codestar-connections")
 ```
 
-Boto3 documentation:
-[CodeStarconnections.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("codestar-connections").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("codestar-connections")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.LimitExceededException,
+    client.ResourceNotFoundException,
+    client.ResourceUnavailableException,
+    client.UnsupportedOperationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_codestar_connections.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceUnavailableException`
-- `Exceptions.UnsupportedOperationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CodeStarconnectionsClient exceptions.
-
-Type annotations for `boto3.client("codestar-connections").exceptions` method.
-
-Boto3 documentation:
-[CodeStarconnections.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("codestar-connections").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.can_paginate)
 
-Boto3 documentation:
-[CodeStarconnections.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_connection"></a>
-
-### create_connection
+### create\_connection
 
 Creates a connection that can then be given to other AWS services like
 CodePipeline so that it can access third-party code repositories.
 
-Type annotations for `boto3.client("codestar-connections").create_connection`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").create_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection)
 
-Boto3 documentation:
-[CodeStarconnections.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_connection)
+```python title="Method definition"
+def create_connection(
+    self,
+    *,
+    ConnectionName: str,
+    ProviderType: ProviderTypeType = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    HostArn: str = ...,
+) -> CreateConnectionOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectionInputRequestTypeDef](./type_defs.md#createconnectioninputrequesttypedef).
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateConnectionOutputTypeDef](./type_defs.md#createconnectionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionName`: `str` *(required)*
-- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `HostArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateConnectionInputRequestTypeDef = {  # (1)
+    "ConnectionName": ...,
+}
 
-Returns
-[CreateConnectionOutputTypeDef](./type_defs.md#createconnectionoutputtypedef).
+parent.create_connection(**kwargs)
+```
 
-<a id="create\_host"></a>
+1. See [:material-code-braces: CreateConnectionInputRequestTypeDef](./type_defs.md#createconnectioninputrequesttypedef) 
 
-### create_host
+### create\_host
 
 Creates a resource that represents the infrastructure where a third-party
 provider is installed.
 
-Type annotations for `boto3.client("codestar-connections").create_host` method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").create_host` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host)
 
-Boto3 documentation:
-[CodeStarconnections.Client.create_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.create_host)
+```python title="Method definition"
+def create_host(
+    self,
+    *,
+    Name: str,
+    ProviderType: ProviderTypeType,  # (1)
+    ProviderEndpoint: str,
+    VpcConfiguration: VpcConfigurationTypeDef = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateHostOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateHostInputRequestTypeDef](./type_defs.md#createhostinputrequesttypedef).
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateHostOutputTypeDef](./type_defs.md#createhostoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
-  *(required)*
-- `ProviderEndpoint`: `str` *(required)*
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateHostInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ProviderType": ...,
+    "ProviderEndpoint": ...,
+}
 
-Returns [CreateHostOutputTypeDef](./type_defs.md#createhostoutputtypedef).
+parent.create_host(**kwargs)
+```
 
-<a id="delete\_connection"></a>
+1. See [:material-code-braces: CreateHostInputRequestTypeDef](./type_defs.md#createhostinputrequesttypedef) 
 
-### delete_connection
+### delete\_connection
 
 The connection to be deleted.
 
-Type annotations for `boto3.client("codestar-connections").delete_connection`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").delete_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection)
 
-Boto3 documentation:
-[CodeStarconnections.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_connection)
+```python title="Method definition"
+def delete_connection(
+    self,
+    *,
+    ConnectionArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectionInputRequestTypeDef](./type_defs.md#deleteconnectioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConnectionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectionInputRequestTypeDef = {  # (1)
+    "ConnectionArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_connection(**kwargs)
+```
 
-<a id="delete\_host"></a>
+1. See [:material-code-braces: DeleteConnectionInputRequestTypeDef](./type_defs.md#deleteconnectioninputrequesttypedef) 
 
-### delete_host
+### delete\_host
 
 The host to be deleted.
 
-Type annotations for `boto3.client("codestar-connections").delete_host` method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").delete_host` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host)
 
-Boto3 documentation:
-[CodeStarconnections.Client.delete_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.delete_host)
+```python title="Method definition"
+def delete_host(
+    self,
+    *,
+    HostArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteHostInputRequestTypeDef](./type_defs.md#deletehostinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `HostArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteHostInputRequestTypeDef = {  # (1)
+    "HostArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_host(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteHostInputRequestTypeDef](./type_defs.md#deletehostinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("codestar-connections").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CodeStarconnections.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_connection
 
-Returns `str`.
+Returns the connection ARN and details such as status, owner, and provider type.
 
-<a id="get\_connection"></a>
+Type annotations and code completion for `#!python boto3.client("codestar-connections").get_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection)
 
-### get_connection
+```python title="Method definition"
+def get_connection(
+    self,
+    *,
+    ConnectionArn: str,
+) -> GetConnectionOutputTypeDef:  # (1)
+    ...
+```
 
-Returns the connection ARN and details such as status, owner, and provider
-type.
+1. See [:material-code-braces: GetConnectionOutputTypeDef](./type_defs.md#getconnectionoutputtypedef) 
 
-Type annotations for `boto3.client("codestar-connections").get_connection`
-method.
 
-Boto3 documentation:
-[CodeStarconnections.Client.get_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_connection)
+```python title="Usage example with kwargs"
+kwargs: GetConnectionInputRequestTypeDef = {  # (1)
+    "ConnectionArn": ...,
+}
 
-Arguments mapping described in
-[GetConnectionInputRequestTypeDef](./type_defs.md#getconnectioninputrequesttypedef).
+parent.get_connection(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: GetConnectionInputRequestTypeDef](./type_defs.md#getconnectioninputrequesttypedef) 
 
-- `ConnectionArn`: `str` *(required)*
-
-Returns
-[GetConnectionOutputTypeDef](./type_defs.md#getconnectionoutputtypedef).
-
-<a id="get\_host"></a>
-
-### get_host
+### get\_host
 
 Returns the host ARN and details such as status, provider type, endpoint, and,
 if applicable, the VPC configuration.
 
-Type annotations for `boto3.client("codestar-connections").get_host` method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").get_host` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host)
 
-Boto3 documentation:
-[CodeStarconnections.Client.get_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.get_host)
+```python title="Method definition"
+def get_host(
+    self,
+    *,
+    HostArn: str,
+) -> GetHostOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetHostInputRequestTypeDef](./type_defs.md#gethostinputrequesttypedef).
+1. See [:material-code-braces: GetHostOutputTypeDef](./type_defs.md#gethostoutputtypedef) 
 
-Keyword-only arguments:
 
-- `HostArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetHostInputRequestTypeDef = {  # (1)
+    "HostArn": ...,
+}
 
-Returns [GetHostOutputTypeDef](./type_defs.md#gethostoutputtypedef).
+parent.get_host(**kwargs)
+```
 
-<a id="list\_connections"></a>
+1. See [:material-code-braces: GetHostInputRequestTypeDef](./type_defs.md#gethostinputrequesttypedef) 
 
-### list_connections
+### list\_connections
 
 Lists the connections associated with your account.
 
-Type annotations for `boto3.client("codestar-connections").list_connections`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").list_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections)
 
-Boto3 documentation:
-[CodeStarconnections.Client.list_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_connections)
+```python title="Method definition"
+def list_connections(
+    self,
+    *,
+    ProviderTypeFilter: ProviderTypeType = ...,  # (1)
+    HostArnFilter: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListConnectionsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListConnectionsInputRequestTypeDef](./type_defs.md#listconnectionsinputrequesttypedef).
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-braces: ListConnectionsOutputTypeDef](./type_defs.md#listconnectionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ProviderTypeFilter`: [ProviderTypeType](./literals.md#providertypetype)
-- `HostArnFilter`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConnectionsInputRequestTypeDef = {  # (1)
+    "ProviderTypeFilter": ...,
+}
 
-Returns
-[ListConnectionsOutputTypeDef](./type_defs.md#listconnectionsoutputtypedef).
+parent.list_connections(**kwargs)
+```
 
-<a id="list\_hosts"></a>
+1. See [:material-code-braces: ListConnectionsInputRequestTypeDef](./type_defs.md#listconnectionsinputrequesttypedef) 
 
-### list_hosts
+### list\_hosts
 
 Lists the hosts associated with your account.
 
-Type annotations for `boto3.client("codestar-connections").list_hosts` method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").list_hosts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts)
 
-Boto3 documentation:
-[CodeStarconnections.Client.list_hosts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_hosts)
+```python title="Method definition"
+def list_hosts(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListHostsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListHostsInputRequestTypeDef](./type_defs.md#listhostsinputrequesttypedef).
+1. See [:material-code-braces: ListHostsOutputTypeDef](./type_defs.md#listhostsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListHostsInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListHostsOutputTypeDef](./type_defs.md#listhostsoutputtypedef).
+parent.list_hosts(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListHostsInputRequestTypeDef](./type_defs.md#listhostsinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
-Gets the set of key-value pairs (metadata) that are used to manage the
-resource.
+Gets the set of key-value pairs (metadata) that are used to manage the resource.
 
-Type annotations for
-`boto3.client("codestar-connections").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CodeStarconnections.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds to or modifies the tags of the given resource.
 
-Type annotations for `boto3.client("codestar-connections").tag_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource)
 
-Boto3 documentation:
-[CodeStarconnections.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from an AWS resource.
 
-Type annotations for `boto3.client("codestar-connections").untag_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource)
 
-Boto3 documentation:
-[CodeStarconnections.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_host"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_host
+### update\_host
 
 Updates a specified host with the provided configurations.
 
-Type annotations for `boto3.client("codestar-connections").update_host` method.
+Type annotations and code completion for `#!python boto3.client("codestar-connections").update_host` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host)
 
-Boto3 documentation:
-[CodeStarconnections.Client.update_host](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.update_host)
+```python title="Method definition"
+def update_host(
+    self,
+    *,
+    HostArn: str,
+    ProviderEndpoint: str = ...,
+    VpcConfiguration: VpcConfigurationTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateHostInputRequestTypeDef](./type_defs.md#updatehostinputrequesttypedef).
+1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `HostArn`: `str` *(required)*
-- `ProviderEndpoint`: `str`
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateHostInputRequestTypeDef = {  # (1)
+    "HostArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_host(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateHostInputRequestTypeDef](./type_defs.md#updatehostinputrequesttypedef) 
+
+
+
+

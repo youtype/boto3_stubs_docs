@@ -1,3010 +1,3694 @@
-<a id="typed-dictionaries-for-boto3-opsworks-module"></a>
-
-# Typed dictionaries for boto3 OpsWorks module
+# Typed dictionaries
 
 > [Index](../README.md) > [OpsWorks](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
-type annotations stubs module
-[mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+!!! note ""
 
-- [Typed dictionaries for boto3 OpsWorks module](#typed-dictionaries-for-boto3-opsworks-module)
-  - [AgentVersionTypeDef](#agentversiontypedef)
-  - [AppTypeDef](#apptypedef)
-  - [AssignInstanceRequestRequestTypeDef](#assigninstancerequestrequesttypedef)
-  - [AssignVolumeRequestRequestTypeDef](#assignvolumerequestrequesttypedef)
-  - [AssociateElasticIpRequestRequestTypeDef](#associateelasticiprequestrequesttypedef)
-  - [AttachElasticLoadBalancerRequestRequestTypeDef](#attachelasticloadbalancerrequestrequesttypedef)
-  - [AutoScalingThresholdsTypeDef](#autoscalingthresholdstypedef)
-  - [BlockDeviceMappingTypeDef](#blockdevicemappingtypedef)
-  - [ChefConfigurationResponseMetadataTypeDef](#chefconfigurationresponsemetadatatypedef)
-  - [ChefConfigurationTypeDef](#chefconfigurationtypedef)
-  - [CloneStackRequestRequestTypeDef](#clonestackrequestrequesttypedef)
-  - [CloneStackResultTypeDef](#clonestackresulttypedef)
-  - [CloudWatchLogsConfigurationResponseMetadataTypeDef](#cloudwatchlogsconfigurationresponsemetadatatypedef)
-  - [CloudWatchLogsConfigurationTypeDef](#cloudwatchlogsconfigurationtypedef)
-  - [CloudWatchLogsLogStreamTypeDef](#cloudwatchlogslogstreamtypedef)
-  - [CommandTypeDef](#commandtypedef)
-  - [CreateAppRequestRequestTypeDef](#createapprequestrequesttypedef)
-  - [CreateAppResultTypeDef](#createappresulttypedef)
-  - [CreateDeploymentRequestRequestTypeDef](#createdeploymentrequestrequesttypedef)
-  - [CreateDeploymentResultTypeDef](#createdeploymentresulttypedef)
-  - [CreateInstanceRequestRequestTypeDef](#createinstancerequestrequesttypedef)
-  - [CreateInstanceResultTypeDef](#createinstanceresulttypedef)
-  - [CreateLayerRequestRequestTypeDef](#createlayerrequestrequesttypedef)
-  - [CreateLayerRequestStackCreateLayerTypeDef](#createlayerrequeststackcreatelayertypedef)
-  - [CreateLayerResultTypeDef](#createlayerresulttypedef)
-  - [CreateStackRequestRequestTypeDef](#createstackrequestrequesttypedef)
-  - [CreateStackRequestServiceResourceCreateStackTypeDef](#createstackrequestserviceresourcecreatestacktypedef)
-  - [CreateStackResultTypeDef](#createstackresulttypedef)
-  - [CreateUserProfileRequestRequestTypeDef](#createuserprofilerequestrequesttypedef)
-  - [CreateUserProfileResultTypeDef](#createuserprofileresulttypedef)
-  - [DataSourceTypeDef](#datasourcetypedef)
-  - [DeleteAppRequestRequestTypeDef](#deleteapprequestrequesttypedef)
-  - [DeleteInstanceRequestRequestTypeDef](#deleteinstancerequestrequesttypedef)
-  - [DeleteLayerRequestRequestTypeDef](#deletelayerrequestrequesttypedef)
-  - [DeleteStackRequestRequestTypeDef](#deletestackrequestrequesttypedef)
-  - [DeleteUserProfileRequestRequestTypeDef](#deleteuserprofilerequestrequesttypedef)
-  - [DeploymentCommandTypeDef](#deploymentcommandtypedef)
-  - [DeploymentTypeDef](#deploymenttypedef)
-  - [DeregisterEcsClusterRequestRequestTypeDef](#deregisterecsclusterrequestrequesttypedef)
-  - [DeregisterElasticIpRequestRequestTypeDef](#deregisterelasticiprequestrequesttypedef)
-  - [DeregisterInstanceRequestRequestTypeDef](#deregisterinstancerequestrequesttypedef)
-  - [DeregisterRdsDbInstanceRequestRequestTypeDef](#deregisterrdsdbinstancerequestrequesttypedef)
-  - [DeregisterVolumeRequestRequestTypeDef](#deregistervolumerequestrequesttypedef)
-  - [DescribeAgentVersionsRequestRequestTypeDef](#describeagentversionsrequestrequesttypedef)
-  - [DescribeAgentVersionsResultTypeDef](#describeagentversionsresulttypedef)
-  - [DescribeAppsRequestRequestTypeDef](#describeappsrequestrequesttypedef)
-  - [DescribeAppsResultTypeDef](#describeappsresulttypedef)
-  - [DescribeCommandsRequestRequestTypeDef](#describecommandsrequestrequesttypedef)
-  - [DescribeCommandsResultTypeDef](#describecommandsresulttypedef)
-  - [DescribeDeploymentsRequestRequestTypeDef](#describedeploymentsrequestrequesttypedef)
-  - [DescribeDeploymentsResultTypeDef](#describedeploymentsresulttypedef)
-  - [DescribeEcsClustersRequestRequestTypeDef](#describeecsclustersrequestrequesttypedef)
-  - [DescribeEcsClustersResultTypeDef](#describeecsclustersresulttypedef)
-  - [DescribeElasticIpsRequestRequestTypeDef](#describeelasticipsrequestrequesttypedef)
-  - [DescribeElasticIpsResultTypeDef](#describeelasticipsresulttypedef)
-  - [DescribeElasticLoadBalancersRequestRequestTypeDef](#describeelasticloadbalancersrequestrequesttypedef)
-  - [DescribeElasticLoadBalancersResultTypeDef](#describeelasticloadbalancersresulttypedef)
-  - [DescribeInstancesRequestRequestTypeDef](#describeinstancesrequestrequesttypedef)
-  - [DescribeInstancesResultTypeDef](#describeinstancesresulttypedef)
-  - [DescribeLayersRequestRequestTypeDef](#describelayersrequestrequesttypedef)
-  - [DescribeLayersResultTypeDef](#describelayersresulttypedef)
-  - [DescribeLoadBasedAutoScalingRequestRequestTypeDef](#describeloadbasedautoscalingrequestrequesttypedef)
-  - [DescribeLoadBasedAutoScalingResultTypeDef](#describeloadbasedautoscalingresulttypedef)
-  - [DescribeMyUserProfileResultTypeDef](#describemyuserprofileresulttypedef)
-  - [DescribeOperatingSystemsResponseTypeDef](#describeoperatingsystemsresponsetypedef)
-  - [DescribePermissionsRequestRequestTypeDef](#describepermissionsrequestrequesttypedef)
-  - [DescribePermissionsResultTypeDef](#describepermissionsresulttypedef)
-  - [DescribeRaidArraysRequestRequestTypeDef](#describeraidarraysrequestrequesttypedef)
-  - [DescribeRaidArraysResultTypeDef](#describeraidarraysresulttypedef)
-  - [DescribeRdsDbInstancesRequestRequestTypeDef](#describerdsdbinstancesrequestrequesttypedef)
-  - [DescribeRdsDbInstancesResultTypeDef](#describerdsdbinstancesresulttypedef)
-  - [DescribeServiceErrorsRequestRequestTypeDef](#describeserviceerrorsrequestrequesttypedef)
-  - [DescribeServiceErrorsResultTypeDef](#describeserviceerrorsresulttypedef)
-  - [DescribeStackProvisioningParametersRequestRequestTypeDef](#describestackprovisioningparametersrequestrequesttypedef)
-  - [DescribeStackProvisioningParametersResultTypeDef](#describestackprovisioningparametersresulttypedef)
-  - [DescribeStackSummaryRequestRequestTypeDef](#describestacksummaryrequestrequesttypedef)
-  - [DescribeStackSummaryResultTypeDef](#describestacksummaryresulttypedef)
-  - [DescribeStacksRequestRequestTypeDef](#describestacksrequestrequesttypedef)
-  - [DescribeStacksResultTypeDef](#describestacksresulttypedef)
-  - [DescribeTimeBasedAutoScalingRequestRequestTypeDef](#describetimebasedautoscalingrequestrequesttypedef)
-  - [DescribeTimeBasedAutoScalingResultTypeDef](#describetimebasedautoscalingresulttypedef)
-  - [DescribeUserProfilesRequestRequestTypeDef](#describeuserprofilesrequestrequesttypedef)
-  - [DescribeUserProfilesResultTypeDef](#describeuserprofilesresulttypedef)
-  - [DescribeVolumesRequestRequestTypeDef](#describevolumesrequestrequesttypedef)
-  - [DescribeVolumesResultTypeDef](#describevolumesresulttypedef)
-  - [DetachElasticLoadBalancerRequestRequestTypeDef](#detachelasticloadbalancerrequestrequesttypedef)
-  - [DisassociateElasticIpRequestRequestTypeDef](#disassociateelasticiprequestrequesttypedef)
-  - [EbsBlockDeviceTypeDef](#ebsblockdevicetypedef)
-  - [EcsClusterTypeDef](#ecsclustertypedef)
-  - [ElasticIpTypeDef](#elasticiptypedef)
-  - [ElasticLoadBalancerTypeDef](#elasticloadbalancertypedef)
-  - [EnvironmentVariableTypeDef](#environmentvariabletypedef)
-  - [GetHostnameSuggestionRequestRequestTypeDef](#gethostnamesuggestionrequestrequesttypedef)
-  - [GetHostnameSuggestionResultTypeDef](#gethostnamesuggestionresulttypedef)
-  - [GrantAccessRequestRequestTypeDef](#grantaccessrequestrequesttypedef)
-  - [GrantAccessResultTypeDef](#grantaccessresulttypedef)
-  - [InstanceIdentityTypeDef](#instanceidentitytypedef)
-  - [InstanceTypeDef](#instancetypedef)
-  - [InstancesCountResponseMetadataTypeDef](#instancescountresponsemetadatatypedef)
-  - [InstancesCountTypeDef](#instancescounttypedef)
-  - [LayerTypeDef](#layertypedef)
-  - [LifecycleEventConfigurationResponseMetadataTypeDef](#lifecycleeventconfigurationresponsemetadatatypedef)
-  - [LifecycleEventConfigurationTypeDef](#lifecycleeventconfigurationtypedef)
-  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
-  - [ListTagsResultTypeDef](#listtagsresulttypedef)
-  - [LoadBasedAutoScalingConfigurationTypeDef](#loadbasedautoscalingconfigurationtypedef)
-  - [OperatingSystemConfigurationManagerTypeDef](#operatingsystemconfigurationmanagertypedef)
-  - [OperatingSystemTypeDef](#operatingsystemtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PermissionTypeDef](#permissiontypedef)
-  - [RaidArrayTypeDef](#raidarraytypedef)
-  - [RdsDbInstanceTypeDef](#rdsdbinstancetypedef)
-  - [RebootInstanceRequestRequestTypeDef](#rebootinstancerequestrequesttypedef)
-  - [RecipesResponseMetadataTypeDef](#recipesresponsemetadatatypedef)
-  - [RecipesTypeDef](#recipestypedef)
-  - [RegisterEcsClusterRequestRequestTypeDef](#registerecsclusterrequestrequesttypedef)
-  - [RegisterEcsClusterResultTypeDef](#registerecsclusterresulttypedef)
-  - [RegisterElasticIpRequestRequestTypeDef](#registerelasticiprequestrequesttypedef)
-  - [RegisterElasticIpResultTypeDef](#registerelasticipresulttypedef)
-  - [RegisterInstanceRequestRequestTypeDef](#registerinstancerequestrequesttypedef)
-  - [RegisterInstanceResultTypeDef](#registerinstanceresulttypedef)
-  - [RegisterRdsDbInstanceRequestRequestTypeDef](#registerrdsdbinstancerequestrequesttypedef)
-  - [RegisterVolumeRequestRequestTypeDef](#registervolumerequestrequesttypedef)
-  - [RegisterVolumeResultTypeDef](#registervolumeresulttypedef)
-  - [ReportedOsTypeDef](#reportedostypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SelfUserProfileTypeDef](#selfuserprofiletypedef)
-  - [ServiceErrorTypeDef](#serviceerrortypedef)
-  - [ServiceResourceLayerRequestTypeDef](#serviceresourcelayerrequesttypedef)
-  - [ServiceResourceStackRequestTypeDef](#serviceresourcestackrequesttypedef)
-  - [ServiceResourceStackSummaryRequestTypeDef](#serviceresourcestacksummaryrequesttypedef)
-  - [SetLoadBasedAutoScalingRequestRequestTypeDef](#setloadbasedautoscalingrequestrequesttypedef)
-  - [SetPermissionRequestRequestTypeDef](#setpermissionrequestrequesttypedef)
-  - [SetTimeBasedAutoScalingRequestRequestTypeDef](#settimebasedautoscalingrequestrequesttypedef)
-  - [ShutdownEventConfigurationTypeDef](#shutdowneventconfigurationtypedef)
-  - [SourceResponseMetadataTypeDef](#sourceresponsemetadatatypedef)
-  - [SourceTypeDef](#sourcetypedef)
-  - [SslConfigurationTypeDef](#sslconfigurationtypedef)
-  - [StackConfigurationManagerResponseMetadataTypeDef](#stackconfigurationmanagerresponsemetadatatypedef)
-  - [StackConfigurationManagerTypeDef](#stackconfigurationmanagertypedef)
-  - [StackSummaryTypeDef](#stacksummarytypedef)
-  - [StackTypeDef](#stacktypedef)
-  - [StartInstanceRequestRequestTypeDef](#startinstancerequestrequesttypedef)
-  - [StartStackRequestRequestTypeDef](#startstackrequestrequesttypedef)
-  - [StopInstanceRequestRequestTypeDef](#stopinstancerequestrequesttypedef)
-  - [StopStackRequestRequestTypeDef](#stopstackrequestrequesttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TemporaryCredentialTypeDef](#temporarycredentialtypedef)
-  - [TimeBasedAutoScalingConfigurationTypeDef](#timebasedautoscalingconfigurationtypedef)
-  - [UnassignInstanceRequestRequestTypeDef](#unassigninstancerequestrequesttypedef)
-  - [UnassignVolumeRequestRequestTypeDef](#unassignvolumerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAppRequestRequestTypeDef](#updateapprequestrequesttypedef)
-  - [UpdateElasticIpRequestRequestTypeDef](#updateelasticiprequestrequesttypedef)
-  - [UpdateInstanceRequestRequestTypeDef](#updateinstancerequestrequesttypedef)
-  - [UpdateLayerRequestRequestTypeDef](#updatelayerrequestrequesttypedef)
-  - [UpdateMyUserProfileRequestRequestTypeDef](#updatemyuserprofilerequestrequesttypedef)
-  - [UpdateRdsDbInstanceRequestRequestTypeDef](#updaterdsdbinstancerequestrequesttypedef)
-  - [UpdateStackRequestRequestTypeDef](#updatestackrequestrequesttypedef)
-  - [UpdateUserProfileRequestRequestTypeDef](#updateuserprofilerequestrequesttypedef)
-  - [UpdateVolumeRequestRequestTypeDef](#updatevolumerequestrequesttypedef)
-  - [UserProfileTypeDef](#userprofiletypedef)
-  - [VolumeConfigurationTypeDef](#volumeconfigurationtypedef)
-  - [VolumeTypeDef](#volumetypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-  - [WeeklyAutoScalingScheduleTypeDef](#weeklyautoscalingscheduletypedef)
-
-<a id="agentversiontypedef"></a>
+    Auto-generated documentation for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
+    type annotations stubs module [mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 ## AgentVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import AgentVersionTypeDef
+
+def get_value() -> AgentVersionTypeDef:
+    return {
+        "Version": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AgentVersionTypeDef(TypedDict):
+    Version: NotRequired[str],
+    ConfigurationManager: NotRequired[StackConfigurationManagerTypeDef],  # (1)
+```
 
-- `Version`: `str`
-- `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
-
-<a id="apptypedef"></a>
-
+1. See [:material-code-braces: StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef) 
 ## AppTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import AppTypeDef
+
+def get_value() -> AppTypeDef:
+    return {
+        "AppId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AppTypeDef(TypedDict):
+    AppId: NotRequired[str],
+    StackId: NotRequired[str],
+    Shortname: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    DataSources: NotRequired[List[DataSourceTypeDef]],  # (1)
+    Type: NotRequired[AppTypeType],  # (2)
+    AppSource: NotRequired[SourceTypeDef],  # (3)
+    Domains: NotRequired[List[str]],
+    EnableSsl: NotRequired[bool],
+    SslConfiguration: NotRequired[SslConfigurationTypeDef],  # (4)
+    Attributes: NotRequired[Dict[AppAttributesKeysType, str]],  # (5)
+    CreatedAt: NotRequired[str],
+    Environment: NotRequired[List[EnvironmentVariableTypeDef]],  # (6)
+```
 
-- `AppId`: `str`
-- `StackId`: `str`
-- `Shortname`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `DataSources`:
-  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
-- `Type`: [AppTypeType](./literals.md#apptypetype)
-- `AppSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `Domains`: `List`\[`str`\]
-- `EnableSsl`: `bool`
-- `SslConfiguration`:
-  [SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef)
-- `Attributes`:
-  `Dict`\[[AppAttributesKeysType](./literals.md#appattributeskeystype), `str`\]
-- `CreatedAt`: `str`
-- `Environment`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
-
-<a id="assigninstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
+3. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+4. See [:material-code-braces: SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef) 
+5. See [:material-code-brackets: AppAttributesKeysType](./literals.md#appattributeskeystype) 
+6. See [:material-code-braces: EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef) 
 ## AssignInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import AssignInstanceRequestRequestTypeDef
+
+def get_value() -> AssignInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "LayerIds": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `LayerIds`: `Sequence`\[`str`\]
-
-<a id="assignvolumerequestrequesttypedef"></a>
+```python title="Definition"
+class AssignInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    LayerIds: Sequence[str],
+```
 
 ## AssignVolumeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import AssignVolumeRequestRequestTypeDef
+
+def get_value() -> AssignVolumeRequestRequestTypeDef:
+    return {
+        "VolumeId": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeId`: `str`
-
-Optional fields:
-
-- `InstanceId`: `str`
-
-<a id="associateelasticiprequestrequesttypedef"></a>
+```python title="Definition"
+class AssignVolumeRequestRequestTypeDef(TypedDict):
+    VolumeId: str,
+    InstanceId: NotRequired[str],
+```
 
 ## AssociateElasticIpRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import AssociateElasticIpRequestRequestTypeDef
+
+def get_value() -> AssociateElasticIpRequestRequestTypeDef:
+    return {
+        "ElasticIp": ...,
+    }
 ```
 
-Required fields:
-
-- `ElasticIp`: `str`
-
-Optional fields:
-
-- `InstanceId`: `str`
-
-<a id="attachelasticloadbalancerrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateElasticIpRequestRequestTypeDef(TypedDict):
+    ElasticIp: str,
+    InstanceId: NotRequired[str],
+```
 
 ## AttachElasticLoadBalancerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import AttachElasticLoadBalancerRequestRequestTypeDef
+
+def get_value() -> AttachElasticLoadBalancerRequestRequestTypeDef:
+    return {
+        "ElasticLoadBalancerName": ...,
+        "LayerId": ...,
+    }
 ```
 
-Required fields:
-
-- `ElasticLoadBalancerName`: `str`
-- `LayerId`: `str`
-
-<a id="autoscalingthresholdstypedef"></a>
+```python title="Definition"
+class AttachElasticLoadBalancerRequestRequestTypeDef(TypedDict):
+    ElasticLoadBalancerName: str,
+    LayerId: str,
+```
 
 ## AutoScalingThresholdsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import AutoScalingThresholdsTypeDef
+
+def get_value() -> AutoScalingThresholdsTypeDef:
+    return {
+        "InstanceCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `InstanceCount`: `int`
-- `ThresholdsWaitTime`: `int`
-- `IgnoreMetricsTime`: `int`
-- `CpuThreshold`: `float`
-- `MemoryThreshold`: `float`
-- `LoadThreshold`: `float`
-- `Alarms`: `List`\[`str`\]
-
-<a id="blockdevicemappingtypedef"></a>
+```python title="Definition"
+class AutoScalingThresholdsTypeDef(TypedDict):
+    InstanceCount: NotRequired[int],
+    ThresholdsWaitTime: NotRequired[int],
+    IgnoreMetricsTime: NotRequired[int],
+    CpuThreshold: NotRequired[float],
+    MemoryThreshold: NotRequired[float],
+    LoadThreshold: NotRequired[float],
+    Alarms: NotRequired[List[str]],
+```
 
 ## BlockDeviceMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import BlockDeviceMappingTypeDef
+
+def get_value() -> BlockDeviceMappingTypeDef:
+    return {
+        "DeviceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BlockDeviceMappingTypeDef(TypedDict):
+    DeviceName: NotRequired[str],
+    NoDevice: NotRequired[str],
+    VirtualName: NotRequired[str],
+    Ebs: NotRequired[EbsBlockDeviceTypeDef],  # (1)
+```
 
-- `DeviceName`: `str`
-- `NoDevice`: `str`
-- `VirtualName`: `str`
-- `Ebs`: [EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)
-
-<a id="chefconfigurationresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef) 
 ## ChefConfigurationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ChefConfigurationResponseMetadataTypeDef
+
+def get_value() -> ChefConfigurationResponseMetadataTypeDef:
+    return {
+        "ManageBerkshelf": ...,
+        "BerkshelfVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChefConfigurationResponseMetadataTypeDef(TypedDict):
+    ManageBerkshelf: bool,
+    BerkshelfVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ManageBerkshelf`: `bool`
-- `BerkshelfVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="chefconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChefConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ChefConfigurationTypeDef
+
+def get_value() -> ChefConfigurationTypeDef:
+    return {
+        "ManageBerkshelf": ...,
+    }
 ```
 
-Optional fields:
-
-- `ManageBerkshelf`: `bool`
-- `BerkshelfVersion`: `str`
-
-<a id="clonestackrequestrequesttypedef"></a>
+```python title="Definition"
+class ChefConfigurationTypeDef(TypedDict):
+    ManageBerkshelf: NotRequired[bool],
+    BerkshelfVersion: NotRequired[str],
+```
 
 ## CloneStackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CloneStackRequestRequestTypeDef
+
+def get_value() -> CloneStackRequestRequestTypeDef:
+    return {
+        "SourceStackId": ...,
+        "ServiceRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloneStackRequestRequestTypeDef(TypedDict):
+    SourceStackId: str,
+    ServiceRoleArn: str,
+    Name: NotRequired[str],
+    Region: NotRequired[str],
+    VpcId: NotRequired[str],
+    Attributes: NotRequired[Mapping[StackAttributesKeysType, str]],  # (1)
+    DefaultInstanceProfileArn: NotRequired[str],
+    DefaultOs: NotRequired[str],
+    HostnameTheme: NotRequired[str],
+    DefaultAvailabilityZone: NotRequired[str],
+    DefaultSubnetId: NotRequired[str],
+    CustomJson: NotRequired[str],
+    ConfigurationManager: NotRequired[StackConfigurationManagerTypeDef],  # (2)
+    ChefConfiguration: NotRequired[ChefConfigurationTypeDef],  # (3)
+    UseCustomCookbooks: NotRequired[bool],
+    UseOpsworksSecurityGroups: NotRequired[bool],
+    CustomCookbooksSource: NotRequired[SourceTypeDef],  # (4)
+    DefaultSshKeyName: NotRequired[str],
+    ClonePermissions: NotRequired[bool],
+    CloneAppIds: NotRequired[Sequence[str]],
+    DefaultRootDeviceType: NotRequired[RootDeviceTypeType],  # (5)
+    AgentVersion: NotRequired[str],
+```
 
-- `SourceStackId`: `str`
-- `ServiceRoleArn`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Region`: `str`
-- `VpcId`: `str`
-- `Attributes`: `Mapping`\[`Literal['Color']` (see
-  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
-- `DefaultInstanceProfileArn`: `str`
-- `DefaultOs`: `str`
-- `HostnameTheme`: `str`
-- `DefaultAvailabilityZone`: `str`
-- `DefaultSubnetId`: `str`
-- `CustomJson`: `str`
-- `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
-- `ChefConfiguration`:
-  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
-- `UseCustomCookbooks`: `bool`
-- `UseOpsworksSecurityGroups`: `bool`
-- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `DefaultSshKeyName`: `str`
-- `ClonePermissions`: `bool`
-- `CloneAppIds`: `Sequence`\[`str`\]
-- `DefaultRootDeviceType`:
-  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
-- `AgentVersion`: `str`
-
-<a id="clonestackresulttypedef"></a>
-
+1. See [:material-code-brackets: StackAttributesKeysType](./literals.md#stackattributeskeystype) 
+2. See [:material-code-braces: StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef) 
+3. See [:material-code-braces: ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef) 
+4. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+5. See [:material-code-brackets: RootDeviceTypeType](./literals.md#rootdevicetypetype) 
 ## CloneStackResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CloneStackResultTypeDef
+
+def get_value() -> CloneStackResultTypeDef:
+    return {
+        "StackId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloneStackResultTypeDef(TypedDict):
+    StackId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StackId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cloudwatchlogsconfigurationresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CloudWatchLogsConfigurationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CloudWatchLogsConfigurationResponseMetadataTypeDef
+
+def get_value() -> CloudWatchLogsConfigurationResponseMetadataTypeDef:
+    return {
+        "Enabled": ...,
+        "LogStreams": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudWatchLogsConfigurationResponseMetadataTypeDef(TypedDict):
+    Enabled: bool,
+    LogStreams: List[CloudWatchLogsLogStreamTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Enabled`: `bool`
-- `LogStreams`:
-  `List`\[[CloudWatchLogsLogStreamTypeDef](./type_defs.md#cloudwatchlogslogstreamtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cloudwatchlogsconfigurationtypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogsLogStreamTypeDef](./type_defs.md#cloudwatchlogslogstreamtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CloudWatchLogsConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CloudWatchLogsConfigurationTypeDef
+
+def get_value() -> CloudWatchLogsConfigurationTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CloudWatchLogsConfigurationTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    LogStreams: NotRequired[Sequence[CloudWatchLogsLogStreamTypeDef]],  # (1)
+```
 
-- `Enabled`: `bool`
-- `LogStreams`:
-  `Sequence`\[[CloudWatchLogsLogStreamTypeDef](./type_defs.md#cloudwatchlogslogstreamtypedef)\]
-
-<a id="cloudwatchlogslogstreamtypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogsLogStreamTypeDef](./type_defs.md#cloudwatchlogslogstreamtypedef) 
 ## CloudWatchLogsLogStreamTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CloudWatchLogsLogStreamTypeDef
+
+def get_value() -> CloudWatchLogsLogStreamTypeDef:
+    return {
+        "LogGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CloudWatchLogsLogStreamTypeDef(TypedDict):
+    LogGroupName: NotRequired[str],
+    DatetimeFormat: NotRequired[str],
+    TimeZone: NotRequired[CloudWatchLogsTimeZoneType],  # (1)
+    File: NotRequired[str],
+    FileFingerprintLines: NotRequired[str],
+    MultiLineStartPattern: NotRequired[str],
+    InitialPosition: NotRequired[CloudWatchLogsInitialPositionType],  # (2)
+    Encoding: NotRequired[CloudWatchLogsEncodingType],  # (3)
+    BufferDuration: NotRequired[int],
+    BatchCount: NotRequired[int],
+    BatchSize: NotRequired[int],
+```
 
-- `LogGroupName`: `str`
-- `DatetimeFormat`: `str`
-- `TimeZone`:
-  [CloudWatchLogsTimeZoneType](./literals.md#cloudwatchlogstimezonetype)
-- `File`: `str`
-- `FileFingerprintLines`: `str`
-- `MultiLineStartPattern`: `str`
-- `InitialPosition`:
-  [CloudWatchLogsInitialPositionType](./literals.md#cloudwatchlogsinitialpositiontype)
-- `Encoding`:
-  [CloudWatchLogsEncodingType](./literals.md#cloudwatchlogsencodingtype)
-- `BufferDuration`: `int`
-- `BatchCount`: `int`
-- `BatchSize`: `int`
-
-<a id="commandtypedef"></a>
-
+1. See [:material-code-brackets: CloudWatchLogsTimeZoneType](./literals.md#cloudwatchlogstimezonetype) 
+2. See [:material-code-brackets: CloudWatchLogsInitialPositionType](./literals.md#cloudwatchlogsinitialpositiontype) 
+3. See [:material-code-brackets: CloudWatchLogsEncodingType](./literals.md#cloudwatchlogsencodingtype) 
 ## CommandTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CommandTypeDef
+
+def get_value() -> CommandTypeDef:
+    return {
+        "CommandId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CommandId`: `str`
-- `InstanceId`: `str`
-- `DeploymentId`: `str`
-- `CreatedAt`: `str`
-- `AcknowledgedAt`: `str`
-- `CompletedAt`: `str`
-- `Status`: `str`
-- `ExitCode`: `int`
-- `LogUrl`: `str`
-- `Type`: `str`
-
-<a id="createapprequestrequesttypedef"></a>
+```python title="Definition"
+class CommandTypeDef(TypedDict):
+    CommandId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    DeploymentId: NotRequired[str],
+    CreatedAt: NotRequired[str],
+    AcknowledgedAt: NotRequired[str],
+    CompletedAt: NotRequired[str],
+    Status: NotRequired[str],
+    ExitCode: NotRequired[int],
+    LogUrl: NotRequired[str],
+    Type: NotRequired[str],
+```
 
 ## CreateAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateAppRequestRequestTypeDef
+
+def get_value() -> CreateAppRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+        "Name": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAppRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    Name: str,
+    Type: AppTypeType,  # (1)
+    Shortname: NotRequired[str],
+    Description: NotRequired[str],
+    DataSources: NotRequired[Sequence[DataSourceTypeDef]],  # (2)
+    AppSource: NotRequired[SourceTypeDef],  # (3)
+    Domains: NotRequired[Sequence[str]],
+    EnableSsl: NotRequired[bool],
+    SslConfiguration: NotRequired[SslConfigurationTypeDef],  # (4)
+    Attributes: NotRequired[Mapping[AppAttributesKeysType, str]],  # (5)
+    Environment: NotRequired[Sequence[EnvironmentVariableTypeDef]],  # (6)
+```
 
-- `StackId`: `str`
-- `Name`: `str`
-- `Type`: [AppTypeType](./literals.md#apptypetype)
-
-Optional fields:
-
-- `Shortname`: `str`
-- `Description`: `str`
-- `DataSources`:
-  `Sequence`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
-- `AppSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `Domains`: `Sequence`\[`str`\]
-- `EnableSsl`: `bool`
-- `SslConfiguration`:
-  [SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef)
-- `Attributes`:
-  `Mapping`\[[AppAttributesKeysType](./literals.md#appattributeskeystype),
-  `str`\]
-- `Environment`:
-  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
-
-<a id="createappresulttypedef"></a>
-
+1. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
+2. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+3. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+4. See [:material-code-braces: SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef) 
+5. See [:material-code-brackets: AppAttributesKeysType](./literals.md#appattributeskeystype) 
+6. See [:material-code-braces: EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef) 
 ## CreateAppResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateAppResultTypeDef
+
+def get_value() -> CreateAppResultTypeDef:
+    return {
+        "AppId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAppResultTypeDef(TypedDict):
+    AppId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AppId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdeploymentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateDeploymentRequestRequestTypeDef
+
+def get_value() -> CreateDeploymentRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+        "Command": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    Command: DeploymentCommandTypeDef,  # (1)
+    AppId: NotRequired[str],
+    InstanceIds: NotRequired[Sequence[str]],
+    LayerIds: NotRequired[Sequence[str]],
+    Comment: NotRequired[str],
+    CustomJson: NotRequired[str],
+```
 
-- `StackId`: `str`
-- `Command`:
-  [DeploymentCommandTypeDef](./type_defs.md#deploymentcommandtypedef)
-
-Optional fields:
-
-- `AppId`: `str`
-- `InstanceIds`: `Sequence`\[`str`\]
-- `LayerIds`: `Sequence`\[`str`\]
-- `Comment`: `str`
-- `CustomJson`: `str`
-
-<a id="createdeploymentresulttypedef"></a>
-
+1. See [:material-code-braces: DeploymentCommandTypeDef](./type_defs.md#deploymentcommandtypedef) 
 ## CreateDeploymentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateDeploymentResultTypeDef
+
+def get_value() -> CreateDeploymentResultTypeDef:
+    return {
+        "DeploymentId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentResultTypeDef(TypedDict):
+    DeploymentId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeploymentId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateInstanceRequestRequestTypeDef
+
+def get_value() -> CreateInstanceRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+        "LayerIds": ...,
+        "InstanceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInstanceRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    LayerIds: Sequence[str],
+    InstanceType: str,
+    AutoScalingType: NotRequired[AutoScalingTypeType],  # (1)
+    Hostname: NotRequired[str],
+    Os: NotRequired[str],
+    AmiId: NotRequired[str],
+    SshKeyName: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    VirtualizationType: NotRequired[str],
+    SubnetId: NotRequired[str],
+    Architecture: NotRequired[ArchitectureType],  # (2)
+    RootDeviceType: NotRequired[RootDeviceTypeType],  # (3)
+    BlockDeviceMappings: NotRequired[Sequence[BlockDeviceMappingTypeDef]],  # (4)
+    InstallUpdatesOnBoot: NotRequired[bool],
+    EbsOptimized: NotRequired[bool],
+    AgentVersion: NotRequired[str],
+    Tenancy: NotRequired[str],
+```
 
-- `StackId`: `str`
-- `LayerIds`: `Sequence`\[`str`\]
-- `InstanceType`: `str`
-
-Optional fields:
-
-- `AutoScalingType`: [AutoScalingTypeType](./literals.md#autoscalingtypetype)
-- `Hostname`: `str`
-- `Os`: `str`
-- `AmiId`: `str`
-- `SshKeyName`: `str`
-- `AvailabilityZone`: `str`
-- `VirtualizationType`: `str`
-- `SubnetId`: `str`
-- `Architecture`: [ArchitectureType](./literals.md#architecturetype)
-- `RootDeviceType`: [RootDeviceTypeType](./literals.md#rootdevicetypetype)
-- `BlockDeviceMappings`:
-  `Sequence`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
-- `InstallUpdatesOnBoot`: `bool`
-- `EbsOptimized`: `bool`
-- `AgentVersion`: `str`
-- `Tenancy`: `str`
-
-<a id="createinstanceresulttypedef"></a>
-
+1. See [:material-code-brackets: AutoScalingTypeType](./literals.md#autoscalingtypetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+3. See [:material-code-brackets: RootDeviceTypeType](./literals.md#rootdevicetypetype) 
+4. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
 ## CreateInstanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateInstanceResultTypeDef
+
+def get_value() -> CreateInstanceResultTypeDef:
+    return {
+        "InstanceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInstanceResultTypeDef(TypedDict):
+    InstanceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `InstanceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createlayerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLayerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateLayerRequestRequestTypeDef
+
+def get_value() -> CreateLayerRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+        "Type": ...,
+        "Name": ...,
+        "Shortname": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLayerRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    Type: LayerTypeType,  # (1)
+    Name: str,
+    Shortname: str,
+    Attributes: NotRequired[Mapping[LayerAttributesKeysType, str]],  # (2)
+    CloudWatchLogsConfiguration: NotRequired[CloudWatchLogsConfigurationTypeDef],  # (3)
+    CustomInstanceProfileArn: NotRequired[str],
+    CustomJson: NotRequired[str],
+    CustomSecurityGroupIds: NotRequired[Sequence[str]],
+    Packages: NotRequired[Sequence[str]],
+    VolumeConfigurations: NotRequired[Sequence[VolumeConfigurationTypeDef]],  # (4)
+    EnableAutoHealing: NotRequired[bool],
+    AutoAssignElasticIps: NotRequired[bool],
+    AutoAssignPublicIps: NotRequired[bool],
+    CustomRecipes: NotRequired[RecipesTypeDef],  # (5)
+    InstallUpdatesOnBoot: NotRequired[bool],
+    UseEbsOptimizedInstances: NotRequired[bool],
+    LifecycleEventConfiguration: NotRequired[LifecycleEventConfigurationTypeDef],  # (6)
+```
 
-- `StackId`: `str`
-- `Type`: [LayerTypeType](./literals.md#layertypetype)
-- `Name`: `str`
-- `Shortname`: `str`
-
-Optional fields:
-
-- `Attributes`:
-  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
-  `str`\]
-- `CloudWatchLogsConfiguration`:
-  [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
-- `CustomInstanceProfileArn`: `str`
-- `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
-- `Packages`: `Sequence`\[`str`\]
-- `VolumeConfigurations`:
-  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
-- `EnableAutoHealing`: `bool`
-- `AutoAssignElasticIps`: `bool`
-- `AutoAssignPublicIps`: `bool`
-- `CustomRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
-- `InstallUpdatesOnBoot`: `bool`
-- `UseEbsOptimizedInstances`: `bool`
-- `LifecycleEventConfiguration`:
-  [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
-
-<a id="createlayerrequeststackcreatelayertypedef"></a>
-
+1. See [:material-code-brackets: LayerTypeType](./literals.md#layertypetype) 
+2. See [:material-code-brackets: LayerAttributesKeysType](./literals.md#layerattributeskeystype) 
+3. See [:material-code-braces: CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef) 
+4. See [:material-code-braces: VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef) 
+5. See [:material-code-braces: RecipesTypeDef](./type_defs.md#recipestypedef) 
+6. See [:material-code-braces: LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef) 
 ## CreateLayerRequestStackCreateLayerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateLayerRequestStackCreateLayerTypeDef
+
+def get_value() -> CreateLayerRequestStackCreateLayerTypeDef:
+    return {
+        "Type": ...,
+        "Name": ...,
+        "Shortname": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLayerRequestStackCreateLayerTypeDef(TypedDict):
+    Type: LayerTypeType,  # (1)
+    Name: str,
+    Shortname: str,
+    Attributes: NotRequired[Mapping[LayerAttributesKeysType, str]],  # (2)
+    CloudWatchLogsConfiguration: NotRequired[CloudWatchLogsConfigurationTypeDef],  # (3)
+    CustomInstanceProfileArn: NotRequired[str],
+    CustomJson: NotRequired[str],
+    CustomSecurityGroupIds: NotRequired[Sequence[str]],
+    Packages: NotRequired[Sequence[str]],
+    VolumeConfigurations: NotRequired[Sequence[VolumeConfigurationTypeDef]],  # (4)
+    EnableAutoHealing: NotRequired[bool],
+    AutoAssignElasticIps: NotRequired[bool],
+    AutoAssignPublicIps: NotRequired[bool],
+    CustomRecipes: NotRequired[RecipesTypeDef],  # (5)
+    InstallUpdatesOnBoot: NotRequired[bool],
+    UseEbsOptimizedInstances: NotRequired[bool],
+    LifecycleEventConfiguration: NotRequired[LifecycleEventConfigurationTypeDef],  # (6)
+```
 
-- `Type`: [LayerTypeType](./literals.md#layertypetype)
-- `Name`: `str`
-- `Shortname`: `str`
-
-Optional fields:
-
-- `Attributes`:
-  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
-  `str`\]
-- `CloudWatchLogsConfiguration`:
-  [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
-- `CustomInstanceProfileArn`: `str`
-- `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
-- `Packages`: `Sequence`\[`str`\]
-- `VolumeConfigurations`:
-  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
-- `EnableAutoHealing`: `bool`
-- `AutoAssignElasticIps`: `bool`
-- `AutoAssignPublicIps`: `bool`
-- `CustomRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
-- `InstallUpdatesOnBoot`: `bool`
-- `UseEbsOptimizedInstances`: `bool`
-- `LifecycleEventConfiguration`:
-  [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
-
-<a id="createlayerresulttypedef"></a>
-
+1. See [:material-code-brackets: LayerTypeType](./literals.md#layertypetype) 
+2. See [:material-code-brackets: LayerAttributesKeysType](./literals.md#layerattributeskeystype) 
+3. See [:material-code-braces: CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef) 
+4. See [:material-code-braces: VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef) 
+5. See [:material-code-braces: RecipesTypeDef](./type_defs.md#recipestypedef) 
+6. See [:material-code-braces: LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef) 
 ## CreateLayerResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateLayerResultTypeDef
+
+def get_value() -> CreateLayerResultTypeDef:
+    return {
+        "LayerId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLayerResultTypeDef(TypedDict):
+    LayerId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LayerId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstackrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateStackRequestRequestTypeDef
+
+def get_value() -> CreateStackRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Region": ...,
+        "ServiceRoleArn": ...,
+        "DefaultInstanceProfileArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Region: str,
+    ServiceRoleArn: str,
+    DefaultInstanceProfileArn: str,
+    VpcId: NotRequired[str],
+    Attributes: NotRequired[Mapping[StackAttributesKeysType, str]],  # (1)
+    DefaultOs: NotRequired[str],
+    HostnameTheme: NotRequired[str],
+    DefaultAvailabilityZone: NotRequired[str],
+    DefaultSubnetId: NotRequired[str],
+    CustomJson: NotRequired[str],
+    ConfigurationManager: NotRequired[StackConfigurationManagerTypeDef],  # (2)
+    ChefConfiguration: NotRequired[ChefConfigurationTypeDef],  # (3)
+    UseCustomCookbooks: NotRequired[bool],
+    UseOpsworksSecurityGroups: NotRequired[bool],
+    CustomCookbooksSource: NotRequired[SourceTypeDef],  # (4)
+    DefaultSshKeyName: NotRequired[str],
+    DefaultRootDeviceType: NotRequired[RootDeviceTypeType],  # (5)
+    AgentVersion: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Region`: `str`
-- `ServiceRoleArn`: `str`
-- `DefaultInstanceProfileArn`: `str`
-
-Optional fields:
-
-- `VpcId`: `str`
-- `Attributes`: `Mapping`\[`Literal['Color']` (see
-  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
-- `DefaultOs`: `str`
-- `HostnameTheme`: `str`
-- `DefaultAvailabilityZone`: `str`
-- `DefaultSubnetId`: `str`
-- `CustomJson`: `str`
-- `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
-- `ChefConfiguration`:
-  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
-- `UseCustomCookbooks`: `bool`
-- `UseOpsworksSecurityGroups`: `bool`
-- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `DefaultSshKeyName`: `str`
-- `DefaultRootDeviceType`:
-  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
-- `AgentVersion`: `str`
-
-<a id="createstackrequestserviceresourcecreatestacktypedef"></a>
-
+1. See [:material-code-brackets: StackAttributesKeysType](./literals.md#stackattributeskeystype) 
+2. See [:material-code-braces: StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef) 
+3. See [:material-code-braces: ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef) 
+4. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+5. See [:material-code-brackets: RootDeviceTypeType](./literals.md#rootdevicetypetype) 
 ## CreateStackRequestServiceResourceCreateStackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateStackRequestServiceResourceCreateStackTypeDef
+
+def get_value() -> CreateStackRequestServiceResourceCreateStackTypeDef:
+    return {
+        "Name": ...,
+        "Region": ...,
+        "ServiceRoleArn": ...,
+        "DefaultInstanceProfileArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackRequestServiceResourceCreateStackTypeDef(TypedDict):
+    Name: str,
+    Region: str,
+    ServiceRoleArn: str,
+    DefaultInstanceProfileArn: str,
+    VpcId: NotRequired[str],
+    Attributes: NotRequired[Mapping[StackAttributesKeysType, str]],  # (1)
+    DefaultOs: NotRequired[str],
+    HostnameTheme: NotRequired[str],
+    DefaultAvailabilityZone: NotRequired[str],
+    DefaultSubnetId: NotRequired[str],
+    CustomJson: NotRequired[str],
+    ConfigurationManager: NotRequired[StackConfigurationManagerTypeDef],  # (2)
+    ChefConfiguration: NotRequired[ChefConfigurationTypeDef],  # (3)
+    UseCustomCookbooks: NotRequired[bool],
+    UseOpsworksSecurityGroups: NotRequired[bool],
+    CustomCookbooksSource: NotRequired[SourceTypeDef],  # (4)
+    DefaultSshKeyName: NotRequired[str],
+    DefaultRootDeviceType: NotRequired[RootDeviceTypeType],  # (5)
+    AgentVersion: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Region`: `str`
-- `ServiceRoleArn`: `str`
-- `DefaultInstanceProfileArn`: `str`
-
-Optional fields:
-
-- `VpcId`: `str`
-- `Attributes`: `Mapping`\[`Literal['Color']` (see
-  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
-- `DefaultOs`: `str`
-- `HostnameTheme`: `str`
-- `DefaultAvailabilityZone`: `str`
-- `DefaultSubnetId`: `str`
-- `CustomJson`: `str`
-- `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
-- `ChefConfiguration`:
-  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
-- `UseCustomCookbooks`: `bool`
-- `UseOpsworksSecurityGroups`: `bool`
-- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `DefaultSshKeyName`: `str`
-- `DefaultRootDeviceType`:
-  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
-- `AgentVersion`: `str`
-
-<a id="createstackresulttypedef"></a>
-
+1. See [:material-code-brackets: StackAttributesKeysType](./literals.md#stackattributeskeystype) 
+2. See [:material-code-braces: StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef) 
+3. See [:material-code-braces: ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef) 
+4. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+5. See [:material-code-brackets: RootDeviceTypeType](./literals.md#rootdevicetypetype) 
 ## CreateStackResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateStackResultTypeDef
+
+def get_value() -> CreateStackResultTypeDef:
+    return {
+        "StackId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStackResultTypeDef(TypedDict):
+    StackId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StackId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateUserProfileRequestRequestTypeDef
+
+def get_value() -> CreateUserProfileRequestRequestTypeDef:
+    return {
+        "IamUserArn": ...,
+    }
 ```
 
-Required fields:
-
-- `IamUserArn`: `str`
-
-Optional fields:
-
-- `SshUsername`: `str`
-- `SshPublicKey`: `str`
-- `AllowSelfManagement`: `bool`
-
-<a id="createuserprofileresulttypedef"></a>
+```python title="Definition"
+class CreateUserProfileRequestRequestTypeDef(TypedDict):
+    IamUserArn: str,
+    SshUsername: NotRequired[str],
+    SshPublicKey: NotRequired[str],
+    AllowSelfManagement: NotRequired[bool],
+```
 
 ## CreateUserProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import CreateUserProfileResultTypeDef
+
+def get_value() -> CreateUserProfileResultTypeDef:
+    return {
+        "IamUserArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserProfileResultTypeDef(TypedDict):
+    IamUserArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `IamUserArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datasourcetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DataSourceTypeDef
+
+def get_value() -> DataSourceTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
-
-- `Type`: `str`
-- `Arn`: `str`
-- `DatabaseName`: `str`
-
-<a id="deleteapprequestrequesttypedef"></a>
+```python title="Definition"
+class DataSourceTypeDef(TypedDict):
+    Type: NotRequired[str],
+    Arn: NotRequired[str],
+    DatabaseName: NotRequired[str],
+```
 
 ## DeleteAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeleteAppRequestRequestTypeDef
+
+def get_value() -> DeleteAppRequestRequestTypeDef:
+    return {
+        "AppId": ...,
+    }
 ```
 
-Required fields:
-
-- `AppId`: `str`
-
-<a id="deleteinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAppRequestRequestTypeDef(TypedDict):
+    AppId: str,
+```
 
 ## DeleteInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeleteInstanceRequestRequestTypeDef
+
+def get_value() -> DeleteInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `DeleteElasticIp`: `bool`
-- `DeleteVolumes`: `bool`
-
-<a id="deletelayerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    DeleteElasticIp: NotRequired[bool],
+    DeleteVolumes: NotRequired[bool],
+```
 
 ## DeleteLayerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeleteLayerRequestRequestTypeDef
+
+def get_value() -> DeleteLayerRequestRequestTypeDef:
+    return {
+        "LayerId": ...,
+    }
 ```
 
-Required fields:
-
-- `LayerId`: `str`
-
-<a id="deletestackrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteLayerRequestRequestTypeDef(TypedDict):
+    LayerId: str,
+```
 
 ## DeleteStackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeleteStackRequestRequestTypeDef
+
+def get_value() -> DeleteStackRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackId`: `str`
-
-<a id="deleteuserprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteStackRequestRequestTypeDef(TypedDict):
+    StackId: str,
+```
 
 ## DeleteUserProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeleteUserProfileRequestRequestTypeDef
+
+def get_value() -> DeleteUserProfileRequestRequestTypeDef:
+    return {
+        "IamUserArn": ...,
+    }
 ```
 
-Required fields:
-
-- `IamUserArn`: `str`
-
-<a id="deploymentcommandtypedef"></a>
+```python title="Definition"
+class DeleteUserProfileRequestRequestTypeDef(TypedDict):
+    IamUserArn: str,
+```
 
 ## DeploymentCommandTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeploymentCommandTypeDef
+
+def get_value() -> DeploymentCommandTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeploymentCommandTypeDef(TypedDict):
+    Name: DeploymentCommandNameType,  # (1)
+    Args: NotRequired[Mapping[str, Sequence[str]]],
+```
 
-- `Name`: [DeploymentCommandNameType](./literals.md#deploymentcommandnametype)
-
-Optional fields:
-
-- `Args`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-
-<a id="deploymenttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentCommandNameType](./literals.md#deploymentcommandnametype) 
 ## DeploymentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeploymentTypeDef
+
+def get_value() -> DeploymentTypeDef:
+    return {
+        "DeploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentTypeDef(TypedDict):
+    DeploymentId: NotRequired[str],
+    StackId: NotRequired[str],
+    AppId: NotRequired[str],
+    CreatedAt: NotRequired[str],
+    CompletedAt: NotRequired[str],
+    Duration: NotRequired[int],
+    IamUserArn: NotRequired[str],
+    Comment: NotRequired[str],
+    Command: NotRequired[DeploymentCommandTypeDef],  # (1)
+    Status: NotRequired[str],
+    CustomJson: NotRequired[str],
+    InstanceIds: NotRequired[List[str]],
+```
 
-- `DeploymentId`: `str`
-- `StackId`: `str`
-- `AppId`: `str`
-- `CreatedAt`: `str`
-- `CompletedAt`: `str`
-- `Duration`: `int`
-- `IamUserArn`: `str`
-- `Comment`: `str`
-- `Command`:
-  [DeploymentCommandTypeDef](./type_defs.md#deploymentcommandtypedef)
-- `Status`: `str`
-- `CustomJson`: `str`
-- `InstanceIds`: `List`\[`str`\]
-
-<a id="deregisterecsclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeploymentCommandTypeDef](./type_defs.md#deploymentcommandtypedef) 
 ## DeregisterEcsClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeregisterEcsClusterRequestRequestTypeDef
+
+def get_value() -> DeregisterEcsClusterRequestRequestTypeDef:
+    return {
+        "EcsClusterArn": ...,
+    }
 ```
 
-Required fields:
-
-- `EcsClusterArn`: `str`
-
-<a id="deregisterelasticiprequestrequesttypedef"></a>
+```python title="Definition"
+class DeregisterEcsClusterRequestRequestTypeDef(TypedDict):
+    EcsClusterArn: str,
+```
 
 ## DeregisterElasticIpRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeregisterElasticIpRequestRequestTypeDef
+
+def get_value() -> DeregisterElasticIpRequestRequestTypeDef:
+    return {
+        "ElasticIp": ...,
+    }
 ```
 
-Required fields:
-
-- `ElasticIp`: `str`
-
-<a id="deregisterinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class DeregisterElasticIpRequestRequestTypeDef(TypedDict):
+    ElasticIp: str,
+```
 
 ## DeregisterInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeregisterInstanceRequestRequestTypeDef
+
+def get_value() -> DeregisterInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-<a id="deregisterrdsdbinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class DeregisterInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+```
 
 ## DeregisterRdsDbInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeregisterRdsDbInstanceRequestRequestTypeDef
+
+def get_value() -> DeregisterRdsDbInstanceRequestRequestTypeDef:
+    return {
+        "RdsDbInstanceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RdsDbInstanceArn`: `str`
-
-<a id="deregistervolumerequestrequesttypedef"></a>
+```python title="Definition"
+class DeregisterRdsDbInstanceRequestRequestTypeDef(TypedDict):
+    RdsDbInstanceArn: str,
+```
 
 ## DeregisterVolumeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DeregisterVolumeRequestRequestTypeDef
+
+def get_value() -> DeregisterVolumeRequestRequestTypeDef:
+    return {
+        "VolumeId": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeId`: `str`
-
-<a id="describeagentversionsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeregisterVolumeRequestRequestTypeDef(TypedDict):
+    VolumeId: str,
+```
 
 ## DescribeAgentVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeAgentVersionsRequestRequestTypeDef
+
+def get_value() -> DescribeAgentVersionsRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeAgentVersionsRequestRequestTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    ConfigurationManager: NotRequired[StackConfigurationManagerTypeDef],  # (1)
+```
 
-- `StackId`: `str`
-- `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
-
-<a id="describeagentversionsresulttypedef"></a>
-
+1. See [:material-code-braces: StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef) 
 ## DescribeAgentVersionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeAgentVersionsResultTypeDef
+
+def get_value() -> DescribeAgentVersionsResultTypeDef:
+    return {
+        "AgentVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAgentVersionsResultTypeDef(TypedDict):
+    AgentVersions: List[AgentVersionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AgentVersions`:
-  `List`\[[AgentVersionTypeDef](./type_defs.md#agentversiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AgentVersionTypeDef](./type_defs.md#agentversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAppsRequestAppExistsWaitTypeDef
 
-<a id="describeappsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_opsworks.type_defs import DescribeAppsRequestAppExistsWaitTypeDef
 
+def get_value() -> DescribeAppsRequestAppExistsWaitTypeDef:
+    return {
+        "StackId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAppsRequestAppExistsWaitTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    AppIds: NotRequired[Sequence[str]],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeAppsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeAppsRequestRequestTypeDef
+
+def get_value() -> DescribeAppsRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackId`: `str`
-- `AppIds`: `Sequence`\[`str`\]
-
-<a id="describeappsresulttypedef"></a>
+```python title="Definition"
+class DescribeAppsRequestRequestTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    AppIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeAppsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeAppsResultTypeDef
+
+def get_value() -> DescribeAppsResultTypeDef:
+    return {
+        "Apps": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAppsResultTypeDef(TypedDict):
+    Apps: List[AppTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Apps`: `List`\[[AppTypeDef](./type_defs.md#apptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecommandsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCommandsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeCommandsRequestRequestTypeDef
+
+def get_value() -> DescribeCommandsRequestRequestTypeDef:
+    return {
+        "DeploymentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeploymentId`: `str`
-- `InstanceId`: `str`
-- `CommandIds`: `Sequence`\[`str`\]
-
-<a id="describecommandsresulttypedef"></a>
+```python title="Definition"
+class DescribeCommandsRequestRequestTypeDef(TypedDict):
+    DeploymentId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    CommandIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeCommandsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeCommandsResultTypeDef
+
+def get_value() -> DescribeCommandsResultTypeDef:
+    return {
+        "Commands": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCommandsResultTypeDef(TypedDict):
+    Commands: List[CommandTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Commands`: `List`\[[CommandTypeDef](./type_defs.md#commandtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDeploymentsRequestDeploymentSuccessfulWaitTypeDef
 
-<a id="describedeploymentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_opsworks.type_defs import DescribeDeploymentsRequestDeploymentSuccessfulWaitTypeDef
 
+def get_value() -> DescribeDeploymentsRequestDeploymentSuccessfulWaitTypeDef:
+    return {
+        "StackId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDeploymentsRequestDeploymentSuccessfulWaitTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    AppId: NotRequired[str],
+    DeploymentIds: NotRequired[Sequence[str]],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeDeploymentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeDeploymentsRequestRequestTypeDef
+
+def get_value() -> DescribeDeploymentsRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackId`: `str`
-- `AppId`: `str`
-- `DeploymentIds`: `Sequence`\[`str`\]
-
-<a id="describedeploymentsresulttypedef"></a>
+```python title="Definition"
+class DescribeDeploymentsRequestRequestTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    AppId: NotRequired[str],
+    DeploymentIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeDeploymentsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeDeploymentsResultTypeDef
+
+def get_value() -> DescribeDeploymentsResultTypeDef:
+    return {
+        "Deployments": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDeploymentsResultTypeDef(TypedDict):
+    Deployments: List[DeploymentTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Deployments`:
-  `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEcsClustersRequestDescribeEcsClustersPaginateTypeDef
 
-<a id="describeecsclustersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_opsworks.type_defs import DescribeEcsClustersRequestDescribeEcsClustersPaginateTypeDef
 
+def get_value() -> DescribeEcsClustersRequestDescribeEcsClustersPaginateTypeDef:
+    return {
+        "EcsClusterArns": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEcsClustersRequestDescribeEcsClustersPaginateTypeDef(TypedDict):
+    EcsClusterArns: NotRequired[Sequence[str]],
+    StackId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEcsClustersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeEcsClustersRequestRequestTypeDef
+
+def get_value() -> DescribeEcsClustersRequestRequestTypeDef:
+    return {
+        "EcsClusterArns": ...,
+    }
 ```
 
-Optional fields:
-
-- `EcsClusterArns`: `Sequence`\[`str`\]
-- `StackId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeecsclustersresulttypedef"></a>
+```python title="Definition"
+class DescribeEcsClustersRequestRequestTypeDef(TypedDict):
+    EcsClusterArns: NotRequired[Sequence[str]],
+    StackId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeEcsClustersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeEcsClustersResultTypeDef
+
+def get_value() -> DescribeEcsClustersResultTypeDef:
+    return {
+        "EcsClusters": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEcsClustersResultTypeDef(TypedDict):
+    EcsClusters: List[EcsClusterTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EcsClusters`:
-  `List`\[[EcsClusterTypeDef](./type_defs.md#ecsclustertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeelasticipsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EcsClusterTypeDef](./type_defs.md#ecsclustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeElasticIpsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeElasticIpsRequestRequestTypeDef
+
+def get_value() -> DescribeElasticIpsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `InstanceId`: `str`
-- `StackId`: `str`
-- `Ips`: `Sequence`\[`str`\]
-
-<a id="describeelasticipsresulttypedef"></a>
+```python title="Definition"
+class DescribeElasticIpsRequestRequestTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    StackId: NotRequired[str],
+    Ips: NotRequired[Sequence[str]],
+```
 
 ## DescribeElasticIpsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeElasticIpsResultTypeDef
+
+def get_value() -> DescribeElasticIpsResultTypeDef:
+    return {
+        "ElasticIps": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeElasticIpsResultTypeDef(TypedDict):
+    ElasticIps: List[ElasticIpTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ElasticIps`: `List`\[[ElasticIpTypeDef](./type_defs.md#elasticiptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeelasticloadbalancersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ElasticIpTypeDef](./type_defs.md#elasticiptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeElasticLoadBalancersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeElasticLoadBalancersRequestRequestTypeDef
+
+def get_value() -> DescribeElasticLoadBalancersRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackId`: `str`
-- `LayerIds`: `Sequence`\[`str`\]
-
-<a id="describeelasticloadbalancersresulttypedef"></a>
+```python title="Definition"
+class DescribeElasticLoadBalancersRequestRequestTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    LayerIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeElasticLoadBalancersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeElasticLoadBalancersResultTypeDef
+
+def get_value() -> DescribeElasticLoadBalancersResultTypeDef:
+    return {
+        "ElasticLoadBalancers": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeElasticLoadBalancersResultTypeDef(TypedDict):
+    ElasticLoadBalancers: List[ElasticLoadBalancerTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ElasticLoadBalancers`:
-  `List`\[[ElasticLoadBalancerTypeDef](./type_defs.md#elasticloadbalancertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ElasticLoadBalancerTypeDef](./type_defs.md#elasticloadbalancertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeInstancesRequestInstanceOnlineWaitTypeDef
 
-<a id="describeinstancesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_opsworks.type_defs import DescribeInstancesRequestInstanceOnlineWaitTypeDef
 
+def get_value() -> DescribeInstancesRequestInstanceOnlineWaitTypeDef:
+    return {
+        "StackId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstancesRequestInstanceOnlineWaitTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    LayerId: NotRequired[str],
+    InstanceIds: NotRequired[Sequence[str]],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeInstancesRequestInstanceRegisteredWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opsworks.type_defs import DescribeInstancesRequestInstanceRegisteredWaitTypeDef
+
+def get_value() -> DescribeInstancesRequestInstanceRegisteredWaitTypeDef:
+    return {
+        "StackId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstancesRequestInstanceRegisteredWaitTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    LayerId: NotRequired[str],
+    InstanceIds: NotRequired[Sequence[str]],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeInstancesRequestInstanceStoppedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opsworks.type_defs import DescribeInstancesRequestInstanceStoppedWaitTypeDef
+
+def get_value() -> DescribeInstancesRequestInstanceStoppedWaitTypeDef:
+    return {
+        "StackId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstancesRequestInstanceStoppedWaitTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    LayerId: NotRequired[str],
+    InstanceIds: NotRequired[Sequence[str]],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeInstancesRequestInstanceTerminatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_opsworks.type_defs import DescribeInstancesRequestInstanceTerminatedWaitTypeDef
+
+def get_value() -> DescribeInstancesRequestInstanceTerminatedWaitTypeDef:
+    return {
+        "StackId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeInstancesRequestInstanceTerminatedWaitTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    LayerId: NotRequired[str],
+    InstanceIds: NotRequired[Sequence[str]],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeInstancesRequestRequestTypeDef
+
+def get_value() -> DescribeInstancesRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackId`: `str`
-- `LayerId`: `str`
-- `InstanceIds`: `Sequence`\[`str`\]
-
-<a id="describeinstancesresulttypedef"></a>
+```python title="Definition"
+class DescribeInstancesRequestRequestTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    LayerId: NotRequired[str],
+    InstanceIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeInstancesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeInstancesResultTypeDef
+
+def get_value() -> DescribeInstancesResultTypeDef:
+    return {
+        "Instances": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstancesResultTypeDef(TypedDict):
+    Instances: List[InstanceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describelayersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLayersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeLayersRequestRequestTypeDef
+
+def get_value() -> DescribeLayersRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackId`: `str`
-- `LayerIds`: `Sequence`\[`str`\]
-
-<a id="describelayersresulttypedef"></a>
+```python title="Definition"
+class DescribeLayersRequestRequestTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    LayerIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeLayersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeLayersResultTypeDef
+
+def get_value() -> DescribeLayersResultTypeDef:
+    return {
+        "Layers": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLayersResultTypeDef(TypedDict):
+    Layers: List[LayerTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Layers`: `List`\[[LayerTypeDef](./type_defs.md#layertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeloadbasedautoscalingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LayerTypeDef](./type_defs.md#layertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLoadBasedAutoScalingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeLoadBasedAutoScalingRequestRequestTypeDef
+
+def get_value() -> DescribeLoadBasedAutoScalingRequestRequestTypeDef:
+    return {
+        "LayerIds": ...,
+    }
 ```
 
-Required fields:
-
-- `LayerIds`: `Sequence`\[`str`\]
-
-<a id="describeloadbasedautoscalingresulttypedef"></a>
+```python title="Definition"
+class DescribeLoadBasedAutoScalingRequestRequestTypeDef(TypedDict):
+    LayerIds: Sequence[str],
+```
 
 ## DescribeLoadBasedAutoScalingResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeLoadBasedAutoScalingResultTypeDef
+
+def get_value() -> DescribeLoadBasedAutoScalingResultTypeDef:
+    return {
+        "LoadBasedAutoScalingConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLoadBasedAutoScalingResultTypeDef(TypedDict):
+    LoadBasedAutoScalingConfigurations: List[LoadBasedAutoScalingConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LoadBasedAutoScalingConfigurations`:
-  `List`\[[LoadBasedAutoScalingConfigurationTypeDef](./type_defs.md#loadbasedautoscalingconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describemyuserprofileresulttypedef"></a>
-
+1. See [:material-code-braces: LoadBasedAutoScalingConfigurationTypeDef](./type_defs.md#loadbasedautoscalingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMyUserProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeMyUserProfileResultTypeDef
+
+def get_value() -> DescribeMyUserProfileResultTypeDef:
+    return {
+        "UserProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMyUserProfileResultTypeDef(TypedDict):
+    UserProfile: SelfUserProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserProfile`:
-  [SelfUserProfileTypeDef](./type_defs.md#selfuserprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeoperatingsystemsresponsetypedef"></a>
-
+1. See [:material-code-braces: SelfUserProfileTypeDef](./type_defs.md#selfuserprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOperatingSystemsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeOperatingSystemsResponseTypeDef
+
+def get_value() -> DescribeOperatingSystemsResponseTypeDef:
+    return {
+        "OperatingSystems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOperatingSystemsResponseTypeDef(TypedDict):
+    OperatingSystems: List[OperatingSystemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OperatingSystems`:
-  `List`\[[OperatingSystemTypeDef](./type_defs.md#operatingsystemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OperatingSystemTypeDef](./type_defs.md#operatingsystemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribePermissionsRequestRequestTypeDef
+
+def get_value() -> DescribePermissionsRequestRequestTypeDef:
+    return {
+        "IamUserArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `IamUserArn`: `str`
-- `StackId`: `str`
-
-<a id="describepermissionsresulttypedef"></a>
+```python title="Definition"
+class DescribePermissionsRequestRequestTypeDef(TypedDict):
+    IamUserArn: NotRequired[str],
+    StackId: NotRequired[str],
+```
 
 ## DescribePermissionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribePermissionsResultTypeDef
+
+def get_value() -> DescribePermissionsResultTypeDef:
+    return {
+        "Permissions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePermissionsResultTypeDef(TypedDict):
+    Permissions: List[PermissionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Permissions`:
-  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeraidarraysrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PermissionTypeDef](./type_defs.md#permissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRaidArraysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeRaidArraysRequestRequestTypeDef
+
+def get_value() -> DescribeRaidArraysRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `InstanceId`: `str`
-- `StackId`: `str`
-- `RaidArrayIds`: `Sequence`\[`str`\]
-
-<a id="describeraidarraysresulttypedef"></a>
+```python title="Definition"
+class DescribeRaidArraysRequestRequestTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    StackId: NotRequired[str],
+    RaidArrayIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeRaidArraysResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeRaidArraysResultTypeDef
+
+def get_value() -> DescribeRaidArraysResultTypeDef:
+    return {
+        "RaidArrays": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRaidArraysResultTypeDef(TypedDict):
+    RaidArrays: List[RaidArrayTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RaidArrays`: `List`\[[RaidArrayTypeDef](./type_defs.md#raidarraytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerdsdbinstancesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RaidArrayTypeDef](./type_defs.md#raidarraytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRdsDbInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeRdsDbInstancesRequestRequestTypeDef
+
+def get_value() -> DescribeRdsDbInstancesRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackId`: `str`
-
-Optional fields:
-
-- `RdsDbInstanceArns`: `Sequence`\[`str`\]
-
-<a id="describerdsdbinstancesresulttypedef"></a>
+```python title="Definition"
+class DescribeRdsDbInstancesRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    RdsDbInstanceArns: NotRequired[Sequence[str]],
+```
 
 ## DescribeRdsDbInstancesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeRdsDbInstancesResultTypeDef
+
+def get_value() -> DescribeRdsDbInstancesResultTypeDef:
+    return {
+        "RdsDbInstances": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRdsDbInstancesResultTypeDef(TypedDict):
+    RdsDbInstances: List[RdsDbInstanceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RdsDbInstances`:
-  `List`\[[RdsDbInstanceTypeDef](./type_defs.md#rdsdbinstancetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeserviceerrorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RdsDbInstanceTypeDef](./type_defs.md#rdsdbinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeServiceErrorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeServiceErrorsRequestRequestTypeDef
+
+def get_value() -> DescribeServiceErrorsRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackId`: `str`
-- `InstanceId`: `str`
-- `ServiceErrorIds`: `Sequence`\[`str`\]
-
-<a id="describeserviceerrorsresulttypedef"></a>
+```python title="Definition"
+class DescribeServiceErrorsRequestRequestTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    ServiceErrorIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeServiceErrorsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeServiceErrorsResultTypeDef
+
+def get_value() -> DescribeServiceErrorsResultTypeDef:
+    return {
+        "ServiceErrors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServiceErrorsResultTypeDef(TypedDict):
+    ServiceErrors: List[ServiceErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServiceErrors`:
-  `List`\[[ServiceErrorTypeDef](./type_defs.md#serviceerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestackprovisioningparametersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceErrorTypeDef](./type_defs.md#serviceerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackProvisioningParametersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeStackProvisioningParametersRequestRequestTypeDef
+
+def get_value() -> DescribeStackProvisioningParametersRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackId`: `str`
-
-<a id="describestackprovisioningparametersresulttypedef"></a>
+```python title="Definition"
+class DescribeStackProvisioningParametersRequestRequestTypeDef(TypedDict):
+    StackId: str,
+```
 
 ## DescribeStackProvisioningParametersResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeStackProvisioningParametersResultTypeDef
+
+def get_value() -> DescribeStackProvisioningParametersResultTypeDef:
+    return {
+        "AgentInstallerUrl": ...,
+        "Parameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackProvisioningParametersResultTypeDef(TypedDict):
+    AgentInstallerUrl: str,
+    Parameters: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AgentInstallerUrl`: `str`
-- `Parameters`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestacksummaryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStackSummaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeStackSummaryRequestRequestTypeDef
+
+def get_value() -> DescribeStackSummaryRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackId`: `str`
-
-<a id="describestacksummaryresulttypedef"></a>
+```python title="Definition"
+class DescribeStackSummaryRequestRequestTypeDef(TypedDict):
+    StackId: str,
+```
 
 ## DescribeStackSummaryResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeStackSummaryResultTypeDef
+
+def get_value() -> DescribeStackSummaryResultTypeDef:
+    return {
+        "StackSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStackSummaryResultTypeDef(TypedDict):
+    StackSummary: StackSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StackSummary`: [StackSummaryTypeDef](./type_defs.md#stacksummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestacksrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StackSummaryTypeDef](./type_defs.md#stacksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStacksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeStacksRequestRequestTypeDef
+
+def get_value() -> DescribeStacksRequestRequestTypeDef:
+    return {
+        "StackIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackIds`: `Sequence`\[`str`\]
-
-<a id="describestacksresulttypedef"></a>
+```python title="Definition"
+class DescribeStacksRequestRequestTypeDef(TypedDict):
+    StackIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeStacksResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeStacksResultTypeDef
+
+def get_value() -> DescribeStacksResultTypeDef:
+    return {
+        "Stacks": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStacksResultTypeDef(TypedDict):
+    Stacks: List[StackTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Stacks`: `List`\[[StackTypeDef](./type_defs.md#stacktypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetimebasedautoscalingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StackTypeDef](./type_defs.md#stacktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTimeBasedAutoScalingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeTimeBasedAutoScalingRequestRequestTypeDef
+
+def get_value() -> DescribeTimeBasedAutoScalingRequestRequestTypeDef:
+    return {
+        "InstanceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceIds`: `Sequence`\[`str`\]
-
-<a id="describetimebasedautoscalingresulttypedef"></a>
+```python title="Definition"
+class DescribeTimeBasedAutoScalingRequestRequestTypeDef(TypedDict):
+    InstanceIds: Sequence[str],
+```
 
 ## DescribeTimeBasedAutoScalingResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeTimeBasedAutoScalingResultTypeDef
+
+def get_value() -> DescribeTimeBasedAutoScalingResultTypeDef:
+    return {
+        "TimeBasedAutoScalingConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTimeBasedAutoScalingResultTypeDef(TypedDict):
+    TimeBasedAutoScalingConfigurations: List[TimeBasedAutoScalingConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TimeBasedAutoScalingConfigurations`:
-  `List`\[[TimeBasedAutoScalingConfigurationTypeDef](./type_defs.md#timebasedautoscalingconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuserprofilesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TimeBasedAutoScalingConfigurationTypeDef](./type_defs.md#timebasedautoscalingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeUserProfilesRequestRequestTypeDef
+
+def get_value() -> DescribeUserProfilesRequestRequestTypeDef:
+    return {
+        "IamUserArns": ...,
+    }
 ```
 
-Optional fields:
-
-- `IamUserArns`: `Sequence`\[`str`\]
-
-<a id="describeuserprofilesresulttypedef"></a>
+```python title="Definition"
+class DescribeUserProfilesRequestRequestTypeDef(TypedDict):
+    IamUserArns: NotRequired[Sequence[str]],
+```
 
 ## DescribeUserProfilesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeUserProfilesResultTypeDef
+
+def get_value() -> DescribeUserProfilesResultTypeDef:
+    return {
+        "UserProfiles": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUserProfilesResultTypeDef(TypedDict):
+    UserProfiles: List[UserProfileTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserProfiles`:
-  `List`\[[UserProfileTypeDef](./type_defs.md#userprofiletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevolumesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserProfileTypeDef](./type_defs.md#userprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVolumesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeVolumesRequestRequestTypeDef
+
+def get_value() -> DescribeVolumesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `InstanceId`: `str`
-- `StackId`: `str`
-- `RaidArrayId`: `str`
-- `VolumeIds`: `Sequence`\[`str`\]
-
-<a id="describevolumesresulttypedef"></a>
+```python title="Definition"
+class DescribeVolumesRequestRequestTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    StackId: NotRequired[str],
+    RaidArrayId: NotRequired[str],
+    VolumeIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeVolumesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DescribeVolumesResultTypeDef
+
+def get_value() -> DescribeVolumesResultTypeDef:
+    return {
+        "Volumes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVolumesResultTypeDef(TypedDict):
+    Volumes: List[VolumeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detachelasticloadbalancerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VolumeTypeDef](./type_defs.md#volumetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetachElasticLoadBalancerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DetachElasticLoadBalancerRequestRequestTypeDef
+
+def get_value() -> DetachElasticLoadBalancerRequestRequestTypeDef:
+    return {
+        "ElasticLoadBalancerName": ...,
+        "LayerId": ...,
+    }
 ```
 
-Required fields:
-
-- `ElasticLoadBalancerName`: `str`
-- `LayerId`: `str`
-
-<a id="disassociateelasticiprequestrequesttypedef"></a>
+```python title="Definition"
+class DetachElasticLoadBalancerRequestRequestTypeDef(TypedDict):
+    ElasticLoadBalancerName: str,
+    LayerId: str,
+```
 
 ## DisassociateElasticIpRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import DisassociateElasticIpRequestRequestTypeDef
+
+def get_value() -> DisassociateElasticIpRequestRequestTypeDef:
+    return {
+        "ElasticIp": ...,
+    }
 ```
 
-Required fields:
-
-- `ElasticIp`: `str`
-
-<a id="ebsblockdevicetypedef"></a>
+```python title="Definition"
+class DisassociateElasticIpRequestRequestTypeDef(TypedDict):
+    ElasticIp: str,
+```
 
 ## EbsBlockDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import EbsBlockDeviceTypeDef
+
+def get_value() -> EbsBlockDeviceTypeDef:
+    return {
+        "SnapshotId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EbsBlockDeviceTypeDef(TypedDict):
+    SnapshotId: NotRequired[str],
+    Iops: NotRequired[int],
+    VolumeSize: NotRequired[int],
+    VolumeType: NotRequired[VolumeTypeType],  # (1)
+    DeleteOnTermination: NotRequired[bool],
+```
 
-- `SnapshotId`: `str`
-- `Iops`: `int`
-- `VolumeSize`: `int`
-- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype)
-- `DeleteOnTermination`: `bool`
-
-<a id="ecsclustertypedef"></a>
-
+1. See [:material-code-brackets: VolumeTypeType](./literals.md#volumetypetype) 
 ## EcsClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import EcsClusterTypeDef
+
+def get_value() -> EcsClusterTypeDef:
+    return {
+        "EcsClusterArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `EcsClusterArn`: `str`
-- `EcsClusterName`: `str`
-- `StackId`: `str`
-- `RegisteredAt`: `str`
-
-<a id="elasticiptypedef"></a>
+```python title="Definition"
+class EcsClusterTypeDef(TypedDict):
+    EcsClusterArn: NotRequired[str],
+    EcsClusterName: NotRequired[str],
+    StackId: NotRequired[str],
+    RegisteredAt: NotRequired[str],
+```
 
 ## ElasticIpTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ElasticIpTypeDef
+
+def get_value() -> ElasticIpTypeDef:
+    return {
+        "Ip": ...,
+    }
 ```
 
-Optional fields:
-
-- `Ip`: `str`
-- `Name`: `str`
-- `Domain`: `str`
-- `Region`: `str`
-- `InstanceId`: `str`
-
-<a id="elasticloadbalancertypedef"></a>
+```python title="Definition"
+class ElasticIpTypeDef(TypedDict):
+    Ip: NotRequired[str],
+    Name: NotRequired[str],
+    Domain: NotRequired[str],
+    Region: NotRequired[str],
+    InstanceId: NotRequired[str],
+```
 
 ## ElasticLoadBalancerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ElasticLoadBalancerTypeDef
+
+def get_value() -> ElasticLoadBalancerTypeDef:
+    return {
+        "ElasticLoadBalancerName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ElasticLoadBalancerName`: `str`
-- `Region`: `str`
-- `DnsName`: `str`
-- `StackId`: `str`
-- `LayerId`: `str`
-- `VpcId`: `str`
-- `AvailabilityZones`: `List`\[`str`\]
-- `SubnetIds`: `List`\[`str`\]
-- `Ec2InstanceIds`: `List`\[`str`\]
-
-<a id="environmentvariabletypedef"></a>
+```python title="Definition"
+class ElasticLoadBalancerTypeDef(TypedDict):
+    ElasticLoadBalancerName: NotRequired[str],
+    Region: NotRequired[str],
+    DnsName: NotRequired[str],
+    StackId: NotRequired[str],
+    LayerId: NotRequired[str],
+    VpcId: NotRequired[str],
+    AvailabilityZones: NotRequired[List[str]],
+    SubnetIds: NotRequired[List[str]],
+    Ec2InstanceIds: NotRequired[List[str]],
+```
 
 ## EnvironmentVariableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import EnvironmentVariableTypeDef
+
+def get_value() -> EnvironmentVariableTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-Optional fields:
-
-- `Secure`: `bool`
-
-<a id="gethostnamesuggestionrequestrequesttypedef"></a>
+```python title="Definition"
+class EnvironmentVariableTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+    Secure: NotRequired[bool],
+```
 
 ## GetHostnameSuggestionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import GetHostnameSuggestionRequestRequestTypeDef
+
+def get_value() -> GetHostnameSuggestionRequestRequestTypeDef:
+    return {
+        "LayerId": ...,
+    }
 ```
 
-Required fields:
-
-- `LayerId`: `str`
-
-<a id="gethostnamesuggestionresulttypedef"></a>
+```python title="Definition"
+class GetHostnameSuggestionRequestRequestTypeDef(TypedDict):
+    LayerId: str,
+```
 
 ## GetHostnameSuggestionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import GetHostnameSuggestionResultTypeDef
+
+def get_value() -> GetHostnameSuggestionResultTypeDef:
+    return {
+        "LayerId": ...,
+        "Hostname": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHostnameSuggestionResultTypeDef(TypedDict):
+    LayerId: str,
+    Hostname: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LayerId`: `str`
-- `Hostname`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="grantaccessrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GrantAccessRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import GrantAccessRequestRequestTypeDef
+
+def get_value() -> GrantAccessRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `ValidForInMinutes`: `int`
-
-<a id="grantaccessresulttypedef"></a>
+```python title="Definition"
+class GrantAccessRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ValidForInMinutes: NotRequired[int],
+```
 
 ## GrantAccessResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import GrantAccessResultTypeDef
+
+def get_value() -> GrantAccessResultTypeDef:
+    return {
+        "TemporaryCredential": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GrantAccessResultTypeDef(TypedDict):
+    TemporaryCredential: TemporaryCredentialTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TemporaryCredential`:
-  [TemporaryCredentialTypeDef](./type_defs.md#temporarycredentialtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="instanceidentitytypedef"></a>
-
+1. See [:material-code-braces: TemporaryCredentialTypeDef](./type_defs.md#temporarycredentialtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceIdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import InstanceIdentityTypeDef
+
+def get_value() -> InstanceIdentityTypeDef:
+    return {
+        "Document": ...,
+    }
 ```
 
-Optional fields:
-
-- `Document`: `str`
-- `Signature`: `str`
-
-<a id="instancetypedef"></a>
+```python title="Definition"
+class InstanceIdentityTypeDef(TypedDict):
+    Document: NotRequired[str],
+    Signature: NotRequired[str],
+```
 
 ## InstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import InstanceTypeDef
+
+def get_value() -> InstanceTypeDef:
+    return {
+        "AgentVersion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceTypeDef(TypedDict):
+    AgentVersion: NotRequired[str],
+    AmiId: NotRequired[str],
+    Architecture: NotRequired[ArchitectureType],  # (1)
+    Arn: NotRequired[str],
+    AutoScalingType: NotRequired[AutoScalingTypeType],  # (2)
+    AvailabilityZone: NotRequired[str],
+    BlockDeviceMappings: NotRequired[List[BlockDeviceMappingTypeDef]],  # (3)
+    CreatedAt: NotRequired[str],
+    EbsOptimized: NotRequired[bool],
+    Ec2InstanceId: NotRequired[str],
+    EcsClusterArn: NotRequired[str],
+    EcsContainerInstanceArn: NotRequired[str],
+    ElasticIp: NotRequired[str],
+    Hostname: NotRequired[str],
+    InfrastructureClass: NotRequired[str],
+    InstallUpdatesOnBoot: NotRequired[bool],
+    InstanceId: NotRequired[str],
+    InstanceProfileArn: NotRequired[str],
+    InstanceType: NotRequired[str],
+    LastServiceErrorId: NotRequired[str],
+    LayerIds: NotRequired[List[str]],
+    Os: NotRequired[str],
+    Platform: NotRequired[str],
+    PrivateDns: NotRequired[str],
+    PrivateIp: NotRequired[str],
+    PublicDns: NotRequired[str],
+    PublicIp: NotRequired[str],
+    RegisteredBy: NotRequired[str],
+    ReportedAgentVersion: NotRequired[str],
+    ReportedOs: NotRequired[ReportedOsTypeDef],  # (4)
+    RootDeviceType: NotRequired[RootDeviceTypeType],  # (5)
+    RootDeviceVolumeId: NotRequired[str],
+    SecurityGroupIds: NotRequired[List[str]],
+    SshHostDsaKeyFingerprint: NotRequired[str],
+    SshHostRsaKeyFingerprint: NotRequired[str],
+    SshKeyName: NotRequired[str],
+    StackId: NotRequired[str],
+    Status: NotRequired[str],
+    SubnetId: NotRequired[str],
+    Tenancy: NotRequired[str],
+    VirtualizationType: NotRequired[VirtualizationTypeType],  # (6)
+```
 
-- `AgentVersion`: `str`
-- `AmiId`: `str`
-- `Architecture`: [ArchitectureType](./literals.md#architecturetype)
-- `Arn`: `str`
-- `AutoScalingType`: [AutoScalingTypeType](./literals.md#autoscalingtypetype)
-- `AvailabilityZone`: `str`
-- `BlockDeviceMappings`:
-  `List`\[[BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef)\]
-- `CreatedAt`: `str`
-- `EbsOptimized`: `bool`
-- `Ec2InstanceId`: `str`
-- `EcsClusterArn`: `str`
-- `EcsContainerInstanceArn`: `str`
-- `ElasticIp`: `str`
-- `Hostname`: `str`
-- `InfrastructureClass`: `str`
-- `InstallUpdatesOnBoot`: `bool`
-- `InstanceId`: `str`
-- `InstanceProfileArn`: `str`
-- `InstanceType`: `str`
-- `LastServiceErrorId`: `str`
-- `LayerIds`: `List`\[`str`\]
-- `Os`: `str`
-- `Platform`: `str`
-- `PrivateDns`: `str`
-- `PrivateIp`: `str`
-- `PublicDns`: `str`
-- `PublicIp`: `str`
-- `RegisteredBy`: `str`
-- `ReportedAgentVersion`: `str`
-- `ReportedOs`: [ReportedOsTypeDef](./type_defs.md#reportedostypedef)
-- `RootDeviceType`: [RootDeviceTypeType](./literals.md#rootdevicetypetype)
-- `RootDeviceVolumeId`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `SshHostDsaKeyFingerprint`: `str`
-- `SshHostRsaKeyFingerprint`: `str`
-- `SshKeyName`: `str`
-- `StackId`: `str`
-- `Status`: `str`
-- `SubnetId`: `str`
-- `Tenancy`: `str`
-- `VirtualizationType`:
-  [VirtualizationTypeType](./literals.md#virtualizationtypetype)
-
-<a id="instancescountresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+2. See [:material-code-brackets: AutoScalingTypeType](./literals.md#autoscalingtypetype) 
+3. See [:material-code-braces: BlockDeviceMappingTypeDef](./type_defs.md#blockdevicemappingtypedef) 
+4. See [:material-code-braces: ReportedOsTypeDef](./type_defs.md#reportedostypedef) 
+5. See [:material-code-brackets: RootDeviceTypeType](./literals.md#rootdevicetypetype) 
+6. See [:material-code-brackets: VirtualizationTypeType](./literals.md#virtualizationtypetype) 
 ## InstancesCountResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import InstancesCountResponseMetadataTypeDef
+
+def get_value() -> InstancesCountResponseMetadataTypeDef:
+    return {
+        "Assigning": ...,
+        "Booting": ...,
+        "ConnectionLost": ...,
+        "Deregistering": ...,
+        "Online": ...,
+        "Pending": ...,
+        "Rebooting": ...,
+        "Registered": ...,
+        "Registering": ...,
+        "Requested": ...,
+        "RunningSetup": ...,
+        "SetupFailed": ...,
+        "ShuttingDown": ...,
+        "StartFailed": ...,
+        "StopFailed": ...,
+        "Stopped": ...,
+        "Stopping": ...,
+        "Terminated": ...,
+        "Terminating": ...,
+        "Unassigning": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstancesCountResponseMetadataTypeDef(TypedDict):
+    Assigning: int,
+    Booting: int,
+    ConnectionLost: int,
+    Deregistering: int,
+    Online: int,
+    Pending: int,
+    Rebooting: int,
+    Registered: int,
+    Registering: int,
+    Requested: int,
+    RunningSetup: int,
+    SetupFailed: int,
+    ShuttingDown: int,
+    StartFailed: int,
+    StopFailed: int,
+    Stopped: int,
+    Stopping: int,
+    Terminated: int,
+    Terminating: int,
+    Unassigning: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Assigning`: `int`
-- `Booting`: `int`
-- `ConnectionLost`: `int`
-- `Deregistering`: `int`
-- `Online`: `int`
-- `Pending`: `int`
-- `Rebooting`: `int`
-- `Registered`: `int`
-- `Registering`: `int`
-- `Requested`: `int`
-- `RunningSetup`: `int`
-- `SetupFailed`: `int`
-- `ShuttingDown`: `int`
-- `StartFailed`: `int`
-- `StopFailed`: `int`
-- `Stopped`: `int`
-- `Stopping`: `int`
-- `Terminated`: `int`
-- `Terminating`: `int`
-- `Unassigning`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="instancescounttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstancesCountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import InstancesCountTypeDef
+
+def get_value() -> InstancesCountTypeDef:
+    return {
+        "Assigning": ...,
+    }
 ```
 
-Optional fields:
-
-- `Assigning`: `int`
-- `Booting`: `int`
-- `ConnectionLost`: `int`
-- `Deregistering`: `int`
-- `Online`: `int`
-- `Pending`: `int`
-- `Rebooting`: `int`
-- `Registered`: `int`
-- `Registering`: `int`
-- `Requested`: `int`
-- `RunningSetup`: `int`
-- `SetupFailed`: `int`
-- `ShuttingDown`: `int`
-- `StartFailed`: `int`
-- `StopFailed`: `int`
-- `Stopped`: `int`
-- `Stopping`: `int`
-- `Terminated`: `int`
-- `Terminating`: `int`
-- `Unassigning`: `int`
-
-<a id="layertypedef"></a>
+```python title="Definition"
+class InstancesCountTypeDef(TypedDict):
+    Assigning: NotRequired[int],
+    Booting: NotRequired[int],
+    ConnectionLost: NotRequired[int],
+    Deregistering: NotRequired[int],
+    Online: NotRequired[int],
+    Pending: NotRequired[int],
+    Rebooting: NotRequired[int],
+    Registered: NotRequired[int],
+    Registering: NotRequired[int],
+    Requested: NotRequired[int],
+    RunningSetup: NotRequired[int],
+    SetupFailed: NotRequired[int],
+    ShuttingDown: NotRequired[int],
+    StartFailed: NotRequired[int],
+    StopFailed: NotRequired[int],
+    Stopped: NotRequired[int],
+    Stopping: NotRequired[int],
+    Terminated: NotRequired[int],
+    Terminating: NotRequired[int],
+    Unassigning: NotRequired[int],
+```
 
 ## LayerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import LayerTypeDef
+
+def get_value() -> LayerTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LayerTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    StackId: NotRequired[str],
+    LayerId: NotRequired[str],
+    Type: NotRequired[LayerTypeType],  # (1)
+    Name: NotRequired[str],
+    Shortname: NotRequired[str],
+    Attributes: NotRequired[Dict[LayerAttributesKeysType, str]],  # (2)
+    CloudWatchLogsConfiguration: NotRequired[CloudWatchLogsConfigurationTypeDef],  # (3)
+    CustomInstanceProfileArn: NotRequired[str],
+    CustomJson: NotRequired[str],
+    CustomSecurityGroupIds: NotRequired[List[str]],
+    DefaultSecurityGroupNames: NotRequired[List[str]],
+    Packages: NotRequired[List[str]],
+    VolumeConfigurations: NotRequired[List[VolumeConfigurationTypeDef]],  # (4)
+    EnableAutoHealing: NotRequired[bool],
+    AutoAssignElasticIps: NotRequired[bool],
+    AutoAssignPublicIps: NotRequired[bool],
+    DefaultRecipes: NotRequired[RecipesTypeDef],  # (5)
+    CustomRecipes: NotRequired[RecipesTypeDef],  # (5)
+    CreatedAt: NotRequired[str],
+    InstallUpdatesOnBoot: NotRequired[bool],
+    UseEbsOptimizedInstances: NotRequired[bool],
+    LifecycleEventConfiguration: NotRequired[LifecycleEventConfigurationTypeDef],  # (7)
+```
 
-- `Arn`: `str`
-- `StackId`: `str`
-- `LayerId`: `str`
-- `Type`: [LayerTypeType](./literals.md#layertypetype)
-- `Name`: `str`
-- `Shortname`: `str`
-- `Attributes`:
-  `Dict`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
-  `str`\]
-- `CloudWatchLogsConfiguration`:
-  [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
-- `CustomInstanceProfileArn`: `str`
-- `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `List`\[`str`\]
-- `DefaultSecurityGroupNames`: `List`\[`str`\]
-- `Packages`: `List`\[`str`\]
-- `VolumeConfigurations`:
-  `List`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
-- `EnableAutoHealing`: `bool`
-- `AutoAssignElasticIps`: `bool`
-- `AutoAssignPublicIps`: `bool`
-- `DefaultRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
-- `CustomRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
-- `CreatedAt`: `str`
-- `InstallUpdatesOnBoot`: `bool`
-- `UseEbsOptimizedInstances`: `bool`
-- `LifecycleEventConfiguration`:
-  [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
-
-<a id="lifecycleeventconfigurationresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: LayerTypeType](./literals.md#layertypetype) 
+2. See [:material-code-brackets: LayerAttributesKeysType](./literals.md#layerattributeskeystype) 
+3. See [:material-code-braces: CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef) 
+4. See [:material-code-braces: VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef) 
+5. See [:material-code-braces: RecipesTypeDef](./type_defs.md#recipestypedef) 
+6. See [:material-code-braces: RecipesTypeDef](./type_defs.md#recipestypedef) 
+7. See [:material-code-braces: LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef) 
 ## LifecycleEventConfigurationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import LifecycleEventConfigurationResponseMetadataTypeDef
+
+def get_value() -> LifecycleEventConfigurationResponseMetadataTypeDef:
+    return {
+        "Shutdown": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LifecycleEventConfigurationResponseMetadataTypeDef(TypedDict):
+    Shutdown: ShutdownEventConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Shutdown`:
-  [ShutdownEventConfigurationTypeDef](./type_defs.md#shutdowneventconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lifecycleeventconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ShutdownEventConfigurationTypeDef](./type_defs.md#shutdowneventconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LifecycleEventConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import LifecycleEventConfigurationTypeDef
+
+def get_value() -> LifecycleEventConfigurationTypeDef:
+    return {
+        "Shutdown": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LifecycleEventConfigurationTypeDef(TypedDict):
+    Shutdown: NotRequired[ShutdownEventConfigurationTypeDef],  # (1)
+```
 
-- `Shutdown`:
-  [ShutdownEventConfigurationTypeDef](./type_defs.md#shutdowneventconfigurationtypedef)
-
-<a id="listtagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ShutdownEventConfigurationTypeDef](./type_defs.md#shutdowneventconfigurationtypedef) 
 ## ListTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ListTagsRequestRequestTypeDef
+
+def get_value() -> ListTagsRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listtagsresulttypedef"></a>
+```python title="Definition"
+class ListTagsRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ListTagsResultTypeDef
+
+def get_value() -> ListTagsResultTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsResultTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loadbasedautoscalingconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoadBasedAutoScalingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import LoadBasedAutoScalingConfigurationTypeDef
+
+def get_value() -> LoadBasedAutoScalingConfigurationTypeDef:
+    return {
+        "LayerId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoadBasedAutoScalingConfigurationTypeDef(TypedDict):
+    LayerId: NotRequired[str],
+    Enable: NotRequired[bool],
+    UpScaling: NotRequired[AutoScalingThresholdsTypeDef],  # (1)
+    DownScaling: NotRequired[AutoScalingThresholdsTypeDef],  # (1)
+```
 
-- `LayerId`: `str`
-- `Enable`: `bool`
-- `UpScaling`:
-  [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
-- `DownScaling`:
-  [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
-
-<a id="operatingsystemconfigurationmanagertypedef"></a>
-
+1. See [:material-code-braces: AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef) 
+2. See [:material-code-braces: AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef) 
 ## OperatingSystemConfigurationManagerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import OperatingSystemConfigurationManagerTypeDef
+
+def get_value() -> OperatingSystemConfigurationManagerTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Version`: `str`
-
-<a id="operatingsystemtypedef"></a>
+```python title="Definition"
+class OperatingSystemConfigurationManagerTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Version: NotRequired[str],
+```
 
 ## OperatingSystemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import OperatingSystemTypeDef
+
+def get_value() -> OperatingSystemTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OperatingSystemTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Id: NotRequired[str],
+    Type: NotRequired[str],
+    ConfigurationManagers: NotRequired[List[OperatingSystemConfigurationManagerTypeDef]],  # (1)
+    ReportedName: NotRequired[str],
+    ReportedVersion: NotRequired[str],
+    Supported: NotRequired[bool],
+```
 
-- `Name`: `str`
-- `Id`: `str`
-- `Type`: `str`
-- `ConfigurationManagers`:
-  `List`\[[OperatingSystemConfigurationManagerTypeDef](./type_defs.md#operatingsystemconfigurationmanagertypedef)\]
-- `ReportedName`: `str`
-- `ReportedVersion`: `str`
-- `Supported`: `bool`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: OperatingSystemConfigurationManagerTypeDef](./type_defs.md#operatingsystemconfigurationmanagertypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="permissiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import PermissionTypeDef
+
+def get_value() -> PermissionTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackId`: `str`
-- `IamUserArn`: `str`
-- `AllowSsh`: `bool`
-- `AllowSudo`: `bool`
-- `Level`: `str`
-
-<a id="raidarraytypedef"></a>
+```python title="Definition"
+class PermissionTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    IamUserArn: NotRequired[str],
+    AllowSsh: NotRequired[bool],
+    AllowSudo: NotRequired[bool],
+    Level: NotRequired[str],
+```
 
 ## RaidArrayTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RaidArrayTypeDef
+
+def get_value() -> RaidArrayTypeDef:
+    return {
+        "RaidArrayId": ...,
+    }
 ```
 
-Optional fields:
-
-- `RaidArrayId`: `str`
-- `InstanceId`: `str`
-- `Name`: `str`
-- `RaidLevel`: `int`
-- `NumberOfDisks`: `int`
-- `Size`: `int`
-- `Device`: `str`
-- `MountPoint`: `str`
-- `AvailabilityZone`: `str`
-- `CreatedAt`: `str`
-- `StackId`: `str`
-- `VolumeType`: `str`
-- `Iops`: `int`
-
-<a id="rdsdbinstancetypedef"></a>
+```python title="Definition"
+class RaidArrayTypeDef(TypedDict):
+    RaidArrayId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    Name: NotRequired[str],
+    RaidLevel: NotRequired[int],
+    NumberOfDisks: NotRequired[int],
+    Size: NotRequired[int],
+    Device: NotRequired[str],
+    MountPoint: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    CreatedAt: NotRequired[str],
+    StackId: NotRequired[str],
+    VolumeType: NotRequired[str],
+    Iops: NotRequired[int],
+```
 
 ## RdsDbInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RdsDbInstanceTypeDef
+
+def get_value() -> RdsDbInstanceTypeDef:
+    return {
+        "RdsDbInstanceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RdsDbInstanceArn`: `str`
-- `DbInstanceIdentifier`: `str`
-- `DbUser`: `str`
-- `DbPassword`: `str`
-- `Region`: `str`
-- `Address`: `str`
-- `Engine`: `str`
-- `StackId`: `str`
-- `MissingOnRds`: `bool`
-
-<a id="rebootinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class RdsDbInstanceTypeDef(TypedDict):
+    RdsDbInstanceArn: NotRequired[str],
+    DbInstanceIdentifier: NotRequired[str],
+    DbUser: NotRequired[str],
+    DbPassword: NotRequired[str],
+    Region: NotRequired[str],
+    Address: NotRequired[str],
+    Engine: NotRequired[str],
+    StackId: NotRequired[str],
+    MissingOnRds: NotRequired[bool],
+```
 
 ## RebootInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RebootInstanceRequestRequestTypeDef
+
+def get_value() -> RebootInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-<a id="recipesresponsemetadatatypedef"></a>
+```python title="Definition"
+class RebootInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+```
 
 ## RecipesResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RecipesResponseMetadataTypeDef
+
+def get_value() -> RecipesResponseMetadataTypeDef:
+    return {
+        "Setup": ...,
+        "Configure": ...,
+        "Deploy": ...,
+        "Undeploy": ...,
+        "Shutdown": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecipesResponseMetadataTypeDef(TypedDict):
+    Setup: List[str],
+    Configure: List[str],
+    Deploy: List[str],
+    Undeploy: List[str],
+    Shutdown: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Setup`: `List`\[`str`\]
-- `Configure`: `List`\[`str`\]
-- `Deploy`: `List`\[`str`\]
-- `Undeploy`: `List`\[`str`\]
-- `Shutdown`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="recipestypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecipesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RecipesTypeDef
+
+def get_value() -> RecipesTypeDef:
+    return {
+        "Setup": ...,
+    }
 ```
 
-Optional fields:
-
-- `Setup`: `Sequence`\[`str`\]
-- `Configure`: `Sequence`\[`str`\]
-- `Deploy`: `Sequence`\[`str`\]
-- `Undeploy`: `Sequence`\[`str`\]
-- `Shutdown`: `Sequence`\[`str`\]
-
-<a id="registerecsclusterrequestrequesttypedef"></a>
+```python title="Definition"
+class RecipesTypeDef(TypedDict):
+    Setup: NotRequired[Sequence[str]],
+    Configure: NotRequired[Sequence[str]],
+    Deploy: NotRequired[Sequence[str]],
+    Undeploy: NotRequired[Sequence[str]],
+    Shutdown: NotRequired[Sequence[str]],
+```
 
 ## RegisterEcsClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RegisterEcsClusterRequestRequestTypeDef
+
+def get_value() -> RegisterEcsClusterRequestRequestTypeDef:
+    return {
+        "EcsClusterArn": ...,
+        "StackId": ...,
+    }
 ```
 
-Required fields:
-
-- `EcsClusterArn`: `str`
-- `StackId`: `str`
-
-<a id="registerecsclusterresulttypedef"></a>
+```python title="Definition"
+class RegisterEcsClusterRequestRequestTypeDef(TypedDict):
+    EcsClusterArn: str,
+    StackId: str,
+```
 
 ## RegisterEcsClusterResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RegisterEcsClusterResultTypeDef
+
+def get_value() -> RegisterEcsClusterResultTypeDef:
+    return {
+        "EcsClusterArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterEcsClusterResultTypeDef(TypedDict):
+    EcsClusterArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EcsClusterArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerelasticiprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterElasticIpRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RegisterElasticIpRequestRequestTypeDef
+
+def get_value() -> RegisterElasticIpRequestRequestTypeDef:
+    return {
+        "ElasticIp": ...,
+        "StackId": ...,
+    }
 ```
 
-Required fields:
-
-- `ElasticIp`: `str`
-- `StackId`: `str`
-
-<a id="registerelasticipresulttypedef"></a>
+```python title="Definition"
+class RegisterElasticIpRequestRequestTypeDef(TypedDict):
+    ElasticIp: str,
+    StackId: str,
+```
 
 ## RegisterElasticIpResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RegisterElasticIpResultTypeDef
+
+def get_value() -> RegisterElasticIpResultTypeDef:
+    return {
+        "ElasticIp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterElasticIpResultTypeDef(TypedDict):
+    ElasticIp: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ElasticIp`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RegisterInstanceRequestRequestTypeDef
+
+def get_value() -> RegisterInstanceRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterInstanceRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    Hostname: NotRequired[str],
+    PublicIp: NotRequired[str],
+    PrivateIp: NotRequired[str],
+    RsaPublicKey: NotRequired[str],
+    RsaPublicKeyFingerprint: NotRequired[str],
+    InstanceIdentity: NotRequired[InstanceIdentityTypeDef],  # (1)
+```
 
-- `StackId`: `str`
-
-Optional fields:
-
-- `Hostname`: `str`
-- `PublicIp`: `str`
-- `PrivateIp`: `str`
-- `RsaPublicKey`: `str`
-- `RsaPublicKeyFingerprint`: `str`
-- `InstanceIdentity`:
-  [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
-
-<a id="registerinstanceresulttypedef"></a>
-
+1. See [:material-code-braces: InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef) 
 ## RegisterInstanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RegisterInstanceResultTypeDef
+
+def get_value() -> RegisterInstanceResultTypeDef:
+    return {
+        "InstanceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterInstanceResultTypeDef(TypedDict):
+    InstanceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `InstanceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerrdsdbinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterRdsDbInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RegisterRdsDbInstanceRequestRequestTypeDef
+
+def get_value() -> RegisterRdsDbInstanceRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+        "RdsDbInstanceArn": ...,
+        "DbUser": ...,
+        "DbPassword": ...,
+    }
 ```
 
-Required fields:
-
-- `StackId`: `str`
-- `RdsDbInstanceArn`: `str`
-- `DbUser`: `str`
-- `DbPassword`: `str`
-
-<a id="registervolumerequestrequesttypedef"></a>
+```python title="Definition"
+class RegisterRdsDbInstanceRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    RdsDbInstanceArn: str,
+    DbUser: str,
+    DbPassword: str,
+```
 
 ## RegisterVolumeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RegisterVolumeRequestRequestTypeDef
+
+def get_value() -> RegisterVolumeRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackId`: `str`
-
-Optional fields:
-
-- `Ec2VolumeId`: `str`
-
-<a id="registervolumeresulttypedef"></a>
+```python title="Definition"
+class RegisterVolumeRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    Ec2VolumeId: NotRequired[str],
+```
 
 ## RegisterVolumeResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import RegisterVolumeResultTypeDef
+
+def get_value() -> RegisterVolumeResultTypeDef:
+    return {
+        "VolumeId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterVolumeResultTypeDef(TypedDict):
+    VolumeId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VolumeId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="reportedostypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReportedOsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ReportedOsTypeDef
+
+def get_value() -> ReportedOsTypeDef:
+    return {
+        "Family": ...,
+    }
 ```
 
-Optional fields:
-
-- `Family`: `str`
-- `Name`: `str`
-- `Version`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ReportedOsTypeDef(TypedDict):
+    Family: NotRequired[str],
+    Name: NotRequired[str],
+    Version: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="selfuserprofiletypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SelfUserProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import SelfUserProfileTypeDef
+
+def get_value() -> SelfUserProfileTypeDef:
+    return {
+        "IamUserArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `IamUserArn`: `str`
-- `Name`: `str`
-- `SshUsername`: `str`
-- `SshPublicKey`: `str`
-
-<a id="serviceerrortypedef"></a>
+```python title="Definition"
+class SelfUserProfileTypeDef(TypedDict):
+    IamUserArn: NotRequired[str],
+    Name: NotRequired[str],
+    SshUsername: NotRequired[str],
+    SshPublicKey: NotRequired[str],
+```
 
 ## ServiceErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ServiceErrorTypeDef
+
+def get_value() -> ServiceErrorTypeDef:
+    return {
+        "ServiceErrorId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ServiceErrorId`: `str`
-- `StackId`: `str`
-- `InstanceId`: `str`
-- `Type`: `str`
-- `Message`: `str`
-- `CreatedAt`: `str`
-
-<a id="serviceresourcelayerrequesttypedef"></a>
+```python title="Definition"
+class ServiceErrorTypeDef(TypedDict):
+    ServiceErrorId: NotRequired[str],
+    StackId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    Type: NotRequired[str],
+    Message: NotRequired[str],
+    CreatedAt: NotRequired[str],
+```
 
 ## ServiceResourceLayerRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ServiceResourceLayerRequestTypeDef
+
+def get_value() -> ServiceResourceLayerRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="serviceresourcestackrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceLayerRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## ServiceResourceStackRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ServiceResourceStackRequestTypeDef
+
+def get_value() -> ServiceResourceStackRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="serviceresourcestacksummaryrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceStackRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## ServiceResourceStackSummaryRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ServiceResourceStackSummaryRequestTypeDef
+
+def get_value() -> ServiceResourceStackSummaryRequestTypeDef:
+    return {
+        "stack_id": ...,
+    }
 ```
 
-Required fields:
-
-- `stack_id`: `str`
-
-<a id="setloadbasedautoscalingrequestrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceStackSummaryRequestTypeDef(TypedDict):
+    stack_id: str,
+```
 
 ## SetLoadBasedAutoScalingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import SetLoadBasedAutoScalingRequestRequestTypeDef
+
+def get_value() -> SetLoadBasedAutoScalingRequestRequestTypeDef:
+    return {
+        "LayerId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetLoadBasedAutoScalingRequestRequestTypeDef(TypedDict):
+    LayerId: str,
+    Enable: NotRequired[bool],
+    UpScaling: NotRequired[AutoScalingThresholdsTypeDef],  # (1)
+    DownScaling: NotRequired[AutoScalingThresholdsTypeDef],  # (1)
+```
 
-- `LayerId`: `str`
-
-Optional fields:
-
-- `Enable`: `bool`
-- `UpScaling`:
-  [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
-- `DownScaling`:
-  [AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef)
-
-<a id="setpermissionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef) 
+2. See [:material-code-braces: AutoScalingThresholdsTypeDef](./type_defs.md#autoscalingthresholdstypedef) 
 ## SetPermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import SetPermissionRequestRequestTypeDef
+
+def get_value() -> SetPermissionRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+        "IamUserArn": ...,
+    }
 ```
 
-Required fields:
-
-- `StackId`: `str`
-- `IamUserArn`: `str`
-
-Optional fields:
-
-- `AllowSsh`: `bool`
-- `AllowSudo`: `bool`
-- `Level`: `str`
-
-<a id="settimebasedautoscalingrequestrequesttypedef"></a>
+```python title="Definition"
+class SetPermissionRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    IamUserArn: str,
+    AllowSsh: NotRequired[bool],
+    AllowSudo: NotRequired[bool],
+    Level: NotRequired[str],
+```
 
 ## SetTimeBasedAutoScalingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import SetTimeBasedAutoScalingRequestRequestTypeDef
+
+def get_value() -> SetTimeBasedAutoScalingRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetTimeBasedAutoScalingRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AutoScalingSchedule: NotRequired[WeeklyAutoScalingScheduleTypeDef],  # (1)
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `AutoScalingSchedule`:
-  [WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef)
-
-<a id="shutdowneventconfigurationtypedef"></a>
-
+1. See [:material-code-braces: WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef) 
 ## ShutdownEventConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import ShutdownEventConfigurationTypeDef
+
+def get_value() -> ShutdownEventConfigurationTypeDef:
+    return {
+        "ExecutionTimeout": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExecutionTimeout`: `int`
-- `DelayUntilElbConnectionsDrained`: `bool`
-
-<a id="sourceresponsemetadatatypedef"></a>
+```python title="Definition"
+class ShutdownEventConfigurationTypeDef(TypedDict):
+    ExecutionTimeout: NotRequired[int],
+    DelayUntilElbConnectionsDrained: NotRequired[bool],
+```
 
 ## SourceResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import SourceResponseMetadataTypeDef
+
+def get_value() -> SourceResponseMetadataTypeDef:
+    return {
+        "Type": ...,
+        "Url": ...,
+        "Username": ...,
+        "Password": ...,
+        "SshKey": ...,
+        "Revision": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceResponseMetadataTypeDef(TypedDict):
+    Type: SourceTypeType,  # (1)
+    Url: str,
+    Username: str,
+    Password: str,
+    SshKey: str,
+    Revision: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Type`: [SourceTypeType](./literals.md#sourcetypetype)
-- `Url`: `str`
-- `Username`: `str`
-- `Password`: `str`
-- `SshKey`: `str`
-- `Revision`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="sourcetypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import SourceTypeDef
+
+def get_value() -> SourceTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceTypeDef(TypedDict):
+    Type: NotRequired[SourceTypeType],  # (1)
+    Url: NotRequired[str],
+    Username: NotRequired[str],
+    Password: NotRequired[str],
+    SshKey: NotRequired[str],
+    Revision: NotRequired[str],
+```
 
-- `Type`: [SourceTypeType](./literals.md#sourcetypetype)
-- `Url`: `str`
-- `Username`: `str`
-- `Password`: `str`
-- `SshKey`: `str`
-- `Revision`: `str`
-
-<a id="sslconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## SslConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import SslConfigurationTypeDef
+
+def get_value() -> SslConfigurationTypeDef:
+    return {
+        "Certificate": ...,
+        "PrivateKey": ...,
+    }
 ```
 
-Required fields:
-
-- `Certificate`: `str`
-- `PrivateKey`: `str`
-
-Optional fields:
-
-- `Chain`: `str`
-
-<a id="stackconfigurationmanagerresponsemetadatatypedef"></a>
+```python title="Definition"
+class SslConfigurationTypeDef(TypedDict):
+    Certificate: str,
+    PrivateKey: str,
+    Chain: NotRequired[str],
+```
 
 ## StackConfigurationManagerResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import StackConfigurationManagerResponseMetadataTypeDef
+
+def get_value() -> StackConfigurationManagerResponseMetadataTypeDef:
+    return {
+        "Name": ...,
+        "Version": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StackConfigurationManagerResponseMetadataTypeDef(TypedDict):
+    Name: str,
+    Version: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `Version`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stackconfigurationmanagertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StackConfigurationManagerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import StackConfigurationManagerTypeDef
+
+def get_value() -> StackConfigurationManagerTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Version`: `str`
-
-<a id="stacksummarytypedef"></a>
+```python title="Definition"
+class StackConfigurationManagerTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Version: NotRequired[str],
+```
 
 ## StackSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import StackSummaryTypeDef
+
+def get_value() -> StackSummaryTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackSummaryTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    LayersCount: NotRequired[int],
+    AppsCount: NotRequired[int],
+    InstancesCount: NotRequired[InstancesCountTypeDef],  # (1)
+```
 
-- `StackId`: `str`
-- `Name`: `str`
-- `Arn`: `str`
-- `LayersCount`: `int`
-- `AppsCount`: `int`
-- `InstancesCount`:
-  [InstancesCountTypeDef](./type_defs.md#instancescounttypedef)
-
-<a id="stacktypedef"></a>
-
+1. See [:material-code-braces: InstancesCountTypeDef](./type_defs.md#instancescounttypedef) 
 ## StackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import StackTypeDef
+
+def get_value() -> StackTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StackTypeDef(TypedDict):
+    StackId: NotRequired[str],
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+    Region: NotRequired[str],
+    VpcId: NotRequired[str],
+    Attributes: NotRequired[Dict[StackAttributesKeysType, str]],  # (1)
+    ServiceRoleArn: NotRequired[str],
+    DefaultInstanceProfileArn: NotRequired[str],
+    DefaultOs: NotRequired[str],
+    HostnameTheme: NotRequired[str],
+    DefaultAvailabilityZone: NotRequired[str],
+    DefaultSubnetId: NotRequired[str],
+    CustomJson: NotRequired[str],
+    ConfigurationManager: NotRequired[StackConfigurationManagerTypeDef],  # (2)
+    ChefConfiguration: NotRequired[ChefConfigurationTypeDef],  # (3)
+    UseCustomCookbooks: NotRequired[bool],
+    UseOpsworksSecurityGroups: NotRequired[bool],
+    CustomCookbooksSource: NotRequired[SourceTypeDef],  # (4)
+    DefaultSshKeyName: NotRequired[str],
+    CreatedAt: NotRequired[str],
+    DefaultRootDeviceType: NotRequired[RootDeviceTypeType],  # (5)
+    AgentVersion: NotRequired[str],
+```
 
-- `StackId`: `str`
-- `Name`: `str`
-- `Arn`: `str`
-- `Region`: `str`
-- `VpcId`: `str`
-- `Attributes`: `Dict`\[`Literal['Color']` (see
-  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
-- `ServiceRoleArn`: `str`
-- `DefaultInstanceProfileArn`: `str`
-- `DefaultOs`: `str`
-- `HostnameTheme`: `str`
-- `DefaultAvailabilityZone`: `str`
-- `DefaultSubnetId`: `str`
-- `CustomJson`: `str`
-- `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
-- `ChefConfiguration`:
-  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
-- `UseCustomCookbooks`: `bool`
-- `UseOpsworksSecurityGroups`: `bool`
-- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `DefaultSshKeyName`: `str`
-- `CreatedAt`: `str`
-- `DefaultRootDeviceType`:
-  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
-- `AgentVersion`: `str`
-
-<a id="startinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StackAttributesKeysType](./literals.md#stackattributeskeystype) 
+2. See [:material-code-braces: StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef) 
+3. See [:material-code-braces: ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef) 
+4. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+5. See [:material-code-brackets: RootDeviceTypeType](./literals.md#rootdevicetypetype) 
 ## StartInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import StartInstanceRequestRequestTypeDef
+
+def get_value() -> StartInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-<a id="startstackrequestrequesttypedef"></a>
+```python title="Definition"
+class StartInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+```
 
 ## StartStackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import StartStackRequestRequestTypeDef
+
+def get_value() -> StartStackRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackId`: `str`
-
-<a id="stopinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class StartStackRequestRequestTypeDef(TypedDict):
+    StackId: str,
+```
 
 ## StopInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import StopInstanceRequestRequestTypeDef
+
+def get_value() -> StopInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `Force`: `bool`
-
-<a id="stopstackrequestrequesttypedef"></a>
+```python title="Definition"
+class StopInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Force: NotRequired[bool],
+```
 
 ## StopStackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import StopStackRequestRequestTypeDef
+
+def get_value() -> StopStackRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Required fields:
-
-- `StackId`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StopStackRequestRequestTypeDef(TypedDict):
+    StackId: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="temporarycredentialtypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TemporaryCredentialTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import TemporaryCredentialTypeDef
+
+def get_value() -> TemporaryCredentialTypeDef:
+    return {
+        "Username": ...,
+    }
 ```
 
-Optional fields:
-
-- `Username`: `str`
-- `Password`: `str`
-- `ValidForInMinutes`: `int`
-- `InstanceId`: `str`
-
-<a id="timebasedautoscalingconfigurationtypedef"></a>
+```python title="Definition"
+class TemporaryCredentialTypeDef(TypedDict):
+    Username: NotRequired[str],
+    Password: NotRequired[str],
+    ValidForInMinutes: NotRequired[int],
+    InstanceId: NotRequired[str],
+```
 
 ## TimeBasedAutoScalingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import TimeBasedAutoScalingConfigurationTypeDef
+
+def get_value() -> TimeBasedAutoScalingConfigurationTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TimeBasedAutoScalingConfigurationTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    AutoScalingSchedule: NotRequired[WeeklyAutoScalingScheduleTypeDef],  # (1)
+```
 
-- `InstanceId`: `str`
-- `AutoScalingSchedule`:
-  [WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef)
-
-<a id="unassigninstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WeeklyAutoScalingScheduleTypeDef](./type_defs.md#weeklyautoscalingscheduletypedef) 
 ## UnassignInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UnassignInstanceRequestRequestTypeDef
+
+def get_value() -> UnassignInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-<a id="unassignvolumerequestrequesttypedef"></a>
+```python title="Definition"
+class UnassignInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+```
 
 ## UnassignVolumeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UnassignVolumeRequestRequestTypeDef
+
+def get_value() -> UnassignVolumeRequestRequestTypeDef:
+    return {
+        "VolumeId": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeId`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class UnassignVolumeRequestRequestTypeDef(TypedDict):
+    VolumeId: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateapprequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UpdateAppRequestRequestTypeDef
+
+def get_value() -> UpdateAppRequestRequestTypeDef:
+    return {
+        "AppId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAppRequestRequestTypeDef(TypedDict):
+    AppId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    DataSources: NotRequired[Sequence[DataSourceTypeDef]],  # (1)
+    Type: NotRequired[AppTypeType],  # (2)
+    AppSource: NotRequired[SourceTypeDef],  # (3)
+    Domains: NotRequired[Sequence[str]],
+    EnableSsl: NotRequired[bool],
+    SslConfiguration: NotRequired[SslConfigurationTypeDef],  # (4)
+    Attributes: NotRequired[Mapping[AppAttributesKeysType, str]],  # (5)
+    Environment: NotRequired[Sequence[EnvironmentVariableTypeDef]],  # (6)
+```
 
-- `AppId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `DataSources`:
-  `Sequence`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
-- `Type`: [AppTypeType](./literals.md#apptypetype)
-- `AppSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `Domains`: `Sequence`\[`str`\]
-- `EnableSsl`: `bool`
-- `SslConfiguration`:
-  [SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef)
-- `Attributes`:
-  `Mapping`\[[AppAttributesKeysType](./literals.md#appattributeskeystype),
-  `str`\]
-- `Environment`:
-  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
-
-<a id="updateelasticiprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-brackets: AppTypeType](./literals.md#apptypetype) 
+3. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+4. See [:material-code-braces: SslConfigurationTypeDef](./type_defs.md#sslconfigurationtypedef) 
+5. See [:material-code-brackets: AppAttributesKeysType](./literals.md#appattributeskeystype) 
+6. See [:material-code-braces: EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef) 
 ## UpdateElasticIpRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UpdateElasticIpRequestRequestTypeDef
+
+def get_value() -> UpdateElasticIpRequestRequestTypeDef:
+    return {
+        "ElasticIp": ...,
+    }
 ```
 
-Required fields:
-
-- `ElasticIp`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="updateinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateElasticIpRequestRequestTypeDef(TypedDict):
+    ElasticIp: str,
+    Name: NotRequired[str],
+```
 
 ## UpdateInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UpdateInstanceRequestRequestTypeDef
+
+def get_value() -> UpdateInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    LayerIds: NotRequired[Sequence[str]],
+    InstanceType: NotRequired[str],
+    AutoScalingType: NotRequired[AutoScalingTypeType],  # (1)
+    Hostname: NotRequired[str],
+    Os: NotRequired[str],
+    AmiId: NotRequired[str],
+    SshKeyName: NotRequired[str],
+    Architecture: NotRequired[ArchitectureType],  # (2)
+    InstallUpdatesOnBoot: NotRequired[bool],
+    EbsOptimized: NotRequired[bool],
+    AgentVersion: NotRequired[str],
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `LayerIds`: `Sequence`\[`str`\]
-- `InstanceType`: `str`
-- `AutoScalingType`: [AutoScalingTypeType](./literals.md#autoscalingtypetype)
-- `Hostname`: `str`
-- `Os`: `str`
-- `AmiId`: `str`
-- `SshKeyName`: `str`
-- `Architecture`: [ArchitectureType](./literals.md#architecturetype)
-- `InstallUpdatesOnBoot`: `bool`
-- `EbsOptimized`: `bool`
-- `AgentVersion`: `str`
-
-<a id="updatelayerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AutoScalingTypeType](./literals.md#autoscalingtypetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## UpdateLayerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UpdateLayerRequestRequestTypeDef
+
+def get_value() -> UpdateLayerRequestRequestTypeDef:
+    return {
+        "LayerId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateLayerRequestRequestTypeDef(TypedDict):
+    LayerId: str,
+    Name: NotRequired[str],
+    Shortname: NotRequired[str],
+    Attributes: NotRequired[Mapping[LayerAttributesKeysType, str]],  # (1)
+    CloudWatchLogsConfiguration: NotRequired[CloudWatchLogsConfigurationTypeDef],  # (2)
+    CustomInstanceProfileArn: NotRequired[str],
+    CustomJson: NotRequired[str],
+    CustomSecurityGroupIds: NotRequired[Sequence[str]],
+    Packages: NotRequired[Sequence[str]],
+    VolumeConfigurations: NotRequired[Sequence[VolumeConfigurationTypeDef]],  # (3)
+    EnableAutoHealing: NotRequired[bool],
+    AutoAssignElasticIps: NotRequired[bool],
+    AutoAssignPublicIps: NotRequired[bool],
+    CustomRecipes: NotRequired[RecipesTypeDef],  # (4)
+    InstallUpdatesOnBoot: NotRequired[bool],
+    UseEbsOptimizedInstances: NotRequired[bool],
+    LifecycleEventConfiguration: NotRequired[LifecycleEventConfigurationTypeDef],  # (5)
+```
 
-- `LayerId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Shortname`: `str`
-- `Attributes`:
-  `Mapping`\[[LayerAttributesKeysType](./literals.md#layerattributeskeystype),
-  `str`\]
-- `CloudWatchLogsConfiguration`:
-  [CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef)
-- `CustomInstanceProfileArn`: `str`
-- `CustomJson`: `str`
-- `CustomSecurityGroupIds`: `Sequence`\[`str`\]
-- `Packages`: `Sequence`\[`str`\]
-- `VolumeConfigurations`:
-  `Sequence`\[[VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef)\]
-- `EnableAutoHealing`: `bool`
-- `AutoAssignElasticIps`: `bool`
-- `AutoAssignPublicIps`: `bool`
-- `CustomRecipes`: [RecipesTypeDef](./type_defs.md#recipestypedef)
-- `InstallUpdatesOnBoot`: `bool`
-- `UseEbsOptimizedInstances`: `bool`
-- `LifecycleEventConfiguration`:
-  [LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef)
-
-<a id="updatemyuserprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LayerAttributesKeysType](./literals.md#layerattributeskeystype) 
+2. See [:material-code-braces: CloudWatchLogsConfigurationTypeDef](./type_defs.md#cloudwatchlogsconfigurationtypedef) 
+3. See [:material-code-braces: VolumeConfigurationTypeDef](./type_defs.md#volumeconfigurationtypedef) 
+4. See [:material-code-braces: RecipesTypeDef](./type_defs.md#recipestypedef) 
+5. See [:material-code-braces: LifecycleEventConfigurationTypeDef](./type_defs.md#lifecycleeventconfigurationtypedef) 
 ## UpdateMyUserProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UpdateMyUserProfileRequestRequestTypeDef
+
+def get_value() -> UpdateMyUserProfileRequestRequestTypeDef:
+    return {
+        "SshPublicKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `SshPublicKey`: `str`
-
-<a id="updaterdsdbinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateMyUserProfileRequestRequestTypeDef(TypedDict):
+    SshPublicKey: NotRequired[str],
+```
 
 ## UpdateRdsDbInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UpdateRdsDbInstanceRequestRequestTypeDef
+
+def get_value() -> UpdateRdsDbInstanceRequestRequestTypeDef:
+    return {
+        "RdsDbInstanceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RdsDbInstanceArn`: `str`
-
-Optional fields:
-
-- `DbUser`: `str`
-- `DbPassword`: `str`
-
-<a id="updatestackrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateRdsDbInstanceRequestRequestTypeDef(TypedDict):
+    RdsDbInstanceArn: str,
+    DbUser: NotRequired[str],
+    DbPassword: NotRequired[str],
+```
 
 ## UpdateStackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UpdateStackRequestRequestTypeDef
+
+def get_value() -> UpdateStackRequestRequestTypeDef:
+    return {
+        "StackId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStackRequestRequestTypeDef(TypedDict):
+    StackId: str,
+    Name: NotRequired[str],
+    Attributes: NotRequired[Mapping[StackAttributesKeysType, str]],  # (1)
+    ServiceRoleArn: NotRequired[str],
+    DefaultInstanceProfileArn: NotRequired[str],
+    DefaultOs: NotRequired[str],
+    HostnameTheme: NotRequired[str],
+    DefaultAvailabilityZone: NotRequired[str],
+    DefaultSubnetId: NotRequired[str],
+    CustomJson: NotRequired[str],
+    ConfigurationManager: NotRequired[StackConfigurationManagerTypeDef],  # (2)
+    ChefConfiguration: NotRequired[ChefConfigurationTypeDef],  # (3)
+    UseCustomCookbooks: NotRequired[bool],
+    CustomCookbooksSource: NotRequired[SourceTypeDef],  # (4)
+    DefaultSshKeyName: NotRequired[str],
+    DefaultRootDeviceType: NotRequired[RootDeviceTypeType],  # (5)
+    UseOpsworksSecurityGroups: NotRequired[bool],
+    AgentVersion: NotRequired[str],
+```
 
-- `StackId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Attributes`: `Mapping`\[`Literal['Color']` (see
-  [StackAttributesKeysType](./literals.md#stackattributeskeystype)), `str`\]
-- `ServiceRoleArn`: `str`
-- `DefaultInstanceProfileArn`: `str`
-- `DefaultOs`: `str`
-- `HostnameTheme`: `str`
-- `DefaultAvailabilityZone`: `str`
-- `DefaultSubnetId`: `str`
-- `CustomJson`: `str`
-- `ConfigurationManager`:
-  [StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef)
-- `ChefConfiguration`:
-  [ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef)
-- `UseCustomCookbooks`: `bool`
-- `CustomCookbooksSource`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `DefaultSshKeyName`: `str`
-- `DefaultRootDeviceType`:
-  [RootDeviceTypeType](./literals.md#rootdevicetypetype)
-- `UseOpsworksSecurityGroups`: `bool`
-- `AgentVersion`: `str`
-
-<a id="updateuserprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StackAttributesKeysType](./literals.md#stackattributeskeystype) 
+2. See [:material-code-braces: StackConfigurationManagerTypeDef](./type_defs.md#stackconfigurationmanagertypedef) 
+3. See [:material-code-braces: ChefConfigurationTypeDef](./type_defs.md#chefconfigurationtypedef) 
+4. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+5. See [:material-code-brackets: RootDeviceTypeType](./literals.md#rootdevicetypetype) 
 ## UpdateUserProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UpdateUserProfileRequestRequestTypeDef
+
+def get_value() -> UpdateUserProfileRequestRequestTypeDef:
+    return {
+        "IamUserArn": ...,
+    }
 ```
 
-Required fields:
-
-- `IamUserArn`: `str`
-
-Optional fields:
-
-- `SshUsername`: `str`
-- `SshPublicKey`: `str`
-- `AllowSelfManagement`: `bool`
-
-<a id="updatevolumerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateUserProfileRequestRequestTypeDef(TypedDict):
+    IamUserArn: str,
+    SshUsername: NotRequired[str],
+    SshPublicKey: NotRequired[str],
+    AllowSelfManagement: NotRequired[bool],
+```
 
 ## UpdateVolumeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UpdateVolumeRequestRequestTypeDef
+
+def get_value() -> UpdateVolumeRequestRequestTypeDef:
+    return {
+        "VolumeId": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `MountPoint`: `str`
-
-<a id="userprofiletypedef"></a>
+```python title="Definition"
+class UpdateVolumeRequestRequestTypeDef(TypedDict):
+    VolumeId: str,
+    Name: NotRequired[str],
+    MountPoint: NotRequired[str],
+```
 
 ## UserProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import UserProfileTypeDef
+
+def get_value() -> UserProfileTypeDef:
+    return {
+        "IamUserArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `IamUserArn`: `str`
-- `Name`: `str`
-- `SshUsername`: `str`
-- `SshPublicKey`: `str`
-- `AllowSelfManagement`: `bool`
-
-<a id="volumeconfigurationtypedef"></a>
+```python title="Definition"
+class UserProfileTypeDef(TypedDict):
+    IamUserArn: NotRequired[str],
+    Name: NotRequired[str],
+    SshUsername: NotRequired[str],
+    SshPublicKey: NotRequired[str],
+    AllowSelfManagement: NotRequired[bool],
+```
 
 ## VolumeConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import VolumeConfigurationTypeDef
+
+def get_value() -> VolumeConfigurationTypeDef:
+    return {
+        "MountPoint": ...,
+        "NumberOfDisks": ...,
+        "Size": ...,
+    }
 ```
 
-Required fields:
-
-- `MountPoint`: `str`
-- `NumberOfDisks`: `int`
-- `Size`: `int`
-
-Optional fields:
-
-- `RaidLevel`: `int`
-- `VolumeType`: `str`
-- `Iops`: `int`
-- `Encrypted`: `bool`
-
-<a id="volumetypedef"></a>
+```python title="Definition"
+class VolumeConfigurationTypeDef(TypedDict):
+    MountPoint: str,
+    NumberOfDisks: int,
+    Size: int,
+    RaidLevel: NotRequired[int],
+    VolumeType: NotRequired[str],
+    Iops: NotRequired[int],
+    Encrypted: NotRequired[bool],
+```
 
 ## VolumeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import VolumeTypeDef
+
+def get_value() -> VolumeTypeDef:
+    return {
+        "VolumeId": ...,
+    }
 ```
 
-Optional fields:
-
-- `VolumeId`: `str`
-- `Ec2VolumeId`: `str`
-- `Name`: `str`
-- `RaidArrayId`: `str`
-- `InstanceId`: `str`
-- `Status`: `str`
-- `Size`: `int`
-- `Device`: `str`
-- `MountPoint`: `str`
-- `Region`: `str`
-- `AvailabilityZone`: `str`
-- `VolumeType`: `str`
-- `Iops`: `int`
-- `Encrypted`: `bool`
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class VolumeTypeDef(TypedDict):
+    VolumeId: NotRequired[str],
+    Ec2VolumeId: NotRequired[str],
+    Name: NotRequired[str],
+    RaidArrayId: NotRequired[str],
+    InstanceId: NotRequired[str],
+    Status: NotRequired[str],
+    Size: NotRequired[int],
+    Device: NotRequired[str],
+    MountPoint: NotRequired[str],
+    Region: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    VolumeType: NotRequired[str],
+    Iops: NotRequired[int],
+    Encrypted: NotRequired[bool],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
-
-- `Delay`: `int`
-- `MaxAttempts`: `int`
-
-<a id="weeklyautoscalingscheduletypedef"></a>
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
 ## WeeklyAutoScalingScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_opsworks.type_defs import WeeklyAutoScalingScheduleTypeDef
+
+def get_value() -> WeeklyAutoScalingScheduleTypeDef:
+    return {
+        "Monday": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WeeklyAutoScalingScheduleTypeDef(TypedDict):
+    Monday: NotRequired[Dict[str, str]],
+    Tuesday: NotRequired[Dict[str, str]],
+    Wednesday: NotRequired[Dict[str, str]],
+    Thursday: NotRequired[Dict[str, str]],
+    Friday: NotRequired[Dict[str, str]],
+    Saturday: NotRequired[Dict[str, str]],
+    Sunday: NotRequired[Dict[str, str]],
+```
 
-- `Monday`: `Dict`\[`str`, `str`\]
-- `Tuesday`: `Dict`\[`str`, `str`\]
-- `Wednesday`: `Dict`\[`str`, `str`\]
-- `Thursday`: `Dict`\[`str`, `str`\]
-- `Friday`: `Dict`\[`str`, `str`\]
-- `Saturday`: `Dict`\[`str`, `str`\]
-- `Sunday`: `Dict`\[`str`, `str`\]

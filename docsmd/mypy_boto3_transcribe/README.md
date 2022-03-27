@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-transcribeservice-module"></a>
-
-# Type annotations for boto3 TranscribeService module
+#  TranscribeService module
 
 > [Index](../README.md) > TranscribeService
 
-Auto-generated documentation for
-[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
-type annotations stubs module
-[mypy-boto3-transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
+!!! note ""
 
-- [Type annotations for boto3 TranscribeService module](#type-annotations-for-boto3-transcribeservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [TranscribeServiceClient](#transcribeserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
+    type annotations stubs module [mypy-boto3-transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `TranscribeService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[transcribe]'
 python -m pip install mypy-boto3-transcribe
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,95 +42,41 @@ python -m pip install mypy-boto3-transcribe
 python -m pip uninstall -y mypy-boto3-transcribe
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="transcribeserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## TranscribeServiceClient
 
-Type annotations for `boto3.client("transcribe")` as
-[TranscribeServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("transcribe")` as [TranscribeServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_transcribe.client import TranscribeServiceClient
+
+def get_client() -> TranscribeServiceClient:
+    return Session().cleint("transcribe")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_call_analytics_category](./client.md#create_call_analytics_category)
-- [create_language_model](./client.md#create_language_model)
-- [create_medical_vocabulary](./client.md#create_medical_vocabulary)
-- [create_vocabulary](./client.md#create_vocabulary)
-- [create_vocabulary_filter](./client.md#create_vocabulary_filter)
-- [delete_call_analytics_category](./client.md#delete_call_analytics_category)
-- [delete_call_analytics_job](./client.md#delete_call_analytics_job)
-- [delete_language_model](./client.md#delete_language_model)
-- [delete_medical_transcription_job](./client.md#delete_medical_transcription_job)
-- [delete_medical_vocabulary](./client.md#delete_medical_vocabulary)
-- [delete_transcription_job](./client.md#delete_transcription_job)
-- [delete_vocabulary](./client.md#delete_vocabulary)
-- [delete_vocabulary_filter](./client.md#delete_vocabulary_filter)
-- [describe_language_model](./client.md#describe_language_model)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_call_analytics_category](./client.md#get_call_analytics_category)
-- [get_call_analytics_job](./client.md#get_call_analytics_job)
-- [get_medical_transcription_job](./client.md#get_medical_transcription_job)
-- [get_medical_vocabulary](./client.md#get_medical_vocabulary)
-- [get_transcription_job](./client.md#get_transcription_job)
-- [get_vocabulary](./client.md#get_vocabulary)
-- [get_vocabulary_filter](./client.md#get_vocabulary_filter)
-- [list_call_analytics_categories](./client.md#list_call_analytics_categories)
-- [list_call_analytics_jobs](./client.md#list_call_analytics_jobs)
-- [list_language_models](./client.md#list_language_models)
-- [list_medical_transcription_jobs](./client.md#list_medical_transcription_jobs)
-- [list_medical_vocabularies](./client.md#list_medical_vocabularies)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_transcription_jobs](./client.md#list_transcription_jobs)
-- [list_vocabularies](./client.md#list_vocabularies)
-- [list_vocabulary_filters](./client.md#list_vocabulary_filters)
-- [start_call_analytics_job](./client.md#start_call_analytics_job)
-- [start_medical_transcription_job](./client.md#start_medical_transcription_job)
-- [start_transcription_job](./client.md#start_transcription_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_call_analytics_category](./client.md#update_call_analytics_category)
-- [update_medical_vocabulary](./client.md#update_medical_vocabulary)
-- [update_vocabulary](./client.md#update_vocabulary)
-- [update_vocabulary_filter](./client.md#update_vocabulary_filter)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-TranscribeServiceClient [exceptions](./client.md#exceptions)
 
-- BadRequestException
-- ClientError
-- ConflictException
-- InternalFailureException
-- LimitExceededException
-- NotFoundException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_transcribe.literals import BaseModelNameType
 
-```python
-from mypy_boto3_transcribe.literals import BaseModelNameType, ...
+def get_value() -> BaseModelNameType:
+    return "NarrowBand"
 ```
 
 - [BaseModelNameType](./literals.md#basemodelnametype)
@@ -177,18 +102,22 @@ from mypy_boto3_transcribe.literals import BaseModelNameType, ...
 - [TranscribeServiceServiceName](./literals.md#transcribeserviceservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_transcribe.type_defs import AbsoluteTimeRangeTypeDef
 
-```python
-from mypy_boto3_transcribe.type_defs import AbsoluteTimeRangeTypeDef, ...
+def get_value() -> AbsoluteTimeRangeTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
 - [AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef)
@@ -292,3 +221,4 @@ from mypy_boto3_transcribe.type_defs import AbsoluteTimeRangeTypeDef, ...
 - [UpdateVocabularyResponseTypeDef](./type_defs.md#updatevocabularyresponsetypedef)
 - [VocabularyFilterInfoTypeDef](./type_defs.md#vocabularyfilterinfotypedef)
 - [VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef)
+

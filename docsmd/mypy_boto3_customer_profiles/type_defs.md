@@ -1,2247 +1,2773 @@
-<a id="typed-dictionaries-for-boto3-customerprofiles-module"></a>
-
-# Typed dictionaries for boto3 CustomerProfiles module
+# Typed dictionaries
 
 > [Index](../README.md) > [CustomerProfiles](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
-type annotations stubs module
-[mypy-boto3-customer-profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CustomerProfiles module](#typed-dictionaries-for-boto3-customerprofiles-module)
-  - [AddProfileKeyRequestRequestTypeDef](#addprofilekeyrequestrequesttypedef)
-  - [AddProfileKeyResponseTypeDef](#addprofilekeyresponsetypedef)
-  - [AddressTypeDef](#addresstypedef)
-  - [AppflowIntegrationTypeDef](#appflowintegrationtypedef)
-  - [AppflowIntegrationWorkflowAttributesTypeDef](#appflowintegrationworkflowattributestypedef)
-  - [AppflowIntegrationWorkflowMetricsTypeDef](#appflowintegrationworkflowmetricstypedef)
-  - [AppflowIntegrationWorkflowStepTypeDef](#appflowintegrationworkflowsteptypedef)
-  - [AutoMergingTypeDef](#automergingtypedef)
-  - [BatchTypeDef](#batchtypedef)
-  - [ConflictResolutionTypeDef](#conflictresolutiontypedef)
-  - [ConnectorOperatorTypeDef](#connectoroperatortypedef)
-  - [ConsolidationTypeDef](#consolidationtypedef)
-  - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
-  - [CreateDomainResponseTypeDef](#createdomainresponsetypedef)
-  - [CreateIntegrationWorkflowRequestRequestTypeDef](#createintegrationworkflowrequestrequesttypedef)
-  - [CreateIntegrationWorkflowResponseTypeDef](#createintegrationworkflowresponsetypedef)
-  - [CreateProfileRequestRequestTypeDef](#createprofilerequestrequesttypedef)
-  - [CreateProfileResponseTypeDef](#createprofileresponsetypedef)
-  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
-  - [DeleteDomainResponseTypeDef](#deletedomainresponsetypedef)
-  - [DeleteIntegrationRequestRequestTypeDef](#deleteintegrationrequestrequesttypedef)
-  - [DeleteIntegrationResponseTypeDef](#deleteintegrationresponsetypedef)
-  - [DeleteProfileKeyRequestRequestTypeDef](#deleteprofilekeyrequestrequesttypedef)
-  - [DeleteProfileKeyResponseTypeDef](#deleteprofilekeyresponsetypedef)
-  - [DeleteProfileObjectRequestRequestTypeDef](#deleteprofileobjectrequestrequesttypedef)
-  - [DeleteProfileObjectResponseTypeDef](#deleteprofileobjectresponsetypedef)
-  - [DeleteProfileObjectTypeRequestRequestTypeDef](#deleteprofileobjecttyperequestrequesttypedef)
-  - [DeleteProfileObjectTypeResponseTypeDef](#deleteprofileobjecttyperesponsetypedef)
-  - [DeleteProfileRequestRequestTypeDef](#deleteprofilerequestrequesttypedef)
-  - [DeleteProfileResponseTypeDef](#deleteprofileresponsetypedef)
-  - [DeleteWorkflowRequestRequestTypeDef](#deleteworkflowrequestrequesttypedef)
-  - [DomainStatsTypeDef](#domainstatstypedef)
-  - [ExportingConfigTypeDef](#exportingconfigtypedef)
-  - [ExportingLocationTypeDef](#exportinglocationtypedef)
-  - [FieldSourceProfileIdsTypeDef](#fieldsourceprofileidstypedef)
-  - [FlowDefinitionTypeDef](#flowdefinitiontypedef)
-  - [GetAutoMergingPreviewRequestRequestTypeDef](#getautomergingpreviewrequestrequesttypedef)
-  - [GetAutoMergingPreviewResponseTypeDef](#getautomergingpreviewresponsetypedef)
-  - [GetDomainRequestRequestTypeDef](#getdomainrequestrequesttypedef)
-  - [GetDomainResponseTypeDef](#getdomainresponsetypedef)
-  - [GetIdentityResolutionJobRequestRequestTypeDef](#getidentityresolutionjobrequestrequesttypedef)
-  - [GetIdentityResolutionJobResponseTypeDef](#getidentityresolutionjobresponsetypedef)
-  - [GetIntegrationRequestRequestTypeDef](#getintegrationrequestrequesttypedef)
-  - [GetIntegrationResponseTypeDef](#getintegrationresponsetypedef)
-  - [GetMatchesRequestRequestTypeDef](#getmatchesrequestrequesttypedef)
-  - [GetMatchesResponseTypeDef](#getmatchesresponsetypedef)
-  - [GetProfileObjectTypeRequestRequestTypeDef](#getprofileobjecttyperequestrequesttypedef)
-  - [GetProfileObjectTypeResponseTypeDef](#getprofileobjecttyperesponsetypedef)
-  - [GetProfileObjectTypeTemplateRequestRequestTypeDef](#getprofileobjecttypetemplaterequestrequesttypedef)
-  - [GetProfileObjectTypeTemplateResponseTypeDef](#getprofileobjecttypetemplateresponsetypedef)
-  - [GetWorkflowRequestRequestTypeDef](#getworkflowrequestrequesttypedef)
-  - [GetWorkflowResponseTypeDef](#getworkflowresponsetypedef)
-  - [GetWorkflowStepsRequestRequestTypeDef](#getworkflowstepsrequestrequesttypedef)
-  - [GetWorkflowStepsResponseTypeDef](#getworkflowstepsresponsetypedef)
-  - [IdentityResolutionJobTypeDef](#identityresolutionjobtypedef)
-  - [IncrementalPullConfigTypeDef](#incrementalpullconfigtypedef)
-  - [IntegrationConfigTypeDef](#integrationconfigtypedef)
-  - [JobScheduleTypeDef](#jobscheduletypedef)
-  - [JobStatsTypeDef](#jobstatstypedef)
-  - [ListAccountIntegrationsRequestRequestTypeDef](#listaccountintegrationsrequestrequesttypedef)
-  - [ListAccountIntegrationsResponseTypeDef](#listaccountintegrationsresponsetypedef)
-  - [ListDomainItemTypeDef](#listdomainitemtypedef)
-  - [ListDomainsRequestRequestTypeDef](#listdomainsrequestrequesttypedef)
-  - [ListDomainsResponseTypeDef](#listdomainsresponsetypedef)
-  - [ListIdentityResolutionJobsRequestRequestTypeDef](#listidentityresolutionjobsrequestrequesttypedef)
-  - [ListIdentityResolutionJobsResponseTypeDef](#listidentityresolutionjobsresponsetypedef)
-  - [ListIntegrationItemTypeDef](#listintegrationitemtypedef)
-  - [ListIntegrationsRequestRequestTypeDef](#listintegrationsrequestrequesttypedef)
-  - [ListIntegrationsResponseTypeDef](#listintegrationsresponsetypedef)
-  - [ListProfileObjectTypeItemTypeDef](#listprofileobjecttypeitemtypedef)
-  - [ListProfileObjectTypeTemplateItemTypeDef](#listprofileobjecttypetemplateitemtypedef)
-  - [ListProfileObjectTypeTemplatesRequestRequestTypeDef](#listprofileobjecttypetemplatesrequestrequesttypedef)
-  - [ListProfileObjectTypeTemplatesResponseTypeDef](#listprofileobjecttypetemplatesresponsetypedef)
-  - [ListProfileObjectTypesRequestRequestTypeDef](#listprofileobjecttypesrequestrequesttypedef)
-  - [ListProfileObjectTypesResponseTypeDef](#listprofileobjecttypesresponsetypedef)
-  - [ListProfileObjectsItemTypeDef](#listprofileobjectsitemtypedef)
-  - [ListProfileObjectsRequestRequestTypeDef](#listprofileobjectsrequestrequesttypedef)
-  - [ListProfileObjectsResponseTypeDef](#listprofileobjectsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListWorkflowsItemTypeDef](#listworkflowsitemtypedef)
-  - [ListWorkflowsRequestRequestTypeDef](#listworkflowsrequestrequesttypedef)
-  - [ListWorkflowsResponseTypeDef](#listworkflowsresponsetypedef)
-  - [MarketoSourcePropertiesTypeDef](#marketosourcepropertiestypedef)
-  - [MatchItemTypeDef](#matchitemtypedef)
-  - [MatchingRequestTypeDef](#matchingrequesttypedef)
-  - [MatchingResponseTypeDef](#matchingresponsetypedef)
-  - [MergeProfilesRequestRequestTypeDef](#mergeprofilesrequestrequesttypedef)
-  - [MergeProfilesResponseTypeDef](#mergeprofilesresponsetypedef)
-  - [ObjectFilterTypeDef](#objectfiltertypedef)
-  - [ObjectTypeFieldTypeDef](#objecttypefieldtypedef)
-  - [ObjectTypeKeyTypeDef](#objecttypekeytypedef)
-  - [ProfileTypeDef](#profiletypedef)
-  - [PutIntegrationRequestRequestTypeDef](#putintegrationrequestrequesttypedef)
-  - [PutIntegrationResponseTypeDef](#putintegrationresponsetypedef)
-  - [PutProfileObjectRequestRequestTypeDef](#putprofileobjectrequestrequesttypedef)
-  - [PutProfileObjectResponseTypeDef](#putprofileobjectresponsetypedef)
-  - [PutProfileObjectTypeRequestRequestTypeDef](#putprofileobjecttyperequestrequesttypedef)
-  - [PutProfileObjectTypeResponseTypeDef](#putprofileobjecttyperesponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3ExportingConfigTypeDef](#s3exportingconfigtypedef)
-  - [S3ExportingLocationTypeDef](#s3exportinglocationtypedef)
-  - [S3SourcePropertiesTypeDef](#s3sourcepropertiestypedef)
-  - [SalesforceSourcePropertiesTypeDef](#salesforcesourcepropertiestypedef)
-  - [ScheduledTriggerPropertiesTypeDef](#scheduledtriggerpropertiestypedef)
-  - [SearchProfilesRequestRequestTypeDef](#searchprofilesrequestrequesttypedef)
-  - [SearchProfilesResponseTypeDef](#searchprofilesresponsetypedef)
-  - [ServiceNowSourcePropertiesTypeDef](#servicenowsourcepropertiestypedef)
-  - [SourceConnectorPropertiesTypeDef](#sourceconnectorpropertiestypedef)
-  - [SourceFlowConfigTypeDef](#sourceflowconfigtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TaskTypeDef](#tasktypedef)
-  - [TriggerConfigTypeDef](#triggerconfigtypedef)
-  - [TriggerPropertiesTypeDef](#triggerpropertiestypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAddressTypeDef](#updateaddresstypedef)
-  - [UpdateDomainRequestRequestTypeDef](#updatedomainrequestrequesttypedef)
-  - [UpdateDomainResponseTypeDef](#updatedomainresponsetypedef)
-  - [UpdateProfileRequestRequestTypeDef](#updateprofilerequestrequesttypedef)
-  - [UpdateProfileResponseTypeDef](#updateprofileresponsetypedef)
-  - [WorkflowAttributesTypeDef](#workflowattributestypedef)
-  - [WorkflowMetricsTypeDef](#workflowmetricstypedef)
-  - [WorkflowStepItemTypeDef](#workflowstepitemtypedef)
-  - [ZendeskSourcePropertiesTypeDef](#zendesksourcepropertiestypedef)
-
-<a id="addprofilekeyrequestrequesttypedef"></a>
+    Auto-generated documentation for [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+    type annotations stubs module [mypy-boto3-customer-profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 ## AddProfileKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import AddProfileKeyRequestRequestTypeDef
+
+def get_value() -> AddProfileKeyRequestRequestTypeDef:
+    return {
+        "ProfileId": ...,
+        "KeyName": ...,
+        "Values": ...,
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProfileId`: `str`
-- `KeyName`: `str`
-- `Values`: `Sequence`\[`str`\]
-- `DomainName`: `str`
-
-<a id="addprofilekeyresponsetypedef"></a>
+```python title="Definition"
+class AddProfileKeyRequestRequestTypeDef(TypedDict):
+    ProfileId: str,
+    KeyName: str,
+    Values: Sequence[str],
+    DomainName: str,
+```
 
 ## AddProfileKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import AddProfileKeyResponseTypeDef
+
+def get_value() -> AddProfileKeyResponseTypeDef:
+    return {
+        "KeyName": ...,
+        "Values": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddProfileKeyResponseTypeDef(TypedDict):
+    KeyName: str,
+    Values: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `KeyName`: `str`
-- `Values`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addresstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import AddressTypeDef
+
+def get_value() -> AddressTypeDef:
+    return {
+        "Address1": ...,
+    }
 ```
 
-Optional fields:
-
-- `Address1`: `str`
-- `Address2`: `str`
-- `Address3`: `str`
-- `Address4`: `str`
-- `City`: `str`
-- `County`: `str`
-- `State`: `str`
-- `Province`: `str`
-- `Country`: `str`
-- `PostalCode`: `str`
-
-<a id="appflowintegrationtypedef"></a>
+```python title="Definition"
+class AddressTypeDef(TypedDict):
+    Address1: NotRequired[str],
+    Address2: NotRequired[str],
+    Address3: NotRequired[str],
+    Address4: NotRequired[str],
+    City: NotRequired[str],
+    County: NotRequired[str],
+    State: NotRequired[str],
+    Province: NotRequired[str],
+    Country: NotRequired[str],
+    PostalCode: NotRequired[str],
+```
 
 ## AppflowIntegrationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import AppflowIntegrationTypeDef
+
+def get_value() -> AppflowIntegrationTypeDef:
+    return {
+        "FlowDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AppflowIntegrationTypeDef(TypedDict):
+    FlowDefinition: FlowDefinitionTypeDef,  # (1)
+    Batches: NotRequired[Sequence[BatchTypeDef]],  # (2)
+```
 
-- `FlowDefinition`:
-  [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
-
-Optional fields:
-
-- `Batches`: `Sequence`\[[BatchTypeDef](./type_defs.md#batchtypedef)\]
-
-<a id="appflowintegrationworkflowattributestypedef"></a>
-
+1. See [:material-code-braces: FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef) 
+2. See [:material-code-braces: BatchTypeDef](./type_defs.md#batchtypedef) 
 ## AppflowIntegrationWorkflowAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import AppflowIntegrationWorkflowAttributesTypeDef
+
+def get_value() -> AppflowIntegrationWorkflowAttributesTypeDef:
+    return {
+        "SourceConnectorType": ...,
+        "ConnectorProfileName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AppflowIntegrationWorkflowAttributesTypeDef(TypedDict):
+    SourceConnectorType: SourceConnectorTypeType,  # (1)
+    ConnectorProfileName: str,
+    RoleArn: NotRequired[str],
+```
 
-- `SourceConnectorType`:
-  [SourceConnectorTypeType](./literals.md#sourceconnectortypetype)
-- `ConnectorProfileName`: `str`
-
-Optional fields:
-
-- `RoleArn`: `str`
-
-<a id="appflowintegrationworkflowmetricstypedef"></a>
-
+1. See [:material-code-brackets: SourceConnectorTypeType](./literals.md#sourceconnectortypetype) 
 ## AppflowIntegrationWorkflowMetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import AppflowIntegrationWorkflowMetricsTypeDef
+
+def get_value() -> AppflowIntegrationWorkflowMetricsTypeDef:
+    return {
+        "RecordsProcessed": ...,
+        "StepsCompleted": ...,
+        "TotalSteps": ...,
+    }
 ```
 
-Required fields:
-
-- `RecordsProcessed`: `int`
-- `StepsCompleted`: `int`
-- `TotalSteps`: `int`
-
-<a id="appflowintegrationworkflowsteptypedef"></a>
+```python title="Definition"
+class AppflowIntegrationWorkflowMetricsTypeDef(TypedDict):
+    RecordsProcessed: int,
+    StepsCompleted: int,
+    TotalSteps: int,
+```
 
 ## AppflowIntegrationWorkflowStepTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import AppflowIntegrationWorkflowStepTypeDef
+
+def get_value() -> AppflowIntegrationWorkflowStepTypeDef:
+    return {
+        "FlowName": ...,
+        "Status": ...,
+        "ExecutionMessage": ...,
+        "RecordsProcessed": ...,
+        "BatchRecordsStartTime": ...,
+        "BatchRecordsEndTime": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AppflowIntegrationWorkflowStepTypeDef(TypedDict):
+    FlowName: str,
+    Status: StatusType,  # (1)
+    ExecutionMessage: str,
+    RecordsProcessed: int,
+    BatchRecordsStartTime: str,
+    BatchRecordsEndTime: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+```
 
-- `FlowName`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `ExecutionMessage`: `str`
-- `RecordsProcessed`: `int`
-- `BatchRecordsStartTime`: `str`
-- `BatchRecordsEndTime`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-
-<a id="automergingtypedef"></a>
-
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## AutoMergingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import AutoMergingTypeDef
+
+def get_value() -> AutoMergingTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AutoMergingTypeDef(TypedDict):
+    Enabled: bool,
+    Consolidation: NotRequired[ConsolidationTypeDef],  # (1)
+    ConflictResolution: NotRequired[ConflictResolutionTypeDef],  # (2)
+```
 
-- `Enabled`: `bool`
-
-Optional fields:
-
-- `Consolidation`: [ConsolidationTypeDef](./type_defs.md#consolidationtypedef)
-- `ConflictResolution`:
-  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
-
-<a id="batchtypedef"></a>
-
+1. See [:material-code-braces: ConsolidationTypeDef](./type_defs.md#consolidationtypedef) 
+2. See [:material-code-braces: ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef) 
 ## BatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import BatchTypeDef
+
+def get_value() -> BatchTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
-
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-<a id="conflictresolutiontypedef"></a>
+```python title="Definition"
+class BatchTypeDef(TypedDict):
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+```
 
 ## ConflictResolutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ConflictResolutionTypeDef
+
+def get_value() -> ConflictResolutionTypeDef:
+    return {
+        "ConflictResolvingModel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConflictResolutionTypeDef(TypedDict):
+    ConflictResolvingModel: ConflictResolvingModelType,  # (1)
+    SourceName: NotRequired[str],
+```
 
-- `ConflictResolvingModel`:
-  [ConflictResolvingModelType](./literals.md#conflictresolvingmodeltype)
-
-Optional fields:
-
-- `SourceName`: `str`
-
-<a id="connectoroperatortypedef"></a>
-
+1. See [:material-code-brackets: ConflictResolvingModelType](./literals.md#conflictresolvingmodeltype) 
 ## ConnectorOperatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ConnectorOperatorTypeDef
+
+def get_value() -> ConnectorOperatorTypeDef:
+    return {
+        "Marketo": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorOperatorTypeDef(TypedDict):
+    Marketo: NotRequired[MarketoConnectorOperatorType],  # (1)
+    S3: NotRequired[S3ConnectorOperatorType],  # (2)
+    Salesforce: NotRequired[SalesforceConnectorOperatorType],  # (3)
+    ServiceNow: NotRequired[ServiceNowConnectorOperatorType],  # (4)
+    Zendesk: NotRequired[ZendeskConnectorOperatorType],  # (5)
+```
 
-- `Marketo`:
-  [MarketoConnectorOperatorType](./literals.md#marketoconnectoroperatortype)
-- `S3`: [S3ConnectorOperatorType](./literals.md#s3connectoroperatortype)
-- `Salesforce`:
-  [SalesforceConnectorOperatorType](./literals.md#salesforceconnectoroperatortype)
-- `ServiceNow`:
-  [ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype)
-- `Zendesk`:
-  [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
-
-<a id="consolidationtypedef"></a>
-
+1. See [:material-code-brackets: MarketoConnectorOperatorType](./literals.md#marketoconnectoroperatortype) 
+2. See [:material-code-brackets: S3ConnectorOperatorType](./literals.md#s3connectoroperatortype) 
+3. See [:material-code-brackets: SalesforceConnectorOperatorType](./literals.md#salesforceconnectoroperatortype) 
+4. See [:material-code-brackets: ServiceNowConnectorOperatorType](./literals.md#servicenowconnectoroperatortype) 
+5. See [:material-code-brackets: ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype) 
 ## ConsolidationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ConsolidationTypeDef
+
+def get_value() -> ConsolidationTypeDef:
+    return {
+        "MatchingAttributesList": ...,
+    }
 ```
 
-Required fields:
-
-- `MatchingAttributesList`: `Sequence`\[`Sequence`\[`str`\]\]
-
-<a id="createdomainrequestrequesttypedef"></a>
+```python title="Definition"
+class ConsolidationTypeDef(TypedDict):
+    MatchingAttributesList: Sequence[Sequence[str]],
+```
 
 ## CreateDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import CreateDomainRequestRequestTypeDef
+
+def get_value() -> CreateDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "DefaultExpirationDays": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    DefaultExpirationDays: int,
+    DefaultEncryptionKey: NotRequired[str],
+    DeadLetterQueueUrl: NotRequired[str],
+    Matching: NotRequired[MatchingRequestTypeDef],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `DomainName`: `str`
-- `DefaultExpirationDays`: `int`
-
-Optional fields:
-
-- `DefaultEncryptionKey`: `str`
-- `DeadLetterQueueUrl`: `str`
-- `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createdomainresponsetypedef"></a>
-
+1. See [:material-code-braces: MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef) 
 ## CreateDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import CreateDomainResponseTypeDef
+
+def get_value() -> CreateDomainResponseTypeDef:
+    return {
+        "DomainName": ...,
+        "DefaultExpirationDays": ...,
+        "DefaultEncryptionKey": ...,
+        "DeadLetterQueueUrl": ...,
+        "Matching": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDomainResponseTypeDef(TypedDict):
+    DomainName: str,
+    DefaultExpirationDays: int,
+    DefaultEncryptionKey: str,
+    DeadLetterQueueUrl: str,
+    Matching: MatchingResponseTypeDef,  # (1)
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainName`: `str`
-- `DefaultExpirationDays`: `int`
-- `DefaultEncryptionKey`: `str`
-- `DeadLetterQueueUrl`: `str`
-- `Matching`: [MatchingResponseTypeDef](./type_defs.md#matchingresponsetypedef)
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createintegrationworkflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MatchingResponseTypeDef](./type_defs.md#matchingresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIntegrationWorkflowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import CreateIntegrationWorkflowRequestRequestTypeDef
+
+def get_value() -> CreateIntegrationWorkflowRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "WorkflowType": ...,
+        "IntegrationConfig": ...,
+        "ObjectTypeName": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIntegrationWorkflowRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    WorkflowType: WorkflowTypeType,  # (1)
+    IntegrationConfig: IntegrationConfigTypeDef,  # (2)
+    ObjectTypeName: str,
+    RoleArn: str,
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `DomainName`: `str`
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `IntegrationConfig`:
-  [IntegrationConfigTypeDef](./type_defs.md#integrationconfigtypedef)
-- `ObjectTypeName`: `str`
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createintegrationworkflowresponsetypedef"></a>
-
+1. See [:material-code-brackets: WorkflowTypeType](./literals.md#workflowtypetype) 
+2. See [:material-code-braces: IntegrationConfigTypeDef](./type_defs.md#integrationconfigtypedef) 
 ## CreateIntegrationWorkflowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import CreateIntegrationWorkflowResponseTypeDef
+
+def get_value() -> CreateIntegrationWorkflowResponseTypeDef:
+    return {
+        "WorkflowId": ...,
+        "Message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIntegrationWorkflowResponseTypeDef(TypedDict):
+    WorkflowId: str,
+    Message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WorkflowId`: `str`
-- `Message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import CreateProfileRequestRequestTypeDef
+
+def get_value() -> CreateProfileRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProfileRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    AccountNumber: NotRequired[str],
+    AdditionalInformation: NotRequired[str],
+    PartyType: NotRequired[PartyTypeType],  # (1)
+    BusinessName: NotRequired[str],
+    FirstName: NotRequired[str],
+    MiddleName: NotRequired[str],
+    LastName: NotRequired[str],
+    BirthDate: NotRequired[str],
+    Gender: NotRequired[GenderType],  # (2)
+    PhoneNumber: NotRequired[str],
+    MobilePhoneNumber: NotRequired[str],
+    HomePhoneNumber: NotRequired[str],
+    BusinessPhoneNumber: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    PersonalEmailAddress: NotRequired[str],
+    BusinessEmailAddress: NotRequired[str],
+    Address: NotRequired[AddressTypeDef],  # (3)
+    ShippingAddress: NotRequired[AddressTypeDef],  # (3)
+    MailingAddress: NotRequired[AddressTypeDef],  # (3)
+    BillingAddress: NotRequired[AddressTypeDef],  # (3)
+    Attributes: NotRequired[Mapping[str, str]],
+```
 
-- `DomainName`: `str`
-
-Optional fields:
-
-- `AccountNumber`: `str`
-- `AdditionalInformation`: `str`
-- `PartyType`: [PartyTypeType](./literals.md#partytypetype)
-- `BusinessName`: `str`
-- `FirstName`: `str`
-- `MiddleName`: `str`
-- `LastName`: `str`
-- `BirthDate`: `str`
-- `Gender`: [GenderType](./literals.md#gendertype)
-- `PhoneNumber`: `str`
-- `MobilePhoneNumber`: `str`
-- `HomePhoneNumber`: `str`
-- `BusinessPhoneNumber`: `str`
-- `EmailAddress`: `str`
-- `PersonalEmailAddress`: `str`
-- `BusinessEmailAddress`: `str`
-- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `ShippingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `MailingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `BillingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="createprofileresponsetypedef"></a>
-
+1. See [:material-code-brackets: PartyTypeType](./literals.md#partytypetype) 
+2. See [:material-code-brackets: GenderType](./literals.md#gendertype) 
+3. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+4. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+5. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+6. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
 ## CreateProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import CreateProfileResponseTypeDef
+
+def get_value() -> CreateProfileResponseTypeDef:
+    return {
+        "ProfileId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProfileResponseTypeDef(TypedDict):
+    ProfileId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ProfileId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteDomainRequestRequestTypeDef
+
+def get_value() -> DeleteDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="deletedomainresponsetypedef"></a>
+```python title="Definition"
+class DeleteDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## DeleteDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteDomainResponseTypeDef
+
+def get_value() -> DeleteDomainResponseTypeDef:
+    return {
+        "Message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDomainResponseTypeDef(TypedDict):
+    Message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteintegrationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteIntegrationRequestRequestTypeDef
+
+def get_value() -> DeleteIntegrationRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Uri": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `Uri`: `str`
-
-<a id="deleteintegrationresponsetypedef"></a>
+```python title="Definition"
+class DeleteIntegrationRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Uri: str,
+```
 
 ## DeleteIntegrationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteIntegrationResponseTypeDef
+
+def get_value() -> DeleteIntegrationResponseTypeDef:
+    return {
+        "Message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteIntegrationResponseTypeDef(TypedDict):
+    Message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprofilekeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProfileKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileKeyRequestRequestTypeDef
+
+def get_value() -> DeleteProfileKeyRequestRequestTypeDef:
+    return {
+        "ProfileId": ...,
+        "KeyName": ...,
+        "Values": ...,
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProfileId`: `str`
-- `KeyName`: `str`
-- `Values`: `Sequence`\[`str`\]
-- `DomainName`: `str`
-
-<a id="deleteprofilekeyresponsetypedef"></a>
+```python title="Definition"
+class DeleteProfileKeyRequestRequestTypeDef(TypedDict):
+    ProfileId: str,
+    KeyName: str,
+    Values: Sequence[str],
+    DomainName: str,
+```
 
 ## DeleteProfileKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileKeyResponseTypeDef
+
+def get_value() -> DeleteProfileKeyResponseTypeDef:
+    return {
+        "Message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteProfileKeyResponseTypeDef(TypedDict):
+    Message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprofileobjectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProfileObjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectRequestRequestTypeDef
+
+def get_value() -> DeleteProfileObjectRequestRequestTypeDef:
+    return {
+        "ProfileId": ...,
+        "ProfileObjectUniqueKey": ...,
+        "ObjectTypeName": ...,
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProfileId`: `str`
-- `ProfileObjectUniqueKey`: `str`
-- `ObjectTypeName`: `str`
-- `DomainName`: `str`
-
-<a id="deleteprofileobjectresponsetypedef"></a>
+```python title="Definition"
+class DeleteProfileObjectRequestRequestTypeDef(TypedDict):
+    ProfileId: str,
+    ProfileObjectUniqueKey: str,
+    ObjectTypeName: str,
+    DomainName: str,
+```
 
 ## DeleteProfileObjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectResponseTypeDef
+
+def get_value() -> DeleteProfileObjectResponseTypeDef:
+    return {
+        "Message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteProfileObjectResponseTypeDef(TypedDict):
+    Message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprofileobjecttyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProfileObjectTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectTypeRequestRequestTypeDef
+
+def get_value() -> DeleteProfileObjectTypeRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ObjectTypeName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `ObjectTypeName`: `str`
-
-<a id="deleteprofileobjecttyperesponsetypedef"></a>
+```python title="Definition"
+class DeleteProfileObjectTypeRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ObjectTypeName: str,
+```
 
 ## DeleteProfileObjectTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileObjectTypeResponseTypeDef
+
+def get_value() -> DeleteProfileObjectTypeResponseTypeDef:
+    return {
+        "Message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteProfileObjectTypeResponseTypeDef(TypedDict):
+    Message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileRequestRequestTypeDef
+
+def get_value() -> DeleteProfileRequestRequestTypeDef:
+    return {
+        "ProfileId": ...,
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProfileId`: `str`
-- `DomainName`: `str`
-
-<a id="deleteprofileresponsetypedef"></a>
+```python title="Definition"
+class DeleteProfileRequestRequestTypeDef(TypedDict):
+    ProfileId: str,
+    DomainName: str,
+```
 
 ## DeleteProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteProfileResponseTypeDef
+
+def get_value() -> DeleteProfileResponseTypeDef:
+    return {
+        "Message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteProfileResponseTypeDef(TypedDict):
+    Message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteworkflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteWorkflowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DeleteWorkflowRequestRequestTypeDef
+
+def get_value() -> DeleteWorkflowRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "WorkflowId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `WorkflowId`: `str`
-
-<a id="domainstatstypedef"></a>
+```python title="Definition"
+class DeleteWorkflowRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    WorkflowId: str,
+```
 
 ## DomainStatsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import DomainStatsTypeDef
+
+def get_value() -> DomainStatsTypeDef:
+    return {
+        "ProfileCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProfileCount`: `int`
-- `MeteringProfileCount`: `int`
-- `ObjectCount`: `int`
-- `TotalSize`: `int`
-
-<a id="exportingconfigtypedef"></a>
+```python title="Definition"
+class DomainStatsTypeDef(TypedDict):
+    ProfileCount: NotRequired[int],
+    MeteringProfileCount: NotRequired[int],
+    ObjectCount: NotRequired[int],
+    TotalSize: NotRequired[int],
+```
 
 ## ExportingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ExportingConfigTypeDef
+
+def get_value() -> ExportingConfigTypeDef:
+    return {
+        "S3Exporting": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExportingConfigTypeDef(TypedDict):
+    S3Exporting: NotRequired[S3ExportingConfigTypeDef],  # (1)
+```
 
-- `S3Exporting`:
-  [S3ExportingConfigTypeDef](./type_defs.md#s3exportingconfigtypedef)
-
-<a id="exportinglocationtypedef"></a>
-
+1. See [:material-code-braces: S3ExportingConfigTypeDef](./type_defs.md#s3exportingconfigtypedef) 
 ## ExportingLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ExportingLocationTypeDef
+
+def get_value() -> ExportingLocationTypeDef:
+    return {
+        "S3Exporting": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExportingLocationTypeDef(TypedDict):
+    S3Exporting: NotRequired[S3ExportingLocationTypeDef],  # (1)
+```
 
-- `S3Exporting`:
-  [S3ExportingLocationTypeDef](./type_defs.md#s3exportinglocationtypedef)
-
-<a id="fieldsourceprofileidstypedef"></a>
-
+1. See [:material-code-braces: S3ExportingLocationTypeDef](./type_defs.md#s3exportinglocationtypedef) 
 ## FieldSourceProfileIdsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import FieldSourceProfileIdsTypeDef
+
+def get_value() -> FieldSourceProfileIdsTypeDef:
+    return {
+        "AccountNumber": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountNumber`: `str`
-- `AdditionalInformation`: `str`
-- `PartyType`: `str`
-- `BusinessName`: `str`
-- `FirstName`: `str`
-- `MiddleName`: `str`
-- `LastName`: `str`
-- `BirthDate`: `str`
-- `Gender`: `str`
-- `PhoneNumber`: `str`
-- `MobilePhoneNumber`: `str`
-- `HomePhoneNumber`: `str`
-- `BusinessPhoneNumber`: `str`
-- `EmailAddress`: `str`
-- `PersonalEmailAddress`: `str`
-- `BusinessEmailAddress`: `str`
-- `Address`: `str`
-- `ShippingAddress`: `str`
-- `MailingAddress`: `str`
-- `BillingAddress`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="flowdefinitiontypedef"></a>
+```python title="Definition"
+class FieldSourceProfileIdsTypeDef(TypedDict):
+    AccountNumber: NotRequired[str],
+    AdditionalInformation: NotRequired[str],
+    PartyType: NotRequired[str],
+    BusinessName: NotRequired[str],
+    FirstName: NotRequired[str],
+    MiddleName: NotRequired[str],
+    LastName: NotRequired[str],
+    BirthDate: NotRequired[str],
+    Gender: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    MobilePhoneNumber: NotRequired[str],
+    HomePhoneNumber: NotRequired[str],
+    BusinessPhoneNumber: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    PersonalEmailAddress: NotRequired[str],
+    BusinessEmailAddress: NotRequired[str],
+    Address: NotRequired[str],
+    ShippingAddress: NotRequired[str],
+    MailingAddress: NotRequired[str],
+    BillingAddress: NotRequired[str],
+    Attributes: NotRequired[Mapping[str, str]],
+```
 
 ## FlowDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import FlowDefinitionTypeDef
+
+def get_value() -> FlowDefinitionTypeDef:
+    return {
+        "FlowName": ...,
+        "KmsArn": ...,
+        "SourceFlowConfig": ...,
+        "Tasks": ...,
+        "TriggerConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FlowDefinitionTypeDef(TypedDict):
+    FlowName: str,
+    KmsArn: str,
+    SourceFlowConfig: SourceFlowConfigTypeDef,  # (1)
+    Tasks: Sequence[TaskTypeDef],  # (2)
+    TriggerConfig: TriggerConfigTypeDef,  # (3)
+    Description: NotRequired[str],
+```
 
-- `FlowName`: `str`
-- `KmsArn`: `str`
-- `SourceFlowConfig`:
-  [SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef)
-- `Tasks`: `Sequence`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
-- `TriggerConfig`: [TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="getautomergingpreviewrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceFlowConfigTypeDef](./type_defs.md#sourceflowconfigtypedef) 
+2. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+3. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
 ## GetAutoMergingPreviewRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetAutoMergingPreviewRequestRequestTypeDef
+
+def get_value() -> GetAutoMergingPreviewRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Consolidation": ...,
+        "ConflictResolution": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAutoMergingPreviewRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Consolidation: ConsolidationTypeDef,  # (1)
+    ConflictResolution: ConflictResolutionTypeDef,  # (2)
+```
 
-- `DomainName`: `str`
-- `Consolidation`: [ConsolidationTypeDef](./type_defs.md#consolidationtypedef)
-- `ConflictResolution`:
-  [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
-
-<a id="getautomergingpreviewresponsetypedef"></a>
-
+1. See [:material-code-braces: ConsolidationTypeDef](./type_defs.md#consolidationtypedef) 
+2. See [:material-code-braces: ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef) 
 ## GetAutoMergingPreviewResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetAutoMergingPreviewResponseTypeDef
+
+def get_value() -> GetAutoMergingPreviewResponseTypeDef:
+    return {
+        "DomainName": ...,
+        "NumberOfMatchesInSample": ...,
+        "NumberOfProfilesInSample": ...,
+        "NumberOfProfilesWillBeMerged": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAutoMergingPreviewResponseTypeDef(TypedDict):
+    DomainName: str,
+    NumberOfMatchesInSample: int,
+    NumberOfProfilesInSample: int,
+    NumberOfProfilesWillBeMerged: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DomainName`: `str`
-- `NumberOfMatchesInSample`: `int`
-- `NumberOfProfilesInSample`: `int`
-- `NumberOfProfilesWillBeMerged`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetDomainRequestRequestTypeDef
+
+def get_value() -> GetDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="getdomainresponsetypedef"></a>
+```python title="Definition"
+class GetDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## GetDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetDomainResponseTypeDef
+
+def get_value() -> GetDomainResponseTypeDef:
+    return {
+        "DomainName": ...,
+        "DefaultExpirationDays": ...,
+        "DefaultEncryptionKey": ...,
+        "DeadLetterQueueUrl": ...,
+        "Stats": ...,
+        "Matching": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDomainResponseTypeDef(TypedDict):
+    DomainName: str,
+    DefaultExpirationDays: int,
+    DefaultEncryptionKey: str,
+    DeadLetterQueueUrl: str,
+    Stats: DomainStatsTypeDef,  # (1)
+    Matching: MatchingResponseTypeDef,  # (2)
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `DomainName`: `str`
-- `DefaultExpirationDays`: `int`
-- `DefaultEncryptionKey`: `str`
-- `DeadLetterQueueUrl`: `str`
-- `Stats`: [DomainStatsTypeDef](./type_defs.md#domainstatstypedef)
-- `Matching`: [MatchingResponseTypeDef](./type_defs.md#matchingresponsetypedef)
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getidentityresolutionjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainStatsTypeDef](./type_defs.md#domainstatstypedef) 
+2. See [:material-code-braces: MatchingResponseTypeDef](./type_defs.md#matchingresponsetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetIdentityResolutionJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetIdentityResolutionJobRequestRequestTypeDef
+
+def get_value() -> GetIdentityResolutionJobRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `JobId`: `str`
-
-<a id="getidentityresolutionjobresponsetypedef"></a>
+```python title="Definition"
+class GetIdentityResolutionJobRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    JobId: str,
+```
 
 ## GetIdentityResolutionJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetIdentityResolutionJobResponseTypeDef
+
+def get_value() -> GetIdentityResolutionJobResponseTypeDef:
+    return {
+        "DomainName": ...,
+        "JobId": ...,
+        "Status": ...,
+        "Message": ...,
+        "JobStartTime": ...,
+        "JobEndTime": ...,
+        "LastUpdatedAt": ...,
+        "JobExpirationTime": ...,
+        "AutoMerging": ...,
+        "ExportingLocation": ...,
+        "JobStats": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetIdentityResolutionJobResponseTypeDef(TypedDict):
+    DomainName: str,
+    JobId: str,
+    Status: IdentityResolutionJobStatusType,  # (1)
+    Message: str,
+    JobStartTime: datetime,
+    JobEndTime: datetime,
+    LastUpdatedAt: datetime,
+    JobExpirationTime: datetime,
+    AutoMerging: AutoMergingTypeDef,  # (2)
+    ExportingLocation: ExportingLocationTypeDef,  # (3)
+    JobStats: JobStatsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `DomainName`: `str`
-- `JobId`: `str`
-- `Status`:
-  [IdentityResolutionJobStatusType](./literals.md#identityresolutionjobstatustype)
-- `Message`: `str`
-- `JobStartTime`: `datetime`
-- `JobEndTime`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `JobExpirationTime`: `datetime`
-- `AutoMerging`: [AutoMergingTypeDef](./type_defs.md#automergingtypedef)
-- `ExportingLocation`:
-  [ExportingLocationTypeDef](./type_defs.md#exportinglocationtypedef)
-- `JobStats`: [JobStatsTypeDef](./type_defs.md#jobstatstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getintegrationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: IdentityResolutionJobStatusType](./literals.md#identityresolutionjobstatustype) 
+2. See [:material-code-braces: AutoMergingTypeDef](./type_defs.md#automergingtypedef) 
+3. See [:material-code-braces: ExportingLocationTypeDef](./type_defs.md#exportinglocationtypedef) 
+4. See [:material-code-braces: JobStatsTypeDef](./type_defs.md#jobstatstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetIntegrationRequestRequestTypeDef
+
+def get_value() -> GetIntegrationRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Uri": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `Uri`: `str`
-
-<a id="getintegrationresponsetypedef"></a>
+```python title="Definition"
+class GetIntegrationRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Uri: str,
+```
 
 ## GetIntegrationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetIntegrationResponseTypeDef
+
+def get_value() -> GetIntegrationResponseTypeDef:
+    return {
+        "DomainName": ...,
+        "Uri": ...,
+        "ObjectTypeName": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Tags": ...,
+        "ObjectTypeNames": ...,
+        "WorkflowId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetIntegrationResponseTypeDef(TypedDict):
+    DomainName: str,
+    Uri: str,
+    ObjectTypeName: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Tags: Dict[str, str],
+    ObjectTypeNames: Dict[str, str],
+    WorkflowId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DomainName`: `str`
-- `Uri`: `str`
-- `ObjectTypeName`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ObjectTypeNames`: `Dict`\[`str`, `str`\]
-- `WorkflowId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmatchesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMatchesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetMatchesRequestRequestTypeDef
+
+def get_value() -> GetMatchesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getmatchesresponsetypedef"></a>
+```python title="Definition"
+class GetMatchesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetMatchesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetMatchesResponseTypeDef
+
+def get_value() -> GetMatchesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "MatchGenerationDate": ...,
+        "PotentialMatches": ...,
+        "Matches": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMatchesResponseTypeDef(TypedDict):
+    NextToken: str,
+    MatchGenerationDate: datetime,
+    PotentialMatches: int,
+    Matches: List[MatchItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `MatchGenerationDate`: `datetime`
-- `PotentialMatches`: `int`
-- `Matches`: `List`\[[MatchItemTypeDef](./type_defs.md#matchitemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getprofileobjecttyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MatchItemTypeDef](./type_defs.md#matchitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProfileObjectTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeRequestRequestTypeDef
+
+def get_value() -> GetProfileObjectTypeRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ObjectTypeName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `ObjectTypeName`: `str`
-
-<a id="getprofileobjecttyperesponsetypedef"></a>
+```python title="Definition"
+class GetProfileObjectTypeRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ObjectTypeName: str,
+```
 
 ## GetProfileObjectTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeResponseTypeDef
+
+def get_value() -> GetProfileObjectTypeResponseTypeDef:
+    return {
+        "ObjectTypeName": ...,
+        "Description": ...,
+        "TemplateId": ...,
+        "ExpirationDays": ...,
+        "EncryptionKey": ...,
+        "AllowProfileCreation": ...,
+        "SourceLastUpdatedTimestampFormat": ...,
+        "Fields": ...,
+        "Keys": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetProfileObjectTypeResponseTypeDef(TypedDict):
+    ObjectTypeName: str,
+    Description: str,
+    TemplateId: str,
+    ExpirationDays: int,
+    EncryptionKey: str,
+    AllowProfileCreation: bool,
+    SourceLastUpdatedTimestampFormat: str,
+    Fields: Dict[str, ObjectTypeFieldTypeDef],  # (1)
+    Keys: Dict[str, List[ObjectTypeKeyTypeDef]],  # (2)
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ObjectTypeName`: `str`
-- `Description`: `str`
-- `TemplateId`: `str`
-- `ExpirationDays`: `int`
-- `EncryptionKey`: `str`
-- `AllowProfileCreation`: `bool`
-- `SourceLastUpdatedTimestampFormat`: `str`
-- `Fields`: `Dict`\[`str`,
-  [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
-- `Keys`: `Dict`\[`str`,
-  `List`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getprofileobjecttypetemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef) 
+2. See [:material-code-braces: ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProfileObjectTypeTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeTemplateRequestRequestTypeDef
+
+def get_value() -> GetProfileObjectTypeTemplateRequestRequestTypeDef:
+    return {
+        "TemplateId": ...,
+    }
 ```
 
-Required fields:
-
-- `TemplateId`: `str`
-
-<a id="getprofileobjecttypetemplateresponsetypedef"></a>
+```python title="Definition"
+class GetProfileObjectTypeTemplateRequestRequestTypeDef(TypedDict):
+    TemplateId: str,
+```
 
 ## GetProfileObjectTypeTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetProfileObjectTypeTemplateResponseTypeDef
+
+def get_value() -> GetProfileObjectTypeTemplateResponseTypeDef:
+    return {
+        "TemplateId": ...,
+        "SourceName": ...,
+        "SourceObject": ...,
+        "AllowProfileCreation": ...,
+        "SourceLastUpdatedTimestampFormat": ...,
+        "Fields": ...,
+        "Keys": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetProfileObjectTypeTemplateResponseTypeDef(TypedDict):
+    TemplateId: str,
+    SourceName: str,
+    SourceObject: str,
+    AllowProfileCreation: bool,
+    SourceLastUpdatedTimestampFormat: str,
+    Fields: Dict[str, ObjectTypeFieldTypeDef],  # (1)
+    Keys: Dict[str, List[ObjectTypeKeyTypeDef]],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `TemplateId`: `str`
-- `SourceName`: `str`
-- `SourceObject`: `str`
-- `AllowProfileCreation`: `bool`
-- `SourceLastUpdatedTimestampFormat`: `str`
-- `Fields`: `Dict`\[`str`,
-  [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
-- `Keys`: `Dict`\[`str`,
-  `List`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef) 
+2. See [:material-code-braces: ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkflowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetWorkflowRequestRequestTypeDef
+
+def get_value() -> GetWorkflowRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "WorkflowId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `WorkflowId`: `str`
-
-<a id="getworkflowresponsetypedef"></a>
+```python title="Definition"
+class GetWorkflowRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    WorkflowId: str,
+```
 
 ## GetWorkflowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetWorkflowResponseTypeDef
+
+def get_value() -> GetWorkflowResponseTypeDef:
+    return {
+        "WorkflowId": ...,
+        "WorkflowType": ...,
+        "Status": ...,
+        "ErrorDescription": ...,
+        "StartDate": ...,
+        "LastUpdatedAt": ...,
+        "Attributes": ...,
+        "Metrics": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkflowResponseTypeDef(TypedDict):
+    WorkflowId: str,
+    WorkflowType: WorkflowTypeType,  # (1)
+    Status: StatusType,  # (2)
+    ErrorDescription: str,
+    StartDate: datetime,
+    LastUpdatedAt: datetime,
+    Attributes: WorkflowAttributesTypeDef,  # (3)
+    Metrics: WorkflowMetricsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `WorkflowId`: `str`
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `Status`: [StatusType](./literals.md#statustype)
-- `ErrorDescription`: `str`
-- `StartDate`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Attributes`:
-  [WorkflowAttributesTypeDef](./type_defs.md#workflowattributestypedef)
-- `Metrics`: [WorkflowMetricsTypeDef](./type_defs.md#workflowmetricstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkflowstepsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WorkflowTypeType](./literals.md#workflowtypetype) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: WorkflowAttributesTypeDef](./type_defs.md#workflowattributestypedef) 
+4. See [:material-code-braces: WorkflowMetricsTypeDef](./type_defs.md#workflowmetricstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkflowStepsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetWorkflowStepsRequestRequestTypeDef
+
+def get_value() -> GetWorkflowStepsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "WorkflowId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `WorkflowId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getworkflowstepsresponsetypedef"></a>
+```python title="Definition"
+class GetWorkflowStepsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    WorkflowId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetWorkflowStepsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import GetWorkflowStepsResponseTypeDef
+
+def get_value() -> GetWorkflowStepsResponseTypeDef:
+    return {
+        "WorkflowId": ...,
+        "WorkflowType": ...,
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkflowStepsResponseTypeDef(TypedDict):
+    WorkflowId: str,
+    WorkflowType: WorkflowTypeType,  # (1)
+    Items: List[WorkflowStepItemTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `WorkflowId`: `str`
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `Items`:
-  `List`\[[WorkflowStepItemTypeDef](./type_defs.md#workflowstepitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="identityresolutionjobtypedef"></a>
-
+1. See [:material-code-brackets: WorkflowTypeType](./literals.md#workflowtypetype) 
+2. See [:material-code-braces: WorkflowStepItemTypeDef](./type_defs.md#workflowstepitemtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IdentityResolutionJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import IdentityResolutionJobTypeDef
+
+def get_value() -> IdentityResolutionJobTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IdentityResolutionJobTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    JobId: NotRequired[str],
+    Status: NotRequired[IdentityResolutionJobStatusType],  # (1)
+    JobStartTime: NotRequired[datetime],
+    JobEndTime: NotRequired[datetime],
+    JobStats: NotRequired[JobStatsTypeDef],  # (2)
+    ExportingLocation: NotRequired[ExportingLocationTypeDef],  # (3)
+    Message: NotRequired[str],
+```
 
-- `DomainName`: `str`
-- `JobId`: `str`
-- `Status`:
-  [IdentityResolutionJobStatusType](./literals.md#identityresolutionjobstatustype)
-- `JobStartTime`: `datetime`
-- `JobEndTime`: `datetime`
-- `JobStats`: [JobStatsTypeDef](./type_defs.md#jobstatstypedef)
-- `ExportingLocation`:
-  [ExportingLocationTypeDef](./type_defs.md#exportinglocationtypedef)
-- `Message`: `str`
-
-<a id="incrementalpullconfigtypedef"></a>
-
+1. See [:material-code-brackets: IdentityResolutionJobStatusType](./literals.md#identityresolutionjobstatustype) 
+2. See [:material-code-braces: JobStatsTypeDef](./type_defs.md#jobstatstypedef) 
+3. See [:material-code-braces: ExportingLocationTypeDef](./type_defs.md#exportinglocationtypedef) 
 ## IncrementalPullConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import IncrementalPullConfigTypeDef
+
+def get_value() -> IncrementalPullConfigTypeDef:
+    return {
+        "DatetimeTypeFieldName": ...,
+    }
 ```
 
-Optional fields:
-
-- `DatetimeTypeFieldName`: `str`
-
-<a id="integrationconfigtypedef"></a>
+```python title="Definition"
+class IncrementalPullConfigTypeDef(TypedDict):
+    DatetimeTypeFieldName: NotRequired[str],
+```
 
 ## IntegrationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import IntegrationConfigTypeDef
+
+def get_value() -> IntegrationConfigTypeDef:
+    return {
+        "AppflowIntegration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IntegrationConfigTypeDef(TypedDict):
+    AppflowIntegration: NotRequired[AppflowIntegrationTypeDef],  # (1)
+```
 
-- `AppflowIntegration`:
-  [AppflowIntegrationTypeDef](./type_defs.md#appflowintegrationtypedef)
-
-<a id="jobscheduletypedef"></a>
-
+1. See [:material-code-braces: AppflowIntegrationTypeDef](./type_defs.md#appflowintegrationtypedef) 
 ## JobScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import JobScheduleTypeDef
+
+def get_value() -> JobScheduleTypeDef:
+    return {
+        "DayOfTheWeek": ...,
+        "Time": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobScheduleTypeDef(TypedDict):
+    DayOfTheWeek: JobScheduleDayOfTheWeekType,  # (1)
+    Time: str,
+```
 
-- `DayOfTheWeek`:
-  [JobScheduleDayOfTheWeekType](./literals.md#jobscheduledayoftheweektype)
-- `Time`: `str`
-
-<a id="jobstatstypedef"></a>
-
+1. See [:material-code-brackets: JobScheduleDayOfTheWeekType](./literals.md#jobscheduledayoftheweektype) 
 ## JobStatsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import JobStatsTypeDef
+
+def get_value() -> JobStatsTypeDef:
+    return {
+        "NumberOfProfilesReviewed": ...,
+    }
 ```
 
-Optional fields:
-
-- `NumberOfProfilesReviewed`: `int`
-- `NumberOfMatchesFound`: `int`
-- `NumberOfMergesDone`: `int`
-
-<a id="listaccountintegrationsrequestrequesttypedef"></a>
+```python title="Definition"
+class JobStatsTypeDef(TypedDict):
+    NumberOfProfilesReviewed: NotRequired[int],
+    NumberOfMatchesFound: NotRequired[int],
+    NumberOfMergesDone: NotRequired[int],
+```
 
 ## ListAccountIntegrationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListAccountIntegrationsRequestRequestTypeDef
+
+def get_value() -> ListAccountIntegrationsRequestRequestTypeDef:
+    return {
+        "Uri": ...,
+    }
 ```
 
-Required fields:
-
-- `Uri`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `IncludeHidden`: `bool`
-
-<a id="listaccountintegrationsresponsetypedef"></a>
+```python title="Definition"
+class ListAccountIntegrationsRequestRequestTypeDef(TypedDict):
+    Uri: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    IncludeHidden: NotRequired[bool],
+```
 
 ## ListAccountIntegrationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListAccountIntegrationsResponseTypeDef
+
+def get_value() -> ListAccountIntegrationsResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountIntegrationsResponseTypeDef(TypedDict):
+    Items: List[ListIntegrationItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[ListIntegrationItemTypeDef](./type_defs.md#listintegrationitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdomainitemtypedef"></a>
-
+1. See [:material-code-braces: ListIntegrationItemTypeDef](./type_defs.md#listintegrationitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDomainItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListDomainItemTypeDef
+
+def get_value() -> ListDomainItemTypeDef:
+    return {
+        "DomainName": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-
-Optional fields:
-
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="listdomainsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListDomainItemTypeDef(TypedDict):
+    DomainName: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Tags: NotRequired[Dict[str, str]],
+```
 
 ## ListDomainsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListDomainsRequestRequestTypeDef
+
+def get_value() -> ListDomainsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdomainsresponsetypedef"></a>
+```python title="Definition"
+class ListDomainsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDomainsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListDomainsResponseTypeDef
+
+def get_value() -> ListDomainsResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDomainsResponseTypeDef(TypedDict):
+    Items: List[ListDomainItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[ListDomainItemTypeDef](./type_defs.md#listdomainitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listidentityresolutionjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ListDomainItemTypeDef](./type_defs.md#listdomainitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListIdentityResolutionJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListIdentityResolutionJobsRequestRequestTypeDef
+
+def get_value() -> ListIdentityResolutionJobsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listidentityresolutionjobsresponsetypedef"></a>
+```python title="Definition"
+class ListIdentityResolutionJobsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListIdentityResolutionJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListIdentityResolutionJobsResponseTypeDef
+
+def get_value() -> ListIdentityResolutionJobsResponseTypeDef:
+    return {
+        "IdentityResolutionJobsList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIdentityResolutionJobsResponseTypeDef(TypedDict):
+    IdentityResolutionJobsList: List[IdentityResolutionJobTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IdentityResolutionJobsList`:
-  `List`\[[IdentityResolutionJobTypeDef](./type_defs.md#identityresolutionjobtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listintegrationitemtypedef"></a>
-
+1. See [:material-code-braces: IdentityResolutionJobTypeDef](./type_defs.md#identityresolutionjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListIntegrationItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListIntegrationItemTypeDef
+
+def get_value() -> ListIntegrationItemTypeDef:
+    return {
+        "DomainName": ...,
+        "Uri": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `Uri`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-
-Optional fields:
-
-- `ObjectTypeName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ObjectTypeNames`: `Dict`\[`str`, `str`\]
-- `WorkflowId`: `str`
-
-<a id="listintegrationsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListIntegrationItemTypeDef(TypedDict):
+    DomainName: str,
+    Uri: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    ObjectTypeName: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+    ObjectTypeNames: NotRequired[Dict[str, str]],
+    WorkflowId: NotRequired[str],
+```
 
 ## ListIntegrationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListIntegrationsRequestRequestTypeDef
+
+def get_value() -> ListIntegrationsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `IncludeHidden`: `bool`
-
-<a id="listintegrationsresponsetypedef"></a>
+```python title="Definition"
+class ListIntegrationsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    IncludeHidden: NotRequired[bool],
+```
 
 ## ListIntegrationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListIntegrationsResponseTypeDef
+
+def get_value() -> ListIntegrationsResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIntegrationsResponseTypeDef(TypedDict):
+    Items: List[ListIntegrationItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[ListIntegrationItemTypeDef](./type_defs.md#listintegrationitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listprofileobjecttypeitemtypedef"></a>
-
+1. See [:material-code-braces: ListIntegrationItemTypeDef](./type_defs.md#listintegrationitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProfileObjectTypeItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeItemTypeDef
+
+def get_value() -> ListProfileObjectTypeItemTypeDef:
+    return {
+        "ObjectTypeName": ...,
+        "Description": ...,
+    }
 ```
 
-Required fields:
-
-- `ObjectTypeName`: `str`
-- `Description`: `str`
-
-Optional fields:
-
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="listprofileobjecttypetemplateitemtypedef"></a>
+```python title="Definition"
+class ListProfileObjectTypeItemTypeDef(TypedDict):
+    ObjectTypeName: str,
+    Description: str,
+    CreatedAt: NotRequired[datetime],
+    LastUpdatedAt: NotRequired[datetime],
+    Tags: NotRequired[Dict[str, str]],
+```
 
 ## ListProfileObjectTypeTemplateItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeTemplateItemTypeDef
+
+def get_value() -> ListProfileObjectTypeTemplateItemTypeDef:
+    return {
+        "TemplateId": ...,
+    }
 ```
 
-Optional fields:
-
-- `TemplateId`: `str`
-- `SourceName`: `str`
-- `SourceObject`: `str`
-
-<a id="listprofileobjecttypetemplatesrequestrequesttypedef"></a>
+```python title="Definition"
+class ListProfileObjectTypeTemplateItemTypeDef(TypedDict):
+    TemplateId: NotRequired[str],
+    SourceName: NotRequired[str],
+    SourceObject: NotRequired[str],
+```
 
 ## ListProfileObjectTypeTemplatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeTemplatesRequestRequestTypeDef
+
+def get_value() -> ListProfileObjectTypeTemplatesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listprofileobjecttypetemplatesresponsetypedef"></a>
+```python title="Definition"
+class ListProfileObjectTypeTemplatesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListProfileObjectTypeTemplatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypeTemplatesResponseTypeDef
+
+def get_value() -> ListProfileObjectTypeTemplatesResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProfileObjectTypeTemplatesResponseTypeDef(TypedDict):
+    Items: List[ListProfileObjectTypeTemplateItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[ListProfileObjectTypeTemplateItemTypeDef](./type_defs.md#listprofileobjecttypetemplateitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listprofileobjecttypesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ListProfileObjectTypeTemplateItemTypeDef](./type_defs.md#listprofileobjecttypetemplateitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProfileObjectTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypesRequestRequestTypeDef
+
+def get_value() -> ListProfileObjectTypesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listprofileobjecttypesresponsetypedef"></a>
+```python title="Definition"
+class ListProfileObjectTypesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListProfileObjectTypesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectTypesResponseTypeDef
+
+def get_value() -> ListProfileObjectTypesResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProfileObjectTypesResponseTypeDef(TypedDict):
+    Items: List[ListProfileObjectTypeItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[ListProfileObjectTypeItemTypeDef](./type_defs.md#listprofileobjecttypeitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listprofileobjectsitemtypedef"></a>
-
+1. See [:material-code-braces: ListProfileObjectTypeItemTypeDef](./type_defs.md#listprofileobjecttypeitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProfileObjectsItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectsItemTypeDef
+
+def get_value() -> ListProfileObjectsItemTypeDef:
+    return {
+        "ObjectTypeName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ObjectTypeName`: `str`
-- `ProfileObjectUniqueKey`: `str`
-- `Object`: `str`
-
-<a id="listprofileobjectsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListProfileObjectsItemTypeDef(TypedDict):
+    ObjectTypeName: NotRequired[str],
+    ProfileObjectUniqueKey: NotRequired[str],
+    Object: NotRequired[str],
+```
 
 ## ListProfileObjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectsRequestRequestTypeDef
+
+def get_value() -> ListProfileObjectsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ObjectTypeName": ...,
+        "ProfileId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProfileObjectsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ObjectTypeName: str,
+    ProfileId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ObjectFilter: NotRequired[ObjectFilterTypeDef],  # (1)
+```
 
-- `DomainName`: `str`
-- `ObjectTypeName`: `str`
-- `ProfileId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ObjectFilter`: [ObjectFilterTypeDef](./type_defs.md#objectfiltertypedef)
-
-<a id="listprofileobjectsresponsetypedef"></a>
-
+1. See [:material-code-braces: ObjectFilterTypeDef](./type_defs.md#objectfiltertypedef) 
 ## ListProfileObjectsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListProfileObjectsResponseTypeDef
+
+def get_value() -> ListProfileObjectsResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProfileObjectsResponseTypeDef(TypedDict):
+    Items: List[ListProfileObjectsItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[ListProfileObjectsItemTypeDef](./type_defs.md#listprofileobjectsitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ListProfileObjectsItemTypeDef](./type_defs.md#listprofileobjectsitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listworkflowsitemtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWorkflowsItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListWorkflowsItemTypeDef
+
+def get_value() -> ListWorkflowsItemTypeDef:
+    return {
+        "WorkflowType": ...,
+        "WorkflowId": ...,
+        "Status": ...,
+        "StatusDescription": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkflowsItemTypeDef(TypedDict):
+    WorkflowType: WorkflowTypeType,  # (1)
+    WorkflowId: str,
+    Status: StatusType,  # (2)
+    StatusDescription: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+```
 
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `WorkflowId`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `StatusDescription`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-
-<a id="listworkflowsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WorkflowTypeType](./literals.md#workflowtypetype) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## ListWorkflowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListWorkflowsRequestRequestTypeDef
+
+def get_value() -> ListWorkflowsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkflowsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    WorkflowType: NotRequired[WorkflowTypeType],  # (1)
+    Status: NotRequired[StatusType],  # (2)
+    QueryStartDate: NotRequired[Union[datetime, str]],
+    QueryEndDate: NotRequired[Union[datetime, str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `DomainName`: `str`
-
-Optional fields:
-
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `Status`: [StatusType](./literals.md#statustype)
-- `QueryStartDate`: `Union`\[`datetime`, `str`\]
-- `QueryEndDate`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listworkflowsresponsetypedef"></a>
-
+1. See [:material-code-brackets: WorkflowTypeType](./literals.md#workflowtypetype) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## ListWorkflowsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ListWorkflowsResponseTypeDef
+
+def get_value() -> ListWorkflowsResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkflowsResponseTypeDef(TypedDict):
+    Items: List[ListWorkflowsItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[ListWorkflowsItemTypeDef](./type_defs.md#listworkflowsitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="marketosourcepropertiestypedef"></a>
-
+1. See [:material-code-braces: ListWorkflowsItemTypeDef](./type_defs.md#listworkflowsitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MarketoSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import MarketoSourcePropertiesTypeDef
+
+def get_value() -> MarketoSourcePropertiesTypeDef:
+    return {
+        "Object": ...,
+    }
 ```
 
-Required fields:
-
-- `Object`: `str`
-
-<a id="matchitemtypedef"></a>
+```python title="Definition"
+class MarketoSourcePropertiesTypeDef(TypedDict):
+    Object: str,
+```
 
 ## MatchItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import MatchItemTypeDef
+
+def get_value() -> MatchItemTypeDef:
+    return {
+        "MatchId": ...,
+    }
 ```
 
-Optional fields:
-
-- `MatchId`: `str`
-- `ProfileIds`: `List`\[`str`\]
-- `ConfidenceScore`: `float`
-
-<a id="matchingrequesttypedef"></a>
+```python title="Definition"
+class MatchItemTypeDef(TypedDict):
+    MatchId: NotRequired[str],
+    ProfileIds: NotRequired[List[str]],
+    ConfidenceScore: NotRequired[float],
+```
 
 ## MatchingRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import MatchingRequestTypeDef
+
+def get_value() -> MatchingRequestTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MatchingRequestTypeDef(TypedDict):
+    Enabled: bool,
+    JobSchedule: NotRequired[JobScheduleTypeDef],  # (1)
+    AutoMerging: NotRequired[AutoMergingTypeDef],  # (2)
+    ExportingConfig: NotRequired[ExportingConfigTypeDef],  # (3)
+```
 
-- `Enabled`: `bool`
-
-Optional fields:
-
-- `JobSchedule`: [JobScheduleTypeDef](./type_defs.md#jobscheduletypedef)
-- `AutoMerging`: [AutoMergingTypeDef](./type_defs.md#automergingtypedef)
-- `ExportingConfig`:
-  [ExportingConfigTypeDef](./type_defs.md#exportingconfigtypedef)
-
-<a id="matchingresponsetypedef"></a>
-
+1. See [:material-code-braces: JobScheduleTypeDef](./type_defs.md#jobscheduletypedef) 
+2. See [:material-code-braces: AutoMergingTypeDef](./type_defs.md#automergingtypedef) 
+3. See [:material-code-braces: ExportingConfigTypeDef](./type_defs.md#exportingconfigtypedef) 
 ## MatchingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import MatchingResponseTypeDef
+
+def get_value() -> MatchingResponseTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MatchingResponseTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    JobSchedule: NotRequired[JobScheduleTypeDef],  # (1)
+    AutoMerging: NotRequired[AutoMergingTypeDef],  # (2)
+    ExportingConfig: NotRequired[ExportingConfigTypeDef],  # (3)
+```
 
-- `Enabled`: `bool`
-- `JobSchedule`: [JobScheduleTypeDef](./type_defs.md#jobscheduletypedef)
-- `AutoMerging`: [AutoMergingTypeDef](./type_defs.md#automergingtypedef)
-- `ExportingConfig`:
-  [ExportingConfigTypeDef](./type_defs.md#exportingconfigtypedef)
-
-<a id="mergeprofilesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobScheduleTypeDef](./type_defs.md#jobscheduletypedef) 
+2. See [:material-code-braces: AutoMergingTypeDef](./type_defs.md#automergingtypedef) 
+3. See [:material-code-braces: ExportingConfigTypeDef](./type_defs.md#exportingconfigtypedef) 
 ## MergeProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import MergeProfilesRequestRequestTypeDef
+
+def get_value() -> MergeProfilesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "MainProfileId": ...,
+        "ProfileIdsToBeMerged": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MergeProfilesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    MainProfileId: str,
+    ProfileIdsToBeMerged: Sequence[str],
+    FieldSourceProfileIds: NotRequired[FieldSourceProfileIdsTypeDef],  # (1)
+```
 
-- `DomainName`: `str`
-- `MainProfileId`: `str`
-- `ProfileIdsToBeMerged`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `FieldSourceProfileIds`:
-  [FieldSourceProfileIdsTypeDef](./type_defs.md#fieldsourceprofileidstypedef)
-
-<a id="mergeprofilesresponsetypedef"></a>
-
+1. See [:material-code-braces: FieldSourceProfileIdsTypeDef](./type_defs.md#fieldsourceprofileidstypedef) 
 ## MergeProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import MergeProfilesResponseTypeDef
+
+def get_value() -> MergeProfilesResponseTypeDef:
+    return {
+        "Message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MergeProfilesResponseTypeDef(TypedDict):
+    Message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="objectfiltertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ObjectFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ObjectFilterTypeDef
+
+def get_value() -> ObjectFilterTypeDef:
+    return {
+        "KeyName": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `KeyName`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="objecttypefieldtypedef"></a>
+```python title="Definition"
+class ObjectFilterTypeDef(TypedDict):
+    KeyName: str,
+    Values: Sequence[str],
+```
 
 ## ObjectTypeFieldTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ObjectTypeFieldTypeDef
+
+def get_value() -> ObjectTypeFieldTypeDef:
+    return {
+        "Source": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ObjectTypeFieldTypeDef(TypedDict):
+    Source: NotRequired[str],
+    Target: NotRequired[str],
+    ContentType: NotRequired[FieldContentTypeType],  # (1)
+```
 
-- `Source`: `str`
-- `Target`: `str`
-- `ContentType`: [FieldContentTypeType](./literals.md#fieldcontenttypetype)
-
-<a id="objecttypekeytypedef"></a>
-
+1. See [:material-code-brackets: FieldContentTypeType](./literals.md#fieldcontenttypetype) 
 ## ObjectTypeKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ObjectTypeKeyTypeDef
+
+def get_value() -> ObjectTypeKeyTypeDef:
+    return {
+        "StandardIdentifiers": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ObjectTypeKeyTypeDef(TypedDict):
+    StandardIdentifiers: NotRequired[List[StandardIdentifierType]],  # (1)
+    FieldNames: NotRequired[List[str]],
+```
 
-- `StandardIdentifiers`:
-  `List`\[[StandardIdentifierType](./literals.md#standardidentifiertype)\]
-- `FieldNames`: `List`\[`str`\]
-
-<a id="profiletypedef"></a>
-
+1. See [:material-code-brackets: StandardIdentifierType](./literals.md#standardidentifiertype) 
 ## ProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ProfileTypeDef
+
+def get_value() -> ProfileTypeDef:
+    return {
+        "ProfileId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProfileTypeDef(TypedDict):
+    ProfileId: NotRequired[str],
+    AccountNumber: NotRequired[str],
+    AdditionalInformation: NotRequired[str],
+    PartyType: NotRequired[PartyTypeType],  # (1)
+    BusinessName: NotRequired[str],
+    FirstName: NotRequired[str],
+    MiddleName: NotRequired[str],
+    LastName: NotRequired[str],
+    BirthDate: NotRequired[str],
+    Gender: NotRequired[GenderType],  # (2)
+    PhoneNumber: NotRequired[str],
+    MobilePhoneNumber: NotRequired[str],
+    HomePhoneNumber: NotRequired[str],
+    BusinessPhoneNumber: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    PersonalEmailAddress: NotRequired[str],
+    BusinessEmailAddress: NotRequired[str],
+    Address: NotRequired[AddressTypeDef],  # (3)
+    ShippingAddress: NotRequired[AddressTypeDef],  # (3)
+    MailingAddress: NotRequired[AddressTypeDef],  # (3)
+    BillingAddress: NotRequired[AddressTypeDef],  # (3)
+    Attributes: NotRequired[Dict[str, str]],
+```
 
-- `ProfileId`: `str`
-- `AccountNumber`: `str`
-- `AdditionalInformation`: `str`
-- `PartyType`: [PartyTypeType](./literals.md#partytypetype)
-- `BusinessName`: `str`
-- `FirstName`: `str`
-- `MiddleName`: `str`
-- `LastName`: `str`
-- `BirthDate`: `str`
-- `Gender`: [GenderType](./literals.md#gendertype)
-- `PhoneNumber`: `str`
-- `MobilePhoneNumber`: `str`
-- `HomePhoneNumber`: `str`
-- `BusinessPhoneNumber`: `str`
-- `EmailAddress`: `str`
-- `PersonalEmailAddress`: `str`
-- `BusinessEmailAddress`: `str`
-- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `ShippingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `MailingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `BillingAddress`: [AddressTypeDef](./type_defs.md#addresstypedef)
-- `Attributes`: `Dict`\[`str`, `str`\]
-
-<a id="putintegrationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PartyTypeType](./literals.md#partytypetype) 
+2. See [:material-code-brackets: GenderType](./literals.md#gendertype) 
+3. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+4. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+5. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+6. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
 ## PutIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import PutIntegrationRequestRequestTypeDef
+
+def get_value() -> PutIntegrationRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutIntegrationRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Uri: NotRequired[str],
+    ObjectTypeName: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    FlowDefinition: NotRequired[FlowDefinitionTypeDef],  # (1)
+    ObjectTypeNames: NotRequired[Mapping[str, str]],
+```
 
-- `DomainName`: `str`
-
-Optional fields:
-
-- `Uri`: `str`
-- `ObjectTypeName`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `FlowDefinition`:
-  [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
-- `ObjectTypeNames`: `Mapping`\[`str`, `str`\]
-
-<a id="putintegrationresponsetypedef"></a>
-
+1. See [:material-code-braces: FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef) 
 ## PutIntegrationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import PutIntegrationResponseTypeDef
+
+def get_value() -> PutIntegrationResponseTypeDef:
+    return {
+        "DomainName": ...,
+        "Uri": ...,
+        "ObjectTypeName": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Tags": ...,
+        "ObjectTypeNames": ...,
+        "WorkflowId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutIntegrationResponseTypeDef(TypedDict):
+    DomainName: str,
+    Uri: str,
+    ObjectTypeName: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Tags: Dict[str, str],
+    ObjectTypeNames: Dict[str, str],
+    WorkflowId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DomainName`: `str`
-- `Uri`: `str`
-- `ObjectTypeName`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ObjectTypeNames`: `Dict`\[`str`, `str`\]
-- `WorkflowId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putprofileobjectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutProfileObjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import PutProfileObjectRequestRequestTypeDef
+
+def get_value() -> PutProfileObjectRequestRequestTypeDef:
+    return {
+        "ObjectTypeName": ...,
+        "Object": ...,
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `ObjectTypeName`: `str`
-- `Object`: `str`
-- `DomainName`: `str`
-
-<a id="putprofileobjectresponsetypedef"></a>
+```python title="Definition"
+class PutProfileObjectRequestRequestTypeDef(TypedDict):
+    ObjectTypeName: str,
+    Object: str,
+    DomainName: str,
+```
 
 ## PutProfileObjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import PutProfileObjectResponseTypeDef
+
+def get_value() -> PutProfileObjectResponseTypeDef:
+    return {
+        "ProfileObjectUniqueKey": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutProfileObjectResponseTypeDef(TypedDict):
+    ProfileObjectUniqueKey: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ProfileObjectUniqueKey`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putprofileobjecttyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutProfileObjectTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import PutProfileObjectTypeRequestRequestTypeDef
+
+def get_value() -> PutProfileObjectTypeRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ObjectTypeName": ...,
+        "Description": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutProfileObjectTypeRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ObjectTypeName: str,
+    Description: str,
+    TemplateId: NotRequired[str],
+    ExpirationDays: NotRequired[int],
+    EncryptionKey: NotRequired[str],
+    AllowProfileCreation: NotRequired[bool],
+    SourceLastUpdatedTimestampFormat: NotRequired[str],
+    Fields: NotRequired[Mapping[str, ObjectTypeFieldTypeDef]],  # (1)
+    Keys: NotRequired[Mapping[str, Sequence[ObjectTypeKeyTypeDef]]],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `DomainName`: `str`
-- `ObjectTypeName`: `str`
-- `Description`: `str`
-
-Optional fields:
-
-- `TemplateId`: `str`
-- `ExpirationDays`: `int`
-- `EncryptionKey`: `str`
-- `AllowProfileCreation`: `bool`
-- `SourceLastUpdatedTimestampFormat`: `str`
-- `Fields`: `Mapping`\[`str`,
-  [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
-- `Keys`: `Mapping`\[`str`,
-  `Sequence`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="putprofileobjecttyperesponsetypedef"></a>
-
+1. See [:material-code-braces: ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef) 
+2. See [:material-code-braces: ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef) 
 ## PutProfileObjectTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import PutProfileObjectTypeResponseTypeDef
+
+def get_value() -> PutProfileObjectTypeResponseTypeDef:
+    return {
+        "ObjectTypeName": ...,
+        "Description": ...,
+        "TemplateId": ...,
+        "ExpirationDays": ...,
+        "EncryptionKey": ...,
+        "AllowProfileCreation": ...,
+        "SourceLastUpdatedTimestampFormat": ...,
+        "Fields": ...,
+        "Keys": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutProfileObjectTypeResponseTypeDef(TypedDict):
+    ObjectTypeName: str,
+    Description: str,
+    TemplateId: str,
+    ExpirationDays: int,
+    EncryptionKey: str,
+    AllowProfileCreation: bool,
+    SourceLastUpdatedTimestampFormat: str,
+    Fields: Dict[str, ObjectTypeFieldTypeDef],  # (1)
+    Keys: Dict[str, List[ObjectTypeKeyTypeDef]],  # (2)
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ObjectTypeName`: `str`
-- `Description`: `str`
-- `TemplateId`: `str`
-- `ExpirationDays`: `int`
-- `EncryptionKey`: `str`
-- `AllowProfileCreation`: `bool`
-- `SourceLastUpdatedTimestampFormat`: `str`
-- `Fields`: `Dict`\[`str`,
-  [ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef)\]
-- `Keys`: `Dict`\[`str`,
-  `List`\[[ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef)\]\]
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ObjectTypeFieldTypeDef](./type_defs.md#objecttypefieldtypedef) 
+2. See [:material-code-braces: ObjectTypeKeyTypeDef](./type_defs.md#objecttypekeytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3exportingconfigtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3ExportingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import S3ExportingConfigTypeDef
+
+def get_value() -> S3ExportingConfigTypeDef:
+    return {
+        "S3BucketName": ...,
+    }
 ```
 
-Required fields:
-
-- `S3BucketName`: `str`
-
-Optional fields:
-
-- `S3KeyName`: `str`
-
-<a id="s3exportinglocationtypedef"></a>
+```python title="Definition"
+class S3ExportingConfigTypeDef(TypedDict):
+    S3BucketName: str,
+    S3KeyName: NotRequired[str],
+```
 
 ## S3ExportingLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import S3ExportingLocationTypeDef
+
+def get_value() -> S3ExportingLocationTypeDef:
+    return {
+        "S3BucketName": ...,
+    }
 ```
 
-Optional fields:
-
-- `S3BucketName`: `str`
-- `S3KeyName`: `str`
-
-<a id="s3sourcepropertiestypedef"></a>
+```python title="Definition"
+class S3ExportingLocationTypeDef(TypedDict):
+    S3BucketName: NotRequired[str],
+    S3KeyName: NotRequired[str],
+```
 
 ## S3SourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import S3SourcePropertiesTypeDef
+
+def get_value() -> S3SourcePropertiesTypeDef:
+    return {
+        "BucketName": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketName`: `str`
-
-Optional fields:
-
-- `BucketPrefix`: `str`
-
-<a id="salesforcesourcepropertiestypedef"></a>
+```python title="Definition"
+class S3SourcePropertiesTypeDef(TypedDict):
+    BucketName: str,
+    BucketPrefix: NotRequired[str],
+```
 
 ## SalesforceSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import SalesforceSourcePropertiesTypeDef
+
+def get_value() -> SalesforceSourcePropertiesTypeDef:
+    return {
+        "Object": ...,
+    }
 ```
 
-Required fields:
-
-- `Object`: `str`
-
-Optional fields:
-
-- `EnableDynamicFieldUpdate`: `bool`
-- `IncludeDeletedRecords`: `bool`
-
-<a id="scheduledtriggerpropertiestypedef"></a>
+```python title="Definition"
+class SalesforceSourcePropertiesTypeDef(TypedDict):
+    Object: str,
+    EnableDynamicFieldUpdate: NotRequired[bool],
+    IncludeDeletedRecords: NotRequired[bool],
+```
 
 ## ScheduledTriggerPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ScheduledTriggerPropertiesTypeDef
+
+def get_value() -> ScheduledTriggerPropertiesTypeDef:
+    return {
+        "ScheduleExpression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduledTriggerPropertiesTypeDef(TypedDict):
+    ScheduleExpression: str,
+    DataPullMode: NotRequired[DataPullModeType],  # (1)
+    ScheduleStartTime: NotRequired[Union[datetime, str]],
+    ScheduleEndTime: NotRequired[Union[datetime, str]],
+    Timezone: NotRequired[str],
+    ScheduleOffset: NotRequired[int],
+    FirstExecutionFrom: NotRequired[Union[datetime, str]],
+```
 
-- `ScheduleExpression`: `str`
-
-Optional fields:
-
-- `DataPullMode`: [DataPullModeType](./literals.md#datapullmodetype)
-- `ScheduleStartTime`: `Union`\[`datetime`, `str`\]
-- `ScheduleEndTime`: `Union`\[`datetime`, `str`\]
-- `Timezone`: `str`
-- `ScheduleOffset`: `int`
-- `FirstExecutionFrom`: `Union`\[`datetime`, `str`\]
-
-<a id="searchprofilesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DataPullModeType](./literals.md#datapullmodetype) 
 ## SearchProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import SearchProfilesRequestRequestTypeDef
+
+def get_value() -> SearchProfilesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "KeyName": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `KeyName`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="searchprofilesresponsetypedef"></a>
+```python title="Definition"
+class SearchProfilesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    KeyName: str,
+    Values: Sequence[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## SearchProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import SearchProfilesResponseTypeDef
+
+def get_value() -> SearchProfilesResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchProfilesResponseTypeDef(TypedDict):
+    Items: List[ProfileTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[[ProfileTypeDef](./type_defs.md#profiletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="servicenowsourcepropertiestypedef"></a>
-
+1. See [:material-code-braces: ProfileTypeDef](./type_defs.md#profiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceNowSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ServiceNowSourcePropertiesTypeDef
+
+def get_value() -> ServiceNowSourcePropertiesTypeDef:
+    return {
+        "Object": ...,
+    }
 ```
 
-Required fields:
-
-- `Object`: `str`
-
-<a id="sourceconnectorpropertiestypedef"></a>
+```python title="Definition"
+class ServiceNowSourcePropertiesTypeDef(TypedDict):
+    Object: str,
+```
 
 ## SourceConnectorPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import SourceConnectorPropertiesTypeDef
+
+def get_value() -> SourceConnectorPropertiesTypeDef:
+    return {
+        "Marketo": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceConnectorPropertiesTypeDef(TypedDict):
+    Marketo: NotRequired[MarketoSourcePropertiesTypeDef],  # (1)
+    S3: NotRequired[S3SourcePropertiesTypeDef],  # (2)
+    Salesforce: NotRequired[SalesforceSourcePropertiesTypeDef],  # (3)
+    ServiceNow: NotRequired[ServiceNowSourcePropertiesTypeDef],  # (4)
+    Zendesk: NotRequired[ZendeskSourcePropertiesTypeDef],  # (5)
+```
 
-- `Marketo`:
-  [MarketoSourcePropertiesTypeDef](./type_defs.md#marketosourcepropertiestypedef)
-- `S3`: [S3SourcePropertiesTypeDef](./type_defs.md#s3sourcepropertiestypedef)
-- `Salesforce`:
-  [SalesforceSourcePropertiesTypeDef](./type_defs.md#salesforcesourcepropertiestypedef)
-- `ServiceNow`:
-  [ServiceNowSourcePropertiesTypeDef](./type_defs.md#servicenowsourcepropertiestypedef)
-- `Zendesk`:
-  [ZendeskSourcePropertiesTypeDef](./type_defs.md#zendesksourcepropertiestypedef)
-
-<a id="sourceflowconfigtypedef"></a>
-
+1. See [:material-code-braces: MarketoSourcePropertiesTypeDef](./type_defs.md#marketosourcepropertiestypedef) 
+2. See [:material-code-braces: S3SourcePropertiesTypeDef](./type_defs.md#s3sourcepropertiestypedef) 
+3. See [:material-code-braces: SalesforceSourcePropertiesTypeDef](./type_defs.md#salesforcesourcepropertiestypedef) 
+4. See [:material-code-braces: ServiceNowSourcePropertiesTypeDef](./type_defs.md#servicenowsourcepropertiestypedef) 
+5. See [:material-code-braces: ZendeskSourcePropertiesTypeDef](./type_defs.md#zendesksourcepropertiestypedef) 
 ## SourceFlowConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import SourceFlowConfigTypeDef
+
+def get_value() -> SourceFlowConfigTypeDef:
+    return {
+        "ConnectorType": ...,
+        "SourceConnectorProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceFlowConfigTypeDef(TypedDict):
+    ConnectorType: SourceConnectorTypeType,  # (1)
+    SourceConnectorProperties: SourceConnectorPropertiesTypeDef,  # (3)
+    ConnectorProfileName: NotRequired[str],
+    IncrementalPullConfig: NotRequired[IncrementalPullConfigTypeDef],  # (2)
+```
 
-- `ConnectorType`:
-  [SourceConnectorTypeType](./literals.md#sourceconnectortypetype)
-- `SourceConnectorProperties`:
-  [SourceConnectorPropertiesTypeDef](./type_defs.md#sourceconnectorpropertiestypedef)
-
-Optional fields:
-
-- `ConnectorProfileName`: `str`
-- `IncrementalPullConfig`:
-  [IncrementalPullConfigTypeDef](./type_defs.md#incrementalpullconfigtypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SourceConnectorTypeType](./literals.md#sourceconnectortypetype) 
+2. See [:material-code-braces: IncrementalPullConfigTypeDef](./type_defs.md#incrementalpullconfigtypedef) 
+3. See [:material-code-braces: SourceConnectorPropertiesTypeDef](./type_defs.md#sourceconnectorpropertiestypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="tasktypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import TaskTypeDef
+
+def get_value() -> TaskTypeDef:
+    return {
+        "SourceFields": ...,
+        "TaskType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TaskTypeDef(TypedDict):
+    SourceFields: Sequence[str],
+    TaskType: TaskTypeType,  # (3)
+    ConnectorOperator: NotRequired[ConnectorOperatorTypeDef],  # (1)
+    DestinationField: NotRequired[str],
+    TaskProperties: NotRequired[Mapping[OperatorPropertiesKeysType, str]],  # (2)
+```
 
-- `SourceFields`: `Sequence`\[`str`\]
-- `TaskType`: [TaskTypeType](./literals.md#tasktypetype)
-
-Optional fields:
-
-- `ConnectorOperator`:
-  [ConnectorOperatorTypeDef](./type_defs.md#connectoroperatortypedef)
-- `DestinationField`: `str`
-- `TaskProperties`:
-  `Mapping`\[[OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype),
-  `str`\]
-
-<a id="triggerconfigtypedef"></a>
-
+1. See [:material-code-braces: ConnectorOperatorTypeDef](./type_defs.md#connectoroperatortypedef) 
+2. See [:material-code-brackets: OperatorPropertiesKeysType](./literals.md#operatorpropertieskeystype) 
+3. See [:material-code-brackets: TaskTypeType](./literals.md#tasktypetype) 
 ## TriggerConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import TriggerConfigTypeDef
+
+def get_value() -> TriggerConfigTypeDef:
+    return {
+        "TriggerType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TriggerConfigTypeDef(TypedDict):
+    TriggerType: TriggerTypeType,  # (1)
+    TriggerProperties: NotRequired[TriggerPropertiesTypeDef],  # (2)
+```
 
-- `TriggerType`: [TriggerTypeType](./literals.md#triggertypetype)
-
-Optional fields:
-
-- `TriggerProperties`:
-  [TriggerPropertiesTypeDef](./type_defs.md#triggerpropertiestypedef)
-
-<a id="triggerpropertiestypedef"></a>
-
+1. See [:material-code-brackets: TriggerTypeType](./literals.md#triggertypetype) 
+2. See [:material-code-braces: TriggerPropertiesTypeDef](./type_defs.md#triggerpropertiestypedef) 
 ## TriggerPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import TriggerPropertiesTypeDef
+
+def get_value() -> TriggerPropertiesTypeDef:
+    return {
+        "Scheduled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TriggerPropertiesTypeDef(TypedDict):
+    Scheduled: NotRequired[ScheduledTriggerPropertiesTypeDef],  # (1)
+```
 
-- `Scheduled`:
-  [ScheduledTriggerPropertiesTypeDef](./type_defs.md#scheduledtriggerpropertiestypedef)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ScheduledTriggerPropertiesTypeDef](./type_defs.md#scheduledtriggerpropertiestypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateaddresstypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateAddressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import UpdateAddressTypeDef
+
+def get_value() -> UpdateAddressTypeDef:
+    return {
+        "Address1": ...,
+    }
 ```
 
-Optional fields:
-
-- `Address1`: `str`
-- `Address2`: `str`
-- `Address3`: `str`
-- `Address4`: `str`
-- `City`: `str`
-- `County`: `str`
-- `State`: `str`
-- `Province`: `str`
-- `Country`: `str`
-- `PostalCode`: `str`
-
-<a id="updatedomainrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateAddressTypeDef(TypedDict):
+    Address1: NotRequired[str],
+    Address2: NotRequired[str],
+    Address3: NotRequired[str],
+    Address4: NotRequired[str],
+    City: NotRequired[str],
+    County: NotRequired[str],
+    State: NotRequired[str],
+    Province: NotRequired[str],
+    Country: NotRequired[str],
+    PostalCode: NotRequired[str],
+```
 
 ## UpdateDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import UpdateDomainRequestRequestTypeDef
+
+def get_value() -> UpdateDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    DefaultExpirationDays: NotRequired[int],
+    DefaultEncryptionKey: NotRequired[str],
+    DeadLetterQueueUrl: NotRequired[str],
+    Matching: NotRequired[MatchingRequestTypeDef],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `DomainName`: `str`
-
-Optional fields:
-
-- `DefaultExpirationDays`: `int`
-- `DefaultEncryptionKey`: `str`
-- `DeadLetterQueueUrl`: `str`
-- `Matching`: [MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="updatedomainresponsetypedef"></a>
-
+1. See [:material-code-braces: MatchingRequestTypeDef](./type_defs.md#matchingrequesttypedef) 
 ## UpdateDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import UpdateDomainResponseTypeDef
+
+def get_value() -> UpdateDomainResponseTypeDef:
+    return {
+        "DomainName": ...,
+        "DefaultExpirationDays": ...,
+        "DefaultEncryptionKey": ...,
+        "DeadLetterQueueUrl": ...,
+        "Matching": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainResponseTypeDef(TypedDict):
+    DomainName: str,
+    DefaultExpirationDays: int,
+    DefaultEncryptionKey: str,
+    DeadLetterQueueUrl: str,
+    Matching: MatchingResponseTypeDef,  # (1)
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainName`: `str`
-- `DefaultExpirationDays`: `int`
-- `DefaultEncryptionKey`: `str`
-- `DeadLetterQueueUrl`: `str`
-- `Matching`: [MatchingResponseTypeDef](./type_defs.md#matchingresponsetypedef)
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MatchingResponseTypeDef](./type_defs.md#matchingresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import UpdateProfileRequestRequestTypeDef
+
+def get_value() -> UpdateProfileRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ProfileId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProfileRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ProfileId: str,
+    AdditionalInformation: NotRequired[str],
+    AccountNumber: NotRequired[str],
+    PartyType: NotRequired[PartyTypeType],  # (1)
+    BusinessName: NotRequired[str],
+    FirstName: NotRequired[str],
+    MiddleName: NotRequired[str],
+    LastName: NotRequired[str],
+    BirthDate: NotRequired[str],
+    Gender: NotRequired[GenderType],  # (2)
+    PhoneNumber: NotRequired[str],
+    MobilePhoneNumber: NotRequired[str],
+    HomePhoneNumber: NotRequired[str],
+    BusinessPhoneNumber: NotRequired[str],
+    EmailAddress: NotRequired[str],
+    PersonalEmailAddress: NotRequired[str],
+    BusinessEmailAddress: NotRequired[str],
+    Address: NotRequired[UpdateAddressTypeDef],  # (3)
+    ShippingAddress: NotRequired[UpdateAddressTypeDef],  # (3)
+    MailingAddress: NotRequired[UpdateAddressTypeDef],  # (3)
+    BillingAddress: NotRequired[UpdateAddressTypeDef],  # (3)
+    Attributes: NotRequired[Mapping[str, str]],
+```
 
-- `DomainName`: `str`
-- `ProfileId`: `str`
-
-Optional fields:
-
-- `AdditionalInformation`: `str`
-- `AccountNumber`: `str`
-- `PartyType`: [PartyTypeType](./literals.md#partytypetype)
-- `BusinessName`: `str`
-- `FirstName`: `str`
-- `MiddleName`: `str`
-- `LastName`: `str`
-- `BirthDate`: `str`
-- `Gender`: [GenderType](./literals.md#gendertype)
-- `PhoneNumber`: `str`
-- `MobilePhoneNumber`: `str`
-- `HomePhoneNumber`: `str`
-- `BusinessPhoneNumber`: `str`
-- `EmailAddress`: `str`
-- `PersonalEmailAddress`: `str`
-- `BusinessEmailAddress`: `str`
-- `Address`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
-- `ShippingAddress`:
-  [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
-- `MailingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
-- `BillingAddress`: [UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef)
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="updateprofileresponsetypedef"></a>
-
+1. See [:material-code-brackets: PartyTypeType](./literals.md#partytypetype) 
+2. See [:material-code-brackets: GenderType](./literals.md#gendertype) 
+3. See [:material-code-braces: UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef) 
+4. See [:material-code-braces: UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef) 
+5. See [:material-code-braces: UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef) 
+6. See [:material-code-braces: UpdateAddressTypeDef](./type_defs.md#updateaddresstypedef) 
 ## UpdateProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import UpdateProfileResponseTypeDef
+
+def get_value() -> UpdateProfileResponseTypeDef:
+    return {
+        "ProfileId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProfileResponseTypeDef(TypedDict):
+    ProfileId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ProfileId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="workflowattributestypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WorkflowAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import WorkflowAttributesTypeDef
+
+def get_value() -> WorkflowAttributesTypeDef:
+    return {
+        "AppflowIntegration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkflowAttributesTypeDef(TypedDict):
+    AppflowIntegration: NotRequired[AppflowIntegrationWorkflowAttributesTypeDef],  # (1)
+```
 
-- `AppflowIntegration`:
-  [AppflowIntegrationWorkflowAttributesTypeDef](./type_defs.md#appflowintegrationworkflowattributestypedef)
-
-<a id="workflowmetricstypedef"></a>
-
+1. See [:material-code-braces: AppflowIntegrationWorkflowAttributesTypeDef](./type_defs.md#appflowintegrationworkflowattributestypedef) 
 ## WorkflowMetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import WorkflowMetricsTypeDef
+
+def get_value() -> WorkflowMetricsTypeDef:
+    return {
+        "AppflowIntegration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkflowMetricsTypeDef(TypedDict):
+    AppflowIntegration: NotRequired[AppflowIntegrationWorkflowMetricsTypeDef],  # (1)
+```
 
-- `AppflowIntegration`:
-  [AppflowIntegrationWorkflowMetricsTypeDef](./type_defs.md#appflowintegrationworkflowmetricstypedef)
-
-<a id="workflowstepitemtypedef"></a>
-
+1. See [:material-code-braces: AppflowIntegrationWorkflowMetricsTypeDef](./type_defs.md#appflowintegrationworkflowmetricstypedef) 
 ## WorkflowStepItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import WorkflowStepItemTypeDef
+
+def get_value() -> WorkflowStepItemTypeDef:
+    return {
+        "AppflowIntegration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkflowStepItemTypeDef(TypedDict):
+    AppflowIntegration: NotRequired[AppflowIntegrationWorkflowStepTypeDef],  # (1)
+```
 
-- `AppflowIntegration`:
-  [AppflowIntegrationWorkflowStepTypeDef](./type_defs.md#appflowintegrationworkflowsteptypedef)
-
-<a id="zendesksourcepropertiestypedef"></a>
-
+1. See [:material-code-braces: AppflowIntegrationWorkflowStepTypeDef](./type_defs.md#appflowintegrationworkflowsteptypedef) 
 ## ZendeskSourcePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_customer_profiles.type_defs import ZendeskSourcePropertiesTypeDef
+
+def get_value() -> ZendeskSourcePropertiesTypeDef:
+    return {
+        "Object": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ZendeskSourcePropertiesTypeDef(TypedDict):
+    Object: str,
+```
 
-- `Object`: `str`

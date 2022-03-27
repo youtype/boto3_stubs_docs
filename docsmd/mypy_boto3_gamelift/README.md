@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-gamelift-module"></a>
-
-# Type annotations for boto3 GameLift module
+#  GameLift module
 
 > [Index](../README.md) > GameLift
 
-Auto-generated documentation for
-[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
-type annotations stubs module
-[mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+!!! note ""
 
-- [Type annotations for boto3 GameLift module](#type-annotations-for-boto3-gamelift-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GameLiftClient](#gameliftclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+    type annotations stubs module [mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `GameLift`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[gamelift]'
 python -m pip install mypy-boto3-gamelift
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,163 +42,37 @@ python -m pip install mypy-boto3-gamelift
 python -m pip uninstall -y mypy-boto3-gamelift
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="gameliftclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GameLiftClient
 
-Type annotations for `boto3.client("gamelift")` as
-[GameLiftClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("gamelift")` as [GameLiftClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_gamelift.client import GameLiftClient
+
+def get_client() -> GameLiftClient:
+    return Session().cleint("gamelift")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_match](./client.md#accept_match)
-- [can_paginate](./client.md#can_paginate)
-- [claim_game_server](./client.md#claim_game_server)
-- [create_alias](./client.md#create_alias)
-- [create_build](./client.md#create_build)
-- [create_fleet](./client.md#create_fleet)
-- [create_fleet_locations](./client.md#create_fleet_locations)
-- [create_game_server_group](./client.md#create_game_server_group)
-- [create_game_session](./client.md#create_game_session)
-- [create_game_session_queue](./client.md#create_game_session_queue)
-- [create_matchmaking_configuration](./client.md#create_matchmaking_configuration)
-- [create_matchmaking_rule_set](./client.md#create_matchmaking_rule_set)
-- [create_player_session](./client.md#create_player_session)
-- [create_player_sessions](./client.md#create_player_sessions)
-- [create_script](./client.md#create_script)
-- [create_vpc_peering_authorization](./client.md#create_vpc_peering_authorization)
-- [create_vpc_peering_connection](./client.md#create_vpc_peering_connection)
-- [delete_alias](./client.md#delete_alias)
-- [delete_build](./client.md#delete_build)
-- [delete_fleet](./client.md#delete_fleet)
-- [delete_fleet_locations](./client.md#delete_fleet_locations)
-- [delete_game_server_group](./client.md#delete_game_server_group)
-- [delete_game_session_queue](./client.md#delete_game_session_queue)
-- [delete_matchmaking_configuration](./client.md#delete_matchmaking_configuration)
-- [delete_matchmaking_rule_set](./client.md#delete_matchmaking_rule_set)
-- [delete_scaling_policy](./client.md#delete_scaling_policy)
-- [delete_script](./client.md#delete_script)
-- [delete_vpc_peering_authorization](./client.md#delete_vpc_peering_authorization)
-- [delete_vpc_peering_connection](./client.md#delete_vpc_peering_connection)
-- [deregister_game_server](./client.md#deregister_game_server)
-- [describe_alias](./client.md#describe_alias)
-- [describe_build](./client.md#describe_build)
-- [describe_ec2_instance_limits](./client.md#describe_ec2_instance_limits)
-- [describe_fleet_attributes](./client.md#describe_fleet_attributes)
-- [describe_fleet_capacity](./client.md#describe_fleet_capacity)
-- [describe_fleet_events](./client.md#describe_fleet_events)
-- [describe_fleet_location_attributes](./client.md#describe_fleet_location_attributes)
-- [describe_fleet_location_capacity](./client.md#describe_fleet_location_capacity)
-- [describe_fleet_location_utilization](./client.md#describe_fleet_location_utilization)
-- [describe_fleet_port_settings](./client.md#describe_fleet_port_settings)
-- [describe_fleet_utilization](./client.md#describe_fleet_utilization)
-- [describe_game_server](./client.md#describe_game_server)
-- [describe_game_server_group](./client.md#describe_game_server_group)
-- [describe_game_server_instances](./client.md#describe_game_server_instances)
-- [describe_game_session_details](./client.md#describe_game_session_details)
-- [describe_game_session_placement](./client.md#describe_game_session_placement)
-- [describe_game_session_queues](./client.md#describe_game_session_queues)
-- [describe_game_sessions](./client.md#describe_game_sessions)
-- [describe_instances](./client.md#describe_instances)
-- [describe_matchmaking](./client.md#describe_matchmaking)
-- [describe_matchmaking_configurations](./client.md#describe_matchmaking_configurations)
-- [describe_matchmaking_rule_sets](./client.md#describe_matchmaking_rule_sets)
-- [describe_player_sessions](./client.md#describe_player_sessions)
-- [describe_runtime_configuration](./client.md#describe_runtime_configuration)
-- [describe_scaling_policies](./client.md#describe_scaling_policies)
-- [describe_script](./client.md#describe_script)
-- [describe_vpc_peering_authorizations](./client.md#describe_vpc_peering_authorizations)
-- [describe_vpc_peering_connections](./client.md#describe_vpc_peering_connections)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_game_session_log_url](./client.md#get_game_session_log_url)
-- [get_instance_access](./client.md#get_instance_access)
-- [get_paginator](./client.md#get_paginator)
-- [list_aliases](./client.md#list_aliases)
-- [list_builds](./client.md#list_builds)
-- [list_fleets](./client.md#list_fleets)
-- [list_game_server_groups](./client.md#list_game_server_groups)
-- [list_game_servers](./client.md#list_game_servers)
-- [list_scripts](./client.md#list_scripts)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_scaling_policy](./client.md#put_scaling_policy)
-- [register_game_server](./client.md#register_game_server)
-- [request_upload_credentials](./client.md#request_upload_credentials)
-- [resolve_alias](./client.md#resolve_alias)
-- [resume_game_server_group](./client.md#resume_game_server_group)
-- [search_game_sessions](./client.md#search_game_sessions)
-- [start_fleet_actions](./client.md#start_fleet_actions)
-- [start_game_session_placement](./client.md#start_game_session_placement)
-- [start_match_backfill](./client.md#start_match_backfill)
-- [start_matchmaking](./client.md#start_matchmaking)
-- [stop_fleet_actions](./client.md#stop_fleet_actions)
-- [stop_game_session_placement](./client.md#stop_game_session_placement)
-- [stop_matchmaking](./client.md#stop_matchmaking)
-- [suspend_game_server_group](./client.md#suspend_game_server_group)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_alias](./client.md#update_alias)
-- [update_build](./client.md#update_build)
-- [update_fleet_attributes](./client.md#update_fleet_attributes)
-- [update_fleet_capacity](./client.md#update_fleet_capacity)
-- [update_fleet_port_settings](./client.md#update_fleet_port_settings)
-- [update_game_server](./client.md#update_game_server)
-- [update_game_server_group](./client.md#update_game_server_group)
-- [update_game_session](./client.md#update_game_session)
-- [update_game_session_queue](./client.md#update_game_session_queue)
-- [update_matchmaking_configuration](./client.md#update_matchmaking_configuration)
-- [update_runtime_configuration](./client.md#update_runtime_configuration)
-- [update_script](./client.md#update_script)
-- [validate_matchmaking_rule_set](./client.md#validate_matchmaking_rule_set)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-GameLiftClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConflictException
-- FleetCapacityExceededException
-- GameSessionFullException
-- IdempotentParameterMismatchException
-- InternalServiceException
-- InvalidFleetStatusException
-- InvalidGameSessionStatusException
-- InvalidRequestException
-- LimitExceededException
-- NotFoundException
-- OutOfCapacityException
-- TaggingFailedException
-- TerminalRoutingStrategyException
-- UnauthorizedException
-- UnsupportedRegionException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("gamelift").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("gamelift").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_gamelift.paginator import DescribeFleetAttributesPaginator, ...
+from mypy_boto3_gamelift.paginator import DescribeFleetAttributesPaginator
+
+def get_describe_fleet_attributes_paginator() -> DescribeFleetAttributesPaginator:
+    return Session().client("gamelift").get_paginator("describe_fleet_attributes"))
 ```
 
 - [DescribeFleetAttributesPaginator](./paginators.md#describefleetattributespaginator)
@@ -244,16 +96,23 @@ from mypy_boto3_gamelift.paginator import DescribeFleetAttributesPaginator, ...
 - [ListScriptsPaginator](./paginators.md#listscriptspaginator)
 - [SearchGameSessionsPaginator](./paginators.md#searchgamesessionspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_gamelift.literals import AcceptanceTypeType
 
-```python
-from mypy_boto3_gamelift.literals import AcceptanceTypeType, ...
+def get_value() -> AcceptanceTypeType:
+    return "ACCEPT"
 ```
 
 - [AcceptanceTypeType](./literals.md#acceptancetypetype)
@@ -319,18 +178,24 @@ from mypy_boto3_gamelift.literals import AcceptanceTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_gamelift.type_defs import AcceptMatchInputRequestTypeDef
 
-```python
-from mypy_boto3_gamelift.type_defs import AcceptMatchInputRequestTypeDef, ...
+def get_value() -> AcceptMatchInputRequestTypeDef:
+    return {
+        "TicketId": ...,
+        "PlayerIds": ...,
+        "AcceptanceType": ...,
+    }
 ```
 
 - [AcceptMatchInputRequestTypeDef](./type_defs.md#acceptmatchinputrequesttypedef)
@@ -389,10 +254,13 @@ from mypy_boto3_gamelift.type_defs import AcceptMatchInputRequestTypeDef, ...
 - [DescribeBuildOutputTypeDef](./type_defs.md#describebuildoutputtypedef)
 - [DescribeEC2InstanceLimitsInputRequestTypeDef](./type_defs.md#describeec2instancelimitsinputrequesttypedef)
 - [DescribeEC2InstanceLimitsOutputTypeDef](./type_defs.md#describeec2instancelimitsoutputtypedef)
+- [DescribeFleetAttributesInputDescribeFleetAttributesPaginateTypeDef](./type_defs.md#describefleetattributesinputdescribefleetattributespaginatetypedef)
 - [DescribeFleetAttributesInputRequestTypeDef](./type_defs.md#describefleetattributesinputrequesttypedef)
 - [DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef)
+- [DescribeFleetCapacityInputDescribeFleetCapacityPaginateTypeDef](./type_defs.md#describefleetcapacityinputdescribefleetcapacitypaginatetypedef)
 - [DescribeFleetCapacityInputRequestTypeDef](./type_defs.md#describefleetcapacityinputrequesttypedef)
 - [DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef)
+- [DescribeFleetEventsInputDescribeFleetEventsPaginateTypeDef](./type_defs.md#describefleeteventsinputdescribefleeteventspaginatetypedef)
 - [DescribeFleetEventsInputRequestTypeDef](./type_defs.md#describefleeteventsinputrequesttypedef)
 - [DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef)
 - [DescribeFleetLocationAttributesInputRequestTypeDef](./type_defs.md#describefleetlocationattributesinputrequesttypedef)
@@ -403,34 +271,44 @@ from mypy_boto3_gamelift.type_defs import AcceptMatchInputRequestTypeDef, ...
 - [DescribeFleetLocationUtilizationOutputTypeDef](./type_defs.md#describefleetlocationutilizationoutputtypedef)
 - [DescribeFleetPortSettingsInputRequestTypeDef](./type_defs.md#describefleetportsettingsinputrequesttypedef)
 - [DescribeFleetPortSettingsOutputTypeDef](./type_defs.md#describefleetportsettingsoutputtypedef)
+- [DescribeFleetUtilizationInputDescribeFleetUtilizationPaginateTypeDef](./type_defs.md#describefleetutilizationinputdescribefleetutilizationpaginatetypedef)
 - [DescribeFleetUtilizationInputRequestTypeDef](./type_defs.md#describefleetutilizationinputrequesttypedef)
 - [DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef)
 - [DescribeGameServerGroupInputRequestTypeDef](./type_defs.md#describegameservergroupinputrequesttypedef)
 - [DescribeGameServerGroupOutputTypeDef](./type_defs.md#describegameservergroupoutputtypedef)
 - [DescribeGameServerInputRequestTypeDef](./type_defs.md#describegameserverinputrequesttypedef)
+- [DescribeGameServerInstancesInputDescribeGameServerInstancesPaginateTypeDef](./type_defs.md#describegameserverinstancesinputdescribegameserverinstancespaginatetypedef)
 - [DescribeGameServerInstancesInputRequestTypeDef](./type_defs.md#describegameserverinstancesinputrequesttypedef)
 - [DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef)
 - [DescribeGameServerOutputTypeDef](./type_defs.md#describegameserveroutputtypedef)
+- [DescribeGameSessionDetailsInputDescribeGameSessionDetailsPaginateTypeDef](./type_defs.md#describegamesessiondetailsinputdescribegamesessiondetailspaginatetypedef)
 - [DescribeGameSessionDetailsInputRequestTypeDef](./type_defs.md#describegamesessiondetailsinputrequesttypedef)
 - [DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef)
 - [DescribeGameSessionPlacementInputRequestTypeDef](./type_defs.md#describegamesessionplacementinputrequesttypedef)
 - [DescribeGameSessionPlacementOutputTypeDef](./type_defs.md#describegamesessionplacementoutputtypedef)
+- [DescribeGameSessionQueuesInputDescribeGameSessionQueuesPaginateTypeDef](./type_defs.md#describegamesessionqueuesinputdescribegamesessionqueuespaginatetypedef)
 - [DescribeGameSessionQueuesInputRequestTypeDef](./type_defs.md#describegamesessionqueuesinputrequesttypedef)
 - [DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef)
+- [DescribeGameSessionsInputDescribeGameSessionsPaginateTypeDef](./type_defs.md#describegamesessionsinputdescribegamesessionspaginatetypedef)
 - [DescribeGameSessionsInputRequestTypeDef](./type_defs.md#describegamesessionsinputrequesttypedef)
 - [DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef)
+- [DescribeInstancesInputDescribeInstancesPaginateTypeDef](./type_defs.md#describeinstancesinputdescribeinstancespaginatetypedef)
 - [DescribeInstancesInputRequestTypeDef](./type_defs.md#describeinstancesinputrequesttypedef)
 - [DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef)
+- [DescribeMatchmakingConfigurationsInputDescribeMatchmakingConfigurationsPaginateTypeDef](./type_defs.md#describematchmakingconfigurationsinputdescribematchmakingconfigurationspaginatetypedef)
 - [DescribeMatchmakingConfigurationsInputRequestTypeDef](./type_defs.md#describematchmakingconfigurationsinputrequesttypedef)
 - [DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef)
 - [DescribeMatchmakingInputRequestTypeDef](./type_defs.md#describematchmakinginputrequesttypedef)
 - [DescribeMatchmakingOutputTypeDef](./type_defs.md#describematchmakingoutputtypedef)
+- [DescribeMatchmakingRuleSetsInputDescribeMatchmakingRuleSetsPaginateTypeDef](./type_defs.md#describematchmakingrulesetsinputdescribematchmakingrulesetspaginatetypedef)
 - [DescribeMatchmakingRuleSetsInputRequestTypeDef](./type_defs.md#describematchmakingrulesetsinputrequesttypedef)
 - [DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef)
+- [DescribePlayerSessionsInputDescribePlayerSessionsPaginateTypeDef](./type_defs.md#describeplayersessionsinputdescribeplayersessionspaginatetypedef)
 - [DescribePlayerSessionsInputRequestTypeDef](./type_defs.md#describeplayersessionsinputrequesttypedef)
 - [DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef)
 - [DescribeRuntimeConfigurationInputRequestTypeDef](./type_defs.md#describeruntimeconfigurationinputrequesttypedef)
 - [DescribeRuntimeConfigurationOutputTypeDef](./type_defs.md#describeruntimeconfigurationoutputtypedef)
+- [DescribeScalingPoliciesInputDescribeScalingPoliciesPaginateTypeDef](./type_defs.md#describescalingpoliciesinputdescribescalingpoliciespaginatetypedef)
 - [DescribeScalingPoliciesInputRequestTypeDef](./type_defs.md#describescalingpoliciesinputrequesttypedef)
 - [DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef)
 - [DescribeScriptInputRequestTypeDef](./type_defs.md#describescriptinputrequesttypedef)
@@ -467,16 +345,22 @@ from mypy_boto3_gamelift.type_defs import AcceptMatchInputRequestTypeDef, ...
 - [InstanceTypeDef](./type_defs.md#instancetypedef)
 - [IpPermissionTypeDef](./type_defs.md#ippermissiontypedef)
 - [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
+- [ListAliasesInputListAliasesPaginateTypeDef](./type_defs.md#listaliasesinputlistaliasespaginatetypedef)
 - [ListAliasesInputRequestTypeDef](./type_defs.md#listaliasesinputrequesttypedef)
 - [ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef)
+- [ListBuildsInputListBuildsPaginateTypeDef](./type_defs.md#listbuildsinputlistbuildspaginatetypedef)
 - [ListBuildsInputRequestTypeDef](./type_defs.md#listbuildsinputrequesttypedef)
 - [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)
+- [ListFleetsInputListFleetsPaginateTypeDef](./type_defs.md#listfleetsinputlistfleetspaginatetypedef)
 - [ListFleetsInputRequestTypeDef](./type_defs.md#listfleetsinputrequesttypedef)
 - [ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef)
+- [ListGameServerGroupsInputListGameServerGroupsPaginateTypeDef](./type_defs.md#listgameservergroupsinputlistgameservergroupspaginatetypedef)
 - [ListGameServerGroupsInputRequestTypeDef](./type_defs.md#listgameservergroupsinputrequesttypedef)
 - [ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef)
+- [ListGameServersInputListGameServersPaginateTypeDef](./type_defs.md#listgameserversinputlistgameserverspaginatetypedef)
 - [ListGameServersInputRequestTypeDef](./type_defs.md#listgameserversinputrequesttypedef)
 - [ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef)
+- [ListScriptsInputListScriptsPaginateTypeDef](./type_defs.md#listscriptsinputlistscriptspaginatetypedef)
 - [ListScriptsInputRequestTypeDef](./type_defs.md#listscriptsinputrequesttypedef)
 - [ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -513,6 +397,7 @@ from mypy_boto3_gamelift.type_defs import AcceptMatchInputRequestTypeDef, ...
 - [ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef)
 - [ScriptTypeDef](./type_defs.md#scripttypedef)
 - [SearchGameSessionsInputRequestTypeDef](./type_defs.md#searchgamesessionsinputrequesttypedef)
+- [SearchGameSessionsInputSearchGameSessionsPaginateTypeDef](./type_defs.md#searchgamesessionsinputsearchgamesessionspaginatetypedef)
 - [SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef)
 - [ServerProcessTypeDef](./type_defs.md#serverprocesstypedef)
 - [StartFleetActionsInputRequestTypeDef](./type_defs.md#startfleetactionsinputrequesttypedef)
@@ -564,3 +449,4 @@ from mypy_boto3_gamelift.type_defs import AcceptMatchInputRequestTypeDef, ...
 - [VpcPeeringAuthorizationTypeDef](./type_defs.md#vpcpeeringauthorizationtypedef)
 - [VpcPeeringConnectionStatusTypeDef](./type_defs.md#vpcpeeringconnectionstatustypedef)
 - [VpcPeeringConnectionTypeDef](./type_defs.md#vpcpeeringconnectiontypedef)
+

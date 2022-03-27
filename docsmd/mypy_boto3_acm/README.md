@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-acm-module"></a>
-
-# Type annotations for boto3 ACM module
+#  ACM module
 
 > [Index](../README.md) > ACM
 
-Auto-generated documentation for
-[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
-type annotations stubs module
-[mypy-boto3-acm](https://pypi.org/project/mypy-boto3-acm/).
+!!! note ""
 
-- [Type annotations for boto3 ACM module](#type-annotations-for-boto3-acm-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ACMClient](#acmclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+    type annotations stubs module [mypy-boto3-acm](https://pypi.org/project/mypy-boto3-acm/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ACM`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[acm]'
 python -m pip install mypy-boto3-acm
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,113 +42,75 @@ python -m pip install mypy-boto3-acm
 python -m pip uninstall -y mypy-boto3-acm
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="acmclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ACMClient
 
-Type annotations for `boto3.client("acm")` as [ACMClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("acm")` as [ACMClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_acm.client import ACMClient
+
+def get_client() -> ACMClient:
+    return Session().cleint("acm")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_tags_to_certificate](./client.md#add_tags_to_certificate)
-- [can_paginate](./client.md#can_paginate)
-- [delete_certificate](./client.md#delete_certificate)
-- [describe_certificate](./client.md#describe_certificate)
-- [exceptions](./client.md#exceptions)
-- [export_certificate](./client.md#export_certificate)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_account_configuration](./client.md#get_account_configuration)
-- [get_certificate](./client.md#get_certificate)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [import_certificate](./client.md#import_certificate)
-- [list_certificates](./client.md#list_certificates)
-- [list_tags_for_certificate](./client.md#list_tags_for_certificate)
-- [put_account_configuration](./client.md#put_account_configuration)
-- [remove_tags_from_certificate](./client.md#remove_tags_from_certificate)
-- [renew_certificate](./client.md#renew_certificate)
-- [request_certificate](./client.md#request_certificate)
-- [resend_validation_email](./client.md#resend_validation_email)
-- [update_certificate_options](./client.md#update_certificate_options)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ACMClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InvalidArgsException
-- InvalidArnException
-- InvalidDomainValidationOptionsException
-- InvalidParameterException
-- InvalidStateException
-- InvalidTagException
-- LimitExceededException
-- RequestInProgressException
-- ResourceInUseException
-- ResourceNotFoundException
-- TagPolicyException
-- ThrottlingException
-- TooManyTagsException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("acm").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("acm").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_acm.paginator import ListCertificatesPaginator, ...
+from mypy_boto3_acm.paginator import ListCertificatesPaginator
+
+def get_list_certificates_paginator() -> ListCertificatesPaginator:
+    return Session().client("acm").get_paginator("list_certificates"))
 ```
 
 - [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("acm").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("acm").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_acm.waiter import CertificateValidatedWaiter, ...
+from mypy_boto3_acm.waiter import CertificateValidatedWaiter
+
+def get_certificate_validated_waiter() -> CertificateValidatedWaiter:
+    return Session().client("acm").get_waiter("certificate_validated")
 ```
 
 - [CertificateValidatedWaiter](./waiters.md#certificatevalidatedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_acm.literals import CertificateStatusType
 
-```python
-from mypy_boto3_acm.literals import CertificateStatusType, ...
+def get_value() -> CertificateStatusType:
+    return "EXPIRED"
 ```
 
 - [CertificateStatusType](./literals.md#certificatestatustype)
@@ -194,18 +133,23 @@ from mypy_boto3_acm.literals import CertificateStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestRequestTypeDef
 
-```python
-from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestRequestTypeDef, ...
+def get_value() -> AddTagsToCertificateRequestRequestTypeDef:
+    return {
+        "CertificateArn": ...,
+        "Tags": ...,
+    }
 ```
 
 - [AddTagsToCertificateRequestRequestTypeDef](./type_defs.md#addtagstocertificaterequestrequesttypedef)
@@ -213,6 +157,7 @@ from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestRequestTypeDef, 
 - [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
 - [CertificateSummaryTypeDef](./type_defs.md#certificatesummarytypedef)
 - [DeleteCertificateRequestRequestTypeDef](./type_defs.md#deletecertificaterequestrequesttypedef)
+- [DescribeCertificateRequestCertificateValidatedWaitTypeDef](./type_defs.md#describecertificaterequestcertificatevalidatedwaittypedef)
 - [DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef)
 - [DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef)
 - [DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)
@@ -228,6 +173,7 @@ from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestRequestTypeDef, 
 - [ImportCertificateRequestRequestTypeDef](./type_defs.md#importcertificaterequestrequesttypedef)
 - [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef)
 - [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
+- [ListCertificatesRequestListCertificatesPaginateTypeDef](./type_defs.md#listcertificatesrequestlistcertificatespaginatetypedef)
 - [ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef)
 - [ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef)
 - [ListTagsForCertificateRequestRequestTypeDef](./type_defs.md#listtagsforcertificaterequestrequesttypedef)
@@ -245,3 +191,4 @@ from mypy_boto3_acm.type_defs import AddTagsToCertificateRequestRequestTypeDef, 
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UpdateCertificateOptionsRequestRequestTypeDef](./type_defs.md#updatecertificateoptionsrequestrequesttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

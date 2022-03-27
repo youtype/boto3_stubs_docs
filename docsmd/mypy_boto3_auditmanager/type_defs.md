@@ -1,2665 +1,3263 @@
-<a id="typed-dictionaries-for-boto3-auditmanager-module"></a>
-
-# Typed dictionaries for boto3 AuditManager module
+# Typed dictionaries
 
 > [Index](../README.md) > [AuditManager](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
-type annotations stubs module
-[mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+!!! note ""
 
-- [Typed dictionaries for boto3 AuditManager module](#typed-dictionaries-for-boto3-auditmanager-module)
-  - [AWSAccountTypeDef](#awsaccounttypedef)
-  - [AWSServiceTypeDef](#awsservicetypedef)
-  - [AssessmentControlSetTypeDef](#assessmentcontrolsettypedef)
-  - [AssessmentControlTypeDef](#assessmentcontroltypedef)
-  - [AssessmentEvidenceFolderTypeDef](#assessmentevidencefoldertypedef)
-  - [AssessmentFrameworkMetadataTypeDef](#assessmentframeworkmetadatatypedef)
-  - [AssessmentFrameworkShareRequestTypeDef](#assessmentframeworksharerequesttypedef)
-  - [AssessmentFrameworkTypeDef](#assessmentframeworktypedef)
-  - [AssessmentMetadataItemTypeDef](#assessmentmetadataitemtypedef)
-  - [AssessmentMetadataTypeDef](#assessmentmetadatatypedef)
-  - [AssessmentReportEvidenceErrorTypeDef](#assessmentreportevidenceerrortypedef)
-  - [AssessmentReportMetadataTypeDef](#assessmentreportmetadatatypedef)
-  - [AssessmentReportTypeDef](#assessmentreporttypedef)
-  - [AssessmentReportsDestinationTypeDef](#assessmentreportsdestinationtypedef)
-  - [AssessmentTypeDef](#assessmenttypedef)
-  - [AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef](#associateassessmentreportevidencefolderrequestrequesttypedef)
-  - [BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef](#batchassociateassessmentreportevidencerequestrequesttypedef)
-  - [BatchAssociateAssessmentReportEvidenceResponseTypeDef](#batchassociateassessmentreportevidenceresponsetypedef)
-  - [BatchCreateDelegationByAssessmentErrorTypeDef](#batchcreatedelegationbyassessmenterrortypedef)
-  - [BatchCreateDelegationByAssessmentRequestRequestTypeDef](#batchcreatedelegationbyassessmentrequestrequesttypedef)
-  - [BatchCreateDelegationByAssessmentResponseTypeDef](#batchcreatedelegationbyassessmentresponsetypedef)
-  - [BatchDeleteDelegationByAssessmentErrorTypeDef](#batchdeletedelegationbyassessmenterrortypedef)
-  - [BatchDeleteDelegationByAssessmentRequestRequestTypeDef](#batchdeletedelegationbyassessmentrequestrequesttypedef)
-  - [BatchDeleteDelegationByAssessmentResponseTypeDef](#batchdeletedelegationbyassessmentresponsetypedef)
-  - [BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef](#batchdisassociateassessmentreportevidencerequestrequesttypedef)
-  - [BatchDisassociateAssessmentReportEvidenceResponseTypeDef](#batchdisassociateassessmentreportevidenceresponsetypedef)
-  - [BatchImportEvidenceToAssessmentControlErrorTypeDef](#batchimportevidencetoassessmentcontrolerrortypedef)
-  - [BatchImportEvidenceToAssessmentControlRequestRequestTypeDef](#batchimportevidencetoassessmentcontrolrequestrequesttypedef)
-  - [BatchImportEvidenceToAssessmentControlResponseTypeDef](#batchimportevidencetoassessmentcontrolresponsetypedef)
-  - [ChangeLogTypeDef](#changelogtypedef)
-  - [ControlCommentTypeDef](#controlcommenttypedef)
-  - [ControlDomainInsightsTypeDef](#controldomaininsightstypedef)
-  - [ControlInsightsMetadataByAssessmentItemTypeDef](#controlinsightsmetadatabyassessmentitemtypedef)
-  - [ControlInsightsMetadataItemTypeDef](#controlinsightsmetadataitemtypedef)
-  - [ControlMappingSourceTypeDef](#controlmappingsourcetypedef)
-  - [ControlMetadataTypeDef](#controlmetadatatypedef)
-  - [ControlSetTypeDef](#controlsettypedef)
-  - [ControlTypeDef](#controltypedef)
-  - [CreateAssessmentFrameworkControlSetTypeDef](#createassessmentframeworkcontrolsettypedef)
-  - [CreateAssessmentFrameworkControlTypeDef](#createassessmentframeworkcontroltypedef)
-  - [CreateAssessmentFrameworkRequestRequestTypeDef](#createassessmentframeworkrequestrequesttypedef)
-  - [CreateAssessmentFrameworkResponseTypeDef](#createassessmentframeworkresponsetypedef)
-  - [CreateAssessmentReportRequestRequestTypeDef](#createassessmentreportrequestrequesttypedef)
-  - [CreateAssessmentReportResponseTypeDef](#createassessmentreportresponsetypedef)
-  - [CreateAssessmentRequestRequestTypeDef](#createassessmentrequestrequesttypedef)
-  - [CreateAssessmentResponseTypeDef](#createassessmentresponsetypedef)
-  - [CreateControlMappingSourceTypeDef](#createcontrolmappingsourcetypedef)
-  - [CreateControlRequestRequestTypeDef](#createcontrolrequestrequesttypedef)
-  - [CreateControlResponseTypeDef](#createcontrolresponsetypedef)
-  - [CreateDelegationRequestTypeDef](#createdelegationrequesttypedef)
-  - [DelegationMetadataTypeDef](#delegationmetadatatypedef)
-  - [DelegationTypeDef](#delegationtypedef)
-  - [DeleteAssessmentFrameworkRequestRequestTypeDef](#deleteassessmentframeworkrequestrequesttypedef)
-  - [DeleteAssessmentFrameworkShareRequestRequestTypeDef](#deleteassessmentframeworksharerequestrequesttypedef)
-  - [DeleteAssessmentReportRequestRequestTypeDef](#deleteassessmentreportrequestrequesttypedef)
-  - [DeleteAssessmentRequestRequestTypeDef](#deleteassessmentrequestrequesttypedef)
-  - [DeleteControlRequestRequestTypeDef](#deletecontrolrequestrequesttypedef)
-  - [DeregisterAccountResponseTypeDef](#deregisteraccountresponsetypedef)
-  - [DeregisterOrganizationAdminAccountRequestRequestTypeDef](#deregisterorganizationadminaccountrequestrequesttypedef)
-  - [DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef](#disassociateassessmentreportevidencefolderrequestrequesttypedef)
-  - [EvidenceInsightsTypeDef](#evidenceinsightstypedef)
-  - [EvidenceTypeDef](#evidencetypedef)
-  - [FrameworkMetadataTypeDef](#frameworkmetadatatypedef)
-  - [FrameworkTypeDef](#frameworktypedef)
-  - [GetAccountStatusResponseTypeDef](#getaccountstatusresponsetypedef)
-  - [GetAssessmentFrameworkRequestRequestTypeDef](#getassessmentframeworkrequestrequesttypedef)
-  - [GetAssessmentFrameworkResponseTypeDef](#getassessmentframeworkresponsetypedef)
-  - [GetAssessmentReportUrlRequestRequestTypeDef](#getassessmentreporturlrequestrequesttypedef)
-  - [GetAssessmentReportUrlResponseTypeDef](#getassessmentreporturlresponsetypedef)
-  - [GetAssessmentRequestRequestTypeDef](#getassessmentrequestrequesttypedef)
-  - [GetAssessmentResponseTypeDef](#getassessmentresponsetypedef)
-  - [GetChangeLogsRequestRequestTypeDef](#getchangelogsrequestrequesttypedef)
-  - [GetChangeLogsResponseTypeDef](#getchangelogsresponsetypedef)
-  - [GetControlRequestRequestTypeDef](#getcontrolrequestrequesttypedef)
-  - [GetControlResponseTypeDef](#getcontrolresponsetypedef)
-  - [GetDelegationsRequestRequestTypeDef](#getdelegationsrequestrequesttypedef)
-  - [GetDelegationsResponseTypeDef](#getdelegationsresponsetypedef)
-  - [GetEvidenceByEvidenceFolderRequestRequestTypeDef](#getevidencebyevidencefolderrequestrequesttypedef)
-  - [GetEvidenceByEvidenceFolderResponseTypeDef](#getevidencebyevidencefolderresponsetypedef)
-  - [GetEvidenceFolderRequestRequestTypeDef](#getevidencefolderrequestrequesttypedef)
-  - [GetEvidenceFolderResponseTypeDef](#getevidencefolderresponsetypedef)
-  - [GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef](#getevidencefoldersbyassessmentcontrolrequestrequesttypedef)
-  - [GetEvidenceFoldersByAssessmentControlResponseTypeDef](#getevidencefoldersbyassessmentcontrolresponsetypedef)
-  - [GetEvidenceFoldersByAssessmentRequestRequestTypeDef](#getevidencefoldersbyassessmentrequestrequesttypedef)
-  - [GetEvidenceFoldersByAssessmentResponseTypeDef](#getevidencefoldersbyassessmentresponsetypedef)
-  - [GetEvidenceRequestRequestTypeDef](#getevidencerequestrequesttypedef)
-  - [GetEvidenceResponseTypeDef](#getevidenceresponsetypedef)
-  - [GetInsightsByAssessmentRequestRequestTypeDef](#getinsightsbyassessmentrequestrequesttypedef)
-  - [GetInsightsByAssessmentResponseTypeDef](#getinsightsbyassessmentresponsetypedef)
-  - [GetInsightsResponseTypeDef](#getinsightsresponsetypedef)
-  - [GetOrganizationAdminAccountResponseTypeDef](#getorganizationadminaccountresponsetypedef)
-  - [GetServicesInScopeResponseTypeDef](#getservicesinscoperesponsetypedef)
-  - [GetSettingsRequestRequestTypeDef](#getsettingsrequestrequesttypedef)
-  - [GetSettingsResponseTypeDef](#getsettingsresponsetypedef)
-  - [InsightsByAssessmentTypeDef](#insightsbyassessmenttypedef)
-  - [InsightsTypeDef](#insightstypedef)
-  - [ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef](#listassessmentcontrolinsightsbycontroldomainrequestrequesttypedef)
-  - [ListAssessmentControlInsightsByControlDomainResponseTypeDef](#listassessmentcontrolinsightsbycontroldomainresponsetypedef)
-  - [ListAssessmentFrameworkShareRequestsRequestRequestTypeDef](#listassessmentframeworksharerequestsrequestrequesttypedef)
-  - [ListAssessmentFrameworkShareRequestsResponseTypeDef](#listassessmentframeworksharerequestsresponsetypedef)
-  - [ListAssessmentFrameworksRequestRequestTypeDef](#listassessmentframeworksrequestrequesttypedef)
-  - [ListAssessmentFrameworksResponseTypeDef](#listassessmentframeworksresponsetypedef)
-  - [ListAssessmentReportsRequestRequestTypeDef](#listassessmentreportsrequestrequesttypedef)
-  - [ListAssessmentReportsResponseTypeDef](#listassessmentreportsresponsetypedef)
-  - [ListAssessmentsRequestRequestTypeDef](#listassessmentsrequestrequesttypedef)
-  - [ListAssessmentsResponseTypeDef](#listassessmentsresponsetypedef)
-  - [ListControlDomainInsightsByAssessmentRequestRequestTypeDef](#listcontroldomaininsightsbyassessmentrequestrequesttypedef)
-  - [ListControlDomainInsightsByAssessmentResponseTypeDef](#listcontroldomaininsightsbyassessmentresponsetypedef)
-  - [ListControlDomainInsightsRequestRequestTypeDef](#listcontroldomaininsightsrequestrequesttypedef)
-  - [ListControlDomainInsightsResponseTypeDef](#listcontroldomaininsightsresponsetypedef)
-  - [ListControlInsightsByControlDomainRequestRequestTypeDef](#listcontrolinsightsbycontroldomainrequestrequesttypedef)
-  - [ListControlInsightsByControlDomainResponseTypeDef](#listcontrolinsightsbycontroldomainresponsetypedef)
-  - [ListControlsRequestRequestTypeDef](#listcontrolsrequestrequesttypedef)
-  - [ListControlsResponseTypeDef](#listcontrolsresponsetypedef)
-  - [ListKeywordsForDataSourceRequestRequestTypeDef](#listkeywordsfordatasourcerequestrequesttypedef)
-  - [ListKeywordsForDataSourceResponseTypeDef](#listkeywordsfordatasourceresponsetypedef)
-  - [ListNotificationsRequestRequestTypeDef](#listnotificationsrequestrequesttypedef)
-  - [ListNotificationsResponseTypeDef](#listnotificationsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ManualEvidenceTypeDef](#manualevidencetypedef)
-  - [NotificationTypeDef](#notificationtypedef)
-  - [RegisterAccountRequestRequestTypeDef](#registeraccountrequestrequesttypedef)
-  - [RegisterAccountResponseTypeDef](#registeraccountresponsetypedef)
-  - [RegisterOrganizationAdminAccountRequestRequestTypeDef](#registerorganizationadminaccountrequestrequesttypedef)
-  - [RegisterOrganizationAdminAccountResponseTypeDef](#registerorganizationadminaccountresponsetypedef)
-  - [ResourceTypeDef](#resourcetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RoleTypeDef](#roletypedef)
-  - [ScopeTypeDef](#scopetypedef)
-  - [ServiceMetadataTypeDef](#servicemetadatatypedef)
-  - [SettingsTypeDef](#settingstypedef)
-  - [SourceKeywordTypeDef](#sourcekeywordtypedef)
-  - [StartAssessmentFrameworkShareRequestRequestTypeDef](#startassessmentframeworksharerequestrequesttypedef)
-  - [StartAssessmentFrameworkShareResponseTypeDef](#startassessmentframeworkshareresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [URLTypeDef](#urltypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAssessmentControlRequestRequestTypeDef](#updateassessmentcontrolrequestrequesttypedef)
-  - [UpdateAssessmentControlResponseTypeDef](#updateassessmentcontrolresponsetypedef)
-  - [UpdateAssessmentControlSetStatusRequestRequestTypeDef](#updateassessmentcontrolsetstatusrequestrequesttypedef)
-  - [UpdateAssessmentControlSetStatusResponseTypeDef](#updateassessmentcontrolsetstatusresponsetypedef)
-  - [UpdateAssessmentFrameworkControlSetTypeDef](#updateassessmentframeworkcontrolsettypedef)
-  - [UpdateAssessmentFrameworkRequestRequestTypeDef](#updateassessmentframeworkrequestrequesttypedef)
-  - [UpdateAssessmentFrameworkResponseTypeDef](#updateassessmentframeworkresponsetypedef)
-  - [UpdateAssessmentFrameworkShareRequestRequestTypeDef](#updateassessmentframeworksharerequestrequesttypedef)
-  - [UpdateAssessmentFrameworkShareResponseTypeDef](#updateassessmentframeworkshareresponsetypedef)
-  - [UpdateAssessmentRequestRequestTypeDef](#updateassessmentrequestrequesttypedef)
-  - [UpdateAssessmentResponseTypeDef](#updateassessmentresponsetypedef)
-  - [UpdateAssessmentStatusRequestRequestTypeDef](#updateassessmentstatusrequestrequesttypedef)
-  - [UpdateAssessmentStatusResponseTypeDef](#updateassessmentstatusresponsetypedef)
-  - [UpdateControlRequestRequestTypeDef](#updatecontrolrequestrequesttypedef)
-  - [UpdateControlResponseTypeDef](#updatecontrolresponsetypedef)
-  - [UpdateSettingsRequestRequestTypeDef](#updatesettingsrequestrequesttypedef)
-  - [UpdateSettingsResponseTypeDef](#updatesettingsresponsetypedef)
-  - [ValidateAssessmentReportIntegrityRequestRequestTypeDef](#validateassessmentreportintegrityrequestrequesttypedef)
-  - [ValidateAssessmentReportIntegrityResponseTypeDef](#validateassessmentreportintegrityresponsetypedef)
-
-<a id="awsaccounttypedef"></a>
+    Auto-generated documentation for [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
+    type annotations stubs module [mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 ## AWSAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AWSAccountTypeDef
+
+def get_value() -> AWSAccountTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `emailAddress`: `str`
-- `name`: `str`
-
-<a id="awsservicetypedef"></a>
+```python title="Definition"
+class AWSAccountTypeDef(TypedDict):
+    id: NotRequired[str],
+    emailAddress: NotRequired[str],
+    name: NotRequired[str],
+```
 
 ## AWSServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AWSServiceTypeDef
+
+def get_value() -> AWSServiceTypeDef:
+    return {
+        "serviceName": ...,
+    }
 ```
 
-Optional fields:
-
-- `serviceName`: `str`
-
-<a id="assessmentcontrolsettypedef"></a>
+```python title="Definition"
+class AWSServiceTypeDef(TypedDict):
+    serviceName: NotRequired[str],
+```
 
 ## AssessmentControlSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentControlSetTypeDef
+
+def get_value() -> AssessmentControlSetTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentControlSetTypeDef(TypedDict):
+    id: NotRequired[str],
+    description: NotRequired[str],
+    status: NotRequired[ControlSetStatusType],  # (1)
+    roles: NotRequired[List[RoleTypeDef]],  # (2)
+    controls: NotRequired[List[AssessmentControlTypeDef]],  # (3)
+    delegations: NotRequired[List[DelegationTypeDef]],  # (4)
+    systemEvidenceCount: NotRequired[int],
+    manualEvidenceCount: NotRequired[int],
+```
 
-- `id`: `str`
-- `description`: `str`
-- `status`: [ControlSetStatusType](./literals.md#controlsetstatustype)
-- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `controls`:
-  `List`\[[AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef)\]
-- `delegations`:
-  `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
-- `systemEvidenceCount`: `int`
-- `manualEvidenceCount`: `int`
-
-<a id="assessmentcontroltypedef"></a>
-
+1. See [:material-code-brackets: ControlSetStatusType](./literals.md#controlsetstatustype) 
+2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+3. See [:material-code-braces: AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef) 
+4. See [:material-code-braces: DelegationTypeDef](./type_defs.md#delegationtypedef) 
 ## AssessmentControlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentControlTypeDef
+
+def get_value() -> AssessmentControlTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentControlTypeDef(TypedDict):
+    id: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    status: NotRequired[ControlStatusType],  # (1)
+    response: NotRequired[ControlResponseType],  # (2)
+    comments: NotRequired[List[ControlCommentTypeDef]],  # (3)
+    evidenceSources: NotRequired[List[str]],
+    evidenceCount: NotRequired[int],
+    assessmentReportEvidenceCount: NotRequired[int],
+```
 
-- `id`: `str`
-- `name`: `str`
-- `description`: `str`
-- `status`: [ControlStatusType](./literals.md#controlstatustype)
-- `response`: [ControlResponseType](./literals.md#controlresponsetype)
-- `comments`:
-  `List`\[[ControlCommentTypeDef](./type_defs.md#controlcommenttypedef)\]
-- `evidenceSources`: `List`\[`str`\]
-- `evidenceCount`: `int`
-- `assessmentReportEvidenceCount`: `int`
-
-<a id="assessmentevidencefoldertypedef"></a>
-
+1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
+2. See [:material-code-brackets: ControlResponseType](./literals.md#controlresponsetype) 
+3. See [:material-code-braces: ControlCommentTypeDef](./type_defs.md#controlcommenttypedef) 
 ## AssessmentEvidenceFolderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentEvidenceFolderTypeDef
+
+def get_value() -> AssessmentEvidenceFolderTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `date`: `datetime`
-- `assessmentId`: `str`
-- `controlSetId`: `str`
-- `controlId`: `str`
-- `id`: `str`
-- `dataSource`: `str`
-- `author`: `str`
-- `totalEvidence`: `int`
-- `assessmentReportSelectionCount`: `int`
-- `controlName`: `str`
-- `evidenceResourcesIncludedCount`: `int`
-- `evidenceByTypeConfigurationDataCount`: `int`
-- `evidenceByTypeManualCount`: `int`
-- `evidenceByTypeComplianceCheckCount`: `int`
-- `evidenceByTypeComplianceCheckIssuesCount`: `int`
-- `evidenceByTypeUserActivityCount`: `int`
-- `evidenceAwsServiceSourceCount`: `int`
-
-<a id="assessmentframeworkmetadatatypedef"></a>
+```python title="Definition"
+class AssessmentEvidenceFolderTypeDef(TypedDict):
+    name: NotRequired[str],
+    date: NotRequired[datetime],
+    assessmentId: NotRequired[str],
+    controlSetId: NotRequired[str],
+    controlId: NotRequired[str],
+    id: NotRequired[str],
+    dataSource: NotRequired[str],
+    author: NotRequired[str],
+    totalEvidence: NotRequired[int],
+    assessmentReportSelectionCount: NotRequired[int],
+    controlName: NotRequired[str],
+    evidenceResourcesIncludedCount: NotRequired[int],
+    evidenceByTypeConfigurationDataCount: NotRequired[int],
+    evidenceByTypeManualCount: NotRequired[int],
+    evidenceByTypeComplianceCheckCount: NotRequired[int],
+    evidenceByTypeComplianceCheckIssuesCount: NotRequired[int],
+    evidenceByTypeUserActivityCount: NotRequired[int],
+    evidenceAwsServiceSourceCount: NotRequired[int],
+```
 
 ## AssessmentFrameworkMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentFrameworkMetadataTypeDef
+
+def get_value() -> AssessmentFrameworkMetadataTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentFrameworkMetadataTypeDef(TypedDict):
+    arn: NotRequired[str],
+    id: NotRequired[str],
+    type: NotRequired[FrameworkTypeType],  # (1)
+    name: NotRequired[str],
+    description: NotRequired[str],
+    logo: NotRequired[str],
+    complianceType: NotRequired[str],
+    controlsCount: NotRequired[int],
+    controlSetsCount: NotRequired[int],
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+```
 
-- `arn`: `str`
-- `id`: `str`
-- `type`: [FrameworkTypeType](./literals.md#frameworktypetype)
-- `name`: `str`
-- `description`: `str`
-- `logo`: `str`
-- `complianceType`: `str`
-- `controlsCount`: `int`
-- `controlSetsCount`: `int`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-
-<a id="assessmentframeworksharerequesttypedef"></a>
-
+1. See [:material-code-brackets: FrameworkTypeType](./literals.md#frameworktypetype) 
 ## AssessmentFrameworkShareRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentFrameworkShareRequestTypeDef
+
+def get_value() -> AssessmentFrameworkShareRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentFrameworkShareRequestTypeDef(TypedDict):
+    id: NotRequired[str],
+    frameworkId: NotRequired[str],
+    frameworkName: NotRequired[str],
+    frameworkDescription: NotRequired[str],
+    status: NotRequired[ShareRequestStatusType],  # (1)
+    sourceAccount: NotRequired[str],
+    destinationAccount: NotRequired[str],
+    destinationRegion: NotRequired[str],
+    expirationTime: NotRequired[datetime],
+    creationTime: NotRequired[datetime],
+    lastUpdated: NotRequired[datetime],
+    comment: NotRequired[str],
+    standardControlsCount: NotRequired[int],
+    customControlsCount: NotRequired[int],
+    complianceType: NotRequired[str],
+```
 
-- `id`: `str`
-- `frameworkId`: `str`
-- `frameworkName`: `str`
-- `frameworkDescription`: `str`
-- `status`: [ShareRequestStatusType](./literals.md#sharerequeststatustype)
-- `sourceAccount`: `str`
-- `destinationAccount`: `str`
-- `destinationRegion`: `str`
-- `expirationTime`: `datetime`
-- `creationTime`: `datetime`
-- `lastUpdated`: `datetime`
-- `comment`: `str`
-- `standardControlsCount`: `int`
-- `customControlsCount`: `int`
-- `complianceType`: `str`
-
-<a id="assessmentframeworktypedef"></a>
-
+1. See [:material-code-brackets: ShareRequestStatusType](./literals.md#sharerequeststatustype) 
 ## AssessmentFrameworkTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentFrameworkTypeDef
+
+def get_value() -> AssessmentFrameworkTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentFrameworkTypeDef(TypedDict):
+    id: NotRequired[str],
+    arn: NotRequired[str],
+    metadata: NotRequired[FrameworkMetadataTypeDef],  # (1)
+    controlSets: NotRequired[List[AssessmentControlSetTypeDef]],  # (2)
+```
 
-- `id`: `str`
-- `arn`: `str`
-- `metadata`:
-  [FrameworkMetadataTypeDef](./type_defs.md#frameworkmetadatatypedef)
-- `controlSets`:
-  `List`\[[AssessmentControlSetTypeDef](./type_defs.md#assessmentcontrolsettypedef)\]
-
-<a id="assessmentmetadataitemtypedef"></a>
-
+1. See [:material-code-braces: FrameworkMetadataTypeDef](./type_defs.md#frameworkmetadatatypedef) 
+2. See [:material-code-braces: AssessmentControlSetTypeDef](./type_defs.md#assessmentcontrolsettypedef) 
 ## AssessmentMetadataItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentMetadataItemTypeDef
+
+def get_value() -> AssessmentMetadataItemTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentMetadataItemTypeDef(TypedDict):
+    name: NotRequired[str],
+    id: NotRequired[str],
+    complianceType: NotRequired[str],
+    status: NotRequired[AssessmentStatusType],  # (1)
+    roles: NotRequired[List[RoleTypeDef]],  # (2)
+    delegations: NotRequired[List[DelegationTypeDef]],  # (3)
+    creationTime: NotRequired[datetime],
+    lastUpdated: NotRequired[datetime],
+```
 
-- `name`: `str`
-- `id`: `str`
-- `complianceType`: `str`
-- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
-- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `delegations`:
-  `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
-- `creationTime`: `datetime`
-- `lastUpdated`: `datetime`
-
-<a id="assessmentmetadatatypedef"></a>
-
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
+2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+3. See [:material-code-braces: DelegationTypeDef](./type_defs.md#delegationtypedef) 
 ## AssessmentMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentMetadataTypeDef
+
+def get_value() -> AssessmentMetadataTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentMetadataTypeDef(TypedDict):
+    name: NotRequired[str],
+    id: NotRequired[str],
+    description: NotRequired[str],
+    complianceType: NotRequired[str],
+    status: NotRequired[AssessmentStatusType],  # (1)
+    assessmentReportsDestination: NotRequired[AssessmentReportsDestinationTypeDef],  # (2)
+    scope: NotRequired[ScopeTypeDef],  # (3)
+    roles: NotRequired[List[RoleTypeDef]],  # (4)
+    delegations: NotRequired[List[DelegationTypeDef]],  # (5)
+    creationTime: NotRequired[datetime],
+    lastUpdated: NotRequired[datetime],
+```
 
-- `name`: `str`
-- `id`: `str`
-- `description`: `str`
-- `complianceType`: `str`
-- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
-- `assessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
-- `roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `delegations`:
-  `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
-- `creationTime`: `datetime`
-- `lastUpdated`: `datetime`
-
-<a id="assessmentreportevidenceerrortypedef"></a>
-
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
+2. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+3. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
+4. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+5. See [:material-code-braces: DelegationTypeDef](./type_defs.md#delegationtypedef) 
 ## AssessmentReportEvidenceErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentReportEvidenceErrorTypeDef
+
+def get_value() -> AssessmentReportEvidenceErrorTypeDef:
+    return {
+        "evidenceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `evidenceId`: `str`
-- `errorCode`: `str`
-- `errorMessage`: `str`
-
-<a id="assessmentreportmetadatatypedef"></a>
+```python title="Definition"
+class AssessmentReportEvidenceErrorTypeDef(TypedDict):
+    evidenceId: NotRequired[str],
+    errorCode: NotRequired[str],
+    errorMessage: NotRequired[str],
+```
 
 ## AssessmentReportMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentReportMetadataTypeDef
+
+def get_value() -> AssessmentReportMetadataTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentReportMetadataTypeDef(TypedDict):
+    id: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    assessmentId: NotRequired[str],
+    assessmentName: NotRequired[str],
+    author: NotRequired[str],
+    status: NotRequired[AssessmentReportStatusType],  # (1)
+    creationTime: NotRequired[datetime],
+```
 
-- `id`: `str`
-- `name`: `str`
-- `description`: `str`
-- `assessmentId`: `str`
-- `assessmentName`: `str`
-- `author`: `str`
-- `status`:
-  [AssessmentReportStatusType](./literals.md#assessmentreportstatustype)
-- `creationTime`: `datetime`
-
-<a id="assessmentreporttypedef"></a>
-
+1. See [:material-code-brackets: AssessmentReportStatusType](./literals.md#assessmentreportstatustype) 
 ## AssessmentReportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentReportTypeDef
+
+def get_value() -> AssessmentReportTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentReportTypeDef(TypedDict):
+    id: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    awsAccountId: NotRequired[str],
+    assessmentId: NotRequired[str],
+    assessmentName: NotRequired[str],
+    author: NotRequired[str],
+    status: NotRequired[AssessmentReportStatusType],  # (1)
+    creationTime: NotRequired[datetime],
+```
 
-- `id`: `str`
-- `name`: `str`
-- `description`: `str`
-- `awsAccountId`: `str`
-- `assessmentId`: `str`
-- `assessmentName`: `str`
-- `author`: `str`
-- `status`:
-  [AssessmentReportStatusType](./literals.md#assessmentreportstatustype)
-- `creationTime`: `datetime`
-
-<a id="assessmentreportsdestinationtypedef"></a>
-
+1. See [:material-code-brackets: AssessmentReportStatusType](./literals.md#assessmentreportstatustype) 
 ## AssessmentReportsDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentReportsDestinationTypeDef
+
+def get_value() -> AssessmentReportsDestinationTypeDef:
+    return {
+        "destinationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentReportsDestinationTypeDef(TypedDict):
+    destinationType: NotRequired[AssessmentReportDestinationTypeType],  # (1)
+    destination: NotRequired[str],
+```
 
-- `destinationType`: `Literal['S3']` (see
-  [AssessmentReportDestinationTypeType](./literals.md#assessmentreportdestinationtypetype))
-- `destination`: `str`
-
-<a id="assessmenttypedef"></a>
-
+1. See [:material-code-brackets: AssessmentReportDestinationTypeType](./literals.md#assessmentreportdestinationtypetype) 
 ## AssessmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssessmentTypeDef
+
+def get_value() -> AssessmentTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssessmentTypeDef(TypedDict):
+    arn: NotRequired[str],
+    awsAccount: NotRequired[AWSAccountTypeDef],  # (1)
+    metadata: NotRequired[AssessmentMetadataTypeDef],  # (2)
+    framework: NotRequired[AssessmentFrameworkTypeDef],  # (3)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `arn`: `str`
-- `awsAccount`: [AWSAccountTypeDef](./type_defs.md#awsaccounttypedef)
-- `metadata`:
-  [AssessmentMetadataTypeDef](./type_defs.md#assessmentmetadatatypedef)
-- `framework`:
-  [AssessmentFrameworkTypeDef](./type_defs.md#assessmentframeworktypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="associateassessmentreportevidencefolderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AWSAccountTypeDef](./type_defs.md#awsaccounttypedef) 
+2. See [:material-code-braces: AssessmentMetadataTypeDef](./type_defs.md#assessmentmetadatatypedef) 
+3. See [:material-code-braces: AssessmentFrameworkTypeDef](./type_defs.md#assessmentframeworktypedef) 
 ## AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef
+
+def get_value() -> AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "evidenceFolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-- `evidenceFolderId`: `str`
-
-<a id="batchassociateassessmentreportevidencerequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    evidenceFolderId: str,
+```
 
 ## BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef
+
+def get_value() -> BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "evidenceFolderId": ...,
+        "evidenceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-- `evidenceFolderId`: `str`
-- `evidenceIds`: `Sequence`\[`str`\]
-
-<a id="batchassociateassessmentreportevidenceresponsetypedef"></a>
+```python title="Definition"
+class BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    evidenceFolderId: str,
+    evidenceIds: Sequence[str],
+```
 
 ## BatchAssociateAssessmentReportEvidenceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchAssociateAssessmentReportEvidenceResponseTypeDef
+
+def get_value() -> BatchAssociateAssessmentReportEvidenceResponseTypeDef:
+    return {
+        "evidenceIds": ...,
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchAssociateAssessmentReportEvidenceResponseTypeDef(TypedDict):
+    evidenceIds: List[str],
+    errors: List[AssessmentReportEvidenceErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `evidenceIds`: `List`\[`str`\]
-- `errors`:
-  `List`\[[AssessmentReportEvidenceErrorTypeDef](./type_defs.md#assessmentreportevidenceerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchcreatedelegationbyassessmenterrortypedef"></a>
-
+1. See [:material-code-braces: AssessmentReportEvidenceErrorTypeDef](./type_defs.md#assessmentreportevidenceerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchCreateDelegationByAssessmentErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentErrorTypeDef
+
+def get_value() -> BatchCreateDelegationByAssessmentErrorTypeDef:
+    return {
+        "createDelegationRequest": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchCreateDelegationByAssessmentErrorTypeDef(TypedDict):
+    createDelegationRequest: NotRequired[CreateDelegationRequestTypeDef],  # (1)
+    errorCode: NotRequired[str],
+    errorMessage: NotRequired[str],
+```
 
-- `createDelegationRequest`:
-  [CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)
-- `errorCode`: `str`
-- `errorMessage`: `str`
-
-<a id="batchcreatedelegationbyassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef) 
 ## BatchCreateDelegationByAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentRequestRequestTypeDef
+
+def get_value() -> BatchCreateDelegationByAssessmentRequestRequestTypeDef:
+    return {
+        "createDelegationRequests": ...,
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchCreateDelegationByAssessmentRequestRequestTypeDef(TypedDict):
+    createDelegationRequests: Sequence[CreateDelegationRequestTypeDef],  # (1)
+    assessmentId: str,
+```
 
-- `createDelegationRequests`:
-  `Sequence`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
-- `assessmentId`: `str`
-
-<a id="batchcreatedelegationbyassessmentresponsetypedef"></a>
-
+1. See [:material-code-braces: CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef) 
 ## BatchCreateDelegationByAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchCreateDelegationByAssessmentResponseTypeDef
+
+def get_value() -> BatchCreateDelegationByAssessmentResponseTypeDef:
+    return {
+        "delegations": ...,
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchCreateDelegationByAssessmentResponseTypeDef(TypedDict):
+    delegations: List[DelegationTypeDef],  # (1)
+    errors: List[BatchCreateDelegationByAssessmentErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `delegations`:
-  `List`\[[DelegationTypeDef](./type_defs.md#delegationtypedef)\]
-- `errors`:
-  `List`\[[BatchCreateDelegationByAssessmentErrorTypeDef](./type_defs.md#batchcreatedelegationbyassessmenterrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdeletedelegationbyassessmenterrortypedef"></a>
-
+1. See [:material-code-braces: DelegationTypeDef](./type_defs.md#delegationtypedef) 
+2. See [:material-code-braces: BatchCreateDelegationByAssessmentErrorTypeDef](./type_defs.md#batchcreatedelegationbyassessmenterrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDeleteDelegationByAssessmentErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchDeleteDelegationByAssessmentErrorTypeDef
+
+def get_value() -> BatchDeleteDelegationByAssessmentErrorTypeDef:
+    return {
+        "delegationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `delegationId`: `str`
-- `errorCode`: `str`
-- `errorMessage`: `str`
-
-<a id="batchdeletedelegationbyassessmentrequestrequesttypedef"></a>
+```python title="Definition"
+class BatchDeleteDelegationByAssessmentErrorTypeDef(TypedDict):
+    delegationId: NotRequired[str],
+    errorCode: NotRequired[str],
+    errorMessage: NotRequired[str],
+```
 
 ## BatchDeleteDelegationByAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchDeleteDelegationByAssessmentRequestRequestTypeDef
+
+def get_value() -> BatchDeleteDelegationByAssessmentRequestRequestTypeDef:
+    return {
+        "delegationIds": ...,
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `delegationIds`: `Sequence`\[`str`\]
-- `assessmentId`: `str`
-
-<a id="batchdeletedelegationbyassessmentresponsetypedef"></a>
+```python title="Definition"
+class BatchDeleteDelegationByAssessmentRequestRequestTypeDef(TypedDict):
+    delegationIds: Sequence[str],
+    assessmentId: str,
+```
 
 ## BatchDeleteDelegationByAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchDeleteDelegationByAssessmentResponseTypeDef
+
+def get_value() -> BatchDeleteDelegationByAssessmentResponseTypeDef:
+    return {
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteDelegationByAssessmentResponseTypeDef(TypedDict):
+    errors: List[BatchDeleteDelegationByAssessmentErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errors`:
-  `List`\[[BatchDeleteDelegationByAssessmentErrorTypeDef](./type_defs.md#batchdeletedelegationbyassessmenterrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdisassociateassessmentreportevidencerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchDeleteDelegationByAssessmentErrorTypeDef](./type_defs.md#batchdeletedelegationbyassessmenterrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef
+
+def get_value() -> BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "evidenceFolderId": ...,
+        "evidenceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-- `evidenceFolderId`: `str`
-- `evidenceIds`: `Sequence`\[`str`\]
-
-<a id="batchdisassociateassessmentreportevidenceresponsetypedef"></a>
+```python title="Definition"
+class BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    evidenceFolderId: str,
+    evidenceIds: Sequence[str],
+```
 
 ## BatchDisassociateAssessmentReportEvidenceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchDisassociateAssessmentReportEvidenceResponseTypeDef
+
+def get_value() -> BatchDisassociateAssessmentReportEvidenceResponseTypeDef:
+    return {
+        "evidenceIds": ...,
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDisassociateAssessmentReportEvidenceResponseTypeDef(TypedDict):
+    evidenceIds: List[str],
+    errors: List[AssessmentReportEvidenceErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `evidenceIds`: `List`\[`str`\]
-- `errors`:
-  `List`\[[AssessmentReportEvidenceErrorTypeDef](./type_defs.md#assessmentreportevidenceerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchimportevidencetoassessmentcontrolerrortypedef"></a>
-
+1. See [:material-code-braces: AssessmentReportEvidenceErrorTypeDef](./type_defs.md#assessmentreportevidenceerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchImportEvidenceToAssessmentControlErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentControlErrorTypeDef
+
+def get_value() -> BatchImportEvidenceToAssessmentControlErrorTypeDef:
+    return {
+        "manualEvidence": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchImportEvidenceToAssessmentControlErrorTypeDef(TypedDict):
+    manualEvidence: NotRequired[ManualEvidenceTypeDef],  # (1)
+    errorCode: NotRequired[str],
+    errorMessage: NotRequired[str],
+```
 
-- `manualEvidence`:
-  [ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)
-- `errorCode`: `str`
-- `errorMessage`: `str`
-
-<a id="batchimportevidencetoassessmentcontrolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef) 
 ## BatchImportEvidenceToAssessmentControlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentControlRequestRequestTypeDef
+
+def get_value() -> BatchImportEvidenceToAssessmentControlRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "controlSetId": ...,
+        "controlId": ...,
+        "manualEvidence": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchImportEvidenceToAssessmentControlRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    controlSetId: str,
+    controlId: str,
+    manualEvidence: Sequence[ManualEvidenceTypeDef],  # (1)
+```
 
-- `assessmentId`: `str`
-- `controlSetId`: `str`
-- `controlId`: `str`
-- `manualEvidence`:
-  `Sequence`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
-
-<a id="batchimportevidencetoassessmentcontrolresponsetypedef"></a>
-
+1. See [:material-code-braces: ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef) 
 ## BatchImportEvidenceToAssessmentControlResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import BatchImportEvidenceToAssessmentControlResponseTypeDef
+
+def get_value() -> BatchImportEvidenceToAssessmentControlResponseTypeDef:
+    return {
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchImportEvidenceToAssessmentControlResponseTypeDef(TypedDict):
+    errors: List[BatchImportEvidenceToAssessmentControlErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errors`:
-  `List`\[[BatchImportEvidenceToAssessmentControlErrorTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="changelogtypedef"></a>
-
+1. See [:material-code-braces: BatchImportEvidenceToAssessmentControlErrorTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChangeLogTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ChangeLogTypeDef
+
+def get_value() -> ChangeLogTypeDef:
+    return {
+        "objectType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChangeLogTypeDef(TypedDict):
+    objectType: NotRequired[ObjectTypeEnumType],  # (1)
+    objectName: NotRequired[str],
+    action: NotRequired[ActionEnumType],  # (2)
+    createdAt: NotRequired[datetime],
+    createdBy: NotRequired[str],
+```
 
-- `objectType`: [ObjectTypeEnumType](./literals.md#objecttypeenumtype)
-- `objectName`: `str`
-- `action`: [ActionEnumType](./literals.md#actionenumtype)
-- `createdAt`: `datetime`
-- `createdBy`: `str`
-
-<a id="controlcommenttypedef"></a>
-
+1. See [:material-code-brackets: ObjectTypeEnumType](./literals.md#objecttypeenumtype) 
+2. See [:material-code-brackets: ActionEnumType](./literals.md#actionenumtype) 
 ## ControlCommentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ControlCommentTypeDef
+
+def get_value() -> ControlCommentTypeDef:
+    return {
+        "authorName": ...,
+    }
 ```
 
-Optional fields:
-
-- `authorName`: `str`
-- `commentBody`: `str`
-- `postedDate`: `datetime`
-
-<a id="controldomaininsightstypedef"></a>
+```python title="Definition"
+class ControlCommentTypeDef(TypedDict):
+    authorName: NotRequired[str],
+    commentBody: NotRequired[str],
+    postedDate: NotRequired[datetime],
+```
 
 ## ControlDomainInsightsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ControlDomainInsightsTypeDef
+
+def get_value() -> ControlDomainInsightsTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ControlDomainInsightsTypeDef(TypedDict):
+    name: NotRequired[str],
+    id: NotRequired[str],
+    controlsCountByNoncompliantEvidence: NotRequired[int],
+    totalControlsCount: NotRequired[int],
+    evidenceInsights: NotRequired[EvidenceInsightsTypeDef],  # (1)
+    lastUpdated: NotRequired[datetime],
+```
 
-- `name`: `str`
-- `id`: `str`
-- `controlsCountByNoncompliantEvidence`: `int`
-- `totalControlsCount`: `int`
-- `evidenceInsights`:
-  [EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef)
-- `lastUpdated`: `datetime`
-
-<a id="controlinsightsmetadatabyassessmentitemtypedef"></a>
-
+1. See [:material-code-braces: EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef) 
 ## ControlInsightsMetadataByAssessmentItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ControlInsightsMetadataByAssessmentItemTypeDef
+
+def get_value() -> ControlInsightsMetadataByAssessmentItemTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ControlInsightsMetadataByAssessmentItemTypeDef(TypedDict):
+    name: NotRequired[str],
+    id: NotRequired[str],
+    evidenceInsights: NotRequired[EvidenceInsightsTypeDef],  # (1)
+    controlSetName: NotRequired[str],
+    lastUpdated: NotRequired[datetime],
+```
 
-- `name`: `str`
-- `id`: `str`
-- `evidenceInsights`:
-  [EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef)
-- `controlSetName`: `str`
-- `lastUpdated`: `datetime`
-
-<a id="controlinsightsmetadataitemtypedef"></a>
-
+1. See [:material-code-braces: EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef) 
 ## ControlInsightsMetadataItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ControlInsightsMetadataItemTypeDef
+
+def get_value() -> ControlInsightsMetadataItemTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ControlInsightsMetadataItemTypeDef(TypedDict):
+    name: NotRequired[str],
+    id: NotRequired[str],
+    evidenceInsights: NotRequired[EvidenceInsightsTypeDef],  # (1)
+    lastUpdated: NotRequired[datetime],
+```
 
-- `name`: `str`
-- `id`: `str`
-- `evidenceInsights`:
-  [EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef)
-- `lastUpdated`: `datetime`
-
-<a id="controlmappingsourcetypedef"></a>
-
+1. See [:material-code-braces: EvidenceInsightsTypeDef](./type_defs.md#evidenceinsightstypedef) 
 ## ControlMappingSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ControlMappingSourceTypeDef
+
+def get_value() -> ControlMappingSourceTypeDef:
+    return {
+        "sourceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ControlMappingSourceTypeDef(TypedDict):
+    sourceId: NotRequired[str],
+    sourceName: NotRequired[str],
+    sourceDescription: NotRequired[str],
+    sourceSetUpOption: NotRequired[SourceSetUpOptionType],  # (1)
+    sourceType: NotRequired[SourceTypeType],  # (2)
+    sourceKeyword: NotRequired[SourceKeywordTypeDef],  # (3)
+    sourceFrequency: NotRequired[SourceFrequencyType],  # (4)
+    troubleshootingText: NotRequired[str],
+```
 
-- `sourceId`: `str`
-- `sourceName`: `str`
-- `sourceDescription`: `str`
-- `sourceSetUpOption`:
-  [SourceSetUpOptionType](./literals.md#sourcesetupoptiontype)
-- `sourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `sourceKeyword`: [SourceKeywordTypeDef](./type_defs.md#sourcekeywordtypedef)
-- `sourceFrequency`: [SourceFrequencyType](./literals.md#sourcefrequencytype)
-- `troubleshootingText`: `str`
-
-<a id="controlmetadatatypedef"></a>
-
+1. See [:material-code-brackets: SourceSetUpOptionType](./literals.md#sourcesetupoptiontype) 
+2. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+3. See [:material-code-braces: SourceKeywordTypeDef](./type_defs.md#sourcekeywordtypedef) 
+4. See [:material-code-brackets: SourceFrequencyType](./literals.md#sourcefrequencytype) 
 ## ControlMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ControlMetadataTypeDef
+
+def get_value() -> ControlMetadataTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `id`: `str`
-- `name`: `str`
-- `controlSources`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-
-<a id="controlsettypedef"></a>
+```python title="Definition"
+class ControlMetadataTypeDef(TypedDict):
+    arn: NotRequired[str],
+    id: NotRequired[str],
+    name: NotRequired[str],
+    controlSources: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+```
 
 ## ControlSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ControlSetTypeDef
+
+def get_value() -> ControlSetTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ControlSetTypeDef(TypedDict):
+    id: NotRequired[str],
+    name: NotRequired[str],
+    controls: NotRequired[List[ControlTypeDef]],  # (1)
+```
 
-- `id`: `str`
-- `name`: `str`
-- `controls`: `List`\[[ControlTypeDef](./type_defs.md#controltypedef)\]
-
-<a id="controltypedef"></a>
-
+1. See [:material-code-braces: ControlTypeDef](./type_defs.md#controltypedef) 
 ## ControlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ControlTypeDef
+
+def get_value() -> ControlTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ControlTypeDef(TypedDict):
+    arn: NotRequired[str],
+    id: NotRequired[str],
+    type: NotRequired[ControlTypeType],  # (1)
+    name: NotRequired[str],
+    description: NotRequired[str],
+    testingInformation: NotRequired[str],
+    actionPlanTitle: NotRequired[str],
+    actionPlanInstructions: NotRequired[str],
+    controlSources: NotRequired[str],
+    controlMappingSources: NotRequired[List[ControlMappingSourceTypeDef]],  # (2)
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    createdBy: NotRequired[str],
+    lastUpdatedBy: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `arn`: `str`
-- `id`: `str`
-- `type`: [ControlTypeType](./literals.md#controltypetype)
-- `name`: `str`
-- `description`: `str`
-- `testingInformation`: `str`
-- `actionPlanTitle`: `str`
-- `actionPlanInstructions`: `str`
-- `controlSources`: `str`
-- `controlMappingSources`:
-  `List`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `createdBy`: `str`
-- `lastUpdatedBy`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="createassessmentframeworkcontrolsettypedef"></a>
-
+1. See [:material-code-brackets: ControlTypeType](./literals.md#controltypetype) 
+2. See [:material-code-braces: ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef) 
 ## CreateAssessmentFrameworkControlSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkControlSetTypeDef
+
+def get_value() -> CreateAssessmentFrameworkControlSetTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssessmentFrameworkControlSetTypeDef(TypedDict):
+    name: str,
+    controls: NotRequired[Sequence[CreateAssessmentFrameworkControlTypeDef]],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `controls`:
-  `Sequence`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
-
-<a id="createassessmentframeworkcontroltypedef"></a>
-
+1. See [:material-code-braces: CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef) 
 ## CreateAssessmentFrameworkControlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkControlTypeDef
+
+def get_value() -> CreateAssessmentFrameworkControlTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="createassessmentframeworkrequestrequesttypedef"></a>
+```python title="Definition"
+class CreateAssessmentFrameworkControlTypeDef(TypedDict):
+    id: str,
+```
 
 ## CreateAssessmentFrameworkRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkRequestRequestTypeDef
+
+def get_value() -> CreateAssessmentFrameworkRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "controlSets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssessmentFrameworkRequestRequestTypeDef(TypedDict):
+    name: str,
+    controlSets: Sequence[CreateAssessmentFrameworkControlSetTypeDef],  # (1)
+    description: NotRequired[str],
+    complianceType: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-- `controlSets`:
-  `Sequence`\[[CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-- `complianceType`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createassessmentframeworkresponsetypedef"></a>
-
+1. See [:material-code-braces: CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef) 
 ## CreateAssessmentFrameworkResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkResponseTypeDef
+
+def get_value() -> CreateAssessmentFrameworkResponseTypeDef:
+    return {
+        "framework": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssessmentFrameworkResponseTypeDef(TypedDict):
+    framework: FrameworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `framework`: [FrameworkTypeDef](./type_defs.md#frameworktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createassessmentreportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FrameworkTypeDef](./type_defs.md#frameworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAssessmentReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentReportRequestRequestTypeDef
+
+def get_value() -> CreateAssessmentReportRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `assessmentId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="createassessmentreportresponsetypedef"></a>
+```python title="Definition"
+class CreateAssessmentReportRequestRequestTypeDef(TypedDict):
+    name: str,
+    assessmentId: str,
+    description: NotRequired[str],
+```
 
 ## CreateAssessmentReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentReportResponseTypeDef
+
+def get_value() -> CreateAssessmentReportResponseTypeDef:
+    return {
+        "assessmentReport": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssessmentReportResponseTypeDef(TypedDict):
+    assessmentReport: AssessmentReportTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessmentReport`:
-  [AssessmentReportTypeDef](./type_defs.md#assessmentreporttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentReportTypeDef](./type_defs.md#assessmentreporttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentRequestRequestTypeDef
+
+def get_value() -> CreateAssessmentRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "assessmentReportsDestination": ...,
+        "scope": ...,
+        "roles": ...,
+        "frameworkId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssessmentRequestRequestTypeDef(TypedDict):
+    name: str,
+    assessmentReportsDestination: AssessmentReportsDestinationTypeDef,  # (1)
+    scope: ScopeTypeDef,  # (2)
+    roles: Sequence[RoleTypeDef],  # (3)
+    frameworkId: str,
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-- `assessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
-- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `frameworkId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createassessmentresponsetypedef"></a>
-
+1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+2. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
+3. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
 ## CreateAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentResponseTypeDef
+
+def get_value() -> CreateAssessmentResponseTypeDef:
+    return {
+        "assessment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAssessmentResponseTypeDef(TypedDict):
+    assessment: AssessmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcontrolmappingsourcetypedef"></a>
-
+1. See [:material-code-braces: AssessmentTypeDef](./type_defs.md#assessmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateControlMappingSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateControlMappingSourceTypeDef
+
+def get_value() -> CreateControlMappingSourceTypeDef:
+    return {
+        "sourceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateControlMappingSourceTypeDef(TypedDict):
+    sourceName: NotRequired[str],
+    sourceDescription: NotRequired[str],
+    sourceSetUpOption: NotRequired[SourceSetUpOptionType],  # (1)
+    sourceType: NotRequired[SourceTypeType],  # (2)
+    sourceKeyword: NotRequired[SourceKeywordTypeDef],  # (3)
+    sourceFrequency: NotRequired[SourceFrequencyType],  # (4)
+    troubleshootingText: NotRequired[str],
+```
 
-- `sourceName`: `str`
-- `sourceDescription`: `str`
-- `sourceSetUpOption`:
-  [SourceSetUpOptionType](./literals.md#sourcesetupoptiontype)
-- `sourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `sourceKeyword`: [SourceKeywordTypeDef](./type_defs.md#sourcekeywordtypedef)
-- `sourceFrequency`: [SourceFrequencyType](./literals.md#sourcefrequencytype)
-- `troubleshootingText`: `str`
-
-<a id="createcontrolrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SourceSetUpOptionType](./literals.md#sourcesetupoptiontype) 
+2. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+3. See [:material-code-braces: SourceKeywordTypeDef](./type_defs.md#sourcekeywordtypedef) 
+4. See [:material-code-brackets: SourceFrequencyType](./literals.md#sourcefrequencytype) 
 ## CreateControlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateControlRequestRequestTypeDef
+
+def get_value() -> CreateControlRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "controlMappingSources": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateControlRequestRequestTypeDef(TypedDict):
+    name: str,
+    controlMappingSources: Sequence[CreateControlMappingSourceTypeDef],  # (1)
+    description: NotRequired[str],
+    testingInformation: NotRequired[str],
+    actionPlanTitle: NotRequired[str],
+    actionPlanInstructions: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-- `controlMappingSources`:
-  `Sequence`\[[CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-- `testingInformation`: `str`
-- `actionPlanTitle`: `str`
-- `actionPlanInstructions`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createcontrolresponsetypedef"></a>
-
+1. See [:material-code-braces: CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef) 
 ## CreateControlResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateControlResponseTypeDef
+
+def get_value() -> CreateControlResponseTypeDef:
+    return {
+        "control": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateControlResponseTypeDef(TypedDict):
+    control: ControlTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `control`: [ControlTypeDef](./type_defs.md#controltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdelegationrequesttypedef"></a>
-
+1. See [:material-code-braces: ControlTypeDef](./type_defs.md#controltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDelegationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import CreateDelegationRequestTypeDef
+
+def get_value() -> CreateDelegationRequestTypeDef:
+    return {
+        "comment": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateDelegationRequestTypeDef(TypedDict):
+    comment: NotRequired[str],
+    controlSetId: NotRequired[str],
+    roleArn: NotRequired[str],
+    roleType: NotRequired[RoleTypeType],  # (1)
+```
 
-- `comment`: `str`
-- `controlSetId`: `str`
-- `roleArn`: `str`
-- `roleType`: [RoleTypeType](./literals.md#roletypetype)
-
-<a id="delegationmetadatatypedef"></a>
-
+1. See [:material-code-brackets: RoleTypeType](./literals.md#roletypetype) 
 ## DelegationMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DelegationMetadataTypeDef
+
+def get_value() -> DelegationMetadataTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DelegationMetadataTypeDef(TypedDict):
+    id: NotRequired[str],
+    assessmentName: NotRequired[str],
+    assessmentId: NotRequired[str],
+    status: NotRequired[DelegationStatusType],  # (1)
+    roleArn: NotRequired[str],
+    creationTime: NotRequired[datetime],
+    controlSetName: NotRequired[str],
+```
 
-- `id`: `str`
-- `assessmentName`: `str`
-- `assessmentId`: `str`
-- `status`: [DelegationStatusType](./literals.md#delegationstatustype)
-- `roleArn`: `str`
-- `creationTime`: `datetime`
-- `controlSetName`: `str`
-
-<a id="delegationtypedef"></a>
-
+1. See [:material-code-brackets: DelegationStatusType](./literals.md#delegationstatustype) 
 ## DelegationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DelegationTypeDef
+
+def get_value() -> DelegationTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DelegationTypeDef(TypedDict):
+    id: NotRequired[str],
+    assessmentName: NotRequired[str],
+    assessmentId: NotRequired[str],
+    status: NotRequired[DelegationStatusType],  # (1)
+    roleArn: NotRequired[str],
+    roleType: NotRequired[RoleTypeType],  # (2)
+    creationTime: NotRequired[datetime],
+    lastUpdated: NotRequired[datetime],
+    controlSetId: NotRequired[str],
+    comment: NotRequired[str],
+    createdBy: NotRequired[str],
+```
 
-- `id`: `str`
-- `assessmentName`: `str`
-- `assessmentId`: `str`
-- `status`: [DelegationStatusType](./literals.md#delegationstatustype)
-- `roleArn`: `str`
-- `roleType`: [RoleTypeType](./literals.md#roletypetype)
-- `creationTime`: `datetime`
-- `lastUpdated`: `datetime`
-- `controlSetId`: `str`
-- `comment`: `str`
-- `createdBy`: `str`
-
-<a id="deleteassessmentframeworkrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DelegationStatusType](./literals.md#delegationstatustype) 
+2. See [:material-code-brackets: RoleTypeType](./literals.md#roletypetype) 
 ## DeleteAssessmentFrameworkRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DeleteAssessmentFrameworkRequestRequestTypeDef
+
+def get_value() -> DeleteAssessmentFrameworkRequestRequestTypeDef:
+    return {
+        "frameworkId": ...,
+    }
 ```
 
-Required fields:
-
-- `frameworkId`: `str`
-
-<a id="deleteassessmentframeworksharerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAssessmentFrameworkRequestRequestTypeDef(TypedDict):
+    frameworkId: str,
+```
 
 ## DeleteAssessmentFrameworkShareRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DeleteAssessmentFrameworkShareRequestRequestTypeDef
+
+def get_value() -> DeleteAssessmentFrameworkShareRequestRequestTypeDef:
+    return {
+        "requestId": ...,
+        "requestType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAssessmentFrameworkShareRequestRequestTypeDef(TypedDict):
+    requestId: str,
+    requestType: ShareRequestTypeType,  # (1)
+```
 
-- `requestId`: `str`
-- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
-
-<a id="deleteassessmentreportrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ShareRequestTypeType](./literals.md#sharerequesttypetype) 
 ## DeleteAssessmentReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DeleteAssessmentReportRequestRequestTypeDef
+
+def get_value() -> DeleteAssessmentReportRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "assessmentReportId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-- `assessmentReportId`: `str`
-
-<a id="deleteassessmentrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAssessmentReportRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    assessmentReportId: str,
+```
 
 ## DeleteAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DeleteAssessmentRequestRequestTypeDef
+
+def get_value() -> DeleteAssessmentRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-
-<a id="deletecontrolrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAssessmentRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+```
 
 ## DeleteControlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DeleteControlRequestRequestTypeDef
+
+def get_value() -> DeleteControlRequestRequestTypeDef:
+    return {
+        "controlId": ...,
+    }
 ```
 
-Required fields:
-
-- `controlId`: `str`
-
-<a id="deregisteraccountresponsetypedef"></a>
+```python title="Definition"
+class DeleteControlRequestRequestTypeDef(TypedDict):
+    controlId: str,
+```
 
 ## DeregisterAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DeregisterAccountResponseTypeDef
+
+def get_value() -> DeregisterAccountResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterAccountResponseTypeDef(TypedDict):
+    status: AccountStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `status`: [AccountStatusType](./literals.md#accountstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deregisterorganizationadminaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AccountStatusType](./literals.md#accountstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeregisterOrganizationAdminAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DeregisterOrganizationAdminAccountRequestRequestTypeDef
+
+def get_value() -> DeregisterOrganizationAdminAccountRequestRequestTypeDef:
+    return {
+        "adminAccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `adminAccountId`: `str`
-
-<a id="disassociateassessmentreportevidencefolderrequestrequesttypedef"></a>
+```python title="Definition"
+class DeregisterOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
+    adminAccountId: NotRequired[str],
+```
 
 ## DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef
+
+def get_value() -> DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "evidenceFolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-- `evidenceFolderId`: `str`
-
-<a id="evidenceinsightstypedef"></a>
+```python title="Definition"
+class DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    evidenceFolderId: str,
+```
 
 ## EvidenceInsightsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import EvidenceInsightsTypeDef
+
+def get_value() -> EvidenceInsightsTypeDef:
+    return {
+        "noncompliantEvidenceCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `noncompliantEvidenceCount`: `int`
-- `compliantEvidenceCount`: `int`
-- `inconclusiveEvidenceCount`: `int`
-
-<a id="evidencetypedef"></a>
+```python title="Definition"
+class EvidenceInsightsTypeDef(TypedDict):
+    noncompliantEvidenceCount: NotRequired[int],
+    compliantEvidenceCount: NotRequired[int],
+    inconclusiveEvidenceCount: NotRequired[int],
+```
 
 ## EvidenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import EvidenceTypeDef
+
+def get_value() -> EvidenceTypeDef:
+    return {
+        "dataSource": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EvidenceTypeDef(TypedDict):
+    dataSource: NotRequired[str],
+    evidenceAwsAccountId: NotRequired[str],
+    time: NotRequired[datetime],
+    eventSource: NotRequired[str],
+    eventName: NotRequired[str],
+    evidenceByType: NotRequired[str],
+    resourcesIncluded: NotRequired[List[ResourceTypeDef]],  # (1)
+    attributes: NotRequired[Dict[str, str]],
+    iamId: NotRequired[str],
+    complianceCheck: NotRequired[str],
+    awsOrganization: NotRequired[str],
+    awsAccountId: NotRequired[str],
+    evidenceFolderId: NotRequired[str],
+    id: NotRequired[str],
+    assessmentReportSelection: NotRequired[str],
+```
 
-- `dataSource`: `str`
-- `evidenceAwsAccountId`: `str`
-- `time`: `datetime`
-- `eventSource`: `str`
-- `eventName`: `str`
-- `evidenceByType`: `str`
-- `resourcesIncluded`:
-  `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `attributes`: `Dict`\[`str`, `str`\]
-- `iamId`: `str`
-- `complianceCheck`: `str`
-- `awsOrganization`: `str`
-- `awsAccountId`: `str`
-- `evidenceFolderId`: `str`
-- `id`: `str`
-- `assessmentReportSelection`: `str`
-
-<a id="frameworkmetadatatypedef"></a>
-
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
 ## FrameworkMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import FrameworkMetadataTypeDef
+
+def get_value() -> FrameworkMetadataTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`
-- `logo`: `str`
-- `complianceType`: `str`
-
-<a id="frameworktypedef"></a>
+```python title="Definition"
+class FrameworkMetadataTypeDef(TypedDict):
+    name: NotRequired[str],
+    description: NotRequired[str],
+    logo: NotRequired[str],
+    complianceType: NotRequired[str],
+```
 
 ## FrameworkTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import FrameworkTypeDef
+
+def get_value() -> FrameworkTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FrameworkTypeDef(TypedDict):
+    arn: NotRequired[str],
+    id: NotRequired[str],
+    name: NotRequired[str],
+    type: NotRequired[FrameworkTypeType],  # (1)
+    complianceType: NotRequired[str],
+    description: NotRequired[str],
+    logo: NotRequired[str],
+    controlSources: NotRequired[str],
+    controlSets: NotRequired[List[ControlSetTypeDef]],  # (2)
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    createdBy: NotRequired[str],
+    lastUpdatedBy: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `arn`: `str`
-- `id`: `str`
-- `name`: `str`
-- `type`: [FrameworkTypeType](./literals.md#frameworktypetype)
-- `complianceType`: `str`
-- `description`: `str`
-- `logo`: `str`
-- `controlSources`: `str`
-- `controlSets`:
-  `List`\[[ControlSetTypeDef](./type_defs.md#controlsettypedef)\]
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `createdBy`: `str`
-- `lastUpdatedBy`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="getaccountstatusresponsetypedef"></a>
-
+1. See [:material-code-brackets: FrameworkTypeType](./literals.md#frameworktypetype) 
+2. See [:material-code-braces: ControlSetTypeDef](./type_defs.md#controlsettypedef) 
 ## GetAccountStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetAccountStatusResponseTypeDef
+
+def get_value() -> GetAccountStatusResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountStatusResponseTypeDef(TypedDict):
+    status: AccountStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `status`: [AccountStatusType](./literals.md#accountstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getassessmentframeworkrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AccountStatusType](./literals.md#accountstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAssessmentFrameworkRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetAssessmentFrameworkRequestRequestTypeDef
+
+def get_value() -> GetAssessmentFrameworkRequestRequestTypeDef:
+    return {
+        "frameworkId": ...,
+    }
 ```
 
-Required fields:
-
-- `frameworkId`: `str`
-
-<a id="getassessmentframeworkresponsetypedef"></a>
+```python title="Definition"
+class GetAssessmentFrameworkRequestRequestTypeDef(TypedDict):
+    frameworkId: str,
+```
 
 ## GetAssessmentFrameworkResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetAssessmentFrameworkResponseTypeDef
+
+def get_value() -> GetAssessmentFrameworkResponseTypeDef:
+    return {
+        "framework": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssessmentFrameworkResponseTypeDef(TypedDict):
+    framework: FrameworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `framework`: [FrameworkTypeDef](./type_defs.md#frameworktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getassessmentreporturlrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FrameworkTypeDef](./type_defs.md#frameworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAssessmentReportUrlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetAssessmentReportUrlRequestRequestTypeDef
+
+def get_value() -> GetAssessmentReportUrlRequestRequestTypeDef:
+    return {
+        "assessmentReportId": ...,
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentReportId`: `str`
-- `assessmentId`: `str`
-
-<a id="getassessmentreporturlresponsetypedef"></a>
+```python title="Definition"
+class GetAssessmentReportUrlRequestRequestTypeDef(TypedDict):
+    assessmentReportId: str,
+    assessmentId: str,
+```
 
 ## GetAssessmentReportUrlResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetAssessmentReportUrlResponseTypeDef
+
+def get_value() -> GetAssessmentReportUrlResponseTypeDef:
+    return {
+        "preSignedUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssessmentReportUrlResponseTypeDef(TypedDict):
+    preSignedUrl: URLTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `preSignedUrl`: [URLTypeDef](./type_defs.md#urltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: URLTypeDef](./type_defs.md#urltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetAssessmentRequestRequestTypeDef
+
+def get_value() -> GetAssessmentRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-
-<a id="getassessmentresponsetypedef"></a>
+```python title="Definition"
+class GetAssessmentRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+```
 
 ## GetAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetAssessmentResponseTypeDef
+
+def get_value() -> GetAssessmentResponseTypeDef:
+    return {
+        "assessment": ...,
+        "userRole": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssessmentResponseTypeDef(TypedDict):
+    assessment: AssessmentTypeDef,  # (1)
+    userRole: RoleTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
-- `userRole`: [RoleTypeDef](./type_defs.md#roletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getchangelogsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentTypeDef](./type_defs.md#assessmenttypedef) 
+2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetChangeLogsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetChangeLogsRequestRequestTypeDef
+
+def get_value() -> GetChangeLogsRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-
-Optional fields:
-
-- `controlSetId`: `str`
-- `controlId`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getchangelogsresponsetypedef"></a>
+```python title="Definition"
+class GetChangeLogsRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    controlSetId: NotRequired[str],
+    controlId: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetChangeLogsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetChangeLogsResponseTypeDef
+
+def get_value() -> GetChangeLogsResponseTypeDef:
+    return {
+        "changeLogs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChangeLogsResponseTypeDef(TypedDict):
+    changeLogs: List[ChangeLogTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `changeLogs`: `List`\[[ChangeLogTypeDef](./type_defs.md#changelogtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontrolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChangeLogTypeDef](./type_defs.md#changelogtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetControlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetControlRequestRequestTypeDef
+
+def get_value() -> GetControlRequestRequestTypeDef:
+    return {
+        "controlId": ...,
+    }
 ```
 
-Required fields:
-
-- `controlId`: `str`
-
-<a id="getcontrolresponsetypedef"></a>
+```python title="Definition"
+class GetControlRequestRequestTypeDef(TypedDict):
+    controlId: str,
+```
 
 ## GetControlResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetControlResponseTypeDef
+
+def get_value() -> GetControlResponseTypeDef:
+    return {
+        "control": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetControlResponseTypeDef(TypedDict):
+    control: ControlTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `control`: [ControlTypeDef](./type_defs.md#controltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdelegationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ControlTypeDef](./type_defs.md#controltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDelegationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetDelegationsRequestRequestTypeDef
+
+def get_value() -> GetDelegationsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getdelegationsresponsetypedef"></a>
+```python title="Definition"
+class GetDelegationsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetDelegationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetDelegationsResponseTypeDef
+
+def get_value() -> GetDelegationsResponseTypeDef:
+    return {
+        "delegations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDelegationsResponseTypeDef(TypedDict):
+    delegations: List[DelegationMetadataTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `delegations`:
-  `List`\[[DelegationMetadataTypeDef](./type_defs.md#delegationmetadatatypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getevidencebyevidencefolderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DelegationMetadataTypeDef](./type_defs.md#delegationmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEvidenceByEvidenceFolderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceByEvidenceFolderRequestRequestTypeDef
+
+def get_value() -> GetEvidenceByEvidenceFolderRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "controlSetId": ...,
+        "evidenceFolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-- `controlSetId`: `str`
-- `evidenceFolderId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getevidencebyevidencefolderresponsetypedef"></a>
+```python title="Definition"
+class GetEvidenceByEvidenceFolderRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    controlSetId: str,
+    evidenceFolderId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetEvidenceByEvidenceFolderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceByEvidenceFolderResponseTypeDef
+
+def get_value() -> GetEvidenceByEvidenceFolderResponseTypeDef:
+    return {
+        "evidence": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEvidenceByEvidenceFolderResponseTypeDef(TypedDict):
+    evidence: List[EvidenceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `evidence`: `List`\[[EvidenceTypeDef](./type_defs.md#evidencetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getevidencefolderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EvidenceTypeDef](./type_defs.md#evidencetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEvidenceFolderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceFolderRequestRequestTypeDef
+
+def get_value() -> GetEvidenceFolderRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "controlSetId": ...,
+        "evidenceFolderId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-- `controlSetId`: `str`
-- `evidenceFolderId`: `str`
-
-<a id="getevidencefolderresponsetypedef"></a>
+```python title="Definition"
+class GetEvidenceFolderRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    controlSetId: str,
+    evidenceFolderId: str,
+```
 
 ## GetEvidenceFolderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceFolderResponseTypeDef
+
+def get_value() -> GetEvidenceFolderResponseTypeDef:
+    return {
+        "evidenceFolder": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEvidenceFolderResponseTypeDef(TypedDict):
+    evidenceFolder: AssessmentEvidenceFolderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `evidenceFolder`:
-  [AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getevidencefoldersbyassessmentcontrolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef
+
+def get_value() -> GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "controlSetId": ...,
+        "controlId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-- `controlSetId`: `str`
-- `controlId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getevidencefoldersbyassessmentcontrolresponsetypedef"></a>
+```python title="Definition"
+class GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    controlSetId: str,
+    controlId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetEvidenceFoldersByAssessmentControlResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentControlResponseTypeDef
+
+def get_value() -> GetEvidenceFoldersByAssessmentControlResponseTypeDef:
+    return {
+        "evidenceFolders": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEvidenceFoldersByAssessmentControlResponseTypeDef(TypedDict):
+    evidenceFolders: List[AssessmentEvidenceFolderTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `evidenceFolders`:
-  `List`\[[AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getevidencefoldersbyassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEvidenceFoldersByAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentRequestRequestTypeDef
+
+def get_value() -> GetEvidenceFoldersByAssessmentRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getevidencefoldersbyassessmentresponsetypedef"></a>
+```python title="Definition"
+class GetEvidenceFoldersByAssessmentRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetEvidenceFoldersByAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceFoldersByAssessmentResponseTypeDef
+
+def get_value() -> GetEvidenceFoldersByAssessmentResponseTypeDef:
+    return {
+        "evidenceFolders": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEvidenceFoldersByAssessmentResponseTypeDef(TypedDict):
+    evidenceFolders: List[AssessmentEvidenceFolderTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `evidenceFolders`:
-  `List`\[[AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getevidencerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentEvidenceFolderTypeDef](./type_defs.md#assessmentevidencefoldertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEvidenceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceRequestRequestTypeDef
+
+def get_value() -> GetEvidenceRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "controlSetId": ...,
+        "evidenceFolderId": ...,
+        "evidenceId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-- `controlSetId`: `str`
-- `evidenceFolderId`: `str`
-- `evidenceId`: `str`
-
-<a id="getevidenceresponsetypedef"></a>
+```python title="Definition"
+class GetEvidenceRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    controlSetId: str,
+    evidenceFolderId: str,
+    evidenceId: str,
+```
 
 ## GetEvidenceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetEvidenceResponseTypeDef
+
+def get_value() -> GetEvidenceResponseTypeDef:
+    return {
+        "evidence": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEvidenceResponseTypeDef(TypedDict):
+    evidence: EvidenceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `evidence`: [EvidenceTypeDef](./type_defs.md#evidencetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinsightsbyassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EvidenceTypeDef](./type_defs.md#evidencetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInsightsByAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetInsightsByAssessmentRequestRequestTypeDef
+
+def get_value() -> GetInsightsByAssessmentRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-
-<a id="getinsightsbyassessmentresponsetypedef"></a>
+```python title="Definition"
+class GetInsightsByAssessmentRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+```
 
 ## GetInsightsByAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetInsightsByAssessmentResponseTypeDef
+
+def get_value() -> GetInsightsByAssessmentResponseTypeDef:
+    return {
+        "insights": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInsightsByAssessmentResponseTypeDef(TypedDict):
+    insights: InsightsByAssessmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `insights`:
-  [InsightsByAssessmentTypeDef](./type_defs.md#insightsbyassessmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinsightsresponsetypedef"></a>
-
+1. See [:material-code-braces: InsightsByAssessmentTypeDef](./type_defs.md#insightsbyassessmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInsightsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetInsightsResponseTypeDef
+
+def get_value() -> GetInsightsResponseTypeDef:
+    return {
+        "insights": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInsightsResponseTypeDef(TypedDict):
+    insights: InsightsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `insights`: [InsightsTypeDef](./type_defs.md#insightstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getorganizationadminaccountresponsetypedef"></a>
-
+1. See [:material-code-braces: InsightsTypeDef](./type_defs.md#insightstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOrganizationAdminAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetOrganizationAdminAccountResponseTypeDef
+
+def get_value() -> GetOrganizationAdminAccountResponseTypeDef:
+    return {
+        "adminAccountId": ...,
+        "organizationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOrganizationAdminAccountResponseTypeDef(TypedDict):
+    adminAccountId: str,
+    organizationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `adminAccountId`: `str`
-- `organizationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservicesinscoperesponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServicesInScopeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetServicesInScopeResponseTypeDef
+
+def get_value() -> GetServicesInScopeResponseTypeDef:
+    return {
+        "serviceMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServicesInScopeResponseTypeDef(TypedDict):
+    serviceMetadata: List[ServiceMetadataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serviceMetadata`:
-  `List`\[[ServiceMetadataTypeDef](./type_defs.md#servicemetadatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsettingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceMetadataTypeDef](./type_defs.md#servicemetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetSettingsRequestRequestTypeDef
+
+def get_value() -> GetSettingsRequestRequestTypeDef:
+    return {
+        "attribute": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSettingsRequestRequestTypeDef(TypedDict):
+    attribute: SettingAttributeType,  # (1)
+```
 
-- `attribute`: [SettingAttributeType](./literals.md#settingattributetype)
-
-<a id="getsettingsresponsetypedef"></a>
-
+1. See [:material-code-brackets: SettingAttributeType](./literals.md#settingattributetype) 
 ## GetSettingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import GetSettingsResponseTypeDef
+
+def get_value() -> GetSettingsResponseTypeDef:
+    return {
+        "settings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSettingsResponseTypeDef(TypedDict):
+    settings: SettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="insightsbyassessmenttypedef"></a>
-
+1. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InsightsByAssessmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import InsightsByAssessmentTypeDef
+
+def get_value() -> InsightsByAssessmentTypeDef:
+    return {
+        "noncompliantEvidenceCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `noncompliantEvidenceCount`: `int`
-- `compliantEvidenceCount`: `int`
-- `inconclusiveEvidenceCount`: `int`
-- `assessmentControlsCountByNoncompliantEvidence`: `int`
-- `totalAssessmentControlsCount`: `int`
-- `lastUpdated`: `datetime`
-
-<a id="insightstypedef"></a>
+```python title="Definition"
+class InsightsByAssessmentTypeDef(TypedDict):
+    noncompliantEvidenceCount: NotRequired[int],
+    compliantEvidenceCount: NotRequired[int],
+    inconclusiveEvidenceCount: NotRequired[int],
+    assessmentControlsCountByNoncompliantEvidence: NotRequired[int],
+    totalAssessmentControlsCount: NotRequired[int],
+    lastUpdated: NotRequired[datetime],
+```
 
 ## InsightsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import InsightsTypeDef
+
+def get_value() -> InsightsTypeDef:
+    return {
+        "activeAssessmentsCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `activeAssessmentsCount`: `int`
-- `noncompliantEvidenceCount`: `int`
-- `compliantEvidenceCount`: `int`
-- `inconclusiveEvidenceCount`: `int`
-- `assessmentControlsCountByNoncompliantEvidence`: `int`
-- `totalAssessmentControlsCount`: `int`
-- `lastUpdated`: `datetime`
-
-<a id="listassessmentcontrolinsightsbycontroldomainrequestrequesttypedef"></a>
+```python title="Definition"
+class InsightsTypeDef(TypedDict):
+    activeAssessmentsCount: NotRequired[int],
+    noncompliantEvidenceCount: NotRequired[int],
+    compliantEvidenceCount: NotRequired[int],
+    inconclusiveEvidenceCount: NotRequired[int],
+    assessmentControlsCountByNoncompliantEvidence: NotRequired[int],
+    totalAssessmentControlsCount: NotRequired[int],
+    lastUpdated: NotRequired[datetime],
+```
 
 ## ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef
+
+def get_value() -> ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef:
+    return {
+        "controlDomainId": ...,
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `controlDomainId`: `str`
-- `assessmentId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listassessmentcontrolinsightsbycontroldomainresponsetypedef"></a>
+```python title="Definition"
+class ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef(TypedDict):
+    controlDomainId: str,
+    assessmentId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListAssessmentControlInsightsByControlDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentControlInsightsByControlDomainResponseTypeDef
+
+def get_value() -> ListAssessmentControlInsightsByControlDomainResponseTypeDef:
+    return {
+        "controlInsightsByAssessment": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssessmentControlInsightsByControlDomainResponseTypeDef(TypedDict):
+    controlInsightsByAssessment: List[ControlInsightsMetadataByAssessmentItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `controlInsightsByAssessment`:
-  `List`\[[ControlInsightsMetadataByAssessmentItemTypeDef](./type_defs.md#controlinsightsmetadatabyassessmentitemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listassessmentframeworksharerequestsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ControlInsightsMetadataByAssessmentItemTypeDef](./type_defs.md#controlinsightsmetadatabyassessmentitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAssessmentFrameworkShareRequestsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworkShareRequestsRequestRequestTypeDef
+
+def get_value() -> ListAssessmentFrameworkShareRequestsRequestRequestTypeDef:
+    return {
+        "requestType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssessmentFrameworkShareRequestsRequestRequestTypeDef(TypedDict):
+    requestType: ShareRequestTypeType,  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listassessmentframeworksharerequestsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ShareRequestTypeType](./literals.md#sharerequesttypetype) 
 ## ListAssessmentFrameworkShareRequestsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworkShareRequestsResponseTypeDef
+
+def get_value() -> ListAssessmentFrameworkShareRequestsResponseTypeDef:
+    return {
+        "assessmentFrameworkShareRequests": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssessmentFrameworkShareRequestsResponseTypeDef(TypedDict):
+    assessmentFrameworkShareRequests: List[AssessmentFrameworkShareRequestTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessmentFrameworkShareRequests`:
-  `List`\[[AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listassessmentframeworksrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAssessmentFrameworksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworksRequestRequestTypeDef
+
+def get_value() -> ListAssessmentFrameworksRequestRequestTypeDef:
+    return {
+        "frameworkType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssessmentFrameworksRequestRequestTypeDef(TypedDict):
+    frameworkType: FrameworkTypeType,  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `frameworkType`: [FrameworkTypeType](./literals.md#frameworktypetype)
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listassessmentframeworksresponsetypedef"></a>
-
+1. See [:material-code-brackets: FrameworkTypeType](./literals.md#frameworktypetype) 
 ## ListAssessmentFrameworksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentFrameworksResponseTypeDef
+
+def get_value() -> ListAssessmentFrameworksResponseTypeDef:
+    return {
+        "frameworkMetadataList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssessmentFrameworksResponseTypeDef(TypedDict):
+    frameworkMetadataList: List[AssessmentFrameworkMetadataTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `frameworkMetadataList`:
-  `List`\[[AssessmentFrameworkMetadataTypeDef](./type_defs.md#assessmentframeworkmetadatatypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listassessmentreportsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentFrameworkMetadataTypeDef](./type_defs.md#assessmentframeworkmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAssessmentReportsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentReportsRequestRequestTypeDef
+
+def get_value() -> ListAssessmentReportsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listassessmentreportsresponsetypedef"></a>
+```python title="Definition"
+class ListAssessmentReportsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListAssessmentReportsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentReportsResponseTypeDef
+
+def get_value() -> ListAssessmentReportsResponseTypeDef:
+    return {
+        "assessmentReports": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssessmentReportsResponseTypeDef(TypedDict):
+    assessmentReports: List[AssessmentReportMetadataTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessmentReports`:
-  `List`\[[AssessmentReportMetadataTypeDef](./type_defs.md#assessmentreportmetadatatypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listassessmentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentReportMetadataTypeDef](./type_defs.md#assessmentreportmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAssessmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentsRequestRequestTypeDef
+
+def get_value() -> ListAssessmentsRequestRequestTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListAssessmentsRequestRequestTypeDef(TypedDict):
+    status: NotRequired[AssessmentStatusType],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listassessmentsresponsetypedef"></a>
-
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
 ## ListAssessmentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListAssessmentsResponseTypeDef
+
+def get_value() -> ListAssessmentsResponseTypeDef:
+    return {
+        "assessmentMetadata": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssessmentsResponseTypeDef(TypedDict):
+    assessmentMetadata: List[AssessmentMetadataItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessmentMetadata`:
-  `List`\[[AssessmentMetadataItemTypeDef](./type_defs.md#assessmentmetadataitemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcontroldomaininsightsbyassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentMetadataItemTypeDef](./type_defs.md#assessmentmetadataitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListControlDomainInsightsByAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListControlDomainInsightsByAssessmentRequestRequestTypeDef
+
+def get_value() -> ListControlDomainInsightsByAssessmentRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listcontroldomaininsightsbyassessmentresponsetypedef"></a>
+```python title="Definition"
+class ListControlDomainInsightsByAssessmentRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListControlDomainInsightsByAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListControlDomainInsightsByAssessmentResponseTypeDef
+
+def get_value() -> ListControlDomainInsightsByAssessmentResponseTypeDef:
+    return {
+        "controlDomainInsights": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListControlDomainInsightsByAssessmentResponseTypeDef(TypedDict):
+    controlDomainInsights: List[ControlDomainInsightsTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `controlDomainInsights`:
-  `List`\[[ControlDomainInsightsTypeDef](./type_defs.md#controldomaininsightstypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcontroldomaininsightsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ControlDomainInsightsTypeDef](./type_defs.md#controldomaininsightstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListControlDomainInsightsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListControlDomainInsightsRequestRequestTypeDef
+
+def get_value() -> ListControlDomainInsightsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listcontroldomaininsightsresponsetypedef"></a>
+```python title="Definition"
+class ListControlDomainInsightsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListControlDomainInsightsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListControlDomainInsightsResponseTypeDef
+
+def get_value() -> ListControlDomainInsightsResponseTypeDef:
+    return {
+        "controlDomainInsights": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListControlDomainInsightsResponseTypeDef(TypedDict):
+    controlDomainInsights: List[ControlDomainInsightsTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `controlDomainInsights`:
-  `List`\[[ControlDomainInsightsTypeDef](./type_defs.md#controldomaininsightstypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcontrolinsightsbycontroldomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ControlDomainInsightsTypeDef](./type_defs.md#controldomaininsightstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListControlInsightsByControlDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListControlInsightsByControlDomainRequestRequestTypeDef
+
+def get_value() -> ListControlInsightsByControlDomainRequestRequestTypeDef:
+    return {
+        "controlDomainId": ...,
+    }
 ```
 
-Required fields:
-
-- `controlDomainId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listcontrolinsightsbycontroldomainresponsetypedef"></a>
+```python title="Definition"
+class ListControlInsightsByControlDomainRequestRequestTypeDef(TypedDict):
+    controlDomainId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListControlInsightsByControlDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListControlInsightsByControlDomainResponseTypeDef
+
+def get_value() -> ListControlInsightsByControlDomainResponseTypeDef:
+    return {
+        "controlInsightsMetadata": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListControlInsightsByControlDomainResponseTypeDef(TypedDict):
+    controlInsightsMetadata: List[ControlInsightsMetadataItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `controlInsightsMetadata`:
-  `List`\[[ControlInsightsMetadataItemTypeDef](./type_defs.md#controlinsightsmetadataitemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcontrolsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ControlInsightsMetadataItemTypeDef](./type_defs.md#controlinsightsmetadataitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListControlsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListControlsRequestRequestTypeDef
+
+def get_value() -> ListControlsRequestRequestTypeDef:
+    return {
+        "controlType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListControlsRequestRequestTypeDef(TypedDict):
+    controlType: ControlTypeType,  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `controlType`: [ControlTypeType](./literals.md#controltypetype)
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listcontrolsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ControlTypeType](./literals.md#controltypetype) 
 ## ListControlsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListControlsResponseTypeDef
+
+def get_value() -> ListControlsResponseTypeDef:
+    return {
+        "controlMetadataList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListControlsResponseTypeDef(TypedDict):
+    controlMetadataList: List[ControlMetadataTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `controlMetadataList`:
-  `List`\[[ControlMetadataTypeDef](./type_defs.md#controlmetadatatypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listkeywordsfordatasourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ControlMetadataTypeDef](./type_defs.md#controlmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListKeywordsForDataSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListKeywordsForDataSourceRequestRequestTypeDef
+
+def get_value() -> ListKeywordsForDataSourceRequestRequestTypeDef:
+    return {
+        "source": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListKeywordsForDataSourceRequestRequestTypeDef(TypedDict):
+    source: SourceTypeType,  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `source`: [SourceTypeType](./literals.md#sourcetypetype)
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listkeywordsfordatasourceresponsetypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## ListKeywordsForDataSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListKeywordsForDataSourceResponseTypeDef
+
+def get_value() -> ListKeywordsForDataSourceResponseTypeDef:
+    return {
+        "keywords": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListKeywordsForDataSourceResponseTypeDef(TypedDict):
+    keywords: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `keywords`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listnotificationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListNotificationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListNotificationsRequestRequestTypeDef
+
+def get_value() -> ListNotificationsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listnotificationsresponsetypedef"></a>
+```python title="Definition"
+class ListNotificationsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListNotificationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListNotificationsResponseTypeDef
+
+def get_value() -> ListNotificationsResponseTypeDef:
+    return {
+        "notifications": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNotificationsResponseTypeDef(TypedDict):
+    notifications: List[NotificationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `notifications`:
-  `List`\[[NotificationTypeDef](./type_defs.md#notificationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="manualevidencetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ManualEvidenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ManualEvidenceTypeDef
+
+def get_value() -> ManualEvidenceTypeDef:
+    return {
+        "s3ResourcePath": ...,
+    }
 ```
 
-Optional fields:
-
-- `s3ResourcePath`: `str`
-
-<a id="notificationtypedef"></a>
+```python title="Definition"
+class ManualEvidenceTypeDef(TypedDict):
+    s3ResourcePath: NotRequired[str],
+```
 
 ## NotificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import NotificationTypeDef
+
+def get_value() -> NotificationTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `assessmentId`: `str`
-- `assessmentName`: `str`
-- `controlSetId`: `str`
-- `controlSetName`: `str`
-- `description`: `str`
-- `eventTime`: `datetime`
-- `source`: `str`
-
-<a id="registeraccountrequestrequesttypedef"></a>
+```python title="Definition"
+class NotificationTypeDef(TypedDict):
+    id: NotRequired[str],
+    assessmentId: NotRequired[str],
+    assessmentName: NotRequired[str],
+    controlSetId: NotRequired[str],
+    controlSetName: NotRequired[str],
+    description: NotRequired[str],
+    eventTime: NotRequired[datetime],
+    source: NotRequired[str],
+```
 
 ## RegisterAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import RegisterAccountRequestRequestTypeDef
+
+def get_value() -> RegisterAccountRequestRequestTypeDef:
+    return {
+        "kmsKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `kmsKey`: `str`
-- `delegatedAdminAccount`: `str`
-
-<a id="registeraccountresponsetypedef"></a>
+```python title="Definition"
+class RegisterAccountRequestRequestTypeDef(TypedDict):
+    kmsKey: NotRequired[str],
+    delegatedAdminAccount: NotRequired[str],
+```
 
 ## RegisterAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import RegisterAccountResponseTypeDef
+
+def get_value() -> RegisterAccountResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterAccountResponseTypeDef(TypedDict):
+    status: AccountStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `status`: [AccountStatusType](./literals.md#accountstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerorganizationadminaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AccountStatusType](./literals.md#accountstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterOrganizationAdminAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import RegisterOrganizationAdminAccountRequestRequestTypeDef
+
+def get_value() -> RegisterOrganizationAdminAccountRequestRequestTypeDef:
+    return {
+        "adminAccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `adminAccountId`: `str`
-
-<a id="registerorganizationadminaccountresponsetypedef"></a>
+```python title="Definition"
+class RegisterOrganizationAdminAccountRequestRequestTypeDef(TypedDict):
+    adminAccountId: str,
+```
 
 ## RegisterOrganizationAdminAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import RegisterOrganizationAdminAccountResponseTypeDef
+
+def get_value() -> RegisterOrganizationAdminAccountResponseTypeDef:
+    return {
+        "adminAccountId": ...,
+        "organizationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterOrganizationAdminAccountResponseTypeDef(TypedDict):
+    adminAccountId: str,
+    organizationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `adminAccountId`: `str`
-- `organizationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resourcetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `value`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    arn: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="roletypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import RoleTypeDef
+
+def get_value() -> RoleTypeDef:
+    return {
+        "roleType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RoleTypeDef(TypedDict):
+    roleType: NotRequired[RoleTypeType],  # (1)
+    roleArn: NotRequired[str],
+```
 
-- `roleType`: [RoleTypeType](./literals.md#roletypetype)
-- `roleArn`: `str`
-
-<a id="scopetypedef"></a>
-
+1. See [:material-code-brackets: RoleTypeType](./literals.md#roletypetype) 
 ## ScopeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ScopeTypeDef
+
+def get_value() -> ScopeTypeDef:
+    return {
+        "awsAccounts": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScopeTypeDef(TypedDict):
+    awsAccounts: NotRequired[Sequence[AWSAccountTypeDef]],  # (1)
+    awsServices: NotRequired[Sequence[AWSServiceTypeDef]],  # (2)
+```
 
-- `awsAccounts`:
-  `Sequence`\[[AWSAccountTypeDef](./type_defs.md#awsaccounttypedef)\]
-- `awsServices`:
-  `Sequence`\[[AWSServiceTypeDef](./type_defs.md#awsservicetypedef)\]
-
-<a id="servicemetadatatypedef"></a>
-
+1. See [:material-code-braces: AWSAccountTypeDef](./type_defs.md#awsaccounttypedef) 
+2. See [:material-code-braces: AWSServiceTypeDef](./type_defs.md#awsservicetypedef) 
 ## ServiceMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ServiceMetadataTypeDef
+
+def get_value() -> ServiceMetadataTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `displayName`: `str`
-- `description`: `str`
-- `category`: `str`
-
-<a id="settingstypedef"></a>
+```python title="Definition"
+class ServiceMetadataTypeDef(TypedDict):
+    name: NotRequired[str],
+    displayName: NotRequired[str],
+    description: NotRequired[str],
+    category: NotRequired[str],
+```
 
 ## SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import SettingsTypeDef
+
+def get_value() -> SettingsTypeDef:
+    return {
+        "isAwsOrgEnabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SettingsTypeDef(TypedDict):
+    isAwsOrgEnabled: NotRequired[bool],
+    snsTopic: NotRequired[str],
+    defaultAssessmentReportsDestination: NotRequired[AssessmentReportsDestinationTypeDef],  # (1)
+    defaultProcessOwners: NotRequired[List[RoleTypeDef]],  # (2)
+    kmsKey: NotRequired[str],
+```
 
-- `isAwsOrgEnabled`: `bool`
-- `snsTopic`: `str`
-- `defaultAssessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `defaultProcessOwners`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `kmsKey`: `str`
-
-<a id="sourcekeywordtypedef"></a>
-
+1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
 ## SourceKeywordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import SourceKeywordTypeDef
+
+def get_value() -> SourceKeywordTypeDef:
+    return {
+        "keywordInputType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceKeywordTypeDef(TypedDict):
+    keywordInputType: NotRequired[KeywordInputTypeType],  # (1)
+    keywordValue: NotRequired[str],
+```
 
-- `keywordInputType`: `Literal['SELECT_FROM_LIST']` (see
-  [KeywordInputTypeType](./literals.md#keywordinputtypetype))
-- `keywordValue`: `str`
-
-<a id="startassessmentframeworksharerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: KeywordInputTypeType](./literals.md#keywordinputtypetype) 
 ## StartAssessmentFrameworkShareRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import StartAssessmentFrameworkShareRequestRequestTypeDef
+
+def get_value() -> StartAssessmentFrameworkShareRequestRequestTypeDef:
+    return {
+        "frameworkId": ...,
+        "destinationAccount": ...,
+        "destinationRegion": ...,
+    }
 ```
 
-Required fields:
-
-- `frameworkId`: `str`
-- `destinationAccount`: `str`
-- `destinationRegion`: `str`
-
-Optional fields:
-
-- `comment`: `str`
-
-<a id="startassessmentframeworkshareresponsetypedef"></a>
+```python title="Definition"
+class StartAssessmentFrameworkShareRequestRequestTypeDef(TypedDict):
+    frameworkId: str,
+    destinationAccount: str,
+    destinationRegion: str,
+    comment: NotRequired[str],
+```
 
 ## StartAssessmentFrameworkShareResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import StartAssessmentFrameworkShareResponseTypeDef
+
+def get_value() -> StartAssessmentFrameworkShareResponseTypeDef:
+    return {
+        "assessmentFrameworkShareRequest": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartAssessmentFrameworkShareResponseTypeDef(TypedDict):
+    assessmentFrameworkShareRequest: AssessmentFrameworkShareRequestTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessmentFrameworkShareRequest`:
-  [AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="urltypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## URLTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import URLTypeDef
+
+def get_value() -> URLTypeDef:
+    return {
+        "hyperlinkName": ...,
+    }
 ```
 
-Optional fields:
-
-- `hyperlinkName`: `str`
-- `link`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class URLTypeDef(TypedDict):
+    hyperlinkName: NotRequired[str],
+    link: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateassessmentcontrolrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateAssessmentControlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlRequestRequestTypeDef
+
+def get_value() -> UpdateAssessmentControlRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "controlSetId": ...,
+        "controlId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentControlRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    controlSetId: str,
+    controlId: str,
+    controlStatus: NotRequired[ControlStatusType],  # (1)
+    commentBody: NotRequired[str],
+```
 
-- `assessmentId`: `str`
-- `controlSetId`: `str`
-- `controlId`: `str`
-
-Optional fields:
-
-- `controlStatus`: [ControlStatusType](./literals.md#controlstatustype)
-- `commentBody`: `str`
-
-<a id="updateassessmentcontrolresponsetypedef"></a>
-
+1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
 ## UpdateAssessmentControlResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlResponseTypeDef
+
+def get_value() -> UpdateAssessmentControlResponseTypeDef:
+    return {
+        "control": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentControlResponseTypeDef(TypedDict):
+    control: AssessmentControlTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `control`:
-  [AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateassessmentcontrolsetstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentControlTypeDef](./type_defs.md#assessmentcontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAssessmentControlSetStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlSetStatusRequestRequestTypeDef
+
+def get_value() -> UpdateAssessmentControlSetStatusRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "controlSetId": ...,
+        "status": ...,
+        "comment": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentControlSetStatusRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    controlSetId: str,
+    status: ControlSetStatusType,  # (1)
+    comment: str,
+```
 
-- `assessmentId`: `str`
-- `controlSetId`: `str`
-- `status`: [ControlSetStatusType](./literals.md#controlsetstatustype)
-- `comment`: `str`
-
-<a id="updateassessmentcontrolsetstatusresponsetypedef"></a>
-
+1. See [:material-code-brackets: ControlSetStatusType](./literals.md#controlsetstatustype) 
 ## UpdateAssessmentControlSetStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentControlSetStatusResponseTypeDef
+
+def get_value() -> UpdateAssessmentControlSetStatusResponseTypeDef:
+    return {
+        "controlSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentControlSetStatusResponseTypeDef(TypedDict):
+    controlSet: AssessmentControlSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `controlSet`:
-  [AssessmentControlSetTypeDef](./type_defs.md#assessmentcontrolsettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateassessmentframeworkcontrolsettypedef"></a>
-
+1. See [:material-code-braces: AssessmentControlSetTypeDef](./type_defs.md#assessmentcontrolsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAssessmentFrameworkControlSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkControlSetTypeDef
+
+def get_value() -> UpdateAssessmentFrameworkControlSetTypeDef:
+    return {
+        "name": ...,
+        "controls": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentFrameworkControlSetTypeDef(TypedDict):
+    name: str,
+    controls: Sequence[CreateAssessmentFrameworkControlTypeDef],  # (1)
+    id: NotRequired[str],
+```
 
-- `name`: `str`
-- `controls`:
-  `Sequence`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
-
-Optional fields:
-
-- `id`: `str`
-
-<a id="updateassessmentframeworkrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef) 
 ## UpdateAssessmentFrameworkRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkRequestRequestTypeDef
+
+def get_value() -> UpdateAssessmentFrameworkRequestRequestTypeDef:
+    return {
+        "frameworkId": ...,
+        "name": ...,
+        "controlSets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentFrameworkRequestRequestTypeDef(TypedDict):
+    frameworkId: str,
+    name: str,
+    controlSets: Sequence[UpdateAssessmentFrameworkControlSetTypeDef],  # (1)
+    description: NotRequired[str],
+    complianceType: NotRequired[str],
+```
 
-- `frameworkId`: `str`
-- `name`: `str`
-- `controlSets`:
-  `Sequence`\[[UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-- `complianceType`: `str`
-
-<a id="updateassessmentframeworkresponsetypedef"></a>
-
+1. See [:material-code-braces: UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef) 
 ## UpdateAssessmentFrameworkResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkResponseTypeDef
+
+def get_value() -> UpdateAssessmentFrameworkResponseTypeDef:
+    return {
+        "framework": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentFrameworkResponseTypeDef(TypedDict):
+    framework: FrameworkTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `framework`: [FrameworkTypeDef](./type_defs.md#frameworktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateassessmentframeworksharerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FrameworkTypeDef](./type_defs.md#frameworktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAssessmentFrameworkShareRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkShareRequestRequestTypeDef
+
+def get_value() -> UpdateAssessmentFrameworkShareRequestRequestTypeDef:
+    return {
+        "requestId": ...,
+        "requestType": ...,
+        "action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentFrameworkShareRequestRequestTypeDef(TypedDict):
+    requestId: str,
+    requestType: ShareRequestTypeType,  # (1)
+    action: ShareRequestActionType,  # (2)
+```
 
-- `requestId`: `str`
-- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
-- `action`: [ShareRequestActionType](./literals.md#sharerequestactiontype)
-
-<a id="updateassessmentframeworkshareresponsetypedef"></a>
-
+1. See [:material-code-brackets: ShareRequestTypeType](./literals.md#sharerequesttypetype) 
+2. See [:material-code-brackets: ShareRequestActionType](./literals.md#sharerequestactiontype) 
 ## UpdateAssessmentFrameworkShareResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkShareResponseTypeDef
+
+def get_value() -> UpdateAssessmentFrameworkShareResponseTypeDef:
+    return {
+        "assessmentFrameworkShareRequest": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentFrameworkShareResponseTypeDef(TypedDict):
+    assessmentFrameworkShareRequest: AssessmentFrameworkShareRequestTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessmentFrameworkShareRequest`:
-  [AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentFrameworkShareRequestTypeDef](./type_defs.md#assessmentframeworksharerequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentRequestRequestTypeDef
+
+def get_value() -> UpdateAssessmentRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "scope": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    scope: ScopeTypeDef,  # (1)
+    assessmentName: NotRequired[str],
+    assessmentDescription: NotRequired[str],
+    assessmentReportsDestination: NotRequired[AssessmentReportsDestinationTypeDef],  # (2)
+    roles: NotRequired[Sequence[RoleTypeDef]],  # (3)
+```
 
-- `assessmentId`: `str`
-- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
-
-Optional fields:
-
-- `assessmentName`: `str`
-- `assessmentDescription`: `str`
-- `assessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-
-<a id="updateassessmentresponsetypedef"></a>
-
+1. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
+2. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+3. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
 ## UpdateAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentResponseTypeDef
+
+def get_value() -> UpdateAssessmentResponseTypeDef:
+    return {
+        "assessment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentResponseTypeDef(TypedDict):
+    assessment: AssessmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateassessmentstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentTypeDef](./type_defs.md#assessmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAssessmentStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentStatusRequestRequestTypeDef
+
+def get_value() -> UpdateAssessmentStatusRequestRequestTypeDef:
+    return {
+        "assessmentId": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentStatusRequestRequestTypeDef(TypedDict):
+    assessmentId: str,
+    status: AssessmentStatusType,  # (1)
+```
 
-- `assessmentId`: `str`
-- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
-
-<a id="updateassessmentstatusresponsetypedef"></a>
-
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
 ## UpdateAssessmentStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateAssessmentStatusResponseTypeDef
+
+def get_value() -> UpdateAssessmentStatusResponseTypeDef:
+    return {
+        "assessment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAssessmentStatusResponseTypeDef(TypedDict):
+    assessment: AssessmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessment`: [AssessmentTypeDef](./type_defs.md#assessmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecontrolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssessmentTypeDef](./type_defs.md#assessmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateControlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateControlRequestRequestTypeDef
+
+def get_value() -> UpdateControlRequestRequestTypeDef:
+    return {
+        "controlId": ...,
+        "name": ...,
+        "controlMappingSources": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateControlRequestRequestTypeDef(TypedDict):
+    controlId: str,
+    name: str,
+    controlMappingSources: Sequence[ControlMappingSourceTypeDef],  # (1)
+    description: NotRequired[str],
+    testingInformation: NotRequired[str],
+    actionPlanTitle: NotRequired[str],
+    actionPlanInstructions: NotRequired[str],
+```
 
-- `controlId`: `str`
-- `name`: `str`
-- `controlMappingSources`:
-  `Sequence`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-- `testingInformation`: `str`
-- `actionPlanTitle`: `str`
-- `actionPlanInstructions`: `str`
-
-<a id="updatecontrolresponsetypedef"></a>
-
+1. See [:material-code-braces: ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef) 
 ## UpdateControlResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateControlResponseTypeDef
+
+def get_value() -> UpdateControlResponseTypeDef:
+    return {
+        "control": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateControlResponseTypeDef(TypedDict):
+    control: ControlTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `control`: [ControlTypeDef](./type_defs.md#controltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesettingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ControlTypeDef](./type_defs.md#controltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateSettingsRequestRequestTypeDef:
+    return {
+        "snsTopic": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateSettingsRequestRequestTypeDef(TypedDict):
+    snsTopic: NotRequired[str],
+    defaultAssessmentReportsDestination: NotRequired[AssessmentReportsDestinationTypeDef],  # (1)
+    defaultProcessOwners: NotRequired[Sequence[RoleTypeDef]],  # (2)
+    kmsKey: NotRequired[str],
+```
 
-- `snsTopic`: `str`
-- `defaultAssessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `defaultProcessOwners`:
-  `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `kmsKey`: `str`
-
-<a id="updatesettingsresponsetypedef"></a>
-
+1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
 ## UpdateSettingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import UpdateSettingsResponseTypeDef
+
+def get_value() -> UpdateSettingsResponseTypeDef:
+    return {
+        "settings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSettingsResponseTypeDef(TypedDict):
+    settings: SettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="validateassessmentreportintegrityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ValidateAssessmentReportIntegrityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ValidateAssessmentReportIntegrityRequestRequestTypeDef
+
+def get_value() -> ValidateAssessmentReportIntegrityRequestRequestTypeDef:
+    return {
+        "s3RelativePath": ...,
+    }
 ```
 
-Required fields:
-
-- `s3RelativePath`: `str`
-
-<a id="validateassessmentreportintegrityresponsetypedef"></a>
+```python title="Definition"
+class ValidateAssessmentReportIntegrityRequestRequestTypeDef(TypedDict):
+    s3RelativePath: str,
+```
 
 ## ValidateAssessmentReportIntegrityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_auditmanager.type_defs import ValidateAssessmentReportIntegrityResponseTypeDef
+
+def get_value() -> ValidateAssessmentReportIntegrityResponseTypeDef:
+    return {
+        "signatureValid": ...,
+        "signatureAlgorithm": ...,
+        "signatureDateTime": ...,
+        "signatureKeyId": ...,
+        "validationErrors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValidateAssessmentReportIntegrityResponseTypeDef(TypedDict):
+    signatureValid: bool,
+    signatureAlgorithm: str,
+    signatureDateTime: str,
+    signatureKeyId: str,
+    validationErrors: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `signatureValid`: `bool`
-- `signatureAlgorithm`: `str`
-- `signatureDateTime`: `str`
-- `signatureKeyId`: `str`
-- `validationErrors`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -1,2955 +1,3518 @@
-<a id="typed-dictionaries-for-boto3-kinesisanalyticsv2-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 KinesisAnalyticsV2 module
+> [Index](../README.md) > [KinesisAnalyticsV2](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [KinesisAnalyticsV2](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
-type annotations stubs module
-[mypy-boto3-kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
-
-- [Typed dictionaries for boto3 KinesisAnalyticsV2 module](#typed-dictionaries-for-boto3-kinesisanalyticsv2-module)
-  - [AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef](#addapplicationcloudwatchloggingoptionrequestrequesttypedef)
-  - [AddApplicationCloudWatchLoggingOptionResponseTypeDef](#addapplicationcloudwatchloggingoptionresponsetypedef)
-  - [AddApplicationInputProcessingConfigurationRequestRequestTypeDef](#addapplicationinputprocessingconfigurationrequestrequesttypedef)
-  - [AddApplicationInputProcessingConfigurationResponseTypeDef](#addapplicationinputprocessingconfigurationresponsetypedef)
-  - [AddApplicationInputRequestRequestTypeDef](#addapplicationinputrequestrequesttypedef)
-  - [AddApplicationInputResponseTypeDef](#addapplicationinputresponsetypedef)
-  - [AddApplicationOutputRequestRequestTypeDef](#addapplicationoutputrequestrequesttypedef)
-  - [AddApplicationOutputResponseTypeDef](#addapplicationoutputresponsetypedef)
-  - [AddApplicationReferenceDataSourceRequestRequestTypeDef](#addapplicationreferencedatasourcerequestrequesttypedef)
-  - [AddApplicationReferenceDataSourceResponseTypeDef](#addapplicationreferencedatasourceresponsetypedef)
-  - [AddApplicationVpcConfigurationRequestRequestTypeDef](#addapplicationvpcconfigurationrequestrequesttypedef)
-  - [AddApplicationVpcConfigurationResponseTypeDef](#addapplicationvpcconfigurationresponsetypedef)
-  - [ApplicationCodeConfigurationDescriptionTypeDef](#applicationcodeconfigurationdescriptiontypedef)
-  - [ApplicationCodeConfigurationTypeDef](#applicationcodeconfigurationtypedef)
-  - [ApplicationCodeConfigurationUpdateTypeDef](#applicationcodeconfigurationupdatetypedef)
-  - [ApplicationConfigurationDescriptionTypeDef](#applicationconfigurationdescriptiontypedef)
-  - [ApplicationConfigurationTypeDef](#applicationconfigurationtypedef)
-  - [ApplicationConfigurationUpdateTypeDef](#applicationconfigurationupdatetypedef)
-  - [ApplicationDetailTypeDef](#applicationdetailtypedef)
-  - [ApplicationMaintenanceConfigurationDescriptionTypeDef](#applicationmaintenanceconfigurationdescriptiontypedef)
-  - [ApplicationMaintenanceConfigurationUpdateTypeDef](#applicationmaintenanceconfigurationupdatetypedef)
-  - [ApplicationRestoreConfigurationTypeDef](#applicationrestoreconfigurationtypedef)
-  - [ApplicationSnapshotConfigurationDescriptionTypeDef](#applicationsnapshotconfigurationdescriptiontypedef)
-  - [ApplicationSnapshotConfigurationTypeDef](#applicationsnapshotconfigurationtypedef)
-  - [ApplicationSnapshotConfigurationUpdateTypeDef](#applicationsnapshotconfigurationupdatetypedef)
-  - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
-  - [ApplicationVersionSummaryTypeDef](#applicationversionsummarytypedef)
-  - [CSVMappingParametersTypeDef](#csvmappingparameterstypedef)
-  - [CatalogConfigurationDescriptionTypeDef](#catalogconfigurationdescriptiontypedef)
-  - [CatalogConfigurationTypeDef](#catalogconfigurationtypedef)
-  - [CatalogConfigurationUpdateTypeDef](#catalogconfigurationupdatetypedef)
-  - [CheckpointConfigurationDescriptionTypeDef](#checkpointconfigurationdescriptiontypedef)
-  - [CheckpointConfigurationTypeDef](#checkpointconfigurationtypedef)
-  - [CheckpointConfigurationUpdateTypeDef](#checkpointconfigurationupdatetypedef)
-  - [CloudWatchLoggingOptionDescriptionTypeDef](#cloudwatchloggingoptiondescriptiontypedef)
-  - [CloudWatchLoggingOptionTypeDef](#cloudwatchloggingoptiontypedef)
-  - [CloudWatchLoggingOptionUpdateTypeDef](#cloudwatchloggingoptionupdatetypedef)
-  - [CodeContentDescriptionTypeDef](#codecontentdescriptiontypedef)
-  - [CodeContentTypeDef](#codecontenttypedef)
-  - [CodeContentUpdateTypeDef](#codecontentupdatetypedef)
-  - [CreateApplicationPresignedUrlRequestRequestTypeDef](#createapplicationpresignedurlrequestrequesttypedef)
-  - [CreateApplicationPresignedUrlResponseTypeDef](#createapplicationpresignedurlresponsetypedef)
-  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
-  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
-  - [CreateApplicationSnapshotRequestRequestTypeDef](#createapplicationsnapshotrequestrequesttypedef)
-  - [CustomArtifactConfigurationDescriptionTypeDef](#customartifactconfigurationdescriptiontypedef)
-  - [CustomArtifactConfigurationTypeDef](#customartifactconfigurationtypedef)
-  - [DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef](#deleteapplicationcloudwatchloggingoptionrequestrequesttypedef)
-  - [DeleteApplicationCloudWatchLoggingOptionResponseTypeDef](#deleteapplicationcloudwatchloggingoptionresponsetypedef)
-  - [DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef](#deleteapplicationinputprocessingconfigurationrequestrequesttypedef)
-  - [DeleteApplicationInputProcessingConfigurationResponseTypeDef](#deleteapplicationinputprocessingconfigurationresponsetypedef)
-  - [DeleteApplicationOutputRequestRequestTypeDef](#deleteapplicationoutputrequestrequesttypedef)
-  - [DeleteApplicationOutputResponseTypeDef](#deleteapplicationoutputresponsetypedef)
-  - [DeleteApplicationReferenceDataSourceRequestRequestTypeDef](#deleteapplicationreferencedatasourcerequestrequesttypedef)
-  - [DeleteApplicationReferenceDataSourceResponseTypeDef](#deleteapplicationreferencedatasourceresponsetypedef)
-  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
-  - [DeleteApplicationSnapshotRequestRequestTypeDef](#deleteapplicationsnapshotrequestrequesttypedef)
-  - [DeleteApplicationVpcConfigurationRequestRequestTypeDef](#deleteapplicationvpcconfigurationrequestrequesttypedef)
-  - [DeleteApplicationVpcConfigurationResponseTypeDef](#deleteapplicationvpcconfigurationresponsetypedef)
-  - [DeployAsApplicationConfigurationDescriptionTypeDef](#deployasapplicationconfigurationdescriptiontypedef)
-  - [DeployAsApplicationConfigurationTypeDef](#deployasapplicationconfigurationtypedef)
-  - [DeployAsApplicationConfigurationUpdateTypeDef](#deployasapplicationconfigurationupdatetypedef)
-  - [DescribeApplicationRequestRequestTypeDef](#describeapplicationrequestrequesttypedef)
-  - [DescribeApplicationResponseTypeDef](#describeapplicationresponsetypedef)
-  - [DescribeApplicationSnapshotRequestRequestTypeDef](#describeapplicationsnapshotrequestrequesttypedef)
-  - [DescribeApplicationSnapshotResponseTypeDef](#describeapplicationsnapshotresponsetypedef)
-  - [DescribeApplicationVersionRequestRequestTypeDef](#describeapplicationversionrequestrequesttypedef)
-  - [DescribeApplicationVersionResponseTypeDef](#describeapplicationversionresponsetypedef)
-  - [DestinationSchemaTypeDef](#destinationschematypedef)
-  - [DiscoverInputSchemaRequestRequestTypeDef](#discoverinputschemarequestrequesttypedef)
-  - [DiscoverInputSchemaResponseTypeDef](#discoverinputschemaresponsetypedef)
-  - [EnvironmentPropertiesTypeDef](#environmentpropertiestypedef)
-  - [EnvironmentPropertyDescriptionsTypeDef](#environmentpropertydescriptionstypedef)
-  - [EnvironmentPropertyUpdatesTypeDef](#environmentpropertyupdatestypedef)
-  - [FlinkApplicationConfigurationDescriptionTypeDef](#flinkapplicationconfigurationdescriptiontypedef)
-  - [FlinkApplicationConfigurationTypeDef](#flinkapplicationconfigurationtypedef)
-  - [FlinkApplicationConfigurationUpdateTypeDef](#flinkapplicationconfigurationupdatetypedef)
-  - [FlinkRunConfigurationTypeDef](#flinkrunconfigurationtypedef)
-  - [GlueDataCatalogConfigurationDescriptionTypeDef](#gluedatacatalogconfigurationdescriptiontypedef)
-  - [GlueDataCatalogConfigurationTypeDef](#gluedatacatalogconfigurationtypedef)
-  - [GlueDataCatalogConfigurationUpdateTypeDef](#gluedatacatalogconfigurationupdatetypedef)
-  - [InputDescriptionTypeDef](#inputdescriptiontypedef)
-  - [InputLambdaProcessorDescriptionTypeDef](#inputlambdaprocessordescriptiontypedef)
-  - [InputLambdaProcessorTypeDef](#inputlambdaprocessortypedef)
-  - [InputLambdaProcessorUpdateTypeDef](#inputlambdaprocessorupdatetypedef)
-  - [InputParallelismTypeDef](#inputparallelismtypedef)
-  - [InputParallelismUpdateTypeDef](#inputparallelismupdatetypedef)
-  - [InputProcessingConfigurationDescriptionTypeDef](#inputprocessingconfigurationdescriptiontypedef)
-  - [InputProcessingConfigurationTypeDef](#inputprocessingconfigurationtypedef)
-  - [InputProcessingConfigurationUpdateTypeDef](#inputprocessingconfigurationupdatetypedef)
-  - [InputSchemaUpdateTypeDef](#inputschemaupdatetypedef)
-  - [InputStartingPositionConfigurationTypeDef](#inputstartingpositionconfigurationtypedef)
-  - [InputTypeDef](#inputtypedef)
-  - [InputUpdateTypeDef](#inputupdatetypedef)
-  - [JSONMappingParametersTypeDef](#jsonmappingparameterstypedef)
-  - [KinesisFirehoseInputDescriptionTypeDef](#kinesisfirehoseinputdescriptiontypedef)
-  - [KinesisFirehoseInputTypeDef](#kinesisfirehoseinputtypedef)
-  - [KinesisFirehoseInputUpdateTypeDef](#kinesisfirehoseinputupdatetypedef)
-  - [KinesisFirehoseOutputDescriptionTypeDef](#kinesisfirehoseoutputdescriptiontypedef)
-  - [KinesisFirehoseOutputTypeDef](#kinesisfirehoseoutputtypedef)
-  - [KinesisFirehoseOutputUpdateTypeDef](#kinesisfirehoseoutputupdatetypedef)
-  - [KinesisStreamsInputDescriptionTypeDef](#kinesisstreamsinputdescriptiontypedef)
-  - [KinesisStreamsInputTypeDef](#kinesisstreamsinputtypedef)
-  - [KinesisStreamsInputUpdateTypeDef](#kinesisstreamsinputupdatetypedef)
-  - [KinesisStreamsOutputDescriptionTypeDef](#kinesisstreamsoutputdescriptiontypedef)
-  - [KinesisStreamsOutputTypeDef](#kinesisstreamsoutputtypedef)
-  - [KinesisStreamsOutputUpdateTypeDef](#kinesisstreamsoutputupdatetypedef)
-  - [LambdaOutputDescriptionTypeDef](#lambdaoutputdescriptiontypedef)
-  - [LambdaOutputTypeDef](#lambdaoutputtypedef)
-  - [LambdaOutputUpdateTypeDef](#lambdaoutputupdatetypedef)
-  - [ListApplicationSnapshotsRequestRequestTypeDef](#listapplicationsnapshotsrequestrequesttypedef)
-  - [ListApplicationSnapshotsResponseTypeDef](#listapplicationsnapshotsresponsetypedef)
-  - [ListApplicationVersionsRequestRequestTypeDef](#listapplicationversionsrequestrequesttypedef)
-  - [ListApplicationVersionsResponseTypeDef](#listapplicationversionsresponsetypedef)
-  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
-  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MappingParametersTypeDef](#mappingparameterstypedef)
-  - [MavenReferenceTypeDef](#mavenreferencetypedef)
-  - [MonitoringConfigurationDescriptionTypeDef](#monitoringconfigurationdescriptiontypedef)
-  - [MonitoringConfigurationTypeDef](#monitoringconfigurationtypedef)
-  - [MonitoringConfigurationUpdateTypeDef](#monitoringconfigurationupdatetypedef)
-  - [OutputDescriptionTypeDef](#outputdescriptiontypedef)
-  - [OutputTypeDef](#outputtypedef)
-  - [OutputUpdateTypeDef](#outputupdatetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParallelismConfigurationDescriptionTypeDef](#parallelismconfigurationdescriptiontypedef)
-  - [ParallelismConfigurationTypeDef](#parallelismconfigurationtypedef)
-  - [ParallelismConfigurationUpdateTypeDef](#parallelismconfigurationupdatetypedef)
-  - [PropertyGroupTypeDef](#propertygrouptypedef)
-  - [RecordColumnTypeDef](#recordcolumntypedef)
-  - [RecordFormatTypeDef](#recordformattypedef)
-  - [ReferenceDataSourceDescriptionTypeDef](#referencedatasourcedescriptiontypedef)
-  - [ReferenceDataSourceTypeDef](#referencedatasourcetypedef)
-  - [ReferenceDataSourceUpdateTypeDef](#referencedatasourceupdatetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RollbackApplicationRequestRequestTypeDef](#rollbackapplicationrequestrequesttypedef)
-  - [RollbackApplicationResponseTypeDef](#rollbackapplicationresponsetypedef)
-  - [RunConfigurationDescriptionTypeDef](#runconfigurationdescriptiontypedef)
-  - [RunConfigurationTypeDef](#runconfigurationtypedef)
-  - [RunConfigurationUpdateTypeDef](#runconfigurationupdatetypedef)
-  - [S3ApplicationCodeLocationDescriptionTypeDef](#s3applicationcodelocationdescriptiontypedef)
-  - [S3ConfigurationTypeDef](#s3configurationtypedef)
-  - [S3ContentBaseLocationDescriptionTypeDef](#s3contentbaselocationdescriptiontypedef)
-  - [S3ContentBaseLocationTypeDef](#s3contentbaselocationtypedef)
-  - [S3ContentBaseLocationUpdateTypeDef](#s3contentbaselocationupdatetypedef)
-  - [S3ContentLocationTypeDef](#s3contentlocationtypedef)
-  - [S3ContentLocationUpdateTypeDef](#s3contentlocationupdatetypedef)
-  - [S3ReferenceDataSourceDescriptionTypeDef](#s3referencedatasourcedescriptiontypedef)
-  - [S3ReferenceDataSourceTypeDef](#s3referencedatasourcetypedef)
-  - [S3ReferenceDataSourceUpdateTypeDef](#s3referencedatasourceupdatetypedef)
-  - [SnapshotDetailsTypeDef](#snapshotdetailstypedef)
-  - [SourceSchemaTypeDef](#sourceschematypedef)
-  - [SqlApplicationConfigurationDescriptionTypeDef](#sqlapplicationconfigurationdescriptiontypedef)
-  - [SqlApplicationConfigurationTypeDef](#sqlapplicationconfigurationtypedef)
-  - [SqlApplicationConfigurationUpdateTypeDef](#sqlapplicationconfigurationupdatetypedef)
-  - [SqlRunConfigurationTypeDef](#sqlrunconfigurationtypedef)
-  - [StartApplicationRequestRequestTypeDef](#startapplicationrequestrequesttypedef)
-  - [StopApplicationRequestRequestTypeDef](#stopapplicationrequestrequesttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef](#updateapplicationmaintenanceconfigurationrequestrequesttypedef)
-  - [UpdateApplicationMaintenanceConfigurationResponseTypeDef](#updateapplicationmaintenanceconfigurationresponsetypedef)
-  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
-  - [UpdateApplicationResponseTypeDef](#updateapplicationresponsetypedef)
-  - [VpcConfigurationDescriptionTypeDef](#vpcconfigurationdescriptiontypedef)
-  - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
-  - [VpcConfigurationUpdateTypeDef](#vpcconfigurationupdatetypedef)
-  - [ZeppelinApplicationConfigurationDescriptionTypeDef](#zeppelinapplicationconfigurationdescriptiontypedef)
-  - [ZeppelinApplicationConfigurationTypeDef](#zeppelinapplicationconfigurationtypedef)
-  - [ZeppelinApplicationConfigurationUpdateTypeDef](#zeppelinapplicationconfigurationupdatetypedef)
-  - [ZeppelinMonitoringConfigurationDescriptionTypeDef](#zeppelinmonitoringconfigurationdescriptiontypedef)
-  - [ZeppelinMonitoringConfigurationTypeDef](#zeppelinmonitoringconfigurationtypedef)
-  - [ZeppelinMonitoringConfigurationUpdateTypeDef](#zeppelinmonitoringconfigurationupdatetypedef)
-
-<a id="addapplicationcloudwatchloggingoptionrequestrequesttypedef"></a>
+    Auto-generated documentation for [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+    type annotations stubs module [mypy-boto3-kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 ## AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef
+
+def get_value() -> AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CloudWatchLoggingOption": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CloudWatchLoggingOption: CloudWatchLoggingOptionTypeDef,  # (1)
+    CurrentApplicationVersionId: NotRequired[int],
+    ConditionalToken: NotRequired[str],
+```
 
-- `ApplicationName`: `str`
-- `CloudWatchLoggingOption`:
-  [CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)
-
-Optional fields:
-
-- `CurrentApplicationVersionId`: `int`
-- `ConditionalToken`: `str`
-
-<a id="addapplicationcloudwatchloggingoptionresponsetypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef) 
 ## AddApplicationCloudWatchLoggingOptionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionResponseTypeDef
+
+def get_value() -> AddApplicationCloudWatchLoggingOptionResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "CloudWatchLoggingOptionDescriptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationCloudWatchLoggingOptionResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    CloudWatchLoggingOptionDescriptions: List[CloudWatchLoggingOptionDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `CloudWatchLoggingOptionDescriptions`:
-  `List`\[[CloudWatchLoggingOptionDescriptionTypeDef](./type_defs.md#cloudwatchloggingoptiondescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addapplicationinputprocessingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLoggingOptionDescriptionTypeDef](./type_defs.md#cloudwatchloggingoptiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddApplicationInputProcessingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputProcessingConfigurationRequestRequestTypeDef
+
+def get_value() -> AddApplicationInputProcessingConfigurationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CurrentApplicationVersionId": ...,
+        "InputId": ...,
+        "InputProcessingConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationInputProcessingConfigurationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    InputId: str,
+    InputProcessingConfiguration: InputProcessingConfigurationTypeDef,  # (1)
+```
 
-- `ApplicationName`: `str`
-- `CurrentApplicationVersionId`: `int`
-- `InputId`: `str`
-- `InputProcessingConfiguration`:
-  [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
-
-<a id="addapplicationinputprocessingconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef) 
 ## AddApplicationInputProcessingConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputProcessingConfigurationResponseTypeDef
+
+def get_value() -> AddApplicationInputProcessingConfigurationResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "InputId": ...,
+        "InputProcessingConfigurationDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationInputProcessingConfigurationResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    InputId: str,
+    InputProcessingConfigurationDescription: InputProcessingConfigurationDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `InputId`: `str`
-- `InputProcessingConfigurationDescription`:
-  [InputProcessingConfigurationDescriptionTypeDef](./type_defs.md#inputprocessingconfigurationdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addapplicationinputrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InputProcessingConfigurationDescriptionTypeDef](./type_defs.md#inputprocessingconfigurationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddApplicationInputRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputRequestRequestTypeDef
+
+def get_value() -> AddApplicationInputRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CurrentApplicationVersionId": ...,
+        "Input": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationInputRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    Input: InputTypeDef,  # (1)
+```
 
-- `ApplicationName`: `str`
-- `CurrentApplicationVersionId`: `int`
-- `Input`: [InputTypeDef](./type_defs.md#inputtypedef)
-
-<a id="addapplicationinputresponsetypedef"></a>
-
+1. See [:material-code-braces: InputTypeDef](./type_defs.md#inputtypedef) 
 ## AddApplicationInputResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationInputResponseTypeDef
+
+def get_value() -> AddApplicationInputResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "InputDescriptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationInputResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    InputDescriptions: List[InputDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `InputDescriptions`:
-  `List`\[[InputDescriptionTypeDef](./type_defs.md#inputdescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addapplicationoutputrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InputDescriptionTypeDef](./type_defs.md#inputdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddApplicationOutputRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationOutputRequestRequestTypeDef
+
+def get_value() -> AddApplicationOutputRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CurrentApplicationVersionId": ...,
+        "Output": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationOutputRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    Output: OutputTypeDef,  # (1)
+```
 
-- `ApplicationName`: `str`
-- `CurrentApplicationVersionId`: `int`
-- `Output`: [OutputTypeDef](./type_defs.md#outputtypedef)
-
-<a id="addapplicationoutputresponsetypedef"></a>
-
+1. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
 ## AddApplicationOutputResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationOutputResponseTypeDef
+
+def get_value() -> AddApplicationOutputResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "OutputDescriptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationOutputResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    OutputDescriptions: List[OutputDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `OutputDescriptions`:
-  `List`\[[OutputDescriptionTypeDef](./type_defs.md#outputdescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addapplicationreferencedatasourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OutputDescriptionTypeDef](./type_defs.md#outputdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddApplicationReferenceDataSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationReferenceDataSourceRequestRequestTypeDef
+
+def get_value() -> AddApplicationReferenceDataSourceRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CurrentApplicationVersionId": ...,
+        "ReferenceDataSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationReferenceDataSourceRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    ReferenceDataSource: ReferenceDataSourceTypeDef,  # (1)
+```
 
-- `ApplicationName`: `str`
-- `CurrentApplicationVersionId`: `int`
-- `ReferenceDataSource`:
-  [ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)
-
-<a id="addapplicationreferencedatasourceresponsetypedef"></a>
-
+1. See [:material-code-braces: ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef) 
 ## AddApplicationReferenceDataSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationReferenceDataSourceResponseTypeDef
+
+def get_value() -> AddApplicationReferenceDataSourceResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "ReferenceDataSourceDescriptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationReferenceDataSourceResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    ReferenceDataSourceDescriptions: List[ReferenceDataSourceDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `ReferenceDataSourceDescriptions`:
-  `List`\[[ReferenceDataSourceDescriptionTypeDef](./type_defs.md#referencedatasourcedescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addapplicationvpcconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ReferenceDataSourceDescriptionTypeDef](./type_defs.md#referencedatasourcedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddApplicationVpcConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationVpcConfigurationRequestRequestTypeDef
+
+def get_value() -> AddApplicationVpcConfigurationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "VpcConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationVpcConfigurationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    VpcConfiguration: VpcConfigurationTypeDef,  # (1)
+    CurrentApplicationVersionId: NotRequired[int],
+    ConditionalToken: NotRequired[str],
+```
 
-- `ApplicationName`: `str`
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-
-Optional fields:
-
-- `CurrentApplicationVersionId`: `int`
-- `ConditionalToken`: `str`
-
-<a id="addapplicationvpcconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## AddApplicationVpcConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationVpcConfigurationResponseTypeDef
+
+def get_value() -> AddApplicationVpcConfigurationResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "VpcConfigurationDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddApplicationVpcConfigurationResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    VpcConfigurationDescription: VpcConfigurationDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `VpcConfigurationDescription`:
-  [VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="applicationcodeconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApplicationCodeConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationCodeConfigurationDescriptionTypeDef
+
+def get_value() -> ApplicationCodeConfigurationDescriptionTypeDef:
+    return {
+        "CodeContentType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationCodeConfigurationDescriptionTypeDef(TypedDict):
+    CodeContentType: CodeContentTypeType,  # (1)
+    CodeContentDescription: NotRequired[CodeContentDescriptionTypeDef],  # (2)
+```
 
-- `CodeContentType`: [CodeContentTypeType](./literals.md#codecontenttypetype)
-
-Optional fields:
-
-- `CodeContentDescription`:
-  [CodeContentDescriptionTypeDef](./type_defs.md#codecontentdescriptiontypedef)
-
-<a id="applicationcodeconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: CodeContentTypeType](./literals.md#codecontenttypetype) 
+2. See [:material-code-braces: CodeContentDescriptionTypeDef](./type_defs.md#codecontentdescriptiontypedef) 
 ## ApplicationCodeConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationCodeConfigurationTypeDef
+
+def get_value() -> ApplicationCodeConfigurationTypeDef:
+    return {
+        "CodeContentType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationCodeConfigurationTypeDef(TypedDict):
+    CodeContentType: CodeContentTypeType,  # (2)
+    CodeContent: NotRequired[CodeContentTypeDef],  # (1)
+```
 
-- `CodeContentType`: [CodeContentTypeType](./literals.md#codecontenttypetype)
-
-Optional fields:
-
-- `CodeContent`: [CodeContentTypeDef](./type_defs.md#codecontenttypedef)
-
-<a id="applicationcodeconfigurationupdatetypedef"></a>
-
+1. See [:material-code-braces: CodeContentTypeDef](./type_defs.md#codecontenttypedef) 
+2. See [:material-code-brackets: CodeContentTypeType](./literals.md#codecontenttypetype) 
 ## ApplicationCodeConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationCodeConfigurationUpdateTypeDef
+
+def get_value() -> ApplicationCodeConfigurationUpdateTypeDef:
+    return {
+        "CodeContentTypeUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationCodeConfigurationUpdateTypeDef(TypedDict):
+    CodeContentTypeUpdate: NotRequired[CodeContentTypeType],  # (1)
+    CodeContentUpdate: NotRequired[CodeContentUpdateTypeDef],  # (2)
+```
 
-- `CodeContentTypeUpdate`:
-  [CodeContentTypeType](./literals.md#codecontenttypetype)
-- `CodeContentUpdate`:
-  [CodeContentUpdateTypeDef](./type_defs.md#codecontentupdatetypedef)
-
-<a id="applicationconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: CodeContentTypeType](./literals.md#codecontenttypetype) 
+2. See [:material-code-braces: CodeContentUpdateTypeDef](./type_defs.md#codecontentupdatetypedef) 
 ## ApplicationConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationConfigurationDescriptionTypeDef
+
+def get_value() -> ApplicationConfigurationDescriptionTypeDef:
+    return {
+        "SqlApplicationConfigurationDescription": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationConfigurationDescriptionTypeDef(TypedDict):
+    SqlApplicationConfigurationDescription: NotRequired[SqlApplicationConfigurationDescriptionTypeDef],  # (1)
+    ApplicationCodeConfigurationDescription: NotRequired[ApplicationCodeConfigurationDescriptionTypeDef],  # (2)
+    RunConfigurationDescription: NotRequired[RunConfigurationDescriptionTypeDef],  # (3)
+    FlinkApplicationConfigurationDescription: NotRequired[FlinkApplicationConfigurationDescriptionTypeDef],  # (4)
+    EnvironmentPropertyDescriptions: NotRequired[EnvironmentPropertyDescriptionsTypeDef],  # (5)
+    ApplicationSnapshotConfigurationDescription: NotRequired[ApplicationSnapshotConfigurationDescriptionTypeDef],  # (6)
+    VpcConfigurationDescriptions: NotRequired[List[VpcConfigurationDescriptionTypeDef]],  # (7)
+    ZeppelinApplicationConfigurationDescription: NotRequired[ZeppelinApplicationConfigurationDescriptionTypeDef],  # (8)
+```
 
-- `SqlApplicationConfigurationDescription`:
-  [SqlApplicationConfigurationDescriptionTypeDef](./type_defs.md#sqlapplicationconfigurationdescriptiontypedef)
-- `ApplicationCodeConfigurationDescription`:
-  [ApplicationCodeConfigurationDescriptionTypeDef](./type_defs.md#applicationcodeconfigurationdescriptiontypedef)
-- `RunConfigurationDescription`:
-  [RunConfigurationDescriptionTypeDef](./type_defs.md#runconfigurationdescriptiontypedef)
-- `FlinkApplicationConfigurationDescription`:
-  [FlinkApplicationConfigurationDescriptionTypeDef](./type_defs.md#flinkapplicationconfigurationdescriptiontypedef)
-- `EnvironmentPropertyDescriptions`:
-  [EnvironmentPropertyDescriptionsTypeDef](./type_defs.md#environmentpropertydescriptionstypedef)
-- `ApplicationSnapshotConfigurationDescription`:
-  [ApplicationSnapshotConfigurationDescriptionTypeDef](./type_defs.md#applicationsnapshotconfigurationdescriptiontypedef)
-- `VpcConfigurationDescriptions`:
-  `List`\[[VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)\]
-- `ZeppelinApplicationConfigurationDescription`:
-  [ZeppelinApplicationConfigurationDescriptionTypeDef](./type_defs.md#zeppelinapplicationconfigurationdescriptiontypedef)
-
-<a id="applicationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: SqlApplicationConfigurationDescriptionTypeDef](./type_defs.md#sqlapplicationconfigurationdescriptiontypedef) 
+2. See [:material-code-braces: ApplicationCodeConfigurationDescriptionTypeDef](./type_defs.md#applicationcodeconfigurationdescriptiontypedef) 
+3. See [:material-code-braces: RunConfigurationDescriptionTypeDef](./type_defs.md#runconfigurationdescriptiontypedef) 
+4. See [:material-code-braces: FlinkApplicationConfigurationDescriptionTypeDef](./type_defs.md#flinkapplicationconfigurationdescriptiontypedef) 
+5. See [:material-code-braces: EnvironmentPropertyDescriptionsTypeDef](./type_defs.md#environmentpropertydescriptionstypedef) 
+6. See [:material-code-braces: ApplicationSnapshotConfigurationDescriptionTypeDef](./type_defs.md#applicationsnapshotconfigurationdescriptiontypedef) 
+7. See [:material-code-braces: VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef) 
+8. See [:material-code-braces: ZeppelinApplicationConfigurationDescriptionTypeDef](./type_defs.md#zeppelinapplicationconfigurationdescriptiontypedef) 
 ## ApplicationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationConfigurationTypeDef
+
+def get_value() -> ApplicationConfigurationTypeDef:
+    return {
+        "SqlApplicationConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationConfigurationTypeDef(TypedDict):
+    SqlApplicationConfiguration: NotRequired[SqlApplicationConfigurationTypeDef],  # (1)
+    FlinkApplicationConfiguration: NotRequired[FlinkApplicationConfigurationTypeDef],  # (2)
+    EnvironmentProperties: NotRequired[EnvironmentPropertiesTypeDef],  # (3)
+    ApplicationCodeConfiguration: NotRequired[ApplicationCodeConfigurationTypeDef],  # (4)
+    ApplicationSnapshotConfiguration: NotRequired[ApplicationSnapshotConfigurationTypeDef],  # (5)
+    VpcConfigurations: NotRequired[Sequence[VpcConfigurationTypeDef]],  # (6)
+    ZeppelinApplicationConfiguration: NotRequired[ZeppelinApplicationConfigurationTypeDef],  # (7)
+```
 
-- `SqlApplicationConfiguration`:
-  [SqlApplicationConfigurationTypeDef](./type_defs.md#sqlapplicationconfigurationtypedef)
-- `FlinkApplicationConfiguration`:
-  [FlinkApplicationConfigurationTypeDef](./type_defs.md#flinkapplicationconfigurationtypedef)
-- `EnvironmentProperties`:
-  [EnvironmentPropertiesTypeDef](./type_defs.md#environmentpropertiestypedef)
-- `ApplicationCodeConfiguration`:
-  [ApplicationCodeConfigurationTypeDef](./type_defs.md#applicationcodeconfigurationtypedef)
-- `ApplicationSnapshotConfiguration`:
-  [ApplicationSnapshotConfigurationTypeDef](./type_defs.md#applicationsnapshotconfigurationtypedef)
-- `VpcConfigurations`:
-  `Sequence`\[[VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)\]
-- `ZeppelinApplicationConfiguration`:
-  [ZeppelinApplicationConfigurationTypeDef](./type_defs.md#zeppelinapplicationconfigurationtypedef)
-
-<a id="applicationconfigurationupdatetypedef"></a>
-
+1. See [:material-code-braces: SqlApplicationConfigurationTypeDef](./type_defs.md#sqlapplicationconfigurationtypedef) 
+2. See [:material-code-braces: FlinkApplicationConfigurationTypeDef](./type_defs.md#flinkapplicationconfigurationtypedef) 
+3. See [:material-code-braces: EnvironmentPropertiesTypeDef](./type_defs.md#environmentpropertiestypedef) 
+4. See [:material-code-braces: ApplicationCodeConfigurationTypeDef](./type_defs.md#applicationcodeconfigurationtypedef) 
+5. See [:material-code-braces: ApplicationSnapshotConfigurationTypeDef](./type_defs.md#applicationsnapshotconfigurationtypedef) 
+6. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
+7. See [:material-code-braces: ZeppelinApplicationConfigurationTypeDef](./type_defs.md#zeppelinapplicationconfigurationtypedef) 
 ## ApplicationConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationConfigurationUpdateTypeDef
+
+def get_value() -> ApplicationConfigurationUpdateTypeDef:
+    return {
+        "SqlApplicationConfigurationUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationConfigurationUpdateTypeDef(TypedDict):
+    SqlApplicationConfigurationUpdate: NotRequired[SqlApplicationConfigurationUpdateTypeDef],  # (1)
+    ApplicationCodeConfigurationUpdate: NotRequired[ApplicationCodeConfigurationUpdateTypeDef],  # (2)
+    FlinkApplicationConfigurationUpdate: NotRequired[FlinkApplicationConfigurationUpdateTypeDef],  # (3)
+    EnvironmentPropertyUpdates: NotRequired[EnvironmentPropertyUpdatesTypeDef],  # (4)
+    ApplicationSnapshotConfigurationUpdate: NotRequired[ApplicationSnapshotConfigurationUpdateTypeDef],  # (5)
+    VpcConfigurationUpdates: NotRequired[Sequence[VpcConfigurationUpdateTypeDef]],  # (6)
+    ZeppelinApplicationConfigurationUpdate: NotRequired[ZeppelinApplicationConfigurationUpdateTypeDef],  # (7)
+```
 
-- `SqlApplicationConfigurationUpdate`:
-  [SqlApplicationConfigurationUpdateTypeDef](./type_defs.md#sqlapplicationconfigurationupdatetypedef)
-- `ApplicationCodeConfigurationUpdate`:
-  [ApplicationCodeConfigurationUpdateTypeDef](./type_defs.md#applicationcodeconfigurationupdatetypedef)
-- `FlinkApplicationConfigurationUpdate`:
-  [FlinkApplicationConfigurationUpdateTypeDef](./type_defs.md#flinkapplicationconfigurationupdatetypedef)
-- `EnvironmentPropertyUpdates`:
-  [EnvironmentPropertyUpdatesTypeDef](./type_defs.md#environmentpropertyupdatestypedef)
-- `ApplicationSnapshotConfigurationUpdate`:
-  [ApplicationSnapshotConfigurationUpdateTypeDef](./type_defs.md#applicationsnapshotconfigurationupdatetypedef)
-- `VpcConfigurationUpdates`:
-  `Sequence`\[[VpcConfigurationUpdateTypeDef](./type_defs.md#vpcconfigurationupdatetypedef)\]
-- `ZeppelinApplicationConfigurationUpdate`:
-  [ZeppelinApplicationConfigurationUpdateTypeDef](./type_defs.md#zeppelinapplicationconfigurationupdatetypedef)
-
-<a id="applicationdetailtypedef"></a>
-
+1. See [:material-code-braces: SqlApplicationConfigurationUpdateTypeDef](./type_defs.md#sqlapplicationconfigurationupdatetypedef) 
+2. See [:material-code-braces: ApplicationCodeConfigurationUpdateTypeDef](./type_defs.md#applicationcodeconfigurationupdatetypedef) 
+3. See [:material-code-braces: FlinkApplicationConfigurationUpdateTypeDef](./type_defs.md#flinkapplicationconfigurationupdatetypedef) 
+4. See [:material-code-braces: EnvironmentPropertyUpdatesTypeDef](./type_defs.md#environmentpropertyupdatestypedef) 
+5. See [:material-code-braces: ApplicationSnapshotConfigurationUpdateTypeDef](./type_defs.md#applicationsnapshotconfigurationupdatetypedef) 
+6. See [:material-code-braces: VpcConfigurationUpdateTypeDef](./type_defs.md#vpcconfigurationupdatetypedef) 
+7. See [:material-code-braces: ZeppelinApplicationConfigurationUpdateTypeDef](./type_defs.md#zeppelinapplicationconfigurationupdatetypedef) 
 ## ApplicationDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationDetailTypeDef
+
+def get_value() -> ApplicationDetailTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationName": ...,
+        "RuntimeEnvironment": ...,
+        "ApplicationStatus": ...,
+        "ApplicationVersionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationDetailTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationName: str,
+    RuntimeEnvironment: RuntimeEnvironmentType,  # (1)
+    ApplicationStatus: ApplicationStatusType,  # (2)
+    ApplicationVersionId: int,
+    ApplicationDescription: NotRequired[str],
+    ServiceExecutionRole: NotRequired[str],
+    CreateTimestamp: NotRequired[datetime],
+    LastUpdateTimestamp: NotRequired[datetime],
+    ApplicationConfigurationDescription: NotRequired[ApplicationConfigurationDescriptionTypeDef],  # (3)
+    CloudWatchLoggingOptionDescriptions: NotRequired[List[CloudWatchLoggingOptionDescriptionTypeDef]],  # (4)
+    ApplicationMaintenanceConfigurationDescription: NotRequired[ApplicationMaintenanceConfigurationDescriptionTypeDef],  # (5)
+    ApplicationVersionUpdatedFrom: NotRequired[int],
+    ApplicationVersionRolledBackFrom: NotRequired[int],
+    ConditionalToken: NotRequired[str],
+    ApplicationVersionRolledBackTo: NotRequired[int],
+    ApplicationMode: NotRequired[ApplicationModeType],  # (6)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationName`: `str`
-- `RuntimeEnvironment`:
-  [RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype)
-- `ApplicationStatus`:
-  [ApplicationStatusType](./literals.md#applicationstatustype)
-- `ApplicationVersionId`: `int`
-
-Optional fields:
-
-- `ApplicationDescription`: `str`
-- `ServiceExecutionRole`: `str`
-- `CreateTimestamp`: `datetime`
-- `LastUpdateTimestamp`: `datetime`
-- `ApplicationConfigurationDescription`:
-  [ApplicationConfigurationDescriptionTypeDef](./type_defs.md#applicationconfigurationdescriptiontypedef)
-- `CloudWatchLoggingOptionDescriptions`:
-  `List`\[[CloudWatchLoggingOptionDescriptionTypeDef](./type_defs.md#cloudwatchloggingoptiondescriptiontypedef)\]
-- `ApplicationMaintenanceConfigurationDescription`:
-  [ApplicationMaintenanceConfigurationDescriptionTypeDef](./type_defs.md#applicationmaintenanceconfigurationdescriptiontypedef)
-- `ApplicationVersionUpdatedFrom`: `int`
-- `ApplicationVersionRolledBackFrom`: `int`
-- `ConditionalToken`: `str`
-- `ApplicationVersionRolledBackTo`: `int`
-- `ApplicationMode`: [ApplicationModeType](./literals.md#applicationmodetype)
-
-<a id="applicationmaintenanceconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype) 
+2. See [:material-code-brackets: ApplicationStatusType](./literals.md#applicationstatustype) 
+3. See [:material-code-braces: ApplicationConfigurationDescriptionTypeDef](./type_defs.md#applicationconfigurationdescriptiontypedef) 
+4. See [:material-code-braces: CloudWatchLoggingOptionDescriptionTypeDef](./type_defs.md#cloudwatchloggingoptiondescriptiontypedef) 
+5. See [:material-code-braces: ApplicationMaintenanceConfigurationDescriptionTypeDef](./type_defs.md#applicationmaintenanceconfigurationdescriptiontypedef) 
+6. See [:material-code-brackets: ApplicationModeType](./literals.md#applicationmodetype) 
 ## ApplicationMaintenanceConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationMaintenanceConfigurationDescriptionTypeDef
+
+def get_value() -> ApplicationMaintenanceConfigurationDescriptionTypeDef:
+    return {
+        "ApplicationMaintenanceWindowStartTime": ...,
+        "ApplicationMaintenanceWindowEndTime": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationMaintenanceWindowStartTime`: `str`
-- `ApplicationMaintenanceWindowEndTime`: `str`
-
-<a id="applicationmaintenanceconfigurationupdatetypedef"></a>
+```python title="Definition"
+class ApplicationMaintenanceConfigurationDescriptionTypeDef(TypedDict):
+    ApplicationMaintenanceWindowStartTime: str,
+    ApplicationMaintenanceWindowEndTime: str,
+```
 
 ## ApplicationMaintenanceConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationMaintenanceConfigurationUpdateTypeDef
+
+def get_value() -> ApplicationMaintenanceConfigurationUpdateTypeDef:
+    return {
+        "ApplicationMaintenanceWindowStartTimeUpdate": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationMaintenanceWindowStartTimeUpdate`: `str`
-
-<a id="applicationrestoreconfigurationtypedef"></a>
+```python title="Definition"
+class ApplicationMaintenanceConfigurationUpdateTypeDef(TypedDict):
+    ApplicationMaintenanceWindowStartTimeUpdate: str,
+```
 
 ## ApplicationRestoreConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationRestoreConfigurationTypeDef
+
+def get_value() -> ApplicationRestoreConfigurationTypeDef:
+    return {
+        "ApplicationRestoreType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationRestoreConfigurationTypeDef(TypedDict):
+    ApplicationRestoreType: ApplicationRestoreTypeType,  # (1)
+    SnapshotName: NotRequired[str],
+```
 
-- `ApplicationRestoreType`:
-  [ApplicationRestoreTypeType](./literals.md#applicationrestoretypetype)
-
-Optional fields:
-
-- `SnapshotName`: `str`
-
-<a id="applicationsnapshotconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ApplicationRestoreTypeType](./literals.md#applicationrestoretypetype) 
 ## ApplicationSnapshotConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationSnapshotConfigurationDescriptionTypeDef
+
+def get_value() -> ApplicationSnapshotConfigurationDescriptionTypeDef:
+    return {
+        "SnapshotsEnabled": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotsEnabled`: `bool`
-
-<a id="applicationsnapshotconfigurationtypedef"></a>
+```python title="Definition"
+class ApplicationSnapshotConfigurationDescriptionTypeDef(TypedDict):
+    SnapshotsEnabled: bool,
+```
 
 ## ApplicationSnapshotConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationSnapshotConfigurationTypeDef
+
+def get_value() -> ApplicationSnapshotConfigurationTypeDef:
+    return {
+        "SnapshotsEnabled": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotsEnabled`: `bool`
-
-<a id="applicationsnapshotconfigurationupdatetypedef"></a>
+```python title="Definition"
+class ApplicationSnapshotConfigurationTypeDef(TypedDict):
+    SnapshotsEnabled: bool,
+```
 
 ## ApplicationSnapshotConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationSnapshotConfigurationUpdateTypeDef
+
+def get_value() -> ApplicationSnapshotConfigurationUpdateTypeDef:
+    return {
+        "SnapshotsEnabledUpdate": ...,
+    }
 ```
 
-Required fields:
-
-- `SnapshotsEnabledUpdate`: `bool`
-
-<a id="applicationsummarytypedef"></a>
+```python title="Definition"
+class ApplicationSnapshotConfigurationUpdateTypeDef(TypedDict):
+    SnapshotsEnabledUpdate: bool,
+```
 
 ## ApplicationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationSummaryTypeDef
+
+def get_value() -> ApplicationSummaryTypeDef:
+    return {
+        "ApplicationName": ...,
+        "ApplicationARN": ...,
+        "ApplicationStatus": ...,
+        "ApplicationVersionId": ...,
+        "RuntimeEnvironment": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationSummaryTypeDef(TypedDict):
+    ApplicationName: str,
+    ApplicationARN: str,
+    ApplicationStatus: ApplicationStatusType,  # (1)
+    ApplicationVersionId: int,
+    RuntimeEnvironment: RuntimeEnvironmentType,  # (2)
+    ApplicationMode: NotRequired[ApplicationModeType],  # (3)
+```
 
-- `ApplicationName`: `str`
-- `ApplicationARN`: `str`
-- `ApplicationStatus`:
-  [ApplicationStatusType](./literals.md#applicationstatustype)
-- `ApplicationVersionId`: `int`
-- `RuntimeEnvironment`:
-  [RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype)
-
-Optional fields:
-
-- `ApplicationMode`: [ApplicationModeType](./literals.md#applicationmodetype)
-
-<a id="applicationversionsummarytypedef"></a>
-
+1. See [:material-code-brackets: ApplicationStatusType](./literals.md#applicationstatustype) 
+2. See [:material-code-brackets: RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype) 
+3. See [:material-code-brackets: ApplicationModeType](./literals.md#applicationmodetype) 
 ## ApplicationVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ApplicationVersionSummaryTypeDef
+
+def get_value() -> ApplicationVersionSummaryTypeDef:
+    return {
+        "ApplicationVersionId": ...,
+        "ApplicationStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationVersionSummaryTypeDef(TypedDict):
+    ApplicationVersionId: int,
+    ApplicationStatus: ApplicationStatusType,  # (1)
+```
 
-- `ApplicationVersionId`: `int`
-- `ApplicationStatus`:
-  [ApplicationStatusType](./literals.md#applicationstatustype)
-
-<a id="csvmappingparameterstypedef"></a>
-
+1. See [:material-code-brackets: ApplicationStatusType](./literals.md#applicationstatustype) 
 ## CSVMappingParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CSVMappingParametersTypeDef
+
+def get_value() -> CSVMappingParametersTypeDef:
+    return {
+        "RecordRowDelimiter": ...,
+        "RecordColumnDelimiter": ...,
+    }
 ```
 
-Required fields:
-
-- `RecordRowDelimiter`: `str`
-- `RecordColumnDelimiter`: `str`
-
-<a id="catalogconfigurationdescriptiontypedef"></a>
+```python title="Definition"
+class CSVMappingParametersTypeDef(TypedDict):
+    RecordRowDelimiter: str,
+    RecordColumnDelimiter: str,
+```
 
 ## CatalogConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CatalogConfigurationDescriptionTypeDef
+
+def get_value() -> CatalogConfigurationDescriptionTypeDef:
+    return {
+        "GlueDataCatalogConfigurationDescription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CatalogConfigurationDescriptionTypeDef(TypedDict):
+    GlueDataCatalogConfigurationDescription: GlueDataCatalogConfigurationDescriptionTypeDef,  # (1)
+```
 
-- `GlueDataCatalogConfigurationDescription`:
-  [GlueDataCatalogConfigurationDescriptionTypeDef](./type_defs.md#gluedatacatalogconfigurationdescriptiontypedef)
-
-<a id="catalogconfigurationtypedef"></a>
-
+1. See [:material-code-braces: GlueDataCatalogConfigurationDescriptionTypeDef](./type_defs.md#gluedatacatalogconfigurationdescriptiontypedef) 
 ## CatalogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CatalogConfigurationTypeDef
+
+def get_value() -> CatalogConfigurationTypeDef:
+    return {
+        "GlueDataCatalogConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CatalogConfigurationTypeDef(TypedDict):
+    GlueDataCatalogConfiguration: GlueDataCatalogConfigurationTypeDef,  # (1)
+```
 
-- `GlueDataCatalogConfiguration`:
-  [GlueDataCatalogConfigurationTypeDef](./type_defs.md#gluedatacatalogconfigurationtypedef)
-
-<a id="catalogconfigurationupdatetypedef"></a>
-
+1. See [:material-code-braces: GlueDataCatalogConfigurationTypeDef](./type_defs.md#gluedatacatalogconfigurationtypedef) 
 ## CatalogConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CatalogConfigurationUpdateTypeDef
+
+def get_value() -> CatalogConfigurationUpdateTypeDef:
+    return {
+        "GlueDataCatalogConfigurationUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CatalogConfigurationUpdateTypeDef(TypedDict):
+    GlueDataCatalogConfigurationUpdate: GlueDataCatalogConfigurationUpdateTypeDef,  # (1)
+```
 
-- `GlueDataCatalogConfigurationUpdate`:
-  [GlueDataCatalogConfigurationUpdateTypeDef](./type_defs.md#gluedatacatalogconfigurationupdatetypedef)
-
-<a id="checkpointconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: GlueDataCatalogConfigurationUpdateTypeDef](./type_defs.md#gluedatacatalogconfigurationupdatetypedef) 
 ## CheckpointConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CheckpointConfigurationDescriptionTypeDef
+
+def get_value() -> CheckpointConfigurationDescriptionTypeDef:
+    return {
+        "ConfigurationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CheckpointConfigurationDescriptionTypeDef(TypedDict):
+    ConfigurationType: NotRequired[ConfigurationTypeType],  # (1)
+    CheckpointingEnabled: NotRequired[bool],
+    CheckpointInterval: NotRequired[int],
+    MinPauseBetweenCheckpoints: NotRequired[int],
+```
 
-- `ConfigurationType`:
-  [ConfigurationTypeType](./literals.md#configurationtypetype)
-- `CheckpointingEnabled`: `bool`
-- `CheckpointInterval`: `int`
-- `MinPauseBetweenCheckpoints`: `int`
-
-<a id="checkpointconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationTypeType](./literals.md#configurationtypetype) 
 ## CheckpointConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CheckpointConfigurationTypeDef
+
+def get_value() -> CheckpointConfigurationTypeDef:
+    return {
+        "ConfigurationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CheckpointConfigurationTypeDef(TypedDict):
+    ConfigurationType: ConfigurationTypeType,  # (1)
+    CheckpointingEnabled: NotRequired[bool],
+    CheckpointInterval: NotRequired[int],
+    MinPauseBetweenCheckpoints: NotRequired[int],
+```
 
-- `ConfigurationType`:
-  [ConfigurationTypeType](./literals.md#configurationtypetype)
-
-Optional fields:
-
-- `CheckpointingEnabled`: `bool`
-- `CheckpointInterval`: `int`
-- `MinPauseBetweenCheckpoints`: `int`
-
-<a id="checkpointconfigurationupdatetypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationTypeType](./literals.md#configurationtypetype) 
 ## CheckpointConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CheckpointConfigurationUpdateTypeDef
+
+def get_value() -> CheckpointConfigurationUpdateTypeDef:
+    return {
+        "ConfigurationTypeUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CheckpointConfigurationUpdateTypeDef(TypedDict):
+    ConfigurationTypeUpdate: NotRequired[ConfigurationTypeType],  # (1)
+    CheckpointingEnabledUpdate: NotRequired[bool],
+    CheckpointIntervalUpdate: NotRequired[int],
+    MinPauseBetweenCheckpointsUpdate: NotRequired[int],
+```
 
-- `ConfigurationTypeUpdate`:
-  [ConfigurationTypeType](./literals.md#configurationtypetype)
-- `CheckpointingEnabledUpdate`: `bool`
-- `CheckpointIntervalUpdate`: `int`
-- `MinPauseBetweenCheckpointsUpdate`: `int`
-
-<a id="cloudwatchloggingoptiondescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationTypeType](./literals.md#configurationtypetype) 
 ## CloudWatchLoggingOptionDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CloudWatchLoggingOptionDescriptionTypeDef
+
+def get_value() -> CloudWatchLoggingOptionDescriptionTypeDef:
+    return {
+        "LogStreamARN": ...,
+    }
 ```
 
-Required fields:
-
-- `LogStreamARN`: `str`
-
-Optional fields:
-
-- `CloudWatchLoggingOptionId`: `str`
-- `RoleARN`: `str`
-
-<a id="cloudwatchloggingoptiontypedef"></a>
+```python title="Definition"
+class CloudWatchLoggingOptionDescriptionTypeDef(TypedDict):
+    LogStreamARN: str,
+    CloudWatchLoggingOptionId: NotRequired[str],
+    RoleARN: NotRequired[str],
+```
 
 ## CloudWatchLoggingOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CloudWatchLoggingOptionTypeDef
+
+def get_value() -> CloudWatchLoggingOptionTypeDef:
+    return {
+        "LogStreamARN": ...,
+    }
 ```
 
-Required fields:
-
-- `LogStreamARN`: `str`
-
-<a id="cloudwatchloggingoptionupdatetypedef"></a>
+```python title="Definition"
+class CloudWatchLoggingOptionTypeDef(TypedDict):
+    LogStreamARN: str,
+```
 
 ## CloudWatchLoggingOptionUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CloudWatchLoggingOptionUpdateTypeDef
+
+def get_value() -> CloudWatchLoggingOptionUpdateTypeDef:
+    return {
+        "CloudWatchLoggingOptionId": ...,
+    }
 ```
 
-Required fields:
-
-- `CloudWatchLoggingOptionId`: `str`
-
-Optional fields:
-
-- `LogStreamARNUpdate`: `str`
-
-<a id="codecontentdescriptiontypedef"></a>
+```python title="Definition"
+class CloudWatchLoggingOptionUpdateTypeDef(TypedDict):
+    CloudWatchLoggingOptionId: str,
+    LogStreamARNUpdate: NotRequired[str],
+```
 
 ## CodeContentDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CodeContentDescriptionTypeDef
+
+def get_value() -> CodeContentDescriptionTypeDef:
+    return {
+        "TextContent": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CodeContentDescriptionTypeDef(TypedDict):
+    TextContent: NotRequired[str],
+    CodeMD5: NotRequired[str],
+    CodeSize: NotRequired[int],
+    S3ApplicationCodeLocationDescription: NotRequired[S3ApplicationCodeLocationDescriptionTypeDef],  # (1)
+```
 
-- `TextContent`: `str`
-- `CodeMD5`: `str`
-- `CodeSize`: `int`
-- `S3ApplicationCodeLocationDescription`:
-  [S3ApplicationCodeLocationDescriptionTypeDef](./type_defs.md#s3applicationcodelocationdescriptiontypedef)
-
-<a id="codecontenttypedef"></a>
-
+1. See [:material-code-braces: S3ApplicationCodeLocationDescriptionTypeDef](./type_defs.md#s3applicationcodelocationdescriptiontypedef) 
 ## CodeContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CodeContentTypeDef
+
+def get_value() -> CodeContentTypeDef:
+    return {
+        "TextContent": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CodeContentTypeDef(TypedDict):
+    TextContent: NotRequired[str],
+    ZipFileContent: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    S3ContentLocation: NotRequired[S3ContentLocationTypeDef],  # (1)
+```
 
-- `TextContent`: `str`
-- `ZipFileContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `S3ContentLocation`:
-  [S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef)
-
-<a id="codecontentupdatetypedef"></a>
-
+1. See [:material-code-braces: S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef) 
 ## CodeContentUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CodeContentUpdateTypeDef
+
+def get_value() -> CodeContentUpdateTypeDef:
+    return {
+        "TextContentUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CodeContentUpdateTypeDef(TypedDict):
+    TextContentUpdate: NotRequired[str],
+    ZipFileContentUpdate: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    S3ContentLocationUpdate: NotRequired[S3ContentLocationUpdateTypeDef],  # (1)
+```
 
-- `TextContentUpdate`: `str`
-- `ZipFileContentUpdate`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `S3ContentLocationUpdate`:
-  [S3ContentLocationUpdateTypeDef](./type_defs.md#s3contentlocationupdatetypedef)
-
-<a id="createapplicationpresignedurlrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3ContentLocationUpdateTypeDef](./type_defs.md#s3contentlocationupdatetypedef) 
 ## CreateApplicationPresignedUrlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationPresignedUrlRequestRequestTypeDef
+
+def get_value() -> CreateApplicationPresignedUrlRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "UrlType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationPresignedUrlRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    UrlType: UrlTypeType,  # (1)
+    SessionExpirationDurationInSeconds: NotRequired[int],
+```
 
-- `ApplicationName`: `str`
-- `UrlType`: [UrlTypeType](./literals.md#urltypetype)
-
-Optional fields:
-
-- `SessionExpirationDurationInSeconds`: `int`
-
-<a id="createapplicationpresignedurlresponsetypedef"></a>
-
+1. See [:material-code-brackets: UrlTypeType](./literals.md#urltypetype) 
 ## CreateApplicationPresignedUrlResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationPresignedUrlResponseTypeDef
+
+def get_value() -> CreateApplicationPresignedUrlResponseTypeDef:
+    return {
+        "AuthorizedUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationPresignedUrlResponseTypeDef(TypedDict):
+    AuthorizedUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AuthorizedUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationRequestRequestTypeDef
+
+def get_value() -> CreateApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "RuntimeEnvironment": ...,
+        "ServiceExecutionRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    RuntimeEnvironment: RuntimeEnvironmentType,  # (1)
+    ServiceExecutionRole: str,
+    ApplicationDescription: NotRequired[str],
+    ApplicationConfiguration: NotRequired[ApplicationConfigurationTypeDef],  # (2)
+    CloudWatchLoggingOptions: NotRequired[Sequence[CloudWatchLoggingOptionTypeDef]],  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    ApplicationMode: NotRequired[ApplicationModeType],  # (5)
+```
 
-- `ApplicationName`: `str`
-- `RuntimeEnvironment`:
-  [RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype)
-- `ServiceExecutionRole`: `str`
-
-Optional fields:
-
-- `ApplicationDescription`: `str`
-- `ApplicationConfiguration`:
-  [ApplicationConfigurationTypeDef](./type_defs.md#applicationconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  `Sequence`\[[CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ApplicationMode`: [ApplicationModeType](./literals.md#applicationmodetype)
-
-<a id="createapplicationresponsetypedef"></a>
-
+1. See [:material-code-brackets: RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype) 
+2. See [:material-code-braces: ApplicationConfigurationTypeDef](./type_defs.md#applicationconfigurationtypedef) 
+3. See [:material-code-braces: CloudWatchLoggingOptionTypeDef](./type_defs.md#cloudwatchloggingoptiontypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-brackets: ApplicationModeType](./literals.md#applicationmodetype) 
 ## CreateApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationResponseTypeDef
+
+def get_value() -> CreateApplicationResponseTypeDef:
+    return {
+        "ApplicationDetail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationResponseTypeDef(TypedDict):
+    ApplicationDetail: ApplicationDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationDetail`:
-  [ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createapplicationsnapshotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateApplicationSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CreateApplicationSnapshotRequestRequestTypeDef
+
+def get_value() -> CreateApplicationSnapshotRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "SnapshotName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `SnapshotName`: `str`
-
-<a id="customartifactconfigurationdescriptiontypedef"></a>
+```python title="Definition"
+class CreateApplicationSnapshotRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    SnapshotName: str,
+```
 
 ## CustomArtifactConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CustomArtifactConfigurationDescriptionTypeDef
+
+def get_value() -> CustomArtifactConfigurationDescriptionTypeDef:
+    return {
+        "ArtifactType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomArtifactConfigurationDescriptionTypeDef(TypedDict):
+    ArtifactType: NotRequired[ArtifactTypeType],  # (1)
+    S3ContentLocationDescription: NotRequired[S3ContentLocationTypeDef],  # (2)
+    MavenReferenceDescription: NotRequired[MavenReferenceTypeDef],  # (3)
+```
 
-- `ArtifactType`: [ArtifactTypeType](./literals.md#artifacttypetype)
-- `S3ContentLocationDescription`:
-  [S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef)
-- `MavenReferenceDescription`:
-  [MavenReferenceTypeDef](./type_defs.md#mavenreferencetypedef)
-
-<a id="customartifactconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ArtifactTypeType](./literals.md#artifacttypetype) 
+2. See [:material-code-braces: S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef) 
+3. See [:material-code-braces: MavenReferenceTypeDef](./type_defs.md#mavenreferencetypedef) 
 ## CustomArtifactConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import CustomArtifactConfigurationTypeDef
+
+def get_value() -> CustomArtifactConfigurationTypeDef:
+    return {
+        "ArtifactType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomArtifactConfigurationTypeDef(TypedDict):
+    ArtifactType: ArtifactTypeType,  # (1)
+    S3ContentLocation: NotRequired[S3ContentLocationTypeDef],  # (2)
+    MavenReference: NotRequired[MavenReferenceTypeDef],  # (3)
+```
 
-- `ArtifactType`: [ArtifactTypeType](./literals.md#artifacttypetype)
-
-Optional fields:
-
-- `S3ContentLocation`:
-  [S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef)
-- `MavenReference`:
-  [MavenReferenceTypeDef](./type_defs.md#mavenreferencetypedef)
-
-<a id="deleteapplicationcloudwatchloggingoptionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ArtifactTypeType](./literals.md#artifacttypetype) 
+2. See [:material-code-braces: S3ContentLocationTypeDef](./type_defs.md#s3contentlocationtypedef) 
+3. See [:material-code-braces: MavenReferenceTypeDef](./type_defs.md#mavenreferencetypedef) 
 ## DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CloudWatchLoggingOptionId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `CloudWatchLoggingOptionId`: `str`
-
-Optional fields:
-
-- `CurrentApplicationVersionId`: `int`
-- `ConditionalToken`: `str`
-
-<a id="deleteapplicationcloudwatchloggingoptionresponsetypedef"></a>
+```python title="Definition"
+class DeleteApplicationCloudWatchLoggingOptionRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CloudWatchLoggingOptionId: str,
+    CurrentApplicationVersionId: NotRequired[int],
+    ConditionalToken: NotRequired[str],
+```
 
 ## DeleteApplicationCloudWatchLoggingOptionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationCloudWatchLoggingOptionResponseTypeDef
+
+def get_value() -> DeleteApplicationCloudWatchLoggingOptionResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "CloudWatchLoggingOptionDescriptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteApplicationCloudWatchLoggingOptionResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    CloudWatchLoggingOptionDescriptions: List[CloudWatchLoggingOptionDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `CloudWatchLoggingOptionDescriptions`:
-  `List`\[[CloudWatchLoggingOptionDescriptionTypeDef](./type_defs.md#cloudwatchloggingoptiondescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapplicationinputprocessingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLoggingOptionDescriptionTypeDef](./type_defs.md#cloudwatchloggingoptiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CurrentApplicationVersionId": ...,
+        "InputId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `CurrentApplicationVersionId`: `int`
-- `InputId`: `str`
-
-<a id="deleteapplicationinputprocessingconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DeleteApplicationInputProcessingConfigurationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    InputId: str,
+```
 
 ## DeleteApplicationInputProcessingConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationInputProcessingConfigurationResponseTypeDef
+
+def get_value() -> DeleteApplicationInputProcessingConfigurationResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteApplicationInputProcessingConfigurationResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapplicationoutputrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationOutputRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationOutputRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationOutputRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CurrentApplicationVersionId": ...,
+        "OutputId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `CurrentApplicationVersionId`: `int`
-- `OutputId`: `str`
-
-<a id="deleteapplicationoutputresponsetypedef"></a>
+```python title="Definition"
+class DeleteApplicationOutputRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    OutputId: str,
+```
 
 ## DeleteApplicationOutputResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationOutputResponseTypeDef
+
+def get_value() -> DeleteApplicationOutputResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteApplicationOutputResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapplicationreferencedatasourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationReferenceDataSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationReferenceDataSourceRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationReferenceDataSourceRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CurrentApplicationVersionId": ...,
+        "ReferenceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `CurrentApplicationVersionId`: `int`
-- `ReferenceId`: `str`
-
-<a id="deleteapplicationreferencedatasourceresponsetypedef"></a>
+```python title="Definition"
+class DeleteApplicationReferenceDataSourceRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+    ReferenceId: str,
+```
 
 ## DeleteApplicationReferenceDataSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationReferenceDataSourceResponseTypeDef
+
+def get_value() -> DeleteApplicationReferenceDataSourceResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteApplicationReferenceDataSourceResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CreateTimestamp": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `CreateTimestamp`: `Union`\[`datetime`, `str`\]
-
-<a id="deleteapplicationsnapshotrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CreateTimestamp: Union[datetime, str],
+```
 
 ## DeleteApplicationSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationSnapshotRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationSnapshotRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "SnapshotName": ...,
+        "SnapshotCreationTimestamp": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `SnapshotName`: `str`
-- `SnapshotCreationTimestamp`: `Union`\[`datetime`, `str`\]
-
-<a id="deleteapplicationvpcconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteApplicationSnapshotRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    SnapshotName: str,
+    SnapshotCreationTimestamp: Union[datetime, str],
+```
 
 ## DeleteApplicationVpcConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationVpcConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationVpcConfigurationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "VpcConfigurationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `VpcConfigurationId`: `str`
-
-Optional fields:
-
-- `CurrentApplicationVersionId`: `int`
-- `ConditionalToken`: `str`
-
-<a id="deleteapplicationvpcconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DeleteApplicationVpcConfigurationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    VpcConfigurationId: str,
+    CurrentApplicationVersionId: NotRequired[int],
+    ConditionalToken: NotRequired[str],
+```
 
 ## DeleteApplicationVpcConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeleteApplicationVpcConfigurationResponseTypeDef
+
+def get_value() -> DeleteApplicationVpcConfigurationResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationVersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteApplicationVpcConfigurationResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationVersionId: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationVersionId`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deployasapplicationconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeployAsApplicationConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeployAsApplicationConfigurationDescriptionTypeDef
+
+def get_value() -> DeployAsApplicationConfigurationDescriptionTypeDef:
+    return {
+        "S3ContentLocationDescription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeployAsApplicationConfigurationDescriptionTypeDef(TypedDict):
+    S3ContentLocationDescription: S3ContentBaseLocationDescriptionTypeDef,  # (1)
+```
 
-- `S3ContentLocationDescription`:
-  [S3ContentBaseLocationDescriptionTypeDef](./type_defs.md#s3contentbaselocationdescriptiontypedef)
-
-<a id="deployasapplicationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: S3ContentBaseLocationDescriptionTypeDef](./type_defs.md#s3contentbaselocationdescriptiontypedef) 
 ## DeployAsApplicationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeployAsApplicationConfigurationTypeDef
+
+def get_value() -> DeployAsApplicationConfigurationTypeDef:
+    return {
+        "S3ContentLocation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeployAsApplicationConfigurationTypeDef(TypedDict):
+    S3ContentLocation: S3ContentBaseLocationTypeDef,  # (1)
+```
 
-- `S3ContentLocation`:
-  [S3ContentBaseLocationTypeDef](./type_defs.md#s3contentbaselocationtypedef)
-
-<a id="deployasapplicationconfigurationupdatetypedef"></a>
-
+1. See [:material-code-braces: S3ContentBaseLocationTypeDef](./type_defs.md#s3contentbaselocationtypedef) 
 ## DeployAsApplicationConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DeployAsApplicationConfigurationUpdateTypeDef
+
+def get_value() -> DeployAsApplicationConfigurationUpdateTypeDef:
+    return {
+        "S3ContentLocationUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeployAsApplicationConfigurationUpdateTypeDef(TypedDict):
+    S3ContentLocationUpdate: NotRequired[S3ContentBaseLocationUpdateTypeDef],  # (1)
+```
 
-- `S3ContentLocationUpdate`:
-  [S3ContentBaseLocationUpdateTypeDef](./type_defs.md#s3contentbaselocationupdatetypedef)
-
-<a id="describeapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3ContentBaseLocationUpdateTypeDef](./type_defs.md#s3contentbaselocationupdatetypedef) 
 ## DescribeApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationRequestRequestTypeDef
+
+def get_value() -> DescribeApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `IncludeAdditionalDetails`: `bool`
-
-<a id="describeapplicationresponsetypedef"></a>
+```python title="Definition"
+class DescribeApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    IncludeAdditionalDetails: NotRequired[bool],
+```
 
 ## DescribeApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationResponseTypeDef
+
+def get_value() -> DescribeApplicationResponseTypeDef:
+    return {
+        "ApplicationDetail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeApplicationResponseTypeDef(TypedDict):
+    ApplicationDetail: ApplicationDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationDetail`:
-  [ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeapplicationsnapshotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeApplicationSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationSnapshotRequestRequestTypeDef
+
+def get_value() -> DescribeApplicationSnapshotRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "SnapshotName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `SnapshotName`: `str`
-
-<a id="describeapplicationsnapshotresponsetypedef"></a>
+```python title="Definition"
+class DescribeApplicationSnapshotRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    SnapshotName: str,
+```
 
 ## DescribeApplicationSnapshotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationSnapshotResponseTypeDef
+
+def get_value() -> DescribeApplicationSnapshotResponseTypeDef:
+    return {
+        "SnapshotDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeApplicationSnapshotResponseTypeDef(TypedDict):
+    SnapshotDetails: SnapshotDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SnapshotDetails`:
-  [SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeapplicationversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeApplicationVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationVersionRequestRequestTypeDef
+
+def get_value() -> DescribeApplicationVersionRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "ApplicationVersionId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `ApplicationVersionId`: `int`
-
-<a id="describeapplicationversionresponsetypedef"></a>
+```python title="Definition"
+class DescribeApplicationVersionRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    ApplicationVersionId: int,
+```
 
 ## DescribeApplicationVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DescribeApplicationVersionResponseTypeDef
+
+def get_value() -> DescribeApplicationVersionResponseTypeDef:
+    return {
+        "ApplicationVersionDetail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeApplicationVersionResponseTypeDef(TypedDict):
+    ApplicationVersionDetail: ApplicationDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationVersionDetail`:
-  [ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="destinationschematypedef"></a>
-
+1. See [:material-code-braces: ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DestinationSchemaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DestinationSchemaTypeDef
+
+def get_value() -> DestinationSchemaTypeDef:
+    return {
+        "RecordFormatType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DestinationSchemaTypeDef(TypedDict):
+    RecordFormatType: RecordFormatTypeType,  # (1)
+```
 
-- `RecordFormatType`:
-  [RecordFormatTypeType](./literals.md#recordformattypetype)
-
-<a id="discoverinputschemarequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RecordFormatTypeType](./literals.md#recordformattypetype) 
 ## DiscoverInputSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DiscoverInputSchemaRequestRequestTypeDef
+
+def get_value() -> DiscoverInputSchemaRequestRequestTypeDef:
+    return {
+        "ServiceExecutionRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DiscoverInputSchemaRequestRequestTypeDef(TypedDict):
+    ServiceExecutionRole: str,
+    ResourceARN: NotRequired[str],
+    InputStartingPositionConfiguration: NotRequired[InputStartingPositionConfigurationTypeDef],  # (1)
+    S3Configuration: NotRequired[S3ConfigurationTypeDef],  # (2)
+    InputProcessingConfiguration: NotRequired[InputProcessingConfigurationTypeDef],  # (3)
+```
 
-- `ServiceExecutionRole`: `str`
-
-Optional fields:
-
-- `ResourceARN`: `str`
-- `InputStartingPositionConfiguration`:
-  [InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef)
-- `S3Configuration`:
-  [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
-- `InputProcessingConfiguration`:
-  [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
-
-<a id="discoverinputschemaresponsetypedef"></a>
-
+1. See [:material-code-braces: InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef) 
+2. See [:material-code-braces: S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef) 
+3. See [:material-code-braces: InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef) 
 ## DiscoverInputSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import DiscoverInputSchemaResponseTypeDef
+
+def get_value() -> DiscoverInputSchemaResponseTypeDef:
+    return {
+        "InputSchema": ...,
+        "ParsedInputRecords": ...,
+        "ProcessedInputRecords": ...,
+        "RawInputRecords": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DiscoverInputSchemaResponseTypeDef(TypedDict):
+    InputSchema: SourceSchemaTypeDef,  # (1)
+    ParsedInputRecords: List[List[str]],
+    ProcessedInputRecords: List[str],
+    RawInputRecords: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InputSchema`: [SourceSchemaTypeDef](./type_defs.md#sourceschematypedef)
-- `ParsedInputRecords`: `List`\[`List`\[`str`\]\]
-- `ProcessedInputRecords`: `List`\[`str`\]
-- `RawInputRecords`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmentpropertiestypedef"></a>
-
+1. See [:material-code-braces: SourceSchemaTypeDef](./type_defs.md#sourceschematypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import EnvironmentPropertiesTypeDef
+
+def get_value() -> EnvironmentPropertiesTypeDef:
+    return {
+        "PropertyGroups": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentPropertiesTypeDef(TypedDict):
+    PropertyGroups: Sequence[PropertyGroupTypeDef],  # (1)
+```
 
-- `PropertyGroups`:
-  `Sequence`\[[PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef)\]
-
-<a id="environmentpropertydescriptionstypedef"></a>
-
+1. See [:material-code-braces: PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef) 
 ## EnvironmentPropertyDescriptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import EnvironmentPropertyDescriptionsTypeDef
+
+def get_value() -> EnvironmentPropertyDescriptionsTypeDef:
+    return {
+        "PropertyGroupDescriptions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentPropertyDescriptionsTypeDef(TypedDict):
+    PropertyGroupDescriptions: NotRequired[List[PropertyGroupTypeDef]],  # (1)
+```
 
-- `PropertyGroupDescriptions`:
-  `List`\[[PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef)\]
-
-<a id="environmentpropertyupdatestypedef"></a>
-
+1. See [:material-code-braces: PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef) 
 ## EnvironmentPropertyUpdatesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import EnvironmentPropertyUpdatesTypeDef
+
+def get_value() -> EnvironmentPropertyUpdatesTypeDef:
+    return {
+        "PropertyGroups": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentPropertyUpdatesTypeDef(TypedDict):
+    PropertyGroups: Sequence[PropertyGroupTypeDef],  # (1)
+```
 
-- `PropertyGroups`:
-  `Sequence`\[[PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef)\]
-
-<a id="flinkapplicationconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: PropertyGroupTypeDef](./type_defs.md#propertygrouptypedef) 
 ## FlinkApplicationConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import FlinkApplicationConfigurationDescriptionTypeDef
+
+def get_value() -> FlinkApplicationConfigurationDescriptionTypeDef:
+    return {
+        "CheckpointConfigurationDescription": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FlinkApplicationConfigurationDescriptionTypeDef(TypedDict):
+    CheckpointConfigurationDescription: NotRequired[CheckpointConfigurationDescriptionTypeDef],  # (1)
+    MonitoringConfigurationDescription: NotRequired[MonitoringConfigurationDescriptionTypeDef],  # (2)
+    ParallelismConfigurationDescription: NotRequired[ParallelismConfigurationDescriptionTypeDef],  # (3)
+    JobPlanDescription: NotRequired[str],
+```
 
-- `CheckpointConfigurationDescription`:
-  [CheckpointConfigurationDescriptionTypeDef](./type_defs.md#checkpointconfigurationdescriptiontypedef)
-- `MonitoringConfigurationDescription`:
-  [MonitoringConfigurationDescriptionTypeDef](./type_defs.md#monitoringconfigurationdescriptiontypedef)
-- `ParallelismConfigurationDescription`:
-  [ParallelismConfigurationDescriptionTypeDef](./type_defs.md#parallelismconfigurationdescriptiontypedef)
-- `JobPlanDescription`: `str`
-
-<a id="flinkapplicationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: CheckpointConfigurationDescriptionTypeDef](./type_defs.md#checkpointconfigurationdescriptiontypedef) 
+2. See [:material-code-braces: MonitoringConfigurationDescriptionTypeDef](./type_defs.md#monitoringconfigurationdescriptiontypedef) 
+3. See [:material-code-braces: ParallelismConfigurationDescriptionTypeDef](./type_defs.md#parallelismconfigurationdescriptiontypedef) 
 ## FlinkApplicationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import FlinkApplicationConfigurationTypeDef
+
+def get_value() -> FlinkApplicationConfigurationTypeDef:
+    return {
+        "CheckpointConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FlinkApplicationConfigurationTypeDef(TypedDict):
+    CheckpointConfiguration: NotRequired[CheckpointConfigurationTypeDef],  # (1)
+    MonitoringConfiguration: NotRequired[MonitoringConfigurationTypeDef],  # (2)
+    ParallelismConfiguration: NotRequired[ParallelismConfigurationTypeDef],  # (3)
+```
 
-- `CheckpointConfiguration`:
-  [CheckpointConfigurationTypeDef](./type_defs.md#checkpointconfigurationtypedef)
-- `MonitoringConfiguration`:
-  [MonitoringConfigurationTypeDef](./type_defs.md#monitoringconfigurationtypedef)
-- `ParallelismConfiguration`:
-  [ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef)
-
-<a id="flinkapplicationconfigurationupdatetypedef"></a>
-
+1. See [:material-code-braces: CheckpointConfigurationTypeDef](./type_defs.md#checkpointconfigurationtypedef) 
+2. See [:material-code-braces: MonitoringConfigurationTypeDef](./type_defs.md#monitoringconfigurationtypedef) 
+3. See [:material-code-braces: ParallelismConfigurationTypeDef](./type_defs.md#parallelismconfigurationtypedef) 
 ## FlinkApplicationConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import FlinkApplicationConfigurationUpdateTypeDef
+
+def get_value() -> FlinkApplicationConfigurationUpdateTypeDef:
+    return {
+        "CheckpointConfigurationUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FlinkApplicationConfigurationUpdateTypeDef(TypedDict):
+    CheckpointConfigurationUpdate: NotRequired[CheckpointConfigurationUpdateTypeDef],  # (1)
+    MonitoringConfigurationUpdate: NotRequired[MonitoringConfigurationUpdateTypeDef],  # (2)
+    ParallelismConfigurationUpdate: NotRequired[ParallelismConfigurationUpdateTypeDef],  # (3)
+```
 
-- `CheckpointConfigurationUpdate`:
-  [CheckpointConfigurationUpdateTypeDef](./type_defs.md#checkpointconfigurationupdatetypedef)
-- `MonitoringConfigurationUpdate`:
-  [MonitoringConfigurationUpdateTypeDef](./type_defs.md#monitoringconfigurationupdatetypedef)
-- `ParallelismConfigurationUpdate`:
-  [ParallelismConfigurationUpdateTypeDef](./type_defs.md#parallelismconfigurationupdatetypedef)
-
-<a id="flinkrunconfigurationtypedef"></a>
-
+1. See [:material-code-braces: CheckpointConfigurationUpdateTypeDef](./type_defs.md#checkpointconfigurationupdatetypedef) 
+2. See [:material-code-braces: MonitoringConfigurationUpdateTypeDef](./type_defs.md#monitoringconfigurationupdatetypedef) 
+3. See [:material-code-braces: ParallelismConfigurationUpdateTypeDef](./type_defs.md#parallelismconfigurationupdatetypedef) 
 ## FlinkRunConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import FlinkRunConfigurationTypeDef
+
+def get_value() -> FlinkRunConfigurationTypeDef:
+    return {
+        "AllowNonRestoredState": ...,
+    }
 ```
 
-Optional fields:
-
-- `AllowNonRestoredState`: `bool`
-
-<a id="gluedatacatalogconfigurationdescriptiontypedef"></a>
+```python title="Definition"
+class FlinkRunConfigurationTypeDef(TypedDict):
+    AllowNonRestoredState: NotRequired[bool],
+```
 
 ## GlueDataCatalogConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import GlueDataCatalogConfigurationDescriptionTypeDef
+
+def get_value() -> GlueDataCatalogConfigurationDescriptionTypeDef:
+    return {
+        "DatabaseARN": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseARN`: `str`
-
-<a id="gluedatacatalogconfigurationtypedef"></a>
+```python title="Definition"
+class GlueDataCatalogConfigurationDescriptionTypeDef(TypedDict):
+    DatabaseARN: str,
+```
 
 ## GlueDataCatalogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import GlueDataCatalogConfigurationTypeDef
+
+def get_value() -> GlueDataCatalogConfigurationTypeDef:
+    return {
+        "DatabaseARN": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseARN`: `str`
-
-<a id="gluedatacatalogconfigurationupdatetypedef"></a>
+```python title="Definition"
+class GlueDataCatalogConfigurationTypeDef(TypedDict):
+    DatabaseARN: str,
+```
 
 ## GlueDataCatalogConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import GlueDataCatalogConfigurationUpdateTypeDef
+
+def get_value() -> GlueDataCatalogConfigurationUpdateTypeDef:
+    return {
+        "DatabaseARNUpdate": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseARNUpdate`: `str`
-
-<a id="inputdescriptiontypedef"></a>
+```python title="Definition"
+class GlueDataCatalogConfigurationUpdateTypeDef(TypedDict):
+    DatabaseARNUpdate: str,
+```
 
 ## InputDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputDescriptionTypeDef
+
+def get_value() -> InputDescriptionTypeDef:
+    return {
+        "InputId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputDescriptionTypeDef(TypedDict):
+    InputId: NotRequired[str],
+    NamePrefix: NotRequired[str],
+    InAppStreamNames: NotRequired[List[str]],
+    InputProcessingConfigurationDescription: NotRequired[InputProcessingConfigurationDescriptionTypeDef],  # (1)
+    KinesisStreamsInputDescription: NotRequired[KinesisStreamsInputDescriptionTypeDef],  # (2)
+    KinesisFirehoseInputDescription: NotRequired[KinesisFirehoseInputDescriptionTypeDef],  # (3)
+    InputSchema: NotRequired[SourceSchemaTypeDef],  # (4)
+    InputParallelism: NotRequired[InputParallelismTypeDef],  # (5)
+    InputStartingPositionConfiguration: NotRequired[InputStartingPositionConfigurationTypeDef],  # (6)
+```
 
-- `InputId`: `str`
-- `NamePrefix`: `str`
-- `InAppStreamNames`: `List`\[`str`\]
-- `InputProcessingConfigurationDescription`:
-  [InputProcessingConfigurationDescriptionTypeDef](./type_defs.md#inputprocessingconfigurationdescriptiontypedef)
-- `KinesisStreamsInputDescription`:
-  [KinesisStreamsInputDescriptionTypeDef](./type_defs.md#kinesisstreamsinputdescriptiontypedef)
-- `KinesisFirehoseInputDescription`:
-  [KinesisFirehoseInputDescriptionTypeDef](./type_defs.md#kinesisfirehoseinputdescriptiontypedef)
-- `InputSchema`: [SourceSchemaTypeDef](./type_defs.md#sourceschematypedef)
-- `InputParallelism`:
-  [InputParallelismTypeDef](./type_defs.md#inputparallelismtypedef)
-- `InputStartingPositionConfiguration`:
-  [InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef)
-
-<a id="inputlambdaprocessordescriptiontypedef"></a>
-
+1. See [:material-code-braces: InputProcessingConfigurationDescriptionTypeDef](./type_defs.md#inputprocessingconfigurationdescriptiontypedef) 
+2. See [:material-code-braces: KinesisStreamsInputDescriptionTypeDef](./type_defs.md#kinesisstreamsinputdescriptiontypedef) 
+3. See [:material-code-braces: KinesisFirehoseInputDescriptionTypeDef](./type_defs.md#kinesisfirehoseinputdescriptiontypedef) 
+4. See [:material-code-braces: SourceSchemaTypeDef](./type_defs.md#sourceschematypedef) 
+5. See [:material-code-braces: InputParallelismTypeDef](./type_defs.md#inputparallelismtypedef) 
+6. See [:material-code-braces: InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef) 
 ## InputLambdaProcessorDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputLambdaProcessorDescriptionTypeDef
+
+def get_value() -> InputLambdaProcessorDescriptionTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-
-<a id="inputlambdaprocessortypedef"></a>
+```python title="Definition"
+class InputLambdaProcessorDescriptionTypeDef(TypedDict):
+    ResourceARN: str,
+    RoleARN: NotRequired[str],
+```
 
 ## InputLambdaProcessorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputLambdaProcessorTypeDef
+
+def get_value() -> InputLambdaProcessorTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="inputlambdaprocessorupdatetypedef"></a>
+```python title="Definition"
+class InputLambdaProcessorTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## InputLambdaProcessorUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputLambdaProcessorUpdateTypeDef
+
+def get_value() -> InputLambdaProcessorUpdateTypeDef:
+    return {
+        "ResourceARNUpdate": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARNUpdate`: `str`
-
-<a id="inputparallelismtypedef"></a>
+```python title="Definition"
+class InputLambdaProcessorUpdateTypeDef(TypedDict):
+    ResourceARNUpdate: str,
+```
 
 ## InputParallelismTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputParallelismTypeDef
+
+def get_value() -> InputParallelismTypeDef:
+    return {
+        "Count": ...,
+    }
 ```
 
-Optional fields:
-
-- `Count`: `int`
-
-<a id="inputparallelismupdatetypedef"></a>
+```python title="Definition"
+class InputParallelismTypeDef(TypedDict):
+    Count: NotRequired[int],
+```
 
 ## InputParallelismUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputParallelismUpdateTypeDef
+
+def get_value() -> InputParallelismUpdateTypeDef:
+    return {
+        "CountUpdate": ...,
+    }
 ```
 
-Required fields:
-
-- `CountUpdate`: `int`
-
-<a id="inputprocessingconfigurationdescriptiontypedef"></a>
+```python title="Definition"
+class InputParallelismUpdateTypeDef(TypedDict):
+    CountUpdate: int,
+```
 
 ## InputProcessingConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputProcessingConfigurationDescriptionTypeDef
+
+def get_value() -> InputProcessingConfigurationDescriptionTypeDef:
+    return {
+        "InputLambdaProcessorDescription": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputProcessingConfigurationDescriptionTypeDef(TypedDict):
+    InputLambdaProcessorDescription: NotRequired[InputLambdaProcessorDescriptionTypeDef],  # (1)
+```
 
-- `InputLambdaProcessorDescription`:
-  [InputLambdaProcessorDescriptionTypeDef](./type_defs.md#inputlambdaprocessordescriptiontypedef)
-
-<a id="inputprocessingconfigurationtypedef"></a>
-
+1. See [:material-code-braces: InputLambdaProcessorDescriptionTypeDef](./type_defs.md#inputlambdaprocessordescriptiontypedef) 
 ## InputProcessingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputProcessingConfigurationTypeDef
+
+def get_value() -> InputProcessingConfigurationTypeDef:
+    return {
+        "InputLambdaProcessor": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InputProcessingConfigurationTypeDef(TypedDict):
+    InputLambdaProcessor: InputLambdaProcessorTypeDef,  # (1)
+```
 
-- `InputLambdaProcessor`:
-  [InputLambdaProcessorTypeDef](./type_defs.md#inputlambdaprocessortypedef)
-
-<a id="inputprocessingconfigurationupdatetypedef"></a>
-
+1. See [:material-code-braces: InputLambdaProcessorTypeDef](./type_defs.md#inputlambdaprocessortypedef) 
 ## InputProcessingConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputProcessingConfigurationUpdateTypeDef
+
+def get_value() -> InputProcessingConfigurationUpdateTypeDef:
+    return {
+        "InputLambdaProcessorUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InputProcessingConfigurationUpdateTypeDef(TypedDict):
+    InputLambdaProcessorUpdate: InputLambdaProcessorUpdateTypeDef,  # (1)
+```
 
-- `InputLambdaProcessorUpdate`:
-  [InputLambdaProcessorUpdateTypeDef](./type_defs.md#inputlambdaprocessorupdatetypedef)
-
-<a id="inputschemaupdatetypedef"></a>
-
+1. See [:material-code-braces: InputLambdaProcessorUpdateTypeDef](./type_defs.md#inputlambdaprocessorupdatetypedef) 
 ## InputSchemaUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputSchemaUpdateTypeDef
+
+def get_value() -> InputSchemaUpdateTypeDef:
+    return {
+        "RecordFormatUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputSchemaUpdateTypeDef(TypedDict):
+    RecordFormatUpdate: NotRequired[RecordFormatTypeDef],  # (1)
+    RecordEncodingUpdate: NotRequired[str],
+    RecordColumnUpdates: NotRequired[Sequence[RecordColumnTypeDef]],  # (2)
+```
 
-- `RecordFormatUpdate`:
-  [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
-- `RecordEncodingUpdate`: `str`
-- `RecordColumnUpdates`:
-  `Sequence`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
-
-<a id="inputstartingpositionconfigurationtypedef"></a>
-
+1. See [:material-code-braces: RecordFormatTypeDef](./type_defs.md#recordformattypedef) 
+2. See [:material-code-braces: RecordColumnTypeDef](./type_defs.md#recordcolumntypedef) 
 ## InputStartingPositionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputStartingPositionConfigurationTypeDef
+
+def get_value() -> InputStartingPositionConfigurationTypeDef:
+    return {
+        "InputStartingPosition": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputStartingPositionConfigurationTypeDef(TypedDict):
+    InputStartingPosition: NotRequired[InputStartingPositionType],  # (1)
+```
 
-- `InputStartingPosition`:
-  [InputStartingPositionType](./literals.md#inputstartingpositiontype)
-
-<a id="inputtypedef"></a>
-
+1. See [:material-code-brackets: InputStartingPositionType](./literals.md#inputstartingpositiontype) 
 ## InputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputTypeDef
+
+def get_value() -> InputTypeDef:
+    return {
+        "NamePrefix": ...,
+        "InputSchema": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InputTypeDef(TypedDict):
+    NamePrefix: str,
+    InputSchema: SourceSchemaTypeDef,  # (5)
+    InputProcessingConfiguration: NotRequired[InputProcessingConfigurationTypeDef],  # (1)
+    KinesisStreamsInput: NotRequired[KinesisStreamsInputTypeDef],  # (2)
+    KinesisFirehoseInput: NotRequired[KinesisFirehoseInputTypeDef],  # (3)
+    InputParallelism: NotRequired[InputParallelismTypeDef],  # (4)
+```
 
-- `NamePrefix`: `str`
-- `InputSchema`: [SourceSchemaTypeDef](./type_defs.md#sourceschematypedef)
-
-Optional fields:
-
-- `InputProcessingConfiguration`:
-  [InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef)
-- `KinesisStreamsInput`:
-  [KinesisStreamsInputTypeDef](./type_defs.md#kinesisstreamsinputtypedef)
-- `KinesisFirehoseInput`:
-  [KinesisFirehoseInputTypeDef](./type_defs.md#kinesisfirehoseinputtypedef)
-- `InputParallelism`:
-  [InputParallelismTypeDef](./type_defs.md#inputparallelismtypedef)
-
-<a id="inputupdatetypedef"></a>
-
+1. See [:material-code-braces: InputProcessingConfigurationTypeDef](./type_defs.md#inputprocessingconfigurationtypedef) 
+2. See [:material-code-braces: KinesisStreamsInputTypeDef](./type_defs.md#kinesisstreamsinputtypedef) 
+3. See [:material-code-braces: KinesisFirehoseInputTypeDef](./type_defs.md#kinesisfirehoseinputtypedef) 
+4. See [:material-code-braces: InputParallelismTypeDef](./type_defs.md#inputparallelismtypedef) 
+5. See [:material-code-braces: SourceSchemaTypeDef](./type_defs.md#sourceschematypedef) 
 ## InputUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import InputUpdateTypeDef
+
+def get_value() -> InputUpdateTypeDef:
+    return {
+        "InputId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InputUpdateTypeDef(TypedDict):
+    InputId: str,
+    NamePrefixUpdate: NotRequired[str],
+    InputProcessingConfigurationUpdate: NotRequired[InputProcessingConfigurationUpdateTypeDef],  # (1)
+    KinesisStreamsInputUpdate: NotRequired[KinesisStreamsInputUpdateTypeDef],  # (2)
+    KinesisFirehoseInputUpdate: NotRequired[KinesisFirehoseInputUpdateTypeDef],  # (3)
+    InputSchemaUpdate: NotRequired[InputSchemaUpdateTypeDef],  # (4)
+    InputParallelismUpdate: NotRequired[InputParallelismUpdateTypeDef],  # (5)
+```
 
-- `InputId`: `str`
-
-Optional fields:
-
-- `NamePrefixUpdate`: `str`
-- `InputProcessingConfigurationUpdate`:
-  [InputProcessingConfigurationUpdateTypeDef](./type_defs.md#inputprocessingconfigurationupdatetypedef)
-- `KinesisStreamsInputUpdate`:
-  [KinesisStreamsInputUpdateTypeDef](./type_defs.md#kinesisstreamsinputupdatetypedef)
-- `KinesisFirehoseInputUpdate`:
-  [KinesisFirehoseInputUpdateTypeDef](./type_defs.md#kinesisfirehoseinputupdatetypedef)
-- `InputSchemaUpdate`:
-  [InputSchemaUpdateTypeDef](./type_defs.md#inputschemaupdatetypedef)
-- `InputParallelismUpdate`:
-  [InputParallelismUpdateTypeDef](./type_defs.md#inputparallelismupdatetypedef)
-
-<a id="jsonmappingparameterstypedef"></a>
-
+1. See [:material-code-braces: InputProcessingConfigurationUpdateTypeDef](./type_defs.md#inputprocessingconfigurationupdatetypedef) 
+2. See [:material-code-braces: KinesisStreamsInputUpdateTypeDef](./type_defs.md#kinesisstreamsinputupdatetypedef) 
+3. See [:material-code-braces: KinesisFirehoseInputUpdateTypeDef](./type_defs.md#kinesisfirehoseinputupdatetypedef) 
+4. See [:material-code-braces: InputSchemaUpdateTypeDef](./type_defs.md#inputschemaupdatetypedef) 
+5. See [:material-code-braces: InputParallelismUpdateTypeDef](./type_defs.md#inputparallelismupdatetypedef) 
 ## JSONMappingParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import JSONMappingParametersTypeDef
+
+def get_value() -> JSONMappingParametersTypeDef:
+    return {
+        "RecordRowPath": ...,
+    }
 ```
 
-Required fields:
-
-- `RecordRowPath`: `str`
-
-<a id="kinesisfirehoseinputdescriptiontypedef"></a>
+```python title="Definition"
+class JSONMappingParametersTypeDef(TypedDict):
+    RecordRowPath: str,
+```
 
 ## KinesisFirehoseInputDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseInputDescriptionTypeDef
+
+def get_value() -> KinesisFirehoseInputDescriptionTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-
-<a id="kinesisfirehoseinputtypedef"></a>
+```python title="Definition"
+class KinesisFirehoseInputDescriptionTypeDef(TypedDict):
+    ResourceARN: str,
+    RoleARN: NotRequired[str],
+```
 
 ## KinesisFirehoseInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseInputTypeDef
+
+def get_value() -> KinesisFirehoseInputTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="kinesisfirehoseinputupdatetypedef"></a>
+```python title="Definition"
+class KinesisFirehoseInputTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## KinesisFirehoseInputUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseInputUpdateTypeDef
+
+def get_value() -> KinesisFirehoseInputUpdateTypeDef:
+    return {
+        "ResourceARNUpdate": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARNUpdate`: `str`
-
-<a id="kinesisfirehoseoutputdescriptiontypedef"></a>
+```python title="Definition"
+class KinesisFirehoseInputUpdateTypeDef(TypedDict):
+    ResourceARNUpdate: str,
+```
 
 ## KinesisFirehoseOutputDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseOutputDescriptionTypeDef
+
+def get_value() -> KinesisFirehoseOutputDescriptionTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-
-<a id="kinesisfirehoseoutputtypedef"></a>
+```python title="Definition"
+class KinesisFirehoseOutputDescriptionTypeDef(TypedDict):
+    ResourceARN: str,
+    RoleARN: NotRequired[str],
+```
 
 ## KinesisFirehoseOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseOutputTypeDef
+
+def get_value() -> KinesisFirehoseOutputTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="kinesisfirehoseoutputupdatetypedef"></a>
+```python title="Definition"
+class KinesisFirehoseOutputTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## KinesisFirehoseOutputUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisFirehoseOutputUpdateTypeDef
+
+def get_value() -> KinesisFirehoseOutputUpdateTypeDef:
+    return {
+        "ResourceARNUpdate": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARNUpdate`: `str`
-
-<a id="kinesisstreamsinputdescriptiontypedef"></a>
+```python title="Definition"
+class KinesisFirehoseOutputUpdateTypeDef(TypedDict):
+    ResourceARNUpdate: str,
+```
 
 ## KinesisStreamsInputDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsInputDescriptionTypeDef
+
+def get_value() -> KinesisStreamsInputDescriptionTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-
-<a id="kinesisstreamsinputtypedef"></a>
+```python title="Definition"
+class KinesisStreamsInputDescriptionTypeDef(TypedDict):
+    ResourceARN: str,
+    RoleARN: NotRequired[str],
+```
 
 ## KinesisStreamsInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsInputTypeDef
+
+def get_value() -> KinesisStreamsInputTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="kinesisstreamsinputupdatetypedef"></a>
+```python title="Definition"
+class KinesisStreamsInputTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## KinesisStreamsInputUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsInputUpdateTypeDef
+
+def get_value() -> KinesisStreamsInputUpdateTypeDef:
+    return {
+        "ResourceARNUpdate": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARNUpdate`: `str`
-
-<a id="kinesisstreamsoutputdescriptiontypedef"></a>
+```python title="Definition"
+class KinesisStreamsInputUpdateTypeDef(TypedDict):
+    ResourceARNUpdate: str,
+```
 
 ## KinesisStreamsOutputDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsOutputDescriptionTypeDef
+
+def get_value() -> KinesisStreamsOutputDescriptionTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-
-<a id="kinesisstreamsoutputtypedef"></a>
+```python title="Definition"
+class KinesisStreamsOutputDescriptionTypeDef(TypedDict):
+    ResourceARN: str,
+    RoleARN: NotRequired[str],
+```
 
 ## KinesisStreamsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsOutputTypeDef
+
+def get_value() -> KinesisStreamsOutputTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="kinesisstreamsoutputupdatetypedef"></a>
+```python title="Definition"
+class KinesisStreamsOutputTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## KinesisStreamsOutputUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import KinesisStreamsOutputUpdateTypeDef
+
+def get_value() -> KinesisStreamsOutputUpdateTypeDef:
+    return {
+        "ResourceARNUpdate": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARNUpdate`: `str`
-
-<a id="lambdaoutputdescriptiontypedef"></a>
+```python title="Definition"
+class KinesisStreamsOutputUpdateTypeDef(TypedDict):
+    ResourceARNUpdate: str,
+```
 
 ## LambdaOutputDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import LambdaOutputDescriptionTypeDef
+
+def get_value() -> LambdaOutputDescriptionTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `RoleARN`: `str`
-
-<a id="lambdaoutputtypedef"></a>
+```python title="Definition"
+class LambdaOutputDescriptionTypeDef(TypedDict):
+    ResourceARN: str,
+    RoleARN: NotRequired[str],
+```
 
 ## LambdaOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import LambdaOutputTypeDef
+
+def get_value() -> LambdaOutputTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="lambdaoutputupdatetypedef"></a>
+```python title="Definition"
+class LambdaOutputTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## LambdaOutputUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import LambdaOutputUpdateTypeDef
+
+def get_value() -> LambdaOutputUpdateTypeDef:
+    return {
+        "ResourceARNUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaOutputUpdateTypeDef(TypedDict):
+    ResourceARNUpdate: str,
+```
 
-- `ResourceARNUpdate`: `str`
+## ListApplicationSnapshotsRequestListApplicationSnapshotsPaginateTypeDef
 
-<a id="listapplicationsnapshotsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsRequestListApplicationSnapshotsPaginateTypeDef
 
+def get_value() -> ListApplicationSnapshotsRequestListApplicationSnapshotsPaginateTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationSnapshotsRequestListApplicationSnapshotsPaginateTypeDef(TypedDict):
+    ApplicationName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationSnapshotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsRequestRequestTypeDef
+
+def get_value() -> ListApplicationSnapshotsRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="listapplicationsnapshotsresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationSnapshotsRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListApplicationSnapshotsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsResponseTypeDef
+
+def get_value() -> ListApplicationSnapshotsResponseTypeDef:
+    return {
+        "SnapshotSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationSnapshotsResponseTypeDef(TypedDict):
+    SnapshotSummaries: List[SnapshotDetailsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SnapshotSummaries`:
-  `List`\[[SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listapplicationversionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListApplicationVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationVersionsRequestRequestTypeDef
+
+def get_value() -> ListApplicationVersionsRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="listapplicationversionsresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationVersionsRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListApplicationVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationVersionsResponseTypeDef
+
+def get_value() -> ListApplicationVersionsResponseTypeDef:
+    return {
+        "ApplicationVersionSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationVersionsResponseTypeDef(TypedDict):
+    ApplicationVersionSummaries: List[ApplicationVersionSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationVersionSummaries`:
-  `List`\[[ApplicationVersionSummaryTypeDef](./type_defs.md#applicationversionsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ApplicationVersionSummaryTypeDef](./type_defs.md#applicationversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationsRequestListApplicationsPaginateTypeDef
 
-<a id="listapplicationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationsRequestListApplicationsPaginateTypeDef
 
+def get_value() -> ListApplicationsRequestListApplicationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsRequestListApplicationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationsRequestRequestTypeDef
+
+def get_value() -> ListApplicationsRequestRequestTypeDef:
+    return {
+        "Limit": ...,
+    }
 ```
 
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="listapplicationsresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationsRequestRequestTypeDef(TypedDict):
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListApplicationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationsResponseTypeDef
+
+def get_value() -> ListApplicationsResponseTypeDef:
+    return {
+        "ApplicationSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationsResponseTypeDef(TypedDict):
+    ApplicationSummaries: List[ApplicationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationSummaries`:
-  `List`\[[ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mappingparameterstypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MappingParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import MappingParametersTypeDef
+
+def get_value() -> MappingParametersTypeDef:
+    return {
+        "JSONMappingParameters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MappingParametersTypeDef(TypedDict):
+    JSONMappingParameters: NotRequired[JSONMappingParametersTypeDef],  # (1)
+    CSVMappingParameters: NotRequired[CSVMappingParametersTypeDef],  # (2)
+```
 
-- `JSONMappingParameters`:
-  [JSONMappingParametersTypeDef](./type_defs.md#jsonmappingparameterstypedef)
-- `CSVMappingParameters`:
-  [CSVMappingParametersTypeDef](./type_defs.md#csvmappingparameterstypedef)
-
-<a id="mavenreferencetypedef"></a>
-
+1. See [:material-code-braces: JSONMappingParametersTypeDef](./type_defs.md#jsonmappingparameterstypedef) 
+2. See [:material-code-braces: CSVMappingParametersTypeDef](./type_defs.md#csvmappingparameterstypedef) 
 ## MavenReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import MavenReferenceTypeDef
+
+def get_value() -> MavenReferenceTypeDef:
+    return {
+        "GroupId": ...,
+        "ArtifactId": ...,
+        "Version": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupId`: `str`
-- `ArtifactId`: `str`
-- `Version`: `str`
-
-<a id="monitoringconfigurationdescriptiontypedef"></a>
+```python title="Definition"
+class MavenReferenceTypeDef(TypedDict):
+    GroupId: str,
+    ArtifactId: str,
+    Version: str,
+```
 
 ## MonitoringConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import MonitoringConfigurationDescriptionTypeDef
+
+def get_value() -> MonitoringConfigurationDescriptionTypeDef:
+    return {
+        "ConfigurationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MonitoringConfigurationDescriptionTypeDef(TypedDict):
+    ConfigurationType: NotRequired[ConfigurationTypeType],  # (1)
+    MetricsLevel: NotRequired[MetricsLevelType],  # (2)
+    LogLevel: NotRequired[LogLevelType],  # (3)
+```
 
-- `ConfigurationType`:
-  [ConfigurationTypeType](./literals.md#configurationtypetype)
-- `MetricsLevel`: [MetricsLevelType](./literals.md#metricsleveltype)
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-<a id="monitoringconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationTypeType](./literals.md#configurationtypetype) 
+2. See [:material-code-brackets: MetricsLevelType](./literals.md#metricsleveltype) 
+3. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## MonitoringConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import MonitoringConfigurationTypeDef
+
+def get_value() -> MonitoringConfigurationTypeDef:
+    return {
+        "ConfigurationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MonitoringConfigurationTypeDef(TypedDict):
+    ConfigurationType: ConfigurationTypeType,  # (1)
+    MetricsLevel: NotRequired[MetricsLevelType],  # (2)
+    LogLevel: NotRequired[LogLevelType],  # (3)
+```
 
-- `ConfigurationType`:
-  [ConfigurationTypeType](./literals.md#configurationtypetype)
-
-Optional fields:
-
-- `MetricsLevel`: [MetricsLevelType](./literals.md#metricsleveltype)
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-<a id="monitoringconfigurationupdatetypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationTypeType](./literals.md#configurationtypetype) 
+2. See [:material-code-brackets: MetricsLevelType](./literals.md#metricsleveltype) 
+3. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## MonitoringConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import MonitoringConfigurationUpdateTypeDef
+
+def get_value() -> MonitoringConfigurationUpdateTypeDef:
+    return {
+        "ConfigurationTypeUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MonitoringConfigurationUpdateTypeDef(TypedDict):
+    ConfigurationTypeUpdate: NotRequired[ConfigurationTypeType],  # (1)
+    MetricsLevelUpdate: NotRequired[MetricsLevelType],  # (2)
+    LogLevelUpdate: NotRequired[LogLevelType],  # (3)
+```
 
-- `ConfigurationTypeUpdate`:
-  [ConfigurationTypeType](./literals.md#configurationtypetype)
-- `MetricsLevelUpdate`: [MetricsLevelType](./literals.md#metricsleveltype)
-- `LogLevelUpdate`: [LogLevelType](./literals.md#logleveltype)
-
-<a id="outputdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationTypeType](./literals.md#configurationtypetype) 
+2. See [:material-code-brackets: MetricsLevelType](./literals.md#metricsleveltype) 
+3. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## OutputDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import OutputDescriptionTypeDef
+
+def get_value() -> OutputDescriptionTypeDef:
+    return {
+        "OutputId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputDescriptionTypeDef(TypedDict):
+    OutputId: NotRequired[str],
+    Name: NotRequired[str],
+    KinesisStreamsOutputDescription: NotRequired[KinesisStreamsOutputDescriptionTypeDef],  # (1)
+    KinesisFirehoseOutputDescription: NotRequired[KinesisFirehoseOutputDescriptionTypeDef],  # (2)
+    LambdaOutputDescription: NotRequired[LambdaOutputDescriptionTypeDef],  # (3)
+    DestinationSchema: NotRequired[DestinationSchemaTypeDef],  # (4)
+```
 
-- `OutputId`: `str`
-- `Name`: `str`
-- `KinesisStreamsOutputDescription`:
-  [KinesisStreamsOutputDescriptionTypeDef](./type_defs.md#kinesisstreamsoutputdescriptiontypedef)
-- `KinesisFirehoseOutputDescription`:
-  [KinesisFirehoseOutputDescriptionTypeDef](./type_defs.md#kinesisfirehoseoutputdescriptiontypedef)
-- `LambdaOutputDescription`:
-  [LambdaOutputDescriptionTypeDef](./type_defs.md#lambdaoutputdescriptiontypedef)
-- `DestinationSchema`:
-  [DestinationSchemaTypeDef](./type_defs.md#destinationschematypedef)
-
-<a id="outputtypedef"></a>
-
+1. See [:material-code-braces: KinesisStreamsOutputDescriptionTypeDef](./type_defs.md#kinesisstreamsoutputdescriptiontypedef) 
+2. See [:material-code-braces: KinesisFirehoseOutputDescriptionTypeDef](./type_defs.md#kinesisfirehoseoutputdescriptiontypedef) 
+3. See [:material-code-braces: LambdaOutputDescriptionTypeDef](./type_defs.md#lambdaoutputdescriptiontypedef) 
+4. See [:material-code-braces: DestinationSchemaTypeDef](./type_defs.md#destinationschematypedef) 
 ## OutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import OutputTypeDef
+
+def get_value() -> OutputTypeDef:
+    return {
+        "Name": ...,
+        "DestinationSchema": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OutputTypeDef(TypedDict):
+    Name: str,
+    DestinationSchema: DestinationSchemaTypeDef,  # (4)
+    KinesisStreamsOutput: NotRequired[KinesisStreamsOutputTypeDef],  # (1)
+    KinesisFirehoseOutput: NotRequired[KinesisFirehoseOutputTypeDef],  # (2)
+    LambdaOutput: NotRequired[LambdaOutputTypeDef],  # (3)
+```
 
-- `Name`: `str`
-- `DestinationSchema`:
-  [DestinationSchemaTypeDef](./type_defs.md#destinationschematypedef)
-
-Optional fields:
-
-- `KinesisStreamsOutput`:
-  [KinesisStreamsOutputTypeDef](./type_defs.md#kinesisstreamsoutputtypedef)
-- `KinesisFirehoseOutput`:
-  [KinesisFirehoseOutputTypeDef](./type_defs.md#kinesisfirehoseoutputtypedef)
-- `LambdaOutput`: [LambdaOutputTypeDef](./type_defs.md#lambdaoutputtypedef)
-
-<a id="outputupdatetypedef"></a>
-
+1. See [:material-code-braces: KinesisStreamsOutputTypeDef](./type_defs.md#kinesisstreamsoutputtypedef) 
+2. See [:material-code-braces: KinesisFirehoseOutputTypeDef](./type_defs.md#kinesisfirehoseoutputtypedef) 
+3. See [:material-code-braces: LambdaOutputTypeDef](./type_defs.md#lambdaoutputtypedef) 
+4. See [:material-code-braces: DestinationSchemaTypeDef](./type_defs.md#destinationschematypedef) 
 ## OutputUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import OutputUpdateTypeDef
+
+def get_value() -> OutputUpdateTypeDef:
+    return {
+        "OutputId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OutputUpdateTypeDef(TypedDict):
+    OutputId: str,
+    NameUpdate: NotRequired[str],
+    KinesisStreamsOutputUpdate: NotRequired[KinesisStreamsOutputUpdateTypeDef],  # (1)
+    KinesisFirehoseOutputUpdate: NotRequired[KinesisFirehoseOutputUpdateTypeDef],  # (2)
+    LambdaOutputUpdate: NotRequired[LambdaOutputUpdateTypeDef],  # (3)
+    DestinationSchemaUpdate: NotRequired[DestinationSchemaTypeDef],  # (4)
+```
 
-- `OutputId`: `str`
-
-Optional fields:
-
-- `NameUpdate`: `str`
-- `KinesisStreamsOutputUpdate`:
-  [KinesisStreamsOutputUpdateTypeDef](./type_defs.md#kinesisstreamsoutputupdatetypedef)
-- `KinesisFirehoseOutputUpdate`:
-  [KinesisFirehoseOutputUpdateTypeDef](./type_defs.md#kinesisfirehoseoutputupdatetypedef)
-- `LambdaOutputUpdate`:
-  [LambdaOutputUpdateTypeDef](./type_defs.md#lambdaoutputupdatetypedef)
-- `DestinationSchemaUpdate`:
-  [DestinationSchemaTypeDef](./type_defs.md#destinationschematypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: KinesisStreamsOutputUpdateTypeDef](./type_defs.md#kinesisstreamsoutputupdatetypedef) 
+2. See [:material-code-braces: KinesisFirehoseOutputUpdateTypeDef](./type_defs.md#kinesisfirehoseoutputupdatetypedef) 
+3. See [:material-code-braces: LambdaOutputUpdateTypeDef](./type_defs.md#lambdaoutputupdatetypedef) 
+4. See [:material-code-braces: DestinationSchemaTypeDef](./type_defs.md#destinationschematypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parallelismconfigurationdescriptiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParallelismConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ParallelismConfigurationDescriptionTypeDef
+
+def get_value() -> ParallelismConfigurationDescriptionTypeDef:
+    return {
+        "ConfigurationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParallelismConfigurationDescriptionTypeDef(TypedDict):
+    ConfigurationType: NotRequired[ConfigurationTypeType],  # (1)
+    Parallelism: NotRequired[int],
+    ParallelismPerKPU: NotRequired[int],
+    CurrentParallelism: NotRequired[int],
+    AutoScalingEnabled: NotRequired[bool],
+```
 
-- `ConfigurationType`:
-  [ConfigurationTypeType](./literals.md#configurationtypetype)
-- `Parallelism`: `int`
-- `ParallelismPerKPU`: `int`
-- `CurrentParallelism`: `int`
-- `AutoScalingEnabled`: `bool`
-
-<a id="parallelismconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationTypeType](./literals.md#configurationtypetype) 
 ## ParallelismConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ParallelismConfigurationTypeDef
+
+def get_value() -> ParallelismConfigurationTypeDef:
+    return {
+        "ConfigurationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ParallelismConfigurationTypeDef(TypedDict):
+    ConfigurationType: ConfigurationTypeType,  # (1)
+    Parallelism: NotRequired[int],
+    ParallelismPerKPU: NotRequired[int],
+    AutoScalingEnabled: NotRequired[bool],
+```
 
-- `ConfigurationType`:
-  [ConfigurationTypeType](./literals.md#configurationtypetype)
-
-Optional fields:
-
-- `Parallelism`: `int`
-- `ParallelismPerKPU`: `int`
-- `AutoScalingEnabled`: `bool`
-
-<a id="parallelismconfigurationupdatetypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationTypeType](./literals.md#configurationtypetype) 
 ## ParallelismConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ParallelismConfigurationUpdateTypeDef
+
+def get_value() -> ParallelismConfigurationUpdateTypeDef:
+    return {
+        "ConfigurationTypeUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParallelismConfigurationUpdateTypeDef(TypedDict):
+    ConfigurationTypeUpdate: NotRequired[ConfigurationTypeType],  # (1)
+    ParallelismUpdate: NotRequired[int],
+    ParallelismPerKPUUpdate: NotRequired[int],
+    AutoScalingEnabledUpdate: NotRequired[bool],
+```
 
-- `ConfigurationTypeUpdate`:
-  [ConfigurationTypeType](./literals.md#configurationtypetype)
-- `ParallelismUpdate`: `int`
-- `ParallelismPerKPUUpdate`: `int`
-- `AutoScalingEnabledUpdate`: `bool`
-
-<a id="propertygrouptypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationTypeType](./literals.md#configurationtypetype) 
 ## PropertyGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import PropertyGroupTypeDef
+
+def get_value() -> PropertyGroupTypeDef:
+    return {
+        "PropertyGroupId": ...,
+        "PropertyMap": ...,
+    }
 ```
 
-Required fields:
-
-- `PropertyGroupId`: `str`
-- `PropertyMap`: `Mapping`\[`str`, `str`\]
-
-<a id="recordcolumntypedef"></a>
+```python title="Definition"
+class PropertyGroupTypeDef(TypedDict):
+    PropertyGroupId: str,
+    PropertyMap: Mapping[str, str],
+```
 
 ## RecordColumnTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import RecordColumnTypeDef
+
+def get_value() -> RecordColumnTypeDef:
+    return {
+        "Name": ...,
+        "SqlType": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `SqlType`: `str`
-
-Optional fields:
-
-- `Mapping`: `str`
-
-<a id="recordformattypedef"></a>
+```python title="Definition"
+class RecordColumnTypeDef(TypedDict):
+    Name: str,
+    SqlType: str,
+    Mapping: NotRequired[str],
+```
 
 ## RecordFormatTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import RecordFormatTypeDef
+
+def get_value() -> RecordFormatTypeDef:
+    return {
+        "RecordFormatType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecordFormatTypeDef(TypedDict):
+    RecordFormatType: RecordFormatTypeType,  # (1)
+    MappingParameters: NotRequired[MappingParametersTypeDef],  # (2)
+```
 
-- `RecordFormatType`:
-  [RecordFormatTypeType](./literals.md#recordformattypetype)
-
-Optional fields:
-
-- `MappingParameters`:
-  [MappingParametersTypeDef](./type_defs.md#mappingparameterstypedef)
-
-<a id="referencedatasourcedescriptiontypedef"></a>
-
+1. See [:material-code-brackets: RecordFormatTypeType](./literals.md#recordformattypetype) 
+2. See [:material-code-braces: MappingParametersTypeDef](./type_defs.md#mappingparameterstypedef) 
 ## ReferenceDataSourceDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ReferenceDataSourceDescriptionTypeDef
+
+def get_value() -> ReferenceDataSourceDescriptionTypeDef:
+    return {
+        "ReferenceId": ...,
+        "TableName": ...,
+        "S3ReferenceDataSourceDescription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReferenceDataSourceDescriptionTypeDef(TypedDict):
+    ReferenceId: str,
+    TableName: str,
+    S3ReferenceDataSourceDescription: S3ReferenceDataSourceDescriptionTypeDef,  # (1)
+    ReferenceSchema: NotRequired[SourceSchemaTypeDef],  # (2)
+```
 
-- `ReferenceId`: `str`
-- `TableName`: `str`
-- `S3ReferenceDataSourceDescription`:
-  [S3ReferenceDataSourceDescriptionTypeDef](./type_defs.md#s3referencedatasourcedescriptiontypedef)
-
-Optional fields:
-
-- `ReferenceSchema`: [SourceSchemaTypeDef](./type_defs.md#sourceschematypedef)
-
-<a id="referencedatasourcetypedef"></a>
-
+1. See [:material-code-braces: S3ReferenceDataSourceDescriptionTypeDef](./type_defs.md#s3referencedatasourcedescriptiontypedef) 
+2. See [:material-code-braces: SourceSchemaTypeDef](./type_defs.md#sourceschematypedef) 
 ## ReferenceDataSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ReferenceDataSourceTypeDef
+
+def get_value() -> ReferenceDataSourceTypeDef:
+    return {
+        "TableName": ...,
+        "ReferenceSchema": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReferenceDataSourceTypeDef(TypedDict):
+    TableName: str,
+    ReferenceSchema: SourceSchemaTypeDef,  # (2)
+    S3ReferenceDataSource: NotRequired[S3ReferenceDataSourceTypeDef],  # (1)
+```
 
-- `TableName`: `str`
-- `ReferenceSchema`: [SourceSchemaTypeDef](./type_defs.md#sourceschematypedef)
-
-Optional fields:
-
-- `S3ReferenceDataSource`:
-  [S3ReferenceDataSourceTypeDef](./type_defs.md#s3referencedatasourcetypedef)
-
-<a id="referencedatasourceupdatetypedef"></a>
-
+1. See [:material-code-braces: S3ReferenceDataSourceTypeDef](./type_defs.md#s3referencedatasourcetypedef) 
+2. See [:material-code-braces: SourceSchemaTypeDef](./type_defs.md#sourceschematypedef) 
 ## ReferenceDataSourceUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ReferenceDataSourceUpdateTypeDef
+
+def get_value() -> ReferenceDataSourceUpdateTypeDef:
+    return {
+        "ReferenceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReferenceDataSourceUpdateTypeDef(TypedDict):
+    ReferenceId: str,
+    TableNameUpdate: NotRequired[str],
+    S3ReferenceDataSourceUpdate: NotRequired[S3ReferenceDataSourceUpdateTypeDef],  # (1)
+    ReferenceSchemaUpdate: NotRequired[SourceSchemaTypeDef],  # (2)
+```
 
-- `ReferenceId`: `str`
-
-Optional fields:
-
-- `TableNameUpdate`: `str`
-- `S3ReferenceDataSourceUpdate`:
-  [S3ReferenceDataSourceUpdateTypeDef](./type_defs.md#s3referencedatasourceupdatetypedef)
-- `ReferenceSchemaUpdate`:
-  [SourceSchemaTypeDef](./type_defs.md#sourceschematypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: S3ReferenceDataSourceUpdateTypeDef](./type_defs.md#s3referencedatasourceupdatetypedef) 
+2. See [:material-code-braces: SourceSchemaTypeDef](./type_defs.md#sourceschematypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="rollbackapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RollbackApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import RollbackApplicationRequestRequestTypeDef
+
+def get_value() -> RollbackApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CurrentApplicationVersionId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `CurrentApplicationVersionId`: `int`
-
-<a id="rollbackapplicationresponsetypedef"></a>
+```python title="Definition"
+class RollbackApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CurrentApplicationVersionId: int,
+```
 
 ## RollbackApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import RollbackApplicationResponseTypeDef
+
+def get_value() -> RollbackApplicationResponseTypeDef:
+    return {
+        "ApplicationDetail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RollbackApplicationResponseTypeDef(TypedDict):
+    ApplicationDetail: ApplicationDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationDetail`:
-  [ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="runconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RunConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import RunConfigurationDescriptionTypeDef
+
+def get_value() -> RunConfigurationDescriptionTypeDef:
+    return {
+        "ApplicationRestoreConfigurationDescription": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RunConfigurationDescriptionTypeDef(TypedDict):
+    ApplicationRestoreConfigurationDescription: NotRequired[ApplicationRestoreConfigurationTypeDef],  # (1)
+    FlinkRunConfigurationDescription: NotRequired[FlinkRunConfigurationTypeDef],  # (2)
+```
 
-- `ApplicationRestoreConfigurationDescription`:
-  [ApplicationRestoreConfigurationTypeDef](./type_defs.md#applicationrestoreconfigurationtypedef)
-- `FlinkRunConfigurationDescription`:
-  [FlinkRunConfigurationTypeDef](./type_defs.md#flinkrunconfigurationtypedef)
-
-<a id="runconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ApplicationRestoreConfigurationTypeDef](./type_defs.md#applicationrestoreconfigurationtypedef) 
+2. See [:material-code-braces: FlinkRunConfigurationTypeDef](./type_defs.md#flinkrunconfigurationtypedef) 
 ## RunConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import RunConfigurationTypeDef
+
+def get_value() -> RunConfigurationTypeDef:
+    return {
+        "FlinkRunConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RunConfigurationTypeDef(TypedDict):
+    FlinkRunConfiguration: NotRequired[FlinkRunConfigurationTypeDef],  # (1)
+    SqlRunConfigurations: NotRequired[Sequence[SqlRunConfigurationTypeDef]],  # (2)
+    ApplicationRestoreConfiguration: NotRequired[ApplicationRestoreConfigurationTypeDef],  # (3)
+```
 
-- `FlinkRunConfiguration`:
-  [FlinkRunConfigurationTypeDef](./type_defs.md#flinkrunconfigurationtypedef)
-- `SqlRunConfigurations`:
-  `Sequence`\[[SqlRunConfigurationTypeDef](./type_defs.md#sqlrunconfigurationtypedef)\]
-- `ApplicationRestoreConfiguration`:
-  [ApplicationRestoreConfigurationTypeDef](./type_defs.md#applicationrestoreconfigurationtypedef)
-
-<a id="runconfigurationupdatetypedef"></a>
-
+1. See [:material-code-braces: FlinkRunConfigurationTypeDef](./type_defs.md#flinkrunconfigurationtypedef) 
+2. See [:material-code-braces: SqlRunConfigurationTypeDef](./type_defs.md#sqlrunconfigurationtypedef) 
+3. See [:material-code-braces: ApplicationRestoreConfigurationTypeDef](./type_defs.md#applicationrestoreconfigurationtypedef) 
 ## RunConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import RunConfigurationUpdateTypeDef
+
+def get_value() -> RunConfigurationUpdateTypeDef:
+    return {
+        "FlinkRunConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RunConfigurationUpdateTypeDef(TypedDict):
+    FlinkRunConfiguration: NotRequired[FlinkRunConfigurationTypeDef],  # (1)
+    ApplicationRestoreConfiguration: NotRequired[ApplicationRestoreConfigurationTypeDef],  # (2)
+```
 
-- `FlinkRunConfiguration`:
-  [FlinkRunConfigurationTypeDef](./type_defs.md#flinkrunconfigurationtypedef)
-- `ApplicationRestoreConfiguration`:
-  [ApplicationRestoreConfigurationTypeDef](./type_defs.md#applicationrestoreconfigurationtypedef)
-
-<a id="s3applicationcodelocationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: FlinkRunConfigurationTypeDef](./type_defs.md#flinkrunconfigurationtypedef) 
+2. See [:material-code-braces: ApplicationRestoreConfigurationTypeDef](./type_defs.md#applicationrestoreconfigurationtypedef) 
 ## S3ApplicationCodeLocationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ApplicationCodeLocationDescriptionTypeDef
+
+def get_value() -> S3ApplicationCodeLocationDescriptionTypeDef:
+    return {
+        "BucketARN": ...,
+        "FileKey": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketARN`: `str`
-- `FileKey`: `str`
-
-Optional fields:
-
-- `ObjectVersion`: `str`
-
-<a id="s3configurationtypedef"></a>
+```python title="Definition"
+class S3ApplicationCodeLocationDescriptionTypeDef(TypedDict):
+    BucketARN: str,
+    FileKey: str,
+    ObjectVersion: NotRequired[str],
+```
 
 ## S3ConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ConfigurationTypeDef
+
+def get_value() -> S3ConfigurationTypeDef:
+    return {
+        "BucketARN": ...,
+        "FileKey": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketARN`: `str`
-- `FileKey`: `str`
-
-<a id="s3contentbaselocationdescriptiontypedef"></a>
+```python title="Definition"
+class S3ConfigurationTypeDef(TypedDict):
+    BucketARN: str,
+    FileKey: str,
+```
 
 ## S3ContentBaseLocationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentBaseLocationDescriptionTypeDef
+
+def get_value() -> S3ContentBaseLocationDescriptionTypeDef:
+    return {
+        "BucketARN": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketARN`: `str`
-
-Optional fields:
-
-- `BasePath`: `str`
-
-<a id="s3contentbaselocationtypedef"></a>
+```python title="Definition"
+class S3ContentBaseLocationDescriptionTypeDef(TypedDict):
+    BucketARN: str,
+    BasePath: NotRequired[str],
+```
 
 ## S3ContentBaseLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentBaseLocationTypeDef
+
+def get_value() -> S3ContentBaseLocationTypeDef:
+    return {
+        "BucketARN": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketARN`: `str`
-
-Optional fields:
-
-- `BasePath`: `str`
-
-<a id="s3contentbaselocationupdatetypedef"></a>
+```python title="Definition"
+class S3ContentBaseLocationTypeDef(TypedDict):
+    BucketARN: str,
+    BasePath: NotRequired[str],
+```
 
 ## S3ContentBaseLocationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentBaseLocationUpdateTypeDef
+
+def get_value() -> S3ContentBaseLocationUpdateTypeDef:
+    return {
+        "BucketARNUpdate": ...,
+    }
 ```
 
-Optional fields:
-
-- `BucketARNUpdate`: `str`
-- `BasePathUpdate`: `str`
-
-<a id="s3contentlocationtypedef"></a>
+```python title="Definition"
+class S3ContentBaseLocationUpdateTypeDef(TypedDict):
+    BucketARNUpdate: NotRequired[str],
+    BasePathUpdate: NotRequired[str],
+```
 
 ## S3ContentLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentLocationTypeDef
+
+def get_value() -> S3ContentLocationTypeDef:
+    return {
+        "BucketARN": ...,
+        "FileKey": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketARN`: `str`
-- `FileKey`: `str`
-
-Optional fields:
-
-- `ObjectVersion`: `str`
-
-<a id="s3contentlocationupdatetypedef"></a>
+```python title="Definition"
+class S3ContentLocationTypeDef(TypedDict):
+    BucketARN: str,
+    FileKey: str,
+    ObjectVersion: NotRequired[str],
+```
 
 ## S3ContentLocationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ContentLocationUpdateTypeDef
+
+def get_value() -> S3ContentLocationUpdateTypeDef:
+    return {
+        "BucketARNUpdate": ...,
+    }
 ```
 
-Optional fields:
-
-- `BucketARNUpdate`: `str`
-- `FileKeyUpdate`: `str`
-- `ObjectVersionUpdate`: `str`
-
-<a id="s3referencedatasourcedescriptiontypedef"></a>
+```python title="Definition"
+class S3ContentLocationUpdateTypeDef(TypedDict):
+    BucketARNUpdate: NotRequired[str],
+    FileKeyUpdate: NotRequired[str],
+    ObjectVersionUpdate: NotRequired[str],
+```
 
 ## S3ReferenceDataSourceDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ReferenceDataSourceDescriptionTypeDef
+
+def get_value() -> S3ReferenceDataSourceDescriptionTypeDef:
+    return {
+        "BucketARN": ...,
+        "FileKey": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketARN`: `str`
-- `FileKey`: `str`
-
-Optional fields:
-
-- `ReferenceRoleARN`: `str`
-
-<a id="s3referencedatasourcetypedef"></a>
+```python title="Definition"
+class S3ReferenceDataSourceDescriptionTypeDef(TypedDict):
+    BucketARN: str,
+    FileKey: str,
+    ReferenceRoleARN: NotRequired[str],
+```
 
 ## S3ReferenceDataSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ReferenceDataSourceTypeDef
+
+def get_value() -> S3ReferenceDataSourceTypeDef:
+    return {
+        "BucketARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `BucketARN`: `str`
-- `FileKey`: `str`
-
-<a id="s3referencedatasourceupdatetypedef"></a>
+```python title="Definition"
+class S3ReferenceDataSourceTypeDef(TypedDict):
+    BucketARN: NotRequired[str],
+    FileKey: NotRequired[str],
+```
 
 ## S3ReferenceDataSourceUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import S3ReferenceDataSourceUpdateTypeDef
+
+def get_value() -> S3ReferenceDataSourceUpdateTypeDef:
+    return {
+        "BucketARNUpdate": ...,
+    }
 ```
 
-Optional fields:
-
-- `BucketARNUpdate`: `str`
-- `FileKeyUpdate`: `str`
-
-<a id="snapshotdetailstypedef"></a>
+```python title="Definition"
+class S3ReferenceDataSourceUpdateTypeDef(TypedDict):
+    BucketARNUpdate: NotRequired[str],
+    FileKeyUpdate: NotRequired[str],
+```
 
 ## SnapshotDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import SnapshotDetailsTypeDef
+
+def get_value() -> SnapshotDetailsTypeDef:
+    return {
+        "SnapshotName": ...,
+        "SnapshotStatus": ...,
+        "ApplicationVersionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SnapshotDetailsTypeDef(TypedDict):
+    SnapshotName: str,
+    SnapshotStatus: SnapshotStatusType,  # (1)
+    ApplicationVersionId: int,
+    SnapshotCreationTimestamp: NotRequired[datetime],
+```
 
-- `SnapshotName`: `str`
-- `SnapshotStatus`: [SnapshotStatusType](./literals.md#snapshotstatustype)
-- `ApplicationVersionId`: `int`
-
-Optional fields:
-
-- `SnapshotCreationTimestamp`: `datetime`
-
-<a id="sourceschematypedef"></a>
-
+1. See [:material-code-brackets: SnapshotStatusType](./literals.md#snapshotstatustype) 
 ## SourceSchemaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import SourceSchemaTypeDef
+
+def get_value() -> SourceSchemaTypeDef:
+    return {
+        "RecordFormat": ...,
+        "RecordColumns": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceSchemaTypeDef(TypedDict):
+    RecordFormat: RecordFormatTypeDef,  # (1)
+    RecordColumns: Sequence[RecordColumnTypeDef],  # (2)
+    RecordEncoding: NotRequired[str],
+```
 
-- `RecordFormat`: [RecordFormatTypeDef](./type_defs.md#recordformattypedef)
-- `RecordColumns`:
-  `Sequence`\[[RecordColumnTypeDef](./type_defs.md#recordcolumntypedef)\]
-
-Optional fields:
-
-- `RecordEncoding`: `str`
-
-<a id="sqlapplicationconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: RecordFormatTypeDef](./type_defs.md#recordformattypedef) 
+2. See [:material-code-braces: RecordColumnTypeDef](./type_defs.md#recordcolumntypedef) 
 ## SqlApplicationConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import SqlApplicationConfigurationDescriptionTypeDef
+
+def get_value() -> SqlApplicationConfigurationDescriptionTypeDef:
+    return {
+        "InputDescriptions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SqlApplicationConfigurationDescriptionTypeDef(TypedDict):
+    InputDescriptions: NotRequired[List[InputDescriptionTypeDef]],  # (1)
+    OutputDescriptions: NotRequired[List[OutputDescriptionTypeDef]],  # (2)
+    ReferenceDataSourceDescriptions: NotRequired[List[ReferenceDataSourceDescriptionTypeDef]],  # (3)
+```
 
-- `InputDescriptions`:
-  `List`\[[InputDescriptionTypeDef](./type_defs.md#inputdescriptiontypedef)\]
-- `OutputDescriptions`:
-  `List`\[[OutputDescriptionTypeDef](./type_defs.md#outputdescriptiontypedef)\]
-- `ReferenceDataSourceDescriptions`:
-  `List`\[[ReferenceDataSourceDescriptionTypeDef](./type_defs.md#referencedatasourcedescriptiontypedef)\]
-
-<a id="sqlapplicationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: InputDescriptionTypeDef](./type_defs.md#inputdescriptiontypedef) 
+2. See [:material-code-braces: OutputDescriptionTypeDef](./type_defs.md#outputdescriptiontypedef) 
+3. See [:material-code-braces: ReferenceDataSourceDescriptionTypeDef](./type_defs.md#referencedatasourcedescriptiontypedef) 
 ## SqlApplicationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import SqlApplicationConfigurationTypeDef
+
+def get_value() -> SqlApplicationConfigurationTypeDef:
+    return {
+        "Inputs": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SqlApplicationConfigurationTypeDef(TypedDict):
+    Inputs: NotRequired[Sequence[InputTypeDef]],  # (1)
+    Outputs: NotRequired[Sequence[OutputTypeDef]],  # (2)
+    ReferenceDataSources: NotRequired[Sequence[ReferenceDataSourceTypeDef]],  # (3)
+```
 
-- `Inputs`: `Sequence`\[[InputTypeDef](./type_defs.md#inputtypedef)\]
-- `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
-- `ReferenceDataSources`:
-  `Sequence`\[[ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef)\]
-
-<a id="sqlapplicationconfigurationupdatetypedef"></a>
-
+1. See [:material-code-braces: InputTypeDef](./type_defs.md#inputtypedef) 
+2. See [:material-code-braces: OutputTypeDef](./type_defs.md#outputtypedef) 
+3. See [:material-code-braces: ReferenceDataSourceTypeDef](./type_defs.md#referencedatasourcetypedef) 
 ## SqlApplicationConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import SqlApplicationConfigurationUpdateTypeDef
+
+def get_value() -> SqlApplicationConfigurationUpdateTypeDef:
+    return {
+        "InputUpdates": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SqlApplicationConfigurationUpdateTypeDef(TypedDict):
+    InputUpdates: NotRequired[Sequence[InputUpdateTypeDef]],  # (1)
+    OutputUpdates: NotRequired[Sequence[OutputUpdateTypeDef]],  # (2)
+    ReferenceDataSourceUpdates: NotRequired[Sequence[ReferenceDataSourceUpdateTypeDef]],  # (3)
+```
 
-- `InputUpdates`:
-  `Sequence`\[[InputUpdateTypeDef](./type_defs.md#inputupdatetypedef)\]
-- `OutputUpdates`:
-  `Sequence`\[[OutputUpdateTypeDef](./type_defs.md#outputupdatetypedef)\]
-- `ReferenceDataSourceUpdates`:
-  `Sequence`\[[ReferenceDataSourceUpdateTypeDef](./type_defs.md#referencedatasourceupdatetypedef)\]
-
-<a id="sqlrunconfigurationtypedef"></a>
-
+1. See [:material-code-braces: InputUpdateTypeDef](./type_defs.md#inputupdatetypedef) 
+2. See [:material-code-braces: OutputUpdateTypeDef](./type_defs.md#outputupdatetypedef) 
+3. See [:material-code-braces: ReferenceDataSourceUpdateTypeDef](./type_defs.md#referencedatasourceupdatetypedef) 
 ## SqlRunConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import SqlRunConfigurationTypeDef
+
+def get_value() -> SqlRunConfigurationTypeDef:
+    return {
+        "InputId": ...,
+        "InputStartingPositionConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SqlRunConfigurationTypeDef(TypedDict):
+    InputId: str,
+    InputStartingPositionConfiguration: InputStartingPositionConfigurationTypeDef,  # (1)
+```
 
-- `InputId`: `str`
-- `InputStartingPositionConfiguration`:
-  [InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef)
-
-<a id="startapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InputStartingPositionConfigurationTypeDef](./type_defs.md#inputstartingpositionconfigurationtypedef) 
 ## StartApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import StartApplicationRequestRequestTypeDef
+
+def get_value() -> StartApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    RunConfiguration: NotRequired[RunConfigurationTypeDef],  # (1)
+```
 
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `RunConfiguration`:
-  [RunConfigurationTypeDef](./type_defs.md#runconfigurationtypedef)
-
-<a id="stopapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RunConfigurationTypeDef](./type_defs.md#runconfigurationtypedef) 
 ## StopApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import StopApplicationRequestRequestTypeDef
+
+def get_value() -> StopApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `Force`: `bool`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StopApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    Force: NotRequired[bool],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateapplicationmaintenanceconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "ApplicationMaintenanceConfigurationUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApplicationMaintenanceConfigurationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    ApplicationMaintenanceConfigurationUpdate: ApplicationMaintenanceConfigurationUpdateTypeDef,  # (1)
+```
 
-- `ApplicationName`: `str`
-- `ApplicationMaintenanceConfigurationUpdate`:
-  [ApplicationMaintenanceConfigurationUpdateTypeDef](./type_defs.md#applicationmaintenanceconfigurationupdatetypedef)
-
-<a id="updateapplicationmaintenanceconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: ApplicationMaintenanceConfigurationUpdateTypeDef](./type_defs.md#applicationmaintenanceconfigurationupdatetypedef) 
 ## UpdateApplicationMaintenanceConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationMaintenanceConfigurationResponseTypeDef
+
+def get_value() -> UpdateApplicationMaintenanceConfigurationResponseTypeDef:
+    return {
+        "ApplicationARN": ...,
+        "ApplicationMaintenanceConfigurationDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApplicationMaintenanceConfigurationResponseTypeDef(TypedDict):
+    ApplicationARN: str,
+    ApplicationMaintenanceConfigurationDescription: ApplicationMaintenanceConfigurationDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationARN`: `str`
-- `ApplicationMaintenanceConfigurationDescription`:
-  [ApplicationMaintenanceConfigurationDescriptionTypeDef](./type_defs.md#applicationmaintenanceconfigurationdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationMaintenanceConfigurationDescriptionTypeDef](./type_defs.md#applicationmaintenanceconfigurationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    CurrentApplicationVersionId: NotRequired[int],
+    ApplicationConfigurationUpdate: NotRequired[ApplicationConfigurationUpdateTypeDef],  # (1)
+    ServiceExecutionRoleUpdate: NotRequired[str],
+    RunConfigurationUpdate: NotRequired[RunConfigurationUpdateTypeDef],  # (2)
+    CloudWatchLoggingOptionUpdates: NotRequired[Sequence[CloudWatchLoggingOptionUpdateTypeDef]],  # (3)
+    ConditionalToken: NotRequired[str],
+```
 
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `CurrentApplicationVersionId`: `int`
-- `ApplicationConfigurationUpdate`:
-  [ApplicationConfigurationUpdateTypeDef](./type_defs.md#applicationconfigurationupdatetypedef)
-- `ServiceExecutionRoleUpdate`: `str`
-- `RunConfigurationUpdate`:
-  [RunConfigurationUpdateTypeDef](./type_defs.md#runconfigurationupdatetypedef)
-- `CloudWatchLoggingOptionUpdates`:
-  `Sequence`\[[CloudWatchLoggingOptionUpdateTypeDef](./type_defs.md#cloudwatchloggingoptionupdatetypedef)\]
-- `ConditionalToken`: `str`
-
-<a id="updateapplicationresponsetypedef"></a>
-
+1. See [:material-code-braces: ApplicationConfigurationUpdateTypeDef](./type_defs.md#applicationconfigurationupdatetypedef) 
+2. See [:material-code-braces: RunConfigurationUpdateTypeDef](./type_defs.md#runconfigurationupdatetypedef) 
+3. See [:material-code-braces: CloudWatchLoggingOptionUpdateTypeDef](./type_defs.md#cloudwatchloggingoptionupdatetypedef) 
 ## UpdateApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import UpdateApplicationResponseTypeDef
+
+def get_value() -> UpdateApplicationResponseTypeDef:
+    return {
+        "ApplicationDetail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApplicationResponseTypeDef(TypedDict):
+    ApplicationDetail: ApplicationDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationDetail`:
-  [ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vpcconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ApplicationDetailTypeDef](./type_defs.md#applicationdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VpcConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import VpcConfigurationDescriptionTypeDef
+
+def get_value() -> VpcConfigurationDescriptionTypeDef:
+    return {
+        "VpcConfigurationId": ...,
+        "VpcId": ...,
+        "SubnetIds": ...,
+        "SecurityGroupIds": ...,
+    }
 ```
 
-Required fields:
-
-- `VpcConfigurationId`: `str`
-- `VpcId`: `str`
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
-
-<a id="vpcconfigurationtypedef"></a>
+```python title="Definition"
+class VpcConfigurationDescriptionTypeDef(TypedDict):
+    VpcConfigurationId: str,
+    VpcId: str,
+    SubnetIds: List[str],
+    SecurityGroupIds: List[str],
+```
 
 ## VpcConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import VpcConfigurationTypeDef
+
+def get_value() -> VpcConfigurationTypeDef:
+    return {
+        "SubnetIds": ...,
+        "SecurityGroupIds": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetIds`: `Sequence`\[`str`\]
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-
-<a id="vpcconfigurationupdatetypedef"></a>
+```python title="Definition"
+class VpcConfigurationTypeDef(TypedDict):
+    SubnetIds: Sequence[str],
+    SecurityGroupIds: Sequence[str],
+```
 
 ## VpcConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import VpcConfigurationUpdateTypeDef
+
+def get_value() -> VpcConfigurationUpdateTypeDef:
+    return {
+        "VpcConfigurationId": ...,
+    }
 ```
 
-Required fields:
-
-- `VpcConfigurationId`: `str`
-
-Optional fields:
-
-- `SubnetIdUpdates`: `Sequence`\[`str`\]
-- `SecurityGroupIdUpdates`: `Sequence`\[`str`\]
-
-<a id="zeppelinapplicationconfigurationdescriptiontypedef"></a>
+```python title="Definition"
+class VpcConfigurationUpdateTypeDef(TypedDict):
+    VpcConfigurationId: str,
+    SubnetIdUpdates: NotRequired[Sequence[str]],
+    SecurityGroupIdUpdates: NotRequired[Sequence[str]],
+```
 
 ## ZeppelinApplicationConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinApplicationConfigurationDescriptionTypeDef
+
+def get_value() -> ZeppelinApplicationConfigurationDescriptionTypeDef:
+    return {
+        "MonitoringConfigurationDescription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ZeppelinApplicationConfigurationDescriptionTypeDef(TypedDict):
+    MonitoringConfigurationDescription: ZeppelinMonitoringConfigurationDescriptionTypeDef,  # (1)
+    CatalogConfigurationDescription: NotRequired[CatalogConfigurationDescriptionTypeDef],  # (2)
+    DeployAsApplicationConfigurationDescription: NotRequired[DeployAsApplicationConfigurationDescriptionTypeDef],  # (3)
+    CustomArtifactsConfigurationDescription: NotRequired[List[CustomArtifactConfigurationDescriptionTypeDef]],  # (4)
+```
 
-- `MonitoringConfigurationDescription`:
-  [ZeppelinMonitoringConfigurationDescriptionTypeDef](./type_defs.md#zeppelinmonitoringconfigurationdescriptiontypedef)
-
-Optional fields:
-
-- `CatalogConfigurationDescription`:
-  [CatalogConfigurationDescriptionTypeDef](./type_defs.md#catalogconfigurationdescriptiontypedef)
-- `DeployAsApplicationConfigurationDescription`:
-  [DeployAsApplicationConfigurationDescriptionTypeDef](./type_defs.md#deployasapplicationconfigurationdescriptiontypedef)
-- `CustomArtifactsConfigurationDescription`:
-  `List`\[[CustomArtifactConfigurationDescriptionTypeDef](./type_defs.md#customartifactconfigurationdescriptiontypedef)\]
-
-<a id="zeppelinapplicationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ZeppelinMonitoringConfigurationDescriptionTypeDef](./type_defs.md#zeppelinmonitoringconfigurationdescriptiontypedef) 
+2. See [:material-code-braces: CatalogConfigurationDescriptionTypeDef](./type_defs.md#catalogconfigurationdescriptiontypedef) 
+3. See [:material-code-braces: DeployAsApplicationConfigurationDescriptionTypeDef](./type_defs.md#deployasapplicationconfigurationdescriptiontypedef) 
+4. See [:material-code-braces: CustomArtifactConfigurationDescriptionTypeDef](./type_defs.md#customartifactconfigurationdescriptiontypedef) 
 ## ZeppelinApplicationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinApplicationConfigurationTypeDef
+
+def get_value() -> ZeppelinApplicationConfigurationTypeDef:
+    return {
+        "MonitoringConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ZeppelinApplicationConfigurationTypeDef(TypedDict):
+    MonitoringConfiguration: NotRequired[ZeppelinMonitoringConfigurationTypeDef],  # (1)
+    CatalogConfiguration: NotRequired[CatalogConfigurationTypeDef],  # (2)
+    DeployAsApplicationConfiguration: NotRequired[DeployAsApplicationConfigurationTypeDef],  # (3)
+    CustomArtifactsConfiguration: NotRequired[Sequence[CustomArtifactConfigurationTypeDef]],  # (4)
+```
 
-- `MonitoringConfiguration`:
-  [ZeppelinMonitoringConfigurationTypeDef](./type_defs.md#zeppelinmonitoringconfigurationtypedef)
-- `CatalogConfiguration`:
-  [CatalogConfigurationTypeDef](./type_defs.md#catalogconfigurationtypedef)
-- `DeployAsApplicationConfiguration`:
-  [DeployAsApplicationConfigurationTypeDef](./type_defs.md#deployasapplicationconfigurationtypedef)
-- `CustomArtifactsConfiguration`:
-  `Sequence`\[[CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef)\]
-
-<a id="zeppelinapplicationconfigurationupdatetypedef"></a>
-
+1. See [:material-code-braces: ZeppelinMonitoringConfigurationTypeDef](./type_defs.md#zeppelinmonitoringconfigurationtypedef) 
+2. See [:material-code-braces: CatalogConfigurationTypeDef](./type_defs.md#catalogconfigurationtypedef) 
+3. See [:material-code-braces: DeployAsApplicationConfigurationTypeDef](./type_defs.md#deployasapplicationconfigurationtypedef) 
+4. See [:material-code-braces: CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef) 
 ## ZeppelinApplicationConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinApplicationConfigurationUpdateTypeDef
+
+def get_value() -> ZeppelinApplicationConfigurationUpdateTypeDef:
+    return {
+        "MonitoringConfigurationUpdate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ZeppelinApplicationConfigurationUpdateTypeDef(TypedDict):
+    MonitoringConfigurationUpdate: NotRequired[ZeppelinMonitoringConfigurationUpdateTypeDef],  # (1)
+    CatalogConfigurationUpdate: NotRequired[CatalogConfigurationUpdateTypeDef],  # (2)
+    DeployAsApplicationConfigurationUpdate: NotRequired[DeployAsApplicationConfigurationUpdateTypeDef],  # (3)
+    CustomArtifactsConfigurationUpdate: NotRequired[Sequence[CustomArtifactConfigurationTypeDef]],  # (4)
+```
 
-- `MonitoringConfigurationUpdate`:
-  [ZeppelinMonitoringConfigurationUpdateTypeDef](./type_defs.md#zeppelinmonitoringconfigurationupdatetypedef)
-- `CatalogConfigurationUpdate`:
-  [CatalogConfigurationUpdateTypeDef](./type_defs.md#catalogconfigurationupdatetypedef)
-- `DeployAsApplicationConfigurationUpdate`:
-  [DeployAsApplicationConfigurationUpdateTypeDef](./type_defs.md#deployasapplicationconfigurationupdatetypedef)
-- `CustomArtifactsConfigurationUpdate`:
-  `Sequence`\[[CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef)\]
-
-<a id="zeppelinmonitoringconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ZeppelinMonitoringConfigurationUpdateTypeDef](./type_defs.md#zeppelinmonitoringconfigurationupdatetypedef) 
+2. See [:material-code-braces: CatalogConfigurationUpdateTypeDef](./type_defs.md#catalogconfigurationupdatetypedef) 
+3. See [:material-code-braces: DeployAsApplicationConfigurationUpdateTypeDef](./type_defs.md#deployasapplicationconfigurationupdatetypedef) 
+4. See [:material-code-braces: CustomArtifactConfigurationTypeDef](./type_defs.md#customartifactconfigurationtypedef) 
 ## ZeppelinMonitoringConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinMonitoringConfigurationDescriptionTypeDef
+
+def get_value() -> ZeppelinMonitoringConfigurationDescriptionTypeDef:
+    return {
+        "LogLevel": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ZeppelinMonitoringConfigurationDescriptionTypeDef(TypedDict):
+    LogLevel: NotRequired[LogLevelType],  # (1)
+```
 
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-<a id="zeppelinmonitoringconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## ZeppelinMonitoringConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinMonitoringConfigurationTypeDef
+
+def get_value() -> ZeppelinMonitoringConfigurationTypeDef:
+    return {
+        "LogLevel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ZeppelinMonitoringConfigurationTypeDef(TypedDict):
+    LogLevel: LogLevelType,  # (1)
+```
 
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-
-<a id="zeppelinmonitoringconfigurationupdatetypedef"></a>
-
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 ## ZeppelinMonitoringConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesisanalyticsv2.type_defs import ZeppelinMonitoringConfigurationUpdateTypeDef
+
+def get_value() -> ZeppelinMonitoringConfigurationUpdateTypeDef:
+    return {
+        "LogLevelUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ZeppelinMonitoringConfigurationUpdateTypeDef(TypedDict):
+    LogLevelUpdate: LogLevelType,  # (1)
+```
 
-- `LogLevelUpdate`: [LogLevelType](./literals.md#logleveltype)
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 

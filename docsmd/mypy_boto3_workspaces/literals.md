@@ -1,839 +1,896 @@
-<a id="literals-for-boto3-workspaces-module"></a>
-
-# Literals for boto3 WorkSpaces module
+# Literals
 
 > [Index](../README.md) > [WorkSpaces](./README.md) > Literals
 
-Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
-type annotations stubs module
-[mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+!!! note ""
 
-- [Literals for boto3 WorkSpaces module](#literals-for-boto3-workspaces-module)
-  - [AccessPropertyValueType](#accesspropertyvaluetype)
-  - [ApplicationType](#applicationtype)
-  - [AssociationStatusType](#associationstatustype)
-  - [ComputeType](#computetype)
-  - [ConnectionAliasStateType](#connectionaliasstatetype)
-  - [ConnectionStateType](#connectionstatetype)
-  - [DedicatedTenancyModificationStateEnumType](#dedicatedtenancymodificationstateenumtype)
-  - [DedicatedTenancySupportEnumType](#dedicatedtenancysupportenumtype)
-  - [DedicatedTenancySupportResultEnumType](#dedicatedtenancysupportresultenumtype)
-  - [DescribeAccountModificationsPaginatorName](#describeaccountmodificationspaginatorname)
-  - [DescribeIpGroupsPaginatorName](#describeipgroupspaginatorname)
-  - [DescribeWorkspaceBundlesPaginatorName](#describeworkspacebundlespaginatorname)
-  - [DescribeWorkspaceDirectoriesPaginatorName](#describeworkspacedirectoriespaginatorname)
-  - [DescribeWorkspaceImagesPaginatorName](#describeworkspaceimagespaginatorname)
-  - [DescribeWorkspacesConnectionStatusPaginatorName](#describeworkspacesconnectionstatuspaginatorname)
-  - [DescribeWorkspacesPaginatorName](#describeworkspacespaginatorname)
-  - [ImageTypeType](#imagetypetype)
-  - [ListAvailableManagementCidrRangesPaginatorName](#listavailablemanagementcidrrangespaginatorname)
-  - [ModificationResourceEnumType](#modificationresourceenumtype)
-  - [ModificationStateEnumType](#modificationstateenumtype)
-  - [OperatingSystemTypeType](#operatingsystemtypetype)
-  - [ReconnectEnumType](#reconnectenumtype)
-  - [RunningModeType](#runningmodetype)
-  - [TargetWorkspaceStateType](#targetworkspacestatetype)
-  - [TenancyType](#tenancytype)
-  - [WorkspaceDirectoryStateType](#workspacedirectorystatetype)
-  - [WorkspaceDirectoryTypeType](#workspacedirectorytypetype)
-  - [WorkspaceImageIngestionProcessType](#workspaceimageingestionprocesstype)
-  - [WorkspaceImageRequiredTenancyType](#workspaceimagerequiredtenancytype)
-  - [WorkspaceImageStateType](#workspaceimagestatetype)
-  - [WorkspaceStateType](#workspacestatetype)
-  - [WorkSpacesServiceName](#workspacesservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="accesspropertyvaluetype"></a>
+    Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+    type annotations stubs module [mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 ## AccessPropertyValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import AccessPropertyValueType
+
+def get_value() -> AccessPropertyValueType:
+    return "ALLOW"
 ```
 
-Values:
-
-- `ALLOW`
-- `DENY`
-
-<a id="applicationtype"></a>
-
+```python title="Definition"
+AccessPropertyValueType = Literal[
+    "ALLOW",
+    "DENY",
+]
+```
 ## ApplicationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ApplicationType
+
+def get_value() -> ApplicationType:
+    return "Microsoft_Office_2016"
 ```
 
-Values:
-
-- `Microsoft_Office_2016`
-- `Microsoft_Office_2019`
-
-<a id="associationstatustype"></a>
-
+```python title="Definition"
+ApplicationType = Literal[
+    "Microsoft_Office_2016",
+    "Microsoft_Office_2019",
+]
+```
 ## AssociationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import AssociationStatusType
+
+def get_value() -> AssociationStatusType:
+    return "ASSOCIATED_WITH_OWNER_ACCOUNT"
 ```
 
-Values:
-
-- `ASSOCIATED_WITH_OWNER_ACCOUNT`
-- `ASSOCIATED_WITH_SHARED_ACCOUNT`
-- `NOT_ASSOCIATED`
-- `PENDING_ASSOCIATION`
-- `PENDING_DISASSOCIATION`
-
-<a id="computetype"></a>
-
+```python title="Definition"
+AssociationStatusType = Literal[
+    "ASSOCIATED_WITH_OWNER_ACCOUNT",
+    "ASSOCIATED_WITH_SHARED_ACCOUNT",
+    "NOT_ASSOCIATED",
+    "PENDING_ASSOCIATION",
+    "PENDING_DISASSOCIATION",
+]
+```
 ## ComputeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ComputeType
+
+def get_value() -> ComputeType:
+    return "GRAPHICS"
 ```
 
-Values:
-
-- `GRAPHICS`
-- `GRAPHICSPRO`
-- `PERFORMANCE`
-- `POWER`
-- `POWERPRO`
-- `STANDARD`
-- `VALUE`
-
-<a id="connectionaliasstatetype"></a>
-
+```python title="Definition"
+ComputeType = Literal[
+    "GRAPHICS",
+    "GRAPHICSPRO",
+    "PERFORMANCE",
+    "POWER",
+    "POWERPRO",
+    "STANDARD",
+    "VALUE",
+]
+```
 ## ConnectionAliasStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ConnectionAliasStateType
+
+def get_value() -> ConnectionAliasStateType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATED`
-- `CREATING`
-- `DELETING`
-
-<a id="connectionstatetype"></a>
-
+```python title="Definition"
+ConnectionAliasStateType = Literal[
+    "CREATED",
+    "CREATING",
+    "DELETING",
+]
+```
 ## ConnectionStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ConnectionStateType
+
+def get_value() -> ConnectionStateType:
+    return "CONNECTED"
 ```
 
-Values:
-
-- `CONNECTED`
-- `DISCONNECTED`
-- `UNKNOWN`
-
-<a id="dedicatedtenancymodificationstateenumtype"></a>
-
+```python title="Definition"
+ConnectionStateType = Literal[
+    "CONNECTED",
+    "DISCONNECTED",
+    "UNKNOWN",
+]
+```
 ## DedicatedTenancyModificationStateEnumType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DedicatedTenancyModificationStateEnumType
+
+def get_value() -> DedicatedTenancyModificationStateEnumType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `PENDING`
-
-<a id="dedicatedtenancysupportenumtype"></a>
-
+```python title="Definition"
+DedicatedTenancyModificationStateEnumType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "PENDING",
+]
+```
 ## DedicatedTenancySupportEnumType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DedicatedTenancySupportEnumType
+
+def get_value() -> DedicatedTenancySupportEnumType:
+    return "ENABLED"
 ```
 
-Values:
-
-- `ENABLED`
-
-<a id="dedicatedtenancysupportresultenumtype"></a>
-
+```python title="Definition"
+DedicatedTenancySupportEnumType = Literal[
+    "ENABLED",
+]
+```
 ## DedicatedTenancySupportResultEnumType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DedicatedTenancySupportResultEnumType
+
+def get_value() -> DedicatedTenancySupportResultEnumType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="describeaccountmodificationspaginatorname"></a>
-
+```python title="Definition"
+DedicatedTenancySupportResultEnumType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## DescribeAccountModificationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DescribeAccountModificationsPaginatorName
+
+def get_value() -> DescribeAccountModificationsPaginatorName:
+    return "describe_account_modifications"
 ```
 
-Values:
-
-- `describe_account_modifications`
-
-<a id="describeipgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeAccountModificationsPaginatorName = Literal[
+    "describe_account_modifications",
+]
+```
 ## DescribeIpGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DescribeIpGroupsPaginatorName
+
+def get_value() -> DescribeIpGroupsPaginatorName:
+    return "describe_ip_groups"
 ```
 
-Values:
-
-- `describe_ip_groups`
-
-<a id="describeworkspacebundlespaginatorname"></a>
-
+```python title="Definition"
+DescribeIpGroupsPaginatorName = Literal[
+    "describe_ip_groups",
+]
+```
 ## DescribeWorkspaceBundlesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DescribeWorkspaceBundlesPaginatorName
+
+def get_value() -> DescribeWorkspaceBundlesPaginatorName:
+    return "describe_workspace_bundles"
 ```
 
-Values:
-
-- `describe_workspace_bundles`
-
-<a id="describeworkspacedirectoriespaginatorname"></a>
-
+```python title="Definition"
+DescribeWorkspaceBundlesPaginatorName = Literal[
+    "describe_workspace_bundles",
+]
+```
 ## DescribeWorkspaceDirectoriesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DescribeWorkspaceDirectoriesPaginatorName
+
+def get_value() -> DescribeWorkspaceDirectoriesPaginatorName:
+    return "describe_workspace_directories"
 ```
 
-Values:
-
-- `describe_workspace_directories`
-
-<a id="describeworkspaceimagespaginatorname"></a>
-
+```python title="Definition"
+DescribeWorkspaceDirectoriesPaginatorName = Literal[
+    "describe_workspace_directories",
+]
+```
 ## DescribeWorkspaceImagesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DescribeWorkspaceImagesPaginatorName
+
+def get_value() -> DescribeWorkspaceImagesPaginatorName:
+    return "describe_workspace_images"
 ```
 
-Values:
-
-- `describe_workspace_images`
-
-<a id="describeworkspacesconnectionstatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeWorkspaceImagesPaginatorName = Literal[
+    "describe_workspace_images",
+]
+```
 ## DescribeWorkspacesConnectionStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DescribeWorkspacesConnectionStatusPaginatorName
+
+def get_value() -> DescribeWorkspacesConnectionStatusPaginatorName:
+    return "describe_workspaces_connection_status"
 ```
 
-Values:
-
-- `describe_workspaces_connection_status`
-
-<a id="describeworkspacespaginatorname"></a>
-
+```python title="Definition"
+DescribeWorkspacesConnectionStatusPaginatorName = Literal[
+    "describe_workspaces_connection_status",
+]
+```
 ## DescribeWorkspacesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import DescribeWorkspacesPaginatorName
+
+def get_value() -> DescribeWorkspacesPaginatorName:
+    return "describe_workspaces"
 ```
 
-Values:
-
-- `describe_workspaces`
-
-<a id="imagetypetype"></a>
-
+```python title="Definition"
+DescribeWorkspacesPaginatorName = Literal[
+    "describe_workspaces",
+]
+```
 ## ImageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ImageTypeType
+
+def get_value() -> ImageTypeType:
+    return "OWNED"
 ```
 
-Values:
-
-- `OWNED`
-- `SHARED`
-
-<a id="listavailablemanagementcidrrangespaginatorname"></a>
-
+```python title="Definition"
+ImageTypeType = Literal[
+    "OWNED",
+    "SHARED",
+]
+```
 ## ListAvailableManagementCidrRangesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ListAvailableManagementCidrRangesPaginatorName
+
+def get_value() -> ListAvailableManagementCidrRangesPaginatorName:
+    return "list_available_management_cidr_ranges"
 ```
 
-Values:
-
-- `list_available_management_cidr_ranges`
-
-<a id="modificationresourceenumtype"></a>
-
+```python title="Definition"
+ListAvailableManagementCidrRangesPaginatorName = Literal[
+    "list_available_management_cidr_ranges",
+]
+```
 ## ModificationResourceEnumType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ModificationResourceEnumType
+
+def get_value() -> ModificationResourceEnumType:
+    return "COMPUTE_TYPE"
 ```
 
-Values:
-
-- `COMPUTE_TYPE`
-- `ROOT_VOLUME`
-- `USER_VOLUME`
-
-<a id="modificationstateenumtype"></a>
-
+```python title="Definition"
+ModificationResourceEnumType = Literal[
+    "COMPUTE_TYPE",
+    "ROOT_VOLUME",
+    "USER_VOLUME",
+]
+```
 ## ModificationStateEnumType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ModificationStateEnumType
+
+def get_value() -> ModificationStateEnumType:
+    return "UPDATE_INITIATED"
 ```
 
-Values:
-
-- `UPDATE_IN_PROGRESS`
-- `UPDATE_INITIATED`
-
-<a id="operatingsystemtypetype"></a>
-
+```python title="Definition"
+ModificationStateEnumType = Literal[
+    "UPDATE_IN_PROGRESS",
+    "UPDATE_INITIATED",
+]
+```
 ## OperatingSystemTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import OperatingSystemTypeType
+
+def get_value() -> OperatingSystemTypeType:
+    return "LINUX"
 ```
 
-Values:
-
-- `LINUX`
-- `WINDOWS`
-
-<a id="reconnectenumtype"></a>
-
+```python title="Definition"
+OperatingSystemTypeType = Literal[
+    "LINUX",
+    "WINDOWS",
+]
+```
 ## ReconnectEnumType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ReconnectEnumType
+
+def get_value() -> ReconnectEnumType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="runningmodetype"></a>
-
+```python title="Definition"
+ReconnectEnumType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## RunningModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import RunningModeType
+
+def get_value() -> RunningModeType:
+    return "ALWAYS_ON"
 ```
 
-Values:
-
-- `ALWAYS_ON`
-- `AUTO_STOP`
-
-<a id="targetworkspacestatetype"></a>
-
+```python title="Definition"
+RunningModeType = Literal[
+    "ALWAYS_ON",
+    "AUTO_STOP",
+]
+```
 ## TargetWorkspaceStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import TargetWorkspaceStateType
+
+def get_value() -> TargetWorkspaceStateType:
+    return "ADMIN_MAINTENANCE"
 ```
 
-Values:
-
-- `ADMIN_MAINTENANCE`
-- `AVAILABLE`
-
-<a id="tenancytype"></a>
-
+```python title="Definition"
+TargetWorkspaceStateType = Literal[
+    "ADMIN_MAINTENANCE",
+    "AVAILABLE",
+]
+```
 ## TenancyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import TenancyType
+
+def get_value() -> TenancyType:
+    return "DEDICATED"
 ```
 
-Values:
-
-- `DEDICATED`
-- `SHARED`
-
-<a id="workspacedirectorystatetype"></a>
-
+```python title="Definition"
+TenancyType = Literal[
+    "DEDICATED",
+    "SHARED",
+]
+```
 ## WorkspaceDirectoryStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import WorkspaceDirectoryStateType
+
+def get_value() -> WorkspaceDirectoryStateType:
+    return "DEREGISTERED"
 ```
 
-Values:
-
-- `DEREGISTERED`
-- `DEREGISTERING`
-- `ERROR`
-- `REGISTERED`
-- `REGISTERING`
-
-<a id="workspacedirectorytypetype"></a>
-
+```python title="Definition"
+WorkspaceDirectoryStateType = Literal[
+    "DEREGISTERED",
+    "DEREGISTERING",
+    "ERROR",
+    "REGISTERED",
+    "REGISTERING",
+]
+```
 ## WorkspaceDirectoryTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import WorkspaceDirectoryTypeType
+
+def get_value() -> WorkspaceDirectoryTypeType:
+    return "AD_CONNECTOR"
 ```
 
-Values:
-
-- `AD_CONNECTOR`
-- `SIMPLE_AD`
-
-<a id="workspaceimageingestionprocesstype"></a>
-
+```python title="Definition"
+WorkspaceDirectoryTypeType = Literal[
+    "AD_CONNECTOR",
+    "SIMPLE_AD",
+]
+```
 ## WorkspaceImageIngestionProcessType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import WorkspaceImageIngestionProcessType
+
+def get_value() -> WorkspaceImageIngestionProcessType:
+    return "BYOL_GRAPHICS"
 ```
 
-Values:
-
-- `BYOL_GRAPHICS`
-- `BYOL_GRAPHICSPRO`
-- `BYOL_REGULAR`
-- `BYOL_REGULAR_WSP`
-
-<a id="workspaceimagerequiredtenancytype"></a>
-
+```python title="Definition"
+WorkspaceImageIngestionProcessType = Literal[
+    "BYOL_GRAPHICS",
+    "BYOL_GRAPHICSPRO",
+    "BYOL_REGULAR",
+    "BYOL_REGULAR_WSP",
+]
+```
 ## WorkspaceImageRequiredTenancyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import WorkspaceImageRequiredTenancyType
+
+def get_value() -> WorkspaceImageRequiredTenancyType:
+    return "DEDICATED"
 ```
 
-Values:
-
-- `DEDICATED`
-- `DEFAULT`
-
-<a id="workspaceimagestatetype"></a>
-
+```python title="Definition"
+WorkspaceImageRequiredTenancyType = Literal[
+    "DEDICATED",
+    "DEFAULT",
+]
+```
 ## WorkspaceImageStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import WorkspaceImageStateType
+
+def get_value() -> WorkspaceImageStateType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `ERROR`
-- `PENDING`
-
-<a id="workspacestatetype"></a>
-
+```python title="Definition"
+WorkspaceImageStateType = Literal[
+    "AVAILABLE",
+    "ERROR",
+    "PENDING",
+]
+```
 ## WorkspaceStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import WorkspaceStateType
+
+def get_value() -> WorkspaceStateType:
+    return "ADMIN_MAINTENANCE"
 ```
 
-Values:
-
-- `ADMIN_MAINTENANCE`
-- `AVAILABLE`
-- `ERROR`
-- `IMPAIRED`
-- `MAINTENANCE`
-- `PENDING`
-- `REBOOTING`
-- `REBUILDING`
-- `RESTORING`
-- `STARTING`
-- `STOPPED`
-- `STOPPING`
-- `SUSPENDED`
-- `TERMINATED`
-- `TERMINATING`
-- `UNHEALTHY`
-- `UPDATING`
-
-<a id="workspacesservicename"></a>
-
+```python title="Definition"
+WorkspaceStateType = Literal[
+    "ADMIN_MAINTENANCE",
+    "AVAILABLE",
+    "ERROR",
+    "IMPAIRED",
+    "MAINTENANCE",
+    "PENDING",
+    "REBOOTING",
+    "REBUILDING",
+    "RESTORING",
+    "STARTING",
+    "STOPPED",
+    "STOPPING",
+    "SUSPENDED",
+    "TERMINATED",
+    "TERMINATING",
+    "UNHEALTHY",
+    "UPDATING",
+]
+```
 ## WorkSpacesServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import WorkSpacesServiceName
+
+def get_value() -> WorkSpacesServiceName:
+    return "workspaces"
 ```
 
-Values:
-
-- `workspaces`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+WorkSpacesServiceName = Literal[
+    "workspaces",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_workspaces.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_account_modifications"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_account_modifications",
+    "describe_ip_groups",
+    "describe_workspace_bundles",
+    "describe_workspace_directories",
+    "describe_workspace_images",
+    "describe_workspaces",
+    "describe_workspaces_connection_status",
+    "list_available_management_cidr_ranges",
+]
+```
+## RegionName
 
-- `describe_account_modifications`
-- `describe_ip_groups`
-- `describe_workspace_bundles`
-- `describe_workspace_directories`
-- `describe_workspace_images`
-- `describe_workspaces`
-- `describe_workspaces_connection_status`
-- `list_available_management_cidr_ranges`
+```python title="Usage Example"
+from mypy_boto3_workspaces.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-1",
+    "eu-west-2",
+    "sa-east-1",
+    "us-east-1",
+    "us-west-2",
+]
+```

@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-lookoutforvision-module"></a>
-
-# Paginators for boto3 LookoutforVision module
+# Paginators
 
 > [Index](../README.md) > [LookoutforVision](./README.md) > Paginators
 
-Auto-generated documentation for
-[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
-type annotations stubs module
-[mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+!!! note ""
 
-- [Paginators for boto3 LookoutforVision module](#paginators-for-boto3-lookoutforvision-module)
-  - [ListDatasetEntriesPaginator](#listdatasetentriespaginator)
-  - [ListModelPackagingJobsPaginator](#listmodelpackagingjobspaginator)
-  - [ListModelsPaginator](#listmodelspaginator)
-  - [ListProjectsPaginator](#listprojectspaginator)
-
-<a id="listdatasetentriespaginator"></a>
+    Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+    type annotations stubs module [mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 ## ListDatasetEntriesPaginator
 
-Type annotations for
-`boto3.client("lookoutvision").get_paginator("list_dataset_entries")`.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").get_paginator("list_dataset_entries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListDatasetEntries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lookoutvision.paginator import ListDatasetEntriesPaginator
@@ -33,34 +21,47 @@ def get_list_dataset_entries_paginator() -> ListDatasetEntriesPaginator:
     return Session().client("lookoutvision").get_paginator("list_dataset_entries")
 ```
 
-Boto3 documentation:
-[LookoutforVision.Paginator.ListDatasetEntries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListDatasetEntries)
 
-Arguments for `ListDatasetEntriesPaginator.paginate` method:
+### paginate
 
-- `ProjectName`: `str` *(required)*
-- `DatasetType`: `str` *(required)*
-- `Labeled`: `bool`
-- `AnomalyClass`: `str`
-- `BeforeCreationDate`: `Union`\[`datetime`, `str`\]
-- `AfterCreationDate`: `Union`\[`datetime`, `str`\]
-- `SourceRefContains`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetEntriesPaginator.paginate` method.
 
-`ListDatasetEntriesPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProjectName: str,
+    DatasetType: str,
+    Labeled: bool = ...,
+    AnomalyClass: str = ...,
+    BeforeCreationDate: Union[datetime, str] = ...,
+    AfterCreationDate: Union[datetime, str] = ...,
+    SourceRefContains: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatasetEntriesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmodelpackagingjobspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef = {  # (1)
+    "ProjectName": ...,
+    "DatasetType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef](./type_defs.md#listdatasetentriesrequestlistdatasetentriespaginatetypedef) 
 ## ListModelPackagingJobsPaginator
 
-Type annotations for
-`boto3.client("lookoutvision").get_paginator("list_model_packaging_jobs")`.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").get_paginator("list_model_packaging_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModelPackagingJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lookoutvision.paginator import ListModelPackagingJobsPaginator
@@ -69,28 +70,40 @@ def get_list_model_packaging_jobs_paginator() -> ListModelPackagingJobsPaginator
     return Session().client("lookoutvision").get_paginator("list_model_packaging_jobs")
 ```
 
-Boto3 documentation:
-[LookoutforVision.Paginator.ListModelPackagingJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModelPackagingJobs)
 
-Arguments for `ListModelPackagingJobsPaginator.paginate` method:
+### paginate
 
-- `ProjectName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListModelPackagingJobsPaginator.paginate` method.
 
-`ListModelPackagingJobsPaginator.paginate` returns
-`_PageIterator`\[[ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProjectName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListModelPackagingJobsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmodelspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListModelPackagingJobsRequestListModelPackagingJobsPaginateTypeDef = {  # (1)
+    "ProjectName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListModelPackagingJobsRequestListModelPackagingJobsPaginateTypeDef](./type_defs.md#listmodelpackagingjobsrequestlistmodelpackagingjobspaginatetypedef) 
 ## ListModelsPaginator
 
-Type annotations for
-`boto3.client("lookoutvision").get_paginator("list_models")`.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").get_paginator("list_models")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModels)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lookoutvision.paginator import ListModelsPaginator
@@ -99,28 +112,40 @@ def get_list_models_paginator() -> ListModelsPaginator:
     return Session().client("lookoutvision").get_paginator("list_models")
 ```
 
-Boto3 documentation:
-[LookoutforVision.Paginator.ListModels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListModels)
 
-Arguments for `ListModelsPaginator.paginate` method:
+### paginate
 
-- `ProjectName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListModelsPaginator.paginate` method.
 
-`ListModelsPaginator.paginate` returns
-`_PageIterator`\[[ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProjectName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListModelsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listprojectspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListModelsRequestListModelsPaginateTypeDef = {  # (1)
+    "ProjectName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListModelsRequestListModelsPaginateTypeDef](./type_defs.md#listmodelsrequestlistmodelspaginatetypedef) 
 ## ListProjectsPaginator
 
-Type annotations for
-`boto3.client("lookoutvision").get_paginator("list_projects")`.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").get_paginator("list_projects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListProjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lookoutvision.paginator import ListProjectsPaginator
@@ -129,13 +154,30 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("lookoutvision").get_paginator("list_projects")
 ```
 
-Boto3 documentation:
-[LookoutforVision.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Paginator.ListProjects)
 
-Arguments for `ListProjectsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListProjectsPaginator.paginate` method.
 
-`ListProjectsPaginator.paginate` returns
-`_PageIterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListProjectsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestListProjectsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef) 

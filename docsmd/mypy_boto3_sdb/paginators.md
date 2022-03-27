@@ -1,27 +1,18 @@
-<a id="paginators-for-boto3-simpledb-module"></a>
-
-# Paginators for boto3 SimpleDB module
+# Paginators
 
 > [Index](../README.md) > [SimpleDB](./README.md) > Paginators
 
-Auto-generated documentation for
-[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
-type annotations stubs module
-[mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
+!!! note ""
 
-- [Paginators for boto3 SimpleDB module](#paginators-for-boto3-simpledb-module)
-  - [ListDomainsPaginator](#listdomainspaginator)
-  - [SelectPaginator](#selectpaginator)
-
-<a id="listdomainspaginator"></a>
+    Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+    type annotations stubs module [mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 ## ListDomainsPaginator
 
-Type annotations for `boto3.client("sdb").get_paginator("list_domains")`.
+Type annotations and code completion for `#!python boto3.client("sdb").get_paginator("list_domains")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.ListDomains)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sdb.paginator import ListDomainsPaginator
@@ -30,26 +21,39 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return Session().client("sdb").get_paginator("list_domains")
 ```
 
-Boto3 documentation:
-[SimpleDB.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.ListDomains)
 
-Arguments for `ListDomainsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDomainsPaginator.paginate` method.
 
-`ListDomainsPaginator.paginate` returns
-`_PageIterator`\[[ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDomainsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="selectpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDomainsRequestListDomainsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDomainsRequestListDomainsPaginateTypeDef](./type_defs.md#listdomainsrequestlistdomainspaginatetypedef) 
 ## SelectPaginator
 
-Type annotations for `boto3.client("sdb").get_paginator("select")`.
+Type annotations and code completion for `#!python boto3.client("sdb").get_paginator("select")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.Select)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sdb.paginator import SelectPaginator
@@ -58,15 +62,32 @@ def get_select_paginator() -> SelectPaginator:
     return Session().client("sdb").get_paginator("select")
 ```
 
-Boto3 documentation:
-[SimpleDB.Paginator.Select](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Paginator.Select)
 
-Arguments for `SelectPaginator.paginate` method:
+### paginate
 
-- `SelectExpression`: `str` *(required)*
-- `ConsistentRead`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SelectPaginator.paginate` method.
 
-`SelectPaginator.paginate` returns
-`_PageIterator`\[[SelectResultTypeDef](./type_defs.md#selectresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SelectExpression: str,
+    ConsistentRead: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[SelectResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: SelectResultTypeDef](./type_defs.md#selectresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SelectRequestSelectPaginateTypeDef = {  # (1)
+    "SelectExpression": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SelectRequestSelectPaginateTypeDef](./type_defs.md#selectrequestselectpaginatetypedef) 
